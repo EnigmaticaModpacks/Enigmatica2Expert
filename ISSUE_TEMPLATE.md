@@ -1,7 +1,5 @@
 #### Issue Description
 
-#### What happens
-
 #### What you expected to happen
 
 #### Modpack version (Do not use "latest")
