@@ -3,11 +3,11 @@
 _Please follow the issue template, and do not delete any part of it._
 _Failure to comply will result in the issue being closed._
 
-**Question / Issue**
+**Question or Issue**
 
 
 
-**Modpack Version** (if applicable)
+**Modpack Version**
 
 
 
