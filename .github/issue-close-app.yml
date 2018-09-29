@@ -15,6 +15,7 @@ issueConfigs:
 # development
   - "Notes"
   - "Additional context"
+- content:
 # default
   - "Question / Issue"
   - "Modpack Version (if applicable)"
