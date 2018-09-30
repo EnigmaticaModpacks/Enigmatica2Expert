@@ -10,16 +10,12 @@ issueConfigs:
 # feature request
   - "Is your feature request related to a problem? Please describe"
   - "Describe the solution you'd like"
-  - "Additional context"
 - content:
 # development
   - "Notes"
-  - "Additional context"
 - content:
 # default
   - "Question or Issue"
-  - "Modpack Version"
-  - "Additional Context"
 # Optional configuration:
 #
 # whether the keywords are case-insensitive
