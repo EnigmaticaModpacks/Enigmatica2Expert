@@ -4,7 +4,7 @@
 deleteCommand: true
 
 # Close the source issue after moving
-closeSourceIssue: true
+closeSourceIssue: false
 
 # Lock the source issue after moving
 lockSourceIssue: false
