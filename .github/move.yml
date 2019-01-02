@@ -10,7 +10,7 @@ closeSourceIssue: false
 lockSourceIssue: false
 
 # Mention issue and comment authors
-mentionAuthors: true
+mentionAuthors: false
 
 # Preserve mentions in the issue content
 keepContentMentions: false
