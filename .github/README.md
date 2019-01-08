@@ -13,4 +13,5 @@ This is the official repository and issue-tracker for the modpack Enigmatica 2: 
 * [Donate](https://www.paypal.com/donate/?token=Ay3ANol1e-B9mhXu28_PiRgLTbDsQUPHmrMmSTGf2FeUexn0XXt7RxmMSJZgyWU4cnSxbW&country.x=US&locale.x=US)
 
 Donations are very appreciated, but they are in no way required. My modpacks and the support provided for them is free.
+
 A portion of donations are donated to the mod developers who make my modpacks possible.
