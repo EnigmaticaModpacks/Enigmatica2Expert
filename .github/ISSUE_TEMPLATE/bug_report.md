@@ -18,7 +18,7 @@ _Failure to comply will result in the issue being closed._
 
 **Logs**
 
-If applicable, please upload your crash report, or latest.log to [hastebin](https://hastebin.com/).
+If applicable, please upload your crash report, or latest.log to [gist](https://gist.github.com/).
 
 **Screenshots**
 
