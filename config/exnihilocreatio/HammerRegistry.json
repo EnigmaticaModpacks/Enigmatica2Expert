@@ -1,0 +1,236 @@
+{
+  "minecraft:concrete:5": [
+    {
+      "item": "minecraft:concrete_powder:5",
+      "amount": 1,
+      "miningLevel": 1,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
+  ],
+  "minecraft:concrete:2": [
+    {
+      "item": "minecraft:concrete_powder:2",
+      "amount": 1,
+      "miningLevel": 1,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
+  ],
+  "minecraft:concrete:3": [
+    {
+      "item": "minecraft:concrete_powder:3",
+      "amount": 1,
+      "miningLevel": 1,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
+  ],
+  "minecraft:concrete:7": [
+    {
+      "item": "minecraft:concrete_powder:7",
+      "amount": 1,
+      "miningLevel": 1,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
+  ],
+  "minecraft:concrete:8": [
+    {
+      "item": "minecraft:concrete_powder:8",
+      "amount": 1,
+      "miningLevel": 1,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
+  ],
+  "minecraft:concrete:10": [
+    {
+      "item": "minecraft:concrete_powder:10",
+      "amount": 1,
+      "miningLevel": 1,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
+  ],
+  "minecraft:concrete:13": [
+    {
+      "item": "minecraft:concrete_powder:13",
+      "amount": 1,
+      "miningLevel": 1,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
+  ],
+  "minecraft:concrete:1": [
+    {
+      "item": "minecraft:concrete_powder:1",
+      "amount": 1,
+      "miningLevel": 1,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
+  ],
+  "ore:endstone": [
+    {
+      "item": "exnihilocreatio:block_endstone_crushed:0",
+      "amount": 1,
+      "miningLevel": 0,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
+  ],
+  "minecraft:concrete:12": [
+    {
+      "item": "minecraft:concrete_powder:12",
+      "amount": 1,
+      "miningLevel": 1,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
+  ],
+  "ore:stoneGranite": [
+    {
+      "item": "exnihilocreatio:block_granite_crushed:0",
+      "amount": 1,
+      "miningLevel": 0,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
+  ],
+  "ore:stoneDiorite": [
+    {
+      "item": "exnihilocreatio:block_diorite_crushed:0",
+      "amount": 1,
+      "miningLevel": 0,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
+  ],
+  "ore:stoneAndesite": [
+    {
+      "item": "exnihilocreatio:block_andesite_crushed:0",
+      "amount": 1,
+      "miningLevel": 0,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
+  ],
+  "appliedenergistics2:sky_stone_block:0": [
+    {
+      "item": "exnihilocreatio:block_skystone_crushed:0",
+      "amount": 1,
+      "miningLevel": 3,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
+  ],
+  "minecraft:concrete:15": [
+    {
+      "item": "minecraft:concrete_powder:15",
+      "amount": 1,
+      "miningLevel": 1,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
+  ],
+  "ore:crushedGranite": [
+    {
+      "item": "minecraft:sand:1",
+      "amount": 1,
+      "miningLevel": 0,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
+  ],
+  "minecraft:concrete:0": [
+    {
+      "item": "minecraft:concrete_powder:0",
+      "amount": 1,
+      "miningLevel": 1,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
+  ],
+  "ore:gravel": [
+    {
+      "item": "minecraft:sand:0",
+      "amount": 1,
+      "miningLevel": 0,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
+  ],
+  "minecraft:concrete:11": [
+    {
+      "item": "minecraft:concrete_powder:11",
+      "amount": 1,
+      "miningLevel": 1,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
+  ],
+  "minecraft:concrete:9": [
+    {
+      "item": "minecraft:concrete_powder:9",
+      "amount": 1,
+      "miningLevel": 1,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
+  ],
+  "ore:netherrack": [
+    {
+      "item": "exnihilocreatio:block_netherrack_crushed:0",
+      "amount": 1,
+      "miningLevel": 0,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
+  ],
+  "minecraft:concrete:14": [
+    {
+      "item": "minecraft:concrete_powder:14",
+      "amount": 1,
+      "miningLevel": 1,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
+  ],
+  "ore:cobblestone": [
+    {
+      "item": "minecraft:gravel:0",
+      "amount": 1,
+      "miningLevel": 0,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
+  ],
+  "ore:sand": [
+    {
+      "item": "exnihilocreatio:block_dust:0",
+      "amount": 1,
+      "miningLevel": 0,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
+  ],
+  "minecraft:concrete:4": [
+    {
+      "item": "minecraft:concrete_powder:4",
+      "amount": 1,
+      "miningLevel": 1,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
+  ],
+  "minecraft:concrete:6": [
+    {
+      "item": "minecraft:concrete_powder:6",
+      "amount": 1,
+      "miningLevel": 1,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
+  ]
+}

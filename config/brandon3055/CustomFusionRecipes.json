@@ -1,0 +1,226 @@
+[
+    {
+        "mode": "ADD",
+        "result": "actuallyadditions:item_crystal_empowered",
+        "catalyst": "actuallyadditions:item_crystal",
+        "energy": 25000,
+        "tier": 0,
+        "ingredients": [
+            "nuclearcraft:gem",
+            "thermalfoundation:material,1,513",
+            "tconstruct:tool_rod,1,0,{Material: ardite}",
+            "minecraft:red_nether_brick"
+        ]
+    },
+	{
+        "mode": "ADD",
+        "result": "actuallyadditions:block_crystal_empowered",
+        "catalyst": "actuallyadditions:block_crystal",
+        "energy": 250000,
+        "tier": 0,
+        "ingredients": [
+            "nuclearcraft:gem",
+            "thermalfoundation:material,1,513",
+            "tconstruct:tool_rod,1,0,{Material: ardite}",
+            "minecraft:red_nether_brick"
+        ]
+    },
+	{
+        "mode": "ADD",
+        "result": "actuallyadditions:item_crystal_empowered,1,1",
+        "catalyst": "actuallyadditions:item_crystal,1,1",
+        "energy": 25000,
+        "tier": 0,
+        "ingredients": [
+            "tconstruct:ingots",
+            "ic2:plate,1,13",
+            "biomesoplenty:gem,1,6",
+            "tconstruct:slime_congealed,1,1"
+        ]
+    },
+	{
+        "mode": "ADD",
+        "result": "actuallyadditions:block_crystal_empowered,1,1",
+        "catalyst": "actuallyadditions:block_crystal,1,1",
+        "energy": 250000,
+        "tier": 0,
+        "ingredients": [
+            "tconstruct:ingots",
+            "ic2:plate,1,13",
+            "biomesoplenty:gem,1,6",
+            "tconstruct:slime_congealed,1,1"
+        ]
+    },
+	{
+        "mode": "ADD",
+        "result": "actuallyadditions:item_crystal_empowered,1,2",
+        "catalyst": "actuallyadditions:item_crystal,1,2",
+        "energy": 50000,
+        "tier": 0,
+        "ingredients": [
+            "nuclearcraft:dust,1,10",
+            "botania:manaresource,1,2",
+            "tconstruct:ingots,1,2",
+            "biomesoplenty:gem,1,5"
+        ]
+    },
+	{
+        "mode": "ADD",
+        "result": "actuallyadditions:block_crystal_empowered,1,2",
+        "catalyst": "actuallyadditions:block_crystal,1,2",
+        "energy": 500000,
+        "tier": 0,
+        "ingredients": [
+            "nuclearcraft:dust,1,10",
+            "botania:manaresource,1,2",
+            "tconstruct:ingots,1,2",
+            "biomesoplenty:gem,1,5"
+        ]
+    },
+	{
+        "mode": "ADD",
+        "result": "actuallyadditions:item_crystal_empowered,1,3",
+        "catalyst": "actuallyadditions:item_crystal,1,3",
+        "energy": 250000,
+        "tier": 0,
+        "ingredients": [
+            "minecraft:dye",
+            "extendedcrafting:storage",
+            "ore:stoneBasalt",
+            "actuallyadditions:block_misc,1,2"
+        ]
+    },
+	{
+        "mode": "ADD",
+        "result": "actuallyadditions:block_crystal_empowered,1,3",
+        "catalyst": "actuallyadditions:block_crystal,1,3",
+        "energy": 2500000,
+        "tier": 0,
+        "ingredients": [
+            "minecraft:dye",
+            "extendedcrafting:storage",
+            "ore:stoneBasalt",
+            "actuallyadditions:block_misc,1,2"
+        ]
+    },
+	{
+        "mode": "ADD",
+        "result": "actuallyadditions:item_crystal_empowered,1,4",
+        "catalyst": "actuallyadditions:item_crystal,1,4",
+        "energy": 50000,
+        "tier": 0,
+        "ingredients": [
+            "minecraft:dye,1,2",
+            "minecraft:emerald",
+            "nuclearcraft:dust,1,9",
+            "actuallyadditions:block_testifi_bucks_green_wall"
+        ]
+    },
+	{
+        "mode": "ADD",
+        "result": "actuallyadditions:block_crystal_empowered,1,4",
+        "catalyst": "actuallyadditions:block_crystal,1,4",
+        "energy": 500000,
+        "tier": 0,
+        "ingredients": [
+            "minecraft:dye,1,2",
+            "minecraft:emerald",
+            "nuclearcraft:dust,1,9",
+            "actuallyadditions:block_testifi_bucks_green_wall"
+        ]
+    },
+	{
+        "mode": "ADD",
+        "result": "actuallyadditions:item_crystal_empowered,1,5",
+        "catalyst": "actuallyadditions:item_crystal,1,5",
+        "energy": 25000,
+        "tier": 0,
+        "ingredients": [
+            "minecraft:quartz_block",
+            "minecraft:bone_block",
+            "mekanism:ingot,1,1",
+            "nuclearcraft:gem,1,2"
+        ]
+    },
+	{
+        "mode": "ADD",
+        "result": "actuallyadditions:block_crystal_empowered,1,5",
+        "catalyst": "actuallyadditions:block_crystal,1,5",
+        "energy": 250000,
+        "tier": 0,
+        "ingredients": [
+            "minecraft:quartz_block",
+            "minecraft:bone_block",
+            "mekanism:ingot,1,1",
+            "nuclearcraft:gem,1,2"
+        ]
+    },
+	{
+        "mode": "ADD",
+        "result": "mekanism:controlcircuit,1,3",
+        "catalyst": "mekanism:controlcircuit,1,2",
+        "energy": 500000,
+        "tier": 0,
+        "ingredients": [
+            "mekanism:atomicalloy",
+            "mekanism:atomicalloy",
+            "mekanism:atomicalloy",
+            "mekanism:atomicalloy"
+        ]
+    },
+	{
+        "mode": "ADD",
+        "result": "thermalexpansion:frame,1,129",
+        "catalyst": "thermalexpansion:frame,1,128",
+        "energy": 2500000,
+        "tier": 0,
+        "ingredients": [
+            "immersiveengineering:material,1,2",
+            "thermalfoundation:material,1,354",
+            "thermalfoundation:material,1,290",
+            "mekanism:basicblock,1,8"
+        ]
+    },
+	{
+        "mode": "REMOVE",
+        "result": "draconicevolution:draconic_block",
+        "catalyst": "draconicevolution:draconium_block"
+    },
+	{
+        "mode": "REMOVE",
+        "result": "draconicevolution:draconic_helm",
+        "catalyst": "draconicevolution:wyvern_helm"
+    },
+	{
+        "mode": "REMOVE",
+        "result": "draconicevolution:draconic_chest",
+        "catalyst": "draconicevolution:wyvern_chest"
+    },
+	{
+        "mode": "REMOVE",
+        "result": "draconicevolution:draconic_legs",
+        "catalyst": "draconicevolution:wyvern_legs"
+    },
+	{
+        "mode": "REMOVE",
+        "result": "draconicevolution:draconic_boots",
+        "catalyst": "draconicevolution:wyvern_boots"
+    },
+	{
+        "mode": "ADD",
+        "result": "draconicevolution:draconic_block,4,0",
+        "catalyst": "draconicevolution:draconium_block,4,1",
+		"energy": 50000000,
+        "tier": 1,
+        "ingredients": [
+            "draconicevolution:draconic_core",
+            "draconicevolution:draconic_core",
+            "draconicevolution:draconic_core",
+            "draconicevolution:draconic_core",
+			"draconicevolution:dragon_heart",
+			"botania:manaresource,1,9",
+			"enderio:item_material,1,20",
+			"enderio:item_material,1,37"
+        ]
+    }
+]

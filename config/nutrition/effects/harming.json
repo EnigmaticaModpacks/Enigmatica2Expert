@@ -1,0 +1,9 @@
+{
+	"name": "harming",
+	"potion": "minecraft:harming",
+	"amplifier": 1,
+	"minimum": 0,
+	"maximum": 1,
+	"detect": "any",
+	"enabled": true
+}

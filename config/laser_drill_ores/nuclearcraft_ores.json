@@ -1,0 +1,54 @@
+[
+  {
+    "item" : "nuclearcraft:ore:3",
+    "color" : 15,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 5
+      }
+    ]
+  },
+  {
+    "item" : "nuclearcraft:ore:5",
+    "color" : 7,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 5
+      }
+    ]
+  },
+  {
+    "item" : "nuclearcraft:ore:6",
+    "color" : 0,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 5
+      }
+    ]
+  },
+  {
+    "item" : "nuclearcraft:ore:7",
+    "color" : 6,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 5
+      }
+    ]
+  }
+]

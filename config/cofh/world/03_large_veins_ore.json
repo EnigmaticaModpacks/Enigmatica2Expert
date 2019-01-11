@@ -1,0 +1,191 @@
+{
+	"populate": 
+		{
+		"large_vein_iron": {
+			"distribution": "fractal",
+			"generator": {
+				"block": [
+					{
+						"name": "minecraft:iron_ore",
+						"metadata": 0,
+						"weight": 85
+					},
+					{
+						"name": "thermalfoundation:ore",
+						"metadata": 5,
+						"weight": 15
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 150,
+				"sparse": true
+			},
+			"cluster-count": 1,
+			"chunk-chance": 20,
+			"min-height": 25,
+			"vein-height": 10,
+			"vein-diameter": 5,
+			"vertical-density": 5,
+			"horizontal-density": 2,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"large_vein_coal": {
+			"distribution": "fractal",
+			"generator": {
+				"block": [
+					{
+						"name": "minecraft:coal_ore",
+						"metadata": 0,
+						"weight": 97
+					},
+					{
+						"name": "minecraft:diamond_ore",
+						"metadata": 0,
+						"weight": 3
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 130,
+				"sparse": true
+			},
+			"cluster-count": 1,
+			"chunk-chance": 25,
+			"min-height": 40,
+			"vein-height": 10,
+			"vein-diameter": 5,
+			"vertical-density": 5,
+			"horizontal-density": 2,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"large_vein_redstone": {
+			"distribution": "fractal",
+			"generator": {
+				"block": [
+					{
+						"name": "minecraft:redstone_ore",
+						"metadata": 0,
+						"weight": 90
+					},
+					{
+						"name": "minecraft:lapis_ore",
+						"metadata": 0,
+						"weight": 10
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 150,
+				"sparse": true
+			},
+			"cluster-count": 1,
+			"chunk-chance": 30,
+			"min-height": 10,
+			"vein-height": 10,
+			"vein-diameter": 5,
+			"vertical-density": 5,
+			"horizontal-density": 2,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"large_vein_copper_gold": {
+			"distribution": "fractal",
+			"generator": {
+				"block": [
+					
+					{
+						"name": "thermalfoundation:ore",
+						"metadata": 0,
+						"weight": 85
+					},
+					{
+						"name": "minecraft:gold_ore",
+						"metadata": 0,
+						"weight": 15
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 200,
+				"sparse": true
+			},
+			"cluster-count": 1,
+			"chunk-chance": 25,
+			"min-height": 30,
+			"vein-height": 10,
+			"vein-diameter": 5,
+			"vertical-density": 5,
+			"horizontal-density": 2,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"large_vein_tin_silver_lead": {
+			"distribution": "fractal",
+			"generator": {
+				"block": [
+					{
+						"name": "thermalfoundation:ore",
+						"metadata": 1,
+						"weight": 70
+					},
+					{
+						"name": "thermalfoundation:ore",
+						"metadata": 2,
+						"weight": 15
+					},
+					{
+						"name": "thermalfoundation:ore",
+						"metadata": 3,
+						"weight": 15
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 200,
+				"sparse": true
+			},
+			"cluster-count": 1,
+			"chunk-chance": 35,
+			"min-height": 20,
+			"vein-height": 10,
+			"vein-diameter": 5,
+			"vertical-density": 5,
+			"horizontal-density": 2,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"dependencies": "actuallyadditions",
+	"populate": {
+		"blackquartz": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "actuallyadditions:block_misc",
+					"metadata": 3
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 3
+			},
+			"cluster-count": 6,
+			"min-height": 18,
+			"max-height": 55,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+	}
+}

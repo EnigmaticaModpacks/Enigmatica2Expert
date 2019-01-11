@@ -1,0 +1,6 @@
+{
+  "minecraft:cobblestone:0": {
+    "fluid": "lava",
+    "amount": 250
+  }
+}

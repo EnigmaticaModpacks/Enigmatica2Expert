@@ -1,0 +1,22 @@
+{
+  "defaults": {
+    "__comment": "You can disable defaults by setting these to false. Do *NOT* try to add additional entries here. You can add additional entries in the custom section.",
+    "minecraft:cobblestone": true,
+    "minecraft:gravel": true,
+    "minecraft:sand": true
+  },
+  "custom": {
+    "__comment": "By default, the chicken stick is limited as to what it can hammer. You can define additional blocks here. Use * as a wildcard for metadata.",
+    "entries": [
+      {
+        "name": "",
+        "metadata": "*"
+      }
+    ],
+    "example": {
+      "__comment": "This example would allow smooth Stone to be hammered with the Chicken Stick.",
+      "name": "minecraft:stone",
+      "metadata": "0"
+    }
+  }
+}

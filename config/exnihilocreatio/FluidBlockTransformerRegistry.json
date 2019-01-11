@@ -1,0 +1,123 @@
+[
+  {
+    "fluidName": "water",
+    "input": "ore:dust",
+    "output": "minecraft:clay:0"
+  },
+  {
+    "fluidName": "lava",
+    "input": "ore:dustRedstone",
+    "output": "minecraft:netherrack:0"
+  },
+  {
+    "fluidName": "lava",
+    "input": "ore:dustGlowstone",
+    "output": "minecraft:end_stone:0"
+  },
+  {
+    "fluidName": "witchwater",
+    "input": "ore:sand",
+    "output": "minecraft:soul_sand:0"
+  },
+  {
+    "fluidName": "milk",
+    "input": "minecraft:brown_mushroom:0",
+    "output": "minecraft:slime:0",
+    "toSpawn": "Slime",
+    "spawnCount": 4,
+    "spawnRange": 4
+  },
+  {
+    "fluidName": "milk",
+    "input": "minecraft:red_mushroom:0",
+    "output": "minecraft:slime:0",
+    "toSpawn": "Slime",
+    "spawnCount": 4,
+    "spawnRange": 4
+  },
+  {
+    "fluidName": "water",
+    "input": "minecraft:concrete_powder:0",
+    "output": "minecraft:concrete:0"
+  },
+  {
+    "fluidName": "water",
+    "input": "minecraft:concrete_powder:1",
+    "output": "minecraft:concrete:1"
+  },
+  {
+    "fluidName": "water",
+    "input": "minecraft:concrete_powder:2",
+    "output": "minecraft:concrete:2"
+  },
+  {
+    "fluidName": "water",
+    "input": "minecraft:concrete_powder:3",
+    "output": "minecraft:concrete:3"
+  },
+  {
+    "fluidName": "water",
+    "input": "minecraft:concrete_powder:4",
+    "output": "minecraft:concrete:4"
+  },
+  {
+    "fluidName": "water",
+    "input": "minecraft:concrete_powder:5",
+    "output": "minecraft:concrete:5"
+  },
+  {
+    "fluidName": "water",
+    "input": "minecraft:concrete_powder:6",
+    "output": "minecraft:concrete:6"
+  },
+  {
+    "fluidName": "water",
+    "input": "minecraft:concrete_powder:7",
+    "output": "minecraft:concrete:7"
+  },
+  {
+    "fluidName": "water",
+    "input": "minecraft:concrete_powder:8",
+    "output": "minecraft:concrete:8"
+  },
+  {
+    "fluidName": "water",
+    "input": "minecraft:concrete_powder:9",
+    "output": "minecraft:concrete:9"
+  },
+  {
+    "fluidName": "water",
+    "input": "minecraft:concrete_powder:10",
+    "output": "minecraft:concrete:10"
+  },
+  {
+    "fluidName": "water",
+    "input": "minecraft:concrete_powder:11",
+    "output": "minecraft:concrete:11"
+  },
+  {
+    "fluidName": "water",
+    "input": "minecraft:concrete_powder:12",
+    "output": "minecraft:concrete:12"
+  },
+  {
+    "fluidName": "water",
+    "input": "minecraft:concrete_powder:13",
+    "output": "minecraft:concrete:13"
+  },
+  {
+    "fluidName": "water",
+    "input": "minecraft:concrete_powder:14",
+    "output": "minecraft:concrete:14"
+  },
+  {
+    "fluidName": "water",
+    "input": "minecraft:concrete_powder:15",
+    "output": "minecraft:concrete:15"
+  },
+  {
+    "fluidName": "lava",
+    "input": "appliedenergistics2:material:45",
+    "output": "appliedenergistics2:sky_stone_block:0"
+  }
+]

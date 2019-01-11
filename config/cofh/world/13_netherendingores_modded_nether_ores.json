@@ -1,0 +1,244 @@
+{
+	"dependencies": "netherendingores",
+	"populate": {
+		"nether-aluminum": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "netherendingores:ore_nether_modded_1",
+				"material": "minecraft:netherrack",
+				"cluster-size": 6
+			},
+			"cluster-count": 7,
+			"min-height": 70,
+			"max-height": 118,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1
+				]
+			}
+		},
+		"nether-copper": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "netherendingores:ore_nether_modded_1",
+					"metadata": 1
+				},
+				"material": "minecraft:netherrack",
+				"cluster-size": 8
+			},
+			"cluster-count": 9,
+			"min-height": 75,
+			"max-height": 118,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1
+				]
+			}
+		},
+		"nether-lead": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "netherendingores:ore_nether_modded_1",
+					"metadata": 3
+				},
+				"material": "minecraft:netherrack",
+				"cluster-size": 6
+			},
+			"cluster-count": 6,
+			"min-height": 55,
+			"max-height": 65,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1
+				]
+			}
+		},
+		"nether-nickel": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "netherendingores:ore_nether_modded_1",
+					"metadata": 5
+				},
+				"material": "minecraft:netherrack",
+				"cluster-size": 6
+			},
+			"cluster-count": 5,
+			"min-height": 25,
+			"max-height": 45,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1
+				]
+			}
+		},
+		"nether-platinum": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "netherendingores:ore_nether_modded_1",
+					"metadata": 6
+				},
+				"material": "minecraft:netherrack",
+				"cluster-size": 3
+			},
+			"cluster-count": 4,
+			"min-height": 0,
+			"max-height": 10,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1
+				]
+			}
+		},
+		"nether-silver": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "netherendingores:ore_nether_modded_1",
+					"metadata": 7
+				},
+				"material": "minecraft:netherrack",
+				"cluster-size": 5
+			},
+			"cluster-count": 6,
+			"min-height": 40,
+			"max-height": 55,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1
+				]
+			}
+		},
+		"nether-tin": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "netherendingores:ore_nether_modded_1",
+					"metadata": 8
+				},
+				"material": "minecraft:netherrack",
+				"cluster-size": 8
+			},
+			"cluster-count": 8,
+			"min-height": 70,
+			"max-height": 90,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1
+				]
+			}
+		},
+		"nether-certus": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "netherendingores:ore_nether_modded_1",
+					"metadata": 9
+				},
+				"material": "minecraft:netherrack",
+				"cluster-size": 7
+			},
+			"cluster-count": 12,
+			"min-height": 20,
+			"max-height": 75,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1
+				]
+			}
+		},
+		"nether-charged-certus": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "netherendingores:ore_nether_modded_1",
+					"metadata": 10
+				},
+				"material": "minecraft:netherrack",
+				"cluster-size": 2
+			},
+			"cluster-count": 8,
+			"min-height": 0,
+			"max-height": 30,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1
+				]
+			}
+		},
+		"nether-osmium": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "netherendingores:ore_nether_modded_1",
+					"metadata": 11
+				},
+				"material": "minecraft:netherrack",
+				"cluster-size": 3
+			},
+			"cluster-count": 8,
+			"min-height": 85,
+			"max-height": 110,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1
+				]
+			}
+		},
+		"nether-uranium": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "netherendingores:ore_nether_modded_1",
+					"metadata": 12
+				},
+				"material": "minecraft:netherrack",
+				"cluster-size": 4
+			},
+			"cluster-count": 8,
+			"min-height": 35,
+			"max-height": 65,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1
+				]
+			}
+		}
+	}
+}

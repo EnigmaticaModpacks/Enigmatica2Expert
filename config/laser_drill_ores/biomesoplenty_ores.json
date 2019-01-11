@@ -1,0 +1,119 @@
+[
+  {
+    "item" : "biomesoplenty:biome_block:0",
+    "color" : 0,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "item" : "biomesoplenty:gem_ore:0",
+    "color" : 2,
+    "rarity" : [
+      {
+        "whitelist": "minecraft:sky",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "item" : "biomesoplenty:gem_ore:1",
+    "color" : 14,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 2
+      }
+    ]
+  },
+  {
+    "item" : "biomesoplenty:gem_ore:2",
+    "color" : 5,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 2
+      }
+    ]
+  },
+  {
+    "item" : "biomesoplenty:gem_ore:3",
+    "color" : 1,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "item" : "biomesoplenty:gem_ore:4",
+    "color" : 10,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "item" : "biomesoplenty:gem_ore:5",
+    "color" : 9,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "item" : "biomesoplenty:gem_ore:6",
+    "color" : 11,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 2
+      }
+    ]
+  },
+  {
+    "item" : "biomesoplenty:gem_ore:7",
+    "color" : 1,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 1
+      }
+    ]
+  }
+]

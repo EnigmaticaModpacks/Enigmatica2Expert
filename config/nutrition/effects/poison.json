@@ -1,0 +1,9 @@
+{
+	"name": "poison",
+	"potion": "minecraft:poison",
+	"amplifier": 1,
+	"minimum": 0,
+	"maximum": 10,
+	"detect": "any",
+	"enabled": true
+}

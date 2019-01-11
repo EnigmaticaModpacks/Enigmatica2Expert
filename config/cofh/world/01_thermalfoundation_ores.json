@@ -1,0 +1,235 @@
+{
+	"dependencies": "thermalfoundation",
+	"populate": {
+		"copper": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "thermalfoundation:ore",
+				"material": "minecraft:stone",
+				"cluster-size": 9
+			},
+			"cluster-count": 7,
+			"min-height": 40,
+			"max-height": 55,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"tin": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "thermalfoundation:ore",
+					"metadata": 1
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 8
+			},
+			"cluster-count": 7,
+			"min-height": 30,
+			"max-height": 50,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"aluminum": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "thermalfoundation:ore",
+					"metadata": 4
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 5
+			},
+			"cluster-count": 10,
+			"min-height": 40,
+			"max-height": 65,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"silver": {
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "thermalfoundation:ore",
+						"metadata": 2,
+						"weight": 80
+					},
+					{
+						"name": "thermalfoundation:ore",
+						"metadata": 3,
+						"weight": 20
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 8
+			},
+			"cluster-count": 5,
+			"min-height": 20,
+			"max-height": 45,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"lead": {
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "thermalfoundation:ore",
+						"metadata": 3,
+						"weight": 90
+					},
+					{
+						"name": "thermalfoundation:ore",
+						"metadata": 2,
+						"weight": 10
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 8
+			},
+			"cluster-count": 4,
+			"min-height": 15,
+			"max-height": 35,
+			"retrogen": "false",
+			"biomeRestriction": "none",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"nickel": {
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "thermalfoundation:ore",
+						"metadata": 5,
+						"weight": 65
+					},
+					{
+						"name": "minecraft:iron_ore",
+						"weight": 35
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 9
+			},
+			"cluster-count": 3,
+			"min-height": 15,
+			"max-height": 36,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"platinum": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "thermalfoundation:ore",
+					"metadata": 6
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 1
+			},
+			"cluster-count": 1,
+			"min-height": 3,
+			"max-height": 8,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"copper_ocean": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "thermalfoundation:ore",
+				"material": "minecraft:stone",
+				"cluster-size": 15
+			},
+			"cluster-count": 15,
+			"min-height": 20,
+			"max-height": 55,
+			"retrogen": "false",
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "OCEAN"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"copper_high": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "thermalfoundation:ore",
+				"material": "minecraft:stone",
+				"cluster-size": 10
+			},
+			"cluster-count": 4,
+			"min-height": 48,
+			"max-height": 96,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+	}
+}

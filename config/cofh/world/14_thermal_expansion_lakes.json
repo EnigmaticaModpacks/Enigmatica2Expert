@@ -1,0 +1,126 @@
+{
+"dependencies": "thermalexpansion",
+	"populate": {
+		"petrotheum_vein": {
+			"distribution": "surface",
+			"follow-terrain": "true",
+			"generator": {
+				"type": "large-vein",
+				"block": "thermalfoundation:fluid_petrotheum",
+				"material": [
+					"minecraft:sand",
+					"minecraft:sandstone"
+				],
+				"sparse": false,
+				"cluster-size": 15				
+						},
+			"material": [
+					"minecraft:sand",
+					"minecraft:sandstone"
+			],
+				"chunk-chance": 6,
+				"cluster-count": 1,
+				"vein-height": 10,
+				"vein-diameter": 15,
+				"vertical-density": 3,
+				"horizontal-density": 7,
+				"min-height": 40,
+				"retrogen": false,
+				"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "SANDY"
+					}
+				]
+			},
+			"dimension": "all"
+		},
+		
+		"pyrotheum_lake": {
+			"distribution": "uniform",
+			"generator": {
+				"type": "lake",
+				"block": "thermalfoundation:fluid_pyrotheum",
+				"material": "minecraft:netherrack",
+				"use-material": true,
+				"outline-block": [
+					"minecraft:nether_wart_block",
+					"minecraft:magma"
+				]
+			},
+				"cluster-count": 1,
+				"chunk-chance": 3,
+				"min-height": 20,
+				"max-height": 100,
+				"follow-terrain": true,
+				"biome": "all",
+				"retrogen": false,
+				"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1	
+				]
+			}
+		},
+		
+		"pyrotheum_lake_space": {
+			"distribution": "uniform",
+			"generator": {
+				"type": "lake",
+				"block": "thermalfoundation:fluid_pyrotheum",
+				"material": "biomesoplenty:ash_block",
+				"use-material": true,
+				"outline-block": [
+					"minecraft:nether_wart_block",
+					"minecraft:magma"
+				]
+			},
+				"cluster-count": 3,
+				"min-height": 20,
+				"max-height": 200,
+				"follow-terrain": true,
+				"biome": "all",
+				"retrogen": false,
+				"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					101,
+					102,
+					113,
+					122
+				]
+			}
+		},
+		
+		"cryotheum_lake_space": {
+			"distribution": "uniform",
+			"generator": {
+				"type": "lake",
+				"block": "thermalfoundation:fluid_cryotheum",
+				"material": "minecraft:snow",
+				"use-material": true,
+				"outline-block": [
+					"minecraft:packed_ice",
+					"nuclearcraft:block_ice"
+				]
+			},
+				"cluster-count": 1,
+				"min-height": 20,
+				"max-height": 200,
+				"follow-terrain": true,
+				"biome": "all",
+				"retrogen": false,
+				"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					109,
+					110,
+					114,
+					120
+				]
+			}
+		}
+	}
+}

@@ -65,3 +65,6 @@ LICENSE.md
 manifest.json
 config/AppliedEnergistics2/aerecipes/
 config/AppliedEnergistics2/recipes/
+valkyrielib/cache/supporters.json
+discordsuite/win32-x86-64/discord-rpc.dll
+discordsuite/version

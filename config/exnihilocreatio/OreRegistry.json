@@ -1,0 +1,108 @@
+[
+  {
+    "name": "gold",
+    "color": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "result": {
+      "name": "minecraft:gold_ingot",
+      "meta": 0
+    }
+  },
+  {
+    "name": "iron",
+    "color": {
+      "r": 0.7490196,
+      "g": 0.5019608,
+      "b": 0.2509804,
+      "a": 1.0
+    },
+    "result": {
+      "name": "minecraft:iron_ingot",
+      "meta": 0
+    }
+  },
+  {
+    "name": "copper",
+    "color": {
+      "r": 1.0,
+      "g": 0.6,
+      "b": 0.2,
+      "a": 1.0
+    }
+  },
+  {
+    "name": "tin",
+    "color": {
+      "r": 0.9019608,
+      "g": 1.0,
+      "b": 0.9490196,
+      "a": 1.0
+    }
+  },
+  {
+    "name": "aluminium",
+    "color": {
+      "r": 0.7490196,
+      "g": 0.7490196,
+      "b": 0.7490196,
+      "a": 1.0
+    }
+  },
+  {
+    "name": "lead",
+    "color": {
+      "r": 0.2,
+      "g": 0.0,
+      "b": 0.4,
+      "a": 1.0
+    }
+  },
+  {
+    "name": "silver",
+    "color": {
+      "r": 0.9490196,
+      "g": 0.9490196,
+      "b": 0.9490196,
+      "a": 1.0
+    }
+  },
+  {
+    "name": "nickel",
+    "color": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 0.8,
+      "a": 1.0
+    }
+  },
+  {
+    "name": "ardite",
+    "color": {
+      "r": 1.0,
+      "g": 0.45882353,
+      "b": 0.101960786,
+      "a": 1.0
+    },
+    "result": {
+      "name": "tconstruct:ingots",
+      "meta": 1
+    }
+  },
+  {
+    "name": "cobalt",
+    "color": {
+      "r": 0.2,
+      "g": 0.2,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "result": {
+      "name": "tconstruct:ingots",
+      "meta": 0
+    }
+  }
+]

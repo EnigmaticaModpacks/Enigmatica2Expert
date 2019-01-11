@@ -1,0 +1,49 @@
+{
+    "casings_fluid_in": [
+        "modularmachinery:blockfluidinputhatch@2",
+		"modularmachinery:blockfluidinputhatch@3",
+		"modularmachinery:blockfluidinputhatch@4",
+		"modularmachinery:blockfluidinputhatch@5"
+    ],
+	
+	"casings_fluid_out": [
+        "modularmachinery:blockfluidoutputhatch@2",
+        "modularmachinery:blockfluidoutputhatch@3",
+        "modularmachinery:blockfluidoutputhatch@4",
+        "modularmachinery:blockfluidoutputhatch@5"
+    ],
+	
+    "casings_energy_in": [
+        "modularmachinery:blockenergyinputhatch@2",
+		"modularmachinery:blockenergyinputhatch@3",
+		"modularmachinery:blockenergyinputhatch@4",
+		"modularmachinery:blockenergyinputhatch@5"
+    ],
+	
+    "casings_energy_out": [
+        "modularmachinery:blockenergyoutputhatch@2",
+        "modularmachinery:blockenergyoutputhatch@3",
+        "modularmachinery:blockenergyoutputhatch@4",
+        "modularmachinery:blockenergyoutputhatch@5"
+    ],
+	
+    "casings_item_in": [
+        "modularmachinery:blockinputbus@2",
+		"modularmachinery:blockinputbus@3",
+		"modularmachinery:blockinputbus@4",
+		"modularmachinery:blockinputbus@5"
+    ],
+	
+    "casings_item_out": [
+        "modularmachinery:blockoutputbus@2",
+        "modularmachinery:blockoutputbus@3",
+        "modularmachinery:blockoutputbus@4",
+        "modularmachinery:blockoutputbus@5"
+    ],
+	
+	"casings": [
+		"modularmachinery:blockcasing@0",
+		"thermalfoundation:glass@6",
+		"thermalfoundation:glass@8"
+	]
+}

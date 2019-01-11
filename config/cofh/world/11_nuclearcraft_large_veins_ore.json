@@ -1,0 +1,56 @@
+{
+	"dependencies": "nuclearcraft",
+	"populate": 
+		{
+		"large_vein_nuclearcraft": {
+			"distribution": "fractal",
+			"generator": {
+				"block": [
+					{
+					# Thorium
+						"name": "nuclearcraft:ore",
+						"metadata": 3,
+						"weight": 30
+					},
+					{
+					# Boron
+						"name": "nuclearcraft:ore",
+						"metadata": 5,
+						"weight": 35
+					},
+					{
+					# Lithium
+						"name": "nuclearcraft:ore",
+						"metadata": 6,
+						"weight": 20
+					},
+					{
+					# Magnesium
+						"name": "nuclearcraft:ore",
+						"metadata": 7,
+						"weight": 15
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 350,
+				"sparse": true
+			},
+			"cluster-count": 1,
+			"chunk-chance": 25,
+			"min-height": 5,
+			"vein-height": 10,
+			"vein-diameter": 5,
+			"vertical-density": 5,
+			"horizontal-density": 2,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+	}
+}

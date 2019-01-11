@@ -1,0 +1,45 @@
+{
+"dependencies": "thaumcraft",
+	"populate": {
+		"amber": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "thaumcraft:ore_amber",
+				"material": "minecraft:stone",
+				"cluster-size": 3
+			},
+			"cluster-count": 7,
+			"min-height": 35,
+			"max-height": 50,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"cinnabar": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "thaumcraft:ore_cinnabar",
+				"material": "minecraft:stone",
+				"cluster-size": 3
+			},
+			"cluster-count": 5,
+			"min-height": 15,
+			"max-height": 35,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+	}
+}

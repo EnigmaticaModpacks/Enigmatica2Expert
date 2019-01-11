@@ -1,0 +1,28 @@
+[
+  {
+    "item" : "appliedenergistics2:quartz_ore:0",
+    "color" : 8,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 2
+      }
+    ]
+  },
+  {
+    "item" : "appliedenergistics2:charged_quartz_ore:0",
+    "color" : 8,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 1
+      }
+    ]
+  }
+]

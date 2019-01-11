@@ -1,0 +1,24 @@
+{
+  "minecraft:leaves2": [
+    {
+      "stack": {
+        "name": "exnihilocreatio:item_material",
+        "amount": 1,
+        "meta": 2
+      },
+      "chance": 0.1,
+      "fortuneChance": 0.0
+    }
+  ],
+  "minecraft:leaves": [
+    {
+      "stack": {
+        "name": "exnihilocreatio:item_material",
+        "amount": 1,
+        "meta": 2
+      },
+      "chance": 0.1,
+      "fortuneChance": 0.0
+    }
+  ]
+}

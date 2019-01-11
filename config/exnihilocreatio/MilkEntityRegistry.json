@@ -1,0 +1,8 @@
+[
+  {
+    "entityOnTop": "Cow",
+    "result": "milk",
+    "amount": 10,
+    "coolDown": 20
+  }
+]

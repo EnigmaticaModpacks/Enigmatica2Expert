@@ -1,0 +1,80 @@
+[
+  {
+    "item" : "mysticalagriculture:inferium_ore:0",
+    "color" : 4,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 4
+      }
+    ]
+  },
+  {
+    "item" : "mysticalagriculture:prosperity_ore:0",
+    "color" : 3,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 4
+      }
+    ]
+  },
+  {
+    "item" : "mysticalagriculture:nether_inferium_ore:0",
+    "color" : 4,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 4
+      }
+    ]
+  },
+  {
+    "item" : "mysticalagriculture:nether_prosperity_ore:0",
+    "color" : 3,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 4
+      }
+    ]
+  },
+  {
+    "item" : "mysticalagriculture:end_inferium_ore:0",
+    "color" : 4,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 4
+      }
+    ]
+  },
+  {
+    "item" : "mysticalagriculture:end_prosperity_ore:0",
+    "color" : 3,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 4
+      }
+    ]
+  }
+]
