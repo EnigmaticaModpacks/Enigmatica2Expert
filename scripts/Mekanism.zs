@@ -133,7 +133,7 @@ print("--- loading Mekanism.zs ---");
 	recipes.remove(<mekanism:machineblock3>);
 	recipes.addShaped("Quantum Entangloporter", <mekanism:machineblock3>, 
 	[[<mekanism:basicblock:7>, <ore:heartDragon>, <mekanism:basicblock:7>],
-	[<forestry:chipsets:3>, <mekanism:machineblock:11>, <forestry:chipsets:3>], 
+	[<forestry:chipsets:3>.withTag({}), <mekanism:machineblock:11>, <forestry:chipsets:3>.withTag({})], 
 	[<mekanism:basicblock:7>, <rftools:matter_beamer>, <mekanism:basicblock:7>]]);
 
 # Turbine Casing

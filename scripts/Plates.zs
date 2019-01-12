@@ -100,7 +100,8 @@ print("--- loading Plates.zs ---");
 	recipes.addShapeless("plate357a", <thermalfoundation:material:357>, [<ore:ingotSignalum>, <ore:ingotSignalum>, <immersiveengineering:tool>]);
 	recipes.addShapeless("plate358a", <thermalfoundation:material:358>, [<ore:ingotLumium>, <ore:ingotLumium>, <immersiveengineering:tool>]);
 	recipes.addShapeless("plate359a", <thermalfoundation:material:359>, [<ore:ingotEnderium>, <ore:ingotEnderium>, <immersiveengineering:tool>]);
-	
+	recipes.addShapeless("plate35a", <immersiveengineering:metal:35>, [<ore:ingotUranium>, <ore:ingotUranium>, <immersiveengineering:tool>]);
+
 # IndustrialCraft2 hammer compatibility for Thermal Expansion plates
 	recipes.addShapeless("plate32b", <thermalfoundation:material:32>, [<ore:ingotIron>, <ore:ingotIron>, <ic2:forge_hammer>.anyDamage()]);
 	recipes.addShapeless("plate33b", <thermalfoundation:material:33>, [<ore:ingotGold>, <ore:ingotGold>, <ic2:forge_hammer>.anyDamage()]);
@@ -122,6 +123,7 @@ print("--- loading Plates.zs ---");
 	recipes.addShapeless("plate357b", <thermalfoundation:material:357>, [<ore:ingotSignalum>, <ore:ingotSignalum>, <ic2:forge_hammer>.anyDamage()]);
 	recipes.addShapeless("plate358b", <thermalfoundation:material:358>, [<ore:ingotLumium>, <ore:ingotLumium>, <ic2:forge_hammer>.anyDamage()]);
 	recipes.addShapeless("plate359b", <thermalfoundation:material:359>, [<ore:ingotEnderium>, <ore:ingotEnderium>, <ic2:forge_hammer>.anyDamage()]);
+	recipes.addShapeless("plate35b", <immersiveengineering:metal:35>, [<ore:ingotUranium>, <ore:ingotUranium>, <ic2:forge_hammer>.anyDamage()]);
 
 # IndustrialCraft MetalFormer & Block Cutter compatibility for Thermal Expansion plates
 	# Can be found in the config/ic2 folder

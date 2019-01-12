@@ -39,17 +39,17 @@ print("--- loading AdvancedRocketry.zs ---");
 	recipes.remove(<advancedrocketry:ic:5>);
 	recipes.addShapedMirrored("Liquid IO Circuit Board", 
 	<advancedrocketry:ic:5>, 
-	[[<appliedenergistics2:material:54>, <forestry:chipsets:2>, <appliedenergistics2:material:54>],
+	[[<appliedenergistics2:material:54>, <forestry:chipsets:2>.withTag({}), <appliedenergistics2:material:54>],
 	[<appliedenergistics2:material:54>, <immersiveengineering:material:27>, <appliedenergistics2:material:54>], 
-	[<appliedenergistics2:material:54>, <forestry:chipsets:2>, <appliedenergistics2:material:54>]]);
+	[<appliedenergistics2:material:54>, <forestry:chipsets:2>.withTag({}), <appliedenergistics2:material:54>]]);
 
 # Item IO Circuit Board
 	recipes.remove(<advancedrocketry:ic:4>);
 	recipes.addShapedMirrored("Item IO Circuit Board", 
 	<advancedrocketry:ic:4>, 
-	[[<appliedenergistics2:material:18>, <forestry:chipsets:1>, <appliedenergistics2:material:18>],
+	[[<appliedenergistics2:material:18>, <forestry:chipsets:1>.withTag({}), <appliedenergistics2:material:18>],
 	[<appliedenergistics2:material:18>, <immersiveengineering:material:27>, <appliedenergistics2:material:18>], 
-	[<appliedenergistics2:material:18>, <forestry:chipsets:1>, <appliedenergistics2:material:18>]]);
+	[<appliedenergistics2:material:18>, <forestry:chipsets:1>.withTag({}), <appliedenergistics2:material:18>]]);
 
 # Control Circuit Board
 	recipes.remove(<advancedrocketry:ic:3>);

@@ -15,9 +15,9 @@ print("--- loading Forestry.zs ---");
 # Refined Circuit Board
 	mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:3>);
 	mods.forestry.Carpenter.addRecipe(<forestry:chipsets:3>, 
-	[[<appliedenergistics2:material:17>, <forestry:chipsets>, <appliedenergistics2:material:17>],
-	[<ore:circuitUltimate>, <forestry:chipsets:1>, <ore:circuitUltimate>],
-	[<appliedenergistics2:material:17>, <forestry:chipsets:2>, <appliedenergistics2:material:17>]], 
+	[[<appliedenergistics2:material:17>, <forestry:chipsets>.withTag({}), <appliedenergistics2:material:17>],
+	[<ore:circuitUltimate>, <forestry:chipsets:1>.withTag({}), <ore:circuitUltimate>],
+	[<appliedenergistics2:material:17>, <forestry:chipsets:2>.withTag({}), <appliedenergistics2:material:17>]], 
 	40, <liquid:water> * 1000);
 
 # Sturdy Casing

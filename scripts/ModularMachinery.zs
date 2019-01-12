@@ -50,7 +50,7 @@ print("--- loading ModularMachinery.zs ---");
     recipes.remove(<modularmachinery:blockcontroller>);
     recipes.addShaped("Modular Controller", 
     <modularmachinery:blockcontroller>, 
-    [[<forestry:chipsets:1>, <rftools:screen>, <forestry:chipsets:1>],
+    [[<forestry:chipsets:1>.withTag({}), <rftools:screen>, <forestry:chipsets:1>.withTag({})],
     [<modularmachinery:blockcasing>, <appliedenergistics2:controller>, <modularmachinery:blockcasing>], 
     [null, <modularmachinery:blockcasing>, null]]);
 
@@ -75,7 +75,7 @@ print("--- loading ModularMachinery.zs ---");
     recipes.addShapedMirrored("Machine Circuitry", 
     <modularmachinery:blockcasing:5>, 
     [[null, <immersiveengineering:wirecoil:5>, null],
-    [<modularmachinery:blockcasing>, <forestry:chipsets:3>, <modularmachinery:blockcasing>], 
+    [<modularmachinery:blockcasing>, <forestry:chipsets:3>.withTag({}), <modularmachinery:blockcasing>], 
     [null, <modularmachinery:blockcasing>, null]]);
 
 # Modularium

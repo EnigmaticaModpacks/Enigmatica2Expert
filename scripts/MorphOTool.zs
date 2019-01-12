@@ -17,7 +17,11 @@ print("--- loading MorphOTool.zs ---");
 	architecturecraft: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "architecturecraft:hammer", Count: 1 as byte, Damage: 0 as short}, 
 	forestry: {id: "forestry:wrench", Count: 1 as byte, Damage: 0 as short}, 
 	appliedenergistics2: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "appliedenergistics2:network_tool", Count: 1 as byte, Damage: 0 as short}, 
-	teslacorelib: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "teslacorelib:wrench", Count: 1 as byte, Damage: 0 as short}}}), 
+	teslacorelib: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "teslacorelib:wrench", Count: 1 as byte, Damage: 0 as short}, 
+	bloodmagic: {id: "bloodmagic:ritual_reader", Count: 1 as byte, Damage: 0 as short}, 
+	draconicevolution: {id: "draconicevolution:crystal_binder", Count: 1 as byte, Damage: 0 as short}, 
+	environmentaltech: {id: "environmentaltech:tool_multiblock_assembler", Count: 1 as byte, Damage: 0 as short},
+	mekanism: {id: "mekanism:configurator", Count: 1 as byte, Damage: 0 as short}}}),
 	[[null, <ore:gearCopper>, null],
 	[<ore:gearSilver>, <morphtool:tool>, <ore:gearTin>], 
 	[null, <ore:gearLead>, null]]);

@@ -24,6 +24,10 @@ print("--- loading Tooltips.zs ---");
 	var tempRecipe = "This item has a temporary crafting recipe.";
 	var mmEnergy = "Some recipes require higher tier inputs.";
 
+# Wireless Heating Coil
+	ad(<extrautils2:ingredients:13>, "Not consumed when used in crafting recipes.");
+	<extrautils2:ingredients:13>.addTooltip(format.aqua("Not consumed when used in crafting recipes"));
+
 # Creative Wireless Crafting Terminal
 	ad(<wct:wct_creative>,
 	"The recipe is Wireless Crafting Terminal + Creative Powercell.");
