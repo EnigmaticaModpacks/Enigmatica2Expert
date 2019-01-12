@@ -21,8 +21,9 @@ moveLabels: true
 # Set custom aliases for targets
 aliases:
    e2: enigmatica2
+   e2l: enigmatica2light
    e2e: enigmatica2expert
    e2es: enigmatica2expertskyblock
 
 # Repository to extend settings from
-# _extends: repo
+_extends: .github
