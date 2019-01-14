@@ -6,6 +6,8 @@ print("--- loading TinkersConstruct.zs ---");
 	
 # *======= Recipes =======*
 
+	rh(<tconstruct:rack>);
+	
 # Blank Cast Resmelting
 	mods.tconstruct.Melting.addRecipe(<liquid:alubrass> * 144, <tconstruct:cast>);
 

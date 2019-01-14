@@ -22,11 +22,21 @@ print("--- loading Mekanism.zs ---");
 	recipes.remove(<mekanism:transmitter:2>.withTag({tier: 0}));
 	recipes.remove(<mekanism:transmitter:3>.withTag({tier: 0}));
 	recipes.remove(<mekanism:transmitter:4>.withTag({tier: 0}));
-	recipes.addShapedMirrored("MekanismCable1", <mekanism:transmitter>.withTag({tier: 0}) * 8, [[<ore:ingotElectricalSteel>, <advgenerators:iron_wiring>, <ore:ingotElectricalSteel>],[null, null, null], [null, null, null]]);
-	recipes.addShapedMirrored("MekanismCable2", <mekanism:transmitter:1>.withTag({tier: 0}) * 8, [[<ore:ingotElectricalSteel>, <minecraft:bucket>, <ore:ingotElectricalSteel>],[null, null, null], [null, null, null]]);
-	recipes.addShapedMirrored("MekanismCable3", <mekanism:transmitter:2>.withTag({tier: 0}) * 8, [[<ore:ingotElectricalSteel>, <appliedenergistics2:quartz_vibrant_glass>, <ore:ingotElectricalSteel>],[null, null, null], [null, null, null]]);
-	recipes.addShapedMirrored("MekanismCable4", <mekanism:transmitter:3>.withTag({tier: 0}) * 8, [[<ore:ingotElectricalSteel>, <ore:circuitBoard>, <ore:ingotElectricalSteel>],[null, null, null], [null, null, null]]);
-	recipes.addShapedMirrored("MekanismCable5", <mekanism:transmitter:4>.withTag({tier: 0}) * 8, [[<ore:ingotElectricalSteel>, <enderio:block_dark_iron_bars>, <ore:ingotElectricalSteel>],[null, null, null], [null, null, null]]);
+	recipes.addShapedMirrored("MekanismCable1", 
+	<mekanism:transmitter>.withTag({tier: 0}) * 8, 
+	[[<ore:ingotElectricalSteel>, <advgenerators:iron_wiring>, <ore:ingotElectricalSteel>]]);
+	recipes.addShapedMirrored("MekanismCable2", 
+	<mekanism:transmitter:1>.withTag({tier: 0}) * 8, 
+	[[<ore:ingotElectricalSteel>, <minecraft:bucket>, <ore:ingotElectricalSteel>]]);
+	recipes.addShapedMirrored("MekanismCable3", 
+	<mekanism:transmitter:2>.withTag({tier: 0}) * 8, 
+	[[<ore:ingotElectricalSteel>, <appliedenergistics2:quartz_vibrant_glass>, <ore:ingotElectricalSteel>]]);
+	recipes.addShapedMirrored("MekanismCable4", 
+	<mekanism:transmitter:3>.withTag({tier: 0}) * 8, 
+	[[<ore:ingotElectricalSteel>, <ore:circuitBoard>, <ore:ingotElectricalSteel>]]);
+	recipes.addShapedMirrored("MekanismCable5", 
+	<mekanism:transmitter:4>.withTag({tier: 0}) * 8, 
+	[[<ore:ingotElectricalSteel>, <enderio:block_dark_iron_bars>, <ore:ingotElectricalSteel>]]);
 
 # Jetpack
 	recipes.remove(<mekanism:jetpack>);

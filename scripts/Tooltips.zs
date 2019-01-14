@@ -24,6 +24,12 @@ print("--- loading Tooltips.zs ---");
 	var tempRecipe = "This item has a temporary crafting recipe.";
 	var mmEnergy = "Some recipes require higher tier inputs.";
 
+# Backpacks
+ad(<harvestcraft:saltitem>, 
+"Backpacks from the Backpack mod can be equipped in the backpack slot.", 
+"The default keybinding to open the backpack slot is B", 
+"The keybinding to open an equipped backpack is Shift-B");
+
 # Wireless Heating Coil
 	ad(<extrautils2:ingredients:13>, "Not consumed when used in crafting recipes.");
 	<extrautils2:ingredients:13>.addTooltip(format.aqua("Not consumed when used in crafting recipes"));
