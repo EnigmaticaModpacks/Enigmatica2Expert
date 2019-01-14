@@ -22,10 +22,9 @@ print("--- loading Tooltips.zs ---");
 	var mekanismFactories = "Factories are made by upgrading Machines in-world with Basic/Advanced/Elite Tier Installers.";
 	var ic2wrench = "You can safely break IC2 machines with a Pickaxe.";
 	var tempRecipe = "This item has a temporary crafting recipe.";
-	var mmEnergy = "Some recipes require higher tier inputs.";
 
 # Backpacks
-ad(<harvestcraft:saltitem>, 
+ad(<backpack:backpack:*>, 
 "Backpacks from the Backpack mod can be equipped in the backpack slot.", 
 "The default keybinding to open the backpack slot is B", 
 "The keybinding to open an equipped backpack is Shift-B");
@@ -73,9 +72,6 @@ ad(<harvestcraft:saltitem>,
 	
 # Crafting Core
 	ad(<extendedcrafting:crafting_core>, "The FE/t specified in Crafting Core recipes is the maximum allowed input. Any amount of FE/t will work.");
-
-# Modular Machinery
-	<modularmachinery:itemblueprint>.addTooltip(format.aqua(mmEnergy));
 	
 # Infused Wood
 	ad(<astralsorcery:blockinfusedwood>, "Made by dropping Wood Logs in Liquid Starlight. You need to have crafted a Luminous Crafting Table for the process to work.");

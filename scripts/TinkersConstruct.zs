@@ -79,6 +79,25 @@ print("--- loading TinkersConstruct.zs ---");
 	mods.tconstruct.Melting.removeRecipe(<liquid:enderium>, <thermalfoundation:material:103>);
 	mods.tconstruct.Melting.removeRecipe(<liquid:refinedobsidian>, <mekanism:otherdust:5>);
 
+# Removing the ability to melt coal
+val coals as IItemStack[] = [
+
+	<bigreactors:ingotmetals:2>,
+	<bigreactors:dustmetals:2>,
+	<minecraft:coal>,
+	<minecraft:coal_block>,
+	<thermalfoundation:material:768>,
+	<bigreactors:blockmetals:2>,
+	<nuclearcraft:ingot_block:8>,
+	<nuclearcraft:ingot:8>,
+	<nuclearcraft:dust:8>
+	
+];
+
+for item in coals {
+	mods.tconstruct.Melting.removeRecipe(<liquid:coal>, item);
+}
+
 # Remove Ender Pearl Melting (to remove the ability to alloy Enderium)
 	mods.tconstruct.Melting.removeRecipe(<liquid:ender>);
 	

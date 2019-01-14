@@ -105,14 +105,8 @@ print("--- loading ModularMachinery.zs ---");
     recipes.addShaped("EnergyOutHatch5", <modularmachinery:blockenergyoutputhatch:3>, [[null, <modularmachinery:blockcasing>, null],[<modularmachinery:blockcasing>, <modularmachinery:blockenergyoutputhatch:2>, <modularmachinery:blockcasing>], [null, <actuallyadditions:block_laser_relay>, null]]);
 
     recipes.addShaped("EnergyInHatch2", <modularmachinery:blockenergyinputhatch:2>, [[null, <actuallyadditions:block_laser_relay>, null],[<modularmachinery:blockcasing>, <enderio:block_buffer:1>, <modularmachinery:blockcasing>], [null, <modularmachinery:blockcasing>, null]]);
-    recipes.addShaped("EnergyInHatch3", <modularmachinery:blockenergyinputhatch:5>, [[null, <actuallyadditions:block_laser_relay_extreme>, null],[<modularmachinery:blockcasing>, <modularmachinery:blockenergyinputhatch:4>, <modularmachinery:blockcasing>], [null, <modularmachinery:blockcasing>, null]]);
-    recipes.addShaped("EnergyInHatch4", <modularmachinery:blockenergyinputhatch:4>, [[null, <actuallyadditions:block_laser_relay_advanced>, null],[<modularmachinery:blockcasing>, <modularmachinery:blockenergyinputhatch:3>, <modularmachinery:blockcasing>], [null, <modularmachinery:blockcasing>, null]]);
-    recipes.addShaped("EnergyInHatch5", <modularmachinery:blockenergyinputhatch:3>, [[null, <actuallyadditions:block_laser_relay>, null],[<modularmachinery:blockcasing>, <modularmachinery:blockenergyinputhatch:2>, <modularmachinery:blockcasing>], [null, <modularmachinery:blockcasing>, null]]);
 
     recipes.addShaped("FluidOutHatch2", <modularmachinery:blockfluidoutputhatch:2>, [[null, <modularmachinery:blockcasing>, null],[<modularmachinery:blockcasing>, <nuclearcraft:buffer>, <modularmachinery:blockcasing>], [null, <advgenerators:fluid_output_select>, null]]);
-    recipes.addShaped("FluidOutHatch3", <modularmachinery:blockfluidoutputhatch:3>, [[null, <modularmachinery:blockcasing>, null],[<modularmachinery:blockcasing>, <modularmachinery:blockfluidoutputhatch:2>, <modularmachinery:blockcasing>], [null, <actuallyadditions:block_laser_relay_fluids>, null]]);
-    recipes.addShaped("FluidOutHatch4", <modularmachinery:blockfluidoutputhatch:4>, [[null, <modularmachinery:blockcasing>, null],[<modularmachinery:blockcasing>, <modularmachinery:blockfluidoutputhatch:3>, <modularmachinery:blockcasing>], [null, <actuallyadditions:block_laser_relay_fluids>, null]]);
-    recipes.addShaped("FluidOutHatch5", <modularmachinery:blockfluidoutputhatch:5>, [[null, <modularmachinery:blockcasing>, null],[<modularmachinery:blockcasing>, <modularmachinery:blockfluidoutputhatch:4>, <modularmachinery:blockcasing>], [null, <actuallyadditions:block_laser_relay_fluids>, null]]);
 
     recipes.addShaped("FluidInHatch2", <modularmachinery:blockfluidinputhatch:2>, [[null, <advgenerators:fluid_input>, null],[<modularmachinery:blockcasing>, <nuclearcraft:buffer>, <modularmachinery:blockcasing>], [null, <modularmachinery:blockcasing>, null]]);
     recipes.addShaped("FluidInHatch3", <modularmachinery:blockfluidinputhatch:3>, [[null, <actuallyadditions:block_laser_relay_fluids>, null],[<modularmachinery:blockcasing>, <modularmachinery:blockfluidinputhatch:2>, <modularmachinery:blockcasing>], [null, <modularmachinery:blockcasing>, null]]);
@@ -134,25 +128,37 @@ var itemsToRemove = [
     <modularmachinery:blockinputbus>,
     <modularmachinery:blockinputbus:1>,
     <modularmachinery:blockinputbus:6>,
+	
     <modularmachinery:blockoutputbus>,
     <modularmachinery:blockoutputbus:1>,
     <modularmachinery:blockoutputbus:6>,
+	
     <modularmachinery:blockfluidinputhatch>,
     <modularmachinery:blockfluidinputhatch:1>,
     <modularmachinery:blockfluidinputhatch:6>,
     <modularmachinery:blockfluidinputhatch:7>,
+	
     <modularmachinery:blockfluidoutputhatch>,
     <modularmachinery:blockfluidoutputhatch:1>,
     <modularmachinery:blockfluidoutputhatch:6>,
     <modularmachinery:blockfluidoutputhatch:7>,
+	
     <modularmachinery:blockenergyinputhatch>,
     <modularmachinery:blockenergyinputhatch:1>,
+	<modularmachinery:blockenergyinputhatch:3>,
+	<modularmachinery:blockenergyinputhatch:4>,
+	<modularmachinery:blockenergyinputhatch:5>,
     <modularmachinery:blockenergyinputhatch:6>,
     <modularmachinery:blockenergyinputhatch:7>,
+	
     <modularmachinery:blockenergyoutputhatch>,
     <modularmachinery:blockenergyoutputhatch:1>,
+	<modularmachinery:blockenergyoutputhatch:3>,
+    <modularmachinery:blockenergyoutputhatch:4>,
+    <modularmachinery:blockenergyoutputhatch:5>,
     <modularmachinery:blockenergyoutputhatch:6>,
     <modularmachinery:blockenergyoutputhatch:7>,
+	
     <modulardiversity:blockjackhatch>
 ] as IItemStack[];
 
