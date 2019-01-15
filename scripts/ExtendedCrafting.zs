@@ -57,7 +57,7 @@ print("--- loading ExtendedCrafting.zs ---");
 	
 # Compression
 	recipes.remove(<extendedcrafting:compressor>);
-	mods.extendedcrafting.TableCrafting.addShaped(2, <extendedcrafting:compressor>, 
+	mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:compressor>, 
 	[[piston, piston, piston, piston, piston], 
 	[piston, <ic2:te:43>, <excompressum:auto_compressor>, <ic2:te:43>, piston], 
 	[piston, <extendedcrafting:storage>, <mekanism:machineblock:7>.withTag({recipeType: 3}), <extendedcrafting:storage>, piston], 
@@ -66,7 +66,7 @@ print("--- loading ExtendedCrafting.zs ---");
 	
 # Advanced Crafting
 	recipes.remove(<extendedcrafting:table_advanced>);
-	mods.extendedcrafting.TableCrafting.addShaped(1, 
+	mods.extendedcrafting.TableCrafting.addShaped(0, 
 	<extendedcrafting:table_advanced>, 
 	[[<extendedcrafting:material:8>, <extendedcrafting:material:15>, <extendedcrafting:material:9>], 
 	[<extendedcrafting:material:14>, <extendedcrafting:table_basic>, <extendedcrafting:material:17>], 
@@ -74,7 +74,7 @@ print("--- loading ExtendedCrafting.zs ---");
 
 # Elite Crafting
 	recipes.remove(<extendedcrafting:table_elite>);
-	mods.extendedcrafting.TableCrafting.addShaped(2, <extendedcrafting:table_elite>, [
+	mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:table_elite>, [
 	[<thermalexpansion:frame:129>, <extendedcrafting:material:16>, <thermalexpansion:frame:147>, <extendedcrafting:material:16>, <thermalexpansion:frame:129>], 
 	[<extendedcrafting:material:16>, <ore:dustMana>, <extendedcrafting:table_advanced>, <ore:dustMana>, <extendedcrafting:material:16>], 
 	[<thermalfoundation:fertilizer:2>, <ore:blockOsgloglas>, <rftools:crafter3>, <ore:blockOsgloglas>, <thermalfoundation:fertilizer:2>], 
@@ -83,7 +83,7 @@ print("--- loading ExtendedCrafting.zs ---");
 
 # Ultimate Crafting
 	recipes.remove(<extendedcrafting:table_ultimate>);
-	mods.extendedcrafting.TableCrafting.addShaped(3, <extendedcrafting:table_ultimate>, [
+	mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:table_ultimate>, [
 	[<thermalexpansion:frame:147>, <extendedcrafting:trimmed:4>, <ore:crystalDraconium>, <advancedrocketry:ic:2>, <ore:crystalDraconium>, <extendedcrafting:trimmed:4>, <thermalexpansion:frame:147>], 
 	[<extendedcrafting:trimmed:4>, <ore:blockAethium>, <avaritia:double_compressed_crafting_table>, <thermalexpansion:frame:148>, <avaritia:double_compressed_crafting_table>, <ore:blockEnderium>, <extendedcrafting:trimmed:4>], 
 	[<ore:crystalDraconium>, <avaritia:double_compressed_crafting_table>, <extendedcrafting:table_advanced>, <extendedcrafting:table_elite>, <extendedcrafting:table_advanced>, <avaritia:double_compressed_crafting_table>, <ore:crystalDraconium>], 

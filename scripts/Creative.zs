@@ -73,7 +73,7 @@ print("--- loading Creative.zs ---");
 	mods.jei.JEI.addItem(creativeGasTankFrame);
 	
 # Mystical Agradditions Creative Essence
-	mods.extendedcrafting.TableCrafting.addShaped(2, <mysticalagradditions:stuff:69>, 
+	mods.extendedcrafting.TableCrafting.addShaped(0, <mysticalagradditions:stuff:69>, 
 	[[<ore:blockInsaniumEssence>, <ore:ingotVoid>, <ore:blockInsaniumEssence>, <ore:ingotVoid>, <ore:blockInsaniumEssence>], 
 	[<ore:ingotVoid>, <ore:essenceTier6>, <ore:blockBaseEssence>, <ore:essenceTier6>, <ore:ingotVoid>], 
 	[<ore:blockInsaniumEssence>, <ore:blockBaseEssence>, <ore:blockInsanium>, <ore:blockBaseEssence>, <ore:blockInsaniumEssence>], 

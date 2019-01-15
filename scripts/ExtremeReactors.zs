@@ -10,7 +10,7 @@ print("--- loading ExtremeReactors.zs ---");
 
 # Reactor Controller
 	recipes.remove(<bigreactors:reactorcontroller>);
-	mods.extendedcrafting.TableCrafting.addShaped(1, 
+	mods.extendedcrafting.TableCrafting.addShaped(0, 
 	<bigreactors:reactorcontroller>, 
 	[[<nuclearcraft:fission_block>, <tconstruct:large_plate>.withTag({Material: "lead"}), <nuclearcraft:fission_block>],
 	[<ore:plateUranium>, <ic2:te:22>, <ore:plateUranium>], 
