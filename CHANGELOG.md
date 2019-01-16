@@ -2,15 +2,18 @@
 
 **Implemented enhancements:**
 
-- Hopefully increased performance on servers!
-- NuclearCraft RF storage inconsistent values [\#597](https://github.com/NillerMedDild/Enigmatica2Expert/issues/597) [[config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/config)] [[enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/enhancement)]
-- Morph-o-Tool Update and Config Changes [\#595](https://github.com/NillerMedDild/Enigmatica2Expert/issues/595) [[config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/config)] [[enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/enhancement)] [[script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/script)]
-- Wireless RF Heating Coils Tooltip [\#586](https://github.com/NillerMedDild/Enigmatica2Expert/issues/586) [[enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/enhancement)] [[suggestion](https://github.com/NillerMedDild/Enigmatica2Expert/labels/suggestion)]
+- Restricting Capturing of Boss-like Enemies \(FryoKnight\) [\#633](https://github.com/NillerMedDild/Enigmatica2Expert/issues/633) [[enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/enhancement)] [[suggestion](https://github.com/NillerMedDild/Enigmatica2Expert/labels/suggestion)]
+- Forestry Backpack Ice & Fire Compatibility \(Fryoknight\) [\#620](https://github.com/NillerMedDild/Enigmatica2Expert/issues/620) [[enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/enhancement)] [[suggestion](https://github.com/NillerMedDild/Enigmatica2Expert/labels/suggestion)]
+- Add Project Intelligence [\#609](https://github.com/NillerMedDild/Enigmatica2Expert/issues/609) [[enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/enhancement)] [[mod](https://github.com/NillerMedDild/Enigmatica2Expert/labels/mod)]
 
 **Fixed bugs:**
 
-- Uranium plate with hammer recipe is 1:1 [\#598](https://github.com/NillerMedDild/Enigmatica2Expert/issues/598) [[bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/bug)] [[script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/script)]
-- IF Laser Drill Mining things it shouldn't
+- Downgraded Dank/Null/ to prevent the disapppearing bugs
+- Cyclic Redstone Receiver/Transmitter Dupe [\#631](https://github.com/NillerMedDild/Enigmatica2Expert/issues/631) [[bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/bug)]
+- Crashing when "building terrain". [\#628](https://github.com/NillerMedDild/Enigmatica2Expert/issues/628) [[mod issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/mod%20issue)] [[not fixed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/not%20fixed)]
+- IE Wire throughput is to low [\#624](https://github.com/NillerMedDild/Enigmatica2Expert/issues/624) [[bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/bug)] [[config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/config)]
+- Quantum Entangloporter craft requires soldered forestry circuit boards [\#623](https://github.com/NillerMedDild/Enigmatica2Expert/issues/623) [[bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/bug)] [[script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/script)]
+- \[Integrated dynamics/tunnels\] Networks corrupting after server crash. [\#529](https://github.com/NillerMedDild/Enigmatica2Expert/issues/529) [[mod issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/mod%20issue)] [[more-information-needed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/more-information-needed)]
 
 
 
