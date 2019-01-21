@@ -70,3 +70,12 @@ discordsuite/win32-x86-64/discord-rpc.dll
 discordsuite/version
 ServerFileGenerator.bat
 config/brandon3055/ResourceCache/
+whitelist.json
+ops.json
+minecraft_server.1.12.2.jar
+installer.log
+forge-1.12.2-14.23.5.2781-universal.jar
+forge-1.12.2-14.23.5.2781-installer.jar
+eula.txt
+banned-players.json
+banned-ips.json

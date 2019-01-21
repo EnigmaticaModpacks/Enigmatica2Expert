@@ -2,6 +2,13 @@ import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 print("--- loading MiscRecipes.zs ---");
 
+# Quark Marble Wall Oredicted version
+	recipes.remove(<quark:marble_wall>);
+	recipes.addShaped("Quark Marble Wall", 
+	<quark:marble_wall> * 6, 
+	[[<ore:stoneMarble>, <ore:stoneMarble>, <ore:stoneMarble>],
+	[<ore:stoneMarble>, <ore:stoneMarble>, <ore:stoneMarble>]]);
+
 # MOAR BAITS
 	recipes.addShapeless("Polar Bear Bait", 
 	<excompressum:bait:10>, 

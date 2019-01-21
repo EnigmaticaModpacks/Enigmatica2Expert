@@ -4,8 +4,11 @@ import mods.jei.JEI.removeAndHide as rh;
 #modloaded tconstruct
 print("--- loading TinkersConstruct.zs ---");
 	
-# *======= Recipes =======*
-
+# Cobalt Block Unification
+	mods.tconstruct.Casting.removeBasinRecipe(<chisel:blockcobalt>);
+	mods.tconstruct.Casting.addBasinRecipe(<tconstruct:metal>, null, <liquid:cobalt>, 1296);
+	
+# Item Rack
 	rh(<tconstruct:rack>);
 	
 # Blank Cast Resmelting

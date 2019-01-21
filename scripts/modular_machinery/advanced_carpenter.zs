@@ -88,7 +88,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_tier_6_crafting_s
 
 mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_intricate_circuit_board", machineName, 5)
 	.addEnergyPerTickInput(50000)
-	.addItemOutput(<forestry:chipsets:3>)
+	.addItemOutput(<forestry:chipsets:3>.withTag({T: 3 as short}))
 	.addItemInput(<forestry:chipsets>.withTag({}))
 	.addItemInput(<forestry:chipsets:1>.withTag({}))
 	.addItemInput(<forestry:chipsets:2>.withTag({}))
@@ -99,7 +99,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_intricate_circuit
 
 mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_basic_circuit_board", machineName, 5)
 	.addEnergyPerTickInput(50000)
-	.addItemOutput(<forestry:chipsets>)
+	.addItemOutput(<forestry:chipsets>.withTag({T: 0 as short}))
 	.addItemInput(<ore:ingotTin>)
 	.addItemInput(<ore:dustRedstone>, 2)
 	.addFluidInput(<liquid:water> * 5000)
@@ -107,7 +107,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_basic_circuit_boa
 
 mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_enhanced_circuit_board", machineName, 5)
 	.addEnergyPerTickInput(50000)
-	.addItemOutput(<forestry:chipsets:1>)
+	.addItemOutput(<forestry:chipsets:1>.withTag({T: 1 as short}))
 	.addItemInput(<ore:ingotBronze>)
 	.addItemInput(<ore:dustRedstone>, 2)
 	.addFluidInput(<liquid:water> * 5000)
@@ -115,7 +115,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_enhanced_circuit_
 
 mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_refined_circuit_board", machineName, 5)
 	.addEnergyPerTickInput(50000)
-	.addItemOutput(<forestry:chipsets:2>)
+	.addItemOutput(<forestry:chipsets:2>.withTag({T: 2 as short}))
 	.addItemInput(<ore:ingotIron>)
 	.addItemInput(<ore:dustRedstone>, 2)
 	.addFluidInput(<liquid:water> * 5000)

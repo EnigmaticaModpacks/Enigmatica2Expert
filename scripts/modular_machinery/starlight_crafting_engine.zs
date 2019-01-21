@@ -30,6 +30,6 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_spectral_lens", m
 mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_luminous_powder", machineName, 20)
 	.addItemOutput(<astralsorcery:itemusabledust> * 16)
 	.addItemInput(<ore:dustGlowstone>, 6)
-	.addItemInput(<ore:nitor:4>)
+	.addItemInput(<ore:nitor>)
 	.addItemInput(<ore:gemAquamarine>)
 	.build();

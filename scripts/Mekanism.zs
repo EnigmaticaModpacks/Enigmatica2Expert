@@ -1,7 +1,48 @@
 import mods.jei.JEI.removeAndHide as rh;
+import crafttweaker.item.IItemStack as IItemStack;
 #modloaded mekanism
 print("--- loading Mekanism.zs ---");
-	
+
+# Recreating Energy Tablet recipes in an attempt to mitigate lag
+var energyTablet = <mekanism:energytablet>.withTag({mekData: {}})|<mekanism:energytablet>|<mekanism:energytablet>.withTag({})|<mekanism:energytablet>.anyDamage();
+
+var energyCube0 = <mekanism:energycube>.withTag({tier: 0, mekData: {}})|<mekanism:energycube>.withTag({tier: 0});
+var energyCube1 = <mekanism:energycube>.withTag({tier: 1, mekData: {}})|<mekanism:energycube>.withTag({tier: 1});
+var energyCube2 = <mekanism:energycube>.withTag({tier: 2, mekData: {}})|<mekanism:energycube>.withTag({tier: 2});
+var energyCube3 = <mekanism:energycube>.withTag({tier: 3, mekData: {}})|<mekanism:energycube>.withTag({tier: 3});
+
+var inductionCell0 = <mekanism:basicblock2:3>.withTag({tier: 0, mekData: {}})|<mekanism:basicblock2:3>.withTag({tier: 0});
+var inductionCell1 = <mekanism:basicblock2:3>.withTag({tier: 1, mekData: {}})|<mekanism:basicblock2:3>.withTag({tier: 1});
+var inductionCell2 = <mekanism:basicblock2:3>.withTag({tier: 2, mekData: {}})|<mekanism:basicblock2:3>.withTag({tier: 2});
+
+val itemsToRecreate as IItemStack[] = [
+	<mekanismgenerators:generator:6>,
+	<mekanism:basicblock2:3>.withTag({tier: 0}),
+	<mekanism:basicblock2:3>.withTag({tier: 1}),
+	<mekanism:basicblock2:3>.withTag({tier: 2}),
+	<mekanism:basicblock2:3>.withTag({tier: 3}),
+	<mekanism:energycube>.withTag({tier: 0}),
+	<mekanism:energycube>.withTag({tier: 1}),
+	<mekanism:energycube>.withTag({tier: 2}),
+	<mekanism:energycube>.withTag({tier: 3}),
+	<mekanism:basicblock2:1>
+];
+
+for item in itemsToRecreate {
+	recipes.remove(item);
+}
+
+recipes.addShaped("e2e_wind_generator", <mekanismgenerators:generator:6>, [[<ore:ingotOsmium>, <immersiveengineering:wooden_device1:1>, <ore:ingotOsmium>], [<ore:ingotOsmium>, <ore:alloyAdvanced>, <ore:ingotOsmium>], [<mekanism:energytablet:*>, <ore:circuitBasic>, <mekanism:energytablet:*>]]);
+recipes.addShaped("e2e_mekanism_basicblock2_3_tier0", <mekanism:basicblock2:3>.withTag({tier: 0, mekData: {}}), [[<ore:dustLithium>, energyTablet, <ore:dustLithium>], [energyTablet, energyCube0, energyTablet], [<ore:dustLithium>, energyTablet, <ore:dustLithium>]]);
+recipes.addShaped("e2e_mekanism_basicblock2_3_tier1", <mekanism:basicblock2:3>.withTag({tier: 1, mekData: {}}), [[energyTablet, inductionCell0, energyTablet], [inductionCell0, energyCube1, inductionCell0], [energyTablet, inductionCell0, energyTablet]]);
+recipes.addShaped("e2e_mekanism_basicblock2_3_tier2", <mekanism:basicblock2:3>.withTag({tier: 2, mekData: {}}), [[energyTablet, inductionCell1, energyTablet], [inductionCell1, energyCube2, inductionCell1], [energyTablet, inductionCell1, energyTablet]]);
+recipes.addShaped("e2e_mekanism_basicblock2_3_tier3", <mekanism:basicblock2:3>.withTag({tier: 3, mekData: {}}), [[energyTablet, inductionCell2, energyTablet], [inductionCell2, energyCube3, inductionCell2], [energyTablet, inductionCell2, energyTablet]]);
+recipes.addShaped("e2e_mekanism_energycube_0_tier0", <mekanism:energycube>.withTag({tier: 0, mekData: {}}), [[<ore:alloyBasic>, energyTablet, <ore:alloyBasic>], [<ore:ingotIron>, <mekanism:basicblock:8>, <ore:ingotIron>], [<ore:alloyBasic>, energyTablet, <ore:alloyBasic>]]);
+recipes.addShaped("e2e_mekanism_energycube_0_tier1", <mekanism:energycube>.withTag({tier: 1, mekData: {}}), [[<ore:alloyAdvanced>, energyTablet, <ore:alloyAdvanced>], [<ore:ingotOsmium>, energyCube0, <ore:ingotOsmium>], [<ore:alloyAdvanced>, energyTablet, <ore:alloyAdvanced>]]);
+recipes.addShaped("e2e_mekanism_energycube_0_tier2", <mekanism:energycube>.withTag({tier: 2, mekData: {}}), [[<ore:alloyElite>, energyTablet, <ore:alloyElite>], [<ore:ingotGold>, energyCube1, <ore:ingotGold>], [<ore:alloyElite>, energyTablet, <ore:alloyElite>]]);
+recipes.addShaped("e2e_mekanism_energycube_0_tier3", <mekanism:energycube>.withTag({tier: 3, mekData: {}}), [[<ore:alloyUltimate>, energyTablet, <ore:alloyUltimate>], [<ore:gemDiamond>, energyCube2, <ore:gemDiamond>], [<ore:alloyUltimate>, energyTablet, <ore:alloyUltimate>]]);
+recipes.addShaped("e2e_mekanism_basicblock2_1", <mekanism:basicblock2:1> * 4, [[null, <ore:ingotSteel>, null], [<ore:ingotSteel>, energyTablet, <ore:ingotSteel>], [null, <ore:ingotSteel>, null]]);
+
 	var ultimateGasTank = <mekanism:gastank>.withTag({tier: 3, mekData:{}})|<mekanism:gastank>.withTag({tier: 3, mekData:{security:0}});
 	var ultimateFluidTank = <mekanism:machineblock2:11>.withTag({tier: 3, mekData:{}})|<mekanism:machineblock2:11>.withTag({tier: 3, mekData:{security:0}});
 	
@@ -100,7 +141,7 @@ print("--- loading Mekanism.zs ---");
 	<mekanism:machineblock2:8>, 
 	[[ultimateGasTank, <extrautils2:suncrystal>, ultimateGasTank],
 	[<mekanismgenerators:reactor:2>, <advancedrocketry:crystallizer>, <mekanismgenerators:reactor:2>], 
-	[<ore:circuitUltimate>, <ic2:lapotron_crystal:26>.anyDamage(), <ore:circuitUltimate>]]);
+	[<ore:circuitUltimate>, <ic2:lapotron_crystal>.anyDamage(), <ore:circuitUltimate>]]);
 
 # Gas-burning generator
 	recipes.remove(<mekanismgenerators:generator:3>);
@@ -143,7 +184,7 @@ print("--- loading Mekanism.zs ---");
 	recipes.remove(<mekanism:machineblock3>);
 	recipes.addShaped("Quantum Entangloporter", <mekanism:machineblock3>, 
 	[[<mekanism:basicblock:7>, <ore:heartDragon>, <mekanism:basicblock:7>],
-	[<forestry:chipsets:3>.withTag({}), <mekanism:machineblock:11>, <forestry:chipsets:3>.withTag({})], 
+	[<forestry:chipsets:3>.withTag({}), <mekanism:machineblock:11>|<mekanism:machineblock:11>.withTag({}), <forestry:chipsets:3>.withTag({})], 
 	[<mekanism:basicblock:7>, <rftools:matter_beamer>, <mekanism:basicblock:7>]]);
 
 # Turbine Casing
@@ -183,7 +224,7 @@ print("--- loading Mekanism.zs ---");
 	<mekanismgenerators:generator:6>, 
 	[[<ore:ingotOsmium>, <immersiveengineering:wooden_device1:1>, <ore:ingotOsmium>],
 	[<ore:ingotOsmium>, <ore:alloyAdvanced>, <ore:ingotOsmium>], 
-	[<mekanism:energytablet>.anyDamage(), <ore:circuitBasic>, <mekanism:energytablet>.anyDamage()]]);
+	[energyTablet, <ore:circuitBasic>, energyTablet]]);
 
 # Solar Generator
 	recipes.remove(<mekanismgenerators:generator:1>);

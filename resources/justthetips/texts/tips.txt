@@ -45,7 +45,6 @@ Be sure to pick up Chests, Pistons and Furnaces when you see them.
 Astral Sorcery Rituals (and linked Ritual Anchors) act as Chunkloaders.
 There are a lot of ways to get flight-without-flight in the pack. Think outside the box.
 Prepare lots of space for Blood Magic Altars.
-Go into the Twilight Forest early, or prepare strong Weapons and Armor. It's surface is safe, but points of interest have a lot of enemies.
 Horologium is an easy to miss dim constellation, be sure to attune yourself and check the sky with the Telescope every night as it only appears every 36 days.
 Cyclic Scaffolding is great for building. Sneak-clicking places it on opposite face of the block you clicked. Comes in three varieties: one decays into nothing quickly, one breaks all connected scaffolds when one is broken, and the third one can be replaced with blocks by right-clicking.
 The RFTools Storage Scanner can make early game crafting a lot easier.
