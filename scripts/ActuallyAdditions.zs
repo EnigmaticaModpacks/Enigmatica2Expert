@@ -3,6 +3,17 @@ import mods.jei.JEI.removeAndHide as rh;
 #modloaded actuallyadditions
 print("--- loading ActuallyAdditions.zs ---");
 	
+# Canola Oil Changes
+	rh(<actuallyadditions:block_oil_generator>);
+	
+	mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:refinedcanolaoil>);
+	mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:crystaloil>);
+	mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:empoweredoil>);
+
+	mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:refinedcanolaoil>, 250000);
+	mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:crystaloil>, 1000000);
+	mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:empoweredoil>, 1750000);
+	
 # Drill Speed Augment I oredict compat
 	recipes.remove(<actuallyadditions:item_drill_upgrade_speed>);
 	recipes.addShaped("Drill Speed Augment I", 
