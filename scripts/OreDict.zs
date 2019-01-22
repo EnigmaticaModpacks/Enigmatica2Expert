@@ -5,6 +5,9 @@ import crafttweaker.oredict.IOreDictEntry as IOreDictEntry;
 import mods.jei.JEI.removeAndHide as rh;
 print("--- loading OreDict.zs ---");
 
+# Removing broken Draconium Ore from it's oredict
+	<ore:oreDraconium>.remove(<draconicevolution:draconium_ore:32767>);
+	
 # Slag
 	<ore:crystalSlag>.add(<ic2:misc_resource:5>);
 
