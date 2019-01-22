@@ -489,6 +489,16 @@ print("--- loading MysticalAgriculture.zs ---");
 	
 	<ore:blockNickel>, <ore:blockNickel>, <ore:blockNickel>, <ore:blockNickel>]);
 
+# End Seeds
+	recipes.remove(<mysticalagriculture:end_seeds>);
+	mods.astralsorcery.Altar.addAttunementAltarRecipe("enigmatica2expertskyblock:shaped/internal/altar/end_seeds",
+	<mysticalagriculture:end_seeds>, 600, 200, 
+	[<ore:essenceTier3>, <ore:blockSuperiumEssence>, <ore:essenceTier3>,
+	<ore:blockSuperiumEssence>, <mysticalagriculture:crafting:20>, <ore:blockSuperiumEssence>, 
+	<ore:essenceTier3>, <ore:blockSuperiumEssence>, <ore:essenceTier3>,
+	
+	<excompressum:compressed_block:10>, <excompressum:compressed_block:10>, <excompressum:compressed_block:10>, <excompressum:compressed_block:10>]);
+
 # *======= Seeds Tier 5 =======*
 	
 # Void Metal Seeds
