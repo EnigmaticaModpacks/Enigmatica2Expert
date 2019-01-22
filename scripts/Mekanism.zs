@@ -271,7 +271,6 @@ recipes.addShaped("e2e_mekanism_basicblock2_1", <mekanism:basicblock2:1> * 4, [[
 	mods.actuallyadditions.Empowerer.addRecipe(<mekanism:controlcircuit:3>, <mekanism:controlcircuit:2>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, 500000, 100, [0.5, 0.3, 0.2]);
 
 # Draconium Ore
-	mods.mekanism.combiner.removeRecipe(<draconicevolution:draconium_ore>);
 	mods.mekanism.combiner.addRecipe(<draconicevolution:draconium_dust> * 8, <draconicevolution:draconium_ore>);
 	
 # Nether Quartz Ore

@@ -5,7 +5,7 @@ print("--- loading ImmersiveEngineering.zs ---");
 
 # Crude Oil Unification
 	mods.immersivepetroleum.Distillation.addRecipe(
-	[<liquid:gasoline> * 39, <liquid:diesel> * 27, <liquid:lubricant> * 9],
+	[<liquid:lubricant> * 9, <liquid:diesel> * 27,  <liquid:gasoline> * 39],
 	[<immersivepetroleum:material>], 
 	<liquid:crude_oil> * 75, 
 	4096, 20, [0.07]);
