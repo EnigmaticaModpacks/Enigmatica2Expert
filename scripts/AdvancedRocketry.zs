@@ -4,7 +4,7 @@ import mods.jei.JEI.removeAndHide as rh;
 print("--- loading AdvancedRocketry.zs ---");
 
 # Rocket Fuel
-	mods.immersivepetroleum.Distillation.addRecipe([<liquid:diesel> * 15, <liquid:gasoline> * 15, <liquid:oxygen> * 70], null, <liquid:rocketfuel> * 50, 5000, 20, null);
+	mods.immersiveengineering.Mixer.addRecipe(<liquid:rocketfuel> * 250, <liquid:oxygen> * 500, [<thermalfoundation:material:833>, <immersivepetroleum:material>], 25000);
 
 # HeatProof Brick
 	recipes.remove(<advancedrocketry:blastbrick>);
