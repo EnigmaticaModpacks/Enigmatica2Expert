@@ -3,6 +3,16 @@ import crafttweaker.item.IItemStack as IItemStack;
 #modloaded immersiveengineering
 print("--- loading ImmersiveEngineering.zs ---");
 
+# Coal Coke Unification
+	rh(<thermalfoundation:material:802>);
+	mods.thermalexpansion.RedstoneFurnace.removePyrolysisRecipe(<minecraft:coal>);
+	mods.thermalexpansion.RedstoneFurnace.addPyrolysisRecipe(<immersiveengineering:material:6>, 
+	<minecraft:coal>, 3000, 250);
+
+	mods.thermalexpansion.RedstoneFurnace.removePyrolysisRecipe(<minecraft:coal_block>);
+	mods.thermalexpansion.RedstoneFurnace.addPyrolysisRecipe(<immersiveengineering:stone_decoration:3>, 
+	<minecraft:coal_block>, 2400, 2500);
+
 # Aluminum Scaffolding
 	recipes.remove(<immersiveengineering:metal_decoration2:8>);
 	recipes.addShapedMirrored("Aluminum Scaffolding", 
