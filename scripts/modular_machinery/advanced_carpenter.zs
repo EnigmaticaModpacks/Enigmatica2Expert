@@ -173,3 +173,10 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "bog_earth", machin
 	.addItemInput(<ore:sand>, 2)
 	.addFluidInput(<liquid:water> * 2000)
 	.build();
+	
+mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_wyvern_energy_core", machineName, 10)
+	.addEnergyPerTickInput(50000)
+	.addItemOutput(<draconicevolution:wyvern_energy_core>)
+	.addItemInput(<draconicevolution:draconic_core>)
+	.addFluidInput(<liquid:redstone> * 10000)
+	.build();
