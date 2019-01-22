@@ -5,6 +5,16 @@ import crafttweaker.oredict.IOreDictEntry as IOreDictEntry;
 import mods.jei.JEI.removeAndHide as rh;
 print("--- loading OreDict.zs ---");
 
+# Attempting to fix the Mineralis Ritual
+	<ore:oreAluminum>.remove(<libvulpes:ore0:9>);
+	<ore:oreCopper>.remove(<libvulpes:ore0:4>);
+	<ore:oreTin>.remove(<libvulpes:ore0:5>);
+	<ore:oreNickel>.remove(<immersiveengineering:ore:4>);
+	#<ore:oreSapphire>.remove(<iceandfire:sapphire_ore>);
+	#<ore:oreSilver>.remove(<iceandfire:silver_ore:0>);
+	<ore:oreLead>.remove(<nuclearcraft:ore:2>);
+	<ore:oreUranium>.remove(<nuclearcraft:ore:4>);
+	
 # Removing broken Draconium Ore from it's oredict
 	<ore:oreDraconium>.remove(<draconicevolution:draconium_ore:32767>);
 	
