@@ -39,13 +39,4 @@
 			<itemStack>minecraft:dye 5 15</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="40" power ="2000">
-		<input>
-			<fluidStack>oxygen 10</fluidStack>
-			<fluidStack>hydrogen 10</fluidStack>
-		</input>
-		<output>
-			<fluidStack>rocketfuel 20</fluidStack>
-		</output>
-	</Recipe>
 </Recipes>
