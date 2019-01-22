@@ -1,6 +1,13 @@
 #modloaded fluxnetworks
 print("--- loading FluxNetworks.zs ---");
 
+# Flux (fire recipe is disabled)
+recipes.addShaped("Flux Networks Flux", 
+<fluxnetworks:flux> * 8, 
+[[<ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>],
+[<ore:dustRedstone>, <ore:blockBlackQuartz>, <ore:dustRedstone>], 
+[<ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>]]);
+
 # Flux Point/Plug NBT Clear 
 recipes.addShapeless("Flux Point NBT Clear", 
 <fluxnetworks:fluxpoint>, 
