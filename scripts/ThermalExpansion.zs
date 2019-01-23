@@ -2,61 +2,8 @@ import crafttweaker.item.IItemStack;
 #modloaded thermalexpansion
 print("--- loading ThermalExpansion.zs ---");
 
-/*
-	FusedQuartz cannot work???
-
-# Hardened Glass Fix
-	for fusedQuartz in <ore:fusedQuartz>.items {
-		for dust in <ore:dustCopper>.items {
-			mods.thermalexpansion.InductionSmelter.addRecipe(<thermalfoundation:glass:0> * 2, dust, fusedQuartz, 6000, <thermalfoundation:material:865>, 15);
-		}
-		for dust in <ore:dustSilver>.items {
-			mods.thermalexpansion.InductionSmelter.addRecipe(<thermalfoundation:glass:2> * 2, dust, fusedQuartz, 6000, <thermalfoundation:material:865>, 15);
-		}
-		for dust in <ore:dustLead>.items {
-			mods.thermalexpansion.InductionSmelter.addRecipe(<thermalfoundation:glass:3> * 2, dust, fusedQuartz, 6000, <thermalfoundation:material:865>, 15);
-		}
-		for dust in <ore:dustElectrum>.items {
-			mods.thermalexpansion.InductionSmelter.addRecipe(<thermalfoundation:glass_alloy:1> * 2, dust, fusedQuartz, 6000, <thermalfoundation:material:865>, 15);
-		}
-		for dust in <ore:dustPlatinum>.items {
-			mods.thermalexpansion.InductionSmelter.addRecipe(<thermalfoundation:glass:6> * 2, dust, fusedQuartz, 6000, <thermalfoundation:material:865>, 15);
-		}
-		for dust in <ore:dustBronze>.items {
-			mods.thermalexpansion.InductionSmelter.addRecipe(<thermalfoundation:glass_alloy:3> * 2, dust, fusedQuartz, 6000, <thermalfoundation:material:865>, 15);
-		}
-		for dust in <ore:dustTin>.items {
-			mods.thermalexpansion.InductionSmelter.addRecipe(<thermalfoundation:glass:1> * 2, dust, fusedQuartz, 6000, <thermalfoundation:material:865>, 15);
-		}
-		for dust in <ore:dustEnderium>.items {
-			mods.thermalexpansion.InductionSmelter.addRecipe(<thermalfoundation:glass_alloy:7> * 2, dust, fusedQuartz, 6000, <thermalfoundation:material:865>, 15);
-		}
-		for dust in <ore:dustSteel>.items {
-			mods.thermalexpansion.InductionSmelter.addRecipe(<thermalfoundation:glass_alloy:0> * 2, dust, fusedQuartz, 6000, <thermalfoundation:material:865>, 15);
-		}
-		for dust in <ore:dustConstantan>.items {
-			mods.thermalexpansion.InductionSmelter.addRecipe(<thermalfoundation:glass_alloy:4> * 2, dust, fusedQuartz, 6000, <thermalfoundation:material:865>, 15);
-		}
-		for dust in <ore:dustAluminum>.items {
-			mods.thermalexpansion.InductionSmelter.addRecipe(<thermalfoundation:glass:4> * 2, dust, fusedQuartz, 6000, <thermalfoundation:material:865>, 15);
-		}
-		for dust in <ore:dustInvar>.items {
-			mods.thermalexpansion.InductionSmelter.addRecipe(<thermalfoundation:glass_alloy:2> * 2, dust, fusedQuartz, 6000, <thermalfoundation:material:865>, 15);
-		}
-		for dust in <ore:dustNickel>.items {
-			mods.thermalexpansion.InductionSmelter.addRecipe(<thermalfoundation:glass:5> * 2, dust, fusedQuartz, 6000, <thermalfoundation:material:865>, 15);
-		}
-		for dust in <ore:dustIridium>.items {
-			mods.thermalexpansion.InductionSmelter.addRecipe(<thermalfoundation:glass:7> * 2, dust, fusedQuartz, 6000, <thermalfoundation:material:865>, 15);
-		}
-		for dust in <ore:dustLumium>.items {
-			mods.thermalexpansion.InductionSmelter.addRecipe(<thermalfoundation:glass_alloy:6> * 2, dust, fusedQuartz, 6000, <thermalfoundation:material:865>, 15);
-		}
-		for dust in <ore:dustSignalum>.items {
-			mods.thermalexpansion.InductionSmelter.addRecipe(<thermalfoundation:glass_alloy:5> * 2, dust, fusedQuartz, 6000, <thermalfoundation:material:865>, 15);
-		}
-	}
-*/
+# AA Oil Generator -> Compression Dynamo
+	recipes.addShapeless(<thermalexpansion:dynamo:2>, [<actuallyadditions:block_oil_generator>]);
 
 # Essence of Knowledge XP Compatibility (credit RedGoblin88)
 	mods.thermalexpansion.Crucible.addRecipe(<liquid:experience> * 200, <mysticalagriculture:xp_droplet>, 4000);

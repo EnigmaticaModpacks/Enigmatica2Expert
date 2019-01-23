@@ -23,6 +23,12 @@ print("--- loading Tooltips.zs ---");
 	var ic2wrench = "You can safely break IC2 machines with a Pickaxe.";
 	var tempRecipe = "This item has a temporary crafting recipe.";
 
+# Oil Generator
+	ad(<actuallyadditions:block_oil_generator>, 
+	"This item has been disabled.", 
+	"Use the Thermal Expansion Compression Dynamo instead.",
+	"You can craft this item into a Compression Dynamo.");
+	
 # Wireless Heating Coil
 	ad(<extrautils2:ingredients:13>, "Not consumed when used in crafting recipes.");
 	<extrautils2:ingredients:13>.addTooltip(format.aqua("Not consumed when used in crafting recipes"));
