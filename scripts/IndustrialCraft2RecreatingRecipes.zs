@@ -36,6 +36,22 @@
 		Diamond Dust
 */
 
+//	Electronic Circuit
+	recipes.remove(<ic2:crafting:1>);
+	recipes.addShapedMirrored(<ic2:crafting:1>, [
+		[copperCableIns, copperCableIns, copperCableIns],
+		[<ore:dustRedstone>, <ore:plateIron>, <ore:dustRedstone>],
+		[copperCableIns, copperCableIns, copperCableIns]
+	]);
+
+//	Advanced Circuit
+	recipes.remove(<ic2:crafting:2>);
+	recipes.addShapedMirrored(<ic2:crafting:2>, [
+		[<ore:dustRedstone>, <minecraft:dye:4>, <ore:dustRedstone>],
+		[<ore:dustGlowstone>, <ore:circuitBasic>, <ore:dustGlowstone>],
+		[<ore:dustRedstone>, <minecraft:dye:4>, <ore:dustRedstone>]
+	]);
+	
 //	Nuclear Reactor Vessel
 	recipes.remove(<ic2:resource:14>);
 	recipes.addShaped(<ic2:resource:14>*4, [
@@ -1317,36 +1333,6 @@
 //	Raw Carbon Fibre
 "CC|CC" C:OreDict:dustCoal = ic2:crafting#carbon_fibre
 	recipes.remove(output);
-	recipes.addShaped(output, [
-		[null, null, null],
-		[null, null, null],
-		[null, null, null]
-	]);
-
-//	Electronic Circuit
-"CCC|RIR|CCC" I:<ore:plateIron> R:<ore:dustRedstone> C:copperCableIns = ic2:crafting#circuit
-"CRC|CIC|CRC" I:<ore:plateIron> R:<ore:dustRedstone> C:copperCableIns = ic2:crafting#circuit
-	recipes.remove(output);
-	recipes.addShaped(output, [
-		[null, null, null],
-		[null, null, null],
-		[null, null, null]
-	]);
-	recipes.addShaped(output, [
-		[null, null, null],
-		[null, null, null],
-		[null, null, null]
-	]);
-
-//	Advanced Circuit
-"RGR|LCL|RGR" L:minecraft:dye@4 G:<ore:dustGlowstone> R:<ore:dustRedstone> C:<ore:circuitBasic> = ic2:crafting#advanced_circuit
-"RLR|GCG|RLR" L:minecraft:dye@4 G:<ore:dustGlowstone> R:<ore:dustRedstone> C:<ore:circuitBasic> = ic2:crafting#advanced_circuit
-	recipes.remove(output);
-	recipes.addShaped(output, [
-		[null, null, null],
-		[null, null, null],
-		[null, null, null]
-	]);
 	recipes.addShaped(output, [
 		[null, null, null],
 		[null, null, null],

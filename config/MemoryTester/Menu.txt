@@ -1,0 +1,6 @@
+Header=You have [AllocatedMemory]MB of memory allocated.
+Line1WhenOptimalMemory=The pack recommends [RecommendedMemory]MB to run.
+Line1WhenNonoptimalMemory=The pack recommends [RecommendedMemory]MB to run. Consider using [RecommendedMemory-AllocatedMemory] more.
+ButtonStartText=Start
+ButtonQuitText=Quit
+ButtonStartDebugText=Start Debug

@@ -1,0 +1,5 @@
+InfoHeader=The game was force crashed because of an insufficient memory allocation.
+InfoLine1=Your current memory allocation is [AllocatedMemory]MB.
+InfoLine2=Please allocate [RecommendedMemory]MB before running.
+InfoFooter=If you would like to play with a lower allocation, contact the pack maker to adjust the settings.
+RedirectLink=null

@@ -42,13 +42,13 @@ print("--- loading IndustrialCraft2.zs ---");
 	mods.tconstruct.Melting.addRecipe(<liquid:uranium> * 144, <ic2:crushed:6>);
 
 # Jetpacks	
-	recipes.remove(<ic2:jetpack_electric:26>.anyDamage());
+	recipes.remove(<ic2:jetpack_electric>.anyDamage());
 	recipes.remove(<ic2:jetpack:27>.anyDamage());
 
 	recipes.addShapedMirrored("IC2 Electric Jetpack", 
-	<ic2:jetpack_electric:26>, 
+	<ic2:jetpack_electric>, 
 	[[<ic2:casing:5>, <minecraft:elytra>.anyDamage(), <ic2:casing:5>],
-	[<ore:circuitAdvanced>, <ic2:batpack:26>.anyDamage(), <ore:circuitAdvanced>], 
+	[<ore:circuitAdvanced>, <ic2:batpack>.anyDamage(), <ore:circuitAdvanced>], 
 	[<ic2:casing:5>, null, <ic2:casing:5>]]);
 	
 	recipes.addShapedMirrored("IC2 Jetpack", 
