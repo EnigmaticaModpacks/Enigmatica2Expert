@@ -43,9 +43,10 @@ addSmeltingBonus(<ore:oreTin>, <thermalfoundation:material:193> % 33);
 addSmeltingBonus(<ore:oreSilver>, <thermalfoundation:material:194> % 33);
 addSmeltingBonus(<ore:oreLead>, <thermalfoundation:material:195> % 33);
 
-# Removing aspects from chiseled stuff
+# Removing wrong aspects from stuff
 	<chiselsandbits:chiseled_iron>.setAspects(<aspect:desiderium> * 1);
-
+	<ic2:dust:21>.setAspects(<aspect:metallum> * 1);
+	
 # Temp Recipes
 	recipes.addShapedMirrored("Temporary Void Seed Recipe", <thaumcraft:void_seed> * 4, [[<ore:mycelium>, <ore:crystalLonsdaleite>, <ore:mycelium>],[<ore:crystalLonsdaleite>, <mysticalagriculture:crafting:21>, <ore:crystalLonsdaleite>], [<ore:mycelium>, <ore:crystalLonsdaleite>, <ore:mycelium>]]);
 

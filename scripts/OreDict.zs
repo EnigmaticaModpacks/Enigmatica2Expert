@@ -5,6 +5,10 @@ import crafttweaker.oredict.IOreDictEntry as IOreDictEntry;
 import mods.jei.JEI.removeAndHide as rh;
 print("--- loading OreDict.zs ---");
 
+# Cobalt Block issues
+	<ore:oreCobalt>.remove(<tconstruct:metal>);
+	<ore:oreArdite>.remove(<tconstruct:metal>);
+	
 # Fixing the Mineralis Ritual
 	<ore:oreNickel>.remove(<immersiveengineering:ore:4>);
 	
@@ -37,6 +41,10 @@ print("--- loading OreDict.zs ---");
 
 # Removing broken Draconium Ore from it's oredict
 	<ore:oreDraconium>.remove(<draconicevolution:draconium_ore:32767>);
+# Readding the correct ones
+	<ore:oreDraconium>.add(<draconicevolution:draconium_ore>);
+	<ore:oreDraconium>.add(<draconicevolution:draconium_ore:1>);
+	<ore:oreDraconium>.add(<draconicevolution:draconium_ore:2>);
 	
 # Slag
 	<ore:crystalSlag>.add(<ic2:misc_resource:5>);

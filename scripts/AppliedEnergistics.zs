@@ -28,6 +28,38 @@ print("--- loading AppliedEnergistics.zs ---");
 	[<appliedenergistics2:material:8>, null, <appliedenergistics2:material:8>], 
 	[<ore:plateGold>, <ironchest:iron_chest:1>, <ore:plateGold>]]);
 	
+# Fluid Storage Cells
+	recipes.remove(<appliedenergistics2:fluid_storage_cell_1k>);
+	recipes.addShaped("appliedenergistics2_network/cells/fluid_storage_cell_1k_custom", <appliedenergistics2:fluid_storage_cell_1k>.withTag({}), 
+	[[<appliedenergistics2:quartz_glass>, <ore:dustRedstone>, <appliedenergistics2:quartz_glass>], 
+	[<ore:dustRedstone>, <appliedenergistics2:material:54>, <ore:dustRedstone>], 
+	[<ore:plateIron>, <ironchest:iron_chest>, <ore:plateIron>]]);
+	recipes.addShapeless("appliedenergistics2_network/cells/fluid_storage_cell_1k_storage_custom", <appliedenergistics2:fluid_storage_cell_1k>.withTag({}), 
+	[<appliedenergistics2:material:39>, <appliedenergistics2:material:54>]);
+
+	recipes.remove(<appliedenergistics2:fluid_storage_cell_4k>);
+	recipes.addShaped("appliedenergistics2_network/cells/fluid_storage_cell_4k_custom", <appliedenergistics2:fluid_storage_cell_4k>.withTag({}), 
+	[[<appliedenergistics2:quartz_glass>, <ore:dustRedstone>, <appliedenergistics2:quartz_glass>], 
+	[<ore:dustRedstone>, <appliedenergistics2:material:55>, <ore:dustRedstone>], 
+	[<ore:plateIron>, <ironchest:iron_chest>, <ore:plateIron>]]);
+	recipes.addShapeless("appliedenergistics2_network/cells/fluid_storage_cell_4k_storage_custom", <appliedenergistics2:fluid_storage_cell_4k>.withTag({}), 
+	[<appliedenergistics2:material:39>, <appliedenergistics2:material:55>]);
+
+	recipes.remove(<appliedenergistics2:fluid_storage_cell_16k>);
+	recipes.addShaped("appliedenergistics2_network/cells/fluid_storage_cell_16k_custom", <appliedenergistics2:fluid_storage_cell_16k>.withTag({}), 
+	[[<appliedenergistics2:quartz_glass>, <ore:dustRedstone>, <appliedenergistics2:quartz_glass>], 
+	[<ore:dustRedstone>, <appliedenergistics2:material:56>, <ore:dustRedstone>], 
+	[<ore:plateIron>, <ironchest:iron_chest>, <ore:plateIron>]]);
+	recipes.addShapeless("appliedenergistics2_network/cells/fluid_storage_cell_16k_storage_custom", <appliedenergistics2:fluid_storage_cell_16k>.withTag({}), [<appliedenergistics2:material:39>, <appliedenergistics2:material:56>]);
+
+	recipes.remove(<appliedenergistics2:fluid_storage_cell_64k>);
+	recipes.addShaped("appliedenergistics2_network/cells/fluid_storage_cell_64k_custom", <appliedenergistics2:fluid_storage_cell_64k>.withTag({}), 
+	[[<appliedenergistics2:quartz_glass>, <ore:dustRedstone>, <appliedenergistics2:quartz_glass>], 
+	[<ore:dustRedstone>, <appliedenergistics2:material:57>, <ore:dustRedstone>], 
+	[<ore:plateIron>, <ironchest:iron_chest>, <ore:plateIron>]]);
+	recipes.addShapeless("appliedenergistics2_network/cells/fluid_storage_cell_64k_storage_custom", <appliedenergistics2:fluid_storage_cell_64k>.withTag({}), 
+	[<appliedenergistics2:material:39>, <appliedenergistics2:material:57>]);
+	
 # Storage Cell 1-16384K
 	recipes.remove(<appliedenergistics2:storage_cell_1k>);
 	recipes.addShaped("Storage Cell 1k", 
