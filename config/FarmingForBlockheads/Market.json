@@ -35,7 +35,27 @@
   "custom entries": {
     "__comment": "You can define additional items to be sold by the Market here. Defaults can be overridden. Prefix with ! to blacklist instead.",
     "examplemod:example_item": "2*minecraft:emerald",
-    "harvestcraft:queenbeeitem": "3*minecraft:emerald"
+    "harvestcraft:queenbeeitem": "3*minecraft:emerald",
+    "harvestcraft:kaleseeditem":  "1*minecraft:emerald",
+    "harvestcraft:agaveseeditem": "1*minecraft:emerald",
+    "harvestcraft:amaranthseeditem": "1*minecraft:emerald",
+    "harvestcraft:arrowrootseeditem": "1*minecraft:emerald",
+    "harvestcraft:quinoaseeditem": "1*minecraft:emerald",
+    "harvestcraft:sisalseeditem": "1*minecraft:emerald",
+    "harvestcraft:cassavaseeditem": "1*minecraft:emerald",
+    "harvestcraft:chickpeaseeditem": "1*minecraft:emerald",
+    "harvestcraft:elderberryseeditem": "1*minecraft:emerald",
+    "harvestcraft:flaxseeditem": "1*minecraft:emerald",
+    "harvestcraft:greengrapeseeditem": "1*minecraft:emerald",
+    "harvestcraft:huckleberryseeditem": "1*minecraft:emerald",
+    "harvestcraft:jicamaseeditem": "1*minecraft:emerald",
+    "harvestcraft:juteseeditem": "1*minecraft:emerald",
+    "harvestcraft:kenafseeditem": "1*minecraft:emerald",
+    "harvestcraft:kohlrabiseeditem": "1*minecraft:emerald",
+    "harvestcraft:lentilseeditem": "1*minecraft:emerald",
+    "harvestcraft:milletseeditem": "1*minecraft:emerald",
+    "harvestcraft:mulberryseeditem": "1*minecraft:emerald",
+    "harvestcraft:taroseeditem": "1*minecraft:emerald"
   },
   "defaults amount": {
     "Vanilla Seeds": 1,
