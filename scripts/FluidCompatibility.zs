@@ -75,4 +75,14 @@ print("--- loading FluidCompatibility.zs ---");
 	melter.addRecipe(<botania:storage:1>, <liquid:terrasteel> * 1296);
 	melter.addRecipe(<ore:slimeballPurple>, <liquid:purpleslime> * 250);
 	
+#Make Rustic Honeycomb produce forestry honey
+	mods.thermalexpansion.Centrifuge.removeRecipe(<rustic:honeycomb>);
+	mods.thermalexpansion.Centrifuge.addRecipe([<rustic:beeswax> % 100], <rustic:honeycomb>, <liquid:for.honey> * 250, 2000);
+
+	mods.forestry.Squeezer.removeRecipe(<liquid:honey>, [<rustic:honeycomb>]);
+	mods.forestry.Squeezer.addRecipe(<liquid:for.honey> * 250, [<rustic:honeycomb>], 8);
+
+	mods.rustic.CrushingTub.removeRecipe(<liquid:honey>, <rustic:honeycomb>);
+	mods.rustic.CrushingTub.addRecipe(<liquid:for.honey> * 250, null, <rustic:honeycomb>);
+	
 print("--- FluidCompatibility.zs initialized ---");
