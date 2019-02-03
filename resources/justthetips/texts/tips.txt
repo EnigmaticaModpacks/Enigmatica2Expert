@@ -62,3 +62,4 @@ Under NO circumstances activate Veinminer while working around AE2 networks!
 The Tinkers' Sledge Hammer can crush blocks into others, like Ex Nihilo Hammers.
 Cyclic's Apple Sprouts are cheap and tasty, and can be used to make a Pam's Apple Tree.
 Sneak right-click activates your offhand item instead of your main hand item.
+Many mods offer cross-dimensional teleportation at surprisingly cheap prices.

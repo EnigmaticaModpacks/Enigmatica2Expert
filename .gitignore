@@ -1,16 +1,16 @@
 # Folders to ignore
-journeymap/
-dumps/
-crash-reports/
-.mixin.out/
-logs/
-local/
-libraries/
-llibrary/
-saves/
-TombManyGraves/
+/journeymap/
+/dumps/
+/crash-reports/
+/.mixin.out/
+/logs/
+/local/
+/libraries/
+/llibrary/
+/saves/
+/TombManyGraves/
 screenshots/
-mods/
+/mods/
 
 # Utilities
 .github_changelog_generator
