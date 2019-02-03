@@ -126,6 +126,54 @@ print("--- loading Forestry.zs ---");
 #mods.forestry.Fermenter.removeRecipe(<minecraft:reeds>);
 #mods.forestry.Fermenter.removeRecipe(<liquid:water>);
 
+#More Fermenter compat
+val FermenterFluid = {
+    <liquid:wildberryjuice> : 1.26,
+    <liquid:ironberryjuice> : 1.00,
+    <liquid:grapejuice>     : 1.50,
+    <liquid:applejuice>     : 1.50,
+    <liquid:for.honey>      : 1.50,
+    <liquid:honey>          : 1.50,
+    <liquid:water>          : 1.00
+}   as float[ILiquidStack];
+
+val thingsToferment = [
+    <minecraft:carrot>,
+    <harvestcraft:peanutitem>,
+    <harvestcraft:waterchestnutitem>,
+    <harvestcraft:sesameseedsitem>,
+    <harvestcraft:curryleafitem>,
+    <minecraft:beetroot>,
+    <minecraft:melon>,
+    <harvestcraft:gigapickleitem>,
+    <harvestcraft:kaleitem>,
+    <harvestcraft:agaveitem>,
+    <harvestcraft:amaranthitem>,
+    <harvestcraft:arrowrootitem>,
+    <harvestcraft:quinoaitem>,
+    <harvestcraft:sisalitem>,
+    <harvestcraft:cassavaitem>,
+    <harvestcraft:chickpeaitem>,
+    <harvestcraft:elderberryitem>,
+    <harvestcraft:flaxitem>,
+    <harvestcraft:greengrapeitem>,
+    <harvestcraft:huckleberryitem>,
+    <harvestcraft:jicamaitem>,
+    <harvestcraft:juteitem>,
+    <harvestcraft:kenafitem>,
+    <harvestcraft:kohlrabiitem>,
+    <harvestcraft:lentilitem>,
+    <harvestcraft:milletitem>,
+    <harvestcraft:mulberryitem>,
+    <harvestcraft:taroitem>
+] as IItemStack[];
+
+for thing in thingsToferment {
+    for liquid, ratio in FermenterFluid {
+        mods.forestry.Fermenter.addRecipe(<liquid:biomass>, thing, liquid, 50, ratio);
+    }
+}
+
 # *======= Moisterner =======*
 
 //mods.forestry.Moistener.addRecipe(IItemStack output, IItemStack input, int packagingTime); 
@@ -143,6 +191,9 @@ print("--- loading Forestry.zs ---");
 //mods.forestry.Squeezer.removeRecipe(ILiquidStack liquid, @Optional IIngredient[] ingredients);
 #mods.forestry.Squeezer.removeRecipe(<liquid:juice>);
 #mods.forestry.Squeezer.removeRecipe(<liquid:seed.oil>, [<minecraft:wheat_seeds>]);
+
+#Make melons give fruit juice
+mods.forestry.Squeezer.addRecipe(<liquid:juice> * 15, [<minecraft:melon>], 8);
 
 # *======= Still =======*
 
