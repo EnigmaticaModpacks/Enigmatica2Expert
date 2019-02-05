@@ -11,6 +11,7 @@
 /TombManyGraves/
 screenshots/
 /mods/
+/world/
 
 # Utilities
 .github_changelog_generator
@@ -79,4 +80,3 @@ forge-1.12.2-14.23.5.2781-installer.jar
 eula.txt
 banned-players.json
 banned-ips.json
-world/
