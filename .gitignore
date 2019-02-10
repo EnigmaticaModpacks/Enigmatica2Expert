@@ -57,6 +57,7 @@ config/scavenge/IResourceProperty.txt
 dropt.log
 journeymapdefaults.firstrun
 *.zip
+*.dll
 server.properties
 astralsorcery/gatewayFilter/worldFilter.dat
 OpenComputersMod-1.7.3.146-lua53-native.64.dll
