@@ -3,7 +3,7 @@ import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IIngredient as IIngredient;
 #modloaded botania
 print("--- loading Botania.zs ---");
-
+	
 # Mana Pool
 	recipes.remove(<botania:pool>);
 	recipes.addShapedMirrored("Mana Pool", 

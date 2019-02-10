@@ -1,5 +1,6 @@
-/*{ This script is not used, but auto-regenerates.
-	"dependencies": "thermalfoundation",
+{ 
+	#This script is not used, but auto-regenerates.
+	"dependencies": "thermalfoundation"/*,
 	"populate": {
 		"redstone_clathrate": {
 			"distribution": "uniform",
@@ -91,6 +92,5 @@
 			},
 			"dimension": "all"
 		}
-	}
+	}*/
 }
-*/

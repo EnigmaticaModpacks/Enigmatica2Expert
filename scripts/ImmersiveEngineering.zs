@@ -11,6 +11,9 @@ print("--- loading ImmersiveEngineering.zs ---");
 	4096, 20, [0.07]);
 
 # Coal Coke Unification
+	recipes.remove(<thermalfoundation:storage_resource:1>);
+	recipes.addShaped("immersiveengineering_stone_decoration_3_custom", <immersiveengineering:stone_decoration:3>, [[<ore:fuelCoke>, <ore:fuelCoke>, <ore:fuelCoke>], [<ore:fuelCoke>, <ore:fuelCoke>, <ore:fuelCoke>], [<ore:fuelCoke>, <ore:fuelCoke>, <ore:fuelCoke>]]);
+
 	rh(<thermalfoundation:material:802>);
 	mods.thermalexpansion.RedstoneFurnace.removePyrolysisRecipe(<minecraft:coal>);
 	mods.thermalexpansion.RedstoneFurnace.addPyrolysisRecipe(<immersiveengineering:material:6>, 

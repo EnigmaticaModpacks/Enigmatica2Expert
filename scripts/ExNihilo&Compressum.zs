@@ -130,8 +130,6 @@ print("--- loading ExNihilo&Compressum.zs ---");
 	rh(<exnihilocreatio:item_ore_lead:2>);
 	rh(<exnihilocreatio:item_ore_silver:2>);
 	rh(<exnihilocreatio:item_ore_nickel:2>);
-	rh(<exnihilocreatio:item_ore_ardite:2>);
-	rh(<exnihilocreatio:item_ore_cobalt:2>);
 	
 
 	print("--- ExNihilo&Compressum.zs initialized ---");

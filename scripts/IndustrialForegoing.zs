@@ -1,3 +1,4 @@
+import crafttweaker.item.IItemStack;
 import mods.industrialforegoing.LaserDrill;
 import mods.industrialforegoing.BioReactor;
 #modloaded industrialforegoing teslacorelib

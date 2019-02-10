@@ -204,6 +204,8 @@ for silicon in <ore:itemSilicon>.items {
 	rh(<enderio:block_enhanced_sag_mill>);
 	rh(<enderio:block_enhanced_vat>);
 	rh(<enderio:block_enhanced_wired_charger>);
+	rh(<enderio:item_material:30>);
+	rh(<enderio:item_material:31>);
 	
 	
 	

@@ -1,7 +1,7 @@
 {
-	# If you want to use this, turn off BoP oregen first.
-	#"populate": 
-	"dependencies": "biomesoplenty",
+	# If you want to use this, turn off BoP oregen first, then remove /* from the top, and */ from the bottom
+	"dependencies": "biomesoplenty"/*,	
+	"populate": 
 	{
 		"ruby": {
 			"distribution": "uniform",
@@ -189,5 +189,5 @@
 			},
 			"dimension": "all"
 		}
-	}
+	*/}
 }

@@ -1,4 +1,6 @@
-import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IItemStack;
+import crafttweaker.liquid.ILiquidStack;
+
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded forestry
 print("--- loading Forestry.zs ---");

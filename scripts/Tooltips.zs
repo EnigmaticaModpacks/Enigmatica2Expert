@@ -17,7 +17,7 @@ print("--- loading Tooltips.zs ---");
 	var atomicReconstructor = "Only obtainable through the Atomic Reconstructor.";
 	var metallurgic = "Only obtainable through the Metallurgic Infuser. Requires 20 Diamond Units.";
 	var craftable = "Craftable.";
-	var spaceGen = "Only generates on other planets.";
+	var spaceGen = "This ore only generates on other planets.";
 	var spaceGenHigh = "Generates in large quantities on other planets.";
 	var mekanismFactories = "Factories are made by upgrading Machines in-world with Basic/Advanced/Elite Tier Installers.";
 	var ic2wrench = "You can safely break IC2 machines with a Pickaxe.";
@@ -152,7 +152,6 @@ print("--- loading Tooltips.zs ---");
 	<thermalfoundation:ore_fluid:3>,
 	<thermalfoundation:ore_fluid:2>,
 	<libvulpes:ore0>,
-	<libvulpes:ore0:8>,
 	<thermalfoundation:ore:7>,
 	<thermalfoundation:ore:8>,
 	<rftools:dimensional_shard_ore>,
@@ -168,6 +167,8 @@ print("--- loading Tooltips.zs ---");
 	for item in spaceOres {
 	ad(item, spaceGen);
 	}
+	
+	ad(<libvulpes:ore0:8>, "Rutile Ore only generates on other planets, but Titanium Ingots are craftable.");
 	
 # Mekanism Factories
 	<mekanism:machineblock:5>.addTooltip(mekanismFactories);

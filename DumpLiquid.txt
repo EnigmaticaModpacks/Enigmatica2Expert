@@ -1,0 +1,619 @@
+<liquid:aerotheum>, Zephyrean Aerotheum
+<liquid:ale>, Ale
+<liquid:alewort>, Ale Wort
+<liquid:alubrass>, Molten Aluminum Brass
+<liquid:alugentum>, Molten Alugentum
+<liquid:alumina>, Molten Alumina
+<liquid:aluminum>, Molten Aluminum
+<liquid:alumite>, Molten Alumite
+<liquid:americium_241>, Molten Americium-241
+<liquid:americium_241_fluoride>, Molten Americium-241 Fluoride
+<liquid:americium_241_fluoride_flibe>, Molten FLiBe Salt Solution of Americium-241 Fluoride
+<liquid:americium_242>, Molten Americium-242
+<liquid:americium_242_fluoride>, Molten Americium-242 Fluoride
+<liquid:americium_242_fluoride_flibe>, Molten FLiBe Salt Solution of Americium-242 Fluoride
+<liquid:americium_243>, Molten Americium-243
+<liquid:americium_243_fluoride>, Molten Americium-243 Fluoride
+<liquid:americium_243_fluoride_flibe>, Molten FLiBe Salt Solution of Americium-243 Fluoride
+<liquid:ammonia>, Ammonia
+<liquid:animania_honey>, Honey
+<liquid:applejuice>, Apple Juice
+<liquid:ardite>, Molten Ardite
+<liquid:arsenic>, Molten Arsenic
+<liquid:astral_starmetal>, Molten Astral Starmetal
+<liquid:astralsorcery.liquidstarlight>, Liquid Starlight
+<liquid:bas>, Molten Boron Arsenide
+<liquid:base_essence>, Molten Base Essence
+<liquid:bef2>, Molten Beryllium Fluoride
+<liquid:berkelium_247>, Molten Berkelium-247
+<liquid:berkelium_247_fluoride>, Molten Berkelium-247 Fluoride
+<liquid:berkelium_247_fluoride_flibe>, Molten FLiBe Salt Solution of Berkelium-247 Fluoride
+<liquid:berkelium_248>, Molten Berkelium-248
+<liquid:berkelium_248_fluoride>, Molten Berkelium-248 Fluoride
+<liquid:berkelium_248_fluoride_flibe>, Molten FLiBe Salt Solution of Berkelium-248 Fluoride
+<liquid:beryllium>, Molten Beryllium
+<liquid:betterquesting.placeholder>, Placeholder
+<liquid:bio.ethanol>, Ethanol
+<liquid:biocrude>, Biocrude
+<liquid:biodiesel>, Biodiesel
+<liquid:biofuel>, Biofuel
+<liquid:biomass>, Biomass
+<liquid:blockfluidantimatter>, Liquid Antimatter
+<liquid:blockfluiddirt>, Liquid Dirt
+<liquid:blood>, Blood
+<liquid:blueslime>, Liquid Blue Slime
+<liquid:borax_solution>, Borax Solution
+<liquid:boric_acid>, Boric Acid
+<liquid:boron>, Molten Boron
+<liquid:boron10>, Molten Boron-10
+<liquid:boron11>, Molten Boron-11
+<liquid:boron_nitride_solution>, Boron Nitride Solution
+<liquid:brass>, Molten Brass
+<liquid:brine>, Brine
+<liquid:bronze>, Molten Bronze
+<liquid:calcium_sulfate_solution>, Calcium Sulfate Solution
+<liquid:californium_249>, Molten Californium-249
+<liquid:californium_249_fluoride>, Molten Californium-249 Fluoride
+<liquid:californium_249_fluoride_flibe>, Molten FLiBe Salt Solution of Californium-249 Fluoride
+<liquid:californium_250>, Molten Californium-250
+<liquid:californium_250_fluoride>, Molten Californium-250 Fluoride
+<liquid:californium_250_fluoride_flibe>, Molten FLiBe Salt Solution of Californium-250 Fluoride
+<liquid:californium_251>, Molten Californium-251
+<liquid:californium_251_fluoride>, Molten Californium-251 Fluoride
+<liquid:californium_251_fluoride_flibe>, Molten FLiBe Salt Solution of Californium-251 Fluoride
+<liquid:californium_252>, Molten Californium-252
+<liquid:californium_252_fluoride>, Molten Californium-252 Fluoride
+<liquid:californium_252_fluoride_flibe>, Molten FLiBe Salt Solution of Californium-252 Fluoride
+<liquid:canolaoil>, Canola Oil
+<liquid:carbon_dioxide>, Carbon Dioxide
+<liquid:carbon_monoxide>, Carbon Monoxide
+<liquid:chocolate_liquor>, Chocolate Liquor
+<liquid:cider>, Cider
+<liquid:clay>, Molten Clay
+<liquid:cloud_seed>, Cloud Seed
+<liquid:cloud_seed_concentrated>, Concentrated Cloud Seed
+<liquid:coal>, Liquifacted Coal
+<liquid:cobalt>, Molten Cobalt
+<liquid:cocoa_butter>, Cocoa Butter
+<liquid:concrete>, Liquid Concrete
+<liquid:condensate_water>, Condensate Water
+<liquid:conductive_iron>, Molten Conductive Iron
+<liquid:constantan>, Molten Constantan
+<liquid:construction_alloy>, Molten Iron Alloy
+<liquid:copper>, Molten Copper
+<liquid:copper_nak>, Eutectic NaK-Copper Mixture
+<liquid:copper_nak_hot>, Hot Eutectic NaK-Copper Mixture
+<liquid:corium>, Corium
+<liquid:creosote>, Creosote Oil
+<liquid:crude_oil>, Crude Oil
+<liquid:cryotheum>, Gelid Cryotheum
+<liquid:cryotheum_nak>, Eutectic NaK-Cryotheum Mixture
+<liquid:cryotheum_nak_hot>, Hot Eutectic NaK-Cryotheum Mixture
+<liquid:crystaloil>, Crystallized Oil
+<liquid:curium_243>, Molten Curium-243
+<liquid:curium_243_fluoride>, Molten Curium-243 Fluoride
+<liquid:curium_243_fluoride_flibe>, Molten FLiBe Salt Solution of Curium-243 Fluoride
+<liquid:curium_245>, Molten Curium-245
+<liquid:curium_245_fluoride>, Molten Curium-245 Fluoride
+<liquid:curium_245_fluoride_flibe>, Molten FLiBe Salt Solution of Curium-245 Fluoride
+<liquid:curium_246>, Molten Curium-246
+<liquid:curium_246_fluoride>, Molten Curium-246 Fluoride
+<liquid:curium_246_fluoride_flibe>, Molten FLiBe Salt Solution of Curium-246 Fluoride
+<liquid:curium_247>, Molten Curium-247
+<liquid:curium_247_fluoride>, Molten Curium-247 Fluoride
+<liquid:curium_247_fluoride_flibe>, Molten FLiBe Salt Solution of Curium-247 Fluoride
+<liquid:cyanite>, Fluid Cyanite
+<liquid:dark_chocolate>, Molten Dark Chocolate
+<liquid:dark_steel>, Molten Dark Steel
+<liquid:depleted_fuel_hea_242>, Molten Depleted HEA-242 Fuel
+<liquid:depleted_fuel_hea_242_fluoride>, Molten Depleted HEA-242 Fluoride Fuel
+<liquid:depleted_fuel_hea_242_fluoride_flibe>, Molten FLiBe Salt Solution of Depleted HEA-242 Fluoride Fuel
+<liquid:depleted_fuel_heb_248>, Molten Depleted HEB-248 Fuel
+<liquid:depleted_fuel_heb_248_fluoride>, Molten Depleted HEB-248 Fluoride Fuel
+<liquid:depleted_fuel_heb_248_fluoride_flibe>, Molten FLiBe Salt Solution of Depleted HEB-248 Fluoride Fuel
+<liquid:depleted_fuel_hecf_249>, Molten Depleted HECf-249 Fuel
+<liquid:depleted_fuel_hecf_249_fluoride>, Molten Depleted HECf-249 Fluoride Fuel
+<liquid:depleted_fuel_hecf_249_fluoride_flibe>, Molten FLiBe Salt Solution of Depleted HECf-249 Fluoride Fuel
+<liquid:depleted_fuel_hecf_251>, Molten Depleted HECf-251 Fuel
+<liquid:depleted_fuel_hecf_251_fluoride>, Molten Depleted HECf-251 Fluoride Fuel
+<liquid:depleted_fuel_hecf_251_fluoride_flibe>, Molten FLiBe Salt Solution of Depleted HECf-251 Fluoride Fuel
+<liquid:depleted_fuel_hecm_243>, Molten Depleted HECm-243 Fuel
+<liquid:depleted_fuel_hecm_243_fluoride>, Molten Depleted HECm-243 Fluoride Fuel
+<liquid:depleted_fuel_hecm_243_fluoride_flibe>, Molten FLiBe Salt Solution of Depleted HECm-243 Fluoride Fuel
+<liquid:depleted_fuel_hecm_245>, Molten Depleted HECm-245 Fuel
+<liquid:depleted_fuel_hecm_245_fluoride>, Molten Depleted HECm-245 Fluoride Fuel
+<liquid:depleted_fuel_hecm_245_fluoride_flibe>, Molten FLiBe Salt Solution of Depleted HECm-245 Fluoride Fuel
+<liquid:depleted_fuel_hecm_247>, Molten Depleted HECm-247 Fuel
+<liquid:depleted_fuel_hecm_247_fluoride>, Molten Depleted HECm-247 Fluoride Fuel
+<liquid:depleted_fuel_hecm_247_fluoride_flibe>, Molten FLiBe Salt Solution of Depleted HECm-247 Fluoride Fuel
+<liquid:depleted_fuel_hen_236>, Molten Depleted HEN-236 Fuel
+<liquid:depleted_fuel_hen_236_fluoride>, Molten Depleted HEN-236 Fluoride Fuel
+<liquid:depleted_fuel_hen_236_fluoride_flibe>, Molten FLiBe Salt Solution of Depleted HEN-236 Fluoride Fuel
+<liquid:depleted_fuel_hep_239>, Molten Depleted HEP-239 Fuel
+<liquid:depleted_fuel_hep_239_fluoride>, Molten Depleted HEP-239 Fluoride Fuel
+<liquid:depleted_fuel_hep_239_fluoride_flibe>, Molten FLiBe Salt Solution of Depleted HEP-239 Fluoride Fuel
+<liquid:depleted_fuel_hep_241>, Molten Depleted HEP-241 Fuel
+<liquid:depleted_fuel_hep_241_fluoride>, Molten Depleted HEP-241 Fluoride Fuel
+<liquid:depleted_fuel_hep_241_fluoride_flibe>, Molten FLiBe Salt Solution of Depleted HEP-241 Fluoride Fuel
+<liquid:depleted_fuel_heu_233>, Molten Depleted HEU-233 Fuel
+<liquid:depleted_fuel_heu_233_fluoride>, Molten Depleted HEU-233 Fluoride Fuel
+<liquid:depleted_fuel_heu_233_fluoride_flibe>, Molten FLiBe Salt Solution of Depleted HEU-233 Fluoride Fuel
+<liquid:depleted_fuel_heu_235>, Molten Depleted HEU-235 Fuel
+<liquid:depleted_fuel_heu_235_fluoride>, Molten Depleted HEU-235 Fluoride Fuel
+<liquid:depleted_fuel_heu_235_fluoride_flibe>, Molten FLiBe Salt Solution of Depleted HEU-235 Fluoride Fuel
+<liquid:depleted_fuel_lea_242>, Molten Depleted LEA-242 Fuel
+<liquid:depleted_fuel_lea_242_fluoride>, Molten Depleted LEA-242 Fluoride Fuel
+<liquid:depleted_fuel_lea_242_fluoride_flibe>, Molten FLiBe Salt Solution of Depleted LEA-242 Fluoride Fuel
+<liquid:depleted_fuel_leb_248>, Molten Depleted LEB-248 Fuel
+<liquid:depleted_fuel_leb_248_fluoride>, Molten Depleted LEB-248 Fluoride Fuel
+<liquid:depleted_fuel_leb_248_fluoride_flibe>, Molten FLiBe Salt Solution of Depleted LEB-248 Fluoride Fuel
+<liquid:depleted_fuel_lecf_249>, Molten Depleted LECf-249 Fuel
+<liquid:depleted_fuel_lecf_249_fluoride>, Molten Depleted LECf-249 Fluoride Fuel
+<liquid:depleted_fuel_lecf_249_fluoride_flibe>, Molten FLiBe Salt Solution of Depleted LECf-249 Fluoride Fuel
+<liquid:depleted_fuel_lecf_251>, Molten Depleted LECf-251 Fuel
+<liquid:depleted_fuel_lecf_251_fluoride>, Molten Depleted LECf-251 Fluoride Fuel
+<liquid:depleted_fuel_lecf_251_fluoride_flibe>, Molten FLiBe Salt Solution of Depleted LECf-251 Fluoride Fuel
+<liquid:depleted_fuel_lecm_243>, Molten Depleted LECm-243 Fuel
+<liquid:depleted_fuel_lecm_243_fluoride>, Molten Depleted LECm-243 Fluoride Fuel
+<liquid:depleted_fuel_lecm_243_fluoride_flibe>, Molten FLiBe Salt Solution of Depleted LECm-243 Fluoride Fuel
+<liquid:depleted_fuel_lecm_245>, Molten Depleted LECm-245 Fuel
+<liquid:depleted_fuel_lecm_245_fluoride>, Molten Depleted LECm-245 Fluoride Fuel
+<liquid:depleted_fuel_lecm_245_fluoride_flibe>, Molten FLiBe Salt Solution of Depleted LECm-245 Fluoride Fuel
+<liquid:depleted_fuel_lecm_247>, Molten Depleted LECm-247 Fuel
+<liquid:depleted_fuel_lecm_247_fluoride>, Molten Depleted LECm-247 Fluoride Fuel
+<liquid:depleted_fuel_lecm_247_fluoride_flibe>, Molten FLiBe Salt Solution of Depleted LECm-247 Fluoride Fuel
+<liquid:depleted_fuel_len_236>, Molten Depleted LEN-236 Fuel
+<liquid:depleted_fuel_len_236_fluoride>, Molten Depleted LEN-236 Fluoride Fuel
+<liquid:depleted_fuel_len_236_fluoride_flibe>, Molten FLiBe Salt Solution of Depleted LEN-236 Fluoride Fuel
+<liquid:depleted_fuel_lep_239>, Molten Depleted LEP-239 Fuel
+<liquid:depleted_fuel_lep_239_fluoride>, Molten Depleted LEP-239 Fluoride Fuel
+<liquid:depleted_fuel_lep_239_fluoride_flibe>, Molten FLiBe Salt Solution of Depleted LEP-239 Fluoride Fuel
+<liquid:depleted_fuel_lep_241>, Molten Depleted LEP-241 Fuel
+<liquid:depleted_fuel_lep_241_fluoride>, Molten Depleted LEP-241 Fluoride Fuel
+<liquid:depleted_fuel_lep_241_fluoride_flibe>, Molten FLiBe Salt Solution of Depleted LEP-241 Fluoride Fuel
+<liquid:depleted_fuel_leu_233>, Molten Depleted LEU-233 Fuel
+<liquid:depleted_fuel_leu_233_fluoride>, Molten Depleted LEU-233 Fluoride Fuel
+<liquid:depleted_fuel_leu_233_fluoride_flibe>, Molten FLiBe Salt Solution of Depleted LEU-233 Fluoride Fuel
+<liquid:depleted_fuel_leu_235>, Molten Depleted LEU-235 Fuel
+<liquid:depleted_fuel_leu_235_fluoride>, Molten Depleted LEU-235 Fluoride Fuel
+<liquid:depleted_fuel_leu_235_fluoride_flibe>, Molten FLiBe Salt Solution of Depleted LEU-235 Fluoride Fuel
+<liquid:depleted_fuel_tbu>, Molten Depleted TBU Fuel
+<liquid:depleted_fuel_tbu_fluoride>, Molten Depleted TBU Fluoride Fuel
+<liquid:depleted_fuel_tbu_fluoride_flibe>, Molten FLiBe Salt Solution of Depleted TBU Fluoride Fuel
+<liquid:deuterium>, Deuterium
+<liquid:diamond>, Molten Diamond
+<liquid:diamond_nak>, Eutectic NaK-Diamond Mixture
+<liquid:diamond_nak_hot>, Hot Eutectic NaK-Diamond Mixture
+<liquid:diborane>, Diborane
+<liquid:diesel>, Diesel
+<liquid:dirt>, Liquid Dirt
+<liquid:dist_water>, Distilled Water
+<liquid:draconium>, Molten Draconium
+<liquid:ec.internal.brine>, Gaseous Brine
+<liquid:ec.internal.chlorine>, Chlorine
+<liquid:ec.internal.cleancopper>, Clean Copper Slurry
+<liquid:ec.internal.cleangold>, Clean Gold Slurry
+<liquid:ec.internal.cleaniron>, Clean Iron Slurry
+<liquid:ec.internal.cleanlead>, Clean Lead Slurry
+<liquid:ec.internal.cleanosmium>, Clean Osmium Slurry
+<liquid:ec.internal.cleansilver>, Clean Silver Slurry
+<liquid:ec.internal.cleantin>, Clean Tin Slurry
+<liquid:ec.internal.copper>, Copper Slurry
+<liquid:ec.internal.deuterium>, Deuterium
+<liquid:ec.internal.ethene>, Ethylene
+<liquid:ec.internal.fusionfuel>, D-T Fuel
+<liquid:ec.internal.gold>, Gold Slurry
+<liquid:ec.internal.hydrogen>, Hydrogen
+<liquid:ec.internal.hydrogenchloride>, Hydrogen Chloride
+<liquid:ec.internal.iron>, Iron Slurry
+<liquid:ec.internal.lead>, Lead Slurry
+<liquid:ec.internal.liquidosmium>, Liquid Osmium
+<liquid:ec.internal.lithium>, Lithium
+<liquid:ec.internal.osmium>, Osmium Slurry
+<liquid:ec.internal.oxygen>, Oxygen
+<liquid:ec.internal.silver>, Silver Slurry
+<liquid:ec.internal.slurryaluminium>, Aluminium Slurry
+<liquid:ec.internal.slurryardite>, Ardite Slurry
+<liquid:ec.internal.slurryastralstarmetal>, Astral Starmetal Slurry
+<liquid:ec.internal.slurryboron>, Boron Slurry
+<liquid:ec.internal.slurrycleanaluminium>, Clean Aluminium Slurry
+<liquid:ec.internal.slurrycleanardite>, Clean Ardite Slurry
+<liquid:ec.internal.slurrycleanastralstarmetal>, Clean Astral Starmetal Slurry
+<liquid:ec.internal.slurrycleanboron>, Clean Boron Slurry
+<liquid:ec.internal.slurrycleancobalt>, Clean Cobalt Slurry
+<liquid:ec.internal.slurrycleandraconium>, Clean Draconium Slurry
+<liquid:ec.internal.slurrycleaniridium>, Clean Iridium Slurry
+<liquid:ec.internal.slurrycleanlithium>, Clean Lithium Slurry
+<liquid:ec.internal.slurrycleanmagnesium>, Clean Magnesium Slurry
+<liquid:ec.internal.slurrycleanmithril>, Clean Mithril Slurry
+<liquid:ec.internal.slurrycleannickel>, Clean Nickel Slurry
+<liquid:ec.internal.slurrycleanplatinum>, Clean Platinum Slurry
+<liquid:ec.internal.slurrycleanthorium>, Clean Thorium Slurry
+<liquid:ec.internal.slurrycleantitanium>, Clean Titanium Slurry
+<liquid:ec.internal.slurrycleanuranium>, Clean Uranium Slurry
+<liquid:ec.internal.slurrycobalt>, Cobalt Slurry
+<liquid:ec.internal.slurrydraconium>, Draconium Slurry
+<liquid:ec.internal.slurryiridium>, Iridium Slurry
+<liquid:ec.internal.slurrylithium>, Lithium Slurry
+<liquid:ec.internal.slurrymagnesium>, Magnesium Slurry
+<liquid:ec.internal.slurrymithril>, Mithril Slurry
+<liquid:ec.internal.slurrynickel>, Nickel Slurry
+<liquid:ec.internal.slurryplatinum>, Platinum Slurry
+<liquid:ec.internal.slurrythorium>, Thorium Slurry
+<liquid:ec.internal.slurrytitanium>, Titanium Slurry
+<liquid:ec.internal.slurryuranium>, Uranium Slurry
+<liquid:ec.internal.sodium>, Sodium
+<liquid:ec.internal.sulfurdioxide>, Sulfur Dioxide
+<liquid:ec.internal.sulfuricacid>, Sulfuric Acid
+<liquid:ec.internal.sulfurtrioxide>, Sulfur Trioxide
+<liquid:ec.internal.tin>, Tin Slurry
+<liquid:ec.internal.tritium>, Tritium
+<liquid:ec.internal.water>, Water Vapor
+<liquid:electrical_steel>, Molten Electrical Steel
+<liquid:electrum>, Molten Electrum
+<liquid:elementium>, Molten Elementium
+<liquid:emerald>, Molten Emerald
+<liquid:emerald_nak>, Eutectic NaK-Emerald Mixture
+<liquid:emerald_nak_hot>, Hot Eutectic NaK-Emerald Mixture
+<liquid:empoweredoil>, Empowered Oil
+<liquid:end_steel>, Molten End Steel
+<liquid:ender>, Resonant Ender
+<liquid:ender_distillation>, Dew of the Void
+<liquid:ender_nak>, Eutectic NaK-Ender Mixture
+<liquid:ender_nak_hot>, Hot Eutectic NaK-Ender Mixture
+<liquid:enderium>, Molten Enderium
+<liquid:energetic_alloy>, Molten Energetic Alloy
+<liquid:essence>, Essence
+<liquid:ethanol>, Ethanol
+<liquid:ethene>, Ethylene
+<liquid:exhaust_steam>, Exhaust Steam
+<liquid:experience>, Essence of Knowledge
+<liquid:ferroboron>, Molten Ferroboron
+<liquid:fiery_essence>, Fiery Essence
+<liquid:fierymetal>, Molten Fiery
+<liquid:fire_water>, Fire Water
+<liquid:flibe>, Molten FLiBe Salt Mixture
+<liquid:fluorine>, Fluorine
+<liquid:fluorite_water>, Fluorite Water
+<liquid:fluoromethane>, Fluoromethane
+<liquid:flux_goo>, Flux Goo
+<liquid:for.honey>, Honey
+<liquid:fuel_hea_242>, Molten HEA-242 Fuel
+<liquid:fuel_hea_242_fluoride>, Molten HEA-242 Fluoride Fuel
+<liquid:fuel_hea_242_fluoride_flibe>, Molten FLiBe Salt Solution of HEA-242 Fluoride Fuel
+<liquid:fuel_heb_248>, Molten HEB-248 Fuel
+<liquid:fuel_heb_248_fluoride>, Molten HEB-248 Fluoride Fuel
+<liquid:fuel_heb_248_fluoride_flibe>, Molten FLiBe Salt Solution of HEB-248 Fluoride Fuel
+<liquid:fuel_hecf_249>, Molten HECf-249 Fuel
+<liquid:fuel_hecf_249_fluoride>, Molten HECf-249 Fluoride Fuel
+<liquid:fuel_hecf_249_fluoride_flibe>, Molten FLiBe Salt Solution of HECf-249 Fluoride Fuel
+<liquid:fuel_hecf_251>, Molten HECf-251 Fuel
+<liquid:fuel_hecf_251_fluoride>, Molten HECf-251 Fluoride Fuel
+<liquid:fuel_hecf_251_fluoride_flibe>, Molten FLiBe Salt Solution of HECf-251 Fluoride Fuel
+<liquid:fuel_hecm_243>, Molten HECm-243 Fuel
+<liquid:fuel_hecm_243_fluoride>, Molten HECm-243 Fluoride Fuel
+<liquid:fuel_hecm_243_fluoride_flibe>, Molten FLiBe Salt Solution of HECm-243 Fluoride Fuel
+<liquid:fuel_hecm_245>, Molten HECm-245 Fuel
+<liquid:fuel_hecm_245_fluoride>, Molten HECm-245 Fluoride Fuel
+<liquid:fuel_hecm_245_fluoride_flibe>, Molten FLiBe Salt Solution of HECm-245 Fluoride Fuel
+<liquid:fuel_hecm_247>, Molten HECm-247 Fuel
+<liquid:fuel_hecm_247_fluoride>, Molten HECm-247 Fluoride Fuel
+<liquid:fuel_hecm_247_fluoride_flibe>, Molten FLiBe Salt Solution of HECm-247 Fluoride Fuel
+<liquid:fuel_hen_236>, Molten HEN-236 Fuel
+<liquid:fuel_hen_236_fluoride>, Molten HEN-236 Fluoride Fuel
+<liquid:fuel_hen_236_fluoride_flibe>, Molten FLiBe Salt Solution of HEN-236 Fluoride Fuel
+<liquid:fuel_hep_239>, Molten HEP-239 Fuel
+<liquid:fuel_hep_239_fluoride>, Molten HEP-239 Fluoride Fuel
+<liquid:fuel_hep_239_fluoride_flibe>, Molten FLiBe Salt Solution of HEP-239 Fluoride Fuel
+<liquid:fuel_hep_241>, Molten HEP-241 Fuel
+<liquid:fuel_hep_241_fluoride>, Molten HEP-241 Fluoride Fuel
+<liquid:fuel_hep_241_fluoride_flibe>, Molten FLiBe Salt Solution of HEP-241 Fluoride Fuel
+<liquid:fuel_heu_233>, Molten HEU-233 Fuel
+<liquid:fuel_heu_233_fluoride>, Molten HEU-233 Fluoride Fuel
+<liquid:fuel_heu_233_fluoride_flibe>, Molten FLiBe Salt Solution of HEU-233 Fluoride Fuel
+<liquid:fuel_heu_235>, Molten HEU-235 Fuel
+<liquid:fuel_heu_235_fluoride>, Molten HEU-235 Fluoride Fuel
+<liquid:fuel_heu_235_fluoride_flibe>, Molten FLiBe Salt Solution of HEU-235 Fluoride Fuel
+<liquid:fuel_lea_242>, Molten LEA-242 Fuel
+<liquid:fuel_lea_242_fluoride>, Molten LEA-242 Fluoride Fuel
+<liquid:fuel_lea_242_fluoride_flibe>, Molten FLiBe Salt Solution of LEA-242 Fluoride Fuel
+<liquid:fuel_leb_248>, Molten LEB-248 Fuel
+<liquid:fuel_leb_248_fluoride>, Molten LEB-248 Fluoride Fuel
+<liquid:fuel_leb_248_fluoride_flibe>, Molten FLiBe Salt Solution of LEB-248 Fluoride Fuel
+<liquid:fuel_lecf_249>, Molten LECf-249 Fuel
+<liquid:fuel_lecf_249_fluoride>, Molten LECf-249 Fluoride Fuel
+<liquid:fuel_lecf_249_fluoride_flibe>, Molten FLiBe Salt Solution of LECf-249 Fluoride Fuel
+<liquid:fuel_lecf_251>, Molten LECf-251 Fuel
+<liquid:fuel_lecf_251_fluoride>, Molten LECf-251 Fluoride Fuel
+<liquid:fuel_lecf_251_fluoride_flibe>, Molten FLiBe Salt Solution of LECf-251 Fluoride Fuel
+<liquid:fuel_lecm_243>, Molten LECm-243 Fuel
+<liquid:fuel_lecm_243_fluoride>, Molten LECm-243 Fluoride Fuel
+<liquid:fuel_lecm_243_fluoride_flibe>, Molten FLiBe Salt Solution of LECm-243 Fluoride Fuel
+<liquid:fuel_lecm_245>, Molten LECm-245 Fuel
+<liquid:fuel_lecm_245_fluoride>, Molten LECm-245 Fluoride Fuel
+<liquid:fuel_lecm_245_fluoride_flibe>, Molten FLiBe Salt Solution of LECm-245 Fluoride Fuel
+<liquid:fuel_lecm_247>, Molten LECm-247 Fuel
+<liquid:fuel_lecm_247_fluoride>, Molten LECm-247 Fluoride Fuel
+<liquid:fuel_lecm_247_fluoride_flibe>, Molten FLiBe Salt Solution of LECm-247 Fluoride Fuel
+<liquid:fuel_len_236>, Molten LEN-236 Fuel
+<liquid:fuel_len_236_fluoride>, Molten LEN-236 Fluoride Fuel
+<liquid:fuel_len_236_fluoride_flibe>, Molten FLiBe Salt Solution of LEN-236 Fluoride Fuel
+<liquid:fuel_lep_239>, Molten LEP-239 Fuel
+<liquid:fuel_lep_239_fluoride>, Molten LEP-239 Fluoride Fuel
+<liquid:fuel_lep_239_fluoride_flibe>, Molten FLiBe Salt Solution of LEP-239 Fluoride Fuel
+<liquid:fuel_lep_241>, Molten LEP-241 Fuel
+<liquid:fuel_lep_241_fluoride>, Molten LEP-241 Fluoride Fuel
+<liquid:fuel_lep_241_fluoride_flibe>, Molten FLiBe Salt Solution of LEP-241 Fluoride Fuel
+<liquid:fuel_leu_233>, Molten LEU-233 Fuel
+<liquid:fuel_leu_233_fluoride>, Molten LEU-233 Fluoride Fuel
+<liquid:fuel_leu_233_fluoride_flibe>, Molten FLiBe Salt Solution of LEU-233 Fluoride Fuel
+<liquid:fuel_leu_235>, Molten LEU-235 Fuel
+<liquid:fuel_leu_235_fluoride>, Molten LEU-235 Fluoride Fuel
+<liquid:fuel_leu_235_fluoride_flibe>, Molten FLiBe Salt Solution of LEU-235 Fluoride Fuel
+<liquid:fuel_tbu>, Molten TBU Fuel
+<liquid:fuel_tbu_fluoride>, Molten TBU Fluoride Fuel
+<liquid:fuel_tbu_fluoride_flibe>, Molten FLiBe Salt Solution of TBU Fluoride Fuel
+<liquid:fuelcolumn>, fluid.fuelcolumn
+<liquid:gasoline>, Gasoline
+<liquid:gelatin>, Molten Gelatin
+<liquid:glass>, Liquid Glass
+<liquid:glowstone>, Energized Glowstone
+<liquid:glowstone_nak>, Eutectic NaK-Glowstone Mixture
+<liquid:glowstone_nak_hot>, Hot Eutectic NaK-Glowstone Mixture
+<liquid:gold>, Molten Gold
+<liquid:gold_nak>, Eutectic NaK-Gold Mixture
+<liquid:gold_nak_hot>, Hot Eutectic NaK-Gold Mixture
+<liquid:grapejuice>, Grape Juice
+<liquid:hard_carbon>, Molten Hard Carbon
+<liquid:heavywater>, Heavy Water
+<liquid:helium>, Helium
+<liquid:helium3>, Helium-3
+<liquid:high_pressure_steam>, High Pressure Steam
+<liquid:honey>, Honey
+<liquid:hootch>, Hootch
+<liquid:hot_spring_water>, Hot Spring Water
+<liquid:hydrated_gelatin>, Hydrated Gelatin
+<liquid:hydrofluoric_acid>, Hydrofluoric Acid
+<liquid:hydrogen>, Hydrogen
+<liquid:ic2air>, Air
+<liquid:ic2biogas>, Biogas
+<liquid:ic2biomass>, Biomass
+<liquid:ic2construction_foam>, Construction Foam
+<liquid:ic2coolant>, IC2 Coolant
+<liquid:ic2distilled_water>, Distilled Water
+<liquid:ic2heavy_water>, Heavy Water
+<liquid:ic2hot_coolant>, IC2 Hot Coolant
+<liquid:ic2hot_water>, Hotspring Water
+<liquid:ic2hydrogen>, Hydrogen
+<liquid:ic2oxygen>, Oxygen
+<liquid:ic2pahoehoe_lava>, Pahoehoe Lava
+<liquid:ic2steam>, Steam
+<liquid:ic2superheated_steam>, Superheated Steam
+<liquid:ic2uu_matter>, UU-Matter
+<liquid:ic2weed_ex>, Weed-Ex
+<liquid:ice>, Crushed Ice
+<liquid:if.ore_fluid_fermented>, Fermented Ore Meat
+<liquid:if.ore_fluid_raw>, Raw Ore Meat
+<liquid:if.pink_slime>, Pink Slime
+<liquid:if.protein>, Protein
+<liquid:inferium>, Molten Inferium
+<liquid:infinity>, Molten Infinity
+<liquid:intermedium>, Molten Intermedium
+<liquid:invar>, Molten Invar
+<liquid:iridium>, Molten Iridium
+<liquid:iron>, Molten Iron
+<liquid:iron_nak>, Eutectic NaK-Iron Mixture
+<liquid:iron_nak_hot>, Hot Eutectic NaK-Iron Mixture
+<liquid:ironberryjuice>, Ironberry Juice
+<liquid:ironwine>, Iron Wine
+<liquid:juice>, Fruit Juice
+<liquid:knightmetal>, Molten Knightmetal
+<liquid:knightslime>, Molten Knightslime
+<liquid:koh>, Molten Potassium Hydroxide
+<liquid:lapis>, Molten Lapis
+<liquid:lapis_nak>, Eutectic NaK-Lapis Mixture
+<liquid:lapis_nak_hot>, Hot Eutectic NaK-Lapis Mixture
+<liquid:latex>, Latex
+<liquid:lava>, Lava
+<liquid:lead>, Molten Lead
+<liquid:lif>, Molten Lithium Fluoride
+<liquid:lifeessence>, Life Essence
+<liquid:liquid_death>, Liquid Death
+<liquid:liquid_sunshine>, Liquid Sunshine
+<liquid:liquidchlorine>, Liquid Chlorine
+<liquid:liquidchorus>, Liquid Chorus
+<liquid:liquiddeuterium>, Liquid Deuterium
+<liquid:liquiddna>, Liquid DNA
+<liquid:liquidethene>, Liquid Ethylene
+<liquid:liquidfusionfuel>, Liquid D-T Fuel
+<liquid:liquidhelium>, Liquid Helium
+<liquid:liquidhelium_nak>, Eutectic NaK-Helium Mixture
+<liquid:liquidhelium_nak_hot>, Hot Eutectic NaK-Helium Mixture
+<liquid:liquidhydrogen>, Liquid Hydrogen
+<liquid:liquidhydrogenchloride>, Liquid Hydrogen Chloride
+<liquid:liquidlithium>, Liquid Lithium
+<liquid:liquidoxygen>, Liquid Oxygen
+<liquid:liquidsodium>, Liquid Sodium
+<liquid:liquidsulfurdioxide>, Liquid Sulfur Dioxide
+<liquid:liquidsulfurtrioxide>, Liquid Sulfur Trioxide
+<liquid:liquidtritium>, Liquid Tritium
+<liquid:lithium>, Molten Lithium
+<liquid:lithium6>, Molten Lithium-6
+<liquid:lithium7>, Molten Lithium-7
+<liquid:low_pressure_steam>, Low Pressure Steam
+<liquid:low_quality_steam>, Low Quality Steam
+<liquid:lubricant>, Lubricant
+<liquid:lumium>, Molten Lumium
+<liquid:magnesium>, Molten Magnesium
+<liquid:magnesium_nak>, Eutectic NaK-Magnesium Mixture
+<liquid:magnesium_nak_hot>, Hot Eutectic NaK-Magnesium Mixture
+<liquid:mana>, Primal Mana
+<liquid:manasteel>, Molten Manasteel
+<liquid:manganese>, Molten Manganese
+<liquid:manganese_dioxide>, Molten Manganese Dioxide
+<liquid:manyullyn>, Molten Manyullyn
+<liquid:marshmallow>, Liquid Marshmallow
+<liquid:mead>, Mead
+<liquid:meat>, Liquid Meat
+<liquid:menrilresin>, Menril Resin
+<liquid:methanol>, Methanol
+<liquid:milk>, Milk
+<liquid:milk_chocolate>, Molten Milk Chocolate
+<liquid:milk_friesian>, Friesian Milk
+<liquid:milk_goat>, Goat Milk
+<liquid:milk_holstein>, Holstein Milk
+<liquid:milk_jersey>, Jersey Milk
+<liquid:milk_sheep>, Sheep Milk
+<liquid:mirion>, Molten Mirion
+<liquid:mithril>, Molten Mithril
+<liquid:molten_reinforced_pink_slime>, Molten Reinforced Pink Slime
+<liquid:mushroom_stew>, Mushroom Stew
+<liquid:mutagen>, Mutagen
+<liquid:nak>, Eutectic NaK Alloy
+<liquid:nak_hot>, Hot Eutectic NaK Alloy
+<liquid:naoh>, Molten Sodium Hydroxide
+<liquid:napalm>, Napalm
+<liquid:neptunium_236>, Molten Neptunium-236
+<liquid:neptunium_236_fluoride>, Molten Neptunium-236 Fluoride
+<liquid:neptunium_236_fluoride_flibe>, Molten FLiBe Salt Solution of Neptunium-236 Fluoride
+<liquid:neptunium_237>, Molten Neptunium-237
+<liquid:neptunium_237_fluoride>, Molten Neptunium-237 Fluoride
+<liquid:neptunium_237_fluoride_flibe>, Molten FLiBe Salt Solution of Neptunium-237 
+<liquid:neutron>, Neutron Fluid
+<liquid:nickel>, Molten Nickel
+<liquid:nitrogen>, Nitrogen
+<liquid:nutrient_distillation>, Nutrient Distillation
+<liquid:obsidian>, Molten Obsidian
+<liquid:oil>, Crude Oil
+<liquid:oliveoil>, Olive Oil
+<liquid:osgloglas>, Molten Osgloglas
+<liquid:osmiridium>, Molten Osmiridium
+<liquid:osmium>, Molten Osmium
+<liquid:oxygen>, Oxygen
+<liquid:oxygen_difluoride>, Oxygen Difluoride
+<liquid:petrotheum>, Tectonic Petrotheum
+<liquid:pigiron>, Molten Pigiron
+<liquid:plantoil>, Plant Oil
+<liquid:plasma>, Plasma
+<liquid:platinum>, Molten Platinum
+<liquid:plutonium>, Molten Plutonium
+<liquid:plutonium_238>, Molten Plutonium-238
+<liquid:plutonium_238_fluoride>, Molten Plutonium-238 Fluoride
+<liquid:plutonium_238_fluoride_flibe>, Molten FLiBe Salt Solution of Plutonium-238 Fluoride
+<liquid:plutonium_239>, Molten Plutonium-239
+<liquid:plutonium_239_fluoride>, Molten Plutonium-239 Fluoride
+<liquid:plutonium_239_fluoride_flibe>, Molten FLiBe Salt Solution of Plutonium-239 Fluoride
+<liquid:plutonium_241>, Molten Plutonium-241
+<liquid:plutonium_241_fluoride>, Molten Plutonium-241 Fluoride
+<liquid:plutonium_241_fluoride_flibe>, Molten FLiBe Salt Solution of Plutonium-241 Fluoride
+<liquid:plutonium_242>, Molten Plutonium-242
+<liquid:plutonium_242_fluoride>, Molten Plutonium-242 Fluoride
+<liquid:plutonium_242_fluoride_flibe>, Molten FLiBe Salt Solution of Plutonium-242 Fluoride
+<liquid:plutonium_fluoride>, Molten Plutonium Fluoride
+<liquid:plutonium_fluoride_flibe>, Molten FLiBe Salt Solution of Plutonium Fluoride
+<liquid:poison>, Poison
+<liquid:potassium>, Molten Potassium
+<liquid:potassium_fluoride_solution>, Potassium Fluoride Solution
+<liquid:potassium_hydroxide_solution>, Potassium Hydroxide Solution
+<liquid:potion>, Potion
+<liquid:potion_lingering>, Lingering Potion
+<liquid:potion_splash>, Splash Potion
+<liquid:preheated_water>, Preheated Water
+<liquid:protein>, Protein
+<liquid:prudentium>, Molten Prudentium
+<liquid:psimetal>, Molten Psimetal
+<liquid:pulsating_iron>, Molten Pulsating Iron
+<liquid:pure_metal>, Pure Metal
+<liquid:purifying_fluid>, Purifying Fluid
+<liquid:purpleslime>, Liquid Purple Slime
+<liquid:pyrotheum>, Blazing Pyrotheum
+<liquid:quartz>, Molten Quartz
+<liquid:quartz_nak>, Eutectic NaK-Quartz Mixture
+<liquid:quartz_nak_hot>, Hot Eutectic NaK-Quartz Mixture
+<liquid:radaway>, RadAway Fluid
+<liquid:redstone>, Destabilized Redstone
+<liquid:redstone_alloy>, Molten Redstone Alloy
+<liquid:redstone_nak>, Eutectic NaK-Redstone Mixture
+<liquid:redstone_nak_hot>, Hot Eutectic NaK-Redstone Mixture
+<liquid:refined_biofuel>, Grassoline
+<liquid:refined_fuel>, Refined Fuel
+<liquid:refined_oil>, Naphtha
+<liquid:refinedcanolaoil>, Refined Canola Oil
+<liquid:refinedglowstone>, Refined Glowstone
+<liquid:refinedobsidian>, Molten Refined Obsidian
+<liquid:resin>, Resin
+<liquid:rocket_fuel>, Rocket Fuel
+<liquid:rocketfuel>, Rocket Fuel
+<liquid:sand>, Quicksand
+<liquid:sap>, Sap
+<liquid:seed.oil>, Seed Oil
+<liquid:seed_oil>, Seed Oil
+<liquid:sewage>, Sewage
+<liquid:short.mead>, Short Mead
+<liquid:sic_vapor>, Silicon Carbide Vapor
+<liquid:signalum>, Molten Signalum
+<liquid:silver>, Molten Silver
+<liquid:slop>, Slop
+<liquid:sludge>, Sludge
+<liquid:sodium>, Molten Sodium
+<liquid:sodium_fluoride_solution>, Sodium Fluoride Solution
+<liquid:sodium_hydroxide_solution>, Sodium Hydroxide Solution
+<liquid:soularium>, Molten Soularium
+<liquid:soulium>, Molten Soulium
+<liquid:steam>, Steam
+<liquid:steel>, Molten Steel
+<liquid:stone>, Seared Stone
+<liquid:sugar>, Molten Sugar
+<liquid:sulfur>, Molten Sulfur
+<liquid:sulfur_dioxide>, Sulfur Dioxide
+<liquid:sulfur_trioxide>, Sulfur Trioxide
+<liquid:sulfuric_acid>, Sulfuric Acid
+<liquid:sulfuricacid>, Sulfuric Acid
+<liquid:superium>, Molten Superium
+<liquid:supremium>, Molten Supremium
+<liquid:syngas>, Syngas
+<liquid:syrup>, Syrup
+<liquid:terrasteel>, Molten Terrasteel
+<liquid:thaumium>, Molten Thaumium
+<liquid:thorium>, Molten Thorium
+<liquid:thorium_230>, Molten Thorium-230
+<liquid:thorium_230_fluoride>, Molten Thorium-230 Fluoride
+<liquid:thorium_230_fluoride_flibe>, Molten FLiBe Salt Solution of Thorium-230 Fluoride
+<liquid:thorium_232>, Molten Thorium-232
+<liquid:thorium_232_fluoride>, Molten Thorium-232 Fluoride
+<liquid:thorium_232_fluoride_flibe>, Molten FLiBe Salt Solution of Thorium-232 Fluoride
+<liquid:thorium_fluoride>, Molten Thorium Fluoride
+<liquid:thorium_fluoride_flibe>, Molten FLiBe Salt Solution of Thorium Fluoride
+<liquid:tin>, Molten Tin
+<liquid:tin_nak>, Eutectic NaK-Tin Mixture
+<liquid:tin_nak_hot>, Hot Eutectic NaK-Tin Mixture
+<liquid:titanium>, Molten Titanium
+<liquid:tough>, Molten Tough Alloy
+<liquid:tree_oil>, Tree Oil
+<liquid:tritium>, Tritium
+<liquid:unsweetened_chocolate>, Molten Unsweetened Chocolate
+<liquid:uranium>, Molten Uranium
+<liquid:uranium_233>, Molten Uranium-233
+<liquid:uranium_233_fluoride>, Molten Uranium-233 Fluoride
+<liquid:uranium_233_fluoride_flibe>, Molten FLiBe Salt Solution of Uranium-233 Fluoride
+<liquid:uranium_235>, Molten Uranium-235
+<liquid:uranium_235_fluoride>, Molten Uranium-235 Fluoride
+<liquid:uranium_235_fluoride_flibe>, Molten FLiBe Salt Solution of Uranium-235 Fluoride
+<liquid:uranium_238>, Molten Uranium-238
+<liquid:uranium_238_fluoride>, Molten Uranium-238 Fluoride
+<liquid:uranium_238_fluoride_flibe>, Molten FLiBe Salt Solution of Uranium-238 Fluoride
+<liquid:uranium_fluoride>, Molten Uranium Fluoride
+<liquid:uranium_fluoride_flibe>, Molten FLiBe Salt Solution of Uranium Fluoride
+<liquid:vapor_of_levity>, Vapor of Levity
+<liquid:vibrant_alloy>, Molten Vibrant Alloy
+<liquid:water>, Water
+<liquid:wildberryjuice>, Wildberry Juice
+<liquid:wildberrywine>, Wildberry Wine
+<liquid:wine>, Wine
+<liquid:witchwater>, Witchwater
+<liquid:xpjuice>, Liquid XP
+<liquid:xu_demonic_metal>, Molten Demon Metal
+<liquid:xu_enchanted_metal>, Enchanted Metal
+<liquid:xu_evil_metal>, Evil Infused Iron
+<liquid:yellorium>, Fluid Yellorium
+<liquid:zinc>, Molten Zinc
