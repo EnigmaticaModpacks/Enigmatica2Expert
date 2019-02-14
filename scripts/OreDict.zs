@@ -273,6 +273,24 @@ print("--- loading OreDict.zs ---");
 	<ore:itemSalt>.add(<immersivetech:material>);
 	<ore:foodSalt>.add(<immersivetech:material>);
 	<ore:dustSalt>.add(<immersivetech:material>);
+
+# *======= Clearing Unused Blocks =======*
+
+# Steel blocks
+	rh(<ic2:resource:8>);
+
+# Copper blocks
+	rh(<ic2:resource:6>);
+
+# Tin blocks
+	rh(<ic2:resource:9>);
+
+# Silver blocks
+	rh(<ic2:resource:15>);
+	rh(<iceandfire:silver_block>);
+
+# Lead blocks
+	rh(<ic2:resource:7>);
 		
 # *======= Quark Specific Oredict =======*
 
