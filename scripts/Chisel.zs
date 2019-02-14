@@ -7,6 +7,9 @@ print("--- loading Chisel.zs ---");
 
 	addVariation("marble", <quark:marble>);
 
+	addVariation("limestone", <quark:limestone>);
+	addVariation("limestone", <quark:limestone:1>);
+
 	addVariation("sootymarble", <astralsorcery:blockblackmarble:0>);
 	addVariation("sootymarble", <astralsorcery:blockblackmarble:1>);
 	addVariation("sootymarble", <astralsorcery:blockblackmarble:2>);

@@ -5,7 +5,7 @@
 			"generator": {
 				"block": "dirt",
 				"material": "minecraft:stone",
-				"cluster-size": 49
+				"cluster-size": 33
 			},
 			"cluster-count": 4,
 			"min-height": 0,
@@ -50,7 +50,7 @@
 					}
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 64
+				"cluster-size": 33
 			},
 			"cluster-count": 1,
 			"min-height": 0,
@@ -75,7 +75,7 @@
 					}
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 64
+				"cluster-size": 33
 			},
 			"cluster-count": 1,
 			"min-height": 0,
@@ -100,7 +100,7 @@
 					}
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 64
+				"cluster-size": 33
 			},
 			"cluster-count": 1,
 			"min-height": 0,
