@@ -18835,21 +18835,6 @@
     "3pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}"
   },
   {
-    "name": "rftools:dimensional_shard_ore",
-    "meta": 1,
-    "length": 1,
-    "name0": "rftools:dimensional_shard",
-    "meta0": 0,
-    "0chance0": 301.06,
-    "1chance0": 402.88,
-    "2chance0": 524.64,
-    "3chance0": 657.46,
-    "0pair0": "{\n  \"left\": 2,\n  \"right\": 4\n}",
-    "1pair0": "{\n  \"left\": 2,\n  \"right\": 8\n}",
-    "2pair0": "{\n  \"left\": 2,\n  \"right\": 12\n}",
-    "3pair0": "{\n  \"left\": 2,\n  \"right\": 16\n}"
-  },
-  {
     "name": "actuallyadditions:block_colored_lamp_on",
     "meta": 10,
     "length": 1,
@@ -19015,36 +19000,6 @@
     "3pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}"
   },
   {
-    "name": "rftools:dimensional_shard_ore",
-    "meta": 2,
-    "length": 1,
-    "name0": "rftools:dimensional_shard",
-    "meta0": 0,
-    "0chance0": 298.24,
-    "1chance0": 401.74,
-    "2chance0": 517.52,
-    "3chance0": 663.2,
-    "0pair0": "{\n  \"left\": 2,\n  \"right\": 4\n}",
-    "1pair0": "{\n  \"left\": 2,\n  \"right\": 8\n}",
-    "2pair0": "{\n  \"left\": 2,\n  \"right\": 12\n}",
-    "3pair0": "{\n  \"left\": 2,\n  \"right\": 16\n}"
-  },
-  {
-    "name": "rftools:dimensional_shard_ore",
-    "meta": 0,
-    "length": 1,
-    "name0": "rftools:dimensional_shard",
-    "meta0": 0,
-    "0chance0": 299.68,
-    "1chance0": 394.28,
-    "2chance0": 528.34,
-    "3chance0": 651.0,
-    "0pair0": "{\n  \"left\": 2,\n  \"right\": 4\n}",
-    "1pair0": "{\n  \"left\": 2,\n  \"right\": 8\n}",
-    "2pair0": "{\n  \"left\": 2,\n  \"right\": 12\n}",
-    "3pair0": "{\n  \"left\": 2,\n  \"right\": 16\n}"
-  },
-  {
     "name": "actuallyadditions:block_colored_lamp_on",
     "meta": 13,
     "length": 1,
@@ -19128,21 +19083,6 @@
     "1pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
     "2pair0": "{\n  \"left\": 1,\n  \"right\": 3\n}",
     "3pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}"
-  },
-  {
-    "name": "buildinggadgets:constructionblock",
-    "meta": 0,
-    "length": 1,
-    "name0": "buildinggadgets:constructionpaste",
-    "meta0": 0,
-    "0chance0": 100.0,
-    "1chance0": 100.0,
-    "2chance0": 100.0,
-    "3chance0": 100.0,
-    "0pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
-    "1pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
-    "2pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
-    "3pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}"
   },
   {
     "name": "actuallyadditions:block_colored_lamp_on",
@@ -19878,5 +19818,65 @@
     "1pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
     "2pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
     "3pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}"
+  },
+  {
+    "name": "buildinggadgets:constructionblock",
+    "meta": 0,
+    "length": 1,
+    "name0": "buildinggadgets:constructionpaste",
+    "meta0": 0,
+    "0chance0": 100.0,
+    "1chance0": 100.0,
+    "2chance0": 100.0,
+    "3chance0": 100.0,
+    "0pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
+    "1pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
+    "2pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
+    "3pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}"
+  },
+  {
+    "name": "rftools:dimensional_shard_ore",
+    "meta": 0,
+    "length": 1,
+    "name0": "rftools:dimensional_shard",
+    "meta0": 0,
+    "0chance0": 302.12,
+    "1chance0": 403.44,
+    "2chance0": 524.64,
+    "3chance0": 658.27997,
+    "0pair0": "{\n  \"left\": 2,\n  \"right\": 4\n}",
+    "1pair0": "{\n  \"left\": 2,\n  \"right\": 8\n}",
+    "2pair0": "{\n  \"left\": 2,\n  \"right\": 12\n}",
+    "3pair0": "{\n  \"left\": 2,\n  \"right\": 16\n}"
+  },
+  {
+    "name": "rftools:dimensional_shard_ore",
+    "meta": 2,
+    "length": 1,
+    "name0": "rftools:dimensional_shard",
+    "meta0": 0,
+    "0chance0": 302.12,
+    "1chance0": 396.98,
+    "2chance0": 521.36,
+    "3chance0": 656.5,
+    "0pair0": "{\n  \"left\": 2,\n  \"right\": 4\n}",
+    "1pair0": "{\n  \"left\": 2,\n  \"right\": 8\n}",
+    "2pair0": "{\n  \"left\": 2,\n  \"right\": 12\n}",
+    "3pair0": "{\n  \"left\": 2,\n  \"right\": 16\n}"
+  },
+  {
+    "name": "rftools:dimensional_shard_ore",
+    "meta": 1,
+    "length": 1,
+    "name0": "rftools:dimensional_shard",
+    "meta0": 0,
+    "0chance0": 300.48,
+    "1chance0": 401.34,
+    "2chance0": 522.52,
+    "3chance0": 656.96,
+    "0pair0": "{\n  \"left\": 2,\n  \"right\": 4\n}",
+    "1pair0": "{\n  \"left\": 2,\n  \"right\": 8\n}",
+    "2pair0": "{\n  \"left\": 2,\n  \"right\": 12\n}",
+    "3pair0": "{\n  \"left\": 2,\n  \"right\": 16\n}"
   }
 ]

@@ -20,7 +20,7 @@
 	
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
-<Recipes useDefault="true">
+<Recipes useDefault="false">
 	<Recipe timeRequired="40" power ="2000">
 		<input>
 			<itemStack>advancedrocketry:carbonscrubbercartridge 1 32767</itemStack>
