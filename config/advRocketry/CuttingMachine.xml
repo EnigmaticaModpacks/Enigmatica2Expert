@@ -26,7 +26,7 @@
 			<itemStack>minecraft:log</itemStack>
 		</input>
 		<output>
-			<itemStack>minecraft:planks 6</itemStack>
+			<itemStack>minecraft:planks 10</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="80" power ="1000">
@@ -34,7 +34,7 @@
 			<itemStack>minecraft:log 1 1</itemStack>
 		</input>
 		<output>
-			<itemStack>minecraft:planks 6 1</itemStack>
+			<itemStack>minecraft:planks 10 1</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="80" power ="1000">
@@ -42,7 +42,7 @@
 			<itemStack>minecraft:log 1 2</itemStack>
 		</input>
 		<output>
-			<itemStack>minecraft:planks 6 2</itemStack>
+			<itemStack>minecraft:planks 10 2</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="80" power ="1000">
@@ -50,7 +50,7 @@
 			<itemStack>minecraft:log 1 3</itemStack>
 		</input>
 		<output>
-			<itemStack>minecraft:planks 6 3</itemStack>
+			<itemStack>minecraft:planks 10 3</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="80" power ="1000">
@@ -58,7 +58,7 @@
 			<itemStack>minecraft:log2</itemStack>
 		</input>
 		<output>
-			<itemStack>minecraft:planks 6 4</itemStack>
+			<itemStack>minecraft:planks 10 4</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="80" power ="1000">
@@ -66,7 +66,7 @@
 			<itemStack>minecraft:log2 1 1</itemStack>
 		</input>
 		<output>
-			<itemStack>minecraft:planks 6 5</itemStack>
+			<itemStack>minecraft:planks 10 5</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="80" power ="2500">
@@ -98,7 +98,7 @@
 			<itemStack>advancedrocketry:alienwood</itemStack>
 		</input>
 		<output>
-			<itemStack>advancedrocketry:planks 6</itemStack>
+			<itemStack>advancedrocketry:planks 10</itemStack>
 		</output>
 	</Recipe>
 </Recipes>

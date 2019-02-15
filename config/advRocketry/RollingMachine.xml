@@ -27,7 +27,7 @@
 			<fluidStack>lubricant 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material 1 32</itemStack>
+			<itemStack>thermalfoundation:material 8 32</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="150" power ="1000">
@@ -36,7 +36,7 @@
 			<fluidStack>lubricant 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>libvulpes:productsheet 1 1</itemStack>
+			<itemStack>libvulpes:productsheet 4 1</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="150" power ="1000">
@@ -45,7 +45,7 @@
 			<fluidStack>lubricant 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material 1 33</itemStack>
+			<itemStack>thermalfoundation:material 8 33</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="150" power ="1000">
@@ -54,7 +54,7 @@
 			<fluidStack>lubricant 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>libvulpes:productplate 1 3</itemStack>
+			<itemStack>libvulpes:productplate 8 3</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="150" power ="1000">
@@ -63,7 +63,7 @@
 			<fluidStack>lubricant 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material 1 320</itemStack>
+			<itemStack>thermalfoundation:material 8 320</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="150" power ="1000">
@@ -72,7 +72,7 @@
 			<fluidStack>lubricant 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>libvulpes:productsheet 1 4</itemStack>
+			<itemStack>libvulpes:productsheet 4 4</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="150" power ="1000">
@@ -81,7 +81,7 @@
 			<fluidStack>lubricant 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material 1 321</itemStack>
+			<itemStack>thermalfoundation:material 8 321</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="150" power ="1000">
@@ -90,7 +90,7 @@
 			<fluidStack>lubricant 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material 1 352</itemStack>
+			<itemStack>thermalfoundation:material 8 352</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="150" power ="1000">
@@ -99,7 +99,7 @@
 			<fluidStack>lubricant 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>libvulpes:productsheet 1 6</itemStack>
+			<itemStack>libvulpes:productsheet 4 6</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="150" power ="1000">
@@ -108,7 +108,7 @@
 			<fluidStack>lubricant 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>libvulpes:productplate 1 7</itemStack>
+			<itemStack>libvulpes:productplate 8 7</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="150" power ="1000">
@@ -117,7 +117,7 @@
 			<fluidStack>lubricant 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>libvulpes:productsheet 1 7</itemStack>
+			<itemStack>libvulpes:productsheet 4 7</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="150" power ="1000">
@@ -126,7 +126,7 @@
 			<fluidStack>lubricant 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material 1 324</itemStack>
+			<itemStack>thermalfoundation:material 8 324</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="150" power ="1000">
@@ -135,7 +135,7 @@
 			<fluidStack>lubricant 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>libvulpes:productsheet 1 9</itemStack>
+			<itemStack>libvulpes:productsheet 8 9</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="150" power ="1000">
@@ -144,7 +144,7 @@
 			<fluidStack>lubricant 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material 1 327</itemStack>
+			<itemStack>thermalfoundation:material 8 327</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="150" power ="1000">
@@ -153,7 +153,7 @@
 			<fluidStack>lubricant 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>advancedrocketry:productplate</itemStack>
+			<itemStack>advancedrocketry:productplate 8 0</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="150" power ="1000">
@@ -162,7 +162,7 @@
 			<fluidStack>lubricant 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>advancedrocketry:productsheet</itemStack>
+			<itemStack>advancedrocketry:productsheet 4 0</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="150" power ="1000">
@@ -171,7 +171,7 @@
 			<fluidStack>lubricant 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>advancedrocketry:productplate 1 1</itemStack>
+			<itemStack>advancedrocketry:productplate 8 1</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="150" power ="1000">
@@ -180,7 +180,7 @@
 			<fluidStack>lubricant 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>advancedrocketry:productsheet 1 1</itemStack>
+			<itemStack>advancedrocketry:productsheet 4 1</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="100" power ="1000">

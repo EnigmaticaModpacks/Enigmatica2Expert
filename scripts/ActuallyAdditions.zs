@@ -3,6 +3,10 @@ import mods.jei.JEI.removeAndHide as rh;
 #modloaded actuallyadditions
 print("--- loading ActuallyAdditions.zs ---");
 	
+#Black Quartz Block to Black Quartz
+	recipes.addShapeless("Black Quartz Block to Black Quartz", 
+	<actuallyadditions:item_misc:5> * 4, [<ore:blockBlackQuartz>]);
+	
 # Canola Oil Changes
 	rh(<actuallyadditions:block_oil_generator>);
 	

@@ -2,6 +2,14 @@ import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 print("--- loading MiscRecipes.zs ---");
 
+# Eclipsed Clock
+recipes.remove(<randomthings:eclipsedclock>);
+recipes.addShapedMirrored("Eclipsed Clock", 
+<randomthings:eclipsedclock>, 
+[[<mekanism:otherdust:5>, <minecraft:clock>, <mekanism:otherdust:5>],
+[<minecraft:clock>, <ore:netherStar>, <minecraft:clock>], 
+[<mekanism:otherdust:5>, <minecraft:clock>, <mekanism:otherdust:5>]]);
+
 # Quark Marble Wall Oredicted version
 	recipes.remove(<quark:marble_wall>);
 	recipes.addShaped("Quark Marble Wall", 

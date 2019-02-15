@@ -64,10 +64,10 @@
     "1:10": {
       "questID:3": 1,
       "preRequisites:11": [
-        2,
         0,
-        43,
-        19
+        2,
+        19,
+        43
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2824,7 +2824,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Gate: Applied Energistics",
-          "desc:8": "There is no Applied Energistics chapter, but Immersive Engineering, IndustrialCraft, Forestry, Actually Additions and Industrial Foregoing open up for the mod.\n\nYou only have to obtain either the Controller, or the Energy Acceptor to complete this quest."
+          "desc:8": "There is no Applied Energistics chapter, but Immersive Engineering, IndustrialCraft, Forestry, Actually Additions and Industrial Foregoing open up for the mod."
         }
       },
       "tasks:9": {
@@ -2838,23 +2838,6 @@
           "requiredItems:9": {
             "0:10": {
               "id:8": "appliedenergistics2:controller",
-              "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        },
-        "1:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 1,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "appliedenergistics2:energy_acceptor",
               "Count:3": 1,
               "OreDict:8": "",
               "Damage:3": 0
@@ -3091,9 +3074,9 @@
     "41:10": {
       "questID:3": 41,
       "preRequisites:11": [
-        40,
+        16,
         38,
-        16
+        40
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -4887,10 +4870,10 @@
     "64:10": {
       "questID:3": 65,
       "preRequisites:11": [
+        12,
         40,
         41,
         254,
-        12,
         564,
         597
       ],
@@ -7478,8 +7461,8 @@
     "97:10": {
       "questID:3": 98,
       "preRequisites:11": [
-        289,
-        279
+        279,
+        289
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10020,8 +10003,8 @@
     "130:10": {
       "questID:3": 132,
       "preRequisites:11": [
-        131,
-        123
+        123,
+        131
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -12819,8 +12802,8 @@
     "166:10": {
       "questID:3": 168,
       "preRequisites:11": [
-        156,
         153,
+        156,
         170
       ],
       "properties:10": {
@@ -13071,8 +13054,8 @@
     "169:10": {
       "questID:3": 171,
       "preRequisites:11": [
-        172,
-        169
+        169,
+        172
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -13726,8 +13709,8 @@
     "177:10": {
       "questID:3": 179,
       "preRequisites:11": [
-        178,
-        175
+        175,
+        178
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -13880,9 +13863,9 @@
     "179:10": {
       "questID:3": 181,
       "preRequisites:11": [
+        123,
         177,
-        180,
-        123
+        180
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -15284,8 +15267,8 @@
     "197:10": {
       "questID:3": 199,
       "preRequisites:11": [
-        198,
-        197
+        197,
+        198
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -18828,8 +18811,8 @@
     "236:10": {
       "questID:3": 238,
       "preRequisites:11": [
-        232,
-        213
+        213,
+        232
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -22932,8 +22915,8 @@
     "288:10": {
       "questID:3": 290,
       "preRequisites:11": [
-        287,
-        283
+        283,
+        287
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -25820,8 +25803,8 @@
     "323:10": {
       "questID:3": 326,
       "preRequisites:11": [
-        334,
-        329
+        329,
+        334
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -32329,8 +32312,8 @@
       "questID:3": 408,
       "preRequisites:11": [
         13,
-        404,
-        381
+        381,
+        404
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -34210,9 +34193,9 @@
     "427:10": {
       "questID:3": 430,
       "preRequisites:11": [
-        429,
         427,
-        428
+        428,
+        429
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -34642,7 +34625,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Chemical Reactor",
-          "desc:8": "The Chemical Reactor is a multiblock machine that uses RF to make various things.\n\nIts two main uses are combing Hydrogen and Oxygen into Rocket Fuel, and adding the Airtight Seal enchantment on armor.\n\nAn armor piece with Airtight Seal can be used to substitute any piece of the Space Suit when going into any planet without atmosphere or in the vaccuum of space. Just like the Space Suit though, a Chestplate enchanted this way still requires to be filled with Oxygen."
+          "desc:8": "The Chemical Reactor is a multiblock machine that uses RF to make various things.\n\nIt\u0027s main use is adding the Airtight Seal enchantment on armor.\n\nAn armor piece with Airtight Seal can be used to substitute any piece of the Space Suit when going into any planet without atmosphere or in the vaccuum of space. Just like the Space Suit though, a Chestplate enchanted this way still requires to be filled with Oxygen."
         }
       },
       "tasks:9": {
@@ -34983,8 +34966,8 @@
     "435:10": {
       "questID:3": 438,
       "preRequisites:11": [
-        437,
-        435
+        435,
+        437
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -35160,8 +35143,8 @@
     "437:10": {
       "questID:3": 440,
       "preRequisites:11": [
-        447,
-        438
+        438,
+        447
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -35313,8 +35296,8 @@
     "439:10": {
       "questID:3": 442,
       "preRequisites:11": [
-        438,
-        433
+        433,
+        438
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -35344,7 +35327,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Rocket Fuel",
-          "desc:8": "Your Rocket needs fuel to work. The following liquids are viable rocket fuels:\n\nRocket Fuel\nRefined Fuel\nPyrotheum\nNeutron\nLiquid Oxygen\nUU-Matter\nLiquid Starlight"
+          "desc:8": "Your Rocket needs fuel to work. The following liquids are viable rocket fuels:\n\nRocket Fuel\nRefined Fuel\nPyrotheum\nNeutron\nLiquid Oxygen\nUU-Matter\nLiquid Starlight\n\nRocket Fuel is made in the Mixer multiblock."
         }
       },
       "tasks:9": {
@@ -37941,8 +37924,8 @@
     "474:10": {
       "questID:3": 477,
       "preRequisites:11": [
-        474,
-        473
+        473,
+        474
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -38630,8 +38613,8 @@
     "483:10": {
       "questID:3": 486,
       "preRequisites:11": [
-        475,
-        473
+        473,
+        475
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -38707,8 +38690,8 @@
     "484:10": {
       "questID:3": 487,
       "preRequisites:11": [
-        486,
-        482
+        482,
+        486
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -38784,8 +38767,8 @@
     "485:10": {
       "questID:3": 488,
       "preRequisites:11": [
-        487,
-        483
+        483,
+        487
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -38861,8 +38844,8 @@
     "486:10": {
       "questID:3": 489,
       "preRequisites:11": [
-        488,
-        484
+        484,
+        488
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -38938,8 +38921,8 @@
     "487:10": {
       "questID:3": 490,
       "preRequisites:11": [
-        489,
-        485
+        485,
+        489
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -39015,8 +38998,8 @@
     "488:10": {
       "questID:3": 491,
       "preRequisites:11": [
-        476,
-        473
+        473,
+        476
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -39092,8 +39075,8 @@
     "489:10": {
       "questID:3": 492,
       "preRequisites:11": [
-        491,
-        482
+        482,
+        491
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -39169,8 +39152,8 @@
     "490:10": {
       "questID:3": 493,
       "preRequisites:11": [
-        492,
-        483
+        483,
+        492
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -39246,8 +39229,8 @@
     "491:10": {
       "questID:3": 494,
       "preRequisites:11": [
-        493,
-        484
+        484,
+        493
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -39323,8 +39306,8 @@
     "492:10": {
       "questID:3": 495,
       "preRequisites:11": [
-        494,
-        485
+        485,
+        494
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -39629,8 +39612,8 @@
       "questID:3": 499,
       "preRequisites:11": [
         42,
-        465,
-        464
+        464,
+        465
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -39867,8 +39850,8 @@
       "questID:3": 502,
       "preRequisites:11": [
         42,
-        465,
-        464
+        464,
+        465
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -41023,8 +41006,8 @@
       "questID:3": 517,
       "preRequisites:11": [
         42,
-        511,
-        499
+        499,
+        511
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -41333,8 +41316,8 @@
       "questID:3": 521,
       "preRequisites:11": [
         42,
-        519,
-        500
+        500,
+        519
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -42327,8 +42310,8 @@
     "531:10": {
       "questID:3": 534,
       "preRequisites:11": [
-        538,
-        524
+        524,
+        538
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -42574,10 +42557,10 @@
     "534:10": {
       "questID:3": 537,
       "preRequisites:11": [
-        562,
-        561,
+        559,
         560,
-        559
+        561,
+        562
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -43938,9 +43921,9 @@
     "550:10": {
       "questID:3": 553,
       "preRequisites:11": [
-        552,
+        550,
         551,
-        550
+        552
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -54757,12 +54740,12 @@
     "681:10": {
       "questID:3": 687,
       "preRequisites:11": [
-        685,
-        683,
-        682,
         308,
-        686,
-        684
+        682,
+        683,
+        684,
+        685,
+        686
       ],
       "properties:10": {
         "betterquesting:10": {

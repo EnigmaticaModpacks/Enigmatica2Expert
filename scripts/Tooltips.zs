@@ -23,6 +23,36 @@ print("--- loading Tooltips.zs ---");
 	var ic2wrench = "You can safely break IC2 machines with a Pickaxe.";
 	var tempRecipe = "This item has a temporary crafting recipe.";
 
+var thaumcraftHintItems as IItemStack[] = [
+	<thaumcraft:mechanism_complex>,
+	<thaumcraft:mechanism_simple>,
+	<thaumcraft:mirrored_glass>,
+	<thaumcraft:vis_resonator>,
+	<thaumcraft:fabric>,
+	<thaumcraft:seal>,
+	<thaumcraft:jar_normal>,
+	<thaumcraft:lamp_arcane>,
+	<thaumcraft:pedestal_arcane>,
+	<thaumcraft:alembic>,
+	<thaumcraft:metal_alchemical>,
+	<thaumcraft:mind>,
+	<thaumcraft:vis_battery>,
+	<thaumcraft:stabilizer>,
+	<thaumcraft:inlay>,
+	<thaumcraft:research_table>,
+	<thaumcraft:arcane_workbench>,
+	<thaumcraft:smelter_basic>,
+	<thaumcraft:alumentum>,
+	<thaumcraft:nitor_yellow>
+];
+
+for item in thaumcraftHintItems {
+	ad(item, "Most Thaumcraft items need to be unlocked through research in the Thaumonomicon.");
+}
+
+# Liquid Nitrogen
+	ad(<liquid:nitrogen>, "Obtainable with Nitrogen Collectors.");
+	
 # Oil Generator
 	ad(<actuallyadditions:block_oil_generator>, 
 	"This item has been disabled.", 

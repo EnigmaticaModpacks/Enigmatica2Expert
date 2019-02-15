@@ -1,5 +1,25 @@
 {
   "outputs": [
+	{
+      "target": "white",
+      "weight": 32,
+      "id": "chisel:marble2:7"
+    },
+    {
+      "target": "white",
+      "weight": 30,
+      "id": "chisel:limestone2:7"
+    },
+    {
+      "target": "gray",
+      "weight": 30,
+      "id": "rustic:slate"
+    },
+    {
+      "target": "black",
+      "weight": 30,
+      "id": "chisel:basalt2:7"
+    },
     {
       "target": "gray",
       "weight": 32,

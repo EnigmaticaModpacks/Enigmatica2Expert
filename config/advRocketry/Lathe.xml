@@ -26,7 +26,7 @@
 			<oreDict>ingotCopper</oreDict>
 		</input>
 		<output>
-			<itemStack>libvulpes:productrod 2 4</itemStack>
+			<itemStack>libvulpes:productrod 8 4</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="80" power ="2000">
@@ -34,7 +34,7 @@
 			<oreDict>ingotSteel</oreDict>
 		</input>
 		<output>
-			<itemStack>immersiveengineering:material 2 2</itemStack>
+			<itemStack>immersiveengineering:material 8 2</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="120" power ="2000">
@@ -42,7 +42,7 @@
 			<oreDict>ingotTitanium</oreDict>
 		</input>
 		<output>
-			<itemStack>libvulpes:productrod 2 7</itemStack>
+			<itemStack>libvulpes:productrod 8 7</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="120" power ="2000">
@@ -50,7 +50,7 @@
 			<oreDict>ingotIridium</oreDict>
 		</input>
 		<output>
-			<itemStack>libvulpes:productrod 2 10</itemStack>
+			<itemStack>libvulpes:productrod 8 10</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="160" power ="2000">
@@ -58,7 +58,7 @@
 			<oreDict>ingotTitaniumAluminide</oreDict>
 		</input>
 		<output>
-			<itemStack>advancedrocketry:productrod 2</itemStack>
+			<itemStack>advancedrocketry:productrod 8</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="160" power ="2000">
@@ -66,7 +66,7 @@
 			<oreDict>ingotTitaniumIridium</oreDict>
 		</input>
 		<output>
-			<itemStack>advancedrocketry:productrod 2 1</itemStack>
+			<itemStack>advancedrocketry:productrod 8 1</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="80" power ="2000">
@@ -74,7 +74,7 @@
 			<oreDict>ingotIron</oreDict>
 		</input>
 		<output>
-			<itemStack>immersiveengineering:material 2 1</itemStack>
+			<itemStack>immersiveengineering:material 8 1</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="80" power ="2000">
@@ -82,7 +82,7 @@
 			<oreDict>ingotAluminium</oreDict>
 		</input>
 		<output>
-			<itemStack>immersiveengineering:material 2 3</itemStack>
+			<itemStack>immersiveengineering:material 8 3</itemStack>
 		</output>
 	</Recipe>
 </Recipes>

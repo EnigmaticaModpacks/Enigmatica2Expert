@@ -3,6 +3,9 @@ import crafttweaker.item.IItemStack as IItemStack;
 #modloaded mekanism
 print("--- loading Mekanism.zs ---");
 
+# Fixing a dupe bug
+	mods.mekanism.sawmill.removeRecipe(<minecraft:trapdoor>);
+	
 	var ultimateGasTank = <mekanism:gastank>.withTag({tier: 3, mekData:{}})|<mekanism:gastank>.withTag({tier: 3, mekData:{security:0}});
 	var ultimateFluidTank = <mekanism:machineblock2:11>.withTag({tier: 3, mekData:{}})|<mekanism:machineblock2:11>.withTag({tier: 3, mekData:{security:0}});
 	
@@ -231,8 +234,8 @@ print("--- loading Mekanism.zs ---");
 	mods.actuallyadditions.Empowerer.addRecipe(<mekanism:controlcircuit:3>, <mekanism:controlcircuit:2>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, 500000, 100, [0.5, 0.3, 0.2]);
 
 # Draconium Ore
-	mods.mekanism.combiner.removeRecipe(<draconicevolution:draconium_ore>);
-	mods.mekanism.combiner.addRecipe(<draconicevolution:draconium_dust> * 8, <draconicevolution:draconium_ore>);
+	//mods.mekanism.combiner.removeRecipe(<draconicevolution:draconium_ore>);
+	//mods.mekanism.combiner.addRecipe(<draconicevolution:draconium_dust> * 8, <draconicevolution:draconium_ore>);
 	
 # Nether Quartz Ore
 	mods.mekanism.combiner.removeRecipe(<minecraft:quartz_ore>);
