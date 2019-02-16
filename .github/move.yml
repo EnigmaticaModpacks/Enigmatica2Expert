@@ -24,6 +24,9 @@ aliases:
    e2l: enigmatica2light
    e2e: enigmatica2expert
    e2es: enigmatica2expertskyblock
+   e3: enigmatica3
+   e4: enigmatica4
+   s: scientia
 
 # Repository to extend settings from
 _extends: .github

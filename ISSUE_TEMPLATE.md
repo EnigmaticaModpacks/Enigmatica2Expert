@@ -1,16 +1,15 @@
-## Thank you for helping us improve. #####
+**Modpack version**
+Input version here
 
-_Please follow the issue template, and do not delete any part of it._
-_Failure to comply will result in the issue being closed._
+**Can the issue be reproduced?**
+Yes/no/unknown
 
-**Question or Issue**
+**Logs**
+Input pastebin link to crash-report or latest log, if applicable
 
-
-
-**Modpack Version**
-
-
-
-**Additional Context**
+**Issue**
+Input short description of the issue here
 
 
+
+If this is a feature request, feel free to delete the template.
