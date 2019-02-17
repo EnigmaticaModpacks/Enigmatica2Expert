@@ -9,40 +9,41 @@ print("--- loading AppliedEnergistics.zs ---");
 
 # ---=== Storage Cell Helpers ===---
   function newCellRecipe(input as IIngredient, output as IItemStack) {
-		recipes.remove(output);
-		recipes.addShaped(output.displayName, output,
+	recipes.remove(output);
+	recipes.addShaped(output.displayName, output,
 		[[<appliedenergistics2:quartz_glass>, <ore:dustRedstone>, <appliedenergistics2:quartz_glass>],
 		[<ore:dustRedstone>, input, <ore:dustRedstone>], 
 		[<ore:plateIron>, <ironchest:iron_chest>, <ore:plateIron>]]);
     if(!isNull(input)) {
       recipes.addShapeless("Shapeless - "~output.displayName, output, [<appliedenergistics2:material:39>, input]);
-    }
+		}
 	}
 
   function newAdvCellRecipe(input as IIngredient, output as IItemStack) {
-		recipes.remove(output);
-		recipes.addShaped(output.displayName, output,
-    [[<appliedenergistics2:quartz_glass>, <appliedenergistics2:material:8>, <appliedenergistics2:quartz_glass>],
-    [<appliedenergistics2:material:8>, input, <appliedenergistics2:material:8>], 
-    [<ironchest:iron_chest:2>, <ironchest:iron_chest:2>, <ironchest:iron_chest:2>]]);
+	recipes.remove(output);
+	recipes.addShaped(output.displayName, output,
+		[[<appliedenergistics2:quartz_glass>, <appliedenergistics2:material:8>, <appliedenergistics2:quartz_glass>],
+		[<appliedenergistics2:material:8>, input, <appliedenergistics2:material:8>], 
+		[<ironchest:iron_chest:2>, <ironchest:iron_chest:2>, <ironchest:iron_chest:2>]]);
 
     if(!isNull(input)) {
       recipes.addShapeless("Shapeless - "~output.displayName, output, [<extracells:storage.casing>, input]);
-    }
+		}
 	}
 
   function newGasCellRecipe(input as IIngredient, output as IItemStack) {
-		recipes.remove(output);
-		recipes.addShaped(output.displayName, output,
+	recipes.remove(output);
+	recipes.addShaped(output.displayName, output,
 		[[<appliedenergistics2:quartz_glass>, <appliedenergistics2:material:8>, <appliedenergistics2:quartz_glass>],
-    [<appliedenergistics2:material:8>, input, <appliedenergistics2:material:8>], 
-  	[<ore:plateGold>, <ironchest:iron_chest:1>, <ore:plateGold>]]);
+		[<appliedenergistics2:material:8>, input, <appliedenergistics2:material:8>], 
+		[<ore:plateGold>, <ironchest:iron_chest:1>, <ore:plateGold>]]);
     if(!isNull(input)) {
       recipes.addShapeless("Shapeless - "~output.displayName, output, [<extracells:storage.casing:2>, input]);
-    }
+		}
 	}
 
 # ---=== Storage Housings ===---
+
   newCellRecipe(null, <appliedenergistics2:material:39>);
   newAdvCellRecipe(null, <extracells:storage.casing>);
   newGasCellRecipe(null, <extracells:storage.casing:2>);
@@ -68,8 +69,8 @@ print("--- loading AppliedEnergistics.zs ---");
 
 	} as IItemStack[IIngredient];
 
-	for k, v in recipes {
-		newCellRecipe(k,v);
+	for input, output in recipes {
+		newCellRecipe(input,output);
 	}
 
 # ---=== Advanced Cells ===---
@@ -82,7 +83,6 @@ print("--- loading AppliedEnergistics.zs ---");
     newGasCellRecipe(<extracells:storage.component>.definition.makeStack(i+11), <extracells:storage.gas>.definition.makeStack(i));
   }
 
-# TODO: (Maybe) add helper function for this?
 # ---=== High Tier Storage Components ===---
 	recipes.remove(<extracells:storage.component>);
 	recipes.addShapedMirrored("AE2 Storage Components 256k", 
