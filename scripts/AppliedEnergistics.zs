@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IIngredient as IIngredient;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded appliedenergistics2
 print("--- loading AppliedEnergistics.zs ---");
@@ -16,7 +17,7 @@ print("--- loading AppliedEnergistics.zs ---");
 		[<ore:plateIron>, <ironchest:iron_chest>, <ore:plateIron>]]);
 	}
 
-  function newCellRecipe(input as IIngredient, output as IItemStack) {
+  function input as IIngredient, output as IItemStack) {
 		recipes.remove(output);
 		recipes.addShaped(output.displayName, output,
 		[[<appliedenergistics2:quartz_glass>, <ore:dustRedstone>, <appliedenergistics2:quartz_glass>],
@@ -56,40 +57,39 @@ print("--- loading AppliedEnergistics.zs ---");
   newGasCellRecipe(null, <extracells:storage.casing:2>);
 
 # ---=== Basic Cells ===---
-  # Standard Cells
-  newCellRecipe(<appliedenergistics2:material:35>,<appliedenergistics2:storage_cell_1k>);
-  newCellRecipe(<appliedenergistics2:material:36>,<appliedenergistics2:storage_cell_4k>);
-  newCellRecipe(<appliedenergistics2:material:37>,<appliedenergistics2:storage_cell_16k>);
-  newCellRecipe(<appliedenergistics2:material:38>,<appliedenergistics2:storage_cell_64k>);
-  # Fluid Cells
-  newCellRecipe(<appliedenergistics2:material:54>,<appliedenergistics2:fluid_storage_cell_1k>);
-  newCellRecipe(<appliedenergistics2:material:55>,<appliedenergistics2:fluid_storage_cell_4k>);
-  newCellRecipe(<appliedenergistics2:material:56>,<appliedenergistics2:fluid_storage_cell_16k>);
-  newCellRecipe(<appliedenergistics2:material:57>,<appliedenergistics2:fluid_storage_cell_64k>);
-  # Spatial Cells
-  newCellRecipe(<appliedenergistics2:material:32>,<appliedenergistics2:spatial_storage_cell_2_cubed>);
-  newCellRecipe(<appliedenergistics2:material:33>,<appliedenergistics2:spatial_storage_cell_16_cubed>);
-  newCellRecipe(<appliedenergistics2:material:34>,<appliedenergistics2:spatial_storage_cell_128_cubed>);
-  # View Cell
-  newCellRecipe(crystalCertus, <appliedenergistics2:view_cell>);
+  val recipes = {
+		# Standard Cells
+		<appliedenergistics2:material:35>: <appliedenergistics2:storage_cell_1k>,
+		<appliedenergistics2:material:36>: <appliedenergistics2:storage_cell_4k>,
+		<appliedenergistics2:material:37>: <appliedenergistics2:storage_cell_16k>,
+		<appliedenergistics2:material:38>: <appliedenergistics2:storage_cell_64k>,
+		# Fluid Cells
+		<appliedenergistics2:material:54>: <appliedenergistics2:fluid_storage_cell_1k>,
+		<appliedenergistics2:material:55>: <appliedenergistics2:fluid_storage_cell_4k>,
+		<appliedenergistics2:material:56>: <appliedenergistics2:fluid_storage_cell_16k>,
+		<appliedenergistics2:material:57>: <appliedenergistics2:fluid_storage_cell_64k>,
+		# Spatial Cells
+		<appliedenergistics2:material:32>: <appliedenergistics2:spatial_storage_cell_2_cubed>,
+		<appliedenergistics2:material:33>: <appliedenergistics2:spatial_storage_cell_16_cubed>,
+		<appliedenergistics2:material:34>: <appliedenergistics2:spatial_storage_cell_128_cubed>,
+		# View Cell
+		<ore:crystalCertus>: <appliedenergistics2:view_cell>
+
+	} as IItemStack[IIngredient];
+
+	for k, v in recipes {
+		newCellRecipe(k,v);
+	}
 
 # ---=== Advanced Cells ===---
-  # Standard Cells
-  newAdvCellRecipe(<extracells:storage.component:0>, <extracells:storage.physical:0>);
-  newAdvCellRecipe(<extracells:storage.component:1>, <extracells:storage.physical:1>);
-  newAdvCellRecipe(<extracells:storage.component:2>, <extracells:storage.physical:2>);
-  newAdvCellRecipe(<extracells:storage.component:3>, <extracells:storage.physical:3>);
-  # Fluid Cells
-  # FIXME: Should the Extra Cells Fluid Cells (256k and upwards) use Fluid Storage Cells?
+  for i in 0 .. 3 {
+    newAdvCellRecipe(<extracells:storage.component>.definition.makeStack(i), <extracells:storage.physical>.definition.makeStack(i));
+  }
 
 # ---=== Gas Cells ===---
-  newGasCellRecipe(<extracells:storage.component:11>, <extracells:storage.gas:0>);
-  newGasCellRecipe(<extracells:storage.component:12>, <extracells:storage.gas:1>);
-  newGasCellRecipe(<extracells:storage.component:13>, <extracells:storage.gas:2>);
-  newGasCellRecipe(<extracells:storage.component:14>, <extracells:storage.gas:3>);
-  newGasCellRecipe(<extracells:storage.component:15>, <extracells:storage.gas:4>);
-  newGasCellRecipe(<extracells:storage.component:16>, <extracells:storage.gas:5>);
-  newGasCellRecipe(<extracells:storage.component:17>, <extracells:storage.gas:6>);
+  for i in 0 .. 6 {
+    newGasCellRecipe(<extracells:storage.component>.definition.makeStack(i+11), <extracells:storage.gas>.definition.makeStack(i));
+  }
 
 # TODO: (Maybe) add helper function for this?
 # ---=== High Tier Storage Components ===---
