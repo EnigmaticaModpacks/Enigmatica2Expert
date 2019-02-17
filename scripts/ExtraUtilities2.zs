@@ -40,7 +40,7 @@ print("--- loading ExtraUtilities2.zs ---");
 	[<ore:dustLunar>, <ore:dustLunar>, <ore:dustLunar>]]);
 
 # Nether Star Generator
-	recipes.remove(<extrautils2:machine>.withTag({Type: "extrautils2:generator_netherstar"}));
+	recipes.remove(<extrautils2:machine>.withTag({Type: "extrautils2:generator_netherstar"}),true);
 	recipes.addShaped("Nether Star Generator", 
 	<extrautils2:machine>.withTag({Type: "extrautils2:generator_netherstar"}), 
 	[[<quark:black_ash>, <quark:black_ash>, <quark:black_ash>],
