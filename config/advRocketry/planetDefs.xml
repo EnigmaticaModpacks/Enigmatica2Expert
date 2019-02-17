@@ -195,7 +195,7 @@
 			<rotationalPeriod>8000</rotationalPeriod>
         </planet>
 	</star>
-	<star name="HD 63776" temp="200" x="100" y="0" numPlanets="0" numGasGiants="0">
+	<star name="HD 63776" temp="200" x="0" y="100" numPlanets="0" numGasGiants="0">
 		<planet name="KELT-4ab" DIMID="120" customIcon="iceworld">
 		    <biomeIds>biomesoplenty:alps, iceandfire:glacier, biomesoplenty:alps_foothills, biomesoplenty:glacier</biomeIds>
             <skyColor>0,1,0</skyColor>
