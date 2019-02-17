@@ -7,46 +7,46 @@ print("--- loading AppliedEnergistics.zs ---");
 	var crystalCertus = <ore:crystalCertus>;
 
 # ---=== Storage Cell Helpers ===---
-	function addCellRecipe(_i as IItemStack, _o as IItemStack) {
-		recipes.remove(_o);
-		recipes.addShaped(_o.displayName,
-		_o,
+	function addCellRecipe(input as IItemStack, output as IItemStack) {
+		recipes.remove(output);
+		recipes.addShaped(output.displayName,
+		output,
 		[[<appliedenergistics2:quartz_glass>, <ore:dustRedstone>, <appliedenergistics2:quartz_glass>],
-		[<ore:dustRedstone>, _i, <ore:dustRedstone>], 
+		[<ore:dustRedstone>, input, <ore:dustRedstone>], 
 		[<ore:plateIron>, <ironchest:iron_chest>, <ore:plateIron>]]);
 	}
 
-  function newCellRecipe(_i as IIngredient, _o as IItemStack) {
-		recipes.remove(_o);
-		recipes.addShaped(_o.displayName, _o,
+  function newCellRecipe(input as IIngredient, output as IItemStack) {
+		recipes.remove(output);
+		recipes.addShaped(output.displayName, output,
 		[[<appliedenergistics2:quartz_glass>, <ore:dustRedstone>, <appliedenergistics2:quartz_glass>],
-		[<ore:dustRedstone>, _i, <ore:dustRedstone>], 
+		[<ore:dustRedstone>, input, <ore:dustRedstone>], 
 		[<ore:plateIron>, <ironchest:iron_chest>, <ore:plateIron>]]);
-    if(!isNull(_i)) {
-      recipes.addShapeless("Shapeless - "~_o.displayName, _o, [<appliedenergistics2:material:39>, _i]);
+    if(!isNull(input)) {
+      recipes.addShapeless("Shapeless - "~output.displayName, output, [<appliedenergistics2:material:39>, input]);
     }
 	}
 
-  function newAdvCellRecipe(_i as IIngredient, _o as IItemStack) {
-		recipes.remove(_o);
-		recipes.addShaped(_o.displayName, _o,
+  function newAdvCellRecipe(input as IIngredient, output as IItemStack) {
+		recipes.remove(output);
+		recipes.addShaped(output.displayName, output,
     [[<appliedenergistics2:quartz_glass>, <appliedenergistics2:material:8>, <appliedenergistics2:quartz_glass>],
-    [<appliedenergistics2:material:8>, _i, <appliedenergistics2:material:8>], 
+    [<appliedenergistics2:material:8>, input, <appliedenergistics2:material:8>], 
     [<ironchest:iron_chest:2>, <ironchest:iron_chest:2>, <ironchest:iron_chest:2>]]);
 
-    if(!isNull(_i)) {
-      recipes.addShapeless("Shapeless - "~_o.displayName, _o, [<extracells:storage.casing>, _i]);
+    if(!isNull(input)) {
+      recipes.addShapeless("Shapeless - "~output.displayName, output, [<extracells:storage.casing>, input]);
     }
 	}
 
-  function newGasCellRecipe(_i as IIngredient, _o as IItemStack) {
-		recipes.remove(_o);
-		recipes.addShaped(_o.displayName, _o,
+  function newGasCellRecipe(input as IIngredient, output as IItemStack) {
+		recipes.remove(output);
+		recipes.addShaped(output.displayName, output,
 		[[<appliedenergistics2:quartz_glass>, <appliedenergistics2:material:8>, <appliedenergistics2:quartz_glass>],
-    [<appliedenergistics2:material:8>, _i, <appliedenergistics2:material:8>], 
+    [<appliedenergistics2:material:8>, input, <appliedenergistics2:material:8>], 
   	[<ore:plateGold>, <ironchest:iron_chest:1>, <ore:plateGold>]]);
-    if(!isNull(_i)) {
-      recipes.addShapeless("Shapeless - "~_o.displayName, _o, [<extracells:storage.casing:2>, _i]);
+    if(!isNull(input)) {
+      recipes.addShapeless("Shapeless - "~output.displayName, output, [<extracells:storage.casing:2>, input]);
     }
 	}
 
