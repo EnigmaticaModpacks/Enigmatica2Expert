@@ -4,6 +4,7 @@ print("--- loading Chisel.zs ---");
 
 	addVariation("basalt", <quark:basalt:1>);
 	addVariation("basalt", <quark:basalt>);
+        addVariation("basalt", <ic2:resource>);
 
 	addVariation("marble", <quark:marble>);
 
