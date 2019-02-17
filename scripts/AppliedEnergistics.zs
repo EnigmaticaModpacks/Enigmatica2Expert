@@ -8,16 +8,7 @@ print("--- loading AppliedEnergistics.zs ---");
 	var crystalCertus = <ore:crystalCertus>;
 
 # ---=== Storage Cell Helpers ===---
-	function addCellRecipe(input as IItemStack, output as IItemStack) {
-		recipes.remove(output);
-		recipes.addShaped(output.displayName,
-		output,
-		[[<appliedenergistics2:quartz_glass>, <ore:dustRedstone>, <appliedenergistics2:quartz_glass>],
-		[<ore:dustRedstone>, input, <ore:dustRedstone>], 
-		[<ore:plateIron>, <ironchest:iron_chest>, <ore:plateIron>]]);
-	}
-
-  function input as IIngredient, output as IItemStack) {
+  function newCellRecipe(input as IIngredient, output as IItemStack) {
 		recipes.remove(output);
 		recipes.addShaped(output.displayName, output,
 		[[<appliedenergistics2:quartz_glass>, <ore:dustRedstone>, <appliedenergistics2:quartz_glass>],
