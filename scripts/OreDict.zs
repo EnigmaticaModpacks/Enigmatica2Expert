@@ -5,6 +5,9 @@ import crafttweaker.oredict.IOreDictEntry as IOreDictEntry;
 import mods.jei.JEI.removeAndHide as rh;
 print("--- loading OreDict.zs ---");
 
+# Removing Pam's in-world Apple from cropApple
+	<ore:cropApple>.remove(<harvestcraft:pamapple>);
+	
 # Cobalt Block issues
 	<ore:oreCobalt>.remove(<tconstruct:metal>);
 	<ore:oreArdite>.remove(<tconstruct:metal>);
