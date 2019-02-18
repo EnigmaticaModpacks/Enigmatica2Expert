@@ -3,6 +3,13 @@ import mods.jei.JEI.removeAndHide as rh;
 #modloaded advancedrocketry
 print("--- loading AdvancedRocketry.zs ---");
 
+# Airtight Seal Enchant
+	recipes.addShapedMirrored("Airtight Seal Enchant", 
+	<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 28 as short}]}), 
+	[[<ore:plateTitaniumAluminide>, <advancedrocketry:liquidtank>, <ore:plateTitaniumAluminide>],
+	[<ore:ingotCarbon>, <advancedrocketry:blocklens>, <ore:ingotCarbon>], 
+	[<ore:plateTitaniumAluminide>, <advancedrocketry:liquidtank>, <ore:plateTitaniumAluminide>]]);
+
 # Rocket Fuel
 	mods.immersiveengineering.Mixer.addRecipe(<liquid:rocketfuel> * 250, <liquid:oxygen> * 500, [<thermalfoundation:material:833>, <immersivepetroleum:material>], 25000);
 

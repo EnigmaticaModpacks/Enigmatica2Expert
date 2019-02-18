@@ -33055,7 +33055,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "name:8": "Coils and Motors",
-          "desc:8": "Several multiblock machines in this mod make use of either Coils, Motors or both.\n\nThese come in several tiers, with the more expensive ones making the machine work faster, but any given machine will accept any of them.\n\nFor the sake of consistency, quests here will always ask for the lower tier ones, but remember you can build your machines with better materials if you can afford it."
+          "desc:8": "Several multiblock machines in this mod make use of either Coils, Motors or both.\n\nThese come in several tiers, with the more expensive ones making the machine work faster, but any given machine will accept any of them."
         }
       },
       "tasks:9": {
@@ -33808,7 +33808,7 @@
             "2:10": {
               "id:8": "libvulpes:coil0",
               "Count:3": 3,
-              "OreDict:8": "",
+              "OreDict:8": "blockCoil",
               "Damage:3": 4
             },
             "3:10": {
@@ -33914,7 +33914,7 @@
             "2:10": {
               "id:8": "libvulpes:motor",
               "Count:3": 1,
-              "OreDict:8": "",
+              "OreDict:8": "blockMotor",
               "Damage:3": 0
             },
             "3:10": {
@@ -34026,13 +34026,13 @@
             "3:10": {
               "id:8": "libvulpes:coil0",
               "Count:3": 2,
-              "OreDict:8": "",
+              "OreDict:8": "blockCoil",
               "Damage:3": 4
             },
             "4:10": {
               "id:8": "libvulpes:motor",
               "Count:3": 2,
-              "OreDict:8": "",
+              "OreDict:8": "blockMotor",
               "Damage:3": 0
             },
             "5:10": {
@@ -34138,7 +34138,7 @@
             "2:10": {
               "id:8": "libvulpes:coil0",
               "Count:3": 2,
-              "OreDict:8": "",
+              "OreDict:8": "blockCoil",
               "Damage:3": 4
             },
             "3:10": {
@@ -34322,7 +34322,7 @@
             "2:10": {
               "id:8": "libvulpes:motor",
               "Count:3": 1,
-              "OreDict:8": "",
+              "OreDict:8": "blockMotor",
               "Damage:3": 0
             },
             "3:10": {
@@ -34428,13 +34428,13 @@
             "2:10": {
               "id:8": "libvulpes:coil0",
               "Count:3": 2,
-              "OreDict:8": "",
+              "OreDict:8": "blockCoil",
               "Damage:3": 4
             },
             "3:10": {
               "id:8": "libvulpes:motor",
               "Count:3": 1,
-              "OreDict:8": "",
+              "OreDict:8": "blockMotor",
               "Damage:3": 0
             },
             "4:10": {
@@ -34546,7 +34546,7 @@
             "2:10": {
               "id:8": "libvulpes:coil0",
               "Count:3": 1,
-              "OreDict:8": "",
+              "OreDict:8": "blockCoil",
               "Damage:3": 4
             },
             "3:10": {
@@ -34652,7 +34652,7 @@
             "2:10": {
               "id:8": "libvulpes:motor",
               "Count:3": 1,
-              "OreDict:8": "",
+              "OreDict:8": "blockMotor",
               "Damage:3": 0
             },
             "3:10": {

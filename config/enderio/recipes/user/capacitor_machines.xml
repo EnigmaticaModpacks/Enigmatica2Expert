@@ -44,7 +44,11 @@
   <capacitor key="enderio:block_zombie_generator/loss" base="0" scaler="FIXED" />
   <capacitor key="enderio:block_zombie_generator/buffer" base="100000" scaler="POWER" />
   <capacitor key="enderio:block_zombie_generator/gen" base="320" scaler="CHEMICAL" />
-
+  
+  <capacitor key="enderio:block_franken_zombie_generator/loss" base="0" scaler="CENT" />
+  <capacitor key="enderio:block_franken_zombie_generator/buffer" base="200000" scaler="POWER" />
+  <capacitor key="enderio:block_franken_zombie_generator/gen" base="640" scaler="CHEMICAL" />
+  
   <capacitor key="enderio:block_attractor_obelisk/intake" base="10000" scaler="QUADRATIC" />
   <capacitor key="enderio:block_attractor_obelisk/buffer" base="100000" scaler="POWER" />
   <capacitor key="enderio:block_attractor_obelisk/use" base="320" scaler="QUADRATIC" />

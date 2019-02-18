@@ -49,7 +49,7 @@ print("--- loading AppliedEnergistics.zs ---");
   newGasCellRecipe(null, <extracells:storage.casing:2>);
 
 # ---=== Basic Cells ===---
-  val recipes = {
+  val cellRecipes = {
 		# Standard Cells
 		<appliedenergistics2:material:35>: <appliedenergistics2:storage_cell_1k>,
 		<appliedenergistics2:material:36>: <appliedenergistics2:storage_cell_4k>,
@@ -69,7 +69,7 @@ print("--- loading AppliedEnergistics.zs ---");
 
 	} as IItemStack[IIngredient];
 
-	for input, output in recipes {
+	for input, output in cellRecipes {
 		newCellRecipe(input,output);
 	}
 

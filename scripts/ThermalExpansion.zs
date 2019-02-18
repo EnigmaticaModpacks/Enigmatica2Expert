@@ -2,6 +2,18 @@ import crafttweaker.item.IItemStack;
 #modloaded thermalexpansion
 print("--- loading ThermalExpansion.zs ---");
 
+# Canola Oil Changes	
+	mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:refinedcanolaoil>);
+	mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:crystaloil>);
+	mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:empoweredoil>);
+
+	mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:refinedcanolaoil>, 250000);
+	mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:crystaloil>, 1000000);
+	mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:empoweredoil>, 1750000);
+
+# Rocket Fuel Compatibility
+	mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:rocket_fuel>, 2000000);
+	
 # AA Oil Generator -> Compression Dynamo
 	recipes.addShapeless(<thermalexpansion:dynamo:2>, [<actuallyadditions:block_oil_generator>]);
 
