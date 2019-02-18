@@ -17,6 +17,21 @@ print("--- loading ThermalExpansion.zs ---");
 # AA Oil Generator -> Compression Dynamo
 	recipes.addShapeless(<thermalexpansion:dynamo:2>, [<actuallyadditions:block_oil_generator>]);
 
+# Add More Gems to the Lapidary Calibration augment
+# Current ratios:
+# Black Quartz = Nether Quartz => 40000
+# Aquamarine = Lapis Lazuli => 80000
+# Certus Quartz (and Charged Certus) => 60000
+# Pure Certus => 30000 (because you can create 2 Pure Certus from one crystal)
+# Shulker Pearl => 5000
+# Also yes the class is actually called that internally I think it's just a typo on the ModTweaker dev's side
+  mods.thermalexpansion.NumisticDynamo.addGem(<actuallyadditions:item_misc:5>, 40000);
+  mods.thermalexpansion.NumisticDynamo.addGem(<astralsorcery:itemcraftingcomponent:0>, 80000);
+  mods.thermalexpansion.NumisticDynamo.addGem(<appliedenergistics2:material:0>, 60000);
+  mods.thermalexpansion.NumisticDynamo.addGem(<appliedenergistics2:material:1>, 60000);
+  mods.thermalexpansion.NumisticDynamo.addGem(<appliedenergistics2:material:10>, 30000);
+	mods.thermalexpansion.NumisticDynamo.addGem(<darkutils:shulker_pearl>, 5000)
+
 # Essence of Knowledge XP Compatibility (credit RedGoblin88)
 	mods.thermalexpansion.Crucible.addRecipe(<liquid:experience> * 200, <mysticalagriculture:xp_droplet>, 4000);
 	mods.thermalexpansion.Crucible.addRecipe(<liquid:experience> * 200, <mysticalagriculture:experience_essence>, 4000);
