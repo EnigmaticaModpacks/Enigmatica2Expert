@@ -146,22 +146,5 @@ print("--- loading MysticalAgradditions.zs ---");
 			<ore:ingotInsanium>, <ore:ingotInsanium>, <ore:ingotInsanium>, <ore:ingotInsanium>, 
 			<ore:blockNetherStar>],
 			"astralsorcery.constellation.aevitas");
-
-# Neutronium Seeds
-	recipes.remove(<mysticalagradditions:neutronium_seeds>);
-
-	mods.astralsorcery.Altar.addTraitAltarRecipe("enigmatica2expert:shaped/internal/altar/neutronium_seeds",
-		<mysticalagriculture:neutronium_seeds>, 3500, 600, [
-            <ore:essenceTier5>, <ore:blockInsaniumEssence>, <ore:essenceTier5>,
-            <ore:blockInsaniumEssence>, <mysticalagradditions:insanium:1>, <ore:blockInsaniumEssence>,
-            <ore:essenceTier5>, <ore:blockInsaniumEssence>, <ore:essenceTier5>,
-            <ore:ingotInsanium>, <ore:ingotInsanium>, <ore:ingotInsanium>, <ore:ingotInsanium>,
-            <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>,
-            <appliedenergistics2:material:48>, <appliedenergistics2:material:48>,
-            <ore:ingotCrystaltine>, <ore:ingotCrystaltine>,
-            <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>,
-			<ore:ingotInsanium>, <ore:ingotInsanium>, <ore:ingotInsanium>, <ore:ingotInsanium>, 
-			<minecraft:nether_star>],
-			"astralsorcery.constellation.mineralis");
 				
 	print("--- MysticalAgradditions.zs initialized ---");
