@@ -168,6 +168,10 @@ recipes.addShapedMirrored("Eclipsed Clock",
 	[[null, <ore:paper>, <ore:cropFlax>],
 	[<ore:paper>, <ore:dyeBlack>, <ore:paper>], 
 	[<ore:paper>, <ore:paper>, null]]);
+
+# Remove extraneous (and OP) Paper recipes
+  recipes.removeByRecipeName("minecraft:paper"); # Removed because EnderCore adds a shapeless one
+  recipes.removeByRecipeName("mekanism:paper"); # Removed because CHEATS
 	
 # Elytra
 	recipes.addShaped("Elytra", 

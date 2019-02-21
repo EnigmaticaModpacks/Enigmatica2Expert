@@ -23,6 +23,10 @@ print("--- loading ImmersiveEngineering.zs ---");
 	mods.thermalexpansion.RedstoneFurnace.addPyrolysisRecipe(<immersiveengineering:stone_decoration:3>, 
 	<minecraft:coal_block>, 2400, 2500);
 
+# Sulfur Unification
+  mods.immersiveengineering.Crusher.removeRecipe(<minecraft:blaze_powder>);
+  mods.immersiveengineering.Crusher.addRecipe(<minecraft:blaze_powder> * 4, <ore:itemBlazeRod>, 2048, <thermalfoundation:material:771>, 0.5);
+
 # Aluminum Scaffolding
 	recipes.remove(<immersiveengineering:metal_decoration2:8>);
 	recipes.addShapedMirrored("Aluminum Scaffolding", 
