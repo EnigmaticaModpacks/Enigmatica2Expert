@@ -7,10 +7,20 @@ print("--- loading IndustrialForegoing.zs ---");
 
 # FluidDictionary Recipes
 	FluidDictionary.add("seed.oil", "seed_oil", 1);
+	FluidDictionary.add("seed_oil", "seed.oil", 1);
+
 	FluidDictionary.add("sulfuric_acid", "sulfuricacid", 1);
+	FluidDictionary.add("sulfuricacid", "sulfuric_acid", 1);
+
+	FluidDictionary.add("ic2hydrogen", "hydrogen", 1);
 	FluidDictionary.add("hydrogen", "ic2hydrogen", 1);
+
 	FluidDictionary.add("hydrogen", "liquidhydrogen", 1);
+	FluidDictionary.add("liquidhydrogen", "hydrogen", 1);
+
 	FluidDictionary.add("liquidhydrogen", "ic2hydrogen", 1);
+	FluidDictionary.add("ic2hydrogen", "liquidhydrogen", 1);
+
 
 # Protein Reactor, additional entires
 	for item in <ore:listAllmeatraw>.items {
