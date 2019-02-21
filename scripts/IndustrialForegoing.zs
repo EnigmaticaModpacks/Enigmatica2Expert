@@ -7,6 +7,7 @@ print("--- loading IndustrialForegoing.zs ---");
 
 # FluidDictionary Recipes
 	FluidDictionary.add("seed.oil", "seed_oil", 1);
+	FluidDictionary.add("seed_oil", "seed.oil", 1);
 	FluidDictionary.add("sulfuric_acid", "sulfuricacid", 1);
 	FluidDictionary.add("hydrogen", "ic2hydrogen", 1);
 	FluidDictionary.add("hydrogen", "liquidhydrogen", 1);
