@@ -633,21 +633,7 @@ recipes.addShapedMirrored("Wither Proof Glass",
 	<ore:blockEmerald>, <ore:blockEmerald>, <ore:blockEmerald>, <ore:blockEmerald>, 
 			<minecraft:nether_star>],
 	"astralsorcery.constellation.mineralis");
-	
-# Neutronium Seeds
-	recipes.remove(<mysticalagradditions:neutronium_seeds>);
-	mods.astralsorcery.Altar.addTraitAltarRecipe("enigmatica2expert:shaped/internal/altar/neutronium_seeds",
-	<mysticalagradditions:neutronium_seeds>, 3500, 300, 
-	[<ore:essenceTier4>, <ore:blockSupremiumEssence>, <ore:essenceTier4>,
-	<ore:blockSupremiumEssence>, <mysticalagriculture:crafting:21>, <ore:blockSupremiumEssence>, 
-	<ore:essenceTier4>, <ore:blockSupremiumEssence>, <ore:essenceTier4>,
-	
-	<ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>,
-	<ore:ingotSupremium>, <ore:ingotSupremium>, <ore:ingotSupremium>, <ore:ingotSupremium>,
-	<ore:ingotSupremium>, <ore:ingotSupremium>, <ore:ingotSupremium>, <ore:ingotSupremium>,
-	<ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, 
-			<minecraft:nether_star>],
-	"astralsorcery.constellation.mineralis");
+
 
 # *======= Remove & Hide =======*
 	
