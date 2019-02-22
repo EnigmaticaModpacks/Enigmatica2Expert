@@ -162,7 +162,7 @@
 			<oreDict>oreAluminum</oreDict>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:materialt 2 68</itemStack>
+			<itemStack>thermalfoundation:material 2 68</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="0" power ="0">
