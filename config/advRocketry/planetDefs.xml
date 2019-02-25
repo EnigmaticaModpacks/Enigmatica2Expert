@@ -1,5 +1,5 @@
 <galaxy>
-    <star name="Sol" temp="100" x="0" y="0" numPlanets="0" numGasGiants="0">
+	<star name="Sol" temp="100" x="0" y="0" numPlanets="0" numGasGiants="0">
 		<planet name="Earth" DIMID="0" dimMapping="">
 			<isKnown>true</isKnown>
 			<fogColor>1.0,1.0,1.0</fogColor>
@@ -21,16 +21,16 @@
 			</planet>
 		</planet>
 		<planet name="Mercury" DIMID="101" customIcon="lava">
-		    <biomeIds>biomesoplenty:volcanic_island</biomeIds>
-            <skyColor>0,0,0</skyColor>
+			<biomeIds>biomesoplenty:volcanic_island</biomeIds>
+			<skyColor>0,0,0</skyColor>
 			<atmosphereDensity>120</atmosphereDensity>
 			<gravitationalMultiplier>38</gravitationalMultiplier>
 			<orbitalDistance>40</orbitalDistance>
 			<rotationalPeriod>1400000</rotationalPeriod>
 		</planet>
 		<planet name="Venus" DIMID="102" customIcon="lava">
-		    <biomeIds>biomesoplenty:volcanic_island</biomeIds>
-            <skyColor>0,0,0</skyColor>
+			<biomeIds>biomesoplenty:volcanic_island</biomeIds>
+			<skyColor>0,0,0</skyColor>
 			<fogColor>0.9,0.9,0.9</fogColor>
 			<atmosphereDensity>120</atmosphereDensity>
 			<gravitationalMultiplier>90</gravitationalMultiplier>
@@ -39,7 +39,7 @@
 		</planet>
 		<planet name="Mars" DIMID="103" customIcon="marslike">
 			<biomeIds>advancedrocketry:hotdryrock</biomeIds>
-            <skyColor>1,0.2,0</skyColor>
+			<skyColor>1,0.2,0</skyColor>
 			<fogColor>0.9,0.6,0.1</fogColor>
 			<atmosphereDensity>0</atmosphereDensity>
 			<orbitalDistance>105</orbitalDistance>
@@ -47,7 +47,7 @@
 			<rotationalPeriod>20000</rotationalPeriod>
 		</planet>
 		<planet name="Jupiter" DIMID="104" customIcon="gasgiantred">
-            <GasGiant>true</GasGiant>
+			<GasGiant>true</GasGiant>
 			<gas>hydrogen</gas>
 			<gas>helium</gas>
 			<orbitalDistance>120</orbitalDistance>
@@ -57,7 +57,7 @@
 				<gravitationalMultiplier>30</gravitationalMultiplier>
 				<orbitalDistance>70</orbitalDistance>
 				<rotationalPeriod>10000</rotationalPeriod>
-            </planet>
+			</planet>
 			<planet name="Europa" DIMID="106" customIcon="waterworld">
 				<biomeIds>minecraft:frozen_ocean</biomeIds>
 				<atmosphereDensity>0</atmosphereDensity>
@@ -65,10 +65,10 @@
 				<orbitalDistance>90</orbitalDistance>
 				<orbitalPhi>90</orbitalPhi>
 				<rotationalPeriod>10000</rotationalPeriod>
-            </planet>
-        </planet>
+			</planet>
+		</planet>
 		<planet name="Saturn" DIMID="107" customIcon="gasgiantblue">
-            <GasGiant>true</GasGiant>
+			<GasGiant>true</GasGiant>
 			<gas>hydrogen</gas>
 			<gas>helium</gas>
 			<hasRings>true</hasRings>
@@ -81,70 +81,70 @@
 				<orbitalPhi>120</orbitalPhi>
 				<rotationalPeriod>12000</rotationalPeriod>
 			</planet>
-        </planet>
+		</planet>
 		<planet name="Uranus" DIMID="109" customIcon="iceworld">
-		    <biomeIds>biomesoplenty:alps, iceandfire:glacier, biomesoplenty:alps_foothills, biomesoplenty:glacier</biomeIds>
-            <skyColor>0,0.9,1</skyColor>
+			<biomeIds>biomesoplenty:alps, iceandfire:glacier, biomesoplenty:alps_foothills, biomesoplenty:glacier</biomeIds>
+			<skyColor>0,0.9,1</skyColor>
 			<fogColor>0.9,0.9,0.9</fogColor>
 			<atmosphereDensity>0</atmosphereDensity>
 			<orbitalDistance>150</orbitalDistance>
 			<gravitationalMultiplier>89</gravitationalMultiplier>
 			<rotationalPeriod>17250</rotationalPeriod>
-        </planet>
+		</planet>
 		<planet name="Neptune" DIMID="110" customIcon="iceworld">
-		    <biomeIds>biomesoplenty:alps, iceandfire:glacier, biomesoplenty:alps_foothills, biomesoplenty:glacier</biomeIds>
-            <skyColor>0,0.5,1</skyColor>
+			<biomeIds>biomesoplenty:alps, iceandfire:glacier, biomesoplenty:alps_foothills, biomesoplenty:glacier</biomeIds>
+			<skyColor>0,0.5,1</skyColor>
 			<atmosphereDensity>0</atmosphereDensity>
 			<orbitalDistance>180</orbitalDistance>
 			<gravitationalMultiplier>110</gravitationalMultiplier>
 			<rotationalPeriod>21100</rotationalPeriod>
-        </planet>
-		</star>
-	<star name="Proxima Centauri" temp="200" x="100" y="0" numPlanets="0" numGasGiants="0">
+		</planet>
+	</star>
+	<star name="Proxima Centauri" temp="45" x="28" y="8" numPlanets="0" numGasGiants="0">
 		<planet name="Proxima B" DIMID="111" customIcon="earthlike">
 			<biomeIds>advancedrocketry:crystalchasms</biomeIds>
-            <skyColor>0,1,0</skyColor>
+			<skyColor>0,1,0</skyColor>
 			<fogColor>0,0,1</fogColor>
 			<atmosphereDensity>100</atmosphereDensity>
 			<gravitationalMultiplier>80</gravitationalMultiplier>
 			<orbitalDistance>50</orbitalDistance>
 			<rotationalPeriod>12000</rotationalPeriod>
-        </planet>
+		</planet>
 		<planet name="Twilight" DIMID="7" dimMapping="" customIcon="earthlike">
 			<skyColor>1,0,1</skyColor>
 			<fogColor>1,0,0.5</fogColor>
 			<atmosphereDensity>100</atmosphereDensity>
 			<gravitationalMultiplier>95</gravitationalMultiplier>
 			<orbitalDistance>60</orbitalDistance>
-			<rotationalPeriod>12000</rotationalPeriod>		
-        </planet>
+			<rotationalPeriod>12000</rotationalPeriod>
+		</planet>
 		<planet name="Terra Nova" DIMID="112" customIcon="earthlike">
-		    <biomeIds>biomesoplenty:crag</biomeIds>
+			<biomeIds>biomesoplenty:crag</biomeIds>
 			<skyColor>1,0,1</skyColor>
 			<fogColor>1,0,0.5</fogColor>
 			<atmosphereDensity>100</atmosphereDensity>
 			<gravitationalMultiplier>70</gravitationalMultiplier>
 			<orbitalDistance>70</orbitalDistance>
-			<rotationalPeriod>24000</rotationalPeriod>	
-        </planet>
+			<rotationalPeriod>24000</rotationalPeriod>
+		</planet>
 		<planet name="Novus" DIMID="113" customIcon="lava">
-		    <biomeIds>biomesoplenty:volcanic_island</biomeIds>
+			<biomeIds>biomesoplenty:volcanic_island</biomeIds>
 			<skyColor>1,0,1</skyColor>
 			<fogColor>1,0,0.5</fogColor>
 			<atmosphereDensity>0</atmosphereDensity>
 			<gravitationalMultiplier>75</gravitationalMultiplier>
 			<orbitalDistance>80</orbitalDistance>
 			<rotationalPeriod>12000</rotationalPeriod>
-        </planet>
+		</planet>
 		<planet name="Stella" DIMID="114" customIcon="earthlike">
-		    <biomeIds>biomesoplenty:sacred_springs, biomesoplenty:mystic_grove</biomeIds>
+			<biomeIds>biomesoplenty:sacred_springs, biomesoplenty:mystic_grove</biomeIds>
 			<skyColor>1,0,1</skyColor>
 			<fogColor>1,0,0.5</fogColor>
 			<atmosphereDensity>100</atmosphereDensity>
 			<gravitationalMultiplier>75</gravitationalMultiplier>
 			<orbitalDistance>90</orbitalDistance>
 			<rotationalPeriod>12000</rotationalPeriod>
-        </planet>
+		</planet>
 		<planet name="Philucka" DIMID="115" customIcon="marslike">
 			<biomeIds>advancedrocketry:stormland</biomeIds>
 			<skyColor>1,0,1</skyColor>
@@ -153,7 +153,7 @@
 			<gravitationalMultiplier>75</gravitationalMultiplier>
 			<orbitalDistance>100</orbitalDistance>
 			<rotationalPeriod>12000</rotationalPeriod>
-        </planet>
+		</planet>
 		<planet name="Hubble" DIMID="116" customIcon="gasgiantred">
 			<skyColor>1,0,1</skyColor>
 			<fogColor>1,0,0.5</fogColor>
@@ -162,12 +162,12 @@
 			<gas>hydrogen</gas>
 			<gas>helium</gas>
 			<orbitalDistance>130</orbitalDistance>
-			<rotationalPeriod>12000</rotationalPeriod>	
-        </planet>
+			<rotationalPeriod>12000</rotationalPeriod>
+		</planet>
 	</star>
-<star name="HD 42176" temp="200" x="100" y="0" numPlanets="0" numGasGiants="0">
+	<star name="HD 42176" temp="145" x="-90" y="-33" numPlanets="0" numGasGiants="0">
 		<planet name="KELT-1b" DIMID="117" customIcon="gasgiantblue">
-            <skyColor>0,1,0</skyColor>
+			<skyColor>0,1,0</skyColor>
 			<fogColor>0,0,1</fogColor>
 			<GasGiant>true</GasGiant>
 			<gas>hydrogen</gas>
@@ -175,7 +175,7 @@
 			<hasRings>true</hasRings>
 			<orbitalDistance>35</orbitalDistance>
 			<rotationalPeriod>4000</rotationalPeriod>
-        </planet>
+		</planet>
 		<planet name="KELT-2ab" DIMID="118" customIcon="waterworld">
 			<biomeIds>minecraft:frozen_ocean</biomeIds>
 			<skyColor>1,0,1</skyColor>
@@ -184,7 +184,7 @@
 			<gravitationalMultiplier>120</gravitationalMultiplier>
 			<orbitalDistance>40</orbitalDistance>
 			<rotationalPeriod>8000</rotationalPeriod>
-        </planet>
+		</planet>
 		<planet name="KELT-3" DIMID="119" customIcon="marslike">
 			<biomeIds>advancedrocketry:hotdryrock</biomeIds>
 			<skyColor>1,0,1</skyColor>
@@ -193,19 +193,19 @@
 			<gravitationalMultiplier>120</gravitationalMultiplier>
 			<orbitalDistance>80</orbitalDistance>
 			<rotationalPeriod>8000</rotationalPeriod>
-        </planet>
+		</planet>
 	</star>
-	<star name="HD 63776" temp="200" x="0" y="100" numPlanets="0" numGasGiants="0">
+	<star name="HD 63776" temp="87" x="6" y="-142" numPlanets="0" numGasGiants="0">
 		<planet name="KELT-4ab" DIMID="120" customIcon="iceworld">
-		    <biomeIds>biomesoplenty:alps, iceandfire:glacier, biomesoplenty:alps_foothills, biomesoplenty:glacier</biomeIds>
-            <skyColor>0,1,0</skyColor>
+			<biomeIds>biomesoplenty:alps, iceandfire:glacier, biomesoplenty:alps_foothills, biomesoplenty:glacier</biomeIds>
+			<skyColor>0,1,0</skyColor>
 			<fogColor>0,0,1</fogColor>
 			<hasRings>true</hasRings>
 			<atmosphereDensity>0</atmosphereDensity>
 			<gravitationalMultiplier>60</gravitationalMultiplier>
 			<orbitalDistance>100</orbitalDistance>
 			<rotationalPeriod>10000</rotationalPeriod>
-        </planet>
+		</planet>
 		<planet name="KELT-6a" DIMID="121" customIcon="earthlike">
 			<biomeIds>advancedrocketry:alien forest, advancedrocketry:marsh</biomeIds>
 			<skyColor>1,0,1</skyColor>
@@ -214,25 +214,25 @@
 			<gravitationalMultiplier>70</gravitationalMultiplier>
 			<orbitalDistance>110</orbitalDistance>
 			<rotationalPeriod>180000</rotationalPeriod>
-        </planet>
+		</planet>
 		<planet name="Kepler 0118" DIMID="122" customIcon="lava">
-		    <biomeIds>biomesoplenty:volcanic_island</biomeIds>
-            <skyColor>0,1,0</skyColor>
+			<biomeIds>biomesoplenty:volcanic_island</biomeIds>
+			<skyColor>0,1,0</skyColor>
 			<fogColor>0,0,1</fogColor>
 			<hasRings>true</hasRings>
 			<atmosphereDensity>0</atmosphereDensity>
 			<gravitationalMultiplier>60</gravitationalMultiplier>
 			<orbitalDistance>130</orbitalDistance>
 			<rotationalPeriod>18000</rotationalPeriod>
-        </planet>
+		</planet>
 		<planet name="Kepler 0119" DIMID="123" customIcon="marslike">
 			<biomeIds>advancedrocketry:hotdryrock</biomeIds>
-            <skyColor>0,1,0</skyColor>
+			<skyColor>0,1,0</skyColor>
 			<fogColor>0,0,1</fogColor>
 			<atmosphereDensity>0</atmosphereDensity>
 			<gravitationalMultiplier>60</gravitationalMultiplier>
 			<orbitalDistance>140</orbitalDistance>
 			<rotationalPeriod>100000</rotationalPeriod>
-        </planet>
+		</planet>
 	</star>
 </galaxy>
