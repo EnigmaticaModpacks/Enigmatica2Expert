@@ -215,6 +215,14 @@
 	</Recipe>
 	<Recipe timeRequired="0" power ="0">
 		<input>
+			<oreDict>oreNickel</oreDict>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material 2 69</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
 			<oreDict>orePlatinum</oreDict>
 		</input>
 		<output>
