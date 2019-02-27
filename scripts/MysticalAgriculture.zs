@@ -657,4 +657,10 @@ recipes.addShapedMirrored("Wither Proof Glass",
 	rh(<mysticalagriculture:nether_inferium_ore>);
 	rh(<mysticalagriculture:end_inferium_ore>);
 	
+# *======= Unification =======*
+
+# Sulfur Essence to Dust
+  recipes.removeByRecipeName("mysticalagriculture:dustsulfur");
+  recipes.addShapeless("mysticalagriculture:dustsulfur", <thermalfoundation:material:771> * 8, [<mysticalagriculture:sulfur_essence>,<mysticalagriculture:sulfur_essence>,<mysticalagriculture:sulfur_essence>]);
+
 	print("--- MysticalAgriculture.zs initialized ---");
