@@ -7,7 +7,7 @@ The changelog will let you know what has changed between updates.
 Instead of using filled buckets in recipes, you can use filled Portable Tanks for batch crafting.
 XNet is both cheap and powerful.
 Always craft extras.
-Beware of your nutrition. (Hotkey N)
+Beware the effects of poor nutrition. (Hotkey N)
 To loot a dragon, right-click it with an empty hand.
 Thermal Expansion machines may need upgrades in order to craft certain recipes.
 OP: The command "/bq_admin default load" reloads the questbook. It will not alter your progress.
@@ -67,3 +67,4 @@ Don't hate on bees. Pam's and Rustic bees are easy and great early game.
 Mob Farms will lag less if spread out over a large area. The main load comes from mobs pathing away from each other.
 EnderIO's Ender Fluid Conduits can simultaneously transport multiple liquids through the same block.
 NuclearCraft machines automatically convert Mekanism gases into their fluid forms, and vice-versa.
+Go through the Controls. Lots of mods have features that need to be bound to a key.
