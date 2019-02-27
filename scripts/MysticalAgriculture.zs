@@ -663,4 +663,8 @@ recipes.addShapedMirrored("Wither Proof Glass",
   recipes.removeByRecipeName("mysticalagriculture:dustsulfur");
   recipes.addShapeless("mysticalagriculture:dustsulfur", <thermalfoundation:material:771> * 8, [<mysticalagriculture:sulfur_essence>,<mysticalagriculture:sulfur_essence>,<mysticalagriculture:sulfur_essence>]);
 
+# Uranium Essence to Ingot
+  recipes.removeByRecipeName("mysticalagriculture:uraniumingot");
+  recipes.addShaped("mysticalagriculture:uraniumingot", <immersiveengineering:metal:5> * 3, [[<mysticalagriculture:uranium_essence>,<mysticalagriculture:uranium_essence>,<mysticalagriculture:uranium_essence>],[<mysticalagriculture:uranium_essence>,null,<mysticalagriculture:uranium_essence>],[<mysticalagriculture:uranium_essence>,<mysticalagriculture:uranium_essence>,<mysticalagriculture:uranium_essence>]]);
+	
 	print("--- MysticalAgriculture.zs initialized ---");
