@@ -664,7 +664,7 @@ recipes.addShapedMirrored("Wither Proof Glass",
   recipes.addShapeless("Mystical Agriculture Sulfur", <thermalfoundation:material:771> * 8, [<mysticalagriculture:sulfur_essence>,<mysticalagriculture:sulfur_essence>,<mysticalagriculture:sulfur_essence>]);
 
 # Uranium Essence to Ingot
-  recipes.removeByRecipeName("mysticalagriculture:uraniumingot");
+  recipes.removeByRecipeName("mysticalagriculture:ingoturanium");
   recipes.addShaped("Mystical Agriculture Uranium", <immersiveengineering:metal:5> * 3, [[<mysticalagriculture:uranium_essence>,<mysticalagriculture:uranium_essence>,<mysticalagriculture:uranium_essence>],[<mysticalagriculture:uranium_essence>,null,<mysticalagriculture:uranium_essence>],[<mysticalagriculture:uranium_essence>,<mysticalagriculture:uranium_essence>,<mysticalagriculture:uranium_essence>]]);
 	
 # Changed Amber Essence to the more sensible amber
