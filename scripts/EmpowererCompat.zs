@@ -37,4 +37,7 @@ print("--- loading EmpowererCompat.zs ---");
 	mods.extendedcrafting.CombinationCrafting.addRecipe(<actuallyadditions:item_crystal_empowered:5>, 100000, 1000000, <actuallyadditions:item_crystal:5>, [<minecraft:quartz_block>, <minecraft:bone_block>, <mekanism:ingot:1>, <nuclearcraft:gem:2>,]);
 	mods.extendedcrafting.CombinationCrafting.addRecipe(<actuallyadditions:block_crystal_empowered:5>, 1000000, 1000000, <actuallyadditions:block_crystal:5>, [<minecraft:quartz_block>, <minecraft:bone_block>, <mekanism:ingot:1>, <nuclearcraft:gem:2>]);
 
+# Canola Seeds
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<actuallyadditions:item_misc:24>, 100000, 1000000, <actuallyadditions:item_misc:23>, [<actuallyadditions:item_canola_seed>, <actuallyadditions:item_canola_seed>, <actuallyadditions:item_canola_seed>, <actuallyadditions:item_canola_seed>]);
+
 		print("--- EmpowererCompat.zs initialized ---");
