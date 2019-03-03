@@ -30,7 +30,7 @@ print("--- loading ThermalExpansion.zs ---");
   mods.thermalexpansion.NumisticDynamo.addGem(<appliedenergistics2:material:0>, 60000);
   mods.thermalexpansion.NumisticDynamo.addGem(<appliedenergistics2:material:1>, 60000);
   mods.thermalexpansion.NumisticDynamo.addGem(<appliedenergistics2:material:10>, 30000);
-	mods.thermalexpansion.NumisticDynamo.addGem(<darkutils:shulker_pearl>, 5000)
+	mods.thermalexpansion.NumisticDynamo.addGem(<darkutils:shulker_pearl>, 5000);
 
 # Essence of Knowledge XP Compatibility (credit RedGoblin88)
 	mods.thermalexpansion.Crucible.addRecipe(<liquid:experience> * 200, <mysticalagriculture:xp_droplet>, 4000);
