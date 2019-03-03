@@ -657,4 +657,18 @@ recipes.addShapedMirrored("Wither Proof Glass",
 	rh(<mysticalagriculture:nether_inferium_ore>);
 	rh(<mysticalagriculture:end_inferium_ore>);
 	
+# *======= Unification =======*
+
+# Sulfur Essence to Dust
+  recipes.removeByRecipeName("mysticalagriculture:dustsulfur");
+  recipes.addShapeless("Mystical Agriculture Sulfur", <thermalfoundation:material:771> * 8, [<mysticalagriculture:sulfur_essence>,<mysticalagriculture:sulfur_essence>,<mysticalagriculture:sulfur_essence>]);
+
+# Uranium Essence to Ingot
+  recipes.removeByRecipeName("mysticalagriculture:ingoturanium");
+  recipes.addShaped("Mystical Agriculture Uranium", <immersiveengineering:metal:5> * 3, [[<mysticalagriculture:uranium_essence>,<mysticalagriculture:uranium_essence>,<mysticalagriculture:uranium_essence>],[<mysticalagriculture:uranium_essence>,null,<mysticalagriculture:uranium_essence>],[<mysticalagriculture:uranium_essence>,<mysticalagriculture:uranium_essence>,<mysticalagriculture:uranium_essence>]]);
+	
+# Changed Amber Essence to the more sensible amber
+  recipes.removeByRecipeName("mysticalagriculture:gemamber");
+  recipes.addShaped("Mystical Agriculture Amber", <thaumcraft:amber> * 6, [[<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>],[<mysticalagriculture:amber_essence>,null,<mysticalagriculture:amber_essence>],[<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>]]);
+
 	print("--- MysticalAgriculture.zs initialized ---");

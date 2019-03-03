@@ -5,6 +5,16 @@ import mods.industrialforegoing.FluidDictionary;
 #modloaded industrialforegoing teslacorelib
 print("--- loading IndustrialForegoing.zs ---");
 
+function fluidDict(ins as string[]) {
+	for one in ins {
+		for two in ins {
+			if(one != two) {
+				FluidDictionary.add(one, two, 1);
+			}
+		}
+	}
+}
+
 # FluidDictionary Recipes
 	FluidDictionary.add("seed.oil", "seed_oil", 1);
 	FluidDictionary.add("seed_oil", "seed.oil", 1);
@@ -13,14 +23,21 @@ print("--- loading IndustrialForegoing.zs ---");
 	FluidDictionary.add("sulfuricacid", "sulfuric_acid", 1);
 
 	FluidDictionary.add("ic2hydrogen", "hydrogen", 1);
-	FluidDictionary.add("hydrogen", "ic2hydrogen", 1);
 
-	FluidDictionary.add("hydrogen", "liquidhydrogen", 1);
-	FluidDictionary.add("liquidhydrogen", "hydrogen", 1);
+	var hydrogen = [
+		"hydrogen",
+		"liquidhydrogen",
+		"ic2hydrogen"
+	] as string[];
 
-	FluidDictionary.add("liquidhydrogen", "ic2hydrogen", 1);
-	FluidDictionary.add("ic2hydrogen", "liquidhydrogen", 1);
+	var honey = [
+		"animania_honey",
+		"for.honey",
+		"honey"
+	] as string[];
 
+	fluidDict(hydrogen);
+	fluidDict(honey);
 
 # Protein Reactor, additional entires
 	for item in <ore:listAllmeatraw>.items {
