@@ -1,0 +1,14 @@
+InfoHeader=The game was forcibly crashed because of an insufficient memory allocation. />Font:Yu Gothic UI Light />FontType:normal />FontSize:30 />Color:0, 0, 0, 255
+
+InfoLine1=Your current memory allocation is [AllocatedMemory]MB. />Font:Yu Gothic UI Light />FontType:normal />FontSize:30 />Color:0, 0, 0, 255
+
+InfoLine2=Please allocate [RecommendedMemory]MB before running. />Font:Yu Gothic UI Light />FontType:normal />FontSize:30 />Color:0, 0, 0, 255
+
+InfoFooter=If you would like to play with a lower allocation, contact the pack maker to adjust the settings. />Font:Yu Gothic UI Light />FontType:normal />FontSize:30 />Color:0, 0, 0, 255
+
+RedirectLink=null
+
+RedirectBgColor=255, 255, 255, 255
+
+BackgroundImageDir=resources/backgroundImage.png
+

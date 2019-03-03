@@ -1,4 +1,8 @@
 RecommendedMemoryAllocation=6144
-UseMenuGui=false
-UseStatisticsGui=true
-UseForceCrashGui=false
+
+UseMenu=false
+
+CrashWhenNotEnoughMemory=false
+
+WindowIconDir=resources/windowIcon.png
+

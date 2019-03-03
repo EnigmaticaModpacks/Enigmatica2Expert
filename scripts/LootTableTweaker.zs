@@ -13,6 +13,15 @@ var itemsToRemove as string[] = [
 	"ic2:ingot:6",
 	"ic2:bronze_pickaxe",
 	"ic2:filled_tin_can",
+	"ic2:bronze_boots",
+	"ic2:bronze_chestplate", 
+	"ic2:bronze_leggings", 
+	"ic2:bronze_helmet",
+	
+	"iceandfire:armor_silver_metal_helmet",
+	"iceandfire:armor_silver_metal_chestplate",
+	"iceandfire:armor_silver_metal_leggings",
+	"iceandfire:armor_silver_metal_boots",
 	
 	"minecraft:iron_ingot",
 	"minecraft:gold_ingot",

@@ -5,6 +5,9 @@ import crafttweaker.oredict.IOreDictEntry as IOreDictEntry;
 import mods.jei.JEI.removeAndHide as rh;
 print("--- loading OreDict.zs ---");
 
+# Black Quartz Pillar is cheaper than 1 block, remove from oredict
+	<ore:blockBlackQuartz>.remove(<actuallyadditions:block_misc>);
+	
 # Removing Pam's in-world Apple from cropApple
 	<ore:cropApple>.remove(<harvestcraft:pamapple>);
 	
@@ -39,6 +42,8 @@ print("--- loading OreDict.zs ---");
 	<ore:oreLead>.remove(<immersiveengineering:ore:2>);
 	<ore:oreLead>.remove(<nuclearcraft:ore:2>);
 
+	<ore:oreSilver>.remove(<immersiveengineering:ore:3>);
+	
 	<ore:oreUranium>.remove(<ic2:resource:4>);
 	<ore:oreUranium>.remove(<nuclearcraft:ore:4>);
 
