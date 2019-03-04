@@ -1,20 +1,19 @@
 # Enigmatica 2: Expert Changelog
 
-## [Unreleased](https://github.com/NillerMedDild/Enigmatica2Expert/tree/HEAD)
+**Merged pull requests:**
+
+- Emp Canola Seed Compat, Closes \#927 [\#928](https://github.com/NillerMedDild/Enigmatica2Expert/pull/928) ([MaxNeedsSnacks](https://github.com/MaxNeedsSnacks))
+- Fixed more minor issues [\#904](https://github.com/NillerMedDild/Enigmatica2Expert/pull/904) ([MaxNeedsSnacks](https://github.com/MaxNeedsSnacks))
+- Added more gems to Lapidary Calibration [\#857](https://github.com/NillerMedDild/Enigmatica2Expert/pull/857) ([MaxNeedsSnacks](https://github.com/MaxNeedsSnacks))
 
 **Implemented enhancements:**
 
 - Switch Mekansim version to DZ Fork [\#914](https://github.com/NillerMedDild/Enigmatica2Expert/issues/914) [[enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/enhancement)] [[mod](https://github.com/NillerMedDild/Enigmatica2Expert/labels/mod)]
-
-## [1.57](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.57) (2019-03-03)
-**Implemented enhancements:**
-
 - Empowered Canola Seed Compat [\#927](https://github.com/NillerMedDild/Enigmatica2Expert/issues/927) [[enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/enhancement)] [[script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/script)]
 - Astral Sorcery Sky Rendering in Space [\#910](https://github.com/NillerMedDild/Enigmatica2Expert/issues/910) [[enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/enhancement)] [[suggestion](https://github.com/NillerMedDild/Enigmatica2Expert/labels/suggestion)]
 - Nickel is missing from the small plate presser [\#902](https://github.com/NillerMedDild/Enigmatica2Expert/issues/902) [[config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/config)] [[enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/enhancement)]
-- Remove Keyboard Wizard [\#898](https://github.com/NillerMedDild/Enigmatica2Expert/issues/898) [[enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/enhancement)] [[mod](https://github.com/NillerMedDild/Enigmatica2Expert/labels/mod)]
 - Remove Keyboard Wizard [\#897](https://github.com/NillerMedDild/Enigmatica2Expert/issues/897) [[enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/enhancement)] [[mod](https://github.com/NillerMedDild/Enigmatica2Expert/labels/mod)]
-- Make Chemical Reactor less... useless? [\#871](https://github.com/NillerMedDild/Enigmatica2Expert/issues/871) [[enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/enhancement)] [[quests](https://github.com/NillerMedDild/Enigmatica2Expert/labels/quests)]
+- Make Chemical Reactor less... useless? (Removed Quest) [\#871](https://github.com/NillerMedDild/Enigmatica2Expert/issues/871) [[enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/enhancement)] [[quests](https://github.com/NillerMedDild/Enigmatica2Expert/labels/quests)]
 - Remove 3 Sawdust -\> 6 Paper Recipe [\#866](https://github.com/NillerMedDild/Enigmatica2Expert/issues/866) [[enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/enhancement)] [[script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/script)]
 - Add black quartz to lapidary calibration augment  [\#855](https://github.com/NillerMedDild/Enigmatica2Expert/issues/855) [[enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/enhancement)] [[suggestion](https://github.com/NillerMedDild/Enigmatica2Expert/labels/suggestion)]
 - Buff Creative energy cell [\#852](https://github.com/NillerMedDild/Enigmatica2Expert/issues/852) [[enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/enhancement)] [[script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/script)]
@@ -48,22 +47,6 @@
 - Compact Machines - "Down" tunnel not placeable [\#638](https://github.com/NillerMedDild/Enigmatica2Expert/issues/638) [[mod issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/mod%20issue)]
 - Freezing [\#618](https://github.com/NillerMedDild/Enigmatica2Expert/issues/618) [[mod issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/mod%20issue)]
 - Fixed typo [\#891](https://github.com/NillerMedDild/Enigmatica2Expert/pull/891) [[bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/bug)] ([MorganSimic](https://github.com/MorganSimic))
-
-**Closed issues:**
-
-- Client kicked and unable to rejoin - Better Questing? [\#922](https://github.com/NillerMedDild/Enigmatica2Expert/issues/922) [[not fixed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/not%20fixed)]
-- Hard but optional final quests [\#908](https://github.com/NillerMedDild/Enigmatica2Expert/issues/908) [[not fixed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/not%20fixed)] [[quests](https://github.com/NillerMedDild/Enigmatica2Expert/labels/quests)] [[suggestion](https://github.com/NillerMedDild/Enigmatica2Expert/labels/suggestion)]
-- Run /bq\_admin default load [\#905](https://github.com/NillerMedDild/Enigmatica2Expert/issues/905) [[quests](https://github.com/NillerMedDild/Enigmatica2Expert/labels/quests)]
-- Exception in server tick loop  java.lang.AbstractMethodError: Method com/rwtema/extrautils2/tile/TilePower$1.func\_185929\_b\(Ljava/lang/String;\)Lcom/google/common/base/Optional; is abstract [\#896](https://github.com/NillerMedDild/Enigmatica2Expert/issues/896)
-- Some Mekanism machines do not get power after reloading the pack [\#884](https://github.com/NillerMedDild/Enigmatica2Expert/issues/884) [[not fixed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/not%20fixed)]
-- Fracionating Still not Working [\#882](https://github.com/NillerMedDild/Enigmatica2Expert/issues/882) [[more-information-needed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/more-information-needed)]
-- Extreme lag with 5gb  ram [\#870](https://github.com/NillerMedDild/Enigmatica2Expert/issues/870) [[more-information-needed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/more-information-needed)]
-
-**Merged pull requests:**
-
-- Emp Canola Seed Compat, Closes \#927 [\#928](https://github.com/NillerMedDild/Enigmatica2Expert/pull/928) ([MaxNeedsSnacks](https://github.com/MaxNeedsSnacks))
-- Fixed more minor issues [\#904](https://github.com/NillerMedDild/Enigmatica2Expert/pull/904) ([MaxNeedsSnacks](https://github.com/MaxNeedsSnacks))
-- Added more gems to Lapidary Calibration [\#857](https://github.com/NillerMedDild/Enigmatica2Expert/pull/857) ([MaxNeedsSnacks](https://github.com/MaxNeedsSnacks))
 
 
 

@@ -46,13 +46,6 @@ print("--- loading OreDict.zs ---");
 	
 	<ore:oreUranium>.remove(<ic2:resource:4>);
 	<ore:oreUranium>.remove(<nuclearcraft:ore:4>);
-
-# Removing broken Draconium Ore from it's oredict
-	<ore:oreDraconium>.remove(<draconicevolution:draconium_ore:32767>);
-# Readding the correct ones
-	<ore:oreDraconium>.add(<draconicevolution:draconium_ore>);
-	<ore:oreDraconium>.add(<draconicevolution:draconium_ore:1>);
-	<ore:oreDraconium>.add(<draconicevolution:draconium_ore:2>);
 	
 # Slag
 	<ore:crystalSlag>.add(<ic2:misc_resource:5>);
