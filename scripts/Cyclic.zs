@@ -113,5 +113,13 @@ print("--- loading Cyclic.zs ---");
 	[[<ore:leather>, <ore:string>, <ore:leather>],
 	[<ore:leather>, <ore:blockGold>, <ore:leather>], 
 	[<ore:leather>, <ore:blockRedstone>, <ore:leather>]]);
+
+# Diamond Anvil
+	recipes.remove(<cyclicmagic:block_anvil>);
+	recipes.addShaped("Diamond Anvil", 
+	<cyclicmagic:block_anvil>, 
+	[[<ore:gemDiamond>, <ore:plateDenseObsidian>, <ore:gemDiamond>],
+	[<ore:dustRedstone>, <actuallyadditions:block_item_repairer>, <ore:dustRedstone>], 
+	[<ore:blockIron>, <ore:blockIron>, <ore:blockIron>]]);
 	
 	print("--- Cyclic.zs initialized ---");
