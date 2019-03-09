@@ -312,7 +312,7 @@
 		]
 	},
 	{
-		"item": "oreTin",
+		"item": "thermalfoundation:ore:1",
 		"color": 8,
 		"rarity": [
 			{
@@ -372,7 +372,7 @@
 		]
 	},
 	{
-		"item": "oreCopper",
+		"item": "thermalfoundation:ore:0",
 		"color": 1,
 		"rarity": [
 			{

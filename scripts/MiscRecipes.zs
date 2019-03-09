@@ -316,11 +316,19 @@ print("--- loading MiscRecipes.zs ---");
 	recipes.addShapeless("Twilight Logs -> Planks6", <minecraft:planks> * 2, [<twilightforest:magic_log:2>]);
 	recipes.addShapeless("Twilight Logs -> Planks7", <minecraft:planks> * 2, [<twilightforest:magic_log:3>]);
 	recipes.addShapeless("Twilight Logs -> Planks8", <twilightforest:tower_wood> * 2, [<twilightforest:twilight_log:3>]);
+	recipes.addShapeless("integrateddynamics_menril_planks", <integrateddynamics:menril_planks> * 2, [<integrateddynamics:menril_log>]);
 
 # Sticks
 	recipes.remove(<minecraft:stick>);
-	recipes.addShapeless("Sticks", <minecraft:stick> * 2, [<ore:plankWood>, <ore:plankWood>]);
-	recipes.addShapeless("Sticks from logs", <minecraft:stick> * 4, [<ore:logWood>, <ore:logWood>]);
+	recipes.addShapedMirrored("Sticks", 
+	<minecraft:stick> * 2, 
+	[[<ore:plankWood>], 
+	[<ore:plankWood>]]);
+	
+	recipes.addShapedMirrored("Sticks from logs", 
+	<minecraft:stick> * 4, 
+	[[<ore:logWood>],
+	[<ore:logWood>]]);
 	
 # Bucket
 	recipes.remove(<minecraft:bucket>);

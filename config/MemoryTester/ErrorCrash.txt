@@ -1,1 +1,0 @@
-ErrorInfo=The game was force crashed because of an illegal configuration.

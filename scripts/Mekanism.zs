@@ -3,9 +3,6 @@ import crafttweaker.item.IItemStack as IItemStack;
 #modloaded mekanism
 print("--- loading Mekanism.zs ---");
 
-# Fixing a dupe bug
-	mods.mekanism.sawmill.removeRecipe(<minecraft:trapdoor>);
-	
 	var ultimateGasTank = <mekanism:gastank>.withTag({tier: 3, mekData:{}})|<mekanism:gastank>.withTag({tier: 3, mekData:{security:0}});
 	var ultimateFluidTank = <mekanism:machineblock2:11>.withTag({tier: 3, mekData:{}})|<mekanism:machineblock2:11>.withTag({tier: 3, mekData:{security:0}});
 	

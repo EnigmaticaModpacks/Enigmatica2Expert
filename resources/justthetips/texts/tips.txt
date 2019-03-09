@@ -68,3 +68,5 @@ Mob Farms will lag less if spread out over a large area. The main load comes fro
 EnderIO's Ender Fluid Conduits can simultaneously transport multiple liquids through the same block.
 NuclearCraft machines automatically convert Mekanism gases into their fluid forms, and vice-versa.
 Go through the Controls. Lots of mods have features that need to be bound to a key.
+Be sure to check out Dark Utilities' charms! They can speed up certain tasks, like eating and sleeping!
+Utilize the Quark chest buttons in your inventory! They help a lot with early game storage management.
