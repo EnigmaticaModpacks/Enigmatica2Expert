@@ -6,6 +6,7 @@ print("--- loading Cyclic.zs ---");
 
 # Removing Simple Block Miner
 	rh(<cyclicmagic:block_miner>);
+	
 # User
 	recipes.remove(<cyclicmagic:block_user>);
 	recipes.addShapedMirrored("Cyclic User", 
