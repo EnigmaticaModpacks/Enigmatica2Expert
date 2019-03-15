@@ -109,7 +109,9 @@ print("--- loading AdvancedRocketry.zs ---");
 	<libvulpes:productrod:6>,
 	<libvulpes:productrod:7>,
 	<libvulpes:productrod:10>,
-	<immersiveengineering:material:3>
+	<immersiveengineering:material:3>,
+	<advancedrocketry:productgear:*>,
+	<libvulpes:productgear:*>
 	
 		] as IItemStack[];
 
