@@ -82,8 +82,8 @@ print("--- loading TinkersConstruct.zs ---");
 	mods.tconstruct.Melting.removeRecipe(<liquid:enderium>, <thermalfoundation:material:103>);
 	mods.tconstruct.Melting.removeRecipe(<liquid:refinedobsidian>, <mekanism:otherdust:5>);
 # Removing the ability to smelt redstone/glowstone to make EnderIO alloys
-	for item in <ore:dustRedstone>.items { mods.tconstruct.Melting.removeRecipe(<liquid:glowstone>, item); }
-	for item in <ore:blockRedstone>.items { mods.tconstruct.Melting.removeRecipe(<liquid:glowstone>, item); }
+	for item in <ore:dustRedstone>.items { mods.tconstruct.Melting.removeRecipe(<liquid:redstone>, item); }
+	for item in <ore:blockRedstone>.items { mods.tconstruct.Melting.removeRecipe(<liquid:redstone>, item); }
 	for item in <ore:dustGlowstone>.items { mods.tconstruct.Melting.removeRecipe(<liquid:glowstone>, item); }
 	for item in <ore:blockGlowstone>.items { mods.tconstruct.Melting.removeRecipe(<liquid:glowstone>, item); }
 
