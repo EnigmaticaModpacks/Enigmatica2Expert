@@ -40,7 +40,7 @@ for silicon in <ore:itemSilicon>.items {
 	[<ore:ingotElectricalSteel>, <ore:ingotElectricalSteel>, <ore:ingotElectricalSteel>]]);
 
 # Fused Quartz (before Alloy Smelter)
-	mods.nuclearcraft.alloy_furnace.addRecipe(<minecraft:quartz> * 2, <minecraft:quartz> * 2, <enderio:block_fused_quartz>);
+	mods.nuclearcraft.alloy_furnace.addRecipe(<minecraft:quartz> * 4, <minecraft:quartz_block>, <enderio:block_fused_quartz> * 2);
 
 # Clear Glass (before Alloy Smelter)
 	recipes.addShaped("Quite Clear Glass", 

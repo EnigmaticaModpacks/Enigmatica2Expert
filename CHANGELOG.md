@@ -1,28 +1,33 @@
 # Enigmatica 2: Expert Changelog
 
-**Merged pull requests:**
-
-- Beefed up the Diamond Anvil Recipe a HELL of a lot [\#956](https://github.com/NillerMedDild/Enigmatica2Expert/pull/956) ([MaxNeedsSnacks](https://github.com/MaxNeedsSnacks))
-
 **Implemented enhancements:**
 
-- Diamond Anvil  [\#955](https://github.com/NillerMedDild/Enigmatica2Expert/issues/955) [[enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/enhancement)] [[script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/script)]
-- In Control! Disallow Mobs on Planets without Oxygen [\#948](https://github.com/NillerMedDild/Enigmatica2Expert/issues/948) [[enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/enhancement)] [[mod](https://github.com/NillerMedDild/Enigmatica2Expert/labels/mod)]
-- Switch Mekansim version to DZ Fork [\#914](https://github.com/NillerMedDild/Enigmatica2Expert/issues/914) [[enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/enhancement)] [[mod](https://github.com/NillerMedDild/Enigmatica2Expert/labels/mod)]
-- Rainbow Sprouts and Fairies spawning in Compact Machines [\#135](https://github.com/NillerMedDild/Enigmatica2Expert/issues/135) [[config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/config)] [[enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/enhancement)]
-- Force UniDict to deal with dustDiamond [\#958](https://github.com/NillerMedDild/Enigmatica2Expert/pull/958) [[config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/config)] [[enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/enhancement)] ([MaxNeedsSnacks](https://github.com/MaxNeedsSnacks))
+- Add @Pam'sHarvestcraft support for @ImmersiveEngineering fermenter and squeezer [\#992](https://github.com/NillerMedDild/Enigmatica2Expert/issues/992) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
+- Void Ore Miner Tier 6 JEI Description [\#985](https://github.com/NillerMedDild/Enigmatica2Expert/issues/985) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)] [[Type: Suggestion](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Suggestion)]
+- Botania Pure Daisy [\#975](https://github.com/NillerMedDild/Enigmatica2Expert/issues/975) [[Marker: Quests](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Quests)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
+- Update Unidict.cfg to cover Lapis and Emerald [\#979](https://github.com/NillerMedDild/Enigmatica2Expert/pull/979) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)] ([MaxNeedsSnacks](https://github.com/MaxNeedsSnacks))
 
 **Fixed bugs:**
 
-- Tons of quest issues fixed by Funwayguy!
-- Mekanism Energized smelter quest not working [\#964](https://github.com/NillerMedDild/Enigmatica2Expert/issues/964) [[mod issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/mod%20issue)] [[quests](https://github.com/NillerMedDild/Enigmatica2Expert/labels/quests)]
-- Mekanism Enrichment Chamber Quest Line  [\#938](https://github.com/NillerMedDild/Enigmatica2Expert/issues/938) [[mod issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/mod%20issue)] [[quests](https://github.com/NillerMedDild/Enigmatica2Expert/labels/quests)]
-- Update Modular Machinery Config [\#934](https://github.com/NillerMedDild/Enigmatica2Expert/issues/934) [[bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/bug)] [[config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/config)]
-- Update Astral Schematica schematics [\#953](https://github.com/NillerMedDild/Enigmatica2Expert/issues/953) [[bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/bug)] [[config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/config)]
-- RFTools powercell overflowing [\#941](https://github.com/NillerMedDild/Enigmatica2Expert/issues/941) [[mod issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/mod%20issue)]
-- draconium ore from void ore miner 6 is unprocessable [\#935](https://github.com/NillerMedDild/Enigmatica2Expert/issues/935) [[bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/bug)] [[script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/script)]
-- Checkboxes [\#761](https://github.com/NillerMedDild/Enigmatica2Expert/issues/761) [[mod issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/mod%20issue)]
-- Advanced Rocketry vaccum planets spawning mobs [\#380](https://github.com/NillerMedDild/Enigmatica2Expert/issues/380) [[bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/bug)] [[config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/config)]
+- Mekanism ignores the client sounds off config setting [\#983](https://github.com/NillerMedDild/Enigmatica2Expert/issues/983) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
+- Flux JEI [\#726](https://github.com/NillerMedDild/Enigmatica2Expert/issues/726) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Status: Reported](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Reported)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
+- Remove Advanced Rocketry Gear Recipes [\#995](https://github.com/NillerMedDild/Enigmatica2Expert/issues/995) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+- Removing Space station ID chip.  [\#982](https://github.com/NillerMedDild/Enigmatica2Expert/issues/982) [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
+- Missing script updates in 1.58 [\#974](https://github.com/NillerMedDild/Enigmatica2Expert/issues/974) [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+- Using builders wand on Ultimate induction cells converts them to basic cells [\#970](https://github.com/NillerMedDild/Enigmatica2Expert/issues/970) [[Status: Not Fixed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Not%20Fixed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
+- OreDict Mob Heads [\#968](https://github.com/NillerMedDild/Enigmatica2Expert/issues/968) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+- Mekanism Energized smelter quest not working [\#964](https://github.com/NillerMedDild/Enigmatica2Expert/issues/964) [[Marker: Quests](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Quests)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+- Fix Mekanism Quest Line's NBT problems [\#939](https://github.com/NillerMedDild/Enigmatica2Expert/issues/939) [[Marker: Quests](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Quests)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
+- Mekanism Enrichment Chamber Quest Line  [\#938](https://github.com/NillerMedDild/Enigmatica2Expert/issues/938) [[Marker: Quests](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Quests)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
+- Update Modular Machinery Config [\#934](https://github.com/NillerMedDild/Enigmatica2Expert/issues/934) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+
+**Merged pull requests:**
+
+- Found a bug, fixed a bug [\#998](https://github.com/NillerMedDild/Enigmatica2Expert/pull/998) ([MaxNeedsSnacks](https://github.com/MaxNeedsSnacks))
+- Remove Advanced Rocketry Gear Recipes [\#996](https://github.com/NillerMedDild/Enigmatica2Expert/pull/996) ([MaxNeedsSnacks](https://github.com/MaxNeedsSnacks))
+- Quest fixes [\#989](https://github.com/NillerMedDild/Enigmatica2Expert/pull/989) ([MaxNeedsSnacks](https://github.com/MaxNeedsSnacks))
+- Blacklist Induction Cell stuff from BBW [\#980](https://github.com/NillerMedDild/Enigmatica2Expert/pull/980) ([MaxNeedsSnacks](https://github.com/MaxNeedsSnacks))
+- /dank/null: Add itemSkull to OD blacklist [\#972](https://github.com/NillerMedDild/Enigmatica2Expert/pull/972) ([MaxNeedsSnacks](https://github.com/MaxNeedsSnacks))
 
 
 
