@@ -18375,21 +18375,6 @@
     "3pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}"
   },
   {
-    "name": "astralsorcery:blockcustomsandore",
-    "meta": 0,
-    "length": 1,
-    "name0": "astralsorcery:itemcraftingcomponent",
-    "meta0": 0,
-    "0chance0": 266.84,
-    "1chance0": 364.02,
-    "2chance0": 452.6,
-    "3chance0": 563.66,
-    "0pair0": "{\n  \"left\": 1,\n  \"right\": 5\n}",
-    "1pair0": "{\n  \"left\": 1,\n  \"right\": 7\n}",
-    "2pair0": "{\n  \"left\": 1,\n  \"right\": 9\n}",
-    "3pair0": "{\n  \"left\": 1,\n  \"right\": 11\n}"
-  },
-  {
     "name": "thermalfoundation:ore_fluid",
     "meta": 5,
     "length": 1,
@@ -19840,21 +19825,6 @@
     "3pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}"
   },
   {
-    "name": "mekanism:saltblock",
-    "meta": 0,
-    "length": 1,
-    "name0": "mekanism:salt",
-    "meta0": 0,
-    "0chance0": 400.0,
-    "1chance0": 400.0,
-    "2chance0": 400.0,
-    "3chance0": 400.0,
-    "0pair0": "{\n  \"left\": 4,\n  \"right\": 4\n}",
-    "1pair0": "{\n  \"left\": 4,\n  \"right\": 4\n}",
-    "2pair0": "{\n  \"left\": 4,\n  \"right\": 4\n}",
-    "3pair0": "{\n  \"left\": 4,\n  \"right\": 4\n}"
-  },
-  {
     "name": "integrateddynamics:menril_leaves",
     "meta": 0,
     "length": 1,
@@ -19908,5 +19878,35 @@
     "1pair0": "{\n  \"left\": 1,\n  \"right\": 3\n}",
     "2pair0": "{\n  \"left\": 1,\n  \"right\": 3\n}",
     "3pair0": "{\n  \"left\": 1,\n  \"right\": 3\n}"
+  },
+  {
+    "name": "mekanism:saltblock",
+    "meta": 0,
+    "length": 1,
+    "name0": "mekanism:salt",
+    "meta0": 0,
+    "0chance0": 400.0,
+    "1chance0": 400.0,
+    "2chance0": 400.0,
+    "3chance0": 400.0,
+    "0pair0": "{\n  \"left\": 4,\n  \"right\": 4\n}",
+    "1pair0": "{\n  \"left\": 4,\n  \"right\": 4\n}",
+    "2pair0": "{\n  \"left\": 4,\n  \"right\": 4\n}",
+    "3pair0": "{\n  \"left\": 4,\n  \"right\": 4\n}"
+  },
+  {
+    "name": "astralsorcery:blockcustomsandore",
+    "meta": 0,
+    "length": 1,
+    "name0": "astralsorcery:itemcraftingcomponent",
+    "meta0": 0,
+    "0chance0": 264.14,
+    "1chance0": 368.12,
+    "2chance0": 460.82,
+    "3chance0": 561.04004,
+    "0pair0": "{\n  \"left\": 1,\n  \"right\": 5\n}",
+    "1pair0": "{\n  \"left\": 1,\n  \"right\": 7\n}",
+    "2pair0": "{\n  \"left\": 1,\n  \"right\": 9\n}",
+    "3pair0": "{\n  \"left\": 1,\n  \"right\": 11\n}"
   }
 ]

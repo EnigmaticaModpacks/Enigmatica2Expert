@@ -199,7 +199,7 @@ XML editor will display that as tooltips when editing this file.
     <sagmilling energy="2400">
       <input name="rodBasalz" />
       <output name="dustBasalz" amount="4"/>
-      <output name="dustObsidian" chance="0.5"/>
+      <output name="POWDER_OBSIDIAN" chance="0.5"/>
     </sagmilling>
   </recipe>
 
@@ -308,6 +308,14 @@ XML editor will display that as tooltips when editing this file.
       <output name="actuallyadditions:item_misc:17" chance="0.6"/>
       <output name="actuallyadditions:item_misc:17" chance="0.3"/>
       <output name="itemPlantgreen" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+ 
+  <!-- Misc. -->
+  <recipe name="Sagmill: Diamond Dust" required="false">
+    <sagmilling energy="2400" bonus="none">
+      <input name="gemDiamond"/>
+      <output name="dustDiamond" />
     </sagmilling>
   </recipe>
 

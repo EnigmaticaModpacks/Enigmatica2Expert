@@ -33,7 +33,6 @@ zs_export.json
 .ReAuth.cfg
 usernamecache.json
 usercache.json
-minecraftinstance.json
 knownkeys.txt
 servers.dat
 realms_persistence.json
