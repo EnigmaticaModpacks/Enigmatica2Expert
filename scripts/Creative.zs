@@ -27,8 +27,6 @@ print("--- loading Creative.zs ---");
 	var ultProvider = <mekanism:basicblock2:4>.withTag({tier: 3});
 	var blackHoleUnit = <industrialforegoing:black_hole_unit>;
 	var blackHoleTank = <industrialforegoing:black_hole_tank>;
-	var creativeGasTankFrame = <chiselsandbits:chiseled_fluid>.withTag({side: 3, RepairCost: 0, BlockEntityTag: {b: 3593, side: 3 as byte, s: 1, nc: 0 as byte, X: [120, -38, 99, 96, 103, -104, -63, -72, 99, 22, 75, -89, -52, -33, -55, 50, 19, -101, 116, 118, 78, -28, 104, 96, -2, -62, 122, 59, 119, 3, -125, 1, 3, 3, 27, 3, -37, 36, -49, 73, -98, 6, 20, -79, 55, -128, -39, -73, 115, 25, -112, -128, -89, -54, 6, 6, 5, -112, 56, -21, -74, -37, -37, 110, 43, -128, -40, -84, -28, -78, 13, 64, 108, -96, 93, -71, -37, 26, 64, 70, 51, 50, 48, -26, 46, 32, -42, 124, 1, 56, 91, -128, -128, -7, 75, 38, 58, 48, -63, -52, 119, 32, -46, -3, 2, 56, -20, -62, 102, -2, -94, 32, 71, 5, -122, 65, 102, 62, 41, -31, 79, 78, -8, -112, 31, -65, -76, 72, -97, 0, 93, 17, -69, -123] as byte[] as byte[], lv: 11}, display: {Name: "Creative Gas Tank Frame"}});
-	var twilightForestMasterTrophy = <chiselsandbits:chiseled_iron>.withTag({side: 3, RepairCost: 0, BlockEntityTag: {b: 68920, side: 3 as byte, s: 1, nc: 0 as byte, X: [120, -38, 99, 96, 101, 104, -20, 21, -39, 49, -117, -27, -17, 100, -103, -65, -109, 37, 24, -98, 112, 79, -14, 84, -103, -92, 2, 36, -128, -108, 39, 3, -111, 64, 101, 18, 3, 3, 72, 61, 72, 47, -120, -123, 79, -19, 96, 55, 63, -73, -63, 83, -123, 57, 119, -37, 109, 32, -45, 1, 100, 28, -75, -51, -25, 5, -103, -97, 96, 118, -125, 83, -123, 9, 100, -2, 4, 124, -26, -125, -100, 0, 84, -60, -55, -64, 9, 18, -61, -51, 6, -102, -49, 9, 51, -97, 17, 100, 62, 3, -37, 1, 70, 5, -112, 18, -122, 6, 124, -26, 123, -86, 28, 96, 56, -64, -64, -64, -63, -64, 1, -30, -29, 102, 3, -51, -25, 64, 13, 127, -80, -7, 4, -61, 127, -44, -4, -31, 109, 62, 57, -23, -109, 20, -13, -55, 47, 31, 104, 109, 62, 40, -1, -46, -58, -4, 4, -112, -7, -68, -96, -14, 7, 92, 52, 48, -47, -62, -3, 0, -114, -87, -36, 60] as byte[] as byte[], lv: 0}, display: {Name: "Twilight Forest Master Trophy"}});
 	var millLava = <extrautils2:passivegenerator:2>;
 	var millWater = <extrautils2:passivegenerator:3>;
 	var millWind = <extrautils2:passivegenerator:4>;
@@ -51,7 +49,19 @@ print("--- loading Creative.zs ---");
 	var meChest = <appliedenergistics2:chest>;
 	var creativeTank = <mekanism:machineblock2:11>.withTag({tier: 4});
 	var creativeGasTank = <mekanism:gastank>.withTag({tier: 4});
-	
+
+var creativeGasTankFrame = <simple_trophies:trophy>.withTag({
+	TrophyItem:{id:"mekanism:gastank",Count:1 as byte, Damage:0 as short},
+	TrophyName:"Creative Gas Tank Frame",
+	TrophyVariant:"gold"
+});
+
+var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
+  TrophyItem:{id:"twilightforest:trophy",Count:1 as byte, Damage:5 as short},
+  TrophyName:"Twilight Forest Master Trophy",
+  TrophyVariant:"gold"
+});
+
 # *======= Recipes =======*
 
 # Twilight Forest Master Trophy
@@ -110,7 +120,7 @@ print("--- loading Creative.zs ---");
 # Creative Builder's Wand
 	mods.extendedcrafting.TableCrafting.addShaped(0, <extrautils2:itemcreativebuilderswand>, 
 	[[<extrautils2:itembuilderswand>, <cyclicmagic:cyclic_wand_build>.anyDamage(), <extrautils2:itembuilderswand>], 
-	[<betterbuilderswands:wanddiamond>.anyDamage(), <betterbuilderswands:wandunbreakable>.anyDamage(), <betterbuilderswands:wanddiamond>.anyDamage()], 
+	[<betterbuilderswands:wanddiamond>.anyDamage(), <betterbuilderswands:wandunbreakable:12>.anyDamage(), <betterbuilderswands:wanddiamond>.anyDamage()], 
 	[<extrautils2:itembuilderswand>, <cyclicmagic:cyclic_wand_build>.anyDamage(), <extrautils2:itembuilderswand>]]);  
 
 # Creative RFTools Screen
