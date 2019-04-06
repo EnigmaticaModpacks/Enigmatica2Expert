@@ -158,7 +158,8 @@ for item in thaumcraftHintItems {
 	
 # Pumpjack
 	ad(<forge:bucketfilled>.withTag({FluidName: "oil", Amount: 1000}),"The Pumpjack needs a pipe to bedrock to function.");
-
+	//ad(<liquid:crudeoil>, "The Pumpjack needs a pipe to bedrock to function.");
+	
 # Energy Cell Frame
 	ad(<thermalexpansion:frame:128>,"Requires 400 Redstone Units.");
 	
