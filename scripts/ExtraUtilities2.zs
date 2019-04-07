@@ -188,7 +188,7 @@ print("--- loading ExtraUtilities2.zs ---");
 	[<minecraft:redstone_ore>, <thermalfoundation:material:1027>]);
 	
 # Make Creative Mill Breakable
-<extrautils2:passivegenerator:6>.asBlock().definition.hardness = 8;
+<extrautils2:passivegenerator:6>.hardness = 2;
 
 # *======= Crusher =======*
 
