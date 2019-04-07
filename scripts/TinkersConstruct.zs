@@ -4,9 +4,8 @@ import mods.jei.JEI.removeAndHide as rh;
 #modloaded tconstruct
 print("--- loading TinkersConstruct.zs ---");
 
-//TODO: Smart Output, prevent insta-breaking it
-# Replace with actual item.
-	#<extrautils2:passivegenerator:6>.asBlock().definition.hardness = 8;
+# Prevent Smart Output from instantly breaking (setting it to same hardness as Smeltery Controllers)
+	<tinker_io:smart_output>.hardness = <tconstruct:smeltery_controller>.hardness;
 
 # Cobalt Block Unification
 	mods.tconstruct.Casting.removeBasinRecipe(<chisel:blockcobalt>);
