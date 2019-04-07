@@ -3,7 +3,11 @@ import crafttweaker.liquid.ILiquidDefinition;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded tconstruct
 print("--- loading TinkersConstruct.zs ---");
-	
+
+//TODO: Smart Output, prevent insta-breaking it
+# Replace with actual item.
+	#<extrautils2:passivegenerator:6>.asBlock().definition.hardness = 8;
+
 # Cobalt Block Unification
 	mods.tconstruct.Casting.removeBasinRecipe(<chisel:blockcobalt>);
 	mods.tconstruct.Casting.addBasinRecipe(<tconstruct:metal>, null, <liquid:cobalt>, 1296);
