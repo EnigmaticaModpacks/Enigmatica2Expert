@@ -1,6 +1,11 @@
 #modloaded rftools
 print("--- loading RFTools.zs ---");
 	
+# Mooshroom Syringe
+	recipes.addShapeless("Mooshroom Syringe", 
+	<rftools:syringe>.withTag({mobName: "Mooshroom", level: 10, mobId: "minecraft:mooshroom"}), 
+	[<rftools:syringe>,<excompressum:bait:2>,<minecraft:hay_block>,<ore:listAllmushroom>]);
+
 # Modular Storage
 	recipes.remove(<rftools:modular_storage>);
 	recipes.addShaped("Modular Storage 1", <rftools:modular_storage>, 

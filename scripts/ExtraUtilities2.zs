@@ -1,8 +1,6 @@
 #modloaded extrautils2
 print("--- loading ExtraUtilities2.zs ---");
 	
-# *======= Recipes =======*
-
 # Bag of Holding
 	recipes.remove(<extrautils2:bagofholding>);
 	
@@ -186,9 +184,6 @@ print("--- loading ExtraUtilities2.zs ---");
 # Resonating Redstone Crystal
 	recipes.removeShapeless(<extrautils2:ingredients> * 2, 
 	[<minecraft:redstone_ore>, <thermalfoundation:material:1027>]);
-	
-# Make Creative Mill Breakable
-<extrautils2:passivegenerator:6>.hardness = 2;
 
 # *======= Crusher =======*
 

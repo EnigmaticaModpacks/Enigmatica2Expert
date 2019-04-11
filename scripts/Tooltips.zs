@@ -23,7 +23,9 @@ print("--- loading Tooltips.zs ---");
 	var ic2wrench = "You can safely break IC2 machines with a Pickaxe.";
 	var tempRecipe = "This item has a temporary crafting recipe.";
 
-	ad(<environmentaltech:void_ore_miner_cont_6>, "Void Ore Miner Tier 6 specializes in generating rare ores from the void", "It does not generate common ores.");
+ad(<mekanism:gaugedropper>, "Can be used to clear Mekanism machines of their gases. Simply hold the Gauge Dropper and Shift Left Click the Gas from inside the Machine.");
+
+ad(<environmentaltech:void_ore_miner_cont_6>, "Void Ore Miner Tier 6 specializes in generating rare ores from the void", "It does not generate common ores.");
 
 var thaumcraftHintItems as IItemStack[] = [
 	<thaumcraft:mechanism_complex>,
@@ -158,7 +160,7 @@ for item in thaumcraftHintItems {
 	
 # Pumpjack
 	ad(<forge:bucketfilled>.withTag({FluidName: "oil", Amount: 1000}),"The Pumpjack needs a pipe to bedrock to function.");
-	//ad(<liquid:crudeoil>, "The Pumpjack needs a pipe to bedrock to function.");
+	ad(<liquid:oil>, "The Pumpjack needs a pipe to bedrock to function.");
 	
 # Energy Cell Frame
 	ad(<thermalexpansion:frame:128>,"Requires 400 Redstone Units.");
