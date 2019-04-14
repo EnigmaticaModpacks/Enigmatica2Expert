@@ -84,5 +84,10 @@ print("--- loading FluidCompatibility.zs ---");
 
 	mods.rustic.CrushingTub.removeRecipe(<liquid:honey>, <rustic:honeycomb>);
 	mods.rustic.CrushingTub.addRecipe(<liquid:for.honey> * 250, null, <rustic:honeycomb>);
-	
+
+# Make sure Botania molten metals can be casted
+	mods.tconstruct.Casting.addBasinRecipe(<botania:storage:0>, null, <liquid:manasteel>, 1296);
+	mods.tconstruct.Casting.addBasinRecipe(<botania:storage:1>, null, <liquid:terrasteel>, 1296);
+	mods.tconstruct.Casting.addBasinRecipe(<botania:storage:2>, null, <liquid:elementium>, 1296);
+
 print("--- FluidCompatibility.zs initialized ---");

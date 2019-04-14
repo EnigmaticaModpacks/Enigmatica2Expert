@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<mod docRevision="14" lang="en_US" modName="Draconic Evolution" modid="draconicevolution">
-    <content index="30" type="textArea">§6Robert W
+<mod docRevision="16" lang="en_US" modName="Draconic Evolution" modid="draconicevolution">
+    <content alignment="CENTER" colour="9900ff" index="0" shadow="true" size="0" type="heading">§kgkjodifshgoijsdfhbgoiujfadsbniopujgbansfpoikjgnsfpokjghnbfpsaojngojpasdfngpojasdfngopjasfdngpojnfsadpojgnafspojgnopuafsngpuofsangpounafsopugnfsaopujgnouf</content>
+    <content alignment="CENTER" colour="9900ff" index="5" shadow="true" size="0" type="heading">§kgkjodifshgoijsdfhbgoiujfadsbniopujgbansfpoikjgnsfpokjghnbfpsaojngojpasdfngpojasdfngopjasfdngpojnfsadpojgnafspojgnopuafsngpuofsangpounafsopugnfsaopujgnouf</content>
+    <content index="4" size="4" type="vSpacer"/>
+    <content alignment="CENTER" colour="ff0030" index="2" shadow="true" size="1" type="heading">Please install the new Project Intelligence mod if you wish to have access to the latest documentation for DE and any other mods that use PI </content>
+    <content alignment="CENTER" colour="ff0000" index="1" shadow="true" size="2" type="heading">Attention! This documentation is Deprecated and will be removed in the next update!!!!</content>
+    <content alignment="CENTER" colour="ff" hoverColour="ffff" index="3" link="https://minecraft.curseforge.com/projects/project-intelligence" shadow="true" size="0" targetLocation="web" type="link">§nLink to to Project Intelligence curse page.</content>
+    <content index="36" type="textArea">§6Robert W
 §r(Since 08/06/2015)§r
 
 §6pxoxd
@@ -59,16 +65,16 @@
 
 §6Mhoku_
 §r(Since 08/06/2017)§r</content>
-    <content alignment="CENTER" colour="ff00" hoverColour="0000FF" index="33" link="https://www.patreon.com/brandon3055" shadow="true" size="0" targetLocation="web" type="link">https://www.patreon.com/brandon3055</content>
-    <content index="32" type="textArea">If you would like to become a patreon you can do so by following the link bellow.</content>
-    <content index="31" size="8" type="vSpacer"/>
+    <content alignment="CENTER" colour="ff00" hoverColour="0000FF" index="39" link="https://www.patreon.com/brandon3055" shadow="true" size="0" targetLocation="web" type="link">https://www.patreon.com/brandon3055</content>
+    <content index="38" type="textArea">If you would like to become a patreon you can do so by following the link bellow.</content>
+    <content index="37" size="8" type="vSpacer"/>
     
-    <content index="27" type="textArea">§aThe following people are supporting me on patreon!
+    <content index="34" type="textArea">§aThe following people are supporting me on patreon!
 The support these people give really helps
 make what I do possible. 
 For this, I owe them all a debt of gratitude.</content>
-    <content index="28" size="8" type="vSpacer"/>
-    <content alignment="LEFT" index="24" type="splitContainer" vAlignment="TOP" width="20">
+    <content index="35" size="8" type="vSpacer"/>
+    <content alignment="LEFT" index="31" type="splitContainer" vAlignment="TOP" width="20">
         <content alignment="LEFT" index="0" splitSide="RIGHT" type="textArea">§6Covers1624§b
 Covers is the biggest DE contributor as far as DE 1.10+ is concerned.
 His work with CCL has been an enormous help is what makes a 
@@ -95,22 +101,22 @@ Of course, that's not all he did. GreatOrator was also responsible for most of
 the textures back then and a significant amount of the content still in DE to today
 came from his ideas.</content>
     </content>
-    <content index="21" size="8" type="vSpacer"/>
-    <content alignment="CENTER" colour="ffff" index="26" shadow="true" size="0" type="heading">§nPatreons:</content>
-    <content index="25" size="8" type="vSpacer"/>
-    <content alignment="CENTER" colour="ffff" index="18" shadow="true" size="1" type="heading">§nContributors</content>
+    <content index="30" size="8" type="vSpacer"/>
+    <content alignment="CENTER" colour="ffff" index="33" shadow="true" size="0" type="heading">§nPatreons:</content>
+    <content index="32" size="8" type="vSpacer"/>
+    <content alignment="CENTER" colour="ffff" index="28" shadow="true" size="1" type="heading">§nContributors</content>
     
-    <content index="7" size="4" type="vSpacer"/>
-    <content alignment="CENTER" colour="ff00" hoverColour="0000FF" index="8" link="https://www.youtube.com/watch?v=2RRddsks9TA" shadow="true" size="0" targetLocation="web" type="link">§nClick here to view part 2 on youtube.</content>
-    <content alignment="CENTER" colour="ff00" hoverColour="0000FF" index="6" link="https://www.youtube.com/watch?v=iBcRT4C6RkQ" shadow="true" size="0" targetLocation="web" type="link">§nClick here to view part 1 on youtube.</content>
-    <content alignment="CENTER" colour="ffff" index="5" shadow="true" size="0" type="heading">Spotlights by Direwolf20!</content>
-    <content index="9" size="8" type="vSpacer"/>
-    
-    
+    <content index="18" size="4" type="vSpacer"/>
+    <content alignment="CENTER" colour="ff00" hoverColour="0000FF" index="21" link="https://www.youtube.com/watch?v=2RRddsks9TA" shadow="true" size="0" targetLocation="web" type="link">§nClick here to view part 2 on youtube.</content>
+    <content alignment="CENTER" colour="ff00" hoverColour="0000FF" index="12" link="https://www.youtube.com/watch?v=iBcRT4C6RkQ" shadow="true" size="0" targetLocation="web" type="link">§nClick here to view part 1 on youtube.</content>
+    <content alignment="CENTER" colour="ffff" index="11" shadow="true" size="0" type="heading">Spotlights by Direwolf20!</content>
+    <content index="24" size="8" type="vSpacer"/>
     
     
-    <content index="12" size="24" type="vSpacer"/>
-    <content alignment="LEFT" index="11" type="splitContainer" vAlignment="BOTTOM" width="10">
+    
+    
+    <content index="27" size="24" type="vSpacer"/>
+    <content alignment="LEFT" index="26" type="splitContainer" vAlignment="BOTTOM" width="10">
         <content alignment="LEFT" index="0" splitSide="RIGHT" type="textArea">§1§a
 -Powerful tools and armor
 
@@ -128,19 +134,19 @@ came from his ideas.</content>
 
 -One of the most powerful bosses in modded minecraft</content>
     </content>
-    <content index="10" type="textArea">Draconic Evolution is a mod that focuses mainly on extreamely powerful end game tools, weapons an machines.
+    <content index="25" type="textArea">Draconic Evolution is a mod that focuses mainly on extreamely powerful end game tools, weapons an machines.
 
 While at the same time maintaining balance (Although this can be tricky) with equally expensive recipes and very difficult bosses which you need to go through in order to get these items.
 
 But this mod started more like an Open Blocks or Extra Utilities type mod so it also has a lot of seemingly random but useful blocs and items.
 
 Some of the key features of this mod are: </content>
-    <content index="4" size="8" type="vSpacer"/>
-    <content alignment="CENTER" index="3" shadow="true" size="0" type="heading">Now not quite as OP!!!</content>
-    <content alignment="CENTER" index="2" shadow="false" size="0" type="heading">ABC...LMN§cDraconic Evolution§rQR...WXYZ</content>
-    <content index="1" size="8" type="vSpacer"/>
-    <content alignment="CENTER" index="0" shadow="true" size="1" type="heading">§nDraconic Evolution</content>
-    <entry branchId="draconicevolution:draconium" category="wiki.cat.item" icon="name:draconicevolution:draconium_ingot,size:1,meta:0,nbt:{}" iconType="stack" name="Draconium" sortingWeight="10">
+    <content index="10" size="8" type="vSpacer"/>
+    <content alignment="CENTER" index="9" shadow="true" size="0" type="heading">Now not quite as OP!!!</content>
+    <content alignment="CENTER" index="8" shadow="false" size="0" type="heading">ABC...LMN§cDraconic Evolution§rQR...WXYZ</content>
+    <content index="7" size="8" type="vSpacer"/>
+    <content alignment="CENTER" index="6" shadow="true" size="1" type="heading">§nDraconic Evolution</content>
+    <entry branchId="draconicevolution:draconium" category="wiki.cat.item" icon="draconicevolution:draconium_ingot" iconType="stack" name="Draconium" sortingWeight="10">
         <content index="6" type="recipe">name:draconicevolution:nugget,size:1,meta:0,nbt:{}</content>
         <content index="5" type="recipe">name:draconicevolution:draconium_ingot,size:1,meta:0,nbt:{}</content>
         <content index="4" size="8" type="vSpacer"/>
