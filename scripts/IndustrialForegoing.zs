@@ -105,8 +105,8 @@ function fluidDict(ins as string[]) {
 	[<mekanism:plasticblock:8>, <mekanism:basicblock:6>.withTag({tier: 3})|<mekanism:basicblock:6>.withTag({tier: 3, mekData: {itemCount: 0}}), <mekanism:plasticblock:8>]]);
 
 # Black Hole Controller
-	recipes.remove(<industrialforegoing:black_hole_controller>);
-	recipes.addShapedMirrored("Black Hole Controller", <industrialforegoing:black_hole_controller>, 
+	recipes.remove(<industrialforegoing:black_hole_controller_reworked>);
+	recipes.addShapedMirrored("Black Hole Controller", <industrialforegoing:black_hole_controller_reworked>, 
 	[[<ore:itemRubber>, <actuallyadditions:block_crystal_empowered:3>, <ore:itemRubber>],
 	[<advancedrocketry:ic:3>, <storagedrawers:controller>, <advancedrocketry:ic:3>], 
 	[<mekanism:plasticblock:8>, <mekanism:plasticblock:8>, <mekanism:plasticblock:8>]]);
