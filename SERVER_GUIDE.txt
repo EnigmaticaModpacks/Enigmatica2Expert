@@ -1,0 +1,18 @@
+## Installing
+
+- Download the zipfile.
+- Extract it to an empty folder.
+- If you want to change RAM usage, Java arguments etc, see the "settings" file.
+- Double click "ServerStart". The window that appears will guide you through the rest.
+
+## Updating
+
+- Make a backup of your server folder.
+- Remove the config, mods, schematics and scripts folders. If you've made custom configurations and/or mod changes, make sure these are reapplied after the last step.
+- Extract the zip into your server folder and overwrite.
+
+Note: This will override your settings changes, so make sure to change them back afterwards, if needed. If you don't want to override the settings file, you can change the forge version in it manually.
+
+
+Feel free to contact me if you need any help, preferably on Discord.
+Credit to the AllTheMods Team, for their ServerStart script.

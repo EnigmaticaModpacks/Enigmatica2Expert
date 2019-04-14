@@ -1,0 +1,153 @@
+Enigmatica2Expert 1.60 to Enigmatica2Expert 1.61
+
+Added:
+	- Mekanism
+	- Mekanism Generators
+
+Updated:
+	Astral Sorcery (went from AstralSorcery-1.12.2-1.10.12.jar to AstralSorcery-1.12.2-1.10.14.jar):
+		AstralSorcery-1.12.2-1.10.14.jar:
+			Fixes:
+
+			- Added missing AT entry
+
+			- Adjusted handling for sextant target requests
+
+			- Fixed perk cleanup being done after player already got cleared on clientside
+		AstralSorcery-1.12.2-1.10.13.jar:
+			IMPORTANT NOTICE: This version includes a new command: "/as migrate-data" - This converts some old, imperformant data format to a new format. For larger worlds, please make sure you BACKUP your world before doing that! It might take a long time if your world is larger keep that in mind!
+
+			Additions:
+
+			- Yet again MOAR patreon effects! :P
+
+			- Command: "/as migrate-data" - Check the notice.
+
+			- Logging for perk-related behavior
+
+			Changes:
+
+			- Perks around the "Consistent Luck" and "Spectral Wings" perk are at least a bit useful now as their prior negative effects could be avoided with perk seals anyway
+
+			- A better multiblock highlighting for sextants! Actually points out errors and makes for a better building-guide!
+
+			Fixes:
+
+			- Tome no longer being given out infinitely
+
+			- Item comparisons messing up crafting checks
+
+			- Chalice interactions not working on the highest-Z-level-chunk
+
+			- Misleading JEI error message from AS removed
+
+			- Prevent structure spawning on non-opaque ground
+
+			- Lightwell's itemhandler not being visible to pipes trying to interact with it
+
+			- Fix crash with step assist key perk
+
+			- Fix stardust was not accepted as repair material for mantles
+
+			- Fix inventory misbehavior with ritual pedestal
+
+	Biomes O' Plenty (went from BiomesOPlenty-1.12.2-7.0.1.2426-universal.jar to BiomesOPlenty-1.12.2-7.0.1.2427-universal.jar)
+
+	Botania (went from Botania r1.10-360.jar to Botania r1.10-361.jar):
+		Botania r1.10-361.jar:
+			See [http://botaniamod.net/changelog.php#r1.10-361](https://minecraft.curseforge.com/linkout?remoteUrl=http%253a%252f%252fbotaniamod.net%252fchangelog.php%2523r1.10-361)
+
+	Compact Machines (went from compactmachines3-1.12.2-3.0.15-b249.jar to compactmachines3-1.12.2-3.0.16-b263.jar):
+		compactmachines3-1.12.2-3.0.16-b263.jar:
+			- Auto update machine preview every few ticks (configurable on the server)
+			- Prevent Shulkers from teleporting to the outside of machines
+			- Prevent Tinkers Construct worldgen in the CM dimension
+			- Compact Skies world can now be configured for up to 256 players
+			- Fix preview crash on machines with large nbt data
+			- Fix infinite loop crash when placing and connecting two machines together
+			- Fix rendering of some entities and tile entities (e.g. beds, parrots) in machines but the first
+			- Fix render of miniaturization crafting being off center and wrongly sized
+			- Added config gui
+			- Updated translation files
+
+			Big thanks to the community for helping out with reports, fixes and suggestions!
+
+	Cyclic (went from Cyclic-1.12.2-1.19.0.jar to Cyclic-1.12.2-1.19.2.jar):
+		Cyclic-1.12.2-1.19.2.jar:
+			 * Handle client errors when redstone Clock is updating while block is broken.
+			 * Fix Fluid Storage Tank losing its fluid-stack data when mined/placed.
+			 * GUI feature: You can now right-click on some buttons to reduce values in User, Collector, Forester, Miner, Harvester.
+		Cyclic-1.12.2-1.19.1.jar:
+			Fixed removeRecipe not working in zenscript crafttweaker support.
+
+	EnderCore (went from EnderCore - 1.12.2-0.5.53 to EnderCore - 1.12.2-0.5.56):
+		EnderCore - 1.12.2-0.5.56:
+			EnderCore 1.12.2-0.5.56
+		EnderCore - 1.12.2-0.5.55:
+			EnderCore 1.12.2-0.5.55
+		EnderCore - 1.12.2-0.5.54:
+			EnderCore 1.12.2-0.5.54
+
+	Extended Crafting (went from ExtendedCrafting-1.12.2-1.5.3.jar to ExtendedCrafting-1.12.2-1.5.4.jar):
+		ExtendedCrafting-1.12.2-1.5.4.jar:
+			Release 1.5.4 for MC 1.12.2
+
+			Changes:
+
+			 * Fixed the Automation Interface not detecting tables when no recipe is saved
+
+	Gas Conduits (went from GasConduits-1.12.2-1.1.0.jar to GasConduits-1.12.2-1.2.1.jar):
+		GasConduits-1.12.2-1.2.1.jar:
+			Fixed integration with GasHandlers that have multiple gas tanks. Ex: Electrolytic Separator pulling both types out of one side
+
+			This issue existed for the entire duration of this mod's life time, except I was unable to reproduce it after the one time I ran into it so I had thought it was just a fluke.
+		GasConduits-1.12.2-1.2.0.jar:
+			Cleanup a bunch of code and also makes it work more cleanly against Mekanism 9.7 as well as fixed a few bugs with it connecting to sides it shouldn't be.
+			Mekanism 9.7 made it so only one capability has to be implemented for gas and for example gas conduits can now connect properly to the chemical oxidizer.
+
+	Industrial Craft (went from industrialcraft-2-2.8.116-ex112.jar to industrialcraft-2-2.8.120-ex112.jar):
+		industrialcraft-2-2.8.120-ex112.jar:
+			* Add wrench tooltip with instruction. Make the wrench non-enchantable. (estebes)
+		industrialcraft-2-2.8.119-ex112.jar:
+			* Allow the new wrench to be used in recipes that use the old wrench. (estebes)
+			* Some texture and models. Improved wrenching overlay. New wrenching implementation now affects most of the ic2 teblocks. (estebes)
+		industrialcraft-2-2.8.118-ex112.jar:
+			* Allow disabling items from having jetpacks attached in the config (Chocohead)
+			* Close enough (Chocohead)
+		industrialcraft-2-2.8.117-ex112.jar:
+			* Remove unnecessary casts They're implict already from float/double addition/multiplication (Chocohead)
+			* Fix the classic Empty Cell recipe producing 15 too few (Chocohead)
+			* Add support for custom mining drills (Chocohead)
+			* Fix some items showing in classic that don't need to (Chocohead)
+			* Fix filling classic empty cells not consuming them in the process (Chocohead)
+			* Hide the lappack when using experimental (Chocohead)
+			* Add support for custom hazmat armour (Chocohead)
+			* Fix iron scaffolding appearing to be wooden Fixes #2504 (Chocohead)
+
+	Phosphor (went from Phosphor 0.2.0 to Phosphor 0.2.2):
+		Phosphor 0.2.2:
+			- Resolves a severe crash in dimensions without sky lighting
+		Phosphor 0.2.1:
+			- Slightly improved chunk meshing performance by skipping thread checks where possible
+
+			- Fixed MC-116690 (send chunk data to clients when the lighting inside is not trivial)
+
+			- Cleaned up source code packages to separate client/server code better
+
+			- Improved mod information screen
+
+			- Added version requirements for NotEnoughIDs and SpongeForge to prevent users from using incompatible or broken versions
+
+	Psi (went from Psi-r1.1-72.jar to Psi-r1.1-73.jar):
+		Psi-r1.1-73.jar:
+			See [http://psi.vazkii.us/changelog.php#r1.1-73](http://psi.vazkii.us/changelog.php#r1.1-73)
+
+	Random Things (went from RandomThings-MC1.12.2-4.2.7.jar to RandomThings-MC1.12.2-4.2.7.1.jar):
+		RandomThings-MC1.12.2-4.2.7.1.jar:
+			 * Fixed: RT breaking GTCE's JEI Integration
+
+Removed:
+	- Mekanica
+	- Mekanica: Generators
+
+* Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.12.2)
