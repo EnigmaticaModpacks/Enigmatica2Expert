@@ -1,78 +1,40 @@
-Enigmatica2Expert 1.60 to Enigmatica2Expert 1.61
-
-Added:
-	- Mekanism
-	- Mekanism Generators
+Enigmatica2Expert 1.61 to Enigmatica2Expert 1.62
 
 Updated:
-	Astral Sorcery (went from AstralSorcery-1.12.2-1.10.12.jar to AstralSorcery-1.12.2-1.10.14.jar):
-		AstralSorcery-1.12.2-1.10.14.jar:
-			https://minecraft.curseforge.com/projects/astral-sorcery/files/2698022
-		AstralSorcery-1.12.2-1.10.13.jar:
-			https://minecraft.curseforge.com/projects/astral-sorcery/files/2697763
+	Astral Sorcery (went from AstralSorcery-1.12.2-1.10.14.jar to AstralSorcery-1.12.2-1.10.15.jar):
+		AstralSorcery-1.12.2-1.10.15.jar:
+			https://minecraft.curseforge.com/projects/astral-sorcery/files/2699238
 
-	Biomes O' Plenty (went from BiomesOPlenty-1.12.2-7.0.1.2426-universal.jar to BiomesOPlenty-1.12.2-7.0.1.2427-universal.jar):
-		View changelog at:
-			https://minecraft.curseforge.com/projects/biomes-o-plenty/files/2698810
+	Compact Machines (went from compactmachines3-1.12.2-3.0.16-b263.jar to compactmachines3-1.12.2-3.0.17-b267.jar):
+		compactmachines3-1.12.2-3.0.17-b267.jar:
+			https://minecraft.curseforge.com/projects/compact-machines/files/2699496
 
-	Botania (went from Botania r1.10-360.jar to Botania r1.10-361.jar):
-		Botania r1.10-361.jar:
-			https://minecraft.curseforge.com/projects/botania/files/2698039
+	EnderCore (went from EnderCore - 1.12.2-0.5.56 to EnderCore - 1.12.2-0.5.57):
+		EnderCore - 1.12.2-0.5.57:
+			https://minecraft.curseforge.com/projects/endercore/files/2699428
 
-	Compact Machines (went from compactmachines3-1.12.2-3.0.15-b249.jar to compactmachines3-1.12.2-3.0.16-b263.jar):
-		compactmachines3-1.12.2-3.0.16-b263.jar:
-			https://minecraft.curseforge.com/projects/compact-machines/files/2698771
+	Mekanism (went from Mekanism-1.12.2-9.7.0.369.jar to Mekanism-1.12.2-9.7.1.371.jar):
+		Mekanism-1.12.2-9.7.1.371.jar:
+			https://minecraft.curseforge.com/projects/mekanism/files/2699534
 
-	Cyclic (went from Cyclic-1.12.2-1.19.0.jar to Cyclic-1.12.2-1.19.2.jar):
-		Cyclic-1.12.2-1.19.2.jar:
-			https://minecraft.curseforge.com/projects/cyclic/files/2698577
-		Cyclic-1.12.2-1.19.1.jar:
-			https://minecraft.curseforge.com/projects/cyclic/files/2698500
+	Mekanism Generators (went from MekanismGenerators-1.12.2-9.7.0.369.jar to MekanismGenerators-1.12.2-9.7.1.371.jar):
+		MekanismGenerators-1.12.2-9.7.1.371.jar:
+			https://minecraft.curseforge.com/projects/mekanism-generators/files/2699536
 
-	EnderCore (went from EnderCore - 1.12.2-0.5.53 to EnderCore - 1.12.2-0.5.56):
-		EnderCore - 1.12.2-0.5.56:
-			https://minecraft.curseforge.com/projects/endercore/files/2697900
-		EnderCore - 1.12.2-0.5.55:
-			https://minecraft.curseforge.com/projects/endercore/files/2697890
-		EnderCore - 1.12.2-0.5.54:
-			https://minecraft.curseforge.com/projects/endercore/files/2697885
+	OpenBlocks (went from OpenBlocks-1.12.2-1.8.jar to OpenBlocks-1.12.2-1.8.1.jar):
+		OpenBlocks-1.12.2-1.8.1.jar:
+			https://minecraft.curseforge.com/projects/openblocks/files/2699056
 
-	Extended Crafting (went from ExtendedCrafting-1.12.2-1.5.3.jar to ExtendedCrafting-1.12.2-1.5.4.jar):
-		ExtendedCrafting-1.12.2-1.5.4.jar:
-			https://minecraft.curseforge.com/projects/extended-crafting/files/2698394
+	OpenModsLib (went from OpenModsLib-1.12.2-0.12.1.jar to OpenModsLib-1.12.2-0.12.2.jar):
+		OpenModsLib-1.12.2-0.12.2.jar:
+			https://minecraft.curseforge.com/projects/openmodslib/files/2699055
 
-	Gas Conduits (went from GasConduits-1.12.2-1.1.0.jar to GasConduits-1.12.2-1.2.1.jar):
-		GasConduits-1.12.2-1.2.1.jar:
-			https://minecraft.curseforge.com/projects/gas-conduits/files/2698379
-		GasConduits-1.12.2-1.2.0.jar:
-			https://minecraft.curseforge.com/projects/gas-conduits/files/2698336
+	Psi (went from Psi-r1.1-73.jar to Psi-r1.1-74.jar):
+		Psi-r1.1-74.jar:
+			https://minecraft.curseforge.com/projects/psi/files/2699715
 
-	Industrial Craft (went from industrialcraft-2-2.8.116-ex112.jar to industrialcraft-2-2.8.120-ex112.jar):
-		industrialcraft-2-2.8.120-ex112.jar:
-			https://minecraft.curseforge.com/projects/industrial-craft/files/2698415
-		industrialcraft-2-2.8.119-ex112.jar:
-			https://minecraft.curseforge.com/projects/industrial-craft/files/2698285
-		industrialcraft-2-2.8.118-ex112.jar:
-			https://minecraft.curseforge.com/projects/industrial-craft/files/2698098
-		industrialcraft-2-2.8.117-ex112.jar:
-			https://minecraft.curseforge.com/projects/industrial-craft/files/2697906
-
-	Phosphor (went from Phosphor 0.2.0 to Phosphor 0.2.2):
-		Phosphor 0.2.2:
-			https://minecraft.curseforge.com/projects/phosphor/files/2698698
-		Phosphor 0.2.1:
-			https://minecraft.curseforge.com/projects/phosphor/files/2698490
-
-	Psi (went from Psi-r1.1-72.jar to Psi-r1.1-73.jar):
-		Psi-r1.1-73.jar:
-			https://minecraft.curseforge.com/projects/psi/files/2698036
-
-	Random Things (went from RandomThings-MC1.12.2-4.2.7.jar to RandomThings-MC1.12.2-4.2.7.1.jar):
-		RandomThings-MC1.12.2-4.2.7.1.jar:
-			https://minecraft.curseforge.com/projects/random-things/files/2697894
-
-Removed:
-	- Mekanica
-	- Mekanica: Generators
+	p455w0rd's Library (went from p455w0rdslib-1.12.2-2.0.36.jar to p455w0rdslib-1.12.2-2.1.44.jar):
+		p455w0rdslib-1.12.2-2.1.44.jar:
+			https://minecraft.curseforge.com/projects/p455w0rds-library/files/2699293
 
 * Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.12.2)

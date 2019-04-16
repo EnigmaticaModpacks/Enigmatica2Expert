@@ -1,64 +1,30 @@
-Enigmatica2Expert 1.60 to Enigmatica2Expert 1.61
-
-Added:
-	- Mekanism
-	- Mekanism Generators
+Enigmatica2Expert 1.61 to Enigmatica2Expert 1.62
 
 Updated:
-	Astral Sorcery (went from AstralSorcery-1.12.2-1.10.12.jar to AstralSorcery-1.12.2-1.10.14.jar):
-		AstralSorcery-1.12.2-1.10.14.jar:
-			Fixes:
-
-			- Added missing AT entry
-
-			- Adjusted handling for sextant target requests
-
-			- Fixed perk cleanup being done after player already got cleared on clientside
-		AstralSorcery-1.12.2-1.10.13.jar:
-			IMPORTANT NOTICE: This version includes a new command: "/as migrate-data" - This converts some old, imperformant data format to a new format. For larger worlds, please make sure you BACKUP your world before doing that! It might take a long time if your world is larger keep that in mind!
+	Astral Sorcery (went from AstralSorcery-1.12.2-1.10.14.jar to AstralSorcery-1.12.2-1.10.15.jar):
+		AstralSorcery-1.12.2-1.10.15.jar:
+			Added more patreon stuff and things :D
 
 			Additions:
 
-			- Yet again MOAR patreon effects! :P
+			- Added logging to structure matching to allow for more extensive debugging
 
-			- Command: "/as migrate-data" - Check the notice.
-
-			- Logging for perk-related behavior
+			- "Requires starlight shining on it" and normal AS craftingtable recipes are now visible in JEI (Thanks @ Hubry)
 
 			Changes:
 
-			- Perks around the "Consistent Luck" and "Spectral Wings" perk are at least a bit useful now as their prior negative effects could be avoided with perk seals anyway
+			- Make retrogen trigger on surrounding chunks and based on their information rather than building a retrogen queue
 
-			- A better multiblock highlighting for sextants! Actually points out errors and makes for a better building-guide!
+			- Make status-effect rituals run if starlight is present rather than having at least enough starlight for 1 full cycle
 
-			Fixes:
+	Compact Machines (went from compactmachines3-1.12.2-3.0.16-b263.jar to compactmachines3-1.12.2-3.0.17-b267.jar):
+		compactmachines3-1.12.2-3.0.17-b267.jar:
+			3.0.17 brings a few hot-fixes for 3.0.16 and a few fixes for older bugs:
+			- Fix servers crashing on previews of machines (caused by 3.0.16)
+			- Fix servers crashing when placing field projectors with extended reach
+			- Catch more exceptions when dealing with the rendering of modded blocks with incomplete data (has always been a problem, but a 3.0.16 fix caused this specific bug to appear)
 
-			- Tome no longer being given out infinitely
-
-			- Item comparisons messing up crafting checks
-
-			- Chalice interactions not working on the highest-Z-level-chunk
-
-			- Misleading JEI error message from AS removed
-
-			- Prevent structure spawning on non-opaque ground
-
-			- Lightwell's itemhandler not being visible to pipes trying to interact with it
-
-			- Fix crash with step assist key perk
-
-			- Fix stardust was not accepted as repair material for mantles
-
-			- Fix inventory misbehavior with ritual pedestal
-
-	Biomes O' Plenty (went from BiomesOPlenty-1.12.2-7.0.1.2426-universal.jar to BiomesOPlenty-1.12.2-7.0.1.2427-universal.jar)
-
-	Botania (went from Botania r1.10-360.jar to Botania r1.10-361.jar):
-		Botania r1.10-361.jar:
-			See [http://botaniamod.net/changelog.php#r1.10-361](https://minecraft.curseforge.com/linkout?remoteUrl=http%253a%252f%252fbotaniamod.net%252fchangelog.php%2523r1.10-361)
-
-	Compact Machines (went from compactmachines3-1.12.2-3.0.15-b249.jar to compactmachines3-1.12.2-3.0.16-b263.jar):
-		compactmachines3-1.12.2-3.0.16-b263.jar:
+			The original 3.0.16 changelog:
 			- Auto update machine preview every few ticks (configurable on the server)
 			- Prevent Shulkers from teleporting to the outside of machines
 			- Prevent Tinkers Construct worldgen in the CM dimension
@@ -72,82 +38,37 @@ Updated:
 
 			Big thanks to the community for helping out with reports, fixes and suggestions!
 
-	Cyclic (went from Cyclic-1.12.2-1.19.0.jar to Cyclic-1.12.2-1.19.2.jar):
-		Cyclic-1.12.2-1.19.2.jar:
-			 * Handle client errors when redstone Clock is updating while block is broken.
-			 * Fix Fluid Storage Tank losing its fluid-stack data when mined/placed.
-			 * GUI feature: You can now right-click on some buttons to reduce values in User, Collector, Forester, Miner, Harvester.
-		Cyclic-1.12.2-1.19.1.jar:
-			Fixed removeRecipe not working in zenscript crafttweaker support.
+	EnderCore (went from EnderCore - 1.12.2-0.5.56 to EnderCore - 1.12.2-0.5.57):
+		EnderCore - 1.12.2-0.5.57:
+			EnderCore 1.12.2-0.5.57
 
-	EnderCore (went from EnderCore - 1.12.2-0.5.53 to EnderCore - 1.12.2-0.5.56):
-		EnderCore - 1.12.2-0.5.56:
-			EnderCore 1.12.2-0.5.56
-		EnderCore - 1.12.2-0.5.55:
-			EnderCore 1.12.2-0.5.55
-		EnderCore - 1.12.2-0.5.54:
-			EnderCore 1.12.2-0.5.54
+	Mekanism (went from Mekanism-1.12.2-9.7.0.369.jar to Mekanism-1.12.2-9.7.1.371.jar):
+		Mekanism-1.12.2-9.7.1.371.jar:
+			[c195cd6](https://github.com/mekanism-mod/Mekanism/commit/c195cd6bbbdd48dc8aea21f3a50465a5c19247c7)- null pointer fix for[#5388](https://github.com/mekanism-mod/Mekanism/issues/5388)[4304090](https://github.com/mekanism-mod/Mekanism/commit/43040909faa6248083627d95e8af381ca46a12ea)- Fix incorrect default value from the port of config system[bc8c4f6](https://github.com/mekanism-mod/Mekanism/commit/bc8c4f6686b71c6a9ed9622c88c9a2af180f077e)- Implement[#5397](https://github.com/mekanism-mod/Mekanism/issues/5397)add a way to get CrT gas from string ([#5400](https://github.com/mekanism-mod/Mekanism/issues/5400))[f3fdf00](https://github.com/mekanism-mod/Mekanism/commit/f3fdf0006479d30cd8508b02b7a1458649ce93b8)- Factory recipe check ([#5399](https://github.com/mekanism-mod/Mekanism/issues/5399))[9b70069](https://github.com/mekanism-mod/Mekanism/commit/9b70069eaf18c5ff5d75dd9b64d2a069e18b2a24)- bump version
 
-	Extended Crafting (went from ExtendedCrafting-1.12.2-1.5.3.jar to ExtendedCrafting-1.12.2-1.5.4.jar):
-		ExtendedCrafting-1.12.2-1.5.4.jar:
-			Release 1.5.4 for MC 1.12.2
+	Mekanism Generators (went from MekanismGenerators-1.12.2-9.7.0.369.jar to MekanismGenerators-1.12.2-9.7.1.371.jar):
+		MekanismGenerators-1.12.2-9.7.1.371.jar:
+			[c195cd6](https://github.com/mekanism-mod/Mekanism/commit/c195cd6bbbdd48dc8aea21f3a50465a5c19247c7)- null pointer fix for[#5388](https://github.com/mekanism-mod/Mekanism/issues/5388)[4304090](https://github.com/mekanism-mod/Mekanism/commit/43040909faa6248083627d95e8af381ca46a12ea)- Fix incorrect default value from the port of config system[bc8c4f6](https://github.com/mekanism-mod/Mekanism/commit/bc8c4f6686b71c6a9ed9622c88c9a2af180f077e)- Implement[#5397](https://github.com/mekanism-mod/Mekanism/issues/5397)add a way to get CrT gas from string ([#5400](https://github.com/mekanism-mod/Mekanism/issues/5400))[f3fdf00](https://github.com/mekanism-mod/Mekanism/commit/f3fdf0006479d30cd8508b02b7a1458649ce93b8)- Factory recipe check ([#5399](https://github.com/mekanism-mod/Mekanism/issues/5399))[9b70069](https://github.com/mekanism-mod/Mekanism/commit/9b70069eaf18c5ff5d75dd9b64d2a069e18b2a24)- bump version
 
-			Changes:
+	OpenBlocks (went from OpenBlocks-1.12.2-1.8.jar to OpenBlocks-1.12.2-1.8.1.jar):
+		OpenBlocks-1.12.2-1.8.1.jar:
+			- Fix pencil glasses recipe
 
-			 * Fixed the Automation Interface not detecting tables when no recipe is saved
+			- Fix missing fluid textures
+			- Fix block breaker duplicating some types of blocks
 
-	Gas Conduits (went from GasConduits-1.12.2-1.1.0.jar to GasConduits-1.12.2-1.2.1.jar):
-		GasConduits-1.12.2-1.2.1.jar:
-			Fixed integration with GasHandlers that have multiple gas tanks. Ex: Electrolytic Separator pulling both types out of one side
+	OpenModsLib (went from OpenModsLib-1.12.2-0.12.1.jar to OpenModsLib-1.12.2-0.12.2.jar):
+		OpenModsLib-1.12.2-0.12.2.jar:
+			- Fix missing ItemTextureCapability registration
 
-			This issue existed for the entire duration of this mod's life time, except I was unable to reproduce it after the one time I ran into it so I had thought it was just a fluke.
-		GasConduits-1.12.2-1.2.0.jar:
-			Cleanup a bunch of code and also makes it work more cleanly against Mekanism 9.7 as well as fixed a few bugs with it connecting to sides it shouldn't be.
-			Mekanism 9.7 made it so only one capability has to be implemented for gas and for example gas conduits can now connect properly to the chemical oxidizer.
+			- Fix double break of skull blocks
 
-	Industrial Craft (went from industrialcraft-2-2.8.116-ex112.jar to industrialcraft-2-2.8.120-ex112.jar):
-		industrialcraft-2-2.8.120-ex112.jar:
-			* Add wrench tooltip with instruction. Make the wrench non-enchantable. (estebes)
-		industrialcraft-2-2.8.119-ex112.jar:
-			* Allow the new wrench to be used in recipes that use the old wrench. (estebes)
-			* Some texture and models. Improved wrenching overlay. New wrenching implementation now affects most of the ic2 teblocks. (estebes)
-		industrialcraft-2-2.8.118-ex112.jar:
-			* Allow disabling items from having jetpacks attached in the config (Chocohead)
-			* Close enough (Chocohead)
-		industrialcraft-2-2.8.117-ex112.jar:
-			* Remove unnecessary casts They're implict already from float/double addition/multiplication (Chocohead)
-			* Fix the classic Empty Cell recipe producing 15 too few (Chocohead)
-			* Add support for custom mining drills (Chocohead)
-			* Fix some items showing in classic that don't need to (Chocohead)
-			* Fix filling classic empty cells not consuming them in the process (Chocohead)
-			* Hide the lappack when using experimental (Chocohead)
-			* Add support for custom hazmat armour (Chocohead)
-			* Fix iron scaffolding appearing to be wooden Fixes #2504 (Chocohead)
+	Psi (went from Psi-r1.1-73.jar to Psi-r1.1-74.jar):
+		Psi-r1.1-74.jar:
+			See [http://psi.vazkii.us/changelog.php#r1.1-74](http://psi.vazkii.us/changelog.php#r1.1-74)[](http://psi.vazkii.us/changelog.php#r1.1-73)
 
-	Phosphor (went from Phosphor 0.2.0 to Phosphor 0.2.2):
-		Phosphor 0.2.2:
-			- Resolves a severe crash in dimensions without sky lighting
-		Phosphor 0.2.1:
-			- Slightly improved chunk meshing performance by skipping thread checks where possible
-
-			- Fixed MC-116690 (send chunk data to clients when the lighting inside is not trivial)
-
-			- Cleaned up source code packages to separate client/server code better
-
-			- Improved mod information screen
-
-			- Added version requirements for NotEnoughIDs and SpongeForge to prevent users from using incompatible or broken versions
-
-	Psi (went from Psi-r1.1-72.jar to Psi-r1.1-73.jar):
-		Psi-r1.1-73.jar:
-			See [http://psi.vazkii.us/changelog.php#r1.1-73](http://psi.vazkii.us/changelog.php#r1.1-73)
-
-	Random Things (went from RandomThings-MC1.12.2-4.2.7.jar to RandomThings-MC1.12.2-4.2.7.1.jar):
-		RandomThings-MC1.12.2-4.2.7.1.jar:
-			 * Fixed: RT breaking GTCE's JEI Integration
-
-Removed:
-	- Mekanica
-	- Mekanica: Generators
+	p455w0rd's Library (went from p455w0rdslib-1.12.2-2.0.36.jar to p455w0rdslib-1.12.2-2.1.44.jar):
+		p455w0rdslib-1.12.2-2.1.44.jar:
+			Reverted all recent changes except for TEISR rendering
 
 * Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.12.2)

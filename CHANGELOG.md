@@ -1,3 +1,7 @@
+# Enigmatica 2: Expert 1.62 Changelog
+
+- Fixed a crash with Mekanism. That may be it. Why isn't this a hotfix version?
+
 # Enigmatica 2: Expert 1.61 Changelog
 
 **Implemented enhancements:**
