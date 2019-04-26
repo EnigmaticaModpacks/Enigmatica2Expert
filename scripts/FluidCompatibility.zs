@@ -40,6 +40,7 @@ print("--- loading FluidCompatibility.zs ---");
 	Crucible.addRecipe(<liquid:terrasteel> * 144, <botania:manaresource:4>, 5000);
 	Crucible.addRecipe(<liquid:terrasteel> * 1296, <botania:storage:1>, 40000);
 	Crucible.addRecipe(<liquid:purpleslime> * 250, <tconstruct:edible:2>, 2500);
+	Crucible.addRecipe(<liquid:blood> * 40, <minecraft:rotten_flesh>, 2500);
 	
 	melter.addRecipe(<ore:nuggetAlumite>, <liquid:alumite> * 16);
 	melter.addRecipe(<ore:ingotAlumite>, <liquid:alumite> * 144);
@@ -74,6 +75,7 @@ print("--- loading FluidCompatibility.zs ---");
 	melter.addRecipe(<botania:storage:0>, <liquid:manasteel> * 1296);
 	melter.addRecipe(<botania:storage:1>, <liquid:terrasteel> * 1296);
 	melter.addRecipe(<ore:slimeballPurple>, <liquid:purpleslime> * 250);
+	melter.addRecipe(<minecraft:rotten_flesh>, <liquid:blood> * 40);
 	
 #Make Rustic Honeycomb produce forestry honey
 	mods.thermalexpansion.Centrifuge.removeRecipe(<rustic:honeycomb>);
