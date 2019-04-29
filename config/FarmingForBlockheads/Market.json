@@ -55,7 +55,8 @@
     "harvestcraft:lentilseeditem": "1*minecraft:emerald",
     "harvestcraft:milletseeditem": "1*minecraft:emerald",
     "harvestcraft:mulberryseeditem": "1*minecraft:emerald",
-    "harvestcraft:taroseeditem": "1*minecraft:emerald"
+    "harvestcraft:taroseeditem": "1*minecraft:emerald",
+	"minecraft:mooshroom_spawn_egg": "10*minecraft:emerald"
   },
   "defaults amount": {
     "Vanilla Seeds": 1,

@@ -1,23 +1,23 @@
-# Enigmatica 2: Expert 1.62 Changelog
+# Enigmatica 2: Expert Changelog
 
-- Fixed a crash with Mekanism. That may be it. Why isn't this a hotfix version?
-
-# Enigmatica 2: Expert 1.61 Changelog
-
-**Implemented enhancements:**
-
-- Swap Mekanica with Mekanism [\#1093](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1093) [[Marker: Mod](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Mod)] [[Priority: Medium](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Medium)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
-- Infinity Drill has too low mining level [\#1079](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1079) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Priority: Low](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Low)] [[Status: Fixed in Dev](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Fixed%20in%20Dev)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
-- Feature request Mekanism Chemical Infuser [\#1073](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1073) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Suggestion](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Suggestion)]
+## [Unreleased](https://github.com/NillerMedDild/Enigmatica2Expert/tree/HEAD)
 
 **Fixed bugs:**
 
+- Mekanism crash [\#1110](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1110) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
+
+## [1.62](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.62) (2019-04-14)
+**Fixed bugs:**
+
+- architecture Craft in a /dank/null/MK IV crash minecraft on select [\#1103](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1103) [[Status: Reported](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Reported)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - Keybinding For Fullscreen - Disabled Fullscreen Borderless by default, can be changed by the player [\#1089](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1089) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
-- Botania Ring of Magnetism Crash [\#1088](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1088) [[Status: Fixed in Dev](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Fixed%20in%20Dev)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
+- Extended crafting Automation Interface doesn't detect table below [\#1085](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1085) [[Status: Reported](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Reported)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
+- Automated User uncraftable [\#1084](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1084) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+- Industrial Foregoing BlackHole Controller Dupe Bug [\#1048](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1048) [[Priority: Low](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Low)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 
-**Merged pull requests:**
+**Closed issues:**
 
-- Upped Infinity Drill Mining Level [\#1081](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1081) ([MaxNeedsSnacks](https://github.com/MaxNeedsSnacks))
+- Move Black Hole Controller Recipe to new Black Hole Controller [\#1102](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1102) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Priority: Low](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Low)]
 
 
 
