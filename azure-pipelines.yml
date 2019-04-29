@@ -13,3 +13,15 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
+- task: Bash@3
+  inputs:
+    filePath: 'SetupInstanceSync.sh'
+
+- task: Bash@3
+  inputs:
+    filePath: 'ServerStartAzure.sh'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'stop'
