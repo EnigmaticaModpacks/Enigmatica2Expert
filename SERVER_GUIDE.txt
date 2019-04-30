@@ -1,18 +1,47 @@
 ## Installing
 
-- Download the zipfile.
-- Extract it to an empty folder.
-- If you want to change RAM usage, Java arguments etc, see the "settings" file.
-- Double click "ServerStart". The window that appears will guide you through the rest.
+1) Download the zipfile.
+2) Extract it to an empty folder.
+3) If you want to change RAM usage, Java arguments etc, see the "settings" file.
+4) Double click "ServerStart" or "ServerStartLinux", whichever is appropriate.
+5) Set EULA=true
+6) Pregenerate the world - See below for instructions.
+
+
 
 ## Updating
 
-- Make a backup of your server folder.
-- Remove the config, mods, schematics and scripts folders. If you've made custom configurations and/or mod changes, make sure these are reapplied after the last step.
-- Extract the zip into your server folder and overwrite.
+1) Backup your world, including config, mods, schematics and scripts folders.
+2) Delete the config, mods, schematics and scripts folders from the server.
+3) Download server files, note that the Forge version has only changed if specified at the top of the changelog.
+4) Extract into an empty folder.
+5) Move the config, mods, schematics and scripts from the extracted zip into the server folder.
+6) Reapply all changes you have made to the server. I recommend that you keep all changes in a seperate
+	folder, so you can just move them over after updating.
+	
+	
+	
+## Pregeneration
 
-Note: This will override your settings changes, so make sure to change them back afterwards, if needed. If you don't want to override the settings file, you can change the forge version in it manually.
+Run these commands:
 
+Pregenerates a circle of terrain, with radius of 300 chunks, centered on spawn
+	1) pregen gen startradius circle 0 0 200
+
+Pregenerates a circle of terrain, with radius of 100 chunks, centered on spawn in the Twilight Forest
+Only applicable for modpacks with the Twilight Forest
+	2) pregen gen startradius circle 0 0 7 50
+
+This process will take a while, so I suggest you speed it up:
+Increases speed drastically
+	3) pregen timepertick 250
+
+Allocates most of the servers resources to the pregenerator.
+	4) pregen utils setPriority Pregenerator
+
+
+While the server pregens, no one should play on it.
+It can take several hours to finish. When it has completed,
+restart the server.
 
 Feel free to contact me if you need any help, preferably on Discord.
-Credit to the AllTheMods Team, for their ServerStart script.
