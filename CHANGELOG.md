@@ -1,5 +1,12 @@
 # Enigmatica 2: Expert Changelog
 
+## [Unreleased](https://github.com/NillerMedDild/Enigmatica2Expert/tree/HEAD)
+
+**Fixed bugs:**
+
+- Weird hovering issue after update [\#1166](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1166) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+
+## [1.63a](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.63a) (2019-04-30)
 **Implemented enhancements:**
 
 - Subtle Server Advertising [\#1161](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1161) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Priority: High](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20High)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
@@ -9,6 +16,10 @@
 - Crashing when using Building Gadgets [\#1138](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1138) [[Priority: High](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20High)] [[Status: Help Wanted](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Help%20Wanted)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - Crafted AE2 Seeds are not accepted by Enrichment Chamber or Phytogenic Insolator [\#1114](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1114) [[Status: Fixed in Dev](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Fixed%20in%20Dev)] [[Status: Reported](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Reported)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - \[1.60\] Thaumcraft aspects not working in JEI [\#1092](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1092) [[Status: Available](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Available)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+
+**Closed issues:**
+
+- Run /bq\_admin default load [\#1150](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1150) [[Type: Maintenance](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Maintenance)]
 
 ## [1.63](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.63) (2019-04-29)
 **Implemented enhancements:**
@@ -25,6 +36,11 @@
 - Black Hole Storage [\#1130](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1130) [[Marker: Quest](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Quest)] [[Priority: Low](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Low)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 - Mekanism crash [\#1110](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1110) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - IC2 RTG exploit? [\#990](https://github.com/NillerMedDild/Enigmatica2Expert/issues/990) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Priority: Medium](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Medium)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+
+**Closed issues:**
+
+- Crash while trying to put lapis through a enrichment factory [\#1140](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1140) [[Status: Cannot Reproduce](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Cannot%20Reproduce)]
+- Extra utilities 2 [\#1128](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1128)
 
 **Merged pull requests:**
 
