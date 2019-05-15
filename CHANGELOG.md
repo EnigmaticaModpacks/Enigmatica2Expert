@@ -1,11 +1,33 @@
 # Enigmatica 2: Expert Changelog
 
+**Implemented enhancements:**
+
+- Increase Modular Machinery Energy Buffer Size [\#1184](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1184) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
+
 **Fixed bugs:**
 
 - Crash with NuclearCraft
-- Crash with Mekanism
+- Crash with Quark
 - Crash with XNet Gas Channels (YNot)
+- CC Adv Monitor & Chisels & Bits Chisel causes client crash [\#1179](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1179) [[Status: Cannot Reproduce](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Cannot%20Reproduce)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+- XNet \(filtered\) mekanism gas channel server crash [\#1170](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1170) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
+- NuclearCraft Chemical Reactor crash creating Sulfur Dioxide [\#1168](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1168) [[Status: Blocked](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Blocked)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
+- Quark Dropoff Button doesn't work on Iron Chests in 1.63 [\#1165](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1165) [[Status: Reported](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Reported)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
+- Any XU2 recipe that requires xp doesn't show the crafting table recipe on JEI [\#1157](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1157) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+- Cyclic Wireless Transmitter next to Redstone Tunnel in Compact Machine causes NullPointerException [\#1139](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1139) [[Status: Fixed in Dev](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Fixed%20in%20Dev)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
+- Thermal Expansion Cache not working properly when broken with pickaxe [\#1125](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1125) [[Status: Unresolved](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Unresolved)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+- Remove Thermal Foundation Compatibility for the RFTools Mob Spawner [\#1087](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1087) [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+- Mekanism Digital Miner can be manipulated to get specific TC crystal [\#1028](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1028) [[Priority: Medium](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Medium)] [[Status: Reported](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Reported)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
+- IE Assembler Issues [\#786](https://github.com/NillerMedDild/Enigmatica2Expert/issues/786) [[Status: Unresolved](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Unresolved)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
+
+## [1.64](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.64) (2019-05-03)
+**Fixed bugs:**
+
 - Weird hovering issue after update [\#1166](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1166) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+
+**Merged pull requests:**
+
+- Update tileEntityMode to new config format. [\#1169](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1169) ([cridenour](https://github.com/cridenour))
 
 ## [1.63a](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.63a) (2019-04-30)
 **Implemented enhancements:**
