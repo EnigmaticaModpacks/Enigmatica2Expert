@@ -1,9 +1,10 @@
 # Enigmatica 2: Expert Changelog
 
-## [Unreleased](https://github.com/NillerMedDild/Enigmatica2Expert/tree/HEAD)
-
 **Fixed bugs:**
 
+- Crash with NuclearCraft
+- Crash with Mekanism
+- Crash with XNet Gas Channels (YNot)
 - Weird hovering issue after update [\#1166](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1166) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 
 ## [1.63a](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.63a) (2019-04-30)
