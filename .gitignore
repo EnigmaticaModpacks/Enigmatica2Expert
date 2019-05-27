@@ -40,9 +40,7 @@ WailaErrorOutput.txt
 ItemDump.txt
 BotaniaVars.dat
 options.txt
-ServerStartLinux.sh
 README.md
-LICENSE_SERVER.md
 crafttweaker.log
 github_changelog_generator.gemspec
 ChangelogGenerator.bat
@@ -54,7 +52,6 @@ config/scavenge/IResourceProperty.txt
 dropt.log
 journeymapdefaults.firstrun
 *.zip
-server.properties
 astralsorcery/gatewayFilter/worldFilter.dat
 OpenComputersMod-1.7.3.146-lua53-native.64.dll
 OpenComputersMod-1.7.3.146-lua52-native.64.dll
