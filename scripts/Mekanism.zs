@@ -92,7 +92,7 @@ print("--- loading Mekanism.zs ---");
 	recipes.addShapedMirrored("Chemical Washer", 
 	<mekanism:machineblock2:7>, 
 	[[<ore:circuitUltimate>, <nuclearcraft:water_source>, <ore:circuitUltimate>],
-	[<mekanismgenerators:reactor:2>, <ic2:te:56>, <mekanismgenerators:reactor:2>], 
+	[<mekanismgenerators:reactor:2>.withTag(), <ic2:te:56>, <mekanismgenerators:reactor:2>.withTag()], 
 	[<ore:circuitUltimate>, ultimateGasTank, <ore:circuitUltimate>]]);
 
 # Chemical Crystallizer
@@ -100,7 +100,7 @@ print("--- loading Mekanism.zs ---");
 	recipes.addShapedMirrored("Chemical Crystallizer", 
 	<mekanism:machineblock2:8>, 
 	[[ultimateGasTank, <extrautils2:suncrystal>, ultimateGasTank],
-	[<mekanismgenerators:reactor:2>, <advancedrocketry:crystallizer>, <mekanismgenerators:reactor:2>], 
+	[<mekanismgenerators:reactor:2>.withTag(), <advancedrocketry:crystallizer>, <mekanismgenerators:reactor:2>.withTag()], 
 	[<ore:circuitUltimate>, <ic2:lapotron_crystal>.anyDamage(), <ore:circuitUltimate>]]);
 
 # Gas-burning generator
