@@ -68,6 +68,7 @@ print("--- loading Plates.zs ---");
 	<immersiveengineering:metal:32>,
 	<immersiveengineering:metal:33>,
 	<immersiveengineering:metal:34>,
+	<immersiveengineering:metal:35>,
 	<immersiveengineering:metal:36>,
 	<immersiveengineering:metal:37>,
 	<immersiveengineering:metal:38>,

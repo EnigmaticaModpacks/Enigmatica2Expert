@@ -27,10 +27,10 @@
 
 Run these commands:
 
-Pregenerates a circle of terrain, with radius of 300 chunks, centered on spawn
-	1) /pregen gen startradius circle 0 0 200 0
+Pregenerates a circle of terrain, with radius of 300 chunks, centered on 0 0
+	1) /pregen gen startradius circle 0 0 300 0
 
-Pregenerates a circle of terrain, with radius of 100 chunks, centered on spawn in the Twilight Forest
+Pregenerates a circle of terrain, with radius of 50 chunks, centered on 0 0 in the Twilight Forest
 Only applicable for modpacks with the Twilight Forest
 	2) /pregen gen startradius circle 0 0 50 7
 
