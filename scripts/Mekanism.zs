@@ -90,6 +90,22 @@ print("--- loading Mekanism.zs ---");
 	[<mekanism:basicblock:11>, <forge:bucketfilled>.withTag({FluidName: "sulfuric_acid", Amount: 1000})|<forge:bucketfilled>.withTag({FluidName: "sulfuricacid", Amount: 1000}), <mekanism:basicblock:11>], 
 	[<ore:circuitUltimate>, ultimateGasTank, <ore:circuitUltimate>]]);
 
+# Chemical Washer
+	recipes.remove(<mekanism:machineblock2:7>);
+	recipes.addShapedMirrored("Chemical Washer", 
+	<mekanism:machineblock2:7>, 
+	[[<ore:circuitUltimate>, <nuclearcraft:water_source>, <ore:circuitUltimate>],
+	[<mekanismgenerators:reactor:2>, <ic2:te:56>, <mekanismgenerators:reactor:2>], 
+	[<ore:circuitUltimate>, ultimateGasTank, <ore:circuitUltimate>]]);
+
+# Chemical Crystallizer
+	recipes.remove(<mekanism:machineblock2:8>);
+	recipes.addShapedMirrored("Chemical Crystallizer", 
+	<mekanism:machineblock2:8>, 
+	[[ultimateGasTank, <extrautils2:suncrystal>, ultimateGasTank],
+	[<mekanismgenerators:reactor:2>, <advancedrocketry:crystallizer>, <mekanismgenerators:reactor:2>], 
+	[<ore:circuitUltimate>, <ic2:lapotron_crystal>.anyDamage(), <ore:circuitUltimate>]]);
+
 # Gas-burning generator
 	recipes.remove(<mekanismgenerators:generator:3>);
 	recipes.addShapedMirrored("Gas-burning Generator", 
