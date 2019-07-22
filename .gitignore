@@ -91,3 +91,4 @@ ModpackUploader.ps1
 ModpackUploader.bat
 twitch-export-builder.exe
 settings.ps1
+TwitchExportBuilder.exe

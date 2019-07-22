@@ -1,0 +1,121 @@
+Enigmatica 2 Expert 1.65 to Enigmatica2Expert 1.66
+
+Updated 17 files:
+	Common Capabilities (went from CommonCapabilities-1.12.2-2.4.1.jar to CommonCapabilities-1.12.2-2.4.3.jar):
+		CommonCapabilities-1.12.2-2.4.3.jar:
+			https://www.curseforge.com/minecraft/mc-mods/common-capabilities/files/2733188
+		CommonCapabilities-1.12.2-2.4.2.jar:
+			https://www.curseforge.com/minecraft/mc-mods/common-capabilities/files/2732746
+
+	Cyclops Core (went from CyclopsCore-1.12.2-1.3.0.jar to CyclopsCore-1.12.2-1.4.0.jar):
+		CyclopsCore-1.12.2-1.4.0.jar:
+			https://www.curseforge.com/minecraft/mc-mods/cyclops-core/files/2732736
+
+	FPS Reducer (went from FpsReducer-mc1.12.2-1.12.2.jar to FpsReducer-mc1.12.2-1.12.4.jar):
+		View changelog at:
+			https://www.curseforge.com/minecraft/mc-mods/fps-reducer/files/2732475
+
+	Integrated Dynamics (went from IntegratedDynamics-1.12.2-1.0.14.jar to IntegratedDynamics-1.12.2-1.0.16.jar):
+		IntegratedDynamics-1.12.2-1.0.16.jar:
+			https://www.curseforge.com/minecraft/mc-mods/integrated-dynamics/files/2733193
+		IntegratedDynamics-1.12.2-1.0.15.jar:
+			https://www.curseforge.com/minecraft/mc-mods/integrated-dynamics/files/2732752
+
+	Integrated Tunnels (went from IntegratedTunnels-1.12.2-1.6.9.jar to IntegratedTunnels-1.12.2-1.6.10.jar):
+		IntegratedTunnels-1.12.2-1.6.10.jar:
+			https://www.curseforge.com/minecraft/mc-mods/integrated-tunnels/files/2732756
+
+	Iron Chests (went from ironchest-1.12.2-7.0.69.845.jar to ironchest-1.12.2-7.0.71.846.jar):
+		ironchest-1.12.2-7.0.71.846.jar:
+			https://www.curseforge.com/minecraft/mc-mods/iron-chests/files/2744589
+
+	JourneyMap (went from journeymap-1.12.2-5.5.5b7 to journeymap-1.12.2-5.5.5b9):
+		journeymap-1.12.2-5.5.5b9:
+			https://www.curseforge.com/minecraft/mc-mods/journeymap/files/2738211
+		journeymap-1.12.2-5.5.5b8:
+			https://www.curseforge.com/minecraft/mc-mods/journeymap/files/2736523
+
+	Just Enough Throwing In Fluids (JETIF) (went from jetif-1.12.2-1.4.2.jar to jetif-1.12.2-1.5.1.jar):
+		jetif-1.12.2-1.5.1.jar:
+			https://www.curseforge.com/minecraft/mc-mods/jetif/files/2733301
+		jetif-1.12.2-1.5.0.jar:
+			https://www.curseforge.com/minecraft/mc-mods/jetif/files/2733185
+
+	McJtyLib (went from McJtyLib - 1.12-3.5.3 to McJtyLib - 1.12-3.5.4):
+		McJtyLib - 1.12-3.5.4:
+			https://www.curseforge.com/minecraft/mc-mods/mcjtylib/files/2745846
+
+	Mekanism (went from Mekanism-1.12.2-9.7.8.379.jar to Mekanism-1.12.2-9.7.9.380.jar):
+		Mekanism-1.12.2-9.7.9.380.jar:
+			https://www.curseforge.com/minecraft/mc-mods/mekanism/files/2736277
+
+	Mekanism Generators (went from MekanismGenerators-1.12.2-9.7.8.379.jar to MekanismGenerators-1.12.2-9.7.9.380.jar):
+		MekanismGenerators-1.12.2-9.7.9.380.jar:
+			https://www.curseforge.com/minecraft/mc-mods/mekanism-generators/files/2736279
+
+	MysticalLib (went from mysticallib-1.12.2-1.2.1.jar to mysticallib-1.12.2-1.3.1.jar):
+		mysticallib-1.12.2-1.3.1.jar:
+			https://www.curseforge.com/minecraft/mc-mods/mysticallib/files/2735893
+		mysticallib-1.12.2-1.3.0.jar:
+			https://www.curseforge.com/minecraft/mc-mods/mysticallib/files/2733111
+
+	Phosphor (went from Phosphor 0.2.4 to Phosphor 0.2.5):
+		Phosphor 0.2.5:
+			https://www.curseforge.com/minecraft/mc-mods/phosphor/files/2745940
+
+	Plethora Peripherals (went from plethora-1.12.2-1.2.1.jar to plethora-1.12.2-1.2.2.jar):
+		plethora-1.12.2-1.2.2.jar:
+			https://www.curseforge.com/minecraft/mc-mods/plethora-peripherals/files/2733249
+
+	RFTools (went from RFTools - 1.12-7.71 to RFTools - 1.12-7.72):
+		RFTools - 1.12-7.72:
+			https://www.curseforge.com/minecraft/mc-mods/rftools/files/2745848
+
+	RandomPatches (went from RandomPatches 1.12.2-1.16.3.1 to RandomPatches 1.12.2-1.17.1.0):
+		RandomPatches 1.12.2-1.17.1.0:
+			https://www.curseforge.com/minecraft/mc-mods/randompatches/files/2733090
+		RandomPatches 1.12.2-1.17.0.0:
+			https://www.curseforge.com/minecraft/mc-mods/randompatches/files/2733070
+
+	XNet (went from XNet - 1.12-1.8.1 to XNet - 1.12-1.8.2):
+		XNet - 1.12-1.8.2:
+			https://www.curseforge.com/minecraft/mc-mods/xnet/files/2745852
+
+Downgraded 5 files:
+	AE2 Wireless Terminal Library (went from AE2WTLib-1.12.2-1.0.30.jar to AE2WTLib-1.12.2-1.0.6.jar):
+		AE2WTLib-1.12.2-1.0.30.jar:
+			https://www.curseforge.com/minecraft/mc-mods/ae2wtlib/files/2726967
+		AE2WTLib-1.12.2-1.0.29.jar:
+			https://www.curseforge.com/minecraft/mc-mods/ae2wtlib/files/2726925
+		AE2WTLib-1.12.2-1.0.28.jar:
+			https://www.curseforge.com/minecraft/mc-mods/ae2wtlib/files/2725986
+		AE2WTLib-1.12.2-1.0.27.jar:
+			https://www.curseforge.com/minecraft/mc-mods/ae2wtlib/files/2725862
+
+	Advanced Rocketry (went from AdvancedRocketry 1.12.2-1.6.0-149-UNSTABLE build -149 for 1.12.2 to AdvancedRocketry 1.12.2-1.5.0-139-UNSTABLE build -139 for 1.12.2):
+		AdvancedRocketry 1.12.2-1.6.0-149-UNSTABLE build -149 for 1.12.2:
+			https://www.curseforge.com/minecraft/mc-mods/advanced-rocketry/files/2731154
+
+	LibVulpes (went from LibVulpes 1.12.2-0.4.1-59-UNSTABLE build -59 for 1.12.2 to LibVulpes 1.12.2-0.4.0-56-UNSTABLE build -56 for 1.12.2):
+		LibVulpes 1.12.2-0.4.1-59-UNSTABLE build -59 for 1.12.2:
+			https://www.curseforge.com/minecraft/mc-mods/libvulpes/files/2731147
+		LibVulpes 1.12.2-0.4.0-57-UNSTABLE build -57 for 1.12.2:
+			https://www.curseforge.com/minecraft/mc-mods/libvulpes/files/2710591
+
+	Wireless Crafting Terminal (went from WirelessCraftingTerminal-1.12.2-3.12.93.jar to WirelessCraftingTerminal-1.12.2-3.11.88.jar):
+		WirelessCraftingTerminal-1.12.2-3.12.93.jar:
+			https://www.curseforge.com/minecraft/mc-mods/wireless-crafting-terminal/files/2725872
+
+	p455w0rd's Library (went from p455w0rdslib-1.12.2-2.2.151.jar to p455w0rdslib-1.12.2-2.1.44.jar):
+		p455w0rdslib-1.12.2-2.2.151.jar:
+			https://www.curseforge.com/minecraft/mc-mods/p455w0rds-library/files/2726877
+		p455w0rdslib-1.12.2-2.2.150.jar:
+			https://www.curseforge.com/minecraft/mc-mods/p455w0rds-library/files/2726675
+		p455w0rdslib-1.12.2-2.2.134.jar:
+			https://www.curseforge.com/minecraft/mc-mods/p455w0rds-library/files/2725953
+		p455w0rdslib-1.12.2-2.2.133.jar:
+			https://www.curseforge.com/minecraft/mc-mods/p455w0rds-library/files/2725879
+		p455w0rdslib-1.12.2-2.2.132.jar:
+			https://www.curseforge.com/minecraft/mc-mods/p455w0rds-library/files/2725858
+
+* Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.15)
