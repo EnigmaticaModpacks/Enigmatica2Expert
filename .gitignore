@@ -87,3 +87,7 @@ oldmanifest.json
 config/AppliedEnergistics2/items.csv
 OpenComputersMod-1.7.4.153-lua53-native.64.dll
 OpenComputersMod-1.7.4.153-lua52-native.64.dll
+ModpackUploader.ps1
+ModpackUploader.bat
+twitch-export-builder.exe
+settings.ps1
