@@ -1,3 +1,0 @@
-SET /P SINCE_TAG=Input Tag to generate from... 
-github_changelog_generator --since-tag %SINCE_TAG%
-pause
