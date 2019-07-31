@@ -1,59 +1,19 @@
-Enigmatica2Expert 1.65d.zip to Enigmatica2Expert 1.66c
+Enigmatica2Expert 1.66c to Enigmatica2Expert 1.67
 
-Updated 12 files:
-	Building Gadgets (went from BuildingGadgets v2.6.8 to BuildingGadgets-2.7.1.jar):
-		BuildingGadgets-2.7.1.jar:
-			https://www.curseforge.com/minecraft/mc-mods/building-gadgets/files/2746982
-		BuildingGadgets-2.7.0.jar:
-			https://www.curseforge.com/minecraft/mc-mods/building-gadgets/files/2744758
+Updated 3 files:
+	Cooking for Blockheads (went from CookingForBlockheads_1.12.2-6.4.70.jar to CookingForBlockheads_1.12.2-6.4.71.jar):
+		CookingForBlockheads_1.12.2-6.4.71.jar:
+			https://www.curseforge.com/minecraft/mc-mods/cooking-for-blockheads/files/2733516
 
-	Ender IO (went from Ender IO - 5.0.44 to Ender IO - 5.0.46):
-		Ender IO - 5.0.46:
-			https://www.curseforge.com/minecraft/mc-mods/ender-io/files/2732703
+	Iron Chests (went from ironchest-1.12.2-7.0.71.846.jar to ironchest-1.12.2-7.0.72.847.jar):
+		ironchest-1.12.2-7.0.72.847.jar:
+			https://www.curseforge.com/minecraft/mc-mods/iron-chests/files/2747935
 
-	EnderCore (went from EnderCore - 1.12.2-0.5.57 to EnderCore - 1.12.2-0.5.65):
-		EnderCore - 1.12.2-0.5.65:
-			https://www.curseforge.com/minecraft/mc-mods/endercore/files/2744056
-		EnderCore - 1.12.2-0.5.59:
-			https://www.curseforge.com/minecraft/mc-mods/endercore/files/2732682
+	Phosphor (went from Phosphor 0.2.5 to Phosphor 0.2.6):
+		Phosphor 0.2.6:
+			https://www.curseforge.com/minecraft/mc-mods/phosphor/files/2747710
 
-	Iron Chests (went from ironchest-1.12.2-7.0.69.845.jar to ironchest-1.12.2-7.0.71.846.jar):
-		ironchest-1.12.2-7.0.71.846.jar:
-			https://www.curseforge.com/minecraft/mc-mods/iron-chests/files/2744589
+Removed 1 files:
+	- /dank/null
 
-	JourneyMap (went from journeymap-1.12.2-5.5.5b7 to journeymap-1.12.2-5.5.5b9):
-		journeymap-1.12.2-5.5.5b9:
-			https://www.curseforge.com/minecraft/mc-mods/journeymap/files/2738211
-		journeymap-1.12.2-5.5.5b8:
-			https://www.curseforge.com/minecraft/mc-mods/journeymap/files/2736523
-
-	McJtyLib (went from McJtyLib - 1.12-3.5.3 to McJtyLib - 1.12-3.5.4):
-		McJtyLib - 1.12-3.5.4:
-			https://www.curseforge.com/minecraft/mc-mods/mcjtylib/files/2745846
-
-	Mekanism (went from Mekanism-1.12.2-9.7.8.379.jar to Mekanism-1.12.2-9.7.9.380.jar):
-		Mekanism-1.12.2-9.7.9.380.jar:
-			https://www.curseforge.com/minecraft/mc-mods/mekanism/files/2736277
-
-	Mekanism Generators (went from MekanismGenerators-1.12.2-9.7.8.379.jar to MekanismGenerators-1.12.2-9.7.9.380.jar):
-		MekanismGenerators-1.12.2-9.7.9.380.jar:
-			https://www.curseforge.com/minecraft/mc-mods/mekanism-generators/files/2736279
-
-	MysticalLib (went from mysticallib-1.12.2-1.3.0.jar to mysticallib-1.12.2-1.3.1.jar):
-		mysticallib-1.12.2-1.3.1.jar:
-			https://www.curseforge.com/minecraft/mc-mods/mysticallib/files/2735893
-
-	Phosphor (went from Phosphor 0.2.4 to Phosphor 0.2.5):
-		Phosphor 0.2.5:
-			https://www.curseforge.com/minecraft/mc-mods/phosphor/files/2746357
-
-	RFTools (went from RFTools - 1.12-7.71 to RFTools - 1.12-7.72):
-		RFTools - 1.12-7.72:
-			https://www.curseforge.com/minecraft/mc-mods/rftools/files/2745848
-
-	XNet (went from XNet - 1.12-1.8.1 to XNet - 1.12-1.8.2):
-		XNet - 1.12-1.8.2:
-			https://www.curseforge.com/minecraft/mc-mods/xnet/files/2745852
-
-Downgraded 1 files:
 * Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.15)

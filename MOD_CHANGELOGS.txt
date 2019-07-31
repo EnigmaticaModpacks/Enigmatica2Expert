@@ -1,202 +1,29 @@
-Enigmatica2Expert 1.65d.zip to Enigmatica2Expert 1.66c
+Enigmatica2Expert 1.66c to Enigmatica2Expert 1.67
 
-Updated 12 files:
-	Building Gadgets (went from BuildingGadgets v2.6.8 to BuildingGadgets-2.7.1.jar):
-		BuildingGadgets-2.7.1.jar:
-			See the full [CHANGELOG](https://github.com/Direwolf20-MC/BuildingGadgets/blob/master/CHANGELOG.md)
+Updated 3 files:
+	Cooking for Blockheads (went from CookingForBlockheads_1.12.2-6.4.70.jar to CookingForBlockheads_1.12.2-6.4.71.jar):
+		CookingForBlockheads_1.12.2-6.4.71.jar:
+			Fixed custom 2x2 recipes (e.g. by CraftTweaker) not working correctly in the Cooking Table / Recipe Book
 
-			[2.7.1 - 1.12.2] - 2019-07-23
+			Fixed Cow in a Jar recipe showing up in JEI even if it is disabled
 
-			Fixed
+			Fixed InventoryTweaks sorting buttons being aligned incorrectly in fridge and large counter GUIs
 
-			 * Fixed an issue causing the game to crash when using the material list key on anything but the Copy&Paste Gadget or air.
-		BuildingGadgets-2.7.0.jar:
-			Full Changelog [here](https://github.com/Direwolf20-MC/BuildingGadgets/blob/master/CHANGELOG.md)
+			Fixed fridge not rendering items when it's flipped (by Skydragonsz)
 
-			Note:
+			Added Korean Translation (by cs8minty)
 
-			A note for this update, due to the pure amount of changes made between this version and the previous version we're just going to put it out there that this one might be a bit buggy! 🐛 If you encounter any issues with how the mod used to work to how it works now please be sure to create a new issue on the [Github Repo](https://github.com/Direwolf20-MC/BuildingGadgets/issues)
-
-			Added
-
-			 *  Added a new and fancy Material List GUI for templates. Simply shift right click with a template in your hand to see the list.
-			 * With this you can also now copy the material list right into your clipboard!
-			 * Some people where finding it hard to open the Copy & Paste Gadgets GUI in tight spaces so to help with this we've added a button in the Radial Menu (G) to go straight to it :)
-			Changed
-
-			 *  The Building and Exchanging Gadgets mode System, to make it more open for future additions. Thanks @hnOsmium001 for his PR.
-			 * This also resulted in a lot of changes - please report any bugs you might encounter as a lot of the core functionality has been changed in this version.
-			 * Updated the Destruction Gadget's GUI as it needed some scaling and usability work. It's better but it's not pretty! Soz.
-			 * The destruction gadget now uses a different kind of magic for finding connected blocks. This should resolve any issues people have been having with less powerful computers and large selection ranges.
-			 * Added slightly better handling of random crashes to hopefully reduce them... Wish us luck.
-			Fixed
-
-			 * Fix typo when pasting a link
-			 * Fixed an issue where linked inventories (Yeah, you can link loads of them now. Just shift right click with a supported Gadget!) would stay highlighted in different dimensions.
-			 * Fixed an odd one where linked inventories would throw out items if the dimension got deleted.
-			 * Fixed an exploit where the Exchanging Gadget could be used as a way to mine large areas quickly.
-			 * Fixed an issue with the new modes system using the Building Gadgets range in Build To Me mode which wasn't even close to right.
-			For Devs
-
-			 * We're now firing Break & Place block events for each of our tools semi correctly. We've not been able to do large scale tests so if you have any more issues then let us know.
-
-	Ender IO (went from Ender IO - 5.0.44 to Ender IO - 5.0.46):
-		Ender IO - 5.0.46:
-			You need either the main file or a selection of the "split" jars, not both!
-
-			[Changelog (this build)](https://www.curseforge.com/linkout?remoteUrl=http%253a%252f%252fci.tterrag.com%252fjob%252fEnderIO-Modules%252fjob%252fEnderIO-Combined%252f46%252fchanges) / [Changelog (all builds)](https://www.curseforge.com/linkout?remoteUrl=http%253a%252f%252fci.tterrag.com%252fjob%252fEnderIO-Modules%252fjob%252fEnderIO-Combined%252fchanges)
-
-			 Added more configs for the Weather Obelisk
-			Fixed selection of travel anchor locations when rendered behind the player
-			Use a bit less memory for dark steel upgrade recipes
-			Fixed Dark Steel Anvil not firing Forge's anvil damage chance event
-			Fixed conduit connection check not being symmetrical
-			Fixed multiple issues with redstone conduits
-			Fixed Magnet not having enabled/disabled feedback messages
-			Added workaround for JEI focus in Enchanter recipe
-			Fixed totemic capacitors not being able to be enchanted with efficiency
-			Added tree harvesting limit configurations
-			Kill mount so rider can die
-			Changed Direct trait to be applied on attack instead on hit
-			Changed Lava Generator to accept cooling from tanks
-			Changed Solar Panels to optionally accept Liquid Sunshine as light
-			Fixed Dark Steel Anvil recipes not checking stack size
-			Added more configs for the Tank
-
-	EnderCore (went from EnderCore - 1.12.2-0.5.57 to EnderCore - 1.12.2-0.5.65):
-		EnderCore - 1.12.2-0.5.65:
-			EnderCore 1.12.2-0.5.65
-		EnderCore - 1.12.2-0.5.59:
-			EnderCore 1.12.2-0.5.59
-
-	Iron Chests (went from ironchest-1.12.2-7.0.69.845.jar to ironchest-1.12.2-7.0.71.846.jar):
-		ironchest-1.12.2-7.0.71.846.jar:
+	Iron Chests (went from ironchest-1.12.2-7.0.71.846.jar to ironchest-1.12.2-7.0.72.847.jar):
+		ironchest-1.12.2-7.0.72.847.jar:
 			Bugfixes:
 
 			 * The long time bug of inventories disappearing when the chests are in the same chunk as a tinker's smeltery should FINALLY be fixed.
 			 * Hopefully fix the TPS issue regarding hoppers.
 
-	JourneyMap (went from journeymap-1.12.2-5.5.5b7 to journeymap-1.12.2-5.5.5b9):
-		journeymap-1.12.2-5.5.5b9:
-			JourneyMap 1.12.2-5.5.5b9 for Minecraft 1.12.2
+	Phosphor (went from Phosphor 0.2.5 to Phosphor 0.2.6):
+		Phosphor 0.2.6:
+			This update addresses a small issue in Phosphor 0.2.5 where the mod could load on incompatible versions of SpongeForge.
 
-			Requirements:
-
-			 * Java 8
-			 * Minecraft 1.12.2
-			 * Forge 14.23.5.2768
-			General Information:
-
-			 * See [http://journeymap.info/](https://www.curseforge.com/linkout?remoteUrl=http%253a%252f%252fjourneymap.info%252f) for information about how to install and use this mod, rules about inclusion in modpacks, translation, etc.
-			 * See [http://journeymap.info/Support](https://www.curseforge.com/linkout?remoteUrl=http%253a%252f%252fjourneymap.info%252fSupport) for information on getting technical support.
-			 * Implements [JourneyMap API v1.12-1.4](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fbitbucket.org%252fTeamJM%252fjourneymap-api)
-			CHANGELOG (2019-07-09-11:58:50):
-
-			Beta 9
-
-			 * Fix: Changed how CCL integration is handled. Previous solution broke mapping if ConnectedTexturesMod is installed.
-			Beta 1-8
-
-			 * Feature: Waypoint options allows custom server teleport command. Can handle {x}{y}{x}{name}{dim} fields.
-			 * Feature: Setting log level to 'OFF' prevents Journeymap log info displaying in the [F3] Debug Screen.
-			 * Feature: Webmap - Visual indication if following player.
-			 * Feature: New Server Admin screen to modify Journeymap's server settings.
-			 * Feature: With server installed player radar shows players outside of local range; Configurable for all players or ops/admins.
-			 * Feature: Changed how configs are sent to the client to work with the new Panel. This means JM will be disabled when connecting to servers that have JM 5.5.4 or lower installed.
-			 * Feature: New mini-map Info Slots: Dimension, Light Level, Region, Game Time 12hr, Game Time 24hr
-			 * Feature: Region info in Fullscreen map following the mouse pointer(only when the mouse is near the player).
-			 * Feature: Enable or Disable all waypoints with a hotkey(Default:KEY_Z).
-			 * Feature: Two new grid options via Grid Editor: Region, Chunk and Region.
-			 * Server-Feature: Admins can now disable or enable teleporting for dimensions. Users cannot teleport to, from, or within if disabled.
-			 * Integration: Pixelmon-Reforged icon retrieval optimizations(Thanks Reforged team!). Pixelmon-Reforged v7.0.6 or higher required.
-			 * Integration: Proper handling of block rendering done by CodeChickenLib.
-			 * Change: Death waypoint 'X' will display at y:2 if player dies below y:2.
-			 * Change: Webmap - Port selection is now a text box.
-			 * Locale: Updated ru_RU.(Thanks Vlad Imangulov)
-			 * Locale: Added ru_RU Splash text.(Thanks Vlad Imangulov)
-			 * Locale: Updated fr_FR (Thanks Neerwan)
-			 * Locale: Updated zh_CN (Thanks Rick Zhong)
-			 * Bugfix: Crash when using the chat function on waypoints with names that start with special characters.
-			 * Bugfix: Saving the world with Unicode characters like Chinese using the save folder "~".
-			 * Bugfix: ModInfo respects minecraft snooper settings.
-			 * Bugfix: Webmap: Waypoints not showing up.
-			 * Bugfix: Removed some unneeded error logging.
-			 * Bugfix: Setting topo contour config to false causes NPE.
-			 * Bugfix: Missing small arrow icon when set to small icons if entity has no icon.
-			 * Bugfix: Surface mapping and Topography mapping respect the configs if disabled.
-			 * Bugfix: Webmap - Better handling of browser caching.
-			 * Bugfix: Waypoint Editor dimension list not scrollable.
-		journeymap-1.12.2-5.5.5b8:
-			JourneyMap 1.12.2-5.5.5b8 for Minecraft 1.12.2
-
-			Requirements:
-
-			 * Java 8
-			 * Minecraft 1.12.2
-			 * Forge 14.23.5.2768
-			General Information:
-
-			 * See [http://journeymap.info/](https://www.curseforge.com/linkout?remoteUrl=http%253a%252f%252fjourneymap.info%252f) for information about how to install and use this mod, rules about inclusion in modpacks, translation, etc.
-			 * See [http://journeymap.info/Support](https://www.curseforge.com/linkout?remoteUrl=http%253a%252f%252fjourneymap.info%252fSupport) for information on getting technical support.
-			 * Implements [JourneyMap API v1.12-1.4](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fbitbucket.org%252fTeamJM%252fjourneymap-api)
-			CHANGELOG (2019-07-06-13:30:45):
-
-			Beta 8
-
-			 * Change: Death waypoint 'X' will display at y:2 if player dies below y:2.
-			 * Change: Changed how players are sent to the client to prevent too large of packets. (Server and clients must be at least beta 8 for this feature to work)
-			 * Config: Added all ops have access to server admin ui. Default: 'True' -- Adjust via minecraft/configs/journeymap_server.cfg
-			 * Integration: Proper handling of block rendering done by CodeChickenLib.
-			 * Bugfix: Waypoint Editor dimension list not scrollable.
-			Beta 1-7
-
-			 * Feature: Waypoint options allows custom server teleport command. Can handle {x}{y}{x}{name}{dim} fields.
-			 * Feature: Setting log level to 'OFF' prevents Journeymap log info displaying in the [F3] Debug Screen.
-			 * Feature: Webmap - Visual indication if following player.
-			 * Feature: New Server Admin screen to modify Journeymap's server settings.
-			 * Feature: With server installed player radar shows players outside of local range; Configurable for all players or ops/admins.
-			 * Feature: Changed how configs are sent to the client to work with the new Panel. This means JM will be disabled when connecting to servers that have JM 5.5.4 or lower installed.
-			 * Feature: New mini-map Info Slots: Dimension, Light Level, Region, Game Time 12hr, Game Time 24hr
-			 * Feature: Region info in Fullscreen map following the mouse pointer(only when the mouse is near the player).
-			 * Feature: Enable or Disable all waypoints with a hotkey(Default:KEY_Z).
-			 * Feature: Two new grid options via Grid Editor: Region, Chunk and Region.
-			 * Server-Feature: Admins can now disable or enable teleporting for dimensions. Users cannot teleport to, from, or within if disabled.
-			 * Integration: Pixelmon-Reforged icon retrieval optimizations(Thanks Reforged team!). Pixelmon-Reforged v7.0.6 or higher required.
-			 * Change: Webmap - Port selection is now a text box.
-			 * Locale: Updated ru_RU.(Thanks Vlad Imangulov)
-			 * Locale: Added ru_RU Splash text.(Thanks Vlad Imangulov)
-			 * Locale: Updated fr_FR (Thanks Neerwan)
-			 * Locale: Updated zh_CN (Thanks Rick Zhong)
-			 * Bugfix: Crash when using the chat function on waypoints with names that start with special characters.
-			 * Bugfix: Saving the world with Unicode characters like Chinese using the save folder "~".
-			 * Bugfix: ModInfo respects minecraft snooper settings.
-			 * Bugfix: Webmap: Waypoints not showing up.
-			 * Bugfix: Removed some unneeded error logging.
-			 * Bugfix: Setting topo contour config to false causes NPE.
-			 * Bugfix: Missing small arrow icon when set to small icons if entity has no icon.
-			 * Bugfix: Surface mapping and Topography mapping respect the configs if disabled.
-			 * Bugfix: Webmap - Better handling of browser caching.
-
-	McJtyLib (went from McJtyLib - 1.12-3.5.3 to McJtyLib - 1.12-3.5.4):
-		McJtyLib - 1.12-3.5.4:
-			 - Fixed a problem when receiving packets from the client where it would sometimes process things on the wrong thread
-
-	Mekanism (went from Mekanism-1.12.2-9.7.8.379.jar to Mekanism-1.12.2-9.7.9.380.jar):
-		Mekanism-1.12.2-9.7.9.380.jar:
-			[9e181fa](https://github.com/mekanism-mod/Mekanism/commit/9e181fae36c06c8096f0f84c9201da4ac3ad9166)- es_es.lang update and fixes ([#5528](https://github.com/mekanism-mod/Mekanism/issues/5528))[a122434](https://github.com/mekanism-mod/Mekanism/commit/a122434d6a3a9686120df01705795f0d3b8c3652)- add more debugging info for bad itemhandler  assertion[f00fe44](https://github.com/mekanism-mod/Mekanism/commit/f00fe441242bbf87c020bf4dad22b5e33bbe6125)- Prevent OreDict queries from creating empty entries since some mods don't check that. Closes[#5524](https://github.com/mekanism-mod/Mekanism/issues/5524)[5d17d70](https://github.com/mekanism-mod/Mekanism/commit/5d17d706c0f54da7997110bd7c1c4e3b43897dee)- Reworked PipeUtils and GasUtils side access ([#5529](https://github.com/mekanism-mod/Mekanism/issues/5529))[d217a54](https://github.com/mekanism-mod/Mekanism/commit/d217a545ca9e2484ebeb283e771f629298ee7ddc)- Ignore amounts for inputItemMatches ([#5532](https://github.com/mekanism-mod/Mekanism/issues/5532))[de705af](https://github.com/mekanism-mod/Mekanism/commit/de705af5467edb09dfcf213c4fbf4c3f46082599)- Added checks for is block loaded to several methods ([#5533](https://github.com/mekanism-mod/Mekanism/issues/5533))[c3be258](https://github.com/mekanism-mod/Mekanism/commit/c3be258c4685ecdef1c34148ce99d6d23872c251)- Overwrite getBlockFaceShape for various blocks ([#5539](https://github.com/mekanism-mod/Mekanism/issues/5539))[3750d42](https://github.com/mekanism-mod/Mekanism/commit/3750d42c3e135c58faa4c6be756bdfc2c08c3671)- Fix null tile warnings from logistical sorters not connected to things on both sides when set to auto.[0557a8b](https://github.com/mekanism-mod/Mekanism/commit/0557a8bd232d6473cc401130234afb16ebfe9519)- Fix various height checks for the different solar devices[05166ee](https://github.com/mekanism-mod/Mekanism/commit/05166ee916542a66d1eb453d3e02d7cd25b63d8a)- Assemblicator Fixes for Transforming recipes ([#5542](https://github.com/mekanism-mod/Mekanism/issues/5542))[7a726f3](https://github.com/mekanism-mod/Mekanism/commit/7a726f3695cf70d11f6fe6eb4d0f3457a21eb5c6)- Merge PR IFluidHandlerWrapper implementation cleanup. Closes[#5551](https://github.com/mekanism-mod/Mekanism/issues/5551)[ac70101](https://github.com/mekanism-mod/Mekanism/commit/ac70101edf54532e21d3f973970d1868b99d8d17)- Merge PR Optimized Component Ejector. Closes[#5537](https://github.com/mekanism-mod/Mekanism/issues/5537)Additional: half tickDelay in ejector component since we're only ejecting on a timer now[f34ecd4](https://github.com/mekanism-mod/Mekanism/commit/f34ecd4836d33cea9012c662323a50e3a962e8ff)- bump version to 9.7.9
-
-	Mekanism Generators (went from MekanismGenerators-1.12.2-9.7.8.379.jar to MekanismGenerators-1.12.2-9.7.9.380.jar):
-		MekanismGenerators-1.12.2-9.7.9.380.jar:
-			[9e181fa](https://github.com/mekanism-mod/Mekanism/commit/9e181fae36c06c8096f0f84c9201da4ac3ad9166)- es_es.lang update and fixes ([#5528](https://github.com/mekanism-mod/Mekanism/issues/5528))[a122434](https://github.com/mekanism-mod/Mekanism/commit/a122434d6a3a9686120df01705795f0d3b8c3652)- add more debugging info for bad itemhandler  assertion[f00fe44](https://github.com/mekanism-mod/Mekanism/commit/f00fe441242bbf87c020bf4dad22b5e33bbe6125)- Prevent OreDict queries from creating empty entries since some mods don't check that. Closes[#5524](https://github.com/mekanism-mod/Mekanism/issues/5524)[5d17d70](https://github.com/mekanism-mod/Mekanism/commit/5d17d706c0f54da7997110bd7c1c4e3b43897dee)- Reworked PipeUtils and GasUtils side access ([#5529](https://github.com/mekanism-mod/Mekanism/issues/5529))[d217a54](https://github.com/mekanism-mod/Mekanism/commit/d217a545ca9e2484ebeb283e771f629298ee7ddc)- Ignore amounts for inputItemMatches ([#5532](https://github.com/mekanism-mod/Mekanism/issues/5532))[de705af](https://github.com/mekanism-mod/Mekanism/commit/de705af5467edb09dfcf213c4fbf4c3f46082599)- Added checks for is block loaded to several methods ([#5533](https://github.com/mekanism-mod/Mekanism/issues/5533))[c3be258](https://github.com/mekanism-mod/Mekanism/commit/c3be258c4685ecdef1c34148ce99d6d23872c251)- Overwrite getBlockFaceShape for various blocks ([#5539](https://github.com/mekanism-mod/Mekanism/issues/5539))[3750d42](https://github.com/mekanism-mod/Mekanism/commit/3750d42c3e135c58faa4c6be756bdfc2c08c3671)- Fix null tile warnings from logistical sorters not connected to things on both sides when set to auto.[0557a8b](https://github.com/mekanism-mod/Mekanism/commit/0557a8bd232d6473cc401130234afb16ebfe9519)- Fix various height checks for the different solar devices[05166ee](https://github.com/mekanism-mod/Mekanism/commit/05166ee916542a66d1eb453d3e02d7cd25b63d8a)- Assemblicator Fixes for Transforming recipes ([#5542](https://github.com/mekanism-mod/Mekanism/issues/5542))[7a726f3](https://github.com/mekanism-mod/Mekanism/commit/7a726f3695cf70d11f6fe6eb4d0f3457a21eb5c6)- Merge PR IFluidHandlerWrapper implementation cleanup. Closes[#5551](https://github.com/mekanism-mod/Mekanism/issues/5551)[ac70101](https://github.com/mekanism-mod/Mekanism/commit/ac70101edf54532e21d3f973970d1868b99d8d17)- Merge PR Optimized Component Ejector. Closes[#5537](https://github.com/mekanism-mod/Mekanism/issues/5537)Additional: half tickDelay in ejector component since we're only ejecting on a timer now[f34ecd4](https://github.com/mekanism-mod/Mekanism/commit/f34ecd4836d33cea9012c662323a50e3a962e8ff)- bump version to 9.7.9
-
-	MysticalLib (went from mysticallib-1.12.2-1.3.0.jar to mysticallib-1.12.2-1.3.1.jar):
-		mysticallib-1.12.2-1.3.1.jar:
-			1.3.1
-
-			- Fixed flipped operation (addition instead of subtraction) that was inflating the damage output of knives. They should now be 1 less than swords as intended.
-
-	Phosphor (went from Phosphor 0.2.4 to Phosphor 0.2.5):
-		Phosphor 0.2.5:
 			- Improved performance by using direct access into chunk sections when performing light updates
 
 			- Fixed compatibility issues with recent SpongeForge releases (RC3844 and newer)
@@ -207,16 +34,7 @@ Updated 12 files:
 
 			- Added a one-time message that is displayed after the mod is installed which links out to my Patreon. This can be disable in the configuration file by setting show_patreon_message to false.
 
-	RFTools (went from RFTools - 1.12-7.71 to RFTools - 1.12-7.72):
-		RFTools - 1.12-7.72:
-			 - Fixed modular storage so it works nicely with the new selection feature in McJtyLib
-			 - Fixed the scanner so that it doesn't cause server-side crashes for client-siude code
-			 - Joseph fixed a crash involving the matter transmitter
-			 - Fixed the Builder so that it no longer causes crashes when enabling support mode for large areas
+Removed 1 files:
+	- /dank/null
 
-	XNet (went from XNet - 1.12-1.8.1 to XNet - 1.12-1.8.2):
-		XNet - 1.12-1.8.2:
-			 - Joseph fixed a pathological case with fluid handling
-
-Downgraded 1 files:
 * Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.15)

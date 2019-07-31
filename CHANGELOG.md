@@ -1,5 +1,13 @@
 # Enigmatica 2: Expert Changelog
 
+## [1.67](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.67) (2019-07-31)
+**Implemented enhancements:**
+
+- Feature Request: Add Ender IO Ender tools harvest level [\#1297](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1297) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Type: Suggestion](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Suggestion)]
+
+**Fixed bugs:**
+- 1.66c had incorrect server files. This update fixes a host of config related issues, such as no ore gen.
+
 ## [1.66](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.66) (2019-07-22)
 **Implemented enhancements:**
 
