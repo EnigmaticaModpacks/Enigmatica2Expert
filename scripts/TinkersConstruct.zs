@@ -35,8 +35,8 @@ print("--- loading TinkersConstruct.zs ---");
 
 # Faster Alumite Alloying
 	mods.tconstruct.Alloy.removeRecipe(<liquid:alumite>);
-	mods.tconstruct.Alloy.addRecipe(<liquid:alumite> * 216, [<liquid:aluminum> * 720, <liquid:iron> * 144,  <liquid:obsidian> * 144]);
-	mods.tconstruct.Alloy.addRecipe(<liquid:alumite> * 432, [<liquid:aluminum> * 1440, <liquid:iron> * 288,  <liquid:obsidian> * 288]);
+	mods.tconstruct.Alloy.addRecipe(<liquid:alumite> * 432, [<liquid:aluminum> * 720, <liquid:iron> * 288,  <liquid:obsidian> * 288]);
+	mods.tconstruct.Alloy.addRecipe(<liquid:alumite> * 864, [<liquid:aluminum> * 1440, <liquid:iron> * 576,  <liquid:obsidian> * 576]);
 
 # Faster Osmiridium Alloying
 	mods.tconstruct.Alloy.removeRecipe(<liquid:osmiridium>);

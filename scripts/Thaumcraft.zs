@@ -5,20 +5,14 @@ import mods.thaumcraft.SmeltingBonus.addSmeltingBonus;
 #modloaded thaumcraft
 print("--- loading Thaumcraft.zs ---");
 
-// Crimson Rites
-//mods.thaumcraft.Infusion.registerRecipe(String name, String research, 
-//IItemStack output, int instability, 
-//CTAspectStack[] aspects, 
-//IIngredient centralItem, 
-//IIngredient[] recipe);
+# Crimson Rites
 mods.thaumcraft.Infusion.registerRecipe("crimson_rites", "INFUSION", 
 <thaumcraft:curio:6>, 15, 
 [<aspect:vitium> * 30, <aspect:mortuus> * 15, <aspect:praecantatio> * 30, <aspect:auram> * 10], 
 <thaumcraft:thaumonomicon>, 
 [<thaumcraft:ingot>, <thaumcraft:void_seed>, <thaumcraft:salis_mundus>, <thaumcraft:void_seed>, <thaumcraft:salis_mundus>, <thaumcraft:void_seed>, <thaumcraft:ingot>, <thaumcraft:void_seed>]);
 
-// Cultist Portal?
-// Cultist Portal?
+# Cultist Portal
 mods.thaumcraft.Infusion.registerRecipe("spawn_lesser_crimson_portal", "INFUSION", 
 <minecraft:spawn_egg>.withTag({EntityTag: {id: "thaumcraft:cultistportallesser"}}), 15, 
 [<aspect:vitium> * 90, <aspect:mortuus> * 45, <aspect:praecantatio> * 90, <aspect:auram> * 30], 
@@ -111,6 +105,5 @@ addSmeltingBonus(<ore:oreLead>, <thermalfoundation:material:195> % 33);
 	[<ore:stickTreatedWood>, null, null]]);
 
 //===============================================//
-
 
 	print("--- Thaumcraft.zs initialized ---");

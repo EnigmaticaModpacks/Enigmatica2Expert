@@ -63,7 +63,7 @@ The Tinkers' Sledge Hammer can crush blocks into others, like Ex Nihilo Hammers.
 Cyclic's Apple Sprouts are cheap and tasty, and can be used to make a Pam's Apple Tree.
 Sneak right-click activates your offhand item instead of your main hand item.
 Many mods offer cross-dimensional teleportation at surprisingly cheap prices.
-Don't hate on bees. Pam's and Rustic bees are easy and great early game.
+Don't hate on bees. Pam's and Rustic bees are simple and great early game.
 Mob Farms will lag less if spread out over a large area. The main load comes from mobs pathing away from each other.
 EnderIO's Ender Fluid Conduits can simultaneously transport multiple liquids through the same block.
 NuclearCraft machines automatically convert Mekanism gases into their fluid forms, and vice-versa.
@@ -72,5 +72,5 @@ Be sure to check out Dark Utilities' charms! They can speed up certain tasks, li
 Utilize the Quark chest buttons in your inventory! They help a lot with early game storage management.
 Applied Energistics Interfaces can be named in an anvil, but will lose their name if broken with anything but the Network Tool.
 Applied Energistics Interfaces are grouped together by their name in the Interface Terminal.
-The advanced Morphing Tool (Morphing Tool crafted with 4 gears) isa good way to get all wrenches early. It also helps to keep your inventory neat.
+The advanced Morphing Tool (Morphing Tool crafted with 4 gears) is a good way to get all wrenches early. It also helps to keep your inventory neat.
 The command /foodlist size shows you how many different foods you already ate.

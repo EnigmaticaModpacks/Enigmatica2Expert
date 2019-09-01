@@ -225,7 +225,7 @@
 			"distribution": "uniform",
 			"generator": {
 				"block": { 					 					
-					"name": "<minecraft:end_stone>", 					 					
+					"name": "minecraft:end_stone", 					 					
 					"metadata": 0 				 				
 				},
 				"material": "minecraft:stone",
