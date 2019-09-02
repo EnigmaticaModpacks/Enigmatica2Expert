@@ -1,40 +1,10 @@
-Enigmatica2Expert 1.66c to Enigmatica2Expert 1.67
+My auto-changelog software appears to be down at the moment, so here's a rustic list of mod changes:
 
-Updated 3 files:
-	Cooking for Blockheads (went from CookingForBlockheads_1.12.2-6.4.70.jar to CookingForBlockheads_1.12.2-6.4.71.jar):
-		CookingForBlockheads_1.12.2-6.4.71.jar:
-			Fixed custom 2x2 recipes (e.g. by CraftTweaker) not working correctly in the Cooking Table / Recipe Book
-
-			Fixed Cow in a Jar recipe showing up in JEI even if it is disabled
-
-			Fixed InventoryTweaks sorting buttons being aligned incorrectly in fridge and large counter GUIs
-
-			Fixed fridge not rendering items when it's flipped (by Skydragonsz)
-
-			Added Korean Translation (by cs8minty)
-
-	Iron Chests (went from ironchest-1.12.2-7.0.71.846.jar to ironchest-1.12.2-7.0.72.847.jar):
-		ironchest-1.12.2-7.0.72.847.jar:
-			Bugfixes:
-
-			 * The long time bug of inventories disappearing when the chests are in the same chunk as a tinker's smeltery should FINALLY be fixed.
-			 * Hopefully fix the TPS issue regarding hoppers.
-
-	Phosphor (went from Phosphor 0.2.5 to Phosphor 0.2.6):
-		Phosphor 0.2.6:
-			This update addresses a small issue in Phosphor 0.2.5 where the mod could load on incompatible versions of SpongeForge.
-
-			- Improved performance by using direct access into chunk sections when performing light updates
-
-			- Fixed compatibility issues with recent SpongeForge releases (RC3844 and newer)
-
-			- Fixed an issue where faulty mods could get around Phosphor's sanity checks and crash the game
-
-			- Reduced the amount of logging that occurs at the INFO level to keep your terminal windows clean
-
-			- Added a one-time message that is displayed after the mod is installed which links out to my Patreon. This can be disable in the configuration file by setting show_patreon_message to false.
-
-Removed 1 files:
-	- /dank/null
-
-* Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.15)
+Building Gadgets
+Brandon's Core
+Draconic Evolution
+Ender IO
+EnderCore
+GasConduits
+Journeymap
+ProjectIntelligence
