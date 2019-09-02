@@ -1,13 +1,45 @@
 # Enigmatica 2: Expert Changelog
 
+## [Unreleased](https://github.com/NillerMedDild/Enigmatica2Expert/tree/HEAD)
+
+**Fixed bugs:**
+
+- \[DraconicEvolution\] Information Tablet can't download manifest [\#1314](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1314) [[Status: Reported](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Reported)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
+- Building Gadgets Building Gadget is missing Building preview. [\#1313](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1313) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
+
+## [1.68](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.68) (2019-09-01)
+**Fixed bugs:**
+
+- Bibliocraft bookcase can not accept Integrated Dynamics book [\#1307](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1307) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Status: Fixed in Dev](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Fixed%20in%20Dev)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+- \[CoFH World\] Parse error [\#1306](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1306) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+- Rustic config bug [\#1278](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1278) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+- RFTools Builder Exception Ticking World [\#1277](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1277) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
+- Unable to craft Chemical Washer from Mekanism. [\#1221](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1221) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Status: Fixed in Dev](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Fixed%20in%20Dev)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+
+**Closed issues:**
+
+- Crash on Quest Claim [\#1319](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1319)
+- E2E Crash on startup - foamfix deduplication error and possible solution [\#1318](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1318)
+- \[MineTweaker\] Alumite alloying math incorrect [\#1305](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1305)
+- Structural Engineer Villager's Final Trade has Wrong Copper Ingot [\#1301](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1301) [[Status: Unresolved](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Unresolved)]
+- Server I/O Permission Issues [\#1288](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1288) [[Priority: Critical](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Critical)]
+
+**Merged pull requests:**
+
+- Few questbook updates [\#1335](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1335) ([Discomanco](https://github.com/Discomanco))
+
 ## [1.67](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.67) (2019-07-31)
 **Implemented enhancements:**
 
 - Feature Request: Add Ender IO Ender tools harvest level [\#1297](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1297) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Type: Suggestion](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Suggestion)]
 
-**Fixed bugs:**
-- 1.66c had incorrect server files. This update fixes a host of config related issues, such as no ore gen.
+**Closed issues:**
 
+- curseforge manual download broken [\#1290](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1290)
+- Expert Java not responding [\#1285](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1285)
+- Advanced Rocketry Space station cannot be used by multiple players [\#1252](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1252) [[Status: Cannot Reproduce](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Cannot%20Reproduce)]
+
+## [1](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1) (2019-07-24)
 ## [1.66](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.66) (2019-07-22)
 **Implemented enhancements:**
 
