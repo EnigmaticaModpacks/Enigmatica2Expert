@@ -9,15 +9,18 @@ print("--- loading LootTweaker_Ice&Fire.zs ---");
 
 	val cyclops_cave = LootTables.getTable("iceandfire:cyclops_cave");
 	val cyclops_cave_pool = cyclops_cave.getPool("cyclops_cave");
-	val cyclops_cave_main = cyclops_cave.getPool("main");
 
-	val fire_dragon_cave = LootTables.getTable("iceandfire:fire_dragon_cave");
-	val fire_dragon_cave_pool = fire_dragon_cave.getPool("fire_dragon_cave");
-	val fire_dragon_cave_main = fire_dragon_cave.getPool("main");
+	val fire_dragon_female_cave = LootTables.getTable("iceandfire:fire_dragon_female_cave");
+	val fire_dragon_female_cave_pool = fire_dragon_female_cave.getPool("fire_dragon_cave");
+    
+    val fire_dragon_male_cave = LootTables.getTable("iceandfire:fire_dragon_male_cave");
+	val fire_dragon_male_cave_pool = fire_dragon_male_cave.getPool("fire_dragon_cave");
 	
-	val ice_dragon_cave = LootTables.getTable("iceandfire:ice_dragon_cave");
-	val ice_dragon_cave_pool = ice_dragon_cave.getPool("ice_dragon_cave");
-	val ice_dragon_cave_main = ice_dragon_cave.getPool("main");
+	val ice_dragon_female_cave = LootTables.getTable("iceandfire:ice_dragon_female_cave");
+	val ice_dragon_female_cave_pool = ice_dragon_female_cave.getPool("ice_dragon_cave");
+    
+    val ice_dragon_male_cave = LootTables.getTable("iceandfire:ice_dragon_male_cave");
+	val ice_dragon_male_cave_pool = ice_dragon_male_cave.getPool("ice_dragon_cave");
 	
 	val caveloot = [
 	<environmentaltech:litherite_crystal>,
@@ -61,8 +64,10 @@ print("--- loading LootTweaker_Ice&Fire.zs ---");
 	for item in caveloot {
 	
 	cyclops_cave_pool.addItemEntry(item, 3);
-	fire_dragon_cave_pool.addItemEntry(item, 3);
-	ice_dragon_cave_pool.addItemEntry(item, 3);
+	fire_dragon_female_cave_pool.addItemEntry(item, 3);
+    fire_dragon_male_cave_pool.addItemEntry(item, 3);
+	ice_dragon_female_cave_pool.addItemEntry(item, 3);
+    ice_dragon_male_cave_pool.addItemEntry(item, 3);
 	
 	}
 	

@@ -330,19 +330,19 @@
       "fileSize": 2563518
     },
     {
-      "folderName": "iceandfire-1.7.1-1.12.2.jar",
-      "fingerprint": 1912831700,
-      "fileDateHash": 198874602,
+      "folderName": "iceandfire-1.8.1.jar",
+      "fingerprint": 340459494,
+      "fileDateHash": 204385764,
       "sectionID": 8,
       "individualFingerprints": [
-        1912831700
+        340459494
       ],
       "status": 1,
-      "timestamp": "2019-07-22T18:05:23.8815566Z",
-      "lastWriteTimeUtc": "2019-03-31T06:40:23.7055276Z",
-      "queryTimestamp": "2019-09-02T18:11:36.894656Z",
+      "timestamp": "2019-09-07T19:28:16.6601806Z",
+      "lastWriteTimeUtc": "2019-09-01T06:51:21.4397297Z",
+      "queryTimestamp": "2019-09-07T19:28:17.3990206Z",
       "fileCount": 1,
-      "fileSize": 16086478
+      "fileSize": 19422597
     },
     {
       "folderName": "MysticalAgriculture-1.12.2-1.7.5.jar",
