@@ -1,0 +1,853 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+
+<!-- 
+
+These are the built-in recipes. You cannot change this file, it is a
+reference for you only and will be generated every time the game starts.
+
+To make changes to the recipes, copy the recipes you want to change to
+a file in the 'user' folder. To disable a recipe, add an attribute "disabled"
+and set it to true, e.g.: <recipe required="true" name="Gear" disabled="true" />
+
+You can also disable all built-in recipes with the setting "loadCoreRecipes"
+in the Ender IO config file, so that only your files in the 'user' folder will
+be loaded. Please be advised that a number of recipes are absolutely needed,
+so you will have to copy those over into a 'user' file for the game to load.
+
+Item specifications can reference an alias, an ore dictionary name, a
+block or an item. You can force the type by prefixing the value with
+"oredict:", "block:" or "item:". Recipes that have items that cannot be
+found in-game are either skipped or an error, depending on their "required"
+attribute.
+
+More information on the syntax can be found in the recipes.xsd file. An
+XML editor will display that as tooltips when editing this file.
+
+ -->
+
+  <recipe required="true" name="Dark Steel Upgrade">
+    <alloying energy="30000">
+      <input name="enderio:block_dark_iron_bars"/>
+      <input name="oredict:itemClay"/>
+      <input name="string" amount="4"/>
+      <output name="enderio:item_dark_steel_upgrade:0"/>
+    </alloying>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Carpet">
+    <dependency upgrade="enderio:carpet"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="minecraft:carpet:*"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:carpet"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Carpet">
+    <dependency upgrade="enderio:carpet"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:carpet"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:carpet"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Depth">
+    <dependency upgrade="enderio:depth"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="item:minecraft:skull:4"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:depth"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Depth">
+    <dependency upgrade="enderio:depth"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:depth"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:depth"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Direct">
+    <dependency upgrade="enderio:direct"/>
+    <crafting>
+      <grid>
+        <item name="VIBRANT_ALLOY_NUGGET"/><item name="VIBRANT_ALLOY"/><item name="VIBRANT_ALLOY_NUGGET"/>
+        <item name="VIBRANT_ALLOY"/><item name="oredict:enderpearl"/><item name="VIBRANT_ALLOY"/>
+        <item name="VIBRANT_ALLOY_NUGGET"/><item name="enderio:item_dark_steel_upgrade:0"/><item name="VIBRANT_ALLOY_NUGGET"/>
+      </grid>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:direct"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Direct">
+    <dependency upgrade="enderio:direct"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:direct"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:direct"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Elytra">
+    <dependency upgrade="enderio:elytra"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="minecraft:elytra"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:elytra"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Elytra">
+    <dependency upgrade="enderio:elytra"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:elytra"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:elytra"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Empowered">
+    <dependency upgrade="enderio:energyupgrade"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="VIBRANT_CRYSTAL"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:energyupgrade"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Empowered">
+    <dependency upgrade="enderio:energyupgrade"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:energyupgrade"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:energyupgrade"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Empowered II">
+    <dependency upgrade="enderio:energyupgrade1"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="enderio:item_basic_capacitor:0"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:energyupgrade1"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Empowered II">
+    <dependency upgrade="enderio:energyupgrade1"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:energyupgrade1"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:energyupgrade1"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Empowered III">
+    <dependency upgrade="enderio:energyupgrade2"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="enderio:item_basic_capacitor:1"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:energyupgrade2"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Empowered III">
+    <dependency upgrade="enderio:energyupgrade2"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:energyupgrade2"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:energyupgrade2"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Empowered IV">
+    <dependency upgrade="enderio:energyupgrade3"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="enderio:item_basic_capacitor:2"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:energyupgrade3"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Empowered IV">
+    <dependency upgrade="enderio:energyupgrade3"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:energyupgrade3"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:energyupgrade3"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Empowered V">
+    <dependency upgrade="enderio:energyupgrade4"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="HEAD_ENDERMAN_TORMENTED"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:energyupgrade4"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Empowered V">
+    <dependency upgrade="enderio:energyupgrade4"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:energyupgrade4"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:energyupgrade4"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Glide">
+    <dependency upgrade="enderio:glide"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="GLIDER_WINGS"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:glide"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Glide">
+    <dependency upgrade="enderio:glide"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:glide"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:glide"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Hoe">
+    <dependency upgrade="enderio:hoe"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="minecraft:diamond_hoe"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:hoe"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Hoe">
+    <dependency upgrade="enderio:hoe"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:hoe"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:hoe"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Inventory">
+    <dependency upgrade="enderio:inv"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="chestWood"/><item name="GEAR_WOOD"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:inv"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Inventory">
+    <dependency upgrade="enderio:inv"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:inv"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:inv"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Inventory II">
+    <dependency upgrade="enderio:inv1"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="chestWood"/><item name="GEAR_ENERGIZED"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:inv1"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Inventory II">
+    <dependency upgrade="enderio:inv1"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:inv1"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:inv1"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Inventory III">
+    <dependency upgrade="enderio:inv2"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="chestWood"/><item name="GEAR_VIBRANT"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:inv2"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Inventory III">
+    <dependency upgrade="enderio:inv2"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:inv2"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:inv2"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Jump Boost">
+    <dependency upgrade="enderio:jumpboost1"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="minecraft:piston"/><item name="GEAR_WOOD"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:jumpboost1"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Jump Boost">
+    <dependency upgrade="enderio:jumpboost1"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:jumpboost1"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:jumpboost1"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Jump Boost 2">
+    <dependency upgrade="enderio:jumpboost2"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="minecraft:piston"/><item name="GEAR_ENERGIZED"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:jumpboost2"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Jump Boost 2">
+    <dependency upgrade="enderio:jumpboost2"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:jumpboost2"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:jumpboost2"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Jump Boost 3">
+    <dependency upgrade="enderio:jumpboost3"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="minecraft:piston"/><item name="GEAR_VIBRANT"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:jumpboost3"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Jump Boost 3">
+    <dependency upgrade="enderio:jumpboost3"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:jumpboost3"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:jumpboost3"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Nightvision">
+    <dependency upgrade="enderio:nightvision"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item potion="minecraft:night_vision"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:nightvision"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Nightvision">
+    <dependency upgrade="enderio:nightvision"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:nightvision"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:nightvision"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Padding">
+    <dependency upgrade="enderio:padding"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="minecraft:wool:*"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:padding"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Padding">
+    <dependency upgrade="enderio:padding"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:padding"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:padding"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Sound Detector">
+    <dependency upgrade="enderio:sounddetector"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="minecraft:noteblock"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:sounddetector"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Sound Detector">
+    <dependency upgrade="enderio:sounddetector"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:sounddetector"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:sounddetector"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Speed Boost">
+    <dependency upgrade="enderio:speedboost1"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item potion="minecraft:long_swiftness"/><item name="GEAR_WOOD"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:speedboost1"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Speed Boost">
+    <dependency upgrade="enderio:speedboost1"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:speedboost1"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:speedboost1"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Speed Boost 2">
+    <dependency upgrade="enderio:speedboost2"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item potion="minecraft:long_swiftness"/><item name="GEAR_ENERGIZED"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:speedboost2"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Speed Boost 2">
+    <dependency upgrade="enderio:speedboost2"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:speedboost2"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:speedboost2"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Speed Boost 3">
+    <dependency upgrade="enderio:speedboost3"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item potion="minecraft:long_swiftness"/><item name="GEAR_VIBRANT"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:speedboost3"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Speed Boost 3">
+    <dependency upgrade="enderio:speedboost3"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:speedboost3"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:speedboost3"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Spoon">
+    <dependency upgrade="enderio:spoon"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="minecraft:diamond_shovel"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:spoon"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Spoon">
+    <dependency upgrade="enderio:spoon"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:spoon"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:spoon"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Flippers">
+    <dependency upgrade="enderio:swim"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="minecraft:waterlily"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:swim"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Flippers">
+    <dependency upgrade="enderio:swim"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:swim"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:swim"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: TNT">
+    <dependency upgrade="enderio:tnt"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="minecraft:tnt"/><item name="GEAR_WOOD"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:tnt"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: TNT">
+    <dependency upgrade="enderio:tnt"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:tnt"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:tnt"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: TNT 2">
+    <dependency upgrade="enderio:tnt1"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="minecraft:tnt"/><item name="GEAR_STONE"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:tnt1"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: TNT 2">
+    <dependency upgrade="enderio:tnt1"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:tnt1"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:tnt1"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: TNT 3">
+    <dependency upgrade="enderio:tnt2"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="minecraft:tnt"/><item name="GEAR_IRON"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:tnt2"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: TNT 3">
+    <dependency upgrade="enderio:tnt2"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:tnt2"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:tnt2"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: TNT 4">
+    <dependency upgrade="enderio:tnt3"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="minecraft:tnt"/><item name="GEAR_ENERGIZED"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:tnt3"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: TNT 4">
+    <dependency upgrade="enderio:tnt3"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:tnt3"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:tnt3"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: TNT 5">
+    <dependency upgrade="enderio:tnt4"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="minecraft:tnt"/><item name="GEAR_VIBRANT"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:tnt4"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: TNT 5">
+    <dependency upgrade="enderio:tnt4"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:tnt4"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:tnt4"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: TOP">
+    <dependency upgrade="enderio:top"/>
+    <dependency item="theoneprobe:probe"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="theoneprobe:probe"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:top"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: TOP">
+    <dependency upgrade="enderio:top"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:top"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:top"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Travel">
+    <dependency upgrade="enderio:travel"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="ENDER_CRYSTAL"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:travel"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Travel">
+    <dependency upgrade="enderio:travel"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:travel"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:travel"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Thaumaturge Chest">
+    <dependency upgrade="enderio:thaumaturge_robes_chest"/>
+    <dependency item="thaumcraft:cloth_chest"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="thaumcraft:cloth_chest"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:thaumaturge_robes_chest"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Thaumaturge Chest">
+    <dependency upgrade="enderio:thaumaturge_robes_chest"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:thaumaturge_robes_chest"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:thaumaturge_robes_chest"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Thaumaturge Legs">
+    <dependency upgrade="enderio:thaumaturge_robes_legs"/>
+    <dependency item="thaumcraft:cloth_legs"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="thaumcraft:cloth_legs"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:thaumaturge_robes_legs"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Thaumaturge Legs">
+    <dependency upgrade="enderio:thaumaturge_robes_legs"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:thaumaturge_robes_legs"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:thaumaturge_robes_legs"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Thaumaturge Boots">
+    <dependency upgrade="enderio:thaumaturge_robes_feet"/>
+    <dependency item="thaumcraft:cloth_boots"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="thaumcraft:cloth_boots"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:thaumaturge_robes_feet"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Thaumaturge Boots">
+    <dependency upgrade="enderio:thaumaturge_robes_feet"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:thaumaturge_robes_feet"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:thaumaturge_robes_feet"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Goggles of Revealing">
+    <dependency upgrade="enderio:gogglesofrevealing"/>
+    <dependency item="thaumcraft:goggles"/>
+    <crafting>
+      <shapeless>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="thaumcraft:goggles"/>
+      </shapeless>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:gogglesofrevealing"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Goggles of Revealing">
+    <dependency upgrade="enderio:gogglesofrevealing"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:gogglesofrevealing"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:gogglesofrevealing"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Anvil">
+    <dependency upgrade="enderio:anvil"/>
+    <crafting>
+      <grid>
+        <item/><item name="DARK_STEEL_NUGGET"/><item name="DARK_STEEL_NUGGET"/>
+        <item/><item/><item name="stickWood"/>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item/><item name="stickWood"/>
+      </grid>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:anvil"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Anvil">
+    <dependency upgrade="enderio:anvil"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:anvil"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:anvil"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Anvil II">
+    <dependency upgrade="enderio:anvil1"/>
+    <crafting>
+      <grid>
+        <item/><item name="DARK_STEEL"/><item name="DARK_STEEL"/>
+        <item/><item/><item name="stickWood"/>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item/><item name="stickWood"/>
+      </grid>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:anvil1"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Anvil II">
+    <dependency upgrade="enderio:anvil1"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:anvil1"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:anvil1"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Anvil III">
+    <dependency upgrade="enderio:anvil2"/>
+    <crafting>
+      <grid>
+        <item/><item/><item name="DARK_STEEL_BLOCK"/>
+        <item/><item/><item name="stickWood"/>
+        <item name="enderio:item_dark_steel_upgrade:0"/><item name="enderio:block_dark_steel_anvil"/><item name="stickWood"/>
+      </grid>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:anvil2"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Anvil III">
+    <dependency upgrade="enderio:anvil2"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:anvil2"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:anvil2"}'/>
+    </tanking>
+  </recipe>
+
+
+  <recipe required="true" name="Dark Steel Upgrade: Step Assist">
+    <dependency upgrade="enderio:step_assist"/>
+    <crafting>
+      <grid>
+        <item/>                  <item/>                  <item name="ingotBrick"/>
+        <item/>                  <item name="ingotBrick"/><item name="ingotBrick"/>
+        <item name="ingotBrick"/><item name="ingotBrick"/><item name="enderio:item_dark_steel_upgrade:0"/>
+      </grid>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:step_assist"}'/>
+    </crafting>
+  </recipe>
+
+  <recipe required="true" name="Dark Steel Upgrade Empowering: Step Assist">
+    <dependency upgrade="enderio:step_assist"/>
+    <tanking type="FILL" logic="DSU">
+      <input name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:step_assist"}'/>
+      <fluid name="xpjuice" amount="1"/>
+      <output name="enderio:item_dark_steel_upgrade:1" nbt='{"enderio:dsu":"enderio:step_assist"}'/>
+    </tanking>
+  </recipe>
+
+</enderio:recipes>

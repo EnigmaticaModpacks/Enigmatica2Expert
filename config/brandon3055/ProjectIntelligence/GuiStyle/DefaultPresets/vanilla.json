@@ -100,10 +100,28 @@
       "border_hover": 0,
       "text_colour": 14737632,
       "text_hover": 16777120,
-      "text_shadow": true
+      "text_shadow": true,
+      "page_back_button_subs": {
+        "vanilla_tex": true,
+        "shaded_borders": true,
+        "shaded_borders_subs": {
+          "invert_shade": false
+        },
+        "thick_borders": false,
+        "colour": -3801089,
+        "hover": -3801089,
+        "border": -11842741,
+        "border_hover": -11842741,
+        "text_colour": 16777215,
+        "text_hover": 16777120,
+        "text_shadow": true,
+        "icon_subs": {
+          "colour": 16777215,
+          "hover": 16777120
+        }
+      }
     },
     "scroll_bar_subs": {
-      "small_bar": true,
       "colour": -7631989,
       "hover": -7631989,
       "border": -7631989,
@@ -216,8 +234,6 @@
       "hover": 16724016
     },
     "header_subs": {
-      "colour": -1,
-      "hover": -1,
       "text_colour": 14737632,
       "text_hover": 16777120,
       "background": 1073741824

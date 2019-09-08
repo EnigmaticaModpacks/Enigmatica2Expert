@@ -100,7 +100,26 @@
       "border_hover": -7565423,
       "text_colour": 65535,
       "text_hover": 65535,
-      "text_shadow": true
+      "text_shadow": true,
+      "page_back_button_subs": {
+        "vanilla_tex": false,
+        "shaded_borders": true,
+        "shaded_borders_subs": {
+          "invert_shade": false
+        },
+        "thick_borders": false,
+        "colour": -12302519,
+        "hover": -9144455,
+        "border": -11776175,
+        "border_hover": -8618111,
+        "text_colour": 15263976,
+        "text_hover": 15263976,
+        "text_shadow": true,
+        "icon_subs": {
+          "colour": 15263976,
+          "hover": 15263976
+        }
+      }
     },
     "scroll_bar_subs": {
       "colour": 7172210,
@@ -215,8 +234,6 @@
       "hover": 16724016
     },
     "header_subs": {
-      "colour": -1,
-      "hover": -1,
       "text_colour": 12303291,
       "text_hover": -7105645,
       "background": 1073741824
