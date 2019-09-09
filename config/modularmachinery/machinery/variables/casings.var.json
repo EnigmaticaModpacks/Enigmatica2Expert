@@ -14,17 +14,11 @@
     ],
 	
     "casings_energy_in": [
-        "modularmachinery:blockenergyinputhatch@2",
-		"modularmachinery:blockenergyinputhatch@3",
-		"modularmachinery:blockenergyinputhatch@4",
-		"modularmachinery:blockenergyinputhatch@5"
+        "modularmachinery:blockenergyinputhatch@2"
     ],
 	
     "casings_energy_out": [
-        "modularmachinery:blockenergyoutputhatch@2",
-        "modularmachinery:blockenergyoutputhatch@3",
-        "modularmachinery:blockenergyoutputhatch@4",
-        "modularmachinery:blockenergyoutputhatch@5"
+        "modularmachinery:blockenergyoutputhatch@2"
     ],
 	
     "casings_item_in": [

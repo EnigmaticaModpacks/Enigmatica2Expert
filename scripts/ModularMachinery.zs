@@ -100,9 +100,6 @@ print("--- loading ModularMachinery.zs ---");
     [null, <modularmachinery:blockcasing>, null]]);
 
     recipes.addShaped("EnergyOutHatch2", <modularmachinery:blockenergyoutputhatch:2>, [[null, <modularmachinery:blockcasing>, null],[<modularmachinery:blockcasing>, <enderio:block_buffer:1>, <modularmachinery:blockcasing>], [null, <actuallyadditions:block_laser_relay>, null]]);
-    recipes.addShaped("EnergyOutHatch3", <modularmachinery:blockenergyoutputhatch:5>, [[null, <modularmachinery:blockcasing>, null],[<modularmachinery:blockcasing>, <modularmachinery:blockenergyoutputhatch:4>, <modularmachinery:blockcasing>], [null, <actuallyadditions:block_laser_relay_extreme>, null]]);
-    recipes.addShaped("EnergyOutHatch4", <modularmachinery:blockenergyoutputhatch:4>, [[null, <modularmachinery:blockcasing>, null],[<modularmachinery:blockcasing>, <modularmachinery:blockenergyoutputhatch:3>, <modularmachinery:blockcasing>], [null, <actuallyadditions:block_laser_relay_advanced>, null]]);
-    recipes.addShaped("EnergyOutHatch5", <modularmachinery:blockenergyoutputhatch:3>, [[null, <modularmachinery:blockcasing>, null],[<modularmachinery:blockcasing>, <modularmachinery:blockenergyoutputhatch:2>, <modularmachinery:blockcasing>], [null, <actuallyadditions:block_laser_relay>, null]]);
 
     recipes.addShaped("EnergyInHatch2", <modularmachinery:blockenergyinputhatch:2>, [[null, <actuallyadditions:block_laser_relay>, null],[<modularmachinery:blockcasing>, <enderio:block_buffer:1>, <modularmachinery:blockcasing>], [null, <modularmachinery:blockcasing>, null]]);
 
