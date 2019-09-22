@@ -86,18 +86,6 @@ print("--- loading ModularMachinery.zs ---");
     [<actuallyadditions:item_crystal_empowered:1>, <ore:itemPulsatingCrystal>, <actuallyadditions:item_crystal_empowered:1>], 
     [<ore:ingotElectricalSteel>, <ore:ingotPlatinum>, <ore:ingotElectricalSteel>]]);
 
-# Mana In/out Hatch
-    recipes.addShapedMirrored("Mana Output Hatch", 
-    <modulardiversity:blockmanaoutputhatch>, 
-    [[null, <modularmachinery:blockcasing>, null],
-    [<modularmachinery:blockcasing>, <botania:pool>, <modularmachinery:blockcasing>], 
-    [<botania:pump>, <botania:spreader:2>, <botania:pump>]]);
-    
-    recipes.addShapedMirrored("Mana Input Hatch", 
-    <modulardiversity:blockmanainputhatch>, 
-    [[<botania:pump>, <botania:spreader:2>, <botania:pump>],
-    [<modularmachinery:blockcasing>, <botania:pool>, <modularmachinery:blockcasing>], 
-    [null, <modularmachinery:blockcasing>, null]]);
 
     recipes.addShaped("EnergyOutHatch2", <modularmachinery:blockenergyoutputhatch:2>, [[null, <modularmachinery:blockcasing>, null],[<modularmachinery:blockcasing>, <enderio:block_buffer:1>, <modularmachinery:blockcasing>], [null, <actuallyadditions:block_laser_relay>, null]]);
 
@@ -154,9 +142,8 @@ var itemsToRemove = [
     <modularmachinery:blockenergyoutputhatch:4>,
     <modularmachinery:blockenergyoutputhatch:5>,
     <modularmachinery:blockenergyoutputhatch:6>,
-    <modularmachinery:blockenergyoutputhatch:7>,
+    <modularmachinery:blockenergyoutputhatch:7>
 	
-    <modulardiversity:blockjackhatch>
 ] as IItemStack[];
 
 for item in itemsToRemove {

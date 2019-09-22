@@ -2,10 +2,21 @@
 
 ## [Unreleased](https://github.com/NillerMedDild/Enigmatica2Expert/tree/HEAD)
 
+**Implemented enhancements:**
+
+- Disabled Mekanism WalkieTalkie Server [\#1347](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1347) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
+- Removed Modular Diversity [\#1343](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1343) [[Marker: Mod](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Mod)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
+- Ice and Fire 1.8 adds lots of new content [\#1334](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1334) [[Type: Suggestion](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Suggestion)]
+- Update Ice & Fire to version 1.8.1 [\#1340](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1340) [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)] ([Ricket](https://github.com/Ricket))
+
 **Fixed bugs:**
 
+- Odd behaviour / Crashes with Modular Machinery Energy Inputs [\#1342](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1342) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+- Better Questing Party Quests Not Syncing [\#1336](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1336) [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - \[DraconicEvolution\] Information Tablet can't download manifest [\#1314](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1314) [[Status: Reported](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Reported)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - Building Gadgets Building Gadget is missing Building preview. [\#1313](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1313) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
+- EnderIO Conduit Filter Crash [\#1311](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1311) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
+- \[1.65a\] Extreme server lag caused by Advanced Rocketry [\#1260](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1260) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Status: Needs Testing](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Needs%20Testing)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 
 ## [1.68](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.68) (2019-09-01)
 **Fixed bugs:**
@@ -21,7 +32,6 @@
 - Crash on Quest Claim [\#1319](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1319)
 - E2E Crash on startup - foamfix deduplication error and possible solution [\#1318](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1318)
 - \[MineTweaker\] Alumite alloying math incorrect [\#1305](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1305)
-- Structural Engineer Villager's Final Trade has Wrong Copper Ingot [\#1301](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1301) [[Status: Unresolved](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Unresolved)]
 - Server I/O Permission Issues [\#1288](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1288) [[Priority: Critical](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Critical)]
 
 **Merged pull requests:**
@@ -73,9 +83,6 @@
 
 - DE Creative Exchanger Recipe Fixed [\#1220](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1220) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 - Error When Loading the Modpack: "Mod IDs can't be resolved" [\#1206](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1206) [[Status: Blocked](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Blocked)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
-- Wyvern armor upgrades not transferring to Draconic armor upgrades [\#1202](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1202) [[Status: Unresolved](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Unresolved)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
-- Quark Stonelings EnderIO spawner crash [\#1197](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1197) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
-- IC2 Semifluid generator no JEI recipes [\#1195](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1195) [[Status: Unresolved](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Unresolved)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - Chunk Load Thrashing [\#1194](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1194) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 - Storage scanner and tablet issue [\#1187](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1187) [[Status: Reported](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Reported)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - Fluid duplication [\#1180](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1180) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
@@ -86,22 +93,15 @@
 - Any XU2 recipe that requires xp doesn't show the crafting table recipe on JEI [\#1157](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1157) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 - Cyclic Wireless Transmitter next to Redstone Tunnel in Compact Machine causes NullPointerException [\#1139](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1139) [[Status: Fixed in Dev](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Fixed%20in%20Dev)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - IC2 Machines not Dropping with Tools [\#1131](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1131) [[Status: Reported](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Reported)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
-- Thermal Expansion Cache not working properly when broken with pickaxe [\#1125](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1125) [[Status: Unresolved](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Unresolved)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 - Mekanism DMiner has hard time with Tin in the Deep Dark [\#1104](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1104) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - Remove Thermal Foundation Compatibility for the RFTools Mob Spawner [\#1087](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1087) [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 - Mekanism Digital Miner can be manipulated to get specific TC crystal [\#1028](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1028) [[Priority: Medium](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Medium)] [[Status: Reported](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Reported)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - Death from self-sacrifice dagger does not create grave, all items lost [\#800](https://github.com/NillerMedDild/Enigmatica2Expert/issues/800) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Status: Confirmation Needed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Confirmation%20Needed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
-- IE Assembler Issues [\#786](https://github.com/NillerMedDild/Enigmatica2Expert/issues/786) [[Status: Unresolved](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Unresolved)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 
 **Closed issues:**
 
 - Ender IO Conduits: High CPU utilization. [\#1190](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1190)
 - Difficulty Persistence Anomaly? [\#1120](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1120) [[Status: Cannot Reproduce](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Cannot%20Reproduce)]
-- ME Export bus not autocrafting [\#1059](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1059) [[Status: Unresolved](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Unresolved)]
-- Rftools screens dupe [\#1010](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1010) [[Status: Unresolved](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Unresolved)]
-- Twilight Forest Metal Coins [\#903](https://github.com/NillerMedDild/Enigmatica2Expert/issues/903) [[Status: Unresolved](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Unresolved)]
-- Modular Storage - FPS Loss + Search Field laggy [\#868](https://github.com/NillerMedDild/Enigmatica2Expert/issues/868) [[Status: Unresolved](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Unresolved)]
-- Blood magic not being chunk loaded [\#728](https://github.com/NillerMedDild/Enigmatica2Expert/issues/728) [[Status: Unresolved](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Unresolved)]
 
 ## [1.64](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.64) (2019-05-03)
 **Fixed bugs:**
