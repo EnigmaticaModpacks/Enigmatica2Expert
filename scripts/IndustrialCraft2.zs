@@ -4,6 +4,9 @@ import crafttweaker.item.IIngredient;
 #modloaded ic2
 print("--- loading IndustrialCraft2.zs ---");
 
+# Removing IC2 coal coke
+	recipes.remove(<ic2:coke>);
+	
 # Batch Crafter, unintended behaviour
 	recipes.remove(<ic2:te:89>);
 

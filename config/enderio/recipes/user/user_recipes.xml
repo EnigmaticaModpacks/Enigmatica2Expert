@@ -297,6 +297,13 @@
     </sagmilling>
   </recipe>
   
+  <recipe name="Sagmill: Coke Dust" required="true">
+    <sagmilling energy="4000">
+      <input name="immersiveengineering:material:6"/>
+      <output name="immersiveengineering:material:17" />
+    </sagmilling>
+  </recipe>
+  
   <recipe name="Tweak: Stick from Wood" disabled="true">
     <crafting>
       <grid size="1x2">
