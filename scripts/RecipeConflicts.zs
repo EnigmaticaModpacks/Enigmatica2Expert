@@ -7,6 +7,13 @@ print("--- loading RecipeConflicts.zs ---");
 	
 # *======= Recipe Conflicts =======*
 	
+# Disk Platter / Iron Chain Link
+	recipes.remove(<iceandfire:chain_link>);
+	recipes.addShaped(<iceandfire:chain_link> * 2, 
+	[[<ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>],
+	[<ore:nuggetIron>, null, <ore:nuggetIron>], 
+	[<ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>]]);
+
 # Polished Marble / Marble Pavement
 	recipes.remove(<quark:marble:1>);
 
