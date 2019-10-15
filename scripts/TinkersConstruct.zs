@@ -4,6 +4,10 @@ import mods.jei.JEI.removeAndHide as rh;
 #modloaded tconstruct
 print("--- loading TinkersConstruct.zs ---");
 
+# Removing Bronze / Steel dupes
+	mods.tconstruct.Melting.removeRecipe(<liquid:bronze>, <ic2:pipe>);
+	mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <ic2:pipe:1>);
+
 # Prevent Smart Output from instantly breaking (setting it to same hardness as Smeltery Controllers)
 	<tinker_io:smart_output>.hardness = <tconstruct:smeltery_controller>.hardness;
 
