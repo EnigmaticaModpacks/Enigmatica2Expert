@@ -4,6 +4,9 @@ import crafttweaker.item.IIngredient;
 #modloaded ic2
 print("--- loading IndustrialCraft2.zs ---");
 
+# Batch Crafter, unintended behaviour
+	recipes.remove(<ic2:te:89>);
+
 # Missing Dust Compression
 	recipes.addShaped("LeadDustFromTiny", 
 	<thermalfoundation:material:67>, 
