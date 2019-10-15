@@ -4,9 +4,6 @@ import crafttweaker.oredict.IOreDict as IOreDict;
 import crafttweaker.oredict.IOreDictEntry as IOreDictEntry;
 import mods.jei.JEI.removeAndHide as rh;
 print("--- loading OreDict.zs ---");
-
-# gemObsidian machine recipe bug
-	<ore:gemObsidian>.remove(<cyclicmagic:crystallized_obsidian>);
 	
 # Black Quartz Pillar is cheaper than 1 block, remove from oredict
 	<ore:blockBlackQuartz>.remove(<actuallyadditions:block_misc>);
