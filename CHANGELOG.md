@@ -1,6 +1,6 @@
 # Enigmatica 2: Expert Changelog
 
-## [Unreleased](https://github.com/NillerMedDild/Enigmatica2Expert/tree/HEAD)
+## 1.70
 
 **Implemented enhancements:**
 
