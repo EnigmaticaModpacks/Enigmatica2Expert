@@ -1,7 +1,12 @@
 # Enigmatica 2: Expert Changelog
 
-## 1.70
+## [Unreleased](https://github.com/NillerMedDild/Enigmatica2Expert/tree/HEAD)
 
+**Fixed bugs:**
+
+- After 1.70 update, now creating Mekanism steel instead of Thermal [\#1378](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1378) [[Priority: Critical](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Critical)] [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
+
+## [1.70a](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.70a) (2019-10-17)
 **Implemented enhancements:**
 
 - Disabled Mekanism WalkieTalkie Server [\#1347](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1347) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
