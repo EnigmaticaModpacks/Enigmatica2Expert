@@ -1,0 +1,3 @@
+Enigmatica2Expert 1.70b to Enigmatica2Expert 1.70c
+
+* Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.15.1)
