@@ -45,6 +45,14 @@ print("--- loading ExtraUtilities2.zs ---");
 	[<ore:ingotEnderEnhanced>, <extendedcrafting:material:40>, <ore:ingotEnderEnhanced>], 
 	[<ore:blockRedstone>, <draconicevolution:generator>, <ore:blockRedstone>]]);
 
+# Fixing the Slime generator recipe (something went wrong with the oredict)
+	recipes.remove(<extrautils2:machine>.withTag({Type: "extrautils2:generator_slime"}),true);
+	recipes.addShaped("SlimeGen", 
+	<extrautils2:machine>.withTag({Type: "extrautils2:generator_slime"}), 
+	[[<ore:slimeball>, <ore:slimeball>, <ore:slimeball>],
+	[<ore:slimeball>, <ore:blockSlime>, <ore:slimeball>], 
+	[<ore:dustRedstone>, <extrautils2:machine>.withTag({Type: "extrautils2:generator"}), <ore:dustRedstone>]]);
+
 # Wireless RF Transmitter
 	recipes.remove(<extrautils2:powertransmitter>);
 	recipes.addShapedMirrored("Wireless RF Transmitter", 
@@ -60,7 +68,6 @@ print("--- loading ExtraUtilities2.zs ---");
 	[[<extrautils2:decorativesolid:3>, <immersiveengineering:metal_decoration0:3>, <extrautils2:decorativesolid:3>],
 	[<ore:gemRedstone>, <actuallyadditions:item_battery>.anyDamage(), <ore:gemRedstone>], 
 	[<extrautils2:decorativesolid:3>, <immersiveengineering:metal_decoration0:3>, <extrautils2:decorativesolid:3>]]);
-
 
 # Rainbow Generator
 	recipes.remove(<extrautils2:rainbowgenerator>);
