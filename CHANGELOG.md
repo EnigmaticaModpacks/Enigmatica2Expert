@@ -4,6 +4,22 @@
 
 **Fixed bugs:**
 
+- Cannot craft Slimey Generator [\#1385](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1385) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+- Unable to craft creative builders wand [\#1043](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1043) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Priority: Medium](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Medium)] [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+
+## [1.71](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.71) (2019-10-23)
+**Fixed bugs:**
+
+- FoamFix Startup Crash [\#1384](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1384) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
+
+## [1.70c](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.70c) (2019-10-21)
+**Closed issues:**
+
+- Crash when veu. [\#1380](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1380)
+
+## [1.70b](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.70b) (2019-10-19)
+**Fixed bugs:**
+
 - After 1.70 update, now creating Mekanism steel instead of Thermal [\#1378](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1378) [[Priority: Critical](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Critical)] [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 
 ## [1.70a](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.70a) (2019-10-17)
@@ -220,7 +236,6 @@
 - GenDustry recipes are gone from JEI, and none of the machines are craftable. [\#1070](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1070) [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 - Modular Machines don't actually require a Blueprint [\#1046](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1046) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Priority: Low](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Low)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 - NuclearCraft Tinkers' Construct Integration [\#1044](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1044) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
-- Unable to craft creative builders wand [\#1043](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1043) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Priority: Medium](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Medium)] [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 - JEI Resources - World Gen tab not showing [\#1024](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1024) [[Priority: Medium](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Medium)] [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 - When trying to open the draconic evolution information tablet, it can't download the manifest [\#867](https://github.com/NillerMedDild/Enigmatica2Expert/issues/867) [[Status: Reported](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Reported)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - Make Unique Ores Available from Orbital Laser Drill [\#693](https://github.com/NillerMedDild/Enigmatica2Expert/issues/693) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
