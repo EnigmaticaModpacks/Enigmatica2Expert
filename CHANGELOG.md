@@ -1,11 +1,27 @@
 # Enigmatica 2: Expert Changelog
 
-## [Unreleased](https://github.com/NillerMedDild/Enigmatica2Expert/tree/HEAD)
+## [1.72](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.72) (2019-11-12)
+**Implemented enhancements:**
+
+- Re-add Dank Null [\#1415](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1415) [[Marker: Mod](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Mod)] [[Status: Fixed in Dev](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Fixed%20in%20Dev)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
 
 **Fixed bugs:**
 
+- Problems crafting Creative Builder's Wand [\#1399](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1399) [[Status: Fixed in Dev](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Fixed%20in%20Dev)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+- Draconic Armour wont craft  [\#1391](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1391) [[Status: Available](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Available)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - Cannot craft Slimey Generator [\#1385](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1385) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 - Unable to craft creative builders wand [\#1043](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1043) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Priority: Medium](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Medium)] [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+
+**Closed issues:**
+
+- Right-Clicking P2P tunnel with atomic disassembler changes it's type to FE from ME [\#1411](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1411)
+- Suggestion: make Enderman heads from Enderman Essence [\#1409](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1409)
+- Twitch can't update modpack [\#1405](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1405)
+- Black Quartz Duplication [\#1395](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1395) [[Status: Cannot Reproduce](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Cannot%20Reproduce)]
+
+**Merged pull requests:**
+
+- Fix \#1403 by using Enchantment Bracket Handler [\#1406](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1406) ([MaxNeedsSnacks](https://github.com/MaxNeedsSnacks))
 
 ## [1.71](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.71) (2019-10-23)
 **Fixed bugs:**
