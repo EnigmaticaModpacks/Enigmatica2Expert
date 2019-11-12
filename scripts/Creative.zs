@@ -119,9 +119,9 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 	
 # Creative Builder's Wand
 	mods.extendedcrafting.TableCrafting.addShaped(0, <extrautils2:itemcreativebuilderswand>, 
-	[[<extrautils2:itembuilderswand>, <cyclicmagic:cyclic_wand_build>.anyDamage(), <extrautils2:itembuilderswand>], 
-	[<betterbuilderswands:wanddiamond>.anyDamage(), <betterbuilderswands:wandunbreakable:12>.anyDamage(), <betterbuilderswands:wanddiamond>.anyDamage()], 
-	[<extrautils2:itembuilderswand>, <cyclicmagic:cyclic_wand_build>.anyDamage(), <extrautils2:itembuilderswand>]]);  
+	[[<extrautils2:itembuilderswand>, <extrautils2:itembuilderswand>, <extrautils2:itembuilderswand>], 
+	[<extrautils2:itembuilderswand>, <extrautils2:itembuilderswand>, <extrautils2:itembuilderswand>], 
+	[<extrautils2:itembuilderswand>, <extrautils2:itembuilderswand>, <extrautils2:itembuilderswand>]]);  
 
 # Creative RFTools Screen
 	mods.extendedcrafting.CombinationCrafting.addRecipe(<rftools:creative_screen>, 
@@ -266,7 +266,7 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 # Creative Wireless Crafting Terminal
 	recipes.addShapeless("Creative Wireless Crafting Terminal", 
 	<wct:wct_creative>, 
-	[<wct:wct>.anyDamage(),<rftools:powercell_creative>.anyDamage()]);
+	[<wct:wct>.withTag({}),<rftools:powercell_creative>.anyDamage()]);
 
 # TIC Creative Modifier
 	mods.extendedcrafting.TableCrafting.addShaped(4, <tconstruct:materials:50>,

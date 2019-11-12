@@ -74,3 +74,4 @@ Applied Energistics Interfaces can be named in an anvil, but will lose their nam
 Applied Energistics Interfaces are grouped together by their name in the Interface Terminal.
 The advanced Morphing Tool (Morphing Tool crafted with 4 gears) is a good way to get all wrenches early. It also helps to keep your inventory neat.
 The command /foodlist size shows you how many different foods you already ate.
+You can shift-right click Acceleration Cards into Molecular Assemblers
