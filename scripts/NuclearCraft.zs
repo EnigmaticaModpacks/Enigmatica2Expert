@@ -46,6 +46,40 @@ print("--- loading NuclearCraft.zs ---");
 	[<ore:stickAluminum>, <ic2:ingot>, <ore:stickAluminum>], 
 	[<ore:plateCopper>, <ic2:casing:1>, <ore:plateCopper>]]);
 
+# Add missing ingots/bricks to ingot former
+	//Brick
+	mods.nuclearcraft.ingot_former.addRecipe([<liquid:clay>*144, <minecraft:brick>, 1.0, 1.0]);
+	//Starmetal Ingot
+	mods.nuclearcraft.ingot_former.addRecipe([<liquid:astral_starmetal>*144, <astralsorcery:itemcraftingcomponent:1>, 1.0, 1.0]);
+	//Demon Metal Ingot
+	mods.nuclearcraft.ingot_former.addRecipe([<liquid:xu_demonic_metal>*144, <extrautils2:ingredients:11>, 2.0, 2.0]);
+	//Enchanted Ingot
+	mods.nuclearcraft.ingot_former.addRecipe([<liquid:xu_enchanted_metal>*144, <extrautils2:ingredients:12>, 1.0, 1.0]);
+	//Evil Infused Iron Ingot
+	mods.nuclearcraft.ingot_former.addRecipe([<liquid:xu_evil_metal>*144, <extrautils2:ingredients:17>, 1.0, 1.0]);
+	//Fire Dragonsteel Ingot
+	mods.nuclearcraft.ingot_former.addRecipe([<liquid:dragonsteel_fire>*144, <iceandfire:dragonsteel_fire_ingot>, 1.0, 1.0]);
+	//Ice Dragonsteel Ingot
+	mods.nuclearcraft.ingot_former.addRecipe([<liquid:dragonsteel_ice>*144, <iceandfire:dragonsteel_ice_ingot>, 1.0, 1.0]);
+	//Pink Slime Ingot
+	mods.nuclearcraft.ingot_former.addRecipe([<liquid:molten_reinforced_pink_slime>*144, <industrialforegoing:pink_slime_ingot>, 1.0, 1.0]);
+	//Refined Obsidian Ingot
+	mods.nuclearcraft.ingot_former.addRecipe([<liquid:refinedobsidian>*144, <mekanism:ingot>, 1.0, 1.0]);
+	//Refined Glowstone Ingot
+	mods.nuclearcraft.ingot_former.addRecipe([<liquid:refinedglowstone>*144, <mekanism:ingot:3>, 1.0, 1.0]);
+	//Base Essence Ingot
+	mods.nuclearcraft.ingot_former.addRecipe([<liquid:base_essence>*144, <mysticalagriculture:crafting:32>, 1.0, 1.0]);
+	//Psimetal Ingot
+	mods.nuclearcraft.ingot_former.addRecipe([<liquid:psimetal>*144, <psi:material:1>, 1.0, 1.0]);
+	//Fiery Ingot
+	mods.nuclearcraft.ingot_former.addRecipe([<liquid:fierymetal>*144, <twilightforest:fiery_ingot>, 1.0, 1.0]);
+	//Seared Brick
+	mods.nuclearcraft.ingot_former.addRecipe([<liquid:stone>*72, <tconstruct:materials>, 1.0, 1.0]);
+	//Mud Brick
+	mods.nuclearcraft.ingot_former.addRecipe([<liquid:dirt>*144, <tconstruct:materials:1>, 1.0, 1.0]);
+	//Elementium Ingot
+	mods.nuclearcraft.ingot_former.addRecipe([<liquid:elementium>*144, <botania:manaresource:7>, 1.0, 1.0]);
+
 # *======= Remove & Hide =======*
 	
 	rh(<nuclearcraft:ore>);
