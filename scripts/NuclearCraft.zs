@@ -74,7 +74,7 @@ print("--- loading NuclearCraft.zs ---");
 	//Fiery Ingot
 	mods.nuclearcraft.ingot_former.addRecipe([<liquid:fierymetal>*144, <twilightforest:fiery_ingot>, 1.0, 1.0]);
 	//Seared Brick
-	mods.nuclearcraft.ingot_former.addRecipe([<liquid:stone>*144, <tconstruct:materials>, 1.0, 1.0]);
+	mods.nuclearcraft.ingot_former.addRecipe([<liquid:stone>*72, <tconstruct:materials>, 1.0, 1.0]);
 	//Mud Brick
 	mods.nuclearcraft.ingot_former.addRecipe([<liquid:dirt>*144, <tconstruct:materials:1>, 1.0, 1.0]);
 	//Elementium Ingot
