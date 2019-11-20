@@ -2911,17 +2911,16 @@
     },
     {
       "folderName": "New World",
-      "fingerprint": 2137687895,
-      "fileDateHash": 2087656114,
+      "fingerprint": 502278590,
+      "fileDateHash": 1496378698,
       "sectionID": 10,
       "individualFingerprints": [
         76214876,
         104211483,
-        185141743,
         224251200,
         224251200,
         238549645,
-        334182937,
+        261724015,
         348337002,
         357156300,
         470129389,
@@ -2931,7 +2930,6 @@
         489458212,
         489458212,
         511817218,
-        577574098,
         596926845,
         651346693,
         670264443,
@@ -2999,24 +2997,29 @@
         758054953,
         758054953,
         758054953,
+        766468915,
+        787315315,
         857073344,
         859743270,
-        895626878,
         944161705,
+        1025729508,
+        1039751739,
+        1039751739,
+        1039751739,
         1049208896,
+        1082512192,
+        1228653051,
         1254400901,
         1254400901,
         1254400901,
         1254400901,
         1254400901,
-        1254856108,
         1270885549,
         1272082549,
         1276289540,
         1295220252,
-        1317944652,
-        1340488222,
         1349454912,
+        1351734094,
         1359558836,
         1400553436,
         1434413545,
@@ -3055,6 +3058,7 @@
         1557639507,
         1630841079,
         1641596518,
+        1641596518,
         1642873368,
         1642873368,
         1642873368,
@@ -3075,12 +3079,10 @@
         1642873368,
         1663481671,
         1693879903,
-        1698263236,
         1698358607,
-        1734216100,
         1769506510,
-        1781610720,
         1803953797,
+        1855250806,
         1856267878,
         1899907696,
         1933912390,
@@ -3088,13 +3090,12 @@
         1999430930,
         2042415845,
         2048114197,
+        2051404859,
         2065865292,
         2072787070,
         2073673493,
+        2103002899,
         2134256421,
-        2149848532,
-        2171607902,
-        2171698943,
         2251921869,
         2293071092,
         2303851728,
@@ -3102,10 +3103,11 @@
         2315620748,
         2368717167,
         2429635326,
-        2460716397,
         2471022623,
-        2618029578,
+        2582995160,
         2643933950,
+        2648196222,
+        2664721015,
         2668031901,
         2675155327,
         2798999977,
@@ -3119,6 +3121,7 @@
         3028428630,
         3028428630,
         3028428630,
+        3029969323,
         3052982433,
         3069370039,
         3071472945,
@@ -3127,9 +3130,10 @@
         3134755400,
         3147448740,
         3154221663,
+        3168481442,
         3184781582,
         3188217987,
-        3228919091,
+        3205063185,
         3236926897,
         3249427153,
         3269450270,
@@ -3144,22 +3148,16 @@
         3465709396,
         3504957455,
         3519152896,
-        3581565550,
         3582932549,
         3606447412,
         3681151794,
-        3713324440,
         3717313709,
         3726824179,
-        3740285672,
         3764626635,
         3772536096,
         3820414998,
         3820414998,
         3873061024,
-        3873517187,
-        3873517187,
-        3873517187,
         3916773469,
         3926815820,
         3950361074,
@@ -3169,18 +3167,20 @@
         4028117402,
         4036422720,
         4045227158,
-        4056284002,
         4080958776,
         4143384889,
+        4160053958,
+        4172564653,
         4213863462,
         4234620829,
+        4251381010,
         4272588933,
         4294960217
       ],
       "status": 1,
-      "timestamp": "2019-10-27T10:39:42.0304021Z",
-      "lastWriteTimeUtc": "2019-10-27T10:37:52.8718009Z",
-      "queryTimestamp": "2019-11-12T18:43:09.611319Z",
+      "timestamp": "2019-11-12T19:21:46.2516418Z",
+      "lastWriteTimeUtc": "2019-11-12T19:16:40.7912899Z",
+      "queryTimestamp": "2019-11-12T19:21:49.2626243Z",
       "fileCount": 26,
       "fileSize": 0
     },
@@ -3738,6 +3738,21 @@
       "queryTimestamp": "2019-11-12T18:43:09.6272843Z",
       "fileCount": 1,
       "fileSize": 262973
+    },
+    {
+      "folderName": "valkyrielib-1.12.2-2.0.20.1.jar",
+      "fingerprint": 791322360,
+      "fileDateHash": 2693276275,
+      "sectionID": 8,
+      "individualFingerprints": [
+        791322360
+      ],
+      "status": 1,
+      "timestamp": "2019-11-12T19:11:30.4979373Z",
+      "lastWriteTimeUtc": "2019-11-12T18:45:16.0833701Z",
+      "queryTimestamp": "2019-11-12T19:11:33.0237672Z",
+      "fileCount": 1,
+      "fileSize": 733580
     },
     {
       "folderName": "Forgelin-1.8.4.jar",
@@ -4775,21 +4790,6 @@
       "fileSize": 16612
     },
     {
-      "folderName": "valkyrielib-1.12.2-2.0.19.1.jar",
-      "fingerprint": 2742610829,
-      "fileDateHash": 3676776955,
-      "sectionID": 8,
-      "individualFingerprints": [
-        2742610829
-      ],
-      "status": 1,
-      "timestamp": "2019-07-22T18:05:24.8554518Z",
-      "lastWriteTimeUtc": "2019-01-17T07:31:29.9888546Z",
-      "queryTimestamp": "2019-11-12T18:43:09.6562841Z",
-      "fileCount": 1,
-      "fileSize": 725317
-    },
-    {
       "folderName": "ThaumicJEI-1.12.2-1.5.8-26.jar",
       "fingerprint": 401957822,
       "fileDateHash": 2308924061,
@@ -5403,7 +5403,7 @@
     }
   ],
   "isValid": true,
-  "lastPreviousMatchUpdate": "2019-11-12T18:43:11.3285316Z",
+  "lastPreviousMatchUpdate": "2019-11-12T19:21:49.9766249Z",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.12.2",
@@ -5513,7 +5513,7 @@
       "dateInstalled": "2019-06-28T17:26:17.7676255Z",
       "dateUpdated": "2019-11-12T18:32:25.078111Z",
       "dateLastUpdateAttempted": "2019-11-12T18:32:25.078111Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -6094,7 +6094,7 @@
       "dateInstalled": "2019-01-11T20:20:50.4642221Z",
       "dateUpdated": "2019-11-12T18:35:39.2951168Z",
       "dateLastUpdateAttempted": "2019-11-12T18:35:39.2951168Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -8093,7 +8093,7 @@
       "dateInstalled": "2019-06-28T17:26:17.7786235Z",
       "dateUpdated": "2019-11-12T18:35:28.9937905Z",
       "dateLastUpdateAttempted": "2019-11-12T18:35:28.9937905Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -8595,26 +8595,26 @@
       "addonID": 304024,
       "gameInstanceID": "6504a136-e79d-4ffb-b0ab-60e3e95b9507",
       "installedFile": {
-        "id": 2726967,
-        "displayName": "AE2WTLib-1.12.2-1.0.30.jar",
-        "fileName": "AE2WTLib-1.12.2-1.0.30.jar",
-        "fileDate": "2019-06-19T21:33:14.43Z",
-        "fileLength": 241857,
+        "id": 2829802,
+        "displayName": "AE2WTLib-1.12.2-1.0.33.jar",
+        "fileName": "AE2WTLib-1.12.2-1.0.33.jar",
+        "fileDate": "2019-11-20T01:30:05.863Z",
+        "fileLength": 245782,
         "releaseType": 2,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2726/967/AE2WTLib-1.12.2-1.0.30.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/2829/802/AE2WTLib-1.12.2-1.0.33.jar",
         "isAlternate": false,
-        "alternateFileId": 2726969,
+        "alternateFileId": 2829803,
         "dependencies": [
           {
             "id": 0,
-            "addonId": 255232,
+            "addonId": 223794,
             "type": 3,
             "fileId": 0
           },
           {
             "id": 0,
-            "addonId": 223794,
+            "addonId": 255232,
             "type": 3,
             "fileId": 0
           }
@@ -8623,22 +8623,22 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 700632143,
+            "fingerprint": 877554684,
             "type": 0
           },
           {
             "foldername": "assets",
-            "fingerprint": 575807367,
+            "fingerprint": 3245661560,
             "type": 0
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 3039969510,
+            "fingerprint": 376538656,
             "type": 0
           },
           {
             "foldername": "p455w0rd",
-            "fingerprint": 2854820997,
+            "fingerprint": 4030456465,
             "type": 0
           },
           {
@@ -8647,7 +8647,7 @@
             "type": 0
           }
         ],
-        "packageFingerprint": 2963571368,
+        "packageFingerprint": 4009154373,
         "gameVersion": [
           "1.12.2"
         ],
@@ -8660,11 +8660,11 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "AE2WTLib-1.12.2-1.0.30.jar"
+        "FileNameOnDisk": "AE2WTLib-1.12.2-1.0.33.jar"
       },
       "dateInstalled": "2019-01-11T20:11:50.1239952Z",
-      "dateUpdated": "2019-11-12T18:27:04.5614347Z",
-      "dateLastUpdateAttempted": "2019-11-12T18:27:04.5614347Z",
+      "dateUpdated": "2019-11-20T18:36:59.7943643Z",
+      "dateLastUpdateAttempted": "2019-11-20T18:36:59.7943643Z",
       "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
@@ -9046,7 +9046,7 @@
       "dateInstalled": "2019-06-28T17:26:17.7996353Z",
       "dateUpdated": "2019-11-12T18:32:43.2825436Z",
       "dateLastUpdateAttempted": "2019-11-12T18:32:43.2825436Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -9131,7 +9131,7 @@
       "dateInstalled": "2019-07-24T17:53:34.6098152Z",
       "dateUpdated": "2019-11-12T18:33:28.5244762Z",
       "dateLastUpdateAttempted": "2019-11-12T18:33:28.5244762Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -9393,7 +9393,7 @@
       "dateInstalled": "2019-07-24T17:52:54.401731Z",
       "dateUpdated": "2019-11-12T18:32:55.2710819Z",
       "dateLastUpdateAttempted": "2019-11-12T18:32:55.2710819Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -9835,7 +9835,7 @@
       "dateInstalled": "2019-07-24T17:49:52.2524757Z",
       "dateUpdated": "2019-11-12T18:32:02.6491193Z",
       "dateLastUpdateAttempted": "2019-11-12T18:32:02.6491193Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -10000,7 +10000,7 @@
       "dateInstalled": "2019-07-23T04:18:04.7042344Z",
       "dateUpdated": "2019-11-12T18:32:11.5464989Z",
       "dateLastUpdateAttempted": "2019-11-12T18:32:11.5464989Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -10463,95 +10463,83 @@
       "addonID": 237102,
       "gameInstanceID": "6504a136-e79d-4ffb-b0ab-60e3e95b9507",
       "installedFile": {
-        "id": 2825576,
-        "displayName": "FTBUtilities-5.4.0.121.jar",
-        "fileName": "FTBUtilities-5.4.0.121.jar",
-        "fileDate": "2019-11-11T00:08:41.42Z",
-        "fileLength": 423935,
+        "id": 2826822,
+        "displayName": "FTBUtilities-5.4.0.122.jar",
+        "fileName": "FTBUtilities-5.4.0.122.jar",
+        "fileDate": "2019-11-13T17:00:58.82Z",
+        "fileLength": 423771,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2825/576/FTBUtilities-5.4.0.121.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/2826/822/FTBUtilities-5.4.0.122.jar",
         "isAlternate": false,
-        "alternateFileId": 2825577,
+        "alternateFileId": 2826823,
         "dependencies": [
           {
-            "id": 33086035,
-            "addonId": 32274,
-            "type": 2,
-            "fileId": 2825576
-          },
-          {
-            "id": 33086036,
-            "addonId": 237167,
-            "type": 3,
-            "fileId": 2825576
-          },
-          {
-            "id": 33086034,
+            "id": 0,
             "addonId": 314904,
             "type": 3,
-            "fileId": 2825576
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 32274,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 237167,
+            "type": 3,
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1579808014,
-            "type": 3
+            "fingerprint": 3439550442,
+            "type": 0
           },
           {
             "foldername": "com",
-            "fingerprint": 3365842818,
-            "type": 3
+            "fingerprint": 2295457228,
+            "type": 0
           },
           {
             "foldername": "assets",
             "fingerprint": 328449044,
-            "type": 3
+            "type": 0
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 2315989403,
-            "type": 3
+            "type": 0
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 1293694256,
-            "type": 3
+            "fingerprint": 1534679064,
+            "type": 0
           }
         ],
-        "packageFingerprint": 3292332824,
+        "packageFingerprint": 1837186609,
         "gameVersion": [
           "1.12.2"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000012.0000000002",
-            "gameVersion": "1.12.2",
-            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 1700520,
-        "projectId": 237102,
-        "packageFingerprintId": 377168611,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 1998897,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "FTBUtilities-5.4.0.121.jar"
+        "FileNameOnDisk": "FTBUtilities-5.4.0.122.jar"
       },
       "dateInstalled": "2019-11-12T18:43:11.3275274Z",
-      "dateUpdated": "2018-11-12T18:43:11.3275274Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2019-11-20T18:40:02.7023695Z",
+      "dateLastUpdateAttempted": "2019-11-20T18:40:02.7023695Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -10715,7 +10703,7 @@
       "dateInstalled": "2019-01-17T08:31:33.7715482Z",
       "dateUpdated": "2019-11-12T18:35:18.4356629Z",
       "dateLastUpdateAttempted": "2019-11-12T18:35:18.4356629Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -11306,7 +11294,7 @@
       "dateInstalled": "2019-01-11T20:20:50.4771173Z",
       "dateUpdated": "2019-11-12T18:38:59.4956595Z",
       "dateLastUpdateAttempted": "2019-11-12T18:38:59.4956595Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -11550,7 +11538,7 @@
       "dateInstalled": "2019-07-24T17:53:34.6117966Z",
       "dateUpdated": "2019-11-12T18:34:44.8251002Z",
       "dateLastUpdateAttempted": "2019-11-12T18:34:44.8251002Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -12104,7 +12092,7 @@
       "dateInstalled": "2019-06-28T17:26:17.802624Z",
       "dateUpdated": "2019-11-12T18:30:07.3990911Z",
       "dateLastUpdateAttempted": "2019-11-12T18:30:07.3990911Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -12421,7 +12409,7 @@
       "dateInstalled": "2019-07-24T17:53:53.2920741Z",
       "dateUpdated": "2019-11-12T18:35:36.8993958Z",
       "dateLastUpdateAttempted": "2019-11-12T18:35:36.8993958Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -12751,7 +12739,7 @@
       "dateInstalled": "2019-01-11T20:20:50.4671973Z",
       "dateUpdated": "2019-11-12T18:32:59.1150069Z",
       "dateLastUpdateAttempted": "2019-11-12T18:32:59.1150069Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -14365,7 +14353,7 @@
       "dateInstalled": "2019-01-11T20:11:50.1244912Z",
       "dateUpdated": "2019-11-12T18:26:54.4097732Z",
       "dateLastUpdateAttempted": "2019-11-12T18:26:54.4097732Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -14593,7 +14581,7 @@
       "dateInstalled": "2019-06-28T17:26:17.7846249Z",
       "dateUpdated": "2019-11-12T18:34:27.9132244Z",
       "dateLastUpdateAttempted": "2019-11-12T18:34:27.9132244Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -14858,14 +14846,14 @@
       "addonID": 255232,
       "gameInstanceID": "6504a136-e79d-4ffb-b0ab-60e3e95b9507",
       "installedFile": {
-        "id": 2745046,
-        "displayName": "p455w0rdslib-1.12.2-2.2.156.jar",
-        "fileName": "p455w0rdslib-1.12.2-2.2.156.jar",
-        "fileDate": "2019-07-20T21:22:28.467Z",
-        "fileLength": 373855,
+        "id": 2829707,
+        "displayName": "p455w0rdslib-1.12.2-2.3.159.jar",
+        "fileName": "p455w0rdslib-1.12.2-2.3.159.jar",
+        "fileDate": "2019-11-19T20:53:08.617Z",
+        "fileLength": 329310,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2745/46/p455w0rdslib-1.12.2-2.2.156.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/2829/707/p455w0rdslib-1.12.2-2.3.159.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
@@ -14886,22 +14874,22 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3597353464,
+            "fingerprint": 380701800,
             "type": 0
           },
           {
             "foldername": "assets",
-            "fingerprint": 675317848,
+            "fingerprint": 3821096914,
             "type": 0
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 2843932957,
+            "fingerprint": 4211530017,
             "type": 0
           },
           {
             "foldername": "p455w0rdslib",
-            "fingerprint": 3993228216,
+            "fingerprint": 3585495575,
             "type": 0
           },
           {
@@ -14910,8 +14898,9 @@
             "type": 0
           }
         ],
-        "packageFingerprint": 941093474,
+        "packageFingerprint": 1590875375,
         "gameVersion": [
+          "Forge",
           "1.12.2"
         ],
         "hasInstallScript": false,
@@ -14923,11 +14912,11 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "p455w0rdslib-1.12.2-2.2.156.jar"
+        "FileNameOnDisk": "p455w0rdslib-1.12.2-2.3.159.jar"
       },
       "dateInstalled": "2019-01-11T20:20:50.4910053Z",
-      "dateUpdated": "2019-11-12T18:35:59.9320067Z",
-      "dateLastUpdateAttempted": "2019-11-12T18:35:59.9320067Z",
+      "dateUpdated": "2019-11-20T18:44:53.7368476Z",
+      "dateLastUpdateAttempted": "2019-11-20T18:44:53.7368476Z",
       "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
@@ -15105,7 +15094,7 @@
       "dateInstalled": "2019-01-17T08:31:33.7849389Z",
       "dateUpdated": "2019-06-28T17:11:49.5468169Z",
       "dateLastUpdateAttempted": "2019-06-28T17:11:49.5468169Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -15179,7 +15168,7 @@
       "dateInstalled": "2019-01-17T08:31:33.772042Z",
       "dateUpdated": "2019-11-12T18:32:38.805394Z",
       "dateLastUpdateAttempted": "2019-11-12T18:32:38.805394Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -15491,7 +15480,7 @@
       "dateInstalled": "2019-06-28T17:26:17.7636223Z",
       "dateUpdated": "2019-11-12T18:28:08.1121814Z",
       "dateLastUpdateAttempted": "2019-11-12T18:28:08.1121814Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -15573,7 +15562,7 @@
       "dateInstalled": "2019-06-28T17:26:17.7766237Z",
       "dateUpdated": "2019-11-12T18:36:10.8735592Z",
       "dateLastUpdateAttempted": "2019-11-12T18:36:10.8735592Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -15905,7 +15894,7 @@
       "dateInstalled": "2019-01-21T12:17:15.1311561Z",
       "dateUpdated": "2019-11-12T18:35:54.6150513Z",
       "dateLastUpdateAttempted": "2019-11-12T18:35:54.6150513Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -16195,7 +16184,7 @@
       "dateInstalled": "2019-09-02T18:11:37.594657Z",
       "dateUpdated": "2019-11-12T18:33:08.3244062Z",
       "dateLastUpdateAttempted": "2019-11-12T18:33:08.3244062Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -16609,7 +16598,7 @@
       "dateInstalled": "2019-01-11T20:20:50.4989413Z",
       "dateUpdated": "2019-11-12T18:35:05.5477184Z",
       "dateLastUpdateAttempted": "2019-11-12T18:35:05.5477184Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -16989,7 +16978,7 @@
       "dateInstalled": "2019-01-17T08:31:33.7675802Z",
       "dateUpdated": "2019-11-12T18:28:03.5180015Z",
       "dateLastUpdateAttempted": "2019-11-12T18:28:03.5180015Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -17326,7 +17315,7 @@
       "dateInstalled": "2019-01-11T20:20:50.4810884Z",
       "dateUpdated": "2019-11-12T18:36:05.3301981Z",
       "dateLastUpdateAttempted": "2019-11-12T18:36:05.3301981Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -17410,7 +17399,7 @@
       "dateInstalled": "2019-06-28T17:26:17.7656327Z",
       "dateUpdated": "2019-11-12T18:33:12.542862Z",
       "dateLastUpdateAttempted": "2019-11-12T18:33:12.542862Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -18064,7 +18053,7 @@
       "dateInstalled": "2019-07-23T04:20:00.935819Z",
       "dateUpdated": "2019-07-23T04:20:00.9477874Z",
       "dateLastUpdateAttempted": "2019-07-23T04:20:00.9477874Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -18228,7 +18217,7 @@
       "dateInstalled": "2019-07-23T04:18:22.3135229Z",
       "dateUpdated": "2019-11-12T18:35:02.5216431Z",
       "dateLastUpdateAttempted": "2019-11-12T18:35:02.5216431Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -19093,7 +19082,7 @@
       "dateInstalled": "2019-05-15T09:47:30.1256542Z",
       "dateUpdated": "2019-10-15T18:53:19.2348818Z",
       "dateLastUpdateAttempted": "2019-10-15T18:53:19.2348818Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -19292,7 +19281,7 @@
       "dateInstalled": "2019-01-17T08:31:33.785434Z",
       "dateUpdated": "2019-11-12T18:33:18.9446575Z",
       "dateLastUpdateAttempted": "2019-11-12T18:33:18.9446575Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -20100,7 +20089,7 @@
       "dateInstalled": "2019-06-28T17:26:17.748624Z",
       "dateUpdated": "2019-11-12T18:33:15.4249843Z",
       "dateLastUpdateAttempted": "2019-11-12T18:33:15.4249843Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -20622,7 +20611,7 @@
       "dateInstalled": "2019-06-28T17:26:17.7986221Z",
       "dateUpdated": "2019-11-12T18:45:16.0993157Z",
       "dateLastUpdateAttempted": "2019-11-12T18:45:16.0993157Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -21178,7 +21167,7 @@
       "dateInstalled": "2019-06-28T17:26:17.7856311Z",
       "dateUpdated": "2019-11-12T18:38:53.9106806Z",
       "dateLastUpdateAttempted": "2019-11-12T18:38:53.9106806Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -22525,7 +22514,7 @@
       "dateInstalled": "2019-07-24T17:51:43.9643932Z",
       "dateUpdated": "2019-11-12T18:33:01.2865551Z",
       "dateLastUpdateAttempted": "2019-11-12T18:33:01.2865551Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -22614,27 +22603,27 @@
       "addonID": 238856,
       "gameInstanceID": "6504a136-e79d-4ffb-b0ab-60e3e95b9507",
       "installedFile": {
-        "id": 2817843,
-        "displayName": "BetterQuesting-3.5.316.jar",
-        "fileName": "BetterQuesting-3.5.316.jar",
-        "fileDate": "2019-10-28T09:14:07.177Z",
-        "fileLength": 1379650,
+        "id": 2828947,
+        "displayName": "BetterQuesting-3.5.317.jar",
+        "fileName": "BetterQuesting-3.5.317.jar",
+        "fileDate": "2019-11-18T03:57:14.557Z",
+        "fileLength": 1378492,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2817/843/BetterQuesting-3.5.316.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/2828/947/BetterQuesting-3.5.317.jar",
         "isAlternate": false,
-        "alternateFileId": 2817844,
+        "alternateFileId": 2828948,
         "dependencies": [],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 633193637,
+            "fingerprint": 1966102119,
             "type": 0
           },
           {
             "foldername": "betterquesting",
-            "fingerprint": 2660356402,
+            "fingerprint": 2860978996,
             "type": 0
           },
           {
@@ -22644,7 +22633,7 @@
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 3277110871,
+            "fingerprint": 2908706413,
             "type": 0
           },
           {
@@ -22653,7 +22642,7 @@
             "type": 0
           }
         ],
-        "packageFingerprint": 1713563005,
+        "packageFingerprint": 2701444923,
         "gameVersion": [
           "1.12.2"
         ],
@@ -22666,11 +22655,11 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "BetterQuesting-3.5.316.jar"
+        "FileNameOnDisk": "BetterQuesting-3.5.317.jar"
       },
       "dateInstalled": "2019-09-08T08:13:25.9155812Z",
-      "dateUpdated": "2019-11-12T18:30:51.0921976Z",
-      "dateLastUpdateAttempted": "2019-11-12T18:30:51.0921976Z",
+      "dateUpdated": "2019-11-20T18:37:06.9651148Z",
+      "dateLastUpdateAttempted": "2019-11-20T18:37:06.9651148Z",
       "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
@@ -22686,27 +22675,27 @@
       "addonID": 238857,
       "gameInstanceID": "6504a136-e79d-4ffb-b0ab-60e3e95b9507",
       "installedFile": {
-        "id": 2814286,
-        "displayName": "StandardExpansion-3.4.169.jar",
-        "fileName": "StandardExpansion-3.4.169.jar",
-        "fileDate": "2019-10-22T13:00:00.893Z",
-        "fileLength": 609363,
+        "id": 2828981,
+        "displayName": "StandardExpansion-3.4.171.jar",
+        "fileName": "StandardExpansion-3.4.171.jar",
+        "fileDate": "2019-11-18T05:43:09.057Z",
+        "fileLength": 609489,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2814/286/StandardExpansion-3.4.169.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/2828/981/StandardExpansion-3.4.171.jar",
         "isAlternate": false,
-        "alternateFileId": 2814289,
+        "alternateFileId": 2828982,
         "dependencies": [],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3273220350,
+            "fingerprint": 1728253246,
             "type": 0
           },
           {
             "foldername": "bq_standard",
-            "fingerprint": 3619358393,
+            "fingerprint": 1176282805,
             "type": 0
           },
           {
@@ -22716,7 +22705,7 @@
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 660158333,
+            "fingerprint": 3412157985,
             "type": 0
           },
           {
@@ -22725,7 +22714,7 @@
             "type": 0
           }
         ],
-        "packageFingerprint": 3100486062,
+        "packageFingerprint": 2541874062,
         "gameVersion": [
           "1.12.2"
         ],
@@ -22738,12 +22727,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "StandardExpansion-3.4.169.jar"
+        "FileNameOnDisk": "StandardExpansion-3.4.171.jar"
       },
       "dateInstalled": "2019-09-08T08:13:25.9145635Z",
-      "dateUpdated": "2019-10-27T09:48:17.6094798Z",
-      "dateLastUpdateAttempted": "2019-10-27T09:48:17.6094798Z",
-      "status": 5,
+      "dateUpdated": "2019-11-20T18:37:08.9721157Z",
+      "dateLastUpdateAttempted": "2019-11-20T18:37:08.9721157Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -22902,7 +22891,7 @@
       "dateInstalled": "2019-06-28T17:26:17.7476244Z",
       "dateUpdated": "2019-11-12T18:27:59.1385309Z",
       "dateLastUpdateAttempted": "2019-11-12T18:27:59.1385309Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -23245,7 +23234,7 @@
       "dateInstalled": "2019-01-11T20:20:50.4567812Z",
       "dateUpdated": "2019-10-15T18:47:53.4898877Z",
       "dateLastUpdateAttempted": "2019-10-15T18:47:53.4898877Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -23421,7 +23410,7 @@
       "dateInstalled": "2019-01-11T20:20:50.4984453Z",
       "dateUpdated": "2019-11-12T18:35:12.6673887Z",
       "dateLastUpdateAttempted": "2019-11-12T18:35:12.6673887Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -24326,7 +24315,7 @@
       "dateInstalled": "2019-11-12T18:34:48.9605272Z",
       "dateUpdated": "2019-11-12T18:34:49.082527Z",
       "dateLastUpdateAttempted": "2019-11-12T18:34:49.082527Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -24742,7 +24731,7 @@
       "dateInstalled": "2019-06-28T17:26:17.7796235Z",
       "dateUpdated": "2019-11-12T18:32:37.0722928Z",
       "dateLastUpdateAttempted": "2019-11-12T18:32:37.0722928Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -24757,20 +24746,32 @@
       "addonID": 244559,
       "gameInstanceID": "6504a136-e79d-4ffb-b0ab-60e3e95b9507",
       "installedFile": {
-        "id": 2725872,
-        "displayName": "WirelessCraftingTerminal-1.12.2-3.12.93.jar",
-        "fileName": "WirelessCraftingTerminal-1.12.2-3.12.93.jar",
-        "fileDate": "2019-06-17T16:00:30.89Z",
-        "fileLength": 241658,
+        "id": 2827495,
+        "displayName": "WirelessCraftingTerminal-1.12.2-3.12.96.jar",
+        "fileName": "WirelessCraftingTerminal-1.12.2-3.12.96.jar",
+        "fileDate": "2019-11-15T04:00:15.373Z",
+        "fileLength": 242070,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2725/872/WirelessCraftingTerminal-1.12.2-3.12.93.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/2827/495/WirelessCraftingTerminal-1.12.2-3.12.96.jar",
         "isAlternate": false,
-        "alternateFileId": 2725873,
+        "alternateFileId": 2827496,
         "dependencies": [
           {
             "id": 0,
+            "addonId": 255232,
+            "type": 3,
+            "fileId": 0
+          },
+          {
+            "id": 0,
             "addonId": 227083,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 60089,
             "type": 2,
             "fileId": 0
           },
@@ -24782,19 +24783,7 @@
           },
           {
             "id": 0,
-            "addonId": 242064,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 255232,
-            "type": 3,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 238222,
+            "addonId": 301356,
             "type": 2,
             "fileId": 0
           },
@@ -24806,7 +24795,13 @@
           },
           {
             "id": 0,
-            "addonId": 60089,
+            "addonId": 242064,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 238222,
             "type": 2,
             "fileId": 0
           }
@@ -24815,31 +24810,36 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1366858693,
+            "fingerprint": 4074649396,
             "type": 0
           },
           {
             "foldername": "assets",
-            "fingerprint": 2673756534,
+            "fingerprint": 4173955201,
             "type": 0
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 2547075053,
+            "fingerprint": 1813254665,
             "type": 0
           },
           {
             "foldername": "p455w0rd",
-            "fingerprint": 2039874740,
+            "fingerprint": 3378532853,
             "type": 0
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 3276241846,
             "type": 0
+          },
+          {
+            "foldername": "yalter",
+            "fingerprint": 1252905797,
+            "type": 0
           }
         ],
-        "packageFingerprint": 1476353029,
+        "packageFingerprint": 3497190397,
         "gameVersion": [
           "1.12.2"
         ],
@@ -24852,11 +24852,11 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "WirelessCraftingTerminal-1.12.2-3.12.93.jar"
+        "FileNameOnDisk": "WirelessCraftingTerminal-1.12.2-3.12.96.jar"
       },
       "dateInstalled": "2019-01-11T20:20:50.4919982Z",
-      "dateUpdated": "2019-11-12T18:40:27.3433211Z",
-      "dateLastUpdateAttempted": "2019-11-12T18:40:27.3433211Z",
+      "dateUpdated": "2019-11-20T18:45:05.4389157Z",
+      "dateLastUpdateAttempted": "2019-11-20T18:45:05.4389157Z",
       "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
@@ -25259,7 +25259,7 @@
       "dateInstalled": "2019-09-02T18:11:37.5941582Z",
       "dateUpdated": "2019-11-12T18:32:47.1371418Z",
       "dateLastUpdateAttempted": "2019-11-12T18:32:47.1371418Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -25563,17 +25563,29 @@
       "addonID": 272514,
       "gameInstanceID": "6504a136-e79d-4ffb-b0ab-60e3e95b9507",
       "installedFile": {
-        "id": 2780194,
-        "displayName": "DankNull-1.12.2-1.6.80.jar",
-        "fileName": "DankNull-1.12.2-1.6.80.jar",
-        "fileDate": "2019-09-07T13:51:57.07Z",
-        "fileLength": 342106,
+        "id": 2829709,
+        "displayName": "DankNull-1.12.2-1.7.84.jar",
+        "fileName": "DankNull-1.12.2-1.7.84.jar",
+        "fileDate": "2019-11-19T20:54:22.867Z",
+        "fileLength": 336208,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2780/194/DankNull-1.12.2-1.6.80.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/2829/709/DankNull-1.12.2-1.7.84.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
+          {
+            "id": 0,
+            "addonId": 298187,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 253449,
+            "type": 2,
+            "fileId": 0
+          },
           {
             "id": 0,
             "addonId": 245211,
@@ -25588,19 +25600,7 @@
           },
           {
             "id": 0,
-            "addonId": 255232,
-            "type": 3,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 238222,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 238403,
+            "addonId": 235279,
             "type": 2,
             "fileId": 0
           },
@@ -25612,7 +25612,19 @@
           },
           {
             "id": 0,
-            "addonId": 235279,
+            "addonId": 238222,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 255232,
+            "type": 3,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 238403,
             "type": 2,
             "fileId": 0
           },
@@ -25621,45 +25633,33 @@
             "addonId": 73488,
             "type": 2,
             "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 253449,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 298187,
-            "type": 2,
-            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2744141707,
+            "fingerprint": 39843505,
             "type": 0
           },
           {
             "foldername": "assets",
-            "fingerprint": 1777931468,
+            "fingerprint": 939133799,
             "type": 0
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 359600927,
+            "fingerprint": 135082423,
             "type": 0
           },
           {
             "foldername": "p455w0rd",
-            "fingerprint": 162601185,
+            "fingerprint": 3040071079,
             "type": 0
           },
           {
             "foldername": "pack.mcmeta",
-            "fingerprint": 1771105247,
+            "fingerprint": 2404800588,
             "type": 0
           },
           {
@@ -25668,7 +25668,7 @@
             "type": 0
           }
         ],
-        "packageFingerprint": 2277896355,
+        "packageFingerprint": 1884277556,
         "gameVersion": [
           "Forge",
           "1.12.2"
@@ -25682,11 +25682,11 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "DankNull-1.12.2-1.6.80.jar"
+        "FileNameOnDisk": "DankNull-1.12.2-1.7.84.jar"
       },
       "dateInstalled": "2019-11-12T18:40:48.391251Z",
-      "dateUpdated": "2019-11-12T18:40:48.391251Z",
-      "dateLastUpdateAttempted": "2019-11-12T18:40:48.391251Z",
+      "dateUpdated": "2019-11-20T18:36:57.2680212Z",
+      "dateLastUpdateAttempted": "2019-11-20T18:36:57.2680212Z",
       "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
@@ -26667,7 +26667,7 @@
       "dateInstalled": "2019-06-28T17:26:17.7646239Z",
       "dateUpdated": "2019-11-12T18:36:16.4304702Z",
       "dateLastUpdateAttempted": "2019-11-12T18:36:16.4304702Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,

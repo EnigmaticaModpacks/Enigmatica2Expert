@@ -1,9 +1,22 @@
 # Enigmatica 2: Expert Changelog
 
+## [1.72a](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.72a) (2019-11-17)
+
+**Fixed bugs:**
+
+- IE village buildings have steel tools as loot [\#1428](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1428) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Status: Fixed in Dev](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Fixed%20in%20Dev)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+- Dank/Null Client Crash [\#1426](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1426) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Status: Fixed in Dev](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Fixed%20in%20Dev)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
+- Tinkers' Construct slimes do not spawn [\#1407](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1407) [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+- Halloween Event Crash? [\#1402](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1402) [[Status: Reported](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Reported)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
+- ConcurrentModificationException in p455w0rds-Library [\#1425](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1425) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Status: Fixed in Dev](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Fixed%20in%20Dev)]
+
+
 ## [1.72](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.72) (2019-11-12)
 **Implemented enhancements:**
 
 - Re-add Dank Null [\#1415](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1415) [[Marker: Mod](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Mod)] [[Status: Fixed in Dev](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Fixed%20in%20Dev)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
+- NuclearCraft Ingot Former has a very limited set of recipes.  [\#1408](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1408) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Status: Needs Testing](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Needs%20Testing)] [[Type: Suggestion](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Suggestion)]
+- Add missing ingots/bricks to ingot former [\#1419](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1419) [[Status: Needs Testing](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Needs%20Testing)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)] ([pjc21](https://github.com/pjc21))
 
 **Fixed bugs:**
 
@@ -11,6 +24,7 @@
 - Draconic Armour wont craft  [\#1391](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1391) [[Status: Available](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Available)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - Cannot craft Slimey Generator [\#1385](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1385) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 - Unable to craft creative builders wand [\#1043](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1043) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Priority: Medium](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Medium)] [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+- Draconium Armour requires too much RF to craft [\#1420](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1420) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Status: Fixed in Dev](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Fixed%20in%20Dev)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 
 **Closed issues:**
 
