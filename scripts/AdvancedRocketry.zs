@@ -3,6 +3,9 @@ import mods.jei.JEI.removeAndHide as rh;
 #modloaded advancedrocketry
 print("--- loading AdvancedRocketry.zs ---");
 
+# Vulpes Library Silicon dust Manufactory* Recipe Removal (Credit TheShadoWZYE2)
+	mods.nuclearcraft.manufactory.removeRecipeWithOutput(<libvulpes:productdust:3>);
+	
 # Airtight Seal Enchant
 	recipes.addShapedMirrored("Airtight Seal Enchant", 
 	<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: (<enchantment:advancedrocketry:spacebreathing>.id) as short}]}), 
@@ -75,6 +78,7 @@ print("--- loading AdvancedRocketry.zs ---");
 	val removals = [
 	<libvulpes:productdust:1>,
 	<libvulpes:productdust:2>,
+	<libvulpes:productdust:3>,
 	<libvulpes:productdust:4>,
 	<libvulpes:productdust:5>,
 	<libvulpes:productdust:6>,
