@@ -26,6 +26,11 @@ print("--- loading IceAndFire.zs ---");
 	<iceandfire:witherbone>, 
 	[<tconstruct:materials:17>]);
 	
+# Remove existing Ash -> Charcoal recipe (Credit TheShadoWZYE)
+	recipes.removeShaped(<minecraft:coal:1>, 
+	[[<iceandfire:ash>, <iceandfire:ash>, <iceandfire:ash>],
+	[<iceandfire:ash>, <iceandfire:ash>, <iceandfire:ash>], 
+	[<iceandfire:ash>, <iceandfire:ash>, <iceandfire:ash>]]);
 # Ash -> Coal Coke
 	recipes.addShaped("Ash To Coal Coke", 
 	<immersiveengineering:stone_decoration:3>, 
