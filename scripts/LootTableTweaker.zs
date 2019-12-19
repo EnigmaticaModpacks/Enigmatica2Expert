@@ -9,6 +9,7 @@ var itemsToRemove as string[] = [
 	"forestry:kit_pickaxe",
 	"forestry:kit_shovel",
 	
+	"ic2:ingot:1",
 	"ic2:ingot:2",
 	"ic2:ingot:6",
 	"ic2:bronze_pickaxe",
