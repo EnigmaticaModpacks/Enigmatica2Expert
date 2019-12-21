@@ -1,6 +1,20 @@
 # Enigmatica 2: Expert Changelog
 
-## [Unreleased](https://github.com/NillerMedDild/Enigmatica2Expert/tree/HEAD)
+## [1.73](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.73) (2019-12-21)
+**Implemented enhancements:**
+
+- Re-enabled SmallPropertyStorage in FoamFix, potentially reducing RAM usage by 300-500MB [\#1451](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1451) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
+
+**Fixed bugs:**
+
+- Client crash when using Crescent Hammer on EnderIO Painting Machine [\#1446](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1446)
+- Moving an Iron dropper with a piston crashes games / servers [\#1438](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1438)
+- I&F ash block to coal coke recipe conflict  [\#1434](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1434) [[Marker: Recipe](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Recipe)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+- Crashes with dank/null [\#1432](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1432) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
+- Disconnect after updating from 1.71 to 1.72a [\#1431](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1431) [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+- Crash on viewing Recipe via p445sw0rds Library [\#1429](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1429) [[Status: Fixed in Dev](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Fixed%20in%20Dev)] [[Status: Reported](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Reported)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
+- Changed behaviour for Manufactory/Silicon Ingot [\#1423](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1423) [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
+- Cannot craft Slimey Generator [\#1385](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1385) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Status: Confirmation Needed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Confirmation%20Needed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 
 **Closed issues:**
 
@@ -37,7 +51,6 @@
 
 - Problems crafting Creative Builder's Wand [\#1399](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1399) [[Status: Fixed in Dev](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Fixed%20in%20Dev)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 - Draconic Armour wont craft  [\#1391](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1391) [[Status: Available](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Available)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
-- Cannot craft Slimey Generator [\#1385](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1385) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 - Unable to craft creative builders wand [\#1043](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1043) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Priority: Medium](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Medium)] [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 
 **Closed issues:**
