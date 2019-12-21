@@ -3,25 +3,26 @@ import mods.jei.JEI.removeAndHide as rh;
 import mods.jei.JEI.addDescription as ad;
 print("--- loading Tooltips.zs ---");
 
-# Tooltip vars
-	var vanillaToolTooltip = "Vanilla tools don't work. Use Tinkers' Construct tools.";
-	var rf100000 = "Requires 100.000 RF to make.";
-	var rf200000 = "Requires 200.000 RF to make.";
-	var rf300000 = "Requires 300.000 RF to make.";
-	var mil1 = "Requires 1.000.000 RF to make.";
-	var mil2 = "Requires 2.000.000 RF to make."; 
-	var mil10 = "Requires 10.000.000 RF to make.";
-	var mil12 = "Requires 12.000.000 RF to make.";
-	var mil100 = "Requires 100.000.000 RF to make.";
-	var bil1 = "Requires 1.000.000.000 RF to make.";
-	var atomicReconstructor = "Only obtainable through the Atomic Reconstructor.";
-	var metallurgic = "Only obtainable through the Metallurgic Infuser. Requires 20 Diamond Units.";
-	var craftable = "Craftable.";
-	var spaceGen = "This ore only generates on other planets.";
-	var spaceGenHigh = "Generates in large quantities on other planets.";
-	var mekanismFactories = "Factories are made by upgrading Machines in-world with Basic/Advanced/Elite Tier Installers.";
-	var ic2wrench = "You can safely break IC2 machines with a Pickaxe.";
-	var tempRecipe = "This item has a temporary crafting recipe.";
+var vanillaToolTooltip = "Vanilla tools don't work. Use Tinkers' Construct tools.";
+var rf100000 = "Requires 100.000 RF to make.";
+var rf200000 = "Requires 200.000 RF to make.";
+var rf300000 = "Requires 300.000 RF to make.";
+var mil1 = "Requires 1.000.000 RF to make.";
+var mil2 = "Requires 2.000.000 RF to make."; 
+var mil10 = "Requires 10.000.000 RF to make.";
+var mil12 = "Requires 12.000.000 RF to make.";
+var mil100 = "Requires 100.000.000 RF to make.";
+var bil1 = "Requires 1.000.000.000 RF to make.";
+var atomicReconstructor = "Only obtainable through the Atomic Reconstructor.";
+var metallurgic = "Only obtainable through the Metallurgic Infuser. Requires 20 Diamond Units.";
+var craftable = "Craftable.";
+var spaceGen = "This ore only generates on other planets.";
+var spaceGenHigh = "Generates in large quantities on other planets.";
+var mekanismFactories = "Factories are made by upgrading Machines in-world with Basic/Advanced/Elite Tier Installers.";
+var ic2wrench = "You can safely break IC2 machines with a Pickaxe.";
+var tempRecipe = "This item has a temporary crafting recipe.";
+
+ad(<draconicevolution:creative_exchanger>, "The Resonant Exchanger used to craft the Creative Block Exchanger should be newly crafted, as it must have default settings.");
 
 ad(<thermalexpansion:cache>, "Shift right click with a Crescent Hammer to pick up.", "The Cache retains it's upgrades and inventory.", "Do not break with Pickaxe!");
 
