@@ -22,8 +22,6 @@ var mekanismFactories = "Factories are made by upgrading Machines in-world with 
 var ic2wrench = "You can safely break IC2 machines with a Pickaxe.";
 var tempRecipe = "This item has a temporary crafting recipe.";
 
-ad(<draconicevolution:creative_exchanger>, "The Resonant Exchanger used to craft the Creative Block Exchanger should be newly crafted, as it must have default settings.");
-
 ad(<thermalexpansion:cache>, "Shift right click with a Crescent Hammer to pick up.", "The Cache retains it's upgrades and inventory.", "Do not break with Pickaxe!");
 
 ad(<mekanism:gaugedropper>, "Can be used to clear Mekanism machines of their gases. Simply hold the Gauge Dropper and Shift Left Click the Gas from inside the Machine.");
