@@ -1,11 +1,21 @@
 # Enigmatica 2: Expert Changelog
 
-## [1.73](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.73) (2019-12-21)
-**Implemented enhancements:**
+## [1.74](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.74)
+
+**Changes**
+
+-
+
+**Fixed bugs**
+
+- Server crash with Nature's Compass
+
+## [1.73](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.73) 
+**Changes**
 
 - Re-enabled SmallPropertyStorage in FoamFix, potentially reducing RAM usage by 300-500MB [\#1451](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1451) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
 
-**Fixed bugs:**
+**Fixed bugs**
 
 - Client crash when using Crescent Hammer on EnderIO Painting Machine [\#1446](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1446)
 - Moving an Iron dropper with a piston crashes games / servers [\#1438](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1438)
@@ -15,13 +25,10 @@
 - Crash on viewing Recipe via p445sw0rds Library [\#1429](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1429) [[Status: Fixed in Dev](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Fixed%20in%20Dev)] [[Status: Reported](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Reported)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - Changed behaviour for Manufactory/Silicon Ingot [\#1423](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1423) [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 - Cannot craft Slimey Generator [\#1385](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1385) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Status: Confirmation Needed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Confirmation%20Needed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
-
-**Closed issues:**
-
 - Blue Slime not accessible [\#1424](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1424) [[Status: Confirmation Needed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Confirmation%20Needed)]
 
-## [1.72b](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.72b) (2019-11-20)
-**Fixed bugs:**
+## [1.72b](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.72b) 
+**Fixed bugs**
 
 - IE village buildings have steel tools as loot [\#1428](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1428) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Status: Fixed in Dev](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Fixed%20in%20Dev)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 - Dank/Null Client Crash [\#1426](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1426) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Status: Fixed in Dev](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Fixed%20in%20Dev)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
@@ -32,55 +39,48 @@
 
 - ConcurrentModificationException in p455w0rds-Library [\#1425](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1425) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Status: Fixed in Dev](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Fixed%20in%20Dev)]
 
-## [1.72a](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.72a) (2019-11-17)
-**Implemented enhancements:**
+## [1.72a](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.72a) 
+**Changes**
 
 - NuclearCraft Ingot Former has a very limited set of recipes.  [\#1408](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1408) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Status: Needs Testing](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Needs%20Testing)] [[Type: Suggestion](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Suggestion)]
 - Add missing ingots/bricks to ingot former [\#1419](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1419) [[Status: Needs Testing](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Needs%20Testing)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)] ([pjc21](https://github.com/pjc21))
 
-**Fixed bugs:**
+**Fixed bugs**
 
 - Draconium Armour requires too much RF to craft [\#1420](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1420) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Status: Fixed in Dev](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Fixed%20in%20Dev)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 
-## [1.72](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.72) (2019-11-12)
-**Implemented enhancements:**
+## [1.72](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.72) 
+**Changes**
 
 - Re-add Dank Null [\#1415](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1415) [[Marker: Mod](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Mod)] [[Status: Fixed in Dev](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Fixed%20in%20Dev)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
 
-**Fixed bugs:**
+**Fixed bugs**
 
 - Problems crafting Creative Builder's Wand [\#1399](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1399) [[Status: Fixed in Dev](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Fixed%20in%20Dev)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 - Draconic Armour wont craft  [\#1391](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1391) [[Status: Available](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Available)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - Unable to craft creative builders wand [\#1043](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1043) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Priority: Medium](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Medium)] [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 
-**Closed issues:**
-
-- Right-Clicking P2P tunnel with atomic disassembler changes it's type to FE from ME [\#1411](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1411)
-- Suggestion: make Enderman heads from Enderman Essence [\#1409](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1409)
-- Twitch can't update modpack [\#1405](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1405)
-- Black Quartz Duplication [\#1395](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1395) [[Status: Cannot Reproduce](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Cannot%20Reproduce)]
-
 **Merged pull requests:**
 
 - Fix \#1403 by using Enchantment Bracket Handler [\#1406](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1406) ([MaxNeedsSnacks](https://github.com/MaxNeedsSnacks))
 
-## [1.71](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.71) (2019-10-23)
-**Fixed bugs:**
+## [1.71](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.71) 
+**Fixed bugs**
 
 - FoamFix Startup Crash [\#1384](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1384) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 
-## [1.70c](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.70c) (2019-10-21)
+## [1.70c](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.70c) 
 **Closed issues:**
 
-- Crash when veu. [\#1380](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1380)
+- Unknown crash, issue has been deleted.
 
-## [1.70b](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.70b) (2019-10-19)
-**Fixed bugs:**
+## [1.70b](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.70b) 
+**Fixed bugs**
 
 - After 1.70 update, now creating Mekanism steel instead of Thermal [\#1378](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1378) [[Priority: Critical](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Critical)] [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 
-## [1.70a](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.70a) (2019-10-17)
-**Implemented enhancements:**
+## [1.70a](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.70a) 
+**Changes**
 
 - Disabled Mekanism WalkieTalkie Server [\#1347](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1347) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
 - Removed Modular Diversity [\#1343](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1343) [[Marker: Mod](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Mod)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
@@ -91,7 +91,7 @@
 - Feature Request: Ultimate Stew/ Cosmic Meatballs Nutrition [\#1242](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1242) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Type: Suggestion](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Suggestion)]
 - Update Ice & Fire to version 1.8.1 [\#1340](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1340) [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)] ([Ricket](https://github.com/Ricket))
 
-**Fixed bugs:**
+**Fixed bugs**
 
 - Quest book completion glitch  [\#1375](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1375) [[Status: Reported](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Reported)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - Mekanism Induction Matrix shows wrong values. [\#1361](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1361) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Status: Reported](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Reported)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
@@ -116,8 +116,8 @@
 - nbt mismatch with creative tank [\#1300](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1300) [[Status: Cannot Reproduce](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Cannot%20Reproduce)]
 - EU2 Coils not able to be used as fuel \(Same as \#651\) [\#1284](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1284) [[Status: Cannot Reproduce](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Cannot%20Reproduce)]
 
-## [1.68](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.68) (2019-09-01)
-**Fixed bugs:**
+## [1.68](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.68) 
+**Fixed bugs**
 
 - Bibliocraft bookcase can not accept Integrated Dynamics book [\#1307](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1307) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Status: Fixed in Dev](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Fixed%20in%20Dev)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 - \[CoFH World\] Parse error [\#1306](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1306) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
@@ -136,8 +136,8 @@
 
 - Few questbook updates [\#1335](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1335) ([Discomanco](https://github.com/Discomanco))
 
-## [1.67](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.67) (2019-07-31)
-**Implemented enhancements:**
+## [1.67](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.67) 
+**Changes**
 
 - Feature Request: Add Ender IO Ender tools harvest level [\#1297](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1297) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Type: Suggestion](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Suggestion)]
 
@@ -147,13 +147,12 @@
 - Expert Java not responding [\#1285](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1285)
 - Advanced Rocketry Space station cannot be used by multiple players [\#1252](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1252) [[Status: Cannot Reproduce](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Cannot%20Reproduce)]
 
-## [1](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1) (2019-07-24)
-## [1.66](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.66) (2019-07-22)
-**Implemented enhancements:**
+## [1.66](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.66) 
+**Changes**
 
 - \[Suggestion\] Allow the Immersive Engineering Metal Press to make Uranium Plate [\#1264](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1264) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Suggestion](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Suggestion)]
 
-**Fixed bugs:**
+**Fixed bugs**
 
 - Shulker Crash [\#1273](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1273) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - \[1.65c\] /dank/null crash due to linkage issue with p455w0rdslib [\#1268](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1268) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
@@ -164,9 +163,9 @@
 - Unable to attune Mantle of Stars [\#1198](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1198) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - Dupe bug with /dank/null [\#1015](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1015) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 
-## [1.65a](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.65a) (2019-06-28)
-## [1.65](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.65) (2019-06-28)
-**Implemented enhancements:**
+## [1.65a](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.65a) 
+## [1.65](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.65) 
+**Changes**
 
 - \[Suggestion\] Overloaded Armor Bar and Armor Toughness Bar [\#1227](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1227) [[Marker: Mod](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Mod)] [[Type: Suggestion](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Suggestion)]
 - EnderIO protectAgainstEnergyOverflow Set to Soft [\#1205](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1205) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
@@ -177,7 +176,7 @@
 - More Exploration [\#692](https://github.com/NillerMedDild/Enigmatica2Expert/issues/692) [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)] [[Type: Suggestion](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Suggestion)]
 - More Exploration [\#692](https://github.com/NillerMedDild/Enigmatica2Expert/issues/692) [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)] [[Type: Suggestion](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Suggestion)]
 
-**Fixed bugs:**
+**Fixed bugs**
 
 - DE Creative Exchanger Recipe Fixed [\#1220](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1220) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 - Error When Loading the Modpack: "Mod IDs can't be resolved" [\#1206](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1206) [[Status: Blocked](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Blocked)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
@@ -197,13 +196,8 @@
 - Mekanism Digital Miner can be manipulated to get specific TC crystal [\#1028](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1028) [[Priority: Medium](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Medium)] [[Status: Reported](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Reported)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - Death from self-sacrifice dagger does not create grave, all items lost [\#800](https://github.com/NillerMedDild/Enigmatica2Expert/issues/800) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Status: Confirmation Needed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Confirmation%20Needed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 
-**Closed issues:**
-
-- Ender IO Conduits: High CPU utilization. [\#1190](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1190)
-- Difficulty Persistence Anomaly? [\#1120](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1120) [[Status: Cannot Reproduce](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Cannot%20Reproduce)]
-
-## [1.64](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.64) (2019-05-03)
-**Fixed bugs:**
+## [1.64](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.64) 
+**Fixed bugs**
 
 - Weird hovering issue after update [\#1166](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1166) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 
@@ -211,29 +205,25 @@
 
 - Update tileEntityMode to new config format. [\#1169](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1169) ([cridenour](https://github.com/cridenour))
 
-## [1.63a](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.63a) (2019-04-30)
-**Implemented enhancements:**
+## [1.63a](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.63a) 
+**Changes**
 
 - Subtle Server Advertising [\#1161](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1161) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Priority: High](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20High)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
 
-**Fixed bugs:**
+**Fixed bugs**
 
 - Crashing when using Building Gadgets [\#1138](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1138) [[Priority: High](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20High)] [[Status: Help Wanted](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Help%20Wanted)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - Crafted AE2 Seeds are not accepted by Enrichment Chamber or Phytogenic Insolator [\#1114](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1114) [[Status: Fixed in Dev](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Fixed%20in%20Dev)] [[Status: Reported](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Reported)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - \[1.60\] Thaumcraft aspects not working in JEI [\#1092](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1092) [[Status: Available](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Available)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 
-**Closed issues:**
-
-- Run /bq\_admin default load [\#1150](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1150) [[Type: Maintenance](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Maintenance)]
-
-## [1.63](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.63) (2019-04-29)
-**Implemented enhancements:**
+## [1.63](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.63) 
+**Changes**
 
 - Akashic Tome Additions [\#1147](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1147) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Priority: Low](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Low)] [[Type: Suggestion](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Suggestion)]
 - Feature Request [\#1143](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1143) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Priority: Low](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Low)] [[Type: Suggestion](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Suggestion)]
 - Ice&Fire Siren Changes [\#1124](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1124) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
 
-**Fixed bugs:**
+**Fixed bugs**
 
 - Creative Powercell Quest Text [\#1146](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1146) [[Marker: Quest](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Quest)] [[Priority: Low](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Low)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 - Compact Machines crash when changing its name. [\#1142](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1142) [[Status: Cannot Reproduce](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Cannot%20Reproduce)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
@@ -241,11 +231,6 @@
 - Black Hole Storage [\#1130](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1130) [[Marker: Quest](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Quest)] [[Priority: Low](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Low)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 - Mekanism crash [\#1110](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1110) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - IC2 RTG exploit? [\#990](https://github.com/NillerMedDild/Enigmatica2Expert/issues/990) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Priority: Medium](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Medium)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
-
-**Closed issues:**
-
-- Crash while trying to put lapis through a enrichment factory [\#1140](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1140) [[Status: Cannot Reproduce](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Cannot%20Reproduce)]
-- Extra utilities 2 [\#1128](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1128)
 
 **Merged pull requests:**
 
@@ -256,8 +241,8 @@
 - Added Infinity Drill to Tool Overwrites Config [\#1123](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1123) ([MaxNeedsSnacks](https://github.com/MaxNeedsSnacks))
 - Loot Chest Rewards 3 to 1 [\#1113](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1113) ([Discomanco](https://github.com/Discomanco))
 
-## [1.62](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.62) (2019-04-14)
-**Fixed bugs:**
+## [1.62](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.62) 
+**Fixed bugs**
 
 - architecture Craft in a /dank/null/MK IV crash minecraft on select [\#1103](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1103) [[Status: Reported](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Reported)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - Keybinding For Fullscreen - Disabled Fullscreen Borderless by default, can be changed by the player [\#1089](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1089) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
@@ -265,12 +250,8 @@
 - Automated User uncraftable [\#1084](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1084) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 - Industrial Foregoing BlackHole Controller Dupe Bug [\#1048](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1048) [[Priority: Low](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Low)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 
-**Closed issues:**
-
-- Move Black Hole Controller Recipe to new Black Hole Controller [\#1102](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1102) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Priority: Low](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Low)]
-
-## [1.61](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.61) (2019-04-14)
-**Implemented enhancements:**
+## [1.61](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.61) 
+**Changes**
 
 - Swap Mekanica with Mekanism [\#1093](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1093) [[Marker: Mod](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Mod)] [[Priority: Medium](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Medium)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
 - Infinity Drill has too low mining level [\#1079](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1079) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Priority: Low](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Low)] [[Status: Fixed in Dev](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Fixed%20in%20Dev)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
@@ -281,7 +262,7 @@
 - Crude Oil JEI Description [\#1062](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1062) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Priority: Low](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Low)] [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
 - Additional Tips [\#74](https://github.com/NillerMedDild/Enigmatica2Expert/issues/74) [[Status: Help Wanted](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Help%20Wanted)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
 
-**Fixed bugs:**
+**Fixed bugs**
 
 - Relog makes space station go back to earth [\#1097](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1097) [[Status: Reported](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Reported)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - Botania Ring of Magnetism Crash [\#1088](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1088) [[Status: Fixed in Dev](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Fixed%20in%20Dev)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
@@ -298,26 +279,19 @@
 - Make Unique Ores Available from Orbital Laser Drill [\#693](https://github.com/NillerMedDild/Enigmatica2Expert/issues/693) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 - Smart Output breaks instantly with hand [\#648](https://github.com/NillerMedDild/Enigmatica2Expert/issues/648) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 
-**Closed issues:**
-
-- \[1.60\] Mekanica jetpack [\#1099](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1099) [[Type: Maintenance](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Maintenance)]
-- I think Ender IO is causing server lag on a singleplayer world  [\#1083](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1083) [[Type: Maintenance](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Maintenance)]
-- Cannot Download the pack [\#1080](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1080) [[Priority: High](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20High)] [[Status: Cannot Reproduce](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Cannot%20Reproduce)] [[Type: Maintenance](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Maintenance)]
-- Modular Machinery Power fluctuation / FluxNetworks [\#1065](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1065)
-
 **Merged pull requests:**
 
 - Upped Infinity Drill Mining Level [\#1081](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1081) ([MaxNeedsSnacks](https://github.com/MaxNeedsSnacks))
 
-## [1.60](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.60) (2019-04-07)
-**Implemented enhancements:**
+## [1.60](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.60) 
+**Changes**
 
 - Phosphor [\#1061](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1061) [[Marker: Mod](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Mod)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
 - Buff Environmental Tech Solar? [\#1034](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1034) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
 - Enable Mystical Agriculture Brass Seeds? [\#1033](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1033) [[Type: Suggestion](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Suggestion)]
 - Add Loot Capacitor Tooltips [\#936](https://github.com/NillerMedDild/Enigmatica2Expert/issues/936) [[Marker: Mod](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Mod)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
 
-**Fixed bugs:**
+**Fixed bugs**
 
 - Thermal Expansion JEI plugin not working [\#1052](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1052) [[Status: Reported](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Reported)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - typo in Chaotic Sharpening Kit quest description [\#1022](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1022) [[Marker: Quest](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Quest)] [[Priority: Low](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Low)] [[Status: Fixed in Dev](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Fixed%20in%20Dev)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
@@ -326,38 +300,26 @@
 - Creative Gas Tank Frame & Master Trophy Model Bugs [\#763](https://github.com/NillerMedDild/Enigmatica2Expert/issues/763) [[Priority: High](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20High)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 - Pams saplings cant be placed on biomes o plenty grass [\#558](https://github.com/NillerMedDild/Enigmatica2Expert/issues/558) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 
-**Closed issues:**
-
-- Smart Output, prevent insta-breaking it [\#1071](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1071) [[todo :spiral_notepad:](https://github.com/NillerMedDild/Enigmatica2Expert/labels/todo%20:spiral_notepad:)]
-- Three issues [\#1038](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1038)
-- 1.59a — InvocationTargetException: null \(Client + Server\) [\#1020](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1020) [[Priority: Critical](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Critical)] [[Type: Maintenance](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Maintenance)]
-- IC2 not working inside Compact Machines [\#752](https://github.com/NillerMedDild/Enigmatica2Expert/issues/752) [[Status: Cannot Reproduce](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Cannot%20Reproduce)]
-- Cooking for Blockheads \#No Filter Crash [\#695](https://github.com/NillerMedDild/Enigmatica2Expert/issues/695) [[Status: Cannot Reproduce](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Cannot%20Reproduce)]
-
 **Merged pull requests:**
 
 - Update Unbreakable Wand meta [\#1057](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1057) ([Discomanco](https://github.com/Discomanco))
 - Creative Builders Wand 'uncraftable' [\#1056](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1056) ([Discomanco](https://github.com/Discomanco))
 
-## [1.59a](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.59a) (2019-03-23)
-**Implemented enhancements:**
+## [1.59a](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.59a) 
+**Changes**
 
 - Add Decondensentrator recipe for NC Sulfuric Acid [\#952](https://github.com/NillerMedDild/Enigmatica2Expert/issues/952) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Priority: Low](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Priority:%20Low)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
 - Unification Error Megathread [\#913](https://github.com/NillerMedDild/Enigmatica2Expert/issues/913) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
 
-**Fixed bugs:**
+**Fixed bugs**
 
 - Mekanism ignores the client sounds off config setting [\#983](https://github.com/NillerMedDild/Enigmatica2Expert/issues/983) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - Today's update 1.58 RFTools Advanced Powercells trouble [\#967](https://github.com/NillerMedDild/Enigmatica2Expert/issues/967) [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - Extra Cells 2 - Deuterium/Tritium disappearing when storage cells 100% full [\#756](https://github.com/NillerMedDild/Enigmatica2Expert/issues/756) [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - Flux JEI [\#726](https://github.com/NillerMedDild/Enigmatica2Expert/issues/726) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Completed)] [[Status: Reported](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Reported)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 
-**Closed issues:**
-
-- AS Luminous [\#803](https://github.com/NillerMedDild/Enigmatica2Expert/issues/803) [[Status: Needs Testing](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Needs%20Testing)]
-
-## [1.59](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.59) (2019-03-20)
-**Implemented enhancements:**
+## [1.59](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.59) 
+**Changes**
 
 - Automatic production of Alumite [\#993](https://github.com/NillerMedDild/Enigmatica2Expert/issues/993) [[Type: Suggestion](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Suggestion)]
 - Add @Pam'sHarvestcraft support for @ImmersiveEngineering fermenter and squeezer [\#992](https://github.com/NillerMedDild/Enigmatica2Expert/issues/992) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
@@ -367,7 +329,7 @@
 - Botania Pure Daisy [\#975](https://github.com/NillerMedDild/Enigmatica2Expert/issues/975) [[Marker: Quest](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Quest)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)]
 - Update Unidict.cfg to cover Lapis and Emerald [\#979](https://github.com/NillerMedDild/Enigmatica2Expert/pull/979) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Enhancement)] ([MaxNeedsSnacks](https://github.com/MaxNeedsSnacks))
 
-**Fixed bugs:**
+**Fixed bugs**
 
 - Remove Advanced Rocketry Gear Recipes [\#995](https://github.com/NillerMedDild/Enigmatica2Expert/issues/995) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
 - Removing Space station ID chip.  [\#982](https://github.com/NillerMedDild/Enigmatica2Expert/issues/982) [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
@@ -379,17 +341,6 @@
 - TODO: Fix Mekanism Quest Line's NBT problems [\#939](https://github.com/NillerMedDild/Enigmatica2Expert/issues/939) [[Marker: Quest](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Quest)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - Mekanism Enrichment Chamber Quest Line  [\#938](https://github.com/NillerMedDild/Enigmatica2Expert/issues/938) [[Marker: Quest](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Quest)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Mod%20Issue)]
 - Update Modular Machinery Config [\#934](https://github.com/NillerMedDild/Enigmatica2Expert/issues/934) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Config)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Type:%20Bug)]
-
-**Closed issues:**
-
-- Feature request: VanillaFix [\#1004](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1004)
-- Ticking World Crash [\#1001](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1001)
-- Uranium duplication exploit [\#994](https://github.com/NillerMedDild/Enigmatica2Expert/issues/994) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Marker:%20Script)]
-- Creative Wand Recipe Not Valid [\#969](https://github.com/NillerMedDild/Enigmatica2Expert/issues/969) [[Status: Cannot Reproduce](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Cannot%20Reproduce)]
-- Modular Storage "multipick" [\#966](https://github.com/NillerMedDild/Enigmatica2Expert/issues/966)
-- Aspects AE2 [\#962](https://github.com/NillerMedDild/Enigmatica2Expert/issues/962)
-- HEADS UP. Twitch update 3/3/2019 [\#932](https://github.com/NillerMedDild/Enigmatica2Expert/issues/932)
-- thaumcraft disappearing seals [\#924](https://github.com/NillerMedDild/Enigmatica2Expert/issues/924) [[Status: Cannot Reproduce](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Status:%20Cannot%20Reproduce)]
 
 **Merged pull requests:**
 
