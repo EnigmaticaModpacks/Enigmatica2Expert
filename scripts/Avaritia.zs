@@ -109,51 +109,67 @@ print("--- loading Avaritia.zs ---");
 	[null, <ore:blockMagicalWood>, null, null, <tconstruct:wide_guard>.withTag({Material: "bone"}), null, null, null, null], 
 	[<ore:netherStar>, null, null, null, null, null, null, null, null]
 	]);
-	
-# Neutronium Ingot
-	var ni = <ore:ingotCosmicNeutronium>;
-# Infinity Catalyst
-	var ic = <avaritia:resource:5>;
-# Infinity Ingot
-	var ii = <ore:ingotInfinity>;
-# Crystal Matrix
-	var cm = <ore:blockCrystalMatrix>;
-	
+		
 # Ultimate Stew
 	mods.extendedcrafting.TableCrafting.addShapeless(4, 
 	<avaritia:ultimate_stew> * 9,  
-	[ni, <minecraft:wheat>, 
-	<minecraft:apple>, <minecraft:melon>, 
-	<harvestcraft:beanitem>, <minecraft:pumpkin>, 
-	<minecraft:carrot>, <minecraft:potato>, 
-	<minecraft:beetroot>, 
-	<harvestcraft:asparagusitem>, <harvestcraft:cornitem>, 
-	<harvestcraft:bambooshootitem>, <harvestcraft:cucumberitem>, 
-	<harvestcraft:wintersquashitem>, <harvestcraft:zucchiniitem>, 
-	<harvestcraft:onionitem>, <harvestcraft:beetitem>, 
-	<harvestcraft:parsnipitem>, <harvestcraft:radishitem>, 
-	<harvestcraft:rutabagaitem>, <harvestcraft:sweetpotatoitem>, 
-	<harvestcraft:turnipitem>, <harvestcraft:rhubarbitem>, 
-	<harvestcraft:celeryitem>, <harvestcraft:spiceleafitem>, 
-	<harvestcraft:broccoliitem>, <harvestcraft:caulifloweritem>, 
-	<harvestcraft:leekitem>, <harvestcraft:lettuceitem>, 
-	<harvestcraft:scallionitem>, <harvestcraft:artichokeitem>, 
-	<harvestcraft:brusselsproutitem>, <harvestcraft:cabbageitem>, 
-	<harvestcraft:spinachitem>, <harvestcraft:whitemushroomitem>, 
-	<harvestcraft:bellpepperitem>, <harvestcraft:eggplantitem>, 
-	<harvestcraft:okraitem>, <harvestcraft:peasitem>, 
-	<harvestcraft:seaweeditem>, 
-	<harvestcraft:waterchestnutitem>, <ore:cropTomato>, 
-	<harvestcraft:garlicitem>, <harvestcraft:blackberryitem>, 
-	<harvestcraft:blueberryitem>, <harvestcraft:raspberryitem>, 
-	<harvestcraft:strawberryitem>, <harvestcraft:cranberryitem>, 
-	<harvestcraft:gooseberryitem>, <rustic:ironberries>, 
-	<rustic:wildberries>, <rustic:grapes>]);
+	[<ore:ingotCosmicNeutronium>, 
+	<ore:cropWheat>, 
+	<ore:cropApple>, 
+	<ore:cropMelon>, 
+	<ore:cropBean>, 
+	<ore:cropPumpkin>, 
+	<ore:cropCarrot>, 
+	<ore:cropPotato>, 
+	<ore:cropBeetroot>, 
+	<ore:cropAsparagus>, 
+	<ore:cropCorn>, 
+	<ore:cropBambooshoot>, 
+	<ore:cropCucumber>, 
+	<ore:cropWintersquash>, 
+	<ore:cropZucchini>, 
+	<ore:cropOnion>, 
+	<ore:cropBeet>, 
+	<ore:cropParsnip>, 
+	<ore:cropRadish>, 
+	<ore:cropRutabaga>, 
+	<ore:cropSweetpotato>, 
+	<ore:cropTurnip>, 
+	<ore:cropShubarb>, 
+	<ore:cropCelery>, 
+	<ore:cropSpiceleaf>, 
+	<ore:cropBroccoli>, 
+	<ore:cropCauliflower>, 
+	<ore:cropLeek>, 
+	<ore:cropettuce>, 
+	<ore:cropScallion>, 
+	<ore:cropArtichoke>, 
+	<ore:cropBrusselsprout>, 
+	<ore:cropCabbage>, 
+	<ore:cropSpinach>, 
+	<ore:cropWhushroom>, 
+	<ore:cropBellpepper>, 
+	<ore:cropEggplant>, 
+	<ore:cropOkra>, 
+	<ore:cropPeas>, 
+	<ore:cropSeaweed>, 
+	<ore:cropWaterchestnut>, 
+	<ore:cropTomato>, 
+	<ore:cropGarlic>, 
+	<ore:cropBlackberry>, 
+	<ore:cropBlueberry>, 
+	<ore:cropRaspberry>, 
+	<ore:cropStrawberry>, 
+	<ore:cropCranberry>, 
+	<ore:cropGooseberry>, 
+	<rustic:ironberries>, 
+	<rustic:wildberries>, 
+	<ore:cropGrape>]);
 
 # Cosmic Meatballs
 	mods.extendedcrafting.TableCrafting.addShapeless(4, 
 	<avaritia:cosmic_meatballs> * 9, 
-	[ni, 
+	[<ore:ingotCosmicNeutronium>, 
 	<minecraft:porkchop>, 
 	<minecraft:beef>, 
 	<minecraft:chicken>, 
@@ -176,7 +192,15 @@ print("--- loading Avaritia.zs ---");
 	<harvestcraft:venisonrawitem>, 
 	<harvestcraft:duckrawitem>]);
 		
-
+# Neutronium Ingot
+	var ni = <ore:ingotCosmicNeutronium>;
+# Infinity Catalyst
+	var ic = <avaritia:resource:5>;
+# Infinity Ingot
+	var ii = <ore:ingotInfinity>;
+# Crystal Matrix
+	var cm = <ore:blockCrystalMatrix>;
+	
 # Infinity Armor
 	mods.extendedcrafting.TableCrafting.addShaped(0, 
 	<avaritia:infinity_helmet>, 
