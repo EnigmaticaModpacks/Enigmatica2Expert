@@ -233,6 +233,9 @@ print("--- loading Mekanism.zs ---");
 	recipes.remove(<mekanism:controlcircuit:3>);
 	mods.actuallyadditions.Empowerer.addRecipe(<mekanism:controlcircuit:3>, <mekanism:controlcircuit:2>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, 500000, 100, [0.5, 0.3, 0.2]);
 
+# Apatite Ore Dupe Removal
+	mods.mekanism.combiner.removeRecipe(<forestry:resources>);
+
 # Nether Quartz Ore
 	mods.mekanism.combiner.removeRecipe(<minecraft:quartz_ore>);
 	mods.mekanism.combiner.addRecipe(<minecraft:quartz> * 6, <minecraft:quartz_ore>);
