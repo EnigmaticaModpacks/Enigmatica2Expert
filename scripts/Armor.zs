@@ -317,4 +317,9 @@ print("--- loading Armor.zs ---");
 	recipes.addShapeless("ArmorToMats25", <twilightforest:naga_scale> * 7, [<twilightforest:naga_leggings>]);
 	recipes.addShapeless("ArmorToMats26", <twilightforest:naga_scale> * 8, [<twilightforest:naga_chestplate>]);
 	
+	rh(<tcomplement:steel_helmet>);
+	rh(<tcomplement:steel_chestplate>);
+	rh(<tcomplement:steel_leggings>);
+	rh(<tcomplement:steel_boots>);
+	
 		print("--- Armor.zs initialized ---");

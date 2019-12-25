@@ -352,9 +352,4 @@ print("--- loading MiscRecipes.zs ---");
 	rh(<extendedcrafting:material:128>);
 	rh(<extendedcrafting:material:129>);
 	
-	rh(<tcomplement:steel_helmet>);
-	rh(<tcomplement:steel_chestplate>);
-	rh(<tcomplement:steel_leggings>);
-	rh(<tcomplement:steel_boots>);
-	
 print("--- MiscRecipes.zs initialized ---");

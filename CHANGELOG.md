@@ -4,7 +4,7 @@
 
 **Changes**
 
--
+- Removed Steel Armor from Tinkers Complement
 
 **Fixed bugs**
 
