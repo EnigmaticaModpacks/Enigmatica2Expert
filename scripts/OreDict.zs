@@ -5,6 +5,9 @@ import crafttweaker.oredict.IOreDictEntry as IOreDictEntry;
 import mods.jei.JEI.removeAndHide as rh;
 print("--- loading OreDict.zs ---");
 	
+	
+	<ore:mushroomAny>.add(<harvestcraft:whitemushroomitem>);
+	
 # Black Quartz Pillar is cheaper than 1 block, remove from oredict
 	<ore:blockBlackQuartz>.remove(<actuallyadditions:block_misc>);
 	
