@@ -9,6 +9,10 @@
 **Fixed bugs**
 
 - Server crash with Nature's Compass
+- Wireless crafting terminal search bar clears when typing "b" [\#1388](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1388)
+- Ultimate Stew Recipe - Grapes not oredict'd [\#1454](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1454) [[Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Script)]
+- Creative Block Exchanger Recipe Issues - Credit TheShadoWZYE [\#1453](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1453) [[Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Script)]
+- Apatite Duplication Exploit in 1.67 [\#1398](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1398)
 
 ## [1.73](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.73) 
 **Changes**
