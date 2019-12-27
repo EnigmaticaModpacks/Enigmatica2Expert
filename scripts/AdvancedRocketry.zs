@@ -36,9 +36,9 @@ print("--- loading AdvancedRocketry.zs ---");
 	recipes.remove(<libvulpes:elitemotor>);
 	recipes.addShapedMirrored("Elite Motor", 
 	<libvulpes:elitemotor>, 
-	[[<ore:crystalDilithium>, <ore:coilTitanium>, <ore:plateIridium>],
-	[<ore:crystalDilithium>, <ore:gearDiamond>, <ore:plateIridium>], 
-	[<ore:crystalDilithium>, <ore:coilTitanium>, <ore:plateIridium>]]);
+	[[<ore:gemDilithium>, <ore:coilTitanium>, <ore:plateIridium>],
+	[<ore:gemDilithium>, <ore:gearDiamond>, <ore:plateIridium>], 
+	[<ore:gemDilithium>, <ore:coilTitanium>, <ore:plateIridium>]]);
 
 # Machine Structure
 	recipes.remove(<libvulpes:structuremachine>);
