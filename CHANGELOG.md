@@ -1,8 +1,8 @@
 # Enigmatica 2: Expert Changelog
 
-*Remember to use the command `/bq_admin default load` after updating*
-
 ## [1.75](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.75)
+
+*You do not have to use the command `/bq_admin default load` when updating to 1.75*
 
 **Changes*
 
@@ -11,7 +11,12 @@
 
 **Fixed bugs**
 
--
+- Journeymap waypoint labels no longer visible [\#1458](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1458)
+- Creative Powercell uncraftable [\#1473](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1473) [[Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Script)]
+- Forestry CircuitBoard Bug [\#1471](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1471) [[Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Script)]
+- Cockatrice Scepter is Uncraftable [\#1469](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1469) [[Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Script)]
+- OpenComputers  Block Dupe [\#1464](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1464) [[Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Config)]
+- Vulpes Library Elite Motor Uncraftable [\#1459](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1459) [[Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Script)]
 
 ## [1.74](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.74)
 
