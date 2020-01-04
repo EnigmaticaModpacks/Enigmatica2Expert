@@ -1,5 +1,18 @@
 # Enigmatica 2: Expert Changelog
 
+*Remember to use the command `/bq_admin default load` after updating*
+
+## [1.75](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.75)
+
+**Changes*
+
+- Decreased JEI Block Drops precision, to speed up loading times a bit. Maybe. Hopefully.
+- OpenComputers' blocks can no longer be carried with CarryOn.
+
+**Fixed bugs**
+
+-
+
 ## [1.74](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.74)
 
 **Changes**
