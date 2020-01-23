@@ -175,12 +175,14 @@ print("--- loading AppliedEnergistics.zs ---");
 	[<appliedenergistics2:fluix_block>, <appliedenergistics2:material:24>, <appliedenergistics2:fluix_block>]]);
 	
 # ME Controller
-	recipes.remove(<appliedenergistics2:controller>);
-	recipes.addShaped("ME Controller", 
-	<appliedenergistics2:controller>, 
-	[[<appliedenergistics2:smooth_sky_stone_block>, <advancedrocketry:ic:3>, <appliedenergistics2:smooth_sky_stone_block>],
-	[<appliedenergistics2:fluix_block>, <appliedenergistics2:energy_acceptor>, <appliedenergistics2:fluix_block>], 
-	[<teslacorelib:machine_case>, pearlFluix, <teslacorelib:machine_case>]]);
+	if (!isNull(itemUtils.getItem("appliedenergistics2:controller"))) {
+		recipes.remove(itemUtils.getItem("appliedenergistics2:controller"));
+		recipes.addShaped("ME Controller", 
+		itemUtils.getItem("appliedenergistics2:controller"), 
+		[[<appliedenergistics2:smooth_sky_stone_block>, <advancedrocketry:ic:3>, <appliedenergistics2:smooth_sky_stone_block>],
+		[<appliedenergistics2:fluix_block>, <appliedenergistics2:energy_acceptor>, <appliedenergistics2:fluix_block>], 
+		[<teslacorelib:machine_case>, pearlFluix, <teslacorelib:machine_case>]]);
+	}
 
 # Inscriber
 	recipes.remove(<appliedenergistics2:inscriber>);
