@@ -50,7 +50,7 @@ print("--- loading NuclearCraft.zs ---");
 	//Brick
 	mods.nuclearcraft.ingot_former.addRecipe([<liquid:clay>*144, <minecraft:brick>, 1.0, 1.0]);
 	//Starmetal Ingot
-	mods.nuclearcraft.ingot_former.addRecipe([<liquid:astral_starmetal>*144, <astralsorcery:itemcraftingcomponent:1>, 1.0, 1.0]);
+	mods.nuclearcraft.ingot_former.addRecipe([<liquid:starmetal>*144, <astralsorcery:itemcraftingcomponent:1>, 1.0, 1.0]);
 	//Demon Metal Ingot
 	mods.nuclearcraft.ingot_former.addRecipe([<liquid:xu_demonic_metal>*144, <extrautils2:ingredients:11>, 2.0, 2.0]);
 	//Enchanted Ingot
