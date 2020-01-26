@@ -3,6 +3,18 @@ import mods.jei.JEI.removeAndHide as rh;
 #modloaded actuallyadditions
 print("--- loading ActuallyAdditions.zs ---");
 	
+# Black Quartz Block recipe remakes
+	# Black Quartz Pillar
+	recipes.remove(<actuallyadditions:block_misc>);
+	recipes.addShaped("Black Quartz Pillar remake", <actuallyadditions:block_misc> * 2, 
+	[[<ore:blockBlackQuartz>],[<ore:blockBlackQuartz>]]);
+
+	# Chiseled Black Quartz Block
+	recipes.remove(<actuallyadditions:block_misc:1>);
+	recipes.addShaped("Chiseled Black Quartz Block remake", <actuallyadditions:block_misc:1> * 4, 
+	[[<ore:blockBlackQuartz>, <ore:blockBlackQuartz>],
+	[<ore:blockBlackQuartz>, <ore:blockBlackQuartz>]]);
+
 # Oil Generator Removal
 	rh(<actuallyadditions:block_oil_generator>);
 
