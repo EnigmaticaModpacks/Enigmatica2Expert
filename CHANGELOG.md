@@ -1,10 +1,27 @@
 # Enigmatica 2: Expert Changelog
 
+## [1.76](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.76)
+
+**Changes**
+
+- Is now possible to disable channels on AE2 [\#1495](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1495) [[Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Script)] (Credit [thakyZ](https://github.com/thakyZ))
+
+**Fixed bugs**
+
+- Better Questing Party Not "Working" [\#1483](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1483)
+- \[Crash\] Calling some Plethora-added peripherals methods from OpenComputers [\#1479](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1479)
+- Different behaviors when crushing/pulverising Charged Certus Quartz [\#1492](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1492) [[Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Config)]
+- No way to get Pams Tomatillo or Juniper Berries [\#1491](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1491) [[Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Config)]
+- Tinkers construct - Star metal [\#1489](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1489) [[Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Config)]
+- duplication of Black Quartz. [\#1478](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1478) [[Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Script)]
+- Journeymap waypoint labels no longer visible [\#1458](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1458)
+- Duplication bug \(Dark Armor\) [\#1386](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1386)
+
 ## [1.75](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.75)
 
 *You do not have to use the command `/bq_admin default load` when updating to 1.75*
 
-**Changes*
+**Changes**
 
 - Decreased JEI Block Drops precision, to speed up loading times a bit. Maybe. Hopefully.
 - OpenComputers' blocks can no longer be carried with CarryOn.
