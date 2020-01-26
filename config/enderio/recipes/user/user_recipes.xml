@@ -304,6 +304,13 @@
     </sagmilling>
   </recipe>
   
+    <recipe name="Sagmill: Black Quartz Block" disabled="true">
+    <sagmilling energy="4000">
+      <input name="blockBlackQuartz"/>
+      <output name="actuallyadditions:item_dust:7" amount="9"/>
+    </sagmilling>
+  </recipe>
+  
   <recipe name="Tweak: Stick from Wood" disabled="true">
     <crafting>
       <grid size="1x2">
