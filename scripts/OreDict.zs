@@ -8,9 +8,6 @@ print("--- loading OreDict.zs ---");
 	
 	<ore:mushroomAny>.add(<harvestcraft:whitemushroomitem>);
 	
-# Black Quartz Pillar is cheaper than 1 block, remove from oredict
-	<ore:blockBlackQuartz>.remove(<actuallyadditions:block_misc>);
-	
 # Removing Pam's in-world Apple from cropApple
 	<ore:cropApple>.remove(<harvestcraft:pamapple>);
 	
