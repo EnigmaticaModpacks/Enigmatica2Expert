@@ -1,5 +1,21 @@
 # Enigmatica 2: Expert Changelog
 
+## [1.77](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.77)
+
+**Changes**
+
+- Set NuclearCraft RF to EU conversion to 4:1, disabling infinite looping (Discomanco) 
+
+**Fixes bugs**
+
+- 
+
+## [1.76a](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.76a)
+
+**Fixes bugs**
+
+- Rare Crash on entering world. Downgraded LootTweaker to fix the issue.
+
 ## [1.76](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.76)
 
 **Changes**
