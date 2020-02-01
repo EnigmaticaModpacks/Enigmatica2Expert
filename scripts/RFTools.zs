@@ -14,14 +14,36 @@ print("--- loading RFTools.zs ---");
 	[<ore:dustRedstone>, <ore:gemQuartz>, <ore:dustRedstone>]]);
 	
 	recipes.addShaped("Modular Storage 2", <rftools:modular_storage>, 
-	[[<ore:dustRedstone>, <minecraft:chest>, <ore:dustRedstone>],
+	[[<ore:dustRedstone>, <ore:chest>, <ore:dustRedstone>],
 	[<ore:gemQuartz>, <forestry:sturdy_machine>, <ore:gemQuartz>], 
 	[<ore:dustRedstone>, <ore:gemQuartz>, <ore:dustRedstone>]]);
 	
 	recipes.addShaped("Modular Storage 3", <rftools:modular_storage>, 
-	[[<ore:dustRedstone>, <minecraft:chest>, <ore:dustRedstone>],
+	[[<ore:dustRedstone>, <ore:chest>, <ore:dustRedstone>],
 	[<ore:gemQuartz>, <ic2:resource:12>, <ore:gemQuartz>], 
 	[<ore:dustRedstone>, <ore:gemQuartz>, <ore:dustRedstone>]]);
+	
+# Storage Scanner
+	recipes.remove(<rftools:storage_scanner>);
+	recipes.addShaped("Storage Scanner 1", <rftools:storage_scanner>,
+	[[<minecraft:redstone_torch>, <ore:enderpearl>, <minecraft:redstone_torch>],
+	[<ore:ingotGold>, <mekanism:basicblock:8>, <ore:ingotGold>],
+	[<minecraft:redstone_torch>, <ore:enderpearl>, <minecraft:redstone_torch>]]);
+	
+	recipes.addShaped("Storage Scanner 2", <rftools:storage_scanner>,
+	[[<minecraft:redstone_torch>, <ore:enderpearl>, <minecraft:redstone_torch>],
+	[<ore:ingotGold>, <actuallyadditions:block_misc:9>, <ore:ingotGold>],
+	[<minecraft:redstone_torch>, <ore:enderpearl>, <minecraft:redstone_torch>]]);
+	
+	recipes.addShaped("Storage Scanner 3", <rftools:storage_scanner>,
+	[[<minecraft:redstone_torch>, <ore:enderpearl>, <minecraft:redstone_torch>],
+	[<ore:ingotGold>, <teslacorelib:machine_case>, <ore:ingotGold>],
+	[<minecraft:redstone_torch>, <ore:enderpearl>, <minecraft:redstone_torch>]
+	
+	recipes.addShaped("Storage Scanner 4", <rftools:storage_scanner>,
+	[[<minecraft:redstone_torch>, <ore:enderpearl>, <minecraft:redstone_torch>],
+	[<ore:ingotGold>, <nuclearcraft:part:10>, <ore:ingotGold>],
+	[<minecraft:redstone_torch>, <ore:enderpearl>, <minecraft:redstone_torch>]]);
 
 # Matter Transmitter
 	recipes.remove(<rftools:matter_transmitter>);
