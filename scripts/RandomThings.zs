@@ -36,8 +36,8 @@ for item in itemsToRemove {
 recipes.remove(<randomthings:enderbucket>);
 recipes.addShaped("ender_bucket1",
 	<randomthings:enderbucket>,
-	[[null, <minecraft:ender_pearl>, null],
-	[null, <minecraft:bucket>, null]]);
+	[[<minecraft:ender_pearl>],
+	[<minecraft:bucket>]]);
 recipes.addShaped("ender_bucket2",
 	<randomthings:enderbucket>,
 	[[<ore:plateIron>, <minecraft:ender_pearl>, <ore:plateIron>],
