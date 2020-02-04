@@ -21,7 +21,6 @@ print("--- loading ComputerCraft.zs ---");
 	[<opencomputers:component>, <opencomputers:storage:2>, <opencomputers:component:6>], 
 	[null, <opencomputers:case1>, null]]);
 
-	
 # Advanced Computers
 	recipes.remove(<computercraft:computer:16384>);
 	recipes.addShapedMirrored("Advanced Computer", 
@@ -30,5 +29,12 @@ print("--- loading ComputerCraft.zs ---");
 	[<opencomputers:component:1>, <opencomputers:storage:3>, <opencomputers:component:8>], 
 	[null, <opencomputers:case2>, null]]);
 
-	
-		print("--- ComputerCraft.zs initialized ---");
+# Pocket Computer
+	recipes.remove(<computercraft:pocket_computer>);
+	mods.immersiveengineering.MetalPress.addRecipe(<computercraft:pocket_computer>, <computercraft:computer>, <immersiveengineering:mold:0>, 2000);
+
+# Advanced Pocket Computer
+	recipes.remove(<computercraft:pocket_computer:1>);
+	mods.immersiveengineering.MetalPress.addRecipe(<computercraft:pocket_computer:1>, <computercraft:computer:16384>, <immersiveengineering:mold:0>, 2000);
+
+print("--- ComputerCraft.zs initialized ---");

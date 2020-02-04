@@ -31,6 +31,16 @@ print("--- loading RandomThings.zs ---");
 for item in itemsToRemove {
 	rh(item);
 }
+
+# Ender bucket recipe change
+recipes.remove(<randomthings:enderbucket>);
+recipes.addShaped("ender_bucket1",
+	<randomthings:enderbucket>,
+	[[<minecraft:ender_pearl>],
+	[<minecraft:bucket>]]);
+recipes.addShaped("ender_bucket2",
+	<randomthings:enderbucket>,
+	[[<ore:plateIron>, <minecraft:ender_pearl>, <ore:plateIron>],
+	[null, <ore:plateIron>, null]]);
+
 print("--- RandomThings.zs initialized ---");
-	
-	
