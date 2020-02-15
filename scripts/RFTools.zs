@@ -38,7 +38,7 @@ print("--- loading RFTools.zs ---");
 	recipes.addShaped("Storage Scanner 3", <rftools:storage_scanner>,
 	[[<minecraft:redstone_torch>, <ore:enderpearl>, <minecraft:redstone_torch>],
 	[<ore:ingotGold>, <teslacorelib:machine_case>, <ore:ingotGold>],
-	[<minecraft:redstone_torch>, <ore:enderpearl>, <minecraft:redstone_torch>]
+	[<minecraft:redstone_torch>, <ore:enderpearl>, <minecraft:redstone_torch>]]);
 	
 	recipes.addShaped("Storage Scanner 4", <rftools:storage_scanner>,
 	[[<minecraft:redstone_torch>, <ore:enderpearl>, <minecraft:redstone_torch>],
