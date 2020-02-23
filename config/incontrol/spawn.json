@@ -27,12 +27,12 @@
 	},
 	{
     "mob": "quark:frog",
-    "mincount":"30",
+    "mincount":"20",
     "result": "deny"
 	},
 	{
     "mob": "quark:foxhound",
-    "mincount":"30",
+    "mincount":"20",
     "result": "deny"
 	}
 ]
