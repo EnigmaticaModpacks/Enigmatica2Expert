@@ -3,6 +3,10 @@ import crafttweaker.item.IItemStack as IItemStack;
 #modloaded mekanism
 print("--- loading Mekanism.zs ---");
 
+# The Combiner can dupe a bunch of stuff, so we're removing it.
+mods.mekanism.combiner.removeAllRecipes();
+recipes.remove(<mekanism:machineblock:2>);
+
 # Starmetal Ingots
 	mods.mekanism.smelter.addRecipe(<astralsorcery:itemcraftingcomponent:2>, <astralsorcery:itemcraftingcomponent:1>);
 	
@@ -233,17 +237,6 @@ print("--- loading Mekanism.zs ---");
 	recipes.remove(<mekanism:controlcircuit:3>);
 	mods.actuallyadditions.Empowerer.addRecipe(<mekanism:controlcircuit:3>, <mekanism:controlcircuit:2>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, 500000, 100, [0.5, 0.3, 0.2]);
 
-# Apatite Ore Dupe Removal
-	mods.mekanism.combiner.removeRecipe(<forestry:resources>);
-
-# Nether Quartz Ore
-	mods.mekanism.combiner.removeRecipe(<minecraft:quartz_ore>);
-	mods.mekanism.combiner.addRecipe(<minecraft:quartz> * 6, <minecraft:quartz_ore>);
-
-# Coal Ore
-	mods.mekanism.combiner.removeRecipe(<minecraft:coal_ore>);
-	mods.mekanism.combiner.addRecipe(<minecraft:coal> * 6, <minecraft:coal_ore>);
-	
 # Removing unused ores & Walkietalkie
 	rh(<mekanism:oreblock:1>);
 	rh(<mekanism:oreblock:2>);
