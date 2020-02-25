@@ -21,26 +21,25 @@ print("--- loading ThermalDynamics.zs ---");
 	recipes.remove(<thermaldynamics:duct_32:1>);
 	recipes.addShapedMirrored("Itemduct Opaque",
 	<thermaldynamics:duct_32:1> * 12, 
-	[[null, null, null],
-	[<ore:plateTin>, <xnet:netcable:*>, <ore:plateTin>], 
-	[null, null, null]]);
+	[[<ore:plateTin>, <xnet:netcable:*>, <ore:plateTin>]]);
 
+# Fluiduct
+	recipes.remove(<thermaldynamics:duct_16>);
+	recipes.addShapedMirrored("Fluiduct", 
+	<thermaldynamics:duct_16> * 12, 
+	[[<ore:plateCopper>, <ore:blockGlass>, <ore:plateCopper>]]);
 
 # Fluiduct Opaque
 	recipes.remove(<thermaldynamics:duct_16:1>);
 	recipes.addShapedMirrored("Fluiduct Opaque", 
 	<thermaldynamics:duct_16:1> * 12, 
-	[[null, null, null],
-	[<ore:plateCopper>, <xnet:netcable:*>, <ore:plateCopper>], 
-	[null, null, null]]);
+	[[<ore:plateCopper>, <xnet:netcable:*>, <ore:plateCopper>]]);
 
 # Hardened Fluiduct Opaque
 	recipes.remove(<thermaldynamics:duct_16:3>);
 	recipes.addShapedMirrored("Hardened Fluiduct Opaque",
 	<thermaldynamics:duct_16:3> * 12, 
-	[[null, null, null],
-	[<ore:plateInvar>, <xnet:netcable:*>, <ore:plateInvar>], 
-	[null, null, null]]);
+	[[<ore:plateInvar>, <xnet:netcable:*>, <ore:plateInvar>]]);
 
 	
 		print("--- ThermalDynamics.zs initialized ---");
