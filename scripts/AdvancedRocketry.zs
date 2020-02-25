@@ -24,14 +24,6 @@ print("--- loading AdvancedRocketry.zs ---");
 	[<minecraft:brick_block>, <ore:slimecrystalMagma>, <minecraft:brick_block>], 
 	[<minecraft:brick_block>, <minecraft:nether_brick>, <minecraft:brick_block>]]);
 
-# Energy Pipe
-	recipes.remove(<advancedrocketry:energypipe>);
-	recipes.addShapedMirrored("Advanced Rocketry Energy Pipe", 
-	<advancedrocketry:energypipe> * 16, 
-	[[<ore:sheetCopper>, <minecraft:clay_ball>, <ore:sheetCopper>],
-	[<minecraft:clay_ball>, <thermaldynamics:duct_0>, <minecraft:clay_ball>], 
-	[<ore:sheetCopper>, <minecraft:clay_ball>, <ore:sheetCopper>]]);
-
 # Elite Motor
 	recipes.remove(<libvulpes:elitemotor>);
 	recipes.addShapedMirrored("Elite Motor", 
