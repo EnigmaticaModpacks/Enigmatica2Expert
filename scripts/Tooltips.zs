@@ -22,6 +22,21 @@ var mekanismFactories = "Factories are made by upgrading Machines in-world with 
 var ic2wrench = "You can safely break IC2 machines with a Pickaxe.";
 var tempRecipe = "This item has a temporary crafting recipe.";
 
+var metalRods as IItemStack[] = [
+	<immersiveengineering:material:1>,
+	<immersiveengineering:material:3>,
+	<immersiveengineering:material:2>
+];
+	
+for rod in metalRods {
+	ad(rod, "The earliest (and cheapest) way of making Metal Rods is with the Small Plate Presser from Advanced Rocketry.");
+}
+
+ad(<advancedrocketry:platepress>, "The Small Plate Presser is the earliest (and cheapest) way of making Metal Rods.",
+"It's a multiblock, made up of 2 blocks: The Small Plate Presser and a block of Obsidian",
+"To assemble the multiblock, place the block of Obsidian, and then the Small Plate Presser one blocks above it, so there's 1 air block between them.",
+"That's it! It requires a redstone signal to activate, every time.");
+
 ad(<mekanism:machineblock:2>, "Removed the Combiner, as it could be used to dupe multiple ores in this pack.");
 
 ad(<thermalexpansion:cache>, "Shift right click with a Crescent Hammer to pick up.", "The Cache retains it's upgrades and inventory.", "Do not break with Pickaxe!");

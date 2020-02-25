@@ -12,23 +12,3 @@ print("--- loading MetalSticks.zs ---");
 	recipes.remove(<immersiveengineering:material:2>);
 	recipes.remove(<immersiveengineering:material:3>);
 
-	// IE Rods can be made in the Lathe, see AR config for details
-	recipes.addShapedMirrored("IE Iron Stick", 
-	<immersiveengineering:material:1>, 
-	[[null, <ore:blockRedstone>, null],
-	[null, <ore:craftingPiston>, null], 
-	[null, <ore:plateIron>, null]]);
-
-	recipes.addShapedMirrored("IE Aluminium Stick", 
-	<immersiveengineering:material:3>, 
-	[[null, <ore:blockRedstone>, null],
-	[null, <ore:craftingPiston>, null], 
-	[null, <ore:plateAluminium>, null]]);
-	
-	recipes.addShapedMirrored("IE Steel Stick", 
-	<immersiveengineering:material:2>, 
-	[[null, <ore:blockRedstone>, null],
-	[null, <ore:craftingPiston>, null], 
-	[null, <ore:plateSteel>, null]]);
-	
-	print("--- MetalSticks.zs initialized ---");
