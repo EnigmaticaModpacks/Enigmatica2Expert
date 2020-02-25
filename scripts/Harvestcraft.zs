@@ -1,6 +1,7 @@
 #Compatibility for Immersive Engineering <liquid:ethanol> and <liquid:plantoil>
 import crafttweaker.item.IItemStack;
 
+recipes.removeByRecipeName("harvestcraft:berryvinaigrettesaladitem");
 
 # Seeds/Crops that already have recipe added by IE and oredicted, will be removed and re-added from oredict
                          
