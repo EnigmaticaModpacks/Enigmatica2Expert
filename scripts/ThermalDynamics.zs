@@ -18,7 +18,7 @@ print("--- loading ThermalDynamics.zs ---");
 	[<ore:plateElectrum>, <ore:plateElectrum>, <ore:plateElectrum>]]);
 
 # Itemduct Opaque
-	recipes.remove(<thermaldynamics:duct_32:1>);
+	recipes.removeShaped(<thermaldynamics:duct_32:1> * 6, [[<ore:ingotTin>, <ore:ingotLead>, <ore:ingotTin>]]);
 	recipes.addShapedMirrored("Itemduct Opaque",
 	<thermaldynamics:duct_32:1> * 12, 
 	[[<ore:plateTin>, <xnet:netcable:*>, <ore:plateTin>]]);
