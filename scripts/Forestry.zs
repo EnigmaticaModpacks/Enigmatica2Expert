@@ -3,9 +3,12 @@ import crafttweaker.liquid.ILiquidStack;
 
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded forestry
-print("--- loading Forestry.zs ---");
-	
-# *======= Recipes =======*
+
+# Fixing fruit juice amount from tomatos
+for tomato in <ore:cropTomato>.items {
+	mods.forestry.Squeezer.removeRecipe(<liquid:juice>, [tomato]);	
+	mods.forestry.Squeezer.addRecipe(<liquid:juice> * 100, [tomato], 100);
+}
 
 # Forester's Manual
 	recipes.remove(<forestry:book_forester>);
