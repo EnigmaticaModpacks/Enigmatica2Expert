@@ -4,7 +4,10 @@
 
 **Changes**
 
+- Exchanged Super Sound Muffler with Super Sound Muffler: Revived
 - Set NuclearCraft RF to EU conversion to 4:1, disabling infinite looping (Discomanco) 
+- Removed the IC2 Thermal Centrifuge recipe Slag -> Pulverized Coal, as it could be used for duping
+- Removed Small piles from JAOPCA, as they have no uses.
 
 **Fixes bugs**
 
