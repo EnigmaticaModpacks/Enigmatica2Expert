@@ -19355,21 +19355,6 @@
     "3pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}"
   },
   {
-    "name": "advancedrocketry:charcoallog",
-    "meta": 0,
-    "length": 1,
-    "name0": "minecraft:coal",
-    "meta0": 1,
-    "0chance0": 100.0,
-    "1chance0": 100.0,
-    "2chance0": 148.0,
-    "3chance0": 200.0,
-    "0pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
-    "1pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
-    "2pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
-    "3pair0": "{\n  \"left\": 1,\n  \"right\": 3\n}"
-  },
-  {
     "name": "enderio:block_dark_paper_anvil",
     "meta": 0,
     "length": 1,
@@ -19428,21 +19413,6 @@
     "1pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
     "2pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
     "3pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}"
-  },
-  {
-    "name": "advancedrocketry:alienleaves",
-    "meta": 0,
-    "length": 1,
-    "name0": "advancedrocketry:aliensapling",
-    "meta0": 0,
-    "0chance0": 6.0,
-    "1chance0": 6.3,
-    "2chance0": 8.0,
-    "3chance0": 8.900001,
-    "0pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
-    "1pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
-    "2pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
-    "3pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}"
   },
   {
     "name": "rftools:dimensional_shard_ore",
@@ -20028,5 +19998,35 @@
     "1pair2": "{\n  \"left\": 0,\n  \"right\": 1\n}",
     "2pair2": "{\n  \"left\": 0,\n  \"right\": 1\n}",
     "3pair2": "{\n  \"left\": 0,\n  \"right\": 1\n}"
+  },
+  {
+    "name": "advancedrocketry:charcoallog",
+    "meta": 0,
+    "length": 1,
+    "name0": "minecraft:coal",
+    "meta0": 1,
+    "0chance0": 100.0,
+    "1chance0": 100.0,
+    "2chance0": 152.1,
+    "3chance0": 202.7,
+    "0pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
+    "1pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
+    "2pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
+    "3pair0": "{\n  \"left\": 1,\n  \"right\": 3\n}"
+  },
+  {
+    "name": "advancedrocketry:alienleaves",
+    "meta": 0,
+    "length": 1,
+    "name0": "advancedrocketry:aliensapling",
+    "meta0": 0,
+    "0chance0": 4.6,
+    "1chance0": 6.4,
+    "2chance0": 8.6,
+    "3chance0": 11.3,
+    "0pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
+    "1pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
+    "2pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
+    "3pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}"
   }
 ]
