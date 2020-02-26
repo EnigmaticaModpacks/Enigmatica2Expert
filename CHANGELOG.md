@@ -1,6 +1,6 @@
 # Enigmatica 2: Expert Changelog
 
-## [1.77](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.77)
+## 1.77
 
 **Changes**
 
