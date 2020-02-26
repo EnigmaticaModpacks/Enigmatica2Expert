@@ -7,11 +7,33 @@
 - Exchanged Super Sound Muffler with Super Sound Muffler: Revived
 - Set NuclearCraft RF to EU conversion to 4:1, disabling infinite looping (Discomanco) 
 - Removed the IC2 Thermal Centrifuge recipe Slag -> Pulverized Coal, as it could be used for duping
-- Removed Small piles from JAOPCA, as they have no uses.
+- IE's metal rod recipes are very weird [\#1534](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1534) [[Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Script)]
+- EnderIO decoration blocks far too expensive [\#1531](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1531) [[Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Script)]
+- Add the mod Aurora \(Guide mod for FTB Utilities\) [\#1529](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1529) [[Mod](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Mod)]
+- creating frog/foxhound mobcap and adding frog egg to market [\#1540](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1540) ([xavkno](https://github.com/xavkno))
+- Cleaned up Astral Sorcery amulet enchantment config [\#1520](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1520) [[Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Config)] ([MorganSimic](https://github.com/MorganSimic))
+- Recipes enhancements I come up with after enjoying this pack [\#1516](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1516) [[Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Script)] ([Lgmrszd](https://github.com/Lgmrszd))
+- Fix duplicate Squeezer / Fermenter recipes  [\#1515](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1515) [[Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Script)] ([Lgmrszd](https://github.com/Lgmrszd))
+- New Schematics [\#1511](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1511) ([Discomanco](https://github.com/Discomanco))
+- \(Re-\)Add Storage Scanner to Early Game [\#1508](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1508) [[Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Script)] ([Discomanco](https://github.com/Discomanco))
+- Disabled insertion of items into Dank Null through the Docking Station. [\#1504](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1504) [[Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Config)] ([xavkno](https://github.com/xavkno))
 
 **Fixes bugs**
 
-- 
+- Alabaster missing [\#1548](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1548) [[Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Script)]
+- Ice and Fire achievement not obtainable [\#1545](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1545) [[Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Script)]
+- Some Quark Mobs Cannot Despawn \(Changed their spawns, made their spawn eggs available through the Market\) [\#1535](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1535) [[Config](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Config)]
+- 16384k Storage Cell recipe uses diamonds instead of diamond chests [\#1532](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1532) [[Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Script)]
+- Duping using the Combiner [\#1530](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1530) [[Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Script)]
+- Can't craft Opaque Dense/Vacuum Itemducts [\#1526](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1526) [[Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Script)]
+- Basic Fluiducts have a normal recipe [\#1525](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1525) [[Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Script)]
+- Forestry Farm quest should link to the Gamepedia wiki, not ftbwiki [\#1524](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1524) [[Quest](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Quest)]
+- The Squeezer has multiple recipes for the same items, giving different amounts [\#1522](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1522) [[Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Script)]
+- Macerator should be able to process all the same ores that other mods can [\#1521](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1521) [[Script](https://github.com/NillerMedDild/Enigmatica2Expert/labels/Script)]
+- Ore Excavation / Storage Drawers [\#1512](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1512)
+- Cheap Pizza [\#1475](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1475)
+
+
 
 ## [1.76a](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.76a)
 
