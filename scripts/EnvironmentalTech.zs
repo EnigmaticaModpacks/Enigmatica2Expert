@@ -3,7 +3,6 @@ import mods.jei.JEI.removeAndHide as rh;
 print("--- loading EnvironmentalTech.zs ---");
 	
 	
-# *======= Variables =======*
 
 	var cell4 = <environmentaltech:solar_cell_pladium>;
 	var cell5 = <environmentaltech:solar_cell_ionite>;
@@ -15,7 +14,12 @@ print("--- loading EnvironmentalTech.zs ---");
 	
 	var mekSolar = <mekanismgenerators:generator:5>;
 
-# *======= Recipes =======*
+# Light Gray Alabaster
+	recipes.addShaped("Light Gray Alabaster", 
+	<environmentalmaterials:alabaster:8> * 8, 
+	[[<ore:emcraftingAlabasterNormal>, <ore:emcraftingAlabasterNormal>, <ore:emcraftingAlabasterNormal>],
+	[<ore:emcraftingAlabasterNormal>, <ore:dyeLightGray>, <ore:emcraftingAlabasterNormal>], 
+	[<ore:emcraftingAlabasterNormal>, <ore:emcraftingAlabasterNormal>, <ore:emcraftingAlabasterNormal>]]);
 
 # Environmental Tech Guide
 	recipes.addShapeless("Environmental Tech Guide", 
