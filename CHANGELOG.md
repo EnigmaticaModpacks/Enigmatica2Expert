@@ -1,5 +1,24 @@
 # Enigmatica 2: Expert Changelog
 
+## [1.77](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.77)
+
+**Changes**
+
+- Exchanged Super Sound Muffler with Super Sound Muffler: Revived
+- Set NuclearCraft RF to EU conversion to 4:1, disabling infinite looping (Discomanco) 
+- Removed the IC2 Thermal Centrifuge recipe Slag -> Pulverized Coal, as it could be used for duping
+- Removed Small piles from JAOPCA, as they have no uses.
+
+**Fixes bugs**
+
+- 
+
+## [1.76a](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.76a)
+
+**Fixes bugs**
+
+- Rare Crash on entering world. Downgraded LootTweaker to fix the issue.
+
 ## [1.76](https://github.com/NillerMedDild/Enigmatica2Expert/tree/1.76)
 
 **Changes**

@@ -22,6 +22,18 @@ var mekanismFactories = "Factories are made by upgrading Machines in-world with 
 var ic2wrench = "You can safely break IC2 machines with a Pickaxe.";
 var tempRecipe = "This item has a temporary crafting recipe.";
 
+var metalRods as IItemStack[] = [
+	<immersiveengineering:material:1>,
+	<immersiveengineering:material:3>,
+	<immersiveengineering:material:2>
+];
+	
+for rod in metalRods {
+	ad(rod, "The earliest (and cheapest) way of making Metal Rods is with the Small Plate Presser from Advanced Rocketry.");
+}
+
+ad(<mekanism:machineblock:2>, "Removed, because it could be used to dupe multiple ores.");
+
 ad(<thermalexpansion:cache>, "Shift right click with a Crescent Hammer to pick up.", "The Cache retains it's upgrades and inventory.", "Do not break with Pickaxe!");
 
 ad(<mekanism:gaugedropper>, "Can be used to clear Mekanism machines of their gases. Simply hold the Gauge Dropper and Shift Left Click the Gas from inside the Machine.");

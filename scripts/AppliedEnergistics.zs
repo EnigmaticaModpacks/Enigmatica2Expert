@@ -56,22 +56,22 @@ print("--- loading AppliedEnergistics.zs ---");
 
 # ---=== Basic Cells ===---
   val cellRecipes = {
-		# Standard Cells
-		<appliedenergistics2:material:35>: <appliedenergistics2:storage_cell_1k>,
-		<appliedenergistics2:material:36>: <appliedenergistics2:storage_cell_4k>,
-		<appliedenergistics2:material:37>: <appliedenergistics2:storage_cell_16k>,
-		<appliedenergistics2:material:38>: <appliedenergistics2:storage_cell_64k>,
-		# Fluid Cells
-		<appliedenergistics2:material:54>: <appliedenergistics2:fluid_storage_cell_1k>,
-		<appliedenergistics2:material:55>: <appliedenergistics2:fluid_storage_cell_4k>,
-		<appliedenergistics2:material:56>: <appliedenergistics2:fluid_storage_cell_16k>,
-		<appliedenergistics2:material:57>: <appliedenergistics2:fluid_storage_cell_64k>,
-		# Spatial Cells
-		<appliedenergistics2:material:32>: <appliedenergistics2:spatial_storage_cell_2_cubed>,
-		<appliedenergistics2:material:33>: <appliedenergistics2:spatial_storage_cell_16_cubed>,
-		<appliedenergistics2:material:34>: <appliedenergistics2:spatial_storage_cell_128_cubed>,
-		# View Cell
-		<ore:crystalCertus>: <appliedenergistics2:view_cell>
+	# Standard Cells
+	<appliedenergistics2:material:35>: <appliedenergistics2:storage_cell_1k>,
+	<appliedenergistics2:material:36>: <appliedenergistics2:storage_cell_4k>,
+	<appliedenergistics2:material:37>: <appliedenergistics2:storage_cell_16k>,
+	<appliedenergistics2:material:38>: <appliedenergistics2:storage_cell_64k>,
+	# Fluid Cells
+	<appliedenergistics2:material:54>: <appliedenergistics2:fluid_storage_cell_1k>,
+	<appliedenergistics2:material:55>: <appliedenergistics2:fluid_storage_cell_4k>,
+	<appliedenergistics2:material:56>: <appliedenergistics2:fluid_storage_cell_16k>,
+	<appliedenergistics2:material:57>: <appliedenergistics2:fluid_storage_cell_64k>,
+	# Spatial Cells
+	<appliedenergistics2:material:32>: <appliedenergistics2:spatial_storage_cell_2_cubed>,
+	<appliedenergistics2:material:33>: <appliedenergistics2:spatial_storage_cell_16_cubed>,
+	<appliedenergistics2:material:34>: <appliedenergistics2:spatial_storage_cell_128_cubed>,
+	# View Cell
+	<ore:crystalCertus>: <appliedenergistics2:view_cell>
 
 	} as IItemStack[IIngredient];
 
@@ -80,12 +80,12 @@ print("--- loading AppliedEnergistics.zs ---");
 	}
 
 # ---=== Advanced Cells ===---
-  for i in 0 .. 3 {
+  for i in 0 .. 4 {
     newAdvCellRecipe(<extracells:storage.component>.definition.makeStack(i), <extracells:storage.physical>.definition.makeStack(i));
   }
 
 # ---=== Gas Cells ===---
-  for i in 0 .. 6 {
+  for i in 0 .. 7 {
     newGasCellRecipe(<extracells:storage.component>.definition.makeStack(i+11), <extracells:storage.gas>.definition.makeStack(i));
   }
 

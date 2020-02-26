@@ -1,6 +1,7 @@
 #Compatibility for Immersive Engineering <liquid:ethanol> and <liquid:plantoil>
 import crafttweaker.item.IItemStack;
 
+recipes.removeByRecipeName("harvestcraft:berryvinaigrettesaladitem");
 
 # Seeds/Crops that already have recipe added by IE and oredicted, will be removed and re-added from oredict
                          
@@ -21,6 +22,14 @@ for item in blacklist_squeezer {
 
 for item in <ore:listAllveggie>.items {
     mods.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 80, item, 500);
+}
+
+for item in <ore:listAllfruit>.items {
+    mods.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 120, item, 500);
+}
+
+for item in <ore:listAllberry>.items {
+    mods.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 100, item, 500);
 }
 
 for item in <ore:listAllseed>.items {

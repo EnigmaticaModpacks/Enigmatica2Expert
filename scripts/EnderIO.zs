@@ -3,6 +3,17 @@ import mods.jei.JEI.removeAndHide as rh;
 #modloaded enderio
 print("--- loading EnderIO.zs ---");
 
+# Cheaper decorations
+var casing = <teslacorelib:machine_case>|<actuallyadditions:block_misc:9>|<mekanism:basicblock:8>|<nuclearcraft:part:10>;
+var constructionAlloyOrIron = <ore:ingotConstructionAlloy> | <ore:ingotIron>;
+recipes.remove(<enderio:item_material:2>);
+recipes.addShaped("Cheaper Chassis Parts", 
+<enderio:item_material:2> * 16, [
+[constructionAlloyOrIron, constructionAlloyOrIron, constructionAlloyOrIron], 
+[constructionAlloyOrIron, casing, constructionAlloyOrIron], 
+[constructionAlloyOrIron, constructionAlloyOrIron, constructionAlloyOrIron]]);
+
+
 # Electrical Steel
 mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:96>, <nuclearcraft:gem:6>);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:160>, <nuclearcraft:gem:6>);

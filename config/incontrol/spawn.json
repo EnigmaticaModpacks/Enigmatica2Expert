@@ -24,5 +24,15 @@
 			123
 		],
 		"result": "deny"
+	},
+	{
+    "mob": "quark:frog",
+    "mincount":"20",
+    "result": "deny"
+	},
+	{
+    "mob": "quark:foxhound",
+    "mincount":"20",
+    "result": "deny"
 	}
 ]
