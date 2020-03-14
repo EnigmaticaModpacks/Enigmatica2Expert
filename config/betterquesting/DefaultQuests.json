@@ -15257,7 +15257,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Thermal Evaporation Plant",
-          "desc:8": "The Thermal Evaporation Plant is a multiblock capable of turning Water into Brine, and Brine into Lithium.\n\nSee http://wiki.aidancbrady.com/wiki/Thermal_Evaporation_Plant§0 for a setup guide."
+          "desc:8": "The Thermal Evaporation Plant is a multiblock capable of turning Water into Brine, and Brine into Lithium.\n\nSee https://ftb.gamepedia.com/Thermal_Evaporation_Plant§0 for a setup guide."
         }
       },
       "tasks:9": {
