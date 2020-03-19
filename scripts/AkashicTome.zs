@@ -21,8 +21,12 @@ print("--- loading AkashicTome.zs ---");
 	actuallyadditions: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "actuallyadditions:item_booklet", Count: 1 as byte, tag: {"akashictome:definedMod": "actuallyadditions"}, Damage: 0 as short}, 
 	opencomputers: {id: "opencomputers:tool", Count: 1 as byte, tag: {"akashictome:definedMod": "opencomputers"}, Damage: 4 as short}, 
 	cookingforblockheads: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "cookingforblockheads:recipe_book", Count: 1 as byte, tag: {"akashictome:definedMod": "cookingforblockheads"}, Damage: 1 as short}, 
-	xnet: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "xnet:xnet_manual", Count: 1 as byte, tag: {"akashictome:definedMod": "xnet"}, Damage: 0 as short}}}), 
-	[[<ore:paper>, <ore:bookshelf>, <ore:paper>],
+	xnet: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "xnet:xnet_manual", Count: 1 as byte, tag: {"akashictome:definedMod": "xnet"}, Damage: 0 as short},
+	tconstruct: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "tconstruct:book", Count: 1 as byte, tag: {"akashictome:definedMod": "tconstruct"}, Damage: 0 as short},
+	solcarrot: {id: "solcarrot:food_book", Count: 1 as byte, tag: {"akashictome:definedMod": "solcarrot"}, Damage: 0 as short},
+	rustic: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "rustic:book", Count: 1 as byte, tag: {"akashictome:definedMod": "rustic"}, Damage: 0 as short}
+	}}), 
+    [[<ore:paper>, <ore:bookshelf>, <ore:paper>],
 	[<extrautils2:decorativesolidwood:1>, <akashictome:tome>.anyDamage(), <extrautils2:decorativesolidwood:1>], 
 	[<ore:paper>, <ore:bookshelf>, <ore:paper>]]);
 	

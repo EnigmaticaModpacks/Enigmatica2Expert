@@ -208,6 +208,26 @@ for silicon in <ore:itemSilicon>.items {
 	[<enderio:block_tank>, <thermalexpansion:machine:7>, <enderio:block_tank>],
 	 [<ore:ingotElectricalSteel>, <minecraft:cauldron>, <ore:ingotElectricalSteel>]]);
 
+# Crafter simplify
+	recipes.remove(<enderio:block_simple_crafter>);
+	recipes.addShaped(<enderio:block_simple_crafter>, [
+		[<ore:itemSilicon>, <ore:itemSilicon>, <ore:itemSilicon>], 
+		[<ore:ingotConstructionAlloy> | <ore:ingotIron>, <ic2:te:88>, <ore:ingotConstructionAlloy> | <ore:ingotIron>], 
+		[<ore:gearStone>, <ore:workbench>, <ore:gearStone>]]);
+
+	recipes.remove(<enderio:block_crafter>);
+	recipes.addShaped(<enderio:block_crafter>, [
+		[<ore:itemSilicon>, <ore:itemSilicon>, <ore:itemSilicon>],
+		[<ore:ingotConstructionAlloy> | <ore:ingotIron>, <ic2:te:89>, <ore:ingotConstructionAlloy> | <ore:ingotIron>], 
+		[<ore:gearIronInfinity>, <ore:workbench>, <ore:gearIronInfinity>]]);
+
+# Power Monitor simplify
+	recipes.remove(<enderio:block_power_monitor>);
+	recipes.addShaped(<enderio:block_power_monitor>, [
+		[<ore:ingotElectricalSteel>, <enderio:item_conduit_probe>, <ore:ingotElectricalSteel>], 
+		[<ore:ingotElectricalSteel>, <nuclearcraft:part:10> | <teslacorelib:machine_case> | <actuallyadditions:block_misc:9> | <mekanism:basicblock:8>, <ore:ingotElectricalSteel>], 
+		[<ore:ingotElectricalSteel>, <enderio:item_power_conduit>, <ore:ingotElectricalSteel>]]);
+
 # Removals
 	rh(<enderio:block_simple_stirling_generator>);
 	rh(<enderio:block_enhanced_alloy_smelter>);

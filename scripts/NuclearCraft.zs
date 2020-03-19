@@ -46,6 +46,14 @@ print("--- loading NuclearCraft.zs ---");
 	[<ore:stickAluminum>, <ic2:ingot>, <ore:stickAluminum>], 
 	[<ore:plateCopper>, <ic2:casing:1>, <ore:plateCopper>]]);
 
+# Nuclearcraft Battery fix
+	recipes.remove(<nuclearcraft:lithium_ion_battery_basic>);
+	recipes.addShapedMirrored(<nuclearcraft:lithium_ion_battery_basic>, 
+	[[<ore:plateBasic>, <nuclearcraft:lithium_ion_cell>, <ore:plateBasic>], 
+	[<nuclearcraft:lithium_ion_cell>, <ore:solenoidMagnesiumDiboride>, <nuclearcraft:lithium_ion_cell>], 
+	[<ore:plateBasic>, <nuclearcraft:lithium_ion_cell>, <ore:plateBasic>]
+	]);
+
 # Add missing ingots/bricks to ingot former
 	//Brick
 	mods.nuclearcraft.ingot_former.addRecipe([<liquid:clay>*144, <minecraft:brick>, 1.0, 1.0]);
@@ -96,6 +104,15 @@ print("--- loading NuclearCraft.zs ---");
 	rh(<nuclearcraft:alloy>);
 	rh(<nuclearcraft:alloy:5>);
 	rh(<nuclearcraft:ingot>);
+
+	
+# Remove Unused alloy recipes from EnderIO
+	mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(<enderio:item_alloy_endergy_ingot:1>);
+	mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(<enderio:item_alloy_endergy_ingot:2>);
+	mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(<enderio:item_alloy_endergy_ingot:3>*2);
+	mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(<enderio:item_alloy_endergy_ingot:5>);
+	mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(<enderio:item_alloy_endergy_ingot:6>);
+
 # *======= Recipes =======*
 
 	

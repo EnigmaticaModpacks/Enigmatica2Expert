@@ -147,6 +147,12 @@ for item in coals {
 	[<ore:slimeballPurple>, <minecraft:bow>.anyDamage(), <ore:slimeballPurple>], 
 	[null, <ore:slimeballPurple>, null]]);
 	
+	recipes.addShaped("Slime Sling blood", 
+	<tconstruct:slimesling:3>, 
+	[[<minecraft:lead>, <tconstruct:slime_congealed:3>, <minecraft:lead>],
+	[<ore:slimeballBlood>, <minecraft:bow>.anyDamage(), <ore:slimeballBlood>], 
+	[null, <ore:slimeballBlood>, null]]);
+	
 	recipes.addShaped("Slime Sling Magma", 
 	<tconstruct:slimesling:4>, 
 	[[<minecraft:lead>, <tconstruct:slime_congealed:4>, <minecraft:lead>],

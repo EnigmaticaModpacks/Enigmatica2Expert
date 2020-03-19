@@ -123,4 +123,14 @@ print("--- loading Cyclic.zs ---");
 	[<ore:dustRedstone>, <actuallyadditions:block_item_repairer>, <ore:dustRedstone>], 
 	[<ore:blockIron>, <ore:blockIron>, <ore:blockIron>]]);
 	
+# Explosionproof Cyclic Glass
+	recipes.remove(<cyclicmagic:glass_strong>);
+	recipes.addShaped("Cyclic Strong Glass", 
+	<cyclicmagic:glass_strong>*8, 
+	[[<extrautils2:decorativeglass:3>, <extrautils2:decorativeglass:3>, <extrautils2:decorativeglass:3>], 
+	[<extrautils2:decorativeglass:3>, <enderio:block_reinforced_obsidian>, <extrautils2:decorativeglass:3>], 
+	[<extrautils2:decorativeglass:3>, <extrautils2:decorativeglass:3>, <extrautils2:decorativeglass:3>]
+	]);
+
+	
 	print("--- Cyclic.zs initialized ---");

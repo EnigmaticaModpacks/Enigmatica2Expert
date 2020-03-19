@@ -219,6 +219,13 @@ print("--- loading ActuallyAdditions.zs ---");
 	mods.actuallyadditions.BallOfFur.addReturn(<plustic:alumiteingot>, 1);
 
 
+# *======= Ore for Laser =======*
+	mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreBoron>, 250);
+	mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreLithium>, 250);
+	mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreMagnesium>, 250);
+	mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreThorium>, 250);
+	mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreCinnabar>, 250);
+
 # *======= AtomicReconstructor =======*
 
 	#mods.actuallyadditions.AtomicReconstructor.addRecipe(IItemStack output, IItemStack input, int energyUsed);
