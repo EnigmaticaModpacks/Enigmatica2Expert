@@ -279,36 +279,6 @@
   },
   {
     "filter": {
-      "mod": "flatcoloredblocks",
-      "name": "flatcoloredblock_glowing.*",
-      "type": "material"
-    },
-    "settings": {
-      "rarity": 4,
-      "create": 500,
-      "maintain": 500,
-      "ticks": 100,
-      "worldgen": false,
-      "dimlet": true
-    }
-  },
-  {
-    "filter": {
-      "mod": "flatcoloredblocks",
-      "name": "flatcoloredblock.*",
-      "type": "material"
-    },
-    "settings": {
-      "rarity": 2,
-      "create": 100,
-      "maintain": 50,
-      "ticks": 10,
-      "worldgen": false,
-      "dimlet": true
-    }
-  },
-  {
-    "filter": {
       "mod": "biomesoplenty",
       "name": [
         "gem_block",
@@ -632,6 +602,102 @@
       "maintain": 250000,
       "ticks": 300,
       "worldgen": true,
+      "dimlet": true
+    }
+  },
+  {
+    "filter": {
+      "mod": "thermalfoundation",
+      "name": "storage"
+    },
+    "settings": {
+      "rarity": 5,
+      "create": 900000,
+      "maintain": 750000,
+      "ticks": 900,
+      "worldgen": false,
+      "dimlet": true
+    }
+  },
+  {
+    "filter": {
+      "mod": "actuallyadditions",
+      "name": [
+        "block_crystal",
+        "block_testifi_bucks_green_wall",
+        "block_testifi_bucks_white_wall"
+      ],
+      "type": "material"
+    },
+    "settings": {
+      "rarity": 5,
+      "create": 900000,
+      "maintain": 750000,
+      "ticks": 900,
+      "worldgen": false,
+      "dimlet": true
+    }
+  },
+  {
+    "filter": {
+      "mod": "extrautils2",
+      "name": [
+        "compressed",
+        "decorativesolid"
+      ],
+      "type": "material"
+    },
+    "settings": {
+      "rarity": 3,
+      "create": 100000,
+      "maintain": 50000,
+      "ticks": 300,
+      "worldgen": false,
+      "dimlet": true
+    }
+  },
+  {
+    "filter": {
+      "mod": "redstonearsenal",
+      "name": "storage",
+      "type": "material"
+    },
+    "settings": {
+      "rarity": 5,
+      "create": 600000,
+      "maintain": 500000,
+      "ticks": 300,
+      "worldgen": false,
+      "dimlet": true
+    }
+  },
+  {
+    "filter": {
+      "mod": "nuclearcraft",
+      "name": "ingot_block",
+      "type": "material"
+    },
+    "settings": {
+      "rarity": 5,
+      "create": 300000,
+      "maintain": 250000,
+      "ticks": 300,
+      "worldgen": false,
+      "dimlet": true
+    }
+  },
+  {
+    "filter": {
+      "mod": "enderio",
+      "name": "block_alloy",
+      "type": "material"
+    },
+    "settings": {
+      "rarity": 5,
+      "create": 300000,
+      "maintain": 250000,
+      "ticks": 300,
+      "worldgen": false,
       "dimlet": true
     }
   },

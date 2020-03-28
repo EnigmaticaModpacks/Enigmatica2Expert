@@ -151,4 +151,20 @@ function fluidDict(ins as string[]) {
 	[<ore:plateDenseGold>, <thermalexpansion:frame>, <ore:plateDenseGold>], 
 	[<ore:gearDiamond>, <ore:blockOsmiridium>, <ore:gearDiamond>]]);
 
+# Simplify Converter Recipes
+	recipes.remove(<industrialforegoing:oredictionary_converter>);
+	recipes.addShaped("Industrialforegoing Oredictionary Converter",
+	<industrialforegoing:oredictionary_converter>, 
+	[[<ore:itemRubber>, <ore:itemRubber>, <ore:itemRubber>], 
+	[<ore:itemRubber>, <ore:oreIron>, <ore:itemRubber>], 
+	[<ore:nuggetIron>, <ore:ingotIron>, <ore:blockIron>]]);
+	
+	recipes.remove(<industrialforegoing:fluiddictionary_converter>);
+	recipes.addShaped("Industrialforegoing Fluiddictionary Converter",
+	<industrialforegoing:fluiddictionary_converter>,
+	[[<ore:itemRubber>, <ore:itemRubber>, <ore:itemRubber>], 
+	[<ore:blockGlass>, <ore:oreIron>, <ore:blockGlass>], 
+	[<minecraft:bucket>, <ore:gearIron>, <minecraft:bucket>]]);
+
+
 	print("--- IndustrialForegoing.zs initialized ---");

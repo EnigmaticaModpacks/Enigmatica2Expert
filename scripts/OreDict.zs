@@ -107,6 +107,15 @@ print("--- loading OreDict.zs ---");
 # Mycelium Oredict
 	<ore:mycelium>.add(<biomesoplenty:grass:8>);
 
+# Biomesoplenty Dirt
+	<ore:dirt>.add([
+		<biomesoplenty:dirt:8>,
+		<biomesoplenty:dirt:9>,
+		<biomesoplenty:dirt:1>,
+		<biomesoplenty:dirt:10>,
+		<biomesoplenty:dirt:2>
+	]);
+
 # Enhanced Ender Ingot
 	<ore:ingotEnderEnhanced>.add(<extendedcrafting:material:48>);
 	
