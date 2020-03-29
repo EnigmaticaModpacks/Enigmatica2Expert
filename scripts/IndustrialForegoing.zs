@@ -94,14 +94,14 @@ function fluidDict(ins as string[]) {
 	recipes.remove(<industrialforegoing:black_hole_tank>);
 	recipes.addShapedMirrored("Black Hole Tank", <industrialforegoing:black_hole_tank>, 
 	[[<ore:itemRubber>, <actuallyadditions:item_crystal_empowered:3>, <ore:itemRubber>],
-	[<teslacorelib:machine_case>, <botania:blackholetalisman>, <teslacorelib:machine_case>], 
+	[<teslacorelib:machine_case>, <botania:blackholetalisman>.reuse(), <teslacorelib:machine_case>], 
 	[<mekanism:plasticblock:8>, <mekanism:machineblock2:11>.withTag({tier: 3, mekData:{}})|<mekanism:machineblock2:11>.withTag({tier: 3, mekData:{security:0}}), <mekanism:plasticblock:8>]]);
 
 # Black Hole Unit
 	recipes.remove(<industrialforegoing:black_hole_unit>);
 	recipes.addShapedMirrored("Black Hole Unit", <industrialforegoing:black_hole_unit>, 
 	[[<ore:itemRubber>, <actuallyadditions:item_crystal_empowered:3>, <ore:itemRubber>],
-	[<teslacorelib:machine_case>, <botania:blackholetalisman>, <teslacorelib:machine_case>], 
+	[<teslacorelib:machine_case>, <botania:blackholetalisman>.reuse(), <teslacorelib:machine_case>], 
 	[<mekanism:plasticblock:8>, <mekanism:basicblock:6>.withTag({tier: 3})|<mekanism:basicblock:6>.withTag({tier: 3, mekData: {itemCount: 0}}), <mekanism:plasticblock:8>]]);
 
 # Black Hole Controller
