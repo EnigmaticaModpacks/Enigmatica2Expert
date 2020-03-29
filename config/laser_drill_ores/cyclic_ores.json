@@ -1,0 +1,184 @@
+[
+  {
+    "item" : "cyclicmagic:nether_coal_ore",
+    "color" : 15,
+    "rarity" : [
+      {
+        "whitelist": "minecraft:hell",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "item" : "cyclicmagic:nether_iron_ore",
+    "color" : 12,
+    "rarity" : [
+      {
+        "whitelist": "minecraft:hell",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "item" : "cyclicmagic:nether_gold_ore",
+    "color" : 4,
+    "rarity" : [
+      {
+        "whitelist": "minecraft:hell",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "item" : "cyclicmagic:nether_redstone_ore",
+    "color" : 14,
+    "rarity" : [
+      {
+        "whitelist": "minecraft:hell",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "item" : "cyclicmagic:nether_lapis_ore",
+    "color" : 11,
+    "rarity" : [
+      {
+        "whitelist": "minecraft:hell",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "item" : "cyclicmagic:nether_diamond_ore",
+    "color" : 3,
+    "rarity" : [
+      {
+        "whitelist": "minecraft:hell",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "item" : "cyclicmagic:nether_emerald_ore",
+    "color" : 5,
+    "rarity" : [
+      {
+        "whitelist": "minecraft:hell",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "item" : "cyclicmagic:end_coal_ore",
+    "color" : 15,
+    "rarity" : [
+      {
+        "whitelist": "minecraft:sky",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "item" : "cyclicmagic:end_iron_ore",
+    "color" : 12,
+    "rarity" : [
+      {
+        "whitelist": "minecraft:sky",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "item" : "cyclicmagic:end_gold_ore",
+    "color" : 4,
+    "rarity" : [
+      {
+        "whitelist": "minecraft:sky",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "item" : "cyclicmagic:end_redstone_ore",
+    "color" : 14,
+    "rarity" : [
+      {
+        "whitelist": "minecraft:sky",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "item" : "cyclicmagic:end_lapis_ore",
+    "color" : 11,
+    "rarity" : [
+      {
+        "whitelist": "minecraft:sky",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "item" : "cyclicmagic:end_diamond_ore",
+    "color" : 3,
+    "rarity" : [
+      {
+        "whitelist": "minecraft:sky",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "item" : "cyclicmagic:end_emerald_ore",
+    "color" : 5,
+    "rarity" : [
+      {
+        "whitelist": "minecraft:sky",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 1
+      }
+    ]
+  }
+]
