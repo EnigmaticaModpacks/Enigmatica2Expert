@@ -1,5 +1,34 @@
 # Enigmatica 2: Expert Changelog
 
+## 1.78
+
+*Remember to use the command  `/bq_admin default load` when updating*
+
+*Using Forge-1.12.2-14.23.5.2847*
+
+*[Mod List](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.78.txt)*
+
+**Changes**
+
+* Industrial Foregoing: Blackhole Talisman is no longer consumed when crafting Black Hole Tanks/Units
+* Removed Knightslime Armor, as it was never intended to be in the pack.
+* DankNull: Removed the Docking Station, as it could be used as storage, which was unintended. It's intended as a container you carry with you for convenience.
+* Personal Nano Bot Beacon is overpowered [\#1584](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1584)
+* Advanced Rocketry gas charge pad quest describtion [\#1567](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1567)
+* Additional Recipes for making IC2 Casings [\#1556](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1556)
+
+**Bug Fixes**
+
+* Tinkers' Compliment's High Oven gives 2.5x ore easily early game (Removed High Oven) [\#1582](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1582)
+* Quest URL for Thermal Evaporation Plant is outdated [\#1572](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1572)
+* Integrated Dynamics Mechanical Squeezer recipe does not work [\#1558](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1558)
+* JAOPCA cobalt and ardite ore dusts don't properly compact in compacting drawers [\#1497](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1497)
+* Dank Null doesn't get contained in your gravestone when you die [\#1427](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1427)
+
+**Removed Mods**
+
+* Aurora (Can cause issues on servers because of port binding) [\#1576](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1576)
+
 ## 1.77
 
 **Changes**

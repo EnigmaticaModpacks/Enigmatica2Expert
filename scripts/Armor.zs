@@ -1,6 +1,5 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
-print("--- loading Armor.zs ---");
 
 # *======= Energy Armor =======*
 
@@ -187,7 +186,7 @@ print("--- loading Armor.zs ---");
 	
 # *======= Vanilla Armor =======*
 
-	var vanillaArmor = [
+	var vanillaStyleArmor = [
 	<minecraft:iron_boots>,
 	<minecraft:iron_leggings>,
 	<minecraft:iron_chestplate>,
@@ -203,11 +202,15 @@ print("--- loading Armor.zs ---");
 	<tcomplement:manyullyn_helmet>,
 	<tcomplement:manyullyn_chestplate>,
 	<tcomplement:manyullyn_leggings>,
-	<tcomplement:manyullyn_boots>
+	<tcomplement:manyullyn_boots>,
+	<tcomplement:knightslime_helmet>,
+	<tcomplement:knightslime_chestplate>,
+	<tcomplement:knightslime_leggings>,
+	<tcomplement:knightslime_boots>
 	
 	] as IItemStack[];
 	
-		for item in vanillaArmor {
+		for item in vanillaStyleArmor {
 		recipes.remove(item);
 	}
 
@@ -316,10 +319,3 @@ print("--- loading Armor.zs ---");
 	recipes.addShapeless("ArmorToMats24", <twilightforest:ironwood_ingot> * 5, [<twilightforest:ironwood_helmet>]);
 	recipes.addShapeless("ArmorToMats25", <twilightforest:naga_scale> * 7, [<twilightforest:naga_leggings>]);
 	recipes.addShapeless("ArmorToMats26", <twilightforest:naga_scale> * 8, [<twilightforest:naga_chestplate>]);
-	
-	rh(<tcomplement:steel_helmet>);
-	rh(<tcomplement:steel_chestplate>);
-	rh(<tcomplement:steel_leggings>);
-	rh(<tcomplement:steel_boots>);
-	
-		print("--- Armor.zs initialized ---");

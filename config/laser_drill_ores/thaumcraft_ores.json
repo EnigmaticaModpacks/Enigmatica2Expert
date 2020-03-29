@@ -1,0 +1,28 @@
+[
+  {
+    "item" : "thaumcraft:ore_amber",
+    "color" : 1,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "item" : "thaumcraft:ore_quartz",
+    "color" : 0,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 2
+      }
+    ]
+  }
+]
