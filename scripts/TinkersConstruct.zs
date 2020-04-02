@@ -9,7 +9,7 @@ print("--- loading TinkersConstruct.zs ---");
 	mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <ic2:pipe:1>);
 
 # Prevent Smart Output from instantly breaking (setting it to same hardness as Smeltery Controllers)
-	<tinker_io:smart_output>.hardness = <tconstruct:smeltery_controller>.hardness;
+	<mctsmelteryio:machine:1>.hardness = <tconstruct:smeltery_controller>.hardness;
 
 # Cobalt Block Unification
 	mods.tconstruct.Casting.removeBasinRecipe(<chisel:blockcobalt>);
@@ -127,40 +127,8 @@ for item in coals {
 	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <thermalfoundation:material:23>, <liquid:alubrass>, 144, true);
 	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <thermalfoundation:material:23>, <liquid:brass>, 144, true);
 
-# Slime Slings
-	recipes.remove(<tconstruct:slimesling:*>);
-	recipes.addShaped("Slime Sling Green", 
-	<tconstruct:slimesling>, 
-	[[<minecraft:lead>, <tconstruct:slime_congealed>, <minecraft:lead>],
-	[<ore:slimeballGreen>, <minecraft:bow>.anyDamage(), <ore:slimeballGreen>], 
-	[null, <ore:slimeballGreen>, null]]);
-	
-	recipes.addShaped("Slime Sling Blue", 
-	<tconstruct:slimesling:1>, 
-	[[<minecraft:lead>, <tconstruct:slime_congealed:1>, <minecraft:lead>],
-	[<ore:slimeballBlue>, <minecraft:bow>.anyDamage(), <ore:slimeballBlue>], 
-	[null, <ore:slimeballBlue>, null]]);
-	
-	recipes.addShaped("Slime Sling Purple", 
-	<tconstruct:slimesling:2>, 
-	[[<minecraft:lead>, <tconstruct:slime_congealed:2>, <minecraft:lead>],
-	[<ore:slimeballPurple>, <minecraft:bow>.anyDamage(), <ore:slimeballPurple>], 
-	[null, <ore:slimeballPurple>, null]]);
-	
-	recipes.addShaped("Slime Sling blood", 
-	<tconstruct:slimesling:3>, 
-	[[<minecraft:lead>, <tconstruct:slime_congealed:3>, <minecraft:lead>],
-	[<ore:slimeballBlood>, <minecraft:bow>.anyDamage(), <ore:slimeballBlood>], 
-	[null, <ore:slimeballBlood>, null]]);
-	
-	recipes.addShaped("Slime Sling Magma", 
-	<tconstruct:slimesling:4>, 
-	[[<minecraft:lead>, <tconstruct:slime_congealed:4>, <minecraft:lead>],
-	[<ore:slimeballMagma>, <minecraft:bow>.anyDamage(), <ore:slimeballMagma>], 
-	[null, <ore:slimeballMagma>, null]]);
-
 # Recipes to remove 
-	var recipesToRemove = [
+/* 	var recipesToRemove = [
 	<tinker_io:fuel_input_machine>,
 	<tinker_io:what_a_beautiful_block>,
 	<tinker_io:ore_crusher>,
@@ -174,7 +142,8 @@ for item in coals {
 	
 	for items in recipesToRemove {
 		rh(items);
-	}
+	} */
+rh(<mctsmelteryio:powdered_fuel>);
 	
 # *======= Fuels =======*
 

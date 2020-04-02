@@ -1,0 +1,191 @@
+[
+  {
+    "identifier": "leatherfrosttroll",
+    "entries": [
+      {
+        "itemName": "iceandfire:troll_leather_frost",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "chitintandeathworm",
+    "entries": [
+      {
+        "itemName": "iceandfire:deathworm_chitin",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "scalebronzedragon",
+    "entries": [
+      {
+        "itemName": "iceandfire:dragonscales_bronze",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "scaleblueseaserpent",
+    "entries": [
+      {
+        "itemName": "iceandfire:sea_serpent_scales_blue",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "scalepurpleseaserpent",
+    "entries": [
+      {
+        "itemName": "iceandfire:sea_serpent_scales_purple",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "scalewhitedragon",
+    "entries": [
+      {
+        "itemName": "iceandfire:dragonscales_white",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "chitinwhitedeathworm",
+    "entries": [
+      {
+        "itemName": "iceandfire:deathworm_chitin",
+        "meta": 1
+      }
+    ]
+  },
+  {
+    "identifier": "chitinbrowndeathworm",
+    "entries": [
+      {
+        "itemName": "iceandfire:deathworm_chitin",
+        "meta": 2
+      }
+    ]
+  },
+  {
+    "identifier": "scalegraydragon",
+    "entries": [
+      {
+        "itemName": "iceandfire:dragonscales_gray",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "scalesapphiredragon",
+    "entries": [
+      {
+        "itemName": "iceandfire:dragonscales_sapphire",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "scaletealseaserpent",
+    "entries": [
+      {
+        "itemName": "iceandfire:sea_serpent_scales_teal",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "scalebluedragon",
+    "entries": [
+      {
+        "itemName": "iceandfire:dragonscales_blue",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "leatherforesttroll",
+    "entries": [
+      {
+        "itemName": "iceandfire:troll_leather_forest",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "scalegreendragon",
+    "entries": [
+      {
+        "itemName": "iceandfire:dragonscales_green",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "leathermountaintroll",
+    "entries": [
+      {
+        "itemName": "iceandfire:troll_leather_mountain",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "scalebronzeseaserpent",
+    "entries": [
+      {
+        "itemName": "iceandfire:sea_serpent_scales_bronze",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "scalereddragon",
+    "entries": [
+      {
+        "itemName": "iceandfire:dragonscales_red",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "scaledeepblueseaserpent",
+    "entries": [
+      {
+        "itemName": "iceandfire:sea_serpent_scales_deepblue",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "scaleredseaserpent",
+    "entries": [
+      {
+        "itemName": "iceandfire:sea_serpent_scales_red",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "scalegreenseaserpent",
+    "entries": [
+      {
+        "itemName": "iceandfire:sea_serpent_scales_green",
+        "meta": 0
+      }
+    ]
+  },
+  {
+    "identifier": "scalesilverdragon",
+    "entries": [
+      {
+        "itemName": "iceandfire:dragonscales_silver",
+        "meta": 0
+      }
+    ]
+  }
+]

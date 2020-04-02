@@ -163,11 +163,11 @@ recipes.remove(<mekanism:machineblock:2>);
 	[<actuallyadditions:block_misc:7>, <nuclearcraft:fission_block>, <actuallyadditions:block_misc:7>]]);
 
 # Reactor Controller
-	recipes.remove(<mekanismgenerators:reactor>);
-	recipes.addShaped(<mekanismgenerators:reactor>, 
-	[[<ore:circuitUltimate>, ultimateGasTank, <ore:circuitUltimate>],
-	[<mekanismgenerators:reactor:1>, <nuclearcraft:fusion_core>, <mekanismgenerators:reactor:1>], 
-	[<mekanismgenerators:reactor:1>, <mekanismgenerators:reactor:1>, <mekanismgenerators:reactor:1>]]);
+#	recipes.remove(<mekanismgenerators:reactor>);
+#	recipes.addShaped(<mekanismgenerators:reactor>, 
+#	[[<ore:circuitUltimate>, ultimateGasTank, <ore:circuitUltimate>],
+#	[<mekanismgenerators:reactor:1>, <nuclearcraft:fusion_core>, <mekanismgenerators:reactor:1>], 
+#	[<mekanismgenerators:reactor:1>, <mekanismgenerators:reactor:1>, <mekanismgenerators:reactor:1>]]);
 	
 # Steel Casing
 	recipes.remove(<mekanism:basicblock:8>);

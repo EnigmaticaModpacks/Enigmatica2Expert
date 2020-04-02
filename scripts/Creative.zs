@@ -69,13 +69,13 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 	[[<twilightforest:trophy>, <twilightforest:trophy:1>, <twilightforest:trophy:2>],
 	[<twilightforest:trophy:5>, <ore:blockCrystalMatrix>, <twilightforest:trophy:3>], 
 	[<twilightforest:trophy:4>, <twilightforest:trophy:8>, <twilightforest:trophy:6>]]);
-
+/* 
 # Special Gas Tank Item
 	recipes.addShapedMirrored("Creative Gas Tank Frame", creativeGasTankFrame, 
 	[[<mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanTitanium"}}}).onlyWithTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanTitanium"}}}), <mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanIridium"}}}).onlyWithTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanIridium"}}}), <mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanDraconium"}}}).onlyWithTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanDraconium"}}})],
 	[<mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanBoron"}}}).onlyWithTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanBoron"}}}), <mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanMithril"}}}).onlyWithTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanMithril"}}}), <mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "fusionfuel"}}}).onlyWithTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "fusionfuel"}}})], 
 	[<mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "ethene"}}}).onlyWithTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "ethene"}}}), <mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "sulfuricacid"}}}).onlyWithTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "sulfuricacid"}}}), <mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "hydrogenchloride"}}}).onlyWithTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "hydrogenchloride"}}})]]);
-
+ */
 # Master Trophy
 	mods.jei.JEI.addItem(twilightForestMasterTrophy);
 	
@@ -218,7 +218,7 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 	[hvSolar, ultProvider, ultProvider, anglesite, anglesite, anglesite, ultProvider, ultProvider, hvSolar], 
 	[hvSolar, ultProvider, <ic2:te:75>, <ic2:te:22>, <nuclearcraft:fusion_core>, <ic2:te:22>, <ic2:te:75>, ultProvider, hvSolar], 
 	[hvSolar, anglesite, <ic2:te:22>, ultCell, ultCatalyst, ultCell, <ic2:te:22>, anglesite, hvSolar], 
-	[bucketUU, anglesite, <nuclearcraft:fusion_core>, ultCatalyst, <extrautils2:rainbowgenerator>, ultCatalyst, <nuclearcraft:fusion_core>, anglesite, bucketUU], 
+	[bucketUU, anglesite, <nuclearcraft:fusion_core>, ultCatalyst, <extrautils2:decorativesolid:8>, ultCatalyst, <nuclearcraft:fusion_core>, anglesite, bucketUU], 
 	[hvSolar, anglesite, <ic2:te:22>, ultCell, ultCatalyst, ultCell, <ic2:te:22>, anglesite, hvSolar], 
 	[hvSolar, ultProvider, <ic2:te:75>, <ic2:te:22>, <nuclearcraft:fusion_core>, <ic2:te:22>, <ic2:te:75>, ultProvider, hvSolar], 
 	[hvSolar, ultProvider, ultProvider, anglesite, anglesite, anglesite, ultProvider, ultProvider, hvSolar], 

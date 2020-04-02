@@ -62,7 +62,6 @@ Under NO circumstances activate Veinminer while working around AE2 networks!
 The Tinkers' Sledge Hammer can crush blocks into others, like Ex Nihilo Hammers.
 Cyclic's Apple Sprouts are cheap and tasty, and can be used to make a Pam's Apple Tree.
 Sneak right-click activates your offhand item instead of your main hand item.
-Many mods offer cross-dimensional teleportation at surprisingly cheap prices.
 Don't hate on bees. Pam's and Rustic bees are simple and great early game.
 Mob Farms will lag less if spread out over a large area. The main load comes from mobs pathing away from each other.
 EnderIO's Ender Fluid Conduits can simultaneously transport multiple liquids through the same block.
@@ -75,3 +74,14 @@ Applied Energistics Interfaces are grouped together by their name in the Interfa
 The advanced Morphing Tool (Morphing Tool crafted with 4 gears) is a good way to get all wrenches early. It also helps to keep your inventory neat.
 The command /foodlist size shows you how many different foods you already ate.
 You can shift-right click Acceleration Cards into Molecular Assemblers
+Extra Utilities Indexer is Applied Energetics alternative for early game
+Cyclic Sack of Holding can move Collector Crystals from Astral Sorcery
+Drawers can be accessed via Coocking For Blockheads floor
+Skeleton falls in Witch Water become a Wither Skeleton. Squid -> Ghast
+Cursed Earth spawn wither skeletons in Nether Fortress
+[MP] Hover over an item in a GUI and press Shift+T to show it in chat
+/undo_excavation can undo Ore Excavator
+Ender Lilly grows on End Stone faster. Get it in stone barrel with lava + glow Stone
+Tasty battlesign (from pigiron for example) in offhand will feed you
+Feed your IC Recycler with bits piped from Fluid Bit Tank
+Hover over item and press Y to show it in surrounding chests

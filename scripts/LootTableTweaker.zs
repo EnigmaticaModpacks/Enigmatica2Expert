@@ -39,7 +39,10 @@ var itemsToRemove as string[] = [
 	
 	"randomthings:spectrecoil_number",
 
-	"twilightforest:uncrafting_table"
+	"twilightforest:uncrafting_table",
+	"enderio:item_dark_steel_sword",
+	"enderio:item_travel_staff",
+	"cyclicmagic:book_ender"
 ];
 
 for item in itemsToRemove {

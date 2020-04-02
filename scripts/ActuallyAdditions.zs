@@ -1,5 +1,7 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
+import mods.actuallyadditions.BallOfFur.addReturn as addBallReturn;
+
 #modloaded actuallyadditions
 print("--- loading ActuallyAdditions.zs ---");
 	
@@ -208,16 +210,30 @@ print("--- loading ActuallyAdditions.zs ---");
 
 # *======= BallOfFur =======*
 
-	mods.actuallyadditions.BallOfFur.addReturn(<thermalfoundation:material:160>, 3);
-	mods.actuallyadditions.BallOfFur.addReturn(<astralsorcery:itemusabledust>, 5);
-	mods.actuallyadditions.BallOfFur.addReturn(<extendedcrafting:material>, 1);
-	mods.actuallyadditions.BallOfFur.addReturn(<appliedenergistics2:material:45>, 8);
-	mods.actuallyadditions.BallOfFur.addReturn(<appliedenergistics2:material:3>, 6);
-	mods.actuallyadditions.BallOfFur.addReturn(<biomesoplenty:gem:1>, 6);
-	mods.actuallyadditions.BallOfFur.addReturn(<immersiveengineering:material:9>, 1);
-	mods.actuallyadditions.BallOfFur.addReturn(<immersiveengineering:material:8>, 12);
-	mods.actuallyadditions.BallOfFur.addReturn(<plustic:alumiteingot>, 1);
+addBallReturn(<thermalfoundation:material:160>, 30);
+addBallReturn(<astralsorcery:itemusabledust>, 50);
+addBallReturn(<extendedcrafting:material>, 10);
+addBallReturn(<appliedenergistics2:material:45>, 80);
+addBallReturn(<appliedenergistics2:material:3>, 60);
+addBallReturn(<biomesoplenty:gem:1>, 60);
+addBallReturn(<immersiveengineering:material:9>, 10);
+addBallReturn(<immersiveengineering:material:8>, 120);
+addBallReturn(<plustic:alumiteingot>, 10);
 
+addBallReturn(<rats:raw_rat>,               180);
+addBallReturn(<rats:rat_pelt>,              130);
+addBallReturn(<rats:token_fragment>,         30);
+addBallReturn(<rats:little_black_worm>,       1);
+addBallReturn(<rats:feral_rat_claw>,         20);
+addBallReturn(<rats:marbled_cheese_rat_head>,10);
+addBallReturn(<enderio:item_power_conduit:2>,80);
+addBallReturn(<immersivecables:wire_coil:1>, 50);
+addBallReturn(<rs_ctr:wire>,                 90);
+addBallReturn(<forestry:chipsets:3>,          5);
+addBallReturn(<twilightforest:alpha_fur>,    10);
+addBallReturn(<twilightforest:arctic_fur>,   30);
+addBallReturn(<animania:wool:3>,            110);
+addBallReturn(<bigreactors:minerals:1>,       1);
 
 # *======= Ore for Laser =======*
 	mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreBoron>, 250);

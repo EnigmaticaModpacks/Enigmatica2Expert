@@ -1,11 +1,10 @@
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded nuclearcraft
+print("--- loading NuclearCraft.zs ---");
 
-# Removing an Obsidian dupe
-mods.nuclearcraft.melter.removeRecipeWithInput(<ore:obsidian>);
-mods.nuclearcraft.melter.removeRecipeWithInput(<ore:dustObsidian>);
-mods.nuclearcraft.melter.addRecipe(<ore:obsidian>, <liquid:obsidian> * 144);
-
+# Lithium Ingot Mekanism Compat
+	//mods.mekanism.smelter.addRecipe(<ic2:dust:11>, <nuclearcraft:ingot:6>);
+	
 # Rhodochrosite
 	mods.actuallyadditions.AtomicReconstructor.addRecipe(<nuclearcraft:gem>, <biomesoplenty:gem:1>, 15000);
 

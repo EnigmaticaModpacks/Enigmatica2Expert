@@ -251,7 +251,7 @@ for item in thaumcraftHintItems {
 	ad(<bigreactors:minerals:1>, craftable);
 
 # Uncraftable ingots
-	ad(<bigreactors:ingotmetals:3>,"Block of Blutonium is craftable.");
+#	ad(<bigreactors:ingotmetals:3>,"Block of Blutonium is craftable.");
 	ad(<bigreactors:ingotmetals:4>,"Block of Ludicrite is craftable.");
 
 # Mana Infused Ingot
@@ -519,7 +519,7 @@ for item in thaumcraftHintItems {
 		"13 Structure Frame tier 6",
 		"8 Lightning Rod",
 		"28 Insulated Lightning Rod"]);
-			
+
 # Tooltips for IC2 matter fabricator
 	var uumatterTooltips = [
 		"actuallyadditions:block_misc",           "9",     "1600",
@@ -556,7 +556,40 @@ for item in thaumcraftHintItems {
 		"quark:crystal",                          "7",     "25",
 		"rftools:machine_frame",                  "0",     "2600",
 		"teslacorelib:machine_case",              "0",     "1900",
-		"thermalexpansion:frame",                 "0",     "4000"
+		"thermalexpansion:frame",                 "0",     "4000",
+		"rats:ancient_sawblade",                  "0",     "3900",
+		"rats:arcane_technology",                 "0",     "3900",
+		"rats:block_of_cheese",                   "0",     "180",
+		"rats:charged_creeper_chunk",             "0",     "600",
+		"rats:cheese",                            "0",     "30",
+		"rats:chunky_cheese_token",               "0",     "450000",
+		"rats:token_piece",                       "0",     "4500",
+		"rats:token_fragment",                    "0",     "450",
+		"rats:tiny_coin",                         "0",     "45",
+		"rats:compressed_rat",                    "0",     "600",
+		"rats:feral_bagh_nakhs",                  "0",     "1200",
+		"rats:feral_rat_claw",                    "0",     "2400",
+		"rats:gem_of_ratlantis",                  "0",     "2400",
+		"rats:herb_bundle",                       "0",     "300",
+		"rats:idol_of_ratlantis",                 "0",     "2400",
+		"rats:little_black_squash_balls",         "0",     "60",
+		"rats:marbled_cheese_golem_core",         "0",     "3900",
+		"rats:marbled_cheese_rat_head",           "0",     "1950",
+		"rats:marbled_cheese_raw",                "0",     "8",
+		"rats:plague_leech",                      "0",     "600",
+		"rats:psionic_rat_brain",                 "0",     "3900",
+		"rats:rat_breeding_lantern",              "0",     "1050",
+		"rats:rat_cage",                          "0",     "600",
+		"rats:rat_diamond",                       "0",     "300",
+		"rats:rat_toga",                          "0",     "840",
+		"rats:rat_upgrade_basic_ratlantean",      "0",     "1125",
+		"rats:rat_upgrade_basic",                 "0",     "390",
+		"rats:rat_upgrade_combined",              "0",     "1650",
+		"rats:ratglove_flower",                   "0",     "105",
+		"rats:ratglove_petals",                   "0",     "1050",
+		"rats:ratlantean_flame",                  "0",     "570",
+		"rats:treacle",                           "0",     "3900",
+		"rats:vial_of_sentience",                 "0",     "1950",
 	] as string[];
 
 	for i in 0 to uumatterTooltips.length {

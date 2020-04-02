@@ -34,7 +34,7 @@ print("--- loading Botania.zs ---");
 	recipes.addShapedMirrored("Elven Mana Spreader", 
 	<botania:spreader:2>, 
 	[[<ore:dreamwood>, <ore:dreamwood>, <ore:dreamwood>],
-	[<ore:dustAstralStarmetal>, <botania:spreader>, <plustic:pipe_piece>.withTag({Material: "elementium"})], 
+	[<ore:dustAstralStarmetal>, <botania:spreader>, <tconstruct:tough_tool_rod>.withTag({Material: "elementium"})], 
 	[<ore:dreamwood>, <ore:dreamwood>, <ore:dreamwood>]]);
 
 	# Gaia

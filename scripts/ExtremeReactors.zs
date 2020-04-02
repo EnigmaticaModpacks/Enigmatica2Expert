@@ -73,23 +73,23 @@ print("--- loading ExtremeReactors.zs ---");
 	[<bigreactors:turbinehousing>, <ic2:crafting:36>, <bigreactors:turbinehousing>]]);
 
 # Blutonium Block
-	recipes.remove(<bigreactors:blockmetals:3>);
-	recipes.addShapedMirrored("Blutonium Block", 
-	<bigreactors:blockmetals:3>, 
-	[[<ore:blockMithril>, <ore:blockCobalt>, <ore:blockMithril>],
-	[<ic2:nuclear:7>, <ic2:nuclear:7>, <ic2:nuclear:7>], 
-	[<ore:blockCyanite>, <actuallyadditions:block_crystal_empowered:1>, <ore:blockCyanite>]]);
+	// recipes.remove(<bigreactors:blockmetals:3>);
+	// recipes.addShapedMirrored("Blutonium Block", 
+	// <bigreactors:blockmetals:3>, 
+	// [[<ore:blockMithril>, <ore:blockCobalt>, <ore:blockMithril>],
+	// [<ic2:nuclear:7>, <ic2:nuclear:7>, <ic2:nuclear:7>], 
+	// [<ore:blockCyanite>, <actuallyadditions:block_crystal_empowered:1>, <ore:blockCyanite>]]);
 # Blutonium Ingot	
-	recipes.remove(<bigreactors:ingotmetals:3>);
-	recipes.addShapeless("Blutonium Ingot from Block", 
-	<bigreactors:ingotmetals:3> * 9, 
-	[<bigreactors:blockmetals:3>]);
+ 	recipes.remove(<bigreactors:ingotmetals:3>);
+ 	recipes.addShapeless("Blutonium Ingot from Block", 
+ 	<bigreactors:ingotmetals:3> * 9, 
+ 	[<bigreactors:blockmetals:3>]);
 # Blutonium Ingot -> Block
-	recipes.addShaped("Blutonium Ingots to Block", 
-	<bigreactors:blockmetals:3>, 
-	[[<ore:ingotBlutonium>, <ore:ingotBlutonium>, <ore:ingotBlutonium>],
-	[<ore:ingotBlutonium>, <ore:ingotBlutonium>, <ore:ingotBlutonium>], 
-	[<ore:ingotBlutonium>, <ore:ingotBlutonium>, <ore:ingotBlutonium>]]);
+	// recipes.addShaped("Blutonium Ingots to Block", 
+	// <bigreactors:blockmetals:3>, 
+	// [[<ore:ingotBlutonium>, <ore:ingotBlutonium>, <ore:ingotBlutonium>],
+	// [<ore:ingotBlutonium>, <ore:ingotBlutonium>, <ore:ingotBlutonium>], 
+	// [<ore:ingotBlutonium>, <ore:ingotBlutonium>, <ore:ingotBlutonium>]]);
 
 # Ludicrite Block
 	recipes.remove(<bigreactors:blockmetals:4>);

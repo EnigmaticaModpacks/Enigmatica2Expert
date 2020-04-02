@@ -1,0 +1,79 @@
+{
+    "name": "compactmachines3:dragonforge_ice_core",
+  
+    "target-item": "iceandfire:dragonforge_ice_core_disabled",
+    "target-count": 1,
+  
+    "duration": 300,
+    "symmetrical": true,
+  
+    "catalyst": "iceandfire:ice_dragon_heart",
+  
+  "input-types": {
+    "a": {
+      "id": "iceandfire:dragonforge_ice_brick",
+      "meta": 0
+    },
+    "b": {
+      "id": "iceandfire:myrmex_jungle_resin_glass",
+      "meta": 0
+    },
+    "c": {
+      "id": "thermalfoundation:fluid_cryotheum",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ]
+    ],
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "c",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ],
+    [
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ]
+    ]
+  ]
+}

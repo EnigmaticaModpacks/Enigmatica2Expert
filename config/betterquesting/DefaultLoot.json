@@ -3,1698 +3,1892 @@
     "0:10": {
       "name:8": "Common",
       "weight:3": 12,
+      "ID:3": 0,
       "rewards:9": {
         "0:10": {
           "weight:3": 1,
+          "ID:3": 0,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:sponge",
               "Count:3": 4,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "1:10": {
           "weight:3": 1,
+          "ID:3": 1,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:dirt",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 2
+              "Damage:2": 2,
+              "OreDict:8": ""
             }
           }
         },
         "2:10": {
           "weight:3": 1,
+          "ID:3": 2,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:grass",
               "Count:3": 16,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "3:10": {
           "weight:3": 1,
+          "ID:3": 3,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:bookshelf",
               "Count:3": 4,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "4:10": {
           "weight:3": 1,
+          "ID:3": 4,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:mossy_cobblestone",
               "Count:3": 32,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "5:10": {
           "weight:3": 1,
+          "ID:3": 5,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:brick_block",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "6:10": {
           "weight:3": 1,
+          "ID:3": 6,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:soul_sand",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "7:10": {
           "weight:3": 1,
+          "ID:3": 7,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:sea_lantern",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "8:10": {
           "weight:3": 1,
+          "ID:3": 8,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:lit_pumpkin",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "9:10": {
           "weight:3": 1,
+          "ID:3": 9,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:clay",
               "Count:3": 16,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "10:10": {
           "weight:3": 1,
+          "ID:3": 10,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:mycelium",
               "Count:3": 16,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "11:10": {
           "weight:3": 1,
+          "ID:3": 11,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:hay_block",
               "Count:3": 9,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "12:10": {
           "weight:3": 1,
+          "ID:3": 12,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:end_bricks",
               "Count:3": 32,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "13:10": {
           "weight:3": 1,
+          "ID:3": 13,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:bone_block",
               "Count:3": 24,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "14:10": {
           "weight:3": 1,
+          "ID:3": 14,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:purpur_block",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "15:10": {
           "weight:3": 1,
+          "ID:3": 15,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:concrete_powder",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 8
+              "Damage:2": 8,
+              "OreDict:8": ""
             }
           }
         },
         "16:10": {
           "weight:3": 1,
+          "ID:3": 16,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:nether_wart_block",
               "Count:3": 2,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "17:10": {
           "weight:3": 1,
+          "ID:3": 17,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:prismarine",
               "Count:3": 32,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "18:10": {
           "weight:3": 1,
+          "ID:3": 18,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:web",
               "Count:3": 4,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "19:10": {
           "weight:3": 1,
+          "ID:3": 19,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:deadbush",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "20:10": {
           "weight:3": 1,
+          "ID:3": 20,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:red_flower",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 3
+              "Damage:2": 3,
+              "OreDict:8": ""
             }
           }
         },
         "21:10": {
           "weight:3": 1,
+          "ID:3": 21,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:cactus",
               "Count:3": 16,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "22:10": {
           "weight:3": 1,
+          "ID:3": 22,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:waterlily",
               "Count:3": 16,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "23:10": {
           "weight:3": 1,
+          "ID:3": 23,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:end_rod",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "24:10": {
           "weight:3": 1,
+          "ID:3": 24,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:chorus_flower",
               "Count:3": 2,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "25:10": {
           "weight:3": 1,
+          "ID:3": 25,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:slime",
               "Count:3": 4,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "26:10": {
           "weight:3": 1,
+          "ID:3": 26,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:painting",
               "Count:3": 3,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "27:10": {
           "weight:3": 1,
+          "ID:3": 27,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:banner",
               "Count:3": 16,
-              "OreDict:8": "",
-              "Damage:3": 6
+              "Damage:2": 6,
+              "OreDict:8": ""
             }
           }
         },
         "28:10": {
           "weight:3": 1,
+          "ID:3": 28,
           "items:9": {
             "0:10": {
               "id:8": "chisel:andesite1",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 7
+              "Damage:2": 7,
+              "OreDict:8": ""
             }
           }
         },
         "29:10": {
           "weight:3": 1,
+          "ID:3": 29,
           "items:9": {
             "0:10": {
               "id:8": "chisel:basalt",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 1
+              "Damage:2": 1,
+              "OreDict:8": ""
             }
           }
         },
         "30:10": {
           "weight:3": 1,
+          "ID:3": 30,
           "items:9": {
             "0:10": {
               "id:8": "chisel:antiblock",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 10
+              "Damage:2": 10,
+              "OreDict:8": ""
             }
           }
         },
         "31:10": {
           "weight:3": 1,
+          "ID:3": 31,
           "items:9": {
             "0:10": {
               "id:8": "chisel:bookshelf_oak",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "32:10": {
           "weight:3": 1,
+          "ID:3": 32,
           "items:9": {
             "0:10": {
               "id:8": "chisel:bricks",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 10
+              "Damage:2": 10,
+              "OreDict:8": ""
             }
           }
         },
         "33:10": {
           "weight:3": 1,
+          "ID:3": 33,
           "items:9": {
             "0:10": {
               "id:8": "chisel:cloud",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "34:10": {
           "weight:3": 1,
+          "ID:3": 34,
           "items:9": {
             "0:10": {
               "id:8": "chisel:carpet_black",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "35:10": {
           "weight:3": 1,
+          "ID:3": 35,
           "items:9": {
             "0:10": {
               "id:8": "chisel:block_coal_coke1",
               "Count:3": 4,
-              "OreDict:8": "",
-              "Damage:3": 12
+              "Damage:2": 12,
+              "OreDict:8": ""
             }
           }
         },
         "36:10": {
           "weight:3": 1,
+          "ID:3": 36,
           "items:9": {
             "0:10": {
               "id:8": "chisel:cobblestonemossy1",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 14
+              "Damage:2": 14,
+              "OreDict:8": ""
             }
           }
         },
         "37:10": {
           "weight:3": 1,
+          "ID:3": 37,
           "items:9": {
             "0:10": {
               "id:8": "biomesoplenty:sapling_0",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 4
+              "Damage:2": 4,
+              "OreDict:8": ""
             }
           }
         },
         "38:10": {
           "weight:3": 1,
+          "ID:3": 38,
           "items:9": {
             "0:10": {
               "id:8": "biomesoplenty:sapling_1",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "39:10": {
           "weight:3": 1,
+          "ID:3": 39,
           "items:9": {
             "0:10": {
               "id:8": "biomesoplenty:sapling_1",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 1
+              "Damage:2": 1,
+              "OreDict:8": ""
             }
           }
         },
         "40:10": {
           "weight:3": 1,
+          "ID:3": 40,
           "items:9": {
             "0:10": {
               "id:8": "biomesoplenty:sapling_1",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 7
+              "Damage:2": 7,
+              "OreDict:8": ""
             }
           }
         },
         "41:10": {
           "weight:3": 1,
+          "ID:3": 41,
           "items:9": {
             "0:10": {
               "id:8": "chisel:glassdyedwhite",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 1
+              "Damage:2": 1,
+              "OreDict:8": ""
             }
           }
         },
         "42:10": {
           "weight:3": 1,
+          "ID:3": 42,
           "items:9": {
             "0:10": {
               "id:8": "chisel:glassdyedlightblue",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 5
+              "Damage:2": 5,
+              "OreDict:8": ""
             }
           }
         },
         "43:10": {
           "weight:3": 1,
+          "ID:3": 43,
           "items:9": {
             "0:10": {
               "id:8": "thermalfoundation:ore",
               "Count:3": 16,
-              "OreDict:8": "",
-              "Damage:3": 5
+              "Damage:2": 5,
+              "OreDict:8": ""
             }
           }
         },
         "44:10": {
           "weight:3": 1,
+          "ID:3": 44,
           "items:9": {
             "0:10": {
               "id:8": "blockcraftery:editable_block",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "45:10": {
           "weight:3": 1,
+          "ID:3": 45,
           "items:9": {
             "0:10": {
               "id:8": "biomesoplenty:terrarium",
               "Count:3": 2,
-              "OreDict:8": "",
-              "Damage:3": 13
+              "Damage:2": 13,
+              "OreDict:8": ""
             }
           }
         },
         "46:10": {
           "weight:3": 1,
+          "ID:3": 46,
           "items:9": {
             "0:10": {
               "id:8": "chisel:futura",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 2
+              "Damage:2": 2,
+              "OreDict:8": ""
             }
           }
         },
         "47:10": {
           "weight:3": 1,
+          "ID:3": 47,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "chiselsandbits:tape_measure",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "48:10": {
           "weight:3": 1,
+          "ID:3": 48,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "cyclicmagic:sleeping_mat",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "49:10": {
           "weight:3": 1,
+          "ID:3": 49,
           "items:9": {
             "0:10": {
               "id:8": "chisel:lavastone1",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 4
+              "Damage:2": 4,
+              "OreDict:8": ""
             }
           }
         },
         "50:10": {
           "weight:3": 1,
+          "ID:3": 50,
           "items:9": {
             "0:10": {
               "id:8": "chisel:lavastone1",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 6
+              "Damage:2": 6,
+              "OreDict:8": ""
             }
           }
         },
         "51:10": {
           "weight:3": 1,
+          "ID:3": 51,
           "items:9": {
             "0:10": {
               "id:8": "chisel:ice",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 7
+              "Damage:2": 7,
+              "OreDict:8": ""
             }
           }
         },
         "52:10": {
           "weight:3": 1,
+          "ID:3": 52,
           "items:9": {
             "0:10": {
               "id:8": "chisel:icepillar",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 4
+              "Damage:2": 4,
+              "OreDict:8": ""
             }
           }
         },
         "53:10": {
           "weight:3": 1,
+          "ID:3": 53,
           "items:9": {
             "0:10": {
               "id:8": "chisel:icepillar",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 5
+              "Damage:2": 5,
+              "OreDict:8": ""
             }
           }
         },
         "54:10": {
           "weight:3": 1,
+          "ID:3": 54,
           "items:9": {
             "0:10": {
               "id:8": "chisel:obsidian",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 13
+              "Damage:2": 13,
+              "OreDict:8": ""
             }
           }
         },
         "55:10": {
           "weight:3": 1,
+          "ID:3": 55,
           "items:9": {
             "0:10": {
               "id:8": "chisel:netherbrick",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 13
+              "Damage:2": 13,
+              "OreDict:8": ""
             }
           }
         },
         "56:10": {
           "weight:3": 1,
+          "ID:3": 56,
           "items:9": {
             "0:10": {
               "id:8": "chisel:netherbrick",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 8
+              "Damage:2": 8,
+              "OreDict:8": ""
             }
           }
         },
         "57:10": {
           "weight:3": 1,
+          "ID:3": 57,
           "items:9": {
             "0:10": {
               "id:8": "chisel:paper",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 6
+              "Damage:2": 6,
+              "OreDict:8": ""
             }
           }
         },
         "58:10": {
           "weight:3": 1,
+          "ID:3": 58,
           "items:9": {
             "0:10": {
               "id:8": "chisel:planks-spruce",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 12
+              "Damage:2": 12,
+              "OreDict:8": ""
             }
           }
         },
         "59:10": {
           "weight:3": 1,
+          "ID:3": 59,
           "items:9": {
             "0:10": {
               "id:8": "chisel:prismarine",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 6
+              "Damage:2": 6,
+              "OreDict:8": ""
             }
           }
         },
         "60:10": {
           "weight:3": 1,
+          "ID:3": 60,
           "items:9": {
             "0:10": {
               "id:8": "chisel:redstone1",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 8
+              "Damage:2": 8,
+              "OreDict:8": ""
             }
           }
         },
         "61:10": {
           "weight:3": 1,
+          "ID:3": 61,
           "items:9": {
             "0:10": {
               "id:8": "chisel:technicalnew",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 8
+              "Damage:2": 8,
+              "OreDict:8": ""
             }
           }
         },
         "62:10": {
           "weight:3": 1,
+          "ID:3": 62,
           "items:9": {
             "0:10": {
               "id:8": "chisel:technical",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 11
+              "Damage:2": 11,
+              "OreDict:8": ""
             }
           }
         },
         "63:10": {
           "weight:3": 1,
+          "ID:3": 63,
           "items:9": {
             "0:10": {
               "id:8": "chisel:technical",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 3
+              "Damage:2": 3,
+              "OreDict:8": ""
             }
           }
         },
         "64:10": {
           "weight:3": 1,
+          "ID:3": 64,
           "items:9": {
             "0:10": {
               "id:8": "openblocks:fan",
               "Count:3": 4,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "65:10": {
           "weight:3": 1,
+          "ID:3": 65,
           "items:9": {
             "0:10": {
               "id:8": "openblocks:golden_egg",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "66:10": {
           "weight:3": 1,
+          "ID:3": 66,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "openblocks:luggage",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "67:10": {
           "weight:3": 1,
+          "ID:3": 67,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "openblocks:dev_null",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "68:10": {
           "weight:3": 1,
+          "ID:3": 68,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "openblocks:sponge_on_a_stick",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "69:10": {
           "weight:3": 1,
+          "ID:3": 69,
           "items:9": {
             "0:10": {
               "id:8": "opencomputers:storage",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 1
+              "Damage:2": 1,
+              "OreDict:8": ""
             }
           }
         },
         "70:10": {
           "weight:3": 1,
+          "ID:3": 70,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:avocado_sapling",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "71:10": {
           "weight:3": 1,
+          "ID:3": 71,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:well",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "72:10": {
           "weight:3": 1,
+          "ID:3": 72,
           "items:9": {
             "0:10": {
               "id:8": "rustic:chandelier",
               "Count:3": 2,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "73:10": {
           "weight:3": 1,
+          "ID:3": 73,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:cashew_sapling",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "74:10": {
           "weight:3": 1,
+          "ID:3": 74,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:dragonfruit_sapling",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "75:10": {
           "weight:3": 1,
+          "ID:3": 75,
           "items:9": {
             "0:10": {
               "id:8": "twilightforest:twilight_sapling",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 1
+              "Damage:2": 1,
+              "OreDict:8": ""
             }
           }
         },
         "76:10": {
           "weight:3": 1,
+          "ID:3": 76,
           "items:9": {
             "0:10": {
               "id:8": "twilightforest:twilight_sapling",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 9
+              "Damage:2": 9,
+              "OreDict:8": ""
             }
           }
         },
         "77:10": {
           "weight:3": 1,
+          "ID:3": 77,
           "items:9": {
             "0:10": {
               "id:8": "botania:elfglasspane",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "78:10": {
           "weight:3": 1,
+          "ID:3": 78,
           "items:9": {
             "0:10": {
               "id:8": "chisel:futura",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 3
+              "Damage:2": 3,
+              "OreDict:8": ""
             }
           }
         },
         "79:10": {
           "weight:3": 1,
+          "ID:3": 79,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "chisel:chisel_hitech",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "80:10": {
           "weight:3": 1,
+          "ID:3": 80,
           "items:9": {
             "0:10": {
               "id:8": "cyclicmagic:beacon_redstone",
               "Count:3": 2,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "81:10": {
           "weight:3": 1,
+          "ID:3": 81,
           "items:9": {
             "0:10": {
               "id:8": "darkutils:trap_tile",
               "Count:3": 16,
-              "OreDict:8": "",
-              "Damage:3": 2
+              "Damage:2": 2,
+              "OreDict:8": ""
             }
           }
         },
         "82:10": {
           "weight:3": 1,
+          "ID:3": 82,
           "items:9": {
             "0:10": {
               "id:8": "extrautils2:decorativeglass",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 1
+              "Damage:2": 1,
+              "OreDict:8": ""
             }
           }
         },
         "83:10": {
           "weight:3": 1,
+          "ID:3": 83,
           "items:9": {
             "0:10": {
               "id:8": "extrautils2:decorativeglass",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 4
+              "Damage:2": 4,
+              "OreDict:8": ""
             }
           }
         },
         "84:10": {
           "weight:3": 1,
+          "ID:3": 84,
           "items:9": {
             "0:10": {
               "id:8": "extrautils2:decorativeglass",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 5
+              "Damage:2": 5,
+              "OreDict:8": ""
             }
           }
         },
         "85:10": {
           "weight:3": 1,
+          "ID:3": 85,
           "items:9": {
             "0:10": {
               "id:8": "jaopca:item_coinboron",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "86:10": {
           "weight:3": 1,
+          "ID:3": 86,
           "items:9": {
             "0:10": {
               "id:8": "jaopca:item_cointitanium",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "87:10": {
           "weight:3": 1,
+          "ID:3": 87,
           "items:9": {
             "0:10": {
               "id:8": "jaopca:item_coinardite",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "88:10": {
           "weight:3": 1,
+          "ID:3": 88,
           "items:9": {
             "0:10": {
               "id:8": "jaopca:item_coinastralstarmetal",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "89:10": {
           "weight:3": 1,
+          "ID:3": 89,
           "items:9": {
             "0:10": {
               "id:8": "flatcoloredblocks:coloredcraftingitem",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "90:10": {
           "weight:3": 1,
+          "ID:3": 90,
           "items:9": {
             "0:10": {
               "id:8": "forestry:doors.giganteum",
               "Count:3": 4,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "91:10": {
           "weight:3": 1,
+          "ID:3": 91,
           "items:9": {
             "0:10": {
               "id:8": "forestry:doors.cocobolo",
               "Count:3": 4,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "92:10": {
           "weight:3": 1,
+          "ID:3": 92,
           "items:9": {
             "0:10": {
               "id:8": "forestry:doors.mahoe",
               "Count:3": 4,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "93:10": {
           "weight:3": 1,
+          "ID:3": 93,
           "items:9": {
             "0:10": {
               "id:8": "forestry:doors.walnut",
               "Count:3": 4,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "94:10": {
           "weight:3": 1,
+          "ID:3": 94,
           "items:9": {
             "0:10": {
               "id:8": "forestry:doors.wenge",
               "Count:3": 4,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "95:10": {
           "weight:3": 1,
+          "ID:3": 95,
           "items:9": {
             "0:10": {
               "id:8": "immersiveengineering:metal_decoration2",
               "Count:3": 16,
-              "OreDict:8": "",
-              "Damage:3": 4
+              "Damage:2": 4,
+              "OreDict:8": ""
             }
           }
         },
         "96:10": {
           "weight:3": 1,
+          "ID:3": 96,
           "items:9": {
             "0:10": {
               "id:8": "immersiveengineering:metal_device1",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 9
+              "Damage:2": 9,
+              "OreDict:8": ""
             }
           }
         },
         "97:10": {
           "weight:3": 1,
+          "ID:3": 97,
           "items:9": {
             "0:10": {
               "id:8": "mekanism:balloon",
               "Count:3": 16,
-              "OreDict:8": "",
-              "Damage:3": 2
+              "Damage:2": 2,
+              "OreDict:8": ""
             }
           }
         },
         "98:10": {
           "weight:3": 1,
+          "ID:3": 98,
           "items:9": {
             "0:10": {
               "id:8": "openblocks:target",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "99:10": {
           "weight:3": 1,
+          "ID:3": 99,
           "items:9": {
             "0:10": {
               "id:8": "openblocks:beartrap",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "100:10": {
           "weight:3": 1,
+          "ID:3": 100,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:zestyzucchiniitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "101:10": {
           "weight:3": 1,
+          "ID:3": 101,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:chickencelerycasseroleitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "102:10": {
           "weight:3": 1,
+          "ID:3": 102,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:cranberryjellysandwichitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "103:10": {
           "weight:3": 1,
+          "ID:3": 103,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:limejellysandwichitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "104:10": {
           "weight:3": 1,
+          "ID:3": 104,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:fishsandwichitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "105:10": {
           "weight:3": 1,
+          "ID:3": 105,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "thermalfoundation:tool.shield_diamond",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "106:10": {
           "weight:3": 1,
+          "ID:3": 106,
           "items:9": {
             "0:10": {
               "id:8": "tconstruct:soil",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 4
+              "Damage:2": 4,
+              "OreDict:8": ""
             }
           }
         },
         "107:10": {
           "weight:3": 1,
+          "ID:3": 107,
           "items:9": {
             "0:10": {
               "id:8": "tconstruct:slime_congealed",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 3
+              "Damage:2": 3,
+              "OreDict:8": ""
             }
           }
         },
         "108:10": {
           "weight:3": 1,
+          "ID:3": 108,
           "items:9": {
             "0:10": {
               "id:8": "tconstruct:clear_stained_glass",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 10
+              "Damage:2": 10,
+              "OreDict:8": ""
             }
           }
         },
         "109:10": {
           "weight:3": 1,
+          "ID:3": 109,
           "items:9": {
             "0:10": {
               "id:8": "rustic:candle",
               "Count:3": 16,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "110:10": {
           "weight:3": 1,
+          "ID:3": 110,
           "items:9": {
             "0:10": {
               "id:8": "rustic:iron_lantern",
               "Count:3": 16,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "111:10": {
           "weight:3": 1,
+          "ID:3": 111,
           "items:9": {
             "0:10": {
               "id:8": "rustic:chair_ironwood",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "112:10": {
           "weight:3": 1,
+          "ID:3": 112,
           "items:9": {
             "0:10": {
               "id:8": "rustic:table_ironwood",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "113:10": {
           "weight:3": 1,
+          "ID:3": 113,
           "items:9": {
             "0:10": {
               "id:8": "storagedrawers:compdrawers",
               "Count:3": 2,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "114:10": {
           "weight:3": 1,
+          "ID:3": 114,
           "items:9": {
             "0:10": {
               "id:8": "storagedrawers:framingtable",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "115:10": {
           "weight:3": 1,
+          "ID:3": 115,
           "items:9": {
             "0:10": {
               "id:8": "quark:smoker",
               "Count:3": 4,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "116:10": {
           "weight:3": 1,
+          "ID:3": 116,
           "items:9": {
             "0:10": {
               "id:8": "quark:obsidian_pressure_plate",
               "Count:3": 4,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "117:10": {
           "weight:3": 1,
+          "ID:3": 117,
           "items:9": {
             "0:10": {
               "id:8": "quark:lit_lamp",
               "Count:3": 16,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "118:10": {
           "weight:3": 1,
+          "ID:3": 118,
           "items:9": {
             "0:10": {
               "id:8": "quark:soul_bead",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "119:10": {
           "weight:3": 1,
+          "ID:3": 119,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "storagedrawers:tape",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "120:10": {
           "weight:3": 1,
+          "ID:3": 120,
           "items:9": {
             "0:10": {
               "id:8": "rustic:vase",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "121:10": {
           "weight:3": 1,
+          "ID:3": 121,
           "items:9": {
             "0:10": {
               "id:8": "thermalfoundation:storage_alloy",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 1
+              "Damage:2": 1,
+              "OreDict:8": ""
             }
           }
         },
         "122:10": {
           "weight:3": 1,
+          "ID:3": 122,
           "items:9": {
             "0:10": {
               "id:8": "thermalfoundation:storage_alloy",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 4
+              "Damage:2": 4,
+              "OreDict:8": ""
             }
           }
         },
         "123:10": {
           "weight:3": 1,
+          "ID:3": 123,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:extremechiliitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "124:10": {
           "weight:3": 1,
+          "ID:3": 124,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:pemmicanitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "125:10": {
           "weight:3": 1,
+          "ID:3": 125,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:sweetandsourmeatballsitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "126:10": {
           "weight:3": 1,
+          "ID:3": 126,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:cheddarandsourcreampotatochipsitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "127:10": {
           "weight:3": 1,
+          "ID:3": 127,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:spagettiandmeatballsitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "128:10": {
           "weight:3": 1,
+          "ID:3": 128,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:icecreamitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "129:10": {
           "weight:3": 1,
+          "ID:3": 129,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:redvelvetcakeitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "130:10": {
           "weight:3": 1,
+          "ID:3": 130,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:nutellaitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "131:10": {
           "weight:3": 1,
+          "ID:3": 131,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:apricotjellysandwichitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "132:10": {
           "weight:3": 1,
+          "ID:3": 132,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:gingerchickenitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "133:10": {
           "weight:3": 1,
+          "ID:3": 133,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:mintchocolatechipicecreamitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "134:10": {
           "weight:3": 1,
+          "ID:3": 134,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:pineapplehamitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "135:10": {
           "weight:3": 1,
+          "ID:3": 135,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:garlicchickenitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "136:10": {
           "weight:3": 1,
+          "ID:3": 136,
           "items:9": {
             "0:10": {
               "id:8": "tconstruct:clear_stained_glass",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 13
+              "Damage:2": 13,
+              "OreDict:8": ""
             }
           }
         },
         "137:10": {
           "weight:3": 1,
+          "ID:3": 137,
           "items:9": {
             "0:10": {
               "id:8": "tconstruct:deco_ground",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "138:10": {
           "weight:3": 1,
+          "ID:3": 138,
           "items:9": {
             "0:10": {
               "id:8": "tconstruct:firewood",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "139:10": {
           "weight:3": 1,
+          "ID:3": 139,
           "items:9": {
             "0:10": {
               "id:8": "tconstruct:seared_tank",
               "Count:3": 4,
-              "OreDict:8": "",
-              "Damage:3": 1
+              "Damage:2": 1,
+              "OreDict:8": ""
             }
           }
         },
         "140:10": {
           "weight:3": 1,
+          "ID:3": 140,
           "items:9": {
             "0:10": {
               "id:8": "tconstruct:seared",
               "Count:3": 24,
-              "OreDict:8": "",
-              "Damage:3": 6
+              "Damage:2": 6,
+              "OreDict:8": ""
             }
           }
         },
         "141:10": {
           "weight:3": 1,
+          "ID:3": 141,
           "items:9": {
             "0:10": {
               "id:8": "tconstruct:ingots",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 4
+              "Damage:2": 4,
+              "OreDict:8": ""
             }
           }
         },
         "142:10": {
           "weight:3": 1,
+          "ID:3": 142,
           "items:9": {
             "0:10": {
               "id:8": "tconstruct:throwball",
               "Count:3": 16,
-              "OreDict:8": "",
-              "Damage:3": 1
+              "Damage:2": 1,
+              "OreDict:8": ""
             }
           }
         },
         "143:10": {
           "weight:3": 1,
+          "ID:3": 143,
           "items:9": {
             "0:10": {
               "id:8": "tconstruct:tooltables",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 5
+              "Damage:2": 5,
+              "OreDict:8": ""
             }
           }
         },
         "144:10": {
           "weight:3": 1,
+          "ID:3": 144,
           "items:9": {
             "0:10": {
               "id:8": "tconstruct:slime_grass_tall",
               "Count:3": 16,
-              "OreDict:8": "",
-              "Damage:3": 4
+              "Damage:2": 4,
+              "OreDict:8": ""
             }
           }
         },
         "145:10": {
           "weight:3": 1,
+          "ID:3": 145,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "tconstruct:slimesling",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "146:10": {
           "weight:3": 1,
+          "ID:3": 146,
           "items:9": {
             "0:10": {
               "id:8": "tconstruct:materials",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 13
+              "Damage:2": 13,
+              "OreDict:8": ""
             }
           }
         },
         "147:10": {
           "weight:3": 1,
+          "ID:3": 147,
           "items:9": {
             "0:10": {
               "id:8": "chisel:concrete_black",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 3
+              "Damage:2": 3,
+              "OreDict:8": ""
             }
           }
         },
         "148:10": {
           "weight:3": 1,
+          "ID:3": 148,
           "items:9": {
             "0:10": {
               "id:8": "chisel:concrete_lightblue",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 2
+              "Damage:2": 2,
+              "OreDict:8": ""
             }
           }
         },
         "149:10": {
           "weight:3": 1,
+          "ID:3": 149,
           "items:9": {
             "0:10": {
               "id:8": "chisel:diorite",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 1
+              "Damage:2": 1,
+              "OreDict:8": ""
             }
           }
         },
         "150:10": {
           "weight:3": 1,
+          "ID:3": 150,
           "items:9": {
             "0:10": {
               "id:8": "chisel:dirt",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 4
+              "Damage:2": 4,
+              "OreDict:8": ""
             }
           }
         },
         "151:10": {
           "weight:3": 1,
+          "ID:3": 151,
           "items:9": {
             "0:10": {
               "id:8": "chisel:factory",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 6
+              "Damage:2": 6,
+              "OreDict:8": ""
             }
           }
         },
         "152:10": {
           "weight:3": 1,
+          "ID:3": 152,
           "items:9": {
             "0:10": {
               "id:8": "chisel:factory",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 9
+              "Damage:2": 9,
+              "OreDict:8": ""
             }
           }
         },
         "153:10": {
           "weight:3": 1,
+          "ID:3": 153,
           "items:9": {
             "0:10": {
               "id:8": "chisel:factory",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 12
+              "Damage:2": 12,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "154:10": {
+          "weight:3": 1,
+          "ID:3": 154,
+          "items:9": {
+            "0:10": {
+              "id:8": "rats:garbage_pile",
+              "Count:3": 6,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         }
@@ -1703,929 +1897,1078 @@
     "1:10": {
       "name:8": "Uncommon",
       "weight:3": 10,
+      "ID:3": 1,
       "rewards:9": {
         "0:10": {
           "weight:3": 1,
+          "ID:3": 0,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:tnt",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "1:10": {
           "weight:3": 1,
+          "ID:3": 1,
           "items:9": {
             "0:10": {
               "id:8": "advancedrocketry:fueltank",
               "Count:3": 4,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "2:10": {
           "weight:3": 1,
+          "ID:3": 2,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:piston",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "3:10": {
           "weight:3": 1,
+          "ID:3": 3,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:observer",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "4:10": {
           "weight:3": 1,
+          "ID:3": 4,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:brewing_stand",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "5:10": {
           "weight:3": 1,
+          "ID:3": 5,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:ender_eye",
               "Count:3": 4,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "6:10": {
           "weight:3": 1,
+          "ID:3": 6,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "minecraft:writable_book",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "7:10": {
           "weight:3": 1,
+          "ID:3": 7,
           "items:9": {
             "0:10": {
               "id:8": "animania:block_hamster_wheel",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "8:10": {
           "weight:3": 1,
+          "ID:3": 8,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "minecraft:record_mall",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "9:10": {
           "weight:3": 1,
+          "ID:3": 9,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "minecraft:record_ward",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "10:10": {
           "weight:3": 1,
+          "ID:3": 10,
           "items:9": {
             "0:10": {
               "id:8": "advancedrocketry:launchpad",
               "Count:3": 49,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "11:10": {
           "weight:3": 1,
+          "ID:3": 11,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "actuallyadditions:item_coffee",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "12:10": {
           "weight:3": 1,
+          "ID:3": 12,
           "items:9": {
             "0:10": {
               "id:8": "appliedenergistics2:quartz_fixture",
               "Count:3": 16,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "13:10": {
           "weight:3": 1,
+          "ID:3": 13,
           "items:9": {
             "0:10": {
               "id:8": "astralsorcery:itemcraftingcomponent",
               "Count:3": 4,
-              "OreDict:8": "",
-              "Damage:3": 4
+              "Damage:2": 4,
+              "OreDict:8": ""
             }
           }
         },
         "14:10": {
           "weight:3": 1,
+          "ID:3": 14,
           "items:9": {
             "0:10": {
               "id:8": "architecturecraft:sawbench",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "15:10": {
           "weight:3": 1,
+          "ID:3": 15,
           "items:9": {
             "0:10": {
               "id:8": "mekanism:obsidiantnt",
               "Count:3": 16,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "16:10": {
           "weight:3": 1,
+          "ID:3": 16,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "mekanismgenerators:generator",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 5
+              "Damage:2": 5,
+              "OreDict:8": ""
             }
           }
         },
         "17:10": {
           "weight:3": 1,
+          "ID:3": 17,
           "items:9": {
             "0:10": {
               "id:8": "nuclearcraft:helium_collector",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "18:10": {
           "weight:3": 1,
+          "ID:3": 18,
           "items:9": {
             "0:10": {
               "id:8": "openblocks:builder_guide",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "19:10": {
           "weight:3": 1,
+          "ID:3": 19,
           "items:9": {
             "0:10": {
               "id:8": "openblocks:hang_glider",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "20:10": {
           "weight:3": 1,
+          "ID:3": 20,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:bltitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "21:10": {
           "weight:3": 1,
+          "ID:3": 21,
           "items:9": {
             "0:10": {
               "id:8": "botania:manaresource",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "22:10": {
           "weight:3": 1,
+          "ID:3": 22,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "botania:grasshorn",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "23:10": {
           "weight:3": 1,
+          "ID:3": 23,
           "items:9": {
             "0:10": {
               "id:8": "animania:entity_egg_random",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "24:10": {
           "weight:3": 1,
+          "ID:3": 24,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "astralsorcery:itemskyresonator",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "25:10": {
           "weight:3": 1,
+          "ID:3": 25,
           "items:9": {
             "0:10": {
               "id:8": "astralsorcery:blockworldilluminator",
               "Count:3": 2,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "26:10": {
           "weight:3": 1,
+          "ID:3": 26,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "botania:goddesscharm",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "27:10": {
           "weight:3": 1,
+          "ID:3": 27,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "botania:monocle",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "28:10": {
           "weight:3": 1,
+          "ID:3": 28,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "chiselsandbits:chisel_diamond",
               "Count:3": 1,
               "tag:10": {},
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "29:10": {
           "weight:3": 1,
+          "ID:3": 29,
           "items:9": {
             "0:10": {
               "id:8": "cookingforblockheads:cooking_table",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "30:10": {
           "weight:3": 1,
+          "ID:3": 30,
           "items:9": {
             "0:10": {
               "id:8": "cookingforblockheads:cow_jar",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "31:10": {
           "weight:3": 1,
+          "ID:3": 31,
           "items:9": {
             "0:10": {
               "id:8": "cyclicmagic:inventory_food",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "32:10": {
           "weight:3": 1,
+          "ID:3": 32,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "cyclicmagic:ender_dungeon",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "33:10": {
           "weight:3": 1,
+          "ID:3": 33,
           "items:9": {
             "0:10": {
               "id:8": "extrautils2:angelblock",
               "Count:3": 16,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "34:10": {
           "weight:3": 1,
+          "ID:3": 34,
           "items:9": {
             "0:10": {
               "id:8": "extrautils2:passivegenerator",
               "Count:3": 10,
-              "OreDict:8": "",
-              "Damage:3": 5
+              "Damage:2": 5,
+              "OreDict:8": ""
             }
           }
         },
         "35:10": {
           "weight:3": 1,
+          "ID:3": 35,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "extrautils2:boomerang",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "36:10": {
           "weight:3": 1,
+          "ID:3": 36,
           "items:9": {
             "0:10": {
               "id:8": "forestry:flexible_casing",
               "Count:3": 2,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "37:10": {
           "weight:3": 1,
+          "ID:3": 37,
           "items:9": {
             "0:10": {
               "id:8": "forestry:sturdy_machine",
               "Count:3": 4,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "38:10": {
           "weight:3": 1,
+          "ID:3": 38,
           "items:9": {
             "0:10": {
               "id:8": "forestry:hardened_machine",
               "Count:3": 2,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "39:10": {
           "weight:3": 1,
+          "ID:3": 39,
           "items:9": {
             "0:10": {
               "id:8": "forestry:impregnated_casing",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "40:10": {
           "weight:3": 1,
+          "ID:3": 40,
           "items:9": {
             "0:10": {
               "id:8": "ic2:upgrade",
               "Count:3": 12,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "41:10": {
           "weight:3": 1,
+          "ID:3": 41,
           "items:9": {
             "0:10": {
               "id:8": "ic2:upgrade",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 1
+              "Damage:2": 1,
+              "OreDict:8": ""
             }
           }
         },
         "42:10": {
           "weight:3": 1,
+          "ID:3": 42,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "ironchest:iron_shulker_box_purple",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 5
+              "Damage:2": 5,
+              "OreDict:8": ""
             }
           }
         },
         "43:10": {
           "weight:3": 1,
+          "ID:3": 43,
           "items:9": {
             "0:10": {
               "id:8": "immersiveengineering:metal_decoration2",
               "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 5
+              "Damage:2": 5,
+              "OreDict:8": ""
             }
           }
         },
         "44:10": {
           "weight:3": 1,
+          "ID:3": 44,
           "items:9": {
             "0:10": {
               "id:8": "immersiveengineering:metal_device1",
               "Count:3": 2,
-              "OreDict:8": "",
-              "Damage:3": 8
+              "Damage:2": 8,
+              "OreDict:8": ""
             }
           }
         },
         "45:10": {
           "weight:3": 1,
+          "ID:3": 45,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "Parent:10": {
+                  "Size:3": 1,
+                  "Items:9": {}
+                },
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "immersiveengineering:shield",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "46:10": {
           "weight:3": 1,
+          "ID:3": 46,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "mekanism:robit",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "47:10": {
           "weight:3": 1,
+          "ID:3": 47,
           "items:9": {
             "0:10": {
               "id:8": "mekanism:speedupgrade",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "48:10": {
           "weight:3": 1,
+          "ID:3": 48,
           "items:9": {
             "0:10": {
               "id:8": "thermalexpansion:augment",
               "Count:3": 4,
-              "OreDict:8": "",
-              "Damage:3": 128
+              "Damage:2": 128,
+              "OreDict:8": ""
             }
           }
         },
         "49:10": {
           "weight:3": 1,
+          "ID:3": 49,
           "items:9": {
             "0:10": {
               "id:8": "thermalexpansion:augment",
               "Count:3": 4,
-              "OreDict:8": "",
-              "Damage:3": 512
+              "Damage:2": 512,
+              "OreDict:8": ""
             }
           }
         },
         "50:10": {
           "weight:3": 1,
+          "ID:3": 50,
           "items:9": {
             "0:10": {
               "id:8": "thermalfoundation:glass",
               "Count:3": 16,
-              "OreDict:8": "",
-              "Damage:3": 7
+              "Damage:2": 7,
+              "OreDict:8": ""
             }
           }
         },
         "51:10": {
           "weight:3": 1,
+          "ID:3": 51,
           "items:9": {
             "0:10": {
-              "id:8": "tinker_io:smart_output",
+              "id:8": "mctsmelteryio:machine",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 1,
+              "OreDict:8": ""
             }
           }
         },
         "52:10": {
           "weight:3": 1,
+          "ID:3": 52,
           "items:9": {
             "0:10": {
               "id:8": "tconstruct:materials",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 16
+              "Damage:2": 16,
+              "OreDict:8": ""
             }
           }
         },
         "53:10": {
           "weight:3": 1,
+          "ID:3": 53,
           "items:9": {
             "0:10": {
               "id:8": "tconstruct:materials",
               "Count:3": 3,
-              "OreDict:8": "",
-              "Damage:3": 14
+              "Damage:2": 14,
+              "OreDict:8": ""
             }
           }
         },
         "54:10": {
           "weight:3": 1,
+          "ID:3": 54,
           "items:9": {
             "0:10": {
               "id:8": "tconstruct:materials",
               "Count:3": 2,
-              "OreDict:8": "",
-              "Damage:3": 19
+              "Damage:2": 19,
+              "OreDict:8": ""
             }
           }
         },
         "55:10": {
           "weight:3": 1,
+          "ID:3": 55,
           "items:9": {
             "0:10": {
               "id:8": "tconstruct:slime_congealed",
               "Count:3": 2,
-              "OreDict:8": "",
-              "Damage:3": 2
+              "Damage:2": 2,
+              "OreDict:8": ""
             }
           }
         },
         "56:10": {
           "weight:3": 1,
+          "ID:3": 56,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:tacoitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "57:10": {
           "weight:3": 1,
+          "ID:3": 57,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:blueberrypancakesitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "58:10": {
           "weight:3": 1,
+          "ID:3": 58,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:fishdinneritem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "59:10": {
           "weight:3": 1,
+          "ID:3": 59,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:chickencurryitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "60:10": {
           "weight:3": 1,
+          "ID:3": 60,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:coconutshrimpitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "61:10": {
           "weight:3": 1,
+          "ID:3": 61,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:sweetpotatopieitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "62:10": {
           "weight:3": 1,
+          "ID:3": 62,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:frosteddonutitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "63:10": {
           "weight:3": 1,
+          "ID:3": 63,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:cinnamonsugardonutitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "64:10": {
           "weight:3": 1,
+          "ID:3": 64,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:sausageinbreaditem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "65:10": {
           "weight:3": 1,
+          "ID:3": 65,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:beefwellingtonitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "66:10": {
           "weight:3": 1,
+          "ID:3": 66,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:generaltsochickenitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "67:10": {
           "weight:3": 1,
+          "ID:3": 67,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:sundayroastitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "68:10": {
           "weight:3": 1,
+          "ID:3": 68,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:bbqpulledporkitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "69:10": {
           "weight:3": 1,
+          "ID:3": 69,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:onionhamburgeritem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "70:10": {
           "weight:3": 1,
+          "ID:3": 70,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:grilledcheeseitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "71:10": {
           "weight:3": 1,
+          "ID:3": 71,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:fishandchipsitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "72:10": {
           "weight:3": 1,
+          "ID:3": 72,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:pekingduckitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "73:10": {
           "weight:3": 1,
+          "ID:3": 73,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:chilidogitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "74:10": {
           "weight:3": 1,
+          "ID:3": 74,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:poutineitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "75:10": {
           "weight:3": 1,
+          "ID:3": 75,
           "items:9": {
             "0:10": {
               "id:8": "storagedrawers:controller",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "76:10": {
           "weight:3": 1,
+          "ID:3": 76,
           "items:9": {
             "0:10": {
               "id:8": "storagedrawers:upgrade_void",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "77:10": {
           "weight:3": 1,
+          "ID:3": 77,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "scannable:scanner",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "78:10": {
           "weight:3": 1,
+          "ID:3": 78,
           "items:9": {
             "0:10": {
               "id:8": "storagedrawers:upgrade_status",
               "Count:3": 16,
-              "OreDict:8": "",
-              "Damage:3": 1
+              "Damage:2": 1,
+              "OreDict:8": ""
             }
           }
         },
         "79:10": {
           "weight:3": 1,
+          "ID:3": 79,
           "items:9": {
             "0:10": {
               "id:8": "rftools:crafter3",
               "Count:3": 2,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "80:10": {
           "weight:3": 1,
+          "ID:3": 80,
           "items:9": {
             "0:10": {
               "id:8": "villagermarket:villager_market",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "81:10": {
           "weight:3": 1,
+          "ID:3": 81,
           "items:9": {
             "0:10": {
               "id:8": "libvulpes:holoprojector",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "82:10": {
           "weight:3": 1,
+          "ID:3": 82,
           "items:9": {
             "0:10": {
               "id:8": "chisel:emerald",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 11
+              "Damage:2": 11,
+              "OreDict:8": ""
             }
           }
         },
         "83:10": {
           "weight:3": 1,
+          "ID:3": 83,
           "items:9": {
             "0:10": {
               "id:8": "chisel:lapis",
               "Count:3": 4,
-              "OreDict:8": "",
-              "Damage:3": 7
+              "Damage:2": 7,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "84:10": {
+          "weight:3": 1,
+          "ID:3": 84,
+          "items:9": {
+            "0:10": {
+              "id:8": "oeintegration:excavatemodifier",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         }
@@ -2634,895 +2977,1047 @@
     "2:10": {
       "name:8": "Rare",
       "weight:3": 7,
+      "ID:3": 2,
       "rewards:9": {
         "0:10": {
           "weight:3": 1,
+          "ID:3": 0,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:shulker_shell",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "1:10": {
           "weight:3": 1,
+          "ID:3": 1,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:dragon_breath",
               "Count:3": 16,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "2:10": {
           "weight:3": 1,
+          "ID:3": 2,
           "items:9": {
             "0:10": {
               "id:8": "mysticalagriculture:growth_accelerator",
               "Count:3": 2,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "3:10": {
           "weight:3": 1,
+          "ID:3": 3,
           "items:9": {
             "0:10": {
               "id:8": "draconicevolution:dislocator",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "4:10": {
           "weight:3": 1,
+          "ID:3": 4,
           "items:9": {
             "0:10": {
               "id:8": "plustic:osgloglasblock",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "5:10": {
           "weight:3": 1,
+          "ID:3": 5,
           "items:9": {
             "0:10": {
               "id:8": "mysticalagradditions:insanium",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "6:10": {
           "weight:3": 1,
+          "ID:3": 6,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:experience_bottle",
               "Count:3": 32,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "7:10": {
           "weight:3": 1,
+          "ID:3": 7,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:diamond_horse_armor",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "8:10": {
           "weight:3": 1,
+          "ID:3": 8,
           "items:9": {
             "0:10": {
               "id:8": "actuallyadditions:block_greenhouse_glass",
               "Count:3": 5,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "9:10": {
           "weight:3": 1,
+          "ID:3": 9,
           "items:9": {
             "0:10": {
               "id:8": "actuallyadditions:block_ranged_collector",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "10:10": {
           "weight:3": 1,
+          "ID:3": 10,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "actuallyadditions:item_potion_ring",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 1
+              "Damage:2": 1,
+              "OreDict:8": ""
             }
           }
         },
         "11:10": {
           "weight:3": 1,
+          "ID:3": 11,
           "items:9": {
             "0:10": {
               "id:8": "appliedenergistics2:crafting_unit",
               "Count:3": 2,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "12:10": {
           "weight:3": 1,
+          "ID:3": 12,
           "items:9": {
             "0:10": {
               "id:8": "actuallyadditions:block_farmer",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "13:10": {
           "weight:3": 1,
+          "ID:3": 13,
           "items:9": {
             "0:10": {
               "id:8": "nuclearcraft:fission_controller_new_fixed",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "14:10": {
           "weight:3": 1,
+          "ID:3": 14,
           "items:9": {
             "0:10": {
               "id:8": "nuclearcraft:cobblestone_generator_compact",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "15:10": {
           "weight:3": 1,
+          "ID:3": 15,
           "items:9": {
             "0:10": {
               "id:8": "nuclearcraft:rtg_americium",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "16:10": {
           "weight:3": 1,
+          "ID:3": 16,
           "items:9": {
             "0:10": {
               "id:8": "nuclearcraft:upgrade",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "17:10": {
           "weight:3": 1,
+          "ID:3": 17,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:toastedwesternitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "18:10": {
           "weight:3": 1,
+          "ID:3": 18,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:hamsweetpicklesandwichitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "19:10": {
           "weight:3": 1,
+          "ID:3": 19,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:bbqplatteritem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "20:10": {
           "weight:3": 1,
+          "ID:3": 20,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:supremepizzaitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "21:10": {
           "weight:3": 1,
+          "ID:3": 21,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "betterbuilderswands:wandunbreakable",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 12
+              "Damage:2": 12,
+              "OreDict:8": ""
             }
           }
         },
         "22:10": {
           "weight:3": 1,
+          "ID:3": 22,
           "items:9": {
             "0:10": {
               "id:8": "chisel:offsettool",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "23:10": {
           "weight:3": 1,
+          "ID:3": 23,
           "items:9": {
             "0:10": {
               "id:8": "computercraft:computer",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 16384
+              "Damage:2": 16384,
+              "OreDict:8": ""
             }
           }
         },
         "24:10": {
           "weight:3": 1,
+          "ID:3": 24,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "colytra:elytra_bauble",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "25:10": {
           "weight:3": 1,
+          "ID:3": 25,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "darkutils:charm_sleep",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "26:10": {
           "weight:3": 1,
+          "ID:3": 26,
           "items:9": {
             "0:10": {
               "id:8": "draconicevolution:energy_crystal",
               "Count:3": 4,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "27:10": {
           "weight:3": 1,
+          "ID:3": 27,
           "items:9": {
             "0:10": {
               "id:8": "draconicevolution:energy_crystal",
               "Count:3": 4,
-              "OreDict:8": "",
-              "Damage:3": 3
+              "Damage:2": 3,
+              "OreDict:8": ""
             }
           }
         },
         "28:10": {
           "weight:3": 1,
+          "ID:3": 28,
           "items:9": {
             "0:10": {
               "id:8": "draconicevolution:energy_crystal",
               "Count:3": 4,
-              "OreDict:8": "",
-              "Damage:3": 6
+              "Damage:2": 6,
+              "OreDict:8": ""
             }
           }
         },
         "29:10": {
           "weight:3": 1,
+          "ID:3": 29,
           "items:9": {
             "0:10": {
               "id:8": "enderstorage:ender_storage",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "30:10": {
           "weight:3": 1,
+          "ID:3": 30,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "enderstorage:ender_pouch",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "31:10": {
           "weight:3": 1,
+          "ID:3": 31,
           "items:9": {
             "0:10": {
               "id:8": "cyclicmagic:exp_pylon",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "32:10": {
           "weight:3": 1,
+          "ID:3": 32,
           "items:9": {
             "0:10": {
               "id:8": "excompressum:auto_heavy_sieve",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "33:10": {
           "weight:3": 1,
+          "ID:3": 33,
           "items:9": {
             "0:10": {
               "id:8": "bigreactors:reactorcasing",
               "Count:3": 24,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "34:10": {
           "weight:3": 1,
+          "ID:3": 34,
           "items:9": {
             "0:10": {
               "id:8": "extrautils2:resonator",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "35:10": {
           "weight:3": 1,
+          "ID:3": 35,
           "items:9": {
             "0:10": {
               "id:8": "farmingforblockheads:market",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "36:10": {
           "weight:3": 1,
+          "ID:3": 36,
           "items:9": {
             "0:10": {
               "id:8": "immersiveengineering:metal_device1",
               "Count:3": 2,
-              "OreDict:8": "",
-              "Damage:3": 10
+              "Damage:2": 10,
+              "OreDict:8": ""
             }
           }
         },
         "37:10": {
           "weight:3": 1,
+          "ID:3": 37,
           "items:9": {
             "0:10": {
               "id:8": "immersiveengineering:metal_device1",
               "Count:3": 2,
-              "OreDict:8": "",
-              "Damage:3": 11
+              "Damage:2": 11,
+              "OreDict:8": ""
             }
           }
         },
         "38:10": {
           "weight:3": 1,
+          "ID:3": 38,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "Parent:10": {
+                  "Size:3": 1,
+                  "Items:9": {}
+                },
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "immersiveengineering:revolver",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "39:10": {
           "weight:3": 1,
+          "ID:3": 39,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "Parent:10": {
+                  "Size:3": 1,
+                  "Items:9": {}
+                },
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "immersiveengineering:chemthrower",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "40:10": {
           "weight:3": 1,
+          "ID:3": 40,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "Parent:10": {
+                  "Size:3": 1,
+                  "Items:9": {}
+                },
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "immersiveengineering:railgun",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "41:10": {
           "weight:3": 1,
+          "ID:3": 41,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "Parent:10": {
+                  "Size:3": 1,
+                  "Items:9": {}
+                },
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "immersiveengineering:skyhook",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "42:10": {
           "weight:3": 1,
+          "ID:3": 42,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "industrialforegoing:mob_imprisonment_tool",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "43:10": {
           "weight:3": 1,
+          "ID:3": 43,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "mekanism:flamethrower",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "44:10": {
           "weight:3": 1,
+          "ID:3": 44,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "mekanism:machineblock2",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 5
+              "Damage:2": 5,
+              "OreDict:8": ""
             }
           }
         },
         "45:10": {
           "weight:3": 1,
+          "ID:3": 45,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "mekanismgenerators:generator",
               "Count:3": 2,
-              "OreDict:8": "",
-              "Damage:3": 6
+              "Damage:2": 6,
+              "OreDict:8": ""
             }
           }
         },
         "46:10": {
           "weight:3": 1,
+          "ID:3": 46,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "mysticalagriculture:infusion_crystal",
               "Count:3": 2,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "47:10": {
           "weight:3": 1,
+          "ID:3": 47,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "mysticalagriculture:watering_can",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 4
+              "Damage:2": 4,
+              "OreDict:8": ""
             }
           }
         },
         "48:10": {
           "weight:3": 1,
+          "ID:3": 48,
           "items:9": {
             "0:10": {
               "id:8": "thermalexpansion:augment",
               "Count:3": 2,
-              "OreDict:8": "",
-              "Damage:3": 673
+              "Damage:2": 673,
+              "OreDict:8": ""
             }
           }
         },
         "49:10": {
           "weight:3": 1,
+          "ID:3": 49,
           "items:9": {
             "0:10": {
               "id:8": "thermalexpansion:augment",
               "Count:3": 2,
-              "OreDict:8": "",
-              "Damage:3": 720
+              "Damage:2": 720,
+              "OreDict:8": ""
             }
           }
         },
         "50:10": {
           "weight:3": 1,
+          "ID:3": 50,
           "items:9": {
             "0:10": {
               "id:8": "thermalfoundation:upgrade",
               "Count:3": 2,
-              "OreDict:8": "",
-              "Damage:3": 34
+              "Damage:2": 34,
+              "OreDict:8": ""
             }
           }
         },
         "51:10": {
           "weight:3": 1,
+          "ID:3": 51,
           "items:9": {
             "0:10": {
               "id:8": "thermalfoundation:upgrade",
               "Count:3": 3,
-              "OreDict:8": "",
-              "Damage:3": 33
+              "Damage:2": 33,
+              "OreDict:8": ""
             }
           }
         },
         "52:10": {
           "weight:3": 1,
+          "ID:3": 52,
           "items:9": {
             "0:10": {
               "id:8": "thermalfoundation:material",
               "Count:3": 12,
-              "OreDict:8": "",
-              "Damage:3": 1028
+              "Damage:2": 1028,
+              "OreDict:8": ""
             }
           }
         },
         "53:10": {
           "weight:3": 1,
+          "ID:3": 53,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "botania:exchangerod",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "54:10": {
           "weight:3": 1,
+          "ID:3": 54,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:southernstylebreakfastitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "55:10": {
           "weight:3": 1,
+          "ID:3": 55,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:meatfeastpizzaitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "56:10": {
           "weight:3": 1,
+          "ID:3": 56,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:thankfuldinneritem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "57:10": {
           "weight:3": 1,
+          "ID:3": 57,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:cornedbeefbreakfastitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "58:10": {
           "weight:3": 1,
+          "ID:3": 58,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:delightedmealitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "59:10": {
           "weight:3": 1,
+          "ID:3": 59,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:heartybreakfastitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "60:10": {
           "weight:3": 1,
+          "ID:3": 60,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:ploughmanslunchitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "61:10": {
           "weight:3": 1,
+          "ID:3": 61,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:honeysoyribsitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "62:10": {
           "weight:3": 1,
+          "ID:3": 62,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:charsiuitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "63:10": {
           "weight:3": 1,
+          "ID:3": 63,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:shrimpokrahushpuppiesitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "64:10": {
           "weight:3": 1,
+          "ID:3": 64,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:wontonsoupitem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "65:10": {
           "weight:3": 1,
+          "ID:3": 65,
           "items:9": {
             "0:10": {
               "id:8": "harvestcraft:coleslawburgeritem",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "66:10": {
           "weight:3": 1,
+          "ID:3": 66,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "redstonearsenal:tool.shield_flux",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "67:10": {
           "weight:3": 1,
+          "ID:3": 67,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "redstonearsenal:tool.battlewrench_flux",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "68:10": {
           "weight:3": 1,
+          "ID:3": 68,
           "items:9": {
             "0:10": {
               "id:8": "redstonearsenal:storage",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "69:10": {
           "weight:3": 1,
+          "ID:3": 69,
           "items:9": {
             "0:10": {
               "id:8": "redstonearsenal:storage",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 1
+              "Damage:2": 1,
+              "OreDict:8": ""
             }
           }
         },
         "70:10": {
           "weight:3": 1,
+          "ID:3": 70,
           "items:9": {
             "0:10": {
               "id:8": "rftools:builder",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "71:10": {
           "weight:3": 1,
+          "ID:3": 71,
           "items:9": {
             "0:10": {
               "id:8": "rftools:powercell_advanced",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "72:10": {
           "weight:3": 1,
+          "ID:3": 72,
           "items:9": {
             "0:10": {
               "id:8": "thermalexpansion:frame",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 129
+              "Damage:2": 129,
+              "OreDict:8": ""
             }
           }
         },
         "73:10": {
           "weight:3": 1,
+          "ID:3": 73,
           "items:9": {
             "0:10": {
               "id:8": "thermaldynamics:duct_32",
               "Count:3": 48,
-              "OreDict:8": "",
-              "Damage:3": 6
+              "Damage:2": 6,
+              "OreDict:8": ""
             }
           }
         },
         "74:10": {
           "weight:3": 1,
+          "ID:3": 74,
           "items:9": {
             "0:10": {
               "id:8": "twilightforest:block_storage",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "75:10": {
           "weight:3": 1,
+          "ID:3": 75,
           "items:9": {
             "0:10": {
               "id:8": "twilightforest:block_storage",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 1
+              "Damage:2": 1,
+              "OreDict:8": ""
             }
           }
         },
         "76:10": {
           "weight:3": 1,
+          "ID:3": 76,
           "items:9": {
             "0:10": {
               "id:8": "twilightforest:block_storage",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 2
+              "Damage:2": 2,
+              "OreDict:8": ""
             }
           }
         },
         "77:10": {
           "weight:3": 1,
+          "ID:3": 77,
           "items:9": {
             "0:10": {
               "id:8": "thermaldynamics:servo",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 4
+              "Damage:2": 4,
+              "OreDict:8": ""
             }
           }
         },
         "78:10": {
           "weight:3": 1,
+          "ID:3": 78,
           "items:9": {
             "0:10": {
               "id:8": "thermaldynamics:filter",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 4
+              "Damage:2": 4,
+              "OreDict:8": ""
             }
           }
         },
         "79:10": {
           "weight:3": 1,
+          "ID:3": 79,
           "items:9": {
             "0:10": {
               "id:8": "twilightforest:block_storage",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 3
+              "Damage:2": 3,
+              "OreDict:8": ""
             }
           }
         },
         "80:10": {
           "weight:3": 1,
+          "ID:3": 80,
           "items:9": {
             "0:10": {
               "id:8": "thermalfoundation:storage_alloy",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 5
+              "Damage:2": 5,
+              "OreDict:8": ""
             }
           }
         }
@@ -3531,31 +4026,38 @@
     "3:10": {
       "name:8": "Epic",
       "weight:3": 3,
+      "ID:3": 3,
       "rewards:9": {
         "0:10": {
           "weight:3": 1,
+          "ID:3": 0,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:skull",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 5
+              "Damage:2": 5,
+              "OreDict:8": ""
             }
           }
         },
         "1:10": {
           "weight:3": 1,
+          "ID:3": 1,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "cyclicmagic:soulstone",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "2:10": {
           "weight:3": 1,
+          "ID:3": 2,
           "items:9": {
             "0:10": {
               "id:8": "botania:manaresource",
@@ -3564,415 +4066,474 @@
                 "orig_meta:3": 0,
                 "orig_id:8": "botania:manaresource"
               },
-              "OreDict:8": "",
-              "Damage:3": 4
+              "Damage:2": 4,
+              "OreDict:8": ""
             }
           }
         },
         "3:10": {
           "weight:3": 1,
+          "ID:3": 3,
           "items:9": {
             "0:10": {
               "id:8": "thermalfoundation:upgrade",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 35
+              "Damage:2": 35,
+              "OreDict:8": ""
             }
           }
         },
         "4:10": {
           "weight:3": 1,
+          "ID:3": 4,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:end_crystal",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "5:10": {
           "weight:3": 1,
+          "ID:3": 5,
           "items:9": {
             "0:10": {
               "id:8": "actuallyadditions:block_atomic_reconstructor",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "6:10": {
           "weight:3": 1,
+          "ID:3": 6,
           "items:9": {
             "0:10": {
               "id:8": "actuallyadditions:block_misc",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 9
+              "Damage:2": 9,
+              "OreDict:8": ""
             }
           }
         },
         "7:10": {
           "weight:3": 1,
+          "ID:3": 7,
           "items:9": {
             "0:10": {
               "id:8": "actuallyadditions:block_phantomface",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "8:10": {
           "weight:3": 1,
+          "ID:3": 8,
           "items:9": {
             "0:10": {
               "id:8": "appliedenergistics2:quartz_growth_accelerator",
               "Count:3": 5,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "9:10": {
           "weight:3": 1,
+          "ID:3": 9,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "betterbuilderswands:wandunbreakable",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "10:10": {
           "weight:3": 1,
+          "ID:3": 10,
           "items:9": {
             "0:10": {
               "id:8": "appliedenergistics2:part",
               "Count:3": 32,
-              "OreDict:8": "",
-              "Damage:3": 70
+              "Damage:2": 70,
+              "OreDict:8": ""
             }
           }
         },
         "11:10": {
           "weight:3": 1,
+          "ID:3": 11,
           "items:9": {
             "0:10": {
               "id:8": "appliedenergistics2:charger",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "12:10": {
           "weight:3": 1,
+          "ID:3": 12,
           "items:9": {
             "0:10": {
               "id:8": "appliedenergistics2:material",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 47
+              "Damage:2": 47,
+              "OreDict:8": ""
             }
           }
         },
         "13:10": {
           "weight:3": 1,
+          "ID:3": 13,
           "items:9": {
             "0:10": {
               "id:8": "libvulpes:elitemotor",
               "Count:3": 2,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "14:10": {
+          "weight:3": 1,
+          "ID:3": 14,
+          "items:9": {
+            "0:10": {
+              "id:8": "actuallyadditions:block_phantomface",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "15:10": {
           "weight:3": 1,
+          "ID:3": 15,
           "items:9": {
             "0:10": {
-              "id:8": "actuallyadditions:block_phantomface",
-              "Count:3": 4,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "id:8": "extrautils2:teleporter",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
             }
           }
         },
         "16:10": {
           "weight:3": 1,
+          "ID:3": 16,
           "items:9": {
             "0:10": {
-              "id:8": "extrautils2:teleporter",
+              "id:8": "extrautils2:compressedcobblestone",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 1
+              "Damage:2": 7,
+              "OreDict:8": ""
             }
           }
         },
         "17:10": {
           "weight:3": 1,
+          "ID:3": 17,
           "items:9": {
             "0:10": {
-              "id:8": "extrautils2:compressedcobblestone",
-              "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 7
+              "id:8": "twilightforest:twilight_sapling",
+              "Count:3": 16,
+              "Damage:2": 4,
+              "OreDict:8": ""
             }
           }
         },
         "18:10": {
           "weight:3": 1,
+          "ID:3": 18,
           "items:9": {
             "0:10": {
-              "id:8": "twilightforest:twilight_sapling",
-              "Count:3": 16,
-              "OreDict:8": "",
-              "Damage:3": 4
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "botania:terraformrod",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "19:10": {
           "weight:3": 1,
+          "ID:3": 19,
           "items:9": {
             "0:10": {
-              "id:8": "botania:terraformrod",
-              "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "id:8": "botania:blacklotus",
+              "Count:3": 16,
+              "Damage:2": 1,
+              "OreDict:8": ""
             }
           }
         },
         "20:10": {
           "weight:3": 1,
+          "ID:3": 20,
           "items:9": {
             "0:10": {
-              "id:8": "botania:blacklotus",
-              "Count:3": 16,
-              "OreDict:8": "",
-              "Damage:3": 1
+              "ForgeCaps:10": {
+                "Parent:9": {},
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "botania:flowerbag",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "21:10": {
           "weight:3": 1,
+          "ID:3": 21,
           "items:9": {
             "0:10": {
-              "id:8": "botania:flowerbag",
-              "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "id:8": "advgenerators:turbine_enderium",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "22:10": {
           "weight:3": 1,
+          "ID:3": 22,
           "items:9": {
             "0:10": {
-              "id:8": "advgenerators:turbine_enderium",
+              "id:8": "advancedrocketry:rocketmotor",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "23:10": {
           "weight:3": 1,
+          "ID:3": 23,
           "items:9": {
             "0:10": {
-              "id:8": "advancedrocketry:rocketmotor",
-              "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "id:8": "advancedrocketry:railgun",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "24:10": {
           "weight:3": 1,
+          "ID:3": 24,
           "items:9": {
             "0:10": {
-              "id:8": "advancedrocketry:railgun",
+              "id:8": "appliedenergistics2:energy_acceptor",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "25:10": {
           "weight:3": 1,
+          "ID:3": 25,
           "items:9": {
             "0:10": {
-              "id:8": "appliedenergistics2:energy_acceptor",
-              "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "id:8": "biomesoplenty:terrestrial_artifact",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "26:10": {
           "weight:3": 1,
+          "ID:3": 26,
           "items:9": {
             "0:10": {
-              "id:8": "biomesoplenty:terrestrial_artifact",
-              "Count:3": 16,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "id:8": "draconicevolution:energy_infuser",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "27:10": {
           "weight:3": 1,
+          "ID:3": 27,
           "items:9": {
             "0:10": {
-              "id:8": "draconicevolution:energy_infuser",
-              "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "id:8": "environmentaltech:litherite_crystal",
+              "Count:3": 9,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "28:10": {
           "weight:3": 1,
+          "ID:3": 28,
           "items:9": {
             "0:10": {
-              "id:8": "environmentaltech:litherite_crystal",
-              "Count:3": 9,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "exchangers:resonant_exchanger",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "29:10": {
           "weight:3": 1,
+          "ID:3": 29,
           "items:9": {
             "0:10": {
-              "id:8": "exchangers:resonant_exchanger",
+              "id:8": "extrautils2:drum",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 3,
+              "OreDict:8": ""
             }
           }
         },
         "30:10": {
           "weight:3": 1,
+          "ID:3": 30,
           "items:9": {
             "0:10": {
-              "id:8": "extrautils2:drum",
+              "id:8": "industrialforegoing:wither_builder",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 3
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "31:10": {
           "weight:3": 1,
+          "ID:3": 31,
           "items:9": {
             "0:10": {
-              "id:8": "industrialforegoing:wither_builder",
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "mekanism:atomicdisassembler",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "32:10": {
           "weight:3": 1,
+          "ID:3": 32,
           "items:9": {
             "0:10": {
-              "id:8": "mekanism:atomicdisassembler",
-              "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "appliedenergistics2:storage_cell_64k",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "33:10": {
           "weight:3": 1,
+          "ID:3": 33,
           "items:9": {
             "0:10": {
-              "id:8": "appliedenergistics2:storage_cell_64k",
-              "Count:3": 2,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "id:8": "appliedenergistics2:molecular_assembler",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "34:10": {
           "weight:3": 1,
+          "ID:3": 34,
           "items:9": {
             "0:10": {
-              "id:8": "appliedenergistics2:molecular_assembler",
+              "id:8": "mysticalagriculture:supremium_apple",
               "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "35:10": {
           "weight:3": 1,
+          "ID:3": 35,
           "items:9": {
             "0:10": {
-              "id:8": "mysticalagriculture:supremium_apple",
-              "Count:3": 8,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "id:8": "mysticalagradditions:tinkering_table",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "36:10": {
           "weight:3": 1,
+          "ID:3": 36,
           "items:9": {
             "0:10": {
-              "id:8": "mysticalagradditions:tinkering_table",
-              "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "id:8": "nuclearcraft:part",
+              "Count:3": 32,
+              "Damage:2": 3,
+              "OreDict:8": ""
             }
           }
         },
         "37:10": {
           "weight:3": 1,
+          "ID:3": 37,
           "items:9": {
             "0:10": {
-              "id:8": "nuclearcraft:part",
-              "Count:3": 32,
-              "OreDict:8": "",
-              "Damage:3": 3
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "rftools:advanced_charged_porter",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "38:10": {
           "weight:3": 1,
+          "ID:3": 38,
           "items:9": {
             "0:10": {
-              "id:8": "rftools:advanced_charged_porter",
-              "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "id:8": "thermaldynamics:duct_0",
+              "Count:3": 64,
+              "Damage:2": 5,
+              "OreDict:8": ""
             }
           }
         },
         "39:10": {
           "weight:3": 1,
-          "items:9": {
-            "0:10": {
-              "id:8": "thermaldynamics:duct_0",
-              "Count:3": 64,
-              "OreDict:8": "",
-              "Damage:3": 5
-            }
-          }
-        },
-        "40:10": {
-          "weight:3": 1,
+          "ID:3": 39,
           "items:9": {
             "0:10": {
               "id:8": "thermalfoundation:upgrade",
               "Count:3": 2,
-              "OreDict:8": "",
-              "Damage:3": 35
+              "Damage:2": 35,
+              "OreDict:8": ""
             }
           }
         }
@@ -3981,334 +4542,380 @@
     "4:10": {
       "name:8": "Legendary",
       "weight:3": 2,
+      "ID:3": 4,
       "rewards:9": {
         "0:10": {
           "weight:3": 1,
+          "ID:3": 0,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:nether_star",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "1:10": {
           "weight:3": 1,
+          "ID:3": 1,
           "items:9": {
             "0:10": {
               "id:8": "avaritia:cosmic_meatballs",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "2:10": {
           "weight:3": 1,
+          "ID:3": 2,
           "items:9": {
             "0:10": {
               "id:8": "plustic:osmiridiumblock",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "3:10": {
           "weight:3": 1,
+          "ID:3": 3,
           "items:9": {
             "0:10": {
               "id:8": "plustic:mirionblock",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "4:10": {
           "weight:3": 1,
+          "ID:3": 4,
           "items:9": {
             "0:10": {
               "id:8": "avaritia:ultimate_stew",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "5:10": {
           "weight:3": 1,
+          "ID:3": 5,
           "items:9": {
             "0:10": {
               "id:8": "minecraft:dragon_egg",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "6:10": {
           "weight:3": 1,
+          "ID:3": 6,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "actuallyadditions:item_spawner_changer",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "7:10": {
           "weight:3": 1,
+          "ID:3": 7,
           "items:9": {
             "0:10": {
               "id:8": "advancedrocketry:rocketbuilder",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "8:10": {
           "weight:3": 1,
+          "ID:3": 8,
           "items:9": {
             "0:10": {
               "id:8": "avaritia:neutron_collector",
               "Count:3": 2,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "9:10": {
           "weight:3": 1,
+          "ID:3": 9,
           "items:9": {
             "0:10": {
               "id:8": "draconicevolution:dragon_heart",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "10:10": {
           "weight:3": 1,
+          "ID:3": 10,
           "items:9": {
             "0:10": {
               "id:8": "draconicevolution:dislocator_advanced",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "11:10": {
           "weight:3": 1,
+          "ID:3": 11,
           "items:9": {
             "0:10": {
               "id:8": "botania:laputashard",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 9
+              "Damage:2": 9,
+              "OreDict:8": ""
             }
           }
         },
         "12:10": {
           "weight:3": 1,
+          "ID:3": 12,
           "items:9": {
             "0:10": {
               "id:8": "bigreactors:minerals",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "13:10": {
           "weight:3": 1,
+          "ID:3": 13,
           "items:9": {
             "0:10": {
               "id:8": "bigreactors:minerals",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 1
+              "Damage:2": 1,
+              "OreDict:8": ""
             }
           }
         },
         "14:10": {
           "weight:3": 1,
+          "ID:3": 14,
           "items:9": {
             "0:10": {
               "id:8": "ic2:nuclear",
               "Count:3": 2,
-              "OreDict:8": "",
-              "Damage:3": 10
+              "Damage:2": 10,
+              "OreDict:8": ""
             }
           }
         },
         "15:10": {
           "weight:3": 1,
+          "ID:3": 15,
           "items:9": {
             "0:10": {
               "id:8": "thermalexpansion:frame",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 148
+              "Damage:2": 148,
+              "OreDict:8": ""
             }
           }
         },
         "16:10": {
           "weight:3": 1,
+          "ID:3": 16,
           "items:9": {
             "0:10": {
               "id:8": "mysticalagradditions:stuff",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 69
+              "Damage:2": 69,
+              "OreDict:8": ""
             }
           }
         },
         "17:10": {
           "weight:3": 1,
+          "ID:3": 17,
           "items:9": {
             "0:10": {
               "id:8": "nuclearcraft:rtg_californium",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "18:10": {
           "weight:3": 1,
+          "ID:3": 18,
           "items:9": {
             "0:10": {
               "id:8": "mysticalagriculture:ultimate_furnace",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "19:10": {
           "weight:3": 1,
+          "ID:3": 19,
           "items:9": {
             "0:10": {
               "id:8": "rftools:peace_essence",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "20:10": {
           "weight:3": 1,
+          "ID:3": 20,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "extrautils2:angelring",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 2
+              "Damage:2": 2,
+              "OreDict:8": ""
             }
           }
         },
         "21:10": {
           "weight:3": 1,
+          "ID:3": 21,
           "items:9": {
             "0:10": {
               "id:8": "draconicevolution:wyvern_bow",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "22:10": {
           "weight:3": 1,
+          "ID:3": 22,
           "items:9": {
             "0:10": {
               "id:8": "draconicevolution:wyvern_energy_core",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "23:10": {
           "weight:3": 1,
+          "ID:3": 23,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "Parent:10": {
+                  "Size:3": 9,
+                  "Items:9": {}
+                }
+              },
               "id:8": "draconicevolution:wyvern_axe",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "24:10": {
           "weight:3": 1,
+          "ID:3": 24,
           "items:9": {
             "0:10": {
               "id:8": "appliedenergistics2:controller",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "25:10": {
           "weight:3": 1,
+          "ID:3": 25,
           "items:9": {
             "0:10": {
               "id:8": "appliedenergistics2:material",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 47
+              "Damage:2": 47,
+              "OreDict:8": ""
             }
           }
         },
         "26:10": {
           "weight:3": 1,
+          "ID:3": 26,
           "items:9": {
             "0:10": {
               "id:8": "extrautils2:passivegenerator",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 8
+              "Damage:2": 8,
+              "OreDict:8": ""
             }
           }
         },
         "27:10": {
           "weight:3": 1,
+          "ID:3": 27,
           "items:9": {
             "0:10": {
               "id:8": "draconicevolution:ender_energy_manipulator",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "28:10": {
           "weight:3": 1,
+          "ID:3": 28,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "iceandfire:dragonegg_green",
               "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
         "29:10": {
           "weight:3": 1,
+          "ID:3": 29,
           "items:9": {
             "0:10": {
               "id:8": "avaritia:resource",
               "Count:3": 4,
-              "OreDict:8": "",
-              "Damage:3": 4
+              "Damage:2": 4,
+              "OreDict:8": ""
             }
           }
         }

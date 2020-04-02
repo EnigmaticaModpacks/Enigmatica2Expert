@@ -1,0 +1,11 @@
+[
+  {
+    "modifier": "oreexcavate",
+    "mutations": [
+      {
+        "type": "mod_slots",
+        "value": "all"
+      }
+    ]
+  }
+]

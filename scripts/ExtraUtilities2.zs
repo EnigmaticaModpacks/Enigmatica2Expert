@@ -77,22 +77,6 @@ print("--- loading ExtraUtilities2.zs ---");
 	[<extrautils2:ingredients:16>, <draconicevolution:draconium_capacitor:1>, <extrautils2:ingredients:16>], 
 	[<extrautils2:opinium:4>, <extrautils2:rainbowgenerator:1>, <extrautils2:opinium:4>]]);
 	
-# Angel Ring
-	recipes.remove(<extrautils2:angelring:*>);
-	recipes.addShaped("Angel Rings", 
-	<extrautils2:angelring>, 
-	[[<extrautils2:ineffableglass>, <minecraft:elytra>.anyDamage(), <extrautils2:ineffableglass>],
-	[<ore:plateDenseGold>, <actuallyadditions:item_misc:19>, <ore:plateDenseGold>], 
-	[<minecraft:golden_apple>, <extrautils2:chickenring:1>.anyDamage(), <minecraft:golden_apple>]]);
-	
-# Angel Ring Conversion
-	recipes.addShapeless(<extrautils2:angelring:5>, [<ore:gemCoal>, <extrautils2:angelring:*>.anyDamage(), <ore:charcoal>]);
-	recipes.addShapeless(<extrautils2:angelring:4>, [<ore:nuggetGold>, <extrautils2:angelring:*>.anyDamage(), <ore:nuggetGold>]);
-	recipes.addShapeless(<extrautils2:angelring:3>, [<ore:leather>, <extrautils2:angelring:*>.anyDamage(), <ore:leather>]);
-	recipes.addShapeless(<extrautils2:angelring:2>, [<ore:dye>, <extrautils2:angelring:*>.anyDamage(), <ore:dyePurple>]);
-	recipes.addShapeless(<extrautils2:angelring:1>, [<ore:feather>, <extrautils2:angelring:*>.anyDamage(), <ore:feather>]);
-	recipes.addShapeless(<extrautils2:angelring>, [<ore:blockGlass>, <extrautils2:angelring:*>.anyDamage(), <ore:blockGlass>]);
-	
 # Transper Pipe
 	recipes.remove(<extrautils2:pipe>);
 	recipes.addShaped("Transfer Pipe", 
@@ -163,22 +147,6 @@ print("--- loading ExtraUtilities2.zs ---");
 	[[<ore:blockSheetmetalIron>, <ore:plateDenseIron>, <ore:blockSheetmetalIron>],
 	[<minecraft:cauldron>, <extrautils2:drum>, <minecraft:cauldron>], 
 	[<ore:blockSheetmetalIron>, <ore:plateDenseIron>, <ore:blockSheetmetalIron>]]);
-
-# Reinforced Drum
-	recipes.remove(<extrautils2:drum:2>);
-	recipes.addShapedMirrored("Reinforced Drum",
-	<extrautils2:drum:2>, 
-	[[<ore:itemCompressedDiamond>, <ore:plateDenseGold>, <ore:itemCompressedDiamond>],
-	[<extrautils2:drum:1>, <extrautils2:drum:1>, <extrautils2:drum:1>], 
-	[<ore:itemCompressedDiamond>, <ore:plateDenseGold>, <ore:itemCompressedDiamond>]]);
-
-# Gargantuan Drum
-	recipes.remove(<extrautils2:drum:3>);
-	recipes.addShapedMirrored("Gargantuan Drum",
-	<extrautils2:drum:3>, 
-	[[<tconstruct:large_plate>.withTag({Material: "xu_demonic_metal"}), <extrautils2:klein>, <tconstruct:large_plate>.withTag({Material: "xu_demonic_metal"})],
-	[<extrautils2:drum:2>, <extrautils2:drum:2>, <extrautils2:drum:2>], 
-	[<tconstruct:large_plate>.withTag({Material: "xu_demonic_metal"}), <extrautils2:klein>, <tconstruct:large_plate>.withTag({Material: "xu_demonic_metal"})]]);
 
 # Klein Flask
 	recipes.remove(<extrautils2:klein>);
