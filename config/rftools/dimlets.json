@@ -642,8 +642,8 @@
     "filter": {
       "mod": "extrautils2",
       "name": [
-        "compressed",
-        "decorativesolid"
+        "decorativesolid",
+        "compressed"
       ],
       "type": "material"
     },
