@@ -14,6 +14,7 @@ print("--- loading OreDict.zs ---");
 # Cobalt Block issues
 	<ore:oreCobalt>.remove(<tconstruct:metal>);
 	<ore:oreArdite>.remove(<tconstruct:metal>);
+	<ore:oreArdite>.remove(<tconstruct:ore>);
 	
 # Fixing the Mineralis Ritual
 	<ore:oreNickel>.remove(<immersiveengineering:ore:4>);
