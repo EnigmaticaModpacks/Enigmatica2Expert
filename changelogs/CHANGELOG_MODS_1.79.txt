@@ -1,0 +1,155 @@
+=================================================
+Enigmatica2Expert 1.78 --> Enigmatica2Expert 1.79
+=================================================
+
+Updated:
+	/dank/null (DankNull-1.12.2-1.7.90.jar --> DankNull-1.12.2-1.7.91.jar):
+		DankNull-1.12.2-1.7.91.jar:
+			* Make compatible with newer forge
+			* Jar is signed again (by cjm721's signature)
+			* Simplify Placement code to fix several bugs, this removed some small features (setting banner and special slab placement)
+
+	Astral Sorcery (AstralSorcery-1.12.2-1.10.22.jar --> AstralSorcery-1.12.2-1.10.23.jar):
+		AstralSorcery-1.12.2-1.10.23.jar:
+			Fixes:
+			* Fixed a falldamage exploit
+			* Fixed unbounded glass engraving
+			* Fixed an issue accessing the altar inventory
+			* Fixed an issue where the lightwell's contained fluid was not resetable
+
+	CoFH Core (CoFHCore-1.12.2-4.6.3.27-universal.jar --> CoFHCore-1.12.2-4.6.6.1-universal.jar):
+		CoFHCore-1.12.2-4.6.6.1-universal.jar:
+			[https://github.com/CoFH/Version/blob/master/cofhcore_changelog.txt](https://github.com/CoFH/Version/blob/master/cofhcore_changelog.txt)
+
+	CoFH World (CoFHWorld-1.12.2-1.3.1.7-universal.jar --> CoFHWorld-1.12.2-1.4.0.1-universal.jar):
+		CoFHWorld-1.12.2-1.4.0.1-universal.jar:
+			No changelog available.
+
+	Common Capabilities (CommonCapabilities-1.12.2-2.4.5.jar --> CommonCapabilities-1.12.2-2.4.6.jar):
+		CommonCapabilities-1.12.2-2.4.6.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.6.0 or higher.
+			Fixes:
+			* Fix invalid MixedIngredients sometimes being made on empty recipe inputs, Closes CyclopsMC/IntegratedDynamics#825
+
+	Cyclops Core (CyclopsCore-1.12.2-1.6.1.jar --> CyclopsCore-1.12.2-1.6.2.jar):
+		CyclopsCore-1.12.2-1.6.2.jar:
+			As always, don't forget to backup your world before updating!
+			Fixes:
+			* Fix crash on WeightedItemStack with empty stacks, Closes CyclopsMC/CyclopsCore#141
+
+	Forestry (forestry_1.12.2-5.8.2.418.jar --> forestry_1.12.2-5.8.2.422.jar):
+		Placeholder:
+			No changelog available.
+
+	Integrated Dynamics (IntegratedDynamics-1.12.2-1.1.2.jar --> IntegratedDynamics-1.12.2-1.1.4.jar):
+		IntegratedDynamics-1.12.2-1.1.4.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.6.0 or higher.
+			Fixes:
+			* Fix compilation issue do to recent ID change, Closes CyclopsMC/IntegratedDynamics#835
+
+		IntegratedDynamics-1.12.2-1.1.3.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.6.0 or higher.
+			Fixes:
+			* Fix stackoverflow when calculating slots in self-referencing networks, Closes CyclopsMC/IntegratedTunnels#177
+			* Fix some type checks being too strict for ANY values, Related to CyclopsMC/IntegratedTunnels#181
+			* Fix monodirectionals breaking after removing with wrench and replacing, Closes #820
+			* Make value casting within operators more type-safe, Closes #830
+			The old casting method never actually worked properly,
+			which caused problems with complex invalid operator values.
+			* Fix incorrect white tulip recipe for mechanical squeezer, Closes #827
+			* Fix batteries losing energy between saves, Closes #823
+			* Fix incorrect position for replaceable check during cable placement, Closes #818
+			This resulted in a crash when placing cables on snow.
+
+	Integrated Tunnels (IntegratedTunnels-1.12.2-1.6.10.jar --> IntegratedTunnels-1.12.2-1.6.11.jar):
+		IntegratedTunnels-1.12.2-1.6.11.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.4.0 or higher.
+			Changes:
+			* Update zh_cn.lang
+			Fixes:
+			* Fix missing "Empty is wildcard" setting on item export aspect, Closes #187
+			* Fix block lists never being importable/exportable, Closes CyclopsMC/IntegratedDynamics#832
+			* Fix list import/export aspects not handling ANY lists, Closes #181
+			* Fix player simulator not taking offsets into account for certain items such as bucket usage, Closes #178
+			* Incorporate floating rounding errors in offset property validation, #178
+			* Fix player simulator having incorrect eye height, #178
+			This caused bugs such as incorrect bucket placement/pickup targets.
+
+	JourneyMap (journeymap-1.12.2-5.7.0 --> journeymap-1.12.2-5.7.1):
+		journeymap-1.12.2-5.7.1:
+			JourneyMap 1.12.2-5.7.1 for Minecraft 1.12.2
+			Requirements:
+			* Java 8
+			* Minecraft 1.12.2
+			* Forge 14.23.5.2768
+			General Information:
+			* See [http://journeymap.info/]() for information about how to install and use this mod, rules about inclusion in modpacks, translation, etc.
+			* See [http://journeymap.info/Support]() for information on getting technical support.
+			* Implements [JourneyMap API v1.12-1.4]()
+			CHANGELOG (2020-03-29-16:08:52):
+			5.7.1
+			* Api Fix
+
+	Just Enough Throwing In Fluids (JETIF) (jetif-1.12.2-1.5.1.jar --> jetif-1.12.2-1.5.2.jar):
+		jetif-1.12.2-1.5.2.jar:
+			* FIXED: Flux Networks support for versions above 4.0.7 (this will no longer works for Flux Networks version 3.0.19 or below, use JETIF version 1.5.1 for that)
+
+	NuclearCraft (NuclearCraft-2.18q-1.12.2 --> NuclearCraft-2.18r-1.12.2):
+		NuclearCraft-2.18r-1.12.2:
+			+ Added configs to modify the tank capacities of exchanger and condenser tubes
+
+	Phosphor (Forge) (Phosphor mc1.12.2-0.2.6 --> Phosphor mc1.12.2-0.2.7):
+		Phosphor mc1.12.2-0.2.7:
+			* update: Use Mixin 0.8 and Forge 14.23.5.2847
+			* change: Remove Patreon nag message on first startup
+			* change: Use updated links following repository split
+
+	PlusTiC (plustic-8.0.0.0.jar --> plustic-8.0.0.1.jar):
+		plustic-8.0.0.1.jar:
+			Fix more stuff w/ Nick of Time
+
+	RandomPatches (RandomPatches 1.12.2-1.21.0.0 --> RandomPatches 1.21.0.1):
+		RandomPatches 1.21.0.1:
+			Fixed a crash that occurs on older versions of Minecraft when the potion glint patch is disabled.
+
+	Redstone Arsenal (RedstoneArsenal-1.12.2-2.6.3.18-universal.jar --> RedstoneArsenal-1.12.2-2.6.4.1-universal.jar):
+		RedstoneArsenal-1.12.2-2.6.4.1-universal.jar:
+			[https://github.com/CoFH/Version/blob/master/redstonearsenal_changelog.txt](https://github.com/CoFH/Version/blob/master/redstonearsenal_changelog.txt)
+
+	Redstone Flux (RedstoneFlux-1.12-2.1.0.6-universal.jar --> RedstoneFlux-1.12-2.1.1.1-universal.jar):
+		RedstoneFlux-1.12-2.1.1.1-universal.jar:
+			No changelog available.
+
+	Thermal Cultivation (ThermalCultivation-1.12.2-0.3.3.12-universal.jar --> ThermalCultivation-1.12.2-0.3.6.1-universal.jar):
+		ThermalCultivation-1.12.2-0.3.6.1-universal.jar:
+			[https://github.com/CoFH/Version/blob/master/thermalcultivation_changelog.txt](https://github.com/CoFH/Version/blob/master/thermalcultivation_changelog.txt)
+
+	Thermal Dynamics (ThermalDynamics-1.12.2-2.5.5.21-universal.jar --> ThermalDynamics-1.12.2-2.5.6.1-universal.jar):
+		ThermalDynamics-1.12.2-2.5.6.1-universal.jar:
+			[https://github.com/CoFH/Version/blob/master/thermaldynamics_changelog.txt](https://github.com/CoFH/Version/blob/master/thermaldynamics_changelog.txt)
+
+	Thermal Expansion (ThermalExpansion-1.12.2-5.5.4.43-universal.jar --> ThermalExpansion-1.12.2-5.5.6.1-universal.jar):
+		ThermalExpansion-1.12.2-5.5.6.1-universal.jar:
+			[https://github.com/CoFH/Version/blob/master/thermalexpansion_changelog.txt](https://github.com/CoFH/Version/blob/master/thermalexpansion_changelog.txt)
+
+	Thermal Foundation (ThermalFoundation-1.12.2-2.6.3.27-universal.jar --> ThermalFoundation-1.12.2-2.6.6.1-universal.jar):
+		ThermalFoundation-1.12.2-2.6.6.1-universal.jar:
+			[https://github.com/CoFH/Version/blob/master/thermalfoundation_changelog.txt](https://github.com/CoFH/Version/blob/master/thermalfoundation_changelog.txt)
+
+	Tinker I/O (tinker_io-1.12.2-rw2.8.0 --> tinker_io-1.12.2-rw2.8.1a):
+		tinker_io-1.12.2-rw2.8.1a:
+			* 1. Update dependencies
+
+	Wawla - What Are We Looking At (Wawla-1.12.2-2.6.274.jar --> Wawla-1.12.2-2.6.275.jar):
+		Wawla-1.12.2-2.6.275.jar:
+			* Updated russian lang file. #118 - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?Wawla)
+			* Pongo Sapiens
+			* Darkosto
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).
