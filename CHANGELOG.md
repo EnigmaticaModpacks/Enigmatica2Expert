@@ -1,5 +1,40 @@
 # Enigmatica 2: Expert Changelog
+## 1.79
 
+*Remember to use the command  `/bq_admin default load` when updating*
+
+*Using Forge-1.12.2-14.23.5.2847*
+
+*[Mod List](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.79.txt)*
+
+**Changes**
+
+* Farming for Blockheads: Rustic seeds and saplings in Market [(Credit Krutoy24)](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1577)
+* EnderIO: Solar Panel RF/t buffed [(Credit Krutoy24)](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1577)
+* EnderIO: Capacity of Capacitor Banks buffed [(Credit Krutoy24)](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1577)
+* Nuclearcraft: Solar Panels RF/t buffed [(Credit Krutoy24)](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1577)
+* RFToolsDimensions: Removed Flat Colored Blocks. Added a bunch of new mod based materials. [(Credit Krutoy24)](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1577)
+* RFTools: Coal Generator buffed [(Credit Krutoy24)](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1577)
+* RFTools: A ton of new mobs can now be spawned with the Spawner [(Credit Krutoy24)](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1577)
+* Spice of Life: Carrot Edition: Increased the amount of hearts that can be obtained [(Credit Krutoy24)](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1577)
+* Actually Additions: NuclearCraft ores for the Laser [(Credit Krutoy24)](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1577)
+* AkashicTome: Updated books (3 new) [(Credit Krutoy24)](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1577)
+* Cyclic: Harder recipes for explosion proof glass [(Credit Krutoy24)](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1577)
+* EnderIO: Easier Crafter and Power Monitor recipes [(Credit Krutoy24)](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1577)
+* IndustrialForegoing: Easier Ore Dictionary machine recipes [(Credit Krutoy24)](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1577)
+* NuclearCraft: Changed recipe of basic battery, was using Elite Plating, changed to basic.  [(Credit Krutoy24)](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1577)
+* NuclearCraft: Disabled smelting of unused EnderIO alloys [(Credit Krutoy24)](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1577)
+* TinkersConstruct: Added Blood Sling recipe [(Credit Krutoy24)](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1577)
+* Tooltips: Items that can be replicated using UU-matter now show it in their tooltip. [(Credit Krutoy24)](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1577)
+* ImmersiveEngineering: Additional Crusher recipes [(Credit SSyl)](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1602)
+
+**Bug Fixes**
+
+* BiomesOPlenty: BoP Dirt types are now oredicted to vanilla dirt, so they can be used interchangeably [(Credit Krutoy24)](https://github.com/NillerMedDild/Enigmatica2Expert/pull/1577)
+
+**Removed Mods**
+
+* 
 ## 1.78
 
 *Remember to use the command  `/bq_admin default load` when updating*
