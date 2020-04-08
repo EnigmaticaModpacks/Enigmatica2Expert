@@ -7,11 +7,13 @@
 
 **Changes**
 
-* Only a bugfix, see [1.79](#1.79) for changes.
+* Only bugfixes, see [1.79](#1.79) for changes.
 
 **Bug Fixes**
 
 * Downgraded DankNull to fix a bug with items looking invisible inside the DankNull
+* Extra Utilities 2 UU matter tooltip [\#1625](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1625)
+* PSI bar over screen [\#1618](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1618)
 
 ## 1.79
 
