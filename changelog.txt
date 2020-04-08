@@ -1,0 +1,54 @@
+==================================================
+Enigmatica2Expert 1.79 --> Enigmatica2Expert 1.79a
+==================================================
+
+Updated:
+	Building Gadgets (BuildingGadgets-2.7.4.jar --> BuildingGadgets-2.8.2.jar):
+		BuildingGadgets-2.8.2.jar:
+			[2.8.2 - 1.12.2] - 2020-03-18
+			Just some fixes, mostly for Dire's and all of our sanity. Modes are mostly fixed again...
+			Changed
+			* We no longer harvest blocks if in creative and instead just set them to air
+			Fixed
+			* When in creative, blocks would drop on undo and build actions due to harvesting the block instead of setting to air
+			* Range for the Builder and Exchanger surface modes now is capped correctly. 1 = 1, 2 = 3x3, 3=3x3, 4=5x5, 5=5x5 and so on.
+			* The max range config is now respected instead of ignored when setting the range :D
+
+		BuildingGadgets-2.8.1.jar:
+			[2.8.1 - 1.12.2] - 2020-02-23
+			Woops, I broke it. Dank Nulls now work again with some other nice improvements for one of the final 1.12.2 versions. This version comes with some rewrites on the inventory system so please post any issues to the [Building Gadgets Github](https://github.com/Direwolf20-MC/BuildingGadgets/issues/new/)
+			Changed
+			* Rewrote how the Gadgets insert items back into the inventories, It now follows in the extracting systems footsteps and flows from the Linked inventory to the Players inventory and finally looking for any inventory bound inventories (Dank Null)
+			* Added the Astral Sorcery Flare to the blacklist by default as it causes some odd issues with the Copy Paste Gadget.
+			Fixed
+			* Fixed the Dank Null support that I removed by accident.. Woops, sorry about that.
+			* Fixed the Gadgets being able to build above the world height (and below)
+			* Fixed the Gadgets being able to select our Effect Block (The one that shrinks and grows). This was mostly an issue in Creative.
+
+		BuildingGadgets-2.8.0.jar:
+			[2.8.0 - 1.12.2] - 2020-02-19
+			Firstly, 12 MILLION downloads and counting! What a milestone. Thank you to everyone who has downloaded and enjoyed BuildingGadgets! Secondly 2.8.0 of BuildingGadgets marks the first of what I hope to be only a few final releases for 1.12.2. We have big plans for 1.14 onwards and hope to see all of you in the newer Minecraft versions :heart:
+			Changed
+			* Rewrote the way we extract items from inventories. We now have an actual defined flow of Remote / Bound inventory then Player inventory. This also fixes some weird issues with having partly enough items in one or the other inventory.
+			Fixed
+			* Fixed a pretty major dupe bug using the exchanger and some DireDurps! (Huge thanks to [dh458](https://github.com/dh458))
+			* Sudo Fixed a few crashes by catching their errors instead of crashing Minecraft. Seems fair... :D
+			Removed
+			* Removed some console spam, sorry about that. Sometimes debug code sneaks it way into a release.
+
+	Quark (Quark-r1.6-178.jar --> Quark-r1.6-179.jar):
+		Quark-r1.6-179.jar:
+			* Fixed massive log spam caused by a bad packet
+
+Downgraded:
+	/dank/null (DankNull-1.12.2-1.7.91.jar --> DankNull-1.12.2-1.7.90.jar):
+		DankNull-1.12.2-1.7.91.jar:
+			* Make compatible with newer forge
+			* Jar is signed again (by cjm721's signature)
+			* Simplify Placement code to fix several bugs, this removed some small features (setting banner and special slab placement)
+
+	Thermal Foundation (Archived file --> ThermalFoundation-1.12.2-2.6.3.27-universal.jar):
+		ThermalFoundation-1.12.2-2.6.6.1-universal.jar:
+			[https://github.com/CoFH/Version/blob/master/thermalfoundation_changelog.txt](https://github.com/CoFH/Version/blob/master/thermalfoundation_changelog.txt)
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).
