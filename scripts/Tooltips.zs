@@ -532,7 +532,6 @@ for item in thaumcraftHintItems {
 		"draconicevolution:dragon_heart",         "0",     "200000",
 		"draconicevolution:fusion_crafting_core", "0",     "100000",
 		"environmentaltech:litherite_crystal",    "0",     "6000",
-		"extrautils2:machine",                    "0",     "450",
 		"forestry:hardened_machine",              "0",     "1800",
 		"ic2:crafting",                           "1",     "80",
 		"ic2:crafting",                           "3",     "180",
@@ -568,10 +567,9 @@ for item in thaumcraftHintItems {
 			}
 		}
 	}
-
-
-# *======= Name Changes =======*
+	
+	<extrautils2:machine>.only(function(item){return !item.hasTag;})
+	.addTooltip(format.darkPurple("Can be replicated with ") ~ 
+					format.lightPurple(((450 as float) / 100) as string) ~ format.darkPurple(" mB UU"));
 
 	<modularmachinery:itemmodularium>.displayName = "Modularium Alloy";
-	
-		print("--- Tooltips.zs initialized ---");
