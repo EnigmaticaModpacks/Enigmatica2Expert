@@ -1,0 +1,491 @@
+==================================================
+Enigmatica2Expert 1.79a --> Enigmatica2Expert 1.80
+==================================================
+
+Updated:
+	Building Gadgets (BuildingGadgets-2.8.2.jar --> BuildingGadgets-2.8.3.jar):
+		BuildingGadgets-2.8.3.jar:
+			[2.8.3 - 1.12.2] - 2020-04-12
+			Minor bug fix update
+			Fixed
+			* The exchanger now respects the block blacklist for selecting AND exchanging.
+
+	Controlling (Controlling-3.0.8 --> Controlling-3.0.9):
+		Controlling-3.0.9:
+			Removed the free keys button and added a patreon button.
+
+	FTB Library (FTBLib-5.4.4.5.jar --> FTBLib-5.4.7.0.jar):
+		FTBLib-5.4.7.0.jar:
+			* You guessed it, same bugfix attempt #4.. or 5? I lost count
+
+		FTBLib-5.4.6.0.jar:
+			* Maybe it finally works now? Honestly getting kinda tired from this same bug haunting me from version to version
+
+		FTBLib-5.4.5.1.jar:
+			* Another attempt at fixing the crash
+
+		FTBLib-5.4.5.0.jar:
+			Experimental version that should fix bugs related to player logging in crashing server
+
+	Flux Networks (Flux-Networks-1.12.2-3.0.19 --> Flux-Networks-1.12.2-4.0.14):
+		Flux-Networks-1.12.2-4.0.14:
+			Changelog 4.0.14
+			Improvement: Recuded storage render lag
+			Improvement: Add back old flux recipe (in config)
+			Bug Fixed: Flux point can't transfer over 2^31-1 RF/t
+			Changelog 4.0.13
+			Added: Integration with OpenComputers
+			Added: Item blacklist with metadata
+			Changelog 4.0.12
+			Added: GUIs for Configurator & Admin Configurator
+			Added: Average Tick Statistic to Network Statistics tab for checking network performance.
+			Improvement: Super Admin, is now enabled inside the Admin Configurator's GUI
+			Improvement: Added config option to change the OP level required to activate Super Admin.
+			Improvement: Wireless Charging GUI is now more in-keeping with the network color theme.
+			Improvement: Some GUI Optimisations
+			Bug Fixed: Configurator copying priority settings incorrectly
+			Bug Fixed: Configurator not pasting settings Flux Storage
+			Changelog 4.0.11
+			Added: Integration with The One Probe - Configurable in the config
+			Added: Integration with JEI for showing flux recipe
+			Added: de_DE localization (Caaruzo)
+			Changelog 4.0.10
+			Improvement: Set limit and surge for flux storage
+			Improvement: New feedback when batch editing
+			Bug Fixed: A serious bug in server
+			Bug Fixed: Render glitch in statistics tab sometimes
+			Bug Fixed: Incorrect statistics data
+			Bug Fixed: Incorrect energy data in connections tab
+			Changelog 4.0.9
+			New: Animated chart for network statistics interface
+			New: Add back block blacklist with metadata
+			Improvement: Once again performance improvement
+			Improvement: Some GUI adjustments
+			Bug Fixed: Completely fixed GT transfer bugs
+			Bug Fixed: Not update client name cache after being edited
+			Changelog 4.0.8
+			New: Pages label button and can jump to hovered page directly
+			New & Improvement: More smart network members setting
+			Improvement: Keep old data file
+			Improvement: Some GUI adjustments
+			Improvement: A config for the amount of max forced chunks
+			Bug Fixed: GT transfer bugs *(still not connect to wires now, you should connect to a transformer or battery buffer)
+			Bug Fixed: Not update client color cache after being edited
+			Bug Fixed: Size of multi-page GUI elements check
+			Bug Fixed: Many...
+			Changelog 4.0.7
+			A great performance improvement.
+			ALL GUIs has completely reworked.
+			Added support for GregTech Community Edition EU.
+			Added ability for flux points/plugs to work as chunk loaders themselves.
+			Added ability to batch edit network connections in connections tab.
+			Added ability to set negative priority for flux points/plugs.
+			Added ability to configure wireless charging in all network connectors.
+			Added a way to clear NBT data by crafting again.
+			Added ingame mod configuration and no need to restart.
+			Added network color buttons to select easily and can right click to customize.
+			Added new gui button sound effects.
+			Changed the usage of admin configurator to super admin permission.
+			Changed network security type to password verification system.
+			Changed default flux recipe to be more mechanized.
+			Enhanced flux tiles security that they can't be modified without permission.
+			Enhanced and optimized network packets that update all data more effective.
+			Enhanced custom network color editing that make it within proper range.
+			Reduced unnecessary nbt to stack flux items as much as possible.
+			Optimized and weakened wireless charging and fixed some bugs.
+			Unified all types of energy and no longer support single type of energy transfer.
+			Fixed flux storage rendering which they looks same with different level in inventory.
+			Fixed crashing with AE energy cell, and no longer directly support AE2.
+			Fixed item duplication when using displacement wand.
+			Removed support for Tesla.
+			Removed redstone control.
+			Removed blacklist temporarily.
+
+		Flux-Networks-1.12.2-4.0.13:
+			Changelog 4.0.13
+			Added: Integration with OpenComputers
+			Added: Item blacklist with metadata
+			Changelog 4.0.12
+			Added: GUIs for Configurator & Admin Configurator
+			Added: Average Tick Statistic to Network Statistics tab for checking network performance.
+			Improvement: Super Admin, is now enabled inside the Admin Configurator's GUI
+			Improvement: Added config option to change the OP level required to activate Super Admin.
+			Improvement: Wireless Charging GUI is now more in-keeping with the network color theme.
+			Improvement: Some GUI Optimisations
+			Bug Fixed: Configurator copying priority settings incorrectly
+			Bug Fixed: Configurator not pasting settings Flux Storage
+			Changelog 4.0.11
+			Added: Integration with The One Probe - Configurable in the config
+			Added: Integration with JEI for showing flux recipe
+			Added: de_DE localization (Caaruzo)
+			Changelog 4.0.10
+			Improvement: Set limit and surge for flux storage
+			Improvement: New feedback when batch editing
+			Bug Fixed: A serious bug in server
+			Bug Fixed: Render glitch in statistics tab sometimes
+			Bug Fixed: Incorrect statistics data
+			Bug Fixed: Incorrect energy data in connections tab
+			Changelog 4.0.9
+			New: Animated chart for network statistics interface
+			New: Add back block blacklist with metadata
+			Improvement: Once again performance improvement
+			Improvement: Some GUI adjustments
+			Bug Fixed: Completely fixed GT transfer bugs
+			Bug Fixed: Not update client name cache after being edited
+			Changelog 4.0.8
+			New: Pages label button and can jump to hovered page directly
+			New & Improvement: More smart network members setting
+			Improvement: Keep old data file
+			Improvement: Some GUI adjustments
+			Improvement: A config for the amount of max forced chunks
+			Bug Fixed: GT transfer bugs *(still not connect to wires now, you should connect to a transformer or battery buffer)
+			Bug Fixed: Not update client color cache after being edited
+			Bug Fixed: Size of multi-page GUI elements check
+			Bug Fixed: Many...
+			Changelog 4.0.7
+			A great performance improvement.
+			ALL GUIs has completely reworked.
+			Added support for GregTech Community Edition EU.
+			Added ability for flux points/plugs to work as chunk loaders themselves.
+			Added ability to batch edit network connections in connections tab.
+			Added ability to set negative priority for flux points/plugs.
+			Added ability to configure wireless charging in all network connectors.
+			Added a way to clear NBT data by crafting again.
+			Added ingame mod configuration and no need to restart.
+			Added network color buttons to select easily and can right click to customize.
+			Added new gui button sound effects.
+			Changed the usage of admin configurator to super admin permission.
+			Changed network security type to password verification system.
+			Changed default flux recipe to be more mechanized.
+			Enhanced flux tiles security that they can't be modified without permission.
+			Enhanced and optimized network packets that update all data more effective.
+			Enhanced custom network color editing that make it within proper range.
+			Reduced unnecessary nbt to stack flux items as much as possible.
+			Optimized and weakened wireless charging and fixed some bugs.
+			Unified all types of energy and no longer support single type of energy transfer.
+			Fixed flux storage rendering which they looks same with different level in inventory.
+			Fixed crashing with AE energy cell, and no longer directly support AE2.
+			Fixed item duplication when using displacement wand.
+			Removed support for Tesla.
+			Removed redstone control.
+			Removed blacklist temporarily.
+
+		Flux-Networks-1.12.2-4.0.12:
+			Changelog 4.0.12
+			Added: GUIs for Configurator & Admin Configurator
+			Added: Average Tick Statistic to Network Statistics tab for checking network performance.
+			Improvement: Super Admin, is now enabled inside the Admin Configurator's GUI
+			Improvement: Added config option to change the OP level required to activate Super Admin.
+			Improvement: Wireless Charging GUI is now more in-keeping with the network color theme.
+			Improvement: Some GUI Optimisations
+			Bug Fixed: Configurator copying priority settings incorrectly
+			Bug Fixed: Configurator not pasting settings Flux Storage
+			Changelog 4.0.11
+			Added: Integration with The One Probe - Configurable in the config
+			Added: Integration with JEI for showing flux recipe
+			Added: de_DE localization (Caaruzo)
+			Changelog 4.0.10
+			Improvement: Set limit and surge for flux storage
+			Improvement: New feedback when batch editing
+			Bug Fixed: A serious bug in server
+			Bug Fixed: Render glitch in statistics tab sometimes
+			Bug Fixed: Incorrect statistics data
+			Bug Fixed: Incorrect energy data in connections tab
+			Changelog 4.0.9
+			New: Animated chart for network statistics interface
+			New: Add back block blacklist with metadata
+			Improvement: Once again performance improvement
+			Improvement: Some GUI adjustments
+			Bug Fixed: Completely fixed GT transfer bugs
+			Bug Fixed: Not update client name cache after being edited
+			Changelog 4.0.8
+			New: Pages label button and can jump to hovered page directly
+			New & Improvement: More smart network members setting
+			Improvement: Keep old data file
+			Improvement: Some GUI adjustments
+			Improvement: A config for the amount of max forced chunks
+			Bug Fixed: GT transfer bugs *(still not connect to wires now, you should connect to a transformer or battery buffer)
+			Bug Fixed: Not update client color cache after being edited
+			Bug Fixed: Size of multi-page GUI elements check
+			Bug Fixed: Many...
+			Changelog 4.0.7
+			A great performance improvement.
+			ALL GUIs has completely reworked.
+			Added support for GregTech Community Edition EU.
+			Added ability for flux points/plugs to work as chunk loaders themselves.
+			Added ability to batch edit network connections in connections tab.
+			Added ability to set negative priority for flux points/plugs.
+			Added ability to configure wireless charging in all network connectors.
+			Added a way to clear NBT data by crafting again.
+			Added ingame mod configuration and no need to restart.
+			Added network color buttons to select easily and can right click to customize.
+			Added new gui button sound effects.
+			Changed the usage of admin configurator to super admin permission.
+			Changed network security type to password verification system.
+			Changed default flux recipe to be more mechanized.
+			Enhanced flux tiles security that they can't be modified without permission.
+			Enhanced and optimized network packets that update all data more effective.
+			Enhanced custom network color editing that make it within proper range.
+			Reduced unnecessary nbt to stack flux items as much as possible.
+			Optimized and weakened wireless charging and fixed some bugs.
+			Unified all types of energy and no longer support single type of energy transfer.
+			Fixed flux storage rendering which they looks same with different level in inventory.
+			Fixed crashing with AE energy cell, and no longer directly support AE2.
+			Fixed item duplication when using displacement wand.
+			Removed support for Tesla.
+			Removed redstone control.
+			Removed blacklist temporarily.
+
+		Flux-Networks-1.12.2-4.0.11:
+			Changelog 4.0.11
+			Added: Integration with The One Probe - Configurable in the config
+			Added: Integration with JEI for showing flux recipe
+			Added: de_DE localization (Caaruzo)
+			Changelog 4.0.10
+			Improvement: Set limit and surge for flux storage
+			Improvement: New feedback when batch editing
+			Bug Fixed: A serious bug in server
+			Bug Fixed: Render glitch in statistics tab sometimes
+			Bug Fixed: Incorrect statistics data
+			Bug Fixed: Incorrect energy data in connections tab
+			Changelog 4.0.9
+			New: Animated chart for network statistics interface
+			New: Add back block blacklist with metadata
+			Improvement: Once again performance improvement
+			Improvement: Some GUI adjustments
+			Bug Fixed: Completely fixed GT transfer bugs
+			Bug Fixed: Not update client name cache after being edited
+			Changelog 4.0.8
+			New: Pages label button and can jump to hovered page directly
+			New & Improvement: More smart network members setting
+			Improvement: Keep old data file
+			Improvement: Some GUI adjustments
+			Improvement: A config for the amount of max forced chunks
+			Bug Fixed: GT transfer bugs *(still not connect to wires now, you should connect to a transformer or battery buffer)
+			Bug Fixed: Not update client color cache after being edited
+			Bug Fixed: Size of multi-page GUI elements check
+			Bug Fixed: Many...
+			Changelog 4.0.7
+			A great performance improvement.
+			ALL GUIs has completely reworked.
+			Added support for GregTech Community Edition EU.
+			Added ability for flux points/plugs to work as chunk loaders themselves.
+			Added ability to batch edit network connections in connections tab.
+			Added ability to set negative priority for flux points/plugs.
+			Added ability to configure wireless charging in all network connectors.
+			Added a way to clear NBT data by crafting again.
+			Added ingame mod configuration and no need to restart.
+			Added network color buttons to select easily and can right click to customize.
+			Added new gui button sound effects.
+			Changed the usage of admin configurator to super admin permission.
+			Changed network security type to password verification system.
+			Changed default flux recipe to be more mechanized.
+			Enhanced flux tiles security that they can't be modified without permission.
+			Enhanced and optimized network packets that update all data more effective.
+			Enhanced custom network color editing that make it within proper range.
+			Reduced unnecessary nbt to stack flux items as much as possible.
+			Optimized and weakened wireless charging and fixed some bugs.
+			Unified all types of energy and no longer support single type of energy transfer.
+			Fixed flux storage rendering which they looks same with different level in inventory.
+			Fixed crashing with AE energy cell, and no longer directly support AE2.
+			Fixed item duplication when using displacement wand.
+			Removed support for Tesla.
+			Removed redstone control.
+			Removed blacklist temporarily.
+
+		Flux-Networks-1.12.2-4.0.10:
+			Changelog 4.0.10
+			Improvement: Set limit and surge for flux storage
+			Improvement: New feedback when batch editing
+			Bug Fixed: A serious bug in server
+			Bug Fixed: Render glitch in statistics tab sometimes
+			Bug Fixed: Incorrect statistics data
+			Bug Fixed: Incorrect energy data in connections tab
+			Bug Fixed: Crash in multi-page tab sometimes
+			Changelog 4.0.9
+			New: A super cool animated line chart for network statistics interface
+			New: Add back block blacklist with metadata
+			Improvement: Some GUI adjustments
+			Bug Fixed: Completely fixed GT transfer bugs
+			Bug Fixed: Not update client name cache after being edited
+			Changelog 4.0.8
+			New: Pages label button and can jump to hovered page directly
+			New & Improvement: More smart network members setting
+			Improvement: Keep old data file
+			Improvement: Some GUI adjustments
+			Improvement: A config for the amount of max forced chunks
+			Bug Fixed: GT transfer bugs *(still not connect to wires now, you should connect to a transformer or battery buffer)
+			Bug Fixed: Not update client color cache after being edited
+			Bug Fixed: Size of multi-page GUI elements check
+			Bug Fixed: Many...
+			Changelog 4.0.7
+			A great performance improvement.
+			ALL GUIs has completely reworked.
+			Added support for GregTech Community Edition EU.
+			Added ability for flux points/plugs to work as chunk loaders themselves.
+			Added ability to batch edit network connections in connections tab.
+			Added ability to set negative priority for flux points/plugs.
+			Added ability to configure wireless charging in all network connectors.
+			Added a way to clear NBT data by crafting again.
+			Added ingame mod configuration and no need to restart.
+			Added network color buttons to select easily and can right click to customize.
+			Added new gui button sound effects.
+			Changed the usage of admin configurator to super admin permission.
+			Changed network security type to password verification system.
+			Changed default flux recipe to be more mechanized.
+			Enhanced flux tiles security that they can't be modified without permission.
+			Enhanced and optimized network packets that update all data more effective.
+			Enhanced custom network color editing that make it within proper range.
+			Reduced unnecessary nbt to stack flux items as much as possible.
+			Optimized and weakened wireless charging and fixed some bugs.
+			Unified all types of energy and no longer support single type of energy transfer.
+			Fixed flux storage rendering which they looks same with different level in inventory.
+			Fixed crashing with AE energy cell, and no longer directly support AE2.
+			Fixed item duplication when using displacement wand.
+			Removed support for Tesla.
+			Removed redstone control.
+			Removed blacklist temporarily.
+
+		Flux-Networks-1.12.2-4.0.9:
+			Changelog 4.0.9
+			IMPORTANT: This version has a serious bug in server, it's better to use 4.0.10 or higher
+			New: A super cool animated line chart for network statistics interface
+			New: Add back block blacklist with metadata
+			Improvement: Some GUI adjustments
+			Bug Fixed: Completely fixed GT transfer bugs
+			Bug Fixed: Not update client name cache after being edited
+			Changelog 4.0.8
+			New: Pages label button and can jump to hovered page directly
+			New & Improvement: More smart network members setting
+			Improvement: Keep old data file
+			Improvement: Some GUI adjustments
+			Improvement: A config for the amount of max forced chunks
+			Bug Fixed: GT transfer bugs *(still not connect to wires now, you should connect to a transformer or battery buffer)
+			Bug Fixed: Not update client color cache after being edited
+			Bug Fixed: Size of multi-page GUI elements check
+			Bug Fixed: Many...
+			Changelog 4.0.7
+			A great performance improvement.
+			ALL GUIs has completely reworked.
+			Added support for GregTech Community Edition EU.
+			Added ability for flux points/plugs to work as chunk loaders themselves.
+			Added ability to batch edit network connections in connections tab.
+			Added ability to set negative priority for flux points/plugs.
+			Added ability to configure wireless charging in all network connectors.
+			Added a way to clear NBT data by crafting again.
+			Added ingame mod configuration and no need to restart.
+			Added network color buttons to select easily and can right click to customize.
+			Added new gui button sound effects.
+			Changed the usage of admin configurator to super admin permission.
+			Changed network security type to password verification system.
+			Changed default flux recipe to be more mechanized.
+			Enhanced flux tiles security that they can't be modified without permission.
+			Enhanced and optimized network packets that update all data more effective.
+			Enhanced custom network color editing that make it within proper range.
+			Reduced unnecessary nbt to stack flux items as much as possible.
+			Optimized and weakened wireless charging and fixed some bugs.
+			Unified all types of energy and no longer support single type of energy transfer.
+			Fixed flux storage rendering which they looks same with different level in inventory.
+			Fixed crashing with AE energy cell, and no longer directly support AE2.
+			Fixed item duplication when using displacement wand.
+			Removed support for Tesla.
+			Removed redstone control.
+			Removed blacklist temporarily.
+
+		Flux-Networks-1.12.2-4.0.8:
+			Official wiki will update within days. (This beta still has bugs, it's better to use 4.0.10 or higher)
+			Changelog 4.0.8
+			GT transfer bugs *(still not connect to wires now, you should connect to a transformer or battery buffer)
+			New: Pages label button and can jump to hovered page directly
+			New & Improvement: More smart network members setting
+			Improvement: Keep old data file
+			Improvement: Some GUI adjustments
+			Improvement: A config for the amount of max forced chunks
+			Bug Fixed: Not update client color cache after being edited
+			Bug Fixed: Size of multi-page GUI elements check
+			Bug Fixed: Many...
+			Changelog 4.0.7
+			A great performance improvement.
+			ALL GUIs has completely reworked.
+			Added support for GregTech Community Edition EU.
+			Added ability for flux points/plugs to work as chunk loaders themselves.
+			Added ability to batch edit network connections in connections tab.
+			Added ability to set negative priority for flux points/plugs.
+			Added ability to configure wireless charging in all network connections.
+			Added a way to clear NBT data by crafting again.
+			Added ingame mod configuration and no need to restart.
+			Added network color buttons to select easily and can right click to customize.
+			Added new gui button sound effects.
+			Changed the usage of admin configurator to super admin permission.
+			Changed network security type to password verification system.
+			Changed default flux recipe to be more mechanized.
+			Enhanced flux tiles security that they can't be modified without permission.
+			Enhanced and optimized network packets that update all data more effective.
+			Enhanced custom network color editing that make it within proper range.
+			Reduced unnecessary nbt to stack flux items as much as possible.
+			Optimized and weakened wireless charging and fixed some bugs.
+			Unified all types of energy and no longer support single type of energy transfer.
+			Fixed flux storage rendering which they looks same with different level in inventory.
+			Fixed crashing with AE energy cell, and no longer directly support AE2.
+			Fixed item duplication when using displacement wand.
+			Removed support for Tesla.
+			Removed redstone control.
+			Removed blacklist temporarily.
+
+		Flux-Networks-1.12.2-4.0.7:
+			Changelog 4.0.7
+			IMPORTANT: This beta is not recommended, it's better to use 4.0.10 or higher
+			A great performance improvement.
+			ALL GUIs has completely reworked.
+			Added support for GregTech Community Edition EU. (there's a serious bug that will be fixed next version)
+			Added ability for flux points/plugs to work as chunk loaders themselves.
+			Added ability to batch edit network connections in connections tab.
+			Added ability to set negative priority for flux points/plugs.
+			Added ability to configure wireless charging in all network connectors.
+			Added a way to clear NBT data by crafting again.
+			Added ingame mod configuration and no need to restart.
+			Added network color buttons to select easily and can right click to customize.
+			Added new gui button sound effects.
+			Changed the usage of admin configurator to super admin permission.
+			Changed network security type to password verification system.
+			Changed default flux recipe to be more mechanized.
+			Enhanced flux tiles security that they can't be modified without permission.
+			Enhanced and optimized network packets that update all data more effective.
+			Enhanced custom network color editing that make it within proper range.
+			Reduced unnecessary nbt to stack flux items as much as possible.
+			Optimized and weakened wireless charging and fixed some bugs.
+			Unified all types of energy and no longer support single type of energy transfer.
+			Fixed flux storage rendering which they looks same with different level in inventory.
+			Fixed crashing with AE energy cell, and no longer directly support AE2.
+			Fixed item duplication when using displacement wand.
+			Removed support for Tesla.
+			Removed redstone control.
+			Removed blacklist temporarily.
+
+	Inventory Tweaks (Inventory Tweaks 1.64+dev.150 --> Inventory Tweaks 1.64+dev.151):
+		Inventory Tweaks 1.64+dev.151:
+			Update readme to acknowledge alternatives - Marwane Kalam-Alami
+
+	Reborn Core (RebornCore-1.12.2-3.19.2.522-universal.jar --> RebornCore-1.12.2-3.19.3.524-universal.jar):
+		RebornCore-1.12.2-3.19.3.524-universal.jar:
+			(modmuss50) #releaseBuild
+			(modmuss50) more fixes, this is giving me a headace.
+			(modmuss50) Fixes and upgrade path
+			(modmuss50) Revert "Revert "Blockstates logic is back in block""
+
+	Thermal Expansion (ThermalExpansion-1.12.2-5.5.6.1-universal.jar --> ThermalExpansion-1.12.2-5.5.7.1-universal.jar):
+		ThermalExpansion-1.12.2-5.5.7.1-universal.jar:
+			[https://github.com/CoFH/Version/blob/master/thermalexpansion_changelog.txt](https://github.com/CoFH/Version/blob/master/thermalexpansion_changelog.txt)
+
+	Thermal Foundation (ThermalFoundation-1.12.2-2.6.3.27-universal.jar --> ThermalFoundation-1.12.2-2.6.7.1-universal.jar):
+		ThermalFoundation-1.12.2-2.6.7.1-universal.jar:
+			[https://github.com/CoFH/Version/blob/master/thermalfoundation_changelog.txt](https://github.com/CoFH/Version/blob/master/thermalfoundation_changelog.txt)
+
+		ThermalFoundation-1.12.2-2.6.6.1-universal.jar:
+			[https://github.com/CoFH/Version/blob/master/thermalfoundation_changelog.txt](https://github.com/CoFH/Version/blob/master/thermalfoundation_changelog.txt)
+
+Removed:
+- Exchangers
+- Fullscreen Windowed (Borderless) for Minecraft
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).

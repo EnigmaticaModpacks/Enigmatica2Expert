@@ -7,7 +7,11 @@
 
 **Changes**
 
-* 
+* BoP ores should have a tooltip saying they don't generate [\#1616](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1616)
+* Creative Block Exchanger: Exchanger in recipe swapped with Exchanging Gadget [\#1596](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1596)
+* Sink Harder Recipe [\#1594](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1594)
+* Harder Emerald Dank Null Recipe [\#1587](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1587)
+* \[Suggestion\] Upgrade Flux Network to 4.x [\#1630](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1630)
 
 **Mod Removals**
 
@@ -16,7 +20,20 @@
 
 **Bug Fixes**
 
-* 
+* Bucket duping/infinite iron with poison bucket recipe. [\#1641](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1641)
+* Energized Smelter produces IC2 ingots [\#1640](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1640)
+* Strange Fullscreen with certain characters [\#1639](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1639)
+* Misprinted quest name for quest ID \# 21 [\#1636](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1636)
+* Enderman chunks are enabled without any use/need an information tab [\#1629](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1629)
+* Extra Utilities 2 UU matter tooltip [\#1625](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1625)
+* Starlight crafting enginge schematic \(schematica\) is broken [\#1624](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1624)
+* Recipes missing OreDictionary options [\#1623](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1623)
+* PSI bar over screen [\#1618](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1618)
+* NuclearCraft Graphite Can't be made in some Crushers [\#1608](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1608)
+* Thaumcraft Smelting Bonus fix is not applied [\#1604](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1604)
+* Creating Hydrated Coal dust \(IC2 component\) with a Thermal Expansion Reservoir succeeds but deletes the reservoir [\#1591](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1591)
+* Issue crafting block  [\#1590](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1590)
+* PlusTiC's Brown Magic tool trait desyncs player state when going between dimensions. [\#1494](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1494)
 
 ## 1.79a
 
