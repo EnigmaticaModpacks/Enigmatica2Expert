@@ -1,4 +1,23 @@
 # Enigmatica 2: Expert Changelog
+## 1.80
+
+*Using Forge-1.12.2-14.23.5.2847*
+
+*[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.80.txt)*
+
+**Changes**
+
+* 
+
+**Mod Removals**
+
+- Fullscreen Windowed (Borderless) [#1639](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1639)
+- Exchangers *Outclassed by Building Gadgets, sorry :(* 
+
+**Bug Fixes**
+
+* 
+
 ## 1.79a
 
 *Using Forge-1.12.2-14.23.5.2847*
@@ -8,6 +27,10 @@
 **Changes**
 
 * Only bugfixes, see [1.79](#1.79) for changes.
+
+**Mod Removals**
+
+- Fullscreen Windowed (Borderless) [#1639](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1639)
 
 **Bug Fixes**
 
