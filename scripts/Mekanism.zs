@@ -7,6 +7,15 @@ print("--- loading Mekanism.zs ---");
 mods.mekanism.combiner.removeAllRecipes();
 recipes.remove(<mekanism:machineblock:2>);
 
+
+# Unifying Graphite ingots, seems the crusher was overlooked
+mods.mekanism.crusher.removeRecipe(<bigreactors:dustmetals:2>, <bigreactors:ingotmetals:2>);
+
+for ingot in <ore:ingotGraphite>.items {
+	mods.mekanism.crusher.addRecipe(ingot, <nuclearcraft:dust:8>);
+}
+
+
 # Energized Smelter is not entirely unified, this should fix that
 var itemsToUnify as IItemStack[] = [
 	<ic2:crushed>,
