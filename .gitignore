@@ -16,6 +16,7 @@ config/splash.properties
 !.gitignore
 
 # Client Configs
+config/creativecore-client.json
 config/InvTweaks.cfg
 
 config/MouseTweaks.cfg
@@ -33,6 +34,8 @@ config/scavenge/IResourceProperty.txt
 config/AppliedEnergistics2/aerecipes/
 config/AppliedEnergistics2/recipes/
 config/AppliedEnergistics2/items.csv
+config/AppliedEnergistics2/VersionChecker.cfg
+config/AppliedEnergistics2/CustomRecipes.cfg
 
 config/brandon3055/ResourceCache/
 config/brandon3055/ProjectIntelligence/ModDocs/
