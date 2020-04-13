@@ -7,6 +7,22 @@ print("--- loading Mekanism.zs ---");
 mods.mekanism.combiner.removeAllRecipes();
 recipes.remove(<mekanism:machineblock:2>);
 
+# Energized Smelter is not entirely unified, this should fix that
+var itemsToUnify as IItemStack[] = [
+	<ic2:crushed>,
+	<ic2:crushed:3>,
+	<ic2:crushed:4>,
+	<ic2:crushed:5>,
+	<ic2:purified>,
+	<ic2:purified:3>,
+	<ic2:purified:4>,
+	<ic2:purified:5>
+];
+
+for item in itemsToUnify {
+	mods.mekanism.smelter.removeRecipe(item);
+}
+
 # Starmetal Ingots
 	mods.mekanism.smelter.addRecipe(<astralsorcery:itemcraftingcomponent:2>, <astralsorcery:itemcraftingcomponent:1>);
 	
