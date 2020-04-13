@@ -3,6 +3,11 @@ import mods.jei.JEI.removeAndHide as rh;
 #modloaded biomesoplenty
 print("--- loading BiomesOPlenty.zs ---");
 
+# Poison bucket recipe fix (bucket could be duped)
+	recipes.remove(<forge:bucketfilled>.withTag({FluidName: "poison", Amount: 1000}));
+	recipes.addShapeless("biomesoplenty_forge_bucketfilled_poison_dupefix", <forge:bucketfilled>.withTag({FluidName: "poison", Amount: 1000}), 
+	[<minecraft:water_bucket>.noReturn(), <minecraft:spider_eye:*>, <minecraft:poisonous_potato:*>, <minecraft:sugar:*>]);
+
 # Terrestrial Artifact
 	<biomesoplenty:terrestrial_artifact>.maxStackSize = 64;
 
