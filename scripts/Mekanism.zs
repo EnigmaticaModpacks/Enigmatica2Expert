@@ -17,19 +17,21 @@ for ingot in <ore:ingotGraphite>.items {
 
 
 # Energized Smelter is not entirely unified, this should fix that
-var itemsToUnify as IItemStack[] = [
-	<ic2:crushed>,
-	<ic2:crushed:3>,
-	<ic2:crushed:4>,
-	<ic2:crushed:5>,
-	<ic2:purified>,
-	<ic2:purified:3>,
-	<ic2:purified:4>,
-	<ic2:purified:5>
-];
+var itemsToUnify as IItemStack[IItemStack] = {
+	<ic2:crushed> : <thermalfoundation:material:128>,
+	<ic2:crushed:3> : <thermalfoundation:material:131>,
+	<ic2:crushed:4> : <thermalfoundation:material:130>,
+	<ic2:crushed:5> : <thermalfoundation:material:129>,
+	<ic2:purified> : <thermalfoundation:material:128>,
+	<ic2:purified:3> : <thermalfoundation:material:131>,
+	<ic2:purified:4> : <thermalfoundation:material:130>,
+	<ic2:purified:5> : <thermalfoundation:material:129>
+};
 
-for item in itemsToUnify {
-	mods.mekanism.smelter.removeRecipe(item);
+for input, output in itemsToUnify {
+	mods.mekanism.smelter.removeRecipe(input);
+
+	mods.mekanism.smelter.addRecipe(input, output);
 }
 
 # Starmetal Ingots
