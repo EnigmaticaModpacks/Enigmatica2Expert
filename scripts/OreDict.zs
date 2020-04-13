@@ -318,7 +318,6 @@ print("--- loading OreDict.zs ---");
 	granite.add(<quark:world_stone_bricks>);
 	
 	basalt.add(<quark:world_stone_bricks:3>);
-	basalt.add(<quark:basalt:1>);
 	
 	limestone.add(<quark:limestone:1>);
 	limestone.add(<quark:world_stone_bricks:5>);
