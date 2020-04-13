@@ -1,7 +1,5 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
-import mods.thaumcraft.SmeltingBonus.removeSmeltingBonus;
-import mods.thaumcraft.SmeltingBonus.addSmeltingBonus;
 #modloaded thaumcraft
 print("--- loading Thaumcraft.zs ---");
 
@@ -21,21 +19,21 @@ mods.thaumcraft.Infusion.registerRecipe("spawn_lesser_crimson_portal", "INFUSION
 
 # Unification for the Smelting Bonus
 // IIngredient input, IItemStack stack
-removeSmeltingBonus(<ore:oreCopper>, <thaumcraft:nugget:1>);
-removeSmeltingBonus(<ore:oreTin>, <thaumcraft:nugget:2>);
-removeSmeltingBonus(<ore:oreSilver>, <thaumcraft:nugget:3>);
-removeSmeltingBonus(<ore:oreLead>, <thaumcraft:nugget:4>);
+mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:oreCopper>, <thaumcraft:nugget:1>);
+mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:oreTin>, <thaumcraft:nugget:2>);
+mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:oreSilver>, <thaumcraft:nugget:3>);
+mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:oreLead>, <thaumcraft:nugget:4>);
 
-removeSmeltingBonus(<thaumcraft:cluster:2>, <thaumcraft:nugget:1>);
-removeSmeltingBonus(<thaumcraft:cluster:3>, <thaumcraft:nugget:2>);
-removeSmeltingBonus(<thaumcraft:cluster:4>, <thaumcraft:nugget:3>);
-removeSmeltingBonus(<thaumcraft:cluster:5>, <thaumcraft:nugget:4>);
+mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<thaumcraft:cluster:2>, <thaumcraft:nugget:1>);
+mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<thaumcraft:cluster:3>, <thaumcraft:nugget:2>);
+mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<thaumcraft:cluster:4>, <thaumcraft:nugget:3>);
+mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<thaumcraft:cluster:5>, <thaumcraft:nugget:4>);
 
 // IIngredient input, WeightedItemStack stack
-addSmeltingBonus(<ore:oreCopper>, <thermalfoundation:material:192> % 33);
-addSmeltingBonus(<ore:oreTin>, <thermalfoundation:material:193> % 33);
-addSmeltingBonus(<ore:oreSilver>, <thermalfoundation:material:194> % 33);
-addSmeltingBonus(<ore:oreLead>, <thermalfoundation:material:195> % 33);
+mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreCopper>, <thermalfoundation:material:192> % 33);
+mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreTin>, <thermalfoundation:material:193> % 33);
+mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreSilver>, <thermalfoundation:material:194> % 33);
+mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreLead>, <thermalfoundation:material:195> % 33);
 
 # Removing wrong aspects from stuff
 	<chiselsandbits:chiseled_iron>.setAspects(<aspect:desiderium> * 1);
