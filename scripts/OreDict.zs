@@ -5,6 +5,8 @@ import crafttweaker.oredict.IOreDictEntry as IOreDictEntry;
 import mods.jei.JEI.removeAndHide as rh;
 print("--- loading OreDict.zs ---");
 	
+# Fixing Mortar and Pestle oredict from Pam's
+	<ore:pestleAndMortar>.add(<harvestcraft:mortarandpestleitem>);
 	
 	<ore:mushroomAny>.add(<harvestcraft:whitemushroomitem>);
 	
