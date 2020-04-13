@@ -16,7 +16,7 @@ key_key.command:53:NONE
 key_key.screenshot:60:NONE
 key_key.togglePerspective:63:NONE
 key_key.smoothCamera:0:NONE
-key_key.fullscreen:0:NONE
+key_key.fullscreen:87:NONE
 key_key.spectatorOutlines:0:NONE
 key_key.swapHands:33:NONE
 key_key.saveToolbarActivator:0:NONE
