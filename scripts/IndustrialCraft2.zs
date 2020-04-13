@@ -5,6 +5,7 @@ import crafttweaker.item.IIngredient;
 print("--- loading IndustrialCraft2.zs ---");
 
 # Hydrated Coal Dust recipe consumes containers that can store 1000mB + liquid, this fixes that
+	recipes.remove(<ic2:dust:3>);
 	recipes.addShapeless("ic2_hydrated_coal_dust_liquid_fix", 
 	<ic2:dust:3>, 
 	[<ore:dustCoal>,<liquid:water> * 1000]);
