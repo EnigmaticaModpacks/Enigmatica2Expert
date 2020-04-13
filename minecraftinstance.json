@@ -29,7 +29,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2020-04-08T17:52:42.6388244Z",
+  "lastPlayed": "2020-04-13T09:58:47.0191715Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -1498,21 +1498,6 @@
       "queryTimestamp": "2020-04-08T17:00:49.8615881Z",
       "fileCount": 24,
       "fileSize": 0
-    },
-    {
-      "folderName": "ThermalFoundation-1.12.2-2.6.6.1-universal.jar",
-      "fingerprint": 1750106778,
-      "fileDateHash": 4043236163,
-      "sectionID": 8,
-      "individualFingerprints": [
-        1750106778
-      ],
-      "status": 1,
-      "timestamp": "2020-04-08T17:33:52.5303883Z",
-      "lastWriteTimeUtc": "2020-04-08T17:32:31.7411152Z",
-      "queryTimestamp": "2020-04-08T17:33:53.1196341Z",
-      "fileCount": 1,
-      "fileSize": 2219733
     },
     {
       "folderName": "rftoolsdim-1.12-5.64.jar",
@@ -3591,6 +3576,21 @@
       "queryTimestamp": "2020-04-08T17:00:49.9054707Z",
       "fileCount": 1,
       "fileSize": 62668
+    },
+    {
+      "folderName": "ThermalFoundation-1.12.2-2.6.3.27-universal.jar",
+      "fingerprint": 3994542571,
+      "fileDateHash": 3625661774,
+      "sectionID": 8,
+      "individualFingerprints": [
+        3994542571
+      ],
+      "status": 1,
+      "timestamp": "2020-04-08T17:53:33.1422073Z",
+      "lastWriteTimeUtc": "2020-04-08T17:52:33.3296787Z",
+      "queryTimestamp": "2020-04-08T17:53:33.8793866Z",
+      "fileCount": 1,
+      "fileSize": 2312713
     },
     {
       "folderName": "FastWorkbench-1.12.2-1.7.3.jar",
@@ -5938,108 +5938,108 @@
       "addonID": 248020,
       "gameInstanceID": "1d2f9fb2-5f05-49bd-8a83-2e0c577749d7",
       "installedFile": {
-        "id": 2645165,
-        "displayName": "Flux-Networks-1.12.2-3.0.19",
-        "fileName": "fluxnetworks-1.12.2-3.0.19-21.jar",
-        "fileDate": "2018-12-07T22:50:49.993Z",
-        "fileLength": 609733,
+        "id": 2842381,
+        "displayName": "Flux-Networks-1.12.2-4.0.14",
+        "fileName": "fluxnetworks-1.12.2-4.0.14-31.jar",
+        "fileDate": "2019-12-14T04:57:02.147Z",
+        "fileLength": 464693,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2645/165/fluxnetworks-1.12.2-3.0.19-21.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/2842/381/fluxnetworks-1.12.2-4.0.14-31.jar",
         "isAlternate": false,
-        "alternateFileId": 2645166,
+        "alternateFileId": 2842382,
         "dependencies": [
           {
-            "id": 21720988,
-            "addonId": 239418,
-            "type": 3,
-            "fileId": 2645165
-          },
-          {
-            "id": 21720984,
-            "addonId": 223794,
-            "type": 2,
-            "fileId": 2645165
-          },
-          {
-            "id": 21720985,
-            "addonId": 231951,
-            "type": 2,
-            "fileId": 2645165
-          },
-          {
-            "id": 21720987,
-            "addonId": 270789,
-            "type": 2,
-            "fileId": 2645165
-          },
-          {
-            "id": 21720986,
+            "id": 0,
             "addonId": 242638,
             "type": 2,
-            "fileId": 2645165
+            "fileId": 0
           },
           {
-            "id": 21720989,
-            "addonId": 244651,
+            "id": 0,
+            "addonId": 238222,
             "type": 2,
-            "fileId": 2645165
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 245211,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 223794,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 223008,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 268560,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 270789,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 293327,
+            "type": 2,
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1210525987,
-            "type": 3
+            "fingerprint": 2723470043,
+            "type": 0
           },
           {
-            "foldername": "sonar",
-            "fingerprint": 288009550,
-            "type": 3
+            "foldername": "fluxnetworks",
+            "fingerprint": 2979236352,
+            "type": 0
           },
           {
             "foldername": "assets",
-            "fingerprint": 3488827053,
-            "type": 3
+            "fingerprint": 4010026550,
+            "type": 0
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 1065725048,
-            "type": 3
+            "fingerprint": 3014171964,
+            "type": 0
           }
         ],
-        "packageFingerprint": 2815239328,
+        "packageFingerprint": 4123385618,
         "gameVersion": [
           "1.12.2"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000012.0000000002",
-            "gameVersion": "1.12.2",
-            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 1480689,
-        "projectId": 248020,
-        "packageFingerprintId": 279383468,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 1710193,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "fluxnetworks-1.12.2-3.0.19-21.jar"
+        "FileNameOnDisk": "fluxnetworks-1.12.2-4.0.14-31.jar"
       },
       "dateInstalled": "2019-06-28T17:26:17.7616233Z",
-      "dateUpdated": "2018-06-28T17:26:17.7616233Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 3,
+      "dateUpdated": "2020-04-11T09:56:35.9812962Z",
+      "dateLastUpdateAttempted": "2020-04-11T09:56:35.9812962Z",
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -8338,14 +8338,14 @@
       "addonID": 250398,
       "gameInstanceID": "1d2f9fb2-5f05-49bd-8a83-2e0c577749d7",
       "installedFile": {
-        "id": 2857064,
-        "displayName": "Controlling-3.0.8",
-        "fileName": "Controlling-3.0.8.jar",
-        "fileDate": "2020-01-09T01:24:27.037Z",
-        "fileLength": 28487,
+        "id": 2926366,
+        "displayName": "Controlling-3.0.9",
+        "fileName": "Controlling-3.0.9.jar",
+        "fileDate": "2020-04-10T16:53:04.817Z",
+        "fileLength": 29057,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2857/64/Controlling-3.0.8.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/2926/366/Controlling-3.0.9.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -8353,12 +8353,12 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2100094713,
+            "fingerprint": 4269186556,
             "type": 0
           },
           {
             "foldername": "us",
-            "fingerprint": 134494426,
+            "fingerprint": 2496991095,
             "type": 0
           },
           {
@@ -8368,11 +8368,11 @@
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 2156002409,
+            "fingerprint": 1123879517,
             "type": 0
           }
         ],
-        "packageFingerprint": 4162122206,
+        "packageFingerprint": 2000139509,
         "gameVersion": [
           "1.12.2"
         ],
@@ -8385,11 +8385,11 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "Controlling-3.0.8.jar"
+        "FileNameOnDisk": "Controlling-3.0.9.jar"
       },
       "dateInstalled": "2019-07-24T17:51:43.9483522Z",
-      "dateUpdated": "2020-01-24T18:35:58.9175976Z",
-      "dateLastUpdateAttempted": "2020-01-24T18:35:58.9175976Z",
+      "dateUpdated": "2020-04-11T09:56:28.7002915Z",
+      "dateLastUpdateAttempted": "2020-04-11T09:56:28.7002915Z",
       "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
@@ -11526,27 +11526,27 @@
       "addonID": 237167,
       "gameInstanceID": "1d2f9fb2-5f05-49bd-8a83-2e0c577749d7",
       "installedFile": {
-        "id": 2832410,
-        "displayName": "FTBLib-5.4.4.5.jar",
-        "fileName": "FTBLib-5.4.4.5.jar",
-        "fileDate": "2019-11-25T17:33:40.287Z",
-        "fileLength": 934358,
+        "id": 2891572,
+        "displayName": "FTBLib-5.4.7.0.jar",
+        "fileName": "FTBLib-5.4.7.0.jar",
+        "fileDate": "2020-02-28T23:29:29.903Z",
+        "fileLength": 934566,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2832/410/FTBLib-5.4.4.5.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/2891/572/FTBLib-5.4.7.0.jar",
         "isAlternate": false,
-        "alternateFileId": 2832411,
+        "alternateFileId": 0,
         "dependencies": [],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3279033344,
+            "fingerprint": 2712236318,
             "type": 0
           },
           {
             "foldername": "com",
-            "fingerprint": 968502785,
+            "fingerprint": 1845115150,
             "type": 0
           },
           {
@@ -11555,18 +11555,19 @@
             "type": 0
           },
           {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 1468686229,
+            "foldername": "mcmod.info",
+            "fingerprint": 4118649540,
             "type": 0
           },
           {
-            "foldername": "mcmod.info",
-            "fingerprint": 1529110818,
+            "foldername": "pack.mcmeta",
+            "fingerprint": 1468686229,
             "type": 0
           }
         ],
-        "packageFingerprint": 3921299937,
+        "packageFingerprint": 2660314712,
         "gameVersion": [
+          "Forge",
           "1.12.2"
         ],
         "hasInstallScript": false,
@@ -11575,15 +11576,15 @@
         "restrictProjectFileAccess": 0,
         "projectStatus": 0,
         "projectId": 0,
-        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameVersionDateReleased": "2017-09-18T05:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "FTBLib-5.4.4.5.jar"
+        "FileNameOnDisk": "FTBLib-5.4.7.0.jar"
       },
       "dateInstalled": "2019-07-24T17:53:34.6117966Z",
-      "dateUpdated": "2019-12-25T20:48:24.3835327Z",
-      "dateLastUpdateAttempted": "2019-12-25T20:48:24.3835327Z",
-      "status": 3,
+      "dateUpdated": "2020-04-11T09:56:38.3203009Z",
+      "dateLastUpdateAttempted": "2020-04-11T09:56:38.3203009Z",
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -15105,14 +15106,14 @@
       "addonID": 222880,
       "gameInstanceID": "1d2f9fb2-5f05-49bd-8a83-2e0c577749d7",
       "installedFile": {
-        "id": 2715788,
-        "displayName": "ThermalFoundation-1.12.2-2.6.3.27-universal.jar",
-        "fileName": "ThermalFoundation-1.12.2-2.6.3.27-universal.jar",
-        "fileDate": "2019-05-25T22:41:39.057Z",
-        "fileLength": 2312713,
+        "id": 2926428,
+        "displayName": "ThermalFoundation-1.12.2-2.6.7.1-universal.jar",
+        "fileName": "ThermalFoundation-1.12.2-2.6.7.1-universal.jar",
+        "fileDate": "2020-04-10T18:25:27.03Z",
+        "fileLength": 2219736,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2715/788/ThermalFoundation-1.12.2-2.6.3.27-universal.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/2926/428/ThermalFoundation-1.12.2-2.6.7.1-universal.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
@@ -15133,26 +15134,26 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3463579793,
-            "type": 0
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 830566626,
+            "fingerprint": 3146421109,
             "type": 0
           },
           {
             "foldername": "cofh",
-            "fingerprint": 1729665018,
+            "fingerprint": 424909284,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 2503639902,
             "type": 0
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 229339766,
+            "fingerprint": 1191536478,
             "type": 0
           }
         ],
-        "packageFingerprint": 3994542571,
+        "packageFingerprint": 3785001149,
         "gameVersion": [
           "1.12.2"
         ],
@@ -15162,15 +15163,15 @@
         "restrictProjectFileAccess": 0,
         "projectStatus": 0,
         "projectId": 0,
-        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameVersionDateReleased": "2017-09-18T05:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "ThermalFoundation-1.12.2-2.6.3.27-universal.jar"
+        "FileNameOnDisk": "ThermalFoundation-1.12.2-2.6.7.1-universal.jar"
       },
       "dateInstalled": "2020-04-08T17:33:54.1236971Z",
-      "dateUpdated": "2020-04-08T17:52:33.3526154Z",
-      "dateLastUpdateAttempted": "2020-04-08T17:52:33.3526154Z",
-      "status": 3,
+      "dateUpdated": "2020-04-13T09:58:34.9670574Z",
+      "dateLastUpdateAttempted": "2020-04-13T09:58:34.9670574Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -19495,27 +19496,27 @@
       "addonID": 223094,
       "gameInstanceID": "1d2f9fb2-5f05-49bd-8a83-2e0c577749d7",
       "installedFile": {
-        "id": 2848933,
-        "displayName": "Inventory Tweaks 1.64+dev.150",
-        "fileName": "InventoryTweaks-1.64+dev.150.jar",
-        "fileDate": "2019-12-24T16:02:51.213Z",
-        "fileLength": 286149,
+        "id": 2923460,
+        "displayName": "Inventory Tweaks 1.64+dev.151",
+        "fileName": "InventoryTweaks-1.64+dev.151.jar",
+        "fileDate": "2020-04-07T13:50:18.55Z",
+        "fileLength": 286144,
         "releaseType": 3,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2848/933/InventoryTweaks-1.64+dev.150.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/2923/460/InventoryTweaks-1.64+dev.151.jar",
         "isAlternate": false,
-        "alternateFileId": 2848934,
+        "alternateFileId": 2923461,
         "dependencies": [],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3536155034,
+            "fingerprint": 1066045293,
             "type": 0
           },
           {
             "foldername": "invtweaks",
-            "fingerprint": 3362922168,
+            "fingerprint": 4170564840,
             "type": 0
           },
           {
@@ -19525,7 +19526,7 @@
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 1007348681,
+            "fingerprint": 1495522677,
             "type": 0
           },
           {
@@ -19545,11 +19546,11 @@
           },
           {
             "foldername": "version.properties",
-            "fingerprint": 2382540203,
+            "fingerprint": 3247284929,
             "type": 0
           }
         ],
-        "packageFingerprint": 1037406193,
+        "packageFingerprint": 42535972,
         "gameVersion": [
           "1.12.2"
         ],
@@ -19562,12 +19563,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "InventoryTweaks-1.64+dev.150.jar"
+        "FileNameOnDisk": "InventoryTweaks-1.64+dev.151.jar"
       },
       "dateInstalled": "2019-07-24T17:53:34.6137693Z",
-      "dateUpdated": "2019-12-25T20:48:36.7282129Z",
-      "dateLastUpdateAttempted": "2019-12-25T20:48:36.7282129Z",
-      "status": 3,
+      "dateUpdated": "2020-04-11T09:56:44.5889374Z",
+      "dateLastUpdateAttempted": "2020-04-11T09:56:44.5889374Z",
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -24073,14 +24074,14 @@
       "addonID": 69163,
       "gameInstanceID": "1d2f9fb2-5f05-49bd-8a83-2e0c577749d7",
       "installedFile": {
-        "id": 2920438,
-        "displayName": "ThermalExpansion-1.12.2-5.5.6.1-universal.jar",
-        "fileName": "ThermalExpansion-1.12.2-5.5.6.1-universal.jar",
-        "fileDate": "2020-04-03T23:53:55.12Z",
-        "fileLength": 2345112,
+        "id": 2926431,
+        "displayName": "ThermalExpansion-1.12.2-5.5.7.1-universal.jar",
+        "fileName": "ThermalExpansion-1.12.2-5.5.7.1-universal.jar",
+        "fileDate": "2020-04-10T18:25:47.91Z",
+        "fileLength": 2345139,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2920/438/ThermalExpansion-1.12.2-5.5.6.1-universal.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/2926/431/ThermalExpansion-1.12.2-5.5.7.1-universal.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
@@ -24101,12 +24102,12 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 147924703,
+            "fingerprint": 3537056881,
             "type": 0
           },
           {
             "foldername": "cofh",
-            "fingerprint": 3898107767,
+            "fingerprint": 297844578,
             "type": 0
           },
           {
@@ -24116,11 +24117,11 @@
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 1005540090,
+            "fingerprint": 89834791,
             "type": 0
           }
         ],
-        "packageFingerprint": 2428122260,
+        "packageFingerprint": 2287283150,
         "gameVersion": [
           "1.12.2"
         ],
@@ -24133,12 +24134,12 @@
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "ThermalExpansion-1.12.2-5.5.6.1-universal.jar"
+        "FileNameOnDisk": "ThermalExpansion-1.12.2-5.5.7.1-universal.jar"
       },
       "dateInstalled": "2019-01-11T20:20:50.4547968Z",
-      "dateUpdated": "2020-04-04T19:21:48.9109827Z",
-      "dateLastUpdateAttempted": "2020-04-04T19:21:48.9109827Z",
-      "status": 5,
+      "dateUpdated": "2020-04-13T09:58:32.1940525Z",
+      "dateLastUpdateAttempted": "2020-04-13T09:58:32.1940525Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -25093,160 +25094,132 @@
       "addonID": 298187,
       "gameInstanceID": "1d2f9fb2-5f05-49bd-8a83-2e0c577749d7",
       "installedFile": {
-        "id": 2904659,
-        "displayName": "BuildingGadgets-2.8.2.jar",
-        "fileName": "BuildingGadgets-2.8.2.jar",
-        "fileDate": "2020-03-18T16:44:00.593Z",
-        "fileLength": 864103,
+        "id": 2928313,
+        "displayName": "BuildingGadgets-2.8.3.jar",
+        "fileName": "BuildingGadgets-2.8.3.jar",
+        "fileDate": "2020-04-12T19:19:47.147Z",
+        "fileLength": 718540,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2904/659/BuildingGadgets-2.8.2.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/2928/313/BuildingGadgets-2.8.3.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
-            "id": 38235572,
-            "addonId": 223794,
-            "type": 2,
-            "fileId": 2904659
-          },
-          {
-            "id": 38235574,
-            "addonId": 239286,
-            "type": 2,
-            "fileId": 2904659
-          },
-          {
-            "id": 38235575,
-            "addonId": 59751,
-            "type": 2,
-            "fileId": 2904659
-          },
-          {
-            "id": 38235577,
-            "addonId": 242638,
-            "type": 2,
-            "fileId": 2904659
-          },
-          {
-            "id": 38235578,
-            "addonId": 268560,
-            "type": 2,
-            "fileId": 2904659
-          },
-          {
-            "id": 38235571,
-            "addonId": 228404,
-            "type": 2,
-            "fileId": 2904659
-          },
-          {
-            "id": 38235576,
-            "addonId": 231951,
-            "type": 2,
-            "fileId": 2904659
-          },
-          {
-            "id": 38235579,
-            "addonId": 243076,
-            "type": 2,
-            "fileId": 2904659
-          },
-          {
-            "id": 38235573,
-            "addonId": 267602,
-            "type": 2,
-            "fileId": 2904659
-          },
-          {
-            "id": 38235581,
-            "addonId": 69163,
-            "type": 2,
-            "fileId": 2904659
-          },
-          {
-            "id": 38235580,
+            "id": 0,
             "addonId": 268495,
             "type": 2,
-            "fileId": 2904659
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 69163,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 231951,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 223794,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 239286,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 242638,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 228404,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 59751,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 267602,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 243076,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 268560,
+            "type": 2,
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1120183927,
-            "type": 3
+            "fingerprint": 1409455724,
+            "type": 0
           },
           {
             "foldername": "com",
-            "fingerprint": 3127804263,
-            "type": 3
-          },
-          {
-            "foldername": "buildinggadgets_logo.png",
-            "fingerprint": 2374162731,
-            "type": 3
+            "fingerprint": 3448930259,
+            "type": 0
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 1756302915,
-            "type": 3
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 3966543989,
-            "type": 3
+            "fingerprint": 760138793,
+            "type": 0
           },
           {
             "foldername": "assets",
-            "fingerprint": 4115684569,
-            "type": 3
+            "fingerprint": 2963309242,
+            "type": 0
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 3273911401,
-            "type": 3
+            "type": 0
           }
         ],
-        "packageFingerprint": 884053955,
+        "packageFingerprint": 2539449716,
         "gameVersion": [
           "Forge",
           "1.12.2"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000012.0000000002",
-            "gameVersion": "1.12.2",
-            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 1796519,
-        "projectId": 298187,
-        "packageFingerprintId": 425137705,
-        "gameVersionDateReleased": "2007-07-01T05:00:00Z",
-        "gameVersionMappingId": 2136457,
-        "gameVersionId": 4457,
-        "gameId": 432,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "BuildingGadgets-2.8.2.jar"
+        "FileNameOnDisk": "BuildingGadgets-2.8.3.jar"
       },
       "dateInstalled": "2020-04-08T17:00:50.5563946Z",
-      "dateUpdated": "2019-04-08T17:00:50.5563946Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2020-04-13T09:58:11.6360254Z",
+      "dateLastUpdateAttempted": "2020-04-13T09:58:11.6360254Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -26576,22 +26549,22 @@
       "addonID": 237903,
       "gameInstanceID": "1d2f9fb2-5f05-49bd-8a83-2e0c577749d7",
       "installedFile": {
-        "id": 2898260,
-        "displayName": "RebornCore-1.12.2-3.19.2.522-universal.jar",
-        "fileName": "RebornCore-1.12.2-3.19.2.522-universal.jar",
-        "fileDate": "2020-03-10T19:23:58.553Z",
-        "fileLength": 2427557,
+        "id": 2926584,
+        "displayName": "RebornCore-1.12.2-3.19.3.524-universal.jar",
+        "fileName": "RebornCore-1.12.2-3.19.3.524-universal.jar",
+        "fileDate": "2020-04-10T21:22:43.73Z",
+        "fileLength": 2429628,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2898/260/RebornCore-1.12.2-3.19.2.522-universal.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/2926/584/RebornCore-1.12.2-3.19.3.524-universal.jar",
         "isAlternate": false,
-        "alternateFileId": 2898261,
+        "alternateFileId": 2926585,
         "dependencies": [],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3891650615,
+            "fingerprint": 2883968079,
             "type": 0
           },
           {
@@ -26621,7 +26594,7 @@
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 1318988138,
+            "fingerprint": 2573281659,
             "type": 0
           },
           {
@@ -26651,11 +26624,11 @@
           },
           {
             "foldername": "reborncore",
-            "fingerprint": 3135369243,
+            "fingerprint": 770699067,
             "type": 0
           }
         ],
-        "packageFingerprint": 4123986609,
+        "packageFingerprint": 2796074046,
         "gameVersion": [
           "1.12",
           "1.12.1",
@@ -26670,11 +26643,11 @@
         "gameVersionDateReleased": "2017-06-07T05:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "RebornCore-1.12.2-3.19.2.522-universal.jar"
+        "FileNameOnDisk": "RebornCore-1.12.2-3.19.3.524-universal.jar"
       },
       "dateInstalled": "2019-06-28T17:26:17.7646239Z",
-      "dateUpdated": "2020-03-28T10:20:48.3556725Z",
-      "dateLastUpdateAttempted": "2020-03-28T10:20:48.3556725Z",
+      "dateUpdated": "2020-04-11T09:56:56.6367548Z",
+      "dateLastUpdateAttempted": "2020-04-11T09:56:56.6367548Z",
       "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
