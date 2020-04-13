@@ -24,10 +24,10 @@ mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:oreTin>, <thaumcraft:nugg
 mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:oreSilver>, <thaumcraft:nugget:3>);
 mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:oreLead>, <thaumcraft:nugget:4>);
 
-mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<thaumcraft:cluster:2>, <thaumcraft:nugget:1>);
-mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<thaumcraft:cluster:3>, <thaumcraft:nugget:2>);
-mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<thaumcraft:cluster:4>, <thaumcraft:nugget:3>);
-mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<thaumcraft:cluster:5>, <thaumcraft:nugget:4>);
+mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:clusterCopper>, <thaumcraft:nugget:1>);
+mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:clusterTin>, <thaumcraft:nugget:2>);
+mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:clusterSilver>, <thaumcraft:nugget:3>);
+mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:clusterLead>, <thaumcraft:nugget:4>);
 
 // IIngredient input, WeightedItemStack stack
 mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreCopper>, <thermalfoundation:material:192> % 33);
