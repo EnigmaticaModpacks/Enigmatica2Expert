@@ -5,9 +5,26 @@ import crafttweaker.oredict.IOreDictEntry as IOreDictEntry;
 import mods.jei.JEI.removeAndHide as rh;
 print("--- loading OreDict.zs ---");
 	
+# Oredicts for pressure plates
+var pressurePlates as IItemStack[] = [
+	<twilightforest:twilight_oak_plate>,
+	<twilightforest:canopy_plate>,
+	<twilightforest:mangrove_plate>,
+	<twilightforest:dark_plate>,
+	<twilightforest:time_plate>,
+	<twilightforest:trans_plate>,
+	<twilightforest:mine_plate>,
+	<twilightforest:sort_plate>
+];
+
+for item in pressurePlates {
+	<ore:pressurePlateWood>.add(item);
+}
+
 # Fixing Mortar and Pestle oredict from Pam's
 	<ore:pestleAndMortar>.add(<harvestcraft:mortarandpestleitem>);
 	
+# Fixing mushroom-y things
 	<ore:mushroomAny>.add(<harvestcraft:whitemushroomitem>);
 	
 # Removing Pam's in-world Apple from cropApple
