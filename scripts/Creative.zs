@@ -259,7 +259,7 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 	[null, ultCatalyst, ultCatalyst, <botania:exchangerod>, ultCatalyst, null, null, null, null], 
 	[null, null, null, ultCatalyst, ultCatalyst, null, null, null, null], 
 	[null, null, null, null, null, ultCatalyst, ultCatalyst, null, null], 
-	[null, null, null, null, null, ultCatalyst, <exchangers:resonant_exchanger>.withTag({}), ultCatalyst, null], 
+	[null, null, null, null, null, ultCatalyst, <buildinggadgets:exchangertool>.withTag({}), ultCatalyst, null], 
 	[null, null, null, null, null, null, ultCatalyst, ultCatalyst, null], 
 	[null, null, null, null, null, null, null, null, anglesite]]);
 	
