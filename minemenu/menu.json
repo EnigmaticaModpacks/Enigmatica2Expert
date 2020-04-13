@@ -1,1 +1,30 @@
-{}
+{
+  "main": {
+    "5": {
+      "title": "Portal",
+      "icon": {
+        "name": "plustic:osgloglasingot",
+        "damage": 0
+      },
+      "action": {
+        "key": {
+          "key": "key.plustic_brown_magic.desc",
+          "toggle": false
+        }
+      }
+    },
+    "6": {
+      "title": "Set Portal Osgloglas",
+      "icon": {
+        "name": "plustic:osgloglasnugget",
+        "damage": 0
+      },
+      "action": {
+        "key": {
+          "key": "key.plustic_set_portal.desc",
+          "toggle": false
+        }
+      }
+    }
+  }
+}
