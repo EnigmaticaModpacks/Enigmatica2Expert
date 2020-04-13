@@ -31,8 +31,9 @@ var biomesOPlentyOres as IItemStack[] = [
 ];
 
 for ore in biomesOPlentyOres {
-	ore.addTooltip("Does " ~ format.darkRed("NOT") ~ "generate naturally. Use the Sieve to obtain Gems directly.");
-	addDescription(ore, "Does not generate naturally. Use the Sieve to obtain Gems directly.");
+	var tooltip = "Does not generate naturally. Use the Sieve to obtain Biomes O' Plenty Gems directly.";
+	ore.addTooltip(tooltip);
+	addDescription(ore, tooltip);
 }
 
 var metalRods as IItemStack[] = [
