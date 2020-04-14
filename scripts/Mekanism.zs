@@ -9,7 +9,7 @@ recipes.remove(<mekanism:machineblock:2>);
 
 
 # Unifying Graphite ingots, seems the crusher was overlooked
-mods.mekanism.crusher.removeRecipe(<bigreactors::dustgraphite>, <bigreactors:ingotgraphite>);
+mods.mekanism.crusher.removeRecipe(<bigreactors:dustgraphite>, <bigreactors:ingotgraphite>);
 
 for ingot in <ore:ingotGraphite>.items {
 	mods.mekanism.crusher.addRecipe(ingot, <nuclearcraft:dust:8>);
