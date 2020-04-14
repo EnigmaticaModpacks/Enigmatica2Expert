@@ -969,7 +969,7 @@
             "ForgeCaps:10": {
               "astralsorcery:cap_item_amulet_holder:10": {}
             },
-            "id:8": "mysticalagriculture:master_infusion_crystal",
+            "id:8": "mysticalagriculture:infusion_crystal",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -987,26 +987,6 @@
       },
       "tasks:9": {
         "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
-              "id:8": "mysticalagriculture:master_infusion_crystal",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        },
-        "1:10": {
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
@@ -32906,8 +32886,94 @@
       },
       "tasks:9": {
         "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
-          "taskID:8": "bq_standard:checkbox"
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "plustic::10": {
+                  "Size:3": 1,
+                  "Items:9": {}
+                },
+                "astralsorcery:cap_item_amulet_holder:10": {},
+                "plustic:fruitsalad_cap:10": {
+                  "Size:3": 5,
+                  "Items:9": {}
+                },
+                "plustic:musicofthespheres_cap:10": {
+                  "Size:3": 1,
+                  "Items:9": {}
+                }
+              },
+              "id:8": "tconstruct:pickaxe",
+              "Count:3": 1,
+              "tag:10": {
+                "StatsOriginal:10": {
+                  "AttackSpeedMultiplier:5": 1.0,
+                  "MiningSpeed:5": 3.75,
+                  "FreeModifiers:3": 3,
+                  "Durability:3": 143,
+                  "HarvestLevel:3": 0,
+                  "Attack:5": 2.175
+                },
+                "Stats:10": {
+                  "AttackSpeedMultiplier:5": 1.0,
+                  "MiningSpeed:5": 3.75,
+                  "FreeModifiers:3": 2,
+                  "Durability:3": 143,
+                  "HarvestLevel:3": 0,
+                  "Attack:5": 2.175
+                },
+                "Special:10": {
+                  "Categories:9": {
+                    "0:8": "harvest",
+                    "1:8": "tool",
+                    "2:8": "aoe"
+                  }
+                },
+                "TinkerData:10": {
+                  "Materials:9": {
+                    "0:8": "wood",
+                    "1:8": "flint",
+                    "2:8": "wood"
+                  },
+                  "Modifiers:9": {
+                    "0:8": "toolleveling"
+                  }
+                },
+                "Modifiers:9": {
+                  "0:10": {
+                    "identifier:8": "ecological",
+                    "color:3": -7444965,
+                    "level:3": 1
+                  },
+                  "1:10": {
+                    "identifier:8": "crude",
+                    "color:3": -9868951,
+                    "level:3": 2,
+                    "crude2:1": 1
+                  },
+                  "2:10": {
+                    "identifier:8": "toolleveling",
+                    "color:3": 16777215,
+                    "level:3": 1
+                  }
+                },
+                "Traits:9": {
+                  "0:8": "ecological",
+                  "1:8": "crude2",
+                  "2:8": "toolleveling"
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
         }
       },
       "rewards:9": {
@@ -62584,9 +62650,15 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "id:8": "enderio:block_tank",
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 0,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }

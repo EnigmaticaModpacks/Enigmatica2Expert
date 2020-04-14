@@ -242,4 +242,9 @@ recipes.remove(<mekanism:machineblock:2>);
 	rh(<mekanism:oreblock:2>);
 	rh(<mekanism:walkietalkie>);
 
+# Tier applying
+	recipes.addShapeless(<mekanism:machineblock:5>.withTag({recipeType: 3, mekData: {}}), [<mekanism:machineblock:1>.withTag({mekData: {}}), <mekanism:tierinstaller>]);
+	recipes.addShapeless(<mekanism:machineblock:6>.withTag({recipeType: 3, mekData: {}}), [<mekanism:machineblock:5>.withTag({recipeType: 3, mekData: {}}), <mekanism:tierinstaller:1>]);
+	recipes.addShapeless(<mekanism:machineblock:7>.withTag({recipeType: 3, mekData: {}}), [<mekanism:machineblock:6>.withTag({recipeType: 3, mekData: {}}), <mekanism:tierinstaller:2>]);
+
 print("--- Mekanism.zs initialized ---");

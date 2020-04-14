@@ -18,7 +18,7 @@ config/splash.properties
 # Client Configs
 config/creativecore-client.json
 config/InvTweaks.cfg
-
+config/chiselsandbits_clipboard.cfg
 config/MouseTweaks.cfg
 
 config/jei/worldSettings.cfg
@@ -40,3 +40,7 @@ config/AppliedEnergistics2/CustomRecipes.cfg
 config/brandon3055/ResourceCache/
 config/brandon3055/ProjectIntelligence/ModDocs/
 config/BlockDrops/blockdrops.txt
+
+config/armoryexpansion/traits.txt
+
+config/cd4017be/compiled.dat

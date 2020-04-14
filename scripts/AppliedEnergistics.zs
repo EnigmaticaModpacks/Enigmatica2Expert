@@ -201,4 +201,7 @@ print("--- loading AppliedEnergistics.zs ---");
 # Charged Certus Quartz -> Certus Dust
 	mods.thermalexpansion.Pulverizer.addRecipe(<appliedenergistics2:material:2>, <appliedenergistics2:material:1>, 2000, <appliedenergistics2:material:2>, 20);
 		
+# Lapis -> Dust
+	mods.appliedenergistics2.Grinder.addRecipe(<ic2:dust:9>, <minecraft:dye:4>, 4);
+
 	print("--- AppliedEnergistics.zs initialized ---");

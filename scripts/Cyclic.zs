@@ -131,6 +131,19 @@ print("--- loading Cyclic.zs ---");
 	[<extrautils2:decorativeglass:3>, <enderio:block_reinforced_obsidian>, <extrautils2:decorativeglass:3>], 
 	[<extrautils2:decorativeglass:3>, <extrautils2:decorativeglass:3>, <extrautils2:decorativeglass:3>]
 	]);
+	
+# Climbing Gloves
+remakeEx(<cyclicmagic:glove_climb>, [
+	[<rats:feral_rat_claw>, <rats:feral_rat_claw>, null],
+	[<rats:feral_rat_claw>, <ic2:misc_resource:4>, <harvestcraft:hardenedleatheritem>],
+	[null, <harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>]]);
+
+# Igniter
+remakeEx(<randomthings:igniter>, [
+	[<ore:gearSteel>, <ore:gearSteel>, <ore:netherrack>],
+	[<minecraft:dispenser>, <iceandfire:fire_dragon_blood>, <ore:netherrack>],
+	[<ore:gearSteel>, <ore:gearSteel>, <ore:netherrack>]]);
+
 
 	
 	print("--- Cyclic.zs initialized ---");

@@ -83,9 +83,9 @@ print("--- loading ActuallyAdditions.zs ---");
 	recipes.remove(<actuallyadditions:block_giant_chest>);
 	recipes.addShapedMirrored("Small Storage Crate", 
 	<actuallyadditions:block_giant_chest>, 
-	[[<ore:chest>, <ore:plankTreatedWood>, <ore:chest>],
+	[[<immersiveengineering:wooden_device0:5>, <ore:plankTreatedWood>, <immersiveengineering:wooden_device0:5>],
 	[<ore:plankTreatedWood>, <actuallyadditions:block_misc:4>, <ore:plankTreatedWood>], 
-	[<ore:chest>, <ore:plankTreatedWood>, <ore:chest>]]);
+	[<immersiveengineering:wooden_device0:5>, <ore:plankTreatedWood>, <immersiveengineering:wooden_device0:5>]]);
 
 # Emerald Dust
 	recipes.remove(<actuallyadditions:item_dust:3>);
@@ -210,30 +210,162 @@ print("--- loading ActuallyAdditions.zs ---");
 
 # *======= BallOfFur =======*
 
-addBallReturn(<thermalfoundation:material:160>, 30);
-addBallReturn(<astralsorcery:itemusabledust>, 50);
-addBallReturn(<extendedcrafting:material>, 10);
-addBallReturn(<appliedenergistics2:material:45>, 80);
-addBallReturn(<appliedenergistics2:material:3>, 60);
-addBallReturn(<biomesoplenty:gem:1>, 60);
-addBallReturn(<immersiveengineering:material:9>, 10);
-addBallReturn(<immersiveengineering:material:8>, 120);
-addBallReturn(<plustic:alumiteingot>, 10);
+# Weight of standart AA drops
+var weight = 100+2+1+80+60+10+40+60+30+70+40+40+10+6+30+2+20+10+3+40+50+30+4+20;
 
-addBallReturn(<rats:raw_rat>,               180);
-addBallReturn(<rats:rat_pelt>,              130);
-addBallReturn(<rats:token_fragment>,         30);
-addBallReturn(<rats:little_black_worm>,       1);
-addBallReturn(<rats:feral_rat_claw>,         20);
-addBallReturn(<rats:marbled_cheese_rat_head>,10);
-addBallReturn(<enderio:item_power_conduit:2>,80);
-addBallReturn(<immersivecables:wire_coil:1>, 50);
-addBallReturn(<rs_ctr:wire>,                 90);
-addBallReturn(<forestry:chipsets:3>,          5);
-addBallReturn(<twilightforest:alpha_fur>,    10);
-addBallReturn(<twilightforest:arctic_fur>,   30);
-addBallReturn(<animania:wool:3>,            110);
-addBallReturn(<bigreactors:minerals:1>,       1);
+var listCatFur as string[] = [
+"thermalfoundation:material"     , "160"  , "15",
+"astralsorcery:itemusabledust"   , "0"    , "25",
+"extendedcrafting:material"      , "0"    , "5",
+"appliedenergistics2:material"   , "45"   , "40",
+"appliedenergistics2:material"   , "3"    , "30",
+"biomesoplenty:gem"              , "1"    , "30",
+"immersiveengineering:material"  , "9"    , "5",
+"immersiveengineering:material"  , "8"    , "60",
+"plustic:alumiteingot"           , "0"    , "5",
+"rats:raw_rat"                   , "0"    , "90",
+"rats:rat_pelt"                  , "0"    , "65",
+"rats:token_fragment"            , "0"    , "15",
+"rats:little_black_worm"         , "0"    , "1",
+"rats:feral_rat_claw"            , "0"    , "10",
+"rats:marbled_cheese_rat_head"   , "0"    , "3",
+"enderio:item_power_conduit"     , "2"    , "40",
+"immersivecables:wire_coil"      , "1"    , "25",
+"rs_ctr:wire"                    , "0"    , "45",
+"forestry:chipsets"              , "3"    , "1",
+"twilightforest:alpha_fur"       , "0"    , "3",
+"twilightforest:arctic_fur"      , "0"    , "15",
+"animania:wool"                  , "3"    , "55",
+"bigreactors:minerals"           , "1"    , "1",
+
+"animania:blue_peacock_feather"      ,"0" ,"50",
+"animania:charcoal_peacock_feather"  ,"0" ,"50",
+"animania:opal_peacock_feather"      ,"0" ,"50",
+"animania:peach_peacock_feather"     ,"0" ,"50",
+"animania:purple_peacock_feather"    ,"0" ,"50",
+"animania:taupe_peacock_feather"     ,"0" ,"50",
+"animania:white_peacock_feather"     ,"0" ,"50",
+"betteranimalsplus:bear_skin_black"  ,"0" ,"15",
+"betteranimalsplus:bear_skin_brown"  ,"0" ,"15",
+"betteranimalsplus:bear_skin_kermode","0" ,"15",
+"betteranimalsplus:eel_meat_raw"     ,"0" ,"35",
+"betteranimalsplus:hirschgeistskull_","1" ,"22",
+"betteranimalsplus:wolf_pelt_arctic" ,"0" ,"25",
+"betteranimalsplus:wolf_pelt_black"  ,"0" ,"25",
+"betteranimalsplus:wolf_pelt_brown"  ,"0" ,"25",
+"betteranimalsplus:wolf_pelt_red"    ,"0" ,"25",
+"betteranimalsplus:wolf_pelt_snowy"  ,"0" ,"25",
+"betteranimalsplus:wolf_pelt_timber" ,"0" ,"25",
+"biomesoplenty:plant_"               ,"0" ,"30",
+"biomesoplenty:plant_0"              ,"1" ,"30",
+"botania:manaresource"               ,"12","1" ,
+"botania:manaresource"               ,"16","5" ,
+"extrautils2:endershard"             ,"0" ,"35",
+"ic2:crafting"                       ,"24","10" ,
+"ic2:dust"                           ,"18","10",
+"ic2:dust"                           ,"20","10",
+"ic2:dust"                           ,"21","10",
+"ic2:dust"                           ,"22","10",
+"ic2:dust"                           ,"23","10",
+"ic2:dust"                           ,"24","10",
+"ic2:dust"                           ,"25","10",
+"ic2:dust"                           ,"26","10",
+"ic2:dust"                           ,"27","10",
+"ic2:dust"                           ,"28","10",
+"iceandfire:amphithere_feather"      ,"0" ,"40",
+"iceandfire:amphithere_skull"        ,"0" ,"8" ,
+"iceandfire:cockatrice_skull"        ,"0" ,"8" ,
+"iceandfire:dragonbone"              ,"0" ,"8" ,
+"iceandfire:hippogryph_skull"        ,"0" ,"8" ,
+"iceandfire:myrmex_desert_chitin"    ,"0" ,"8" ,
+"iceandfire:myrmex_jungle_chitin"    ,"0" ,"8" ,
+"iceandfire:seaserpent_skull"        ,"0" ,"8" ,
+"iceandfire:stymphalian_bird_feather","0" ,"40",
+"iceandfire:stymphalian_skull"       ,"0" ,"8" ,
+"iceandfire:witherbone"              ,"0" ,"8" ,
+"immersiveengineering:bullet"        ,"0" ,"15",
+"industrialforegoing:tinydryrubber"  ,"0" ,"10",
+"jaopca:item_dusttinyaluminium"      ,"0" ,"10",
+"jaopca:item_dusttinyamethyst"       ,"0" ,"10",
+"jaopca:item_dusttinyapatite"        ,"0" ,"10",
+"jaopca:item_dusttinyaquamarine"     ,"0" ,"10",
+"jaopca:item_dusttinyardite"         ,"0" ,"10",
+"jaopca:item_dusttinyastralstarmetal","0" ,"10",
+"jaopca:item_dusttinyboron"          ,"0" ,"10",
+"jaopca:item_dusttinycertusquartz"   ,"0" ,"10",
+"jaopca:item_dusttinycoal"           ,"0" ,"10",
+"jaopca:item_dusttinycobalt"         ,"0" ,"10",
+"jaopca:item_dusttinydiamond"        ,"0" ,"10",
+"jaopca:item_dusttinydraconium"      ,"0" ,"10",
+"jaopca:item_dusttinyemerald"        ,"0" ,"10",
+"jaopca:item_dusttinyiridium"        ,"0" ,"10",
+"jaopca:item_dusttinymagnesium"      ,"0" ,"10",
+"jaopca:item_dusttinymalachite"      ,"0" ,"10",
+"jaopca:item_dusttinymithril"        ,"0" ,"10",
+"jaopca:item_dusttinynickel"         ,"0" ,"10",
+"jaopca:item_dusttinyosmium"         ,"0" ,"10",
+"jaopca:item_dusttinyperidot"        ,"0" ,"10",
+"jaopca:item_dusttinyplatinum"       ,"0" ,"10",
+"jaopca:item_dusttinyquartz"         ,"0" ,"10",
+"jaopca:item_dusttinyquartzblack"    ,"0" ,"10",
+"jaopca:item_dusttinyredstone"       ,"0" ,"10",
+"jaopca:item_dusttinyruby"           ,"0" ,"10",
+"jaopca:item_dusttinysapphire"       ,"0" ,"10",
+"jaopca:item_dusttinytanzanite"      ,"0" ,"10",
+"jaopca:item_dusttinythorium"        ,"0" ,"10",
+"jaopca:item_dusttinytitanium"       ,"0" ,"10",
+"jaopca:item_dusttinytopaz"          ,"0" ,"10",
+"jaopca:item_dusttinyuranium"        ,"0" ,"10",
+"mekanism:cardboardbox"              ,"0" ,"10",
+"minecraft:bone"                     ,"0" ,"30",
+"minecraft:feather"                  ,"0" ,"30",
+"minecraft:rabbit_foot"              ,"0" ,"30",
+"minecraft:rabbit_hide"              ,"0" ,"30",
+"minecraft:skull"                    ,"0" ,"10",
+"minecraft:tallgrass"                ,"1" ,"30",
+"mysticalagriculture:crafting"       ,"23","10",
+"mysticalagriculture:crafting"       ,"24","10",
+"openblocks:sponge"                  ,"0" ,"40",
+"quark:crab_leg"                     ,"0" ,"40",
+"quark:frog_leg"                     ,"0" ,"40",
+"quark:rope"                         ,"0" ,"40",
+"quark:soul_bead"                    ,"0" ,"3",
+"quark:tallow"                       ,"0" ,"40",
+"rats:rat_nugget"                    ,"0" ,"20",
+"rats:string_cheese"                 ,"0" ,"20",
+"rustic:bee"                         ,"0" ,"20",
+"rustic:wind_thistle"                ,"0" ,"40",
+"storagedrawers:tape"                ,"0" ,"25",
+"tconstruct:materials"               ,"17","10",
+"tconstruct:slime_grass_tall"        ,"0" ,"40",
+"tconstruct:slime_grass_tall"        ,"4" ,"40",
+"tconstruct:slime_grass_tall"        ,"8" ,"40",
+"thaumcraft:salis_mundus"            ,"0" ,"5" ,
+"twilightforest:cicada"              ,"0" ,"50",
+"twilightforest:firefly"             ,"0" ,"50",
+"twilightforest:raven_feather"       ,"0" ,"50",
+"twilightforest:twilight_plant"      ,"5" ,"50",
+
+] as string[];
+
+# Calculate total weight
+for i in 0 to listCatFur.length {
+	if (i%3==2) {
+		weight += listCatFur[i] as int;
+	}
+}
+
+for i in 0 to listCatFur.length {
+	if (i%3==0) {
+		var item = itemUtils.getItem(listCatFur[i], listCatFur[i+1]);
+		if (!isNull(item)) {
+			addBallReturn(item, listCatFur[i+2]);
+			val chance = (mods.ctutils.utils.Math.floor((listCatFur[i+2] as float) / weight * 10000) as double) / 100;
+			item.addTooltip(format.darkGray("Drops from ") ~ format.bold("Ball Of Fur") ~
+				format.darkGray(" with chance ") ~ format.gray(chance ~ "%"));
+		}
+	}
+}
 
 # *======= Ore for Laser =======*
 	mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreBoron>, 250);

@@ -1,4 +1,4 @@
-VERSION = 95;
+VERSION = 99;
 
 !The maximum distance between signal ports or anchors connected via wire.
 !Warning: wires much longer than 16 blocks may have visual chunk clipping glitches.
@@ -7,6 +7,12 @@ max_wire_length = 16;
 max_split_links = 8; !maximum number of connections for Splitter Plugs
 
 block_select_range = 64; !maximum distance a Block Selector will scan for Frame Blocks in each direction.
+chunk_loader_range = 64; !maximum distance a Chunk Loader will scan for Frame Blocks in each direction.
+
+chunkload_time_cap = 48.0; !maximum time in hours a Chunk Loader can store internally. 
+chunkload_item_time = 4.0; !how many hours are recharged per Time Essence item.
+!When a Chunk Loader is loading more than one chunk, it will always consume time at twice the rate, even if it loads more than two chunks.
+!The chunk limit per ticket in Forge chunk loading config also defines the limit per device.
 
 blockref_livespan = 16; !how long a Block Reference stays valid after creation. This is to prevent long term storage of Block Reference Signals using delay loop contraptions. 
 
@@ -101,6 +107,7 @@ INIT() {
 	add("shaped", it("tile.block_breaker1"), "254/535/0 1", it("tile.rs_port"):1, it("tile.rs_port"):0, it("minecraft:golden_pickaxe"), it("m.actuator"), it("minecraft:hopper"), "ingotIron");
 	add("shapedNBT", "#ench", it("tile.block_breaker"), "01", it("tile.block_breaker1"), it("minecraft:diamond_pickaxe"));
 	add("shaped", it("tile.item_placer"), "254/535/001", it("tile.rs_port"):1, it("tile.rs_port"):0, it("minecraft:skull"):2, it("m.actuator"), it("minecraft:dispenser"), "ingotIron");
+	add("shaped", it("tile.chunk_loader"), "202/010/304", it("item.cl_fuel"), it("tile.frame"), it("minecraft:clock"), it("tile.rs_port"):1, it("tile.rs_port"):0);
 	add("shaped", it("tile.ram"), "021", it("tile.bin_comb"), it("tile.bin_split"), it("tile.logic_comb"));
 	add("shaped", it("tile.ram"):5, "1/0", it("tile.ram"), it("m.corerope1"));
 	add("shaped", it("tile.ram"):7, "101", it("tile.ram"):5, it("m.corerope1"));
@@ -118,6 +125,7 @@ INIT() {
 	add("shapeless", 4 * it("item.split_s"), it("tile.splitter"));
 	add("shapeless", 4 * it("item.split_b"), it("tile.splitter_b"));
 	add("shaped", it("item.wireless"), "000/010/000", it("item.wire"), "enderpearl");
+	add("shaped", it("item.wireless_b"), " 1 /020/ 1 ", it("item.wireless"), it("m.telekin_alloy"), it("minecraft:nether_star"));
 	add("shaped", it("item.constant"), "1/0", it("item.wire"), it("minecraft:redstone_torch"));
 	add("shaped", it("item.lamp"), "1/0", it("item.wire"), "dustGlowstone");
 	add("shaped", it("item.tag"), "1/0", it("item.wire"), it("minecraft:name_tag"));
@@ -125,6 +133,7 @@ INIT() {
 	add("shaped", it("item.edge_trigger"), " 4 / 3 /102", it("item.wire"), it("minecraft:redstone_torch"), it("minecraft:repeater"), it("minecraft:lever"), it("tile.rs_port"):0);
 	add("shaped", it("item.pulse_gen"), " 4 / 3 /102", it("item.wire"), it("minecraft:redstone_torch"), it("minecraft:repeater"), "dustRedstone", it("tile.rs_port"):0);
 	add("shaped", it("item.wrench"), "0/0/1", "nuggetIron", "plankWood");
+	add("shaped", it("item.signal_probe"), "0 0/121/343", it("item.wrench"), it("item.wire"), "paneGlass", it("minecraft:stone_button"), "dustGlowstone");
 	add("shaped", it("item.pointer_dsp"), "0/1", it("minecraft:compass"), it("item.wire"));
 	add("shaped", it("item.seg7"), "000/121", it("item.lamp"), "gemQuartz", "dustRedstone");
 	add("shaped", it("item.slider"), "1 2/000", it("minecraft:coal"):1, it("minecraft:redstone_torch"), it("item.wire"));
@@ -139,6 +148,7 @@ INIT() {
 	add("shaped", it("m.corerope"), " 01/0 0/10 ", "nuggetIron", it("item.wire"));
 	add("shaped", it("m.corerope1"), "000/010/000", it("m.corerope"), "ingotIron");
 	add("shaped", it("m.corerope2"), " 0 /0 0/ 0 ", it("m.corerope1"));
+	add("shaped", 4 * it("item.cl_fuel"), "010/ 2 /0 0", "blockGlass", it("m.telekin_alloy"), it("minecraft:ender_eye"));
 	Loc t = it("item.text"), t1 = t:1;
 	add("shaped", 4 * t1, "0/1", "paper", it("minecraft:sign"));
 	add("shapeless", t:4, t1, t1, t1, t1);

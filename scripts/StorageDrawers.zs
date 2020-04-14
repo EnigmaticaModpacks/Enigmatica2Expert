@@ -1,3 +1,6 @@
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
+
 #modloaded storagedrawers
 print("--- loading StorageDrawers.zs ---");
 
@@ -52,5 +55,19 @@ print("--- loading StorageDrawers.zs ---");
 	[[<ore:stickWood>, <ore:plankWood>, <ore:stickWood>],
 	[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
 	[<ore:stickWood>, <ore:plankWood>, <ore:stickWood>]]);
+
+# Upgrades
+function remakeDrawerUpgrade(item as IItemStack, primary as IIngredient){
+	remakeEx(item, [
+		[primary, <ore:stickWood>, primary],
+		[<ore:stickWood>, <storagedrawers:upgrade_template>, <ore:stickWood>],
+		[primary, <ore:stickWood>, primary]]);
+}
+
+remakeDrawerUpgrade(<storagedrawers:upgrade_storage>,   <ore:stoneBasalt>);
+remakeDrawerUpgrade(<storagedrawers:upgrade_storage:1>, <ore:ingotIron>);
+remakeDrawerUpgrade(<storagedrawers:upgrade_storage:2>, <ore:ingotGold>);
+remakeDrawerUpgrade(<storagedrawers:upgrade_storage:3>, <ore:ingotHardCarbon>);
+remakeDrawerUpgrade(<storagedrawers:upgrade_storage:4>, <ore:ingotVibrantAlloy>);
 
 		print("--- StorageDrawers.zs initialized ---");

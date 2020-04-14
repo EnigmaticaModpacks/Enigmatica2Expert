@@ -166,5 +166,24 @@ function fluidDict(ins as string[]) {
 	[<ore:blockGlass>, <ore:oreIron>, <ore:blockGlass>], 
 	[<minecraft:bucket>, <ore:gearIron>, <minecraft:bucket>]]);
 
+# Oredict Belts Recipes
+	recipes.remove(<industrialforegoing:conveyor>);
+	recipes.addShaped(<industrialforegoing:conveyor> * 4, [
+		[<ore:itemRubber>, <ore:itemRubber>, <ore:itemRubber>], 
+		[<ore:ingotIron>, <minecraft:redstone>, <ore:ingotIron>], 
+		[<ore:itemRubber>, <ore:itemRubber>, <ore:itemRubber>]]);
+
+	recipes.remove(<industrialforegoing:conveyor_upgrade>);
+	recipes.addShaped(<industrialforegoing:conveyor_upgrade>, [
+		[<ore:ingotIron>, <ore:itemRubber>, <ore:ingotIron>], 
+		[<ore:ingotIron>, <minecraft:dispenser>, <ore:ingotIron>], 
+		[<ore:ingotIron>, <industrialforegoing:conveyor:*>, <ore:ingotIron>]]);
+	recipes.remove(<industrialforegoing:conveyor_upgrade:1>);
+	
+	recipes.addShaped(<industrialforegoing:conveyor_upgrade:1>, [
+		[<ore:ingotIron>, <ore:itemRubber>, <ore:ingotIron>], 
+		[<ore:ingotIron>, <minecraft:hopper>, <ore:ingotIron>], 
+		[<ore:ingotIron>, <industrialforegoing:conveyor:*>, <ore:ingotIron>]]);
+
 
 	print("--- IndustrialForegoing.zs initialized ---");

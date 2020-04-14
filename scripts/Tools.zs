@@ -73,7 +73,9 @@ print("--- loading Tools.zs ---");
 	<minecraft:stone_pickaxe>,
 	<minecraft:stone_hoe>,
 	<minecraft:stone_axe>,
-	<minecraft:stone_shovel>
+	<minecraft:stone_shovel>,
+
+	<minecraft:shears>
 	
 		] as IItemStack[];
 		
