@@ -6,7 +6,7 @@ print("--- loading ExtremeReactors.zs ---");
 # *======= Recipes =======*
 
 # Cyanite in NuclearCraft Fission Reactor
-	mods.nuclearcraft.fission.addRecipe([<immersiveengineering:metal:5>, <bigreactors:ingotmetals:1>, 4800.0, 100.0, 40.0, "URANIUM"]);
+	mods.nuclearcraft.fission.addRecipe([<immersiveengineering:metal:5>, <bigreactors:ingotcyanite>, 4800.0, 100.0, 40.0, "URANIUM"]);
 
 # Reactor Controller
 	recipes.remove(<bigreactors:reactorcontroller>);
@@ -73,43 +73,43 @@ print("--- loading ExtremeReactors.zs ---");
 	[<bigreactors:turbinehousing>, <ic2:crafting:36>, <bigreactors:turbinehousing>]]);
 
 # Blutonium Block
-	recipes.remove(<bigreactors:blockmetals:3>);
+	recipes.remove(<bigreactors:blockblutonium>);
 	recipes.addShapedMirrored("Blutonium Block", 
-	<bigreactors:blockmetals:3>, 
+	<bigreactors:blockblutonium>, 
 	[[<ore:blockMithril>, <ore:blockCobalt>, <ore:blockMithril>],
 	[<ic2:nuclear:7>, <ic2:nuclear:7>, <ic2:nuclear:7>], 
 	[<ore:blockCyanite>, <actuallyadditions:block_crystal_empowered:1>, <ore:blockCyanite>]]);
 # Blutonium Ingot	
-	recipes.remove(<bigreactors:ingotmetals:3>);
+	recipes.remove(<bigreactors:ingotblutonium>);
 	recipes.addShapeless("Blutonium Ingot from Block", 
-	<bigreactors:ingotmetals:3> * 9, 
-	[<bigreactors:blockmetals:3>]);
+	<bigreactors:ingotblutonium> * 9, 
+	[<bigreactors:blockblutonium>]);
 # Blutonium Ingot -> Block
 	recipes.addShaped("Blutonium Ingots to Block", 
-	<bigreactors:blockmetals:3>, 
+	<bigreactors:blockblutonium>, 
 	[[<ore:ingotBlutonium>, <ore:ingotBlutonium>, <ore:ingotBlutonium>],
 	[<ore:ingotBlutonium>, <ore:ingotBlutonium>, <ore:ingotBlutonium>], 
 	[<ore:ingotBlutonium>, <ore:ingotBlutonium>, <ore:ingotBlutonium>]]);
 
 # Ludicrite Block
-	recipes.remove(<bigreactors:blockmetals:4>);
-	mods.forestry.Carpenter.addRecipe(<bigreactors:blockmetals:4>, 
+	recipes.remove(<bigreactors:blockludicrite>);
+	mods.forestry.Carpenter.addRecipe(<bigreactors:blockludicrite>, 
 	[[<ore:gemAmethyst>, <ore:blockBlaze>, <ore:gemAmethyst>],
 	[<ore:ingotAlumite>, <ore:blockBlutonium>, <ore:ingotAlumite>], 
 	[<ore:blockEnderium>, <botania:storage:2>, <ore:blockEnderium>]], 
 	40, <liquid:liquiddna> * 1000);
 	
 	recipes.addShaped("Ludicrite Block From Ingots", 
-	<bigreactors:blockmetals:4>, 
+	<bigreactors:blockludicrite>, 
 	[[<ore:ingotLudicrite>, <ore:ingotLudicrite>, <ore:ingotLudicrite>],
 	[<ore:ingotLudicrite>, <ore:ingotLudicrite>, <ore:ingotLudicrite>], 
 	[<ore:ingotLudicrite>, <ore:ingotLudicrite>, <ore:ingotLudicrite>]]);
 
 # Yellorite Block
-	recipes.remove(<bigreactors:blockmetals>);
+	recipes.remove(<bigreactors:blockyellorium>);
 	
 # Anglesite - Crystal made of ThermalExpansion/EnvironmentalTech/Ender IO/AE2 materials
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<bigreactors:minerals>, 100000000, 1000000, 
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<bigreactors:mineralanglesite>, 100000000, 1000000, 
 	<appliedenergistics2:material:48>, [<thermalfoundation:material:894>,
 	<thermalfoundation:material:893>,  <thermalfoundation:material:895>, 
 	<thermalfoundation:material:865>,
@@ -120,7 +120,7 @@ print("--- loading ExtremeReactors.zs ---");
 	<enderio:item_material:17>,  <enderio:item_material:18>, <enderio:item_material:19>]);	  
 
 # Benitoite - Crystal made of Botania/AstralSorcery/BloodMagic/Thaumcraft materials
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<bigreactors:minerals:1>, 100000000, 1000000, <botania:manaresource:5>, 
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<bigreactors:mineralbenitoite>, 100000000, 1000000, <botania:manaresource:5>, 
 	[<botania:manaresource:9>, <botania:manaresource:1>, <botania:manaresource:7>, 
 	<botania:pylon:1>, <botania:manaresource:2>, <botania:manaresource:8>, 
 	<astralsorcery:itemcraftingcomponent:2>, #<astralsorcery:itemshiftingstar>.withTag({}), 

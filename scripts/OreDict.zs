@@ -262,7 +262,7 @@ for item in pressurePlates {
 	<ore:blockCertusQuartz>.add(<appliedenergistics2:chiseled_quartz_block>);
 	
 # Plutonium
-	//<ore:ingotPlutonium>.remove(<bigreactors:ingotmetals:3>);
+	//<ore:ingotPlutonium>.remove(<bigreactors:ingotblutonium>);
 
 # Iridium
 	<ore:ingotIridium>.add(<ic2:misc_resource:1>);

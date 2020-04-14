@@ -42,7 +42,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_pedestal", machin
 
 mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_ludicrite_block", machineName, 10)
 	.addEnergyPerTickInput(25000)
-	.addItemOutput(<bigreactors:blockmetals:4>)
+	.addItemOutput(<bigreactors:blockludicrite>)
 	.addItemInput(<ore:gemAmethyst>)
 	.addItemInput(<ore:blockBlutonium>)
 	.addItemInput(<ore:ingotAlumite>)
