@@ -1,6 +1,8 @@
 # Enigmatica 2: Expert Changelog
 ## 1.80
 
+*Remember to use the command  `/bq_admin default load` when updating*
+
 *Using Forge-1.12.2-14.23.5.2847*
 
 *[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.80.txt)*
