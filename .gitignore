@@ -1,5 +1,5 @@
 # Exclude files and directories in top directory
-/*
+/**
 
 # Whitelist
 !scripts/
@@ -7,13 +7,10 @@
 !resources/
 !schematics/
 !minemenu/
+!.gitignore
 
 # Files created by luncher
 config/splash.properties
-
-# You can be specific with these rules
-!/some/other/deep/path/**
-!.gitignore
 
 # Client Configs
 config/creativecore-client.json
