@@ -115,4 +115,17 @@ print("--- loading EnvironmentalTech.zs ---");
 	rh(<environmentaltech:laser_lens_crystal>);
 	
 	
-	print("--- EnvironmentalTech.zs initialized ---");
+# Photovoltatic cell Hard earlier recipe
+recipes.remove(<environmentaltech:photovoltaic_cell>);
+recipes.addShaped(<environmentaltech:photovoltaic_cell>, [
+		[<ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>],
+		[<actuallyadditions:block_crystal_empowered:1>, <actuallyadditions:block_crystal_empowered:1>, <actuallyadditions:block_crystal_empowered:1>], 
+		[<ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>]
+	]);
+
+# Photovoltatic cell Simplier recipe
+recipes.addShaped(<environmentaltech:photovoltaic_cell>, [
+		[<advancedrocketry:productsheet:1>, <advancedrocketry:productsheet:1>, <advancedrocketry:productsheet:1>],
+		[<ic2:plate:13>, <ic2:plate:13>, <ic2:plate:13>], 
+		[<advancedrocketry:productsheet:1>, <advancedrocketry:productsheet:1>, <advancedrocketry:productsheet:1>]
+	]);

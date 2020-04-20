@@ -1,7 +1,7 @@
 import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemStack as IItemStack;
 #modloaded mekanism
-print("--- loading Mekanism.zs ---");
+
 
 # The Combiner can dupe a bunch of stuff, so we're removing it.
 mods.mekanism.combiner.removeAllRecipes();
@@ -247,4 +247,44 @@ recipes.remove(<mekanism:machineblock:2>);
 	recipes.addShapeless(<mekanism:machineblock:6>.withTag({recipeType: 3, mekData: {}}), [<mekanism:machineblock:5>.withTag({recipeType: 3, mekData: {}}), <mekanism:tierinstaller:1>]);
 	recipes.addShapeless(<mekanism:machineblock:7>.withTag({recipeType: 3, mekData: {}}), [<mekanism:machineblock:6>.withTag({recipeType: 3, mekData: {}}), <mekanism:tierinstaller:2>]);
 
-print("--- Mekanism.zs initialized ---");
+
+# Mekanism Induction difficult
+remakeEx(<mekanism:basicblock2:4>.withTag({tier: 3}), [[<mekanism:tierinstaller:3>, <mekanism:basicblock2:4>.withTag({tier: 2}), <mekanism:tierinstaller:3>],[<mekanism:basicblock2:4>.withTag({tier: 2}), <mekanism:energycube>.withTag({tier: 3}), <mekanism:basicblock2:4>.withTag({tier: 2})], [<mekanism:tierinstaller:3>, <mekanism:basicblock2:4>.withTag({tier: 2}), <mekanism:tierinstaller:3>]]);
+remakeEx(<mekanism:basicblock2:4>.withTag({tier: 2}), [[<ore:circuitElite>, 	 <mekanism:basicblock2:4>.withTag({tier: 1}), <ore:circuitElite>],[<mekanism:basicblock2:4>.withTag({tier: 1}), <mekanism:energycube>.withTag({tier: 2}), <mekanism:basicblock2:4>.withTag({tier: 1})], [<ore:circuitElite>, <mekanism:basicblock2:4>.withTag({tier: 1}), <ore:circuitElite>]]);
+remakeEx(<mekanism:basicblock2:4>.withTag({tier: 1}), [[<ore:circuitAdvanced>, <mekanism:basicblock2:4>.withTag({tier: 0}), <ore:circuitAdvanced>],[<mekanism:basicblock2:4>.withTag({tier: 0}), <mekanism:energycube>.withTag({tier: 1}), <mekanism:basicblock2:4>.withTag({tier: 0})], [<ore:circuitAdvanced>, <mekanism:basicblock2:4>.withTag({tier: 0}), <ore:circuitAdvanced>]]);
+remakeEx(<mekanism:basicblock2:4>.withTag({tier: 0}), [[<ore:circuitBasic>,	 <nuclearcraft:lithium_ion_cell>, <ore:circuitBasic>],[<nuclearcraft:lithium_ion_cell>, <mekanism:energycube>.withTag({tier: 0}), <nuclearcraft:lithium_ion_cell>], [<ore:circuitBasic>, <nuclearcraft:lithium_ion_cell>, <ore:circuitBasic>]]);
+
+# Tablet
+remakeEx(<mekanism:energytablet>, [[<ore:alloyAdvanced>, <ore:plateDenseCopper>, <ore:alloyAdvanced>],[<ore:dustLithium>, <ore:plateDenseGold>, <ore:dustLithium>], [<ore:alloyAdvanced>, <ore:plateDenseCopper>, <ore:alloyAdvanced>]]);
+
+
+# Mek induction
+remakeEx(<mekanism:basicblock2:3>.withTag({tier: 0}), [
+	[<enderio:block_cap_bank:1>, <ore:battery>, <enderio:block_cap_bank:1>], 
+	[<ore:battery>, <mekanism:energycube>.withTag({tier: 0}), <ore:battery>], 
+	[<enderio:block_cap_bank:1>, <ore:battery>, <enderio:block_cap_bank:1>]
+]);
+remakeEx(<mekanism:basicblock2:3>.withTag({tier: 1}), [
+	[<enderio:block_cap_bank:2>, <mekanism:basicblock2:3>.withTag({tier: 0}), <enderio:block_cap_bank:2>], 
+	[<mekanism:basicblock2:3>.withTag({tier: 0}), <mekanism:energycube>.withTag({tier: 1}), <mekanism:basicblock2:3>.withTag({tier: 0})], 
+	[<enderio:block_cap_bank:2>, <mekanism:basicblock2:3>.withTag({tier: 0}), <enderio:block_cap_bank:2>]
+]);
+remakeEx(<mekanism:basicblock2:3>.withTag({tier: 2}), [
+	[<enderio:block_cap_bank:3>, <mekanism:basicblock2:3>.withTag({tier: 1}), <enderio:block_cap_bank:3>], 
+	[<mekanism:basicblock2:3>.withTag({tier: 1}), <mekanism:energycube>.withTag({tier: 2}), <mekanism:basicblock2:3>.withTag({tier: 1})], 
+	[<enderio:block_cap_bank:3>, <mekanism:basicblock2:3>.withTag({tier: 1}), <enderio:block_cap_bank:3>]
+]);
+remakeEx(<mekanism:basicblock2:3>.withTag({tier: 3}), [
+	[<draconicevolution:draconium_capacitor:1>, <mekanism:basicblock2:3>.withTag({tier: 2}), <draconicevolution:draconium_capacitor:1>], 
+	[<mekanism:basicblock2:3>.withTag({tier: 2}), <mekanism:energycube>.withTag({tier: 3}), <mekanism:basicblock2:3>.withTag({tier: 2})], 
+	[<draconicevolution:draconium_capacitor:1>, <mekanism:basicblock2:3>.withTag({tier: 2}), <draconicevolution:draconium_capacitor:1>]
+]);
+
+
+# Mekanism Fusion Reactor
+recipes.remove(<mekanismgenerators:reactor>);
+recipes.addShaped(<mekanismgenerators:reactor>, [
+		[<advancedrocketry:intake>, <mekanism:gastank>.withTag({tier: 3}), <advancedrocketry:intake>],
+		[<mekanismgenerators:reactor:2>, <nuclearcraft:fusion_core>, <mekanismgenerators:reactor:2>], 
+		[<nuclearcraft:lithium_ion_battery_elite>, <nuclearcraft:lithium_ion_battery_elite>, <nuclearcraft:lithium_ion_battery_elite>]
+	]);

@@ -2,7 +2,7 @@ import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.item.IIngredient;
 #modloaded ic2
-print("--- loading IndustrialCraft2.zs ---");
+
 
 # Removing IC2 coal coke
 	recipes.remove(<ic2:coke>);
@@ -174,5 +174,7 @@ print("--- loading IndustrialCraft2.zs ---");
 # Diamond Dust
 	recipes.remove(<ic2:dust:5>);
 	
-
-	print("--- IndustrialCraft2.zs initialized ---");
+# IC2 Block Cutting blades
+remakeEnvelop(<ic2:block_cutting_blade>,   <ore:stone>,        <tconstruct:large_sword_blade>.withTag({Material: "iron"}));
+remakeEnvelop(<ic2:block_cutting_blade:1>, <ore:blockIron>,    <tconstruct:large_sword_blade>.withTag({Material: "steel"}));
+remakeEnvelop(<ic2:block_cutting_blade:2>, <ore:blockDiamond>, <tconstruct:large_sword_blade>.withTag({Material: "alumite"}));

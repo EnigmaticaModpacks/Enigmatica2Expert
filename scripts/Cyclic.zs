@@ -144,6 +144,26 @@ remakeEx(<randomthings:igniter>, [
 	[<minecraft:dispenser>, <iceandfire:fire_dragon_blood>, <ore:netherrack>],
 	[<ore:gearSteel>, <ore:gearSteel>, <ore:netherrack>]]);
 
-
 	
-	print("--- Cyclic.zs initialized ---");
+# Scepters harder
+recipes.remove(<cyclicmagic:tool_swap_match>);
+recipes.remove(<cyclicmagic:tool_swap>);
+recipes.remove(<cyclicmagic:cyclic_wand_build>);
+recipes.addShaped(<cyclicmagic:tool_swap>, [[null, <cd4017be_lib:m:402>, <appliedenergistics2:material:10>],[null, <redstonearsenal:material:192>, <cd4017be_lib:m:402>], [<enderio:block_reinforced_obsidian>, null, null]]);
+recipes.addShaped(<cyclicmagic:tool_swap_match>, [[null, <cd4017be_lib:m:402>, <randomthings:ingredient:9>],[null, <redstonearsenal:material:192>, <cd4017be_lib:m:402>], [<enderio:block_reinforced_obsidian>, null, null]]);
+recipes.addShaped(<cyclicmagic:cyclic_wand_build>, [[null, <cd4017be_lib:m:402>, <minecraft:diamond>],[null, <redstonearsenal:material:192>, <cd4017be_lib:m:402>], [<ore:blockBone>, null, null]]);
+
+
+# Vacuum hopper
+recipes.remove(<cyclicmagic:block_vacuum>);
+recipes.addShaped(<cyclicmagic:block_vacuum>, [
+	[<sonarcore:reinforcedstoneblock>, <ore:plateLapis>, <sonarcore:reinforcedstoneblock>], 
+	[<sonarcore:reinforcedstoneblock>, <actuallyadditions:block_misc:4>, <sonarcore:reinforcedstoneblock>], 
+	[<sonarcore:reinforcedstoneblock>, <appliedenergistics2:material:45>,<sonarcore:reinforcedstoneblock>]
+]);
+
+# User Alternative
+recipes.addShapedMirrored(<cyclicmagic:block_user>, 
+	[[<ore:ingotGold>, <ore:ingotRefinedObsidian>, <ore:ingotGold>],
+	[<minecraft:golden_pickaxe>, <ore:circuitUltimate>, <minecraft:golden_axe>], 
+	[<ore:compressed2xCobblestone>, <ore:compressed2xCobblestone>, <ore:compressed2xCobblestone>]]);

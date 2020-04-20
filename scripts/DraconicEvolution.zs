@@ -82,5 +82,10 @@ print("--- loading DraconicEvolution.zs ---");
 	(<draconicevolution:wyvern_energy_core>, 
 	<draconicevolution:draconic_core>, 
 	<liquid:redstone> * 10000, 250000);
+	
+# Dislocator
+	recipes.remove(<draconicevolution:dislocator>);
+	makeEx(<draconicevolution:dislocator>, [[null, <rftools:infused_enderpearl>, null],[<mekanism:portableteleporter>, <cyclicmagic:ender_pearl_reuse>.anyDamage(), <mekanism:portableteleporter>], [null, <rftools:infused_enderpearl>, null]]);
+
 
 		print("--- DraconicEvolution.zs initialized ---");

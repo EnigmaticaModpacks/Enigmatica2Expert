@@ -3,7 +3,7 @@ import mods.industrialforegoing.BioReactor;
 import mods.industrialforegoing.ProteinReactor;
 import mods.industrialforegoing.FluidDictionary;
 #modloaded industrialforegoing teslacorelib
-print("--- loading IndustrialForegoing.zs ---");
+
 
 function fluidDict(ins as string[]) {
 	for one in ins {
@@ -186,4 +186,10 @@ function fluidDict(ins as string[]) {
 		[<ore:ingotIron>, <industrialforegoing:conveyor:*>, <ore:ingotIron>]]);
 
 
-	print("--- IndustrialForegoing.zs initialized ---");
+# mob_imprisonment_tool
+recipes.remove(<industrialforegoing:mob_imprisonment_tool>);
+recipes.addShaped(<industrialforegoing:mob_imprisonment_tool>, [
+	[<ic2:sheet:1>, <ic2:sheet:1>, <ic2:sheet:1>],
+	[<mekanism:plasticblock:*>, <quark:soul_powder>, <mekanism:plasticblock:*>], 
+	[<ic2:sheet:1>, <ic2:sheet:1>, <ic2:sheet:1>]
+]);

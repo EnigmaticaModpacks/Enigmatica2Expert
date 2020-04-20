@@ -374,6 +374,25 @@ for i in 0 to listCatFur.length {
 	mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreThorium>, 250);
 	mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreCinnabar>, 250);
 
+
+# *======= Ring Of The Flying Squid =======*
+	remake("Ring Of The Flying Squid",
+	<extrautils2:chickenring:1>, 
+	[[<extrautils2:ineffableglass>, <minecraft:elytra>.anyDamage(), <extrautils2:ineffableglass>],
+	[<ore:plateDenseGold>, <actuallyadditions:item_misc:19>, <ore:plateDenseGold>], 
+	[<minecraft:golden_apple>, <extrautils2:chickenring>, <minecraft:golden_apple>]]);
+
+# *======= Angel Ring =======*
+for i in 0 to 6 {
+	recipes.removeByRecipeName("extrautils2:angel_ring_" ~ i); # Remove shaped
+}
+recipes.addShaped("Angel Ring", 
+	<extrautils2:angelring>, [
+	[<ore:plateDenseGold>, <botania:flighttiara:*>, <ore:plateDenseGold>], 
+	[<environmentaltech:modifier_creative_flight>, <extendedcrafting:material:40>, <environmentaltech:modifier_creative_flight>], 
+	[<ore:plateDenseGold>, <extrautils2:chickenring:1>, <ore:plateDenseGold>]
+]);
+	
 # *======= AtomicReconstructor =======*
 
 	#mods.actuallyadditions.AtomicReconstructor.addRecipe(IItemStack output, IItemStack input, int energyUsed);

@@ -179,4 +179,22 @@ print("--- loading ExtraUtilities2.zs ---");
 //mods.extrautils2.Resonator.remove(IItemStack outout);
 #mods.extrautils2.Resonator.remove(<minecraft:redstone>);
 
-	print("--- ExtraUtilities2.zs initialized ---");
+
+# Reinforced Drum
+recipes.remove(<extrautils2:drum:2>);
+recipes.addShapedMirrored("Reinforced Drum",
+	<extrautils2:drum:2>, [
+		[<thermalfoundation:upgrade:33>, <botania:storage:3>, <thermalfoundation:upgrade:33>],
+		[<extrautils2:drum:1>, <extrautils2:drum:1>, <extrautils2:drum:1>], 
+		[<thermalfoundation:upgrade:33>, <botania:storage:3>, <thermalfoundation:upgrade:33>]
+	]);
+
+# Gargantuan Drum
+var demonPlate = <tconstruct:large_plate>.withTag({Material: "xu_demonic_metal"});
+recipes.remove(<extrautils2:drum:3>);
+recipes.addShapedMirrored("Gargantuan Drum",
+	<extrautils2:drum:3>, [
+		[demonPlate, <liquid:high_pressure_steam>*1000, demonPlate],
+		[<extrautils2:drum:2>, <extrautils2:drum:2>, <extrautils2:drum:2>], 
+		[demonPlate, <liquid:high_pressure_steam>*1000, demonPlate]
+		]);

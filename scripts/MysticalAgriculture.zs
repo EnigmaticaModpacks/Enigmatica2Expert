@@ -1,6 +1,6 @@
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded mysticalagriculture
-print("--- loading MysticalAgriculture.zs ---");
+
 
 # Wither Proof Blocks
 recipes.addShapedMirrored("Wither Proof Block", 
@@ -671,4 +671,5 @@ recipes.addShapedMirrored("Wither Proof Glass",
   recipes.removeByRecipeName("mysticalagriculture:gemamber");
   recipes.addShaped("Mystical Agriculture Amber", <thaumcraft:amber> * 6, [[<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>],[<mysticalagriculture:amber_essence>,null,<mysticalagriculture:amber_essence>],[<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>]]);
 
-	print("--- MysticalAgriculture.zs initialized ---");
+# Infusion crystals
+recipes.replaceAllOccurences(<ore:gemDiamond>, <mysticalagriculture:infusion_crystal>.anyDamage(), <matc:inferiumcrystal>);

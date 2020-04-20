@@ -127,23 +127,58 @@ for item in coals {
 	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <thermalfoundation:material:23>, <liquid:alubrass>, 144, true);
 	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <thermalfoundation:material:23>, <liquid:brass>, 144, true);
 
+# Add Cyanite melting recipe
+	mods.tconstruct.Melting.addRecipe(<liquid:cyanite> * (144*9), <ore:blockCyanite>, 700);
+	mods.tconstruct.Melting.addRecipe(<liquid:cyanite> * 144, <ore:ingotCyanite> | <ore:dustCyanite>, 450);
+
+
+# Slime Boots
+	function remakeSlimeBoots(name as string, item as IItemStack, primary as IIngredient){
+		remake("Slime Boots " ~ name, item, 
+			[[<ore:slimeballGreen>, <ore:slimeballBlue>, <ore:slimeballPurple>],
+			[<ore:slimeballBlood>, <minecraft:wool:*>, <ore:slimeballMagma>], 
+			[primary, <minecraft:leather_boots>.anyDamage(), primary]]);
+	}
+
+	remakeSlimeBoots("Green",  <tconstruct:slime_boots>,   <tconstruct:slime_congealed>);
+	remakeSlimeBoots("Blue",   <tconstruct:slime_boots:1>, <tconstruct:slime_congealed:1>);
+	remakeSlimeBoots("Purple", <tconstruct:slime_boots:2>, <tconstruct:slime_congealed:2>);
+	remakeSlimeBoots("Red",    <tconstruct:slime_boots:3>, <tconstruct:slime_congealed:3>);
+	remakeSlimeBoots("Orange", <tconstruct:slime_boots:4>, <tconstruct:slime_congealed:4>);
+
+# Slime Slings
+	function remakeSlimeSlings(name as string, item as IItemStack, primary as IIngredient){
+		remake("Slime Sling " ~ name, item, [
+			[<ore:slimeball>, null, <ore:slimeball>], 
+			[<ore:slimeball>, <cyclicmagic:tool_launcher>.anyDamage(), <ore:slimeball>], 
+			[null, primary, null]
+		]);
+	}
+
+	remakeSlimeSlings("Green",  <tconstruct:slimesling>,   <tconstruct:slime_congealed>);
+	remakeSlimeSlings("Blue",   <tconstruct:slimesling:1>, <tconstruct:slime_congealed:1>);
+	remakeSlimeSlings("Purple", <tconstruct:slimesling:2>, <tconstruct:slime_congealed:2>);
+	remakeSlimeSlings("Red",    <tconstruct:slimesling:3>, <tconstruct:slime_congealed:3>);
+	remakeSlimeSlings("Magma",  <tconstruct:slimesling:4>, <tconstruct:slime_congealed:4>);
+
+
 # Recipes to remove 
-/* 	var recipesToRemove = [
-	<tinker_io:fuel_input_machine>,
-	<tinker_io:what_a_beautiful_block>,
-	<tinker_io:ore_crusher>,
-	<tinker_io:stirling_engine>,
-	<tinker_io:speedupg>,
-	<tinker_io:solidfuel>,
-	<tinker_io:upg:6>,
-	<tinker_io:cd_lonesome_avenue>,
-	<tinker_io:crushed_ore>
-	] as IItemStack[];
-	
-	for items in recipesToRemove {
-		rh(items);
-	} */
 rh(<mctsmelteryio:powdered_fuel>);
+
+# Remake upgrades match Tinkers/IO crafts
+remakeEx(<mctsmelteryio:upgrade>, [[<minecraft:dye:4>, <minecraft:dye:4>, <minecraft:dye:4>], [<ore:ingotAluminum> | <ore:ingotLead>, <minecraft:paper>, <ore:ingotAluminum> | <ore:ingotLead>], [<minecraft:dye:4>, <minecraft:dye:4>, <minecraft:dye:4>]]);
+remakeEx(<mctsmelteryio:upgrade:1>, [[<ore:ingotCopper>, <minecraft:chest>, <ore:ingotCopper>], [<minecraft:chest>, <mctsmelteryio:upgrade>, <minecraft:chest>], [<ore:ingotCopper>, <minecraft:chest>, <ore:ingotCopper>]]);
+remakeEx(<mctsmelteryio:upgrade:2>, [[<ore:ingotAluminum>, <minecraft:iron_ingot>, <ore:ingotAluminum>], [<minecraft:iron_ingot>, <mctsmelteryio:upgrade:1>, <minecraft:iron_ingot>], [<ore:ingotAluminum>, <minecraft:iron_ingot>, <ore:ingotAluminum>]]);
+remakeEx(<mctsmelteryio:upgrade:3>, [[<ore:nuggetKnightslime>, <ore:ingotGold>, <ore:nuggetKnightslime>], [<ore:ingotGold>, <mctsmelteryio:upgrade:2>, <ore:ingotGold>], [<ore:nuggetKnightslime>, <ore:ingotGold>, <ore:nuggetKnightslime>]]);
+remakeEx(<mctsmelteryio:upgrade:4>, [[<ore:nuggetManyullyn>, <ore:gemDiamond>, <ore:nuggetManyullyn>], [<ore:gemDiamond>, <mctsmelteryio:upgrade:3>, <ore:gemDiamond>], [<ore:nuggetManyullyn>, <ore:gemDiamond>, <ore:nuggetManyullyn>]]);
+
+# Speed upgrade
+remakeEx(<mctsmelteryio:upgrade:6>, [
+	[<ore:gemEmerald>, <ore:listAllsugar>, <ore:gemEmerald>], 
+	[<ic2:upgrade>, <mctsmelteryio:upgrade>, <ic2:upgrade>], 
+	[<ore:gemEmerald>, <ore:listAllsugar>, <ore:gemEmerald>]
+]);
+
 	
 # *======= Fuels =======*
 
@@ -176,6 +211,58 @@ rh(<mctsmelteryio:powdered_fuel>);
 	mods.tconstruct.Fuel.registerFuel(<liquid:neutron> * 25, 1200);
 	mods.tconstruct.Fuel.registerFuel(<liquid:boric_acid> * 25, 400);
 	mods.tconstruct.Fuel.registerFuel(<liquid:hydrofluoric_acid> * 25, 400);
+
+
+
+# *======= High Oven =======*
+
+# Remove Unused alloy recipes
+ncAlloyRm(<enderio:item_alloy_ingot>);
+ncAlloyRm(<enderio:item_alloy_ingot:4>); # conductive Iron
+ncAlloyRm(<enderio:item_alloy_ingot:7>);
+ncAlloyRm(<enderio:item_alloy_ingot:8>);
+ncAlloyRm(<enderio:item_alloy_ingot:9>*3);
+ncAlloyRm(<enderio:item_material:14>);
+ncAlloyRm(<enderio:item_material:15>);
+
+# High Oven instead of Alloy Smelter
+function addHighOvenRecipe(output as ILiquidStack , input as ILiquidStack , temp as int, 
+		oxidizer as IIngredient, outputChance as int, 
+		reducer as IIngredient, inputChance as int, 
+		purifier as IIngredient, purifierChance as int) {
+
+	var builder = HighOven.newMixRecipe(output, input, temp);
+
+	if (!isNull(oxidizer)) { builder.addOxidizer(oxidizer, outputChance); }
+	if (!isNull(reducer))  { builder.addReducer(reducer, inputChance); }
+	if (!isNull(purifier)) { builder.addPurifier(purifier, purifierChance); }
+	builder.register();
+}
+
+# Blutonium
+addHighOvenRecipe(<liquid:plutonium> * (144*3), <liquid:cyanite> * (144*6), 2000, 
+	<ic2:nuclear:7>, 100, <actuallyadditions:block_crystal_empowered:1>, 75, <ore:blockMithril>, 66);
+
+//mods.tconstruct.Casting.addBasinRecipe(IItemStack output, IIngredient cast, ILiquidStack fluid, int amount, @Optional boolean consumeCast, @Optional int time);
+mods.tconstruct.Casting.addBasinRecipe(<bigreactors:blockmetals:3>, null, <liquid:plutonium>, 1296);
+
+# EnderIO simple alloys
+addHighOvenRecipe(<liquid:construction_alloy>*144  ,<liquid:iron>*48         , 1800  , <ore:dustBedrock>  , 50  , <ore:dustLead>      , 100  , null            , 100);
+addHighOvenRecipe(<liquid:dark_steel> *144         ,<liquid:steel>*144       , 4400 , <ore:dustBedrock>  , 50  , <ore:dustObsidian>  , 100  , null            , 100);
+addHighOvenRecipe(<liquid:end_steel> *144          ,<liquid:dark_steel>*144  , 5200 , <ore:dustBedrock>  , 50  , <ore:dustEndstone>  , 100  , <ore:obsidian>  , 100);
+
+# Oxidisers on choose
+val ox as IIngredient = <ore:dustCyanite> | <ore:itemSlagRich> | <ore:dustPsi>;
+
+# EnderIO hard alloys
+addHighOvenRecipe(<liquid:soularium> *144          ,<liquid:gold>*144           , 3400 , <ore:dustBedrock>  , 50  , <mysticalagriculture:crafting:28>, 100, ox, 25);
+addHighOvenRecipe(<liquid:electrical_steel> *144   ,<liquid:steel>*144          , 2000 , <ore:dustBedrock>  , 50  , <ore:itemSilicon>                , 100, ox, 25);
+addHighOvenRecipe(<liquid:energetic_alloy> *144    ,<liquid:gold>*144           , 2400 , <ore:dustBedrock>  , 50  , <ore:dustEnergetic>              , 100, ox, 25);
+addHighOvenRecipe(<liquid:vibrant_alloy> *144      ,<liquid:energetic_alloy>*144, 3600 , <ore:dustBedrock>  , 50  , <ore:dustEnderPearl>             , 100, ox, 25);
+addHighOvenRecipe(<liquid:redstone_alloy> *144     ,<liquid:tin>*144            , 2400 , <ore:dustBedrock>  , 50  , <ore:dustRedstone>               , 100, ox, 25);
+addHighOvenRecipe(<liquid:conductive_iron> *144    ,<liquid:iron>*144           , 2800 , <ore:dustBedrock>  , 50  , <ore:dustRedstone>               , 100, ox, 25);
+addHighOvenRecipe(<liquid:pulsating_iron> *144     ,<liquid:silver>*144         , 4000, <ore:dustBedrock>  , 50  , <ore:dustEnderPearl>             , 100, ox, 25);
+
 	
 # *======= Alloying =======*
 

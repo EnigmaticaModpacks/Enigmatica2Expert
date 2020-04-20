@@ -1,6 +1,6 @@
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded nuclearcraft
-print("--- loading NuclearCraft.zs ---");
+
 
 # Lithium Ingot Mekanism Compat
 	//mods.mekanism.smelter.addRecipe(<ic2:dust:11>, <nuclearcraft:ingot:6>);
@@ -113,7 +113,25 @@ print("--- loading NuclearCraft.zs ---");
 	mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(<enderio:item_alloy_endergy_ingot:5>);
 	mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(<enderio:item_alloy_endergy_ingot:6>);
 
-# *======= Recipes =======*
 
-	
-	print("--- NuclearCraft.zs initialized ---");
+
+# Nuclearcraft Speed and Energy upgrades
+recipes.remove(<nuclearcraft:upgrade>);
+makeEx(<nuclearcraft:upgrade>*2, [
+	[<ore:blockSheetmetalIron>, <ore:itemCompressedRedstone>, <ore:blockSheetmetalIron>], 
+	[<ore:itemCompressedRedstone>, 
+		<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:speed", Duration: 9600, Amplifier: 0}]}) | 
+		<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:speed", Duration: 1800, Amplifier: 1}]}), 
+	<ore:itemCompressedRedstone>], 
+	[<ore:blockSheetmetalIron>, <ore:itemCompressedRedstone>, <ore:blockSheetmetalIron>]
+]);
+
+recipes.remove(<nuclearcraft:upgrade:1>);
+makeEx(<nuclearcraft:upgrade:1>*2, [
+	[<ore:blockSheetmetalGold>, <ore:itemCompressedObsidian>, <ore:blockSheetmetalGold>], 
+	[<ore:itemCompressedObsidian>, 
+		<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:haste", Duration: 9600, Amplifier: 0}]}) | 
+		<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:haste", Duration: 1800, Amplifier: 1}]}), 
+	<ore:itemCompressedObsidian>], 
+	[<ore:blockSheetmetalGold>, <ore:itemCompressedObsidian>, <ore:blockSheetmetalGold>]
+]);

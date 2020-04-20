@@ -1,7 +1,8 @@
 import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemStack as IItemStack;
-#modloaded immersiveengineering
-print("--- loading ImmersiveEngineering.zs ---");
+import mods.immersivetweaker.Recycling;
+
+#modloaded immersiveengineering immersivetweaker
 
 # Removing Recycling recipes that produce IE Iron Nuggets
 	mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:29>);
@@ -131,5 +132,7 @@ print("--- loading ImmersiveEngineering.zs ---");
 	[null, <ic2:upgrade:4>, null], 
 	[<ore:plankTreatedWood>, <immersiveengineering:metal_decoration0:5>, <ore:plankTreatedWood>]], 
 	<liquid:glass> * 4000);
-	
-print("--- ImmersiveEngineering.zs initialized ---");
+
+#Recycling 
+# TODO: List of recycle items
+# item Recycling.allowItemForRecycling(<minecraft:iron_horse_armor>);

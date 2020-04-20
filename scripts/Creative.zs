@@ -62,25 +62,78 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
   TrophyVariant:"gold"
 });
 
+
+# *======= Gas Trophy Frame =======*
+
+# Add to JEI and apply Information
+mods.jei.JEI.addItem(creativeGasTankFrame);
+mods.jei.JEI.addDescription(creativeGasTankFrame, "Craft with 9 DIFFERENT gases");
+
+# Gases to previwe. Not actual gases that used to craft
+var allGasesNames as string[] = ["hydrogen", "oxygen", "water", "chlorine", "sulfurdioxide",
+	"sulfurtrioxide", "sulfuricacid", "hydrogenchloride", "ethene", "sodium", "brine", "deuterium",
+	"tritium", "fusionfuel", "lithium", "liquidosmium", "cleanIron", "iron", "cleanGold", "gold",
+	"cleanOsmium", "osmium", "cleanCopper", "copper", "cleanTin", "tin", "cleanSilver", "silver",
+	"cleanLead", "lead", "slurryCleanAluminium", "slurryCleanArdite", "slurryCleanAstralStarmetal",
+	"slurryCleanBoron", "slurryCleanCobalt", "slurryCleanDraconium", "slurryCleanIridium",
+	"slurryCleanLithium", "slurryCleanMagnesium", "slurryCleanMithril", "slurryCleanNickel",
+	"slurryCleanPlatinum", "slurryCleanThorium", "slurryCleanTitanium", "slurryCleanUranium",
+	"slurryAluminium", "slurryArdite", "slurryAstralStarmetal", "slurryBoron", "slurryCobalt",
+	"slurryDraconium", "slurryIridium", "slurryLithium", "slurryMagnesium", "slurryMithril",
+	"slurryNickel", "slurryPlatinum", "slurryThorium", "slurryTitanium", "slurryUranium"] as string[];
+
+# Gas Ingredients (can use even gas tank without any gas)
+var gt as IIngredient = <mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000/* , gasName: allGasesNames[0] */}}}) as IIngredient;
+for i in 0 to allGasesNames.length {
+  if (!isNull(mods.mekanism.MekanismHelper.getGas(allGasesNames[i]))) {
+    gt = gt.or( <mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: allGasesNames[i]}}}) );
+  }
+}
+
+# Create list of 9 gases and mark them
+var ingList as IIngredient[] = [] as IIngredient[];
+for i in 0 to 9 {
+  ingList += gt.marked("g"~i);
+}
+
+# Get gas name from IItemStack
+function getGas(item as IItemStack) as string {
+  if (!isNull(item) && !isNull(item.tag) && !isNull(item.tag.mekData) && !isNull(item.tag.mekData.stored) && !isNull(item.tag.mekData.stored.gasName)) {
+    return item.tag.mekData.stored.gasName.asString();
+  }
+  return "";
+}
+
+# Add Shapeless Gas Tank recipe
+recipes.addShapeless("Creative Gas Tank Frame", 
+  creativeGasTankFrame.withLore(["Craft with 9 DIFFERENT gases"]), 
+  ingList, 
+  
+  function(out, ins, cInfo) {
+    for i in 0 to 8 {
+      for j in (i+1) to 9 {
+        if (getGas(ins["g"~i]) == getGas(ins["g"~j])) {
+          return null; # We found gas duplicate, return nothing
+        }
+      }
+    }
+    return out;
+  }, 
+  null);
+
+
+
 # *======= Recipes =======*
+
 
 # Twilight Forest Master Trophy
 	recipes.addShapedMirrored("Twilight Forest Master Trophy", twilightForestMasterTrophy, 
 	[[<twilightforest:trophy>, <twilightforest:trophy:1>, <twilightforest:trophy:2>],
 	[<twilightforest:trophy:5>, <ore:blockCrystalMatrix>, <twilightforest:trophy:3>], 
 	[<twilightforest:trophy:4>, <twilightforest:trophy:8>, <twilightforest:trophy:6>]]);
-/* 
-# Special Gas Tank Item
-	recipes.addShapedMirrored("Creative Gas Tank Frame", creativeGasTankFrame, 
-	[[<mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanTitanium"}}}).onlyWithTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanTitanium"}}}), <mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanIridium"}}}).onlyWithTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanIridium"}}}), <mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanDraconium"}}}).onlyWithTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanDraconium"}}})],
-	[<mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanBoron"}}}).onlyWithTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanBoron"}}}), <mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanMithril"}}}).onlyWithTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanMithril"}}}), <mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "fusionfuel"}}}).onlyWithTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "fusionfuel"}}})], 
-	[<mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "ethene"}}}).onlyWithTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "ethene"}}}), <mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "sulfuricacid"}}}).onlyWithTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "sulfuricacid"}}}), <mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "hydrogenchloride"}}}).onlyWithTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "hydrogenchloride"}}})]]);
- */
+
 # Master Trophy
 	mods.jei.JEI.addItem(twilightForestMasterTrophy);
-	
-# Gas Tank Frame 
-	mods.jei.JEI.addItem(creativeGasTankFrame);
 	
 # Mystical Agradditions Creative Essence
 	mods.extendedcrafting.TableCrafting.addShaped(0, <mysticalagradditions:stuff:69>, 

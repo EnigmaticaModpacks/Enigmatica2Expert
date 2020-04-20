@@ -48,4 +48,34 @@ print("--- loading IntegratedDynamics.zs ---");
 	[<ore:plateObsidian>, <integrateddynamics:drying_basin>, <ore:plateObsidian>]]);
 
 	
-		print("--- IntegratedDynamics.zs initialized ---");
+# Omni directional
+var connector = <integrateddynamics:part_connector_omni_directional_item>;
+var part = <integrateddynamics:logic_director>;
+var mono = <integrateddynamics:part_connector_mono_directional_item>;
+recipes.remove(connector);
+
+recipes.addShaped("part_connector_omni_directional_item_11", connector * 3, [
+	[part, <enderstorage:ender_storage>, part], 
+	[mono, connector, mono],
+	[null, part, null]]);
+
+recipes.addShaped("part_connector_omni_directional_item", connector * 2, [
+	[part, <enderstorage:ender_storage>, part], 
+	[mono, <integrateddynamics:cable>, mono], 
+	[null, part, null]]);
+
+# interface_crafting
+recipes.remove(<integratedcrafting:part_interface_crafting_item>);
+recipes.addShaped("part_interface_crafting_item", 
+	<integratedcrafting:part_interface_crafting_item>, 
+	[[<ore:ingotIron>, <appliedenergistics2:crafting_unit>, <ore:ingotIron>], 
+	[<integrateddynamics:variable_transformer>, <integrateddynamics:crystalized_menril_block>, <integrateddynamics:variable_transformer:1>], 
+	[<ore:ingotIron>, <appliedenergistics2:crafting_unit>, <ore:ingotIron>]]);
+
+# terminal_storage
+recipes.remove(<integratedterminals:part_terminal_storage_item>);
+	recipes.addShaped("part_terminal_storage_item", 
+	<integratedterminals:part_terminal_storage_item>, 
+	[[<ore:dustGlowstone>, <integratedterminals:menril_glass>, <ore:dustGlowstone>], 
+	[<integrateddynamics:variable_transformer>, <integrateddynamics:part_display_panel_item>, <integrateddynamics:variable_transformer:1>], 
+	[<ore:dustGlowstone>, <rftools:storage_scanner>, <ore:dustGlowstone>]]);
