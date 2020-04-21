@@ -10848,7 +10848,7 @@
     "148:10": {
       "questID:3": 148,
       "preRequisites:11": [
-        746
+        418
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10874,7 +10874,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Hazmat Suit",
           "desc:8": "Next tier of armor"
         }
       },
@@ -27137,7 +27137,7 @@
           "partysinglereward:1": 0,
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
-          "ismain:1": 0,
+          "ismain:1": 1,
           "repeat_relative:1": 1,
           "name:8": "Mana Pool",
           "desc:8": "The Mana Pool can store mana for later use, and flowers can get the mana they need from them. Use the Wand of the Forest to link them.\n\nConsult the Lexica Botania for additional information."
@@ -29493,7 +29493,6 @@
       "questID:3": 408,
       "preRequisites:11": [
         13,
-        381,
         404
       ],
       "properties:10": {
@@ -41088,7 +41087,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Knightslime Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -41648,7 +41647,7 @@
     "579:10": {
       "questID:3": 579,
       "preRequisites:11": [
-        568
+        710
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -41713,7 +41712,7 @@
     "580:10": {
       "questID:3": 580,
       "preRequisites:11": [
-        568
+        710
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -41778,7 +41777,7 @@
     "581:10": {
       "questID:3": 581,
       "preRequisites:11": [
-        568
+        710
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -42038,7 +42037,7 @@
     "585:10": {
       "questID:3": 585,
       "preRequisites:11": [
-        568
+        580
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -42430,7 +42429,7 @@
     "591:10": {
       "questID:3": 591,
       "preRequisites:11": [
-        568
+        565
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -42560,7 +42559,8 @@
     "593:10": {
       "questID:3": 593,
       "preRequisites:11": [
-        592
+        592,
+        581
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -51161,7 +51161,7 @@
     "706:10": {
       "questID:3": 706,
       "preRequisites:11": [
-        740
+        100
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -51187,7 +51187,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Faraday Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -51476,6 +51476,71 @@
       }
     },
     "710:10": {
+      "questID:3": 710,
+      "preRequisites:11": [
+        568
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "enderio:item_material",
+            "Count:3": 1,
+            "Damage:2": 1,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Soul Machine Chassis",
+          "desc:8": "A crafting component."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "enderio:item_material",
+              "Count:3": 1,
+              "Damage:2": 53,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "711:10": {
       "questID:3": 717,
       "preRequisites:11": [
         34
@@ -51546,7 +51611,7 @@
         }
       }
     },
-    "711:10": {
+    "712:10": {
       "questID:3": 718,
       "preRequisites:11": [
         37
@@ -51604,7 +51669,7 @@
         }
       }
     },
-    "712:10": {
+    "713:10": {
       "questID:3": 719,
       "preRequisites:11": [
         718
@@ -51671,7 +51736,7 @@
         }
       }
     },
-    "713:10": {
+    "714:10": {
       "questID:3": 720,
       "preRequisites:11": [
         718
@@ -51738,7 +51803,7 @@
         }
       }
     },
-    "714:10": {
+    "715:10": {
       "questID:3": 721,
       "preRequisites:11": [
         718
@@ -51817,7 +51882,7 @@
         }
       }
     },
-    "715:10": {
+    "716:10": {
       "questID:3": 723,
       "preRequisites:11": [
         721
@@ -51893,7 +51958,7 @@
         }
       }
     },
-    "716:10": {
+    "717:10": {
       "questID:3": 724,
       "preRequisites:11": [
         723
@@ -51969,7 +52034,7 @@
         }
       }
     },
-    "717:10": {
+    "718:10": {
       "questID:3": 725,
       "preRequisites:11": [
         731,
@@ -52046,7 +52111,7 @@
         }
       }
     },
-    "718:10": {
+    "719:10": {
       "questID:3": 726,
       "preRequisites:11": [
         723
@@ -52122,7 +52187,7 @@
         }
       }
     },
-    "719:10": {
+    "720:10": {
       "questID:3": 727,
       "preRequisites:11": [
         755,
@@ -52199,7 +52264,7 @@
         }
       }
     },
-    "720:10": {
+    "721:10": {
       "questID:3": 728,
       "preRequisites:11": [
         724
@@ -52266,7 +52331,7 @@
         }
       }
     },
-    "721:10": {
+    "722:10": {
       "questID:3": 730,
       "preRequisites:11": [
         726
@@ -52333,7 +52398,7 @@
         }
       }
     },
-    "722:10": {
+    "723:10": {
       "questID:3": 731,
       "preRequisites:11": [
         724
@@ -52400,7 +52465,7 @@
         }
       }
     },
-    "723:10": {
+    "724:10": {
       "questID:3": 732,
       "preRequisites:11": [
         736
@@ -52476,7 +52541,7 @@
         }
       }
     },
-    "724:10": {
+    "725:10": {
       "questID:3": 733,
       "preRequisites:11": [
         732
@@ -52555,7 +52620,7 @@
         }
       }
     },
-    "725:10": {
+    "726:10": {
       "questID:3": 734,
       "preRequisites:11": [
         727
@@ -52634,7 +52699,7 @@
         }
       }
     },
-    "726:10": {
+    "727:10": {
       "questID:3": 735,
       "preRequisites:11": [
         738
@@ -52701,7 +52766,7 @@
         }
       }
     },
-    "727:10": {
+    "728:10": {
       "questID:3": 736,
       "preRequisites:11": [
         721
@@ -52777,7 +52842,7 @@
         }
       }
     },
-    "728:10": {
+    "729:10": {
       "questID:3": 737,
       "preRequisites:11": [
         718
@@ -52844,7 +52909,7 @@
         }
       }
     },
-    "729:10": {
+    "730:10": {
       "questID:3": 738,
       "preRequisites:11": [
         730
@@ -52911,7 +52976,7 @@
         }
       }
     },
-    "730:10": {
+    "731:10": {
       "questID:3": 739,
       "preRequisites:11": [
         794
@@ -52940,7 +53005,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Hardened Leather Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -53039,7 +53104,7 @@
         }
       }
     },
-    "731:10": {
+    "732:10": {
       "questID:3": 740,
       "preRequisites:11": [
         739
@@ -53068,7 +53133,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Iron Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -53232,7 +53297,7 @@
         }
       }
     },
-    "732:10": {
+    "733:10": {
       "questID:3": 741,
       "preRequisites:11": [
         720
@@ -53311,7 +53376,7 @@
         }
       }
     },
-    "733:10": {
+    "734:10": {
       "questID:3": 742,
       "preRequisites:11": [
         719
@@ -53399,7 +53464,7 @@
         }
       }
     },
-    "734:10": {
+    "735:10": {
       "questID:3": 743,
       "preRequisites:11": [
         752
@@ -53481,7 +53546,7 @@
         }
       }
     },
-    "735:10": {
+    "736:10": {
       "questID:3": 744,
       "preRequisites:11": [
         737
@@ -53581,7 +53646,7 @@
         }
       }
     },
-    "736:10": {
+    "737:10": {
       "questID:3": 745,
       "preRequisites:11": [
         323
@@ -53660,7 +53725,7 @@
         }
       }
     },
-    "737:10": {
+    "738:10": {
       "questID:3": 746,
       "preRequisites:11": [
         740
@@ -53689,7 +53754,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Gold Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -53788,7 +53853,7 @@
         }
       }
     },
-    "738:10": {
+    "739:10": {
       "questID:3": 747,
       "preRequisites:11": [
         758,
@@ -53856,7 +53921,7 @@
         }
       }
     },
-    "739:10": {
+    "740:10": {
       "questID:3": 748,
       "preRequisites:11": [
         747
@@ -53923,7 +53988,7 @@
         }
       }
     },
-    "740:10": {
+    "741:10": {
       "questID:3": 749,
       "preRequisites:11": [
         747
@@ -53990,7 +54055,7 @@
         }
       }
     },
-    "741:10": {
+    "742:10": {
       "questID:3": 750,
       "preRequisites:11": [
         735,
@@ -54058,7 +54123,7 @@
         }
       }
     },
-    "742:10": {
+    "743:10": {
       "questID:3": 751,
       "preRequisites:11": [
         730
@@ -54125,7 +54190,7 @@
         }
       }
     },
-    "743:10": {
+    "744:10": {
       "questID:3": 752,
       "preRequisites:11": [
         718
@@ -54192,7 +54257,7 @@
         }
       }
     },
-    "744:10": {
+    "745:10": {
       "questID:3": 753,
       "preRequisites:11": [
         572
@@ -54221,7 +54286,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Diamond Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -54323,7 +54388,7 @@
         }
       }
     },
-    "745:10": {
+    "746:10": {
       "questID:3": 755,
       "preRequisites:11": [
         725
@@ -54390,7 +54455,7 @@
         }
       }
     },
-    "746:10": {
+    "747:10": {
       "questID:3": 756,
       "preRequisites:11": [
         753
@@ -54419,7 +54484,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Manyullin Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -54593,7 +54658,7 @@
         }
       }
     },
-    "747:10": {
+    "748:10": {
       "questID:3": 757,
       "preRequisites:11": [
         744,
@@ -54682,7 +54747,7 @@
         }
       }
     },
-    "748:10": {
+    "749:10": {
       "questID:3": 758,
       "preRequisites:11": [
         743,
@@ -54771,10 +54836,10 @@
         }
       }
     },
-    "749:10": {
+    "750:10": {
       "questID:3": 759,
       "preRequisites:11": [
-        792
+        592
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -54800,7 +54865,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "End Steel Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -54905,7 +54970,7 @@
         }
       }
     },
-    "750:10": {
+    "751:10": {
       "questID:3": 760,
       "preRequisites:11": [
         753
@@ -54934,7 +54999,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Inferium Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -55033,7 +55098,7 @@
         }
       }
     },
-    "751:10": {
+    "752:10": {
       "questID:3": 761,
       "preRequisites:11": [
         760
@@ -55062,7 +55127,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Prudentium Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -55164,7 +55229,7 @@
         }
       }
     },
-    "752:10": {
+    "753:10": {
       "questID:3": 762,
       "preRequisites:11": [
         761
@@ -55193,7 +55258,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Intermedium Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -55292,7 +55357,7 @@
         }
       }
     },
-    "753:10": {
+    "754:10": {
       "questID:3": 763,
       "preRequisites:11": [
         762
@@ -55321,7 +55386,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Supermium Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -55420,7 +55485,7 @@
         }
       }
     },
-    "754:10": {
+    "755:10": {
       "questID:3": 764,
       "preRequisites:11": [
         763
@@ -55450,7 +55515,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Supremium Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -55518,6 +55583,7 @@
               },
               "id:8": "mysticalagriculture:supremium_sword",
               "Count:3": 1,
+              "tag:10": {},
               "Damage:2": 0,
               "OreDict:8": ""
             },
@@ -55553,10 +55619,10 @@
         }
       }
     },
-    "755:10": {
+    "756:10": {
       "questID:3": 765,
       "preRequisites:11": [
-        794
+        374
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -55582,7 +55648,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Manaweave Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -55678,10 +55744,10 @@
         }
       }
     },
-    "756:10": {
+    "757:10": {
       "questID:3": 766,
       "preRequisites:11": [
-        765
+        367
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -55707,7 +55773,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Manasteel Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -55809,10 +55875,10 @@
         }
       }
     },
-    "757:10": {
+    "758:10": {
       "questID:3": 767,
       "preRequisites:11": [
-        793
+        387
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -55838,7 +55904,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Elementium Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -55937,10 +56003,10 @@
         }
       }
     },
-    "758:10": {
+    "759:10": {
       "questID:3": 768,
       "preRequisites:11": [
-        767
+        381
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -55966,7 +56032,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Terrasteel Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -56065,10 +56131,10 @@
         }
       }
     },
-    "759:10": {
+    "760:10": {
       "questID:3": 769,
       "preRequisites:11": [
-        766
+        624
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -56095,7 +56161,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Living Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -56167,12 +56233,11 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "id:8": "betterquesting:placeholder",
-              "Count:3": 1,
-              "tag:10": {
-                "orig_meta:3": 0,
-                "orig_id:8": "spartanshields:shield_abyssalcraft_dreadium"
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
               },
+              "id:8": "spartanshields:shield_basic_signalum",
+              "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             },
@@ -56199,7 +56264,7 @@
         }
       }
     },
-    "760:10": {
+    "761:10": {
       "questID:3": 770,
       "preRequisites:11": [
         766
@@ -56327,7 +56392,7 @@
         }
       }
     },
-    "761:10": {
+    "762:10": {
       "questID:3": 771,
       "preRequisites:11": [
         770
@@ -56455,7 +56520,7 @@
         }
       }
     },
-    "762:10": {
+    "763:10": {
       "questID:3": 772,
       "preRequisites:11": [
         771
@@ -56586,10 +56651,10 @@
         }
       }
     },
-    "763:10": {
+    "764:10": {
       "questID:3": 773,
       "preRequisites:11": [
-        572
+        742
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -56615,7 +56680,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Death Worm Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -56776,10 +56841,10 @@
         }
       }
     },
-    "764:10": {
+    "765:10": {
       "questID:3": 774,
       "preRequisites:11": [
-        773
+        743
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -56805,7 +56870,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Myrmex Chitin Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -56828,7 +56893,7 @@
               "id:8": "iceandfire:myrmex_desert_helmet",
               "Count:3": 1,
               "Damage:2": 0,
-              "OreDict:8": ""
+              "OreDict:8": "myrmexArmorHelmet"
             },
             "1:10": {
               "ForgeCaps:10": {
@@ -56837,7 +56902,7 @@
               "id:8": "iceandfire:myrmex_desert_chestplate",
               "Count:3": 1,
               "Damage:2": 0,
-              "OreDict:8": ""
+              "OreDict:8": "myrmexArmorChestplate"
             },
             "2:10": {
               "ForgeCaps:10": {
@@ -56846,7 +56911,7 @@
               "id:8": "iceandfire:myrmex_desert_leggings",
               "Count:3": 1,
               "Damage:2": 0,
-              "OreDict:8": ""
+              "OreDict:8": "myrmexArmorLeggings"
             },
             "3:10": {
               "ForgeCaps:10": {
@@ -56855,7 +56920,7 @@
               "id:8": "iceandfire:myrmex_desert_boots",
               "Count:3": 1,
               "Damage:2": 0,
-              "OreDict:8": ""
+              "OreDict:8": "myrmexArmorBoots"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -56969,10 +57034,10 @@
         }
       }
     },
-    "765:10": {
+    "766:10": {
       "questID:3": 775,
       "preRequisites:11": [
-        777
+        744
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -56998,7 +57063,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Dragon Scale Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -57097,10 +57162,11 @@
         }
       }
     },
-    "766:10": {
+    "767:10": {
       "questID:3": 776,
       "preRequisites:11": [
-        775
+        758,
+        757
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -57121,12 +57187,12 @@
             "OreDict:8": ""
           },
           "globalshare:1": 0,
-          "questlogic:8": "AND",
+          "questlogic:8": "OR",
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Dragonsteel Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -57262,12 +57328,11 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "id:8": "betterquesting:placeholder",
-              "Count:3": 1,
-              "tag:10": {
-                "orig_meta:3": 0,
-                "orig_id:8": "spartanshields:shield_abyssalcraft_ethaxium"
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
               },
+              "id:8": "spartanshields:shield_tower_steel",
+              "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             },
@@ -57294,10 +57359,10 @@
         }
       }
     },
-    "767:10": {
+    "768:10": {
       "questID:3": 777,
       "preRequisites:11": [
-        774
+        773
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -57326,7 +57391,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Tide Guardian Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -57493,10 +57558,11 @@
         }
       }
     },
-    "768:10": {
+    "769:10": {
       "questID:3": 778,
       "preRequisites:11": [
-        706
+        706,
+        103
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -57522,7 +57588,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Steel Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -57624,10 +57690,10 @@
         }
       }
     },
-    "769:10": {
+    "770:10": {
       "questID:3": 779,
       "preRequisites:11": [
-        778
+        79
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -57656,7 +57722,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Nano Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -57773,10 +57839,10 @@
         }
       }
     },
-    "770:10": {
+    "771:10": {
       "questID:3": 780,
       "preRequisites:11": [
-        779
+        213
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -57805,7 +57871,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Flux Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -57922,7 +57988,7 @@
         }
       }
     },
-    "771:10": {
+    "772:10": {
       "questID:3": 781,
       "preRequisites:11": [
         425
@@ -58150,10 +58216,10 @@
         }
       }
     },
-    "772:10": {
+    "773:10": {
       "questID:3": 782,
       "preRequisites:11": [
-        148
+        451
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -58179,7 +58245,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Boron Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -58346,7 +58412,7 @@
         }
       }
     },
-    "773:10": {
+    "774:10": {
       "questID:3": 783,
       "preRequisites:11": [
         782
@@ -58375,7 +58441,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Hard Carbon Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -58542,7 +58608,7 @@
         }
       }
     },
-    "774:10": {
+    "775:10": {
       "questID:3": 784,
       "preRequisites:11": [
         783
@@ -58571,7 +58637,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Tough Alloy Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -58741,7 +58807,7 @@
         }
       }
     },
-    "775:10": {
+    "776:10": {
       "questID:3": 785,
       "preRequisites:11": [
         784
@@ -58770,7 +58836,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Boron Nitride Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -58937,7 +59003,7 @@
         }
       }
     },
-    "776:10": {
+    "777:10": {
       "questID:3": 786,
       "preRequisites:11": [
         788
@@ -59065,7 +59131,7 @@
         }
       }
     },
-    "777:10": {
+    "778:10": {
       "questID:3": 787,
       "preRequisites:11": [
         789
@@ -59201,7 +59267,7 @@
         }
       }
     },
-    "778:10": {
+    "779:10": {
       "questID:3": 788,
       "preRequisites:11": [
         791
@@ -59340,7 +59406,7 @@
         }
       }
     },
-    "779:10": {
+    "780:10": {
       "questID:3": 789,
       "preRequisites:11": [
         752
@@ -59476,7 +59542,7 @@
         }
       }
     },
-    "780:10": {
+    "781:10": {
       "questID:3": 790,
       "preRequisites:11": [
         786
@@ -59604,7 +59670,7 @@
         }
       }
     },
-    "781:10": {
+    "782:10": {
       "questID:3": 791,
       "preRequisites:11": [
         787
@@ -59732,10 +59798,10 @@
         }
       }
     },
-    "782:10": {
+    "783:10": {
       "questID:3": 792,
       "preRequisites:11": [
-        756
+        565
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -59761,7 +59827,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Dark Steel Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -59863,7 +59929,7 @@
         }
       }
     },
-    "783:10": {
+    "784:10": {
       "questID:3": 793,
       "preRequisites:11": [
         766
@@ -59892,7 +59958,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Armor",
+          "name:8": "Psimetal Armor",
           "desc:8": "Next tier of armor"
         }
       },
@@ -59991,7 +60057,7 @@
         }
       }
     },
-    "784:10": {
+    "785:10": {
       "questID:3": 794,
       "preRequisites:11": [
         621
@@ -60048,7 +60114,7 @@
         }
       }
     },
-    "785:10": {
+    "786:10": {
       "questID:3": 795,
       "preRequisites:11": [
         434
@@ -60125,7 +60191,7 @@
         }
       }
     },
-    "786:10": {
+    "787:10": {
       "questID:3": 797,
       "preRequisites:11": [
         434
@@ -60199,7 +60265,7 @@
         }
       }
     },
-    "787:10": {
+    "788:10": {
       "questID:3": 798,
       "preRequisites:11": [
         696
@@ -60277,7 +60343,7 @@
         }
       }
     },
-    "788:10": {
+    "789:10": {
       "questID:3": 799,
       "preRequisites:11": [
         801
@@ -60360,7 +60426,7 @@
         }
       }
     },
-    "789:10": {
+    "790:10": {
       "questID:3": 800,
       "preRequisites:11": [
         434
@@ -60434,7 +60500,7 @@
         }
       }
     },
-    "790:10": {
+    "791:10": {
       "questID:3": 801,
       "preRequisites:11": [
         434
@@ -60518,7 +60584,7 @@
         }
       }
     },
-    "791:10": {
+    "792:10": {
       "questID:3": 802,
       "preRequisites:11": [
         434
@@ -61475,6 +61541,20 @@
           "y:3": 104,
           "id:3": 317,
           "sizeY:3": 24
+        },
+        "23:10": {
+          "sizeX:3": 24,
+          "x:3": -96,
+          "y:3": -24,
+          "id:3": 706,
+          "sizeY:3": 24
+        },
+        "24:10": {
+          "sizeX:3": 24,
+          "x:3": -56,
+          "y:3": -24,
+          "id:3": 778,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 3,
@@ -61523,7 +61603,7 @@
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": 168,
+          "x:3": 152,
           "y:3": 8,
           "id:3": 568,
           "sizeY:3": 24
@@ -61579,78 +61659,78 @@
         },
         "11:10": {
           "sizeX:3": 24,
-          "x:3": 104,
-          "y:3": 176,
+          "x:3": 136,
+          "y:3": 144,
           "id:3": 577,
           "sizeY:3": 24
         },
         "12:10": {
           "sizeX:3": 24,
           "x:3": 72,
-          "y:3": 176,
+          "y:3": 144,
           "id:3": 578,
           "sizeY:3": 24
         },
         "13:10": {
           "sizeX:3": 24,
-          "x:3": 296,
-          "y:3": 72,
+          "x:3": 264,
+          "y:3": 48,
           "id:3": 579,
           "sizeY:3": 24
         },
         "14:10": {
           "sizeX:3": 24,
-          "x:3": 296,
-          "y:3": 104,
+          "x:3": 232,
+          "y:3": 48,
           "id:3": 580,
           "sizeY:3": 24
         },
         "15:10": {
           "sizeX:3": 24,
-          "x:3": 296,
-          "y:3": 136,
+          "x:3": 200,
+          "y:3": 48,
           "id:3": 581,
           "sizeY:3": 24
         },
         "16:10": {
           "sizeX:3": 24,
-          "x:3": 296,
-          "y:3": 168,
+          "x:3": 168,
+          "y:3": 80,
           "id:3": 582,
           "sizeY:3": 24
         },
         "17:10": {
           "sizeX:3": 24,
-          "x:3": 264,
-          "y:3": 200,
+          "x:3": 168,
+          "y:3": 112,
           "id:3": 583,
           "sizeY:3": 24
         },
         "18:10": {
           "sizeX:3": 24,
-          "x:3": 232,
-          "y:3": 200,
+          "x:3": 136,
+          "y:3": 112,
           "id:3": 584,
           "sizeY:3": 24
         },
         "19:10": {
           "sizeX:3": 24,
-          "x:3": 200,
-          "y:3": 200,
+          "x:3": 264,
+          "y:3": 80,
           "id:3": 585,
           "sizeY:3": 24
         },
         "20:10": {
           "sizeX:3": 24,
-          "x:3": 168,
-          "y:3": 200,
+          "x:3": 136,
+          "y:3": 80,
           "id:3": 586,
           "sizeY:3": 24
         },
         "21:10": {
           "sizeX:3": 24,
           "x:3": 136,
-          "y:3": 200,
+          "y:3": 48,
           "id:3": 587,
           "sizeY:3": 24
         },
@@ -61677,30 +61757,51 @@
         },
         "25:10": {
           "sizeX:3": 24,
-          "x:3": 296,
-          "y:3": 40,
+          "x:3": -24,
+          "y:3": 8,
           "id:3": 591,
           "sizeY:3": 24
         },
         "26:10": {
           "sizeX:3": 24,
-          "x:3": 328,
-          "y:3": 120,
+          "x:3": 232,
+          "y:3": 80,
           "id:3": 592,
           "sizeY:3": 24
         },
         "27:10": {
           "sizeX:3": 24,
-          "x:3": 360,
-          "y:3": 128,
+          "x:3": 200,
+          "y:3": 80,
           "id:3": 593,
           "sizeY:3": 24
         },
         "28:10": {
           "sizeX:3": 24,
-          "x:3": 296,
-          "y:3": 8,
+          "x:3": 168,
+          "y:3": 48,
           "id:3": 594,
+          "sizeY:3": 24
+        },
+        "29:10": {
+          "sizeX:3": 24,
+          "x:3": 232,
+          "y:3": 8,
+          "id:3": 710,
+          "sizeY:3": 24
+        },
+        "30:10": {
+          "sizeX:3": 24,
+          "x:3": 232,
+          "y:3": 112,
+          "id:3": 759,
+          "sizeY:3": 24
+        },
+        "31:10": {
+          "sizeX:3": 24,
+          "x:3": -24,
+          "y:3": 48,
+          "id:3": 792,
           "sizeY:3": 24
         }
       },
@@ -61910,388 +62011,416 @@
     "6:10": {
       "quests:9": {
         "0:10": {
-          "sizeX:3": 24,
+          "sizeX:3": 40,
           "x:3": 112,
-          "y:3": 8,
+          "y:3": 24,
           "id:3": 360,
-          "sizeY:3": 24
+          "sizeY:3": 40
         },
         "1:10": {
           "sizeX:3": 24,
-          "x:3": 48,
-          "y:3": 40,
+          "x:3": 72,
+          "y:3": 48,
           "id:3": 361,
           "sizeY:3": 24
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": 40,
+          "x:3": 30,
+          "y:3": 48,
           "id:3": 362,
           "sizeY:3": 24
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": 80,
-          "y:3": 8,
+          "x:3": 72,
+          "y:3": 16,
           "id:3": 363,
           "sizeY:3": 24
         },
         "4:10": {
           "sizeX:3": 24,
-          "x:3": 232,
-          "y:3": 72,
+          "x:3": 272,
+          "y:3": 104,
           "id:3": 364,
           "sizeY:3": 24
         },
         "5:10": {
           "sizeX:3": 24,
-          "x:3": 48,
-          "y:3": 8,
+          "x:3": 30,
+          "y:3": 16,
           "id:3": 365,
           "sizeY:3": 24
         },
         "6:10": {
           "sizeX:3": 24,
-          "x:3": 232,
-          "y:3": 8,
+          "x:3": 272,
+          "y:3": 32,
           "id:3": 366,
           "sizeY:3": 24
         },
         "7:10": {
           "sizeX:3": 24,
-          "x:3": 80,
-          "y:3": 72,
+          "x:3": 72,
+          "y:3": 160,
           "id:3": 367,
           "sizeY:3": 24
         },
         "8:10": {
           "sizeX:3": 24,
-          "x:3": 336,
-          "y:3": 8,
+          "x:3": 344,
+          "y:3": 32,
           "id:3": 368,
           "sizeY:3": 24
         },
         "9:10": {
           "sizeX:3": 24,
-          "x:3": 416,
-          "y:3": 32,
+          "x:3": 424,
+          "y:3": 56,
           "id:3": 369,
           "sizeY:3": 24
         },
         "10:10": {
           "sizeX:3": 24,
-          "x:3": 48,
-          "y:3": 104,
+          "x:3": 32,
+          "y:3": 112,
           "id:3": 370,
           "sizeY:3": 24
         },
         "11:10": {
           "sizeX:3": 24,
-          "x:3": 112,
-          "y:3": 40,
+          "x:3": 104,
+          "y:3": 80,
           "id:3": 371,
           "sizeY:3": 24
         },
         "12:10": {
           "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": 136,
+          "x:3": -2,
+          "y:3": 48,
           "id:3": 372,
           "sizeY:3": 24
         },
         "13:10": {
           "sizeX:3": 24,
-          "x:3": 48,
-          "y:3": 136,
+          "x:3": 0,
+          "y:3": 144,
           "id:3": 373,
           "sizeY:3": 24
         },
         "14:10": {
-          "sizeX:3": 24,
-          "x:3": 48,
-          "y:3": 72,
+          "sizeX:3": 32,
+          "x:3": 69,
+          "y:3": 108,
           "id:3": 374,
-          "sizeY:3": 24
+          "sizeY:3": 32
         },
         "15:10": {
           "sizeX:3": 24,
-          "x:3": 176,
-          "y:3": 104,
+          "x:3": 208,
+          "y:3": 144,
           "id:3": 375,
           "sizeY:3": 24
         },
         "16:10": {
           "sizeX:3": 24,
-          "x:3": 232,
-          "y:3": 180,
+          "x:3": 296,
+          "y:3": 172,
           "id:3": 376,
           "sizeY:3": 24
         },
         "17:10": {
           "sizeX:3": 24,
-          "x:3": 144,
-          "y:3": 104,
+          "x:3": 136,
+          "y:3": 80,
           "id:3": 377,
           "sizeY:3": 24
         },
         "18:10": {
           "sizeX:3": 24,
-          "x:3": 80,
-          "y:3": 104,
+          "x:3": 32,
+          "y:3": 80,
           "id:3": 378,
           "sizeY:3": 24
         },
         "19:10": {
           "sizeX:3": 24,
-          "x:3": 112,
-          "y:3": 72,
+          "x:3": 104,
+          "y:3": 112,
           "id:3": 379,
           "sizeY:3": 24
         },
         "20:10": {
           "sizeX:3": 24,
-          "x:3": 80,
-          "y:3": 136,
+          "x:3": 32,
+          "y:3": 176,
           "id:3": 380,
           "sizeY:3": 24
         },
         "21:10": {
           "sizeX:3": 24,
-          "x:3": 112,
-          "y:3": 104,
+          "x:3": 104,
+          "y:3": 160,
           "id:3": 381,
           "sizeY:3": 24
         },
         "22:10": {
           "sizeX:3": 24,
-          "x:3": 176,
-          "y:3": 136,
+          "x:3": 208,
+          "y:3": 176,
           "id:3": 382,
           "sizeY:3": 24
         },
         "23:10": {
           "sizeX:3": 24,
-          "x:3": 144,
-          "y:3": 40,
+          "x:3": 176,
+          "y:3": 112,
           "id:3": 383,
           "sizeY:3": 24
         },
         "24:10": {
           "sizeX:3": 24,
-          "x:3": 144,
-          "y:3": 72,
+          "x:3": 136,
+          "y:3": 112,
           "id:3": 384,
           "sizeY:3": 24
         },
         "25:10": {
           "sizeX:3": 24,
           "x:3": 176,
-          "y:3": 72,
+          "y:3": 176,
           "id:3": 385,
           "sizeY:3": 24
         },
         "26:10": {
           "sizeX:3": 24,
-          "x:3": 80,
-          "y:3": 40,
+          "x:3": 72,
+          "y:3": 80,
           "id:3": 386,
           "sizeY:3": 24
         },
         "27:10": {
           "sizeX:3": 24,
-          "x:3": 176,
-          "y:3": 40,
+          "x:3": 136,
+          "y:3": 160,
           "id:3": 387,
           "sizeY:3": 24
         },
         "28:10": {
           "sizeX:3": 24,
-          "x:3": 284,
-          "y:3": 120,
+          "x:3": 312,
+          "y:3": 100,
           "id:3": 388,
           "sizeY:3": 24
         },
         "29:10": {
           "sizeX:3": 24,
-          "x:3": 268,
-          "y:3": 144,
+          "x:3": 308,
+          "y:3": 124,
           "id:3": 389,
           "sizeY:3": 24
         },
         "30:10": {
           "sizeX:3": 24,
-          "x:3": 400,
-          "y:3": 80,
+          "x:3": 408,
+          "y:3": 104,
           "id:3": 390,
           "sizeY:3": 24
         },
         "31:10": {
           "sizeX:3": 24,
-          "x:3": 292,
-          "y:3": 96,
+          "x:3": 308,
+          "y:3": 76,
           "id:3": 391,
           "sizeY:3": 24
         },
         "32:10": {
           "sizeX:3": 24,
-          "x:3": 300,
-          "y:3": 72,
+          "x:3": 304,
+          "y:3": 52,
           "id:3": 392,
           "sizeY:3": 24
         },
         "33:10": {
           "sizeX:3": 24,
-          "x:3": 408,
-          "y:3": 56,
+          "x:3": 416,
+          "y:3": 80,
           "id:3": 393,
           "sizeY:3": 24
         },
         "34:10": {
           "sizeX:3": 24,
-          "x:3": 256,
-          "y:3": 168,
+          "x:3": 304,
+          "y:3": 148,
           "id:3": 394,
           "sizeY:3": 24
         },
         "35:10": {
           "sizeX:3": 24,
-          "x:3": 360,
-          "y:3": 112,
+          "x:3": 368,
+          "y:3": 136,
           "id:3": 395,
           "sizeY:3": 24
         },
         "36:10": {
           "sizeX:3": 24,
-          "x:3": 176,
-          "y:3": 168,
+          "x:3": 240,
+          "y:3": 176,
           "id:3": 396,
           "sizeY:3": 24
         },
         "37:10": {
           "sizeX:3": 24,
-          "x:3": 424,
-          "y:3": 8,
+          "x:3": 432,
+          "y:3": 32,
           "id:3": 397,
           "sizeY:3": 24
         },
         "38:10": {
           "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": 8,
+          "x:3": -10,
+          "y:3": 16,
           "id:3": 398,
           "sizeY:3": 24
         },
         "39:10": {
           "sizeX:3": 24,
-          "x:3": 48,
-          "y:3": 168,
+          "x:3": 0,
+          "y:3": 176,
           "id:3": 399,
           "sizeY:3": 24
         },
         "40:10": {
           "sizeX:3": 24,
-          "x:3": 384,
-          "y:3": 104,
+          "x:3": 392,
+          "y:3": 128,
           "id:3": 400,
           "sizeY:3": 24
         },
         "41:10": {
           "sizeX:3": 24,
-          "x:3": 336,
-          "y:3": 120,
+          "x:3": 344,
+          "y:3": 144,
           "id:3": 403,
           "sizeY:3": 24
         },
         "42:10": {
           "sizeX:3": 24,
-          "x:3": 112,
-          "y:3": 200,
+          "x:3": 240,
+          "y:3": 112,
           "id:3": 404,
           "sizeY:3": 24
         },
         "43:10": {
           "sizeX:3": 24,
-          "x:3": 208,
-          "y:3": 104,
+          "x:3": 240,
+          "y:3": 144,
           "id:3": 405,
           "sizeY:3": 24
         },
         "44:10": {
           "sizeX:3": 24,
-          "x:3": 144,
-          "y:3": 168,
+          "x:3": 208,
+          "y:3": 80,
           "id:3": 406,
           "sizeY:3": 24
         },
         "45:10": {
           "sizeX:3": 24,
-          "x:3": 20,
-          "y:3": 104,
+          "x:3": 0,
+          "y:3": 112,
           "id:3": 407,
           "sizeY:3": 24
         },
         "46:10": {
           "sizeX:3": 24,
-          "x:3": 112,
-          "y:3": 168,
+          "x:3": 208,
+          "y:3": 112,
           "id:3": 408,
           "sizeY:3": 24
         },
         "47:10": {
           "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": 168,
+          "x:3": -34,
+          "y:3": 48,
           "id:3": 409,
           "sizeY:3": 24
         },
         "48:10": {
           "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": 200,
+          "x:3": -34,
+          "y:3": 80,
           "id:3": 410,
           "sizeY:3": 24
         },
         "49:10": {
           "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": 232,
+          "x:3": -2,
+          "y:3": 80,
           "id:3": 411,
           "sizeY:3": 24
         },
         "50:10": {
           "sizeX:3": 24,
-          "x:3": 208,
-          "y:3": 40,
+          "x:3": 176,
+          "y:3": 144,
           "id:3": 415,
           "sizeY:3": 24
         },
         "51:10": {
           "sizeX:3": 24,
           "x:3": 208,
-          "y:3": 136,
+          "y:3": 208,
           "id:3": 416,
           "sizeY:3": 24
         },
         "52:10": {
           "sizeX:3": 24,
-          "x:3": 80,
-          "y:3": 168,
+          "x:3": 32,
+          "y:3": 208,
           "id:3": 420,
           "sizeY:3": 24
         },
         "53:10": {
           "sizeX:3": 24,
-          "x:3": 144,
-          "y:3": 136,
+          "x:3": 176,
+          "y:3": 80,
           "id:3": 423,
           "sizeY:3": 24
         },
         "54:10": {
           "sizeX:3": 24,
-          "x:3": 144,
-          "y:3": 200,
+          "x:3": 240,
+          "y:3": 80,
           "id:3": 424,
+          "sizeY:3": 24
+        },
+        "55:10": {
+          "sizeX:3": 24,
+          "x:3": 32,
+          "y:3": 144,
+          "id:3": 765,
+          "sizeY:3": 24
+        },
+        "56:10": {
+          "sizeX:3": 24,
+          "x:3": 72,
+          "y:3": 208,
+          "id:3": 766,
+          "sizeY:3": 24
+        },
+        "57:10": {
+          "sizeX:3": 24,
+          "x:3": 136,
+          "y:3": 208,
+          "id:3": 767,
+          "sizeY:3": 24
+        },
+        "58:10": {
+          "sizeX:3": 24,
+          "x:3": 104,
+          "y:3": 208,
+          "id:3": 768,
           "sizeY:3": 24
         }
       },
@@ -62637,7 +62766,7 @@
         "0:10": {
           "sizeX:3": 40,
           "x:3": 8,
-          "y:3": 8,
+          "y:3": 16,
           "id:3": 598,
           "sizeY:3": 40
         },
@@ -62877,6 +63006,13 @@
           "x:3": 60,
           "y:3": 0,
           "id:3": 634,
+          "sizeY:3": 24
+        },
+        "35:10": {
+          "sizeX:3": 24,
+          "x:3": 48,
+          "y:3": 152,
+          "id:3": 769,
           "sizeY:3": 24
         }
       },
@@ -63458,61 +63594,75 @@
         },
         "29:10": {
           "sizeX:3": 24,
+          "x:3": 48,
+          "y:3": -24,
+          "id:3": 148,
+          "sizeY:3": 24
+        },
+        "30:10": {
+          "sizeX:3": 24,
           "x:3": -24,
           "y:3": 40,
           "id:3": 412,
           "sizeY:3": 24
         },
-        "30:10": {
+        "31:10": {
           "sizeX:3": 24,
           "x:3": 128,
           "y:3": 72,
           "id:3": 413,
           "sizeY:3": 24
         },
-        "31:10": {
+        "32:10": {
           "sizeX:3": 24,
           "x:3": 48,
           "y:3": 200,
           "id:3": 414,
           "sizeY:3": 24
         },
-        "32:10": {
+        "33:10": {
           "sizeX:3": 24,
           "x:3": 48,
           "y:3": 8,
           "id:3": 418,
           "sizeY:3": 24
         },
-        "33:10": {
+        "34:10": {
           "sizeX:3": 24,
-          "x:3": 128,
-          "y:3": 104,
+          "x:3": 168,
+          "y:3": 72,
           "id:3": 419,
           "sizeY:3": 24
         },
-        "34:10": {
+        "35:10": {
           "sizeX:3": 24,
           "x:3": 88,
           "y:3": 200,
           "id:3": 421,
           "sizeY:3": 24
         },
-        "35:10": {
+        "36:10": {
           "sizeX:3": 24,
           "x:3": 8,
           "y:3": 200,
           "id:3": 422,
           "sizeY:3": 24
         },
-        "36:10": {
+        "37:10": {
           "sizeX:3": 24,
           "x:3": 240,
           "y:3": 200,
           "id:3": 425,
           "sizeY:3": 24
         },
-        "37:10": {
+        "38:10": {
+          "sizeX:3": 24,
+          "x:3": 128,
+          "y:3": 104,
+          "id:3": 779,
+          "sizeY:3": 24
+        },
+        "39:10": {
           "sizeX:3": 24,
           "x:3": 208,
           "y:3": 200,
@@ -64287,6 +64437,13 @@
           "x:3": 200,
           "y:3": 144,
           "id:3": 261,
+          "sizeY:3": 24
+        },
+        "46:10": {
+          "sizeX:3": 24,
+          "x:3": 48,
+          "y:3": 40,
+          "id:3": 780,
           "sizeY:3": 24
         }
       },
@@ -65131,40 +65288,75 @@
         },
         "34:10": {
           "sizeX:3": 24,
+          "x:3": 6,
+          "y:3": 48,
+          "id:3": 773,
+          "sizeY:3": 24
+        },
+        "35:10": {
+          "sizeX:3": 24,
+          "x:3": 102,
+          "y:3": -12,
+          "id:3": 774,
+          "sizeY:3": 24
+        },
+        "36:10": {
+          "sizeX:3": 24,
+          "x:3": 72,
+          "y:3": -12,
+          "id:3": 775,
+          "sizeY:3": 24
+        },
+        "37:10": {
+          "sizeX:3": 24,
+          "x:3": 88,
+          "y:3": 152,
+          "id:3": 776,
+          "sizeY:3": 24
+        },
+        "38:10": {
+          "sizeX:3": 24,
+          "x:3": 36,
+          "y:3": 48,
+          "id:3": 777,
+          "sizeY:3": 24
+        },
+        "39:10": {
+          "sizeX:3": 24,
           "x:3": 192,
           "y:3": 48,
           "id:3": 786,
           "sizeY:3": 24
         },
-        "35:10": {
+        "40:10": {
           "sizeX:3": 24,
           "x:3": 138,
           "y:3": 48,
           "id:3": 787,
           "sizeY:3": 24
         },
-        "36:10": {
+        "41:10": {
           "sizeX:3": 24,
           "x:3": 180,
           "y:3": 78,
           "id:3": 788,
           "sizeY:3": 24
         },
-        "37:10": {
+        "42:10": {
           "sizeX:3": 24,
           "x:3": 138,
           "y:3": 18,
           "id:3": 789,
           "sizeY:3": 24
         },
-        "38:10": {
+        "43:10": {
           "sizeX:3": 24,
           "x:3": 192,
           "y:3": 18,
           "id:3": 790,
           "sizeY:3": 24
         },
-        "39:10": {
+        "44:10": {
           "sizeX:3": 24,
           "x:3": 150,
           "y:3": 78,
@@ -65393,6 +65585,34 @@
           "x:3": 176,
           "y:3": 288,
           "id:3": 689,
+          "sizeY:3": 24
+        },
+        "29:10": {
+          "sizeX:3": 24,
+          "x:3": 112,
+          "y:3": 208,
+          "id:3": 782,
+          "sizeY:3": 24
+        },
+        "30:10": {
+          "sizeX:3": 24,
+          "x:3": 80,
+          "y:3": 240,
+          "id:3": 783,
+          "sizeY:3": 24
+        },
+        "31:10": {
+          "sizeX:3": 24,
+          "x:3": 112,
+          "y:3": 272,
+          "id:3": 784,
+          "sizeY:3": 24
+        },
+        "32:10": {
+          "sizeX:3": 24,
+          "x:3": 144,
+          "y:3": 240,
+          "id:3": 785,
           "sizeY:3": 24
         }
       },
@@ -66386,289 +66606,6 @@
         }
       },
       "order:3": 2
-    },
-    "22:10": {
-      "quests:9": {
-        "0:10": {
-          "sizeX:3": 24,
-          "x:3": 20,
-          "y:3": 8,
-          "id:3": 148,
-          "sizeY:3": 24
-        },
-        "1:10": {
-          "sizeX:3": 24,
-          "x:3": 48,
-          "y:3": -44,
-          "id:3": 572,
-          "sizeY:3": 24
-        },
-        "2:10": {
-          "sizeX:3": 24,
-          "x:3": -8,
-          "y:3": 8,
-          "id:3": 706,
-          "sizeY:3": 24
-        },
-        "3:10": {
-          "sizeX:3": 24,
-          "x:3": -36,
-          "y:3": -44,
-          "id:3": 739,
-          "sizeY:3": 24
-        },
-        "4:10": {
-          "sizeX:3": 24,
-          "x:3": -8,
-          "y:3": -44,
-          "id:3": 740,
-          "sizeY:3": 24
-        },
-        "5:10": {
-          "sizeX:3": 24,
-          "x:3": 20,
-          "y:3": -44,
-          "id:3": 746,
-          "sizeY:3": 24
-        },
-        "6:10": {
-          "sizeX:3": 24,
-          "x:3": 76,
-          "y:3": -44,
-          "id:3": 753,
-          "sizeY:3": 24
-        },
-        "7:10": {
-          "sizeX:3": 24,
-          "x:3": 104,
-          "y:3": -44,
-          "id:3": 756,
-          "sizeY:3": 24
-        },
-        "8:10": {
-          "sizeX:3": 24,
-          "x:3": 104,
-          "y:3": 104,
-          "id:3": 759,
-          "sizeY:3": 24
-        },
-        "9:10": {
-          "sizeX:3": 24,
-          "x:3": 76,
-          "y:3": 8,
-          "id:3": 760,
-          "sizeY:3": 24
-        },
-        "10:10": {
-          "sizeX:3": 24,
-          "x:3": 76,
-          "y:3": 32,
-          "id:3": 761,
-          "sizeY:3": 24
-        },
-        "11:10": {
-          "sizeX:3": 24,
-          "x:3": 76,
-          "y:3": 56,
-          "id:3": 762,
-          "sizeY:3": 24
-        },
-        "12:10": {
-          "sizeX:3": 24,
-          "x:3": 76,
-          "y:3": 80,
-          "id:3": 763,
-          "sizeY:3": 24
-        },
-        "13:10": {
-          "sizeX:3": 24,
-          "x:3": 76,
-          "y:3": 104,
-          "id:3": 764,
-          "sizeY:3": 24
-        },
-        "14:10": {
-          "sizeX:3": 24,
-          "x:3": -64,
-          "y:3": 8,
-          "id:3": 765,
-          "sizeY:3": 24
-        },
-        "15:10": {
-          "sizeX:3": 24,
-          "x:3": -64,
-          "y:3": 32,
-          "id:3": 766,
-          "sizeY:3": 24
-        },
-        "16:10": {
-          "sizeX:3": 24,
-          "x:3": -64,
-          "y:3": 80,
-          "id:3": 767,
-          "sizeY:3": 24
-        },
-        "17:10": {
-          "sizeX:3": 24,
-          "x:3": -64,
-          "y:3": 104,
-          "id:3": 768,
-          "sizeY:3": 24
-        },
-        "18:10": {
-          "sizeX:3": 24,
-          "x:3": -92,
-          "y:3": 32,
-          "id:3": 769,
-          "sizeY:3": 24
-        },
-        "19:10": {
-          "sizeX:3": 24,
-          "x:3": -92,
-          "y:3": 56,
-          "id:3": 770,
-          "sizeY:3": 24
-        },
-        "20:10": {
-          "sizeX:3": 24,
-          "x:3": -92,
-          "y:3": 80,
-          "id:3": 771,
-          "sizeY:3": 24
-        },
-        "21:10": {
-          "sizeX:3": 24,
-          "x:3": -92,
-          "y:3": 104,
-          "id:3": 772,
-          "sizeY:3": 24
-        },
-        "22:10": {
-          "sizeX:3": 24,
-          "x:3": 48,
-          "y:3": 8,
-          "id:3": 773,
-          "sizeY:3": 24
-        },
-        "23:10": {
-          "sizeX:3": 24,
-          "x:3": 48,
-          "y:3": 32,
-          "id:3": 774,
-          "sizeY:3": 24
-        },
-        "24:10": {
-          "sizeX:3": 24,
-          "x:3": 48,
-          "y:3": 80,
-          "id:3": 775,
-          "sizeY:3": 24
-        },
-        "25:10": {
-          "sizeX:3": 24,
-          "x:3": 48,
-          "y:3": 104,
-          "id:3": 776,
-          "sizeY:3": 24
-        },
-        "26:10": {
-          "sizeX:3": 24,
-          "x:3": 48,
-          "y:3": 56,
-          "id:3": 777,
-          "sizeY:3": 24
-        },
-        "27:10": {
-          "sizeX:3": 24,
-          "x:3": -8,
-          "y:3": 32,
-          "id:3": 778,
-          "sizeY:3": 24
-        },
-        "28:10": {
-          "sizeX:3": 24,
-          "x:3": -8,
-          "y:3": 56,
-          "id:3": 779,
-          "sizeY:3": 24
-        },
-        "29:10": {
-          "sizeX:3": 24,
-          "x:3": -8,
-          "y:3": 80,
-          "id:3": 780,
-          "sizeY:3": 24
-        },
-        "30:10": {
-          "sizeX:3": 24,
-          "x:3": 20,
-          "y:3": 32,
-          "id:3": 782,
-          "sizeY:3": 24
-        },
-        "31:10": {
-          "sizeX:3": 24,
-          "x:3": 20,
-          "y:3": 56,
-          "id:3": 783,
-          "sizeY:3": 24
-        },
-        "32:10": {
-          "sizeX:3": 24,
-          "x:3": 20,
-          "y:3": 80,
-          "id:3": 784,
-          "sizeY:3": 24
-        },
-        "33:10": {
-          "sizeX:3": 24,
-          "x:3": 20,
-          "y:3": 104,
-          "id:3": 785,
-          "sizeY:3": 24
-        },
-        "34:10": {
-          "sizeX:3": 24,
-          "x:3": 104,
-          "y:3": 80,
-          "id:3": 792,
-          "sizeY:3": 24
-        },
-        "35:10": {
-          "sizeX:3": 24,
-          "x:3": -64,
-          "y:3": 56,
-          "id:3": 793,
-          "sizeY:3": 24
-        },
-        "36:10": {
-          "sizeX:3": 32,
-          "x:3": -68,
-          "y:3": -48,
-          "id:3": 794,
-          "sizeY:3": 32
-        }
-      },
-      "lineID:3": 22,
-      "properties:10": {
-        "betterquesting:10": {
-          "visibility:8": "ALWAYS",
-          "name:8": "Armor",
-          "icon:10": {
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
-            "id:8": "minecraft:leather_chestplate",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "bg_image:8": "",
-          "bg_size:3": 256,
-          "desc:8": "Quests for Armor"
-        }
-      },
-      "order:3": 1
     }
   },
   "questSettings:10": {
