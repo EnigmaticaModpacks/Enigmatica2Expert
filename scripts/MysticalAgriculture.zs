@@ -76,6 +76,14 @@ recipes.addShapedMirrored("Wither Proof Glass",
 	[<ore:ingotInferium>, <mysticalagriculture:crafting:17>, <ore:ingotInferium>], 
 	[<mysticalagriculture:crafting:6>, <ore:blockInferiumEssence>, <mysticalagriculture:crafting:6>]]);
 
+
+	val creosoliteBlock = <openblocks:tank>.withTag({tank: {FluidName: "creosote", Amount: 16000}});
+	recipes.addShapedMirrored("Creosolite Seeds", 
+	<mysticalcreations:creosolite_seeds>, 
+	[[creosoliteBlock, <ore:blockInferiumEssence>, creosoliteBlock],
+	[<ore:ingotInferium>, <mysticalagriculture:crafting:17>, <ore:ingotInferium>], 
+	[creosoliteBlock, <ore:blockInferiumEssence>, creosoliteBlock]]);
+
 # *======= Seeds Tier 2 =======*
 
 # Aluminum Seeds
@@ -138,6 +146,17 @@ recipes.addShapedMirrored("Wither Proof Glass",
 	
 	<ore:blockCoal>, <ore:blockCoal>, <ore:blockCoal>, <ore:blockCoal>]);
 	
+# Cheese Seeds
+  val cheeseIngr = <ore:cheeseWheels>;
+	mods.astralsorcery.Altar.addAttunementAltarRecipe("enigmatica2expert:shaped/internal/altar/cheese_seeds",
+		<mysticalcreations:cheese_seeds>, 400, 200, 
+	[<ore:essenceTier1>, <ore:blockPrudentiumEssence>, <ore:essenceTier1>,
+	<ore:blockPrudentiumEssence>, <mysticalagriculture:crafting:18>, <ore:blockPrudentiumEssence>, 
+	<ore:essenceTier1>, <ore:blockPrudentiumEssence>, <ore:essenceTier1>,
+	
+	cheeseIngr, cheeseIngr, cheeseIngr, cheeseIngr]);
+	
+
 # *======= Seeds Tier 3 =======*
 
 # Inferium Seeds
@@ -309,6 +328,16 @@ recipes.addShapedMirrored("Wither Proof Glass",
 	<ore:essenceTier2>, <ore:blockIntermediumEssence>, <ore:essenceTier2>,
 	
 	<ore:blockBlackQuartz>, <ore:blockBlackQuartz>, <ore:blockBlackQuartz>, <ore:blockBlackQuartz>]);
+	
+# Flux crystal Seeds
+  var fluxCrystalIng = <ore:blockCrystalFlux>;
+	mods.astralsorcery.Altar.addAttunementAltarRecipe("enigmatica2expert:shaped/internal/altar/flux_crystal_seeds",
+		<mysticalcreations:flux_crystal_seeds>, 500, 200, 
+	[<ore:essenceTier2>, <ore:blockIntermediumEssence>, <ore:essenceTier2>,
+	<ore:blockIntermediumEssence>, <mysticalagriculture:crafting:19>, <ore:blockIntermediumEssence>, 
+	<ore:essenceTier2>, <ore:blockIntermediumEssence>, <ore:essenceTier2>,
+	
+	fluxCrystalIng, fluxCrystalIng, fluxCrystalIng, fluxCrystalIng]);
 	
 # *======= Seeds Tier 4 =======*
 
@@ -512,6 +541,16 @@ recipes.addShapedMirrored("Wither Proof Glass",
 	
 	<excompressum:compressed_block:10>, <excompressum:compressed_block:10>, <excompressum:compressed_block:10>, <excompressum:compressed_block:10>]);
 
+# Flux Crystal Seeds
+	val fluxElectrumIng = <ore:blockElectrumFlux>;
+	mods.astralsorcery.Altar.addAttunementAltarRecipe("enigmatica2expertskyblock:shaped/internal/altar/fluxed_electrum_seeds",
+	<mysticalcreations:fluxed_electrum_seeds>, 600, 200, 
+	[<ore:essenceTier3>, <ore:blockSuperiumEssence>, <ore:essenceTier3>,
+	<ore:blockSuperiumEssence>, <mysticalagriculture:crafting:20>, <ore:blockSuperiumEssence>, 
+	<ore:essenceTier3>, <ore:blockSuperiumEssence>, <ore:essenceTier3>,
+	
+	fluxElectrumIng, fluxElectrumIng, fluxElectrumIng, fluxElectrumIng]);
+
 # *======= Seeds Tier 5 =======*
 	
 # Void Metal Seeds
@@ -649,6 +688,21 @@ recipes.addShapedMirrored("Wither Proof Glass",
 			<minecraft:nether_star>],
 	"astralsorcery.constellation.mineralis");
 
+# Ultimate Seeds
+	val ultIngr = <ore:blockUltimate>;
+	mods.astralsorcery.Altar.addTraitAltarRecipe("enigmatica2expert:shaped/internal/altar/ultimate_seeds",
+	<mysticalcreations:ultimate_seeds>, 3500, 300, 
+	[<ore:essenceTier4>, <ore:blockSupremiumEssence>, <ore:essenceTier4>,
+	<ore:blockSupremiumEssence>, <mysticalagriculture:crafting:21>, <ore:blockSupremiumEssence>, 
+	<ore:essenceTier4>, <ore:blockSupremiumEssence>, <ore:essenceTier4>,
+	
+	ultIngr, ultIngr, ultIngr, ultIngr,
+	<ore:ingotSupremium>, <ore:ingotSupremium>, <ore:ingotSupremium>, <ore:ingotSupremium>,
+	<ore:ingotSupremium>, <ore:ingotSupremium>, <ore:ingotSupremium>, <ore:ingotSupremium>,
+	ultIngr, ultIngr, ultIngr, ultIngr, 
+			<minecraft:nether_star>],
+	"astralsorcery.constellation.horologium");
+
 # *======= Remove & Hide =======*
 	
 	rh(<mysticalagriculture:nether_prosperity_ore>);
@@ -673,3 +727,14 @@ recipes.addShapedMirrored("Wither Proof Glass",
 
 # Infusion crystals
 recipes.replaceAllOccurences(<ore:gemDiamond>, <mysticalagriculture:infusion_crystal>.anyDamage(), <matc:inferiumcrystal>);
+
+# Mystical Creations Recipes
+recipes.addShaped(<extendedcrafting:material:33>*3, [[<mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>],[<mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>], [<mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>]]);
+recipes.addShaped(<redstonearsenal:material:32>*3, [[<mysticalcreations:fluxed_electrum_essence>, <mysticalcreations:fluxed_electrum_essence>, <mysticalcreations:fluxed_electrum_essence>],[<mysticalcreations:fluxed_electrum_essence>, null, <mysticalcreations:fluxed_electrum_essence>], [<mysticalcreations:fluxed_electrum_essence>, <mysticalcreations:fluxed_electrum_essence>, <mysticalcreations:fluxed_electrum_essence>]]);
+recipes.addShaped(<redstonearsenal:material:160>*3, [[<mysticalcreations:flux_crystal_essence>, <mysticalcreations:flux_crystal_essence>, <mysticalcreations:flux_crystal_essence>],[<mysticalcreations:flux_crystal_essence>, null, <mysticalcreations:flux_crystal_essence>], [<mysticalcreations:flux_crystal_essence>, <mysticalcreations:flux_crystal_essence>, <mysticalcreations:flux_crystal_essence>]]);
+recipes.addShaped(<animania:sheep_cheese_wheel>, [[<mysticalcreations:cheese_essence>, null, <mysticalcreations:cheese_essence>],[null, <mysticalcreations:cheese_essence>, null], [null, null, null]]);
+recipes.addShaped(<animania:goat_cheese_wheel>, [[null, <mysticalcreations:cheese_essence>, null],[null, <mysticalcreations:cheese_essence>, null], [null, <mysticalcreations:cheese_essence>, null]]);
+recipes.addShaped(<animania:jersey_cheese_wheel>, [[null, null, null],[<mysticalcreations:cheese_essence>, <mysticalcreations:cheese_essence>, <mysticalcreations:cheese_essence>], [null, null, null]]);
+recipes.addShaped(<animania:holstein_cheese_wheel>, [[null, null, <mysticalcreations:cheese_essence>],[null, <mysticalcreations:cheese_essence>, null], [<mysticalcreations:cheese_essence>, null, null]]);
+recipes.addShaped(<animania:friesian_cheese_wheel>, [[<mysticalcreations:cheese_essence>, null, null],[null, <mysticalcreations:cheese_essence>, null], [null, null, <mysticalcreations:cheese_essence>]]);
+recipes.addShaped(<forge:bucketfilled>.withTag({FluidName: "creosote", Amount: 1000}), [[null, <mysticalcreations:creosolite_essence>, null],[<mysticalcreations:creosolite_essence>, <minecraft:bucket>.noReturn(), <mysticalcreations:creosolite_essence>], [null, <mysticalcreations:creosolite_essence>, null]]);
