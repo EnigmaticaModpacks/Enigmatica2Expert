@@ -18,7 +18,180 @@ import crafttweaker.world.IWorld;
 # Data
 #
 # ######################################################################
-static defaultMats as IData = ["nagascale", "steeleaf", "fierymetal", "knightmetal", "raven_feather", "electrical_steel", "energetic_alloy", "vibrant_alloy", "redstone_alloy", "conductive_iron", "pulsating_iron", "dark_steel", "soularium", "end_steel", "construction_alloy", "_internal_render1", "_internal_render2", "_internal_render3", "_internal_render4", "_internal_renderstring", "stone", "flint", "cactus", "bone", "obsidian", "prismarine", "endstone", "paper", "sponge", "firewood", "iron", "pigiron", "knightslime", "slime", "blueslime", "magmaslime", "netherrack", "cobalt", "ardite", "manyullyn", "copper", "bronze", "lead", "silver", "electrum", "steel", "string", "slimevine_blue", "slimevine_purple", "vine", "blaze", "reed", "ice", "endrod", "feather", "slimeleaf_blue", "slimeleaf_orange", "slimeleaf_purple", "leaf", "dragonbone", "desert_myrmex", "jungle_myrmex", "dragonsteel_fire", "dragonsteel_ice", "stymph_feather", "amphithere_feather", "weezer", "leatherfrosttroll", "chitintandeathworm", "scalebronzedragon", "scaleblueseaserpent", "scalepurpleseaserpent", "scalewhitedragon", "chitinwhitedeathworm", "chitinbrowndeathworm", "scalegraydragon", "scalesapphiredragon", "scaletealseaserpent", "scalebluedragon", "leatherforesttroll", "scalegreendragon", "leathermountaintroll", "scalebronzeseaserpent", "scalereddragon", "scaledeepblueseaserpent", "scaleredseaserpent", "scalegreenseaserpent", "scalesilverdragon", "treatedwood", "hemp", "constantan", "xu_magical_wood", "xu_evil_metal", "xu_enchanted_metal", "xu_demonic_metal", "ma.prosperity", "ma.soulium", "ma.base_essence", "ma.inferium", "ma.prudentium", "ma.intermedium", "ma.superium", "ma.supremium", "boron", "tough", "hard_carbon", "boron_nitride", "thorium", "uranium", "magnesium", "chocolate", "integrationforegoing.plastic", "integrationforegoing.pink_slime", "integrationforegoing.reinforced_pink_slime", "tnt", "alumite", "nickel", "invar", "iridium", "sapphire", "ruby", "peridot", "malachite_gem", "amber", "topaz", "tanzanite", "amethyst", "osmium", "refinedobsidian", "refinedglowstone", "osgloglas", "osmiridium", "titanium", "lumium_plustic", "signalum_plustic", "platinum_plustic", "enderium_plustic", "blackquartz_plustic", "void_actadd_plustic", "enori_actadd_plustic", "palis_actadd_plustic", "restonia_actadd_plustic", "emeradic_actadd_plustic", "diamatine_actadd_plustic", "psimetal", "psigem", "infinity_avaritia_plustic", "certusquartz_plustic", "fluixcrystal_plustic", "mica", "litherite", "erodium", "kyronite", "pladium", "ionite", "aethium", "thaumium", "starmetal", "cheese", "string_cheese", "plague_metal", "mirion", "livingwood_plustic", "manasteel", "elementium", "terrasteel", "wyvern_plustic", "awakened_plustic", "chaotic_plustic", "emerald_plustic", "wood"] as IData;
+static defaultMats as IData = [
+"wood",
+"bone",
+"stone",
+"cactus",
+"flint",
+"ma.prosperity",
+"blueslime",
+"soularium",
+"netherrack",
+"conductive_iron",
+"redstone_alloy",
+"copper",
+"pulsating_iron",
+"lead",
+"bronze",
+"treatedwood",
+"integrationforegoing.plastic",
+"chocolate",
+"sponge",
+"slime",
+"construction_alloy",
+"integrationforegoing.pink_slime",
+"endstone",
+"xu_magical_wood",
+"cheese",
+"electrum",
+"uranium",
+"electrical_steel",
+"livingwood_plustic",
+"ardite",
+"magnesium",
+"iridium",
+"obsidian",
+"bloodbronze",
+"silver",
+"nickel",
+"pigiron",
+"knightslime",
+"invar",
+"iron",
+"chitinbrowndeathworm",
+"chitintandeathworm",
+"chitinwhitedeathworm",
+"leatherforesttroll",
+"leatherfrosttroll",
+"leathermountaintroll",
+"scaleblueseaserpent",
+"scalebronzeseaserpent",
+"scaledeepblueseaserpent",
+"scalegreenseaserpent",
+"scalepurpleseaserpent",
+"scaleredseaserpent",
+"scaletealseaserpent",
+"cobalt",
+"thorium",
+"xu_enchanted_metal",
+"scalebluedragon",
+"scalebronzedragon",
+"scalegraydragon",
+"scalegreendragon",
+"scalereddragon",
+"scalesapphiredragon",
+"scalesilverdragon",
+"scalewhitedragon",
+"constantan",
+"starmetal",
+"steel",
+"firewood",
+"prismarine",
+"magmaslime",
+"void_actadd_plustic",
+"thaumium",
+"ma.base_essence",
+"alumite",
+"peridot",
+"ruby",
+"sapphire",
+"emerald_plustic",
+"manyullyn",
+"ma.soulium",
+"blackquartz_plustic",
+"certusquartz_plustic",
+"ma.inferium",
+"psigem",
+"psimetal",
+"end_steel",
+"signalum_plustic",
+"enori_actadd_plustic",
+"energetic_alloy",
+"desert_myrmex",
+"jungle_myrmex",
+"integrationforegoing.",
+"boron",
+"osmium",
+"palis_actadd_plustic",
+"amber",
+"nagascale",
+"hard_carbon",
+"titanium",
+"platinum_plustic",
+"elementium",
+"manasteel",
+"topaz",
+"mica",
+"litherite",
+"plague_metal",
+"dragonbone",
+"dark_steel",
+"fluixcrystal_plustic",
+"malachite_gem",
+"restonia_actadd_plustic",
+"tough",
+"diamatine_actadd_plustic",
+"terrasteel",
+"lumium_plustic",
+"boron_nitride",
+"ma.prudentium",
+"tanzanite",
+"enderium_plustic",
+"erodium",
+"emeradic_actadd_plustic",
+"osmiridium",
+"amethyst",
+"steeleaf",
+"knightmetal",
+"fierymetal",
+"vibrant_alloy",
+"mirion",
+"kyronite",
+"ma.intermedium",
+"refinedglowstone",
+"weezer",
+"pladium",
+"xu_evil_metal",
+"aethium",
+"ionite",
+"ma.superium",
+"wyvern_plustic",
+"ma.supremium",
+"awakened_plustic",
+"dragonsteel_fire",
+"dragonsteel_ice",
+"chaotic_plustic",
+"infinity_avaritia_plustic",
+"osgloglas",
+"refinedobsidian",
+"xu_demonic_metal",
+] as IData;
+
+static matsOnlyForArmor as IData = [
+"leatherfrosttroll",
+"chitintandeathworm",
+"scalebronzedragon",
+"scaleblueseaserpent",
+"scalepurpleseaserpent",
+"scalewhitedragon",
+"chitinwhitedeathworm",
+"chitinbrowndeathworm",
+"scalegraydragon",
+"scalesapphiredragon",
+"scaletealseaserpent",
+"scalebluedragon",
+"leatherforesttroll",
+"scalegreendragon",
+"leathermountaintroll",
+"scalebronzeseaserpent",
+"scalereddragon",
+"scaledeepblueseaserpent",
+"scaleredseaserpent",
+"scalegreenseaserpent",
+"scalesilverdragon",
+] as IData;
+
 static armorStaged as IData[string] = scripts.DataTables.armorStaged;
 static defaultArmGroups as IData = scripts.DataTables.armorSortedKeys as IData;
 
@@ -35,7 +208,7 @@ static armorEntitys as IData[] =
       {
         # Defaults
         weight: 20,
-        classicEquips: defaultArmGroups
+        classicEquips: defaultArmGroups//["armor_hardenedleather", "armor_iron", "armor_golden", "armor_steel", "armor_diamond", "armor_boron", "armor_manyullyn", "armor_myrmex", "armor_tough"]
       },
       {
         # TIC Default
@@ -128,8 +301,6 @@ static slots as IEntityEquipmentSlot[] = [
   IEntityEquipmentSlot.mainHand(),
   IEntityEquipmentSlot.offhand()
 ] as IEntityEquipmentSlot[];
-# static slotsConvert as int[] = [4, 5, 3, 2, 1, 0] as int[];
-# static slotsOffset as double[] = [1.0d, 0.1d, 0.4d, 0.6d, 0.8d, 0.2d] as double[];
 
 # -------------------------------
 # MATERIALS
@@ -159,12 +330,12 @@ static armDefinitions as string[][] = [
 ] as string[][];
 
 
-function rnd2()  as double { var a as double = random(); return a*a; }
-function rnd2n() as double { return 1.0d - rnd2(); }
+// function rnd2()  as double { var a as double = random(); return a*a; }
+// function rnd2n() as double { return 1.0d - rnd2(); }
+//function rnd_qubic_() as double { return 1.0d - rnd_qubic(); }
+//function pick_liner(list as IData) as string { return list[(random()    * (list.length as double)) as int].asString(); }
 function rnd_qubic()  as double { var a as double = random(); return a*a*a; }
-function rnd_qubic_() as double { return 1.0d - rnd_qubic(); }
 function equipProbability(offset as double) as bool { return random() <= 0.75d * offset; }
-function pick_liner(list as IData) as string { return list[(random()    * (list.length as double)) as int].asString(); }
 function pick_qubic(list as IData) as string { return list[(rnd_qubic() * (list.length as double)) as int].asString(); }
 
 function rndToolPart(mats as IData) as ITICMaterial{
@@ -188,6 +359,7 @@ function buildTiCTool(slotId as int, matList as ITICMaterial[], def as IItemDefi
   return null;
 }
 
+# Search armorEntitys for entity ID
 function getGroup(entity as IEntityLivingBase) as IData {
   for group in armorEntitys{
     for i in 0 to group.entityID.length{
@@ -199,6 +371,7 @@ function getGroup(entity as IEntityLivingBase) as IData {
   return null;
 }
 
+# Lookup for item based on probability of each weight
 function getWeightedIndex(data as IData) as int {
   var k = 0;
   var wRand as int[] = [] as int[];
@@ -229,7 +402,7 @@ function addEquipment(iGroup as IData, entity as IEntityLivingBase, world as IWo
   var equipSequence = [4, 1, 2, 3, 0, 5] as int[];
 
   # Calculate probabilities
-  var tolerance = (world.dimension==0) ? 0.7d : 0.4d;
+  var tolerance = (world.dimension==0) ? 0.6d : 0.45d;
 
   for j in 0 to 6{
     if ( probs[j] > tolerance ) {
@@ -282,20 +455,21 @@ function addEquipment(iGroup as IData, entity as IEntityLivingBase, world as IWo
 # Spawn Event
 # -------------------------------
 function onSpawnEvent(e as EntityLivingSpawnEvent){
-  e.pass();
   var entity = e.entityLivingBase;
   var iGroup = getGroup(entity);# Chose IData
-  if (isNull(iGroup)){ return null; }
+  if (!isNull(iGroup)){
+    addEquipment(iGroup, entity, e.world);
+  }
 
-  addEquipment(iGroup, entity, e.world);
+  e.pass();
 }
 
 # -------------------------------
 # Hook on events
 # -------------------------------
-events.onSpecialSpawn(function(event as EntityLivingSpawnEvent){
-  onSpawnEvent(event);
-});
+// events.onSpecialSpawn(function(event as EntityLivingSpawnEvent){
+//   onSpawnEvent(event);
+// });
 
 events.onCheckSpawn(function(event as EntityLivingSpawnEvent){
   onSpawnEvent(event);
