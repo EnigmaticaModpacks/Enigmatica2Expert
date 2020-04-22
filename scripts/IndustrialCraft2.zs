@@ -1,6 +1,7 @@
 import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.item.IIngredient;
+import mods.ic2.ScrapBox;
 #modloaded ic2
 
 
@@ -178,3 +179,39 @@ import crafttweaker.item.IIngredient;
 remakeEnvelop(<ic2:block_cutting_blade>,   <ore:stone>,        <tconstruct:large_sword_blade>.withTag({Material: "iron"}));
 remakeEnvelop(<ic2:block_cutting_blade:1>, <ore:blockIron>,    <tconstruct:large_sword_blade>.withTag({Material: "steel"}));
 remakeEnvelop(<ic2:block_cutting_blade:2>, <ore:blockDiamond>, <tconstruct:large_sword_blade>.withTag({Material: "alumite"}));
+
+# New Scraps
+ScrapBox.addDrop(<forestry:chipsets>.withTag({T: 0 as short}), 0.1F);
+ScrapBox.addDrop(<forestry:chipsets:1>.withTag({T: 1 as short}), 0.06F);
+ScrapBox.addDrop(<forestry:chipsets:2>.withTag({T: 2 as short}), 0.04F);
+ScrapBox.addDrop(<forestry:chipsets:3>.withTag({T: 3 as short}), 0.01F);
+ScrapBox.addDrop(<actuallyadditions:item_crystal_shard>, 0.1F);
+ScrapBox.addDrop(<actuallyadditions:item_crystal_shard:1>, 0.1F);
+ScrapBox.addDrop(<actuallyadditions:item_crystal_shard:2>, 0.1F);
+ScrapBox.addDrop(<actuallyadditions:item_crystal_shard:3>, 0.1F);
+ScrapBox.addDrop(<actuallyadditions:item_crystal_shard:4>, 0.1F);
+ScrapBox.addDrop(<actuallyadditions:item_crystal_shard:5>, 0.1F);
+ScrapBox.addDrop(<extrautils2:klein>, 0.1F);
+ScrapBox.addDrop(<extrautils2:decorativesolid:3>, 0.4F);
+ScrapBox.addDrop(<extrautils2:decorativesolid:7>, 0.4F);
+ScrapBox.addDrop(<industrialforegoing:pink_slime>, 0.3F);
+ScrapBox.addDrop(<industrialforegoing:plastic>, 1.1F);
+ScrapBox.addDrop(<nuclearcraft:upgrade>, 0.9F);
+ScrapBox.addDrop(<nuclearcraft:upgrade:1>, 0.9F);
+ScrapBox.addDrop(<appliedenergistics2:fluix_block>, 0.2F);
+ScrapBox.addDrop(<appliedenergistics2:material:6>, 4.0F);
+ScrapBox.addDrop(<appliedenergistics2:material:52>, 0.6F);
+ScrapBox.addDrop(<immersiveengineering:stone_decoration:8>, 0.4F);
+ScrapBox.addDrop(<immersiveengineering:material:5>, 0.6F);
+ScrapBox.addDrop(<immersiveengineering:material:26>, 0.1F);
+ScrapBox.addDrop(<mekanism:mufflingupgrade>, 1.5F);
+ScrapBox.addDrop(<mekanism:substrate>, 2.4F);
+ScrapBox.addDrop(<mekanism:polyethene:2>, 0.9F);
+ScrapBox.addDrop(<mekanismgenerators:hohlraum>, 2.1F);
+ScrapBox.addDrop(<thermalfoundation:diagram_redprint>, 3.1F);
+ScrapBox.addDrop(<thermalfoundation:material:864>, 2.8F);
+ScrapBox.addDrop(<thermalexpansion:frame:64>, 0.05F);
+ScrapBox.addDrop(<psi:cad_colorizer_:17>, 0.1F);
+ScrapBox.addDrop(<rftools:syringe>, 1.7F);
+ScrapBox.addDrop(<rftools:shape_card>, 0.3F);
+ScrapBox.addDrop(<rftoolsdim:dimlet_parcel>, 0.03F);
