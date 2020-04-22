@@ -21,10 +21,6 @@ recipes.addShaped(littletilesImporter, [
 	[<minecraft:iron_ingot>, <littletiles:recipe>, <minecraft:iron_ingot>], 
 	[<minecraft:iron_ingot>, <minecraft:redstone>, <minecraft:iron_ingot>]]);
 
-// var littletilesChisel = <littletiles:chisel>.withTag({preview: {bBox: [0, 0, 0, 1, 1, 1] as int[], tile: {block: "minecraft:stone"}}});
-// recipes.remove(<littletiles:chisel>);
-// recipes.addShapeless(littletilesChisel, [<chiselsandbits:chisel_diamond>, <littletiles:recipe>]);
-
 # Storage tiles
 recipes.remove(<littletiles:ltstorageblocktile>);
 recipes.addShaped(<littletiles:ltstorageblocktile>, [

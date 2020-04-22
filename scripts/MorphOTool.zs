@@ -17,7 +17,6 @@ recipes.addShaped("Morphing Tool", <morphtool:tool>, [
 	thermalfoundation: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "thermalfoundation:wrench", Count: 1 as byte, Damage: 0 as short}, 
 	extrautils2: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "extrautils2:wrench", Count: 1 as byte, Damage: 0 as short}, 
 	actuallyadditions: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "actuallyadditions:item_laser_wrench", Count: 1 as byte, Damage: 0 as short}, 
-	chiselsandbits: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "chiselsandbits:wrench_wood", Count: 1 as byte, Damage: 0 as short}, 
 	ic2: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "ic2:wrench", Count: 1 as byte, Damage: 0 as short}, 
 	opencomputers: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "opencomputers:wrench", Count: 1 as byte, Damage: 0 as short}, 
 	integrateddynamics: {id: "integrateddynamics:wrench", Count: 1 as byte, Damage: 0 as short}, 
