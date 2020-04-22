@@ -8,6 +8,7 @@
 !schematics/
 !minemenu/
 !.gitignore
+!.gitattributes
 
 # Files created by luncher
 config/splash.properties
