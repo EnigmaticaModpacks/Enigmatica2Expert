@@ -112,7 +112,9 @@ while (k < listShield.length) {
   }
 
   # Recycling
-  mods.immersiveengineering.ArcFurnace.addRecipe(recycle * 8, shield, <immersiveengineering:material:7>, 800, 2048);
+  if(!isNull(recycle)) {
+    mods.immersiveengineering.ArcFurnace.addRecipe(recycle * 8, shield, <immersiveengineering:material:7>, 800, 2048);
+  }
 
   k += 3;
 }
