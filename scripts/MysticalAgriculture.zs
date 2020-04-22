@@ -1,6 +1,8 @@
-import mods.jei.JEI.removeAndHide as rh;
+import crafttweaker.item.IItemStack;
 #modloaded mysticalagriculture
 
+# Enderman Chunks -> Ender Pearls
+mods.nuclearcraft.pressurizer.addRecipe(<mysticalagriculture:chunk:19> * 2, <minecraft:ender_pearl>);
 
 # Wither Proof Blocks
 recipes.addShapedMirrored("Wither Proof Block", 
@@ -711,6 +713,24 @@ recipes.addShapedMirrored("Wither Proof Glass",
 	rh(<mysticalagriculture:nether_inferium_ore>);
 	rh(<mysticalagriculture:end_inferium_ore>);
 	
+var itemsToRemoveAndHide as IItemStack[] = [
+	<mysticalagriculture:chunk>,
+	<mysticalagriculture:chunk:1>,
+	<mysticalagriculture:chunk:2>,
+	<mysticalagriculture:chunk:3>,
+	<mysticalagriculture:chunk:4>,
+	<mysticalagradditions:insanium:4>,
+	<mysticalagriculture:nether_prosperity_ore>,
+	<mysticalagriculture:end_prosperity_ore>,
+	<mysticalagriculture:inferium_ore>,
+	<mysticalagriculture:nether_inferium_ore>,
+	<mysticalagriculture:end_inferium_ore>
+];
+
+for item in itemsToRemoveAndHide {
+	mods.jei.JEI.removeAndHide(item);
+}
+
 # *======= Unification =======*
 
 # Sulfur Essence to Dust

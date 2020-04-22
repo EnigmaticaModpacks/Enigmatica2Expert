@@ -5,6 +5,12 @@ import mods.ic2.ScrapBox;
 #modloaded ic2
 
 
+# Hydrated Coal Dust recipe consumes containers that can store 1000mB + liquid, this fixes that
+	recipes.remove(<ic2:dust:3>);
+	recipes.addShapeless("ic2_hydrated_coal_dust_liquid_fix", 
+	<ic2:dust:3>, 
+	[<ore:dustCoal>,<liquid:water> * 1000]);
+
 # Removing IC2 coal coke
 	recipes.remove(<ic2:coke>);
 	

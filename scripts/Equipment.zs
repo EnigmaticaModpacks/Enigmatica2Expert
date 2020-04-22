@@ -16,55 +16,6 @@ for item in [
 
 # ######################################################################
 #
-# Remove excess
-#
-# ######################################################################
-
-
-# ######################################################################
-#
-# Dank Null
-#
-# ######################################################################
-
-
-////////////////////////////////////
-// Removing non-chained recipes
-for i in 1 to 6 {
-	recipes.removeByRecipeName("danknull:dank_null_" ~ i);
-}
-
-////////////////////////////////////
-// Change panel recipes
-function dankPanelCraft(index as int, matPrimary as IIngredient, matSecondary as IIngredient){
-    var recipeName = "danknull:dank_null_panel_" ~ index;
-	var item = itemUtils.getItem(recipeName);
-	var cb = <minecraft:coal_block>;
-
-	recipes.removeByRecipeName(recipeName);
-	mods.extendedcrafting.EnderCrafting.addShaped(item, [
-		[matSecondary, cb, matSecondary], 
-		[cb, matPrimary, cb], 
-		[matSecondary, cb, matSecondary]
-		] as IIngredient[][]);
-
-	// recipes.addShaped("danknull_dank_null_panel_" ~ index, item, [
-	// 	[matSecondary, cb, matSecondary], 
-	// 	[cb, matPrimary, cb], 
-	// 	[matSecondary, cb, matSecondary]
-	// ]);
-}
-
-dankPanelCraft(0, <ore:paneGlassRed>,	<ore:blockRedstone>);
-dankPanelCraft(1, <ic2:te:111>, 			<ore:blockLapis>);
-dankPanelCraft(2, <ic2:te:112>, 			<ore:blockIron>);
-dankPanelCraft(3, <ic2:te:113>,				<ore:blockGold>);
-dankPanelCraft(4, <ic2:te:114>,				<ore:blockDiamond>);
-dankPanelCraft(5, <ic2:te:115>,				<ore:blockEmerald>);
-
-
-# ######################################################################
-#
 # Exchangers + gadgets
 #
 # ######################################################################

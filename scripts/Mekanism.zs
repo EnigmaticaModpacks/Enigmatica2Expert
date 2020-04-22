@@ -7,6 +7,33 @@ import crafttweaker.item.IItemStack as IItemStack;
 mods.mekanism.combiner.removeAllRecipes();
 recipes.remove(<mekanism:machineblock:2>);
 
+
+# Unifying Graphite ingots, seems the crusher was overlooked
+mods.mekanism.crusher.removeRecipe(<bigreactors:dustmetals:2>, <bigreactors:ingotmetals:2>);
+
+for ingot in <ore:ingotGraphite>.items {
+	mods.mekanism.crusher.addRecipe(ingot, <nuclearcraft:dust:8>);
+}
+
+
+# Energized Smelter is not entirely unified, this should fix that
+var itemsToUnify as IItemStack[IItemStack] = {
+	<ic2:crushed> : <thermalfoundation:material:128>,
+	<ic2:crushed:3> : <thermalfoundation:material:131>,
+	<ic2:crushed:4> : <thermalfoundation:material:130>,
+	<ic2:crushed:5> : <thermalfoundation:material:129>,
+	<ic2:purified> : <thermalfoundation:material:128>,
+	<ic2:purified:3> : <thermalfoundation:material:131>,
+	<ic2:purified:4> : <thermalfoundation:material:130>,
+	<ic2:purified:5> : <thermalfoundation:material:129>
+};
+
+for input, output in itemsToUnify {
+	mods.mekanism.smelter.removeRecipe(input);
+
+	mods.mekanism.smelter.addRecipe(input, output);
+}
+
 # Starmetal Ingots
 	mods.mekanism.smelter.addRecipe(<astralsorcery:itemcraftingcomponent:2>, <astralsorcery:itemcraftingcomponent:1>);
 	

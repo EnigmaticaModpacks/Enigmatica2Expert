@@ -1,18 +1,34 @@
+import crafttweaker.item.IIngredient;
+
 #modloaded danknull
 
 recipes.remove(<danknull:danknull_dock>);
 
-// recipes.remove(<danknull:dank_null_5>);
-// recipes.addShaped("danknull_dank_null_5_from_danknull_dank_null_4_preserve_data", 
-//     <danknull:dank_null_5>, 
-//     [[null, <botania:blackholetalisman>|<botania:blackholetalisman>.withTag({}), null],
-//     [null, <danknull:dank_null_4>.withTag({}).marked("danknull"), null],
-//     [null, null, null]],
 
-//     function(out, ins, cInfo) {
-//         if(ins.danknull.tag has "danknull-inventory") {
-//             return out.withTag({"danknull-inventory": ins.danknull.tag["danknull-inventory"]});
-//         }
-//         return ins;
-//     }, 
-//     null);
+////////////////////////////////////
+// Removing non-chained recipes
+for i in 1 to 6 {
+	recipes.removeByRecipeName("danknull:dank_null_" ~ i);
+}
+
+////////////////////////////////////
+// Change panel recipes
+function dankPanelCraft(index as int, matPrimary as IIngredient, matSecondary as IIngredient){
+    var recipeName = "danknull:dank_null_panel_" ~ index;
+	var item = itemUtils.getItem(recipeName);
+	var cb = <minecraft:coal_block>;
+
+	recipes.removeByRecipeName(recipeName);
+	mods.extendedcrafting.EnderCrafting.addShaped(item, [
+		[matSecondary, cb, matSecondary], 
+		[cb, matPrimary, cb], 
+		[matSecondary, cb, matSecondary]
+		] as IIngredient[][]);
+}
+
+# dankPanelCraft(0, <ore:paneGlassRed>,	<ore:blockRedstone>);
+dankPanelCraft(1, <ic2:te:111>, 			<ore:blockLapis>);
+dankPanelCraft(2, <ic2:te:112>, 			<ore:blockIron>);
+dankPanelCraft(3, <ic2:te:113>,				<ore:blockGold>);
+dankPanelCraft(4, <ic2:te:114>,				<ore:blockDiamond>);
+dankPanelCraft(5, <ic2:te:115>,				<ore:blockEmerald>);

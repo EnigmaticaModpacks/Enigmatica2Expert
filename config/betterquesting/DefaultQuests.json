@@ -1709,7 +1709,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Creative Rod Frame",
+          "name:8": "Creative CAD Assembly",
           "desc:8": "Creative Psi Power! "
         }
       },
@@ -31726,7 +31726,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Gas Charge Pad",
-          "desc:8": "The Gas Charge Pad is a simple machine that can fill items with Hydrogen or Oxygen without using RF.\n\nSimply pipe in the gas you want and insert any container that you want to insert the gas into.\n\nMost importantly though, standing on top of it with either a Space Suit Chest-Piece or a chestplate enchanted with Airtight Seal equipped will fill it with Oxygen. This is required to not die when on a planet with no atmosphere."
+          "desc:8": "The Gas Charge Pad is a simple machine that can fill items with Hydrogen or Oxygen without using RF.\n\nSimply pipe in the gas you want and insert any container that you want to insert the gas into.\n\nMost importantly though, standing on top of it with either a Space Suit Chest-Piece with a tank installed or a chestplate enchanted with Airtight Seal equipped will fill it with Oxygen. This is required to not die when on a planet with no atmosphere."
         }
       },
       "tasks:9": {
