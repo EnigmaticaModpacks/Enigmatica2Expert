@@ -1,4 +1,6 @@
 
+import mods.jei.JEI.removeAndHide as rh;
+
 # Telekinetic alloy
 recipes.remove(<cd4017be_lib:m:402>);
 recipes.addShapeless(<cd4017be_lib:m:402>, [<ore:dustDiamond>, <ore:dustLapis>, <randomthings:ingredient:7>]);

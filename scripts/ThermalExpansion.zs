@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 #modloaded thermalexpansion
 print("--- loading ThermalExpansion.zs ---");
 
@@ -205,5 +206,20 @@ print("--- loading ThermalExpansion.zs ---");
 # Tanks and Energy Cells
 	teConversionKits(<thermalexpansion:tank>);
 	teConversionKits(<thermalexpansion:cell>);
+
+// # Dynamo harder recipes
+function remakeDynamo(name as string, item as IItemStack, i1 as IIngredient, i2 as IIngredient){
+	remake("ThermalExpansion Dynamo " ~ name, item, [
+		[null, <actuallyadditions:battery_quintuple_bauble>, null],
+		[<thermalfoundation:material:514>, i1 , <thermalfoundation:material:514>],
+		[i2, <mekanism:tierinstaller:1>, i2]]);
+}
+
+remakeDynamo("0", <thermalexpansion:dynamo>,   <ore:plateCopper>,     <ore:gearCopper>);
+remakeDynamo("1", <thermalexpansion:dynamo:1>, <ore:plateInvar>,      <ore:gearInvar>);
+remakeDynamo("2", <thermalexpansion:dynamo:2>, <ore:plateTin>,        <ore:gearTin>);
+remakeDynamo("3", <thermalexpansion:dynamo:3>, <ore:plateLead>,       <ore:gearLead>);
+remakeDynamo("4", <thermalexpansion:dynamo:4>, <ore:plateElectrum>,   <ore:gearElectrum>);
+remakeDynamo("5", <thermalexpansion:dynamo:5>, <ore:plateConstantan>, <ore:gearConstantan>);
 
 		print("--- ThermalExpansion.zs initialized ---");

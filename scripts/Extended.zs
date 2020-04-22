@@ -5,12 +5,9 @@ import crafttweaker.oredict.IOreDictEntry;
 import mods.jei.JEI.removeAndHide as rh;
 import mods.immersivetweaker.Recycling;
 import mods.inworldcrafting.FluidToItem.transform as fti;
-import mods.tcomplement.highoven.HighOven;
-import mods.tcomplement.highoven.MixRecipeBuilder;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.data.IData;
 
-import mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput as ncAlloyRm;
 
 #priority -1
 
@@ -101,6 +98,7 @@ ITEMS OF INTEREST
 <forge:bucketfilled>.withTag({FluidName: "liquid_sunshine", Amount: 1000})
 <forge:bucketfilled>.withTag({FluidName: "blockfluiddirt", Amount: 1000})
 
+<opencomputers:robot>
 <opencomputers:print>
 
 ---------------------
