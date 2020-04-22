@@ -1,0 +1,621 @@
+{"Default": [
+    {
+        "output": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 1L,
+                "item": "mysticalagriculture:gear",
+                "meta": 3
+            }
+        }],
+        "input": [
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 4L,
+                    "item": "mysticalagriculture:crafting",
+                    "meta": 3
+                }
+            },
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 1L,
+                    "item": "minecraft:diamond_block"
+                }
+            },
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 3L,
+                    "item": "minecraft:emerald"
+                }
+            },
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 1L,
+                    "item": "mysticalagriculture:gear",
+                    "meta": 2
+                }
+            }
+        ],
+        "catalyst": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 1L,
+                "item": "minecraft:crafting_table"
+            }
+        }]
+    },
+    {
+        "output": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 1L,
+                "item": "mysticalagriculture:gear",
+                "meta": 2
+            }
+        }],
+        "input": [
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 4L,
+                    "item": "mysticalagriculture:crafting",
+                    "meta": 2
+                }
+            },
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 1L,
+                    "item": "minecraft:gold_block"
+                }
+            },
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 3L,
+                    "item": "minecraft:diamond"
+                }
+            },
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 1L,
+                    "item": "mysticalagriculture:gear",
+                    "meta": 1
+                }
+            }
+        ],
+        "catalyst": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 1L,
+                "item": "minecraft:crafting_table"
+            }
+        }]
+    },
+    {
+        "output": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 1L,
+                "item": "mysticalagriculture:gear",
+                "meta": 1
+            }
+        }],
+        "input": [
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 4L,
+                    "item": "mysticalagriculture:crafting",
+                    "meta": 1
+                }
+            },
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 1L,
+                    "item": "minecraft:lapis_block"
+                }
+            },
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 3L,
+                    "item": "minecraft:gold_ingot"
+                }
+            },
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 1L,
+                    "item": "mysticalagriculture:gear"
+                }
+            }
+        ],
+        "catalyst": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 1L,
+                "item": "minecraft:crafting_table"
+            }
+        }]
+    },
+    {
+        "output": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 1L,
+                "item": "mysticalagriculture:gear"
+            }
+        }],
+        "input": [
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 4L,
+                    "item": "mysticalagriculture:crafting"
+                }
+            },
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 1L,
+                    "item": "minecraft:gold_ingot"
+                }
+            },
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 3L,
+                    "item": "minecraft:flint"
+                }
+            },
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 1L,
+                    "item": "mysticalagriculture:crafting",
+                    "meta": 32
+                }
+            }
+        ],
+        "catalyst": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 1L,
+                "item": "minecraft:crafting_table"
+            }
+        }]
+    },
+    {
+        "output": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 1L,
+                "item": "minecraft:diamond_block"
+            }
+        }],
+        "input": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 9L,
+                "item": "minecraft:diamond"
+            }
+        }],
+        "catalyst": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 1L,
+                "item": "minecraft:crafting_table"
+            }
+        }]
+    },
+    {
+        "output": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 1L,
+                "item": "mysticalagriculture:crafting",
+                "meta": 3
+            }
+        }],
+        "input": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 4L,
+                "item": "mysticalagriculture:crafting",
+                "meta": 2
+            }
+        }],
+        "catalyst": [
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 1L,
+                    "item": "minecraft:crafting_table"
+                }
+            },
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 1L,
+                    "item": "mysticalagriculture:master_infusion_crystal",
+                    "cap": {"astralsorcery:cap_item_amulet_holder": {}}
+                }
+            }
+        ]
+    },
+    {
+        "output": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 1L,
+                "item": "mysticalagriculture:crafting",
+                "meta": 2
+            }
+        }],
+        "input": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 4L,
+                "item": "mysticalagriculture:crafting",
+                "meta": 1
+            }
+        }],
+        "catalyst": [
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 1L,
+                    "item": "minecraft:crafting_table"
+                }
+            },
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 1L,
+                    "item": "mysticalagriculture:master_infusion_crystal",
+                    "cap": {"astralsorcery:cap_item_amulet_holder": {}}
+                }
+            }
+        ]
+    },
+    {
+        "output": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 1L,
+                "item": "mysticalagriculture:crafting",
+                "meta": 1
+            }
+        }],
+        "input": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 4L,
+                "item": "mysticalagriculture:crafting"
+            }
+        }],
+        "catalyst": [
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 1L,
+                    "item": "minecraft:crafting_table"
+                }
+            },
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 1L,
+                    "item": "mysticalagriculture:master_infusion_crystal",
+                    "cap": {"astralsorcery:cap_item_amulet_holder": {}}
+                }
+            }
+        ]
+    },
+    {
+        "output": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 1L,
+                "item": "minecraft:lapis_block"
+            }
+        }],
+        "input": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 9L,
+                "item": "minecraft:dye",
+                "meta": 4
+            }
+        }],
+        "catalyst": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 1L,
+                "item": "minecraft:crafting_table"
+            }
+        }]
+    },
+    {
+        "output": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 1L,
+                "item": "minecraft:gold_block"
+            }
+        }],
+        "input": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 9L,
+                "item": "minecraft:gold_ingot"
+            }
+        }],
+        "catalyst": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 1L,
+                "item": "minecraft:crafting_table"
+            }
+        }]
+    },
+    {
+        "output": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 1L,
+                "item": "matc:intermediumcrystal",
+                "cap": {"astralsorcery:cap_item_amulet_holder": {}},
+                "fMeta": 1b
+            }
+        }],
+        "input": [
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 4L,
+                    "item": "mysticalagriculture:crafting",
+                    "meta": 5
+                }
+            },
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 4L,
+                    "item": "mysticalagriculture:crafting",
+                    "meta": 2
+                }
+            },
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 1L,
+                    "item": "matc:prudentiumcrystal",
+                    "cap": {"astralsorcery:cap_item_amulet_holder": {}},
+                    "fMeta": 1b
+                }
+            }
+        ],
+        "catalyst": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 1L,
+                "item": "minecraft:crafting_table"
+            }
+        }]
+    },
+    {
+        "output": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 1L,
+                "item": "matc:prudentiumcrystal",
+                "cap": {"astralsorcery:cap_item_amulet_holder": {}},
+                "fMeta": 1b
+            }
+        }],
+        "input": [
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 4L,
+                    "item": "mysticalagriculture:crafting",
+                    "meta": 5
+                }
+            },
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 4L,
+                    "item": "mysticalagriculture:crafting",
+                    "meta": 1
+                }
+            },
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 1L,
+                    "item": "matc:inferiumcrystal",
+                    "cap": {"astralsorcery:cap_item_amulet_holder": {}},
+                    "fMeta": 1b
+                }
+            }
+        ],
+        "catalyst": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 1L,
+                "item": "minecraft:crafting_table"
+            }
+        }]
+    },
+    {
+        "output": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 1L,
+                "item": "matc:inferiumcrystal",
+                "cap": {"astralsorcery:cap_item_amulet_holder": {}},
+                "fMeta": 1b
+            }
+        }],
+        "input": [
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 4L,
+                    "item": "mysticalagriculture:crafting",
+                    "meta": 5
+                }
+            },
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 4L,
+                    "item": "mysticalagriculture:crafting"
+                }
+            },
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 1L,
+                    "item": "mysticalagriculture:infusion_crystal",
+                    "cap": {"astralsorcery:cap_item_amulet_holder": {}}
+                }
+            }
+        ],
+        "catalyst": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 1L,
+                "item": "minecraft:crafting_table"
+            }
+        }]
+    },
+    {
+        "output": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 1L,
+                "item": "mysticalagriculture:gear",
+                "meta": 4
+            }
+        }],
+        "input": [
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 4L,
+                    "item": "mysticalagriculture:crafting",
+                    "meta": 4
+                }
+            },
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 1L,
+                    "item": "minecraft:nether_star"
+                }
+            },
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 3L,
+                    "item": "minecraft:skull",
+                    "meta": 1
+                }
+            },
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 1L,
+                    "item": "mysticalagriculture:gear",
+                    "meta": 3
+                }
+            }
+        ],
+        "catalyst": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 1L,
+                "item": "minecraft:crafting_table"
+            }
+        }]
+    },
+    {
+        "output": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 1L,
+                "item": "mysticalagriculture:crafting",
+                "meta": 4
+            }
+        }],
+        "input": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 4L,
+                "item": "mysticalagriculture:crafting",
+                "meta": 3
+            }
+        }],
+        "catalyst": [
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 1L,
+                    "item": "minecraft:crafting_table"
+                }
+            },
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 1L,
+                    "item": "mysticalagriculture:master_infusion_crystal",
+                    "cap": {"astralsorcery:cap_item_amulet_holder": {}}
+                }
+            }
+        ]
+    },
+    {
+        "output": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 1L,
+                "item": "mysticalagradditions:insanium"
+            }
+        }],
+        "input": [{
+            "type": "itemStack",
+            "content": {
+                "amount": 4L,
+                "item": "mysticalagriculture:crafting",
+                "meta": 4
+            }
+        }],
+        "catalyst": [
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 1L,
+                    "item": "minecraft:crafting_table"
+                }
+            },
+            {
+                "type": "itemStack",
+                "content": {
+                    "amount": 1L,
+                    "item": "mysticalagriculture:master_infusion_crystal",
+                    "cap": {"astralsorcery:cap_item_amulet_holder": {}}
+                }
+            }
+        ]
+    }
+]}
