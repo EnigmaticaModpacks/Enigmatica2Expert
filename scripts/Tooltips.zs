@@ -183,10 +183,6 @@ for item in thaumcraftHintItems {
 	ad(<thermalfoundation:material:514>,"Requires 160 Redstone Units.");
 	ad(<thermalfoundation:material:515>,"Requires 160 Redstone Units.");
 
-# Special Gas Tank Item
-	ad(<chiselsandbits:chiseled_fluid>.withTag({side: 3, RepairCost: 0, BlockEntityTag: {b: 3593, side: 3 as byte, s: 1, nc: 0 as byte, X: [120, -38, 99, 96, 103, -104, -63, -72, 99, 22, 75, -89, -52, -33, -55, 50, 19, -101, 116, 118, 78, -28, 104, 96, -2, -62, 122, 59, 119, 3, -125, 1, 3, 3, 27, 3, -37, 36, -49, 73, -98, 6, 20, -79, 55, -128, -39, -73, 115, 25, -112, -128, -89, -54, 6, 6, 5, -112, 56, -21, -74, -37, -37, 110, 43, -128, -40, -84, -28, -78, 13, 64, 108, -96, 93, -71, -37, 26, 64, 70, 51, 50, 48, -26, 46, 32, -42, 124, 1, 56, 91, -128, -128, -7, 75, 38, 58, 48, -63, -52, 119, 32, -46, -3, 2, 56, -20, -62, 102, -2, -94, 32, 71, 5, -122, 65, 102, 62, 41, -31, 79, 78, -8, -112, 31, -65, -76, 72, -97, 0, 93, 17, -69, -123] as byte[] as byte[], lv: 11}, display: {Name: "Creative Gas Tank Frame"}}),
-	"This item is a crafting ingredient for the Creative Gas Tank.");
-
 # Reinforced Cell Frame (full)
 	ad(<thermalexpansion:frame:146>, "The Reinforced Cell Frame (Full) can only be made in a Fluid Transposer with an internal buffer of 250.000 RF or more.");
 
@@ -522,74 +518,336 @@ for item in thaumcraftHintItems {
 
 # Tooltips for IC2 matter fabricator
 	var uumatterTooltips = [
-		"actuallyadditions:block_misc",           "9",     "1600",
-		"actuallyadditions:item_misc",            "8",     "600",
-		"computercraft:computer",                 "16384", "600",
-		"draconicevolution:chaos_shard",          "0",     "600000",
-		"draconicevolution:chaos_shard",          "1",     "66667",
-		"draconicevolution:chaos_shard",          "2",     "7407",
-		"draconicevolution:chaos_shard",          "3",     "823",
-		"draconicevolution:dragon_heart",         "0",     "200000",
-		"draconicevolution:fusion_crafting_core", "0",     "100000",
-		"environmentaltech:litherite_crystal",    "0",     "6000",
-		"extrautils2:machine",                    "0",     "450",
-		"forestry:hardened_machine",              "0",     "1800",
-		"ic2:crafting",                           "1",     "80",
-		"ic2:crafting",                           "3",     "180",
-		"ic2:nuclear",                            "3",     "21324",
-		"ic2:nuclear",                            "7",     "2369",
-		"ic2:resource",                           "13",    "1600",
-		"immersiveengineering:metal_decoration0", "3",     "950",
-		"immersiveengineering:metal_decoration0", "4",     "1600",
-		"immersiveengineering:metal_decoration0", "5",     "2500",
-		"mekanism:basicblock",                    "8",     "1750",
-		"mekanism:controlcircuit",                "3",     "1500",
-		"minecraft:cookie",                       "0",     "10",
-		"minecraft:skull",                        "1",     "5000",
-		"quark:crystal",                          "0",     "25",
-		"quark:crystal",                          "1",     "25",
-		"quark:crystal",                          "2",     "25",
-		"quark:crystal",                          "3",     "25",
-		"quark:crystal",                          "4",     "25",
-		"quark:crystal",                          "5",     "25",
-		"quark:crystal",                          "6",     "25",
-		"quark:crystal",                          "7",     "25",
-		"rftools:machine_frame",                  "0",     "2600",
-		"teslacorelib:machine_case",              "0",     "1900",
-		"thermalexpansion:frame",                 "0",     "4000",
-		"rats:ancient_sawblade",                  "0",     "3900",
-		"rats:arcane_technology",                 "0",     "3900",
-		"rats:block_of_cheese",                   "0",     "180",
-		"rats:charged_creeper_chunk",             "0",     "600",
-		"rats:cheese",                            "0",     "30",
-		"rats:chunky_cheese_token",               "0",     "450000",
-		"rats:token_piece",                       "0",     "4500",
-		"rats:token_fragment",                    "0",     "450",
-		"rats:tiny_coin",                         "0",     "45",
-		"rats:compressed_rat",                    "0",     "600",
-		"rats:feral_bagh_nakhs",                  "0",     "1200",
-		"rats:feral_rat_claw",                    "0",     "2400",
-		"rats:gem_of_ratlantis",                  "0",     "2400",
-		"rats:herb_bundle",                       "0",     "300",
-		"rats:idol_of_ratlantis",                 "0",     "2400",
-		"rats:little_black_squash_balls",         "0",     "60",
-		"rats:marbled_cheese_golem_core",         "0",     "3900",
-		"rats:marbled_cheese_rat_head",           "0",     "1950",
-		"rats:marbled_cheese_raw",                "0",     "8",
-		"rats:plague_leech",                      "0",     "600",
-		"rats:psionic_rat_brain",                 "0",     "3900",
-		"rats:rat_breeding_lantern",              "0",     "1050",
-		"rats:rat_cage",                          "0",     "600",
-		"rats:rat_diamond",                       "0",     "300",
-		"rats:rat_toga",                          "0",     "840",
-		"rats:rat_upgrade_basic_ratlantean",      "0",     "1125",
-		"rats:rat_upgrade_basic",                 "0",     "390",
-		"rats:rat_upgrade_combined",              "0",     "1650",
-		"rats:ratglove_flower",                   "0",     "105",
-		"rats:ratglove_petals",                   "0",     "1050",
-		"rats:ratlantean_flame",                  "0",     "570",
-		"rats:treacle",                           "0",     "3900",
-		"rats:vial_of_sentience",                 "0",     "1950",
+"ic2:crafting", "1", "800"
+"ic2:crafting", "3", "1800"
+"ic2:resource", "13", "16000"
+"thermalexpansion:frame", "0", "40000"
+"actuallyadditions:item_misc", "8", "6000"
+"rftools:machine_frame", "0", "26000"
+"teslacorelib:machine_case", "0", "19000"
+"actuallyadditions:block_misc", "9", "16000"
+"computercraft:computer", "16384", "6000"
+"environmentaltech:litherite_crystal", "0", "60000"
+"extrautils2:machine", "0", "4500"
+"mekanism:controlcircuit", "3", "15000"
+"forestry:hardened_machine", "0", "18000"
+"draconicevolution:fusion_crafting_core", "0", "1000000"
+"draconicevolution:dragon_heart", "0", "2000000"
+"draconicevolution:chaos_shard", "0", "6000000"
+"draconicevolution:chaos_shard", "1", "666670"
+"draconicevolution:chaos_shard", "2", "74070"
+"draconicevolution:chaos_shard", "3", "8230"
+"minecraft:cookie", "0", "100"
+"mekanism:basicblock", "8", "17500"
+"immersiveengineering:metal_decoration0", "3", "9500"
+"immersiveengineering:metal_decoration0", "4", "16000"
+"immersiveengineering:metal_decoration0", "5", "25000"
+"minecraft:skull", "1", "50000"
+"ic2:nuclear", "7", "23690"
+"ic2:nuclear", "3", "213240"
+"quark:crystal", "0", "25"
+"quark:crystal", "1", "25"
+"quark:crystal", "2", "25"
+"quark:crystal", "3", "25"
+"quark:crystal", "4", "25"
+"quark:crystal", "5", "25"
+"quark:crystal", "6", "25"
+"quark:crystal", "7", "25"
+"rats:ancient_sawblade", "0", "3900"
+"rats:arcane_technology", "0", "3900"
+"rats:block_of_cheese", "0", "180"
+"rats:charged_creeper_chunk", "0", "600"
+"rats:cheese", "0", "30"
+"rats:chunky_cheese_token", "0", "450000"
+"rats:token_piece", "0", "4500"
+"rats:token_fragment", "0", "450"
+"rats:tiny_coin", "0", "45"
+"rats:compressed_rat", "0", "600"
+"rats:feral_bagh_nakhs", "0", "1200"
+"rats:feral_rat_claw", "0", "2400"
+"rats:gem_of_ratlantis", "0", "2400"
+"rats:herb_bundle", "0", "300"
+"rats:idol_of_ratlantis", "0", "2400"
+"rats:little_black_squash_balls", "0", "60"
+"rats:marbled_cheese_golem_core", "0", "3900"
+"rats:marbled_cheese_rat_head", "0", "1950"
+"rats:marbled_cheese_raw", "0", "8"
+"rats:plague_leech", "0", "600"
+"rats:psionic_rat_brain", "0", "3900"
+"rats:rat_breeding_lantern", "0", "1050"
+"rats:rat_cage", "0", "600"
+"rats:rat_diamond", "0", "300"
+"rats:rat_toga", "0", "840"
+"rats:rat_upgrade_basic_ratlantean", "0", "1125"
+"rats:rat_upgrade_basic", "0", "390"
+"rats:rat_upgrade_combined", "0", "1650"
+"rats:ratglove_flower", "0", "105"
+"rats:ratglove_petals", "0", "1050"
+"rats:ratlantean_flame", "0", "570"
+"rats:treacle", "0", "3900"
+"rats:vial_of_sentience", "0", "1950"
+"actuallyadditions:item_crystal_shard", "0", "440"
+"actuallyadditions:item_crystal_shard", "1", "440"
+"actuallyadditions:item_crystal_shard", "2", "440"
+"actuallyadditions:item_crystal_shard", "3", "440"
+"actuallyadditions:item_crystal_shard", "4", "440"
+"actuallyadditions:item_crystal_shard", "5", "440"
+"appliedenergistics2:material", "0", "1371"
+"appliedenergistics2:sky_stone_block", "0", "37"
+"biomesoplenty:ash", "0", "282"
+"biomesoplenty:bamboo", "0", "17"
+"biomesoplenty:plant_1", "5", "17"
+"chisel:basalt2", "7", "49"
+"chisel:marble2", "7", "93"
+"deepmoblearning:glitch_infused_ingot", "0", "31000"
+"enderio:item_alloy_nugget", "0", "1920"
+"enderio:item_alloy_nugget", "1", "1920"
+"enderio:item_alloy_nugget", "2", "1920"
+"enderio:item_alloy_nugget", "3", "1920"
+"enderio:item_alloy_nugget", "4", "1920"
+"enderio:item_alloy_nugget", "5", "1920"
+"enderio:item_alloy_nugget", "6", "1920"
+"enderio:item_alloy_nugget", "7", "1920"
+"enderio:item_alloy_nugget", "8", "1920"
+"forestry:apatite", "0", "1515"
+"immersiveengineering:ore", "5", "246"
+"immersiveengineering:treated_wood", "0", "140"
+"mekanism:oreblock", "0", "261"
+"mekanism:polyethene", "0", "343"
+"minecraft:apple", "0", "37"
+"minecraft:beef", "0", "41"
+"minecraft:beetroot", "0", "18"
+"minecraft:beetroot_seeds", "0", "18"
+"minecraft:blaze_rod", "0", "4800"
+"minecraft:bone", "0", "39"
+"minecraft:book", "0", "160"
+"minecraft:bucket", "0", "240"
+"minecraft:carrot", "0", "18"
+"minecraft:chest", "0", "1200"
+"minecraft:chicken", "0", "41"
+"minecraft:chorus_fruit", "0", "290"
+"minecraft:clay_ball", "0", "56"
+"minecraft:coal", "0", "134"
+"minecraft:dirt", "0", "4"
+"minecraft:dye", "0", "40"
+"minecraft:dye", "1", "40"
+"minecraft:dye", "2", "40"
+"minecraft:dye", "3", "40"
+"minecraft:dye", "4", "40"
+"minecraft:dye", "5", "40"
+"minecraft:dye", "6", "40"
+"minecraft:dye", "7", "40"
+"minecraft:dye", "8", "40"
+"minecraft:dye", "9", "40"
+"minecraft:dye", "10", "40"
+"minecraft:dye", "11", "40"
+"minecraft:dye", "12", "40"
+"minecraft:dye", "13", "40"
+"minecraft:dye", "14", "40"
+"minecraft:dye", "15", "40"
+"minecraft:ender_pearl", "0", "1800"
+"minecraft:feather", "0", "25"
+"minecraft:flint", "0", "722"
+"minecraft:glowstone_dust", "0", "650"
+"minecraft:gold_ore", "0", "198"
+"minecraft:golden_carrot", "0", "170"
+"minecraft:gravel", "0", "81"
+"minecraft:leather", "0", "98"
+"minecraft:log", "0", "100"
+"minecraft:log", "1", "100"
+"minecraft:log", "2", "100"
+"minecraft:log", "3", "100"
+"minecraft:log2", "0", "100"
+"minecraft:log2", "1", "100"
+"minecraft:melon_seeds", "0", "37"
+"minecraft:mutton", "0", "41"
+"minecraft:nether_brick", "0", "244"
+"minecraft:nether_star", "0", "210000"
+"minecraft:nether_wart", "0", "62"
+"minecraft:netherrack", "0", "40"
+"minecraft:obsidian", "0", "2400"
+"minecraft:planks", "0", "50"
+"minecraft:planks", "1", "50"
+"minecraft:planks", "2", "50"
+"minecraft:planks", "3", "50"
+"minecraft:planks", "4", "50"
+"minecraft:planks", "5", "50"
+"minecraft:poisonous_potato", "0", "42"
+"minecraft:potato", "0", "18"
+"minecraft:pumpkin_seeds", "0", "37"
+"minecraft:quartz", "0", "300"
+"minecraft:rabbit", "0", "41"
+"minecraft:redstone", "0", "17"
+"minecraft:reeds", "0", "27"
+"minecraft:rotten_flesh", "0", "41"
+"minecraft:sand", "0", "297"
+"minecraft:sandstone", "0", "417"
+"minecraft:sapling", "0", "300"
+"minecraft:slime_ball", "0", "120"
+"minecraft:snowball", "0", "153"
+"minecraft:soul_sand", "0", "556"
+"minecraft:spider_eye", "0", "53"
+"minecraft:stick", "0", "17"
+"minecraft:stone", "1", "30"
+"minecraft:stone", "3", "30"
+"minecraft:stone", "5", "30"
+"minecraft:stonebrick", "0", "194"
+"minecraft:string", "0", "37"
+"minecraft:sugar", "0", "37"
+"minecraft:water_bucket", "0", "250"
+"minecraft:wheat", "0", "37"
+"minecraft:wheat_seeds", "0", "37"
+"minecraft:wooden_slab", "0", "25"
+"minecraft:wooden_slab", "1", "25"
+"minecraft:wooden_slab", "2", "25"
+"minecraft:wooden_slab", "3", "25"
+"minecraft:wooden_slab", "4", "25"
+"minecraft:wooden_slab", "5", "25"
+"minecraft:wool", "0", "50"
+"minecraft:wool", "1", "50"
+"minecraft:wool", "2", "50"
+"minecraft:wool", "3", "50"
+"minecraft:wool", "4", "50"
+"minecraft:wool", "5", "50"
+"minecraft:wool", "6", "50"
+"minecraft:wool", "7", "50"
+"minecraft:wool", "8", "50"
+"minecraft:wool", "9", "50"
+"minecraft:wool", "10", "50"
+"minecraft:wool", "11", "50"
+"minecraft:wool", "12", "50"
+"minecraft:wool", "13", "50"
+"minecraft:wool", "14", "50"
+"minecraft:wool", "15", "50"
+"minecraft:brown_mushroom", "0", "36"
+"minecraft:red_mushroom", "0", "36"
+"minecraft:mossy_cobblestone", "0", "54"
+"mysticalagriculture:aluminum_essence", "0", "145"
+"mysticalagriculture:amber_essence", "0", "1600"
+"mysticalagriculture:apatite_essence", "0", "145"
+"mysticalagriculture:aquamarine_essence", "0", "550"
+"mysticalagriculture:ardite_essence", "0", "1600"
+"mysticalagriculture:basalt_essence", "0", "145"
+"mysticalagriculture:black_quartz_essence", "0", "550"
+"mysticalagriculture:blaze_essence", "0", "1600"
+"mysticalagriculture:certus_quartz_essence", "0", "550"
+"mysticalagriculture:chicken_essence", "0", "145"
+"mysticalagriculture:coal_essence", "0", "145"
+"mysticalagriculture:cobalt_essence", "0", "1600"
+"mysticalagriculture:copper_essence", "0", "145"
+"mysticalagriculture:cow_essence", "0", "145"
+"mysticalagriculture:crafting", "0", "43"
+"mysticalagriculture:crafting", "5", "143"
+"mysticalagriculture:creeper_essence", "0", "550"
+"mysticalagriculture:diamond_essence", "0", "4230"
+"mysticalagriculture:dirt_essence", "0", "46"
+"mysticalagriculture:draconium_essence", "0", "4230"
+"mysticalagriculture:dye_essence", "0", "145"
+"mysticalagriculture:emerald_essence", "0", "4230"
+"mysticalagriculture:end_essence", "0", "1600"
+"mysticalagriculture:enderman_essence", "0", "1600"
+"mysticalagriculture:experience_essence", "0", "1600"
+"mysticalagriculture:fiery_ingot_essence", "0", "1600"
+"mysticalagriculture:fire_essence", "0", "145"
+"mysticalagriculture:fluix_essence", "0", "1600"
+"mysticalagriculture:ghast_essence", "0", "1600"
+"mysticalagriculture:glowstone_essence", "0", "550"
+"mysticalagriculture:gold_essence", "0", "1600"
+"mysticalagriculture:guardian_essence", "0", "550"
+"mysticalagriculture:ice_essence", "0", "46"
+"mysticalagriculture:infusion_crystal", "0", "22000"
+"mysticalagriculture:iron_essence", "0", "550"
+"mysticalagriculture:ironwood_essence", "0", "550"
+"mysticalagriculture:knightmetal_essence", "0", "1600"
+"mysticalagriculture:knightslime_essence", "0", "550"
+"mysticalagriculture:lapis_lazuli_essence", "0", "1600"
+"mysticalagriculture:lead_essence", "0", "550"
+"mysticalagriculture:limestone_essence", "0", "145"
+"mysticalagriculture:malachite_essence", "0", "1600"
+"mysticalagriculture:marble_essence", "0", "145"
+"mysticalagriculture:master_infusion_crystal", "0", "90000"
+"mysticalagriculture:menril_essence", "0", "145"
+"mysticalagriculture:mystical_flower_essence", "0", "145"
+"mysticalagriculture:nature_essence", "0", "46"
+"mysticalagriculture:nether_essence", "0", "550"
+"mysticalagriculture:nether_quartz_essence", "0", "550"
+"mysticalagriculture:nickel_essence", "0", "1600"
+"mysticalagriculture:obsidian_essence", "0", "550"
+"mysticalagriculture:osmium_essence", "0", "1600"
+"mysticalagriculture:peridot_essence", "0", "1600"
+"mysticalagriculture:pig_essence", "0", "145"
+"mysticalagriculture:platinum_essence", "0", "4230"
+"mysticalagriculture:quicksilver_essence", "0", "550"
+"mysticalagriculture:rabbit_essence", "0", "550"
+"mysticalagriculture:redstone_essence", "0", "550"
+"mysticalagriculture:rock_crystal_essence", "0", "4230"
+"mysticalagriculture:ruby_essence", "0", "1600"
+"mysticalagriculture:saltpeter_essence", "0", "550"
+"mysticalagriculture:sapphire_essence", "0", "1600"
+"mysticalagriculture:sheep_essence", "0", "145"
+"mysticalagriculture:silver_essence", "0", "550"
+"mysticalagriculture:skeleton_essence", "0", "550"
+"mysticalagriculture:sky_stone_essence", "0", "550"
+"mysticalagriculture:slate_essence", "0", "145"
+"mysticalagriculture:slime_essence", "0", "145"
+"mysticalagriculture:spider_essence", "0", "550"
+"mysticalagriculture:steeleaf_essence", "0", "550"
+"mysticalagriculture:stone_essence", "0", "46"
+"mysticalagriculture:sulfur_essence", "0", "145"
+"mysticalagriculture:tanzanite_essence", "0", "1600"
+"mysticalagriculture:thaumium_essence", "0", "1600"
+"mysticalagriculture:tin_essence", "0", "550"
+"mysticalagriculture:topaz_essence", "0", "1600"
+"mysticalagriculture:uranium_essence", "0", "4230"
+"mysticalagriculture:void_metal_essence", "0", "4230"
+"mysticalagriculture:water_essence", "0", "46"
+"mysticalagriculture:wood_essence", "0", "46"
+"mysticalagriculture:zombie_essence", "0", "46"
+"nuclearcraft:alloy", "1", "98"
+"nuclearcraft:alloy", "2", "4600"
+"nuclearcraft:alloy", "6", "4600"
+"nuclearcraft:compound", "0", "2780"
+"nuclearcraft:dust", "9", "278"
+"nuclearcraft:dust", "10", "278"
+"nuclearcraft:gem_dust", "1", "278"
+"nuclearcraft:ore", "3", "6488"
+"nuclearcraft:ore", "5", "5592"
+"nuclearcraft:ore", "6", "9608"
+"nuclearcraft:ore", "7", "12920"
+"tconstruct:edible", "1", "120"
+"tconstruct:edible", "2", "120"
+"tconstruct:edible", "3", "120"
+"tconstruct:edible", "4", "120"
+"thermalfoundation:material", "17", "2600"
+"thermalfoundation:material", "32", "95"
+"thermalfoundation:material", "163", "145"
+"thermalfoundation:ore", "0", "6300"
+"thermalfoundation:ore", "1", "2964"
+"thermalfoundation:ore", "2", "1984"
+"thermalfoundation:ore", "3", "1324"
+"thermalfoundation:ore", "4", "21168"
+"thermalfoundation:ore", "5", "2360"
+"thermalfoundation:ore", "6", "27884"
+"twilightforest:castle_brick", "0", "111"
+"twilightforest:deadrock", "2", "7"
+"twilightforest:twilight_log", "0", "134"
+"botania:flower", "0", "97"
+"botania:flower", "1", "97"
+"botania:flower", "2", "97"
+"botania:flower", "3", "97"
+"botania:flower", "4", "97"
+"botania:flower", "5", "97"
+"botania:flower", "6", "97"
+"botania:flower", "7", "97"
+"botania:flower", "8", "97"
+"botania:flower", "9", "97"
+"botania:flower", "10", "97"
+"botania:flower", "11", "97"
+"botania:flower", "12", "97"
+"botania:flower", "13", "97"
+"botania:flower", "14", "97"
+"botania:flower", "15", "97"
+"mysticalagriculture:crafting", "32", "170"
 	] as string[];
 
 	for i in 0 to uumatterTooltips.length {
