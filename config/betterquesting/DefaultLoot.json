@@ -3843,18 +3843,7 @@
               "Damage:3": 0
             }
           }
-        },
-        "29:10": {
-          "weight:3": 1,
-          "items:9": {
-            "0:10": {
-              "id:8": "exchangers:resonant_exchanger",
-              "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
-            }
-          }
-        },
+        },,
         "30:10": {
           "weight:3": 1,
           "items:9": {
