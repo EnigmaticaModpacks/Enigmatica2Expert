@@ -7,8 +7,9 @@
 !resources/
 !schematics/
 !minemenu/
+!resourcepacks/
 !.gitignore
-!.gitattributes
+!options.txt
 
 # Files created by luncher
 config/splash.properties
@@ -16,7 +17,6 @@ config/splash.properties
 # Client Configs
 config/creativecore-client.json
 config/InvTweaks.cfg
-config/chiselsandbits_clipboard.cfg
 config/MouseTweaks.cfg
 
 config/jei/worldSettings.cfg
@@ -42,3 +42,4 @@ config/BlockDrops/blockdrops.txt
 config/armoryexpansion/traits.txt
 
 config/cd4017be/compiled.dat
+config/brandon3055/contributors.json
