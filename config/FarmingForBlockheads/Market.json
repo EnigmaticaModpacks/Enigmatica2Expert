@@ -78,7 +78,8 @@
     "rustic:chamomile": "1*minecraft:emerald",
     "rustic:blood_orchid": "1*minecraft:emerald",
     "rustic:aloe_vera": "1*minecraft:emerald",
-    "rustic:grape_stem": "1*minecraft:emerald"
+    "rustic:grape_stem": "1*minecraft:emerald",
+    "thaumcraft:shimmerleaf": "3*minecraft:emerald"
   },
   "defaults amount": {
     "Vanilla Seeds": 1,
