@@ -1,0 +1,45 @@
+{
+"mc_attack": { "holder": "", "name": "", "category": "mc.gameplay", "key": -100, "mod": "", "enabled": true},
+"mc_use": { "holder": "", "name": "", "category": "mc.gameplay", "key": -99, "mod": "", "enabled": true},
+"mc_pickitem": { "holder": "", "name": "", "category": "mc.gameplay", "key": -98, "mod": "", "enabled": true},
+
+"mc_forward": { "holder": "", "name": "", "category": "mc.movement", "key": 17, "mod": "", "enabled": true},
+"mc_left": { "holder": "", "name": "", "category": "mc.movement", "key": 30, "mod": "", "enabled": true},
+"mc_back": { "holder": "", "name": "", "category": "mc.movement", "key": 31, "mod": "", "enabled": true},
+"mc_right": { "holder": "", "name": "", "category": "mc.movement", "key": 32, "mod": "", "enabled": true},
+"mc_jump": { "holder": "", "name": "", "category": "mc.movement", "key": 57, "mod": "", "enabled": true},
+"mc_sneak": { "holder": "", "name": "", "category": "mc.movement", "key": 42, "mod": "", "enabled": true},
+"mc_sprint": { "holder": "", "name": "", "category": "mc.movement", "key": 29, "mod": "", "enabled": true},
+
+"mc_inventory": { "holder": "", "name": "", "category": "mc.inventory", "key": 18, "mod": "", "enabled": true},
+"mc_hotbar_1": { "holder": "", "name": "", "category": "mc.inventory", "key": 2, "mod": "", "enabled": true},
+"mc_hotbar_2": { "holder": "", "name": "", "category": "mc.inventory", "key": 3, "mod": "", "enabled": true},
+"mc_hotbar_3": { "holder": "", "name": "", "category": "mc.inventory", "key": 4, "mod": "", "enabled": true},
+"mc_hotbar_4": { "holder": "", "name": "", "category": "mc.inventory", "key": 5, "mod": "", "enabled": true},
+"mc_hotbar_5": { "holder": "", "name": "", "category": "mc.inventory", "key": 6, "mod": "", "enabled": true},
+"mc_hotbar_6": { "holder": "", "name": "", "category": "mc.inventory", "key": 7, "mod": "", "enabled": true},
+"mc_hotbar_7": { "holder": "", "name": "", "category": "mc.inventory", "key": 8, "mod": "", "enabled": true},
+"mc_hotbar_8": { "holder": "", "name": "", "category": "mc.inventory", "key": 9, "mod": "", "enabled": true},
+"mc_hotbar_9": { "holder": "", "name": "", "category": "mc.inventory", "key": 10, "mod": "", "enabled": true},
+"mc_drop": { "holder": "", "name": "", "category": "mc.inventory", "key": 16, "mod": "", "enabled": true},
+"mc_swaphands": { "holder": "", "name": "", "category": "mc.inventory", "key": 33, "mod": "", "enabled": true}, 
+
+"rebind_quit": { "holder": "", "name": "", "category": "mc.misc", "key": 1, "mod": "", "enabled": true},
+"rebind_hidehud": { "holder": "", "name": "", "category": "mc.misc", "key": 59, "mod": "", "enabled": true},
+"mc_screenshot": { "holder": "", "name": "", "category": "mc.misc", "key": 60, "mod": "", "enabled": true},
+"rebind_debugscreen": { "holder": "", "name": "", "category": "mc.misc", "key": 61, "mod": "", "enabled": true},
+"rebind_switchshader": { "holder": "", "name": "", "category": "mc.misc", "key": 0, "mod": "", "enabled": false},
+"mc_toggleperspective": { "holder": "", "name": "", "category": "mc.misc", "key": 63, "mod": "", "enabled": true},
+"mc_fullscreen": { "holder": "", "name": "", "category": "mc.misc", "key": 87, "mod": "", "enabled": true},
+"mc_advancements": { "holder": "", "name": "", "category": "mc.misc", "key": 38, "mod": "", "enabled": true},
+"rebind_narrator": { "holder": "", "name": "", "category": "mc.misc", "key": 48, "mod": "CONTROL", "enabled": true},
+"mc_smoothcamera": { "holder": "", "name": "", "category": "mc.misc", "key": 0, "mod": "", "enabled": true},
+"mc_spectatoroutlines": { "holder": "", "name": "", "category": "mc.misc", "key": 0, "mod": "", "enabled": true},
+
+"mc_savetoolbaractivator": { "holder": "", "name": "", "category": "mc.creative", "key": 46, "mod": "", "enabled": true},
+"mc_loadtoolbaractivator": { "holder": "", "name": "", "category": "mc.creative", "key": 45, "mod": "", "enabled": true}, 
+
+"mc_chat": { "holder": "", "name": "", "category": "mc.multiplayer", "key": 20, "mod": "", "enabled": true},
+"mc_command": { "holder": "", "name": "", "category": "mc.multiplayer", "key": 53, "mod": "", "enabled": true},
+"mc_playerlist": { "holder": "", "name": "", "category": "mc.multiplayer", "key": 15, "mod": "", "enabled": true}
+}

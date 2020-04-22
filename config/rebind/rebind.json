@@ -1,0 +1,20 @@
+{
+  "version": "2.7.5:release:0",
+  "main": {
+    "external_config": true,
+    "rewrite_controls": false,
+    "debug_mode": true,
+    "custom_update_checker": false,
+    "enable_custom_localization": false,
+    "fix_minemenu_keybinding": true
+  },
+  "game": {
+    "auto_jump": false
+  },
+  "controls": {
+    "player_sprint": true,
+    "double_tap_forward_sprint": true,
+    "mount_sprint": true,
+    "hotbar_scrolling": true
+  }
+}
