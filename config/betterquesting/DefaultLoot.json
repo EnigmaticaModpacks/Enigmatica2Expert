@@ -790,13 +790,20 @@
           "ID:3": 47,
           "items:9": {
             "0:10": {
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
-              "id:8": "chiselsandbits:tape_measure",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
+              "id:8": "sonarcore:stablestoneblackrimmed_lightblue",
+              "Count:3": 64
+            },
+            "1:10": {
+              "id:8": "sonarcore:stablestoneblackrimmed_lightblue",
+              "Count:3": 64
+            },
+            "2:10": {
+              "id:8": "sonarcore:stablestoneblackrimmed_lightblue",
+              "Count:3": 64
+            },
+            "3:10": {
+              "id:8": "sonarcore:stablestoneblackrimmed_lightblue",
+              "Count:3": 64
             }
           }
         },
@@ -2839,6 +2846,176 @@
               "OreDict:8": ""
             }
           }
+        },
+        "181:10": {
+          "weight:3": 10,
+          "ID:3": 181,
+          "items:9": {
+            "0:10": {
+              "id:8": "thermalexpansion:florb",
+              "Count:3": 16,
+              "tag:10": {
+                "Fluid:8": "water"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "182:10": {
+          "weight:3": 10,
+          "ID:3": 182,
+          "items:9": {
+            "0:10": {
+              "id:8": "tconstruct:throwball",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "183:10": {
+          "weight:3": 10,
+          "ID:3": 183,
+          "items:9": {
+            "0:10": {
+              "id:8": "thermalexpansion:morb",
+              "Count:3": 2,
+              "tag:10": {
+                "Generic:1": 1,
+                "id:8": "minecraft:pig"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "184:10": {
+          "weight:3": 10,
+          "ID:3": 184,
+          "items:9": {
+            "0:10": {
+              "id:8": "thermalexpansion:florb",
+              "Count:3": 4,
+              "tag:10": {
+                "Fluid:8": "lava"
+              },
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "185:10": {
+          "weight:3": 10,
+          "ID:3": 185,
+          "items:9": {
+            "0:10": {
+              "id:8": "thermalexpansion:morb",
+              "Count:3": 2,
+              "tag:10": {
+                "Generic:1": 1,
+                "id:8": "minecraft:chicken"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "186:10": {
+          "weight:3": 10,
+          "ID:3": 186,
+          "items:9": {
+            "0:10": {
+              "id:8": "thermalexpansion:morb",
+              "Count:3": 2,
+              "tag:10": {
+                "Generic:1": 1,
+                "id:8": "minecraft:cow"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "187:10": {
+          "weight:3": 10,
+          "ID:3": 187,
+          "items:9": {
+            "0:10": {
+              "id:8": "thermalexpansion:morb",
+              "Count:3": 2,
+              "tag:10": {
+                "Generic:1": 1,
+                "id:8": "minecraft:sheep"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "188:10": {
+          "weight:3": 10,
+          "ID:3": 188,
+          "items:9": {
+            "0:10": {
+              "id:8": "thermalexpansion:morb",
+              "Count:3": 2,
+              "tag:10": {
+                "Generic:1": 1,
+                "id:8": "minecraft:rabbit"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "189:10": {
+          "weight:3": 10,
+          "ID:3": 189,
+          "items:9": {
+            "0:10": {
+              "id:8": "thermalexpansion:morb",
+              "Count:3": 2,
+              "tag:10": {
+                "Generic:1": 1,
+                "id:8": "minecraft:llama"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "190:10": {
+          "weight:3": 10,
+          "ID:3": 190,
+          "items:9": {
+            "0:10": {
+              "id:8": "thermalexpansion:morb",
+              "Count:3": 2,
+              "tag:10": {
+                "Generic:1": 1,
+                "id:8": "quark:frog"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "191:10": {
+          "weight:3": 10,
+          "ID:3": 191,
+          "items:9": {
+            "0:10": {
+              "id:8": "thermalexpansion:morb",
+              "Count:3": 2,
+              "tag:10": {
+                "Generic:1": 1,
+                "id:8": "quark:crab"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
         }
       }
     },
@@ -3215,14 +3392,20 @@
           "ID:3": 28,
           "items:9": {
             "0:10": {
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
-              "id:8": "chiselsandbits:chisel_diamond",
-              "Count:3": 1,
-              "tag:10": {},
-              "Damage:2": 0,
-              "OreDict:8": ""
+              "id:8": "environmentalmaterials:alabaster_brick_stairs_white",
+              "Count:3": 64
+            },
+            "1:10": {
+              "id:8": "environmentalmaterials:alabaster_brick_stairs_white",
+              "Count:3": 64
+            },
+            "2:10": {
+              "id:8": "environmentalmaterials:alabaster_brick_stairs_white",
+              "Count:3": 64
+            },
+            "3:10": {
+              "id:8": "environmentalmaterials:alabaster_brick_stairs_white",
+              "Count:3": 64
             }
           }
         },
@@ -4147,6 +4330,96 @@
             "0:10": {
               "id:8": "rs_ctr:block_wire",
               "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "102:10": {
+          "weight:3": 10,
+          "ID:3": 102,
+          "items:9": {
+            "0:10": {
+              "id:8": "minecraft:enchanted_book",
+              "Count:3": 1,
+              "tag:10": {
+                "StoredEnchantments:9": {
+                  "0:10": {
+                    "lvl:2": 4,
+                    "id:2": 45
+                  }
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "103:10": {
+          "weight:3": 10,
+          "ID:3": 103,
+          "items:9": {
+            "0:10": {
+              "id:8": "minecraft:enchanted_book",
+              "Count:3": 1,
+              "tag:10": {
+                "StoredEnchantments:9": {
+                  "0:10": {
+                    "lvl:2": 3,
+                    "id:2": 74
+                  }
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "104:10": {
+          "weight:3": 10,
+          "ID:3": 104,
+          "items:9": {
+            "0:10": {
+              "id:8": "minecraft:enchanted_book",
+              "Count:3": 1,
+              "tag:10": {
+                "StoredEnchantments:9": {
+                  "0:10": {
+                    "lvl:2": 5,
+                    "id:2": 11
+                  }
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "105:10": {
+          "weight:3": 10,
+          "ID:3": 105,
+          "items:9": {
+            "0:10": {
+              "id:8": "twilightforest:aurora_block",
+              "Count:3": 64,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "twilightforest:aurora_block",
+              "Count:3": 64,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "twilightforest:aurora_block",
+              "Count:3": 64,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "twilightforest:aurora_block",
+              "Count:3": 64,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -5497,6 +5770,248 @@
               "OreDict:8": ""
             }
           }
+        },
+        "102:10": {
+          "weight:3": 10,
+          "ID:3": 102,
+          "items:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "thermalexpansion:cache",
+              "Count:3": 1,
+              "tag:10": {
+                "RSControl:1": 0,
+                "Creative:1": 0,
+                "Level:1": 4
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "103:10": {
+          "weight:3": 10,
+          "ID:3": 103,
+          "items:9": {
+            "0:10": {
+              "id:8": "minecraft:enchanted_book",
+              "Count:3": 1,
+              "tag:10": {
+                "StoredEnchantments:9": {
+                  "0:10": {
+                    "lvl:2": 4,
+                    "id:2": 52
+                  }
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "104:10": {
+          "weight:3": 10,
+          "ID:3": 104,
+          "items:9": {
+            "0:10": {
+              "id:8": "minecraft:enchanted_book",
+              "Count:3": 1,
+              "tag:10": {
+                "StoredEnchantments:9": {
+                  "0:10": {
+                    "lvl:2": 5,
+                    "id:2": 59
+                  }
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "105:10": {
+          "weight:3": 10,
+          "ID:3": 105,
+          "items:9": {
+            "0:10": {
+              "id:8": "minecraft:enchanted_book",
+              "Count:3": 1,
+              "tag:10": {
+                "StoredEnchantments:9": {
+                  "0:10": {
+                    "lvl:2": 1,
+                    "id:2": 66
+                  }
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "106:10": {
+          "weight:3": 10,
+          "ID:3": 106,
+          "items:9": {
+            "0:10": {
+              "id:8": "openblocks:tank",
+              "Count:3": 1,
+              "tag:10": {
+                "tank:10": {
+                  "FluidName:8": "refinedcanolaoil",
+                  "Amount:3": 16000
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "107:10": {
+          "weight:3": 10,
+          "ID:3": 107,
+          "items:9": {
+            "0:10": {
+              "id:8": "openblocks:tank",
+              "Count:3": 1,
+              "tag:10": {
+                "tank:10": {
+                  "FluidName:8": "canolaoil",
+                  "Amount:3": 16000
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "108:10": {
+          "weight:3": 10,
+          "ID:3": 108,
+          "items:9": {
+            "0:10": {
+              "id:8": "openblocks:tank",
+              "Count:3": 1,
+              "tag:10": {
+                "tank:10": {
+                  "FluidName:8": "ic2creosote",
+                  "Amount:3": 16000
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "109:10": {
+          "weight:3": 3,
+          "ID:3": 109,
+          "items:9": {
+            "0:10": {
+              "id:8": "openblocks:tank",
+              "Count:3": 1,
+              "tag:10": {
+                "tank:10": {
+                  "FluidName:8": "milk_holstein",
+                  "Amount:3": 16000
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "110:10": {
+          "weight:3": 3,
+          "ID:3": 110,
+          "items:9": {
+            "0:10": {
+              "id:8": "openblocks:tank",
+              "Count:3": 1,
+              "tag:10": {
+                "tank:10": {
+                  "FluidName:8": "milk_friesian",
+                  "Amount:3": 16000
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "111:10": {
+          "weight:3": 3,
+          "ID:3": 111,
+          "items:9": {
+            "0:10": {
+              "id:8": "openblocks:tank",
+              "Count:3": 1,
+              "tag:10": {
+                "tank:10": {
+                  "FluidName:8": "milk_jersey",
+                  "Amount:3": 16000
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "112:10": {
+          "weight:3": 3,
+          "ID:3": 112,
+          "items:9": {
+            "0:10": {
+              "id:8": "openblocks:tank",
+              "Count:3": 1,
+              "tag:10": {
+                "tank:10": {
+                  "FluidName:8": "milk_goat",
+                  "Amount:3": 16000
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "113:10": {
+          "weight:3": 3,
+          "ID:3": 113,
+          "items:9": {
+            "0:10": {
+              "id:8": "openblocks:tank",
+              "Count:3": 1,
+              "tag:10": {
+                "tank:10": {
+                  "FluidName:8": "milk_sheep",
+                  "Amount:3": 16000
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "114:10": {
+          "weight:3": 10,
+          "ID:3": 114,
+          "items:9": {
+            "0:10": {
+              "id:8": "openblocks:tank",
+              "Count:3": 1,
+              "tag:10": {
+                "tank:10": {
+                  "FluidName:8": "diesel",
+                  "Amount:3": 16000
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
         }
       }
     },
@@ -6310,6 +6825,317 @@
               "OreDict:8": ""
             }
           }
+        },
+        "60:10": {
+          "weight:3": 10,
+          "ID:3": 60,
+          "items:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "thermalexpansion:strongbox",
+              "Count:3": 1,
+              "tag:10": {
+                "RSControl:1": 0,
+                "ench:9": {
+                  "0:10": {
+                    "lvl:2": 4,
+                    "id:2": 45
+                  }
+                },
+                "RepairCost:3": 1,
+                "Creative:1": 0,
+                "Level:1": 4
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "61:10": {
+          "weight:3": 10,
+          "ID:3": 61,
+          "items:9": {
+            "0:10": {
+              "id:8": "minecraft:enchanted_book",
+              "Count:3": 1,
+              "tag:10": {
+                "StoredEnchantments:9": {
+                  "0:10": {
+                    "lvl:2": 5,
+                    "id:2": 75
+                  }
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "62:10": {
+          "weight:3": 10,
+          "ID:3": 62,
+          "items:9": {
+            "0:10": {
+              "id:8": "minecraft:enchanted_book",
+              "Count:3": 1,
+              "tag:10": {
+                "StoredEnchantments:9": {
+                  "0:10": {
+                    "lvl:2": 6,
+                    "id:2": 21
+                  }
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "63:10": {
+          "weight:3": 10,
+          "ID:3": 63,
+          "items:9": {
+            "0:10": {
+              "id:8": "minecraft:enchanted_book",
+              "Count:3": 1,
+              "tag:10": {
+                "StoredEnchantments:9": {
+                  "0:10": {
+                    "lvl:2": 10,
+                    "id:2": 48
+                  }
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "64:10": {
+          "weight:3": 10,
+          "ID:3": 64,
+          "items:9": {
+            "0:10": {
+              "id:8": "minecraft:enchanted_book",
+              "Count:3": 1,
+              "tag:10": {
+                "StoredEnchantments:9": {
+                  "0:10": {
+                    "lvl:2": 10,
+                    "id:2": 18
+                  }
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "65:10": {
+          "weight:3": 10,
+          "ID:3": 65,
+          "items:9": {
+            "0:10": {
+              "id:8": "minecraft:enchanted_book",
+              "Count:3": 1,
+              "tag:10": {
+                "StoredEnchantments:9": {
+                  "0:10": {
+                    "lvl:2": 10,
+                    "id:2": 17
+                  }
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "66:10": {
+          "weight:3": 10,
+          "ID:3": 66,
+          "items:9": {
+            "0:10": {
+              "id:8": "minecraft:enchanted_book",
+              "Count:3": 1,
+              "tag:10": {
+                "StoredEnchantments:9": {
+                  "0:10": {
+                    "lvl:2": 10,
+                    "id:2": 16
+                  }
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "67:10": {
+          "weight:3": 10,
+          "ID:3": 67,
+          "items:9": {
+            "0:10": {
+              "id:8": "minecraft:enchanted_book",
+              "Count:3": 1,
+              "tag:10": {
+                "StoredEnchantments:9": {
+                  "0:10": {
+                    "lvl:2": 8,
+                    "id:2": 0
+                  }
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "68:10": {
+          "weight:3": 10,
+          "ID:3": 68,
+          "items:9": {
+            "0:10": {
+              "id:8": "openblocks:tank",
+              "Count:3": 1,
+              "tag:10": {
+                "tank:10": {
+                  "FluidName:8": "empoweredoil",
+                  "Amount:3": 16000
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "69:10": {
+          "weight:3": 10,
+          "ID:3": 69,
+          "items:9": {
+            "0:10": {
+              "id:8": "openblocks:tank",
+              "Count:3": 1,
+              "tag:10": {
+                "tank:10": {
+                  "FluidName:8": "crystaloil",
+                  "Amount:3": 16000
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "70:10": {
+          "weight:3": 10,
+          "ID:3": 70,
+          "items:9": {
+            "0:10": {
+              "id:8": "openblocks:tank",
+              "Count:3": 1,
+              "tag:10": {
+                "tank:10": {
+                  "FluidName:8": "redstone",
+                  "Amount:3": 16000
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "71:10": {
+          "weight:3": 10,
+          "ID:3": 71,
+          "items:9": {
+            "0:10": {
+              "id:8": "openblocks:tank",
+              "Count:3": 1,
+              "tag:10": {
+                "tank:10": {
+                  "FluidName:8": "glowstone",
+                  "Amount:3": 16000
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "72:10": {
+          "weight:3": 10,
+          "ID:3": 72,
+          "items:9": {
+            "0:10": {
+              "id:8": "openblocks:tank",
+              "Count:3": 1,
+              "tag:10": {
+                "tank:10": {
+                  "FluidName:8": "ender",
+                  "Amount:3": 16000
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "73:10": {
+          "weight:3": 10,
+          "ID:3": 73,
+          "items:9": {
+            "0:10": {
+              "id:8": "openblocks:tank",
+              "Count:3": 1,
+              "tag:10": {
+                "tank:10": {
+                  "FluidName:8": "pyrotheum",
+                  "Amount:3": 16000
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "74:10": {
+          "weight:3": 10,
+          "ID:3": 74,
+          "items:9": {
+            "0:10": {
+              "id:8": "openblocks:tank",
+              "Count:3": 1,
+              "tag:10": {
+                "tank:10": {
+                  "FluidName:8": "cryotheum",
+                  "Amount:3": 16000
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "75:10": {
+          "weight:3": 10,
+          "ID:3": 75,
+          "items:9": {
+            "0:10": {
+              "id:8": "openblocks:tank",
+              "Count:3": 1,
+              "tag:10": {
+                "tank:10": {
+                  "FluidName:8": "astralsorcery.liquidstarlight",
+                  "Amount:3": 16000
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
         }
       }
     },
@@ -6699,6 +7525,111 @@
           "items:9": {
             "0:10": {
               "id:8": "rats:rat_upgrade_nonbeliever",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "31:10": {
+          "weight:3": 2,
+          "ID:3": 31,
+          "items:9": {
+            "0:10": {
+              "id:8": "openblocks:tank",
+              "Count:3": 1,
+              "tag:10": {
+                "tank:10": {
+                  "FluidName:8": "ic2uu_matter",
+                  "Amount:3": 16000
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "32:10": {
+          "weight:3": 10,
+          "ID:3": 32,
+          "items:9": {
+            "0:10": {
+              "id:8": "thermalexpansion:florb",
+              "Count:3": 1,
+              "tag:10": {
+                "Fluid:8": "blockfluidantimatter"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "33:10": {
+          "weight:3": 10,
+          "ID:3": 33,
+          "items:9": {
+            "0:10": {
+              "id:8": "minecraft:enchanted_book",
+              "Count:3": 1,
+              "tag:10": {
+                "StoredEnchantments:9": {
+                  "0:10": {
+                    "lvl:2": 6,
+                    "id:2": 35
+                  }
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "34:10": {
+          "weight:3": 10,
+          "ID:3": 34,
+          "items:9": {
+            "0:10": {
+              "id:8": "minecraft:enchanted_book",
+              "Count:3": 1,
+              "tag:10": {
+                "StoredEnchantments:9": {
+                  "0:10": {
+                    "lvl:2": 10,
+                    "id:2": 32
+                  }
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "35:10": {
+          "weight:3": 10,
+          "ID:3": 35,
+          "items:9": {
+            "0:10": {
+              "id:8": "minecraft:enchanted_book",
+              "Count:3": 1,
+              "tag:10": {
+                "StoredEnchantments:9": {
+                  "0:10": {
+                    "lvl:2": 6,
+                    "id:2": 34
+                  }
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "36:10": {
+          "weight:3": 15,
+          "ID:3": 36,
+          "items:9": {
+            "0:10": {
+              "id:8": "scalinghealth:difficultychanger",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
