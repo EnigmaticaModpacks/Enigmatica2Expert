@@ -167,3 +167,14 @@ recipes.addShapedMirrored(<cyclicmagic:block_user>,
 	[[<ore:ingotGold>, <ore:ingotRefinedObsidian>, <ore:ingotGold>],
 	[<minecraft:golden_pickaxe>, <ore:circuitUltimate>, <minecraft:golden_axe>], 
 	[<ore:compressed2xCobblestone>, <ore:compressed2xCobblestone>, <ore:compressed2xCobblestone>]]);
+
+# Player Launcher
+remakeEx(<cyclicmagic:tool_launcher>, [
+	[null, <ore:nuggetRefinedGlowstone>, <ore:nuggetRefinedGlowstone>],
+	[<ore:peacockFeathers>, <tconstruct:slimesling:*>.anyDamage(), <ore:nuggetRefinedGlowstone>],
+	[<ore:nuggetUnstable>, <ore:peacockFeathers>, null]]);
+
+remakeEx(<cyclicmagic:battery>, [
+	[<ore:clay>, <ore:blockRedstone>, <ore:clay>],
+	[<ore:blockRedstone>, <rats:charged_creeper_chunk>, <ore:blockRedstone>],
+	[<ore:clay>, <ore:blockRedstone>, <ore:clay>]]);

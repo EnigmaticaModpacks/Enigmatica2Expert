@@ -13,7 +13,7 @@ print("--- loading ExtremeReactors.zs ---");
 	mods.extendedcrafting.TableCrafting.addShaped(0, 
 	<bigreactors:reactorcontroller>, 
 	[[<nuclearcraft:fission_block>, <tconstruct:large_plate>.withTag({Material: "lead"}), <nuclearcraft:fission_block>],
-	[<ore:plateUranium>, <ic2:te:22>, <ore:plateUranium>], 
+	[<opencomputers:print>, <ic2:te:22>, <opencomputers:print>], 
 	[<nuclearcraft:fission_block>, <nuclearcraft:fission_controller_new_fixed>, <nuclearcraft:fission_block>]]);
 
 # Reactor Casing

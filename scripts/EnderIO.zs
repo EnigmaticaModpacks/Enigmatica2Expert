@@ -150,9 +150,9 @@ for silicon in <ore:itemSilicon>.items {
 	recipes.remove(<enderio:item_basic_capacitor>);
 	recipes.addShapedMirrored("Basic Capacitor", 
 	<enderio:item_basic_capacitor> * 2, 
-	[[null, <thermalfoundation:material:514>, <ore:dustBedrock>],
-	[<thermalfoundation:material:514>, <immersiveengineering:metal_device0:2>, <thermalfoundation:material:514>], 
-	[<ore:dustBedrock>, <thermalfoundation:material:514>, null]]);
+	[[null, <immersiveengineering:metal_device1:8>, null],
+	[<ore:dustBedrock>, <immersiveengineering:metal_device0:2>, <ore:dustBedrock>], 
+	[null, <immersiveengineering:metal_device1:8>, null]]);
 
 # Double-Layer Capacitor
 	recipes.remove(<enderio:item_basic_capacitor:1>);
@@ -250,3 +250,9 @@ recipes.addShaped(<enderio:block_lava_generator>, [
 # Nethercotta
 mods.immersiveengineering.ArcFurnace.addRecipe(<enderio:item_material:72>, <ore:ingotBrickNether>,
 	<immersiveengineering:material:7>, 20*4, 2560, [<ore:cropNetherWart>*4, <ore:clay>*6], "Alloying");
+
+# Remake binder
+remake("Conduit Binder Composite", <enderio:item_material:22> * 8, [
+	[<ore:dust>, <ore:materialWoolEnergetic>, <ore:dust>],
+	[<ore:dustClay>, <liquid:sand>*1000, <ore:dustClay>],
+	[<ore:dust>, <ore:materialWoolEnergetic>, <ore:dust>]]);

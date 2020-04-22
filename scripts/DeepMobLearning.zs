@@ -32,14 +32,24 @@ recipes.addShaped(<deepmoblearning:glitch_infused_helmet>, [
   [ing, <enderio:item_end_steel_helmet>.anyDamage(), ing],
   [null, null, null]]);
 
-recipes.remove(<deepmoblearning:machine_casing>);
-recipes.addShaped(<deepmoblearning:machine_casing>, [
-  [<deepmoblearning:soot_covered_plate>, <deepmoblearning:soot_covered_redstone>, <deepmoblearning:soot_covered_plate>],
-  [<ore:sheetTitaniumIridium>, <extendedcrafting:trimmed:2>, <ore:sheetTitaniumIridium>],
-  [<deepmoblearning:soot_covered_plate>, <deepmoblearning:soot_covered_redstone>, <deepmoblearning:soot_covered_plate>]]);
-
 recipes.remove(<deepmoblearning:soot_covered_plate> * 8);
 recipes.addShaped(<deepmoblearning:soot_covered_plate> * 4, [
   [null, <deepmoblearning:soot_covered_redstone>, null],
   [<biomesoplenty:crystal>, <tconstruct:large_plate>.withTag({Material: "blackquartz_plustic"}), <biomesoplenty:crystal>],
   [null, <deepmoblearning:soot_covered_redstone>, null]]);
+
+remakeEx(<deepmoblearning:extraction_chamber>, [
+  [<ore:sheetTitaniumIridium>, <mekanism:glowpanel:11>, <ore:sheetTitaniumIridium>],
+  [<extrautils2:decorativesolid:7>, <deepmoblearning:machine_casing>, <extrautils2:decorativesolid:7>]]);
+
+remakeEx(<deepmoblearning:simulation_chamber>, [
+  [<ore:gearEmerald>, <mekanism:glowpanel:6>, <ore:gearEmerald>],
+  [<extrautils2:decorativesolid:7>, <deepmoblearning:machine_casing>, <extrautils2:decorativesolid:7>]]);
+
+remakeEx(<deepmoblearning:machine_casing>, [
+  [<deepmoblearning:soot_covered_plate>, <deepmoblearning:soot_covered_redstone>, <deepmoblearning:soot_covered_plate>],
+  [<tconstruct:fancy_frame:2>, <extendedcrafting:trimmed:2>, <tconstruct:fancy_frame:2>],
+  [<deepmoblearning:soot_covered_plate>, <deepmoblearning:soot_covered_redstone>, <deepmoblearning:soot_covered_plate>]]);
+
+recipes.remove(<deepmoblearning:polymer_clay> * 16);
+recipes.addShapeless(<deepmoblearning:polymer_clay> * 16, [<liquid:concrete> * 1000, <ore:dustClay>, <ore:dustClay>, <ore:dustClay>, <ore:dustGold>, <ore:dustLapis>]);

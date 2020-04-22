@@ -193,3 +193,14 @@ recipes.addShaped(<industrialforegoing:mob_imprisonment_tool>, [
 	[<mekanism:plasticblock:*>, <quark:soul_powder>, <mekanism:plasticblock:*>], 
 	[<ic2:sheet:1>, <ic2:sheet:1>, <ic2:sheet:1>]
 ]);
+
+# Mob Crusher and slaughter
+remake("Mob Slaughter", <industrialforegoing:mob_slaughter_factory>, [
+	[<ore:itemRubber>, <deepmoblearning:soot_covered_redstone>, <ore:itemRubber>],
+	[<redstonearsenal:tool.axe_flux>.anyDamage(), <teslacorelib:machine_case>, <redstonearsenal:tool.axe_flux>.anyDamage()],
+	[<ore:itemRubber>, <opencomputers:robot>, <ore:itemRubber>]]);
+
+remake("Mob Crusher",   <industrialforegoing:mob_relocator>, [
+	[<ore:itemRubber>, <redstonearsenal:tool.sword_flux>.anyDamage(), <ore:itemRubber>],
+	[<randomthings:imbue:2>, <teslacorelib:machine_case>, <randomthings:imbue:2>],
+	[<ore:gearGold>, <opencomputers:robot>, <ore:gearGold>]]);

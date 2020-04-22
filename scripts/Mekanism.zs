@@ -288,3 +288,15 @@ recipes.addShaped(<mekanismgenerators:reactor>, [
 		[<mekanismgenerators:reactor:2>, <nuclearcraft:fusion_core>, <mekanismgenerators:reactor:2>], 
 		[<nuclearcraft:lithium_ion_battery_elite>, <nuclearcraft:lithium_ion_battery_elite>, <nuclearcraft:lithium_ion_battery_elite>]
 	]);
+
+# Speed Upgrade with energetic wool
+remake("mekanism speedupgrade", <mekanism:speedupgrade>, [
+	[<ore:blockGlass>, <energeticsheep:energetic_wool:*>, <ore:blockGlass>],
+	[<mekanism:enrichedalloy>, <ore:dustOsmium>, <mekanism:enrichedalloy>],
+	[<ore:blockGlass>, <energeticsheep:energetic_wool:*>, <ore:blockGlass>]]);
+
+# Energy Upgrade with energetic wool
+remake("mekanism energyupgrade", <mekanism:energyupgrade>, [
+	[<ore:blockGlass>, <energeticsheep:energetic_wool:*>, <ore:blockGlass>],
+	[<mekanism:enrichedalloy>, <ore:dustGold>, <mekanism:enrichedalloy>],
+	[<ore:blockGlass>, <energeticsheep:energetic_wool:*>, <ore:blockGlass>]]);

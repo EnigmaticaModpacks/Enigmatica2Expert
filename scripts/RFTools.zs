@@ -147,6 +147,39 @@ print("--- loading RFTools.zs ---");
 			return out.withTag(tag);
 	}, null);
 
-	print("--- RFTools.zs initialized ---");
-	
-	
+# Harder card recipe
+recipes.removeByRecipeName("rftools:powercell_card");
+recipes.addShaped(<rftools:powercell_card> * 4, [
+	[<energeticsheep:energetic_wool:*>, <computercraft:printout>, <energeticsheep:energetic_wool:*>],
+	[<computercraft:printout>, <rats:charged_creeper_chunk>, <computercraft:printout>],
+	[<energeticsheep:energetic_wool:*>, <computercraft:printout>, <energeticsheep:energetic_wool:*>]]);
+
+# Power cells
+val iWireless = <cd4017be_lib:m:402>;
+val iGate = <biomesoplenty:crystal_shard>;
+val iPower = <energeticsheep:energetic_wool:*>;
+remake("rftools powercell_simple", <rftools:powercell_simple>, [
+	[iPower, iWireless, iPower], 
+	[<minecraft:quartz>, <rftools:machine_frame>, <minecraft:quartz>], 
+	[iPower, iWireless, iPower]]);
+
+remake("rftools powercell_normal", <rftools:powercell>, [
+	[<deepmoblearning:soot_covered_redstone>, iWireless, <deepmoblearning:soot_covered_redstone>],
+	 [iGate, <rftools:powercell_simple>, iGate], 
+	 [<deepmoblearning:soot_covered_redstone>, <minecraft:emerald>, <deepmoblearning:soot_covered_redstone>]]);
+
+remake("rftools powercell", <rftools:powercell>, [
+	[iPower, iWireless, iPower], 
+	[iGate, <rftools:machine_frame>, iGate], 
+	[iPower, <minecraft:emerald>, iPower]]);
+
+remake("rftools powercell_advanced", <rftools:powercell_advanced>, [
+	[iPower, <rftools:infused_diamond>, iPower], 
+	[<rftools:infused_diamond>, <rftools:powercell>, <rftools:infused_diamond>], 
+	[iPower, <rftools:infused_diamond>, iPower]]);
+
+# Matter beamer
+remake("rftools matter_beamer", <rftools:matter_beamer>, [
+	[<rats:charged_creeper_chunk>, <ore:glowstone>, <rats:charged_creeper_chunk>],
+	[<ore:glowstone>, <rftools:machine_frame>, <ore:glowstone>],
+	[<rats:charged_creeper_chunk>, <ore:glowstone>, <rats:charged_creeper_chunk>]]);

@@ -135,3 +135,9 @@ makeEx(<nuclearcraft:upgrade:1>*2, [
 	<ore:itemCompressedObsidian>], 
 	[<ore:blockSheetmetalGold>, <ore:itemCompressedObsidian>, <ore:blockSheetmetalGold>]
 ]);
+
+# Fusion core with 3d prints
+remake("NC Fusion core", <nuclearcraft:fusion_core>, [
+	[<opencomputers:print>, <nuclearcraft:accelerator_electromagnet_idle>, <opencomputers:print>],
+	[<nuclearcraft:chemical_reactor_idle>, <nuclearcraft:voltaic_pile_elite>, <nuclearcraft:chemical_reactor_idle>],
+	[<opencomputers:print>, <nuclearcraft:accelerator_electromagnet_idle>, <opencomputers:print>]]);

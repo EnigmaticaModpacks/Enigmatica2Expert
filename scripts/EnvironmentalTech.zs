@@ -129,3 +129,15 @@ recipes.addShaped(<environmentaltech:photovoltaic_cell>, [
 		[<ic2:plate:13>, <ic2:plate:13>, <ic2:plate:13>], 
 		[<advancedrocketry:productsheet:1>, <advancedrocketry:productsheet:1>, <advancedrocketry:productsheet:1>]
 	]);
+
+remake("environmentaltech modifier_speed", 
+	<environmentaltech:modifier_speed>, [
+		[<ore:blockRedstone>, <environmentaltech:erodium_crystal>, <ore:blockRedstone>], 
+		[<environmentaltech:mica>, <environmentaltech:modifier_null>, <environmentaltech:mica>], 
+		[<fluid:low_pressure_steam> * 1000, <environmentaltech:lonsdaleite_crystal>, <fluid:low_pressure_steam> * 1000]]);
+
+remake("environmentaltech modifier_accuracy", 
+	<environmentaltech:modifier_accuracy>, [
+		[<ore:blockDiamond>, <environmentaltech:pladium_crystal>, <ore:blockDiamond>], 
+		[<environmentaltech:mica>, <environmentaltech:modifier_null>, <environmentaltech:mica>], 
+		[<fluid:low_pressure_steam> * 1000, <environmentaltech:lonsdaleite_crystal>, <fluid:low_pressure_steam> * 1000]]);
