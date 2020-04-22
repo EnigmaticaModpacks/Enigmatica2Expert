@@ -3254,9 +3254,6 @@
             "1:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -10926,9 +10923,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -23650,9 +23644,6 @@
             "0:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 101,
               "OreDict:8": ""
             }
@@ -41204,9 +41195,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -51236,9 +51224,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -51671,9 +51656,6 @@
             "0:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 50,
               "OreDict:8": ""
             }
@@ -52028,9 +52010,6 @@
             "1:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 50,
               "OreDict:8": ""
             },
@@ -52236,9 +52215,6 @@
             "0:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 101,
               "OreDict:8": ""
             }
@@ -52303,9 +52279,6 @@
             "0:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 101,
               "OreDict:8": ""
             }
@@ -52923,9 +52896,6 @@
             "0:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 101,
               "OreDict:8": ""
             }
@@ -52997,9 +52967,6 @@
             "0:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 75,
               "OreDict:8": ""
             }
@@ -53064,9 +53031,6 @@
             "0:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 50,
               "OreDict:8": ""
             }
@@ -53131,9 +53095,6 @@
             "0:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 101,
               "OreDict:8": ""
             }
@@ -53365,9 +53326,6 @@
             "0:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 101,
               "OreDict:8": ""
             }
@@ -53432,9 +53390,6 @@
             "0:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 25,
               "OreDict:8": ""
             }
@@ -53575,9 +53530,6 @@
             "0:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 101,
               "OreDict:8": ""
             }
@@ -53642,9 +53594,6 @@
             "0:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 101,
               "OreDict:8": ""
             }
@@ -53760,9 +53709,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -53953,9 +53899,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -54509,9 +54452,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -54587,9 +54527,6 @@
             "0:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 25,
               "OreDict:8": ""
             }
@@ -54654,9 +54591,6 @@
             "0:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 50,
               "OreDict:8": ""
             }
@@ -54721,9 +54655,6 @@
             "0:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 50,
               "OreDict:8": ""
             }
@@ -54789,9 +54720,6 @@
             "0:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 101,
               "OreDict:8": ""
             }
@@ -54856,9 +54784,6 @@
             "0:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 101,
               "OreDict:8": ""
             }
@@ -54923,9 +54848,6 @@
             "0:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -55044,9 +54966,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -55128,9 +55047,6 @@
             "0:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 75,
               "OreDict:8": ""
             }
@@ -55195,9 +55111,6 @@
             "0:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 101,
               "OreDict:8": ""
             }
@@ -55388,9 +55301,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -55700,9 +55610,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -55828,9 +55735,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -55959,9 +55863,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -56087,9 +55988,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -56215,9 +56113,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -56349,9 +56244,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -56474,9 +56366,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -56605,9 +56494,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -56733,9 +56619,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -56861,9 +56744,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -56994,9 +56874,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -57122,9 +56999,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -57250,9 +57124,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -57381,9 +57252,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -57571,9 +57439,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -57764,9 +57629,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -57892,9 +57754,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -58089,9 +57948,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -58288,9 +58144,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -58420,9 +58273,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -58569,9 +58419,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -58718,9 +58565,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -58946,9 +58790,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -59142,9 +58983,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -59338,9 +59176,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -59537,9 +59372,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -59733,9 +59565,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -59861,9 +59690,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -59997,9 +59823,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -60136,9 +59959,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -60272,9 +60092,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -60400,9 +60217,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -60528,9 +60342,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -60659,9 +60470,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -60787,9 +60595,6 @@
             "2:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 100,
               "OreDict:8": ""
             }
@@ -60854,9 +60659,6 @@
             "0:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 101,
               "OreDict:8": ""
             }
@@ -61005,9 +60807,6 @@
             "0:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 75,
               "OreDict:8": ""
             }
@@ -61079,9 +60878,6 @@
             "0:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 101,
               "OreDict:8": ""
             }
@@ -61314,9 +61110,6 @@
             "0:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 75,
               "OreDict:8": ""
             }
@@ -61398,9 +61191,6 @@
             "0:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 101,
               "OreDict:8": ""
             }
@@ -61474,9 +61264,6 @@
             "0:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 101,
               "OreDict:8": ""
             }
@@ -61548,9 +61335,6 @@
             "0:10": {
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 75,
               "OreDict:8": ""
             }
