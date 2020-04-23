@@ -467,9 +467,9 @@ function onSpawnEvent(e as EntityLivingSpawnEvent){
 # -------------------------------
 # Hook on events
 # -------------------------------
-// events.onSpecialSpawn(function(event as EntityLivingSpawnEvent){
-//   onSpawnEvent(event);
-// });
+events.onSpecialSpawn(function(event as EntityLivingSpawnEvent){
+  onSpawnEvent(event);
+});
 
 events.onCheckSpawn(function(event as EntityLivingSpawnEvent){
   onSpawnEvent(event);

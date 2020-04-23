@@ -707,12 +707,6 @@ recipes.addShapedMirrored("Wither Proof Glass",
 
 # *======= Remove & Hide =======*
 	
-	rh(<mysticalagriculture:nether_prosperity_ore>);
-	rh(<mysticalagriculture:end_prosperity_ore>);
-	rh(<mysticalagriculture:inferium_ore>);
-	rh(<mysticalagriculture:nether_inferium_ore>);
-	rh(<mysticalagriculture:end_inferium_ore>);
-	
 var itemsToRemoveAndHide as IItemStack[] = [
 	<mysticalagriculture:chunk>,
 	<mysticalagriculture:chunk:1>,

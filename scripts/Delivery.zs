@@ -1,37 +1,31 @@
-val store_Default = "_store"; //The default store is ALWAYS called _store
-val store_Wheat = "Baker";
-val store_Diamond = "Diamond Trader";
+import crafttweaker.item.IItemStack;
+
+
+// // Get the villager loot table and store it for later use
+// val villager = mods.ltt.LootTable.getTable("minecraft:entities/villager");
+// // Add a pool called delivery to the villager loot table, then store it for later use
+// val delivery = villager.addPool("delivery", 1, 1, 0, 0);
+// // Add an apple to "delivery"
+// delivery.addItemEntry(<delivery:store_book>, 1);
+
 
 //Set default store item
-mods.Delivery.Store.setStoreIcon(store_Default, <minecraft:redstone>);    // "_store" is the name of the default store
+mods.Delivery.Store.setStoreIcon("_store", <bq_standard:loot_chest:0>);    // "_store" is the name of the default store
 
-//Add Some trades
-//These will go into the default tab as there is no store specified
-mods.Delivery.Store.addTrade(<minecraft:diamond> * 2).addOre("record", 5).addItem(<minecraft:apple>, <minecraft:golden_carrot> * 3);
-mods.Delivery.Store.addTrade(<minecraft:diamond> * 2).addOre("plankWood", 52);
-mods.Delivery.Store.addTrade(<minecraft:emerald> * 10, store_Default, <minecraft:stick> * 5, <minecraft:brick>).addOre("plankWood", 3).addItem(<minecraft:paper> * 2);
-mods.Delivery.Store.addTrade(<minecraft:brick> * 35, <minecraft:obsidian> * 5).addOre("plankWood", 1).addOre("ingotIron", 2);
-mods.Delivery.Store.addTrade(<minecraft:diamond> * 20, <minecraft:emerald>);
-mods.Delivery.Store.addTrade(<minecraft:diamond_pickaxe>).addOre("ingotGold", 5);
-mods.Delivery.Store.addTrade(<minecraft:wheat> * 20, <minecraft:diamond> * 5);
+val loot as IItemStack[] = [
+  <bq_standard:loot_chest:0>,
+  <bq_standard:loot_chest:25>,
+  <bq_standard:loot_chest:50>,
+  <bq_standard:loot_chest:75>,
+  <bq_standard:loot_chest:100>,
+  <bq_standard:loot_chest:101>
+  ] as IItemStack[];
 
-//Add some trades to the baker store
-mods.Delivery.Store.addTrade(<minecraft:wheat> * 20, store_Wheat, <minecraft:diamond> * 5);
-mods.Delivery.Store.addTrade(<minecraft:bread> * 4, store_Wheat).addOre("netherStar", 4).addItem(<minecraft:sugar>);
-mods.Delivery.Store.addTrade(<minecraft:emerald> * 2, store_Wheat, <minecraft:wheat> * 10);
-
-//Add some trades to the diamond trader
-//Some of these require a gamestage
-mods.Delivery.Store.addTrade("gs_buydiamond_1", <minecraft:diamond> * 20, store_Diamond, <minecraft:emerald> * 5);
-mods.Delivery.Store.addTrade("gs_buydiamond_2", <minecraft:diamond> * 25, store_Diamond, <minecraft:stick> * 45);
-mods.Delivery.Store.addTrade(<minecraft:diamond>, store_Diamond, <minecraft:stick> * 64);
-mods.Delivery.Store.addTrade(<minecraft:emerald>, store_Diamond).addOre("gemDiamond", 4);
-
-//You can set the store iron at any time
-//The order that the store is first accessed is the order they will appear in the tabs
-//The exception to this is the default tab, which will always be first.
-mods.Delivery.Store.setStoreIcon(store_Wheat, <minecraft:wheat>);
-mods.Delivery.Store.setStoreIcon(store_Diamond, <minecraft:diamond>);
+mods.Delivery.Store.addTrade(loot[3]).addItem(loot[5], loot[5], loot[5], loot[5]);
+mods.Delivery.Store.addTrade(loot[3]).addItem(loot[4], loot[4], loot[4], loot[4]);
+mods.Delivery.Store.addTrade(loot[2]).addItem(loot[3], loot[3], loot[3], loot[3]);
+mods.Delivery.Store.addTrade(loot[1]).addItem(loot[2], loot[2], loot[2], loot[2]);
+mods.Delivery.Store.addTrade(loot[0]).addItem(loot[1], loot[1], loot[1], loot[1]);
 
 //Notes
 /*

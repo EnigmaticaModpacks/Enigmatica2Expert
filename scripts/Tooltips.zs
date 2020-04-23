@@ -261,7 +261,7 @@ for item in thaumcraftHintItems {
 	addDescription(<bigreactors:minerals:1>, craftable);
 
 # Uncraftable ingots
-	ad(<bigreactors:ingotmetals:4>,"Block of Ludicrite is craftable.");
+	addDescription(<bigreactors:ingotmetals:4>,"Block of Ludicrite is craftable.");
 
 # Mana Infused Ingot
 	addDescription(<thermalfoundation:material:136>,"Only obtainable through the Metallurgic Infuser, the Advanced Metallurgic Fabricator, and other planets.");
