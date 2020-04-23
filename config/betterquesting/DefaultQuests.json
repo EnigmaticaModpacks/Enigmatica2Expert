@@ -5390,7 +5390,10 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -9196,7 +9199,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -9401,7 +9404,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -10214,7 +10217,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -10572,7 +10575,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -11263,7 +11266,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -12157,7 +12160,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -12291,33 +12294,18 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:choice",
+          "rewardID:8": "bq_standard:item",
           "index:3": 0,
-          "choices:9": {
+          "rewards:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
+              "tag:10": {
+                "hideLootInfo:1": 1
               },
-              "id:8": "bq_standard:loot_chest",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "2:10": {
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
-              "id:8": "bq_standard:loot_chest",
-              "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -15087,7 +15075,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -15387,34 +15375,19 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:choice",
+          "rewardID:8": "bq_standard:item",
           "index:3": 0,
-          "choices:9": {
+          "rewards:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
               "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
-              "id:8": "bq_standard:loot_chest",
-              "Count:3": 1,
-              "Damage:2": 25,
-              "OreDict:8": ""
-            },
-            "2:10": {
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
-              "id:8": "bq_standard:loot_chest",
-              "Count:3": 1,
-              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -15766,7 +15739,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -16073,7 +16046,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -16169,7 +16142,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -16265,7 +16238,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -16361,7 +16334,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -16553,7 +16526,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -16649,7 +16622,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -16745,7 +16718,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -16825,7 +16798,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -16905,7 +16878,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -16985,7 +16958,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -17065,7 +17038,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -17145,7 +17118,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -17225,7 +17198,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -17321,7 +17294,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -17417,7 +17390,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -20875,7 +20848,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -21745,7 +21718,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -22746,33 +22719,18 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:choice",
+          "rewardID:8": "bq_standard:item",
           "index:3": 0,
-          "choices:9": {
+          "rewards:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
+              "tag:10": {
+                "hideLootInfo:1": 1
               },
-              "id:8": "bq_standard:loot_chest",
-              "Count:3": 1,
-              "Damage:2": 101,
-              "OreDict:8": ""
-            },
-            "2:10": {
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
-              "id:8": "bq_standard:loot_chest",
-              "Count:3": 1,
               "Damage:2": 25,
               "OreDict:8": ""
             }
@@ -23504,7 +23462,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 100,
               "OreDict:8": ""
             }
           }
@@ -24197,7 +24155,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -24277,7 +24235,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -24357,7 +24315,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -26851,7 +26809,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -27699,7 +27657,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -29222,7 +29180,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -29447,7 +29405,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -29597,7 +29555,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -29678,7 +29636,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -29753,7 +29711,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -29966,7 +29924,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -30160,7 +30118,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -31116,7 +31074,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -31877,7 +31835,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -31975,7 +31933,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -32085,7 +32043,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -32183,7 +32141,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -32351,7 +32309,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -32461,7 +32419,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -32559,7 +32517,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -33009,7 +32967,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -33170,7 +33128,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -33239,7 +33197,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -35994,7 +35952,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -36063,7 +36021,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -36680,7 +36638,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -36887,7 +36845,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -36956,7 +36914,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -37025,7 +36983,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -39438,7 +39396,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -39711,7 +39669,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -40810,7 +40768,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -40896,7 +40854,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -40970,7 +40928,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -41056,7 +41014,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -41142,7 +41100,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -41230,7 +41188,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -41674,7 +41632,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -41748,7 +41706,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -41822,7 +41780,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -41896,7 +41854,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -41964,7 +41922,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -42761,7 +42719,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -43373,7 +43331,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -43645,7 +43603,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -45434,7 +45392,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -45798,7 +45756,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -45946,7 +45904,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -46094,7 +46052,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -48914,7 +48872,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -50510,7 +50468,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -50928,7 +50886,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -51038,7 +50996,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -51139,7 +51097,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -51635,7 +51593,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -51929,7 +51887,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -53596,7 +53554,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -58468,7 +58426,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 100,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -58596,7 +58554,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 100,
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -58724,7 +58682,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 100,
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -59952,7 +59910,10 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 100,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -60432,7 +60393,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 100,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -60809,7 +60770,10 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 100,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -61201,7 +61165,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 100,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -61400,7 +61364,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 100,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -61596,7 +61560,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 100,
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -62263,7 +62227,10 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 100,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -63091,6 +63058,21 @@
               },
               "id:8": "littletiles:chisel",
               "Count:3": 1,
+              "tag:10": {
+                "preview:10": {
+                  "bBox:11": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  "tile:10": {
+                    "block:8": "minecraft:stone"
+                  }
+                }
+              },
               "Damage:2": 0,
               "OreDict:8": ""
             }
