@@ -74,3 +74,10 @@ recipes.addShaped(<cyclicmagic:book_ender>, [
 	[<randomthings:flootoken>, <minecraft:book>, <randomthings:flootoken>], 
 	[<randomthings:flootoken>, <randomthings:flootoken>, <randomthings:flootoken>]
 ]);
+
+# Time in bottle
+remake("randomthings_timeinabottle", <randomthings:timeinabottle>, [
+	[null, <animania:milk_bottle>, null], 
+	[<rats:little_black_squash_balls>, <minecraft:clock>, <rats:little_black_squash_balls>], 
+	[<animania:milk_bottle>, <extrautils2:klein>, <animania:milk_bottle>]
+]);

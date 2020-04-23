@@ -327,3 +327,13 @@ remake("mekanism energyupgrade", <mekanism:energyupgrade>, [
 	[<ore:blockGlass>, <energeticsheep:energetic_wool:*>, <ore:blockGlass>],
 	[<mekanism:enrichedalloy>, <ore:dustGold>, <mekanism:enrichedalloy>],
 	[<ore:blockGlass>, <energeticsheep:energetic_wool:*>, <ore:blockGlass>]]);
+
+# Atomic disassembler
+recipes.removeShaped(<mekanism:atomicdisassembler>);
+var anyDragonsteelRod = <tconstruct:tough_tool_rod>.withTag({Material: "dragonsteel_ice"}) |
+												<tconstruct:tough_tool_rod>.withTag({Material: "dragonsteel_fire"});
+recipes.addShaped(<mekanism:atomicdisassembler>, [
+	[<ore:ingotPlatinum>, <mekanism:tierinstaller:2>, <ore:ingotPlatinum>], 
+	[<ore:ingotPlatinum>, anyDragonsteelRod, null], 
+	[null, anyDragonsteelRod, null]
+]);
