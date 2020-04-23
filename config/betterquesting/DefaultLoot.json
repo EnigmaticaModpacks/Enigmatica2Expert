@@ -791,19 +791,27 @@
           "items:9": {
             "0:10": {
               "id:8": "sonarcore:stablestoneblackrimmed_lightblue",
-              "Count:3": 64
+              "Count:3": 64,
+              "Damage:2": 0,
+              "OreDict:8": ""
             },
             "1:10": {
               "id:8": "sonarcore:stablestoneblackrimmed_lightblue",
-              "Count:3": 64
+              "Count:3": 64,
+              "Damage:2": 0,
+              "OreDict:8": ""
             },
             "2:10": {
               "id:8": "sonarcore:stablestoneblackrimmed_lightblue",
-              "Count:3": 64
+              "Count:3": 64,
+              "Damage:2": 0,
+              "OreDict:8": ""
             },
             "3:10": {
               "id:8": "sonarcore:stablestoneblackrimmed_lightblue",
-              "Count:3": 64
+              "Count:3": 64,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
@@ -3393,19 +3401,27 @@
           "items:9": {
             "0:10": {
               "id:8": "environmentalmaterials:alabaster_brick_stairs_white",
-              "Count:3": 64
+              "Count:3": 64,
+              "Damage:2": 0,
+              "OreDict:8": ""
             },
             "1:10": {
               "id:8": "environmentalmaterials:alabaster_brick_stairs_white",
-              "Count:3": 64
+              "Count:3": 64,
+              "Damage:2": 0,
+              "OreDict:8": ""
             },
             "2:10": {
               "id:8": "environmentalmaterials:alabaster_brick_stairs_white",
-              "Count:3": 64
+              "Count:3": 64,
+              "Damage:2": 0,
+              "OreDict:8": ""
             },
             "3:10": {
               "id:8": "environmentalmaterials:alabaster_brick_stairs_white",
-              "Count:3": 64
+              "Count:3": 64,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
@@ -4109,14 +4125,13 @@
           "items:9": {
             "0:10": {
               "ForgeCaps:10": {
-                "Parent:10": {
-                  "Size:3": 5,
-                  "Items:9": {}
-                },
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
-              "id:8": "effortlessbuilding:randomizer_bag",
+              "id:8": "cyclicmagic:laser_cannon",
               "Count:3": 1,
+              "tag:10": {
+                "energy:3": 32000
+              },
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -6378,11 +6393,8 @@
           "ID:3": 28,
           "items:9": {
             "0:10": {
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
-              "id:8": "exchangers:resonant_exchanger",
-              "Count:3": 1,
+              "id:8": "capabilityproxy:ranged_capability_proxy",
+              "Count:3": 2,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -6792,7 +6804,7 @@
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
-              "id:8": "effortlessbuilding:reach_upgrade1",
+              "id:8": "botania:reachring",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
