@@ -83,6 +83,5 @@ Cursed Earth spawn wither skeletons in Nether Fortress
 /undo_excavation can undo Ore Excavator
 Ender Lilly grows on End Stone faster. Get it in stone barrel with lava + glow Stone
 Tasty battlesign (from pigiron for example) in offhand will feed you
-Feed your IC Recycler with bits piped from Fluid Bit Tank
 Hover over item and press Y to show it in surrounding chests
 Stack of Steelleafs in your hotbar will dramactically fast repair items with Synergy treat
