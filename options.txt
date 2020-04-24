@@ -11,7 +11,7 @@ bobView:true
 anaglyph3d:false
 maxFps:260
 fboEnable:true
-difficulty:2
+difficulty:3
 fancyGraphics:true
 ao:2
 renderClouds:true
@@ -94,6 +94,12 @@ key_Hub Expand Key:0
 key_Change Caster Focus:34
 key_Misc Caster Toggle:0
 key_keybind.baublesinventory:0
+key_quark.keybind.dropoff:0
+key_quark.keybind.chestSort:0
+key_quark.keybind.chestDropoff:0
+key_quark.keybind.chestMerge:0
+key_quark.keybind.chestRestock:0
+key_quark.keybind.chestExtract:0
 key_quark.emote.no:0
 key_quark.emote.yes:0
 key_quark.emote.wave:0
@@ -114,12 +120,6 @@ key_quark.emote.exorcist:0
 key_quark.emote.zombie:0
 key_quark.keybind.toggleAutojump:0
 key_quark.keybind.lockBuilding:33:SHIFT
-key_quark.keybind.dropoff:0
-key_quark.keybind.chestSort:0
-key_quark.keybind.chestDropoff:0
-key_quark.keybind.chestMerge:0
-key_quark.keybind.chestRestock:0
-key_quark.keybind.chestExtract:0
 key_key.toggle_shaders:0
 key_bloodmagic.keybind.open_holding:53:CONTROL
 key_bloodmagic.keybind.cycle_holding_pos:0
@@ -134,10 +134,6 @@ key_key.next_item.desc:0
 key_key.previous_item.desc:0
 key_key.open_danknull.desc:0
 key_key.togglehud.desc:0
-key_key.exchanger_range_switch:51:SHIFT
-key_key.exchanger_mode_switch:52:SHIFT
-key_key.exchanger_force_drop_items:0
-key_key.exchanger_directional_placement:53:SHIFT
 key_key.xu2.searchforitems:0
 key_key.findme.search:21
 key_key.ftbutilities.nbt:0
@@ -321,9 +317,8 @@ key_enderio.keybind.fovplus:0
 key_enderio.keybind.fovminus:0
 key_enderio.keybind.fovplusfast:0
 key_enderio.keybind.fovminusfast:0
-key_key.little.mark:50
-key_key.fullscreenwindowed.unused:0
 key_key.little.config:46:CONTROL
+key_key.little.mark:50
 soundCategory_master:0.23178808
 soundCategory_music:0.0
 soundCategory_record:0.02112676

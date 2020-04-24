@@ -8,13 +8,11 @@
 !schematics/
 !minemenu/
 !resourcepacks/
-!.gitignore
-!options.txt
+![!]Relese.bat
 
 # Files created by luncher
 config/splash.properties
 
-# Client Configs
 config/creativecore-client.json
 config/InvTweaks.cfg
 config/MouseTweaks.cfg
