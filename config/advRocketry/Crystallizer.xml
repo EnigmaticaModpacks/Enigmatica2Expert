@@ -23,14 +23,6 @@
 <Recipes useDefault="false">
 	<Recipe timeRequired="100" power ="250000">
 		<input>
-			<oreDict>dustDilithium</oreDict>
-		</input>
-		<output>
-			<itemStack>libvulpes:productcrystal</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="100" power ="250000">
-		<input>
 			<oreDict>itemSilicon</oreDict>
 		</input>
 		<output>
