@@ -1,8 +1,7 @@
 import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemStack as IItemStack;
-import mods.immersivetweaker.Recycling;
 
-#modloaded immersiveengineering immersivetweaker
+#modloaded immersiveengineering
 
 # Removing Recycling recipes that produce IE Iron Nuggets
 	mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:29>);

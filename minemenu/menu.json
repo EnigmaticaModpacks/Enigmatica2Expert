@@ -1,5 +1,31 @@
 {
   "main": {
+    "3": {
+      "title": "Change Tool Config",
+      "icon": {
+        "name": "draconicevolution:energy_crystal",
+        "damage": 3
+      },
+      "action": {
+        "key": {
+          "key": "key.toolProfileChange",
+          "toggle": false
+        }
+      }
+    },
+    "4": {
+      "title": "Item Mode Switch",
+      "icon": {
+        "name": "draconicevolution:crystal_binder",
+        "damage": 0
+      },
+      "action": {
+        "key": {
+          "key": "mekanism.key.mode",
+          "toggle": false
+        }
+      }
+    },
     "5": {
       "title": "Portal",
       "icon": {
@@ -22,6 +48,32 @@
       "action": {
         "key": {
           "key": "key.plustic_set_portal.desc",
+          "toggle": false
+        }
+      }
+    },
+    "7": {
+      "title": "Load Shematic",
+      "icon": {
+        "name": "modularmachinery:itemblueprint",
+        "damage": 0
+      },
+      "action": {
+        "key": {
+          "key": "schematica.key.load",
+          "toggle": false
+        }
+      }
+    },
+    "8": {
+      "title": "Manipulate Schematic",
+      "icon": {
+        "name": "modularmachinery:itemblueprint",
+        "damage": 0
+      },
+      "action": {
+        "key": {
+          "key": "schematica.key.control",
           "toggle": false
         }
       }

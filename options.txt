@@ -1,7 +1,7 @@
 version:1343
 invertYMouse:false
 mouseSensitivity:0.5
-fov:0.0
+fov:0.575
 gamma:1.0
 saturation:0.0
 renderDistance:15
@@ -45,7 +45,7 @@ reducedDebugInfo:false
 useNativeTransport:true
 entityShadows:true
 mainHand:right
-attackIndicator:0
+attackIndicator:1
 showSubtitles:false
 realmsNotifications:true
 enableWeakAttacks:false
@@ -94,12 +94,6 @@ key_Hub Expand Key:0
 key_Change Caster Focus:34
 key_Misc Caster Toggle:0
 key_keybind.baublesinventory:0
-key_quark.keybind.dropoff:0
-key_quark.keybind.chestSort:0
-key_quark.keybind.chestDropoff:0
-key_quark.keybind.chestMerge:0
-key_quark.keybind.chestRestock:0
-key_quark.keybind.chestExtract:0
 key_quark.emote.no:0
 key_quark.emote.yes:0
 key_quark.emote.wave:0
@@ -120,6 +114,12 @@ key_quark.emote.exorcist:0
 key_quark.emote.zombie:0
 key_quark.keybind.toggleAutojump:0
 key_quark.keybind.lockBuilding:33:SHIFT
+key_quark.keybind.dropoff:0
+key_quark.keybind.chestSort:0
+key_quark.keybind.chestDropoff:0
+key_quark.keybind.chestMerge:0
+key_quark.keybind.chestRestock:0
+key_quark.keybind.chestExtract:0
 key_key.toggle_shaders:0
 key_bloodmagic.keybind.open_holding:53:CONTROL
 key_bloodmagic.keybind.cycle_holding_pos:0
@@ -182,7 +182,7 @@ key_key.jei.toggleBookmarkOverlay:0
 key_nei.options.keys.gui.botania_corporea_request:0
 key_key.placeItem:25
 key_key.toolConfig:52
-key_key.toolProfileChange:0
+key_key.toolProfileChange:49:CONTROL
 key_key.armorProfileChange:0
 key_key.toggleFlight:0
 key_key.toggleDislocator:0
@@ -223,7 +223,7 @@ key_key.clipboardPaste:0
 key_dsurround.cfg.keybind.AnimaniaBadges:0
 key_key.immersiveengineering.magnetEquip:31
 key_key.immersiveengineering.chemthrowerSwitch:0
-key_mekanism.key.mode:50
+key_mekanism.key.mode:40
 key_mekanism.key.armorMode:34
 key_mekanism.key.feetMode:35
 key_mekanism.key.voice:22
@@ -239,7 +239,7 @@ key_key.porterNextDestination:27
 key_key.porterPrevDestination:26
 key_key.debugDumpNBTItem:0
 key_key.debugDumpNBTBlock:0
-key_invtweaks.key.sort:0
+key_invtweaks.key.sort:83
 key_jecalculation.key.gui_craft:0
 key_jecalculation.key.gui_math:0
 key_keywizard.keybind.openKeyboardWizard:0
@@ -317,9 +317,9 @@ key_enderio.keybind.fovplus:0
 key_enderio.keybind.fovminus:0
 key_enderio.keybind.fovplusfast:0
 key_enderio.keybind.fovminusfast:0
-key_key.little.config:46:CONTROL
 key_key.little.mark:50
-soundCategory_master:0.23178808
+key_key.little.config:46:CONTROL
+soundCategory_master:0.24172185
 soundCategory_music:0.0
 soundCategory_record:0.02112676
 soundCategory_weather:0.4084507
@@ -327,7 +327,7 @@ soundCategory_block:0.9929578
 soundCategory_hostile:0.09859155
 soundCategory_neutral:1.0
 soundCategory_player:1.0
-soundCategory_ambient:0.35211268
+soundCategory_ambient:0.21830986
 soundCategory_voice:1.0
 soundCategory_ds_footsteps:0.14084508
 soundCategory_ds_biome:0.49295774

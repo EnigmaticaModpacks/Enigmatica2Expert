@@ -236,7 +236,7 @@ function makePixieJar(name as string, result as IItemStack, mat as IIngredient){
 	recipes.addShaped(name, result, [
         [<ore:peacockFeathers>, mat, <ore:peacockFeathers>], 
         [<ore:peacockFeathers>, <rats:chunky_cheese_token>, <ore:peacockFeathers>], 
-        [<ore:peacockFeathers>, <biomesoplenty:jar_empty>, <ore:peacockFeathers>]
+        [<ore:peacockFeathers>, <iceandfire:jar_empty>, <ore:peacockFeathers>]
 	]);
 }
 

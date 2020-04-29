@@ -21,11 +21,11 @@ val loot as IItemStack[] = [
   <bq_standard:loot_chest:101>
   ] as IItemStack[];
 
-mods.Delivery.Store.addTrade(loot[3]).addItem(loot[5], loot[5], loot[5], loot[5]);
-mods.Delivery.Store.addTrade(loot[3]).addItem(loot[4], loot[4], loot[4], loot[4]);
-mods.Delivery.Store.addTrade(loot[2]).addItem(loot[3], loot[3], loot[3], loot[3]);
-mods.Delivery.Store.addTrade(loot[1]).addItem(loot[2], loot[2], loot[2], loot[2]);
-mods.Delivery.Store.addTrade(loot[0]).addItem(loot[1], loot[1], loot[1], loot[1]);
+mods.Delivery.Store.addTrade(loot[3]).addItem(loot[5] * 3);
+mods.Delivery.Store.addTrade(loot[3]).addItem(loot[4] * 3);
+mods.Delivery.Store.addTrade(loot[2]).addItem(loot[3] * 3);
+mods.Delivery.Store.addTrade(loot[1]).addItem(loot[2] * 3);
+mods.Delivery.Store.addTrade(loot[0]).addItem(loot[1] * 3);
 
 //Notes
 /*

@@ -100,6 +100,7 @@ ITEMS OF INTEREST
 
 <opencomputers:robot>
 <opencomputers:print>
+<bibliocraft:enchantedplate>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 0 as short}]})
 
 ---------------------
 CRAFTS OF INTEREST

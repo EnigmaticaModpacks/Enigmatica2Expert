@@ -222,7 +222,7 @@ recipes.removeByRecipeName("thermalexpansion:tank_15");
 // # Dynamo harder recipes
 function remakeDynamo(name as string, item as IItemStack, i1 as IIngredient, i2 as IIngredient){
 	remake("ThermalExpansion Dynamo " ~ name, item, [
-		[null, <actuallyadditions:battery_quintuple_bauble>, null],
+		[null, <actuallyadditions:item_battery_quintuple>, null],
 		[<thermalfoundation:material:514>, i1 , <thermalfoundation:material:514>],
 		[i2, <mekanism:tierinstaller:1>, i2]]);
 }

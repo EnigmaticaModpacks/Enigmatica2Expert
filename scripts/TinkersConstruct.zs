@@ -142,8 +142,9 @@ for item in coals {
 
 
 # Slime Boots
+	recipes.remove(<tconstruct:slime_boots:*>);
 	function remakeSlimeBoots(name as string, item as IItemStack, primary as IIngredient){
-		remake("Slime Boots " ~ name, item, [
+		make("Slime Boots " ~ name, item, [
 			[<ore:slimeball>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 34 as short}]}), <ore:slimeball>], 
 			[primary, <minecraft:leather_boots>.anyDamage(), primary]]);
 	}
@@ -155,8 +156,9 @@ for item in coals {
 	remakeSlimeBoots("Orange", <tconstruct:slime_boots:4>, <tconstruct:slime_congealed:4>);
 
 # Slime Slings
+	recipes.remove(<tconstruct:slimesling:*>);
 	function remakeSlimeSlings(name as string, item as IItemStack, primary as IIngredient){
-		remake("Slime Sling " ~ name, item, [
+		make("Slime Sling " ~ name, item, [
 			[<ore:slimeball>, null, <ore:slimeball>], 
 			[<ore:slimeball>, <cyclicmagic:slingshot_weapon>.anyDamage(), <ore:slimeball>], 
 			[null, primary, null]
@@ -229,6 +231,10 @@ HighOven.removeMixRecipe(<liquid:steel>);
 
 # Remove Unused alloy recipes
 ncAlloyRm(<enderio:item_alloy_ingot>);
+ncAlloyRm(<enderio:item_alloy_ingot:1>);
+ncAlloyRm(<enderio:item_alloy_ingot:2>);
+ncAlloyRm(<enderio:item_alloy_ingot:3>);
+ncAlloyRm(<enderio:item_alloy_ingot:5>);
 ncAlloyRm(<enderio:item_alloy_ingot:4>); # conductive Iron
 ncAlloyRm(<enderio:item_alloy_ingot:7>);
 ncAlloyRm(<enderio:item_alloy_ingot:8>);

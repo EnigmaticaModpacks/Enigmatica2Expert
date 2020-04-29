@@ -119,7 +119,7 @@ print("--- loading EnvironmentalTech.zs ---");
 recipes.remove(<environmentaltech:photovoltaic_cell>);
 recipes.addShaped(<environmentaltech:photovoltaic_cell>, [
 		[<ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>],
-		[<actuallyadditions:block_crystal_empowered:1>, <actuallyadditions:block_crystal_empowered:1>, <actuallyadditions:block_crystal_empowered:1>], 
+		[<actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:1>], 
 		[<ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>]
 	]);
 
