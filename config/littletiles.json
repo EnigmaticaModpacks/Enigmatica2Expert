@@ -15,12 +15,12 @@
     "enableCollisionMotion": true
   },
   "survival": {
-    "strictMining": false,
-    "limitEditBlocksSurvival": false,
+    "strictMining": true,
+    "limitEditBlocksSurvival": true,
     "maxEditBlocks": 10,
     "highestHarvestTierSurvival": 10,
     "editUnbreakable": false,
-    "limitPlaceBlocksSurvival": false,
+    "limitPlaceBlocksSurvival": true,
     "maxPlaceBlocks": 10,
     "minimumTransparency": 255,
     "dyeVolume": 2.0
