@@ -83,7 +83,7 @@
 			</planet>
 		</planet>
 		<planet name="Uranus" DIMID="109" customIcon="iceworld">
-			<biomeIds>biomesoplenty:alps, iceandfire:glacier, biomesoplenty:alps_foothills, biomesoplenty:glacier</biomeIds>
+			<biomeIds>biomesoplenty:alps,iceandfire:glacier,biomesoplenty:alps_foothills,biomesoplenty:glacier</biomeIds>
 			<skyColor>0,0.9,1</skyColor>
 			<fogColor>0.9,0.9,0.9</fogColor>
 			<atmosphereDensity>0</atmosphereDensity>
@@ -92,7 +92,7 @@
 			<rotationalPeriod>17250</rotationalPeriod>
 		</planet>
 		<planet name="Neptune" DIMID="110" customIcon="iceworld">
-			<biomeIds>biomesoplenty:alps, iceandfire:glacier, biomesoplenty:alps_foothills, biomesoplenty:glacier</biomeIds>
+			<biomeIds>biomesoplenty:alps,iceandfire:glacier,biomesoplenty:alps_foothills,biomesoplenty:glacier</biomeIds>
 			<skyColor>0,0.5,1</skyColor>
 			<atmosphereDensity>0</atmosphereDensity>
 			<orbitalDistance>180</orbitalDistance>
@@ -137,7 +137,7 @@
 			<rotationalPeriod>12000</rotationalPeriod>
 		</planet>
 		<planet name="Stella" DIMID="114" customIcon="earthlike">
-			<biomeIds>biomesoplenty:sacred_springs, biomesoplenty:mystic_grove</biomeIds>
+			<biomeIds>biomesoplenty:sacred_springs,biomesoplenty:mystic_grove</biomeIds>
 			<skyColor>1,0,1</skyColor>
 			<fogColor>1,0,0.5</fogColor>
 			<atmosphereDensity>100</atmosphereDensity>
@@ -197,7 +197,7 @@
 	</star>
 	<star name="HD 63776" temp="87" x="6" y="-142" numPlanets="0" numGasGiants="0">
 		<planet name="KELT-4ab" DIMID="120" customIcon="iceworld">
-			<biomeIds>biomesoplenty:alps, iceandfire:glacier, biomesoplenty:alps_foothills, biomesoplenty:glacier</biomeIds>
+			<biomeIds>biomesoplenty:alps,iceandfire:glacier,biomesoplenty:alps_foothills,biomesoplenty:glacier</biomeIds>
 			<skyColor>0,1,0</skyColor>
 			<fogColor>0,0,1</fogColor>
 			<hasRings>true</hasRings>
@@ -207,7 +207,7 @@
 			<rotationalPeriod>10000</rotationalPeriod>
 		</planet>
 		<planet name="KELT-6a" DIMID="121" customIcon="earthlike">
-			<biomeIds>advancedrocketry:alien forest, advancedrocketry:marsh</biomeIds>
+			<biomeIds>advancedrocketry:alien forest,advancedrocketry:marsh</biomeIds>
 			<skyColor>1,0,1</skyColor>
 			<fogColor>1,0,0.5</fogColor>
 			<atmosphereDensity>0</atmosphereDensity>
