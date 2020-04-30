@@ -2922,7 +2922,7 @@
           "ismain:1": 1,
           "repeat_relative:1": 1,
           "name:8": "Welcome",
-          "desc:8": "Welcome to Enigmatica 2: Expert! This modpack is designed to challenge the player through various means, especially harder recipes. I advice that you automate crafting of as much as possible, as early as possible. Things are going to get complicated. \n\nCheck the checkbox to get your starterkit.§d§d§0 \n\nI suggest you make a Backpack out of the Tanned Leather \u0026 Wooden Frame.\n\nGood luck!§0"
+          "desc:8": "Welcome to Enigmatica 2: Expert! This modpack is designed to challenge the player through various means, especially harder recipes. I advise that you automate crafting of as much as possible, as early as possible. Things are going to get complicated. \n\nCheck the checkbox to get your starterkit.§d§d§0 \n\nI suggest you make a Backpack out of the Tanned Leather \u0026 Wooden Frame.\n\nGood luck!§0"
         }
       },
       "tasks:9": {
@@ -38327,7 +38327,7 @@
           "ismain:1": 1,
           "repeat_relative:1": 1,
           "name:8": "Fusion Core",
-          "desc:8": "The Fusion Reactor is a large multiblock generator, capable of generating massive amounts of power.\n\nIt\u0027s a pretty complicated structure, so I highly advice that you watch a spotlight on it, or read through a guide. \n\nThe mod author made this spotlight on it:\n§1§9https://www.youtube.com/watch?v\u003dL-0LOtg2Plk\u0026t\u003d12s§0\n\n\n\n... That\u0027s not actually a hyperlink, it\u0027s just coloured text. Sorry.\n\nYou will need the Neutron fluid it produces as a byproduct for the Creative Tank."
+          "desc:8": "The Fusion Reactor is a large multiblock generator, capable of generating massive amounts of power.\n\nIt\u0027s a pretty complicated structure, so I highly advise that you watch a spotlight on it, or read through a guide. \n\nThe mod author made this spotlight on it:\n§1§9https://www.youtube.com/watch?v\u003dL-0LOtg2Plk\u0026t\u003d12s§0\n\n\n\n... That\u0027s not actually a hyperlink, it\u0027s just coloured text. Sorry.\n\nYou will need the Neutron fluid it produces as a byproduct for the Creative Tank."
         }
       },
       "tasks:9": {
