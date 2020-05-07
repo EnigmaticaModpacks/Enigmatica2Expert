@@ -6,7 +6,8 @@ print("--- loading AppliedEnergistics.zs ---");
 	
 	var pearlFluix = <ore:pearlFluix>;
 	var crystalCertus = <ore:crystalCertus>;
-
+	var controller = itemUtils.getItem("appliedenergistics2:controller");
+	
 # Smart Cable -> Dense
 	recipes.addShapeless("4 Smart Cables to Dense", 
 	<appliedenergistics2:part:76>, 
@@ -175,10 +176,10 @@ print("--- loading AppliedEnergistics.zs ---");
 	[<appliedenergistics2:fluix_block>, <appliedenergistics2:material:24>, <appliedenergistics2:fluix_block>]]);
 	
 # ME Controller
-	if (!isNull(itemUtils.getItem("appliedenergistics2:controller"))) {
-		recipes.remove(itemUtils.getItem("appliedenergistics2:controller"));
+	if (!isNull(controller)) {
+		recipes.remove(controller);
 		recipes.addShaped("ME Controller", 
-		itemUtils.getItem("appliedenergistics2:controller"), 
+		controller, 
 		[[<appliedenergistics2:smooth_sky_stone_block>, <advancedrocketry:ic:3>, <appliedenergistics2:smooth_sky_stone_block>],
 		[<appliedenergistics2:fluix_block>, <appliedenergistics2:energy_acceptor>, <appliedenergistics2:fluix_block>], 
 		[<teslacorelib:machine_case>, pearlFluix, <teslacorelib:machine_case>]]);
