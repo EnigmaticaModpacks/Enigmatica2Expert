@@ -144,7 +144,7 @@ for item in coals {
 # Slime Boots
 	recipes.remove(<tconstruct:slime_boots:*>);
 	function remakeSlimeBoots(name as string, item as IItemStack, primary as IIngredient){
-		make("Slime Boots " ~ name, item, [
+		recipes.addShaped("Slime Boots " ~ name, item, [
 			[<ore:slimeball>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 34 as short}]}), <ore:slimeball>], 
 			[primary, <minecraft:leather_boots>.anyDamage(), primary]]);
 	}
@@ -158,7 +158,7 @@ for item in coals {
 # Slime Slings
 	recipes.remove(<tconstruct:slimesling:*>);
 	function remakeSlimeSlings(name as string, item as IItemStack, primary as IIngredient){
-		make("Slime Sling " ~ name, item, [
+		recipes.addShaped("Slime Sling " ~ name, item, [
 			[<ore:slimeball>, null, <ore:slimeball>], 
 			[<ore:slimeball>, <cyclicmagic:slingshot_weapon>.anyDamage(), <ore:slimeball>], 
 			[null, primary, null]
