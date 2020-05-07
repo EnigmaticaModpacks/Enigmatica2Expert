@@ -915,6 +915,20 @@
               "OreDict:8": "",
               "Damage:3": 1
             }
+          }
+        },
+        "83:10": {
+          "weight:3": 1,
+          "items:9": {
+            "0:10": {
+              "id:8": "extrautils2:decorativeglass",
+              "Count:3": 64,
+              "OreDict:8": "",
+              "Damage:3": 4
+            }
+          }
+        },
+        "84:10": {
           "weight:3": 1,
           "items:9": {
             "0:10": {
@@ -3829,7 +3843,7 @@
               "Damage:3": 0
             }
           }
-        },,
+        },
         "30:10": {
           "weight:3": 1,
           "items:9": {
