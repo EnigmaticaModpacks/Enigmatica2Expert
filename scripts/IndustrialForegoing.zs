@@ -3,7 +3,6 @@ import mods.industrialforegoing.BioReactor;
 import mods.industrialforegoing.ProteinReactor;
 import mods.industrialforegoing.FluidDictionary;
 #modloaded industrialforegoing teslacorelib
-print("--- loading IndustrialForegoing.zs ---");
 
 function fluidDict(ins as string[]) {
 	for one in ins {
@@ -167,4 +166,21 @@ function fluidDict(ins as string[]) {
 	[<minecraft:bucket>, <ore:gearIron>, <minecraft:bucket>]]);
 
 
-	print("--- IndustrialForegoing.zs initialized ---");
+# Oredict Belts Recipes
+	recipes.remove(<industrialforegoing:conveyor>);
+	recipes.addShaped(<industrialforegoing:conveyor> * 4, [
+		[<ore:itemRubber>, <ore:itemRubber>, <ore:itemRubber>], 
+		[<ore:ingotIron>, <minecraft:redstone>, <ore:ingotIron>], 
+		[<ore:itemRubber>, <ore:itemRubber>, <ore:itemRubber>]]);
+
+	recipes.remove(<industrialforegoing:conveyor_upgrade>);
+	recipes.addShaped(<industrialforegoing:conveyor_upgrade>, [
+		[<ore:ingotIron>, <ore:itemRubber>, <ore:ingotIron>], 
+		[<ore:ingotIron>, <minecraft:dispenser>, <ore:ingotIron>], 
+		[<ore:ingotIron>, <industrialforegoing:conveyor:*>, <ore:ingotIron>]]);
+	recipes.remove(<industrialforegoing:conveyor_upgrade:1>);
+	
+	recipes.addShaped(<industrialforegoing:conveyor_upgrade:1>, [
+		[<ore:ingotIron>, <ore:itemRubber>, <ore:ingotIron>], 
+		[<ore:ingotIron>, <minecraft:hopper>, <ore:ingotIron>], 
+		[<ore:ingotIron>, <industrialforegoing:conveyor:*>, <ore:ingotIron>]]);

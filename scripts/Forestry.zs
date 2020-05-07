@@ -71,36 +71,49 @@ for tomato in <ore:cropTomato>.items {
 # Removing shapeless bronze crafting recipe
 	recipes.remove(<forestry:ingot_bronze>);
 	
-# Plank recipes, made by TrilexCom
-	recipes.addShapeless(<forestry:planks.0> * 2, [<forestry:logs.0>]); 
-	recipes.addShapeless(<forestry:planks.0:1> * 2, [<forestry:logs.0:1>]);
-	recipes.addShapeless(<forestry:planks.0:2> * 2, [<forestry:logs.0:2>]);
-	recipes.addShapeless(<forestry:planks.0:3> * 2, [<forestry:logs.0:3>]);    
-	recipes.addShapeless(<forestry:planks.0:4> * 2, [<forestry:logs.1>]);    
-	recipes.addShapeless(<forestry:planks.0:5> * 2, [<forestry:logs.1:1>]);    
-	recipes.addShapeless(<forestry:planks.0:6> * 2, [<forestry:logs.1:2>]);    
-	recipes.addShapeless(<forestry:planks.0:7> * 2, [<forestry:logs.1:3>]);
-	recipes.addShapeless(<forestry:planks.0:8> * 2, [<forestry:logs.2>]); 
-	recipes.addShapeless(<forestry:planks.1:2> * 2, [<forestry:logs.4:2>]);
-	recipes.addShapeless(<forestry:planks.1:3> * 2, [<forestry:logs.4:3>]);
-	recipes.addShapeless(<forestry:planks.1:4> * 2, [<forestry:logs.5>]);
-	recipes.addShapeless(<forestry:planks.1:6> * 2, [<forestry:logs.5:2>]);
-	recipes.addShapeless(<forestry:planks.1:5> * 2, [<forestry:logs.5:1>]);
-	recipes.addShapeless(<forestry:planks.0:15> * 2, [<forestry:logs.3:3>]);
-	recipes.addShapeless(<forestry:planks.0:11> * 2, [<forestry:logs.2:3>]);
-	recipes.addShapeless(<forestry:planks.0:12> * 2, [<forestry:logs.3>]);
-	recipes.addShapeless(<forestry:planks.0:13> * 2, [<forestry:logs.3:1>]);
-	recipes.addShapeless(<forestry:planks.0:14> * 2, [<forestry:logs.3:2>]);
-	recipes.addShapeless(<forestry:planks.1:7> * 2, [<forestry:logs.5:3>]);
-	recipes.addShapeless(<forestry:planks.1:10> * 2, [<forestry:logs.6:2>]);
-	recipes.addShapeless(<forestry:planks.1:9> * 2, [<forestry:logs.6:1>]);
-	recipes.addShapeless(<forestry:planks.1:8> * 2, [<forestry:logs.6>]);
-	recipes.addShapeless(<forestry:planks.1> * 2, [<forestry:logs.4>]);
-	recipes.addShapeless(<forestry:planks.1:1> * 2, [<forestry:logs.4:1>]);
-	recipes.addShapeless(<forestry:planks.0:9> * 2, [<forestry:logs.2:1>]);
-	recipes.addShapeless(<forestry:planks.1:12> * 2, [<forestry:logs.7>]);
-	recipes.addShapeless(<forestry:planks.0:10> * 2, [<forestry:logs.2:2>]);
-	recipes.addShapeless(<forestry:planks.1:11> * 2, [<forestry:logs.6:3>]);
+# Plank logs and planks, made by TrilexCom
+	val logsAndPlanks as IItemStack[IItemStack] = {
+		<forestry:logs.0>   : <forestry:planks.0>,
+		<forestry:logs.0:1> : <forestry:planks.0:1>,
+		<forestry:logs.0:2> : <forestry:planks.0:2>,
+		<forestry:logs.0:3> : <forestry:planks.0:3>,
+		<forestry:logs.1>   : <forestry:planks.0:4>,
+		<forestry:logs.1:1> : <forestry:planks.0:5>,
+		<forestry:logs.1:2> : <forestry:planks.0:6>,
+		<forestry:logs.1:3> : <forestry:planks.0:7>,
+		<forestry:logs.2>   : <forestry:planks.0:8>,
+		<forestry:logs.4:2> : <forestry:planks.1:2>,
+		<forestry:logs.4:3> : <forestry:planks.1:3>,
+		<forestry:logs.5>   : <forestry:planks.1:4>,
+		<forestry:logs.5:2> : <forestry:planks.1:6>,
+		<forestry:logs.5:1> : <forestry:planks.1:5>,
+		<forestry:logs.3:3> : <forestry:planks.0:15>,
+		<forestry:logs.2:3> : <forestry:planks.0:11>,
+		<forestry:logs.3>   : <forestry:planks.0:12>,
+		<forestry:logs.3:1> : <forestry:planks.0:13>,
+		<forestry:logs.3:2> : <forestry:planks.0:14>,
+		<forestry:logs.5:3> : <forestry:planks.1:7>,
+		<forestry:logs.6:2> : <forestry:planks.1:10>,
+		<forestry:logs.6:1> : <forestry:planks.1:9>,
+		<forestry:logs.6>   : <forestry:planks.1:8>,
+		<forestry:logs.4>   : <forestry:planks.1>,
+		<forestry:logs.4:1> : <forestry:planks.1:1>,
+		<forestry:logs.2:1> : <forestry:planks.0:9>,
+		<forestry:logs.7>   : <forestry:planks.1:12>,
+		<forestry:logs.2:2> : <forestry:planks.0:10>,
+		<forestry:logs.6:3> : <forestry:planks.1:11>,
+	};
+
+	for log, plank in logsAndPlanks {
+		# Shapeless Recipe
+		recipes.addShapeless(plank * 2, [log]);
+
+		# Nuclearcraft Manufactory
+		mods.nuclearcraft.manufactory.addRecipe(log, plank * 6);
+
+		# Mekanism Precision Sawmill
+		mods.mekanism.sawmill.addRecipe(log, plank * 6, <mekanism:sawdust>, 1.0);
+	}
 	
 # *======= Carpenter =======*
 

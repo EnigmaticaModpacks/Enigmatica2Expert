@@ -1,8 +1,6 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.item.IIngredient as IIngredient;
-import mods.jei.JEI.removeAndHide as rh;
 #modloaded appliedenergistics2
-print("--- loading AppliedEnergistics.zs ---");
 	
 	var pearlFluix = <ore:pearlFluix>;
 	var crystalCertus = <ore:crystalCertus>;
@@ -202,4 +200,5 @@ print("--- loading AppliedEnergistics.zs ---");
 # Charged Certus Quartz -> Certus Dust
 	mods.thermalexpansion.Pulverizer.addRecipe(<appliedenergistics2:material:2>, <appliedenergistics2:material:1>, 2000, <appliedenergistics2:material:2>, 20);
 		
-	print("--- AppliedEnergistics.zs initialized ---");
+# Lapis Dust
+	mods.appliedenergistics2.Grinder.addRecipe(<ic2:dust:9>, <minecraft:dye:4>, 4);

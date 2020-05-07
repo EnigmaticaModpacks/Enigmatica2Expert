@@ -58,8 +58,8 @@
     "harvestcraft:taroseeditem": "1*minecraft:emerald",
     "harvestcraft:juniperberryseeditem": "1*minecraft:emerald",
     "harvestcraft:tomatilloseeditem": "1*minecraft:emerald",
-	  "minecraft:mooshroom_spawn_egg": "10*minecraft:emerald",
-	  "minecraft:spawn_egg@{EntityTag: {id: \"quark:frog\"}}": "10*minecraft:emerald",
+    "minecraft:spawn_egg@{EntityTag: {id: \"minecraft:mooshroom\"}}": "10*minecraft:emerald",
+    "minecraft:spawn_egg@{EntityTag: {id: \"quark:frog\"}}": "10*minecraft:emerald",
     "rustic:sapling:1": "10*minecraft:emerald",
     "rustic:sapling": "10*minecraft:emerald",
     "rustic:wildberry_bush": "10*minecraft:emerald",
@@ -78,7 +78,8 @@
     "rustic:chamomile": "1*minecraft:emerald",
     "rustic:blood_orchid": "1*minecraft:emerald",
     "rustic:aloe_vera": "1*minecraft:emerald",
-    "rustic:grape_stem": "1*minecraft:emerald"
+    "rustic:grape_stem": "1*minecraft:emerald",
+    "thaumcraft:shimmerleaf": "3*minecraft:emerald"
   },
   "defaults amount": {
     "Vanilla Seeds": 1,

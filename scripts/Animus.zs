@@ -1,6 +1,5 @@
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded animus
-print("--- loading Animus.zs ---");
 
 # Healing Shards
 	mods.bloodmagic.BloodAltar.removeRecipe(<animus:fragmenthealing>);
@@ -25,4 +24,10 @@ print("--- loading Animus.zs ---");
 	mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:iron_pickaxe>, <minecraft:iron_pickaxe>, <minecraft:iron_pickaxe>, <minecraft:iron_pickaxe>]);
 	mods.bloodmagic.TartaricForge.addRecipe(<animus:component:2>, [<bloodmagic:bound_pickaxe>.anyDamage(),<bloodmagic:bound_shovel>.anyDamage(),<immersiveengineering:drillhead:1>,<ore:runeWrathB>], 300, 50);
 
-	print("--- Animus.zs initialized ---");
+# Khopesh
+recipes.remove(<animus:kama_diamond>);
+recipes.addShaped("animus_kama_diamond", <animus:kama_diamond>, [
+	[null, <ore:gemDiamond>, null], 
+	[<ore:gemDiamond>, null, <ore:blockDiamond>], 
+	[null, null, <forestry:oak_stick>]
+]);
