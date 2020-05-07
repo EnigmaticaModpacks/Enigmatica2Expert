@@ -663,10 +663,6 @@ for item in pressurePlates {
 	
 	Door.addItems(DoorToAdd);
 
-# *======= Remove ender chest =======*
-
-	<ore:chest>.remove(<minecraft:ender_chest>);
-
 # *======= Conversion Recipes =======*
 
 	recipes.addShapeless("trapdoororedict1", <minecraft:trapdoor>, [Trapdoor]);
