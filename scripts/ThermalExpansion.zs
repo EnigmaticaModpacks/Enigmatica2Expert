@@ -186,4 +186,16 @@ print("--- loading ThermalExpansion.zs ---");
 # Hardened Cell Frame
 	mods.actuallyadditions.Empowerer.addRecipe(<thermalexpansion:frame:129>, <thermalexpansion:frame:128>, <immersiveengineering:material:2>, <thermalfoundation:material:354>, <thermalfoundation:material:290>, <mekanism:basicblock:8>, 2500000, 200, [0.25, 0.25, 0.29]);
 
+# Remove creative kit crafts (no actual creative conversion kit)
+recipes.removeByRecipeName("thermalexpansion:cell_17");
+recipes.removeByRecipeName("thermalexpansion:cell_16");
+recipes.removeByRecipeName("thermalexpansion:cell_15");
+recipes.removeByRecipeName("thermalexpansion:cell_14");
+recipes.removeByRecipeName("thermalexpansion:cell_18");
+recipes.removeByRecipeName("thermalexpansion:tank_18");
+recipes.removeByRecipeName("thermalexpansion:tank_16");
+recipes.removeByRecipeName("thermalexpansion:tank_17");
+recipes.removeByRecipeName("thermalexpansion:tank_14");
+recipes.removeByRecipeName("thermalexpansion:tank_15");
+
 		print("--- ThermalExpansion.zs initialized ---");

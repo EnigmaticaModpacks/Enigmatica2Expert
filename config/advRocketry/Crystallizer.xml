@@ -21,15 +21,7 @@
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
 <Recipes useDefault="false">
-	<Recipe timeRequired="100" power ="5000">
-		<input>
-			<oreDict>dustDilithium</oreDict>
-		</input>
-		<output>
-			<itemStack>libvulpes:productcrystal</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="100" power ="5000">
+	<Recipe timeRequired="100" power ="100000">
 		<input>
 			<oreDict>itemSilicon</oreDict>
 		</input>

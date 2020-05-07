@@ -11,10 +11,16 @@ astralsorcery:blockstarlightinfuser 0
 astralsorcery:blockwell 0
 astralsorcery:blockattunementrelay 0
 astralsorcery:blockritualpedestal 0
-astralsorcery:blockaltar
-astralsorcery:blockcelestialcrystals
+astralsorcery:blockaltar 0
+astralsorcery:blockaltar 1
+astralsorcery:blockaltar 2
+astralsorcery:blockaltar 3
+astralsorcery:blockcelestialcrystals 0
+astralsorcery:blockcelestialcrystals 1
+astralsorcery:blockcelestialcrystals 2
+astralsorcery:blockcelestialcrystals 3
+astralsorcery:blockcelestialcrystals 4
 astralsorcery:blockmapdrawingtable 0
-ic2:te
 environmentaltech:lightning_cont_1 0
 environmentaltech:lightning_cont_2 0
 environmentaltech:lightning_cont_3 0

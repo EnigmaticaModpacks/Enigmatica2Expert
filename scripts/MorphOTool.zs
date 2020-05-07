@@ -1,5 +1,12 @@
 print("--- loading MorphOTool.zs ---");
 
+# Oredict remake
+recipes.remove(<morphtool:tool>);
+recipes.addShaped("Morphing Tool", <morphtool:tool>, [
+	[null, <ore:dyeGreen>, <ore:dyeBlue>], 
+	[null, <ore:ingotIron>, <ore:dyeRed>], 
+	[<ore:ingotIron>, null, null]]);
+
 # Super Morph-O-Tool
 	recipes.addShaped("Superwrench", 
 	<morphtool:tool>.withTag({"morphtool:is_morphing": 1 as byte, "morphtool:data": {
