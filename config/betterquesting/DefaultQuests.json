@@ -7238,8 +7238,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Mass Fabricator",
-          "desc:8": "The Mass Fabricator produces UU Matter at the cost of tons of EU, and optionally scrab."
+          "name:8": "Matter Fabricator",
+          "desc:8": "The Matter Fabricator produces UU Matter at the cost of tons of EU, and optionally scrab."
         }
       },
       "tasks:9": {
@@ -16227,7 +16227,7 @@
               ],
               "Level:1": 0
             },
-            "Damage:2": 5,
+            "Damage:2": 11,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -17187,7 +17187,7 @@
               ],
               "Level:1": 0
             },
-            "Damage:2": 11,
+            "Damage:2": 5,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
