@@ -2,6 +2,15 @@ import crafttweaker.item.IItemStack;
 #modloaded thermalexpansion
 print("--- loading ThermalExpansion.zs ---");
 
+# Planks/Slabs -> Sticks
+for plank in <ore:plankWood>.items {
+	mods.thermalexpansion.Sawmill.addRecipe(<minecraft:stick> * 6, plank, 500, <thermalfoundation:material:800>, 30);
+}
+
+for slab in <ore:slabWood>.items {
+	mods.thermalexpansion.Sawmill.addRecipe(<minecraft:stick> * 3, slab, 250, <thermalfoundation:material:800>, 15);
+}
+
 # Canola Oil Changes	
 	mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:refinedcanolaoil>);
 	mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:crystaloil>);
