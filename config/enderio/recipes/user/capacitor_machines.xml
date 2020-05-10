@@ -8,7 +8,7 @@
 
   <capacitor key="enderio:block_alloy_smelter/intake" base="200000" scaler="POWER" />
   <capacitor key="enderio:block_alloy_smelter/buffer" base="2000000" scaler="POWER" />
-  <capacitor key="enderio:block_alloy_smelter/use" base="10000" scaler="POWER" />
+  <capacitor key="enderio:block_alloy_smelter/use" base="5000" scaler="POWER" />
   
   <capacitor key="enderio:block_buffer/intake_creative" base="2000000" scaler="FIXED" />
   <capacitor key="enderio:block_buffer/buffer_creative" base="20000000" scaler="FIXED" />
@@ -20,7 +20,7 @@
 
   <capacitor key="enderio:block_farm_station/intake" base="200000" scaler="RANGE" />
   <capacitor key="enderio:block_farm_station/buffer" base="5000000" scaler="RANGE" />
-  <capacitor key="enderio:block_farm_station/use" base="1600" scaler="RANGE" />
+  <capacitor key="enderio:block_farm_station/use" base="360" scaler="RANGE" />
   <capacitor key="enderio:block_farm_station/base_size" base="1" scaler="FIXED" />
   <capacitor key="enderio:block_farm_station/bonus_size" base="2" scaler="IDENTITY" />
   <capacitor key="enderio:block_farm_station/stacksize_limit" base="16" scaler="QUADRATIC" />
@@ -84,7 +84,7 @@
   
   <capacitor key="enderio:block_sag_mill/intake" base="200000" scaler="POWER" />
   <capacitor key="enderio:block_sag_mill/buffer" base="2000000" scaler="POWER" />
-  <capacitor key="enderio:block_sag_mill/use" base="10000" scaler="POWER" />
+  <capacitor key="enderio:block_sag_mill/use" base="5000" scaler="POWER" />
   
   <capacitor key="enderio:block_simple_sag_mill/intake" base="200000" scaler="FIXED" />
   <capacitor key="enderio:block_simple_sag_mill/buffer" base="20000" scaler="FIXED" />
@@ -102,7 +102,7 @@
   
   <capacitor key="enderio:block_powered_spawner/intake" base="20000000" scaler="SPAWNER" />
   <capacitor key="enderio:block_powered_spawner/buffer" base="20000000" scaler="POWER" />
-  <capacitor key="enderio:block_powered_spawner/use" base="12800" scaler="SPAWNER" />
+  <capacitor key="enderio:block_powered_spawner/use" base="1280" scaler="SPAWNER" />
   <capacitor key="enderio:block_powered_spawner/speed" base="1" scaler="QUADRATIC" />
   
   <capacitor key="enderio:block_transceiver/intake" base="51200000" scaler="POWER" />
