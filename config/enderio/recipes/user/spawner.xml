@@ -12,5 +12,10 @@
       <entity name="iceandfire:snowvillager" costMultiplier="1.0" disabled="false"/>
 	</spawning>
   </recipe>
+  <recipe name="Spawner, Wither" required="true">
+    <spawning>
+	  <entity name="minecraft:wither" costMultiplier="50" disabled="true" soulvial="false"/>
+	</spawning>
+  </recipe>
 </enderio:recipes>
 
