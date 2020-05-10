@@ -5,12 +5,25 @@
 
 *Using Forge-1.12.2-14.23.5.2847*
 
-*[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.80.txt)*
+*[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.81.txt)*
 
 **Changes**
 
 * RFTools: Infuser now uses a lot more power.
 * RFTools: Matter Beamer / Spawner now use a lot more power, but can hold more matter and send more blocks.
+* Quark: Compass and Clock fixes have been turned off, they are now as vanilla intended them to be - slightly useless. This was turned off as it caused bug [#1664](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1664).
+* JEI: Un-hidden a bunch of useful stuff, such as IC2 Universal Fluid Cells
+* AdvancedRocketry: Increased machine energy consumption a lot more, since they're near the endgame.
+* ThermalExpansion: Buffed Thermal Expansion Energy Cells, both capacity and I/O
+* EnderIO: Buffed Lava Heat Exchanger.
+* EnderIO: Increased machine energy consumption a lot, to match their speed and tier.
+* Industrial Foregoing; Infinity Drill: Made the energy requirements a bit more gradual. It's still pretty insane
+* Industrial Foregoing; Infinity Drill: Increased the mining area.
+* ThermalExpansion: Buffed Thermal Expansion Dynamo RF/t. Amount of RF produced by fuel is unchanged.
+* Animania: Buffed the Hamster Wheel. A lot.
+* Animus: Increased cost of the Khopesh
+* AppliedEnergistics: Lapis Dust can now be made in the Grinder
+* IndustrialForegoing: Belt recipes now accept any Rubber
 
 **Mod Removals**
 
@@ -18,6 +31,9 @@
 
 **Bug Fixes**
 
+* Fixed incorrect biomes on Advanced Rocketry planets
+* Fixed Mooshroom spawn egg in Market
+* Fixed Mekanism Cardboard working on blocks on the blacklist
 * 
 
 ## 1.80
