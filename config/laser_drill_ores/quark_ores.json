@@ -1,0 +1,15 @@
+[
+  {
+    "item": "quark:biotite_ore",
+    "color": 15,
+    "rarity": [
+      {
+        "whitelist": "minecraft:sky",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 5
+      }
+    ]
+  }
+]
