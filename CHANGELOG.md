@@ -25,16 +25,21 @@
 * AppliedEnergistics: Lapis Dust can now be made in the Grinder
 * IndustrialForegoing: Belt recipes now accept any Rubber
 
-**Mod Removals**
-
-- 
-
 **Bug Fixes**
 
 * Fixed incorrect biomes on Advanced Rocketry planets
 * Fixed Mooshroom spawn egg in Market
 * Fixed Mekanism Cardboard working on blocks on the blacklist
-* 
+
+**Added Mods**
+
+* [IC2 Tweaker](https://www.curseforge.com/minecraft/mc-mods/ic2-tweaker)
+
+**Mod Removals**
+
+- 
+
+
 
 ## 1.80
 
