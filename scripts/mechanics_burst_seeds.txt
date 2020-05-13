@@ -1,0 +1,27 @@
+remove burst_seed_sand
+remove burst_seed_gravel
+remove burst_seed_cobblestone
+remove burst_seed_netherrack
+remove burst_seed_glowstone
+remove burst_seed_purpur
+remove burst_seed_red_sand
+remove burst_seed_grass
+remove burst_seed_diorite
+remove burst_seed_sandstone
+remove burst_seed_glass
+remove burst_seed_soul_sand
+remove burst_seed_granite
+remove burst_seed_andesite
+remove burst_seed_snow
+remove burst_seed_wool
+remove burst_seed_prismarine
+remove burst_seed_red_sandstone
+remove burst_seed_end_stone
+remove burst_seed_dirt
+remove burst_seed_clay
+remove burst_seed_quartz
+remove burst_seed_ice
+remove burst_seed_stone
+burst_seed_andesite exnihilocreatio:item_ore_aluminium 0
+burst_seed_diorite exnihilocreatio:item_ore_tin 0
+burst_seed_granite exnihilocreatio:item_ore_iron 0
