@@ -219,7 +219,7 @@ print("--- loading MiscRecipes.zs ---");
 
 # Chest
 
-	# What log becomes what chest
+	# Logs defined by Quark
 	val excludeLogs as IItemStack[] = [
 		<minecraft:log>,
 		<minecraft:log:1>,
@@ -232,7 +232,13 @@ print("--- loading MiscRecipes.zs ---");
 	# Ingredient of all possible logs except listed above
 	var logsFiltered as IIngredient = <minecraft:log>;
 	for log in <ore:logWood>.items{
-		if(!(excludeLogs has log)){
+		var isAdd = true;
+		for i in 0 to excludeLogs.length{
+			if((log has excludeLogs[i]) || (excludeLogs[i] has log)){
+				isAdd = false;
+			}
+		}
+		if (isAdd){
 			print("Adding log " ~ log.displayName);
 			logsFiltered = logsFiltered.or(log);
 		}
@@ -255,7 +261,6 @@ print("--- loading MiscRecipes.zs ---");
 	}
 
 # Quark chests
-  # remakeChest("Oak Chest"     , <minecraft:chest>     , <minecraft:log>);
   remakeChest("Spruce Chest"  , <quark:custom_chest>  , <minecraft:log:1>);
   remakeChest("Birch Chest"   , <quark:custom_chest:1>, <minecraft:log:2>);
   remakeChest("Jungle Chest"  , <quark:custom_chest:2>, <minecraft:log:3>);

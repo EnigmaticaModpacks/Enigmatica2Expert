@@ -178,3 +178,6 @@ recipes.addShapedMirrored("Gargantuan Drum",
 		[<extrautils2:drum:2>, <extrautils2:drum:2>, <extrautils2:drum:2>], 
 		[demonPlate, <liquid:high_pressure_steam>*1000, demonPlate]
 		]);
+
+# Sky stone dust
+mods.extrautils2.Crusher.add(<appliedenergistics2:material:45>, <appliedenergistics2:sky_stone_block>);

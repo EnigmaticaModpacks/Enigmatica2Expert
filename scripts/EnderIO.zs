@@ -256,3 +256,13 @@ remake("Conduit Binder Composite", <enderio:item_material:22> * 8, [
 	[<ore:dust>, <ore:materialWoolEnergetic>, <ore:dust>],
 	[<ore:dustClay>, <liquid:sand>*1000, <ore:dustClay>],
 	[<ore:dust>, <ore:materialWoolEnergetic>, <ore:dust>]]);
+
+# Simplifi Niard
+recipes.remove(<enderio:block_niard>);
+recipes.addShaped(<enderio:block_niard>, [
+	[<immersiveengineering:metal_device1:6>, <enderio:block_tank>, <immersiveengineering:metal_device1:6>],
+	[<ore:craftingPiston>, <ore:chassis>, <ore:craftingPiston>],
+	[<ore:ingotIron>, <ore:barsIron>, <ore:ingotIron>]]);
+
+# Sky stone dust
+mods.enderio.SagMill.addRecipe([<appliedenergistics2:material:45>] as IItemStack[], [1.0] as float[], <appliedenergistics2:sky_stone_block>);

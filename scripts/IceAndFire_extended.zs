@@ -197,7 +197,7 @@ recipes.addShaped("iceandfire_deathworm_egg", <iceandfire:iceandfire.deathworm_e
 ]);
 
 # Big Worm
-fti(<iceandfire:iceandfire.deathworm_egg:1>, <liquid:sand>, <iceandfire:iceandfire.deathworm_egg>);
+fti(<iceandfire:iceandfire.deathworm_egg:1>, <liquid:blueslime>, <iceandfire:iceandfire.deathworm_egg>);
 
 ////////////////////////////////////
 // MYRMEX

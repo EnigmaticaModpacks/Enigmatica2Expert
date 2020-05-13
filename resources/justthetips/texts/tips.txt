@@ -85,3 +85,5 @@ Ender Lilly grows on End Stone faster. Get it in stone barrel with lava + glow S
 Tasty battlesign (from pigiron for example) in offhand will feed you
 Hover over item and press Y to show it in surrounding chests
 Stack of Steelleafs in your hotbar will dramactically fast repair items with Synergy treat
+Building gadgets can take items from ME network. Just shift-right-click on Security Terminal with gadget
+Maim Trap from Dark Utilities - best way to kill mobs on high difficulty

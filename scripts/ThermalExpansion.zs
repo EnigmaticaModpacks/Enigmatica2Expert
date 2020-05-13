@@ -1,7 +1,6 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 #modloaded thermalexpansion
-print("--- loading ThermalExpansion.zs ---");
 
 # Canola Oil Changes	
 	mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:refinedcanolaoil>);
@@ -14,9 +13,6 @@ print("--- loading ThermalExpansion.zs ---");
 
 # Rocket Fuel Compatibility
 	mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:rocket_fuel>, 2000000);
-	
-# AA Oil Generator -> Compression Dynamo
-	recipes.addShapeless(<thermalexpansion:dynamo:2>, [<actuallyadditions:block_oil_generator>]);
 
 	mods.thermalexpansion.NumisticDynamo.addGemFuel(<actuallyadditions:item_misc:5>, 40000);
 	mods.thermalexpansion.NumisticDynamo.addGemFuel(<astralsorcery:itemcraftingcomponent:0>, 80000);
@@ -208,16 +204,16 @@ print("--- loading ThermalExpansion.zs ---");
 // 	teConversionKits(<thermalexpansion:cell>);
 
 # Remove creative kit crafts (no actual creative conversion kit)
-recipes.removeByRecipeName("thermalexpansion:cell_17");
-recipes.removeByRecipeName("thermalexpansion:cell_16");
-recipes.removeByRecipeName("thermalexpansion:cell_15");
 recipes.removeByRecipeName("thermalexpansion:cell_14");
+recipes.removeByRecipeName("thermalexpansion:cell_15");
+recipes.removeByRecipeName("thermalexpansion:cell_16");
+recipes.removeByRecipeName("thermalexpansion:cell_17");
 recipes.removeByRecipeName("thermalexpansion:cell_18");
-recipes.removeByRecipeName("thermalexpansion:tank_18");
-recipes.removeByRecipeName("thermalexpansion:tank_16");
-recipes.removeByRecipeName("thermalexpansion:tank_17");
 recipes.removeByRecipeName("thermalexpansion:tank_14");
 recipes.removeByRecipeName("thermalexpansion:tank_15");
+recipes.removeByRecipeName("thermalexpansion:tank_16");
+recipes.removeByRecipeName("thermalexpansion:tank_17");
+recipes.removeByRecipeName("thermalexpansion:tank_18");
 
 // # Dynamo harder recipes
 function remakeDynamo(name as string, item as IItemStack, i1 as IIngredient, i2 as IIngredient){
@@ -234,4 +230,15 @@ remakeDynamo("3", <thermalexpansion:dynamo:3>, <ore:plateLead>,       <ore:gearL
 remakeDynamo("4", <thermalexpansion:dynamo:4>, <ore:plateElectrum>,   <ore:gearElectrum>);
 remakeDynamo("5", <thermalexpansion:dynamo:5>, <ore:plateConstantan>, <ore:gearConstantan>);
 
-		print("--- ThermalExpansion.zs initialized ---");
+# Remove old non-working reservior clearings
+recipes.removeByRecipeName("thermalexpansion:reservoir_10");
+recipes.removeByRecipeName("thermalexpansion:reservoir_11");
+recipes.removeByRecipeName("thermalexpansion:reservoir_12");
+recipes.removeByRecipeName("thermalexpansion:reservoir_13");
+recipes.removeByRecipeName("thermalexpansion:reservoir_14");
+
+# Clear content of reservior and tank
+for i in 0 to 5 {
+	clearFluid(<thermalexpansion:reservoir>.definition.makeStack(i));
+}
+clearFluid(<thermalexpansion:tank>.withTag({}));

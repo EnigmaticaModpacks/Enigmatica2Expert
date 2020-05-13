@@ -39,4 +39,13 @@
 			<itemStack>minecraft:dye 5 15</itemStack>
 		</output>
 	</Recipe>
+	<Recipe timeRequired="20" power ="50000">
+		<input>
+			<itemStack>mysticalagriculture:crafting 1 1</itemStack>
+			<fluidStack>liquid_sunshine 100</fluidStack>
+		</input>
+		<output>
+			<itemStack>extendedcrafting:material 1 7</itemStack>
+		</output>
+	</Recipe>
 </Recipes>

@@ -23,6 +23,9 @@ import mods.jei.JEI.removeAndHide as rh;
 	mods.nuclearcraft.manufactory.addRecipe(<minecraft:clay>, <ic2:dust:1> * 4);
 	mods.nuclearcraft.manufactory.removeRecipeWithOutput(<ic2:dust:1> * 2);
 
+# Sky stone dust
+	mods.nuclearcraft.manufactory.addRecipe(<appliedenergistics2:sky_stone_block>, <appliedenergistics2:material:45>);
+
 # A slight buff to the Deuterium recipe
 	mods.nuclearcraft.electrolyser.addRecipe([<liquid:heavywater> * 1000, <liquid:deuterium> * 500,  <liquid:deuterium> * 500, <liquid:oxygen> * 500, <liquid:tritium> * 50]);
 	mods.nuclearcraft.electrolyser.addRecipe([<liquid:ic2heavy_water> * 1000, <liquid:deuterium> * 500,  <liquid:deuterium> * 500, <liquid:oxygen> * 500, <liquid:tritium> * 50]);

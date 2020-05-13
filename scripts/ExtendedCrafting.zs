@@ -1,6 +1,5 @@
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded extendedcrafting
-print("--- loading ExtendedCrafting.zs ---");
 
 	var piston = <minecraft:piston>;
 	var blackIron = <ore:ingotBlackIron>;
@@ -113,44 +112,7 @@ print("--- loading ExtendedCrafting.zs ---");
 	mods.extendedcrafting.CompressionCrafting.remove(<extendedcrafting:singularity:4>);
 	mods.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity:4>, <minecraft:glowstone>, 10000, <extendedcrafting:material:12>, 1000000000, 1000000);
 
-# *======= Combination (Draconic style infusion) =======*
-
-//mods.extendedcrafting.CombinationCrafting.addRecipe(<output>, rfCost, rfRate, <input>, [<pedestalItem>, <pedestalItem>]);
-//mods.extendedcrafting.CombinationCrafting.addRecipe(<minecraft:stick> * 10, 10000, 100, <minecraft:diamond>, [<ore:ingotIron>, <minecraft:stick>]);
-
-#output = the item the recipe is for
-#input = the input item that will go in the middle on the crafting core
-#rfCost = the amount of RF required to craft this recipe
-#rfRate = (OPTIONAL) the rate the recipe should take RF. rfCost/rfRate = the number of ticks required to craft the recipe. If this isn't defined it will use the default value defined in the configuration file
-#pedestalItems = an array of items that are required to be on pedestals for the recipe. You can have anywhere from 0-48 of them
-
-# *======= Compression =======*
-
-//mods.extendedcrafting.CompressionCrafting.addRecipe(<output>, <input>, inputCount, <catalyst>, rfCost, rfRate);
-#inputCount = the amount of the input that is required
-#catalyst = the item that is required as a catalyst, does not get consumed, goes in the small slot to the left
-
-//mods.extendedcrafting.CompressionCrafting.remove(<output>);
-
-# *======= Extended Crafting Table =======*
-
-# Shaped
-# Basic
-//mods.extendedcrafting.TableCrafting.addShaped(tier, <output>, [[<>, <>, <>], [<>, <>, <>], [<>, <>, <>]]);  
-# Advanced
-//mods.extendedcrafting.TableCrafting.addShaped(tier, <output>, [[<>, <>, <>, <>, <>], [<>, <>, <>, <>, <>], [<>, <>, <>, <>, <>], [<>, <>, <>, <>, <>], [<>, <>, <>, <>, <>]]);  
-# Elite
-//mods.extendedcrafting.TableCrafting.addShaped(tier, <output>, [[<>, <>, <>, <>, <>, <>, <>], [<>, <>, <>, <>, <>, <>, <>], [<>, <>, <>, <>, <>, <>, <>], [<>, <>, <>, <>, <>, <>, <>], [<>, <>, <>, <>, <>, <>, <>], [<>, <>, <>, <>, <>, <>, <>], [<>, <>, <>, <>, <>, <>, <>]]);  
-# Ultimate
-//mods.extendedcrafting.TableCrafting.addShaped(tier, <output>, [[<>, <>, <>, <>, <>, <>, <>, <>, <>], [<>, <>, <>, <>, <>, <>, <>, <>, <>], [<>, <>, <>, <>, <>, <>, <>, <>, <>], [<>, <>, <>, <>, <>, <>, <>, <>, <>], [<>, <>, <>, <>, <>, <>, <>, <>, <>], [<>, <>, <>, <>, <>, <>, <>, <>, <>], [<>, <>, <>, <>, <>, <>, <>, <>, <>], [<>, <>, <>, <>, <>, <>, <>, <>, <>], [<>, <>, <>, <>, <>, <>, <>, <>, <>]]);  
-
-# Shapeless
-//mods.extendedcrafting.TableCrafting.addShapeless(tier, <output>, [<input>, <input>]);  
-
-#tier = (OPTIONAL) the required crafting table tier. The tiers are 1-4, or 0 for any that are big enough. Not adding this parameter will make the tier 0
-#<> = an input stack for the slot shown
-
-#mods.extendedcrafting.TableCrafting.remove(<output>);
-
-	
-	print("--- ExtendedCrafting.zs initialized ---");	
+# Luminiscence made in chemical reactor and drying basin
+recipes.removeByRecipeName("extendedcrafting:luminessence");
+mods.rustic.EvaporatingBasin.addRecipe(<extendedcrafting:material:7>, <fluid:liquid_sunshine> * 1000);
+mods.inworldcrafting.FluidToItem.transform(<extendedcrafting:material:7>, <fluid:liquid_sunshine>, <mysticalagriculture:crafting:3>);

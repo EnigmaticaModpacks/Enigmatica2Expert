@@ -277,46 +277,15 @@ addHighOvenRecipe(<liquid:redstone_alloy> *144     ,<liquid:tin>*144            
 addHighOvenRecipe(<liquid:conductive_iron> *144    ,<liquid:iron>*144           , 4200 , <ore:dustBedrock>  , 50  , <ore:dustRedstone>               , 100, ox, 25);
 addHighOvenRecipe(<liquid:pulsating_iron> *144     ,<liquid:silver>*144         , 6000 , <ore:dustBedrock>  , 50  , <ore:dustEnder>                  , 100, ox, 25);
 
+# Remake some metals to able be melted only under amplyfiing tube
+mods.mechanics.addTubeRecipe([<thaumcraft:amber_block>] as IItemStack[], <liquid:amber> * 1000);
+mods.mechanics.addTubeRecipe([<minecraft:obsidian>] as IItemStack[], <liquid:crystal> * 1000);
 
-# *======= Alloying =======*
+# Remove cyclic recipes
+mods.cyclicmagic.Melter.removeShapedRecipe("amber", 100);
+mods.cyclicmagic.Melter.removeShapedRecipe("amber", 1000);
+mods.cyclicmagic.Melter.removeShapedRecipe("crystal", 1000);
 
-//mods.tconstruct.Alloy.addRecipe(ILiquidStack output, ILiquidStack[] inputs);
-#mods.tconstruct.Alloy.addRecipe(<liquid:water> * 10, [<liquid:lava> * 10, <liquid:molten_iron> * 5]);
-
-//mods.tconstruct.Alloy.removeRecipe(ILiquidStack output);
-#mods.tconstruct.Alloy.removeRecipe(<liquid:water>);
-
-# *======= Casting =======* Wrong Info on docs
-
-//mods.tconstruct.Casting.addTableRecipe(IItemStack output, IItemStack cast, ILiquidStack fluid, int amount, @Optional boolean consumeCast);
-#mods.tconstruct.Casting.addTableRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, <liquid:molten_gold>, 30, true);
-#mods.tconstruct.Casting.addTableRecipe(<minecraft:gold_ingot>, <minecraft:gold_ingot>, <liquid:molten_gold>, 140);
-
-//mods.tconstruct.Casting.addBasinRecipe(IItemStack output, IItemStack cast, ILiquidStack fluid, int amount, @Optional boolean consumeCast);
-#mods.tconstruct.Casting.addBasinRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, <liquid:molten_gold>, 30, true);
-#mods.tconstruct.Casting.addBasinRecipe(<minecraft:gold_ingot>, <minecraft:gold_ingot>, <liquid:molten_gold>, 140);
-
-//mods.tconstruct.Casting.removeTableRecipe(IItemStack output);
-#mods.tconstruct.Casting.removeTableRecipe(<minecraft:iron_ingot>);
-
-//mods.tconstruct.Casting.removeBasinRecipe(IItemStack output);
-#mods.tconstruct.Casting.removeBasinRecipe(<minecraft:gold_block>);
-
-# *======= Drying =======*
-
-//mods.tconstruct.Drying.addRecipe(IItemStack output, IItemStack input, int time);
-#mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<minecraft:rotten_flesh>, 100);
-
-//mods.tconstruct.Drying.removeRecipe(IItemStack output);
-#mods.tconstruct.Drying.removeRecipe(<minecraft:leather>);
-
-# *======= Melting =======*
-
-//mods.tconstruct.Melting.addRecipe(ILiquidStack output, IItemStack input, @Optional int temp);
-#mods.tconstruct.Melting.addRecipe(<liquid:molten_gold> * 144,<minecraft:gold_ingot>);
-#mods.tconstruct.Melting.addRecipe(<liquid:molten_iron> * 144,<minecraft:iron_ingot>, 500);
-
-//mods.tconstruct.Melting.removeRecipe(ILiquidStack output);
-#mods.tconstruct.Melting.removeRecipe(<liquid:molten_iron>);
-
-	print("--- TinkersConstruct.zs initialized ---");
+# Harder Osgloglas recipe
+mods.tconstruct.Alloy.removeRecipe(<liquid:osgloglas>);
+mods.tconstruct.Alloy.addRecipe(<liquid:osgloglas>, [<liquid:amber>, <liquid:osmium>, <liquid:refinedobsidian>, <liquid:refinedglowstone>]);

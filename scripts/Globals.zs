@@ -19,6 +19,13 @@ import mods.inworldcrafting.FluidToItem.transform as fti;
 # 
 # ########################
 
+global getItemName as function(IItemStack)string = 
+    function (item as IItemStack) as string  {
+
+	return item.definition.id
+		.replaceAll(":", "_")
+		~ "_" ~ item.damage;
+};
 
 # Remake any recipe
 global remake as function(string, IItemStack, IIngredient[][])void = 
@@ -32,8 +39,7 @@ global remake as function(string, IItemStack, IIngredient[][])void =
 global makeEx as function(IItemStack, IIngredient[][])void = 
     function (item as IItemStack, input as IIngredient[][]) as void  {
 		
-	var name = item.name.replaceAll(":", "_") ~ "_" ~ item.damage;
-	recipes.addShaped(name, item, input);
+	recipes.addShaped(getItemName(item), item, input);
 };
 
 # Remake any recipe automaticly generate name
@@ -66,6 +72,46 @@ global remakeFluidToItem as function(IItemStack, ILiquidStack, IIngredient)void 
 
 	recipes.remove(output);
 	fti(output, fluid, input);
+};
+
+
+/////////////////////////////////////
+// 
+/////////////////////////////////////
+global clearFluid as function(IItemStack)void = 
+    function (input as IItemStack) as void  {
+
+	recipes.addShapeless("Fluid Clearing " ~ getItemName(input), 
+		input, [input.marked("marked")],
+		function(out, ins, cInfo) {
+			var tag = {} as crafttweaker.data.IData;
+			if(ins has "marked" && !isNull(ins.marked) && ins.marked.hasTag) {
+				if (!isNull(ins.marked.tag.Fluid)){
+					tag = ins.marked.tag - "Fluid";
+				}else{
+					tag = ins.marked.tag;
+				}
+			}
+			return out.withTag(tag);
+	}, null);
+};
+
+
+# Make shapeless crafts for specified block up to level for Preston mod
+global compressIt as function(IItemStack, int)IItemStack = 
+    function (item as IItemStack, maxLevel as int) as IItemStack  {
+  var o = item;
+  val meta = item.damage as short;
+  for i in 1 to maxLevel {
+    val compressed = <preston:compressed_block>.withTag({
+      stack: {id: item.definition.id, Count: 1 as byte, Damage: meta}, level: i
+    });
+    mods.jei.JEI.addItem(compressed);
+    recipes.addShapeless(compressed, [o, o, o, o, o, o, o, o, o]);
+    recipes.addShapeless(o * 9, [compressed]);
+    o = compressed;
+  }
+	return o;
 };
 
 

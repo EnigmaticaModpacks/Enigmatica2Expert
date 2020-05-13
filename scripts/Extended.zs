@@ -67,6 +67,33 @@ remakeEx(<toolbelt:belt>, [
 	]);
 
 
+# Hydrated coal simplifying
+mods.inworldcrafting.FluidToItem.transform(<ic2:dust:3>, <fluid:water>, <ore:dustCoal>);
+
+# Lesser blaze powder
+recipes.remove(<minecraft:blaze_powder> * 2);
+recipes.addShapeless("Blaze Powder", <minecraft:blaze_powder>, [<minecraft:blaze_rod>]);
+
+# Remake plates
+recipes.remove(<minecraft:light_weighted_pressure_plate>);
+recipes.remove(<minecraft:heavy_weighted_pressure_plate>);
+mods.mechanics.addCrushingBlockRecipe(<minecraft:gold_ingot> * 2, [<minecraft:light_weighted_pressure_plate>] as IItemStack[], [1.0] as double[]);
+mods.mechanics.addCrushingBlockRecipe(<minecraft:iron_ingot> * 2, [<minecraft:heavy_weighted_pressure_plate>] as IItemStack[], [1.0] as double[]);
+
+
+# ######################################################################
+#
+# Bedrock Ore
+#
+# ######################################################################
+
+recipes.remove(<bedrockores:bedrock_miner>);
+recipes.addShaped(<bedrockores:bedrock_miner>, [
+	[<ore:dustBedrock>, <immersiveengineering:metal_decoration0:5>, <ore:dustBedrock>],
+	[<ore:blockRedstone>, <immersiveengineering:metal_device1:7>, <ore:blockRedstone>],
+	[<ore:dustBedrock>, <immersiveengineering:metal_device1:7>, <ore:dustBedrock>]]);
+
+
 
 /* 
 mods.inworldcrafting.
@@ -94,13 +121,21 @@ ITEMS OF INTEREST
 <twilightforest:cooked_venison>
 <randomthings:spectreilluminator>
 <extrautils2:decorativesolid:7> # Quartzburnt
-<forge:bucketfilled>.withTag({FluidName: "hot_spring_water", Amount: 1000})
-<forge:bucketfilled>.withTag({FluidName: "liquid_sunshine", Amount: 1000})
-<forge:bucketfilled>.withTag({FluidName: "blockfluiddirt", Amount: 1000})
 
 <opencomputers:robot>
 <opencomputers:print>
 <bibliocraft:enchantedplate>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 0 as short}]})
+<thaumcraft:nugget:10> -- Rare Earth
+<randomthings:ingredient:2> -- Ectoplasm
+<tombmanygraves:death_list>
+<randomthings:rezstone> -- Bloodstone
+<forge:bucketfilled>.withTag({FluidName: "hot_spring_water", Amount: 1000})
+<forge:bucketfilled>.withTag({FluidName: "liquid_sunshine", Amount: 1000})
+<forge:bucketfilled>.withTag({FluidName: "blockfluiddirt", Amount: 1000})
+<liquid:enrichedlava>
+<liquid:liquidchorus>
+<liquid:menrilresin>
+<liquid:crystal> -- Crystallized obsidian
 
 ---------------------
 CRAFTS OF INTEREST

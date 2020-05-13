@@ -5,7 +5,7 @@ fov:0.5
 gamma:1.0
 saturation:0.0
 renderDistance:15
-guiScale:4
+guiScale:3
 particles:0
 bobView:true
 anaglyph3d:false
@@ -100,8 +100,6 @@ key_quark.keybind.chestDropoff:0
 key_quark.keybind.chestMerge:0
 key_quark.keybind.chestRestock:0
 key_quark.keybind.chestExtract:0
-key_quark.keybind.toggleAutojump:0
-key_quark.keybind.lockBuilding:33:SHIFT
 key_quark.emote.no:0
 key_quark.emote.yes:0
 key_quark.emote.wave:0
@@ -120,6 +118,8 @@ key_quark.emote.dab:0
 key_quark.emote.jet:0
 key_quark.emote.exorcist:0
 key_quark.emote.zombie:0
+key_quark.keybind.toggleAutojump:0
+key_quark.keybind.lockBuilding:33:SHIFT
 key_key.toggle_shaders:0
 key_bloodmagic.keybind.open_holding:53:CONTROL
 key_bloodmagic.keybind.cycle_holding_pos:0
@@ -134,7 +134,7 @@ key_key.next_item.desc:0
 key_key.previous_item.desc:0
 key_key.open_danknull.desc:0
 key_key.togglehud.desc:0
-key_key.xu2.searchforitems:0
+key_key.xu2.searchforitems:21
 key_key.findme.search:21
 key_key.ftbutilities.nbt:0
 key_key.ftbutilities.trash:211
@@ -189,7 +189,7 @@ key_key.toggleDislocator:0
 key_key.cycleDigAOE:0
 key_key.cycleAttackAOE:0
 key_key.toggleShields:0
-key_key.columnshiftup:21
+key_key.columnshiftup:0
 key_key.columnshiftdown:35
 key_key.columnbarup:26
 key_key.columnbardown:27
@@ -286,7 +286,7 @@ key_key.rotateright:205
 key_key.rotateleft:203
 key_key.little.flip:34
 key_key.little.mark:50
-key_key.little.config.item:0
+key_key.little.config.item:-97
 key_key.little.undo:44:CONTROL
 key_key.little.redo:21:CONTROL
 key_key.music_player_gui:82
@@ -312,6 +312,8 @@ key_key.toolbelt.open:45
 key_key.toolbelt.cycle.left:0
 key_key.toolbelt.cycle.right:0
 key_key.toolbelt.slot:18:CONTROL
+key_key.vaultopic.view:34
+key_key.vaultopic.vice:47
 key_Toggle Jetpack:0
 key_Open Rocket GUI:0
 key_Toggle RCS:0
@@ -347,15 +349,15 @@ key_enderio.keybind.speed:0
 key_enderio.keybind.jump:0
 key_enderio.keybind.top:0
 key_enderio.keybind.tnt:0
-key_enderio.keybind.yetawrenchmode:21
+key_enderio.keybind.yetawrenchmode:0
 key_enderio.keybind.magnet:0
 key_enderio.keybind.fovreset:0
 key_enderio.keybind.fovplus:0
 key_enderio.keybind.fovminus:0
 key_enderio.keybind.fovplusfast:0
 key_enderio.keybind.fovminusfast:0
-key_key.little.config:-96:CONTROL
 key_key.little.mark:50
+key_key.little.config:-96:CONTROL
 soundCategory_master:0.24172185
 soundCategory_music:0.0
 soundCategory_record:0.02112676

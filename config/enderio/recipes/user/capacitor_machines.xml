@@ -27,11 +27,11 @@
   
   <capacitor key="enderio:block_combustion_generator/loss" base="0" scaler="FIXED" />
   <capacitor key="enderio:block_combustion_generator/buffer" base="200000" scaler="POWER" /> <!-- Enchanced generation -->
-  <capacitor key="enderio:block_combustion_generator/gen" base="16" scaler="CHEMICAL" /> <!-- Enchanced generation -->
+  <capacitor key="enderio:block_combustion_generator/gen" base="24" scaler="CHEMICAL" /> <!-- Enchanced generation -->
 
   <capacitor key="enderio:block_enhanced_combustion_generator/loss" base="0" scaler="FIXED" />
   <capacitor key="enderio:block_enhanced_combustion_generator/buffer" base="800000" scaler="POWER" />
-  <capacitor key="enderio:block_enhanced_combustion_generator/gen" base="48" scaler="CHEMICAL" />
+  <capacitor key="enderio:block_enhanced_combustion_generator/gen" base="72" scaler="CHEMICAL" />
   
   <capacitor key="enderio:block_stirling_generator/loss" base="0" scaler="FIXED" />
   <capacitor key="enderio:block_stirling_generator/buffer" base="150000" scaler="POWER" /> <!-- Enchanced generation -->

@@ -15,6 +15,8 @@ for ingot in <ore:ingotGraphite>.items {
 	mods.mekanism.crusher.addRecipe(ingot, <nuclearcraft:dust:8>);
 }
 
+# Sky stone dust recipe
+	mods.mekanism.crusher.addRecipe(<appliedenergistics2:sky_stone_block>, <appliedenergistics2:material:45>);
 
 # Energized Smelter is not entirely unified, this should fix that
 var itemsToUnify as IItemStack[IItemStack] = {
@@ -244,6 +246,10 @@ for input, output in itemsToUnify {
 	[<thermalexpansion:frame>, <mekanism:robit>.anyDamage(), <thermalexpansion:frame>], 
 	[<mekanism:machineblock:11>, <computercraft:computer:16384>, <mekanism:machineblock:11>]]);
 
+# Basic circuit
+	mods.mekanism.infuser.removeRecipe(<mekanism:controlcircuit>);
+	mods.mekanism.compressor.addRecipe(<opencomputers:material:4>, <mekanism:controlcircuit>);
+
 # Advanced Circuit
 	recipes.remove(<mekanism:controlcircuit:1>);
 	recipes.addShapedMirrored("Advanced Circuit",
@@ -341,3 +347,11 @@ recipes.addShaped(<mekanism:atomicdisassembler>, [
 	[<ore:ingotPlatinum>, anyDragonsteelRod, null], 
 	[null, anyDragonsteelRod, null]
 ]);
+
+mods.mekanism.enrichment.removeRecipe(<appliedenergistics2:crystal_seed>, <appliedenergistics2:material:10>);
+mods.mekanism.enrichment.removeRecipe(<appliedenergistics2:crystal_seed:600>, <appliedenergistics2:material:11>);
+mods.mekanism.enrichment.removeRecipe(<appliedenergistics2:crystal_seed:1200>, <appliedenergistics2:material:12>);
+mods.mekanism.enrichment.removeRecipe(<appliedenergistics2:material:8>, <appliedenergistics2:material:12>);
+mods.mekanism.enrichment.removeRecipe(<appliedenergistics2:material:7>, <appliedenergistics2:material:12>);
+mods.mekanism.enrichment.removeRecipe(<appliedenergistics2:material:2>, <appliedenergistics2:material:10>);
+mods.mekanism.enrichment.removeRecipe(<appliedenergistics2:material>, <appliedenergistics2:material:10>);

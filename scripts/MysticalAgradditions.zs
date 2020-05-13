@@ -146,5 +146,20 @@ print("--- loading MysticalAgradditions.zs ---");
 			<ore:ingotInsanium>, <ore:ingotInsanium>, <ore:ingotInsanium>, <ore:ingotInsanium>, 
 			<ore:blockNetherStar>],
 			"astralsorcery.constellation.aevitas");
+	
+# Ultimate seeds
+	mods.astralsorcery.Altar.addTraitAltarRecipe("enigmatica2expert:shaped/internal/altar/ultimate_seeds",
+		<mysticalcreations:ultimate_seeds>, 3500, 600, [
+            <ore:essenceTier5>, <ore:blockInsaniumEssence>, <ore:essenceTier5>,
+            <ore:blockInsaniumEssence>, <mysticalagradditions:insanium:1>, <ore:blockInsaniumEssence>,
+            <ore:essenceTier5>, <ore:blockInsaniumEssence>, <ore:essenceTier5>,
+            <ore:ingotCrystaltine>, <ore:ingotCrystaltine>, <ore:ingotInsanium>, <ore:ingotInsanium>,
+            <ore:blockUltimate>, <ore:blockUltimate>,
+            <ore:blockUltimate>, <ore:blockUltimate>,
+            <ore:blockUltimate>, <ore:blockUltimate>,
+            <ore:blockUltimate>, <ore:blockUltimate>,
+			<ore:ingotInsanium>, <ore:ingotInsanium>, <ore:ingotInsanium>, <ore:ingotInsanium>, 
+			<ore:blockNetherStar>],
+			"astralsorcery.constellation.horologium");
 				
 	print("--- MysticalAgradditions.zs initialized ---");
