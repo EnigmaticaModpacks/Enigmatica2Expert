@@ -81,7 +81,7 @@ Skeleton falls in Witch Water become a Wither Skeleton. Squid -> Ghast
 Cursed Earth spawn wither skeletons in Nether Fortress
 [MP] Hover over an item in a GUI and press Shift+T to show it in chat
 /undo_excavation can undo Ore Excavator
-Ender Lilly grows on End Stone faster. Get it in stone barrel with lava + glow Stone
+Ender Lilly grows on End Stone faster. Get it in stone barrel with lava + Glow Stone
 Tasty battlesign (from pigiron for example) in offhand will feed you
 Hover over item and press Y to show it in surrounding chests
 Stack of Steelleafs in your hotbar will dramactically fast repair items with Synergy treat

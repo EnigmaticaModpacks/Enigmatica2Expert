@@ -160,6 +160,7 @@ function onEvent(e as EntityLivingFallEvent){
 		
 		var power = 0.0d;
 		for j in 0 to powrList.length {
+			# TODO: Index Out of bounds
 			power = power + powrList[j] / powrList.length;
 			}
 				

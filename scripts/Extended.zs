@@ -136,6 +136,7 @@ ITEMS OF INTEREST
 <liquid:liquidchorus>
 <liquid:menrilresin>
 <liquid:crystal> -- Crystallized obsidian
+<advancedrocketry:blocklens> - Lence (required precision assembler)
 
 ---------------------
 CRAFTS OF INTEREST

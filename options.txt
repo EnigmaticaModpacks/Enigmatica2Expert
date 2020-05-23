@@ -5,7 +5,7 @@ fov:0.5
 gamma:1.0
 saturation:0.0
 renderDistance:15
-guiScale:3
+guiScale:4
 particles:0
 bobView:true
 anaglyph3d:false
@@ -27,7 +27,7 @@ chatOpacity:1.0
 snooperEnabled:true
 fullscreen:false
 enableVsync:true
-useVbo:true
+useVbo:false
 hideServerAddress:false
 advancedItemTooltips:true
 pauseOnLostFocus:true
@@ -45,7 +45,7 @@ reducedDebugInfo:false
 useNativeTransport:true
 entityShadows:true
 mainHand:right
-attackIndicator:0
+attackIndicator:2
 showSubtitles:false
 realmsNotifications:true
 enableWeakAttacks:false
@@ -94,12 +94,6 @@ key_Hub Expand Key:0
 key_Change Caster Focus:34
 key_Misc Caster Toggle:0
 key_keybind.baublesinventory:0
-key_quark.keybind.dropoff:0
-key_quark.keybind.chestSort:0
-key_quark.keybind.chestDropoff:0
-key_quark.keybind.chestMerge:0
-key_quark.keybind.chestRestock:0
-key_quark.keybind.chestExtract:0
 key_quark.emote.no:0
 key_quark.emote.yes:0
 key_quark.emote.wave:0
@@ -118,8 +112,14 @@ key_quark.emote.dab:0
 key_quark.emote.jet:0
 key_quark.emote.exorcist:0
 key_quark.emote.zombie:0
-key_quark.keybind.toggleAutojump:0
+key_quark.keybind.dropoff:0
+key_quark.keybind.chestSort:0
+key_quark.keybind.chestDropoff:0
+key_quark.keybind.chestMerge:0
+key_quark.keybind.chestRestock:0
+key_quark.keybind.chestExtract:0
 key_quark.keybind.lockBuilding:33:SHIFT
+key_quark.keybind.toggleAutojump:0
 key_key.toggle_shaders:0
 key_bloodmagic.keybind.open_holding:53:CONTROL
 key_bloodmagic.keybind.cycle_holding_pos:0
@@ -286,7 +286,7 @@ key_key.rotateright:205
 key_key.rotateleft:203
 key_key.little.flip:34
 key_key.little.mark:50
-key_key.little.config.item:-97
+key_key.little.config.item:0
 key_key.little.undo:44:CONTROL
 key_key.little.redo:21:CONTROL
 key_key.music_player_gui:82
@@ -339,7 +339,7 @@ key_key.journeymap.fullscreen.east:205
 key_key.journeymap.fullscreen.west:203
 key_Profile GUI:210
 key_enderio.keybind.inventory:23
-key_enderio.keybind.dsu:0
+key_enderio.keybind.dsu:19:CONTROL
 key_enderio.keybind.glidertoggle:34
 key_enderio.keybind.soundlocator:0
 key_enderio.keybind.nightvision:25
@@ -348,7 +348,7 @@ key_enderio.keybind.stepassist:0
 key_enderio.keybind.speed:0
 key_enderio.keybind.jump:0
 key_enderio.keybind.top:0
-key_enderio.keybind.tnt:0
+key_enderio.keybind.tnt:24
 key_enderio.keybind.yetawrenchmode:0
 key_enderio.keybind.magnet:0
 key_enderio.keybind.fovreset:0
@@ -360,7 +360,7 @@ key_key.little.mark:50
 key_key.little.config:-96:CONTROL
 soundCategory_master:0.24172185
 soundCategory_music:0.0
-soundCategory_record:0.02112676
+soundCategory_record:0.09859155
 soundCategory_weather:0.4084507
 soundCategory_block:0.9929578
 soundCategory_hostile:0.09859155

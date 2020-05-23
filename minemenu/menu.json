@@ -1,5 +1,18 @@
 {
   "main": {
+    "2": {
+      "title": "Explosive",
+      "icon": {
+        "name": "enderio:item_dark_steel_upgrade",
+        "damage": 1
+      },
+      "action": {
+        "key": {
+          "key": "enderio.keybind.tnt",
+          "toggle": false
+        }
+      }
+    },
     "3": {
       "title": "Change Tool Config",
       "icon": {
