@@ -105,14 +105,7 @@ for tomato in <ore:cropTomato>.items {
 	};
 
 	for log, plank in logsAndPlanks {
-		# Shapeless Recipe
-		recipes.addShapeless(plank * 2, [log]);
-
-		# Nuclearcraft Manufactory
-		mods.nuclearcraft.manufactory.addRecipe(log, plank * 6);
-
-		# Mekanism Precision Sawmill
-		mods.mekanism.sawmill.addRecipe(log, plank * 6, <mekanism:sawdust>, 1.0);
+		scripts.Processing.saw(log, plank, "no exceptions");
 	}
 	
 # *======= Carpenter =======*

@@ -57,22 +57,28 @@ print("--- loading BiomesOPlenty.zs ---");
 
 
 # Plank recipes, made by Trilexcom
-	recipes.addShapeless(<biomesoplenty:planks_0> * 2, [<biomesoplenty:log_0:4>]);
-	recipes.addShapeless(<biomesoplenty:planks_0:1> * 2, [<biomesoplenty:log_0:5>]);
-	recipes.addShapeless(<biomesoplenty:planks_0:2> * 2, [<biomesoplenty:log_0:6>]);
-	recipes.addShapeless(<biomesoplenty:planks_0:3> * 2, [<biomesoplenty:log_0:7>]);
-	recipes.addShapeless(<biomesoplenty:planks_0:4> * 2, [<biomesoplenty:log_1:4>]);
-	recipes.addShapeless(<biomesoplenty:planks_0:5> * 2, [<biomesoplenty:log_1:5>]);	
-	recipes.addShapeless(<biomesoplenty:planks_0:6> * 2, [<biomesoplenty:log_1:6>]);	
-	recipes.addShapeless(<biomesoplenty:planks_0:8> * 2, [<biomesoplenty:log_2:4>]);
-	recipes.addShapeless(<biomesoplenty:planks_0:9> * 2, [<biomesoplenty:log_2:5>]);
-	recipes.addShapeless(<biomesoplenty:planks_0:10> * 2, [<biomesoplenty:log_2:6>]);
-	recipes.addShapeless(<biomesoplenty:planks_0:11> * 2, [<biomesoplenty:log_2:7>]);
-	recipes.addShapeless(<biomesoplenty:planks_0:12> * 2, [<biomesoplenty:log_3:4>]);
-	recipes.addShapeless(<biomesoplenty:planks_0:13> * 2, [<biomesoplenty:log_3:5>]);
-	recipes.addShapeless(<biomesoplenty:planks_0:14> * 2, [<biomesoplenty:log_3:6>]);
-	recipes.addShapeless(<biomesoplenty:planks_0:15> * 2, [<biomesoplenty:log_3:7>]);
-	recipes.addShapeless(<biomesoplenty:planks_0:7> * 2, [<biomesoplenty:log_1:7>]);
+	val logsAndPlanks as IItemStack[IItemStack] = {
+		<biomesoplenty:log_0:4>: <biomesoplenty:planks_0>,
+		<biomesoplenty:log_0:5>: <biomesoplenty:planks_0:1>,
+		<biomesoplenty:log_0:6>: <biomesoplenty:planks_0:2>,
+		<biomesoplenty:log_0:7>: <biomesoplenty:planks_0:3>,
+		<biomesoplenty:log_1:4>: <biomesoplenty:planks_0:4>,
+		<biomesoplenty:log_1:5>: <biomesoplenty:planks_0:5>,
+		<biomesoplenty:log_1:6>: <biomesoplenty:planks_0:6>,
+		<biomesoplenty:log_2:4>: <biomesoplenty:planks_0:8>,
+		<biomesoplenty:log_2:5>: <biomesoplenty:planks_0:9>,
+		<biomesoplenty:log_2:6>: <biomesoplenty:planks_0:10>,
+		<biomesoplenty:log_2:7>: <biomesoplenty:planks_0:11>,
+		<biomesoplenty:log_3:4>: <biomesoplenty:planks_0:12>,
+		<biomesoplenty:log_3:5>: <biomesoplenty:planks_0:13>,
+		<biomesoplenty:log_3:6>: <biomesoplenty:planks_0:14>,
+		<biomesoplenty:log_3:7>: <biomesoplenty:planks_0:15>,
+		<biomesoplenty:log_1:7>: <biomesoplenty:planks_0:7>,
+	};
+
+	for log, plank in logsAndPlanks {
+		scripts.Processing.saw(log, plank, "only: shapeless, blockCutter");
+	}
 	
 # Amber Block
 	rh(<biomesoplenty:gem_block:7>);

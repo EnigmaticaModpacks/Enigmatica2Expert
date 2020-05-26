@@ -117,11 +117,11 @@ print("--- loading MiscRecipes.zs ---");
 	recipes.addShapeless(<ic2:misc_resource:1>, [<thermalfoundation:material:135>]);
 	
 # Graphite conversion 
-	recipes.addShapeless("Graphite Conversion 1", <bigreactors:ingotmetals:2>, [<nuclearcraft:ingot:8>]);
-	recipes.addShapeless("Graphite Conversion 2", <nuclearcraft:ingot:8>, [<bigreactors:ingotmetals:2>]);
+	recipes.addShapeless("Graphite Conversion 1", <bigreactors:ingotgraphite>, [<nuclearcraft:ingot:8>]);
+	recipes.addShapeless("Graphite Conversion 2", <nuclearcraft:ingot:8>, [<bigreactors:ingotgraphite>]);
 	
-	recipes.addShapeless("Graphite Conversion 3", <bigreactors:blockmetals:2> * 2, [<nuclearcraft:ingot_block:8>, <nuclearcraft:ingot_block:8>]);
-	recipes.addShapeless("Graphite Conversion 4", <nuclearcraft:ingot_block:8> * 2, [<bigreactors:blockmetals:2>, <bigreactors:blockmetals:2>]);
+	recipes.addShapeless("Graphite Conversion 3", <bigreactors:blockgraphite> * 2, [<nuclearcraft:ingot_block:8>, <nuclearcraft:ingot_block:8>]);
+	recipes.addShapeless("Graphite Conversion 4", <nuclearcraft:ingot_block:8> * 2, [<bigreactors:blockgraphite>, <bigreactors:blockgraphite>]);
 
 # Rustic Slate
 	recipes.addShapeless("slate", 
@@ -339,26 +339,6 @@ print("--- loading MiscRecipes.zs ---");
 	[[<ore:plateIron>, null, <ore:plateIron>],
 	[<ore:plateIron>, <minecraft:chest>, <ore:plateIron>], 
 	[null, <ore:plateIron>, null]]);
-	
-# Planks
-	recipes.remove(<ore:plankWood>);
-	recipes.addShapeless("Planks", <minecraft:planks> * 2, [<minecraft:log>]);
-	recipes.addShapeless("Planks1", <minecraft:planks:1> * 2, [<minecraft:log:1>]);
-	recipes.addShapeless("Planks2", <minecraft:planks:2> * 2, [<minecraft:log:2>]);
-	recipes.addShapeless("Planks3", <minecraft:planks:3> * 2, [<minecraft:log:3>]);
-	recipes.addShapeless("Planks4", <minecraft:planks:4> * 2, [<minecraft:log2>]);
-	recipes.addShapeless("Planks5", <minecraft:planks:5> * 2, [<minecraft:log2:1>]);
-	recipes.addShapeless("Planks6", <rustic:planks> * 2,[<rustic:log>]);
-	recipes.addShapeless("Planks7", <rustic:planks:1> * 2,[<rustic:log:1>]);
-	recipes.addShapeless("Twilight Logs -> Planks1", <twilightforest:twilight_oak_planks> * 2, [<twilightforest:twilight_log>]);
-	recipes.addShapeless("Twilight Logs -> Planks2", <twilightforest:canopy_planks> * 2, [<twilightforest:twilight_log:1>]);
-	recipes.addShapeless("Twilight Logs -> Planks3", <twilightforest:mangrove_planks> * 2, [<twilightforest:twilight_log:2>]);
-	recipes.addShapeless("Twilight Logs -> Planks8", <twilightforest:dark_planks> * 2, [<twilightforest:twilight_log:3>]);
-	recipes.addShapeless("Twilight Logs -> Planks4", <twilightforest:time_planks> * 2, [<twilightforest:magic_log>]);
-	recipes.addShapeless("Twilight Logs -> Planks5", <twilightforest:trans_planks> * 2, [<twilightforest:magic_log:1>]);
-	recipes.addShapeless("Twilight Logs -> Planks6", <twilightforest:mine_planks> * 2, [<twilightforest:magic_log:2>]);
-	recipes.addShapeless("Twilight Logs -> Planks7", <twilightforest:sort_planks> * 2, [<twilightforest:magic_log:3>]);
-	recipes.addShapeless("integrateddynamics_menril_planks", <integrateddynamics:menril_planks> * 2, [<integrateddynamics:menril_log>]);
 
 # Sticks
 	recipes.remove(<minecraft:stick>);
