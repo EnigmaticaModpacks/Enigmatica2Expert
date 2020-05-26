@@ -71,6 +71,12 @@ recipes.remove(<rats:rat_upgrade_basic>);
 ratUpgrade("rat_upgrade_basic_0", <rats:rat_upgrade_basic>,   <ore:gemDiamond>);
 ratUpgrade("rat_upgrade_basic_1", <rats:rat_upgrade_basic>,   <rats:rat_diamond>);
 ratUpgrade("rat_upgrade_basic_2", <rats:rat_upgrade_basic>*3, <mekanism:compresseddiamond>);
+val fragment = <rats:rat_upgrade_fragment>;
+recipes.addShaped("rat_upgrade_from_fragment", <rats:rat_upgrade_basic>, [
+	[fragment, fragment, fragment],
+	[fragment, fragment, fragment],
+	[fragment, fragment, fragment]]);
+
 
 # Chef upgrade
 remake("rat_upgrade_chef", <rats:rat_upgrade_chef>, [
@@ -109,15 +115,13 @@ remake("rat_upgrade_basic_ratlantean", <rats:rat_upgrade_basic_ratlantean>, [
 
 # Archeologist upgrade
 remake("rat_upgrade_archeologist", <rats:rat_upgrade_archeologist>, [
-	[<rats:marbled_cheese_raw>, <rats:archeologist_hat>, <rats:marbled_cheese_raw>], 
+	[<rats:marbled_cheese_raw>, <ore:hatArcheologist>, <rats:marbled_cheese_raw>], 
 	[<ore:boneDragon>, <rats:rat_upgrade_basic_ratlantean>, <ore:boneDragon>], 
 	[<bloodmagic:sentient_pickaxe>, <ore:tokenOrIdolFlag>, <bloodmagic:sentient_shovel>]
 ]);
 
-# Change rat petals combine crafting
-recipes.remove(<rats:ratglove_petals>);
-remakeFluidToItem(<rats:ratglove_petals>, <fluid:blueslime>, <rats:ratglove_flower>*9);
-remakeFluidToItem(<rats:compressed_rat>, <fluid:blueslime>, <rats:ratglove_flower>*9);
+# Rat flowers
+scripts.Processing.grow(<rats:ratglove_flower>, <rats:ratglove_flower>, "No exceptions", null, 0);
 
 #Creative upgrades
 mods.extendedcrafting.TableCrafting.addShaped(0, <rats:rat_upgrade_creative>, [
@@ -245,78 +249,36 @@ while (j < listConversionScales.length) {
     j += 2;
 }
 
-////////////////////////////////////
-// Rat poop processing
-/* 
-var jaopcaAllOre = mods.jaopca.JAOPCA.getAllOres();
+# Casting sawblade
+mods.tconstruct.Casting.addTableRecipe(<rats:ancient_sawblade>, <ic2:block_cutting_blade:2>, <fluid:knightmetal>, (144*12), true, (30*20));
 
-// for testJ in jaopcaAllOre{
-// 	var s = "";
-// 	s += "JAOPCA .oreName = " ~ testJ.oreName;
-// 	if (!isNull(testJ.getItemStack("ingot"))) { s += ("\n ingot=" ~ testJ.getItemStack("ingot").name); }
-// 	if (!isNull(testJ.getItemStack("gem"))) { s += ("\n gem=" ~ testJ.getItemStack("gem").name); }
-// 	if (!isNull(testJ.getItemStack("dust"))) { s += ("\n dust=" ~ testJ.getItemStack("dust").name); }
-// 	print(s);
-// } 
+# Ratlanean spirit flame
+recipes.addShaped("Ratlanean Flame", <rats:ratlantean_flame>, [
+	[null, <randomthings:ingredient:2>, null],
+	[<randomthings:ingredient:2>, <rats:raw_rat>, <randomthings:ingredient:2>],
+	[null, <fluid:fire_water> * 1000, null]
+]);
 
-function jGetDust(listAllOre as OreEntry[], id as string) as IItemStack{
-	for testJ in listAllOre {
-		var getDust = testJ.getItemStack("dust") as IItemStack;
-		if (!isNull(getDust) && getDust.definition.id == id) {
-				return getDust;
-		}
-	}
-	return null;
-}
+# Psionic rat brain
+//mods.thaumcraft.Infusion.registerRecipe(String name, String research, IItemStack output, int instability, CTAspectStack[] aspects, IIngredient centralItem, IIngredient[] recipe);
+mods.thaumcraft.Infusion.registerRecipe("psionic_rat_brain", "INFUSION", <rats:psionic_rat_brain>, 40, 
+	[<aspect:cognitio> * 150, <aspect:alienis> * 40, <aspect:rattus> * 80], <thaumcraft:brain>, 
+	[<rats:charged_creeper_chunk>, <rats:chunky_cheese_token>, <rats:charged_creeper_chunk>, <cd4017be_lib:m:402>, 
+	 <rats:charged_creeper_chunk>, <cd4017be_lib:m:402>, <draconicevolution:draconium_block:1>, <rats:charged_creeper_chunk>]
+);
 
-
-for poop in scripts.DataTables.listRatPoop{
-		print("Processing poop: " ~ poop.name);
-    if (!isNull(poop.tag.OreItem) && !isNull(poop.tag.IngotItem)){
-			print("Processing poop.tag.OreItem.id.asString(): " ~ poop.tag.OreItem.id.asString());
-
-			var pOre = itemUtils.getItem(
-				poop.tag.OreItem.id.asString(),
-				poop.tag.OreItem.Damage.asString() as int)
-				* poop.tag.OreItem.Count.asString() as int;
-			var pIng = itemUtils.getItem(
-				poop.tag.IngotItem.id.asString(),
-				poop.tag.IngotItem.Damage.asString() as int)
-				* poop.tag.IngotItem.Count.asString() as int;
-
-			# Have dust output
-			var pDust = jGetDust(jaopcaAllOre, pIng.definition.id);
-			if(!isNull(pDust)){
-				# ID Squeeser
-				//Squeezer.addRecipe(IItemStack inputStack, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid);
-				mods.integrateddynamics.Squeezer.addRecipe(poop, pDust*2, <liquid:dirt> * 100);
-				mods.integrateddynamics.MechanicalSqueezer.addRecipe(poop, pDust*2, <liquid:dirt> * 100);
-			}
-			// for testJ in jaopcaAllOre {
-			// 	var getDust = testJ.getItemStack("dust") as IItemStack;
-			// 	if (!isNull(getDust) && getDust.definition.id == pIng.definition.id) {
-			// 			print("JAOPCA dust found for: " ~ pOre.name);
-			// 		}
-			// 	}
-				
-				// if (testJ.getItemStack("ingot") == pIng || 
-				// 	  testJ.getItemStack("gem") == pIng ||
-				// 		testJ.getItemStack("dust") == pIng ) {
-							
-				// 		print("JAOPCA entry found for: " ~ pOre.name);
-				// }
-			// }
-
-			# Induction Smelter
-			// mods.thermalexpansion.InductionSmelter.addRecipe(IItemStack primaryOutput, IItemStack primaryInput, IItemStack secondaryInput, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
-			// mods.thermalexpansion.InductionSmelter.addRecipe(pIng*2, poop, <minecraft:sand>, 4000, <industrialforegoing:fertilizer>, 25);
-
-			# Melting
-			// mods.tconstruct.Melting.addRecipe(<liquid:molten_gold> * 144,<minecraft:gold_ingot>);		
-	}
-}
+# Oredict pirate hat recipe
+remake("rats rat_upgrade_buccaneer", <rats:rat_upgrade_buccaneer>, [
+	[<rats:cheese_cannonball>, <ore:hatPirate>, <rats:cheese_cannonball>], 
+	[<rats:cheese_cannonball>, <rats:rat_upgrade_basic_ratlantean>, <rats:cheese_cannonball>], 
+	[<rats:cheese_cannonball>, <rats:pirat_cutlass>, <rats:cheese_cannonball>]]);
+remake("rats idol_of_ratlantis", <rats:idol_of_ratlantis>, [
+	[<rats:arcane_technology>, <ore:hatPirate>, <rats:psionic_rat_brain>], 
+	[<rats:rat_toga>, <rats:gem_of_ratlantis>, <rats:marbled_cheese_rat_head>], 
+	[<rats:ratglove_petals>, <rats:feral_rat_claw>, <rats:ratlantean_flame>]]);
 
 
+/*
 -<rats:rat_nugget>
 -<rats:rat_nugget_ore>.withTag({OreItem: {id: "thermalfoundation:ore", Count: 1 as byte, Damage: 4 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1 as byte, Damage: 132 as short}})
 -<rats:rat_nugget_ore:1>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 7 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 7 as short}})

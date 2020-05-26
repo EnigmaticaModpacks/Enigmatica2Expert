@@ -104,12 +104,12 @@ print("--- loading TinkersConstruct.zs ---");
 # Removing the ability to melt coal
 val coals as IItemStack[] = [
 
-	<bigreactors:ingotmetals:2>,
-	<bigreactors:dustmetals:2>,
+	<bigreactors:ingotgraphite>,
+	<bigreactors:dustgraphite>,
 	<minecraft:coal>,
 	<minecraft:coal_block>,
 	<thermalfoundation:material:768>,
-	<bigreactors:blockmetals:2>,
+	<bigreactors:blockgraphite>,
 	<nuclearcraft:ingot_block:8>,
 	<nuclearcraft:ingot:8>,
 	<nuclearcraft:dust:8>
@@ -137,8 +137,11 @@ for item in coals {
 # Add Cyanite melting recipe
 	mods.tconstruct.Melting.addRecipe(<liquid:cyanite> * (144*9), <ore:blockCyanite>, 700);
 	mods.tconstruct.Melting.addRecipe(<liquid:cyanite> * 144, <ore:ingotCyanite> | <ore:dustCyanite>, 450);
-	
-	mods.tconstruct.Casting.addBasinRecipe(<bigreactors:blockmetals:3>, null, <liquid:plutonium>, 1296);
+
+# Add recipes from liquids
+	mods.tconstruct.Casting.addBasinRecipe(<bigreactors:blockblutonium>, null, <liquid:plutonium>, 1296);
+	mods.tconstruct.Casting.addBasinRecipe(<bigreactors:blockcyanite>, null, <liquid:cyanite>, 1296);
+	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom>, <bigreactors:ingotcyanite>, <liquid:cyanite>, 144, false);
 
 
 # Slime Boots
@@ -257,13 +260,13 @@ function addHighOvenRecipe(output as ILiquidStack , input as ILiquidStack , temp
 }
 
 # Blutonium
-addHighOvenRecipe(<liquid:plutonium> * (144*3), <liquid:cyanite> * (144*6), 3000, 
-	<ic2:nuclear:7>, 100, <actuallyadditions:block_crystal_empowered:1>, 75, <ore:blockMithril>, 66);
+addHighOvenRecipe(<liquid:plutonium> * (144/2), <liquid:cyanite> * (144*1), 3000, 
+	<ic2:nuclear:7>, 17, <actuallyadditions:item_crystal_empowered:1>, 100, <thermalfoundation:material:136>, 100);
 
 # EnderIO simple alloys
 addHighOvenRecipe(<liquid:construction_alloy>*144  ,<liquid:iron>*48         , 2700  , <ore:dustBedrock>  , 50  , <ore:dustLead>      , 100  , null            , 100);
-addHighOvenRecipe(<liquid:dark_steel> *144         ,<liquid:steel>*144       , 6600 , <ore:dustBedrock>  , 50  , <ore:dustObsidian>  , 100  , null            , 100);
-addHighOvenRecipe(<liquid:end_steel> *144          ,<liquid:dark_steel>*144  , 7800 , <ore:dustBedrock>  , 50  , <ore:dustEndstone>  , 100  , <ore:obsidian>  , 100);
+addHighOvenRecipe(<liquid:dark_steel> *144         ,<liquid:steel>*144       , 5500 , <ore:dustBedrock>  , 50  , <ore:dustObsidian>  , 100  , null            , 100);
+addHighOvenRecipe(<liquid:end_steel> *144          ,<liquid:dark_steel>*144  , 5500 , <ore:dustBedrock>  , 50  , <ore:dustEndstone>  , 100  , <ore:obsidian>  , 100);
 
 # Oxidisers on choose
 val ox as IIngredient = <ore:dustCyanite> | <ore:itemSlagRich> | <ore:dustPsi>;
@@ -275,7 +278,7 @@ addHighOvenRecipe(<liquid:energetic_alloy> *144    ,<liquid:gold>*144           
 addHighOvenRecipe(<liquid:vibrant_alloy> *144      ,<liquid:energetic_alloy>*144, 5400 , <ore:dustBedrock>  , 50  , <ore:dustEnderPearl>             , 100, ox, 25);
 addHighOvenRecipe(<liquid:redstone_alloy> *144     ,<liquid:tin>*144            , 3600 , <ore:dustBedrock>  , 50  , <ore:dustRedstone>               , 100, ox, 25);
 addHighOvenRecipe(<liquid:conductive_iron> *144    ,<liquid:iron>*144           , 4200 , <ore:dustBedrock>  , 50  , <ore:dustRedstone>               , 100, ox, 25);
-addHighOvenRecipe(<liquid:pulsating_iron> *144     ,<liquid:silver>*144         , 6000 , <ore:dustBedrock>  , 50  , <ore:dustEnder>                  , 100, ox, 25);
+addHighOvenRecipe(<liquid:pulsating_iron> *144     ,<liquid:silver>*144         , 5500 , <ore:dustBedrock>  , 50  , <ore:dustEnder>                  , 100, ox, 25);
 
 # Remake some metals to able be melted only under amplyfiing tube
 mods.mechanics.addTubeRecipe([<thaumcraft:amber_block>] as IItemStack[], <liquid:amber> * 1000);
@@ -287,5 +290,26 @@ mods.cyclicmagic.Melter.removeShapedRecipe("amber", 1000);
 mods.cyclicmagic.Melter.removeShapedRecipe("crystal", 1000);
 
 # Harder Osgloglas recipe
-mods.tconstruct.Alloy.removeRecipe(<liquid:osgloglas>);
-mods.tconstruct.Alloy.addRecipe(<liquid:osgloglas>, [<liquid:amber>, <liquid:osmium>, <liquid:refinedobsidian>, <liquid:refinedglowstone>]);
+# Somehow, alloy cant be removed
+// mods.tconstruct.Alloy.removeRecipe(<liquid:osgloglas>);
+// mods.tconstruct.Alloy.addRecipe(<liquid:osgloglas> * 144, [<liquid:amber> * 144, <liquid:osmium> * 144, <liquid:refinedobsidian> * 144, <liquid:refinedglowstone> * 144]);
+
+# Liquid blue slimy items
+scripts.Processing.squeezeSolidToFluid(<tconstruct:slime_dirt:1>,        <liquid:blueslime>*1000, <biomesoplenty:mudball>);
+scripts.Processing.squeezeSolidToFluid(<tconstruct:slime_leaves>,        <liquid:blueslime>*250, null);
+scripts.Processing.squeezeSolidToFluid(<tconstruct:slime_grass_tall>,    <liquid:blueslime>*100, null);
+scripts.Processing.squeezeSolidToFluid(<tconstruct:slime_grass_tall:1>,  <liquid:blueslime>*100, null);
+scripts.Processing.squeezeSolidToFluid(<tconstruct:slime_sapling>,       <liquid:blueslime>*500, null);
+scripts.Processing.squeezeSolidToFluid(<tconstruct:slime_vine_blue_end>, <liquid:blueslime>*100, null);
+scripts.Processing.squeezeSolidToFluid(<tconstruct:slime_vine_blue_mid>, <liquid:blueslime>*100, <tconstruct:slime_vine_blue_end>);
+scripts.Processing.squeezeSolidToFluid(<tconstruct:slime_vine_blue>,     <liquid:blueslime>*100, <tconstruct:slime_vine_blue_mid>);
+
+# Liquid purple slimy items
+scripts.Processing.squeezeSolidToFluid(<tconstruct:slime_dirt:2>,          <liquid:purpleslime>*1000, <biomesoplenty:mudball>);
+scripts.Processing.squeezeSolidToFluid(<tconstruct:slime_leaves:1>,        <liquid:purpleslime>*250,  null);
+scripts.Processing.squeezeSolidToFluid(<tconstruct:slime_grass_tall:4>,    <liquid:purpleslime>*100, null);
+scripts.Processing.squeezeSolidToFluid(<tconstruct:slime_grass_tall:5>,    <liquid:purpleslime>*100, null);
+scripts.Processing.squeezeSolidToFluid(<tconstruct:slime_sapling:1>,       <liquid:purpleslime>*500, null);
+scripts.Processing.squeezeSolidToFluid(<tconstruct:slime_vine_purple_end>, <liquid:purpleslime>*100, null);
+scripts.Processing.squeezeSolidToFluid(<tconstruct:slime_vine_purple_mid>, <liquid:purpleslime>*100, <tconstruct:slime_vine_purple_end>);
+scripts.Processing.squeezeSolidToFluid(<tconstruct:slime_vine_purple>,     <liquid:purpleslime>*100, <tconstruct:slime_vine_purple_mid>);

@@ -369,14 +369,12 @@ mods.tconstruct.Melting.removeRecipe(<liquid:refinedobsidian>);
 mods.tconstruct.Melting.removeRecipe(<liquid:refinedglowstone>);
 
 # Remove melting in other machines
-mods.thermalexpansion.Crucible.removeRecipe(<mekanism:ingot>);
-mods.thermalexpansion.Crucible.removeRecipe(<mekanism:nugget>);
-mods.thermalexpansion.Crucible.removeRecipe(<mekanism:basicblock:4>);
-mods.thermalexpansion.Crucible.removeRecipe(<mekanism:nugget:3>);
-mods.thermalexpansion.Crucible.removeRecipe(<mekanism:ingot:3>);
-mods.thermalexpansion.Crucible.removeRecipe(<mekanism:otherdust:5>);
-mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedobsidian>);
-mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedglowstone>);
+mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedobsidian> * 144);
+mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedglowstone> * 144);
+mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedobsidian> * 16);
+mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedglowstone> * 16);
+mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedobsidian> * 1296);
+mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedglowstone> * 1296);
 
 # Also recipe added in ChemicalReactor.xml
 # Add Tube recipes

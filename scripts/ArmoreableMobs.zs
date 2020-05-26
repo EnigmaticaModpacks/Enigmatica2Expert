@@ -111,7 +111,6 @@ function makeGroup(id as string, stage as IData, isSkeleton as bool){
 # Create all stages
 for id, stage in armorStaged {
     print("Making stages for id: " ~ (isNull(id) ? "null" : id));
-    print("  stage:" ~ (isNull(stage) ? "null" : stage.asString()));
     makeGroup(id, stage, false); # Weaponized group
     makeGroup(id, stage, true);  # Sceleton group
 }
