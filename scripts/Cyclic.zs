@@ -178,3 +178,12 @@ remakeEx(<cyclicmagic:battery>, [
 	[<ore:clay>, <ore:blockRedstone>, <ore:clay>],
 	[<ore:blockRedstone>, <rats:charged_creeper_chunk>, <ore:blockRedstone>],
 	[<ore:clay>, <ore:blockRedstone>, <ore:clay>]]);
+
+# Clear tank
+recipes.addShapeless("Cyclic tank clear", <cyclicmagic:block_storeempty>, [<cyclicmagic:block_storeempty>]);
+
+# Pharos beacon
+remakeEx(<cyclicmagic:beacon_potion>, [
+	[<extrautils2:ineffableglass:2>, <biomesoplenty:jar_filled:1>, <extrautils2:ineffableglass:2>],
+	[<mekanism:basicblock:15>, <extendedcrafting:material:40>, <mekanism:basicblock:15>],
+	[<ore:blockPulsatingIron>, <ore:blockPulsatingIron>, <ore:blockPulsatingIron>]]);

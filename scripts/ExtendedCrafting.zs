@@ -44,7 +44,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	
 	mods.thermalexpansion.InductionSmelter.addRecipe
 	(<extendedcrafting:material> * 3, 
-	<thermalfoundation:storage_alloy:2>, <bigreactors:blockmetals:2>, 15000);	
+	<thermalfoundation:storage_alloy:2>, <bigreactors:blockgraphite>, 15000);	
 	
 # Crafting Core
 	recipes.remove(<extendedcrafting:crafting_core>);
@@ -114,5 +114,4 @@ import mods.jei.JEI.removeAndHide as rh;
 
 # Luminiscence made in chemical reactor and drying basin
 recipes.removeByRecipeName("extendedcrafting:luminessence");
-mods.rustic.EvaporatingBasin.addRecipe(<extendedcrafting:material:7>, <fluid:liquid_sunshine> * 1000);
-mods.inworldcrafting.FluidToItem.transform(<extendedcrafting:material:7>, <fluid:liquid_sunshine>, <mysticalagriculture:crafting:3>);
+scripts.Processing.evaporate(<fluid:liquid_sunshine> * 1000, <extendedcrafting:material:7> * 2, null);

@@ -39,13 +39,30 @@
 			<itemStack>minecraft:dye 5 15</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="20" power ="50000">
+	<Recipe timeRequired="80" power ="50000">
 		<input>
-			<itemStack>mysticalagriculture:crafting 1 1</itemStack>
-			<fluidStack>liquid_sunshine 100</fluidStack>
+			<fluidStack>liquid_sunshine 1000</fluidStack>
 		</input>
 		<output>
-			<itemStack>extendedcrafting:material 1 7</itemStack>
+			<itemStack>extendedcrafting:material 10 7</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="20" power ="20000">
+		<input>
+			<itemStack>thermalfoundation:material 1 770</itemStack>
+			<fluidStack>diamond 50</fluidStack>
+		</input>
+		<output>
+			<fluidStack>refinedobsidian 432</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="20" power ="20000">
+		<input>
+			<itemStack>mekanism:dust 1 2</itemStack>
+			<fluidStack>glowstone 250</fluidStack>
+		</input>
+		<output>
+			<fluidStack>refinedglowstone 432</fluidStack>
 		</output>
 	</Recipe>
 </Recipes>

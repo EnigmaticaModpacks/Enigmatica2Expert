@@ -141,3 +141,19 @@ remake("environmentaltech modifier_accuracy",
 		[<ore:blockDiamond>, <environmentaltech:pladium_crystal>, <ore:blockDiamond>], 
 		[<environmentaltech:mica>, <environmentaltech:modifier_null>, <environmentaltech:mica>], 
 		[<fluid:low_pressure_steam> * 1000, <environmentaltech:lonsdaleite_crystal>, <fluid:low_pressure_steam> * 1000]]);
+
+# Nanobot Oredict for Quest book
+<ore:nanoBotBeacon>.addItems([
+<environmentaltech:nano_cont_personal_1>,
+<environmentaltech:nano_cont_personal_2>,
+<environmentaltech:nano_cont_personal_3>,
+<environmentaltech:nano_cont_personal_4>,
+<environmentaltech:nano_cont_personal_5>,
+<environmentaltech:nano_cont_personal_6>,
+<environmentaltech:nano_cont_ranged_1>,
+<environmentaltech:nano_cont_ranged_2>,
+<environmentaltech:nano_cont_ranged_3>,
+<environmentaltech:nano_cont_ranged_4>,
+<environmentaltech:nano_cont_ranged_5>,
+<environmentaltech:nano_cont_ranged_6>
+]);

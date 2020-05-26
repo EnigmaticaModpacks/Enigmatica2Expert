@@ -159,11 +159,12 @@ function onEvent(e as EntityLivingFallEvent){
 		}
 		
 		var power = 0.0d;
-		for j in 0 to powrList.length {
-			# TODO: Index Out of bounds
-			power = power + powrList[j] / powrList.length;
+		if (powrList.length > 0) {
+			for j in 0 to powrList.length {
+				power = power + powrList[j] / powrList.length;
 			}
-				
+		}
+
 		// print("Jumping power: " ~ (((power * 100) as int) as double / 100.0d));
 		// print("  items count value: " ~ (((cumulativeValues[0] * 100) as int) as double / 100.0d));
 		// print("    sprinting value: " ~ (((cumulativeValues[1] * 100) as int) as double / 100.0d));

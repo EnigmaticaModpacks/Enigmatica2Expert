@@ -127,7 +127,7 @@ import crafttweaker.item.IItemStack as IItemStack;
 # Garden Cloche
 	recipes.remove(<immersiveengineering:metal_device1:13>);
 	mods.forestry.ThermionicFabricator.addCast(<immersiveengineering:metal_device1:13>, 
-	[[null, <immersiveengineering:connector>, null],
+	[[null, <actuallyadditions:block_greenhouse_glass>, null],
 	[null, <ic2:upgrade:4>, null], 
 	[<ore:plankTreatedWood>, <immersiveengineering:metal_decoration0:5>, <ore:plankTreatedWood>]], 
 	<liquid:glass> * 4000);

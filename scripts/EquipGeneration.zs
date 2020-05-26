@@ -168,6 +168,7 @@ static defaultMats as IData = [
 "xu_demonic_metal",
 ] as IData;
 
+# TODO: Filter this materials
 static matsOnlyForArmor as IData = [
 "leatherfrosttroll",
 "chitintandeathworm",
@@ -468,9 +469,9 @@ function onSpawnEvent(e as EntityLivingSpawnEvent){
 # Hook on events
 # -------------------------------
 events.onSpecialSpawn(function(event as EntityLivingSpawnEvent){
-  onSpawnEvent(event);
+  # onSpawnEvent(event);
 });
 
 events.onCheckSpawn(function(event as EntityLivingSpawnEvent){
-  onSpawnEvent(event);
+  # onSpawnEvent(event);
 });

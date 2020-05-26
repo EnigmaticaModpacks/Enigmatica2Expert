@@ -16,7 +16,7 @@ recipes.addShaped(<mechanics:crushing_block>, [
 
 # Amplyfying tube
 recipes.addShaped(<mechanics:amplifying_tube>, [
-  [<tconstruct:seared_glass>, <extrautils2:suncrystal>, <tconstruct:seared_glass>],
+  [<integratedterminals:chorus_glass>, <extrautils2:suncrystal>, <integratedterminals:chorus_glass>],
   [<ore:ingotHeavy>, null, <ore:ingotHeavy>], 
   [<ore:ingotHeavy>, <industrialforegoing:laser_lens_inverted:4>, <ore:ingotHeavy>]]);
 

@@ -4,7 +4,6 @@ import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
 import mods.jei.JEI.removeAndHide as rh;
-import mods.inworldcrafting.FluidToItem.transform as fti;
 
 #priority 100
 
@@ -22,9 +21,7 @@ import mods.inworldcrafting.FluidToItem.transform as fti;
 global getItemName as function(IItemStack)string = 
     function (item as IItemStack) as string  {
 
-	return item.definition.id
-		.replaceAll(":", "_")
-		~ "_" ~ item.damage;
+	return item.definition.id.replaceAll(":", "_") ~ "_" ~ item.damage;
 };
 
 # Remake any recipe
@@ -71,7 +68,7 @@ global remakeFluidToItem as function(IItemStack, ILiquidStack, IIngredient)void 
     function (output as IItemStack, fluid as ILiquidStack, input as IIngredient) as void  {
 
 	recipes.remove(output);
-	fti(output, fluid, input);
+	mods.inworldcrafting.FluidToItem.transform(output, fluid, input);
 };
 
 
@@ -86,16 +83,15 @@ global clearFluid as function(IItemStack)void =
 		function(out, ins, cInfo) {
 			var tag = {} as crafttweaker.data.IData;
 			if(ins has "marked" && !isNull(ins.marked) && ins.marked.hasTag) {
-				if (!isNull(ins.marked.tag.Fluid)){
-					tag = ins.marked.tag - "Fluid";
-				}else{
-					tag = ins.marked.tag;
+				tag = ins.marked.tag;
+				if (!isNull(tag.Fluid)) {
+					# Usual tanks
+					tag = tag - "Fluid";
 				}
 			}
 			return out.withTag(tag);
 	}, null);
 };
-
 
 # Make shapeless crafts for specified block up to level for Preston mod
 global compressIt as function(IItemStack, int)IItemStack = 

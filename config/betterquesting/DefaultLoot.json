@@ -4167,7 +4167,7 @@
           "items:9": {
             "0:10": {
               "id:8": "rats:rat_nugget_ore",
-              "Count:3": 8,
+              "Count:3": 64,
               "tag:10": {
                 "OreItem:10": {
                   "id:8": "netherendingores:ore_end_vanilla",
@@ -4512,7 +4512,7 @@
           "ID:3": 4,
           "items:9": {
             "0:10": {
-              "id:8": "plustic:osgloglasblock",
+              "id:8": "plustic:alumiteblock",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -4561,7 +4561,7 @@
           "items:9": {
             "0:10": {
               "id:8": "actuallyadditions:block_greenhouse_glass",
-              "Count:3": 5,
+              "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -5519,7 +5519,7 @@
           "items:9": {
             "0:10": {
               "id:8": "rats:rat_nugget_ore",
-              "Count:3": 6,
+              "Count:3": 24,
               "tag:10": {
                 "OreItem:10": {
                   "id:8": "draconicevolution:draconium_ore",
@@ -5543,7 +5543,7 @@
           "items:9": {
             "0:10": {
               "id:8": "rats:rat_nugget_ore",
-              "Count:3": 14,
+              "Count:3": 46,
               "tag:10": {
                 "OreItem:10": {
                   "id:8": "tconstruct:ore",
@@ -5636,7 +5636,7 @@
           "items:9": {
             "0:10": {
               "id:8": "conarm:resist_mat_blast",
-              "Count:3": 2,
+              "Count:3": 8,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -5648,7 +5648,7 @@
           "items:9": {
             "0:10": {
               "id:8": "conarm:resist_mat_proj",
-              "Count:3": 2,
+              "Count:3": 8,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -5660,7 +5660,7 @@
           "items:9": {
             "0:10": {
               "id:8": "conarm:resist_mat_fire",
-              "Count:3": 2,
+              "Count:3": 8,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -5883,15 +5883,15 @@
           "ID:3": 106,
           "items:9": {
             "0:10": {
-              "id:8": "openblocks:tank",
+              "id:8": "extrautils2:drum",
               "Count:3": 1,
               "tag:10": {
-                "tank:10": {
+                "Fluid:10": {
                   "FluidName:8": "refinedcanolaoil",
-                  "Amount:3": 16000
+                  "Amount:3": 256000
                 }
               },
-              "Damage:2": 0,
+              "Damage:2": 1,
               "OreDict:8": ""
             }
           }
@@ -5901,15 +5901,15 @@
           "ID:3": 107,
           "items:9": {
             "0:10": {
-              "id:8": "openblocks:tank",
+              "id:8": "extrautils2:drum",
               "Count:3": 1,
               "tag:10": {
-                "tank:10": {
+                "Fluid:10": {
                   "FluidName:8": "canolaoil",
-                  "Amount:3": 16000
+                  "Amount:3": 256000
                 }
               },
-              "Damage:2": 0,
+              "Damage:2": 1,
               "OreDict:8": ""
             }
           }
@@ -5919,15 +5919,15 @@
           "ID:3": 108,
           "items:9": {
             "0:10": {
-              "id:8": "openblocks:tank",
+              "id:8": "extrautils2:drum",
               "Count:3": 1,
               "tag:10": {
-                "tank:10": {
-                  "FluidName:8": "ic2creosote",
-                  "Amount:3": 16000
+                "Fluid:10": {
+                  "FluidName:8": "creosote",
+                  "Amount:3": 256000
                 }
               },
-              "Damage:2": 0,
+              "Damage:2": 1,
               "OreDict:8": ""
             }
           }
@@ -6027,14 +6027,26 @@
           "ID:3": 114,
           "items:9": {
             "0:10": {
-              "id:8": "openblocks:tank",
+              "id:8": "extrautils2:drum",
               "Count:3": 1,
               "tag:10": {
-                "tank:10": {
+                "Fluid:10": {
                   "FluidName:8": "diesel",
-                  "Amount:3": 16000
+                  "Amount:3": 256000
                 }
               },
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "115:10": {
+          "weight:3": 10,
+          "ID:3": 115,
+          "items:9": {
+            "0:10": {
+              "id:8": "plustic:osgloglasingot",
+              "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -6143,7 +6155,7 @@
           "ID:3": 7,
           "items:9": {
             "0:10": {
-              "id:8": "actuallyadditions:block_phantomface",
+              "id:8": "capabilityproxy:capability_proxy",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -6230,7 +6242,7 @@
           "ID:3": 14,
           "items:9": {
             "0:10": {
-              "id:8": "actuallyadditions:block_phantomface",
+              "id:8": "capabilityproxy:item_capability_proxy",
               "Count:3": 4,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -6369,6 +6381,9 @@
           "ID:3": 25,
           "items:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
               "id:8": "biomesoplenty:terrestrial_artifact",
               "Count:3": 16,
               "Damage:2": 0,
@@ -6844,7 +6859,7 @@
           "items:9": {
             "0:10": {
               "id:8": "conarm:resist_mat",
-              "Count:3": 2,
+              "Count:3": 8,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -7022,15 +7037,15 @@
           "ID:3": 68,
           "items:9": {
             "0:10": {
-              "id:8": "openblocks:tank",
+              "id:8": "extrautils2:drum",
               "Count:3": 1,
               "tag:10": {
-                "tank:10": {
+                "Fluid:10": {
                   "FluidName:8": "empoweredoil",
-                  "Amount:3": 16000
+                  "Amount:3": 256000
                 }
               },
-              "Damage:2": 0,
+              "Damage:2": 1,
               "OreDict:8": ""
             }
           }
@@ -7040,15 +7055,15 @@
           "ID:3": 69,
           "items:9": {
             "0:10": {
-              "id:8": "openblocks:tank",
+              "id:8": "extrautils2:drum",
               "Count:3": 1,
               "tag:10": {
-                "tank:10": {
+                "Fluid:10": {
                   "FluidName:8": "crystaloil",
-                  "Amount:3": 16000
+                  "Amount:3": 256000
                 }
               },
-              "Damage:2": 0,
+              "Damage:2": 1,
               "OreDict:8": ""
             }
           }
@@ -7148,15 +7163,15 @@
           "ID:3": 75,
           "items:9": {
             "0:10": {
-              "id:8": "openblocks:tank",
+              "id:8": "extrautils2:drum",
               "Count:3": 1,
               "tag:10": {
-                "tank:10": {
+                "Fluid:10": {
                   "FluidName:8": "astralsorcery.liquidstarlight",
-                  "Amount:3": 16000
+                  "Amount:3": 256000
                 }
               },
-              "Damage:2": 0,
+              "Damage:2": 1,
               "OreDict:8": ""
             }
           }
@@ -7167,6 +7182,18 @@
           "items:9": {
             "0:10": {
               "id:8": "mysticalagradditions:insanium",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "77:10": {
+          "weight:3": 10,
+          "ID:3": 77,
+          "items:9": {
+            "0:10": {
+              "id:8": "capabilityproxy:ranged_capability_proxy",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -7332,7 +7359,7 @@
           "ID:3": 12,
           "items:9": {
             "0:10": {
-              "id:8": "bigreactors:minerals",
+              "id:8": "bigreactors:mineralanglesite",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -7344,9 +7371,9 @@
           "ID:3": 13,
           "items:9": {
             "0:10": {
-              "id:8": "bigreactors:minerals",
+              "id:8": "bigreactors:mineralbenitoite",
               "Count:3": 1,
-              "Damage:2": 1,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -7667,6 +7694,24 @@
             "0:10": {
               "id:8": "scalinghealth:difficultychanger",
               "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "37:10": {
+          "weight:3": 15,
+          "ID:3": 37,
+          "items:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "actuallyadditions:item_tele_staff",
+              "Count:3": 1,
+              "tag:10": {
+                "Energy:3": 250000
+              },
               "Damage:2": 0,
               "OreDict:8": ""
             }

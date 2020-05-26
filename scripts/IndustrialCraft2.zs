@@ -221,3 +221,6 @@ ScrapBox.addDrop(<thermalexpansion:frame:64>, 0.05F);
 ScrapBox.addDrop(<forestry:chipsets:2>.withTag({T: 2 as short}), 0.04F);
 ScrapBox.addDrop(<rftoolsdim:dimlet_parcel>, 0.03F);
 ScrapBox.addDrop(<forestry:chipsets:3>.withTag({T: 3 as short}), 0.01F);
+
+# Energy crystal compat
+scripts.Processing.compress(<ic2:dust:6> * 9, <ic2:energy_crystal:26>, "except: compressor");

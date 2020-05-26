@@ -49,6 +49,18 @@ mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreLead>, <thermalfoundation
 	[<ore:slabTreatedWood>, <ore:slabTreatedWood>, <ore:slabTreatedWood>],
 	[<ore:plankTreatedWood>, null, <ore:plankTreatedWood>]]);
 
+# Amber Block
+	recipes.removeByRecipeName("thaumcraft:ambertoblock");
+	recipes.addShapeless("Thaumcraft Amber Block", 
+	<thaumcraft:amber_block>, [
+		<ore:gemAmber>,<ore:gemAmber>,<ore:gemAmber>,<ore:gemAmber>,<ore:gemAmber>,
+		<ore:gemAmber>,<ore:gemAmber>,<ore:gemAmber>,<ore:gemAmber>
+	]);
+
+# Amber Gem
+	recipes.removeByRecipeName("thaumcraft:amberblocktoamber");
+	recipes.addShapeless("Amber Gem", <thaumcraft:amber> * 9, [<ore:blockAmber>]);
+
 # Amber Bricks
 	recipes.remove(<thaumcraft:amber_brick>);
 	recipes.addShapeless("Thaumcraft Amber Brick", 
@@ -91,8 +103,8 @@ mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreLead>, <thermalfoundation
 	[<ore:gemEmerald>, <thaumcraft:baubles:2>, <ore:gemEmerald>]]);
 
 # TC Logs -> Planks
-	recipes.addShapeless(<thaumcraft:plank_greatwood> * 2, [<thaumcraft:log_greatwood>]);
-	recipes.addShapeless(<thaumcraft:plank_silverwood> * 2, [<thaumcraft:log_silverwood>]);
+	scripts.Processing.saw(<thaumcraft:log_greatwood>, <thaumcraft:plank_greatwood>,  "only: shapeless, blockCutter");
+	scripts.Processing.saw(<thaumcraft:log_silverwood>,<thaumcraft:plank_silverwood>, "only: shapeless, blockCutter");
 
 # Golemancer's Bell
 	recipes.remove(<thaumcraft:golem_bell>);
@@ -101,6 +113,3 @@ mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreLead>, <thermalfoundation
 	[null, <astralsorcery:itemrockcrystalsimple>.anyDamage(), <astralsorcery:itemrockcrystalsimple>.anyDamage()], 
 	[<ore:stickTreatedWood>, null, null]]);
 
-//===============================================//
-
-	print("--- Thaumcraft.zs initialized ---");

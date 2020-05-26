@@ -3,7 +3,6 @@ import mods.jei.JEI.removeAndHide as rh;
 import mods.actuallyadditions.BallOfFur.addReturn as addBallReturn;
 
 #modloaded actuallyadditions
-print("--- loading ActuallyAdditions.zs ---");
 	
 # Black Quartz Block recipe remakes
 	# Black Quartz Pillar
@@ -233,7 +232,7 @@ var listCatFur as string[] = [
 "rats:token_fragment"            , "0"    , "15",
 "rats:little_black_worm"         , "0"    , "1",
 "rats:feral_rat_claw"            , "0"    , "10",
-"rats:marbled_cheese_rat_head"   , "0"    , "3",
+"rats:marbled_cheese_rat_head"   , "0"    , "2",
 "enderio:item_power_conduit"     , "2"    , "40",
 "immersivecables:wire_coil"      , "1"    , "25",
 "rs_ctr:wire"                    , "0"    , "45",
@@ -241,7 +240,7 @@ var listCatFur as string[] = [
 "twilightforest:alpha_fur"       , "0"    , "3",
 "twilightforest:arctic_fur"      , "0"    , "15",
 "animania:wool"                  , "3"    , "55",
-"bigreactors:minerals"           , "1"    , "1",
+"bigreactors:mineralanglesite"   , "0"    , "1",
 
 "animania:blue_peacock_feather"      ,"0" ,"50",
 "animania:charcoal_peacock_feather"  ,"0" ,"50",
@@ -347,26 +346,16 @@ recipes.addShaped("Angel Ring",
 	[<environmentaltech:modifier_creative_flight>, <extendedcrafting:material:40>, <environmentaltech:modifier_creative_flight>], 
 	[<ore:plateDenseGold>, <extrautils2:chickenring:1>, <ore:plateDenseGold>]
 ]);
-	
-# *======= AtomicReconstructor =======*
 
-	#mods.actuallyadditions.AtomicReconstructor.addRecipe(IItemStack output, IItemStack input, int energyUsed);
-	#mods.actuallyadditions.AtomicReconstructor.addRecipe(<minecraft:fire_charge>, <minecraft:coal:1>, 1000);
+# Harder Phantom Face
+remake("actuallyadditions Phantomface", <actuallyadditions:block_phantomface>, [
+	[null, <ore:chestWood>, null], 
+	[<actuallyadditions:item_crystal_empowered:2>, <capabilityproxy:capability_proxy>, <actuallyadditions:item_crystal_empowered:2>], 
+	[null, <actuallyadditions:item_misc:8>, null]]);
 
-	#mods.actuallyadditions.AtomicReconstructor.removeRecipe(IItemStack output);
-	#mods.actuallyadditions.AtomicReconstructor.removeRecipe(<minecraft:coal>);
-	
-# *======= Compost =======*
-
-	#mods.actuallyadditions.Compost.addRecipe(IItemStack output, IItemStack outputDisplay, IItemStack input, IItemStack inputDisplay);
-	#mods.actuallyadditions.Compost.addRecipe(<minecraft:dirt>, <minecraft:dirt>, <minecraft:sugar>, <minecraft:snow>);
-	
-	#mods.actuallyadditions.Compost.removeRecipe(IItemStack output);
-	#mods.actuallyadditions.Compost.removeRecipe(<actuallyadditions:item_canola_seed>);
-	
-# *======= Empowerer =======*
-
-	#mods.actuallyadditions.Empowerer.addRecipe(IItemStack output, IItemStack input, IItemStack modifier1, IItemStack modifier2, IItemStack modifier3, IItemStack modifier4, int energyPerStand, int time, @Optional float[] particleColourArray);
-	#mods.actuallyadditions.Empowerer.addRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, <minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>, 500, 100, [0.5, 0.3, 0.2]);
-
-	print("--- ActuallyAdditions.zs initialized ---");
+# Harder greenhouse glass
+recipes.remove(<actuallyadditions:block_greenhouse_glass> * 2);
+recipes.addShaped(<actuallyadditions:block_greenhouse_glass> * 3, [
+	[<actuallyadditions:item_fertilizer>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_fertilizer>],
+	[<actuallyadditions:item_crystal_empowered:1>, <ore:ingotModularium>, <actuallyadditions:item_crystal_empowered:1>],
+	[<actuallyadditions:item_fertilizer>, <liquid:crystal>, <actuallyadditions:item_fertilizer>]]);

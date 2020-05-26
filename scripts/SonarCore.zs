@@ -3,7 +3,7 @@
 val stn = <sonarcore:stablestone_normal>;
 
 remakeEx(stn * 8                               ,[[stn ,stn ,stn] ,[stn ,<ore:dyeLightGray> ,stn] ,[stn ,stn ,stn]]);
-remakeEx(<sonarcore:stablestone_lightgrey> * 8 ,[[stn ,stn ,stn] ,[stn ,<ore:dyeLightGray> ,stn] ,[stn ,stn ,stn]]);
+remakeEx(<sonarcore:stablestone_lightgrey> * 8 ,[[stn ,stn ,stn] ,[stn ,<ore:dyeWhite>     ,stn] ,[stn ,stn ,stn]]);
 remakeEx(<sonarcore:stablestone_plain> * 8     ,[[stn ,stn ,stn] ,[stn ,null               ,stn] ,[stn ,stn ,stn]]);
 remakeEx(<sonarcore:stablestone_lime> * 8      ,[[stn ,stn ,stn] ,[stn ,<ore:dyeLime>      ,stn] ,[stn ,stn ,stn]]);
 remakeEx(<sonarcore:stablestone_blue> * 8      ,[[stn ,stn ,stn] ,[stn ,<ore:dyeBlue>      ,stn] ,[stn ,stn ,stn]]);

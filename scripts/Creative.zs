@@ -17,8 +17,8 @@ print("--- loading Creative.zs ---");
 	var draconicEnergyCore = <draconicevolution:draconic_energy_core>;
 	var rtgFuel = <ic2:nuclear:10>;
 	var dilithium = <ore:gemDilithium>;
-	var anglesite = <bigreactors:minerals>;
-	var benitoite = <bigreactors:minerals:1>;
+	var anglesite = <bigreactors:mineralanglesite>;
+	var benitoite = <bigreactors:mineralbenitoite>;
 	var ingotMirion = <ore:ingotMirion>;
 	var manaTablet = <botania:manatablet>.withTag({mana: 500000});
 	var megaDrum = <extrautils2:drum:3>;
@@ -38,9 +38,9 @@ print("--- loading Creative.zs ---");
 	var speedUpgrade3 = <extrautils2:ingredients:16>;
 	var sunCrystal = <extrautils2:suncrystal>;
 	var kleinBottle = <extrautils2:klein>;
-	var blockLudicrite = <bigreactors:blockmetals:4>;
+	var blockLudicrite = <bigreactors:blockludicrite>;
 	var gasPad = <advancedrocketry:oxygencharger>;
-    var blockOsgloglas = <ore:blockOsgloglas>;
+  var blockOsgloglas = <ore:blockOsgloglas>;
 	var blockMirion = <ore:blockMirion>;
 	var moonStone = <extrautils2:ingredients:5>;
 	var creativeEssence = <mysticalagradditions:stuff:69>;
@@ -152,8 +152,8 @@ recipes.addShapeless("Creative Gas Tank Frame",
 	<astralsorcery:itemcraftingcomponent:1>,<botania:manaresource>,<botania:manaresource:4>,
 	<botania:manaresource:7>,<draconicevolution:draconium_ingot>,<draconicevolution:draconic_ingot>,
 	<extendedcrafting:material>,<extendedcrafting:material:24>,<extrautils2:ingredients:11>,<extrautils2:ingredients:12>,
-	<extrautils2:ingredients:17>,<bigreactors:ingotmetals:1>,<bigreactors:ingotmetals:3>,
-	<bigreactors:ingotmetals:4>,<immersiveengineering:material:19>,<immersiveengineering:metal:5>,
+	<extrautils2:ingredients:17>,<bigreactors:ingotcyanite>,<bigreactors:ingotblutonium>,
+	<bigreactors:ingotludicrite>,<immersiveengineering:material:19>,<immersiveengineering:metal:5>,
 	<mekanism:ingot>,<mekanism:ingot:1>,<mekanism:ingot:3>,<thermalfoundation:material:131>,
 	<thermalfoundation:material:132>,<thermalfoundation:material:133>,<thermalfoundation:material:134>,
 	<thermalfoundation:material:135>,<thermalfoundation:material:136>,<thermalfoundation:material:160>,
@@ -227,13 +227,13 @@ recipes.addShapeless("Creative Gas Tank Frame",
 # Mekanism Creative Tank
 	mods.extendedcrafting.TableCrafting.addShaped(4, <mekanism:machineblock2:11>.withTag({tier: 4, mekData:{}}), 
 	[[<industrialforegoing:black_hole_tank>, <forge:bucketfilled>.withTag({FluidName: "milk_goat", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "blood", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "liquiddna", Amount: 1000}), <thermalexpansion:tank>.withTag({Fluid: {FluidName: "bio.ethanol", Amount: 32000}}), <forge:bucketfilled>.withTag({FluidName: "juice", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "mutagen", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "biomass", Amount: 1000}), <industrialforegoing:black_hole_tank>], 
-	[<forge:bucketfilled>.withTag({FluidName: "empoweredoil", Amount: 1000}), resonantFrame, ingotUltimate, ingotUltimate, <bigreactors:minerals>, ingotUltimate, ingotUltimate, resonantFrame, <forge:bucketfilled>.withTag({FluidName: "witchwater", Amount: 1000})], 
+	[<forge:bucketfilled>.withTag({FluidName: "empoweredoil", Amount: 1000}), resonantFrame, ingotUltimate, ingotUltimate, <bigreactors:mineralanglesite>, ingotUltimate, ingotUltimate, resonantFrame, <forge:bucketfilled>.withTag({FluidName: "witchwater", Amount: 1000})], 
 	[<forge:bucketfilled>.withTag({FluidName: "xu_demonic_metal", Amount: 1000}), ingotUltimate, megaDrum, megaDrum, megaDrum, megaDrum, megaDrum, ingotUltimate, <forge:bucketfilled>.withTag({FluidName: "essence", Amount: 1000})], 
 	[<forge:bucketfilled>.withTag({FluidName: "draconium", Amount: 1000}), ingotUltimate, megaDrum, awakendedCore, ultCatalyst, awakendedCore, megaDrum, ingotUltimate, <forge:bucketfilled>.withTag({FluidName: "sewage", Amount: 1000})], 
-	[<thermalexpansion:tank>.withTag({Fluid: {FluidName: "tree_oil", Amount: 32000}}), <bigreactors:minerals>, megaDrum, ultCatalyst, <draconicevolution:chaotic_core>, ultCatalyst, megaDrum, <bigreactors:minerals>, <thermalexpansion:tank>.withTag({Fluid: {FluidName: "ic2uu_matter", Amount: 32000}})], 
+	[<thermalexpansion:tank>.withTag({Fluid: {FluidName: "tree_oil", Amount: 32000}}), <bigreactors:mineralanglesite>, megaDrum, ultCatalyst, <draconicevolution:chaotic_core>, ultCatalyst, megaDrum, <bigreactors:mineralanglesite>, <thermalexpansion:tank>.withTag({Fluid: {FluidName: "ic2uu_matter", Amount: 32000}})], 
 	[<forge:bucketfilled>.withTag({FluidName: "pyrotheum", Amount: 1000}), ingotUltimate, megaDrum, awakendedCore, ultCatalyst, awakendedCore, megaDrum, ingotUltimate, <forge:bucketfilled>.withTag({FluidName: "ic2pahoehoe_lava", Amount: 1000})], 
 	[<forge:bucketfilled>.withTag({FluidName: "aerotheum", Amount: 1000}), ingotUltimate, megaDrum, megaDrum, megaDrum, megaDrum, megaDrum, ingotUltimate, <forge:bucketfilled>.withTag({FluidName: "clay", Amount: 1000})], 
-	[<forge:bucketfilled>.withTag({FluidName: "essence", Amount: 1000}), resonantFrame, ingotUltimate, ingotUltimate, <bigreactors:minerals>, ingotUltimate, ingotUltimate, resonantFrame, <forge:bucketfilled>.withTag({FluidName: "tritium", Amount: 1000})], 
+	[<forge:bucketfilled>.withTag({FluidName: "essence", Amount: 1000}), resonantFrame, ingotUltimate, ingotUltimate, <bigreactors:mineralanglesite>, ingotUltimate, ingotUltimate, resonantFrame, <forge:bucketfilled>.withTag({FluidName: "tritium", Amount: 1000})], 
 	[<industrialforegoing:black_hole_tank>, <forge:bucketfilled>.withTag({FluidName: "ender", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "cryotheum", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "petrotheum", Amount: 1000}), <thermalexpansion:tank>.withTag({Fluid: {FluidName: "mana", Amount: 32000}}), <forge:bucketfilled>.withTag({FluidName: "refined_fuel", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "mirion", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "neutron", Amount: 1000}), <industrialforegoing:black_hole_tank>]]); 
 	recipes.addShapeless("Creative Tank Reset", 
 	<mekanism:machineblock2:11>.withTag({tier: 4, mekData: {}}), 
@@ -241,15 +241,15 @@ recipes.addShapeless("Creative Gas Tank Frame",
 
 # Storage Drawers Unlimited Withdrawel Upgrade
 	mods.extendedcrafting.TableCrafting.addShaped(4, <storagedrawers:upgrade_creative:1> * 2, 
-	[[<ore:blockCrystalMatrix>, blackHoleUnit, ultCatalyst, ultCatalyst, <bigreactors:minerals>, ultCatalyst, ultCatalyst, blackHoleUnit, <ore:blockCrystalMatrix>], 
+	[[<ore:blockCrystalMatrix>, blackHoleUnit, ultCatalyst, ultCatalyst, <bigreactors:mineralanglesite>, ultCatalyst, ultCatalyst, blackHoleUnit, <ore:blockCrystalMatrix>], 
 	[blackHoleUnit, resonantFrame, resonantFrame, draconicChest, <extracells:storage.component:3>, draconicChest, resonantFrame, resonantFrame, blackHoleUnit], 
 	[ultCatalyst, resonantFrame, <ore:blockAethium>, <draconicevolution:chaotic_core>, benitoite, <draconicevolution:chaotic_core>, <ore:blockAethium>, resonantFrame, ultCatalyst], 
 	[ultCatalyst, draconicChest, creativeEssence, <rftools:powercell_creative>, <ore:ingotInfinity>, <ic2:te:86>, creativeEssence, draconicChest, ultCatalyst], 
-	[<bigreactors:minerals>, <extracells:storage.component:3>, benitoite, <environmentaltech:solar_cont_6>, twilightForestMasterTrophy, <environmentaltech:solar_cont_6>, benitoite, <extracells:storage.component:3>, <bigreactors:minerals>], 
+	[<bigreactors:mineralanglesite>, <extracells:storage.component:3>, benitoite, <environmentaltech:solar_cont_6>, twilightForestMasterTrophy, <environmentaltech:solar_cont_6>, benitoite, <extracells:storage.component:3>, <bigreactors:mineralanglesite>], 
 	[ultCatalyst, draconicChest, creativeEssence, creativeTank, <ore:ingotInfinity>, creativeGasTank, creativeEssence, draconicChest, ultCatalyst], 
 	[ultCatalyst, resonantFrame, <ore:blockAethium>, <draconicevolution:chaotic_core>, benitoite, <draconicevolution:chaotic_core>, <ore:blockAethium>, resonantFrame, ultCatalyst], 
 	[blackHoleUnit, resonantFrame, resonantFrame, draconicChest, <extracells:storage.component:3>, draconicChest, resonantFrame, resonantFrame, blackHoleUnit], 
-	[<ore:blockCrystalMatrix>, blackHoleUnit, ultCatalyst, ultCatalyst, <bigreactors:minerals>, ultCatalyst, ultCatalyst, blackHoleUnit, <ore:blockCrystalMatrix>]]);
+	[<ore:blockCrystalMatrix>, blackHoleUnit, ultCatalyst, ultCatalyst, <bigreactors:mineralanglesite>, ultCatalyst, ultCatalyst, blackHoleUnit, <ore:blockCrystalMatrix>]]);
 	
 	recipes.addShapeless("Creative Storage Upgrade Duplication", 
 	<storagedrawers:upgrade_creative:1> * 2, 
@@ -299,12 +299,12 @@ recipes.addShapeless("Creative Gas Tank Frame",
 	[[<psi:cad_assembly:4>, <psi:cad_assembly:4>, <ore:ingotIvoryPsi>, null, null, null, null, null, null], 
 	[<psi:cad_assembly:4>, <ore:blockInfinity>, <psi:cad_assembly:4>, <ore:ingotIvoryPsi>, null, null, null, null, null], 
 	[<ore:ingotIvoryPsi>, <psi:cad_assembly:4>, <psi:cad_colorizer_:16>, <psi:cad_assembly:4>, null, null, null, null, null], 
-	[null, <ore:ingotIvoryPsi>, <psi:cad_assembly:4>, <bigreactors:minerals:1>, <bigreactors:minerals:1>, null, null, null, null], 
-	[null, null, null, <bigreactors:minerals:1>, <psi:cad_assembly:3>, <psi:cad_assembly:3>, null, null, null], 
+	[null, <ore:ingotIvoryPsi>, <psi:cad_assembly:4>, <bigreactors:mineralbenitoite>, <bigreactors:mineralbenitoite>, null, null, null, null], 
+	[null, null, null, <bigreactors:mineralbenitoite>, <psi:cad_assembly:3>, <psi:cad_assembly:3>, null, null, null], 
 	[null, null, null, null, <psi:cad_assembly:3>, <psi:cad_assembly:3>, <psi:cad_assembly:3>, null, null], 
 	[null, null, null, null, null, <psi:cad_assembly:3>, <psi:cad_assembly:3>, <psi:cad_assembly:3>, null], 
-	[null, null, null, null, null, null, <psi:cad_assembly:3>, <psi:cad_assembly:3>, <bigreactors:minerals:1>], 
-	[null, null, null, null, null, null, null, <bigreactors:minerals:1>, <bigreactors:minerals:1>]]); 
+	[null, null, null, null, null, null, <psi:cad_assembly:3>, <psi:cad_assembly:3>, <bigreactors:mineralbenitoite>], 
+	[null, null, null, null, null, null, null, <bigreactors:mineralbenitoite>, <bigreactors:mineralbenitoite>]]); 
 
 # DE Creative Block Exchanger
 	mods.extendedcrafting.TableCrafting.addShaped(4, <draconicevolution:creative_exchanger>,

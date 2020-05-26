@@ -261,9 +261,6 @@ for item in pressurePlates {
 	<ore:blockCertusQuartz>.add(<appliedenergistics2:quartz_pillar>);
 	<ore:blockCertusQuartz>.add(<appliedenergistics2:chiseled_quartz_block>);
 	
-# Plutonium
-	//<ore:ingotPlutonium>.remove(<bigreactors:ingotmetals:3>);
-
 # Iridium
 	<ore:ingotIridium>.add(<ic2:misc_resource:1>);
 	<ore:nuggetIridium>.add(<ic2:misc_resource:2>);
@@ -673,7 +670,6 @@ for item in pressurePlates {
 	recipes.addShapeless("bedoredict1", <minecraft:bed>, [<ore:bed>]);
 	recipes.addShapeless("wooddoororedict1", <minecraft:wooden_door>, [Door]);
 
-	
-	print("--- OreDict.zs initialized ---");
-	
-	
+# Rats
+	<ore:hatArcheologist>.addItems([<quark:archaeologist_hat>, <rats:archeologist_hat>]);
+	<ore:hatPirate>.addItems([<quark:pirate_hat>, <rats:pirat_hat>]);

@@ -57,3 +57,15 @@ recipes.addShapeless(<deepmoblearning:polymer_clay> * 16, [<liquid:concrete> * 1
 # Remove level-to-level conversions
 recipes.removeByRecipeName("deepmoblearning:living_matter_exchange/metadata2_extraterrestrial_living_matter");
 recipes.removeByRecipeName("deepmoblearning:living_matter_exchange/metadata1_hellish_living_matter");
+
+# Add mass crafting recipes for iron
+val matterOver = <deepmoblearning:living_matter_overworldian>;
+recipes.addShapeless("Over matter to Iron Blocks", <minecraft:iron_block> * 2, [
+  matterOver, matterOver, matterOver, matterOver, <thaumcraft:flesh_block>, matterOver, matterOver, matterOver, matterOver]);
+
+# Add mass crafting recipes for gold
+val matterHell = <deepmoblearning:living_matter_hellish>;
+recipes.addShaped("Hellish matter to Gold Blocks", <minecraft:gold_block> * 4, [
+  [<ore:glowstone>, matterHell, <ore:glowstone>],
+  [matterHell, <ore:blockIron>, matterHell],
+  [matterHell, matterHell, matterHell]]);

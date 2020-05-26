@@ -9,7 +9,7 @@ recipes.remove(<mekanism:machineblock:2>);
 
 
 # Unifying Graphite ingots, seems the crusher was overlooked
-mods.mekanism.crusher.removeRecipe(<bigreactors:dustmetals:2>, <bigreactors:ingotmetals:2>);
+mods.mekanism.crusher.removeRecipe(<bigreactors:dustgraphite>, <bigreactors:ingotgraphite>);
 
 for ingot in <ore:ingotGraphite>.items {
 	mods.mekanism.crusher.addRecipe(ingot, <nuclearcraft:dust:8>);
@@ -282,10 +282,10 @@ for input, output in itemsToUnify {
 
 
 # Mekanism Induction difficult
-remakeEx(<mekanism:basicblock2:4>.withTag({tier: 3}) , [[<mekanism:tierinstaller:3> , <mekanism:basicblock2:4>.withTag({tier: 2}) , <mekanism:tierinstaller:3>] ,[<mekanism:basicblock2:4>.withTag({tier: 2}) , <mekanism:energycube>.withTag({tier: 3}) , <mekanism:basicblock2:4>.withTag({tier: 2})] , [<mekanism:tierinstaller:3> , <mekanism:basicblock2:4>.withTag({tier: 2}) , <mekanism:tierinstaller:3>]]);
-remakeEx(<mekanism:basicblock2:4>.withTag({tier: 2}) , [[<ore:circuitElite>         , <mekanism:basicblock2:4>.withTag({tier: 1}) , <ore:circuitElite>]         ,[<mekanism:basicblock2:4>.withTag({tier: 1}) , <mekanism:energycube>.withTag({tier: 2}) , <mekanism:basicblock2:4>.withTag({tier: 1})] , [<ore:circuitElite>         , <mekanism:basicblock2:4>.withTag({tier: 1}) , <ore:circuitElite>]]);
-remakeEx(<mekanism:basicblock2:4>.withTag({tier: 1}) , [[<ore:circuitAdvanced>      , <mekanism:basicblock2:4>.withTag({tier: 0}) , <ore:circuitAdvanced>]      ,[<mekanism:basicblock2:4>.withTag({tier: 0}) , <mekanism:energycube>.withTag({tier: 1}) , <mekanism:basicblock2:4>.withTag({tier: 0})] , [<ore:circuitAdvanced>      , <mekanism:basicblock2:4>.withTag({tier: 0}) , <ore:circuitAdvanced>]]);
-remakeEx(<mekanism:basicblock2:4>.withTag({tier: 0}) , [[<ore:circuitBasic>         , <nuclearcraft:lithium_ion_cell>             , <ore:circuitBasic>]         ,[<nuclearcraft:lithium_ion_cell>             , <mekanism:energycube>.withTag({tier: 0}) , <nuclearcraft:lithium_ion_cell>]             , [<ore:circuitBasic>         , <nuclearcraft:lithium_ion_cell>             , <ore:circuitBasic>]]);
+remake("Mek Induction Provider 3", <mekanism:basicblock2:4>.withTag({tier: 3}) , [[<mekanism:tierinstaller:3> , <mekanism:basicblock2:4>.withTag({tier: 2}) , <mekanism:tierinstaller:3>] ,[<mekanism:basicblock2:4>.withTag({tier: 2}) , <mekanism:energycube>.withTag({tier: 3}) , <mekanism:basicblock2:4>.withTag({tier: 2})] , [<mekanism:tierinstaller:3> , <mekanism:basicblock2:4>.withTag({tier: 2}) , <mekanism:tierinstaller:3>]]);
+remake("Mek Induction Provider 2", <mekanism:basicblock2:4>.withTag({tier: 2}) , [[<ore:circuitElite>         , <mekanism:basicblock2:4>.withTag({tier: 1}) , <ore:circuitElite>]         ,[<mekanism:basicblock2:4>.withTag({tier: 1}) , <mekanism:energycube>.withTag({tier: 2}) , <mekanism:basicblock2:4>.withTag({tier: 1})] , [<ore:circuitElite>         , <mekanism:basicblock2:4>.withTag({tier: 1}) , <ore:circuitElite>]]);
+remake("Mek Induction Provider 1", <mekanism:basicblock2:4>.withTag({tier: 1}) , [[<ore:circuitAdvanced>      , <mekanism:basicblock2:4>.withTag({tier: 0}) , <ore:circuitAdvanced>]      ,[<mekanism:basicblock2:4>.withTag({tier: 0}) , <mekanism:energycube>.withTag({tier: 1}) , <mekanism:basicblock2:4>.withTag({tier: 0})] , [<ore:circuitAdvanced>      , <mekanism:basicblock2:4>.withTag({tier: 0}) , <ore:circuitAdvanced>]]);
+remake("Mek Induction Provider 0", <mekanism:basicblock2:4>.withTag({tier: 0}) , [[<ore:circuitBasic>         , <nuclearcraft:lithium_ion_cell>             , <ore:circuitBasic>]         ,[<nuclearcraft:lithium_ion_cell>             , <mekanism:energycube>.withTag({tier: 0}) , <nuclearcraft:lithium_ion_cell>]             , [<ore:circuitBasic>         , <nuclearcraft:lithium_ion_cell>             , <ore:circuitBasic>]]);
 
 # Tablet
 remakeEx(<mekanism:energytablet>, [[<ore:alloyAdvanced>, <ore:plateDenseCopper>, <ore:alloyAdvanced>],[<ore:dustLithium>, <ore:plateDenseGold>, <ore:dustLithium>], [<ore:alloyAdvanced>, <ore:plateDenseCopper>, <ore:alloyAdvanced>]]);
@@ -296,22 +296,22 @@ val t1_cap = <enderio:item_basic_capacitor>;
 val t2_cap = <enderio:item_basic_capacitor:1>;
 val t3_cap = <enderio:item_basic_capacitor:2>;
 val t4_cap = <draconicevolution:draconium_capacitor:1>;
-remakeEx(<mekanism:basicblock2:3>.withTag({tier: 0}), [
+remake("Induction Cell 1", <mekanism:basicblock2:3>.withTag({tier: 0}), [
 	[t1_cap, <ore:battery>, t1_cap], 
 	[<ore:battery>, <mekanism:energycube>.withTag({tier: 0}), <ore:battery>], 
 	[t1_cap, <ore:battery>, t1_cap]
 ]);
-remakeEx(<mekanism:basicblock2:3>.withTag({tier: 1}), [
+remake("Induction Cell 2", <mekanism:basicblock2:3>.withTag({tier: 1}), [
 	[t2_cap, <mekanism:basicblock2:3>.withTag({tier: 0}), t2_cap], 
 	[<mekanism:basicblock2:3>.withTag({tier: 0}), <mekanism:energycube>.withTag({tier: 1}), <mekanism:basicblock2:3>.withTag({tier: 0})], 
 	[t2_cap, <mekanism:basicblock2:3>.withTag({tier: 0}), t2_cap]
 ]);
-remakeEx(<mekanism:basicblock2:3>.withTag({tier: 2}), [
+remake("Induction Cell 3", <mekanism:basicblock2:3>.withTag({tier: 2}), [
 	[t3_cap, <mekanism:basicblock2:3>.withTag({tier: 1}), t3_cap], 
 	[<mekanism:basicblock2:3>.withTag({tier: 1}), <mekanism:energycube>.withTag({tier: 2}), <mekanism:basicblock2:3>.withTag({tier: 1})], 
 	[t3_cap, <mekanism:basicblock2:3>.withTag({tier: 1}), t3_cap]
 ]);
-remakeEx(<mekanism:basicblock2:3>.withTag({tier: 3}), [
+remake("Induction Cell 4", <mekanism:basicblock2:3>.withTag({tier: 3}), [
 	[t4_cap, <mekanism:basicblock2:3>.withTag({tier: 2}), t4_cap], 
 	[<mekanism:basicblock2:3>.withTag({tier: 2}), <mekanism:energycube>.withTag({tier: 3}), <mekanism:basicblock2:3>.withTag({tier: 2})], 
 	[t4_cap, <mekanism:basicblock2:3>.withTag({tier: 2}), t4_cap]
@@ -355,3 +355,34 @@ mods.mekanism.enrichment.removeRecipe(<appliedenergistics2:material:8>, <applied
 mods.mekanism.enrichment.removeRecipe(<appliedenergistics2:material:7>, <appliedenergistics2:material:12>);
 mods.mekanism.enrichment.removeRecipe(<appliedenergistics2:material:2>, <appliedenergistics2:material:10>);
 mods.mekanism.enrichment.removeRecipe(<appliedenergistics2:material>, <appliedenergistics2:material:10>);
+
+# Remove unused obsidian dust recipes
+mods.mekanism.infuser.removeRecipe(<mekanism:otherdust:5>, <ic2:dust:12>);
+mods.mekanism.infuser.removeRecipe(<mekanism:otherdust:5>, <nuclearcraft:gem_dust:3>);
+mods.mekanism.infuser.removeRecipe(<mekanism:otherdust:5>, <enderio:item_material:29>);
+mods.mekanism.infuser.removeRecipe(<mekanism:otherdust:5>, <mekanism:otherdust:6>);
+
+
+# Harder Refined obsidian and glowstone recipes
+# Remove melting in Smeltery
+mods.tconstruct.Melting.removeRecipe(<liquid:refinedobsidian>);
+mods.tconstruct.Melting.removeRecipe(<liquid:refinedglowstone>);
+
+# Remove melting in other machines
+mods.thermalexpansion.Crucible.removeRecipe(<mekanism:ingot>);
+mods.thermalexpansion.Crucible.removeRecipe(<mekanism:nugget>);
+mods.thermalexpansion.Crucible.removeRecipe(<mekanism:basicblock:4>);
+mods.thermalexpansion.Crucible.removeRecipe(<mekanism:nugget:3>);
+mods.thermalexpansion.Crucible.removeRecipe(<mekanism:ingot:3>);
+mods.thermalexpansion.Crucible.removeRecipe(<mekanism:otherdust:5>);
+mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedobsidian>);
+mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedglowstone>);
+
+# Also recipe added in ChemicalReactor.xml
+# Add Tube recipes
+mods.mechanics.addTubeRecipe([<mekanism:basicblock:2>] as IItemStack[], <liquid:refinedobsidian> * 1000);
+mods.mechanics.addTubeRecipe([<mekanism:basicblock:4>] as IItemStack[], <liquid:refinedglowstone> * 1000);
+
+# Add advanced liquid recipes
+scripts.Processing.solution([<thermalfoundation:material:770>], [<liquid:diamond> * 66], null, [<liquid:refinedobsidian> * 144], "No exceptions");
+scripts.Processing.solution([<mekanism:dust:2>], [<liquid:glowstone> * 250], null, [<liquid:refinedglowstone> * 144], "No exceptions");

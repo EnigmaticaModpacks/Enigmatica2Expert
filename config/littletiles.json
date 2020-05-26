@@ -17,11 +17,11 @@
   "survival": {
     "strictMining": true,
     "limitEditBlocksSurvival": true,
-    "maxEditBlocks": 10,
+    "maxEditBlocks": 27,
     "highestHarvestTierSurvival": 10,
     "editUnbreakable": false,
     "limitPlaceBlocksSurvival": true,
-    "maxPlaceBlocks": 10,
+    "maxPlaceBlocks": 27,
     "minimumTransparency": 255,
     "dyeVolume": 2.0
   }

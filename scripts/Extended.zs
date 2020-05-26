@@ -75,10 +75,10 @@ recipes.remove(<minecraft:blaze_powder> * 2);
 recipes.addShapeless("Blaze Powder", <minecraft:blaze_powder>, [<minecraft:blaze_rod>]);
 
 # Remake plates
-recipes.remove(<minecraft:light_weighted_pressure_plate>);
-recipes.remove(<minecraft:heavy_weighted_pressure_plate>);
-mods.mechanics.addCrushingBlockRecipe(<minecraft:gold_ingot> * 2, [<minecraft:light_weighted_pressure_plate>] as IItemStack[], [1.0] as double[]);
-mods.mechanics.addCrushingBlockRecipe(<minecraft:iron_ingot> * 2, [<minecraft:heavy_weighted_pressure_plate>] as IItemStack[], [1.0] as double[]);
+// recipes.remove(<minecraft:light_weighted_pressure_plate>);
+// recipes.remove(<minecraft:heavy_weighted_pressure_plate>);
+// mods.mechanics.addCrushingBlockRecipe(<minecraft:gold_ingot> * 2, [<minecraft:light_weighted_pressure_plate>] as IItemStack[], [1.0] as double[]);
+// mods.mechanics.addCrushingBlockRecipe(<minecraft:iron_ingot> * 2, [<minecraft:heavy_weighted_pressure_plate>] as IItemStack[], [1.0] as double[]);
 
 
 # ######################################################################
@@ -115,12 +115,10 @@ ExplosionCrafting.explodeItemRecipe(IItemStack output, IIngredient inputItem, @O
 ---------------------
 ITEMS OF INTEREST
 ---------------------
-<biomesoplenty:jar_filled:1>
 <twilightforest:firefly>
 <twilightforest:raw_venison>
 <twilightforest:cooked_venison>
 <randomthings:spectreilluminator>
-<extrautils2:decorativesolid:7> # Quartzburnt
 
 <opencomputers:robot>
 <opencomputers:print>
@@ -129,13 +127,14 @@ ITEMS OF INTEREST
 <randomthings:ingredient:2> -- Ectoplasm
 <tombmanygraves:death_list>
 <randomthings:rezstone> -- Bloodstone
-<forge:bucketfilled>.withTag({FluidName: "hot_spring_water", Amount: 1000})
-<forge:bucketfilled>.withTag({FluidName: "liquid_sunshine", Amount: 1000})
-<forge:bucketfilled>.withTag({FluidName: "blockfluiddirt", Amount: 1000})
+<liquid:hot_spring_water>
+<liquid:liquid_sunshine>
+<liquid:blockfluiddirt> -- Liquid Dirt from Animus
 <liquid:enrichedlava>
 <liquid:liquidchorus>
 <liquid:menrilresin>
 <liquid:crystal> -- Crystallized obsidian
+<liquid:amber> -- Crystallized amber
 <advancedrocketry:blocklens> - Lence (required precision assembler)
 
 ---------------------

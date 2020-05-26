@@ -1,3 +1,5 @@
+import crafttweaker.item.IItemStack;
+
 #modloaded extrautils2
 print("--- loading ExtraUtilities2.zs ---");
 	
@@ -133,7 +135,7 @@ print("--- loading ExtraUtilities2.zs ---");
 	[polishedStone, <forestry:thermionic_tubes:3>, polishedStone]]);
 
 # Stone Drum
-	recipes.remove(<extrautils2:drum>);
+	recipes.removeByRecipeName("extrautils2:drum_16");
 	recipes.addShapedMirrored("Stone Drum", 
 	<extrautils2:drum>, 
 	[[<extrautils2:compressedcobblestone:1>, <minecraft:stone_slab:*>, <extrautils2:compressedcobblestone:1>],
@@ -141,7 +143,7 @@ print("--- loading ExtraUtilities2.zs ---");
 	[<extrautils2:compressedcobblestone:1>, <minecraft:stone_slab:*>, <extrautils2:compressedcobblestone:1>]]);
 
 # Iron Drum
-	recipes.remove(<extrautils2:drum:1>);
+	recipes.removeByRecipeName("extrautils2:drum_256");
 	recipes.addShapedMirrored("Iron Drum",
 	<extrautils2:drum:1>, 
 	[[<ore:blockSheetmetalIron>, <ore:plateDenseIron>, <ore:blockSheetmetalIron>],
@@ -161,7 +163,7 @@ print("--- loading ExtraUtilities2.zs ---");
 	[<minecraft:redstone_ore>, <thermalfoundation:material:1027>]);
 
 # Reinforced Drum
-recipes.remove(<extrautils2:drum:2>);
+recipes.removeByRecipeName("extrautils2:drum_4096");
 recipes.addShapedMirrored("Reinforced Drum",
 	<extrautils2:drum:2>, [
 		[<thermalfoundation:upgrade:33>, <botania:storage:3>, <thermalfoundation:upgrade:33>],
@@ -171,7 +173,7 @@ recipes.addShapedMirrored("Reinforced Drum",
 
 # Gargantuan Drum
 var demonPlate = <tconstruct:large_plate>.withTag({Material: "xu_demonic_metal"});
-recipes.remove(<extrautils2:drum:3>);
+recipes.removeByRecipeName("extrautils2:drum_65536");
 recipes.addShapedMirrored("Gargantuan Drum",
 	<extrautils2:drum:3>, [
 		[demonPlate, <liquid:high_pressure_steam>*1000, demonPlate],
@@ -181,3 +183,26 @@ recipes.addShapedMirrored("Gargantuan Drum",
 
 # Sky stone dust
 mods.extrautils2.Crusher.add(<appliedenergistics2:material:45>, <appliedenergistics2:sky_stone_block>);
+
+# Sun crystal
+recipes.remove(<extrautils2:suncrystal:*>);
+var sunIngr = <volumetricflask:volumetric_flask_2000>.withTag({Fluid: {FluidName: "glowstone", Amount: 2000}});
+recipes.addShaped(<extrautils2:suncrystal:250>, [
+	[null, sunIngr, null],
+	[sunIngr, <ic2:energy_crystal>.onlyDamageAtLeast(1), sunIngr], 
+	[null, sunIngr, null]]);
+recipes.addShaped(<extrautils2:suncrystal>, [
+	[null, sunIngr, null],
+	[sunIngr, <ic2:energy_crystal>, sunIngr], 
+	[null, sunIngr, null]]);
+
+	
+// # Harder melting metals
+// mods.tconstruct.Melting.removeRecipe(<liquid:xu_evil_metal>);
+// mods.tconstruct.Melting.removeRecipe(<liquid:xu_enchanted_metal>);
+// mods.tconstruct.Melting.removeRecipe(<liquid:xu_demonic_metal>);
+// mods.mechanics.addTubeRecipe([<extrautils2:simpledecorative:2>] as IItemStack[], <liquid:xu_evil_metal> * 1000);
+// mods.mechanics.addTubeRecipe([<extrautils2:simpledecorative>] as IItemStack[], <liquid:xu_enchanted_metal> * 1000);
+// mods.mechanics.addTubeRecipe([<extrautils2:simpledecorative:1>] as IItemStack[], <liquid:xu_demonic_metal> * 1000);
+
+vanilla.seeds.removeSeed(<extrautils2:enderlilly>);

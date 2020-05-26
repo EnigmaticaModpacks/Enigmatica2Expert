@@ -4948,15 +4948,15 @@
           "index:3": 0,
           "choices:9": {
             "0:10": {
-              "id:8": "bigreactors:minerals",
+              "id:8": "bigreactors:mineralanglesite",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             },
             "1:10": {
-              "id:8": "bigreactors:minerals",
+              "id:8": "bigreactors:mineralbenitoite",
               "Count:3": 1,
-              "Damage:2": 1,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -64162,7 +64162,7 @@
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "industrialforegoing:spores_recreator",
+            "id:8": "industrialforegoing:water_resources_collector",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -64888,6 +64888,618 @@
                 "hideLootInfo:1": 1
               },
               "Damage:2": 50,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "824:10": {
+      "questID:3": 824,
+      "preRequisites:11": [
+        611
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "bloodmagic:blood_rune",
+            "Count:3": 1,
+            "Damage:2": 1,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Speed Rune",
+          "desc:8": "Crafting things and filling your Blood Orb will be 20% faster (40 \u003e 48 \u003e 56 \u003e 64 \u003e ETC) for each speed rune making up the base of the Blood Altar."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "bloodmagic:blood_rune",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "825:10": {
+      "questID:3": 825,
+      "preRequisites:11": [
+        613
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "bloodmagic:blood_rune",
+            "Count:3": 1,
+            "Damage:2": 4,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Rune of Self Sacrifice",
+          "desc:8": "Now stabbing yourself over and over again and waiting to regen can be a real drag, now with the rune of Self Sacrifice, you can increase the amount of LP you get from stabbing yourself by 10%, additively."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "bloodmagic:blood_rune",
+              "Count:3": 1,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "826:10": {
+      "questID:3": 826,
+      "preRequisites:11": [
+        615
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "bloodmagic:blood_rune",
+            "Count:3": 1,
+            "Damage:2": 5,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Rune of Displacement",
+          "desc:8": "With no runes, the Altar will fill up blood orbs and slates at a rate of 20LP per second. This can be increased with Runes of Displacement, which increases the transfer rate of the Altar by 1.2x per Rune. This makes filling orbs a little faster."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "bloodmagic:blood_rune",
+              "Count:3": 1,
+              "Damage:2": 5,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "827:10": {
+      "questID:3": 827,
+      "preRequisites:11": [
+        615
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "bloodmagic:blood_rune",
+            "Count:3": 1,
+            "Damage:2": 6,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Rune of Capacity",
+          "desc:8": "This will increase the amount of LP the main tank of your Blood Altar can hold by 2,000 LP additively.\n\n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "bloodmagic:blood_rune",
+              "Count:3": 1,
+              "Damage:2": 6,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "828:10": {
+      "questID:3": 828,
+      "preRequisites:11": [
+        617
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "bloodmagic:blood_rune",
+            "Count:3": 1,
+            "Damage:2": 7,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Rune of Augmented Capacity",
+          "desc:8": "The Rune of Augmented Capacity functions similar to the Rune of Capacity in the sense that it increases the capacity of both the main tank and the I/O tank of the Blood Altar.\nHowever, multiple runes on the same altar will begin to §lresonate §rwith each other, increasing the capacity exponentially the more there are."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "bloodmagic:blood_rune",
+              "Count:3": 1,
+              "Damage:2": 7,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "829:10": {
+      "questID:3": 829,
+      "preRequisites:11": [
+        617
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "bloodmagic:blood_rune",
+            "Count:3": 1,
+            "Damage:2": 8,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Rune of the Orb",
+          "desc:8": "Increases by 2% additively the maximum capacity of your Blood Orb.\nIt doesn’t seem much in the low Tiers, but with the Archmage Blood Orb (Tier 5), each Rune of the Orb placed on your Altar will give you a bonus of 200,000 LP."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "bloodmagic:blood_rune",
+              "Count:3": 1,
+              "Damage:2": 8,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "830:10": {
+      "questID:3": 830,
+      "preRequisites:11": [
+        617
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "bloodmagic:blood_rune",
+            "Count:3": 1,
+            "Damage:2": 9,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Acceleration Rune",
+          "desc:8": "What this rune does is it increases the number of processing ticks that can occur in a given period of time, specifically when it comes to the Displacement Rune and Charging Rune."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "bloodmagic:blood_rune",
+              "Count:3": 1,
+              "Damage:2": 9,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "831:10": {
+      "questID:3": 831,
+      "preRequisites:11": [
+        617
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "bloodmagic:blood_rune",
+            "Count:3": 1,
+            "Damage:2": 10,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Charging Rune",
+          "desc:8": "The Charging rune begins storing \"Charge,\" an internal value of the Blood Altar that can be seen using the Seer’s Sigil. If the Blood Altar has enough Charge when it gets something to craft, it will use the required Charge up immediately and craft the item instantaneously."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "bloodmagic:blood_rune",
+              "Count:3": 1,
+              "Damage:2": 10,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "832:10": {
+      "questID:3": 832,
+      "preRequisites:11": [
+        466
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "environmentaltech:nano_cont_personal_1",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Nano Bot Beacon",
+          "desc:8": "When fully assembled and powered, the Beacon provides various status effects as long as it has enough RF and is chunk loaded. Both the RF cost and the applied effects depend on the Modifiers put in the structure."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "environmentaltech:nano_cont_personal_1",
+              "Count:3": 1,
+              "Damage:2": 32767,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -67310,6 +67922,62 @@
           "x:3": 80,
           "y:3": 120,
           "id:3": 808,
+          "sizeY:3": 24
+        },
+        "37:10": {
+          "sizeX:3": 24,
+          "x:3": 112,
+          "y:3": 160,
+          "id:3": 824,
+          "sizeY:3": 24
+        },
+        "38:10": {
+          "sizeX:3": 24,
+          "x:3": 152,
+          "y:3": 160,
+          "id:3": 825,
+          "sizeY:3": 24
+        },
+        "39:10": {
+          "sizeX:3": 24,
+          "x:3": 192,
+          "y:3": 160,
+          "id:3": 826,
+          "sizeY:3": 24
+        },
+        "40:10": {
+          "sizeX:3": 24,
+          "x:3": 208,
+          "y:3": 184,
+          "id:3": 827,
+          "sizeY:3": 24
+        },
+        "41:10": {
+          "sizeX:3": 24,
+          "x:3": 236,
+          "y:3": 160,
+          "id:3": 828,
+          "sizeY:3": 24
+        },
+        "42:10": {
+          "sizeX:3": 24,
+          "x:3": 244,
+          "y:3": 184,
+          "id:3": 829,
+          "sizeY:3": 24
+        },
+        "43:10": {
+          "sizeX:3": 24,
+          "x:3": 268,
+          "y:3": 184,
+          "id:3": 830,
+          "sizeY:3": 24
+        },
+        "44:10": {
+          "sizeX:3": 24,
+          "x:3": 280,
+          "y:3": 160,
+          "id:3": 831,
           "sizeY:3": 24
         }
       },
@@ -70281,6 +70949,13 @@
           "x:3": 66,
           "y:3": 36,
           "id:3": 498,
+          "sizeY:3": 24
+        },
+        "33:10": {
+          "sizeX:3": 24,
+          "x:3": 150,
+          "y:3": 0,
+          "id:3": 832,
           "sizeY:3": 24
         }
       },

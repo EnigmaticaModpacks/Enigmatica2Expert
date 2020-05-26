@@ -209,4 +209,14 @@
 			<itemStack>advancedrocketry:beaconfinder</itemStack>
 		</output>
 	</Recipe>
+	<Recipe timeRequired="400" power ="100000">
+		<input>
+			<itemStack>thaumcraft:mechanism_complex 4 0</itemStack>
+			<itemStack>enderio:item_material 1 19</itemStack>
+			<itemStack>rftoolsdim:dimlet_energy_module 6 2</itemStack>
+		</input>
+		<output>
+			<itemStack>rats:arcane_technology</itemStack>
+		</output>
+	</Recipe>
 </Recipes>

@@ -5,7 +5,7 @@ fov:0.5
 gamma:1.0
 saturation:0.0
 renderDistance:15
-guiScale:4
+guiScale:3
 particles:0
 bobView:true
 anaglyph3d:false
@@ -27,7 +27,7 @@ chatOpacity:1.0
 snooperEnabled:true
 fullscreen:false
 enableVsync:true
-useVbo:false
+useVbo:true
 hideServerAddress:false
 advancedItemTooltips:true
 pauseOnLostFocus:true
@@ -118,8 +118,8 @@ key_quark.keybind.chestDropoff:0
 key_quark.keybind.chestMerge:0
 key_quark.keybind.chestRestock:0
 key_quark.keybind.chestExtract:0
-key_quark.keybind.lockBuilding:33:SHIFT
 key_quark.keybind.toggleAutojump:0
+key_quark.keybind.lockBuilding:33:SHIFT
 key_key.toggle_shaders:0
 key_bloodmagic.keybind.open_holding:53:CONTROL
 key_bloodmagic.keybind.cycle_holding_pos:0
@@ -166,6 +166,7 @@ key_key.toastcontrol.clear:0
 key_key.open_wct.desc:58
 key_key.cycle_magnet_mode.desc:0
 key_key.delivery.store:48
+key_key.narrator:0
 key_key.cofh.multimode:47
 key_key.toggle_focus.desc:15
 key_key.jei.toggleOverlay:24:CONTROL
@@ -286,7 +287,7 @@ key_key.rotateright:205
 key_key.rotateleft:203
 key_key.little.flip:34
 key_key.little.mark:50
-key_key.little.config.item:0
+key_key.little.config.item:-97
 key_key.little.undo:44:CONTROL
 key_key.little.redo:21:CONTROL
 key_key.music_player_gui:82
@@ -304,10 +305,6 @@ key_key.nutrition:49
 key_pi.key.open_pi:23
 key_pi.key.et_gui:23
 key_pi.key.et_world:23:CONTROL
-key_key.quit:1
-key_key.hideHUD:59
-key_key.debugScreen:61
-key_key.narrator:0
 key_key.toolbelt.open:45
 key_key.toolbelt.cycle.left:0
 key_key.toolbelt.cycle.right:0
@@ -356,8 +353,6 @@ key_enderio.keybind.fovplus:0
 key_enderio.keybind.fovminus:0
 key_enderio.keybind.fovplusfast:0
 key_enderio.keybind.fovminusfast:0
-key_key.little.mark:50
-key_key.little.config:-96:CONTROL
 soundCategory_master:0.24172185
 soundCategory_music:0.0
 soundCategory_record:0.09859155
