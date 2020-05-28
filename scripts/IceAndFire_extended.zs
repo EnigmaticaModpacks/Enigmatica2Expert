@@ -20,6 +20,11 @@ import mods.jaopca.OreEntry;
 	<iceandfire:dragonsteel_fire_ingot>, 
 	<iceandfire:dragonsteel_ice_ingot>]);
 
+# Ore 
+<ore:chitinMyrmex>.add([
+	<iceandfire:myrmex_desert_chitin>,
+	<iceandfire:myrmex_jungle_chitin>]);
+
 # Ore Dragon scales blocks
 <ore:dragonscaleBlock>.add([
 	<iceandfire:dragonscale_blue>,

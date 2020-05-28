@@ -39,6 +39,8 @@
 			<itemStack>minecraft:dye 5 15</itemStack>
 		</output>
 	</Recipe>
+
+	<!-- Custon recipes -->
 	<Recipe timeRequired="80" power ="50000">
 		<input>
 			<fluidStack>liquid_sunshine 1000</fluidStack>
@@ -63,6 +65,111 @@
 		</input>
 		<output>
 			<fluidStack>refinedglowstone 432</fluidStack>
+		</output>
+	</Recipe>
+
+	<!-- EnderIO Liquids -->
+	<Recipe timeRequired="20" power ="30000">
+		<input>
+			<fluidStack>water 2000</fluidStack>
+			<oreDict>listAllsugar 1</oreDict>
+			<oreDict>foodMeat 1</oreDict>
+		</input>
+		<output>
+			<fluidStack>nutrient_distillation 500</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="40" power ="30000">
+		<input>
+			<fluidStack>water 10000</fluidStack>
+			<itemStack>minecraft:rotten_flesh 10 0</itemStack>
+			<itemStack>minecraft:fermented_spider_eye 5 0</itemStack>
+			<oreDict>itemEnderCrystalPowder 1</oreDict>
+			<oreDict>itemPulsatingPowder 1</oreDict>
+		</input>
+		<output>
+			<fluidStack>ender_distillation 1000</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power ="30000">
+		<input>
+			<fluidStack>water 16000</fluidStack>
+			<oreDict>itemSkull 5</oreDict>
+			<oreDict>itemPulsatingPowder 3</oreDict>
+			<oreDict>itemEnderCrystalPowder 2</oreDict>
+			<oreDict>itemPrecientPowder 1</oreDict>
+		</input>
+		<output>
+			<fluidStack>vapor_of_levity 1000</fluidStack>
+		</output>
+	</Recipe>
+
+	<Recipe timeRequired="20" power ="30000">
+		<input>
+			<fluidStack>water 8000</fluidStack>
+			<oreDict>dustWheat 2</oreDict>
+			<oreDict>listAllsugar 1</oreDict>
+		</input>
+		<output>
+			<fluidStack>hootch 2000</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="60" power ="30000">
+		<input>
+			<fluidStack>water 8000</fluidStack>
+			<oreDict>listAllveggie 4</oreDict>
+			<oreDict>listAllsugar 1</oreDict>
+			<oreDict>dustRedstone 1</oreDict>
+			<oreDict>gunpowder 1</oreDict>
+		</input>
+		<output>
+			<fluidStack>rocket_fuel 2000</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="40" power ="30000">
+		<input>
+			<fluidStack>water 8000</fluidStack>
+			<itemStack>minecraft:melon 4 0</itemStack>
+			<oreDict>cropPotato 2</oreDict>
+			<oreDict>dustRedstone 1</oreDict>
+			<oreDict>dustBlaze 1</oreDict>
+		</input>
+		<output>
+			<fluidStack>fire_water 2000</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="60" power ="30000">
+		<input>
+			<fluidStack>water 8000</fluidStack>
+			<itemStack>rats:assorted_vegetables 4 0</itemStack>
+			<itemStack>minecraft:double_plant 1 0</itemStack>
+			<oreDict>dustPyrotheum 2</oreDict>
+			<oreDict>blockGlowstone 1</oreDict>
+		</input>
+		<output>
+			<fluidStack>liquid_sunshine 2000</fluidStack>
+		</output>
+	</Recipe>
+
+	<Recipe timeRequired="20" power ="30000">
+		<input>
+			<fluidStack>water 2000</fluidStack>
+			<oreDict>itemSalt 4</oreDict>
+			<oreDict>ice 1</oreDict>
+		</input>
+		<output>
+			<fluidStack>cloud_seed 2000</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="40" power ="30000">
+		<input>
+			<fluidStack>water 2000</fluidStack>
+			<oreDict>dustSilver 2</oreDict>
+			<oreDict>dustElectrum 1</oreDict>
+			<oreDict>ice 2</oreDict>
+		</input>
+		<output>
+			<fluidStack>cloud_seed_concentrated 1000</fluidStack>
 		</output>
 	</Recipe>
 </Recipes>

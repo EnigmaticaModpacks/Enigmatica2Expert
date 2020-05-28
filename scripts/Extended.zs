@@ -80,6 +80,13 @@ recipes.addShapeless("Blaze Powder", <minecraft:blaze_powder>, [<minecraft:blaze
 // mods.mechanics.addCrushingBlockRecipe(<minecraft:gold_ingot> * 2, [<minecraft:light_weighted_pressure_plate>] as IItemStack[], [1.0] as double[]);
 // mods.mechanics.addCrushingBlockRecipe(<minecraft:iron_ingot> * 2, [<minecraft:heavy_weighted_pressure_plate>] as IItemStack[], [1.0] as double[]);
 
+# Respawnable pets (infinite uses)
+recipes.remove(<respawnablepets:etheric_gem>);
+recipes.addShaped(<respawnablepets:etheric_gem>, [
+	[<rustic:chain_gold>, null, <rustic:chain_gold>],
+	[<minecraft:potion>.withTag({Potion: "extrautils2:xu2.second.chance"}), <rats:gem_of_ratlantis>, <minecraft:potion>.withTag({Potion: "extrautils2:xu2.second.chance"})],
+	[null, <ore:ingotFireDragonsteel>, null]]);
+
 
 # ######################################################################
 #
@@ -136,6 +143,8 @@ ITEMS OF INTEREST
 <liquid:crystal> -- Crystallized obsidian
 <liquid:amber> -- Crystallized amber
 <advancedrocketry:blocklens> - Lence (required precision assembler)
+<enderio:block_holy_fog> -- Nano-particles
+randomthings:strong_collapse -- Turnd upsidedown potion
 
 ---------------------
 CRAFTS OF INTEREST

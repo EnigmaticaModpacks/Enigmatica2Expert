@@ -14,6 +14,8 @@ static armorStaged as IData[string] =
   armor_hazmat:{
     prev: "armor_golden", 
     tier: 4,
+    material: "ore:itemRubber",
+    recycle:  "ore:itemRubber",
     list: [
       {id:"ic2:hazmat_helmet"},
       {id:"ic2:hazmat_chestplate"},
@@ -25,6 +27,8 @@ static armorStaged as IData[string] =
   armor_knightslime:{
     prev: "armor_golden", 
     tier: 4,
+    material: "ore:ingotKnightslime",
+    recycle:  "ore:ingotKnightslime",
     list: [
       {id:"tcomplement:knightslime_helmet"},
       {id:"tcomplement:knightslime_chestplate"},
@@ -36,6 +40,8 @@ static armorStaged as IData[string] =
   armor_faraday:{
     prev: "armor_iron", 
     tier: 3,
+    material: "ore:plateAluminium",
+    recycle:  "ore:plateAluminium",
     list: [
       {id:"immersiveengineering:faraday_suit_head"},
       {id:"immersiveengineering:faraday_suit_chest"},
@@ -47,6 +53,8 @@ static armorStaged as IData[string] =
   armor_hardenedleather:{
     prev: null, 
     tier: 1,
+    material: "harvestcraft:hardenedleatheritem",
+    recycle:  "harvestcraft:hardenedleatheritem",
     list: [
       {id:"harvestcraft:hardenedleatherhelmitem"},
       {id:"harvestcraft:hardenedleatherchestitem"},
@@ -58,6 +66,8 @@ static armorStaged as IData[string] =
   armor_iron:{
     prev: "armor_hardenedleather", 
     tier: 2,
+    material: "ore:plateIron",
+    recycle:  "ore:plateIron",
     list: [
       {id:"minecraft:iron_helmet"},
       {id:"minecraft:iron_chestplate"},
@@ -69,6 +79,8 @@ static armorStaged as IData[string] =
   armor_golden:{
     prev: "armor_iron", 
     tier: 3,
+    material: "ore:plateGold",
+    recycle:  "ore:plateGold",
     list: [
       {id:"minecraft:golden_helmet"},
       {id:"minecraft:golden_chestplate"},
@@ -80,6 +92,8 @@ static armorStaged as IData[string] =
   armor_diamond:{
     prev: "armor_knightslime", 
     tier: 5,
+    material: "ore:gemDiamond",
+    recycle:  "ore:gemDiamond",
     list: [
       {id:"minecraft:diamond_helmet"},
       {id:"minecraft:diamond_chestplate"},
@@ -91,6 +105,8 @@ static armorStaged as IData[string] =
   armor_manyullyn:{
     prev: "armor_diamond", 
     tier: 6,
+    material: "ore:ingotManyullyn",
+    recycle:  "ore:ingotManyullyn",
     list: [
       {id:"tcomplement:manyullyn_helmet"},
       {id:"tcomplement:manyullyn_chestplate"},
@@ -102,6 +118,8 @@ static armorStaged as IData[string] =
   armor_end_steel:{
     prev: "armor_dark_steel", 
     tier: 8,
+    material: "ore:ingotEndSteel",
+    recycle:  "ore:ingotEndSteel",
     list: [
       {id:"enderio:item_end_steel_helmet"},
       {id:"enderio:item_end_steel_chestplate"},
@@ -113,6 +131,8 @@ static armorStaged as IData[string] =
   armor_inferium:{
     prev: "armor_diamond", 
     tier: 6,
+    material: "ore:ingotInferium",
+    recycle:  "ore:ingotInferium",
     list: [
       {id:"mysticalagriculture:inferium_helmet"},
       {id:"mysticalagriculture:inferium_chestplate"},
@@ -124,6 +144,8 @@ static armorStaged as IData[string] =
   armor_prudentium:{
     prev: "armor_inferium", 
     tier: 7,
+    material: "ore:ingotPrudentium",
+    recycle:  "ore:ingotPrudentium",
     list: [
       {id:"mysticalagriculture:prudentium_helmet"},
       {id:"mysticalagriculture:prudentium_chestplate"},
@@ -135,6 +157,8 @@ static armorStaged as IData[string] =
   armor_intermedium:{
     prev: "armor_prudentium", 
     tier: 8,
+    material: "ore:ingotIntermedium",
+    recycle:  "ore:ingotIntermedium",
     list: [
       {id:"mysticalagriculture:intermedium_helmet"},
       {id:"mysticalagriculture:intermedium_chestplate"},
@@ -146,6 +170,8 @@ static armorStaged as IData[string] =
   armor_superium:{
     prev: "armor_intermedium", 
     tier: 9,
+    material: "ore:ingotSuperium",
+    recycle:  "ore:ingotSuperium",
     list: [
       {id:"mysticalagriculture:superium_helmet"},
       {id:"mysticalagriculture:superium_chestplate"},
@@ -157,6 +183,8 @@ static armorStaged as IData[string] =
   armor_supremium:{
     prev: "armor_superium", 
     tier: 10,
+    material: "ore:ingotSupremium",
+    recycle:  "ore:ingotSupremium",
     list: [
       {id:"mysticalagriculture:supremium_helmet", tag:{}},
       {id:"mysticalagriculture:supremium_chestplate", tag:{}},
@@ -168,6 +196,8 @@ static armorStaged as IData[string] =
   armor_manaweave:{
     prev: null, 
     tier: 1,
+    material: "ore:clothManaweave",
+    recycle:  "ore:clothManaweave",
     list: [
       {id:"botania:manaweavehelm"},
       {id:"botania:manaweavechest"},
@@ -179,6 +209,8 @@ static armorStaged as IData[string] =
   armor_manasteel:{
     prev: "armor_manaweave", 
     tier: 2,
+    material: "ore:ingotManasteel",
+    recycle:  "ore:ingotManasteel",
     list: [
       {id:"botania:manasteelhelm"},
       {id:"botania:manasteelchest"},
@@ -190,6 +222,8 @@ static armorStaged as IData[string] =
   armor_elementium:{
     prev: "armor_psimetal", 
     tier: 4,
+    material: "ore:ingotElvenElementium",
+    recycle:  "ore:ingotElvenElementium",
     list: [
       {id:"botania:elementiumhelm"},
       {id:"botania:elementiumchest"},
@@ -201,6 +235,8 @@ static armorStaged as IData[string] =
   armor_terrasteel:{
     prev: "armor_elementium", 
     tier: 5,
+    material: "ore:ingotTerrasteel",
+    recycle:  "ore:ingotTerrasteel",
     list: [
       {id:"botania:terrasteelhelm"},
       {id:"botania:terrasteelchest"},
@@ -212,6 +248,8 @@ static armorStaged as IData[string] =
   armor_living_armour:{
     prev: "armor_manasteel", 
     tier: 3,
+    material: "bloodmagic:component:8",
+    recycle:  "bloodmagic:component:8",
     list: [
       {id:"bloodmagic:living_armour_helmet"},
       {id:"bloodmagic:living_armour_chest", tag:{}},
@@ -223,6 +261,8 @@ static armorStaged as IData[string] =
   armor_thaumium:{
     prev: "armor_manasteel", 
     tier: 3,
+    material: "ore:ingotThaumium",
+    recycle:  "ore:ingotThaumium",
     list: [
       {id:"thaumcraft:thaumium_helm"},
       {id:"thaumcraft:thaumium_chest"},
@@ -234,6 +274,8 @@ static armorStaged as IData[string] =
   armor_void:{
     prev: "armor_thaumium", 
     tier: 4,
+    material: "ore:ingotVoid",
+    recycle:  "ore:ingotVoid",
     list: [
       {id:"thaumcraft:void_helm"},
       {id:"thaumcraft:void_chest"},
@@ -245,6 +287,8 @@ static armorStaged as IData[string] =
   armor_void_robe:{
     prev: "armor_void", 
     tier: 5,
+    material: "thaumcraft:void_seed",
+    recycle:  "thaumcraft:void_seed",
     list: [
       {id:"thaumcraft:void_robe_helm"},
       {id:"thaumcraft:void_robe_chest"},
@@ -256,6 +300,8 @@ static armorStaged as IData[string] =
   armor_deathworm:{
     prev: "armor_knightslime", 
     tier: 5,
+    material: "ore:deathwormChitin",
+    recycle:  "ore:deathwormChitin",
     list: [
       {id:"iceandfire:deathworm_yellow_helmet"},
       {id:"iceandfire:deathworm_yellow_chestplate"},
@@ -267,6 +313,8 @@ static armorStaged as IData[string] =
   armor_myrmex:{
     prev: "armor_deathworm", 
     tier: 6,
+    material: "ore:chitinMyrmex",
+    recycle:  "ore:chitinMyrmex",
     list: [
       {id:"iceandfire:myrmex_desert_helmet"},
       {id:"iceandfire:myrmex_desert_chestplate"},
@@ -278,6 +326,8 @@ static armorStaged as IData[string] =
   armor_dragonscale:{
     prev: "armor_tide", 
     tier: 8,
+    material: "ore:dragonscales",
+    recycle:  "ore:dragonscales",
     list: [
       {id:"iceandfire:armor_red_helmet"},
       {id:"iceandfire:armor_red_chestplate"},
@@ -289,6 +339,8 @@ static armorStaged as IData[string] =
   armor_dragonsteel:{
     prev: "armor_dragonscale", 
     tier: 9,
+    material: "ore:dragonsteelIngot",
+    recycle:  "ore:dragonsteelIngot",
     list: [
       {id:"iceandfire:dragonsteel_fire_helmet"},
       {id:"iceandfire:dragonsteel_fire_chestplate"},
@@ -300,6 +352,8 @@ static armorStaged as IData[string] =
   armor_tide:{
     prev: "armor_myrmex", 
     tier: 7,
+    material: "ore:seaSerpentScales",
+    recycle:  "ore:seaSerpentScales",
     list: [
       {id:"iceandfire:tide_blue_helmet"},
       {id:"iceandfire:tide_blue_chestplate"},
@@ -311,6 +365,8 @@ static armorStaged as IData[string] =
   armor_steel:{
     prev: "armor_faraday", 
     tier: 4,
+    material: "ore:plateSteel",
+    recycle:  "ore:plateSteel",
     list: [
       {id:"immersiveengineering:steel_armor_head"},
       {id:"immersiveengineering:steel_armor_chest"},
@@ -322,6 +378,8 @@ static armorStaged as IData[string] =
   armor_nano:{
     prev: "armor_steel", 
     tier: 5,
+    material: "ic2:crafting:15",
+    recycle:  "ic2:crafting:15",
     list: [
       {id:"ic2:nano_helmet", tag:{charge:1000000}},
       {id:"ic2:nano_chestplate", tag:{charge:1000000}},
@@ -333,6 +391,8 @@ static armorStaged as IData[string] =
   armor_flux:{
     prev: "armor_nano", 
     tier: 6,
+    material: "redstonearsenal:material:224",
+    recycle:  "redstonearsenal:material:224",
     list: [
       {id:"redstonearsenal:armor.helmet_flux", tag:{Energy:0}},
       {id:"redstonearsenal:armor.plate_flux", tag:{Energy:0}},
@@ -344,6 +404,8 @@ static armorStaged as IData[string] =
   armor_quantum:{
     prev: "armor_flux", 
     tier: 7,
+    material: "ic2:crafting:4",
+    recycle:  "ic2:crafting:4",
     list: [
       {id:"ic2:quantum_helmet", tag:{charge:10000000}},
       {id:"ic2:quantum_chestplate", tag:{charge:10000000}},
@@ -355,6 +417,8 @@ static armorStaged as IData[string] =
   armor_boron:{
     prev: "armor_hazmat", 
     tier: 5,
+    material: "ore:ingotBoron",
+    recycle:  "ore:ingotBoron",
     list: [
       {id:"nuclearcraft:helm_boron"},
       {id:"nuclearcraft:chest_boron"},
@@ -366,6 +430,8 @@ static armorStaged as IData[string] =
   armor_hard_carbon:{
     prev: "armor_boron", 
     tier: 6,
+    material: "ore:ingotHardCarbon",
+    recycle:  "ore:ingotHardCarbon",
     list: [
       {id:"nuclearcraft:helm_hard_carbon"},
       {id:"nuclearcraft:chest_hard_carbon"},
@@ -377,6 +443,8 @@ static armorStaged as IData[string] =
   armor_tough:{
     prev: "armor_hard_carbon", 
     tier: 7,
+    material: "ore:ingotTough",
+    recycle:  "ore:ingotTough",
     list: [
       {id:"nuclearcraft:helm_tough"},
       {id:"nuclearcraft:chest_tough"},
@@ -388,6 +456,8 @@ static armorStaged as IData[string] =
   armor_boron_nitride:{
     prev: "armor_tough", 
     tier: 8,
+    material: "ore:gemBoronNitride",
+    recycle:  "ore:gemBoronNitride",
     list: [
       {id:"nuclearcraft:helm_boron_nitride"},
       {id:"nuclearcraft:chest_boron_nitride"},
@@ -399,6 +469,8 @@ static armorStaged as IData[string] =
   armor_arctic:{
     prev: "armor_fiery", 
     tier: 6,
+    material: "ore:furArctic",
+    recycle:  "ore:furArctic",
     list: [
       {id:"twilightforest:arctic_helmet"},
       {id:"twilightforest:arctic_chestplate"},
@@ -410,6 +482,8 @@ static armorStaged as IData[string] =
   armor_ironwood:{
     prev: "armor_steeleaf", 
     tier: 3,
+    material: "ore:ingotIronwood",
+    recycle:  "ore:ingotIronwood",
     list: [
       {id:"twilightforest:ironwood_helmet"},
       {id:"twilightforest:ironwood_chestplate"},
@@ -421,6 +495,8 @@ static armorStaged as IData[string] =
   armor_fiery:{
     prev: "armor_knightmetal", 
     tier: 5,
+    material: "ore:ingotFiery",
+    recycle:  "ore:ingotFiery",
     list: [
       {id:"twilightforest:fiery_helmet"},
       {id:"twilightforest:fiery_chestplate"},
@@ -432,6 +508,8 @@ static armorStaged as IData[string] =
   armor_steeleaf:{
     prev: "armor_hardenedleather", 
     tier: 2,
+    material: "ore:ingotSteeleaf",
+    recycle:  "ore:ingotSteeleaf",
     list: [
       {id:"twilightforest:steeleaf_helmet"},
       {id:"twilightforest:steeleaf_chestplate"},
@@ -443,6 +521,8 @@ static armorStaged as IData[string] =
   armor_yeti:{
     prev: "armor_arctic", 
     tier: 7,
+    material: "twilightforest:alpha_fur",
+    recycle:  "twilightforest:alpha_fur",
     list: [
       {id:"twilightforest:yeti_helmet"},
       {id:"twilightforest:yeti_chestplate"},
@@ -454,6 +534,8 @@ static armorStaged as IData[string] =
   armor_knightmetal:{
     prev: "armor_ironwood", 
     tier: 4,
+    material: "ore:ingotKnightmetal",
+    recycle:  "ore:ingotKnightmetal",
     list: [
       {id:"twilightforest:knightmetal_helmet"},
       {id:"twilightforest:knightmetal_chestplate"},
@@ -465,6 +547,8 @@ static armorStaged as IData[string] =
   armor_dark_steel:{
     prev: "armor_manyullyn", 
     tier: 7,
+    material: "ore:ingotDarkSteel",
+    recycle:  "ore:ingotDarkSteel",
     list: [
       {id:"enderio:item_dark_steel_helmet"},
       {id:"enderio:item_dark_steel_chestplate"},
@@ -476,6 +560,8 @@ static armorStaged as IData[string] =
   armor_psimetal:{
     prev: "armor_manasteel", 
     tier: 3,
+    material: "ore:ingotPsi",
+    recycle:  "ore:ingotPsi",
     list: [
       {id:"psi:psimetal_exosuit_helmet"},
       {id:"psi:psimetal_exosuit_chestplate"},
@@ -498,75 +584,3 @@ static armorSortedKeys as IData = [
 /*Tier 9 */ "armor_superium", "armor_dragonsteel", 
 /*Tier 10*/ "armor_supremium"
 ] as IData;
-
-#           mod:id                          meta     UUvalue
-static matterTooltips as string[] = [
-  "actuallyadditions:block_misc",           "9",     "1600",
-  "actuallyadditions:item_misc",            "8",     "600",
-  "computercraft:computer",                 "16384", "600",
-  "draconicevolution:chaos_shard",          "0",     "600000",
-  "draconicevolution:chaos_shard",          "1",     "66667",
-  "draconicevolution:chaos_shard",          "2",     "7407",
-  "draconicevolution:chaos_shard",          "3",     "823",
-  "draconicevolution:dragon_heart",         "0",     "200000",
-  "draconicevolution:fusion_crafting_core", "0",     "100000",
-  "environmentaltech:litherite_crystal",    "0",     "6000",
-  "extrautils2:machine",                    "0",     "450",
-  "forestry:hardened_machine",              "0",     "1800",
-  "ic2:crafting",                           "1",     "80",
-  "ic2:crafting",                           "3",     "180",
-  "ic2:nuclear",                            "3",     "21324",
-  "ic2:nuclear",                            "7",     "2369",
-  "ic2:resource",                           "13",    "1600",
-  "immersiveengineering:metal_decoration0", "3",     "950",
-  "immersiveengineering:metal_decoration0", "4",     "1600",
-  "immersiveengineering:metal_decoration0", "5",     "2500",
-  "mekanism:basicblock",                    "8",     "1750",
-  "mekanism:controlcircuit",                "3",     "1500",
-  "minecraft:cookie",                       "0",     "10",
-  "minecraft:skull",                        "1",     "5000",
-  "quark:crystal",                          "0",     "25",
-  "quark:crystal",                          "1",     "25",
-  "quark:crystal",                          "2",     "25",
-  "quark:crystal",                          "3",     "25",
-  "quark:crystal",                          "4",     "25",
-  "quark:crystal",                          "5",     "25",
-  "quark:crystal",                          "6",     "25",
-  "quark:crystal",                          "7",     "25",
-  "rftools:machine_frame",                  "0",     "2600",
-  "teslacorelib:machine_case",              "0",     "1900",
-  "thermalexpansion:frame",                 "0",     "4000",
-  "rats:ancient_sawblade",                  "0",     "3900",
-  "rats:arcane_technology",                 "0",     "3900",
-  "rats:block_of_cheese",                   "0",     "180",
-  "rats:charged_creeper_chunk",             "0",     "600",
-  "rats:cheese",                            "0",     "30",
-  "rats:chunky_cheese_token",               "0",     "450000",
-  "rats:token_piece",                       "0",     "4500",
-  "rats:token_fragment",                    "0",     "450",
-  "rats:tiny_coin",                         "0",     "45",
-  "rats:compressed_rat",                    "0",     "600",
-  "rats:feral_bagh_nakhs",                  "0",     "1200",
-  "rats:feral_rat_claw",                    "0",     "2400",
-  "rats:gem_of_ratlantis",                  "0",     "2400",
-  "rats:herb_bundle",                       "0",     "300",
-  "rats:idol_of_ratlantis",                 "0",     "2400",
-  "rats:little_black_squash_balls",         "0",     "60",
-  "rats:marbled_cheese_golem_core",         "0",     "3900",
-  "rats:marbled_cheese_rat_head",           "0",     "1950",
-  "rats:marbled_cheese_raw",                "0",     "8",
-  "rats:plague_leech",                      "0",     "600",
-  "rats:psionic_rat_brain",                 "0",     "3900",
-  "rats:rat_breeding_lantern",              "0",     "1050",
-  "rats:rat_cage",                          "0",     "600",
-  "rats:rat_diamond",                       "0",     "300",
-  "rats:rat_toga",                          "0",     "840",
-  "rats:rat_upgrade_basic_ratlantean",      "0",     "1125",
-  "rats:rat_upgrade_basic",                 "0",     "390",
-  "rats:rat_upgrade_combined",              "0",     "1650",
-  "rats:ratglove_flower",                   "0",     "105",
-  "rats:ratglove_petals",                   "0",     "1050",
-  "rats:ratlantean_flame",                  "0",     "570",
-  "rats:treacle",                           "0",     "3900",
-  "rats:vial_of_sentience",                 "0",     "1950",
-] as string[];

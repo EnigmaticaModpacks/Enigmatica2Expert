@@ -18,10 +18,48 @@ import mods.jei.JEI.removeAndHide as rh;
 # 
 # ########################
 
+global getOredictFromString as function(string)IOreDictEntry = 
+    function (cmd as string) as IOreDictEntry  {
+
+	# Oredict entry
+	val ore = cmd.replaceAll("^ore:", "");
+	return oreDict.get(ore);
+};
+
+global getItemstackFromString as function(string)IItemStack = 
+    function (cmd as string) as IItemStack  {
+
+	if (cmd.matches("^[^:]+:[^:]+:[0-9]+")){
+		# Itemstack with meta
+		val id = cmd.replaceAll(":[0-9]+$", "");
+		val meta = cmd.replaceAll("^[^:]+:[^:]+:", "");
+		return itemUtils.getItem(id, meta);
+	}else{
+		# Simple mod:name
+		return itemUtils.getItem(cmd);
+	}
+};
+
+global getIngredientFromString as function(string)IIngredient = 
+    function (cmd as string) as IIngredient  {
+
+	if (cmd.matches("^ore:.*")) {
+		# Oredict entry
+		return getOredictFromString(cmd);
+	}else{
+		# Simple mod:name or mod:name:meta
+		return getItemstackFromString(cmd);
+	}
+};
+
 global getItemName as function(IItemStack)string = 
     function (item as IItemStack) as string  {
-
 	return item.definition.id.replaceAll(":", "_") ~ "_" ~ item.damage;
+};
+
+global getRecipeName as function(IItemStack, IItemStack)string = 
+    function (input as IItemStack, output as IItemStack) as string  {
+	return getItemName(input) ~ " from " ~ getItemName(output);
 };
 
 # Remake any recipe

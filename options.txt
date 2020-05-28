@@ -94,6 +94,12 @@ key_Hub Expand Key:0
 key_Change Caster Focus:34
 key_Misc Caster Toggle:0
 key_keybind.baublesinventory:0
+key_quark.keybind.dropoff:0
+key_quark.keybind.chestSort:0
+key_quark.keybind.chestDropoff:0
+key_quark.keybind.chestMerge:0
+key_quark.keybind.chestRestock:0
+key_quark.keybind.chestExtract:0
 key_quark.emote.no:0
 key_quark.emote.yes:0
 key_quark.emote.wave:0
@@ -112,14 +118,8 @@ key_quark.emote.dab:0
 key_quark.emote.jet:0
 key_quark.emote.exorcist:0
 key_quark.emote.zombie:0
-key_quark.keybind.dropoff:0
-key_quark.keybind.chestSort:0
-key_quark.keybind.chestDropoff:0
-key_quark.keybind.chestMerge:0
-key_quark.keybind.chestRestock:0
-key_quark.keybind.chestExtract:0
-key_quark.keybind.toggleAutojump:0
 key_quark.keybind.lockBuilding:33:SHIFT
+key_quark.keybind.toggleAutojump:0
 key_key.toggle_shaders:0
 key_bloodmagic.keybind.open_holding:53:CONTROL
 key_bloodmagic.keybind.cycle_holding_pos:0
@@ -287,7 +287,7 @@ key_key.rotateright:205
 key_key.rotateleft:203
 key_key.little.flip:34
 key_key.little.mark:50
-key_key.little.config.item:-97
+key_key.little.config.item:0
 key_key.little.undo:44:CONTROL
 key_key.little.redo:21:CONTROL
 key_key.music_player_gui:82

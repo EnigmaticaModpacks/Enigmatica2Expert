@@ -168,7 +168,6 @@ static defaultMats as IData = [
 "xu_demonic_metal",
 ] as IData;
 
-# TODO: Filter this materials
 static matsOnlyForArmor as IData = [
 "leatherfrosttroll",
 "chitintandeathworm",

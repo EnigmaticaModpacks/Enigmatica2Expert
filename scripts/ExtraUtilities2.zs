@@ -189,11 +189,7 @@ recipes.remove(<extrautils2:suncrystal:*>);
 var sunIngr = <volumetricflask:volumetric_flask_2000>.withTag({Fluid: {FluidName: "glowstone", Amount: 2000}});
 recipes.addShaped(<extrautils2:suncrystal:250>, [
 	[null, sunIngr, null],
-	[sunIngr, <ic2:energy_crystal>.onlyDamageAtLeast(1), sunIngr], 
-	[null, sunIngr, null]]);
-recipes.addShaped(<extrautils2:suncrystal>, [
-	[null, sunIngr, null],
-	[sunIngr, <ic2:energy_crystal>, sunIngr], 
+	[sunIngr, <ic2:energy_crystal>.anyDamage(), sunIngr], 
 	[null, sunIngr, null]]);
 
 	
@@ -205,4 +201,5 @@ recipes.addShaped(<extrautils2:suncrystal>, [
 // mods.mechanics.addTubeRecipe([<extrautils2:simpledecorative>] as IItemStack[], <liquid:xu_enchanted_metal> * 1000);
 // mods.mechanics.addTubeRecipe([<extrautils2:simpledecorative:1>] as IItemStack[], <liquid:xu_demonic_metal> * 1000);
 
+# TODO: Cancel Ender Lily drop
 vanilla.seeds.removeSeed(<extrautils2:enderlilly>);

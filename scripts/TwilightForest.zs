@@ -31,7 +31,7 @@ for input, output in rockRecycleTable{
 // <enderio:item_dark_steel_pickaxe>.withTag({"enderio.darksteel.upgrade.travel": {level: 0}, "enderio.darksteel.upgrade.direct": {level: 0}, "enderio.darksteel.upgrade.energyUpgrade": {level: 3, energy: 991988}, "enderio.darksteel.upgrade.spoon": {level: 0}, "enderio.darksteel.upgrade.tnt": {level: 0}})
 
 # Forbid using teleportation (cheat way for mazes)
-events.onEntityLivingUseItemStop(function(e as crafttweaker.event.EntityLivingUseItemEvent.Stop) {
+events.onEntityLivingUseItem(function(e as crafttweaker.event.EntityLivingUseItemEvent.All) {
   print("--> onEntityLivingUseItem");
   if(e.isPlayer && !e.canceled && !isNull(e.item) &&
     e.entityLivingBase.world.getDimension() == 7

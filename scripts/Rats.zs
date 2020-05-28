@@ -277,11 +277,15 @@ remake("rats idol_of_ratlantis", <rats:idol_of_ratlantis>, [
 	[<rats:rat_toga>, <rats:gem_of_ratlantis>, <rats:marbled_cheese_rat_head>], 
 	[<rats:ratglove_petals>, <rats:feral_rat_claw>, <rats:ratlantean_flame>]]);
 
-
-/*
--<rats:rat_nugget>
--<rats:rat_nugget_ore>.withTag({OreItem: {id: "thermalfoundation:ore", Count: 1 as byte, Damage: 4 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1 as byte, Damage: 132 as short}})
--<rats:rat_nugget_ore:1>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 7 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 7 as short}})
--<rats:rat_nugget_ore:2>.withTag({OreItem: {id: "forestry:resources", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "forestry:apatite", Count: 1 as byte, Damage: 0 as short}})
--<rats:rat_nugget_ore:3>.withTag({OreItem: {id: "astralsorcery:blockcustomsandore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "astralsorcery:itemcraftingcomponent", Count: 3 as byte, Damage: 0 as short}})
-*/
+# More uses for Rat Diamond
+val diamondVariants = <ore:gemDiamond> | <rats:rat_diamond>;
+recipes.replaceAllOccurences(<ore:gemDiamond>, diamondVariants, <*>.only(function(item) {
+    return !isNull(item) 
+			& !<thermalfoundation:material:16>.matches(item) 
+			& !<minecraft:diamond_block>.matches(item);
+}));
+recipes.replaceAllOccurences(<minecraft:diamond>, diamondVariants, <*>.only(function(item) {
+    return !isNull(item) 
+			& !<thermalfoundation:material:16>.matches(item) 
+			& !<minecraft:diamond_block>.matches(item);
+}));
