@@ -3,7 +3,7 @@ import mods.armoreablemobs.ArmorHandler.createArmorEntity as armEnt;
 import mods.armoreablemobs.ArmorEntity;
 import mods.armoreablemobs.ArmorSlot;
 import mods.armoreablemobs.ArmorGroup;
-import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.event.CommandEvent;
 import crafttweaker.player.IPlayer;
@@ -30,9 +30,9 @@ events.onCommand(function(event as CommandEvent) {
     print("Entering [events.onCommand]...");
     val command = event.command;
     if(isNull(command) || 
-        (command.name != "gamestage") || 
-        (event.parameters[0] != "silentadd") ||
-        (event.parameters.length < 3)) {
+      (command.name != "gamestage") ||
+      (event.parameters.length < 3) || 
+      (event.parameters[0] != "silentadd")) {
         
         print("  command dont match, return..");
         return;
@@ -71,23 +71,26 @@ static slotNames as string[] = ["head", "chest", "legs", "feet", "mainhand", "of
 
 # Add armors recursively
 function addArmorToGroup(group as ArmorGroup, stage as IData, isSkeleton as bool){
-  print("Call addArmorToGroup");
+  print("Call addArmorToGroup for stage: " ~ ((isNull(stage.prev)) ? "Stage without prev" : stage.asString()));
   for i in 0 to (isSkeleton ? 4 : 6) {
     print(" i = " ~ i);
     var sltName = slotNames[i];
     var listedItem = stage.list[i];
     var id = listedItem.id.asString();
     var itemNoNBT = itemUtils.getItem(id);
-    print("    sltName:" ~ sltName ~ " listedItem:" ~ listedItem.asString() ~ " id:" ~ id);
+    print("    sltName:" ~ sltName ~ " listedItem:" ~ listedItem.asString());
     if(!isNull(itemNoNBT)) {
-      print("    itemNoNBT is not null..");
       var item = itemNoNBT.withTag(isNull(listedItem.tag) ? {} : listedItem.tag);
       if (isNull( armSlots[item] )){
-        print("      createArmorSlot: " ~ sltName ~ " " ~ (1 + stage.tier.asInt()) );
-        armSlots[item] = ArmorHandler.createArmorSlot(sltName, item, 
-          1 + stage.tier.asInt(), 0.1);
+        val weight = 1 + stage.tier.asInt();
+        print("      createArmorSlot: " ~ sltName ~ " weight: " ~ weight );
+        armSlots[item] = ArmorHandler.createArmorSlot(sltName, item, weight, 0.1);
+      } else {
+        print("      item for armSlots[item] already created, skip..");
       }
       group.addArmor(armSlots[item]);
+    } else {
+      print("    itemNoNBT is Null..");
     }
   }
   if (!isNull(stage.prev)){
