@@ -1,7 +1,6 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded modularmachinery
-print("--- loading ModularMachinery.zs ---");
 
 # Arcane Crafting Engine
     recipes.addShapedMirrored("Arcane Crafting Engine", 
@@ -37,6 +36,14 @@ print("--- loading ModularMachinery.zs ---");
 	[[<ore:ingotModularium>, <ore:circuitAdvanced>, <ore:ingotModularium>],
 	[<ore:circuitAdvanced>, <immersiveengineering:blueprint>.anyDamage(), <ore:circuitAdvanced>], 
 	[<ore:ingotModularium>, <ore:circuitAdvanced>, <ore:ingotModularium>]]);
+    
+# Armor Foundry
+	recipes.addShapedMirrored("Armor Foundry", 
+	<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:armor_foundry"}), [
+		[<ore:ingotModularium>, <tconstruct:hammer>.anyDamage(), <ore:ingotModularium>],
+		[<bloodmagic:upgrade_tome>, <immersiveengineering:blueprint>.anyDamage(), <bloodmagic:upgrade_tome>],
+		[<ore:ingotModularium>, <ore:blockKnightmetal>, <ore:ingotModularium>]]
+	);
 
 # Machine Vent
     recipes.remove(<modularmachinery:blockcasing:1>);
@@ -158,5 +165,3 @@ var itemsToRemove = [
 for item in itemsToRemove {
     rh(item);
 }
-	
-print("--- ModularMachinery.zs initialized ---");
