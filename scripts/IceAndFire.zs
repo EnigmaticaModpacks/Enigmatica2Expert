@@ -83,13 +83,11 @@ print("--- loading IceAndFire.zs ---");
 		<iceandfire:myrmex_jungle_pickaxe>,
 		<iceandfire:myrmex_jungle_shovel>,
 		<iceandfire:myrmex_jungle_sword>,
-		<iceandfire:wither_shard>,
-		<iceandfire:silver_ore>,
-		<iceandfire:cockatrice_scepter>
+		<iceandfire:silver_ore>
 	] as IItemStack[];
 	
 	for item in removals {
-	rh(item);
+		rh(item);
 	}
 
 	# Dragon Armor

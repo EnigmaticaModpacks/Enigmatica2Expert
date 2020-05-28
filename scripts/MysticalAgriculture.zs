@@ -1,4 +1,6 @@
 import crafttweaker.item.IItemStack;
+import mods.jei.JEI.removeAndHide as rh;
+
 #modloaded mysticalagriculture
 
 # Enderman Chunks -> Ender Pearls
@@ -706,16 +708,11 @@ var itemsToRemoveAndHide as IItemStack[] = [
 	<mysticalagriculture:chunk:2>,
 	<mysticalagriculture:chunk:3>,
 	<mysticalagriculture:chunk:4>,
-	<mysticalagradditions:insanium:4>,
-	<mysticalagriculture:nether_prosperity_ore>,
-	<mysticalagriculture:end_prosperity_ore>,
-	<mysticalagriculture:inferium_ore>,
-	<mysticalagriculture:nether_inferium_ore>,
-	<mysticalagriculture:end_inferium_ore>
+	<mysticalagradditions:insanium:4>
 ];
 
 for item in itemsToRemoveAndHide {
-	mods.jei.JEI.removeAndHide(item);
+	rh(item);
 }
 
 # *======= Unification =======*

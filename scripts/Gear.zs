@@ -5,7 +5,6 @@ print("--- loading Gear.zs ---");
 	rh(<forestry:gear_tin>);
 	rh(<forestry:gear_bronze>);
 	rh(<forestry:gear_copper>);
-	rh(<libvulpes:productgear:6>);
 	rh(<appliedenergistics2:material:40>);
 	
 	val gearsToRemove = [

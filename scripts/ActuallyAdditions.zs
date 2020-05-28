@@ -16,9 +16,6 @@ import mods.actuallyadditions.BallOfFur.addReturn as addBallReturn;
 	[[<ore:blockBlackQuartz>, <ore:blockBlackQuartz>],
 	[<ore:blockBlackQuartz>, <ore:blockBlackQuartz>]]);
 
-# Oil Generator Removal
-	rh(<actuallyadditions:block_oil_generator>);
-
 #Black Quartz Block to Black Quartz
 	recipes.addShapeless("Black Quartz Block to Black Quartz", 
 	<actuallyadditions:item_misc:5> * 4, [<ore:blockBlackQuartz>]);

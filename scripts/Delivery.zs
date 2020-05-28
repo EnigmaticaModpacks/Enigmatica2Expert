@@ -8,24 +8,25 @@ import crafttweaker.item.IItemStack;
 // // Add an apple to "delivery"
 // delivery.addItemEntry(<delivery:store_book>, 1);
 
+# TODO: Market purchases
 
 //Set default store item
 mods.Delivery.Store.setStoreIcon("_store", <bq_standard:loot_chest:0>);    // "_store" is the name of the default store
 
-val loot as IItemStack[] = [
-  <bq_standard:loot_chest:0>,
-  <bq_standard:loot_chest:25>,
-  <bq_standard:loot_chest:50>,
-  <bq_standard:loot_chest:75>,
-  <bq_standard:loot_chest:100>,
-  <bq_standard:loot_chest:101>
-  ] as IItemStack[];
+# List of outputs <- inputs for market
+val loot as IItemStack[IItemStack] = {
+<enderio:block_enhanced_alloy_smelter> : <bq_standard:loot_chest:0>,
+<enderio:block_enhanced_combustion_generator> : <bq_standard:loot_chest:0>,
+<enderio:block_enhanced_sag_mill> : <bq_standard:loot_chest:0>,
+<enderio:block_enhanced_vat> : <bq_standard:loot_chest:0>,
+<enderio:block_enhanced_wired_charger> : <bq_standard:loot_chest:0>,
+<advancedrocketry:basiclasergun> : <bq_standard:loot_chest:0>,
+};
 
-mods.Delivery.Store.addTrade(loot[3]).addItem(loot[5] * 3);
-mods.Delivery.Store.addTrade(loot[3]).addItem(loot[4] * 3);
-mods.Delivery.Store.addTrade(loot[2]).addItem(loot[3] * 3);
-mods.Delivery.Store.addTrade(loot[1]).addItem(loot[2] * 3);
-mods.Delivery.Store.addTrade(loot[0]).addItem(loot[1] * 3);
+for output, input in loot{
+  mods.Delivery.Store.addTrade(output).addItem(input);
+}
+
 
 //Notes
 /*

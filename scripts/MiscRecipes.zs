@@ -60,9 +60,6 @@ print("--- loading MiscRecipes.zs ---");
 	[[<ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>],
 	[<ore:blockGlassHardened>, <ore:netherStar>, <ore:blockGlassHardened>],
 	[<ore:blockGlassHardened>, <ore:itemGhastTear>, <ore:blockGlassHardened>]]);
-
-# Twilight Forest Uncrafting Table
-	rh(<twilightforest:uncrafting_table>);
 	
 # Cyclic Guide
 	recipes.addShapeless("Cyclic Guide", 
@@ -374,4 +371,8 @@ print("--- loading MiscRecipes.zs ---");
 	rh(<extendedcrafting:material:128>);
 	rh(<extendedcrafting:material:129>);
 	
-print("--- MiscRecipes.zs initialized ---");
+		
+# *=======  =======*
+
+	rh(<backpack:stick>);
+	rh(<backpack:stick:1>);

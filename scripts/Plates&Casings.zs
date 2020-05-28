@@ -46,14 +46,6 @@ print("--- loading Plates.zs ---");
 	
 	<thaumcraft:plate:1>,
 
-	<libvulpes:productplate:1>,
-	<libvulpes:productplate:2>,
-	<libvulpes:productplate:4>,
-	<libvulpes:productplate:5>,
-	<libvulpes:productplate:6>,
-	<libvulpes:productplate:9>,
-	<libvulpes:productplate:10>,
-
 	] as IItemStack[];
 	
 	for items in platesToRemove {

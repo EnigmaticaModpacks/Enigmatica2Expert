@@ -170,14 +170,6 @@ for silicon in <ore:itemSilicon>.items {
 	[<enderio:item_basic_capacitor:1>, <draconicevolution:draconium_block:1>, <enderio:item_basic_capacitor:1>], 
 	[<ore:ingotFerroboron>, <ore:ingotVibrantAlloy>, <ore:ingotFerroboron>]]);
 
-# Stirling Generator
-	recipes.remove(<enderio:block_stirling_generator>);
-	recipes.addShapedMirrored("Stirling Generator", 
-	<enderio:block_stirling_generator>, 
-	[[<extrautils2:decorativesolid:2>, <minecraft:furnace>, <extrautils2:decorativesolid:2>],
-	[<minecraft:furnace>, <ic2:resource:13>, <minecraft:furnace>], 
-	[<ore:gearEnergized>, <ore:craftingPiston>, <ore:gearEnergized>]]);
-
 # Combustion Generator
 	recipes.remove(<enderio:block_combustion_generator>);
 	recipes.addShapedMirrored("Combustion Generator", 
@@ -229,12 +221,6 @@ for silicon in <ore:itemSilicon>.items {
 		[<ore:ingotElectricalSteel>, <enderio:item_power_conduit>, <ore:ingotElectricalSteel>]]);
 
 # Removals
-	rh(<enderio:block_simple_stirling_generator>);
-	rh(<enderio:block_enhanced_alloy_smelter>);
-	rh(<enderio:block_enhanced_combustion_generator>);
-	rh(<enderio:block_enhanced_sag_mill>);
-	rh(<enderio:block_enhanced_vat>);
-	rh(<enderio:block_enhanced_wired_charger>);
 	rh(<enderio:item_material:30>);
 	rh(<enderio:item_material:31>);
 	
@@ -268,6 +254,6 @@ recipes.addShaped(<enderio:block_niard>, [
 mods.enderio.SagMill.addRecipe([<appliedenergistics2:material:45>] as IItemStack[], [1.0] as float[], <appliedenergistics2:sky_stone_block>);
 
 # Compat of nano glowstone
-scripts.Processing.crush(<enderio:item_material:76>, <enderio:block_holy_fog>, "except: sagMill", 
+scripts.Processing.crush(<enderio:item_material:76>, <enderio:block_holy_fog> * 2, "except: sagMill", 
 	[<minecraft:clay_ball>, <minecraft:glowstone_dust>], [0.1f, 0.1f]);
-scripts.Processing.alloy([<minecraft:glowstone_dust>, <minecraft:clay_ball>], <enderio:item_material:76>, "except: alloySmelter");
+scripts.Processing.alloy([<minecraft:glowstone_dust>, <minecraft:clay_ball>], <enderio:item_material:76> * 2, "except: alloySmelter");
