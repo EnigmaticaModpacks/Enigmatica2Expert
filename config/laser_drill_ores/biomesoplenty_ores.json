@@ -102,18 +102,5 @@
         "weight": 2
       }
     ]
-  },
-  {
-    "item" : "biomesoplenty:gem_ore:7",
-    "color" : 1,
-    "rarity" : [
-      {
-        "whitelist": "",
-        "blacklist": "minecraft:hell, minecraft:sky",
-        "depth_min": 0,
-        "depth_max": 255,
-        "weight": 1
-      }
-    ]
   }
 ]
