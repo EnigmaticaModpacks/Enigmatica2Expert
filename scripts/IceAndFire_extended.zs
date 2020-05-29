@@ -49,6 +49,20 @@ import mods.jaopca.OreEntry;
     <iceandfire:dragonscales_silver>
 ]);
 
+<ore:dragonFireScales>.add([
+	<iceandfire:dragonscales_red>,
+	<iceandfire:dragonscales_green>,
+	<iceandfire:dragonscales_bronze>,
+	<iceandfire:dragonscales_gray>,
+]);
+
+<ore:dragonIceScales>.add([
+	<iceandfire:dragonscales_blue>,
+	<iceandfire:dragonscales_white>,
+	<iceandfire:dragonscales_sapphire>,
+	<iceandfire:dragonscales_silver>,
+]);
+
 
 # Ore Myrmex Glass
 <ore:myrmexResinGlass>.add([
@@ -112,6 +126,17 @@ import mods.jaopca.OreEntry;
 # Crafts
 #
 # ######################################################################
+
+# Simplify bricks for less grind
+remakeEx(<iceandfire:dragonforge_fire_brick> * 2, [
+	[<ore:dragonFireScales>, <ore:bricksStone>, <ore:dragonFireScales>],
+	[<ore:bricksStone>, <ore:dragonFireScales>, <ore:bricksStone>],
+	[<ore:dragonFireScales>, <ore:bricksStone>, <ore:dragonFireScales>]]);
+
+remakeEx(<iceandfire:dragonforge_ice_brick> * 2, [
+	[<ore:dragonIceScales>, <ore:bricksStone>, <ore:dragonIceScales>],
+	[<ore:bricksStone>, <ore:dragonIceScales>, <ore:bricksStone>],
+	[<ore:dragonIceScales>, <ore:bricksStone>, <ore:dragonIceScales>]]);
 
 # Dragon meal
 remakeFluidToItem(<iceandfire:dragon_meal>, <fluid:lifeessence>, <ore:primeMeatCooked>*8);

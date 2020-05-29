@@ -21,31 +21,35 @@
     "c": {
       "id": "thermalfoundation:fluid_pyrotheum",
       "meta": 0
+    },
+    "d": {
+      "id": "darkutils:wither_block",
+      "meta": 0
     }
   },
   "shape": [
     [
       [
         "a",
-        "a",
+        "d",
         "a"
       ],
       [
-        "a",
+        "d",
         "b",
-        "a"
+        "d"
       ],
       [
         "a",
-        "a",
+        "d",
         "a"
       ]
     ],
     [
       [
-        "a",
+        "d",
         "b",
-        "a"
+        "d"
       ],
       [
         "b",
@@ -53,25 +57,25 @@
         "b"
       ],
       [
-        "a",
+        "d",
         "b",
-        "a"
+        "d"
       ]
     ],
     [
       [
         "a",
-        "a",
+        "d",
         "a"
       ],
       [
-        "a",
+        "d",
         "b",
-        "a"
+        "d"
       ],
       [
         "a",
-        "a",
+        "d",
         "a"
       ]
     ]
