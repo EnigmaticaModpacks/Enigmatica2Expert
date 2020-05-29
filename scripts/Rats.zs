@@ -68,8 +68,7 @@ mods.rats.recipes.addChefRatRecipe(<avaritia:ultimate_stew>, <rats:confit_byaldi
 
 # Base Upgrade
 recipes.remove(<rats:rat_upgrade_basic>);
-ratUpgrade("rat_upgrade_basic_0", <rats:rat_upgrade_basic>,   <ore:gemDiamond>);
-ratUpgrade("rat_upgrade_basic_1", <rats:rat_upgrade_basic>,   <rats:rat_diamond>);
+ratUpgrade("rat_upgrade_basic_0", <rats:rat_upgrade_basic>,   gemDiamondRat);
 ratUpgrade("rat_upgrade_basic_2", <rats:rat_upgrade_basic>*3, <mekanism:compresseddiamond>);
 val fragment = <rats:rat_upgrade_fragment>;
 recipes.addShaped("rat_upgrade_from_fragment", <rats:rat_upgrade_basic>, [

@@ -287,10 +287,10 @@ print("--- loading Armor.zs ---");
 	recipes.addShaped(<tcomplement:knightslime_leggings>,  [[<ore:ingotKnightslime>, <ore:ingotKnightslime>, <ore:ingotKnightslime>], [<ore:ingotKnightslime>, <minecraft:golden_leggings>.anyDamage(), <ore:ingotKnightslime>], [<ore:ingotKnightslime>, null, <ore:ingotKnightslime>]]);
 	recipes.addShaped(<tcomplement:knightslime_boots>,     [[<ore:ingotKnightslime>, null, <ore:ingotKnightslime>], [<ore:ingotKnightslime>, <minecraft:golden_boots>.anyDamage(), <ore:ingotKnightslime>]]);
 
-	recipes.addShaped(<minecraft:diamond_helmet>, [[<ore:gemDiamond>, <ore:gemDiamond>, <ore:gemDiamond>], [<ore:gemDiamond>, <tcomplement:knightslime_helmet>.anyDamage(), <ore:gemDiamond>]]);
-	recipes.addShaped(<minecraft:diamond_chestplate>, [[<ore:gemDiamond>, <tcomplement:knightslime_chestplate>.anyDamage(), <ore:gemDiamond>], [<ore:gemDiamond>, <ore:gemDiamond>, <ore:gemDiamond>], [<ore:gemDiamond>, <ore:gemDiamond>, <ore:gemDiamond>]]);
-	recipes.addShaped(<minecraft:diamond_leggings>, [[<ore:gemDiamond>, <ore:gemDiamond>, <ore:gemDiamond>], [<ore:gemDiamond>, <tcomplement:knightslime_leggings>.anyDamage(), <ore:gemDiamond>], [<ore:gemDiamond>, null, <ore:gemDiamond>]]);
-	recipes.addShaped(<minecraft:diamond_boots>, [[<ore:gemDiamond>, null, <ore:gemDiamond>], [<ore:gemDiamond>, <tcomplement:knightslime_boots>.anyDamage(), <ore:gemDiamond>]]);
+	recipes.addShaped(<minecraft:diamond_helmet>, [[gemDiamondRat, gemDiamondRat, gemDiamondRat], [gemDiamondRat, <tcomplement:knightslime_helmet>.anyDamage(), gemDiamondRat]]);
+	recipes.addShaped(<minecraft:diamond_chestplate>, [[gemDiamondRat, <tcomplement:knightslime_chestplate>.anyDamage(), gemDiamondRat], [gemDiamondRat, gemDiamondRat, gemDiamondRat], [gemDiamondRat, gemDiamondRat, gemDiamondRat]]);
+	recipes.addShaped(<minecraft:diamond_leggings>, [[gemDiamondRat, gemDiamondRat, gemDiamondRat], [gemDiamondRat, <tcomplement:knightslime_leggings>.anyDamage(), gemDiamondRat], [gemDiamondRat, null, gemDiamondRat]]);
+	recipes.addShaped(<minecraft:diamond_boots>, [[gemDiamondRat, null, gemDiamondRat], [gemDiamondRat, <tcomplement:knightslime_boots>.anyDamage(), gemDiamondRat]]);
 	
 	recipes.addShaped(<tcomplement:manyullyn_boots>, [[<ore:ingotManyullyn>, null, <ore:ingotManyullyn>], [<ore:ingotManyullyn>, <minecraft:diamond_boots>.anyDamage(), <ore:ingotManyullyn>]]);
 	recipes.addShaped(<tcomplement:manyullyn_leggings>, [[<ore:ingotManyullyn>, <ore:ingotManyullyn>, <ore:ingotManyullyn>], [<ore:ingotManyullyn>, <minecraft:diamond_leggings>.anyDamage(), <ore:ingotManyullyn>], [<ore:ingotManyullyn>, null, <ore:ingotManyullyn>]]);

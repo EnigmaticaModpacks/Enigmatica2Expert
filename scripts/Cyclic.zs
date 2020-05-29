@@ -119,7 +119,7 @@ print("--- loading Cyclic.zs ---");
 	recipes.remove(<cyclicmagic:block_anvil>);
 	recipes.addShaped("Diamond Anvil", 
 	<cyclicmagic:block_anvil>, 
-	[[<ore:gemDiamond>, <ore:plateDenseObsidian>, <ore:gemDiamond>],
+	[[gemDiamondRat, <ore:plateDenseObsidian>, gemDiamondRat],
 	[<ore:dustRedstone>, <actuallyadditions:block_item_repairer>, <ore:dustRedstone>], 
 	[<ore:blockIron>, <ore:blockIron>, <ore:blockIron>]]);
 	
@@ -151,7 +151,7 @@ recipes.remove(<cyclicmagic:tool_swap>);
 recipes.remove(<cyclicmagic:cyclic_wand_build>);
 recipes.addShaped(<cyclicmagic:tool_swap>, [[null, <cd4017be_lib:m:402>, <appliedenergistics2:material:10>],[null, <redstonearsenal:material:192>, <cd4017be_lib:m:402>], [<enderio:block_reinforced_obsidian>, null, null]]);
 recipes.addShaped(<cyclicmagic:tool_swap_match>, [[null, <cd4017be_lib:m:402>, <randomthings:ingredient:9>],[null, <redstonearsenal:material:192>, <cd4017be_lib:m:402>], [<enderio:block_reinforced_obsidian>, null, null]]);
-recipes.addShaped(<cyclicmagic:cyclic_wand_build>, [[null, <cd4017be_lib:m:402>, <minecraft:diamond>],[null, <redstonearsenal:material:192>, <cd4017be_lib:m:402>], [<ore:blockBone>, null, null]]);
+recipes.addShaped(<cyclicmagic:cyclic_wand_build>, [[null, <cd4017be_lib:m:402>, gemDiamondRat],[null, <redstonearsenal:material:192>, <cd4017be_lib:m:402>], [<ore:blockBone>, null, null]]);
 
 
 # Vacuum hopper

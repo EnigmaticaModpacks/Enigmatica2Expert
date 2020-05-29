@@ -46,7 +46,7 @@ for silicon in <ore:itemSilicon>.items {
 # Painting Machine
 	recipes.remove(<enderio:block_painter>);
 	recipes.addShaped("Ender IO Painting Machine", <enderio:block_painter>, 
-	[[<ore:gemQuartz>, <ore:gemDiamond>, <ore:gemQuartz>], 
+	[[<ore:gemQuartz>, gemDiamondRat, <ore:gemQuartz>], 
 	[<ore:gearIronInfinity>, <nuclearcraft:part:10>, <ore:gearIronInfinity>], 
 	[<ore:ingotElectricalSteel>, <ore:ingotElectricalSteel>, <ore:ingotElectricalSteel>]]);
 

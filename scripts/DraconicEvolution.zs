@@ -19,8 +19,8 @@ print("--- loading DraconicEvolution.zs ---");
 	recipes.remove(<draconicevolution:crystal_binder>);
 	recipes.addShapedMirrored("DE Crystal Binder", 
 	<draconicevolution:crystal_binder>, 
-	[[null, <ore:gemDiamond>, <ore:ingotCobalt>],
-	[null, <ore:rodBlaze>, <ore:gemDiamond>], 
+	[[null, gemDiamondRat, <ore:ingotCobalt>],
+	[null, <ore:rodBlaze>, gemDiamondRat], 
 	[<actuallyadditions:item_laser_wrench>, null, null]]);
 
 # Wyvern Tools

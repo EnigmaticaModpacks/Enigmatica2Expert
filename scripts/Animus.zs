@@ -27,8 +27,8 @@ print("--- loading Animus.zs ---");
 
 # Khopesh
 remake("animus_kama_diamond", <animus:kama_diamond>, [
-	[null, <ore:gemDiamond>, null], 
-	[<ore:gemDiamond>, null, <ore:blockDiamond>], 
+	[null, gemDiamondRat, null], 
+	[gemDiamondRat, null, <ore:blockDiamond>], 
 	[null, null, <forestry:oak_stick>]
 ]);
 

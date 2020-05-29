@@ -127,7 +127,7 @@ import mods.ic2.ScrapBox;
 	recipes.addShapedMirrored("Iridium Reinforced Plate", 
 	<ic2:crafting:4>, 
 	[[<ore:ingotIridium>, <ic2:crafting:3>, <ore:ingotIridium>],
-	[<ic2:crafting:3>, <ore:gemDiamond>, <ic2:crafting:3>], 
+	[<ic2:crafting:3>, gemDiamondRat, <ic2:crafting:3>], 
 	[<ore:ingotIridium>, <ic2:crafting:3>, <ore:ingotIridium>]]);
 
 # Reactor Chamber

@@ -730,7 +730,7 @@ for item in itemsToRemoveAndHide {
   recipes.addShaped("Mystical Agriculture Amber", <thaumcraft:amber> * 6, [[<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>],[<mysticalagriculture:amber_essence>,null,<mysticalagriculture:amber_essence>],[<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>]]);
 
 # Infusion crystals
-recipes.replaceAllOccurences(<ore:gemDiamond>, <mysticalagriculture:infusion_crystal>.anyDamage(), <matc:inferiumcrystal>);
+recipes.replaceAllOccurences(gemDiamondRat, <mysticalagriculture:infusion_crystal>.anyDamage(), <matc:inferiumcrystal>);
 
 # Mystical Creations Recipes
 recipes.addShaped(<extendedcrafting:material:33>*3, [[<mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>],[<mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>], [<mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>]]);

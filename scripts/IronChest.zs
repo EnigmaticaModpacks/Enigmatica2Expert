@@ -26,7 +26,7 @@ print("--- loading IronChest.zs ---");
 	recipes.addShaped("Diamond Chest", 
 	<ironchest:iron_chest:2>, 
 	[[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>],
-	[<ore:gemDiamond>, <ironchest:iron_chest:1>, <ore:gemDiamond>], 
+	[gemDiamondRat, <ironchest:iron_chest:1>, gemDiamondRat], 
 	[<ore:blockGlass>, <ore:gearDiamond>, <ore:blockGlass>]]);
 
 # Wood -> Iron
@@ -50,7 +50,7 @@ print("--- loading IronChest.zs ---");
 	recipes.addShaped("GoldToDiamond", 
 	<ironchest:gold_diamond_chest_upgrade>, 
 	[[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>],
-	[<ore:gemDiamond>, <ore:plateGold>, <ore:gemDiamond>], 
+	[gemDiamondRat, <ore:plateGold>, gemDiamondRat], 
 	[<ore:blockGlass>, <ore:gearDiamond>, <ore:blockGlass>]]);
 
 # Shulker Wood -> Iron
@@ -74,7 +74,7 @@ print("--- loading IronChest.zs ---");
 	recipes.addShaped("ShulkerGoldToDiamond", 
 	<ironchest:gold_diamond_shulker_upgrade>, 
 	[[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>],
-	[<ore:gemDiamond>, <ore:plateDenseGold>, <ore:gemDiamond>], 
+	[gemDiamondRat, <ore:plateDenseGold>, gemDiamondRat], 
 	[<ore:blockGlass>, <ore:gearDiamond>, <ore:blockGlass>]]);
 
 # Shulker Diamond -> Crystal
