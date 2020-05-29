@@ -4,35 +4,46 @@ Finished
 - [x] **FlatColoredBlocks** remove mod
 - [x] **IC2** Распил
 - [x] **🌳TwilightForest** Stalactite generation
+- [x] 🔴 **HungerPersistance** Remove Mod
+- [x] 🔴 **Respawnable Pets** Remove mod
+- [x] **Garden Cloche** х5 потребление энергии
+- [x] **CompactMachines** Simplify Dragon Forge
+- [x] **CompactMachines** Simplify meshes
+- [x] **ExtraUtils** Simplify Wireless transfer buffer
+- [x] **Rats** Melting Rat Diamond
+- [x] **mysticalagriculture** Remove BoP and MystAgr Ore from IF laser
+- [x] **EnderIO** Harder Vibrant Alloy
 
 Planned
 -----------
-- [ ] **NewMods** check and introduce
-- [x] **Garden Cloche** х5 потребление энергии
-- [x] **Armoreable mobs** Вернуть ради Game Stages
-- [x] **Processing** Переработка блоков из Твайлайта
+- [ ] 🟢 **Mineral Tracker** New mod
+- [ ] 🟢 **Tinker's Evolution** New mod
+- [ ] 🟢 **Lazy AE2** New mod
+- [ ] **ExtraUtils** Enabled things
+- [ ] **Processing** molten diamond, obsidian unification
 - [x] **🌳TwilightForest** Запретить посохи телепортации
-- [ ] **TinkersConstruct** Новые модификаторы и материалы	Arcane Curiosity - Auromancy
-  - **Материал** - плавленный сырок	Ancient Curiosity - Golemancy
-  - **Модификатор** - дополнительный руды	Eldritch Curiosity - Eldritch (grants Warp)
-  - **Модификатор** - разборка брони	Illuminating Curiosity - Arcane Infusion
-  - **Материалы** с эффектом зелий	Twisted Curiosity - Artifice
+- [x] **Armoreable mobs** Вернуть ради Game Stages
+- [x] **CraftTweaker** Check diamond custom recipes, exclude recyclable
+- [x] **ModularMachinery** Make Armor Assembling Machine
+- [x] **Processing** Переработка блоков из Твайлайта
+- [x] **RandomThings** Rediscover Spectre (change Spectre lens, wood craft)
+- [ ] **Orechid** blacklist ore
+
+- [ ] **EquilGeneration** Armor-only materials
+- [ ] **EquilGeneration** Enable armor back
+  - **TinkersConstruct⛏** Новые модификаторы и материалы
+  - **Материал** - плавленный сырок
+  - **Модификатор** - Additional Ore when mining
+  - **Модификатор** - Deconstruct Armor when kick, or on crafting table
+  - **Материалы** с эффектом зелий
   - **Материал** для дропа куриоситей
   - **Модификатор прыжка** Что бы дробить ресурсы
-  -**SuperTIC** Добавить эффекты зелий материалам
-- [ ] **mysticalagriculture** Remove BoP and MystAgr Ore from IF laser
-- [ ] **EnderIO** Harder Vibrant Alloy
-- [x] **ProcessNuclearcraft** Weighted crushing
-- [ ] **RandomThings** Rediscover Spectre
-- [ ] **SolCarrot** figure whhat mod interfere food gain
-- [x] **ModularMachinery** Make Armor Assembling Machine
-- [ ] **ModularMachinery** Armor ingredients Recursively
-- [ ] **ModularMachinery** Advanced Phytogenic Insolator
-- [ ] **Crafts** Keep ability to craft everything in skyblock
-- [ ] **Respawnablepets** Make item dissapear when used
-- [ ] **TinkersConstruct** tools recycling
-- [ ] **EquilGeneration** Armor-only  materials
-- [ ] **EquilGeneration** Enable armor back
+  - Arcane Curiosity - Auromancy
+  - Ancient Curiosity - Golemancy
+  - Eldritch Curiosity - Eldritch
+  - Illuminating Curiosity - Arcane Infusion
+  - Twisted Curiosity - Artifice
+  - **SuperTIC** Добавить эффекты зелий материалам
 
 
 
@@ -43,3 +54,7 @@ Long-term
 - [ ] **Rats** Решить проблему с NBT в Mekanism
 - [ ] **Forestry** Make use of Bottler
 - [ ] **Rats** Structures Generation
+- [ ] **LottTableTweaker** Переработать лут на новые постройки
+- [ ] **ModularMachinery** Advanced Phytogenic Insolator
+- [ ] **ModularMachinery** Armor ingredients Recursively
+- [ ] **Crafts** Keep ability to craft everything in skyblock

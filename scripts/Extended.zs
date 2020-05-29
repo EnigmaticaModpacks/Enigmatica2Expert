@@ -80,13 +80,6 @@ recipes.addShapeless("Blaze Powder", <minecraft:blaze_powder>, [<minecraft:blaze
 // mods.mechanics.addCrushingBlockRecipe(<minecraft:gold_ingot> * 2, [<minecraft:light_weighted_pressure_plate>] as IItemStack[], [1.0] as double[]);
 // mods.mechanics.addCrushingBlockRecipe(<minecraft:iron_ingot> * 2, [<minecraft:heavy_weighted_pressure_plate>] as IItemStack[], [1.0] as double[]);
 
-# Respawnable pets (infinite uses)
-recipes.remove(<respawnablepets:etheric_gem>);
-recipes.addShaped(<respawnablepets:etheric_gem>, [
-	[<rustic:chain_gold>, null, <rustic:chain_gold>],
-	[<minecraft:potion>.withTag({Potion: "extrautils2:xu2.second.chance"}), <rats:gem_of_ratlantis>, <minecraft:potion>.withTag({Potion: "extrautils2:xu2.second.chance"})],
-	[null, <ore:ingotFireDragonsteel>, null]]);
-
 
 # ######################################################################
 #
@@ -101,23 +94,6 @@ recipes.addShaped(<bedrockores:bedrock_miner>, [
 	[<ore:dustBedrock>, <immersiveengineering:metal_device1:7>, <ore:dustBedrock>]]);
 
 
-
-/* 
-mods.inworldcrafting.
-
-FluidToItem.transform(IItemStack output, ILiquidStack inputFluid,
-	IIngredient[] inputItems, @Optional boolean consume);
-
-FluidToFluid.transform(ILiquidStack output, ILiquidStack inputFluid,
-	IIngredient[] inputItems, @Optional boolean consume);
-
-FireCrafting.addRecipe(IItemStack output, IIngredient inputItem, @Optional int ticks);
-
-ExplosionCrafting.explodeItemRecipe(IItemStack output, IIngredient inputItem, @Optional int survicechance);
-
- */
-
-
 /* 
 ---------------------
 ITEMS OF INTEREST
@@ -127,13 +103,15 @@ ITEMS OF INTEREST
 <twilightforest:cooked_venison>
 <randomthings:spectreilluminator>
 
-<opencomputers:robot>
-<opencomputers:print>
 <bibliocraft:enchantedplate>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 0 as short}]})
 <thaumcraft:nugget:10> -- Rare Earth
 <randomthings:ingredient:2> -- Ectoplasm
 <tombmanygraves:death_list>
 <randomthings:rezstone> -- Bloodstone
+<advancedrocketry:blocklens> - Lence (required precision assembler)
+<enderio:block_holy_fog> -- Nano-particles
+randomthings:strong_collapse -- Turnd upsidedown potion
+
 <liquid:hot_spring_water>
 <liquid:liquid_sunshine>
 <liquid:blockfluiddirt> -- Liquid Dirt from Animus
@@ -142,9 +120,6 @@ ITEMS OF INTEREST
 <liquid:menrilresin>
 <liquid:crystal> -- Crystallized obsidian
 <liquid:amber> -- Crystallized amber
-<advancedrocketry:blocklens> - Lence (required precision assembler)
-<enderio:block_holy_fog> -- Nano-particles
-randomthings:strong_collapse -- Turnd upsidedown potion
 
 ---------------------
 CRAFTS OF INTEREST

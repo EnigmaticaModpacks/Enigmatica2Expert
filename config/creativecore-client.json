@@ -1,3 +1,4 @@
 {
-  "use-stencil": true
+  "use-stencil": true,
+  "use-optifine-compat": true
 }
