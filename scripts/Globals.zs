@@ -114,7 +114,7 @@ global remakeFluidToItem as function(IItemStack, ILiquidStack, IIngredient)void 
     function (output as IItemStack, fluid as ILiquidStack, input as IIngredient) as void  {
 
 	recipes.remove(output);
-	mods.inworldcrafting.FluidToItem.transform(output, fluid, input);
+	mods.inworldcrafting.FluidToItem.transform(output, fluid, [input]);
 };
 
 

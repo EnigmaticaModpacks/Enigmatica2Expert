@@ -10,6 +10,7 @@
 !resourcepacks/
 ![!]Relese.bat
 !TODO.md
+!minecraftinstance.json
 
 # Files created by luncher
 config/splash.properties

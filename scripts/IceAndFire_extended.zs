@@ -3,7 +3,6 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.jei.JEI.removeAndHide as rh;
-import mods.inworldcrafting.FluidToItem.transform as fti;
 import mods.jaopca.JAOPCA;
 import mods.jaopca.OreEntry;
 
@@ -227,7 +226,7 @@ recipes.addShaped("iceandfire_deathworm_egg", <iceandfire:iceandfire.deathworm_e
 ]);
 
 # Big Worm
-fti(<iceandfire:iceandfire.deathworm_egg:1>, <liquid:blueslime>, <iceandfire:iceandfire.deathworm_egg>);
+mods.inworldcrafting.FluidToItem.transform(<iceandfire:iceandfire.deathworm_egg:1>, <liquid:blueslime>, [<iceandfire:iceandfire.deathworm_egg>]);
 
 ////////////////////////////////////
 // MYRMEX
@@ -343,8 +342,8 @@ envelopCheese("hippocampusMorb", <thermalexpansion:morb>.withTag({Generic: 1 as 
 envelopCheese("serpentMorb",     <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "iceandfire:seaserpent"}), <iceandfire:shiny_scales>);
 
 # Lily crafts
-fti(<iceandfire:fire_lily>, <liquid:pyrotheum>, <extrautils2:enderlilly>);
-fti(<iceandfire:frost_lily>, <liquid:cryotheum>, <extrautils2:enderlilly>);
+mods.inworldcrafting.FluidToItem.transform(<iceandfire:fire_lily>, <liquid:pyrotheum>, [<extrautils2:enderlilly>]);
+mods.inworldcrafting.FluidToItem.transform(<iceandfire:frost_lily>, <liquid:cryotheum>, [<extrautils2:enderlilly>]);
 
 recipes.addShapeless(<iceandfire:dragonforge_ice_core_disabled>, [<iceandfire:dragonforge_ice_core>]);
 recipes.addShapeless(<iceandfire:dragonforge_fire_core_disabled>, [<iceandfire:dragonforge_fire_core>]);

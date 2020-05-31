@@ -15,10 +15,10 @@ recipes.addShaped("ender_bucket2",
 	[null, <ore:plateIron>, null]]);
 
 # Blood stone from moon stone in Life Essense
-mods.inworldcrafting.FluidToItem.transform(<randomthings:rezstone>, <fluid:lifeessence>, <extrautils2:ingredients:5>);
+mods.inworldcrafting.FluidToItem.transform(<randomthings:rezstone>, <fluid:lifeessence>, [<extrautils2:ingredients:5>]);
 
 # Precious emerald from emerald in blueslime
-mods.inworldcrafting.FluidToItem.transform(<randomthings:ingredient:9>, <fluid:blueslime>, <ore:oreEmerald>);
+mods.inworldcrafting.FluidToItem.transform(<randomthings:ingredient:9>, <fluid:blueslime>, [<ore:oreEmerald>]);
 
 # Floo dust
 remakeEx(<randomthings:ingredient:7>*8, [

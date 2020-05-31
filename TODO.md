@@ -29,7 +29,8 @@ Finished
 
 Planned
 -----------
-
+- [ ] Main menu label
+- [ ] Less Table Crafting for Autocrafters
 
 
 Long-term

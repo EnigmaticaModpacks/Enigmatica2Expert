@@ -4,7 +4,6 @@ import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.jei.JEI.removeAndHide as rh;
 import mods.immersivetweaker.Recycling;
-import mods.inworldcrafting.FluidToItem.transform as fti;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.data.IData;
 
@@ -34,7 +33,7 @@ rh(<immersivecables:coil_block:3>);
 rh(<immersivecables:wire_coil:3>);
 
 # Make Quicksand
-mods.inworldcrafting.FluidToFluid.transform(<liquid:sand>, <liquid:blueslime>, <ore:soulSand>);
+mods.inworldcrafting.FluidToFluid.transform(<liquid:sand>, <liquid:blueslime>, [<ore:soulSand>]);
 
 # Sandwiches
 var anyDragonsteelSword as IIngredient = <tconstruct:large_sword_blade>.withTag({Material: "dragonsteel_fire"}) |
@@ -68,7 +67,7 @@ remakeEx(<toolbelt:belt>, [
 
 
 # Hydrated coal simplifying
-mods.inworldcrafting.FluidToItem.transform(<ic2:dust:3>, <fluid:water>, <ore:dustCoal>);
+mods.inworldcrafting.FluidToItem.transform(<ic2:dust:3>, <fluid:water>, [<ore:dustCoal>]);
 
 # Lesser blaze powder
 recipes.remove(<minecraft:blaze_powder> * 2);

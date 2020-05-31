@@ -41,7 +41,7 @@ for id, stage in armorStaged {
 		val recipe = mods.modularmachinery.RecipeBuilder.newBuilder(
 			machineName ~ "_" ~ id, machineName, pricesstingTime)
 			.addEnergyPerTickInput(80000)
-			.addFuelItemInout((34.0f * 64.0f * tierFactorEx) as int * 10000) # 345600 is Burn Time for Supremium coal block
+			#.addFuelItemInout((34.0f * 64.0f * tierFactorEx) as int * 10000) # 345600 is Burn Time for Supremium coal block
 			.addFluidInput(<liquid:lava> * ((59.0f * tierFactorEx) as int * 1000 + 1000));
 
 		# Add Oredict or ItemStack
