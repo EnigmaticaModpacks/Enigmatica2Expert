@@ -1,3 +1,5 @@
 {
-  "materialMappings": {}
+  "materialMappings": {
+    "heavy_metal_molten": 0
+  }
 }
