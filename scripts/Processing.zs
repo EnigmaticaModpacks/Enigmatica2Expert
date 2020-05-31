@@ -2,9 +2,6 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
-import mods.jei.JEI.removeAndHide as rh;
-import mods.immersivetweaker.Recycling;
-import mods.inworldcrafting.FluidToItem.transform as fti;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.data.IData;
 
@@ -27,7 +24,7 @@ function isNotException (exceptions as string, lookup as string) as bool  {
 }
 
 function itemFactor(output as IItemStack, mult as double) as IItemStack  {
-  return output * ((output.amount as double * mult) as int);
+  return output * max(1, min(output.maxStackSize, (output.amount as double * mult) as int));
 }
 function liquidFactor(output as ILiquidStack, mult as double) as ILiquidStack  {
   return output * ((output.amount as double * mult) as int);
@@ -38,6 +35,8 @@ function liquidFactor(output as ILiquidStack, mult as double) as ILiquidStack  {
 # Functions
 #
 # ######################################################################
+# TODO: Swap all inputs and outputs with IIngredient
+
 function squeezeSolidToFluid(input as IItemStack, output as ILiquidStack, byproduct as IItemStack) {
   # Rustic Crushing tub
   # mods.rustic.CrushingTub.addRecipe(output as ILiquidStack, byproduct as IItemStack, input as IItemStack);
@@ -59,7 +58,7 @@ function grow(input as IItemStack, output as IItemStack, exceptions as string,
 function saw(input as IItemStack, output as IItemStack, exceptions as string) {
 
   if (isNotException(exceptions, "shapeless")) {
-    recipes.addShapeless("Processing Saw " ~ getItemName(output), output * 2, [input]);
+    recipes.addShapeless("Saw " ~ getRecipeName(input, output), output * 2, [input]);
   }
 
   if (isNotException(exceptions, "manufactory")) {
@@ -92,9 +91,24 @@ function compress(input as IItemStack, output as IItemStack, exceptions as strin
   }
 }
 
-function alloy(input as IItemStack[], output as IItemStack, exceptions as string) {
-  if (isNotException(exceptions, "alloyFurnace") && input.length >= 2) {
+function alloy(input as IIngredient[], output as IItemStack, exceptions as string) {
+
+  if (isNotException(exceptions, "alloyFurnace") && input.length == 2) {
     mods.nuclearcraft.alloy_furnace.addRecipe(input[0], input[1], output);
+  }
+
+  if (isNotException(exceptions, "induction") && input.length == 2) {
+    for input1 in input[0].items{
+      for input2 in input[1].items{
+        mods.thermalexpansion.InductionSmelter.addRecipe(
+          output, input1, input2, 4000, <thermalfoundation:material:864>, 1500);
+      }
+    }
+  }
+
+  if (isNotException(exceptions, "alloySmelter") && input.length >= 2 && input.length <= 3) {
+    # mods.enderio.AlloySmelter.addRecipe(IItemStack output, IIngredient[] input, @Optional int energyCost, @Optional float xp);
+    mods.enderio.AlloySmelter.addRecipe(output, input, 2000);
   }
 
   if (isNotException(exceptions, "arcFurnance") && input.length >= 2) {
@@ -106,11 +120,6 @@ function alloy(input as IItemStack[], output as IItemStack, exceptions as string
     #  IItemStack output, IIngredient input, IItemStack slag, int time, int energyPerTick, @Optional IIngredient[] additives, @Optional String specialRecipeType);
     mods.immersiveengineering.ArcFurnace.addRecipe(
       output, input[0], <immersiveengineering:material:7>, 800, 2048, additives, "Alloying");
-  }
-
-  if (isNotException(exceptions, "induction") && input.length == 2) {
-    mods.thermalexpansion.InductionSmelter.addRecipe(
-      output, input[0], input[1], 4000, <thermalfoundation:material:864>, 10);
   }
 }
 
@@ -151,7 +160,8 @@ function crush(input as IItemStack, output as IItemStack, exceptions as string,
         combinedOutput = combinedOutput + secondary[i];
       }
     }
-    mods.enderio.SagMill.addRecipe(combinedOutput, secondaryChance, input);
+    val sagChances as float[] = (isNull(secondaryChance) ? ([1.0f] as float[]) : secondaryChance);
+    mods.enderio.SagMill.addRecipe(combinedOutput, sagChances, input);
   }
 
   if (isNotException(exceptions, "Grindstone")) {
@@ -173,18 +183,34 @@ function crush(input as IItemStack, output as IItemStack, exceptions as string,
   }
 }
 
+function crushRock(input as IIngredient, output as IItemStack[], exceptions as string) {
+
+  if (isNotException(exceptions, "rockCrusher")) {
+    # mods.nuclearcraft.rock_crusher.addRecipe([itemInput, itemOutput1, itemOutput2, itemOutput3, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
+    # mods.nuclearcraft.ChanceItemIngredient.create(IIngredient ingredient, int chancePercent, {int minStackSize});
+    mods.nuclearcraft.rock_crusher.addRecipe([input, 
+      output[0], 80,
+      output[1], 30,
+      output[2], 10,
+      4.0d, 2.0d]);
+    #mods.nuclearcraft.rock_crusher.addRecipe(input, output[0], output[1], output[2]);
+  }
+}
+
 function solution(input as IItemStack[], inputLiquids as ILiquidStack[],
                   output as IItemStack[], outputLiquids as ILiquidStack[], exceptions as string) {
   
-  if (isNotException(exceptions, "")) {
-    # TODO: Add solution recipes
+  if (isNotException(exceptions, "vat") &&
+      !isNull(input) && input.length >= 2
+    ) {
+    mods.enderio.Vat.addRecipe(outputLiquids[0], liquidFactor(inputLiquids[0], 4.0), [input[0]], [1.0f], [input[1]], [1.0f], 5000);
   }
 }
 
 function evaporate(inputLiquid as ILiquidStack, output as IItemStack, exceptions as string) {
   
   if (isNotException(exceptions, "EvaporatingBasin")) {
-    mods.rustic.EvaporatingBasin.addRecipe(output, inputLiquid);
+    mods.rustic.EvaporatingBasin.addRecipe(itemFactor(output, 0.5), inputLiquid);
   }
 
   if (isNotException(exceptions, "DryingBasin")) {
@@ -209,11 +235,11 @@ function recycleMetal(input as IItemStack, output as IItemStack, liquid as ILiqu
   if (isNotException(exceptions, "induction") && !isNull(output)) {
     # mods.thermalexpansion.InductionSmelter.addRecipe(IItemStack primaryOutput, IItemStack primaryInput, IItemStack secondaryInput, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
     mods.thermalexpansion.InductionSmelter.addRecipe(
-      itemFactor(output, 0.5), input, <minecraft:sand>, 4000, <thermalfoundation:material:864>, 10);
+      itemFactor(output, 0.5), input, <minecraft:sand>, 4000, <thermalfoundation:material:864>, 1500);
     mods.thermalexpansion.InductionSmelter.addRecipe(
-      itemFactor(output, 0.75), input, <thermalfoundation:material:865>, 6000, <thermalfoundation:material:864>, 10);
+      itemFactor(output, 0.75), input, <thermalfoundation:material:865>, 6000, <thermalfoundation:material:864>, 1500);
     mods.thermalexpansion.InductionSmelter.addRecipe(
-      output, input, <thermalfoundation:material:866>, 8000, <thermalfoundation:material:865>, 10);
+      output, input, <thermalfoundation:material:866>, 8000, <thermalfoundation:material:865>, 1500);
   }
 
   if (isNotException(exceptions, "smeltery") && !isNull(liquid)) {
@@ -222,5 +248,15 @@ function recycleMetal(input as IItemStack, output as IItemStack, liquid as ILiqu
   }
 }
 
+function melt(input as IIngredient, output as ILiquidStack, exceptions as string) {
+
+  if (isNotException(exceptions, "smeltery")) {
+    mods.tconstruct.Melting.addRecipe(output, input);
+  }
+
+  if (isNotException(exceptions, "melter")) {
+    mods.nuclearcraft.melter.addRecipe(input, output);
+  }
+}
 # Rustic Evaporating Basin
 // mods.rustic.EvaporatingBasin.addRecipe(<scalinghealth:heartdust>, <liquid:lifeessence>*100);

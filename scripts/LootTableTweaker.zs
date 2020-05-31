@@ -36,8 +36,6 @@ var itemsToRemove as string[] = [
 	"minecraft:milk_bucket",
 	"minecraft:obsidian",
 	"minecraft:water_bucket",
-	
-	"randomthings:spectrecoil_number",
 
 	"twilightforest:uncrafting_table",
 	"enderio:item_dark_steel_sword",
