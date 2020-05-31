@@ -276,15 +276,37 @@ remake("rats idol_of_ratlantis", <rats:idol_of_ratlantis>, [
 	[<rats:rat_toga>, <rats:gem_of_ratlantis>, <rats:marbled_cheese_rat_head>], 
 	[<rats:ratglove_petals>, <rats:feral_rat_claw>, <rats:ratlantean_flame>]]);
 
+
+static replExcept as IItemStack[] = [
+	<extrautils2:sickle_diamond>,
+	<minecraft:diamond_axe>,
+	<minecraft:diamond_block>,
+	<minecraft:diamond_boots>,
+	<minecraft:diamond_chestplate>,
+	<minecraft:diamond_helmet>,
+	<minecraft:diamond_hoe>,
+	<minecraft:diamond_leggings>,
+	<minecraft:diamond_pickaxe>,
+	<minecraft:diamond_shovel>,
+	<minecraft:diamond_sword>,
+	<thermalfoundation:material:16>
+] as IItemStack[];
+
 # More uses for Rat Diamond
-val diamondVariants = <ore:gemDiamond> | <rats:rat_diamond>;
-recipes.replaceAllOccurences(<ore:gemDiamond>, diamondVariants, <*>.only(function(item) {
-    return !isNull(item) 
-			& !<thermalfoundation:material:16>.matches(item) 
-			& !<minecraft:diamond_block>.matches(item);
+recipes.replaceAllOccurences(<ore:gemDiamond>, gemDiamondRat, <*>.only(function(item) {
+	if(isNull(item)){ return false; }
+	for i in 0 to replExcept.length {
+		if (item.matches(replExcept[i])){ return false; }
+	}
+	return true;
 }));
-recipes.replaceAllOccurences(<minecraft:diamond>, diamondVariants, <*>.only(function(item) {
-    return !isNull(item) 
-			& !<thermalfoundation:material:16>.matches(item) 
-			& !<minecraft:diamond_block>.matches(item);
+recipes.replaceAllOccurences(<minecraft:diamond>, gemDiamondRat, <*>.only(function(item) {
+	if(isNull(item)){ return false; }
+	for i in 0 to replExcept.length {
+		if (item.matches(replExcept[i])){ return false; }
+	}
+	return true;
 }));
+
+# Rat diamond melting
+scripts.Processing.melt(<rats:rat_diamond>, <liquid:diamond> * 165, "No Exceptions");
