@@ -112,6 +112,9 @@ print("--- loading AdvancedRocketry.zs ---");
 		] as IItemStack[];
 
 	for item in recipesToRemove {
+		for oredict in item.ores {
+			oredict.remove(item);
+		}
 		recipes.remove(item);
 	}	
 
