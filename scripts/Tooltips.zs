@@ -547,6 +547,7 @@ for item in thaumcraftHintItems {
 		"ic2:crafting",                           "3",     "180",
 		"ic2:nuclear",                            "3",     "21324",
 		"ic2:nuclear",                            "7",     "2369",
+		"ic2:resource",                           "12",    "800",
 		"ic2:resource",                           "13",    "1600",
 		"immersiveengineering:metal_decoration0", "3",     "950",
 		"immersiveengineering:metal_decoration0", "4",     "1600",
