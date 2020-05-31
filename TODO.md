@@ -13,42 +13,35 @@ Finished
 - [x] **Rats** Melting Rat Diamond
 - [x] **mysticalagriculture** Remove BoP and MystAgr Ore from IF laser
 - [x] **EnderIO** Harder Vibrant Alloy
+- [x] 🔴 **TwerkSimulator** Remove mod
+- [x] **EquilGeneration** Armor-only materials
+- [x] **EquilGeneration** Enable armor back
+- [x] **Armoreable mobs** Вернуть ради Game Stages
+- [x] BQ Storage Upgrade in quests or loot
+- [x] **Processing** Переработка блоков из Твайлайта
+- [x] **CraftTweaker** Check diamond custom recipes, exclude recyclable
+- [x] **ExtraUtils** Enabled things
+- [x] Simplify Blood Tanks
+- [x] **RandomThings** Rediscover Spectre (change Spectre lens, wood craft)
+- [x] Shift+E for open inventory
+- [x] AdvRoc Tank cheaper
+- [x] Harder magnet ring from botania
 
 Planned
 -----------
-- [ ] 🟢 **Mineral Tracker** New mod
-- [ ] 🟢 **Tinker's Evolution** New mod
-- [ ] 🟢 **Lazy AE2** New mod
-- [ ] **ExtraUtils** Enabled things
-- [ ] **Processing** molten diamond, obsidian unification
-- [x] **🌳TwilightForest** Запретить посохи телепортации
-- [x] **Armoreable mobs** Вернуть ради Game Stages
-- [x] **CraftTweaker** Check diamond custom recipes, exclude recyclable
-- [x] **ModularMachinery** Make Armor Assembling Machine
-- [x] **Processing** Переработка блоков из Твайлайта
-- [x] **RandomThings** Rediscover Spectre (change Spectre lens, wood craft)
-- [ ] **Orechid** blacklist ore
-
-- [ ] **EquilGeneration** Armor-only materials
-- [ ] **EquilGeneration** Enable armor back
-  - **TinkersConstruct⛏** Новые модификаторы и материалы
-  - **Материал** - плавленный сырок
-  - **Модификатор** - Additional Ore when mining
-  - **Модификатор** - Deconstruct Armor when kick, or on crafting table
-  - **Материалы** с эффектом зелий
-  - **Материал** для дропа куриоситей
-  - **Модификатор прыжка** Что бы дробить ресурсы
-  - Arcane Curiosity - Auromancy
-  - Ancient Curiosity - Golemancy
-  - Eldritch Curiosity - Eldritch
-  - Illuminating Curiosity - Arcane Infusion
-  - Twisted Curiosity - Artifice
-  - **SuperTIC** Добавить эффекты зелий материалам
 
 
 
 Long-term
 -----------
+- [x] **ModularMachinery** Make Armor Assembling Machine
+- [ ] Processing less wood for low-tech machines
+- [ ] **🌳TwilightForest** Запретить посохи телепортации
+- [ ] TiCon Burrowing from Thaumcraft modifier
+- [ ] Beet в магазинчик
+- [ ] **Orechid** blacklist ore
+- [ ] Mud bricks to crafts
+- [ ] Compost recipes
 - [ ] **IconExporter** Дерево крафта с иконками
 - [ ] **Rats** Переработка пластиковых отходов
 - [ ] **Rats** Решить проблему с NBT в Mekanism
@@ -58,3 +51,15 @@ Long-term
 - [ ] **ModularMachinery** Advanced Phytogenic Insolator
 - [ ] **ModularMachinery** Armor ingredients Recursively
 - [ ] **Crafts** Keep ability to craft everything in skyblock
+- [ ] **TinkersConstruct⛏** Modifiers to Generation
+- [ ] **Материал** - плавленный сырок
+- [ ] Опустить потребление всех машин в 10-50 раз
+  - **TinkersConstruct⛏** Новые модификаторы и материалы
+  - **Модификатор** - Additional Ore when mining
+  - **Модификатор** - Deconstruct Armor when kick, or on crafting table
+  - **Материалы** с эффектом зелий
+  - **Материал** для дропа куриоситей
+  - **Модификатор прыжка** Что бы дробить ресурсы
+- [ ] 🟢 **Mineral Tracker** New mod
+- [ ] 🟢 **Tinker's Evolution** New mod, add materials to equip generation
+- [ ] 🟢 **Lazy AE2** New mod, tweak crafts

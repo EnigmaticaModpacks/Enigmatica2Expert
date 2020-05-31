@@ -60,16 +60,16 @@ print("--- loading ExtraUtilities2.zs ---");
 	recipes.addShapedMirrored("Wireless RF Transmitter", 
 	<extrautils2:powertransmitter>, 
 	[[null, <extrautils2:ingredients>, null],
-	[<appliedenergistics2:material:42>, <opencomputers:card:7>, <appliedenergistics2:material:42>], 
+	[null, <appliedenergistics2:material:42>, null], 
 	[<extrautils2:decorativesolid:3>, <extrautils2:decorativesolid:3>, <extrautils2:decorativesolid:3>]]);
 
 # Wireless RF Battery
 	recipes.remove(<extrautils2:powerbattery>);
 	recipes.addShapedMirrored("Wireless RF Battery", 
 	<extrautils2:powerbattery>, 
-	[[<extrautils2:decorativesolid:3>, <immersiveengineering:metal_decoration0:3>, <extrautils2:decorativesolid:3>],
-	[<ore:gemRedstone>, <actuallyadditions:item_battery>.anyDamage(), <ore:gemRedstone>], 
-	[<extrautils2:decorativesolid:3>, <immersiveengineering:metal_decoration0:3>, <extrautils2:decorativesolid:3>]]);
+	[[<extrautils2:decorativesolid:3>, <ore:blockRedstone>, <extrautils2:decorativesolid:3>],
+	[<ore:gemRedstone>, <immersiveengineering:metal_decoration0:3>, <ore:gemRedstone>], 
+	[<extrautils2:decorativesolid:3>, <ore:blockRedstone>, <extrautils2:decorativesolid:3>]]);
 
 # Rainbow Generator
 	recipes.remove(<extrautils2:rainbowgenerator>);

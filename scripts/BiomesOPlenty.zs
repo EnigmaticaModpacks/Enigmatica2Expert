@@ -82,6 +82,5 @@ print("--- loading BiomesOPlenty.zs ---");
 	
 # Amber Block
 	rh(<biomesoplenty:gem_block:7>);
-	rh(<biomesoplenty:gem:7>);
 	
 print("--- BiomesOPlenty.zs initialized ---");

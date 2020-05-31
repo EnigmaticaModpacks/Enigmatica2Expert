@@ -275,7 +275,7 @@ val ox as IIngredient = <ore:dustCyanite> | <ore:itemSlagRich> | <ore:dustPsi>;
 addHighOvenRecipe(<liquid:soularium> *144          ,<liquid:gold>*144           , 5100 , <ore:dustBedrock>  , 50  , <mysticalagriculture:crafting:28>, 100, ox, 25);
 addHighOvenRecipe(<liquid:electrical_steel> *144   ,<liquid:steel>*144          , 3000 , <ore:dustBedrock>  , 50  , <ore:itemSilicon>                , 100, ox, 25);
 addHighOvenRecipe(<liquid:energetic_alloy> *144    ,<liquid:gold>*144           , 3600 , <ore:dustBedrock>  , 50  , <ore:dustEnergetic>              , 100, ox, 25);
-addHighOvenRecipe(<liquid:vibrant_alloy> *144      ,<liquid:energetic_alloy>*144, 5400 , <ore:dustBedrock>  , 50  , <ore:dustEnderPearl>             , 100, ox, 25);
+addHighOvenRecipe(<liquid:vibrant_alloy> *144      ,<liquid:energetic_alloy>*144, 5400 , <ore:dustBedrock>  , 50  , <extendedcrafting:material:49>   , 100, ox, 25);
 addHighOvenRecipe(<liquid:redstone_alloy> *144     ,<liquid:tin>*144            , 3600 , <ore:dustBedrock>  , 50  , <ore:dustRedstone>               , 100, ox, 25);
 addHighOvenRecipe(<liquid:conductive_iron> *144    ,<liquid:iron>*144           , 4200 , <ore:dustBedrock>  , 50  , <ore:dustRedstone>               , 100, ox, 25);
 addHighOvenRecipe(<liquid:pulsating_iron> *144     ,<liquid:silver>*144         , 5500 , <ore:dustBedrock>  , 50  , <ore:dustEnder>                  , 100, ox, 25);

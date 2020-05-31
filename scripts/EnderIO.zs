@@ -257,3 +257,10 @@ mods.enderio.SagMill.addRecipe([<appliedenergistics2:material:45>] as IItemStack
 scripts.Processing.crush(<enderio:item_material:76>, <enderio:block_holy_fog> * 2, "except: sagMill", 
 	[<minecraft:clay_ball>, <minecraft:glowstone_dust>], [0.1f, 0.1f]);
 scripts.Processing.alloy([<minecraft:glowstone_dust>, <minecraft:clay_ball>], <enderio:item_material:76> * 2, "except: alloySmelter");
+
+# Harder Vibrant Alloy
+mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_ingot:2>);
+mods.enderio.AlloySmelter.addRecipe(<enderio:item_alloy_ingot:2>, [<ore:ingotEnergeticAlloy>, <extendedcrafting:material:49>]);
+
+mods.thermalexpansion.InductionSmelter.removeRecipe(<enderio:item_alloy_ingot:1>, <minecraft:ender_pearl>);
+mods.thermalexpansion.InductionSmelter.addRecipe(<enderio:item_alloy_ingot:2>, <enderio:item_alloy_ingot:1>, <extendedcrafting:material:49>, 1500);

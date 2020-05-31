@@ -115,4 +115,10 @@ print("--- loading AdvancedRocketry.zs ---");
 		recipes.remove(item);
 	}	
 
-		print("--- AdvancedRocketry.zs initialized ---");
+# Simplify tank
+recipes.remove(<advancedrocketry:liquidtank>);
+recipes.addShaped(<advancedrocketry:liquidtank>, [
+	[<ore:plateTitanium>, <ore:paneGlass>, <ore:plateTitanium>],
+	[<ore:plateTitanium>, <ore:paneGlass>, <ore:plateTitanium>],
+	[<ore:plateTitanium>, <ore:paneGlass>, <ore:plateTitanium>]]);
+recipes.addShapeless("Clearing AdvRock Tank", <advancedrocketry:liquidtank>, [<advancedrocketry:liquidtank>]);

@@ -292,7 +292,7 @@
 
   <recipe name="Sagmill: Flux Core" required="true">
     <sagmilling energy="1000000">
-      <input name="enderio:block_transceiver"/>
+      <input name="thermalexpansion:frame:148"/>
       <output name="fluxnetworks:fluxcore" amount="32" />
     </sagmilling>
   </recipe>

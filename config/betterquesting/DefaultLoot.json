@@ -1507,7 +1507,28 @@
           "ID:3": 89,
           "items:9": {
             "0:10": {
-              "id:8": "flatcoloredblocks:coloredcraftingitem",
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "ironchest:wood_iron_chest_upgrade",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "ironchest:wood_iron_chest_upgrade",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "ironchest:wood_iron_chest_upgrade",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -4451,6 +4472,39 @@
               "OreDict:8": ""
             }
           }
+        },
+        "107:10": {
+          "weight:3": 10,
+          "ID:3": 107,
+          "items:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "ironchest:iron_gold_chest_upgrade",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "ironchest:iron_gold_chest_upgrade",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "ironchest:iron_gold_chest_upgrade",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
         }
       }
     },
@@ -6051,6 +6105,75 @@
               "OreDict:8": ""
             }
           }
+        },
+        "116:10": {
+          "weight:3": 10,
+          "ID:3": 116,
+          "items:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "ironchest:gold_diamond_chest_upgrade",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "ironchest:gold_diamond_chest_upgrade",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "ironchest:gold_diamond_chest_upgrade",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "117:10": {
+          "weight:3": 10,
+          "ID:3": 117,
+          "items:9": {
+            "0:10": {
+              "id:8": "actuallyadditions:item_chest_to_crate_upgrade",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "118:10": {
+          "weight:3": 10,
+          "ID:3": 118,
+          "items:9": {
+            "0:10": {
+              "id:8": "actuallyadditions:item_small_to_medium_crate_upgrade",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "119:10": {
+          "weight:3": 10,
+          "ID:3": 119,
+          "items:9": {
+            "0:10": {
+              "id:8": "actuallyadditions:item_medium_to_large_crate_upgrade",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
         }
       }
     },
@@ -6381,9 +6504,6 @@
           "ID:3": 25,
           "items:9": {
             "0:10": {
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
               "id:8": "biomesoplenty:terrestrial_artifact",
               "Count:3": 16,
               "Damage:2": 0,
