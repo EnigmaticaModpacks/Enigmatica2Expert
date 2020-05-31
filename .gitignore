@@ -93,3 +93,5 @@ twitch-export-builder.exe
 settings.ps1
 TwitchExportBuilder.exe
 CHANGELOG-GENERATED.md
+MakeModpackFiles.bat
+MakeModpackFiles.ps1
