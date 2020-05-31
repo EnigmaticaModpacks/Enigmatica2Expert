@@ -4,42 +4,55 @@
 
 _Remember to use the command `/bq_admin default load` when updating_
 
-_Using Forge-1.12.2-14.23.5.2854_
-
-_[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.81.txt)_
+_[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.81.txt)_ | _Using Forge-1.12.2-14.23.5.2847_
 
 **Changes**
 
--   RFTools: Infuser now uses a lot more power.
--   RFTools: Matter Beamer / Spawner now use a lot more power, but can hold more matter and send more blocks.
--   Quark: Compass and Clock fixes have been turned off, they are now as vanilla intended them to be - slightly useless. This was turned off as it caused bug [#1664](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1664).
--   JEI: Un-hidden a bunch of useful stuff, such as IC2 Universal Fluid Cells
 -   AdvancedRocketry: Increased machine energy consumption a lot more, since they're near the endgame.
--   ThermalExpansion: Buffed Thermal Expansion Energy Cells, both capacity and I/O
--   EnderIO: Buffed Lava Heat Exchanger.
--   EnderIO: Increased machine energy consumption a lot, to match their speed and tier.
--   Industrial Foregoing; Infinity Drill: Made the energy requirements a bit more gradual. It's still pretty insane
--   Industrial Foregoing; Infinity Drill: Increased the mining area.
--   ThermalExpansion: Buffed Thermal Expansion Dynamo RF/t. Amount of RF produced by fuel is unchanged.
 -   Animania: Buffed the Hamster Wheel. A lot.
 -   Animus: Increased cost of the Khopesh
 -   AppliedEnergistics: Lapis Dust can now be made in the Grinder
+-   EnderIO: Buffed Lava Heat Exchanger.
+-   EnderIO: Increased machine energy consumption a lot, to match their speed and tier.
 -   IndustrialForegoing: Belt recipes now accept any Rubber
+-   Industrial Foregoing; Infinity Drill: Increased the mining area.
+-   Industrial Foregoing; Infinity Drill: Made the energy requirements a bit more gradual. It's still pretty insane
+-   JEI: Un-hidden a bunch of useful stuff, such as IC2 Universal Fluid Cells
+-   Quark: Compass and Clock fixes have been turned off, they are now as vanilla intended them to be - slightly useless. This was turned off as it caused bug [#1664](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1664).
+-   RFTools: Infuser now uses a lot more power.
+-   RFTools: Matter Beamer / Spawner now use a lot more power, but can hold more matter and send more blocks.
+-   ThermalExpansion: Buffed Thermal Expansion Dynamo RF/t. Amount of RF produced by fuel is unchanged.
+-   ThermalExpansion: Buffed Thermal Expansion Energy Cells, both capacity and I/O
 
 **Bug Fixes**
 
--   Fixed incorrect biomes on Advanced Rocketry planets
--   Fixed Mooshroom spawn egg in Market
--   Fixed Mekanism Cardboard working on blocks on the blacklist
+-   Basic Machine Casing Cannot Be Replicated With UU Matter [\#1705](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1705)
+-   Black Hole Tank Duplication Glitch with Cyclic Piston Scepter [\#1644](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1644)
+-   Can't insert Clock nor Compass into Induction Smelter [\#1664](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1664)
+-   Capability adapter & Quantum Ring do not have alternative recipes if channels are disabled. [\#1662](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1662)
+-   Crash on destroying HV wire with rainbow cannon from Cyclic [\#1721](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1721)
+-   Crash on rendering information of item conduit from EnderIO [\#1706](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1706)
+-   EnderIO Soul Vial does not respect default config blacklist [\#1651](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1651)
 -   Fix Broken Cutting Machine Recipes (Credit Ssyl)
+-   Fixed incorrect biomes on Advanced Rocketry planets
+-   Fixed Mekanism Cardboard working on blocks on the blacklist
+-   Fixed Mooshroom spawn egg in Market
+-   Forestry Logs cannot be cut in Mekanism sawmill or Nuclearcraft Manufactory [\#1674](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1674)
+-   Item Placeholder in Epic tier reward: Resonant Exchanger [\#1665](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1665)
+-   Mass Fabricator quest corrections [\#1648](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1648)
+-   Missing IE Crusher Recipies [\#1711](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1711)
+-   Molten Salt Reactor Configs are weird/not really useable [\#1690](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1690)
+-   Remove some unobtainable items from oredicts [\#1702](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1702)
+-   Spellbound Cloth not reusable [\#1697](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1697)
+-   Thermal Expansion Compactor/Sequential Fabricator Quest Icons are Switched [\#1663](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1663)
+-   Thermal Expansion Sawmill doesn't make sticks [\#1647](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1647)
+-   Universal Fluid Cell [\#1649](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1649)
+-   Water Source blocks as well as Clay blocks being generated on its own? [\#1655](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1655)
 
 **Added Mods**
 
 -   [IC2 Tweaker](https://www.curseforge.com/minecraft/mc-mods/ic2-tweaker)
-
-**Mod Removals**
-
--
+-   AttributeFix [\#1686](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1686)
 
 ## 1.80
 

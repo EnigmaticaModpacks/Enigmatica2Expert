@@ -1,0 +1,441 @@
+=================================================
+Enigmatica2Expert 1.80 --> Enigmatica2Expert 1.81
+=================================================
+
+Added:
+- AttributeFix
+- IC2 Tweaker
+- Item Filters
+- xXx_MoreToolMats_xXx
+
+Updated:
+	Advanced Rocketry (AdvancedRocketry 1.12.2-1.7.0-209 build -209 for 1.12.2 --> AdvancedRocketry 1.12.2-1.7.0-221 build -221 for 1.12.2):
+		AdvancedRocketry 1.12.2-1.7.0-221 build -221 for 1.12.2:
+			Current release 1.12.2-1.7.0-221
+			*  [ Fix sky not rendering properly below sealevel](https://github.com/zmaster587/AdvancedRocketry/commit/a0c255d1b0ffcf3)
+			*  [ Fix crash with holographic projector with substars, #1817. Update some 1.7 rendering code to 1.12](https://github.com/zmaster587/AdvancedRocketry/commit/ed5d3d63d684b28)
+
+		AdvancedRocketry 1.12.2-1.7.0-220 build -220 for 1.12.2:
+			Current release 1.12.2-1.7.0-220
+			*  [ 16x textures and four new planet textures added (#1811) * 16x textures and four new planet textures added * 16x guidance computer access hatch](https://github.com/zmaster587/AdvancedRocketry/commit/276e4e444f0dde5)
+			*  [ Fixed temperature being off by a factor of sqrt(2) (#1813)](https://github.com/zmaster587/AdvancedRocketry/commit/797b06d2df83762)
+
+		AdvancedRocketry 1.12.2-1.7.0-219 build -219 for 1.12.2:
+			Current release 1.12.2-1.7.0-219
+			*  [ Hopefully fix build errors from being unable to find the mappings](https://github.com/zmaster587/AdvancedRocketry/commit/5108c05e401a2a0)
+
+		AdvancedRocketry 1.12.2-1.7.0-218 build -218 for 1.12.2:
+			Current release 1.12.2-1.7.0-218
+			*  [ Hopefully fix build errors from being unable to find the mappings](https://github.com/zmaster587/AdvancedRocketry/commit/5108c05e401a2a0)
+
+	AppleCore (AppleCore-mc1.12.2-3.2.0.jar --> AppleCore-mc1.12.2-3.4.0.jar):
+		AppleCore-mc1.12.2-3.4.0.jar:
+			* Fix the permissions of the /hunger command being unnecessarily high ([#151](https://github.com/squeek502/AppleCore/pull/151))
+			* API: Add ExhaustionEvent.GetExhaustionCap (see [#152](https://github.com/squeek502/AppleCore/issues/152))
+			* - Allows modifying the cap on the exhaustion level field of FoodStats, which in vanilla is capped at 40.
+
+		AppleCore-mc1.12.2-3.3.0.jar:
+			* Fix the two argument version of the /hunger [player] <hunger> command ([#147](https://github.com/squeek502/AppleCore/pull/147))
+			* API: Add IAppleCoreAccessor.canPlayerEatFood ([#149](https://github.com/squeek502/AppleCore/pull/149))
+			* Allows checking if a player can eat food depending on their current fullness and whether or not the item is alwaysEdible
+
+	Better Questing (BetterQuesting-3.5.323.jar --> BetterQuesting-3.5.329.jar):
+		BetterQuesting-3.5.329.jar:
+			Added chapter designer shortcut
+			Removed anti-tamper protection code
+
+		BetterQuesting-3.5.327.jar:
+			Fixed submission station not setting up quests properly
+			Fixed forced complete quests not repeating properly
+			Fixed quest chapter not properly supporting partial sync
+			Removed a few deprecated methods
+
+	CC: Tweaked (cc-tweaked-1.12.2-1.86.2.jar --> cc-tweaked-1.12.2-1.88.0.jar):
+		cc-tweaked-1.12.2-1.88.0.jar:
+			Release notes can be found on the GitHub repository ([https://github.com/SquidDev-CC/CC-Tweaked/releases/tag/v1.12.2-1.88.0](https://github.com/SquidDev-CC/CC-Tweaked/releases/tag/v1.12.2-1.88.0)).
+
+		cc-tweaked-1.12.2-1.87.0.jar:
+			Release notes can be found on the GitHub repository ([https://github.com/SquidDev-CC/CC-Tweaked/releases/tag/v1.12.2-1.87.0](https://github.com/SquidDev-CC/CC-Tweaked/releases/tag/v1.12.2-1.87.0)).
+
+	Cosmetic Armor Reworked (CosmeticArmorReworked-1.12.2-v4b.jar --> CosmeticArmorReworked-1.12.2-v5a.jar):
+		CosmeticArmorReworked-1.12.2-v5a.jar:
+			Re-built the jar to fix lang files.
+
+		CosmeticArmorReworked-1.12.2-v5.jar:
+			Ported from 1.15.2-v2:
+			Added a config option for disabling the RecipeBook in the CosmeticArmorInventory.
+
+	Cyclic (Cyclic-1.12.2-1.19.21.jar --> Cyclic-1.12.2-1.20.2.jar):
+		Cyclic-1.12.2-1.20.2.jar:
+			Put in some checks in case a player is logging out and in with a bounce potion effects.
+			Item Sorter: Normal mode now matches NBT (enchantments etc); and new Ore Dictionary mode added
+
+		Cyclic-1.12.2-1.20.1.jar:
+			Fixed startup crash that happens only IF FastWorkbench not installed
+			See previous changelog [https://www.curseforge.com/minecraft/mc-mods/cyclic/files/2929505](https://www.curseforge.com/minecraft/mc-mods/cyclic/files/2929505)
+
+		Cyclic-1.12.2-1.20.0.jar:
+			Updated 'block placement' logic through the entire mod, so things like building scepters and machines place blocks and keep their NBT data (like shulker boxes) as well as relative player directions, also improved compatibility with any blocks having special onItemUse logic/metadata.
+			Workbench now quickly and cleanly syncs between multiple players using it at the same time.
+			Excavate no longer allows tools to go into negative durability (correctly uses native attemptDamageItem to handle unbreaking enchant, tool damage, and tool breaking).
+			GPS Marker now stores specific location of the hit within the block, the players facing direction, and the block-face clicked on (shows on tooltip while holding sneak)
+			Structure Builder GUI changed, removed offset sliders and replaced with GPS slot; removed rotations value.
+			Structure builder now optionally uses the GPS markers, so you can target an offset location and set the orientation of rotating blocks such as stairs.
+			Structure builder Diagonal setting now uses size to build across just like a roof.
+			Structure builder has a new Horizontal Cylander building mode.
+			Renamed Cyclic building scepter to Ranged Building Scepter; it now renders an outline of the distant block that it will place.
+			GPS Marker now renders an outline of the selected block.
+			The three anvils now can be rotated like regular anvils.
+			Allow cables to be harvested and dropped as items when broken by hand.
+			Fluid Drain now has a Preview Render button to show the currently targeted block.
+			Rebuilt and fixed saturation potion.
+			Vision Helmet no longer grants glowing effect.
+			Interdiction Pulsar now works on hostile mobs riding non-hostile living mobs by moving their mounts (such as zombie chicken riders or mobs on horses).
+			Fixed pattern replicator render outline button.
+			Pattern replicator redesigned and now use GPS Markers to select areas to copy and paste.
+			Pattern replicator now builds from the bottom up so that unsupported blocks such as redstone dust or carpet builds more reliably.
+			Fixed issue in Exp pylon -500 button.
+			Each quadrant of Ender Library can store 999999 enchantments, up from 64.
+			Ender Library now saves its data when picked up and placed down as an item, for safe transport like a shulker box.
+			Fixed Model Variant Exceptions showing in log file.
+			Fixed water candle sometimes spawning mobs in the ground or creating other duplicate blocks.
+			All dynamyte now uses ExplosionEvent.Start event to allow other mods to hook and cancel explosions if needed.
+			Piston Scepter: removed rotate mode (wooden wrench does exactly this); Piston scepter now pushes a whole line of blocks not just one, matching real piston behavior; also it checks canPlayerMove for permission hooks.
+			Ender Library now checks for enchanted books of stack size != 1 for mod compatibility.
+			Improve Storage Bag button tooltips for useability.
+			Storage Bag deposit updated to use capabilities (more compatible with more modded inventories for example AA Crates).
+			Added crystallized_amber and crystallized_obsidian to default BlacklistInput config for the uncrafter (not affecting existing modpacks but reccomended to add these values).
+			Updated how Forester looks for ore dictionary logWood blocks when logs have metadata (fixes Biomes o Plenty trees in forester).
+			Forester now skips air blocks faster.
+			Password Trigger now works if player is in a different dimension than the block (if blocks chunk is loaded by something).
+			Added configs to tweak the x/y offsets of the inventory buttons.
+			Added a few more refinedstorage items to SackHoldingBlacklist config (some RS blocks dont use compatible tile entity NBT storage).
+
+	Cyclops Core (CyclopsCore-1.12.2-1.6.2.jar --> CyclopsCore-1.12.2-1.6.4.jar):
+		CyclopsCore-1.12.2-1.6.4.jar:
+			As always, don't forget to backup your world before updating!
+			Fixes:
+			* Fix version checker running in main thread causing slowdown, Closes #143
+
+		CyclopsCore-1.12.2-1.6.3.jar:
+			As always, don't forget to backup your world before updating!
+			Fixes:
+			* Fix rare NPE on Colossal Chest placement, Closes CyclopsMC/CyclopsCore#142
+
+	EnderCore (EnderCore - 1.12.2-0.5.73 --> EnderCore - 1.12.2-0.5.75):
+		EnderCore - 1.12.2-0.5.75:
+			EnderCore 1.12.2-0.5.75
+
+		EnderCore - 1.12.2-0.5.74:
+			EnderCore 1.12.2-0.5.74
+
+	Ex Compressum (ExCompressum_1.12.2-3.0.31.jar --> ExCompressum_1.12.2-3.0.32.jar):
+		ExCompressum_1.12.2-3.0.32.jar:
+			Fixed crash if a mana sieve was placed in a world and the world was then re-joined
+			Fixed dupe bug in auto sieves
+			Fixed crash when feeding chorus fruit to a sieve
+
+	FPS Reducer (FpsReducer-mc1.12.2-1.14.1.jar --> FpsReducer-mc1.12.2-1.15.jar):
+		FpsReducer-mc1.12.2-1.15.jar:
+			v1.15
+			* Added Simplified Chinese translation. (Thanks to cutedobe)
+			* Added Traditional Chinese translation. (Thanks to cutedobe)
+			* Added Russian translation. (Thanks to agent_rby_)
+			v1.14.1
+			* Fixed the crash when using OpenJ9.
+			* Updated Polish translation. (Thanks to Grreg21)
+			* Updated English lang file. (Thanks to Grreg21)
+			v1.14
+			* Changed default settings: "Reudce FPS when inactive": OFF -> ON
+			* Changed default settings: "Suppress sound when inactive": OFF -> ON
+			* Changed default settings: suppressedVolume: 10 -> 20
+			* Changed the function of "FPS Reducer" button. All suppression functions are now off.
+			* Changed "Waiting Timer" can be OFF by moving the slider to the right end.
+			* Added CPU usage information of client thread.
+			* Added new settings related to CPU usage information. (cpuUsageThread, cpuUsageType)
+			* Added new GUI for adjusting HUD layout.
+			* Improved the accuracy of FPS information.
+			* Added Polish translation. (Thanks to Grreg21)
+			v1.12.4
+			* Fixed the issue to save the lowered fps and volume value to options.txt in certain situations.
+			* Fixed the issue not to reduce FPS when the window is inactive after loading a world.
+			v1.12.2
+			* SuppressSound feature has been effective even in the main menu.
+			* Refactored some codes.
+			v1.12
+			* Added player moving detection to avoid FPS reduction during riding and flying.
+			* Changed left-bottom FPS indication way not to overlap a chat box.
+			* Integrated the wating time sliders.
+			v1.10.3
+			* Removed overhead due to debugging code.
+			* Changed to get maxFPS from GameSettings class.
+			v1.10.2
+			* Fixed a crash caused by NPE while checking key event.
+			* Fixed a possibility of crash when player entity is null.
+			v1.10.1
+			* Fixed a problem that frame rate might not decrease when a window is inactive.
+			* Added HUD scale option.
+			* Added some HUD color and text configurations.
+			* Modified a default config mode to Global config mode.
+			* [1.8.9~1.12.2] Added clientSideOnly property.
+			* Disabled debug log.
+			v1.9
+			* Added per-player config for some parameters other than HUD related parameters in order to avoid re-config by players due to modpack update.
+			* Added an initial easy configuration in chat. (disabled by default)
+			* Added Turkish lang file.(Thanks to RoCoKo)
+			v1.8
+			* Changed a suppression volume control to a relative ratio to the current sound volume.
+
+	Integrated Dynamics (IntegratedDynamics-1.12.2-1.1.4.jar --> IntegratedDynamics-1.12.2-1.1.6.jar):
+		IntegratedDynamics-1.12.2-1.1.6.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.6.0 or higher.
+			Fixes:
+			* Fix ValueTypeListProxyEntityItems to use ItemStack.EMPTY instead of null
+			* Replace null with ItemStack.EMPTY to avoid crash
+			* Remove incorrect cyclic reference check
+
+		IntegratedDynamics-1.12.2-1.1.5.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.6.0 or higher.
+			Additions:
+			* Allow blank recipe creation in LP, Closes #837
+			Changes:
+			* Increase LP text input fields to max 512 characters, Closes #841
+
+	LibVulpes (LibVulpes 1.12.2-0.4.2-74 build -74 for 1.12.2 --> LibVulpes 1.12.2-0.4.2-75 build -75 for 1.12.2):
+		LibVulpes 1.12.2-0.4.2-75 build -75 for 1.12.2:
+			Current release 1.12.2-0.4.2-75
+			*  [ 16x textures from the unmerged Cl1ff PR](https://github.com/zmaster587/LibVulpes/commit/984d67474a50494)
+			*  [ Fix infinite recursion](https://github.com/zmaster587/LibVulpes/commit/b0b9db8680999db)
+			*  [ Added scale on rendering tags](https://github.com/zmaster587/LibVulpes/commit/42798ec8e2bb07a)
+			*  [ update changelog task](https://github.com/zmaster587/LibVulpes/commit/3cdb627ee44dbd7)
+			*  [ change curse task to upload as a beta](https://github.com/zmaster587/LibVulpes/commit/ee2c14a5d52a55f)
+			*  [ Add fluidmapping capability, mostly for liquidoxygen <--> oxgygen](https://github.com/zmaster587/LibVulpes/commit/8d7afb7581b37eb)
+			*  [ update default XML](https://github.com/zmaster587/LibVulpes/commit/ae5d8057949f4ff)
+			*  [ use ;s everywhere](https://github.com/zmaster587/LibVulpes/commit/3250147c581f730)
+			*  [ Add backwards compat for existing configs](https://github.com/zmaster587/LibVulpes/commit/a15c989b6ab4f5d)
+			*  [ Second Set of 1.12 Parser Changes](https://github.com/zmaster587/LibVulpes/commit/140e5cc1d8c64a3)
+			*  [ First Set of Parser Changes Separator from "; " to ";"](https://github.com/zmaster587/LibVulpes/commit/6590cb1bafdc65b)
+			*  [ Update to new Parser Make examples follow behavior](https://github.com/zmaster587/LibVulpes/commit/315707d5ca558a6)
+			*  [ Update to new Parser bits Fixes spaced fluid names](https://github.com/zmaster587/LibVulpes/commit/39e5f931bec844d)
+			*  [ upgrade changelog plugin because compat](https://github.com/zmaster587/LibVulpes/commit/c140aada3958398)
+			*  [ 'fix' Tesla dependancy issue and inability to download from curseforge](https://github.com/zmaster587/LibVulpes/commit/0a4cdc241ba9e8b)
+			*  [ rename crystal -> gem to fall in line with naming conventions](https://github.com/zmaster587/LibVulpes/commit/808a9a7cdc49729)
+			*  [ don't try to register null blocks' icons](https://github.com/zmaster587/LibVulpes/commit/5368e63c1fced37)
+			*  [ Don't populate output with all of the oredict objects](https://github.com/zmaster587/LibVulpes/commit/8a229a693458477)
+			*  [ Fix items registering before registering recipes, fixes https://github.com/zmaster587/AdvancedRocketry/issues/1626](https://github.com/zmaster587/LibVulpes/commit/81621d4df218dda)
+			*  [ add missing event file](https://github.com/zmaster587/LibVulpes/commit/07f81a32a1b60f4)
+			*  [ update revision](https://github.com/zmaster587/LibVulpes/commit/20bfd62c31c43cf)
+			*  [ Fix bucket handling. See https://github.com/zmaster587/AdvancedRocketry/issues/1601](https://github.com/zmaster587/LibVulpes/commit/f0254bb83f3680b)
+			*  [ Volcano processing stuff](https://github.com/zmaster587/LibVulpes/commit/73cc9cd44ca508b)
+			*  [ deprecation warning](https://github.com/zmaster587/LibVulpes/commit/c51b3d5d5500a59)
+			*  [ fix broken default machine recipies](https://github.com/zmaster587/LibVulpes/commit/9e638ca5005933e)
+			*  [ Add support for full screen centered interfaces](https://github.com/zmaster587/LibVulpes/commit/523b06c66681410)
+			*  [ Fix issues where a stack with a damage of 32767 was not being consumed](https://github.com/zmaster587/LibVulpes/commit/82b0dfbd3dbf608)
+			*  [ make sure we support data values on the input](https://github.com/zmaster587/LibVulpes/commit/c30e70037d61fb9)
+			*  [ Add tooltips to multiblock machines](https://github.com/zmaster587/LibVulpes/commit/4ec17772a0e4add)
+			*  [ fix motor recipe](https://github.com/zmaster587/LibVulpes/commit/e94307c210f3175)
+			*  [ Should probably simulate fluid insertion before committing, leads to dupe if the bottom slot is full. Resolves https://github.com/zmaster587/AdvancedRocketry/issues/1502](https://github.com/zmaster587/LibVulpes/commit/3c079e1fa798cb9)
+			*  [ possible fix for https://github.com/zmaster587/AdvancedRocketry/issues/1501](https://github.com/zmaster587/LibVulpes/commit/7dbc75ce439eebd)
+			*  [ Update ru_RU.lang MC 1.12.2. LibVulpes 0.4.0-48.](https://github.com/zmaster587/LibVulpes/commit/8eadbce9177acd6)
+			*  [ Switch recipes over to the 1.12+ JSON system](https://github.com/zmaster587/LibVulpes/commit/1ef1c6daca73805)
+			*  [ Update ru_RU.lang MC 1.12.2. LibVulpes 0.3.0-45.](https://github.com/zmaster587/LibVulpes/commit/f63521bb9de6f7e)
+			*  [ when item decrmented out of existance, retain NBT data long enough to assign to the dropped item, fixes #1451](https://github.com/zmaster587/LibVulpes/commit/b6f0ff4cf1f28bd)
+			*  [ finish adding GT support](https://github.com/zmaster587/LibVulpes/commit/5737145e805c6a5)
+			*  [ add minimal GT files needed for compile](https://github.com/zmaster587/LibVulpes/commit/d15119025c8f034)
+			*  [ Refactor power stuff, add GT support](https://github.com/zmaster587/LibVulpes/commit/4a4ca41b89eb66e)
+			*  [ fix some language issues (I hope), fix issues with chunk boundries and multiblock machines](https://github.com/zmaster587/LibVulpes/commit/6ca703fe1dd8711)
+			*  [ fixes #30](https://github.com/zmaster587/LibVulpes/commit/d49963cc8859ce0)
+			*  [ Update IC2 support for 1.12 https://github.com/zmaster587/AdvancedRocketry/issues/1197](https://github.com/zmaster587/LibVulpes/commit/ded8c6dae2e6d4a)
+			*  [ prevent machines from being too greedy, fixes #1359](https://github.com/zmaster587/LibVulpes/commit/2fa75ac9df07933)
+			*  [ Don't print 'air' as a required block in the holoprojector](https://github.com/zmaster587/LibVulpes/commit/490614f2d1bab1f)
+			*  [ fix https://github.com/zmaster587/AdvancedRocketry/issues/1331](https://github.com/zmaster587/LibVulpes/commit/bf354dfa6fe9966)
+			*  [ Fluid machines will start processing when a fluid is added by bucket instead of requiring manual restart, https://github.com/zmaster587/AdvancedRocketry/issues/1313](https://github.com/zmaster587/LibVulpes/commit/77950a4c6253519)
+			*  [ update dilithium texture](https://github.com/zmaster587/LibVulpes/commit/03cc9fd03231d9a)
+			*  [ fix textures with lootbags, etc](https://github.com/zmaster587/LibVulpes/commit/9ec4208a755a1b7)
+			*  [ fix items not dropping](https://github.com/zmaster587/LibVulpes/commit/d9918b1904b9854)
+			*  [ support for https://github.com/zmaster587/AdvancedRocketry/issues/1068](https://github.com/zmaster587/LibVulpes/commit/09cfdea529c9ff0)
+			*  [ fix for https://github.com/zmaster587/AdvancedRocketry/issues/1069](https://github.com/zmaster587/LibVulpes/commit/9af291ee939dd5a)
+			*  [ fix https://github.com/zmaster587/AdvancedRocketry/issues/1039](https://github.com/zmaster587/LibVulpes/commit/33632836dac0ef8)
+			*  [ Add locale overrides for #1012](https://github.com/zmaster587/LibVulpes/commit/182587bc99b89b2)
+			*  [ Fixes jetpack toggle key #26](https://github.com/zmaster587/LibVulpes/commit/fc7f6413f69e433)
+			*  [ fix https://github.com/zmaster587/AdvancedRocketry/issues/977](https://github.com/zmaster587/LibVulpes/commit/a47c9e24e25b1e5)
+			*  [ fixes https://github.com/zmaster587/AdvancedRocketry/issues/991](https://github.com/zmaster587/LibVulpes/commit/970f3ced89b8171)
+			*  [ fixes https://github.com/zmaster587/AdvancedRocketry/issues/938#issuecomment-351028819](https://github.com/zmaster587/LibVulpes/commit/baf62e827720d18)
+			*  [ add getters for outputs](https://github.com/zmaster587/LibVulpes/commit/f603dbb45bd2941)
+			*  [ add getters for outputs, update build num](https://github.com/zmaster587/LibVulpes/commit/5c39a00e823ef8d)
+			*  [ fix itemHandler, https://github.com/zmaster587/AdvancedRocketry/issues/954](https://github.com/zmaster587/LibVulpes/commit/f052c4110d22306)
+			*  [ disable curse builds temporarily](https://github.com/zmaster587/LibVulpes/commit/c237fc105fd7ad9)
+			*  [ update artefact location for git](https://github.com/zmaster587/LibVulpes/commit/b620c33dd67e3d6)
+			*  [ fix https://github.com/zmaster587/AdvancedRocketry/issues/939](https://github.com/zmaster587/LibVulpes/commit/2c59e0e8ea088e0)
+			*  [ add curseforge and changelog tasks.](https://github.com/zmaster587/LibVulpes/commit/38fcb72a4b0f478)
+
+		LibVulpes 1.12.2-0.4.2-1 build -1 for 1.12.2:
+			Current release 1.12.2-0.4.2-1
+			*  [ 16x textures from the unmerged Cl1ff PR](https://github.com/zmaster587/LibVulpes/commit/984d67474a50494)
+			*  [ Fix infinite recursion](https://github.com/zmaster587/LibVulpes/commit/b0b9db8680999db)
+			*  [ Added scale on rendering tags](https://github.com/zmaster587/LibVulpes/commit/42798ec8e2bb07a)
+			*  [ update changelog task](https://github.com/zmaster587/LibVulpes/commit/3cdb627ee44dbd7)
+			*  [ change curse task to upload as a beta](https://github.com/zmaster587/LibVulpes/commit/ee2c14a5d52a55f)
+			*  [ Add fluidmapping capability, mostly for liquidoxygen <--> oxgygen](https://github.com/zmaster587/LibVulpes/commit/8d7afb7581b37eb)
+			*  [ update default XML](https://github.com/zmaster587/LibVulpes/commit/ae5d8057949f4ff)
+			*  [ use ;s everywhere](https://github.com/zmaster587/LibVulpes/commit/3250147c581f730)
+			*  [ Add backwards compat for existing configs](https://github.com/zmaster587/LibVulpes/commit/a15c989b6ab4f5d)
+			*  [ Second Set of 1.12 Parser Changes](https://github.com/zmaster587/LibVulpes/commit/140e5cc1d8c64a3)
+			*  [ First Set of Parser Changes Separator from "; " to ";"](https://github.com/zmaster587/LibVulpes/commit/6590cb1bafdc65b)
+			*  [ Update to new Parser Make examples follow behavior](https://github.com/zmaster587/LibVulpes/commit/315707d5ca558a6)
+			*  [ Update to new Parser bits Fixes spaced fluid names](https://github.com/zmaster587/LibVulpes/commit/39e5f931bec844d)
+			*  [ upgrade changelog plugin because compat](https://github.com/zmaster587/LibVulpes/commit/c140aada3958398)
+			*  [ 'fix' Tesla dependancy issue and inability to download from curseforge](https://github.com/zmaster587/LibVulpes/commit/0a4cdc241ba9e8b)
+			*  [ rename crystal -> gem to fall in line with naming conventions](https://github.com/zmaster587/LibVulpes/commit/808a9a7cdc49729)
+			*  [ don't try to register null blocks' icons](https://github.com/zmaster587/LibVulpes/commit/5368e63c1fced37)
+			*  [ Don't populate output with all of the oredict objects](https://github.com/zmaster587/LibVulpes/commit/8a229a693458477)
+			*  [ Fix items registering before registering recipes, fixes https://github.com/zmaster587/AdvancedRocketry/issues/1626](https://github.com/zmaster587/LibVulpes/commit/81621d4df218dda)
+			*  [ add missing event file](https://github.com/zmaster587/LibVulpes/commit/07f81a32a1b60f4)
+			*  [ update revision](https://github.com/zmaster587/LibVulpes/commit/20bfd62c31c43cf)
+			*  [ Fix bucket handling. See https://github.com/zmaster587/AdvancedRocketry/issues/1601](https://github.com/zmaster587/LibVulpes/commit/f0254bb83f3680b)
+			*  [ Volcano processing stuff](https://github.com/zmaster587/LibVulpes/commit/73cc9cd44ca508b)
+			*  [ deprecation warning](https://github.com/zmaster587/LibVulpes/commit/c51b3d5d5500a59)
+			*  [ fix broken default machine recipies](https://github.com/zmaster587/LibVulpes/commit/9e638ca5005933e)
+			*  [ Add support for full screen centered interfaces](https://github.com/zmaster587/LibVulpes/commit/523b06c66681410)
+			*  [ Fix issues where a stack with a damage of 32767 was not being consumed](https://github.com/zmaster587/LibVulpes/commit/82b0dfbd3dbf608)
+			*  [ make sure we support data values on the input](https://github.com/zmaster587/LibVulpes/commit/c30e70037d61fb9)
+			*  [ Add tooltips to multiblock machines](https://github.com/zmaster587/LibVulpes/commit/4ec17772a0e4add)
+			*  [ fix motor recipe](https://github.com/zmaster587/LibVulpes/commit/e94307c210f3175)
+			*  [ Should probably simulate fluid insertion before committing, leads to dupe if the bottom slot is full. Resolves https://github.com/zmaster587/AdvancedRocketry/issues/1502](https://github.com/zmaster587/LibVulpes/commit/3c079e1fa798cb9)
+			*  [ possible fix for https://github.com/zmaster587/AdvancedRocketry/issues/1501](https://github.com/zmaster587/LibVulpes/commit/7dbc75ce439eebd)
+			*  [ Update ru_RU.lang MC 1.12.2. LibVulpes 0.4.0-48.](https://github.com/zmaster587/LibVulpes/commit/8eadbce9177acd6)
+			*  [ Switch recipes over to the 1.12+ JSON system](https://github.com/zmaster587/LibVulpes/commit/1ef1c6daca73805)
+			*  [ Update ru_RU.lang MC 1.12.2. LibVulpes 0.3.0-45.](https://github.com/zmaster587/LibVulpes/commit/f63521bb9de6f7e)
+			*  [ when item decrmented out of existance, retain NBT data long enough to assign to the dropped item, fixes #1451](https://github.com/zmaster587/LibVulpes/commit/b6f0ff4cf1f28bd)
+			*  [ finish adding GT support](https://github.com/zmaster587/LibVulpes/commit/5737145e805c6a5)
+			*  [ add minimal GT files needed for compile](https://github.com/zmaster587/LibVulpes/commit/d15119025c8f034)
+			*  [ Refactor power stuff, add GT support](https://github.com/zmaster587/LibVulpes/commit/4a4ca41b89eb66e)
+			*  [ fix some language issues (I hope), fix issues with chunk boundries and multiblock machines](https://github.com/zmaster587/LibVulpes/commit/6ca703fe1dd8711)
+			*  [ fixes #30](https://github.com/zmaster587/LibVulpes/commit/d49963cc8859ce0)
+			*  [ Update IC2 support for 1.12 https://github.com/zmaster587/AdvancedRocketry/issues/1197](https://github.com/zmaster587/LibVulpes/commit/ded8c6dae2e6d4a)
+			*  [ prevent machines from being too greedy, fixes #1359](https://github.com/zmaster587/LibVulpes/commit/2fa75ac9df07933)
+			*  [ Don't print 'air' as a required block in the holoprojector](https://github.com/zmaster587/LibVulpes/commit/490614f2d1bab1f)
+			*  [ fix https://github.com/zmaster587/AdvancedRocketry/issues/1331](https://github.com/zmaster587/LibVulpes/commit/bf354dfa6fe9966)
+			*  [ Fluid machines will start processing when a fluid is added by bucket instead of requiring manual restart, https://github.com/zmaster587/AdvancedRocketry/issues/1313](https://github.com/zmaster587/LibVulpes/commit/77950a4c6253519)
+			*  [ update dilithium texture](https://github.com/zmaster587/LibVulpes/commit/03cc9fd03231d9a)
+			*  [ fix textures with lootbags, etc](https://github.com/zmaster587/LibVulpes/commit/9ec4208a755a1b7)
+			*  [ fix items not dropping](https://github.com/zmaster587/LibVulpes/commit/d9918b1904b9854)
+			*  [ support for https://github.com/zmaster587/AdvancedRocketry/issues/1068](https://github.com/zmaster587/LibVulpes/commit/09cfdea529c9ff0)
+			*  [ fix for https://github.com/zmaster587/AdvancedRocketry/issues/1069](https://github.com/zmaster587/LibVulpes/commit/9af291ee939dd5a)
+			*  [ fix https://github.com/zmaster587/AdvancedRocketry/issues/1039](https://github.com/zmaster587/LibVulpes/commit/33632836dac0ef8)
+			*  [ Add locale overrides for #1012](https://github.com/zmaster587/LibVulpes/commit/182587bc99b89b2)
+			*  [ Fixes jetpack toggle key #26](https://github.com/zmaster587/LibVulpes/commit/fc7f6413f69e433)
+			*  [ fix https://github.com/zmaster587/AdvancedRocketry/issues/977](https://github.com/zmaster587/LibVulpes/commit/a47c9e24e25b1e5)
+			*  [ fixes https://github.com/zmaster587/AdvancedRocketry/issues/991](https://github.com/zmaster587/LibVulpes/commit/970f3ced89b8171)
+			*  [ fixes https://github.com/zmaster587/AdvancedRocketry/issues/938#issuecomment-351028819](https://github.com/zmaster587/LibVulpes/commit/baf62e827720d18)
+			*  [ add getters for outputs](https://github.com/zmaster587/LibVulpes/commit/f603dbb45bd2941)
+			*  [ add getters for outputs, update build num](https://github.com/zmaster587/LibVulpes/commit/5c39a00e823ef8d)
+			*  [ fix itemHandler, https://github.com/zmaster587/AdvancedRocketry/issues/954](https://github.com/zmaster587/LibVulpes/commit/f052c4110d22306)
+			*  [ disable curse builds temporarily](https://github.com/zmaster587/LibVulpes/commit/c237fc105fd7ad9)
+			*  [ update artefact location for git](https://github.com/zmaster587/LibVulpes/commit/b620c33dd67e3d6)
+			*  [ fix https://github.com/zmaster587/AdvancedRocketry/issues/939](https://github.com/zmaster587/LibVulpes/commit/2c59e0e8ea088e0)
+			*  [ add curseforge and changelog tasks.](https://github.com/zmaster587/LibVulpes/commit/38fcb72a4b0f478)
+
+	LootTweaker (LootTweaker-0.1.6+MC1.12.2.jar --> LootTweaker-0.1.7+MC1.12.2.jar):
+		LootTweaker-0.1.7+MC1.12.2.jar:
+			* Fixed calling LootTables.getTable() with a nonexistent table id not erroring.
+			* Fixed NPE when /ct loottables target is invoked while not looking at anything.
+			* Changed LootTable.addPool() to take floats instead of ints. This change is compatible with existing scripts, you don't need to update them.
+			* Allowed server-only installation of LootTweaker. See the FAQ for details.
+
+	NuclearCraft (NuclearCraft-2.18r-1.12.2 --> NuclearCraft-2.18t-1.12.2):
+		NuclearCraft-2.18t-1.12.2:
+			* Fixed crash involving fusion and turbine sound effects with Galacticraft installed
+
+		NuclearCraft-2.18s-1.12.2:
+			+ Added configs to modify the base energy storage and heat capacities of fission reactors [thanks to Exaxxion!]
+			* Hopefully fixed fusion reactors placing and removing plasma too often
+			* Fixed possible crash on creating plasma fluid when other mods add their own
+
+	PackagedAuto (PackagedAuto-1.12.2-1.0.2.9.jar --> PackagedAuto-1.12.2-1.0.3.13.jar):
+		PackagedAuto-1.12.2-1.0.3.13.jar:
+			Fixed item list saving function saving stack size of empty stacks
+
+		PackagedAuto-1.12.2-1.0.3.12.jar:
+			Added a shaped processing pattern mode that preserves order of items on unpackaging
+			Added an option for pattern helpers to condense inputs
+			Added ability to shift right click packages to open them manually
+			Added checks to make sure pattern indexes are in range
+
+		PackagedAuto-1.12.2-1.0.2.11.jar:
+			Fixed NPE in recipe list reading
+
+		PackagedAuto-1.12.2-1.0.2.10.jar:
+			Added shift clicking the save button to save a single recipe
+			Added shift clicking the change recipe type button to cycle the other way
+			Fixed crash related to the Packager Extension when AE2 is not present
+			Fixed Packager requiring energy to be present when starting a process
+
+	Psi (Psi-r1.1-77.jar --> Psi-r1.1-78.jar):
+		Psi-r1.1-78.jar:
+			See [http://psi.vazkii.us/changelog.php#r1.1-78](http://psi.vazkii.us/changelog.php#r1.1-77)
+
+	RandomPatches (RandomPatches 1.12.2-1.21.0.1 --> RandomPatches 1.12.2-1.21.0.3):
+		RandomPatches 1.12.2-1.21.0.3:
+			Fixed the login timeout patch.
+
+		RandomPatches 1.12.2-1.21.0.2:
+			Fixed LiteLoader not working.
+
+	Reborn Core (RebornCore-1.12.2-3.19.3.524-universal.jar --> RebornCore-1.12.2-3.19.4.529-universal.jar):
+		RebornCore-1.12.2-3.19.4.529-universal.jar:
+			(drcrazy) #releaseBuild
+			(drcrazy) Fix for recipe system. Closes TechReborn/TechReborn-Legacy-Issues#43
+			(drcrazy) Fix facing. Closes TechReborn/TechReborn-Legacy-Issues#40
+			(drcrazy) Ingredients shouldn't check for NBT. Who cares for energy in ingredient
+			(drcrazy) Removed unused imports
+
+	Redstone Arsenal (RedstoneArsenal-1.12.2-2.6.4.1-universal.jar --> RedstoneArsenal-1.12.2-2.6.6.1-universal.jar):
+		RedstoneArsenal-1.12.2-2.6.6.1-universal.jar:
+			No changelog available.
+
+	Rustic (rustic-1.1.2.jar --> rustic-1.1.4.jar):
+		rustic-1.1.4.jar:
+			<ul> <li>Fixed misaligned faces in lantern model</li> <li>Improved chain connection logic</li> </ul>
+
+		rustic-1.1.3.jar:
+			* added config option to treat olive oil blacklist as a whitelist instead
+			* fixed a typo in the almanac
+			* sided interaction with condensers for improved automation support
+			* improved crafttweaker integration for condenser recipes (will break existing scripts)
+
+	Spice of Life: Carrot Edition (solcarrot-1.12.2-1.8.3.jar --> solcarrot-1.12.2-1.8.4.jar):
+		solcarrot-1.12.2-1.8.4.jar:
+			* Fixes long-standing issue loading saves with no-longer-edible eaten foods. ([#80](https://github.com/Cazsius/Spice-of-Life-Carrot-Edition/issues/80), [#82](https://github.com/Cazsius/Spice-of-Life-Carrot-Edition/issues/82))
+
+	Storage Drawers (StorageDrawers-1.12.2-5.4.1.jar --> StorageDrawers-1.12.2-5.4.2.jar):
+		StorageDrawers-1.12.2-5.4.2.jar:
+			* Add invertClick option to invert left and right click behavior (intended for special server circumstances)
+
+	Thaumic Tinkerer (Thaumic Tinkerer 1.12.2 5.0 ALPHA1.4.2 --> Thaumic Tinkerer 1.12.2 5.0 BETA1.3):
+		Thaumic Tinkerer 1.12.2 5.0 BETA1.3:
+			Fixed yet another crash bug caused by some in-progress work
+
+		Thaumic Tinkerer 1.12.2 5.0 BETA1.2:
+			Fixed a server crash caused by the magnets
+
+		Thaumic Tinkerer 1.12.2 5.0 BETA1.1:
+			Fixes a server crash + other issues with the Dynamism tablet.
+			Also makes sure blocks drop their contents correctly
+
+		Thaumic Tinkerer 1.12.2 5.0 BETA1:
+			Fixed research for various blocks, added full lore + language for all added blocks:
+			Beta Wave 1 includes:
+			* Dynamism Tablet
+			* Osmotic Enchanter
+			* Mob Magnets
+			* Thaumic Repairer
+			* Essentia Funnel
+			* And more
+
+Removed:
+- Plus TiC
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).
