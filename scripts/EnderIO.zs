@@ -1,7 +1,6 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded enderio
-print("--- loading EnderIO.zs ---");
 
 # Cheaper decorations
 var casing = <teslacorelib:machine_case>|<actuallyadditions:block_misc:9>|<mekanism:basicblock:8>|<nuclearcraft:part:10>;

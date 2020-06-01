@@ -6,7 +6,7 @@ print("--- loading AppliedEnergistics.zs ---");
 	
 	var pearlFluix = <ore:pearlFluix>;
 	var crystalCertus = <ore:crystalCertus>;
-
+	
 # Smart Cable -> Dense
 	recipes.addShapeless("4 Smart Cables to Dense", 
 	<appliedenergistics2:part:76>, 
@@ -118,14 +118,6 @@ print("--- loading AppliedEnergistics.zs ---");
 	[<extracells:storage.component:2>, <appliedenergistics2:material:22>, <extracells:storage.component:2>], 
 	[<ore:dustEnder>, <extracells:storage.component:2>, <ore:dustEnder>]]);
 	
-# Quantum Ring
-	recipes.remove(<appliedenergistics2:quantum_ring>);
-	recipes.addShapedMirrored("Quantum Ring", 
-	<appliedenergistics2:quantum_ring>, 
-	[[<appliedenergistics2:material:9>, <appliedenergistics2:energy_cell>, <appliedenergistics2:material:24>],
-	[<appliedenergistics2:energy_cell>, <appliedenergistics2:part:76>, <appliedenergistics2:energy_cell>], 
-	[<appliedenergistics2:material:22>, <appliedenergistics2:energy_cell>, <appliedenergistics2:material:23>]]);
-
 # Quantum Link Chamber
 	recipes.remove(<appliedenergistics2:quantum_link>);
 	recipes.addShapedMirrored("Quantum Link Chamber", 
@@ -173,16 +165,6 @@ print("--- loading AppliedEnergistics.zs ---");
 	[[<immersiveengineering:material:26>, <immersiveengineering:metal_decoration0:3>, <immersiveengineering:material:26>],
 	[<appliedenergistics2:part:16>, <appliedenergistics2:quartz_fixture>, <appliedenergistics2:part:16>], 
 	[<appliedenergistics2:fluix_block>, <appliedenergistics2:material:24>, <appliedenergistics2:fluix_block>]]);
-	
-# ME Controller
-	if (!isNull(itemUtils.getItem("appliedenergistics2:controller"))) {
-		recipes.remove(itemUtils.getItem("appliedenergistics2:controller"));
-		recipes.addShaped("ME Controller", 
-		itemUtils.getItem("appliedenergistics2:controller"), 
-		[[<appliedenergistics2:smooth_sky_stone_block>, <advancedrocketry:ic:3>, <appliedenergistics2:smooth_sky_stone_block>],
-		[<appliedenergistics2:fluix_block>, <appliedenergistics2:energy_acceptor>, <appliedenergistics2:fluix_block>], 
-		[<teslacorelib:machine_case>, pearlFluix, <teslacorelib:machine_case>]]);
-	}
 
 # Inscriber
 	recipes.remove(<appliedenergistics2:inscriber>);
@@ -204,4 +186,39 @@ print("--- loading AppliedEnergistics.zs ---");
 # Lapis -> Dust
 	mods.appliedenergistics2.Grinder.addRecipe(<ic2:dust:9>, <minecraft:dye:4>, 4);
 
-	print("--- AppliedEnergistics.zs initialized ---");
+
+
+# If Channels are turned off in the config, these recipes will be changed
+	recipes.remove(<appliedenergistics2:quantum_ring>);
+
+	var controller = itemUtils.getItem("appliedenergistics2:controller");
+	var meConduit = <enderio:item_me_conduit:1>;
+	var anyFluix = <ore:crystalFluix> | <appliedenergistics2:material:12>;
+	
+	if (isNull(controller)) {
+		recipes.addShapedMirrored("Quantum Ring", 
+		<appliedenergistics2:quantum_ring>, 
+		[[<appliedenergistics2:material:9>, <appliedenergistics2:energy_cell>, <appliedenergistics2:material:24>],
+		[<appliedenergistics2:energy_cell>, meConduit, <appliedenergistics2:energy_cell>], 
+		[<appliedenergistics2:material:22>, <appliedenergistics2:energy_cell>, <appliedenergistics2:material:23>]]);
+		
+		recipes.remove(<rf-capability-adapter:aecapabilityadapter>);
+		recipes.addShaped("Capability Adapter", 
+		<rf-capability-adapter:aecapabilityadapter>, 
+		[[<minecraft:iron_ingot>, anyFluix, <minecraft:iron_ingot>], 
+		[anyFluix, meConduit, anyFluix],
+		[<minecraft:iron_ingot>, anyFluix, <minecraft:iron_ingot>]]);
+	} else {
+		recipes.addShapedMirrored("Quantum Ring", 
+		<appliedenergistics2:quantum_ring>, 
+		[[<appliedenergistics2:material:9>, <appliedenergistics2:energy_cell>, <appliedenergistics2:material:24>],
+		[<appliedenergistics2:energy_cell>, <appliedenergistics2:part:76>, <appliedenergistics2:energy_cell>], 
+		[<appliedenergistics2:material:22>, <appliedenergistics2:energy_cell>, <appliedenergistics2:material:23>]]);
+
+		recipes.remove(controller);
+		recipes.addShaped("ME Controller", 
+		controller, 
+		[[<appliedenergistics2:smooth_sky_stone_block>, <advancedrocketry:ic:3>, <appliedenergistics2:smooth_sky_stone_block>],
+		[<appliedenergistics2:fluix_block>, <appliedenergistics2:energy_acceptor>, <appliedenergistics2:fluix_block>], 
+		[<teslacorelib:machine_case>, pearlFluix, <teslacorelib:machine_case>]]);
+	}

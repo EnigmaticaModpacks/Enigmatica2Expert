@@ -109,11 +109,16 @@ print("--- loading AdvancedRocketry.zs ---");
 	<advancedrocketry:productgear:*>,
 	<libvulpes:productgear:*>
 	
-		] as IItemStack[];
+	] as IItemStack[];
 
 	for item in recipesToRemove {
+		for oredict in item.ores {
+			oredict.remove(item);
+		}
 		recipes.remove(item);
 	}	
+
+	<ore:stickIron>.remove(<advancedrocketry:productrod:1>);
 
 # Simplify tank
 recipes.remove(<advancedrocketry:liquidtank>);

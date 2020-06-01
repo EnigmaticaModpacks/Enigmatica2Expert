@@ -84,8 +84,8 @@ mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreLead>, <thermalfoundation
 # Fancy Amulet
 	recipes.remove(<thaumcraft:baubles:4>);
 	recipes.addShaped(<thaumcraft:baubles:4>, 
-	[[null, <botania:spellcloth>, null], 
-	[<botania:spellcloth>, <ore:clusterGold>, <botania:spellcloth>], 
+	[[null, <botania:spellcloth>.anyDamage(), null], 
+	[<botania:spellcloth>.anyDamage(), <ore:clusterGold>, <botania:spellcloth>.anyDamage()], 
 	[<ore:gemEmerald>, <thaumcraft:baubles>, <ore:gemEmerald>]]);
 
 # Fancy Ring

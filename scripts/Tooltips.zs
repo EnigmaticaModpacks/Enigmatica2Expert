@@ -527,6 +527,7 @@ for item in thaumcraftHintItems {
 	var uumatterTooltips = [
 "ic2:crafting", "1", "800",
 "ic2:crafting", "3", "1800",
+"ic2:resource", "12", "800",
 "ic2:resource", "13", "16000",
 "thermalexpansion:frame", "0", "40000",
 "actuallyadditions:item_misc", "8", "6000",
