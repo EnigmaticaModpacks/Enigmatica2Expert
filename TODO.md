@@ -31,6 +31,7 @@ Planned
 -----------
 - [ ] Main menu label
 - [ ] Less Table Crafting for Autocrafters
+- [ ] Fire and Ice Dragon Scales should output different armor in Foundry
 
 
 Long-term
