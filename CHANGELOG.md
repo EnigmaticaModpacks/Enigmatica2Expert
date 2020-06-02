@@ -1,5 +1,33 @@
 # Enigmatica 2: Expert Changelog
 
+## 1.82
+
+_Remember to use the command `/bq_admin default load` when updating_
+
+_[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.82.txt)_ | _Using Forge-1.12.2-14.23.5.2847_
+
+**Bug fixes**
+
+* 
+
+**Mod removals**
+
+* Item Filters (Added during a test, forgot to remove it)
+
+# Enigmatica 2: Expert Changelog
+
+## 1.81a
+
+_Remember to use the command `/bq_admin default load` when updating_
+
+_[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.81a.txt)_ | _Using Forge-1.12.2-14.23.5.2847_
+
+**Bug fixes**
+
+* Unable to craft Copper Solenoid E2:E Version 1.81 [\#1730](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1730)
+* Enigmatica 2 Expert Server 1.81 - Forge Universal missing [\#1729](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1729)
+* Modular Machine block "Machine Gearbox" doesn't craft [\#1728](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1728)
+
 ## 1.81
 
 _Remember to use the command `/bq_admin default load` when updating_
