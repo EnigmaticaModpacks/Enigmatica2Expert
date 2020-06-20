@@ -119,7 +119,7 @@ remake("rat_upgrade_archeologist", <rats:rat_upgrade_archeologist>, [
 ]);
 
 # Rat flowers
-scripts.Processing.grow(<rats:ratglove_flower>, <rats:ratglove_flower>, "No exceptions", null, 0);
+scripts.process.grow(<rats:ratglove_flower>, <rats:ratglove_flower>, "No exceptions", null, 0);
 
 #Creative upgrades
 mods.extendedcrafting.TableCrafting.addShaped(0, <rats:rat_upgrade_creative>, [
@@ -157,7 +157,7 @@ recipes.remove(<rats:marbled_cheese_raw>);
 
 # Raw Plastic from squeeser
 furnace.remove(<rats:raw_plastic>);
-scripts.Processing.squeeze(<rats:plastic_waste>, <liquid:dirt> * 100, null, <rats:raw_plastic>);
+scripts.process.squeeze(<rats:plastic_waste>, <liquid:dirt> * 100, null, <rats:raw_plastic>);
 
 # Polyethene from rat plastic
 mods.mekanism.enrichment.addRecipe(<rats:raw_plastic>*16, <mekanism:polyethene>);
@@ -305,4 +305,4 @@ recipes.replaceAllOccurences(<minecraft:diamond>, gemDiamondRat, <*>.only(functi
 }));
 
 # Rat diamond melting
-scripts.Processing.melt(<rats:rat_diamond>, <liquid:diamond> * 165, "No Exceptions");
+scripts.process.melt(<rats:rat_diamond>, <liquid:diamond> * 165, "No Exceptions");

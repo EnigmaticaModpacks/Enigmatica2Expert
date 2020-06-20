@@ -114,7 +114,7 @@ import mods.jei.JEI.removeAndHide as rh;
 
 # Luminiscence made in chemical reactor and drying basin
 recipes.removeByRecipeName("extendedcrafting:luminessence");
-scripts.Processing.evaporate(<fluid:liquid_sunshine> * 1000, <extendedcrafting:material:7> * 2, null);
+scripts.process.evaporate(<fluid:liquid_sunshine> * 1000, <extendedcrafting:material:7> * 2, null);
 
 # Insanium from inferium
 mods.extendedcrafting.CompressionCrafting.addRecipe(<mysticalagradditions:insanium>, 

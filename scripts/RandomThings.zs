@@ -84,7 +84,7 @@ recipes.addShaped(<randomthings:spectreanchor>, [
 
 # Spectre Ingot
 recipes.remove(<randomthings:ingredient:3>);
-scripts.Processing.alloy([
+scripts.process.alloy([
 	<ore:ingotUnstable>,
 	<randomthings:ingredient:2>,
 	<thermalfoundation:material:134>

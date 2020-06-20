@@ -389,5 +389,5 @@ mods.mechanics.addTubeRecipe([<mekanism:basicblock:2>] as IItemStack[], <liquid:
 mods.mechanics.addTubeRecipe([<mekanism:basicblock:4>] as IItemStack[], <liquid:refinedglowstone> * 1000);
 
 # Add advanced liquid recipes
-scripts.Processing.solution([<thermalfoundation:material:770>], [<liquid:diamond> * 66], null, [<liquid:refinedobsidian> * 144], "No exceptions");
-scripts.Processing.solution([<mekanism:dust:2>], [<liquid:glowstone> * 250], null, [<liquid:refinedglowstone> * 144], "No exceptions");
+scripts.process.solution([<thermalfoundation:material:770>], [<liquid:diamond> * 66], null, [<liquid:refinedobsidian> * 144], "No exceptions");
+scripts.process.solution([<mekanism:dust:2>], [<liquid:glowstone> * 250], null, [<liquid:refinedglowstone> * 144], "No exceptions");

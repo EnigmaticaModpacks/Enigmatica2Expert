@@ -742,13 +742,13 @@ recipes.addShaped(<animania:friesian_cheese_wheel>, [[<mysticalcreations:cheese_
 recipes.addShaped(<forge:bucketfilled>.withTag({FluidName: "creosote", Amount: 1000}), [[null, <mysticalcreations:creosolite_essence>, null],[<mysticalcreations:creosolite_essence>, <minecraft:bucket>.noReturn(), <mysticalcreations:creosolite_essence>], [null, <mysticalcreations:creosolite_essence>, null]]);
 
 # Add Mystical Creations processing in Insolator
-scripts.Processing.grow(<mysticalcreations:creosolite_seeds>, <mysticalcreations:creosolite_essence>, "No exceptions", <mysticalcreations:creosolite_seeds>, 100);
-scripts.Processing.grow(<mysticalcreations:cheese_seeds>, 		<mysticalcreations:cheese_essence>,     "No exceptions", <mysticalcreations:cheese_seeds>, 100);
-scripts.Processing.grow(<mysticalcreations:ultimate_seeds>,   <mysticalcreations:ultimate_essence>,   "No exceptions", <mysticalcreations:ultimate_seeds>, 100);
+scripts.process.grow(<mysticalcreations:creosolite_seeds>, <mysticalcreations:creosolite_essence>, "No exceptions", <mysticalcreations:creosolite_seeds>, 100);
+scripts.process.grow(<mysticalcreations:cheese_seeds>, 		<mysticalcreations:cheese_essence>,     "No exceptions", <mysticalcreations:cheese_seeds>, 100);
+scripts.process.grow(<mysticalcreations:ultimate_seeds>,   <mysticalcreations:ultimate_essence>,   "No exceptions", <mysticalcreations:ultimate_seeds>, 100);
 
 # Recycling can
-scripts.Processing.recycleMetal(<mysticalagriculture:watering_can>, <mysticalagriculture:crafting:33> * 4,   <liquid:inferium> * (144*4), null);
-scripts.Processing.recycleMetal(<mysticalagriculture:watering_can:1>, <mysticalagriculture:crafting:34> * 4, <liquid:prudentium> * (144*4), null);
-scripts.Processing.recycleMetal(<mysticalagriculture:watering_can:2>, <mysticalagriculture:crafting:35> * 4, <liquid:intermedium> * (144*4), null);
-scripts.Processing.recycleMetal(<mysticalagriculture:watering_can:3>, <mysticalagriculture:crafting:36> * 4, <liquid:superium> * (144*4), null);
-scripts.Processing.recycleMetal(<mysticalagriculture:watering_can:4>, <mysticalagriculture:crafting:37> * 4, <liquid:supremium> * (144*4), null);
+scripts.process.recycleMetal(<mysticalagriculture:watering_can>, <mysticalagriculture:crafting:33> * 4,   <liquid:inferium> * (144*4), null);
+scripts.process.recycleMetal(<mysticalagriculture:watering_can:1>, <mysticalagriculture:crafting:34> * 4, <liquid:prudentium> * (144*4), null);
+scripts.process.recycleMetal(<mysticalagriculture:watering_can:2>, <mysticalagriculture:crafting:35> * 4, <liquid:intermedium> * (144*4), null);
+scripts.process.recycleMetal(<mysticalagriculture:watering_can:3>, <mysticalagriculture:crafting:36> * 4, <liquid:superium> * (144*4), null);
+scripts.process.recycleMetal(<mysticalagriculture:watering_can:4>, <mysticalagriculture:crafting:37> * 4, <liquid:supremium> * (144*4), null);

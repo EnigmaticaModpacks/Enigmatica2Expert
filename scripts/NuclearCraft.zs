@@ -146,4 +146,4 @@ remake("NC Fusion core", <nuclearcraft:fusion_core>, [
 	[<opencomputers:print>, <nuclearcraft:accelerator_electromagnet_idle>, <opencomputers:print>]]);
 
 # End stone dust compat
-scripts.Processing.crush(<minecraft:end_stone>, <nuclearcraft:gem_dust:11>, "except: manufactory", null, null);
+scripts.process.crush(<minecraft:end_stone>, <nuclearcraft:gem_dust:11>, "except: manufactory", null, null);
