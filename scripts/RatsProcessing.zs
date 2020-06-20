@@ -135,18 +135,19 @@ for poop in listRatPoop{
         # ########################
         # Process Mekanism
         # ########################
-        var poopclump = poopEntry.getItemStack("clump");
-        if(!isNull(poopclump)) {
-          mods.mekanism.purification.addRecipe(poop, poopclump*2);
-        }
-        var poopslurry = mods.mekanism.MekanismHelper.getGas("slurry" ~ poopEntry.oreName);
-        if(!isNull(poopslurry)) {
-          mods.mekanism.chemical.dissolution.addRecipe(poop, poopslurry*600);
-        }
-        var poopshard = poopEntry.getItemStack("shard");
-        if(!isNull(poopshard)) {
-          mods.mekanism.chemical.injection.addRecipe(poop*2, <gas:hydrogenchloride>, poopshard * 5);
-        }
+        # Mekanism machines can't work with NBT tags for inputs
+        // var poopclump = poopEntry.getItemStack("clump");
+        // if(!isNull(poopclump)) {
+        //   mods.mekanism.purification.addRecipe(poop, poopclump*2);
+        // }
+        // var poopslurry = mods.mekanism.MekanismHelper.getGas("slurry" ~ poopEntry.oreName);
+        // if(!isNull(poopslurry)) {
+        //   mods.mekanism.chemical.dissolution.addRecipe(poop, poopslurry*600);
+        // }
+        // var poopshard = poopEntry.getItemStack("shard");
+        // if(!isNull(poopshard)) {
+        //   mods.mekanism.chemical.injection.addRecipe(poop*2, <gas:hydrogenchloride>, poopshard * 5);
+        // }
 
         # ########################
         # Process Everything
@@ -179,8 +180,8 @@ for poop in listRatPoop{
           # mods.immersiveengineering.Crusher.addRecipe(IItemStack output, IIngredient input, int energy, @Optional IItemStack secondaryOutput, @Optional double secondaryChance);
           mods.immersiveengineering.Crusher.addRecipe(poopGemOrDust*3, poop*2, 2048, <industrialforegoing:fertilizer>, 0.50);
 
-          # mods.mekanism.enrichment.addRecipe(IIngredient inputStack, IItemStack outputStack);
-          mods.mekanism.enrichment.addRecipe(poop*2, poopGemOrDust*3);
+          // # mods.mekanism.enrichment.addRecipe(IIngredient inputStack, IItemStack outputStack);
+          // mods.mekanism.enrichment.addRecipe(poop*2, poopGemOrDust*3);
 
           # mods.enderio.SagMill.addRecipe(IItemStack[] output, float[] chances, IIngredient input, @Optional String bonusType, @Optional int energyCost, @Optional float[] xp);
           mods.enderio.SagMill.addRecipe([poopGemOrDust, poopGemOrDust] as IItemStack[], [1.0, 0.5] as float[], poop);

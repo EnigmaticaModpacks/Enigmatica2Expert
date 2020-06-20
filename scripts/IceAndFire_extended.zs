@@ -347,3 +347,11 @@ mods.inworldcrafting.FluidToItem.transform(<iceandfire:frost_lily>, <liquid:cryo
 
 recipes.addShapeless(<iceandfire:dragonforge_ice_core_disabled>, [<iceandfire:dragonforge_ice_core>]);
 recipes.addShapeless(<iceandfire:dragonforge_fire_core_disabled>, [<iceandfire:dragonforge_fire_core>]);
+
+# Recycling myrmex resin
+scripts.Processing.squeeze(<iceandfire:myrmex_resin>          , <liquid:resin>*120, null, <iceandfire:myrmex_desert_resin>);
+scripts.Processing.squeeze(<iceandfire:myrmex_resin:1>        , <liquid:resin>*120, null, <iceandfire:myrmex_jungle_resin>);
+scripts.Processing.squeeze(<iceandfire:myrmex_resin_sticky>   , <liquid:resin>*180, null, <iceandfire:myrmex_desert_resin> * 2);
+scripts.Processing.squeeze(<iceandfire:myrmex_resin_sticky:1> , <liquid:resin>*180, null, <iceandfire:myrmex_jungle_resin> * 2);
+scripts.Processing.squeeze(<iceandfire:desert_myrmex_cocoon>  , <liquid:resin>*480, null, <iceandfire:myrmex_desert_resin> * 8);
+scripts.Processing.squeeze(<iceandfire:jungle_myrmex_cocoon>  , <liquid:resin>*480, null, <iceandfire:myrmex_jungle_resin> * 8);

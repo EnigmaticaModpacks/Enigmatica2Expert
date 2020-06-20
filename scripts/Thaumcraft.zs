@@ -101,11 +101,7 @@ mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreLead>, <thermalfoundation
 	[[<ore:leather>, <ore:leather>, <ore:leather>], 
 	[<ore:leather>, <ore:clusterCopper>, <ore:leather>], 
 	[<ore:gemEmerald>, <thaumcraft:baubles:2>, <ore:gemEmerald>]]);
-
-# TC Logs -> Planks
-	scripts.Processing.saw(<thaumcraft:log_greatwood>, <thaumcraft:plank_greatwood>,  "only: shapeless, blockCutter");
-	scripts.Processing.saw(<thaumcraft:log_silverwood>,<thaumcraft:plank_silverwood>, "only: shapeless, blockCutter");
-
+	
 # Golemancer's Bell
 	recipes.remove(<thaumcraft:golem_bell>);
 	recipes.addShapedMirrored(<thaumcraft:golem_bell>, 

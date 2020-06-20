@@ -55,30 +55,6 @@ print("--- loading BiomesOPlenty.zs ---");
 	recipes.addShapeless("Overgrown Stone2", <biomesoplenty:grass:1>, [<minecraft:stone:*>, <ore:grass>]);
 	recipes.addShapeless("Overgrown Stone3", <biomesoplenty:grass:1>, [<minecraft:stone:*>, <ore:vine>]);
 
-
-# Plank recipes, made by Trilexcom
-	val logsAndPlanks as IItemStack[IItemStack] = {
-		<biomesoplenty:log_0:4>: <biomesoplenty:planks_0>,
-		<biomesoplenty:log_0:5>: <biomesoplenty:planks_0:1>,
-		<biomesoplenty:log_0:6>: <biomesoplenty:planks_0:2>,
-		<biomesoplenty:log_0:7>: <biomesoplenty:planks_0:3>,
-		<biomesoplenty:log_1:4>: <biomesoplenty:planks_0:4>,
-		<biomesoplenty:log_1:5>: <biomesoplenty:planks_0:5>,
-		<biomesoplenty:log_1:6>: <biomesoplenty:planks_0:6>,
-		<biomesoplenty:log_2:4>: <biomesoplenty:planks_0:8>,
-		<biomesoplenty:log_2:5>: <biomesoplenty:planks_0:9>,
-		<biomesoplenty:log_2:6>: <biomesoplenty:planks_0:10>,
-		<biomesoplenty:log_2:7>: <biomesoplenty:planks_0:11>,
-		<biomesoplenty:log_3:4>: <biomesoplenty:planks_0:12>,
-		<biomesoplenty:log_3:5>: <biomesoplenty:planks_0:13>,
-		<biomesoplenty:log_3:6>: <biomesoplenty:planks_0:14>,
-		<biomesoplenty:log_3:7>: <biomesoplenty:planks_0:15>,
-		<biomesoplenty:log_1:7>: <biomesoplenty:planks_0:7>,
-	};
-
-	for log, plank in logsAndPlanks {
-		scripts.Processing.saw(log, plank, "only: shapeless, blockCutter");
-	}
 	
 # Amber Block
 	rh(<biomesoplenty:gem_block:7>);
