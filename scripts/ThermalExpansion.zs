@@ -1,5 +1,6 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import mods.jei.JEI.removeAndHide;
 #modloaded thermalexpansion
 
 # Planks/Slabs -> Sticks
@@ -227,7 +228,7 @@ recipes.removeByRecipeName("thermalexpansion:tank_18");
 // # Dynamo harder recipes
 function remakeDynamo(name as string, item as IItemStack, i1 as IIngredient, i2 as IIngredient){
 	remake("ThermalExpansion Dynamo " ~ name, item, [
-		[null, <actuallyadditions:item_battery_quintuple>, null],
+		[null, <actuallyadditions:item_battery_triple>, null],
 		[<thermalfoundation:material:514>, i1 , <thermalfoundation:material:514>],
 		[i2, <mekanism:tierinstaller:1>, i2]]);
 }
@@ -248,6 +249,53 @@ recipes.removeByRecipeName("thermalexpansion:reservoir_14");
 
 # Clear content of reservior and tank
 for i in 0 to 5 {
-	clearFluid(<thermalexpansion:reservoir>.definition.makeStack(i));
+	val reservior as IItemStack = <thermalexpansion:reservoir>.definition.makeStack(i) as IItemStack;
+	clearFluid(reservior);
+	# mods.jei.JEI.addItem(reservior); # Tanks cant be added to JEI
 }
 clearFluid(<thermalexpansion:tank>.withTag({}));
+
+# Duct filling compat
+scripts.Processing.fill(<thermaldynamics:duct_0:9>, <liquid:cryotheum>*500, <thermaldynamics:duct_0:5>, null);
+scripts.Processing.fill(<thermaldynamics:duct_64:3>,<liquid:aerotheum>*500, <thermaldynamics:duct_64>, null);
+scripts.Processing.fill(<thermaldynamics:duct_64>,  <liquid:ender>*1000, <thermaldynamics:duct_64:2>, null);
+scripts.Processing.fill(<thermaldynamics:duct_0:6>, <liquid:redstone>*200, <thermaldynamics:duct_0:2>, null);
+scripts.Processing.fill(<thermaldynamics:duct_0:6>, <liquid:redstone>*200, <thermaldynamics:duct_0:2>, null);
+scripts.Processing.fill(<thermaldynamics:duct_0:7>, <liquid:redstone>*200, <thermaldynamics:duct_0:3>, null);
+scripts.Processing.fill(<thermaldynamics:duct_0:8>, <liquid:redstone>*200, <thermaldynamics:duct_0:4>, null);
+scripts.Processing.fill(<thermaldynamics:duct_32>, 	 <liquid:glowstone>*200, <thermaldynamics:duct_32:2>, null);
+scripts.Processing.fill(<thermaldynamics:duct_32:4>, <liquid:glowstone>*200, <thermaldynamics:duct_32:6>, null);
+scripts.Processing.fill(<thermaldynamics:duct_32:5>, <liquid:glowstone>*200, <thermaldynamics:duct_32:7>, null);
+scripts.Processing.fill(<thermaldynamics:duct_32:1>, <liquid:glowstone>*200, <thermaldynamics:duct_32:3>, null);
+
+# Remove and hide creative innovation items
+removeAndHide(<thermalinnovation:quiver:32000>.withTag({}));
+removeAndHide(<thermalinnovation:injector:32000>.withTag({}));
+removeAndHide(<thermalinnovation:magnet:32000>.withTag({Energy: 600000}));
+
+# Remake magnet
+recipes.removeByRecipeName("thermalinnovation:magnet");
+recipes.removeByRecipeName("thermalinnovation:magnet_1");
+recipes.removeByRecipeName("thermalinnovation:magnet_2");
+recipes.removeByRecipeName("thermalinnovation:magnet_3");
+recipes.removeByRecipeName("thermalinnovation:magnet_4");
+
+# First level magnet
+recipes.addShaped(<thermalinnovation:magnet>, [
+	[<ore:ingotConductiveIron>, null, <ore:ingotConductiveIron>],
+	[<ore:ingotLead>, null, <ore:ingotLead>],
+	[null, <ore:ingotHeavy>, null]]);
+
+function remakeMagnet(meta as int, i1 as IIngredient, i2 as IIngredient){
+	var item = itemUtils.getItem("thermalinnovation:magnet", meta);
+	var prev = itemUtils.getItem("thermalinnovation:magnet", meta - 1);
+	remake("TE Magnet  " ~ meta, item, [
+		[null, i2, null],
+		[i1, prev, i1],
+		[i2, null, i2]]);
+}
+
+remakeMagnet(1, <thermalfoundation:material:162>, <enderio:item_alloy_nugget>);
+remakeMagnet(2, <thermalfoundation:material:161>, <enderio:item_alloy_nugget:3>);
+remakeMagnet(3, <thermalfoundation:material:165>, <enderio:item_alloy_nugget:1>);
+remakeMagnet(4, <thermalfoundation:material:167>, <enderio:item_alloy_nugget:2>);
