@@ -115,3 +115,14 @@ import mods.jei.JEI.removeAndHide as rh;
 # Luminiscence made in chemical reactor and drying basin
 recipes.removeByRecipeName("extendedcrafting:luminessence");
 scripts.Processing.evaporate(<fluid:liquid_sunshine> * 1000, <extendedcrafting:material:7> * 2, null);
+
+# Insanium from inferium
+mods.extendedcrafting.CompressionCrafting.addRecipe(<mysticalagradditions:insanium>, 
+<mysticalagriculture:crafting>, 1024, <mysticalagriculture:master_infusion_crystal>, 2000000, 100000);
+
+# Simplify Automating table
+recipes.remove(<extendedcrafting:interface>);
+recipes.addShaped(<extendedcrafting:interface>, [
+	[<ore:ingotBlackIron>, <extendedcrafting:material:10>, <ore:ingotBlackIron>],
+	[<extendedcrafting:material:17>, <extendedcrafting:frame>, <extendedcrafting:material:17>],
+	[<ore:ingotBlackIron>, <extendedcrafting:material:2>, <ore:ingotBlackIron>]]);

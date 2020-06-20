@@ -224,3 +224,10 @@ ScrapBox.addDrop(<forestry:chipsets:3>.withTag({T: 3 as short}), 0.01F);
 
 # Energy crystal compat
 scripts.Processing.compress(<ic2:dust:6> * 9, <ic2:energy_crystal:27>, "except: compressor");
+
+# Simplify Solar panel
+recipes.remove(<ic2:te:8>);
+recipes.addShaped(<ic2:te:8>, [
+	[<ore:blockGlassColorless>, <ore:dustCoal>, <ore:blockGlassColorless>],
+	[<ore:plateIron>, <ic2:re_battery:26>.anyDamage(), <ore:plateIron>],
+	[<ore:plateIron>, <ore:circuitBasic>, <ore:plateIron>]]);

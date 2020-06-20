@@ -57,3 +57,18 @@ addVariation("marbledCheese", <rats:marbled_cheese_pillar>);
 addVariation("marbledCheese", <rats:marbled_cheese_brick>);
 addVariation("marbledCheese", <rats:marbled_cheese_brick_chiseled>);
 addVariation("marbledCheese", <rats:marbled_cheese_brick_cracked>);
+
+# Harder  Iron chisel
+recipes.remove(<chisel:chisel_iron>);
+recipes.addShaped(<chisel:chisel_iron>, [
+	[null, <tcomplement:chisel_head>.withTag({Material: "iron"}).onlyWithTag({Material: "iron"})],
+	[<ore:stickTreatedWood>, null]]);
+
+# Harder diamond chisel
+recipes.remove(<chisel:chisel_diamond>);
+mods.tconstruct.Casting.addTableRecipe(<chisel:chisel_diamond>, <chisel:chisel_iron>, <liquid:diamond>, 666, true);
+
+# Harder I-Chisel
+recipes.remove(<chisel:chisel_hitech>);
+recipes.addShapeless(<chisel:chisel_hitech>, 
+	[<ore:sheetHDPE>,<ore:sheetHDPE>,<chisel:chisel_diamond>]);

@@ -1,7 +1,6 @@
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded exnihilocreatio
-print("--- loading ExNihilo&Compressum.zs ---");
-	
+
 # End Cake
 	recipes.remove(<exnihilocreatio:block_end_cake>);
 	recipes.addShaped("End Cake", 
@@ -61,23 +60,27 @@ print("--- loading ExNihilo&Compressum.zs ---");
 	recipes.addShaped(<excompressum:heavy_sieve:4>, [[<minecraft:log2>, null, <minecraft:log2>],[<minecraft:log2>, <exnihilocreatio:block_sieve>, <minecraft:log2>], [<ore:stickWood>, null, <ore:stickWood>]]);
 	recipes.addShaped(<excompressum:heavy_sieve:5>, [[<minecraft:log2:1>, null, <minecraft:log2:1>],[<minecraft:log2:1>, <exnihilocreatio:block_sieve>, <minecraft:log2:1>], [<ore:stickWood>, null, <ore:stickWood>]]);
 	
+# Remove oredict entries
+<ore:oreAluminium>.remove(<exnihilocreatio:item_ore_aluminium:1>);
+
 # Ex Nihilo dust conversion to ores
-	recipes.addShapeless("Ex Nihilo Ardite", <tconstruct:ore:1>, [<ore:pieceArdite>, <ore:pieceArdite>, <ore:pieceArdite>, <ore:pieceArdite>]);
-	recipes.addShapeless("Ex Nihilo Cobalt", <tconstruct:ore>, [<ore:pieceCobalt>, <ore:pieceCobalt>, <ore:pieceCobalt>, <ore:pieceCobalt>]);
-	recipes.addShapeless("Ex Nihilo Nickel", <thermalfoundation:ore:5>, [<ore:pieceNickel>, <ore:pieceNickel>, <ore:pieceNickel>, <ore:pieceNickel>]);
-	recipes.addShapeless("Ex Nihilo Silver", <thermalfoundation:ore:2>, [<ore:pieceSilver>, <ore:pieceSilver>, <ore:pieceSilver>, <ore:pieceSilver>]);
-	recipes.addShapeless("Ex Nihilo Lead", <thermalfoundation:ore:3>, [<ore:pieceLead>, <ore:pieceLead>, <ore:pieceLead>, <ore:pieceLead>]);
-	recipes.addShapeless("Ex Nihilo Aluminomnomnom", <thermalfoundation:ore:4>, [<ore:pieceAluminium>, <ore:pieceAluminium>, <ore:pieceAluminium>, <ore:pieceAluminium>]);
-	recipes.addShapeless("Ex Nihilo Tin", <thermalfoundation:ore:1>, [<ore:pieceTin>, <ore:pieceTin>, <ore:pieceTin>, <ore:pieceTin>]);
-	recipes.addShapeless("Ex Nihilo Copper", <thermalfoundation:ore>, [<ore:pieceCopper>, <ore:pieceCopper>, <ore:pieceCopper>, <ore:pieceCopper>]);
-	recipes.addShapeless("Ex Nihilo Iron", <minecraft:iron_ore>, [<ore:pieceIron>, <ore:pieceIron>, <ore:pieceIron>, <ore:pieceIron>]);
-	recipes.addShapeless("Ex Nihilo Gold", <minecraft:gold_ore>, [<ore:pieceGold>, <ore:pieceGold>, <ore:pieceGold>, <ore:pieceGold>]);
-	recipes.addShapeless("Ex Nihilo JAOPCA Thorium", <nuclearcraft:ore:3>, [<ore:pieceThorium>, <ore:pieceThorium>, <ore:pieceThorium>, <ore:pieceThorium>]);
-	recipes.addShapeless("Ex Nihilo JAOPCA Magnesium", <nuclearcraft:ore:7>, [<ore:pieceMagnesium>, <ore:pieceMagnesium>, <ore:pieceMagnesium>, <ore:pieceMagnesium>]);
-	recipes.addShapeless("Ex Nihilo JAOPCA Lithium", <nuclearcraft:ore:6>, [<ore:pieceLithium>, <ore:pieceLithium>, <ore:pieceLithium>, <ore:pieceLithium>]);
-	recipes.addShapeless("Ex Nihilo JAOPCA Boron", <nuclearcraft:ore:5>, [<ore:pieceBoron>, <ore:pieceBoron>, <ore:pieceBoron>, <ore:pieceBoron>]);
-	recipes.addShapeless("Ex Nihilo JAOPCA Uranium", <immersiveengineering:ore:5>, [<ore:pieceUranium>, <ore:pieceUranium>, <ore:pieceUranium>, <ore:pieceUranium>]);
-	recipes.addShapeless("Ex Nihilo JAOPCA Osmium", <mekanism:oreblock>, [<ore:pieceOsmium>,<ore:pieceOsmium>,<ore:pieceOsmium>,<ore:pieceOsmium>]);
+	val orePieces as string[] = [
+		"Ardite", "Cobalt", "Nickel", "Silver",
+		"Lead", "Aluminium", "Tin", "Copper",
+		"Iron", "Gold", "Thorium", "Magnesium",
+		"Lithium", "Boron", "Uranium", "Osmium"
+	] as string[];
+
+	for i in 0 to orePieces.length {
+		val name = orePieces[i];
+		val oreBlock = oreDict.get("ore" ~ name);
+		val p = oreDict.get("piece" ~ name);
+
+		if (!isNull(oreBlock) && !isNull(p)) {
+			recipes.addShapeless("Ex Nihilo " ~ name ~ " x4", oreBlock.firstItem, [p, p, p, p]);
+			recipes.addShapeless("Ex Nihilo " ~ name ~ " x8", oreBlock.firstItem * 2, [p, p, p, p, p, p, p, p]);
+		}
+	}
 
 # *======= Remove & Hide =======*
 
@@ -137,6 +140,3 @@ print("--- loading ExNihilo&Compressum.zs ---");
 
 # Remove Sieves (defined in CompactMachines)
 recipes.remove(<exnihilocreatio:item_mesh:*>);
-
-
-	print("--- ExNihilo&Compressum.zs initialized ---");

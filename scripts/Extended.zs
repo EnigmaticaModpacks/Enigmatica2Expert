@@ -36,10 +36,17 @@ rh(<immersivecables:wire_coil:3>);
 mods.inworldcrafting.FluidToFluid.transform(<liquid:sand>, <liquid:blueslime>, [<ore:soulSand>]);
 
 # Sandwiches
-var anyDragonsteelSword as IIngredient = <tconstruct:large_sword_blade>.withTag({Material: "dragonsteel_fire"}) |
-	<tconstruct:large_sword_blade>.withTag({Material: "dragonsteel_ice"});
-remakeEx(<culinaryconstruct:sandwich_station>, [
-	[<nuclearcraft:moresmore>, anyDragonsteelSword, <nuclearcraft:moresmore>], 
+# var anyDragonsteelSword as IIngredient = 
+# 	<tconstruct:large_sword_blade>.withTag({Material: "dragonsteel_fire"}) |
+# 	<tconstruct:large_sword_blade>.withTag({Material: "dragonsteel_ice"});
+# remakeEx(<culinaryconstruct:sandwich_station>, [
+# 	[<nuclearcraft:moresmore>, anyDragonsteelSword, <nuclearcraft:moresmore>], 
+# 	[<cookingforblockheads:counter>, <cookingforblockheads:cooking_table>, <cookingforblockheads:counter>], 
+# 	[<cookingforblockheads:counter>, <cookingforblockheads:counter>, <cookingforblockheads:counter>]
+# ]);
+recipes.remove(<culinaryconstruct:sandwich_station>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <culinaryconstruct:sandwich_station>, [
+	[<nuclearcraft:moresmore>, <ore:dragonsteelIngot>, <nuclearcraft:moresmore>], 
 	[<cookingforblockheads:counter>, <cookingforblockheads:cooking_table>, <cookingforblockheads:counter>], 
 	[<cookingforblockheads:counter>, <cookingforblockheads:counter>, <cookingforblockheads:counter>]
 ]);

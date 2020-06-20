@@ -157,13 +157,10 @@ recipes.remove(<rats:marbled_cheese_raw>);
 
 # Raw Plastic from squeeser
 furnace.remove(<rats:raw_plastic>);
-mods.integrateddynamics.Squeezer.addRecipe(
-    <rats:plastic_waste>*16, <rats:raw_plastic>, <liquid:dirt> * 100);
-mods.integrateddynamics.MechanicalSqueezer.addRecipe(
-    <rats:plastic_waste>*12, <rats:raw_plastic>, <liquid:dirt> * 100);
+scripts.Processing.squeeze(<rats:plastic_waste>, <liquid:dirt> * 100, null, <rats:raw_plastic>);
 
 # Polyethene from rat plastic
-mods.mekanism.enrichment.addRecipe(<rats:raw_plastic>*8, <mekanism:polyethene>);
+mods.mekanism.enrichment.addRecipe(<rats:raw_plastic>*16, <mekanism:polyethene>);
 
 # Rat tube from HDPE
 recipes.remove(<rats:rat_tube_white>);

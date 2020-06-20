@@ -276,7 +276,7 @@ for input, output in itemsToUnify {
 	rh(<mekanism:walkietalkie>);
 
 # Tier applying
-	recipes.addShapeless(<mekanism:machineblock:5>.withTag({recipeType: 3, mekData: {}}), [<mekanism:machineblock:1>.withTag({mekData: {}}), <mekanism:tierinstaller>]);
+	recipes.addShapeless(<mekanism:machineblock:5>.withTag({recipeType: 3, mekData: {}}), [<mekanism:machineblock:1>, <mekanism:tierinstaller>]);
 	recipes.addShapeless(<mekanism:machineblock:6>.withTag({recipeType: 3, mekData: {}}), [<mekanism:machineblock:5>.withTag({recipeType: 3, mekData: {}}), <mekanism:tierinstaller:1>]);
 	recipes.addShapeless(<mekanism:machineblock:7>.withTag({recipeType: 3, mekData: {}}), [<mekanism:machineblock:6>.withTag({recipeType: 3, mekData: {}}), <mekanism:tierinstaller:2>]);
 
@@ -320,11 +320,18 @@ remake("Induction Cell 4", <mekanism:basicblock2:3>.withTag({tier: 3}), [
 
 # Mekanism Fusion Reactor
 recipes.remove(<mekanismgenerators:reactor>);
-recipes.addShaped(<mekanismgenerators:reactor>, [
-		[<advancedrocketry:intake>, <mekanism:gastank>.withTag({tier: 3}), <advancedrocketry:intake>],
-		[<mekanismgenerators:reactor:2>, <nuclearcraft:fusion_core>, <mekanismgenerators:reactor:2>], 
-		[<nuclearcraft:lithium_ion_battery_elite>, <nuclearcraft:lithium_ion_battery_elite>, <nuclearcraft:lithium_ion_battery_elite>]
-	]);
+// recipes.addShaped(<mekanismgenerators:reactor>, [
+// 		[<advancedrocketry:intake>, <mekanism:gastank>.withTag({tier: 3}), <advancedrocketry:intake>],
+// 		[<mekanismgenerators:reactor:2>, <nuclearcraft:fusion_core>, <mekanismgenerators:reactor:2>], 
+// 		[<nuclearcraft:lithium_ion_battery_elite>, <nuclearcraft:lithium_ion_battery_elite>, <nuclearcraft:lithium_ion_battery_elite>]
+// 	]);
+mods.extendedcrafting.TableCrafting.addShaped(0, <mekanismgenerators:reactor>, [
+	[<ore:plateElite>, <advancedrocketry:blocklens>, <advancedrocketry:blocklens>, <advancedrocketry:blocklens>, <ore:plateElite>], 
+	[<mekanismgenerators:reactor:2>, <ic2:iridium_reflector>, <mekanism:gastank>.withTag({tier: 3}), <ic2:iridium_reflector>, <mekanismgenerators:reactor:2>], 
+	[<nuclearcraft:electromagnet_supercooler_idle>, <advancedrocketry:intake>, <nuclearcraft:fusion_core>, <advancedrocketry:intake>, <nuclearcraft:electromagnet_supercooler_idle>], 
+	[<mekanismgenerators:reactor:2>, <ic2:iridium_reflector>, <mekanism:gastank>.withTag({tier: 3}), <ic2:iridium_reflector>, <mekanismgenerators:reactor:2>], 
+	[<ore:plateElite>, <nuclearcraft:lithium_ion_battery_elite>, <nuclearcraft:lithium_ion_battery_elite>, <nuclearcraft:lithium_ion_battery_elite>, <ore:plateElite>]
+]);
 
 # Speed Upgrade with energetic wool
 remake("mekanism speedupgrade", <mekanism:speedupgrade>, [

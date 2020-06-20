@@ -375,3 +375,10 @@ print("--- loading MiscRecipes.zs ---");
 
 	rh(<backpack:stick>);
 	rh(<backpack:stick:1>);
+
+	# Diamond backpack chain recipe
+remakeEx(<ironbackpacks:backpack>.withTag({packInfo: {type: "ironbackpacks:diamond", spec: "STORAGE"}}), [
+	[gemDiamondRat, gemDiamondRat, gemDiamondRat],
+	[<ore:chest>, <ironbackpacks:backpack>.withTag({packInfo: {type: "ironbackpacks:gold", spec: "STORAGE"}}), <ore:chest>],
+	[gemDiamondRat, gemDiamondRat, gemDiamondRat]
+	]);

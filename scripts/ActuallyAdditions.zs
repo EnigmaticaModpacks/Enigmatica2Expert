@@ -233,7 +233,6 @@ var listCatFur as string[] = [
 "enderio:item_power_conduit"     , "2"    , "40",
 "immersivecables:wire_coil"      , "1"    , "25",
 "rs_ctr:wire"                    , "0"    , "45",
-"forestry:chipsets"              , "3"    , "1",
 "twilightforest:alpha_fur"       , "0"    , "3",
 "twilightforest:arctic_fur"      , "0"    , "15",
 "animania:wool"                  , "3"    , "55",

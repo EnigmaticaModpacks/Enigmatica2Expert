@@ -203,3 +203,9 @@ recipes.addShaped(<extrautils2:suncrystal:250>, [
 
 # TODO: Cancel Ender Lily drop
 vanilla.seeds.removeSeed(<extrautils2:enderlilly>);
+
+# Remake Chunk loader recipe
+remakeEx(<extrautils2:chunkloader>, [
+	[<ore:stickTreatedWood>, <ore:eyeofredstone>, <ore:stickTreatedWood>],
+	[<ore:stickTreatedWood>, <extrautils2:goldenlasso>.withTag({Animal: {id:"minecraft:villager"}}), <ore:stickTreatedWood>],
+	[null, <ore:stickTreatedWood>, null]]);

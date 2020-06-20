@@ -92,13 +92,11 @@ scripts.Processing.alloy([
 
 # Spectre Coil normal
 recipes.remove(<randomthings:spectrecoil_normal>);
-recipes.addShaped(<randomthings:spectrecoil_normal> * 2, [
-	[<ore:plateObsidian>, <randomthings:ingredient:12>, <ore:plateObsidian>],
-	[<randomthings:ingredient:12>, <immersiveengineering:graphite_electrode>, <randomthings:ingredient:12>],
-	[<ore:plateObsidian>, <randomthings:ingredient:3>, <ore:plateObsidian>]]);
+
+# Any rod
 recipes.addShaped(<randomthings:spectrecoil_normal>, [
 	[<ore:plateObsidian>, <randomthings:ingredient:12>, <ore:plateObsidian>],
-	[<randomthings:ingredient:12>, <immersiveengineering:graphite_electrode>.onlyDamaged(), <randomthings:ingredient:12>],
+	[<randomthings:ingredient:12>, <immersiveengineering:graphite_electrode>, <randomthings:ingredient:12>],
 	[<ore:plateObsidian>, <randomthings:ingredient:3>, <ore:plateObsidian>]]);
 
 # Spectre Coil redstone
@@ -140,6 +138,3 @@ recipes.addShaped(<randomthings:spectrelens>, [
 	[<randomthings:ingredient:3>, <avaritia:resource>, <randomthings:ingredient:3>],
 	[<ore:crystalLitherite>, <advancedrocketry:blocklens>, <ore:crystalLitherite>],
 	[<randomthings:ingredient:3>, <avaritia:resource>, <randomthings:ingredient:3>]]);
-
-# Wood compat
-scripts.Processing.saw(<randomthings:spectrelog>, <randomthings:spectreplank>, "Except: manufactory mekSawmill");

@@ -87,3 +87,6 @@ Hover over item and press Y to show it in surrounding chests
 Stack of Steelleafs in your hotbar will dramactically fast repair items with Synergy treat
 Building gadgets can take items from ME network. Just shift-right-click on Security Terminal with gadget
 Maim Trap from Dark Utilities - best way to kill mobs on high difficulty
+Never spend 6 minutes doing something by hand when you can spend 6 hours to automate it
+Higher High Oven output more heat
+When you pick Core Sample, its automatically added to map. Change map (default key "J") to topography mode to see Mineral Deposits

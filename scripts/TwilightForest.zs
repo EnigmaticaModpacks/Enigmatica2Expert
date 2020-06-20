@@ -73,3 +73,10 @@ for input, output in rockRecycleTable{
 //     }
 //   }
 // });
+
+# Gold minotaur axe
+scripts.Processing.recycleMetal(<twilightforest:minotaur_axe_gold>, <minecraft:gold_ingot> * 6,   <liquid:gold> * (144*6), null);
+
+# Diamond minotaur axe
+scripts.Processing.crush(<twilightforest:minotaur_axe>, <minecraft:diamond> * 11,
+  "No Exceptions", [<ic2:dust:5> * 5] as IItemStack[], [0.25f] as float[]);
