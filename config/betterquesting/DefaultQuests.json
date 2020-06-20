@@ -2963,7 +2963,7 @@
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "appliedenergistics2:controller",
+            "id:8": "appliedenergistics2:inscriber",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -2976,7 +2976,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Gate: Applied Energistics",
-          "desc:8": "There is no Applied Energistics chapter, but Immersive Engineering, IndustrialCraft, Forestry, Actually Additions and Industrial Foregoing open up for the mod."
+          "desc:8": "AE2 is compact, easily accessible, considerably extendible storage system.\nImmersive Engineering, IndustrialCraft, Forestry, Actually Additions and Industrial Foregoing open up for the mod."
         }
       },
       "tasks:9": {
@@ -2984,12 +2984,12 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "appliedenergistics2:controller",
+              "id:8": "appliedenergistics2:inscriber",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -3019,18 +3019,6 @@
               "id:8": "appliedenergistics2:material",
               "Count:3": 64,
               "Damage:2": 11,
-              "OreDict:8": ""
-            }
-          }
-        },
-        "1:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 1,
-          "rewards:9": {
-            "0:10": {
-              "id:8": "appliedenergistics2:part",
-              "Count:3": 32,
-              "Damage:2": 56,
               "OreDict:8": ""
             }
           }
@@ -59475,6 +59463,78 @@
       }
     },
     "776:10": {
+      "questID:3": 777,
+      "preRequisites:11": [
+        38
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "appliedenergistics2:charger",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Charger",
+          "desc:8": "The Charger provides a way to charge supported tools through the ME Network or can be hand cranked using a Wooden Crank which while ineffective can be useful if you have no other means for power generation.\n\nCan also be used to manufacture Charged Certus Quartz Crystal from Certus Quartz Crystal."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "appliedenergistics2:charger",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "777:10": {
       "questID:3": 778,
       "preRequisites:11": [
         706,
@@ -59606,7 +59666,7 @@
         }
       }
     },
-    "777:10": {
+    "778:10": {
       "questID:3": 779,
       "preRequisites:11": [
         79
@@ -59755,7 +59815,7 @@
         }
       }
     },
-    "778:10": {
+    "779:10": {
       "questID:3": 780,
       "preRequisites:11": [
         213
@@ -59904,7 +59964,7 @@
         }
       }
     },
-    "779:10": {
+    "780:10": {
       "questID:3": 781,
       "preRequisites:11": [
         425
@@ -60135,7 +60195,7 @@
         }
       }
     },
-    "780:10": {
+    "781:10": {
       "questID:3": 782,
       "preRequisites:11": [
         451
@@ -60331,7 +60391,7 @@
         }
       }
     },
-    "781:10": {
+    "782:10": {
       "questID:3": 783,
       "preRequisites:11": [
         782
@@ -60527,7 +60587,7 @@
         }
       }
     },
-    "782:10": {
+    "783:10": {
       "questID:3": 784,
       "preRequisites:11": [
         783
@@ -60726,7 +60786,7 @@
         }
       }
     },
-    "783:10": {
+    "784:10": {
       "questID:3": 785,
       "preRequisites:11": [
         784
@@ -60922,7 +60982,7 @@
         }
       }
     },
-    "784:10": {
+    "785:10": {
       "questID:3": 786,
       "preRequisites:11": [
         788
@@ -61050,7 +61110,7 @@
         }
       }
     },
-    "785:10": {
+    "786:10": {
       "questID:3": 787,
       "preRequisites:11": [
         789
@@ -61186,7 +61246,7 @@
         }
       }
     },
-    "786:10": {
+    "787:10": {
       "questID:3": 788,
       "preRequisites:11": [
         791
@@ -61325,7 +61385,7 @@
         }
       }
     },
-    "787:10": {
+    "788:10": {
       "questID:3": 789,
       "preRequisites:11": [
         752
@@ -61461,7 +61521,7 @@
         }
       }
     },
-    "788:10": {
+    "789:10": {
       "questID:3": 790,
       "preRequisites:11": [
         786
@@ -61592,7 +61652,7 @@
         }
       }
     },
-    "789:10": {
+    "790:10": {
       "questID:3": 791,
       "preRequisites:11": [
         787
@@ -61720,7 +61780,7 @@
         }
       }
     },
-    "790:10": {
+    "791:10": {
       "questID:3": 792,
       "preRequisites:11": [
         565
@@ -61851,7 +61911,7 @@
         }
       }
     },
-    "791:10": {
+    "792:10": {
       "questID:3": 793,
       "preRequisites:11": [
         766
@@ -61979,7 +62039,7 @@
         }
       }
     },
-    "792:10": {
+    "793:10": {
       "questID:3": 794,
       "preRequisites:11": [
         621
@@ -62036,7 +62096,7 @@
         }
       }
     },
-    "793:10": {
+    "794:10": {
       "questID:3": 795,
       "preRequisites:11": [
         434
@@ -62113,7 +62173,7 @@
         }
       }
     },
-    "794:10": {
+    "795:10": {
       "questID:3": 796,
       "preRequisites:11": [
         181
@@ -62187,7 +62247,7 @@
         }
       }
     },
-    "795:10": {
+    "796:10": {
       "questID:3": 797,
       "preRequisites:11": [
         434
@@ -62261,7 +62321,7 @@
         }
       }
     },
-    "796:10": {
+    "797:10": {
       "questID:3": 798,
       "preRequisites:11": [
         696,
@@ -62340,7 +62400,7 @@
         }
       }
     },
-    "797:10": {
+    "798:10": {
       "questID:3": 799,
       "preRequisites:11": [
         801
@@ -62453,7 +62513,7 @@
         }
       }
     },
-    "798:10": {
+    "799:10": {
       "questID:3": 800,
       "preRequisites:11": [
         434
@@ -62527,7 +62587,7 @@
         }
       }
     },
-    "799:10": {
+    "800:10": {
       "questID:3": 801,
       "preRequisites:11": [
         434
@@ -62611,7 +62671,7 @@
         }
       }
     },
-    "800:10": {
+    "801:10": {
       "questID:3": 802,
       "preRequisites:11": [
         434
@@ -62687,7 +62747,7 @@
         }
       }
     },
-    "801:10": {
+    "802:10": {
       "questID:3": 803,
       "preRequisites:11": [
         181
@@ -62761,7 +62821,7 @@
         }
       }
     },
-    "802:10": {
+    "803:10": {
       "questID:3": 804,
       "preRequisites:11": [
         167
@@ -62829,7 +62889,7 @@
         }
       }
     },
-    "803:10": {
+    "804:10": {
       "questID:3": 805,
       "preRequisites:11": [
         161
@@ -62897,7 +62957,7 @@
         }
       }
     },
-    "804:10": {
+    "805:10": {
       "questID:3": 806,
       "preRequisites:11": [
         161
@@ -62991,7 +63051,7 @@
         }
       }
     },
-    "805:10": {
+    "806:10": {
       "questID:3": 807,
       "preRequisites:11": [
         163
@@ -63059,7 +63119,7 @@
         }
       }
     },
-    "806:10": {
+    "807:10": {
       "questID:3": 808,
       "preRequisites:11": [
         628
@@ -63127,7 +63187,7 @@
         }
       }
     },
-    "807:10": {
+    "808:10": {
       "questID:3": 809,
       "preRequisites:11": [
         434
@@ -63207,7 +63267,7 @@
         }
       }
     },
-    "808:10": {
+    "809:10": {
       "questID:3": 810,
       "preRequisites:11": [
         698
@@ -63275,7 +63335,7 @@
         }
       }
     },
-    "809:10": {
+    "810:10": {
       "questID:3": 811,
       "preRequisites:11": [
         698
@@ -63343,7 +63403,7 @@
         }
       }
     },
-    "810:10": {
+    "811:10": {
       "questID:3": 812,
       "preRequisites:11": [
         707
@@ -63411,7 +63471,7 @@
         }
       }
     },
-    "811:10": {
+    "812:10": {
       "questID:3": 813,
       "preRequisites:11": [
         812
@@ -63479,7 +63539,7 @@
         }
       }
     },
-    "812:10": {
+    "813:10": {
       "questID:3": 814,
       "preRequisites:11": [
         136
@@ -63547,7 +63607,7 @@
         }
       }
     },
-    "813:10": {
+    "814:10": {
       "questID:3": 815,
       "preRequisites:11": [
         146
@@ -63615,7 +63675,7 @@
         }
       }
     },
-    "814:10": {
+    "815:10": {
       "questID:3": 816,
       "preRequisites:11": [
         139
@@ -63683,7 +63743,7 @@
         }
       }
     },
-    "815:10": {
+    "816:10": {
       "questID:3": 817,
       "preRequisites:11": [
         220
@@ -63779,7 +63839,7 @@
         }
       }
     },
-    "816:10": {
+    "817:10": {
       "questID:3": 818,
       "preRequisites:11": [
         220
@@ -63847,7 +63907,7 @@
         }
       }
     },
-    "817:10": {
+    "818:10": {
       "questID:3": 819,
       "preRequisites:11": [
         723
@@ -63932,7 +63992,7 @@
         }
       }
     },
-    "818:10": {
+    "819:10": {
       "questID:3": 820,
       "preRequisites:11": [
         16
@@ -64004,7 +64064,7 @@
         }
       }
     },
-    "819:10": {
+    "820:10": {
       "questID:3": 821,
       "preRequisites:11": [
         820
@@ -64076,7 +64136,7 @@
         }
       }
     },
-    "820:10": {
+    "821:10": {
       "questID:3": 822,
       "preRequisites:11": [
         821
@@ -64154,7 +64214,7 @@
         }
       }
     },
-    "821:10": {
+    "822:10": {
       "questID:3": 823,
       "preRequisites:11": [
         821
@@ -64226,7 +64286,7 @@
         }
       }
     },
-    "822:10": {
+    "823:10": {
       "questID:3": 824,
       "preRequisites:11": [
         611
@@ -64294,7 +64354,7 @@
         }
       }
     },
-    "823:10": {
+    "824:10": {
       "questID:3": 825,
       "preRequisites:11": [
         613
@@ -64362,7 +64422,7 @@
         }
       }
     },
-    "824:10": {
+    "825:10": {
       "questID:3": 826,
       "preRequisites:11": [
         615
@@ -64430,7 +64490,7 @@
         }
       }
     },
-    "825:10": {
+    "826:10": {
       "questID:3": 827,
       "preRequisites:11": [
         615
@@ -64498,7 +64558,7 @@
         }
       }
     },
-    "826:10": {
+    "827:10": {
       "questID:3": 828,
       "preRequisites:11": [
         617
@@ -64566,7 +64626,7 @@
         }
       }
     },
-    "827:10": {
+    "828:10": {
       "questID:3": 829,
       "preRequisites:11": [
         617
@@ -64634,7 +64694,7 @@
         }
       }
     },
-    "828:10": {
+    "829:10": {
       "questID:3": 830,
       "preRequisites:11": [
         617
@@ -64702,7 +64762,7 @@
         }
       }
     },
-    "829:10": {
+    "830:10": {
       "questID:3": 831,
       "preRequisites:11": [
         617
@@ -64770,7 +64830,7 @@
         }
       }
     },
-    "830:10": {
+    "831:10": {
       "questID:3": 832,
       "preRequisites:11": [
         466
@@ -64832,6 +64892,1806 @@
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
               "Damage:2": 25,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "832:10": {
+      "questID:3": 834,
+      "preRequisites:11": [
+        38
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "appliedenergistics2:controller",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "ME Controller",
+          "desc:8": "The ME Controller is the routing hub of a ME Network. Without it, only up to 8 devices can interact, any more and everything stops working. It is not possible to have 2 ME Controller in one ME Network."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "appliedenergistics2:controller",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "833:10": {
+      "questID:3": 835,
+      "preRequisites:11": [
+        843
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "appliedenergistics2:drive",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "ME Drive",
+          "desc:8": "A block designed to do one thing, store Storage Cells."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "appliedenergistics2:drive",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "834:10": {
+      "questID:3": 836,
+      "preRequisites:11": [
+        38
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "appliedenergistics2:interface",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "ME Interface",
+          "desc:8": "The ME Interface acts as an in between when working with pipes, tubes, networks, or machines from other mods."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "appliedenergistics2:interface",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "835:10": {
+      "questID:3": 837,
+      "preRequisites:11": [
+        777
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "appliedenergistics2:condenser",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Matter Condenser",
+          "desc:8": "Has two key functions, ellimination of excess materials in a cheap manor, and the production of Singularity and Matter Balls.\n\n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "appliedenergistics2:condenser",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "836:10": {
+      "questID:3": 838,
+      "preRequisites:11": [
+        836
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "appliedenergistics2:molecular_assembler",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Molecular Assembler",
+          "desc:8": "The assembler is a powered machine which crafts items, it can be upgraded by inserting Acceleration Cards into it; once upgraded it is very fast.\n\nUpgrades can be inserted by §aShift+RightClick"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "appliedenergistics2:molecular_assembler",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "837:10": {
+      "questID:3": 840,
+      "preRequisites:11": [
+        842
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "appliedenergistics2:wireless_access_point",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "ME Wireless Access Point",
+          "desc:8": "Allows wireless access via a Wireless Terminal. Range and power usage is determined based on the number of Wireless Booster installed into the ME Wireless Access Point.\n\n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "appliedenergistics2:wireless_access_point",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "838:10": {
+      "questID:3": 841,
+      "preRequisites:11": [
+        840
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "appliedenergistics2:material",
+            "Count:3": 1,
+            "Damage:2": 42,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Wireless Booster",
+          "desc:8": "Used to increase the range of the ME Wireless Access Point.\n\n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "appliedenergistics2:material",
+              "Count:3": 10,
+              "Damage:2": 42,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "839:10": {
+      "questID:3": 842,
+      "preRequisites:11": [
+        843
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "appliedenergistics2:part",
+            "Count:3": 1,
+            "Damage:2": 360,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "ME Crafting Terminal",
+          "desc:8": "The ME Terminal is a HID which gives you access to a ME Network\u0027s Networked Storage."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "appliedenergistics2:part",
+              "Count:3": 1,
+              "Damage:2": 360,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "840:10": {
+      "questID:3": 843,
+      "preRequisites:11": [
+        38
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "appliedenergistics2:part",
+            "Count:3": 1,
+            "Damage:2": 220,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "ME Storage Bus",
+          "desc:8": "The ME Storage Bus, when attached to another inventory block in the world lets you access that inventory via networked functions. This allows you to use chests, barrels, or other types of item storage in your networks."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "appliedenergistics2:part",
+              "Count:3": 1,
+              "Damage:2": 220,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "841:10": {
+      "questID:3": 844,
+      "preRequisites:11": [
+        843
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "appliedenergistics2:part",
+            "Count:3": 1,
+            "Damage:2": 460,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "P2P Tunnel",
+          "desc:8": "P2P Tunnel or \"Point to Point Tunnels\" are a versatile configurable system to move items / redstone / power / and fluids from one location to another though an existing ME Network without storage."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "appliedenergistics2:part",
+              "Count:3": 1,
+              "Damage:2": 460,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {
+                  "AS_Amulet_HolderLeast:4": -8469918875462925012,
+                  "AS_Amulet_HolderMost:4": -5260415147165141885
+                }
+              },
+              "id:8": "appliedenergistics2:memory_card",
+              "Count:3": 1,
+              "tag:10": {},
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "842:10": {
+      "questID:3": 845,
+      "preRequisites:11": [
+        838
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "appliedenergistics2:crafting_accelerator",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Crafting Unit",
+          "desc:8": "To be a valid crafting CPU, two rules must be met:\n\n1. The CPU must be a cuboid, completely composed of the parts listed above; air or other blocks are not valid.\n\n2. The CPU must contain at least 1 storage component.\n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "appliedenergistics2:crafting_accelerator",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "appliedenergistics2:crafting_storage_1k",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "843:10": {
+      "questID:3": 846,
+      "preRequisites:11": [
+        777
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "threng:material",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Fluix Steel",
+          "desc:8": "Core crafting component for Lazy AE2 mod"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "threng:material",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "844:10": {
+      "questID:3": 847,
+      "preRequisites:11": [
+        848
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "threng:big_assembler",
+            "Count:3": 1,
+            "Damage:2": 4,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Mass Assembly Chamber",
+          "desc:8": "The Mass Assembly Chamber is a multi-block apparatus that provides autocrafting for crafting table recipes. It\u0027s intended to be an easier means of scaling up autocrafting than traditional molecular assemblers, which consume many channels and require intricate structures to maximize efficiency.\n\n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "threng:big_assembler",
+              "Count:3": 1,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "threng:big_assembler",
+              "Count:3": 1,
+              "Damage:2": 3,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "threng:big_assembler",
+              "Count:3": 20,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "threng:big_assembler",
+              "Count:3": 6,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "845:10": {
+      "questID:3": 848,
+      "preRequisites:11": [
+        846
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "threng:machine",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Fluix Aggregator",
+          "desc:8": "Performs the in-world fluix crystal crafting operation\n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "threng:machine",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "846:10": {
+      "questID:3": 849,
+      "preRequisites:11": [
+        846
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "threng:machine",
+            "Count:3": 1,
+            "Damage:2": 2,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "ME Circuit Etcher",
+          "desc:8": "Crafting AE processors without extra steps"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "threng:machine",
+              "Count:3": 1,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "847:10": {
+      "questID:3": 850,
+      "preRequisites:11": [
+        846
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "threng:machine",
+            "Count:3": 1,
+            "Damage:2": 4,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "ME Level Maintainer",
+          "desc:8": "The ME Level Maintainer is used to maintain some quantity of an item in the ME network. This is accomplished by requesting autocrafting for items that fall beneath a certain quantity threshold.\n\n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "threng:machine",
+              "Count:3": 1,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "848:10": {
+      "questID:3": 851,
+      "preRequisites:11": [
+        834
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "ae2stuff:visualiser",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Network Visualisation Tool",
+          "desc:8": "Used for ME System Debugging.\n\nWhen the Player is holding this tool and they look onto network, all nodes get a colored overlay with channel count similar to that on the picture below. This overlay can even be seen through blocks."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "ae2stuff:visualiser",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "849:10": {
+      "questID:3": 852,
+      "preRequisites:11": [
+        834
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "packagedauto:packager",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Packager",
+          "desc:8": "PackagedAuto is an addon to Applied Energistics 2, and it aims to use \"packages\" of items to allow autocrafting with more than 9 items. "
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "packagedauto:packager",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "packagedauto:encoder",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "packagedauto:unpackager",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "850:10": {
+      "questID:3": 853,
+      "preRequisites:11": [
+        854
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "extracells:fluidfiller",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "ME Fluid Auto Filler",
+          "desc:8": "Whenever a bucket of certain liquid is requested, it automatically fills a bucket from the ME network with the liquid."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "extracells:fluidfiller",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "851:10": {
+      "questID:3": 854,
+      "preRequisites:11": [
+        838
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "extracells:fluidcrafter",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "ME Fluid Assembler",
+          "desc:8": "The Fluid Assembler behaves like a Molecular Assembler, allowing crafting with fluids using those in Fluid Storage Cells."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "extracells:fluidcrafter",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "852:10": {
+      "questID:3": 855,
+      "preRequisites:11": [
+        777
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "immersivecables:wire_coil",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Fluix Wire Coil",
+          "desc:8": "You could wire your Applied Energistics network with those fancy Immersive Engineering cables!"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "immersivecables:wire_coil",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "immersivecables:transformer_fluix",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "853:10": {
+      "questID:3": 856,
+      "preRequisites:11": [
+        844
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "rf-capability-adapter:aecapabilityadapter",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "ME Capability Adapter",
+          "desc:8": "This mod adds only one block, an \"ME Capability Adapter\", it basically allows Applied Energistics connections over things that proxies capabilities, such as Compact Machines 3 Tunnels.\n\n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "rf-capability-adapter:aecapabilityadapter",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "854:10": {
+      "questID:3": 857,
+      "preRequisites:11": [
+        840
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "wct:wct",
+            "Count:3": 1,
+            "tag:10": {
+              "InfinityEnergy:3": 2147483647,
+              "internalCurrentPower:6": 1600000.0
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Wireless Crafting Terminal",
+          "desc:8": "A version of the AE2 Wireless Terminal with a 3x3 crafting table integrated"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "wct:wct",
+              "Count:3": 1,
+              "tag:10": {},
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "855:10": {
+      "questID:3": 858,
+      "preRequisites:11": [
+        857
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "ae2wtlib:infinity_booster_card",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Infinity Booster Card",
+          "desc:8": "Allows to gain infinite, cross-dimensional distance on the wireless crafting terminal"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "ae2wtlib:infinity_booster_card",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
               "OreDict:8": ""
             }
           }
@@ -65394,7 +67254,7 @@
           "desc:8": "Quests for Advanced Rocketry, a Tier 4 Tech mod. "
         }
       },
-      "order:3": 17
+      "order:3": 18
     },
     "2:10": {
       "quests:9": {
@@ -66006,7 +67866,7 @@
           "desc:8": "Quests for Ender IO, a Tier 4 Tech mod."
         }
       },
-      "order:3": 19
+      "order:3": 20
     },
     "5:10": {
       "quests:9": {
@@ -66668,7 +68528,7 @@
           "desc:8": "Quests for Botania."
         }
       },
-      "order:3": 12
+      "order:3": 13
     },
     "7:10": {
       "quests:9": {
@@ -67336,7 +69196,7 @@
           "desc:8": "Quests for Blood Magic."
         }
       },
-      "order:3": 13
+      "order:3": 14
     },
     "9:10": {
       "quests:9": {
@@ -68858,7 +70718,7 @@
           "desc:8": "Quests for Thermal Expansion, a Tier 3 Tech mod."
         }
       },
-      "order:3": 16
+      "order:3": 17
     },
     "14:10": {
       "quests:9": {
@@ -69432,7 +71292,7 @@
           "desc:8": "Quests for RFTools, a Tier 2 Tech mod."
         }
       },
-      "order:3": 14
+      "order:3": 15
     },
     "16:10": {
       "quests:9": {
@@ -70027,7 +71887,7 @@
           "desc:8": "Quests for NuclearCraft, a Tier 2 Tech mod."
         }
       },
-      "order:3": 15
+      "order:3": 16
     },
     "18:10": {
       "quests:9": {
@@ -70286,7 +72146,7 @@
           "desc:8": "Quests for Environmental Tech, a Tier 4 Tech mod."
         }
       },
-      "order:3": 18
+      "order:3": 19
     },
     "19:10": {
       "quests:9": {
@@ -70608,7 +72468,7 @@
           "desc:8": "Quests for Draconic Evolution, a Tier 4 Tech mod."
         }
       },
-      "order:3": 20
+      "order:3": 21
     },
     "20:10": {
       "quests:9": {
@@ -70863,7 +72723,7 @@
           "desc:8": "Completing this chapter means winning the modpack!"
         }
       },
-      "order:3": 21
+      "order:3": 22
     },
     "21:10": {
       "quests:9": {
@@ -71060,13 +72920,216 @@
         }
       },
       "order:3": 1
+    },
+    "22:10": {
+      "quests:9": {
+        "0:10": {
+          "sizeX:3": 36,
+          "x:3": 6,
+          "y:3": 6,
+          "id:3": 38,
+          "sizeY:3": 36
+        },
+        "1:10": {
+          "sizeX:3": 24,
+          "x:3": 12,
+          "y:3": 48,
+          "id:3": 777,
+          "sizeY:3": 24
+        },
+        "2:10": {
+          "sizeX:3": 24,
+          "x:3": 84,
+          "y:3": 12,
+          "id:3": 834,
+          "sizeY:3": 24
+        },
+        "3:10": {
+          "sizeX:3": 24,
+          "x:3": 12,
+          "y:3": -60,
+          "id:3": 835,
+          "sizeY:3": 24
+        },
+        "4:10": {
+          "sizeX:3": 24,
+          "x:3": -24,
+          "y:3": 12,
+          "id:3": 836,
+          "sizeY:3": 24
+        },
+        "5:10": {
+          "sizeX:3": 24,
+          "x:3": 48,
+          "y:3": 48,
+          "id:3": 837,
+          "sizeY:3": 24
+        },
+        "6:10": {
+          "sizeX:3": 24,
+          "x:3": -60,
+          "y:3": 12,
+          "id:3": 838,
+          "sizeY:3": 24
+        },
+        "7:10": {
+          "sizeX:3": 24,
+          "x:3": 84,
+          "y:3": -24,
+          "id:3": 840,
+          "sizeY:3": 24
+        },
+        "8:10": {
+          "sizeX:3": 24,
+          "x:3": 120,
+          "y:3": -24,
+          "id:3": 841,
+          "sizeY:3": 24
+        },
+        "9:10": {
+          "sizeX:3": 24,
+          "x:3": 48,
+          "y:3": -24,
+          "id:3": 842,
+          "sizeY:3": 24
+        },
+        "10:10": {
+          "sizeX:3": 24,
+          "x:3": 12,
+          "y:3": -24,
+          "id:3": 843,
+          "sizeY:3": 24
+        },
+        "11:10": {
+          "sizeX:3": 24,
+          "x:3": -24,
+          "y:3": -24,
+          "id:3": 844,
+          "sizeY:3": 24
+        },
+        "12:10": {
+          "sizeX:3": 24,
+          "x:3": -60,
+          "y:3": -24,
+          "id:3": 845,
+          "sizeY:3": 24
+        },
+        "13:10": {
+          "sizeX:3": 24,
+          "x:3": 12,
+          "y:3": 84,
+          "id:3": 846,
+          "sizeY:3": 24
+        },
+        "14:10": {
+          "sizeX:3": 24,
+          "x:3": 84,
+          "y:3": 84,
+          "id:3": 847,
+          "sizeY:3": 24
+        },
+        "15:10": {
+          "sizeX:3": 24,
+          "x:3": 48,
+          "y:3": 84,
+          "id:3": 848,
+          "sizeY:3": 24
+        },
+        "16:10": {
+          "sizeX:3": 24,
+          "x:3": 12,
+          "y:3": 120,
+          "id:3": 849,
+          "sizeY:3": 24
+        },
+        "17:10": {
+          "sizeX:3": 24,
+          "x:3": -24,
+          "y:3": 84,
+          "id:3": 850,
+          "sizeY:3": 24
+        },
+        "18:10": {
+          "sizeX:3": 24,
+          "x:3": 84,
+          "y:3": 48,
+          "id:3": 851,
+          "sizeY:3": 24
+        },
+        "19:10": {
+          "sizeX:3": 24,
+          "x:3": 120,
+          "y:3": 12,
+          "id:3": 852,
+          "sizeY:3": 24
+        },
+        "20:10": {
+          "sizeX:3": 24,
+          "x:3": -96,
+          "y:3": 48,
+          "id:3": 853,
+          "sizeY:3": 24
+        },
+        "21:10": {
+          "sizeX:3": 24,
+          "x:3": -60,
+          "y:3": 48,
+          "id:3": 854,
+          "sizeY:3": 24
+        },
+        "22:10": {
+          "sizeX:3": 24,
+          "x:3": -24,
+          "y:3": 48,
+          "id:3": 855,
+          "sizeY:3": 24
+        },
+        "23:10": {
+          "sizeX:3": 24,
+          "x:3": -24,
+          "y:3": -60,
+          "id:3": 856,
+          "sizeY:3": 24
+        },
+        "24:10": {
+          "sizeX:3": 24,
+          "x:3": 84,
+          "y:3": -60,
+          "id:3": 857,
+          "sizeY:3": 24
+        },
+        "25:10": {
+          "sizeX:3": 24,
+          "x:3": 120,
+          "y:3": -60,
+          "id:3": 858,
+          "sizeY:3": 24
+        }
+      },
+      "lineID:3": 22,
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "name:8": "Applied Energetics",
+          "icon:10": {
+            "id:8": "chisel:futura",
+            "Count:3": 1,
+            "Damage:2": 2,
+            "OreDict:8": ""
+          },
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "§3Applied Energistics 2§r is a mod designed to compactly store items in a digital network called Matter Energy, or ME (pronounced Emm-Eee). \nDifferent devices can be connected to the ME Network, such as an ME Drive, for the storage of items, or an ME Terminal, allowing for access to that storage.\n\n"
+        }
+      },
+      "order:3": 12
     }
   },
   "questSettings:10": {
     "betterquesting:10": {
       "pack_name:8": "Enigmatica 2: Expert",
       "hardcore:1": 0,
-      "editmode:1": 1,
+      "editmode:1": 0,
       "livesMax:4": 10,
       "livesdef:3": 3,
       "home_anchor_y:5": 3.0,

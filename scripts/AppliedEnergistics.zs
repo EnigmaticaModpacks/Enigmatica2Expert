@@ -222,3 +222,11 @@ print("--- loading AppliedEnergistics.zs ---");
 		[<appliedenergistics2:fluix_block>, <appliedenergistics2:energy_acceptor>, <appliedenergistics2:fluix_block>], 
 		[<teslacorelib:machine_case>, pearlFluix, <teslacorelib:machine_case>]]);
 	}
+
+# Add ore for Better Questing
+<ore:craftingStorageAny>.add([
+  <appliedenergistics2:crafting_storage_64k>,
+  <appliedenergistics2:crafting_storage_16k>,
+  <appliedenergistics2:crafting_storage_4k>,
+  <appliedenergistics2:crafting_storage_1k>,
+]);
