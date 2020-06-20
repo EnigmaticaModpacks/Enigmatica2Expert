@@ -19,6 +19,15 @@
             "height" : 40,
             "alignment" : "top_center"
         },
+		"extended":
+        {
+            "image" : "modpack:textures/gui/extended.png",
+            "posX" : -20,
+            "posY" : 100,
+            "width" : 200,
+            "height" : 32,
+            "alignment" : "top_center"
+        },
 		"2":
         {
             "image" : "modpack:textures/gui/2.png",
