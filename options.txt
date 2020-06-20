@@ -2,10 +2,10 @@ version:1343
 invertYMouse:false
 mouseSensitivity:0.5
 fov:0.5
-gamma:1.0
+gamma:0.59859157
 saturation:0.0
 renderDistance:15
-guiScale:3
+guiScale:4
 particles:0
 bobView:true
 anaglyph3d:false
@@ -45,7 +45,7 @@ reducedDebugInfo:false
 useNativeTransport:true
 entityShadows:true
 mainHand:right
-attackIndicator:2
+attackIndicator:1
 showSubtitles:false
 realmsNotifications:true
 enableWeakAttacks:false
@@ -96,12 +96,6 @@ key_Misc Caster Toggle:0
 key_keybind.baublesinventory:0
 key_quark.keybind.toggleAutojump:0
 key_quark.keybind.lockBuilding:33:SHIFT
-key_quark.keybind.dropoff:0
-key_quark.keybind.chestSort:0
-key_quark.keybind.chestDropoff:0
-key_quark.keybind.chestMerge:0
-key_quark.keybind.chestRestock:0
-key_quark.keybind.chestExtract:0
 key_quark.emote.no:0
 key_quark.emote.yes:0
 key_quark.emote.wave:0
@@ -120,6 +114,12 @@ key_quark.emote.dab:0
 key_quark.emote.jet:0
 key_quark.emote.exorcist:0
 key_quark.emote.zombie:0
+key_quark.keybind.dropoff:0
+key_quark.keybind.chestSort:0
+key_quark.keybind.chestDropoff:0
+key_quark.keybind.chestMerge:0
+key_quark.keybind.chestRestock:0
+key_quark.keybind.chestExtract:0
 key_key.toggle_shaders:0
 key_bloodmagic.keybind.open_holding:53:CONTROL
 key_bloodmagic.keybind.cycle_holding_pos:0
@@ -166,6 +166,7 @@ key_key.toastcontrol.clear:0
 key_key.open_wct.desc:58
 key_key.cycle_magnet_mode.desc:0
 key_key.delivery.store:48
+key_key.narrator:0
 key_key.cofh.multimode:47
 key_key.toggle_focus.desc:15
 key_key.jei.toggleOverlay:24:CONTROL
@@ -196,9 +197,10 @@ key_key.columnbardown:27
 key_key.keyExtraInvo:0
 key_key.keyWheel:0
 key_key.keyExtraCraftin:0
-key_key.keySkills:37
+key_key.toggleLiquids:38
+key_key.toggleVisible:0
 key_key.aperture.profile.toggle:25
-key_key.aperture.profile.start:44
+key_key.aperture.profile.start:0
 key_key.aperture.profile.stop:45
 key_key.aperture.profile.point:0
 key_key.aperture.roll.add:0
@@ -220,8 +222,8 @@ key_key.aperture.control.rotateRight:0
 key_key.aperture.camera_editor:46
 key_key.aperture.smooth_camera:0
 key_key.dragon_fireAttack:0
-key_key.dragon_strike:0
-key_key.dragon_down:0
+key_key.dragon_strike:-96
+key_key.dragon_down:44
 key_key.dragon_change_view:0
 key_bbw.key.mode:78
 key_bbw.key.fluidmode:0
@@ -233,7 +235,7 @@ key_key.fuzzy:0
 key_key.connected_area:0
 key_key.rotate_mirror:0
 key_key.material_list:50
-key_key.carry.desc:54
+key_key.carry.desc:42
 key_Options Gui:0
 key_key.colytra.toggle.desc:0
 key_waila.keybind.wailaconfig:82
@@ -304,10 +306,6 @@ key_key.nutrition:49
 key_pi.key.open_pi:23
 key_pi.key.et_gui:23
 key_pi.key.et_world:23:CONTROL
-key_key.quit:1
-key_key.hideHUD:59
-key_key.debugScreen:61
-key_key.narrator:0
 key_key.toolbelt.open:45
 key_key.toolbelt.cycle.left:0
 key_key.toolbelt.cycle.right:0
@@ -326,7 +324,7 @@ key_key.journeymap.zoom_out:12
 key_key.journeymap.minimap_type:0
 key_key.journeymap.minimap_preset:0
 key_key.journeymap.create_waypoint:0
-key_key.journeymap.toggle_waypoints:44
+key_key.journeymap.toggle_waypoints:0
 key_key.journeymap.fullscreen_create_waypoint:0
 key_key.journeymap.fullscreen_chat_position:0
 key_key.journeymap.map_toggle_alt:36
@@ -356,8 +354,6 @@ key_enderio.keybind.fovplus:0
 key_enderio.keybind.fovminus:0
 key_enderio.keybind.fovplusfast:0
 key_enderio.keybind.fovminusfast:0
-key_key.little.mark:50
-key_key.little.config:46:CONTROL
 soundCategory_master:0.24172185
 soundCategory_music:0.0
 soundCategory_record:0.09859155

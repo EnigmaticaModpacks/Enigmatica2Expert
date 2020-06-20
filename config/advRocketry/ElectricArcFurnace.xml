@@ -64,4 +64,14 @@
 			<itemStack>libvulpes:productingot 4 7</itemStack>
 		</output>
 	</Recipe>
+
+	<!-- Scorched bricks -->
+	<Recipe timeRequired="5" power ="10000">
+		<input>
+			<oreDict>ingotBrick</oreDict>
+		</input>
+		<output>
+			<itemStack>tcomplement:materials 1 1</itemStack>
+		</output>
+	</Recipe>
 </Recipes>

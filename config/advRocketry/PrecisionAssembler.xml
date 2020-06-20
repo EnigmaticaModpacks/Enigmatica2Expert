@@ -219,4 +219,29 @@
 			<itemStack>rats:arcane_technology</itemStack>
 		</output>
 	</Recipe>
+	
+	<!-- cheaper energy tablet -->
+	<Recipe timeRequired="4" power ="20000">
+		<input>
+			<itemStack>thermalfoundation:material 1 33</itemStack>
+			<itemStack>libvulpes:productsheet 2 4</itemStack>
+			<itemStack>libvulpes:productdust 2 0</itemStack>
+			<itemStack>mekanism:enrichedalloy 1 0</itemStack>
+		</input>
+		<output>
+			<itemStack>mekanism:energytablet 1</itemStack>
+		</output>
+	</Recipe>
+	
+	<!-- 2x faster and cheaper EiO capaciotr, using iridium coils -->
+	<Recipe timeRequired="10" power ="20000">
+		<input>
+			<itemStack>enderio:item_material 4 20</itemStack>
+			<itemStack>immersiveengineering:metal_device0 2 2</itemStack>
+			<itemStack>libvulpes:coil0 2 10</itemStack>
+		</input>
+		<output>
+			<itemStack>enderio:item_basic_capacitor 4</itemStack>
+		</output>
+	</Recipe>
 </Recipes>

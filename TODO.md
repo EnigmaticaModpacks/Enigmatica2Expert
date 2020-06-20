@@ -1,78 +1,68 @@
+🟢 - Add mod
+🔴 - Remove mod
+💦 - Easier recipe
+🔶 - Harder Recipe
+🔧 - More Machine Recipes
+📖 - Better Questing book
+
+
 Finished
 -----------
+- [x] 💦 Extended Crafting Automation table
+- [x] 💦 Make Dynamos with Triple battery
+- [x] 🔧 Precision Assembler
+- [x] 🔧 Quantum Compressor
+- [x] 🔶 Chisel tools
+- [x] 🔶 Mek reactor
+- [x] 🟢 **Lazy AE2** New mod, tweak crafts
+- [x] 🟢 **Mineral Tracker** New mod
+- [x] 🟢 **Tinker's Evolution** New mod, add materials to equip generation
+- [x] 🟢 Thermal Innovation
+- [x] Adv generators more gases as fuel
+- [x] 📖 + Halo in book
+- [x] 📖 add bottler to book
+- [x] 📖 add Endergenic Generator
+- [x] 📖 Sandwitch Station to Bragging rights 
+- [x] change reward for Infinity Drill
+- [x] Cyanite ingot cast
+- [x] Diamond backpack craft
+- [x] Disable Rats processing in mek machines
+- [x] Elite Compressing Fix craft
+- [x] Fix XU2 chunkloader craft
+- [x] IceAndFire Remove armor and tools replaced by TiCon
+- [x] Main menu label
+- [x] ModularMachinery Make Armor Assembling Machine
+- [x] More craft variants for scorched bricks
+- [x] Myrmex Blocks recycle
+- [x] Olive in Insolator
+- [x] Ore Piece double packing
+- [x] Orechid blacklist Yellorium, add NC ores
+- [x] Osmium ore to Excavator
+- [x] Recycle Minotaur Axes
+- [x] Remove Circuits from cat drops
+- [x] Remove Little crafts
+- [x] Review JEI hide changes
+- [x] Scallinghealth Frogs in blacklist
+- [x] Simplify IC2 solars panels
+- [x] Spectre coil from any Graphite rods
+- [x] ThermExp ducts crafts in other machines
 
 Planned
 -----------
-🟢 => Add mod
-🔴 => Remove mod
-💦 => Easier recipe
-🔶 => Harder Recipe
-
-- [ ] Main menu label
-- [ ] Less Table Crafting for Autocrafters
-- [ ] Fire and Ice Dragon Scales should output different armor in Foundry
+- [x] AdvRock wood comp.
+- [x] Blood Tank cheaper
+- [x] Processing less wood for low-tech machines
 - [ ] BQ AE2 branch
-- [ ] Simplify Extended Crafting Automation table
-- [ ] BQ + Halo in book
-- [ ] Recycle Minotaur Axes
-- [ ] Chisel Remove chisel tools
-- [ ] + fOOD BAG Mod
-- [ ] Simplify HV solars panels
-- [ ] Scallinghealth Frogs in blacklist
-- [ ] Blutonium Why not crafting
-- [ ] Elite Compressing Fix craft
-- [ ] Rat Combiner Upgrade Dupe
-- [ ] Fix Spectre coil with Graphite rods
-- [ ] Remove books from chapters
-- [ ] Osmium ore to Excavator
-- [ ] Myrmex Blocks recycle
-- [ ] Remove Little crafts
-- [ ] Ice And Fire hide more tools
-- [ ] Olive in Insolator
-- [ ] Adv generators more gases as fuel
-- [ ] Diamond backpack craft
-- [ ] Remove Circuits from cat drops
-- [ ] Cyanide casting ingot
-- [ ] More recipes for tree fluid extractor
-- [ ] change reward for Infinity Drill
-- [ ] Tempelate for 3d Print in book
-- [ ] More craft variants for scorched bricks
-- [ ] TIP - Higher owen means more heat
-- [ ] + Addons for Thermal
-- [ ] Fix chunkloader craft
-- [ ] Thermal tanks in JEI
-- [ ] Нерфить реактор механизма
-- [ ] More creosolite crafts
-- [ ] Make Dynamos bit less pricy
-- [ ] Disable Rats processing in mek machines
-- [ ] Ore Piece straight to recycling
-- [ ] Compressing Supremium to Insanium
-- [ ] BQ Sandwitch Station to Bragging rights 
-- [ ] Mek Fusion harder
-- [ ] BQ add Endergenic Generator
-- [ ] Fluxduct in other machines
-- [x] **ModularMachinery** Make Armor Assembling Machine
-- [ ] Blood Tank cheaper
-- [ ] Processing less wood for low-tech machines
-- [ ] TiCon Burrowing from Thaumcraft modifier
-- [ ] Beet в магазинчик
-- [ ] **Orechid** blacklist ore
-- [ ] Mud bricks to crafts
-- [ ] Compost recipes
-- [ ] **Rats** Переработка пластиковых отходов
-- [ ] **Rats** Решить проблему с NBT в Mekanism
-- [ ] **Forestry** Make use of Bottler
-- [ ] **Rats** Structures Generation
-- [ ] **LottTableTweaker** Переработать лут на новые постройки
-- [ ] **ModularMachinery** Advanced Phytogenic Insolator
-- [ ] **ModularMachinery** Armor ingredients Recursively
-- [ ] 🟢 **Mineral Tracker** New mod
-- [ ] 🟢 **Tinker's Evolution** New mod, add materials to equip generation
-- [ ] 🟢 **Lazy AE2** New mod, tweak crafts
+- [ ] New 🐝 for endgame
+- [ ] Remove all // comments
+- [ ] Rename Processing.zs to process.zs
+- [ ] Remove unuseful advices
 
 
 Long-term
 -----------
+- [ ] **ModularMachinery** Advanced Phytogenic Insolator
+- [ ] **LottTableTweaker** Переработать лут на новые постройки
 - [ ] **🌳TwilightForest** Запретить посохи телепортации
 - [ ] **IconExporter** Дерево крафта с иконками
 - [ ] **Crafts** Keep ability to craft everything in skyblock
@@ -84,3 +74,11 @@ Long-term
   - **Модификатор** - Deconstruct Armor when kick, or on crafting table
   - **Материал** для дропа куриоситей
   - **Модификатор прыжка** Что бы дробить ресурсы
+- [ ] More recipes for tree fluid extractor
+- [ ] Tempelate for 3d Print in book
+- [ ] More creosolite crafts
+- [ ] Mud bricks to crafts
+- [ ] Compost recipes
+- [ ] **Rats** Переработка пластиковых отходов
+- [ ] **Rats** Structures Generation
+- [ ] **ModularMachinery** Armor ingredients Recursively
