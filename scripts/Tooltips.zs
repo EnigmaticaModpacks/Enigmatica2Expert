@@ -872,3 +872,20 @@ for item in thaumcraftHintItems {
 					format.lightPurple(((450 as float) / 100) as string) ~ format.darkPurple(" mB UU"));
 
 	<modularmachinery:itemmodularium>.displayName = "Modularium Alloy";
+
+	
+# Fuel description
+mods.jei.JEI.addDescription(<advgenerators:turbine_controller>,	["Acceptable Fuel",
+	format.darkAqua("Canola Oil")         ~ ("10 MJ/mB"),
+	format.darkAqua("Crude Oil")          ~ ("25 MJ/mB"),
+	format.darkAqua("Biomass")            ~ ("30 MJ/mB"),
+	format.darkAqua("Biodiesel")          ~ ("40 MJ/mB"),
+	format.darkAqua("Crystallized Oil")   ~ ("40 MJ/mB"),
+	format.darkAqua("Biogas")             ~ ("50 MJ/mB"),
+	format.darkAqua("Ethylene")           ~ ("80 MJ/mB"),
+	format.darkAqua("Biofuel")            ~ ("90 MJ/mB"),
+	format.darkAqua("Rocket Fuel (EiO)")  ~ ("95 MJ/mB"),
+	format.darkAqua("Refined Fuel")       ~ ("105 MJ/mB"),
+	format.darkAqua("Rocket Fuel (AR)")   ~ ("110 MJ/mB"),
+	format.darkAqua("Empowered Oil")      ~ ("120 MJ/mB"),
+]);

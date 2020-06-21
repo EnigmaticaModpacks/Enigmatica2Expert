@@ -160,10 +160,9 @@ import mods.jei.JEI.removeAndHide as rh;
 	for i in 1 to 16 {
 		val tank = itemUtils.getItem("bloodmagic:blood_tank", i);
 		val prevTank = itemUtils.getItem("bloodmagic:blood_tank", i - 1);
-		val cost = ((((1000000.0d/656.0d) * pow(1.5d, i as double)) as int) / 500) * 500 - 1000;
+		val cost = ((((1000000.0d/437.0d) * pow(1.5d, i as double)) as int) / 500) * 500 - 2000;
 		recipes.remove(tank);
 		//mods.bloodmagic.BloodAltar.addRecipe(IItemStack output, IItemStack input, int minimumTier, int syphon, int consumeRate, int drainRate);
 		mods.bloodmagic.BloodAltar.addRecipe(tank, prevTank, max(0, min(4, i / 2)), cost, 10 + 10 * i, 10 + 10 * i);
 		recipes.addShapeless("Clearing Blood Tank " ~ i, tank, [tank]);
 	}
-	

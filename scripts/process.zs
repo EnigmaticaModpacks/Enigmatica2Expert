@@ -100,6 +100,9 @@ function grow(input as IItemStack, output as IItemStack, exceptions as string,
 
 function saw(input as IItemStack, output as IItemStack, exceptions as string) {
 
+  # If old recipes should be removed first
+  val STRICT = true;
+
   if (isNotException(exceptions, "shapeless")) {
     recipes.addShapeless("Saw " ~ getRecipeName(input, output), output * 2, [input]);
   }
@@ -109,11 +112,19 @@ function saw(input as IItemStack, output as IItemStack, exceptions as string) {
     mods.ic2.BlockCutter.addRecipe(output * 4, input);
   }
 
-  if (isNotException(exceptions, "mekSawmill")) {
+  val is_mekSawmill = isNotException(exceptions, "mekSawmill");
+  if (!is_mekSawmill && STRICT) {
+    mods.mekanism.sawmill.removeRecipe(input);
+  }
+  if (is_mekSawmill || STRICT) {
     mods.mekanism.sawmill.addRecipe(input, output * 4, <mekanism:sawdust>, 1.0);
   }
 
-  if (isNotException(exceptions, "manufactory")) {
+  val is_manufactory = isNotException(exceptions, "manufactory");
+  if (!is_manufactory && STRICT) {
+    mods.nuclearcraft.manufactory.removeRecipeWithInput([input]);
+  }
+  if (is_manufactory || STRICT) {
     mods.nuclearcraft.manufactory.addRecipe(input, output * 5);
   }
 
@@ -123,15 +134,16 @@ function saw(input as IItemStack, output as IItemStack, exceptions as string) {
   }
 
   # Log all recipes to manual add in XML file
-  if (true || isNotException(exceptions, "advRockCutter")) {
+  # Set true/false in zs script manually
+  if (false || isNotException(exceptions, "advRockCutter")) {
     val inId = input.definition.id;
     val inMeta = input.damage;
     val outId = output.definition.id;
     val outMeta = output.damage;
     print('== AdvRocketry manual recipe ==');
-    print('	<Recipe timeRequired="10" power ="40000">');
-    print('	  <input><itemStack>' ~ inId ~ " 1 " ~ inMeta ~ '</itemStack></input>');
-    print('		<output><itemStack>' ~ outId ~ " 10 " ~ outMeta ~ '</itemStack></output></Recipe>');
+    print('  <Recipe timeRequired="10" power ="40000">');
+    print('    <input><itemStack>' ~ inId ~ " 1 " ~ inMeta ~ '</itemStack></input>');
+    print('    <output><itemStack>' ~ outId ~ " 10 " ~ outMeta ~ '</itemStack></output></Recipe>');
   }
 }
 
