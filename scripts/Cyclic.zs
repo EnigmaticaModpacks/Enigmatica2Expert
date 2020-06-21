@@ -1,6 +1,5 @@
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded cyclicmagic
-print("--- loading Cyclic.zs ---");
 
 # *======= Recipes =======*
 
@@ -133,4 +132,13 @@ print("--- loading Cyclic.zs ---");
 	]);
 
 	
-	print("--- Cyclic.zs initialized ---");
+
+# Player Launcher
+recipes.remove(<cyclicmagic:tool_launcher>);
+recipes.addShaped("Cyclic Player Launcher", <cyclicmagic:tool_launcher>, [
+[null, <ore:nuggetRefinedGlowstone>, <ore:nuggetRefinedGlowstone>],
+[<ore:peacockFeathers>, <tconstruct:slimesling:*>.anyDamage(), <ore:nuggetRefinedGlowstone>],
+[<ore:nuggetUnstable>, <ore:peacockFeathers>, null]]);
+
+# Clear tank
+recipes.addShapeless("Cyclic tank clear", <cyclicmagic:block_storeempty>, [<cyclicmagic:block_storeempty>]);

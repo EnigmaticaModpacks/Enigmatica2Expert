@@ -3,7 +3,6 @@ import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.oredict.IOreDict as IOreDict;
 import crafttweaker.oredict.IOreDictEntry as IOreDictEntry;
 import mods.jei.JEI.removeAndHide as rh;
-print("--- loading OreDict.zs ---");
 	
 # Oredicts for pressure plates
 var pressurePlates as IItemStack[] = [
@@ -670,6 +669,13 @@ for item in pressurePlates {
 	recipes.addShapeless("wooddoororedict1", <minecraft:wooden_door>, [Door]);
 
 	
-	print("--- OreDict.zs initialized ---");
-	
-	
+# Animania peacock feathers
+<ore:peacockFeathers>.add([
+    <animania:blue_peacock_feather>,
+    <animania:white_peacock_feather>,
+    <animania:charcoal_peacock_feather>,
+    <animania:opal_peacock_feather>,
+    <animania:peach_peacock_feather>,
+    <animania:purple_peacock_feather>,
+    <animania:taupe_peacock_feather>
+]);
