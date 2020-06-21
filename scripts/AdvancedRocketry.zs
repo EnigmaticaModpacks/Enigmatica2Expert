@@ -1,7 +1,6 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded advancedrocketry
-print("--- loading AdvancedRocketry.zs ---");
 
 # Vulpes Library Silicon dust Manufactory* Recipe Removal (Credit TheShadoWZYE2)
 	mods.nuclearcraft.manufactory.removeRecipeWithOutput(<libvulpes:productdust:3>);
@@ -113,4 +112,10 @@ print("--- loading AdvancedRocketry.zs ---");
 
 	<ore:stickIron>.remove(<advancedrocketry:productrod:1>);
 
-		print("--- AdvancedRocketry.zs initialized ---");
+# Simplify tank
+recipes.remove(<advancedrocketry:liquidtank>);
+recipes.addShaped(<advancedrocketry:liquidtank>, [
+	[<ore:plateTitanium>, <ore:paneGlass>, <ore:plateTitanium>],
+	[<ore:plateTitanium>, <ore:paneGlass>, <ore:plateTitanium>],
+	[<ore:plateTitanium>, <ore:paneGlass>, <ore:plateTitanium>]]);
+recipes.addShapeless("Clearing AdvRock Tank", <advancedrocketry:liquidtank>, [<advancedrocketry:liquidtank>]);
