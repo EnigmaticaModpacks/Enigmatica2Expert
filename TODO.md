@@ -8,8 +8,14 @@
 
 Finished
 -----------
+- [x] 💦 Blood Tank cheaper
 - [x] 💦 Extended Crafting Automation table
 - [x] 💦 Make Dynamos with Triple battery
+- [x] 📖 + Halo in book
+- [x] 📖 add bottler to book
+- [x] 📖 add Endergenic Generator
+- [x] 📖 AE2 branch
+- [x] 📖 Sandwitch Station to Bragging rights 
 - [x] 🔧 Precision Assembler
 - [x] 🔧 Quantum Compressor
 - [x] 🔶 Chisel tools
@@ -19,10 +25,7 @@ Finished
 - [x] 🟢 **Tinker's Evolution** New mod, add materials to equip generation
 - [x] 🟢 Thermal Innovation
 - [x] Adv generators more gases as fuel
-- [x] 📖 + Halo in book
-- [x] 📖 add bottler to book
-- [x] 📖 add Endergenic Generator
-- [x] 📖 Sandwitch Station to Bragging rights 
+- [x] AdvRock wood comp.
 - [x] change reward for Infinity Drill
 - [x] Cyanite ingot cast
 - [x] Diamond backpack craft
@@ -46,21 +49,19 @@ Finished
 - [x] Simplify IC2 solars panels
 - [x] Spectre coil from any Graphite rods
 - [x] ThermExp ducts crafts in other machines
+- [x] 🟢 AE2 Fluid Crafting
+- [x] Processing less wood for low-tech machines
 
 Planned
 -----------
-- [x] AdvRock wood comp.
-- [x] Blood Tank cheaper
-- [x] Processing less wood for low-tech machines
-- [ ] BQ AE2 branch
-- [ ] New 🐝 for endgame
-- [ ] Remove all // comments
-- [ ] Rename Processing.zs to process.zs
-- [ ] Remove unuseful advices
+- [x] Remove all // comments
+- [x] Turbine Fuel list description
+- [ ] Process: Swap all inputs and outputs with IIngredient
 
 
 Long-term
 -----------
+- [ ] New 🐝 for endgame
 - [ ] **ModularMachinery** Advanced Phytogenic Insolator
 - [ ] **LottTableTweaker** Переработать лут на новые постройки
 - [ ] **🌳TwilightForest** Запретить посохи телепортации
