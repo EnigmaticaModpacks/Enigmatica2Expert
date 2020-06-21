@@ -13,9 +13,9 @@ import mods.jaopca.OreEntry;
 #
 # ######################################################################
 
-/////////////////////////////////////
-// Ore Dict
-/////////////////////////////////////
+##################
+# Ore Dict
+##################
 <ore:peacockFeathers>.add([
     <animania:blue_peacock_feather>,
     <animania:white_peacock_feather>,
@@ -76,9 +76,9 @@ var primeMeatCooked = [
 <ore:primeMeatCooked>.add(primeMeatCooked);
 
 
-/////////////////////////////////////
-// Other changes
-/////////////////////////////////////
+##################
+# Other changes
+##################
 
 # Straw craft duplicate
 recipes.removeByRecipeName("animania:straw");

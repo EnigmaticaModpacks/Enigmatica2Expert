@@ -13,22 +13,22 @@ val fermentedSpiderEye as IItemStack = <minecraft:fermented_spider_eye>;
 val awkward = "minecraft:awkward";
 val mundane = "minecraft:mundane";
 
-// remove one of the old potion of slowness recipes to override them later
+# remove one of the old potion of slowness recipes to override them later
 removeBrew("minecraft:leaping", fermentedSpiderEye);
 removeBrew("minecraft:long_leaping", fermentedSpiderEye);
-// remove one of the old potion of harming recipes to override them later
+# remove one of the old potion of harming recipes to override them later
 removeBrew("minecraft:poison", fermentedSpiderEye);
 removeBrew("minecraft:long_poison", fermentedSpiderEye);
 removeBrew("minecraft:strong_poison", fermentedSpiderEye);
 
-// add a weakness recipe that makes more sense (original recipe still works)
+# add a weakness recipe that makes more sense (original recipe still works)
 addBrew("minecraft:strength", fermentedSpiderEye, "minecraft:weakness");
 
-// add a recipe for luck potions
+# add a recipe for luck potions
 val clownfish = <minecraft:fish:2>;
 addBrewWithConversions(awkward, clownfish, "minecraft:luck");
 
-// add potion core brewing recipes
+# add potion core brewing recipes
 addBrewWithUpgradesFromBase(
   "minecraft:leaping", fermentedSpiderEye, "potioncore:weight",
   "potioncore:strong_weight", "potioncore:long_weight",
@@ -179,8 +179,8 @@ addBrewWithUpgradesFromBase(
   "potioncore:strong_rust", "potioncore:long_rust",
   "potioncore:strong_repair", "potioncore:long_repair"
 );
-// additional recipe for flight potions (reverse order of ingredients)
-// addBrew("minecraft:swiftness", <minecraft:feather>, "potioncore:flight");
+# additional recipe for flight potions (reverse order of ingredients)
+# addBrew("minecraft:swiftness", <minecraft:feather>, "potioncore:flight");
 addBrewWithUpgrades(
   awkward, <minecraft:chorus_fruit>, "potioncore:teleport",
   "potioncore:strong_teleport", null
@@ -261,27 +261,27 @@ addBrewWithUpgrades(
   "potioncore:strong_resistance", "potioncore:long_resistance"
 );
 
-// remove a recipe for a potion, splash potion and lingering potion
+# remove a recipe for a potion, splash potion and lingering potion
 function removeBrew(basePotionName as string,
                              ingredient as IItemStack) {
-  // brewing.removeRecipe(IItemStack input, IItemStack ingredient);
+  # brewing.removeRecipe(IItemStack input, IItemStack ingredient);
   brewing.removeRecipe(asPotion(basePotionName), ingredient);
   brewing.removeRecipe(asSplashPotion(basePotionName), ingredient);
   brewing.removeRecipe(asLingeringPotion(basePotionName), ingredient);
 }
 
-// add a recipe for a potion, splash potion and lingering potion
+# add a recipe for a potion, splash potion and lingering potion
 function addBrew(basePotionName as string,
                  ingredient as IIngredient,
                  potionName as string) {
-  // brewing.addBrew(IIngredient input, IIngredient ingredient, IItemStack output, @Optional boolean hidden);
+  # brewing.addBrew(IIngredient input, IIngredient ingredient, IItemStack output, @Optional boolean hidden);
   brewing.addBrew(asPotion(basePotionName), ingredient, asPotion(potionName));
   brewing.addBrew(asSplashPotion(basePotionName), ingredient, asSplashPotion(potionName));
   brewing.addBrew(asLingeringPotion(basePotionName), ingredient, asLingeringPotion(potionName));
 }
 
-// add a recipe for a potion, splash potion and lingering potion
-// and recipes to convert them
+# add a recipe for a potion, splash potion and lingering potion
+# and recipes to convert them
 function addBrewWithConversions(basePotionName as string,
                                 ingredient as IIngredient,
                                 potionName as string) {
@@ -291,31 +291,31 @@ function addBrewWithConversions(basePotionName as string,
   brewing.addBrew(asSplashPotion(potionName), dragonsBreath, asLingeringPotion(potionName));
 }
 
-// adds all recipes for a potion, splash potion and lingering potion
-// adds recipes to convert them and to upgrade them
+# adds all recipes for a potion, splash potion and lingering potion
+# adds recipes to convert them and to upgrade them
 function addBrewWithUpgrades(basePotionName as string,
                              ingredient as IIngredient,
                              potionName as string,
                              strongPotionName as string,
                              longPotionName as string) {
 
-  // add base potion recipes
+  # add base potion recipes
   addBrewWithConversions(basePotionName, ingredient, potionName);
 
-  // add strengthened recipes
+  # add strengthened recipes
   if (!isNull(strongPotionName)) {
     addBrewWithConversions(potionName, glowstone, strongPotionName);
   }
 
-  // add lengthened recipes
+  # add lengthened recipes
   if (!isNull(longPotionName)) {
     addBrewWithConversions(potionName, redstone, longPotionName);
   }
 }
 
-// adds all recipes for a potion, splash potion and lingering potion
-// adds recipes to convert them and to upgrade them
-// also adds conversion from upgraded base potions
+# adds all recipes for a potion, splash potion and lingering potion
+# adds recipes to convert them and to upgrade them
+# also adds conversion from upgraded base potions
 function addBrewWithUpgradesFromBase(basePotionName as string,
                                      ingredient as IIngredient,
                                      potionName as string,

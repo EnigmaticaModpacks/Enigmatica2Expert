@@ -192,15 +192,6 @@ recipes.addShaped(<extrautils2:suncrystal:250>, [
 	[sunIngr, <ic2:energy_crystal>.anyDamage(), sunIngr], 
 	[null, sunIngr, null]]);
 
-	
-// # Harder melting metals
-// mods.tconstruct.Melting.removeRecipe(<liquid:xu_evil_metal>);
-// mods.tconstruct.Melting.removeRecipe(<liquid:xu_enchanted_metal>);
-// mods.tconstruct.Melting.removeRecipe(<liquid:xu_demonic_metal>);
-// mods.mechanics.addTubeRecipe([<extrautils2:simpledecorative:2>] as IItemStack[], <liquid:xu_evil_metal> * 1000);
-// mods.mechanics.addTubeRecipe([<extrautils2:simpledecorative>] as IItemStack[], <liquid:xu_enchanted_metal> * 1000);
-// mods.mechanics.addTubeRecipe([<extrautils2:simpledecorative:1>] as IItemStack[], <liquid:xu_demonic_metal> * 1000);
-
 # TODO: Cancel Ender Lily drop
 vanilla.seeds.removeSeed(<extrautils2:enderlilly>);
 

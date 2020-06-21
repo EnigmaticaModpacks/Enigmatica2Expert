@@ -38,7 +38,6 @@ function liquidFactor(output as ILiquidStack, mult as double) as ILiquidStack  {
 # Functions
 #
 # ######################################################################
-# TODO: Swap all inputs and outputs with IIngredient
 
 function squeeze(input as IIngredient, fluidOutput as ILiquidStack, exceptions as string, itemOutput as IItemStack) {
 
@@ -66,13 +65,13 @@ function squeeze(input as IIngredient, fluidOutput as ILiquidStack, exceptions a
   }
 
   if (isNotException(exceptions, "IndustrialSqueezer")) {
-    // mods.immersiveengineering.Squeezer.addRecipe(IItemStack output, ILiquidStack fluid, IIngredient input, int energy);
+    # mods.immersiveengineering.Squeezer.addRecipe(IItemStack output, ILiquidStack fluid, IIngredient input, int energy);
     mods.immersiveengineering.Squeezer.addRecipe(itemFactor(itemOutput, 1.25d), liquidFactor(fluidOutput, 1.0d), input, 2048);
   }
 
   if (isNotException(exceptions, "ForestrySqueezer")) {
     for ii in input.items {
-      //mods.forestry.Squeezer.addRecipe(ILiquidStack fluidOutput, IItemStack[] ingredients, int timePerItem, @Optional WeightedItemStack itemOutput);
+      #mods.forestry.Squeezer.addRecipe(ILiquidStack fluidOutput, IItemStack[] ingredients, int timePerItem, @Optional WeightedItemStack itemOutput);
       val wOut as WeightedItemStack = !isNull(itemOutput) ? itemOutput % 20 : null;
       mods.forestry.Squeezer.addRecipe(liquidFactor(fluidOutput, 0.9d), [ii], 20, wOut);
     }
@@ -80,7 +79,7 @@ function squeeze(input as IIngredient, fluidOutput as ILiquidStack, exceptions a
 
   if (isNotException(exceptions, "TECentrifuge")) {
     for ii in input.items {
-      //mods.thermalexpansion.Centrifuge.addRecipe(WeightedItemStack[] outputs, IItemStack input, ILiquidStack fluid, int energy);
+      #mods.thermalexpansion.Centrifuge.addRecipe(WeightedItemStack[] outputs, IItemStack input, ILiquidStack fluid, int energy);
       mods.thermalexpansion.Centrifuge.addRecipe([itemOutput], ii, liquidFactor(fluidOutput, 1.0d), 2000);
     }
   }
@@ -91,7 +90,7 @@ function grow(input as IItemStack, output as IItemStack, exceptions as string,
 
   # Phytogenic Insolator
   if (isNotException(exceptions, "Insolator")) {
-    //mods.thermalexpansion.Insolator.addRecipe(IItemStack primaryOutput, IItemStack primaryInput, IItemStack secondaryInput, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
+    #mods.thermalexpansion.Insolator.addRecipe(IItemStack primaryOutput, IItemStack primaryInput, IItemStack secondaryInput, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
     mods.thermalexpansion.Insolator.addRecipe(output * 3, input, <thermalfoundation:fertilizer:0>, 4800, secondaryOutput, secondaryChance);
     mods.thermalexpansion.Insolator.addRecipe(output * 6, input, <thermalfoundation:fertilizer:1>, 7200, secondaryOutput, secondaryChance);
     mods.thermalexpansion.Insolator.addRecipe(output * 9, input, <thermalfoundation:fertilizer:2>, 9600, secondaryOutput, secondaryChance);
@@ -294,7 +293,7 @@ function evaporate(inputLiquid as ILiquidStack, output as IItemStack, exceptions
   }
 
   if (isNotException(exceptions, "MechanicalDryingBasin")) {
-    //MechanicalDryingBasin.addRecipe(@Optional IItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
+    #MechanicalDryingBasin.addRecipe(@Optional IItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
     mods.integrateddynamics.MechanicalDryingBasin.addRecipe(
       null, inputLiquid, output, null, 80);
   }
@@ -345,7 +344,7 @@ function fill(itemInput as IIngredient, fluidInput as ILiquidStack, output as II
   }}
 
   if (isNotException(exceptions, "MechanicalDryingBasin")) { for ii in itemInput.items {
-    //MechanicalDryingBasin.addRecipe(@Optional IItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
+    #MechanicalDryingBasin.addRecipe(@Optional IItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
     mods.integrateddynamics.MechanicalDryingBasin.addRecipe(ii, fluidInput, output, null, 20);
   }}
   

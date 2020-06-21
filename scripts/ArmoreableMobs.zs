@@ -24,40 +24,6 @@ import crafttweaker.data.IData;
 
 static armorStaged as IData[string] = scripts.DataTables.armorStaged;
 
-
-# Remove previous stage on command execution
-// events.onCommand(function(event as CommandEvent) {
-//     print("Entering [events.onCommand]...");
-//     val command = event.command;
-//     if(isNull(command) || 
-//       (command.name != "gamestage") ||
-//       (event.parameters.length < 3) || 
-//       (event.parameters[0] != "silentadd")) {
-        
-//         print("  command dont match, return..");
-//         return;
-//     }
-    
-//     # Check is this stage is listed in DataTables
-//     # and have previous stage
-//     var currStageName = event.parameters[2];
-//     var stage = armorStaged[currStageName];
-//     print("  currStageName: " ~ currStageName ~ ", stage:" ~ stage);
-//     if (isNull(stage)) { print("  there is no stage for [" ~ currStageName ~ "]"); return;}
-    
-//     # Recursively remove all previous stages
-//     var currStage = stage;
-//     val playerName = event.parameters[1];
-//     while (!isNull(currStage.prev)) {
-//       var prevStageName = currStage.prev.asString();
-//       print("EXECUTE: " ~ "gamestage silentremove " ~ playerName ~ " " ~ prevStageName);
-//       server.commandManager.executeCommand(server, "gamestage silentremove " ~ playerName ~ " " ~ prevStageName);
-
-//       currStage = armorStaged[prevStageName];
-//     }
-//     return;
-// });
-
 ##########################
 #       ENTITIES         #
 static armorEntitys as ArmorEntity[] = [
@@ -102,12 +68,6 @@ function addArmorToGroup(group as ArmorGroup, stage as IData, isSkeleton as bool
       # print("    itemNoNBT is Null..");
     }
   }
-
-  # Recursively add all previous stages
-  // if (!isNull(stage.prev)){
-  //   print("  stage.prev: " ~ stage.prev.asString());
-  //   addArmorToGroup(group, armorStaged[stage.prev.asString()], isSkeleton);
-  // }
 }
 
 function makeGroup(id as string, stage as IData, isSkeleton as bool){

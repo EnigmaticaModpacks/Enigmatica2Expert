@@ -289,11 +289,6 @@ mods.cyclicmagic.Melter.removeShapedRecipe("amber", 100);
 mods.cyclicmagic.Melter.removeShapedRecipe("amber", 1000);
 mods.cyclicmagic.Melter.removeShapedRecipe("crystal", 1000);
 
-# Harder Osgloglas recipe
-# Somehow, alloy cant be removed
-// mods.tconstruct.Alloy.removeRecipe(<liquid:osgloglas>);
-// mods.tconstruct.Alloy.addRecipe(<liquid:osgloglas> * 144, [<liquid:amber> * 144, <liquid:osmium> * 144, <liquid:refinedobsidian> * 144, <liquid:refinedglowstone> * 144]);
-
 # Liquid blue slimy items
 scripts.process.squeeze(<tconstruct:slime_dirt:1>,        <liquid:blueslime>*2000,null,  <biomesoplenty:mudball>);
 scripts.process.squeeze(<tconstruct:slime_leaves>,        <liquid:blueslime>*500, null, null);

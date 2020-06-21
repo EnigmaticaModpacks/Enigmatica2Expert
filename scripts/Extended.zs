@@ -80,13 +80,6 @@ mods.inworldcrafting.FluidToItem.transform(<ic2:dust:3>, <fluid:water>, [<ore:du
 recipes.remove(<minecraft:blaze_powder> * 2);
 recipes.addShapeless("Blaze Powder", <minecraft:blaze_powder>, [<minecraft:blaze_rod>]);
 
-# Remake plates
-// recipes.remove(<minecraft:light_weighted_pressure_plate>);
-// recipes.remove(<minecraft:heavy_weighted_pressure_plate>);
-// mods.mechanics.addCrushingBlockRecipe(<minecraft:gold_ingot> * 2, [<minecraft:light_weighted_pressure_plate>] as IItemStack[], [1.0] as double[]);
-// mods.mechanics.addCrushingBlockRecipe(<minecraft:iron_ingot> * 2, [<minecraft:heavy_weighted_pressure_plate>] as IItemStack[], [1.0] as double[]);
-
-
 # ######################################################################
 #
 # Bedrock Ore

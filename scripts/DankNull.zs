@@ -5,14 +5,12 @@ import crafttweaker.item.IIngredient;
 recipes.remove(<danknull:danknull_dock>);
 
 
-////////////////////////////////////
-// Removing non-chained recipes
+# Removing non-chained recipes
 for i in 1 to 6 {
 	recipes.removeByRecipeName("danknull:dank_null_" ~ i);
 }
 
-////////////////////////////////////
-// Change panel recipes
+# Change panel recipes
 function dankPanelCraft(index as int, matPrimary as IIngredient, matSecondary as IIngredient){
     var recipeName = "danknull:dank_null_panel_" ~ index;
 	var item = itemUtils.getItem(recipeName);

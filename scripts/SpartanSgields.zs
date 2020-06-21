@@ -1,35 +1,8 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
-# ########################
-# Spartan Shield
-# ########################
-// getItemsByRegexRegistryName(String Regex)
-// <spartanshields:shield_basic_diamond>
-// for shield in itemUtils.getItemsByRegexRegistryName("spartanshields:shield.+_") {
-//   var recList = recipes.getRecipesFor(shield);
-
-//   # Iterate each recipe
-//   for rec in recList {
-//     for ingr1d in rec.ingredients2D {
-//       for ingr in ingr1d{
-//         for item in ingr.items{
-//           val oreEntry = jaopcaGetEntry(item);
-//           oreEntry.oreName.toLowerCase();
-//         }
-//       }
-//     }
-//   }
-
-//   recipes.remove(shield);
-//   var shielding = <tconstruct:large_plate>.withTag({Material: "bone"});
-//   recipes.addShapedMirrored(shield, [
-//       [demonPlate, shielding, demonPlate],
-//       [shielding, null, shielding], 
-//       [demonPlate, shielding, demonPlate]
-// 		]);
-// }
-
+# List of all shields and their respective materials
+# [Shield]                                   [Ingedient material]                                           [Recycle material]
 var listShield = [
 # <spartanshields:shield_basic_wood>       , <conarm:armor_plate>.withTag({Material: "wood"})             , null,
 <spartanshields:shield_basic_stone>        , <conarm:armor_plate>.withTag({Material: "stone"})            , null,
@@ -76,6 +49,7 @@ var listShield = [
 ] as IItemStack[];
 
 
+# Iterate all shields
 var k as int = 0;
 while (k < listShield.length) {
   var shield  = listShield[k];

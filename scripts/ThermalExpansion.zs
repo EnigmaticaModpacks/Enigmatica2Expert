@@ -193,26 +193,6 @@ for slab in <ore:slabWood>.items {
 # Hardened Cell Frame
 	mods.actuallyadditions.Empowerer.addRecipe(<thermalexpansion:frame:129>, <thermalexpansion:frame:128>, <immersiveengineering:material:2>, <thermalfoundation:material:354>, <thermalfoundation:material:290>, <mekanism:basicblock:8>, 2500000, 200, [0.25, 0.25, 0.29]);
 
-// # Add conversions recipes
-// 	function teConversionKits(item as IItemStack){
-// 		val kitUps as IItemStack[] = [
-// 			<thermalfoundation:upgrade>,
-// 			<thermalfoundation:upgrade:33>,
-// 			<thermalfoundation:upgrade:34>,
-// 			<thermalfoundation:upgrade:35>
-// 		] as IItemStack[];
-		
-// 		for i in 1 to 5 {
-// 			val leveled = item.withTag({Level: i as byte});
-// 			mods.jei.JEI.addItem(leveled);
-// 			recipes.addShapeless(leveled, [item.withTag({Level: 0 as byte}), kitUps[i - 1]]);
-// 		}
-// 	}
-
-// # Tanks and Energy Cells
-// 	teConversionKits(<thermalexpansion:tank>);
-// 	teConversionKits(<thermalexpansion:cell>);
-
 # Remove creative kit crafts (no actual creative conversion kit)
 recipes.removeByRecipeName("thermalexpansion:cell_14");
 recipes.removeByRecipeName("thermalexpansion:cell_15");
@@ -225,7 +205,7 @@ recipes.removeByRecipeName("thermalexpansion:tank_16");
 recipes.removeByRecipeName("thermalexpansion:tank_17");
 recipes.removeByRecipeName("thermalexpansion:tank_18");
 
-// # Dynamo harder recipes
+# Dynamo harder recipes
 function remakeDynamo(name as string, item as IItemStack, i1 as IIngredient, i2 as IIngredient){
 	remake("ThermalExpansion Dynamo " ~ name, item, [
 		[null, <actuallyadditions:item_battery_triple>, null],

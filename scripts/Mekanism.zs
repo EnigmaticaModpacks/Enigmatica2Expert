@@ -320,11 +320,6 @@ remake("Induction Cell 4", <mekanism:basicblock2:3>.withTag({tier: 3}), [
 
 # Mekanism Fusion Reactor
 recipes.remove(<mekanismgenerators:reactor>);
-// recipes.addShaped(<mekanismgenerators:reactor>, [
-// 		[<advancedrocketry:intake>, <mekanism:gastank>.withTag({tier: 3}), <advancedrocketry:intake>],
-// 		[<mekanismgenerators:reactor:2>, <nuclearcraft:fusion_core>, <mekanismgenerators:reactor:2>], 
-// 		[<nuclearcraft:lithium_ion_battery_elite>, <nuclearcraft:lithium_ion_battery_elite>, <nuclearcraft:lithium_ion_battery_elite>]
-// 	]);
 mods.extendedcrafting.TableCrafting.addShaped(0, <mekanismgenerators:reactor>, [
 	[<ore:plateElite>, <advancedrocketry:blocklens>, <advancedrocketry:blocklens>, <advancedrocketry:blocklens>, <ore:plateElite>], 
 	[<mekanismgenerators:reactor:2>, <ic2:iridium_reflector>, <mekanism:gastank>.withTag({tier: 3}), <ic2:iridium_reflector>, <mekanismgenerators:reactor:2>], 

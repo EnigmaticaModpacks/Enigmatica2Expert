@@ -98,7 +98,6 @@ remakeEx(<rats:rat_upgrade_aristocrat>, [
 ]);
 
 # Gem of ratlantis
-//mods.botania.RuneAltar.addRecipe(IItemStack output, IIngredient[] input, int mana);
 recipes.remove(<rats:gem_of_ratlantis>);
 mods.botania.RuneAltar.addRecipe(<rats:gem_of_ratlantis>, [
     <rats:ratglove_petals>, <rats:ratglove_petals>, <rats:ratglove_petals>, <ore:gemEmerald>, <ore:gemEmerald>, <ore:gemEmerald>
@@ -225,8 +224,8 @@ mods.rats.recipes.addArcheologistRatRecipe(<harvestcraft:hardenedleatheritem>, <
 
 
 
-////////////////////////////////////
-// Dragon Scales
+##################
+# Dragon Scales
 var listConversionScales as IItemStack[] = [
     <ic2:plate:10>,  <iceandfire:dragonscales_red>,
     <ic2:plate:14>,  <iceandfire:dragonscales_green>,
@@ -255,7 +254,6 @@ recipes.addShaped("Ratlanean Flame", <rats:ratlantean_flame>, [
 ]);
 
 # Psionic rat brain
-//mods.thaumcraft.Infusion.registerRecipe(String name, String research, IItemStack output, int instability, CTAspectStack[] aspects, IIngredient centralItem, IIngredient[] recipe);
 mods.thaumcraft.Infusion.registerRecipe("psionic_rat_brain", "INFUSION", <rats:psionic_rat_brain>, 40, 
 	[<aspect:cognitio> * 150, <aspect:alienis> * 40, <aspect:rattus> * 80], <thaumcraft:brain>, 
 	[<rats:charged_creeper_chunk>, <rats:chunky_cheese_token>, <rats:charged_creeper_chunk>, <cd4017be_lib:m:402>, 

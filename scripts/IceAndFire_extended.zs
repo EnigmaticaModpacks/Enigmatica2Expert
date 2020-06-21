@@ -153,8 +153,8 @@ function envelopCheese(name as string, result as IItemStack, mat as IIngredient)
 	]);
 }
 
-////////////////////////////////////
-// DRAGONS
+##################
+# DRAGONS
 val dragonCrafIngredients as IItemStack[] = [
 	<iceandfire:dragonscales_red>,
 	<iceandfire:dragonscales_green>,
@@ -182,8 +182,8 @@ for i in 0 to dragonCrafIngredients.length {
 	envelopCheese("dragonEgg_"~i, dragonCraftEggs[i], dragonCrafIngredients[i]);
 }
 
-////////////////////////////////////
-// Hippogryphs
+##################
+# Hippogryphs
 val hippCrafIngredients as IItemStack[] = [
 	<animania:wool:1>,
 	<animania:wool>,
@@ -209,8 +209,8 @@ for i in 0 to hippCrafIngredients.length {
 }
 
 
-////////////////////////////////////
-// WORMS
+##################
+# WORMS
 # Twilight worm
 recipes.addShaped("twilightforest_moonworm", <twilightforest:moonworm>, [
 	[<ore:animaniaEggs>, <tconstruct:slime_channel>, <ore:animaniaEggs>], 
@@ -228,8 +228,8 @@ recipes.addShaped("iceandfire_deathworm_egg", <iceandfire:iceandfire.deathworm_e
 # Big Worm
 mods.inworldcrafting.FluidToItem.transform(<iceandfire:iceandfire.deathworm_egg:1>, <liquid:blueslime>, [<iceandfire:iceandfire.deathworm_egg>]);
 
-////////////////////////////////////
-// MYRMEX
+##################
+# MYRMEX
 <ore:myrmexEgg>.add(<iceandfire:myrmex_desert_egg:4>, <iceandfire:myrmex_jungle_egg:4>);
 var desertIng = <minecraft:stained_hardened_clay:1>;
 recipes.addShaped("myrmexDesertEgg", <iceandfire:myrmex_desert_egg:4>, [
@@ -244,8 +244,8 @@ recipes.addShaped("myrmexJungleEgg", <iceandfire:myrmex_jungle_egg:4>, [
 	[jungleIng, <twilightforest:cicada>, jungleIng]
 ]);
 
-////////////////////////////////////
-// Pixies
+##################
+# Pixies
 var pixieJars as IItemStack[] = [
     <iceandfire:jar_pixie>,
     <iceandfire:jar_pixie:1>,
@@ -274,8 +274,8 @@ for i, jar in pixieJars {
 }
 
 
-////////////////////////////////////
-// Hearts craft
+##################
+# Hearts craft
 
 # Remove craft from shards
 recipes.remove(<scalinghealth:heartcontainer>);
@@ -335,8 +335,8 @@ mods.iceandfire.recipes.addIceDragonForgeRecipe(
     <scalinghealth:difficultychanger>);
 
 
-////////////////////////////////////
-// Other
+##################
+# Other
 envelopCheese("amphithereMorb",  <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "iceandfire:amphithere"}) * 3, <minecraft:cookie>);
 envelopCheese("hippocampusMorb", <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "iceandfire:hippocampus"}) * 3, <minecraft:prismarine_shard>);
 envelopCheese("serpentMorb",     <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "iceandfire:seaserpent"}), <iceandfire:shiny_scales>);

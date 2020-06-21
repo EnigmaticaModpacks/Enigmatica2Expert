@@ -17,13 +17,14 @@ global gemDiamondRat as IIngredient = <ore:gemDiamond> | <rats:rat_diamond>;
 
 # ######################################################################
 #
-# 
+# Global Functions
 #
 # ######################################################################
 
 
 # ########################
-# 
+# Get IOreDictEntry or IItemStack from string
+#   as "ore:name" or "mod:name:meta"
 # ########################
 
 global getOredictFromString as function(string)IOreDictEntry = 
@@ -60,6 +61,13 @@ global getIngredientFromString as function(string)IIngredient =
 	}
 };
 
+
+# ########################
+# Generate item name
+# Warning: when used to create recipes
+#   can cause name diplicates
+# ########################
+
 global getItemName as function(IItemStack)string = 
     function (item as IItemStack) as string  {
 	return item.definition.id.replaceAll(":", "_") ~ "_" ~ item.damage;
@@ -93,6 +101,8 @@ global remakeEx as function(IItemStack, IIngredient[][])void =
 	makeEx(item, input);
 };
 
+# Create recipe with one item inside
+#   and 8 items around it
 global remakeEnvelop as function(IItemStack, IIngredient, IIngredient)void = 
     function (result as IItemStack, itemCenter as IIngredient, itemAround as IIngredient) as void  {
 
@@ -105,10 +115,6 @@ global remakeEnvelop as function(IItemStack, IIngredient, IIngredient)void =
 };
 
 
-/////////////////////////////////////
-// 
-/////////////////////////////////////
-
 # Remake any recipe with Fluid crafting
 global remakeFluidToItem as function(IItemStack, ILiquidStack, IIngredient)void = 
     function (output as IItemStack, fluid as ILiquidStack, input as IIngredient) as void  {
@@ -118,9 +124,11 @@ global remakeFluidToItem as function(IItemStack, ILiquidStack, IIngredient)void 
 };
 
 
-/////////////////////////////////////
-// 
-/////////////////////////////////////
+
+# ########################
+# Clear Fluid tag on item
+#  preserving other tags
+# ########################
 global clearFluid as function(IItemStack)void = 
     function (input as IItemStack) as void  {
 
@@ -140,6 +148,7 @@ global clearFluid as function(IItemStack)void =
 };
 
 # Make shapeless crafts for specified block up to level for Preston mod
+# warning - compressing should be called only once
 global compressIt as function(IItemStack, int)IItemStack = 
     function (item as IItemStack, maxLevel as int) as IItemStack  {
   var o = item;
@@ -155,28 +164,3 @@ global compressIt as function(IItemStack, int)IItemStack =
   }
 	return o;
 };
-
-
-// # Make a recipe with time in bottle
-// global timecraft as function(IItemStack, IIngredient[], int, string)void = 
-//     function (output as IItemStack, input as IIngredient[], seconds as int, tooltip as string) as void  {
-
-// 	var name = output.name.replaceAll(":", "_") ~ "_" ~ output.damage;
-
-// 	var inputWithBottle as IIngredient[] = 
-// 		input + <randomthings:timeinabottle>
-// 			.marked("timeinabottle")
-// 			.transformNew(function(item) {
-// 				return item.updateTag({timeData: {storedTime: item.tag.timeData.storedTime - seconds*20}});
-// 			});
-
-// 	recipes.addShapeless(name, (
-// 		output).withLore(["Consume " ~ tooltip ~" from bottle"]), inputWithBottle, 
-// 			function(out, ins, cInfo) {
-// 					if(ins.timeinabottle.tag.timeData.storedTime >= seconds*20) {
-// 							return output;
-// 					}
-// 					return null;
-// 			},
-// 			null);
-// };

@@ -266,11 +266,6 @@ static armorEntitys as IData[] =
       "emberroot:knight_fallen"
     ],
     groups: [
-      // {
-      //   # Defaults
-      //   weight: 20,
-      //   classicEquips: defaultArmGroups//["armor_hardenedleather", "armor_iron", "armor_golden", "armor_steel", "armor_diamond", "armor_boron", "armor_manyullyn", "armor_myrmex", "armor_tough"]
-      // },
       {
         # TIC Default
         weight: 20,
@@ -296,9 +291,6 @@ static armorEntitys as IData[] =
       "minecraft:zombie_pigman"
     ],
     groups: [
-      // {
-      //   classicEquips: ["armor_golden", "armor_hazmat", "armor_fiery", "armor_myrmex", "armor_flux", "armor_intermedium", "armor_dragonscale", "armor_dragonsteel"]
-      // },
       {
         weight: 2,
         ticMats: ["copper", "bronze", "nickel", "scalebronzedragon", "cheese", "scalebronzeseaserpent", "magmaslime", "energetic_alloy", "electrum", "fierymetal", "amber", "topaz", "lumium_plustic", "xu_evil_metal", "refinedglowstone", "awakened_plustic"],
@@ -310,9 +302,6 @@ static armorEntitys as IData[] =
       "minecraft:wither_skeleton"
     ],
     groups: [
-      // {
-      //   classicEquips: ["armor_steel", "armor_nano", "armor_dark_steel", "armor_void"]
-      // },
       {
         weight: 2,
         ticMats: ["construction_alloy", "tough", "thorium", "blackquartz_plustic", "void_actadd_plustic", "plague_metal", "aethium"]
@@ -326,9 +315,6 @@ static armorEntitys as IData[] =
       "quarq:ashen"
     ],
     groups: [
-      // {
-      //   classicEquips: ["armor_hardenedleather", "armor_manaweave", "armor_iron", "armor_psimetal", "armor_knightmetal", "armor_deathworm", "armor_yeti", "armor_end_steel", "armor_boron_nitride"]
-      // },
       {
         weight: 2,
         ticMats: ["paper", "bone", "chitinwhitedeathworm", "chitintandeathworm", "iron", "enori_actadd_plustic", "knightmetal", "ma.base_essence", "silver", "scalewhitedragon", "dragonbone", "scalebluedragon", "scalesilverdragon", "invar", "titanium", "iridium", "platinum_plustic", "end_steel", "endstone", "xu_evil_metal"],
@@ -340,9 +326,6 @@ static armorEntitys as IData[] =
       "emberroot:hero"
     ],
     groups: [
-      // {
-      //   classicEquips: ["armor_manasteel", "armor_steeleaf", "armor_diamond", "armor_terrasteel", "armor_inferium", "armor_arctic", "armor_prudentium", "armor_tide", "armor_boron_nitride", "armor_superium", ]
-      // },
       {
         weight: 2,
         ticMats: ["blueslime", "cobalt", "scaletealseaserpent", "scaledeepblueseaserpent", "scalesapphiredragon", "ma.base_essence", "starmetal", "psimetal", "sapphire", "psigem", "platinum_plustic", "manasteel", "palis_actadd_plustic", "diamatine_actadd_plustic", "hard_carbon", "tanzanite", "osmiridium", "pladium", "refinedobsidian", "ionite", "ma.superium"]
@@ -516,16 +499,14 @@ function addEquipment(iGroup as IData, entity as IEntityLivingBase, world as IWo
           }
         }
       } else {
-        // if (!isNull(currGroup.ticMats)){ # If group have list of Tic materials
-          # Create Armor ticmats if we dont have any
-          if (isNull(randTicMatsArmor)) {
-            randTicMatsArmor = getFourRandomTicMats(currGroup.ticMats); 
-          }
-          # Create Weapon ticmats if we dont have any
-          if (isNull(randTicMatsWeapn)) {
-            randTicMatsWeapn = rerollForWeapon(randTicMatsArmor, currGroup.ticMats); 
-          }
-        // }
+        # Create Armor ticmats if we dont have any
+        if (isNull(randTicMatsArmor)) {
+          randTicMatsArmor = getFourRandomTicMats(currGroup.ticMats); 
+        }
+        # Create Weapon ticmats if we dont have any
+        if (isNull(randTicMatsWeapn)) {
+          randTicMatsWeapn = rerollForWeapon(randTicMatsArmor, currGroup.ticMats); 
+        }
 
         # Materials for armor and weapons not the same
         val fourMaterials as ITICMaterial[] = (i < 4) ? randTicMatsArmor : randTicMatsWeapn;

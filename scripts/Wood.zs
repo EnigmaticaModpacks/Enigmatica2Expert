@@ -37,7 +37,7 @@ saw(<harvestcraft:pampaperbark>      , <minecraft:planks:3>                 , "e
 saw(<advancedrocketry:alienwood>, <advancedrocketry:planks>, "except: manufactory mekSawmill");
 
 
-// saw(, , "");
+# saw(, , "");
 
 
 # BoP Plank recipes, made by Trilexcom
@@ -107,6 +107,5 @@ for log, plank in forestryLogsAndPlanks {
   saw(log, plank, "no exceptions");
 }
 
-
-# Wood compat
+# Spectre Wood compat
 saw(<randomthings:spectrelog>, <randomthings:spectreplank>, "Except: manufactory mekSawmill");

@@ -72,24 +72,12 @@ print("--- loading ExtremeReactors.zs ---");
 	[<bigreactors:turbinehousing>, <ic2:te:18>, <bigreactors:turbinehousing>], 
 	[<bigreactors:turbinehousing>, <ic2:crafting:36>, <bigreactors:turbinehousing>]]);
 
-# Blutonium Block
-	// recipes.remove(<bigreactors:blockblutonium>);
-	// recipes.addShapedMirrored("Blutonium Block", 
-	// <bigreactors:blockblutonium>, 
-	// [[<ore:blockMithril>, <ore:blockCobalt>, <ore:blockMithril>],
-	// [<ic2:nuclear:7>, <ic2:nuclear:7>, <ic2:nuclear:7>], 
-	// [<ore:blockCyanite>, <actuallyadditions:block_crystal_empowered:1>, <ore:blockCyanite>]]);
+
 # Blutonium Ingot	
- 	recipes.remove(<bigreactors:ingotblutonium>);
- 	recipes.addShapeless("Blutonium Ingot from Block", 
- 	<bigreactors:ingotblutonium> * 9, 
- 	[<bigreactors:blockblutonium>]);
-# Blutonium Ingot -> Block
-	// recipes.addShaped("Blutonium Ingots to Block", 
-	// <bigreactors:blockblutonium>, 
-	// [[<ore:ingotBlutonium>, <ore:ingotBlutonium>, <ore:ingotBlutonium>],
-	// [<ore:ingotBlutonium>, <ore:ingotBlutonium>, <ore:ingotBlutonium>], 
-	// [<ore:ingotBlutonium>, <ore:ingotBlutonium>, <ore:ingotBlutonium>]]);
+	recipes.remove(<bigreactors:ingotblutonium>);
+	recipes.addShapeless("Blutonium Ingot from Block", 
+	<bigreactors:ingotblutonium> * 9, 
+	[<bigreactors:blockblutonium>]);
 
 # Ludicrite Block
 	recipes.remove(<bigreactors:blockludicrite>);

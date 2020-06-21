@@ -53,7 +53,6 @@ function rndDouble(cotRand as mods.contenttweaker.Random) as double{
 # Spawning
 # -------------------------------
 function spawnDust(dust as IItemStack, e as EntityLivingFallEvent, power as double) {
-	// print("spawnDust power:"~ power);
   val entity = e.entityLivingBase;
 
   val cotRand = entity.world.toContentTweakerWorld().getRandom();
@@ -73,15 +72,10 @@ function spawnDust(dust as IItemStack, e as EntityLivingFallEvent, power as doub
 		#random() *
 		(power/*  + random() - 0.5d */)
 	) as double;
-	// print("- Power for spawn: " ~ d);
 	val rd = rndDouble(cotRand);
-	// print("  rd = " ~ rd);
-	// val count = ((d >  rd) ? (d + 0.5d) : 0) as int;
 	val full as double = floor(power) as double;
-	// print("full: " ~ full);
 	val frac as double = power - full;
 	val count as int = (full + ((frac > rd) ? 1.0d : 0.0d)) as int;
-	// print("count = " ~ count);
 
 	if (count <= 0 ) { return null; }
 
@@ -107,7 +101,6 @@ function onEvent(
 		e as EntityLivingFallEvent){
 
   val entity = e.entityLivingBase;
-				// print("  entity.motionY: " ~ entity.motionY);
 
 	# Return if something weird and item have no tags
 	if (isNull(armor.tag) || isNull(armor.tag.Stats) || isNull(armor.tag.Stats.Durability)) { return null; }
@@ -131,9 +124,7 @@ function onEvent(
 				# ---------------------
 				# Calculate power
 				# ---------------------
-				// print("  entity.motionY: " ~ entity.motionY);
 				val speed as double = sqrt(entity.motionX * entity.motionX + entity.motionZ * entity.motionZ);
-				// print("  entity speed: " ~ speed);
 				var valueList as double[] = [
 					max(0.0d, (sqrt(heldItem.amount as double / heldItem.maxStackSize as double))),
 					max(0.0d, ((entity.isSprinting ? 1.0d : 0.25d)) as double),
@@ -166,7 +157,6 @@ function onEvent(
 		# ---------------------
 		# Show information
 		# ---------------------
-		// print("entity.isSneaking: " ~ entity.isSneaking);
 		if (!isNull(player) && entity.isSneaking){
 			var ii = 0;
 			player.sendMessage("\u00A7lJumping power: " ~ (((power * 100.0d) as int) as float / 100.0f)); ii+=1;
