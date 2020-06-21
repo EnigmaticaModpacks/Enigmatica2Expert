@@ -249,3 +249,10 @@ recipes.addShaped(<enderio:block_lava_generator>, [
 # Nethercotta
 mods.immersiveengineering.ArcFurnace.addRecipe(<enderio:item_material:72>, <ore:ingotBrickNether>,
 	<immersiveengineering:material:7>, 20*4, 2560, [<ore:cropNetherWart>*4, <ore:clay>*6], "Alloying");
+
+# Simplifi Niard. Still need capacitor to function
+recipes.remove(<enderio:block_niard>);
+recipes.addShaped(<enderio:block_niard>, [
+	[<immersiveengineering:metal_device1:6>, <enderio:block_tank>, <immersiveengineering:metal_device1:6>],
+	[<ore:craftingPiston>, <ore:chassis>, <ore:craftingPiston>],
+	[<ore:ingotIron>, <ore:barsIron>, <ore:ingotIron>]]);
