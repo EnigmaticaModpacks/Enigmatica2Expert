@@ -1,6 +1,6 @@
 import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IIngredient;
 import mods.jei.JEI.removeAndHide as rh;
-print("--- loading MiscRecipes.zs ---");
 
 # Eclipsed Clock
 	recipes.remove(<randomthings:eclipsedclock>);
@@ -214,19 +214,56 @@ print("--- loading MiscRecipes.zs ---");
 	recipes.addShapeless("Wither Dust2", <darkutils:material> * 9, [<minecraft:skull:1>]);
 	recipes.addShapeless("Wither Dust3", <darkutils:material> * 4, [<ore:blockWither>]);
 
-# Chest
-	recipes.remove(<minecraft:chest>);
-	recipes.addShapedMirrored("Chest",
-	<minecraft:chest> * 2, 
-	[[<ore:logWood>, <ore:plankTreatedWood>, <ore:logWood>],
+# Logs used by Quark
+val excludeLogs as IItemStack[] = [
+	<minecraft:log>,
+	<minecraft:log:1>,
+	<minecraft:log:2>,
+	<minecraft:log:3>,
+	<minecraft:log2>,
+	<minecraft:log2:1>
+];
+
+# Ingredient of all possible logs except listed above
+var logsFiltered as IIngredient = <minecraft:log>;
+for log in <ore:logWood>.items{
+	var isAdd = true;
+	for i in 0 to excludeLogs.length{
+		if((log has excludeLogs[i]) || (excludeLogs[i] has log)){
+			isAdd = false;
+		}
+	}
+	if (isAdd){
+		print("Adding log " ~ log.displayName);
+		logsFiltered = logsFiltered.or(log);
+	}
+}
+
+function remakeChest(name as string, chest as IItemStack, log as IIngredient) {
+
+	recipes.remove(chest);
+
+	recipes.addShapedMirrored(name, chest * 2, 
+	[[log, <ore:plankTreatedWood>, log],
 	[<ore:plankTreatedWood>, <minecraft:stone_button>, <ore:plankTreatedWood>], 
-	[<ore:logWood>, <ore:plankTreatedWood>, <ore:logWood>]]);
+	[log, <ore:plankTreatedWood>, log]]);
 	
-	recipes.addShaped("Cheap Chest",
-	<minecraft:chest>, 
-	[[<ore:logWood>, <tconstruct:tough_tool_rod>.withTag({Material: "wood"}), <ore:logWood>],
-	[<tconstruct:tough_tool_rod>.withTag({Material: "wood"}), <minecraft:stone_button>, <tconstruct:tough_tool_rod>.withTag({Material: "wood"})], 
-	[<ore:logWood>, <tconstruct:tough_tool_rod>.withTag({Material: "wood"}), <ore:logWood>]]);
+	val toolRod = <tconstruct:tough_tool_rod>.withTag({Material: "wood"});
+	recipes.addShaped("Cheap " ~ name, chest,
+	[[log, toolRod, log],
+	[toolRod, <minecraft:stone_button>, toolRod], 
+	[log, toolRod, log]]);
+}
+
+# Quark chests
+remakeChest("Spruce Chest"  , <quark:custom_chest>  , <minecraft:log:1>);
+remakeChest("Birch Chest"   , <quark:custom_chest:1>, <minecraft:log:2>);
+remakeChest("Jungle Chest"  , <quark:custom_chest:2>, <minecraft:log:3>);
+remakeChest("Acacia Chest"  , <quark:custom_chest:3>, <minecraft:log2>);
+remakeChest("Dark Oak Chest", <quark:custom_chest:4>, <minecraft:log2:1>);
+
+# Chest from any other log
+remakeChest("Any Chest", <minecraft:chest>, logsFiltered);
 
 	
 	recipes.addShaped("Mini Chest To Chest",
