@@ -1,7 +1,7 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded randomthings
-print("--- loading RandomThings.zs ---");
+
 	val itemsToRemove = [
 	
 	<randomthings:blockbreaker>,
@@ -43,4 +43,10 @@ recipes.addShaped("ender_bucket2",
 	[[<ore:plateIron>, <minecraft:ender_pearl>, <ore:plateIron>],
 	[null, <ore:plateIron>, null]]);
 
-print("--- RandomThings.zs initialized ---");
+
+# Harder Igniter (because it dont use energy or anything durable)
+recipes.remove(<randomthings:igniter>);
+recipes.addShaped("Random Things Igniter", <randomthings:igniter>, [
+[<ore:gearSteel>, <ore:gearSteel>, <ore:netherrack>],
+[<minecraft:dispenser>, <iceandfire:fire_dragon_blood>, <ore:netherrack>],
+[<ore:gearSteel>, <ore:gearSteel>, <ore:netherrack>]]);
