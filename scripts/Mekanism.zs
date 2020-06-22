@@ -15,9 +15,6 @@ for ingot in <ore:ingotGraphite>.items {
 	mods.mekanism.crusher.addRecipe(ingot, <nuclearcraft:dust:8>);
 }
 
-# Sky stone dust recipe
-	mods.mekanism.crusher.addRecipe(<appliedenergistics2:sky_stone_block>, <appliedenergistics2:material:45>);
-
 # Energized Smelter is not entirely unified, this should fix that
 var itemsToUnify as IItemStack[IItemStack] = {
 	<ic2:crushed> : <thermalfoundation:material:128>,

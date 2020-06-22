@@ -181,9 +181,6 @@ recipes.addShapedMirrored("Gargantuan Drum",
 		[demonPlate, <liquid:high_pressure_steam>*1000, demonPlate]
 		]);
 
-# Sky stone dust
-mods.extrautils2.Crusher.add(<appliedenergistics2:material:45>, <appliedenergistics2:sky_stone_block>);
-
 # Sun crystal
 recipes.remove(<extrautils2:suncrystal:*>);
 var sunIngr = <volumetricflask:volumetric_flask_2000>.withTag({Fluid: {FluidName: "glowstone", Amount: 2000}});

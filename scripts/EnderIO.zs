@@ -249,9 +249,6 @@ recipes.addShaped(<enderio:block_niard>, [
 	[<ore:craftingPiston>, <ore:chassis>, <ore:craftingPiston>],
 	[<ore:ingotIron>, <ore:barsIron>, <ore:ingotIron>]]);
 
-# Sky stone dust
-mods.enderio.SagMill.addRecipe([<appliedenergistics2:material:45>] as IItemStack[], [1.0] as float[], <appliedenergistics2:sky_stone_block>);
-
 # Compat of nano glowstone
 scripts.process.crush(<enderio:item_material:76>, <enderio:block_holy_fog> * 2, "except: sagMill", 
 	[<minecraft:clay_ball>, <minecraft:glowstone_dust>], [0.1f, 0.1f]);
