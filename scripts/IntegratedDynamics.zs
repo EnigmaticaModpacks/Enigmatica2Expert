@@ -1,7 +1,6 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded integrateddynamics
-print("--- loading IntegratedDynamics.zs ---");
 
 /*
 # Aluminum / Osmium Squeezer Compatibility
@@ -48,4 +47,18 @@ print("--- loading IntegratedDynamics.zs ---");
 	[<ore:plateObsidian>, <integrateddynamics:drying_basin>, <ore:plateObsidian>]]);
 
 	
-		print("--- IntegratedDynamics.zs initialized ---");
+# Omni directional
+var connector = <integrateddynamics:part_connector_omni_directional_item>;
+var part = <integrateddynamics:logic_director>;
+var mono = <integrateddynamics:part_connector_mono_directional_item>;
+recipes.remove(connector);
+
+recipes.addShaped("part_connector_omni_directional_item_11", connector * 3, [
+	[part, <enderstorage:ender_storage>, part], 
+	[mono, connector, mono],
+	[null, part, null]]);
+
+recipes.addShaped("part_connector_omni_directional_item", connector * 2, [
+	[part, <enderstorage:ender_storage>, part], 
+	[mono, <integrateddynamics:cable>, mono], 
+	[null, part, null]]);
