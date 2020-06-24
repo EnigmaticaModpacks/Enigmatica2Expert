@@ -18,11 +18,6 @@ print("--- loading IntegratedDynamics.zs ---");
 	<integratedtunnels:part_player_simulator_item> * 2, 
 	[<extrautils2:user>.anyDamage(), <extrautils2:user>.anyDamage()]);
 
-# Menril Logs -> Planks
-	recipes.addShapeless("Menril Planks", 
-	<integrateddynamics:menril_planks> * 2, 
-	[<integrateddynamics:menril_log>]);
-
 # Generator
 	recipes.remove(<integrateddynamics:coal_generator>);
 	recipes.addShapedMirrored("IntegratedDynamics Generator", 

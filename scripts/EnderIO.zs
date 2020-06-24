@@ -250,13 +250,12 @@ recipes.addShaped(<enderio:block_niard>, [
 	[<ore:ingotIron>, <ore:barsIron>, <ore:ingotIron>]]);
 
 # Compat of nano glowstone
-scripts.process.crush(<enderio:item_material:76>, <enderio:block_holy_fog> * 2, "except: sagMill", 
-	[<minecraft:clay_ball>, <minecraft:glowstone_dust>], [0.1f, 0.1f]);
+scripts.process.crush(<enderio:item_material:76>, <enderio:block_holy_fog>, "except: sagMill", 
+	[<enderio:block_holy_fog>, <minecraft:clay_ball>, <minecraft:glowstone_dust>], [0.6f, 0.1f, 0.1f]);
+
+# Compunent for nano-glowstone compat
 scripts.process.alloy([<minecraft:glowstone_dust>, <minecraft:clay_ball>], <enderio:item_material:76> * 2, "except: alloySmelter");
 
 # Harder Vibrant Alloy
-mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_ingot:2>);
-mods.enderio.AlloySmelter.addRecipe(<enderio:item_alloy_ingot:2>, [<ore:ingotEnergeticAlloy>, <extendedcrafting:material:49>]);
-
 mods.thermalexpansion.InductionSmelter.removeRecipe(<enderio:item_alloy_ingot:1>, <minecraft:ender_pearl>);
-mods.thermalexpansion.InductionSmelter.addRecipe(<enderio:item_alloy_ingot:2>, <enderio:item_alloy_ingot:1>, <extendedcrafting:material:49>, 1500);
+scripts.process.alloy([<ore:ingotEnergeticAlloy>, <extendedcrafting:material:49>], <enderio:item_alloy_ingot:2> * 2, "ONLY: induction STRICT: alloySmelter");

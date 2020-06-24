@@ -1,77 +1,66 @@
-import crafttweaker.item.IItemStack as IItemStack;
-import scripts.process.saw;
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 
 
-# Planks
-recipes.remove(<ore:plankWood>);
+# JEI search string to see all planks
+# plankWood -@chisel -"(fireproof)" -"Vertical" -" Painted "
 
-# Vanilla
-saw(<minecraft:log>                  , <minecraft:planks>                   , "only: shapeless blockCutter");
-saw(<minecraft:log:1>                , <minecraft:planks:1>                 , "only: shapeless blockCutter");
-saw(<minecraft:log:2>                , <minecraft:planks:2>                 , "only: shapeless blockCutter");
-saw(<minecraft:log:3>                , <minecraft:planks:3>                 , "only: shapeless blockCutter");
-saw(<minecraft:log2>                 , <minecraft:planks:4>                 , "only: shapeless blockCutter");
-saw(<minecraft:log2:1>               , <minecraft:planks:5>                 , "only: shapeless blockCutter");
+# Helper Function
+function saw(input as IIngredient, output as IItemStack, exceptions as string) {
+  # BlockCutter should add all recipes.
+  # All table recipes should be replaced
+  scripts.process.saw(input, output, "only: blockCutter strict: shapeless");
 
-# Twilight Forest
-saw(<twilightforest:twilight_log>    , <twilightforest:twilight_oak_planks> , "only: shapeless blockCutter");
-saw(<twilightforest:twilight_log:1>  , <twilightforest:canopy_planks>       , "only: shapeless blockCutter");
-saw(<twilightforest:twilight_log:2>  , <twilightforest:mangrove_planks>     , "only: shapeless blockCutter");
-saw(<twilightforest:twilight_log:3>  , <twilightforest:dark_planks>         , "only: shapeless blockCutter");
-saw(<twilightforest:magic_log>       , <twilightforest:time_planks>         , "only: shapeless blockCutter");
-saw(<twilightforest:magic_log:1>     , <twilightforest:trans_planks>        , "only: shapeless blockCutter");
-saw(<twilightforest:magic_log:2>     , <twilightforest:mine_planks>         , "only: shapeless blockCutter");
-saw(<twilightforest:magic_log:3>     , <twilightforest:sort_planks>         , "only: shapeless blockCutter");
-
-# Other Mods
-saw(<rustic:log>                     , <rustic:planks>                      , "only: shapeless blockCutter");
-saw(<rustic:log:1>                   , <rustic:planks:1>                    , "only: shapeless blockCutter");
-saw(<extrautils2:ironwood_log>       , <extrautils2:ironwood_planks>        , "except: mekSawmill manufactory");
-saw(<extrautils2:ironwood_log:1>     , <extrautils2:ironwood_planks:1>      , "except: mekSawmill manufactory");
-saw(<integrateddynamics:menril_log>  , <integrateddynamics:menril_planks>   , "only: blockCutter");
-saw(<ic2:rubber_wood>                , <minecraft:planks:4>                 , "except: shapeless mekSawmill");
-saw(<harvestcraft:pamcinnamon>       , <minecraft:planks:3>                 , "except: mekSawmill manufactory");
-saw(<harvestcraft:pammaple>          , <minecraft:planks:1>                 , "except: mekSawmill manufactory");
-saw(<harvestcraft:pampaperbark>      , <minecraft:planks:3>                 , "except: mekSawmill manufactory");
-
-saw(<advancedrocketry:alienwood>, <advancedrocketry:planks>, "except: manufactory mekSawmill");
-
-
-# saw(, , "");
-
-
-# BoP Plank recipes, made by Trilexcom
-val bopLogsAndPlanks as IItemStack[IItemStack] = {
-  <biomesoplenty:log_0:4>: <biomesoplenty:planks_0>,
-  <biomesoplenty:log_0:5>: <biomesoplenty:planks_0:1>,
-  <biomesoplenty:log_0:6>: <biomesoplenty:planks_0:2>,
-  <biomesoplenty:log_0:7>: <biomesoplenty:planks_0:3>,
-  <biomesoplenty:log_1:4>: <biomesoplenty:planks_0:4>,
-  <biomesoplenty:log_1:5>: <biomesoplenty:planks_0:5>,
-  <biomesoplenty:log_1:6>: <biomesoplenty:planks_0:6>,
-  <biomesoplenty:log_2:4>: <biomesoplenty:planks_0:8>,
-  <biomesoplenty:log_2:5>: <biomesoplenty:planks_0:9>,
-  <biomesoplenty:log_2:6>: <biomesoplenty:planks_0:10>,
-  <biomesoplenty:log_2:7>: <biomesoplenty:planks_0:11>,
-  <biomesoplenty:log_3:4>: <biomesoplenty:planks_0:12>,
-  <biomesoplenty:log_3:5>: <biomesoplenty:planks_0:13>,
-  <biomesoplenty:log_3:6>: <biomesoplenty:planks_0:14>,
-  <biomesoplenty:log_3:7>: <biomesoplenty:planks_0:15>,
-  <biomesoplenty:log_1:7>: <biomesoplenty:planks_0:7>,
-};
-
-for log, plank in bopLogsAndPlanks {
-  saw(log, plank, "only: shapeless, blockCutter");
+  # TE Sawmill generates x3 recipes automatically from craftingTable recipes so we add its in exceptions
+  scripts.process.saw(input, output, "except: TESawmill blockCutter shapeless AdvRockCutter " ~ exceptions);
 }
 
 
-# ThaumCraft Logs -> Planks
-saw(<thaumcraft:log_greatwood>, <thaumcraft:plank_greatwood>,  "only: shapeless, blockCutter");
-saw(<thaumcraft:log_silverwood>,<thaumcraft:plank_silverwood>, "only: shapeless, blockCutter");
+# Logs to planks recipes
+# Vanilla
+val vanilla as IItemStack[IIngredient] = {
+  <minecraft:log>    : <minecraft:planks>, 
+  <minecraft:log:1>  : <minecraft:planks:1>,
+  <minecraft:log:2>  : <minecraft:planks:2>,
+  <minecraft:log:3>  : <minecraft:planks:3>,
+  <minecraft:log2>   : <minecraft:planks:4>,
+  <minecraft:log2:1> : <minecraft:planks:5>,
+};
 
-	
-# Plank logs and planks, made by TrilexCom
-val forestryLogsAndPlanks as IItemStack[IItemStack] = {
+# Twilight Forest
+val twilight as IItemStack[IIngredient] = {
+  <twilightforest:twilight_log>   : <twilightforest:twilight_oak_planks>,
+  <twilightforest:twilight_log:1> : <twilightforest:canopy_planks>,
+  <twilightforest:twilight_log:2> : <twilightforest:mangrove_planks>,
+  <twilightforest:twilight_log:3> : <twilightforest:dark_planks>,
+  <twilightforest:magic_log>      : <twilightforest:time_planks>,
+  <twilightforest:magic_log:1>    : <twilightforest:trans_planks>,
+  <twilightforest:magic_log:2>    : <twilightforest:mine_planks>,
+  <twilightforest:magic_log:3>    : <twilightforest:sort_planks>,
+};
+
+# Biomes O' plenty, made by Trilexcom
+val bop as IItemStack[IIngredient] = {
+  <biomesoplenty:log_0:4> : <biomesoplenty:planks_0>,
+  <biomesoplenty:log_0:5> : <biomesoplenty:planks_0:1>,
+  <biomesoplenty:log_0:6> : <biomesoplenty:planks_0:2>,
+  <biomesoplenty:log_0:7> : <biomesoplenty:planks_0:3>,
+  <biomesoplenty:log_1:4> : <biomesoplenty:planks_0:4>,
+  <biomesoplenty:log_1:5> : <biomesoplenty:planks_0:5>,
+  <biomesoplenty:log_1:6> : <biomesoplenty:planks_0:6>,
+  <biomesoplenty:log_2:4> : <biomesoplenty:planks_0:8>,
+  <biomesoplenty:log_2:5> : <biomesoplenty:planks_0:9>,
+  <biomesoplenty:log_2:6> : <biomesoplenty:planks_0:10>,
+  <biomesoplenty:log_2:7> : <biomesoplenty:planks_0:11>,
+  <biomesoplenty:log_3:4> : <biomesoplenty:planks_0:12>,
+  <biomesoplenty:log_3:5> : <biomesoplenty:planks_0:13>,
+  <biomesoplenty:log_3:6> : <biomesoplenty:planks_0:14>,
+  <biomesoplenty:log_3:7> : <biomesoplenty:planks_0:15>,
+  <biomesoplenty:log_1:7> : <biomesoplenty:planks_0:7>,
+};
+
+# Forestry, made by Trilexcom
+val forestry as IItemStack[IIngredient] = {
   <forestry:logs.0>   : <forestry:planks.0>,
   <forestry:logs.0:1> : <forestry:planks.0:1>,
   <forestry:logs.0:2> : <forestry:planks.0:2>,
@@ -103,9 +92,32 @@ val forestryLogsAndPlanks as IItemStack[IItemStack] = {
   <forestry:logs.6:3> : <forestry:planks.1:11>,
 };
 
-for log, plank in forestryLogsAndPlanks {
-  saw(log, plank, "no exceptions");
-}
+# pam
+val pam as IItemStack[IIngredient] = {
+  <harvestcraft:pamcinnamon>  : <minecraft:planks:3>,
+  <harvestcraft:pammaple>     : <minecraft:planks:1>,
+  <harvestcraft:pampaperbark> : <minecraft:planks:3>,
+};
+
+
+for log, plank in vanilla   { saw(log, plank, "strict: manufactory mekSawmill"); }
+for log, plank in twilight  { saw(log, plank, "strict: manufactory mekSawmill"); }
+for log, plank in pam       { saw(log, plank, "strict: manufactory mekSawmill"); }
+for log, plank in bop       { saw(log, plank, "strict: manufactory mekSawmill"); }
+for log, plank in forestry  { saw(log, plank, "no exceptions"); }
+
+
+# Other Mods
+saw(<rustic:log>                    , <rustic:planks>                    , "strict: manufactory mekSawmill");
+saw(<rustic:log:1>                  , <rustic:planks:1>                  , "strict: manufactory mekSawmill");
+saw(<thaumcraft:log_greatwood>      , <thaumcraft:plank_greatwood>       , "strict: manufactory mekSawmill");
+saw(<thaumcraft:log_silverwood>     , <thaumcraft:plank_silverwood>      , "strict: manufactory mekSawmill");
+saw(<integrateddynamics:menril_log> , <integrateddynamics:menril_planks> , "strict: manufactory mekSawmill");
+saw(<advancedrocketry:alienwood>    , <advancedrocketry:planks>          , "strict: manufactory mekSawmill");
+saw(<extrautils2:ironwood_log>      , <extrautils2:ironwood_planks>      , "strict: manufactory mekSawmill");
+saw(<extrautils2:ironwood_log:1>    , <extrautils2:ironwood_planks:1>    , "strict: manufactory mekSawmill");
+saw(<iceandfire:dreadwood_log>      , <iceandfire:dreadwood_planks>      , "no exceptions");
+
 
 # Spectre Wood compat
-saw(<randomthings:spectrelog>, <randomthings:spectreplank>, "Except: manufactory mekSawmill");
+saw(<randomthings:spectrelog>, <randomthings:spectreplank>, "strict: manufactory mekSawmill");

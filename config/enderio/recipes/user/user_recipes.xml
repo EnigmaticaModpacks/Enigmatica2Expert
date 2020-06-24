@@ -342,6 +342,14 @@
       <output name="minecraft:hopper, blockHopper" />
     </crafting>
   </recipe>
+
+<recipe name="refinedobsidian" required="true"><fermenting energy="10000">
+    <inputgroup><input name="thermalfoundation:material:770" multiplier="1.0" /></inputgroup>
+    <inputfluid name="diamond" multiplier="0.144" />    <outputfluid name="refinedobsidian" /></fermenting></recipe>
+
+<recipe name="refinedglowstone" required="true"><fermenting energy="10000">
+    <inputgroup><input name="mekanism:dust:2" multiplier="1.0" /></inputgroup>
+    <inputfluid name="glowstone" multiplier="0.144" />    <outputfluid name="refinedglowstone" /></fermenting></recipe>
   
 </enderio:recipes>
 

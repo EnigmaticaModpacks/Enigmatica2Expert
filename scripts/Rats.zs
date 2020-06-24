@@ -118,7 +118,7 @@ remake("rat_upgrade_archeologist", <rats:rat_upgrade_archeologist>, [
 ]);
 
 # Rat flowers
-scripts.process.grow(<rats:ratglove_flower>, <rats:ratglove_flower>, "No exceptions", null, 0);
+scripts.process.grow(<rats:ratglove_flower>, <rats:ratglove_flower> * 9, "No exceptions", null, 0);
 
 #Creative upgrades
 mods.extendedcrafting.TableCrafting.addShaped(0, <rats:rat_upgrade_creative>, [
