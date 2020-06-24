@@ -873,19 +873,19 @@ for item in thaumcraftHintItems {
 
 	<modularmachinery:itemmodularium>.displayName = "Modularium Alloy";
 
-	
-# Fuel description
-mods.jei.JEI.addDescription(<advgenerators:turbine_controller>,	["Acceptable Fuel",
-	format.darkAqua("Canola Oil")         ~ ("10 MJ/mB"),
-	format.darkAqua("Crude Oil")          ~ ("25 MJ/mB"),
-	format.darkAqua("Biomass")            ~ ("30 MJ/mB"),
-	format.darkAqua("Biodiesel")          ~ ("40 MJ/mB"),
-	format.darkAqua("Crystallized Oil")   ~ ("40 MJ/mB"),
-	format.darkAqua("Biogas")             ~ ("50 MJ/mB"),
-	format.darkAqua("Ethylene")           ~ ("80 MJ/mB"),
-	format.darkAqua("Biofuel")            ~ ("90 MJ/mB"),
-	format.darkAqua("Rocket Fuel (EiO)")  ~ ("95 MJ/mB"),
-	format.darkAqua("Refined Fuel")       ~ ("105 MJ/mB"),
-	format.darkAqua("Rocket Fuel (AR)")   ~ ("110 MJ/mB"),
-	format.darkAqua("Empowered Oil")      ~ ("120 MJ/mB"),
-]);
+
+# Turbine Fuel description
+<advgenerators:turbine_controller>.addShiftTooltip(
+	format.darkAqua("Canola Oil")         ~  format.gray(" 10 MJ/mB\n") ~
+	format.darkAqua("Crude Oil")          ~  format.gray(" 25 MJ/mB\n") ~
+	format.darkAqua("Biomass")            ~  format.gray(" 30 MJ/mB\n") ~
+	format.darkAqua("Biodiesel")          ~  format.gray(" 40 MJ/mB\n") ~
+	format.darkAqua("Crystallized Oil")   ~  format.gray(" 40 MJ/mB\n") ~
+	format.darkAqua("Biogas")             ~  format.gray(" 50 MJ/mB\n") ~
+	format.darkAqua("Ethylene")           ~  format.gray(" 80 MJ/mB\n") ~
+	format.darkAqua("Biofuel")            ~  format.gray(" 90 MJ/mB\n") ~
+	format.darkAqua("Rocket Fuel (EiO)")  ~  format.gray(" 95 MJ/mB\n") ~
+	format.darkAqua("Refined Fuel")       ~ format.gray(" 105 MJ/mB\n") ~
+	format.darkAqua("Rocket Fuel (AR)")   ~ format.gray(" 110 MJ/mB\n") ~
+	format.darkAqua("Empowered Oil")      ~ format.gray(" 120 MJ/mB")
+,format.darkAqua("<<Hold shift to see fuel list>>"));
