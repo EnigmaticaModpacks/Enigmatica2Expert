@@ -290,24 +290,24 @@ mods.cyclicmagic.Melter.removeShapedRecipe("amber", 1000);
 mods.cyclicmagic.Melter.removeShapedRecipe("crystal", 1000);
 
 # Liquid blue slimy items
-scripts.process.squeeze(<tconstruct:slime_dirt:1>,        <liquid:blueslime>*2000,null,  <biomesoplenty:mudball>);
-scripts.process.squeeze(<tconstruct:slime_leaves>,        <liquid:blueslime>*500, null, null);
-scripts.process.squeeze(<tconstruct:slime_grass_tall>,    <liquid:blueslime>*200, null, null);
-scripts.process.squeeze(<tconstruct:slime_grass_tall:1>,  <liquid:blueslime>*200, null, null);
+scripts.process.squeeze(<tconstruct:slime_dirt:1>,        <liquid:blueslime>*2000, null,  <biomesoplenty:mudball>);
+scripts.process.squeeze(<tconstruct:slime_leaves>,        <liquid:blueslime>*500,  null, null);
+scripts.process.squeeze(<tconstruct:slime_grass_tall>,    <liquid:blueslime>*200,  null, null);
+scripts.process.squeeze(<tconstruct:slime_grass_tall:1>,  <liquid:blueslime>*200,  null, null);
 scripts.process.squeeze(<tconstruct:slime_sapling>,       <liquid:blueslime>*1000, null, null);
-scripts.process.squeeze(<tconstruct:slime_vine_blue_end>, <liquid:blueslime>*200, null, null);
-scripts.process.squeeze(<tconstruct:slime_vine_blue_mid>, <liquid:blueslime>*200, null, <tconstruct:slime_vine_blue_end>);
-scripts.process.squeeze(<tconstruct:slime_vine_blue>,     <liquid:blueslime>*200, null, <tconstruct:slime_vine_blue_mid>);
+scripts.process.squeeze(<tconstruct:slime_vine_blue_end>, <liquid:blueslime>*200,  null, null);
+scripts.process.squeeze(<tconstruct:slime_vine_blue_mid>, <liquid:blueslime>*200,  null, <tconstruct:slime_vine_blue_end>);
+scripts.process.squeeze(<tconstruct:slime_vine_blue>,     <liquid:blueslime>*200,  null, <tconstruct:slime_vine_blue_mid>);
 
 # Liquid purple slimy items
-scripts.process.squeeze(<tconstruct:slime_dirt:2>,          <liquid:purpleslime>*2000,null,  <biomesoplenty:mudball>);
-scripts.process.squeeze(<tconstruct:slime_leaves:1>,        <liquid:purpleslime>*500, null,   null);
-scripts.process.squeeze(<tconstruct:slime_grass_tall:4>,    <liquid:purpleslime>*200, null,  null);
-scripts.process.squeeze(<tconstruct:slime_grass_tall:5>,    <liquid:purpleslime>*200, null,  null);
+scripts.process.squeeze(<tconstruct:slime_dirt:2>,          <liquid:purpleslime>*2000, null,  <biomesoplenty:mudball>);
+scripts.process.squeeze(<tconstruct:slime_leaves:1>,        <liquid:purpleslime>*500,  null,  null);
+scripts.process.squeeze(<tconstruct:slime_grass_tall:4>,    <liquid:purpleslime>*200,  null,  null);
+scripts.process.squeeze(<tconstruct:slime_grass_tall:5>,    <liquid:purpleslime>*200,  null,  null);
 scripts.process.squeeze(<tconstruct:slime_sapling:1>,       <liquid:purpleslime>*1000, null,  null);
-scripts.process.squeeze(<tconstruct:slime_vine_purple_end>, <liquid:purpleslime>*200, null,  null);
-scripts.process.squeeze(<tconstruct:slime_vine_purple_mid>, <liquid:purpleslime>*200, null,  <tconstruct:slime_vine_purple_end>);
-scripts.process.squeeze(<tconstruct:slime_vine_purple>,     <liquid:purpleslime>*200, null,  <tconstruct:slime_vine_purple_mid>);
+scripts.process.squeeze(<tconstruct:slime_vine_purple_end>, <liquid:purpleslime>*200,  null,  null);
+scripts.process.squeeze(<tconstruct:slime_vine_purple_mid>, <liquid:purpleslime>*200,  null,  <tconstruct:slime_vine_purple_end>);
+scripts.process.squeeze(<tconstruct:slime_vine_purple>,     <liquid:purpleslime>*200,  null,  <tconstruct:slime_vine_purple_mid>);
 
 
 # More Scorched bricks recipes

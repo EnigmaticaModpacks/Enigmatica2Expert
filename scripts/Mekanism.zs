@@ -384,3 +384,6 @@ mods.mechanics.addTubeRecipe([<mekanism:basicblock:4>] as IItemStack[], <liquid:
 scripts.process.solution([<thermalfoundation:material:770>], [<liquid:diamond> * 66], [<liquid:refinedobsidian> * 144], "except: vat");
 scripts.process.solution([<mekanism:dust:2>], [<liquid:glowstone> * 250], [<liquid:refinedglowstone> * 144], "except: vat");
 
+# Try to fix cubes uncraftable in AE
+remakeEx(<mekanism:energycube>.withTag({tier: 1}), [[<ore:alloyAdvanced>, <ore:battery>, <ore:alloyAdvanced>],[<ore:ingotOsmium>, <mekanism:energycube>.withTag({tier: 0}), <ore:ingotOsmium>], [<ore:alloyAdvanced>, <ore:battery>, <ore:alloyAdvanced>]]);
+# remakeEx(<mekanism:energycube>.withTag({tier: 2}), [[<ore:alloyElite>, <ore:battery>, <ore:alloyElite>],[<ore:ingotGold>, <mekanism:energycube>.withTag({tier: 1}), <ore:ingotGold>], [<ore:alloyElite>, <ore:battery>, <ore:alloyElite>]]);

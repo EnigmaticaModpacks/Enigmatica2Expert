@@ -36,7 +36,6 @@ mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreSilver>, <thermalfoundati
 mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreLead>, <thermalfoundation:material:195> % 33);
 
 # Removing wrong aspects from stuff
-	<chiselsandbits:chiseled_iron>.setAspects(<aspect:desiderium> * 1);
 	<ic2:dust:21>.setAspects(<aspect:metallum> * 1);
 	
 # Temp Recipes

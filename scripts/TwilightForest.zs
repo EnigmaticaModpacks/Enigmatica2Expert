@@ -5,6 +5,9 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
 
 # List of blocks and their respetive recycle materials
+# Note: despite Rock Crusher uses IIngredient as input, IOreDictEntry or
+#   wildcarded items (like <twilightforest:maze_stone:*>) will be
+#   visible in JEI, but cant be actually pushed into machine
 val rockRecycleTable as IItemStack[][IIngredient] = {
 <twilightforest:castle_brick:3>      |
 <twilightforest:castle_pillar>       |

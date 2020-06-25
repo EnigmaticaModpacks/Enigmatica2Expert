@@ -54,10 +54,12 @@ Finished
 
 Planned
 -----------
-- [x] Remove all // comments
-- [x] Turbine Fuel list description
-- [ ] Process: Swap all inputs and outputs with IIngredient
 
+- [ ] process Check AEGrinder secondary outputs
+- [ ] Check circuits and Mek Cubes
+- [ ] AA crusher to process
+
+## Long-term
 
 Long-term
 -----------

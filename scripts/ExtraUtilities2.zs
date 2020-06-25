@@ -183,7 +183,7 @@ recipes.addShapedMirrored("Gargantuan Drum",
 
 # Sun crystal
 recipes.remove(<extrautils2:suncrystal:*>);
-var sunIngr = <volumetricflask:volumetric_flask_2000>.withTag({Fluid: {FluidName: "glowstone", Amount: 2000}});
+var sunIngr = <liquid:glowstone> * 1000; # <volumetricflask:volumetric_flask_2000>.withTag({Fluid: {FluidName: "glowstone", Amount: 2000}});
 recipes.addShaped(<extrautils2:suncrystal:250>, [
 	[null, sunIngr, null],
 	[sunIngr, <ic2:energy_crystal>.anyDamage(), sunIngr], 
