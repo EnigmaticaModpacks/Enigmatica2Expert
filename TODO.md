@@ -1,68 +1,100 @@
+# Ideas list
+
 🟢 - Add mod
 🔴 - Remove mod
 💦 - Easier recipe
 🔶 - Harder Recipe
 🔧 - More Machine Recipes
 📖 - Better Questing book
+✏️ - Recipes changes
+✍ - Compat recipes
+⚙️ - Process (compat between machines)
+♻️ - Recycle
 
+## Finished
 
-Finished
------------
-- [x] 💦 Blood Tank cheaper
-- [x] 💦 Extended Crafting Automation table
-- [x] 💦 Make Dynamos with Triple battery
-- [x] 📖 + Halo in book
-- [x] 📖 add bottler to book
-- [x] 📖 add Endergenic Generator
-- [x] 📖 AE2 branch
-- [x] 📖 Sandwitch Station to Bragging rights 
-- [x] 🔧 Precision Assembler
-- [x] 🔧 Quantum Compressor
-- [x] 🔶 Chisel tools
-- [x] 🔶 Mek reactor
-- [x] 🟢 **Lazy AE2** New mod, tweak crafts
-- [x] 🟢 **Mineral Tracker** New mod
-- [x] 🟢 **Tinker's Evolution** New mod, add materials to equip generation
-- [x] 🟢 Thermal Innovation
-- [x] Adv generators more gases as fuel
-- [x] AdvRock wood comp.
-- [x] change reward for Infinity Drill
-- [x] Cyanite ingot cast
-- [x] Diamond backpack craft
-- [x] Disable Rats processing in mek machines
-- [x] Elite Compressing Fix craft
-- [x] Fix XU2 chunkloader craft
-- [x] IceAndFire Remove armor and tools replaced by TiCon
-- [x] Main menu label
-- [x] ModularMachinery Make Armor Assembling Machine
-- [x] More craft variants for scorched bricks
-- [x] Myrmex Blocks recycle
-- [x] Olive in Insolator
-- [x] Ore Piece double packing
-- [x] Orechid blacklist Yellorium, add NC ores
-- [x] Osmium ore to Excavator
-- [x] Recycle Minotaur Axes
-- [x] Remove Circuits from cat drops
-- [x] Remove Little crafts
-- [x] Review JEI hide changes
-- [x] Scallinghealth Frogs in blacklist
-- [x] Simplify IC2 solars panels
-- [x] Spectre coil from any Graphite rods
-- [x] ThermExp ducts crafts in other machines
-- [x] 🟢 AE2 Fluid Crafting
-- [x] Processing less wood for low-tech machines
-
-Planned
 -----------
 
-- [ ] process Check AEGrinder secondary outputs
+
+## Planned
+
+-----------
+
+- [ ] ♻️ Arrows recycle
+- [ ] ♻️ Dark/EndSteel boots recycle
+- [ ] Cancel removing of melting EiO metals in smeltery
+- [ ] ♻️ Flux-infused armor recycle
+- [ ] ♻️ Manaweawe, psi recycle
+- [ ] ♻️ Recycle living armor, khopeshs, Manaweave
+- [ ] ♻️ Trolls items recycle
+- [ ] ♻️ Twilight armor recycle instead of craft
+- [ ] ⚙️ AA crusher to process
+- [ ] ⚙️ Black Quarts to AE grindstone
+- [ ] ⚙️ Boron Arsenide Compat
+- [ ] ⚙️ Check AEGrinder secondary outputs
+- [ ] ⚙️ Grow spectre saplings
+- [ ] ⚙️ Morbs filling
+- [ ] ⚙️ Primal Mana
+- [ ] ⚙️ Process Industrial Arc Furnance
+- [ ] ✍ Clay bucket to cast
+- [ ] ✍ HSLA to crafts
+- [ ] ✍ NC S'more compat. Gelatin Compat
+- [ ] ✍ Quick sand more crafts
+- [ ] ✏️ Flux to early crafts
+- [ ] ✏️ Gate meshes instead of gating sieves. Not gate string mesh
+- [ ] ✏️ Infusion Crystal uses diamond (need to use crystal)
+- [ ] ✏️ More crafts to starlight crafting engine
+- [ ] ✏️ More mechanics explosions
+- [ ] ✏️ More using for fluid Latex
+- [ ] ✏️ Plasma to craft
+- [ ] ✏️ Remove doubled carpenter recipes (impreg sticks)
+- [ ] ✏️ Remove excess flux plug recipe
+- [ ] ✏️ Remove robots from craft (too slow and barely aoumatable)
+- [ ] ✏️ To Crafts pile of neutronium
+- [ ] ✏️ Topaz To Crafts
+- [ ] ✏️ Ultimate potion
+- [ ] 💦 EIO facades cheaper
+- [ ] 📖 Add blood tanks
+- [ ] 📖 Clear finished quests
+- [ ] 📖 Geiger to NC gate
+- [ ] 📖 Gendustry to forestry
+- [ ] 📖 NC steam bucket request to exhaust
+- [ ] 📖 Tree Extractor instead of latex processing
+- [ ] 🔴 Tinkering with Blood Magic
+- [ ] 🔴 Rebind
+- [ ] 🔶 Blood tanks harder
+- [ ] 🔶 Nerf glitch infused armor
+- [ ] 🔶 Obsidian Shears
+- [ ] 🔶 Up the BuildingGadgets consumption
+- [ ] 🟢 EnderIO Energy
+- [ ] 🟢 ME addon for pachaged auto
+- [ ] 🟢 Traveler's Backpack
+- [ ] 🟢 Tips
+- [ ] Armor generates with less energy and durability
+- [ ] Blue slime from liquid
+- [ ] Buff salt reactor
 - [ ] Check circuits and Mek Cubes
-- [ ] AA crusher to process
+- [ ] Check modular storage tier upgrades (cant craft in ME)
+- [ ] Check why disenchantment generator wouldn't craft
+- [ ] Diamond nugget dupe
+- [ ] Emeraldic to crafts
+- [ ] Envirn materials to timecrafting
+- [ ] Fix Creative cheese recipe (cant craft with sandwiches)
+- [ ] Fix Forestry Circuitst Uses
+- [ ] Give uses to singularities (Coal - burn time, etc)
+- [ ] Hardened stone Chiseling
+- [ ] Harder Branch Mining OREs
+- [ ] Lower armor chance spawn
+- [ ] More Resource miner's blocks
+- [ ] NC Electrolyzer to AdvRock electrolizer
+- [ ] Speed Up AdvRocketry machines
+- [ ] The wat refined obsidian fix
+- [ ] New loot for Recurrent Complex
 
 ## Long-term
 
-Long-term
 -----------
+
 - [ ] New 🐝 for endgame
 - [ ] **ModularMachinery** Advanced Phytogenic Insolator
 - [ ] **LottTableTweaker** Переработать лут на новые постройки
