@@ -21,7 +21,7 @@
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
 <Recipes useDefault="false">
-	<Recipe timeRequired="120" power ="100000">
+	<Recipe timeRequired="5" power ="100000">
 		<input>
 			<itemStack>minecraft:sand</itemStack>
 		</input>
@@ -29,7 +29,7 @@
 			<itemStack>libvulpes:productingot 4 3</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="200" power ="100000">
+	<Recipe timeRequired="8" power ="100000">
 		<input>
 			<oreDict>ingotIron</oreDict>
 			<itemStack>minecraft:coal 1 1</itemStack>
@@ -38,7 +38,7 @@
 			<itemStack>libvulpes:productingot 2 6</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="400" power ="100000">
+	<Recipe timeRequired="16" power ="100000">
 		<input>
 			<oreDict>ingotAluminum 7</oreDict>
 			<oreDict>ingotTitanium 3</oreDict>
@@ -47,7 +47,7 @@
 			<itemStack>advancedrocketry:productingot 6</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="400" power ="100000">
+	<Recipe timeRequired="16" power ="100000">
 		<input>
 			<oreDict>ingotTitanium</oreDict>
 			<oreDict>ingotIridium</oreDict>
@@ -56,7 +56,7 @@
 			<itemStack>advancedrocketry:productingot 4 1</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="80" power ="100000">
+	<Recipe timeRequired="4" power ="100000">
 		<input>
 			<oreDict>oreRutile</oreDict>
 		</input>
@@ -66,7 +66,7 @@
 	</Recipe>
 
 	<!-- Scorched bricks -->
-	<Recipe timeRequired="5" power ="10000">
+	<Recipe timeRequired="4" power ="10000">
 		<input>
 			<oreDict>ingotBrick</oreDict>
 		</input>
