@@ -35,7 +35,7 @@
 			<itemStack>astralsorcery:itemcraftingcomponent 1 2</itemStack>
 		</input>
 		<output>
-			<itemStack>astralsorcery:blockcelestialcrystals 1 4</itemStack>
+			<itemStack>astralsorcery:itemcelestialcrystal 1 0</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="2000" power ="100000"> 
@@ -44,7 +44,7 @@
 			<itemStack>ic2:dust 1 9</itemStack>
 		</input>
 		<output>
-			<itemStack>astralsorcery:blockgemcrystals 1 2</itemStack>
+			<itemStack>astralsorcery:itemperkgem 1 0</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="2000" power ="100000"> 
@@ -53,7 +53,7 @@
 			<itemStack>minecraft:glowstone_dust 1 0</itemStack>
 		</input>
 		<output>
-			<itemStack>astralsorcery:blockgemcrystals 1 3</itemStack>
+			<itemStack>astralsorcery:itemperkgem 1 1</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="2000" power ="100000"> 
@@ -62,7 +62,7 @@
 			<itemStack>appliedenergistics2:material 1 3</itemStack>
 		</input>
 		<output>
-			<itemStack>astralsorcery:blockgemcrystals 1 4</itemStack>
+			<itemStack>astralsorcery:itemperkgem 1 2</itemStack>
 		</output>
 	</Recipe>
 </Recipes>
