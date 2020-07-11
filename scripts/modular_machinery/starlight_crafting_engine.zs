@@ -33,3 +33,21 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_luminous_powder",
 	.addItemInput(<ore:nitor>)
 	.addItemInput(<ore:gemAquamarine>)
 	.build();
+
+mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_prism", machineName, 700)
+	.addItemOutput(<astralsorcery:itemenchantmentamulet>)
+	.addFluidInput(<liquid:astralsorcery.liquidstarlight> * 6000)
+	.addItemInput(<astralsorcery:itemshiftingstar>)
+	.addItemInput(<ore:string>)
+	.addItemInput(<ore:pearlEnderEye>)
+	.addItemInput(<ore:ingotGold>, 2)
+	.addItemInput(<ore:dustAstralStarmetal>, 6)
+	.build();
+
+mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_prism_remake", machineName, 700)
+	.addItemOutput(<astralsorcery:itemenchantmentamulet>)
+	.addFluidInput(<liquid:astralsorcery.liquidstarlight> * 2000)
+	.addItemInput(<astralsorcery:itemenchantmentamulet>)
+	.addItemInput(<astralsorcery:itemcraftingcomponent:4>)
+	.addItemInput(<ore:dustAstralStarmetal>, 2)
+	.build();
