@@ -278,3 +278,11 @@ remakeMagnet(1, <thermalfoundation:material:162>, <enderio:item_alloy_nugget>);
 remakeMagnet(2, <thermalfoundation:material:161>, <enderio:item_alloy_nugget:3>);
 remakeMagnet(3, <thermalfoundation:material:165>, <enderio:item_alloy_nugget:1>);
 remakeMagnet(4, <thermalfoundation:material:167>, <enderio:item_alloy_nugget:2>);
+
+# More TE coolants
+# mods.thermalexpansion.Coolant.addCoolant(ILiquidStack fluid, int coolantRf, int coolantFactor);
+mods.thermalexpansion.Coolant.addCoolant(<liquid:liquidhelium>,   3500000, 65);
+mods.thermalexpansion.Coolant.addCoolant(<liquid:liquid_nitrogen>, 2500000, 55);
+mods.thermalexpansion.Coolant.addCoolant(<liquid:ender_distillation>, 4000000, 70);
+mods.thermalexpansion.Coolant.addCoolant(<liquid:vapor_of_levity>, 4500000, 75);
+mods.thermalexpansion.Coolant.addCoolant(<liquid:blockfluidantimatter>, 5000000, 80);

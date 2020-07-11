@@ -889,3 +889,6 @@ for item in thaumcraftHintItems {
 	format.darkAqua("Rocket Fuel (AR)")   ~ format.gray(" 110 MJ/mB\n") ~
 	format.darkAqua("Empowered Oil")      ~ format.gray(" 120 MJ/mB")
 ,format.darkAqua("<<Hold shift to see fuel list>>"));
+
+# Antimatter
+<forge:bucketfilled>.withTag({FluidName: "blockfluidantimatter", Amount: 1000}).addTooltip(format.aqua("To obtain strike Life Essense with lightning"));
