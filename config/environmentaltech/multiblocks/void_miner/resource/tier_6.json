@@ -1,209 +1,40 @@
 {
   "outputs": [
-	{
-      "target": "white",
-      "weight": 32,
-      "id": "chisel:marble2:7"
-    },
-    {
-      "target": "white",
-      "weight": 30,
-      "id": "chisel:limestone2:7"
-    },
-    {
-      "target": "gray",
-      "weight": 30,
-      "id": "rustic:slate"
-    },
-    {
-      "target": "black",
-      "weight": 30,
-      "id": "chisel:basalt2:7"
-    },
-    {
-      "target": "gray",
-      "weight": 32,
-      "id": "minecraft:stone:0"
-    },
-    {
-      "target": "pink",
-      "weight": 30,
-      "id": "minecraft:stone:1"
-    },
-    {
-      "target": "white",
-      "weight": 30,
-      "id": "minecraft:stone:3"
-    },
-    {
-      "target": "gray",
-      "weight": 30,
-      "id": "minecraft:stone:5"
-    },
-    {
-      "target": "silver",
-      "weight": 30,
-      "id": "minecraft:gravel"
-    },
-    {
-      "target": "green",
-      "weight": 10,
-      "id": "minecraft:grass"
-    },
-    {
-      "target": "brown",
-      "weight": 20,
-      "id": "minecraft:dirt:0"
-    },
-    {
-      "target": "brown",
-      "weight": 10,
-      "id": "minecraft:dirt:2"
-    },
-    {
-      "target": "yellow",
-      "weight": 30,
-      "id": "minecraft:sand:0"
-    },
-    {
-      "target": "yellow",
-      "weight": 24,
-      "id": "minecraft:sand:1"
-    },
-    {
-      "target": "gray",
-      "weight": 28,
-      "id": "minecraft:cobblestone"
-    },
-    {
-      "target": "green",
-      "weight": 10,
-      "id": "minecraft:mossy_cobblestone"
-    },
-    {
-      "target": "purple",
-      "weight": 9,
-      "id": "minecraft:obsidian"
-    },
-    {
-      "target": "silver",
-      "weight": 12,
-      "id": "minecraft:clay"
-    },
-    {
-      "target": "red",
-      "weight": 28,
-      "id": "minecraft:netherrack"
-    },
-    {
-      "target": "brown",
-      "weight": 16,
-      "id": "minecraft:soul_sand"
-    },
-    {
-      "target": "",
-      "weight": 8,
-      "id": "minecraft:mycelium"
-    },
-    {
-      "target": "",
-      "weight": 13,
-      "id": "minecraft:end_stone"
-    },
-    {
-      "target": "orange",
-      "weight": 12,
-      "id": "minecraft:hardened_clay"
-    },
-    {
-      "target": "white",
-      "weight": 2,
-      "id": "minecraft:stained_hardened_clay:0"
-    },
-    {
-      "target": "orange",
-      "weight": 2,
-      "id": "minecraft:stained_hardened_clay:1"
-    },
-    {
-      "target": "magenta",
-      "weight": 2,
-      "id": "minecraft:stained_hardened_clay:2"
-    },
-    {
-      "target": "lightBlue",
-      "weight": 2,
-      "id": "minecraft:stained_hardened_clay:3"
-    },
-    {
-      "target": "yellow",
-      "weight": 2,
-      "id": "minecraft:stained_hardened_clay:4"
-    },
-    {
-      "target": "lime",
-      "weight": 2,
-      "id": "minecraft:stained_hardened_clay:5"
-    },
-    {
-      "target": "pink",
-      "weight": 2,
-      "id": "minecraft:stained_hardened_clay:6"
-    },
-    {
-      "target": "gray",
-      "weight": 2,
-      "id": "minecraft:stained_hardened_clay:7"
-    },
-    {
-      "target": "silver",
-      "weight": 2,
-      "id": "minecraft:stained_hardened_clay:8"
-    },
-    {
-      "target": "cyan",
-      "weight": 2,
-      "id": "minecraft:stained_hardened_clay:9"
-    },
-    {
-      "target": "purple",
-      "weight": 2,
-      "id": "minecraft:stained_hardened_clay:10"
-    },
-    {
-      "target": "blue",
-      "weight": 2,
-      "id": "minecraft:stained_hardened_clay:11"
-    },
-    {
-      "target": "brown",
-      "weight": 2,
-      "id": "minecraft:stained_hardened_clay:12"
-    },
-    {
-      "target": "green",
-      "weight": 2,
-      "id": "minecraft:stained_hardened_clay:13"
-    },
-    {
-      "target": "red",
-      "weight": 2,
-      "id": "minecraft:stained_hardened_clay:14"
-    },
-    {
-      "target": "black",
-      "weight": 2,
-      "id": "minecraft:stained_hardened_clay:15"
-    },
-    {
-      "target": "3",
-      "weight": 28,
-      "id": "minecraft:sponge"
-    },
-    {
-      "target": "white",
-      "weight": 4,
-      "id": "environmentaltech:mica"
-    }
-  ]
+  {"id": "environmentaltech:mica"             , "weight": 8  , "target": "white" }      ,
+  {"id": "minecraft:clay"                     , "weight": 12 , "target": "silver" }     ,
+  {"id": "minecraft:end_stone"                , "weight": 9  , "target": "" }           ,
+  {"id": "minecraft:mossy_cobblestone"        , "weight": 10 , "target": "green" }      ,
+  {"id": "minecraft:mycelium"                 , "weight": 8  , "target": "" }           ,
+  {"id": "minecraft:netherrack"               , "weight": 28 , "target": "red" }        ,
+  {"id": "minecraft:obsidian"                 , "weight": 6  , "target": "purple" }     ,
+  {"id": "minecraft:soul_sand"                , "weight": 16 , "target": "brown" }      ,
+  {"id": "minecraft:sponge"                   , "weight": 12 , "target": "yellow" }     ,
+  
+  {"id": "biomesoplenty:flesh"               , "weight": 20  , "target": "red" }  ,
+  {"id": "iceandfire:chared_cobblestone"     , "weight": 15  , "target": "gray" }  ,
+  {"id": "iceandfire:chared_dirt"            , "weight": 15  , "target": "gray" }  ,
+  {"id": "iceandfire:chared_grass"           , "weight": 15  , "target": "gray" }  ,
+  {"id": "iceandfire:chared_gravel"          , "weight": 15  , "target": "gray" }  ,
+  {"id": "iceandfire:chared_stone"           , "weight": 15  , "target": "gray" }  ,
+  {"id": "iceandfire:dread_stone"            , "weight": 5   , "target": "black" }  ,
+  {"id": "iceandfire:frozen_cobblestone"     , "weight": 15  , "target": "light_blue" }  ,
+  {"id": "iceandfire:frozen_dirt"            , "weight": 15  , "target": "light_blue" }  ,
+  {"id": "iceandfire:frozen_grass"           , "weight": 15  , "target": "light_blue" }  ,
+  {"id": "iceandfire:frozen_gravel"          , "weight": 15  , "target": "light_blue" }  ,
+  {"id": "iceandfire:frozen_stone"           , "weight": 15  , "target": "light_blue" }  ,
+  {"id": "iceandfire:myrmex_resin:1"         , "weight": 10  , "target": "orange" }  ,
+  {"id": "iceandfire:myrmex_resin"           , "weight": 10  , "target": "brown" }  ,
+  {"id": "quark:crystal"                     , "weight": 10  , "target": "" }  ,
+  {"id": "quark:crystal:1"                   , "weight": 10  , "target": "red" }  ,
+  {"id": "quark:crystal:2"                   , "weight": 10  , "target": "orange" }  ,
+  {"id": "quark:crystal:3"                   , "weight": 10  , "target": "yellow" }  ,
+  {"id": "quark:crystal:4"                   , "weight": 10  , "target": "lime" }  ,
+  {"id": "quark:crystal:5"                   , "weight": 10  , "target": "cyan" }  ,
+  {"id": "quark:crystal:6"                   , "weight": 10  , "target": "blue" }  ,
+  {"id": "quark:crystal:7"                   , "weight": 10  , "target": "pink" }  ,
+  {"id": "quark:crystal:8"                   , "weight": 10  , "target": "black" }  ,
+  {"id": "rats:marbled_cheese_raw"           , "weight": 10  , "target": "yellow" }  ,
+  {"id": "thaumcraft:stone_porous"           , "weight": 20  , "target": "silver" }  ,
+  {"id": "twilightforest:giant_cobblestone"  , "weight": 5   , "target": "silver" }  
+]
 }
