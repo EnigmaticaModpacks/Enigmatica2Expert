@@ -24,31 +24,67 @@ recipes.addShapeless(
 # ###################################
 
 recipes.addShapeless(
-	"Timecraft Tiny Coin"         /* Name of recipe */, 
-	(<rats:tiny_coin>*2) /* Output stack */.withLore(["Consume " ~ 
-	"2 Minutes"                   	     /* Tooltip text */ ~" from bottle"]), [<randomthings:timeinabottle>.marked("timeinabottle").transformNew(function(item) {return item.updateTag({timeData: {storedTime: ((!isNull(item.tag) && !isNull(item.tag.timeData) && !isNull(item.tag.timeData.storedTime)) ? (item.tag.timeData.storedTime - 
-	20*60*2 	 	              	     /* Consumed Time (ticks) */) : 0)}});	}),
-	<rats:tiny_coin>     /* Input stack list [,] */], function(out, ins, cInfo) {	if(ins.timeinabottle.tag.timeData.storedTime >= 
-	20*60*2	 	              	     /* Same as above */) { return 
-	(<rats:tiny_coin>*2) /* Output stack */; }	return null; },	null);
+ "Timecraft Tiny Coin" /*Name of recipe */,
+ (<rats:tiny_coin>*2)  /*Output stack */.withLore(["Consume " ~
+ "2 Minutes"           /*Tooltip text */ ~" from bottle"]), [<randomthings:timeinabottle>.marked("timeinabottle").transformNew(function(item) {return item.updateTag({timeData: {storedTime: ((!isNull(item.tag) && !isNull(item.tag.timeData) && !isNull(item.tag.timeData.storedTime)) ? (item.tag.timeData.storedTime -
+ 20*60*2               /*Consumed Time (ticks) */) : 0)}});	}),
+ <rats:tiny_coin>      /*Input stack list [,] */], function(out, ins, cInfo) {	if(ins.timeinabottle.tag.timeData.storedTime >=
+ 20*60*2               /*Same as above */) { return
+ (<rats:tiny_coin>*2)  /*Output stack */; }	return null; },	null);
 
 recipes.addShapeless(
-	"Timecraft Token Fragment"         /* Name of recipe */, 
-	(<rats:token_fragment>*2) /* Output stack */.withLore(["Consume " ~ 
-	"20 Minutes"                   	     /* Tooltip text */ ~" from bottle"]), [<randomthings:timeinabottle>.marked("timeinabottle").transformNew(function(item) {return item.updateTag({timeData: {storedTime: ((!isNull(item.tag) && !isNull(item.tag.timeData) && !isNull(item.tag.timeData.storedTime)) ? (item.tag.timeData.storedTime - 
-	20*60*20 	 	              	     /* Consumed Time (ticks) */) : 0)}});	}),
-	<rats:token_fragment>     /* Input stack list [,] */], function(out, ins, cInfo) {	if(ins.timeinabottle.tag.timeData.storedTime >= 
-	20*60*20	 	              	     /* Same as above */) { return 
-	(<rats:token_fragment>*2) /* Output stack */; }	return null; },	null);
+ "Timecraft EnvTech Crystal 1"             /*Name of recipe */,
+ (<environmentaltech:litherite_crystal>*2) /*Output stack */.withLore(["Consume " ~
+ "7 Minutes"                               /*Tooltip text */ ~" from bottle"]), [<randomthings:timeinabottle>.marked("timeinabottle").transformNew(function(item) {return item.updateTag({timeData: {storedTime: ((!isNull(item.tag) && !isNull(item.tag.timeData) && !isNull(item.tag.timeData.storedTime)) ? (item.tag.timeData.storedTime -
+ 20*60*7                                   /*Consumed Time (ticks) */) : 0)}});	}),
+ <environmentaltech:litherite_crystal>     /*Input stack list [,] */], function(out, ins, cInfo) {	if(ins.timeinabottle.tag.timeData.storedTime >=
+ 20*60*7                                   /*Same as above */) { return
+ (<environmentaltech:litherite_crystal>*2) /*Output stack */; }	return null; },	null);
 
 recipes.addShapeless(
-	"Timecraft Token Piece"         /* Name of recipe */, 
-	(<rats:token_piece>*2) /* Output stack */.withLore(["Consume " ~ 
-	"3 Hours and 20 Minutes"                   	     /* Tooltip text */ ~" from bottle"]), [<randomthings:timeinabottle>.marked("timeinabottle").transformNew(function(item) {return item.updateTag({timeData: {storedTime: ((!isNull(item.tag) && !isNull(item.tag.timeData) && !isNull(item.tag.timeData.storedTime)) ? (item.tag.timeData.storedTime - 
-	20*60*200 	 	              	     /* Consumed Time (ticks) */) : 0)}});	}),
-	<rats:token_piece>     /* Input stack list [,] */], function(out, ins, cInfo) {	if(ins.timeinabottle.tag.timeData.storedTime >= 
-	20*60*200	 	              	     /* Same as above */) { return 
-	(<rats:token_piece>*2) /* Output stack */; }	return null; },	null);
+ "Timecraft EnvTech Crystal 2"             /*Name of recipe */,
+ (<environmentaltech:erodium_crystal>*2)   /*Output stack */.withLore(["Consume " ~
+ "7 Minutes"                               /*Tooltip text */ ~" from bottle"]), [<randomthings:timeinabottle>.marked("timeinabottle").transformNew(function(item) {return item.updateTag({timeData: {storedTime: ((!isNull(item.tag) && !isNull(item.tag.timeData) && !isNull(item.tag.timeData.storedTime)) ? (item.tag.timeData.storedTime -
+ 20*60*7                                   /*Consumed Time (ticks) */) : 0)}});	}),
+ <environmentaltech:erodium_crystal>       /*Input stack list [,] */], function(out, ins, cInfo) {	if(ins.timeinabottle.tag.timeData.storedTime >=
+ 20*60*7                                   /*Same as above */) { return
+ (<environmentaltech:erodium_crystal>*2)   /*Output stack */; }	return null; },	null);
+
+recipes.addShapeless(
+ "Timecraft EnvTech Crystal 3"             /*Name of recipe */,
+ (<environmentaltech:kyronite_crystal>*2)  /*Output stack */.withLore(["Consume " ~
+ "7 Minutes"                               /*Tooltip text */ ~" from bottle"]), [<randomthings:timeinabottle>.marked("timeinabottle").transformNew(function(item) {return item.updateTag({timeData: {storedTime: ((!isNull(item.tag) && !isNull(item.tag.timeData) && !isNull(item.tag.timeData.storedTime)) ? (item.tag.timeData.storedTime -
+ 20*60*7                                   /*Consumed Time (ticks) */) : 0)}});	}),
+ <environmentaltech:kyronite_crystal>      /*Input stack list [,] */], function(out, ins, cInfo) {	if(ins.timeinabottle.tag.timeData.storedTime >=
+ 20*60*7                                   /*Same as above */) { return
+ (<environmentaltech:kyronite_crystal>*2)  /*Output stack */; }	return null; },	null);
+
+recipes.addShapeless(
+ "Timecraft EnvTech Crystal 4"             /*Name of recipe */,
+ (<environmentaltech:pladium_crystal>*2)   /*Output stack */.withLore(["Consume " ~
+ "7 Minutes"                               /*Tooltip text */ ~" from bottle"]), [<randomthings:timeinabottle>.marked("timeinabottle").transformNew(function(item) {return item.updateTag({timeData: {storedTime: ((!isNull(item.tag) && !isNull(item.tag.timeData) && !isNull(item.tag.timeData.storedTime)) ? (item.tag.timeData.storedTime -
+ 20*60*7                                   /*Consumed Time (ticks) */) : 0)}});	}),
+ <environmentaltech:pladium_crystal>       /*Input stack list [,] */], function(out, ins, cInfo) {	if(ins.timeinabottle.tag.timeData.storedTime >=
+ 20*60*7                                   /*Same as above */) { return
+ (<environmentaltech:pladium_crystal>*2)   /*Output stack */; }	return null; },	null);
+
+recipes.addShapeless(
+ "Timecraft EnvTech Crystal 5"             /*Name of recipe */,
+ (<environmentaltech:ionite_crystal>*2)    /*Output stack */.withLore(["Consume " ~
+ "7 Minutes"                               /*Tooltip text */ ~" from bottle"]), [<randomthings:timeinabottle>.marked("timeinabottle").transformNew(function(item) {return item.updateTag({timeData: {storedTime: ((!isNull(item.tag) && !isNull(item.tag.timeData) && !isNull(item.tag.timeData.storedTime)) ? (item.tag.timeData.storedTime -
+ 20*60*7                                   /*Consumed Time (ticks) */) : 0)}});	}),
+ <environmentaltech:ionite_crystal>        /*Input stack list [,] */], function(out, ins, cInfo) {	if(ins.timeinabottle.tag.timeData.storedTime >=
+ 20*60*7                                   /*Same as above */) { return
+ (<environmentaltech:ionite_crystal>*2)    /*Output stack */; }	return null; },	null);
+
+recipes.addShapeless(
+ "Timecraft EnvTech Crystal 6"             /*Name of recipe */,
+ (<environmentaltech:aethium_crystal>*2)   /*Output stack */.withLore(["Consume " ~
+ "7 Minutes"                               /*Tooltip text */ ~" from bottle"]), [<randomthings:timeinabottle>.marked("timeinabottle").transformNew(function(item) {return item.updateTag({timeData: {storedTime: ((!isNull(item.tag) && !isNull(item.tag.timeData) && !isNull(item.tag.timeData.storedTime)) ? (item.tag.timeData.storedTime -
+ 20*60*7                                   /*Consumed Time (ticks) */) : 0)}});	}),
+ <environmentaltech:aethium_crystal>       /*Input stack list [,] */], function(out, ins, cInfo) {	if(ins.timeinabottle.tag.timeData.storedTime >=
+ 20*60*7                                   /*Same as above */) { return
+ (<environmentaltech:aethium_crystal>*2)   /*Output stack */; }	return null; },	null);
 
 
 # ###################################
@@ -70,52 +106,25 @@ recipes.addShapeless(
 # Tier 4
 # ###################################
 
-recipes.addShapeless(
-	"Timecraft Avatar of Ratlantis"         /* Name of recipe */, 
-	(<rats:idol_of_ratlantis>*2) /* Output stack */.withLore(["Consume " ~ 
-	"20 Hours"                   	     /* Tooltip text */ ~" from bottle"]), [<randomthings:timeinabottle>.marked("timeinabottle").transformNew(function(item) {return item.updateTag({timeData: {storedTime: ((!isNull(item.tag) && !isNull(item.tag.timeData) && !isNull(item.tag.timeData.storedTime)) ? (item.tag.timeData.storedTime - 
-	20*60*60*20 	 	              	     /* Consumed Time (ticks) */) : 0)}});	}),
-	<rats:idol_of_ratlantis>     /* Input stack list [,] */], function(out, ins, cInfo) {	if(ins.timeinabottle.tag.timeData.storedTime >= 
-	20*60*60*20	 	              	     /* Same as above */) { return 
-	(<rats:idol_of_ratlantis>*2) /* Output stack */; }	return null; },	null);
+// recipes.addShapeless(
+// 	"Timecraft Avatar of Ratlantis"         /* Name of recipe */, 
+// 	(<rats:idol_of_ratlantis>*2) /* Output stack */.withLore(["Consume " ~ 
+// 	"20 Hours"                   	     /* Tooltip text */ ~" from bottle"]), [<randomthings:timeinabottle>.marked("timeinabottle").transformNew(function(item) {return item.updateTag({timeData: {storedTime: ((!isNull(item.tag) && !isNull(item.tag.timeData) && !isNull(item.tag.timeData.storedTime)) ? (item.tag.timeData.storedTime - 
+// 	20*60*60*20 	 	              	     /* Consumed Time (ticks) */) : 0)}});	}),
+// 	<rats:idol_of_ratlantis>     /* Input stack list [,] */], function(out, ins, cInfo) {	if(ins.timeinabottle.tag.timeData.storedTime >= 
+// 	20*60*60*20	 	              	     /* Same as above */) { return 
+// 	(<rats:idol_of_ratlantis>*2) /* Output stack */; }	return null; },	null);
 
 
 # ###################################
 # Tier 5
 # ###################################
 
-recipes.addShapeless(
-	"Timecraft wyvern_helm"         /* Name of recipe */, 
-	(<draconicevolution:wyvern_helm>) /* Output stack */.withLore(["Consume " ~ 
-	"2 Days"                   	     /* Tooltip text */ ~" from bottle"]), [<randomthings:timeinabottle>.marked("timeinabottle").transformNew(function(item) {return item.updateTag({timeData: {storedTime: ((!isNull(item.tag) && !isNull(item.tag.timeData) && !isNull(item.tag.timeData.storedTime)) ? (item.tag.timeData.storedTime - 
-	20*60*60*24*2 	 	              	     /* Consumed Time (ticks) */) : 0)}});	}),
-	<draconicevolution:draconium_capacitor:1>, <ic2:quantum_helmet:26>     /* Input stack list [,] */], function(out, ins, cInfo) {	if(ins.timeinabottle.tag.timeData.storedTime >= 
-	20*60*60*24*2	 	              	     /* Same as above */) { return 
-	(<draconicevolution:wyvern_helm>) /* Output stack */; }	return null; },	null);
-
-recipes.addShapeless(
-	"Timecraft wyvern_chest"         /* Name of recipe */, 
-	(<draconicevolution:wyvern_chest>) /* Output stack */.withLore(["Consume " ~ 
-	"2 Days"                   	     /* Tooltip text */ ~" from bottle"]), [<randomthings:timeinabottle>.marked("timeinabottle").transformNew(function(item) {return item.updateTag({timeData: {storedTime: ((!isNull(item.tag) && !isNull(item.tag.timeData) && !isNull(item.tag.timeData.storedTime)) ? (item.tag.timeData.storedTime - 
-	20*60*60*24*2 	 	              	     /* Consumed Time (ticks) */) : 0)}});	}),
-	<draconicevolution:draconium_capacitor:1>, <ic2:quantum_chestplate:26>     /* Input stack list [,] */], function(out, ins, cInfo) {	if(ins.timeinabottle.tag.timeData.storedTime >= 
-	20*60*60*24*2	 	              	     /* Same as above */) { return 
-	(<draconicevolution:wyvern_chest>) /* Output stack */; }	return null; },	null);
-
-recipes.addShapeless(
-	"Timecraft wyvern_legs"         /* Name of recipe */, 
-	(<draconicevolution:wyvern_legs>) /* Output stack */.withLore(["Consume " ~ 
-	"2 Days"                   	     /* Tooltip text */ ~" from bottle"]), [<randomthings:timeinabottle>.marked("timeinabottle").transformNew(function(item) {return item.updateTag({timeData: {storedTime: ((!isNull(item.tag) && !isNull(item.tag.timeData) && !isNull(item.tag.timeData.storedTime)) ? (item.tag.timeData.storedTime - 
-	20*60*60*24*2 	 	              	     /* Consumed Time (ticks) */) : 0)}});	}),
-	<draconicevolution:draconium_capacitor:1>, <ic2:quantum_leggings:26>     /* Input stack list [,] */], function(out, ins, cInfo) {	if(ins.timeinabottle.tag.timeData.storedTime >= 
-	20*60*60*24*2	 	              	     /* Same as above */) { return 
-	(<draconicevolution:wyvern_legs>) /* Output stack */; }	return null; },	null);
-
-recipes.addShapeless(
-	"Timecraft wyvern_boots"         /* Name of recipe */, 
-	(<draconicevolution:wyvern_boots>) /* Output stack */.withLore(["Consume " ~ 
-	"2 Days"                   	     /* Tooltip text */ ~" from bottle"]), [<randomthings:timeinabottle>.marked("timeinabottle").transformNew(function(item) {return item.updateTag({timeData: {storedTime: ((!isNull(item.tag) && !isNull(item.tag.timeData) && !isNull(item.tag.timeData.storedTime)) ? (item.tag.timeData.storedTime - 
-	20*60*60*24*2 	 	              	     /* Consumed Time (ticks) */) : 0)}});	}),
-	<draconicevolution:draconium_capacitor:1>, <ic2:quantum_boots:26>     /* Input stack list [,] */], function(out, ins, cInfo) {	if(ins.timeinabottle.tag.timeData.storedTime >= 
-	20*60*60*24*2	 	              	     /* Same as above */) { return 
-	(<draconicevolution:wyvern_boots>) /* Output stack */; }	return null; },	null);
+// recipes.addShapeless(
+// 	"Timecraft wyvern_helm"         /* Name of recipe */, 
+// 	(<draconicevolution:wyvern_helm>) /* Output stack */.withLore(["Consume " ~ 
+// 	"2 Days"                   	     /* Tooltip text */ ~" from bottle"]), [<randomthings:timeinabottle>.marked("timeinabottle").transformNew(function(item) {return item.updateTag({timeData: {storedTime: ((!isNull(item.tag) && !isNull(item.tag.timeData) && !isNull(item.tag.timeData.storedTime)) ? (item.tag.timeData.storedTime - 
+// 	20*60*60*24*2 	 	              	     /* Consumed Time (ticks) */) : 0)}});	}),
+// 	<draconicevolution:draconium_capacitor:1>, <ic2:quantum_helmet:26>     /* Input stack list [,] */], function(out, ins, cInfo) {	if(ins.timeinabottle.tag.timeData.storedTime >= 
+// 	20*60*60*24*2	 	              	     /* Same as above */) { return 
+// 	(<draconicevolution:wyvern_helm>) /* Output stack */; }	return null; },	null);
