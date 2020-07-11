@@ -3,7 +3,7 @@
   
     "target-item": "exnihilocreatio:item_mesh",
     "target-meta": 4,
-    "target-count": 1,
+    "target-count": 3,
   
     "duration": 1200,
     "symmetrical": true,
@@ -13,8 +13,8 @@
   
     "input-types": {
       "a": {
-        "id": "actuallyadditions:block_crystal_empowered",
-        "meta": 2
+        "id": "minecraft:diamond_block",
+        "meta": 0
       }
     },
     "shape": [

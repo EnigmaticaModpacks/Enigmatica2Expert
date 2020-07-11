@@ -40,10 +40,10 @@ import mods.jei.JEI.removeAndHide as rh;
 # Sieve
 	recipes.remove(<exnihilocreatio:block_sieve>);
 	recipes.addShaped("Ex Nihilo Sieve",
-	<exnihilocreatio:block_sieve>, 
-	[[<ore:plateNickel>, <ore:itemEnrichedAlloy>, <ore:plateNickel>],
-	[<ore:plankWood>, <ore:gearMithril>, <ore:plankWood>], 
-	[<ore:stickWood>, null, <ore:stickWood>]]);
+	<exnihilocreatio:block_sieve>, [
+	[<ore:plankWood>, null, <ore:plankWood>],
+	[<botania:livingrock0slab>, <ore:alloyAdvanced>, <botania:livingrock0slab>],
+	[<ore:stickTreatedWood>, null, <ore:stickTreatedWood>]]);
 
 # Heavy Sieves
 	recipes.remove(<excompressum:heavy_sieve>);
@@ -139,4 +139,6 @@ import mods.jei.JEI.removeAndHide as rh;
 	
 
 # Remove Sieves (defined in CompactMachines)
-recipes.remove(<exnihilocreatio:item_mesh:*>);
+recipes.remove(<exnihilocreatio:item_mesh:2>);
+recipes.remove(<exnihilocreatio:item_mesh:3>);
+recipes.remove(<exnihilocreatio:item_mesh:4>);
