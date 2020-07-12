@@ -352,3 +352,16 @@ recipes.addShaped(<actuallyadditions:block_greenhouse_glass> * 3, [
 	[<actuallyadditions:item_fertilizer>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_fertilizer>],
 	[<actuallyadditions:item_crystal_empowered:1>, <ore:ingotModularium>, <actuallyadditions:item_crystal_empowered:1>],
 	[<actuallyadditions:item_fertilizer>, <liquid:crystal>, <actuallyadditions:item_fertilizer>]]);
+
+# Black quartz
+val crushExceptions = "except: IECrusher SagMill Pulverizer AACrusher MekCrusher";
+scripts.process.crush(<ore:gemQuartzBlack>, <actuallyadditions:item_dust:7>, crushExceptions, null, null);
+scripts.process.crush(<ore:blockBlackQuartz>, <actuallyadditions:item_dust:7> * 9, crushExceptions ~ " Manufactory", null, null);
+
+# Recycle Quark crystals
+scripts.process.crush(<quark:crystal:1>, <actuallyadditions:item_crystal_shard>   * 3, "no exceptions", null, null);
+scripts.process.crush(<quark:crystal:6>, <actuallyadditions:item_crystal_shard:1> * 3, "no exceptions", null, null);
+scripts.process.crush(<quark:crystal:5>, <actuallyadditions:item_crystal_shard:2> * 3, "no exceptions", null, null);
+scripts.process.crush(<quark:crystal:8>, <actuallyadditions:item_crystal_shard:3> * 3, "no exceptions", null, null);
+scripts.process.crush(<quark:crystal:4>, <actuallyadditions:item_crystal_shard:4> * 3, "no exceptions", null, null);
+scripts.process.crush(<quark:crystal>  , <actuallyadditions:item_crystal_shard:5> * 3, "no exceptions", null, null);

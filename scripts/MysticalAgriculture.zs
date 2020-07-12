@@ -730,7 +730,7 @@ for item in itemsToRemoveAndHide {
   recipes.addShaped("Mystical Agriculture Amber", <thaumcraft:amber> * 6, [[<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>],[<mysticalagriculture:amber_essence>,null,<mysticalagriculture:amber_essence>],[<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>]]);
 
 # Infusion crystals
-recipes.replaceAllOccurences(gemDiamondRat, <mysticalagriculture:infusion_crystal>.anyDamage(), <matc:inferiumcrystal>);
+recipes.replaceAllOccurences(<ore:gemDiamond>, <mysticalagriculture:infusion_crystal>.anyDamage(), <matc:inferiumcrystal>);
 
 # Mystical Creations Recipes
 recipes.addShaped(<extendedcrafting:material:33>*3, [[<mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>],[<mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>], [<mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>]]);
@@ -742,9 +742,9 @@ recipes.addShaped(<animania:friesian_cheese_wheel>, [[<mysticalcreations:cheese_
 recipes.addShaped(<forge:bucketfilled>.withTag({FluidName: "creosote", Amount: 1000}), [[null, <mysticalcreations:creosolite_essence>, null],[<mysticalcreations:creosolite_essence>, <minecraft:bucket>.noReturn(), <mysticalcreations:creosolite_essence>], [null, <mysticalcreations:creosolite_essence>, null]]);
 
 # Add Mystical Creations processing in Insolator
-scripts.process.grow(<mysticalcreations:creosolite_seeds>, <mysticalcreations:creosolite_essence> * 9, "No exceptions", <mysticalcreations:creosolite_seeds>, 100);
-scripts.process.grow(<mysticalcreations:cheese_seeds>, 		<mysticalcreations:cheese_essence> * 9,     "No exceptions", <mysticalcreations:cheese_seeds>, 100);
-scripts.process.grow(<mysticalcreations:ultimate_seeds>,   <mysticalcreations:ultimate_essence> * 9,   "No exceptions", <mysticalcreations:ultimate_seeds>, 100);
+scripts.process.grow(<mysticalcreations:creosolite_seeds>, <mysticalcreations:creosolite_essence> * 9, "No exceptions", <mysticalcreations:creosolite_seeds>, 1);
+scripts.process.grow(<mysticalcreations:cheese_seeds>, 		<mysticalcreations:cheese_essence> * 9,      "No exceptions", <mysticalcreations:cheese_seeds>, 1);
+scripts.process.grow(<mysticalcreations:ultimate_seeds>,   <mysticalcreations:ultimate_essence> * 9,   "No exceptions", <mysticalcreations:ultimate_seeds>, 1);
 
 # Recycling can
 scripts.process.recycleMetal(<mysticalagriculture:watering_can>, <mysticalagriculture:crafting:33> * 4,   <liquid:inferium> * (144*4), null);

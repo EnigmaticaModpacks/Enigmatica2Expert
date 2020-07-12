@@ -9,10 +9,10 @@ import crafttweaker.item.IIngredient;
 function saw(input as IIngredient, output as IItemStack, exceptions as string) {
   # BlockCutter should add all recipes.
   # All table recipes should be replaced
-  scripts.process.saw(input, output, "only: blockCutter strict: shapeless");
+  scripts.process.sawWood(input, output, "only: blockCutter strict: shapeless");
 
   # TE Sawmill generates x3 recipes automatically from craftingTable recipes so we add its in exceptions
-  scripts.process.saw(input, output, "except: TESawmill blockCutter shapeless AdvRockCutter " ~ exceptions);
+  scripts.process.sawWood(input, output, "except: TESawmill blockCutter shapeless AdvRockCutter " ~ exceptions);
 }
 
 

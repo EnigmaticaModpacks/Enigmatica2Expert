@@ -6,6 +6,8 @@ import mods.jei.JEI.removeAndHide as rh;
 import mods.immersivetweaker.Recycling;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.data.IData;
+import crafttweaker.event.CommandEvent;
+import crafttweaker.player.IPlayer;
 
 
 #priority -1
@@ -34,6 +36,7 @@ rh(<immersivecables:wire_coil:3>);
 
 # Make Quicksand
 mods.inworldcrafting.FluidToFluid.transform(<liquid:sand>, <liquid:blueslime>, [<ore:soulSand>]);
+scripts.process.solution([<ore:soulSand>], [<liquid:blueslime>*1000], [<liquid:sand>*1000], null, "except: highoven");
 
 # Sandwiches
 # var anyDragonsteelSword as IIngredient = 
@@ -50,9 +53,6 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <culinaryconstruct:sandwich_sta
 	[<cookingforblockheads:counter>, <cookingforblockheads:cooking_table>, <cookingforblockheads:counter>], 
 	[<cookingforblockheads:counter>, <cookingforblockheads:counter>, <cookingforblockheads:counter>]
 ]);
-
-# Upgrade for laser (laser is deprecated)
-rh(<tmemes:electric_upgrade:1>);
 
 # Peacock fan
 recipes.addShaped(<twilightforest:peacock_fan>, [
@@ -79,6 +79,32 @@ mods.inworldcrafting.FluidToItem.transform(<ic2:dust:3>, <fluid:water>, [<ore:du
 # Lesser blaze powder
 recipes.remove(<minecraft:blaze_powder> * 2);
 recipes.addShapeless("Blaze Powder", <minecraft:blaze_powder>, [<minecraft:blaze_rod>]);
+
+# ######################################################################
+#
+# Command Listener
+#
+# ######################################################################
+
+// events.onCommand(function(event as CommandEvent) {
+// 	print("Entering [events.onCommand]...");
+// 	val command = event.command;
+// 	if(isNull(command)) { return; }
+	
+// 	if (command.name == "secretelexirtest") {
+// 		val elexir = <rustic:elixir>.withTag({ElixirEffects:[
+// 			{Effect:"minecraft:speed",Duration:1800000,Amplifier:8},
+// 			{Effect:"rustic:ironskin",Duration:9600000,Amplifier:8}],
+// 			ench: [{id:0, lvl:0}], HideFlags: 1});
+
+// 		val sndr = event.commandSender;
+// 		val entItem = elexir.createEntityItem(sndr.world,
+// 			sndr.position.getX(), sndr.position.getY(), sndr.position.getZ());
+// 		val spawnSucces = sndr.world.spawnEntity(entItem);
+// 	}
+	
+// 	return;
+// });
 
 # ######################################################################
 #

@@ -86,14 +86,14 @@ function saw(input as IIngredient, output as IItemStack, exceptions as string) {
 # 📦 → 📦
 function sawWood(input as IIngredient, output as IItemStack, exceptions as string) {
 
-  val extra = <ore:dustWood>.firstItem;
+  val pulp = <ore:dustWood>.firstItem;
   
-  work(["shapeless"],    exceptions, [input], null, [output * 2], null, extra, null);
-  work(["BlockCutter"],  exceptions, [input], null, [output * 4], null, extra, null);
-  work(["mekSawmill"],   exceptions, [input], null, [output * 4], null, extra, null);
-  work(["manufactory"],  exceptions, [input], null, [output * 5], null, extra, null);
-  work(["TESawmill"],    exceptions, [input], null, [output * 6], null, extra, null);
-  work(["AdvRockCutter"],exceptions, [input], null, [output *10], null, extra, null);
+  work(["shapeless"],    exceptions, [input], null, [output * 2], null, [pulp], null);
+  work(["BlockCutter"],  exceptions, [input], null, [output * 4], null, [pulp], null);
+  work(["mekSawmill"],   exceptions, [input], null, [output * 4], null, [pulp], null);
+  work(["manufactory"],  exceptions, [input], null, [output * 5], null, [pulp], null);
+  work(["TESawmill"],    exceptions, [input], null, [output * 6], null, [pulp], null);
+  work(["AdvRockCutter"],exceptions, [input], null, [output *10], null, [pulp], null);
 }
 
 # Crush (grind) item to get it dusts and byproducts
@@ -135,9 +135,9 @@ function alloy(input as IIngredient[], output as IItemStack, exceptions as strin
 function grow(input as IIngredient, output as IItemStack, exceptions as string, 
       secondaryOutput as IItemStack, secondaryChance as float) {
 
-  workEx("Insolator", exceptions, [input], null, [iF(output, 0.333f), <thermalfoundation:fertilizer>  ], null, [secondaryOutput], [secondaryChance], {energy: 4800});
-  workEx("Insolator", exceptions, [input], null, [iF(output, 0.666f), <thermalfoundation:fertilizer:1>], null, [secondaryOutput], [secondaryChance], {energy: 7200});
-  workEx("Insolator", exceptions, [input], null, [output            , <thermalfoundation:fertilizer:2>], null, [secondaryOutput], [secondaryChance], {energy: 9600});
+  workEx("Insolator", exceptions, [input, <thermalfoundation:fertilizer>  ], null, [iF(output, 0.333f)], null, [secondaryOutput], [secondaryChance], {energy: 4800});
+  workEx("Insolator", exceptions, [input, <thermalfoundation:fertilizer:1>], null, [iF(output, 0.666f)], null, [secondaryOutput], [secondaryChance], {energy: 7200});
+  workEx("Insolator", exceptions, [input, <thermalfoundation:fertilizer:2>], null, [output            ], null, [secondaryOutput], [secondaryChance], {energy: 9600});
 }
 
 # Crushing rocks (like granite, andesite, etc..) to obtain dusts

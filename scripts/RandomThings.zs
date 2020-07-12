@@ -138,3 +138,9 @@ recipes.addShaped(<randomthings:spectrelens>, [
 	[<randomthings:ingredient:3>, <avaritia:resource>, <randomthings:ingredient:3>],
 	[<ore:crystalLitherite>, <advancedrocketry:blocklens>, <ore:crystalLitherite>],
 	[<randomthings:ingredient:3>, <avaritia:resource>, <randomthings:ingredient:3>]]);
+
+# Make saplings with MA essence
+recipes.addShaped("Spectre Saplings", <randomthings:spectresapling> * 10, [
+	[null, <mysticalagriculture:nature_essence>, null],
+	[<mysticalagriculture:wood_essence>, <randomthings:ingredient:2>, <mysticalagriculture:wood_essence>],
+	[null, <mysticalagriculture:nature_essence>, null]]);

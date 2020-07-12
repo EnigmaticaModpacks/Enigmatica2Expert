@@ -177,7 +177,7 @@ for input, output in itemsToUnify {
 	recipes.remove(<mekanism:machineblock3>);
 	recipes.addShaped("Quantum Entangloporter", <mekanism:machineblock3>, 
 	[[<mekanism:basicblock:7>, <ore:heartDragon>, <mekanism:basicblock:7>],
-	[<forestry:chipsets:3>.withTag({T: 3 as short}), <mekanism:machineblock:11>|<mekanism:machineblock:11>.withTag({}), <forestry:chipsets:3>.withTag({T: 3 as short})], 
+	[<forestry:chipsets:3>.withTag({}), <mekanism:machineblock:11>|<mekanism:machineblock:11>.withTag({}), <forestry:chipsets:3>.withTag({})], 
 	[<mekanism:basicblock:7>, <rftools:matter_beamer>, <mekanism:basicblock:7>]]);
 
 # Turbine Casing
@@ -381,9 +381,15 @@ mods.mechanics.addTubeRecipe([<mekanism:basicblock:2>] as IItemStack[], <liquid:
 mods.mechanics.addTubeRecipe([<mekanism:basicblock:4>] as IItemStack[], <liquid:refinedglowstone> * 1000);
 
 # Add advanced liquid recipes
-scripts.process.solution([<thermalfoundation:material:770>], [<liquid:diamond> * 66], [<liquid:refinedobsidian> * 144], "except: vat");
-scripts.process.solution([<mekanism:dust:2>], [<liquid:glowstone> * 250], [<liquid:refinedglowstone> * 144], "except: vat");
+scripts.process.solution([<thermalfoundation:material:770>], [<liquid:diamond> * 66], [<liquid:refinedobsidian> * 144], null, "except: vat");
+scripts.process.solution([<mekanism:dust:2>], [<liquid:glowstone> * 250], [<liquid:refinedglowstone> * 144], null, "except: vat");
 
-# Try to fix cubes uncraftable in AE
-remakeEx(<mekanism:energycube>.withTag({tier: 1}), [[<ore:alloyAdvanced>, <ore:battery>, <ore:alloyAdvanced>],[<ore:ingotOsmium>, <mekanism:energycube>.withTag({tier: 0}), <ore:ingotOsmium>], [<ore:alloyAdvanced>, <ore:battery>, <ore:alloyAdvanced>]]);
-# remakeEx(<mekanism:energycube>.withTag({tier: 2}), [[<ore:alloyElite>, <ore:battery>, <ore:alloyElite>],[<ore:ingotGold>, <mekanism:energycube>.withTag({tier: 1}), <ore:ingotGold>], [<ore:alloyElite>, <ore:battery>, <ore:alloyElite>]]);
+# Fix cubes uncraftable in AE
+# Just remake original crafts, but without additional security tags
+remake("Mek Cube 1", <mekanism:energycube>.withTag({tier: 1}), [[<ore:alloyAdvanced>, <ore:battery>, <ore:alloyAdvanced>],[<ore:ingotOsmium>, <mekanism:energycube>.withTag({tier: 0}), <ore:ingotOsmium>], [<ore:alloyAdvanced>, <ore:battery>, <ore:alloyAdvanced>]]);
+remake("Mek Cube 2", <mekanism:energycube>.withTag({tier: 2}), [[<ore:alloyElite>, <ore:battery>, <ore:alloyElite>],[<ore:ingotGold>, <mekanism:energycube>.withTag({tier: 1}), <ore:ingotGold>], [<ore:alloyElite>, <ore:battery>, <ore:alloyElite>]]);
+remake("Mek Cube 3", <mekanism:energycube>.withTag({tier: 3}), [[<ore:alloyUltimate>, <ore:battery>, <ore:alloyUltimate>], [gemDiamondRat, <mekanism:energycube>.withTag({tier: 2}), gemDiamondRat], [<ore:alloyUltimate>, <ore:battery>, <ore:alloyUltimate>]]);
+
+# Also Teleporter
+recipes.remove(<mekanism:machineblock:11>);
+recipes.addShaped("Mek Teleporter", <mekanism:machineblock:11>.withTag({}), [[<ore:circuitBasic>, <mekanism:basicblock:8>, <ore:circuitBasic>],[<mekanism:basicblock:8>, <mekanism:teleportationcore>, <mekanism:basicblock:8>], [<ore:circuitBasic>, <mekanism:basicblock:8>, <ore:circuitBasic>]]);

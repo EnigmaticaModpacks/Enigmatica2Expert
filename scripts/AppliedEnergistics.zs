@@ -232,4 +232,4 @@ print("--- loading AppliedEnergistics.zs ---");
 ]);
 
 # Sky stone Dust
-scripts.process.crush(<appliedenergistics2:sky_stone_block>, <appliedenergistics2:material:45>, "Except: AEGrinder", null, null);
+scripts.process.crush(<appliedenergistics2:sky_stone_block>, <appliedenergistics2:material:45>, "Except: AEGrinder Pulverizer", null, null);

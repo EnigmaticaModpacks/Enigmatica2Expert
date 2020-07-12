@@ -1,5 +1,9 @@
-import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import mods.jei.JEI.removeAndHide as rh;
+import mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput as ncAlloyRm;
+import scripts.process.solution;
+
 #modloaded enderio
 
 # Cheaper decorations
@@ -237,7 +241,7 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<enderio:item_material:72>, <ore:
 	<immersiveengineering:material:7>, 20*4, 2560, [<ore:cropNetherWart>*4, <ore:clay>*6], "Alloying");
 
 # Remake binder
-remake("Conduit Binder Composite", <enderio:item_material:22> * 8, [
+remake("Conduit Binder Composite", <enderio:item_material:22> * 12, [
 	[<ore:dust>, <ore:materialWoolEnergetic>, <ore:dust>],
 	[<ore:dustClay>, <liquid:sand>*1000, <ore:dustClay>],
 	[<ore:dust>, <ore:materialWoolEnergetic>, <ore:dust>]]);
@@ -259,3 +263,64 @@ scripts.process.alloy([<minecraft:glowstone_dust>, <minecraft:clay_ball>], <ende
 # Harder Vibrant Alloy
 mods.thermalexpansion.InductionSmelter.removeRecipe(<enderio:item_alloy_ingot:1>, <minecraft:ender_pearl>);
 scripts.process.alloy([<ore:ingotEnergeticAlloy>, <extendedcrafting:material:49>], <enderio:item_alloy_ingot:2> * 2, "ONLY: induction STRICT: alloySmelter");
+
+# Remove alloy recipes made in High Oven
+ncAlloyRm(<enderio:item_alloy_ingot>);
+ncAlloyRm(<enderio:item_alloy_ingot:1>);
+ncAlloyRm(<enderio:item_alloy_ingot:2>);
+ncAlloyRm(<enderio:item_alloy_ingot:3>);
+ncAlloyRm(<enderio:item_alloy_ingot:4>); # conductive Iron
+ncAlloyRm(<enderio:item_alloy_ingot:5>);
+ncAlloyRm(<enderio:item_alloy_ingot:6>);
+ncAlloyRm(<enderio:item_alloy_ingot:7>);
+ncAlloyRm(<enderio:item_alloy_ingot:8>);
+ncAlloyRm(<enderio:item_alloy_ingot:9>*3);
+
+
+
+val db as IIngredient = <ore:dustBedrock>;
+
+val fake_iron_variations = 
+<thermalfoundation:material:1>   | <thermalfoundation:material:64>         | <thermalfoundation:material:65>  |
+<thermalfoundation:material:66>  | <thermalfoundation:material:67>         | <thermalfoundation:material:68>  |
+<thermalfoundation:material:69>  | <thermalfoundation:material:70>         | <thermalfoundation:material:71>  |
+<thermalfoundation:material:72>  | <astralsorcery:itemcraftingcomponent:2> | <mekanism:dust:2>                |
+<nuclearcraft:dust:3>            | <nuclearcraft:dust:5>                   | <nuclearcraft:dust:7>            |
+<nuclearcraft:compound:2>        | <psi:material>                          | <thermalfoundation:material:96>  |
+<thermalfoundation:material:97>  | <thermalfoundation:material:98>         | <thermalfoundation:material:99>  |
+<thermalfoundation:material:100> | <thermalfoundation:material:101>        | <thermalfoundation:material:102> |
+<thermalfoundation:material:103>;
+
+# EnderIO simple alloys
+solution([db, fake_iron_variations      			      ], [<liquid:iron>      *72 ], [<liquid:construction_alloy>*216], [0.5, 1,    2700], "only: highoven");
+solution([db, <ore:dustObsidian> 							      ], [<liquid:steel>     *144], [<liquid:dark_steel>        *144], [0.5, 1,    5500], "only: highoven");
+solution([db, <ore:dustEndstone>, <ore:dustObsidian>], [<liquid:dark_steel>*144], [<liquid:end_steel>         *144], [0.5, 1, 1, 5500], "only: highoven");
+
+# Oxidisers on choose
+val ox as IIngredient = <ore:dustCyanite> | <ore:itemSlagRich> | <ore:dustPsi>;
+
+# EnderIO hard alloys
+solution([db, <mysticalagriculture:crafting:28>, ox], [<liquid:gold>*144           ], [<liquid:soularium> *144       ], [0.5, 1, 0.25, 5100], "only: highoven");
+solution([db, <ore:itemSilicon>                , ox], [<liquid:steel>*144          ], [<liquid:electrical_steel> *144], [0.5, 1, 0.25, 3000], "only: highoven");
+solution([db, <ore:dustEnergetic>              , ox], [<liquid:gold>*144           ], [<liquid:energetic_alloy> *144 ], [0.5, 1, 0.25, 3600], "only: highoven");
+solution([db, <extendedcrafting:material:49>   , ox], [<liquid:energetic_alloy>*144], [<liquid:vibrant_alloy> *144   ], [0.5, 1, 0.25, 5400], "only: highoven");
+solution([db, <ore:dustRedstone>               , ox], [<liquid:tin>*144            ], [<liquid:redstone_alloy> *144  ], [0.5, 1, 0.25, 3600], "only: highoven");
+solution([db, <ore:dustRedstone>               , ox], [<liquid:iron>*144           ], [<liquid:conductive_iron> *144 ], [0.5, 1, 0.25, 4200], "only: highoven");
+solution([db, <ore:dustEnder>                  , ox], [<liquid:silver>*144         ], [<liquid:pulsating_iron> *144  ], [0.5, 1, 0.25, 5500], "only: highoven");
+
+# Cheaper conduit facades
+recipes.removeByRecipeName("enderio:conduit_facade_transparent");
+val BDR = <ore:itemConduitBinder>;
+recipes.addShaped(<enderio:item_conduit_facade:2> * 8, [
+	[BDR, BDR, BDR],
+	[BDR, <ore:fusedQuartz>, BDR],
+	[BDR, BDR, BDR]]);
+
+recipes.removeByRecipeName("enderio:conduit_facade");
+recipes.addShaped(<enderio:item_conduit_facade> * 8, [
+	[BDR, BDR, BDR],
+	[BDR, null, BDR],
+	[BDR, BDR, BDR]]);
+
+# Nutritious stick craft
+mods.inworldcrafting.FluidToItem.transform(<enderio:item_material:8>, <fluid:nutrient_distillation>, [<minecraft:stick>]);

@@ -36,7 +36,7 @@ import mods.contenttweaker.conarm.ExtendedMaterialBuilder;
 #
 # ######################################################################
 
-
+/* 
 val wispwhisperTrait = TraitBuilder.create("wispwhisper");
 wispwhisperTrait.onHit =
   function (trait, tool, attacker, target, damage, isCritical) {
@@ -99,7 +99,7 @@ potato.addMaterialTrait("wispwhisper");
 potato.addMaterialTrait("curiosity");
 potato.addProjectileMaterialStats();
 potato.register();
-
+ */
 
 
 

@@ -1,6 +1,5 @@
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded computercraft
-print("--- loading ComputerCraft.zs ---");
 
 	rh(<computercraft:turtle:1>);
 	rh(<computercraft:turtle_advanced>.withTag({leftUpgrade: 5 as short}));
@@ -37,4 +36,8 @@ print("--- loading ComputerCraft.zs ---");
 	recipes.remove(<computercraft:pocket_computer:1>);
 	mods.immersiveengineering.MetalPress.addRecipe(<computercraft:pocket_computer:1>, <computercraft:computer:16384>, <immersiveengineering:mold:0>, 2000);
 
-print("--- ComputerCraft.zs initialized ---");
+# Get rid of recipe that uses every weapon in game
+remakeEx(<plethora:module:1>, [
+	[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],
+	[<ore:blockGlass>, <ore:gemDiamond>, <actuallyadditions:block_laser_relay>],
+	[null, null, <ore:ingotIron>]]);

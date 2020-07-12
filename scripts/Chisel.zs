@@ -36,6 +36,11 @@ for i in 0 to 16 {
 	addVariation("alabaster " ~ i, <environmentalmaterials:alabaster_tiles>.definition.makeStack(i));
 }
 
+addVariation("hardened_stone", <environmentalmaterials:hardened_stone>);
+addVariation("hardened_stone", <environmentalmaterials:hardened_stone_paver>);
+addVariation("hardened_stone", <environmentalmaterials:hardened_stone_bricks>);
+addVariation("hardened_stone", <environmentalmaterials:hardened_stone_tiles>);
+
 # Sonar Core
 val sonarColors as string[] = [
 	"normal",	"lightgrey", "plain", "lime", "blue",

@@ -22,8 +22,8 @@
 		"extended":
         {
             "image" : "modpack:textures/gui/extended.png",
-            "posX" : -20,
-            "posY" : 100,
+            "posX" : -17,
+            "posY" : 125,
             "width" : 200,
             "height" : 32,
             "alignment" : "top_center"

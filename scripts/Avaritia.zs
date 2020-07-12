@@ -114,17 +114,13 @@ print("--- loading Avaritia.zs ---");
 # Skullfire Sword
  	mods.avaritia.ExtremeCrafting.remove(<avaritia:skullfire_sword>);
 	mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:skullfire_sword>, [
-	[null, null, null, null, null, null, null, <ore:ingotCrystalMatrix>, <minecraft:beacon>], 
-	[null, null, null, null, null, null, <ore:ingotCrystalMatrix>, <ore:rodBlaze>, <ore:ingotCrystalMatrix>], 
-	[null, null, null, null, null, <ore:ingotCrystalMatrix>, <ore:rodBlaze>, <ore:ingotCrystalMatrix>, null], 
-	[null, null, null, null, <ore:boneWither>, <ore:rodBlaze>, <ore:ingotCrystalMatrix>, null, null], 
-	[null, <tconstruct:wide_guard>.withTag({Material: "bone"}), null, <ore:ingotCrystalMatrix>, <ore:rodBlaze>, <ore:boneWither>, null, null, null], 
-	[null, null, <tconstruct:wide_guard>.withTag({Material: "bone"}), <ore:ingotCrystalMatrix>, <ore:ingotCrystalMatrix>, null, null, null, null], 
-	[null, null, <ore:blockMagicalWood>, <tconstruct:wide_guard>.withTag({Material: "bone"}), null, null, null, null, null], 
-	[null, <ore:blockMagicalWood>, null, null, <tconstruct:wide_guard>.withTag({Material: "bone"}), null, null, null, null], 
-	[<ore:netherStar>, null, null, null, null, null, null, null, null]
-	]);
-		
+	[null, <minecraft:enchanted_book>, null, null, <bloodmagic:lava_crystal>], 
+	[null, null, null, <randomthings:obsidianskull>, null], 
+	[null, <tconstruct:wide_guard>, <tconstruct:cleaver>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 7.2 as float, FreeModifiers: 3, Durability: 2088, HarvestLevel: 3, Attack: 11.58 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 7.2 as float, FreeModifiers: 2, Durability: 2088, HarvestLevel: 3, Attack: 11.58 as float}, Special: {Categories: ["tool", "weapon"]}, TinkerData: {Materials: ["fierymetal", "fierymetal", "fierymetal", "fierymetal"], Modifiers: ["beheading_cleaver", "toolleveling"]}, Modifiers: [{identifier: "twilit", color: -142243, level: 1}, {identifier: "flammable", color: -142243, level: 1}, {identifier: "autosmelt", color: -142243, level: 1}, {identifier: "superheat", color: -142243, level: 1}, {identifier: "beheading_cleaver", color: 1070923, level: 2}, {identifier: "toolleveling", color: 16777215, level: 1}], Traits: ["twilit", "flammable", "autosmelt", "superheat", "toolleveling"]}), null, null], 
+	[null, <tconstruct:tough_tool_rod>, <tconstruct:wide_guard>, null, <minecraft:enchanted_book>], 
+	[<ore:netherStar>, null, null, null, null]
+]);
+
 # Ultimate Stew
 	mods.extendedcrafting.TableCrafting.addShapeless(4, 
 	<avaritia:ultimate_stew> * 9,  

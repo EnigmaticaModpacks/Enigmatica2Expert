@@ -197,3 +197,9 @@ remakeEx(<extrautils2:chunkloader>, [
 	[<ore:stickTreatedWood>, <ore:eyeofredstone>, <ore:stickTreatedWood>],
 	[<ore:stickTreatedWood>, <extrautils2:goldenlasso>.withTag({Animal: {id:"minecraft:villager"}}), <ore:stickTreatedWood>],
 	[null, <ore:stickTreatedWood>, null]]);
+
+# Fix generator (probably ench table is invisible because of Quark ench changes)
+remakeEx(<extrautils2:machine>.withTag({Type: "extrautils2:generator_enchant"}), [
+	[<ore:blockMagicalWood>, <ore:blockMagicalWood>, <ore:blockMagicalWood>],
+	[<ore:blockMagicalWood>, <minecraft:enchanting_table>, <ore:blockMagicalWood>],
+	[<ore:dustRedstone>, <extrautils2:machine>.withTag({Type: "extrautils2:generator"}), <ore:dustRedstone>]]);

@@ -382,3 +382,20 @@ remakeEx(<ironbackpacks:backpack>.withTag({packInfo: {type: "ironbackpacks:diamo
 	[<ore:chest>, <ironbackpacks:backpack>.withTag({packInfo: {type: "ironbackpacks:gold", spec: "STORAGE"}}), <ore:chest>],
 	[gemDiamondRat, gemDiamondRat, gemDiamondRat]
 	]);
+
+
+# *======= Traveler's Backpacks =======*
+recipes.remove(<travelersbackpack:hose>);
+recipes.addShaped(<travelersbackpack:hose>, [
+	[<travelersbackpack:hose_nozzle>, <ore:itemRubber>, <ore:itemRubber>],
+	[null, null, <ore:itemRubber>],
+	[null, null, <ore:dyeGreen>]]);
+
+recipes.remove(<travelersbackpack:backpack_tank>);
+recipes.addShaped(<travelersbackpack:backpack_tank>, [
+	[<ic2:casing:3>],
+	[<openblocks:tank>],
+	[<ic2:casing:3>]]);
+
+# Arrows recycle
+scripts.process.crush(<minecraft:arrow>, <minecraft:flint>, "no exceptions", [<ore:dustWood>.firstItem], [0.2f]);

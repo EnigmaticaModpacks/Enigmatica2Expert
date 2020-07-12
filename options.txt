@@ -5,7 +5,7 @@ fov:0.5
 gamma:0.59859157
 saturation:0.0
 renderDistance:15
-guiScale:4
+guiScale:3
 particles:0
 bobView:true
 anaglyph3d:false
@@ -94,14 +94,12 @@ key_Hub Expand Key:0
 key_Change Caster Focus:34
 key_Misc Caster Toggle:0
 key_keybind.baublesinventory:0
-key_quark.keybind.toggleAutojump:0
 key_quark.keybind.dropoff:0
 key_quark.keybind.chestSort:0
 key_quark.keybind.chestDropoff:0
 key_quark.keybind.chestMerge:0
 key_quark.keybind.chestRestock:0
 key_quark.keybind.chestExtract:0
-key_quark.keybind.lockBuilding:33:SHIFT
 key_quark.emote.no:0
 key_quark.emote.yes:0
 key_quark.emote.wave:0
@@ -120,6 +118,8 @@ key_quark.emote.dab:0
 key_quark.emote.jet:0
 key_quark.emote.exorcist:0
 key_quark.emote.zombie:0
+key_quark.keybind.lockBuilding:33:SHIFT
+key_quark.keybind.toggleAutojump:0
 key_key.toggle_shaders:0
 key_bloodmagic.keybind.open_holding:53:CONTROL
 key_bloodmagic.keybind.cycle_holding_pos:0
@@ -197,30 +197,6 @@ key_key.columnbardown:27
 key_key.keyExtraInvo:0
 key_key.keyWheel:0
 key_key.keyExtraCraftin:0
-key_key.toggleLiquids:38
-key_key.toggleVisible:0
-key_key.aperture.profile.toggle:25
-key_key.aperture.profile.start:0
-key_key.aperture.profile.stop:45
-key_key.aperture.profile.point:0
-key_key.aperture.roll.add:0
-key_key.aperture.roll.reduce:0
-key_key.aperture.roll.reset:0
-key_key.aperture.fov.add:0
-key_key.aperture.fov.reduce:0
-key_key.aperture.fov.reset:0
-key_key.aperture.control.stepUp:0
-key_key.aperture.control.stepDown:0
-key_key.aperture.control.stepLeft:0
-key_key.aperture.control.stepRight:0
-key_key.aperture.control.stepFront:0
-key_key.aperture.control.stepBack:0
-key_key.aperture.control.rotateUp:0
-key_key.aperture.control.rotateDown:0
-key_key.aperture.control.rotateLeft:0
-key_key.aperture.control.rotateRight:0
-key_key.aperture.camera_editor:46
-key_key.aperture.smooth_camera:0
 key_key.dragon_fireAttack:0
 key_key.dragon_strike:-96
 key_key.dragon_down:44
@@ -310,6 +286,8 @@ key_key.toolbelt.open:45
 key_key.toolbelt.cycle.left:0
 key_key.toolbelt.cycle.right:0
 key_key.toolbelt.slot:18:SHIFT
+key_keys.travelersBackpack.inventory:46:SHIFT
+key_keys.travelersBackpack.toggle_tank:15:SHIFT
 key_key.vaultopic.view:34
 key_key.vaultopic.vice:47
 key_Toggle Jetpack:0

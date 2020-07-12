@@ -107,32 +107,30 @@ function avdRockXmlRecipe(namePretty as string,
   var out_name as string = null;
 
   # Inputs
-  if(!isNull(inputItems)) { for jj in 0 to inputItems.length {
-      val in_it = inputItems[jj].itemArray[0];
+  if(!isNull(inputItems)) { for ii in inputItems { if(ii.items.length > 0) {
+      val in_it = ii.items[0];
       in_name = (isNull(in_name) ? in_it.displayName : (in_name ~ "+"));
-      s = s ~ '    <itemStack>' ~ in_it.definition.id ~ " " ~ in_it.amount ~ " " ~ in_it.damage ~ '</itemStack>\n';
-  }}
-  if(!isNull(inputLiquids)) { for jj in 0 to inputLiquids.length {
-      val in_it = inputLiquids[jj];
-      in_name = (isNull(in_name) ? in_it.displayName : (in_name ~ "+"));
-      s = s ~ '    <fluidStack>' ~ in_it.name ~ " " ~ in_it.amount ~'</fluidStack>\n';
+      s = s ~ '    <itemStack>' ~ in_it.definition.id ~ " " ~ ii.amount ~ " " ~ in_it.damage ~ '</itemStack>\n';
+  }}}
+  if(!isNull(inputLiquids)) { for ii in inputLiquids {
+      in_name = (isNull(in_name) ? ii.displayName : (in_name ~ "+"));
+      s = s ~ '    <fluidStack>' ~ ii.name ~ " " ~ ii.amount ~'</fluidStack>\n';
   }}
 
   # Outputs
   s = s ~ '    </input><output>\n';
-  if(!isNull(outputItems)) { for jj in 0 to outputItems.length {
-      val out_it = outputItems[jj].itemArray[0];
+  if(!isNull(outputItems)) { for ii in outputItems { if(ii.items.length > 0) {
+      val out_it = ii.items[0];
       out_name = (isNull(out_name) ? out_it.displayName : (out_name ~ "+"));
-      s = s ~ '    <itemStack>' ~ out_it.definition.id ~ " " ~ out_it.amount ~ " " ~ out_it.damage ~ '</itemStack>\n';
-  }}
-  if(!isNull(outputLiquids)) { for jj in 0 to outputLiquids.length {
-      val out_it = outputLiquids[jj];
-      out_name = (isNull(out_name) ? out_it.displayName : (out_name ~ "+"));
-      s = s ~ '    <fluidStack>' ~ out_it.name ~ " " ~ out_it.amount ~ '</fluidStack>\n';
+      s = s ~ '    <itemStack>' ~ out_it.definition.id ~ " " ~ ii.amount ~ " " ~ out_it.damage ~ '</itemStack>\n';
+  }}}
+  if(!isNull(outputLiquids)) { for ii in outputLiquids {
+      out_name = (isNull(out_name) ? ii.displayName : (out_name ~ "+"));
+      s = s ~ '    <fluidStack>' ~ ii.name ~ " " ~ ii.amount ~ '</fluidStack>\n';
   }}
   s = s ~ '    </output></Recipe>';
 
-  # Add prefix (reversed lines)
+  # Add prefix (reverse order)
   s = '  <Recipe timeRequired="10" power ="40000"><input>\n' ~ s;
   s = '  <!-- [' ~ out_name ~ '] from [' ~ in_name ~ '] -->\n' ~ s;
   s = 'process.work AdvRocketry [' ~ namePretty ~ '] recipe. Add in XML file manually\n' ~ s;

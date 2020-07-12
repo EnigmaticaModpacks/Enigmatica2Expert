@@ -213,14 +213,14 @@ ScrapBox.addDrop(<actuallyadditions:item_crystal_shard:4>, 0.1F);
 ScrapBox.addDrop(<actuallyadditions:item_crystal_shard:5>, 0.1F);
 ScrapBox.addDrop(<actuallyadditions:item_crystal_shard>, 0.1F);
 ScrapBox.addDrop(<extrautils2:klein>, 0.1F);
-ScrapBox.addDrop(<forestry:chipsets>.withTag({T: 0 as short}), 0.1F);
+ScrapBox.addDrop(<forestry:chipsets>.withTag({}), 0.1F);
 ScrapBox.addDrop(<immersiveengineering:material:26>, 0.1F);
 ScrapBox.addDrop(<psi:cad_colorizer_:17>, 0.1F);
-ScrapBox.addDrop(<forestry:chipsets:1>.withTag({T: 1 as short}), 0.06F);
+ScrapBox.addDrop(<forestry:chipsets:1>.withTag({}), 0.06F);
 ScrapBox.addDrop(<thermalexpansion:frame:64>, 0.05F);
-ScrapBox.addDrop(<forestry:chipsets:2>.withTag({T: 2 as short}), 0.04F);
+ScrapBox.addDrop(<forestry:chipsets:2>.withTag({}), 0.04F);
 ScrapBox.addDrop(<rftoolsdim:dimlet_parcel>, 0.03F);
-ScrapBox.addDrop(<forestry:chipsets:3>.withTag({T: 3 as short}), 0.01F);
+ScrapBox.addDrop(<forestry:chipsets:3>.withTag({}), 0.01F);
 
 # Energy crystal compat
 scripts.process.compress(<ic2:dust:6> * 9, <ic2:energy_crystal:27>, "except: compressor");

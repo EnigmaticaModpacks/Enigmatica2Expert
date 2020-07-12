@@ -593,14 +593,14 @@ function workEx(machineNameAnyCase as string, exceptions as string,
         # Computing chance of consuming additionals
         # Last chance should determine temperature
         #   if no chance provided, its 100%
-        var v = arrN_float(extraChance, 0) as int * 100;
+        var v = (arrN_float(extraChance, 0) * 100) as int;
         val exChLen = !isNull(extraChance) ? extraChance.length : 0;
         var ch0 as int = (exChLen > 1 && v > 0) ? v : 100;
 
-        v = arrN_float(extraChance, 1) as int * 100;
+        v = (arrN_float(extraChance, 1) * 100) as int;
         var ch1 as int = (exChLen > 2 && v > 0) ? v : 100;
 
-        v = arrN_float(extraChance, 2) as int * 100;
+        v = (arrN_float(extraChance, 2) * 100) as int;
         var ch2 as int = (exChLen > 3 && v > 0) ? v : 100;
 
         # Create recipe

@@ -187,3 +187,15 @@ remakeEx(<cyclicmagic:beacon_potion>, [
 	[<extrautils2:ineffableglass:2>, <biomesoplenty:jar_filled:1>, <extrautils2:ineffableglass:2>],
 	[<mekanism:basicblock:15>, <extendedcrafting:material:40>, <mekanism:basicblock:15>],
 	[<ore:blockPulsatingIron>, <ore:blockPulsatingIron>, <ore:blockPulsatingIron>]]);
+
+# Harder shears
+recipes.remove(<cyclicmagic:shears_obsidian>);
+recipes.addShaped("Cyclic Shears", <cyclicmagic:shears_obsidian>, [
+	[null, <ore:ingotRefinedObsidian>, null],
+	[<ore:ingotRefinedObsidian>, <minecraft:shears>, <ore:ingotRefinedObsidian>],
+	[null, <ore:ingotRefinedObsidian>, null]]);
+
+# Harder Sleeping mat
+recipes.remove(<cyclicmagic:sleeping_mat>);
+recipes.addShapeless("Cyclic Sleep Mat", <cyclicmagic:sleeping_mat>, [
+	<travelersbackpack:sleeping_bag_bottom>, <ore:leather>]);

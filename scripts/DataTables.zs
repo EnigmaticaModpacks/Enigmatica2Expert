@@ -186,10 +186,10 @@ static armorStaged as IData[string] =
     material: "ore:ingotSupremium",
     recycle:  "ore:ingotSupremium",
     list: [
-      {id:"mysticalagriculture:supremium_helmet", tag:{}},
-      {id:"mysticalagriculture:supremium_chestplate", tag:{}},
-      {id:"mysticalagriculture:supremium_leggings", tag:{}},
-      {id:"mysticalagriculture:supremium_boots", tag:{}},
+      {id:"mysticalagriculture:supremium_helmet"},
+      {id:"mysticalagriculture:supremium_chestplate"},
+      {id:"mysticalagriculture:supremium_leggings"},
+      {id:"mysticalagriculture:supremium_boots"},
       {id:"mysticalagriculture:supremium_sword"},
       {id:"thermalfoundation:tool.shield_diamond"}
   ]},
@@ -197,7 +197,7 @@ static armorStaged as IData[string] =
     prev: null, 
     tier: 1,
     material: "ore:clothManaweave",
-    recycle:  "ore:clothManaweave",
+    recycle:  "botania:manaresource:16",
     list: [
       {id:"botania:manaweavehelm"},
       {id:"botania:manaweavechest"},
@@ -252,7 +252,7 @@ static armorStaged as IData[string] =
     recycle:  "bloodmagic:component:8",
     list: [
       {id:"bloodmagic:living_armour_helmet"},
-      {id:"bloodmagic:living_armour_chest", tag:{}},
+      {id:"bloodmagic:living_armour_chest"},
       {id:"bloodmagic:living_armour_leggings"},
       {id:"bloodmagic:living_armour_boots"},
       {id:"animus:kama_bound"},
@@ -327,12 +327,12 @@ static armorStaged as IData[string] =
     prev: "armor_nano", 
     tier: 6,
     material: "redstonearsenal:material:224",
-    recycle:  "redstonearsenal:material:224",
+    recycle:  "redstonearsenal:material:32",
     list: [
-      {id:"redstonearsenal:armor.helmet_flux", tag:{Energy:0}},
-      {id:"redstonearsenal:armor.plate_flux", tag:{Energy:0}},
-      {id:"redstonearsenal:armor.legs_flux", tag:{Energy:0}},
-      {id:"redstonearsenal:armor.boots_flux", tag:{Energy:0}},
+      {id:"redstonearsenal:armor.helmet_flux", tag:{Energy:800000}},
+      {id:"redstonearsenal:armor.plate_flux", tag:{Energy:800000}},
+      {id:"redstonearsenal:armor.legs_flux", tag:{Energy:800000}},
+      {id:"redstonearsenal:armor.boots_flux", tag:{Energy:800000}},
       {id:"redstonearsenal:tool.sword_flux", tag:{Energy:320000}},
       {id:"spartanshields:shield_flux_ra", tag:{Energy:1000000}}
   ]},
@@ -496,7 +496,7 @@ static armorStaged as IData[string] =
     prev: "armor_manasteel", 
     tier: 3,
     material: "ore:ingotPsi",
-    recycle:  "ore:ingotPsi",
+    recycle:  "psi:material:1",
     list: [
       {id:"psi:psimetal_exosuit_helmet"},
       {id:"psi:psimetal_exosuit_chestplate"},

@@ -111,6 +111,9 @@ print("--- loading AdvancedRocketry.zs ---");
 	
 	] as IItemStack[];
 
+	for item in recipesToRemove {
+		recipes.remove(item);
+	}
 
 	<ore:stickIron>.remove(<advancedrocketry:productrod:1>);
 
@@ -121,3 +124,25 @@ recipes.addShaped(<advancedrocketry:liquidtank>, [
 	[<ore:plateTitanium>, <ore:paneGlass>, <ore:plateTitanium>],
 	[<ore:plateTitanium>, <ore:paneGlass>, <ore:plateTitanium>]]);
 recipes.addShapeless("Clearing AdvRock Tank", <advancedrocketry:liquidtank>, [<advancedrocketry:liquidtank>]);
+
+# Mushrooms as energy providers
+mods.thermalexpansion.EnervationDynamo.addFuel(<advancedrocketry:electricmushroom>, 6000000);
+
+# Crystalls recycling
+val CLN = <ore:nuggetCrystaltine>.firstItem;
+val crtlExcps = "except: manufactory Macerator ThermalCentrifuge mekCrusher";
+scripts.process.crush(<advancedrocketry:crystal:3>, <jaopca:item_crystalardite>,  crtlExcps, [<actuallyadditions:item_crystal_empowered>,   <environmentaltech:kyronite_crystal>, CLN], [0.6f, 0.3f, 0.05f]);
+scripts.process.crush(<advancedrocketry:crystal:1>, <jaopca:item_crystalcobalt>,  crtlExcps, [<actuallyadditions:item_crystal_empowered:1>, <environmentaltech:pladium_crystal>,  CLN], [0.6f, 0.3f, 0.05f]);
+scripts.process.crush(<advancedrocketry:crystal>,   <jaopca:item_crystalplatinum>,crtlExcps, [<actuallyadditions:item_crystal_empowered:2>, <environmentaltech:ionite_crystal>,   CLN], [0.6f, 0.3f, 0.05f]);
+scripts.process.crush(<advancedrocketry:crystal:5>, <jaopca:item_crystalthorium>, crtlExcps, [<actuallyadditions:item_crystal_empowered:3>, <environmentaltech:aethium_crystal>,  CLN], [0.6f, 0.3f, 0.05f]);
+scripts.process.crush(<advancedrocketry:crystal:2>, <jaopca:item_crystaluranium>, crtlExcps, [<actuallyadditions:item_crystal_empowered:4>, <environmentaltech:litherite_crystal>,CLN], [0.6f, 0.3f, 0.05f]);
+scripts.process.crush(<advancedrocketry:crystal:4>, <jaopca:item_crystaliridium>, crtlExcps, [<actuallyadditions:item_crystal_empowered:5>, <environmentaltech:erodium_crystal>,  CLN], [0.6f, 0.3f, 0.05f]);
+
+# Special case for thermal centrifuge - it have no chances for secondary outputs
+val ic2Cent = ["ThermalCentrifuge"] as string[];
+scripts.process.work(ic2Cent, null , [<advancedrocketry:crystal:3> * 4] , null , [<jaopca:item_crystalardite>  * 3 , <actuallyadditions:item_crystal_empowered>  * 2 , <environmentaltech:kyronite_crystal> ] , null , null , null);
+scripts.process.work(ic2Cent, null , [<advancedrocketry:crystal:1> * 4] , null , [<jaopca:item_crystalcobalt>  * 3 , <actuallyadditions:item_crystal_empowered:1>* 2 , <environmentaltech:pladium_crystal>  ] , null , null , null);
+scripts.process.work(ic2Cent, null , [<advancedrocketry:crystal>   * 4] , null , [<jaopca:item_crystalplatinum>* 3 , <actuallyadditions:item_crystal_empowered:2>* 2 , <environmentaltech:ionite_crystal>   ] , null , null , null);
+scripts.process.work(ic2Cent, null , [<advancedrocketry:crystal:5> * 4] , null , [<jaopca:item_crystalthorium> * 3 , <actuallyadditions:item_crystal_empowered:3>* 2 , <environmentaltech:aethium_crystal>  ] , null , null , null);
+scripts.process.work(ic2Cent, null , [<advancedrocketry:crystal:2> * 4] , null , [<jaopca:item_crystaluranium> * 3 , <actuallyadditions:item_crystal_empowered:4>* 2 , <environmentaltech:litherite_crystal>] , null , null , null);
+scripts.process.work(ic2Cent, null , [<advancedrocketry:crystal:4> * 4] , null , [<jaopca:item_crystaliridium> * 3 , <actuallyadditions:item_crystal_empowered:5>* 2 , <environmentaltech:erodium_crystal>  ] , null , null , null);
