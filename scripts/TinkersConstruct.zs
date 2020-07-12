@@ -5,7 +5,6 @@ import crafttweaker.liquid.ILiquidDefinition;
 import mods.jei.JEI.removeAndHide as rh;
 import mods.tcomplement.highoven.HighOven;
 import mods.tcomplement.highoven.MixRecipeBuilder;
-import mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput as ncAlloyRm;
 
 #modloaded tconstruct
 
@@ -226,60 +225,6 @@ remakeEx(<mctsmelteryio:upgrade:6>, [
 	mods.tconstruct.Fuel.registerFuel(<liquid:hydrofluoric_acid> * 25, 400);
 
 
-
-# *======= High Oven =======*
-
-# Remove cheap steel recipe
-HighOven.removeMixRecipe(<liquid:steel>);
-
-# Remove Unused alloy recipes
-ncAlloyRm(<enderio:item_alloy_ingot>);
-ncAlloyRm(<enderio:item_alloy_ingot:1>);
-ncAlloyRm(<enderio:item_alloy_ingot:2>);
-ncAlloyRm(<enderio:item_alloy_ingot:3>);
-ncAlloyRm(<enderio:item_alloy_ingot:5>);
-ncAlloyRm(<enderio:item_alloy_ingot:4>); # conductive Iron
-ncAlloyRm(<enderio:item_alloy_ingot:7>);
-ncAlloyRm(<enderio:item_alloy_ingot:8>);
-ncAlloyRm(<enderio:item_alloy_ingot:9>*3);
-ncAlloyRm(<enderio:item_material:14>);
-ncAlloyRm(<enderio:item_material:15>);
-
-# High Oven instead of Alloy Smelter
-function addHighOvenRecipe(output as ILiquidStack , input as ILiquidStack , temp as int, 
-		oxidizer as IIngredient, outputChance as int, 
-		reducer as IIngredient, inputChance as int, 
-		purifier as IIngredient, purifierChance as int) {
-
-	var builder = HighOven.newMixRecipe(output, input, temp);
-
-	if (!isNull(oxidizer)) { builder.addOxidizer(oxidizer, outputChance); }
-	if (!isNull(reducer))  { builder.addReducer(reducer, inputChance); }
-	if (!isNull(purifier)) { builder.addPurifier(purifier, purifierChance); }
-	builder.register();
-}
-
-# Blutonium
-addHighOvenRecipe(<liquid:plutonium> * (144/2), <liquid:cyanite> * (144*1), 3000, 
-	<ic2:nuclear:7>, 17, <actuallyadditions:item_crystal_empowered:1>, 100, <thermalfoundation:material:136>, 100);
-
-# EnderIO simple alloys
-addHighOvenRecipe(<liquid:construction_alloy>*144  ,<liquid:iron>*48         , 2700  , <ore:dustBedrock>  , 50  , <ore:dustLead>      , 100  , null            , 100);
-addHighOvenRecipe(<liquid:dark_steel> *144         ,<liquid:steel>*144       , 5500 , <ore:dustBedrock>  , 50  , <ore:dustObsidian>  , 100  , null            , 100);
-addHighOvenRecipe(<liquid:end_steel> *144          ,<liquid:dark_steel>*144  , 5500 , <ore:dustBedrock>  , 50  , <ore:dustEndstone>  , 100  , <ore:obsidian>  , 100);
-
-# Oxidisers on choose
-val ox as IIngredient = <ore:dustCyanite> | <ore:itemSlagRich> | <ore:dustPsi>;
-
-# EnderIO hard alloys
-addHighOvenRecipe(<liquid:soularium> *144          ,<liquid:gold>*144           , 5100 , <ore:dustBedrock>  , 50  , <mysticalagriculture:crafting:28>, 100, ox, 25);
-addHighOvenRecipe(<liquid:electrical_steel> *144   ,<liquid:steel>*144          , 3000 , <ore:dustBedrock>  , 50  , <ore:itemSilicon>                , 100, ox, 25);
-addHighOvenRecipe(<liquid:energetic_alloy> *144    ,<liquid:gold>*144           , 3600 , <ore:dustBedrock>  , 50  , <ore:dustEnergetic>              , 100, ox, 25);
-addHighOvenRecipe(<liquid:vibrant_alloy> *144      ,<liquid:energetic_alloy>*144, 5400 , <ore:dustBedrock>  , 50  , <extendedcrafting:material:49>   , 100, ox, 25);
-addHighOvenRecipe(<liquid:redstone_alloy> *144     ,<liquid:tin>*144            , 3600 , <ore:dustBedrock>  , 50  , <ore:dustRedstone>               , 100, ox, 25);
-addHighOvenRecipe(<liquid:conductive_iron> *144    ,<liquid:iron>*144           , 4200 , <ore:dustBedrock>  , 50  , <ore:dustRedstone>               , 100, ox, 25);
-addHighOvenRecipe(<liquid:pulsating_iron> *144     ,<liquid:silver>*144         , 5500 , <ore:dustBedrock>  , 50  , <ore:dustEnder>                  , 100, ox, 25);
-
 # Remake some metals to able be melted only under amplyfiing tube
 mods.mechanics.addTubeRecipe([<thaumcraft:amber_block>] as IItemStack[], <liquid:amber> * 1000);
 mods.mechanics.addTubeRecipe([<minecraft:obsidian>] as IItemStack[], <liquid:crystal> * 1000);
@@ -309,6 +254,23 @@ scripts.process.squeeze(<tconstruct:slime_vine_purple_end>, <liquid:purpleslime>
 scripts.process.squeeze(<tconstruct:slime_vine_purple_mid>, <liquid:purpleslime>*200,  null,  <tconstruct:slime_vine_purple_end>);
 scripts.process.squeeze(<tconstruct:slime_vine_purple>,     <liquid:purpleslime>*200,  null,  <tconstruct:slime_vine_purple_mid>);
 
+# Remove cheap steel recipe
+HighOven.removeMixRecipe(<liquid:steel>);
 
 # More Scorched bricks recipes
 mods.immersiveengineering.ArcFurnace.addRecipe(<tcomplement:materials:1>, <minecraft:brick>, <immersiveengineering:material:7>, 10, 512);
+
+# Clay bucket use for casts
+val bkt = <claybucket:claybucket>;
+mods.tconstruct.Casting.addTableRecipe(<tcomplement:cast_clay>, bkt, <liquid:clay>, 288, true);
+mods.tconstruct.Casting.addTableRecipe(<tcomplement:cast>, bkt, <liquid:gold>, 288, true);
+mods.tconstruct.Casting.addTableRecipe(<tcomplement:cast>, bkt, <liquid:alubrass>, 144, true);
+mods.tconstruct.Casting.addTableRecipe(<tcomplement:cast>, bkt, <liquid:brass>, 144, true);
+
+# Cast slimes from liquids (only blood have recipe now)
+mods.tconstruct.Casting.addTableRecipe(<tconstruct:edible:2>, null, <liquid:purpleslime>, 250);
+mods.tconstruct.Casting.addTableRecipe(<tconstruct:edible:1>, null, <liquid:blueslime>  , 250);
+
+# Slime blocks
+mods.tconstruct.Casting.addBasinRecipe(<tconstruct:slime_congealed:2>, null, <liquid:purpleslime>, 1000);
+mods.tconstruct.Casting.addBasinRecipe(<tconstruct:slime_congealed:1>, null, <liquid:blueslime>  , 1000);
