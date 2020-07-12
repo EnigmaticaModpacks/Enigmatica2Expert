@@ -1,0 +1,87 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "WheatFieldMill",
+  "items": [
+    {
+      "weight": 0.38,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:iron_hoe",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.27,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:web",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "minecraft:wheat_seeds",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 2.5,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "minecraft:wheat",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.34,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:hay_block",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "harvestcraft:flouritem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 14,
+      "item": {
+        "id": "nuclearcraft:graham_cracker",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 9,
+      "item": {
+        "id": "immersiveengineering:material",
+        "damage": 12,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

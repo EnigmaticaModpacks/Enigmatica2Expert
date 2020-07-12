@@ -1,0 +1,87 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "VillagePumpkinChandlery",
+  "items": [
+    {
+      "weight": 0.7755888104438782,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:pumpkin_seeds",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.9243392944335938,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "minecraft:lit_pumpkin",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0068187713623047,
+      "min": 1,
+      "max": 8,
+      "item": {
+        "id": "minecraft:lit_pumpkin",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0068187713623047,
+      "min": 1,
+      "max": 32,
+      "item": {
+        "id": "minecraft:torch",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 17,
+      "item": {
+        "id": "minecraft:pumpkin_pie",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 17,
+      "item": {
+        "id": "actuallyadditions:item_food",
+        "damage": 1,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 17,
+      "item": {
+        "id": "harvestcraft:pumpkincheesecakeitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 18,
+      "item": {
+        "id": "harvestcraft:pumpkinbreaditem",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

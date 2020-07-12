@@ -1,0 +1,57 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "AbandonedBurnable",
+  "items": [
+    {
+      "weight": 0.27027028799057007,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "minecraft:coal",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "minecraft:coal",
+        "damage": 1,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0068187713623047,
+      "min": 1,
+      "max": 32,
+      "item": {
+        "id": "actuallyadditions:item_misc",
+        "damage": 10,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0068187713623047,
+      "min": 1,
+      "max": 32,
+      "item": {
+        "id": "actuallyadditions:item_misc",
+        "damage": 11,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 8,
+      "item": {
+        "id": "immersiveengineering:material",
+        "damage": 6,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

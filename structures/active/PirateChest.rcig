@@ -1,0 +1,429 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "PirateChest",
+  "items": [
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 10,
+      "item": {
+        "id": "minecraft:gold_ingot",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 3.65,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:web",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.41,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:bone",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:iron_sword",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:iron_helmet",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:iron_leggings",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:iron_chestplate",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:iron_boots",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.14,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "reccomplex:book_generation_tag",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 5,
+      "item": {
+        "id": "minecraft:diamond",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.7,
+      "min": 1,
+      "max": 5,
+      "item": {
+        "id": "minecraft:emerald",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.17,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "reccomplex:artifact_generation_tag",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "immersiveengineering:material",
+        "damage": 14,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "immersiveengineering:material",
+        "damage": 15,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "immersiveengineering:material",
+        "damage": 16,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "immersiveengineering:material",
+        "damage": 13,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "immersiveengineering:speedloader",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.25986868143081665,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "immersiveengineering:bullet",
+        "damage": 2,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "bullet": {
+              "nbtType": "string",
+              "nbt": "wolfpack"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.25986868143081665,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "immersiveengineering:bullet",
+        "damage": 2,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "bullet": {
+              "nbtType": "string",
+              "nbt": "crystalwill"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.25986868143081665,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "immersiveengineering:bullet",
+        "damage": 2,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "bullet": {
+              "nbtType": "string",
+              "nbt": "terrasteel"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.2900550961494446,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "immersiveengineering:bullet",
+        "damage": 2,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "bullet": {
+              "nbtType": "string",
+              "nbt": "casull"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.35883715748786926,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "immersiveengineering:bullet",
+        "damage": 2,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "bullet": {
+              "nbtType": "string",
+              "nbt": "armor_piercing"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.2900550961494446,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "immersiveengineering:bullet",
+        "damage": 2,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "bullet": {
+              "nbtType": "string",
+              "nbt": "buckshot"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.2900550961494446,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "immersiveengineering:bullet",
+        "damage": 2,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "bullet": {
+              "nbtType": "string",
+              "nbt": "he"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.18405085802078247,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "immersiveengineering:bullet",
+        "damage": 2,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "bullet": {
+              "nbtType": "string",
+              "nbt": "silver"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.23224952816963196,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "immersiveengineering:bullet",
+        "damage": 2,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "bullet": {
+              "nbtType": "string",
+              "nbt": "dragonsbreath"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.25986868143081665,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "immersiveengineering:bullet",
+        "damage": 2,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "bullet": {
+              "nbtType": "string",
+              "nbt": "potion"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.23224952816963196,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "immersiveengineering:bullet",
+        "damage": 2,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "bullet": {
+              "nbtType": "string",
+              "nbt": "flare"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 9,
+      "item": {
+        "id": "immersiveengineering:wooden_device0",
+        "damage": 4,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "openblocks:cannon",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.013752810657024384,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "appliedenergistics2:matter_cannon",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "internalMaxPower": {
+              "nbtType": "double",
+              "nbt": 200000.0
+            },
+            "internalCurrentPower": {
+              "nbtType": "double",
+              "nbt": 200000.0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

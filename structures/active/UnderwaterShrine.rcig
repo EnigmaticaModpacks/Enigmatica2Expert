@@ -1,0 +1,147 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "UnderwaterShrine",
+  "items": [
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 5,
+      "item": {
+        "id": "minecraft:fish",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 5,
+      "item": {
+        "id": "minecraft:fish",
+        "damage": 1,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 5,
+      "item": {
+        "id": "minecraft:fish",
+        "damage": 2,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 5,
+      "item": {
+        "id": "minecraft:fish",
+        "damage": 3,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.31,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "reccomplex:book_generation_tag",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.17,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:bone",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.29,
+      "min": 1,
+      "max": 15,
+      "item": {
+        "id": "minecraft:dye",
+        "damage": 12,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.29,
+      "min": 1,
+      "max": 15,
+      "item": {
+        "id": "minecraft:dye",
+        "damage": 6,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.3978064954280853,
+      "min": 1,
+      "max": 6,
+      "item": {
+        "id": "iceandfire:sea_serpent_scales_blue",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.32298368215560913,
+      "min": 1,
+      "max": 6,
+      "item": {
+        "id": "iceandfire:sea_serpent_scales_bronze",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.35883715748786926,
+      "min": 1,
+      "max": 6,
+      "item": {
+        "id": "iceandfire:sea_serpent_scales_deepblue",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.3978064954280853,
+      "min": 1,
+      "max": 6,
+      "item": {
+        "id": "iceandfire:sea_serpent_scales_purple",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5354365706443787,
+      "min": 1,
+      "max": 6,
+      "item": {
+        "id": "iceandfire:sea_serpent_scales_red",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.4858947992324829,
+      "min": 1,
+      "max": 6,
+      "item": {
+        "id": "iceandfire:sea_serpent_scales_teal",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

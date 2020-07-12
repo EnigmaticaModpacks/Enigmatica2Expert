@@ -1,0 +1,405 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "AirShrine",
+  "items": [
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 5,
+      "item": {
+        "id": "minecraft:red_flower",
+        "damage": 1,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 5,
+      "item": {
+        "id": "minecraft:red_flower",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 5,
+      "item": {
+        "id": "minecraft:yellow_flower",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 5,
+      "item": {
+        "id": "minecraft:red_flower",
+        "damage": 4,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 5,
+      "item": {
+        "id": "minecraft:red_flower",
+        "damage": 3,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 5,
+      "item": {
+        "id": "minecraft:red_flower",
+        "damage": 2,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 5,
+      "item": {
+        "id": "minecraft:red_flower",
+        "damage": 7,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 5,
+      "item": {
+        "id": "minecraft:red_flower",
+        "damage": 6,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 5,
+      "item": {
+        "id": "minecraft:red_flower",
+        "damage": 5,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 5,
+      "item": {
+        "id": "minecraft:double_plant",
+        "damage": 1,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 5,
+      "item": {
+        "id": "minecraft:double_plant",
+        "damage": 4,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 5,
+      "item": {
+        "id": "minecraft:red_flower",
+        "damage": 8,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.54,
+      "min": 1,
+      "max": 5,
+      "item": {
+        "id": "minecraft:double_plant",
+        "damage": 5,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 5,
+      "item": {
+        "id": "minecraft:double_plant",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.12,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "reccomplex:book_generation_tag",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:bone",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 4.63,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:web",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.020207388326525688,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "botania:specialflower",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "type": {
+              "nbtType": "string",
+              "nbt": "endoflame"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.020207388326525688,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "botania:specialflower",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "type": {
+              "nbtType": "string",
+              "nbt": "hydroangeas"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.016732392832636833,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "botania:specialflower",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "type": {
+              "nbtType": "string",
+              "nbt": "thermalily"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.020207388326525688,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "botania:specialflower",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "type": {
+              "nbtType": "string",
+              "nbt": "arcanerose"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.020207388326525688,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "botania:specialflower",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "type": {
+              "nbtType": "string",
+              "nbt": "munchdew"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.020207388326525688,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "botania:specialflower",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "type": {
+              "nbtType": "string",
+              "nbt": "entropinnyum"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.020207388326525688,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "botania:specialflower",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "type": {
+              "nbtType": "string",
+              "nbt": "kekimurus"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.020207388326525688,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "botania:specialflower",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "type": {
+              "nbtType": "string",
+              "nbt": "gourmaryllis"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.020207388326525688,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "botania:specialflower",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "type": {
+              "nbtType": "string",
+              "nbt": "narslimmus"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.020207388326525688,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "botania:specialflower",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "type": {
+              "nbtType": "string",
+              "nbt": "spectrolus"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.020207388326525688,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "botania:specialflower",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "type": {
+              "nbtType": "string",
+              "nbt": "rafflowsia"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.020207388326525688,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "botania:specialflower",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "type": {
+              "nbtType": "string",
+              "nbt": "shulk_me_not"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}
