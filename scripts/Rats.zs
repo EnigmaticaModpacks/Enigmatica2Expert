@@ -133,7 +133,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <rats:rat_upgrade_creative>, [
 	[<ore:ingotUltimate>, <ore:ingotUltimate>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:ingotUltimate>, <ore:ingotUltimate>]
 ]);
 
-var csandwich = <culinaryconstruct:sandwich>.withTag({Size: 5, Saturation: 1.1549999 as float, Ingredients: {Items: [{Slot: 0 as byte, id: "animania:friesian_cheese_wedge", Count: 1 as byte, Damage: 0 as short}, {Slot: 1 as byte, id: "animania:holstein_cheese_wedge", Count: 1 as byte, Damage: 0 as short}, {Slot: 2 as byte, id: "animania:goat_cheese_wedge", Count: 1 as byte, Damage: 0 as short}, {Slot: 3 as byte, id: "animania:sheep_cheese_wedge", Count: 1 as byte, Damage: 0 as short}, {Slot: 4 as byte, id: "animania:jersey_cheese_wedge", Count: 1 as byte, Damage: 0 as short}, {Slot: 5 as byte, id: "minecraft:bread", Count: 1 as byte, Damage: 0 as short}]}, Bonus: 2, Depth: 0, Food: 10});
+var csandwich = <culinaryconstruct:sandwich>.withTag({Size: 5, Saturation: 1.1549999 as float, Ingredients: {Items: [{Slot: 0 as byte, id: "animania:sheep_cheese_wedge", Count: 1 as byte, Damage: 0 as short}, {Slot: 1 as byte, id: "animania:goat_cheese_wedge", Count: 1 as byte, Damage: 0 as short}, {Slot: 2 as byte, id: "animania:friesian_cheese_wedge", Count: 1 as byte, Damage: 0 as short}, {Slot: 3 as byte, id: "animania:holstein_cheese_wedge", Count: 1 as byte, Damage: 0 as short}, {Slot: 4 as byte, id: "animania:jersey_cheese_wedge", Count: 1 as byte, Damage: 0 as short}, {Slot: 5 as byte, id: "minecraft:bread", Count: 1 as byte, Damage: 0 as short}]}, Bonus: 2, Depth: 0, Food: 10});
 var cplate = <tconstruct:large_plate>.withTag({Material: "cheese"});
 mods.extendedcrafting.TableCrafting.addShaped(0, <rats:creative_cheese>, [
 	[cplate, cplate, csandwich, csandwich, csandwich, cplate, cplate], 
@@ -289,15 +289,15 @@ static replExcept as IItemStack[] = [
 # More uses for Rat Diamond
 recipes.replaceAllOccurences(<ore:gemDiamond>, gemDiamondRat, <*>.only(function(item) {
 	if(isNull(item)){ return false; }
-	for i in 0 to replExcept.length {
-		if (item.matches(replExcept[i])){ return false; }
+	for ii in replExcept {
+		if (item.matches(ii) || ii.matches(item)){ return false; }
 	}
 	return true;
 }));
 recipes.replaceAllOccurences(<minecraft:diamond>, gemDiamondRat, <*>.only(function(item) {
 	if(isNull(item)){ return false; }
-	for i in 0 to replExcept.length {
-		if (item.matches(replExcept[i])){ return false; }
+	for ii in replExcept {
+		if (item.matches(ii) || ii.matches(item)){ return false; }
 	}
 	return true;
 }));
