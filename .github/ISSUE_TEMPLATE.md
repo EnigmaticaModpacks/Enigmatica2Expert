@@ -1,5 +1,5 @@
 **Modpack version**
-Input version here
+Input modpack version here
 
 **Issue**
 Input short description of the issue here
