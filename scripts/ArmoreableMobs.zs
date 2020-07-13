@@ -5,8 +5,6 @@ import mods.armoreablemobs.ArmorSlot;
 import mods.armoreablemobs.ArmorGroup;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
-import crafttweaker.event.CommandEvent;
-import crafttweaker.player.IPlayer;
 import crafttweaker.data.IData;
 
 #modloaded armoreablemobs
@@ -46,38 +44,47 @@ static slotNames as string[] = ["head", "chest", "legs", "feet", "mainhand", "of
 
 # Add armors recursively
 function addArmorToGroup(group as ArmorGroup, stage as IData, isSkeleton as bool){
-  # print("Call addArmorToGroup for stage: " ~ ((isNull(stage.prev)) ? "Stage without prev" : stage.asString()));
   for i in 0 to (isSkeleton ? 4 : 6) {
-    # print(" i = " ~ i);
     var sltName = slotNames[i];
     var listedItem = stage.list[i];
     var id = listedItem.id.asString();
     var itemNoNBT = itemUtils.getItem(id);
-    # print("    " ~ sltName ~ " listedItem:" ~ listedItem.asString());
     if(!isNull(itemNoNBT)) {
-      var item = itemNoNBT.withTag(isNull(listedItem.tag) ? {} : listedItem.tag);
+      val it = itemNoNBT.withTag(isNull(listedItem.tag) ? {} : listedItem.tag);
+
+      # Check if can be charged
+      val chargeable = !isNull(it.tag) && (!isNull(it.tag.charge) || !isNull(it.tag.Energy));
+
+      var item as IItemStack = null;
+      
+      if (chargeable) {
+        # Lower charge
+        item = !isNull(it.tag.charge)
+          ? it.updateTag({charge: it.tag.charge as int / 11})
+          : (!isNull(it.tag.Energy)
+            ? it.updateTag({Energy: it.tag.Energy as int / 11})
+            : it);
+      } else {
+        # Damage item to 0.78
+        val loweredDmg = min(it.maxDamage, max(1, (it.maxDamage as float * 0.78f) as int));
+        item = it.isDamageable ? (it.withDamage(loweredDmg)) : it;
+      }
+
       if (isNull( armSlots[item] )){
         val weight = 1 + stage.tier.asInt();
-        # print("      createArmorSlot: " ~ sltName ~ " weight: " ~ weight );
         armSlots[item] = ArmorHandler.createArmorSlot(sltName, item, weight, 0.1 /* <- chanceToDropOnDeath */);
-      } else {
-        # print("      item for armSlots[item] already created, skip..");
       }
       group.addArmor(armSlots[item]);
-    } else {
-      # print("    itemNoNBT is Null..");
     }
   }
 }
 
 function makeGroup(id as string, stage as IData, isSkeleton as bool){
     var tier as float = stage.tier.asFloat();
-    val chanceToGetUsed = /* tier * 0.005f + */ 0.02f;
-    # print("  tier:" ~ tier ~ " chanceToGetUsed:" ~ chanceToGetUsed);
+    val chanceToGetUsed = /* tier * 0.005f + */ 0.01f;
     var group as ArmorGroup = ArmorHandler.createArmorGroup(id, chanceToGetUsed);
     group.addGameStage(id); # Add stage
     for ent in (isSkeleton ? armorSkeletons : armorEntitys) { 
-        # print("  group.addEntity()");
         group.addEntity(ent); # Add entitys
     }
     addArmorToGroup(group, stage, isSkeleton);
@@ -85,7 +92,6 @@ function makeGroup(id as string, stage as IData, isSkeleton as bool){
 
 # Create all stages
 for id, stage in armorStaged {
-    # print("Making stages for id: " ~ (isNull(id) ? "null" : id));
     makeGroup(id, stage, false); # Weaponized group
     makeGroup(id, stage, true);  # Sceleton group
 }

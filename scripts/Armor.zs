@@ -1,6 +1,6 @@
-import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IItemStack;
+import crafttweaker.liquid.ILiquidStack;
 import mods.jei.JEI.removeAndHide as rh;
-print("--- loading Armor.zs ---");
 
 # *======= Energy Armor =======*
 
@@ -316,40 +316,133 @@ print("--- loading Armor.zs ---");
 	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_chest>, 2147483647, 1000000, <avaritia:block_resource:2>, [<draconicevolution:wyvern_chest>.anyDamage(), <extrautils2:angelring>.anyDamage(), <draconicevolution:awakened_core>, <draconicevolution:awakened_core>, <draconicevolution:draconic_block>, <draconicevolution:draconic_block>, <draconicevolution:draconic_energy_core>, <draconicevolution:draconic_energy_core>, <thermalexpansion:frame:148>, <extendedcrafting:material:32>, <astralsorcery:itemcape>.anyDamage()]);
 	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_legs>, 2147483647, 1000000, <avaritia:block_resource:2>, [<draconicevolution:wyvern_legs>.anyDamage(), <extrautils2:angelring>.anyDamage(), <draconicevolution:awakened_core>, <draconicevolution:awakened_core>, <draconicevolution:draconic_block>, <draconicevolution:draconic_block>, <draconicevolution:draconic_energy_core>, <draconicevolution:draconic_energy_core>, <thermalexpansion:frame:148>, <extendedcrafting:material:32>, <astralsorcery:itemcape>.anyDamage()]);
 	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_boots>, 2147483647, 1000000, <avaritia:block_resource:2>, [<draconicevolution:wyvern_boots>.anyDamage(), <extrautils2:angelring>.anyDamage(), <draconicevolution:awakened_core>, <draconicevolution:awakened_core>, <draconicevolution:draconic_block>, <draconicevolution:draconic_block>, <draconicevolution:draconic_energy_core>, <draconicevolution:draconic_energy_core>, <thermalexpansion:frame:148>, <extendedcrafting:material:32>, <astralsorcery:itemcape>.anyDamage()]);
-
-# *======= Armor -> Original mats conversion=======*
-
-	recipes.addShapeless("ArmorToMats1", <twilightforest:arctic_fur> * 4, [<twilightforest:arctic_boots>]);
-	recipes.addShapeless("ArmorToMats2", <twilightforest:arctic_fur> * 7, [<twilightforest:arctic_leggings>]);
-	recipes.addShapeless("ArmorToMats3", <twilightforest:arctic_fur> * 8, [<twilightforest:arctic_chestplate>]);
-	recipes.addShapeless("ArmorToMats4", <twilightforest:arctic_fur> * 5, [<twilightforest:arctic_helmet>]);
-	recipes.addShapeless("ArmorToMats5", <twilightforest:alpha_fur> * 4, [<twilightforest:yeti_boots>]);
-	recipes.addShapeless("ArmorToMats6", <twilightforest:alpha_fur> * 7, [<twilightforest:yeti_leggings>]);
-	recipes.addShapeless("ArmorToMats7", <twilightforest:alpha_fur> * 8, [<twilightforest:yeti_chestplate>]);
-	recipes.addShapeless("ArmorToMats8", <twilightforest:alpha_fur> * 5, [<twilightforest:yeti_helmet>]);
-	recipes.addShapeless("ArmorToMats9", <twilightforest:knightmetal_ingot> * 4, [<twilightforest:knightmetal_boots>]);
-	recipes.addShapeless("ArmorToMats10", <twilightforest:knightmetal_ingot> * 7, [<twilightforest:knightmetal_leggings>]);
-	recipes.addShapeless("ArmorToMats11", <twilightforest:knightmetal_ingot> * 8, [<twilightforest:knightmetal_chestplate>]);
-	recipes.addShapeless("ArmorToMats12", <twilightforest:knightmetal_ingot> * 5, [<twilightforest:knightmetal_helmet>]);
-	recipes.addShapeless("ArmorToMats13", <twilightforest:steeleaf_ingot> * 4, [<twilightforest:steeleaf_boots>]);
-	recipes.addShapeless("ArmorToMats14", <twilightforest:steeleaf_ingot> * 7, [<twilightforest:steeleaf_leggings>]);
-	recipes.addShapeless("ArmorToMats15", <twilightforest:steeleaf_ingot> * 8, [<twilightforest:steeleaf_chestplate>]);
-	recipes.addShapeless("ArmorToMats16", <twilightforest:steeleaf_ingot> * 5, [<twilightforest:steeleaf_helmet>]);
-	recipes.addShapeless("ArmorToMats17", <twilightforest:fiery_ingot> * 4, [<twilightforest:fiery_boots>]);
-	recipes.addShapeless("ArmorToMats18", <twilightforest:fiery_ingot> * 7, [<twilightforest:fiery_leggings>]);
-	recipes.addShapeless("ArmorToMats19", <twilightforest:fiery_ingot> * 8, [<twilightforest:fiery_chestplate>]);
-	recipes.addShapeless("ArmorToMats20", <twilightforest:fiery_ingot> * 5, [<twilightforest:fiery_helmet>]);
-	recipes.addShapeless("ArmorToMats21", <twilightforest:ironwood_ingot> * 4, [<twilightforest:ironwood_boots>]);
-	recipes.addShapeless("ArmorToMats22", <twilightforest:ironwood_ingot> * 7, [<twilightforest:ironwood_leggings>]);
-	recipes.addShapeless("ArmorToMats23", <twilightforest:ironwood_ingot> * 8, [<twilightforest:ironwood_chestplate>]);
-	recipes.addShapeless("ArmorToMats24", <twilightforest:ironwood_ingot> * 5, [<twilightforest:ironwood_helmet>]);
-	recipes.addShapeless("ArmorToMats25", <twilightforest:naga_scale> * 7, [<twilightforest:naga_leggings>]);
-	recipes.addShapeless("ArmorToMats26", <twilightforest:naga_scale> * 8, [<twilightforest:naga_chestplate>]);
-	
 	
 	rh(<tcomplement:steel_helmet>);
 	rh(<tcomplement:steel_chestplate>);
 	rh(<tcomplement:steel_leggings>);
 	rh(<tcomplement:steel_boots>);
-	
-		print("--- Armor.zs initialized ---");
+
+
+# ######################################################################
+#
+# Recycling armor and related items
+#
+# ######################################################################
+
+# Predefine liquidstacks because there is no utils
+#   to make liquidstack from string
+val reclLiquids as ILiquidStack[string] = {
+  "dark_steel"       : <liquid:dark_steel>,
+  "end_steel"        : <liquid:end_steel>,
+  "fluxed_electrum"  : <liquid:fluxed_electrum>,
+  "heavy_metal"      : <liquid:heavy_metal>,
+  "iron"             : <liquid:iron>,
+  "psimetal"         : <liquid:psimetal>,
+};
+
+
+val DKS = "enderio:item_alloy_ingot:6";
+val ENS = "enderio:item_alloy_ingot:8";
+val FLE = "redstonearsenal:material:32";
+val PSI = "psi:material:1";
+val IRN = "minecraft:iron_ingot";
+
+# Recycling armor and items list
+val itemsToRecycle as string[] = [
+# Item name                             |amount| recycle output ore  | recycled metal OR other recycle method
+"enderio:item_dark_steel_treetap"        , "6"   , DKS  , "dark_steel"       ,
+"enderio:item_dark_steel_crook"          , "2"   , DKS  , "dark_steel"       ,
+"enderio:item_dark_steel_hand"           , "5"   , DKS  , "dark_steel"       ,
+"enderio:item_dark_steel_shield"         , "5"   , DKS  , "dark_steel"       ,
+"enderio:item_dark_steel_helmet"         , "5"   , DKS  , "dark_steel"       ,
+"enderio:item_dark_steel_chestplate"     , "8"   , DKS  , "dark_steel"       ,
+"enderio:item_dark_steel_leggings"       , "7"   , DKS  , "dark_steel"       ,
+"enderio:item_dark_steel_boots"          , "4"   , DKS  , "dark_steel"       ,
+"enderio:item_end_steel_sword"           , "2"   , ENS  , "end_steel"        ,
+"enderio:item_end_steel_pickaxe"         , "3"   , ENS  , "end_steel"        ,
+"enderio:item_end_steel_axe"             , "3"   , ENS  , "end_steel"        ,
+"enderio:item_end_steel_helmet"          , "5"   , ENS  , "end_steel"        ,
+"enderio:item_end_steel_chestplate"      , "8"   , ENS  , "end_steel"        ,
+"enderio:item_end_steel_leggings"        , "7"   , ENS  , "end_steel"        ,
+"enderio:item_end_steel_boots"           , "4"   , ENS  , "end_steel"        ,
+"enderio:item_end_steel_shield"          , "5"   , ENS  , "end_steel"        ,
+"redstonearsenal:armor.helmet_flux"      , "20"  , FLE  , "fluxed_electrum"  ,
+"redstonearsenal:armor.plate_flux"       , "32"  , FLE  , "fluxed_electrum"  ,
+"redstonearsenal:armor.legs_flux"        , "28"  , FLE  , "fluxed_electrum"  ,
+"redstonearsenal:armor.boots_flux"       , "16"  , FLE  , "fluxed_electrum"  ,
+"redstonearsenal:tool.wrench_flux"       , "3"   , FLE  , "fluxed_electrum"  ,
+"redstonearsenal:tool.bow_flux"          , "9"   , FLE  , "fluxed_electrum"  ,
+"redstonearsenal:tool.fishing_rod_flux"  , "2"   , FLE  , "fluxed_electrum"  ,
+"redstonearsenal:tool.shield_flux"       , "6"   , FLE  , "fluxed_electrum"  ,
+"psi:psimetal_shovel"                    , "1"   , PSI  , "psimetal"         ,
+"psi:psimetal_pickaxe"                   , "2"   , PSI  , "psimetal"         ,
+"psi:psimetal_axe"                       , "2"   , PSI  , "psimetal"         ,
+"psi:psimetal_sword"                     , "1"   , PSI  , "psimetal"         ,
+"psi:psimetal_exosuit_helmet"            , "4"   , PSI  , "psimetal"         ,
+"psi:psimetal_exosuit_chestplate"        , "6"   , PSI  , "psimetal"         ,
+"psi:psimetal_exosuit_leggings"          , "5"   , PSI  , "psimetal"         ,
+"psi:psimetal_exosuit_boots"             , "2"   , PSI  , "psimetal"         ,
+"iceandfire:troll_weapon.axe"            , "8"   , IRN  , "iron"             ,
+"bloodmagic:living_armour_helmet"        , "5"   , IRN  , "iron"             ,
+"bloodmagic:living_armour_chest"         , "8"   , IRN  , "iron"             ,
+"bloodmagic:living_armour_leggings"      , "7"   , IRN  , "iron"             ,
+"bloodmagic:living_armour_boots"         , "4"   , IRN  , "iron"             ,
+"iceandfire:troll_weapon.hammer"  , "8"  , "mechanics:heavy_ingot"  , "heavy_metal"  ,
+"animus:kama_diamond"             , "8"  , "minecraft:diamond"      , ""             ,
+
+"botania:manaweavehelm"            , "20" , "botania:manaresource:16"   , "!saw" ,
+"botania:manaweavechest"           , "32" , "botania:manaresource:16"   , "!saw" ,
+"botania:manaweavelegs"            , "28" , "botania:manaresource:16"   , "!saw" ,
+"botania:manaweaveboots"           , "16" , "botania:manaresource:16"   , "!saw" ,
+"twilightforest:arctic_boots"      , "4"  , "twilightforest:arctic_fur" , "!saw" ,
+"twilightforest:arctic_leggings"   , "7"  , "twilightforest:arctic_fur" , "!saw" ,
+"twilightforest:arctic_chestplate" , "8"  , "twilightforest:arctic_fur" , "!saw" ,
+"twilightforest:arctic_helmet"     , "5"  , "twilightforest:arctic_fur" , "!saw" ,
+"twilightforest:yeti_boots"        , "4"  , "twilightforest:alpha_fur"  , "!saw" ,
+"twilightforest:yeti_leggings"     , "7"  , "twilightforest:alpha_fur"  , "!saw" ,
+"twilightforest:yeti_chestplate"   , "8"  , "twilightforest:alpha_fur"  , "!saw" ,
+"twilightforest:yeti_helmet"       , "5"  , "twilightforest:alpha_fur"  , "!saw" ,
+"twilightforest:naga_leggings"     , "7"  , "twilightforest:naga_scale" , "!saw" ,
+"twilightforest:naga_chestplate"   , "8"  , "twilightforest:naga_scale" , "!saw" ,
+];
+
+# Exceptions for machines that can saw
+val sawExcs = "except: shapeless BlockCutter manufactory AdvRockCutter";
+
+# Iterate list and call appropriate functions
+for i in 0 to itemsToRecycle.length {
+	if (i%4==0) {
+		val item = itemUtils.getItem(itemsToRecycle[i]);
+		val count = itemsToRecycle[i+1] as int;
+		val resclItem = getItemstackFromString(itemsToRecycle[i+2]);
+		val resclLiqd = reclLiquids[itemsToRecycle[i+3]];
+
+		if (!isNull(item) && !isNull(resclItem)) {
+			if (!isNull(resclLiqd)) {
+				scripts.process.recycleMetal(item, resclItem * count, resclLiqd * (count * 144), "no exceptions");
+			} else if (itemsToRecycle[i+3] == "!saw") {
+				scripts.process.saw(item, resclItem * count, sawExcs);
+			} else {
+				scripts.process.crush(item, resclItem * count, "no exceptions", null, null);
+			}
+		}
+	}
+}
+
+
+# Extract binding reagent from armor and Khopesh
+# mods.bloodmagic.AlchemyTable.addRecipe(IItemStack output, IItemStack[] inputs, int syphon, int ticks, int minTier);
+mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:component:8> , [<bloodmagic:living_armour_helmet>]   , 300 , 40 , 3);
+mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:component:8> , [<bloodmagic:living_armour_chest>]    , 300 , 40 , 3);
+mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:component:8> , [<bloodmagic:living_armour_leggings>] , 300 , 40 , 3);
+mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:component:8> , [<bloodmagic:living_armour_boots>]    , 300 , 40 , 3);
+mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:component:8> , [<animus:kama_bound>]                 , 300 , 40 , 3);
+
+
+# Some troll items can be disassempled on crafting table
+# Using public function compressIt() to make Preston's blocks
+recipes.addShapeless("Disassemble troll column"       , <extrautils2:compressedcobblestone> * 4               , [<iceandfire:troll_weapon.column>]);
+recipes.addShapeless("Disassemble troll column_forest", compressIt(<minecraft:mossy_cobblestone>      , 1) * 4, [<iceandfire:troll_weapon.column_forest>]);
+recipes.addShapeless("Disassemble troll column_frost" , compressIt(<quark:biome_cobblestone:1>        , 1) * 4, [<iceandfire:troll_weapon.column_frost>]);
+recipes.addShapeless("Disassemble troll trunk"        , compressIt(<rustic:log:1>                     , 1) * 4, [<iceandfire:troll_weapon.trunk>]);
+recipes.addShapeless("Disassemble troll trunk_frost"  , compressIt(<integrateddynamics:menril_log>    , 1) * 4, [<iceandfire:troll_weapon.trunk_frost>]);

@@ -473,7 +473,10 @@ function addEquipment(iGroup as IData, entity as IEntityLivingBase, world as IWo
   var equipSequence = [4, 1, 2, 3, 0, 5] as int[];
 
   # Calculate probabilities
-  var tolerance = (world.dimension==0) ? 0.6d : 0.45d;
+  # bigger number - less chance
+  # 30% more armor in other dimensions than Overworld
+  val armChance = 0.8d;
+  var tolerance = (world.dimension==0) ? armChance : (armChance * 0.7d);
 
   for j in 0 to 6{
     if ( probs[j] > tolerance ) {
@@ -520,6 +523,11 @@ function addEquipment(iGroup as IData, entity as IEntityLivingBase, world as IWo
           }
 
           equip = buildTiCTool(i, fourMaterials, itemUtils.getItem(def).definition);
+
+          # Damage item
+          val rndDamage = (0.35d + random() / 2.0d) as float;
+          val dmg = min(equip.maxDamage, max(1, (equip.maxDamage as float * rndDamage) as int));
+          equip = equip.isDamageable ? (equip.withDamage(dmg)) : equip;
         }
       }
 
