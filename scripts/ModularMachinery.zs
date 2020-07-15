@@ -84,7 +84,7 @@ print("--- loading ModularMachinery.zs ---");
     recipes.addShapedMirrored("Machine Circuitry", 
     <modularmachinery:blockcasing:5>, 
     [[null, <immersiveengineering:wirecoil:5>, null],
-    [<modularmachinery:blockcasing>, <forestry:chipsets:3>.withTag({T: 3 as short}), <modularmachinery:blockcasing>], 
+    [<modularmachinery:blockcasing>, <forestry:chipsets:3>.withTag({}), <modularmachinery:blockcasing>], 
     [null, <modularmachinery:blockcasing>, null]]);
 
 # Modularium
