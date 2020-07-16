@@ -110,6 +110,10 @@ import mods.jei.JEI.removeAndHide as rh;
 	
 	] as IItemStack[];
 
+	for item in recipesToRemove {
+		recipes.remove(item);
+	}
+
 	<ore:stickIron>.remove(<advancedrocketry:productrod:1>);
 
 # Simplify tank
