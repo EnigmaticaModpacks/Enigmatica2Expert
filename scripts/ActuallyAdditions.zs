@@ -307,8 +307,10 @@ for i in 0 to listCatFur.length {
 
 # *=======   =======*
 
-	#mods.actuallyadditions.AtomicReconstructor.addRecipe(IItemStack output, IItemStack input, int energyUsed);
-	#mods.actuallyadditions.AtomicReconstructor.addRecipe(<minecraft:fire_charge>, <minecraft:coal:1>, 1000);
+# Black quartz
+val crushExceptions = "except: IECrusher SagMill Pulverizer AACrusher MekCrusher";
+scripts.process.crush(<ore:gemQuartzBlack>, <actuallyadditions:item_dust:7>, crushExceptions, null, null);
+scripts.process.crush(<ore:blockBlackQuartz>, <actuallyadditions:item_dust:7> * 9, crushExceptions ~ " Manufactory", null, null);
 
 # Recycle Quark crystals
 scripts.process.crush(<quark:crystal:1>, <actuallyadditions:item_crystal_shard>   * 3, "no exceptions", null, null);

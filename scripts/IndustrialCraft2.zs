@@ -2,7 +2,6 @@ import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.item.IIngredient;
 #modloaded ic2
-print("--- loading IndustrialCraft2.zs ---");
 
 # Hydrated Coal Dust recipe consumes containers that can store 1000mB + liquid, this fixes that
 	recipes.remove(<ic2:dust:3>);
@@ -181,4 +180,5 @@ print("--- loading IndustrialCraft2.zs ---");
 	recipes.remove(<ic2:dust:5>);
 	
 
-	print("--- IndustrialCraft2.zs initialized ---");
+# Energy crystal compat
+scripts.process.compress(<ic2:dust:6> * 9, <ic2:energy_crystal:27>, "except: compressor");

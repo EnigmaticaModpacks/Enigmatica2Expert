@@ -220,3 +220,6 @@ import crafttweaker.item.IIngredient as IIngredient;
 		[<appliedenergistics2:fluix_block>, <appliedenergistics2:energy_acceptor>, <appliedenergistics2:fluix_block>], 
 		[<teslacorelib:machine_case>, pearlFluix, <teslacorelib:machine_case>]]);
 	}
+	
+# Sky stone Dust
+scripts.process.crush(<appliedenergistics2:sky_stone_block>, <appliedenergistics2:material:45>, "Except: AEGrinder Pulverizer", null, null);
