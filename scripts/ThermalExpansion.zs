@@ -207,6 +207,13 @@ recipes.removeByRecipeName("thermalexpansion:tank_17");
 recipes.removeByRecipeName("thermalexpansion:tank_14");
 recipes.removeByRecipeName("thermalexpansion:tank_15");
 
+# More TE coolants
+mods.thermalexpansion.Coolant.addCoolant(<liquid:liquidhelium>,         3500000, 65);
+mods.thermalexpansion.Coolant.addCoolant(<liquid:liquid_nitrogen>,      2500000, 55);
+mods.thermalexpansion.Coolant.addCoolant(<liquid:ender_distillation>,   4000000, 70);
+mods.thermalexpansion.Coolant.addCoolant(<liquid:vapor_of_levity>,      4500000, 75);
+mods.thermalexpansion.Coolant.addCoolant(<liquid:blockfluidantimatter>, 5000000, 80);
+
 # Duct filling compat
 scripts.process.fill(<thermaldynamics:duct_0:6>,  <liquid:redstone>*200,  <thermaldynamics:duct_0:2>,  null);
 scripts.process.fill(<thermaldynamics:duct_0:7>,  <liquid:redstone>*200,  <thermaldynamics:duct_0:3>,  null);
