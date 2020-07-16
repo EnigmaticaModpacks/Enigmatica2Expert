@@ -305,23 +305,15 @@ for i in 0 to listCatFur.length {
 	mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreThorium>, 250);
 	mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreCinnabar>, 250);
 
-# *======= AtomicReconstructor =======*
+# *=======   =======*
 
 	#mods.actuallyadditions.AtomicReconstructor.addRecipe(IItemStack output, IItemStack input, int energyUsed);
 	#mods.actuallyadditions.AtomicReconstructor.addRecipe(<minecraft:fire_charge>, <minecraft:coal:1>, 1000);
 
-	#mods.actuallyadditions.AtomicReconstructor.removeRecipe(IItemStack output);
-	#mods.actuallyadditions.AtomicReconstructor.removeRecipe(<minecraft:coal>);
-	
-# *======= Compost =======*
-
-	#mods.actuallyadditions.Compost.addRecipe(IItemStack output, IItemStack outputDisplay, IItemStack input, IItemStack inputDisplay);
-	#mods.actuallyadditions.Compost.addRecipe(<minecraft:dirt>, <minecraft:dirt>, <minecraft:sugar>, <minecraft:snow>);
-	
-	#mods.actuallyadditions.Compost.removeRecipe(IItemStack output);
-	#mods.actuallyadditions.Compost.removeRecipe(<actuallyadditions:item_canola_seed>);
-	
-# *======= Empowerer =======*
-
-	#mods.actuallyadditions.Empowerer.addRecipe(IItemStack output, IItemStack input, IItemStack modifier1, IItemStack modifier2, IItemStack modifier3, IItemStack modifier4, int energyPerStand, int time, @Optional float[] particleColourArray);
-	#mods.actuallyadditions.Empowerer.addRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, <minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>, 500, 100, [0.5, 0.3, 0.2]);
+# Recycle Quark crystals
+scripts.process.crush(<quark:crystal:1>, <actuallyadditions:item_crystal_shard>   * 3, "no exceptions", null, null);
+scripts.process.crush(<quark:crystal:6>, <actuallyadditions:item_crystal_shard:1> * 3, "no exceptions", null, null);
+scripts.process.crush(<quark:crystal:5>, <actuallyadditions:item_crystal_shard:2> * 3, "no exceptions", null, null);
+scripts.process.crush(<quark:crystal:8>, <actuallyadditions:item_crystal_shard:3> * 3, "no exceptions", null, null);
+scripts.process.crush(<quark:crystal:4>, <actuallyadditions:item_crystal_shard:4> * 3, "no exceptions", null, null);
+scripts.process.crush(<quark:crystal>  , <actuallyadditions:item_crystal_shard:5> * 3, "no exceptions", null, null);

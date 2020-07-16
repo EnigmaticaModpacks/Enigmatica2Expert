@@ -369,4 +369,6 @@ remakeChest("Any Chest", <minecraft:chest>, logsFiltered);
 	rh(<extendedcrafting:material:128>);
 	rh(<extendedcrafting:material:129>);
 	
-print("--- MiscRecipes.zs initialized ---");
+
+# Arrows recycle
+scripts.process.crush(<minecraft:arrow>, <minecraft:flint>, "no exceptions", [<ore:dustWood>.firstItem], [0.2f]);
