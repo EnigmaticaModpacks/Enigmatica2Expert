@@ -114,7 +114,30 @@ mods.nuclearcraft.melter.addRecipe(<ore:obsidian>, <liquid:obsidian> * 144);
 	mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(<enderio:item_alloy_endergy_ingot:5>);
 	mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(<enderio:item_alloy_endergy_ingot:6>);
 
-# *======= Recipes =======*
+# *=======  =======*
 
-	
-	print("--- NuclearCraft.zs initialized ---");
+
+# End stone dust compat
+scripts.process.crush(<minecraft:end_stone>, <nuclearcraft:gem_dust:11>, "except: manufactory", null, null);
+
+# HSLA ingots
+scripts.process.alloy([<ore:ingotIron> * 15, <ore:dustCarbonManganese>], <ore:ingotHSLASteel>.firstItem * 16, "except: alloyFurnace");
+
+# S'More ingredients processing
+scripts.process.extract(<minecraft:porkchop>, <nuclearcraft:gelatin> * 8, "except: manufactory");
+scripts.process.extract(<ore:fish>,           <nuclearcraft:gelatin> * 4, "except: manufactory");
+
+scripts.process.crush(<nuclearcraft:roasted_cocoa_beans>, <nuclearcraft:ground_cocoa_nibs>, "except: manufactory", null, null);
+recipes.addShapeless("Crush Cocoa", <nuclearcraft:ground_cocoa_nibs>, [<ore:pestleAndMortar>, <nuclearcraft:roasted_cocoa_beans>]);
+
+scripts.process.squeeze(<nuclearcraft:ground_cocoa_nibs>, <liquid:cocoa_butter> * 144, "except: FluidExtractor", <nuclearcraft:cocoa_solids>);
+
+scripts.process.compress(<harvestcraft:flouritem> * 2, <nuclearcraft:graham_cracker>, "except: Pressurizer");
+
+# Electrolyzer recipes to other machines
+scripts.process.electrolyze(<fluid:hydrofluoric_acid>  *1000, [<fluid:hydrogen>   *500, <fluid:fluorine>  *500], "except: NCElectrolyzer");
+scripts.process.electrolyze(<fluid:naoh>               *666,  [<fluid:sodium>     *144, <fluid:oxygen>    *500, <fluid:water>*1000], "except: NCElectrolyzer");
+scripts.process.electrolyze(<fluid:koh>                *666,  [<fluid:potassium>  *144, <fluid:water>     *1000], "except: NCElectrolyzer");
+scripts.process.electrolyze(<fluid:alumina>            *144,  [<fluid:aluminum>   *288, <fluid:oxygen>    *3000], "except: NCElectrolyzer");
+scripts.process.electrolyze(<fluid:heavywater>         *1000, [<fluid:deuterium>  *1000, <fluid:tritium>  *50, <fluid:oxygen>*500], "except: NCElectrolyzer");
+scripts.process.electrolyze(<fluid:ic2heavy_water>     *1000, [<fluid:deuterium>  *1000, <fluid:tritium>  *50, <fluid:oxygen>*500], "except: NCElectrolyzer");
