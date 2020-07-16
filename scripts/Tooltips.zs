@@ -584,3 +584,23 @@ for item in thaumcraftHintItems {
 					format.lightPurple(((450 as float) / 100) as string) ~ format.darkPurple(" mB UU"));
 
 	<modularmachinery:itemmodularium>.displayName = "Modularium Alloy";
+	
+
+# Turbine Fuel description
+<advgenerators:turbine_controller>.addShiftTooltip(
+	format.darkAqua("Canola Oil")         ~  format.gray(" 10 MJ/mB\n") ~
+	format.darkAqua("Crude Oil")          ~  format.gray(" 25 MJ/mB\n") ~
+	format.darkAqua("Biomass")            ~  format.gray(" 30 MJ/mB\n") ~
+	format.darkAqua("Biodiesel")          ~  format.gray(" 40 MJ/mB\n") ~
+	format.darkAqua("Crystallized Oil")   ~  format.gray(" 40 MJ/mB\n") ~
+	format.darkAqua("Biogas")             ~  format.gray(" 50 MJ/mB\n") ~
+	format.darkAqua("Ethylene")           ~  format.gray(" 80 MJ/mB\n") ~
+	format.darkAqua("Biofuel")            ~  format.gray(" 90 MJ/mB\n") ~
+	format.darkAqua("Rocket Fuel (EiO)")  ~  format.gray(" 95 MJ/mB\n") ~
+	format.darkAqua("Refined Fuel")       ~ format.gray(" 105 MJ/mB\n") ~
+	format.darkAqua("Rocket Fuel (AR)")   ~ format.gray(" 110 MJ/mB\n") ~
+	format.darkAqua("Empowered Oil")      ~ format.gray(" 120 MJ/mB")
+,format.darkAqua("<<Hold shift to see fuel list>>"));
+
+# Antimatter
+<forge:bucketfilled>.withTag({FluidName: "blockfluidantimatter", Amount: 1000}).addTooltip(format.aqua("To obtain strike Life Essense with lightning"));
