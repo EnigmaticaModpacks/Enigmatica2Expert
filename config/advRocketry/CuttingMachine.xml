@@ -334,8 +334,4 @@
 		<input><itemStack>extrautils2:ironwood_log 1 1</itemStack></input>
 		<output><itemStack>extrautils2:ironwood_planks 10 1</itemStack></output></Recipe>
 
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>iceandfire:dreadwood_log 1 0</itemStack></input>
-		<output><itemStack>iceandfire:dreadwood_planks 10 0</itemStack></output></Recipe>
-
 </Recipes>

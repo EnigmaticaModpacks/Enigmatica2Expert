@@ -116,4 +116,3 @@ saw(<integrateddynamics:menril_log> , <integrateddynamics:menril_planks> , "stri
 saw(<advancedrocketry:alienwood>    , <advancedrocketry:planks>          , "strict: manufactory mekSawmill");
 saw(<extrautils2:ironwood_log>      , <extrautils2:ironwood_planks>      , "strict: manufactory mekSawmill");
 saw(<extrautils2:ironwood_log:1>    , <extrautils2:ironwood_planks:1>    , "strict: manufactory mekSawmill");
-saw(<iceandfire:dreadwood_log>      , <iceandfire:dreadwood_planks>      , "no exceptions");
