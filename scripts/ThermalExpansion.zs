@@ -207,6 +207,27 @@ recipes.removeByRecipeName("thermalexpansion:tank_17");
 recipes.removeByRecipeName("thermalexpansion:tank_14");
 recipes.removeByRecipeName("thermalexpansion:tank_15");
 
+# Remove old non-working reservior clearings
+recipes.removeByRecipeName("thermalexpansion:reservoir_10");
+recipes.removeByRecipeName("thermalexpansion:reservoir_11");
+recipes.removeByRecipeName("thermalexpansion:reservoir_12");
+recipes.removeByRecipeName("thermalexpansion:reservoir_13");
+recipes.removeByRecipeName("thermalexpansion:reservoir_14");
+
+# Clear content of reservior and tank
+for i in 0 to 5 {
+	val reservior as IItemStack = <thermalexpansion:reservoir>.definition.makeStack(i) as IItemStack;
+	clearFluid(reservior);
+	# mods.jei.JEI.addItem(reservior); # Tanks cant be added to JEI
+}
+clearFluid(<thermalexpansion:tank>.withTag({}));
+
+# Add to Jei
+mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 1 as byte}));
+mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 2 as byte}));
+mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 3 as byte}));
+mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 4 as byte}));
+
 # More TE coolants
 mods.thermalexpansion.Coolant.addCoolant(<liquid:liquidhelium>,         3500000, 65);
 mods.thermalexpansion.Coolant.addCoolant(<liquid:liquid_nitrogen>,      2500000, 55);
