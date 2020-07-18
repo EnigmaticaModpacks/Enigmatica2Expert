@@ -326,13 +326,13 @@ remakeChest("Any Chest", <minecraft:chest>, logsFiltered);
 	recipes.addShaped("Hopper Aluminum",
 	<minecraft:hopper>, 
 	[[<ore:plateAluminum>, null, <ore:plateAluminum>],
-	[<ore:plateAluminum>, <minecraft:chest>, <ore:plateAluminum>], 
+	[<ore:plateAluminum>, <ore:chest>, <ore:plateAluminum>], 
 	[null, <ore:plateAluminum>, null]]);
 	
 	recipes.addShaped("Hopper Iron",
 	<minecraft:hopper>, 
 	[[<ore:plateIron>, null, <ore:plateIron>],
-	[<ore:plateIron>, <minecraft:chest>, <ore:plateIron>], 
+	[<ore:plateIron>, <ore:chest>, <ore:plateIron>], 
 	[null, <ore:plateIron>, null]]);
 	
 # Sticks
