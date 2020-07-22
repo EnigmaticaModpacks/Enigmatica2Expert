@@ -2878,7 +2878,7 @@
           "ismain:1": 1,
           "repeat_relative:1": 1,
           "name:8": "Welcome",
-          "desc:8": "Welcome to Enigmatica 2: Expert! This modpack is designed to challenge the player through various means, especially harder recipes. I advice that you automate crafting of as much as possible, as early as possible. Things are going to get complicated. \n\nCheck the checkbox to get your starterkit.§d§d§0 \n\nI suggest you make a Backpack out of the Tanned Leather \u0026 Wooden Frame.\n\nGood luck!§0"
+          "desc:8": "Welcome to Enigmatica 2: Expert - Extended! This modpack is designed to challenge the player through various means, especially harder recipes. I advice that you automate crafting of as much as possible, as early as possible. Things are going to get complicated. \n\nCheck the checkbox to get your starterkit.§d§d§0 \n\nI suggest you make a Backpack out of the Tanned Leather \u0026 Wooden Frame.\n\nGood luck!§0"
         }
       },
       "tasks:9": {
@@ -73145,7 +73145,7 @@
   },
   "questSettings:10": {
     "betterquesting:10": {
-      "pack_name:8": "Enigmatica 2: Expert",
+      "pack_name:8": "Enigmatica 2: Expert - Extended",
       "hardcore:1": 0,
       "editmode:1": 0,
       "livesMax:4": 10,
