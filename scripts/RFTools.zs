@@ -83,7 +83,7 @@ print("--- loading RFTools.zs ---");
 	<rftools:shape_card:2>, 
 	[[<rftools:machine_frame>, <tconstruct:hammer_head>.withTag({Material: "osgloglas"}), <rftools:machine_frame>],
 	[<tconstruct:hammer_head>.withTag({Material: "manyullyn"}), <thermalexpansion:frame:146>, <tconstruct:hammer_head>.withTag({Material: "psimetal"})], 
-	[<rftools:machine_frame>, <tconstruct:hammer_head>.withTag({Material: "enderium_plustic"}), <rftools:machine_frame>]]);
+	[<rftools:machine_frame>, <tconstruct:hammer_head>.withTag({Material: "enderium"}), <rftools:machine_frame>]]);
 	
 	recipes.addShaped("Quarry Card Clearing to Normal", 
 	<rftools:shape_card:2>, 
