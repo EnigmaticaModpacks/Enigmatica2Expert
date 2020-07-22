@@ -397,5 +397,11 @@ recipes.addShaped(<travelersbackpack:backpack_tank>, [
 	[<openblocks:tank>],
 	[<ic2:casing:3>]]);
 
+# Remake Sleeping bag (prevent conflict)
+remakeEx(<travelersbackpack:sleeping_bag_bottom>, [[<quark:quilted_wool:14>, <quark:quilted_wool:14>, <quark:quilted_wool>]]);
+
+
+# *======= Recycles =======*
+
 # Arrows recycle
 scripts.process.crush(<minecraft:arrow>, <minecraft:flint>, "no exceptions", [<ore:dustWood>.firstItem], [0.2f]);
