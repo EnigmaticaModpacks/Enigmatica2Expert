@@ -204,3 +204,10 @@ remake("Mob Crusher",   <industrialforegoing:mob_relocator>, [
 	[<ore:itemRubber>, <redstonearsenal:tool.sword_flux>.anyDamage(), <ore:itemRubber>],
 	[<randomthings:imbue:2>, <teslacorelib:machine_case>, <randomthings:imbue:2>],
 	[<ore:gearGold>, <extrautils2:user>, <ore:gearGold>]]);
+
+# More sludge outputs
+mods.industrialforegoing.SludgeRefiner.add(<rustic:fertile_soil>, 10);
+mods.industrialforegoing.SludgeRefiner.add(<thermalfoundation:material:816>, 10);
+mods.industrialforegoing.SludgeRefiner.add(<forestry:fertilizer_bio>, 10);
+mods.industrialforegoing.SludgeRefiner.add(<forestry:mulch>, 10);
+mods.industrialforegoing.SludgeRefiner.add(<thaumcraft:nugget:10>, 10);
