@@ -34,7 +34,7 @@
   {"id": "quark:crystal:7"                   , "weight": 10  , "target": "pink" }  ,
   {"id": "quark:crystal:8"                   , "weight": 10  , "target": "black" }  ,
   {"id": "rats:marbled_cheese_raw"           , "weight": 10  , "target": "yellow" }  ,
-  {"id": "thaumcraft:stone_porous"           , "weight": 20  , "target": "silver" }  ,
-  {"id": "twilightforest:giant_cobblestone"  , "weight": 5   , "target": "silver" }  
+  {"id": "thaumcraft:stone_porous"           , "weight": 5   , "target": "silver" }  ,
+  {"id": "twilightforest:giant_cobblestone"  , "weight": 1   , "target": "silver" }  
 ]
 }
