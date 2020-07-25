@@ -274,3 +274,15 @@ mods.tconstruct.Casting.addTableRecipe(<tconstruct:edible:1>, null, <liquid:blue
 # Slime blocks
 mods.tconstruct.Casting.addBasinRecipe(<tconstruct:slime_congealed:2>, null, <liquid:purpleslime>, 1000);
 mods.tconstruct.Casting.addBasinRecipe(<tconstruct:slime_congealed:1>, null, <liquid:blueslime>  , 1000);
+
+# Mud balls smelted into TCon bricks
+furnace.remove(<biomesoplenty:mud_brick>);
+furnace.addRecipe(<tconstruct:materials:1>, <biomesoplenty:mudball>);
+
+# Mud bricks from TCon bricks
+recipes.remove(<biomesoplenty:mud_brick_block>);
+recipes.addShaped(<biomesoplenty:mud_brick_block> * 2, [
+	[<tconstruct:materials:1>, <tconstruct:materials:1>, <tconstruct:materials:1>],
+	[<tconstruct:materials:1>, null, <tconstruct:materials:1>], 
+	[<tconstruct:materials:1>, <tconstruct:materials:1>, <tconstruct:materials:1>]
+]);
