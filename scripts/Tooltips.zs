@@ -1945,14 +1945,11 @@ for item in thaumcraftHintItems {
 		if (i%3==0) {
 			var item = itemUtils.getItem(uumatterTooltips[i], uumatterTooltips[i+1]);
 			if (!isNull(item)) {
-				item.addTooltip(format.darkPurple("~") ~ format.lightPurple(((uumatterTooltips[i+2] as float) / 100) as string) ~ format.darkPurple(" mB UU"));
+				item.only(function(item){return !item.hasTag;}).addTooltip(format.darkPurple("~") ~ format.lightPurple(((uumatterTooltips[i+2] as float) / 100) as string) ~ format.darkPurple(" mB UU"));
 			}
 		}
 	}
 	
-	<extrautils2:machine>.only(function(item){return !item.hasTag;})
-	.addTooltip(format.darkPurple("~") ~ format.lightPurple(((450 as float) / 100) as string) ~ format.darkPurple(" mB UU"));
-
 	<modularmachinery:itemmodularium>.displayName = "Modularium Alloy";
 
 
