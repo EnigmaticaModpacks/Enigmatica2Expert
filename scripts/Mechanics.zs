@@ -25,17 +25,15 @@ mods.mechanics.removeTubeRecipe(<minecraft:stone>);
 mods.mechanics.removeTubeRecipe(<minecraft:cobblestone>);
 
 # Rework of crushed obsidian
-val obsDust  = <thermalfoundation:material:770>;
-val obsBlock = <minecraft:obsidian>;
-
-mods.immersiveengineering.Crusher.removeRecipesForInput(obsBlock);
-mods.integrateddynamics.Squeezer.removeRecipesWithOutput(obsDust);
-mods.integrateddynamics.MechanicalSqueezer.removeRecipesWithOutput(obsDust);
-mods.mekanism.enrichment.removeRecipe(obsBlock);
-mods.appliedenergistics2.Grinder.removeRecipe(obsBlock);
-mods.actuallyadditions.Crusher.removeRecipe(obsDust);
-
-mods.mechanics.addCrushingBlockRecipe(obsBlock, [obsDust * 2] as IItemStack[], [1] as double[]);
+// val obsDust  = <thermalfoundation:material:770>;
+// val obsBlock = <minecraft:obsidian>;
+// mods.immersiveengineering.Crusher.removeRecipesForInput(obsBlock);
+// mods.integrateddynamics.Squeezer.removeRecipesWithOutput(obsDust);
+// mods.integrateddynamics.MechanicalSqueezer.removeRecipesWithOutput(obsDust);
+// mods.mekanism.enrichment.removeRecipe(obsBlock);
+// mods.appliedenergistics2.Grinder.removeRecipe(obsBlock);
+// mods.actuallyadditions.Crusher.removeRecipe(obsDust);
+// mods.mechanics.addCrushingBlockRecipe(obsBlock, [obsDust * 2] as IItemStack[], [1] as double[]);
 
 # Blasting powder
 recipes.addShapeless(<mechanics:bursting_powder>, [
@@ -56,6 +54,7 @@ addBurstSeedRecipe(<exnihilocreatio:block_andesite_crushed>, <mechanics:burst_se
 addBurstSeedRecipe(<exnihilocreatio:block_diorite_crushed>, <mechanics:burst_seed_diorite>);
 addBurstSeedRecipe(<exnihilocreatio:block_granite_crushed>, <mechanics:burst_seed_granite>);
 
+# Empty rod remake
 recipes.addShaped(<mechanics:empty_rod>, [
 [<mechanics:heavy_nugget>, <ore:blockGlass>, <mechanics:heavy_nugget>],
 [<mechanics:heavy_nugget>, <ore:blockGlass>, <mechanics:heavy_nugget>],
