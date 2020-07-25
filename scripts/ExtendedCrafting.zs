@@ -126,3 +126,10 @@ recipes.addShaped(<extendedcrafting:interface>, [
 	[<ore:ingotBlackIron>, <extendedcrafting:material:10>, <ore:ingotBlackIron>],
 	[<extendedcrafting:material:17>, <extendedcrafting:frame>, <extendedcrafting:material:17>],
 	[<ore:ingotBlackIron>, <extendedcrafting:material:2>, <ore:ingotBlackIron>]]);
+
+
+# Ender Ingot
+// alloy(input as IIngredient[], output as IItemStack, exceptions as string)
+val enderIngot = <extendedcrafting:material:36>;
+recipes.remove(enderIngot);
+scripts.process.alloy([<ore:ingotPlatinum>.firstItem, <ore:dustEnderPearl>.firstItem], enderIngot, "No exceptions");

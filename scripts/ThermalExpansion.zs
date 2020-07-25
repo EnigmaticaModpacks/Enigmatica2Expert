@@ -186,10 +186,6 @@ for slab in <ore:slabWood>.items {
 	mods.thermalexpansion.Transposer.addFillRecipe(<thermalfoundation:material:166>, <nuclearcraft:alloy:8>, <liquid:glowstone> * 250, 5000);
 	mods.thermalexpansion.InductionSmelter.addRecipe(<nuclearcraft:alloy:8> * 4, <thermalfoundation:material:130>, <thermalfoundation:material:129> * 3, 20000);
 
-# Enderium Ingots
-	mods.thermalexpansion.Transposer.addFillRecipe(<thermalfoundation:material:167>, <nuclearcraft:alloy:9>, <liquid:ender> * 250, 10000);
-	mods.thermalexpansion.InductionSmelter.addRecipe(<nuclearcraft:alloy:9> * 4, <thermalfoundation:material:134>, <thermalfoundation:material:131> * 3, 25000);
-
 # Hardened Cell Frame
 	mods.actuallyadditions.Empowerer.addRecipe(<thermalexpansion:frame:129>, <thermalexpansion:frame:128>, <immersiveengineering:material:2>, <thermalfoundation:material:354>, <thermalfoundation:material:290>, <mekanism:basicblock:8>, 2500000, 200, [0.25, 0.25, 0.29]);
 
@@ -286,3 +282,17 @@ mods.thermalexpansion.Coolant.addCoolant(<liquid:liquid_nitrogen>, 2500000, 55);
 mods.thermalexpansion.Coolant.addCoolant(<liquid:ender_distillation>, 4000000, 70);
 mods.thermalexpansion.Coolant.addCoolant(<liquid:vapor_of_levity>, 4500000, 75);
 mods.thermalexpansion.Coolant.addCoolant(<liquid:blockfluidantimatter>, 5000000, 80);
+
+# Enderium harder recipe
+recipes.remove(<ore:dustEnderium>.firstItem * 4);
+
+# Add alloy with ingots for all machines
+scripts.process.alloy([
+	<ore:ingotEndSteel>.firstItem * 2, 
+	<tconevo:metal:35>, 
+	<ore:dustEnderPearl>.firstItem * 4
+	], <ore:ingotEnderium>.firstItem * 2, "No exceptions");
+
+# Alloy in smeltery
+mods.tconstruct.Alloy.removeRecipe(<liquid:enderium>);
+mods.tconstruct.Alloy.addRecipe(<liquid:enderium> * 288, [<liquid:end_steel> * 288, <liquid:energetic_metal> * 144,  <liquid:ender> * 1000]);

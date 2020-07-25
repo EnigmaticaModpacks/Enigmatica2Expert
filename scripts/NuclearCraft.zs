@@ -176,3 +176,8 @@ scripts.process.electrolyze(<fluid:koh>                *666,  [<fluid:potassium>
 scripts.process.electrolyze(<fluid:alumina>            *144,  [<fluid:aluminum>   *288, <fluid:oxygen>    *3000], "except: NCElectrolyzer");
 scripts.process.electrolyze(<fluid:heavywater>         *1000, [<fluid:deuterium>  *1000, <fluid:tritium>  *50, <fluid:oxygen>*500], "except: NCElectrolyzer");
 scripts.process.electrolyze(<fluid:ic2heavy_water>     *1000, [<fluid:deuterium>  *1000, <fluid:tritium>  *50, <fluid:oxygen>*500], "except: NCElectrolyzer");
+
+# Remove Lead platinum alloy (used only to two-step craft for enderium)
+mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(<ore:ingotLeadPlatinum>.firstItem * 4);
+mods.nuclearcraft.infuser.removeRecipeWithOutput(<ore:ingotEnderium>.firstItem);
+rh(<ore:ingotLeadPlatinum>.firstItem);
