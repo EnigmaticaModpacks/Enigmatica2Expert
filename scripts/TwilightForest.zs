@@ -43,7 +43,7 @@ val rockRecycleTable as IItemStack[][IIngredient] = {
 };
 
 for input, output in rockRecycleTable{
-  scripts.process.crushRock(input, output, "No exceptions");
+  scripts.process.crushRock(input, output, [0.8, 0.3, 0.1], "No exceptions");
 }
 
 # Gold minotaur axe

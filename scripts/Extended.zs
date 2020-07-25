@@ -95,7 +95,7 @@ recipes.addShapeless("Blaze Powder", <minecraft:blaze_powder>, [<minecraft:blaze
 // 		val elexir = <rustic:elixir>.withTag({ElixirEffects:[
 // 			{Effect:"minecraft:speed",Duration:1800000,Amplifier:8},
 // 			{Effect:"rustic:ironskin",Duration:9600000,Amplifier:8}],
-// 			ench: [{id:0, lvl:0}], HideFlags: 1});
+// 			ench:[{id:0,lvl:0}],HideFlags:1});
 
 // 		val sndr = event.commandSender;
 // 		val entItem = elexir.createEntityItem(sndr.world,
@@ -117,37 +117,3 @@ recipes.addShaped(<bedrockores:bedrock_miner>, [
 	[<ore:dustBedrock>, <immersiveengineering:metal_decoration0:5>, <ore:dustBedrock>],
 	[<ore:blockRedstone>, <immersiveengineering:metal_device1:7>, <ore:blockRedstone>],
 	[<ore:dustBedrock>, <immersiveengineering:metal_device1:7>, <ore:dustBedrock>]]);
-
-
-/* 
----------------------
-ITEMS OF INTEREST
----------------------
-<twilightforest:firefly>
-<twilightforest:raw_venison>
-<twilightforest:cooked_venison>
-<randomthings:spectreilluminator>
-
-<bibliocraft:enchantedplate>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 0 as short}]})
-<thaumcraft:nugget:10> -- Rare Earth
-<randomthings:ingredient:2> -- Ectoplasm
-<tombmanygraves:death_list>
-<randomthings:rezstone> -- Bloodstone
-<advancedrocketry:blocklens> - Lence (required precision assembler)
-<enderio:block_holy_fog> -- Nano-particles
-randomthings:strong_collapse -- Turnd upsidedown potion
-
-<liquid:hot_spring_water>
-<liquid:liquid_sunshine>
-<liquid:blockfluiddirt> -- Liquid Dirt from Animus
-<liquid:enrichedlava>
-<liquid:liquidchorus>
-<liquid:menrilresin>
-<liquid:crystal> -- Crystallized obsidian
-<liquid:amber> -- Crystallized amber
-
----------------------
-CRAFTS OF INTEREST
----------------------
-mods.rt.RandomThingsTweaker.addAnvilRecipe(<cyclicmagic:book_ender>, <draconicevolution:draconium_block>, <draconicevolution:dislocator>, 5);
- */

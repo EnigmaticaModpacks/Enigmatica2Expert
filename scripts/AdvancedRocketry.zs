@@ -126,7 +126,7 @@ recipes.addShaped(<advancedrocketry:liquidtank>, [
 recipes.addShapeless("Clearing AdvRock Tank", <advancedrocketry:liquidtank>, [<advancedrocketry:liquidtank>]);
 
 # Mushrooms as energy providers
-mods.thermalexpansion.EnervationDynamo.addFuel(<advancedrocketry:electricmushroom>, 6000000);
+mods.thermalexpansion.EnervationDynamo.addFuel(<advancedrocketry:electricmushroom>, 60000000);
 
 # Crystalls recycling
 val CLN = <ore:nuggetCrystaltine>.firstItem;

@@ -227,9 +227,13 @@ recipes.removeByRecipeName("thermalexpansion:reservoir_14");
 for i in 0 to 5 {
 	val reservior as IItemStack = <thermalexpansion:reservoir>.definition.makeStack(i) as IItemStack;
 	clearFluid(reservior);
-	# mods.jei.JEI.addItem(reservior); # Tanks cant be added to JEI
 }
 clearFluid(<thermalexpansion:tank>.withTag({}));
+
+mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 1 as byte}));
+mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 2 as byte}));
+mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 3 as byte}));
+mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 4 as byte}));
 
 # Duct filling compat
 scripts.process.fill(<thermaldynamics:duct_0:6>,  <liquid:redstone>*200,  <thermaldynamics:duct_0:2>,  null);

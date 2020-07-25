@@ -393,3 +393,6 @@ remake("Mek Cube 3", <mekanism:energycube>.withTag({tier: 3}), [[<ore:alloyUltim
 # Also Teleporter
 recipes.remove(<mekanism:machineblock:11>);
 recipes.addShaped("Mek Teleporter", <mekanism:machineblock:11>.withTag({}), [[<ore:circuitBasic>, <mekanism:basicblock:8>, <ore:circuitBasic>],[<mekanism:basicblock:8>, <mekanism:teleportationcore>, <mekanism:basicblock:8>], [<ore:circuitBasic>, <mekanism:basicblock:8>, <ore:circuitBasic>]]);
+
+# Cardboxes from Forestry's Carton
+remakeEx(<mekanism:cardboardbox>, [[<forestry:carton>, <forestry:carton>, <forestry:carton>],[<forestry:carton>, null, <forestry:carton>], [<forestry:carton>, <forestry:carton>, <forestry:carton>]]);

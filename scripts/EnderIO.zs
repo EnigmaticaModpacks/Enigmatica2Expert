@@ -241,9 +241,10 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<enderio:item_material:72>, <ore:
 	<immersiveengineering:material:7>, 20*4, 2560, [<ore:cropNetherWart>*4, <ore:clay>*6], "Alloying");
 
 # Remake binder
-remake("Conduit Binder Composite", <enderio:item_material:22> * 12, [
+recipes.remove(<enderio:item_material:22> * 8);
+makeEx(<enderio:item_material:22> * 12, [
 	[<ore:dust>, <ore:materialWoolEnergetic>, <ore:dust>],
-	[<ore:dustClay>, <liquid:sand>*1000, <ore:dustClay>],
+	[<ore:dustClay>, <liquid:sand> * 1000, <ore:dustClay>],
 	[<ore:dust>, <ore:materialWoolEnergetic>, <ore:dust>]]);
 
 # Simplifi Niard
@@ -324,3 +325,35 @@ recipes.addShaped(<enderio:item_conduit_facade> * 8, [
 
 # Nutritious stick craft
 mods.inworldcrafting.FluidToItem.transform(<enderio:item_material:8>, <fluid:nutrient_distillation>, [<minecraft:stick>]);
+
+# Remove enderium and enderium base recipes
+mods.enderio.AlloySmelter.removeRecipe(<thermalfoundation:material:167>);
+mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:39>);
+rh(<enderio:item_material:39>);
+
+# Avaritia Ender IO integration
+#Infinity ball from all other balls and infinity catalyst
+recipes.remove(<avaritiaio:grindingballinfinity> * 64);
+val grindingBalls = [
+<enderio:item_alloy_ball>,
+<enderio:item_alloy_ball:1>,
+<enderio:item_alloy_ball:2>,
+<enderio:item_alloy_ball:3>,
+<enderio:item_alloy_ball:4>,
+<enderio:item_alloy_ball:5>,
+<enderio:item_alloy_ball:6>,
+<enderio:item_alloy_ball:7>,
+<enderio:item_alloy_ball:8>,
+<enderio:item_alloy_ball:9>,
+<enderio:item_material:57>,
+<enderio:item_material:58>,
+<enderio:item_material:59>,
+<enderio:item_alloy_endergy_ball:1>,
+<enderio:item_alloy_endergy_ball:2>,
+<enderio:item_alloy_endergy_ball:3>,
+<enderio:item_alloy_endergy_ball:4>,
+<avaritiaio:grindingballneutronium>,
+] as IItemStack[];
+
+mods.extendedcrafting.CombinationCrafting.addRecipe(<avaritiaio:grindingballinfinity> * 2, 2000000000, 20000000, <avaritia:resource:5>, grindingBalls);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<avaritiaio:grindingballinfinity> * 2, 2000000000, 20000000, <avaritiaio:grindingballinfinity>, grindingBalls);

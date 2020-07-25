@@ -311,7 +311,7 @@ recipes.addShaped("cyclicmagic_heart_toxic", <cyclicmagic:heart_toxic>, [
 # Spring water recipe
 mods.iceandfire.recipes.addIceDragonForgeRecipe( 
     <biomesoplenty:jar_filled:1>, 
-    <minecraft:water_bucket>, 
+    <forge:bucketfilled>.withTag({FluidName: "ic2hot_water", Amount: 1000}), 
     <forge:bucketfilled>.withTag({FluidName: "hot_spring_water", Amount: 1000}));
 
 # Heart container recipe

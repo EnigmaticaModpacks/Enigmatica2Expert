@@ -39,5 +39,5 @@ import mods.jei.JEI.removeAndHide as rh;
 # Get rid of recipe that uses every weapon in game
 remakeEx(<plethora:module:1>, [
 	[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],
-	[<ore:blockGlass>, <ore:gemDiamond>, <actuallyadditions:block_laser_relay>],
+	[<ore:blockGlass>, gemDiamondRat, <actuallyadditions:block_laser_relay>],
 	[null, null, <ore:ingotIron>]]);

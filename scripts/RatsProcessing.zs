@@ -86,7 +86,7 @@ static matTypes as string[] = ["ingot", "gem", "dust"] as string[];
 function jaopcaGetEntry(item as IItemStack) as OreEntry{
 	for testJ in jaopcaAllOre {
     for iType in matTypes {
-		  var getByType = testJ.getOreDictEntry(iType).firstItem;
+      var getByType = testJ.getOreDictEntry(iType).firstItem;
 
       if (!isNull(getByType) && ((getByType has item)||(item has getByType))) {
         return testJ;
@@ -114,6 +114,8 @@ for poop in listRatPoop{
       
       if(!isNull(poopEntry)) { # Check if listed item exist (can happen if mod was removed)
 
+        // scripts.process.beneficate(poop, poopEntry, "No Exceptions");
+
         var poopOreName = poopEntry.oreName.toLowerCase();
         var poopIngot   = poopEntry.getItemStack("ingot");
         var poopDust    = poopEntry.getItemStack("dust");
@@ -140,7 +142,7 @@ for poop in listRatPoop{
         # Process Everything
         # ########################
         if(!isNull(poopIngotOrGemOrDust)){
-          //mods.astralsorcery.StarlightInfusion.addInfusion(IItemStack input, IItemStack output, boolean consumeMultiple, float consumptionChance, int craftingTickTime);
+          # mods.astralsorcery.StarlightInfusion.addInfusion(IItemStack input, IItemStack output, boolean consumeMultiple, float consumptionChance, int craftingTickTime);
           mods.astralsorcery.StarlightInfusion.addInfusion(poop, poopIngotOrGemOrDust*2, false, 0.7, 200);
         }
         
