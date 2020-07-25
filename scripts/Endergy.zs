@@ -2,6 +2,8 @@ import mods.jei.JEI.removeAndHide as rh;
 import mods.astralsorcery.Utils;
 import crafttweaker.liquid.ILiquidDefinition;
 import mods.nuclearcraft.melter;
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 
 # Remove Weak Conduits and unused alloys
 rh(<enderio:block_alloy_endergy>);
@@ -28,19 +30,12 @@ rh(<enderio:item_capacitor_grainy>);
 rh(<enderio:item_capacitor_silver>);
 rh(<enderio:item_capacitor_energetic_silver>);
 rh(<enderio:item_capacitor_vivid>);
+recipes.removeByRecipeName("enderio:capacitor_crystalline_alt");
 
 # Remove liquids of removed alloys
 mods.tconstruct.Melting.removeRecipe(<liquid:crude_steel>);
 mods.tconstruct.Melting.removeRecipe(<liquid:energetic_silver>);
 mods.tconstruct.Melting.removeRecipe(<liquid:vivid_alloy>);
-
-# Crystalline Capacitor
-recipes.remove(<enderio:item_capacitor_crystalline>);
-recipes.addShapedMirrored("Crystaltine Capacitor",
-<enderio:item_capacitor_crystalline>,
-[[null,<ore:ingotCrystaltine>, null],
-[<enderio:item_basic_capacitor:2>,<ore:dustPrismarine>,<enderio:item_basic_capacitor:2>],
-[null,<ore:ingotCrystaltine>,null]]);
 
 # Remove alloys with changed recipe
 mods.enderio.AlloySmelter.removeRecipe(<ore:ingotCrystallineAlloy>.firstItem);
@@ -53,3 +48,19 @@ scripts.process.alloy([<ore:itemPulsatingPowder>   , <ore:ingotVibrantAlloy>    
 scripts.process.alloy([<ore:itemEnderCrystalPowder>, <ore:ingotCrystallineAlloy>    , <ore:ingotPinkMetal>    ], <ore:ingotCrystallinePinkSlime>.firstItem, "no exceptions");
 scripts.process.alloy([<ore:itemVibrantPowder>     , <ore:ingotCrystallinePinkSlime>, <ore:ingotUUMatter>     ], <ore:ingotMelodicAlloy>.firstItem        , "no exceptions");
 scripts.process.alloy([<ore:itemPrecientPowder>    , <ore:ingotMelodicAlloy>        , <ore:ingotWyvernMetal>  ], <ore:ingotStellarAlloy>.firstItem        , "no exceptions");
+
+# Stepped conduit recipes
+# Stellar alloy is exception - it have only 1 ingot in recipe
+val BDR = <ore:itemConduitBinder>;
+val eAlloys = [<ore:ingotCrystallineAlloy>, <ore:ingotCrystallinePinkSlime>, <ore:ingotMelodicAlloy>/* , <ore:ingotStellarAlloy> */] as IIngredient[];
+val eCndts  = [
+  <enderio:item_power_conduit:2>,
+  <enderio:item_endergy_conduit:8>,
+  <enderio:item_endergy_conduit:9>,
+  <enderio:item_endergy_conduit:10>, 
+  // <enderio:item_endergy_conduit:11>, 
+] as IItemStack[];
+
+for i in 0 to eAlloys.length {
+  recipes.addShaped("Cheaper " ~ getItemName(eCndts[i+1]), eCndts[i+1] * 8, [[BDR, BDR, BDR], [eAlloys[i], eCndts[i], eAlloys[i]], [BDR, BDR, BDR]]);
+}
