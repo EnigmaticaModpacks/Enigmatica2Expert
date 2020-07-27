@@ -34,6 +34,8 @@ import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.data.IData;
+import mods.jaopca.JAOPCA;
+import mods.jaopca.OreEntry;
 
 import scripts.processWork.work;
 import scripts.processWork.workEx;
@@ -52,10 +54,22 @@ function iF(output as IItemStack, mult as double) as IItemStack  {
   return output * max(1, min(output.maxStackSize, (output.amount as double * mult) as int));
 }
 
+static fluidSteps as double[] = [144, 666, 100, 250] as double[];
+
 # Multiply liquid amount on double value
 function lF(output as ILiquidStack, mult as double) as ILiquidStack  {
   if (isNull(output)) { return null; }
-  return output * ((output.amount as double * mult) as int);
+  var damount = output.amount as double;
+  var dresult = 0.0d;
+  var dmult = damount * mult;
+  for step in fluidSteps {
+    if (dresult == 0.0d && damount % step == 0) {
+      dresult = max(step, ((dmult / step) as int) * step) as double;
+    }
+  }
+  if (dresult == 0) { dresult = dmult; }
+
+  return output * (dresult as int);
 }
 
 # ######################################################################
@@ -101,10 +115,11 @@ function sawWood(input as IIngredient, output as IItemStack, exceptions as strin
 function crush(input as IIngredient, output as IItemStack, exceptions as string, extra as IItemStack[], extraChance as float[]) {
   
   work([
-    "manufactory" , "Macerator"  , "eu2Crusher"        ,
-    "AACrusher"   , "IECrusher"  , "SagMill"           ,
-    "Grindstone"  , "AEGrinder"  , "ThermalCentrifuge" ,
-    "Pulverizer"  , "mekCrusher"
+    "manufactory"  , "Macerator"  , "eu2Crusher"        ,
+    "AACrusher"    , "IECrusher"  , "SagMill"           ,
+    "Grindstone"   , "AEGrinder"  , "ThermalCentrifuge" ,
+    "Pulverizer"   , "mekCrusher" , "crushingBlock"     ,
+    "MekEnrichment",
   ],exceptions, [input], null, [output], null, extra, extraChance);
 }
 
@@ -115,11 +130,11 @@ function compress(input as IIngredient, output as IItemStack, exceptions as stri
   work(["Pressurizer", "Compressor", "Compactor"], exceptions, [input], null, [output], null, null, null);
 }
 
-# Extract item from another
+# Enrich or Extract item from another
 # 📦 → 📦
 function extract(input as IIngredient, output as IItemStack, exceptions as string) {
   
-  work(["extractor"],    exceptions, [input], null, [output], null, null, null);
+  work(["extractor", "mekEnrichment"],    exceptions, [input], null, [output], null, null, null);
 }
 
 # Alloy two or more metals into one
@@ -138,13 +153,27 @@ function grow(input as IIngredient, output as IItemStack, exceptions as string,
   workEx("Insolator", exceptions, [input, <thermalfoundation:fertilizer>  ], null, [iF(output, 0.333f)], null, [secondaryOutput], [secondaryChance], {energy: 4800});
   workEx("Insolator", exceptions, [input, <thermalfoundation:fertilizer:1>], null, [iF(output, 0.666f)], null, [secondaryOutput], [secondaryChance], {energy: 7200});
   workEx("Insolator", exceptions, [input, <thermalfoundation:fertilizer:2>], null, [output            ], null, [secondaryOutput], [secondaryChance], {energy: 9600});
+  
+  # Hydroponics special behaviour
+  val maxFertilizers = 16;
+  val a = min(64, max(1, (1.0f - output.amount as float / 64.0f) * maxFertilizers) as int);
+  val combo = [
+    <minecraft:dye:15> * a,
+    <mysticalagriculture:mystical_fertilizer> * a,
+    <actuallyadditions:item_fertilizer> * a,
+    <forestry:fertilizer_compound> * a,
+    <industrialforegoing:fertilizer> * a,
+    <thermalfoundation:fertilizer:2> * a,
+    input * 5,
+  ] as IIngredient[];
+  work(["Hydroponics"], exceptions, combo, [<fluid:water> * 40000], [output * 64], null, !isNull(secondaryOutput) ? [secondaryOutput * 5] : null, [secondaryChance]);
 }
 
 # Crushing rocks (like granite, andesite, etc..) to obtain dusts
 # 📦 → [📦📦📦]
-function crushRock(input as IIngredient, output as IItemStack[], exceptions as string) {
+function crushRock(input as IIngredient, output as IItemStack[], chances as float[], exceptions as string) {
   
-  work(["rockCrusher"], exceptions, [input], null, output, null, null, null);
+  work(["rockCrusher", "crushingBlock"], exceptions, [input], null, null, null, output, chances);
 }
 
 # Takes soft or moist item, squeeze it to get liquid or another item
@@ -212,10 +241,78 @@ function melt(input as IIngredient, output as ILiquidStack, exceptions as string
 # 💧  ⤴
 function fill(itemInput as IIngredient, fluidInput as ILiquidStack, output as IItemStack, exceptions as string) {
   
-  val newAmount1 = min(1000, (fluidInput.amount as double * 1.6d) as int);
-  val newAmount2 = min(1000, (fluidInput.amount as double * 1.4d) as int);
+  val newAmount1 = min(1000, lF(fluidInput, 1.6d).amount);
+  val newAmount2 = min(1000, lF(fluidInput, 1.4d).amount);
   work(["Casting"],                exceptions, [itemInput], [lF(fluidInput, 1.8d)], [output], null, null, null);
   work(["DryingBasin"],            exceptions, [itemInput], [fluidInput * newAmount1], [output], null, null, null);
   work(["MechanicalDryingBasin"],  exceptions, [itemInput], [fluidInput * newAmount2], [output], null, null, null);
   work(["NCInfuser"],              exceptions, [itemInput], [lF(fluidInput, 1.2d)], [output], null, null, null);
+}
+
+# Perfor some magic over item(s) to create new item(s)
+# [📦+] → [📦+]
+function magic(input as IIngredient[], output as IItemStack[], exceptions as string) {
+  
+  work(["starlightInfuser"], exceptions, input, null, output, null, null, null);
+}
+
+# Takes raw material (like Ore block) and enrich (process, treat) it to get materials
+# 📦 → 📦|💧
+function beneficiate(input as IIngredient, JOREoutput as OreEntry, amount as int, exceptions as string) {
+
+
+  var extra = [] as IItemStack[];
+  var extraChances = [
+    min(1.0f, 0.333333f * (amount as float)),
+    min(1.0f, 0.2f * (amount as float)),
+    min(1.0f, 0.1f * (amount as float))] as float[];
+
+  var cx as IItemStack = null;
+  cx = JOREoutput.getItemStackExtra      ("dust", "gem"); if (!isNull(cx)) { extra = extra + cx; }
+  cx = JOREoutput.getItemStackSecondExtra("dust", "gem"); if (!isNull(cx)) { extra = extra + cx; }
+  cx = JOREoutput.getItemStackThirdExtra ("dust", "gem"); if (!isNull(cx)) { extra = extra + cx; }
+
+  val dustOrGem     = JOREoutput.getItemStack("dust", "gem");
+  if (!isNull(dustOrGem)) {
+    crush(input, dustOrGem * amount, exceptions ~ " macerator thermalCentrifuge", extra, extraChances);
+  }
+
+  val crushedOrDust = JOREoutput.getItemStack("crushed", "dust");
+  if (!isNull(crushedOrDust)) {
+    crush(input, crushedOrDust * amount, "only: macerator", null, null);
+  }
+
+  val ingotOrGem    = JOREoutput.getItemStack("ingot", "gem");
+  if (!isNull(ingotOrGem)) {
+    magic([input], [ingotOrGem * amount], exceptions);
+  }
+
+  val molten        = JOREoutput.getLiquidStack("molten");
+  val altLiquid as ILiquidStack = itemUtils.getItem("liquid:" ~ JOREoutput.oreName.toLowerCase());
+  val liquid = isNull(molten) ? altLiquid : molten;
+  if (!isNull(liquid)) {
+    if (JOREoutput.oreType == "INGOT") { melt(input, liquid * (144*amount), exceptions); }
+    if (JOREoutput.oreType == "GEM")   { melt(input, liquid * (666*amount), exceptions); }
+  }
+
+  # Mekanism machines can't work with NBT tags for inputs
+  # So check if we have NBT first
+  if (isNull(input.itemArray[0].tag)) {
+    val clump = JOREoutput.getItemStack("clump");
+    if(!isNull(clump)) {
+      workEx("mekpurification", exceptions, [input], null, [clump * (amount + 1)], null, null, null, null);
+    }
+
+    val slurryName = "slurry" ~ JOREoutput.oreName;
+    val slurry = mods.mekanism.MekanismHelper.getGas(slurryName);
+    if(!isNull(slurry)) {
+      val gasAmount = (amount + 1) * 200;
+      workEx("mekdissolution", exceptions, [input], null, null, null, null, null, {gasOutput: slurryName, gasOutputAmount: gasAmount});
+    }
+
+    val shard = JOREoutput.getItemStack("shard");
+    if(!isNull(shard)) {
+      workEx("mekinjection", exceptions, [input], null, [shard * (amount + 2)], null, null, null, null);
+    }
+  }
 }

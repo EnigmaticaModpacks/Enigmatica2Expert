@@ -69,10 +69,15 @@ function defaultItem0(items as IItemStack[], default as IItemStack) as IItemStac
   return !isNull(it) ? it : default;
 }
 
+# Get Nth element of float Array. If null or zero - return default
+function defaultChanceN(extraChance as float[], n as int, default as float) as float  {
+  val v = arrN_float(extraChance, n);
+  return v != 0 ? v : default;
+}
+
 # Get 0 element of float Array. If null or zero - return default
 function defaultChance0(extraChance as float[], default as float) as float  {
-  val v = arrN_float(extraChance, 0);
-  return v != 0 ? v : default;
+  return defaultChanceN(extraChance, 0, default);
 }
 
 # Get 0 element of float Array. If null or zero - return default. Return x100 as int

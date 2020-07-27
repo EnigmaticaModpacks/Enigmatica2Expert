@@ -5,6 +5,7 @@ import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.data.IData;
+import mods.mekanism.MekanismHelper.getGas as getGas;
 
 import scripts.processUtils.I;
 import scripts.processUtils.isNotException;
@@ -16,9 +17,11 @@ import scripts.processUtils.arrN_float;
 import scripts.processUtils.defaultItem0;
 import scripts.processUtils.defaultChance0;
 import scripts.processUtils.defaultChance0_int;
+import scripts.processUtils.defaultChanceN;
 import scripts.processUtils.warning;
 import scripts.processUtils.info;
 import scripts.processUtils.avdRockXmlRecipe;
+
 
 #priority 51
 
@@ -68,6 +71,10 @@ function workEx(machineNameAnyCase as string, exceptions as string,
   val haveLiquidOutput     = !isNull(outputLiquid0);
   val outputLiquidIsSingle = haveLiquidOutput && outputLiquids.length == 1;
 
+  val haveGasOutput        = !isNull(D(options, "gasOutput"));
+  val outputGasAmount      = Dd(options, "gasOutputAmount", {d:600}).asInt();
+  val outputGas            = haveGasOutput ? getGas(options.gasOutput.asString()) * outputGasAmount : null;
+
   #------------
   # Extra
   #------------
@@ -87,6 +94,22 @@ function workEx(machineNameAnyCase as string, exceptions as string,
   val lenInLiqs  = haveLiquidInput  ? inputLiquids.length  : 0;
   val lenOutItem = haveItemOutput   ? outputItems.length   : 0;
   val lenOutLiqs = haveLiquidOutput ? outputLiquids.length : 0;
+
+  #------------
+  # Combined
+  #------------
+  var combinedOutput as IItemStack[] = null;
+  var combinedChances as float[] = null;
+  if (haveItemOutput) { for i in 0 to outputItems.length {
+      if (isNull(combinedOutput)) { combinedOutput = []; combinedChances = []; }
+      combinedOutput = combinedOutput + outputItems[i];
+      combinedChances = combinedChances + 1.0f;
+  }}
+  if (haveExtra) { for i in 0 to extra.length {
+      if (isNull(combinedOutput)) { combinedOutput = []; combinedChances = []; }
+      combinedOutput = combinedOutput + extra[i];
+      combinedChances = combinedChances + ((!isNull(extraChance) && extraChance.length > i) ? extraChance[i] : 1.0f);
+  }}
 
 
   # Machines with one item slot for input and output
@@ -150,6 +173,22 @@ function workEx(machineNameAnyCase as string, exceptions as string,
 
     if (machineName == "pressurizer") {
       mods.nuclearcraft.pressurizer.addRecipe(inputIngr0, outputItem0);
+      return machineName;
+    }
+
+    if (machineName == "mekenrichment") {
+      // # mods.mekanism.enrichment.addRecipe(IIngredient inputStack, IItemStack outputStack);
+      mods.mekanism.enrichment.addRecipe(inputIngr0, outputItem0);
+      return machineName;
+    }
+
+    if (machineName == "mekpurification") {
+      mods.mekanism.purification.addRecipe(inputIngr0, outputItem0);
+      return machineName;
+    }
+
+    if (machineName == "mekinjection") {
+      mods.mekanism.chemical.injection.addRecipe(inputIngr0, <gas:hydrogenchloride>, outputItem0);
       return machineName;
     }
 
@@ -233,16 +272,6 @@ function workEx(machineNameAnyCase as string, exceptions as string,
   # 📦 → [📦+]
   if (item_to_item && inputIsSingle) {
   
-    if (machineName == "rockcrusher") {
-      # mods.nuclearcraft.rock_crusher.addRecipe([itemInput, itemOutput1, itemOutput2, itemOutput3, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
-      mods.nuclearcraft.rock_crusher.addRecipe([inputIngr0, 
-        arrN_item(outputItems, 0), defaultChance0_int(extraChance, 80),
-        arrN_item(outputItems, 1), defaultChance0_int(extraChance, 30),
-        arrN_item(outputItems, 2), defaultChance0_int(extraChance, 10),
-        2.0d, 1.5d]);
-      return machineName;
-    }
-  
     if (machineName == "thermalcentrifuge") {
       # mods.ic2.ThermalCentrifuge.addRecipe([IItemStack[] outputs, IIngredient input, @Optional int minHeat);
       mods.ic2.ThermalCentrifuge.addRecipe(outputItems, inputIngr0);
@@ -253,6 +282,30 @@ function workEx(machineNameAnyCase as string, exceptions as string,
   # Machines with ONE item INPUT and unknown output
   # 📦 → ?
   if (inputIsSingle) {
+  
+    if (machineName == "rockcrusher") {
+      # mods.nuclearcraft.rock_crusher.addRecipe([itemInput, itemOutput1, itemOutput2, itemOutput3, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
+      mods.nuclearcraft.rock_crusher.addRecipe([inputIngr0, 
+        arrN_item(combinedOutput, 0), (combinedChances[0] * 100) as int,
+        arrN_item(combinedOutput, 1), (combinedChances[1] * 100) as int,
+        arrN_item(combinedOutput, 2), (combinedChances[2] * 100) as int,
+        2.0d, 1.5d]);
+      return machineName;
+    }
+  
+    if (machineName == "crushingblock") {
+      # addCrushingBlockRecipe(IItemStack input, IItemStack[] outputs, double[] probs)
+
+      # Summ of chances should be equal 1, so we compute it
+      var chancesSumm = 0.0f;
+      var normalizedChances = [] as float[];
+      for ch in combinedChances { chancesSumm += ch; }
+      for ch in combinedChances { normalizedChances = normalizedChances + (ch / chancesSumm); }
+      for ii in inputIngr0.itemArray {
+        mods.mechanics.addCrushingBlockRecipe(ii, combinedOutput, normalizedChances);
+      }
+      return machineName;
+    }
     
     if (machineName == "squeezer") {
       # Squeezer.addRecipe(IItemStack inputStack, 
@@ -288,20 +341,17 @@ function workEx(machineNameAnyCase as string, exceptions as string,
 
     if (machineName == "tecentrifuge") {
       #mods.thermalexpansion.Centrifuge.addRecipe(WeightedItemStack[] outputs, IItemStack input, ILiquidStack fluid, int energy);
-      var combinedOutput = [] as WeightedItemStack[];
-      if (haveItemOutput) {
-        for i in 0 to outputItems.length {
-          combinedOutput = combinedOutput + outputItems[i] % 100;
+      if (!isNull(combinedOutput)  && combinedOutput.length  > 0 &&
+          combinedChances.length >= combinedOutput.length) {
+        
+        # Calculate chanced output from combined
+        var chancedCombined = [] as WeightedItemStack[];
+        for i in 0 to combinedOutput.length {
+          chancedCombined = chancedCombined + combinedOutput[i] % ((combinedChances[i] * 100) as int);
         }
-      }
-      if (haveExtra) {
-        for i in 0 to extra.length {
-          combinedOutput = combinedOutput + extra[i] % ((extraChance[i] * 100) as int);
-        }
-      }
-      if (combinedOutput.length > 0) {
+
         for ii in inputIngr0.itemArray {
-          mods.thermalexpansion.Centrifuge.addRecipe(combinedOutput, ii, outputLiquid0, 2000);
+          mods.thermalexpansion.Centrifuge.addRecipe(chancedCombined, ii, outputLiquid0, 2000);
         }
       } else {
         return info(machineNameAnyCase, getItemName(inputIngr0.itemArray[0]), "received work, but this machine MUST have item output");
@@ -310,20 +360,6 @@ function workEx(machineNameAnyCase as string, exceptions as string,
     }
 
     if (machineName == "sagmill") {
-      var combinedOutput = [] as IItemStack[];
-      var combinedChances = [] as float[];
-      if (haveItemOutput) {
-        for i in 0 to outputItems.length {
-          combinedOutput = combinedOutput + outputItems[i];
-          combinedChances = combinedChances + 1.0f;
-        }
-      }
-      if (haveExtra) {
-        for i in 0 to extra.length {
-          combinedOutput = combinedOutput + extra[i];
-          combinedChances = combinedChances + (extraChance.length > i ? extraChance[i] : 1.0f);
-        }
-      }
       if (combinedOutput.length > 0 && combinedChances.length >= combinedOutput.length) {
         mods.enderio.SagMill.addRecipe(combinedOutput, combinedChances, inputIngr0);
       } else {
@@ -451,6 +487,33 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       avdRockXmlRecipe("Block Cutter", inputItems, null, outputItems, null);
       return machineName;
     }
+
+    if (machineName == "hydroponics") {
+      val builder = mods.modularmachinery.RecipeBuilder
+        .newBuilder("hydroponics_" ~ getItemName(outputItem0), "hydroponics", 40)
+        .addEnergyPerTickInput(200000);
+
+      for ins in inputItems { builder.addItemInput(ins.itemArray[0]); }
+      for out in combinedOutput { builder.addItemOutput(out); }
+      if (haveLiquidInput) { builder.addFluidInput(inputLiquid0); }
+
+      builder.build();
+      return machineName;
+    }
+
+    if (machineName == "starlightinfuser") {
+      # mods.astralsorcery.StarlightInfusion.addInfusion(IItemStack input, IItemStack output, boolean consumeMultiple, float consumptionChance, int craftingTickTime);
+      
+      if (inputItems.length == 1 && outputItems.length == 1) {
+        for ii in inputIngr0.itemArray {
+          mods.astralsorcery.StarlightInfusion.addInfusion(ii, outputItem0, false, 0.7, 60);
+        }
+      } else {
+        return info(machineNameAnyCase, getItemName(inputIngr0.itemArray[0]), "received work, but number of inputs or outputs != 1");
+      }
+      return machineName;
+    }
+
   }
 
   # ONE item to one liquid
@@ -683,6 +746,16 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       }
     }
   }
+
+  # ONE item to one gas
+  # 📦 → 🟡
+  if (inputIsSingle && haveGasOutput) {
+    if (machineName == "mekdissolution") {
+      mods.mekanism.chemical.dissolution.addRecipe(inputIngr0, outputGas);
+      return machineName;
+    }
+  }
+
 
   return warning(machineNameAnyCase,
     !isNull(inputIngr0)   ? getItemName(inputIngr0.itemArray[0]) : (
