@@ -150,12 +150,11 @@ for lList, itList in chaliceGrid {
 		val weight = pow(2, it.amount) as int;
 		mods.astralsorcery.LiquidInteraction.addInteraction(lList[0], 0.1, lList[1], 0.2, weight, it * 1);
 	}
+
+	# Liquid interactions:
+	mods.plustweaks.Liquid.registerLiquidInteraction(lList[0], lList[1], itList[0].asBlock().definition.defaultState, true);
+	mods.plustweaks.Liquid.registerLiquidInteraction(lList[0], lList[1], itList[1].asBlock().definition.defaultState, false);
 }
 
 
 // <>.asBlock().definition.defaultState;
-
-
-# Everlasting Fountain
-# Default liquids:
-# https://github.com/HellFirePvP/AstralSorcery/blob/1.12.2/src/main/java/hellfirepvp/astralsorcery/common/base/FluidRarityRegistry.java
