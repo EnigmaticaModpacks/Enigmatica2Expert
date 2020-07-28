@@ -311,17 +311,17 @@ recipes.addShaped("cyclicmagic_heart_toxic", <cyclicmagic:heart_toxic>, [
 # Spring water recipe
 mods.iceandfire.recipes.addIceDragonForgeRecipe( 
     <biomesoplenty:jar_filled:1>, 
-    <forge:bucketfilled>.withTag({FluidName: "ic2hot_water", Amount: 1000}), 
-    <forge:bucketfilled>.withTag({FluidName: "hot_spring_water", Amount: 1000}));
+    Bucket("ic2hot_water"), 
+    Bucket("hot_spring_water"));
 
 # Heart container recipe
 mods.iceandfire.recipes.addFireDragonForgeRecipe(
     <cyclicmagic:heart_toxic>, 
-    <forge:bucketfilled>.withTag({FluidName: "lifeessence", Amount: 1000}), 
+    Bucket("lifeessence"), 
     <scalinghealth:heartcontainer>);
 mods.iceandfire.recipes.addIceDragonForgeRecipe(
     <cyclicmagic:heart_toxic>, 
-    <forge:bucketfilled>.withTag({FluidName: "lifeessence", Amount: 1000}), 
+    Bucket("lifeessence"), 
     <scalinghealth:heartcontainer>);
 
 # Cursed and Enchanced hearts recipes

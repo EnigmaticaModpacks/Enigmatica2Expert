@@ -174,13 +174,13 @@ for item in thaumcraftHintItems {
 	addDescription(<avaritia:resource:2>,"Obtainable through the Neutron Collector.");
 	
 # XP Bucket
-	addDescription(<forge:bucketfilled>.withTag({FluidName: "xpjuice", Amount: 1000}),"Obtainable through the Fluid Transposer.");
+	addDescription(Bucket("xpjuice"),"Obtainable through the Fluid Transposer.");
 
 # Bibliocraft Clipboard
 	addDescription(<bibliocraft:biblioclipboard>,"Removed due to instability issues.");
 	
 # Pumpjack
-	addDescription(<forge:bucketfilled>.withTag({FluidName: "oil", Amount: 1000}),"The Pumpjack needs a pipe to bedrock to function.");
+	addDescription(Bucket("oil"),"The Pumpjack needs a pipe to bedrock to function.");
 	addDescription(<liquid:oil>, "The Pumpjack needs a pipe to bedrock to function.");
 	
 # Energy Cell Frame
@@ -1970,4 +1970,4 @@ for item in thaumcraftHintItems {
 ,format.darkAqua("<<Hold shift to see fuel list>>"));
 
 # Antimatter
-<forge:bucketfilled>.withTag({FluidName: "blockfluidantimatter", Amount: 1000}).addTooltip(format.aqua("To obtain strike Life Essense with lightning"));
+Bucket("blockfluidantimatter").addTooltip(format.aqua("To obtain strike Life Essense with lightning"));

@@ -57,15 +57,15 @@ import mods.actuallyadditions.BallOfFur.addReturn as addBallReturn;
 	
 	recipes.addShapedMirrored("XP Bucket Cyclic", 
 	<actuallyadditions:block_xp_solidifier>, 
-	[[null, <forge:bucketfilled>.withTag({FluidName: "xpjuice", Amount: 1000}), null],
+	[[null, Bucket("xpjuice"), null],
 	[<actuallyadditions:block_crystal_empowered:2>, <actuallyadditions:item_misc:8>, <actuallyadditions:block_crystal_empowered:2>], 
-	[null, <forge:bucketfilled>.withTag({FluidName: "xpjuice", Amount: 1000}), null]]);
+	[null, Bucket("xpjuice"), null]]);
 	
 	recipes.addShapedMirrored("XP Bucket TE", 
 	<actuallyadditions:block_xp_solidifier>, 
-	[[null, <forge:bucketfilled>.withTag({FluidName: "experience", Amount: 1000}), null],
+	[[null, Bucket("experience"), null],
 	[<actuallyadditions:block_crystal_empowered:2>, <actuallyadditions:item_misc:8>, <actuallyadditions:block_crystal_empowered:2>], 
-	[null, <forge:bucketfilled>.withTag({FluidName: "experience", Amount: 1000}), null]]);
+	[null, Bucket("experience"), null]]);
 
 # Wood Casing
 	recipes.remove(<actuallyadditions:block_misc:4>);

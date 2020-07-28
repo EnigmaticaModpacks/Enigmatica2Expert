@@ -117,7 +117,7 @@ for input, output in itemsToUnify {
 	recipes.addShapedMirrored("Chemical Dissolution Chamber", 
 	<mekanism:machineblock2:6>, 
 	[[<ore:circuitUltimate>, ultimateGasTank, <ore:circuitUltimate>],
-	[<mekanism:basicblock:11>, <forge:bucketfilled>.withTag({FluidName: "sulfuric_acid", Amount: 1000})|<forge:bucketfilled>.withTag({FluidName: "sulfuricacid", Amount: 1000}), <mekanism:basicblock:11>], 
+	[<mekanism:basicblock:11>, Bucket("sulfuric_acid")|Bucket("sulfuricacid"), <mekanism:basicblock:11>], 
 	[<ore:circuitUltimate>, ultimateGasTank, <ore:circuitUltimate>]]);
 
 # Chemical Washer

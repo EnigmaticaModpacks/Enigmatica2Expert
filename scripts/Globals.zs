@@ -188,3 +188,16 @@ global Dd as function(IData, string, IData)IData =
 	if (!isNull(d)) return d;
 	return default.d;
 };
+
+
+# ########################
+# Gets a Bucket Item from a Liquid String
+# ########################
+global Bucket as function(string)IItemStack = function (name as string) as IItemStack {
+	//Unique Buckets
+	if (name == "lava")  return <minecraft:lava_bucket>;
+	if (name == "water") return <minecraft:water_bucket>;
+	if (name == "milk")  return <minecraft:milk_bucket>;
+	
+	return <forge:bucketfilled>.withTag({FluidName: name, Amount: 1000});
+};

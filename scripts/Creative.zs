@@ -23,7 +23,7 @@ print("--- loading Creative.zs ---");
 	var manaTablet = <botania:manatablet>.withTag({mana: 500000});
 	var megaDrum = <extrautils2:drum:3>;
 	var draconicChest = <draconicevolution:draconium_chest>;
-	var bucketUU = <forge:bucketfilled>.withTag({FluidName: "ic2uu_matter", Amount: 1000});
+	var bucketUU = Bucket("ic2uu_matter");
 	var hvSolar = <compactsolars:compact_solar_block:2>;
 	var ultCell = <mekanism:basicblock2:3>.withTag({tier: 3});
 	var ultProvider = <mekanism:basicblock2:4>.withTag({tier: 3});
@@ -44,7 +44,7 @@ print("--- loading Creative.zs ---");
 	var blockMirion = <ore:blockMirion>;
 	var moonStone = <extrautils2:ingredients:5>;
 	var creativeEssence = <mysticalagradditions:stuff:69>;
-	var rocketFuel = <forge:bucketfilled>.withTag({FluidName: "rocket_fuel", Amount: 1000});
+	var rocketFuel = Bucket("rocket_fuel");
 	var stoneburnt = <extrautils2:decorativesolid:3>;
 	var cobble8x = <extrautils2:compressedcobblestone:7>;
 	var storage16m = <extracells:storage.component:3>;
@@ -226,15 +226,15 @@ recipes.addShapeless("Creative Gas Tank Frame",
 
 # Mekanism Creative Tank
 	mods.extendedcrafting.TableCrafting.addShaped(4, <mekanism:machineblock2:11>.withTag({tier: 4, mekData:{}}), 
-	[[<industrialforegoing:black_hole_tank>, <forge:bucketfilled>.withTag({FluidName: "milk_goat", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "blood", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "liquiddna", Amount: 1000}), <thermalexpansion:tank>.withTag({Fluid: {FluidName: "bio.ethanol", Amount: 32000}}), <forge:bucketfilled>.withTag({FluidName: "juice", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "mutagen", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "biomass", Amount: 1000}), <industrialforegoing:black_hole_tank>], 
-	[<forge:bucketfilled>.withTag({FluidName: "empoweredoil", Amount: 1000}), resonantFrame, ingotUltimate, ingotUltimate, <bigreactors:mineralanglesite>, ingotUltimate, ingotUltimate, resonantFrame, <forge:bucketfilled>.withTag({FluidName: "witchwater", Amount: 1000})], 
-	[<forge:bucketfilled>.withTag({FluidName: "xu_demonic_metal", Amount: 1000}), ingotUltimate, megaDrum, megaDrum, megaDrum, megaDrum, megaDrum, ingotUltimate, <forge:bucketfilled>.withTag({FluidName: "essence", Amount: 1000})], 
-	[<forge:bucketfilled>.withTag({FluidName: "draconium", Amount: 1000}), ingotUltimate, megaDrum, awakendedCore, ultCatalyst, awakendedCore, megaDrum, ingotUltimate, <forge:bucketfilled>.withTag({FluidName: "sewage", Amount: 1000})], 
+	[[<industrialforegoing:black_hole_tank>, Bucket("milk_goat"), Bucket("blood"), Bucket("liquiddna"), <thermalexpansion:tank>.withTag({Fluid: {FluidName: "bio.ethanol", Amount: 32000}}), Bucket("juice"), Bucket("mutagen"), Bucket("biomass"), <industrialforegoing:black_hole_tank>], 
+	[Bucket("empoweredoil"), resonantFrame, ingotUltimate, ingotUltimate, <bigreactors:mineralanglesite>, ingotUltimate, ingotUltimate, resonantFrame, Bucket("witchwater")], 
+	[Bucket("xu_demonic_metal"), ingotUltimate, megaDrum, megaDrum, megaDrum, megaDrum, megaDrum, ingotUltimate, Bucket("essence")], 
+	[Bucket("draconium"), ingotUltimate, megaDrum, awakendedCore, ultCatalyst, awakendedCore, megaDrum, ingotUltimate, Bucket("sewage")], 
 	[<thermalexpansion:tank>.withTag({Fluid: {FluidName: "tree_oil", Amount: 32000}}), <bigreactors:mineralanglesite>, megaDrum, ultCatalyst, <draconicevolution:chaotic_core>, ultCatalyst, megaDrum, <bigreactors:mineralanglesite>, <thermalexpansion:tank>.withTag({Fluid: {FluidName: "ic2uu_matter", Amount: 32000}})], 
-	[<forge:bucketfilled>.withTag({FluidName: "pyrotheum", Amount: 1000}), ingotUltimate, megaDrum, awakendedCore, ultCatalyst, awakendedCore, megaDrum, ingotUltimate, <forge:bucketfilled>.withTag({FluidName: "ic2pahoehoe_lava", Amount: 1000})], 
-	[<forge:bucketfilled>.withTag({FluidName: "aerotheum", Amount: 1000}), ingotUltimate, megaDrum, megaDrum, megaDrum, megaDrum, megaDrum, ingotUltimate, <forge:bucketfilled>.withTag({FluidName: "clay", Amount: 1000})], 
-	[<forge:bucketfilled>.withTag({FluidName: "essence", Amount: 1000}), resonantFrame, ingotUltimate, ingotUltimate, <bigreactors:mineralanglesite>, ingotUltimate, ingotUltimate, resonantFrame, <forge:bucketfilled>.withTag({FluidName: "tritium", Amount: 1000})], 
-	[<industrialforegoing:black_hole_tank>, <forge:bucketfilled>.withTag({FluidName: "ender", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "cryotheum", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "petrotheum", Amount: 1000}), <thermalexpansion:tank>.withTag({Fluid: {FluidName: "mana", Amount: 32000}}), <forge:bucketfilled>.withTag({FluidName: "refined_fuel", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "mirion", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "neutron", Amount: 1000}), <industrialforegoing:black_hole_tank>]]); 
+	[Bucket("pyrotheum"), ingotUltimate, megaDrum, awakendedCore, ultCatalyst, awakendedCore, megaDrum, ingotUltimate, Bucket("ic2pahoehoe_lava")], 
+	[Bucket("aerotheum"), ingotUltimate, megaDrum, megaDrum, megaDrum, megaDrum, megaDrum, ingotUltimate, Bucket("clay")], 
+	[Bucket("essence"), resonantFrame, ingotUltimate, ingotUltimate, <bigreactors:mineralanglesite>, ingotUltimate, ingotUltimate, resonantFrame, Bucket("tritium")], 
+	[<industrialforegoing:black_hole_tank>, Bucket("ender"), Bucket("cryotheum"), Bucket("petrotheum"), <thermalexpansion:tank>.withTag({Fluid: {FluidName: "mana", Amount: 32000}}), Bucket("refined_fuel"), Bucket("mirion"), Bucket("neutron"), <industrialforegoing:black_hole_tank>]]); 
 	recipes.addShapeless("Creative Tank Reset", 
 	<mekanism:machineblock2:11>.withTag({tier: 4, mekData: {}}), 
 	[<mekanism:machineblock2:11>.withTag({tier: 4})]);
