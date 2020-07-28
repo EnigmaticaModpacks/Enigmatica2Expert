@@ -405,6 +405,67 @@ remakeEx(<travelersbackpack:sleeping_bag_bottom>, [[<quark:quilted_wool:14>, <qu
 # Arrows recycle
 scripts.process.crush(<minecraft:arrow>, <minecraft:flint>, "no exceptions", [<ore:dustWood>.firstItem], [0.2f]);
 
+
+# Ore Excavation
+recipes.remove(<oeintegration:excavatemodifier>);
+val kitWheels = <tconstruct:sharpening_kit>.withTag({Material: "stone"});
+recipes.addShaped("excavatemodifier", <oeintegration:excavatemodifier>, [
+	[<rats:little_black_squash_balls>, <tconstruct:excavator_head>.withTag({Material: "bronze"}), <rats:little_black_squash_balls>], 
+	[<ore:compressed3xDirt>, <ore:compressed3xCobblestone>, <ore:compressed3xNetherrack>], 
+	[kitWheels, kitWheels, kitWheels]
+]);
+
+# Remove Refined storage cables
+rh(<immersivecables:coil_block:3>);
+rh(<immersivecables:wire_coil:3>);
+
+# Make Quicksand
+mods.inworldcrafting.FluidToFluid.transform(<liquid:sand>, <liquid:blueslime>, [<ore:soulSand>]);
+scripts.process.solution([<ore:soulSand>], [<liquid:blueslime>*1000], [<liquid:sand>*1000], null, "except: highoven");
+
+# Bedrock Ore Miner
+Remake(<toolbelt:pouch>, ["ABA", "CDC", "ADA"], {
+	A: <ore:dustBedrock>,
+	B: <immersiveengineering:metal_decoration0:5>,
+	C: <ore:blockRedstone>,
+	D: <immersiveengineering:metal_device1:7>});
+
+	
+# Sandwiches
+recipes.remove(<culinaryconstruct:sandwich_station>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <culinaryconstruct:sandwich_station>, [
+	[<nuclearcraft:moresmore>, <ore:dragonsteelIngot>, <nuclearcraft:moresmore>], 
+	[<cookingforblockheads:counter>, <cookingforblockheads:cooking_table>, <cookingforblockheads:counter>], 
+	[<cookingforblockheads:counter>, <cookingforblockheads:counter>, <cookingforblockheads:counter>]
+]);
+
+# Peacock fan
+recipes.addShaped(<twilightforest:peacock_fan>, [
+	[<ore:peacockFeathers>, <ore:peacockFeathers>, null], 
+	[<forestry:oak_stick>, <forestry:oak_stick>, <ore:peacockFeathers>], 
+	[<ore:slimecrystalBlue>, <forestry:oak_stick>, <ore:peacockFeathers>]
+]);
+
+# Tool pouch
+Remake(<toolbelt:pouch>, ["ABA", "CDC", "CCC"], {
+	A: <ore:string>,
+	B: <quark:gold_button>,
+	C: <harvestcraft:hardenedleatheritem>,
+	D: <immersiveengineering:wooden_device0>});
+
+# Tool Belts
+Remake(<toolbelt:belt>, [" A ", "CBC", "C C"], {
+	A: <conarm:travel_belt_base>,
+	B: <quark:iron_button>,
+	C: <harvestcraft:hardenedleatheritem>});
+
+
+# Hydrated coal simplifying
+mods.inworldcrafting.FluidToItem.transform(<ic2:dust:3>, <fluid:water>, [<ore:dustCoal>]);
+
+# Lesser blaze powder
+Remake(<minecraft:blaze_powder>, null, { remake: <minecraft:blaze_powder>*2, A: <minecraft:blaze_rod> });
+
 # *=======  =======*
 
 # More meats from traps
