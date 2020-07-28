@@ -125,6 +125,73 @@ global remakeFluidToItem as function(IItemStack, ILiquidStack, IIngredient)void 
 };
 
 
+# ########################
+# Make recipe by string grid
+# Inspired by Omnifactory code:
+# https://github.com/OmnifactoryDevs/Omnifactory/blob/fc4dca3b32bc768578ef8855285b576ccc7ef32f/overrides/scripts/CommonVars.zs#L98-L129
+# ########################
+/*
+	Remake(output, options, grid)
+
+	Example:
+(	<minecraft:furnace>
+	[ "AAA" ,
+    "A A" ,
+    "AAA" ], 
+	{ A: <minecraft:stone>, remove: <minecraft:furnace>*8 })
+  =>
+	recipes.remove(<minecraft:furnace>*8);
+	recipes.addShaped("Furnance from Stone", <minecraft:furnace>,
+[ [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>],
+  [<minecraft:stone>,        null,       <minecraft:stone>],
+  [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>] ]
+*/
+
+
+global Remake as function(IItemStack,         string[],            IIngredient[string])void = 
+			function (output as IItemStack, grid as string[], options as IIngredient[string]) as void  {
+
+	# Automatically remove previous recipe, or recipe tagged "remove" in options
+	if (!isNull(options.remove)) {
+		recipes.remove(options.remove);
+	} else {
+		recipes.remove(output);
+	}
+
+	# Generate recipe name
+	var firstIngr as IIngredient = null;
+	var ingrCount = 0;
+	for k, v in options {
+		if (k != "remove") {
+			if (isNull(firstIngr)) firstIngr = v;
+			ingrCount += 1;
+		}
+	}
+
+	var ads = ingrCount >= 2 ? (" [+"~(ingrCount - 1)~"]") : "";
+	val recipeName = getItemName(output) ~ " from " ~ getItemName(firstIngr.itemArray[0]) ~ ads;
+
+
+	# Add crafting table recipe
+	if (isNull(grid)) {
+		# No grid means shapeless recipe
+		var ingrs = [] as IIngredient[];
+		for k, v in options { if (k != "remove") ingrs = ingrs + v; }
+		recipes.addShapeless(recipeName, output, ingrs);
+	} else {
+		# Shaped recipe
+		var ingrs = [[]] as IIngredient[][];
+		for i, str in grid {
+			if (ingrs.length <= i) ingrs = ingrs + [] as IIngredient[];
+			for j in 0 to str.length {
+				var k = str[j];
+				ingrs[i] = ingrs[i] + options[k];
+			}
+		}
+		recipes.addShaped(recipeName, output, ingrs);
+	}
+};
+
 
 # ########################
 # Clear Fluid tag on item
