@@ -2,7 +2,6 @@ import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.item.IIngredient as IIngredient;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded appliedenergistics2
-print("--- loading AppliedEnergistics.zs ---");
 	
 	var pearlFluix = <ore:pearlFluix>;
 	var crystalCertus = <ore:crystalCertus>;

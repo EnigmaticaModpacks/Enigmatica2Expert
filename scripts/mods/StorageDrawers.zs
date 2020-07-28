@@ -2,7 +2,6 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 
 #modloaded storagedrawers
-print("--- loading StorageDrawers.zs ---");
 
 # *======= Recipes =======*
 
@@ -70,4 +69,3 @@ remakeDrawerUpgrade(<storagedrawers:upgrade_storage:2>, <ore:ingotGold>);
 remakeDrawerUpgrade(<storagedrawers:upgrade_storage:3>, <ore:ingotHardCarbon>);
 remakeDrawerUpgrade(<storagedrawers:upgrade_storage:4>, <ore:ingotVibrantAlloy>);
 
-		print("--- StorageDrawers.zs initialized ---");

@@ -1,5 +1,4 @@
 #modloaded betterbuilderswands
-print("--- loading BetterBuildersWands.zs ---");
 
 
 	recipes.remove(<betterbuilderswands:wanddiamond>);
@@ -24,4 +23,3 @@ print("--- loading BetterBuildersWands.zs ---");
 	[null, <botania:manaresource:3>, null], 
 	[<botania:manaresource:3>, null, null]]);
 
-	print("--- BetterBuildersWands.zs initialized ---");

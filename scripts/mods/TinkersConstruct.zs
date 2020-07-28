@@ -8,7 +8,6 @@ import mods.tcomplement.highoven.MixRecipeBuilder;
 
 #modloaded tconstruct
 
-print("--- loading TinkersConstruct.zs ---");
 
 # Removing Bronze / Steel dupes
 	mods.tconstruct.Melting.removeRecipe(<liquid:bronze>, <ic2:pipe>);

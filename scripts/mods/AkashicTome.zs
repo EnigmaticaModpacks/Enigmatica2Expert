@@ -1,4 +1,3 @@
-print("--- loading AkashicTome.zs ---");
 
 # Super Akashic Tome
 	val superTome = <akashictome:tome>.withTag({"akashictome:data": {
@@ -40,4 +39,3 @@ print("--- loading AkashicTome.zs ---");
 
 	mods.jei.JEI.addItem(superTome);
 	
-print("--- AkashicTome.zs initialized ---");

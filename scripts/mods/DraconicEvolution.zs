@@ -1,6 +1,5 @@
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded draconicevolution
-print("--- loading DraconicEvolution.zs ---");
 
 # *======= Recipes =======*
 
@@ -88,4 +87,3 @@ print("--- loading DraconicEvolution.zs ---");
 	makeEx(<draconicevolution:dislocator>, [[null, <rftools:infused_enderpearl>, null],[<mekanism:portableteleporter>, <cyclicmagic:ender_pearl_reuse>.anyDamage(), <mekanism:portableteleporter>], [null, <rftools:infused_enderpearl>, null]]);
 
 
-		print("--- DraconicEvolution.zs initialized ---");

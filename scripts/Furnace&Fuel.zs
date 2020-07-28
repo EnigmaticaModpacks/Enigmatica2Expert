@@ -1,4 +1,3 @@
-print("--- loading Furnace&Fuel.zs ---");
 
 # *======= Adding Smeltables =======*
 
@@ -34,4 +33,3 @@ print("--- loading Furnace&Fuel.zs ---");
 	furnace.setFuel(<forestry:resource_storage>, 1000);
 	furnace.setFuel(<forestry:apatite>, 100);
 	
-print("--- Furnace&Fuel.zs initialized ---");

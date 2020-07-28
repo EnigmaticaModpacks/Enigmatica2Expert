@@ -1,7 +1,6 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.jei.JEI.removeAndHide as rh;
-print("--- loading MiscRecipes.zs ---");
 
 #priority -1
 

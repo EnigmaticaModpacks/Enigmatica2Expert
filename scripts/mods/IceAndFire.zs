@@ -1,7 +1,6 @@
 import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemStack as IItemStack;
 #modloaded iceandfire
-print("--- loading IceAndFire.zs ---");
 
 # *======= Recipes =======*
 
@@ -236,4 +235,3 @@ print("--- loading IceAndFire.zs ---");
 	<ore:armorDragon>.add(armor);
 	}
 	
-		print("--- IceAndFire.zs initialized ---");

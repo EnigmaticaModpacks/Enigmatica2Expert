@@ -2,7 +2,6 @@ import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.liquid.ILiquidStack;
 #modloaded astralsorcery
-print("--- loading AstralSorcery.zs ---");
 	
 # *======= Recipes =======*
 

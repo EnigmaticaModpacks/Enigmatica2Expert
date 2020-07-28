@@ -1,5 +1,4 @@
 #modloaded thermaldynamics
-print("--- loading ThermalDynamics.zs ---");
 
 # Leadstone Fluxduct
 	recipes.remove(<thermaldynamics:duct_0>);
@@ -42,4 +41,3 @@ print("--- loading ThermalDynamics.zs ---");
 	[[<ore:plateInvar>, <xnet:netcable:*>, <ore:plateInvar>]]);
 
 	
-		print("--- ThermalDynamics.zs initialized ---");

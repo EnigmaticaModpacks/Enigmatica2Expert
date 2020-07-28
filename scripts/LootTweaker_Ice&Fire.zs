@@ -3,7 +3,6 @@ import loottweaker.vanilla.loot.LootTable;
 import loottweaker.vanilla.loot.LootPool;
 import crafttweaker.item.IItemStack as IItemStack;
 #modloaded loottweaker
-print("--- loading LootTweaker_Ice&Fire.zs ---");
 
 # *======= Variables =======*
 
@@ -71,4 +70,3 @@ print("--- loading LootTweaker_Ice&Fire.zs ---");
 	
 	}
 	
-		print("--- LootTweaker_Ice&Fire.zs initialized ---");

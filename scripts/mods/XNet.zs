@@ -1,5 +1,4 @@
 #modloaded xnet
-print("--- loading XNet.zs ---");
 
 # *======= Recipes =======*
 
@@ -101,6 +100,5 @@ print("--- loading XNet.zs ---");
 	[<ore:plateNickel>, <xnet:connector:*>, <ore:plateNickel>], 
 	[<ore:alloyBasic>, <ore:alloyBasic>, <ore:alloyBasic>]]);
 	
-	print("--- XNet.zs initialized ---");
 	
 	

@@ -1,5 +1,4 @@
 #modloaded redstonearsenal
-print("--- loading RedstoneArsenal.zs ---");
 
 	recipes.remove(<redstonearsenal:tool.bow_flux>);
 	recipes.addShapeless("Fluxed Box", 
@@ -16,6 +15,5 @@ print("--- loading RedstoneArsenal.zs ---");
 	<tconstruct:crossbow>.anyDamage(),
 	]);
 
-print("--- RedstoneArsenal.zs initialized ---");
 	
 	

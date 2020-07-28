@@ -1,7 +1,6 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded wct
-print("--- loading WirelessCraftingTerminal.zs ---");
 
 # Wireless Crafting Terminal
 	recipes.remove(<wct:wct>);
@@ -19,4 +18,3 @@ print("--- loading WirelessCraftingTerminal.zs ---");
 	[<bigreactors:mineralanglesite>, <extracells:storage.component:1>, <bigreactors:mineralanglesite>], 
 	[<appliedenergistics2:quantum_link>, <appliedenergistics2:material:47>, <appliedenergistics2:quantum_link>]]);
 
-	print("--- WirelessCraftingTerminal.zs initialized ---");

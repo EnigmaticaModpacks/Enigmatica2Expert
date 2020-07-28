@@ -1,6 +1,5 @@
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded animus
-print("--- loading Animus.zs ---");
 
 # Healing Shards
 	mods.bloodmagic.BloodAltar.removeRecipe(<animus:fragmenthealing>);

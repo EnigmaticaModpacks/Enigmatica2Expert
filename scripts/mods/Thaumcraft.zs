@@ -1,7 +1,6 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded thaumcraft
-print("--- loading Thaumcraft.zs ---");
 
 # Crimson Rites
 mods.thaumcraft.Infusion.registerRecipe("crimson_rites", "INFUSION", 

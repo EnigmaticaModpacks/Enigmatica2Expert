@@ -1,6 +1,5 @@
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded mysticalagradditions
-print("--- loading MysticalAgradditions.zs ---");
 
 # *======= Seeds Tier 6 =======*
 
@@ -162,4 +161,3 @@ print("--- loading MysticalAgradditions.zs ---");
 			<ore:blockNetherStar>],
 			"astralsorcery.constellation.horologium");
 				
-	print("--- MysticalAgradditions.zs initialized ---");

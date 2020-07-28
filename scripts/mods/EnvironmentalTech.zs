@@ -1,6 +1,5 @@
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded environmentaltech
-print("--- loading EnvironmentalTech.zs ---");
 	
 	
 

@@ -1,4 +1,3 @@
-print("--- loading MorphOTool.zs ---");
 
 # Oredict remake
 recipes.remove(<morphtool:tool>);
@@ -34,4 +33,3 @@ recipes.addShaped("Morphing Tool", <morphtool:tool>, [
 	[<ore:gearSilver>, <morphtool:tool>, <ore:gearTin>], 
 	[null, <ore:gearLead>, null]]);
 	
-print("--- MorphOTool.zs initialized ---");

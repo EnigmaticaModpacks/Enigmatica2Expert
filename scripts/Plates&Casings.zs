@@ -1,7 +1,6 @@
 import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.immersiveengineering.MetalPress;
-print("--- loading Plates.zs ---");
 	
 # *======= Variables =======*
 

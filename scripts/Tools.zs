@@ -1,6 +1,5 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
-print("--- loading Tools.zs ---");
 	
 # *======= Recipes =======*
 	
@@ -75,4 +74,3 @@ print("--- loading Tools.zs ---");
 recipes.remove(<minecraft:flint_and_steel>);
 recipes.addShapeless(<minecraft:flint_and_steel>, [<ore:ingotSteel>, <ore:itemFlint>]);
 
-	print("--- Tools.zs initialized ---");

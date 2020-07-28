@@ -1,5 +1,4 @@
 import mods.jei.JEI.removeAndHide as rh;
-print("--- loading RecipeConflicts.zs ---");
 
 # *======= Variables =======*
 
@@ -101,4 +100,3 @@ print("--- loading RecipeConflicts.zs ---");
 	recipes.remove(<ic2:ingot:6>);
 	recipes.remove(<ic2:resource:5>);
 
-	print("--- RecipeConflicts.zs initialized ---");	

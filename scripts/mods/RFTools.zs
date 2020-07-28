@@ -1,5 +1,4 @@
 #modloaded rftools
-print("--- loading RFTools.zs ---");
 	
 # Mooshroom Syringe
 	recipes.addShapeless("Mooshroom Syringe", 

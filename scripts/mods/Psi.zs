@@ -1,5 +1,4 @@
 #modloaded psi
-print("--- loading Psi.zs ---");
 
 # *======= Recipes =======*
 	
@@ -27,6 +26,5 @@ print("--- loading Psi.zs ---");
 	mods.botania.ManaInfusion.addConjuration(<psi:material:6> * 2, <psi:material:6>, 2500);
 
 
-	print("--- Psi.zs initialized ---");
 	
 	

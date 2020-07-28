@@ -2,7 +2,6 @@ import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemCondition;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
-print("--- loading Creative.zs ---");
 
 # *======= Variables =======*
 
@@ -359,4 +358,3 @@ recipes.addShapeless("Creative Gas Tank Frame",
 	[null, null, ingotUltimate, ingotUltimate, blockAwakended, ingotUltimate, ingotUltimate, null, null], 
 	[null, null, null, null, blockAwakended, null, null, null, null]]); 
 	
-		print("--- Creative.zs initialized ---");
