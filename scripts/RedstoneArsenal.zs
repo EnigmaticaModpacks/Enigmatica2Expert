@@ -4,10 +4,17 @@ print("--- loading RedstoneArsenal.zs ---");
 	recipes.remove(<redstonearsenal:tool.bow_flux>);
 	recipes.addShapeless("Fluxed Box", 
 	<redstonearsenal:tool.bow_flux>, 
-	[<bloodmagic:sentient_bow>.anyDamage(),<botania:crystalbow>.anyDamage(),<mysticalagriculture:supremium_bow>.anyDamage(),
-	<thermalfoundation:tool.bow_diamond>.anyDamage(),<ore:blockElectrumFlux>,<mysticalagriculture:inferium_bow>.anyDamage(),
-	<mysticalagriculture:prudentium_bow>.anyDamage(),<mysticalagriculture:intermedium_bow>.anyDamage(),
-	<mysticalagriculture:superium_bow>.anyDamage()]);
+	[
+	<enderio:item_dark_steel_bow>.anyDamage(),
+	<extrautils2:compoundbow>.anyDamage(),
+	<enderio:item_end_steel_bow>.anyDamage(),
+	<mekanism:electricbow>.anyDamage(),
+	<ore:blockElectrumFlux>,
+	<botania:crystalbow>.anyDamage(),
+	<tconstruct:shortbow>.anyDamage(),
+	<bloodmagic:sentient_bow>.anyDamage(),
+	<tconstruct:crossbow>.anyDamage(),
+	]);
 
 print("--- RedstoneArsenal.zs initialized ---");
 	

@@ -142,46 +142,6 @@
       }
     },
     {
-      "weight": 1.0,
-      "min": 1,
-      "max": 1,
-      "item": {
-        "id": "harvestcraft:hardenedleatherhelmitem",
-        "damage": 0,
-        "count": 1
-      }
-    },
-    {
-      "weight": 1.0,
-      "min": 1,
-      "max": 1,
-      "item": {
-        "id": "harvestcraft:hardenedleatherchestitem",
-        "damage": 0,
-        "count": 1
-      }
-    },
-    {
-      "weight": 1.0,
-      "min": 1,
-      "max": 1,
-      "item": {
-        "id": "harvestcraft:hardenedleatherleggingsitem",
-        "damage": 0,
-        "count": 1
-      }
-    },
-    {
-      "weight": 1.0,
-      "min": 1,
-      "max": 1,
-      "item": {
-        "id": "harvestcraft:hardenedleatherbootsitem",
-        "damage": 0,
-        "count": 1
-      }
-    },
-    {
       "weight": 0.5889394283294678,
       "min": 1,
       "max": 1,

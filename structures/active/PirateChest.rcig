@@ -43,46 +43,6 @@
       }
     },
     {
-      "weight": 1.0,
-      "min": 1,
-      "max": 1,
-      "item": {
-        "id": "minecraft:iron_helmet",
-        "damage": 0,
-        "count": 1
-      }
-    },
-    {
-      "weight": 1.0,
-      "min": 1,
-      "max": 1,
-      "item": {
-        "id": "minecraft:iron_leggings",
-        "damage": 0,
-        "count": 1
-      }
-    },
-    {
-      "weight": 1.0,
-      "min": 1,
-      "max": 1,
-      "item": {
-        "id": "minecraft:iron_chestplate",
-        "damage": 0,
-        "count": 1
-      }
-    },
-    {
-      "weight": 1.0,
-      "min": 1,
-      "max": 1,
-      "item": {
-        "id": "minecraft:iron_boots",
-        "damage": 0,
-        "count": 1
-      }
-    },
-    {
       "weight": 0.14,
       "min": 1,
       "max": 1,

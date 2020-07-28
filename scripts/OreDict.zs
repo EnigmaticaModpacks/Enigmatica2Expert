@@ -85,8 +85,6 @@ for item in pressurePlates {
 		<ore:toolHoe>.remove(item);
 	}
 	
-	<ore:toolHoe>.remove(<mysticalagriculture:superium_hoe>);
-	
 # Pam's Apple
 	<ore:cropApple>.add(<harvestcraft:pamapple>);
 	<ore:listAllfruit>.add(<harvestcraft:pamapple>);

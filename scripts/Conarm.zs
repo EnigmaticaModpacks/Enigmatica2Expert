@@ -25,7 +25,6 @@ remake("Travel Belt Base", <conarm:travel_belt_base>, [
 recipes.remove(<conarm:travel_night>);
 recipes.addShapeless(<conarm:travel_night>, [<conarm:travel_goggles_base>, <ic2:nightvision_goggles:26>.anyDamage()]);
 recipes.addShapeless(<conarm:travel_night>, [<conarm:travel_goggles_base>, <enderio:item_dark_steel_upgrade:1>.withTag({"enderio:enabled": 1 as byte})]);
-recipes.addShapeless(<conarm:travel_night>, [<conarm:travel_goggles_base>, <mysticalagriculture:charm:1>]);
 
 # Soul goggles
 remakeEx(<conarm:travel_soul>, [

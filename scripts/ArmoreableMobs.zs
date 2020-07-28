@@ -20,7 +20,6 @@ import crafttweaker.data.IData;
 #
 # ######################################################################
 
-static armorStaged as IData[string] = scripts.DataTables.armorStaged;
 
 ##########################
 #       ENTITIES         #
@@ -91,7 +90,7 @@ function makeGroup(id as string, stage as IData, isSkeleton as bool){
 }
 
 # Create all stages
-for id, stage in armorStaged {
+for id, stage in scripts.DataTables.armorStaged {
     makeGroup(id, stage, false); # Weaponized group
     makeGroup(id, stage, true);  # Sceleton group
 }

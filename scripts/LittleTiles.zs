@@ -7,8 +7,8 @@ recipes.addShaped(<littletiles:ltstorageblocktile>, [
 	[<chisel:factory:6>, <chisel:factory:6>, <chisel:factory:6>]]);
 
 # Tools
-val rod = <mekanism:polyethene:3>;
-val core = <mysticalagriculture:gear:3>;
+val rod = <ore:stickTitaniumAluminide>.firstItem;
+val core = <ore:ingotSuperium>.firstItem;
 remakeEx(<littletiles:recipeadvanced> * 5, [[<littletiles:recipe>, null, <littletiles:recipe>],[<cd4017be_lib:m:401>, <littletiles:recipe>, <cd4017be_lib:m:401>], [<littletiles:recipe>, <mekanism:tierinstaller:1>, <littletiles:recipe>]]);
 remakeEx(<littletiles:recipe> * 5, [[<computercraft:printout>, null, <computercraft:printout>],[null, <appliedenergistics2:material:39>, null], [<computercraft:printout>, null, <computercraft:printout>]]);
 remakeEx(<littletiles:grabber>, [[null, <ore:itemRubber>, <ore:itemRubber>],[null, core, <ore:itemRubber>], [rod, null, null]]);

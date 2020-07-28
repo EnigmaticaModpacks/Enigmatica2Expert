@@ -7,10 +7,6 @@ print("--- loading Tools.zs ---");
 	val toolsToRemove = [
 	<botania:glasspick>,
 	<forestry:bronze_pickaxe>,
-	<mysticalagriculture:inferium_pickaxe>,
-	<mysticalagriculture:prudentium_pickaxe>,
-	<mysticalagriculture:intermedium_pickaxe>,
-	<mysticalagriculture:superium_pickaxe>,
 	
 	<immersiveengineering:pickaxe_steel>,
 	<immersiveengineering:shovel_steel>,
@@ -20,13 +16,13 @@ print("--- loading Tools.zs ---");
 	<twilightforest:fiery_pickaxe>,
 	<twilightforest:steeleaf_pickaxe>.withTag({ench: [{lvl: 2 as short, id: 35 as short}]}),
 	<twilightforest:ironwood_pickaxe>.withTag({ench: [{lvl: 1 as short, id: 32 as short}]}),
-	
-	<mysticalagradditions:inferium_paxel>,
-	<mysticalagradditions:prudentium_paxel>,
-	<mysticalagradditions:intermedium_paxel>,
-	<mysticalagradditions:superium_paxel>,
-	<mysticalagradditions:supremium_paxel>
-		] as IItemStack[];
+
+	<botania:manasteelpick>, 
+	<botania:manasteelshovel>, 
+	<botania:manasteelaxe>, 
+	<botania:manasteelsword>, 
+	<botania:manasteelshears>, 
+] as IItemStack[];
 		
 	for tool in toolsToRemove {
 		rh(tool);

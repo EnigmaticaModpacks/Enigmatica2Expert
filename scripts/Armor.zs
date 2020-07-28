@@ -1,303 +1,233 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
+import crafttweaker.data.IData;
+import crafttweaker.item.IIngredient;
 import mods.jei.JEI.removeAndHide as rh;
 
-# *======= Energy Armor =======*
 
-	var energyArmor = [
-	<enderio:item_dark_steel_helmet>,
-	<enderio:item_dark_steel_chestplate>,
-	<enderio:item_dark_steel_leggings>,
-	<enderio:item_dark_steel_boots>,
-	<enderio:item_end_steel_helmet>,
-	<enderio:item_end_steel_chestplate>,
-	<enderio:item_end_steel_leggings>,
-	<enderio:item_end_steel_boots>,		
-	<immersiveengineering:steel_armor_head>,
-	<immersiveengineering:steel_armor_chest>,
-	<immersiveengineering:steel_armor_legs>,
-	<immersiveengineering:steel_armor_feet>,
-	<immersiveengineering:faraday_suit_head>,
-	<immersiveengineering:faraday_suit_chest>,
-	<immersiveengineering:faraday_suit_legs>,
-	<immersiveengineering:faraday_suit_feet>,
-	<ic2:nano_helmet:26>,
-	<ic2:nano_chestplate:26>,
-	<ic2:nano_leggings:26>,
-	<ic2:nano_boots:26>,
-	<redstonearsenal:armor.helmet_flux>,
-	<redstonearsenal:armor.plate_flux>,
-	<redstonearsenal:armor.legs_flux>,
-	<redstonearsenal:armor.boots_flux>,
-	<ic2:quantum_helmet:26>,
-	<ic2:quantum_chestplate:26>,
-	<ic2:quantum_leggings:26>,
-	<ic2:quantum_boots:26>
-	] as IItemStack[];
-	
-		for item in energyArmor {
-		recipes.remove(item);
-	}
+# ######################################################################
+#
+# Remove completely
+#
+# ######################################################################
 
-	recipes.addShaped(<enderio:item_dark_steel_helmet>, [[<ore:ingotDarkSteel>, <ore:ingotDarkSteel>, <ore:ingotDarkSteel>],[<ore:ingotDarkSteel>, <tcomplement:manyullyn_helmet>.anyDamage(), <ore:ingotDarkSteel>], [null, null, null]]);
-	recipes.addShaped(<enderio:item_dark_steel_chestplate>,[[<ore:ingotDarkSteel>, <tcomplement:manyullyn_chestplate>.anyDamage(), <ore:ingotDarkSteel>],[<ore:ingotDarkSteel>, <ore:ingotDarkSteel>, <ore:ingotDarkSteel>], [<ore:ingotDarkSteel>, <ore:ingotDarkSteel>, <ore:ingotDarkSteel>]]);
-	recipes.addShaped(<enderio:item_dark_steel_leggings>, [[<ore:ingotDarkSteel>, null, <ore:ingotDarkSteel>],[<ore:ingotDarkSteel>, <tcomplement:manyullyn_leggings>.anyDamage(), <ore:ingotDarkSteel>], [null, null, null]]);
-	recipes.addShaped(<enderio:item_dark_steel_boots>, [[<ore:ingotDarkSteel>, <ore:ingotDarkSteel>, <ore:ingotDarkSteel>],[<ore:ingotDarkSteel>, <tcomplement:manyullyn_boots>.anyDamage(), <ore:ingotDarkSteel>], [<ore:ingotDarkSteel>, null, <ore:ingotDarkSteel>]]);
+# Remove all armor that can be replaced with Conarm
+for item in [
+<immersiveengineering:steel_armor_head>,
+<immersiveengineering:steel_armor_chest>,
+<immersiveengineering:steel_armor_legs>,
+<immersiveengineering:steel_armor_feet>,
+<immersiveengineering:faraday_suit_head>,
+<immersiveengineering:faraday_suit_chest>,
+<immersiveengineering:faraday_suit_legs>,
+<immersiveengineering:faraday_suit_feet>,
+<tcomplement:knightslime_helmet>,
+<tcomplement:knightslime_chestplate>,
+<tcomplement:knightslime_leggings>,
+<tcomplement:knightslime_boots>,
+<harvestcraft:hardenedleatherhelmitem>,
+<harvestcraft:hardenedleatherchestitem>,
+<harvestcraft:hardenedleatherleggingsitem>,
+<harvestcraft:hardenedleatherbootsitem>,
+<tcomplement:manyullyn_helmet>,
+<tcomplement:manyullyn_chestplate>,
+<tcomplement:manyullyn_leggings>,
+<tcomplement:manyullyn_boots>,
+<minecraft:iron_helmet>,
+<minecraft:iron_chestplate>,
+<minecraft:iron_leggings>,
+<minecraft:iron_boots>,
+<minecraft:golden_boots>,
+<minecraft:golden_leggings>,
+<minecraft:golden_chestplate>,
+<minecraft:golden_helmet>,
+<minecraft:diamond_helmet>,
+<minecraft:diamond_chestplate>,
+<minecraft:diamond_leggings>,
+<minecraft:diamond_boots>,
+<ic2:alloy_chestplate>,
+<tcomplement:steel_helmet>,
+<tcomplement:steel_chestplate>,
+<tcomplement:steel_leggings>,
+<tcomplement:steel_boots>,
 
-	recipes.addShaped(<enderio:item_end_steel_helmet>, [[<ore:ingotEndSteel>, <ore:skullGuardianDiode>, <ore:ingotEndSteel>],[<ore:ingotEndSteel>, <enderio:item_dark_steel_helmet>.anyDamage(), <ore:ingotEndSteel>], [null, null, null]]);
-	recipes.addShaped(<enderio:item_end_steel_chestplate>,[[<ore:ingotEndSteel>, <enderio:item_dark_steel_chestplate>.anyDamage(), <ore:ingotEndSteel>],[<ore:ingotEndSteel>, <ore:skullGuardianDiode>, <ore:ingotEndSteel>], [<ore:ingotEndSteel>, <ore:ingotEndSteel>, <ore:ingotEndSteel>]]);
-	recipes.addShaped(<enderio:item_end_steel_leggings>, [[<ore:ingotEndSteel>, <ore:skullGuardianDiode>, <ore:ingotEndSteel>],[<ore:ingotEndSteel>, <enderio:item_dark_steel_leggings>.anyDamage(), <ore:ingotEndSteel>], [null, null, null]]);
-	recipes.addShaped(<enderio:item_end_steel_boots>, [[<ore:ingotEndSteel>, <ore:skullGuardianDiode>, <ore:ingotEndSteel>],[<ore:ingotEndSteel>, <enderio:item_dark_steel_boots>.anyDamage(), <ore:ingotEndSteel>], [<ore:ingotEndSteel>, null, <ore:ingotEndSteel>]]);
-	
-	recipes.addShaped(<immersiveengineering:faraday_suit_head>, [[<ore:plateAluminum>, <ore:plateAluminum>, <ore:plateAluminum>],[<ore:plateAluminum>, <minecraft:iron_helmet>.anyDamage(), <ore:plateAluminum>], [null, null, null]]);
-	recipes.addShaped(<immersiveengineering:faraday_suit_chest>,[[<ore:plateAluminum>, <minecraft:iron_chestplate>.anyDamage(), <ore:plateAluminum>],[<ore:plateAluminum>, <ore:plateAluminum>, <ore:plateAluminum>], [<ore:plateAluminum>, <ore:plateAluminum>, <ore:plateAluminum>]]);
-	recipes.addShaped(<immersiveengineering:faraday_suit_feet>, [[<ore:plateAluminum>, null, <ore:plateAluminum>],[<ore:plateAluminum>, <minecraft:iron_boots>.anyDamage(), <ore:plateAluminum>], [null, null, null]]);
-	recipes.addShaped(<immersiveengineering:faraday_suit_legs>, [[<ore:plateAluminum>, <ore:plateAluminum>, <ore:plateAluminum>],[<ore:plateAluminum>, <minecraft:iron_leggings>.anyDamage(), <ore:plateAluminum>], [<ore:plateAluminum>, null, <ore:plateAluminum>]]);
-	
-	recipes.addShaped(<immersiveengineering:steel_armor_head>, [[<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>], [<ore:plateSteel>, <immersiveengineering:faraday_suit_head>, <ore:plateSteel>]]);
-	recipes.addShaped(<immersiveengineering:steel_armor_chest>,[[<ore:plateSteel>, <immersiveengineering:faraday_suit_chest>, <ore:plateSteel>], [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>], [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>]]);
-	recipes.addShaped(<immersiveengineering:steel_armor_legs>, [[<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>], [<ore:plateSteel>, <immersiveengineering:faraday_suit_legs>, <ore:plateSteel>], [<ore:plateSteel>, null, <ore:plateSteel>]]);
-	recipes.addShaped(<immersiveengineering:steel_armor_feet>, [[<ore:plateSteel>, <immersiveengineering:faraday_suit_feet>, <ore:plateSteel>], [<ore:plateSteel>, null, <ore:plateSteel>]]);
+<twilightforest:fiery_helmet>,
+<twilightforest:fiery_chestplate>,
+<twilightforest:fiery_leggings>,
+<twilightforest:fiery_boots>,
 
-	recipes.addShaped(<ic2:nano_helmet:26>, [[<ic2:crafting:15>, <ic2:energy_crystal:26>.anyDamage(), <ic2:crafting:15>],[<ic2:crafting:15>, <ic2:nightvision_goggles:26>.anyDamage(), <ic2:crafting:15>], [null, <immersiveengineering:steel_armor_head>.anyDamage(), null]]);
-	recipes.addShaped(<ic2:nano_chestplate:26>, [[<ic2:crafting:15>, <immersiveengineering:steel_armor_chest>.anyDamage(), <ic2:crafting:15>],[<ic2:crafting:15>, <ic2:energy_crystal:26>.anyDamage(), <ic2:crafting:15>], [<ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>]]);
-	recipes.addShaped(<ic2:nano_leggings:26>, [[<ic2:crafting:15>, <ic2:energy_crystal:26>.anyDamage(), <ic2:crafting:15>],[<ic2:crafting:15>, <immersiveengineering:steel_armor_legs>.anyDamage(), <ic2:crafting:15>], [<ic2:crafting:15>, null, <ic2:crafting:15>]]);
-	recipes.addShaped(<ic2:nano_boots:26>, [[<ic2:crafting:15>, <ic2:energy_crystal:26>.anyDamage(), <ic2:crafting:15>],[<ic2:crafting:15>, <immersiveengineering:steel_armor_feet>.anyDamage(), <ic2:crafting:15>], [null, null, null]]);
-	
-	recipes.addShaped(<redstonearsenal:armor.boots_flux>, [[<redstonearsenal:material:224>, null, <redstonearsenal:material:224>],[<redstonearsenal:material:224>, <ic2:nano_boots:26>.anyDamage(), <redstonearsenal:material:224>], [null, null, null]]);
-	recipes.addShaped(<redstonearsenal:armor.legs_flux>, [[<redstonearsenal:material:224>, <redstonearsenal:material:224>, <redstonearsenal:material:224>],[<redstonearsenal:material:224>, <ic2:nano_leggings:26>.anyDamage(), <redstonearsenal:material:224>], [<redstonearsenal:material:224>, null, <redstonearsenal:material:224>]]);
-	recipes.addShaped(<redstonearsenal:armor.plate_flux>, [[<redstonearsenal:material:224>, <ic2:nano_chestplate:26>.anyDamage(), <redstonearsenal:material:224>],[<redstonearsenal:material:224>, <redstonearsenal:material:224>, <redstonearsenal:material:224>], [<redstonearsenal:material:224>, <redstonearsenal:material:224>, <redstonearsenal:material:224>]]);
-	recipes.addShaped(<redstonearsenal:armor.helmet_flux>, [[<redstonearsenal:material:224>, <redstonearsenal:material:224>, <redstonearsenal:material:224>],[<redstonearsenal:material:224>, <ic2:nano_helmet:26>.anyDamage(), <redstonearsenal:material:224>], [null, null, null]]);
-	
-	recipes.addShaped(<ic2:quantum_boots:26>, [[null, null, null],[<ic2:crafting:4>, <redstonearsenal:armor.boots_flux>.anyDamage(), <ic2:crafting:4>], [<ic2:rubber_boots>, <ic2:lapotron_crystal>.anyDamage(), <ic2:rubber_boots>]]);
-	recipes.addShaped(<ic2:quantum_leggings:26>, [[<ic2:crafting:3>, <ic2:lapotron_crystal>.anyDamage(), <ic2:crafting:3>],[<ic2:crafting:4>, <redstonearsenal:armor.legs_flux>.anyDamage(), <ic2:crafting:4>], [null, <ic2:lapotron_crystal>.anyDamage(), null]]);
-	recipes.addShaped(<ic2:quantum_chestplate:26>, [[<ic2:crafting:3>, <ic2:lapotron_crystal>.anyDamage(), <ic2:crafting:3>],[<ic2:crafting:4>, <redstonearsenal:armor.plate_flux>.anyDamage(), <ic2:crafting:4>], [<ic2:crafting:3>, <ic2:jetpack_electric>.anyDamage(), <ic2:crafting:3>]]);
-	recipes.addShaped(<ic2:quantum_helmet:26>, [[<ic2:crafting:3>, null, <ic2:crafting:3>],[<ic2:crafting:4>, <redstonearsenal:armor.helmet_flux>.anyDamage(), <ic2:crafting:4>], [null, <ic2:lapotron_crystal>.anyDamage(), null]]);
-			
-# *======= Mystical Agriculture Armor =======*
+<twilightforest:knightmetal_helmet>,
+<twilightforest:knightmetal_chestplate>,
+<twilightforest:knightmetal_leggings>,
+<twilightforest:knightmetal_boots>,
 
-	var mysticalAgricultureArmor = [
-	<mysticalagriculture:inferium_helmet>,
-	<mysticalagriculture:inferium_chestplate>,
-	<mysticalagriculture:inferium_leggings>,
-	<mysticalagriculture:inferium_boots>,		
-	<mysticalagriculture:prudentium_helmet>,
-	<mysticalagriculture:prudentium_chestplate>,
-	<mysticalagriculture:prudentium_leggings>,
-	<mysticalagriculture:prudentium_boots>,
-	<mysticalagriculture:intermedium_helmet>,
-	<mysticalagriculture:intermedium_chestplate>,
-	<mysticalagriculture:intermedium_leggings>,
-	<mysticalagriculture:intermedium_boots>,
-	<mysticalagriculture:superium_helmet>,
-	<mysticalagriculture:superium_chestplate>,
-	<mysticalagriculture:superium_leggings>,
-	<mysticalagriculture:superium_boots>,
-	<mysticalagriculture:supremium_helmet>,
-	<mysticalagriculture:supremium_chestplate>,
-	<mysticalagriculture:supremium_leggings>,
-	<mysticalagriculture:supremium_boots>
-	] as IItemStack[];
-	
-		for item in mysticalAgricultureArmor {
-		recipes.remove(item);
-	}
+<twilightforest:steeleaf_helmet>,
+<twilightforest:steeleaf_chestplate>,
+<twilightforest:steeleaf_leggings>,
+<twilightforest:steeleaf_boots>,
+] as IItemStack[] { rh(item); }
 
-	recipes.addShaped(<mysticalagriculture:inferium_helmet>, [[<ore:ingotInferium>, <mysticalagriculture:gear:5>, <ore:ingotInferium>],[<ore:ingotInferium>, <minecraft:diamond_helmet>.anyDamage(), <ore:ingotInferium>], [null, null, null]]);
-	recipes.addShaped(<mysticalagriculture:inferium_chestplate>, [[<ore:ingotInferium>, <minecraft:diamond_chestplate>.anyDamage(), <ore:ingotInferium>],[<ore:ingotInferium>, <mysticalagriculture:gear:5>, <ore:ingotInferium>], [<ore:ingotInferium>, <ore:ingotInferium>, <ore:ingotInferium>]]);
-	recipes.addShaped(<mysticalagriculture:inferium_leggings>, [[<ore:ingotInferium>, <mysticalagriculture:gear:5>, <ore:ingotInferium>],[<ore:ingotInferium>, <minecraft:diamond_leggings>.anyDamage(), <ore:ingotInferium>], [<ore:ingotInferium>, null, <ore:ingotInferium>]]);
-	recipes.addShaped(<mysticalagriculture:inferium_boots>, [[<ore:ingotInferium>, null, <ore:ingotInferium>],[<ore:ingotInferium>, <minecraft:diamond_boots>.anyDamage(), <mysticalagriculture:gear:5>], [null, null, null]]);
-	
-	recipes.addShaped(<mysticalagriculture:supremium_boots>, [[<ore:ingotSupremium>, null, <ore:ingotSupremium>],[<ore:ingotSupremium>, <mysticalagriculture:superium_boots>.anyDamage(), <mysticalagriculture:gear:9>], [null, null, null]]);
-	recipes.addShaped(<mysticalagriculture:supremium_leggings>, [[<ore:ingotSupremium>, <mysticalagriculture:gear:9>, <ore:ingotSupremium>],[<ore:ingotSupremium>, <mysticalagriculture:superium_leggings>.anyDamage(), <ore:ingotSupremium>], [<ore:ingotSupremium>, null, <ore:ingotSupremium>]]);
-	recipes.addShaped(<mysticalagriculture:supremium_chestplate>, [[<ore:ingotSupremium>, <mysticalagriculture:superium_chestplate>.anyDamage(), <ore:ingotSupremium>],[<ore:ingotSupremium>, <mysticalagriculture:gear:9>, <ore:ingotSupremium>], [<ore:ingotSupremium>, <ore:ingotSupremium>, <ore:ingotSupremium>]]);
-	recipes.addShaped(<mysticalagriculture:supremium_helmet>, [[<ore:ingotSupremium>, <mysticalagriculture:gear:9>, <ore:ingotSupremium>],[<ore:ingotSupremium>, <mysticalagriculture:superium_helmet>.anyDamage(), <ore:ingotSupremium>], [null, null, null]]);
 
-	recipes.addShaped(<mysticalagriculture:superium_boots>, [[<ore:ingotSuperium>, null, <ore:ingotSuperium>],[<ore:ingotSuperium>, <mysticalagriculture:intermedium_boots>.anyDamage(), <mysticalagriculture:gear:8>], [null, null, null]]);
-	recipes.addShaped(<mysticalagriculture:superium_leggings>, [[<ore:ingotSuperium>, <mysticalagriculture:gear:8>, <ore:ingotSuperium>],[<ore:ingotSuperium>, <mysticalagriculture:intermedium_leggings>.anyDamage(), <ore:ingotSuperium>], [<ore:ingotSuperium>, null, <ore:ingotSuperium>]]);
-	recipes.addShaped(<mysticalagriculture:superium_chestplate>, [[<ore:ingotSuperium>, <mysticalagriculture:intermedium_chestplate>.anyDamage(), <ore:ingotSuperium>],[<ore:ingotSuperium>, <mysticalagriculture:gear:8>, <ore:ingotSuperium>], [<ore:ingotSuperium>, <ore:ingotSuperium>, <ore:ingotSuperium>]]);
-	recipes.addShaped(<mysticalagriculture:superium_helmet>, [[<ore:ingotSuperium>, <mysticalagriculture:gear:8>, <ore:ingotSuperium>],[<ore:ingotSuperium>, <mysticalagriculture:intermedium_helmet>.anyDamage(), <ore:ingotSuperium>], [null, null, null]]);
+#------------
+# Iron
+#------------
 
-	recipes.addShaped(<mysticalagriculture:intermedium_boots>, [[<ore:ingotIntermedium>, null, <ore:ingotIntermedium>],[<ore:ingotIntermedium>, <mysticalagriculture:prudentium_boots>.anyDamage(), <mysticalagriculture:gear:7>], [null, null, null]]);
-	recipes.addShaped(<mysticalagriculture:intermedium_leggings>, [[<ore:ingotIntermedium>, <mysticalagriculture:gear:7>, <ore:ingotIntermedium>],[<ore:ingotIntermedium>, <mysticalagriculture:prudentium_leggings>.anyDamage(), <ore:ingotIntermedium>], [<ore:ingotIntermedium>, null, <ore:ingotIntermedium>]]);
-	recipes.addShaped(<mysticalagriculture:intermedium_chestplate>, [[<ore:ingotIntermedium>, <mysticalagriculture:prudentium_chestplate>.anyDamage(), <ore:ingotIntermedium>],[<ore:ingotIntermedium>, <mysticalagriculture:gear:7>, <ore:ingotIntermedium>], [<ore:ingotIntermedium>, <ore:ingotIntermedium>, <ore:ingotIntermedium>]]);
-	recipes.addShaped(<mysticalagriculture:intermedium_helmet>, [[<ore:ingotIntermedium>, <mysticalagriculture:gear:7>, <ore:ingotIntermedium>],[<ore:ingotIntermedium>, <mysticalagriculture:prudentium_helmet>.anyDamage(), <ore:ingotIntermedium>], [null, null, null]]);
+# Replace recipes that used items
+for item in [
+	<ic2:solar_helmet>,
+	<openblocks:sonic_glasses>,
+	<plethora:module:6>,
+	<actuallyadditions:item_player_probe>,
+	<compactsolars:solar_hat_low_voltage>,
+	<compactsolars:solar_hat_medium_voltage>,
+	<compactsolars:solar_hat_high_voltage>,
+] as IItemStack[] {
+	recipes.replaceAllOccurences(<minecraft:iron_helmet:*>, <conarm:helmet_core>.withTag({Material: "iron"}), item);
+}
 
-	recipes.addShaped(<mysticalagriculture:prudentium_boots>, [[<ore:ingotPrudentium>, null, <ore:ingotPrudentium>],[<ore:ingotPrudentium>, <mysticalagriculture:inferium_boots>.anyDamage(), <mysticalagriculture:gear:6>], [null, null, null]]);
-	recipes.addShaped(<mysticalagriculture:prudentium_leggings>, [[<ore:ingotPrudentium>, <mysticalagriculture:gear:6>, <ore:ingotPrudentium>],[<ore:ingotPrudentium>, <mysticalagriculture:inferium_leggings>.anyDamage(), <ore:ingotPrudentium>], [<ore:ingotPrudentium>, null, <ore:ingotPrudentium>]]);
-	recipes.addShaped(<mysticalagriculture:prudentium_chestplate>, [[<ore:ingotPrudentium>, <mysticalagriculture:inferium_chestplate>.anyDamage(), <ore:ingotPrudentium>],[<ore:ingotPrudentium>, <mysticalagriculture:gear:6>, <ore:ingotPrudentium>], [<ore:ingotPrudentium>, <ore:ingotPrudentium>, <ore:ingotPrudentium>]]);
-	recipes.addShaped(<mysticalagriculture:prudentium_helmet>, [[<ore:ingotPrudentium>, <mysticalagriculture:gear:6>, <ore:ingotPrudentium>],[<ore:ingotPrudentium>, <mysticalagriculture:inferium_helmet>.anyDamage(), <ore:ingotPrudentium>], [null, null, null]]);
-	
-# *======= Magical Armor =======*
+recipes.replaceAllOccurences(<minecraft:iron_boots:*>, <conarm:boots_core>.withTag({Material: "iron"}), <randomthings:superlubricentboots>);
 
-	var magicalArmor = [
-	<botania:manaweavehelm>,
-	<botania:manaweavechest>,
-	<botania:manaweavelegs>,
-	<botania:manaweaveboots>,
-	<psi:psimetal_exosuit_helmet>,
-	<psi:psimetal_exosuit_chestplate>,
-	<psi:psimetal_exosuit_leggings>,
-	<psi:psimetal_exosuit_boots>,
-	<botania:manasteelhelm>,
-	<botania:manasteelchest>,
-	<botania:manasteellegs>,
-	<botania:manasteelboots>,
-	<botania:elementiumhelm>,
-	<botania:elementiumchest>,
-	<botania:elementiumlegs>,
-	<botania:elementiumboots>,
-	<botania:terrasteelhelm>,
-	<botania:terrasteelchest>,
-	<botania:terrasteellegs>,
-	<botania:terrasteelboots>,
-	<botania:terrasteelhelmreveal>
-	] as IItemStack[];
-	
-		for item in magicalArmor {
-		recipes.remove(item);
-	}
+//mods.bloodmagic.AlchemyArray.removeRecipe(IItemStack input, IItemStack catalyst);
+val BRT = <bloodmagic:component:8>;
+mods.bloodmagic.AlchemyArray.removeRecipe(BRT, <minecraft:iron_helmet>);
+mods.bloodmagic.AlchemyArray.removeRecipe(BRT, <minecraft:iron_chestplate>);
+mods.bloodmagic.AlchemyArray.removeRecipe(BRT, <minecraft:iron_leggings>);
+mods.bloodmagic.AlchemyArray.removeRecipe(BRT, <minecraft:iron_boots>);
 
-	recipes.addShaped(<botania:manaweavehelm>, [[<ore:clothManaweave>, <ore:clothManaweave>, <ore:clothManaweave>], [<ore:clothManaweave>, <minecraft:leather_helmet>.anyDamage(), <ore:clothManaweave>]]);
-	recipes.addShaped(<botania:manaweavechest>, [[<ore:clothManaweave>, <minecraft:leather_chestplate>.anyDamage(), <ore:clothManaweave>], [<ore:clothManaweave>, <ore:clothManaweave>, <ore:clothManaweave>], [<ore:clothManaweave>, <ore:clothManaweave>, <ore:clothManaweave>]]);
-	recipes.addShaped(<botania:manaweavelegs>, [[<ore:clothManaweave>, <ore:clothManaweave>, <ore:clothManaweave>], [<ore:clothManaweave>, <minecraft:leather_leggings>.anyDamage(), <ore:clothManaweave>], [<ore:clothManaweave>, null, <ore:clothManaweave>]]);
-	recipes.addShaped(<botania:manaweaveboots>, [[<ore:clothManaweave>, <minecraft:leather_boots>.anyDamage(), <ore:clothManaweave>], [<ore:clothManaweave>, null, <ore:clothManaweave>]]);
+//mods.bloodmagic.AlchemyArray.addRecipe(IItemStack output, IItemStack input, IItemStack catalyst, @Optional string textureLocation);
+mods.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:living_armour_helmet>,  BRT, <conarm:helmet_core>.withTag({Material: "iron"}),  "bloodmagic:textures/models/AlchemyArrays/bindingarray.png");
+mods.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:living_armour_chest>,   BRT, <conarm:chest_core>.withTag({Material: "iron"}),   "bloodmagic:textures/models/AlchemyArrays/bindingarray.png");
+mods.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:living_armour_leggings>,BRT, <conarm:leggings_core>.withTag({Material: "iron"}),"bloodmagic:textures/models/AlchemyArrays/bindingarray.png");
+mods.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:living_armour_boots>,   BRT, <conarm:boots_core>.withTag({Material: "iron"}),   "bloodmagic:textures/models/AlchemyArrays/bindingarray.png");
 
-	
-	recipes.addShaped(<botania:terrasteelboots>, [[<ore:dreamwoodTwig>, <ore:runeWinterB>, <ore:dreamwoodTwig>],[<ore:ingotTerrasteel>, <botania:elementiumboots>.anyDamage(), <ore:ingotTerrasteel>], [null, <ore:ingotTerrasteel>, null]]);
-	recipes.addShaped(<botania:terrasteellegs>, [[<ore:dreamwoodTwig>, <ore:runeAutumnB>, <ore:dreamwoodTwig>],[<ore:ingotTerrasteel>, <botania:elementiumlegs>.anyDamage(), <ore:ingotTerrasteel>], [null, <ore:ingotTerrasteel>, null]]);
-	recipes.addShaped(<botania:terrasteelchest>, [[<ore:dreamwoodTwig>, <ore:runeSummerB>, <ore:dreamwoodTwig>],[<ore:ingotTerrasteel>, <botania:elementiumchest>.anyDamage(), <ore:ingotTerrasteel>], [<ore:ingotTerrasteel>, <ore:ingotTerrasteel>, <ore:ingotTerrasteel>]]);
-	recipes.addShaped(<botania:terrasteelhelm>, [[<ore:dreamwoodTwig>, <ore:runeSpringB>, <ore:dreamwoodTwig>],[<ore:ingotTerrasteel>, <botania:elementiumhelm>.anyDamage(), <ore:ingotTerrasteel>], [null, <ore:ingotTerrasteel>, null]]);
-	recipes.addShapeless(<botania:terrasteelhelmreveal>, [<botania:terrasteelhelm>.anyDamage(),<thaumcraft:goggles>.anyDamage()]);
+#------------
+# Gold
+#------------
+recipes.replaceAllOccurences(<minecraft:golden_chestplate:*>, <conarm:chest_core>.withTag({Material: "electrum"}), <draconicevolution:tool_upgrade:9>);
+recipes.replaceAllOccurences(<minecraft:golden_boots:*>, <conarm:boots_core>.withTag({Material: "electrum"}), <draconicevolution:tool_upgrade:10>);
+recipes.replaceAllOccurences(<minecraft:golden_boots:*>, <conarm:boots_core>.withTag({Material: "electrum"}), <draconicevolution:tool_upgrade:11>);
 
-	recipes.addShaped(<botania:elementiumboots>, [[<ore:ingotElvenElementium>, null, <ore:ingotElvenElementium>],[<ore:ingotElvenElementium>, <psi:psimetal_exosuit_boots>.anyDamage(), <ore:ingotElvenElementium>], [null, null, null]]);
-	recipes.addShaped(<botania:elementiumlegs>, [[<ore:ingotElvenElementium>, <ore:ingotElvenElementium>, <ore:ingotElvenElementium>],[<ore:ingotElvenElementium>, <psi:psimetal_exosuit_leggings>.anyDamage(), <ore:ingotElvenElementium>], [<ore:ingotElvenElementium>, null, <ore:ingotElvenElementium>]]);
-	recipes.addShaped(<botania:elementiumchest>, [[<ore:ingotElvenElementium>, <psi:psimetal_exosuit_chestplate>.anyDamage(), <ore:ingotElvenElementium>],[<ore:ingotElvenElementium>, <ore:ingotElvenElementium>, <ore:ingotElvenElementium>], [<ore:ingotElvenElementium>, <ore:ingotElvenElementium>, <ore:ingotElvenElementium>]]);
-	recipes.addShaped(<botania:elementiumhelm>, [[<ore:ingotElvenElementium>, <ore:ingotElvenElementium>, <ore:ingotElvenElementium>],[<ore:ingotElvenElementium>, <psi:psimetal_exosuit_helmet>.anyDamage(), <ore:ingotElvenElementium>], [null, null, null]]);
+#------------
+# Diamond
+#------------
+recipes.replaceAllOccurences(<minecraft:diamond_helmet>, <conarm:helmet_core>.withTag({Material: "diamantine_crystal"}), <plethora:module>);
+recipes.replaceAllOccurences(<minecraft:diamond_chestplate:*>, <conarm:chest_core>.withTag({Material: "diamantine_crystal"}), <draconicevolution:tool_upgrade:8>);
+recipes.replaceAllOccurences(<minecraft:diamond_boots:*>, <conarm:boots_core>.withTag({Material: "diamantine_crystal"}), <environmentaltech:modifier_jump_boost>);
 
-	recipes.addShaped(<psi:psimetal_exosuit_boots>, [[<ore:gemPsi>, null, <ore:gemPsi>],[<ore:ingotPsi>, <botania:manasteelboots>.anyDamage(), <ore:ingotPsi>], [null, null, null]]);
-	recipes.addShaped(<psi:psimetal_exosuit_leggings>, [[<ore:gemPsi>, <ore:ingotPsi>, <ore:gemPsi>],[<ore:ingotPsi>, <botania:manasteellegs>.anyDamage(), <ore:ingotPsi>], [<ore:ingotPsi>, null, <ore:ingotPsi>]]);
-	recipes.addShaped(<psi:psimetal_exosuit_chestplate>, [[<ore:gemPsi>, <botania:manasteelchest>.anyDamage(), <ore:gemPsi>],[<ore:ingotPsi>, <ore:ingotPsi>, <ore:ingotPsi>], [<ore:ingotPsi>, <ore:ingotPsi>, <ore:ingotPsi>]]);
-	recipes.addShaped(<psi:psimetal_exosuit_helmet>, [[<ore:ingotPsi>, <ore:gemPsi>, <ore:ingotPsi>],[<ore:ingotPsi>, <botania:manasteelhelm>.anyDamage(), <ore:ingotPsi>], [null, null, null]]);
 
-	recipes.addShaped(<botania:manasteelboots>, [[<ore:ingotManasteel>, null, <ore:ingotManasteel>],[<ore:ingotManasteel>, <botania:manaweaveboots>.anyDamage(), <ore:ingotManasteel>], [null, null, null]]);
-	recipes.addShaped(<botania:manasteellegs>, [[<ore:ingotManasteel>, <ore:ingotManasteel>, <ore:ingotManasteel>],[<ore:ingotManasteel>, <botania:manaweavelegs>.anyDamage(), <ore:ingotManasteel>], [<ore:ingotManasteel>, null, <ore:ingotManasteel>]]);
-	recipes.addShaped(<botania:manasteelchest>, [[<ore:ingotManasteel>, <botania:manaweavechest>.anyDamage(), <ore:ingotManasteel>],[<ore:ingotManasteel>, <ore:ingotManasteel>, <ore:ingotManasteel>], [<ore:ingotManasteel>, <ore:ingotManasteel>, <ore:ingotManasteel>]]);
-	recipes.addShaped(<botania:manasteelhelm>, [[<ore:ingotManasteel>, <ore:ingotManasteel>, <ore:ingotManasteel>],[<ore:ingotManasteel>, <botania:manaweavehelm>.anyDamage(), <ore:ingotManasteel>], [null, null, null]]);
-	
-# *======= NuclearCraft Armor =======*
 
-	var nuclearcraftArmor = [
-	<nuclearcraft:helm_boron>,
-	<nuclearcraft:chest_boron>,
-	<nuclearcraft:legs_boron>,
-	<nuclearcraft:boots_boron>,
-	<nuclearcraft:helm_tough>,
-	<nuclearcraft:chest_tough>,
-	<nuclearcraft:legs_tough>,
-	<nuclearcraft:boots_tough>,
-	<nuclearcraft:helm_hard_carbon>,
-	<nuclearcraft:chest_hard_carbon>,
-	<nuclearcraft:legs_hard_carbon>,
-	<nuclearcraft:boots_hard_carbon>,
-	<nuclearcraft:helm_boron_nitride>,
-	<nuclearcraft:chest_boron_nitride>,
-	<nuclearcraft:legs_boron_nitride>,
-	<nuclearcraft:boots_boron_nitride>
-	] as IItemStack[];
-	
-		for item in nuclearcraftArmor {
-		recipes.remove(item);
+# ######################################################################
+#
+# Generate recipes
+#
+# ######################################################################
+
+
+static armorStaged as IData[string] = scripts.DataTables.armorStaged;
+
+function getSetPiece(setData as IData, pieceN as int) as IItemStack {
+
+	if (!isNull(setData)) {
+		val idStr = setData.list[pieceN].id.asString();
+		if (!isNull(idStr)) { 
+			val piece = getIngredientFromString(idStr);
+			if (!isNull(piece)) {
+				return piece.itemArray[0];
+			} else {
+				logger.logWarning("Armor.zs Error. No armor item <"~idStr~">");
+			}
+		}
 	}
 	
-	recipes.addShaped(<nuclearcraft:boots_boron_nitride>, [[<ore:gemBoronNitride>, null, <ore:gemBoronNitride>],[<ore:gemBoronNitride>, <nuclearcraft:boots_tough>.anyDamage(), <ore:gemBoronNitride>], [null, null, null]]);
-	recipes.addShaped(<nuclearcraft:legs_boron_nitride>, [[<ore:gemBoronNitride>, <ore:gemBoronNitride>, <ore:gemBoronNitride>],[<ore:gemBoronNitride>, <nuclearcraft:legs_tough>.anyDamage(), <ore:gemBoronNitride>], [<ore:gemBoronNitride>, null, <ore:gemBoronNitride>]]);
-	recipes.addShaped(<nuclearcraft:chest_boron_nitride>, [[<ore:gemBoronNitride>, <nuclearcraft:chest_tough>.anyDamage(), <ore:gemBoronNitride>],[<ore:gemBoronNitride>, <ore:gemBoronNitride>, <ore:gemBoronNitride>], [<ore:gemBoronNitride>, <ore:gemBoronNitride>, <ore:gemBoronNitride>]]);
-	recipes.addShaped(<nuclearcraft:helm_boron_nitride>, [[<ore:gemBoronNitride>, <ore:gemBoronNitride>, <ore:gemBoronNitride>],[<ore:gemBoronNitride>, <nuclearcraft:helm_tough>.anyDamage(), <ore:gemBoronNitride>], [null, null, null]]);
-	
-	recipes.addShaped(<nuclearcraft:legs_tough>, [[<ore:ingotTough>, <ore:ingotTough>, <ore:ingotTough>],[<ore:ingotTough>, <nuclearcraft:legs_hard_carbon>.anyDamage(), <ore:ingotTough>], [<ore:ingotTough>, null, <ore:ingotTough>]]);
-	recipes.addShaped(<nuclearcraft:chest_tough>, [[<ore:ingotTough>, <nuclearcraft:chest_hard_carbon>.anyDamage(), <ore:ingotTough>],[<ore:ingotTough>, <ore:ingotTough>, <ore:ingotTough>], [<ore:ingotTough>, <ore:ingotTough>, <ore:ingotTough>]]);
-	recipes.addShaped(<nuclearcraft:boots_tough>, [[<ore:ingotTough>, null, <ore:ingotTough>],[<ore:ingotTough>, <nuclearcraft:boots_hard_carbon>.anyDamage(), <ore:ingotTough>], [null, null, null]]);
-	recipes.addShaped(<nuclearcraft:helm_tough>, [[<ore:ingotTough>, <ore:ingotTough>, <ore:ingotTough>],[<ore:ingotTough>, <nuclearcraft:helm_hard_carbon>.anyDamage(), <ore:ingotTough>], [null, null, null]]);
-	
-	recipes.addShaped(<nuclearcraft:boots_hard_carbon>, [[<ore:ingotHardCarbon>, null, <ore:ingotHardCarbon>],[<ore:ingotHardCarbon>, <nuclearcraft:boots_boron>.anyDamage(), <ore:ingotHardCarbon>], [null, null, null]]);
-	recipes.addShaped(<nuclearcraft:helm_hard_carbon>, [[<ore:ingotHardCarbon>, <ore:ingotHardCarbon>, <ore:ingotHardCarbon>],[<ore:ingotHardCarbon>, <nuclearcraft:helm_boron>.anyDamage(), <ore:ingotHardCarbon>], [null, null, null]]);
-	recipes.addShaped(<nuclearcraft:legs_hard_carbon>, [[<ore:ingotHardCarbon>, <ore:ingotHardCarbon>, <ore:ingotHardCarbon>],[<ore:ingotHardCarbon>, <nuclearcraft:legs_boron>.anyDamage(), <ore:ingotHardCarbon>], [<ore:ingotHardCarbon>, null, <ore:ingotHardCarbon>]]);
-	recipes.addShaped(<nuclearcraft:chest_hard_carbon>, [[<ore:ingotHardCarbon>, <nuclearcraft:chest_boron>.anyDamage(), <ore:ingotHardCarbon>],[<ore:ingotHardCarbon>, <ore:ingotHardCarbon>, <ore:ingotHardCarbon>], [<ore:ingotHardCarbon>, <ore:ingotHardCarbon>, <ore:ingotHardCarbon>]]);
-	
-	recipes.addShaped(<nuclearcraft:helm_boron>,  [[<ore:ingotBoron>, <ore:ingotBoron>, <ore:ingotBoron>],[<ore:ingotBoron>, <ic2:hazmat_helmet>.anyDamage(), <ore:ingotBoron>], [null, null, null]]);
-	recipes.addShaped(<nuclearcraft:chest_boron>, [[<ore:ingotBoron>, <ic2:hazmat_chestplate>.anyDamage(), <ore:ingotBoron>],[<ore:ingotBoron>, <ore:ingotBoron>, <ore:ingotBoron>], [<ore:ingotBoron>, <ore:ingotBoron>, <ore:ingotBoron>]]);
-	recipes.addShaped(<nuclearcraft:legs_boron>,  [[<ore:ingotBoron>, <ore:ingotBoron>, <ore:ingotBoron>],[<ore:ingotBoron>, <ic2:hazmat_leggings>.anyDamage(), <ore:ingotBoron>], [<ore:ingotBoron>, null, <ore:ingotBoron>]]);
-	recipes.addShaped(<nuclearcraft:boots_boron>, [[<ore:ingotBoron>, null, <ore:ingotBoron>],[<ore:ingotBoron>, <ic2:rubber_boots>.anyDamage(), <ore:ingotBoron>], [null, null, null]]);
-	
-	
-# *======= Vanilla Armor =======*
+	return null;
+}
 
-	var vanillaArmor = [
-	<tcomplement:knightslime_helmet>,
-	<tcomplement:knightslime_chestplate>,
-	<tcomplement:knightslime_leggings>,
-	<tcomplement:knightslime_boots>,
-	<harvestcraft:hardenedleatherhelmitem>,
-	<harvestcraft:hardenedleatherchestitem>,
-	<harvestcraft:hardenedleatherleggingsitem>,
-	<harvestcraft:hardenedleatherbootsitem>,
-	<minecraft:iron_boots>,
-	<minecraft:iron_leggings>,
-	<minecraft:iron_chestplate>,
-	<minecraft:iron_helmet>,
-	<minecraft:golden_boots>,
-	<minecraft:golden_leggings>,
-	<minecraft:golden_chestplate>,
-	<minecraft:golden_helmet>,
-	<minecraft:diamond_helmet>,
-	<minecraft:diamond_chestplate>,
-	<minecraft:diamond_leggings>,
-	<minecraft:diamond_boots>,
-	<tcomplement:manyullyn_helmet>,
-	<tcomplement:manyullyn_chestplate>,
-	<tcomplement:manyullyn_leggings>,
-	<tcomplement:manyullyn_boots>
-	
-	] as IItemStack[];
-	
-		for item in vanillaArmor {
-		recipes.remove(item);
+static setNames as string[] = ["Helmet", "Chestplate", "Leggins", "Boots"] as string[];
+
+function createRecipe(setData as IData, setId as string, pieceN as int, list as IIngredient[][]) {
+	val item = getSetPiece(setData, pieceN);
+	if (!isNull(item)) {
+		remakeEx(item, list);
+	} else {
+		logger.logWarning("Armor.zs Error. No armor for set {"~setId~"} for piece: "~setNames[pieceN]);
+	}
+}
+
+function armGridExtra(n as int, mat as IIngredient, extra as IIngredient, prev as IData) as IIngredient[][] {
+	val prevReal = getSetPiece(prev, n);
+	val prevAny = !isNull(prevReal) ? prevReal.anyDamage() : null;
+	if        (n == 0) { return [[mat, extra, mat], [mat, prevAny, mat], [null, null, null]] as IIngredient[][];
+	} else if (n == 1) { return [[mat, extra, mat], [mat, prevAny, mat], [mat, mat, mat]] as IIngredient[][];
+	} else if (n == 2) { return [[mat, extra, mat], [mat, prevAny, mat], [mat, null, mat]] as IIngredient[][];
+	} else if (n == 3) { return [[null, null,null], [mat, extra, mat],   [mat, prevAny, mat]] as IIngredient[][];
+	}
+	return null;
+}
+function armGridNormal(n as int, mat as IIngredient, prev as IData) as IIngredient[][] {
+	return armGridExtra(n, mat, mat, prev);
+}
+
+function createArmorSet(setData as IData, setId as string) {
+	if ((!isNull(setData.recipe) && !isNull(setData.recipe.manual)) || isNull(setData.material)) { return null; }
+
+	# Material armor made from
+	val matStr = setData.material.asString();
+	val mat = getIngredientFromString(matStr);
+	if (isNull(mat)) { 
+		logger.logWarning("Armor.zs Error. No material {"~matStr~"}");
+		return null; 
 	}
 
+	# prev set
+	val prev = armorStaged[!isNull(setData.prev) ? setData.prev : "undefined"];
 	
+	# Extra ingredient. Recipe is chained but have additional item
+	if (!isNull(setData.recipe) && !isNull(setData.recipe.extra)) {
+		val extraStr = setData.recipe.extra.asString();
+		val extra = getIngredientFromString(extraStr);
+		if (isNull(extra)) { 
+			logger.logWarning("Armor.zs Error. No ingredient <"~extraStr~">");
+			return null;
+		}
 
-	recipes.addShaped(<harvestcraft:hardenedleatherhelmitem>, 	  [[<harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>], [<harvestcraft:hardenedleatheritem>, <minecraft:leather_helmet>.anyDamage(), <harvestcraft:hardenedleatheritem>]]);
-	recipes.addShaped(<harvestcraft:hardenedleatherchestitem>,    [[<harvestcraft:hardenedleatheritem>, <minecraft:leather_chestplate>.anyDamage(), <harvestcraft:hardenedleatheritem>], [<harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>], [<harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>]]);
-	recipes.addShaped(<harvestcraft:hardenedleatherleggingsitem>, [[<harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>], [<harvestcraft:hardenedleatheritem>, <minecraft:leather_leggings>.anyDamage(), <harvestcraft:hardenedleatheritem>], [<harvestcraft:hardenedleatheritem>, null, <harvestcraft:hardenedleatheritem>]]);
-	recipes.addShaped(<harvestcraft:hardenedleatherbootsitem>,    [[<harvestcraft:hardenedleatheritem>, null, <harvestcraft:hardenedleatheritem>], [<harvestcraft:hardenedleatheritem>, <minecraft:leather_boots>.anyDamage(), <harvestcraft:hardenedleatheritem>]]);
+		for i in 0 to 4 {
+			createRecipe(setData, setId, i, armGridExtra(i, mat, extra, prev));
+		}
+		return null;
+	}
 
-	recipes.addShaped(<minecraft:iron_helmet>, [[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>], [<ore:plateIron>, <harvestcraft:hardenedleatherhelmitem>.anyDamage(), <ore:plateIron>]]);
-	recipes.addShaped(<minecraft:iron_chestplate>, [[<ore:plateIron>, <harvestcraft:hardenedleatherchestitem>.anyDamage(), <ore:plateIron>], [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>], [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]]);
-	recipes.addShaped(<minecraft:iron_leggings>, [[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>], [<ore:plateIron>, <harvestcraft:hardenedleatherleggingsitem>.anyDamage(), <ore:plateIron>], [<ore:plateIron>, null, <ore:plateIron>]]);
-	recipes.addShaped(<minecraft:iron_boots>, [[<ore:plateIron>, null, <ore:plateIron>], [<ore:plateIron>, <harvestcraft:hardenedleatherbootsitem>.anyDamage(), <ore:plateIron>]]);
-	
-	recipes.addShaped(<minecraft:golden_boots>, [[<ore:plateGold>, null, <ore:plateGold>], [<ore:plateGold>, <minecraft:iron_boots>.anyDamage(), <ore:plateGold>]]);
-	recipes.addShaped(<minecraft:golden_leggings>, [[<ore:plateGold>, <ore:plateGold>, <ore:plateGold>], [<ore:plateGold>, <minecraft:iron_leggings>.anyDamage(), <ore:plateGold>], [<ore:plateGold>, null, <ore:plateGold>]]);
-	recipes.addShaped(<minecraft:golden_chestplate>, [[<ore:plateGold>, <minecraft:iron_chestplate>.anyDamage(), <ore:plateGold>], [<ore:plateGold>, <ore:plateGold>, <ore:plateGold>], [<ore:plateGold>, <ore:plateGold>, <ore:plateGold>]]);
-	recipes.addShaped(<minecraft:golden_helmet>, [[<ore:plateGold>, <ore:plateGold>, <ore:plateGold>], [<ore:plateGold>, <minecraft:iron_helmet>.anyDamage(), <ore:plateGold>]]);
-	
-	recipes.addShaped(<tcomplement:knightslime_helmet>,    [[<ore:ingotKnightslime>, <ore:ingotKnightslime>, <ore:ingotKnightslime>], [<ore:ingotKnightslime>, <minecraft:golden_helmet>.anyDamage(), <ore:ingotKnightslime>]]);
-	recipes.addShaped(<tcomplement:knightslime_chestplate>,[[<ore:ingotKnightslime>, <minecraft:golden_chestplate>.anyDamage(), <ore:ingotKnightslime>], [<ore:ingotKnightslime>, <ore:ingotKnightslime>, <ore:ingotKnightslime>], [<ore:ingotKnightslime>, <ore:ingotKnightslime>, <ore:ingotKnightslime>]]);
-	recipes.addShaped(<tcomplement:knightslime_leggings>,  [[<ore:ingotKnightslime>, <ore:ingotKnightslime>, <ore:ingotKnightslime>], [<ore:ingotKnightslime>, <minecraft:golden_leggings>.anyDamage(), <ore:ingotKnightslime>], [<ore:ingotKnightslime>, null, <ore:ingotKnightslime>]]);
-	recipes.addShaped(<tcomplement:knightslime_boots>,     [[<ore:ingotKnightslime>, null, <ore:ingotKnightslime>], [<ore:ingotKnightslime>, <minecraft:golden_boots>.anyDamage(), <ore:ingotKnightslime>]]);
+	# Simple chained (or not) recipe
+	for i in 0 to 4 {
+		createRecipe(setData, setId, i, armGridNormal(i, mat, prev));
+	}
+}
 
-	recipes.addShaped(<minecraft:diamond_helmet>, [[<ore:gemDiamond>, <ore:gemDiamond>, <ore:gemDiamond>], [<ore:gemDiamond>, <tcomplement:knightslime_helmet>.anyDamage(), <ore:gemDiamond>]]);
-	recipes.addShaped(<minecraft:diamond_chestplate>, [[<ore:gemDiamond>, <tcomplement:knightslime_chestplate>.anyDamage(), <ore:gemDiamond>], [<ore:gemDiamond>, <ore:gemDiamond>, <ore:gemDiamond>], [<ore:gemDiamond>, <ore:gemDiamond>, <ore:gemDiamond>]]);
-	recipes.addShaped(<minecraft:diamond_leggings>, [[<ore:gemDiamond>, <ore:gemDiamond>, <ore:gemDiamond>], [<ore:gemDiamond>, <tcomplement:knightslime_leggings>.anyDamage(), <ore:gemDiamond>], [<ore:gemDiamond>, null, <ore:gemDiamond>]]);
-	recipes.addShaped(<minecraft:diamond_boots>, [[<ore:gemDiamond>, null, <ore:gemDiamond>], [<ore:gemDiamond>, <tcomplement:knightslime_boots>.anyDamage(), <ore:gemDiamond>]]);
-	
-	recipes.addShaped(<tcomplement:manyullyn_boots>, [[<ore:ingotManyullyn>, null, <ore:ingotManyullyn>], [<ore:ingotManyullyn>, <minecraft:diamond_boots>.anyDamage(), <ore:ingotManyullyn>]]);
-	recipes.addShaped(<tcomplement:manyullyn_leggings>, [[<ore:ingotManyullyn>, <ore:ingotManyullyn>, <ore:ingotManyullyn>], [<ore:ingotManyullyn>, <minecraft:diamond_leggings>.anyDamage(), <ore:ingotManyullyn>], [<ore:ingotManyullyn>, null, <ore:ingotManyullyn>]]);
-	recipes.addShaped(<tcomplement:manyullyn_chestplate>, [[<ore:ingotManyullyn>, <minecraft:diamond_chestplate>.anyDamage(), <ore:ingotManyullyn>], [<ore:ingotManyullyn>, <ore:ingotManyullyn>, <ore:ingotManyullyn>], [<ore:ingotManyullyn>, <ore:ingotManyullyn>, <ore:ingotManyullyn>]]);
-	recipes.addShaped(<tcomplement:manyullyn_helmet>, [[<ore:ingotManyullyn>, <ore:ingotManyullyn>, <ore:ingotManyullyn>], [<ore:ingotManyullyn>, <minecraft:diamond_helmet>.anyDamage(), <ore:ingotManyullyn>]]);
-	
-	
+for setId, setData in armorStaged {
+	createArmorSet(setData, setId);
+}
+
+# ######################################################################
+#
+# Manual recipes
+#
+# ######################################################################
+
+remakeEx(<botania:terrasteelboots>, [[<ore:dreamwoodTwig>, <ore:runeWinterB>, <ore:dreamwoodTwig>],[<ore:ingotTerrasteel>, <botania:elementiumboots>.anyDamage(), <ore:ingotTerrasteel>], [null, <ore:ingotTerrasteel>, null]]);
+remakeEx(<botania:terrasteellegs>, [[<ore:dreamwoodTwig>, <ore:runeAutumnB>, <ore:dreamwoodTwig>],[<ore:ingotTerrasteel>, <botania:elementiumlegs>.anyDamage(), <ore:ingotTerrasteel>], [null, <ore:ingotTerrasteel>, null]]);
+remakeEx(<botania:terrasteelchest>, [[<ore:dreamwoodTwig>, <ore:runeSummerB>, <ore:dreamwoodTwig>],[<ore:ingotTerrasteel>, <botania:elementiumchest>.anyDamage(), <ore:ingotTerrasteel>], [<ore:ingotTerrasteel>, <ore:ingotTerrasteel>, <ore:ingotTerrasteel>]]);
+remakeEx(<botania:terrasteelhelm>, [[<ore:dreamwoodTwig>, <ore:runeSpringB>, <ore:dreamwoodTwig>],[<ore:ingotTerrasteel>, <botania:elementiumhelm>.anyDamage(), <ore:ingotTerrasteel>], [null, <ore:ingotTerrasteel>, null]]);
+recipes.addShapeless(<botania:terrasteelhelmreveal>, [<botania:terrasteelhelm>.anyDamage(),<thaumcraft:goggles>.anyDamage()]);
+
+remakeEx(<ic2:nano_helmet:26>, [[<ic2:crafting:15>, <ic2:energy_crystal:26>.anyDamage(), <ic2:crafting:15>],[<ic2:crafting:15>, <ic2:nightvision_goggles:26>.anyDamage(), <ic2:crafting:15>], [null, <conarm:helmet_core>.withTag({Material: "energetic_metal"}), null]]);
+remakeEx(<ic2:nano_chestplate:26>, [[<ic2:crafting:15>, <conarm:chest_core>.withTag({Material: "energetic_metal"}), <ic2:crafting:15>],[<ic2:crafting:15>, <ic2:energy_crystal:26>.anyDamage(), <ic2:crafting:15>], [<ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>]]);
+remakeEx(<ic2:nano_leggings:26>, [[<ic2:crafting:15>, <ic2:energy_crystal:26>.anyDamage(), <ic2:crafting:15>],[<ic2:crafting:15>, <conarm:leggings_core>.withTag({Material: "energetic_metal"}), <ic2:crafting:15>], [<ic2:crafting:15>, null, <ic2:crafting:15>]]);
+remakeEx(<ic2:nano_boots:26>, [[<ic2:crafting:15>, <ic2:energy_crystal:26>.anyDamage(), <ic2:crafting:15>],[<ic2:crafting:15>, <conarm:boots_core>.withTag({Material: "energetic_metal"}), <ic2:crafting:15>], [null, null, null]]);
+
+remakeEx(<ic2:quantum_boots:26>, [[null, null, null],[<ic2:crafting:4>, <redstonearsenal:armor.boots_flux>.anyDamage(), <ic2:crafting:4>], [<ic2:rubber_boots>, <ic2:lapotron_crystal>.anyDamage(), <ic2:rubber_boots>]]);
+remakeEx(<ic2:quantum_leggings:26>, [[<ic2:crafting:3>, <ic2:lapotron_crystal>.anyDamage(), <ic2:crafting:3>],[<ic2:crafting:4>, <redstonearsenal:armor.legs_flux>.anyDamage(), <ic2:crafting:4>], [null, <ic2:lapotron_crystal>.anyDamage(), null]]);
+remakeEx(<ic2:quantum_chestplate:26>, [[<ic2:crafting:3>, <ic2:lapotron_crystal>.anyDamage(), <ic2:crafting:3>],[<ic2:crafting:4>, <redstonearsenal:armor.plate_flux>.anyDamage(), <ic2:crafting:4>], [<ic2:crafting:3>, <ic2:jetpack_electric>.anyDamage(), <ic2:crafting:3>]]);
+remakeEx(<ic2:quantum_helmet:26>, [[<ic2:crafting:3>, null, <ic2:crafting:3>],[<ic2:crafting:4>, <redstonearsenal:armor.helmet_flux>.anyDamage(), <ic2:crafting:4>], [null, <ic2:lapotron_crystal>.anyDamage(), null]]);
+
 # *======= Draconic Armor =======*
 
 	recipes.remove(<draconicevolution:wyvern_helm>);
@@ -306,21 +236,128 @@ import mods.jei.JEI.removeAndHide as rh;
 	recipes.remove(<draconicevolution:wyvern_chest>);
 
 # Wyvern
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_helm>, 1000000000, 1000000, <draconicevolution:wyvern_energy_core>, [<twilightforest:arctic_helmet>.anyDamage(), <twilightforest:yeti_helmet>.anyDamage(),<twilightforest:knightmetal_helmet>.anyDamage(),<twilightforest:steeleaf_helmet>.anyDamage(),<twilightforest:fiery_helmet>.anyDamage(),<twilightforest:ironwood_helmet>.anyDamage(),<minecraft:chainmail_helmet>.anyDamage(),<nuclearcraft:helm_boron_nitride>.anyDamage(),<botania:terrasteelhelm>.anyDamage(),<mysticalagriculture:supremium_helmet>.anyDamage(),<tcomplement:manyullyn_helmet>.anyDamage(),<draconicevolution:wyvern_core>,<ic2:quantum_helmet>.anyDamage(),<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>]);
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_chest>, 1000000000, 1000000, <draconicevolution:wyvern_energy_core>, [<twilightforest:arctic_chestplate>.anyDamage(),<twilightforest:yeti_chestplate>.anyDamage(),<twilightforest:knightmetal_chestplate>.anyDamage(),<twilightforest:steeleaf_chestplate>.anyDamage(),<twilightforest:fiery_chestplate>.anyDamage(),<twilightforest:ironwood_chestplate>.anyDamage(),<minecraft:chainmail_chestplate>.anyDamage(),<nuclearcraft:chest_boron_nitride>.anyDamage(),<botania:terrasteelchest>.anyDamage(),<mysticalagriculture:supremium_chestplate>.anyDamage(),<tcomplement:manyullyn_chestplate>.anyDamage(),<draconicevolution:wyvern_core>,<ic2:quantum_chestplate>.anyDamage(),<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>]);
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_legs>, 1000000000, 1000000, <draconicevolution:wyvern_energy_core>, [<twilightforest:arctic_leggings>.anyDamage(),<twilightforest:yeti_leggings>.anyDamage(),<twilightforest:knightmetal_leggings>.anyDamage(),<twilightforest:steeleaf_leggings>.anyDamage(),<twilightforest:fiery_leggings>.anyDamage(),<twilightforest:ironwood_leggings>.anyDamage(),<minecraft:chainmail_leggings>.anyDamage(),<nuclearcraft:legs_boron_nitride>.anyDamage(),<botania:terrasteellegs>.anyDamage(),<mysticalagriculture:supremium_leggings>.anyDamage(),<tcomplement:manyullyn_leggings>.anyDamage(),<draconicevolution:wyvern_core>,<ic2:quantum_leggings>.anyDamage(),<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>]);
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_boots>, 1000000000, 1000000, <draconicevolution:wyvern_energy_core>, [<twilightforest:arctic_boots>.anyDamage(),<twilightforest:yeti_boots>.anyDamage(),<twilightforest:knightmetal_boots>.anyDamage(),<twilightforest:steeleaf_boots>.anyDamage(),<twilightforest:fiery_boots>.anyDamage(),<twilightforest:ironwood_boots>.anyDamage(),<minecraft:chainmail_boots>.anyDamage(),<nuclearcraft:boots_boron_nitride>.anyDamage(),<botania:terrasteelboots>.anyDamage(),<mysticalagriculture:supremium_boots>.anyDamage(),<tcomplement:manyullyn_boots>.anyDamage(),<draconicevolution:wyvern_core>,<ic2:quantum_boots>.anyDamage(),<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>]);
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_helm>,
+	1000000000, 1000000, <draconicevolution:wyvern_energy_core>, [
+		<twilightforest:arctic_helmet>.anyDamage(),
+		<twilightforest:yeti_helmet>.anyDamage(),
+		<twilightforest:knightmetal_helmet>.anyDamage(),
+		<twilightforest:steeleaf_helmet>.anyDamage(),
+		<twilightforest:fiery_helmet>.anyDamage(),
+		<twilightforest:ironwood_helmet>.anyDamage(),
+		<minecraft:chainmail_helmet>.anyDamage(),
+		<botania:terrasteelhelm>.anyDamage(),
+		<tcomplement:manyullyn_helmet>.anyDamage(),
+		<draconicevolution:wyvern_core>,
+		<ic2:quantum_helmet>.anyDamage(),
+		<draconicevolution:draconium_block:1>,
+		<draconicevolution:draconium_block:1>,
+		<draconicevolution:draconium_block:1>,
+		<draconicevolution:draconium_block:1>]);
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_chest>,
+	1000000000, 1000000, <draconicevolution:wyvern_energy_core>, [
+		<twilightforest:arctic_chestplate>.anyDamage(),
+		<twilightforest:yeti_chestplate>.anyDamage(),
+		<twilightforest:knightmetal_chestplate>.anyDamage(),
+		<twilightforest:steeleaf_chestplate>.anyDamage(),
+		<twilightforest:fiery_chestplate>.anyDamage(),
+		<twilightforest:ironwood_chestplate>.anyDamage(),
+		<minecraft:chainmail_chestplate>.anyDamage(),
+		<botania:terrasteelchest>.anyDamage(),
+		<tcomplement:manyullyn_chestplate>.anyDamage(),
+		<draconicevolution:wyvern_core>,
+		<ic2:quantum_chestplate>.anyDamage(),
+		<draconicevolution:draconium_block:1>,
+		<draconicevolution:draconium_block:1>,
+		<draconicevolution:draconium_block:1>,
+		<draconicevolution:draconium_block:1>]);
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_legs>,
+	1000000000, 1000000, <draconicevolution:wyvern_energy_core>, [
+		<twilightforest:arctic_leggings>.anyDamage(),
+		<twilightforest:yeti_leggings>.anyDamage(),
+		<twilightforest:knightmetal_leggings>.anyDamage(),
+		<twilightforest:steeleaf_leggings>.anyDamage(),
+		<twilightforest:fiery_leggings>.anyDamage(),
+		<twilightforest:ironwood_leggings>.anyDamage(),
+		<minecraft:chainmail_leggings>.anyDamage(),
+		<botania:terrasteellegs>.anyDamage(),
+		<tcomplement:manyullyn_leggings>.anyDamage(),
+		<draconicevolution:wyvern_core>,
+		<ic2:quantum_leggings>.anyDamage(),
+		<draconicevolution:draconium_block:1>,
+		<draconicevolution:draconium_block:1>,
+		<draconicevolution:draconium_block:1>,
+		<draconicevolution:draconium_block:1>]);
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_boots>,
+	1000000000, 1000000, <draconicevolution:wyvern_energy_core>, [
+		<twilightforest:arctic_boots>.anyDamage(),
+		<twilightforest:yeti_boots>.anyDamage(),
+		<twilightforest:knightmetal_boots>.anyDamage(),
+		<twilightforest:steeleaf_boots>.anyDamage(),
+		<twilightforest:fiery_boots>.anyDamage(),
+		<twilightforest:ironwood_boots>.anyDamage(),
+		<minecraft:chainmail_boots>.anyDamage(),
+		<botania:terrasteelboots>.anyDamage(),
+		<tcomplement:manyullyn_boots>.anyDamage(),
+		<draconicevolution:wyvern_core>,
+		<ic2:quantum_boots>.anyDamage(),
+		<draconicevolution:draconium_block:1>,
+		<draconicevolution:draconium_block:1>,
+		<draconicevolution:draconium_block:1>,
+		<draconicevolution:draconium_block:1>]);
 
 # Draconic
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_helm>, 2147483647, 1000000, <avaritia:block_resource:2>, [<draconicevolution:wyvern_helm>.anyDamage(), <extrautils2:angelring>.anyDamage(), <draconicevolution:awakened_core>, <draconicevolution:awakened_core>, <draconicevolution:draconic_block>, <draconicevolution:draconic_block>, <draconicevolution:draconic_energy_core>, <draconicevolution:draconic_energy_core>, <thermalexpansion:frame:148>, <extendedcrafting:material:32>, <astralsorcery:itemcape>.anyDamage()]);
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_chest>, 2147483647, 1000000, <avaritia:block_resource:2>, [<draconicevolution:wyvern_chest>.anyDamage(), <extrautils2:angelring>.anyDamage(), <draconicevolution:awakened_core>, <draconicevolution:awakened_core>, <draconicevolution:draconic_block>, <draconicevolution:draconic_block>, <draconicevolution:draconic_energy_core>, <draconicevolution:draconic_energy_core>, <thermalexpansion:frame:148>, <extendedcrafting:material:32>, <astralsorcery:itemcape>.anyDamage()]);
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_legs>, 2147483647, 1000000, <avaritia:block_resource:2>, [<draconicevolution:wyvern_legs>.anyDamage(), <extrautils2:angelring>.anyDamage(), <draconicevolution:awakened_core>, <draconicevolution:awakened_core>, <draconicevolution:draconic_block>, <draconicevolution:draconic_block>, <draconicevolution:draconic_energy_core>, <draconicevolution:draconic_energy_core>, <thermalexpansion:frame:148>, <extendedcrafting:material:32>, <astralsorcery:itemcape>.anyDamage()]);
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_boots>, 2147483647, 1000000, <avaritia:block_resource:2>, [<draconicevolution:wyvern_boots>.anyDamage(), <extrautils2:angelring>.anyDamage(), <draconicevolution:awakened_core>, <draconicevolution:awakened_core>, <draconicevolution:draconic_block>, <draconicevolution:draconic_block>, <draconicevolution:draconic_energy_core>, <draconicevolution:draconic_energy_core>, <thermalexpansion:frame:148>, <extendedcrafting:material:32>, <astralsorcery:itemcape>.anyDamage()]);
-	
-	rh(<tcomplement:steel_helmet>);
-	rh(<tcomplement:steel_chestplate>);
-	rh(<tcomplement:steel_leggings>);
-	rh(<tcomplement:steel_boots>);
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_helm>,
+	2147483647, 1000000, <avaritia:block_resource:2>, [
+		<draconicevolution:wyvern_helm>.anyDamage(),
+		<extrautils2:angelring>.anyDamage(),
+		<draconicevolution:awakened_core>,
+		<draconicevolution:awakened_core>,
+		<draconicevolution:draconic_block>,
+		<draconicevolution:draconic_block>,
+		<draconicevolution:draconic_energy_core>,
+		<draconicevolution:draconic_energy_core>,
+		<thermalexpansion:frame:148>,
+		<extendedcrafting:material:32>,
+		<astralsorcery:itemcape>.anyDamage()]);
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_chest>,
+	2147483647, 1000000, <avaritia:block_resource:2>, [
+		<draconicevolution:wyvern_chest>.anyDamage(),
+		<extrautils2:angelring>.anyDamage(),
+		<draconicevolution:awakened_core>,
+		<draconicevolution:awakened_core>,
+		<draconicevolution:draconic_block>,
+		<draconicevolution:draconic_block>,
+		<draconicevolution:draconic_energy_core>,
+		<draconicevolution:draconic_energy_core>,
+		<thermalexpansion:frame:148>,
+		<extendedcrafting:material:32>,
+		<astralsorcery:itemcape>.anyDamage()]);
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_legs>,
+	2147483647, 1000000, <avaritia:block_resource:2>, [
+		<draconicevolution:wyvern_legs>.anyDamage(),
+		<extrautils2:angelring>.anyDamage(),
+		<draconicevolution:awakened_core>,
+		<draconicevolution:awakened_core>,
+		<draconicevolution:draconic_block>,
+		<draconicevolution:draconic_block>,
+		<draconicevolution:draconic_energy_core>,
+		<draconicevolution:draconic_energy_core>,
+		<thermalexpansion:frame:148>,
+		<extendedcrafting:material:32>,
+		<astralsorcery:itemcape>.anyDamage()]);
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_boots>,
+	2147483647, 1000000, <avaritia:block_resource:2>, [
+		<draconicevolution:wyvern_boots>.anyDamage(),
+		<extrautils2:angelring>.anyDamage(),
+		<draconicevolution:awakened_core>,
+		<draconicevolution:awakened_core>,
+		<draconicevolution:draconic_block>,
+		<draconicevolution:draconic_block>,
+		<draconicevolution:draconic_energy_core>,
+		<draconicevolution:draconic_energy_core>,
+		<thermalexpansion:frame:148>,
+		<extendedcrafting:material:32>,
+		<astralsorcery:itemcape>.anyDamage()]);
 
 
 # ######################################################################
@@ -338,6 +375,9 @@ val reclLiquids as ILiquidStack[string] = {
   "heavy_metal"      : <liquid:heavy_metal>,
   "iron"             : <liquid:iron>,
   "psimetal"         : <liquid:psimetal>,
+  "iridium"          : <liquid:iridium>,
+  "nickel"           : <liquid:nickel>,
+  "stellar_alloy"    : <liquid:stellar_alloy>,
 };
 
 
@@ -346,64 +386,80 @@ val ENS = "enderio:item_alloy_ingot:8";
 val FLE = "redstonearsenal:material:32";
 val PSI = "psi:material:1";
 val IRN = "minecraft:iron_ingot";
+val SLR = "enderio:item_alloy_endergy_ingot:3";
 
 # Recycling armor and items list
 val itemsToRecycle as string[] = [
 # Item name                             |amount| recycle output ore  | recycled metal OR other recycle method
-"enderio:item_dark_steel_treetap"        , "6"   , DKS  , "dark_steel"       ,
-"enderio:item_dark_steel_crook"          , "2"   , DKS  , "dark_steel"       ,
-"enderio:item_dark_steel_hand"           , "5"   , DKS  , "dark_steel"       ,
-"enderio:item_dark_steel_shield"         , "5"   , DKS  , "dark_steel"       ,
-"enderio:item_dark_steel_helmet"         , "5"   , DKS  , "dark_steel"       ,
-"enderio:item_dark_steel_chestplate"     , "8"   , DKS  , "dark_steel"       ,
-"enderio:item_dark_steel_leggings"       , "7"   , DKS  , "dark_steel"       ,
-"enderio:item_dark_steel_boots"          , "4"   , DKS  , "dark_steel"       ,
-"enderio:item_end_steel_sword"           , "2"   , ENS  , "end_steel"        ,
-"enderio:item_end_steel_pickaxe"         , "3"   , ENS  , "end_steel"        ,
-"enderio:item_end_steel_axe"             , "3"   , ENS  , "end_steel"        ,
-"enderio:item_end_steel_helmet"          , "5"   , ENS  , "end_steel"        ,
-"enderio:item_end_steel_chestplate"      , "8"   , ENS  , "end_steel"        ,
-"enderio:item_end_steel_leggings"        , "7"   , ENS  , "end_steel"        ,
-"enderio:item_end_steel_boots"           , "4"   , ENS  , "end_steel"        ,
-"enderio:item_end_steel_shield"          , "5"   , ENS  , "end_steel"        ,
-"redstonearsenal:armor.helmet_flux"      , "20"  , FLE  , "fluxed_electrum"  ,
-"redstonearsenal:armor.plate_flux"       , "32"  , FLE  , "fluxed_electrum"  ,
-"redstonearsenal:armor.legs_flux"        , "28"  , FLE  , "fluxed_electrum"  ,
-"redstonearsenal:armor.boots_flux"       , "16"  , FLE  , "fluxed_electrum"  ,
-"redstonearsenal:tool.wrench_flux"       , "3"   , FLE  , "fluxed_electrum"  ,
-"redstonearsenal:tool.bow_flux"          , "9"   , FLE  , "fluxed_electrum"  ,
-"redstonearsenal:tool.fishing_rod_flux"  , "2"   , FLE  , "fluxed_electrum"  ,
-"redstonearsenal:tool.shield_flux"       , "6"   , FLE  , "fluxed_electrum"  ,
-"psi:psimetal_shovel"                    , "1"   , PSI  , "psimetal"         ,
-"psi:psimetal_pickaxe"                   , "2"   , PSI  , "psimetal"         ,
-"psi:psimetal_axe"                       , "2"   , PSI  , "psimetal"         ,
-"psi:psimetal_sword"                     , "1"   , PSI  , "psimetal"         ,
-"psi:psimetal_exosuit_helmet"            , "4"   , PSI  , "psimetal"         ,
-"psi:psimetal_exosuit_chestplate"        , "6"   , PSI  , "psimetal"         ,
-"psi:psimetal_exosuit_leggings"          , "5"   , PSI  , "psimetal"         ,
-"psi:psimetal_exosuit_boots"             , "2"   , PSI  , "psimetal"         ,
-"iceandfire:troll_weapon.axe"            , "8"   , IRN  , "iron"             ,
-"bloodmagic:living_armour_helmet"        , "5"   , IRN  , "iron"             ,
-"bloodmagic:living_armour_chest"         , "8"   , IRN  , "iron"             ,
-"bloodmagic:living_armour_leggings"      , "7"   , IRN  , "iron"             ,
-"bloodmagic:living_armour_boots"         , "4"   , IRN  , "iron"             ,
-"iceandfire:troll_weapon.hammer"  , "8"  , "mechanics:heavy_ingot"  , "heavy_metal"  ,
-"animus:kama_diamond"             , "8"  , "minecraft:diamond"      , ""             ,
-
-"botania:manaweavehelm"            , "20" , "botania:manaresource:16"   , "!saw" ,
-"botania:manaweavechest"           , "32" , "botania:manaresource:16"   , "!saw" ,
-"botania:manaweavelegs"            , "28" , "botania:manaresource:16"   , "!saw" ,
-"botania:manaweaveboots"           , "16" , "botania:manaresource:16"   , "!saw" ,
-"twilightforest:arctic_boots"      , "4"  , "twilightforest:arctic_fur" , "!saw" ,
-"twilightforest:arctic_leggings"   , "7"  , "twilightforest:arctic_fur" , "!saw" ,
-"twilightforest:arctic_chestplate" , "8"  , "twilightforest:arctic_fur" , "!saw" ,
-"twilightforest:arctic_helmet"     , "5"  , "twilightforest:arctic_fur" , "!saw" ,
-"twilightforest:yeti_boots"        , "4"  , "twilightforest:alpha_fur"  , "!saw" ,
-"twilightforest:yeti_leggings"     , "7"  , "twilightforest:alpha_fur"  , "!saw" ,
-"twilightforest:yeti_chestplate"   , "8"  , "twilightforest:alpha_fur"  , "!saw" ,
-"twilightforest:yeti_helmet"       , "5"  , "twilightforest:alpha_fur"  , "!saw" ,
-"twilightforest:naga_leggings"     , "7"  , "twilightforest:naga_scale" , "!saw" ,
-"twilightforest:naga_chestplate"   , "8"  , "twilightforest:naga_scale" , "!saw" ,
+"enderio:item_dark_steel_treetap"        , "6"   , DKS                               , "dark_steel"       ,
+"enderio:item_dark_steel_crook"          , "2"   , DKS                               , "dark_steel"       ,
+"enderio:item_dark_steel_hand"           , "5"   , DKS                               , "dark_steel"       ,
+"enderio:item_dark_steel_shield"         , "5"   , DKS                               , "dark_steel"       ,
+"enderio:item_dark_steel_helmet"         , "5"   , DKS                               , "dark_steel"       ,
+"enderio:item_dark_steel_chestplate"     , "8"   , DKS                               , "dark_steel"       ,
+"enderio:item_dark_steel_leggings"       , "7"   , DKS                               , "dark_steel"       ,
+"enderio:item_dark_steel_boots"          , "4"   , DKS                               , "dark_steel"       ,
+"enderio:item_end_steel_sword"           , "2"   , ENS                               , "end_steel"        ,
+"enderio:item_end_steel_pickaxe"         , "3"   , ENS                               , "end_steel"        ,
+"enderio:item_end_steel_axe"             , "3"   , ENS                               , "end_steel"        ,
+"enderio:item_end_steel_helmet"          , "5"   , ENS                               , "end_steel"        ,
+"enderio:item_end_steel_chestplate"      , "8"   , ENS                               , "end_steel"        ,
+"enderio:item_end_steel_leggings"        , "7"   , ENS                               , "end_steel"        ,
+"enderio:item_end_steel_boots"           , "4"   , ENS                               , "end_steel"        ,
+"enderio:item_end_steel_shield"          , "5"   , ENS                               , "end_steel"        ,
+"redstonearsenal:armor.helmet_flux"      , "20"  , FLE                               , "fluxed_electrum"  ,
+"redstonearsenal:armor.plate_flux"       , "32"  , FLE                               , "fluxed_electrum"  ,
+"redstonearsenal:armor.legs_flux"        , "28"  , FLE                               , "fluxed_electrum"  ,
+"redstonearsenal:armor.boots_flux"       , "16"  , FLE                               , "fluxed_electrum"  ,
+"redstonearsenal:tool.wrench_flux"       , "3"   , FLE                               , "fluxed_electrum"  ,
+"redstonearsenal:tool.bow_flux"          , "9"   , FLE                               , "fluxed_electrum"  ,
+"redstonearsenal:tool.fishing_rod_flux"  , "2"   , FLE                               , "fluxed_electrum"  ,
+"redstonearsenal:tool.shield_flux"       , "6"   , FLE                               , "fluxed_electrum"  ,
+"psi:psimetal_shovel"                    , "1"   , PSI                               , "psimetal"         ,
+"psi:psimetal_pickaxe"                   , "2"   , PSI                               , "psimetal"         ,
+"psi:psimetal_axe"                       , "2"   , PSI                               , "psimetal"         ,
+"psi:psimetal_sword"                     , "1"   , PSI                               , "psimetal"         ,
+"psi:psimetal_exosuit_helmet"            , "4"   , PSI                               , "psimetal"         ,
+"psi:psimetal_exosuit_chestplate"        , "6"   , PSI                               , "psimetal"         ,
+"psi:psimetal_exosuit_leggings"          , "5"   , PSI                               , "psimetal"         ,
+"psi:psimetal_exosuit_boots"             , "2"   , PSI                               , "psimetal"         ,
+"iceandfire:troll_weapon.axe"            , "8"   , IRN                               , "iron"             ,
+"bloodmagic:living_armour_helmet"        , "5"   , IRN                               , "iron"             ,
+"bloodmagic:living_armour_chest"         , "8"   , IRN                               , "iron"             ,
+"bloodmagic:living_armour_leggings"      , "7"   , IRN                               , "iron"             ,
+"bloodmagic:living_armour_boots"         , "4"   , IRN                               , "iron"             ,
+"enderio:item_stellar_alloy_pickaxe"     , "3"   , SLR                               , "stellar_alloy"    ,
+"enderio:item_stellar_alloy_axe"         , "3"   , SLR                               , "stellar_alloy"    ,
+"enderio:item_stellar_alloy_helmet"      , "5"   , SLR                               , "stellar_alloy"    ,
+"enderio:item_stellar_alloy_boots"       , "4"   , SLR                               , "stellar_alloy"    ,
+"enderio:item_stellar_alloy_chestplate"  , "8"   , SLR                               , "stellar_alloy"    ,
+"enderio:item_stellar_alloy_leggings"    , "7"   , SLR                               , "stellar_alloy"    ,
+"ic2:quantum_boots"                      , "8"   , "thermalfoundation:material:135"  , "iridium"          ,
+"ic2:quantum_chestplate"                 , "8"   , "thermalfoundation:material:135"  , "iridium"          ,
+"ic2:quantum_helmet"                     , "8"   , "thermalfoundation:material:135"  , "iridium"          ,
+"ic2:quantum_leggings"                   , "8"   , "thermalfoundation:material:135"  , "iridium"          ,
+"iceandfire:troll_weapon.hammer"         , "8"   , "mechanics:heavy_ingot"           , "heavy_metal"      ,
+"animus:kama_diamond"                    , "8"   , "minecraft:diamond"               , ""                 ,
+"botania:manaweavehelm"                  , "20"  , "botania:manaresource:16"         , "!saw"             ,
+"botania:manaweavechest"                 , "32"  , "botania:manaresource:16"         , "!saw"             ,
+"botania:manaweavelegs"                  , "28"  , "botania:manaresource:16"         , "!saw"             ,
+"botania:manaweaveboots"                 , "16"  , "botania:manaresource:16"         , "!saw"             ,
+"twilightforest:arctic_boots"            , "4"   , "twilightforest:arctic_fur"       , "!saw"             ,
+"twilightforest:arctic_leggings"         , "7"   , "twilightforest:arctic_fur"       , "!saw"             ,
+"twilightforest:arctic_chestplate"       , "8"   , "twilightforest:arctic_fur"       , "!saw"             ,
+"twilightforest:arctic_helmet"           , "5"   , "twilightforest:arctic_fur"       , "!saw"             ,
+"twilightforest:yeti_boots"              , "4"   , "twilightforest:alpha_fur"        , "!saw"             ,
+"twilightforest:yeti_leggings"           , "7"   , "twilightforest:alpha_fur"        , "!saw"             ,
+"twilightforest:yeti_chestplate"         , "8"   , "twilightforest:alpha_fur"        , "!saw"             ,
+"twilightforest:yeti_helmet"             , "5"   , "twilightforest:alpha_fur"        , "!saw"             ,
+"twilightforest:naga_leggings"           , "7"   , "twilightforest:naga_scale"       , "!saw"             ,
+"twilightforest:naga_chestplate"         , "8"   , "twilightforest:naga_scale"       , "!saw"             ,
+"rats:archeologist_hat"                  , "4"   , "thermalfoundation:material:801"  ,""                  ,
+"quark:archaeologist_hat"                , "4"   , "thermalfoundation:material:801"  ,""                  ,
+"rats:pirat_cutlass"                     , "4"   , "thermalfoundation:material:133"  ,"nickel"            ,
+"rats:piper_hat"                         , "10"  , "minecraft:paper"                 ,"!saw"              ,
+"rats:pirat_hat"                         , "5"   , "minecraft:wool:15"               ,"!saw"              ,
+"quark:pirate_hat"                       , "5"   , "minecraft:wool:15"               ,"!saw"              ,
 ];
 
 # Exceptions for machines that can saw
@@ -425,6 +481,8 @@ for i in 0 to itemsToRecycle.length {
 			} else {
 				scripts.process.crush(item, resclItem * count, "no exceptions", null, null);
 			}
+		} else {
+			logger.logWarning("Cant recycle [" ~ itemsToRecycle[i] ~ "]" ~ (isNull(item) ? "NULL" : "") ~" -> [" ~ itemsToRecycle[i+2] ~ "]" ~ (isNull(resclItem) ? "NULL" : ""));
 		}
 	}
 }
@@ -439,7 +497,7 @@ mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:component:8> , [<bloodmagic:l
 mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:component:8> , [<animus:kama_bound>]                 , 300 , 40 , 3);
 
 
-# Some troll items can be disassempled on crafting table
+# Some troll items can be disassembled on crafting table
 # Using public function compressIt() to make Preston's blocks
 recipes.addShapeless("Disassemble troll column"       , <extrautils2:compressedcobblestone> * 4               , [<iceandfire:troll_weapon.column>]);
 recipes.addShapeless("Disassemble troll column_forest", compressIt(<minecraft:mossy_cobblestone>      , 1) * 4, [<iceandfire:troll_weapon.column_forest>]);

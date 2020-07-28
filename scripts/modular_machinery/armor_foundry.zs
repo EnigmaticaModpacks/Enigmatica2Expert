@@ -2,13 +2,45 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.data.IData;
 
-var machineName = "armor_foundry";
-
 # All armor data from table
 static armorStaged as IData[string] = scripts.DataTables.armorStaged;
 
 # How much items need for each armor part [helmet, chest, legs, feet]
-val armorCostBySlot = [5, 8, 7, 4] as int[];
+static armorCostBySlot as int[] = [5, 8, 7, 4] as int[];
+
+# ######################################################################
+#
+# Helpers
+#
+# ######################################################################
+
+# Iterate recursively all parent tiers to get list of ingredients
+function dive(setName as string) as string[]  {
+	val curr = armorStaged[setName];
+	if (isNull(curr)) return null;
+
+	val ins = curr.material;
+	if (!isNull(ins)) {
+		val insStr = ins.asString();
+		if (!isNull(curr.prev)) {
+			val deeplist = dive(curr.prev);
+			if (!isNull(deeplist)) {
+				return deeplist + insStr;
+			}
+		}
+		return [insStr];
+	}
+	return null;
+}
+
+
+# ######################################################################
+#
+# Generate armor
+#
+# ######################################################################
+var machineName = "armor_foundry";
+
 
 # Iterate over all avaliable armor
 for id, stage in armorStaged {
@@ -30,14 +62,16 @@ for id, stage in armorStaged {
 	}
 	
 	# Material for this armor set
-	val cmd = stage.material.asString();
-	val material as IIngredient = getIngredientFromString(cmd);
+	// val cmd = stage.material.asString();
+	// val material as IIngredient = getIngredientFromString(cmd);
+	val mats = dive(id);
 	
 	# Check if armor and material is real
-	if (armCost > 0 && !isNull(material)){
+	if (armCost > 0 && !isNull(mats) && mats.length > 0){
 		val tierFactor as float = stage.tier.asFloat() / 10.0f;
 		val tierFactorEx = pow(tierFactor, 2.0f);
 		val pricesstingTime = (20.0f + 500.0f * tierFactorEx) as int;
+		val priority = !isNull(stage.tier) ? stage.tier.asInt() : 0;
 		val recipe = mods.modularmachinery.RecipeBuilder.newBuilder(
 			machineName ~ "_" ~ id, machineName, pricesstingTime)
 			.addEnergyPerTickInput(800000)
@@ -45,10 +79,14 @@ for id, stage in armorStaged {
 			.addFluidInput(<liquid:lava> * ((59.0f * tierFactorEx) as int * 1000 + 1000));
 
 		# Add Oredict or ItemStack
-		if (cmd.matches("^ore:.*")) {
-			recipe.addItemInput(getOredictFromString(cmd), armCost);
-		} else {
-			recipe.addItemInput(getItemstackFromString(cmd) * armCost);
+		val maxI = min(9, mats.length);
+		for i in 0 to maxI {
+			val mat = mats[mats.length - i - 1];
+			if (mat.matches("^ore:.*")) {
+				recipe.addItemInput(getOredictFromString(mat), 24 /* armCost */);
+			} else {
+				recipe.addItemInput(getItemstackFromString(mat) * 24 /* armCost */);
+			}
 		}
 
 		# Add armor to output
