@@ -357,3 +357,6 @@ val grindingBalls = [
 
 mods.extendedcrafting.CombinationCrafting.addRecipe(<avaritiaio:grindingballinfinity> * 2, 2000000000, 20000000, <avaritia:resource:5>, grindingBalls);
 mods.extendedcrafting.CombinationCrafting.addRecipe(<avaritiaio:grindingballinfinity> * 2, 2000000000, 20000000, <avaritiaio:grindingballinfinity>, grindingBalls);
+
+# End Steel process
+scripts.process.alloy([<ore:ingotDarkSteel>, <ore:obsidian>, <ore:endstone>], <ore:ingotEndSteel>.firstItem, "except: alloySmelter");

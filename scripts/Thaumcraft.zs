@@ -109,3 +109,7 @@ mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreLead>, <thermalfoundation
 	[null, <astralsorcery:itemrockcrystalsimple>.anyDamage(), <astralsorcery:itemrockcrystalsimple>.anyDamage()], 
 	[<ore:stickTreatedWood>, null, null]]);
 
+# Native clusters processing
+for jore in mods.jaopca.JAOPCA.getOresForEntry("cluster") {
+	scripts.process.beneficiate(jore.getItemStack("cluster"), jore, 3, "except: Pulverizer");
+}

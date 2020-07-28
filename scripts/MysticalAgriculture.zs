@@ -752,3 +752,17 @@ scripts.process.recycleMetal(<mysticalagriculture:watering_can:1>, <mysticalagri
 scripts.process.recycleMetal(<mysticalagriculture:watering_can:2>, <mysticalagriculture:crafting:35> * 4, <liquid:intermedium> * (144*4), null);
 scripts.process.recycleMetal(<mysticalagriculture:watering_can:3>, <mysticalagriculture:crafting:36> * 4, <liquid:superium> * (144*4), null);
 scripts.process.recycleMetal(<mysticalagriculture:watering_can:4>, <mysticalagriculture:crafting:37> * 4, <liquid:supremium> * (144*4), null);
+
+# Hydroponics Inferium grows
+val inferCount = {
+	<mysticalagriculture:tier1_inferium_seeds>  : 3,
+	<mysticalagriculture:tier2_inferium_seeds>  : 6,
+	<mysticalagriculture:tier3_inferium_seeds>  : 9,
+	<mysticalagriculture:tier4_inferium_seeds>  : 12,
+	<mysticalagriculture:tier5_inferium_seeds>  : 15,
+	<mysticalagradditions:tier6_inferium_seeds> : 18,
+} as int[IItemStack];
+
+for seed, count in inferCount {
+	scripts.process.grow(seed, <mysticalagriculture:crafting> * count, "only: Hydroponics", seed, 1.0f);
+}

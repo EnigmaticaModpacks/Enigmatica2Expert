@@ -405,3 +405,40 @@ remakeEx(<travelersbackpack:sleeping_bag_bottom>, [[<quark:quilted_wool:14>, <qu
 
 # Arrows recycle
 scripts.process.crush(<minecraft:arrow>, <minecraft:flint>, "no exceptions", [<ore:dustWood>.firstItem], [0.2f]);
+
+# *=======  =======*
+
+# More meats from traps
+// mods.harvestcrafttweaker.HarvestCraftTweakeraddGroundTrap(<ore:foodCheese>, [<rats:raw_rat>, <rats:rat_pelt>]);
+// mods.harvestcrafttweaker.HarvestCraftTweakeraddGroundTrap(<animania:block_straw>, [
+// 	<twilightforest:raw_venison>,
+// 	<betteranimalsplus:venisonraw>,
+// 	<betteranimalsplus:pheasantraw>,
+// 	<betteranimalsplus:pheasant_egg>,
+// 	<betteranimalsplus:turkey_egg>,
+// 	<betteranimalsplus:goose_egg>,
+// 	<betteranimalsplus:turkey_leg_raw>,
+// ]);
+
+# More traps
+// mods.harvestcrafttweaker.HarvestCraftTweakeraddWaterTrap(<thermalfoundation:bait>,   [<betteranimalsplus:crab_meat_raw>, <betteranimalsplus:eel_meat_raw>]);
+// mods.harvestcrafttweaker.HarvestCraftTweakeraddWaterTrap(<thermalfoundation:bait:1>, [<iceandfire:shiny_scales>, <betteranimalsplus:blubber>]);
+// mods.harvestcrafttweaker.HarvestCraftTweakeraddWaterTrap(<thermalfoundation:bait:2>, [
+// 	<iceandfire:sea_serpent_scales_blue>,
+// 	<iceandfire:sea_serpent_scales_bronze>,
+// 	<iceandfire:sea_serpent_scales_deepblue>,
+// 	<iceandfire:sea_serpent_scales_purple>,
+// 	<iceandfire:sea_serpent_scales_red>,
+// 	<iceandfire:sea_serpent_scales_teal>,
+// 	<iceandfire:sea_serpent_scales_green>,
+// ]);
+
+# Infinity liquid concrete
+mods.plustweaks.Liquid.setInfinite(<liquid:concrete>, false);
+
+// mods.alfinivia.Milking.add(@NotNull IIngredient input, @NotNull IEntityDefinition entity, IItemStack output, boolean needsSneaking);
+// mods.alfinivia.Milking.add(@NotNull IIngredient input, @NotNull IEntityFunction entity, IItemStack output, boolean needsSneaking);
+// mods.alfinivia.Milking.add(@NotNull IIngredient input, @NotNull IEntityDefinition entity, IMilkFunction output, boolean needsSneaking);
+// mods.alfinivia.Milking.add(@NotNull IIngredient input, @NotNull IEntityFunction entity, IMilkFunction output, boolean needsSneaking);
+// ex. for IEntityFunction: function(entity){return true;} ex. for IMilkFunction: function(entity, itemstack, player){return itemstack;}
+// ex. mods.alfinivia.Milking.add(<minecraft:fish>,<entity:minecraft:sheep>,<minecraft:sandstone>,false);

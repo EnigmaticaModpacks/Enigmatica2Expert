@@ -181,3 +181,6 @@ scripts.process.electrolyze(<fluid:ic2heavy_water>     *1000, [<fluid:deuterium>
 mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(<ore:ingotLeadPlatinum>.firstItem * 4);
 mods.nuclearcraft.infuser.removeRecipeWithOutput(<ore:ingotEnderium>.firstItem);
 rh(<ore:ingotLeadPlatinum>.firstItem);
+
+# Bioplastic process
+scripts.process.extract(<ore:sugarcane> * 2, <ore:bioplastic>.firstItem, "except: manufactory extractor");

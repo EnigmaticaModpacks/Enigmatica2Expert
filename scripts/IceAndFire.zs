@@ -161,7 +161,7 @@ print("--- loading IceAndFire.zs ---");
 <iceandfire:tide_deepblue_helmet>,
 <iceandfire:tide_deepblue_chestplate>,
 <iceandfire:tide_deepblue_leggings>,
-<iceandfire:sea_serpent_scales_green>,
+<iceandfire:tide_deepblue_boots>,
 <iceandfire:tide_green_helmet>,
 <iceandfire:tide_green_chestplate>,
 <iceandfire:tide_green_leggings>,

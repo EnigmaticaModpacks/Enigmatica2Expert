@@ -3,6 +3,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
+import crafttweaker.data.IData;
 import mods.jei.JEI.removeAndHide as rh;
 
 #priority 100
@@ -163,4 +164,27 @@ global compressIt as function(IItemStack, int)IItemStack =
     o = compressed;
   }
 	return o;
+};
+
+
+
+# ########################
+# Safe get NBT tag by string key
+# ########################
+global D as function(IData, string)IData = 
+    function (data as IData, field as string) as IData  {
+	if (!isNull(data)) {
+    val member = data.memberGet(field);
+    if (!isNull(member)) return member;
+	}
+	return null;
+};
+
+# Safe get NBT tag by string key
+# Return {third parameter}.d if null
+global Dd as function(IData, string, IData)IData = 
+    function (data as IData, field as string, default as IData) as IData  {
+  val d = D(data, field);
+	if (!isNull(d)) return d;
+	return default.d;
 };

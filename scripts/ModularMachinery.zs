@@ -45,6 +45,14 @@ import mods.jei.JEI.removeAndHide as rh;
 		[<ore:ingotModularium>, <ore:blockKnightmetal>, <ore:ingotModularium>]]
 	);
 
+# Hydroponics
+	recipes.addShapedMirrored("Hydroponics", 
+	<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:hydroponics"}), [
+        [<modularmachinery:blockcasing>, <thermalexpansion:machine:4>.withTag({Level: 4}), <modularmachinery:blockcasing>],
+        [<thaumcraft:lamp_growth>, <immersiveengineering:blueprint>, <thaumcraft:lamp_growth>],
+        [<modularmachinery:blockcasing>, <mysticalagriculture:growth_accelerator>, <modularmachinery:blockcasing>]]
+	);
+
 # Machine Vent
     recipes.remove(<modularmachinery:blockcasing:1>);
     recipes.addShapedMirrored("Machine Vent", 
