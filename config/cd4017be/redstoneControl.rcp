@@ -1,4 +1,4 @@
-VERSION = 106;
+VERSION = 117;
 
 !The maximum distance between signal ports or anchors connected via wire.
 !Warning: wires much longer than 16 blocks may have visual chunk clipping glitches.
@@ -72,6 +72,7 @@ PRE_INIT() {
 
 INIT() {
 	!items that can be used as capacitors in Power Distribution Hub (all Forge Energy compatible items already work without need for registration)
+	add("battery", it("minecraft:command_block"), -1); !creative power
 	add("battery", it("m.battery"), 2000000);
 	add("shaped", it("m.battery"), "010/232/010", "nuggetGold", it("item.wire_e"), "dustRedstone", it("minecraft:coal"):1);
 	
@@ -170,18 +171,14 @@ INIT() {
 	add("shaped", it("item.scale"), "02/11", it("item.constant"), it("tile.num_comb"), it("item.wire"));
 	add("shaped", it("item.trigger"), "20/1 /20", it("item.constant"), it("tile.logic_comb"), it("minecraft:comparator"));
 	add("shaped", it("item.oscilloscope"), "000/000/111", it("item.lamp"), it("tile.delay"));
+	add("shaped", it("item.socket_s"), "01", it("tile.rs_port"):0, it("tile.rs_port"):1);
+	add("shaped", it("item.socket_b"), "01", it("tile.rs_port"):2, it("item.block_wire"));
 	add("shaped", it("m.corerope"), " 01/0 0/10 ", "nuggetIron", it("item.wire"));
 	add("shaped", it("m.corerope1"), "000/010/000", it("m.corerope"), "ingotIron");
 	add("shaped", it("m.corerope2"), " 0 /0 0/ 0 ", it("m.corerope1"));
 	add("shaped", 4 * it("item.cl_fuel"), "010/ 2 /0 0", "blockGlass", it("m.telekin_alloy"), it("minecraft:ender_eye"));
-	Loc t = it("item.text"), t1 = t:1;
-	add("shaped", 4 * t1, "0/1", "paper", it("minecraft:sign"));
-	add("shapeless", t:4, t1, t1, t1, t1);
-	add("shapeless", t:3, t1, t1, t1);
-	add("shapeless", t:2, t1, t1);
-	add("shapeless", 4 * t1, t:4);
-	add("shapeless", 3 * t1, t:3);
-	add("shapeless", 2 * t1, t:2);
+	add("shaped", it("item.text"):4, "0/1", "paper", it("minecraft:sign"));
+	add("shaped", it("item.remote"), "01 /222/222", it("tile.bin_comb"), it("item.wireless"), it("minecraft:stone_button"));
 	
 	Loc tag = nbt(); tag:"Istats" = [16, 12, 8, 72, 28, 88]#; !prototype processor (eqivalent to assembly with same materials except less remaining space)
 	add("shaped", it("tile.processor2") + tag, "021/041/031", it("tile.rs_port"):1, it("tile.rs_port"):0, "blockQuartz", "blockRedstone", "ingotIron");
@@ -189,6 +186,10 @@ INIT() {
 	add("shaped", it("tile.processor2") + tag, "0 1/0 1/0 1", it("tile.rs_port"):1, it("tile.rs_port"):0);
 	tag = nbt(); tag:"Istats" = [0, 0, 0, 64, 0, 0]#; !empty processor (64 component space)
 	add("shaped", it("tile.processor") + tag, "001/0 1/011", it("tile.rs_port"):1, it("tile.rs_port"):0);
+	tag = nbt(); tag:"Istats" = [0, 0, 0, 128, -16, 64]#; !empty processor (128 component space)
+	add("shaped", it("tile.processor3") + tag, "010", it("tile.processor2"), "gemEmerald");
+	tag = nbt(); tag:"Istats" = [0, 0, 0, 96, 0, 0]#; !empty processor (96 component space)
+	add("shaped", it("tile.int_panel") + tag, "011", it("tile.panel"), it("tile.processor"));
 	moddedRecipes();
 }
 
@@ -210,11 +211,13 @@ moddedRecipes() {
 	if (hasmod("immersiveengineering")) {
 		add("shaped", it("tile.comparator"), "0/1", it("immersiveengineering:connector"):13, it("minecraft:stone_slab"));
 		add("shapeless", 8 * it("item.wire"), it("immersiveengineering:wirecoil"):5);
+		add("battery", it("immersiveengineering:metal_device0"):3, -1);
 	}
 	if (hasmod("appliedenergistics2")) {
 		add("shapeless", 4 * it("tile.wire_anchor"), it("appliedenergistics2:part"):120);
 		add("shaped", it("item.tag"), "0/1/2", it("appliedenergistics2:material"):21, "paper", it("item.wire"));
 		add("shaped", it("item.wireless_b"), "132/0 0/231", it("item.wireless"), it("m.telekin_alloy"), it("appliedenergistics2:material"):48, it("appliedenergistics2:quantum_link")); !quantum entangled singularity
+		add("battery", it("appliedenergistics2:creative_energy_cell"), -1);
 	}
 	if (hasmod("opencomputers")) {
 		add("shaped", it("tile.oc_adapter"), "5 3/014/523", it("opencomputers:card"):6, it("opencomputers:material"):11, it("opencomputers:component"):6, it("tile.processor2"), it("opencomputers:card"):4, it("item.wire_e"));
@@ -255,15 +258,19 @@ POST_INIT() {
 	c:"read_b" = base;
 	c:"read_s" = base;
 	c:"read" = base;
+	c:"read_f" = base;
 	c:"write_b" = 2*base;
 	c:"write_s" = 2*base;
 	c:"write" = 2*base;
+	c:"write_f" = 2*base;
 	c:"feedback_b" = 2*base;
 	c:"feedback_s" = 2*base;
 	c:"feedback" = 2*base;
+	c:"feedback_f" = 2*base;
 	c:"array_b" = base;
 	c:"array_s" = 2*base;
 	c:"array_i" = 3*base;
+	c:"array_f" = 3*base;
 	c:"aget" = base;
 	c:"aset" = 4*base;
 	!logic tab:
@@ -275,6 +282,7 @@ POST_INIT() {
 	c:"xor" = 3*base;
 	c:"xnor" = 3*base;
 	c:"swt" = 3*base;
+	c:"fswt" = 3*base;
 	c:"branch" = 3*base;
 	c:"update" = adv;
 	!comparator tab:
@@ -288,6 +296,12 @@ POST_INIT() {
 	c:"ne" = adv;
 	c:"lt" = adv;
 	c:"ge" = adv;
+	c:"feq0" = 2*base;
+	c:"flt0" = 2*base;
+	c:"fgt0" = 2*base;
+	c:"finf" = 2*base;
+	c:"fnan" = 2*base;
+	c:"fcmp" = 2*adv;
 	!arithmetic tab:
 	c:"cst" = base;
 	c:"inc" = adv;
@@ -297,10 +311,12 @@ POST_INIT() {
 	c:"add" = 2*adv;
 	c:"sub" = 2*adv;
 	c:"mul" = 4*adv;
-	c:"div" = 6*adv;
-	c:"mod" = 6*adv;
+	c:"div" = 4*adv;
+	c:"mod" = 4*adv;
 	c:"max" = [2, 1]#;
 	c:"min" = [2, 1]#;
+	c:"rand" = [3, 3]#;
+	c:"time" = 5*adv;
 	!bits & bytes tab:
 	c:"bsl" = 2*adv;
 	c:"bsr" = 2*adv;
@@ -308,4 +324,24 @@ POST_INIT() {
 	c:"bitcom" = 4*adv;
 	c:"bytespl" = 4*adv;
 	c:"bytecom" = 4*adv;
+	c:"lobp" = 3*adv;
+	c:"hobp" = 3*adv;
+	c:"obcnt" = 3*adv;
+	c:"bmask" = base;
+	c:"bin_i2f" = base;
+	c:"bin_f2i" = base;
+	!floating pointer
+	c:"fcst" = base;
+	c:"fneg" = base;
+	c:"finv" = [1, 4]#;
+	c:"fabs" = base;
+	c:"fadd" = [1, 3]#;
+	c:"fsub" = [1, 3]#;
+	c:"fmul" = [1, 5]#;
+	c:"fdiv" = [1, 5]#;
+	c:"fmod" = [1, 5]#;
+	c:"fmax" = [2, 1]#;
+	c:"fmin" = [2, 1]#;
+	c:"floor" = adv;
+	c:"ceil" = adv;
 }
