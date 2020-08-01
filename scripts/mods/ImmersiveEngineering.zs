@@ -1,5 +1,12 @@
 import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemStack as IItemStack;
+import mods.alfinivia.ImmersiveEngineering.addChemthrowerEffect;
+import mods.alfinivia.ImmersiveEngineering.addRailgunBullet;
+import mods.alfinivia.ImmersiveEngineering.addLiquidFertilizer;
+import mods.alfinivia.ImmersiveEngineering.addItemFertilizer;
+import crafttweaker.potions.IPotionEffect;
+
+
 
 #modloaded immersiveengineering
 
@@ -192,3 +199,84 @@ addLiquidFertilizer(<liquid:nutrient_distillation>, 0.5);
 addLiquidFertilizer(<liquid:for.honey>            , 0.35);
 addLiquidFertilizer(<liquid:short.mead>           , 0.35);
 
+
+# *======= Chemical Thrower liquids =======*
+
+# addChemthrowerEffect(ILiquidStack liquid, boolean isGas, boolean isFlammable, String source, float damage);
+# addChemthrowerEffect(ILiquidStack liquid, boolean isGas, boolean isFlammable, String source, float damage, IPotionEffect[] effects)
+# addChemthrowerEffect(ILiquidStack liquid, boolean isGas, boolean isFlammable, IChemEntityEffect entityEffect, IChemBlockEffect blockEffect)
+
+# ----------------------------------------
+# ☢️ Strong radiation
+addChemthrowerEffect(<liquid:californium_250>, false, false, "generic" , 2, [<potion:ic2:radiation>.makePotionEffect(130, 2, false, true)] as IPotionEffect[]);
+addChemthrowerEffect(<liquid:plutonium_241>  , false, false, "generic" , 2, [<potion:ic2:radiation>.makePotionEffect(120, 2, false, true)] as IPotionEffect[]);
+addChemthrowerEffect(<liquid:curium_243>     , false, false, "generic" , 2, [<potion:ic2:radiation>.makePotionEffect(110, 2, false, true)] as IPotionEffect[]);
+addChemthrowerEffect(<liquid:tritium>        , false, false, "generic" , 2, [<potion:ic2:radiation>.makePotionEffect(100, 2, false, true)] as IPotionEffect[]);
+addChemthrowerEffect(<liquid:plutonium_238>  , false, false, "generic" , 2, [<potion:ic2:radiation>.makePotionEffect( 90, 2, false, true)] as IPotionEffect[]);
+addChemthrowerEffect(<liquid:americium_242>  , false, false, "generic" , 2, [<potion:ic2:radiation>.makePotionEffect( 80, 2, false, true)] as IPotionEffect[]);
+addChemthrowerEffect(<liquid:neutron>        , false, false, "generic" , 2, [<potion:ic2:radiation>.makePotionEffect( 70, 1, false, true)] as IPotionEffect[]);
+addChemthrowerEffect(<liquid:berkelium_248>  , false, false, "generic" , 2, [<potion:ic2:radiation>.makePotionEffect( 60, 1, false, true)] as IPotionEffect[]);
+addChemthrowerEffect(<liquid:californium_249>, false, false, "generic" , 2, [<potion:ic2:radiation>.makePotionEffect( 50, 1, false, true)] as IPotionEffect[]);
+addChemthrowerEffect(<liquid:americium_241>  , false, false, "generic" , 2, [<potion:ic2:radiation>.makePotionEffect( 40, 1, false, true)] as IPotionEffect[]);
+addChemthrowerEffect(<liquid:californium_251>, false, false, "generic" , 2, [<potion:ic2:radiation>.makePotionEffect( 30, 1, false, true)] as IPotionEffect[]);
+addChemthrowerEffect(<liquid:berkelium_247>  , false, false, "generic" , 2, [<potion:ic2:radiation>.makePotionEffect( 20, 1, false, true)] as IPotionEffect[]);
+addChemthrowerEffect(<liquid:curium_246>     , false, false, "generic" , 2, [<potion:ic2:radiation>.makePotionEffect( 10, 1, false, true)] as IPotionEffect[]);
+
+
+# ----------------------------------------
+# ⚡ Just high damage liquids
+addChemthrowerEffect(<liquid:ic2superheated_steam>,true , false, "onFire", 14);
+addChemthrowerEffect(<liquid:ic2uu_matter>        ,false, false, "ic2uu_matter", 50);
+addChemthrowerEffect(<liquid:ic2hot_coolant>      ,false, false, "onFire", 11);
+addChemthrowerEffect(<liquid:crystal>             ,false, false, "onFire", 20);
+addChemthrowerEffect(<liquid:plasma>              ,true , false, "onFire", 28);
+addChemthrowerEffect(<liquid:neutron>             ,false, false, "onFire", 36);
+
+
+# ----------------------------------------
+# 🔥 Flammable fuels that only do damage
+addChemthrowerEffect(<liquid:oil>          ,false, true, "onFire", 2);
+addChemthrowerEffect(<liquid:canolaoil>    ,false, true, "onFire", 3);
+addChemthrowerEffect(<liquid:crystaloil>   ,false, true, "onFire", 6);
+addChemthrowerEffect(<liquid:empoweredoil> ,false, true, "onFire", 12);
+addChemthrowerEffect(<liquid:biomass>      ,false, true, "onFire", 3);
+addChemthrowerEffect(<liquid:biofuel>      ,false, true, "onFire", 4);
+addChemthrowerEffect(<liquid:rocket_fuel>  ,false, true, "onFire", 13);
+addChemthrowerEffect(<liquid:refined_fuel> ,false, true, "onFire", 10);
+addChemthrowerEffect(<liquid:rocketfuel>   ,false, true, "onFire", 15);
+
+# ----------------------------------------
+# 🎇 Liquids with potion effects
+addChemthrowerEffect(<liquid:cloud_seed_concentrated>, false, false, "drown" , 2, [<potion:minecraft:levitation>.makePotionEffect(20, 1, false, true)] as IPotionEffect[]);
+addChemthrowerEffect(<liquid:vapor_of_levity>,         false, false, "drown" , 9, [<potion:minecraft:levitation>.makePotionEffect(200, 1, false, true)] as IPotionEffect[]);
+addChemthrowerEffect(<liquid:hydrofluoric_acid>      , false, false, "onFire",17, [<potion:minecraft:poison>.makePotionEffect(20, 3, false, true)] as IPotionEffect[]);
+addChemthrowerEffect(<liquid:blockfluiddirt>         , false, false, "onFire", 2, [<potion:immersiveengineering:sticky>.makePotionEffect(20, 1, false, true)] as IPotionEffect[]);
+addChemthrowerEffect(<liquid:mutagen>                , false, false, "onFire", 8, [<potion:biomesoplenty:curse>.makePotionEffect(20, 1, false, true)] as IPotionEffect[]);
+addChemthrowerEffect(<liquid:if.pink_slime>          , false, false, "drown" , 2, [<potion:immersiveengineering:sticky>.makePotionEffect(20, 1, false, true)] as IPotionEffect[]);
+addChemthrowerEffect(<liquid:menrilresin>            , false, false, "onFire", 4, [<potion:immersiveengineering:sticky>.makePotionEffect(20, 1, false, true)] as IPotionEffect[]);
+addChemthrowerEffect(<liquid:liquidchorus>           , false, false, "onFire", 6, [<potion:cyclicmagic:potion.bounce>.makePotionEffect(20, 1, false, true)] as IPotionEffect[]);
+addChemthrowerEffect(<liquid:xpjuice>                , false, false, "magic" , 1, [<potion:quark:white>.makePotionEffect(20, 1, false, true)] as IPotionEffect[]);
+addChemthrowerEffect(<liquid:lifeessence>            , false, false, "magic" ,11, [<potion:potioncore:love>.makePotionEffect(20, 1, false, true)] as IPotionEffect[]);
+addChemthrowerEffect(<liquid:fire_water>             , false, false, "onFire",14, [<potion:potioncore:fire>.makePotionEffect(20, 3, false, true)] as IPotionEffect[]);
+addChemthrowerEffect(<liquid:ic2hot_water>           , false, false, "magic" , 0, [<potion:minecraft:regeneration>.makePotionEffect(20, 5, false, true)] as IPotionEffect[]);
+
+# 🍫 Chocolates
+val chocPotions = [
+	<potion:randomthings:imbue_experience>.makePotionEffect(20, 1, false, true),
+	<potion:scalinghealth:bandaged>.makePotionEffect(20, 1, false, true)
+] as IPotionEffect[];
+addChemthrowerEffect(<liquid:chocolate_liquor>       , false, false, "onFire", 0, chocPotions);
+addChemthrowerEffect(<liquid:unsweetened_chocolate>  , false, false, "onFire", 0, chocPotions);
+addChemthrowerEffect(<liquid:dark_chocolate>         , false, false, "onFire", 0, chocPotions);
+addChemthrowerEffect(<liquid:milk_chocolate>         , false, false, "onFire", 0, chocPotions);
+
+// addChemthrowerEffect(<liquid:liquid_sunshine>, false /*isGas*/, true /*isFlammable*/, 
+// 	# IChemEntityEffect
+// 	function(target,shooter,throwerstack,fluid) {
+
+// 	}, 
+
+// 	# IChemBlockEffect
+// 	function(world,pos,side,shooter,throwerstack,fluid) {
+// 	}
+// );
