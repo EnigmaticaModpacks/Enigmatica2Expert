@@ -237,14 +237,29 @@ global compressIt as function(IItemStack, int)IItemStack =
 
 # ########################
 # Safe get NBT tag by string key
+# Example:
+#   D(item.tag, "Fluid.FluidName") => "water" as IData
 # ########################
 global D as function(IData, string)IData = 
     function (data as IData, field as string) as IData  {
-	if (!isNull(data)) {
-    val member = data.memberGet(field);
-    if (!isNull(member)) return member;
+	if (!isNull(data) && !isNull(field)) {
+		if (field.matches(".*\\..*")) {
+			# String contain several tags
+			var descend = data;
+			for tag in field.split(".") {
+				val member = descend.memberGet(tag);
+				if (!isNull(member)) {
+					descend = member;
+				} else {
+					break;
+				}
+			}
+			return descend;
+		} else {
+			return data.memberGet(field);
+		}
 	}
-	return null;
+	return data;
 };
 
 # Safe get NBT tag by string key
@@ -266,5 +281,21 @@ global Bucket as function(string)IItemStack = function (name as string) as IItem
 	if (name == "water") return <minecraft:water_bucket>;
 	if (name == "milk")  return <minecraft:milk_bucket>;
 	
-	return <forge:bucketfilled>.withTag({FluidName: name, Amount: 1000});
+	if (!isNull(name)) {
+		return <forge:bucketfilled>.withTag({FluidName: name, Amount: 1000});
+	} else {
+		return <minecraft:bucket>;
+	}
 };
+
+# Apply tag to bucket (in case we use TE potions or such)
+global BucketTag as function(string,IData)IItemStack = function (name as string, tag as IData) as IItemStack {
+	val b = Bucket(name as string);
+	if (!isNull(b) && !isNull(tag)) { return b.withTag({Tag: tag}); }
+	return b;
+};
+
+# ########################
+# Fill itemstack with liquid
+# Account maximum capacity
+# ########################
