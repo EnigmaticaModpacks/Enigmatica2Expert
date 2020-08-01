@@ -161,3 +161,34 @@ import crafttweaker.item.IItemStack as IItemStack;
 # Excavator new veins
 mods.immersiveengineering.Excavator.addMineral("Osmium", 50, 0.005, ["oreTin", "oreOsmium", "oreSilver"], [0.01, 0.006, 0.003]);
 mods.immersiveengineering.Excavator.addMineral("Nuclear Ore", 20, 0.005, ["oreThorium", "oreBoron", "oreLithium", "oreMagnesium"], [0.01, 0.01, 0.01, 0.01]);
+
+# *======= Railgun rods =======*
+
+# addRailgunBullet(IIngredient item, float damage, float gravity, int[][] colorMap)
+# addRailgunBullet(IIngredient item, float damage, float gravity, IRailgunImpact effect, int[][] colorMap)
+
+val colorMap = [[0x777777, 0xa4a4a4]] as int[][];
+addRailgunBullet(<ore:stickTitaniumAluminide>  , 23, 0.9, colorMap);
+addRailgunBullet(<ore:stickTitaniumIridium>    , 27, 0.9, colorMap);
+addRailgunBullet(<extendedcrafting:material:3> , 27, 1.3, colorMap);
+addRailgunBullet(<ore:stickCopper>             , 14, 1.1, colorMap);
+addRailgunBullet(<ore:stickTitanium>           , 21, 1.15,colorMap);
+addRailgunBullet(<ore:stickIridium>            , 24, 1.15,colorMap);
+
+
+# *======= Fertilizers =======*
+
+# addLiquidFertilizer(ILiquidStack liquid, float multiplier)
+# addLiquidFertilizer(ILiquidStack liquid, IFluidFertilizerMultiplier multiplier)
+# removeLiquidFertilizer(ILiquidStack liquid)
+# addItemFertilizer(IIngredient item, float multiplier)
+# addItemFertilizer(IIngredient item, IItemFertilizerMultiplier multiplier)
+# removeItemFertilizer(IItemStack item)
+
+addLiquidFertilizer(<liquid:meat>                 , 0.25);
+addLiquidFertilizer(<liquid:sewage>               , 0.3);
+addLiquidFertilizer(<liquid:lifeessence>          , 0.45);
+addLiquidFertilizer(<liquid:nutrient_distillation>, 0.5);
+addLiquidFertilizer(<liquid:for.honey>            , 0.35);
+addLiquidFertilizer(<liquid:short.mead>           , 0.35);
+
