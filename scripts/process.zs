@@ -137,6 +137,13 @@ function extract(input as IIngredient, output as IItemStack, exceptions as strin
   work(["extractor", "mekEnrichment"],    exceptions, [input], null, [output], null, null, null);
 }
 
+# Mash item. Use sharp knives on soft objects to turn them into pile of pieces
+# 📦 → 📦
+function mash(input as IIngredient, output as IItemStack, exceptions as string) {
+  
+  workEx("MetalPress", exceptions, [input], null, [output], null, null, null, {mold: "unpack"});
+}
+
 # Alloy two or more metals into one
 # [📦+] → 📦
 function alloy(input as IIngredient[], output as IItemStack, exceptions as string) {
@@ -155,8 +162,8 @@ function grow(input as IIngredient, output as IItemStack, exceptions as string,
   workEx("Insolator", exceptions, [input, <thermalfoundation:fertilizer:2>], null, [output            ], null, [secondaryOutput], [secondaryChance], {energy: 9600});
   
   # Hydroponics special behaviour
-  val maxFertilizers = 16;
-  val a = min(64, max(1, (1.0f - output.amount as float / 64.0f) * maxFertilizers) as int);
+  val maxFertilizers = 8.0d;
+  val a = min(64, max(1, (1.0f - output.amount as float / 16.0f) * maxFertilizers) as int);
   val combo = [
     <minecraft:dye:15> * a,
     <mysticalagriculture:mystical_fertilizer> * a,
@@ -258,59 +265,62 @@ function magic(input as IIngredient[], output as IItemStack[], exceptions as str
 
 # Takes raw material (like Ore block) and enrich (process, treat) it to get materials
 # 📦 → 📦|💧
-function beneficiate(input as IIngredient, JOREoutput as OreEntry, amount as int, exceptions as string) {
+function beneficiate(input as IIngredient, oreName as string, amount as int, exceptions as string) {
 
+  val JOREoutput = mods.jaopca.JAOPCA.getOre(oreName);
 
   var extra = [] as IItemStack[];
+  var cx as IItemStack = null;
+  if (!isNull(JOREoutput)) {
+    cx = JOREoutput.getItemStackExtra      ("dust", "gem"); if (!isNull(cx)) extra = extra + cx;
+    cx = JOREoutput.getItemStackSecondExtra("dust", "gem"); if (!isNull(cx)) extra = extra + cx;
+    cx = JOREoutput.getItemStackThirdExtra ("dust", "gem"); if (!isNull(cx)) extra = extra + cx;
+  }
+
   var extraChances = [
     min(1.0f, 0.333333f * (amount as float)),
     min(1.0f, 0.2f * (amount as float)),
     min(1.0f, 0.1f * (amount as float))] as float[];
 
-  var cx as IItemStack = null;
-  cx = JOREoutput.getItemStackExtra      ("dust", "gem"); if (!isNull(cx)) { extra = extra + cx; }
-  cx = JOREoutput.getItemStackSecondExtra("dust", "gem"); if (!isNull(cx)) { extra = extra + cx; }
-  cx = JOREoutput.getItemStackThirdExtra ("dust", "gem"); if (!isNull(cx)) { extra = extra + cx; }
-
-  val dustOrGem     = JOREoutput.getItemStack("dust", "gem");
+  val dustOrGem = utils.getSomething(oreName, ["dust", "gem"]);
   if (!isNull(dustOrGem)) {
     crush(input, dustOrGem * amount, exceptions ~ " macerator thermalCentrifuge", extra, extraChances);
   }
 
-  val crushedOrDust = JOREoutput.getItemStack("crushed", "dust");
+  val crushedOrDust = utils.getSomething(oreName, ["crushed", "dust"]);
   if (!isNull(crushedOrDust)) {
     crush(input, crushedOrDust * amount, "only: macerator", null, null);
   }
 
-  val ingotOrGem    = JOREoutput.getItemStack("ingot", "gem");
+  val ingotOrGem = utils.getSomething(oreName, ["ingot", "gem"]);
   if (!isNull(ingotOrGem)) {
     magic([input], [ingotOrGem * amount], exceptions);
   }
 
-  val molten        = JOREoutput.getLiquidStack("molten");
-  val altLiquid as ILiquidStack = itemUtils.getItem("liquid:" ~ JOREoutput.oreName.toLowerCase());
+  val molten as ILiquidStack = !isNull(JOREoutput) ? JOREoutput.getLiquidStack("molten") : null;
+  val altLiquid as ILiquidStack = itemUtils.getItem("liquid:" ~ oreName.toLowerCase());
   val liquid = isNull(molten) ? altLiquid : molten;
-  if (!isNull(liquid)) {
+  if (!isNull(liquid) && !isNull(JOREoutput)) {
     if (JOREoutput.oreType == "INGOT") { melt(input, liquid * (144*amount), exceptions); }
     if (JOREoutput.oreType == "GEM")   { melt(input, liquid * (666*amount), exceptions); }
   }
 
   # Mekanism machines can't work with NBT tags for inputs
   # So check if we have NBT first
-  if (isNull(input.itemArray[0].tag)) {
-    val clump = JOREoutput.getItemStack("clump");
+  if (!input.itemArray[0].hasTag) {
+    val clump = utils.getSomething(oreName, ["clump"]);
     if(!isNull(clump)) {
       workEx("mekpurification", exceptions, [input], null, [clump * (amount + 1)], null, null, null, null);
     }
 
-    val slurryName = "slurry" ~ JOREoutput.oreName;
+    val slurryName = "slurry" ~ oreName;
     val slurry = mods.mekanism.MekanismHelper.getGas(slurryName);
     if(!isNull(slurry)) {
-      val gasAmount = (amount + 1) * 200;
+      val gasAmount = (amount + 3) * 200;
       workEx("mekdissolution", exceptions, [input], null, null, null, null, null, {gasOutput: slurryName, gasOutputAmount: gasAmount});
     }
 
-    val shard = JOREoutput.getItemStack("shard");
+    val shard = utils.getSomething(oreName, ["shard"]);
     if(!isNull(shard)) {
       workEx("mekinjection", exceptions, [input], null, [shard * (amount + 2)], null, null, null, null);
     }

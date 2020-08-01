@@ -31,6 +31,8 @@ import scripts.processUtils.avdRockXmlRecipe;
 #
 # ######################################################################
 
+static recipeCount as int = 0 as int;
+
 # Picks one machine to inject recipe in it
 # Function receive all possible combinations of input and outputs of one machine
 # Any argument can be null except machine name
@@ -266,6 +268,14 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       }
       return machineName;
     }
+
+    if (machineName == "metalpress") {
+      # mods.immersiveengineering.MetalPress.addRecipe(IItemStack output, IIngredient input, IItemStack mold, int energy, @Optional int inputSize);
+
+      val mold = !isNull(options.mold) ? scripts.utils.mold[options.mold.asString()] : null;
+      mods.immersiveengineering.MetalPress.addRecipe(outputItem0, inputIngr0, !isNull(mold) ? mold : scripts.utils.mold.plate, 2000, inputIngr0.amount);
+      return machineName;
+    }
   } 
 
   # Machines with ONE item INPUT
@@ -455,9 +465,19 @@ function workEx(machineNameAnyCase as string, exceptions as string,
     }
 
     if (machineName == "alloysmelter") {
-      # mods.enderio.AlloySmelter.addRecipe(IItemStack output, IIngredient[] input, @Optional int energyCost, @Optional float xp);
       if (strict) { mods.enderio.AlloySmelter.removeRecipe(outputItem0); }
       mods.enderio.AlloySmelter.addRecipe(outputItem0, inputItems, 2000);
+      return machineName;
+    }
+
+    if (machineName == "kiln") {
+      if (strict) { mods.immersiveengineering.AlloySmelter.removeRecipe(outputItem0); }
+      if (inputItems.length == 2) {
+        mods.immersiveengineering.AlloySmelter.addRecipe(outputItem0, inputItems[0], inputItems[1], 400);
+      } else {
+        return info(machineNameAnyCase, getItemName(inputIngr0.itemArray[0]), "received work, but number of inputs != 2");
+      }
+
       return machineName;
     }
 
@@ -532,7 +552,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
 
     if (machineName == "hydroponics") {
       val builder = mods.modularmachinery.RecipeBuilder
-        .newBuilder("hydroponics_" ~ getItemName(outputItem0), "hydroponics", 40)
+        .newBuilder("hydroponics_" ~ getItemName(outputItem0) ~"-"~recipeCount, "hydroponics", 40)
         .addEnergyPerTickInput(200000);
 
       for ins in inputItems { builder.addItemInput(ins.itemArray[0]); }
@@ -540,6 +560,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       if (haveLiquidInput) { builder.addFluidInput(inputLiquid0); }
 
       builder.build();
+      recipeCount += 1;
       return machineName;
     }
 
