@@ -365,3 +365,11 @@ scripts.process.crush(<quark:crystal:5>, <actuallyadditions:item_crystal_shard:2
 scripts.process.crush(<quark:crystal:8>, <actuallyadditions:item_crystal_shard:3> * 3, "no exceptions", null, null);
 scripts.process.crush(<quark:crystal:4>, <actuallyadditions:item_crystal_shard:4> * 3, "no exceptions", null, null);
 scripts.process.crush(<quark:crystal>  , <actuallyadditions:item_crystal_shard:5> * 3, "no exceptions", null, null);
+
+# Other ways to make Bio-mash
+scripts.process.mash(<ore:listAllseed>,   <actuallyadditions:item_misc:1>*2, "no exceptions");
+scripts.process.mash(<ore:listAllveggie>, <actuallyadditions:item_misc:1>*2, "no exceptions");
+scripts.process.mash(<ore:listAllfruit>,  <actuallyadditions:item_misc:1>*3, "no exceptions");
+scripts.process.mash(<ore:listAllberry>,  <actuallyadditions:item_misc:1>*2, "no exceptions");
+scripts.process.mash(<minecraft:baked_potato>,  <actuallyadditions:item_food:5>*2, "no exceptions");
+scripts.process.mash(<minecraft:cooked_porkchop>,  <actuallyadditions:item_food:20>*3, "no exceptions");
