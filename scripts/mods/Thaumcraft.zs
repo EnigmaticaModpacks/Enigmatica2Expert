@@ -109,6 +109,12 @@ mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreLead>, <thermalfoundation
 	[<ore:stickTreatedWood>, null, null]]);
 
 # Native clusters processing
-for jore in mods.jaopca.JAOPCA.getOresForEntry("cluster") {
-	scripts.process.beneficiate(jore.getItemStack("cluster"), jore, 3, "except: Pulverizer");
+// for jore in mods.jaopca.JAOPCA.getOresForEntry("cluster") {
+// 	scripts.process.beneficiate(jore.getItemStack("cluster"), jore, 3, "except: Pulverizer");
+// }
+for entry in oreDict {
+	val name = entry.name;
+	if (name.matches("cluster[A-Z]\\w+")) {
+		scripts.process.beneficiate(entry, name.substring(7), 3, "except: Pulverizer");
+	}
 }

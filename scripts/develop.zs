@@ -42,3 +42,18 @@ import crafttweaker.player.IPlayer;
 	
 // 	return;
 // });
+
+
+// events.onPlayerTick(function(event as PlayerTickEvent) {
+//     val player as IPlayer = event.player;
+//     val world as IWorld = player.world;
+
+//     if (isInvalid && world.remote) {
+//         if (world.time % 100 == 0) {
+//             player.sendStatusMessage(format.red("!"), true);
+//         }
+//         if (world.time % 100 == 50) {
+//             player.sendStatusMessage(format.red("!"), true);
+//         }
+//     }
+// });

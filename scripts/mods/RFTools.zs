@@ -126,7 +126,6 @@
 		[<ore:circuitBasic>, <rftools:storage_module>.marked("module"), <ore:circuitBasic>], 
 		[<storagedrawers:upgrade_storage:3>, null, <storagedrawers:upgrade_storage:3>]
 	], function(out, ins, cInfo) {
-		var tag = {} as crafttweaker.data.IData;
 		if(ins has "module" && !isNull(ins.module) && ins.module.hasTag) {
 			return out.withTag(ins.module.tag);
 		}
@@ -139,7 +138,6 @@
 		[<ore:circuitBoard>, <rftools:storage_module:1>.marked("module"), <ore:circuitBoard>], 
 		[<storagedrawers:upgrade_storage:4>, null, <storagedrawers:upgrade_storage:4>]
 	], function(out, ins, cInfo) {
-		var tag = {} as crafttweaker.data.IData;
 		if(ins has "module" && !isNull(ins.module) && ins.module.hasTag) {
 			return out.withTag(ins.module.tag);
 		}

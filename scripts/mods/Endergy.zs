@@ -6,12 +6,32 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
 # Remove Weak Conduits and unused alloys
-rh(<enderio:block_alloy_endergy>);
-rh(<enderio:block_alloy_endergy:5>);
-rh(<enderio:block_alloy_endergy:6>);
-rh(<enderio:item_alloy_endergy_nugget>);
-rh(<enderio:item_alloy_endergy_nugget:5>);
-rh(<enderio:item_alloy_endergy_nugget:6>);
+for s in [
+  "block_alloy_endergy",
+  "item_alloy_endergy_nugget",
+  "item_alloy_endergy_ingot",
+  "item_alloy_endergy_ball"
+] as string[] {
+  for i in [0, 5, 6] as int[] {
+    val it = itemUtils.getItem("enderio:"~s,i);
+    if (!isNull(it)) rh(it);
+  }
+}
+for s in [
+  "item_alloy_endergy_ingot",
+] as string[] {
+  for i in [0, 5, 6] as int[] {
+    val it = itemUtils.getItem("enderio:"~s,i);
+    if (!isNull(it)) mods.enderio.AlloySmelter.removeRecipe(it);
+  }
+}
+
+for n in [144, 16, 144*9] as int[] {
+  mods.nuclearcraft.melter.removeRecipeWithOutput([<liquid:crude_steel> * n]);
+  mods.nuclearcraft.melter.removeRecipeWithOutput([<liquid:vivid_alloy> * n]);
+  mods.nuclearcraft.melter.removeRecipeWithOutput([<liquid:energetic_silver> * n]);
+}
+
 rh(<enderio:item_endergy_conduit>);
 rh(<enderio:item_endergy_conduit:1>);
 rh(<enderio:item_endergy_conduit:2>);
@@ -20,12 +40,6 @@ rh(<enderio:item_endergy_conduit:4>);
 rh(<enderio:item_endergy_conduit:5>);
 rh(<enderio:item_endergy_conduit:6>);
 rh(<enderio:item_endergy_conduit:7>);
-rh(<enderio:item_alloy_endergy_ingot>);
-rh(<enderio:item_alloy_endergy_ingot:5>);
-rh(<enderio:item_alloy_endergy_ingot:6>);
-rh(<enderio:item_alloy_endergy_ball>);
-rh(<enderio:item_alloy_endergy_ball:5>);
-rh(<enderio:item_alloy_endergy_ball:6>);
 rh(<enderio:item_capacitor_grainy>);
 rh(<enderio:item_capacitor_silver>);
 rh(<enderio:item_capacitor_energetic_silver>);

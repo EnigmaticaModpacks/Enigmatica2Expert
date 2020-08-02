@@ -424,7 +424,10 @@ mods.inworldcrafting.FluidToFluid.transform(<liquid:sand>, <liquid:blueslime>, [
 scripts.process.solution([<ore:soulSand>], [<liquid:blueslime>*1000], [<liquid:sand>*1000], null, "except: highoven");
 
 # Bedrock Ore Miner
-Remake(<toolbelt:pouch>, ["ABA", "CDC", "ADA"], {
+Remake(<bedrockores:bedrock_miner>, [
+	"ABA", 
+	"CDC", 
+	"ADA"], {
 	A: <ore:dustBedrock>,
 	B: <immersiveengineering:metal_decoration0:5>,
 	C: <ore:blockRedstone>,

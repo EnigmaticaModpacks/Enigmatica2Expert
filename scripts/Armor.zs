@@ -82,10 +82,11 @@ for item in [
 	<compactsolars:solar_hat_medium_voltage>,
 	<compactsolars:solar_hat_high_voltage>,
 ] as IItemStack[] {
+	recipes.replaceAllOccurences(<minecraft:iron_helmet>, 	<conarm:helmet_core>.withTag({Material: "iron"}), item);
 	recipes.replaceAllOccurences(<minecraft:iron_helmet:*>, <conarm:helmet_core>.withTag({Material: "iron"}), item);
 }
 
-recipes.replaceAllOccurences(<minecraft:iron_boots:*>, <conarm:boots_core>.withTag({Material: "iron"}), <randomthings:superlubricentboots>);
+recipes.replaceAllOccurences(<minecraft:iron_boots>, <conarm:boots_core>.withTag({Material: "iron"}), <randomthings:superlubricentboots>);
 
 //mods.bloodmagic.AlchemyArray.removeRecipe(IItemStack input, IItemStack catalyst);
 val BRT = <bloodmagic:component:8>;
@@ -112,7 +113,7 @@ recipes.replaceAllOccurences(<minecraft:golden_boots:*>, <conarm:boots_core>.wit
 #------------
 recipes.replaceAllOccurences(<minecraft:diamond_helmet>, <conarm:helmet_core>.withTag({Material: "diamantine_crystal"}), <plethora:module>);
 recipes.replaceAllOccurences(<minecraft:diamond_chestplate:*>, <conarm:chest_core>.withTag({Material: "diamantine_crystal"}), <draconicevolution:tool_upgrade:8>);
-recipes.replaceAllOccurences(<minecraft:diamond_boots:*>, <conarm:boots_core>.withTag({Material: "diamantine_crystal"}), <environmentaltech:modifier_jump_boost>);
+recipes.replaceAllOccurences(<minecraft:diamond_boots>, <conarm:boots_core>.withTag({Material: "diamantine_crystal"}), <environmentaltech:modifier_jump_boost>);
 
 
 
@@ -428,6 +429,7 @@ val itemsToRecycle as string[] = [
 "bloodmagic:living_armour_chest"         , "8"   , IRN                               , "iron"             ,
 "bloodmagic:living_armour_leggings"      , "7"   , IRN                               , "iron"             ,
 "bloodmagic:living_armour_boots"         , "4"   , IRN                               , "iron"             ,
+"enderio:item_stellar_alloy_sword"       , "2"   , SLR                               , "stellar_alloy"    ,
 "enderio:item_stellar_alloy_pickaxe"     , "3"   , SLR                               , "stellar_alloy"    ,
 "enderio:item_stellar_alloy_axe"         , "3"   , SLR                               , "stellar_alloy"    ,
 "enderio:item_stellar_alloy_helmet"      , "5"   , SLR                               , "stellar_alloy"    ,

@@ -8,3 +8,8 @@ import crafttweaker.data.IData;
 
 #modloaded tconevo
 
+for item in itemUtils.getItemsByRegexRegistryName("tconevo:*") {
+  for ore in item.ores {
+    if (ore.name.startsWith("gear")) recipes.remove(item);
+  }
+}

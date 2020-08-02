@@ -202,3 +202,6 @@ remakeEx(<extrautils2:machine>.withTag({Type: "extrautils2:generator_enchant"}),
 	[<ore:blockMagicalWood>, <ore:blockMagicalWood>, <ore:blockMagicalWood>],
 	[<ore:blockMagicalWood>, <minecraft:enchanting_table>, <ore:blockMagicalWood>],
 	[<ore:dustRedstone>, <extrautils2:machine>.withTag({Type: "extrautils2:generator"}), <ore:dustRedstone>]]);
+
+# Cut enderpearl into pieces
+scripts.process.mash(<minecraft:ender_pearl> , <extrautils2:endershard> * 8, null);
