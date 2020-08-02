@@ -1,85 +1,75 @@
 # Ideas list
 
-🟢 - Add mod
-🔴 - Remove mod
-💦 - Easier recipe
-🔶 - Harder Recipe
-🔧 - More Machine Recipes
-📖 - Better Questing book
-✏️ - Recipes changes
-✍ - Compat recipes
-⚙️ - Process (compat between machines)
-♻️ - Recycle
-🔨 - Tinker's Construct
+- 🟢 - Add mod
+- 🔴 - Remove mod
+- 💦 - Easier recipe
+- 🔶 - Harder Recipe
+- 🔧 - More Machine Recipes
+- 📖 - Better Questing book
+- ✏️ - Recipes changes
+- ✍ - Compat recipes
+- ⚙️ - Process (compat between machines)
+- ♻️ - Recycle
+- 🔨 - Tinker's Construct
 
 ## Finished
 
 -----------
 
+- [ ] 🔴 Stellar conduits
+- [x] **ModularMachinery** Armor ingredients Recursively
+- [x] **ModularMachinery** Hydroponics
+- [x] ♻️ Archeologist hat
+- [x] ♻️ Pirat Cutlass recycle
+- [x] ♻️ Quantum
+- [x] ♻️ Stellar Alloy items
+- [x] ⚙️ Bioplastic
+- [x] ⚙️ End steel in process.alloy
+- [x] ⚙️ Metal Press "Unpacking" (cheese, vegetables)
+- [x] ⚙️ Process should have stepped fluid output
+- [x] ⚙️ Sludge more items
+- [x] ✏️ Thermal Expansion tank clearing (can add tanks in JEI)
+- [x] 📃 BoP gem biomes tooltips
 - [x] 📖 Chaotic core wont require Draconic Set
 - [x] 📖 Fix AdvRock branch (Remove ores that can be obtained way earlier)
 - [x] 📖 Hearts from Animals to Bragging Rights
+- [x] 🔨 Swap PlusTic materials with TConEvo (including quest book)
 - [x] 🔶 Black hole tanks harder
-- [x] NC Steam Turbine default config for steam (but keep energy up)
-- [x] Remove NC armor
 - [x] 🔶 Change sleeping mat recipe (conflict)
 - [x] 🔶 Creative Dagger Recipe
+- [x] 🔶 Crystalline capacitor from actual crystalline
 - [x] 🔶 Endergy conduits upgrade recipe
 - [x] 🔶 Gem diamod change to rat diamond in ComputerCraft.zs
 - [x] 🔶 Infinity ginding balls made NOT from infinity ingots
-- [x] 🔶 Mud balls smelts to TiCon mud bricks, Mud bricks conversions.
-- [x] 0.1 Porous Stone chance
-- [x] Change Modpack name everywhere 
-- [x] ♻️ Archeologist hat
-- [x] ♻️ Pirat Cutlass recycle
-- [x] 🔶 Crystalline capacitor from actual crystalline
 - [x] 🔶 Mechanics: remove obsidian craft, arr ruching block to Process
+- [x] 🔶 Mud balls smelts to TiCon mud bricks, Mud bricks conversions.
 - [x] 🔶 Stellar & draconic & glitch armor to armor dataTables.
-- [x] ✏️ Thermal Expansion tank clearing (can add tanks in JEI)
-- [x] ⚙️ Sludge more items
-- [x] **ModularMachinery** Armor ingredients Recursively
+- [x] 🟢 HarvestCraft Tweaker
+- [x] 🟢 Plus Tweaks
+- [x] 0.1 Porous Stone chance
+- [x] Add Creative flight to supremium SET
+- [x] Change Modpack name everywhere 
 - [x] Draconic Armor and Tools recipe
-- [x] Remove Manasteel instruments
-- [x] More Matter Cannon bullets
-- [x] RedstoneArsenal Bow recipe
-- [x] ⚙️ Process should have stepped fluid output
 - [x] Magic bean drop
-- [x] ⚙️ End steel in process.alloy
+- [x] Make ImmEng concrete infinite
+- [x] More Astral Sorcery Fontain liquids
+- [x] More Matter Cannon bullets
+- [x] NC Steam Turbine default config for steam (but keep energy up)
+- [x] RedstoneArsenal Bow recipe
+- [x] Remove Armors: gold, iron, diamond, Manyullin, steel, faraday, hard_leather, Fiery, Knightly
+- [x] Remove EnderIO alloys in Melter, Alloy Smelter
+- [x] Remove Manasteel instruments
+- [x] Remove MystAgr armor sets
+- [x] Remove NC armor
 
 ## Planned
 
 -----------
 
-- [x] More Astral Sorcery Fontain liquids
-- [x] 🟢 HarvestCraft Tweaker
-- [x] 🟢 Better Hurt Timers
-- [x] 🟢 Plus Tweaks
-- [ ] 🟢 Alfinivia
-- [ ] 🟢 Artisan Worktables
-- [ ] 🔴 Stellar conduits
-- [x] **ModularMachinery** Hydroponics
-- [x] Remove MystAgr armor sets (att creative fly trait to supremium)
-- [x] Remove Armors: gold, iron, diamond, Manyullin, steel, faraday, hard_leather, Fiery, Knightly
-- [x] ♻️ Stellar Alloy items
-- [x] ⚙️ Add refining of Thaumcraft Native Clusters
-- [x] More Astral Sorcery Challice mixes
-- [x] ♻️ Quantum
-- [x] 🔨 Swap PlusTic materials with TConEvo (including quest book)
-- [x] 🔶 Ender ingot in alooy smelteries instead of crafting. Also Pulsating Iron
-- [x] 🔶 Harder Enderium recipe (remove enderium base and platinum-lead alloy)
-- [ ] 🧱 New Ore Processing line with Magic. 📦 ore -> 📦hunk -> 📦 small piece -> 💧 washed -> 📦 resource
-- [x] Make ImmEng concrete infinite
-- [x] ⚙️ Bioplastic
-- [ ] ⚙️ ImmerEng mixer to Process
-- [ ] ⚙️ Liquid Concrete
-- [ ] ⚙️ Metal Press "Unpacking" (cheese, )
-- [ ] ⚙️ TconEvo plates, gears and dusts
-- [ ] ⚙️ Process: change "Exception" string to IData
-- [ ] ⚙️ Process: Exceptions union and substraction for Benification
-- [ ] ⚙️ Batch alloy craftings
-- [ ] ⚙️ Florbs filling (probably in Artisan's)
-- [ ] ⚙️ "Soft" and "Hard" versions of functions, add Pam's machines to functions
-- [ ] Remove EnderIO alloys in Smeltery, Melter, Alloy Smelter
+- [ ] **Rats** Structures Generation
+- [ ] `/ct names foodvalue saturationvalue` can give information to generate Bio-Mash recipes
+- [ ] <mod:id:*> means Any Tag also. Resolve mekanism and circuits problems
+- [ ] ✏️ Bottle of Air recipe
 - [ ] ✏️ T6 Solar cheaper
 - [ ] ✏️ Ultimate potion
 - [ ] 💜 Account Thaumcraft's aspects cost
@@ -95,22 +85,36 @@
 - [ ] 🔶 Buff Mek Universal Cable recipe (output can be tweaked too)
 - [ ] 🔶 Remake Mek Tanks and Gas tanks
 - [ ] 🔶 Solar Panels in precision assembler
+- [ ] 🧱 New Ore Processing line with Magic. 📦 ore -> 📦hunk -> 📦 small piece -> 💧 washed -> 📦 resource
 - [ ] 🛡️ EquipGen: Exclude armor materials that cant be armor material
+- [ ] 🟢 Artisan Worktables
 - [ ] Armor upgrades saving enchantments (probably need artisan workbench)
+- [ ] Automatic Patchouli generation chapters
+- [ ] Disable vanilla armor generating
 - [ ] Ender Amethyst generation disable
 - [ ] Equip Generation change list
 - [ ] ExNihilio Crushed End Stone resources
+- [ ] Get Rid of TODOs
 - [ ] Give uses to singularities (Coal - burn time, etc)
+- [ ] Harder to make Supremium Cores
 - [ ] IC2 Coolant to salt reactor
 - [ ] IC2 wrong oredict blocks in Ore
+- [ ] Ice Tic tait (Melts when in hands, gives +4 modifiers)
 - [ ] Infinity capacitor to loot boxes
 - [ ] Infinity capacitor to rewards
 - [ ] Infinity reagent instead dust in high oven
+- [ ] Is Recycling for Spartan shieds work? If so, make every recycle as recycle
 - [ ] JavaScript for automatic XML syncing
-- [ ] Kern Probe texutre glitch (excavator)
+- [ ] Jumps.zs should store jump amount
+- [ ] Liquid interactions to extruder
 - [ ] LootBoxes remove worthless items
 - [ ] Lower Tinker's fuel duration
+- [ ] Main menu excess buttons
 - [ ] Make Item Descriptions in Patchouli book
+- [ ] More AS fluids for fluid ritual (cfg)
+- [ ] More Dragon Forge Recipes
+- [ ] More Flux Network tweaks
+- [ ] More immersive Thermoelectric blocks variations
 - [ ] More meat types recycle in TE centrifuge
 - [ ] More recipes for tree fluid extractor
 - [ ] Nerf void miner even more
@@ -118,21 +122,38 @@
 - [ ] New Alchemy table recipes (Blood magic)
 - [ ] Pressurizer have Aluminium plate recipe duplication
 - [ ] Rad Resistance for some Armor
+- [ ] Random Tweaks
 - [ ] Rats ORE processing wrong items (change to ore.firstItem)
 - [ ] Remake creatures drop items
 - [ ] Remove Anglesite from Rewards and Loot
 - [ ] Remove Water from AdvRock Electrolyzer
 - [ ] Removing tag for globals.zs (should not add empty tag)
+- [ ] Replace all forge buckets with shortand
 - [ ] Tempelate for 3d Print in book
+- [ ] Tweak chemical thrower liquids
+- [ ] TwiForst Horn and Magnet ++ durability
 - [ ] Ultimate Fuel ContentTweaker
 - [ ] Wasteland planet
-- [ ] More Dragon Forge Recipes
-- [ ] More AS fluids for fluid ritual (cfg)
-- [ ] **Rats** Structures Generation
-- [ ] Replace all forge buckets with shortand
-- [ ] Disable vanilla armor generating
-- [ ] Main menu excess buttons
-- [ ] Jumps.zs should store jump amount
+- [x] ⚙️ Add refining of Thaumcraft Native Clusters
+- [x] 🔶 Ender ingot in alooy smelteries instead of crafting. Also Pulsating Iron
+- [x] 🔶 Harder Enderium recipe (remove enderium base and platinum-lead alloy)
+- [x] 🟢 Alfinivia
+- [x] 🟢 Better Hurt Timers
+- [x] 🟢 Mekatweaker
+- [x] More Astral Sorcery Challice mixes
+- [x] TconEvo remove gears recipe
+
+### Do after process.zs class rework:
+
+- [ ] ⚙️ Process: change "Exception" string to IData
+- [ ] ⚙️ Process: Exceptions union and substraction for Benification
+- [ ] ⚙️ ImmerEng mixer to Process
+- [ ] ⚙️ Liquid Concrete
+- [ ] ⚙️ TconEvo plates, gears and dusts
+- [ ] ⚙️ Batch alloy craftings
+- [ ] ⚙️ Florbs filling (probably in Artisan's)
+- [ ] ⚙️ "Soft" and "Hard" versions of functions, add Pam's machines to functions
+- [ ] ⚙️ bonusType for SAG mill
 
 
 ## Unused TC traits
@@ -158,7 +179,6 @@
 - ✏️ Crystallized Obsidian
 - ✏️ Forestry's Carton
 - Bibliocraft Printing Press
-- TwiFrst Venison
 - TwiFrst Firefly
 - Iridium Rod
 - Titan-Alum rod
@@ -250,7 +270,7 @@ mods.rt.RandomThingsTweaker.addAnvilRecipe(<cyclicmagic:book_ender>, <draconicev
 - ":49>"         ,**Lumium Singularity**       -
 - ":50>"         ,**Enderium Singularity**     -
 - ":64>"         ,**Ardite Singularity**       -
-- ":65>"         ,**Cobalt Singularity**       -
+- ":65>"         ,**Cobalt Singularity**       - Starts a blue fire
 - ":66>"         ,**Manyullyn Singularity**    -
 - "_custom:100>" ,**Quartz Singularity**       - ? Something about chiseling
 - "_custom:101>" ,**Certus Quartz**            - Instantly grow quartz crystals
