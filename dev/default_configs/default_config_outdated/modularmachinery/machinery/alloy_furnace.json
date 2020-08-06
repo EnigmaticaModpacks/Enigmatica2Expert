@@ -1,0 +1,188 @@
+{
+    "registryname": "alloy_furnace",
+    "localizedname": "Alloy Smelter",
+    "modifiers": [
+        {
+            "elements": "modularmachinery:blockcasing@1",
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "description": "Replace block above controller with machine vent\nfor double item output!",
+            "modifier": {
+                "target": "modularmachinery:item",
+                "io": "output",
+                "operation": 1,
+                "multiplier": 2.0
+            }
+        }
+    ],
+    "parts": [
+        {
+            "x": -1,
+            "y": -1,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@4"
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@2"
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@4"
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 1,
+            "elements": "modularmachinery:blockcasing@2"
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 1,
+            "elements": "modularmachinery:blockcasing@2"
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@4"
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@4"
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@2"
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 1,
+            "elements": "modularmachinery:blockcasing@0"
+        },
+
+
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@4"
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@4"
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@4"
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@4"
+        },
+
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "modularmachinery:blockinputbus"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "modularmachinery:blockoutputbus"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockenergyinputhatch"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": "minecraft:lava"
+        },
+
+
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@4"
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@2"
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": "modularmachinery:blockcasing@4"
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": "modularmachinery:blockcasing@2"
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": "modularmachinery:blockcasing@2"
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@4"
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@4"
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": "modularmachinery:blockcasing@2"
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": "modularmachinery:blockcasing@0"
+        }
+    ]
+}

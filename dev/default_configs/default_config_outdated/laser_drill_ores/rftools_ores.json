@@ -1,0 +1,41 @@
+[
+  {
+    "item" : "rftools:dimensional_shard_ore:0",
+    "color" : 0,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "item" : "rftools:dimensional_shard_ore:1",
+    "color" : 0,
+    "rarity" : [
+      {
+        "whitelist": "minecraft:hell",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "item" : "rftools:dimensional_shard_ore:2",
+    "color" : 0,
+    "rarity" : [
+      {
+        "whitelist": "minecraft:sky",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 1
+      }
+    ]
+  }
+]

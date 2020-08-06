@@ -1,0 +1,263 @@
+{
+  "unsavedChanges": false,
+  "menu_subs": {
+    "vanilla_tex": true,
+    "shaded_borders": true,
+    "shaded_borders_subs": {
+      "invert_shade": false
+    },
+    "thick_borders": true,
+    "colour": -1,
+    "border": 0,
+    "text_colour": 4210752,
+    "text_shadow": false,
+    "close_button_subs": {
+      "colour": 11579568,
+      "hover": 16724016
+    },
+    "size_buttons_subs": {
+      "colour": 11579568,
+      "hover": 12632256
+    },
+    "settings_button_subs": {
+      "colour": 16777215,
+      "hover": 12632256
+    }
+  },
+  "page_list_subs": {
+    "hide_button_subs": {
+      "colour": 16777215,
+      "hover": 16777120
+    },
+    "header_subs": {
+      "vanilla_tex": true,
+      "shaded_borders": true,
+      "shaded_borders_subs": {
+        "invert_shade": false
+      },
+      "thick_borders": false,
+      "colour": -6250336,
+      "border": 0,
+      "text_colour": 4210752
+    },
+    "dir_path_subs": {
+      "colour": -3750202,
+      "border": -16777216,
+      "shaded_borders": false,
+      "shaded_borders_subs": {
+        "invert_shade": true
+      },
+      "dir_buttons_subs": {
+        "colour": -8684677,
+        "hover": -7631928,
+        "border": -8684677,
+        "border_hover": -7631928,
+        "shaded_borders": true,
+        "shaded_borders_subs": {
+          "invert_shade": false
+        },
+        "text_colour": 0,
+        "text_hover": 0
+      }
+    },
+    "body_subs": {
+      "vanilla_tex": true,
+      "shaded_borders": true,
+      "shaded_borders_subs": {
+        "invert_shade": false
+      },
+      "colour": -1,
+      "border": 0,
+      "text_colour": 4210752
+    },
+    "footer_subs": {
+      "vanilla_tex": true,
+      "shaded_borders": true,
+      "shaded_borders_subs": {
+        "invert_shade": false
+      },
+      "colour": -1,
+      "border": 0
+    },
+    "search_subs": {
+      "text_colour": 16777215,
+      "colour": -16777216,
+      "border": -10461088,
+      "settings_button_subs": {
+        "colour": -6250336,
+        "hover": -4144960
+      }
+    },
+    "page_buttons_subs": {
+      "vanilla_tex": true,
+      "shaded_borders": true,
+      "shaded_borders_subs": {
+        "invert_shade": false
+      },
+      "thick_borders": false,
+      "colour": -1,
+      "hover": -1,
+      "border": 0,
+      "border_hover": 0,
+      "text_colour": 14737632,
+      "text_hover": 16777120,
+      "text_shadow": true,
+      "page_back_button_subs": {
+        "vanilla_tex": true,
+        "shaded_borders": true,
+        "shaded_borders_subs": {
+          "invert_shade": false
+        },
+        "thick_borders": false,
+        "colour": -1,
+        "hover": -1,
+        "border": 0,
+        "border_hover": 0,
+        "text_colour": 14737632,
+        "text_hover": 16777120,
+        "text_shadow": true,
+        "icon_subs": {
+          "colour": 16777215,
+          "hover": 16777120
+        }
+      }
+    },
+    "scroll_bar_subs": {
+      "colour": -7631989,
+      "hover": -7631989,
+      "border": -7631989,
+      "border_hover": -7631989,
+      "shaded_borders": true,
+      "shaded_borders_subs": {
+        "invert_shade": true
+      },
+      "scroll_slider_subs": {
+        "colour": -7631989,
+        "hover": -7631928,
+        "border": -7631989,
+        "border_hover": -7631928,
+        "shaded_borders": true,
+        "shaded_borders_subs": {
+          "invert_shade": false
+        }
+      }
+    }
+  },
+  "md_window_subs": {
+    "header_subs": {
+      "vanilla_tex": true,
+      "shaded_borders": true,
+      "shaded_borders_subs": {
+        "invert_shade": false
+      },
+      "thick_borders": false,
+      "colour": -6250336,
+      "border": 0,
+      "text_colour": 0
+    },
+    "body_subs": {
+      "vanilla_tex": true,
+      "shaded_borders": true,
+      "shaded_borders_subs": {
+        "invert_shade": false
+      },
+      "thick_borders": false,
+      "colour": -1,
+      "border": -16777216,
+      "text_colour": 0
+    },
+    "scroll_bar_subs": {
+      "colour": -7631989,
+      "hover": -7631989,
+      "border": -7631989,
+      "border_hover": -7631989,
+      "shaded_borders": true,
+      "shaded_borders_subs": {
+        "invert_shade": true
+      },
+      "scroll_slider_subs": {
+        "colour": -7631989,
+        "hover": -7631928,
+        "border": -7631989,
+        "border_hover": -7631928,
+        "shaded_borders": true,
+        "shaded_borders_subs": {
+          "invert_shade": false
+        }
+      }
+    }
+  },
+  "user_dialogs_subs": {
+    "vanilla_tex": true,
+    "thick_borders": false,
+    "colour": -1,
+    "border": 0,
+    "text_colour": 4210752,
+    "button_style_subs": {
+      "vanilla_tex": true,
+      "colour": -1,
+      "hover": -1,
+      "border": 0,
+      "border_hover": -16777216,
+      "text_colour": 14737632,
+      "text_hover": 16777120
+    },
+    "sub_elements_subs": {
+      "colour": -6250336,
+      "border": 0,
+      "button_style_subs": {
+        "vanilla_tex": true,
+        "colour": -1,
+        "hover": -1,
+        "border": 0,
+        "border_hover": 0,
+        "text_colour": 14737632,
+        "text_hover": 16777120
+      }
+    }
+  },
+  "gui_docs_subs": {
+    "vanilla_tex": true,
+    "shaded_borders": true,
+    "shaded_borders_subs": {
+      "invert_shade": false
+    },
+    "thick_borders": false,
+    "colour": -1,
+    "border": 0,
+    "text_colour": 0,
+    "settings_button_subs": {
+      "colour": 16777215,
+      "hover": 12632256
+    },
+    "close_button_subs": {
+      "colour": 16777215,
+      "hover": 16724016
+    },
+    "header_subs": {
+      "text_colour": 14737632,
+      "text_hover": 16777120,
+      "background": 1073741824
+    },
+    "scroll_bar_subs": {
+      "colour": -7631989,
+      "hover": -7631989,
+      "border": -7631989,
+      "border_hover": -7631989,
+      "shaded_borders": true,
+      "shaded_borders_subs": {
+        "invert_shade": true
+      },
+      "scroll_slider_subs": {
+        "colour": -7631989,
+        "hover": -7631928,
+        "border": -7631989,
+        "border_hover": -7631928,
+        "shaded_borders": true,
+        "shaded_borders_subs": {
+          "invert_shade": false
+        }
+      }
+    }
+  }
+}

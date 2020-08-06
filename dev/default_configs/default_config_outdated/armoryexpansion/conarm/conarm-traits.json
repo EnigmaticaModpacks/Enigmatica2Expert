@@ -1,0 +1,1043 @@
+[
+  {
+    "identifier": "dragonsteel_ice",
+    "traits": [
+      {
+        "traitNames": [
+          "indomitable_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "prideful_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "calcic_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "blackquartz_plustic",
+    "traits": [
+      {
+        "traitNames": [
+          "mundane2_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "mundane1_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "mundane1_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "awakened_plustic",
+    "traits": [
+      {
+        "traitNames": [
+          "infernal_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "indomitable_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "lightweight_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "xu_demonic_metal",
+    "traits": [
+      {
+        "traitNames": [
+          "xu_whispering"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "xu_whispering"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "xu_whispering"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "chaotic_plustic",
+    "traits": [
+      {
+        "traitNames": [
+          "infernal_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "indomitable_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "mundane2_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "electrical_steel",
+    "traits": [
+      {
+        "traitNames": [
+          "lightweight_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "lightweight_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "lightweight_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "dark_steel",
+    "traits": [
+      {
+        "traitNames": [
+          "mundane1_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "shielding_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "steady_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "construction_alloy",
+    "traits": [
+      {
+        "traitNames": [
+          "cheap_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "cheap_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "cheap_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "fierymetal",
+    "traits": [
+      {
+        "traitNames": [
+          "superhot_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "superhot_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "superhot_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "redstone_alloy",
+    "traits": [
+      {
+        "traitNames": [
+          "magnetic1_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "magnetic1_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "magnetic1_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "steeleaf",
+    "traits": [
+      {
+        "traitNames": [
+          "synergy"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "synergy"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "synergy"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "malachite_gem",
+    "traits": [
+      {
+        "traitNames": [
+          "vengeful_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "vengeful_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "vengeful_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "amethyst",
+    "traits": [
+      {
+        "traitNames": [
+          "invigorating_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "invigorating_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "invigorating_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "psimetal",
+    "traits": [
+      {
+        "traitNames": [
+          "psicological"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "psicological"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "psicological"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "desert_myrmex",
+    "traits": [
+      {
+        "traitNames": [
+          "vengeful_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "vengeful_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "vengeful_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "tanzanite",
+    "traits": [
+      {
+        "traitNames": [
+          "absorbent_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "absorbent_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "absorbent_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "starmetal",
+    "traits": [
+      {
+        "traitNames": [
+          "alien_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "alien_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "alien_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "energetic_alloy",
+    "traits": [
+      {
+        "traitNames": [
+          "ambitious_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "ambitious_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "ambitious_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "dragonbone",
+    "traits": [
+      {
+        "traitNames": [
+          "skeletal_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "skeletal_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "calcic_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "topaz",
+    "traits": [
+      {
+        "traitNames": [
+          "aridiculous_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "aridiculous_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "aridiculous_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "xu_evil_metal",
+    "traits": [
+      {
+        "traitNames": [
+          "xu_withering"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "xu_withering"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "xu_withering"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "jungle_myrmex",
+    "traits": [
+      {
+        "traitNames": [
+          "vengeful_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "vengeful_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "vengeful_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "certusquartz_plustic",
+    "traits": [
+      {
+        "traitNames": [
+          "featherweight_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "featherweight_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "featherweight_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "enori_actadd_plustic",
+    "traits": [
+      {
+        "traitNames": [
+          "magnetic2_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "magnetic2_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "magnetic2_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "pulsating_iron",
+    "traits": [
+      {
+        "traitNames": [
+          "enderport_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "enderport_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "enderport_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "knightmetal",
+    "traits": [
+      {
+        "traitNames": [
+          "dramatic_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "steady_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "steady_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "dragonsteel_fire",
+    "traits": [
+      {
+        "traitNames": [
+          "indomitable_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "prideful_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "autoforge_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "emeradic_actadd_plustic",
+    "traits": [
+      {
+        "traitNames": [
+          "camdaibay_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "camdaibay_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "camdaibay_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "amber",
+    "traits": [
+      {
+        "traitNames": [
+          "voltaic_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "voltaic_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "voltaic_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "soularium",
+    "traits": [
+      {
+        "traitNames": [
+          "haorans_cult_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "haorans_cult_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "haorans_cult_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "restonia_actadd_plustic",
+    "traits": [
+      {
+        "traitNames": [
+          "lightweight_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "lightweight_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "lightweight_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "constantan",
+    "traits": [
+      {
+        "traitNames": [
+          "absorbent_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "absorbent_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "absorbent_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "psigem",
+    "traits": [
+      {
+        "traitNames": [
+          "psicological"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "psicological"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "psicological"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "void_actadd_plustic",
+    "traits": [
+      {
+        "traitNames": [
+          "mundane2_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "mundane1_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "mundane1_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "enderium_plustic",
+    "traits": [
+      {
+        "traitNames": [
+          "enderport_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "enderport_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "enderport_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "end_steel",
+    "traits": [
+      {
+        "traitNames": [
+          "mundane1_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "alien_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "shielding_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "steady_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "fluixcrystal_plustic",
+    "traits": [
+      {
+        "traitNames": [
+          "featherweight_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "featherweight_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "featherweight_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "diamatine_actadd_plustic",
+    "traits": [
+      {
+        "traitNames": [
+          "invigorating_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "invigorating_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "invigorating_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "palis_actadd_plustic",
+    "traits": [
+      {
+        "traitNames": [
+          "ambitious_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "ambitious_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "ambitious_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "conductive_iron",
+    "traits": [
+      {
+        "traitNames": [
+          "magnetic1_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "magnetic1_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "magnetic1_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "nagascale",
+    "traits": [
+      {
+        "traitNames": [
+          "lightweight_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "lightweight_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "lightweight_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "wyvern_plustic",
+    "traits": [
+      {
+        "traitNames": [
+          "invigorating_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "lightweight_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "lightweight_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "vibrant_alloy",
+    "traits": [
+      {
+        "traitNames": [
+          "alien_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "alien_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "alien_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "platinum_plustic",
+    "traits": [
+      {
+        "traitNames": [
+          "heavy_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "heavy_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "heavy_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  },
+  {
+    "identifier": "signalum_plustic",
+    "traits": [
+      {
+        "traitNames": [
+          "tom_and_jerry_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "tom_and_jerry_armor"
+        ],
+        "traitPart": "plates"
+      },
+      {
+        "traitNames": [
+          "tom_and_jerry_armor"
+        ],
+        "traitPart": "trim"
+      }
+    ]
+  }
+]

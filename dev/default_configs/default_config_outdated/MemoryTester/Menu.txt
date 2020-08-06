@@ -1,0 +1,16 @@
+Header=You have [AllocatedMemory]MB of memory allocated. />Font:Yu Gothic UI Light />FontType:normal />FontSize:30 />Color:0, 0, 0, 255
+
+Line1WhenOptimalMemory=The pack recommends [RecommendedMemory]MB to run. />Font:Yu Gothic UI Light />FontType:normal />FontSize:30 />Color:0, 0, 0, 255
+
+Line1WhenNonoptimalMemory=The pack recommends [RecommendedMemory]MB to run. Consider using [RecommendedMemory-AllocatedMemory] more. />Font:Yu Gothic UI Light />FontType:normal />FontSize:30 />Color:0, 0, 0, 255
+
+ButtonStartText=Start
+
+ButtonStartBgColor=255, 255, 255, 255
+
+ButtonQuitText=Quit
+
+ButtonQuitBgColor=255, 255, 255, 255
+
+BackgroundImageDir=resources/backgroundImage.png
+

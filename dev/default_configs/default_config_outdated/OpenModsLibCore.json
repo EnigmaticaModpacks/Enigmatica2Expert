@@ -1,0 +1,52 @@
+{
+  "hook_pre_world_rendering": {
+    "version": 0,
+    "value": "true",
+    "comment": [
+      "Purpose: hook in world rendering, triggered between sky and terrain",
+      "Modified class: net.minecraft.client.renderer.EntityRenderer",
+      "Known users: Sky block",
+      "When disabled: Sky block will not render properly"
+    ]
+  },
+  "llama_null_fix": {
+    "version": 0,
+    "value": "true",
+    "comment": [
+      "Purpose: prevent NPE when creating llama without world",
+      "Modified class: net.minecraft.entity.passive.EntityLlama",
+      "Known users: Trophy",
+      "When disabled: Llama trophy cannot be rendered"
+    ]
+  },
+  "activate_player_render_hook": {
+    "version": 0,
+    "value": "true",
+    "comment": [
+      "Purpose: add hook to player rendering code",
+      "Modified class: net.minecraft.client.renderer.entity.RenderPlayer",
+      "Known users: OpenBlocks hangglider",
+      "When disabled: code may fallback to less compatible mechanism (like replacing renderer)"
+    ]
+  },
+  "horse_base_null_fix": {
+    "version": 0,
+    "value": "true",
+    "comment": [
+      "Purpose: prevent NPE when creating horse without world",
+      "Modified class: net.minecraft.entity.passive.AbstractHorse",
+      "Known users: Trophy",
+      "When disabled: Trophy for any horse variant cannot be rendered"
+    ]
+  },
+  "horse_null_fix": {
+    "version": 0,
+    "value": "true",
+    "comment": [
+      "Purpose: prevent NPE when creating horse without world",
+      "Modified class: net.minecraft.entity.passive.EntityHorse",
+      "Known users: Trophy",
+      "When disabled: Horse trophy cannot be rendered"
+    ]
+  }
+}

@@ -1,0 +1,464 @@
+[
+  {
+    "coreMaterialStats": {
+      "durability": 20.0,
+      "defense": 14.0,
+      "materialType": "core"
+    },
+    "platesMaterialStats": {
+      "durability": 20.0,
+      "modifier": 1.25,
+      "toughness": 1.5,
+      "materialType": "plates"
+    },
+    "trimMaterialStats": {
+      "extraDurability": 2.5,
+      "materialType": "trim"
+    },
+    "identifier": "leatherfrosttroll",
+    "color": 3228222,
+    "type": "DEFAULT",
+    "castable": false,
+    "craftable": true
+  },
+  {
+    "coreMaterialStats": {
+      "durability": 15.0,
+      "defense": 14.0,
+      "materialType": "core"
+    },
+    "platesMaterialStats": {
+      "durability": 15.0,
+      "modifier": 0.625,
+      "toughness": 2.25,
+      "materialType": "plates"
+    },
+    "trimMaterialStats": {
+      "extraDurability": 1.875,
+      "materialType": "trim"
+    },
+    "identifier": "chitintandeathworm",
+    "color": 12895428,
+    "type": "METAL",
+    "castable": false,
+    "craftable": true
+  },
+  {
+    "coreMaterialStats": {
+      "durability": 36.0,
+      "defense": 18.0,
+      "materialType": "core"
+    },
+    "platesMaterialStats": {
+      "durability": 36.0,
+      "modifier": 1.875,
+      "toughness": 3.0,
+      "materialType": "plates"
+    },
+    "trimMaterialStats": {
+      "extraDurability": 4.5,
+      "materialType": "trim"
+    },
+    "identifier": "scalebronzedragon",
+    "color": 8674606,
+    "type": "METAL",
+    "castable": false,
+    "craftable": true
+  },
+  {
+    "coreMaterialStats": {
+      "durability": 30.0,
+      "defense": 14.0,
+      "materialType": "core"
+    },
+    "platesMaterialStats": {
+      "durability": 30.0,
+      "modifier": 3.125,
+      "toughness": 3.75,
+      "materialType": "plates"
+    },
+    "trimMaterialStats": {
+      "extraDurability": 3.75,
+      "materialType": "trim"
+    },
+    "identifier": "scaleblueseaserpent",
+    "color": 5592575,
+    "type": "METAL",
+    "castable": false,
+    "craftable": true
+  },
+  {
+    "coreMaterialStats": {
+      "durability": 30.0,
+      "defense": 14.0,
+      "materialType": "core"
+    },
+    "platesMaterialStats": {
+      "durability": 30.0,
+      "modifier": 3.125,
+      "toughness": 3.75,
+      "materialType": "plates"
+    },
+    "trimMaterialStats": {
+      "extraDurability": 3.75,
+      "materialType": "trim"
+    },
+    "identifier": "scalepurpleseaserpent",
+    "color": 11141290,
+    "type": "METAL",
+    "castable": false,
+    "craftable": true
+  },
+  {
+    "coreMaterialStats": {
+      "durability": 36.0,
+      "defense": 18.0,
+      "materialType": "core"
+    },
+    "platesMaterialStats": {
+      "durability": 36.0,
+      "modifier": 1.875,
+      "toughness": 3.0,
+      "materialType": "plates"
+    },
+    "trimMaterialStats": {
+      "extraDurability": 4.5,
+      "materialType": "trim"
+    },
+    "identifier": "scalewhitedragon",
+    "color": 16777215,
+    "type": "METAL",
+    "castable": false,
+    "craftable": true
+  },
+  {
+    "coreMaterialStats": {
+      "durability": 15.0,
+      "defense": 14.0,
+      "materialType": "core"
+    },
+    "platesMaterialStats": {
+      "durability": 15.0,
+      "modifier": 0.625,
+      "toughness": 2.25,
+      "materialType": "plates"
+    },
+    "trimMaterialStats": {
+      "extraDurability": 1.875,
+      "materialType": "trim"
+    },
+    "identifier": "chitinwhitedeathworm",
+    "color": 16777215,
+    "type": "METAL",
+    "castable": false,
+    "craftable": true
+  },
+  {
+    "coreMaterialStats": {
+      "durability": 15.0,
+      "defense": 14.0,
+      "materialType": "core"
+    },
+    "platesMaterialStats": {
+      "durability": 15.0,
+      "modifier": 0.625,
+      "toughness": 2.25,
+      "materialType": "plates"
+    },
+    "trimMaterialStats": {
+      "extraDurability": 1.875,
+      "materialType": "trim"
+    },
+    "identifier": "chitinbrowndeathworm",
+    "color": 8005929,
+    "type": "METAL",
+    "castable": false,
+    "craftable": true
+  },
+  {
+    "coreMaterialStats": {
+      "durability": 36.0,
+      "defense": 18.0,
+      "materialType": "core"
+    },
+    "platesMaterialStats": {
+      "durability": 36.0,
+      "modifier": 1.875,
+      "toughness": 3.0,
+      "materialType": "plates"
+    },
+    "trimMaterialStats": {
+      "extraDurability": 4.5,
+      "materialType": "trim"
+    },
+    "identifier": "scalegraydragon",
+    "color": 5592405,
+    "type": "METAL",
+    "castable": false,
+    "craftable": true
+  },
+  {
+    "coreMaterialStats": {
+      "durability": 36.0,
+      "defense": 18.0,
+      "materialType": "core"
+    },
+    "platesMaterialStats": {
+      "durability": 36.0,
+      "modifier": 1.875,
+      "toughness": 3.0,
+      "materialType": "plates"
+    },
+    "trimMaterialStats": {
+      "extraDurability": 4.5,
+      "materialType": "trim"
+    },
+    "identifier": "scalesapphiredragon",
+    "color": 5592575,
+    "type": "METAL",
+    "castable": false,
+    "craftable": true
+  },
+  {
+    "coreMaterialStats": {
+      "durability": 30.0,
+      "defense": 14.0,
+      "materialType": "core"
+    },
+    "platesMaterialStats": {
+      "durability": 30.0,
+      "modifier": 3.125,
+      "toughness": 3.75,
+      "materialType": "plates"
+    },
+    "trimMaterialStats": {
+      "extraDurability": 3.75,
+      "materialType": "trim"
+    },
+    "identifier": "scaletealseaserpent",
+    "color": 43690,
+    "type": "METAL",
+    "castable": false,
+    "craftable": true
+  },
+  {
+    "coreMaterialStats": {
+      "durability": 36.0,
+      "defense": 18.0,
+      "materialType": "core"
+    },
+    "platesMaterialStats": {
+      "durability": 36.0,
+      "modifier": 1.875,
+      "toughness": 3.0,
+      "materialType": "plates"
+    },
+    "trimMaterialStats": {
+      "extraDurability": 4.5,
+      "materialType": "trim"
+    },
+    "identifier": "scalebluedragon",
+    "color": 14809072,
+    "type": "METAL",
+    "castable": false,
+    "craftable": true
+  },
+  {
+    "coreMaterialStats": {
+      "durability": 20.0,
+      "defense": 14.0,
+      "materialType": "core"
+    },
+    "platesMaterialStats": {
+      "durability": 20.0,
+      "modifier": 1.25,
+      "toughness": 1.5,
+      "materialType": "plates"
+    },
+    "trimMaterialStats": {
+      "extraDurability": 2.5,
+      "materialType": "trim"
+    },
+    "identifier": "leatherforesttroll",
+    "color": 3752497,
+    "type": "DEFAULT",
+    "castable": false,
+    "craftable": true
+  },
+  {
+    "coreMaterialStats": {
+      "durability": 36.0,
+      "defense": 18.0,
+      "materialType": "core"
+    },
+    "platesMaterialStats": {
+      "durability": 36.0,
+      "modifier": 1.875,
+      "toughness": 3.0,
+      "materialType": "plates"
+    },
+    "trimMaterialStats": {
+      "extraDurability": 4.5,
+      "materialType": "trim"
+    },
+    "identifier": "scalegreendragon",
+    "color": 43520,
+    "type": "METAL",
+    "castable": false,
+    "craftable": true
+  },
+  {
+    "coreMaterialStats": {
+      "durability": 20.0,
+      "defense": 14.0,
+      "materialType": "core"
+    },
+    "platesMaterialStats": {
+      "durability": 20.0,
+      "modifier": 1.25,
+      "toughness": 1.5,
+      "materialType": "plates"
+    },
+    "trimMaterialStats": {
+      "extraDurability": 2.5,
+      "materialType": "trim"
+    },
+    "identifier": "leathermountaintroll",
+    "color": 3883584,
+    "type": "DEFAULT",
+    "castable": false,
+    "craftable": true
+  },
+  {
+    "coreMaterialStats": {
+      "durability": 30.0,
+      "defense": 14.0,
+      "materialType": "core"
+    },
+    "platesMaterialStats": {
+      "durability": 30.0,
+      "modifier": 3.125,
+      "toughness": 3.75,
+      "materialType": "plates"
+    },
+    "trimMaterialStats": {
+      "extraDurability": 3.75,
+      "materialType": "trim"
+    },
+    "identifier": "scalebronzeseaserpent",
+    "color": 16755200,
+    "type": "METAL",
+    "castable": false,
+    "craftable": true
+  },
+  {
+    "coreMaterialStats": {
+      "durability": 36.0,
+      "defense": 18.0,
+      "materialType": "core"
+    },
+    "platesMaterialStats": {
+      "durability": 36.0,
+      "modifier": 1.875,
+      "toughness": 3.0,
+      "materialType": "plates"
+    },
+    "trimMaterialStats": {
+      "extraDurability": 4.5,
+      "materialType": "trim"
+    },
+    "identifier": "scalereddragon",
+    "color": 11141120,
+    "type": "METAL",
+    "castable": false,
+    "craftable": true
+  },
+  {
+    "coreMaterialStats": {
+      "durability": 30.0,
+      "defense": 14.0,
+      "materialType": "core"
+    },
+    "platesMaterialStats": {
+      "durability": 30.0,
+      "modifier": 3.125,
+      "toughness": 3.75,
+      "materialType": "plates"
+    },
+    "trimMaterialStats": {
+      "extraDurability": 3.75,
+      "materialType": "trim"
+    },
+    "identifier": "scaledeepblueseaserpent",
+    "color": 170,
+    "type": "METAL",
+    "castable": false,
+    "craftable": true
+  },
+  {
+    "coreMaterialStats": {
+      "durability": 30.0,
+      "defense": 14.0,
+      "materialType": "core"
+    },
+    "platesMaterialStats": {
+      "durability": 30.0,
+      "modifier": 3.125,
+      "toughness": 3.75,
+      "materialType": "plates"
+    },
+    "trimMaterialStats": {
+      "extraDurability": 3.75,
+      "materialType": "trim"
+    },
+    "identifier": "scaleredseaserpent",
+    "color": 16733525,
+    "type": "METAL",
+    "castable": false,
+    "craftable": true
+  },
+  {
+    "coreMaterialStats": {
+      "durability": 30.0,
+      "defense": 14.0,
+      "materialType": "core"
+    },
+    "platesMaterialStats": {
+      "durability": 30.0,
+      "modifier": 3.125,
+      "toughness": 3.75,
+      "materialType": "plates"
+    },
+    "trimMaterialStats": {
+      "extraDurability": 3.75,
+      "materialType": "trim"
+    },
+    "identifier": "scalegreenseaserpent",
+    "color": 43520,
+    "type": "METAL",
+    "castable": false,
+    "craftable": true
+  },
+  {
+    "coreMaterialStats": {
+      "durability": 36.0,
+      "defense": 18.0,
+      "materialType": "core"
+    },
+    "platesMaterialStats": {
+      "durability": 36.0,
+      "modifier": 1.875,
+      "toughness": 3.0,
+      "materialType": "plates"
+    },
+    "trimMaterialStats": {
+      "extraDurability": 4.5,
+      "materialType": "trim"
+    },
+    "identifier": "scalesilverdragon",
+    "color": 11184810,
+    "type": "METAL",
+    "castable": false,
+    "craftable": true
+  }
+]

@@ -1,0 +1,409 @@
+{
+  "outputs": [
+    {
+      "target": "gray",
+      "weight": 32,
+      "id": "minecraft:stone:0"
+    },
+    {
+      "target": "pink",
+      "weight": 30,
+      "id": "minecraft:stone:1"
+    },
+    {
+      "target": "white",
+      "weight": 30,
+      "id": "minecraft:stone:3"
+    },
+    {
+      "target": "gray",
+      "weight": 30,
+      "id": "minecraft:stone:5"
+    },
+    {
+      "target": "silver",
+      "weight": 30,
+      "id": "minecraft:gravel"
+    },
+    {
+      "target": "green",
+      "weight": 10,
+      "id": "minecraft:grass"
+    },
+    {
+      "target": "brown",
+      "weight": 20,
+      "id": "minecraft:dirt:0"
+    },
+    {
+      "target": "brown",
+      "weight": 10,
+      "id": "minecraft:dirt:2"
+    },
+    {
+      "target": "yellow",
+      "weight": 30,
+      "id": "minecraft:sand:0"
+    },
+    {
+      "target": "red",
+      "weight": 24,
+      "id": "minecraft:sand:1"
+    },
+    {
+      "target": "yellow",
+      "weight": 10,
+      "id": "minecraft:sandstone:0"
+    },
+    {
+      "target": "red",
+      "weight": 10,
+      "id": "minecraft:red_sandstone:0"
+    },
+    {
+      "target": "gray",
+      "weight": 28,
+      "id": "minecraft:cobblestone"
+    },
+    {
+      "target": "green",
+      "weight": 10,
+      "id": "minecraft:mossy_cobblestone"
+    },
+    {
+      "target": "purple",
+      "weight": 9,
+      "id": "minecraft:obsidian"
+    },
+    {
+      "target": "silver",
+      "weight": 12,
+      "id": "minecraft:clay"
+    },
+    {
+      "target": "red",
+      "weight": 28,
+      "id": "minecraft:netherrack"
+    },
+    {
+      "target": "brown",
+      "weight": 16,
+      "id": "minecraft:soul_sand"
+    },
+    {
+      "target": "purple",
+      "weight": 8,
+      "id": "minecraft:mycelium"
+    },
+    {
+      "target": "yellow",
+      "weight": 13,
+      "id": "minecraft:end_stone:0"
+    },
+    {
+      "target": "orange",
+      "weight": 12,
+      "id": "minecraft:hardened_clay"
+    },
+    {
+      "target": "white",
+      "weight": 2,
+      "id": "minecraft:stained_hardened_clay:0"
+    },
+    {
+      "target": "orange",
+      "weight": 2,
+      "id": "minecraft:stained_hardened_clay:1"
+    },
+    {
+      "target": "magenta",
+      "weight": 2,
+      "id": "minecraft:stained_hardened_clay:2"
+    },
+    {
+      "target": "light_blue",
+      "weight": 2,
+      "id": "minecraft:stained_hardened_clay:3"
+    },
+    {
+      "target": "yellow",
+      "weight": 2,
+      "id": "minecraft:stained_hardened_clay:4"
+    },
+    {
+      "target": "lime",
+      "weight": 2,
+      "id": "minecraft:stained_hardened_clay:5"
+    },
+    {
+      "target": "pink",
+      "weight": 2,
+      "id": "minecraft:stained_hardened_clay:6"
+    },
+    {
+      "target": "gray",
+      "weight": 2,
+      "id": "minecraft:stained_hardened_clay:7"
+    },
+    {
+      "target": "silver",
+      "weight": 2,
+      "id": "minecraft:stained_hardened_clay:8"
+    },
+    {
+      "target": "cyan",
+      "weight": 2,
+      "id": "minecraft:stained_hardened_clay:9"
+    },
+    {
+      "target": "purple",
+      "weight": 2,
+      "id": "minecraft:stained_hardened_clay:10"
+    },
+    {
+      "target": "blue",
+      "weight": 2,
+      "id": "minecraft:stained_hardened_clay:11"
+    },
+    {
+      "target": "brown",
+      "weight": 2,
+      "id": "minecraft:stained_hardened_clay:12"
+    },
+    {
+      "target": "green",
+      "weight": 2,
+      "id": "minecraft:stained_hardened_clay:13"
+    },
+    {
+      "target": "red",
+      "weight": 2,
+      "id": "minecraft:stained_hardened_clay:14"
+    },
+    {
+      "target": "black",
+      "weight": 2,
+      "id": "minecraft:stained_hardened_clay:15"
+    },
+    {
+      "target": "yellow",
+      "weight": 28,
+      "id": "minecraft:sponge"
+    },
+    {
+      "target": "white",
+      "weight": 12,
+      "id": "environmentalmaterials:alabaster:0"
+    },
+    {
+      "target": "orange",
+      "weight": 6,
+      "id": "environmentalmaterials:alabaster:1"
+    },
+    {
+      "target": "magenta",
+      "weight": 6,
+      "id": "environmentalmaterials:alabaster:2"
+    },
+    {
+      "target": "light_blue",
+      "weight": 6,
+      "id": "environmentalmaterials:alabaster:3"
+    },
+    {
+      "target": "yellow",
+      "weight": 6,
+      "id": "environmentalmaterials:alabaster:4"
+    },
+    {
+      "target": "lime",
+      "weight": 6,
+      "id": "environmentalmaterials:alabaster:5"
+    },
+    {
+      "target": "pink",
+      "weight": 6,
+      "id": "environmentalmaterials:alabaster:6"
+    },
+    {
+      "target": "gray",
+      "weight": 6,
+      "id": "environmentalmaterials:alabaster:7"
+    },
+    {
+      "target": "silver",
+      "weight": 6,
+      "id": "environmentalmaterials:alabaster:8"
+    },
+    {
+      "target": "cyan",
+      "weight": 6,
+      "id": "environmentalmaterials:alabaster:9"
+    },
+    {
+      "target": "purple",
+      "weight": 6,
+      "id": "environmentalmaterials:alabaster:10"
+    },
+    {
+      "target": "blue",
+      "weight": 6,
+      "id": "environmentalmaterials:alabaster:11"
+    },
+    {
+      "target": "brown",
+      "weight": 6,
+      "id": "environmentalmaterials:alabaster:12"
+    },
+    {
+      "target": "green",
+      "weight": 6,
+      "id": "environmentalmaterials:alabaster:13"
+    },
+    {
+      "target": "red",
+      "weight": 6,
+      "id": "environmentalmaterials:alabaster:14"
+    },
+    {
+      "target": "black",
+      "weight": 6,
+      "id": "environmentalmaterials:alabaster:15"
+    },
+    {
+      "target": "white",
+      "weight": 4,
+      "id": "quark:crystal:0"
+    },
+    {
+      "target": "red",
+      "weight": 4,
+      "id": "quark:crystal:1"
+    },
+    {
+      "target": "orange",
+      "weight": 4,
+      "id": "quark:crystal:2"
+    },
+    {
+      "target": "yellow",
+      "weight": 4,
+      "id": "quark:crystal:3"
+    },
+    {
+      "target": "lime",
+      "weight": 4,
+      "id": "quark:crystal:4"
+    },
+    {
+      "target": "cyan",
+      "weight": 4,
+      "id": "quark:crystal:5"
+    },
+    {
+      "target": "blue",
+      "weight": 4,
+      "id": "quark:crystal:6"
+    },
+    {
+      "target": "purple",
+      "weight": 4,
+      "id": "quark:crystal:7"
+    },
+    {
+      "target": "black",
+      "weight": 30,
+      "id": "environmentalmaterials:basalt"
+    },
+    {
+      "target": "gray",
+      "weight": 20,
+      "id": "environmentalmaterials:hardened_stone"
+    },
+    {
+      "target": "yellow",
+      "weight": 30,
+      "id": "OD:stoneLimestone"
+    },
+    {
+      "target": "white",
+      "weight": 30,
+      "id": "OD:stoneMarble"
+    },
+    {
+      "target": "brown",
+      "weight": 20,
+      "id": "chisel:brownstone"
+    },
+    {
+      "target": "light_blue",
+      "weight": 8,
+      "id": "minecraft:ice"
+    },
+    {
+      "target": "light_blue",
+      "weight": 8,
+      "id": "minecraft:packed_ice"
+    },
+    {
+      "target": "light_blue",
+      "weight": 8,
+      "id": "immersivehempcraft:hemcraft_hardened"
+    },
+    {
+      "target": "brown",
+      "weight": 15,
+      "id": "biomesoplenty:dirt"
+    },
+    {
+      "target": "green",
+      "weight": 20,
+      "id": "thebetweenlands:betweenstone"
+    },
+    {
+      "target": "green",
+      "weight": 5,
+      "id": "thebetweenlands:generic_stone"
+    },
+    {
+      "target": "green",
+      "weight": 15,
+      "id": "thebetweenlands:pitstone"
+    },
+    {
+      "target": "light_gray",
+      "weight": 15,
+      "id": "thebetweenlands:limestone"
+    },
+    {
+      "target": "brown",
+      "weight": 7,
+      "id": "thebetweenlands:mud"
+    },
+    {
+      "target": "brown",
+      "weight": 7,
+      "id": "thebetweenlands:swamp_dirt"
+    },
+    {
+      "target": "green",
+      "weight": 7,
+      "id": "thebetweenlands:swamp_grass"
+    },
+    {
+      "target": "green",
+      "weight": 7,
+      "id": "thebetweenlands:slimy_dirt"
+    },
+    {
+      "target": "green",
+      "weight": 7,
+      "id": "thebetweenlands:slimy_grass"
+    },
+    {
+      "target": "white",
+      "weight": 5,
+      "id": "environmentaltech:mica"
+    }
+  ]
+}

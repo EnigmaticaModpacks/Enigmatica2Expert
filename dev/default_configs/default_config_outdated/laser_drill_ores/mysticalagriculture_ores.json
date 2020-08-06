@@ -1,0 +1,80 @@
+[
+  {
+    "item" : "oreInferium",
+    "color" : 4,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 4
+      }
+    ]
+  },
+  {
+    "item" : "oreProsperity",
+    "color" : 3,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 4
+      }
+    ]
+  },
+  {
+    "item" : "oreNetherInferium",
+    "color" : 4,
+    "rarity" : [
+      {
+        "whitelist": "minecraft:hell",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 4
+      }
+    ]
+  },
+  {
+    "item" : "oreNetherProsperity",
+    "color" : 3,
+    "rarity" : [
+      {
+        "whitelist": "minecraft:hell",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 4
+      }
+    ]
+  },
+  {
+    "item" : "oreEndInferium",
+    "color" : 4,
+    "rarity" : [
+      {
+        "whitelist": "minecraft:sky",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 4
+      }
+    ]
+  },
+  {
+    "item" : "oreEndProsperity",
+    "color" : 3,
+    "rarity" : [
+      {
+        "whitelist": "minecraft:sky",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 4
+      }
+    ]
+  }
+]

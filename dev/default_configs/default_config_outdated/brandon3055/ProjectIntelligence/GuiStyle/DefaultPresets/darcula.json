@@ -1,0 +1,262 @@
+{
+  "menu_subs": {
+    "vanilla_tex": false,
+    "shaded_borders": true,
+    "shaded_borders_subs": {
+      "invert_shade": false
+    },
+    "thick_borders": false,
+    "colour": -12828863,
+    "border": -12828863,
+    "text_colour": 12303291,
+    "text_shadow": true,
+    "close_button_subs": {
+      "colour": 12303291,
+      "hover": 16711680
+    },
+    "size_buttons_subs": {
+      "colour": 12303291,
+      "hover": 16777215
+    },
+    "settings_button_subs": {
+      "colour": 12303291,
+      "hover": 16777215
+    }
+  },
+  "page_list_subs": {
+    "hide_button_subs": {
+      "colour": -4605511,
+      "hover": -789517
+    },
+    "header_subs": {
+      "vanilla_tex": false,
+      "shaded_borders": true,
+      "shaded_borders_subs": {
+        "invert_shade": false
+      },
+      "thick_borders": false,
+      "colour": -11776175,
+      "border": -11776175,
+      "text_colour": 12303291
+    },
+    "dir_path_subs": {
+      "colour": -12828863,
+      "border": -12828863,
+      "shaded_borders": true,
+      "shaded_borders_subs": {
+        "invert_shade": false
+      },
+      "dir_buttons_subs": {
+        "colour": -10986659,
+        "hover": -12828863,
+        "border": -10986659,
+        "border_hover": -12828863,
+        "shaded_borders": true,
+        "shaded_borders_subs": {
+          "invert_shade": true
+        },
+        "text_colour": 12303291,
+        "text_hover": 12303291
+      }
+    },
+    "body_subs": {
+      "vanilla_tex": false,
+      "shaded_borders": true,
+      "shaded_borders_subs": {
+        "invert_shade": false
+      },
+      "colour": -12828863,
+      "border": -12828863,
+      "text_colour": 12303291
+    },
+    "footer_subs": {
+      "vanilla_tex": false,
+      "shaded_borders": true,
+      "shaded_borders_subs": {
+        "invert_shade": false
+      },
+      "colour": -12828863,
+      "border": -12828863
+    },
+    "search_subs": {
+      "text_colour": 12303291,
+      "colour": -13816531,
+      "border": -12826021,
+      "settings_button_subs": {
+        "colour": -6250336,
+        "hover": -4144960
+      }
+    },
+    "page_buttons_subs": {
+      "vanilla_tex": false,
+      "shaded_borders": true,
+      "shaded_borders_subs": {
+        "invert_shade": false
+      },
+      "thick_borders": false,
+      "colour": -10723487,
+      "hover": -7565423,
+      "border": -10723487,
+      "border_hover": -7565423,
+      "text_colour": 65535,
+      "text_hover": 65535,
+      "text_shadow": true,
+      "page_back_button_subs": {
+        "vanilla_tex": false,
+        "shaded_borders": true,
+        "shaded_borders_subs": {
+          "invert_shade": false
+        },
+        "thick_borders": false,
+        "colour": -12302519,
+        "hover": -9144455,
+        "border": -11776175,
+        "border_hover": -8618111,
+        "text_colour": 15263976,
+        "text_hover": 15263976,
+        "text_shadow": true,
+        "icon_subs": {
+          "colour": 15263976,
+          "hover": 15263976
+        }
+      }
+    },
+    "scroll_bar_subs": {
+      "colour": 7172210,
+      "hover": 1215131762,
+      "border": 0,
+      "border_hover": 0,
+      "shaded_borders": false,
+      "shaded_borders_subs": {
+        "invert_shade": false
+      },
+      "scroll_slider_subs": {
+        "colour": 2053992562,
+        "hover": -1385336718,
+        "border": 2053992562,
+        "border_hover": -1385336718,
+        "shaded_borders": false,
+        "shaded_borders_subs": {
+          "invert_shade": false
+        }
+      }
+    }
+  },
+  "md_window_subs": {
+    "header_subs": {
+      "vanilla_tex": false,
+      "shaded_borders": true,
+      "shaded_borders_subs": {
+        "invert_shade": false
+      },
+      "thick_borders": false,
+      "colour": -11776175,
+      "border": -11776175,
+      "text_colour": 0
+    },
+    "body_subs": {
+      "vanilla_tex": false,
+      "shaded_borders": true,
+      "shaded_borders_subs": {
+        "invert_shade": false
+      },
+      "thick_borders": false,
+      "colour": -13948117,
+      "border": -9341834,
+      "text_colour": 10002354
+    },
+    "scroll_bar_subs": {
+      "colour": 0,
+      "hover": 1215131762,
+      "border": 0,
+      "border_hover": 0,
+      "shaded_borders": false,
+      "shaded_borders_subs": {
+        "invert_shade": true
+      },
+      "scroll_slider_subs": {
+        "colour": 2053992562,
+        "hover": -1385336718,
+        "border": 2053992562,
+        "border_hover": -1385336718,
+        "shaded_borders": false,
+        "shaded_borders_subs": {
+          "invert_shade": false
+        }
+      }
+    }
+  },
+  "user_dialogs_subs": {
+    "vanilla_tex": false,
+    "thick_borders": false,
+    "colour": -9408398,
+    "border": -16777178,
+    "text_colour": -1052689,
+    "button_style_subs": {
+      "vanilla_tex": false,
+      "colour": -12828863,
+      "hover": -15914690,
+      "border": -12828863,
+      "border_hover": -15914690,
+      "text_colour": -4868683,
+      "text_hover": -4868683
+    },
+    "sub_elements_subs": {
+      "colour": -9408400,
+      "border": -12566464,
+      "button_style_subs": {
+        "vanilla_tex": false,
+        "colour": -12828863,
+        "hover": -15914690,
+        "border": -12828863,
+        "border_hover": -8618884,
+        "text_colour": -4868683,
+        "text_hover": -8092540
+      }
+    }
+  },
+  "gui_docs_subs": {
+    "vanilla_tex": false,
+    "shaded_borders": true,
+    "shaded_borders_subs": {
+      "invert_shade": false
+    },
+    "thick_borders": false,
+    "colour": -12828863,
+    "border": -12828863,
+    "text_colour": 12303291,
+    "settings_button_subs": {
+      "colour": 16777215,
+      "hover": 12632256
+    },
+    "close_button_subs": {
+      "colour": 16777215,
+      "hover": 16724016
+    },
+    "header_subs": {
+      "text_colour": 12303291,
+      "text_hover": -7105645,
+      "background": 1073741824
+    },
+    "scroll_bar_subs": {
+      "colour": 0,
+      "hover": 1215131762,
+      "border": 0,
+      "border_hover": 0,
+      "shaded_borders": false,
+      "shaded_borders_subs": {
+        "invert_shade": true
+      },
+      "scroll_slider_subs": {
+        "colour": 2053992562,
+        "hover": -1385336718,
+        "border": 2053992562,
+        "border_hover": -1385336718,
+        "shaded_borders": false,
+        "shaded_borders_subs": {
+          "invert_shade": false
+        }
+      }
+    }
+  }
+}

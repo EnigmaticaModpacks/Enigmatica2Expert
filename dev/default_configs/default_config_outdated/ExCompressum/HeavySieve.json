@@ -1,0 +1,72 @@
+{
+  "options": {
+    "__comment": "These options will affect the auto-generation of sieve rewards for compressed blocks. You can turn the auto-generation off individually in the defaults section.",
+    "loss for default generated rewards (out of 9)": 2
+  },
+  "defaults": {
+    "__comment": "You can disable defaults by setting these to false. Do *NOT* try to add additional entries here. You can add additional entries in the custom section.",
+    "excompressum:compressed_gravel": true,
+    "excompressum:compressed_sand": true,
+    "excompressum:compressed_dirt": true,
+    "excompressum:compressed_soul_sand": true,
+    "excompressum:compressed_dust": true,
+    "excompressum:compressed_nether_gravel": true,
+    "excompressum:compressed_ender_gravel": true,
+    "ExtraUtils2:CompressedGravel": true,
+    "ExtraUtils2:CompressedSand": true,
+    "ExtraUtils2:CompressedDirt": true
+  },
+  "custom": {
+    "__comment": "You can define additional blocks to sift in the Heavy Sieve here. Use * as a wildcard for metadata. Ure ore: prefix in name to query the Ore Dictionary. Mesh Level is only used for Adscensio.",
+    "entries": [
+      {
+        "name": "",
+        "metadata": "*",
+        "type": "list",
+        "rewards": [
+          {
+            "name": "",
+            "metadata": 0,
+            "count": 1,
+            "rolls": 1,
+            "chance": 1.0,
+            "meshLevel": 1
+          }
+        ]
+      },
+      {
+        "name": "",
+        "metadata": "*",
+        "type": "generate",
+        "source": "",
+        "sourceMetadata": "*",
+        "sourceCount": 9
+      }
+    ],
+    "example_generate": {
+      "__comment": "This example would allow Double Compressed Gravel to be sifted in a Heavy Sieve into 64x the rewards of normal gravel.",
+      "name": "ExUtils2:CompressedGravel",
+      "metadata": "1",
+      "type": "generate",
+      "source": "minecraft:gravel",
+      "sourceMetadata": "*",
+      "sourceCount": 64
+    },
+    "example_list": {
+      "__comment": "This example would allow clay to be sifted in a Heavy Sieve into 6 diamonds.",
+      "name": "ExUtils2:CompressedGravel",
+      "metadata": "1",
+      "type": "list",
+      "rewards": [
+        {
+          "name": "minecraft:diamond",
+          "metadata": 0,
+          "count": 6,
+          "rolls": 2,
+          "chance": 1.0,
+          "meshLevel": 1
+        }
+      ]
+    }
+  }
+}

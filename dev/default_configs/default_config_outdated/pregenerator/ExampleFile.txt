@@ -1,0 +1,38 @@
+//Pregenerator ExampleFile
+//This File is a Tutorial File that should help the person who uses it to understand the formatting of the loadFromFile command.
+//Before we start a side note: This Example file is only generated when the Config Folder for ChunkPregen is not present.
+//First of all: Whenever a line starts with // that means the line gets skipped completly.
+//On top of that the lines get processed by way of writing. (Top to bottom)
+//When there is a mistake inside of the File the Tool will throw an error and not execute the File until the mistake is being fixed.
+//It will also tell you exactly which line has a mistake and what type of mistake it is.
+//Also if the file is called onWorldCreation.txt it will be automatically executed as soon a world gets created.
+//Also if the file is called onDimensionCreation.txt it will be automatically executed every time a new dimension is loaded. It keeps also track of which one it already ran
+//Also make sure for the onDimensionCreation.txt to use a ~ for the dimension parameter
+//That file will be also executed as the Server with full admin rights.
+//Now to the Valid commands:
+//startradius, startarea, startextention, startregion, startmassradius.
+//The Parameters for each command are equal to the IngameCommand versions which can be detailed explained with the help command.
+//Here is a ruff explanation for each parameter:
+//startradius: <Square/Circle> <CenterX> <CenterZ> <Radius> <Dimension> <TerrainOnly/PostProcessingOnly/BlockingPostProcessing>
+//startarea: <XMin> <ZMin> <XMax> <ZMax> <Dimension> <TerrainOnly/PostProcessingOnly/BlockingPostProcessing>
+//startextention: <Square/Circle> <CenterX> <CenterZ> <MinRadius> <MaxRadius> <Dimension> <TerrainOnly/PostProcessingOnly/BlockingPostProcessing>
+//startregion: <CenterX> <CenterZ> <Dimension> <TerrainOnly/PostProcessingOnly/BlockingPostProcessing>
+//startmassradius: <CenterX> <CenterZ> <Radius> <RadiusCutting> <Dimension> <TerrainOnly/PostProcessingOnly/BlockingPostProcessing>
+//
+//Every Parameter until the Dimension Parameter is required. For startmassradius it ends at RadiusCutting.
+//So you don't have to provide the dimension or the type of generation.
+//Unlike other versions PostProcessing is selected by default.
+//For the Center Parameter you can use the ~ to reference the Players/Servers Position as center
+//or use 's' letter to reference the World Spawn Position.
+//While these are being used there still can be numbers applied on top of that.
+//These count as offsets to the referenced base position.
+//Also center & radius parameter is referring to Chunk Values (16 block steps).
+//If there is a need for usage of a blockPosition use a 'b' letter infront of a number.
+//this can be also combined with Player/WorldSpawn symbols. But the letter 'b' has to be between the offset and the symbol. (Exampe: sb-100 for Negative Values or sb100 for Positive Values)
+//Now to some examples:
+//startradius Square 0 0 100
+//Generates a 100 Chunks around the Center of the World in the Dimension of the Player/Server is in.
+//startradius Square s s 100 -1
+//Generates a 100 Chunks around the Spawn in the Nether.
+//startradius Square 0 0 100 0 TerrainOnly
+//Generates a TerrainOnly 100 Chunk radius around the Center of the World

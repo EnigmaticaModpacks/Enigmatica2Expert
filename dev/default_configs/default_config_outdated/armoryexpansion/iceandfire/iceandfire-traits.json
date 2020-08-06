@@ -1,0 +1,410 @@
+[
+  {
+    "identifier": "leatherfrosttroll",
+    "traits": []
+  },
+  {
+    "identifier": "chitintandeathworm",
+    "traits": []
+  },
+  {
+    "identifier": "scalebronzedragon",
+    "traits": [
+      {
+        "traitNames": [
+          "rough_armor",
+          "autoforge_armor",
+          "prideful_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "rough_armor",
+          "autoforge_armor"
+        ],
+        "traitPart": "trim"
+      },
+      {
+        "traitNames": [
+          "rough_armor",
+          "autoforge_armor"
+        ],
+        "traitPart": "plates"
+      }
+    ]
+  },
+  {
+    "identifier": "scaleblueseaserpent",
+    "traits": [
+      {
+        "traitNames": [
+          "rough_armor",
+          "aquaspeed_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "rough_armor",
+          "aquaspeed_armor"
+        ],
+        "traitPart": "trim"
+      },
+      {
+        "traitNames": [
+          "rough_armor",
+          "aquaspeed_armor"
+        ],
+        "traitPart": "plates"
+      }
+    ]
+  },
+  {
+    "identifier": "scalepurpleseaserpent",
+    "traits": [
+      {
+        "traitNames": [
+          "rough_armor",
+          "aquaspeed_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "rough_armor",
+          "aquaspeed_armor"
+        ],
+        "traitPart": "trim"
+      },
+      {
+        "traitNames": [
+          "rough_armor",
+          "aquaspeed_armor"
+        ],
+        "traitPart": "plates"
+      }
+    ]
+  },
+  {
+    "identifier": "scalewhitedragon",
+    "traits": [
+      {
+        "traitNames": [
+          "rough_armor",
+          "writable2"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "rough_armor"
+        ],
+        "traitPart": "trim"
+      },
+      {
+        "traitNames": [
+          "rough_armor"
+        ],
+        "traitPart": "plates"
+      }
+    ]
+  },
+  {
+    "identifier": "chitinwhitedeathworm",
+    "traits": []
+  },
+  {
+    "identifier": "chitinbrowndeathworm",
+    "traits": []
+  },
+  {
+    "identifier": "scalegraydragon",
+    "traits": [
+      {
+        "traitNames": [
+          "rough_armor",
+          "steady_armor",
+          "autoforge_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "rough_armor"
+        ],
+        "traitPart": "trim"
+      },
+      {
+        "traitNames": [
+          "rough_armor"
+        ],
+        "traitPart": "plates"
+      }
+    ]
+  },
+  {
+    "identifier": "scalesapphiredragon",
+    "traits": [
+      {
+        "traitNames": [
+          "rough_armor",
+          "aquaspeed_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "rough_armor"
+        ],
+        "traitPart": "trim"
+      },
+      {
+        "traitNames": [
+          "rough_armor"
+        ],
+        "traitPart": "plates"
+      }
+    ]
+  },
+  {
+    "identifier": "scaletealseaserpent",
+    "traits": [
+      {
+        "traitNames": [
+          "rough_armor",
+          "aquaspeed_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "rough_armor",
+          "aquaspeed_armor"
+        ],
+        "traitPart": "trim"
+      },
+      {
+        "traitNames": [
+          "rough_armor",
+          "aquaspeed_armor"
+        ],
+        "traitPart": "plates"
+      }
+    ]
+  },
+  {
+    "identifier": "scalebluedragon",
+    "traits": [
+      {
+        "traitNames": [
+          "rough_armor",
+          "lightweight_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "rough_armor"
+        ],
+        "traitPart": "trim"
+      },
+      {
+        "traitNames": [
+          "rough_armor"
+        ],
+        "traitPart": "plates"
+      }
+    ]
+  },
+  {
+    "identifier": "leatherforesttroll",
+    "traits": []
+  },
+  {
+    "identifier": "scalegreendragon",
+    "traits": [
+      {
+        "traitNames": [
+          "rough_armor",
+          "autoforge_armor",
+          "shielding_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "rough_armor",
+          "autoforge_armor"
+        ],
+        "traitPart": "trim"
+      },
+      {
+        "traitNames": [
+          "rough_armor",
+          "autoforge_armor"
+        ],
+        "traitPart": "plates"
+      }
+    ]
+  },
+  {
+    "identifier": "leathermountaintroll",
+    "traits": []
+  },
+  {
+    "identifier": "scalebronzeseaserpent",
+    "traits": [
+      {
+        "traitNames": [
+          "rough_armor",
+          "aquaspeed_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "rough_armor",
+          "aquaspeed_armor"
+        ],
+        "traitPart": "trim"
+      },
+      {
+        "traitNames": [
+          "rough_armor",
+          "aquaspeed_armor"
+        ],
+        "traitPart": "plates"
+      }
+    ]
+  },
+  {
+    "identifier": "scalereddragon",
+    "traits": [
+      {
+        "traitNames": [
+          "rough_armor",
+          "autoforge_armor",
+          "infernal_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "rough_armor",
+          "autoforge_armor"
+        ],
+        "traitPart": "trim"
+      },
+      {
+        "traitNames": [
+          "rough_armor",
+          "autoforge_armor"
+        ],
+        "traitPart": "plates"
+      }
+    ]
+  },
+  {
+    "identifier": "scaledeepblueseaserpent",
+    "traits": [
+      {
+        "traitNames": [
+          "rough_armor",
+          "aquaspeed_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "rough_armor",
+          "aquaspeed_armor"
+        ],
+        "traitPart": "trim"
+      },
+      {
+        "traitNames": [
+          "rough_armor",
+          "aquaspeed_armor"
+        ],
+        "traitPart": "plates"
+      }
+    ]
+  },
+  {
+    "identifier": "scaleredseaserpent",
+    "traits": [
+      {
+        "traitNames": [
+          "rough_armor",
+          "aquaspeed_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "rough_armor",
+          "aquaspeed_armor"
+        ],
+        "traitPart": "trim"
+      },
+      {
+        "traitNames": [
+          "rough_armor",
+          "aquaspeed_armor"
+        ],
+        "traitPart": "plates"
+      }
+    ]
+  },
+  {
+    "identifier": "scalegreenseaserpent",
+    "traits": [
+      {
+        "traitNames": [
+          "rough_armor",
+          "aquaspeed_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "rough_armor",
+          "aquaspeed_armor"
+        ],
+        "traitPart": "trim"
+      },
+      {
+        "traitNames": [
+          "rough_armor",
+          "aquaspeed_armor"
+        ],
+        "traitPart": "plates"
+      }
+    ]
+  },
+  {
+    "identifier": "scalesilverdragon",
+    "traits": [
+      {
+        "traitNames": [
+          "rough_armor",
+          "blessed_armor"
+        ],
+        "traitPart": "core"
+      },
+      {
+        "traitNames": [
+          "rough_armor"
+        ],
+        "traitPart": "trim"
+      },
+      {
+        "traitNames": [
+          "rough_armor"
+        ],
+        "traitPart": "plates"
+      }
+    ]
+  }
+]

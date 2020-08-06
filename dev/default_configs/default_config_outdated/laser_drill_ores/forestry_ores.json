@@ -1,0 +1,22 @@
+[
+  {
+    "item" : "oreApatite",
+    "color" : 3,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky",
+        "depth_min": 50,
+        "depth_max": 127,
+        "weight": 5
+      },
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky",
+        "depth_min": 0,
+        "depth_max": 255,
+        "weight": 1
+      }
+    ]
+  }
+]
