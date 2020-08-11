@@ -1,6 +1,6 @@
 {
 	"name": "harming",
-	"potion": "minecraft:harming",
+	"potion": "minecraft:instant_damage",
 	"amplifier": 1,
 	"minimum": 0,
 	"maximum": 1,

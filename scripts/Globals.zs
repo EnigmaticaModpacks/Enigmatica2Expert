@@ -6,7 +6,7 @@ import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.data.IData;
 import mods.jei.JEI.removeAndHide as rh;
 
-#priority 100
+#priority 3000
 
 # ######################################################################
 #
@@ -147,6 +147,20 @@ global remakeFluidToItem as function(IItemStack, ILiquidStack, IIngredient)void 
   [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>] ]
 */
 
+global Grid as function(string[],            IIngredient[string])IIngredient[][] = 
+			function (grid as string[], options as IIngredient[string]) as IIngredient[][]  {
+
+	# Make ingredients list from string grid
+	var ingrs = [[]] as IIngredient[][];
+	for i, str in grid {
+		if (ingrs.length <= i) ingrs = ingrs + [] as IIngredient[];
+		for j in 0 to str.length {
+			var k = str[j];
+			ingrs[i] = ingrs[i] + options[k];
+		}
+	}
+	return ingrs;
+};
 
 global Remake as function(IItemStack,         string[],            IIngredient[string])void = 
 			function (output as IItemStack, grid as string[], options as IIngredient[string]) as void  {
@@ -180,15 +194,7 @@ global Remake as function(IItemStack,         string[],            IIngredient[s
 		recipes.addShapeless(recipeName, output, ingrs);
 	} else {
 		# Shaped recipe
-		var ingrs = [[]] as IIngredient[][];
-		for i, str in grid {
-			if (ingrs.length <= i) ingrs = ingrs + [] as IIngredient[];
-			for j in 0 to str.length {
-				var k = str[j];
-				ingrs[i] = ingrs[i] + options[k];
-			}
-		}
-		recipes.addShaped(recipeName, output, ingrs);
+		recipes.addShaped(recipeName, output, Grid(grid, options));
 	}
 };
 
@@ -203,15 +209,15 @@ global clearFluid as function(IItemStack)void =
 	recipes.addShapeless("Fluid Clearing " ~ getItemName(input), 
 		input, [input.marked("marked")],
 		function(out, ins, cInfo) {
-			var tag = {} as crafttweaker.data.IData;
 			if(ins has "marked" && !isNull(ins.marked) && ins.marked.hasTag) {
-				tag = ins.marked.tag;
+				var tag = ins.marked.tag;
 				if (!isNull(tag.Fluid)) {
 					# Usual tanks
 					tag = tag - "Fluid";
 				}
+				return out.withTag(tag);
 			}
-			return out.withTag(tag);
+			return out;
 	}, null);
 };
 

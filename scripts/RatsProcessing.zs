@@ -86,10 +86,15 @@ static matTypes as string[] = ["ingot", "gem", "dust"] as string[];
 function jaopcaGetEntry(item as IItemStack) as OreEntry{
 	for testJ in jaopcaAllOre {
     for iType in matTypes {
-      var getByType = testJ.getOreDictEntry(iType).firstItem;
+      var oredictEntryItems = testJ.getOreDictEntry(iType).items;
+      
+      if (oredictEntryItems.length > 0 && !isNull(oredictEntryItems[0])) {
+        var getByType = oredictEntryItems[0];
 
-      if (!isNull(getByType) && ((getByType has item)||(item has getByType))) {
-        return testJ;
+        if ((getByType has item)||(item has getByType)) {
+          return testJ;
+        }
+        
       }
     }
   }

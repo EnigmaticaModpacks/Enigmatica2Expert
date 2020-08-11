@@ -1993,3 +1993,11 @@ for item, textArray in {
     item.addTooltip(format.white(line));
   }
 }
+
+# Thaumcraft Curiocity
+<thaumcraft:curio:0>.addTooltip("§f+ to §5Auromancy§f progress");
+<thaumcraft:curio:1>.addTooltip("§f+ to §5Alchemy§f progress");
+<thaumcraft:curio:2>.addTooltip("§f+ to §5Golemancy§f progress");
+<thaumcraft:curio:3>.addTooltip("§f+ to §5Eldritch§f progress");
+<thaumcraft:curio:4>.addTooltip("§f+ to §5Arcane Infusion§f progress");
+<thaumcraft:curio:5>.addTooltip("§f+ to §5Artifice§f progress");

@@ -232,7 +232,10 @@ function recycleMetal(input as IIngredient, output as IItemStack, liquid as ILiq
   
   work(["arcFurnance"], exceptions, [input], null, [output], null, null, null);
   work(["induction"],   exceptions, [input, <minecraft:sand>], null, [output], null, [itemUtils.getItem("thermalfoundation:material",864)], [0.1f]);
-  work(["smeltery"],    exceptions, [input], null, [output], [lF(liquid, 0.75d)], null, null);
+  
+  if (!isNull(liquid)) {
+    work(["smeltery"],    exceptions, [input], null, [output], [lF(liquid, 0.75d)], null, null);
+  }
 }
 
 # Melts item in liquid form

@@ -7462,30 +7462,6 @@
             }
           }
         },
-        "12:10": {
-          "weight:3": 10,
-          "ID:3": 12,
-          "items:9": {
-            "0:10": {
-              "id:8": "bigreactors:mineralanglesite",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        },
-        "13:10": {
-          "weight:3": 10,
-          "ID:3": 13,
-          "items:9": {
-            "0:10": {
-              "id:8": "bigreactors:mineralbenitoite",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        },
         "14:10": {
           "weight:3": 10,
           "ID:3": 14,

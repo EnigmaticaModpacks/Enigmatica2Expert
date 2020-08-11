@@ -144,3 +144,6 @@ recipes.addShaped("Spectre Saplings", <randomthings:spectresapling> * 10, [
 	[null, <mysticalagriculture:nature_essence>, null],
 	[<mysticalagriculture:wood_essence>, <randomthings:ingredient:2>, <mysticalagriculture:wood_essence>],
 	[null, <mysticalagriculture:nature_essence>, null]]);
+
+# Oxygen bottle
+mods.thermalexpansion.Transposer.addFillRecipe(<randomthings:bottleofair>, <minecraft:glass_bottle>, <liquid:oxygen> * 1000, 25000);

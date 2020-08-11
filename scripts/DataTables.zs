@@ -117,9 +117,23 @@ static armorStaged as IData[string] =
       {id:"thaumcraft:thaumium_sword"},
       {id:"spartanshields:shield_basic_obsidian"}
   ]},
-  armor_void:{
+  armor_thaumium_fortress:{
     prev: "armor_thaumium", 
     tier: 4,
+    material: "ore:ingotThaumium",
+    recycle:  "ore:ingotThaumium",
+    recipe: {manual: true},
+    list: [
+      {id:"thaumcraft:fortress_helm"},
+      {id:"thaumcraft:fortress_chest"},
+      {id:"thaumcraft:fortress_legs"},
+      {id:"thaumcraft:thaumium_boots"},
+      {id:"thaumcraft:thaumium_sword"},
+      {id:"spartanshields:shield_basic_obsidian"}
+  ]},
+  armor_void:{
+    prev: "armor_thaumium", 
+    tier: 5,
     material: "ore:ingotVoid",
     recycle:  "ore:ingotVoid",
     list: [
@@ -286,11 +300,11 @@ static armorStaged as IData[string] =
     recycle:  "draconicevolution:wyvern_core",
     recipe: {manual: true},
     list: [
-      {id:"raconicevolution:wyvern_helm", tag:{Energy:2000000}},
-      {id:"raconicevolution:wyvern_chest", tag:{Energy:2000000}},
-      {id:"raconicevolution:wyvern_legs", tag:{Energy:2000000}},
-      {id:"raconicevolution:wyvern_boots", tag:{Energy:2000000}},
-      {id:"raconicevolution:wyvern_sword", tag:{Energy:2000000}},
+      {id:"draconicevolution:wyvern_helm", tag:{Energy:2000000}},
+      {id:"draconicevolution:wyvern_chest", tag:{Energy:2000000}},
+      {id:"draconicevolution:wyvern_legs", tag:{Energy:2000000}},
+      {id:"draconicevolution:wyvern_boots", tag:{Energy:2000000}},
+      {id:"draconicevolution:wyvern_sword", tag:{Energy:2000000}},
       {id:"draconicevolution:draconium_block:1"}
   ]},
   armor_draconic:{
@@ -300,11 +314,11 @@ static armorStaged as IData[string] =
     recycle:  "draconicevolution:awakened_core",
     recipe: {manual: true},
     list: [
-      {id:"raconicevolution:draconic_helm", tag:{Energy:16000000}},
-      {id:"raconicevolution:draconic_chest", tag:{Energy:16000000}},
-      {id:"raconicevolution:draconic_legs", tag:{Energy:16000000}},
-      {id:"raconicevolution:draconic_boots", tag:{Energy:16000000}},
-      {id:"raconicevolution:draconic_sword", tag:{Energy:16000000}},
+      {id:"draconicevolution:draconic_helm", tag:{Energy:16000000}},
+      {id:"draconicevolution:draconic_chest", tag:{Energy:16000000}},
+      {id:"draconicevolution:draconic_legs", tag:{Energy:16000000}},
+      {id:"draconicevolution:draconic_boots", tag:{Energy:16000000}},
+      {id:"draconicevolution:draconic_sword", tag:{Energy:16000000}},
       {id:"draconicevolution:draconium_block"}
   ]}
 } as IData[string];

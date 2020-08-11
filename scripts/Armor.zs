@@ -158,7 +158,7 @@ function armGridExtra(n as int, mat as IIngredient, extra as IIngredient, prev a
 	val prevReal = getSetPiece(prev, n);
 	val prevAny = !isNull(prevReal) ? prevReal.anyDamage() : null;
 	if        (n == 0) { return [[mat, extra, mat], [mat, prevAny, mat], [null, null, null]] as IIngredient[][];
-	} else if (n == 1) { return [[mat, extra, mat], [mat, prevAny, mat], [mat, mat, mat]] as IIngredient[][];
+	} else if (n == 1) { return [[mat, prevAny, mat], [mat, extra, mat], [mat, mat, mat]] as IIngredient[][];
 	} else if (n == 2) { return [[mat, extra, mat], [mat, prevAny, mat], [mat, null, mat]] as IIngredient[][];
 	} else if (n == 3) { return [[null, null,null], [mat, extra, mat],   [mat, prevAny, mat]] as IIngredient[][];
 	}
@@ -367,21 +367,6 @@ remakeEx(<ic2:quantum_helmet:26>, [[<ic2:crafting:3>, null, <ic2:crafting:3>],[<
 #
 # ######################################################################
 
-# Predefine liquidstacks because there is no utils
-#   to make liquidstack from string
-val reclLiquids as ILiquidStack[string] = {
-  "dark_steel"       : <liquid:dark_steel>,
-  "end_steel"        : <liquid:end_steel>,
-  "fluxed_electrum"  : <liquid:fluxed_electrum>,
-  "heavy_metal"      : <liquid:heavy_metal>,
-  "iron"             : <liquid:iron>,
-  "psimetal"         : <liquid:psimetal>,
-  "iridium"          : <liquid:iridium>,
-  "nickel"           : <liquid:nickel>,
-  "stellar_alloy"    : <liquid:stellar_alloy>,
-};
-
-
 val DKS = "enderio:item_alloy_ingot:6";
 val ENS = "enderio:item_alloy_ingot:8";
 val FLE = "redstonearsenal:material:32";
@@ -473,7 +458,7 @@ for i in 0 to itemsToRecycle.length {
 		val item = itemUtils.getItem(itemsToRecycle[i]);
 		val count = itemsToRecycle[i+1] as int;
 		val resclItem = getItemstackFromString(itemsToRecycle[i+2]);
-		val resclLiqd = reclLiquids[itemsToRecycle[i+3]];
+		val resclLiqd = game.getLiquid(itemsToRecycle[i+3]);
 
 		if (!isNull(item) && !isNull(resclItem)) {
 			if (!isNull(resclLiqd)) {

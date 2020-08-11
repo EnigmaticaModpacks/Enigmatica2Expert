@@ -1,5 +1,6 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
+import crafttweaker.item.WeightedItemStack;
 #modloaded biomesoplenty
 
 # Poison bucket recipe fix (bucket could be duped)
@@ -16,7 +17,20 @@ import mods.jei.JEI.removeAndHide as rh;
 	recipes.addShapeless(<biomesoplenty:hive:1>, [<biomesoplenty:hive:2>, <biomesoplenty:filled_honeycomb>]);
 	
 # "Meat"
-	mods.forestry.Centrifuge.addRecipe([(<harvestcraft:turkeyrawitem>) % 5, (<minecraft:mutton> % 10), (<minecraft:rabbit> % 5), (<minecraft:chicken> % 10), (<minecraft:porkchop> % 10), (<minecraft:beef> % 10)], <biomesoplenty:flesh>, 100);
+	var rawMeat = [
+		(<harvestcraft:turkeyrawitem>) % 5,
+		(<minecraft:mutton> % 10),
+		(<minecraft:rabbit> % 5),
+		(<minecraft:chicken> % 10),
+		(<minecraft:porkchop> % 10),
+		(<minecraft:beef> % 10),
+		<harvestcraft:venisonrawitem> % 5,
+		<harvestcraft:duckrawitem> % 5,
+		<rats:raw_rat> % 5,
+	] as WeightedItemStack[];
+	mods.forestry.Centrifuge.addRecipe(rawMeat, <biomesoplenty:flesh>, 100);
+	mods.thermalexpansion.Centrifuge.addRecipe([rawMeat[0], rawMeat[1], rawMeat[2], rawMeat[3]
+		] as WeightedItemStack[],<biomesoplenty:flesh>, null, 2000);
 
 # Honey Block -> Honey Drop
 	mods.forestry.Centrifuge.addRecipe([(<forestry:honey_drop> * 5) % 80, (<thermalfoundation:material:99> % 25), (<thermalfoundation:material:100> % 25)], <biomesoplenty:honey_block>, 100);

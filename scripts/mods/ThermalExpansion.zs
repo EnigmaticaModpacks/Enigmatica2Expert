@@ -228,7 +228,7 @@ for i in 0 to 5 {
 	val reservior as IItemStack = <thermalexpansion:reservoir>.definition.makeStack(i) as IItemStack;
 	clearFluid(reservior);
 }
-clearFluid(<thermalexpansion:tank>.withTag({}));
+clearFluid(<thermalexpansion:tank:*>);
 
 mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 1 as byte}));
 mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 2 as byte}));

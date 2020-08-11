@@ -17,7 +17,6 @@ ao:2
 renderClouds:true
 resourcePacks:["bq_lootchests"]
 incompatibleResourcePacks:[]
-lastServer:
 lang:en_us
 chatVisibility:0
 chatColors:true

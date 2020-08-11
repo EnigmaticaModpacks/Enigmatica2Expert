@@ -5,8 +5,6 @@ https://github.com/badmonkey/wilderness-minecraft/blob/f32102d158566de9d346034b3
 */
 
 #loader contenttweaker
-#modloaded conarm
-#priority 101
 //
 // Conarm traits
 //

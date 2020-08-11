@@ -11157,8 +11157,8 @@
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {
-                  "AS_Amulet_HolderLeast:4": -8469918875462925012,
-                  "AS_Amulet_HolderMost:4": -5260415147165141885
+                  "AS_Amulet_HolderLeast:4": -8469918875462925000,
+                  "AS_Amulet_HolderMost:4": -5260415147165142000
                 }
               },
               "id:8": "ic2:wrench_new",
@@ -34961,7 +34961,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -38749,7 +38749,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -38818,7 +38818,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -38886,7 +38886,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -38956,7 +38956,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -39024,7 +39024,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -39092,7 +39092,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -39161,7 +39161,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -39297,7 +39297,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -39365,7 +39365,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -39433,7 +39433,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -39502,7 +39502,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -39581,7 +39581,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -39667,7 +39667,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -39735,7 +39735,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -39803,7 +39803,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -39889,7 +39889,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -39969,7 +39969,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -40043,7 +40043,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
               "OreDict:8": ""
             }
           }
@@ -40129,7 +40129,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -40203,7 +40203,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -40278,7 +40278,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -40358,7 +40358,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 25,
               "OreDict:8": ""
             }
           }
@@ -40438,7 +40438,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -40506,7 +40506,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -40598,7 +40598,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -40684,7 +40684,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -40758,7 +40758,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -40844,7 +40844,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -40930,7 +40930,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -41092,7 +41092,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -41998,8 +41998,8 @@
             "3:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {
-                  "AS_Amulet_HolderLeast:4": -8469918875462925012,
-                  "AS_Amulet_HolderMost:4": -5260415147165141885
+                  "AS_Amulet_HolderLeast:4": -8469918875462925000,
+                  "AS_Amulet_HolderMost:4": -5260415147165142000
                 }
               },
               "id:8": "deepmoblearning:glitch_infused_boots",
@@ -46807,7 +46807,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 100,
               "OreDict:8": ""
             }
           }
@@ -46896,7 +46896,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 100,
               "OreDict:8": ""
             }
           }
@@ -46964,16 +46964,22 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 3,
+              "Damage:2": 1,
               "OreDict:8": ""
             }
           }
@@ -47056,7 +47062,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 100,
               "OreDict:8": ""
             }
           }
@@ -47148,7 +47154,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 100,
               "OreDict:8": ""
             }
           }
@@ -47237,7 +47243,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 100,
               "OreDict:8": ""
             }
           }
@@ -47314,7 +47320,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 100,
               "OreDict:8": ""
             }
           }
@@ -47391,7 +47397,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 100,
               "OreDict:8": ""
             }
           }
@@ -47468,7 +47474,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 100,
               "OreDict:8": ""
             }
           }
@@ -47545,7 +47551,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 100,
               "OreDict:8": ""
             }
           }
@@ -47619,16 +47625,22 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 3,
+              "Damage:2": 1,
               "OreDict:8": ""
             }
           }
@@ -47696,16 +47708,28 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 2,
               "OreDict:8": ""
             }
           }
@@ -47773,16 +47797,28 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 2,
               "OreDict:8": ""
             }
           }
@@ -47850,16 +47886,22 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 3,
+              "Damage:2": 1,
               "OreDict:8": ""
             }
           }
@@ -47933,16 +47975,22 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 3,
+              "Damage:2": 1,
               "OreDict:8": ""
             }
           }
@@ -48016,16 +48064,28 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 2,
               "OreDict:8": ""
             }
           }
@@ -48099,16 +48159,22 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 3,
+              "Damage:2": 1,
               "OreDict:8": ""
             }
           }
@@ -48182,16 +48248,28 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 2,
               "OreDict:8": ""
             }
           }
@@ -48265,16 +48343,28 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 50,
+              "Damage:2": 25,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 3,
               "OreDict:8": ""
             }
           }
@@ -48357,7 +48447,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 100,
               "OreDict:8": ""
             }
           }
@@ -48431,16 +48521,22 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 3,
+              "Damage:2": 1,
               "OreDict:8": ""
             }
           }
@@ -48517,7 +48613,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 100,
               "OreDict:8": ""
             }
           }
@@ -48594,7 +48690,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 100,
               "OreDict:8": ""
             }
           }
@@ -48671,7 +48767,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 100,
               "OreDict:8": ""
             }
           }
@@ -48748,7 +48844,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 100,
               "OreDict:8": ""
             }
           }
@@ -48816,16 +48912,22 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 3,
+              "Damage:2": 1,
               "OreDict:8": ""
             }
           }
@@ -48902,7 +49004,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 100,
               "OreDict:8": ""
             }
           }
@@ -48979,7 +49081,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 100,
               "OreDict:8": ""
             }
           }
@@ -49062,7 +49164,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 100,
               "OreDict:8": ""
             }
           }
@@ -49130,16 +49232,22 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 3,
+              "Damage:2": 1,
               "OreDict:8": ""
             }
           }
@@ -49207,16 +49315,28 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 2,
               "OreDict:8": ""
             }
           }
@@ -49284,16 +49404,22 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 75,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 3,
+              "Damage:2": 1,
               "OreDict:8": ""
             }
           }
@@ -49370,7 +49496,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 100,
               "OreDict:8": ""
             }
           }
@@ -49463,7 +49589,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 100,
               "OreDict:8": ""
             }
           }
@@ -49555,16 +49681,28 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 2,
               "OreDict:8": ""
             }
           }
@@ -49662,7 +49800,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 100,
               "OreDict:8": ""
             }
           }
@@ -49772,7 +49910,7 @@
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 100,
               "OreDict:8": ""
             }
           }
@@ -49861,16 +49999,28 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 50,
+              "Damage:2": 25,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 3,
               "OreDict:8": ""
             }
           }
@@ -49938,16 +50088,28 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 25,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 3,
               "OreDict:8": ""
             }
           }
@@ -50015,16 +50177,28 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 25,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 3,
               "OreDict:8": ""
             }
           }
@@ -50092,16 +50266,28 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 2,
               "OreDict:8": ""
             }
           }
@@ -50169,16 +50355,28 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 2,
               "OreDict:8": ""
             }
           }
@@ -50279,19 +50477,41 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 75,
+              "Damage:2": 50,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 2,
               "OreDict:8": ""
             }
           }
+        },
+        "1:10": {
+          "hideBlockIcon:1": 1,
+          "rewardID:8": "bq_standard:command",
+          "asScript:1": 1,
+          "description:8": "Allow mobs spawn with this armor set",
+          "viaPlayer:1": 0,
+          "index:3": 1,
+          "title:8": "bq_standard.reward.command",
+          "command:8": "gamestage silentadd VAR_NAME armor_thaumium"
         }
       }
     },
@@ -50389,9 +50609,9 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
@@ -50400,8 +50620,30 @@
               "Count:3": 1,
               "Damage:2": 25,
               "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 3,
+              "OreDict:8": ""
             }
           }
+        },
+        "1:10": {
+          "hideBlockIcon:1": 1,
+          "rewardID:8": "bq_standard:command",
+          "asScript:1": 1,
+          "description:8": "Allow mobs spawn with this armor set",
+          "viaPlayer:1": 0,
+          "index:3": 1,
+          "title:8": "bq_standard.reward.command",
+          "command:8": "gamestage silentadd VAR_NAME armor_void"
         }
       }
     },
@@ -50490,19 +50732,41 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 50,
+              "Damage:2": 25,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 3,
               "OreDict:8": ""
             }
           }
+        },
+        "1:10": {
+          "hideBlockIcon:1": 1,
+          "rewardID:8": "bq_standard:command",
+          "asScript:1": 1,
+          "description:8": "Allow mobs spawn with this armor set",
+          "viaPlayer:1": 0,
+          "index:3": 1,
+          "title:8": "bq_standard.reward.command",
+          "command:8": "gamestage silentadd VAR_NAME armor_thaumium_fortress"
         }
       }
     },
@@ -50573,16 +50837,28 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "bq_standard:loot_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 50,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 2,
               "OreDict:8": ""
             }
           }
@@ -53059,8 +53335,8 @@
           "icon:10": {
             "ForgeCaps:10": {
               "astralsorcery:cap_item_amulet_holder:10": {
-                "AS_Amulet_HolderLeast:4": -8469918875462925012,
-                "AS_Amulet_HolderMost:4": -5260415147165141885
+                "AS_Amulet_HolderLeast:4": -8469918875462925000,
+                "AS_Amulet_HolderMost:4": -5260415147165142000
               }
             },
             "id:8": "industrialforegoing:infinity_drill",
@@ -53091,8 +53367,8 @@
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {
-                  "AS_Amulet_HolderLeast:4": -8469918875462925012,
-                  "AS_Amulet_HolderMost:4": -5260415147165141885
+                  "AS_Amulet_HolderLeast:4": -8469918875462925000,
+                  "AS_Amulet_HolderMost:4": -5260415147165142000
                 }
               },
               "id:8": "industrialforegoing:infinity_drill",
@@ -55946,8 +56222,8 @@
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {
-                  "AS_Amulet_HolderLeast:4": -8469918875462925012,
-                  "AS_Amulet_HolderMost:4": -5260415147165141885
+                  "AS_Amulet_HolderLeast:4": -8469918875462925000,
+                  "AS_Amulet_HolderMost:4": -5260415147165142000
                 }
               },
               "id:8": "enderio:item_end_steel_helmet",
@@ -56205,8 +56481,8 @@
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {
-                  "AS_Amulet_HolderLeast:4": -8469918875462925012,
-                  "AS_Amulet_HolderMost:4": -5260415147165141885
+                  "AS_Amulet_HolderLeast:4": -8469918875462925000,
+                  "AS_Amulet_HolderMost:4": -5260415147165142000
                 }
               },
               "id:8": "botania:manasteelhelm",
@@ -56593,8 +56869,8 @@
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {
-                  "AS_Amulet_HolderLeast:4": -8469918875462925012,
-                  "AS_Amulet_HolderMost:4": -5260415147165141885
+                  "AS_Amulet_HolderLeast:4": -8469918875462925000,
+                  "AS_Amulet_HolderMost:4": -5260415147165142000
                 }
               },
               "id:8": "bloodmagic:living_armour_helmet",
@@ -56981,8 +57257,8 @@
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {
-                  "AS_Amulet_HolderLeast:4": -8469918875462925012,
-                  "AS_Amulet_HolderMost:4": -5260415147165141885
+                  "AS_Amulet_HolderLeast:4": -8469918875462925000,
+                  "AS_Amulet_HolderMost:4": -5260415147165142000
                 }
               },
               "id:8": "thaumcraft:void_robe_helm",
@@ -57839,8 +58115,8 @@
                   "Items:9": {}
                 },
                 "astralsorcery:cap_item_amulet_holder:10": {
-                  "AS_Amulet_HolderLeast:4": -8469918875462925012,
-                  "AS_Amulet_HolderMost:4": -5260415147165141885
+                  "AS_Amulet_HolderLeast:4": -8469918875462925000,
+                  "AS_Amulet_HolderMost:4": -5260415147165142000
                 },
                 "plustic:fruitsalad_cap:10": {
                   "Size:3": 5,
@@ -58288,8 +58564,8 @@
             "2:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {
-                  "AS_Amulet_HolderLeast:4": -8469918875462925012,
-                  "AS_Amulet_HolderMost:4": -5260415147165141885
+                  "AS_Amulet_HolderLeast:4": -8469918875462925000,
+                  "AS_Amulet_HolderMost:4": -5260415147165142000
                 }
               },
               "id:8": "twilightforest:fiery_leggings",
@@ -60186,8 +60462,8 @@
           "icon:10": {
             "ForgeCaps:10": {
               "astralsorcery:cap_item_amulet_holder:10": {
-                "AS_Amulet_HolderLeast:4": -8469918875462925012,
-                "AS_Amulet_HolderMost:4": -5260415147165141885
+                "AS_Amulet_HolderLeast:4": -8469918875462925000,
+                "AS_Amulet_HolderMost:4": -5260415147165142000
               }
             },
             "id:8": "vaultopic:vice",
@@ -60218,8 +60494,8 @@
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {
-                  "AS_Amulet_HolderLeast:4": -8469918875462925012,
-                  "AS_Amulet_HolderMost:4": -5260415147165141885
+                  "AS_Amulet_HolderLeast:4": -8469918875462925000,
+                  "AS_Amulet_HolderMost:4": -5260415147165142000
                 }
               },
               "id:8": "vaultopic:vice",
@@ -62578,8 +62854,8 @@
             "1:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {
-                  "AS_Amulet_HolderLeast:4": -8469918875462925012,
-                  "AS_Amulet_HolderMost:4": -5260415147165141885
+                  "AS_Amulet_HolderLeast:4": -8469918875462925000,
+                  "AS_Amulet_HolderMost:4": -5260415147165142000
                 }
               },
               "id:8": "appliedenergistics2:memory_card",

@@ -188,7 +188,7 @@ recipes.addShaped(<extrautils2:suncrystal:250>, [
 	[sunIngr, <ic2:energy_crystal>.anyDamage(), sunIngr], 
 	[null, sunIngr, null]]);
 
-# TODO: Cancel Ender Lily drop
+# Not sure if this would work:
 vanilla.seeds.removeSeed(<extrautils2:enderlilly>);
 
 # Remake Chunk loader recipe

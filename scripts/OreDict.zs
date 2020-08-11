@@ -4,6 +4,8 @@ import crafttweaker.oredict.IOreDict as IOreDict;
 import crafttweaker.oredict.IOreDictEntry as IOreDictEntry;
 import mods.jei.JEI.removeAndHide as rh;
 	
+#priority 1000
+
 # Oredicts for pressure plates
 var pressurePlates as IItemStack[] = [
 	<twilightforest:twilight_oak_plate>,
@@ -670,3 +672,9 @@ for item in pressurePlates {
 # Rats
 	<ore:hatArcheologist>.addItems([<quark:archaeologist_hat>, <rats:archeologist_hat>]);
 	<ore:hatPirate>.addItems([<quark:pirate_hat>, <rats:pirat_hat>]);
+
+# Some dusts
+<ore:dustQuartz>.remove(<actuallyadditions:item_dust:5>);
+<ore:dustLapis>.remove(<actuallyadditions:item_dust:4>);
+<ore:dustDiamond>.remove(<actuallyadditions:item_dust:2>);
+<ore:dustGraphite>.remove(<bigreactors:dustgraphite>);

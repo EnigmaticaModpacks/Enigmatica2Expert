@@ -29,6 +29,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	mods.avaritia.ExtremeCrafting.remove(<avaritia:infinity_shovel>);
 	mods.avaritia.ExtremeCrafting.remove(<avaritia:infinity_axe>);
 	mods.avaritia.ExtremeCrafting.remove(<avaritia:infinity_hoe>);
+	mods.avaritia.ExtremeCrafting.remove(<avaritiaio:infinitecapacitor>);
 
 # Infinity Ingot
 	mods.avaritia.ExtremeCrafting.remove(<avaritia:resource:6>);
