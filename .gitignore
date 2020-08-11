@@ -12,7 +12,9 @@
 !dev/
 ![!]Relese.bat
 !TODO.md
+!README.md
 !minecraftinstance.json
+!patchouli_books/
 
 # Files created by luncher
 config/splash.properties

@@ -17,7 +17,6 @@ ao:2
 renderClouds:true
 resourcePacks:["bq_lootchests","minevost_translation-1.8.zip"]
 incompatibleResourcePacks:[]
-lastServer:
 lang:en_us
 chatVisibility:0
 chatColors:true
@@ -94,12 +93,14 @@ key_Hub Expand Key:0
 key_Change Caster Focus:34
 key_Misc Caster Toggle:0
 key_keybind.baublesinventory:0
+key_quark.keybind.toggleAutojump:0
 key_quark.keybind.dropoff:0
 key_quark.keybind.chestSort:0
 key_quark.keybind.chestDropoff:0
 key_quark.keybind.chestMerge:0
 key_quark.keybind.chestRestock:0
 key_quark.keybind.chestExtract:0
+key_quark.keybind.lockBuilding:33:SHIFT
 key_quark.emote.no:0
 key_quark.emote.yes:0
 key_quark.emote.wave:0
@@ -118,8 +119,6 @@ key_quark.emote.dab:0
 key_quark.emote.jet:0
 key_quark.emote.exorcist:0
 key_quark.emote.zombie:0
-key_quark.keybind.toggleAutojump:0
-key_quark.keybind.lockBuilding:33:SHIFT
 key_key.toggle_shaders:0
 key_bloodmagic.keybind.open_holding:53:CONTROL
 key_bloodmagic.keybind.cycle_holding_pos:0
@@ -150,6 +149,10 @@ key_oreexcavation.key.shape:0
 key_openblocks.keybind.vario_switch:0
 key_openblocks.keybind.vario_vol_up:0
 key_openblocks.keybind.vario_vol_down:0
+key_key.toggleFoVChanges:51:SHIFT
+key_key.reloadSoundSystem:66:SHIFT
+key_key.toggleTimeOfDayOverlay:0
+key_key.togglePotionParticles:66:CONTROL
 key_Difficulty Meter - Show:49
 key_Difficulty Meter - Show Always:49:SHIFT
 key_schematica.key.load:73
@@ -165,7 +168,6 @@ key_schematica.key.pickBlock:0
 key_key.toastcontrol.clear:0
 key_key.open_wct.desc:58
 key_key.cycle_magnet_mode.desc:0
-key_key.delivery.store:48
 key_key.narrator:0
 key_key.cofh.multimode:47
 key_key.toggle_focus.desc:15
@@ -228,6 +230,7 @@ key_mekanism.key.armorMode:34
 key_mekanism.key.feetMode:35
 key_mekanism.key.voice:22
 key_FpsReducer.key.guiOpen:0
+key_FpsReducer.key.forceIdle:197
 key_key.integrateddynamics.logic_programmer_focus_search:33:ALT
 key_key.integrateddynamics.logic_programmer_open_rename:0
 key_key.integratedterminals.terminal.tab.next:15
@@ -271,7 +274,7 @@ key_key.toolbelt.open:45
 key_key.toolbelt.cycle.left:0
 key_key.toolbelt.cycle.right:0
 key_key.toolbelt.slot:18:SHIFT
-key_keys.travelersBackpack.inventory:46:SHIFT
+key_keys.travelersBackpack.inventory:18:CONTROL
 key_keys.travelersBackpack.toggle_tank:15:SHIFT
 key_key.vaultopic.view:34
 key_key.vaultopic.vice:47
@@ -320,7 +323,7 @@ key_enderio.keybind.fovplus:0
 key_enderio.keybind.fovminus:0
 key_enderio.keybind.fovplusfast:0
 key_enderio.keybind.fovminusfast:0
-soundCategory_master:0.24172185
+soundCategory_master:0.046357617
 soundCategory_music:0.0
 soundCategory_record:0.09859155
 soundCategory_weather:0.4084507
