@@ -280,3 +280,9 @@ addChemthrowerEffect(<liquid:milk_chocolate>         , false, false, "onFire", 0
 // 	function(world,pos,side,shooter,throwerstack,fluid) {
 // 	}
 // );
+
+# Thermoelectric generator
+mods.immersiveengineering.Thermoelectric.addTemperatureSource(<nuclearcraft:block_ice>,        50);
+mods.immersiveengineering.Thermoelectric.addTemperatureSource(<ore:blockFiery>,              5000);
+mods.immersiveengineering.Thermoelectric.addTemperatureSource(<ore:blockLudicrite>,          9000);
+mods.immersiveengineering.Thermoelectric.addTemperatureSource(<ore:blockDraconiumAwakened>, 40000);
