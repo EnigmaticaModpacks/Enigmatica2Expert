@@ -6,6 +6,8 @@ import mods.armoreablemobs.ArmorGroup;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.data.IData;
+import mods.ctutils.utils.Math.min;
+import mods.ctutils.utils.Math.max;
 
 #modloaded armoreablemobs
 

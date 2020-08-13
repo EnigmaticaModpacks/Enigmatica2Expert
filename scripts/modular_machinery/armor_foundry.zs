@@ -1,6 +1,8 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.data.IData;
+import mods.ctutils.utils.Math.min;
+import mods.ctutils.utils.Math.max;
 
 # All armor data from table
 static armorStaged as IData[string] = scripts.DataTables.armorStaged;

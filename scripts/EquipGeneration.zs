@@ -7,7 +7,8 @@ import mods.zentoolforge.Toolforge;
 import crafttweaker.data.IData;
 import modtweaker.tconstruct.ITICMaterial;
 import mods.ctutils.utils.Math.random as random;
-import mods.ctutils.utils.Math.min as min;
+import mods.ctutils.utils.Math.min;
+import mods.ctutils.utils.Math.max;
 import crafttweaker.world.IWorld;
 
 

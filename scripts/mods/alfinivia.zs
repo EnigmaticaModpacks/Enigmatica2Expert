@@ -4,6 +4,8 @@ import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.entity.IEntityDefinition;
 import crafttweaker.entity.IEntityLiving;
 import crafttweaker.data.IData;
+import mods.ctutils.utils.Math.min;
+import mods.ctutils.utils.Math.max;
 
 #norun
 

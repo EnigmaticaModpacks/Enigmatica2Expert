@@ -2,6 +2,8 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import mods.ctutils.utils.Math.sqrt;
 import mods.ctutils.utils.Math.ceil;
+import mods.ctutils.utils.Math.min;
+import mods.ctutils.utils.Math.max;
 
 #modloaded volumetricflask
 

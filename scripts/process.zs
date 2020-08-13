@@ -40,6 +40,9 @@ import mods.jaopca.OreEntry;
 import scripts.processWork.work;
 import scripts.processWork.workEx;
 
+import mods.ctutils.utils.Math.min;
+import mods.ctutils.utils.Math.max;
+
 #priority 50
 
 # ######################################################################
