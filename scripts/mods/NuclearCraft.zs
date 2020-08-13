@@ -184,3 +184,12 @@ rh(<ore:ingotLeadPlatinum>.firstItem);
 
 # Bioplastic process
 scripts.process.extract(<ore:sugarcane> * 2, <ore:bioplastic>.firstItem, "except: manufactory extractor");
+
+# IC2 Steam -> Water in turbine
+# mods.nuclearcraft.turbine.addRecipe([fluidInput, fluidOutput, double powerPerMB, double expansionLevel]);
+mods.nuclearcraft.turbine.addRecipe([<liquid:ic2superheated_steam>, <liquid:ic2steam> * 2, 1000.0d, 1.8d]);
+mods.nuclearcraft.turbine.addRecipe([<liquid:ic2steam>, <liquid:low_quality_steam> * 2, 400.0d, 1.6d]);
+
+# Heat exchanger
+# mods.nuclearcraft.heat_exchanger.addRecipe([fluidInput, fluidOutput, double heatRequired, int temperatureIn, int temperatureOut]);
+mods.nuclearcraft.heat_exchanger.addRecipe([<liquid:ic2hot_coolant>, <liquid:ic2coolant>, -200.0d, 700, 300]);
