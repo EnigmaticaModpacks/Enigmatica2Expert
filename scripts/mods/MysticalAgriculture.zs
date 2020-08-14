@@ -729,9 +729,6 @@ for item in itemsToRemoveAndHide {
   recipes.removeByRecipeName("mysticalagriculture:gemamber");
   recipes.addShaped("Mystical Agriculture Amber", <thaumcraft:amber> * 6, [[<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>],[<mysticalagriculture:amber_essence>,null,<mysticalagriculture:amber_essence>],[<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>]]);
 
-# Infusion crystals
-recipes.replaceAllOccurences(<ore:gemDiamond>, <mysticalagriculture:infusion_crystal>.anyDamage(), <matc:inferiumcrystal>);
-
 # Mystical Creations Recipes
 recipes.addShaped(<extendedcrafting:material:33>*3, [[<mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>],[<mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>], [<mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>]]);
 recipes.addShaped(<animania:sheep_cheese_wheel>, [[<mysticalcreations:cheese_essence>, null, <mysticalcreations:cheese_essence>],[null, <mysticalcreations:cheese_essence>, null], [null, null, null]]);
@@ -766,3 +763,29 @@ val inferCount = {
 for seed, count in inferCount {
 	scripts.process.grow(seed, <mysticalagriculture:crafting> * count, "only: Hydroponics", seed, 1.0f);
 }
+
+# Remake crystals to consume previous level
+var crystals = [
+	<mysticalagriculture:infusion_crystal>,
+	<matc:inferiumcrystal>,
+	<matc:prudentiumcrystal>,
+	<matc:intermediumcrystal>,
+	<matc:superiumcrystal>,
+	<matc:supremiumcrystal>,
+] as IItemStack[];
+
+# Infusion crystals
+var prospetry = <mysticalagriculture:crafting:5>;
+for i in 0 .. 5 {
+	craft.remake(crystals[i+1], ["ABA","BCB","ABA"], {
+		A: prospetry, 
+		B: itemUtils.getItem("mysticalagriculture:crafting", i), 
+		C: crystals[i].anyDamage().noReturn().marked("marked")}, 
+		function(out, ins, cInfo) {
+			if(ins has "marked" && !isNull(ins.marked) && ins.marked.isDamageable && out.isDamageable) {
+				return out.withDamage(ins.marked.damage);
+			}
+			return out;
+		});
+}
+
