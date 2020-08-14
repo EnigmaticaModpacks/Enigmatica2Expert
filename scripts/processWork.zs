@@ -272,8 +272,15 @@ function workEx(machineNameAnyCase as string, exceptions as string,
     if (machineName == "metalpress") {
       # mods.immersiveengineering.MetalPress.addRecipe(IItemStack output, IIngredient input, IItemStack mold, int energy, @Optional int inputSize);
 
-      val mold = !isNull(options.mold) ? scripts.utils.mold[options.mold.asString()] : null;
-      mods.immersiveengineering.MetalPress.addRecipe(outputItem0, inputIngr0, !isNull(mold) ? mold : scripts.utils.mold.plate, 2000, inputIngr0.amount);
+      val molds as IItemStack[string] = {
+        plate: <immersiveengineering:mold:0>,
+        gear:  <immersiveengineering:mold:1>,
+        rod:   <immersiveengineering:mold:2>,
+        unpack:<immersiveengineering:mold:7>,
+      } as IItemStack[string];
+
+      val mold = !isNull(options.mold) ? molds[options.mold.asString()] : null;
+      mods.immersiveengineering.MetalPress.addRecipe(outputItem0, inputIngr0, !isNull(mold) ? mold : molds.plate, 2000, inputIngr0.amount);
       return machineName;
     }
   } 

@@ -153,8 +153,8 @@ global Grid as function(string[],            IIngredient[string])IIngredient[][]
 	# Make ingredients list from string grid
 	var ingrs = [[]] as IIngredient[][];
 	for i, str in grid {
-		if (ingrs.length <= i) ingrs = ingrs + [] as IIngredient[];
 		for j in 0 to str.length {
+			if (ingrs.length <= i) ingrs = ingrs + [] as IIngredient[];
 			var k = str[j];
 			ingrs[i] = ingrs[i] + options[k];
 		}

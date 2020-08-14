@@ -67,7 +67,7 @@ function lF(output as ILiquidStack, mult as double) as ILiquidStack  {
   var dmult = damount * mult;
   for step in fluidSteps {
     if (dresult == 0.0d && damount % step == 0) {
-      dresult = max(step, ((dmult / step) as int) * step) as double;
+      dresult = max(step, step * ((dmult / step) as int)) as double;
     }
   }
   if (dresult == 0) { dresult = dmult; }
@@ -166,7 +166,7 @@ function grow(input as IIngredient, output as IItemStack, exceptions as string,
   
   # Hydroponics special behaviour
   val maxFertilizers = 8.0d;
-  val a = min(64, max(1, (1.0f - output.amount as float / 16.0f) * maxFertilizers) as int);
+  val a = min(64, max(1.0f, (1.0f - output.amount as float / 16.0f) * maxFertilizers) as int);
   val combo = [
     <minecraft:dye:15> * a,
     <mysticalagriculture:mystical_fertilizer> * a,
