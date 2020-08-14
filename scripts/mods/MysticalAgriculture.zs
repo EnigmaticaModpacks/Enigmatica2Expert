@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import mods.jei.JEI.removeAndHide as rh;
 
 #modloaded mysticalagriculture
@@ -789,3 +790,38 @@ for i in 0 .. 5 {
 		});
 }
 
+# ######################################################################
+#
+# Harder Supremium armor 
+#
+# ######################################################################
+
+var liquidAmount = [4,6,5,4] as int[];
+var bases = [
+	<contenttweaker:supremium_helmet_base>  ,
+	<contenttweaker:supremium_chest_base>   ,
+	<contenttweaker:supremium_leggings_base>,
+	<contenttweaker:supremium_boots_base>   ,
+] as IItemStack[];
+var cores = [
+	<conarm:helmet_core>  .withTag({Material: "ma.supremium"}),
+	<conarm:chest_core>   .withTag({Material: "ma.supremium"}),
+	<conarm:leggings_core>.withTag({Material: "ma.supremium"}),
+	<conarm:boots_core>   .withTag({Material: "ma.supremium"}),
+] as IItemStack[];
+
+for i in 0 .. 4 {
+	var l = 144 * liquidAmount[i];
+
+	# Replace casting of cores to Base ones
+	mods.tconstruct.Casting.removeTableRecipe(cores[i]);
+	mods.tconstruct.Casting.addTableRecipe(bases[i], <tconstruct:cast>     .withTag({PartType: "conarm:helmet_core"}), <liquid:supremium>, l, false);
+	mods.tconstruct.Casting.addTableRecipe(bases[i], <tconstruct:clay_cast>.withTag({PartType: "conarm:helmet_core"}), <liquid:supremium>, l, true);
+
+	# Add core base melting
+	mods.tconstruct.Melting.addRecipe(<liquid:supremium> * l, bases[i]);
+
+	# Add recipe of making core from base
+	# mods.rt.RandomThingsTweaker.addAnvilRecipe(IItemStack input1, IItemStack input2, IItemStack result, int levelcost);
+	mods.rockytweaks.Anvil.addRecipe(bases[i], <mysticalagriculture:master_infusion_crystal>, cores[i], 350);
+}

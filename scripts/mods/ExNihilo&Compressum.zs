@@ -142,3 +142,10 @@ import mods.jei.JEI.removeAndHide as rh;
 recipes.remove(<exnihilocreatio:item_mesh:2>);
 recipes.remove(<exnihilocreatio:item_mesh:3>);
 recipes.remove(<exnihilocreatio:item_mesh:4>);
+
+# Compressed Contenttweaker blocks
+utils.compact(<exnihilocreatio:block_andesite_crushed>, <contenttweaker:compressed_crushed_andesite>);
+utils.compact(<exnihilocreatio:block_diorite_crushed> , <contenttweaker:compressed_crushed_diorite>);
+utils.compact(<exnihilocreatio:block_skystone_crushed>, <contenttweaker:compressed_crushed_skystone>);
+utils.compact(<exnihilocreatio:block_granite_crushed> , <contenttweaker:compressed_crushed_granite>);
+

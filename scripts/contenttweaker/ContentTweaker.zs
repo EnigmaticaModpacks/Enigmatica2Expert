@@ -1,4 +1,5 @@
 #loader contenttweaker
+#priority 9000
 
 import crafttweaker.world.IWorld;
 import crafttweaker.util.Position3f;
