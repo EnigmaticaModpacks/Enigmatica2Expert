@@ -273,42 +273,46 @@ function magic(input as IIngredient[], output as IItemStack[], exceptions as str
 # 📦 → 📦|💧
 function beneficiate(input as IIngredient, oreName as string, amount as int, exceptions as string) {
 
-  val JOREoutput = mods.jaopca.JAOPCA.getOre(oreName);
+  val JA = mods.jaopca.JAOPCA.getOre(oreName);
 
+  # Determine extra output based on JAOPCA
   var extra = [] as IItemStack[];
-  var cx as IItemStack = null;
-  if (!isNull(JOREoutput)) {
-    cx = JOREoutput.getItemStackExtra      ("dust", "gem"); if (!isNull(cx)) extra = extra + cx;
-    cx = JOREoutput.getItemStackSecondExtra("dust", "gem"); if (!isNull(cx)) extra = extra + cx;
-    cx = JOREoutput.getItemStackThirdExtra ("dust", "gem"); if (!isNull(cx)) extra = extra + cx;
+  if (!isNull(JA)) {
+    var cx as IItemStack = null;
+    cx = utils.getSomething(JA.extraName,       ["dust", "gem"]); if (!isNull(cx)) extra = extra + cx;
+    cx = utils.getSomething(JA.secondExtraName, ["dust", "gem"]); if (!isNull(cx)) extra = extra + cx;
+    cx = utils.getSomething(JA.thirdExtraName,  ["dust", "gem"]); if (!isNull(cx)) extra = extra + cx;
   }
-
   var extraChances = [
-    min(1.0f, 0.333333f * (amount as float)),
-    min(1.0f, 0.2f * (amount as float)),
-    min(1.0f, 0.1f * (amount as float))] as float[];
+    min(1.0, 1.0/6 * amount),
+    min(1.0, 0.1   * amount),
+    min(1.0, 0.05  * amount)] as float[];
 
+  # Crush Dust or Gem
   val dustOrGem = utils.getSomething(oreName, ["dust", "gem"]);
   if (!isNull(dustOrGem)) {
     crush(input, dustOrGem * amount, exceptions ~ " macerator thermalCentrifuge", extra, extraChances);
   }
 
+  # Crush IC2
   val crushedOrDust = utils.getSomething(oreName, ["crushed", "dust"]);
   if (!isNull(crushedOrDust)) {
     crush(input, crushedOrDust * amount, "only: macerator", null, null);
   }
 
+  # Magic
   val ingotOrGem = utils.getSomething(oreName, ["ingot", "gem"]);
   if (!isNull(ingotOrGem)) {
     magic([input], [ingotOrGem * amount], exceptions);
   }
 
-  val molten as ILiquidStack = !isNull(JOREoutput) ? JOREoutput.getLiquidStack("molten") : null;
-  val altLiquid as ILiquidStack = itemUtils.getItem("liquid:" ~ oreName.toLowerCase());
+  # Melt
+  val molten as ILiquidStack = !isNull(JA) ? JA.getLiquidStack("molten") : null;
+  val altLiquid as ILiquidStack = game.getLiquid(oreName.toLowerCase());
   val liquid = isNull(molten) ? altLiquid : molten;
-  if (!isNull(liquid) && !isNull(JOREoutput)) {
-    if (JOREoutput.oreType == "INGOT") { melt(input, liquid * (144*amount), exceptions); }
-    if (JOREoutput.oreType == "GEM")   { melt(input, liquid * (666*amount), exceptions); }
+  if (!isNull(liquid) && !isNull(JA)) {
+    if (JA.oreType.toLowerCase() == "ingot") { melt(input, liquid * (144*amount), exceptions); }
+    if (JA.oreType.toLowerCase() == "gem")   { melt(input, liquid * (666*amount), exceptions); }
   }
 
   # Mekanism machines can't work with NBT tags for inputs
