@@ -1,4 +1,7 @@
 import mods.jei.JEI.removeAndHide as rh;
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
+
 #modloaded environmentaltech
 	
 	
@@ -65,69 +68,8 @@ import mods.jei.JEI.removeAndHide as rh;
 	<environmentaltech:litherite_crystal> * 9, 
 	[<ore:blockLitherite>]);
 
-# Solar Array Tier 4-6
-	recipes.remove(<environmentaltech:solar_cont_4>);
-	mods.extendedcrafting.TableCrafting.addShaped(0, <environmentaltech:solar_cont_4>, 
-	[[mekSolar, cell4, cell4, cell4, mekSolar], 
-	[cell4, blockPladium, <thermalexpansion:frame:128>, blockPladium, cell4], 
-	[cell4, <thermalexpansion:frame:128>, <environmentaltech:solar_cont_3>, <thermalexpansion:frame:128>, cell4], 
-	[cell4, blockPladium, <thermalexpansion:frame:146>, blockPladium, cell4], 
-	[mekSolar, cell4, cell4, cell4, mekSolar]]);  
-
-	recipes.remove(<environmentaltech:solar_cont_5>);
-	mods.extendedcrafting.TableCrafting.addShaped(0, <environmentaltech:solar_cont_5>, 
-	[[<advancedrocketry:satellitepowersource:1>, cell5, cell5, cell5, cell5, cell5, <advancedrocketry:satellitepowersource:1>], 
-	[cell5, blockIonite, blockIonite, <thermalexpansion:frame:129>, blockIonite, blockIonite, cell5], 
-	[cell5, blockIonite, <nuclearcraft:part:3>, <thermalexpansion:frame:147>, <nuclearcraft:part:3>, blockIonite, cell5], 
-	[cell5, <thermalexpansion:frame:129>, <compactsolars:compact_solar_block:2>, <environmentaltech:solar_cont_4>, <compactsolars:compact_solar_block:2>, <thermalexpansion:frame:129>, cell5], 
-	[cell5, blockIonite, <nuclearcraft:part:3>, <thermalexpansion:frame:147>, <nuclearcraft:part:3>, blockIonite, cell5], 
-	[cell5, blockIonite, blockIonite, <thermalexpansion:frame:129>, blockIonite, blockIonite, cell5], 
-	[<advancedrocketry:satellitepowersource:1>, cell5, cell5, cell5, cell5, cell5, <advancedrocketry:satellitepowersource:1>]]);  
-
-	recipes.remove(<environmentaltech:solar_cont_6>);
-	mods.extendedcrafting.TableCrafting.addShaped(0, <environmentaltech:solar_cont_6>, 
-	[[<compactsolars:compact_solar_block:2>, cell6, cell6, cell6, <thermalexpansion:frame:148>, cell6, cell6, cell6, <compactsolars:compact_solar_block:2>], 
-	[cell6, <extendedcrafting:material:32>, blockAethium, blockAethium, <ic2:nuclear:10>, blockAethium, blockAethium, <extendedcrafting:material:32>, cell6], 
-	[cell6, blockAethium, <extendedcrafting:material:32>, <draconicevolution:draconic_block>, <extendedcrafting:singularity:66>, <draconicevolution:draconic_block>, <extendedcrafting:material:32>, blockAethium, cell6], 
-	[cell6, blockAethium, <draconicevolution:draconic_block>, <extendedcrafting:storage:3>, <draconicevolution:reactor_core>, <extendedcrafting:storage:3>, <draconicevolution:draconic_block>, blockAethium, cell6], 
-	[<thermalexpansion:frame:148>, <mekanism:machineblock3:1>, <extendedcrafting:singularity:5>, <draconicevolution:awakened_core>, <environmentaltech:solar_cont_5>, <draconicevolution:awakened_core>, <extendedcrafting:singularity:6>, <mekanism:machineblock3:1>, <thermalexpansion:frame:148>], 
-	[cell6, blockAethium, <draconicevolution:draconic_block>, <extendedcrafting:storage:3>, <draconicevolution:reactor_component>, <extendedcrafting:storage:3>, <draconicevolution:draconic_block>, blockAethium, cell6], 
-	[cell6, blockAethium, <extendedcrafting:material:32>, <draconicevolution:draconic_block>, <extendedcrafting:singularity:29>, <draconicevolution:draconic_block>, <extendedcrafting:material:32>, blockAethium, cell6], 
-	[cell6, <extendedcrafting:material:32>, blockAethium, blockAethium, <ic2:nuclear:10>, blockAethium, blockAethium, <extendedcrafting:material:32>, cell6], 
-	[<compactsolars:compact_solar_block:2>, cell6, cell6, cell6, <thermalexpansion:frame:148>, cell6, cell6, cell6, <compactsolars:compact_solar_block:2>]]);  
-	
-# Void Ore Miner Tier 5-6
-	recipes.remove(<environmentaltech:void_ore_miner_cont_5>);
-	recipes.addShaped("Void Ore Miner Tier 5", 
-	<environmentaltech:void_ore_miner_cont_5>, 
-	[[blockIonite, <ic2:iridium_reflector>, blockIonite],
-	[blockIonite, <environmentaltech:void_ore_miner_cont_4>, blockIonite], 
-	[blockIonite, <ic2:iridium_reflector>, blockIonite]]);
- 
-	recipes.remove(<environmentaltech:void_ore_miner_cont_6>);
-	mods.extendedcrafting.TableCrafting.addShaped(0, <environmentaltech:void_ore_miner_cont_6>, 
-	[[blockAethium, <ic2:iridium_reflector>, blockAethium], 
-	[<ic2:nuclear:10>, <environmentaltech:void_ore_miner_cont_5>, <ic2:nuclear:10>], 
-	[blockAethium, <ic2:iridium_reflector>, blockAethium]]);  
-
 # Removing Crystal Lens
 	rh(<environmentaltech:laser_lens_crystal>);
-	
-	
-# Photovoltatic cell Hard earlier recipe
-recipes.remove(<environmentaltech:photovoltaic_cell>);
-recipes.addShaped(<environmentaltech:photovoltaic_cell>, [
-		[<ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>],
-		[<actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:1>], 
-		[<ic2:crafting:4>, <ic2:crafting:4>, <ic2:crafting:4>]
-	]);
-
-# Photovoltatic cell Simplier recipe
-recipes.addShaped(<environmentaltech:photovoltaic_cell>, [
-		[<advancedrocketry:productsheet:1>, <advancedrocketry:productsheet:1>, <advancedrocketry:productsheet:1>],
-		[<ic2:plate:13>, <ic2:plate:13>, <ic2:plate:13>], 
-		[<advancedrocketry:productsheet:1>, <advancedrocketry:productsheet:1>, <advancedrocketry:productsheet:1>]
-	]);
 
 remake("environmentaltech modifier_speed", 
 	<environmentaltech:modifier_speed>, [
@@ -156,3 +98,227 @@ remake("environmentaltech modifier_accuracy",
 <environmentaltech:nano_cont_ranged_5>,
 <environmentaltech:nano_cont_ranged_6>
 ]);
+
+# Remove recipe with one concrete
+recipes.removeByRecipeName("environmentaltech:m_multiblocks/interconnect");
+
+
+# ######################################################################
+#
+# Solar panels 1-6
+#
+# ######################################################################
+	
+# Blocks of main EvT materials
+static evt as IIngredient[][string] = {
+	block: [
+		<ore:blockLitherite>, 
+		<ore:blockErodium>, 
+		<ore:blockKyronite>, 
+		<ore:blockPladium>, 
+		<ore:blockIonite>, 
+		<ore:blockAethium>,
+	],
+	crystal: [
+		<ore:crystalLitherite>, 
+		<ore:crystalErodium>, 
+		<ore:crystalKyronite>,
+		<ore:crystalPladium>, 
+		<ore:crystalIonite>, 
+		<ore:crystalAethium>,
+	],
+	panel: [
+		<environmentaltech:solar_cell_litherite>,
+		<environmentaltech:solar_cell_erodium>,
+		<environmentaltech:solar_cell_kyronite>,
+		<environmentaltech:solar_cell_pladium>,
+		<environmentaltech:solar_cell_ionite>,
+		<environmentaltech:solar_cell_aethium>,
+	],
+} as IIngredient[][string];
+
+# Photovoltatic cell Hard earlier recipe
+craft.remake(<environmentaltech:photovoltaic_cell>, [
+	"ABA",
+	"ACA",
+	"ABA"], {
+	A: <ore:plateSilicon>,
+	B: <ore:plateDenseLapis>,
+	C: <ore:plateEnderium>
+	});
+
+# ######################################################################
+#
+# Void Ore Miner Tier 1-6
+#
+# ######################################################################
+
+# "Core" material
+static evtCores as IIngredient[] = [
+	<ore:blockEmerald>,
+	<extendedcrafting:storage:5>,
+	<extendedcrafting:storage:7>,
+	<extendedcrafting:storage:6>,
+	<ore:blockLuminessence>,
+	<ore:blockCrystaltine>,
+] as IIngredient[];
+
+
+# Additional Ingredients for each level
+static evtSolarCores as IIngredient[] = [
+	<environmentaltech:photovoltaic_cell>,
+	<ore:nuggetUUMatter>,
+	<ore:nuggetCrystaltine>,
+	<ore:nuggetStellarAlloy>,
+	<ore:nuggetUltimate>,
+	<ore:nuggetChaoticMetal>,
+] as IIngredient[];
+
+
+
+# Iterate each level
+for i in 0 .. 6 {
+	# Additional Ingredients for each level
+	var evtIngrs as IIngredient[string] = {
+		H: <ore:etLaserLens>,
+		I: <environmentaltech:interconnect>,
+		D: <environmentaltech:diode>,
+		R: <ic2:iridium_reflector>,
+		E: <ic2:nuclear:10>,
+		L: <ore:blockLudicrite>,
+	"╱": <tconstruct:clear_glass:*>,
+	} as IIngredient[string];
+
+	#-------------------------------------------
+	# Ore Miner Controllers
+	#-------------------------------------------
+	evtIngrs["B"] = evt.block[i];
+	evtIngrs["C"] = evtCores[i];
+	evtIngrs["P"] = (i==0) ? evtIngrs.D : itemUtils.getItem("environmentaltech:void_ore_miner_cont_" ~ (i));
+	var void_miner = itemUtils.getItem("environmentaltech:void_ore_miner_cont_" ~ (i+1));
+
+	if (i<=2) { Remake(void_miner ,["𝓹",
+			"B C B",
+			"B P B",
+			"I H I", ], evtIngrs); 
+	} else {
+
+		if (i==3) {
+			recipes.remove(void_miner);
+			mods.extendedcrafting.TableCrafting.addShaped(0, void_miner, craft.grid(["𝓹",
+				"B C B",
+				"R P R",
+				"I H I"], evtIngrs)); }
+
+		if (i==4) {
+			craft.remake(void_miner, ["𝓹",
+				"B B C B B",
+				"B ╱ C ╱ B",
+				"R R P R R",
+				"B E H E B",
+				"I I H I I"], evtIngrs); }
+
+		if (i==5) {
+			craft.remake(void_miner, ["𝓹",
+				"B B B C B B B",
+				"B ╱ ╱ C ╱ ╱ B",
+				"B ╱ ╱ C ╱ ╱ B",
+				"B R R P R R B",
+				"B E E H E E B",
+				"B L L H L L B",
+				"I I I H I I I"], evtIngrs); }
+	}
+
+
+	#-------------------------------------------
+	# Solar Panels
+	#-------------------------------------------
+	var solPanel = evt.panel[i].itemArray[0];
+	evtIngrs["Y"] = evt.crystal[i];
+	evtIngrs["y"] = evt.crystal[max(0, i - 1)];
+	evtIngrs["#"] = evtSolarCores[i];
+	evtIngrs["_"] = <environmentaltech:interconnect>;
+	evtIngrs["▂"] = solPanel;
+	evtIngrs["p"] = evt.panel[max(0, i - 1)];
+
+	recipes.remove(solPanel);
+
+	if (i==0) {craft.make(solPanel * 2, [
+		"Y#Y",
+		"╱_╱"], evtIngrs);
+	} else {craft.make(solPanel * 2, [
+		"YYY",
+		"y#y",
+		"ppp"], evtIngrs);
+	}
+
+	#-------------------------------------------
+	# Solar Controllers
+	#-------------------------------------------
+	var solController = itemUtils.getItem("environmentaltech:solar_cont_" ~ (i+1));
+	evtIngrs["_"] = <actuallyadditions:block_quartz_slab>;
+	evtIngrs["c"] = (i==0) ? <actuallyadditions:block_crystal:1> : itemUtils.getItem("environmentaltech:solar_cont_" ~ (i));
+	evtIngrs["▄"] = <ore:blockBlackQuartz>;
+	evtIngrs["▆"] = <preston:compressed_block>.withTag({stack: {id: "actuallyadditions:block_misc", Count: 1 as byte, Damage: 2 as short}, level: 1});
+	evtIngrs["█"] = <preston:compressed_block>.withTag({stack: {id: "actuallyadditions:block_misc", Count: 1 as byte, Damage: 2 as short}, level: 2});
+
+
+	recipes.remove(solController);
+
+	if (i<=2) {craft.make(solController, ["𝓹",
+		"_ _ _",
+		"Y ▂ Y",
+		"Y c Y"], evtIngrs);
+	} else
+	if (i==3) {
+		evtIngrs["T"] = <mekanismgenerators:generator:5>;
+		evtIngrs["□"] = <thermalexpansion:frame:128>;
+		evtIngrs["▣"] = <thermalexpansion:frame:129>;
+		
+		craft.make(solController, ["𝓹",
+		"T ▄ ▄ . .",
+		"╲ B □ . .",
+		"▂ ╲ c . .",
+		". . ▣ . .",
+		". . . . ."], evtIngrs);
+	} else
+	if (i==4) {
+		evtIngrs["T"] = <nuclearcraft:solar_panel_du>;
+		evtIngrs["▫"] = <nuclearcraft:part:2>;
+		evtIngrs["▢"] = <compactsolars:compact_solar_block:1>;
+		evtIngrs["▣"] = <thermalexpansion:frame:146>;
+		evtIngrs["■"] = <thermalexpansion:frame:147>;
+
+		craft.make(solController, ["𝓹",
+		"▢ ▆ ▆ Y . . .",
+		"╲ B T ▂ . . .",
+		"╲ ╲ ▫ ▣ . . .",
+		"╲ ╲ ╲ c . . .",
+		". . . ■ . . .",
+		". . . . . . .",
+		". . . . . . ."], evtIngrs);
+	} else
+	if (i==5) {
+		evtIngrs["T"] = <enderio:block_solar_panel:3>;
+		evtIngrs["▫"] = <nuclearcraft:part:3>;
+		evtIngrs["▢"] = <compactsolars:compact_solar_block:2>;
+		evtIngrs["▣"] = <thermalexpansion:frame:147>;
+		evtIngrs["■"] = <thermalexpansion:frame:148>;
+		evtIngrs["╳"] = <ore:blockDraconiumAwakened>;
+		evtIngrs["◒"] = <extendedcrafting:singularity:22>;
+		evtIngrs["◓"] = <extendedcrafting:singularity_custom:102>;
+		evtIngrs["◑"] = <extendedcrafting:singularity:16>;
+		evtIngrs["◐"] = <extendedcrafting:singularity:5>;
+
+		craft.make(solController, ["𝓹",
+		"▢ █ █ T T . . . .",
+		"╲ Y ▂ ▂ Y . . . .",
+		"╲ ╲ Y ▫ ◓ . . . .",
+		"╲ ╲ ╲ ╳ ▣ . . . .",
+		"╲ B ◐ ╲ c . ◑ . .",
+		". . . . ■ . . . .",
+		". . . . ◒ . . . .",
+		". . . . . . . . .",
+		". . . . . . . . ."], evtIngrs);
+	}
+}
