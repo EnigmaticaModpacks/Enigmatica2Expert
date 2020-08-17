@@ -21,6 +21,35 @@ import mods.jei.JEI.removeAndHide as rh;
 	<botania:manasteelaxe>, 
 	<botania:manasteelsword>, 
 	<botania:manasteelshears>, 
+
+	<exnihilocreatio:crook_wood>,
+	<exnihilocreatio:crook_stone>,
+	<exnihilocreatio:crook_andesite>,
+	<exnihilocreatio:crook_granite>,
+	<exnihilocreatio:crook_diorite>,
+	<exnihilocreatio:crook_gold>,
+	<exnihilocreatio:crook_iron>,
+	<exnihilocreatio:crook_diamond>,
+	<exnihilocreatio:crook_bone>,
+	<exnihilocreatio:crook_clay_uncooked>,
+	<exnihilocreatio:crook_clay>,
+	<exnihilocreatio:crook_prismarine>,
+	<exnihilocreatio:crook_netherrack>,
+	<exnihilocreatio:crook_purpur>,
+	<exnihilocreatio:crook_blaze>,
+
+
+	<exnihilocreatio:hammer_wood>,
+	<exnihilocreatio:hammer_stone>,
+	<exnihilocreatio:hammer_iron>,
+	<exnihilocreatio:hammer_gold>,
+	
+	<excompressum:compressed_crook>,
+	<excompressum:compressed_hammer_wood>,
+	<excompressum:compressed_hammer_stone>,
+	<excompressum:compressed_hammer_iron>,
+	<excompressum:compressed_hammer_gold>,
+	<excompressum:hammer_mana>,
 ] as IItemStack[];
 		
 	for tool in toolsToRemove {
@@ -58,7 +87,9 @@ import mods.jei.JEI.removeAndHide as rh;
 	<minecraft:stone_axe>,
 	<minecraft:stone_shovel>,
 
-	<minecraft:shears>
+	<minecraft:shears>,
+	<exnihilocreatio:hammer_diamond>,
+	<excompressum:compressed_hammer_diamond>,
 	
 		] as IItemStack[];
 		
@@ -69,8 +100,4 @@ import mods.jei.JEI.removeAndHide as rh;
 	<minecraft:stone_sword>.maxDamage = 2;
 	<minecraft:iron_sword>.maxDamage = 10;
 	<minecraft:diamond_sword>.maxDamage = 20;
-
-# Harder vanilla recipe
-recipes.remove(<minecraft:flint_and_steel>);
-recipes.addShapeless(<minecraft:flint_and_steel>, [<ore:ingotSteel>, <ore:itemFlint>]);
 

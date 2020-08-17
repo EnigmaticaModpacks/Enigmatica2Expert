@@ -469,6 +469,10 @@ mods.inworldcrafting.FluidToItem.transform(<ic2:dust:3>, <fluid:water>, [<ore:du
 # Lesser blaze powder
 Remake(<minecraft:blaze_powder>, null, { remake: <minecraft:blaze_powder>*2, A: <minecraft:blaze_rod> });
 
+# Harder vanilla recipe
+recipes.remove(<minecraft:flint_and_steel>);
+recipes.addShapeless(<minecraft:flint_and_steel>, [<ore:ingotSteel>, <ore:itemFlint>]);
+
 # *=======  =======*
 
 # More meats from traps
