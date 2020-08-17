@@ -2,7 +2,6 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
-import loottweaker.vanilla.loot.LootTables;
 import loottweaker.vanilla.loot.LootTable;
 import loottweaker.vanilla.loot.LootPool;
 import crafttweaker.data.IData;
@@ -14,7 +13,7 @@ https://github.com/katubug/EnthusiastiCraft/blob/f5bb11cf55a0055d8e4187f63cef0bd
 */
 
 //Remove Venison Drops from BetterAnimalsPlus
-val bapDeer = LootTables.getTable("betteranimalsplus:deer");
+val bapDeer = loottweaker.LootTweaker.getTable("betteranimalsplus:deer");
 val bapDeerMain = bapDeer.getPool("deer-venison");
 bapDeerMain.removeEntry("betteranimalsplus:venisonraw");
 
@@ -22,7 +21,7 @@ bapDeerMain.removeEntry("betteranimalsplus:venisonraw");
 bapDeerMain.addItemEntry(<harvestcraft:venisonrawitem>, 5);
 
 //Remove Venison Drops from Twilight Forest
-val tfDeer = LootTables.getTable("twilightforest:entities/deer");
+val tfDeer = loottweaker.LootTweaker.getTable("twilightforest:entities/deer");
 val tfDeerMain = tfDeer.getPool("meat");
 tfDeerMain.removeEntry("twilightforest:raw_venison");
 
