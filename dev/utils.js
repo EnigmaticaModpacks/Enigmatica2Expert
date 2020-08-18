@@ -31,6 +31,10 @@ module.exports.saveObjAsJson = function(obj, filename) {
   saveText(JSON.stringify(obj, null, 2), filename);
 }
 
+module.exports.readdir = function(folderPath) {
+  return fs.readdirSync(path.resolve(__dirname, folderPath));
+}
+
 
 // # ######################################################################
 // #
