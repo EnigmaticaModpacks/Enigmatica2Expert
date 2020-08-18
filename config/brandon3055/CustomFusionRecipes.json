@@ -200,5 +200,23 @@
       "enderio:item_material,1,20",
       "enderio:item_material,1,37"
     ]
+  },
+  {
+    "mode": "REMOVE",
+    "result": "draconicevolution:draconium_chest",
+    "catalyst": "minecraft:chest"
+  },
+  {
+    "mode": "ADD",
+    "result": "draconicevolution:draconium_chest",
+    "catalyst": "minecraft:chest",
+    "energy": 5000000,
+    "tier": 0,
+    "ingredients": [
+      "actuallyadditions:block_giant_chest_large",
+      "draconicevolution:draconic_core",
+      "actuallyadditions:block_giant_chest_large",
+      "draconicevolution:draconium_block"
+    ]
   }
 ]

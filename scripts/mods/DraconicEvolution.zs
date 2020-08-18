@@ -1,4 +1,6 @@
 import mods.jei.JEI.removeAndHide as rh;
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 #modloaded draconicevolution
 
 # *======= Recipes =======*
@@ -87,3 +89,13 @@ import mods.jei.JEI.removeAndHide as rh;
 	makeEx(<draconicevolution:dislocator>, [[null, <rftools:infused_enderpearl>, null],[<mekanism:portableteleporter>, <cyclicmagic:ender_pearl_reuse>.anyDamage(), <mekanism:portableteleporter>], [null, <rftools:infused_enderpearl>, null]]);
 
 
+# Draconic chest easier
+var dchest = <draconicevolution:draconium_chest>;
+var ingrds as IItemStack[] = [
+	<actuallyadditions:block_giant_chest_large>, 
+	<draconicevolution:draconic_core>, 
+	<actuallyadditions:block_giant_chest_large>, 
+	<draconicevolution:draconium_block>
+] as IItemStack[];
+mods.extendedcrafting.CombinationCrafting.addRecipe(dchest, 2000000, 20000000, <minecraft:chest>, ingrds as IIngredient[]);
+mods.actuallyadditions.Empowerer.addRecipe(dchest, <minecraft:chest>, ingrds[0], ingrds[1], ingrds[2], ingrds[3], 20000000/4, 400, [8.0, 0.1, 0.9]);
