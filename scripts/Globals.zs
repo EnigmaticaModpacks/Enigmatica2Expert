@@ -242,30 +242,37 @@ global compressIt as function(IItemStack, int)IItemStack =
 
 
 # ########################
-# Safe get NBT tag by string key
+# Safe get NBT tag by string keys
 # Example:
-#   D(item.tag, "Fluid.FluidName") => "water" as IData
+#   D( {Fluid:{FluidName:"water"}} ,"Fluid.FluidName" ) => "water" as IData
+#   D( {A:[ {B:1}, {C:2} ]}        ,"A[1].C" )          => 2 as IData
+#   D( {A:[0,1,2]}                 ,"A[4].C" )          => null
 # ########################
 global D as function(IData, string)IData = 
     function (data as IData, field as string) as IData  {
 	if (!isNull(data) && !isNull(field)) {
-		if (field.matches(".*\\..*")) {
-			# String contain several tags
-			var descend = data;
-			for tag in field.split(".") {
-				val member = descend.memberGet(tag);
+		var descend = data;
+		for tag in field.split("[\\.\\[\\]]") {
+			if (tag != "") {
+				var member as IData = null;
+				if (tag.matches("^\\d+$")) {
+					var num = tag as int;
+					if (descend.length > num) {
+						member = descend[num];
+					}
+				} else {
+					member = descend.memberGet(tag);
+				}
 				if (!isNull(member)) {
 					descend = member;
 				} else {
-					break;
+					return null;
 				}
 			}
-			return descend;
-		} else {
-			return data.memberGet(field);
 		}
+		return descend;
 	}
-	return data;
+	return null;
 };
 
 # Safe get NBT tag by string key
@@ -297,7 +304,7 @@ global Bucket as function(string)IItemStack = function (name as string) as IItem
 # Apply tag to bucket (in case we use TE potions or such)
 global BucketTag as function(string,IData)IItemStack = function (name as string, tag as IData) as IItemStack {
 	val b = Bucket(name as string);
-	if (!isNull(b) && !isNull(tag)) { return b.withTag({Tag: tag}); }
+	if (!isNull(b) && !isNull(tag)) { return b.updateTag({Tag: tag}); }
 	return b;
 };
 

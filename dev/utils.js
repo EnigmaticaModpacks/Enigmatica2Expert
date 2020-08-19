@@ -35,6 +35,9 @@ module.exports.readdir = function(folderPath) {
   return fs.readdirSync(path.resolve(__dirname, folderPath));
 }
 
+module.exports.escapeRegex = function(string) {
+  return string.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+}
 
 // # ######################################################################
 // #
