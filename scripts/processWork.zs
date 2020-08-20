@@ -21,6 +21,7 @@ import scripts.processUtils.defaultChanceN;
 import scripts.processUtils.warning;
 import scripts.processUtils.info;
 import scripts.processUtils.avdRockXmlRecipe;
+import scripts.processUtils.xmlRecipe;
 
 
 #priority 51
@@ -547,13 +548,13 @@ function workEx(machineNameAnyCase as string, exceptions as string,
 
     if (machineName == "advrockarc") {
       # Log recipes to manual add in XML file
-      avdRockXmlRecipe("Electric Furnace", inputItems, null, outputItems, null);
+      avdRockXmlRecipe("ElectricArcFurnace", inputItems, null, outputItems, null);
       return machineName;
     }
 
     if (machineName == "advrockcutter") {
       # Log recipes to manual add in XML file
-      avdRockXmlRecipe("Block Cutter", inputItems, null, outputItems, null);
+      avdRockXmlRecipe("CuttingMachine", inputItems, null, outputItems, null);
       return machineName;
     }
 
@@ -701,7 +702,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
 
     if (machineName == "advrockelectrolyzer") {
       # Log recipes to manual add in XML file
-      avdRockXmlRecipe("Electrolyzer", null, inputLiquids, null, outputLiquids);
+      avdRockXmlRecipe("Electrolyser", null, inputLiquids, null, outputLiquids);
       return machineName;
     }
   }
@@ -753,21 +754,21 @@ function workEx(machineNameAnyCase as string, exceptions as string,
 
     if (machineName == "vat") {
       if (inputItems.length <= 2) {
-      var s = 'process.work EiO Vat recipe. Add in XML file manually\n';
-      s = s ~ "<recipe name=\"" ~ outputLiquid0.displayName ~ "\" required=\"true\"><fermenting energy=\"10000\">\n";
-      for inIngr in inputItems {
-        s = s ~ "  <inputgroup>\n";
-        for ii in inIngr.itemArray {
-          s = s ~ "    <input name=\"" ~ ii.commandString.replaceAll("[<>]", "") ~ "\" multiplier=\"1.0\" />\n";
+        var s = "<recipe name=\"" ~ outputLiquid0.displayName ~ "\" required=\"true\"><fermenting energy=\"10000\">\n";
+        for inIngr in inputItems {
+          s = s ~ "  <inputgroup>\n";
+          for ii in inIngr.itemArray {
+            s = s ~ "    <input name=\"" ~ ii.commandString.replaceAll("[<>]", "") ~ "\" multiplier=\"1.0\" />\n";
+          }
+          s = s ~ "  </inputgroup>\n";
         }
-        s = s ~ "  </inputgroup>\n";
-      }
-      s = s ~ "    <inputfluid name=\"" ~ inputLiquid0.name ~ "\" multiplier=\"" ~ (outputLiquid0.amount as float) / 1000 ~ "\" />\n";
-      s = s ~ "    <outputfluid name=\"" ~ outputLiquid0.name ~ "\" /></fermenting></recipe>";
-      print(s);
-      # mods.enderio.Vat.addRecipe(ILiquidStack output, ILiquidStack input, IIngredient[] slot1Solids, float[] slot1Mults, IIngredient[] slot2Solids, float[] slot2Mults, @Optional int energyCost);
-      # mods.enderio.Vat.addRecipe(outputLiquid0, inputLiquid0, [arrN_item(inputItems, 0)], [1.0f], [arrN_item(inputItems, 1)], [1.0f], 5000);
-      return machineName;
+        s = s ~ "    <inputfluid name=\"" ~ inputLiquid0.name ~ "\" multiplier=\"" ~ (outputLiquid0.amount as float) / 1000 ~ "\" />\n";
+        s = s ~ "    <outputfluid name=\"" ~ outputLiquid0.name ~ "\" /></fermenting></recipe>";
+
+        xmlRecipe("./config/enderio/recipes/user/user_recipes.xml", s);
+        # mods.enderio.Vat.addRecipe(ILiquidStack output, ILiquidStack input, IIngredient[] slot1Solids, float[] slot1Mults, IIngredient[] slot2Solids, float[] slot2Mults, @Optional int energyCost);
+        # mods.enderio.Vat.addRecipe(outputLiquid0, inputLiquid0, [arrN_item(inputItems, 0)], [1.0f], [arrN_item(inputItems, 1)], [1.0f], 5000);
+        return machineName;
       } else {
         return info(machineNameAnyCase, inputLiquid0.name, "received work, but amount of inputs > 2");
       }
@@ -809,7 +810,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
 
     if (machineName == "chemicalreactor") {
       if (lenInItem <= 4 && lenInLiqs <= 2 && lenOutItem <= 4 & lenOutLiqs <= 1) {
-        avdRockXmlRecipe("Chemical Reactor", inputItems, inputLiquids, outputItems, outputLiquids);
+        avdRockXmlRecipe("ChemicalReactor", inputItems, inputLiquids, outputItems, outputLiquids);
         return machineName;
       } else {
         return info(machineNameAnyCase, inputLiquid0.name, "received work, but input and output amounts can't fit in machine");

@@ -101,7 +101,18 @@ function info(machineNameAnyCase as string, inputStr as string, description as s
   return "";
 }
 
-function avdRockXmlRecipe(namePretty as string, 
+
+# ######################################################################
+#
+# Manual recipes
+#
+# ######################################################################
+
+function xmlRecipe(filename as string, recipeContent as string) {
+  print('Put this recipe in file [' ~ filename ~ '] manually.\n' ~ recipeContent);
+}
+
+function avdRockXmlRecipe(filename as string, 
   inputItems as IIngredient[], inputLiquids as ILiquidStack[],
   outputItems as IItemStack[], outputLiquids as ILiquidStack[]) {
   
@@ -136,9 +147,8 @@ function avdRockXmlRecipe(namePretty as string,
   s = s ~ '    </output></Recipe>';
 
   # Add prefix (reverse order)
-  s = '  <Recipe timeRequired="10" power ="40000"><input>\n' ~ s;
-  s = '  <!-- [' ~ out_name ~ '] from [' ~ in_name ~ '] -->\n' ~ s;
-  s = 'process.work AdvRocketry [' ~ namePretty ~ '] recipe. Add in XML file manually\n' ~ s;
+  s = '  <!-- [' ~ out_name ~ '] from [' ~ in_name ~ '] -->\n' ~
+      '  <Recipe timeRequired="10" power ="40000"><input>\n' ~ s;
 
-  print(s);
+  xmlRecipe("./config/advRocketry/"~filename~".xml", s);
 }
