@@ -51,11 +51,11 @@ import mods.jei.JEI.removeAndHide as rh;
 	  mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:neutron_collector>, [
 	  [<environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>], 
 	  [<environmentaltech:mica>, null, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, null, <environmentaltech:mica>], 
-	  [<environmentaltech:mica>, null, <forestry:chipsets:3>.withTag({}), <ore:circuitUltimate>, <advancedrocketry:ic:2>, <ore:circuitUltimate>, <forestry:chipsets:3>.withTag({}), null, <environmentaltech:mica>], 
+	  [<environmentaltech:mica>, null, <forestry:chipsets:3>.withTag({T:3 as short}, false), <ore:circuitUltimate>, <advancedrocketry:ic:2>, <ore:circuitUltimate>, <forestry:chipsets:3>.withTag({T:3 as short}, false), null, <environmentaltech:mica>], 
 	  [<ore:ingotCrystalMatrix>, null, <ore:circuitUltimate>, <advgenerators:controller>, <advgenerators:controller>, <advgenerators:controller>, <ore:circuitUltimate>, null, <ore:ingotCrystalMatrix>], 
 	  [null, null, <advancedrocketry:ic:2>, <advgenerators:controller>, itemUtils.getItem("appliedenergistics2:controller"), <advgenerators:controller>, <advancedrocketry:ic:2>, null, null], 
 	  [<ore:ingotCrystalMatrix>, null, <ore:circuitUltimate>, <advgenerators:controller>, <advgenerators:controller>, <advgenerators:controller>, <ore:circuitUltimate>, null, <ore:ingotCrystalMatrix>], 
-	  [<actuallyadditions:block_heat_collector>, null, <forestry:chipsets:3>.withTag({}), <ore:circuitUltimate>, <advancedrocketry:ic:2>, <ore:circuitUltimate>, <forestry:chipsets:3>.withTag({}), null, <actuallyadditions:block_heat_collector>], 
+	  [<actuallyadditions:block_heat_collector>, null, <forestry:chipsets:3>.withTag({T:3 as short}, false), <ore:circuitUltimate>, <advancedrocketry:ic:2>, <ore:circuitUltimate>, <forestry:chipsets:3>.withTag({T:3 as short}, false), null, <actuallyadditions:block_heat_collector>], 
 	  [<actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>, null, null, null, null, null, <actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>], 
 	  [<actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>, <ore:ingotCrystalMatrix>, <actuallyadditions:block_heat_collector>, <ore:ingotCrystalMatrix>, <actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>]
 		]);
@@ -64,11 +64,11 @@ import mods.jei.JEI.removeAndHide as rh;
 	  mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:neutron_collector>, [
 	  [<environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>], 
 	  [<environmentaltech:mica>, null, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, null, <environmentaltech:mica>], 
-	  [<environmentaltech:mica>, null, <forestry:chipsets:3>.withTag({}), <ore:circuitUltimate>, <advancedrocketry:ic:2>, <ore:circuitUltimate>, <forestry:chipsets:3>.withTag({}), null, <environmentaltech:mica>], 
+	  [<environmentaltech:mica>, null, <forestry:chipsets:3>.withTag({T:3 as short}, false), <ore:circuitUltimate>, <advancedrocketry:ic:2>, <ore:circuitUltimate>, <forestry:chipsets:3>.withTag({T:3 as short}, false), null, <environmentaltech:mica>], 
 	  [<ore:ingotCrystalMatrix>, null, <ore:circuitUltimate>, <advgenerators:controller>, <advgenerators:controller>, <advgenerators:controller>, <ore:circuitUltimate>, null, <ore:ingotCrystalMatrix>], 
 	  [null, null, <advancedrocketry:ic:2>, <advgenerators:controller>, <appliedenergistics2:energy_acceptor>, <advgenerators:controller>, <advancedrocketry:ic:2>, null, null], 
 	  [<ore:ingotCrystalMatrix>, null, <ore:circuitUltimate>, <advgenerators:controller>, <advgenerators:controller>, <advgenerators:controller>, <ore:circuitUltimate>, null, <ore:ingotCrystalMatrix>], 
-	  [<actuallyadditions:block_heat_collector>, null, <forestry:chipsets:3>.withTag({}), <ore:circuitUltimate>, <advancedrocketry:ic:2>, <ore:circuitUltimate>, <forestry:chipsets:3>.withTag({}), null, <actuallyadditions:block_heat_collector>], 
+	  [<actuallyadditions:block_heat_collector>, null, <forestry:chipsets:3>.withTag({T:3 as short}, false), <ore:circuitUltimate>, <advancedrocketry:ic:2>, <ore:circuitUltimate>, <forestry:chipsets:3>.withTag({T:3 as short}, false), null, <actuallyadditions:block_heat_collector>], 
 	  [<actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>, null, null, null, null, null, <actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>], 
 	  [<actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>, <ore:ingotCrystalMatrix>, <actuallyadditions:block_heat_collector>, <ore:ingotCrystalMatrix>, <actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>]
 		]);

@@ -66,14 +66,14 @@ import mods.jei.JEI.removeAndHide as rh;
       recipes.remove(<modularmachinery:blockcontroller>);
       recipes.addShaped("Modular Controller", 
       <modularmachinery:blockcontroller>, 
-      [[<forestry:chipsets:1>.withTag({}), <rftools:screen>, <forestry:chipsets:1>.withTag({})],
+      [[<forestry:chipsets:1>.withTag({T:1 as short}, false), <rftools:screen>, <forestry:chipsets:1>.withTag({T:1 as short}, false)],
       [<modularmachinery:blockcasing>, itemUtils.getItem("appliedenergistics2:controller"), <modularmachinery:blockcasing>], 
       [null, <modularmachinery:blockcasing>, null]]);
     } else {
       recipes.remove(<modularmachinery:blockcontroller>);
       recipes.addShaped("Modular Controller",
       <modularmachinery:blockcontroller>,
-      [[<forestry:chipsets:1>.withTag({}), <rftools:screen>, <forestry:chipsets:1>.withTag({})],
+      [[<forestry:chipsets:1>.withTag({T:1 as short}, false), <rftools:screen>, <forestry:chipsets:1>.withTag({T:1 as short}, false)],
       [<modularmachinery:blockcasing>, <appliedenergistics2:energy_acceptor>, <modularmachinery:blockcasing>],
       [null, <modularmachinery:blockcasing>, null]]);
     }
@@ -99,7 +99,7 @@ import mods.jei.JEI.removeAndHide as rh;
     recipes.addShapedMirrored("Machine Circuitry", 
     <modularmachinery:blockcasing:5>, 
     [[null, <immersiveengineering:wirecoil:5>, null],
-    [<modularmachinery:blockcasing>, <forestry:chipsets:3>.withTag({}), <modularmachinery:blockcasing>], 
+    [<modularmachinery:blockcasing>, <forestry:chipsets:3>.withTag({T: 3 as short}, false), <modularmachinery:blockcasing>], 
     [null, <modularmachinery:blockcasing>, null]]);
 
 # Modularium
