@@ -48,5 +48,6 @@ config/cd4017be/compiled.dat
 config/brandon3055/contributors.json
 config/thaumicjei_itemstack_aspects.json
 config/brandon3055/ProjectIntelligence/
+config/tool_progression/blocks.cfg
 resources/mechanics/
 scripts/.zsrc

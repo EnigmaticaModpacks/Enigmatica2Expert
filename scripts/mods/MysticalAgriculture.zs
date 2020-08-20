@@ -810,13 +810,20 @@ var cores = [
 	<conarm:boots_core>   .withTag({Material: "ma.supremium"}),
 ] as IItemStack[];
 
+var castNames = [
+	"conarm:helmet_core",
+	"conarm:chest_core",
+	"conarm:leggings_core",
+	"conarm:boots_core",
+] as string[];
+
 for i in 0 .. 4 {
 	var l = 144 * liquidAmount[i];
 
 	# Replace casting of cores to Base ones
 	mods.tconstruct.Casting.removeTableRecipe(cores[i]);
-	mods.tconstruct.Casting.addTableRecipe(bases[i], <tconstruct:cast>     .withTag({PartType: "conarm:helmet_core"}), <liquid:supremium>, l, false);
-	mods.tconstruct.Casting.addTableRecipe(bases[i], <tconstruct:clay_cast>.withTag({PartType: "conarm:helmet_core"}), <liquid:supremium>, l, true);
+	mods.tconstruct.Casting.addTableRecipe(bases[i], <tconstruct:cast>     .withTag({PartType: castNames[i]}), <liquid:supremium>, l, false);
+	mods.tconstruct.Casting.addTableRecipe(bases[i], <tconstruct:clay_cast>.withTag({PartType: castNames[i]}), <liquid:supremium>, l, true);
 
 	# Add core base melting
 	mods.tconstruct.Melting.addRecipe(<liquid:supremium> * l, bases[i]);

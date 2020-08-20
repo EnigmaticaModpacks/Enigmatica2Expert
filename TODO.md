@@ -1,17 +1,5 @@
 # Ideas list
 
-- 🟢 - Add mod
-- 🔴 - Remove mod
-- 💦 - Easier recipe
-- 🔶 - Harder Recipe
-- 🔧 - More Machine Recipes
-- 📖 - Better Questing book
-- ✏️ - Recipes changes
-- ✍ - Compat recipes
-- ⚙️ - Process (compat between machines)
-- ♻️ - Recycle
-- 🔨 - Tinker's Construct
-
 ## Finished
 
 -----------
@@ -32,6 +20,11 @@
 - ✍ [x] IC2 Coolant to salt reactor
 - 🔷 [x] Remove Water from AdvRock Electrolyzer
 - 𝓩𝒮 [x] ExNihilio Remove tools (already replaced with TiC)
+- ✏️ [x] Harder to make Supremium Cores (Core Base in smeltery -> Core in crafting table)
+- ✏️ [x] Keep infusion crystals damage when upgrading (recipe function)
+- 🕹️ [x] Hide JEI melter category (duplicated from TCon smeltery)
+- ⚙️ [x] Add refining of Thaumcraft Native Clusters
+- ✏️ [x] EvT solar cores cheaper, panels harder
 
 
 ## Planned
@@ -40,7 +33,7 @@
 
 #### Important:
 
-- [x] JS 📋 Patchouli book generation
+- [ ] JS 📋 Patchouli book generation
 - [ ] 📖 JS selector for quest lines
 - [ ] Process rework in zenClass
 - [ ] Tinkers modifiers utility (add, modify)
@@ -48,19 +41,20 @@
 
 #### Other:
 
-- ⚙️ [x] Add refining of Thaumcraft Native Clusters
-- ✍ [x] Sieves new output (BoP gems and maybe more)
-- ✏️ [x] Harder to make Supremium Cores
-- ✏️ [ ] EvT solar cores cheaper, panels harder
-- ✏️ [x] Ultimate potion
-- 🏭 [ ] JS for automatic XML syncing
+- ✍ [x] Sieves new output (BoP gems). Compressed too.
+- ✏️ [x] MEGA potion
+- 𝓩𝒮 [x] Forestry Circuits finally make acceptable in ME
+- 🔷 [ ] AdvRock Electrolyser should accept any amount of output but cut if > 2
+- ✏️ [ ] Creative Gas should be way cheaper then 💧 Creative Tank
+- ✏️ [ ] Swap creative RF Power Cell and IC2 Power to Mek Cube
+- ✏️ [ ] Creative rat upgrade way cheaper
+- ✏️ [ ] Tcon Armor that speed up time in bottle
+- 🏭 [x] XML automatic recipe adding (js)
 - 💌 [ ] Remove Laser Cannon from lootboxes
 - 💜 [ ] Account Thaumcraft's aspects cost
 - 💜 [ ] Check why Lumium so pricy
 - 💜 [ ] UU Forbid ME drives to be replicable
 - 💜 [ ] UU Silicon Wafer cant be seen in UU
-- 💥 [ ] Give uses to singularities (Coal - burn time, etc)
-- 💥 [ ] New 🐝 for endgame
 - 📖 [ ] Infinity capacitor to loot boxes
 - 📖 [ ] Loot Boxes into Patchouli book
 - 📖 [ ] Stellar Capacitor to EnderIO quest book
@@ -69,19 +63,17 @@
 - 🔨 [ ] Processed cheese material
 - 🔨 [ ] Thaum Curiocity drop
 - 🔨 [ ] Tinkers armor generates with modifiers
-- 🔴 [x] Replace Extended Crafting -> EC Omnifactory
 - 🔶 [ ] Buff Mek Universal Cable recipe (output can be tweaked too)
 - 🔶 [ ] Remake Mek Tanks and Gas tanks
 - 🔶 [ ] Solar Panels in precision assembler
-- 🔶 [x] Ender ingot in alooy smelteries instead of crafting. Also Pulsating Iron
+- 🔶 [x] Ender ingot in alloy smelteries instead of crafting. Also Pulsating Iron
 - 🔶 [x] Harder Enderium recipe (remove enderium base and platinum-lead alloy)
-- 🔷 [ ] **Rats** Structures Generation
-- 🔷 [ ] + Creative Paste Container
+- 💥 [ ] Give uses to singularities (Coal - burn time, etc)
+- 💥 [ ] New 🐝 for endgame
+- 💥 [ ] **Rats** Structures Generation
 - 🔷 [ ] 📖 Hovercraft vehicle to book 
 - 🔷 [ ] Bedrock Ore fix list (used unused ore)
 - 🔷 [ ] Black hole tank clearing
-- 🔷 [ ] Combine creative IC2 generator and RFTools into one Creative cube
-- 🔷 [ ] Creative rat upgrade way cheaper
 - 🔷 [ ] Decay generator as crafting method
 - 🔷 [ ] Draconic Capacitor have no crafts
 - 🔷 [ ] ExNihilio sieve Crushed `End Stone`, `Sky Stone`, `Granite`, `Andesite`, `Diorite`
@@ -107,13 +99,14 @@
 - 🧩 [ ] Random Tweaks
 - 🧩 [x] ExNihilio new drops (JSON)
 - 🧩 [ ] ExCompressum more compressed entityes
-- 🧱 [ ] New Ore Processing line with Magic. 📦 ore -> 📦hunk -> 📦 small piece -> 💧 washed -> 📦 resource
+- 🧱 [ ] Magic Ore Processing . 📦 poop + Cluster => 📦hunk -> 📦 small piece -> 💧 washed -> ?
 - 🛡️ [ ] EquipGen: Exclude armor materials that cant be armor material
-- 🟡 [ ] Creative Gas should be way cheaper then 💧 Creative Tank
-- 🟢 [ ] Artisan Worktables
+- 🟢 [ ] Artisan Worktables (add recipes, hide unused tables)
 - 🟢 [x] Alfinivia
 - 🟢 [x] Better Hurt Timers
 - 🟢 [x] Mekatweaker
+- 🟢 [ ] Botania Tweaks
+- 🟢 [ ] Floralchemy (Add Petro Petunia liquids, Add more crystals)
 - 𝓩𝒮 [ ] Botania check removed 4x petal recipes
 - 𝓩𝒮 [ ] Infinity reagent instead dust in high oven
 - 𝓩𝒮 [ ] Lower Tinker's fuel duration
@@ -126,6 +119,12 @@
 - 𝓩𝒮 [x] Nerf void miner even more
 - 𝓩𝒮 [x] TconEvo remove gears recipe
 - 𝓩𝒮 [x] Tweak chemical thrower liquids
+- 𝓩𝒮 [ ] Mob Stripper Item - rightclick to strip out items
+- 𝓩𝒮 [ ] Silicon plate unification
+- 💦 [ ] Cheaper Draconic Chest
+- ✏️ [ ] Recipe of block made from Gigs of RF
+- ✏️ [ ] Recipe of block made from 1000 EU grid power
+- 🔷 [ ] Tiny potato to crafts
 
 ### Do after process.zs class rework:
 
@@ -211,7 +210,8 @@ randomthings:strong_collapse -- Turnd upsidedown potion
 ---------------------
 CRAFTS OF INTEREST
 ---------------------
-mods.rt.RandomThingsTweaker.addAnvilRecipe(<cyclicmagic:book_ender>, <draconicevolution:draconium_block>, <draconicevolution:dislocator>, 5);
+Imbuing Station (Note: IItemstacks must be in singletons or it will not work)
+mods.rt.RandomThingsTweaker.addImbuingRecipe(IItemStack top, IItemStack leftside, IItemStack bottom, IItemStack center, IItemStack result);
 
 
 ### More info:
@@ -226,6 +226,7 @@ mods.rt.RandomThingsTweaker.addAnvilRecipe(<cyclicmagic:book_ender>, <draconicev
 - [ ] Check why magnet shapeless recipes dissapeared
 - [ ] ⚙️ Primal Mana in other machines (no machines accept 3 liquids yet)
 - [ ] Fake players can use cans ?
+- 🔴 [ ] Replace Extended Crafting -> EC Omnifactory (oreDict bug, reported)
 
 
 ## Ideas for singularities
@@ -270,3 +271,8 @@ mods.rt.RandomThingsTweaker.addAnvilRecipe(<cyclicmagic:book_ender>, <draconicev
 - "_custom:108>" ,**Fluix Singularity**        - Free wires
 - "_custom:109>" ,**Titanium Singularity**     - Increase Mining speed
 - "_ultimate>"   ,**The Ultimate Singularity** - ? All above
+
+
+## Characters to use in crafts:
+
+!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžƎƒƬƮƵǍǎǏǐǑǒǓǔǕǖǗǘǙǚǛǜǞǟǠǡǢǣǦǧǨǩǰǴǵǸǹǺǻǼǽǾǿȀȁȄȅȆȈȉȌȍȐȑȔȕȘșȚțȞȟȢȤȦȧȨȩȪȫȬȭȮȯȰȱȲȳȷȽȾɆɚɶʮʯʹʺʼˆˇˉ˘˙˚˛˜˝ͰͱͲͳʹ͵Ͷͷͺͻͼͽ;Ϳ΄΅Ά·ΈΉΊΌΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώϏϐϑϒϓϔϕϖϗϘϙϚϛϜϝϞϟϠϡϤϰϱϲϳϴϵ϶ϷϸϹϺϻϼϽϾϿЀЁЂЃЄЅІЇЈЉЊЋЌЍЎЏАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяѐёђѓєѕіїјљњћќѝўџѠѡѢѣѤѥѦѧѨѩѪѫѬѭѮѯѰѱѲѳѴѵѶѷѸѹѿҊҋҌҍҎҏҐґҒғҔҕҖҗҘҙҚқҜҝҞҟҠҡҢңҤҥҦҧҨҩҪҫҬҭҮүҰұҲҳҴҵҶҷҸҹҺһҼҽҾҿӀӁӂӃӄӅӆӇӈӉӊӋӌӍӎӏӐӑӒӓӔӕӖӗӘәӚӛӜӝӞӟӠӡӢӣӤӥӦӧӨөӪӫӬӭӮӯӰӱӲӳӴӵӶӷӸӹӺӻӼӽӾӿԀԁԂԃԄԅԆԇԈԉԊԋԌԍԎԏԐԑԒԓԔԕԖԗԘԙԚԛԜԝԞԟԠԡԢԣԤԥԦԧԨԩԪԫԬԭԮԯש؆؇؉كڬڭڮ۩܋ܡܣܤݿދޖޛߐߚߜߡࢴगतदधनऩपबयषहग़य़॥५६ॸॺॻॿচটঢণবরহৎঢ়ৰৱ৻ਏਝਭਰ੧ੲઙઠઢ૩૪ଓ୦୫గశ౾กขคฅฉชฎฏดตนบปผฝภมลฦศสอฮ๏๐๑ຂຈຊຍຢຣລວສອຮ໓໔໕༆༞༟༭༶࿃࿇࿎࿏ခဂငစဉဋဌဍဎဓပဖဗမဝဠဥဦဨ၀၁၃၄၅၆၇၈၉၌၎ၐၑၒၓၔၕၚၜၝၥၦၵၶၷၿႁႎ႑႒႕႘႙ႲჍჱሀሂሄህለልሪሰሳስሶሸሻሾበባቦቨቫቮንኘኛኝከካክኮያጋጟ፦ᎴᎵᏄᏒᏙᏟᏰᏵᐅᐊᓶᓷᓸᓹᓺᓻᓽᓿᔀᔁᔂᔃᔄᔯᔰᔱᔲᔳᔴᔵᔶᔷᔸᔹᔺᔻᔼᔽᕼᖅᘼᘽᘾᘿᙷᙺᙻᚢᚤᚥᚺᚻᛖᛗᛞᛥᛪឲៗ᠃᠛ᠥᠦᡡᥒᥙᥛᥰᦅᦆᦇᦋᦌᦑᦙᦢᦥᦨᦩᦫᧂᧄᧇ᧐ᨂ᱐᱙ᱞᱠᱤᱥᱧᱩᲐᲕᲙᲛᲜᲞᲩᲫᲮᲰᲳᲴᳲᳵᴍᶃḂḃḈḉḊḋḐḑḔḕḖḗḘḚḜḝḞḟḠḡḢḣḦḧḨḩḮḯḰḱḶḸḺḼḾḿṀṁṄṅṌṍṎṏṐṑṒṓṔṕṖṗṘṙṠṡṤṥṦṧṪṫṬṮṰṸṹṺṻṼṽẀẁẂẃẄẅẆẇẊẋẌẍẎẏẐẑẒẔẗẘẙẞẤấẦầẪẫẮắẰằẴẵẸẺẼẽẾếỀềỂỄễỆỐốỒồỖỗỲỳỸỹἀἁἂἃἄἅἆἇἈἉἊἋἌἍἎἏἐἑἒἓἔἕἘἙἚἛἜἝἠἡἢἣἤἥἦἧἨἩἪἫἬἭἮἯἰἱἲἳἴἵἶἷἸἹἺἻἼἽἾἿὀὁὂὃὄὅὈὉὊὋὌὍὐὑὒὓὔὕὖὗὙὛὝὟὠὡὢὣὤὥὦὧὨὩὪὫὬὭὮὯὰάὲέὴήὶίὸόὺύὼώᾀᾁᾂᾃᾄᾅᾆᾇᾈᾉᾊᾋᾌᾍᾎᾏᾐᾑᾒᾓᾔᾕᾖᾗᾘᾙᾚᾛᾜᾝᾞᾟᾠᾡᾢᾣᾤᾥᾦᾧᾨᾩᾪᾫᾬᾭᾮᾯᾰᾱᾲᾳᾴᾶᾷᾸᾹᾺΆᾼ᾽ι᾿῀῁ῂῃῄῆῇῈΈῊΉῌ῍῎῏ῐῑῒΐῖῗῘῙῚΊ῝῞῟ῠῡῢΰῤῥῦῧῨῩῪΎῬ῭΅`ῲῳῴῶῷῸΌῺΏῼ´῾  ‒–—―‖‗‘’‚“”„†‡•…‰‹›⁊⁘⁰⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ⁿ₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎₠€₮₯₸₹₺₽ℂ℄ℍℓℕ№ℙℚℝ™ℤΩKÅ℮ℰ⅊⅓⅔⅕⅖⅗⅘⅙⅚⅛⅜⅝⅞⅟Ⅼ↊↋←↑→↓↔↕↖↗↘↙↩↴⇞⇟⇤⇥⇦⇧⇨⇩⇪⇫⇬⇭⇮⇯⇳∀∂∃∄∅∆∇∈∉∊∋∌∍∏∑−∕∙√∛∜∞∧∨∩∪∫∮∱∲∴∵≈≠≡≢≤≥⊂⊃⊄⊅⊆⊇⊈⊉⊊⊋⊌⊍⊎⊢⊣⊤⊥⊦⊧⊨⊩⊪⊫⊬⊭⊮⊯⋰⋱⋳⋵⋶⋸⋹⋻⋽⌀⌁⌂⌃⌄⌅⌆⌐⌘⌠⌡⌤⌥⌦⌧⌨⌫⌷⍘⍛⍣⍤⍪⍮⎇⎋⎛⎜⎝⎞⎟⎠⎡⎢⎣⎤⎥⎦⎧⎨⎩⎪⎫⎬⎭⎴⎵⏎⏏⏜⏝⏞⏟⏠⏯␀␁␂␃␄␅␆␇␈␉␊␋␌␍␎␏␐␑␒␓␔␕␖␗␘␙␚␛␜␝␞␟␠␡␢␣␤␥␦─━│┃┄┅┆┇┈┉┊┋┌┍┎┏┐┑┒┓└┕┖┗┘┙┚┛├┝┞┟┠┡┢┣┤┥┦┧┨┩┪┫┬┭┮┯┰┱┲┳┴┵┶┷┸┹┺┻┼┽┾┿╀╁╂╃╄╅╆╇╈╉╊╋╌╍╎╏═║╒╓╔╕╖╗╘╙╚╛╜╝╞╟╠╡╢╣╤╥╦╧╨╩╪╫╬╭╮╯╰╱╲╳╴╵╶╷╸╹╺╻╼╽╾╿▀▁▂▃▄▅▆▇█▉▊▋▌▍▎▏▐░▒▓▔▕▖▗▘▙▚▛▜▝▞▟■□▢▣▤▥▦▧▨▩▪▫▬▭▮▯▲▶►▼◀◄◆◇◉◊○◎●◐◑◒◓◕◖◗◘◙◚◛◜◝◞◟◠◡◢◣◤◥◧◨◩◪◫◯◰◱◲◳◴◵◶◷◽◾☐☑☒☠☦☧☨☰☱☲☳☴☵☶☷☹☺☻☼♀♂♠♣♥♦♪♫♰♱✓✝➡➧⟨⟩⟰⟱⥾⥿⦀⨞⩈⩉⫲⫳⫴⫼⬅⬆⬇⮬⮭⮮⮯ⰀⰱⰷⰻⱄⱋⱎⱠⱢⱫⱱⱿⲆⲈⲙⲤⲬⲯⲶⲺⳄⳈⳌⳎⳚⳢ⳥⳦⳨⳩⳺⳻ⴋⴡⴶⴹⴺⴽⴿⵆⵇⵋⵎⵖⵟⷛ⸔⸕⸪⸫「」ꓚꓛꓣꓤꓥꓦ꓾ꔹꔿꕪꘉꘫꙀꚉꚌꚐꜩꜹꜻꜽꝈꝒꝓꝙꞀꞆꞮꞱ꠲꠳꠴꠵ꡡꡦꡧꣲꣳꣴꣵꣶꣷꣽꧠ꧲꧳꧴꧵꧶꧸ꧽꬃꬅꬆꭌꭳꮉꮴꮵꯖꯜ꯫꯰꯲꯵꯸ﬀﬡﬣﬧשׁשׂשּׁשּׂשּﯓﯔﷻﻙﻚﻶﻸﻺﻼ｢｣𐊍𐊜𐊵𐋀𐌀𐌌𐌑𐌞𐌡𐌰𐌶𐌺𐌻𐍂𐎒𐎓𐐀𐐂𐐌𐐍𐐐𐐚𐐜𐐞𐐡𐑍𐑸𐒀𐒆𐒒𐒔𐒠𐒡𐒢𐒣𐒤𐒥𐒧𐒨𐒩𐒰𐒱𐒲𐒴𐒼𐒽𐒾𐓄𐓅𐓊𐓋𐓌𐓓𐓟𐓠𐠌𐠑𐠙𐠨𐠰𐠿𐡌𐡐𐡙𐤃𐤆𐤉𐤗𐤢𐤧𐤮𐤶𐦥𐦬𐦰𐨐𐨥𐨦𐨭𐨲𐩃𐩇𐩠𐩣𐩦𐩪𐩫𐩭𐩮𐩯𐩱𐩸𐭙𐭝𐭢𐭨𐭹𐭾𐰎𐰓𐰡𐰵𐰶𐰷𐱆𑀅𑀛𑀡𑀦𑀶𑁖𑁗𑁘𑁧𑁭𑁯𑃡𑃢𒈫𒌋𓀀𓀁𓀂𓀄𓀆𓀔𓀷𓁁𓁃𓁎𓁕𓁡𓃠𓄁𓄪𓅈𓅉𓅝𓅦𓆀𓆉𓆦𓆽𓉵𓉷𓊾𓋔𓋖𓋨𓋺𓋻𓌖𓍓𓎈𓎉𓎏𓏞𓏟𓐧

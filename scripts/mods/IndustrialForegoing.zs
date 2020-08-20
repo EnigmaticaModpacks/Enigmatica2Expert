@@ -211,3 +211,6 @@ mods.industrialforegoing.SludgeRefiner.add(<thermalfoundation:material:816>, 10)
 mods.industrialforegoing.SludgeRefiner.add(<forestry:fertilizer_bio>, 10);
 mods.industrialforegoing.SludgeRefiner.add(<forestry:mulch>, 10);
 mods.industrialforegoing.SludgeRefiner.add(<thaumcraft:nugget:10>, 10);
+
+# Fluid Extractor
+mods.industrialforegoing.Extractor.add(<integrateddynamics:menril_log>, <fluid:menrilresin> * 5);
