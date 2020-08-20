@@ -1,0 +1,1 @@
+node '.\!rename&update.js'
