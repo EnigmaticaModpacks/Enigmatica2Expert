@@ -362,28 +362,6 @@ mods.mekanism.infuser.removeRecipe(<mekanism:otherdust:5>, <enderio:item_materia
 mods.mekanism.infuser.removeRecipe(<mekanism:otherdust:5>, <mekanism:otherdust:6>);
 
 
-# Harder Refined obsidian and glowstone recipes
-# Remove melting in Smeltery
-mods.tconstruct.Melting.removeRecipe(<liquid:refinedobsidian>);
-mods.tconstruct.Melting.removeRecipe(<liquid:refinedglowstone>);
-
-# Remove melting in other machines
-mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedobsidian> * 144);
-mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedglowstone> * 144);
-mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedobsidian> * 16);
-mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedglowstone> * 16);
-mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedobsidian> * 1296);
-mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedglowstone> * 1296);
-
-# Also recipe added in ChemicalReactor.xml
-# Add Tube recipes
-mods.mechanics.addTubeRecipe([<mekanism:basicblock:2>] as IItemStack[], <liquid:refinedobsidian> * 1000);
-mods.mechanics.addTubeRecipe([<mekanism:basicblock:4>] as IItemStack[], <liquid:refinedglowstone> * 1000);
-
-# Add advanced liquid recipes
-scripts.process.solution([<thermalfoundation:material:770>], [<liquid:diamond> * 66], [<liquid:refinedobsidian> * 144], null, "except: vat");
-scripts.process.solution([<mekanism:dust:2>], [<liquid:glowstone> * 250], [<liquid:refinedglowstone> * 144], null, "except: vat");
-
 # Fix cubes uncraftable in AE
 # Just remake original crafts, but without additional security tags
 remake("Mek Cube 1", <mekanism:energycube>.withTag({tier: 1}), [[<ore:alloyAdvanced>, <ore:battery>, <ore:alloyAdvanced>],[<ore:ingotOsmium>, <mekanism:energycube>.withTag({tier: 0}), <ore:ingotOsmium>], [<ore:alloyAdvanced>, <ore:battery>, <ore:alloyAdvanced>]]);

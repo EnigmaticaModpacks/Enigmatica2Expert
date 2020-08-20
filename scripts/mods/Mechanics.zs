@@ -24,17 +24,6 @@ recipes.addShaped(<mechanics:amplifying_tube>, [
 mods.mechanics.removeTubeRecipe(<minecraft:stone>);
 mods.mechanics.removeTubeRecipe(<minecraft:cobblestone>);
 
-# Rework of crushed obsidian
-// val obsDust  = <thermalfoundation:material:770>;
-// val obsBlock = <minecraft:obsidian>;
-// mods.immersiveengineering.Crusher.removeRecipesForInput(obsBlock);
-// mods.integrateddynamics.Squeezer.removeRecipesWithOutput(obsDust);
-// mods.integrateddynamics.MechanicalSqueezer.removeRecipesWithOutput(obsDust);
-// mods.mekanism.enrichment.removeRecipe(obsBlock);
-// mods.appliedenergistics2.Grinder.removeRecipe(obsBlock);
-// mods.actuallyadditions.Crusher.removeRecipe(obsDust);
-// mods.mechanics.addCrushingBlockRecipe(obsBlock, [obsDust * 2] as IItemStack[], [1] as double[]);
-
 # Blasting powder
 recipes.addShapeless(<mechanics:bursting_powder>, [
   <ore:gunpowder>, <mechanics:fuel_dust>, <appliedenergistics2:material:45>
@@ -42,17 +31,16 @@ recipes.addShapeless(<mechanics:bursting_powder>, [
 
 
 function addBurstSeedRecipe(input as IItemStack, output as IItemStack) {
-  val compressed = compressIt(input, 1);
   recipes.addShaped(output, [
-  [null, compressed, null],
-  [compressed, <mechanics:bursting_powder>, compressed],
-  [null, compressed, null],
+  [null, input, null],
+  [input, <mechanics:bursting_powder>, input],
+  [null, input, null],
   ]);
 }
 
-addBurstSeedRecipe(<exnihilocreatio:block_andesite_crushed>, <mechanics:burst_seed_andesite>);
-addBurstSeedRecipe(<exnihilocreatio:block_diorite_crushed>, <mechanics:burst_seed_diorite>);
-addBurstSeedRecipe(<exnihilocreatio:block_granite_crushed>, <mechanics:burst_seed_granite>);
+addBurstSeedRecipe(<contenttweaker:compressed_crushed_andesite>, <mechanics:burst_seed_andesite>);
+addBurstSeedRecipe(<contenttweaker:compressed_crushed_diorite> , <mechanics:burst_seed_diorite>);
+addBurstSeedRecipe(<contenttweaker:compressed_crushed_granite> , <mechanics:burst_seed_granite>);
 
 # Empty rod remake
 recipes.addShaped(<mechanics:empty_rod>, [
@@ -60,3 +48,30 @@ recipes.addShaped(<mechanics:empty_rod>, [
 [<mechanics:heavy_nugget>, <ore:blockGlass>, <mechanics:heavy_nugget>],
 [<mechanics:heavy_nugget>, <ore:blockGlass>, <mechanics:heavy_nugget>],
 ]);
+
+
+# ----------------------------------
+# Harder Refined obsidian and glowstone recipes
+# ----------------------------------
+
+# Remove melting in Smeltery
+mods.tconstruct.Melting.removeRecipe(<liquid:refinedobsidian>);
+mods.tconstruct.Melting.removeRecipe(<liquid:refinedglowstone>);
+
+# Remove melting in other machines
+mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedobsidian> * 144);
+mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedglowstone> * 144);
+mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedobsidian> * 16);
+mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedglowstone> * 16);
+mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedobsidian> * 1296);
+mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedglowstone> * 1296);
+
+# Also recipe added in ChemicalReactor.xml
+# Add Tube recipes
+mods.mechanics.addTubeRecipe([<mekanism:basicblock:2>] as IItemStack[], <liquid:refinedobsidian> * 1000);
+mods.mechanics.addTubeRecipe([<mekanism:basicblock:4>] as IItemStack[], <liquid:refinedglowstone> * 1000);
+
+# Add advanced liquid recipes
+scripts.process.solution([<thermalfoundation:material:770>], [<liquid:diamond> * 66], [<liquid:refinedobsidian> * 144], null, "except: vat");
+scripts.process.solution([<mekanism:dust:2>], [<liquid:glowstone> * 250], [<liquid:refinedglowstone> * 144], null, "except: vat");
+
