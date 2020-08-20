@@ -3,68 +3,13 @@ import crafttweaker.item.IItemCondition;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 
-# *======= Variables =======*
-
-	var ingotUltimate = <ore:ingotUltimate>;
-	var ultCatalyst = <extendedcrafting:material:13>;
-	var elitePlating = <ore:plateElite>;
-	var resonantCube = <thermalexpansion:cell>.withTag({Level: 4 as byte});
-	var resonantFrame = <thermalexpansion:frame:148>;
-	var awakendedCapacitor = <draconicevolution:draconium_capacitor:1>;
-	var awakendedCore = <draconicevolution:awakened_core>;
-	var blockAwakended = <ore:blockDraconiumAwakened>;
-	var draconicEnergyCore = <draconicevolution:draconic_energy_core>;
-	var rtgFuel = <ic2:nuclear:10>;
-	var dilithium = <ore:gemDilithium>;
-	var anglesite = <bigreactors:mineralanglesite>;
-	var benitoite = <bigreactors:mineralbenitoite>;
-	var ingotMirion = <ore:ingotMirion>;
-	var manaTablet = <botania:manatablet>.withTag({mana: 500000});
-	var megaDrum = <extrautils2:drum:3>;
-	var draconicChest = <draconicevolution:draconium_chest>;
-	var bucketUU = Bucket("ic2uu_matter");
-	var hvSolar = <compactsolars:compact_solar_block:2>;
-	var ultCell = <mekanism:basicblock2:3>.withTag({tier: 3});
-	var ultProvider = <mekanism:basicblock2:4>.withTag({tier: 3});
-	var blackHoleUnit = <industrialforegoing:black_hole_unit>;
-	var blackHoleTank = <industrialforegoing:black_hole_tank>;
-	var millLava = <extrautils2:passivegenerator:2>;
-	var millWater = <extrautils2:passivegenerator:3>;
-	var millWind = <extrautils2:passivegenerator:4>;
-	var millFire = <extrautils2:passivegenerator:5>;
-	var millDragonEgg = <extrautils2:passivegenerator:8>;
-	var amazingCore = <extrautils2:opinium:6>;
-	var speedUpgrade3 = <extrautils2:ingredients:16>;
-	var sunCrystal = <extrautils2:suncrystal>;
-	var kleinBottle = <extrautils2:klein>;
-	var blockLudicrite = <bigreactors:blockludicrite>;
-	var gasPad = <advancedrocketry:oxygencharger>;
-  var blockOsgloglas = <ore:blockOsgloglas>;
-	var blockMirion = <ore:blockMirion>;
-	var moonStone = <extrautils2:ingredients:5>;
-	var creativeEssence = <mysticalagradditions:stuff:69>;
-	var rocketFuel = Bucket("rocket_fuel");
-	var stoneburnt = <extrautils2:decorativesolid:3>;
-	var cobble8x = <extrautils2:compressedcobblestone:7>;
-	var storage16m = <extracells:storage.component:3>;
-	var meChest = <appliedenergistics2:chest>;
-	var creativeTank = <mekanism:machineblock2:11>.withTag({tier: 4});
-	var creativeGasTank = <mekanism:gastank>.withTag({tier: 4});
+# *======= Gas Trophy Frame =======*
 
 var creativeGasTankFrame = <simple_trophies:trophy>.withTag({
 	TrophyItem:{id:"mekanism:gastank",Count:1 as byte, Damage:0 as short},
 	TrophyName:"Creative Gas Tank Frame",
 	TrophyVariant:"gold"
 });
-
-var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
-  TrophyItem:{id:"twilightforest:trophy",Count:1 as byte, Damage:5 as short},
-  TrophyName:"Twilight Forest Master Trophy",
-  TrophyVariant:"gold"
-});
-
-
-# *======= Gas Trophy Frame =======*
 
 # Add to JEI and apply Information
 mods.jei.JEI.addItem(creativeGasTankFrame);
@@ -124,8 +69,63 @@ recipes.addShapeless("Creative Gas Tank Frame",
 
 
 
-# *======= Recipes =======*
+# *======= Variables =======*
 
+
+var list = {
+	"ⰱ": <advancedrocketry:oxygencharger>,
+	"ⱎ": <appliedenergistics2:chest>,
+	"◫": <bigreactors:blockludicrite>,
+	"◊": <bigreactors:mineralanglesite>,
+	"♦": <bigreactors:mineralbenitoite>,
+	"◰": <botania:manatablet>.withTag({mana: 500000}),
+	"◙": <compactsolars:compact_solar_block:2>,
+	"ж": <draconicevolution:awakened_core>,
+	"Ж": <draconicevolution:draconium_capacitor:1>,
+	"☑": <draconicevolution:draconium_chest>,
+	"☠": <extendedcrafting:material:13>,
+	"ⱋ": <extracells:storage.component:3>,
+	"☒": <extrautils2:compressedcobblestone:7>,
+	"◱": <extrautils2:decorativesolid:3>,
+	"⩉": <extrautils2:drum:3>,
+	"☺": <extrautils2:ingredients:5>,
+	"♂": <extrautils2:ingredients:16>,
+	"ⰻ": <extrautils2:klein>,
+	"ⱄ": <extrautils2:opinium:6>,
+	"◧": <extrautils2:passivegenerator:2>,
+	"◨": <extrautils2:passivegenerator:3>,
+	"◩": <extrautils2:passivegenerator:4>,
+	"◪": <extrautils2:passivegenerator:5>,
+	"☐": <extrautils2:passivegenerator:8>,
+	"☼": <extrautils2:suncrystal>,
+	"◘": <ic2:nuclear:10>,
+	"◉": <industrialforegoing:black_hole_tank>,
+	"▣": <industrialforegoing:black_hole_unit>,
+	"▨": <mekanism:basicblock2:3>.withTag({tier: 3}),
+	"▩": <mekanism:basicblock2:4>.withTag({tier: 3}),
+	"⍤": <mekanism:gastank>.withTag({tier: 4}),
+	"⍣": <mekanism:machineblock2:11>.withTag({tier: 4}),
+	"ⰷ": <mysticalagradditions:stuff:69>,
+	"▦": <ore:blockDraconiumAwakened>,
+	"▤": <ore:blockMirion>,
+	"▧": <ore:blockOsgloglas>,
+	"◇": <ore:gemDilithium>,
+	"▭": <ore:ingotMirion>,
+	"▬": <ore:ingotUltimate>,
+	"▢": <ore:plateElite>,
+	"▥": <thermalexpansion:cell>.withTag({Level: 4 as byte}),
+	"◽": <thermalexpansion:frame:148>,
+	"♠": Bucket("ic2uu_matter"),
+	"♣": Bucket("rocket_fuel"),
+} as IIngredient[string];
+
+
+
+var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
+  TrophyItem:{id:"twilightforest:trophy",Count:1 as byte, Damage:5 as short},
+  TrophyName:"Twilight Forest Master Trophy",
+  TrophyVariant:"gold"
+});
 
 # Twilight Forest Master Trophy
 	recipes.addShapedMirrored("Twilight Forest Master Trophy", twilightForestMasterTrophy, 
@@ -136,13 +136,21 @@ recipes.addShapeless("Creative Gas Tank Frame",
 # Master Trophy
 	mods.jei.JEI.addItem(twilightForestMasterTrophy);
 	
+# *======= Recipes =======*
+
 # Mystical Agradditions Creative Essence
-	mods.extendedcrafting.TableCrafting.addShaped(0, <mysticalagradditions:stuff:69>, 
-	[[<ore:blockInsaniumEssence>, <ore:ingotVoid>, <ore:blockInsaniumEssence>, <ore:ingotVoid>, <ore:blockInsaniumEssence>], 
-	[<ore:ingotVoid>, <ore:essenceTier6>, <ore:blockBaseEssence>, <ore:essenceTier6>, <ore:ingotVoid>], 
-	[<ore:blockInsaniumEssence>, <ore:blockBaseEssence>, <ore:blockInsanium>, <ore:blockBaseEssence>, <ore:blockInsaniumEssence>], 
-	[<ore:ingotVoid>, <ore:essenceTier6>, <ore:blockBaseEssence>, <ore:essenceTier6>, <ore:ingotVoid>], 
-	[<ore:blockInsaniumEssence>, <ore:ingotVoid>, <ore:blockInsaniumEssence>, <ore:ingotVoid>, <ore:blockInsaniumEssence>]]);  
+	list["α"] = <ore:blockInsaniumEssence>;
+	list["β"] = <ore:ingotVoid>;
+	list["γ"] = <ore:essenceTier6>;
+	list["δ"] = <ore:blockBaseEssence>;
+	list["ε"] = <ore:blockInsanium>;
+
+	craft.make( <mysticalagradditions:stuff:69>, ["pretty",
+	"α β α β α",
+	"β γ δ γ β",
+	"α δ ε δ α",
+	"β γ δ γ β",
+	"α β α β α"], list);
 
 # Ultimate Ingot
 	mods.extendedcrafting.TableCrafting.addShapeless(0, <extendedcrafting:material:32>, 
@@ -187,111 +195,72 @@ recipes.addShapeless("Creative Gas Tank Frame",
 	<extrautils2:screen>, <opencomputers:screen3>, 
 	<opencomputers:screen2>, <opencomputers:screen1>]);
 
-# RFTools Creative Powercell
-	mods.extendedcrafting.TableCrafting.addShaped(4, <rftools:powercell_creative>,	
-	[[rtgFuel, resonantFrame, ingotUltimate, ingotUltimate, ingotUltimate, ingotUltimate, ingotUltimate, resonantFrame, rtgFuel], 
-	[resonantFrame, <nuclearcraft:rtg_californium>, elitePlating, anglesite, dilithium, anglesite, elitePlating, <nuclearcraft:rtg_californium>, resonantFrame], 
-	[ingotUltimate, elitePlating, ultProvider, resonantCube, <environmentaltech:solar_cont_5>, resonantCube, ultProvider, elitePlating, ingotUltimate], 
-	[ingotUltimate, benitoite, resonantCube, ultCell, <draconicevolution:draconic_energy_core>, ultCell, resonantCube, benitoite, ingotUltimate], 
-	[ingotUltimate, dilithium, <environmentaltech:solar_cont_4>, <extrautils2:rainbowgenerator>, ultCatalyst, <extrautils2:rainbowgenerator>, <environmentaltech:solar_cont_4>, dilithium, ingotUltimate], 
-	[ingotUltimate, benitoite, resonantCube, ultCell, <draconicevolution:draconic_energy_core>, ultCell, resonantCube, benitoite, ingotUltimate], 
-	[ingotUltimate, elitePlating, ultProvider, resonantCube, <environmentaltech:solar_cont_5>, resonantCube, ultProvider, elitePlating, ingotUltimate], 
-	[resonantFrame, <nuclearcraft:rtg_californium>, elitePlating, anglesite, dilithium, anglesite, elitePlating, <nuclearcraft:rtg_californium>, resonantFrame], 
-	[rtgFuel, resonantFrame, ingotUltimate, ingotUltimate, ingotUltimate, ingotUltimate, ingotUltimate, resonantFrame, rtgFuel]]); 
-	
+
+
 # Creative Mana Tablet
-	mods.extendedcrafting.TableCrafting.addShaped(4, <botania:manatablet>.withTag({mana: 500000, creative: 1 as byte}),	
-	[[manaTablet, ingotMirion, ingotMirion, ingotMirion, manaTablet, ingotMirion, ingotMirion, ingotMirion, manaTablet], 
-	[ingotMirion, <botania:laputashard>, benitoite, benitoite, benitoite, benitoite, benitoite, <botania:laputashard>, ingotMirion], 
-	[ingotMirion, benitoite, <ore:gaiaIngot>, <botania:storage:1>, <botania:pylon:2>, <botania:storage:1>, <ore:gaiaIngot>, benitoite, ingotMirion], 
-	[ingotMirion, benitoite, <botania:storage:1>, <botania:specialflower>.withTag({type: "narslimmus"}), <botania:specialflower>.withTag({type: "kekimurus"}), <botania:specialflower>.withTag({type: "munchdew"}), <botania:storage:1>, benitoite, ingotMirion], 
-	[manaTablet, benitoite, <botania:pylon:2>, <botania:specialflower>.withTag({type: "kekimurus"}), <botania:manaringgreater>.withTag({mana: 2000000}), <botania:specialflower>.withTag({type: "kekimurus"}), <botania:pylon:2>, benitoite, manaTablet], 
-	[ingotMirion, benitoite, <botania:storage:1>, <botania:specialflower>.withTag({type: "gourmaryllis"}), <botania:specialflower>.withTag({type: "kekimurus"}), <botania:specialflower>.withTag({type: "entropinnyum"}), <botania:storage:1>, benitoite, ingotMirion], 
-	[ingotMirion, benitoite, <ore:gaiaIngot>, <botania:storage:1>, <botania:pylon:2>, <botania:storage:1>, <ore:gaiaIngot>, benitoite, ingotMirion], 
-	[ingotMirion, <botania:laputashard>, benitoite, benitoite, benitoite, benitoite, benitoite, <botania:laputashard>, ingotMirion], 
-	[manaTablet, ingotMirion, ingotMirion, ingotMirion, manaTablet, ingotMirion, ingotMirion, ingotMirion, manaTablet]]);
+	list["‡"] = <botania:laputashard>;
+	list["‗"] = <ore:gaiaIngot>;
+	list["◲"] = <botania:storage:1>;
+	list["♰"] = <botania:pylon:2>;
+	list["Ⰰ"] = <botania:manaringgreater>.withTag({mana: 2000000});
+	list["₀"] = <botania:specialflower>.withTag({type: "narslimmus"});
+	list["₁"] = <botania:specialflower>.withTag({type: "kekimurus"});
+	list["₂"] = <botania:specialflower>.withTag({type: "gourmaryllis"});
+	list["₃"] = <botania:specialflower>.withTag({type: "munchdew"});
+	list["₄"] = <botania:specialflower>.withTag({type: "entropinnyum"});
+
+	craft.make(<botania:manatablet>.withTag({mana: 500000, creative: 1 as byte}), ["pretty",
+	"◰ ▭ ▭ ▭ ◰ ▭ ▭ ▭ ◰", 
+	"▭ ‡ ♦ ♦ ♦ ♦ ♦ ‡ ▭", 
+	"▭ ♦ ‗ ◲ ♰ ◲ ‗ ♦ ▭", 
+	"▭ ♦ ◲ ₀ ₁ ₃ ◲ ♦ ▭", 
+	"◰ ♦ ♰ ₁ Ⰰ ₁ ♰ ♦ ◰", 
+	"▭ ♦ ◲ ₂ ₁ ₄ ◲ ♦ ▭", 
+	"▭ ♦ ‗ ◲ ♰ ◲ ‗ ♦ ▭", 
+	"▭ ‡ ♦ ♦ ♦ ♦ ♦ ‡ ▭", 
+	"◰ ▭ ▭ ▭ ◰ ▭ ▭ ▭ ◰"], list);
 	
 # Everlasting Guilty Pool
-	mods.extendedcrafting.TableCrafting.addShaped(4, <botania:pool:1>,	
-	[[<botania:pool:3>, ingotMirion, ingotMirion, ingotMirion, <botania:pool:3>, ingotMirion, ingotMirion, ingotMirion, <botania:pool:3>], 
-	[ingotMirion, <botania:laputashard>, benitoite, benitoite, benitoite, benitoite, benitoite, <botania:laputashard>, ingotMirion], 
-	[ingotMirion, benitoite, <ore:gaiaIngot>, <botania:storage:1>, <botania:pylon:2>, <botania:storage:1>, <ore:gaiaIngot>, benitoite, ingotMirion], 
-	[ingotMirion, benitoite, <botania:storage:1>, <botania:specialflower>.withTag({type: "narslimmus"}), <botania:specialflower>.withTag({type: "kekimurus"}), <botania:specialflower>.withTag({type: "munchdew"}), <botania:storage:1>, benitoite, ingotMirion], 
-	[<botania:pool:3>, benitoite, <botania:pylon:2>, <botania:specialflower>.withTag({type: "kekimurus"}), <botania:manaringgreater>.withTag({mana: 2000000}), <botania:specialflower>.withTag({type: "kekimurus"}), <botania:pylon:2>, benitoite, <botania:pool:3>], 
-	[ingotMirion, benitoite, <botania:storage:1>, <botania:specialflower>.withTag({type: "gourmaryllis"}), <botania:specialflower>.withTag({type: "kekimurus"}), <botania:specialflower>.withTag({type: "entropinnyum"}), <botania:storage:1>, benitoite, ingotMirion], 
-	[ingotMirion, benitoite, <ore:gaiaIngot>, <botania:storage:1>, <botania:pylon:2>, <botania:storage:1>, <ore:gaiaIngot>, benitoite, ingotMirion], 
-	[ingotMirion, <botania:laputashard>, benitoite, benitoite, benitoite, benitoite, benitoite, <botania:laputashard>, ingotMirion], 
-	[<botania:pool:3>, ingotMirion, ingotMirion, ingotMirion, <botania:pool:3>, ingotMirion, ingotMirion, ingotMirion, <botania:pool:3>]]);
+	list["∪"] = <botania:pool:3>;
 
-# Mekanism Creative Tank
-	mods.extendedcrafting.TableCrafting.addShaped(4, <mekanism:machineblock2:11>.withTag({tier: 4, mekData:{}}), 
-	[[<industrialforegoing:black_hole_tank>, Bucket("milk_goat"), Bucket("blood"), Bucket("liquiddna"), <thermalexpansion:tank>.withTag({Fluid: {FluidName: "bio.ethanol", Amount: 32000}}), Bucket("juice"), Bucket("mutagen"), Bucket("biomass"), <industrialforegoing:black_hole_tank>], 
-	[Bucket("empoweredoil"), resonantFrame, ingotUltimate, ingotUltimate, <bigreactors:mineralanglesite>, ingotUltimate, ingotUltimate, resonantFrame, Bucket("witchwater")], 
-	[Bucket("xu_demonic_metal"), ingotUltimate, megaDrum, megaDrum, megaDrum, megaDrum, megaDrum, ingotUltimate, Bucket("essence")], 
-	[Bucket("draconium"), ingotUltimate, megaDrum, awakendedCore, ultCatalyst, awakendedCore, megaDrum, ingotUltimate, Bucket("sewage")], 
-	[<thermalexpansion:tank>.withTag({Fluid: {FluidName: "tree_oil", Amount: 32000}}), <bigreactors:mineralanglesite>, megaDrum, ultCatalyst, <draconicevolution:chaotic_core>, ultCatalyst, megaDrum, <bigreactors:mineralanglesite>, <thermalexpansion:tank>.withTag({Fluid: {FluidName: "ic2uu_matter", Amount: 32000}})], 
-	[Bucket("pyrotheum"), ingotUltimate, megaDrum, awakendedCore, ultCatalyst, awakendedCore, megaDrum, ingotUltimate, Bucket("ic2pahoehoe_lava")], 
-	[Bucket("aerotheum"), ingotUltimate, megaDrum, megaDrum, megaDrum, megaDrum, megaDrum, ingotUltimate, Bucket("clay")], 
-	[Bucket("essence"), resonantFrame, ingotUltimate, ingotUltimate, <bigreactors:mineralanglesite>, ingotUltimate, ingotUltimate, resonantFrame, Bucket("tritium")], 
-	[<industrialforegoing:black_hole_tank>, Bucket("ender"), Bucket("cryotheum"), Bucket("petrotheum"), <thermalexpansion:tank>.withTag({Fluid: {FluidName: "mana", Amount: 32000}}), Bucket("refined_fuel"), Bucket("mirion"), Bucket("neutron"), <industrialforegoing:black_hole_tank>]]); 
-	recipes.addShapeless("Creative Tank Reset", 
-	<mekanism:machineblock2:11>.withTag({tier: 4, mekData: {}}), 
-	[<mekanism:machineblock2:11>.withTag({tier: 4})]);
+	craft.make(<botania:pool:1>, ["pretty",
+	"∪ ▭ ▭ ▭ ∪ ▭ ▭ ▭ ∪",
+	"▭ ‡ ♦ ♦ ♦ ♦ ♦ ‡ ▭",
+	"▭ ♦ ‗ ◲ ♰ ◲ ‗ ♦ ▭",
+	"▭ ♦ ◲ ₀ ₁ ₃ ◲ ♦ ▭",
+	"∪ ♦ ♰ ₁ Ⰰ ₁ ♰ ♦ ∪",
+	"▭ ♦ ◲ ₂ ₁ ₄ ◲ ♦ ▭",
+	"▭ ♦ ‗ ◲ ♰ ◲ ‗ ♦ ▭",
+	"▭ ‡ ♦ ♦ ♦ ♦ ♦ ‡ ▭",
+	"∪ ▭ ▭ ▭ ∪ ▭ ▭ ▭ ∪"], list);
+
+
 
 # Storage Drawers Unlimited Withdrawel Upgrade
-	mods.extendedcrafting.TableCrafting.addShaped(4, <storagedrawers:upgrade_creative:1> * 2, 
-	[[<ore:blockCrystalMatrix>, blackHoleUnit, ultCatalyst, ultCatalyst, <bigreactors:mineralanglesite>, ultCatalyst, ultCatalyst, blackHoleUnit, <ore:blockCrystalMatrix>], 
-	[blackHoleUnit, resonantFrame, resonantFrame, draconicChest, <extracells:storage.component:3>, draconicChest, resonantFrame, resonantFrame, blackHoleUnit], 
-	[ultCatalyst, resonantFrame, <ore:blockAethium>, <draconicevolution:chaotic_core>, benitoite, <draconicevolution:chaotic_core>, <ore:blockAethium>, resonantFrame, ultCatalyst], 
-	[ultCatalyst, draconicChest, creativeEssence, <rftools:powercell_creative>, <ore:ingotInfinity>, <ic2:te:86>, creativeEssence, draconicChest, ultCatalyst], 
-	[<bigreactors:mineralanglesite>, <extracells:storage.component:3>, benitoite, <environmentaltech:solar_cont_6>, twilightForestMasterTrophy, <environmentaltech:solar_cont_6>, benitoite, <extracells:storage.component:3>, <bigreactors:mineralanglesite>], 
-	[ultCatalyst, draconicChest, creativeEssence, creativeTank, <ore:ingotInfinity>, creativeGasTank, creativeEssence, draconicChest, ultCatalyst], 
-	[ultCatalyst, resonantFrame, <ore:blockAethium>, <draconicevolution:chaotic_core>, benitoite, <draconicevolution:chaotic_core>, <ore:blockAethium>, resonantFrame, ultCatalyst], 
-	[blackHoleUnit, resonantFrame, resonantFrame, draconicChest, <extracells:storage.component:3>, draconicChest, resonantFrame, resonantFrame, blackHoleUnit], 
-	[<ore:blockCrystalMatrix>, blackHoleUnit, ultCatalyst, ultCatalyst, <bigreactors:mineralanglesite>, ultCatalyst, ultCatalyst, blackHoleUnit, <ore:blockCrystalMatrix>]]);
+	list["χ"] = <ore:blockCrystalMatrix>;
+	list["◳"] = <ore:blockAethium>;
+	list["✝"] = <draconicevolution:chaotic_core>;
+	list["⌧"] = <ore:ingotInfinity>;
+	list["⇯"] = <rftools:powercell_creative>;
+	list["⇫"] = <ic2:te:86>;
+	list["⇬"] = <environmentaltech:solar_cont_6>;
+	list["⇭"] = twilightForestMasterTrophy;
+
+	craft.make(<storagedrawers:upgrade_creative:1> * 2, ["pretty",
+	"χ ▣ ☠ ☠ ◊ ☠ ☠ ▣ χ",
+	"▣ ◽ ◽ ☑ ⱋ ☑ ◽ ◽ ▣",
+	"☠ ◽ ◳ ✝ ♦ ✝ ◳ ◽ ☠",
+	"☠ ☑ ⰷ ⇯ ⌧ ⇫ ⰷ ☑ ☠",
+	"◊ ⱋ ♦ ⇬ ⇭ ⇬ ♦ ⱋ ◊",
+	"☠ ☑ ⰷ ⍣ ⌧ ⍤ ⰷ ☑ ☠",
+	"☠ ◽ ◳ ✝ ♦ ✝ ◳ ◽ ☠",
+	"▣ ◽ ◽ ☑ ⱋ ☑ ◽ ◽ ▣",
+	"χ ▣ ☠ ☠ ◊ ☠ ☠ ▣ χ"], list);
 	
 	recipes.addShapeless("Creative Storage Upgrade Duplication", 
 	<storagedrawers:upgrade_creative:1> * 2, 
 	[<storagedrawers:upgrade_creative:1>]);
 
-# ExU2 Mill
-	mods.extendedcrafting.TableCrafting.addShaped(4, <extrautils2:passivegenerator:6>,
-	[[amazingCore, amazingCore, ingotUltimate, millDragonEgg, millDragonEgg, millDragonEgg, ingotUltimate, amazingCore, amazingCore], 
-	[amazingCore, ingotUltimate, millWind, millWind, anglesite, millWind, millWind, ingotUltimate, amazingCore], 
-	[ingotUltimate, millLava, benitoite, speedUpgrade3, moonStone, speedUpgrade3, benitoite, millFire, ingotUltimate], 
-	[millDragonEgg, millLava, speedUpgrade3, kleinBottle, draconicEnergyCore, kleinBottle, speedUpgrade3, millFire, millDragonEgg], 
-	[millDragonEgg, anglesite, moonStone, draconicEnergyCore, awakendedCore, draconicEnergyCore, moonStone, anglesite, millDragonEgg], 
-	[millDragonEgg, millLava, speedUpgrade3, sunCrystal, draconicEnergyCore, sunCrystal, speedUpgrade3, millFire, millDragonEgg], 
-	[ingotUltimate, millLava, benitoite, speedUpgrade3, moonStone, speedUpgrade3, benitoite, millFire, ingotUltimate], 
-	[amazingCore, ingotUltimate, millWater, millWater, anglesite, millWater, millWater, ingotUltimate, amazingCore], 
-	[amazingCore, amazingCore, ingotUltimate, millDragonEgg, millDragonEgg, millDragonEgg, ingotUltimate, amazingCore, amazingCore]]);  
-	
-# IC2 Creative Generator
-	mods.extendedcrafting.TableCrafting.addShaped(4, <ic2:te:86>, 	
-	[[bucketUU, rtgFuel, rtgFuel, rtgFuel, bucketUU, rtgFuel, rtgFuel, rtgFuel, bucketUU], 
-	[hvSolar, ultProvider, ultProvider, anglesite, anglesite, anglesite, ultProvider, ultProvider, hvSolar], 
-	[hvSolar, ultProvider, <ic2:te:75>, <ic2:te:22>, <nuclearcraft:fusion_core>, <ic2:te:22>, <ic2:te:75>, ultProvider, hvSolar], 
-	[hvSolar, anglesite, <ic2:te:22>, ultCell, ultCatalyst, ultCell, <ic2:te:22>, anglesite, hvSolar], 
-	[bucketUU, anglesite, <nuclearcraft:fusion_core>, ultCatalyst, <extrautils2:decorativesolid:8>, ultCatalyst, <nuclearcraft:fusion_core>, anglesite, bucketUU], 
-	[hvSolar, anglesite, <ic2:te:22>, ultCell, ultCatalyst, ultCell, <ic2:te:22>, anglesite, hvSolar], 
-	[hvSolar, ultProvider, <ic2:te:75>, <ic2:te:22>, <nuclearcraft:fusion_core>, <ic2:te:22>, <ic2:te:75>, ultProvider, hvSolar], 
-	[hvSolar, ultProvider, ultProvider, anglesite, anglesite, anglesite, ultProvider, ultProvider, hvSolar], 
-	[bucketUU, rtgFuel, rtgFuel, rtgFuel, bucketUU, rtgFuel, rtgFuel, rtgFuel, bucketUU]]); 
-
-# Creative Gas Tank 
-	mods.extendedcrafting.TableCrafting.addShaped(4, <mekanism:gastank>.withTag({tier: 4, mekData: {}}),	
-	[[ingotUltimate, ingotUltimate, ingotUltimate, blockLudicrite, rocketFuel, blockLudicrite, ingotUltimate, ingotUltimate, ingotUltimate], 
-	[ingotUltimate, blackHoleTank, blockOsgloglas, anglesite, rocketFuel, anglesite, blockOsgloglas, blackHoleTank, ingotUltimate], 
-	[ingotUltimate, blockMirion, <thermalexpansion:tank>.withTag({Fluid: {FluidName: "neutron", Amount: 512000}, Level: 3 as byte}), <avaritia:resource:4>, ultCatalyst, <avaritia:resource:4>, <thermalexpansion:tank>.withTag({Fluid: {FluidName: "mana", Amount: 512000}, Level: 3 as byte}), blockMirion, ingotUltimate], 
-	[blockLudicrite, benitoite, gasPad, awakendedCore, <advancedrocketry:liquidtank>, awakendedCore, gasPad, benitoite, blockLudicrite], 
-	[rocketFuel, rocketFuel, ultCatalyst, <advancedrocketry:liquidtank>, creativeGasTankFrame, <advancedrocketry:liquidtank>, ultCatalyst, rocketFuel, rocketFuel], 
-	[blockLudicrite, benitoite, gasPad, awakendedCore, creativeTank, awakendedCore, gasPad, benitoite, blockLudicrite], 
-	[ingotUltimate, blockMirion, <thermalexpansion:tank>.withTag({Fluid: {FluidName: "ic2uu_matter", Amount: 512000}, Level: 3 as byte}), <avaritia:resource:4>, ultCatalyst, <avaritia:resource:4>, <thermalexpansion:tank>.withTag({Fluid: {FluidName: "liquiddna", Amount: 512000}, Level: 3 as byte}), blockMirion, ingotUltimate], 
-	[ingotUltimate, blackHoleTank, blockOsgloglas, anglesite, rocketFuel, anglesite, blockOsgloglas, blackHoleTank, ingotUltimate],
-	[ingotUltimate, ingotUltimate, ingotUltimate, blockLudicrite, rocketFuel, blockLudicrite, ingotUltimate, ingotUltimate, ingotUltimate]]);  
-	recipes.addShapeless("Creative Gas Tank Reset", 
-	<mekanism:gastank>.withTag({tier: 4, mekData: {}}), 
-	[<mekanism:gastank>.withTag({tier: 4})]);
 	
 # Psi Creative Rod Frame
 	mods.extendedcrafting.TableCrafting.addShaped(4, <psi:cad_assembly:5>, 
@@ -305,56 +274,201 @@ recipes.addShapeless("Creative Gas Tank Frame",
 	[null, null, null, null, null, null, <psi:cad_assembly:3>, <psi:cad_assembly:3>, <bigreactors:mineralbenitoite>], 
 	[null, null, null, null, null, null, null, <bigreactors:mineralbenitoite>, <bigreactors:mineralbenitoite>]]); 
 
+	list["π"] = <storagedrawers:upgrade_creative:1>;
+	list["ρ"] = <botania:exchangerod>;
+	list["ς"] = <buildinggadgets:exchangertool>.withTag({});
+
 # DE Creative Block Exchanger
-	mods.extendedcrafting.TableCrafting.addShaped(4, <draconicevolution:creative_exchanger>,
-	[[null, null, ultCatalyst, null, null, null, null, null, null], 
-	[null, null, null, ultCatalyst, null, null, null, null, null], 
-	[ultCatalyst, null, <storagedrawers:upgrade_creative:1>, ultCatalyst, null, null, null, null, null], 
-	[null, ultCatalyst, ultCatalyst, <botania:exchangerod>, ultCatalyst, null, null, null, null], 
-	[null, null, null, ultCatalyst, ultCatalyst, null, null, null, null], 
-	[null, null, null, null, null, ultCatalyst, ultCatalyst, null, null], 
-	[null, null, null, null, null, ultCatalyst, <buildinggadgets:exchangertool>.withTag({}), ultCatalyst, null], 
-	[null, null, null, null, null, null, ultCatalyst, ultCatalyst, null], 
-	[null, null, null, null, null, null, null, null, anglesite]]);
+	craft.make(<draconicevolution:creative_exchanger>, ["pretty",
+	"    ☠            ", 
+	"      ☠          ", 
+	"☠   π ☠          ", 
+	"  ☠ ☠ ρ ☠        ", 
+	"      ☠ ☠        ", 
+	"          ☠ ☠    ", 
+	"          ☠ ς ☠  ", 
+	"            ☠ ☠  ", 
+	"                ◊"], list);
 	
 # Creative Wireless Crafting Terminal
 	recipes.addShapeless("Creative Wireless Crafting Terminal", 
 	<wct:wct_creative>, 
 	[<wct:wct>.withTag({}),<rftools:powercell_creative>.anyDamage()]);
 
+
 # TIC Creative Modifier
-	mods.extendedcrafting.TableCrafting.addShaped(4, <tconstruct:materials:50>,
-	[[<ore:blockPigiron>, <ore:blockAlubrass>, <tconstruct:materials:19>, <tconstruct:materials:19>, <tconstruct:materials:19>, <tconstruct:materials:19>, <tconstruct:materials:19>, <ore:blockAlubrass>, <ore:blockPigiron>], 
-	[<ore:blockAlubrass>, <ore:blockPigiron>, <ore:blockManyullyn>, <ore:blockOsmiridium>, <ore:blockOsmiridium>, <ore:blockOsmiridium>, <ore:blockManyullyn>, <ore:blockPigiron>, <ore:blockAlubrass>], 
-	[<ore:slimecrystalBlue>, <ore:blockManyullyn>, <tconstruct:large_plate>.withTag({Material: "xu_magical_wood"}), <ore:blockKnightslime>, <ore:blockKnightslime>, <ore:blockKnightslime>, <tconstruct:large_plate>.withTag({Material: "xu_magical_wood"}), <ore:blockManyullyn>, <ore:slimecrystalGreen>], 
-	[<ore:slimecrystalBlue>, <ore:blockAlumite>, <ore:blockKnightslime>, <tconstruct:metal:6>, <tconstruct:materials:12>, <tconstruct:metal:6>, <ore:blockKnightslime>, <ore:blockMirion>, <ore:slimecrystalGreen>], 
-	[<ore:slimecrystalBlue>, <ore:blockAlumite>, <ore:blockKnightslime>, <tconstruct:materials:13>, <extendedcrafting:singularity:5>, <tconstruct:materials:13>, <ore:blockKnightslime>, <ore:blockMirion>, <ore:slimecrystalGreen>], 
-	[<ore:slimecrystalBlue>, <ore:blockAlumite>, <ore:blockKnightslime>, <tconstruct:metal:6>, <tconstruct:materials:12>, <tconstruct:metal:6>, <ore:blockKnightslime>, <ore:blockMirion>, <ore:slimecrystalGreen>], 
-	[<ore:slimecrystalBlue>, <ore:blockManyullyn>, <tconstruct:large_plate>.withTag({Material: "xu_magical_wood"}), <ore:blockKnightslime>, <ore:blockKnightslime>, <ore:blockKnightslime>, <tconstruct:large_plate>.withTag({Material: "xu_magical_wood"}), <ore:blockManyullyn>, <ore:slimecrystalGreen>], 
-	[<ore:blockAlubrass>, <ore:blockPigiron>, <ore:blockManyullyn>, <ore:blockOsgloglas>, <ore:blockOsgloglas>, <ore:blockOsgloglas>, <ore:blockManyullyn>, <ore:blockPigiron>, <ore:blockAlubrass>], 
-	[<ore:blockPigiron>, <ore:blockAlubrass>, <ore:slimecrystalMagma>, <ore:slimecrystalMagma>, <ore:slimecrystalMagma>, <ore:slimecrystalMagma>, <ore:slimecrystalMagma>, <ore:blockAlubrass>, <ore:blockPigiron>]]);  
-	
+	list["F"] = <ore:blockPigiron>;
+	list["G"] = <ore:blockAlubrass>;
+	list["H"] = <tconstruct:materials:19>;
+	list["I"] = <ore:blockManyullyn>;
+	list["J"] = <ore:blockOsmiridium>;
+	list["K"] = <ore:slimecrystalBlue>;
+	list["L"] = <tconstruct:large_plate>.withTag({Material: "xu_magical_wood"});
+	list["M"] = <ore:blockKnightslime>;
+	list["N"] = <ore:slimecrystalGreen>;
+	list["O"] = <ore:blockAlumite>;
+	list["P"] = <tconstruct:metal:6>;
+	list["Q"] = <tconstruct:materials:12>;
+	list["R"] = <tconstruct:materials:13>;
+	list["S"] = <extendedcrafting:singularity:5>;
+	list["T"] = <ore:slimecrystalMagma>;
+
+	craft.make( <tconstruct:materials:50>, ["pretty",
+	"F G H H H H H G F",
+	"G F I J J J I F G",
+	"K I L M M M L I N",
+	"K O M P Q P M ▤ N",
+	"K O M R S R M ▤ N",
+	"K O M P Q P M ▤ N",
+	"K I L M M M L I N",
+	"G F I ▧ ▧ ▧ I F G",
+	"F G T T T T T G F"], list);
+
 # AE2 Creative Cell
-	mods.extendedcrafting.TableCrafting.addShaped(4, <appliedenergistics2:creative_storage_cell>,
-	[[null, null, null, null, stoneburnt, null, null, null, null], 
-	[null, null, null, cobble8x, storage16m, cobble8x, null, null, null], 
-	[null, null, stoneburnt, storage16m, meChest, storage16m, stoneburnt, null, null], 
-	[null, cobble8x, storage16m, meChest, draconicChest, meChest, storage16m, cobble8x, null], 
-	[stoneburnt, storage16m, meChest, draconicChest, <storagedrawers:upgrade_creative:1>, draconicChest, meChest, storage16m, stoneburnt], 
-	[null, cobble8x, storage16m, meChest, draconicChest, meChest, storage16m, cobble8x, null], 
-	[null, null, stoneburnt, storage16m, meChest, storage16m, stoneburnt, null, null], 
-	[null, null, null, cobble8x, storage16m, cobble8x, null, null, null], 
-	[null, null, null, null, stoneburnt, null, null, null, null]]);  
+	craft.make(<appliedenergistics2:creative_storage_cell>, ["pretty",
+	"        ◱        ",
+	"      ☒ ⱋ ☒      ",
+	"    ◱ ⱋ ⱎ ⱋ ◱    ",
+	"  ☒ ⱋ ⱎ ☑ ⱎ ⱋ ☒  ",
+	"◱ ⱋ ⱎ ☑ π ☑ ⱎ ⱋ ◱",
+	"  ☒ ⱋ ⱎ ☑ ⱎ ⱋ ☒  ",
+	"    ◱ ⱋ ⱎ ⱋ ◱    ",
+	"      ☒ ⱋ ☒      ",
+	"        ◱        "], list);
 	
+
 # Draconic Evolution Creative Flux Capacitor
-	mods.extendedcrafting.TableCrafting.addShaped(4, <draconicevolution:draconium_capacitor:2>.withTag({Energy: 1073741823}),
-	[[null, null, null, null, blockAwakended, null, null, null, null], 
-	[null, null, ingotUltimate, ingotUltimate, blockAwakended, ingotUltimate, ingotUltimate, null, null], 
-	[null, ingotUltimate, creativeEssence, creativeEssence, blockAwakended, creativeEssence, creativeEssence, ingotUltimate, null], 
-	[null, ingotUltimate, creativeEssence, awakendedCapacitor, awakendedCapacitor, awakendedCapacitor, creativeEssence, ingotUltimate, null], 
-	[blockAwakended, blockAwakended, blockAwakended, awakendedCapacitor, <avaritia:resource:5>, awakendedCapacitor, blockAwakended, blockAwakended, blockAwakended], 
-	[null, ingotUltimate, creativeEssence, awakendedCapacitor, awakendedCapacitor, awakendedCapacitor, creativeEssence, ingotUltimate, null], 
-	[null, ingotUltimate, creativeEssence, creativeEssence, blockAwakended, creativeEssence, creativeEssence, ingotUltimate, null], 
-	[null, null, ingotUltimate, ingotUltimate, blockAwakended, ingotUltimate, ingotUltimate, null, null], 
-	[null, null, null, null, blockAwakended, null, null, null, null]]); 
+	list["σ"] = <avaritia:resource:5>;
+	craft.make(<draconicevolution:draconium_capacitor:2>.withTag({Energy: 1073741823}), ["pretty",
+	"        ▦        ",
+	"    ▬ ▬ ▦ ▬ ▬    ",
+	"  ▬ ⰷ ⰷ ▦ ⰷ ⰷ ▬  ",
+	"  ▬ ⰷ Ж Ж Ж ⰷ ▬  ",
+	"▦ ▦ ▦ Ж σ Ж ▦ ▦ ▦",
+	"  ▬ ⰷ Ж Ж Ж ⰷ ▬  ",
+	"  ▬ ⰷ ⰷ ▦ ⰷ ⰷ ▬  ",
+	"    ▬ ▬ ▦ ▬ ▬    ",
+	"        ▦        "], list);
 	
+
+
+list["τ"] = <nuclearcraft:rtg_californium>;
+list["ψ"] = <environmentaltech:solar_cont_4>;
+list["υ"] = <environmentaltech:solar_cont_5>;
+list["φ"] = <draconicevolution:draconic_energy_core>;
+list["⫲"] = <extrautils2:rainbowgenerator>;
+
+# RFTools Creative Powercell
+	craft.make(<rftools:powercell_creative>, ["pretty",
+	"◘ ◽ ▬ ▬ ▬ ▬ ▬ ◽ ◘",
+	"◽ τ ▢ ◊ ◇ ◊ ▢ τ ◽",
+	"▬ ▢ ▩ ▥ υ ▥ ▩ ▢ ▬",
+	"▬ ♦ ▥ ▨ φ ▨ ▥ ♦ ▬",
+	"▬ ◇ ψ ⫲ ☠ ⫲ ψ ◇ ▬",
+	"▬ ♦ ▥ ▨ φ ▨ ▥ ♦ ▬",
+	"▬ ▢ ▩ ▥ υ ▥ ▩ ▢ ▬",
+	"◽ τ ▢ ◊ ◇ ◊ ▢ τ ◽",
+	"◘ ◽ ▬ ▬ ▬ ▬ ▬ ◽ ◘"], list);
+	
+/*  •■◆○◎◯◴◵◶◷☹♀♥♪♫♱✓⸕₅₆₇₈₉⇮⫳⩈  */
+
+
+# Mekanism Creative Tank
+	list["a"] = Bucket("milk_goat");
+	list["b"] = Bucket("blood");
+	list["c"] = Bucket("liquiddna");
+	list["d"] = Bucket("juice");
+	list["e"] = Bucket("mutagen");
+	list["f"] = Bucket("biomass");
+	list["g"] = Bucket("empoweredoil");
+	list["h"] = Bucket("witchwater");
+	list["i"] = Bucket("xu_demonic_metal");
+	list["j"] = Bucket("essence");
+	list["k"] = Bucket("draconium");
+	list["l"] = Bucket("sewage");
+	list["m"] = Bucket("pyrotheum");
+	list["n"] = Bucket("ic2pahoehoe_lava");
+	list["o"] = Bucket("aerotheum");
+	list["p"] = Bucket("clay");
+	list["q"] = Bucket("essence");
+	list["r"] = Bucket("tritium");
+	list["s"] = Bucket("ender");
+	list["t"] = Bucket("cryotheum");
+	list["u"] = Bucket("petrotheum");
+	list["v"] = Bucket("refined_fuel");
+	list["w"] = Bucket("mirion");
+	list["x"] = Bucket("neutron");
+	list["A"] = <industrialforegoing:black_hole_tank>;
+	list["B"] = <thermalexpansion:tank>.withTag({Fluid: {FluidName: "bio.ethanol", Amount: 32000}});
+	list["C"] = <thermalexpansion:tank>.withTag({Fluid: {FluidName: "tree_oil", Amount: 32000}});
+	list["D"] = <thermalexpansion:tank>.withTag({Fluid: {FluidName: "ic2uu_matter", Amount: 32000}});
+	list["E"] = <thermalexpansion:tank>.withTag({Fluid: {FluidName: "mana", Amount: 32000}});
+
+	craft.make( <mekanism:machineblock2:11>.withTag({tier: 4, mekData:{}}), ["pretty",
+	"A a b c B d e f A",
+	"g ◽ ▬ ▬ ◊ ▬ ▬ ◽ h",
+	"i ▬ ⩉ ⩉ ⩉ ⩉ ⩉ ▬ j",
+	"k ▬ ⩉ ж ☠ ж ⩉ ▬ l",
+	"C ◊ ⩉ ☠ ✝ ☠ ⩉ ◊ D",
+	"m ▬ ⩉ ж ☠ ж ⩉ ▬ n",
+	"o ▬ ⩉ ⩉ ⩉ ⩉ ⩉ ▬ p",
+	"q ◽ ▬ ▬ ◊ ▬ ▬ ◽ r",
+	"A s t u E v w x A"], list);
+
+	recipes.addShapeless("Creative Tank Reset", 
+	<mekanism:machineblock2:11>.withTag({tier: 4, mekData: {}}), 
+	[<mekanism:machineblock2:11>.withTag({tier: 4})]);
+
+
+# ExU2 Mill
+	craft.make(<extrautils2:passivegenerator:6>, ["pretty",
+	"ⱄ ⱄ ▬ ☐ ☐ ☐ ▬ ⱄ ⱄ",
+	"ⱄ ▬ ◩ ◩ ◊ ◩ ◩ ▬ ⱄ",
+	"▬ ◧ ♦ ♂ ☺ ♂ ♦ ◪ ▬",
+	"☐ ◧ ♂ ⰻ φ ⰻ ♂ ◪ ☐",
+	"☐ ◊ ☺ φ ж φ ☺ ◊ ☐",
+	"☐ ◧ ♂ ☼ φ ☼ ♂ ◪ ☐",
+	"▬ ◧ ♦ ♂ ☺ ♂ ♦ ◪ ▬",
+	"ⱄ ▬ ◨ ◨ ◊ ◨ ◨ ▬ ⱄ",
+	"ⱄ ⱄ ▬ ☐ ☐ ☐ ▬ ⱄ ⱄ"], list);
+	
+# IC2 Creative Generator	
+	list["U"] = <ic2:te:75>;
+	list["V"] = <ic2:te:22>;
+	list["W"] = <nuclearcraft:fusion_core>;
+	list["X"] = <extrautils2:decorativesolid:8>;
+
+	craft.make(  <ic2:te:86>, ["pretty",
+	"♠ ◘ ◘ ◘ ♠ ◘ ◘ ◘ ♠",
+	"◙ ▩ ▩ ◊ ◊ ◊ ▩ ▩ ◙",
+	"◙ ▩ U V W V U ▩ ◙",
+	"◙ ◊ V ▨ ☠ ▨ V ◊ ◙",
+	"♠ ◊ W ☠ X ☠ W ◊ ♠",
+	"◙ ◊ V ▨ ☠ ▨ V ◊ ◙",
+	"◙ ▩ U V W V U ▩ ◙",
+	"◙ ▩ ▩ ◊ ◊ ◊ ▩ ▩ ◙",
+	"♠ ◘ ◘ ◘ ♠ ◘ ◘ ◘ ♠"], list);
+
+# Creative Gas Tank
+	list["ζ"] = <thermalexpansion:tank>.withTag({Fluid: {FluidName: "neutron", Amount: 512000}, Level: 3 as byte});
+	list["η"] = <avaritia:resource:4>;
+	list["θ"] = <thermalexpansion:tank>.withTag({Fluid: {FluidName: "mana", Amount: 512000}, Level: 3 as byte});
+	list["ι"] = <advancedrocketry:liquidtank>;
+	list["κ"] = <thermalexpansion:tank>.withTag({Fluid: {FluidName: "ic2uu_matter", Amount: 512000}, Level: 3 as byte});
+	list["λ"] = <thermalexpansion:tank>.withTag({Fluid: {FluidName: "liquiddna", Amount: 512000}, Level: 3 as byte});
+	list["μ"] = creativeGasTankFrame;
+
+	craft.make( <mekanism:gastank>.withTag({tier: 4, mekData: {}}), ["pretty",
+	"▬ ▬ ▬ ◫ ♣ ◫ ▬ ▬ ▬",
+	"▬ ◉ ▧ ◊ ♣ ◊ ▧ ◉ ▬",
+	"▬ ▤ ζ η ☠ η θ ▤ ▬",
+	"◫ ♦ ⰱ ж ι ж ⰱ ♦ ◫",
+	"♣ ♣ ☠ ι μ ι ☠ ♣ ♣",
+	"◫ ♦ ⰱ ж ⍣ ж ⰱ ♦ ◫",
+	"▬ ▤ κ η ☠ η λ ▤ ▬",
+	"▬ ◉ ▧ ◊ ♣ ◊ ▧ ◉ ▬",
+	"▬ ▬ ▬ ◫ ♣ ◫ ▬ ▬ ▬"], list);
+
+	recipes.addShapeless("Creative Gas Tank Reset", 
+	<mekanism:gastank>.withTag({tier: 4, mekData: {}}), 
+	[<mekanism:gastank>.withTag({tier: 4})]);
