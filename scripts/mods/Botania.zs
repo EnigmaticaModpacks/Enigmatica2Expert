@@ -126,10 +126,6 @@ import crafttweaker.item.IIngredient as IIngredient;
     <botania:livingrock>, <botania:manaresource:2>, <botania:livingrock>,
     <botania:livingrock>, <botania:livingrock>, <botania:livingrock>]);
 
-# Removing double flower recipes
-	recipes.remove(<botania:petal:*> * 4, <botania:doubleflower1:*>);
-	recipes.remove(<botania:petal:*> * 4, <botania:doubleflower2:*>);
-	
 # Super travel belt
 	recipes.remove(<botania:supertravelbelt>);
 	recipes.addShaped("Botania Globetrotter's Sash", 
