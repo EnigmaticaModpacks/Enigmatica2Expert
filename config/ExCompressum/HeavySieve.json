@@ -34,12 +34,184 @@
         ]
       },
       {
-        "name": "",
-        "metadata": "*",
-        "type": "generate",
-        "source": "",
-        "sourceMetadata": "*",
-        "sourceCount": 9
+        "name": "contenttweaker:compressed_crushed_andesite",
+        "metadata": "0",
+        "type": "list",
+        "rewards": [
+          {
+            "name": "jaopca:item_dusttinymalachite",
+            "metadata": 0,
+            "chance": 0.2,
+            "count": 7,
+            "meshLevel": 2,
+            "rolls": 1
+          },
+          {
+            "name": "jaopca:item_dusttinyperidot",
+            "metadata": 0,
+            "chance": 0.2,
+            "count": 7,
+            "meshLevel": 2,
+            "rolls": 1
+          },
+          {
+            "name": "jaopca:item_dusttinymalachite",
+            "metadata": 0,
+            "chance": 0.4,
+            "count": 7,
+            "meshLevel": 3,
+            "rolls": 1
+          },
+          {
+            "name": "jaopca:item_dusttinyperidot",
+            "metadata": 0,
+            "chance": 0.4,
+            "count": 7,
+            "meshLevel": 3,
+            "rolls": 1
+          }
+        ]
+      },
+      {
+        "name": "contenttweaker:compressed_crushed_diorite",
+        "metadata": "0",
+        "type": "list",
+        "rewards": [
+          {
+            "name": "jaopca:item_dusttinyruby",
+            "metadata": 0,
+            "chance": 0.2,
+            "count": 7,
+            "meshLevel": 2,
+            "rolls": 1
+          },
+          {
+            "name": "jaopca:item_dusttinytanzanite",
+            "metadata": 0,
+            "chance": 0.2,
+            "count": 7,
+            "meshLevel": 2,
+            "rolls": 1
+          },
+          {
+            "name": "jaopca:item_dusttinyruby",
+            "metadata": 0,
+            "chance": 0.4,
+            "count": 7,
+            "meshLevel": 3,
+            "rolls": 1
+          },
+          {
+            "name": "jaopca:item_dusttinytanzanite",
+            "metadata": 0,
+            "chance": 0.4,
+            "count": 7,
+            "meshLevel": 3,
+            "rolls": 1
+          }
+        ]
+      },
+      {
+        "name": "contenttweaker:compressed_crushed_granite",
+        "metadata": "0",
+        "type": "list",
+        "rewards": [
+          {
+            "name": "jaopca:item_dusttinytopaz",
+            "metadata": 0,
+            "chance": 0.2,
+            "count": 7,
+            "meshLevel": 2,
+            "rolls": 1
+          },
+          {
+            "name": "jaopca:item_dusttinysapphire",
+            "metadata": 0,
+            "chance": 0.2,
+            "count": 7,
+            "meshLevel": 2,
+            "rolls": 1
+          },
+          {
+            "name": "jaopca:item_dusttinytopaz",
+            "metadata": 0,
+            "chance": 0.4,
+            "count": 7,
+            "meshLevel": 3,
+            "rolls": 1
+          },
+          {
+            "name": "jaopca:item_dusttinysapphire",
+            "metadata": 0,
+            "chance": 0.4,
+            "count": 7,
+            "meshLevel": 3,
+            "rolls": 1
+          }
+        ]
+      },
+      {
+        "name": "contenttweaker:compressed_crushed_skystone",
+        "metadata": "0",
+        "type": "list",
+        "rewards": [
+          {
+            "name": "jaopca:item_dusttinyamethyst",
+            "metadata": 0,
+            "chance": 0.6,
+            "count": 7,
+            "meshLevel": 3,
+            "rolls": 1
+          },
+          {
+            "name": "jaopca:item_dusttinymalachite",
+            "metadata": 0,
+            "chance": 0.6,
+            "count": 7,
+            "meshLevel": 3,
+            "rolls": 1
+          },
+          {
+            "name": "jaopca:item_dusttinyperidot",
+            "metadata": 0,
+            "chance": 0.6,
+            "count": 7,
+            "meshLevel": 3,
+            "rolls": 1
+          },
+          {
+            "name": "jaopca:item_dusttinyruby",
+            "metadata": 0,
+            "chance": 0.6,
+            "count": 7,
+            "meshLevel": 3,
+            "rolls": 1
+          },
+          {
+            "name": "jaopca:item_dusttinytanzanite",
+            "metadata": 0,
+            "chance": 0.6,
+            "count": 7,
+            "meshLevel": 3,
+            "rolls": 1
+          },
+          {
+            "name": "jaopca:item_dusttinytopaz",
+            "metadata": 0,
+            "chance": 0.6,
+            "count": 7,
+            "meshLevel": 3,
+            "rolls": 1
+          },
+          {
+            "name": "jaopca:item_dusttinysapphire",
+            "metadata": 0,
+            "chance": 0.6,
+            "count": 7,
+            "meshLevel": 3,
+            "rolls": 1
+          }
+        ]
       }
     ],
     "example_generate": {

@@ -25,6 +25,15 @@
 - 🕹️ [x] Hide JEI melter category (duplicated from TCon smeltery)
 - ⚙️ [x] Add refining of Thaumcraft Native Clusters
 - ✏️ [x] EvT solar cores cheaper, panels harder
+- 𝓩𝒮 [x] Forestry Circuits finally make acceptable in ME
+- 🏭 [x] XML automatic recipe adding (js)
+- 🔷 [x] JS 📋 Patchouli book generation
+- ✍ [x] Sieves new output (BoP gems). Compressed too.
+- 𝓩𝒮 [x] More Astral Sorcery Challice mixes
+- 𝓩𝒮 [x] More immersive Thermoelectric blocks variations.
+- 𝓩𝒮 [x] More meat types recycle in TE centrifuge
+- 𝓩𝒮 [x] Nerf void miner even more
+- 𝓩𝒮 [x] Tweak chemical thrower liquids
 
 
 ## Planned
@@ -33,17 +42,16 @@
 
 #### Other:
 
-- 🔷 [x] JS 📋 Patchouli book generation
-- ✍ [x] Sieves new output (BoP gems). Compressed too.
-- ✏️ [x] MEGA potion
-- 𝓩𝒮 [x] Forestry Circuits finally make acceptable in ME
+- ✏️ [x] MEGA potion (add crafting of chemical worktable)
+- 🔶 [x] Harder Enderium recipe (remove enderium base and platinum-lead alloy)
+- 🔷 [x] Removing tag for globals.zs (should not add empty tag)
+- 𝓩𝒮 [x] TconEvo remove gears recipe
 - 🔷 [ ] Tinkers modifiers utility (add, modify)
 - 🔷 [ ] AdvRock Electrolyser should accept any amount of output but cut if > 2
 - ✏️ [ ] Creative Gas should be way cheaper then 💧 Creative Tank
 - ✏️ [ ] Swap creative RF Power Cell and IC2 Power to Mek Cube
 - ✏️ [ ] Creative rat upgrade way cheaper
 - ✏️ [ ] Tcon Armor that speed up time in bottle
-- 🏭 [x] XML automatic recipe adding (js)
 - 💌 [ ] Remove Laser Cannon from lootboxes
 - 💜 [ ] Account Thaumcraft's aspects cost
 - 💜 [ ] Check why Lumium so pricy
@@ -60,8 +68,6 @@
 - 🔶 [ ] Buff Mek Universal Cable recipe (output can be tweaked too)
 - 🔶 [ ] Remake Mek Tanks and Gas tanks
 - 🔶 [ ] Solar Panels in precision assembler
-- 🔶 [x] Ender ingot in alloy smelteries instead of crafting. Also Pulsating Iron
-- 🔶 [x] Harder Enderium recipe (remove enderium base and platinum-lead alloy)
 - 💥 [ ] Give uses to singularities (Coal - burn time, etc)
 - 💥 [ ] New 🐝 for endgame
 - 💥 [ ] **Rats** Structures Generation
@@ -89,9 +95,7 @@
 - 🔷 [ ] TE Destabilize stones to something else
 - 🔷 [ ] Ultimate Fuel ContentTweaker
 - 🔷 [ ] Wasteland planet
-- 🔷 [x] Removing tag for globals.zs (should not add empty tag)
 - 🧩 [ ] Random Tweaks
-- 🧩 [x] ExNihilio new drops (JSON)
 - 🧩 [ ] ExCompressum more compressed entityes
 - 🧱 [ ] Magic Ore Processing . 📦 poop + Cluster => 📦hunk -> 📦 small piece -> 💧 washed -> ?
 - 🛡️ [ ] EquipGen: Exclude armor materials that cant be armor material
@@ -107,12 +111,6 @@
 - 𝓩𝒮 [ ] More Dragon Forge Recipes
 - 𝓩𝒮 [ ] Pressurizer have Aluminium plate recipe duplication
 - 𝓩𝒮 [ ] Remove Qurtz dust from AA in OreDict
-- 𝓩𝒮 [x] More Astral Sorcery Challice mixes
-- 𝓩𝒮 [x] More immersive Thermoelectric blocks variations. Book is skrewed up now
-- 𝓩𝒮 [x] More meat types recycle in TE centrifuge
-- 𝓩𝒮 [x] Nerf void miner even more
-- 𝓩𝒮 [x] TconEvo remove gears recipe
-- 𝓩𝒮 [x] Tweak chemical thrower liquids
 - 𝓩𝒮 [ ] Mob Stripper Item - rightclick to strip out items
 - 𝓩𝒮 [ ] Silicon plate unification
 - 💦 [ ] Cheaper Draconic Chest
