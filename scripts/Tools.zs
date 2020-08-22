@@ -3,6 +3,17 @@ import mods.jei.JEI.removeAndHide as rh;
 	
 # *======= Recipes =======*
 	
+/* Patchouli_js({
+	entry: "Misc Changes",
+	title: "ExNihilio Hammers",
+	icon: "exnihilocreatio:hammer_gold",
+	type:  "spotlight_advanced",
+  ...item$i(["_","wood","stone","iron","gold"], m=>"exnihilocreatio:hammer_"+m),
+	_text: `
+		$(l)ExNihilio/$ hammers and their $(l)ExCompressum/$ analogs was removed. Use $(l)Tinker's/$ sledge hammers instead.
+	`,
+})*/
+
 	val toolsToRemove = [
 	<botania:glasspick>,
 	<forestry:bronze_pickaxe>,

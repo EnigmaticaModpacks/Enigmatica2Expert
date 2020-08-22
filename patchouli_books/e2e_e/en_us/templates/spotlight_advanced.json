@@ -1,0 +1,19 @@
+{
+  "components": [
+    { "x": -1, "y": -1,  "type": "header", "text": "#title" }
+    ,{ "x":0, "y": 32 , "type": "text", "text": "#text"}
+
+    ,{ "x": 12, "y": 12, "type": "item", "item": "#item0", "guard": "#uneven->exists"}
+    ,{ "x": 30, "y": 12, "type": "item", "item": "#item1", "guard": "#uneven->exists"}
+    ,{ "x": 48, "y": 12, "type": "item", "item": "#item2", "guard": "#uneven->exists"}
+    ,{ "x": 66, "y": 12, "type": "item", "item": "#item3", "guard": "#uneven->exists"}
+    ,{ "x": 84, "y": 12, "type": "item", "item": "#item4", "guard": "#uneven->exists"}
+
+    ,{ "x":  4, "y": 12, "type": "item", "item": "#item0", "guard": "#uneven->exists->inv"}
+    ,{ "x": 22, "y": 12, "type": "item", "item": "#item1", "guard": "#uneven->exists->inv"}
+    ,{ "x": 40, "y": 12, "type": "item", "item": "#item2", "guard": "#uneven->exists->inv"}
+    ,{ "x": 58, "y": 12, "type": "item", "item": "#item3", "guard": "#uneven->exists->inv"}
+    ,{ "x": 76, "y": 12, "type": "item", "item": "#item4", "guard": "#uneven->exists->inv"}
+    ,{ "x": 94, "y": 12, "type": "item", "item": "#item5", "guard": "#uneven->exists->inv"}
+  ]
+}

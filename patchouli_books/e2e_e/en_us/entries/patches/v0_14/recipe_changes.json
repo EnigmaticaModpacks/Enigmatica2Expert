@@ -1,0 +1,15 @@
+{
+  "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
+  "priority": true,
+  "name": "Recipe Changes",
+  "category": "patchouli:subcategories/v0_14",
+  "pages": [
+    {
+      "title": "Draconium chest",
+      "item": "draconicevolution:draconium_chest",
+      "text": "$(l)Draconium chest/$ now can be crafted earlier in $(l)Empowerer/$ or $(l)Combination Crafting/$.",
+      "type": "spotlight"
+    }
+  ],
+  "icon": "draconicevolution:draconium_chest"
+}

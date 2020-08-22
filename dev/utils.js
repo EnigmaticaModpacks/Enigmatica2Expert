@@ -23,7 +23,9 @@ module.exports.loadJson = function(filename) {
 }
 
 function saveText(txt, filename) {
-  fs.writeFileSync(path.resolve(__dirname, filename), txt);
+  var filePath = path.resolve(__dirname, filename);
+  fs.mkdirSync(path.dirname(filePath), { recursive: true });
+  fs.writeFileSync(filePath, txt);
 }
 module.exports.saveText = saveText;
 
@@ -35,9 +37,19 @@ module.exports.readdir = function(folderPath) {
   return fs.readdirSync(path.resolve(__dirname, folderPath));
 }
 
-module.exports.escapeRegex = function(string) {
+var escapeRegex = function(string) {
   return string.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
 }
+module.exports.escapeRegex = escapeRegex;
+
+var matchBetween = function(str, begin, end, regex) {
+  var sub = str;
+  if (begin) sub = str.substr(str.indexOf(begin) + begin.length);
+  if (end)   sub = sub.substr(0, sub.indexOf(end));
+  return [...sub.matchAll(regex)];
+}
+module.exports.matchBetween = matchBetween;
+
 
 // # ######################################################################
 // #

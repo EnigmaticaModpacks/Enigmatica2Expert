@@ -1,0 +1,18 @@
+{
+  "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
+  "name": "IC2 fluids -> NC reactor",
+  "category": "patchouli:subcategories/v0_14",
+  "pages": [
+    {
+      "type": "item_list",
+      "item0": "forge:bucketfilled{FluidName:\"ic2superheated_steam\",Amount:1000}",
+      "text0": "As Turbine steam",
+      "item1": "forge:bucketfilled{FluidName:\"ic2steam\",Amount:1000}",
+      "text1": "As Turbine steam",
+      "item2": "forge:bucketfilled{FluidName:\"ic2hot_coolant\",Amount:1000}",
+      "text2": "As Exchanger Coolant",
+      "title": "IC2 fluids -> NC reactor"
+    }
+  ],
+  "icon": "ic2:te:18"
+}

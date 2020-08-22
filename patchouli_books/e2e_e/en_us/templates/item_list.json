@@ -1,0 +1,20 @@
+{
+  "components": [
+    { "x": -1, "y": -1,  "type": "header", "text": "#title" }
+    
+    ,{ "x": 6, "y": 14 , "type": "item", "item": "#item0"}
+    ,{ "x": 6, "y": 32 , "type": "item", "item": "#item1"}
+    ,{ "x": 6, "y": 50 , "type": "item", "item": "#item2"}
+    ,{ "x": 6, "y": 68 , "type": "item", "item": "#item3"}
+    ,{ "x": 6, "y": 86 , "type": "item", "item": "#item4"}
+    ,{ "x": 6, "y": 104, "type": "item", "item": "#item5"}
+    ,{ "x": 6, "y": 122, "type": "item", "item": "#item6"}
+    ,{ "x":24, "y": 18 , "type": "text", "text": "#text0"}
+    ,{ "x":24, "y": 36 , "type": "text", "text": "#text1"}
+    ,{ "x":24, "y": 54 , "type": "text", "text": "#text2"}
+    ,{ "x":24, "y": 72 , "type": "text", "text": "#text3"}
+    ,{ "x":24, "y": 90 , "type": "text", "text": "#text4"}
+    ,{ "x":24, "y": 108, "type": "text", "text": "#text5"}
+    ,{ "x":24, "y": 126, "type": "text", "text": "#text6"}
+  ]
+}

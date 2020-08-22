@@ -185,6 +185,17 @@ rh(<ore:ingotLeadPlatinum>.firstItem);
 # Bioplastic process
 scripts.process.extract(<ore:sugarcane> * 2, <ore:bioplastic>.firstItem, "except: manufactory extractor");
 
+/* Patchouli_js({
+	entry: "IC2 fluids -> NC reactor",
+	icon: "ic2:te:18",
+	type:  "item_list",
+	...match_below({regex: /^mods\.nuclearcraft\.(\w+)\.addRecipe\(\[<liquid:(.+?)>/gm})
+    .reduce((o, m, i) => Object.assign(o, {
+      [`item${i}`]: wrap_bucket(m[2]),
+      [`text${i}`]: m[1]=="turbine"?"As Turbine steam":"As Exchanger Coolant",
+    }),{}),
+})*/
+
 # IC2 Steam -> Water in turbine
 # mods.nuclearcraft.turbine.addRecipe([fluidInput, fluidOutput, double powerPerMB, double expansionLevel]);
 mods.nuclearcraft.turbine.addRecipe([<liquid:ic2superheated_steam>, <liquid:ic2steam> * 2, 1000.0d, 1.8d]);

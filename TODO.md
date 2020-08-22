@@ -31,19 +31,13 @@
 
 -----------
 
-#### Important:
-
-- [ ] JS 📋 Patchouli book generation
-- [ ] 📖 JS selector for quest lines
-- [ ] Process rework in zenClass
-- [ ] Tinkers modifiers utility (add, modify)
-
-
 #### Other:
 
+- 🔷 [x] JS 📋 Patchouli book generation
 - ✍ [x] Sieves new output (BoP gems). Compressed too.
 - ✏️ [x] MEGA potion
 - 𝓩𝒮 [x] Forestry Circuits finally make acceptable in ME
+- 🔷 [ ] Tinkers modifiers utility (add, modify)
 - 🔷 [ ] AdvRock Electrolyser should accept any amount of output but cut if > 2
 - ✏️ [ ] Creative Gas should be way cheaper then 💧 Creative Tank
 - ✏️ [ ] Swap creative RF Power Cell and IC2 Power to Mek Cube
@@ -125,6 +119,7 @@
 - ✏️ [ ] Recipe of block made from Gigs of RF
 - ✏️ [ ] Recipe of block made from 1000 EU grid power
 - 🔷 [ ] Tiny potato to crafts
+- 𝓩𝒮 [ ] Process rework in zenClass
 
 ### Do after process.zs class rework:
 

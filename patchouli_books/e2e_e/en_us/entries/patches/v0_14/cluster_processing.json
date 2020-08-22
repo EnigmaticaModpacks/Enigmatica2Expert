@@ -1,0 +1,20 @@
+{
+  "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
+  "name": "Cluster Processing",
+  "category": "patchouli:subcategories/v0_14",
+  "pages": [
+    {
+      "type": "item_spread",
+      "item": "jaopca:item_clusterdraconium",
+      "item0": "draconicevolution:draconium_ingot",
+      "item1": "draconicevolution:draconium_dust",
+      "item2": "jaopca:item_clumpdraconium",
+      "item3": "jaopca:item_sharddraconium",
+      "item4": "jaopca:item_crusheddraconium",
+      "item5": "forge:bucketfilled{FluidName:\"draconium\",Amount:1000}",
+      "text": "Thaumcraft's $(l)Native Clusters/$ now can be benificated in various machines to provide additional outputs",
+      "title": "Cluster Processing"
+    }
+  ],
+  "icon": "jaopca:item_clusterdraconium"
+}

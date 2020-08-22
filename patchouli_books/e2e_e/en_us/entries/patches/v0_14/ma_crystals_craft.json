@@ -1,0 +1,19 @@
+{
+  "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
+  "name": "MA Crystals Craft",
+  "category": "patchouli:subcategories/v0_14",
+  "pages": [
+    {
+      "type": "spotlight_advanced",
+      "uneven": true,
+      "item0": "matc:inferiumcrystal",
+      "item1": "matc:prudentiumcrystal",
+      "item2": "matc:intermediumcrystal",
+      "item3": "matc:superiumcrystal",
+      "item4": "matc:supremiumcrystal",
+      "text": "Now upgrading $(#972b4a)Mystical Agriculture/$ $(l)Infusion Crystals/$ consume previous crystal and keep its damage.",
+      "title": "MA Crystals Craft"
+    }
+  ],
+  "icon": "matc:supremiumcrystal"
+}

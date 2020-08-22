@@ -97,29 +97,52 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <astralsorcery:itemknowledgesha
 	[null, null, null, PC, PC, IW, IW]
 ]);
 
+/* Patchouli_js({
+	entry: "Liquid Interactions",
+	item:  "astralsorcery:blockchalice",
+	title: "Liquid Interactions",
+	_text: `Not only Water+Lava!
+		Now many kinds of liquids can provide blocks when interacting in the World or in Containtment Chalice$(br2)`
+})*/
+
+/* Patchouli_js(
+  match_below({
+    begin: "val chaliceGrid = {",
+    regex: /^ *\[<liquid:(.*?)>.*?<liquid:(.*?)>.*?<(.*?)>.*?<(.*?)>.*?<(.*?)>.*$/gm,
+    end:   "} as IItemStack[][ILiquidStack[]];",
+  }).reduce((arr, match, i) => {
+    var r = i%2==1 ? arr.slice(-1)[0] : {
+      entry: "Liquid Interactions",
+      type: "fluid_interaction",
+    };
+    match.slice(1, 3).forEach((m,j) => r[`item${j  }_${i%2}`] = wrap_bucket(m));
+    match.slice(3, 6).forEach((m,j) => r[`item${j+2}_${i%2}`] = m);
+    if (i%2==0) arr.push(r);
+    return arr
+  }, [])
+)*/
+
 # Chalice interactions
-val liqStarlight = <liquid:astralsorcery.liquidstarlight>;
-val cloudSeed = <liquid:cloud_seed_concentrated>;
 val chaliceGrid = {
-  # First                      , Second                                  , ⏩ + ⏩                               , 🔷 + ⏩                                , ⏩ + 🔷                                     ,
-  [cloudSeed              * 10 , <liquid:water>        * 90 ,]: [<chisel:cloud>                            *6 , <twilightforest:fluffy_cloud>        *1 , <twilightforest:wispy_cloud>              *3] ,
-  [cloudSeed              * 10 , <liquid:lava>         * 90 ,]: [<exnihilocreatio:block_endstone_crushed>  *6 ,<excompressum:compressed_block:7>     *1 ,<minecraft:end_stone>                      *3] ,
-  [cloudSeed              * 10 , liqStarlight          * 90 ,]: [<exnihilocreatio:block_dust>              *6 , <excompressum:compressed_block>      *1 , <exnihilocreatio:block_andesite_crushed>  *3] ,
-  [<liquid:lifeessence>   * 10 , <liquid:water>        * 90 ,]: [<biomesoplenty:flesh>                     *6 , <thaumcraft:flesh_block>             *1 , <biomesoplenty:flesh>                     *3] ,
-  [<liquid:lifeessence>   * 10 , <liquid:lava>         * 90 ,]: [<thaumcraft:flesh_block>                  *6 , <thaumcraft:flesh_block>             *1 , <thaumcraft:flesh_block>                  *3] ,
-  [<liquid:lifeessence>   * 10 , liqStarlight          * 90 ,]: [<harvestcraft:honey>                      *6 , <biomesoplenty:honey_block>          *1 , <harvestcraft:honeycomb>                  *3] ,
-  [<liquid:lifeessence>   * 10 , cloudSeed             * 90 ,]: [<animania:wool:4>                         *6 , <animania:wool>                      *1 , <animania:wool:2>                         *3] ,
-  [<liquid:plasma>        * 10 , <liquid:water>        * 90 ,]: [<chisel:basalt2:7>                        *6 , <quark:basalt>                       *1 , <chisel:basalt2:7>                        *3] ,
-  [<liquid:plasma>        * 10 , <liquid:lava>         * 90 ,]: [<minecraft:obsidian>                      *6 , <minecraft:magma>                    *1 , <chisel:lavastone>                        *3] ,
-  [<liquid:plasma>        * 10 , liqStarlight          * 90 ,]: [<quark:marble>                            *6 , <biomesoplenty:white_sandstone>      *1 , <quark:slate>                             *3] ,
-  [<liquid:plasma>        * 10 , cloudSeed             * 90 ,]: [<enderio:block_fused_quartz>              *6 , <biomesoplenty:crystal>              *1 , <mysticalagriculture:storage:5>           *3] ,
-  [<liquid:plasma>        * 10 , <liquid:lifeessence>  * 90 ,]: [<minecraft:bone_block>                    *6 , <minecraft:bone_block>               *1 , <minecraft:bone_block>                    *3] ,
-  [<liquid:ic2uu_matter>  * 10 , <liquid:water>        * 90 ,]: [<quark:crystal:5>                         *6 , <actuallyadditions:block_crystal:2>  *1 , <quark:crystal:6>                         *3] ,
-  [<liquid:ic2uu_matter>  * 10 , <liquid:lava>         * 90 ,]: [<quark:basalt>                            *6 , <draconicevolution:draconium_block>  *1 , <draconicevolution:infused_obsidian>      *3] ,
-  [<liquid:ic2uu_matter>  * 10 , liqStarlight          * 90 ,]: [<quark:marble>                            *6 , <thermalfoundation:storage:7>        *1 , <minecraft:quartz_block>                  *3] ,
-  [<liquid:ic2uu_matter>  * 10 , cloudSeed             * 90 ,]: [<randomthings:superlubricentice>          *6 , <iceandfire:dragonsteel_ice_block>   *1 , <nuclearcraft:block_ice>                  *3] ,
-  [<liquid:ic2uu_matter>  * 10 , <liquid:lifeessence>  * 90 ,]: [<tconstruct:slime_congealed:3>            *6 , <tconevo:metal_block:5>              *1 , <minecraft:nether_wart_block>             *3] ,
-  [<liquid:ic2uu_matter>  * 10 , <liquid:plasma>       * 90 ,]: [<enderio:block_infinity>                  *6 , <bigreactors:blockludicrite>         *1 , <minecraft:obsidian>                      *3] ,
+  # First                      , Second                                                             , ⏩ + ⏩                                , ⏩ + 🔷                             , 🔷 + ⏩                      ,
+  [<liquid:cloud_seed_concentrated>* 10 , <liquid:water>                         * 90 ,]: [<chisel:cloud>                          , <twilightforest:wispy_cloud>            , <twilightforest:fluffy_cloud>      ] ,
+  [<liquid:cloud_seed_concentrated>* 10 , <liquid:lava>                          * 90 ,]: [<exnihilocreatio:block_endstone_crushed>, <minecraft:end_stone>                   , <excompressum:compressed_block:7>  ] ,
+  [<liquid:cloud_seed_concentrated>* 10 , <liquid:astralsorcery.liquidstarlight> * 90 ,]: [<exnihilocreatio:block_dust>            , <exnihilocreatio:block_andesite_crushed>, <excompressum:compressed_block>    ] ,
+  [<liquid:lifeessence>            * 10 , <liquid:water>                         * 90 ,]: [<biomesoplenty:flesh>                   , <biomesoplenty:flesh>                   , <thaumcraft:flesh_block>           ] ,
+  [<liquid:lifeessence>            * 10 , <liquid:lava>                          * 90 ,]: [<thaumcraft:flesh_block>                , <thaumcraft:flesh_block>                , <thaumcraft:flesh_block>           ] ,
+  [<liquid:lifeessence>            * 10 , <liquid:astralsorcery.liquidstarlight> * 90 ,]: [<harvestcraft:honey>                    , <harvestcraft:honeycomb>                , <biomesoplenty:honey_block>        ] ,
+  [<liquid:lifeessence>            * 10 , <liquid:cloud_seed_concentrated>       * 90 ,]: [<animania:wool:4>                       , <animania:wool:2>                       , <animania:wool>                    ] ,
+  [<liquid:plasma>                 * 10 , <liquid:water>                         * 90 ,]: [<chisel:basalt2:7>                      , <chisel:basalt2:7>                      , <quark:basalt>                     ] ,
+  [<liquid:plasma>                 * 10 , <liquid:lava>                          * 90 ,]: [<minecraft:obsidian>                    , <chisel:lavastone>                      , <minecraft:magma>                  ] ,
+  [<liquid:plasma>                 * 10 , <liquid:astralsorcery.liquidstarlight> * 90 ,]: [<quark:marble>                          , <quark:slate>                           , <biomesoplenty:white_sandstone>    ] ,
+  [<liquid:plasma>                 * 10 , <liquid:cloud_seed_concentrated>       * 90 ,]: [<enderio:block_fused_quartz>            , <mysticalagriculture:storage:5>         , <biomesoplenty:crystal>            ] ,
+  [<liquid:plasma>                 * 10 , <liquid:lifeessence>                   * 90 ,]: [<minecraft:bone_block>                  , <minecraft:bone_block>                  , <minecraft:bone_block>             ] ,
+  [<liquid:ic2uu_matter>           * 10 , <liquid:water>                         * 90 ,]: [<quark:crystal:5>                       , <quark:crystal:6>                       , <actuallyadditions:block_crystal:2>] ,
+  [<liquid:ic2uu_matter>           * 10 , <liquid:lava>                          * 90 ,]: [<quark:basalt>                          , <draconicevolution:infused_obsidian>    , <draconicevolution:draconium_block>] ,
+  [<liquid:ic2uu_matter>           * 10 , <liquid:astralsorcery.liquidstarlight> * 90 ,]: [<quark:marble>                          , <minecraft:quartz_block>                , <thermalfoundation:storage:7>      ] ,
+  [<liquid:ic2uu_matter>           * 10 , <liquid:cloud_seed_concentrated>       * 90 ,]: [<randomthings:superlubricentice>        , <nuclearcraft:block_ice>                , <iceandfire:dragonsteel_ice_block> ] ,
+  [<liquid:ic2uu_matter>           * 10 , <liquid:lifeessence>                   * 90 ,]: [<tconstruct:slime_congealed:3>          , <minecraft:nether_wart_block>           , <tconevo:metal_block:5>            ] ,
+  [<liquid:ic2uu_matter>           * 10 , <liquid:plasma>                        * 90 ,]: [<enderio:block_infinity>                , <minecraft:obsidian>                    , <bigreactors:blockludicrite>       ] ,
 } as IItemStack[][ILiquidStack[]];
 
 #### Honorable mentions: ####
@@ -143,17 +166,21 @@ val chaliceGrid = {
 # 1200: lava + starlight = sand
 #   70: lava + starlight = Aquamarine
 
+# Weights by interaction type
+var weights = [
+	1200, # Flow+Flow
+	70,   # Flow+Source
+	2,    # Source+Flow
+] as int[];
+
 for lList, itList in chaliceGrid {
-	for it in itList {
+	for i, it in itList {
 		# LiquidInteraction.addInteraction(ILiquidStack liquidIn1, float chanceConsumption1, ILiquidStack liquidIn2, float chanceConsumption2, int weight, IItemStack output);
-		val weight = pow(2, it.amount) as int;
-		mods.astralsorcery.LiquidInteraction.addInteraction(lList[0], 0.1, lList[1], 0.2, weight, it * 1);
+		mods.astralsorcery.LiquidInteraction.addInteraction(lList[0], 0.1, lList[1], 0.2, weights[i], it);
 	}
 
 	# Liquid interactions:
-	mods.plustweaks.Liquid.registerLiquidInteraction(lList[0], lList[1], itList[0].asBlock().definition.defaultState, true);
-	mods.plustweaks.Liquid.registerLiquidInteraction(lList[0], lList[1], itList[1].asBlock().definition.defaultState, false);
+	mods.plustweaks.Liquid.registerLiquidInteraction(lList[0], lList[1], itList[0].asBlock().definition.defaultState, [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14] as int[]);
+	mods.plustweaks.Liquid.registerLiquidInteraction(lList[0], lList[1], itList[1].asBlock().definition.defaultState, [15] as int[]);
+	mods.plustweaks.Liquid.registerLiquidInteraction(lList[1], lList[0], itList[2].asBlock().definition.defaultState, [15] as int[]);
 }
-
-
-// <>.asBlock().definition.defaultState;

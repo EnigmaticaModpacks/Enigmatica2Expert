@@ -108,7 +108,33 @@ recipes.removeByRecipeName("environmentaltech:m_multiblocks/interconnect");
 # Solar panels 1-6
 #
 # ######################################################################
-	
+
+/* Patchouli_js({
+	entry:"Environmental Tech",
+	icon:	"environmentaltech:solar_cont_1",
+	type:	"spotlight_advanced",
+	item0: "_",
+  item1: "environmentaltech:solar_cont_1",
+  item2: "environmentaltech:solar_cell_litherite",
+  item3: "environmentaltech:void_ore_miner_cont_1",
+	uneven: true,
+	_text: `
+		All 6 $(l)Void Miner/$ and $(l)Solar/$ Controller's recipes was changed.
+		Energy output was significally changed too.
+	`,
+})
+
+Patchouli_js(
+  require("./EvtTechSolarCalc.js").rf_t
+  .map((r,k)=>({
+    entry:"Environmental Tech",
+    type:	"item_list",
+    title: "Solar Array Tier "+(k+1),
+    ...item$i(r, m=>`environmentaltech:solar_cell_${m[0]}#${m[2]}`),
+    ...text$i(r, m=>numeral(m[1]).format('0,0').padStart(11) + " RF/t")
+  }))
+)*/
+
 # Blocks of main EvT materials
 static evt as IIngredient[][string] = {
 	block: [
@@ -197,7 +223,7 @@ for i in 0 .. 6 {
 	evtIngrs["P"] = (i==0) ? evtIngrs.D : itemUtils.getItem("environmentaltech:void_ore_miner_cont_" ~ (i));
 	var void_miner = itemUtils.getItem("environmentaltech:void_ore_miner_cont_" ~ (i+1));
 
-	if (i<=2) { Remake(void_miner ,["𝓹",
+	if (i<=2) { craft.remake(void_miner ,["𝓹",
 			"B C B",
 			"B P B",
 			"I H I", ], evtIngrs); 

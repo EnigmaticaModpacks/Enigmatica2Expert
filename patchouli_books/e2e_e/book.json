@@ -1,0 +1,11 @@
+{
+	"name": "Enigmatica2:Expert",
+  "subtitle": "EXTENDED",
+	"landing_text": "Rihgt now this book contain only $(l)patch changes/$",
+	"version": 0,
+  "creative_tab": "tools",
+  "pause_game": true,
+  "book_texture": "patchouli:textures/gui/book_blue.png",
+  "model": "patchouli:book_blue",
+  "show_progress": false
+}

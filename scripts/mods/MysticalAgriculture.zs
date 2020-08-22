@@ -765,6 +765,19 @@ for seed, count in inferCount {
 	scripts.process.grow(seed, <mysticalagriculture:crafting> * count, "only: Hydroponics", seed, 1.0f);
 }
 
+/* Patchouli_js({
+	entry: "MA Crystals Craft",
+	type:  "spotlight_advanced",
+	icon: "matc:supremiumcrystal",
+	uneven: true,
+	...match_block_below(/^	*<(matc:\w+)>/gm)
+    .reduce((o, m, i) => Object.assign(o, {
+      [`item${i}`]: m[1]
+    }),{}),
+	_text: `
+		Now upgrading $(#972b4a)Mystical Agriculture/$ $(l)Infusion Crystals/$ consume previous crystal and keep its damage.
+	`,
+})*/
 # Remake crystals to consume previous level
 var crystals = [
 	<mysticalagriculture:infusion_crystal>,
@@ -796,6 +809,15 @@ for i in 0 .. 5 {
 #
 # ######################################################################
 
+/* Patchouli_js({
+	entry: "Supremium Armor",
+	icon:  "contenttweaker:supremium_chest_base",
+	type:  "spotlight_advanced",
+  ...item$i([0, ...match_block_below(/(contenttweaker:\w+)/gm)]),
+	_text: `
+		$(#BA0014)Supremium/$ Cores now grants $(l)Creative Flight/$, but they cant be casted straight from smeltery.
+	`,
+})*/
 var liquidAmount = [4,6,5,4] as int[];
 var bases = [
 	<contenttweaker:supremium_helmet_base>  ,

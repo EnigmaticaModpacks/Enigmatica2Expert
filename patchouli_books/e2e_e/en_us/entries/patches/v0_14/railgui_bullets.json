@@ -1,0 +1,26 @@
+{
+  "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
+  "name": "Railgui Bullets",
+  "category": "patchouli:subcategories/v0_14",
+  "pages": [
+    {
+      "item": "immersiveengineering:railgun",
+      "title": "New Railgui Bullets",
+      "type": "item_list",
+      "text0": "   Damage  |  Gravity",
+      "item1": "ore:stickTitaniumIridium",
+      "text1": "     27    |    0.9",
+      "item2": "extendedcrafting:material:3",
+      "text2": "     27    |    1.3",
+      "item3": "ore:stickIridium",
+      "text3": "     24    |   1.15",
+      "item4": "ore:stickTitaniumAluminide",
+      "text4": "     23    |    0.9",
+      "item5": "ore:stickTitanium",
+      "text5": "     21    |   1.15",
+      "item6": "ore:stickCopper",
+      "text6": "     14    |    1.1"
+    }
+  ],
+  "icon": "immersiveengineering:railgun"
+}

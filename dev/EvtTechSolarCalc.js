@@ -59,7 +59,7 @@ const cellCount = [9, 25, 49, 81, 121, 169];
 const s_production_power = cfg.match(/^            D:s_production_power=([\d\.]+)$/m)[1];
 const s_production_rate  = cfg.match(/^            I:s_production_rate=(\d+)$/m)[1];
 
-console.log("Solar arrays Tiers and output RF by material:");
+// console.log("Solar arrays Tiers and output RF by material:");
 
 // var s = "Tier| ";
 // matNames.forEach(name => {
@@ -68,18 +68,18 @@ console.log("Solar arrays Tiers and output RF by material:");
 // console.log(s);
 matNames.unshift("Tier");
 var t = [ matNames ];
+var dryTable = [];
 
 array_max_efficiency.forEach((a, i) => {
-  // s = `[${i+1}]:  `;
   t.push([i+1]);
+  dryTable.push([]);
   cell_efficiency.forEach((c, j) => {
     var cellGen = s_production_rate * Math.pow(s_production_power, i) * Math.min(a / 100, c / 100);
     
     var rft = parseInt(cellGen * cellCount[i]);
-    // s += (rft + '').padStart(9);
     t[t.length-1].push(numeral(rft).format('0,0'));
+    dryTable[i].push([matNames[j+1], rft, cellCount[i]]);
   });
-  // console.log(s);
 });
 
 config = {
@@ -94,4 +94,7 @@ config = {
   }
 };
 
-console.log(table(t, config));
+// console.log(table(t, config));
+
+// console.log('dryTable :>> ', dryTable);
+module.exports.rf_t = dryTable;

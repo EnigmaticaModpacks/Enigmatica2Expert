@@ -1,0 +1,19 @@
+{
+  "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
+  "priority": true,
+  "name": "Misc Changes",
+  "category": "patchouli:subcategories/v0_14",
+  "pages": [
+    {
+      "title": "ExNihilio Hammers",
+      "type": "spotlight_advanced",
+      "item0": "exnihilocreatio:hammer__",
+      "item1": "exnihilocreatio:hammer_wood",
+      "item2": "exnihilocreatio:hammer_stone",
+      "item3": "exnihilocreatio:hammer_iron",
+      "item4": "exnihilocreatio:hammer_gold",
+      "text": "$(l)ExNihilio/$ hammers and their $(l)ExCompressum/$ analogs was removed. Use $(l)Tinker's/$ sledge hammers instead."
+    }
+  ],
+  "icon": "exnihilocreatio:hammer_gold"
+}
