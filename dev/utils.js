@@ -113,3 +113,4 @@ function renameDeep(obj, cb) {
   }
   return res;
 };
+module.exports.renameDeep = renameDeep;

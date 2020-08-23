@@ -1,7 +1,9 @@
 {
   "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
-  "priority": true,
   "name": "Bug Fixes",
+  "icon": "forestry:chipsets:3{T:3}",
+  "description": "Undefined description",
+  "priority": true,
   "category": "patchouli:subcategories/v0_14",
   "pages": [
     {
@@ -10,6 +12,5 @@
       "text": "Forestry's $(l)Circuits/$ finally can be used in ME autocrafting!$(br)Before this update, pattern for recipe should be created manually (not with $(l)[+]/$ JEI button)",
       "type": "spotlight"
     }
-  ],
-  "icon": "forestry:chipsets:3{T:3}"
+  ]
 }

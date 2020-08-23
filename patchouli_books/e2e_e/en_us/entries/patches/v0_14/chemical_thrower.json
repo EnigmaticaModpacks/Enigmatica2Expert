@@ -1,6 +1,8 @@
 {
   "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
   "name": "Chemical Thrower",
+  "icon": "immersiveengineering:chemthrower",
+  "description": "Undefined description",
   "category": "patchouli:subcategories/v0_14",
   "pages": [
     {
@@ -103,6 +105,5 @@
       "item2": "forge:bucketfilled{FluidName:\"dark_chocolate\",Amount:1000}",
       "item3": "forge:bucketfilled{FluidName:\"milk_chocolate\",Amount:1000}"
     }
-  ],
-  "icon": "immersiveengineering:chemthrower"
+  ]
 }

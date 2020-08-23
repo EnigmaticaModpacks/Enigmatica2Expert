@@ -1,7 +1,9 @@
 {
   "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
-  "priority": true,
   "name": "Misc Changes",
+  "icon": "exnihilocreatio:hammer_gold",
+  "description": "Undefined description",
+  "priority": true,
   "category": "patchouli:subcategories/v0_14",
   "pages": [
     {
@@ -14,6 +16,5 @@
       "item4": "exnihilocreatio:hammer_gold",
       "text": "$(l)ExNihilio/$ hammers and their $(l)ExCompressum/$ analogs was removed. Use $(l)Tinker's/$ sledge hammers instead."
     }
-  ],
-  "icon": "exnihilocreatio:hammer_gold"
+  ]
 }

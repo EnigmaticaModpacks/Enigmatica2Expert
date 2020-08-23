@@ -1,6 +1,8 @@
 {
   "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
   "name": "Liquid Interactions",
+  "icon": "astralsorcery:blockchalice",
+  "description": "Undefined description",
   "category": "patchouli:subcategories/v0_14",
   "pages": [
     {
@@ -135,6 +137,5 @@
       "item4_1": "bigreactors:blockludicrite",
       "title": "Liquid Interactions"
     }
-  ],
-  "icon": "astralsorcery:blockchalice"
+  ]
 }

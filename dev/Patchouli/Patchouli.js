@@ -19,7 +19,7 @@ const numeral = require('numeral');
 
 //////////////////////////////////////////
 // Local dependencies
-const {loadText, saveObjAsJson, matchBetween} = require('./utils.js');
+const {loadText, saveObjAsJson, matchBetween} = require('../utils.js');
 
 //-----------------------------
 // Constants
@@ -28,9 +28,27 @@ const currentVersion = 0.14;
 const bookPath = "../patchouli_books/e2e_e/en_us/";
 
 const defaultFileContent = {
+  "*": {
+    name: "Undefined category/entry",
+    icon: "minecraft:book",
+    description: "Undefined description"
+  },
+
   patches: {
     description: "Pick version:",
     icon: "artisanworktables:artisans_grimoire_electrum",
+  },
+  
+  knowledge: {
+    "name": "Knowledge",
+    "icon": "artisanworktables:artisans_grimoire_wood",
+    "description": "Chapters about things in this modpack:"
+  },
+
+  quest_and_loot: {
+    "name": "Quest and loot",
+    "icon": "questbook:itemquestbook",
+    "description": "Info about Lootboxes and Quests"
   },
 
   v0_14: {
@@ -72,6 +90,13 @@ glob.sync("scripts/**/*.zs").forEach(zsfile => {
       below: zsfileContent.substring(match.index + match[0].length),
     });
   }
+});    
+
+patchouliList.push({
+  filePath: "./dev/Patchouli/additional_pages.js", 
+  command: loadText("./Patchouli/additional_pages.js"), 
+  line: 0, 
+  below: "",
 });
 
 // ######################################################################
@@ -83,7 +108,7 @@ glob.sync("scripts/**/*.zs").forEach(zsfile => {
 // Match all regex from crafttweaker.log
 var crafttweaker_log = null;
 function from_crafttweaker_log(rgx) {
-  crafttweaker_log = crafttweaker_log || loadText("../crafttweaker.log");
+  crafttweaker_log = crafttweaker_log || loadText("../../crafttweaker.log");
   return [...crafttweaker_log.matchAll(rgx)];
 }
 
@@ -137,6 +162,23 @@ function text$i(array, fnc) {
   return $i("text", array, fnc)
 }
 
+// Takes array and split it in several pages based of type
+function paged(opts, itemsOnPage, arr) {
+  return arr.reduce((o, m, i) => {
+    var j = ~~(i/itemsOnPage);
+    o[j] = o[j]||{...opts};
+
+    o[j][`item${i%itemsOnPage}`] = m[0];
+
+    if (opts.type == "grid") {
+    } else {
+
+    }
+    // o[j][`text${i%itemsOnPage}`] = m[1];
+    return o;
+  },[])
+}
+
 
 var book = {};
 
@@ -178,6 +220,8 @@ patchouliList.forEach(patchouliCommand => {
 
     // Call function for each array element if array provided as argument
     if(Array.isArray(parameters)) return parameters.forEach(o=>Patchouli_js(o));
+
+    // console.log('parameters :>> ', parameters);
 
     // p is for parameters
     var p;
@@ -238,10 +282,15 @@ patchouliList.forEach(patchouliCommand => {
     // Add page
     pointer.pages.push(page);
   }
-
-  eval(patchouliCommand.command);
+  
+  try {
+    eval(patchouliCommand.command);
+  } catch (error) {
+    console.log('Patchouli_js comment block Error.\nFile:', patchouliCommand.filePath, " Line:", patchouliCommand.line);
+    console.error(error);
+  }
+  
 });
-
 
 // ######################################################################
 //
@@ -254,7 +303,8 @@ function saveBookFile(_partName, subfolder, content) {
   saveObjAsJson(
     {
       __comment: "This file generated automatically with Patchouli.js. All changes will be rewritten",
-      ...defaultFileContent[partName], 
+      ...defaultFileContent["*"], 
+      ...defaultFileContent[partName],
       name: _partName,
       ...content
     }, 

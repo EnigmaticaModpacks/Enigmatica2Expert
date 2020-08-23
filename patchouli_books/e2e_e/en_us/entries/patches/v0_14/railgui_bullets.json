@@ -1,6 +1,8 @@
 {
   "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
   "name": "Railgui Bullets",
+  "icon": "immersiveengineering:railgun",
+  "description": "Undefined description",
   "category": "patchouli:subcategories/v0_14",
   "pages": [
     {
@@ -21,6 +23,5 @@
       "item6": "ore:stickCopper",
       "text6": "     14    |    1.1"
     }
-  ],
-  "icon": "immersiveengineering:railgun"
+  ]
 }

@@ -1,6 +1,8 @@
 {
   "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
   "name": "Cloche Fertilizers",
+  "icon": "immersiveengineering:metal_device1:13",
+  "description": "Undefined description",
   "category": "patchouli:subcategories/v0_14",
   "pages": [
     {
@@ -21,6 +23,5 @@
       "item6": "forge:bucketfilled{FluidName:\"meat\",Amount:1000}",
       "text6": "     0.25"
     }
-  ],
-  "icon": "immersiveengineering:metal_device1:13"
+  ]
 }
