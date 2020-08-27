@@ -188,54 +188,6 @@ import crafttweaker.item.IIngredient as IIngredient;
 	recipes.addShapeless("Petal Duplication14", <botania:petal:14> * 4, [<botania:petal:14>, <ore:fertilizer>, <ore:fertilizer>, <ore:fertilizer>, <ore:fertilizer>]);
 	recipes.addShapeless("Petal Duplication15", <botania:petal:15> * 4, [<botania:petal:15>, <ore:fertilizer>, <ore:fertilizer>, <ore:fertilizer>, <ore:fertilizer>]);
 
-	
-## *======= Mana Infusion =======*
-//mods.botania.ManaInfusion.addInfusion(IItemStack output, IIngredient input, int mana);
-#mods.botania.ManaInfusion.addInfusion(<minecraft:grass>, <ore:stone>, 1000);
-
-//mods.botania.ManaInfusion.addAlchemy(IItemStack output, IIngredient input, int mana);
-#mods.botania.ManaInfusion.addAlchemy(<minecraft:gold_ore>, <ore:stone>, 5000);
-
-//mods.botania.ManaInfusion.addConjuration(IItemStack output, IIngredient input, int mana);
-#mods.botania.ManaInfusion.addConjuration(<minecraft:stone>, <minecraft:stone>, 1000);
-
-## *======= Botanical Brewing =======*
-	//InputArray, BrewString
-	//mods.botania.Brew.addRecipe([<minecraft:nether_wart>, <minecraft:reeds>, <minecraft:redstone>], "speed");
-	//BrewString
-	//mods.botania.Brew.removeRecipe("absorption"); 
-
-## *======= Elven Trade =======*
-	//OutputArray, InputArray
-	//mods.botania.ElvenTrade.addRecipe([<botania:flower:4>], [<minecraft:yellow_flower>]);
-	//OutputArray
-	//mods.botania.ElvenTrade.removeRecipe([<botania:dreamwood>]);
-
-## *======= Orechid =======*
-	//InputOredict, Weight
-	//mods.botania.Orechid.addOre(<ore:logWood>, 5000);
-	//InputOredict
-	//mods.botania.Orechid.removeOre(<ore:oreIron>);
-
-## *======= Petal Apothecary =======*
-	//OutputStack, InputArray
-	//mods.botania.Apothecary.addRecipe("bubbell", [<ore:petalCyan>, <ore:petalBlue>, <Botania:manaresource:6>, <Botania:manaresource:10> * 1]);
-	//mods.botania.Apothecary.addRecipe(<minecraft:melon>, [<ore:petalLime>, <ore:petalRed>, <minecraft:wheat_seeds>]);
-	//OutputStack OR String (String is for subtiled Botania Flowers)
-	//mods.botania.Apothecary.removeRecipe("daybloom");
-
-## *======= Pure Daisy =======*
-	//InputBlock, OutputBlock
-	//mods.botania.PureDaisy.addRecipe(<minecraft:emerald_block>, <minecraft:diamond_block>);
-	//OutputBlock
-	//mods.botania.PureDaisy.removeRecipe(<minecraft:obsidian>);
-
-## *======= Rune Altar =======*
-	//OutputStack, InputArray, ManaCost
-	//mods.botania.RuneAltar.addRecipe(<minecraft:stonebrick:2>, [<minecraft:stonebrick>, <minecraft:gunpowder>], 5);
-	//OutputStack
-	//mods.botania.RuneAltar.removeRecipe(<botania:rune>);
-
 # Remove unused ORE
 mods.botania.Orechid.removeOre("oreYellorite");
 
@@ -245,3 +197,55 @@ mods.botania.Orechid.addOre("oreMagnesium", 1285);
 mods.botania.Orechid.addOre("oreLithium", 1285);
 mods.botania.Orechid.addOre("oreBoron", 1285);
 mods.botania.Orechid.addOre("oreProsperity", 900);
+
+
+/* Patchouli_js(
+	(()=>{
+  var btweaks = config("botaniatweaks.cfg");
+  return [
+  {
+     item: "botania:kingkey",
+    _text: `$(l)Key of the King's Law/$ was significally buffed.
+      Now each projectile deals $(l)$(#d11)${ btweaks.balance.keyDamageScale * 20 }/$ damage.`,
+  }, {
+     item: "botania:manabomb",
+    _text: `$(l)Manastorm Charge/$ was $(l)${
+      btweaks.balance.manastormScaleFactor }/$x times buffed.`,
+  }, {
+     item: "botania:rfgenerator",
+    _text: `Buffed, produced up to $(l)${
+			numeral(
+      	btweaks.balance.fluxfield.fePerBurst * 10 / btweaks.balance.fluxfield.shotsPerBurst
+			).format('0,0')
+			}/$ RF/t`,
+  }, {
+     item: "botania:manaresource:15",
+    _text: `Dispensers shoot glass bottles to turn them in to Ender Air in the End dimension.`,
+  }
+  ].map(o=>({...{
+    title: "#item->iname",
+		entry: "Botania",
+     type: "spotlight",
+	},...o}))})()
+)
+
+var petuniaPage = {
+  title: "Petro Petunia Fuels",
+  entry: "Petro Petunia",
+   type: "item_list",
+   item: `botania:specialflower{type: "petro_petunia"}`
+}
+
+Patchouli_js({
+  ...petuniaPage,
+  type: "spotlight",
+  _text: `$(l)Petro Petunia/$ is generating flower that burns liquids around it to provide $(#1df)mana/$.`
+})
+
+Patchouli_js( paged(petuniaPage, 7, 
+  [...Object.entries( config("acronym/floralchemy.cfg").fuelvalues )]
+  .sort((a,b)=>b[1].burnTime * b[1].powerPreTick - a[1].burnTime * a[1].powerPreTick)
+  .map(o=>( [
+    wrap_bucket(o[0]), `${o[1].burnTime} ticks, ${o[1].powerPreTick} mana/tick`
+  ] ))
+))*/

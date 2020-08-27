@@ -1,0 +1,33 @@
+{
+  "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
+  "name": "Botania",
+  "icon": "botania:kingkey",
+  "description": "Undefined description",
+  "category": "patchouli:subcategories/v0_14",
+  "pages": [
+    {
+      "title": "#item->iname",
+      "type": "spotlight",
+      "item": "botania:kingkey",
+      "text": "$(l)Key of the King's Law/$ was significally buffed.$(br)Now each projectile deals $(l)$(#d11)200/$ damage."
+    },
+    {
+      "title": "#item->iname",
+      "type": "spotlight",
+      "item": "botania:manabomb",
+      "text": "$(l)Manastorm Charge/$ was $(l)2/$x times buffed."
+    },
+    {
+      "title": "#item->iname",
+      "type": "spotlight",
+      "item": "botania:rfgenerator",
+      "text": "Buffed, produced up to $(l)20,000/$ RF/t"
+    },
+    {
+      "title": "#item->iname",
+      "type": "spotlight",
+      "item": "botania:manaresource:15",
+      "text": "Dispensers shoot glass bottles to turn them in to Ender Air in the End dimension."
+    }
+  ]
+}

@@ -52,7 +52,7 @@ const defaultFileContent = {
   },
 
   v0_14: {
-    description: "Fluid update! Many things...",
+    description: "Fluid update! Many things...$(br2)List of things was added in this patch ->",
     icon: "artisanworktables:artisans_grimoire_platinum"
   },
 
@@ -170,7 +170,8 @@ function paged(opts, itemsOnPage, arr) {
 
     o[j][`item${i%itemsOnPage}`] = m[0];
 
-    if (opts.type == "grid") {
+    if (opts.type == "item_list") {
+      o[j][`text${i%itemsOnPage}`] = m[1];
     } else {
 
     }
@@ -179,6 +180,42 @@ function paged(opts, itemsOnPage, arr) {
   },[])
 }
 
+function config(cfgPath) {
+  var wholePath = "../config/" + cfgPath;
+  var cfg = loadText(wholePath);
+  cfg = cfg
+    .replace(/^ *#.*$/gm, "") // Remove comments
+    .replace(/^~.*$/gm, "") // config version
+    .replace(/^ *(\w+|"[^"]+") *{ *$/gm, "$1:{") // class name
+    .replace(/^ *} *$/gm, "},") // end of block
+    .replace(/^ *\w:(\w+|"\w+") *= *(.*)$/gm, (match, p1, p2)=>
+      (isNaN(p2) && !(p2 === "true" || p2 === "false")) 
+      ? `${p1}:"${p2}",` 
+      : `${p1}:${p2},`
+    ); // simple values
+
+  // Replace lists
+  cfg = cfg.replace(/^ *\w:(\w+|"\w+") *< *[\s\S\n\r]*?> *$/gm, (match, p1)=>{
+    var lines = match.split("\n")
+    var content = lines.slice(1, lines.length-1);
+    return [
+      p1 + ": [",
+      ...content.map(l=>`"${l.trim()}",`),
+      "],"
+    ].join("\n")
+  });
+
+
+  var result;
+  try {
+    result = eval(`({${cfg}})`);
+  } catch (error) {
+    console.log('Parsing config error. File: ', wholePath);
+    console.error(error);
+  }
+
+  return result;
+}
 
 var book = {};
 
@@ -349,3 +386,5 @@ function findNewPoint(x, y, angle, distance) {
 for (let i = 0; i < 6; i++) {
   console.log('x,y :>> ', JSON.stringify(findNewPoint(50, 16, 0.2*i, 26.0)));
 }*/
+
+

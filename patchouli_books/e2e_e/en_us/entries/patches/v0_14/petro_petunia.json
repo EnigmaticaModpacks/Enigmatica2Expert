@@ -1,0 +1,43 @@
+{
+  "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
+  "name": "Petro Petunia",
+  "icon": "botania:specialflower{type: \"petro_petunia\"}",
+  "description": "Undefined description",
+  "category": "patchouli:subcategories/v0_14",
+  "pages": [
+    {
+      "title": "Petro Petunia Fuels",
+      "type": "spotlight",
+      "item": "botania:specialflower{type: \"petro_petunia\"}",
+      "text": "$(l)Petro Petunia/$ is generating flower that burns liquids around it to provide $(#1df)mana/$."
+    },
+    {
+      "title": "Petro Petunia Fuels",
+      "type": "item_list",
+      "item": "botania:specialflower{type: \"petro_petunia\"}",
+      "item0": "forge:bucketfilled{FluidName:\"rocketfuel\",Amount:1000}",
+      "text0": "1200 ticks, 100 mana/tick",
+      "item1": "forge:bucketfilled{FluidName:\"empoweredoil\",Amount:1000}",
+      "text1": "1000 ticks, 100 mana/tick",
+      "item2": "forge:bucketfilled{FluidName:\"refined_fuel\",Amount:1000}",
+      "text2": "850 ticks, 100 mana/tick",
+      "item3": "forge:bucketfilled{FluidName:\"diesel\",Amount:1000}",
+      "text3": "350 ticks, 50 mana/tick",
+      "item4": "forge:bucketfilled{FluidName:\"crystaloil\",Amount:1000}",
+      "text4": "350 ticks, 50 mana/tick",
+      "item5": "forge:bucketfilled{FluidName:\"biodiesel\",Amount:1000}",
+      "text5": "250 ticks, 50 mana/tick",
+      "item6": "forge:bucketfilled{FluidName:\"biomass\",Amount:1000}",
+      "text6": "250 ticks, 50 mana/tick"
+    },
+    {
+      "title": "Petro Petunia Fuels",
+      "type": "item_list",
+      "item": "botania:specialflower{type: \"petro_petunia\"}",
+      "item0": "forge:bucketfilled{FluidName:\"canolaoil\",Amount:1000}",
+      "text0": "150 ticks, 50 mana/tick",
+      "item1": "forge:bucketfilled{FluidName:\"oil\",Amount:1000}",
+      "text1": "100 ticks, 50 mana/tick"
+    }
+  ]
+}

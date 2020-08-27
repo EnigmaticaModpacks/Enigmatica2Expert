@@ -1,44 +1,66 @@
 
-var isSingle = true;
+const {escapeRegex} = require('./utils.js');
+
+var isSingle = false;
 
 var source = 
 `
-[null, <extrautils2:ingredients:16>, anyStrong.marked("potStrong"), <extrautils2:ingredients:16>, null],
-[<ore:nuggetUltimate>, <deepmoblearning:glitch_heart>, anyLong.marked("potLong"), <deepmoblearning:glitch_heart>, <ore:nuggetUltimate>],
-[<ore:nuggetUltimate>, <randomthings:spectreilluminator>, anyCombined.marked("potCombined"), <randomthings:spectreilluminator>, <ore:nuggetUltimate>],
-[<ore:nuggetUltimate>, <avaritia:endest_pearl>, <thaumcraft:crucible>.reuse(), <avaritia:endest_pearl>, <ore:nuggetUltimate>],
-[null, <avaritia:ultimate_stew>, <avaritia:ultimate_stew>, <avaritia:ultimate_stew>, null]
+[<ore:ingotUltimate>, <ore:ingotUltimate>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:ingotUltimate>, <ore:ingotUltimate>], 
+[<ore:ingotUltimate>, <ore:ingotUltimate>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:ingotUltimate>, <ore:ingotUltimate>], 
+[<ore:cheeseWheels>, <ore:cheeseWheels>, <botania:brewflask>.withTag({brewKey: "overload"}), <rats:chunky_cheese_token>, <rats:chunky_cheese_token>, <rats:chunky_cheese_token>, <botania:brewflask>.withTag({brewKey: "overload"}), <ore:cheeseWheels>, <ore:cheeseWheels>], 
+[<ore:cheeseWheels>, <ore:cheeseWheels>, <rats:chunky_cheese_token>, <scalinghealth:difficultychanger>, <scalinghealth:heartcontainer>, <scalinghealth:difficultychanger>, <rats:chunky_cheese_token>, <ore:cheeseWheels>, <ore:cheeseWheels>], 
+[<ore:cheeseWheels>, <ore:cheeseWheels>, <rats:chunky_cheese_token>, <scalinghealth:heartcontainer>, <rats:rat_upgrade_nonbeliever>, <scalinghealth:heartcontainer>, <rats:chunky_cheese_token>, <ore:cheeseWheels>, <ore:cheeseWheels>], 
+[<ore:cheeseWheels>, <ore:cheeseWheels>, <rats:chunky_cheese_token>, <scalinghealth:difficultychanger>, <scalinghealth:heartcontainer>, <scalinghealth:difficultychanger>, <rats:chunky_cheese_token>, <ore:cheeseWheels>, <ore:cheeseWheels>], 
+[<ore:cheeseWheels>, <ore:cheeseWheels>, <botania:brewflask>.withTag({brewKey: "overload"}), <rats:chunky_cheese_token>, <rats:chunky_cheese_token>, <rats:chunky_cheese_token>, <botania:brewflask>.withTag({brewKey: "overload"}), <ore:cheeseWheels>, <ore:cheeseWheels>], 
+[<ore:ingotUltimate>, <ore:ingotUltimate>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:ingotUltimate>, <ore:ingotUltimate>], 
+[<ore:ingotUltimate>, <ore:ingotUltimate>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:ingotUltimate>, <ore:ingotUltimate>]
 `;
 var list = {};
 
-var avaliableChars = "◪☼◩▬✝▭⩉◘◊ⱋ▥♰ⰱ‡☒◧◇▢ⰻ☠☑ⰷ▦♦☐▤◽ⱄ∪◙◰▣Ⰰ◳◨⍣χ☺‗♣◫ⱎ▨♂◲◱⍤◉♠▧▩₀₁₂₃₄";
+//////////////////////////////////////////
+// Prepare chars
+var avaliableChars = "▢▬☼⩉◊♥◪◽◩✝▭◘ⱋ▥♰ⰱ‡☒◧◇ⰻ☠☑ⰷ▦♦☐▤ⱄ∪◙◰▣Ⰰ◳◨⍣χ☺‗♣◫ⱎ▨♂◲◱⍤◉♠▧▩₀₁₂₃₄";
 
 for (const [c,m] of Object.entries(list)) {
   avaliableChars = avaliableChars.replace(c, "");
 }
 avaliableChars = [...avaliableChars]; // Tricky unicode split
 
+//////////////////////////////////////////
+// Collect all items and sort them
+var itemUses = [];
 function handleMatch(m) {
-  var c = avaliableChars[0];
-  if (!Object.values(list).includes(m)) {
-    if (!isSingle) console.log(`list[\"${c}\"] = ${m};`);
-    list[c] = m;
-    avaliableChars.shift();
-  }
+  var found = itemUses.find(it => it.item === m);
+  if (found) found.uses++;
+  else itemUses.push({item: m, uses: 1});
 }
 
+// Regular ItemStack
 for (const match of source.matchAll(/<[^>]+?>(.withTag\(\{.*?\}\))*(.reuse\(\))*(.marked\(\".*?\"\))*/gm)) {
 	handleMatch(match[0]);
 }
 
+// Variable with "marked"
 for (const match of source.matchAll(/[ \[](\w+\.marked\(".*?"\))[,\]]/gm)) {
 	handleMatch(match[1]);
 }
 
-function escapeRegex(string) {
-  return string.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
-}
+itemUses.sort((a,b)=>b.uses-a.uses);
 
+//////////////////////////////////////////
+// Assign chars to items
+itemUses.forEach(o => {
+  var m = o.item;
+  if (!Object.values(list).includes(m)) {
+    var c = avaliableChars[0];
+    if (!isSingle) console.log(`list[\"${c}\"] = ${m};`);
+    list[c] = m;
+    avaliableChars.shift();
+  }
+});
+
+//////////////////////////////////////////
+// Make list of items
 var listAsString = "{\n";
 for (const [c, m] of Object.entries(list)) {
 	source = source.replace(new RegExp(escapeRegex(m), 'g'), c);
@@ -51,12 +73,15 @@ listAsString += "}";
 
 
 
+//////////////////////////////////////////
+// Replace grid
 source = '\ncraft.make( , ["pretty",' +
   source
-  .replace(/^( *)\[+/gm,"$1\"")
-  .replace(/null/gm," ")
-  .replace(/\], *$/gm,"\",")
-  .replace(/(.), /gm,"$1 ")
+  .replace(/^( *)\[+/gm,"$1\"") // String start replace with ""
+  .replace(/null/gm," ")        // Nulls replace to " "
+  .replace(/\], *$/gm,"\",")    // End of line replace to second " and comma
+  .replace(/\], ?\[/gm,`",\n"`)  // Recipe.zs export
+  .replace(/(.), /gm,"$1 ")     // Remove excess commas
   .replace(/\]\]?\)?;? *$/gm, `\"], ${isSingle?listAsString:"list"});`)
 
 console.log(source);

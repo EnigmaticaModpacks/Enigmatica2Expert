@@ -2,6 +2,6 @@
   "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
   "name": "v0.14",
   "icon": "artisanworktables:artisans_grimoire_platinum",
-  "description": "Fluid update! Many things...",
+  "description": "Fluid update! Many things...$(br2)List of things was added in this patch ->",
   "parent": "patchouli:patches"
 }
