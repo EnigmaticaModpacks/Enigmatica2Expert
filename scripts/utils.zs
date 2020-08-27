@@ -16,19 +16,15 @@ zenClass Utils {
     val JOREoutput = mods.jaopca.JAOPCA.getOre(oreName);
     var something as IItemStack = null;
     if (!isNull(JOREoutput)) {
-      print("    JOREoutput not null: " ~ oreName ~" " ~ entryNames.length);
       var k = 0;
       while k < entryNames.length && isNull(something) {
-        print("    checking: " ~ entryNames[k]);
         something = JOREoutput.getItemStack(entryNames[k]);
         k += 1;
       }
     }
     if (isNull(something)) {
       for str in entryNames {
-        print("    getSomething Checking: "~ oreName ~" "~(str~oreName));
         if (oreDict has (str~oreName)) {
-          print("    getSomething found!");
           return oreDict[str~oreName].firstItem;
         }
       }
@@ -50,5 +46,30 @@ zenClass Utils {
     recipes.addShapeless(a.itemArray[0] * 9, [b]);
   }
 
+
+  # ########################
+  # Conditional Loging
+  # ########################
+  function log(a as string) as void {log(a,null,null);}
+  function log(a as string, b as string) as void {log(a,b,null);}
+  function log(a as string, b as string, c as string) as void {
+    if (DEBUG) print(
+      (!isNull(a) ? a : "") ~ 
+      (!isNull(b) ? " " ~ b : "") ~ 
+      (!isNull(c) ? " " ~ c : ""));
+  }
+  function log(arr as string[]) as void {
+    if (DEBUG) {
+      if (isNull(arr) || arr.length <=0) {
+        print("");
+        return;
+      }
+      var s = "";
+      for str in arr {
+        s = s ~ " " ~ str;
+      }
+      print(s);
+    }
+  }
 }
 global utils as Utils = Utils();

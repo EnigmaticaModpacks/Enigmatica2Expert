@@ -614,6 +614,14 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       return machineName;
     }
 
+    if (machineName == "crucible") {
+      # mods.thermalexpansion.Crucible.addRecipe(ILiquidStack output, IItemStack input, int energy);
+      for ii in inputIngr0.itemArray {
+        mods.thermalexpansion.Crucible.addRecipe(outputLiquid0, ii, 2800);
+      }
+      return machineName;
+    }
+
     if (machineName == "smeltery") {
       # mods.tconstruct.Melting.addRecipe(ILiquidStack output, IIngredient input, @Optional int temp);
       mods.tconstruct.Melting.addRecipe(outputLiquid0, inputIngr0);
@@ -654,6 +662,14 @@ function workEx(machineNameAnyCase as string, exceptions as string,
 
     if (machineName == "ncinfuser") { 
       mods.nuclearcraft.infuser.addRecipe(inputIngr0, inputLiquid0, outputItem0);
+      return machineName;
+    }
+
+    if (machineName == "transposer") { 
+      //mods.thermalexpansion.Transposer.addFillRecipe(IItemStack output, IItemStack input, ILiquidStack fluid, int energy);
+      for ii in inputIngr0.itemArray {
+        mods.thermalexpansion.Transposer.addFillRecipe(outputItem0, ii, inputLiquid0, 2000);
+      }
       return machineName;
     }
 

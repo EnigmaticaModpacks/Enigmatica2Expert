@@ -6,15 +6,9 @@ import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.data.IData;
 import mods.jei.JEI.removeAndHide as rh;
 
-#priority 3000
+#priority 3005
 
-# ######################################################################
-#
-# Global recipe ingredients
-#
-# ######################################################################
-
-global gemDiamondRat as IIngredient = <ore:gemDiamond> | <rats:rat_diamond>;
+global DEBUG as bool = true;
 
 # ######################################################################
 #
@@ -116,15 +110,6 @@ global remakeEnvelop as function(IItemStack, IIngredient, IIngredient)void =
 };
 
 
-# Remake any recipe with Fluid crafting
-global remakeFluidToItem as function(IItemStack, ILiquidStack, IIngredient)void = 
-    function (output as IItemStack, fluid as ILiquidStack, input as IIngredient) as void  {
-
-	recipes.remove(output);
-	mods.inworldcrafting.FluidToItem.transform(output, fluid, [input]);
-};
-
-
 # ########################
 # Make recipe by string grid
 # Inspired by Omnifactory code:
@@ -214,31 +199,16 @@ global clearFluid as function(IItemStack)void =
 				if (!isNull(tag.Fluid)) {
 					# Usual tanks
 					tag = tag - "Fluid";
+				} else
+				if (!isNull(tag.FluidName) && !isNull(tag.Amount)) {
+					# Black hole or other
+					tag = tag - "FluidName" - "Amount";
 				}
 				return out.withTag(tag);
 			}
 			return out;
 	}, null);
 };
-
-# Make shapeless crafts for specified block up to level for Preston mod
-# warning - compressing should be called only once
-global compressIt as function(IItemStack, int)IItemStack = 
-    function (item as IItemStack, maxLevel as int) as IItemStack  {
-  var o = item;
-  val meta = item.damage as short;
-  for i in 1 to maxLevel {
-    val compressed = <preston:compressed_block>.withTag({
-      stack: {id: item.definition.id, Count: 1 as byte, Damage: meta}, level: i
-    });
-    mods.jei.JEI.addItem(compressed);
-    recipes.addShapeless(compressed, [o, o, o, o, o, o, o, o, o]);
-    recipes.addShapeless(o * 9, [compressed]);
-    o = compressed;
-  }
-	return o;
-};
-
 
 
 # ########################
@@ -250,7 +220,10 @@ global compressIt as function(IItemStack, int)IItemStack =
 # ########################
 global D as function(IData, string)IData = 
     function (data as IData, field as string) as IData  {
-	if (!isNull(data) && !isNull(field)) {
+	// Return same data if field is null
+	if (isNull(field)) return data;
+
+	if (!isNull(data)) {
 		var descend = data;
 		for tag in field.split("[\\.\\[\\]]") {
 			if (tag != "") {
@@ -307,8 +280,3 @@ global BucketTag as function(string,IData)IItemStack = function (name as string,
 	if (!isNull(b) && !isNull(tag)) { return b.updateTag({Tag: tag}); }
 	return b;
 };
-
-# ########################
-# Fill itemstack with liquid
-# Account maximum capacity
-# ########################
