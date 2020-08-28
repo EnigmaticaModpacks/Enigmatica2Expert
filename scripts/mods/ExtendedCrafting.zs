@@ -1,4 +1,6 @@
 import mods.jei.JEI.removeAndHide as rh;
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
 #modloaded extendedcrafting
 
 	var piston = <minecraft:piston>;

@@ -2,6 +2,8 @@ import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemCondition;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
+import scripts.craft.grid.Grid;
+import mods.artisanworktables.builder.RecipeBuilder;
 
 # *======= Gas Trophy Frame =======*
 
@@ -103,7 +105,6 @@ var list = {
 	"▣": <industrialforegoing:black_hole_unit>,
 	"▨": <mekanism:basicblock2:3>.withTag({tier: 3}),
 	"▩": <mekanism:basicblock2:4>.withTag({tier: 3}),
-	"⍤": <mekanism:gastank>.withTag({tier: 4}),
 	"⍣": <mekanism:machineblock2:11>.withTag({tier: 4}),
 	"ⰷ": <mysticalagradditions:stuff:69>,
 	"▦": <ore:blockDraconiumAwakened>,
@@ -113,7 +114,6 @@ var list = {
 	"▭": <ore:ingotMirion>,
 	"▬": <ore:ingotUltimate>,
 	"▢": <ore:plateElite>,
-	"▥": <thermalexpansion:cell>.withTag({Level: 4 as byte}),
 	"◽": <thermalexpansion:frame:148>,
 	"♠": Bucket("ic2uu_matter"),
 	"♣": Bucket("rocket_fuel"),
@@ -196,6 +196,24 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 	<opencomputers:screen2>, <opencomputers:screen1>]);
 
 
+# Rat upgrade
+craft.make( <rats:rat_upgrade_creative>, ["pretty",
+		"▬ ▢ ▢ ▢ ▢ ▢ ▬",
+		"▢ ⩉ ☼ ☼ ☼ ⩉ ▢",
+		"▢ ☼ ◊ ♥ ◊ ☼ ▢",
+		"▢ ☼ ♥ ◪ ♥ ☼ ▢",
+		"▢ ☼ ◊ ♥ ◊ ☼ ▢",
+		"▢ ⩉ ☼ ☼ ☼ ⩉ ▢",
+		"▬ ▢ ▢ ▢ ▢ ▢ ▬"], {
+	"▢": <ore:cheeseWheels>,
+	"▬": <extendedcrafting:material:24>,
+	"☼": <rats:chunky_cheese_token>,
+	"⩉": <botania:brewflask>.withTag({brewKey: "overload"}),
+	"◊": <scalinghealth:difficultychanger>,
+	"♥": <scalinghealth:heartcontainer>,
+	"◪": <rats:rat_upgrade_nonbeliever>,
+});
+
 
 # Creative Mana Tablet
 	list["‡"] = <botania:laputashard>;
@@ -235,31 +253,95 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 	"∪ ▭ ▭ ▭ ∪ ▭ ▭ ▭ ∪"], list);
 
 
+# Creative Gas Tank
+list["η"] = <avaritia:resource:4>;
+list["ι"] = <bloodmagic:blood_tank:15>;
+list["◴"] = <thermalexpansion:tank>.withTag({Fluid: {FluidName: "neutron"  , Amount: 128000}, Level: 1 as byte});
+list["◵"] = <thermalexpansion:tank>.withTag({Fluid: {FluidName: "mana"     , Amount: 128000}, Level: 1 as byte});
+list["◶"] = <thermalexpansion:tank>.withTag({Fluid: {FluidName: "amber"    , Amount: 128000}, Level: 1 as byte});
+list["◷"] = <thermalexpansion:tank>.withTag({Fluid: {FluidName: "liquiddna", Amount: 128000}, Level: 1 as byte});
+list["μ"] = creativeGasTankFrame;
+list["⫳"] = <advgenerators:turbine_enderium>;
 
-# Storage Drawers Unlimited Withdrawel Upgrade
-	list["χ"] = <ore:blockCrystalMatrix>;
-	list["◳"] = <ore:blockAethium>;
-	list["✝"] = <draconicevolution:chaotic_core>;
-	list["⌧"] = <ore:ingotInfinity>;
-	list["⇯"] = <rftools:powercell_creative>;
-	list["⇫"] = <ic2:te:86>;
-	list["⇬"] = <environmentaltech:solar_cont_6>;
-	list["⇭"] = twilightForestMasterTrophy;
+craft.make( <mekanism:gastank>.withTag({tier: 4}), ["pretty",
+	"▬ ▬ ▬ ◫ ♣ ◫ ▬ ▬ ▬",
+	"▬ ◉ ▧ ◊ ♣ ◊ ▧ ◉ ▬",
+	"▬ ▤ ◴ η ⫳ η ◵ ▤ ▬",
+	"◫ ♦ ⰱ ж ι ж ⰱ ♦ ◫",
+	"♣ ♣ ⫳ ι μ ι ⫳ ♣ ♣",
+	"◫ ♦ ⰱ ж ι ж ⰱ ♦ ◫",
+	"▬ ▤ ◶ η ⫳ η ◷ ▤ ▬",
+	"▬ ◉ ▧ ◊ ♣ ◊ ▧ ◉ ▬",
+	"▬ ▬ ▬ ◫ ♣ ◫ ▬ ▬ ▬"], list);
 
-	craft.make(<storagedrawers:upgrade_creative:1> * 2, ["pretty",
-	"χ ▣ ☠ ☠ ◊ ☠ ☠ ▣ χ",
-	"▣ ◽ ◽ ☑ ⱋ ☑ ◽ ◽ ▣",
-	"☠ ◽ ◳ ✝ ♦ ✝ ◳ ◽ ☠",
-	"☠ ☑ ⰷ ⇯ ⌧ ⇫ ⰷ ☑ ☠",
-	"◊ ⱋ ♦ ⇬ ⇭ ⇬ ♦ ⱋ ◊",
-	"☠ ☑ ⰷ ⍣ ⌧ ⍤ ⰷ ☑ ☠",
-	"☠ ◽ ◳ ✝ ♦ ✝ ◳ ◽ ☠",
-	"▣ ◽ ◽ ☑ ⱋ ☑ ◽ ◽ ▣",
-	"χ ▣ ☠ ☠ ◊ ☠ ☠ ▣ χ"], list);
-	
-	recipes.addShapeless("Creative Storage Upgrade Duplication", 
-	<storagedrawers:upgrade_creative:1> * 2, 
-	[<storagedrawers:upgrade_creative:1>]);
+recipes.addShapeless("Creative Gas Tank Clearing", 
+<mekanism:gastank>.withTag({tier: 4}), [<mekanism:gastank>.withTag({tier: 4})]);
+
+
+# *======= Fluid Trophy Frame =======*
+
+var creativeFluidTankFrame = <simple_trophies:trophy>.withTag({
+	TrophyItem:{id:"mekanism:machineblock2",Count:1 as byte, Damage:11 as short},
+	TrophyName:"Creative Fluid Tank Frame",
+	TrophyVariant:"gold"
+});
+
+# Add to JEI and apply Information
+mods.jei.JEI.addItem(creativeFluidTankFrame);
+
+// 25 buckets of liquids
+var fluidFrameIngr = [] as IIngredient[];
+for fname in [
+	"milk_goat"   , "helium3"       , "aerotheum"   , "tritium"           , "mutagen"    ,
+	"biomass"     , "empoweredoil"  , "witchwater"  , "xu_demonic_metal"  , "essence"    ,
+	"draconium"   , "sewage"        , "pyrotheum"   , "ic2pahoehoe_lava"  , "liquiddna"  ,
+	"corium"      , "essence"       , "juice"       , "ender"             , "cryotheum"  ,
+	"petrotheum"  , "refined_fuel"  , "mirion"      , "neutron"           , "plasma"     ,
+] as string[] {
+	fluidFrameIngr =  fluidFrameIngr + Bucket(fname);
+}
+
+// 9 Tanks of additionals
+var fluidFrameSecondary = [] as IIngredient[];
+for fname in [
+	"latex","tree_oil",  "bio.ethanol", "liquidchorus", "heavy_metal", "mana", 	"crystal", "cloud_seed_concentrated", "ic2hot_coolant", 	
+] as string[] {
+	fluidFrameSecondary =  fluidFrameSecondary + 
+		<thermalexpansion:tank>.withTag({Fluid: {FluidName: fname, Amount: 512000} , Level: 3 as byte});
+}
+
+# Build the recipe
+RecipeBuilder.get("chemist")
+  .setShapeless(fluidFrameIngr)
+  .setFluid(<liquid:ic2uu_matter> * 16000)
+  .setSecondaryIngredients(fluidFrameSecondary)
+  .addOutput(creativeFluidTankFrame)
+  .create();
+
+
+# *======= Mekanism Creative Tank =======*
+list["⍤"] = <mekanism:gastank>.withTag({tier: 4});
+list["✝"] = <draconicevolution:chaotic_core>;
+list["♥"] = creativeFluidTankFrame;
+list["♀"] = <mctsmelteryio:upgrade:4>;
+list["θ"] = <ic2:te:134>;
+list["◆"] = <enderio:item_capacitor_stellar>;
+
+
+craft.make( <mekanism:machineblock2:11>.withTag({tier: 4, mekData:{}}), ["pretty",
+"◉ ◉ ♀ ♀ ◆ ♀ ♀ . .",
+"◉ ◽ ▬ ▬ ◊ ▬ ▬ ◽ .",
+"θ ▬ ⩉ ⩉ ⩉ ⩉ ⩉ ▬ .",
+"θ ▬ ⩉ ж ✝ ж ⩉ ▬ .",
+"◆ ◊ ⩉ ☠ ♥ ☠ ⩉ ◊ .",
+"θ ▬ ⩉ ж ⍤ ж ⩉ ▬ .",
+"θ ▬ ⩉ ⩉ ⩉ ⩉ ⩉ ▬ .",
+". ◽ ▬ ▬ ◊ ▬ ▬ ◽ .",
+". . . . . . . . ."], list);
+
+recipes.addShapeless("Creative Tank Reset", 
+<mekanism:machineblock2:11>.withTag({tier: 4, mekData: {}}), 
+[<mekanism:machineblock2:11>.withTag({tier: 4})]);
 
 	
 # Psi Creative Rod Frame
@@ -289,12 +371,6 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 	"          ☠ ς ☠  ", 
 	"            ☠ ☠  ", 
 	"                ◊"], list);
-	
-# Creative Wireless Crafting Terminal
-	recipes.addShapeless("Creative Wireless Crafting Terminal", 
-	<wct:wct_creative>, 
-	[<wct:wct>.withTag({}),<rftools:powercell_creative>.anyDamage()]);
-
 
 # TIC Creative Modifier
 	list["F"] = <ore:blockPigiron>;
@@ -351,124 +427,73 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 	"        ▦        "], list);
 	
 
-
-list["τ"] = <nuclearcraft:rtg_californium>;
-list["ψ"] = <environmentaltech:solar_cont_4>;
-list["υ"] = <environmentaltech:solar_cont_5>;
-list["φ"] = <draconicevolution:draconic_energy_core>;
-list["⫲"] = <extrautils2:rainbowgenerator>;
-
-# RFTools Creative Powercell
-	craft.make(<rftools:powercell_creative>, ["pretty",
-	"◘ ◽ ▬ ▬ ▬ ▬ ▬ ◽ ◘",
-	"◽ τ ▢ ◊ ◇ ◊ ▢ τ ◽",
-	"▬ ▢ ▩ ▥ υ ▥ ▩ ▢ ▬",
-	"▬ ♦ ▥ ▨ φ ▨ ▥ ♦ ▬",
-	"▬ ◇ ψ ⫲ ☠ ⫲ ψ ◇ ▬",
-	"▬ ♦ ▥ ▨ φ ▨ ▥ ♦ ▬",
-	"▬ ▢ ▩ ▥ υ ▥ ▩ ▢ ▬",
-	"◽ τ ▢ ◊ ◇ ◊ ▢ τ ◽",
-	"◘ ◽ ▬ ▬ ▬ ▬ ▬ ◽ ◘"], list);
-	
-/*  •■◆○◎◯◴◵◶◷☹♀♥♪♫♱✓⸕₅₆₇₈₉⇮⫳⩈  */
-
-
-# Mekanism Creative Tank
-	list["a"] = Bucket("milk_goat");
-	list["b"] = Bucket("blood");
-	list["c"] = Bucket("liquiddna");
-	list["d"] = Bucket("juice");
-	list["e"] = Bucket("mutagen");
-	list["f"] = Bucket("biomass");
-	list["g"] = Bucket("empoweredoil");
-	list["h"] = Bucket("witchwater");
-	list["i"] = Bucket("xu_demonic_metal");
-	list["j"] = Bucket("essence");
-	list["k"] = Bucket("draconium");
-	list["l"] = Bucket("sewage");
-	list["m"] = Bucket("pyrotheum");
-	list["n"] = Bucket("ic2pahoehoe_lava");
-	list["o"] = Bucket("aerotheum");
-	list["p"] = Bucket("clay");
-	list["q"] = Bucket("essence");
-	list["r"] = Bucket("tritium");
-	list["s"] = Bucket("ender");
-	list["t"] = Bucket("cryotheum");
-	list["u"] = Bucket("petrotheum");
-	list["v"] = Bucket("refined_fuel");
-	list["w"] = Bucket("mirion");
-	list["x"] = Bucket("neutron");
-	list["A"] = <industrialforegoing:black_hole_tank>;
-	list["B"] = <thermalexpansion:tank>.withTag({Fluid: {FluidName: "bio.ethanol", Amount: 32000}});
-	list["C"] = <thermalexpansion:tank>.withTag({Fluid: {FluidName: "tree_oil", Amount: 32000}});
-	list["D"] = <thermalexpansion:tank>.withTag({Fluid: {FluidName: "ic2uu_matter", Amount: 32000}});
-	list["E"] = <thermalexpansion:tank>.withTag({Fluid: {FluidName: "mana", Amount: 32000}});
-
-	craft.make( <mekanism:machineblock2:11>.withTag({tier: 4, mekData:{}}), ["pretty",
-	"A a b c B d e f A",
-	"g ◽ ▬ ▬ ◊ ▬ ▬ ◽ h",
-	"i ▬ ⩉ ⩉ ⩉ ⩉ ⩉ ▬ j",
-	"k ▬ ⩉ ж ☠ ж ⩉ ▬ l",
-	"C ◊ ⩉ ☠ ✝ ☠ ⩉ ◊ D",
-	"m ▬ ⩉ ж ☠ ж ⩉ ▬ n",
-	"o ▬ ⩉ ⩉ ⩉ ⩉ ⩉ ▬ p",
-	"q ◽ ▬ ▬ ◊ ▬ ▬ ◽ r",
-	"A s t u E v w x A"], list);
-
-	recipes.addShapeless("Creative Tank Reset", 
-	<mekanism:machineblock2:11>.withTag({tier: 4, mekData: {}}), 
-	[<mekanism:machineblock2:11>.withTag({tier: 4})]);
-
-
 # ExU2 Mill
-	craft.make(<extrautils2:passivegenerator:6>, ["pretty",
+list["☹"] = <draconicevolution:draconium_capacitor:1>;
+craft.make(<extrautils2:passivegenerator:6>, ["pretty",
 	"ⱄ ⱄ ▬ ☐ ☐ ☐ ▬ ⱄ ⱄ",
 	"ⱄ ▬ ◩ ◩ ◊ ◩ ◩ ▬ ⱄ",
 	"▬ ◧ ♦ ♂ ☺ ♂ ♦ ◪ ▬",
-	"☐ ◧ ♂ ⰻ φ ⰻ ♂ ◪ ☐",
-	"☐ ◊ ☺ φ ж φ ☺ ◊ ☐",
-	"☐ ◧ ♂ ☼ φ ☼ ♂ ◪ ☐",
+	"☐ ◧ ♂ ⰻ ☹ ⰻ ♂ ◪ ☐",
+	"☐ ◊ ☺ ☹ ж ☹ ☺ ◊ ☐",
+	"☐ ◧ ♂ ☼ ☹ ☼ ♂ ◪ ☐",
 	"▬ ◧ ♦ ♂ ☺ ♂ ♦ ◪ ▬",
 	"ⱄ ▬ ◨ ◨ ◊ ◨ ◨ ▬ ⱄ",
 	"ⱄ ⱄ ▬ ☐ ☐ ☐ ▬ ⱄ ⱄ"], list);
+
+
+
+list["τ"] = <notenoughrtgs:rtg_californium_compact>;
+list["⁴"] = <environmentaltech:solar_cont_4>;
+list["⁵"] = <environmentaltech:solar_cont_5>;
+list["⁶"] = <environmentaltech:solar_cont_6>;
+list["⫲"] = <extrautils2:rainbowgenerator>;
+list["V"] = <ic2:te:22>;
+list["W"] = <mekanismgenerators:reactor>;
+list["X"] = <extrautils2:decorativesolid:8>;
+list["■"] = <draconicevolution:fusion_crafting_core>;
+list["κ"] = <extrautils2:decorativesolid:6>;
+
+# Mekanism Creative Energy
+var creativeCube = <mekanism:energycube>.withTag({tier:4,mekData:{energyStored:1.7976931348623157E308}});
+craft.make(creativeCube, ["pretty",
+	"◘ ◘ ◙ ◙ τ . . . .",
+	"◘ ◊ V ▩ ▩ . . . .",
+	"☠ V W ◽ ⁵ . . . .",
+	"☠ ▨ ◽ ■ ☹ . . . .",
+	"κ ▨ ⁵ ⫲ X . . . .",
+	". . . . . . . . .",
+	". . . . . . . . .",
+	". . . . . . . . .",
+	". . . . . . . . ."], list);
+
+# Recharging cube
+craft.shapeless(creativeCube, "A", {A: <mekanism:energycube>.withTag({tier:4,mekData:{}})});
 	
-# IC2 Creative Generator	
-	list["U"] = <ic2:te:75>;
-	list["V"] = <ic2:te:22>;
-	list["W"] = <nuclearcraft:fusion_core>;
-	list["X"] = <extrautils2:decorativesolid:8>;
+# Creative Wireless Crafting Terminal
+recipes.addShapeless("Creative Wireless Crafting Terminal", 
+<wct:wct_creative>, [<wct:wct>.withTag({}), creativeCube.reuse()]);
 
-	craft.make(  <ic2:te:86>, ["pretty",
-	"♠ ◘ ◘ ◘ ♠ ◘ ◘ ◘ ♠",
-	"◙ ▩ ▩ ◊ ◊ ◊ ▩ ▩ ◙",
-	"◙ ▩ U V W V U ▩ ◙",
-	"◙ ◊ V ▨ ☠ ▨ V ◊ ◙",
-	"♠ ◊ W ☠ X ☠ W ◊ ♠",
-	"◙ ◊ V ▨ ☠ ▨ V ◊ ◙",
-	"◙ ▩ U V W V U ▩ ◙",
-	"◙ ▩ ▩ ◊ ◊ ◊ ▩ ▩ ◙",
-	"♠ ◘ ◘ ◘ ♠ ◘ ◘ ◘ ♠"], list);
+# Storage Drawers Unlimited Withdrawel Upgrade
+list["χ"] = <ore:blockCrystalMatrix>;
+list["◳"] = <ore:blockAethium>;
+list["⌧"] = <ore:ingotInfinity>;
+list["⇭"] = twilightForestMasterTrophy;
+list["◯"] = <draconicevolution:reactor_core>;
+list["⇯"] = creativeCube;
+list["⇫"] = <mekanism:machineblock2:11>.withTag({tier: 4, mekData:{}}, false);
 
-# Creative Gas Tank
-	list["ζ"] = <thermalexpansion:tank>.withTag({Fluid: {FluidName: "neutron", Amount: 512000}, Level: 3 as byte});
-	list["η"] = <avaritia:resource:4>;
-	list["θ"] = <thermalexpansion:tank>.withTag({Fluid: {FluidName: "mana", Amount: 512000}, Level: 3 as byte});
-	list["ι"] = <advancedrocketry:liquidtank>;
-	list["κ"] = <thermalexpansion:tank>.withTag({Fluid: {FluidName: "ic2uu_matter", Amount: 512000}, Level: 3 as byte});
-	list["λ"] = <thermalexpansion:tank>.withTag({Fluid: {FluidName: "liquiddna", Amount: 512000}, Level: 3 as byte});
-	list["μ"] = creativeGasTankFrame;
+/*  •◎♪♫♱✓⸕₇₈₉⇮⩈ζλ  */
+craft.make(<storagedrawers:upgrade_creative:1> * 2, ["pretty",
+	"χ ▣ ☠ ☠ ◊ ☠ ☠ ▣ χ",
+	"▣ ◽ ◽ ☑ ⱋ ☑ ◽ ◽ ▣",
+	"☠ ◽ ◳ ✝ ♦ ✝ ◳ ◽ ☠",
+	"☠ ☑ ⰷ ⇫ ⌧ ⍤ ⰷ ☑ ☠",
+	"◊ ⱋ ♦ ◯ ⇭ ◯ ♦ ⱋ ◊",
+	"☠ ☑ ⰷ ⇯ ⌧ ⁶ ⰷ ☑ ☠",
+	"☠ ◽ ◳ ✝ ♦ ✝ ◳ ◽ ☠",
+	"▣ ◽ ◽ ☑ ⱋ ☑ ◽ ◽ ▣",
+	"χ ▣ ☠ ☠ ◊ ☠ ☠ ▣ χ"], list);
 
-	craft.make( <mekanism:gastank>.withTag({tier: 4, mekData: {}}), ["pretty",
-	"▬ ▬ ▬ ◫ ♣ ◫ ▬ ▬ ▬",
-	"▬ ◉ ▧ ◊ ♣ ◊ ▧ ◉ ▬",
-	"▬ ▤ ζ η ☠ η θ ▤ ▬",
-	"◫ ♦ ⰱ ж ι ж ⰱ ♦ ◫",
-	"♣ ♣ ☠ ι μ ι ☠ ♣ ♣",
-	"◫ ♦ ⰱ ж ⍣ ж ⰱ ♦ ◫",
-	"▬ ▤ κ η ☠ η λ ▤ ▬",
-	"▬ ◉ ▧ ◊ ♣ ◊ ▧ ◉ ▬",
-	"▬ ▬ ▬ ◫ ♣ ◫ ▬ ▬ ▬"], list);
-
-	recipes.addShapeless("Creative Gas Tank Reset", 
-	<mekanism:gastank>.withTag({tier: 4, mekData: {}}), 
-	[<mekanism:gastank>.withTag({tier: 4})]);
+recipes.addShapeless("Creative Storage Upgrade Duplication", 
+<storagedrawers:upgrade_creative:1> * 2, 
+[<storagedrawers:upgrade_creative:1>]);
