@@ -1,0 +1,82 @@
+[
+  {
+    "enabled": false,
+    "state": {
+      "name": "forestry:resources",
+      "properties": {
+        "resource": "copper"
+      }
+    }
+  },
+  {
+    "enabled": false,
+    "state": {
+      "name": "forestry:resources",
+      "properties": {
+        "resource": "tin"
+      }
+    }
+  },
+  {
+    "enabled": false,
+    "state": {
+      "name": "immersiveengineering:ore",
+      "properties": {
+        "type": "aluminum"
+      }
+    }
+  },
+  
+  
+  {
+    "state": {
+      "name": "mekanism:oreblock",
+      "properties": {
+        "type": "osmium"
+      }
+    },
+    "weight": 100,
+    "widthMin": 5,
+    "widthMax": 8,
+    "countMin": 10,
+    "countMax": 14,
+    "yieldMin": 150,
+    "yieldMax": 1000,
+    "group": "osmium",
+    "groupOrder": "mekanism"
+  },
+  {
+    "state": {
+      "name": "actuallyadditions:block_misc",
+      "properties": {
+        "type": "ore_black_quartz"
+      }
+    },
+    "widthMin": 3,
+    "widthMax": 5,
+    "countMin": 8,
+    "countMax": 12,
+    "yieldMin": 32,
+    "yieldMax": 40,
+    "group": "black_quartz",
+    "groupOrder": "actuallyadditions"
+  },
+  {
+    "state": {
+      "name": "draconicevolution:draconium_ore",
+      "properties": {
+        "type": "normal"
+      }
+    },
+    "widthMin": 3,
+    "widthMax": 5,
+    "countMin": 8,
+    "countMax": 12,
+    "yieldMin": 5,
+    "yieldMax": 10,
+    "group": "draconium",
+    "groupOrder": "draconicevolution",
+    "dimension": "Deep Dark",
+    "extractionCooldownScale": 2
+  }
+]
