@@ -678,3 +678,4 @@ for item in pressurePlates {
 <ore:dustLapis>.remove(<actuallyadditions:item_dust:4>);
 <ore:dustDiamond>.remove(<actuallyadditions:item_dust:2>);
 <ore:dustGraphite>.remove(<bigreactors:dustgraphite>);
+<ore:dustEnderPearl>.remove(<ic2:dust:31>);

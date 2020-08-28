@@ -326,11 +326,6 @@ recipes.addShaped(<enderio:item_conduit_facade> * 8, [
 # Nutritious stick craft
 mods.inworldcrafting.FluidToItem.transform(<enderio:item_material:8>, <fluid:nutrient_distillation>, [<minecraft:stick>]);
 
-# Remove enderium and enderium base recipes
-mods.enderio.AlloySmelter.removeRecipe(<thermalfoundation:material:167>);
-mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:39>);
-rh(<enderio:item_material:39>);
-
 # Avaritia Ender IO integration
 #Infinity ball from all other balls and infinity catalyst
 recipes.remove(<avaritiaio:grindingballinfinity> * 64);

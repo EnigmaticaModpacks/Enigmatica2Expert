@@ -144,17 +144,6 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Ender Ingot] from [Platinum Ingot+] -->
-	<Recipe timeRequired="10" power="40000">
-		<input>
-			<itemStack>thermalfoundation:material 1 134</itemStack>
-			<itemStack>ic2:dust 1 31</itemStack>
-		</input>
-		<output>
-			<itemStack>extendedcrafting:material 1 36</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [HSLA Steel Ingot] from [Iron Ingot+] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -178,15 +167,14 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Enderium Ingot] from [End Steel Ingot++] -->
+	<!-- [Pulsating Iron Ingot] from [Iron Ingot+] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
-			<itemStack>enderio:item_alloy_ingot 2 8</itemStack>
-			<itemStack>tconevo:metal 1 35</itemStack>
-			<itemStack>ic2:dust 4 31</itemStack>
+			<itemStack>minecraft:iron_ingot 1 0</itemStack>
+			<itemStack>ic2:dust 1 32</itemStack>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material 2 167</itemStack>
+			<itemStack>enderio:item_alloy_ingot 1 5</itemStack>
 		</output>
 	</Recipe>
 </Recipes>
