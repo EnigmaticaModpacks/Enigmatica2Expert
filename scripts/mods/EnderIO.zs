@@ -17,19 +17,6 @@ recipes.addShaped("Cheaper Chassis Parts",
 [constructionAlloyOrIron, constructionAlloyOrIron, constructionAlloyOrIron]]);
 
 
-# Electrical Steel
-mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:96>, <nuclearcraft:gem:6>);
-mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:160>, <nuclearcraft:gem:6>);
-
-for silicon in <ore:itemSilicon>.items {
-	for steel in <ore:ingotSteel>.items {
-		mods.thermalexpansion.InductionSmelter.addRecipe(<enderio:item_alloy_ingot>, silicon, steel, 10000);
-	}
-	for steel in <ore:dustSteel>.items {
-		mods.thermalexpansion.InductionSmelter.addRecipe(<enderio:item_alloy_ingot>, silicon, steel, 10000);
-	}
-}
-
 # Impulse Hopper
 	recipes.remove(<enderio:block_impulse_hopper>);
 	recipes.addShaped("enderio_impulse_hopper_custom", 
@@ -279,8 +266,6 @@ ncAlloyRm(<enderio:item_alloy_ingot:9>*3);
 
 
 
-val db as IIngredient = <ore:dustBedrock>;
-
 val fake_iron_variations = 
 <thermalfoundation:material:1>   | <thermalfoundation:material:64>         | <thermalfoundation:material:65>  |
 <thermalfoundation:material:66>  | <thermalfoundation:material:67>         | <thermalfoundation:material:68>  |
@@ -293,21 +278,22 @@ val fake_iron_variations =
 <thermalfoundation:material:103>;
 
 # EnderIO simple alloys
-solution([db, fake_iron_variations      			      ], [<liquid:iron>      *72 ], [<liquid:construction_alloy>*216], [0.5, 1,    2700], "only: highoven");
-solution([db, <ore:dustObsidian> 							      ], [<liquid:steel>     *144], [<liquid:dark_steel>        *144], [0.5, 1,    5500], "only: highoven");
-solution([db, <ore:dustEndstone>, <ore:dustObsidian>], [<liquid:dark_steel>*144], [<liquid:end_steel>         *144], [0.5, 1, 1, 5500], "only: highoven");
+solution([<ore:dustBedrock>, fake_iron_variations      			       ], [<liquid:iron>      *72 ], [<liquid:construction_alloy>*216], [0.5, 1,    2700], "only: highoven");
+solution([<ore:dustBedrock>, <ore:dustObsidian>                    ], [<liquid:steel>     *144], [<liquid:dark_steel>        *144], [0.5, 1,    5500], "only: highoven");
+solution([<ore:dustBedrock>, <ore:dustEndstone>, <ore:dustObsidian>], [<liquid:dark_steel>*144], [<liquid:end_steel>         *144], [0.5, 1, 1, 5500], "only: highoven");
 
-# Oxidisers on choose
-val ox as IIngredient = <ore:dustCyanite> | <ore:itemSlagRich> | <ore:dustPsi>;
+
+# Oxidiser
+val ox as IIngredient = <ore:itemInfinityGoop>; # Infinity reagent
 
 # EnderIO hard alloys
-solution([db, <mysticalagriculture:crafting:28>, ox], [<liquid:gold>*144           ], [<liquid:soularium> *144       ], [0.5, 1, 0.25, 5100], "only: highoven");
-solution([db, <ore:itemSilicon>                , ox], [<liquid:steel>*144          ], [<liquid:electrical_steel> *144], [0.5, 1, 0.25, 3000], "only: highoven");
-solution([db, <ore:dustEnergetic>              , ox], [<liquid:gold>*144           ], [<liquid:energetic_alloy> *144 ], [0.5, 1, 0.25, 3600], "only: highoven");
-solution([db, <extendedcrafting:material:49>   , ox], [<liquid:energetic_alloy>*144], [<liquid:vibrant_alloy> *144   ], [0.5, 1, 0.25, 5400], "only: highoven");
-solution([db, <ore:dustRedstone>               , ox], [<liquid:tin>*144            ], [<liquid:redstone_alloy> *144  ], [0.5, 1, 0.25, 3600], "only: highoven");
-solution([db, <ore:dustRedstone>               , ox], [<liquid:iron>*144           ], [<liquid:conductive_iron> *144 ], [0.5, 1, 0.25, 4200], "only: highoven");
-solution([db, <ore:dustEnder>                  , ox], [<liquid:silver>*144         ], [<liquid:pulsating_iron> *144  ], [0.5, 1, 0.25, 5500], "only: highoven");
+solution([ox, <mysticalagriculture:crafting:28>], [<liquid:gold>*144           ], [<liquid:soularium> *144       ], [0.5, 1, 0.25, 5100], "only: highoven");
+solution([ox, <ore:itemSilicon>                ], [<liquid:steel>*144          ], [<liquid:electrical_steel> *144], [0.5, 1, 0.25, 3000], "only: highoven");
+solution([ox, <ore:dustEnergetic>              ], [<liquid:gold>*144           ], [<liquid:energetic_alloy> *144 ], [0.5, 1, 0.25, 3600], "only: highoven");
+solution([ox, <extendedcrafting:material:49>   ], [<liquid:energetic_alloy>*144], [<liquid:vibrant_alloy> *144   ], [0.5, 1, 0.25, 5400], "only: highoven");
+solution([ox, <ore:dustRedstone>               ], [<liquid:tin>*144            ], [<liquid:redstone_alloy> *144  ], [0.5, 1, 0.25, 3600], "only: highoven");
+solution([ox, <ore:dustRedstone>               ], [<liquid:iron>*144           ], [<liquid:conductive_iron> *144 ], [0.5, 1, 0.25, 4200], "only: highoven");
+solution([ox, <ore:dustEnderEye>               ], [<liquid:iron>*144           ], [<liquid:pulsating_iron> *144  ], [0.5, 1, 0.25, 5500], "only: highoven");
 
 # Cheaper conduit facades
 recipes.removeByRecipeName("enderio:conduit_facade_transparent");
@@ -359,3 +345,5 @@ scripts.process.alloy([<ore:ingotDarkSteel>, <ore:obsidian>, <ore:endstone>], <o
 # Excess ender dust recipe
 recipes.removeByRecipeName("enderio:ender_dust");
 
+# Remove default Infinity reagent recipe
+mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:75>);

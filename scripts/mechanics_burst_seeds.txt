@@ -25,3 +25,4 @@ remove burst_seed_stone
 burst_seed_andesite exnihilocreatio:item_ore_aluminium 0
 burst_seed_diorite exnihilocreatio:item_ore_tin 0
 burst_seed_granite exnihilocreatio:item_ore_iron 0
+burst_seed_grainsofinfinity enderio:item_material 75 enderio:block_infinity_1

@@ -30,17 +30,21 @@ recipes.addShapeless(<mechanics:bursting_powder>, [
 ]);
 
 
-function addBurstSeedRecipe(input as IItemStack, output as IItemStack) {
-  recipes.addShaped(output, [
-  [null, input, null],
-  [input, <mechanics:bursting_powder>, input],
-  [null, input, null],
-  ]);
+function addBurstSeedRecipe(input as IItemStack, additive as IItemStack, output as IItemStack) {
+  craft.remake(output, ["pretty",
+    "A B A",
+    "B C B",
+    "A B A"], {
+    A: !isNull(additive) ? additive : <mechanics:bursting_powder>,
+    B: input,
+    C: <mechanics:bursting_powder>,
+  });
 }
 
-addBurstSeedRecipe(<contenttweaker:compressed_crushed_andesite>, <mechanics:burst_seed_andesite>);
-addBurstSeedRecipe(<contenttweaker:compressed_crushed_diorite> , <mechanics:burst_seed_diorite>);
-addBurstSeedRecipe(<contenttweaker:compressed_crushed_granite> , <mechanics:burst_seed_granite>);
+addBurstSeedRecipe(<contenttweaker:compressed_crushed_andesite>, null, <mechanics:burst_seed_andesite>);
+addBurstSeedRecipe(<contenttweaker:compressed_crushed_diorite> , null, <mechanics:burst_seed_diorite>);
+addBurstSeedRecipe(<contenttweaker:compressed_crushed_granite> , null, <mechanics:burst_seed_granite>);
+addBurstSeedRecipe(<enderio:block_infinity>, <bigreactors:dustcyanite>, <mechanics:burst_seed_grainsofinfinity>);
 
 # Empty rod remake
 recipes.addShaped(<mechanics:empty_rod>, [
