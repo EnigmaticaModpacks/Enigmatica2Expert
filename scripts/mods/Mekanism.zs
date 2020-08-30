@@ -388,3 +388,12 @@ mods.mekatweaker.InfuserType.addTypeObject(<ore:dustEnderPearl>,              "E
 mods.mekatweaker.InfuserType.addTypeObject(<ore:enderpearl>,                  "ENDER", 10);
 mods.mekatweaker.InfuserType.addTypeObject(<contenttweaker:compressed_ender>, "ENDER", 80);
 
+# Remake Universal cables for more efficient transfering of EU
+for i, it in [
+	<enderio:item_alloy_nugget:2>,
+	<enderio:item_alloy_endergy_nugget:1>,
+	<enderio:item_alloy_endergy_nugget:2>,
+] as IIngredient[] {
+	craft.remake(<mekanism:transmitter>.withTag({tier: i+1}) * 8, 
+		["###", "#o#", "###"], { "#": <mekanism:transmitter>.withTag({tier: i}), "o": it });
+}
