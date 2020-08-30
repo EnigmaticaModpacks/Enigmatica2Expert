@@ -48,8 +48,9 @@
 		</planet>
 		<planet name="Jupiter" DIMID="104" customIcon="gasgiantred">
 			<GasGiant>true</GasGiant>
-			<gas>hydrogen</gas>
 			<gas>helium</gas>
+			<gas>ammonia</gas>
+			<gas>fluoromethane</gas>
 			<orbitalDistance>120</orbitalDistance>
 			<rotationalPeriod>9900</rotationalPeriod>
 			<planet name="Io" DIMID="105" customIcon="moon">
@@ -69,8 +70,9 @@
 		</planet>
 		<planet name="Saturn" DIMID="107" customIcon="gasgiantblue">
 			<GasGiant>true</GasGiant>
-			<gas>hydrogen</gas>
 			<gas>helium</gas>
+			<gas>ammonia</gas>
+			<gas>fluoromethane</gas>
 			<hasRings>true</hasRings>
 			<orbitalDistance>130</orbitalDistance>
 			<rotationalPeriod>10600</rotationalPeriod>
@@ -83,7 +85,7 @@
 			</planet>
 		</planet>
 		<planet name="Uranus" DIMID="109" customIcon="iceworld">
-			<biomeIds>biomesoplenty:alps,iceandfire:glacier,biomesoplenty:alps_foothills,biomesoplenty:glacier</biomeIds>
+			<biomeIds>biomesoplenty:alps,iceandfire:glacier</biomeIds>
 			<skyColor>0,0.9,1</skyColor>
 			<fogColor>0.9,0.9,0.9</fogColor>
 			<atmosphereDensity>0</atmosphereDensity>
@@ -92,7 +94,7 @@
 			<rotationalPeriod>17250</rotationalPeriod>
 		</planet>
 		<planet name="Neptune" DIMID="110" customIcon="iceworld">
-			<biomeIds>biomesoplenty:alps,iceandfire:glacier,biomesoplenty:alps_foothills,biomesoplenty:glacier</biomeIds>
+			<biomeIds>biomesoplenty:alps_foothills,biomesoplenty:glacier</biomeIds>
 			<skyColor>0,0.5,1</skyColor>
 			<atmosphereDensity>0</atmosphereDensity>
 			<orbitalDistance>180</orbitalDistance>
@@ -119,7 +121,7 @@
 			<rotationalPeriod>12000</rotationalPeriod>
 		</planet>
 		<planet name="Terra Nova" DIMID="112" customIcon="earthlike">
-			<biomeIds>biomesoplenty:crag</biomeIds>
+			<biomeIds>biomesoplenty:crag,biomesoplenty:quagmire</biomeIds>
 			<skyColor>1,0,1</skyColor>
 			<fogColor>1,0,0.5</fogColor>
 			<atmosphereDensity>100</atmosphereDensity>
@@ -154,24 +156,29 @@
 			<orbitalDistance>100</orbitalDistance>
 			<rotationalPeriod>12000</rotationalPeriod>
 		</planet>
-		<planet name="Hubble" DIMID="116" customIcon="gasgiantred">
-			<skyColor>1,0,1</skyColor>
-			<fogColor>1,0,0.5</fogColor>
+		<planet name="Hubble" DIMID="116" customIcon="gasgiantblue">
+			<skyColor>0.9,0.9,0.9</skyColor>
+			<fogColor>0.9,0.9,0.5</fogColor>
 			<GasGiant>true</GasGiant>
-			<gas>oxygen</gas>
-			<gas>hydrogen</gas>
-			<gas>helium</gas>
+			<gas>ic2superheated_steam</gas>
+			<gas>high_pressure_steam</gas>
+			<gas>exhaust_steam</gas>
+			<gas>low_pressure_steam</gas>
+			<gas>low_quality_steam</gas>
 			<orbitalDistance>130</orbitalDistance>
 			<rotationalPeriod>12000</rotationalPeriod>
 		</planet>
 	</star>
 	<star name="HD 42176" temp="145" x="-90" y="-33" numPlanets="0" numGasGiants="0">
-		<planet name="KELT-1b" DIMID="117" customIcon="gasgiantblue">
-			<skyColor>0,1,0</skyColor>
+		<planet name="KELT-1b" DIMID="117" customIcon="gasgiantred">
+			<skyColor>0,1,0.5</skyColor>
 			<fogColor>0,0,1</fogColor>
 			<GasGiant>true</GasGiant>
-			<gas>hydrogen</gas>
-			<gas>helium</gas>
+			<gas>vapor_of_levity</gas>
+			<gas>nitrogen</gas>
+			<gas>fluorine</gas>
+			<gas>carbon_dioxide</gas>
+			<gas>carbon_monoxide</gas>
 			<hasRings>true</hasRings>
 			<orbitalDistance>35</orbitalDistance>
 			<rotationalPeriod>4000</rotationalPeriod>
@@ -207,7 +214,7 @@
 			<rotationalPeriod>10000</rotationalPeriod>
 		</planet>
 		<planet name="KELT-6a" DIMID="121" customIcon="earthlike">
-			<biomeIds>advancedrocketry:alien forest,advancedrocketry:marsh</biomeIds>
+			<biomeIds>advancedrocketry:alien forest,biomesoplenty:ominous_woods,biomesoplenty:fungi_forest,biomesoplenty:flower_island</biomeIds>
 			<skyColor>1,0,1</skyColor>
 			<fogColor>1,0,0.5</fogColor>
 			<atmosphereDensity>0</atmosphereDensity>

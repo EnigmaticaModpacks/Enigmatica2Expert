@@ -54,7 +54,7 @@
 			<fluidStack>lubricant 100</fluidStack>
 		</input>
 		<output>
-			<itemStack>libvulpes:productplate 1 3</itemStack>
+			<itemStack>libvulpes:productplate 4 3</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="15" power="50000">

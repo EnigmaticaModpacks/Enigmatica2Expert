@@ -15,8 +15,7 @@
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
-					-1,
-					1
+					-1,1,  100,101,102,103,106,109,110,113,115,118,119,120,122,123
 				]
 			}
 		},
@@ -35,9 +34,7 @@
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
-					-1,
-					1
-				]
+					-1,1, 101,102,113,122]
 			}
 		},
 		"diorite": {
