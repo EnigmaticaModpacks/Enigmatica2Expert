@@ -366,3 +366,20 @@ import mods.jei.JEI.removeAndHide as rh;
 	<extendedcrafting:material:12>, <avaritia:resource:1>, <avaritia:resource:1>]);
 
 
+
+# Using Dragon forge to harder recipes
+function addDragonForgeRecipe(input1 as IItemStack, input2 as IItemStack, output as IItemStack) {
+	mods.iceandfire.recipes.addFireDragonForgeRecipe(input1, input2, output);
+	mods.iceandfire.recipes.addIceDragonForgeRecipe(input1, input2, output);
+}
+
+recipes.removeByRecipeName("avaritia:items/resource/crystal_matrix_ingot");
+addDragonForgeRecipe(<minecraft:nether_star> * 2, <avaritia:resource> * 4, <avaritia:resource:1>);
+
+# Lattice
+var CD = <mekanism:compresseddiamond>;
+<avaritia:resource>.displayName = "§eRecharged Diamond";
+recipes.remove(<avaritia:resource>);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<avaritia:resource> * 2, 100000000, 1000000, CD, [CD]);
+# Somehow infuser craft item/tick after first item
+# mods.thermalexpansion.Infuser.addRecipe(<avaritia:resource>, CD, 50000000);
