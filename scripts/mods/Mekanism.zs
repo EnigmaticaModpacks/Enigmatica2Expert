@@ -1,5 +1,6 @@
 import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IIngredient;
 #modloaded mekanism
 
 
@@ -374,3 +375,16 @@ recipes.addShaped("Mek Teleporter", <mekanism:machineblock:11>.withTag({}), [[<o
 
 # Cardboxes from Forestry's Carton
 remakeEx(<mekanism:cardboardbox>, [[<forestry:carton>, <forestry:carton>, <forestry:carton>],[<forestry:carton>, null, <forestry:carton>], [<forestry:carton>, <forestry:carton>, <forestry:carton>]]);
+
+# New compressed items
+mods.mekanism.enrichment.addRecipe(<ore:dustGlowstone>,  <contenttweaker:compressed_glowstone>);
+mods.mekanism.enrichment.addRecipe(<ore:dustEnderPearl>, <contenttweaker:compressed_ender>);
+
+# New Infuser types
+mods.mekatweaker.InfuserType.addTypeObject(<ore:dustGlowstone>,                   "GLOWSTONE", 10);
+mods.mekatweaker.InfuserType.addTypeObject(<ore:blockGlowstone>,                  "GLOWSTONE", 40);
+mods.mekatweaker.InfuserType.addTypeObject(<contenttweaker:compressed_glowstone>, "GLOWSTONE", 80);
+mods.mekatweaker.InfuserType.addTypeObject(<ore:dustEnderPearl>,              "ENDER", 10);
+mods.mekatweaker.InfuserType.addTypeObject(<ore:enderpearl>,                  "ENDER", 10);
+mods.mekatweaker.InfuserType.addTypeObject(<contenttweaker:compressed_ender>, "ENDER", 80);
+
