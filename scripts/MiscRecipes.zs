@@ -103,11 +103,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	recipes.remove(<animania:block_mud>);
 	recipes.addShapeless("BoP Mud", <biomesoplenty:mud>, [<animania:block_mud>]);
 	recipes.addShapeless("Animania Mud", <animania:block_mud>, [<biomesoplenty:mud>]);
-	
-# Silicon conversion
-	recipes.addShapeless(<enderio:item_material:5> * 2, [<libvulpes:productingot:3>, <libvulpes:productingot:3>]);
-	recipes.addShapeless(<libvulpes:productingot:3>, [<enderio:item_material:5>]);
-	
+
 # Iridium conversion
 	recipes.addShapeless(<thermalfoundation:material:135>, [<ic2:misc_resource:1>]);
 	recipes.addShapeless(<ic2:misc_resource:1>, [<thermalfoundation:material:135>]);
@@ -502,9 +498,21 @@ recipes.addShapeless(<minecraft:flint_and_steel>, [<ore:ingotSteel>, <ore:itemFl
 # Infinity liquid concrete
 mods.plustweaks.Liquid.setInfinite(<liquid:concrete>, false);
 
-// mods.alfinivia.Milking.add(@NotNull IIngredient input, @NotNull IEntityDefinition entity, IItemStack output, boolean needsSneaking);
-// mods.alfinivia.Milking.add(@NotNull IIngredient input, @NotNull IEntityFunction entity, IItemStack output, boolean needsSneaking);
-// mods.alfinivia.Milking.add(@NotNull IIngredient input, @NotNull IEntityDefinition entity, IMilkFunction output, boolean needsSneaking);
-// mods.alfinivia.Milking.add(@NotNull IIngredient input, @NotNull IEntityFunction entity, IMilkFunction output, boolean needsSneaking);
-// ex. for IEntityFunction: function(entity){return true;} ex. for IMilkFunction: function(entity, itemstack, player){return itemstack;}
-// ex. mods.alfinivia.Milking.add(<minecraft:fish>,<entity:minecraft:sheep>,<minecraft:sandstone>,false);
+
+# ------ Silicon unification ------
+
+var trueSilicon = <appliedenergistics2:material:5>;
+<ore:itemSilicon>.remove([<nuclearcraft:gem:6>, <libvulpes:productingot:3>, <enderio:item_material:5>]);
+<ore:ingotSilicon>.add(trueSilicon);
+
+# Removing
+furnace.remove(<appliedenergistics2:material:5>); # Furnance quartz dusts -> AE silicon
+mods.nuclearcraft.manufactory.removeRecipeWithOutput(<appliedenergistics2:material:5>); # Ingot->AE
+mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <libvulpes:productplate:3>); # Plate -> ingot (prevent dupe)
+mods.mekanism.crusher.removeRecipe(<nuclearcraft:gem:6>); # Sand -> silicon
+
+
+# Addition
+furnace.addRecipe(trueSilicon, <ore:dustCertusQuartz>, 4.0d);
+furnace.addRecipe(trueSilicon, <ore:dustNetherQuartz>, 4.0d);
+mods.thermalexpansion.Compactor.addMintRecipe(trueSilicon * 2, <minecraft:sand>, 4000);

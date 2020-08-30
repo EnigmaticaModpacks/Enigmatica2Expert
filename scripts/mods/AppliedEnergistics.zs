@@ -154,9 +154,6 @@ import mods.jei.JEI.removeAndHide as rh;
 	[<ore:crystalCertusQuartz>, <appliedenergistics2:smooth_sky_stone_block>, <ore:crystalCertusQuartz>], 
 	[<appliedenergistics2:sky_stone_block>, <ore:crystalCertusQuartz>, <appliedenergistics2:sky_stone_block>]]);
 
-# Silicon
-	mods.thermalexpansion.Compactor.addMintRecipe(<nuclearcraft:gem:6>, <minecraft:sand>, 2000);
-	
 # Energy Acceptor
 	recipes.remove(<appliedenergistics2:energy_acceptor>);
 	recipes.addShaped("Energy Acceptor", 
