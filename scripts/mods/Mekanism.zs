@@ -397,3 +397,26 @@ for i, it in [
 	craft.remake(<mekanism:transmitter>.withTag({tier: i+1}) * 8, 
 		["###", "#o#", "###"], { "#": <mekanism:transmitter>.withTag({tier: i}), "o": it });
 }
+
+# Remake recipes of gas/fluid tanks to remove recipe functions (they caused AE2 autocrafting issues)
+for i, it in [
+	<ore:dustRedstone>,
+	<mekanism:enrichedalloy>,
+	<mekanism:reinforcedalloy>,
+	<mekanism:atomicalloy>,
+] as IIngredient[] {
+		var grid = [
+			"#-#", 
+			"-o-", 
+			"#-#"] as string[];
+		craft.remake( <mekanism:gastank>.withTag({tier: i}) , grid, { 
+			"#": it, 
+			"-": <ore:ingotOsmium>, 
+			"o": i==0 ? null : <mekanism:gastank>.withTag({tier: i - 1}, false)
+		});
+		craft.remake( <mekanism:machineblock2:11>.withTag({tier: i}) , grid, { 
+			"#": it, 
+			"-": <ore:ingotIron>, 
+			"o": i==0 ? null : <mekanism:machineblock2:11>.withTag({tier: i - 1}, false)
+		});
+}
