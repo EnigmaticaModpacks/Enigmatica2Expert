@@ -105,7 +105,6 @@ var list = {
 	"▣": <industrialforegoing:black_hole_unit>,
 	"▨": <mekanism:basicblock2:3>.withTag({tier: 3}),
 	"▩": <mekanism:basicblock2:4>.withTag({tier: 3}),
-	"⍣": <mekanism:machineblock2:11>.withTag({tier: 4}),
 	"ⰷ": <mysticalagradditions:stuff:69>,
 	"▦": <ore:blockDraconiumAwakened>,
 	"▤": <ore:blockMirion>,
@@ -480,7 +479,7 @@ list["⌧"] = <ore:ingotInfinity>;
 list["⇭"] = twilightForestMasterTrophy;
 list["◯"] = <draconicevolution:reactor_core>;
 list["⇯"] = creativeCube;
-list["⇫"] = <mekanism:machineblock2:11>.withTag({tier: 4, mekData:{}}, false);
+list["⇫"] = <mekanism:machineblock2:11>.withTag({tier: 4, mekData:{}});
 
 /*  •◎♪♫♱✓⸕₇₈₉⇮⩈ζλ  */
 craft.make(<storagedrawers:upgrade_creative:1> * 2, ["pretty",

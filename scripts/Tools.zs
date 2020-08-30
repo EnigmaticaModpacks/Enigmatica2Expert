@@ -103,9 +103,12 @@ import mods.jei.JEI.removeAndHide as rh;
 	<excompressum:compressed_hammer_diamond>,
 	
 		] as IItemStack[];
-		
+
+	var vanillaToolTooltip = "Vanilla tools don't work. Use Tinkers' Construct tools";
 	for tool in toolsToNerf {
 		tool.maxDamage = 1;
+		mods.jei.JEI.addDescription(tool, vanillaToolTooltip);
+		tool.addTooltip(format.red(vanillaToolTooltip));
 	}
 	
 	<minecraft:stone_sword>.maxDamage = 2;

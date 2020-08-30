@@ -679,3 +679,4 @@ for item in pressurePlates {
 <ore:dustDiamond>.remove(<actuallyadditions:item_dust:2>);
 <ore:dustGraphite>.remove(<bigreactors:dustgraphite>);
 <ore:dustEnderPearl>.remove(<ic2:dust:31>);
+<ore:dustNetherQuartz>.remove([<actuallyadditions:item_dust:5>, <enderio:item_material:33>, <nuclearcraft:gem_dust:2>]);

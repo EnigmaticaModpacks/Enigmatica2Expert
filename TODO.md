@@ -34,6 +34,49 @@
 - 𝓩𝒮 [x] More meat types recycle in TE centrifuge
 - 𝓩𝒮 [x] Nerf void miner even more
 - 𝓩𝒮 [x] Tweak chemical thrower liquids
+- 🌿 [x] Patchouli All lootboxes on pages
+- ✏️ [x] MEGA potion
+- 🟢 [x] Artisan Worktables (add recipes, hide unused tables)
+- 🟢 [x] Botania Tweaks (write Patchouli docs)
+- 🟢 [x] Floralchemy (Add Petro Petunia liquids, Add more crystals)
+- 🔷 [x] Tinkers modifiers utility (add to generation, modify)
+- 💌 [x] Remove Laser Cannon from lootboxes
+- 📖 [x] Infinity capacitor to loot boxes
+- 📖 [x] Stellar Capacitor to EnderIO quest book
+- 📖 [x] Tempelate for 3d Print in description
+- 📖 [x] Hovercraft vehicle to book
+- 🔶 [x] Harder Enderium recipe (remove enderium base and platinum-lead alloy)
+- 🟢 [x] Mekatweaker
+- ✏️ [x] Harder NotAnoughRtg recipe (central item)
+- ✏️ [x] Dimension builder alter recipe
+- ✏️ [x] Other gated items for ExNihilio Meshes
+- ✏️ [x] Recipe of block made from 700 EU grid power (blue quartz)
+- 📖 [x] Rainbow block to Bragging rights
+- 𝓩𝒮 [x] TconEvo remove gears recipe
+- ✏️ [x] Creative rat upgrade way cheaper
+- ✏️ [x] Black hole tank clearing
+- ✏️ [x] Induction cell cheaper
+- 🔶 [x] Buff Mek Universal Cable recipe (x3. Disable right-click feature if needed)
+- 🔷 [x] Omnidirection connectors way harder
+- 🔷 [x] Main menu excess buttons
+- ✏️ [x] Heavy Metal Melting
+- 🔶 [x] Remake Mek Tanks and Gas tanks
+- 🔷 [x] Swap refined metals to `tconevo` variants
+- ✏️ [x] Creative Gas should be way cheaper then 💧 Creative Tank
+- ✏️ [x] Swap creative RF Power Cell and IC2 Power to Mek Cube
+- 🔷 [x] Bedrock Ore fix list (remove forestry ore from generation, add more osmium, remove normal osmium)
+- 🔷 [x] Decay generator as crafting method, terrestial artifact block -> litherite
+- 🔷 [x] Remove Excess Akashik Tome recipe
+- 🔷 [x] Laser Drill: `Prosperity` moved to moon, `Dimensional Shard` moved to end, `Iridium` & `Mana Infused` removed
+- 🔷 [x] Resistance modifiers cheaper
+- 🧩 [x] ExCompressum more compressed entityes
+- 𝓩𝒮 [x] Lower Tinker's fuel duration
+- 𝓩𝒮 [x] More Dragon Forge Recipes
+- 𝓩𝒮 [x] Remove Qurtz dust from AA in OreDict
+- 🔷 [x] Compressed Ender and glowstone recipes
+- 𝓩𝒮 [x] Infinity reagent instead dust in high oven
+- 𝓩𝒮 [x] Silicon plate unification (check if Grindstone, MekGrinder, Fluid Sieving output right quartz dust)
+- 𝓩𝒮 [x] Armor Foundry work with list of .prev armor
 
 
 ## Planned
@@ -42,94 +85,60 @@
 
 #### Other:
 
-- ✏️ [x] MEGA potion (add crafting of chemical worktable)
-- 🔶 [x] Harder Enderium recipe (remove enderium base and platinum-lead alloy)
-- 🔷 [x] Removing tag for globals.zs (should not add empty tag)
-- 𝓩𝒮 [x] TconEvo remove gears recipe
-- 🔷 [ ] Tinkers modifiers utility (add, modify)
-- 🔷 [ ] AdvRock Electrolyser should accept any amount of output but cut if > 2
-- ✏️ [ ] Creative Gas should be way cheaper then 💧 Creative Tank
-- ✏️ [ ] Swap creative RF Power Cell and IC2 Power to Mek Cube
-- ✏️ [ ] Creative rat upgrade way cheaper
-- ✏️ [ ] Tcon Armor that speed up time in bottle
-- 💌 [ ] Remove Laser Cannon from lootboxes
+- 🔷 [x] More uses to TE Clathrates, buff their default outputs, 16x cut at generation
+- 🔷 [x] Remake Cabinets and IC2 Storage boxes (relate to #1617)
+- 🔷 [x] Processed cheese material (molten cheese, molten cheese rivers in Ratlantis)
+- 🧩 [ ] Random Tweaks
+- 🧩 [ ] Remap New tconevo materials to tool levels
+- 🧩 [ ] Review melting temperatures for liquids (higher temperature for most of them)
+- 🧱 [ ] Magic Ore Processing . 📦 poop + Cluster => 📦hunk -> 📦 small piece -> 💧 washed -> ?
+- 🔷 [ ] Remake creatures drop items
+- 🔷 [ ] Jumps.zs should store jump amount
+- 🔨 [ ] Jump modifier
+- 🔨 [ ] Thaum Curiocity drop
+- 💥 [ ] Give uses to singularities (Coal - burn time, etc)
+- 💥 [ ] New 🐝 for endgame
+- 💥 [ ] **Rats** Structures Generation
+- 🔴 [ ] Backpack
+- 🔷 [ ] Fix XML recipes missed inputs (crystalline ingor in electric arc for example)
+- 🔷 [ ] Check why Gas intake was modified
+- 🔷 [ ] Reload JER world data
+- 🟢 [x] Alfinivia (milking)
+- 🟢 [x] Better Hurt Timers (mobs do not deals damage)
+- 🌿 [ ] Patchouli book texture
+- 🔨 [ ] Tweak TConEvo energy usage
+- 🔷 [ ] Rename Terrestial -> Terrestrial
+
+### Do after process.zs class rework:
+
+- 𝓩𝒮 [ ] Process rework in zenClass
+- ⚙️ [ ] Process: change "Exception" string to IData
+- ⚙️ [ ] Process: Exceptions union and substraction for Benification
+- ⚙️ [ ] ImmerEng mixer to Process
+- ⚙️ [ ] Liquid Concrete
+- ⚙️ [ ] TconEvo plates, gears and dusts
+- ⚙️ [ ] Batch alloy craftings
+- ⚙️ [ ] Florbs filling (probably in Artisan's)
+- ⚙️ [ ] "Soft" and "Hard" versions of functions, add Pam's machines to functions
+- ⚙️ [ ] bonusType for SAG mill
+- ⚙️ [ ] AdvRock Electrolyser should accept any amount of output but cut if > 2
+- ⚙️ [ ] Chained crafting (Solar Panels in precision assembler)
+
+## Long-term
+
+-----------
+
+- [ ] Make some ORE spawn only on planets
+- [ ] Check why magnet shapeless recipes dissapeared
+- [ ] ⚙️ Primal Mana in other machines (no machines accept 3 liquids yet)
+- [ ] Fake players can use cans ?
+- 🔴 [ ] Replace Extended Crafting -> EC Omnifactory (oreDict bug, reported)
 - 💜 [ ] Account Thaumcraft's aspects cost
 - 💜 [ ] Check why Lumium so pricy
 - 💜 [ ] UU Forbid ME drives to be replicable
 - 💜 [ ] UU Silicon Wafer cant be seen in UU
-- 📖 [ ] Infinity capacitor to loot boxes
-- 📖 [ ] Loot Boxes into Patchouli book
-- 📖 [ ] Stellar Capacitor to EnderIO quest book
-- 📖 [ ] Tempelate for 3d Print in book
-- 🔨 [ ] Jump modifier
-- 🔨 [ ] Processed cheese material
-- 🔨 [ ] Thaum Curiocity drop
-- 🔨 [ ] Tinkers armor generates with modifiers
-- 🔶 [ ] Buff Mek Universal Cable recipe (output can be tweaked too)
-- 🔶 [ ] Remake Mek Tanks and Gas tanks
-- 🔶 [ ] Solar Panels in precision assembler
-- 💥 [ ] Give uses to singularities (Coal - burn time, etc)
-- 💥 [ ] New 🐝 for endgame
-- 💥 [ ] **Rats** Structures Generation
-- 🔷 [ ] 📖 Hovercraft vehicle to book 
-- 🔷 [ ] Bedrock Ore fix list (used unused ore)
-- 🔷 [ ] Black hole tank clearing
-- 🔷 [ ] Decay generator as crafting method
-- 🔷 [ ] Draconic Capacitor have no crafts
-- 🔷 [ ] ExNihilio sieve Crushed `End Stone`, `Sky Stone`, `Granite`, `Andesite`, `Diorite`
-- 🔷 [ ] Fix Hammer <excompressum:hammer_mana> wrong recipe
-- 🔷 [ ] Harder NotAnoughRtg recipe (central item)
-- 🔷 [ ] IItemStack.withTag(IData[, false]) for any tags
-- 🔷 [ ] Jumps.zs should store jump amount
-- 🔷 [ ] Liquid interactions to extruder
-- 🔷 [ ] Main menu excess buttons
-- 🔷 [ ] Make Item Descriptions in Patchouli book
-- 🔷 [ ] NC radiation as crafting way
-- 🔷 [ ] Omnidirection connectors way harder
-- 🔷 [ ] Rainbow block to Bragging rights
-- 🔷 [ ] Remake Cabinets and IC2 Storage boxes (relate to #1617)
-- 🔷 [ ] Remake creatures drop items
-- 🔷 [ ] Remove Excess Akashik Tome recipe
-- 🔷 [ ] Remove from laser drill: Prosperity, Inferium, Dimensional Shard, Iridium, Mana Infused
-- 🔷 [ ] Resistance modifiers cheaper
-- 🔷 [ ] TE Destabilize stones to something else
-- 🔷 [ ] Ultimate Fuel ContentTweaker
-- 🔷 [ ] Wasteland planet
-- 🧩 [ ] Random Tweaks
-- 🧩 [ ] ExCompressum more compressed entityes
-- 🧱 [ ] Magic Ore Processing . 📦 poop + Cluster => 📦hunk -> 📦 small piece -> 💧 washed -> ?
-- 🛡️ [ ] EquipGen: Exclude armor materials that cant be armor material
-- 🟢 [ ] Artisan Worktables (add recipes, hide unused tables)
-- 🟢 [x] Alfinivia
-- 🟢 [x] Better Hurt Timers
-- 🟢 [x] Mekatweaker
-- 🟢 [ ] Botania Tweaks
-- 🟢 [ ] Floralchemy (Add Petro Petunia liquids, Add more crystals)
-- 𝓩𝒮 [ ] Botania check removed 4x petal recipes
-- 𝓩𝒮 [ ] Infinity reagent instead dust in high oven
-- 𝓩𝒮 [ ] Lower Tinker's fuel duration
-- 𝓩𝒮 [ ] More Dragon Forge Recipes
-- 𝓩𝒮 [ ] Pressurizer have Aluminium plate recipe duplication
-- 𝓩𝒮 [ ] Remove Qurtz dust from AA in OreDict
-- 𝓩𝒮 [ ] Mob Stripper Item - rightclick to strip out items
-- 𝓩𝒮 [ ] Silicon plate unification
-- 💦 [ ] Cheaper Draconic Chest
-- ✏️ [ ] Recipe of block made from Gigs of RF
-- ✏️ [ ] Recipe of block made from 1000 EU grid power
-- 🔷 [ ] Tiny potato to crafts
-- 𝓩𝒮 [ ] Process rework in zenClass
-
-### Do after process.zs class rework:
-
-- [ ] ⚙️ Process: change "Exception" string to IData
-- [ ] ⚙️ Process: Exceptions union and substraction for Benification
-- [ ] ⚙️ ImmerEng mixer to Process
-- [ ] ⚙️ Liquid Concrete
-- [ ] ⚙️ TconEvo plates, gears and dusts
-- [ ] ⚙️ Batch alloy craftings
-- [ ] ⚙️ Florbs filling (probably in Artisan's)
-- [ ] ⚙️ "Soft" and "Hard" versions of functions, add Pam's machines to functions
-- [ ] ⚙️ bonusType for SAG mill
+- 🔷 [ ] Prefect Fuel. Summ of several best fuels. Probably bunch of drums together
+- 🔷 [ ] Tcon Armor that speed up time in bottle
 
 
 ## Unused TC traits
@@ -177,6 +186,8 @@
 ---------------------
 ITEMS OF INTEREST
 ---------------------
+<botania_tweaks:compressed_tiny_potato_7>
+<twilightforest:castle_door:*>
 <twilightforest:firefly>
 <twilightforest:raw_venison>
 <twilightforest:cooked_venison>
@@ -203,6 +214,8 @@ randomthings:strong_collapse -- Turnd upsidedown potion
 ---------------------
 CRAFTS OF INTEREST
 ---------------------
+- **Burst Seed**
+- **Crushing Block**
 Imbuing Station (Note: IItemstacks must be in singletons or it will not work)
 mods.rt.RandomThingsTweaker.addImbuingRecipe(IItemStack top, IItemStack leftside, IItemStack bottom, IItemStack center, IItemStack result);
 
@@ -210,16 +223,6 @@ mods.rt.RandomThingsTweaker.addImbuingRecipe(IItemStack top, IItemStack leftside
 ### More info:
 
 /ct thaumcraftDump
-
-## Long-term
-
------------
-
-- [ ] Make some ORE spawn only on planets
-- [ ] Check why magnet shapeless recipes dissapeared
-- [ ] ⚙️ Primal Mana in other machines (no machines accept 3 liquids yet)
-- [ ] Fake players can use cans ?
-- 🔴 [ ] Replace Extended Crafting -> EC Omnifactory (oreDict bug, reported)
 
 
 ## Ideas for singularities
@@ -242,7 +245,7 @@ mods.rt.RandomThingsTweaker.addImbuingRecipe(IItemStack top, IItemStack leftside
 - ":25>"         ,**Nickel Singularity**       - ? Something about fuel
 - ":26>"         ,**Constantan Singularity**   - Shell and bullets for railgun or revolver
 - ":27>"         ,**Electrum Singularity**     - Capacitor upgrades
-- ":28>"         ,**Invar Singularity**        -
+- ":28>"         ,**Invar Singularity**        - Hardening Cell Frames
 - ":29>"         ,**Mithril Singularity**      - ? Turn manasteel blocks into mithril
 - ":32>"         ,**Uranium Singularity**      - Nuclear Fuel
 - ":34>"         ,**Platinum Singularity**     - ? Chemical reaction catalyst

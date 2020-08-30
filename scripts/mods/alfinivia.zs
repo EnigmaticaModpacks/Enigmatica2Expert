@@ -9,6 +9,12 @@ import mods.ctutils.utils.Math.max;
 
 #norun
 
+// mods.alfinivia.Milking.add(@NotNull IIngredient input, @NotNull IEntityDefinition entity, IItemStack output, boolean needsSneaking);
+// mods.alfinivia.Milking.add(@NotNull IIngredient input, @NotNull IEntityFunction entity, IItemStack output, boolean needsSneaking);
+// mods.alfinivia.Milking.add(@NotNull IIngredient input, @NotNull IEntityDefinition entity, IMilkFunction output, boolean needsSneaking);
+// mods.alfinivia.Milking.add(@NotNull IIngredient input, @NotNull IEntityFunction entity, IMilkFunction output, boolean needsSneaking);
+// ex. for IEntityFunction: function(entity){return true;} ex. for IMilkFunction: function(entity, itemstack, player){return itemstack;}
+// ex. mods.alfinivia.Milking.add(<minecraft:fish>,<entity:minecraft:sheep>,<minecraft:sandstone>,false);
 
 # List of Regex animals that can be milked
 static animals as float[string] = {

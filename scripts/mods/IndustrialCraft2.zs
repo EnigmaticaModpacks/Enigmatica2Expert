@@ -231,3 +231,13 @@ recipes.addShaped(<ic2:te:8>, [
 	[<ore:blockGlassColorless>, <ore:dustCoal>, <ore:blockGlassColorless>],
 	[<ore:plateIron>, <ic2:re_battery:26>.anyDamage(), <ore:plateIron>],
 	[<ore:plateIron>, <ore:circuitBasic>, <ore:plateIron>]]);
+
+# Harder wooden box
+craft.remake(<ic2:te:111>, ["pretty",
+		"A B A",
+		"B C B",
+		"A B A"], {
+	A: <ore:logWood>,
+	B: <ore:plankWood>,
+	C: <quark:iron_button>,
+	});

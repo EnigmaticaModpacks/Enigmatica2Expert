@@ -44,7 +44,7 @@
             "posX" : 25,
             "posY" : -140,
             "width" : 140,
-            "height" : 280,
+            "height" : 250,
             "alignment" : "left_center"
         }
     },
@@ -81,26 +81,10 @@
                 "gui": "multiplayer"
             }
         },
-        "servers": {
-            "text": "Servers",
-			"hoverText": "BisectHosting",
-            "posX": 44,
-            "posY": -70,
-            "width": 100,
-            "height": 20,
-            "normalTextColor": 16777215,
-            "hoverTextColor": 16777215,
-            "texture": "modpack:textures/gui/button2.png",
-            "alignment": "left_center",
-            "action": {
-                "type": "openLink",
-                "link": "https://www.bisecthosting.com/niller"
-            }
-        },
         "mods": {
             "text": "fml.menu.mods",
             "posX": 44,
-            "posY": -40,
+            "posY": -70,
             "width": 100,
             "height": 20,
             "normalTextColor": 16777215,
@@ -115,7 +99,7 @@
         "options": {
             "text": "menu.options",
             "posX": 44,
-            "posY": -10,
+            "posY": -40,
             "width": 100,
             "height": 20,
             "normalTextColor": 16777215,
@@ -131,7 +115,7 @@
         "languages": {
             "text": "Languages",
             "posX": 44,
-            "posY": 20,
+            "posY":-10,
             "width": 100,
             "height": 20,
             "normalTextColor": 16777215,
@@ -146,7 +130,7 @@
         "bug reports": {
             "text": "Bug Reports",
             "posX": 44,
-            "posY": 50,
+            "posY":20,
             "width": 100,
             "height": 20,
             "normalTextColor": 16777215,
@@ -155,13 +139,13 @@
             "alignment": "left_center",
             "action": {
                 "type": "openLink",
-                "link": "https://github.com/NillerMedDild/Enigmatica2Expert/issues"
+                "link": "https://github.com/Krutoy242/Enigmatica2Expert-Extended/issues"
             }
         },
 		"discord": {
-            "text": "Discord",
+            "text": "Discord (E2:E)",
             "posX": 44,
-            "posY": 80,
+            "posY":50,
             "width": 100,
             "height": 20,
             "normalTextColor": 16777215,
@@ -177,7 +161,7 @@
         "quit": {
             "text": "menu.quit",
             "posX": 44,
-            "posY": 110,
+            "posY":80,
             "width": 100,
             "height": 20,
             "normalTextColor": 16777215,

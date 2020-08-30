@@ -6,9 +6,9 @@
 	recipes.remove(<rftoolsdim:dimension_builder>);
 	recipes.addShapeless("Dimension Builder", 
 	<rftoolsdim:dimension_builder>, 
-	[<ic2:te:57>,<environmentaltech:void_ore_miner_cont_6>,<avaritia:endest_pearl>,
-	<avaritia:resource:5>, <draconicevolution:awakened_core>, <mekanism:machineblock:4>,
-	<rftools:shape_card:3>,<environmentaltech:void_res_miner_cont_6>.anyDamage(),<industrialforegoing:laser_base>.anyDamage()]);
+	[<ic2:te:57>,<exnihilocreatio:item_mesh:4>, <avaritia:endest_pearl>,
+	<environmentaltech:void_ore_miner_cont_6>,<draconicevolution:awakened_core>,<environmentaltech:void_res_miner_cont_6>.anyDamage(),
+	<rftools:shape_card:3>,<industrialforegoing:infinity_drill>.anyDamage(), <mekanism:machineblock:4>]);
 
 # Dimension Editor
 	recipes.remove(<rftoolsdim:dimension_editor>);

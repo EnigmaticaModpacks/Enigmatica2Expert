@@ -187,22 +187,46 @@ scripts.process.extract(<ore:sugarcane> * 2, <ore:bioplastic>.firstItem, "except
 	entry: "IC2 fluids -> NC reactor",
 	icon: "ic2:te:18",
 	type:  "item_list",
-	...match_below({regex: /^mods\.nuclearcraft\.(\w+)\.addRecipe\(\[<liquid:(.+?)>/gm})
+	...match_block_below(/^mods\.nuclearcraft\.(\w+)\.addRecipe\(\[<liquid:(.+?)>/gm)
     .reduce((o, m, i) => Object.assign(o, {
       [`item${i}`]: wrap_bucket(m[2]),
       [`text${i}`]: m[1]=="turbine"?"As Turbine steam":"As Exchanger Coolant",
     }),{}),
 })*/
-
 # IC2 Steam -> Water in turbine
 # mods.nuclearcraft.turbine.addRecipe([fluidInput, fluidOutput, double powerPerMB, double expansionLevel]);
 mods.nuclearcraft.turbine.addRecipe([<liquid:ic2superheated_steam>, <liquid:ic2steam> * 2, 1000.0d, 1.8d]);
 mods.nuclearcraft.turbine.addRecipe([<liquid:ic2steam>, <liquid:low_quality_steam> * 2, 400.0d, 1.6d]);
-
 # Heat exchanger
 # mods.nuclearcraft.heat_exchanger.addRecipe([fluidInput, fluidOutput, double heatRequired, int temperatureIn, int temperatureOut]);
 mods.nuclearcraft.heat_exchanger.addRecipe([<liquid:ic2hot_coolant>, <liquid:ic2coolant>, -200.0d, 700, 300]);
 
+# Harder compressed RTG recipes
+for item in loadedMods["notenoughrtgs"].items {
+	recipes.replaceAllOccurences(<ore:ingotBronze>,      <nuclearcraft:alloy:15>, item);
+	recipes.replaceAllOccurences(<minecraft:gold_ingot>, <nuclearcraft:alloy:11>, item);
+}
+
 # Decay generator as crafting method
 addDecayRecipe([<contenttweaker:terrestial_artifact_block>, <environmentaltech:litherite>   , 24000.0d, 1750.0d]);
 addDecayRecipe([<environmentaltech:litherite>             , <actuallyadditions:block_misc:6>, 12000.0d,  875.0d]);
+
+# Radiation mutations
+# Sadly, radiation mutatios works really laggy and cant 
+#   be implemented in heavy modpacks...
+// for threshold, pair in {
+// 	0.05d: {
+// 		<ore:dirt> | <ore:grass> | <ore:gravel>: <nuclearcraft:dry_earth>,
+// 		<ore:logWood> : <biomesoplenty:log_4:5>,
+// 		<ore:treeLeaves> : <biomesoplenty:leaves_1:9>,
+// 	},
+// 	0.3d: {
+// 		<ore:stone>: <twilightforest:deadrock>,
+// 		<ore:gravel> | <ore:cobblestone> :<twilightforest:deadrock:1>,
+// 		<ore:stoneGranite> | <ore:stoneDiorite> | <ore:stoneAndesite>: <twilightforest:deadrock:2>,
+// 	}
+// } as IItemStack[IIngredient][double] {
+// 	for _from, _to in pair {
+// 		mods.nuclearcraft.radiation.addBlockMutation(_from, _to, threshold);
+// 	}
+// }

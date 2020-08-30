@@ -2,7 +2,7 @@ version:1343
 invertYMouse:false
 mouseSensitivity:0.5
 fov:0.5
-gamma:0.59859157
+gamma:0.52112675
 saturation:0.0
 renderDistance:12
 guiScale:3
@@ -45,7 +45,7 @@ reducedDebugInfo:false
 useNativeTransport:true
 entityShadows:true
 mainHand:right
-attackIndicator:1
+attackIndicator:2
 showSubtitles:false
 realmsNotifications:true
 enableWeakAttacks:false
@@ -100,6 +100,8 @@ key_quark.keybind.chestDropoff:0
 key_quark.keybind.chestMerge:0
 key_quark.keybind.chestRestock:0
 key_quark.keybind.chestExtract:0
+key_quark.keybind.toggleAutojump:0
+key_quark.keybind.lockBuilding:33:SHIFT
 key_quark.emote.no:0
 key_quark.emote.yes:0
 key_quark.emote.wave:0
@@ -118,8 +120,6 @@ key_quark.emote.dab:0
 key_quark.emote.jet:0
 key_quark.emote.exorcist:0
 key_quark.emote.zombie:0
-key_quark.keybind.toggleAutojump:0
-key_quark.keybind.lockBuilding:33:SHIFT
 key_key.toggle_shaders:0
 key_bloodmagic.keybind.open_holding:53:CONTROL
 key_bloodmagic.keybind.cycle_holding_pos:0
@@ -275,8 +275,9 @@ key_key.toolbelt.open:45
 key_key.toolbelt.cycle.left:0
 key_key.toolbelt.cycle.right:0
 key_key.toolbelt.slot:18:SHIFT
-key_keys.travelersBackpack.inventory:18:CONTROL
-key_keys.travelersBackpack.toggle_tank:15:SHIFT
+key_key.travelersbackpack.inventory:48
+key_key.travelersbackpack.toggle_tank:49
+key_key.travelersbackpack.cycle_tool:44
 key_key.vaultopic.view:34
 key_key.vaultopic.vice:47
 key_Toggle Jetpack:0

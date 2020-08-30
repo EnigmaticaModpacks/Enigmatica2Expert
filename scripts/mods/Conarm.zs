@@ -10,7 +10,7 @@ function remakeResistance(name as string, item as IItemStack, primary as IIngred
 		[<ore:blockDarkSteel>, primary, <ore:blockDarkSteel>]]);
 }
 
-remakeResistance("conarm_resist_mat", 	    <conarm:resist_mat>,	   <ore:dragonsteelIngot>);
+remakeResistance("conarm_resist_mat", 	    <conarm:resist_mat>,  	   <ore:ingotHSLASteel>);
 remakeResistance("conarm_resist_mat_fire",  <conarm:resist_mat_fire>,  <ore:dragonscaleBlock>);
 remakeResistance("conarm_resist_mat_proj",  <conarm:resist_mat_proj>,  <ore:deathwormChitin>);
 remakeResistance("conarm_resist_mat_blast", <conarm:resist_mat_blast>, <ore:seaSerpentScaleBlock>);

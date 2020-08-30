@@ -355,3 +355,7 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(<avaritiaio:grindingballinfi
 
 # End Steel process
 scripts.process.alloy([<ore:ingotDarkSteel>, <ore:obsidian>, <ore:endstone>], <ore:ingotEndSteel>.firstItem, "except: alloySmelter");
+
+# Excess ender dust recipe
+recipes.removeByRecipeName("enderio:ender_dust");
+

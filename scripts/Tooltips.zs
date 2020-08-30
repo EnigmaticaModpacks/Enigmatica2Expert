@@ -2,7 +2,6 @@ import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.jei.JEI.addDescription;
 
-var vanillaToolTooltip = "Vanilla tools don't work. Use Tinkers' Construct tools.";
 var rf100000 = "Requires 100.000 RF to make.";
 var rf200000 = "Requires 200.000 RF to make.";
 var rf300000 = "Requires 300.000 RF to make.";
@@ -75,7 +74,7 @@ for item in thaumcraftHintItems {
 
 # Creative Wireless Crafting Terminal
 	addDescription(<wct:wct_creative>,
-	"The recipe is Wireless Crafting Terminal + Creative Powercell.");
+	"The recipe is Wireless Crafting Terminal + Creative RF.");
 
 # Luminous Crafting Table
 	addDescription(<astralsorcery:blockaltar>,
@@ -119,10 +118,6 @@ for item in thaumcraftHintItems {
 # Void Seed + Void Metal Temp
 	<thaumcraft:void_seed>.addTooltip(tempRecipe);
 
-# IC2 Scanner & Replicator possibilities
-	addDescription(<ic2:te:63>, ["Custom blocks that can be scanned & replicated: ", "Iridium Ore", "Iridium Shard", "Electronic Circuit", "Advanced Alloy", "Advanced Machine Casing", "Thermal Expansion Machine Frame", "Advanced Coil", "RFTools Machine Frame", "Machine Case", "Iron Casing", "Advanced Computer", "Litherite Crystal", "Machine Block", "Ultimate Control Circuit", "Hardened Casing", "Fusion Crafting Core", "Secret", "All Chaos Shards"]);
-	addDescription(<ic2:te:64>, ["Custom blocks that can be scanned & replicated: ", "Iridium Ore", "Iridium Shard", "Electronic Circuit", "Advanced Alloy", "Advanced Machine Casing", "Thermal Expansion Machine Frame", "Advanced Coil", "RFTools Machine Frame", "Machine Case", "Iron Casing", "Advanced Computer", "Litherite Crystal", "Machine Block", "Ultimate Control Circuit", "Hardened Casing", "Fusion Crafting Core", "Secret", "All Chaos Shards"]);
-
 # Small Plate Press
 	addDescription(<advancedrocketry:platepress>, "The Small Plate Presser can convert blocks into Plates and Rods. It's a multiblock, 3 blocks tall and 1 wide. The top block is the Small Plate Presser and the bottom is a block of Obsidian. You place the block you want to compress between the two, and apply a redstone signal to activate the Presser.");
 
@@ -143,7 +138,7 @@ for item in thaumcraftHintItems {
 	addDescription(<thaumcraft:crucible>, "Made by right-clicking a Cauldron with Salis Mundus.");
 
 # Blood Magic Wills
-	addDescription(<bloodmagic:item_demon_crystal>, "Obtained through the Gathering of the Forsaken Souls ritual.");
+	addDescription(<bloodmagic:item_demon_crystal:0>, "Obtained through the Gathering of the Forsaken Souls ritual.");
 	addDescription(<bloodmagic:item_demon_crystal:1>, "Obtained through the Resonance of the Faceted Crystal ritual.");
 	addDescription(<bloodmagic:item_demon_crystal:2>, "Obtained through the Resonance of the Faceted Crystal ritual.");
 	addDescription(<bloodmagic:item_demon_crystal:3>, "Obtained through the Resonance of the Faceted Crystal ritual.");
@@ -156,7 +151,7 @@ for item in thaumcraftHintItems {
 	addDescription(<actuallyadditions:item_solidified_experience>, "This item does not grant Experience, its only use is to make Essence of Knowledge");
 	
 # Neutronium
-	addDescription(<avaritia:resource:2>,"Obtainable through the Neutron Collector.");
+	addDescription(<avaritia:resource:2>,"Obtainable through the Neutron Collector OR through NC Fusion Reactor.");
 	
 # XP Bucket
 	addDescription(Bucket("xpjuice"),"Obtainable through the Fluid Transposer.");
@@ -193,7 +188,6 @@ for item in thaumcraftHintItems {
 	<thermalfoundation:ore:8>,
 	<rftools:dimensional_shard_ore>,
 	<mysticalagriculture:prosperity_ore>,
-	<draconicevolution:draconium_ore>,
 	<draconicevolution:draconium_ore:1>,
 	<draconicevolution:draconium_ore:2>,
 	<thermalfoundation:material:893>,
@@ -204,6 +198,7 @@ for item in thaumcraftHintItems {
 	for item in spaceOres {
 	addDescription(item, spaceGen);
 	}
+	addDescription(<draconicevolution:draconium_ore>, "This ore only generates on other planets or in Deep Dark");
 	
 	addDescription(<libvulpes:ore0:8>, "Rutile Ore only generates on other planets, but Titanium Ingots are craftable.");
 	
@@ -220,8 +215,8 @@ for item in thaumcraftHintItems {
 	addDescription(<astralsorcery:blockcustomore>, spaceGenHigh);
 	
 # Titanium Ingot
-	addDescription(<libvulpes:productingot:7>, "Obtainable through the Advanced Metallurgic Fabricator.");
-	<libvulpes:productingot:7>.addTooltip(format.red("(Obtainable through the Advanced Metallurgic Fabricator)"));
+	addDescription(<libvulpes:productingot:7>, "Obtainable through the Advanced Metallurgic Fabricator OR from IE Excavator.");
+	<libvulpes:productingot:7>.addTooltip(format.red("(Obtainable through the Advanced Metallurgic Fabricator OR from IE Excavator)"));
 
 # Mystical Agriculture Seeds Tier 5 -> 6
 	<mysticalagriculture:ender_amethyst_seeds>.addTooltip("Tier: " + format.darkPurple("6"));
@@ -283,46 +278,6 @@ for item in thaumcraftHintItems {
 	
 # Mystical Agriculture Block of Prosperity
 	addDescription(<mysticalagriculture:crafting:5>, "Block of Prosperity is craftable.");
-	
-# Vanilla tools
-	
-	val toolsToTooltip = [
-	
-	<minecraft:golden_axe>,
-	<minecraft:golden_shovel>,
-	<minecraft:golden_hoe>,
-	<minecraft:golden_pickaxe>,
-	<minecraft:golden_sword>,
-
-	<minecraft:diamond_sword>,
-	<minecraft:diamond_shovel>,
-	<minecraft:diamond_axe>,
-	<minecraft:diamond_pickaxe>,
-	
-	<minecraft:iron_shovel>,
-	<minecraft:iron_axe>,
-	<minecraft:iron_sword>,
-	<minecraft:iron_pickaxe>,
-	<minecraft:iron_hoe>,
-		
-	<minecraft:wooden_pickaxe>,
-	<minecraft:wooden_sword>,
-	<minecraft:wooden_hoe>,
-	<minecraft:wooden_shovel>,
-	<minecraft:wooden_axe>,
-	
-	<minecraft:stone_pickaxe>,
-	<minecraft:stone_hoe>,
-	<minecraft:stone_axe>,
-	<minecraft:stone_shovel>,
-	<minecraft:stone_sword>
-	
-	] as IItemStack[];
-		
-	for tool in toolsToTooltip {
-		addDescription(tool, vanillaToolTooltip);
-		tool.addTooltip(format.red("Vanilla tools don't work. Use Tinkers' Construct tools"));
-	}
 	
 # Environmental Tech
 
@@ -2001,3 +1956,13 @@ for item, textArray in {
 <thaumcraft:curio:3>.addTooltip("§f+ to §5Eldritch§f progress");
 <thaumcraft:curio:4>.addTooltip("§f+ to §5Arcane Infusion§f progress");
 <thaumcraft:curio:5>.addTooltip("§f+ to §5Artifice§f progress");
+
+# 3d print tooltips
+mods.jei.JEI.addItem(<opencomputers:print>);
+addDescription(<opencomputers:print>, 
+'§51)§r Craft OPPM floppy', 
+'§52)§r Install it on Tier2+ computer with Internet card',
+'§53)§r Run §n"oppm install oppm"§r',
+'§54)§r Restart',
+'§55)§r Run §n"oppm install print3d"§r and §n"oppm install print3d-examples"§r',
+'§56)§r §n"print3d /path/to/Tree.3dm"§r');

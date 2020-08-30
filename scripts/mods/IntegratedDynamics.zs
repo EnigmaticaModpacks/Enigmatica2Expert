@@ -42,19 +42,19 @@ import mods.jei.JEI.removeAndHide as rh;
 	[<ore:plateObsidian>, <integrateddynamics:drying_basin>, <ore:plateObsidian>]]);
 
 	
-# Omni directional
+# Omnidirectional
 var connector = <integrateddynamics:part_connector_omni_directional_item>;
 var part = <integrateddynamics:logic_director>;
 var mono = <integrateddynamics:part_connector_mono_directional_item>;
 recipes.remove(connector);
 
 recipes.addShaped("part_connector_omni_directional_item_11", connector * 3, [
-	[part, <enderstorage:ender_storage>, part], 
+	[part, <enderio:block_transceiver>, part], 
 	[mono, connector, mono],
 	[null, part, null]]);
 
 recipes.addShaped("part_connector_omni_directional_item", connector * 2, [
-	[part, <enderstorage:ender_storage>, part], 
+	[part, <enderio:block_transceiver>, part], 
 	[mono, <integrateddynamics:cable>, mono], 
 	[null, part, null]]);
 

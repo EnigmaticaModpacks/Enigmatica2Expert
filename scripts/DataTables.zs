@@ -294,11 +294,11 @@ static armorStaged as IData[string] =
       {id:"spartanshields:shield_riot_rftools", tag:{Energy:1000000}}
   ]},
   armor_wyvern:{
-    prev: "armor_supremium", 
+    prev: ["armor_terrasteel", "armor_living_armour", "armor_void_robe", "armor_quantum", "armor_arctic", "armor_yeti", "armor_glitch_infused"],
     tier: 11,
     material: "draconicevolution:wyvern_core",
     recycle:  "draconicevolution:wyvern_core",
-    recipe: {manual: true},
+    recipe: {manual: true, noFoundry: true},
     list: [
       {id:"draconicevolution:wyvern_helm", tag:{Energy:2000000}},
       {id:"draconicevolution:wyvern_chest", tag:{Energy:2000000}},
@@ -312,7 +312,7 @@ static armorStaged as IData[string] =
     tier: 12,
     material: "draconicevolution:awakened_core",
     recycle:  "draconicevolution:awakened_core",
-    recipe: {manual: true},
+    recipe: {manual: true, noFoundry: true},
     list: [
       {id:"draconicevolution:draconic_helm", tag:{Energy:16000000}},
       {id:"draconicevolution:draconic_chest", tag:{Energy:16000000}},

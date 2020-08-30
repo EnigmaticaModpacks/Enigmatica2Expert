@@ -8,8 +8,8 @@
     "duration": 1200,
     "symmetrical": true,
   
-    "catalyst": "extendedcrafting:material",
-    "catalyst-meta": 13,
+    "catalyst": "bigreactors:mineralbenitoite",
+    "catalyst-meta": 0,
   
     "input-types": {
       "a": {

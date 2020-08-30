@@ -24,10 +24,24 @@ function dive(setName as string) as string[]  {
 	val ins = curr.material;
 	if (!isNull(ins)) {
 		val insStr = ins.asString();
-		if (!isNull(curr.prev)) {
-			val deeplist = dive(curr.prev);
-			if (!isNull(deeplist)) {
-				return deeplist + insStr;
+		if (!isNull(curr.prev)) { # Something in "previous" data field
+
+			if (curr.prev.asString().startsWith("[")) {
+				# Seems like we have list
+				var result = [] as string[];
+				for v in curr.prev.asList() {
+					val deeplist = dive(v);
+					if (!isNull(deeplist)) {
+						for s in deeplist {result = result + s;}
+					}
+				}
+				return result + insStr;
+			} else {
+				# We have only one element
+				val deeplist = dive(curr.prev);
+				if (!isNull(deeplist)) {
+					return deeplist + insStr;
+				}
 			}
 		}
 		return [insStr];
@@ -45,7 +59,7 @@ var machineName = "armor_foundry";
 
 
 # Iterate over all avaliable armor
-for id, stage in armorStaged {
+for id, stage in armorStaged { if(isNull(D(stage, "recipe.noFoundry"))) {
 
 	# Each armor part as ItemStacks (in case if string is empty or wrong)
 	val p_h = <betterquesting:placeholder>;
@@ -64,8 +78,6 @@ for id, stage in armorStaged {
 	}
 	
 	# Material for this armor set
-	// val cmd = stage.material.asString();
-	// val material as IIngredient = getIngredientFromString(cmd);
 	val mats = dive(id);
 	
 	# Check if armor and material is real
@@ -80,6 +92,31 @@ for id, stage in armorStaged {
 			#.addFuelItemInout((34.0f * 64.0f * tierFactorEx) as int * 10000) # 345600 is Burn Time for Supremium coal block
 			.addFluidInput(<liquid:lava> * ((59.0f * tierFactorEx) as int * 1000 + 1000));
 
+		// # Calculate amount of materials needed
+		// var matData = {} as int[string];
+		// var matCount = 0;
+		// for m in mats {
+		// 	if (!isNull(matData[m])) {
+		// 		matData[m] = matData[m] + 1;
+		// 	} else {
+		// 		matData[m] = 1;
+		// 		matCount += 1;
+		// 	}
+		// }
+		// var maxI = min(9, matCount);
+		// var k = 0;
+		// # Add Oredict or ItemStack
+		// for mat, count in matData {
+		// 	if(k < maxI) {
+		// 		var cost = min(64, count * 24);
+		// 		if (mat.matches("^ore:.*")) {
+		// 			recipe.addItemInput(getOredictFromString(mat), cost /* armCost */);
+		// 		} else {
+		// 			recipe.addItemInput(getItemstackFromString(mat) * cost /* armCost */);
+		// 		}
+		// 		k += 1;
+		// 	}
+		// }
 		# Add Oredict or ItemStack
 		val maxI = min(9, mats.length);
 		for i in 0 to maxI {
@@ -99,4 +136,4 @@ for id, stage in armorStaged {
 		}
 		recipe.build();
 	}
-}
+}}

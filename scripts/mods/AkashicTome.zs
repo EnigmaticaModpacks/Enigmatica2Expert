@@ -38,4 +38,6 @@
 		[<ore:paper>, <ore:bookshelf>, <ore:paper>]]);
 
 	mods.jei.JEI.addItem(superTome);
-	
+
+# Remove excess not-oredicted recipe
+recipes.removeByRecipeName("akashictome:tome");

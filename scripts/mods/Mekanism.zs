@@ -292,7 +292,7 @@ remakeEx(<mekanism:energytablet>, [[<ore:alloyAdvanced>, <ore:plateDenseCopper>,
 val t1_cap = <enderio:item_basic_capacitor>;
 val t2_cap = <enderio:item_basic_capacitor:1>;
 val t3_cap = <enderio:item_basic_capacitor:2>;
-val t4_cap = <draconicevolution:draconium_capacitor:1>;
+val t4_cap = <enderio:item_capacitor_melodic>;
 remake("Induction Cell 1", <mekanism:basicblock2:3>.withTag({tier: 0}), [
 	[t1_cap, <ore:battery>, t1_cap], 
 	[<ore:battery>, <mekanism:energycube>.withTag({tier: 0}), <ore:battery>], 

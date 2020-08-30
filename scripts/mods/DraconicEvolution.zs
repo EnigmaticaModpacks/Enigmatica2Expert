@@ -14,7 +14,7 @@ import crafttweaker.item.IIngredient;
 	[<ore:ingotElectricalSteel>, <industrialforegoing:mob_relocator>, <ore:ingotElectricalSteel>]]);
 
 # Charged Draconium
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconium_block:1> * 2, 2000000000, 10000000, <draconicevolution:draconium_block>, [<draconicevolution:draconium_block>]);
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconium_block:1> * 2, 2000000000, 100000000, <draconicevolution:draconium_block>, [<draconicevolution:draconium_block>]);
 
 # Crystal Binder
 	recipes.remove(<draconicevolution:crystal_binder>);

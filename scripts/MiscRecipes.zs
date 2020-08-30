@@ -235,7 +235,6 @@ import mods.jei.JEI.removeAndHide as rh;
 			}
 		}
 		if (isAdd){
-			print("Adding log " ~ log.displayName);
 			logsFiltered = logsFiltered.or(log);
 		}
 	}
@@ -467,7 +466,7 @@ Remake(<toolbelt:belt>, [" A ", "CBC", "C C"], {
 mods.inworldcrafting.FluidToItem.transform(<ic2:dust:3>, <fluid:water>, [<ore:dustCoal>]);
 
 # Lesser blaze powder
-Remake(<minecraft:blaze_powder>, null, { remake: <minecraft:blaze_powder>*2, A: <minecraft:blaze_rod> });
+craft.reshapeless(<minecraft:blaze_powder>, "A", { A: <minecraft:blaze_rod>, remove: <minecraft:blaze_powder>*2});
 
 # Harder vanilla recipe
 recipes.remove(<minecraft:flint_and_steel>);

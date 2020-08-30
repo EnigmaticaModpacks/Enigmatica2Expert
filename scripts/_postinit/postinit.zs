@@ -20,14 +20,14 @@ static replExcept as IItemStack[] = [
 recipes.replaceAllOccurences(<ore:gemDiamond>, gemDiamondRat, <*>.only(function(item) {
 	if(isNull(item)){ return false; }
 	for ii in replExcept {
-		if (item.matches(ii) || ii.matches(item)){ return false; }
+		if (ii.anyDamage().matches(item)){ return false; }
 	}
 	return true;
 }));
 recipes.replaceAllOccurences(<minecraft:diamond>, gemDiamondRat, <*>.only(function(item) {
 	if(isNull(item)){ return false; }
 	for ii in replExcept {
-		if (item.matches(ii) || ii.matches(item)){ return false; }
+		if (ii.anyDamage().matches(item)){ return false; }
 	}
 	return true;
 }));

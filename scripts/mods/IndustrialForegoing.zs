@@ -91,7 +91,7 @@ function fluidDict(ins as string[]) {
 	mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:26>, <minecraft:diamond>, <immersiveengineering:mold:1>, 10000, 4);
 
 # Black Hole Tank
-	recipes.remove(<industrialforegoing:black_hole_tank>);
+	recipes.removeByRecipeName("industrialforegoing:black_hole_tank");
 	recipes.addShapedMirrored("Black Hole Tank", <industrialforegoing:black_hole_tank>, 
 	[[<ore:sheetSteel>, <mekanism:plasticblock:8>, <ore:sheetSteel>],
 	[<extrautils2:drum:3>, <botania:blackholetalisman>.reuse(), <extrautils2:drum:3>], 
