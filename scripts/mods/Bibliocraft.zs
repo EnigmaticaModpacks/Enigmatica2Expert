@@ -21,5 +21,16 @@
 	recipes.addShapeless("Creative Bookcase2", <bibliocraft:bookcasecreative:2>, [<bibliocraft:bookcasecreative:1>]);
 	recipes.addShapeless("Creative Bookcase1", <bibliocraft:bookcasecreative:1>, [<bibliocraft:bookcasecreative>]);
 
-	
-	
+# 4x Harder framing sheet
+craft.reshapeless(<bibliocraft:framingsheet> * 2, "AB", {
+	A: <bibliocraft:framingsaw>,
+	B: <ore:logWood>});
+
+# Saw acces earlier
+craft.remake(<bibliocraft:framingsaw>, ["pretty",
+	"A A  ",
+	"  A B",
+	"    C"], {
+	A: <ore:itemFlint>,
+	B: <tconstruct:tough_tool_rod>.withTag({Material: "wood"}),
+	C: <ore:leather>});

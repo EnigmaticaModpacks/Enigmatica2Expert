@@ -77,6 +77,8 @@
 - 𝓩𝒮 [x] Infinity reagent instead dust in high oven
 - 𝓩𝒮 [x] Silicon plate unification (check if Grindstone, MekGrinder, Fluid Sieving output right quartz dust)
 - 𝓩𝒮 [x] Armor Foundry work with list of .prev armor
+- 🔷 [x] More uses to TE Clathrates, buff their default outputs, 16x cut at generation
+- 🔷 [x] Remake Storage boxes (relate to #1617)
 
 
 ## Planned
@@ -85,8 +87,6 @@
 
 #### Other:
 
-- 🔷 [x] More uses to TE Clathrates, buff their default outputs, 16x cut at generation
-- 🔷 [x] Remake Cabinets and IC2 Storage boxes (relate to #1617)
 - 🔷 [x] Processed cheese material (molten cheese, molten cheese rivers in Ratlantis)
 - 🧩 [ ] Random Tweaks
 - 🧩 [ ] Remap New tconevo materials to tool levels

@@ -120,18 +120,6 @@ remake("rat_upgrade_archeologist", <rats:rat_upgrade_archeologist>, [
 # Rat flowers
 scripts.process.grow(<rats:ratglove_flower>, <rats:ratglove_flower> * 9, "No exceptions", null, 0);
 
-#Creative upgrades
-mods.extendedcrafting.TableCrafting.addShaped(0, <rats:rat_upgrade_creative>, [
-	[<ore:ingotUltimate>, <ore:ingotUltimate>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:ingotUltimate>, <ore:ingotUltimate>], 
-	[<ore:ingotUltimate>, <ore:ingotUltimate>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:ingotUltimate>, <ore:ingotUltimate>], 
-	[<ore:cheeseWheels>, <ore:cheeseWheels>, <botania:brewflask>.withTag({brewKey: "overload"}), <rats:chunky_cheese_token>, <rats:chunky_cheese_token>, <rats:chunky_cheese_token>, <botania:brewflask>.withTag({brewKey: "overload"}), <ore:cheeseWheels>, <ore:cheeseWheels>], 
-	[<ore:cheeseWheels>, <ore:cheeseWheels>, <rats:chunky_cheese_token>, <scalinghealth:difficultychanger>, <scalinghealth:heartcontainer>, <scalinghealth:difficultychanger>, <rats:chunky_cheese_token>, <ore:cheeseWheels>, <ore:cheeseWheels>], 
-	[<ore:cheeseWheels>, <ore:cheeseWheels>, <rats:chunky_cheese_token>, <scalinghealth:heartcontainer>, <rats:rat_upgrade_nonbeliever>, <scalinghealth:heartcontainer>, <rats:chunky_cheese_token>, <ore:cheeseWheels>, <ore:cheeseWheels>], 
-	[<ore:cheeseWheels>, <ore:cheeseWheels>, <rats:chunky_cheese_token>, <scalinghealth:difficultychanger>, <scalinghealth:heartcontainer>, <scalinghealth:difficultychanger>, <rats:chunky_cheese_token>, <ore:cheeseWheels>, <ore:cheeseWheels>], 
-	[<ore:cheeseWheels>, <ore:cheeseWheels>, <botania:brewflask>.withTag({brewKey: "overload"}), <rats:chunky_cheese_token>, <rats:chunky_cheese_token>, <rats:chunky_cheese_token>, <botania:brewflask>.withTag({brewKey: "overload"}), <ore:cheeseWheels>, <ore:cheeseWheels>], 
-	[<ore:ingotUltimate>, <ore:ingotUltimate>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:ingotUltimate>, <ore:ingotUltimate>], 
-	[<ore:ingotUltimate>, <ore:ingotUltimate>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:cheeseWheels>, <ore:ingotUltimate>, <ore:ingotUltimate>]
-]);
 
 var csandwich = <culinaryconstruct:sandwich>.withTag({Size: 5, Saturation: 1.1549999 as float, Ingredients: {Items: [{Slot: 0 as byte, id: "animania:sheep_cheese_wedge", Count: 1 as byte, Damage: 0 as short}, {Slot: 1 as byte, id: "animania:goat_cheese_wedge", Count: 1 as byte, Damage: 0 as short}, {Slot: 2 as byte, id: "animania:friesian_cheese_wedge", Count: 1 as byte, Damage: 0 as short}, {Slot: 3 as byte, id: "animania:holstein_cheese_wedge", Count: 1 as byte, Damage: 0 as short}, {Slot: 4 as byte, id: "animania:jersey_cheese_wedge", Count: 1 as byte, Damage: 0 as short}, {Slot: 5 as byte, id: "minecraft:bread", Count: 1 as byte, Damage: 0 as short}]}, Bonus: 2, Depth: 0, Food: 10});
 var cplate = <tconstruct:large_plate>.withTag({Material: "cheese"});
