@@ -205,3 +205,7 @@ remakeEx(<extrautils2:machine>.withTag({Type: "extrautils2:generator_enchant"}),
 
 # Cut enderpearl into pieces
 scripts.process.mash(<minecraft:ender_pearl> , <extrautils2:endershard> * 8, null);
+
+# Blue quartz as ultimate grid user
+//mods.extrautils2.Resonator.add(IItemStack output, IItemStack input, int energy, @Optional boolean addOwnerTag);
+mods.extrautils2.Resonator.add(<extrautils2:decorativesolid:6>, <botania:quartztypemana>, 700 * 100);
