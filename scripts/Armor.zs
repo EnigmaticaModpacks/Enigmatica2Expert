@@ -180,7 +180,7 @@ function createArmorSet(setData as IData, setId as string) {
 	}
 
 	# prev set
-	val prev = armorStaged[!isNull(setData.prev) ? setData.prev : "undefined"];
+	val prev = armorStaged[Dd(setData, "prev", {d:"undefined"})];
 	
 	# Extra ingredient. Recipe is chained but have additional item
 	if (!isNull(setData.recipe) && !isNull(setData.recipe.extra)) {
@@ -240,71 +240,63 @@ remakeEx(<ic2:quantum_helmet:26>, [[<ic2:crafting:3>, null, <ic2:crafting:3>],[<
 	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_helm>,
 	1000000000, 1000000, <draconicevolution:wyvern_energy_core>, [
 		<twilightforest:arctic_helmet>.anyDamage(),
+		<draconicevolution:draconium_block:1>,
 		<twilightforest:yeti_helmet>.anyDamage(),
-		<twilightforest:knightmetal_helmet>.anyDamage(),
-		<twilightforest:steeleaf_helmet>.anyDamage(),
-		<twilightforest:fiery_helmet>.anyDamage(),
-		<twilightforest:ironwood_helmet>.anyDamage(),
-		<minecraft:chainmail_helmet>.anyDamage(),
+		<draconicevolution:draconium_block:1>,
+		<thaumcraft:void_robe_helm>.anyDamage(),
+		<draconicevolution:draconium_block:1>,
+		<bloodmagic:living_armour_helmet>.anyDamage(),
+		<draconicevolution:draconium_block:1>,
 		<botania:terrasteelhelm>.anyDamage(),
-		<tcomplement:manyullyn_helmet>.anyDamage(),
 		<draconicevolution:wyvern_core>,
+		<deepmoblearning:glitch_infused_helmet>.anyDamage(),
 		<ic2:quantum_helmet>.anyDamage(),
-		<draconicevolution:draconium_block:1>,
-		<draconicevolution:draconium_block:1>,
-		<draconicevolution:draconium_block:1>,
-		<draconicevolution:draconium_block:1>]);
+	]);
 	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_chest>,
 	1000000000, 1000000, <draconicevolution:wyvern_energy_core>, [
 		<twilightforest:arctic_chestplate>.anyDamage(),
+		<draconicevolution:draconium_block:1>,
 		<twilightforest:yeti_chestplate>.anyDamage(),
-		<twilightforest:knightmetal_chestplate>.anyDamage(),
-		<twilightforest:steeleaf_chestplate>.anyDamage(),
-		<twilightforest:fiery_chestplate>.anyDamage(),
-		<twilightforest:ironwood_chestplate>.anyDamage(),
-		<minecraft:chainmail_chestplate>.anyDamage(),
+		<draconicevolution:draconium_block:1>,
+		<thaumcraft:void_robe_chest>.anyDamage(),
+		<draconicevolution:draconium_block:1>,
+		<bloodmagic:living_armour_chest>.anyDamage(),
+		<draconicevolution:draconium_block:1>,
 		<botania:terrasteelchest>.anyDamage(),
-		<tcomplement:manyullyn_chestplate>.anyDamage(),
 		<draconicevolution:wyvern_core>,
+		<deepmoblearning:glitch_infused_chestplate>.anyDamage(),
 		<ic2:quantum_chestplate>.anyDamage(),
-		<draconicevolution:draconium_block:1>,
-		<draconicevolution:draconium_block:1>,
-		<draconicevolution:draconium_block:1>,
-		<draconicevolution:draconium_block:1>]);
+	]);
 	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_legs>,
 	1000000000, 1000000, <draconicevolution:wyvern_energy_core>, [
 		<twilightforest:arctic_leggings>.anyDamage(),
+		<draconicevolution:draconium_block:1>,
 		<twilightforest:yeti_leggings>.anyDamage(),
-		<twilightforest:knightmetal_leggings>.anyDamage(),
-		<twilightforest:steeleaf_leggings>.anyDamage(),
-		<twilightforest:fiery_leggings>.anyDamage(),
-		<twilightforest:ironwood_leggings>.anyDamage(),
-		<minecraft:chainmail_leggings>.anyDamage(),
+		<draconicevolution:draconium_block:1>,
+		<thaumcraft:void_robe_legs>.anyDamage(),
+		<draconicevolution:draconium_block:1>,
+		<bloodmagic:living_armour_leggings>.anyDamage(),
+		<draconicevolution:draconium_block:1>,
 		<botania:terrasteellegs>.anyDamage(),
-		<tcomplement:manyullyn_leggings>.anyDamage(),
 		<draconicevolution:wyvern_core>,
+		<deepmoblearning:glitch_infused_leggings>.anyDamage(),
 		<ic2:quantum_leggings>.anyDamage(),
-		<draconicevolution:draconium_block:1>,
-		<draconicevolution:draconium_block:1>,
-		<draconicevolution:draconium_block:1>,
-		<draconicevolution:draconium_block:1>]);
+	]);
 	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_boots>,
 	1000000000, 1000000, <draconicevolution:wyvern_energy_core>, [
 		<twilightforest:arctic_boots>.anyDamage(),
+		<draconicevolution:draconium_block:1>,
 		<twilightforest:yeti_boots>.anyDamage(),
-		<twilightforest:knightmetal_boots>.anyDamage(),
-		<twilightforest:steeleaf_boots>.anyDamage(),
-		<twilightforest:fiery_boots>.anyDamage(),
-		<twilightforest:ironwood_boots>.anyDamage(),
-		<minecraft:chainmail_boots>.anyDamage(),
+		<draconicevolution:draconium_block:1>,
+		<thaumcraft:void_boots>.anyDamage(),
+		<draconicevolution:draconium_block:1>,
+		<bloodmagic:living_armour_boots>.anyDamage(),
+		<draconicevolution:draconium_block:1>,
 		<botania:terrasteelboots>.anyDamage(),
-		<tcomplement:manyullyn_boots>.anyDamage(),
 		<draconicevolution:wyvern_core>,
+		<deepmoblearning:glitch_infused_boots>.anyDamage(),
 		<ic2:quantum_boots>.anyDamage(),
-		<draconicevolution:draconium_block:1>,
-		<draconicevolution:draconium_block:1>,
-		<draconicevolution:draconium_block:1>,
-		<draconicevolution:draconium_block:1>]);
+	]);
 
 # Draconic
 	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_helm>,
