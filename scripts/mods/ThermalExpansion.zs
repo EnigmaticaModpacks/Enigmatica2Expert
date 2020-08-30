@@ -1,5 +1,6 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.liquid.ILiquidStack;
 import mods.jei.JEI.removeAndHide;
 #modloaded thermalexpansion
 
@@ -326,3 +327,24 @@ scripts.process.fill(<enderio:item_material:39>, <liquid:ender> * 500, enderiumI
 # Alloy in smeltery -> Enderium ingot
 mods.tconstruct.Alloy.removeRecipe(<liquid:enderium>);
 mods.tconstruct.Alloy.addRecipe(<liquid:enderium> * 144, [<liquid:platinum> * 144,  <liquid:pulsating_iron> * 144, <liquid:ender> * 1500]);
+
+
+# Clathrates rework. More output
+function reworkClathrate(ore as IItemStack, crystal as IItemStack, dust as IItemStack, liquid as ILiquidStack) {
+	# Rermove defaults outputs
+	mods.thermalexpansion.Crucible.removeRecipe(ore);
+	mods.thermalexpansion.Crucible.removeRecipe(crystal);
+	mods.thermalexpansion.Transposer.removeFillRecipe(crystal, <liquid:cryotheum> * 200);
+	recipes.removeShapeless(<*>, [crystal, <thermalfoundation:material:1025>]);
+	
+	# Melting into raw liquids
+	scripts.process.melt(ore, liquid * min(10000, liquid.amount * 4), "no exceptions");
+	scripts.process.melt(crystal, liquid, "no exceptions");
+
+	# Filling with cryotheum to make advanced liquids
+	scripts.process.fill(crystal, <liquid:cryotheum> * 250, dust, "only: NCInfuser Transposer");
+}
+
+reworkClathrate(<thermalfoundation:ore_fluid:2>, <thermalfoundation:material:893>, <thermalfoundation:material:101>, <liquid:redstone> * 1000);
+reworkClathrate(<thermalfoundation:ore_fluid:3>, <thermalfoundation:material:894>, <thermalfoundation:material:102>, <liquid:glowstone> * 2500);
+reworkClathrate(<thermalfoundation:ore_fluid:4>, <thermalfoundation:material:895>, <thermalfoundation:material:103>, <liquid:ender> * 2500);
