@@ -2,9 +2,23 @@
 
 #loader contenttweaker
 
-import mods.contenttweaker.Item;
-import mods.contenttweaker.VanillaFactory;
+import crafttweaker.data.IData;
+import crafttweaker.entity.IEntityLivingBase;
+import crafttweaker.event.EntityLivingFallEvent;
+import crafttweaker.item.IItemDefinition;
+import crafttweaker.item.IItemStack;
+import crafttweaker.world.IWorld;
 import mods.contenttweaker.BlockMaterial;
+import mods.contenttweaker.Color;
+import mods.contenttweaker.Item;
+import mods.contenttweaker.MaterialSystem;
+import mods.contenttweaker.VanillaFactory;
+import mods.ctutils.utils.Math.abs;
+import mods.ctutils.utils.Math.floor;
+import mods.ctutils.utils.Math.max;
+import mods.ctutils.utils.Math.min;
+import mods.ctutils.utils.Math.random;
+import mods.ctutils.utils.Math.sqrt;
 
 
 /*** Crafting Materials ***/
@@ -38,3 +52,14 @@ createCompressedBlock("compressed_crushed_skystone", 5, <blockmaterial:rock>);
 createCompressedBlock("compressed_crushed_andesite", 3, <blockmaterial:rock>);
 createCompressedBlock("compressed_crushed_diorite" , 3, <blockmaterial:rock>);
 createCompressedBlock("compressed_crushed_granite" , 3, <blockmaterial:rock>);
+
+
+val
+ta = VanillaFactory.createBlock("terrestial_artifact_block", <blockmaterial:rock>);
+ta.toolClass = "pickaxe";
+ta.toolLevel = 9;
+ta.blockHardness = 9 * 1.6;
+ta.blockResistance = 9 * 1.4;
+ta.blockSoundType = <soundtype:stone>;
+ta.register();
+

@@ -61,9 +61,6 @@ import crafttweaker.item.IItemStack;
 
 # Litherite
 	recipes.remove(<environmentaltech:litherite_crystal>);
-	mods.thermalexpansion.Transposer.addFillRecipe(<environmentaltech:litherite_crystal>, 
-	<biomesoplenty:terrestrial_artifact>, 
-	<liquid:enderium> * 72, 150000);
 	recipes.addShapeless("Litherite Block -> Crystal", 
 	<environmentaltech:litherite_crystal> * 9, 
 	[<ore:blockLitherite>]);

@@ -1,4 +1,7 @@
 import mods.jei.JEI.removeAndHide as rh;
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
+import mods.nuclearcraft.decay_generator.addRecipe as addDecayRecipe;
 #modloaded nuclearcraft
 
 # Removing an Obsidian dupe
@@ -199,3 +202,7 @@ mods.nuclearcraft.turbine.addRecipe([<liquid:ic2steam>, <liquid:low_quality_stea
 # Heat exchanger
 # mods.nuclearcraft.heat_exchanger.addRecipe([fluidInput, fluidOutput, double heatRequired, int temperatureIn, int temperatureOut]);
 mods.nuclearcraft.heat_exchanger.addRecipe([<liquid:ic2hot_coolant>, <liquid:ic2coolant>, -200.0d, 700, 300]);
+
+# Decay generator as crafting method
+addDecayRecipe([<contenttweaker:terrestial_artifact_block>, <environmentaltech:litherite>   , 24000.0d, 1750.0d]);
+addDecayRecipe([<environmentaltech:litherite>             , <actuallyadditions:block_misc:6>, 12000.0d,  875.0d]);

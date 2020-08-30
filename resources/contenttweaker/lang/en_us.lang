@@ -1,3 +1,4 @@
+itemGroup.other=ContentTweaker
 
 item.contenttweaker.compressed_glowstone.name=Compressed Glowstone
 item.contenttweaker.compressed_ender.name=Compressed Ender
@@ -10,3 +11,5 @@ item.contenttweaker.supremium_boots_base.name=Supremium Boots Core Base
 item.contenttweaker.supremium_chest_base.name=Supremium Chestplate Core Base
 item.contenttweaker.supremium_helmet_base.name=Supremium Helmet Core Base
 item.contenttweaker.supremium_leggings_base.name=Supremium Leggins Core Base
+
+tile.contenttweaker.terrestial_artifact_block.name=Terrestial Artifact Block
