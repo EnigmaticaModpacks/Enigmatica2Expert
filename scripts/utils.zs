@@ -71,5 +71,49 @@ zenClass Utils {
       print(s);
     }
   }
+
+
+  # ########################
+  # Graph
+  # ########################
+  function graph(map as string[], keys as string[][string]) as string[][double[string]] {
+    if (isNull(map) || map.length <= 0) {
+      logger.logWarning("utils.graph() first argument should be non-empty string[].");
+      return {};
+    }
+
+    # Determine max dimensions
+    var maxY = map.length;
+    var maxX = 0;
+    for line in map {
+      maxX = max(maxX, line.length);
+    }
+
+    if (maxX <= 0) {
+      logger.logWarning("utils.graph() first argument should content at least one non-empty string");
+      return {};
+    }
+
+    # Determine doulbe steps
+    var stepX = 1.0d / (max(1, maxX - 1) as double);
+    var stepY = 1.0d / (max(1, maxY - 1) as double);
+
+    # Write result
+    var result as string[][double[string]] = {};
+    var resultLen = 0;
+    for y in 0 to map.length {
+      for x in 0 to map[y].length {
+        var c = map[y][x];
+        if (c != " " && !isNull(keys[c])) {
+          result[{x: stepX*x, y: stepY*y} as double[string]] = keys[c];
+          resultLen += 1;
+        }
+      }
+    }
+
+    if (resultLen <= 0) logger.logWarning("utils.graph() graph cant find any valid key");
+
+    return result;
+  }
 }
 global utils as Utils = Utils();

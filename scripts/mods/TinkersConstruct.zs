@@ -196,35 +196,46 @@ remakeEx(<mctsmelteryio:upgrade:6>, [
 	
 # *======= Fuels =======*
 
-	<liquid:pyrotheum>.definition.temperature = 5300;
-	<liquid:xu_demonic_metal>.definition.temperature = 4000;
-	<liquid:sulfuricacid>.definition.temperature = 4000;
-	<liquid:refined_fuel>.definition.temperature = 4100;
-	<liquid:ic2uu_matter>.definition.temperature = 9300;
-	<liquid:ic2pahoehoe_lava>.definition.temperature = 3800;
-	<liquid:gasoline>.definition.temperature = 3900;
-	<liquid:diesel>.definition.temperature = 3900;
-	<liquid:astralsorcery.liquidstarlight>.definition.temperature = 3900;
-	
-	#NuclearCraft Specific
-	<liquid:neutron>.definition.temperature = 10300;
-	<liquid:boric_acid>.definition.temperature = 4000;
-	<liquid:hydrofluoric_acid>.definition.temperature = 4000;
-				
-	mods.tconstruct.Fuel.registerFuel(<liquid:pyrotheum> * 25, 400);
-	mods.tconstruct.Fuel.registerFuel(<liquid:xu_demonic_metal> * 25, 400);
-	mods.tconstruct.Fuel.registerFuel(<liquid:sulfuricacid> * 25, 400);
-	mods.tconstruct.Fuel.registerFuel(<liquid:refined_fuel> * 25, 600);
-	mods.tconstruct.Fuel.registerFuel(<liquid:ic2uu_matter> * 25, 800);
-	mods.tconstruct.Fuel.registerFuel(<liquid:ic2pahoehoe_lava> * 25, 400);
-	mods.tconstruct.Fuel.registerFuel(<liquid:gasoline> * 25, 400);
-	mods.tconstruct.Fuel.registerFuel(<liquid:diesel> * 25, 400);
-	mods.tconstruct.Fuel.registerFuel(<liquid:astralsorcery.liquidstarlight> * 25, 600);
-	
-	#NuclearCraft Specific
-	mods.tconstruct.Fuel.registerFuel(<liquid:neutron> * 25, 1200);
-	mods.tconstruct.Fuel.registerFuel(<liquid:boric_acid> * 25, 400);
-	mods.tconstruct.Fuel.registerFuel(<liquid:hydrofluoric_acid> * 25, 400);
+for pos, names in utils.graph([
+# ↑ Duration
+	"                                                          l           o        p",
+	"                                                k                               ",
+	"                                     j  m  n                                    ",
+	"                                 i                                              ",
+	"                   e  f  g   h                                                  ",
+	"*      a   c    d                                                               "],
+# ┣━━━━━━━━━┷━━━━━━━━━┻━━━━━━━━━┷━━━━━━━━━╋╋━━━━━━━━━┷━━━━━━━━━┻━━━━━━━━━┷━━━━━━━━━┫
+# |1000    2750     4500       6250      8000       9750     11500     13250  15000| Temp --->
+{
+	"*": ["steam"],
+	"a": ["ic2pahoehoe_lava"],
+	"b": ["biodiesel"],
+	"c": ["diesel", "ic2biogas"],
+	"d": ["gasoline", "crystaloil"],
+	"e": ["boric_acid"],
+	"f": ["hydrofluoric_acid"],
+	"g": ["sulfuricacid"],
+	"h": ["xu_demonic_metal", "rocket_fuel"],
+	"i": ["refined_fuel"],
+	"j": ["pyrotheum"],
+	"m": ["rocketfuel"],
+	"k": ["ic2uu_matter"],
+	"l": ["neutron"],
+	"n": ["empoweredoil"],
+	"o": ["plasma"],
+	"p": ["infinity_metal"],
+}) {
+	for name in names {
+		var temp = (pos.x * (150 - 10) + 10) as int * 100;
+		var time = (pos.y * ( 12 -  4) +  4) as int * 100;
+		var liquid = game.getLiquid(name);
+
+		utils.log("Register Smeltery fuel. Temp: "~temp~", Burn time: "~time~", Name: "~name);
+
+		liquid.definition.temperature = temp;
+		mods.tconstruct.Fuel.registerFuel(liquid * 50, time);
+	}
+}
 
 
 # Remake some metals to able be melted only under amplyfiing tube
