@@ -76,9 +76,9 @@ mods.nuclearcraft.melter.addRecipe(<ore:obsidian>, <liquid:obsidian> * 144);
 	//Pink Slime Ingot
 	mods.nuclearcraft.ingot_former.addRecipe([<liquid:molten_reinforced_pink_slime>*144, <industrialforegoing:pink_slime_ingot>, 1.0, 1.0]);
 	//Refined Obsidian Ingot
-	mods.nuclearcraft.ingot_former.addRecipe([<liquid:refinedobsidian>*144, <mekanism:ingot>, 1.0, 1.0]);
+	mods.nuclearcraft.ingot_former.addRecipe([<liquid:refined_obsidian>*144, <mekanism:ingot>, 1.0, 1.0]);
 	//Refined Glowstone Ingot
-	mods.nuclearcraft.ingot_former.addRecipe([<liquid:refinedglowstone>*144, <mekanism:ingot:3>, 1.0, 1.0]);
+	mods.nuclearcraft.ingot_former.addRecipe([<liquid:refined_glowstone>*144, <mekanism:ingot:3>, 1.0, 1.0]);
 	//Base Essence Ingot
 	mods.nuclearcraft.ingot_former.addRecipe([<liquid:base_essence>*144, <mysticalagriculture:crafting:32>, 1.0, 1.0]);
 	//Psimetal Ingot

@@ -299,3 +299,6 @@ recipes.addShaped(<biomesoplenty:mud_brick_block> * 2, [
 	[<tconstruct:materials:1>, null, <tconstruct:materials:1>], 
 	[<tconstruct:materials:1>, <tconstruct:materials:1>, <tconstruct:materials:1>]
 ]);
+
+# Osgloglas recipe after moving to tconevo
+mods.tconstruct.Alloy.addRecipe(<liquid:osgloglas> * 144, [<liquid:osmium> * 144, <liquid:refined_obsidian> * 144,  <liquid:refined_glowstone> * 144]);
