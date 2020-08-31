@@ -17,7 +17,7 @@
 				"restriction": "blacklist",
 				"value": [
 					-1,
-					1
+					1, 112
 				]
 			}
 		},
@@ -37,7 +37,7 @@
 				"restriction": "blacklist",
 				"value": [
 					-1,
-					1
+					1, 112
 				]
 			}
 		}

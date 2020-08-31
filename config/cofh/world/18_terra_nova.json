@@ -1,0 +1,117 @@
+{
+	"dependencies": "nuclearcraft",
+	"populate": 
+		{
+		"large_blue_vein": {
+			"distribution": "fractal",
+			"generator": {
+				"block": [{
+						"name": "netherendingores:ore_other_1",
+						"metadata": 4,
+						"weight": 40
+					},{
+						"name": "tconstruct:molten_cobalt",
+						"weight": 10
+					},{
+						"name": "quark:slate",
+						"metadata": 6,
+						"weight": 50
+					},{
+						"name": "bigreactors:blockcyanite",
+						"weight": 5
+					}
+				],
+				"cluster-size": 350,
+        "sparse": true,
+        "spindly": true
+			},
+			"cluster-count": 6,
+			"chunk-chance": 8,
+			"min-height": 120,
+			"vein-height": 120,
+			"vein-diameter": 40,
+			"vertical-density": 10,
+			"horizontal-density": 20,
+			"biome": "biomesoplenty:crag", "dimension": {"restriction": "whitelist","value": [112]}
+		},
+
+		"cyanite_stalactite": {
+			"distribution": "cave",
+			"generator": {
+				"type": "stalactite",
+				"block": "bigreactors:blockcyanite",
+				"height-variance": 15,
+				"gen-size": 1
+			},
+			"ceiling": true,
+			"ground-level": 250,
+			"cluster-count": 3,
+			"biome": "biomesoplenty:crag", "dimension": {"restriction": "whitelist","value": [112]}
+		},
+
+		"cobalt": {
+			"distribution": "gaussian",
+			"generator": {
+				"block": [
+					{
+						"name": "netherendingores:ore_other_1",
+						"metadata": 4,
+						"weight": 40
+					},
+					{
+						"name": "quark:slate",
+						"metadata": 6,
+						"weight": 60
+					}
+				],
+				"cluster-size": 40
+			},
+			"cluster-count": 25,
+			"center-height": 240,
+			"spread": 140,
+			"biome": "biomesoplenty:crag", "dimension": {"restriction": "whitelist","value": [112]}
+		},
+
+		"lapis": {
+			"distribution": "gaussian",
+			"generator": {
+				"block": "minecraft:lapis_ore",
+				"cluster-size": 9
+			},
+			"cluster-count": 20,
+			"center-height": 240,
+			"spread": 140,
+			"biome": "biomesoplenty:crag", "dimension": {"restriction": "whitelist","value": [112]}
+		},
+
+		"platinum": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "thermalfoundation:ore",
+					"metadata": 6
+				},
+				"cluster-size": 2
+			},
+			"cluster-count": 10,
+			"min-height": 110,
+			"max-height": 250,
+			"biome": "biomesoplenty:crag", "dimension": {"restriction": "whitelist","value": [112]}
+		},
+
+		"blue_flower": {
+			"distribution": "surface",
+			"generator": {
+				"type": "decoration",
+				"block": {
+					"name": "botania:shinyflower",
+					"metadata": 3
+				},
+				"surface": "biomesoplenty:grass",
+				"cluster-size": 1
+			},
+			"cluster-count": 100,
+			"biome": "biomesoplenty:crag", "dimension": {"restriction": "whitelist","value": [112]}
+		}
+	}
+}

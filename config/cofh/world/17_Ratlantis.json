@@ -1,0 +1,35 @@
+{
+  "dependencies": [
+    "rats",
+    "contenttweaker"
+  ],
+  "populate": {
+    
+    "milk_lake": {
+      "distribution": "uniform",
+      "generator": {
+        "type": "lake",
+        "block": "cyclicmagic:milk",
+        "outline-block": "rats:block_of_cheese",
+        "use-material": true,
+				"material": [
+          "minecraft:grass",
+          "minecraft:stone",
+          "minecraft:sand",
+          "minecraft:sandstone",
+          "minecraf:dirt",
+          "minecraf:leaves",
+          "minecraf:log",
+          "minecraf:tallgrass"
+        ]
+      },
+      "cluster-count": 3,
+      "min-height": 20,
+      "max-height": 100,
+      "follow-terrain": true,
+      "biome": "all",
+      "retrogen": false,
+      "dimension": {"restriction": "whitelist","value": [-8]}
+    }
+  }
+}

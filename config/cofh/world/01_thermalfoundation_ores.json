@@ -16,6 +16,7 @@
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
+					112,
 					-1,
 					1
 				]
@@ -39,6 +40,7 @@
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
+					112,
 					-1,
 					1
 				]
@@ -62,6 +64,7 @@
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
+					112,
 					-1,
 					1
 				]
@@ -93,6 +96,7 @@
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
+					112,
 					-1,
 					1
 				]
@@ -125,6 +129,7 @@
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
+					112,
 					-1,
 					1
 				]
@@ -155,6 +160,7 @@
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
+					112,
 					-1,
 					1
 				]
@@ -178,6 +184,7 @@
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
+					112,
 					-1,
 					1
 				]
@@ -206,6 +213,7 @@
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
+					112,
 					-1,
 					1
 				]
@@ -226,6 +234,7 @@
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
+					112,
 					-1,
 					1
 				]
