@@ -105,8 +105,8 @@
 	<star name="Proxima Centauri" temp="45" x="28" y="8" numPlanets="0" numGasGiants="0">
 		<planet name="Proxima B" DIMID="111" customIcon="earthlike">
 			<biomeIds>advancedrocketry:crystalchasms</biomeIds>
-			<skyColor>0,1,0</skyColor>
-			<fogColor>0,0,1</fogColor>
+			<skyColor>0.3,0.9,0.3</skyColor>
+			<fogColor>0,0.5,1</fogColor>
 			<atmosphereDensity>100</atmosphereDensity>
 			<gravitationalMultiplier>80</gravitationalMultiplier>
 			<orbitalDistance>50</orbitalDistance>

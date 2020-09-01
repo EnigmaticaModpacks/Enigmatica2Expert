@@ -99,6 +99,18 @@
 			"biome": "biomesoplenty:crag", "dimension": {"restriction": "whitelist","value": [112]}
 		},
 
+		"quartz": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "appliedenergistics2:quartz_ore",
+				"cluster-size": 6
+			},
+			"cluster-count": 30,
+			"min-height": 110,
+			"max-height": 250,
+			"biome": "biomesoplenty:crag", "dimension": {"restriction": "whitelist","value": [112]}
+		},
+
 		"blue_flower": {
 			"distribution": "surface",
 			"generator": {

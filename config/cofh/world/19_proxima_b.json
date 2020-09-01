@@ -1,0 +1,191 @@
+{
+	"dependencies": "nuclearcraft",
+	"populate": {
+		"stalactite_0": {
+			"distribution": "cave",
+			"ceiling": true, "ground-level": 80, "cluster-count": 50, "chunk-chance": 10, "dimension": {"restriction": "whitelist","value": [111]},
+			"generator": { "type": "stalactite", "gen-size": 1, "min-height": 1, "height-variance": 1,
+				"block": {"name": "actuallyadditions:block_crystal_cluster_diamond", "properties": {"facing":"down"}}
+			}
+		},
+		"stalactite_1": {
+			"distribution": "cave",
+			"ceiling": true, "ground-level": 80, "cluster-count": 50, "chunk-chance": 10, "dimension": {"restriction": "whitelist","value": [111]},
+			"generator": { "type": "stalactite", "gen-size": 1, "min-height": 1, "height-variance": 1,
+				"block": {"name": "actuallyadditions:block_crystal_cluster_lapis", "properties": {"facing":"down"}}
+			}
+		},
+		"stalactite_2": {
+			"distribution": "cave",
+			"ceiling": true, "ground-level": 80, "cluster-count": 50, "chunk-chance": 10, "dimension": {"restriction": "whitelist","value": [111]},
+			"generator": { "type": "stalactite", "gen-size": 1, "min-height": 1, "height-variance": 1,
+				"block": {"name": "actuallyadditions:block_crystal_cluster_emerald", "properties": {"facing":"down"}}
+			}
+		},
+		"stalactite_3": {
+			"distribution": "cave",
+			"ceiling": true, "ground-level": 80, "cluster-count": 50, "chunk-chance": 10, "dimension": {"restriction": "whitelist","value": [111]},
+			"generator": { "type": "stalactite", "gen-size": 1, "min-height": 1, "height-variance": 1,
+				"block": {"name": "actuallyadditions:block_crystal_cluster_redstone", "properties": {"facing":"down"}}
+			}
+		},
+		"stalactite_4": {
+			"distribution": "cave",
+			"ceiling": true, "ground-level": 80, "cluster-count": 50, "chunk-chance": 10, "dimension": {"restriction": "whitelist","value": [111]},
+			"generator": { "type": "stalactite", "gen-size": 1, "min-height": 1, "height-variance": 1,
+				"block": {"name": "actuallyadditions:block_crystal_cluster_iron", "properties": {"facing":"down"}}
+			}
+		},
+		"stalactite_5": {
+			"distribution": "cave",
+			"ceiling": true, "ground-level": 80, "cluster-count": 50, "chunk-chance": 10, "dimension": {"restriction": "whitelist","value": [111]},
+			"generator": { "type": "stalactite", "gen-size": 1, "min-height": 1, "height-variance": 1,
+				"block": {"name": "actuallyadditions:block_crystal_cluster_coal", "properties": {"facing":"down"}}
+			}
+		},
+
+
+		"stalactite_0_crystal": {
+			"distribution": "cave",
+			"ceiling": true, "ground-level": 140, "cluster-count": 20, "dimension": {"restriction": "whitelist","value": [111]},
+			"generator": { "type": "stalactite", "gen-size": 1, "min-height": 1, "height-variance": 1,
+				"block": {"name": "actuallyadditions:block_crystal_cluster_diamond", "properties": {"facing":"down"}},
+				"material": {"name": "advancedrocketry:crystal", "metadata":0}
+			}
+		},
+		"stalactite_1_crystal": {
+			"distribution": "cave",
+			"ceiling": true, "ground-level": 140, "cluster-count": 20, "dimension": {"restriction": "whitelist","value": [111]},
+			"generator": { "type": "stalactite", "gen-size": 1, "min-height": 1, "height-variance": 1,
+				"block": {"name": "actuallyadditions:block_crystal_cluster_lapis", "properties": {"facing":"down"}},
+				"material": {"name": "advancedrocketry:crystal", "metadata":1}
+			}
+		},
+		"stalactite_2_crystal": {
+			"distribution": "cave",
+			"ceiling": true, "ground-level": 140, "cluster-count": 20, "dimension": {"restriction": "whitelist","value": [111]},
+			"generator": { "type": "stalactite", "gen-size": 1, "min-height": 1, "height-variance": 1,
+				"block": {"name": "actuallyadditions:block_crystal_cluster_emerald", "properties": {"facing":"down"}},
+				"material": {"name": "advancedrocketry:crystal", "metadata":2}
+			}
+		},
+		"stalactite_3_crystal": {
+			"distribution": "cave",
+			"ceiling": true, "ground-level": 140, "cluster-count": 20, "dimension": {"restriction": "whitelist","value": [111]},
+			"generator": { "type": "stalactite", "gen-size": 1, "min-height": 1, "height-variance": 1,
+				"block": {"name": "actuallyadditions:block_crystal_cluster_redstone", "properties": {"facing":"down"}},
+				"material": {"name": "advancedrocketry:crystal", "metadata":3}
+			}
+		},
+		"stalactite_4_crystal": {
+			"distribution": "cave",
+			"ceiling": true, "ground-level": 140, "cluster-count": 20, "dimension": {"restriction": "whitelist","value": [111]},
+			"generator": { "type": "stalactite", "gen-size": 1, "min-height": 1, "height-variance": 1,
+				"block": {"name": "actuallyadditions:block_crystal_cluster_iron", "properties": {"facing":"down"}},
+				"material": {"name": "advancedrocketry:crystal", "metadata":4}
+			}
+		},
+		"stalactite_5_crystal": {
+			"distribution": "cave",
+			"ceiling": true, "ground-level": 140, "cluster-count": 20, "dimension": {"restriction": "whitelist","value": [111]},
+			"generator": { "type": "stalactite", "gen-size": 1, "min-height": 1, "height-variance": 1,
+				"block": {"name": "actuallyadditions:block_crystal_cluster_coal", "properties": {"facing":"down"}},
+				"material": {"name": "advancedrocketry:crystal", "metadata":5}
+			}
+		},
+
+		"soopercooled_ice": {
+			"distribution": "surface",
+			"generator": {
+				"type": "sequential",
+				"generators": [
+					{
+						"type": "spike",
+						"block": "packed_ice",
+						"material": "snow_layer",
+						"size-variance": 8
+					}, {
+						"type": "stalagmite",
+						"block": "nuclearcraft:block_ice",
+						"material": "packed_ice",
+						"gen-body": ["snow_layer", "air"],
+						"min-height": 10,
+						"height-variance": 42,
+						"size-variance": 1
+					}
+				]
+			},
+      "chunk-chance": 20,
+			"cluster-count": 2,
+			"dimension": {"restriction": "whitelist","value": [111]}
+		},
+
+		"boulders_with_crystal_inside": {
+			"distribution": "surface",
+			"generator": {
+				"type": "sequential",
+				"generators": [
+					{
+						"type": "boulder",
+						"block": "packed_ice",
+						"diameter": 1,
+						"size-variance": 3,
+						"count-variance": 3,
+						"material": "snow_layer"
+					},{
+						"type": "sparse-cluster",
+						"block": {"name":"avaritia:block_resource", "metadata": 2},
+						"cluster-size": 2,
+						"material": "packed_ice"
+					}
+				]
+			},
+      "chunk-chance": 20,
+			"cluster-count": 1,
+			"dimension": {"restriction": "whitelist","value": [111]}
+		},
+
+		"huge_ice_spheres": {
+			"distribution": "gaussian",
+			"generator": {
+				"block": "packed_ice",
+				"cluster-size": 600
+			},
+      "chunk-chance": 2,
+			"cluster-count": 20,
+			"center-height": 5,
+			"spread": 70,
+			"dimension": {"restriction": "whitelist","value": [111]}
+		},
+
+		"big_ice_clusters": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "ice",
+				"cluster-size": 330
+			},
+      "chunk-chance": 2,
+			"cluster-count": 4,
+			"min-height": 0,
+			"max-height": 70,
+			"dimension": {"restriction": "whitelist","value": [111]}
+		},
+		
+		"more_marble": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "chisel:marble2",
+					"metadata": 7
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 48
+			},
+			"cluster-count": 7,
+			"min-height": 15,
+			"max-height": 50,
+			"dimension": {"restriction": "whitelist","value": [111]}
+		}
+
+	}
+}
