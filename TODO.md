@@ -4,82 +4,6 @@
 
 -----------
 
-- ✏️ [x] Bottle of Air recipe
-- 🔴 [x] Delivery
-- 🔴 [x] Replace Immersive Tech -> Immersive Technology
-- 📖 [x] Curiocity as rewards for ThCr quests
-- 🔷 [x] Thaumcraft Curiocity tooltips
-- 📖 [x] Draconic Chapter good chests as reward
-- 🧩 [x] More Flux Network tweaks
-- 𝓩𝒮 [x] More recipes for tree fluid extractor
-- 🧩 [x] Rad Resistance for some Armor
-- 𝓩𝒮 [x] Rats ORE processing wrong items (change to ore.firstItem)
-- 🔷 [x] Remove Anglesite & Benetoite from Rewards and Loot
-- 𝓩𝒮 [x] More AS fluids for fluid ritual (cfg)
-- ✍ [x] Disable Generation of BoP gems
-- ✍ [x] IC2 Coolant to salt reactor
-- 🔷 [x] Remove Water from AdvRock Electrolyzer
-- 𝓩𝒮 [x] ExNihilio Remove tools (already replaced with TiC)
-- ✏️ [x] Harder to make Supremium Cores (Core Base in smeltery -> Core in crafting table)
-- ✏️ [x] Keep infusion crystals damage when upgrading (recipe function)
-- 🕹️ [x] Hide JEI melter category (duplicated from TCon smeltery)
-- ⚙️ [x] Add refining of Thaumcraft Native Clusters
-- ✏️ [x] EvT solar cores cheaper, panels harder
-- 𝓩𝒮 [x] Forestry Circuits finally make acceptable in ME
-- 🏭 [x] XML automatic recipe adding (js)
-- 🔷 [x] JS 📋 Patchouli book generation
-- ✍ [x] Sieves new output (BoP gems). Compressed too.
-- 𝓩𝒮 [x] More Astral Sorcery Challice mixes
-- 𝓩𝒮 [x] More immersive Thermoelectric blocks variations.
-- 𝓩𝒮 [x] More meat types recycle in TE centrifuge
-- 𝓩𝒮 [x] Nerf void miner even more
-- 𝓩𝒮 [x] Tweak chemical thrower liquids
-- 🌿 [x] Patchouli All lootboxes on pages
-- ✏️ [x] MEGA potion
-- 🟢 [x] Artisan Worktables (add recipes, hide unused tables)
-- 🟢 [x] Botania Tweaks (write Patchouli docs)
-- 🟢 [x] Floralchemy (Add Petro Petunia liquids, Add more crystals)
-- 🔷 [x] Tinkers modifiers utility (add to generation, modify)
-- 💌 [x] Remove Laser Cannon from lootboxes
-- 📖 [x] Infinity capacitor to loot boxes
-- 📖 [x] Stellar Capacitor to EnderIO quest book
-- 📖 [x] Tempelate for 3d Print in description
-- 📖 [x] Hovercraft vehicle to book
-- 🔶 [x] Harder Enderium recipe (remove enderium base and platinum-lead alloy)
-- 🟢 [x] Mekatweaker
-- ✏️ [x] Harder NotAnoughRtg recipe (central item)
-- ✏️ [x] Dimension builder alter recipe
-- ✏️ [x] Other gated items for ExNihilio Meshes
-- ✏️ [x] Recipe of block made from 700 EU grid power (blue quartz)
-- 📖 [x] Rainbow block to Bragging rights
-- 𝓩𝒮 [x] TconEvo remove gears recipe
-- ✏️ [x] Creative rat upgrade way cheaper
-- ✏️ [x] Black hole tank clearing
-- ✏️ [x] Induction cell cheaper
-- 🔶 [x] Buff Mek Universal Cable recipe (x3. Disable right-click feature if needed)
-- 🔷 [x] Omnidirection connectors way harder
-- 🔷 [x] Main menu excess buttons
-- ✏️ [x] Heavy Metal Melting
-- 🔶 [x] Remake Mek Tanks and Gas tanks
-- 🔷 [x] Swap refined metals to `tconevo` variants
-- ✏️ [x] Creative Gas should be way cheaper then 💧 Creative Tank
-- ✏️ [x] Swap creative RF Power Cell and IC2 Power to Mek Cube
-- 🔷 [x] Bedrock Ore fix list (remove forestry ore from generation, add more osmium, remove normal osmium)
-- 🔷 [x] Decay generator as crafting method, terrestial artifact block -> litherite
-- 🔷 [x] Remove Excess Akashik Tome recipe
-- 🔷 [x] Laser Drill: `Prosperity` moved to moon, `Dimensional Shard` moved to end, `Iridium` & `Mana Infused` removed
-- 🔷 [x] Resistance modifiers cheaper
-- 🧩 [x] ExCompressum more compressed entityes
-- 𝓩𝒮 [x] Lower Tinker's fuel duration
-- 𝓩𝒮 [x] More Dragon Forge Recipes
-- 𝓩𝒮 [x] Remove Qurtz dust from AA in OreDict
-- 🔷 [x] Compressed Ender and glowstone recipes
-- 𝓩𝒮 [x] Infinity reagent instead dust in high oven
-- 𝓩𝒮 [x] Silicon plate unification (check if Grindstone, MekGrinder, Fluid Sieving output right quartz dust)
-- 𝓩𝒮 [x] Armor Foundry work with list of .prev armor
-- 🔷 [x] More uses to TE Clathrates, buff their default outputs, 16x cut at generation
-- 🔷 [x] Remake Storage boxes (relate to #1617)
-
 
 ## Planned
 
@@ -88,7 +12,7 @@
 #### Other:
 
 - 🔷 [x] Processed cheese material (molten cheese, molten cheese rivers in Ratlantis)
-- 🧩 [ ] Random Tweaks
+- 🧩 [x] Random Tweaks
 - 🧩 [ ] Remap New tconevo materials to tool levels
 - 🧩 [ ] Review melting temperatures for liquids (higher temperature for most of them)
 - 🧱 [ ] Magic Ore Processing . 📦 poop + Cluster => 📦hunk -> 📦 small piece -> 💧 washed -> ?
@@ -108,6 +32,8 @@
 - 🌿 [ ] Patchouli book texture
 - 🔨 [ ] Tweak TConEvo energy usage
 - 🔷 [ ] Rename Terrestial -> Terrestrial
+- 🔷 [ ] AdvRock crystal hard tool level
+- 🟢 [ ] Biome Tweaker (make planets ground higher, deep ocean biomes)
 
 ### Do after process.zs class rework:
 
@@ -216,7 +142,7 @@ CRAFTS OF INTEREST
 ---------------------
 - **Burst Seed**
 - **Crushing Block**
-Imbuing Station (Note: IItemstacks must be in singletons or it will not work)
+- **Imbuing Station** (Note: IItemstacks must be in singletons or it will not work)
 mods.rt.RandomThingsTweaker.addImbuingRecipe(IItemStack top, IItemStack leftside, IItemStack bottom, IItemStack center, IItemStack result);
 
 
@@ -268,6 +194,7 @@ mods.rt.RandomThingsTweaker.addImbuingRecipe(IItemStack top, IItemStack leftside
 - "_custom:109>" ,**Titanium Singularity**     - Increase Mining speed
 - "_ultimate>"   ,**The Ultimate Singularity** - ? All above
 
+/cofh clearblocks LD01 100 200 100 packed_ice ice water lava dirt stone snow snow_layer gravel
 
 ## Characters to use in crafts:
 

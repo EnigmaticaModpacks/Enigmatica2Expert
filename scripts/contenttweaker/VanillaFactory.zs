@@ -63,3 +63,16 @@ ta.blockResistance = 9 * 1.4;
 ta.blockSoundType = <soundtype:stone>;
 ta.register();
 
+# -------------------------------
+# Molten Cheese
+# -------------------------------
+var molten = MaterialSystem
+	.getMaterialBuilder()
+	.setName("Molten Cheese")
+	.setColor(0xFEE66F)
+	.build()
+	.registerPart("molten")
+	.getData();
+molten.addDataValue("temperature", "320");
+molten.addDataValue("density", "500000");
+molten.addDataValue("viscosity", "30000");

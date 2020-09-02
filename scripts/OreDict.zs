@@ -674,7 +674,7 @@ for item in pressurePlates {
 	<ore:hatPirate>.addItems([<quark:pirate_hat>, <rats:pirat_hat>]);
 
 # Some dusts
-<ore:dustQuartz>.remove(<actuallyadditions:item_dust:5>);
+<ore:dustQuartz>.remove([<actuallyadditions:item_dust:5>, <nuclearcraft:gem_dust:2>]);
 <ore:dustLapis>.remove(<actuallyadditions:item_dust:4>);
 <ore:dustDiamond>.remove(<actuallyadditions:item_dust:2>);
 <ore:dustGraphite>.remove(<bigreactors:dustgraphite>);

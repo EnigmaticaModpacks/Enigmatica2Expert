@@ -1,17 +1,35 @@
 {
 	"populate": {
 		
-		"more_marble_2": {
-			"distribution": "uniform",
+		"kelt6a_tree_trunk": {
+			"distribution": "surface",
 			"generator": {
-				"block": "ice",
-				"cluster-size": 200
+				"type": "spout",
+				"block": "advancedrocketry:alienwood",
+				"material": ["air", "tallgrass", "grass"],
+				"radius": {"min":0, "max": 8, "value":{"operation":"DIVIDE", "value-a":60, "value-b": {"operation":"SUBTRACT", "value-a":{"min":51,"max": 250,"value":{"world-data":"CURRENT_Y"}}, "value-b":50}}},
+				"height": {"min":20, "max": 70, "value":{"operation":"ADD", "value-a":{"variance":25}, "value-b": 45}}
 			},
-      "chunk-chance": 1,
-			"cluster-count": 10,
-			"min-height": 10,
-			"max-height": 200,
-			"dimension": {"restriction": "whitelist","value": [121]}
+      "chunk-chance": 8,
+			"cluster-count": {"min":1, "max": 3},
+			"biome": {"restriction": "whitelist","value": [{"type": "id","entry": ["advancedrocketry:alien forest"]}]}
+		},
+		
+		"kelt6a_tree_leaves": {
+			"distribution": "gaussian",
+			"generator": {
+				"type": "boulder",
+				"diameter": 1,
+				"size-variance":5,
+				"block": {"name":"advancedrocketry:alienleaves", "properties":{"check_decay":"false", "decayable": "false"}},
+				"material": "advancedrocketry:alienwood"
+			},
+			"cluster-count": 300,
+			"center-height": 110,
+			"spread": 30,
+			"min-height": 85,
+			"max-height": 120,
+			"biome": {"restriction": "whitelist","value": [{"type": "id","entry": ["advancedrocketry:alien forest"]}]}
 		}
 
 	}
