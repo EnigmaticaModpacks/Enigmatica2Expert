@@ -2,6 +2,7 @@
 	"populate": {
 		
 		"kelt6a_tree_trunk": {
+			"enabled": false,
 			"distribution": "surface",
 			"generator": {
 				"type": "spout",
@@ -16,6 +17,7 @@
 		},
 		
 		"kelt6a_tree_leaves": {
+			"enabled": false,
 			"distribution": "gaussian",
 			"generator": {
 				"type": "boulder",
@@ -30,7 +32,50 @@
 			"min-height": 85,
 			"max-height": 120,
 			"biome": {"restriction": "whitelist","value": [{"type": "id","entry": ["advancedrocketry:alien forest"]}]}
-		}
+		},
+		
+		"kelt6a_fruits": {
+			"distribution": "gaussian",
+			"generator": {
+				"type": "sparse-cluster",
+				"cluster-size":6,
+				"block": {"name":"mysticalagriculture:storage", "metadata":3},
+				"material": "advancedrocketry:alienleaves"
+			},
+			"cluster-count": 40,
+			"center-height": 120,
+			"spread": 30,
+			"biome": {"restriction": "whitelist","value": [{"type": "id","entry": ["advancedrocketry:alien forest"]}]}
+		},
+		
+		"kelt6a_poison_lakes": {
+			"distribution": "surface",
+			"generator": {
+				"type": "lake",
+				"block": "biomesoplenty:poison",
+				"material": ["lake","tallgrass", "grass"],
+				"use-material": false,
+				"solid-outline": true,
+				"outline-block": [
+					"grass"
+				]
+			},
+			"cluster-count": 1,
+			"chunk-chance": 2,
+			"follow-terrain": false,
+			"biome": {"restriction": "whitelist","value": [{"type": "id","entry": ["advancedrocketry:alien forest"]}]}
+		},
 
+		"kelt6a_glow_shroom": {
+			"distribution": "surface",
+			"generator": {
+				"type": "decoration",
+				"block": "quark:glowshroom",
+				"surface": "grass",
+				"cluster-size": 3
+			},
+			"cluster-count": 100,
+			"biome": {"restriction": "whitelist","value": [{"type": "id","entry": ["advancedrocketry:alien forest"]}]}
+		}
 	}
 }
