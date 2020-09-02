@@ -1,0 +1,57 @@
+{
+  "dependencies": "advancedrocketry",
+  "populate": {
+
+		"boulders2": {
+			"distribution": "uniform",
+			"generator": {
+				"type": "sequential",
+				"generators": [
+					 {"type": "plate","block": "advancedrocketry:hotturf","radius": 10,"height":54,"material": ["stone", "lava", "water", "clay"]}
+					,{"type": "plate","block": "air","radius": 7,
+						"height":{"min":10, "max": 60, "value":{"operation":"SUBTRACT", "value-a":{"world-data":"CURRENT_Y"}, "value-b": 2}},
+						"material": ["draconicevolution:draconium_ore","advancedrocketry:hotturf","end_stone","redstone_ore","libvulpes:ore0","exnihilocreatio:block_endstone_crushed","thermalfoundation:ore_fluid","actuallyadditions:block_misc","nuclearcraft:ore","thaumcraft:ore_cinnabar"]}
+				]
+			},
+      "chunk-chance": 30,
+			"cluster-count": {"min":2, "max": 4},
+			"min-height": 50,
+			"max-height": 51,
+			"dimension": {"restriction": "whitelist", "value": [119]}
+    },
+    
+		"crushed_endstone_gravel": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "exnihilocreatio:block_endstone_crushed",
+				"cluster-size": 40
+			},
+			"cluster-count": 12,
+			"min-height": 0,
+			"max-height": 70,
+			"dimension": {"restriction": "whitelist", "value": [119]}
+		},
+
+		"fall_ore_1": {
+			"distribution": "uniform",
+			"generator": {
+				"type": "consecutive",
+				"generators": [
+					{"block": "end_stone","cluster-size": 90,"material": "advancedrocketry:hotturf"}
+					,{"block": "redstone_ore","cluster-size": 50,"material": "advancedrocketry:hotturf"}
+					,{"block": {"name": "thermalfoundation:ore_fluid","metadata": 2},"cluster-size": 30,"material": "advancedrocketry:hotturf"}
+					,{"block": {"name": "actuallyadditions:block_misc","metadata": 3},"cluster-size": 15,"material": "advancedrocketry:hotturf"}
+					,{"block": {"name": "draconicevolution:draconium_ore","metadata": 2},"cluster-size": 60,"material": "advancedrocketry:hotturf"}
+					,{"block": [{"name": "nuclearcraft:ore","metadata": 3},{"name": "nuclearcraft:ore","metadata": 5},{"name": "nuclearcraft:ore","metadata": 6},{"name": "nuclearcraft:ore","metadata": 7}],"cluster-size": 40,"material": "advancedrocketry:hotturf"}
+					,{"block": "thaumcraft:ore_cinnabar","cluster-size": 10,"material": "advancedrocketry:hotturf"}
+				]
+			},
+			"cluster-count": 100,
+			"center-height": 10,
+			"spread": 65,
+			"min-height": 10,
+			"max-height": 75,
+			"dimension": {"restriction": "whitelist", "value": [119]}
+		}
+  }
+}

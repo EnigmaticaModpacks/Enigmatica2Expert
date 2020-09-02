@@ -1,0 +1,18 @@
+{
+	"populate": {
+		
+		"more_marble_2": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "ice",
+				"cluster-size": 200
+			},
+      "chunk-chance": 1,
+			"cluster-count": 10,
+			"min-height": 10,
+			"max-height": 200,
+			"dimension": {"restriction": "whitelist","value": [121]}
+		}
+
+	}
+}

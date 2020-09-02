@@ -192,8 +192,7 @@
 				"restriction": "whitelist",
 				"value": [
 					103,
-					115,
-					119
+					115
 				]
 			}
 		},
@@ -216,8 +215,7 @@
 				"restriction": "whitelist",
 				"value": [
 					103,
-					115,
-					119
+					115
 				]
 			}
 		},
@@ -240,8 +238,7 @@
 				"restriction": "whitelist",
 				"value": [
 					103,
-					115,
-					119
+					115
 				]
 			}
 		},

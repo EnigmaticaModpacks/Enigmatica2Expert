@@ -1,5 +1,4 @@
 {
-	"dependencies": "nuclearcraft",
 	"populate": 
 		{
 		"large_blue_vein": {
@@ -72,7 +71,7 @@
 			"biome": "biomesoplenty:crag", "dimension": {"restriction": "whitelist","value": [112]}
 		},
 
-		"lapis": {
+		"terra_nova_lapis": {
 			"distribution": "gaussian",
 			"generator": {
 				"block": "minecraft:lapis_ore",
@@ -84,7 +83,7 @@
 			"biome": "biomesoplenty:crag", "dimension": {"restriction": "whitelist","value": [112]}
 		},
 
-		"platinum": {
+		"terra_nova_platinum": {
 			"distribution": "uniform",
 			"generator": {
 				"block": {
@@ -99,7 +98,7 @@
 			"biome": "biomesoplenty:crag", "dimension": {"restriction": "whitelist","value": [112]}
 		},
 
-		"quartz": {
+		"terra_nova_quartz": {
 			"distribution": "uniform",
 			"generator": {
 				"block": "appliedenergistics2:quartz_ore",

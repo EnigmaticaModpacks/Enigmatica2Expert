@@ -32,7 +32,7 @@
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
-					-1,
+					-1,119,
 					1, 112
 				]
 			}
@@ -68,7 +68,7 @@
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
-					-1,
+					-1,119,
 					1, 112
 				]
 			}
@@ -104,7 +104,7 @@
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
-					-1,
+					-1,119,
 					1, 112
 				]
 			}
@@ -141,7 +141,7 @@
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
-					-1,
+					-1,119,
 					1, 112
 				]
 			}
@@ -182,7 +182,7 @@
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
-					-1,
+					-1,119,
 					1, 112
 				]
 			}

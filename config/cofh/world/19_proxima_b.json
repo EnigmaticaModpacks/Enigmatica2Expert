@@ -1,5 +1,4 @@
 {
-	"dependencies": "nuclearcraft",
 	"populate": {
 		"stalactite_0": {
 			"distribution": "cave",

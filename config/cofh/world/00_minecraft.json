@@ -34,7 +34,7 @@
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
-					-1,1, 111, 101,102,113,122]
+					-1,1, 111, 101,102,113,122,119]
 			}
 		},
 		"diorite": {
@@ -130,6 +130,7 @@
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
+					119,
 					112,
 					-1,
 					1
@@ -151,7 +152,7 @@
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
-					112,
+					112,119,
 					-1,
 					1
 				]
@@ -172,7 +173,7 @@
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
-					112,
+					112,119,
 					-1,
 					1
 				]
@@ -193,7 +194,7 @@
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
-					112,
+					112,119,
 					111,
 					-1,
 					1
@@ -215,7 +216,7 @@
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
-					112,
+					112,119,
 					-1,
 					1
 				]
@@ -236,7 +237,7 @@
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
-					112,
+					112,119,
 					-1,
 					1
 				]
@@ -275,7 +276,7 @@
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
-					112,
+					112,119,
 					-1,
 					1
 				]
@@ -315,7 +316,7 @@
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
-					112,
+					112,119,
 					-1,
 					1
 				]
@@ -355,7 +356,7 @@
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
-					112,
+					112,119,
 					-1,
 					1
 				]

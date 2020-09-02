@@ -13,14 +13,14 @@
         "outline-block": "rats:block_of_cheese",
         "use-material": true,
 				"material": [
-          "minecraft:grass",
-          "minecraft:stone",
-          "minecraft:sand",
-          "minecraft:sandstone",
-          "minecraf:dirt",
-          "minecraf:leaves",
-          "minecraf:log",
-          "minecraf:tallgrass"
+          "grass",
+          "stone",
+          "sand",
+          "sandstone",
+          "dirt",
+          "leaves",
+          "log",
+          "tallgrass"
         ]
       },
       "cluster-count": 3,
