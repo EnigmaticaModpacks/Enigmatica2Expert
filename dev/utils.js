@@ -51,6 +51,11 @@ var matchBetween = function(str, begin, end, regex) {
 module.exports.matchBetween = matchBetween;
 
 
+module.exports.transpose = function(a) {
+  return Object.keys(a[0]).map(function(c) {
+      return a.map(function(r) { return r[c]; });
+  });
+}
 // # ######################################################################
 // #
 // # Utils
