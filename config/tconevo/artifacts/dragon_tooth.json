@@ -1,0 +1,12 @@
+{
+  "weight": 100,
+  "type": "tconevo:tool",
+  "name": "Dragon's Tooth",
+  "lore": "Nano-scale whetting devices keep its blade razor-sharp.",
+  "tool": "longsword",
+  "materials": [
+    "wood",
+    "platinum",
+    "fluxed_electrum"
+  ]
+}

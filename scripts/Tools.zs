@@ -32,6 +32,11 @@ import mods.jei.JEI.removeAndHide as rh;
 	<botania:manasteelaxe>, 
 	<botania:manasteelsword>, 
 	<botania:manasteelshears>, 
+	<botania:elementiumpick>,
+	<botania:elementiumshovel>,
+	<botania:elementiumaxe>,
+	<botania:elementiumsword>,
+	<botania:elementiumshears>,
 
 	<exnihilocreatio:crook_wood>,
 	<exnihilocreatio:crook_stone>,

@@ -1,0 +1,23 @@
+{
+  "weight": 250,
+  "type": "tconevo:tool",
+  "name": "Myriad Slashes",
+  "lore": "Cuts down even the greatest of foes in a flurry of steel.",
+  "tool": "rapier",
+  "materials": [
+    "pladium",
+    "aethium",
+    "universal_metal"
+  ],
+  "free_mods": 5,
+  "mods": [
+    {
+      "id": "tconevo.primordial",
+      "level": 3
+    },
+    {
+      "id": "reinforced",
+      "level": 2
+    }
+  ]
+}

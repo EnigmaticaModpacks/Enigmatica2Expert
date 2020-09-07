@@ -1,0 +1,13 @@
+{
+  "weight": 750,
+  "type": "tconevo:tool",
+  "name": "Infinity Edge",
+  "lore": "An impossibly sharp blade that strikes with great precision.",
+  "tool": "cleaver",
+  "materials": [
+    "bronze",
+    "nickel",
+    "aluminium",
+    "platinum"
+  ]
+}

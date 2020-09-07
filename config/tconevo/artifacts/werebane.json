@@ -1,0 +1,16 @@
+{
+  "weight": 1000,
+  "type": "tconevo:tool",
+  "name": "Werebane",
+  "lore": "Wielded by a tragic prince that cleansed the night of evil.",
+  "tool": "rapier",
+  "materials": [
+    "livingwood",
+    "pladium",
+    "lumium"
+  ],
+  "free_mods": 1,
+  "mods": [
+    "diamond"
+  ]
+}

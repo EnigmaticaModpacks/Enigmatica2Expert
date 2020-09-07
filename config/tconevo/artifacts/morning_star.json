@@ -1,0 +1,18 @@
+{
+  "weight": 150,
+  "type": "tconevo:tool",
+  "name": "Morning Star",
+  "lore": "The morning star that riseth from the darkness.",
+  "tool": "shuriken",
+  "materials": [
+    "void_metal",
+    "signalum",
+    "constantan",
+    "thaumium"
+  ],
+  "free_mods": 2,
+  "mods": [
+    "diamond",
+    "emerald"
+  ]
+}

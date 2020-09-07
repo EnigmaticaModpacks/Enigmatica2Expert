@@ -3,6 +3,17 @@
 ## Finished
 
 -----------
+- 🧩 [x] Random Tweaks
+- ✏️ [x] Botania Runes uses
+- 🧩 [x] Remap New tconevo materials to tool levels
+- 🧩 [x] More blocks according to mining levels
+- 🧩 [x] Review melting temperatures for liquids (higher temperature for most of them)
+- ✏️ [x] Botania Saplings cycling
+- 🔴 [x] Backpack
+- 🔴 [x] Thermal Cultivation
+- 🔴 [x] Blockcraftery
+- 🔴 [x] Iron Chests
+- 🔴 [x] NoNightVisionFlashing
 
 
 ## Planned
@@ -12,9 +23,8 @@
 #### Other:
 
 - 🔷 [x] Processed cheese material (molten cheese, molten cheese rivers in Ratlantis)
-- 🧩 [x] Random Tweaks
-- 🧩 [ ] Remap New tconevo materials to tool levels
-- 🧩 [ ] Review melting temperatures for liquids (higher temperature for most of them)
+- ✏️ [x] Icecream oredict fix tofu
+- ✏️ [x] Botania Remove Elementium tools
 - 🧱 [ ] Magic Ore Processing . 📦 poop + Cluster => 📦hunk -> 📦 small piece -> 💧 washed -> ?
 - 🔷 [ ] Remake creatures drop items
 - 🔷 [ ] Jumps.zs should store jump amount
@@ -23,17 +33,18 @@
 - 💥 [ ] Give uses to singularities (Coal - burn time, etc)
 - 💥 [ ] New 🐝 for endgame
 - 💥 [ ] **Rats** Structures Generation
-- 🔴 [ ] Backpack
+- 🔴 [ ] EmberRoot
 - 🔷 [ ] Fix XML recipes missed inputs (crystalline ingor in electric arc for example)
 - 🔷 [ ] Check why Gas intake was modified
 - 🔷 [ ] Reload JER world data
 - 🟢 [x] Alfinivia (milking)
 - 🟢 [x] Better Hurt Timers (mobs do not deals damage)
-- 🌿 [ ] Patchouli book texture
+- 🟢 [x] Biome Tweaker (make planets ground higher, deep ocean biomes)
+- 🌿 [ ] Patchouli book texture and craft
 - 🔨 [ ] Tweak TConEvo energy usage
 - 🔷 [ ] Rename Terrestial -> Terrestrial
 - 🔷 [ ] AdvRock crystal hard tool level
-- 🟢 [ ] Biome Tweaker (make planets ground higher, deep ocean biomes)
+- ✏️ [ ] Harder Cyclic Storage Bag
 
 ### Do after process.zs class rework:
 
@@ -71,8 +82,29 @@
 
 -----------
 
-- 
-
+- [x] barrett          | As health decreases, there is an increasing chance of a critical hit.
+- [x] darktraveler     | Surrounding mobs get randomly afflicted with damage.
+- [x] divineshield     | While this tool is in your hand, you are granted fire resistance. Also, damage is reduced, but at a durability cost.
+- [x] dprk             | When attacking or defending, Supreme Leaders will spawn, exploding on opponents in the same manner as a creeper.
+- [x] ghastly          | If the holder is attacked while sneaking, the attacker is inflicted with Slowness.
+- [ ] hailhydra        | Random explosions plague your enemies. Also, when you are attacked, there is a chance to get Absorption.
+- [x] hearts           | The higher your health, the more damage you do.
+- [x] heavy_metal      | Increased knockback + Slowness on target.
+- [x] ignoble          | As one takes damage, one starts to harbor feelings of ignoble jealousy as the offender is killed. When this trait is enabled, those feelings are vented when attacking while sneaking.
+- [ ] illuminati       | While the tool is in your hand, nearby entities (that do not hold a tool with this trait) glow, and you become invisible.
+- [ ] jaded            | Mobs attacked with this tool have their ability to heal temporarily hindered.
+- [ ] morganlefay      | Bonus magic damage (ranging from 0.0 to 5.0; Gaussian distributed) is afflicted (it is absolute).
+- [x] mystical_fire    | Sets the target on fire, and damages the target with magic for a certain amount of time.
+- [ ] naphtha          | Arrows (and bolts) burn the target on impact.
+- [x] rudeawakening    | Damage pierces armor (mobs only).
+- [x] spades           | The lower your health, the more damage you do.
+- [x] starfishy        | Press the "set portal" key (default "N") to set a virtual portal on the block you are pointing at. If you are on the brink of death, you have %d enori crystals to spare, and the portal has enough space above, then the crystals are consumed, you are teleported to the virtual portal, and you are spared. (The tool must be in your hand.)
+- [ ] thundering       | Summon a thunderbolt on impact.
+- [x] trash            | Random stuff is slowly generated when the tool is selected, but the tool is damaged slowly in this way.
+- [x] unnamed          | Bonus damage accrued for each entity of the same type as the target close to it.
+- [x] vindictive       | Bonus damage to players, and you gain some health by attacking.
+- [x] blindbandit      | A mob called the "Blind Bandit" will sometimes be summoned for a limited time after you attack or are attacked. She will attack hostile mobs, and will also attack those who dare attack her (except you), piercing armor on mobs.
+- [x] botanical2       | 
 
 ## Items for crafting
 
@@ -198,4 +230,4 @@ mods.rt.RandomThingsTweaker.addImbuingRecipe(IItemStack top, IItemStack leftside
 
 ## Characters to use in crafts:
 
-!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžƎƒƬƮƵǍǎǏǐǑǒǓǔǕǖǗǘǙǚǛǜǞǟǠǡǢǣǦǧǨǩǰǴǵǸǹǺǻǼǽǾǿȀȁȄȅȆȈȉȌȍȐȑȔȕȘșȚțȞȟȢȤȦȧȨȩȪȫȬȭȮȯȰȱȲȳȷȽȾɆɚɶʮʯʹʺʼˆˇˉ˘˙˚˛˜˝ͰͱͲͳʹ͵Ͷͷͺͻͼͽ;Ϳ΄΅Ά·ΈΉΊΌΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώϏϐϑϒϓϔϕϖϗϘϙϚϛϜϝϞϟϠϡϤϰϱϲϳϴϵ϶ϷϸϹϺϻϼϽϾϿЀЁЂЃЄЅІЇЈЉЊЋЌЍЎЏАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяѐёђѓєѕіїјљњћќѝўџѠѡѢѣѤѥѦѧѨѩѪѫѬѭѮѯѰѱѲѳѴѵѶѷѸѹѿҊҋҌҍҎҏҐґҒғҔҕҖҗҘҙҚқҜҝҞҟҠҡҢңҤҥҦҧҨҩҪҫҬҭҮүҰұҲҳҴҵҶҷҸҹҺһҼҽҾҿӀӁӂӃӄӅӆӇӈӉӊӋӌӍӎӏӐӑӒӓӔӕӖӗӘәӚӛӜӝӞӟӠӡӢӣӤӥӦӧӨөӪӫӬӭӮӯӰӱӲӳӴӵӶӷӸӹӺӻӼӽӾӿԀԁԂԃԄԅԆԇԈԉԊԋԌԍԎԏԐԑԒԓԔԕԖԗԘԙԚԛԜԝԞԟԠԡԢԣԤԥԦԧԨԩԪԫԬԭԮԯש؆؇؉كڬڭڮ۩܋ܡܣܤݿދޖޛߐߚߜߡࢴगतदधनऩपबयषहग़य़॥५६ॸॺॻॿচটঢণবরহৎঢ়ৰৱ৻ਏਝਭਰ੧ੲઙઠઢ૩૪ଓ୦୫గశ౾กขคฅฉชฎฏดตนบปผฝภมลฦศสอฮ๏๐๑ຂຈຊຍຢຣລວສອຮ໓໔໕༆༞༟༭༶࿃࿇࿎࿏ခဂငစဉဋဌဍဎဓပဖဗမဝဠဥဦဨ၀၁၃၄၅၆၇၈၉၌၎ၐၑၒၓၔၕၚၜၝၥၦၵၶၷၿႁႎ႑႒႕႘႙ႲჍჱሀሂሄህለልሪሰሳስሶሸሻሾበባቦቨቫቮንኘኛኝከካክኮያጋጟ፦ᎴᎵᏄᏒᏙᏟᏰᏵᐅᐊᓶᓷᓸᓹᓺᓻᓽᓿᔀᔁᔂᔃᔄᔯᔰᔱᔲᔳᔴᔵᔶᔷᔸᔹᔺᔻᔼᔽᕼᖅᘼᘽᘾᘿᙷᙺᙻᚢᚤᚥᚺᚻᛖᛗᛞᛥᛪឲៗ᠃᠛ᠥᠦᡡᥒᥙᥛᥰᦅᦆᦇᦋᦌᦑᦙᦢᦥᦨᦩᦫᧂᧄᧇ᧐ᨂ᱐᱙ᱞᱠᱤᱥᱧᱩᲐᲕᲙᲛᲜᲞᲩᲫᲮᲰᲳᲴᳲᳵᴍᶃḂḃḈḉḊḋḐḑḔḕḖḗḘḚḜḝḞḟḠḡḢḣḦḧḨḩḮḯḰḱḶḸḺḼḾḿṀṁṄṅṌṍṎṏṐṑṒṓṔṕṖṗṘṙṠṡṤṥṦṧṪṫṬṮṰṸṹṺṻṼṽẀẁẂẃẄẅẆẇẊẋẌẍẎẏẐẑẒẔẗẘẙẞẤấẦầẪẫẮắẰằẴẵẸẺẼẽẾếỀềỂỄễỆỐốỒồỖỗỲỳỸỹἀἁἂἃἄἅἆἇἈἉἊἋἌἍἎἏἐἑἒἓἔἕἘἙἚἛἜἝἠἡἢἣἤἥἦἧἨἩἪἫἬἭἮἯἰἱἲἳἴἵἶἷἸἹἺἻἼἽἾἿὀὁὂὃὄὅὈὉὊὋὌὍὐὑὒὓὔὕὖὗὙὛὝὟὠὡὢὣὤὥὦὧὨὩὪὫὬὭὮὯὰάὲέὴήὶίὸόὺύὼώᾀᾁᾂᾃᾄᾅᾆᾇᾈᾉᾊᾋᾌᾍᾎᾏᾐᾑᾒᾓᾔᾕᾖᾗᾘᾙᾚᾛᾜᾝᾞᾟᾠᾡᾢᾣᾤᾥᾦᾧᾨᾩᾪᾫᾬᾭᾮᾯᾰᾱᾲᾳᾴᾶᾷᾸᾹᾺΆᾼ᾽ι᾿῀῁ῂῃῄῆῇῈΈῊΉῌ῍῎῏ῐῑῒΐῖῗῘῙῚΊ῝῞῟ῠῡῢΰῤῥῦῧῨῩῪΎῬ῭΅`ῲῳῴῶῷῸΌῺΏῼ´῾  ‒–—―‖‗‘’‚“”„†‡•…‰‹›⁊⁘⁰⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ⁿ₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎₠€₮₯₸₹₺₽ℂ℄ℍℓℕ№ℙℚℝ™ℤΩKÅ℮ℰ⅊⅓⅔⅕⅖⅗⅘⅙⅚⅛⅜⅝⅞⅟Ⅼ↊↋←↑→↓↔↕↖↗↘↙↩↴⇞⇟⇤⇥⇦⇧⇨⇩⇪⇫⇬⇭⇮⇯⇳∀∂∃∄∅∆∇∈∉∊∋∌∍∏∑−∕∙√∛∜∞∧∨∩∪∫∮∱∲∴∵≈≠≡≢≤≥⊂⊃⊄⊅⊆⊇⊈⊉⊊⊋⊌⊍⊎⊢⊣⊤⊥⊦⊧⊨⊩⊪⊫⊬⊭⊮⊯⋰⋱⋳⋵⋶⋸⋹⋻⋽⌀⌁⌂⌃⌄⌅⌆⌐⌘⌠⌡⌤⌥⌦⌧⌨⌫⌷⍘⍛⍣⍤⍪⍮⎇⎋⎛⎜⎝⎞⎟⎠⎡⎢⎣⎤⎥⎦⎧⎨⎩⎪⎫⎬⎭⎴⎵⏎⏏⏜⏝⏞⏟⏠⏯␀␁␂␃␄␅␆␇␈␉␊␋␌␍␎␏␐␑␒␓␔␕␖␗␘␙␚␛␜␝␞␟␠␡␢␣␤␥␦─━│┃┄┅┆┇┈┉┊┋┌┍┎┏┐┑┒┓└┕┖┗┘┙┚┛├┝┞┟┠┡┢┣┤┥┦┧┨┩┪┫┬┭┮┯┰┱┲┳┴┵┶┷┸┹┺┻┼┽┾┿╀╁╂╃╄╅╆╇╈╉╊╋╌╍╎╏═║╒╓╔╕╖╗╘╙╚╛╜╝╞╟╠╡╢╣╤╥╦╧╨╩╪╫╬╭╮╯╰╱╲╳╴╵╶╷╸╹╺╻╼╽╾╿▀▁▂▃▄▅▆▇█▉▊▋▌▍▎▏▐░▒▓▔▕▖▗▘▙▚▛▜▝▞▟■□▢▣▤▥▦▧▨▩▪▫▬▭▮▯▲▶►▼◀◄◆◇◉◊○◎●◐◑◒◓◕◖◗◘◙◚◛◜◝◞◟◠◡◢◣◤◥◧◨◩◪◫◯◰◱◲◳◴◵◶◷◽◾☐☑☒☠☦☧☨☰☱☲☳☴☵☶☷☹☺☻☼♀♂♠♣♥♦♪♫♰♱✓✝➡➧⟨⟩⟰⟱⥾⥿⦀⨞⩈⩉⫲⫳⫴⫼⬅⬆⬇⮬⮭⮮⮯ⰀⰱⰷⰻⱄⱋⱎⱠⱢⱫⱱⱿⲆⲈⲙⲤⲬⲯⲶⲺⳄⳈⳌⳎⳚⳢ⳥⳦⳨⳩⳺⳻ⴋⴡⴶⴹⴺⴽⴿⵆⵇⵋⵎⵖⵟⷛ⸔⸕⸪⸫「」ꓚꓛꓣꓤꓥꓦ꓾ꔹꔿꕪꘉꘫꙀꚉꚌꚐꜩꜹꜻꜽꝈꝒꝓꝙꞀꞆꞮꞱ꠲꠳꠴꠵ꡡꡦꡧꣲꣳꣴꣵꣶꣷꣽꧠ꧲꧳꧴꧵꧶꧸ꧽꬃꬅꬆꭌꭳꮉꮴꮵꯖꯜ꯫꯰꯲꯵꯸ﬀﬡﬣﬧשׁשׂשּׁשּׂשּﯓﯔﷻﻙﻚﻶﻸﻺﻼ｢｣𐊍𐊜𐊵𐋀𐌀𐌌𐌑𐌞𐌡𐌰𐌶𐌺𐌻𐍂𐎒𐎓𐐀𐐂𐐌𐐍𐐐𐐚𐐜𐐞𐐡𐑍𐑸𐒀𐒆𐒒𐒔𐒠𐒡𐒢𐒣𐒤𐒥𐒧𐒨𐒩𐒰𐒱𐒲𐒴𐒼𐒽𐒾𐓄𐓅𐓊𐓋𐓌𐓓𐓟𐓠𐠌𐠑𐠙𐠨𐠰𐠿𐡌𐡐𐡙𐤃𐤆𐤉𐤗𐤢𐤧𐤮𐤶𐦥𐦬𐦰𐨐𐨥𐨦𐨭𐨲𐩃𐩇𐩠𐩣𐩦𐩪𐩫𐩭𐩮𐩯𐩱𐩸𐭙𐭝𐭢𐭨𐭹𐭾𐰎𐰓𐰡𐰵𐰶𐰷𐱆𑀅𑀛𑀡𑀦𑀶𑁖𑁗𑁘𑁧𑁭𑁯𑃡𑃢𒈫𒌋𓀀𓀁𓀂𓀄𓀆𓀔𓀷𓁁𓁃𓁎𓁕𓁡𓃠𓄁𓄪𓅈𓅉𓅝𓅦𓆀𓆉𓆦𓆽𓉵𓉷𓊾𓋔𓋖𓋨𓋺𓋻𓌖𓍓𓎈𓎉𓎏𓏞𓏟𓐧
+!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžƎƒƬƮƵǍǎǏǐǑǒǓǔǕǖǗǘǙǚǛǜǞǟǠǡǢǣǦǧǨǩǰǴǵǸǹǺǻǼǽǾǿȀȁȄȅȆȈȉȌȍȐȑȔȕȘșȚțȞȟȢȤȦȧȨȩȪȫȬȭȮȯȰȱȲȳȷȽȾɆɚɶʮʯʹʺʼˆˇˉ˘˙˚˛˜˝ͰͱͲͳʹ͵Ͷͷ͸͹ͺͻͼͽ;Ϳ΀΁΂΃΄΅Ά·ΈΉΊ΋Ό΍ΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡ΢ΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώϏϐϑϒϓϔϕϖϗϘϙϚϛϜϝϞϟϠϡϤϰϱϲϳϴϵ϶ϷϸϹϺϻϼϽϾϿЀЁЂЃЄЅІЇЈЉЊЋЌЍЎЏАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяѐёђѓєѕіїјљњћќѝўџѠѡѢѣѤѥѦѧѨѩѪѫѬѭѮѯѰѱѲѳѴѵѶѷѸѹѿҊҋҌҍҎҏҐґҒғҔҕҖҗҘҙҚқҜҝҞҟҠҡҢңҤҥҦҧҨҩҪҫҬҭҮүҰұҲҳҴҵҶҷҸҹҺһҼҽҾҿӀӁӂӃӄӅӆӇӈӉӊӋӌӍӎӏӐӑӒӓӔӕӖӗӘәӚӛӜӝӞӟӠӡӢӣӤӥӦӧӨөӪӫӬӭӮӯӰӱӲӳӴӵӶӷӸӹӺӻӼӽӾӿԀԁԂԃԄԅԆԇԈԉԊԋԌԍԎԏԐԑԒԓԔԕԖԗԘԙԚԛԜԝԞԟԠԡԢԣԤԥԦԧԨԩԪԫԬԭԮԯḂḃḈḉḊḋḐḑḔḕḖḗḘḚḜḝḞḟḠḡḢḣḦḧḨḩḮḯḰḱḶḸḺḼḾḿṀṁṄṅṌṍṎṏṐṑṒṓṔṕṖṗṘṙṠṡṤṥṦṧṪṫṬṮṰṸṹṺṻṼṽẀẁẂẃẄẅẆẇẊẋẌẍẎẏẐẑẒẔẗẘẙẞẤấẦầẪẫẮắẰằẴẵẸẺẼẽẾếỀềỂỄễỆỐốỒồỖỗỲỳỸỹἀἁἂἃἄἅἆἇἈἉἊἋἌἍἎἏἐἑἒἓἔἕ἖἗ἘἙἚἛἜἝ἞἟ἠἡἢἣἤἥἦἧἨἩἪἫἬἭἮἯἰἱἲἳἴἵἶἷἸἹἺἻἼἽἾἿὀὁὂὃὄὅ὆὇ὈὉὊὋὌὍ὎὏ὐὑὒὓὔὕὖὗ὘Ὑ὚Ὓ὜Ὕ὞ὟὠὡὢὣὤὥὦὧὨὩὪὫὬὭὮὯὰάὲέὴήὶίὸόὺύὼώ὾὿ᾀᾁᾂᾃᾄᾅᾆᾇᾈᾉᾊᾋᾌᾍᾎᾏᾐᾑᾒᾓᾔᾕᾖᾗᾘᾙᾚᾛᾜᾝᾞᾟᾠᾡᾢᾣᾤᾥᾦᾧᾨᾩᾪᾫᾬᾭᾮᾯᾰᾱᾲᾳᾴ᾵ᾶᾷᾸᾹᾺΆᾼ᾽ι᾿῀῁ῂῃῄ῅ῆῇῈΈῊΉῌ῍῎῏ῐῑῒΐ῔῕ῖῗῘῙῚΊ῜῝῞῟ῠῡῢΰῤῥῦῧῨῩῪΎῬ῭΅`῰῱ῲῳῴ῵ῶῷῸΌῺΏῼ´῾῿  ‒–—―‖‗‘’‚“”„†‡•…‰‹›⁰⁲⁳⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ⁿ₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎₏₝₞₟₠€₮₯₸₹₺₽⃀⃁⃂⃃⃄⃅⃆⃇⃈⃉⃊⃋⃌⃍⃎⃏⃱⃲⃳⃴⃵⃶⃷⃸⃹⃺⃻⃼⃽⃾⃿ℓ№ℙ™ΩKÅ℮⅓⅔⅕⅖⅗⅘⅙⅚⅛⅜⅝⅞↌↍↎↏←↑→↓↔↕∂∆∊∍∏∑−∕∙√∞∩∫≈≠≡≢≤≥⌀⌂⌃⌄⌅⌆⌐⌠⌡⏻⏼⏽⏾⏿␧␨␩␪␫␬␭␮␯␰␱␲␳␴␵␶␷␸␹␺␻␼␽␾␿⑋⑌⑍⑎⑏⑐⑑⑒⑓⑔⑕⑖⑗⑘⑙⑚⑛⑜⑝⑞⑟─━│┃┄┅┆┇┈┉┊┋┌┍┎┏┐┑┒┓└┕┖┗┘┙┚┛├┝┞┟┠┡┢┣┤┥┦┧┨┩┪┫┬┭┮┯┰┱┲┳┴┵┶┷┸┹┺┻┼┽┾┿╀╁╂╃╄╅╆╇╈╉╊╋╌╍╎╏═║╒╓╔╕╖╗╘╙╚╛╜╝╞╟╠╡╢╣╤╥╦╧╨╩╪╫╬╭╮╯╰╱╲╳╴╵╶╷╸╹╺╻╼╽╾╿▀▄█▌▐░▒▓■□▪▫▬▲►▼◄◊○●◘◙☺☻☼♀♂♠♣♥♦♪♫

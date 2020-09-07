@@ -12,6 +12,7 @@
     "renderingThreadCount": 2,
     "highlightStructureBox": true,
     "previewLines": false,
+    "previewLineThickness": 2,
     "enableRandomDisplayTick": false,
     "uploadToVBODirectly": true
   }

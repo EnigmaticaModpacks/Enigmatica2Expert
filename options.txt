@@ -100,8 +100,8 @@ key_quark.keybind.chestDropoff:0
 key_quark.keybind.chestMerge:0
 key_quark.keybind.chestRestock:0
 key_quark.keybind.chestExtract:0
-key_quark.keybind.toggleAutojump:0
 key_quark.keybind.lockBuilding:33:SHIFT
+key_quark.keybind.toggleAutojump:0
 key_quark.emote.no:0
 key_quark.emote.yes:0
 key_quark.emote.wave:0
@@ -166,6 +166,11 @@ key_schematica.key.renderToggle:0
 key_schematica.key.printerToggle:0
 key_schematica.key.moveHere:0
 key_schematica.key.pickBlock:0
+key_Camera left:203
+key_Camera right:205
+key_Camera closer:200
+key_Camera farther:208
+key_Swap shoulder:24
 key_key.toastcontrol.clear:0
 key_key.open_wct.desc:58
 key_key.cycle_magnet_mode.desc:0

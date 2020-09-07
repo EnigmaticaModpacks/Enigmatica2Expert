@@ -1,0 +1,13 @@
+{
+  "weight": 750,
+  "type": "tconevo:tool",
+  "name": "Crystal Sceptre",
+  "lore": "Infused with the chilling power of an ice magus.",
+  "tool": "tconevo.sceptre",
+  "materials": [
+    "constantan",
+    "platinum",
+    "certus_quartz",
+    "lumium"
+  ]
+}

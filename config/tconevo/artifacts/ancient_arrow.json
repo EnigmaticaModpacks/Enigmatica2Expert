@@ -1,0 +1,12 @@
+{
+  "weight": 75,
+  "type": "tconevo:tool",
+  "name": "Ancient Arrow",
+  "lore": "An arrow that has been fitted with powerful ancient technology.",
+  "tool": "arrow",
+  "materials": [
+    "polyethylene",
+    "gelid_enderium",
+    "feather"
+  ]
+}

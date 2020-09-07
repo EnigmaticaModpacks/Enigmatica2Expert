@@ -1,0 +1,26 @@
+{
+  "weight": 500,
+  "type": "tconevo:tool",
+  "name": "Ms. Erudita",
+  "lore": [
+    "Easy. Just in case someone's jealous of my research.",
+    "- Special thanks to ChromaPIE -"
+  ],
+  "tool": "rapier",
+  "materials": [
+    "refined_obsidian",
+    "fluix_steel",
+    "polyethylene"
+  ],
+  "free_mods": 2,
+  "mods": [
+    {
+      "id": "sharpness",
+      "level": 72
+    },
+    "tconevo.fluxed"
+  ],
+  "data_tag": {
+    "FluxedEnergyMax": 20000
+  }
+}
