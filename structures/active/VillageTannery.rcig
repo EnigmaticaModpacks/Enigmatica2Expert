@@ -41,26 +41,6 @@
         "damage": 0,
         "count": 1
       }
-    },
-    {
-      "weight": 1.0,
-      "min": 1,
-      "max": 6,
-      "item": {
-        "id": "backpack:tanned_leather",
-        "damage": 0,
-        "count": 1
-      }
-    },
-    {
-      "weight": 1.0,
-      "min": 1,
-      "max": 6,
-      "item": {
-        "id": "backpack:bound_leather",
-        "damage": 0,
-        "count": 1
-      }
     }
   ],
   "dependencyExpression": ""

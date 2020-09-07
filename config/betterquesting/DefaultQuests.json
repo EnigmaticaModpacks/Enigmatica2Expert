@@ -2880,15 +2880,8 @@
             "ForgeCaps:10": {
               "astralsorcery:cap_item_amulet_holder:10": {}
             },
-            "id:8": "ironbackpacks:backpack",
+            "id:8": "thermalexpansion:satchel",
             "Count:3": 1,
-            "tag:10": {
-              "packInfo:10": {
-                "upgrade:9": {},
-                "type:8": "ironbackpacks:basic",
-                "spec:8": "NONE"
-              }
-            },
             "Damage:2": 0,
             "OreDict:8": ""
           },
@@ -2900,7 +2893,7 @@
           "ismain:1": 1,
           "repeat_relative:1": 1,
           "name:8": "Welcome",
-          "desc:8": "Welcome to Enigmatica 2: Expert - Extended! This modpack is designed to challenge the player through various means, especially harder recipes. I advice that you automate crafting of as much as possible, as early as possible. Things are going to get complicated. \n\nCheck the checkbox to get your starterkit.§d§d§0 \n\nI suggest you make a Backpack out of the Tanned Leather \u0026 Wooden Frame.\n\nGood luck!§0"
+          "desc:8": "Welcome to Enigmatica 2: Expert - Extended! This modpack is designed to challenge the player through various means, especially harder recipes. I advice that you automate crafting of as much as possible, as early as possible. Things are going to get complicated. \n\nCheck the checkbox to get your starterkit.§d§d§0"
         }
       },
       "tasks:9": {
@@ -2911,15 +2904,126 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
               "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
+                "astralsorcery:cap_item_amulet_holder:10": {
+                  "AS_Amulet_HolderLeast:4": -8469918875462925012,
+                  "AS_Amulet_HolderMost:4": -5260415147165141885
+                }
               },
-              "id:8": "minecraft:leather_helmet",
+              "id:8": "thermalexpansion:satchel",
               "Count:3": 1,
+              "tag:10": {
+                "display:10": {
+                  "Name:8": "Travel Kit"
+                },
+                "Color1:3": 8349260,
+                "Inventory:10": {
+                  "Slot2:10": {
+                    "id:8": "actuallyadditions:item_food",
+                    "Count:1": 16,
+                    "Damage:2": 7
+                  },
+                  "Slot3:10": {
+                    "id:8": "harvestcraft:peanutitem",
+                    "Count:1": 16,
+                    "Damage:2": 0
+                  },
+                  "Slot4:10": {
+                    "id:8": "rustic:cloudsbluff",
+                    "Count:1": 16,
+                    "Damage:2": 0
+                  },
+                  "Slot5:10": {
+                    "id:8": "minecraft:splash_potion",
+                    "Count:1": 1,
+                    "tag:10": {
+                      "Potion:8": "minecraft:long_swiftness"
+                    },
+                    "Damage:2": 0
+                  },
+                  "Slot0:10": {
+                    "id:8": "harvestcraft:plainyogurtitem",
+                    "Count:1": 16,
+                    "Damage:2": 0
+                  },
+                  "Slot1:10": {
+                    "id:8": "biomesoplenty:berries",
+                    "Count:1": 16,
+                    "Damage:2": 0
+                  },
+                  "Slot6:10": {
+                    "id:8": "minecraft:splash_potion",
+                    "Count:1": 1,
+                    "tag:10": {
+                      "Potion:8": "minecraft:long_swiftness"
+                    },
+                    "Damage:2": 0
+                  },
+                  "Slot7:10": {
+                    "id:8": "minecraft:splash_potion",
+                    "Count:1": 1,
+                    "tag:10": {
+                      "Potion:8": "minecraft:long_swiftness"
+                    },
+                    "Damage:2": 0
+                  },
+                  "Slot8:10": {
+                    "ForgeCaps:10": {
+                      "Parent:10": {
+                        "Size:3": 4,
+                        "Items:9": {
+                          "0:10": {
+                            "Slot:3": 0,
+                            "ForgeCaps:10": {
+                              "astralsorcery:cap_item_amulet_holder:10": {}
+                            },
+                            "id:8": "immersivepetroleum:upgrades",
+                            "Count:1": 1,
+                            "Damage:2": 4
+                          },
+                          "1:10": {
+                            "Slot:3": 1,
+                            "ForgeCaps:10": {
+                              "astralsorcery:cap_item_amulet_holder:10": {
+                                "AS_Amulet_HolderLeast:4": -8469918875462925012,
+                                "AS_Amulet_HolderMost:4": -5260415147165141885
+                              }
+                            },
+                            "id:8": "immersivepetroleum:upgrades",
+                            "Count:1": 1,
+                            "Damage:2": 3
+                          },
+                          "2:10": {
+                            "Slot:3": 2,
+                            "ForgeCaps:10": {
+                              "astralsorcery:cap_item_amulet_holder:10": {
+                                "AS_Amulet_HolderLeast:4": -8469918875462925012,
+                                "AS_Amulet_HolderMost:4": -5260415147165141885
+                              }
+                            },
+                            "id:8": "immersivepetroleum:upgrades",
+                            "Count:1": 1,
+                            "Damage:2": 1
+                          }
+                        }
+                      },
+                      "astralsorcery:cap_item_amulet_holder:10": {}
+                    },
+                    "id:8": "immersivepetroleum:speedboat",
+                    "Count:1": 1,
+                    "tag:10": {
+                      "upgrades:10": {}
+                    },
+                    "Damage:2": 0
+                  }
+                },
+                "Color0:3": 15905331,
+                "Accessible:1": 1
+              },
               "Damage:2": 0,
               "OreDict:8": ""
             },
@@ -2927,8 +3031,66 @@
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
-              "id:8": "minecraft:leather_chestplate",
+              "id:8": "thermalexpansion:satchel",
               "Count:3": 1,
+              "tag:10": {
+                "display:10": {
+                  "Name:8": "Builder Kit"
+                },
+                "Color1:3": 10072818,
+                "Inventory:10": {
+                  "Slot2:10": {
+                    "id:8": "environmentalmaterials:alabaster",
+                    "Count:1": 64,
+                    "Damage:2": 8
+                  },
+                  "Slot3:10": {
+                    "id:8": "environmentalmaterials:alabaster",
+                    "Count:1": 64,
+                    "Damage:2": 8
+                  },
+                  "Slot4:10": {
+                    "id:8": "environmentalmaterials:alabaster",
+                    "Count:1": 64,
+                    "Damage:2": 8
+                  },
+                  "Slot5:10": {
+                    "id:8": "environmentalmaterials:alabaster",
+                    "Count:1": 64,
+                    "Damage:2": 8
+                  },
+                  "Slot0:10": {
+                    "ForgeCaps:10": {
+                      "astralsorcery:cap_item_amulet_holder:10": {}
+                    },
+                    "id:8": "chisel:chisel_iron",
+                    "Count:1": 1,
+                    "Damage:2": 0
+                  },
+                  "Slot1:10": {
+                    "id:8": "mysticalagriculture:dye_essence",
+                    "Count:1": 64,
+                    "Damage:2": 0
+                  },
+                  "Slot6:10": {
+                    "id:8": "environmentalmaterials:alabaster",
+                    "Count:1": 64,
+                    "Damage:2": 8
+                  },
+                  "Slot7:10": {
+                    "id:8": "environmentalmaterials:alabaster",
+                    "Count:1": 64,
+                    "Damage:2": 8
+                  },
+                  "Slot8:10": {
+                    "id:8": "environmentalmaterials:alabaster",
+                    "Count:1": 64,
+                    "Damage:2": 8
+                  }
+                },
+                "Color0:3": 16777215,
+                "Accessible:1": 1
+              },
               "Damage:2": 0,
               "OreDict:8": ""
             },
@@ -2936,32 +3098,169 @@
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
-              "id:8": "minecraft:leather_leggings",
+              "id:8": "thermalexpansion:satchel",
               "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "3:10": {
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
+              "tag:10": {
+                "display:10": {
+                  "Name:8": "Battle Kit"
+                },
+                "Color1:3": 1644825,
+                "Color0:3": 13388876,
+                "Inventory:10": {
+                  "Slot2:10": {
+                    "ForgeCaps:10": {
+                      "astralsorcery:cap_item_amulet_holder:10": {}
+                    },
+                    "id:8": "cyclicmagic:slingshot_weapon",
+                    "Count:1": 1,
+                    "tag:10": {},
+                    "Damage:2": 0
+                  },
+                  "Slot3:10": {
+                    "id:8": "cyclicmagic:stone_pebble",
+                    "Count:1": 64,
+                    "Damage:2": 0
+                  },
+                  "Slot4:10": {
+                    "id:8": "cyclicmagic:stone_pebble",
+                    "Count:1": 64,
+                    "Damage:2": 0
+                  },
+                  "Slot5:10": {
+                    "id:8": "rustic:fluid_bottle",
+                    "Count:1": 2,
+                    "tag:10": {
+                      "Fluid:10": {
+                        "FluidName:8": "cider",
+                        "Amount:3": 1000,
+                        "Tag:10": {
+                          "Quality:5": 0.75
+                        }
+                      }
+                    },
+                    "Damage:2": 0
+                  },
+                  "Slot0:10": {
+                    "ForgeCaps:10": {
+                      "plustic::10": {
+                        "Size:3": 1,
+                        "Items:9": {}
+                      },
+                      "astralsorcery:cap_item_amulet_holder:10": {},
+                      "plustic:fruitsalad_cap:10": {
+                        "Size:3": 5,
+                        "Items:9": {}
+                      },
+                      "plustic:musicofthespheres_cap:10": {
+                        "Size:3": 1,
+                        "Items:9": {}
+                      }
+                    },
+                    "id:8": "tconstruct:broadsword",
+                    "Count:1": 1,
+                    "tag:10": {
+                      "StatsOriginal:10": {
+                        "AttackSpeedMultiplier:5": 1.0,
+                        "MiningSpeed:5": 1.5,
+                        "FreeModifiers:3": 3,
+                        "Durability:3": 61,
+                        "HarvestLevel:3": 0,
+                        "Attack:5": 2.5
+                      },
+                      "Stats:10": {
+                        "AttackSpeedMultiplier:5": 1.0,
+                        "MiningSpeed:5": 1.5,
+                        "FreeModifiers:3": 2,
+                        "Durability:3": 61,
+                        "HarvestLevel:3": 0,
+                        "Attack:5": 2.5
+                      },
+                      "Special:10": {
+                        "Categories:9": {
+                          "0:8": "weapon",
+                          "1:8": "tool"
+                        }
+                      },
+                      "TinkerData:10": {
+                        "Materials:9": {
+                          "0:8": "wood",
+                          "1:8": "wood",
+                          "2:8": "wood"
+                        },
+                        "Modifiers:9": {
+                          "0:8": "toolleveling"
+                        }
+                      },
+                      "Modifiers:9": {
+                        "0:10": {
+                          "identifier:8": "ecological",
+                          "color:3": -7444965,
+                          "level:3": 1
+                        },
+                        "1:10": {
+                          "identifier:8": "toolleveling",
+                          "color:3": 16777215,
+                          "level:3": 1
+                        }
+                      },
+                      "Traits:9": {
+                        "0:8": "ecological",
+                        "1:8": "toolleveling"
+                      }
+                    },
+                    "Damage:2": 0
+                  },
+                  "Slot1:10": {
+                    "ForgeCaps:10": {
+                      "astralsorcery:cap_item_amulet_holder:10": {}
+                    },
+                    "id:8": "spartanshields:shield_basic_wood",
+                    "Count:1": 1,
+                    "Damage:2": 0
+                  },
+                  "Slot6:10": {
+                    "id:8": "rustic:elixir",
+                    "Count:1": 2,
+                    "tag:10": {
+                      "ench:9": {
+                        "0:10": {
+                          "lvl:2": 1,
+                          "id:2": 36
+                        }
+                      },
+                      "enchantmentColor:3": 11743532,
+                      "display:10": {
+                        "Name:8": "Longest Elixir of Regeneration"
+                      },
+                      "ElixirEffects:9": {
+                        "0:10": {
+                          "Effect:8": "minecraft:regeneration",
+                          "Duration:3": 18000,
+                          "Amplifier:3": 0
+                        }
+                      }
+                    },
+                    "Damage:2": 0
+                  },
+                  "Slot7:10": {
+                    "id:8": "randomthings:imbue",
+                    "Count:1": 2,
+                    "Damage:2": 2
+                  },
+                  "Slot8:10": {
+                    "ForgeCaps:10": {
+                      "astralsorcery:cap_item_amulet_holder:10": {}
+                    },
+                    "id:8": "botania:brewflask",
+                    "Count:1": 1,
+                    "tag:10": {
+                      "brewKey:8": "bloodthirst"
+                    },
+                    "Damage:2": 0
+                  }
+                },
+                "Accessible:1": 1
               },
-              "id:8": "minecraft:leather_boots",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "4:10": {
-              "id:8": "backpack:tanned_leather",
-              "Count:3": 8,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "5:10": {
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
-              "id:8": "backpack:backpack_frame",
-              "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -9881,7 +10180,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "High Oven",
-          "desc:8": "High oven doubles ore output"
+          "desc:8": "High oven do 2.5x ore output and can alloy some metals"
         }
       },
       "tasks:9": {
@@ -45745,7 +46044,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Construct\u0027s Armory",
-          "desc:8": "Core mod for armor, made similar to Tinker\u0027s tools.\nArmor have 1 modifier at start.\n\nThis task opens §6Armor§r chapter"
+          "desc:8": "Core mod for armor, made similar to Tinker\u0027s tools.\nArmor have 1 modifier at start."
         }
       },
       "tasks:9": {
@@ -63980,15 +64279,8 @@
             "ForgeCaps:10": {
               "astralsorcery:cap_item_amulet_holder:10": {}
             },
-            "id:8": "ironbackpacks:backpack",
+            "id:8": "thermalexpansion:satchel",
             "Count:3": 1,
-            "tag:10": {
-              "packInfo:10": {
-                "upgrade:9": {},
-                "type:8": "ironbackpacks:basic",
-                "spec:8": "NONE"
-              }
-            },
             "Damage:2": 0,
             "OreDict:8": ""
           },

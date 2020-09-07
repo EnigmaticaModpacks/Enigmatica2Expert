@@ -144,9 +144,6 @@ for item in thaumcraftHintItems {
 	addDescription(<bloodmagic:item_demon_crystal:3>, "Obtained through the Resonance of the Faceted Crystal ritual.");
 	addDescription(<bloodmagic:item_demon_crystal:4>, "Obtained through the Resonance of the Faceted Crystal ritual.");
 
-# Backpacks
-	addDescription(<backpack:backpack:*>, ["To equip the Backpack, rebind the key in Esc > Options > Controls.", "You access the Backpack slot with Shift + the key you just selected.", "Once the Backpack is placed in the backpack slot, it can be accessed with that key."]);
-	
 # Solidified Experience
 	addDescription(<actuallyadditions:item_solidified_experience>, "This item does not grant Experience, its only use is to make Essence of Knowledge");
 	

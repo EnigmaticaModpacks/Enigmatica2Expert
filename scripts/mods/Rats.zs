@@ -206,7 +206,7 @@ mods.rats.recipes.addArcheologistRatRecipe(<minecraft:skull:3>, <iceandfire:gorg
 mods.rats.recipes.addArcheologistRatRecipe(<minecraft:ghast_tear>, <iceandfire:siren_tear>);
 mods.rats.recipes.addArcheologistRatRecipe(<iceandfire:dragonbone>, <iceandfire:troll_tusk>);
 mods.rats.recipes.addArcheologistRatRecipe(<twilightforest:raven_feather>, <iceandfire:stymphalian_bird_feather>);
-mods.rats.recipes.addArcheologistRatRecipe(<backpack:tanned_leather>, <iceandfire:troll_leather_forest>);
+mods.rats.recipes.addArcheologistRatRecipe(<rats:rat_pelt>, <iceandfire:troll_leather_forest>);
 mods.rats.recipes.addArcheologistRatRecipe(<harvestcraft:hardenedleatheritem>, <iceandfire:troll_leather_frost>);
 
 
