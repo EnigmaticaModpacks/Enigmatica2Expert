@@ -196,26 +196,55 @@ remakeEx(<mctsmelteryio:upgrade:6>, [
 	
 # *======= Fuels =======*
 
+/* Patchouli_js({
+	entry: "Smeltery Fuels",
+	item: "tconstruct:smeltery_controller",
+	_text: `
+		$(l)Smeltery/$ melting temperatures was tweaked. Some metals $(l)require/$ better fuels than $(#d31)lava/$.
+		All fuels consume $(l)50/$mb.
+		$(l)Temperature/$ of fuel affect melting speed.
+		$(l)Time/$ is number of ticks fuel will burn.`});
+
+Patchouli_js(
+  paged({
+    entry: "Smeltery Fuels",
+    item: "tconstruct:smeltery_controller",
+    type: "item_list"
+  }, 7, 
+  from_crafttweaker_log(/Register Smeltery fuel. Temp: (?<temp>\d+), Burn time: (?<time>\d+), Name: (?<name>.*)/gm)
+  .map(o=>o.groups)
+  .sort((a,b)=>b.temp*b.time - a.temp*a.time)
+  .map(o=>[wrap_bucket(o.name), `${o.temp}°К, ${o.time} ticks`])
+))*/
+
 for pos, names in utils.graph([
 # ↑ Duration
 	"                                                          l           o        p",
-	"                                                k                               ",
+	"                      f  g                      k                               ",
 	"                                     j  m  n                                    ",
-	"                                 i                                              ",
-	"                   e  f  g   h                                                  ",
-	"*      a   c    d                                                               "],
-# ┣━━━━━━━━━┷━━━━━━━━━┻━━━━━━━━━┷━━━━━━━━━╋╋━━━━━━━━━┷━━━━━━━━━┻━━━━━━━━━┷━━━━━━━━━┫
+	"       a                                                                        ",
+	"                   e         h   i                                              ",
+	"    q    b c    d                                                               ",
+	"                                                                                ",
+	"*                                                                               ",
+	"1 2      3            4                     5                         6         ",
+# ┣━━━━─━━━━┷━━━━─━━━━┻━━━━─━━━━┷━━━━─━━━━╋╋━━━━─━━━━┷━━━━─━━━━┻━━━━─━━━━┷━━━━─━━━━┫
 # |1000    2750     4500       6250      8000       9750     11500     13250  15000| Temp --->
-{
+],{
+	x: {min: 1000, max: 15000, step: 100},
+	y: {min:    0, max:  1200, step: 100}
+},{
+	# Fuels
 	"*": ["steam"],
+	"q": ["canolaoil", "creosote"],
 	"a": ["ic2pahoehoe_lava"],
-	"b": ["biodiesel"],
-	"c": ["diesel", "ic2biogas"],
+	"b": ["biodiesel", "biofuel"],
+	"c": ["diesel", "ic2biogas", "refinedcanolaoil"],
 	"d": ["gasoline", "crystaloil"],
-	"e": ["boric_acid"],
+	"e": ["boric_acid", "napalm", "refined_biofuel"],
 	"f": ["hydrofluoric_acid"],
 	"g": ["sulfuricacid"],
-	"h": ["xu_demonic_metal", "rocket_fuel"],
+	"h": ["bio.ethanol", "rocket_fuel"],
 	"i": ["refined_fuel"],
 	"j": ["pyrotheum"],
 	"m": ["rocketfuel"],
@@ -224,16 +253,26 @@ for pos, names in utils.graph([
 	"n": ["empoweredoil"],
 	"o": ["plasma"],
 	"p": ["infinity_metal"],
+
+	# Non-fuel Metals
+	"1": [],
+	"2": [],
+	"3": ["osmium", "obsidian", "vibrant_alloy", "pulsating_iron", "end_steel"],
+	"4": ["xu_demonic_metal", "mirion", "signalum", "lumium", "crystalline_alloy", "melodic_alloy", "crystalline_pink_slime"],
+	"5": ["xu_enchanted_metal", "xu_evil_metal"],
+	"6": ["stellar_alloy", "osgloglas", "enderium"],
 }) {
 	for name in names {
-		var temp = (pos.x * (150 - 10) + 10) as int * 100;
-		var time = (pos.y * ( 12 -  4) +  4) as int * 100;
+		var temp = pos.x as int;
+		var time = pos.y as int;
 		var liquid = game.getLiquid(name);
-
-		utils.log("Register Smeltery fuel. Temp: "~temp~", Burn time: "~time~", Name: "~name);
-
+		
 		liquid.definition.temperature = temp;
-		mods.tconstruct.Fuel.registerFuel(liquid * 50, time);
+
+		if (time != 0) {
+			utils.log("Register Smeltery fuel. Temp: "~temp~", Burn time: "~time~", Name: "~name);
+			mods.tconstruct.Fuel.registerFuel(liquid * 50, time);
+		}
 	}
 }
 

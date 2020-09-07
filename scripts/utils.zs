@@ -46,6 +46,21 @@ zenClass Utils {
     recipes.addShapeless(a.itemArray[0] * 9, [b]);
   }
 
+  function ingredientFromArrayByRegex(regex as string) as IIngredient {
+    var items = itemUtils.getItemsByRegexRegistryName(regex);
+    if (!isNull(items) && items.length > 0) {
+      if (items.length == 1) return items[0];
+
+      var result = items[0] as IIngredient;
+      for i in 1 to items.length {
+        result = result | items[i];
+      }
+      return result;
+    }
+
+    return null;
+  }
+
 
   # ########################
   # Conditional Loging
@@ -76,27 +91,36 @@ zenClass Utils {
   # ########################
   # Graph
   # ########################
-  function graph(map as string[], keys as string[][string]) as string[][double[string]] {
+  function graph(map as string[], keys as string[][string]) as string[][double[string]] { return graph(map, null, keys); }
+  function graph(map as string[], options as IData, keys as string[][string]) as string[][double[string]] {
     if (isNull(map) || map.length <= 0) {
       logger.logWarning("utils.graph() first argument should be non-empty string[].");
       return {};
     }
 
     # Determine max dimensions
-    var maxY = map.length;
-    var maxX = 0;
+    var height = map.length;
+    var width  = 0;
     for line in map {
-      maxX = max(maxX, line.length);
+      width = max(width, line.length);
     }
 
-    if (maxX <= 0) {
+    if (width <= 0) {
       logger.logWarning("utils.graph() first argument should content at least one non-empty string");
       return {};
     }
 
+    # Compute min-max for each dimension
+    var minX = Dd(options, "x.min" , {d:0.0d}).asDouble();
+    var maxX = Dd(options, "x.max" , {d:1.0d}).asDouble();
+    var minY = Dd(options, "y.min" , {d:0.0d}).asDouble();
+    var maxY = Dd(options, "y.max" , {d:1.0d}).asDouble();
+    var stepX= D(options, "x.step");
+    var stepY= D(options, "y.step");
+
     # Determine doulbe steps
-    var stepX = 1.0d / (max(1, maxX - 1) as double);
-    var stepY = 1.0d / (max(1, maxY - 1) as double);
+    var intervalX = (maxX - minX) / (max(1, width  - 1) as double);
+    var intervalY = (maxY - minY) / (max(1, height - 1) as double);
 
     # Write result
     var result as string[][double[string]] = {};
@@ -105,7 +129,11 @@ zenClass Utils {
       for x in 0 to map[y].length {
         var c = map[y][x];
         if (c != " " && !isNull(keys[c])) {
-          result[{x: stepX*x, y: stepY*y} as double[string]] = keys[c];
+          var X = intervalX * x + minX;
+          var Y = maxY - intervalY * y;
+          if(!isNull(stepX)) X = ((X / stepX.asDouble()) as int) as double * stepX.asDouble();
+          if(!isNull(stepY)) Y = ((Y / stepY.asDouble()) as int) as double * stepY.asDouble();
+          result[{x: X, y: Y} as double[string]] = keys[c];
           resultLen += 1;
         }
       }

@@ -108,7 +108,7 @@ patchouliList.push({
 // Match all regex from crafttweaker.log
 var crafttweaker_log = null;
 function from_crafttweaker_log(rgx) {
-  crafttweaker_log = crafttweaker_log || loadText("../../crafttweaker.log");
+  crafttweaker_log = crafttweaker_log || loadText("../crafttweaker.log");
   return [...crafttweaker_log.matchAll(rgx)];
 }
 

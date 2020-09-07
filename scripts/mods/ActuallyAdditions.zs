@@ -373,3 +373,6 @@ scripts.process.mash(<ore:listAllfruit>*4,  <actuallyadditions:item_misc:1>*5, "
 scripts.process.mash(<ore:listAllberry>*4,  <actuallyadditions:item_misc:1>*4, "no exceptions");
 scripts.process.mash(<minecraft:baked_potato>,  <actuallyadditions:item_food:5>*2, "no exceptions");
 scripts.process.mash(<minecraft:cooked_porkchop>,  <actuallyadditions:item_food:20>*3, "no exceptions");
+
+# Canola unify
+scripts.process.squeeze(<actuallyadditions:item_misc:13>, <liquid:canolaoil> * 80, "except: ForestrySqueezer IndustrialSqueezer", null);
