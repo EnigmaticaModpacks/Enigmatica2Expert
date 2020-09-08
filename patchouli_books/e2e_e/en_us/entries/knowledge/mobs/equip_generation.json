@@ -1,0 +1,26 @@
+{
+  "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
+  "name": "Equip Generation",
+  "icon": "draconicevolution:mob_soul{EntityName:\"minecraft:zombie\"}",
+  "category": "patchouli:subcategories/mobs",
+  "pages": [
+    {
+      "item": "draconicevolution:mob_soul{EntityName:\"minecraft:zombie\"}",
+      "title": "Equip Generation",
+      "text": "All mobs are generated with:$(br)$(li)Random TCon armor + weapon$(br)$(li)Random classic armor set + weapon$(br2)Chance that mob will have at least 1 equipment is$(br)$(li)80% base chance$(br)$(li)30% less in $(l)Overworld/$$(br)$(li)50% added to reroll for each next slot",
+      "type": "spotlight"
+    },
+    {
+      "item": "draconicevolution:mob_soul{EntityName:\"minecraft:skeleton\"}",
+      "title": "Equip Generation",
+      "text": "Different mobs have different armor types and different TCon materials.$(br)$(l)Zombies/$ have static chance to spawn with any avaliable material.$(br2)Roll used $(l)qubic/$ function, so $(l)Paper/$ would spawn $(l)~20%/$ times and $(l)Infinity Metal/$ $(l)~0.2%/$ times.",
+      "type": "spotlight"
+    },
+    {
+      "item": "draconicevolution:mob_soul{EntityName:\"minecraft:wither_skeleton\"}",
+      "title": "Equip Generation",
+      "text": "Tinker's armor and tools have chance to get random modifier. If this happen, item 100% would have additional $(l)Creative/$ modifier.$(br)All equipment generated already damaged, so no exploits with $(l)mob-stripping farm/$!",
+      "type": "spotlight"
+    }
+  ]
+}

@@ -34,7 +34,7 @@ Patchouli_js("Liquid Interactions", {
 })
 
 var btweaks = config("botaniatweaks.cfg");
-Patchouli_js([
+Patchouli_js("Botania", [
   {
     item: "botania:kingkey",
     _text: `$(l)Key of the King's Law/$ was significally buffed.
@@ -55,7 +55,6 @@ Patchouli_js([
     _text: `Dispensers shoot glass bottles to turn them in to Ender Air in the End dimension.`,
   }
   ].map(o=>({...{
-		entry: "Botania",
     type: "spotlight",
 	},...o}))
 )
@@ -82,13 +81,21 @@ Patchouli_js({
 	`,
 })
 
-Patchouli_js("Bug Fixes", {
-	item: "forestry:chipsets:3{T:3}",
-	title: "Circuits ME fix",
-	_text: `
-		Forestry's $(l)Circuits/$ finally can be used in ME autocrafting!
-		Before this update, pattern for recipe should be created manually (not with $(l)[+]/$ JEI button)`
-})
+Patchouli_js("Bug Fixes", [
+	{
+		item: "forestry:chipsets:3{T:3}",
+		title: "Circuits ME fix",
+		_text: `
+			Forestry's $(l)Circuits/$ finally can be used in ME autocrafting!
+			Before this update, pattern for recipe should be created manually (not with $(l)[+]/$ JEI button)`
+	},{
+		item: "mekanism:machineblock2:11",
+		title: "Mekanism Tanks Fix",
+		_text: `
+			Mekanism's Fluid and Gas$(l)Tanks/$ finally can be used in ME autocrafting!
+			Before this update, pattern for recipe should be created manually (not with $(l)[+]/$ JEI button)`
+	}
+])
 
 Patchouli_js("Recipe Changes", {
   title: 'MA Crystals Craft',

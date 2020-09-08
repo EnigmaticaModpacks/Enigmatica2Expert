@@ -504,3 +504,6 @@ mods.mekanism.crusher.removeRecipe(<nuclearcraft:gem:6>); # Sand -> silicon
 furnace.addRecipe(trueSilicon, <ore:dustCertusQuartz>, 4.0d);
 furnace.addRecipe(trueSilicon, <ore:dustNetherQuartz>, 4.0d);
 mods.thermalexpansion.Compactor.addMintRecipe(trueSilicon * 2, <minecraft:sand>, 4000);
+
+# Quest Book -> Patchouli book
+recipes.addShapeless("Patchouli book", <patchouli:guide_book>.withTag({"patchouli:book": "patchouli:e2e_e"}), [<questbook:itemquestbook>]);

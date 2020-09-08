@@ -247,22 +247,19 @@ for i, sapling in saplings {
 }
 
 /* Patchouli_js()
-var petuniaPage = {
-  category: "Knowledge",
-  subcategory: "Liquids",
-  title: "Petro Petunia Fuels",
-  entry: "Petro Petunia",
-  type: "item_list",
-  item: `botania:specialflower{type: "petro_petunia"}`
-}
+var entryId = 'Knowledge/Liquids/Petro Petunia';
 
-Patchouli_js({
-  ...petuniaPage,
+Patchouli_js(entryId, {
+  title: "Petro Petunia Fuels",
+  item: `botania:specialflower{type:"petro_petunia"}`,
   type: "spotlight",
   _text: `$(l)Petro Petunia/$ is generating flower that burns liquids around it to provide $(#1df)mana/$.`
 })
 
-Patchouli_js( paged(petuniaPage, 7, 
+Patchouli_js(entryId, paged({
+		title: "Petro Petunia Fuels",
+		type: "item_list",
+	},
   [...Object.entries( config("acronym/floralchemy.cfg").fuelvalues )]
   .sort((a,b)=>b[1].burnTime * b[1].powerPreTick - a[1].burnTime * a[1].powerPreTick)
   .map(o=>( [

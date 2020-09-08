@@ -14,6 +14,46 @@ import modtweaker.tconstruct.ITICMaterial;
 #modloaded zentoolforge
 
 
+/* Patchouli_js()
+var statics = {}
+match_regex_below(
+  /^static\s+(DEFAULT_EQUIP_CHANCE|OVERWORLD_EQUIP_CHANCE|NEXT_EQUIP_CHANCE).*= ([\d.]+)d/gm
+).map(m=>[m[1], Math.round(parseFloat(m[2])*100)])
+.forEach(m=>statics[m[0]] = m[1])
+
+Patchouli_js('Knowledge/Mobs/Equip Generation', [
+  {
+    item: `draconicevolution:mob_soul{EntityName:"minecraft:zombie"}`,
+    title: "Equip Generation",
+    _text: `
+      All mobs are generated with:
+      $(li)Random TCon armor + weapon
+      $(li)Random classic armor set + weapon
+
+      Chance that mob will have at least 1 equipment is 
+      $(li)${statics.DEFAULT_EQUIP_CHANCE}% base chance
+      $(li)${100 - statics.OVERWORLD_EQUIP_CHANCE}% less in $(l)Overworld/$
+      $(li)${statics.NEXT_EQUIP_CHANCE}% added to reroll for each next slot`
+  },{
+    item: `draconicevolution:mob_soul{EntityName:"minecraft:skeleton"}`,
+    title: "Equip Generation",
+    _text: `
+      Different mobs have different armor types and different TCon materials.
+      $(l)Zombies/$ have static chance to spawn with any avaliable material.
+      
+      Roll used $(l)qubic/$ function, so $(l)Paper/$ would spawn $(l)~20%/$ times and $(l)Infinity Metal/$ $(l)~0.2%/$ times.`
+  },{
+    item: `draconicevolution:mob_soul{EntityName:"minecraft:wither_skeleton"}`,
+    title: "Equip Generation",
+    _text: `
+      Tinker's armor and tools have chance to get random modifier. If this happen, item 100% would have additional $(l)Creative/$ modifier.
+      All equipment generated already damaged, so no exploits with $(l)mob-stripping farm/$!`
+  },
+])*/
+
+static DEFAULT_EQUIP_CHANCE as double   = 0.8d; // Chance that mob will have at least 1 item
+static OVERWORLD_EQUIP_CHANCE as double = 0.7d; // Chance modifier for Overworld
+static NEXT_EQUIP_CHANCE as double      = 0.5d; // Reroll addition for next equipment slot
 
 # ######################################################################
 #
@@ -567,15 +607,16 @@ function addEquipment(iGroup as IData, entity as IEntityLivingBase, world as IWo
   # Generate probabilityes for each slot
   var probs = [random()] as double[];
   for i in 1 to 6 {
-    probs += probs[i - 1] * min(random() + 0.5d, 1.0d);
+    probs += probs[i - 1] * min(random() + NEXT_EQUIP_CHANCE, 1.0d);
   }
   var equipSequence = [4, 1, 2, 3, 0, 5] as int[];
 
   # Calculate probabilities
   # bigger number - less chance
-  # 30% more armor in other dimensions than Overworld
-  val armChance = 0.8d;
-  var tolerance = (world.dimension==0) ? armChance : (armChance * 0.7d);
+  # ~30% more armor in other dimensions than Overworld
+  var tolerance = (world.dimension==0)
+    ?  DEFAULT_EQUIP_CHANCE 
+    : (DEFAULT_EQUIP_CHANCE * OVERWORLD_EQUIP_CHANCE);
 
   for j in 0 to 6{
     if ( probs[j] > tolerance ) {

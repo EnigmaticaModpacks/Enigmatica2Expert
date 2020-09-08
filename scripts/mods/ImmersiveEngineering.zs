@@ -174,7 +174,7 @@ mods.immersiveengineering.Excavator.addMineral("Nuclear Ore", 20, 0.005, ["oreTh
 # addRailgunBullet(IIngredient item, float damage, float gravity, int[][] colorMap)
 # addRailgunBullet(IIngredient item, float damage, float gravity, IRailgunImpact effect, int[][] colorMap)
 
-/* Patchouli_js('Knowledge/Equipment/Railgui Bullets', {
+/* Patchouli_js('Knowledge/Items/Railgui Bullets', {
 	item: "immersiveengineering:railgun",
 	title: "New Railgui Bullets",
 	type:  "item_list",

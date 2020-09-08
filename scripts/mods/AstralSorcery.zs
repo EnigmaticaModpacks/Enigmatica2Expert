@@ -98,12 +98,11 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <astralsorcery:itemknowledgesha
 ]);
 
 
-/* Patchouli_js(paged({
-  category: "Knowledge",
-  subcategory: "Liquids",
-  entry:"Liquid Interactions",
-  type: "fluid_interaction",
-}, 10,
+/* Patchouli_js('Knowledge/Liquids/Liquid Interactions', 
+	paged({
+		type: "fluid_interaction",
+		icon: "astralsorcery:blockchalice"
+	},
   match_block_below(/^ *\[<liquid:(.*?)>.*?<liquid:(.*?)>.*?<(.*?)>.*?<(.*?)>.*?<(.*?)>.*$/gm)
   .reduce((arr, match) => {
     match.slice(1).forEach((m,i)=>arr.push([i<2 ? wrap_bucket(m) : m]));

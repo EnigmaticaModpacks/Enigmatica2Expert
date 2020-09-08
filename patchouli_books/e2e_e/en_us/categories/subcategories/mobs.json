@@ -1,0 +1,7 @@
+{
+  "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
+  "name": "Mobs",
+  "icon": "draconicevolution:mob_soul{EntityName:\"minecraft:zombie\"}",
+  "description": "Stories about poor $(l)creatures/$ =>",
+  "parent": "patchouli:knowledge"
+}

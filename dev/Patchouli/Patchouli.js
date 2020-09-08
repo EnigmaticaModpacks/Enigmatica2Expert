@@ -43,27 +43,25 @@ var defaultFileContent = {
   
   knowledge: {
     name: "Knowledge",
-    icon: "artisanworktables:artisans_grimoire_wood",
+    icon: "thaumcraft:enchanted_placeholder",
     description: "Chapters about things in this modpack:"
-  },
-
-  quest_and_loot: {
-    name: "Quest and loot",
-    icon: "questbook:itemquestbook",
-    description: "Info about Lootboxes and Quests =>"
   },
   
   energy: {
     icon: "nuclearcraft:upgrade:1",
     description: "Things related to $(l)Energy/$ =>"
   },
-  equipment: {
+  items: {
     icon: "thaumcraft:elemental_pick",
-    description: "All about $(l)Tools/$ & $(l)Armor/$ =>"
+    description: "All about $(l)Items/$, $(l)Tools/$ and $(l)Armor/$ =>"
   },
   liquids: {
     icon: "minecraft:water_bucket",
     description: "Things you can do with $(l)Liquids/$ =>"
+  },
+  mobs: {
+    icon: "draconicevolution:mob_soul{EntityName:\"minecraft:zombie\"}",
+    description: "Stories about poor $(l)creatures/$ =>"
   },
 
   bug_fixes: {
@@ -100,10 +98,18 @@ function readdir(folderPath) {
 }
 function relative(filePath) {
   return path.relative(process.cwd(), path.resolve(__dirname, filePath));
-}
+}    
+
+var patchouliList = [];
+
+// Add Additional pages
+const additional_pages_path = relative("additional_pages.js");
+patchouliList.push({
+  filePath: additional_pages_path,
+  command: loadText(additional_pages_path)
+});
 
 // Generate list of all documentation entries
-var patchouliList = [];
 glob.sync("scripts/**/*.zs").forEach(filePath => {
   var zsfileContent = loadText(filePath);
   for (const match of zsfileContent.matchAll(/\\* *(Patchouli_js\([\s\S\n\r]*?\))\*\//gm)) {
@@ -115,13 +121,6 @@ glob.sync("scripts/**/*.zs").forEach(filePath => {
       below: zsfileContent.substring(match.index + match[0].length),
     });
   }
-});    
-
-// Add Additional pages
-const additional_pages_path = relative("additional_pages.js");
-patchouliList.push({
-  filePath: additional_pages_path,
-  command: loadText(additional_pages_path)
 });
 
 // Patch pages
@@ -171,7 +170,7 @@ function wrap_bucket(str) {
 
 // Removes trailing spaces in _each_line_ and replace \n with $(br)
 function parse_text(text) {
-  return text.trim().split("\n").map(s=>s.trim()).join("$(br)")
+  return text.trim().split("\n").map(s=>s.trim()).join("$(br)").replace("$(br)$(br)","$(br2)")
 }
 
 // Convert array into object with key: value
@@ -201,22 +200,37 @@ function text$i(array, fnc) {
 }
 
 // Takes array and split it in several pages based of type
-function paged(opts, itemsOnPage, arr) {
+const pageTypesLength = {
+  fluid_interaction: 10,
+  grid: 42,
+  grid_description: 24,
+  item_list:7,
+  item_spread:7,
+  spotlight_advanced: 5
+}
+function paged_full(opts, itemsOnPage, arr) {
+  itemsOnPage = itemsOnPage || pageTypesLength[opts.type];
+
   return arr.reduce((o, m, i) => {
+    const isArr = Array.isArray(m);
     var j = ~~(i/itemsOnPage);
     o[j] = o[j]||{...opts};
 
-    o[j][`item${i%itemsOnPage}`] = m[0];
+    o[j][`item${i%itemsOnPage}`] = isArr ? m[0] : m;
 
     if (opts.type == "item_list") {
       o[j][`text${i%itemsOnPage}`] = m[1];
     } else {
 
     }
-    // o[j][`text${i%itemsOnPage}`] = m[1];
     return o;
   },[])
 }
+
+const paged = over([
+  [over.object, over.numberOptional, over.array, paged_full],
+  function() { throw new Error('paged() has no parameters'); } // No parameters function
+]);
 
 function config(cfgPath) {
   var wholePath = "config/" + cfgPath;
@@ -226,18 +240,19 @@ function config(cfgPath) {
     .replace(/^~.*$/gm, "") // config version
     .replace(/^ *(\w+|"[^"]+") *{ *$/gm, "$1:{") // class name
     .replace(/^ *} *$/gm, "},") // end of block
-    .replace(/^ *\w:(\w+|"\w+") *= *(.*)$/gm, (match, p1, p2)=>
-      (isNaN(p2) && !(p2 === "true" || p2 === "false")) 
-      ? `${p1}:"${p2}",` 
-      : `${p1}:${p2},`
-    ); // simple values
+    .replace(/^ *\w:(?:([\w.]+)|"([^"]+)") *= *(.*)$/gm, (match, p1, p2, p3)=>{
+
+      return (isNaN(p3) && !(p3 === "true" || p3 === "false")) 
+      ? `"${p1||p2}":"${p3}",` 
+      : `"${p1||p2}":${p3},`
+    }) // simple values
 
   // Replace lists
-  cfg = cfg.replace(/^ *\w:(\w+|"\w+") *< *[\s\S\n\r]*?> *$/gm, (match, p1)=>{
+  cfg = cfg.replace(/^ *\w:(?:([\w.]+)|"([^"]+)") *< *[\s\S\n\r]*?> *$/gm, (match, p1, p2)=>{
     var lines = match.split("\n")
     var content = lines.slice(1, lines.length-1);
     return [
-      p1 + ": [",
+      `"${p1||p2}"` + ": [",
       ...content.map(l=>`"${l.trim()}",`),
       "],"
     ].join("\n")
@@ -250,6 +265,11 @@ function config(cfgPath) {
   } catch (error) {
     console.log('Parsing config error. File: ', wholePath);
     console.error(error);
+    saveText(
+      'return{'+
+      cfg.replace(/\n\n+/gm, "\n")
+      +'}', 
+      path.resolve(__dirname, '_error_'+cfgPath.split('.').slice(0, -1).join('.')+'.js'));
   }
 
   return result;
@@ -295,40 +315,39 @@ patchouliList.forEach(patchouliCommand => {
     // Parse patchouli path
     if(!entryId) entryId = "Misc Changes";
     var patchouli_path = entryId.split('/');
-    if(patchouli_path.length==1) patchouli_path.unshift("v"+currentVersion);
-    if(patchouli_path.length==2) patchouli_path.unshift("Patches");
+    if(patchouli_path.length==1) patchouli_path.unshift("Patches", "v"+currentVersion);
+    const isSubcategory = patchouli_path.length >= 3;
 
     // Overwrite data for generated patches
     p = {...p, ...patchouliCommand.overrides};
 
-    // Pointer is current category/subcategory/entry
-    var pointer = book;
-    var currField = "E2:E-E";
 
-    // Define default value of field in current pointer
-    function defVal(field, def) { pointer[field] = pointer[field] || def; }
+    function defVal(obj, field, def) {
+      obj[field] = obj[field] || def;
+      return obj[field];
+    }
+    
+    var obj_category = defVal(book, patchouli_path[0], {});
+    var obj_entry;
+    var categoryPath;
+    var entry_name;
 
-    // Advance pointer
-    function goDown(field, def) {
-      currField = p[field] = p[field] || def;
-      defVal(currField, {});
-      pointer = pointer[currField];
-      return currField;
+    if(isSubcategory){
+      entry_name = patchouli_path[2];
+      categoryPath = `patchouli:subcategories/${snakeCase(patchouli_path[1])}`
+      var obj_subcategory = defVal(obj_category, "subcategory:"+patchouli_path[1], {});
+      obj_entry = defVal(obj_subcategory, entry_name, {});
+    } else {
+      entry_name = patchouli_path[1];
+      categoryPath = patchouli_path[0];
+      obj_entry = defVal(obj_category, "entry:"+entry_name, {});
     }
 
-    const v_category    = goDown("category",    patchouli_path[0]);
-    const v_subcategory = goDown("subcategory", patchouli_path[1]);
-    const v_entry       = goDown("entry",       patchouli_path[2]);
-
-    /* 
-      Change current entry fields
-    */
-    pointer.name = currField;
-
     // Guess mandatory fields for entry
-    defVal("category", `patchouli:subcategories/${snakeCase(v_subcategory)}`);
-    defVal("pages", []);
-    defVal("icon" , p.icon || p.item || "minecraft:book");
+    defVal(obj_entry, "name", entry_name);
+    defVal(obj_entry, "category", categoryPath);
+    defVal(obj_entry, "pages", []);
+    defVal(obj_entry, "icon" , p.icon || p.item || "minecraft:book");
 
     // Copy all fields
     var page = {};
@@ -347,10 +366,10 @@ patchouliList.forEach(patchouliCommand => {
     page.type  = page.type  || (p.item ? "spotlight" : "text")
 
     // Title is not mandatory but many page types used it
-    page.title = page.title || p.entry;
+    page.title = page.title || patchouli_path[patchouli_path.length-1];
 
     // Add page
-    pointer.pages.push(page);
+    obj_entry.pages.push(page);
   }
   
   const Patchouli_js = over([
@@ -383,7 +402,9 @@ fs.rmdirSync(garbagePath, { recursive: true });
 // Move old patchouli files
 fs.mkdir(garbagePath, { recursive: true }, (err) => {if (err) throw err;});
 ["categories","entries"].forEach(fldr=>{
-  fs.renameSync(path.resolve(bookPath, fldr), path.resolve(garbagePath, fldr));
+  try {
+    fs.renameSync(path.resolve(bookPath, fldr), path.resolve(garbagePath, fldr));
+  } catch (error) {}
 });
 
 function saveBookFile(_partName, subfolder, content) {
@@ -410,16 +431,18 @@ for (const [_categoryName, category] of Object.entries(book)) {
   
   for (const [_subcategoryName, subcategory] of Object.entries(category)) {
 
-    var subcategoryName = saveBookFile(_subcategoryName, "categories/subcategories/", {
-      parent: "patchouli:"+categoryName,
-    });
-    
-    for (const [_entryName, entry] of Object.entries(subcategory)) {
-
-      saveBookFile(_entryName, `entries/${categoryName}/${subcategoryName}/`, 
-        entry
-      );
-
+    var actualName = _subcategoryName.split(':').slice(1).join(':');
+    var isCategory = _subcategoryName.startsWith('subcategory:');
+    if(isCategory) {
+      var subcategoryName = saveBookFile(actualName, "categories/subcategories/", {
+        parent: "patchouli:"+categoryName,
+      });
+      
+      for (const [_entryName, entry] of Object.entries(subcategory)) {
+        saveBookFile(_entryName, `entries/${categoryName}/${subcategoryName}/`, entry );
+      }
+    } else {
+      saveBookFile(actualName, `entries/${categoryName}/`, subcategory );
     }
   }  
 }
@@ -437,5 +460,4 @@ function findNewPoint(x, y, angle, distance) {
 for (let i = 0; i < 6; i++) {
   console.log('x,y :>> ', JSON.stringify(findNewPoint(50, 16, 0.2*i, 26.0)));
 }*/
-
 

@@ -52,7 +52,7 @@ for (const [k,v1] of Object.entries(defaultLoot_json["groups:9"])) {
   }
 }
 
-var location = 'Knowledge/Quest and loot/Lootboxes';
+var location = 'Knowledge/Lootboxes';
 
 Patchouli_js(location, {
 	icon:	"bq_standard:loot_chest",
@@ -74,3 +74,17 @@ for (const [k,v] of Object.entries(bareLoot)) {
     }, 42, v
   ))
 }
+
+// ----------------------------------------------------
+// Cyclic
+// ----------------------------------------------------
+Patchouli_js('Knowledge/Items/Magic Bean', 
+  paged({
+    title: "Magic Bean Drops",
+    icon:	"cyclicmagic:sprout_seed",
+    type:	"grid"
+},
+  config("cyclicmagic.cfg").cyclicmagic.blocks.magicbean.MagicBeanDropList
+  .map(l=>l.replace(/\*(\d+)$/, ':$1'))
+
+))

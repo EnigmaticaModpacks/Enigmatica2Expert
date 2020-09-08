@@ -1,19 +1,18 @@
 {
   "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
   "name": "Petro Petunia",
-  "icon": "botania:specialflower{type: \"petro_petunia\"}",
+  "icon": "botania:specialflower{type:\"petro_petunia\"}",
   "category": "patchouli:subcategories/liquids",
   "pages": [
     {
       "title": "Petro Petunia Fuels",
+      "item": "botania:specialflower{type:\"petro_petunia\"}",
       "type": "spotlight",
-      "item": "botania:specialflower{type: \"petro_petunia\"}",
       "text": "$(l)Petro Petunia/$ is generating flower that burns liquids around it to provide $(#1df)mana/$."
     },
     {
       "title": "Petro Petunia Fuels",
       "type": "item_list",
-      "item": "botania:specialflower{type: \"petro_petunia\"}",
       "item0": "forge:bucketfilled{FluidName:\"rocketfuel\",Amount:1000}",
       "text0": "1200 ticks, 100 mana/tick",
       "item1": "forge:bucketfilled{FluidName:\"empoweredoil\",Amount:1000}",
@@ -32,7 +31,6 @@
     {
       "title": "Petro Petunia Fuels",
       "type": "item_list",
-      "item": "botania:specialflower{type: \"petro_petunia\"}",
       "item0": "forge:bucketfilled{FluidName:\"canolaoil\",Amount:1000}",
       "text0": "150 ticks, 50 mana/tick",
       "item1": "forge:bucketfilled{FluidName:\"oil\",Amount:1000}",

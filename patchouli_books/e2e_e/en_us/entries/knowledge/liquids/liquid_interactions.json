@@ -1,7 +1,7 @@
 {
   "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
   "name": "Liquid Interactions",
-  "icon": "minecraft:book",
+  "icon": "astralsorcery:blockchalice",
   "category": "patchouli:subcategories/liquids",
   "pages": [
     {

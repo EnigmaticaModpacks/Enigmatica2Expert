@@ -230,6 +230,24 @@ import mods.jei.JEI.removeAndHide as rh;
 # Sky stone Dust
 scripts.process.crush(<appliedenergistics2:sky_stone_block>, <appliedenergistics2:material:45>, "Except: AEGrinder Pulverizer", null, null);
 
+/* 
+Patchouli_js('Knowledge/Items/Matter Cannon', [
+  {
+    icon: "appliedenergistics2:matter_cannon",
+    title: "Matter Cannon Ammo",
+    _text: `
+      This items can be used as ammo for $(l)Matter Cannon/$.
+      Number represent $(l)Atomic_Mass / 10/$, not actual damage!`
+  },
+  ...paged({
+    title: "Matter Cannon Ammo",
+    type:  "grid"
+  },
+    match_block_below(/^<([^>]+)>\s*:\s*(\d+)\.0d,$/gm)
+		.sort((a,b)=>b[2]-a[2])
+    .map(match=>match[1] +'#'+ Math.round(match[2] / 10))
+  )
+])*/
 # Matter cannon more matter
 val itemMass as double[IItemStack] = {
 <tconevo:metal:42>                                   : 500.0d,

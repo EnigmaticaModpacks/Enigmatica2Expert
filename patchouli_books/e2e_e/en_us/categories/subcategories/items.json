@@ -1,7 +1,7 @@
 {
   "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
-  "name": "Equipment",
+  "name": "Items",
   "icon": "thaumcraft:elemental_pick",
-  "description": "All about $(l)Tools/$ & $(l)Armor/$ =>",
+  "description": "All about $(l)Items/$, $(l)Tools/$ and $(l)Armor/$ =>",
   "parent": "patchouli:knowledge"
 }
