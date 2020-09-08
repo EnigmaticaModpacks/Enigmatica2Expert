@@ -196,8 +196,7 @@ remakeEx(<mctsmelteryio:upgrade:6>, [
 	
 # *======= Fuels =======*
 
-/* Patchouli_js({
-	entry: "Smeltery Fuels",
+/* Patchouli_js("Knowledge/Liquids/Smeltery Fuels", {
 	item: "tconstruct:smeltery_controller",
 	_text: `
 		$(l)Smeltery/$ melting temperatures was tweaked. Some metals $(l)require/$ better fuels than $(#d31)lava/$.
@@ -205,9 +204,8 @@ remakeEx(<mctsmelteryio:upgrade:6>, [
 		$(l)Temperature/$ of fuel affect melting speed.
 		$(l)Time/$ is number of ticks fuel will burn.`});
 
-Patchouli_js(
+Patchouli_js("Knowledge/Liquids/Smeltery Fuels",
   paged({
-    entry: "Smeltery Fuels",
     item: "tconstruct:smeltery_controller",
     type: "item_list"
   }, 7, 

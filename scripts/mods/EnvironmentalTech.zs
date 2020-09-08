@@ -106,25 +106,10 @@ recipes.removeByRecipeName("environmentaltech:m_multiblocks/interconnect");
 #
 # ######################################################################
 
-/* Patchouli_js({
-	entry:"Environmental Tech",
-	icon:	"environmentaltech:solar_cont_1",
-	type:	"spotlight_advanced",
-	item0: "_",
-  item1: "environmentaltech:solar_cont_1",
-  item2: "environmentaltech:solar_cell_litherite",
-  item3: "environmentaltech:void_ore_miner_cont_1",
-	uneven: true,
-	_text: `
-		All 6 $(l)Void Miner/$ and $(l)Solar/$ Controller's recipes was changed.
-		Energy output was significally changed too.
-	`,
-})
-
-Patchouli_js(
+/* Patchouli_js('Knowledge/Energy/Environmental Tech',
   require("../EvtTechSolarCalc.js").rf_t
   .map((r,k)=>({
-    entry:"Environmental Tech",
+		icon:	"environmentaltech:solar_cont_1",
     type:	"item_list",
     title: "Solar Array Tier "+(k+1),
     ...item$i(r, m=>`environmentaltech:solar_cell_${m[0]}#${m[2]}`),

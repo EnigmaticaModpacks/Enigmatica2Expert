@@ -2,19 +2,8 @@
   "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
   "name": "Environmental Tech",
   "icon": "environmentaltech:solar_cont_1",
-  "description": "Undefined description",
-  "category": "patchouli:subcategories/v0_14",
+  "category": "patchouli:subcategories/energy",
   "pages": [
-    {
-      "type": "spotlight_advanced",
-      "item0": "_",
-      "item1": "environmentaltech:solar_cont_1",
-      "item2": "environmentaltech:solar_cell_litherite",
-      "item3": "environmentaltech:void_ore_miner_cont_1",
-      "uneven": true,
-      "text": "All 6 $(l)Void Miner/$ and $(l)Solar/$ Controller's recipes was changed.$(br)Energy output was significally changed too.",
-      "title": "Environmental Tech"
-    },
     {
       "type": "item_list",
       "title": "Solar Array Tier 1",

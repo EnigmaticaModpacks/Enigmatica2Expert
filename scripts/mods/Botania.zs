@@ -246,41 +246,14 @@ for i, sapling in saplings {
 	}
 }
 
-/* Patchouli_js(
-	(()=>{
-  var btweaks = config("botaniatweaks.cfg");
-  return [
-  {
-     item: "botania:kingkey",
-    _text: `$(l)Key of the King's Law/$ was significally buffed.
-      Now each projectile deals $(l)$(#d11)${ btweaks.balance.keyDamageScale * 20 }/$ damage.`,
-  }, {
-     item: "botania:manabomb",
-    _text: `$(l)Manastorm Charge/$ was $(l)${
-      btweaks.balance.manastormScaleFactor }/$x times buffed.`,
-  }, {
-     item: "botania:rfgenerator",
-    _text: `Buffed, produced up to $(l)${
-			numeral(
-      	btweaks.balance.fluxfield.fePerBurst * 10 / btweaks.balance.fluxfield.shotsPerBurst
-			).format('0,0')
-			}/$ RF/t`,
-  }, {
-     item: "botania:manaresource:15",
-    _text: `Dispensers shoot glass bottles to turn them in to Ender Air in the End dimension.`,
-  }
-  ].map(o=>({...{
-    title: "#item->iname",
-		entry: "Botania",
-     type: "spotlight",
-	},...o}))})()
-)
-
+/* Patchouli_js()
 var petuniaPage = {
+  category: "Knowledge",
+  subcategory: "Liquids",
   title: "Petro Petunia Fuels",
   entry: "Petro Petunia",
-   type: "item_list",
-   item: `botania:specialflower{type: "petro_petunia"}`
+  type: "item_list",
+  item: `botania:specialflower{type: "petro_petunia"}`
 }
 
 Patchouli_js({

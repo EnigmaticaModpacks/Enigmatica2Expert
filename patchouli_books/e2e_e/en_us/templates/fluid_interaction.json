@@ -4,17 +4,17 @@
 
     ,{ "x": 58, "y": 16, "type": "header", "text": "\\+/", "scale": 2 }
     ,{ "x": 58, "y": 23, "type": "header", "text": "-V-", "scale": 2 }
-    ,{ "x": 21, "y": 16, "type": "item", "item": "#item0_0", "framed": true}
-    ,{ "x": 79, "y": 16, "type": "item", "item": "#item1_0", "framed": true}
-    ,{ "x": 49, "y": 42, "type": "item", "item": "#item2_0"}
-    ,{ "x": 25, "y": 38, "type": "item", "item": "#item3_0"}
-    ,{ "x": 73, "y": 38, "type": "item", "item": "#item4_0"}
-    ,{ "x": 58, "y": 86,  "type": "header", "text": "\\+/", "scale": 2 ,"guard": "#item0_1->exists"}
-    ,{ "x": 58, "y": 93,  "type": "header", "text": "-V-", "scale": 2  ,"guard": "#item0_1->exists"}
-    ,{ "x": 21, "y": 86,  "type": "item", "item": "#item0_1", "framed": true,"guard": "#item0_1->exists"}
-    ,{ "x": 79, "y": 86,  "type": "item", "item": "#item1_1", "framed": true,"guard": "#item0_1->exists"}
-    ,{ "x": 49, "y": 112, "type": "item", "item": "#item2_1"}
-    ,{ "x": 25, "y": 108, "type": "item", "item": "#item3_1"}
-    ,{ "x": 73, "y": 108, "type": "item", "item": "#item4_1"}
+    ,{ "x": 21, "y": 16, "type": "item", "item": "#item0", "framed": true}
+    ,{ "x": 79, "y": 16, "type": "item", "item": "#item1", "framed": true}
+    ,{ "x": 49, "y": 42, "type": "item", "item": "#item2"}
+    ,{ "x": 25, "y": 38, "type": "item", "item": "#item3"}
+    ,{ "x": 73, "y": 38, "type": "item", "item": "#item4"}
+    ,{ "x": 58, "y": 86,  "type": "header", "text": "\\+/", "scale": 2 ,"guard": "#item0->exists"}
+    ,{ "x": 58, "y": 93,  "type": "header", "text": "-V-", "scale": 2  ,"guard": "#item0->exists"}
+    ,{ "x": 21, "y": 86,  "type": "item", "item": "#item5", "framed": true,"guard": "#item0->exists"}
+    ,{ "x": 79, "y": 86,  "type": "item", "item": "#item6", "framed": true,"guard": "#item0->exists"}
+    ,{ "x": 49, "y": 112, "type": "item", "item": "#item7"}
+    ,{ "x": 25, "y": 108, "type": "item", "item": "#item8"}
+    ,{ "x": 73, "y": 108, "type": "item", "item": "#item9"}
   ]
 }

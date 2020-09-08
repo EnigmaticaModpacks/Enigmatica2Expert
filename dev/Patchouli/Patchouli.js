@@ -5,7 +5,7 @@
     Handy for ingame patchnoter
 
   Usage:
-    1. Install dependencyes (see require section below)
+    1. Install dependencies (see require section below)
     2. Add "Patchouli_js()" comment blocks in .zs files
     3. Run from terminal:
         node patchouli.js
@@ -16,22 +16,24 @@
 const { snakeCase }  = require("snake-case");
 const glob = require("glob")
 const numeral = require('numeral');
+const over = require('over');
 
 //////////////////////////////////////////
 // Local dependencies
-const {loadText, saveObjAsJson, matchBetween} = require('../utils.js');
+const {matchBetween} = require('../utils.js');
+const fs = require('fs');
+const path = require("path");
 
 //-----------------------------
 // Constants
 
 const currentVersion = 0.14;
-const bookPath = "../patchouli_books/e2e_e/en_us/";
+const bookPath = "./patchouli_books/e2e_e/en_us/";
 
-const defaultFileContent = {
+var defaultFileContent = {
   "*": {
     name: "Undefined category/entry",
-    icon: "minecraft:book",
-    description: "Undefined description"
+    icon: "minecraft:book"
   },
 
   patches: {
@@ -40,20 +42,28 @@ const defaultFileContent = {
   },
   
   knowledge: {
-    "name": "Knowledge",
-    "icon": "artisanworktables:artisans_grimoire_wood",
-    "description": "Chapters about things in this modpack:"
+    name: "Knowledge",
+    icon: "artisanworktables:artisans_grimoire_wood",
+    description: "Chapters about things in this modpack:"
   },
 
   quest_and_loot: {
-    "name": "Quest and loot",
-    "icon": "questbook:itemquestbook",
-    "description": "Info about Lootboxes and Quests"
+    name: "Quest and loot",
+    icon: "questbook:itemquestbook",
+    description: "Info about Lootboxes and Quests =>"
   },
-
-  v0_14: {
-    description: "Fluid update! Many things...$(br2)List of things was added in this patch ->",
-    icon: "artisanworktables:artisans_grimoire_platinum"
+  
+  energy: {
+    icon: "nuclearcraft:upgrade:1",
+    description: "Things related to $(l)Energy/$ =>"
+  },
+  equipment: {
+    icon: "thaumcraft:elemental_pick",
+    description: "All about $(l)Tools/$ & $(l)Armor/$ =>"
+  },
+  liquids: {
+    icon: "minecraft:water_bucket",
+    description: "Things you can do with $(l)Liquids/$ =>"
   },
 
   bug_fixes: {
@@ -75,11 +85,26 @@ const defaultFileContent = {
 // Extract Patchouli_js comment blocks from .zs files
 //
 // ######################################################################
+function loadText(filename, encoding = 'utf8') {
+  return fs.readFileSync(filename, encoding);
+}
+function saveText(txt, filename) {
+  fs.mkdirSync(path.dirname(filename), { recursive: true });
+  fs.writeFileSync(filename, txt);
+}
+function saveObjAsJson(obj, filename) {
+  saveText(JSON.stringify(obj, null, 2), filename);
+}
+function readdir(folderPath) {
+  return fs.readdirSync(folderPath);
+}
+function relative(filePath) {
+  return path.relative(process.cwd(), path.resolve(__dirname, filePath));
+}
 
 // Generate list of all documentation entries
 var patchouliList = [];
-glob.sync("scripts/**/*.zs").forEach(zsfile => {
-  var filePath = "../"+zsfile;
+glob.sync("scripts/**/*.zs").forEach(filePath => {
   var zsfileContent = loadText(filePath);
   for (const match of zsfileContent.matchAll(/\\* *(Patchouli_js\([\s\S\n\r]*?\))\*\//gm)) {
     var lineNumber = zsfileContent.substring(0, match.index).split('\n').length;
@@ -92,11 +117,24 @@ glob.sync("scripts/**/*.zs").forEach(zsfile => {
   }
 });    
 
+// Add Additional pages
+const additional_pages_path = relative("additional_pages.js");
 patchouliList.push({
-  filePath: "./dev/Patchouli/additional_pages.js", 
-  command: loadText("./Patchouli/additional_pages.js"), 
-  line: 0, 
-  below: "",
+  filePath: additional_pages_path,
+  command: loadText(additional_pages_path)
+});
+
+// Patch pages
+var patchesPath = relative("patches/");
+readdir(patchesPath).forEach(filePath => {
+  var relPath = path.resolve(patchesPath, filePath);
+  patchouliList.push({
+    filePath: relPath, 
+    command: loadText(relPath), 
+    overrides: {
+      subcategory: filePath.split('.').slice(0, -1).join('.')
+    }
+  });
 });
 
 // ######################################################################
@@ -108,7 +146,7 @@ patchouliList.push({
 // Match all regex from crafttweaker.log
 var crafttweaker_log = null;
 function from_crafttweaker_log(rgx) {
-  crafttweaker_log = crafttweaker_log || loadText("../crafttweaker.log");
+  crafttweaker_log = crafttweaker_log || loadText("crafttweaker.log");
   return [...crafttweaker_log.matchAll(rgx)];
 }
 
@@ -181,7 +219,7 @@ function paged(opts, itemsOnPage, arr) {
 }
 
 function config(cfgPath) {
-  var wholePath = "../config/" + cfgPath;
+  var wholePath = "config/" + cfgPath;
   var cfg = loadText(wholePath);
   cfg = cfg
     .replace(/^ *#.*$/gm, "") // Remove comments
@@ -253,20 +291,15 @@ patchouliList.forEach(patchouliCommand => {
   // Main function
   //
   // ######################################################################
-  function Patchouli_js(parameters) {
+  function Patchouli_js_single(entryId, p) {
+    // Parse patchouli path
+    if(!entryId) entryId = "Misc Changes";
+    var patchouli_path = entryId.split('/');
+    if(patchouli_path.length==1) patchouli_path.unshift("v"+currentVersion);
+    if(patchouli_path.length==2) patchouli_path.unshift("Patches");
 
-    // Call function for each array element if array provided as argument
-    if(Array.isArray(parameters)) return parameters.forEach(o=>Patchouli_js(o));
-
-    // console.log('parameters :>> ', parameters);
-
-    // p is for parameters
-    var p;
-    if(typeof parameters == 'object') {
-      p = parameters;
-    } else {
-      //TODO: Working with parameters instead of object
-    }
+    // Overwrite data for generated patches
+    p = {...p, ...patchouliCommand.overrides};
 
     // Pointer is current category/subcategory/entry
     var pointer = book;
@@ -283,9 +316,9 @@ patchouliList.forEach(patchouliCommand => {
       return currField;
     }
 
-    const v_category    = goDown("category",    "Patches");
-    const v_subcategory = goDown("subcategory", "v"+currentVersion);
-    const v_entry       = goDown("entry",       "misc_changes");
+    const v_category    = goDown("category",    patchouli_path[0]);
+    const v_subcategory = goDown("subcategory", patchouli_path[1]);
+    const v_entry       = goDown("entry",       patchouli_path[2]);
 
     /* 
       Change current entry fields
@@ -320,6 +353,14 @@ patchouliList.forEach(patchouliCommand => {
     pointer.pages.push(page);
   }
   
+  const Patchouli_js = over([
+    [over.stringOptionalWithDefault(''), over.array, (str, arr)=>arr.forEach(o=>Patchouli_js_single(str, o))],
+    [over.stringOptionalWithDefault(''), over.object, Patchouli_js_single],
+    // [over.object, obj=>Patchouli_js_single('', obj)],
+    // [over.array,  arr=>arr.forEach(obj=>Patchouli_js_single('', obj))],
+    function() { return; } // No parameters function
+  ]);
+  
   try {
     eval(patchouliCommand.command);
   } catch (error) {
@@ -334,6 +375,16 @@ patchouliList.forEach(patchouliCommand => {
 // Write collected pages into patchouli folders
 //
 // ######################################################################
+
+// Remove old trash can contents
+const garbagePath = path.resolve(__dirname, "./garbage");
+fs.rmdirSync(garbagePath, { recursive: true });
+
+// Move old patchouli files
+fs.mkdir(garbagePath, { recursive: true }, (err) => {if (err) throw err;});
+["categories","entries"].forEach(fldr=>{
+  fs.renameSync(path.resolve(bookPath, fldr), path.resolve(garbagePath, fldr));
+});
 
 function saveBookFile(_partName, subfolder, content) {
   var partName = snakeCase(_partName);

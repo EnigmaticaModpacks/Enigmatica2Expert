@@ -2,8 +2,7 @@
   "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
   "name": "Smeltery Fuels",
   "icon": "tconstruct:smeltery_controller",
-  "description": "Undefined description",
-  "category": "patchouli:subcategories/v0_14",
+  "category": "patchouli:subcategories/liquids",
   "pages": [
     {
       "item": "tconstruct:smeltery_controller",

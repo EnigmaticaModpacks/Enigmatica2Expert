@@ -2,8 +2,7 @@
   "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
   "name": "IC2 fluids -> NC reactor",
   "icon": "ic2:te:18",
-  "description": "Undefined description",
-  "category": "patchouli:subcategories/v0_14",
+  "category": "patchouli:subcategories/liquids",
   "pages": [
     {
       "type": "item_list",

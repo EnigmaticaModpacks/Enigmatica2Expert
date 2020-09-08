@@ -109,20 +109,6 @@ mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreLead>, <thermalfoundation
 	[<ore:stickTreatedWood>, null, null]]);
 
 # Native clusters processing
-/* Patchouli_js({
-	entry: "Cluster Processing",
-	type:  "item_spread",
-	item : "jaopca:item_clusterdraconium",
-	item0: "draconicevolution:draconium_ingot",
-	item1: "draconicevolution:draconium_dust",
-	item2: "jaopca:item_clumpdraconium",
-	item3: "jaopca:item_sharddraconium",
-	item4: "jaopca:item_crusheddraconium",
-	item5: "forge:bucketfilled{FluidName:\"draconium\",Amount:1000}",
-	_text: `
-		Thaumcraft's $(l)Native Clusters/$ now can be benificated in various machines to provide additional outputs
-	`,
-})*/
 for entry in oreDict {
 	val name = entry.name;
 	if (name.matches("cluster[A-Z]\\w+")) {

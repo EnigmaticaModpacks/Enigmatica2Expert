@@ -25,6 +25,7 @@
 - 🔷 [x] Processed cheese material (molten cheese, molten cheese rivers in Ratlantis)
 - ✏️ [x] Icecream oredict fix tofu
 - ✏️ [x] Botania Remove Elementium tools
+- 🌿 [x] PatchouliJS current documentation
 - 🧱 [ ] Magic Ore Processing . 📦 poop + Cluster => 📦hunk -> 📦 small piece -> 💧 washed -> ?
 - 🔷 [ ] Remake creatures drop items
 - 🔷 [ ] Jumps.zs should store jump amount

@@ -1,7 +1,7 @@
 {
   "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
-  "name": "Quest and loot",
-  "icon": "questbook:itemquestbook",
-  "description": "Info about Lootboxes and Quests =>",
+  "name": "Energy",
+  "icon": "nuclearcraft:upgrade:1",
+  "description": "Things related to $(l)Energy/$ =>",
   "parent": "patchouli:knowledge"
 }

@@ -16,15 +16,6 @@ for tomato in <ore:cropTomato>.items {
 	<forestry:book_forester>, 
 	[<minecraft:book>, <ore:treeSapling>, <ore:treeSapling>]);
 
-/* Patchouli_js({
-	entry: "Bug Fixes",
-	item: "forestry:chipsets:3{T:3}",
-	title: "Circuits ME fix",
-	_text: `
-		Forestry's $(l)Circuits/$ finally can be used in ME autocrafting!
-		Before this update, pattern for recipe should be created manually (not with $(l)[+]/$ JEI button)
-	`
-})*/
 	
 # Refined Circuit Board
 	mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:3>);

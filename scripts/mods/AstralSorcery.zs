@@ -97,31 +97,19 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <astralsorcery:itemknowledgesha
 	[null, null, null, PC, PC, IW, IW]
 ]);
 
-/* Patchouli_js({
-	entry: "Liquid Interactions",
-	item:  "astralsorcery:blockchalice",
-	title: "Liquid Interactions",
-	_text: `Not only Water+Lava!
-		Now many kinds of liquids can provide blocks when interacting in the World or in Containtment Chalice$(br2)`
-})*/
 
-/* Patchouli_js(
-  match_below({
-    begin: "val chaliceGrid = {",
-    regex: /^ *\[<liquid:(.*?)>.*?<liquid:(.*?)>.*?<(.*?)>.*?<(.*?)>.*?<(.*?)>.*$/gm,
-    end:   "} as IItemStack[][ILiquidStack[]];",
-  }).reduce((arr, match, i) => {
-    var r = i%2==1 ? arr.slice(-1)[0] : {
-      entry: "Liquid Interactions",
-      type: "fluid_interaction",
-    };
-    match.slice(1, 3).forEach((m,j) => r[`item${j  }_${i%2}`] = wrap_bucket(m));
-    match.slice(3, 6).forEach((m,j) => r[`item${j+2}_${i%2}`] = m);
-    if (i%2==0) arr.push(r);
+/* Patchouli_js(paged({
+  category: "Knowledge",
+  subcategory: "Liquids",
+  entry:"Liquid Interactions",
+  type: "fluid_interaction",
+}, 10,
+  match_block_below(/^ *\[<liquid:(.*?)>.*?<liquid:(.*?)>.*?<(.*?)>.*?<(.*?)>.*?<(.*?)>.*$/gm)
+  .reduce((arr, match) => {
+    match.slice(1).forEach((m,i)=>arr.push([i<2 ? wrap_bucket(m) : m]));
     return arr
   }, [])
-)*/
-
+))*/
 # Chalice interactions
 val chaliceGrid = {
   # First                      , Second                                                             , ⏩ + ⏩                                , ⏩ + 🔷                             , 🔷 + ⏩                      ,

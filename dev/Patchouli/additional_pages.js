@@ -4,12 +4,15 @@
 
 */
 
-const {loadJson, renameDeep} = require('../utils.js');
+const {renameDeep} = require('../utils.js');
 
+function loadJson(filename) {
+  return JSON.parse(fs.readFileSync(filename, 'utf8'));
+}
 
 
 // Extract item list from loot data
-const defaultLoot_json = loadJson("../config/betterquesting/DefaultLoot.json");
+const defaultLoot_json = loadJson("./config/betterquesting/DefaultLoot.json");
 const lootboxes = {};
 const bareLoot = {}
 for (const [k,v1] of Object.entries(defaultLoot_json["groups:9"])) {
@@ -49,15 +52,10 @@ for (const [k,v1] of Object.entries(defaultLoot_json["groups:9"])) {
   }
 }
 
-var location = {
-  category: "Knowledge",
-  subcategory: "Quest and loot",
-	entry:"Lootboxes",
-	icon:	"bq_standard:loot_chest",
-}
+var location = 'Knowledge/Quest and loot/Lootboxes';
 
-Patchouli_js({
-  ...location,
+Patchouli_js(location, {
+	icon:	"bq_standard:loot_chest",
 	type:	"spotlight_advanced",
 	item4: "bq_standard:loot_chest",
   item3: "bq_standard:loot_chest:25",
@@ -69,8 +67,8 @@ Patchouli_js({
 })
 
 for (const [k,v] of Object.entries(bareLoot)) {
-  Patchouli_js(paged({
-      ...location,
+  Patchouli_js(location, paged({
+      icon:	"bq_standard:loot_chest",
       type:	"grid",
       title: k
     }, 42, v

@@ -174,9 +174,8 @@ mods.immersiveengineering.Excavator.addMineral("Nuclear Ore", 20, 0.005, ["oreTh
 # addRailgunBullet(IIngredient item, float damage, float gravity, int[][] colorMap)
 # addRailgunBullet(IIngredient item, float damage, float gravity, IRailgunImpact effect, int[][] colorMap)
 
-/* Patchouli_js({
+/* Patchouli_js('Knowledge/Equipment/Railgui Bullets', {
 	item: "immersiveengineering:railgun",
-	entry: "Railgui Bullets",
 	title: "New Railgui Bullets",
 	type:  "item_list",
 	text0: `   Damage  |  Gravity`,
@@ -206,12 +205,11 @@ addRailgunBullet(<ore:stickIridium>            , 24, 1.15,colorMap);
 # addItemFertilizer(IIngredient item, IItemFertilizerMultiplier multiplier)
 # removeItemFertilizer(IItemStack item)
 
-/* Patchouli_js({
+/* Patchouli_js('Knowledge/Liquids/Cloche Fertilizers', {
 	item: "immersiveengineering:metal_device1:13",
-	entry: "Cloche Fertilizers",
 	title: "New Cloche Fertilizers",
 	type:  "item_list",
-	text0: `  Fertility (Def. is 0.2)`,
+	text0: `  Fertility (Water is 0.2)`,
   ...match_regex_below(/^addLiquidFertilizer\(<liquid:(.*?)> *, *(.*?) *\);$/gm)
   .sort((a,b)=>b[2]-a[2]).reduce((o, m, i)=>{
     o[`item${i+1}`] = wrap_bucket(m[1]);
@@ -234,12 +232,11 @@ addLiquidFertilizer(<liquid:short.mead>           , 0.35);
 # addChemthrowerEffect(ILiquidStack liquid, boolean isGas, boolean isFlammable, String source, float damage, IPotionEffect[] effects)
 # addChemthrowerEffect(ILiquidStack liquid, boolean isGas, boolean isFlammable, IChemEntityEffect entityEffect, IChemBlockEffect blockEffect)
 
-/* Patchouli_js({
+/* Patchouli_js('Knowledge/Liquids/Chemical Thrower', {
 	icon: "immersiveengineering:chemthrower",
-	entry: "Chemical Thrower",
 	title: "New Chemicals",
 	_text: `
-		Many liquids now can be used in $(l)Chemical Thrower/$ as ammo.
+		Many liquids can be used in $(l)Chemical Thrower/$ as ammo.
 		$(li)$(#727900)Strong Radiation/$ liquids have low damage, but gave Radiation III effect for 1-6 minutes
 		$(li)$(#C01B1B)High damage/$ only do big amount of damage
 		$(li)$(#957143)Flammable/$ set things on fire
@@ -250,8 +247,7 @@ addLiquidFertilizer(<liquid:short.mead>           , 0.35);
 
 # ----------------------------------------
 # ☢️ Strong radiation
-/* Patchouli_js({
-	entry: "Chemical Thrower",
+/* Patchouli_js('Knowledge/Liquids/Chemical Thrower', {
 	title: "Strong radiation",
 	type:  "grid",
 	...match_block_below(/^addChemthrowerEffect\(<liquid:(.+?)>/gm)
@@ -276,8 +272,7 @@ addChemthrowerEffect(<liquid:curium_246>     , false, false, "generic" , 2, [<po
 
 # ----------------------------------------
 # ⚡ Just high damage liquids
-/* Patchouli_js({
-	entry: "Chemical Thrower",
+/* Patchouli_js('Knowledge/Liquids/Chemical Thrower', {
 	title: "High Damage",
 	type:  "grid_description",
 	...match_block_below(/^addChemthrowerEffect\(<liquid:(.+?)>.*?(\d+)\);$/gm)
@@ -296,8 +291,7 @@ addChemthrowerEffect(<liquid:neutron>             ,false, false, "onFire", 36);
 
 # ----------------------------------------
 # 🔥 Flammable fuels that only do damage
-/* Patchouli_js({
-	entry: "Chemical Thrower",
+/* Patchouli_js('Knowledge/Liquids/Chemical Thrower', {
 	title: "Flammable",
 	type:  "grid_description",
 	...match_block_below(/^addChemthrowerEffect\(<liquid:(.+?)>.*?(\d+)\);$/gm)
@@ -319,7 +313,7 @@ addChemthrowerEffect(<liquid:rocketfuel>   ,false, true, "onFire", 15);
 
 # ----------------------------------------
 # 🎇 Liquids with potion effects
-/* Patchouli_js(
+/* Patchouli_js('Knowledge/Liquids/Chemical Thrower', 
   match_block_below(/^addChemthrowerEffect\(<liquid:(.+?)>.*?(\d+), \[<potion:\w+:(\w+\.)?(\w+)>.*$/gm)
     .sort((a,b)=>b[2]-a[2])
     .reduce((o, m, i) => {
@@ -330,7 +324,6 @@ addChemthrowerEffect(<liquid:rocketfuel>   ,false, true, "onFire", 15);
       return o;
     },[])
     .map(o=>Object.assign(o, {
-      entry: "Chemical Thrower",
       title: "Potion Effects",
       type:  "item_list",
     }))
@@ -351,8 +344,7 @@ addChemthrowerEffect(<liquid:ic2hot_water>           , false, false, "magic" , 0
 
 # ----------------------------------------
 # 🍫 Chocolates
-/* Patchouli_js({
-	entry: "Chemical Thrower",
+/* Patchouli_js('Knowledge/Liquids/Chemical Thrower', {
 	title: "Chocolates",
 	type:  "grid",
 	...match_block_below(/^addChemthrowerEffect\(<liquid:(.+?)>/gm)

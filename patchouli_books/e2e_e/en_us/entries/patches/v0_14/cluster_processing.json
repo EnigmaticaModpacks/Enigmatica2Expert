@@ -2,7 +2,6 @@
   "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
   "name": "Cluster Processing",
   "icon": "jaopca:item_clusterdraconium",
-  "description": "Undefined description",
   "category": "patchouli:subcategories/v0_14",
   "pages": [
     {

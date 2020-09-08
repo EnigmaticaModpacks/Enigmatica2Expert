@@ -718,22 +718,6 @@ advancedBrew(Grid(["pretty",
 #
 # ######################################################################
 
-/* Patchouli_js({
-	entry: "MEGA potion!",
-	_text: `
-		Now you can:
-    $(li)Combine Vanilla potions
-    $(li)Extend Durations of Rustic's Elixirs
-    $(li)Increase Potency of Blood Magic's Flasks
-    And finally...
-    $(li)Combine this three types into one MEGA potion
-	`,
-  
-	item: parse_item(match_below({
-    begin: "val potMEGA = ",
-    end:   ";"
-  })),
-})*/
 
 val potMEGA = <bloodmagic:potion_flask>.withTag(
   {

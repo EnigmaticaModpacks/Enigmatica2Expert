@@ -2,12 +2,11 @@
   "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
   "name": "Chemical Thrower",
   "icon": "immersiveengineering:chemthrower",
-  "description": "Undefined description",
-  "category": "patchouli:subcategories/v0_14",
+  "category": "patchouli:subcategories/liquids",
   "pages": [
     {
       "title": "New Chemicals",
-      "text": "Many liquids now can be used in $(l)Chemical Thrower/$ as ammo.$(br)$(li)$(#727900)Strong Radiation/$ liquids have low damage, but gave Radiation III effect for 1-6 minutes$(br)$(li)$(#C01B1B)High damage/$ only do big amount of damage$(br)$(li)$(#957143)Flammable/$ set things on fire$(br)$(li)$(#25A2AB)potion effects/$ damages and adds effects$(br)$(li)$(#3F1B10)Chocolates/$ gives several strong positive effects",
+      "text": "Many liquids can be used in $(l)Chemical Thrower/$ as ammo.$(br)$(li)$(#727900)Strong Radiation/$ liquids have low damage, but gave Radiation III effect for 1-6 minutes$(br)$(li)$(#C01B1B)High damage/$ only do big amount of damage$(br)$(li)$(#957143)Flammable/$ set things on fire$(br)$(li)$(#25A2AB)potion effects/$ damages and adds effects$(br)$(li)$(#3F1B10)Chocolates/$ gives several strong positive effects",
       "type": "text"
     },
     {

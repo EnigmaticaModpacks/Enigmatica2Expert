@@ -183,8 +183,7 @@ scripts.process.electrolyze(<fluid:ic2heavy_water>     *1000, [<fluid:deuterium>
 # Bioplastic process
 scripts.process.extract(<ore:sugarcane> * 2, <ore:bioplastic>.firstItem, "except: manufactory extractor");
 
-/* Patchouli_js({
-	entry: "IC2 fluids -> NC reactor",
+/* Patchouli_js('Knowledge/Liquids/IC2 fluids -> NC reactor', {
 	icon: "ic2:te:18",
 	type:  "item_list",
 	...match_block_below(/^mods\.nuclearcraft\.(\w+)\.addRecipe\(\[<liquid:(.+?)>/gm)

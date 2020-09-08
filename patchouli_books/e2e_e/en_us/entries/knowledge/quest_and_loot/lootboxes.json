@@ -2,7 +2,6 @@
   "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
   "name": "Lootboxes",
   "icon": "bq_standard:loot_chest",
-  "description": "Undefined description",
   "category": "patchouli:subcategories/quest_and_loot",
   "pages": [
     {

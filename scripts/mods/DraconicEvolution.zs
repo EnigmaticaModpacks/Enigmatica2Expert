@@ -90,12 +90,6 @@ import crafttweaker.item.IIngredient;
 
 
 # Draconic chest easier
-/* Patchouli_js({
-	entry: "Recipe Changes",
-	title: "Draconium chest",
-	item: "draconicevolution:draconium_chest",
-	_text: `$(l)Draconium chest/$ now can be crafted earlier in $(l)Empowerer/$ or $(l)Combination Crafting/$.`,
-})*/
 var dchest = <draconicevolution:draconium_chest>;
 var ingrds as IItemStack[] = [
 	<actuallyadditions:block_giant_chest_large>, 
