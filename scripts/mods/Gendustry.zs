@@ -44,3 +44,19 @@ import mods.jei.JEI.removeAndHide as rh;
 	[<ore:alloyBasic>, <mekanism:energycube>, <ore:alloyBasic>], 
 	[<ore:gearBronze>, <ore:alloyBasic>, <ore:gearBronze>]]);
 
+# Harded labware
+craft.make(<gendustry:labware> * 16, ["pretty",
+	"H   H",
+	"H A H",
+	"  B  "], {
+	H: <forestry:can>,
+	A: <forestry:propolis>,
+	B: <ore:dustEndstone>,
+});
+
+# Harded Pollen kit
+craft.shapeless(<gendustry:pollen_kit> * 4, 'AABC', {
+	A: <gendustry:labware>,
+	B: <ore:dustEmerald>,
+	C: <forestry:crafting_material:2>
+});
