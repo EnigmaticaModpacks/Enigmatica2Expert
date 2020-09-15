@@ -109,6 +109,8 @@ var ignore = [
   // cfg says: Fixes MC-54026, which causes blocks attached to slime blocks in some circumstances to create ghost blocks if a piston pushes the slime block. 
   /\[randompatches\]: Failed to transform class: net.minecraft.tileentity.TileEntityPiston/,
 
+  /\[immersiveengineering\]: Recipe has invalid inputs and will be ignored/,
+
 
   /*=============================================
   =               Ignoring Warnings             =
@@ -203,6 +205,12 @@ var ignore = [
   /\[FML\]:   Registry: 859 twilightforest:mob.hydra.warn net.minecraft.util.SoundEvent@28037b9d/,
   /\[advancedrocketry\]: Unable to create file C:\\Users\\LD\\Twitch\\Minecraft\\Instances\\Enigmatica2Expert - Extended\\saves\\New World-\\advRocketry\\planetDefs.xml/,
   /\[com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService\]: Couldn't look up profile properties for .* Invalid uuid.,legacy=false\]/,
+  /\[FML\]: \* Invalid registration attempt for an Ore Dictionary item with name doorWood has occurred\./, // Reported to MIA
+  /\[FML\]: \* Mods using BASE must have their mod class extend IBaseMod!/,
+  /\[net\.minecraft\.server\.MinecraftServer\]: Can't keep up! Did the system time change/,
+  /\[FML\]:   Registry: .*SoundEvent/,
+
+  /Failed to initialize artifact .*: Unknown material/, // Reported to TconEvo
 
 ];
 

@@ -3265,6 +3265,24 @@
               "OreDict:8": ""
             }
           }
+        },
+        "1:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 1,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "patchouli:guide_book",
+              "Count:3": 1,
+              "tag:10": {
+                "patchouli:book:8": "patchouli:e2e_e"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
         }
       }
     },
@@ -4558,7 +4576,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Harvest level 5",
-          "desc:8": "Osmium Ore generates between Y 20 and 40. Obtaining a Pigiron Pickaxe Head will also complete this quest."
+          "desc:8": "Osmium Ore generates ONLY in bedrock. Obtaining a Pigiron Pickaxe Head will also complete this quest."
         }
       },
       "tasks:9": {

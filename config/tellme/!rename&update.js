@@ -1,5 +1,8 @@
 const { readdirSync, renameSync } = require('fs');
+const path = require("path");
 
-readdirSync("./")
+readdirSync(__dirname)
   .filter(f => f.match(/^.*\.(csv|txt)$/))
-  .forEach(f => renameSync(f, f.replace(/^([\w-]+?)_.*\.(csv|txt)$/, "$1.$2")));
+  .forEach(f => renameSync(path.resolve(__dirname, f), path.resolve(__dirname, 
+    f.replace(/^([\w-]+?)_.*\.(csv|txt)$/, "$1.$2")
+  )));

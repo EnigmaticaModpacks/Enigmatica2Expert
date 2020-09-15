@@ -53,7 +53,7 @@
 			"generator": {
 				"type": "lake",
 				"block": "biomesoplenty:poison",
-				"material": ["lake","tallgrass", "grass"],
+				"material": ["dirt","tallgrass", "grass"],
 				"use-material": false,
 				"solid-outline": true,
 				"outline-block": [

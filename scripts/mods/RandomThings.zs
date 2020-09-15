@@ -31,11 +31,11 @@ recipes.addShaped("Floo Dust 64", <randomthings:ingredient:7>*64, [
 ]);
 
 # Lubricient
-remakeEx(<randomthings:ingredient:6> * 4, [
-	[<minecraft:wheat_seeds>, <minecraft:potion>.withTag({Potion: "minecraft:water"})], 
-	[null, <ore:cropBean>]
-	]);
-
+craft.reshapeless(<randomthings:ingredient:6> * 4, 'ABC', {
+	A: <minecraft:wheat_seeds>,
+	B: <minecraft:potion>.withTag({Potion: "minecraft:water"}),
+	C: <ore:cropBean>,
+	});
 
 # Ender book
 recipes.remove(<cyclicmagic:book_ender>);

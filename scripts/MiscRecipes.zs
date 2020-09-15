@@ -508,6 +508,9 @@ mods.thermalexpansion.Compactor.addMintRecipe(trueSilicon * 2, <minecraft:sand>,
 # Quest Book -> Patchouli book
 recipes.addShapeless("Patchouli book", <patchouli:guide_book>.withTag({"patchouli:book": "patchouli:e2e_e"}), [<questbook:itemquestbook>]);
 
+# Tallow into biomass
+scripts.process.melt(<ore:tallow>, <liquid:biomass> * 200, "No Exceptions");
+
 # Molten Cheese
 scripts.process.melt(<ore:cheeseWheels>|<ore:blockCheese>, <liquid:cheese> * 1000, "No Exceptions");
 scripts.process.melt(<ore:foodCheese>|<actuallyadditions:item_food>, <liquid:cheese> * 250, "No Exceptions");

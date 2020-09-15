@@ -72,3 +72,4 @@ Maim Trap from Dark Utilities - best way to kill mobs on high difficulty
 Never spend 6 minutes doing something by hand when you can spend 6 hours to automate it
 Higher High Oven output more heat
 When you pick Core Sample, its automatically added to map. Change map (default key "J") to topography mode to see Mineral Deposits
+Ice Bomb from Twilight Forest turns even flowing lava into obsidian

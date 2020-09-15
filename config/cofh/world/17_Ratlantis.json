@@ -9,7 +9,7 @@
       "distribution": "uniform",
       "generator": {
         "type": "lake",
-        "block": "cyclicmagic:milk",
+        "block": "contenttweaker:cheese_molten",
         "outline-block": "rats:block_of_cheese",
         "use-material": true,
 				"material": [

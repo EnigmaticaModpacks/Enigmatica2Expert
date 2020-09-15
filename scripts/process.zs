@@ -272,9 +272,11 @@ function magic(input as IIngredient[], output as IItemStack[], exceptions as str
 
 # Takes raw material (like Ore block) and enrich (process, treat) it to get materials
 # 📦 → 📦|💧
-function beneficiate(input as IIngredient, oreName as string, amount as int, exceptions as string) {
+function beneficiate(input as IIngredient, oreName as string, amount as int, opts as IData) {
 
   val JA = mods.jaopca.JAOPCA.getOre(oreName);
+  var exceptions = Dd(opts,'exceptions',{d:''}).asString();
+  exceptions = exceptions==''?null:exceptions;
 
   # Determine extra output based on JAOPCA
   var extra = [] as IItemStack[];
@@ -312,8 +314,13 @@ function beneficiate(input as IIngredient, oreName as string, amount as int, exc
   val altLiquid as ILiquidStack = game.getLiquid(oreName.toLowerCase());
   val liquid = isNull(molten) ? altLiquid : molten;
   if (!isNull(liquid) && !isNull(JA)) {
-    if (JA.oreType.toLowerCase() == "ingot") { melt(input, liquid * (144*amount), exceptions); }
-    if (JA.oreType.toLowerCase() == "gem")   { melt(input, liquid * (666*amount), exceptions); }
+    var meltingExceptions = Dd(opts,'meltingExceptions',{d:[]}).asList();
+    var meltAllowed = true;
+    for meltExc in meltingExceptions { if(meltExc.asString() == oreName) meltAllowed=false; }
+    if(meltAllowed) {
+      if (JA.oreType.toLowerCase() == "ingot") { melt(input, liquid * (144*amount), exceptions); }
+      if (JA.oreType.toLowerCase() == "gem")   { melt(input, liquid * (666*amount), exceptions); }
+    }
   }
 
   # Mekanism machines can't work with NBT tags for inputs

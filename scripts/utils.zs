@@ -8,6 +8,18 @@ import crafttweaker.recipes.IRecipeFunction;
 
 
 zenClass Utils {
+  static modPreference as string[] = [
+    "minecraft",
+    "thermalfoundation",
+    "immersiveengineering",
+    "ic2",
+    "mekanism",
+    "appliedenergistics2",
+    "actuallyadditions",
+    "tconstruct",
+    "chisel",
+  ] as string[];
+
 	zenConstructor() { }
 
   function getSomething(oreName as string, entryNames as string[]) as IItemStack {
@@ -25,6 +37,12 @@ zenClass Utils {
     if (isNull(something)) {
       for str in entryNames {
         if (oreDict has (str~oreName)) {
+          var oreItems = oreDict[str~oreName].items;
+          for preffer in modPreference {
+            for item in oreItems {
+              if(item.definition.id.startsWith(preffer)) return item;
+            }
+          }
           return oreDict[str~oreName].firstItem;
         }
       }

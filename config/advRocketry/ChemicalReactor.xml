@@ -154,18 +154,18 @@
 			<fluidStack>diamond 66</fluidStack>
 		</input>
 		<output>
-			<fluidStack>refinedobsidian 144</fluidStack>
+			<fluidStack>refined_obsidian 144</fluidStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Refined Glowstone] from [Osmium Dust+] -->
+	<!-- [Molten Refined Glowstone] from [Osmium Dust+] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>mekanism:dust 1 2</itemStack>
 			<fluidStack>glowstone 250</fluidStack>
 		</input>
 		<output>
-			<fluidStack>refinedglowstone 144</fluidStack>
+			<fluidStack>refined_glowstone 144</fluidStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->

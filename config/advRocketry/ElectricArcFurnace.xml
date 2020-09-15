@@ -86,11 +86,12 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Crystalline Pink Slime Ingot] from [Grains of the End+] -->
+	<!-- [Crystalline Pink Slime Ingot] from [Grains of the End++] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>enderio:item_material 1 37</itemStack>
 			<itemStack>enderio:item_alloy_endergy_ingot 1 1</itemStack>
+			<itemStack>industrialforegoing:pink_slime_ingot 1 0</itemStack>
 		</input>
 		<output>
 			<itemStack>enderio:item_alloy_endergy_ingot 1 4</itemStack>
@@ -175,6 +176,17 @@
 		</input>
 		<output>
 			<itemStack>enderio:item_alloy_ingot 1 5</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Enderium Base] from [Pulsating Iron Ingot+] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>enderio:item_alloy_ingot 1 5</itemStack>
+			<itemStack>extendedcrafting:material 2 36</itemStack>
+		</input>
+		<output>
+			<itemStack>enderio:item_material 1 39</itemStack>
 		</output>
 	</Recipe>
 </Recipes>

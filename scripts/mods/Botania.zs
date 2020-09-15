@@ -206,7 +206,7 @@ function remakeRune(rune as IItemStack, ingrList as IIngredient[], mana as int) 
 /* Water */   remakeRune(<botania:rune:0>*2, [<botania:manaresource:23>, <botania:manaresource>, <ore:foodBassraw>, <ore:dustBlizz>, <minecraft:reeds>, <ore:gemAquamarine>], 5000);
 /* Fire */    remakeRune(<botania:rune:1>*2, [<botania:manaresource:23>, <botania:manaresource>, <harvestcraft:blazingsoupitem>, <ore:dustBlaze>, <ore:slimeballMagma>, <minecraft:lava_bucket>], 5000);
 /* Earth */   remakeRune(<botania:rune:2>*2, [<botania:manaresource:23>, <botania:manaresource>, <ore:blockCoal>, <ore:dustBasalz>, <minecraft:mushroom_stew>, <extrautils2:compresseddirt>], 5000);
-/* Air */     remakeRune(<botania:rune:3>*2, [<botania:manaresource:23>, <botania:manaresource>, <minecraft:wool:3>, <ore:dustBlitz>, <ore:feather>, <ore:dragonscales>], 5000);
+/* Air */     remakeRune(<botania:rune:3>*2, [<botania:manaresource:23>, <botania:manaresource>, <minecraft:wool:3>, <ore:dustBlitz>, <ore:feather>, <ore:boneDragon>], 5000);
 /* Spring */  remakeRune(<botania:rune:4>,   [<botania:rune>, <botania:rune:1>, <minecraft:red_flower:1>, <minecraft:red_flower:2>, <quark:variant_sapling:1>, <minecraft:pumpkin_pie>], 10000);
 /* Summer */  remakeRune(<botania:rune:5>,   [<botania:rune:2>, <botania:rune:3>, <minecraft:sandstone:*>, <tconstruct:slime_congealed:*>, <minecraft:speckled_melon>, <ore:listAllicecream>], 10000);
 /* Autumn */  remakeRune(<botania:rune:6>,   [<botania:rune:1>, <botania:rune:3>, <botania:biomestonea:6>, <botania:biomestonea:3>, <botania:biomestonea>, <minecraft:fermented_spider_eye>], 10000);
@@ -245,6 +245,9 @@ for i, sapling in saplings {
 		mods.botania.ManaInfusion.addAlchemy(saplings[i], saplings[i - 1], 120);
 	}
 }
+
+# Dragon Bone conversion for rune recipes
+mods.botania.ManaInfusion.addAlchemy(<iceandfire:dragonbone>, <ore:blockBone>, 420);
 
 /* Patchouli_js()
 var entryId = 'Knowledge/Liquids/Petro Petunia';

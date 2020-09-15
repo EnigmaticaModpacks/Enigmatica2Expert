@@ -148,7 +148,7 @@ for poop in listRatPoop{
         # ########################
         if(!isNull(poopIngotOrGemOrDust)){
           # mods.astralsorcery.StarlightInfusion.addInfusion(IItemStack input, IItemStack output, boolean consumeMultiple, float consumptionChance, int craftingTickTime);
-          mods.astralsorcery.StarlightInfusion.addInfusion(poop, poopIngotOrGemOrDust*2, false, 0.7, 200);
+          mods.astralsorcery.StarlightInfusion.addInfusion(poop, poopIngotOrGemOrDust*2, false, 0.7, 100);
         }
         
         # ########################

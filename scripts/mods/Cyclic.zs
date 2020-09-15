@@ -106,14 +106,6 @@ import mods.jei.JEI.removeAndHide as rh;
 	[<minecraft:diamond_axe>, <ic2:resource:12>, <minecraft:diamond_axe>], 
 	[<minecraft:furnace>, <minecraft:furnace>, <minecraft:furnace>]]);
 
-# Cyclic Storage Bag
-	recipes.remove(<cyclicmagic:storage_bag>);
-	recipes.addShaped("Storage Bag", 
-	<cyclicmagic:storage_bag>, 
-	[[<ore:leather>, <ore:string>, <ore:leather>],
-	[<ore:leather>, <ore:blockGold>, <ore:leather>], 
-	[<ore:leather>, <ore:blockRedstone>, <ore:leather>]]);
-
 # Diamond Anvil
 	recipes.remove(<cyclicmagic:block_anvil>);
 	recipes.addShaped("Diamond Anvil", 
@@ -198,3 +190,13 @@ recipes.addShaped("Cyclic Shears", <cyclicmagic:shears_obsidian>, [
 recipes.remove(<cyclicmagic:sleeping_mat>);
 recipes.addShapeless("Cyclic Sleep Mat", <cyclicmagic:sleeping_mat>, [
 	<travelersbackpack:sleeping_bag_bottom>, <ore:leather>]);
+
+# Bag
+craft.remake(<cyclicmagic:storage_bag>, ["pretty",
+		'  ▬  ',
+		'○ □ ○',
+		'○ ○ ○'], {
+	'○': <thaumictinkerer:spellbinding_cloth:*>,
+	'▬': <fluxnetworks:flux>,
+	'□': <tconstruct:bow_string:*>
+});
