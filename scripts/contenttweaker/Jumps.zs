@@ -25,16 +25,13 @@ static armSlots as entEqSlot[] = [
 	entEqSlot.head(), entEqSlot.chest(), entEqSlot.legs(), entEqSlot.feet()
 ] as entEqSlot[];
 
-static keyMaterial as string = "stone";
-
 # Makes tiny dust from ore block
 function getDustTiny(item as IItemStack) as IItemStack{
 	if (isNull(item)) {return null;}
   val ores = item.ores;
 	if (isNull(ores) || ores.length == 0) {return null;}
-  for i in 0 to ores.length {
-		val ore = ores[i];
-    if (ore.name.startsWith("ore")) {
+  for ore in ores {
+    if (ore.name.matches("ore[A-Z]\\w+")) {
       val oreName = ore.name.substring(3);
       val jEntry = mods.jaopca.JAOPCA.getOre(oreName);
       if(!isNull(jEntry)){
@@ -42,6 +39,7 @@ function getDustTiny(item as IItemStack) as IItemStack{
       }
     }
   }
+	return null;
 }
 
 
@@ -60,7 +58,6 @@ function spawnDust(dust as IItemStack, e as EntityLivingFallEvent, power as doub
 	# ---------------------
 	# Define dust entity
 	# ---------------------
-	val id = dust.definition.id;
 	val x = entity.x;
 	val y = entity.y + 0.5;
 	val z = entity.z;
@@ -68,10 +65,6 @@ function spawnDust(dust as IItemStack, e as EntityLivingFallEvent, power as doub
 	# ---------------------
 	# Calculate amount
 	# ---------------------
-	var d = (
-		#random() *
-		(power/*  + random() - 0.5d */)
-	) as double;
 	val rd = rndDouble(cotRand);
 	val full as double = floor(power) as double;
 	val frac as double = power - full;
@@ -110,15 +103,12 @@ function onEvent(
 	var cumulativeValues as double[] = [0,0,0,0,0,0,0,0,0,0,0,0,0,0] as double[];
 
 	# Loop over items
-	val itemList as IItemStack[] = [entity.mainHandHeldItem, entity.offHandHeldItem] as IItemStack[];
-	var dustList as IItemStack[] = [] as IItemStack[];
-	var powrList as     double[] = [] as double[];
-	for i in 0 to itemList.length {
-		val heldItem = itemList[i];
-		val durability = (!isNull(armor.tag.Stats) && !isNull(armor.tag.Stats.Durability)) ? armor.tag.Stats.Durability as int : 0;
-
-		if(!isNull(heldItem) && durability > 0) {
-			val dust as IItemStack = getDustTiny(heldItem) as IItemStack;
+	val itemList = [entity.mainHandHeldItem, entity.offHandHeldItem] as IItemStack[];
+	var dustList = [] as IItemStack[];
+	var powrList = [] as double[];
+	for heldItem in itemList {
+		if(!isNull(heldItem) && armor.maxDamage - armor.damage > 0) {
+			val dust = getDustTiny(heldItem);
 
 			if(!isNull(dust)) {
 				# ---------------------
@@ -196,23 +186,11 @@ function onEvent(
 }
 
 # -------------------------------
-# Molten heavy
-# -------------------------------
-var color = Color.fromHex("444450") as Color;
-
-var heavyMatBuilder = MaterialSystem.getMaterialBuilder().setName("Heavy Metal").setColor(color).build();
-
-var molten = heavyMatBuilder.registerPart("molten").getData();
-molten.addDataValue("temperature", "320");
-molten.addDataValue("density", "500000");
-molten.addDataValue("viscosity", "30000");
-
-# -------------------------------
 # Grinding Tait
 # -------------------------------
 val grindingTrait = mods.contenttweaker.conarm.ArmorTraitBuilder.create("grinding");
 grindingTrait.color = 0x444450;
-grindingTrait.localizedDescription = "Ore in your hands drop tiny piles when you run+jumping";
+grindingTrait.localizedDescription = "Jump!\n\u00a7 Ore in your hands drop tiny piles when you run+jumping";
 grindingTrait.localizedName = "Grinding";
 
 # -------------------------------

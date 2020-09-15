@@ -72,6 +72,6 @@ import crafttweaker.item.WeightedItemStack;
 # Amber Block
 	rh(<biomesoplenty:gem_block:7>);
 	
-# Terrestial Artifact block
-craft.shapeless(<contenttweaker:terrestial_artifact_block>, "AAAAAAAAA", {A: <biomesoplenty:terrestrial_artifact>});
-craft.shapeless(<biomesoplenty:terrestrial_artifact> * 9,   "A", {A: <contenttweaker:terrestial_artifact_block>});
+# Terrestrial Artifact block
+craft.shapeless(<contenttweaker:terrestrial_artifact_block>, "AAAAAAAAA", {A: <biomesoplenty:terrestrial_artifact>});
+craft.shapeless(<biomesoplenty:terrestrial_artifact> * 9,   "A", {A: <contenttweaker:terrestrial_artifact_block>});

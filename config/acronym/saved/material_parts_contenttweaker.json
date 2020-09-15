@@ -1,5 +1,6 @@
 {
   "materialMappings": {
-    "heavy_metal_molten": 0
+    "cheese_molten": 0,
+    "heavy_metal_molten": 1
   }
 }

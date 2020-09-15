@@ -207,8 +207,8 @@ for item in loadedMods["notenoughrtgs"].items {
 }
 
 # Decay generator as crafting method
-addDecayRecipe([<contenttweaker:terrestial_artifact_block>, <environmentaltech:litherite>   , 24000.0d, 1750.0d]);
-addDecayRecipe([<environmentaltech:litherite>             , <actuallyadditions:block_misc:6>, 12000.0d,  875.0d]);
+addDecayRecipe([<contenttweaker:terrestrial_artifact_block>, <environmentaltech:litherite>  , 24000.0d, 36000.0d]);
+addDecayRecipe([<environmentaltech:litherite>             , <actuallyadditions:block_misc:6>, 12000.0d, 18000.0d]);
 
 # Radiation mutations
 # Sadly, radiation mutatios works really laggy and cant 

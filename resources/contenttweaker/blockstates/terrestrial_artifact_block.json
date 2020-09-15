@@ -2,8 +2,8 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/terrestial_artifact_block",
-      "particle": "contenttweaker:blocks/terrestial_artifact_block"
+      "texture": "contenttweaker:blocks/terrestrial_artifact_block",
+      "particle": "contenttweaker:blocks/terrestrial_artifact_block"
     },
     "model": "base:storage",
     "uvlock": true,

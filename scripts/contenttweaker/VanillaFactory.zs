@@ -55,7 +55,7 @@ createCompressedBlock("compressed_crushed_granite" , 3, <blockmaterial:rock>);
 
 
 val
-ta = VanillaFactory.createBlock("terrestial_artifact_block", <blockmaterial:rock>);
+ta = VanillaFactory.createBlock("terrestrial_artifact_block", <blockmaterial:rock>);
 ta.toolClass = "pickaxe";
 ta.toolLevel = 9;
 ta.blockHardness = 9 * 1.6;
@@ -63,16 +63,32 @@ ta.blockResistance = 9 * 1.4;
 ta.blockSoundType = <soundtype:stone>;
 ta.register();
 
+
 # -------------------------------
 # Molten Cheese
 # -------------------------------
-var molten = MaterialSystem
+var moltenCheese = MaterialSystem
 	.getMaterialBuilder()
-	.setName("Molten Cheese")
-	.setColor(0xFEE66F)
+	.setName("Cheese")
+	.setColor(Color.fromHex("FEE66F"))
 	.build()
 	.registerPart("molten")
 	.getData();
+moltenCheese.addDataValue("temperature", "300");
+moltenCheese.addDataValue("density", "1004");
+moltenCheese.addDataValue("viscosity", "2000");
+
+
+# -------------------------------
+# Molten heavy
+# -------------------------------
+var heavyMatBuilder = MaterialSystem
+	.getMaterialBuilder()
+	.setName("Heavy Metal")
+	.setColor(Color.fromHex("444450"))
+	.build();
+
+var molten = heavyMatBuilder.registerPart("molten").getData();
 molten.addDataValue("temperature", "320");
 molten.addDataValue("density", "500000");
 molten.addDataValue("viscosity", "30000");
