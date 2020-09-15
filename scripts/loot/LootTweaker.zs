@@ -1,4 +1,9 @@
-import mods.ltt.LootTable;
+import loottweaker.LootTweaker;
+import loottweaker.vanilla.loot.LootTable;
+import loottweaker.vanilla.loot.LootPool;
+import loottweaker.vanilla.loot.Conditions;
+import loottweaker.vanilla.loot.Functions;
+import crafttweaker.item.IItemStack;
 
 var itemsToRemove as string[] = [
 	
@@ -44,5 +49,10 @@ var itemsToRemove as string[] = [
 ];
 
 for item in itemsToRemove {
-	LootTable.removeGlobalItem(item);
+	mods.ltt.LootTable.removeGlobalItem(item);
 }
+
+
+val enderman = LootTweaker.getTable("minecraft:entities/enderman"); //Enderman (make enderpearls drop 100% of the time)
+enderman.getPool("main").removeEntry("minecraft:ender_pearl"); //Remove main enderpearl entry
+enderman.getPool("main").addItemEntryHelper(<minecraft:ender_pearl>, 1, 0, [Functions.lootingEnchantBonus(0, 1, 0)], [Conditions.killedByPlayer()], "minecraft:ender_pearl");
