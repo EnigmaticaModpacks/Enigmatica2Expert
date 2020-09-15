@@ -1,0 +1,53 @@
+{
+  "name": "compactmachines3:zombieegg",
+
+  "disabled": true,
+
+  "target-item": "minecraft:spawn_egg",
+  "target-count": 1,
+  "target-nbt": "{EntityTag:{id:\"minecraft:zombie\"}}",
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "minecraft:spider_eye",
+
+  "input-types": {
+    "f": {
+      "id": "minecraft:fire",
+      "meta": 8,
+      "ignore-meta": true,
+      "item": {
+        "id": "minecraft:flint_and_steel",
+        "meta": 0,
+        "count": 1
+      }
+    },
+    "n": {
+      "id": "minecraft:netherrack",
+      "meta": 0
+    },
+    "s": {
+      "id": "minecraft:soul_sand",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      [ "_", "_", "_" ],
+      [ "_", "s", "_" ],
+      [ "_", "_", "_" ]
+    ],
+    [
+      [ "f", "f", "f" ],
+      [ "f", "s", "f" ],
+      [ "f", "f", "f" ]
+    ],
+    [
+      [ "n", "n", "n" ],
+      [ "n", "n", "n" ],
+      [ "n", "n", "n" ]
+    ]
+  ]
+
+}

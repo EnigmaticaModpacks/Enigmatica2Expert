@@ -1,0 +1,34 @@
+{
+  "name": "compactmachines3:machine-tiny",
+  "target-item": "compactmachines3:machine",
+  "target-meta": 0,
+  "target-count": 1,
+
+  "duration": 400,
+
+  "catalyst": "minecraft:ender_pearl",
+
+  "input-types": {
+    "w": { "id": "compactmachines3:wallbreakable" }
+  },
+
+  "symmetrical": true,
+  "shape": [
+    [
+      ["w","w","w"],
+      ["w","w","w"],
+      ["w","w","w"]
+    ],
+    [
+      ["w","w","w"],
+      ["w","_","w"],
+      ["w","w","w"]
+    ],
+    [
+      ["w","w","w"],
+      ["w","w","w"],
+      ["w","w","w"]
+    ]
+  ]
+
+}

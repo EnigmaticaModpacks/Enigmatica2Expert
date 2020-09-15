@@ -1,0 +1,27 @@
+{
+  "name": "compactmachines3:tunneltool",
+  "target-item": "compactmachines3:tunneltool",
+  "target-count": 2,
+
+  "duration": 200,
+
+  "input-types": {
+    "s": { "id": "minecraft:redstone_wire" },
+    "h": { "id": "minecraft:hopper" },
+    "w": { "id": "compactmachines3:wallbreakable"}
+  },
+
+  "symmetrical": true,
+  "shape": [
+    [
+      ["_", "_", "_"],
+      ["_", "h", "_"],
+      ["_", "_", "_"]
+    ],
+    [
+      ["s", "s", "s"],
+      ["s", "w", "s"],
+      ["s", "s", "s"]
+    ]
+  ]
+}

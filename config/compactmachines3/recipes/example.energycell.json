@@ -1,0 +1,117 @@
+{
+  "name": "compactmachines3:energy_cell",
+
+  "disabled": true,
+
+  "target-item": "thermalexpansion:cell",
+  "target-count": 1,
+
+  "duration": 300,
+  "symmetrical": true,
+
+  "catalyst": "minecraft:blaze_powder",
+
+  "input-types": {
+    "a": {
+      "id": "thermaldynamics:duct_0",
+      "meta": 0
+    },
+    "b": {
+      "id": "minecraft:chest",
+      "meta": 0,
+      "ignore-meta": true
+    }
+  },
+  "input-nbt": {
+    "a:A": {
+      "nbt": "{\"cm3_extra:ThermalDynamicsGrid\":{Connections:[2,0,0,2,0,2]},Energy:{},id:\"thermaldynamics:duct_energy_basic\",Attachments:[]}"
+    },
+    "a:B": {
+      "nbt": "{\"cm3_extra:ThermalDynamicsGrid\":{Connections:[0,0,2,2,0,0]},Energy:{},id:\"thermaldynamics:duct_energy_basic\",Attachments:[]}"
+    },
+    "a:C": {
+      "nbt": "{\"cm3_extra:ThermalDynamicsGrid\":{Connections:[2,0,2,0,0,2]},Energy:{},id:\"thermaldynamics:duct_energy_basic\",Attachments:[]}"
+    },
+    "a:D": {
+      "nbt": "{\"cm3_extra:ThermalDynamicsGrid\":{Connections:[2,2,0,0,0,0]},Energy:{},id:\"thermaldynamics:duct_energy_basic\",Attachments:[]}"
+    },
+    "a:E": {
+      "nbt": "{\"cm3_extra:ThermalDynamicsGrid\":{Connections:[0,2,0,2,0,2]},Energy:{},id:\"thermaldynamics:duct_energy_basic\",Attachments:[]}"
+    },
+    "a:F": {
+      "nbt": "{\"cm3_extra:ThermalDynamicsGrid\":{Connections:[0,2,2,0,0,2]},Energy:{},id:\"thermaldynamics:duct_energy_basic\",Attachments:[]}"
+    },
+    "a:G": {
+      "nbt": "{\"cm3_extra:ThermalDynamicsGrid\":{Connections:[0,0,0,0,2,2]},Energy:{},id:\"thermaldynamics:duct_energy_basic\",Attachments:[]}"
+    },
+    "b:A": {
+      "nbt": "{Items:[],id:\"minecraft:chest\",Lock:\"\"}"
+    },
+    "a:H": {
+      "nbt": "{\"cm3_extra:ThermalDynamicsGrid\":{Connections:[2,0,0,2,2,0]},Energy:{},id:\"thermaldynamics:duct_energy_basic\",Attachments:[]}"
+    },
+    "a:I": {
+      "nbt": "{\"cm3_extra:ThermalDynamicsGrid\":{Connections:[2,0,2,0,2,0]},Energy:{},id:\"thermaldynamics:duct_energy_basic\",Attachments:[]}"
+    },
+    "a:J": {
+      "nbt": "{\"cm3_extra:ThermalDynamicsGrid\":{Connections:[0,2,0,2,2,0]},Energy:{},id:\"thermaldynamics:duct_energy_basic\",Attachments:[]}"
+    },
+    "a:K": {
+      "nbt": "{\"cm3_extra:ThermalDynamicsGrid\":{Connections:[0,2,2,0,2,0]},Energy:{},id:\"thermaldynamics:duct_energy_basic\",Attachments:[]}"
+    }
+  },
+  "shape": [
+    [
+      [
+        "a:A",
+        "a:G",
+        "a:H"
+      ],
+      [
+        "a:B",
+        "_",
+        "a:B"
+      ],
+      [
+        "a:C",
+        "a:G",
+        "a:I"
+      ]
+    ],
+    [
+      [
+        "a:D",
+        "_",
+        "a:D"
+      ],
+      [
+        "_",
+        "b:A",
+        "_"
+      ],
+      [
+        "a:D",
+        "_",
+        "a:D"
+      ]
+    ],
+    [
+      [
+        "a:E",
+        "a:G",
+        "a:J"
+      ],
+      [
+        "a:B",
+        "_",
+        "a:B"
+      ],
+      [
+        "a:F",
+        "a:G",
+        "a:K"
+      ]
+    ]
+  ]
+
+}

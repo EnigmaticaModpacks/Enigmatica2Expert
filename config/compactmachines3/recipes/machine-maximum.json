@@ -1,0 +1,54 @@
+{
+  "name": "compactmachines3:machine-maximum",
+  "target-item": "compactmachines3:machine",
+  "target-meta": 5,
+  "target-count": 1,
+
+  "duration": 600,
+
+  "catalyst": "minecraft:ender_pearl",
+
+  "input-types": {
+    "w": { "id": "compactmachines3:wallbreakable" },
+    "e": { "id": "thermalfoundation:storage_alloy", "meta":7 }
+  },
+
+  "symmetrical": true,
+  "shape": [
+    [
+      ["w","w","w","w","w"],
+      ["w","w","w","w","w"],
+      ["w","w","w","w","w"],
+      ["w","w","w","w","w"],
+      ["w","w","w","w","w"]
+    ],
+    [
+      ["w","w","w","w","w"],
+      ["w","_","_","_","w"],
+      ["w","_","_","_","w"],
+      ["w","_","_","_","w"],
+      ["w","w","w","w","w"]
+    ],
+    [
+      ["w","w","w","w","w"],
+      ["w","_","_","_","w"],
+      ["w","_","e","_","w"],
+      ["w","_","_","_","w"],
+      ["w","w","w","w","w"]
+    ],
+    [
+      ["w","w","w","w","w"],
+      ["w","_","_","_","w"],
+      ["w","_","_","_","w"],
+      ["w","_","_","_","w"],
+      ["w","w","w","w","w"]
+    ],
+    [
+      ["w","w","w","w","w"],
+      ["w","w","w","w","w"],
+      ["w","w","w","w","w"],
+      ["w","w","w","w","w"],
+      ["w","w","w","w","w"]
+    ]
+  ]
+}

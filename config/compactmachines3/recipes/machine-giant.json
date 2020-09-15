@@ -1,0 +1,54 @@
+{
+  "name": "compactmachines3:machine-giant",
+  "target-item": "compactmachines3:machine",
+  "target-meta": 4,
+  "target-count": 1,
+
+  "duration": 560,
+
+  "catalyst": "minecraft:ender_pearl",
+
+  "input-types": {
+    "w": { "id": "compactmachines3:wallbreakable" },
+    "d": { "id": "plustic:osgloglasblock"}
+  },
+
+  "symmetrical": true,
+  "shape": [
+    [
+      ["w","w","w","w","w"],
+      ["w","w","w","w","w"],
+      ["w","w","w","w","w"],
+      ["w","w","w","w","w"],
+      ["w","w","w","w","w"]
+    ],
+    [
+      ["w","w","w","w","w"],
+      ["w","_","_","_","w"],
+      ["w","_","_","_","w"],
+      ["w","_","_","_","w"],
+      ["w","w","w","w","w"]
+    ],
+    [
+      ["w","w","w","w","w"],
+      ["w","_","_","_","w"],
+      ["w","_","d","_","w"],
+      ["w","_","_","_","w"],
+      ["w","w","w","w","w"]
+    ],
+    [
+      ["w","w","w","w","w"],
+      ["w","_","_","_","w"],
+      ["w","_","_","_","w"],
+      ["w","_","_","_","w"],
+      ["w","w","w","w","w"]
+    ],
+    [
+      ["w","w","w","w","w"],
+      ["w","w","w","w","w"],
+      ["w","w","w","w","w"],
+      ["w","w","w","w","w"],
+      ["w","w","w","w","w"]
+    ]
+  ]
+}
