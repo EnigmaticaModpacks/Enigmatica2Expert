@@ -684,3 +684,23 @@ for item in pressurePlates {
 # Any iceCream
 <ore:listAllicecream>.addItems(itemUtils.getItemsByRegexRegistryName("harvestcraft:.*icecreamitem"));
 <ore:listAllicecream>.remove(<harvestcraft:silkentofuitem>);
+
+# Clear "ore" entry from hunks
+# And remove hunks from JEI
+function removeHunkOre(item as IItemStack) {
+  for ore in item.ores {
+    if (ore.name.startsWith("ore") || ore.name.startsWith("hunk") ) {
+      ore.remove(item);
+			rh(item);
+    }
+  }
+}
+
+for item in loadedMods["exnihilocreatio"].items {
+  if(item.definition.id.matches("exnihilocreatio:item_ore\\w+")) 
+		removeHunkOre(item);
+}
+for item in loadedMods["jaopca"].items {
+  if(item.definition.id.matches("jaopca:item_hunk\\w+")) 
+    removeHunkOre(item);
+}

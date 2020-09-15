@@ -1,0 +1,8 @@
+[
+ {"name": "chunk","type": "item","ore_types": ["ingot","ingot_oreless","gem","gem_oreless","dust"],"properties": {}}
+,{"name": "rockyChunk","type": "item","ore_types": ["ingot","ingot_oreless","gem","gem_oreless","dust"],"properties": {}}
+,{"name": "dustAlch","type": "item","ore_types": ["ingot","ingot_oreless","gem","gem_oreless","dust"],"properties": {}}
+,{"name": "dirtyGem","type": "item","ore_types": ["ingot","ingot_oreless","gem","gem_oreless","dust"],"properties": {}}
+,{"name": "crystalAbyss","type": "item","ore_types": ["ingot","ingot_oreless","gem","gem_oreless","dust"],"properties": {}}
+,{"name": "cluster","type": "item","ore_types": ["ingot","ingot_oreless","gem","gem_oreless","dust"],"properties": {}}
+]

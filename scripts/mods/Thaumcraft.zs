@@ -107,11 +107,3 @@ mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreLead>, <thermalfoundation
 	[[null, <astralsorcery:itemrockcrystalsimple>.anyDamage(), <astralsorcery:itemrockcrystalsimple>.anyDamage()],
 	[null, <astralsorcery:itemrockcrystalsimple>.anyDamage(), <astralsorcery:itemrockcrystalsimple>.anyDamage()], 
 	[<ore:stickTreatedWood>, null, null]]);
-
-# Native clusters processing
-for entry in oreDict {
-	val name = entry.name;
-	if (name.matches("cluster[A-Z]\\w+")) {
-		scripts.process.beneficiate(entry, name.substring(7), 3, "except: Pulverizer");
-	}
-}

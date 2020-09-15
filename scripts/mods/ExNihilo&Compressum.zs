@@ -106,24 +106,6 @@ import mods.jei.JEI.removeAndHide as rh;
 	rh(<exnihilocreatio:block_crucible_wood>);
 	rh(<exnihilocreatio:block_crucible:1>);
 	
-# Ex Nihilo Ore chunks - Replacing with "real" ore
-	rh(<exnihilocreatio:item_ore_gold:1>);
-	rh(<exnihilocreatio:item_ore_iron:1>);
-	rh(<exnihilocreatio:item_ore_copper:1>);
-	rh(<exnihilocreatio:item_ore_tin:1>);
-	rh(<exnihilocreatio:item_ore_aluminium:1>);
-	rh(<exnihilocreatio:item_ore_lead:1>);
-	rh(<exnihilocreatio:item_ore_silver:1>);
-	rh(<exnihilocreatio:item_ore_nickel:1>);
-	rh(<exnihilocreatio:item_ore_ardite:1>);
-	rh(<exnihilocreatio:item_ore_cobalt:1>);
-	rh(<jaopca:item_hunkosmium>);
-	rh(<jaopca:item_hunkboron>);
-	rh(<jaopca:item_hunklithium>);
-	rh(<jaopca:item_hunkmagnesium>);
-	rh(<jaopca:item_hunkthorium>);
-	rh(<jaopca:item_hunkuranium>);
-	
 # Ex Nihilo Dusts
 	rh(<exnihilocreatio:item_ore_gold:2>);
 	rh(<exnihilocreatio:item_ore_iron:2>);
