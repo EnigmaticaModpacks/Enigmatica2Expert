@@ -1,0 +1,20 @@
+{
+  "catalystStack": {
+    "registryName": {
+      "domain": "nuclearcraft",
+      "path": "ingot_block"
+    },
+    "meta": 3
+  },
+  "components": [
+    { "weight": 30,"oreName": "oreThorium"}
+    ,{"weight": 35,"oreName": "oreBoron"}
+    ,{"weight": 20,"oreName": "oreLithium"}
+    ,{"weight": 15,"oreName": "oreMagnesium"}
+  ],
+  "explosionStrength": 10.0,
+  "radius": 4,
+  "maxWeight": 1440,
+  "version": 4,
+  "cost": 1100000
+}

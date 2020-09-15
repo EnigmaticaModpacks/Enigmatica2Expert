@@ -1,0 +1,37 @@
+{
+  "catalystStack": {
+    "registryName": {
+      "domain": "tconstruct",
+      "path": "metal"
+    },
+    "meta": 1
+  },
+  "components": [
+    { "weight":150,"oreName": "oreQuartz"}
+    ,{"weight": 60,"oreName" : "oreNetherAluminum"}
+    ,{"weight": 60,"oreName" : "oreNetherCopper"}
+    ,{"weight": 60,"oreName" : "oreNetherLead"}
+    ,{"weight": 50,"oreName" : "oreNetherNickel"}
+    ,{"weight":110,"oreName" : "oreNetherRedstone"}
+    ,{"weight":100,"oreName" : "oreNetherLapis"}
+    ,{"weight": 90,"oreName" : "oreNetherIron"}
+    ,{"weight": 80,"oreName" : "oreNetherGold"}
+    ,{"weight": 70,"oreName" : "oreNetherEmerald"}
+    ,{"weight": 60,"oreName" : "oreNetherDiamond"}
+    ,{"weight":130,"oreName" : "oreNetherCoal"}
+    ,{"weight": 30,"oreName" : "oreNetherPlatinum"}
+    ,{"weight": 50,"oreName" : "oreNetherSilver"}
+    ,{"weight": 70,"oreName" : "oreNetherTin"}
+    ,{"weight": 50,"oreName" : "oreNetherCertusQuartz"}
+    ,{"weight": 40,"oreName" : "oreNetherChargedCertusQuartz"}
+    ,{"weight": 30,"oreName" : "oreNetherOsmium"}
+    ,{"weight": 30,"oreName" : "oreNetherUranium"}
+    ,{"weight":170,"oreName" : "oreCobalt"}
+    ,{"weight":170,"oreName" : "oreArdite"}
+  ],
+  "explosionStrength": 18.0,
+  "radius": 5,
+  "maxWeight": 650,
+  "version": 4,
+  "cost": 1700000
+}

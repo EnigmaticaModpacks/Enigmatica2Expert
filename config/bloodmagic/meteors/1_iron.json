@@ -1,0 +1,25 @@
+{
+  "catalystStack": {
+    "registryName": {
+      "domain": "minecraft",
+      "path": "iron_block"
+    },
+    "meta": 0
+  },
+  "components": [
+    { "weight":400,"oreName": "oreIron"}
+    ,{"weight":200,"oreName": "oreCopper"}
+    ,{"weight":140,"oreName": "oreTin"}
+    ,{"weight": 70,"oreName": "oreSilver"}
+    ,{"weight": 80,"oreName": "oreLead"}
+    ,{"weight": 30,"oreName": "oreGold"}
+    ,{"weight": 60,"oreName": "oreLapis"}
+    ,{"weight":100,"oreName": "oreRedstone"}
+    ,{"weight":100,"oreName": "oreAluminum"}
+  ],
+  "explosionStrength": 15.0,
+  "radius": 7,
+  "maxWeight": 1080,
+  "version": 3,
+  "cost": 600000
+}

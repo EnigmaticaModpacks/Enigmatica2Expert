@@ -1,0 +1,32 @@
+{
+  "catalystStack": {
+    "registryName": {
+      "domain": "minecraft",
+      "path": "emerald_block"
+    },
+    "meta": 0
+  },
+  "components": [
+    {"weight": 120,"oreName": "oreLapis"}
+    ,{"weight":130,"oreName" : "oreDiamond"}
+    ,{"weight":180,"oreName" : "oreEmerald"}
+    ,{"weight": 20,"oreName" : "oreCoal"}
+    ,{"weight": 20,"oreName" : "oreRuby"}
+    ,{"weight": 20,"oreName" : "orePeridot"}
+    ,{"weight": 20,"oreName" : "oreTopaz"}
+    ,{"weight": 20,"oreName" : "oreTanzanite"}
+    ,{"weight": 20,"oreName" : "oreMalachite"}
+    ,{"weight": 20,"oreName" : "oreSapphire"}
+    ,{"weight":160,"oreName" : "oreAmber"}
+    ,{"weight": 20,"oreName" : "oreApatite"}
+    ,{"weight":120,"oreName" : "oreCertusQuartz"}
+    ,{"weight": 90,"oreName" : "oreCinnabar"}
+    ,{"weight": 70,"oreName" : "oreProsperity"}
+    ,{"weight": 20,"oreName" : "oreQuartzBlack"}
+  ],
+  "explosionStrength": 18.0,
+  "radius": 3,
+  "maxWeight": 650,
+  "version": 4,
+  "cost": 1400000
+}

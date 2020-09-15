@@ -47,6 +47,12 @@ var defaultFileContent = {
     description: "Chapters about things in this modpack:"
   },
   
+  worldgen: {
+    name: "World Gen",
+    icon: "biomesoplenty:earth",
+    description: "Tweaks and changes about world gereneration and mining:"
+  },
+  
   energy: {
     icon: "nuclearcraft:upgrade:1",
     description: "Things related to $(l)Energy/$ =>"
