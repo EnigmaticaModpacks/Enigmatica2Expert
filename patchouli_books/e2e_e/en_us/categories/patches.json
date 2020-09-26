@@ -2,5 +2,6 @@
   "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
   "name": "Patches",
   "icon": "artisanworktables:artisans_grimoire_electrum",
-  "description": "Pick version:"
+  "description": "Pick version:",
+  "sortnum": -1
 }

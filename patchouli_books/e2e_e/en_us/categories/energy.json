@@ -2,6 +2,5 @@
   "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
   "name": "Energy",
   "icon": "nuclearcraft:upgrade:1",
-  "description": "Things related to $(l)Energy/$ =>",
-  "parent": "patchouli:knowledge"
+  "description": "Things related to $(l)Energy/$ =>"
 }

@@ -30,7 +30,7 @@ Patchouli_js("Liquid Interactions", {
 	item:  "astralsorcery:blockchalice",
 	_text: `Not only Water+Lava!
 		Now many kinds of liquids can provide blocks when interacting in the World or in Containtment Chalice$(br2)
-		$(l:knowledge/liquids/liquid_interactions)<<See more>>/$`
+		$(l:liquids/liquid_interactions)<<See more>>/$`
 })
 
 var btweaks = config("botaniatweaks.cfg");
@@ -77,7 +77,7 @@ Patchouli_js({
 	_text: `
 		All 6 $(l)Void Miner/$ and $(l)Solar/$ Controller's recipes was changed.
     Energy output was significally changed too.
-    $(l:knowledge/energy/environmental_tech)<<See more>>/$
+    $(l:energy/environmental_tech)<<See more>>/$
 	`,
 })
 

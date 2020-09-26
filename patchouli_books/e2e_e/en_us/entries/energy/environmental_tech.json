@@ -2,7 +2,7 @@
   "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
   "name": "Environmental Tech",
   "icon": "environmentaltech:solar_cont_1",
-  "category": "patchouli:subcategories/energy",
+  "category": "Energy",
   "pages": [
     {
       "type": "item_list",

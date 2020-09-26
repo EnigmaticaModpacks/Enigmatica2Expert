@@ -2,7 +2,7 @@
   "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
   "name": "Lootboxes",
   "icon": "bq_standard:loot_chest",
-  "category": "Knowledge",
+  "category": "Items",
   "pages": [
     {
       "type": "spotlight_advanced",

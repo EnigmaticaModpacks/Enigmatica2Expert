@@ -39,12 +39,7 @@ var defaultFileContent = {
   patches: {
     description: "Pick version:",
     icon: "artisanworktables:artisans_grimoire_electrum",
-  },
-  
-  knowledge: {
-    name: "Knowledge",
-    icon: "thaumcraft:enchanted_placeholder",
-    description: "Chapters about things in this modpack:"
+    sortnum: -1,
   },
   
   worldgen: {

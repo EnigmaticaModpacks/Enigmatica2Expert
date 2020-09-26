@@ -2,7 +2,7 @@
   "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
   "name": "Cloche Fertilizers",
   "icon": "immersiveengineering:metal_device1:13",
-  "category": "patchouli:subcategories/liquids",
+  "category": "Liquids",
   "pages": [
     {
       "item": "immersiveengineering:metal_device1:13",

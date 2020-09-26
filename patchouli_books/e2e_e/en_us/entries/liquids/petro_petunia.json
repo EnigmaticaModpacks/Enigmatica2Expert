@@ -2,7 +2,7 @@
   "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
   "name": "Petro Petunia",
   "icon": "botania:specialflower{type:\"petro_petunia\"}",
-  "category": "patchouli:subcategories/liquids",
+  "category": "Liquids",
   "pages": [
     {
       "title": "Petro Petunia Fuels",

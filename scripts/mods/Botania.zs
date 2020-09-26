@@ -261,7 +261,7 @@ mods.botania.PureDaisy.addRecipe(<ore:blockGlassPurple>, <quark:crystal:7>);
 mods.botania.PureDaisy.addRecipe(<ore:blockGlassBlack>,  <quark:crystal:8>);
 
 /* Patchouli_js()
-var entryId = 'Knowledge/Liquids/Petro Petunia';
+var entryId = 'Liquids/Petro Petunia';
 
 Patchouli_js(entryId, {
   title: "Petro Petunia Fuels",

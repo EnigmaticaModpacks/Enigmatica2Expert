@@ -6,7 +6,7 @@
   "pages": [
     {
       "item": "astralsorcery:blockchalice",
-      "text": "Not only Water+Lava!$(br)Now many kinds of liquids can provide blocks when interacting in the World or in Containtment Chalice$(br2)$(br)$(l:knowledge/liquids/liquid_interactions)<<See more>>/$",
+      "text": "Not only Water+Lava!$(br)Now many kinds of liquids can provide blocks when interacting in the World or in Containtment Chalice$(br2)$(br)$(l:liquids/liquid_interactions)<<See more>>/$",
       "type": "spotlight",
       "title": "Liquid Interactions"
     }

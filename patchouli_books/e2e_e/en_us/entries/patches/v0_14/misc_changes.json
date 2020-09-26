@@ -29,7 +29,7 @@
       "item2": "environmentaltech:solar_cell_litherite",
       "item3": "environmentaltech:void_ore_miner_cont_1",
       "uneven": true,
-      "text": "All 6 $(l)Void Miner/$ and $(l)Solar/$ Controller's recipes was changed.$(br)Energy output was significally changed too.$(br)$(l:knowledge/energy/environmental_tech)<<See more>>/$"
+      "text": "All 6 $(l)Void Miner/$ and $(l)Solar/$ Controller's recipes was changed.$(br)Energy output was significally changed too.$(br)$(l:energy/environmental_tech)<<See more>>/$"
     }
   ]
 }

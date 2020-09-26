@@ -21,7 +21,7 @@ match_regex_below(
 ).map(m=>[m[1], Math.round(parseFloat(m[2])*100)])
 .forEach(m=>statics[m[0]] = m[1])
 
-Patchouli_js('Knowledge/Mobs/Equip Generation', [
+Patchouli_js('Mobs/Equip Generation', [
   {
     item: `draconicevolution:mob_soul{EntityName:"minecraft:zombie"}`,
     title: "Equip Generation",

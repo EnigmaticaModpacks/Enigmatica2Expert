@@ -2,6 +2,5 @@
   "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
   "name": "Liquids",
   "icon": "minecraft:water_bucket",
-  "description": "Things you can do with $(l)Liquids/$ =>",
-  "parent": "patchouli:knowledge"
+  "description": "Things you can do with $(l)Liquids/$ =>"
 }

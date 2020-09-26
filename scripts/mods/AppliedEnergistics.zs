@@ -231,7 +231,7 @@ import mods.jei.JEI.removeAndHide as rh;
 scripts.process.crush(<appliedenergistics2:sky_stone_block>, <appliedenergistics2:material:45>, "Except: AEGrinder Pulverizer", null, null);
 
 /* 
-Patchouli_js('Knowledge/Items/Matter Cannon', [
+Patchouli_js('Items/Matter Cannon', [
   {
     icon: "appliedenergistics2:matter_cannon",
     title: "Matter Cannon Ammo",

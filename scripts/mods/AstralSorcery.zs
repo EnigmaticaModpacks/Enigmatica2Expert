@@ -98,7 +98,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <astralsorcery:itemknowledgesha
 ]);
 
 
-/* Patchouli_js('Knowledge/Liquids/Liquid Interactions', 
+/* Patchouli_js('Liquids/Liquid Interactions', 
 	paged({
 		type: "fluid_interaction",
 		icon: "astralsorcery:blockchalice"

@@ -2,7 +2,7 @@
   "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
   "name": "Equip Generation",
   "icon": "draconicevolution:mob_soul{EntityName:\"minecraft:zombie\"}",
-  "category": "patchouli:subcategories/mobs",
+  "category": "Mobs",
   "pages": [
     {
       "item": "draconicevolution:mob_soul{EntityName:\"minecraft:zombie\"}",

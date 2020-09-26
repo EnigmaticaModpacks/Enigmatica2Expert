@@ -2,7 +2,7 @@
   "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
   "name": "Railgui Bullets",
   "icon": "immersiveengineering:railgun",
-  "category": "patchouli:subcategories/items",
+  "category": "Items",
   "pages": [
     {
       "item": "immersiveengineering:railgun",
