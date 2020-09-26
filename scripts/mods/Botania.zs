@@ -249,6 +249,17 @@ for i, sapling in saplings {
 # Dragon Bone conversion for rune recipes
 mods.botania.ManaInfusion.addAlchemy(<iceandfire:dragonbone>, <ore:blockBone>, 420);
 
+# Colored Glass -> Quark Cave Crystals
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassWhite>,  <quark:crystal>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassRed>,    <quark:crystal:1>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassOrange>, <quark:crystal:2>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassYellow>, <quark:crystal:3>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassLime>,   <quark:crystal:4>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassCyan>,   <quark:crystal:5>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassBlue>,   <quark:crystal:6>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassPurple>, <quark:crystal:7>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassBlack>,  <quark:crystal:8>);
+
 /* Patchouli_js()
 var entryId = 'Knowledge/Liquids/Petro Petunia';
 
