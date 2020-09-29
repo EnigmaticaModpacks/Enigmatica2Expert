@@ -25,7 +25,7 @@ recipes.addShaped("Morphing Tool", <morphtool:tool>, [
 	teslacorelib: { id: "teslacorelib:wrench", Count: 1 as byte, Damage: 0 as short}, 
 	bloodmagic: {id: "bloodmagic:ritual_reader", Count: 1 as byte, Damage: 0 as short}, 
 	draconicevolution: {id: "draconicevolution:crystal_binder", Count: 1 as byte, Damage: 0 as short}, 
-	immersiveengineering: {id: "immersiveengineering:tool", Count: 1 as byte, Damage: 0 as short}, 
+	immersiveengineering: {id: "immersiveengineering:tool", Count: 1 as byte, tag: {"morphtool:is_morphing": 1 as byte, display: {Name: "§rMorphing Tool (§aEngineer's Hammer§r)"}, "morphtool:displayName": "Engineer's Hammer"}, Damage: 0 as short},
 	storagedrawers: {id: "storagedrawers:drawer_key", Count: 1 as byte, Damage: 0 as short}, 
 	environmentaltech: {id: "environmentaltech:tool_multiblock_assembler", Count: 1 as byte, Damage: 0 as short},
 	mekanism: {id: "mekanism:configurator", Count: 1 as byte, Damage: 0 as short}}}),
