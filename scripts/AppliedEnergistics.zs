@@ -2,6 +2,12 @@ import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.item.IIngredient as IIngredient;
 #modloaded appliedenergistics2
 	
+# Removing non-functional Extra Cells
+	reicpes.remove(<extracells:storage.fluid:5>);
+	reicpes.remove(<extracells:storage.fluid:6>);
+	reicpes.remove(<extracells:storage.component:9>);
+	reicpes.remove(<extracells:storage.component:10>	);
+
 	var pearlFluix = <ore:pearlFluix>;
 	var crystalCertus = <ore:crystalCertus>;
 
