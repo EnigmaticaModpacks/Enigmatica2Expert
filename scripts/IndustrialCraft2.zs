@@ -4,6 +4,9 @@ import crafttweaker.item.IIngredient;
 #modloaded ic2
 print("--- loading IndustrialCraft2.zs ---");
 
+# Crushed Uranium furnace recipes
+	furnace.addRecipe(<immersiveengineering:metal:5>, <ic2:crushed:6>);
+
 # Removing IC2 coal coke
 	recipes.remove(<ic2:coke>);
 	
