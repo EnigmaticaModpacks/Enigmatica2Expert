@@ -3,6 +3,13 @@ import crafttweaker.item.IItemStack;
 
 recipes.removeByRecipeName("harvestcraft:berryvinaigrettesaladitem");
 
+# Raw Meat -> Ground Meat
+mods.thermalexpansion.Pulverizer.addRecipe(<harvestcraft:groundduckitem>, <harvestcraft:duckrawitem>, 2000);
+mods.thermalexpansion.Pulverizer.addRecipe(<harvestcraft:groundmuttonitem>, <minecraft:mutton>, 2000);
+mods.thermalexpansion.Pulverizer.addRecipe(<harvestcraft:groundturkeyitem>, <harvestcraft:turkeyrawitem>, 2000);
+mods.thermalexpansion.Pulverizer.addRecipe(<harvestcraft:groundvenisonitem>, <harvestcraft:venisonrawitem>, 2000);
+
+
 # Seeds/Crops that already have recipe added by IE and oredicted, will be removed and re-added from oredict
                          
 val blacklist_fermenter = [<minecraft:potato>] as IItemStack[];
