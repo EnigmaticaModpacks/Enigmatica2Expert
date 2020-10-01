@@ -1,6 +1,9 @@
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded cyclicmagic
 
+# Removing Obsidian -> Lava
+Melter.removeShapedRecipe("lava", 1000);
+
 # Removing Simple Block Miner
 	rh(<cyclicmagic:block_miner>);
 	
@@ -128,15 +131,6 @@ import mods.jei.JEI.removeAndHide as rh;
 	[<extrautils2:decorativeglass:3>, <enderio:block_reinforced_obsidian>, <extrautils2:decorativeglass:3>], 
 	[<extrautils2:decorativeglass:3>, <extrautils2:decorativeglass:3>, <extrautils2:decorativeglass:3>]
 	]);
-
-	
-
-# Player Launcher
-recipes.remove(<cyclicmagic:tool_launcher>);
-recipes.addShaped("Cyclic Player Launcher", <cyclicmagic:tool_launcher>, [
-[null, <ore:nuggetRefinedGlowstone>, <ore:nuggetRefinedGlowstone>],
-[<ore:peacockFeathers>, <tconstruct:slimesling:*>.anyDamage(), <ore:nuggetRefinedGlowstone>],
-[<ore:nuggetUnstable>, <ore:peacockFeathers>, null]]);
 
 # Clear tank
 recipes.addShapeless("Cyclic tank clear", <cyclicmagic:block_storeempty>, [<cyclicmagic:block_storeempty>]);
