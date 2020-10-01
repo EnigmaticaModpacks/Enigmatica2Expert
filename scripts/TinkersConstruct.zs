@@ -2,7 +2,7 @@ import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.liquid.ILiquidDefinition;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded tconstruct
-print("--- loading TinkersConstruct.zs ---");
+
 
 # Removing Bronze / Steel dupes
 	mods.tconstruct.Melting.removeRecipe(<liquid:bronze>, <ic2:pipe>);
@@ -249,4 +249,4 @@ for item in coals {
 //mods.tconstruct.Melting.removeRecipe(ILiquidStack output);
 #mods.tconstruct.Melting.removeRecipe(<liquid:molten_iron>);
 
-	print("--- TinkersConstruct.zs initialized ---");
+	

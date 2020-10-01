@@ -1,6 +1,6 @@
 import mods.chisel.Carving.addVariation;
 #modloaded chisel
-print("--- loading Chisel.zs ---");
+
 
 	addVariation("basalt", <quark:basalt:1>);
 	addVariation("basalt", <quark:basalt>);
@@ -29,4 +29,4 @@ print("--- loading Chisel.zs ---");
 	addVariation("castlebrickdoor", <twilightforest:castle_door:2>);
 	addVariation("castlebrickdoor", <twilightforest:castle_door:3>);
 
-print("--- Chisel.zs initialized ---");
+

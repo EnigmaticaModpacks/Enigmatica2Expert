@@ -1,7 +1,7 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded integrateddynamics
-print("--- loading IntegratedDynamics.zs ---");
+
 
 /*
 # Aluminum / Osmium Squeezer Compatibility
@@ -48,4 +48,4 @@ print("--- loading IntegratedDynamics.zs ---");
 	[<ore:plateObsidian>, <integrateddynamics:drying_basin>, <ore:plateObsidian>]]);
 
 	
-		print("--- IntegratedDynamics.zs initialized ---");
+		

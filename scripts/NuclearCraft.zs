@@ -117,4 +117,4 @@ mods.nuclearcraft.melter.addRecipe(<ore:obsidian>, <liquid:obsidian> * 144);
 # *======= Recipes =======*
 
 	
-	print("--- NuclearCraft.zs initialized ---");
+	

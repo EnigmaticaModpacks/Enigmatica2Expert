@@ -1,7 +1,7 @@
 import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemStack as IItemStack;
 #modloaded mekanism
-print("--- loading Mekanism.zs ---");
+
 
 # The Combiner can dupe a bunch of stuff, so we're removing it.
 mods.mekanism.combiner.removeAllRecipes();
@@ -268,5 +268,3 @@ for input, output in itemsToUnify {
 	rh(<mekanism:oreblock:1>);
 	rh(<mekanism:oreblock:2>);
 	rh(<mekanism:walkietalkie>);
-
-print("--- Mekanism.zs initialized ---");

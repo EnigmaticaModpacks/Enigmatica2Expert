@@ -1,7 +1,7 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded randomthings
-print("--- loading RandomThings.zs ---");
+
 	val itemsToRemove = [
 	
 	<randomthings:blockbreaker>,
@@ -43,4 +43,4 @@ recipes.addShaped("ender_bucket2",
 	[[<ore:plateIron>, <minecraft:ender_pearl>, <ore:plateIron>],
 	[null, <ore:plateIron>, null]]);
 
-print("--- RandomThings.zs initialized ---");
+

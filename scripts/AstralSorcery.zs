@@ -1,7 +1,7 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded astralsorcery
-print("--- loading AstralSorcery.zs ---");
+
 	
 # *======= Recipes =======*
 
@@ -120,4 +120,4 @@ print("--- loading AstralSorcery.zs ---");
 //mods.astralsorcery.LightTransmutation.removeTransmutation(IItemStack stackToRemove, boolean matchMeta);
 #mods.astralsorcery.LightTransmutation.removeTransmutation(<minecraft:end_stone>, false);
 
-	print("--- AstralSorcery.zs initialized ---");
+	

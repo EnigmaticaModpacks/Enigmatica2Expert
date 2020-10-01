@@ -2,7 +2,7 @@ import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.item.IIngredient;
 #modloaded ic2
-print("--- loading IndustrialCraft2.zs ---");
+
 
 # Crushed Uranium furnace recipes
 	furnace.addRecipe(<immersiveengineering:metal:5>, <ic2:crushed:6>);
@@ -178,4 +178,4 @@ print("--- loading IndustrialCraft2.zs ---");
 	recipes.remove(<ic2:dust:5>);
 	
 
-	print("--- IndustrialCraft2.zs initialized ---");
+	

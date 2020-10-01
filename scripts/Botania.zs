@@ -2,7 +2,7 @@ import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IIngredient as IIngredient;
 #modloaded botania
-print("--- loading Botania.zs ---");
+
 	
 # Mana Pool
 	recipes.remove(<botania:pool>);
@@ -242,4 +242,4 @@ print("--- loading Botania.zs ---");
 	//mods.botania.RuneAltar.removeRecipe(<botania:rune>);
 
 	
-	print("--- Botania.zs initialized ---");
+	

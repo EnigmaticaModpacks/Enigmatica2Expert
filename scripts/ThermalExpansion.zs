@@ -1,6 +1,8 @@
 import crafttweaker.item.IItemStack;
 #modloaded thermalexpansion
-print("--- loading ThermalExpansion.zs ---");
+
+
+
 
 # Planks/Slabs -> Sticks
 for plank in <ore:plankWood>.items {
@@ -207,4 +209,4 @@ recipes.removeByRecipeName("thermalexpansion:tank_17");
 recipes.removeByRecipeName("thermalexpansion:tank_14");
 recipes.removeByRecipeName("thermalexpansion:tank_15");
 
-		print("--- ThermalExpansion.zs initialized ---");
+		

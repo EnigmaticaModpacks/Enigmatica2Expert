@@ -1,6 +1,6 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
-print("--- loading MiscRecipes.zs ---");
+
 
 # Eclipsed Clock
 	recipes.remove(<randomthings:eclipsedclock>);
@@ -352,4 +352,4 @@ print("--- loading MiscRecipes.zs ---");
 	rh(<extendedcrafting:material:128>);
 	rh(<extendedcrafting:material:129>);
 	
-print("--- MiscRecipes.zs initialized ---");
+

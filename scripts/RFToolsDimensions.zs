@@ -1,5 +1,5 @@
 #modloaded rftoolsdim
-print("--- loading RFToolsDimensions.zs ---");
+
 
 # *======= Recipes =======*
 	
@@ -67,6 +67,6 @@ print("--- loading RFToolsDimensions.zs ---");
 	[<ore:gemDimensionalShard>, <extendedcrafting:material:12>, <ore:gemDimensionalShard>], 
 	[<ore:ingotEnderEnhanced>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 4 as short, id: 32 as short}]}), <ore:ingotEnderEnhanced>]]);
 	
-	print("--- RFToolsDimensions.zs initialized ---");
+	
 	
 	

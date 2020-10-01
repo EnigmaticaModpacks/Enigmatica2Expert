@@ -1,5 +1,5 @@
 #modloaded extrautils2
-print("--- loading ExtraUtilities2.zs ---");
+
 	
 # Bag of Holding
 	recipes.remove(<extrautils2:bagofholding>);

@@ -1,7 +1,7 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded actuallyadditions extendedcrafting
-print("--- loading EmpowererCompat.zs ---");
+
 
 # See the Draconic Evolution configs for DE compat
 	
@@ -40,4 +40,4 @@ print("--- loading EmpowererCompat.zs ---");
 # Canola Seeds
 	mods.extendedcrafting.CombinationCrafting.addRecipe(<actuallyadditions:item_misc:24>, 100000, 1000000, <actuallyadditions:item_misc:23>, [<actuallyadditions:item_canola_seed>, <actuallyadditions:item_canola_seed>, <actuallyadditions:item_canola_seed>, <actuallyadditions:item_canola_seed>]);
 
-		print("--- EmpowererCompat.zs initialized ---");
+		

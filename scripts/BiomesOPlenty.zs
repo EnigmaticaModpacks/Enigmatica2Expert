@@ -1,7 +1,7 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded biomesoplenty
-print("--- loading BiomesOPlenty.zs ---");
+
 
 # Poison bucket recipe fix (bucket could be duped)
 	recipes.remove(<forge:bucketfilled>.withTag({FluidName: "poison", Amount: 1000}));
@@ -78,4 +78,3 @@ print("--- loading BiomesOPlenty.zs ---");
 	rh(<biomesoplenty:gem_block:7>);
 	rh(<biomesoplenty:gem:7>);
 	
-print("--- BiomesOPlenty.zs initialized ---");

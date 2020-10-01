@@ -1,5 +1,5 @@
 #modloaded advgenerators
-print("--- loading AdvancedGenerators.zs ---");
+
 
 # Iron Frame
 	recipes.addShapedMirrored("AdvancedGenerators Iron Frame" ,
@@ -43,4 +43,4 @@ print("--- loading AdvancedGenerators.zs ---");
 	[<ore:ingotTin>, <gendustry:power_module>, <ore:ingotTin>], 
 	[<ore:ingotSilver>, <ore:ingotTin>, <ore:ingotSilver>]]);
 
-		print("--- AdvancedGenerators.zs initialized ---");
+		

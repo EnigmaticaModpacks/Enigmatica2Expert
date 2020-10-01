@@ -1,7 +1,7 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded ironchest
-print("--- loading IronChest.zs ---");
+
 
 # *======= Recipes =======*
 
@@ -146,4 +146,4 @@ print("--- loading IronChest.zs ---");
 	for item in chestsToHide {
 		rh(item);
 	}
-		print("--- IronChest.zs initialized ---");
+		

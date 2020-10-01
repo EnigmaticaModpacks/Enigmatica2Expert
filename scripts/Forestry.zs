@@ -237,4 +237,4 @@ mods.forestry.Squeezer.addRecipe(<liquid:juice> * 15, [<minecraft:melon>], 8);
 //mods.forestry.ThermionicFabricator.removeSmelting(IIngredient itemInput);
 #mods.forestry.ThermionicFabricator.removeSmelting(<minecraft:sand>);
 
-print("--- Forestry.zs initialized ---");
+

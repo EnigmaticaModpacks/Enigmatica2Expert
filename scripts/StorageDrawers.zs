@@ -1,5 +1,5 @@
 #modloaded storagedrawers
-print("--- loading StorageDrawers.zs ---");
+
 
 # *======= Recipes =======*
 
@@ -53,4 +53,4 @@ print("--- loading StorageDrawers.zs ---");
 	[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
 	[<ore:stickWood>, <ore:plankWood>, <ore:stickWood>]]);
 
-		print("--- StorageDrawers.zs initialized ---");
+		

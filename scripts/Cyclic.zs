@@ -1,6 +1,6 @@
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded cyclicmagic
-print("--- loading Cyclic.zs ---");
+
 
 # *======= Recipes =======*
 
@@ -133,4 +133,4 @@ print("--- loading Cyclic.zs ---");
 	]);
 
 	
-	print("--- Cyclic.zs initialized ---");
+	

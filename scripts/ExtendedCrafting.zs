@@ -1,6 +1,6 @@
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded extendedcrafting
-print("--- loading ExtendedCrafting.zs ---");
+
 
 	var piston = <minecraft:piston>;
 	var blackIron = <ore:ingotBlackIron>;
@@ -153,4 +153,4 @@ print("--- loading ExtendedCrafting.zs ---");
 #mods.extendedcrafting.TableCrafting.remove(<output>);
 
 	
-	print("--- ExtendedCrafting.zs initialized ---");	
+		

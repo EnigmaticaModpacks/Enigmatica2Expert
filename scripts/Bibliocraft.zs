@@ -1,5 +1,5 @@
 #modloaded bibliocraft
-print("--- loading Bibliocraft.zs ---");
+
 
 # *======= Recipes =======*
 	
@@ -22,6 +22,6 @@ print("--- loading Bibliocraft.zs ---");
 	recipes.addShapeless("Creative Bookcase2", <bibliocraft:bookcasecreative:2>, [<bibliocraft:bookcasecreative:1>]);
 	recipes.addShapeless("Creative Bookcase1", <bibliocraft:bookcasecreative:1>, [<bibliocraft:bookcasecreative>]);
 
-	print("--- Bibliocraft.zs initialized ---");
+	
 	
 	

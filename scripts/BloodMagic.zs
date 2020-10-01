@@ -1,7 +1,7 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded bloodmagic
-print("--- loading BloodMagic.zs ---");
+
 
 # Rune of Speed
 	recipes.remove(<bloodmagic:blood_rune:1>);
@@ -156,4 +156,4 @@ print("--- loading BloodMagic.zs ---");
 
 	<ore:orbTier6>.add(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"}));
 	
-	print("--- BloodMagic.zs initialized ---");
+	

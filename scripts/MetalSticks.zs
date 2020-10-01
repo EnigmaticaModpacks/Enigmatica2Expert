@@ -1,6 +1,6 @@
 import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemStack as IItemStack;
-print("--- loading MetalSticks.zs ---");
+
 	
 # See the configs/advRocketry/SmallPlatePresser for additional stick recipes
 # Metal Sticks

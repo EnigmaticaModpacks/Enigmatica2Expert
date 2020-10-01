@@ -1,7 +1,7 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded advancedrocketry
-print("--- loading AdvancedRocketry.zs ---");
+
 
 # Vulpes Library Silicon dust Manufactory* Recipe Removal (Credit TheShadoWZYE2)
 	mods.nuclearcraft.manufactory.removeRecipeWithOutput(<libvulpes:productdust:3>);
@@ -113,4 +113,4 @@ print("--- loading AdvancedRocketry.zs ---");
 
 	<ore:stickIron>.remove(<advancedrocketry:productrod:1>);
 
-		print("--- AdvancedRocketry.zs initialized ---");
+		
