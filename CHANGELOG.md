@@ -6,6 +6,15 @@ _Remember to use the command `/bq_admin default load` when updating_
 
 _[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.82.txt)_ | _Using Forge-1.12.2-14.23.5.2847_
 
+**Mod additions**
+
+- EnderTweaker
+
+**Changes**
+
+- JEI: Disabled hiding of a ton of items. Performance may be affected when looking at pages with many flowing fluids.
+- Quark: Disabled the config that allows Pistons to move tile entities
+
 **Bug fixes**
 
 * EnvironmentalTech: Removed Aluminium Ore as a possible output from the Tier 6 Void Ore Miner
@@ -13,8 +22,6 @@ _[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/ch
 **Mod removals**
 
 * Item Filters (Added during a test, forgot to remove it)
-
-# Enigmatica 2: Expert Changelog
 
 ## 1.81a
 
