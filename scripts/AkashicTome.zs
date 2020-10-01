@@ -1,4 +1,4 @@
-print("--- loading AkashicTome.zs ---");
+
 
 # Super Akashic Tome
 	val superTome = <akashictome:tome>.withTag({"akashictome:data": {
@@ -35,4 +35,3 @@ print("--- loading AkashicTome.zs ---");
 		[<extrautils2:decorativesolidwood:1>, <akashictome:tome>.anyDamage(), <extrautils2:decorativesolidwood:1>], 
 		[<ore:paper>, <ore:bookshelf>, <ore:paper>]]);
 	
-print("--- AkashicTome.zs initialized ---");

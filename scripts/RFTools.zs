@@ -1,5 +1,5 @@
 #modloaded rftools
-print("--- loading RFTools.zs ---");
+
 	
 # Mooshroom Syringe
 	recipes.addShapeless("Mooshroom Syringe", 
@@ -113,6 +113,6 @@ print("--- loading RFTools.zs ---");
 	[[null, <ore:gearRedstone>, null],
 	[<extrautils2:analogcrafter>, <rftools:crafter2>, <extrautils2:analogcrafter>], 
 	[null, <ore:gearRedstone>, null]]);
-	print("--- RFTools.zs initialized ---");
+	
 	
 	

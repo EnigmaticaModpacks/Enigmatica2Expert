@@ -1,7 +1,7 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded gendustry
-print("--- loading Gendustry.zs ---");
+
 	
 # *======= Recipes =======*
 
@@ -45,4 +45,4 @@ print("--- loading Gendustry.zs ---");
 	[<ore:alloyBasic>, <mekanism:energycube>, <ore:alloyBasic>], 
 	[<ore:gearBronze>, <ore:alloyBasic>, <ore:gearBronze>]]);
 
-	print("--- Gendustry.zs initialized ---");
+	

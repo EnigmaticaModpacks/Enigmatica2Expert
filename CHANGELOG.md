@@ -8,7 +8,7 @@ _[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/ch
 
 **Bug fixes**
 
-* 
+* EnvironmentalTech: Removed Aluminium Ore as a possible output from the Tier 6 Void Ore Miner
 
 **Mod removals**
 

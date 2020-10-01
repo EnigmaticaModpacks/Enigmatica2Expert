@@ -1,5 +1,4 @@
 import crafttweaker.item.IItemStack;
-import mods.cyclicmagic.Hydrator;
 
 // These recipes are only temporary, used to "fix" bugs
 

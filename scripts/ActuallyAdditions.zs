@@ -203,12 +203,6 @@ for item in <ore:stoneBasalt>.items {
 	mods.actuallyadditions.Crusher.addRecipe(<appliedenergistics2:material:2>, <appliedenergistics2:material:1>);
 	mods.actuallyadditions.Crusher.addRecipe(<appliedenergistics2:material:2>, <appliedenergistics2:material>);
 	
-
-# *======= TreasureChest =======*
-	#mods.actuallyadditions.TreasureChest.addLoot(IItemStack returnItem, int chance, int minAmount, int maxAmount);
-	#mods.actuallyadditions.TreasureChest.addLoot(<minecraft:dirt>, 50, 1, 64);
-
-
 # *======= BallOfFur =======*
 
 # Weight of vanilla AA drops used to calculate weight
@@ -305,12 +299,10 @@ for i in 0 to listCatFur.length {
 	mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreThorium>, 250);
 	mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreCinnabar>, 250);
 
-# *=======   =======*
-
 # Black quartz
 val crushExceptions = "except: IECrusher SagMill Pulverizer AACrusher MekCrusher";
 scripts.process.crush(<ore:gemQuartzBlack>, <actuallyadditions:item_dust:7>, crushExceptions, null, null);
-scripts.process.crush(<ore:blockBlackQuartz>, <actuallyadditions:item_dust:7> * 9, crushExceptions ~ " Manufactory", null, null);
+scripts.process.crush(<ore:blockBlackQuartz>, <actuallyadditions:item_dust:7> * 4, crushExceptions ~ " Manufactory", null, null);
 
 # Recycle Quark crystals
 scripts.process.crush(<quark:crystal:1>, <actuallyadditions:item_crystal_shard>   * 3, "no exceptions", null, null);

@@ -1,8 +1,6 @@
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded cyclicmagic
 
-# *======= Recipes =======*
-
 # Removing Simple Block Miner
 	rh(<cyclicmagic:block_miner>);
 	

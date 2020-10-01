@@ -1,6 +1,5 @@
 import crafttweaker.item.IItemStack;
 #modloaded thermalexpansion
-print("--- loading ThermalExpansion.zs ---");
 
 # Planks/Slabs -> Sticks
 for plank in <ore:plankWood>.items {

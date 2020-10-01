@@ -1,5 +1,5 @@
 #modloaded redstonearsenal
-print("--- loading RedstoneArsenal.zs ---");
+
 
 	recipes.remove(<redstonearsenal:tool.bow_flux>);
 	recipes.addShapeless("Fluxed Box", 
@@ -9,6 +9,6 @@ print("--- loading RedstoneArsenal.zs ---");
 	<mysticalagriculture:prudentium_bow>.anyDamage(),<mysticalagriculture:intermedium_bow>.anyDamage(),
 	<mysticalagriculture:superium_bow>.anyDamage()]);
 
-print("--- RedstoneArsenal.zs initialized ---");
+
 	
 	

@@ -1,7 +1,7 @@
 import mods.jei.JEI.removeAndHide as rh;
 import mods.astralsorcery.Utils;
 #modloaded bigreactors
-print("--- loading ExtremeReactors.zs ---");
+
 	
 # *======= Recipes =======*
 
@@ -130,4 +130,3 @@ print("--- loading ExtremeReactors.zs ---");
 	#<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "vitium"}]}), 
 	<thaumcraft:mechanism_complex>]);
 	
-print("--- ExtremeReactors.zs initialized ---");

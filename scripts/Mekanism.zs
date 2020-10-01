@@ -1,7 +1,10 @@
 import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemStack as IItemStack;
 #modloaded mekanism
-print("--- loading Mekanism.zs ---");
+
+# Nether Aluminium Ore -> Aluminium instead of Bauxite
+mods.mekanism.smelter.removeRecipe(<netherendingores:ore_nether_modded_1>, <immersiveengineering:ore:1>);
+mods.mekanism.smelter.addRecipe(<netherendingores:ore_nether_modded_1>, <thermalfoundation:ore:4>);
 
 # The Combiner can dupe a bunch of stuff, so we're removing it.
 mods.mekanism.combiner.removeAllRecipes();
@@ -178,7 +181,7 @@ for input, output in itemsToUnify {
 	recipes.remove(<mekanism:machineblock3>);
 	recipes.addShaped("Quantum Entangloporter", <mekanism:machineblock3>, 
 	[[<mekanism:basicblock:7>, <ore:heartDragon>, <mekanism:basicblock:7>],
-	[<forestry:chipsets:3>.withTag({}), <mekanism:machineblock:11>|<mekanism:machineblock:11>.withTag({}), <forestry:chipsets:3>.withTag({})], 
+	[<forestry:chipsets:3>.withTag({T: 3 as short}), <mekanism:machineblock:11>|<mekanism:machineblock:11>.withTag({}), <forestry:chipsets:3>.withTag({T: 3 as short})], 
 	[<mekanism:basicblock:7>, <rftools:matter_beamer>, <mekanism:basicblock:7>]]);
 
 # Turbine Casing
@@ -242,7 +245,7 @@ for input, output in itemsToUnify {
 	<mekanism:machineblock:4>, 
 	[[<ore:alloyUltimate>, <ore:circuitUltimate>, <ore:alloyUltimate>],
 	[<thermalexpansion:frame>, <mekanism:robit>.anyDamage(), <thermalexpansion:frame>], 
-	[<mekanism:machineblock:11>, <computercraft:computer:16384>, <mekanism:machineblock:11>]]);
+	[<mekanism:machineblock:11>, <computercraft:computer>.anyDamage(), <mekanism:machineblock:11>]]);
 
 # Advanced Circuit
 	recipes.remove(<mekanism:controlcircuit:1>);
@@ -268,5 +271,3 @@ for input, output in itemsToUnify {
 	rh(<mekanism:oreblock:1>);
 	rh(<mekanism:oreblock:2>);
 	rh(<mekanism:walkietalkie>);
-
-print("--- Mekanism.zs initialized ---");

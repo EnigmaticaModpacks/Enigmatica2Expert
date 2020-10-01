@@ -2,6 +2,16 @@ import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.item.IIngredient as IIngredient;
 #modloaded appliedenergistics2
 	
+# Removing duplicate inputs in recipes for Charged Certus Ore -> Charged Certus in AA Crusher + IE Crusher
+mods.immersiveengineering.Crusher.removeRecipe(<appliedenergistics2:material>);
+mods.actuallyadditions.Crusher.removeRecipe(<appliedenergistics2:material>);
+
+# Removing non-functional Extra Cells
+	recipes.remove(<extracells:storage.fluid:5>);
+	recipes.remove(<extracells:storage.fluid:6>);
+	recipes.remove(<extracells:storage.component:9>);
+	recipes.remove(<extracells:storage.component:10>);
+
 	var pearlFluix = <ore:pearlFluix>;
 	var crystalCertus = <ore:crystalCertus>;
 

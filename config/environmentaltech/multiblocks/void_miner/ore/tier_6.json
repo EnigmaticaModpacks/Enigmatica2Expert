@@ -56,11 +56,6 @@
       "id": "OD:glowstone"
     },
     {
-      "target": "green",
-      "weight": 13,
-      "id": "thermalfoundation:ore:4"
-    },
-    {
       "target": "light_blue",
       "weight": 7,
       "id": "OD:oreChargedCertusQuartz"

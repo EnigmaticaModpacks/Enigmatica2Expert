@@ -1,7 +1,7 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded modularmachinery
-print("--- loading ModularMachinery.zs ---");
+
 
 # Arcane Crafting Engine
     recipes.addShapedMirrored("Arcane Crafting Engine", 
@@ -84,7 +84,7 @@ print("--- loading ModularMachinery.zs ---");
     recipes.addShapedMirrored("Machine Circuitry", 
     <modularmachinery:blockcasing:5>, 
     [[null, <immersiveengineering:wirecoil:5>, null],
-    [<modularmachinery:blockcasing>, <forestry:chipsets:3>.withTag({}), <modularmachinery:blockcasing>], 
+    [<modularmachinery:blockcasing>, <forestry:chipsets:3>.withTag({T: 3 as short}), <modularmachinery:blockcasing>], 
     [null, <modularmachinery:blockcasing>, null]]);
 
 # Modularium
@@ -158,5 +158,3 @@ var itemsToRemove = [
 for item in itemsToRemove {
     rh(item);
 }
-	
-print("--- ModularMachinery.zs initialized ---");

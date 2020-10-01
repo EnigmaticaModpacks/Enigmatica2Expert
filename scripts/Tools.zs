@@ -1,6 +1,6 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
-print("--- loading Tools.zs ---");
+
 	
 # *======= Recipes =======*
 	
@@ -125,4 +125,4 @@ print("--- loading Tools.zs ---");
 	recipes.addShaped(<thermalfoundation:tool.hammer_bronze>, [[<ore:ingotBronze>, <ore:blockBronze>, <ore:ingotBronze>],[<ore:ingotBronze>, <forestry:oak_stick>, <ore:ingotBronze>], [null, <forestry:oak_stick>, null]]);
 	recipes.addShaped(<thermalfoundation:tool.hammer_invar>, [[<ore:ingotInvar>, <ore:blockInvar>, <ore:ingotInvar>],[<ore:ingotInvar>, <forestry:oak_stick>, <ore:ingotInvar>], [null, <forestry:oak_stick>, null]]);
 
-	print("--- Tools.zs initialized ---");
+	

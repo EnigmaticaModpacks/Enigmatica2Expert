@@ -190,4 +190,3 @@ print("--- loading ExtraUtilities2.zs ---");
 	
 # Resonating Redstone Crystal
 	recipes.removeShapeless(<extrautils2:ingredients> * 2, 
-	[<minecraft:redstone_ore>, <thermalfoundation:material:1027>]);

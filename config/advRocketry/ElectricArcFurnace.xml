@@ -35,7 +35,7 @@
 			<itemStack>minecraft:coal 1 1</itemStack>
 		</input>
 		<output>
-			<itemStack>libvulpes:productingot 2 6</itemStack>
+			<itemStack>thermalfoundation:material: 1 160</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="16" power ="100000">

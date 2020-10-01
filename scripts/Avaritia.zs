@@ -1,7 +1,7 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded avaritia
-print("--- loading Avaritia.zs ---");
+
 
 # *======= Recipes =======*
 
@@ -370,4 +370,4 @@ print("--- loading Avaritia.zs ---");
 	<extendedcrafting:material:12>, <avaritia:resource:1>, <avaritia:resource:1>]);
 
 
-		print("--- Avaritia.zs initialized ---");
+		

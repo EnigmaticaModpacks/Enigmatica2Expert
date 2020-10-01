@@ -1,6 +1,6 @@
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded exnihilocreatio
-print("--- loading ExNihilo&Compressum.zs ---");
+
 	
 # End Cake
 	recipes.remove(<exnihilocreatio:block_end_cake>);
@@ -134,4 +134,4 @@ print("--- loading ExNihilo&Compressum.zs ---");
 # Remove excess mesh
 	rh(<excompressum:iron_mesh>);
 
-	print("--- ExNihilo&Compressum.zs initialized ---");
+	

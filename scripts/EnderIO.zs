@@ -2,6 +2,8 @@ import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded enderio
 
+
+
 # Cheaper decorations
 var casing = <teslacorelib:machine_case>|<actuallyadditions:block_misc:9>|<mekanism:basicblock:8>|<nuclearcraft:part:10>;
 var constructionAlloyOrIron = <ore:ingotConstructionAlloy> | <ore:ingotIron>;
@@ -236,7 +238,7 @@ for silicon in <ore:itemSilicon>.items {
 	rh(<enderio:block_enhanced_wired_charger>);
 	rh(<enderio:item_material:30>);
 	rh(<enderio:item_material:31>);
-	
+	rh(<enderio:block_wireless_charger_extension>);
 	
 # Lava Heat Exchanger
 var machineCaseVariant = <nuclearcraft:part:10> | <teslacorelib:machine_case> | <actuallyadditions:block_misc:9> | <mekanism:basicblock:8>;

@@ -4,7 +4,7 @@ import mods.armoreablemobs.ArmorEntity;
 import mods.armoreablemobs.ArmorSlot;
 import mods.armoreablemobs.ArmorGroup;
 #modloaded armoreablemobs
-print("--- loading ArmoreableMobs.zs ---");
+
 
 # *======= Variables =======*
 
@@ -339,4 +339,4 @@ print("--- loading ArmoreableMobs.zs ---");
 	skeletonGroup.addEntity(stray);
 	skeletonGroup.addEntity(strayBoss);
 
-		print("--- ArmoreableMobs.zs initialized ---");
+		
