@@ -2,7 +2,8 @@ import mods.jei.JEI.removeAndHide as rh;
 #modloaded cyclicmagic
 
 
-# *======= Recipes =======*
+# Removing Obsidian -> Lava
+Melter.removeShapedRecipe("lava", 1000);
 
 # Removing Simple Block Miner
 	rh(<cyclicmagic:block_miner>);
