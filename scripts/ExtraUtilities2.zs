@@ -1,5 +1,5 @@
 #modloaded extrautils2
-
+print("--- loading ExtraUtilities2.zs ---");
 	
 # Bag of Holding
 	recipes.remove(<extrautils2:bagofholding>);
@@ -58,16 +58,16 @@
 	recipes.addShapedMirrored("Wireless RF Transmitter", 
 	<extrautils2:powertransmitter>, 
 	[[null, <extrautils2:ingredients>, null],
-	[<appliedenergistics2:material:42>, <opencomputers:card:7>, <appliedenergistics2:material:42>], 
+	[null, <appliedenergistics2:material:42>, null], 
 	[<extrautils2:decorativesolid:3>, <extrautils2:decorativesolid:3>, <extrautils2:decorativesolid:3>]]);
 
 # Wireless RF Battery
 	recipes.remove(<extrautils2:powerbattery>);
 	recipes.addShapedMirrored("Wireless RF Battery", 
 	<extrautils2:powerbattery>, 
-	[[<extrautils2:decorativesolid:3>, <immersiveengineering:metal_decoration0:3>, <extrautils2:decorativesolid:3>],
-	[<ore:gemRedstone>, <actuallyadditions:item_battery>.anyDamage(), <ore:gemRedstone>], 
-	[<extrautils2:decorativesolid:3>, <immersiveengineering:metal_decoration0:3>, <extrautils2:decorativesolid:3>]]);
+	[[<extrautils2:decorativesolid:3>, <ore:blockRedstone>, <extrautils2:decorativesolid:3>],
+	[<ore:gemRedstone>, <immersiveengineering:metal_decoration0:3>, <ore:gemRedstone>], 
+	[<extrautils2:decorativesolid:3>, <ore:blockRedstone>, <extrautils2:decorativesolid:3>]]);
 
 # Rainbow Generator
 	recipes.remove(<extrautils2:rainbowgenerator>);
@@ -149,7 +149,7 @@
 	[polishedStone, <forestry:thermionic_tubes:3>, polishedStone]]);
 
 # Stone Drum
-	recipes.remove(<extrautils2:drum>);
+	recipes.removeByRecipeName("extrautils2:drum_16");
 	recipes.addShapedMirrored("Stone Drum", 
 	<extrautils2:drum>, 
 	[[<extrautils2:compressedcobblestone:1>, <minecraft:stone_slab:*>, <extrautils2:compressedcobblestone:1>],
@@ -157,7 +157,7 @@
 	[<extrautils2:compressedcobblestone:1>, <minecraft:stone_slab:*>, <extrautils2:compressedcobblestone:1>]]);
 
 # Iron Drum
-	recipes.remove(<extrautils2:drum:1>);
+	recipes.removeByRecipeName("extrautils2:drum_256");
 	recipes.addShapedMirrored("Iron Drum",
 	<extrautils2:drum:1>, 
 	[[<ore:blockSheetmetalIron>, <ore:plateDenseIron>, <ore:blockSheetmetalIron>],
@@ -165,7 +165,7 @@
 	[<ore:blockSheetmetalIron>, <ore:plateDenseIron>, <ore:blockSheetmetalIron>]]);
 
 # Reinforced Drum
-	recipes.remove(<extrautils2:drum:2>);
+	recipes.removeByRecipeName("extrautils2:drum_4096");
 	recipes.addShapedMirrored("Reinforced Drum",
 	<extrautils2:drum:2>, 
 	[[<ore:itemCompressedDiamond>, <ore:plateDenseGold>, <ore:itemCompressedDiamond>],
@@ -173,7 +173,7 @@
 	[<ore:itemCompressedDiamond>, <ore:plateDenseGold>, <ore:itemCompressedDiamond>]]);
 
 # Gargantuan Drum
-	recipes.remove(<extrautils2:drum:3>);
+	recipes.removeByRecipeName("extrautils2:drum_65536");
 	recipes.addShapedMirrored("Gargantuan Drum",
 	<extrautils2:drum:3>, 
 	[[<tconstruct:large_plate>.withTag({Material: "xu_demonic_metal"}), <extrautils2:klein>, <tconstruct:large_plate>.withTag({Material: "xu_demonic_metal"})],
@@ -190,4 +190,3 @@
 	
 # Resonating Redstone Crystal
 	recipes.removeShapeless(<extrautils2:ingredients> * 2, 
-	[<minecraft:redstone_ore>, <thermalfoundation:material:1027>]);

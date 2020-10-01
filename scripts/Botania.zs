@@ -2,7 +2,6 @@ import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IIngredient as IIngredient;
 #modloaded botania
-
 	
 # Mana Pool
 	recipes.remove(<botania:pool>);
@@ -241,5 +240,12 @@ import crafttweaker.item.IIngredient as IIngredient;
 	//OutputStack
 	//mods.botania.RuneAltar.removeRecipe(<botania:rune>);
 
-	
-	
+# Remove unused ORE
+	mods.botania.Orechid.removeOre("oreYellorite");
+
+# Add missed ORE
+	mods.botania.Orechid.addOre("oreThorium", 1285);
+	mods.botania.Orechid.addOre("oreMagnesium", 1285);
+	mods.botania.Orechid.addOre("oreLithium", 1285);
+	mods.botania.Orechid.addOre("oreBoron", 1285);
+	mods.botania.Orechid.addOre("oreProsperity", 900);

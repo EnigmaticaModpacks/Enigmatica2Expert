@@ -44,3 +44,9 @@ recipes.addShaped("ender_bucket2",
 	[null, <ore:plateIron>, null]]);
 
 
+# Harder Igniter (because it dont use energy or anything durable)
+recipes.remove(<randomthings:igniter>);
+recipes.addShaped("Random Things Igniter", <randomthings:igniter>, [
+[<ore:gearSteel>, <ore:gearSteel>, <ore:netherrack>],
+[<minecraft:dispenser>, <iceandfire:fire_dragon_blood>, <ore:netherrack>],
+[<ore:gearSteel>, <ore:gearSteel>, <ore:netherrack>]]);

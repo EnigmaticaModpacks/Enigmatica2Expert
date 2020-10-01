@@ -136,7 +136,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_garden_cloche", m
 	.addItemOutput(<immersiveengineering:metal_device1:13>)
 	.addEnergyPerTickInput(50000)
 	.addFluidInput(<liquid:glass> * 8000)
-	.addItemInput(<ore:plankTreatedWood>, 4)
+	.addItemInput(<ore:plankTreatedWood>, 2)
 	.addItemInput(<immersiveengineering:connector>)
 	.addItemInput(<ic2:upgrade:4>)
 	.addItemInput(<immersiveengineering:metal_decoration0:5>)

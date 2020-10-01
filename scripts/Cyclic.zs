@@ -1,7 +1,6 @@
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded cyclicmagic
 
-
 # Removing Obsidian -> Lava
 Melter.removeShapedRecipe("lava", 1000);
 
@@ -133,5 +132,5 @@ Melter.removeShapedRecipe("lava", 1000);
 	[<extrautils2:decorativeglass:3>, <extrautils2:decorativeglass:3>, <extrautils2:decorativeglass:3>]
 	]);
 
-	
-	
+# Clear tank
+recipes.addShapeless("Cyclic tank clear", <cyclicmagic:block_storeempty>, [<cyclicmagic:block_storeempty>]);

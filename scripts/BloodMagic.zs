@@ -2,7 +2,6 @@ import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded bloodmagic
 
-
 # Rune of Speed
 	recipes.remove(<bloodmagic:blood_rune:1>);
 	recipes.addShaped("Rune of Speed", <bloodmagic:blood_rune:1>, 
@@ -156,4 +155,21 @@ import mods.jei.JEI.removeAndHide as rh;
 
 	<ore:orbTier6>.add(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"}));
 	
-	
+# Remake recipe of blood tanks
+recipes.addShapeless("Clearing Blood Tank 0", <bloodmagic:blood_tank>, [<bloodmagic:blood_tank>]);
+for i in 1 to 16 {
+	val tank = itemUtils.getItem("bloodmagic:blood_tank", i);
+	val prevTank = itemUtils.getItem("bloodmagic:blood_tank", i - 1);
+
+	val t16cost = 2000000.0d; # Change only this number
+
+	val t16powr = pow(1.5d, 15);
+	val t16mult = t16cost / t16powr;
+	val t1resde = (15 - i) * (t16cost / 6000);
+
+	val cost = (((pow(1.5d, i as double) * t16mult) as int - t1resde) / 500) * 500;
+
+	recipes.remove(tank);
+	mods.bloodmagic.BloodAltar.addRecipe(tank, prevTank, max(0, min(4, i / 2)), cost, 10 + 10 * i, 10 + 10 * i);
+	recipes.addShapeless("Clearing Blood Tank " ~ i, tank, [tank]);
+}

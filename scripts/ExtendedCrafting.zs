@@ -1,7 +1,6 @@
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded extendedcrafting
 
-
 	var piston = <minecraft:piston>;
 	var blackIron = <ore:ingotBlackIron>;
 
@@ -152,5 +151,13 @@ import mods.jei.JEI.removeAndHide as rh;
 
 #mods.extendedcrafting.TableCrafting.remove(<output>);
 
-	
-		
+# Insanium from inferium in Quantum Compressor
+mods.extendedcrafting.CompressionCrafting.addRecipe(<mysticalagradditions:insanium>, 
+<mysticalagriculture:crafting>, 1024, <mysticalagriculture:master_infusion_crystal>, 2000000, 100000);
+
+# Simplify Automating table
+recipes.remove(<extendedcrafting:interface>);
+recipes.addShaped("ExtendedCrafting Automating table", <extendedcrafting:interface>, [
+	[<ore:ingotBlackIron>, <extendedcrafting:material:10>, <ore:ingotBlackIron>],
+	[<extendedcrafting:material:17>, <extendedcrafting:frame>, <extendedcrafting:material:17>],
+	[<ore:ingotBlackIron>, <extendedcrafting:material:2>, <ore:ingotBlackIron>]]);

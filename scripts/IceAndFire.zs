@@ -2,7 +2,6 @@ import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemStack as IItemStack;
 #modloaded iceandfire
 
-
 # *======= Recipes =======*
 
 # Cockatrice Scepter
@@ -131,5 +130,12 @@ import crafttweaker.item.IItemStack as IItemStack;
 	for armor in dragonArmor {
 	<ore:armorDragon>.add(armor);
 	}
-	
-		
+
+
+# Recycling myrmex resin
+scripts.process.squeeze(<iceandfire:myrmex_resin>          , <liquid:resin>*120, null, <iceandfire:myrmex_desert_resin>);
+scripts.process.squeeze(<iceandfire:myrmex_resin:1>        , <liquid:resin>*120, null, <iceandfire:myrmex_jungle_resin>);
+scripts.process.squeeze(<iceandfire:myrmex_resin_sticky>   , <liquid:resin>*180, null, <iceandfire:myrmex_desert_resin> * 2);
+scripts.process.squeeze(<iceandfire:myrmex_resin_sticky:1> , <liquid:resin>*180, null, <iceandfire:myrmex_jungle_resin> * 2);
+scripts.process.squeeze(<iceandfire:desert_myrmex_cocoon>  , <liquid:resin>*480, null, <iceandfire:myrmex_desert_resin> * 8);
+scripts.process.squeeze(<iceandfire:jungle_myrmex_cocoon>  , <liquid:resin>*480, null, <iceandfire:myrmex_jungle_resin> * 8);

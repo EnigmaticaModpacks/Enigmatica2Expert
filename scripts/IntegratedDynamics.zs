@@ -2,7 +2,6 @@ import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded integrateddynamics
 
-
 /*
 # Aluminum / Osmium Squeezer Compatibility
 	mods.integrateddynamics.Squeezer.addRecipe(<mekanism:oreblock>, <mekanism:dust:2>, 0.75f, <mekanism:dust:2>);
@@ -17,11 +16,6 @@ import mods.jei.JEI.removeAndHide as rh;
 	recipes.addShapeless("IT User", 
 	<integratedtunnels:part_player_simulator_item> * 2, 
 	[<extrautils2:user>.anyDamage(), <extrautils2:user>.anyDamage()]);
-
-# Menril Logs -> Planks
-	recipes.addShapeless("Menril Planks", 
-	<integrateddynamics:menril_planks> * 2, 
-	[<integrateddynamics:menril_log>]);
 
 # Generator
 	recipes.remove(<integrateddynamics:coal_generator>);
@@ -48,4 +42,18 @@ import mods.jei.JEI.removeAndHide as rh;
 	[<ore:plateObsidian>, <integrateddynamics:drying_basin>, <ore:plateObsidian>]]);
 
 	
-		
+# Omni directional
+var connector = <integrateddynamics:part_connector_omni_directional_item>;
+var part = <integrateddynamics:logic_director>;
+var mono = <integrateddynamics:part_connector_mono_directional_item>;
+recipes.remove(connector);
+
+recipes.addShaped("part_connector_omni_directional_item_11", connector * 3, [
+	[part, <enderstorage:ender_storage>, part], 
+	[mono, connector, mono],
+	[null, part, null]]);
+
+recipes.addShaped("part_connector_omni_directional_item", connector * 2, [
+	[part, <enderstorage:ender_storage>, part], 
+	[mono, <integrateddynamics:cable>, mono], 
+	[null, part, null]]);

@@ -29,4 +29,40 @@
 			<itemStack>libvulpes:productboule 1 3</itemStack>
 		</output>
 	</Recipe>
+	<Recipe timeRequired="200" power ="100000"> 
+		<input>
+			<itemStack>astralsorcery:itemrockcrystalsimple 1 0</itemStack>
+			<itemStack>astralsorcery:itemcraftingcomponent 1 2</itemStack>
+		</input>
+		<output>
+			<itemStack>astralsorcery:blockcelestialcrystals 1 4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="200" power ="100000"> 
+		<input>
+			<itemStack>astralsorcery:itemrockcrystalsimple 1 0</itemStack>
+			<itemStack>ic2:dust 1 9</itemStack>
+		</input>
+		<output>
+			<itemStack>astralsorcery:blockgemcrystals 1 2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="200" power ="100000"> 
+		<input>
+			<itemStack>astralsorcery:itemrockcrystalsimple 1 0</itemStack>
+			<itemStack>minecraft:glowstone_dust 1 0</itemStack>
+		</input>
+		<output>
+			<itemStack>astralsorcery:blockgemcrystals 1 3</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="200" power ="100000"> 
+		<input>
+			<itemStack>astralsorcery:itemrockcrystalsimple 1 0</itemStack>
+			<itemStack>appliedenergistics2:material 1 3</itemStack>
+		</input>
+		<output>
+			<itemStack>astralsorcery:blockgemcrystals 1 4</itemStack>
+		</output>
+	</Recipe>
 </Recipes>

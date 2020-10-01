@@ -158,4 +158,3 @@ var itemsToRemove = [
 for item in itemsToRemove {
     rh(item);
 }
-	
