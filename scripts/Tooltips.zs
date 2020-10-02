@@ -20,9 +20,9 @@ var mekanismFactories = "Factories are made by upgrading Machines in-world with 
 var ic2wrench = "You can safely break IC2 machines with a Pickaxe.";
 var tempRecipe = "This item has a temporary crafting recipe.";
 
-var ultimateTierInstaller = "Only works on Bins, Energy Cubes, Tanks and Gas Tanks"
+var ultimateTierInstaller = "Only works on Bins, Energy Cubes, Tanks and Gas Tanks";
 <mekanism:tierinstaller:3>.addTooltip(ultimateTierInstaller);
-addDescription(<mekanism:tierinstaller:3>, ultimateTierInstaller)
+addDescription(<mekanism:tierinstaller:3>, ultimateTierInstaller);
 
 var biomesOPlentyOres as IItemStack[] = [
 	<biomesoplenty:gem_ore:1>,
