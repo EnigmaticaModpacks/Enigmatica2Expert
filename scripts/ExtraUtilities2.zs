@@ -1,5 +1,4 @@
 #modloaded extrautils2
-print("--- loading ExtraUtilities2.zs ---");
 	
 # Bag of Holding
 	recipes.remove(<extrautils2:bagofholding>);
@@ -189,4 +188,4 @@ print("--- loading ExtraUtilities2.zs ---");
 	[<tconstruct:clear_glass>, <ore:dustEnder>, <tconstruct:clear_glass>]]);
 	
 # Resonating Redstone Crystal
-	recipes.removeShapeless(<extrautils2:ingredients> * 2, 
+	recipes.removeShapeless(<extrautils2:ingredients> * 2, [<minecraft:redstone_ore>, <thermalfoundation:material:1027>]);
