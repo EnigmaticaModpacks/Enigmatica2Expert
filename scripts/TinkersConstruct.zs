@@ -3,6 +3,71 @@ import crafttweaker.liquid.ILiquidDefinition;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded tconstruct
 
+# Slime Dirt -> Slime
+var greenSlimeDirts = [
+	<tconstruct:slime_dirt>,
+	<tconstruct:slime_grass:1>,
+	<tconstruct:slime_grass:6>,
+	<tconstruct:slime_grass:11>
+];
+
+var blueSlimeDirts = [
+	<tconstruct:slime_dirt:1>,
+	<tconstruct:slime_grass:2>,
+	<tconstruct:slime_grass:7>,
+	<tconstruct:slime_grass:12>
+];
+
+var purpleSlimeDirts = [
+	<tconstruct:slime_dirt:2>,
+	<tconstruct:slime_grass:3>,
+	<tconstruct:slime_grass:8>,
+	<tconstruct:slime_grass:13>
+];
+
+var orangeSlimeDirts = [
+	<tconstruct:slime_dirt:3>,
+	<tconstruct:slime_grass:4>,
+	<tconstruct:slime_grass:9>,
+	<tconstruct:slime_grass:14>
+];
+
+var slimeDirts as IItemStack[][IItemStack] = {
+	<minecraft:slime_ball> : [
+		<tconstruct:slime_dirt>,
+		<tconstruct:slime_grass:1>,
+		<tconstruct:slime_grass:6>,
+		<tconstruct:slime_grass:11>
+	],
+	<tconstruct:edible:1> : [
+		<tconstruct:slime_dirt:1>,
+		<tconstruct:slime_grass:2>,
+		<tconstruct:slime_grass:7>,
+		<tconstruct:slime_grass:12>
+	],
+	<tconstruct:edible:2> : [
+		<tconstruct:slime_dirt:2>,
+		<tconstruct:slime_grass:3>,
+		<tconstruct:slime_grass:8>,
+		<tconstruct:slime_grass:13>
+	],
+	<tconstruct:edible:4> : [
+		<tconstruct:slime_dirt:3>,
+		<tconstruct:slime_grass:4>,
+		<tconstruct:slime_grass:9>,
+		<tconstruct:slime_grass:14>
+	]
+};
+
+for slime, dirts in slimeDirts {
+	for dirt in dirts {
+		mods.thermalexpansion.Centrifuge.addRecipe([slime % 50, <minecraft:dirt>], dirt, null, 4000);
+		mods.forestry.Centrifuge.addRecipe([slime % 25, <minecraft:dirt>], dirt, 100);
+	}
+}
+
+
+
 # Removing Bronze / Steel dupes
 	mods.tconstruct.Melting.removeRecipe(<liquid:bronze>, <ic2:pipe>);
 	mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <ic2:pipe:1>);
