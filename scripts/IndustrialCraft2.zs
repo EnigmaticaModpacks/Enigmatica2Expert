@@ -4,6 +4,9 @@ import crafttweaker.item.IIngredient;
 import mods.ic2.ScrapBox;
 #modloaded ic2
 
+# Crushed Uranium furnace recipes
+	furnace.addRecipe(<immersiveengineering:metal:5>, <ic2:crushed:6>);
+
 # Hydrated Coal Dust recipe consumes containers that can store 1000mB + liquid, this fixes that
 	recipes.remove(<ic2:dust:3>);
 	recipes.addShapeless("ic2_hydrated_coal_dust_liquid_fix", 
