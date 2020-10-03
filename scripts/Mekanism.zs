@@ -2,10 +2,6 @@ import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemStack as IItemStack;
 #modloaded mekanism
 
-# Nether Aluminium Ore -> Aluminium instead of Bauxite
-mods.mekanism.smelter.removeRecipe(<netherendingores:ore_nether_modded_1>, <immersiveengineering:ore:1>);
-mods.mekanism.smelter.addRecipe(<netherendingores:ore_nether_modded_1>, <thermalfoundation:ore:4>);
-
 # The Combiner can dupe a bunch of stuff, so we're removing it.
 mods.mekanism.combiner.removeAllRecipes();
 recipes.remove(<mekanism:machineblock:2>);
