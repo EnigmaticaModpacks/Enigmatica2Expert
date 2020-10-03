@@ -1,6 +1,9 @@
 
 
-# *======= Adding Smeltables =======*
+# Removing duplicate recipes
+	furnace.remove(<enderio:item_material:33>);
+	furnace.remove(<actuallyadditions:item_dust:5>);
+	furnace.remove(<nuclearcraft:gem_dust:2>);
 
 # Lithium Dust -> Ingots
 	furnace.addRecipe(<nuclearcraft:ingot:6>, <ic2:dust:11>);

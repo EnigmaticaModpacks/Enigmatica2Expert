@@ -2,8 +2,9 @@ import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded astralsorcery
 
-	
-# *======= Recipes =======*
+# Quartz Dust unification
+	mods.astralsorcery.Grindstone.removeRecipe(<nuclearcraft:gem_dust:2>);
+	mods.astralsorcery.Grindstone.addRecipe(<minecraft:quartz_ore>, <appliedenergistics2:material:3>);
 
 # Nocturnal Powder
 	mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/nocturnalpowder");
