@@ -1,9 +1,9 @@
 
 
 # Removing duplicate recipes
-	furnace.remove(<enderio:item_material:33>);
-	furnace.remove(<actuallyadditions:item_dust:5>);
-	furnace.remove(<nuclearcraft:gem_dust:2>);
+	furnace.remove(<appliedenergistics2:material:5>, <enderio:item_material:33>);
+	furnace.remove(<appliedenergistics2:material:5>, <actuallyadditions:item_dust:5>);
+	furnace.remove(<appliedenergistics2:material:5>, <nuclearcraft:gem_dust:2>);
 
 # Lithium Dust -> Ingots
 	furnace.addRecipe(<nuclearcraft:ingot:6>, <ic2:dust:11>);
