@@ -92,3 +92,25 @@ var molten = heavyMatBuilder.registerPart("molten").getData();
 molten.addDataValue("temperature", "320");
 molten.addDataValue("density", "500000");
 molten.addDataValue("viscosity", "30000");
+
+
+
+# -------------------------------
+# Seed
+# -------------------------------
+# Liquid part
+var pFluidBuilder = MaterialSystem.getPartBuilder().setName("fluid");
+pFluidBuilder.setPartType(MaterialSystem.getPartType("fluid"));
+var pfluid = pFluidBuilder.build();
+
+var seedIssue = MaterialSystem
+	.getMaterialBuilder()
+	.setName("Seed")
+	.setColor(Color.fromHex("E3D7C8"))
+	.build()
+	.registerPart(pfluid)
+	// .registerPart("molten")
+	.getData();
+seedIssue.addDataValue("temperature", "290");
+seedIssue.addDataValue("density", "2009");
+seedIssue.addDataValue("viscosity", "1000");
