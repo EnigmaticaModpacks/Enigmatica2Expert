@@ -1,8 +1,6 @@
 const escapeRegex = require('escape-string-regexp');
 const {loadText, saveText} = require('./utils.js');
 
-var isSingle = false;
-
 /*
 ₀₁₂₃₄₅₆₇₈₉
 !"#$%&'()*+,-./0123456789:;< = >?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
@@ -15,29 +13,6 @@ var isSingle = false;
 */
 
 var globalList = {
-  "¹": "<mysticalagriculture:crafting:17>",
-  "²": "<mysticalagriculture:crafting:18>",
-  "³": "<mysticalagriculture:crafting:19>",
-  "⁴": "<mysticalagriculture:crafting:20>",
-  "⁵": "<mysticalagriculture:crafting:21>",
-  "⁶": "<mysticalagradditions:insanium:1>",
-  
-  "₁": "<ore:essenceTier1>",
-  "₂": "<ore:essenceTier2>",
-  "₃": "<ore:essenceTier3>",
-  "₄": "<ore:essenceTier4>",
-  "₅": "<ore:essenceTier5>",
-  
-  "1": "<ore:blockInferiumEssence>",
-  "2": "<ore:blockPrudentiumEssence>",
-  "3": "<ore:blockIntermediumEssence>",
-  "4": "<ore:blockSuperiumEssence>",
-  "5": "<ore:blockSupremiumEssence>",
-  "6": "<ore:blockInsaniumEssence>",
-  
-  "▬": "<ore:ingotSupremium>",
-  "☼": "<minecraft:nether_star>",
-  "‗": "<ore:ingotInsanium>",
 };
 
 function makeGrid(source) {
@@ -94,7 +69,6 @@ function makeGrid(source) {
     newSource = newSource.replace(new RegExp(escapeRegex(m), 'g'), `"${c}"`);
   }
 
-
   var evaluated
   try {
     evaluated = eval(newSource);
@@ -121,8 +95,6 @@ function makeGrid(source) {
 
   return {grid, list, unique}
 }
-
-var zsFileText = loadText("../scripts/mods/MysticalAgradditions.zs");
 
 const _fncName = /(?:recipes\.(?:addShapedMirrored|addShaped)|mods.astralsorcery.Altar.(?:addConstellationAltarRecipe|addAttunementAltarRecipe|addTraitAltarRecipe))/.source;
 // var _fncName = /(?:mods.astralsorcery.Altar.addConstellationAltarRecipe)/.source;
@@ -174,6 +146,13 @@ function stringifyGrid(list, partitions) {
   }
 }
 
+console.log('object :>> ', makeGrid(`[[null, <fluxnetworks:flux>, null],
+[<thaumictinkerer:spellbinding_cloth>, <tconstruct:bow_string>, <thaumictinkerer:spellbinding_cloth>], 
+[<thaumictinkerer:spellbinding_cloth>, <thaumictinkerer:spellbinding_cloth>, <thaumictinkerer:spellbinding_cloth>]]
+`));
+return;
+
+var zsFileText = loadText("../scripts/mods/MysticalAgradditions.zs");
 zsFileText = zsFileText.replace(regex, function() {
   var g = arguments[arguments.length-1];
   

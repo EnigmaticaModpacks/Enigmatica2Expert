@@ -53,3 +53,5 @@ resources/mechanics/
 scripts/.zsrc
 config/BiomeTweaker/output/
 */Patchouli/garbage
+
+config/tellme/oredictionary*.txt

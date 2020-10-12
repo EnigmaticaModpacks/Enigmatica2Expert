@@ -14,38 +14,88 @@
 - 🔴 [x] Blockcraftery
 - 🔴 [x] Iron Chests
 - 🔴 [x] NoNightVisionFlashing
+- ✏️ [x] Icecream oredict fix tofu
+- 🌿 [x] PatchouliJS current documentation
+- ✏️ [x] Botania Remove Elementium tools
+- 🔷 [x] Rename Terrestial -> Terrestrial
+- 🔷 [x] Remake creatures drop items (ember root)
+- ✏️ [x] Harder Cyclic Storage Bag
+- 🔨 [x] Jump modifier. Jumps.zs should store jump amount (but why?)
+- 🔷 [x] Fix XML recipes missed inputs (crystalline ingor in electric arc for example)
+- 🔨 [x] CoT Traits (Tweakerconstruct cant handle them)
+- 🔷 [x] Quark tallow uses
+- 🔷 [x] Processed cheese material (molten cheese, molten cheese rivers in Ratlantis)
+- 🔷 [x] Buff Forestry engines x1.5
+- ⚙️ [x] Melting Blacklist for benefication
+- 🔨 [x] Tweak TConEvo energy usage
+- ✏️ [x] Harder Compact Machines
+- ✏️ [x] Harder Genetic Labware
+- 🧩 [x] Blood Magic Falling Tower tweaks
+- 🟢 [x] Fluid Drawers
+- ✏️ [x] Cave crystals from colored glass
+- 🟢 [x] Better Hurt Timers (mobs do not deals damage)
+- 🧱 [x] Magic Ore Processing
+- 🌿 [x] Patchouli unwrap subcategories
+- 🟢 [x] Male milking
 
 
 ## Planned
 
 -----------
 
-#### Other:
-
-- 🔷 [x] Processed cheese material (molten cheese, molten cheese rivers in Ratlantis)
-- ✏️ [x] Icecream oredict fix tofu
-- ✏️ [x] Botania Remove Elementium tools
-- 🌿 [x] PatchouliJS current documentation
-- 🧱 [ ] Magic Ore Processing . 📦 poop + Cluster => 📦hunk -> 📦 small piece -> 💧 washed -> ?
-- 🔷 [ ] Remake creatures drop items
-- 🔷 [ ] Jumps.zs should store jump amount
-- 🔨 [ ] Jump modifier
-- 🔨 [ ] Thaum Curiocity drop
-- 💥 [ ] Give uses to singularities (Coal - burn time, etc)
+- 🟢 [ ] Biome Tweaker (make planets ground higher, deep ocean biomes)
+- 🟢 [ ] Gotta Go Fast
+- 💥 [ ] Uses of singularities
 - 💥 [ ] New 🐝 for endgame
 - 💥 [ ] **Rats** Structures Generation
-- 🔴 [ ] EmberRoot
-- 🔷 [ ] Fix XML recipes missed inputs (crystalline ingor in electric arc for example)
-- 🔷 [ ] Check why Gas intake was modified
+- 🔨 [ ] TCon tools recycle
 - 🔷 [ ] Reload JER world data
-- 🟢 [x] Alfinivia (milking)
-- 🟢 [x] Better Hurt Timers (mobs do not deals damage)
-- 🟢 [x] Biome Tweaker (make planets ground higher, deep ocean biomes)
-- 🌿 [ ] Patchouli book texture and craft
-- 🔨 [ ] Tweak TConEvo energy usage
-- 🔷 [ ] Rename Terrestial -> Terrestrial
-- 🔷 [ ] AdvRock crystal hard tool level
-- ✏️ [ ] Harder Cyclic Storage Bag
+- 🔷 [ ] Fix Alien Forest Dissapear
+- 🔷 [ ] New AdvRocke atmospheres
+- 🔷 [ ] Matter Condenser uncraftable
+- 🔷 [ ] Creative Cube in book change to charged variant
+- 🔷 [ ] Creative Gas in book change NBT
+- 🔷 [ ] E2E book to Akashik
+- 🔷 [ ] Chemical reactor can supply up to 200k RF/t
+- 🔷 [ ] Supercooled ice compat
+- 🔷 [ ] Inductions remake
+- 🔷 [ ] Compacting Drawer Clearing
+- 🔷 [ ] Cant Craft Solar tier4 (tier3 cant be recognisable)
+- 🔷 [ ] Open Blocks tank clearing
+- 🔷 [ ] IC2 Solar craft change (unable to automate in AE)
+- 🔷 [ ] Tinker's tanks clearing
+- 🔷 [ ] Vitium crystal in potion change required tags
+- 🔷 [ ] Mystical creations essence to tiered oredict
+- 🔷 [ ] Ender swords increase damage on IV
+- 🔷 [ ] Dimlet: Quark
+- 🔷 [ ] Black Quartz Cluster outputs nothing
+- 🔷 [ ] Make Blood Stone Stackable
+- 🔷 [ ] Ice Balls stack up to 64
+- 🔷 [ ] Make Draconic Armor symmetrical
+- 🔷 [ ] Remove Unoredicted recip of glass panes
+- 🔷 [ ] Remove Useless NC recipes (for example enriching depleted fuel with salt)
+- 🔷 [ ] Drawers more levels for storage upgrades
+- 🔷 [ ] Renema Diamond Lattice back
+- 🔷 [ ] IC2 Coolant Wont be consumed in salt reactor
+- 🔷 [ ] Enrichment Chamber gives wrong dusts
+- 🔷 [ ] Hardened Ice (from MA essence, from packed ice, from compressor) -> Ice Balls
+- 🔷 [ ] Phased Field Generator in QuestBook (remove NBT)
+- 🔷 [ ] Increase Creative RF Cube output, remove rainbow generators from input
+- 🔷 [ ] Remake Scoot-Covered Plate with right type of quartz
+- 🔷 [ ] Harder Botania's Magnet Ring
+- 🔷 [ ] Full Resonant Tank wont clear
+- 🔷 [ ] Diamond Lattice in crafts
+- 🔷 [ ] Creative Fluid Tank -> Full container recipes (probably hidden)
+- 🔷 [ ] Change Creative Gas ingredients (remove items with NBT)
+- 🔷 [ ] Blood Magic Runes tip
+- 🔷 [ ] Printed Page tooltip
+- 🔷 [ ] Molten Lapis Cast, Molten Quartz
+- 🔷 [ ] Construction Foam Unify
+- 🔷 [ ] Creative Vending swap Draconium chests for something else
+- 🔷 [ ] Simplify Ender Energy manipulator
+- 🔷 [ ] Unifi Molten Infinity (remove Plustic version from NC melter)
+- 🔷 [ ] Simplify Infinity Catalyst (or Infinity Ingot)
+
 
 ### Do after process.zs class rework:
 
@@ -61,6 +111,9 @@
 - ⚙️ [ ] bonusType for SAG mill
 - ⚙️ [ ] AdvRock Electrolyser should accept any amount of output but cut if > 2
 - ⚙️ [ ] Chained crafting (Solar Panels in precision assembler)
+- ⚙️ [ ] Ingredients with chance should multiplied if chance > 1.0
+- ⚙️ [ ] Use Rat Diamond in most machines
+- ⚙️ [ ] Lower AE Grindstone double output (its 100% sometimes now)
 
 ## Long-term
 
@@ -70,13 +123,15 @@
 - [ ] Check why magnet shapeless recipes dissapeared
 - [ ] ⚙️ Primal Mana in other machines (no machines accept 3 liquids yet)
 - [ ] Fake players can use cans ?
-- 🔴 [ ] Replace Extended Crafting -> EC Omnifactory (oreDict bug, reported)
 - 💜 [ ] Account Thaumcraft's aspects cost
 - 💜 [ ] Check why Lumium so pricy
 - 💜 [ ] UU Forbid ME drives to be replicable
 - 💜 [ ] UU Silicon Wafer cant be seen in UU
 - 🔷 [ ] Prefect Fuel. Summ of several best fuels. Probably bunch of drums together
 - 🔷 [ ] Tcon Armor that speed up time in bottle
+- 🔷 [ ] Wrong Uranium in oredict
+- 🌿 [ ] Patchouli book texture
+- 🔷 [ ] Magic processing byproducts
 
 
 ## Unused TC traits
@@ -111,6 +166,11 @@
 
 -----------
 
+- <contenttweaker:compressed_ender>
+- <advancedrocketry:misc:1> <!-- Carbon plate -->
+- <extrautils2:decorativesolid:6> <!-- Blue Quartz -->
+- <actuallyadditions:item_dust:3> <!-- Emerald Dust -->
+- <draconicevolution:draconium_block:1> <!-- Charged Draconium -->
 - ✏️ Flux to early crafts
 - ✏️ More mechanics explosions
 - ✏️ More using for fluid Latex
@@ -191,7 +251,7 @@ mods.rt.RandomThingsTweaker.addImbuingRecipe(IItemStack top, IItemStack leftside
 - ":2>"          ,**Lapis Lazuli Singularity** - Turns water into coolant
 - ":3>"          ,**Redstone Singularity**     - Produce Power
 - ":4>"          ,**Glowstone Singularity**    - Infinite glowing nano-particles
-- ":5>"          ,**Gold Singularity**         - ? infinity gold when smelted
+- ":5>"          ,**Gold Singularity**         - ? Infinity gold when smelted ? Trade with villagers
 - ":6>"          ,**Diamond Singularity**      - Give indestructible to Tinkers tools and armor
 - ":7>"          ,**Emerald Singularity**      - ? Cycle Villagers
 - ":16>"         ,**Aluminum Singularity**     - ? Infinity ImmersEngin wires (click to create wire coil)
@@ -211,13 +271,13 @@ mods.rt.RandomThingsTweaker.addImbuingRecipe(IItemStack top, IItemStack leftside
 - ":35>"         ,**Iridium Singularity**      - ? RF for tinkers tools
 - ":48>"         ,**Signalum Singularity**     - Create destabilized redstone ORE from regular redstone ORE
 - ":49>"         ,**Lumium Singularity**       -
-- ":50>"         ,**Enderium Singularity**     -
+- ":50>"         ,**Enderium Singularity**     - Random Teleportation 1000 blocks away
 - ":64>"         ,**Ardite Singularity**       - ? Durability of tools
 - ":65>"         ,**Cobalt Singularity**       - Starts a blue fire
 - ":66>"         ,**Manyullyn Singularity**    - 
 - "_custom:100>" ,**Quartz Singularity**       - ? Something about chiseling
 - "_custom:101>" ,**Certus Quartz**            - Instantly grow quartz crystals
-- "_custom:102>" ,**Black Quartz**             -
+- "_custom:102>" ,**Black Quartz**             - ? Makes Black Quartz from White
 - "_custom:103>" ,**Hard Carbon Alloy**        - Can be used as previous tier for crafting armor
 - "_custom:104>" ,**Magnesium Diboride**       - Black Iron crafting catalyst
 - "_custom:105>" ,**Thorium Singularity**      - Nuclear fuel
@@ -232,3 +292,17 @@ mods.rt.RandomThingsTweaker.addImbuingRecipe(IItemStack top, IItemStack leftside
 ## Characters to use in crafts:
 
 !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžƎƒƬƮƵǍǎǏǐǑǒǓǔǕǖǗǘǙǚǛǜǞǟǠǡǢǣǦǧǨǩǰǴǵǸǹǺǻǼǽǾǿȀȁȄȅȆȈȉȌȍȐȑȔȕȘșȚțȞȟȢȤȦȧȨȩȪȫȬȭȮȯȰȱȲȳȷȽȾɆɚɶʮʯʹʺʼˆˇˉ˘˙˚˛˜˝ͰͱͲͳʹ͵Ͷͷ͸͹ͺͻͼͽ;Ϳ΀΁΂΃΄΅Ά·ΈΉΊ΋Ό΍ΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡ΢ΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώϏϐϑϒϓϔϕϖϗϘϙϚϛϜϝϞϟϠϡϤϰϱϲϳϴϵ϶ϷϸϹϺϻϼϽϾϿЀЁЂЃЄЅІЇЈЉЊЋЌЍЎЏАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяѐёђѓєѕіїјљњћќѝўџѠѡѢѣѤѥѦѧѨѩѪѫѬѭѮѯѰѱѲѳѴѵѶѷѸѹѿҊҋҌҍҎҏҐґҒғҔҕҖҗҘҙҚқҜҝҞҟҠҡҢңҤҥҦҧҨҩҪҫҬҭҮүҰұҲҳҴҵҶҷҸҹҺһҼҽҾҿӀӁӂӃӄӅӆӇӈӉӊӋӌӍӎӏӐӑӒӓӔӕӖӗӘәӚӛӜӝӞӟӠӡӢӣӤӥӦӧӨөӪӫӬӭӮӯӰӱӲӳӴӵӶӷӸӹӺӻӼӽӾӿԀԁԂԃԄԅԆԇԈԉԊԋԌԍԎԏԐԑԒԓԔԕԖԗԘԙԚԛԜԝԞԟԠԡԢԣԤԥԦԧԨԩԪԫԬԭԮԯḂḃḈḉḊḋḐḑḔḕḖḗḘḚḜḝḞḟḠḡḢḣḦḧḨḩḮḯḰḱḶḸḺḼḾḿṀṁṄṅṌṍṎṏṐṑṒṓṔṕṖṗṘṙṠṡṤṥṦṧṪṫṬṮṰṸṹṺṻṼṽẀẁẂẃẄẅẆẇẊẋẌẍẎẏẐẑẒẔẗẘẙẞẤấẦầẪẫẮắẰằẴẵẸẺẼẽẾếỀềỂỄễỆỐốỒồỖỗỲỳỸỹἀἁἂἃἄἅἆἇἈἉἊἋἌἍἎἏἐἑἒἓἔἕ἖἗ἘἙἚἛἜἝ἞἟ἠἡἢἣἤἥἦἧἨἩἪἫἬἭἮἯἰἱἲἳἴἵἶἷἸἹἺἻἼἽἾἿὀὁὂὃὄὅ὆὇ὈὉὊὋὌὍ὎὏ὐὑὒὓὔὕὖὗ὘Ὑ὚Ὓ὜Ὕ὞ὟὠὡὢὣὤὥὦὧὨὩὪὫὬὭὮὯὰάὲέὴήὶίὸόὺύὼώ὾὿ᾀᾁᾂᾃᾄᾅᾆᾇᾈᾉᾊᾋᾌᾍᾎᾏᾐᾑᾒᾓᾔᾕᾖᾗᾘᾙᾚᾛᾜᾝᾞᾟᾠᾡᾢᾣᾤᾥᾦᾧᾨᾩᾪᾫᾬᾭᾮᾯᾰᾱᾲᾳᾴ᾵ᾶᾷᾸᾹᾺΆᾼ᾽ι᾿῀῁ῂῃῄ῅ῆῇῈΈῊΉῌ῍῎῏ῐῑῒΐ῔῕ῖῗῘῙῚΊ῜῝῞῟ῠῡῢΰῤῥῦῧῨῩῪΎῬ῭΅`῰῱ῲῳῴ῵ῶῷῸΌῺΏῼ´῾῿  ‒–—―‖‗‘’‚“”„†‡•…‰‹›⁰⁲⁳⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ⁿ₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎₏₝₞₟₠€₮₯₸₹₺₽⃀⃁⃂⃃⃄⃅⃆⃇⃈⃉⃊⃋⃌⃍⃎⃏⃱⃲⃳⃴⃵⃶⃷⃸⃹⃺⃻⃼⃽⃾⃿ℓ№ℙ™ΩKÅ℮⅓⅔⅕⅖⅗⅘⅙⅚⅛⅜⅝⅞↌↍↎↏←↑→↓↔↕∂∆∊∍∏∑−∕∙√∞∩∫≈≠≡≢≤≥⌀⌂⌃⌄⌅⌆⌐⌠⌡⏻⏼⏽⏾⏿␧␨␩␪␫␬␭␮␯␰␱␲␳␴␵␶␷␸␹␺␻␼␽␾␿⑋⑌⑍⑎⑏⑐⑑⑒⑓⑔⑕⑖⑗⑘⑙⑚⑛⑜⑝⑞⑟─━│┃┄┅┆┇┈┉┊┋┌┍┎┏┐┑┒┓└┕┖┗┘┙┚┛├┝┞┟┠┡┢┣┤┥┦┧┨┩┪┫┬┭┮┯┰┱┲┳┴┵┶┷┸┹┺┻┼┽┾┿╀╁╂╃╄╅╆╇╈╉╊╋╌╍╎╏═║╒╓╔╕╖╗╘╙╚╛╜╝╞╟╠╡╢╣╤╥╦╧╨╩╪╫╬╭╮╯╰╱╲╳╴╵╶╷╸╹╺╻╼╽╾╿▀▄█▌▐░▒▓■□▪▫▬▲►▼◄◊○●◘◙☺☻☼♀♂♠♣♥♦♪♫
+
+<ticonmaterial:ma.supremium>.addTrait("tconevo.celestial_armor", "core");
+<ticonmaterial:ma.supremium>.addTrait("prosperous", "core");
+<ticonmaterial:xu_evil_metal>.addTrait("darkness", "handle");
+<ticonmaterial:xu_evil_metal>.addTrait("darkness", "extra");
+<ticonmaterial:xu_evil_metal>.addTrait("darkside", "core");
+<ticonmaterial:xu_evil_metal>.addTrait("darkside", "plates");
+<ticonmaterial:xu_evil_metal>.addTrait("darkside", "trim");
+<ticonmaterial:lonsdaleite>.addTrait("antimagic", "core");
+<ticonmaterial:lonsdaleite>.addTrait("antimagic", "plates");
+<ticonmaterial:lonsdaleite>.addTrait("antimagic", "trim");
+<ticonmaterial:ma.soulium>.addTrait("vindictive", "projectile");
+<ticonmaterial:ma.soulium>.addTrait("vindictive", "extra");
+<ticonmaterial:ma.soulium>.addTrait("vindictive", "handle");

@@ -124,6 +124,9 @@ The goal of the addon is to make E2:E even harder, "Expert of Expert" modpack.
   
 - Less crafting table recipes -> more new crafting ways.  
   *Example: 🔮 Inferium essence can be compressed in compressor*
+  
+- No exploits, less cheeses.  
+  *Example: 🍫 No more mob stripping farms for Terrasteel*
 
 -----------------
 
