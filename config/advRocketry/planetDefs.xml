@@ -207,7 +207,7 @@
 			<rotationalPeriod>10000</rotationalPeriod>
 		</planet>
 		<planet name="KELT-6a" DIMID="121" customIcon="earthlike">
-			<biomeIds>advancedrocketry:alien forest,advancedrocketry:marsh</biomeIds>
+			<biomeIds>advancedrocketry:alien_forest,advancedrocketry:marsh</biomeIds>
 			<skyColor>1,0,1</skyColor>
 			<fogColor>1,0,0.5</fogColor>
 			<atmosphereDensity>0</atmosphereDensity>
