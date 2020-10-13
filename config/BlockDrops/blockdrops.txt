@@ -19680,21 +19680,6 @@
     "3pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}"
   },
   {
-    "name": "advancedrocketry:charcoallog",
-    "meta": 0,
-    "length": 1,
-    "name0": "minecraft:coal",
-    "meta0": 1,
-    "0chance0": 100.0,
-    "1chance0": 100.0,
-    "2chance0": 147.7,
-    "3chance0": 198.09999,
-    "0pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
-    "1pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
-    "2pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
-    "3pair0": "{\n  \"left\": 1,\n  \"right\": 3\n}"
-  },
-  {
     "name": "buildinggadgets:constructionblock_dense",
     "meta": 0,
     "length": 1,
@@ -19865,21 +19850,6 @@
     "3pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}"
   },
   {
-    "name": "advancedrocketry:alienleaves",
-    "meta": 0,
-    "length": 1,
-    "name0": "advancedrocketry:aliensapling",
-    "meta0": 0,
-    "0chance0": 5.5,
-    "1chance0": 6.5,
-    "2chance0": 7.9000006,
-    "3chance0": 10.0,
-    "0pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
-    "1pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
-    "2pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
-    "3pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}"
-  },
-  {
     "name": "astralsorcery:blockcustomsandore",
     "meta": 0,
     "length": 1,
@@ -20043,5 +20013,35 @@
     "1pair0": "{\n  \"left\": 1,\n  \"right\": 6\n}",
     "2pair0": "{\n  \"left\": 1,\n  \"right\": 6\n}",
     "3pair0": "{\n  \"left\": 1,\n  \"right\": 6\n}"
+  },
+  {
+    "name": "advancedrocketry:charcoallog",
+    "meta": 0,
+    "length": 1,
+    "name0": "minecraft:coal",
+    "meta0": 1,
+    "0chance0": 100.0,
+    "1chance0": 100.0,
+    "2chance0": 149.1,
+    "3chance0": 200.6,
+    "0pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
+    "1pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
+    "2pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
+    "3pair0": "{\n  \"left\": 1,\n  \"right\": 3\n}"
+  },
+  {
+    "name": "advancedrocketry:alienleaves",
+    "meta": 0,
+    "length": 1,
+    "name0": "advancedrocketry:aliensapling",
+    "meta0": 0,
+    "0chance0": 5.2999997,
+    "1chance0": 5.6000004,
+    "2chance0": 7.2999997,
+    "3chance0": 11.8,
+    "0pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
+    "1pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
+    "2pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
+    "3pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}"
   }
 ]
