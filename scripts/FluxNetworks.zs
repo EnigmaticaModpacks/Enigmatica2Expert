@@ -1,5 +1,5 @@
 #modloaded fluxnetworks
-print("--- loading FluxNetworks.zs ---");
+
 
 # Flux (fire recipe is disabled)
 recipes.addShaped("Flux Networks Flux", 
@@ -25,4 +25,3 @@ recipes.addShapedMirrored("Flux Core Dupe",
 [<ore:obsidian>, <fluxnetworks:fluxcore>, <ore:obsidian>], 
 [<fluxnetworks:flux>, <ore:obsidian>, <fluxnetworks:flux>]]);
 
-print("--- FluxNetworks.zs initialized ---");

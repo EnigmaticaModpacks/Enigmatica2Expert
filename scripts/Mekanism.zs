@@ -1,7 +1,6 @@
 import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemStack as IItemStack;
 #modloaded mekanism
-print("--- loading Mekanism.zs ---");
 
 # The Combiner can dupe a bunch of stuff, so we're removing it.
 mods.mekanism.combiner.removeAllRecipes();
@@ -242,7 +241,7 @@ for input, output in itemsToUnify {
 	<mekanism:machineblock:4>, 
 	[[<ore:alloyUltimate>, <ore:circuitUltimate>, <ore:alloyUltimate>],
 	[<thermalexpansion:frame>, <mekanism:robit>.anyDamage(), <thermalexpansion:frame>], 
-	[<mekanism:machineblock:11>, <computercraft:computer:16384>, <mekanism:machineblock:11>]]);
+	[<mekanism:machineblock:11>, <computercraft:computer>.anyDamage(), <mekanism:machineblock:11>]]);
 
 # Advanced Circuit
 	recipes.remove(<mekanism:controlcircuit:1>);
@@ -268,5 +267,3 @@ for input, output in itemsToUnify {
 	rh(<mekanism:oreblock:1>);
 	rh(<mekanism:oreblock:2>);
 	rh(<mekanism:walkietalkie>);
-
-print("--- Mekanism.zs initialized ---");

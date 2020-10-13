@@ -1,6 +1,6 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
-print("--- loading Gear.zs ---");
+
 
 	rh(<forestry:gear_tin>);
 	rh(<forestry:gear_bronze>);
@@ -60,4 +60,3 @@ print("--- loading Gear.zs ---");
 	[null, <ore:cobblestone>, null]]);
 
 
-print("--- Gear.zs initialized ---");

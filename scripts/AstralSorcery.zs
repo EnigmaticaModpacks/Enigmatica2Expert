@@ -1,9 +1,10 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded astralsorcery
-print("--- loading AstralSorcery.zs ---");
-	
-# *======= Recipes =======*
+
+# Quartz Dust unification
+	mods.astralsorcery.Grindstone.removeRecipe(<nuclearcraft:gem_dust:2>);
+	mods.astralsorcery.Grindstone.addRecipe(<minecraft:quartz_ore>, <appliedenergistics2:material:3>);
 
 # Nocturnal Powder
 	mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/nocturnalpowder");
@@ -120,4 +121,4 @@ print("--- loading AstralSorcery.zs ---");
 //mods.astralsorcery.LightTransmutation.removeTransmutation(IItemStack stackToRemove, boolean matchMeta);
 #mods.astralsorcery.LightTransmutation.removeTransmutation(<minecraft:end_stone>, false);
 
-	print("--- AstralSorcery.zs initialized ---");
+	

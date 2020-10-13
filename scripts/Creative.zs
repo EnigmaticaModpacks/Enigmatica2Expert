@@ -1,6 +1,6 @@
 import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemCondition;
-print("--- loading Creative.zs ---");
+
 
 # *======= Variables =======*
 
@@ -304,4 +304,4 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 	[null, null, ingotUltimate, ingotUltimate, blockAwakended, ingotUltimate, ingotUltimate, null, null], 
 	[null, null, null, null, blockAwakended, null, null, null, null]]); 
 	
-		print("--- Creative.zs initialized ---");
+		

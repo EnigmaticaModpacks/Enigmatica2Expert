@@ -2,7 +2,41 @@ import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.liquid.ILiquidDefinition;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded tconstruct
-print("--- loading TinkersConstruct.zs ---");
+
+# Slime Dirt -> Slime
+var slimeDirts as IItemStack[][IItemStack] = {
+	<minecraft:slime_ball> : [
+		<tconstruct:slime_dirt>,
+		<tconstruct:slime_grass:1>,
+		<tconstruct:slime_grass:6>,
+		<tconstruct:slime_grass:11>
+	],
+	<tconstruct:edible:1> : [
+		<tconstruct:slime_dirt:1>,
+		<tconstruct:slime_grass:2>,
+		<tconstruct:slime_grass:7>,
+		<tconstruct:slime_grass:12>
+	],
+	<tconstruct:edible:2> : [
+		<tconstruct:slime_dirt:2>,
+		<tconstruct:slime_grass:3>,
+		<tconstruct:slime_grass:8>,
+		<tconstruct:slime_grass:13>
+	],
+	<tconstruct:edible:4> : [
+		<tconstruct:slime_dirt:3>,
+		<tconstruct:slime_grass:4>,
+		<tconstruct:slime_grass:9>,
+		<tconstruct:slime_grass:14>
+	]
+};
+
+for slime, dirts in slimeDirts {
+	for dirt in dirts {
+		mods.thermalexpansion.Centrifuge.addRecipe([slime % 50, <minecraft:dirt>], dirt, null, 4000);
+		mods.forestry.Centrifuge.addRecipe([slime % 25, <minecraft:dirt>], dirt, 100);
+	}
+}
 
 # Removing Bronze / Steel dupes
 	mods.tconstruct.Melting.removeRecipe(<liquid:bronze>, <ic2:pipe>);
@@ -208,45 +242,30 @@ for item in coals {
 	mods.tconstruct.Fuel.registerFuel(<liquid:boric_acid> * 25, 400);
 	mods.tconstruct.Fuel.registerFuel(<liquid:hydrofluoric_acid> * 25, 400);
 	
-# *======= Alloying =======*
+# Liquid blue slimy items
+scripts.process.squeeze(<tconstruct:slime_dirt:1>,        <liquid:blueslime>*2000, null,  <biomesoplenty:mudball>);
+scripts.process.squeeze(<tconstruct:slime_leaves>,        <liquid:blueslime>*500,  null, null);
+scripts.process.squeeze(<tconstruct:slime_grass_tall>,    <liquid:blueslime>*200,  null, null);
+scripts.process.squeeze(<tconstruct:slime_grass_tall:1>,  <liquid:blueslime>*200,  null, null);
+scripts.process.squeeze(<tconstruct:slime_sapling>,       <liquid:blueslime>*1000, null, null);
+scripts.process.squeeze(<tconstruct:slime_vine_blue_end>, <liquid:blueslime>*200,  null, null);
+scripts.process.squeeze(<tconstruct:slime_vine_blue_mid>, <liquid:blueslime>*200,  null, <tconstruct:slime_vine_blue_end>);
+scripts.process.squeeze(<tconstruct:slime_vine_blue>,     <liquid:blueslime>*200,  null, <tconstruct:slime_vine_blue_mid>);
 
-//mods.tconstruct.Alloy.addRecipe(ILiquidStack output, ILiquidStack[] inputs);
-#mods.tconstruct.Alloy.addRecipe(<liquid:water> * 10, [<liquid:lava> * 10, <liquid:molten_iron> * 5]);
+# Liquid purple slimy items
+scripts.process.squeeze(<tconstruct:slime_dirt:2>,          <liquid:purpleslime>*2000, null,  <biomesoplenty:mudball>);
+scripts.process.squeeze(<tconstruct:slime_leaves:1>,        <liquid:purpleslime>*500,  null,  null);
+scripts.process.squeeze(<tconstruct:slime_grass_tall:4>,    <liquid:purpleslime>*200,  null,  null);
+scripts.process.squeeze(<tconstruct:slime_grass_tall:5>,    <liquid:purpleslime>*200,  null,  null);
+scripts.process.squeeze(<tconstruct:slime_sapling:1>,       <liquid:purpleslime>*1000, null,  null);
+scripts.process.squeeze(<tconstruct:slime_vine_purple_end>, <liquid:purpleslime>*200,  null,  null);
+scripts.process.squeeze(<tconstruct:slime_vine_purple_mid>, <liquid:purpleslime>*200,  null,  <tconstruct:slime_vine_purple_end>);
+scripts.process.squeeze(<tconstruct:slime_vine_purple>,     <liquid:purpleslime>*200,  null,  <tconstruct:slime_vine_purple_mid>);
 
-//mods.tconstruct.Alloy.removeRecipe(ILiquidStack output);
-#mods.tconstruct.Alloy.removeRecipe(<liquid:water>);
+# Cast slimes from liquids (only blood have recipe now)
+mods.tconstruct.Casting.addTableRecipe(<tconstruct:edible:2>, null, <liquid:purpleslime>, 250);
+mods.tconstruct.Casting.addTableRecipe(<tconstruct:edible:1>, null, <liquid:blueslime>  , 250);
 
-# *======= Casting =======* Wrong Info on docs
-
-//mods.tconstruct.Casting.addTableRecipe(IItemStack output, IItemStack cast, ILiquidStack fluid, int amount, @Optional boolean consumeCast);
-#mods.tconstruct.Casting.addTableRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, <liquid:molten_gold>, 30, true);
-#mods.tconstruct.Casting.addTableRecipe(<minecraft:gold_ingot>, <minecraft:gold_ingot>, <liquid:molten_gold>, 140);
-
-//mods.tconstruct.Casting.addBasinRecipe(IItemStack output, IItemStack cast, ILiquidStack fluid, int amount, @Optional boolean consumeCast);
-#mods.tconstruct.Casting.addBasinRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, <liquid:molten_gold>, 30, true);
-#mods.tconstruct.Casting.addBasinRecipe(<minecraft:gold_ingot>, <minecraft:gold_ingot>, <liquid:molten_gold>, 140);
-
-//mods.tconstruct.Casting.removeTableRecipe(IItemStack output);
-#mods.tconstruct.Casting.removeTableRecipe(<minecraft:iron_ingot>);
-
-//mods.tconstruct.Casting.removeBasinRecipe(IItemStack output);
-#mods.tconstruct.Casting.removeBasinRecipe(<minecraft:gold_block>);
-
-# *======= Drying =======*
-
-//mods.tconstruct.Drying.addRecipe(IItemStack output, IItemStack input, int time);
-#mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<minecraft:rotten_flesh>, 100);
-
-//mods.tconstruct.Drying.removeRecipe(IItemStack output);
-#mods.tconstruct.Drying.removeRecipe(<minecraft:leather>);
-
-# *======= Melting =======*
-
-//mods.tconstruct.Melting.addRecipe(ILiquidStack output, IItemStack input, @Optional int temp);
-#mods.tconstruct.Melting.addRecipe(<liquid:molten_gold> * 144,<minecraft:gold_ingot>);
-#mods.tconstruct.Melting.addRecipe(<liquid:molten_iron> * 144,<minecraft:iron_ingot>, 500);
-
-//mods.tconstruct.Melting.removeRecipe(ILiquidStack output);
-#mods.tconstruct.Melting.removeRecipe(<liquid:molten_iron>);
-
-	print("--- TinkersConstruct.zs initialized ---");
+# Slime blocks
+mods.tconstruct.Casting.addBasinRecipe(<tconstruct:slime_congealed:2>, null, <liquid:purpleslime>, 1000);
+mods.tconstruct.Casting.addBasinRecipe(<tconstruct:slime_congealed:1>, null, <liquid:blueslime>  , 1000);

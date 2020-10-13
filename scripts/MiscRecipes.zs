@@ -1,6 +1,6 @@
 import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IIngredient;
 import mods.jei.JEI.removeAndHide as rh;
-print("--- loading MiscRecipes.zs ---");
 
 # Eclipsed Clock
 	recipes.remove(<randomthings:eclipsedclock>);
@@ -214,19 +214,56 @@ print("--- loading MiscRecipes.zs ---");
 	recipes.addShapeless("Wither Dust2", <darkutils:material> * 9, [<minecraft:skull:1>]);
 	recipes.addShapeless("Wither Dust3", <darkutils:material> * 4, [<ore:blockWither>]);
 
-# Chest
-	recipes.remove(<minecraft:chest>);
-	recipes.addShapedMirrored("Chest",
-	<minecraft:chest> * 2, 
-	[[<ore:logWood>, <ore:plankTreatedWood>, <ore:logWood>],
+# Logs used by Quark
+val excludeLogs as IItemStack[] = [
+	<minecraft:log>,
+	<minecraft:log:1>,
+	<minecraft:log:2>,
+	<minecraft:log:3>,
+	<minecraft:log2>,
+	<minecraft:log2:1>
+];
+
+# Ingredient of all possible logs except listed above
+var logsFiltered as IIngredient = <minecraft:log>;
+for log in <ore:logWood>.items{
+	var isAdd = true;
+	for i in 0 to excludeLogs.length{
+		if((log has excludeLogs[i]) || (excludeLogs[i] has log)){
+			isAdd = false;
+		}
+	}
+	if (isAdd){
+		print("Adding log " ~ log.displayName);
+		logsFiltered = logsFiltered.or(log);
+	}
+}
+
+function remakeChest(name as string, chest as IItemStack, log as IIngredient) {
+
+	recipes.remove(chest);
+
+	recipes.addShapedMirrored(name, chest * 2, 
+	[[log, <ore:plankTreatedWood>, log],
 	[<ore:plankTreatedWood>, <minecraft:stone_button>, <ore:plankTreatedWood>], 
-	[<ore:logWood>, <ore:plankTreatedWood>, <ore:logWood>]]);
+	[log, <ore:plankTreatedWood>, log]]);
 	
-	recipes.addShaped("Cheap Chest",
-	<minecraft:chest>, 
-	[[<ore:logWood>, <tconstruct:tough_tool_rod>.withTag({Material: "wood"}), <ore:logWood>],
-	[<tconstruct:tough_tool_rod>.withTag({Material: "wood"}), <minecraft:stone_button>, <tconstruct:tough_tool_rod>.withTag({Material: "wood"})], 
-	[<ore:logWood>, <tconstruct:tough_tool_rod>.withTag({Material: "wood"}), <ore:logWood>]]);
+	val toolRod = <tconstruct:tough_tool_rod>.withTag({Material: "wood"});
+	recipes.addShaped("Cheap " ~ name, chest,
+	[[log, toolRod, log],
+	[toolRod, <minecraft:stone_button>, toolRod], 
+	[log, toolRod, log]]);
+}
+
+# Quark chests
+remakeChest("Spruce Chest"  , <quark:custom_chest>  , <minecraft:log:1>);
+remakeChest("Birch Chest"   , <quark:custom_chest:1>, <minecraft:log:2>);
+remakeChest("Jungle Chest"  , <quark:custom_chest:2>, <minecraft:log:3>);
+remakeChest("Acacia Chest"  , <quark:custom_chest:3>, <minecraft:log2>);
+remakeChest("Dark Oak Chest", <quark:custom_chest:4>, <minecraft:log2:1>);
+
+# Chest from any other log
+remakeChest("Any Chest", <minecraft:chest>, logsFiltered);
 
 	
 	recipes.addShaped("Mini Chest To Chest",
@@ -289,35 +326,15 @@ print("--- loading MiscRecipes.zs ---");
 	recipes.addShaped("Hopper Aluminum",
 	<minecraft:hopper>, 
 	[[<ore:plateAluminum>, null, <ore:plateAluminum>],
-	[<ore:plateAluminum>, <minecraft:chest>, <ore:plateAluminum>], 
+	[<ore:plateAluminum>, <ore:chest>, <ore:plateAluminum>], 
 	[null, <ore:plateAluminum>, null]]);
 	
 	recipes.addShaped("Hopper Iron",
 	<minecraft:hopper>, 
 	[[<ore:plateIron>, null, <ore:plateIron>],
-	[<ore:plateIron>, <minecraft:chest>, <ore:plateIron>], 
+	[<ore:plateIron>, <ore:chest>, <ore:plateIron>], 
 	[null, <ore:plateIron>, null]]);
 	
-# Planks
-	recipes.remove(<ore:plankWood>);
-	recipes.addShapeless("Planks", <minecraft:planks> * 2, [<minecraft:log>]);
-	recipes.addShapeless("Planks1", <minecraft:planks:1> * 2, [<minecraft:log:1>]);
-	recipes.addShapeless("Planks2", <minecraft:planks:2> * 2, [<minecraft:log:2>]);
-	recipes.addShapeless("Planks3", <minecraft:planks:3> * 2, [<minecraft:log:3>]);
-	recipes.addShapeless("Planks4", <minecraft:planks:4> * 2, [<minecraft:log2>]);
-	recipes.addShapeless("Planks5", <minecraft:planks:5> * 2, [<minecraft:log2:1>]);
-	recipes.addShapeless("Planks6", <rustic:planks> * 2,[<rustic:log>]);
-	recipes.addShapeless("Planks7", <rustic:planks:1> * 2,[<rustic:log:1>]);
-	recipes.addShapeless("Twilight Logs -> Planks1", <twilightforest:twilight_oak_planks> * 2, [<twilightforest:twilight_log>]);
-	recipes.addShapeless("Twilight Logs -> Planks2", <twilightforest:canopy_planks> * 2, [<twilightforest:twilight_log:1>]);
-	recipes.addShapeless("Twilight Logs -> Planks3", <twilightforest:mangrove_planks> * 2, [<twilightforest:twilight_log:2>]);
-	recipes.addShapeless("Twilight Logs -> Planks8", <twilightforest:dark_planks> * 2, [<twilightforest:twilight_log:3>]);
-	recipes.addShapeless("Twilight Logs -> Planks4", <twilightforest:time_planks> * 2, [<twilightforest:magic_log>]);
-	recipes.addShapeless("Twilight Logs -> Planks5", <twilightforest:trans_planks> * 2, [<twilightforest:magic_log:1>]);
-	recipes.addShapeless("Twilight Logs -> Planks6", <twilightforest:mine_planks> * 2, [<twilightforest:magic_log:2>]);
-	recipes.addShapeless("Twilight Logs -> Planks7", <twilightforest:sort_planks> * 2, [<twilightforest:magic_log:3>]);
-	recipes.addShapeless("integrateddynamics_menril_planks", <integrateddynamics:menril_planks> * 2, [<integrateddynamics:menril_log>]);
-
 # Sticks
 	recipes.remove(<minecraft:stick>);
 	recipes.addShapedMirrored("Sticks", 
@@ -352,4 +369,6 @@ print("--- loading MiscRecipes.zs ---");
 	rh(<extendedcrafting:material:128>);
 	rh(<extendedcrafting:material:129>);
 	
-print("--- MiscRecipes.zs initialized ---");
+
+# Arrows recycle
+scripts.process.crush(<minecraft:arrow>, <minecraft:flint>, "no exceptions", [<ore:dustWood>.firstItem], [0.2f]);

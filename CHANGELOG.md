@@ -1,20 +1,103 @@
-# Enigmatica 2: Expert Changelog
+### Enigmatica 2: Expert Changelog
 
 ## 1.82
 
-_Remember to use the command `/bq_admin default load` when updating_
-
 _[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.82.txt)_ | _Using Forge-1.12.2-14.23.5.2847_
 
-**Bug fixes**
 
-* 
+
+**New Mod Interactions**
+
+- Added chiseling of Alabaster and SonarCore's blocks
+- Added Draconic Evolution tablet to Akashic Tome
+- Advanced Generators Turbine now accept twice as many fuels. See Turbine Controller's Tooltip for the list
+- A lot of new drops for IC2 Scrapboxes
+- Blacklist Unobtainable Foods from Spice of Life: Carrot Edition [\#1811](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1811)
+- Buff Thermal Dynamics Fluxducts [\#1747](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1747)
+- Can't make some ground meats in the pulverizer [\#1801](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1801)
+- IC2 Crushed Uranium doesn't have a furnace recipe [\#1804](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1804)
+- IC2 Macerator can't make charcoal dust [\#1805](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1805)
+- Industrial Foregoing drill no longer outputs incorrect ores (BoP Amber for example)
+- JEI: Disabled hiding of a ton of items. Performance may be affected when looking at pages with many flowing fluids.
+- Morphing Tool Additions [\#1803](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1803)
+- Nether quartz dust clean-up [\#1701](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1701)
+- New drops for Ball Of Fur *(see "Drops from Ball Of Fur" in JEI)*
+- +5 Thermal Expansion Coolants (for Mediator and Dynamo)
+- Quark: Disabled the config that allows Pistons to move tile entities
+- Twilight Forest Hills now generates ore stalactites: Prosperity, Mithril, Thorium, Boron, Lithium, Magnesium
+- Ultimate Tier Installer JEI description [\#1780](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1780)
+- Use for TiCon's Slimy Dirt [\#1710](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1710)
+- New ore deposits for the Immersive Engineering Excavator 
+  * Nuclear Craft's vein
+  * Osmium vein
+    * *(Core Sample texture can be glitched)*
+- Added recycling for: 
+  * 6 Quark Crystals
+  * Mystical Agriculture Water Cans 
+  * Myrmex Resin and Cocoons (output TE Resin)
+  * Slime Vines, Grass and Saplings
+  * Minotaur Axes
+  * Twilight Forest blocks (see NuclearCraft Rock Crusher in JEI)
+  * Vanilla Arrows
+- Orechid from Botania
+  - -Yellorite Ore
+  - +NuclearCraft Ores
+  - +Prosperity Ore
+
+**Changes**
+
+- Advanced Rocketry Crystallizer now can grow Astral Sorcery Crystals and Gems
+- Advanced Rocketry Tank way cheaper (From plates instead of sheets)
+- Blood Tanks remake: Now crafted on Blood Altair (2M essence for tier 16)
+- Blue and Purple liquid slime now can be cast on Table or Basin
+- Cheaper Extra Utilities Wireless Transmitter and Battery
+- Extended Crafting Automation Table no longer requires Crystaltine
+- Fixed 4->2 planks for Garden Cloche in Advanced Thermionic Fabricator
+- Harder Integrated Dynamics Omnidirectional Connector (now require Ender Chest)
+- New Insanium recipe in Quantum Compressor
+- New recipes for Quark Chests
+- Random Things Igniter now requires fire dragon blood to craft
+- S'More ingredients (now able to make S'Mores without NC machines)
+- Simplify Ender IO Niard recipe (simple components instead of EIO machine case)
+- Sonar Core's decorative blocks can now use any oredictionaried dye
+- Thermal Expansion Ducts now can be made in many different machines (low-tier machines require more liquid)
+- Vanilla Hopper now uses any chest in the recipe (not only vanilla one)
+- The following can now be cleared for liquid: 
+  * Cyclic Tanks
+  * Extra Utilities Drums
+  * Thermal Expansion Tanks and Reservoirs
+- Advanced Rocketry machines now work about 2-20x times faster, new compat recipes for: 
+  * Electrolyser
+  * Electric Arc Furnace
+  * Cutting Machine
+  * Chemical Reactor
+- Log cutting rework: 
+  * All the machines can cut all the logs now
+  * Some have different output amount
+  * Pulp is always the same
+  * Some modded plank recipes can reappear (like Giant Log -> 64 Planks)
+- New compat recipes for:
+  * Black Quartz
+  * Sky Stone Dust
+  * Nano Glowstone
+  * Energy Crystal
+  * Nuclear Craft's HSLA
+  * End Stone Dust
+
+**Bug Fixes**
+
+* EnvironmentalTech: Removed Aluminium Ore as a possible output from the Tier 6 Void Ore Miner
+
+**Mod additions**
+
+- EnderTweaker
+- Integrated NBT [\#1822](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1822)
+- Extra Bit Manipulation [#1758](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1758)
 
 **Mod removals**
 
 * Item Filters (Added during a test, forgot to remove it)
 
-# Enigmatica 2: Expert Changelog
 
 ## 1.81a
 

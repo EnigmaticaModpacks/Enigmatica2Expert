@@ -1,5 +1,5 @@
 #modloaded refinedstorage
-print("--- loading RefinedStorage.zs ---");
+
 
 # Controller
 	recipes.remove(<refinedstorage:controller>);
@@ -25,4 +25,3 @@ print("--- loading RefinedStorage.zs ---");
 	[<actuallyadditions:block_misc:9>, <opencomputers:diskdrive>, <actuallyadditions:block_misc:9>], 
 	[<ic2:casing:3>, <refinedstorage:processor:5>, <ic2:casing:3>]]);
 
-print("--- RefinedStorage.zs initialized ---");

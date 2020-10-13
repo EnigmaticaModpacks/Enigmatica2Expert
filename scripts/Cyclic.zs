@@ -1,8 +1,8 @@
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded cyclicmagic
-print("--- loading Cyclic.zs ---");
 
-# *======= Recipes =======*
+# Removing Obsidian -> Lava
+mods.cyclicmagic.Melter.removeShapedRecipe("lava", 1000);
 
 # Removing Simple Block Miner
 	rh(<cyclicmagic:block_miner>);
@@ -132,5 +132,5 @@ print("--- loading Cyclic.zs ---");
 	[<extrautils2:decorativeglass:3>, <extrautils2:decorativeglass:3>, <extrautils2:decorativeglass:3>]
 	]);
 
-	
-	print("--- Cyclic.zs initialized ---");
+# Clear tank
+recipes.addShapeless("Cyclic tank clear", <cyclicmagic:block_storeempty>, [<cyclicmagic:block_storeempty>]);

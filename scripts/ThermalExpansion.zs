@@ -1,6 +1,5 @@
 import crafttweaker.item.IItemStack;
 #modloaded thermalexpansion
-print("--- loading ThermalExpansion.zs ---");
 
 # Planks/Slabs -> Sticks
 for plank in <ore:plankWood>.items {
@@ -207,4 +206,42 @@ recipes.removeByRecipeName("thermalexpansion:tank_17");
 recipes.removeByRecipeName("thermalexpansion:tank_14");
 recipes.removeByRecipeName("thermalexpansion:tank_15");
 
-		print("--- ThermalExpansion.zs initialized ---");
+# Remove old non-working reservior clearings
+recipes.removeByRecipeName("thermalexpansion:reservoir_10");
+recipes.removeByRecipeName("thermalexpansion:reservoir_11");
+recipes.removeByRecipeName("thermalexpansion:reservoir_12");
+recipes.removeByRecipeName("thermalexpansion:reservoir_13");
+recipes.removeByRecipeName("thermalexpansion:reservoir_14");
+
+# Clear content of reservior and tank
+for i in 0 to 5 {
+	val reservior as IItemStack = <thermalexpansion:reservoir>.definition.makeStack(i) as IItemStack;
+	clearFluid(reservior);
+	# mods.jei.JEI.addItem(reservior); # Tanks cant be added to JEI
+}
+clearFluid(<thermalexpansion:tank>.withTag({}));
+
+# Add to Jei
+mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 1 as byte}));
+mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 2 as byte}));
+mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 3 as byte}));
+mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 4 as byte}));
+
+# More TE coolants
+mods.thermalexpansion.Coolant.addCoolant(<liquid:liquidhelium>,         3500000, 65);
+mods.thermalexpansion.Coolant.addCoolant(<liquid:liquid_nitrogen>,      2500000, 55);
+mods.thermalexpansion.Coolant.addCoolant(<liquid:ender_distillation>,   4000000, 70);
+mods.thermalexpansion.Coolant.addCoolant(<liquid:vapor_of_levity>,      4500000, 75);
+mods.thermalexpansion.Coolant.addCoolant(<liquid:blockfluidantimatter>, 5000000, 80);
+
+# Duct filling compat
+scripts.process.fill(<thermaldynamics:duct_0:6>,  <liquid:redstone>*200,  <thermaldynamics:duct_0:2>,  null);
+scripts.process.fill(<thermaldynamics:duct_0:7>,  <liquid:redstone>*200,  <thermaldynamics:duct_0:3>,  null);
+scripts.process.fill(<thermaldynamics:duct_0:8>,  <liquid:redstone>*200,  <thermaldynamics:duct_0:4>,  null);
+scripts.process.fill(<thermaldynamics:duct_0:9>,  <liquid:cryotheum>*500, <thermaldynamics:duct_0:5>,  null);
+scripts.process.fill(<thermaldynamics:duct_32:1>, <liquid:glowstone>*200, <thermaldynamics:duct_32:3>, null);
+scripts.process.fill(<thermaldynamics:duct_32:4>, <liquid:glowstone>*200, <thermaldynamics:duct_32:6>, null);
+scripts.process.fill(<thermaldynamics:duct_32:5>, <liquid:glowstone>*200, <thermaldynamics:duct_32:7>, null);
+scripts.process.fill(<thermaldynamics:duct_32>,   <liquid:glowstone>*200, <thermaldynamics:duct_32:2>, null);
+scripts.process.fill(<thermaldynamics:duct_64:3>, <liquid:aerotheum>*500, <thermaldynamics:duct_64>,   null);
+scripts.process.fill(<thermaldynamics:duct_64>,   <liquid:ender>*1000,    <thermaldynamics:duct_64:2>, null);

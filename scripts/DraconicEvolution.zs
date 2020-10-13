@@ -1,6 +1,6 @@
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded draconicevolution
-print("--- loading DraconicEvolution.zs ---");
+
 
 # *======= Recipes =======*
 
@@ -83,4 +83,4 @@ print("--- loading DraconicEvolution.zs ---");
 	<draconicevolution:draconic_core>, 
 	<liquid:redstone> * 10000, 250000);
 
-		print("--- DraconicEvolution.zs initialized ---");
+		

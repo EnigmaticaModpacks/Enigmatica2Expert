@@ -3635,17 +3635,6 @@
             }
           }
         },
-        "9:10": {
-          "weight:3": 1,
-          "items:9": {
-            "0:10": {
-              "id:8": "betterbuilderswands:wandunbreakable",
-              "Count:3": 1,
-              "OreDict:8": "",
-              "Damage:3": 0
-            }
-          }
-        },
         "10:10": {
           "weight:3": 1,
           "items:9": {
