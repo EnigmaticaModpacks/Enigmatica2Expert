@@ -1,6 +1,6 @@
 ### Enigmatica 2: Expert Changelog
 
-## 1.82
+## 1.82 (+1.82a)
 
 _[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.82.txt)_ | _Using Forge-1.12.2-14.23.5.2847_
 
@@ -106,7 +106,9 @@ _[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/ch
 * Remove Cyclic Hydrator & Dehydrator - Remove Lava recipe from Melter [\#1743](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1743)
 * RFTools Spawner Blue Slime Config Incorrect [\#1808](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1808)
 * Sheetmetal Chute from IE broken [\#1509](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1509)
+* [Fixed in 1.82a] [Smokey Quartz Block and Black Quartz Block Recipe Conflict](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1834)
 * Thermal Expansion Steam Dynamo - Steam input limited to 2000mb/s [\#1745](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1745)
+* [Fixed in 1.82a] [Mining Levels seem to be broken.](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1835)                    
 
 **Mod additions**
 
