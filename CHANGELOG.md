@@ -86,7 +86,27 @@ _[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/ch
 
 **Bug Fixes**
 
+* \[1.81a\] Creative Power Cell next to Cyclic Pattern Replicated crashes instance [\#1782](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1782)
+* \[1.81a\] Unconfigured Cyclic Pattern Replicator crash and world corrupt [\#1783](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1783)
+* Block cutting machine from IC2 gives wrong block. [\#1611](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1611)
+* Charged certus quartz ore gives regular certus quartz [\#1795](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1795)
+* Copper, titanium and iridium duplication [\#1774](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1774)
+* Cyclic Fluid Collector / Lava Dupe [\#1433](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1433)
+* Digital miner requires non NBT affected advanced computer [\#1784](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1784)
+* Electric Arc Furnace steel recipe produces wrong type of steel ingot [\#1786](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1786)
+* Empty Heart Canister \(Cyclic\) still craftable [\#1810](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1810)
+* Ender IO: Can craft Antenna Extension for Block, that you can't craft - 1.81a [\#1789](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1789)
 * EnvironmentalTech: Removed Aluminium Ore as a possible output from the Tier 6 Void Ore Miner
+* ExtraCells2 1024k and 4096k Fluid Storage Cells not working properly \(Removed recipes\) [\#1740](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1740)
+* Extra Cells 2 Gas cells not working correctly - wrong capacity [\#1457](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1457)
+* Incorrect Unbreakable Wand got from loot chests [\#1798](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1798)
+* Minecraft crash when i use a piston to push a Razor Wire [\#1775](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1775)
+* Multiple food items don't have a recipe [\#1779](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1779)
+* Nether Aluminum Ore yielding Bauxite Ore in Mek Energized Smelter [\#1751](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1751)
+* Remove Cyclic Hydrator & Dehydrator - Remove Lava recipe from Melter [\#1743](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1743)
+* RFTools Spawner Blue Slime Config Incorrect [\#1808](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1808)
+* Sheetmetal Chute from IE broken [\#1509](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1509)
+* Thermal Expansion Steam Dynamo - Steam input limited to 2000mb/s [\#1745](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1745)
 
 **Mod additions**
 
