@@ -95,6 +95,9 @@
 - 🔷 [ ] Simplify Ender Energy manipulator
 - 🔷 [ ] Unifi Molten Infinity (remove Plustic version from NC melter)
 - 🔷 [ ] Simplify Infinity Catalyst (or Infinity Ingot)
+- 🔷 [ ] Raise Cooling Rate for useless NC active coolers
+- 🔷 [ ] Merge E2E-v2
+- 🔷 [ ] Nerf Osgloglas
 
 
 ### Do after process.zs class rework:
