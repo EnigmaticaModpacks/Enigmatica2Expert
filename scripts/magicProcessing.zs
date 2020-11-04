@@ -74,8 +74,8 @@ static agglMultiblock as AgglomerationMultiblock = AgglomerationMultiblock
   .edgeReplace(<tconstruct:metal>);
 
 # Helper Transmutation for Cobalt -> Diamond
-//mods.astralsorcery.LightTransmutation.addTransmutation(IItemStack stackIn, IItemStack stackOut, double cost);
-mods.astralsorcery.LightTransmutation.addTransmutation(<tconstruct:metal>, <minecraft:diamond_block>, 50);
+//scripts.wrap.astralsorcery.LightTransmutation.addTransmutation(IItemStack stackIn, IItemStack stackOut, double cost);
+scripts.wrap.astralsorcery.LightTransmutation.addTransmutation(<tconstruct:metal>, <minecraft:diamond_block>, 50);
 
 function magicProcessing(nativeClusterOreEntry as IOreDictEntry, ore_name as string) {
 
@@ -119,8 +119,8 @@ function magicProcessing(nativeClusterOreEntry as IOreDictEntry, ore_name as str
   furnace.addRecipe(dirtyGem * 1, currItem);
 
 
-  # mods.astralsorcery.StarlightInfusion.addInfusion(IItemStack input, IItemStack output, boolean consumeMultiple, float consumptionChance, int craftingTickTime);
-  mods.astralsorcery.StarlightInfusion.addInfusion(prevItem, crystalShard, true, 0.2, 20);
+  # scripts.wrap.astralsorcery.StarlightInfusion.addInfusion(IItemStack input, IItemStack output, boolean consumeMultiple, float consumptionChance, int craftingTickTime);
+  scripts.wrap.astralsorcery.StarlightInfusion.addInfusion(prevItem, crystalShard, true, 0.2, 20);
   mods.inworldcrafting.FluidToItem.transform(currItem, <fluid:astralsorcery.liquidstarlight>, [prevItem*4], true);
   craft.shapeless(currItem,   "cccc",     {c: crystalShard});
   craft.shapeless(currItem*2, "cccccccc", {c: crystalShard});

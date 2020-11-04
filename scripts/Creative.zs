@@ -152,7 +152,7 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 	"α β α β α"], list);
 
 # Ultimate Ingot
-	mods.extendedcrafting.TableCrafting.addShapeless(0, <extendedcrafting:material:32>, 
+	scripts.wrap.extendedcrafting.TableCrafting.addShapeless(0, <extendedcrafting:material:32>, 
 	[<nuclearcraft:ingot:3>, <nuclearcraft:ingot:5>, <minecraft:iron_ingot>,<minecraft:gold_ingot>,
 	<advancedrocketry:productingot>,<advancedrocketry:productingot:1>,<advancedrocketry:misc:1>,
 	<astralsorcery:itemcraftingcomponent:1>,<botania:manaresource>,<botania:manaresource:4>,
@@ -179,13 +179,13 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 	<thaumcraft:ingot>, <thaumcraft:ingot:1>]);
 	
 # Creative Builder's Wand
-	mods.extendedcrafting.TableCrafting.addShaped(0, <extrautils2:itemcreativebuilderswand>, 
+	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <extrautils2:itemcreativebuilderswand>, 
 	[[<extrautils2:itembuilderswand>, <extrautils2:itembuilderswand>, <extrautils2:itembuilderswand>], 
 	[<extrautils2:itembuilderswand>, <extrautils2:itembuilderswand>, <extrautils2:itembuilderswand>], 
 	[<extrautils2:itembuilderswand>, <extrautils2:itembuilderswand>, <extrautils2:itembuilderswand>]]);  
 
 # Creative RFTools Screen
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<rftools:creative_screen>, 
+	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<rftools:creative_screen>, 
 	100000000, 1000000, <rftools:screen_controller>, 
 	[<rftools:screen>, <rftools:screen>, <rftools:screen>, 
 	<rftools:screen>, <rftools:screen>, <rftools:screen>, 
@@ -344,7 +344,7 @@ recipes.addShapeless("Creative Tank Reset",
 
 	
 # Psi Creative Rod Frame
-	mods.extendedcrafting.TableCrafting.addShaped(4, <psi:cad_assembly:5>, 
+	scripts.wrap.extendedcrafting.TableCrafting.addShaped(4, <psi:cad_assembly:5>, 
 	[[<psi:cad_assembly:4>, <psi:cad_assembly:4>, <ore:ingotIvoryPsi>, null, null, null, null, null, null], 
 	[<psi:cad_assembly:4>, <ore:blockInfinity>, <psi:cad_assembly:4>, <ore:ingotIvoryPsi>, null, null, null, null, null], 
 	[<ore:ingotIvoryPsi>, <psi:cad_assembly:4>, <psi:cad_colorizer_:16>, <psi:cad_assembly:4>, null, null, null, null, null], 

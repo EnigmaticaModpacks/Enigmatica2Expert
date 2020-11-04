@@ -8,7 +8,6 @@ Should be removed on publish or all its functions should be commented.
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
-import mods.immersivetweaker.Recycling;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.data.IData;
 import crafttweaker.event.CommandEvent;

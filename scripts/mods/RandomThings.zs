@@ -72,7 +72,7 @@ recipes.remove(<randomthings:spectrekey>);
 mods.actuallyadditions.Empowerer.addRecipe(<randomthings:spectrekey>, 
 	<storagedrawers:shroud_key>, ectoplasm, ectoplasm, ectoplasm, ectoplasm,
 	25000, 100, [1.0, 0.0, 0.0]);
-mods.extendedcrafting.CombinationCrafting.addRecipe(<randomthings:spectrekey>, 100000, 1000000, 
+scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<randomthings:spectrekey>, 100000, 1000000, 
 	<storagedrawers:shroud_key>, [ectoplasm, ectoplasm, ectoplasm, ectoplasm]);
 
 # Spectre Anchor

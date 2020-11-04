@@ -147,8 +147,8 @@ for poop in listRatPoop{
         # Process Everything
         # ########################
         if(!isNull(poopIngotOrGemOrDust)){
-          # mods.astralsorcery.StarlightInfusion.addInfusion(IItemStack input, IItemStack output, boolean consumeMultiple, float consumptionChance, int craftingTickTime);
-          mods.astralsorcery.StarlightInfusion.addInfusion(poop, poopIngotOrGemOrDust*2, false, 0.7, 100);
+          # scripts.wrap.astralsorcery.StarlightInfusion.addInfusion(IItemStack input, IItemStack output, boolean consumeMultiple, float consumptionChance, int craftingTickTime);
+          scripts.wrap.astralsorcery.StarlightInfusion.addInfusion(poop, poopIngotOrGemOrDust*2, false, 0.7, 100);
         }
         
         # ########################
@@ -183,8 +183,8 @@ for poop in listRatPoop{
         # Process Dust
         # ########################
         if(!isNull(poopDust)){
-          # mods.astralsorcery.Grindstone.addRecipe(IItemStack input, IItemStack output, float doubleChance);
-          mods.astralsorcery.Grindstone.addRecipe(poop, poopDust, 0.75f);
+          # scripts.wrap.astralsorcery.Grindstone.addRecipe(IItemStack input, IItemStack output, float doubleChance);
+          scripts.wrap.astralsorcery.Grindstone.addRecipe(poop, poopDust, 0.75f);
 
           # Grinder.addRecipe(IItemStack output, IItemStack input, int turns, @Optional IItemStack secondary1Output, @Optional float secondary1Chance, @Optional IItemStack secondary2Output, @Optional float secondary2Chance);
           mods.appliedenergistics2.Grinder.addRecipe(poopDust, poop, 2, poopDust, 0.5);

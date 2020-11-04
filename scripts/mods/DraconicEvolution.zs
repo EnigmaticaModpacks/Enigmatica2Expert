@@ -14,7 +14,7 @@ import crafttweaker.item.IIngredient;
 	[<ore:ingotElectricalSteel>, <industrialforegoing:mob_relocator>, <ore:ingotElectricalSteel>]]);
 
 # Charged Draconium
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconium_block:1> * 2, 2000000000, 100000000, <draconicevolution:draconium_block>, [<draconicevolution:draconium_block>]);
+	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconium_block:1> * 2, 2000000000, 100000000, <draconicevolution:draconium_block>, [<draconicevolution:draconium_block>]);
 
 # Crystal Binder
 	recipes.remove(<draconicevolution:crystal_binder>);
@@ -63,7 +63,7 @@ import crafttweaker.item.IIngredient;
 	
 # Fusion Crafting Core
 	recipes.remove(<draconicevolution:fusion_crafting_core>);
-	mods.extendedcrafting.CombinationCrafting.addRecipe
+	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe
 	(<draconicevolution:fusion_crafting_core>, 1000000000, 1000000, 
 	<extendedcrafting:crafting_core>, 
 	[<draconicevolution:draconic_core>, <draconicevolution:wyvern_energy_core>, 
@@ -97,5 +97,5 @@ var ingrds as IItemStack[] = [
 	<actuallyadditions:block_giant_chest_large>, 
 	<draconicevolution:draconium_block>
 ] as IItemStack[];
-mods.extendedcrafting.CombinationCrafting.addRecipe(dchest, 2000000, 20000000, <minecraft:chest>, ingrds as IIngredient[]);
+scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(dchest, 20000000, 2000000, <minecraft:chest>, ingrds as IIngredient[]);
 mods.actuallyadditions.Empowerer.addRecipe(dchest, <minecraft:chest>, ingrds[0], ingrds[1], ingrds[2], ingrds[3], 20000000/4, 400, [8.0, 0.1, 0.9]);

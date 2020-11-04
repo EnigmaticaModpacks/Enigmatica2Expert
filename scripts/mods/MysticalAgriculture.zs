@@ -57,7 +57,7 @@ recipes.addShapedMirrored("Wither Proof Glass",
 
 # Master Infusion Crystal
 	recipes.remove(<mysticalagriculture:master_infusion_crystal>);
-	mods.astralsorcery.Altar.addConstellationAltarRecipe("enigmatica2expert:shaped/internal/altar/master_infusion_crystal",
+	scripts.wrap.astralsorcery.Altar.addConstellationAltarRecipe("enigmatica2expert:shaped/internal/altar/master_infusion_crystal",
 		<mysticalagriculture:master_infusion_crystal>, 3000, 600, 
 	[<botania:rune:12>, <botania:storage:3>, <botania:rune:15>,
 	<botania:storage:2>, <matc:supremiumcrystal>.anyDamage(), <botania:storage>,
@@ -158,7 +158,7 @@ function addTieredRecipe(
 			"2²2"+
 			"╳2╳"+
 			"○○□□"], L);
-		mods.astralsorcery.Altar.addAttunementAltarRecipe(
+		scripts.wrap.astralsorcery.Altar.addAttunementAltarRecipe(
 			craft.recipeName(output, grid),	output, 500, 200, grid.shapeless());
 	} else
 
@@ -168,7 +168,7 @@ function addTieredRecipe(
 			"3³3"+
 			"╳3╳"+
 			"○○□□"], L);
-		mods.astralsorcery.Altar.addAttunementAltarRecipe(
+		scripts.wrap.astralsorcery.Altar.addAttunementAltarRecipe(
 			craft.recipeName(output, grid),	output, 500, 200, grid.shapeless());
 	} else
 
@@ -179,7 +179,7 @@ function addTieredRecipe(
 			"╳4╳"+
 			"○○□□"+
 			"▪▪▪▪▪▪▪▪"], L);
-		mods.astralsorcery.Altar.addConstellationAltarRecipe(
+		scripts.wrap.astralsorcery.Altar.addConstellationAltarRecipe(
 			craft.recipeName(output, grid),	output, 1500, 250, grid.shapeless());
 	} else
 
@@ -192,7 +192,7 @@ function addTieredRecipe(
 			"▬▬▬▬▬▬▬▬"+
 			"○○□□"+
 			"☼"], L);
-		mods.astralsorcery.Altar.addTraitAltarRecipe(
+		scripts.wrap.astralsorcery.Altar.addTraitAltarRecipe(
 			craft.recipeName(output, grid),	output, 3500, 300, grid.shapeless(), "astralsorcery.constellation." ~ constelation);
 	} else
 
@@ -206,7 +206,7 @@ function addTieredRecipe(
 			"○○□□▲▲○○"+
 			"‗‗‗‗"+
 			"☼"], L);
-		mods.astralsorcery.Altar.addTraitAltarRecipe(
+		scripts.wrap.astralsorcery.Altar.addTraitAltarRecipe(
 			craft.recipeName(output, grid),	output, 5500, 600, grid.shapeless(), "astralsorcery.constellation." ~ constelation);
 	}
 }

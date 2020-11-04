@@ -98,6 +98,9 @@
 - 🔷 [ ] Raise Cooling Rate for useless NC active coolers
 - 🔷 [ ] Merge E2E-v2
 - 🔷 [ ] Nerf Osgloglas
+- 🔷 [ ] Nerf Aquamarine mining level
+- 🔷 [ ] Allow pulp from Hammer but change pulp uses
+- 🔷 [x] Liquid Concrete setted to infinite
 
 
 ### Do after process.zs class rework:

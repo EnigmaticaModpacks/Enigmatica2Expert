@@ -135,7 +135,7 @@ import mods.jei.JEI.removeAndHide as rh;
 
 # Matter Condenser
 	recipes.remove(<appliedenergistics2:condenser>);	
-	mods.extendedcrafting.CompressionCrafting.addRecipe(<appliedenergistics2:condenser>, 
+	scripts.wrap.extendedcrafting.CompressionCrafting.addRecipe(<appliedenergistics2:condenser>, 
 	<minecraft:piston>, 10000, <mekanism:machineblock:7>.withTag({recipeType: 3}), 1000000000, 1000000);
 	
 # Molecular Assembler

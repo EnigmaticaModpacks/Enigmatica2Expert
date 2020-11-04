@@ -419,7 +419,7 @@ Remake(<bedrockores:bedrock_miner>, [
 	
 # Sandwiches
 recipes.remove(<culinaryconstruct:sandwich_station>);
-mods.extendedcrafting.TableCrafting.addShaped(0, <culinaryconstruct:sandwich_station>, [
+scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <culinaryconstruct:sandwich_station>, [
 	[<nuclearcraft:moresmore>, <ore:dragonsteelIngot>, <nuclearcraft:moresmore>], 
 	[<cookingforblockheads:counter>, <cookingforblockheads:cooking_table>, <cookingforblockheads:counter>], 
 	[<cookingforblockheads:counter>, <cookingforblockheads:counter>, <cookingforblockheads:counter>]
@@ -484,7 +484,7 @@ recipes.addShapeless(<minecraft:flint_and_steel>, [<ore:ingotSteel>, <ore:itemFl
 // ]);
 
 # Infinity liquid concrete
-mods.plustweaks.Liquid.setInfinite(<liquid:concrete>, false);
+mods.plustweaks.Liquid.setInfinite(<liquid:concrete>, true);
 
 
 # ------ Silicon unification ------

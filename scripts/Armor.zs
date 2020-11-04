@@ -237,7 +237,7 @@ remakeEx(<ic2:quantum_helmet:26>, [[<ic2:crafting:3>, null, <ic2:crafting:3>],[<
 	recipes.remove(<draconicevolution:wyvern_chest>);
 
 # Wyvern
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_helm>,
+	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_helm>,
 	1000000000, 1000000, <draconicevolution:wyvern_energy_core>, [
 		<twilightforest:arctic_helmet>.anyDamage(),
 		<draconicevolution:draconium_block:1>,
@@ -252,7 +252,7 @@ remakeEx(<ic2:quantum_helmet:26>, [[<ic2:crafting:3>, null, <ic2:crafting:3>],[<
 		<deepmoblearning:glitch_infused_helmet>.anyDamage(),
 		<ic2:quantum_helmet>.anyDamage(),
 	]);
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_chest>,
+	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_chest>,
 	1000000000, 1000000, <draconicevolution:wyvern_energy_core>, [
 		<twilightforest:arctic_chestplate>.anyDamage(),
 		<draconicevolution:draconium_block:1>,
@@ -267,7 +267,7 @@ remakeEx(<ic2:quantum_helmet:26>, [[<ic2:crafting:3>, null, <ic2:crafting:3>],[<
 		<deepmoblearning:glitch_infused_chestplate>.anyDamage(),
 		<ic2:quantum_chestplate>.anyDamage(),
 	]);
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_legs>,
+	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_legs>,
 	1000000000, 1000000, <draconicevolution:wyvern_energy_core>, [
 		<twilightforest:arctic_leggings>.anyDamage(),
 		<draconicevolution:draconium_block:1>,
@@ -282,7 +282,7 @@ remakeEx(<ic2:quantum_helmet:26>, [[<ic2:crafting:3>, null, <ic2:crafting:3>],[<
 		<deepmoblearning:glitch_infused_leggings>.anyDamage(),
 		<ic2:quantum_leggings>.anyDamage(),
 	]);
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_boots>,
+	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_boots>,
 	1000000000, 1000000, <draconicevolution:wyvern_energy_core>, [
 		<twilightforest:arctic_boots>.anyDamage(),
 		<draconicevolution:draconium_block:1>,
@@ -299,7 +299,7 @@ remakeEx(<ic2:quantum_helmet:26>, [[<ic2:crafting:3>, null, <ic2:crafting:3>],[<
 	]);
 
 # Draconic
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_helm>,
+	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_helm>,
 	2147483647, 1000000, <avaritia:block_resource:2>, [
 		<draconicevolution:wyvern_helm>.anyDamage(),
 		<extrautils2:angelring>.anyDamage(),
@@ -312,7 +312,7 @@ remakeEx(<ic2:quantum_helmet:26>, [[<ic2:crafting:3>, null, <ic2:crafting:3>],[<
 		<thermalexpansion:frame:148>,
 		<extendedcrafting:material:32>,
 		<astralsorcery:itemcape>.anyDamage()]);
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_chest>,
+	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_chest>,
 	2147483647, 1000000, <avaritia:block_resource:2>, [
 		<draconicevolution:wyvern_chest>.anyDamage(),
 		<extrautils2:angelring>.anyDamage(),
@@ -325,7 +325,7 @@ remakeEx(<ic2:quantum_helmet:26>, [[<ic2:crafting:3>, null, <ic2:crafting:3>],[<
 		<thermalexpansion:frame:148>,
 		<extendedcrafting:material:32>,
 		<astralsorcery:itemcape>.anyDamage()]);
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_legs>,
+	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_legs>,
 	2147483647, 1000000, <avaritia:block_resource:2>, [
 		<draconicevolution:wyvern_legs>.anyDamage(),
 		<extrautils2:angelring>.anyDamage(),
@@ -338,7 +338,7 @@ remakeEx(<ic2:quantum_helmet:26>, [[<ic2:crafting:3>, null, <ic2:crafting:3>],[<
 		<thermalexpansion:frame:148>,
 		<extendedcrafting:material:32>,
 		<astralsorcery:itemcape>.anyDamage()]);
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_boots>,
+	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_boots>,
 	2147483647, 1000000, <avaritia:block_resource:2>, [
 		<draconicevolution:wyvern_boots>.anyDamage(),
 		<extrautils2:angelring>.anyDamage(),

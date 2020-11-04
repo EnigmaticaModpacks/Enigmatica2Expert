@@ -17,7 +17,7 @@ function dankPanelCraft(index as int, matPrimary as IIngredient, matSecondary as
 	var cb = <minecraft:coal_block>;
 
 	recipes.removeByRecipeName(recipeName);
-	mods.extendedcrafting.EnderCrafting.addShaped(item, [
+	scripts.wrap.extendedcrafting.EnderCrafting.addShaped(item, [
 		[matSecondary, cb, matSecondary], 
 		[cb, matPrimary, cb], 
 		[matSecondary, cb, matSecondary]

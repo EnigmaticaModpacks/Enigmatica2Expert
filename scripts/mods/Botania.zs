@@ -93,7 +93,7 @@ import crafttweaker.item.IIngredient as IIngredient;
 
 # Elven Gateway Core
 	recipes.remove(<botania:alfheimportal>);
-	mods.astralsorcery.Altar.addConstellationAltarRecipe("enigmatica2expert:shaped/internal/altar/elven_gateway_core",
+	scripts.wrap.astralsorcery.Altar.addConstellationAltarRecipe("enigmatica2expert:shaped/internal/altar/elven_gateway_core",
 		<botania:alfheimportal>, 2800, 300, [
             <ore:livingwood>, <botania:livingwood:5>, <ore:livingwood>,
             <botania:livingwood:5>, <botania:petalblock:5>, <botania:livingwood:5>,
@@ -106,7 +106,7 @@ import crafttweaker.item.IIngredient as IIngredient;
 
 # Petal Apothecary
 	recipes.remove(<botania:altar>);
-	mods.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/petal_apothecary",
+	scripts.wrap.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/petal_apothecary",
 	<botania:altar>, 200, 450, 
 	[<minecraft:stone_slab:3>, <botania:petal>, <minecraft:stone_slab:3>,
     null, <ore:cobblestone>, null,
@@ -114,13 +114,13 @@ import crafttweaker.item.IIngredient as IIngredient;
 	
 # Runic Altar
 	recipes.remove(<botania:runealtar>);
-	mods.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/runic_altar1",
+	scripts.wrap.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/runic_altar1",
 	<botania:runealtar>, 200, 800, 
 	[null, <astralsorcery:itemrockcrystalsimple>.anyDamage(), null,
     <botania:livingrock>, <botania:manaresource:1>, <botania:livingrock>,
     <botania:livingrock>, <botania:livingrock>, <botania:livingrock>]);
 	
-	mods.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/runic_altar2",
+	scripts.wrap.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/runic_altar2",
 	<botania:runealtar>, 200, 800, 
 	[null, <astralsorcery:itemrockcrystalsimple>.anyDamage(), null,
     <botania:livingrock>, <botania:manaresource:2>, <botania:livingrock>,

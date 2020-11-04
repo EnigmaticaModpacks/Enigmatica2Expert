@@ -1,5 +1,4 @@
 import mods.jei.JEI.removeAndHide as rh;
-import mods.astralsorcery.Utils;
 import crafttweaker.liquid.ILiquidDefinition;
 import mods.nuclearcraft.melter;
 import crafttweaker.item.IItemStack;
