@@ -181,7 +181,7 @@ val capRune = <bloodmagic:blood_rune:7>;
 val sprIng = <randomthings:ingredient:3>;
 val bldTnk = <bloodmagic:blood_tank:7>.withTag({Fluid: {FluidName: "lifeessence", Amount: 2048000}});
 val antBck = Bucket("blockfluidantimatter");
-scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, crDgr, [
+mods.extendedcrafting.TableCrafting.addShaped(0, crDgr, [
 	[null, null, null, null, null, <ore:nuggetDraconicMetal>, sprIng], 
 	[null, null, null, null, <ore:nuggetDraconicMetal>, sprIng, <ore:nuggetDraconicMetal>], 
 	[null, capRune, null, <ore:nuggetDraconicMetal>, sprIng, <ore:nuggetDraconicMetal>, null], 

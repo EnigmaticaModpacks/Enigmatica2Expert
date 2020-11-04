@@ -100,6 +100,7 @@
 - 🔷 [ ] Nerf Osgloglas
 - 🔷 [ ] Nerf Aquamarine mining level
 - 🔷 [ ] Allow pulp from Hammer but change pulp uses
+- 🔷 [ ] Remove TCon Clear Glass from chisel
 - 🔷 [x] Liquid Concrete setted to infinite
 
 

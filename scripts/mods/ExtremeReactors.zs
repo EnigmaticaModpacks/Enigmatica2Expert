@@ -8,7 +8,7 @@ import mods.jei.JEI.removeAndHide as rh;
 
 # Reactor Controller
 	recipes.remove(<bigreactors:reactorcontroller>);
-	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, 
+	mods.extendedcrafting.TableCrafting.addShaped(0, 
 	<bigreactors:reactorcontroller>, 
 	[[<nuclearcraft:fission_block>, <tconstruct:large_plate>.withTag({Material: "lead"}), <nuclearcraft:fission_block>],
 	[<opencomputers:print>, <ic2:te:22>, <opencomputers:print>], 
@@ -95,7 +95,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	recipes.remove(<bigreactors:blockyellorium>);
 	
 # Anglesite - Crystal made of ThermalExpansion/EnvironmentalTech/Ender IO/AE2 materials
-	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<bigreactors:mineralanglesite>, 100000000, 1000000, 
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<bigreactors:mineralanglesite>, 100000000, 1000000, 
 	<appliedenergistics2:material:48>, [<thermalfoundation:material:894>,
 	<thermalfoundation:material:893>,  <thermalfoundation:material:895>, 
 	<thermalfoundation:material:865>,
@@ -106,7 +106,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	<enderio:item_material:17>,  <enderio:item_material:18>, <enderio:item_material:19>]);	  
 
 # Benitoite - Crystal made of Botania/AstralSorcery/BloodMagic/Thaumcraft materials
-	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<bigreactors:mineralbenitoite>, 100000000, 1000000, <botania:manaresource:5>, 
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<bigreactors:mineralbenitoite>, 100000000, 1000000, <botania:manaresource:5>, 
 	[<botania:manaresource:9>, <botania:manaresource:1>, <botania:manaresource:7>, 
 	<botania:pylon:1>, <botania:manaresource:2>, <botania:manaresource:8>, 
 	<astralsorcery:itemcraftingcomponent:2>, #<astralsorcery:itemshiftingstar>.withTag({}), 

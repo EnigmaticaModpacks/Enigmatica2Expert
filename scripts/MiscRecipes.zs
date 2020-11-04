@@ -419,7 +419,7 @@ Remake(<bedrockores:bedrock_miner>, [
 	
 # Sandwiches
 recipes.remove(<culinaryconstruct:sandwich_station>);
-scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <culinaryconstruct:sandwich_station>, [
+mods.extendedcrafting.TableCrafting.addShaped(0, <culinaryconstruct:sandwich_station>, [
 	[<nuclearcraft:moresmore>, <ore:dragonsteelIngot>, <nuclearcraft:moresmore>], 
 	[<cookingforblockheads:counter>, <cookingforblockheads:cooking_table>, <cookingforblockheads:counter>], 
 	[<cookingforblockheads:counter>, <cookingforblockheads:counter>, <cookingforblockheads:counter>]

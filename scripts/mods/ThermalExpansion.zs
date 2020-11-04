@@ -79,7 +79,7 @@ for slab in <ore:slabWood>.items {
 	[<thermalfoundation:material:1028>, <thermalfoundation:material:1028>, <thermalfoundation:material:1028>]], <liquid:glass> * 4000);
 
 # Resonant Cell Frame (Full)
-	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<thermalexpansion:frame:148>, 
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<thermalexpansion:frame:148>, 
 	100000000, 1000000, 
 	<thermalexpansion:frame:132>, 
 	[<gendustry:genetics_processor>, <extrautils2:ingredients:5>, <ic2:plate:16>,

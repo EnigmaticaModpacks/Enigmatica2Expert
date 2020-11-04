@@ -141,9 +141,9 @@ function workEx(machineNameAnyCase as string, exceptions as string,
     }
 
     if (machineName == "grindstone") {
-      # scripts.wrap.astralsorcery.Grindstone.addRecipe(IItemStack input, IItemStack output, float doubleChance);
+      # mods.astralsorcery.Grindstone.addRecipe(IItemStack input, IItemStack output, float doubleChance);
       for ii in inputIngr0.itemArray {
-        scripts.wrap.astralsorcery.Grindstone.addRecipe(ii, outputItem0, defaultChance0(extraChance, 0.0f));
+        mods.astralsorcery.Grindstone.addRecipe(ii, outputItem0, defaultChance0(extraChance, 0.0f));
       }
       return machineName;
     }
@@ -573,11 +573,11 @@ function workEx(machineNameAnyCase as string, exceptions as string,
     }
 
     if (machineName == "starlightinfuser") {
-      # scripts.wrap.astralsorcery.StarlightInfusion.addInfusion(IItemStack input, IItemStack output, boolean consumeMultiple, float consumptionChance, int craftingTickTime);
+      # mods.astralsorcery.StarlightInfusion.addInfusion(IItemStack input, IItemStack output, boolean consumeMultiple, float consumptionChance, int craftingTickTime);
       
       if (inputItems.length == 1 && outputItems.length == 1) {
         for ii in inputIngr0.itemArray {
-          scripts.wrap.astralsorcery.StarlightInfusion.addInfusion(ii, outputItem0, false, 0.7, 60);
+          mods.astralsorcery.StarlightInfusion.addInfusion(ii, outputItem0, false, 0.7, 60);
         }
       } else {
         return info(machineNameAnyCase, getItemName(inputIngr0.itemArray[0]), "received work, but number of inputs or outputs != 1");

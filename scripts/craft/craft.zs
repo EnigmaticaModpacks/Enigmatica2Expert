@@ -75,7 +75,7 @@ zenClass Craft {
     if (isShapeless) {
       var ingrs = grid.shapeless();
       if (ingrs.length > 9) {
-        scripts.wrap.extendedcrafting.TableCrafting.addShapeless(output, ingrs); 
+        mods.extendedcrafting.TableCrafting.addShapeless(output, ingrs); 
       } else {
         recipes.addShapeless(rName, output, ingrs, fnc, null);
       }
@@ -83,7 +83,7 @@ zenClass Craft {
       # Find grid sides size
       var grd = grid.shaped();
       if (max(grid.X, grid.Y) > 3) {
-        scripts.wrap.extendedcrafting.TableCrafting.addShaped(output, grd);
+        mods.extendedcrafting.TableCrafting.addShaped(output, grd);
         print("Adding shaped Extended Crafting Table recipe " ~ rName);
         if (!isNull(fnc)) { logger.logWarning("Cant add recipe function to Extended Crafting table, recipe: " ~ rName); }
       } else {

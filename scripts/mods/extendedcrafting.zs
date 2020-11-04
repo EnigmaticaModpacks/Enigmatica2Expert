@@ -58,7 +58,7 @@ import crafttweaker.item.IItemStack;
 	
 # Compression
 	recipes.remove(<extendedcrafting:compressor>);
-	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:compressor>, 
+	mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:compressor>, 
 	[[piston, piston, piston, piston, piston], 
 	[piston, <ic2:te:43>, <excompressum:auto_compressor>, <ic2:te:43>, piston], 
 	[piston, <extendedcrafting:storage>, <mekanism:machineblock:7>.withTag({recipeType: 3}), <extendedcrafting:storage>, piston], 
@@ -67,7 +67,7 @@ import crafttweaker.item.IItemStack;
 	
 # Advanced Crafting
 	recipes.remove(<extendedcrafting:table_advanced>);
-	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, 
+	mods.extendedcrafting.TableCrafting.addShaped(0, 
 	<extendedcrafting:table_advanced>, 
 	[[<extendedcrafting:material:8>, <extendedcrafting:material:15>, <extendedcrafting:material:9>], 
 	[<extendedcrafting:material:14>, <extendedcrafting:table_basic>, <extendedcrafting:material:17>], 
@@ -75,7 +75,7 @@ import crafttweaker.item.IItemStack;
 
 # Elite Crafting
 	recipes.remove(<extendedcrafting:table_elite>);
-	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:table_elite>, [
+	mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:table_elite>, [
 	[<thermalexpansion:frame:129>, <extendedcrafting:material:16>, <thermalexpansion:frame:147>, <extendedcrafting:material:16>, <thermalexpansion:frame:129>], 
 	[<extendedcrafting:material:16>, <ore:dustMana>, <extendedcrafting:table_advanced>, <ore:dustMana>, <extendedcrafting:material:16>], 
 	[<thermalfoundation:fertilizer:2>, <ore:blockOsgloglas>, <rftools:crafter3>, <ore:blockOsgloglas>, <thermalfoundation:fertilizer:2>], 
@@ -84,7 +84,7 @@ import crafttweaker.item.IItemStack;
 
 # Ultimate Crafting
 	recipes.remove(<extendedcrafting:table_ultimate>);
-	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:table_ultimate>, [
+	mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:table_ultimate>, [
 	[<thermalexpansion:frame:147>, <extendedcrafting:trimmed:4>, <ore:crystalDraconium>, <advancedrocketry:ic:2>, <ore:crystalDraconium>, <extendedcrafting:trimmed:4>, <thermalexpansion:frame:147>], 
 	[<extendedcrafting:trimmed:4>, <ore:blockAethium>, <avaritia:double_compressed_crafting_table>, <thermalexpansion:frame:148>, <avaritia:double_compressed_crafting_table>, <ore:blockEnderium>, <extendedcrafting:trimmed:4>], 
 	[<ore:crystalDraconium>, <avaritia:double_compressed_crafting_table>, <extendedcrafting:table_advanced>, <extendedcrafting:table_elite>, <extendedcrafting:table_advanced>, <avaritia:double_compressed_crafting_table>, <ore:crystalDraconium>], 
@@ -102,24 +102,24 @@ import crafttweaker.item.IItemStack;
 	40, <liquid:coal> * 1000);
 
 # Increasing the price of Lapis, Redstone, Coal & Glowstone Singularities
-	scripts.wrap.extendedcrafting.CompressionCrafting.remove(<extendedcrafting:singularity>);
-	scripts.wrap.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity>, <minecraft:coal_block>, 10000, <extendedcrafting:material:12>, 1000000000, 1000000);
+	mods.extendedcrafting.CompressionCrafting.remove(<extendedcrafting:singularity>);
+	mods.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity>, <minecraft:coal_block>, 10000, <extendedcrafting:material:12>, 1000000000, 1000000);
 
-	scripts.wrap.extendedcrafting.CompressionCrafting.remove(<extendedcrafting:singularity:2>);
-	scripts.wrap.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity:2>, <minecraft:lapis_block>, 10000, <extendedcrafting:material:12>, 1000000000, 1000000);
+	mods.extendedcrafting.CompressionCrafting.remove(<extendedcrafting:singularity:2>);
+	mods.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity:2>, <minecraft:lapis_block>, 10000, <extendedcrafting:material:12>, 1000000000, 1000000);
 
-	scripts.wrap.extendedcrafting.CompressionCrafting.remove(<extendedcrafting:singularity:3>);
-	scripts.wrap.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity:3>, <minecraft:redstone_block>, 10000, <extendedcrafting:material:12>, 1000000000, 1000000);
+	mods.extendedcrafting.CompressionCrafting.remove(<extendedcrafting:singularity:3>);
+	mods.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity:3>, <minecraft:redstone_block>, 10000, <extendedcrafting:material:12>, 1000000000, 1000000);
 
-	scripts.wrap.extendedcrafting.CompressionCrafting.remove(<extendedcrafting:singularity:4>);
-	scripts.wrap.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity:4>, <minecraft:glowstone>, 10000, <extendedcrafting:material:12>, 1000000000, 1000000);
+	mods.extendedcrafting.CompressionCrafting.remove(<extendedcrafting:singularity:4>);
+	mods.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity:4>, <minecraft:glowstone>, 10000, <extendedcrafting:material:12>, 1000000000, 1000000);
 
 # Luminiscence made in chemical reactor and drying basin
 recipes.removeByRecipeName("extendedcrafting:luminessence");
 scripts.process.evaporate(<fluid:liquid_sunshine> * 1000, <extendedcrafting:material:7> * 2, null);
 
 # Insanium from inferium
-scripts.wrap.extendedcrafting.CompressionCrafting.addRecipe(<mysticalagradditions:insanium>, 
+mods.extendedcrafting.CompressionCrafting.addRecipe(<mysticalagradditions:insanium>, 
 <mysticalagriculture:crafting>, 1024, <mysticalagriculture:master_infusion_crystal>, 2000000, 100000);
 
 # Simplify Automating table
