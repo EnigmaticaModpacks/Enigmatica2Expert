@@ -24,33 +24,33 @@ import crafttweaker.item.IItemStack;
 	[<ore:nuggetBlackIron>, <ore:nuggetBlackIron>, <ore:nuggetBlackIron>], 
 	[<ore:nuggetBlackIron>, <ore:nuggetBlackIron>, <ore:nuggetBlackIron>]]);
 	
-	mods.thermalexpansion.InductionSmelter.addRecipe
+	scripts.wrap.thermalexpansion.InductionSmelter.addRecipe
 	(<extendedcrafting:material> * 3, 
 	<thermalfoundation:storage_alloy:2>, <immersiveengineering:stone_decoration:3>, 50000);
 	
-	mods.thermalexpansion.InductionSmelter.addRecipe
+	scripts.wrap.thermalexpansion.InductionSmelter.addRecipe
 	(<extendedcrafting:material> * 2, 
 	<thermalfoundation:storage_alloy:2>, <actuallyadditions:block_misc:2>, 20000);
 	
-	mods.thermalexpansion.InductionSmelter.addRecipe
+	scripts.wrap.thermalexpansion.InductionSmelter.addRecipe
 	(<extendedcrafting:material> * 3, 
 	<thermalfoundation:storage_alloy:2>, <immersiveengineering:material:19>, 15000);
 	
-	mods.thermalexpansion.InductionSmelter.addRecipe
+	scripts.wrap.thermalexpansion.InductionSmelter.addRecipe
 	(<extendedcrafting:material> * 4, 
 	<thermalfoundation:storage_alloy:2>, <nuclearcraft:alloy:1>, 20000);
 	
-	mods.thermalexpansion.InductionSmelter.addRecipe
+	scripts.wrap.thermalexpansion.InductionSmelter.addRecipe
 	(<extendedcrafting:material> * 3, 
 	<thermalfoundation:storage_alloy:2>, <nuclearcraft:alloy:3>, 15000);
 	
-	mods.thermalexpansion.InductionSmelter.addRecipe
+	scripts.wrap.thermalexpansion.InductionSmelter.addRecipe
 	(<extendedcrafting:material> * 3, 
 	<thermalfoundation:storage_alloy:2>, <bigreactors:blockgraphite>, 15000);	
 	
 # Crafting Core
 	recipes.remove(<extendedcrafting:crafting_core>);
-	mods.forestry.Carpenter.addRecipe(<extendedcrafting:crafting_core>, 
+	scripts.wrap.forestry.Carpenter.addRecipe(<extendedcrafting:crafting_core>, 
 	[[<extendedcrafting:material:18>, <extendedcrafting:material:18>, <extendedcrafting:material:18>],
 	[<plustic:osmiridiumingot>, <extendedcrafting:pedestal>, <plustic:osmiridiumingot>],
 	[<extendedcrafting:pedestal>, <extendedcrafting:pedestal>, <extendedcrafting:pedestal>]], 
@@ -58,7 +58,7 @@ import crafttweaker.item.IItemStack;
 	
 # Compression
 	recipes.remove(<extendedcrafting:compressor>);
-	mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:compressor>, 
+	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:compressor>, 
 	[[piston, piston, piston, piston, piston], 
 	[piston, <ic2:te:43>, <excompressum:auto_compressor>, <ic2:te:43>, piston], 
 	[piston, <extendedcrafting:storage>, <mekanism:machineblock:7>.withTag({recipeType: 3}), <extendedcrafting:storage>, piston], 
@@ -67,7 +67,7 @@ import crafttweaker.item.IItemStack;
 	
 # Advanced Crafting
 	recipes.remove(<extendedcrafting:table_advanced>);
-	mods.extendedcrafting.TableCrafting.addShaped(0, 
+	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, 
 	<extendedcrafting:table_advanced>, 
 	[[<extendedcrafting:material:8>, <extendedcrafting:material:15>, <extendedcrafting:material:9>], 
 	[<extendedcrafting:material:14>, <extendedcrafting:table_basic>, <extendedcrafting:material:17>], 
@@ -75,7 +75,7 @@ import crafttweaker.item.IItemStack;
 
 # Elite Crafting
 	recipes.remove(<extendedcrafting:table_elite>);
-	mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:table_elite>, [
+	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:table_elite>, [
 	[<thermalexpansion:frame:129>, <extendedcrafting:material:16>, <thermalexpansion:frame:147>, <extendedcrafting:material:16>, <thermalexpansion:frame:129>], 
 	[<extendedcrafting:material:16>, <ore:dustMana>, <extendedcrafting:table_advanced>, <ore:dustMana>, <extendedcrafting:material:16>], 
 	[<thermalfoundation:fertilizer:2>, <ore:blockOsgloglas>, <rftools:crafter3>, <ore:blockOsgloglas>, <thermalfoundation:fertilizer:2>], 
@@ -84,7 +84,7 @@ import crafttweaker.item.IItemStack;
 
 # Ultimate Crafting
 	recipes.remove(<extendedcrafting:table_ultimate>);
-	mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:table_ultimate>, [
+	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:table_ultimate>, [
 	[<thermalexpansion:frame:147>, <extendedcrafting:trimmed:4>, <ore:crystalDraconium>, <advancedrocketry:ic:2>, <ore:crystalDraconium>, <extendedcrafting:trimmed:4>, <thermalexpansion:frame:147>], 
 	[<extendedcrafting:trimmed:4>, <ore:blockAethium>, <avaritia:double_compressed_crafting_table>, <thermalexpansion:frame:148>, <avaritia:double_compressed_crafting_table>, <ore:blockEnderium>, <extendedcrafting:trimmed:4>], 
 	[<ore:crystalDraconium>, <avaritia:double_compressed_crafting_table>, <extendedcrafting:table_advanced>, <extendedcrafting:table_elite>, <extendedcrafting:table_advanced>, <avaritia:double_compressed_crafting_table>, <ore:crystalDraconium>], 
@@ -95,7 +95,7 @@ import crafttweaker.item.IItemStack;
 
 # Pedestal
 	recipes.remove(<extendedcrafting:pedestal>);
-	mods.forestry.Carpenter.addRecipe(<extendedcrafting:pedestal>, 
+	scripts.wrap.forestry.Carpenter.addRecipe(<extendedcrafting:pedestal>, 
 	[[null, <extendedcrafting:material:2>, null],
 	[null, blackIron, null],
 	[blackIron, <extendedcrafting:storage>, blackIron]], 

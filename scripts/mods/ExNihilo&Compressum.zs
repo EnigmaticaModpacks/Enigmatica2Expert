@@ -26,16 +26,16 @@ import mods.jei.JEI.removeAndHide as rh;
 	[<minecraft:stone>, <ore:obsidian>, <minecraft:stone>]]);
 
 # Netherrack -> Crushed Netherrack recipe
-	mods.thermalexpansion.Pulverizer.addRecipe(<exnihilocreatio:block_netherrack_crushed>, <minecraft:netherrack>, 2000);
+	scripts.wrap.thermalexpansion.Pulverizer.addRecipe(<exnihilocreatio:block_netherrack_crushed>, <minecraft:netherrack>, 2000);
 
 # Sand -> Dust
-	mods.thermalexpansion.Pulverizer.addRecipe(<exnihilocreatio:block_dust>, <minecraft:sand>, 2000);
+	scripts.wrap.thermalexpansion.Pulverizer.addRecipe(<exnihilocreatio:block_dust>, <minecraft:sand>, 2000);
 
 # Netherrack -> Crushed Netherrack
-	mods.thermalexpansion.Pulverizer.addRecipe(<exnihilocreatio:block_netherrack_crushed>, <minecraft:netherrack>, 2000);
+	scripts.wrap.thermalexpansion.Pulverizer.addRecipe(<exnihilocreatio:block_netherrack_crushed>, <minecraft:netherrack>, 2000);
 
 # End Stone -> Crushed End Stone
-	mods.thermalexpansion.Pulverizer.addRecipe(<exnihilocreatio:block_endstone_crushed>, <minecraft:end_stone>, 2000);
+	scripts.wrap.thermalexpansion.Pulverizer.addRecipe(<exnihilocreatio:block_endstone_crushed>, <minecraft:end_stone>, 2000);
 
 # Sieve
 	recipes.remove(<exnihilocreatio:block_sieve>);

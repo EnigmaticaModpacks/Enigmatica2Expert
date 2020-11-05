@@ -75,7 +75,7 @@ static agglMultiblock as AgglomerationMultiblock = AgglomerationMultiblock
 
 # Helper Transmutation for Cobalt -> Diamond
 //mods.astralsorcery.LightTransmutation.addTransmutation(IItemStack stackIn, IItemStack stackOut, double cost);
-mods.astralsorcery.LightTransmutation.addTransmutation(<tconstruct:metal>, <minecraft:diamond_block>, 50);
+scripts.wrap.astralsorcery.LightTransmutation.addTransmutation(<tconstruct:metal>, <minecraft:diamond_block>, 50);
 
 function magicProcessing(nativeClusterOreEntry as IOreDictEntry, ore_name as string) {
 
@@ -120,7 +120,7 @@ function magicProcessing(nativeClusterOreEntry as IOreDictEntry, ore_name as str
 
 
   # mods.astralsorcery.StarlightInfusion.addInfusion(IItemStack input, IItemStack output, boolean consumeMultiple, float consumptionChance, int craftingTickTime);
-  mods.astralsorcery.StarlightInfusion.addInfusion(prevItem, crystalShard, true, 0.2, 20);
+  scripts.wrap.astralsorcery.StarlightInfusion.addInfusion(prevItem, crystalShard, true, 0.2, 20);
   mods.inworldcrafting.FluidToItem.transform(currItem, <fluid:astralsorcery.liquidstarlight>, [prevItem*4], true);
   craft.shapeless(currItem,   "cccc",     {c: crystalShard});
   craft.shapeless(currItem*2, "cccccccc", {c: crystalShard});
@@ -159,7 +159,7 @@ function magicProcessing(nativeClusterOreEntry as IOreDictEntry, ore_name as str
   furnace.addRecipe(dirtyGem * 10, currItem);
 
   //mods.bloodmagic.AlchemyTable.addRecipe(IItemStack output, IItemStack[] inputs, int syphon, int ticks, int minTier);
-  mods.bloodmagic.AlchemyTable.addRecipe(currItem, [
+  scripts.wrap.bloodmagic.AlchemyTable.addRecipe(currItem, [
     prevItem, <bloodmagic:component:8>, <bloodmagic:cutting_fluid>, prevItem, poop,poop
   ], 20000, 400, 4);
 
@@ -174,7 +174,7 @@ function magicProcessing(nativeClusterOreEntry as IOreDictEntry, ore_name as str
   if (isNull(currItem)) return null; # 🛑
   furnace.addRecipe(dirtyGem * 48, currItem);
 
-  mods.thaumcraft.Infusion.registerRecipe(
+  scripts.wrap.thaumcraft.Infusion.registerRecipe(
     "Benefication_"~prevItem.definition.id, # name
     "INFUSION", # research
     currItem, # output

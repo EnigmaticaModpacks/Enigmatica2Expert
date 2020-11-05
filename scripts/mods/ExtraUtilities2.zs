@@ -28,7 +28,7 @@ import crafttweaker.item.IItemStack;
 	[<appliedenergistics2:smooth_sky_stone_block>, <randomthings:advancedredstonetorch_on>, <appliedenergistics2:smooth_sky_stone_block>]]);
 
 # Melting Ender Lilies
-	mods.thermalexpansion.Crucible.addRecipe(<liquid:ender> * 2000, <extrautils2:enderlilly>, 100000);
+	scripts.wrap.thermalexpansion.Crucible.addRecipe(<liquid:ender> * 2000, <extrautils2:enderlilly>, 100000);
 
 # Removing Easy Moon Stone recipe
 	recipes.remove(<extrautils2:ingredients:5>);
@@ -208,4 +208,4 @@ scripts.process.mash(<minecraft:ender_pearl> , <extrautils2:endershard> * 8, nul
 
 # Blue quartz as ultimate grid user
 //mods.extrautils2.Resonator.add(IItemStack output, IItemStack input, int energy, @Optional boolean addOwnerTag);
-mods.extrautils2.Resonator.add(<extrautils2:decorativesolid:6>, <botania:quartztypemana>, 700 * 100);
+scripts.wrap.extrautils2.Resonator.add(<extrautils2:decorativesolid:6>, <botania:quartztypemana>, 700 * 100);

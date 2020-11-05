@@ -88,7 +88,7 @@ function fluidDict(ins as string[]) {
 	}
 
 # Diamond Gear
-	mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:26>, <minecraft:diamond>, <immersiveengineering:mold:1>, 10000, 4);
+	scripts.wrap.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:26>, <minecraft:diamond>, <immersiveengineering:mold:1>, 10000, 4);
 
 # Black Hole Tank
 	recipes.removeByRecipeName("industrialforegoing:black_hole_tank");
@@ -206,11 +206,11 @@ remake("Mob Crusher",   <industrialforegoing:mob_relocator>, [
 	[<ore:gearGold>, <extrautils2:user>, <ore:gearGold>]]);
 
 # More sludge outputs
-mods.industrialforegoing.SludgeRefiner.add(<rustic:fertile_soil>, 10);
-mods.industrialforegoing.SludgeRefiner.add(<thermalfoundation:material:816>, 10);
-mods.industrialforegoing.SludgeRefiner.add(<forestry:fertilizer_bio>, 10);
-mods.industrialforegoing.SludgeRefiner.add(<forestry:mulch>, 10);
-mods.industrialforegoing.SludgeRefiner.add(<thaumcraft:nugget:10>, 10);
+scripts.wrap.industrialforegoing.SludgeRefiner.add(<rustic:fertile_soil>, 10);
+scripts.wrap.industrialforegoing.SludgeRefiner.add(<thermalfoundation:material:816>, 10);
+scripts.wrap.industrialforegoing.SludgeRefiner.add(<forestry:fertilizer_bio>, 10);
+scripts.wrap.industrialforegoing.SludgeRefiner.add(<forestry:mulch>, 10);
+scripts.wrap.industrialforegoing.SludgeRefiner.add(<thaumcraft:nugget:10>, 10);
 
 # Fluid Extractor
-mods.industrialforegoing.Extractor.add(<integrateddynamics:menril_log>, <fluid:menrilresin> * 5);
+scripts.wrap.industrialforegoing.Extractor.add(<integrateddynamics:menril_log>, <fluid:menrilresin> * 5);

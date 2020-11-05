@@ -107,18 +107,18 @@ recipes.addShaped("Cheaper Chassis Parts",
 
 # Energized Bimetal gear
 	recipes.remove(<enderio:item_material:12>);
-	mods.immersiveengineering.MetalPress.addRecipe(<enderio:item_material:12>, <enderio:item_alloy_ingot:1>, <immersiveengineering:mold:1>, 16000, 4);
-	mods.thermalexpansion.Compactor.addGearRecipe(<enderio:item_material:12>, <enderio:item_alloy_ingot:1> * 4, 16000);
+	scripts.wrap.immersiveengineering.MetalPress.addRecipe(<enderio:item_material:12>, <enderio:item_alloy_ingot:1>, <immersiveengineering:mold:1>, 16000, 4);
+	scripts.wrap.thermalexpansion.Compactor.addGearRecipe(<enderio:item_material:12>, <enderio:item_alloy_ingot:1> * 4, 16000);
 
 # Vibrant Bimetal gear
 	recipes.remove(<enderio:item_material:13>);
-	mods.immersiveengineering.MetalPress.addRecipe(<enderio:item_material:13>, <enderio:item_alloy_ingot:2>, <immersiveengineering:mold:1>, 16000, 4);
-	mods.thermalexpansion.Compactor.addGearRecipe(<enderio:item_material:13>, <enderio:item_alloy_ingot:2> * 4, 16000);
+	scripts.wrap.immersiveengineering.MetalPress.addRecipe(<enderio:item_material:13>, <enderio:item_alloy_ingot:2>, <immersiveengineering:mold:1>, 16000, 4);
+	scripts.wrap.thermalexpansion.Compactor.addGearRecipe(<enderio:item_material:13>, <enderio:item_alloy_ingot:2> * 4, 16000);
 
 # Dark Bimetel gear
 	recipes.remove(<enderio:item_material:73>);
-	mods.immersiveengineering.MetalPress.addRecipe(<enderio:item_material:73>, <enderio:item_alloy_ingot:6>, <immersiveengineering:mold:1>, 16000, 4);
-	mods.thermalexpansion.Compactor.addGearRecipe(<enderio:item_material:73>, <enderio:item_alloy_ingot:6> * 4, 16000);
+	scripts.wrap.immersiveengineering.MetalPress.addRecipe(<enderio:item_material:73>, <enderio:item_alloy_ingot:6>, <immersiveengineering:mold:1>, 16000, 4);
+	scripts.wrap.thermalexpansion.Compactor.addGearRecipe(<enderio:item_material:73>, <enderio:item_alloy_ingot:6> * 4, 16000);
 	
 # Simple Machine Chassis
 	recipes.remove(<enderio:item_material>);
@@ -224,7 +224,7 @@ recipes.addShaped(<enderio:block_lava_generator>, [
 	[<ore:ingotBrickNetherGlazed>, <enderio:block_tank>, <ore:ingotBrickNetherGlazed>]]);
 
 # Nethercotta
-mods.immersiveengineering.ArcFurnace.addRecipe(<enderio:item_material:72>, <ore:ingotBrickNether>,
+scripts.wrap.immersiveengineering.ArcFurnace.addRecipe(<enderio:item_material:72>, <ore:ingotBrickNether>,
 	<immersiveengineering:material:7>, 20*4, 2560, [<ore:cropNetherWart>*4, <ore:clay>*6], "Alloying");
 
 # Remake binder
@@ -336,8 +336,8 @@ val grindingBalls = [
 <avaritiaio:grindingballneutronium>,
 ] as IItemStack[];
 
-mods.extendedcrafting.CombinationCrafting.addRecipe(<avaritiaio:grindingballinfinity> * 2, 2000000000, 20000000, <avaritia:resource:5>, grindingBalls);
-mods.extendedcrafting.CombinationCrafting.addRecipe(<avaritiaio:grindingballinfinity> * 2, 2000000000, 20000000, <avaritiaio:grindingballinfinity>, grindingBalls);
+scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<avaritiaio:grindingballinfinity> * 2, 2000000000, 20000000, <avaritia:resource:5>, grindingBalls);
+scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<avaritiaio:grindingballinfinity> * 2, 2000000000, 20000000, <avaritiaio:grindingballinfinity>, grindingBalls);
 
 # End Steel process
 scripts.process.alloy([<ore:ingotDarkSteel>, <ore:obsidian>, <ore:endstone>], <ore:ingotEndSteel>.firstItem, "except: alloySmelter");

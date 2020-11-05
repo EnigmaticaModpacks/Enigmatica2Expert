@@ -69,10 +69,10 @@ recipes.addShaped(<randomthings:spectreenergyinjector>, [
 # Spectre Key
 val ectoplasm = <randomthings:ingredient:2>;
 recipes.remove(<randomthings:spectrekey>);
-mods.actuallyadditions.Empowerer.addRecipe(<randomthings:spectrekey>, 
+scripts.wrap.actuallyadditions.Empowerer.addRecipe(<randomthings:spectrekey>, 
 	<storagedrawers:shroud_key>, ectoplasm, ectoplasm, ectoplasm, ectoplasm,
 	25000, 100, [1.0, 0.0, 0.0]);
-mods.extendedcrafting.CombinationCrafting.addRecipe(<randomthings:spectrekey>, 100000, 1000000, 
+scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<randomthings:spectrekey>, 100000, 1000000, 
 	<storagedrawers:shroud_key>, [ectoplasm, ectoplasm, ectoplasm, ectoplasm]);
 
 # Spectre Anchor
@@ -146,4 +146,4 @@ recipes.addShaped("Spectre Saplings", <randomthings:spectresapling> * 10, [
 	[null, <mysticalagriculture:nature_essence>, null]]);
 
 # Oxygen bottle
-mods.thermalexpansion.Transposer.addFillRecipe(<randomthings:bottleofair>, <minecraft:glass_bottle>, <liquid:oxygen> * 1000, 25000);
+scripts.wrap.thermalexpansion.Transposer.addFillRecipe(<randomthings:bottleofair>, <minecraft:glass_bottle>, <liquid:oxygen> * 1000, 25000);

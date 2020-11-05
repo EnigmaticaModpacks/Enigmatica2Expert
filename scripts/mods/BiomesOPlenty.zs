@@ -28,13 +28,13 @@ import crafttweaker.item.WeightedItemStack;
 		<harvestcraft:duckrawitem> % 5,
 		<rats:raw_rat> % 5,
 	] as WeightedItemStack[];
-	mods.forestry.Centrifuge.addRecipe(rawMeat, <biomesoplenty:flesh>, 100);
-	mods.thermalexpansion.Centrifuge.addRecipe([rawMeat[0], rawMeat[1], rawMeat[2], rawMeat[3]
+	scripts.wrap.forestry.Centrifuge.addRecipe(rawMeat, <biomesoplenty:flesh>, 100);
+	scripts.wrap.thermalexpansion.Centrifuge.addRecipe([rawMeat[0], rawMeat[1], rawMeat[2], rawMeat[3]
 		] as WeightedItemStack[],<biomesoplenty:flesh>, null, 2000);
 
 # Honey Block -> Honey Drop
-	mods.forestry.Centrifuge.addRecipe([(<forestry:honey_drop> * 5) % 80, (<thermalfoundation:material:99> % 25), (<thermalfoundation:material:100> % 25)], <biomesoplenty:honey_block>, 100);
-	mods.thermalexpansion.Centrifuge.addRecipe([(<forestry:honey_drop>) * 5 % 80, <thermalfoundation:material:99> % 25, <thermalfoundation:material:100> % 25], <biomesoplenty:honey_block>, null, 2000);
+	scripts.wrap.forestry.Centrifuge.addRecipe([(<forestry:honey_drop> * 5) % 80, (<thermalfoundation:material:99> % 25), (<thermalfoundation:material:100> % 25)], <biomesoplenty:honey_block>, 100);
+	scripts.wrap.thermalexpansion.Centrifuge.addRecipe([(<forestry:honey_drop>) * 5 % 80, <thermalfoundation:material:99> % 25, <thermalfoundation:material:100> % 25], <biomesoplenty:honey_block>, null, 2000);
 
 # Ender Amethyst
 	recipes.addShaped("Ender Amethyst", 

@@ -6,7 +6,7 @@ import mods.jei.JEI.removeAndHide as rh;
 
 # Neutronium Ingots with Neutron Fluid
 	mods.nuclearcraft.infuser.addRecipe(<advancedrocketry:productingot:1>, <liquid:neutron> * 1000, <avaritia:resource:4>, 4500);
-	mods.thermalexpansion.Transposer.addFillRecipe(<avaritia:resource:4>, <advancedrocketry:productingot:1>, <liquid:neutron> * 1000, 250000);
+	scripts.wrap.thermalexpansion.Transposer.addFillRecipe(<avaritia:resource:4>, <advancedrocketry:productingot:1>, <liquid:neutron> * 1000, 250000);
 
 # Neutron block fix
 	recipes.remove(<avaritia:resource:4>);
@@ -33,7 +33,7 @@ import mods.jei.JEI.removeAndHide as rh;
 
 # Infinity Ingot
 	mods.avaritia.ExtremeCrafting.remove(<avaritia:resource:6>);
-	mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:resource:6>, [
+	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <avaritia:resource:6>, [
 	[<ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>], 
 	[<ore:ingotCosmicNeutronium>, <ore:ingotCrystalMatrix>, <avaritia:resource:5>, <avaritia:resource:5>, <extendedcrafting:singularity_ultimate>, <avaritia:resource:5>, <avaritia:resource:5>, <ore:ingotCrystalMatrix>, <ore:ingotCosmicNeutronium>], 
 	[<ore:ingotCosmicNeutronium>, <avaritia:resource:5>, <ore:ingotCrystalMatrix>, <ore:ingotCrystalMatrix>, <avaritia:resource:5>, <ore:ingotCrystalMatrix>, <ore:ingotCrystalMatrix>, <avaritia:resource:5>, <ore:ingotCosmicNeutronium>], 
@@ -48,7 +48,7 @@ import mods.jei.JEI.removeAndHide as rh;
 # Neutron Collector
   if (!isNull(itemUtils.getItem("appliedenergistics2:controller"))) {
 	  mods.avaritia.ExtremeCrafting.remove(<avaritia:neutron_collector>);
-	  mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:neutron_collector>, [
+	  scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <avaritia:neutron_collector>, [
 	  [<environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>], 
 	  [<environmentaltech:mica>, null, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, null, <environmentaltech:mica>], 
 	  [<environmentaltech:mica>, null, <forestry:chipsets:3>.withTag({T:3 as short}, false), <ore:circuitUltimate>, <advancedrocketry:ic:2>, <ore:circuitUltimate>, <forestry:chipsets:3>.withTag({T:3 as short}, false), null, <environmentaltech:mica>], 
@@ -61,7 +61,7 @@ import mods.jei.JEI.removeAndHide as rh;
 		]);
 	} else {
 	  mods.avaritia.ExtremeCrafting.remove(<avaritia:neutron_collector>);
-	  mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:neutron_collector>, [
+	  scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <avaritia:neutron_collector>, [
 	  [<environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>], 
 	  [<environmentaltech:mica>, null, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, null, <environmentaltech:mica>], 
 	  [<environmentaltech:mica>, null, <forestry:chipsets:3>.withTag({T:3 as short}, false), <ore:circuitUltimate>, <advancedrocketry:ic:2>, <ore:circuitUltimate>, <forestry:chipsets:3>.withTag({T:3 as short}, false), null, <environmentaltech:mica>], 
@@ -79,7 +79,7 @@ import mods.jei.JEI.removeAndHide as rh;
 
 # Infinity Catalyst
 	mods.avaritia.ExtremeCrafting.remove(<avaritia:resource:5>);
-	mods.extendedcrafting.TableCrafting.addShapeless(0, <avaritia:resource:5>, 
+	scripts.wrap.extendedcrafting.TableCrafting.addShapeless(0, <avaritia:resource:5>, 
 	[<ore:ingotCrystalMatrix>, <ore:ingotCosmicNeutronium>, <avaritia:cosmic_meatballs>, 
 	<avaritia:ultimate_stew>, <avaritia:endest_pearl>, <ore:record>, 
 	<draconicevolution:awakened_core>, <ore:blockDraconiumAwakened>, 
@@ -99,7 +99,7 @@ import mods.jei.JEI.removeAndHide as rh;
 
 # Endest Pearl
 	mods.avaritia.ExtremeCrafting.remove(<avaritia:endest_pearl>);
-	mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:endest_pearl>, [
+	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <avaritia:endest_pearl>, [
 	[null, null, null, <ore:endstone>, <ore:endstone>, <ore:endstone>, null, null, null], 
 	[null, null, <ore:endstone>, <extrautils2:endershard>, <cyclicmagic:ender_eye_orb>, <extrautils2:endershard>, <ore:endstone>, null, null], 
 	[null, <ore:endstone>, <darkutils:material:1>, <ore:enderpearl>, <ore:enderpearl>, <ore:enderpearl>, <darkutils:material:1>, <ore:endstone>, null], 
@@ -113,7 +113,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	
 # Skullfire Sword
  	mods.avaritia.ExtremeCrafting.remove(<avaritia:skullfire_sword>);
-	mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:skullfire_sword>, [
+	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <avaritia:skullfire_sword>, [
 	[null, <minecraft:enchanted_book>, null, null, <bloodmagic:lava_crystal>], 
 	[null, null, null, <randomthings:obsidianskull>, null], 
 	[null, <tconstruct:wide_guard>, <tconstruct:cleaver>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 7.2 as float, FreeModifiers: 3, Durability: 2088, HarvestLevel: 3, Attack: 11.58 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 7.2 as float, FreeModifiers: 2, Durability: 2088, HarvestLevel: 3, Attack: 11.58 as float}, Special: {Categories: ["tool", "weapon"]}, TinkerData: {Materials: ["fierymetal", "fierymetal", "fierymetal", "fierymetal"], Modifiers: ["beheading_cleaver", "toolleveling"]}, Modifiers: [{identifier: "twilit", color: -142243, level: 1}, {identifier: "flammable", color: -142243, level: 1}, {identifier: "autosmelt", color: -142243, level: 1}, {identifier: "superheat", color: -142243, level: 1}, {identifier: "beheading_cleaver", color: 1070923, level: 2}, {identifier: "toolleveling", color: 16777215, level: 1}], Traits: ["twilit", "flammable", "autosmelt", "superheat", "toolleveling"]}), null, null], 
@@ -122,7 +122,7 @@ import mods.jei.JEI.removeAndHide as rh;
 ]);
 
 # Ultimate Stew
-	mods.extendedcrafting.TableCrafting.addShapeless(4, 
+	scripts.wrap.extendedcrafting.TableCrafting.addShapeless(4, 
 	<avaritia:ultimate_stew> * 9,  
 	[<ore:ingotCosmicNeutronium>, 
 	<ore:cropWheat>, 
@@ -178,7 +178,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	<ore:cropGrape>]);
 
 # Cosmic Meatballs
-	mods.extendedcrafting.TableCrafting.addShapeless(4, 
+	scripts.wrap.extendedcrafting.TableCrafting.addShapeless(4, 
 	<avaritia:cosmic_meatballs> * 9, 
 	[<ore:ingotCosmicNeutronium>, 
 	<minecraft:porkchop>, 
@@ -213,7 +213,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	var cm = <ore:blockCrystalMatrix>;
 	
 # Infinity Armor
-	mods.extendedcrafting.TableCrafting.addShaped(0, 
+	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, 
 	<avaritia:infinity_helmet>, 
 	[
 	[null, null, ni, ni, ni, ni, ni, null, null],
@@ -227,7 +227,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	[null, null, null, null, null, null, null, null, null]
 	]);
 
-	mods.extendedcrafting.TableCrafting.addShaped(0, 
+	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, 
 	<avaritia:infinity_chestplate>, 
 	[
 	[null, ni, ni, null, null, null, ni, ni, null],
@@ -241,7 +241,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	[null, null, ni, ni, ni, ni, ni, null, null]
 	]);
 
-	mods.extendedcrafting.TableCrafting.addShaped(0, 
+	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, 
 	<avaritia:infinity_pants>, 
 	[
 	[ni, ni, ni, ni, ni, ni, ni, ni, ni],
@@ -255,7 +255,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	[ni, ni, ni, null, null, null, ni, ni, ni]
 	]);
 
-	mods.extendedcrafting.TableCrafting.addShaped(0, 
+	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, 
 	<avaritia:infinity_boots>, 
 	[
 	[null, ni, ni, ni, null, ni, ni, ni, null],
@@ -270,7 +270,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	]);
 
 # Infinity Sword
-	mods.extendedcrafting.TableCrafting.addShaped(0, 
+	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, 
 	<avaritia:infinity_sword>, 
 	[
 	[null, null, null, null, null, null, null, ii, ii],
@@ -285,7 +285,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	]);
 	
 # Infinity Bow
-	mods.extendedcrafting.TableCrafting.addShaped(0, 
+	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, 
 	<avaritia:infinity_bow>, 
 	[
 	[null, null, null, ii, ii, null, null, null, null],
@@ -300,7 +300,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	]);
 	
 # Infinity Pickaxe
-	mods.extendedcrafting.TableCrafting.addShaped(0, 
+	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, 
 	<avaritia:infinity_pickaxe>.withTag({ench: [{lvl: 10 as short, id: 35 as short}]}), 
 	[
 	[null, ii, ii, ii, ii, ii, ii, ii, null],
@@ -315,7 +315,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	]);
 	
 # Infinity Shovel
-	mods.extendedcrafting.TableCrafting.addShaped(0, 
+	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, 
 	<avaritia:infinity_shovel>, 
 	[
 	[null, null, null, null, null, null, ii, ii, ii],
@@ -330,7 +330,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	]);
 	
 # Infinity Axe
-	mods.extendedcrafting.TableCrafting.addShaped(0, 
+	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, 
 	<avaritia:infinity_axe>, 
 	[
 	[null, null, null, ii, null, null, null, null, null],
@@ -345,7 +345,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	]);
 	
 # Infinity Hoe
-	mods.extendedcrafting.TableCrafting.addShaped(0, 
+	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, 
 	<avaritia:infinity_hoe>, 
 	[
 	[null, null, null, null, null, ni, null, null, null],
@@ -360,7 +360,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	]);
 	
 	recipes.remove(<avaritia:extreme_crafting_table>);
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<avaritia:extreme_crafting_table>, 
+	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<avaritia:extreme_crafting_table>, 
 	100000000, 1000000, <avaritia:double_compressed_crafting_table>, 
 	[<avaritia:resource:1>, <avaritia:resource:1>, <extendedcrafting:material:12>, 
 	<extendedcrafting:material:12>, <avaritia:resource:1>, <avaritia:resource:1>]);
@@ -380,6 +380,6 @@ addDragonForgeRecipe(<minecraft:nether_star> * 2, <avaritia:resource> * 4, <avar
 var CD = <mekanism:compresseddiamond>;
 <avaritia:resource>.displayName = "§eRecharged Diamond";
 recipes.remove(<avaritia:resource>);
-mods.extendedcrafting.CombinationCrafting.addRecipe(<avaritia:resource> * 2, 100000000, 1000000, CD, [CD]);
+scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<avaritia:resource> * 2, 100000000, 1000000, CD, [CD]);
 # Somehow infuser craft item/tick after first item
 # mods.thermalexpansion.Infuser.addRecipe(<avaritia:resource>, CD, 50000000);

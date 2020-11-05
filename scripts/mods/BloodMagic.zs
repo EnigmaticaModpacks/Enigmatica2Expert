@@ -95,35 +95,35 @@ import mods.jei.JEI.removeAndHide as rh;
 
 # Awakended Activation Crystal
 	recipes.remove(<bloodmagic:activation_crystal:1>);
-	mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:activation_crystal:1>, [<ore:gaiaIngot>, <astralsorcery:iteminfusedglass>.anyDamage(), <actuallyadditions:item_misc:19>, <thaumcraft:metal_void>], 2000, 500);
+	scripts.wrap.bloodmagic.TartaricForge.addRecipe(<bloodmagic:activation_crystal:1>, [<ore:gaiaIngot>, <astralsorcery:iteminfusedglass>.anyDamage(), <actuallyadditions:item_misc:19>, <thaumcraft:metal_void>], 2000, 500);
 	
 # Blank Slate
 	mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:stone>);
-	mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:slate>, <botania:livingrock>, 0, 1000, 10, 10);
+	scripts.wrap.bloodmagic.BloodAltar.addRecipe(<bloodmagic:slate>, <botania:livingrock>, 0, 1000, 10, 10);
 
 # Orb tier 1
 	mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:diamond>);
-	mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), 
+	scripts.wrap.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), 
 	<botania:manaresource:2>, 0, 2000, 12, 12);
 
 # Orb tier 2
 	mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:redstone_block>);
-	mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}), 
+	scripts.wrap.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}), 
 	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "victus"}]}), 1, 5000, 25, 25);
 
 # Orb tier 3
 	mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:gold_block>);
-	mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}), 
+	scripts.wrap.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}), 
 	<thaumcraft:metal_thaumium>, 2, 25000, 50, 50);
 
 # Orb tier 5
 	mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:nether_star>);
-	mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"}), 
+	scripts.wrap.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"}), 
 	<botania:manaresource:5>, 4, 80000, 200, 200);
 
 # Dagger of Sacrifice
 	mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:iron_sword>);
-	mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:dagger_of_sacrifice>, 
+	scripts.wrap.bloodmagic.BloodAltar.addRecipe(<bloodmagic:dagger_of_sacrifice>, 
 	<thaumcraft:thaumium_sword>, 1, 3000, 12, 12);
 
 # Blood Orb Oredicts
@@ -169,7 +169,7 @@ for i in 1 to 16 {
 	val cost = (((pow(1.5d, i as double) * t16mult) as int - t1resde) / 500) * 500;
 
 	recipes.remove(tank);
-	mods.bloodmagic.BloodAltar.addRecipe(tank, prevTank, max(0, min(4, i / 2)), cost, 10 + 10 * i, 10 + 10 * i);
+	scripts.wrap.bloodmagic.BloodAltar.addRecipe(tank, prevTank, max(0, min(4, i / 2)), cost, 10 + 10 * i, 10 + 10 * i);
 	recipes.addShapeless("Clearing Blood Tank " ~ i, tank, [tank]);
 }
 
@@ -181,7 +181,7 @@ val capRune = <bloodmagic:blood_rune:7>;
 val sprIng = <randomthings:ingredient:3>;
 val bldTnk = <bloodmagic:blood_tank:7>.withTag({Fluid: {FluidName: "lifeessence", Amount: 2048000}});
 val antBck = Bucket("blockfluidantimatter");
-mods.extendedcrafting.TableCrafting.addShaped(0, crDgr, [
+scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, crDgr, [
 	[null, null, null, null, null, <ore:nuggetDraconicMetal>, sprIng], 
 	[null, null, null, null, <ore:nuggetDraconicMetal>, sprIng, <ore:nuggetDraconicMetal>], 
 	[null, capRune, null, <ore:nuggetDraconicMetal>, sprIng, <ore:nuggetDraconicMetal>, null], 

@@ -53,11 +53,11 @@ recipes.addShapedMirrored("Wither Proof Glass",
 	
 # Infusion Crystal
 	recipes.remove(<mysticalagriculture:infusion_crystal>);
-	mods.thermalexpansion.Infuser.addRecipe(<mysticalagriculture:infusion_crystal>, <biomesoplenty:gem>, 10000000);
+	scripts.wrap.thermalexpansion.Infuser.addRecipe(<mysticalagriculture:infusion_crystal>, <biomesoplenty:gem>, 10000000);
 
 # Master Infusion Crystal
 	recipes.remove(<mysticalagriculture:master_infusion_crystal>);
-	mods.astralsorcery.Altar.addConstellationAltarRecipe("enigmatica2expert:shaped/internal/altar/master_infusion_crystal",
+	scripts.wrap.astralsorcery.Altar.addConstellationAltarRecipe("enigmatica2expert:shaped/internal/altar/master_infusion_crystal",
 		<mysticalagriculture:master_infusion_crystal>, 3000, 600, 
 	[<botania:rune:12>, <botania:storage:3>, <botania:rune:15>,
 	<botania:storage:2>, <matc:supremiumcrystal>.anyDamage(), <botania:storage>,
@@ -83,7 +83,7 @@ recipes.addShapedMirrored("Wither Proof Glass",
 
 # Tier 6 Crafting Seeds 
 	recipes.remove(<mysticalagradditions:insanium:1>);
-	mods.forestry.Carpenter.addRecipe(<mysticalagradditions:insanium:1>, 
+	scripts.wrap.forestry.Carpenter.addRecipe(<mysticalagradditions:insanium:1>, 
 	[[<ore:listAllseed>,<mysticalagradditions:insanium>,<ore:listAllseed>],
 	[<mysticalagradditions:insanium>,<mysticalagriculture:crafting:21>,<mysticalagradditions:insanium>],
 	[<ore:listAllseed>,<mysticalagradditions:insanium>,<ore:listAllseed>]], 40, <liquid:sewage> * 1000);
@@ -158,7 +158,7 @@ function addTieredRecipe(
 			"2²2"+
 			"╳2╳"+
 			"○○□□"], L);
-		mods.astralsorcery.Altar.addAttunementAltarRecipe(
+		scripts.wrap.astralsorcery.Altar.addAttunementAltarRecipe(
 			craft.recipeName(output, grid),	output, 500, 200, grid.shapeless());
 	} else
 
@@ -168,7 +168,7 @@ function addTieredRecipe(
 			"3³3"+
 			"╳3╳"+
 			"○○□□"], L);
-		mods.astralsorcery.Altar.addAttunementAltarRecipe(
+		scripts.wrap.astralsorcery.Altar.addAttunementAltarRecipe(
 			craft.recipeName(output, grid),	output, 500, 200, grid.shapeless());
 	} else
 
@@ -179,7 +179,7 @@ function addTieredRecipe(
 			"╳4╳"+
 			"○○□□"+
 			"▪▪▪▪▪▪▪▪"], L);
-		mods.astralsorcery.Altar.addConstellationAltarRecipe(
+		scripts.wrap.astralsorcery.Altar.addConstellationAltarRecipe(
 			craft.recipeName(output, grid),	output, 1500, 250, grid.shapeless());
 	} else
 
@@ -192,7 +192,7 @@ function addTieredRecipe(
 			"▬▬▬▬▬▬▬▬"+
 			"○○□□"+
 			"☼"], L);
-		mods.astralsorcery.Altar.addTraitAltarRecipe(
+		scripts.wrap.astralsorcery.Altar.addTraitAltarRecipe(
 			craft.recipeName(output, grid),	output, 3500, 300, grid.shapeless(), "astralsorcery.constellation." ~ constelation);
 	} else
 
@@ -206,7 +206,7 @@ function addTieredRecipe(
 			"○○□□▲▲○○"+
 			"‗‗‗‗"+
 			"☼"], L);
-		mods.astralsorcery.Altar.addTraitAltarRecipe(
+		scripts.wrap.astralsorcery.Altar.addTraitAltarRecipe(
 			craft.recipeName(output, grid),	output, 5500, 600, grid.shapeless(), "astralsorcery.constellation." ~ constelation);
 	}
 }
@@ -417,11 +417,11 @@ for i in 0 .. 4 {
 
 	# Replace casting of cores to Base ones
 	mods.tconstruct.Casting.removeTableRecipe(cores[i]);
-	mods.tconstruct.Casting.addTableRecipe(bases[i], <tconstruct:cast>     .withTag({PartType: castNames[i]}), <liquid:supremium>, l, false);
-	mods.tconstruct.Casting.addTableRecipe(bases[i], <tconstruct:clay_cast>.withTag({PartType: castNames[i]}), <liquid:supremium>, l, true);
+	scripts.wrap.tconstruct.Casting.addTableRecipe(bases[i], <tconstruct:cast>     .withTag({PartType: castNames[i]}), <liquid:supremium>, l, false);
+	scripts.wrap.tconstruct.Casting.addTableRecipe(bases[i], <tconstruct:clay_cast>.withTag({PartType: castNames[i]}), <liquid:supremium>, l, true);
 
 	# Add core base melting
-	mods.tconstruct.Melting.addRecipe(<liquid:supremium> * l, bases[i]);
+	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:supremium> * l, bases[i]);
 
 	# Add recipe of making core from base
 	# mods.rt.RandomThingsTweaker.addAnvilRecipe(IItemStack input1, IItemStack input2, IItemStack result, int levelcost);

@@ -121,36 +121,36 @@ function workEx(machineNameAnyCase as string, exceptions as string,
     
     if (machineName == "blockcutter") {
       # mods.ic2.BlockCutter.addRecipe(IItemStack output, IIngredient input, @Optional int hardness default 0);
-      mods.ic2.BlockCutter.addRecipe(outputItem0, inputIngr0);
+      scripts.wrap.ic2.BlockCutter.addRecipe(outputItem0, inputIngr0);
       return machineName;
     }
 
     if (machineName == "compressor") {
-      mods.ic2.Compressor.addRecipe(outputItem0, inputIngr0);
+      scripts.wrap.ic2.Compressor.addRecipe(outputItem0, inputIngr0);
       return machineName;
     }
 
     if (machineName == "macerator") {
-      mods.ic2.Macerator.addRecipe(outputItem0, inputIngr0);
+      scripts.wrap.ic2.Macerator.addRecipe(outputItem0, inputIngr0);
       return machineName;
     }
     
     if (machineName == "extractor") {
-      mods.ic2.Extractor.addRecipe(outputItem0, inputIngr0);
+      scripts.wrap.ic2.Extractor.addRecipe(outputItem0, inputIngr0);
       return machineName;
     }
 
     if (machineName == "grindstone") {
       # mods.astralsorcery.Grindstone.addRecipe(IItemStack input, IItemStack output, float doubleChance);
       for ii in inputIngr0.itemArray {
-        mods.astralsorcery.Grindstone.addRecipe(ii, outputItem0, defaultChance0(extraChance, 0.0f));
+        scripts.wrap.astralsorcery.Grindstone.addRecipe(ii, outputItem0, defaultChance0(extraChance, 0.0f));
       }
       return machineName;
     }
 
     if (machineName == "compactor") {
       for ii in inputIngr0.itemArray {
-        mods.thermalexpansion.Compactor.addPressRecipe(outputItem0, ii, 4000);
+        scripts.wrap.thermalexpansion.Compactor.addPressRecipe(outputItem0, ii, 4000);
       }
       return machineName;
     }
@@ -160,9 +160,9 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       for ii in inputIngr0.itemArray {
         if (strict) { mods.thermalexpansion.Pulverizer.removeRecipe(ii); }
         if (haveExtra) {
-          mods.thermalexpansion.Pulverizer.addRecipe(outputItem0, ii, 4000, extra[0], defaultChance0_int(extraChance, 100));
+          scripts.wrap.thermalexpansion.Pulverizer.addRecipe(outputItem0, ii, 4000, extra[0], defaultChance0_int(extraChance, 100));
         } else {
-          mods.thermalexpansion.Pulverizer.addRecipe(outputItem0, ii, 4000);
+          scripts.wrap.thermalexpansion.Pulverizer.addRecipe(outputItem0, ii, 4000);
         }
       }
       return machineName;
@@ -181,17 +181,17 @@ function workEx(machineNameAnyCase as string, exceptions as string,
 
     if (machineName == "mekenrichment") {
       // # mods.mekanism.enrichment.addRecipe(IIngredient inputStack, IItemStack outputStack);
-      mods.mekanism.enrichment.addRecipe(inputIngr0, outputItem0);
+      scripts.wrap.mekanism.enrichment.addRecipe(inputIngr0, outputItem0);
       return machineName;
     }
 
     if (machineName == "mekpurification") {
-      mods.mekanism.purification.addRecipe(inputIngr0, outputItem0);
+      scripts.wrap.mekanism.purification.addRecipe(inputIngr0, outputItem0);
       return machineName;
     }
 
     if (machineName == "mekinjection") {
-      mods.mekanism.chemical.injection.addRecipe(inputIngr0, <gas:hydrogenchloride>, outputItem0);
+      scripts.wrap.mekanism.chemical_injection.addRecipe(inputIngr0, <gas:hydrogenchloride>, outputItem0);
       return machineName;
     }
 
@@ -199,9 +199,9 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       if (strict) { mods.mekanism.sawmill.removeRecipe(inputIngr0); }
       # mods.mekanism.sawmill.addRecipe(IIngredient inputStack, IItemStack outputStack, @Optional IItemStack bonusOutput, @Optional double bonusChance);
       if (haveExtra) {
-        mods.mekanism.sawmill.addRecipe(inputIngr0, outputItem0, extra[0], defaultChance0(extraChance, 1.0f) as double);
+        scripts.wrap.mekanism.sawmill.addRecipe(inputIngr0, outputItem0, extra[0], defaultChance0(extraChance, 1.0f) as double);
       } else {
-        mods.mekanism.sawmill.addRecipe(inputIngr0, outputItem0);
+        scripts.wrap.mekanism.sawmill.addRecipe(inputIngr0, outputItem0);
       }
       return machineName;
     }
@@ -210,7 +210,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       # mods.mekanism.crusher.addRecipe(IIngredient inputStack, IItemStack outputStack);
       # mods.mekanism.crusher.removeRecipe(IIngredient outputStack, @Optional IIngredient inputStack);
       if (strict) { mods.mekanism.crusher.removeRecipe(outputItem0); }
-      mods.mekanism.crusher.addRecipe(inputIngr0, outputItem0);
+      scripts.wrap.mekanism.crusher.addRecipe(inputIngr0, outputItem0);
       return machineName;
     }
 
@@ -218,9 +218,9 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       # mods.thermalexpansion.Sawmill.addRecipe(IItemStack output, IItemStack input, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
       for ii in inputIngr0.itemArray {
       if (haveExtra) {
-        mods.thermalexpansion.Sawmill.addRecipe(outputItem0, ii, 1000, extra[0], defaultChance0_int(extraChance, 100));
+        scripts.wrap.thermalexpansion.Sawmill.addRecipe(outputItem0, ii, 1000, extra[0], defaultChance0_int(extraChance, 100));
       } else {
-        mods.thermalexpansion.Sawmill.addRecipe(outputItem0, ii, 1000);
+        scripts.wrap.thermalexpansion.Sawmill.addRecipe(outputItem0, ii, 1000);
       }
       }
       return machineName;
@@ -231,9 +231,9 @@ function workEx(machineNameAnyCase as string, exceptions as string,
 
       for ii in inputIngr0.itemArray {
         if (haveExtra) {
-          mods.extrautils2.Crusher.add(outputItem0, ii, extra[0], extraChance[0]);
+          scripts.wrap.extrautils2.Crusher.add(outputItem0, ii, extra[0], extraChance[0]);
         } else {
-          mods.extrautils2.Crusher.add(outputItem0, ii);
+          scripts.wrap.extrautils2.Crusher.add(outputItem0, ii);
         }
       }
       return machineName;
@@ -245,9 +245,9 @@ function workEx(machineNameAnyCase as string, exceptions as string,
           
       for ii in inputIngr0.itemArray {
         if (haveExtra) {
-          mods.actuallyadditions.Crusher.addRecipe(outputItem0, ii, extra[0], defaultChance0_int(extraChance, 100));
+          scripts.wrap.actuallyadditions.Crusher.addRecipe(outputItem0, ii, extra[0], defaultChance0_int(extraChance, 100));
         } else {
-          mods.actuallyadditions.Crusher.addRecipe(outputItem0, ii);
+          scripts.wrap.actuallyadditions.Crusher.addRecipe(outputItem0, ii);
         }
       }
       return machineName;
@@ -259,12 +259,12 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       for ii in inputIngr0.itemArray {
         if (haveExtra) {
           if (extra.length == 1) {
-            mods.appliedenergistics2.Grinder.addRecipe(outputItem0, ii, 2, extra[0], extraChance[0]);
+            scripts.wrap.appliedenergistics2.Grinder.addRecipe(outputItem0, ii, 2, extra[0], extraChance[0]);
           }else if (extra.length >= 2) {
-            mods.appliedenergistics2.Grinder.addRecipe(outputItem0, ii, 2, extra[0], extraChance[0], extra[1], extraChance[1]);
+            scripts.wrap.appliedenergistics2.Grinder.addRecipe(outputItem0, ii, 2, extra[0], extraChance[0], extra[1], extraChance[1]);
           }
         } else {
-          mods.appliedenergistics2.Grinder.addRecipe(outputItem0, ii, 2);
+          scripts.wrap.appliedenergistics2.Grinder.addRecipe(outputItem0, ii, 2);
         }
       }
       return machineName;
@@ -281,7 +281,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       } as IItemStack[string];
 
       val mold = !isNull(options.mold) ? molds[options.mold.asString()] : null;
-      mods.immersiveengineering.MetalPress.addRecipe(outputItem0, inputIngr0, !isNull(mold) ? mold : molds.plate, 2000, inputIngr0.amount);
+      scripts.wrap.immersiveengineering.MetalPress.addRecipe(outputItem0, inputIngr0, !isNull(mold) ? mold : molds.plate, 2000, inputIngr0.amount);
       return machineName;
     }
   } 
@@ -292,7 +292,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
   
     if (machineName == "thermalcentrifuge") {
       # mods.ic2.ThermalCentrifuge.addRecipe([IItemStack[] outputs, IIngredient input, @Optional int minHeat);
-      mods.ic2.ThermalCentrifuge.addRecipe(outputItems, inputIngr0);
+      scripts.wrap.ic2.ThermalCentrifuge.addRecipe(outputItems, inputIngr0);
       return machineName;
     }
   
@@ -374,7 +374,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       #   @Optional IItemStack outputStack3, @Optional float outputStackChance3,
       #   @Optional ILiquidStack outputFluid);
       for ii in inputIngr0.itemArray {
-        mods.integrateddynamics.Squeezer.addRecipe(ii, 
+        scripts.wrap.integrateddynamics.Squeezer.addRecipe(ii, 
           arrN_item(outputItems, 0), arrN_float(extraChance, 0), 
           arrN_item(outputItems, 1), arrN_float(extraChance, 1), 
           arrN_item(outputItems, 2), arrN_float(extraChance, 2), 
@@ -390,7 +390,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       #   @Optional IItemStack outputStack3, @Optional float outputStackChance3,
       #   @Optional ILiquidStack outputFluid, @Optional(10) int duration);
       for ii in inputIngr0.itemArray {
-        mods.integrateddynamics.MechanicalSqueezer.addRecipe(ii, 
+        scripts.wrap.integrateddynamics.MechanicalSqueezer.addRecipe(ii, 
           arrN_item(outputItems, 0), arrN_float(extraChance, 0), 
           arrN_item(outputItems, 1), arrN_float(extraChance, 1), 
           arrN_item(outputItems, 2), arrN_float(extraChance, 2), 
@@ -411,7 +411,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
         }
 
         for ii in inputIngr0.itemArray {
-          mods.thermalexpansion.Centrifuge.addRecipe(chancedCombined, ii, outputLiquid0, 2000);
+          scripts.wrap.thermalexpansion.Centrifuge.addRecipe(chancedCombined, ii, outputLiquid0, 2000);
         }
       } else {
         return info(machineNameAnyCase, getItemName(inputIngr0.itemArray[0]), "received work, but this machine MUST have item output");
@@ -421,7 +421,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
 
     if (machineName == "sagmill") {
       if (combinedOutput.length > 0 && combinedChances.length >= combinedOutput.length) {
-        mods.enderio.SagMill.addRecipe(combinedOutput, combinedChances, inputIngr0);
+        scripts.wrap.enderio.SagMill.addRecipe(combinedOutput, combinedChances, inputIngr0);
       } else {
         return info(machineNameAnyCase, getItemName(inputIngr0.itemArray[0]), "received work, but no output or extra was found");
       }
@@ -431,9 +431,9 @@ function workEx(machineNameAnyCase as string, exceptions as string,
     if (machineName == "iecrusher") {
       # mods.immersiveengineering.Crusher.addRecipe(IItemStack output, IIngredient input, int energy, @Optional IItemStack secondaryOutput, @Optional double secondaryChance);
       if (haveExtra) {
-        mods.immersiveengineering.Crusher.addRecipe(outputItem0, inputIngr0, 2048, extra[0], extraChance[0]);
+        scripts.wrap.immersiveengineering.Crusher.addRecipe(outputItem0, inputIngr0, 2048, extra[0], extraChance[0]);
       } else {
-        mods.immersiveengineering.Crusher.addRecipe(outputItem0, inputIngr0, 2048);
+        scripts.wrap.immersiveengineering.Crusher.addRecipe(outputItem0, inputIngr0, 2048);
       }
       return machineName;
     }
@@ -465,23 +465,23 @@ function workEx(machineNameAnyCase as string, exceptions as string,
         for i in 1 to inputItems.length {
           additives = additives + inputItems[i];
         }
-        mods.immersiveengineering.ArcFurnace.addRecipe(outputItem0, inputIngr0, defaultItem0(extra, I("immersiveengineering:material",7)), 200, 512, additives, "Alloying");
+        scripts.wrap.immersiveengineering.ArcFurnace.addRecipe(outputItem0, inputIngr0, defaultItem0(extra, I("immersiveengineering:material",7)), 200, 512, additives, "Alloying");
       } else {
-        mods.immersiveengineering.ArcFurnace.addRecipe(outputItem0, inputIngr0, defaultItem0(extra, I("immersiveengineering:material",7)), 200, 512);
+        scripts.wrap.immersiveengineering.ArcFurnace.addRecipe(outputItem0, inputIngr0, defaultItem0(extra, I("immersiveengineering:material",7)), 200, 512);
       }
       return machineName;
     }
 
     if (machineName == "alloysmelter") {
       if (strict) { mods.enderio.AlloySmelter.removeRecipe(outputItem0); }
-      mods.enderio.AlloySmelter.addRecipe(outputItem0, inputItems, 2000);
+      scripts.wrap.enderio.AlloySmelter.addRecipe(outputItem0, inputItems, 2000);
       return machineName;
     }
 
     if (machineName == "kiln") {
       if (strict) { mods.immersiveengineering.AlloySmelter.removeRecipe(outputItem0); }
       if (inputItems.length == 2) {
-        mods.immersiveengineering.AlloySmelter.addRecipe(outputItem0, inputItems[0], inputItems[1], 400);
+        scripts.wrap.immersiveengineering.AlloySmelter.addRecipe(outputItem0, inputItems[0], inputItems[1], 400);
       } else {
         return info(machineNameAnyCase, getItemName(inputIngr0.itemArray[0]), "received work, but number of inputs != 2");
       }
@@ -508,14 +508,14 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       if (inputItems.length == 1) {
         # Only one input - add automatically scalled output based on catalyst
         for ii in inputIngr0.itemArray {
-          mods.thermalexpansion.InductionSmelter.addRecipe(outputItem0, ii, additions[0], 4000, haveExtra ? extra[0] : additions[1], defaultChance0_int(extraChance, 10));
-          mods.thermalexpansion.InductionSmelter.addRecipe(outputItem0, ii, additions[2], 6000, haveExtra ? extra[0] : additions[1], defaultChance0_int(extraChance, 10));
-          mods.thermalexpansion.InductionSmelter.addRecipe(outputItem0, ii, additions[3], 8000, haveExtra ? extra[0] : additions[2], defaultChance0_int(extraChance, 10));
+          scripts.wrap.thermalexpansion.InductionSmelter.addRecipe(outputItem0, ii, additions[0], 4000, haveExtra ? extra[0] : additions[1], defaultChance0_int(extraChance, 10));
+          scripts.wrap.thermalexpansion.InductionSmelter.addRecipe(outputItem0, ii, additions[2], 6000, haveExtra ? extra[0] : additions[1], defaultChance0_int(extraChance, 10));
+          scripts.wrap.thermalexpansion.InductionSmelter.addRecipe(outputItem0, ii, additions[3], 8000, haveExtra ? extra[0] : additions[2], defaultChance0_int(extraChance, 10));
         }
       } else if (inputItems.length == 2) {
         for ii in inputItems[0].itemArray {
           for jj in inputItems[1].itemArray {
-            mods.thermalexpansion.InductionSmelter.addRecipe(outputItem0, ii, jj, 4000, haveExtra ? extra[0] : additions[1], defaultChance0_int(extraChance, 15));
+            scripts.wrap.thermalexpansion.InductionSmelter.addRecipe(outputItem0, ii, jj, 4000, haveExtra ? extra[0] : additions[1], defaultChance0_int(extraChance, 15));
           }
         }
       } else {
@@ -532,7 +532,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       if (inputItems.length == 2) {
         for ii in inputItems[0].itemArray {
           for jj in inputItems[1].itemArray {
-            mods.thermalexpansion.Insolator.addRecipe(outputItem0, ii, jj, energy, extra0, defaultChance0_int(extraChance, 100));
+            scripts.wrap.thermalexpansion.Insolator.addRecipe(outputItem0, ii, jj, energy, extra0, defaultChance0_int(extraChance, 100));
           }
         }
       } else {
@@ -577,7 +577,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       
       if (inputItems.length == 1 && outputItems.length == 1) {
         for ii in inputIngr0.itemArray {
-          mods.astralsorcery.StarlightInfusion.addInfusion(ii, outputItem0, false, 0.7, 60);
+          scripts.wrap.astralsorcery.StarlightInfusion.addInfusion(ii, outputItem0, false, 0.7, 60);
         }
       } else {
         return info(machineNameAnyCase, getItemName(inputIngr0.itemArray[0]), "received work, but number of inputs or outputs != 1");
@@ -601,7 +601,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
 
     if (machineName == "industrialsqueezer") {
       # mods.immersiveengineering.Squeezer.addRecipe(IItemStack output, ILiquidStack fluid, IIngredient input, int energy);
-      mods.immersiveengineering.Squeezer.addRecipe(outputItem0, outputLiquid0, inputIngr0, 2048);
+      scripts.wrap.immersiveengineering.Squeezer.addRecipe(outputItem0, outputLiquid0, inputIngr0, 2048);
       return machineName;
     }
 
@@ -609,7 +609,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       #mods.forestry.Squeezer.addRecipe(ILiquidStack fluidOutput, IItemStack[] ingredients, int timePerItem, @Optional WeightedItemStack itemOutput);
       for ii in inputIngr0.itemArray {
         val wOut as WeightedItemStack = !isNull(outputItem0) ? outputItem0 % defaultChance0_int(extraChance, 20) : null;
-        mods.forestry.Squeezer.addRecipe(outputLiquid0, [ii], 20, wOut);
+        scripts.wrap.forestry.Squeezer.addRecipe(outputLiquid0, [ii], 20, wOut);
       }
       return machineName;
     }
@@ -617,14 +617,14 @@ function workEx(machineNameAnyCase as string, exceptions as string,
     if (machineName == "crucible") {
       # mods.thermalexpansion.Crucible.addRecipe(ILiquidStack output, IItemStack input, int energy);
       for ii in inputIngr0.itemArray {
-        mods.thermalexpansion.Crucible.addRecipe(outputLiquid0, ii, 2800);
+        scripts.wrap.thermalexpansion.Crucible.addRecipe(outputLiquid0, ii, 2800);
       }
       return machineName;
     }
 
     if (machineName == "smeltery") {
       # mods.tconstruct.Melting.addRecipe(ILiquidStack output, IIngredient input, @Optional int temp);
-      mods.tconstruct.Melting.addRecipe(outputLiquid0, inputIngr0);
+      scripts.wrap.tconstruct.Melting.addRecipe(outputLiquid0, inputIngr0);
       return machineName;
     }
 
@@ -656,7 +656,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
   if (inputIsSingle && inputLiquidIsSingle && outputIsSingle) {
 
     if (machineName == "casting") { 
-      mods.tconstruct.Casting.addTableRecipe(outputItem0, inputIngr0, inputLiquid0, inputLiquid0.amount, true);
+      scripts.wrap.tconstruct.Casting.addTableRecipe(outputItem0, inputIngr0, inputLiquid0, inputLiquid0.amount, true);
       return machineName;
     }
 
@@ -668,7 +668,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
     if (machineName == "transposer") { 
       //mods.thermalexpansion.Transposer.addFillRecipe(IItemStack output, IItemStack input, ILiquidStack fluid, int energy);
       for ii in inputIngr0.itemArray {
-        mods.thermalexpansion.Transposer.addFillRecipe(outputItem0, ii, inputLiquid0, 2000);
+        scripts.wrap.thermalexpansion.Transposer.addFillRecipe(outputItem0, ii, inputLiquid0, 2000);
       }
       return machineName;
     }
@@ -681,7 +681,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
 
     if (machineName == "canner") {
       # mods.ic2.Canner.addEnrichRecipe(ILiquidStack output, ILiquidStack input, IIngredient additive);
-      mods.ic2.Canner.addEnrichRecipe(outputLiquid0, inputLiquid0, inputIngr0);
+      scripts.wrap.ic2.Canner.addEnrichRecipe(outputLiquid0, inputLiquid0, inputIngr0);
       return machineName;
     }
     
@@ -799,10 +799,10 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       # DryingBasin.addRecipe(@Optional IItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
       if (inputIsSingle) {
         for ii in inputItems[0].itemArray {
-          mods.integrateddynamics.DryingBasin.addRecipe(ii, inputLiquid0, outputItem0, outputLiquid0, 80);
+          scripts.wrap.integrateddynamics.DryingBasin.addRecipe(ii, inputLiquid0, outputItem0, outputLiquid0, 80);
         }
       } else {
-        mods.integrateddynamics.DryingBasin.addRecipe(null, inputLiquid0, outputItem0, outputLiquid0, 80);
+        scripts.wrap.integrateddynamics.DryingBasin.addRecipe(null, inputLiquid0, outputItem0, outputLiquid0, 80);
       }
       return machineName;
     }
@@ -811,10 +811,10 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       # MechanicalDryingBasin.addRecipe(@Optional IItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
       if (inputIsSingle) {
         for ii in inputItems[0].itemArray {
-          mods.integrateddynamics.MechanicalDryingBasin.addRecipe(ii, inputLiquid0, outputItem0, outputLiquid0, 80);
+          scripts.wrap.integrateddynamics.MechanicalDryingBasin.addRecipe(ii, inputLiquid0, outputItem0, outputLiquid0, 80);
         }
       } else {
-        mods.integrateddynamics.MechanicalDryingBasin.addRecipe(null, inputLiquid0, outputItem0, outputLiquid0, 80);
+        scripts.wrap.integrateddynamics.MechanicalDryingBasin.addRecipe(null, inputLiquid0, outputItem0, outputLiquid0, 80);
       }
       return machineName;
     }
@@ -838,7 +838,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
   # 📦 → 🟡
   if (inputIsSingle && haveGasOutput) {
     if (machineName == "mekdissolution") {
-      mods.mekanism.chemical.dissolution.addRecipe(inputIngr0, outputGas);
+      scripts.wrap.mekanism.chemical_dissolution.addRecipe(inputIngr0, outputGas);
       return machineName;
     }
   }

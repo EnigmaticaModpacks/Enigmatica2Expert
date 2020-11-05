@@ -71,13 +71,13 @@ import mods.jei.JEI.removeAndHide as rh;
 	[<minecraft:book>,<bloodmagic:soul_snare>]);
 	
 # Animania Random Animal Spawn Egg
-	mods.forestry.Carpenter.addRecipe(<animania:entity_egg_random>, 
+	scripts.wrap.forestry.Carpenter.addRecipe(<animania:entity_egg_random>, 
 	[[null , <cyclicmagic:sprout_seed>, null],
 	[<ore:egg>,<ore:egg>,<ore:egg>],
 	[null, <cyclicmagic:sprout_seed>, null]], 
 	40, <liquid:meat> * 500);
 	
-	mods.forestry.Carpenter.addRecipe(<animania:entity_egg_random>, 
+	scripts.wrap.forestry.Carpenter.addRecipe(<animania:entity_egg_random>, 
 	[[null , <cyclicmagic:sprout_seed>, null],
 	[<ore:egg>,<ore:egg>,<ore:egg>],
 	[null, <cyclicmagic:sprout_seed>, null]], 
@@ -419,7 +419,7 @@ Remake(<bedrockores:bedrock_miner>, [
 	
 # Sandwiches
 recipes.remove(<culinaryconstruct:sandwich_station>);
-mods.extendedcrafting.TableCrafting.addShaped(0, <culinaryconstruct:sandwich_station>, [
+scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <culinaryconstruct:sandwich_station>, [
 	[<nuclearcraft:moresmore>, <ore:dragonsteelIngot>, <nuclearcraft:moresmore>], 
 	[<cookingforblockheads:counter>, <cookingforblockheads:cooking_table>, <cookingforblockheads:counter>], 
 	[<cookingforblockheads:counter>, <cookingforblockheads:counter>, <cookingforblockheads:counter>]
@@ -503,7 +503,7 @@ mods.mekanism.crusher.removeRecipe(<nuclearcraft:gem:6>); # Sand -> silicon
 # Addition
 furnace.addRecipe(trueSilicon, <ore:dustCertusQuartz>, 4.0d);
 furnace.addRecipe(trueSilicon, <ore:dustNetherQuartz>, 4.0d);
-mods.thermalexpansion.Compactor.addMintRecipe(trueSilicon * 2, <minecraft:sand>, 4000);
+scripts.wrap.thermalexpansion.Compactor.addMintRecipe(trueSilicon * 2, <minecraft:sand>, 4000);
 
 # Quest Book -> Patchouli book
 recipes.addShapeless("Patchouli book", <patchouli:guide_book>.withTag({"patchouli:book": "patchouli:e2e_e"}), [<questbook:itemquestbook>]);
@@ -514,4 +514,4 @@ scripts.process.melt(<ore:tallow>, <liquid:biomass> * 200, "No Exceptions");
 # Molten Cheese
 scripts.process.melt(<ore:cheeseWheels>|<ore:blockCheese>, <liquid:cheese> * 1000, "No Exceptions");
 scripts.process.melt(<ore:foodCheese>|<actuallyadditions:item_food>, <liquid:cheese> * 250, "No Exceptions");
-mods.tconstruct.Casting.addBasinRecipe(<rats:block_of_cheese>, null, <liquid:cheese>, 1000);
+scripts.wrap.tconstruct.Casting.addBasinRecipe(<rats:block_of_cheese>, null, <liquid:cheese>, 1000);

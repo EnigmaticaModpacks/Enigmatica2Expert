@@ -7,7 +7,7 @@ import crafttweaker.liquid.ILiquidStack;
 
 # Nocturnal Powder
 	mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/nocturnalpowder");
-	mods.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/nocturnalpowder",
+	scripts.wrap.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/nocturnalpowder",
 		<astralsorcery:itemusabledust:1>, 300, 100, [
 		<ore:gemCoal>, <ore:dyeBlack>, <ore:gemCoal>,
 		<ore:dustWither>, <astralsorcery:itemusabledust>, <ore:dustWither>, 
@@ -22,7 +22,7 @@ import crafttweaker.liquid.ILiquidStack;
 
 # Glass Lens
 	mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/glasslens");
-	mods.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/glasslens",
+	scripts.wrap.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/glasslens",
 		<astralsorcery:itemcraftingcomponent:3>, 300, 100, [
 		<botania:managlasspane>, <ore:quicksilver>, <botania:managlasspane>,
 		<ore:gemAquamarine>, <thaumcraft:mirrored_glass>, <ore:gemAquamarine>, 
@@ -30,7 +30,7 @@ import crafttweaker.liquid.ILiquidStack;
 
 # Illumination Powder
 	mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/illuminationpowder");
-	mods.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/illuminationpowder",
+	scripts.wrap.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/illuminationpowder",
 		<astralsorcery:itemusabledust> * 16, 100, 60, [
 		<ore:dustGlowstone>, <ore:gemAquamarine>, <ore:dustGlowstone>,
 		<ore:dustGlowstone>, <thaumcraft:nitor_yellow>, <ore:dustGlowstone>, 
@@ -45,7 +45,7 @@ import crafttweaker.liquid.ILiquidStack;
 
 # Starlight Crafting Altar
 	mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/upgrade_tier2");
-	mods.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/upgrade_tier2",
+	scripts.wrap.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/upgrade_tier2",
 		<astralsorcery:blockaltar:1>, 350, 100, [
             <astralsorcery:blockmarble:2>, <astralsorcery:itemrockcrystalsimple>.anyDamage(), <astralsorcery:blockmarble:2>,
 			<astralsorcery:blockmarble:4>, <liquid:astralsorcery.liquidstarlight>, <astralsorcery:blockmarble:4>, 
@@ -53,7 +53,7 @@ import crafttweaker.liquid.ILiquidStack;
 
 # Celestial Altar
 	mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/upgrade_tier3");
-	mods.astralsorcery.Altar.addAttunementAltarRecipe("enigmatica2expert:shaped/internal/altar/upgrade_tier3",
+	scripts.wrap.astralsorcery.Altar.addAttunementAltarRecipe("enigmatica2expert:shaped/internal/altar/upgrade_tier3",
 		<astralsorcery:blockaltar:2>, 600, 300, [
             <ore:gemAquamarine>, <ore:blockThaumium>, <ore:gemAquamarine>,
             <bloodmagic:slate:1>, <astralsorcery:itemrockcrystalsimple>.anyDamage(), <bloodmagic:slate:1>,
@@ -62,7 +62,7 @@ import crafttweaker.liquid.ILiquidStack;
 	
 # Iridescent Altar
 	mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/upgrade_tier4");
-	mods.astralsorcery.Altar.addConstellationAltarRecipe("enigmatica2expert:shaped/internal/altar/upgrade_tier4",
+	scripts.wrap.astralsorcery.Altar.addConstellationAltarRecipe("enigmatica2expert:shaped/internal/altar/upgrade_tier4",
 		<astralsorcery:blockaltar:3>, 3250, 200, [
             <ore:blockMarble>, <bloodmagic:component:6>, <ore:blockMarble>,
             <astralsorcery:itemcoloredlens:4>, <astralsorcery:itemcelestialcrystal>, <astralsorcery:itemcoloredlens:6>,
@@ -87,7 +87,7 @@ val CO = <thaumcraft:curio:1>;
 val EI = <ore:ingotEssenceMetal>;
 val TE = <thermalfoundation:tome_experience>.withTag({Experience: 10000});
 val BT = <bigreactors:mineralbenitoite>;
-mods.extendedcrafting.TableCrafting.addShaped(0, <astralsorcery:itemknowledgeshare>.withTag({astralsorcery: {creativeKnowledge: 1 as byte}}), [
+scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <astralsorcery:itemknowledgeshare>.withTag({astralsorcery: {creativeKnowledge: 1 as byte}}), [
 	[IW, IW, PC, PC, null, null, null], 
 	[IW, IW, CO, CO, BT, BT, null], 
 	[PC, CO, <astralsorcery:itemperkgem:*>, EI, <astralsorcery:itemknowledgeshare>, BT, null], 

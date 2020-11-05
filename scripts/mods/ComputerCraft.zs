@@ -30,11 +30,11 @@ import mods.jei.JEI.removeAndHide as rh;
 
 # Pocket Computer
 	recipes.remove(<computercraft:pocket_computer>);
-	mods.immersiveengineering.MetalPress.addRecipe(<computercraft:pocket_computer>, <computercraft:computer>, <immersiveengineering:mold:0>, 2000);
+	scripts.wrap.immersiveengineering.MetalPress.addRecipe(<computercraft:pocket_computer>, <computercraft:computer>, <immersiveengineering:mold:0>, 2000);
 
 # Advanced Pocket Computer
 	recipes.remove(<computercraft:pocket_computer:1>);
-	mods.immersiveengineering.MetalPress.addRecipe(<computercraft:pocket_computer:1>, <computercraft:computer:16384>, <immersiveengineering:mold:0>, 2000);
+	scripts.wrap.immersiveengineering.MetalPress.addRecipe(<computercraft:pocket_computer:1>, <computercraft:computer:16384>, <immersiveengineering:mold:0>, 2000);
 
 # Get rid of recipe that uses every weapon in game
 remakeEx(<plethora:module:1>, [

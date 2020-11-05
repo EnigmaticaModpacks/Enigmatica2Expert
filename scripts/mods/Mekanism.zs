@@ -13,7 +13,7 @@ recipes.remove(<mekanism:machineblock:2>);
 mods.mekanism.crusher.removeRecipe(<bigreactors:dustgraphite>, <bigreactors:ingotgraphite>);
 
 for ingot in <ore:ingotGraphite>.items {
-	mods.mekanism.crusher.addRecipe(ingot, <nuclearcraft:dust:8>);
+	scripts.wrap.mekanism.crusher.addRecipe(ingot, <nuclearcraft:dust:8>);
 }
 
 # Energized Smelter is not entirely unified, this should fix that
@@ -31,11 +31,11 @@ var itemsToUnify as IItemStack[IItemStack] = {
 for input, output in itemsToUnify {
 	mods.mekanism.smelter.removeRecipe(input);
 
-	mods.mekanism.smelter.addRecipe(input, output);
+	scripts.wrap.mekanism.smelter.addRecipe(input, output);
 }
 
 # Starmetal Ingots
-	mods.mekanism.smelter.addRecipe(<astralsorcery:itemcraftingcomponent:2>, <astralsorcery:itemcraftingcomponent:1>);
+	scripts.wrap.mekanism.smelter.addRecipe(<astralsorcery:itemcraftingcomponent:2>, <astralsorcery:itemcraftingcomponent:1>);
 	
 	var ultimateGasTank = <mekanism:gastank>.withTag({tier: 3, mekData:{}})|<mekanism:gastank>.withTag({tier: 3, mekData:{security:0}});
 	var ultimateFluidTank = <mekanism:machineblock2:11>.withTag({tier: 3, mekData:{}})|<mekanism:machineblock2:11>.withTag({tier: 3, mekData:{security:0}});
@@ -246,7 +246,7 @@ for input, output in itemsToUnify {
 
 # Basic circuit
 	mods.mekanism.infuser.removeRecipe(<mekanism:controlcircuit>);
-	mods.mekanism.compressor.addRecipe(<opencomputers:material:4>, <mekanism:controlcircuit>);
+	scripts.wrap.mekanism.compressor.addRecipe(<opencomputers:material:4>, <mekanism:controlcircuit>);
 
 # Advanced Circuit
 	recipes.remove(<mekanism:controlcircuit:1>);
@@ -266,7 +266,7 @@ for input, output in itemsToUnify {
 
 # Ultimate Circuit
 	recipes.remove(<mekanism:controlcircuit:3>);
-	mods.actuallyadditions.Empowerer.addRecipe(<mekanism:controlcircuit:3>, <mekanism:controlcircuit:2>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, 500000, 100, [0.5, 0.3, 0.2]);
+	scripts.wrap.actuallyadditions.Empowerer.addRecipe(<mekanism:controlcircuit:3>, <mekanism:controlcircuit:2>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, 500000, 100, [0.5, 0.3, 0.2]);
 
 # Removing unused ores & Walkietalkie
 	rh(<mekanism:oreblock:1>);
@@ -318,7 +318,7 @@ remake("Induction Cell 4", <mekanism:basicblock2:3>.withTag({tier: 3}), [
 
 # Mekanism Fusion Reactor
 recipes.remove(<mekanismgenerators:reactor>);
-mods.extendedcrafting.TableCrafting.addShaped(0, <mekanismgenerators:reactor>, [
+scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <mekanismgenerators:reactor>, [
 	[<ore:plateElite>, <advancedrocketry:blocklens>, <advancedrocketry:blocklens>, <advancedrocketry:blocklens>, <ore:plateElite>], 
 	[<mekanismgenerators:reactor:2>, <ic2:iridium_reflector>, <mekanism:gastank>.withTag({tier: 3}), <ic2:iridium_reflector>, <mekanismgenerators:reactor:2>], 
 	[<nuclearcraft:electromagnet_supercooler_idle>, <advancedrocketry:intake>, <nuclearcraft:fusion_core>, <advancedrocketry:intake>, <nuclearcraft:electromagnet_supercooler_idle>], 
@@ -377,8 +377,8 @@ recipes.addShaped("Mek Teleporter", <mekanism:machineblock:11>.withTag({}), [[<o
 remakeEx(<mekanism:cardboardbox>, [[<forestry:carton>, <forestry:carton>, <forestry:carton>],[<forestry:carton>, null, <forestry:carton>], [<forestry:carton>, <forestry:carton>, <forestry:carton>]]);
 
 # New compressed items
-mods.mekanism.enrichment.addRecipe(<ore:dustGlowstone>,  <contenttweaker:compressed_glowstone>);
-mods.mekanism.enrichment.addRecipe(<ore:dustEnderPearl>, <contenttweaker:compressed_ender>);
+scripts.wrap.mekanism.enrichment.addRecipe(<ore:dustGlowstone>,  <contenttweaker:compressed_glowstone>);
+scripts.wrap.mekanism.enrichment.addRecipe(<ore:dustEnderPearl>, <contenttweaker:compressed_ender>);
 
 # New Infuser types
 mods.mekatweaker.InfuserType.addTypeObject(<ore:dustGlowstone>,                   "GLOWSTONE", 10);

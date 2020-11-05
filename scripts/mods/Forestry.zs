@@ -7,7 +7,7 @@ import mods.jei.JEI.removeAndHide as rh;
 # Fixing fruit juice amount from tomatos
 for tomato in <ore:cropTomato>.items {
 	mods.forestry.Squeezer.removeRecipe(<liquid:juice>, [tomato]);	
-	mods.forestry.Squeezer.addRecipe(<liquid:juice> * 100, [tomato], 100);
+	scripts.wrap.forestry.Squeezer.addRecipe(<liquid:juice> * 100, [tomato], 100);
 }
 
 # Forester's Manual
@@ -19,7 +19,7 @@ for tomato in <ore:cropTomato>.items {
 	
 # Refined Circuit Board
 	mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:3>);
-	mods.forestry.Carpenter.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}), 
+	scripts.wrap.forestry.Carpenter.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}), 
 	[[<appliedenergistics2:material:17>, <forestry:chipsets>.withTag({T:0 as short}, false), <appliedenergistics2:material:17>],
 	[<ore:circuitUltimate>, <forestry:chipsets:1>.withTag({T:1 as short}, false), <ore:circuitUltimate>],
 	[<appliedenergistics2:material:17>, <forestry:chipsets:2>.withTag({T:2 as short}, false), <appliedenergistics2:material:17>]], 
@@ -144,7 +144,7 @@ val thingsToferment = [
 
 for thing in thingsToferment {
     for liquid, ratio in FermenterFluid {
-        mods.forestry.Fermenter.addRecipe(<liquid:biomass>, thing, liquid, 50, ratio);
+        scripts.wrap.forestry.Fermenter.addRecipe(<liquid:biomass>, thing, liquid, 50, ratio);
     }
 }
 
@@ -167,7 +167,7 @@ for thing in thingsToferment {
 #mods.forestry.Squeezer.removeRecipe(<liquid:seed.oil>, [<minecraft:wheat_seeds>]);
 
 #Make melons give fruit juice
-mods.forestry.Squeezer.addRecipe(<liquid:juice> * 15, [<minecraft:melon>], 8);
+scripts.wrap.forestry.Squeezer.addRecipe(<liquid:juice> * 15, [<minecraft:melon>], 8);
 
 # *======= Still =======*
 

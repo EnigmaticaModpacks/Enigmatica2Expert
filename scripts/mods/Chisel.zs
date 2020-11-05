@@ -71,7 +71,7 @@ recipes.addShaped(<chisel:chisel_iron>, [
 
 # Harder diamond chisel
 recipes.remove(<chisel:chisel_diamond>);
-mods.tconstruct.Casting.addTableRecipe(<chisel:chisel_diamond>, <chisel:chisel_iron>, <liquid:diamond>, 666, true);
+scripts.wrap.tconstruct.Casting.addTableRecipe(<chisel:chisel_diamond>, <chisel:chisel_iron>, <liquid:diamond>, 666, true);
 
 # Harder I-Chisel
 recipes.remove(<chisel:chisel_hitech>);

@@ -3,14 +3,14 @@ import mods.jei.JEI.removeAndHide as rh;
 #modloaded thaumcraft
 
 # Crimson Rites
-mods.thaumcraft.Infusion.registerRecipe("crimson_rites", "INFUSION", 
+scripts.wrap.thaumcraft.Infusion.registerRecipe("crimson_rites", "INFUSION", 
 <thaumcraft:curio:6>, 15, 
 [<aspect:vitium> * 30, <aspect:mortuus> * 15, <aspect:praecantatio> * 30, <aspect:auram> * 10], 
 <thaumcraft:thaumonomicon>, 
 [<thaumcraft:ingot>, <thaumcraft:void_seed>, <thaumcraft:salis_mundus>, <thaumcraft:void_seed>, <thaumcraft:salis_mundus>, <thaumcraft:void_seed>, <thaumcraft:ingot>, <thaumcraft:void_seed>]);
 
 # Cultist Portal
-mods.thaumcraft.Infusion.registerRecipe("spawn_lesser_crimson_portal", "INFUSION", 
+scripts.wrap.thaumcraft.Infusion.registerRecipe("spawn_lesser_crimson_portal", "INFUSION", 
 <minecraft:spawn_egg>.withTag({EntityTag: {id: "thaumcraft:cultistportallesser"}}), 15, 
 [<aspect:vitium> * 90, <aspect:mortuus> * 45, <aspect:praecantatio> * 90, <aspect:auram> * 30], 
 <openblocks:golden_egg>, 
@@ -29,10 +29,10 @@ mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:clusterSilver>, <thaumcra
 mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:clusterLead>, <thaumcraft:nugget:4>);
 
 // IIngredient input, WeightedItemStack stack
-mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreCopper>, <thermalfoundation:material:192> % 33);
-mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreTin>, <thermalfoundation:material:193> % 33);
-mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreSilver>, <thermalfoundation:material:194> % 33);
-mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreLead>, <thermalfoundation:material:195> % 33);
+scripts.wrap.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreCopper>, <thermalfoundation:material:192> % 33);
+scripts.wrap.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreTin>, <thermalfoundation:material:193> % 33);
+scripts.wrap.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreSilver>, <thermalfoundation:material:194> % 33);
+scripts.wrap.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreLead>, <thermalfoundation:material:195> % 33);
 
 # Removing wrong aspects from stuff
 	<ic2:dust:21>.setAspects(<aspect:metallum> * 1);

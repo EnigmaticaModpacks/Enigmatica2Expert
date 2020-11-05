@@ -45,7 +45,7 @@ import crafttweaker.item.IIngredient as IIngredient;
 	[<botania:bifrostperm>, <botania:bifrostperm>, <botania:bifrostperm>]]);
 
 # Gaia Spirit Duplication
-	mods.bloodmagic.AlchemyTable.addRecipe(<botania:manaresource:5> * 4, 
+	scripts.wrap.bloodmagic.AlchemyTable.addRecipe(<botania:manaresource:5> * 4, 
 	[<botania:manaresource:5>, <bloodmagic:item_demon_crystal:1>, <bloodmagic:item_demon_crystal:2>, 
 	<bloodmagic:item_demon_crystal:3>, <bloodmagic:item_demon_crystal:4>, <bloodmagic:points_upgrade>], 100000, 300, 4);
 
@@ -68,11 +68,11 @@ import crafttweaker.item.IIngredient as IIngredient;
 	}
 
 # Livingrock
-	mods.botania.PureDaisy.addRecipe(<thaumcraft:stone_arcane>, <botania:livingrock>);
+	scripts.wrap.botania.PureDaisy.addRecipe(<thaumcraft:stone_arcane>, <botania:livingrock>);
 	mods.botania.PureDaisy.removeRecipe(<botania:livingrock>);
 
 # Livingwood
-	mods.botania.PureDaisy.addRecipe(<astralsorcery:blockinfusedwood>, <botania:livingwood>);
+	scripts.wrap.botania.PureDaisy.addRecipe(<astralsorcery:blockinfusedwood>, <botania:livingwood>);
 	mods.botania.PureDaisy.removeRecipe(<botania:livingwood>);
 
 # Gaia Ingot
@@ -93,7 +93,7 @@ import crafttweaker.item.IIngredient as IIngredient;
 
 # Elven Gateway Core
 	recipes.remove(<botania:alfheimportal>);
-	mods.astralsorcery.Altar.addConstellationAltarRecipe("enigmatica2expert:shaped/internal/altar/elven_gateway_core",
+	scripts.wrap.astralsorcery.Altar.addConstellationAltarRecipe("enigmatica2expert:shaped/internal/altar/elven_gateway_core",
 		<botania:alfheimportal>, 2800, 300, [
             <ore:livingwood>, <botania:livingwood:5>, <ore:livingwood>,
             <botania:livingwood:5>, <botania:petalblock:5>, <botania:livingwood:5>,
@@ -106,7 +106,7 @@ import crafttweaker.item.IIngredient as IIngredient;
 
 # Petal Apothecary
 	recipes.remove(<botania:altar>);
-	mods.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/petal_apothecary",
+	scripts.wrap.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/petal_apothecary",
 	<botania:altar>, 200, 450, 
 	[<minecraft:stone_slab:3>, <botania:petal>, <minecraft:stone_slab:3>,
     null, <ore:cobblestone>, null,
@@ -114,13 +114,13 @@ import crafttweaker.item.IIngredient as IIngredient;
 	
 # Runic Altar
 	recipes.remove(<botania:runealtar>);
-	mods.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/runic_altar1",
+	scripts.wrap.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/runic_altar1",
 	<botania:runealtar>, 200, 800, 
 	[null, <astralsorcery:itemrockcrystalsimple>.anyDamage(), null,
     <botania:livingrock>, <botania:manaresource:1>, <botania:livingrock>,
     <botania:livingrock>, <botania:livingrock>, <botania:livingrock>]);
 	
-	mods.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/runic_altar2",
+	scripts.wrap.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/runic_altar2",
 	<botania:runealtar>, 200, 800, 
 	[null, <astralsorcery:itemrockcrystalsimple>.anyDamage(), null,
     <botania:livingrock>, <botania:manaresource:2>, <botania:livingrock>,
@@ -250,15 +250,15 @@ for i, sapling in saplings {
 mods.botania.ManaInfusion.addAlchemy(<iceandfire:dragonbone>, <ore:blockBone>, 420);
 
 # Colored Glass -> Quark Cave Crystals
-mods.botania.PureDaisy.addRecipe(<ore:blockGlassWhite>,  <quark:crystal>);
-mods.botania.PureDaisy.addRecipe(<ore:blockGlassRed>,    <quark:crystal:1>);
-mods.botania.PureDaisy.addRecipe(<ore:blockGlassOrange>, <quark:crystal:2>);
-mods.botania.PureDaisy.addRecipe(<ore:blockGlassYellow>, <quark:crystal:3>);
-mods.botania.PureDaisy.addRecipe(<ore:blockGlassLime>,   <quark:crystal:4>);
-mods.botania.PureDaisy.addRecipe(<ore:blockGlassCyan>,   <quark:crystal:5>);
-mods.botania.PureDaisy.addRecipe(<ore:blockGlassBlue>,   <quark:crystal:6>);
-mods.botania.PureDaisy.addRecipe(<ore:blockGlassPurple>, <quark:crystal:7>);
-mods.botania.PureDaisy.addRecipe(<ore:blockGlassBlack>,  <quark:crystal:8>);
+scripts.wrap.botania.PureDaisy.addRecipe(<ore:blockGlassWhite>,  <quark:crystal>);
+scripts.wrap.botania.PureDaisy.addRecipe(<ore:blockGlassRed>,    <quark:crystal:1>);
+scripts.wrap.botania.PureDaisy.addRecipe(<ore:blockGlassOrange>, <quark:crystal:2>);
+scripts.wrap.botania.PureDaisy.addRecipe(<ore:blockGlassYellow>, <quark:crystal:3>);
+scripts.wrap.botania.PureDaisy.addRecipe(<ore:blockGlassLime>,   <quark:crystal:4>);
+scripts.wrap.botania.PureDaisy.addRecipe(<ore:blockGlassCyan>,   <quark:crystal:5>);
+scripts.wrap.botania.PureDaisy.addRecipe(<ore:blockGlassBlue>,   <quark:crystal:6>);
+scripts.wrap.botania.PureDaisy.addRecipe(<ore:blockGlassPurple>, <quark:crystal:7>);
+scripts.wrap.botania.PureDaisy.addRecipe(<ore:blockGlassBlack>,  <quark:crystal:8>);
 
 /* Patchouli_js()
 var entryId = 'Liquids/Petro Petunia';

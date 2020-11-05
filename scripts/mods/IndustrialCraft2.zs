@@ -31,28 +31,28 @@ import mods.ic2.ScrapBox;
 	[<ic2:dust:22>, <ic2:dust:22>, <ic2:dust:22>]]);
 
 # Crushed Ore Smeltery compat
-	mods.tconstruct.Melting.addRecipe(<liquid:aluminum> * 144, <jaopca:item_crushedaluminium>);
-	mods.tconstruct.Melting.addRecipe(<liquid:ardite> * 144, <jaopca:item_crushedardite>);
-	mods.tconstruct.Melting.addRecipe(<liquid:starmetal> * 144, <jaopca:item_crushedastralstarmetal>);
-	mods.tconstruct.Melting.addRecipe(<liquid:boron> * 144, <jaopca:item_crushedboron>);
-	mods.tconstruct.Melting.addRecipe(<liquid:cobalt> * 144, <jaopca:item_crushedcobalt>);
-	mods.tconstruct.Melting.addRecipe(<liquid:draconium> * 144, <jaopca:item_crusheddraconium>);
-	mods.tconstruct.Melting.addRecipe(<liquid:iridium> * 144, <jaopca:item_crushediridium>);
-	mods.tconstruct.Melting.addRecipe(<liquid:lithium> * 144, <jaopca:item_crushedlithium>);
-	mods.tconstruct.Melting.addRecipe(<liquid:magnesium> * 144, <jaopca:item_crushedmagnesium>);
-	mods.tconstruct.Melting.addRecipe(<liquid:mithril> * 144, <jaopca:item_crushedmithril>);
-	mods.tconstruct.Melting.addRecipe(<liquid:thorium> * 144, <jaopca:item_crushedthorium>);
-	mods.tconstruct.Melting.addRecipe(<liquid:platinum> * 144, <jaopca:item_crushedplatinum>);
-	mods.tconstruct.Melting.addRecipe(<liquid:osmium> * 144, <jaopca:item_crushedosmium>);
-	mods.tconstruct.Melting.addRecipe(<liquid:nickel> * 144, <jaopca:item_crushednickel>);
-	mods.tconstruct.Melting.addRecipe(<liquid:titanium> * 144, <jaopca:item_crushedtitanium>);
-	mods.tconstruct.Melting.addRecipe(<liquid:copper> * 144, <ic2:crushed>);
-	mods.tconstruct.Melting.addRecipe(<liquid:gold> * 144, <ic2:crushed:1>);
-	mods.tconstruct.Melting.addRecipe(<liquid:iron> * 144, <ic2:crushed:2>);
-	mods.tconstruct.Melting.addRecipe(<liquid:lead> * 144, <ic2:crushed:3>);
-	mods.tconstruct.Melting.addRecipe(<liquid:silver> * 144, <ic2:crushed:4>);
-	mods.tconstruct.Melting.addRecipe(<liquid:tin> * 144, <ic2:crushed:5>);
-	mods.tconstruct.Melting.addRecipe(<liquid:uranium> * 144, <ic2:crushed:6>);
+	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:aluminum> * 144, <jaopca:item_crushedaluminium>);
+	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:ardite> * 144, <jaopca:item_crushedardite>);
+	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:starmetal> * 144, <jaopca:item_crushedastralstarmetal>);
+	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:boron> * 144, <jaopca:item_crushedboron>);
+	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:cobalt> * 144, <jaopca:item_crushedcobalt>);
+	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:draconium> * 144, <jaopca:item_crusheddraconium>);
+	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:iridium> * 144, <jaopca:item_crushediridium>);
+	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:lithium> * 144, <jaopca:item_crushedlithium>);
+	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:magnesium> * 144, <jaopca:item_crushedmagnesium>);
+	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:mithril> * 144, <jaopca:item_crushedmithril>);
+	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:thorium> * 144, <jaopca:item_crushedthorium>);
+	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:platinum> * 144, <jaopca:item_crushedplatinum>);
+	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:osmium> * 144, <jaopca:item_crushedosmium>);
+	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:nickel> * 144, <jaopca:item_crushednickel>);
+	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:titanium> * 144, <jaopca:item_crushedtitanium>);
+	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:copper> * 144, <ic2:crushed>);
+	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:gold> * 144, <ic2:crushed:1>);
+	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:iron> * 144, <ic2:crushed:2>);
+	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:lead> * 144, <ic2:crushed:3>);
+	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:silver> * 144, <ic2:crushed:4>);
+	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:tin> * 144, <ic2:crushed:5>);
+	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:uranium> * 144, <ic2:crushed:6>);
 
 # Jetpacks	
 	recipes.remove(<ic2:jetpack_electric>.anyDamage());
@@ -117,7 +117,7 @@ import mods.ic2.ScrapBox;
 	
 #  Overclocker Upgrade
 	recipes.remove(<ic2:upgrade>);
-	mods.forestry.Carpenter.addRecipe(<ic2:upgrade> * 2, 
+	scripts.wrap.forestry.Carpenter.addRecipe(<ic2:upgrade> * 2, 
 	[[<ore:plateTin>, <ore:plateTin>, <ore:plateTin>],
 	[<ic2:cable>, <ore:circuitBasic>, <ic2:cable>],
 	[<ore:plateTin>, <ore:plateTin>, <ore:plateTin>]], 40, <liquid:ic2coolant> * 3000);
@@ -172,8 +172,8 @@ import mods.ic2.ScrapBox;
 	rh(<ic2:crafting:19>);
 	
 # Iridium TiC Compat
-	mods.tconstruct.Melting.addRecipe(<liquid:iridium> * 144, <ic2:misc_resource:1>, 500);
-	mods.tconstruct.Melting.addRecipe(<liquid:iridium> * 16, <ic2:misc_resource:2>, 200);
+	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:iridium> * 144, <ic2:misc_resource:1>, 500);
+	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:iridium> * 16, <ic2:misc_resource:2>, 200);
 
 # Lapis Dust
 	recipes.remove(<ic2:dust:9>);

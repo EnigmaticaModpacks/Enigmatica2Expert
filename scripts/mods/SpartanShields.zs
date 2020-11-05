@@ -87,12 +87,12 @@ while (k < listShield.length) {
 
   # Recycling
   if(!isNull(recycle)) {
-    mods.immersiveengineering.ArcFurnace.addRecipe(recycle * 8, shield, <immersiveengineering:material:7>, 800, 2048);
+    scripts.wrap.immersiveengineering.ArcFurnace.addRecipe(recycle * 8, shield, <immersiveengineering:material:7>, 800, 2048);
   }
 
   k += 3;
 }
 
 # Additional Recycling
-mods.immersiveengineering.ArcFurnace.addRecipe(<enderio:item_alloy_ingot:6> * 6, <spartanshields:shield_riot_enderio>, <immersiveengineering:material:7>, 800, 2048);
-mods.immersiveengineering.ArcFurnace.addRecipe(<redstonearsenal:material:32> * 8, <spartanshields:shield_flux_ra>, <immersiveengineering:material:7>, 800, 2048);
+scripts.wrap.immersiveengineering.ArcFurnace.addRecipe(<enderio:item_alloy_ingot:6> * 6, <spartanshields:shield_riot_enderio>, <immersiveengineering:material:7>, 800, 2048);
+scripts.wrap.immersiveengineering.ArcFurnace.addRecipe(<redstonearsenal:material:32> * 8, <spartanshields:shield_flux_ra>, <immersiveengineering:material:7>, 800, 2048);

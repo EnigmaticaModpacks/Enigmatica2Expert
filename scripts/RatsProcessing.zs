@@ -135,7 +135,7 @@ for poop in listRatPoop{
         var poopCrushed = poopEntry.getItemStack("crushed");
         if(!isNull(poopCrushed)){
           # mods.ic2.Macerator.addRecipe(IItemStack output, IIngredient input);
-          mods.ic2.Macerator.addRecipe(poopCrushed*3, poop*2);
+          scripts.wrap.ic2.Macerator.addRecipe(poopCrushed*3, poop*2);
         }
 
         # ########################
@@ -148,19 +148,19 @@ for poop in listRatPoop{
         # ########################
         if(!isNull(poopIngotOrGemOrDust)){
           # mods.astralsorcery.StarlightInfusion.addInfusion(IItemStack input, IItemStack output, boolean consumeMultiple, float consumptionChance, int craftingTickTime);
-          mods.astralsorcery.StarlightInfusion.addInfusion(poop, poopIngotOrGemOrDust*2, false, 0.7, 100);
+          scripts.wrap.astralsorcery.StarlightInfusion.addInfusion(poop, poopIngotOrGemOrDust*2, false, 0.7, 100);
         }
         
         # ########################
         # Process Gems and Dusts
         # ########################
         if(!isNull(poopGemOrDust)){
-          mods.integrateddynamics.Squeezer.addRecipe(poop, 
+          scripts.wrap.integrateddynamics.Squeezer.addRecipe(poop, 
             poopGemOrDust, 1.0f,
             poopGemOrDust, 0.25f,
             <liquid:dirt> * 100);
 
-          mods.integrateddynamics.MechanicalSqueezer.addRecipe(poop,
+          scripts.wrap.integrateddynamics.MechanicalSqueezer.addRecipe(poop,
             poopGemOrDust, 1.0f,
             poopGemOrDust, 0.5f,
             <liquid:dirt> * 100);
@@ -169,13 +169,13 @@ for poop in listRatPoop{
           // mods.thermalexpansion.Pulverizer.addRecipe(poopGemOrDust*3, poop*2, 4000, <industrialforegoing:fertilizer>, 25);
 
           # mods.extrautils2.Crusher.add(IItemStack output, IItemStack input, @Optional IItemStack secondaryOutput, @Optional float secondaryChance);
-          mods.extrautils2.Crusher.add(poopGemOrDust*3, poop*2, <industrialforegoing:fertilizer>, 0.25f);
+          scripts.wrap.extrautils2.Crusher.add(poopGemOrDust*3, poop*2, <industrialforegoing:fertilizer>, 0.25f);
 
           # mods.immersiveengineering.Crusher.addRecipe(IItemStack output, IIngredient input, int energy, @Optional IItemStack secondaryOutput, @Optional double secondaryChance);
-          mods.immersiveengineering.Crusher.addRecipe(poopGemOrDust*3, poop*2, 2048, <industrialforegoing:fertilizer>, 0.50);
+          scripts.wrap.immersiveengineering.Crusher.addRecipe(poopGemOrDust*3, poop*2, 2048, <industrialforegoing:fertilizer>, 0.50);
 
           # mods.enderio.SagMill.addRecipe(IItemStack[] output, float[] chances, IIngredient input, @Optional String bonusType, @Optional int energyCost, @Optional float[] xp);
-          mods.enderio.SagMill.addRecipe([poopGemOrDust, poopGemOrDust] as IItemStack[], [1.0, 0.5] as float[], poop);
+          scripts.wrap.enderio.SagMill.addRecipe([poopGemOrDust, poopGemOrDust] as IItemStack[], [1.0, 0.5] as float[], poop);
         }
 
 
@@ -184,10 +184,10 @@ for poop in listRatPoop{
         # ########################
         if(!isNull(poopDust)){
           # mods.astralsorcery.Grindstone.addRecipe(IItemStack input, IItemStack output, float doubleChance);
-          mods.astralsorcery.Grindstone.addRecipe(poop, poopDust, 0.75f);
+          scripts.wrap.astralsorcery.Grindstone.addRecipe(poop, poopDust, 0.75f);
 
           # Grinder.addRecipe(IItemStack output, IItemStack input, int turns, @Optional IItemStack secondary1Output, @Optional float secondary1Chance, @Optional IItemStack secondary2Output, @Optional float secondary2Chance);
-          mods.appliedenergistics2.Grinder.addRecipe(poopDust, poop, 2, poopDust, 0.5);
+          scripts.wrap.appliedenergistics2.Grinder.addRecipe(poopDust, poop, 2, poopDust, 0.5);
         }
 
 
@@ -201,7 +201,7 @@ for poop in listRatPoop{
           // mods.thermalexpansion.InductionSmelter.addRecipe(poopIngot*2, poop,   <thermalfoundation:material:866>, 4000, <thermalfoundation:material:865>, 50);
 
           # mods.immersiveengineering.ArcFurnace.addRecipe(IItemStack output, IIngredient input, IItemStack slag, int time, int energyPerTick, @Optional IIngredient[] additives, @Optional String specialRecipeType);
-          mods.immersiveengineering.ArcFurnace.addRecipe(poopIngot*3, poop*2, <immersiveengineering:material:7>, 1000, 2048);
+          scripts.wrap.immersiveengineering.ArcFurnace.addRecipe(poopIngot*3, poop*2, <immersiveengineering:material:7>, 1000, 2048);
         }
         
         
@@ -213,7 +213,7 @@ for poop in listRatPoop{
 
         poopMolten = isNull(poopMolten) ? altLiquid : poopMolten;
         if(!isNull(poopMolten)){
-          mods.tconstruct.Melting.addRecipe(poopMolten * (144 * 1.5), poop);	
+          scripts.wrap.tconstruct.Melting.addRecipe(poopMolten * (144 * 1.5), poop);	
 
           # mods.thermalexpansion.Crucible.addRecipe(ILiquidStack output, IItemStack input, int energy);
           // mods.thermalexpansion.Crucible.addRecipe(poopMolten * 144 * 2, poop, 8000);

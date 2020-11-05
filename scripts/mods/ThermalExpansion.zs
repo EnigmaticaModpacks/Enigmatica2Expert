@@ -6,11 +6,11 @@ import mods.jei.JEI.removeAndHide;
 
 # Planks/Slabs -> Sticks
 for plank in <ore:plankWood>.items {
-	mods.thermalexpansion.Sawmill.addRecipe(<minecraft:stick> * 6, plank, 500, <thermalfoundation:material:800>, 30);
+	scripts.wrap.thermalexpansion.Sawmill.addRecipe(<minecraft:stick> * 6, plank, 500, <thermalfoundation:material:800>, 30);
 }
 
 for slab in <ore:slabWood>.items {
-	mods.thermalexpansion.Sawmill.addRecipe(<minecraft:stick> * 3, slab, 250, <thermalfoundation:material:800>, 15);
+	scripts.wrap.thermalexpansion.Sawmill.addRecipe(<minecraft:stick> * 3, slab, 250, <thermalfoundation:material:800>, 15);
 }
 
 # Canola Oil Changes	
@@ -33,8 +33,8 @@ for slab in <ore:slabWood>.items {
 	mods.thermalexpansion.NumisticDynamo.addGemFuel(<darkutils:shulker_pearl>, 5000);
 
 # Essence of Knowledge XP Compatibility (credit RedGoblin88)
-	mods.thermalexpansion.Crucible.addRecipe(<liquid:experience> * 200, <mysticalagriculture:xp_droplet>, 4000);
-	mods.thermalexpansion.Crucible.addRecipe(<liquid:experience> * 200, <mysticalagriculture:experience_essence>, 4000);
+	scripts.wrap.thermalexpansion.Crucible.addRecipe(<liquid:experience> * 200, <mysticalagriculture:xp_droplet>, 4000);
+	scripts.wrap.thermalexpansion.Crucible.addRecipe(<liquid:experience> * 200, <mysticalagriculture:experience_essence>, 4000);
 
 # Nullifier 
 	recipes.remove(<thermalexpansion:device:1>);
@@ -60,7 +60,7 @@ for slab in <ore:slabWood>.items {
 	[<ore:gemCrystalFlux>, <tconstruct:large_plate>.withTag({Material: "electrum"}), <ore:gemCrystalFlux>]]);
 
 # Reinforced Cell Frame (Full)
-	mods.thermalexpansion.Transposer.addFillRecipe(<thermalexpansion:frame:146>, <thermalexpansion:frame:130>, <liquid:lumium> * 576, 250000);
+	scripts.wrap.thermalexpansion.Transposer.addFillRecipe(<thermalexpansion:frame:146>, <thermalexpansion:frame:130>, <liquid:lumium> * 576, 250000);
 
 # Signalum Cell Frame (Empty)
 	recipes.addShapedMirrored("Signalum Cell Frame Empty", 
@@ -70,16 +70,16 @@ for slab in <ore:slabWood>.items {
 	[<ore:plateSignalum>, <ore:crystalSlagRich>, <ore:plateSignalum>]]);
 
 # Signalum Cell Frame (Full)
-	mods.thermalexpansion.InductionSmelter.addRecipe(<thermalexpansion:frame:147>, <thermalexpansion:frame:131>, <minecraft:redstone_block> * 40, 100000);
+	scripts.wrap.thermalexpansion.InductionSmelter.addRecipe(<thermalexpansion:frame:147>, <thermalexpansion:frame:131>, <minecraft:redstone_block> * 40, 100000);
 
 # Resonant Cell Frame (Empty)
-	mods.forestry.ThermionicFabricator.addCast(<thermalexpansion:frame:132>, 
+	scripts.wrap.forestry.ThermionicFabricator.addCast(<thermalexpansion:frame:132>, 
 	[[<thermalfoundation:material:166>, <actuallyadditions:block_misc:8>, <thermalfoundation:material:166>],
 	[<thermalfoundation:glass_alloy:7>, <thermalexpansion:frame:147>, <thermalfoundation:glass_alloy:7>],
 	[<thermalfoundation:material:1028>, <thermalfoundation:material:1028>, <thermalfoundation:material:1028>]], <liquid:glass> * 4000);
 
 # Resonant Cell Frame (Full)
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<thermalexpansion:frame:148>, 
+	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<thermalexpansion:frame:148>, 
 	100000000, 1000000, 
 	<thermalexpansion:frame:132>, 
 	[<gendustry:genetics_processor>, <extrautils2:ingredients:5>, <ic2:plate:16>,
@@ -134,19 +134,19 @@ for slab in <ore:slabWood>.items {
 	[<ore:gearCopper>, <thermalfoundation:material:513>, <ore:gearCopper>]]);
 
 # Primal Mana
-	mods.tconstruct.Alloy.addRecipe(<liquid:mana> * 125, [<liquid:mirion> * 18, <liquid:osgloglas> * 18, <liquid:ic2coolant> * 125]);
+	scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:mana> * 125, [<liquid:mirion> * 18, <liquid:osgloglas> * 18, <liquid:ic2coolant> * 125]);
 
 # Mana Infused Ingot&Block
-	mods.mekanism.infuser.addRecipe("DIAMOND", 20, <botania:manaresource>, <thermalfoundation:material:136>);
-	mods.mekanism.infuser.addRecipe("DIAMOND", 160, <botania:storage>, <thermalfoundation:storage:8>);
+	scripts.wrap.mekanism.infuser.addRecipe("DIAMOND", 20, <botania:manaresource>, <thermalfoundation:material:136>);
+	scripts.wrap.mekanism.infuser.addRecipe("DIAMOND", 160, <botania:storage>, <thermalfoundation:storage:8>);
 
 # Energy Cell Frame
 	recipes.remove(<thermalexpansion:frame:128>);
-	mods.mekanism.infuser.addRecipe("REDSTONE", 400, <thermalexpansion:frame>, <thermalexpansion:frame:128>);
+	scripts.wrap.mekanism.infuser.addRecipe("REDSTONE", 400, <thermalexpansion:frame>, <thermalexpansion:frame:128>);
 
 # Machine Frame
 	recipes.remove(<thermalexpansion:frame>);
-	mods.forestry.ThermionicFabricator.addCast(<thermalexpansion:frame> * 2, 
+	scripts.wrap.forestry.ThermionicFabricator.addCast(<thermalexpansion:frame> * 2, 
 	[[<actuallyadditions:item_crystal:5>, <rftools:machine_frame>, <actuallyadditions:item_crystal:5>],
 	[<immersiveengineering:metal_decoration0:5>, <thermalexpansion:frame:64>, <actuallyadditions:block_misc:9>], 
 	[<actuallyadditions:item_crystal:5>, <teslacorelib:machine_case>, <actuallyadditions:item_crystal:5>]], 
@@ -158,37 +158,37 @@ for slab in <ore:slabWood>.items {
 
 # Redstone Reception Coil
 	recipes.remove(<thermalfoundation:material:513>);
-	mods.actuallyadditions.AtomicReconstructor.addRecipe(<thermalfoundation:material:513> * 1, <immersiveengineering:metal_decoration0>, 25000);
-	mods.mekanism.infuser.addRecipe("REDSTONE", 160, <minecraft:gold_ingot>, <thermalfoundation:material:513>);
+	scripts.wrap.actuallyadditions.AtomicReconstructor.addRecipe(<thermalfoundation:material:513> * 1, <immersiveengineering:metal_decoration0>, 25000);
+	scripts.wrap.mekanism.infuser.addRecipe("REDSTONE", 160, <minecraft:gold_ingot>, <thermalfoundation:material:513>);
 
 # Redstone Transmission Coil
 	recipes.remove(<thermalfoundation:material:514>);
-	mods.actuallyadditions.AtomicReconstructor.addRecipe(<thermalfoundation:material:514>, <immersiveengineering:wirecoil:2>, 5000);
-	mods.mekanism.infuser.addRecipe("REDSTONE", 160, <thermalfoundation:material:130>, <thermalfoundation:material:514>);
+	scripts.wrap.actuallyadditions.AtomicReconstructor.addRecipe(<thermalfoundation:material:514>, <immersiveengineering:wirecoil:2>, 5000);
+	scripts.wrap.mekanism.infuser.addRecipe("REDSTONE", 160, <thermalfoundation:material:130>, <thermalfoundation:material:514>);
 	
 # Redstone Conductance Coil
 	recipes.remove(<thermalfoundation:material:515>);
-	mods.actuallyadditions.AtomicReconstructor.addRecipe(<thermalfoundation:material:515> * 1, <immersiveengineering:metal_decoration0:1>, 25000);
-	mods.mekanism.infuser.addRecipe("REDSTONE", 160, <thermalfoundation:material:161>, <thermalfoundation:material:515>);
+	scripts.wrap.actuallyadditions.AtomicReconstructor.addRecipe(<thermalfoundation:material:515> * 1, <immersiveengineering:metal_decoration0:1>, 25000);
+	scripts.wrap.mekanism.infuser.addRecipe("REDSTONE", 160, <thermalfoundation:material:161>, <thermalfoundation:material:515>);
 
 # Removing Netherrack -> Gravel Pulverizer recipes
 	mods.thermalexpansion.Pulverizer.removeRecipe(<minecraft:netherrack>);
 
 # Making TE alloys meltable
-	mods.thermalexpansion.Crucible.addRecipe(<liquid:signalum> * 144, <thermalfoundation:material:165>, 5000);
-	mods.thermalexpansion.Crucible.addRecipe(<liquid:lumium> * 144, <thermalfoundation:material:166>, 5000);
-	mods.thermalexpansion.Crucible.addRecipe(<liquid:enderium> * 144, <thermalfoundation:material:167>, 5000);
+	scripts.wrap.thermalexpansion.Crucible.addRecipe(<liquid:signalum> * 144, <thermalfoundation:material:165>, 5000);
+	scripts.wrap.thermalexpansion.Crucible.addRecipe(<liquid:lumium> * 144, <thermalfoundation:material:166>, 5000);
+	scripts.wrap.thermalexpansion.Crucible.addRecipe(<liquid:enderium> * 144, <thermalfoundation:material:167>, 5000);
 
 # Signalum Ingots
-	mods.thermalexpansion.Transposer.addFillRecipe(<thermalfoundation:material:165>, <nuclearcraft:alloy:7>, <liquid:redstone> * 250, 5000);
-	mods.thermalexpansion.InductionSmelter.addRecipe(<nuclearcraft:alloy:7> * 4, <thermalfoundation:material:130>, <thermalfoundation:material:128> * 3, 15000);
+	scripts.wrap.thermalexpansion.Transposer.addFillRecipe(<thermalfoundation:material:165>, <nuclearcraft:alloy:7>, <liquid:redstone> * 250, 5000);
+	scripts.wrap.thermalexpansion.InductionSmelter.addRecipe(<nuclearcraft:alloy:7> * 4, <thermalfoundation:material:130>, <thermalfoundation:material:128> * 3, 15000);
 
 # Lumium Ingots
-	mods.thermalexpansion.Transposer.addFillRecipe(<thermalfoundation:material:166>, <nuclearcraft:alloy:8>, <liquid:glowstone> * 250, 5000);
-	mods.thermalexpansion.InductionSmelter.addRecipe(<nuclearcraft:alloy:8> * 4, <thermalfoundation:material:130>, <thermalfoundation:material:129> * 3, 20000);
+	scripts.wrap.thermalexpansion.Transposer.addFillRecipe(<thermalfoundation:material:166>, <nuclearcraft:alloy:8>, <liquid:glowstone> * 250, 5000);
+	scripts.wrap.thermalexpansion.InductionSmelter.addRecipe(<nuclearcraft:alloy:8> * 4, <thermalfoundation:material:130>, <thermalfoundation:material:129> * 3, 20000);
 
 # Hardened Cell Frame
-	mods.actuallyadditions.Empowerer.addRecipe(<thermalexpansion:frame:129>, <thermalexpansion:frame:128>, <immersiveengineering:material:2>, <thermalfoundation:material:354>, <thermalfoundation:material:290>, <mekanism:basicblock:8>, 2500000, 200, [0.25, 0.25, 0.29]);
+	scripts.wrap.actuallyadditions.Empowerer.addRecipe(<thermalexpansion:frame:129>, <thermalexpansion:frame:128>, <immersiveengineering:material:2>, <thermalfoundation:material:354>, <thermalfoundation:material:290>, <mekanism:basicblock:8>, 2500000, 200, [0.25, 0.25, 0.29]);
 
 # Remove creative kit crafts (no actual creative conversion kit)
 recipes.removeByRecipeName("thermalexpansion:cell_14");
@@ -307,7 +307,7 @@ craft.reshapeless(enderIngot * 2, "ABB", {
 	A: <ore:ingotPlatinum>,
 	B: <ore:dustEnder>,
 	remove: enderIngot});
-mods.mekanism.infuser.addRecipe("ENDER", 20, <ore:ingotPlatinum>, enderIngot * 2);
+scripts.wrap.mekanism.infuser.addRecipe("ENDER", 20, <ore:ingotPlatinum>, enderIngot * 2);
 
 # Remake Pulsating ender recipe
 mods.enderio.AlloySmelter.removeRecipe(<ore:ingotPulsatingIron>.firstItem);
@@ -326,7 +326,7 @@ scripts.process.fill(<enderio:item_material:39>, <liquid:ender> * 500, enderiumI
 
 # Alloy in smeltery -> Enderium ingot
 mods.tconstruct.Alloy.removeRecipe(<liquid:enderium>);
-mods.tconstruct.Alloy.addRecipe(<liquid:enderium> * 144, [<liquid:platinum> * 144,  <liquid:pulsating_iron> * 144, <liquid:ender> * 1500]);
+scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:enderium> * 144, [<liquid:platinum> * 144,  <liquid:pulsating_iron> * 144, <liquid:ender> * 1500]);
 
 
 # Clathrates rework. More output
