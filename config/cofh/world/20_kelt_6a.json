@@ -13,7 +13,7 @@
 			},
       "chunk-chance": 8,
 			"cluster-count": {"min":1, "max": 3},
-			"biome": {"restriction": "whitelist","value": [{"type": "id","entry": ["advancedrocketry:alien forest"]}]}
+			"biome": {"restriction": "whitelist","value": [{"type": "id","entry": ["advancedrocketry:alien_forest"]}]}
 		},
 		
 		"kelt6a_tree_leaves": {
@@ -31,7 +31,7 @@
 			"spread": 30,
 			"min-height": 85,
 			"max-height": 120,
-			"biome": {"restriction": "whitelist","value": [{"type": "id","entry": ["advancedrocketry:alien forest"]}]}
+			"biome": {"restriction": "whitelist","value": [{"type": "id","entry": ["advancedrocketry:alien_forest"]}]}
 		},
 		
 		"kelt6a_fruits": {
@@ -45,7 +45,7 @@
 			"cluster-count": 40,
 			"center-height": 120,
 			"spread": 30,
-			"biome": {"restriction": "whitelist","value": [{"type": "id","entry": ["advancedrocketry:alien forest"]}]}
+			"biome": {"restriction": "whitelist","value": [{"type": "id","entry": ["advancedrocketry:alien_forest"]}]}
 		},
 		
 		"kelt6a_poison_lakes": {
@@ -63,7 +63,7 @@
 			"cluster-count": 1,
 			"chunk-chance": 2,
 			"follow-terrain": false,
-			"biome": {"restriction": "whitelist","value": [{"type": "id","entry": ["advancedrocketry:alien forest"]}]}
+			"biome": {"restriction": "whitelist","value": [{"type": "id","entry": ["advancedrocketry:alien_forest"]}]}
 		},
 
 		"kelt6a_glow_shroom": {
@@ -75,7 +75,7 @@
 				"cluster-size": 3
 			},
 			"cluster-count": 100,
-			"biome": {"restriction": "whitelist","value": [{"type": "id","entry": ["advancedrocketry:alien forest"]}]}
+			"biome": {"restriction": "whitelist","value": [{"type": "id","entry": ["advancedrocketry:alien_forest"]}]}
 		}
 	}
 }
