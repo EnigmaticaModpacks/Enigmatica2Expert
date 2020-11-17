@@ -116,15 +116,15 @@
 # Storage Modules
 	recipes.remove(<rftools:storage_module>);
 	recipes.addShaped("rftools_storage_module_0", <rftools:storage_module>, [
-		[<storagedrawers:upgrade_storage:1>, null, <storagedrawers:upgrade_storage:1>],
+		[<storagedrawers:upgrade_storage:0>, null, <storagedrawers:upgrade_storage:0>],
 		[<ore:oc:materialCircuitBoardPrinted>, <ore:chest>, <ore:oc:materialCircuitBoardPrinted>],
-		[<storagedrawers:upgrade_storage:1>, null, <storagedrawers:upgrade_storage:1>]]);
+		[<storagedrawers:upgrade_storage:0>, null, <storagedrawers:upgrade_storage:0>]]);
 
 	recipes.remove(<rftools:storage_module:1>);
 	recipes.addShaped("rftools_storage_module_1", <rftools:storage_module:1>, [
-		[<storagedrawers:upgrade_storage:3>, null, <storagedrawers:upgrade_storage:3>],
+		[<storagedrawers:upgrade_storage:0>, null, <storagedrawers:upgrade_storage:0>],
 		[<ore:circuitBasic>, <rftools:storage_module>.marked("module"), <ore:circuitBasic>], 
-		[<storagedrawers:upgrade_storage:3>, null, <storagedrawers:upgrade_storage:3>]
+		[<storagedrawers:upgrade_storage:0>, null, <storagedrawers:upgrade_storage:0>]
 	], function(out, ins, cInfo) {
 		if(ins has "module" && !isNull(ins.module) && ins.module.hasTag) {
 			return out.withTag(ins.module.tag);
@@ -134,9 +134,9 @@
 
 	recipes.remove(<rftools:storage_module:2>);
 	recipes.addShaped("rftools_storage_module_2", <rftools:storage_module:2>, [
-		[<storagedrawers:upgrade_storage:4>, null, <storagedrawers:upgrade_storage:4>],
+		[<storagedrawers:upgrade_storage:1>, null, <storagedrawers:upgrade_storage:1>],
 		[<ore:circuitBoard>, <rftools:storage_module:1>.marked("module"), <ore:circuitBoard>], 
-		[<storagedrawers:upgrade_storage:4>, null, <storagedrawers:upgrade_storage:4>]
+		[<storagedrawers:upgrade_storage:1>, null, <storagedrawers:upgrade_storage:1>]
 	], function(out, ins, cInfo) {
 		if(ins has "module" && !isNull(ins.module) && ins.module.hasTag) {
 			return out.withTag(ins.module.tag);

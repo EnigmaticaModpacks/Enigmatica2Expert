@@ -63,9 +63,8 @@ function remakeDrawerUpgrade(item as IItemStack, primary as IIngredient){
 		[primary, <ore:stickWood>, primary]]);
 }
 
-remakeDrawerUpgrade(<storagedrawers:upgrade_storage>,   <ore:stoneBasalt>);
-remakeDrawerUpgrade(<storagedrawers:upgrade_storage:1>, <ore:ingotIron>);
-remakeDrawerUpgrade(<storagedrawers:upgrade_storage:2>, <ore:ingotGold>);
-remakeDrawerUpgrade(<storagedrawers:upgrade_storage:3>, <ore:ingotHardCarbon>);
-remakeDrawerUpgrade(<storagedrawers:upgrade_storage:4>, <ore:ingotVibrantAlloy>);
-
+remakeDrawerUpgrade(<storagedrawers:upgrade_storage:0>, <ore:nuggetLead>);
+remakeDrawerUpgrade(<storagedrawers:upgrade_storage:1>, <ore:nuggetEndSteel>);
+remakeDrawerUpgrade(<storagedrawers:upgrade_storage:2>, <ore:nuggetCrystallineAlloy>);
+remakeDrawerUpgrade(<storagedrawers:upgrade_storage:3>, <ore:nuggetUltimate>);
+remakeDrawerUpgrade(<storagedrawers:upgrade_storage:4>, <ore:nuggetChaoticMetal>);
