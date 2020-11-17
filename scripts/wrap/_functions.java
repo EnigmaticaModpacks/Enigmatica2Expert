@@ -236,6 +236,7 @@ mods.astralsorcery.StarlightInfusion.addInfusion(IItemStack input, IItemStack ou
 mods.astralsorcery.LightTransmutation.addTransmutation(IItemStack stackIn, IItemStack stackOut, double cost)
 mods.astralsorcery.Lightwell.addLiquefaction(IItemStack input, ILiquidStack output, float productionMultiplier, float shatterMultiplier, int colorhex)
 
+mods.extendedcrafting.CompressionCrafting.addRecipe(IItemStack output, IIngredient input, int inputCount, IIngredient catalyst, int rfCost, int rfRate)
 mods.extendedcrafting.CombinationCrafting.addRecipe(IItemStack output, long rf, int rf_t, IItemStack centerItem, IIngredient[] ingredients)
 mods.extendedcrafting.EnderCrafting.addShaped(IItemStack output, IIngredient[][] input2d)
 mods.extendedcrafting.TableCrafting.addShaped(@optional int level, IItemStack output, IIngredient[][] inputs)

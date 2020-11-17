@@ -12,48 +12,47 @@ const _ = require('lodash')
 //##############################################################
 
 /* Lookup docs string
-mods\.\w+(\.\w+){1,2}\.(?!remove)\w+\((\w|\[\w).*\)
+(?!//|#)mods\.(?!jei|JAOPCA)\w+(\.\w+){1,2}\.(?!remove)\w+\((\w|\[\w).*\)
 */
 
 
 const typeSerialize = [
-  ['WeightedItemStack'   , 'serializeWeightedItemStack($1)'  , ''],
-  ['WeightedItemStack[]' , 'serializeWeightedItemStack1d($1)', ''],
-  ['ILiquidStack'        , 'serializeFluid($1)'              , ''],
-  ['ILiquidStack[]'      , 'serializeFluids1d($1)'           , ''],
-  ['IItemStack'          , 'serialize_IItemStack($1)'        , ''],
-  ['IItemStack[]'        , 'serializeIngredients1d($1)'      , ''],
-  ['IItemStack[][]'      , 'serializeIngredients2d($1)'      , ''],
-  ['IIngredient'         , 'serialize_IIngredient($1)'       , ''],
-  ['IIngredient[]'       , 'serializeIngredients1d($1)'      , ''],
-  ['IIngredient[][]'     , 'serializeIngredients2d($1)'      , ''],
-  ['string'              , 'wrapS($1)'                       , ''],
-  ['string[]'            , 'serializeString1d($1)'           , ''],
-  ['ILiquidDefinition'   , 'serializeFluidDefinition($1)'    , ''],
-  ['IGasStack'           , 'serializeGas($1)'                , ''],
+  ['CTAspectStack'       , 'serialize_CTAspectStack($1)'     ],
+  ['CTAspectStack[]'     , 'serialize_CTAspectStack_1d($1)'  ],
+  ['IBlock'              , 'serialize_IBlock($1)'            ],
+  ['IGasStack'           , 'serializeGas($1)'                ],
+  ['IIngredient'         , 'serialize_IIngredient($1)'       ],
+  ['IIngredient[]'       , 'serializeIngredients1d($1)'      ],
+  ['IIngredient[][]'     , 'serializeIngredients2d($1)'      ],
+  ['IItemStack'          , 'serialize_IItemStack($1)'        ],
+  ['IItemStack[]'        , 'serializeIngredients1d($1)'      ],
+  ['IItemStack[][]'      , 'serializeIngredients2d($1)'      ],
+  ['ILiquidDefinition'   , 'serializeFluidDefinition($1)'    ],
+  ['ILiquidStack'        , 'serializeFluid($1)'              ],
+  ['ILiquidStack[]'      , 'serializeFluids1d($1)'           ],
+  ['IOreDictEntry'       , 'serialize_IOreDictEntry($1)'     ],
+  ['string'              , 'wrapS($1)'                       ],
+  ['string[]'            , 'serializeString1d($1)'           ],
+  ['WeightedItemStack'   , 'serializeWeightedItemStack($1)'  ],
+  ['WeightedItemStack[]' , 'serializeWeightedItemStack1d($1)'],
 
-  ['IOreDictEntry'       , 'serialize_IOreDictEntry($1)'     , ''],
-  ['IBlock'              , 'serialize_IBlock($1)'            , ''],
-  ['CTAspectStack'       , 'serialize_CTAspectStack($1)'     , ''],
-  ['CTAspectStack[]'     , 'serialize_CTAspectStack_1d($1)'  , ''],
+  ['int'    , '$1'                                           ],
+  ['bool'   , '$1'                                           ],
+  ['short'  , '$1'                                           ],
+  ['long'   , '$1'                                           ],
+  ['float'  , '$1'                                           ],
+  ['double' , '$1'                                           ],
+  ['byte'   , '$1'                                           ],
+  ['boolean', '$1'                                           ],
 
-  ['int'    , '$1'                                           , ''],
-  ['bool'   , '$1'                                           , ''],
-  ['short'  , '$1'                                           , ''],
-  ['long'   , '$1'                                           , ''],
-  ['float'  , '$1'                                           , ''],
-  ['double' , '$1'                                           , ''],
-  ['byte'   , '$1'                                           , ''],
-  ['boolean', '$1'                                           , ''],
-
-  ['int[]'    , 'serializeArray($1, "[]")'                   , ''],
-  ['bool[]'   , 'serializeArray($1, "[]")'                   , ''],
-  ['short[]'  , 'serializeArray($1, "[]")'                   , ''],
-  ['long[]'   , 'serializeArray($1, "[]")'                   , ''],
-  ['float[]'  , 'serializeArray($1, "[]")'                   , ''],
-  ['double[]' , 'serializeArray($1, "[]")'                   , ''],
-  ['byte[]'   , 'serializeArray($1, "[]")'                   , ''],
-  ['boolean[]', 'serializeArray($1, "[]")'                   , ''],
+  ['int[]'    , 'serializeArray($1, "[]")'                   ],
+  ['bool[]'   , 'serializeArray($1, "[]")'                   ],
+  ['short[]'  , 'serializeArray($1, "[]")'                   ],
+  ['long[]'   , 'serializeArray($1, "[]")'                   ],
+  ['float[]'  , 'serializeArray($1, "[]")'                   ],
+  ['double[]' , 'serializeArray($1, "[]")'                   ],
+  ['byte[]'   , 'serializeArray($1, "[]")'                   ],
+  ['boolean[]', 'serializeArray($1, "[]")'                   ],
 ]
 
 const typesAliases = [
@@ -94,9 +93,9 @@ function getSerialization(type) {
   return replStr[1]
 }
 
-//---------------------------------
+//------------------------------------------------------------------
 // Parse all avaliable functions
-//---------------------------------
+//------------------------------------------------------------------
 const signatureStrings = loadText('_functions.java')
   .replace(/\/\*[\s\S]*?\*\/|([^\\:]|^)\/\/.*$/gm, '$1') // Block comments, line comments
   .split('\n')
@@ -140,10 +139,10 @@ const signatures = signatureStrings.map(s=>{
 })
 
 
-//---------------------------------
+//------------------------------------------------------------------
 // Create data structure
 // mod{} -> class{} -> method{} -> functions[] -> 3 types of arguments {}
-//---------------------------------
+//------------------------------------------------------------------
 let rgx_mod    = new Set()
 let rgx_class  = new Set()
 let rgx_method = new Set()
@@ -199,10 +198,10 @@ signatures.forEach(sig => {
 console.log('Parsed functions: ', functionsCount, ' Including overloaded: ', overloadCount);
 
 
-//---------------------------------
+//------------------------------------------------------------------
 // Find all occurances in .zs files
 // and replace them with scripts.wrap.
-//---------------------------------
+//------------------------------------------------------------------
 let rgx =
   `^(?<before>[ 	]*(?!\/\/+|#+)[ 	]*(import )?)`+
   `(?<namespace>mods|scripts\.wrap)`+
@@ -257,9 +256,9 @@ catch (error) {
 console.log('Total replaces: ', totalReplaced);
 
 
-//---------------------------------
+//------------------------------------------------------------------
 // Write content in file
-//---------------------------------
+//------------------------------------------------------------------
 const [
   tempelate_Header,
   tempelate_ClassHead,

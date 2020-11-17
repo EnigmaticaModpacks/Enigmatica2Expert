@@ -103,23 +103,23 @@ import crafttweaker.item.IItemStack;
 
 # Increasing the price of Lapis, Redstone, Coal & Glowstone Singularities
 	mods.extendedcrafting.CompressionCrafting.remove(<extendedcrafting:singularity>);
-	mods.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity>, <minecraft:coal_block>, 10000, <extendedcrafting:material:12>, 1000000000, 1000000);
+	scripts.wrap.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity>, <minecraft:coal_block>, 10000, <extendedcrafting:material:12>, 1000000000, 1000000);
 
 	mods.extendedcrafting.CompressionCrafting.remove(<extendedcrafting:singularity:2>);
-	mods.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity:2>, <minecraft:lapis_block>, 10000, <extendedcrafting:material:12>, 1000000000, 1000000);
+	scripts.wrap.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity:2>, <minecraft:lapis_block>, 10000, <extendedcrafting:material:12>, 1000000000, 1000000);
 
 	mods.extendedcrafting.CompressionCrafting.remove(<extendedcrafting:singularity:3>);
-	mods.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity:3>, <minecraft:redstone_block>, 10000, <extendedcrafting:material:12>, 1000000000, 1000000);
+	scripts.wrap.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity:3>, <minecraft:redstone_block>, 10000, <extendedcrafting:material:12>, 1000000000, 1000000);
 
 	mods.extendedcrafting.CompressionCrafting.remove(<extendedcrafting:singularity:4>);
-	mods.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity:4>, <minecraft:glowstone>, 10000, <extendedcrafting:material:12>, 1000000000, 1000000);
+	scripts.wrap.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity:4>, <minecraft:glowstone>, 10000, <extendedcrafting:material:12>, 1000000000, 1000000);
 
 # Luminiscence made in chemical reactor and drying basin
 recipes.removeByRecipeName("extendedcrafting:luminessence");
 scripts.process.evaporate(<fluid:liquid_sunshine> * 1000, <extendedcrafting:material:7> * 2, null);
 
 # Insanium from inferium
-mods.extendedcrafting.CompressionCrafting.addRecipe(<mysticalagradditions:insanium>, 
+scripts.wrap.extendedcrafting.CompressionCrafting.addRecipe(<mysticalagradditions:insanium>, 
 <mysticalagriculture:crafting>, 1024, <mysticalagriculture:master_infusion_crystal>, 2000000, 100000);
 
 # Simplify Automating table

@@ -1,11 +1,11 @@
+import crafttweaker.block.IBlock;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
-import crafttweaker.liquid.ILiquidStack;
-import crafttweaker.liquid.ILiquidDefinition;
-import mod.mekanism.gas.IGasStack;
 import crafttweaker.item.WeightedItemStack;
+import crafttweaker.liquid.ILiquidDefinition;
+import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.oredict.IOreDictEntry;
-import crafttweaker.block.IBlock;
+import mod.mekanism.gas.IGasStack;
 import thaumcraft.aspect.CTAspectStack;
 
 #priority 3000
@@ -78,7 +78,7 @@ global serializeGas as function(IGasStack)string = function (a as IGasStack) as 
 };
 
 global serializeWeightedItemStack as function(WeightedItemStack)string = function (a as WeightedItemStack) as string {
-	return !isNull(a) ? (a.stack.commandString~'.weight('~a.percent~')') : 'null';
+	return !isNull(a) ? ('('~a.stack.commandString~').weight('~a.percent~')') : 'null';
 };
 
 global serializeWeightedItemStack1d as function(WeightedItemStack[])string = function (ss as WeightedItemStack[]) as string {
