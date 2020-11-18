@@ -209,3 +209,13 @@ scripts.process.mash(<minecraft:ender_pearl> , <extrautils2:endershard> * 8, nul
 # Blue quartz as ultimate grid user
 //mods.extrautils2.Resonator.add(IItemStack output, IItemStack input, int energy, @Optional boolean addOwnerTag);
 scripts.wrap.extrautils2.Resonator.add(<extrautils2:decorativesolid:6>, <botania:quartztypemana>, 700 * 100);
+
+# Harder Player Chest (was most easy player interface)
+craft.remake(<extrautils2:playerchest>, ["pretty",
+	"A A A",
+	"A C A",
+	"A B A"], {
+	A: <extrautils2:decorativesolid:7>,
+	B: <extrautils2:ingredients:12>,
+	C: <enderstorage:ender_storage>,
+});

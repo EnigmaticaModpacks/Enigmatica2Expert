@@ -188,15 +188,15 @@ function crushRock(input as IIngredient, output as IItemStack[], chances as floa
 
 # Takes soft or moist item, squeeze it to get liquid or another item
 # 📦 → 💧? + 📦?
-function squeeze(input as IIngredient, fluidOutput as ILiquidStack, exceptions as string, itemOutput as IItemStack) {
+function squeeze(input as IIngredient[], fluidOutput as ILiquidStack, exceptions as string, itemOutput as IItemStack) {
   
-  work(["CrushingTub"],         exceptions, [input], null, [iF(itemOutput, 0.5d)],  [lF(fluidOutput, 0.5d)],      null, null);
-  work(["Squeezer"],            exceptions, [input], null, [iF(itemOutput, 0.5d)],  [lF(fluidOutput, 0.666666d)], null, null);
-  work(["MechanicalSqueezer"],  exceptions, [input], null, [iF(itemOutput, 0.5d)],  [lF(fluidOutput, 0.75d)],     null, null);
-  work(["ForestrySqueezer"],    exceptions, [input], null, [iF(itemOutput, 0.5d)],  [lF(fluidOutput, 0.9d)],      null, null);
-  work(["TECentrifuge"],        exceptions, [input], null, [iF(itemOutput, 0.75d)], [fluidOutput], null, null);
-  work(["IndustrialSqueezer"],  exceptions, [input], null, [itemOutput], [fluidOutput], null, null);
-  work(["FluidExtractor"],      exceptions, [input], null, [itemOutput], [fluidOutput], null, null);
+  work(["CrushingTub"],         exceptions, input, null, [iF(itemOutput, 0.5d)],  [lF(fluidOutput, 0.5d)],      null, null);
+  work(["Squeezer"],            exceptions, input, null, [iF(itemOutput, 0.5d)],  [lF(fluidOutput, 0.666666d)], null, null);
+  work(["MechanicalSqueezer"],  exceptions, input, null, [iF(itemOutput, 0.5d)],  [lF(fluidOutput, 0.75d)],     null, null);
+  work(["ForestrySqueezer"],    exceptions, input, null, [iF(itemOutput, 0.5d)],  [lF(fluidOutput, 0.9d)],      null, null);
+  work(["TECentrifuge"],        exceptions, input, null, [iF(itemOutput, 0.75d)], [fluidOutput], null, null);
+  work(["IndustrialSqueezer"],  exceptions, input, null, [itemOutput], [fluidOutput], null, null);
+  work(["FluidExtractor"],      exceptions, input, null, [itemOutput], [fluidOutput], null, null);
 }
 
 # Solute (mix, dissolve) 1+ items in 1+ liquids to get new 1+ liquids

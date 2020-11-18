@@ -121,3 +121,11 @@ saw(<iceandfire:dreadwood_log>      , <iceandfire:dreadwood_planks>      , "no e
 
 # Spectre Wood compat
 saw(<randomthings:spectrelog>, <randomthings:spectreplank>, "strict: manufactory mekSawmill");
+
+# Sawdust compat
+// mods.mekanism.sawmill.removeRecipe(<ore:stickWood>);
+mods.mekanism.sawmill.removeRecipe(<ore:plankWood>);
+mods.mekanism.sawmill.removeRecipe(<ore:slabWood>);
+scripts.wrap.mekanism.sawmill.addRecipe(<ore:stickWood>, <thermalfoundation:material:800>);
+scripts.wrap.mekanism.sawmill.addRecipe(<ore:plankWood>, <minecraft:stick> * 6, <thermalfoundation:material:800>, 0.25d);
+scripts.wrap.mekanism.sawmill.addRecipe(<ore:slabWood> , <minecraft:stick> * 3, <thermalfoundation:material:800>, 0.25d / 2.0d);

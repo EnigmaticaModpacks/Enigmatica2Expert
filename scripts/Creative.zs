@@ -84,7 +84,7 @@ var list = {
 	"◙": <compactsolars:compact_solar_block:2>,
 	"ж": <draconicevolution:awakened_core>,
 	"Ж": <draconicevolution:draconium_capacitor:1>,
-	"☑": <draconicevolution:draconium_chest>,
+	"☑": <threng:material:14>, # Speculative Processor
 	"☠": <extendedcrafting:material:13>,
 	"ⱋ": <extracells:storage.component:3>,
 	"☒": <extrautils2:compressedcobblestone:7>,
@@ -115,7 +115,6 @@ var list = {
 	"▢": <ore:plateElite>,
 	"◽": <thermalexpansion:frame:148>,
 	"♠": Bucket("ic2uu_matter"),
-	"♣": Bucket("rocket_fuel"),
 } as IIngredient[string];
 
 
@@ -255,10 +254,11 @@ craft.make( <rats:rat_upgrade_creative>, ["pretty",
 # Creative Gas Tank
 list["η"] = <avaritia:resource:4>;
 list["ι"] = <bloodmagic:blood_tank:15>;
-list["◴"] = <thermalexpansion:tank>.withTag({Fluid: {FluidName: "neutron"  , Amount: 128000}, Level: 1 as byte});
-list["◵"] = <thermalexpansion:tank>.withTag({Fluid: {FluidName: "mana"     , Amount: 128000}, Level: 1 as byte});
-list["◶"] = <thermalexpansion:tank>.withTag({Fluid: {FluidName: "amber"    , Amount: 128000}, Level: 1 as byte});
-list["◷"] = <thermalexpansion:tank>.withTag({Fluid: {FluidName: "liquiddna", Amount: 128000}, Level: 1 as byte});
+list["◴"] = Bucket("helium3");
+list["◵"] = Bucket("tritium");
+list["◶"] = Bucket("fluegas");
+list["◷"] = Bucket("aerotheum");
+list["♣"] = Bucket("vapor_of_levity");
 list["μ"] = creativeGasTankFrame;
 list["⫳"] = <advgenerators:turbine_enderium>;
 
@@ -291,7 +291,7 @@ mods.jei.JEI.addItem(creativeFluidTankFrame);
 // 25 buckets of liquids
 var fluidFrameIngr = [] as IIngredient[];
 for fname in [
-	"milk_goat"   , "helium3"       , "aerotheum"   , "tritium"           , "mutagen"    ,
+	"milk_goat"   , "for.honey"     , "amber"       ,"blockfluidantimatter","mutagen"    ,
 	"biomass"     , "empoweredoil"  , "witchwater"  , "xu_demonic_metal"  , "essence"    ,
 	"draconium"   , "sewage"        , "pyrotheum"   , "ic2pahoehoe_lava"  , "liquiddna"  ,
 	"corium"      , "essence"       , "juice"       , "ender"             , "cryotheum"  ,
@@ -445,10 +445,10 @@ list["τ"] = <notenoughrtgs:rtg_californium_compact>;
 list["⁴"] = <environmentaltech:solar_cont_4>;
 list["⁵"] = <environmentaltech:solar_cont_5>;
 list["⁶"] = <environmentaltech:solar_cont_6>;
-list["⫲"] = <extrautils2:rainbowgenerator>;
+list["⫲"] = <extrautils2:decorativesolid:8>;
 list["V"] = <ic2:te:22>;
 list["W"] = <mekanismgenerators:reactor>;
-list["X"] = <extrautils2:decorativesolid:8>;
+list["X"] = <tconevo:metal_block:1>;
 list["■"] = <draconicevolution:fusion_crafting_core>;
 list["κ"] = <extrautils2:decorativesolid:6>;
 

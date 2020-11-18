@@ -3,105 +3,88 @@
 ## Finished
 
 -----------
-- 🧩 [x] Random Tweaks
-- ✏️ [x] Botania Runes uses
-- 🧩 [x] Remap New tconevo materials to tool levels
-- 🧩 [x] More blocks according to mining levels
-- 🧩 [x] Review melting temperatures for liquids (higher temperature for most of them)
-- ✏️ [x] Botania Saplings cycling
-- 🔴 [x] Backpack
-- 🔴 [x] Thermal Cultivation
-- 🔴 [x] Blockcraftery
-- 🔴 [x] Iron Chests
-- 🔴 [x] NoNightVisionFlashing
-- ✏️ [x] Icecream oredict fix tofu
-- 🌿 [x] PatchouliJS current documentation
-- ✏️ [x] Botania Remove Elementium tools
-- 🔷 [x] Rename Terrestial -> Terrestrial
-- 🔷 [x] Remake creatures drop items (ember root)
-- ✏️ [x] Harder Cyclic Storage Bag
-- 🔨 [x] Jump modifier. Jumps.zs should store jump amount (but why?)
-- 🔷 [x] Fix XML recipes missed inputs (crystalline ingor in electric arc for example)
-- 🔨 [x] CoT Traits (Tweakerconstruct cant handle them)
-- 🔷 [x] Quark tallow uses
-- 🔷 [x] Processed cheese material (molten cheese, molten cheese rivers in Ratlantis)
-- 🔷 [x] Buff Forestry engines x1.5
-- ⚙️ [x] Melting Blacklist for benefication
-- 🔨 [x] Tweak TConEvo energy usage
-- ✏️ [x] Harder Compact Machines
-- ✏️ [x] Harder Genetic Labware
-- 🧩 [x] Blood Magic Falling Tower tweaks
-- 🟢 [x] Fluid Drawers
-- ✏️ [x] Cave crystals from colored glass
-- 🟢 [x] Better Hurt Timers (mobs do not deals damage)
-- 🧱 [x] Magic Ore Processing
-- 🌿 [x] Patchouli unwrap subcategories
-- 🟢 [x] Male milking
-
+- 🟢 [x] Gotta Go Fast
+- ⚙️ [x] Supercooled ice compat
+- ✏️ [x] Creative Vending swap Draconium chests for Specilative Processor
+- ✏️ [x] Harder Botania's Magnet Ring
+- ✏️ [x] Creative RF Cube remove rainbow generators from input
+- ✏️ [x] Molten Lapis Cast, Molten Quartz
+- ✏️ [x] Raise Cooling Rate for useless NC active coolers
+- ✏️ [x] Remake Scoot-Covered Plate with right type of quartz
+- 🟡 [x] Better Hurt Timer
+- ⚙️ [x] Construction Foam Unify
+- ✏️ [x] Add Salis Mundis Recipe (now its hudden)
+- 📖 [x] BQ Give bucket of fuel as rewart to encourage fluids research
+- ✏️ [x] Remake Immersive slabs
+- 🌍 [x] Fix Alien Forest Dissapear
+- ⚙️ [x] Lower AE Grindstone double output (its 100% sometimes now)
+- ⚙️ [x] Return Ender dust Compat
+- ✏️ [x] Change Excavator Craft (swap little balls)
+- ✏️ [x] Hardened Ice (from MA essence, from packed ice, from compressor) -> Ice Balls
+- ✏️ [x] Simplify Infinity Catalyst (or Infinity Ingot)
+- ✏️ [x] Unifi Molten Infinity (remove Plustic version from NC melter)
+- 🧩 [x] Drawers more levels for storage upgrades
+- ✏️ [x] Simplify Ender Energy manipulator
+- ✏️ [x] Slime Cube easier
+- ✏️ [x] EU2 Harder Player Interface
+- ✏️ [x] Dry milk
+- 🧩 [x] Allow pulp from Hammer but change pulp uses. Unify dustWood
+- 🧩 [x] Dimlet: Quark
+- 🧩 [x] Ender swords increase damage on IV
+- 𝓩𝒮 [x] Random Things Change drops of bean pod
 
 ## Planned
 
 -----------
 
 - 🟢 [ ] Biome Tweaker (make planets ground higher, deep ocean biomes)
-- 🟢 [ ] Gotta Go Fast
+- 🟢 [ ] Foliage color
+- 🟡 [ ] Dynamics Surroundings return Animania Back
 - 💥 [ ] Uses of singularities
 - 💥 [ ] New 🐝 for endgame
 - 💥 [ ] **Rats** Structures Generation
+- ✏️ [x] Change Creative Gas ingredients (remove items with NBT)
+- ✏️ [x] Creative Fluid Tank no `mekData:{}`
+- ✏️ [x] Easier Rat Chief upgrade (apple is too pricy after crystal nerfing)
+- ✏️ [X] IC2 Solar Precision Assembler
+- ✏️ [x] Sawdust Compat
+- 🔨 [ ] Use JEI search for mining levels to tweak it
+- 🔨 [ ] Nerf Aquamarine mining level
+- 🔨 [ ] Nerf Osgloglas
 - 🔨 [ ] TCon tools recycle
-- 🔷 [ ] Reload JER world data
-- 🔷 [ ] Fix Alien Forest Dissapear
-- 🔷 [ ] New AdvRocke atmospheres
-- 🔷 [ ] Matter Condenser uncraftable
-- 🔷 [ ] Creative Cube in book change to charged variant
-- 🔷 [ ] Creative Gas in book change NBT
-- 🔷 [ ] E2E book to Akashik
-- 🔷 [ ] Chemical reactor can supply up to 200k RF/t
-- 🔷 [ ] Supercooled ice compat
-- 🔷 [ ] Inductions remake
-- 🔷 [ ] Compacting Drawer Clearing
-- 🔷 [ ] Cant Craft Solar tier4 (tier3 cant be recognisable)
-- 🔷 [ ] Open Blocks tank clearing
-- 🔷 [ ] IC2 Solar craft change (unable to automate in AE)
-- 🔷 [ ] Tinker's tanks clearing
-- 🔷 [ ] Vitium crystal in potion change required tags
-- 🔷 [ ] Mystical creations essence to tiered oredict
-- 🔷 [ ] Ender swords increase damage on IV
-- 🔷 [ ] Dimlet: Quark
-- 🔷 [ ] Black Quartz Cluster outputs nothing
-- 🔷 [ ] Make Blood Stone Stackable
-- 🔷 [ ] Ice Balls stack up to 64
-- 🔷 [ ] Make Draconic Armor symmetrical
-- 🔷 [ ] Remove Unoredicted recip of glass panes
-- 🔷 [ ] Remove Useless NC recipes (for example enriching depleted fuel with salt)
-- 🔷 [ ] Drawers more levels for storage upgrades
-- 🔷 [ ] Renema Diamond Lattice back
-- 🔷 [ ] IC2 Coolant Wont be consumed in salt reactor
-- 🔷 [ ] Enrichment Chamber gives wrong dusts
-- 🔷 [ ] Hardened Ice (from MA essence, from packed ice, from compressor) -> Ice Balls
-- 🔷 [ ] Phased Field Generator in QuestBook (remove NBT)
-- 🔷 [ ] Increase Creative RF Cube output, remove rainbow generators from input
-- 🔷 [ ] Remake Scoot-Covered Plate with right type of quartz
-- 🔷 [ ] Harder Botania's Magnet Ring
-- 🔷 [ ] Full Resonant Tank wont clear
-- 🔷 [ ] Diamond Lattice in crafts
-- 🔷 [ ] Creative Fluid Tank -> Full container recipes (probably hidden)
-- 🔷 [ ] Change Creative Gas ingredients (remove items with NBT)
-- 🔷 [ ] Blood Magic Runes tip
-- 🔷 [ ] Printed Page tooltip
-- 🔷 [ ] Molten Lapis Cast, Molten Quartz
-- 🔷 [ ] Construction Foam Unify
-- 🔷 [ ] Creative Vending swap Draconium chests for something else
-- 🔷 [ ] Simplify Ender Energy manipulator
-- 🔷 [ ] Unifi Molten Infinity (remove Plustic version from NC melter)
-- 🔷 [ ] Simplify Infinity Catalyst (or Infinity Ingot)
-- 🔷 [ ] Raise Cooling Rate for useless NC active coolers
-- 🔷 [ ] Merge E2E-v2
-- 🔷 [ ] Nerf Osgloglas
-- 🔷 [ ] Nerf Aquamarine mining level
-- 🔷 [ ] Allow pulp from Hammer but change pulp uses
-- 🔷 [ ] Remove TCon Clear Glass from chisel
-- 🔷 [x] Liquid Concrete setted to infinite
+- 🧩 [x] More radiactive blocks
+- 💥 [ ] Merge E2E-v2
+- 📖 [ ] BQ Osmium mining level alternatives
+- 📖 [ ] Creative Cube in book change to charged variant
+- 📖 [ ] Creative Gas in book change NBT
+- 📖 [ ] Give Osmium scanner card on previous mining level
+- 📖 [ ] Phased Field Generator in QuestBook (remove NBT)
+- 📖 [ ] Gift Animal Baits in animals chapter
+- 📖 [ ] Ember Root Boss to book
+- 📖 [ ] CF Sprayer way earlier
+- 𝓩𝒮 [ ] Black Quartz Cluster outputs nothing
+- 𝓩𝒮 [ ] Blood Magic Runes tip
+- 𝓩𝒮 [ ] Chemical reactor can supply up to 200k RF/t
+- 𝓩𝒮 [ ] Compacting Drawer, Open Blocks tank, Tinker's tanks Clearing
+- 𝓩𝒮 [ ] Enrichment Chamber gives wrong dusts
+- 𝓩𝒮 [ ] Full Resonant Tank wont clear
+- 𝓩𝒮 [ ] IC2 Coolant Wont be consumed in salt reactor
+- 𝓩𝒮 [ ] Ice Balls stack up to 64
+- 𝓩𝒮 [ ] Inductions remake
+- 𝓩𝒮 [ ] Make Blood Stone Stackable
+- 𝓩𝒮 [ ] Make Draconic Armor symmetrical
+- 𝓩𝒮 [ ] Mystical creations essence to tiered oredict
+- 𝓩𝒮 [ ] Printed Page tooltip
+- 𝓩𝒮 [ ] Remove TCon Clear Glass from chisel
+- 𝓩𝒮 [ ] Remove Unoredicted recipe of glass panes
+- 𝓩𝒮 [ ] Remove Useless NC recipes (for example enriching depleted fuel with salt)
+- 𝓩𝒮 [ ] Rename Diamond Lattice back
+- 𝓩𝒮 [ ] Vitium crystal in potion change required tags
+- 𝓩𝒮 [x] Liquid Concrete setted to infinite
+- ✏️ [ ] Remake "Animal" recipes to use Bee's instead of machines (alter recipes or use bee's ingrs)
+- ✏️ [ ] 4 Singularity => Creative bin
+- 🌍 [ ] Reload JER world data
+- ✏️ [ ] Matter Condenser uncraftable
 
 
 ### Do after process.zs class rework:
@@ -120,7 +103,6 @@
 - ⚙️ [ ] Chained crafting (Solar Panels in precision assembler)
 - ⚙️ [ ] Ingredients with chance should multiplied if chance > 1.0
 - ⚙️ [ ] Use Rat Diamond in most machines
-- ⚙️ [ ] Lower AE Grindstone double output (its 100% sometimes now)
 
 ## Long-term
 
@@ -139,6 +121,9 @@
 - 🔷 [ ] Wrong Uranium in oredict
 - 🌿 [ ] Patchouli book texture
 - 🔷 [ ] Magic processing byproducts
+- ⚙️ [ ] Unify Black quartz
+- ✏️ [ ] Cant Craft Solar tier4 (tier3 cant be recognisable)
+- 🌍 [ ] New AdvRocke atmospheres
 
 
 ## Unused TC traits
@@ -174,29 +159,26 @@
 -----------
 
 - <contenttweaker:compressed_ender>
-- <advancedrocketry:misc:1> <!-- Carbon plate -->
-- <extrautils2:decorativesolid:6> <!-- Blue Quartz -->
-- <actuallyadditions:item_dust:3> <!-- Emerald Dust -->
+- <advancedrocketry:misc:1>             <!-- Carbon plate -->
+- <extrautils2:decorativesolid:6>       <!-- Blue Quartz -->
+- <actuallyadditions:item_dust:3>       <!-- Emerald Dust -->
 - <draconicevolution:draconium_block:1> <!-- Charged Draconium -->
-- ✏️ Flux to early crafts
+- <fluxnetworks:flux> <!-- Flux -->
+- <enderio:item_material:75> <!-- Infinity Reagent -->
+- <twilightforest:firefly> <!-- Firefly -->
 - ✏️ More mechanics explosions
 - ✏️ More using for fluid Latex
 - ✏️ Plasma to craft
 - ✏️ To Crafts pile of neutronium
 - ✏️ Topaz To Crafts
 - ✏️ IC2 liquids to craft
-- ✏️ Forestry Phosphor
-- ✏️ Infinity Reagent
 - ✏️ Crystallized Obsidian
 - ✏️ Forestry's Carton
 - Bibliocraft Printing Press
-- TwiFrst Firefly
 - Iridium Rod
 - Titan-Alum rod
 - Titan-Alum Sheet
 - Spectre Illuminator
-- End Stone Dust
-- Rare Earth
 - Ectoplasm
 - Blood Stone
 - Nano-Particles
@@ -212,11 +194,10 @@
 ---------------------
 ITEMS OF INTEREST
 ---------------------
+<avaritia:resource> -- Diamond Lattice
 <botania_tweaks:compressed_tiny_potato_7>
 <twilightforest:castle_door:*>
-<twilightforest:firefly>
-<twilightforest:raw_venison>
-<twilightforest:cooked_venison>
+
 <randomthings:spectreilluminator>
 
 <bibliocraft:enchantedplate>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 0 as short}]})

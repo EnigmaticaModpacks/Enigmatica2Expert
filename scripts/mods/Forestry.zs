@@ -1,6 +1,6 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
-
+import crafttweaker.item.IIngredient;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded forestry
 
@@ -148,48 +148,25 @@ for thing in thingsToferment {
     }
 }
 
-# *======= Moisterner =======*
-
-//mods.forestry.Moistener.addRecipe(IItemStack output, IItemStack input, int packagingTime); 
-#mods.forestry.Moistener.addRecipe(<minecraft:mycelium>, <minecraft:grass>, 60); 
-
-//mods.forestry.Moistener.removeRecipe(IIngredient output);
-#mods.forestry.Moistener.removeRecipe(<minecraft:stonebrick:1>);
-
-# *======= Squeezer =======*
-
-//mods.forestry.Squeezer.addRecipe(ILiquidStack fluidOutput, IItemStack[] ingredients, int timePerItem, @Optional WeightedItemStack itemOutput);
-//mods.forestry.Squeezer.addRecipe(<liquid:lava>, <minecraft:redstone>, 120);
-#mods.forestry.Squeezer.addRecipe(<liquid:lava>, <minecraft:obsidian>, 120, <minecraft:redstone> % 20);
-
-//mods.forestry.Squeezer.removeRecipe(ILiquidStack liquid, @Optional IIngredient[] ingredients);
-#mods.forestry.Squeezer.removeRecipe(<liquid:juice>);
-#mods.forestry.Squeezer.removeRecipe(<liquid:seed.oil>, [<minecraft:wheat_seeds>]);
-
 #Make melons give fruit juice
 scripts.wrap.forestry.Squeezer.addRecipe(<liquid:juice> * 15, [<minecraft:melon>], 8);
 
-# *======= Still =======*
+# Remove and hide charcoal block
+rh(<forestry:charcoal>);
 
-//mods.forestry.Still.addRecipe(ILiquidStack fluidOutput, ILiquidStack fluidInput, int timePerUnit);
-#mods.forestry.Still.addRecipe(<liquid:lava>, <liquid:water>, 200);
+# Phosphor as melting mechannics
+for input,output in {
+	<ore:dustPyrotheum>      : <fluid:pyrotheum> * 250,
+	<ore:dustCryotheum>      : <fluid:cryotheum> * 250,
+	<ore:dustAerotheum>      : <fluid:aerotheum> * 250,
+	<ore:dustPetrotheum>     : <fluid:petrotheum> * 250,
+	<ore:blockRedstone>      : <fluid:redstone> * 900,
+	<ore:glowstone>          : <fluid:glowstone> * 1000,
+	<ore:materialEnderPearl> : <fluid:ender> * 250,
+} as ILiquidStack[IIngredient]  {
+	scripts.process.squeeze([<forestry:phosphor>, input], output, "No Exceptions", null);
+}
 
-//mods.forestry.Still.removeRecipe(ILiquidStack output, @Optional ILiquidStack fluidInput);
-#mods.forestry.Still.removeRecipe(<liquid:bio.ethanol>);
-#mods.forestry.Still.removeRecipe(<liquid:refinedcanolaoil>,<liquid:canolaoil>);
-
-# *======= Thermionic Fabricator =======*
-
-//mods.forestry.ThermionicFabricator.addCast(IItemStack output, IIngredient[][] ingredients, ILiquidStack liquidStack, @Optional IItemStack plan);
-#mods.forestry.ThermionicFabricator.addCast(<minecraft:glass_pane> * 4, [[<minecraft:dirt>,null,null],[null,null,null],[null,null,null]], <liquid: glass> * 200);
-#mods.forestry.ThermionicFabricator.addCast(<minecraft:stained_glass:3>, [[<ore:dyeLightBlue>,null,null],[null,null,null],[null,null,null]], <liquid: glass> * 144, <forestry:wax_cast>);
-
-//mods.forestry.ThermionicFabricator.removeCast(IIngredient product);
-#mods.forestry.ThermionicFabricator.removeCast(<forestry:thermionic_tubes:5>);
-
-//mods.forestry.ThermionicFabricator.addSmelting(ILiquidStack liquidStack, IItemStack itemInput, int meltingPoint);
-#mods.forestry.ThermionicFabricator.addSmelting(<liquid:glass> * 120, <minecraft:stone>, 500);
-
-//mods.forestry.ThermionicFabricator.removeSmelting(IIngredient itemInput);
-#mods.forestry.ThermionicFabricator.removeSmelting(<minecraft:sand>);
-
+# Remove pulp recipe
+mods.forestry.Carpenter.removeRecipe(<forestry:wood_pulp>);
+scripts.wrap.forestry.Carpenter.addRecipe(<thermalfoundation:material:800>, [[<ore:logWood>]], 40, <liquid:water> * 250);

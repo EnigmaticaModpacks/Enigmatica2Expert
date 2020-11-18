@@ -232,5 +232,17 @@
       "chance": 1.0,
       "fortuneChance": 0.0
     }
+  ],
+  "ore:logWood": [
+    {
+      "stack": {
+        "name": "thermalfoundation:material",
+        "amount": 2,
+        "meta": 800
+      },
+      "miningLevel": 0,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
   ]
 }

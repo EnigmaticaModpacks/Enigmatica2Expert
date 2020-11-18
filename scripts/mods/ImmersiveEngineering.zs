@@ -1,4 +1,5 @@
 import mods.jei.JEI.removeAndHide as rh;
+import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.alfinivia.ImmersiveEngineering.addChemthrowerEffect;
 import mods.alfinivia.ImmersiveEngineering.addRailgunBullet;
@@ -377,3 +378,19 @@ addChemthrowerEffect(<liquid:milk_chocolate>         , false, false, "onFire", 0
 mods.immersiveengineering.Thermoelectric.addTemperatureSource(<nuclearcraft:block_ice>,        50);
 mods.immersiveengineering.Thermoelectric.addTemperatureSource(<ore:blockFiery>,              5000);
 mods.immersiveengineering.Thermoelectric.addTemperatureSource(<ore:blockLudicrite>,          9900);
+
+
+# ----------------------------------------
+# Slabs from oredicted resources
+for block, slab in {
+	<ore:blockCopper>     : <immersiveengineering:storage_slab>,
+	<ore:blockAluminum>   : <immersiveengineering:storage_slab:1>,
+	<ore:blockLead>       : <immersiveengineering:storage_slab:2>,
+	<ore:blockSilver>     : <immersiveengineering:storage_slab:3>,
+	<ore:blockNickel>     : <immersiveengineering:storage_slab:4>,
+	<ore:blockConstantan> : <immersiveengineering:storage_slab:6>,
+	<ore:blockElectrum>   : <immersiveengineering:storage_slab:7>,
+	<ore:blockSteel>      : <immersiveengineering:storage_slab:8>,
+} as IItemStack[IIngredient] {
+	craft.remake(slab * 6, ["AAA"], {A: block});
+}

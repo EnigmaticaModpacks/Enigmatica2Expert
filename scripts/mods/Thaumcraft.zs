@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IIngredient as IIngredient;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded thaumcraft
 
@@ -107,3 +108,22 @@ scripts.wrap.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreLead>, <thermalfo
 	[[null, <astralsorcery:itemrockcrystalsimple>.anyDamage(), <astralsorcery:itemrockcrystalsimple>.anyDamage()],
 	[null, <astralsorcery:itemrockcrystalsimple>.anyDamage(), <astralsorcery:itemrockcrystalsimple>.anyDamage()], 
 	[<ore:stickTreatedWood>, null, null]]);
+
+# Salis Mundis visible recipe (original is hidden in JEI)
+craft.make(<thaumcraft:salis_mundus>, ["DEFCAB"], {
+	A: <ore:itemFlint>.reuse(),
+	B: <minecraft:bowl>.reuse(),
+	C: <ore:dustRedstone>,
+	D: <thaumcraft:crystal_essence:*>.marked("g0"),
+	E: <thaumcraft:crystal_essence:*>.marked("g1"),
+	F: <thaumcraft:crystal_essence:*>.marked("g2"),
+	}, function(out, ins, cInfo) {
+    for i in 0 to 2 {
+      for j in (i+1) to 3 {
+        if (ins["g"~i] has ins["g"~j]) {
+          return null; # We found duplicate, return nothing
+        }
+      }
+    }
+    return out;
+  }, true /* True for shapeless */);

@@ -225,13 +225,6 @@ ScrapBox.addDrop(<forestry:chipsets:3>.withTag({T:3 as short}), 0.01F);
 # Energy crystal compat
 scripts.process.compress(<ic2:dust:6> * 9, <ic2:energy_crystal:27>, "except: compressor");
 
-# Simplify Solar panel
-recipes.remove(<ic2:te:8>);
-recipes.addShaped(<ic2:te:8>, [
-	[<ore:blockGlassColorless>, <ore:dustCoal>, <ore:blockGlassColorless>],
-	[<ore:plateIron>, <ic2:re_battery:26>.anyDamage(), <ore:plateIron>],
-	[<ore:plateIron>, <ore:circuitBasic>, <ore:plateIron>]]);
-
 # Harder wooden box
 craft.remake(<ic2:te:111>, ["pretty",
 		"A B A",
@@ -241,3 +234,20 @@ craft.remake(<ic2:te:111>, ["pretty",
 	B: <ore:plankWood>,
 	C: <quark:iron_button>,
 	});
+
+# Construction foam
+# Remove CF Powder but replace it with Building Gadget's powder
+scripts.process.solution([<buildinggadgets:constructionpaste>], [<fluid:water> * 4000], [<fluid:ic2construction_foam> * 4000], null, "Except: highoven");
+
+# Solar panel batch crafting
+scripts.processUtils.avdRockXmlRecipe(
+	"PrecisionAssembler", [
+	<ore:blockGlass> * 24,
+	<ore:itemRubber> * 40,
+	<ore:blockIron> * 30,
+	<ore:ingotCopper> * 32,
+	<ore:ingotAluminum> * 32,
+	<ore:ingotTin> * 24,
+	<ore:dustRedstone> * 48,
+	<ore:itemCoal> * 32,
+], null, [<ic2:te:8> * 8], null);

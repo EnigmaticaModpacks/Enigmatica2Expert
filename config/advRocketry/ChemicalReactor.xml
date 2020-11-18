@@ -147,6 +147,17 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Construction Foam] from [Construction Paste+] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>buildinggadgets:constructionpaste 1 0</itemStack>
+			<fluidStack>water 4000</fluidStack>
+		</input>
+		<output>
+			<fluidStack>ic2construction_foam 4000</fluidStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Molten Refined Obsidian] from [Pulverized Obsidian+] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -177,6 +188,17 @@
 		</input>
 		<output>
 			<fluidStack>sand 1000</fluidStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Milk] from [Milk Powder+] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>ic2:dust 1 33</itemStack>
+			<fluidStack>water 250</fluidStack>
+		</input>
+		<output>
+			<fluidStack>milk 250</fluidStack>
 		</output>
 	</Recipe>
 </Recipes>

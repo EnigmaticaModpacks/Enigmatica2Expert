@@ -11,7 +11,7 @@ recipes.addShaped(<deepmoblearning:glitch_infused_sword>, [
 recipes.remove(<deepmoblearning:soot_covered_plate> * 8);
 recipes.addShaped(<deepmoblearning:soot_covered_plate> * 4, [
   [null, <deepmoblearning:soot_covered_redstone>, null],
-  [<biomesoplenty:crystal>, <tconstruct:large_plate>.withTag({Material: "blackquartz"}), <biomesoplenty:crystal>],
+  [<biomesoplenty:crystal>, <tconstruct:large_plate>.withTag({Material: "black_quartz"}), <biomesoplenty:crystal>],
   [null, <deepmoblearning:soot_covered_redstone>, null]]);
 
 remakeEx(<deepmoblearning:extraction_chamber>, [

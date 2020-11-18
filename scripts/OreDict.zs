@@ -218,9 +218,9 @@ for item in pressurePlates {
 	fertilizer.add(<forestry:fertilizer_compound>);
 	
 # Sawdust compat
-	<ore:pulpWood>.add(<excompressum:wood_chippings>);
 	<ore:pulpWood>.add(<thermalfoundation:material:800>);
-	<ore:dustWood>.add(<forestry:wood_pulp>);
+	<ore:pulpWood>.remove([<mekanism:sawdust>, <forestry:wood_pulp>]);
+	<ore:dustWood>.remove([<mekanism:sawdust>, <excompressum:wood_chippings>]);
 	
 # Diamond Chip
 	<ore:nuggetDiamond>.add(<opencomputers:material:29>);
@@ -704,3 +704,9 @@ for item in loadedMods["jaopca"].items {
   if(item.definition.id.matches("jaopca:item_hunk\\w+")) 
     removeHunkOre(item);
 }
+
+# Any Myrmex Resin
+<ore:blockMyrmexResin>.addItems([<iceandfire:myrmex_desert_resin_block>, <iceandfire:myrmex_jungle_resin_block>]);
+	
+# Milk powder as milk
+<ore:listAllmilk>.addItems([<ic2:dust:33>]);

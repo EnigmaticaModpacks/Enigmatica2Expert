@@ -214,3 +214,7 @@ scripts.wrap.industrialforegoing.SludgeRefiner.add(<thaumcraft:nugget:10>, 10);
 
 # Fluid Extractor
 scripts.wrap.industrialforegoing.Extractor.add(<integrateddynamics:menril_log>, <fluid:menrilresin> * 5);
+
+# Stackable black hole tanks
+<industrialforegoing:black_hole_unit>.maxStackSize = 64;
+<industrialforegoing:black_hole_tank>.maxStackSize = 64;

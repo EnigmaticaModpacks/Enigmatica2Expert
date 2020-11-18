@@ -18,7 +18,7 @@ recipes.addShaped("ender_bucket2",
 mods.inworldcrafting.FluidToItem.transform(<randomthings:rezstone>, <fluid:lifeessence>, [<extrautils2:ingredients:5>]);
 
 # Precious emerald from emerald in blueslime
-mods.inworldcrafting.FluidToItem.transform(<randomthings:ingredient:9>, <fluid:blueslime>, [<ore:oreEmerald>]);
+mods.inworldcrafting.FluidToItem.transform(<randomthings:ingredient:9> * 2, <fluid:blueslime>, [<ore:oreEmerald>]);
 
 # Floo dust
 remakeEx(<randomthings:ingredient:7>*8, [
@@ -147,3 +147,33 @@ recipes.addShaped("Spectre Saplings", <randomthings:spectresapling> * 10, [
 
 # Oxygen bottle
 scripts.wrap.thermalexpansion.Transposer.addFillRecipe(<randomthings:bottleofair>, <minecraft:glass_bottle>, <liquid:oxygen> * 1000, 25000);
+
+# Lesser Magic Bean
+craft.remake(<randomthings:beans:1>, ["pretty",
+	"x x x",
+	"x O x",
+	"x x x"], {
+	x: <ore:blockGold>,
+	O: <ore:cropBean>,
+});
+
+# Player Interface (used Nether Star)
+craft.remake(<randomthings:playerinterface>, ["pretty",
+	"B A B",
+	"B O B",
+	"B C B"], {
+	A: <cyclicmagic:ender_eye_orb>,
+	C: <randomthings:ingredient:9>,
+	O: <enderstorage:ender_storage>,
+	B: <fluxnetworks:flux>,
+});
+
+
+# Slime cube simplify (used Nether Star)
+craft.remake(<randomthings:slimecube>, ["pretty",
+	"B B B",
+	"B A B",
+	"B B B"], {
+	A: <ore:blockKnightslime>,
+	B: <ore:slimecrystalGreen>,
+});

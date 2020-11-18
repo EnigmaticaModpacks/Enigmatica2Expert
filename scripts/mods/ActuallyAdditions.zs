@@ -356,7 +356,7 @@ recipes.addShaped(<actuallyadditions:block_greenhouse_glass> * 3, [
 # Black quartz
 val crushExceptions = "except: IECrusher SagMill Pulverizer AACrusher MekCrusher";
 scripts.process.crush(<ore:gemQuartzBlack>, <actuallyadditions:item_dust:7>, crushExceptions, null, null);
-scripts.process.crush(<ore:blockBlackQuartz>, <actuallyadditions:item_dust:7> * 9, crushExceptions ~ " Manufactory", null, null);
+scripts.process.crush(<ore:blockBlackQuartz>, <actuallyadditions:item_dust:7> * 4, crushExceptions ~ " Manufactory", null, null);
 
 # Recycle Quark crystals
 var crystalCrushExcept = "Macerator Grindstone AEGrinder ThermalCentrifuge mekCrusher MekEnrichment";
@@ -376,4 +376,4 @@ scripts.process.mash(<minecraft:baked_potato>,  <actuallyadditions:item_food:5>*
 scripts.process.mash(<minecraft:cooked_porkchop>,  <actuallyadditions:item_food:20>*3, "no exceptions");
 
 # Canola unify
-scripts.process.squeeze(<actuallyadditions:item_misc:13>, <liquid:canolaoil> * 80, "except: ForestrySqueezer IndustrialSqueezer", null);
+scripts.process.squeeze([<actuallyadditions:item_misc:13>], <liquid:canolaoil> * 80, "except: ForestrySqueezer IndustrialSqueezer", null);

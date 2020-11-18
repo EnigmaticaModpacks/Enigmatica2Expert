@@ -242,4 +242,21 @@
 			<itemStack>enderio:item_basic_capacitor 4</itemStack>
 		</output>
 	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Solar Panel] from [Glass+++++++] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>minecraft:glass 24 0</itemStack>
+			<itemStack>ic2:crafting 40 0</itemStack>
+			<itemStack>minecraft:iron_block 30 0</itemStack>
+			<itemStack>ic2:ingot 32 2</itemStack>
+			<itemStack>thermalfoundation:material 32 132</itemStack>
+			<itemStack>ic2:ingot 24 6</itemStack>
+			<itemStack>minecraft:redstone 48 0</itemStack>
+			<itemStack>minecraft:coal 32 0</itemStack>
+		</input>
+		<output>
+			<itemStack>ic2:te 8 8</itemStack>
+		</output>
+	</Recipe>
 </Recipes>

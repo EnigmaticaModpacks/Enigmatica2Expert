@@ -80,14 +80,14 @@ recipes.addShaped("rat_upgrade_from_fragment", <rats:rat_upgrade_basic>, [
 remake("rat_upgrade_chef", <rats:rat_upgrade_chef>, [
 	[<ore:foodLemondrizzlecake>, <rats:chef_toque>.anyDamage(), <ore:foodLemondrizzlecake>], 
 	[<ore:foodLemondrizzlecake>, <rats:rat_upgrade_basic>, <ore:foodLemondrizzlecake>], 
-	[<rats:little_black_squash_balls>, <mysticalagriculture:intermedium_apple>, <rats:little_black_squash_balls>]
+	[<rats:little_black_squash_balls>, <forestry:honey_pot>, <rats:little_black_squash_balls>]
 ]);
 
 # Ore Dubling rat
 remakeEx(<rats:rat_upgrade_ore_doubling>, [
-	[<ore:ratPoop>, <ore:craftingToolForgeHammer>, <ore:ratPoop>], 
+	[<rats:rat_nugget>, <ore:craftingToolForgeHammer>, <rats:rat_nugget>], 
 	[<ore:craftingToolForgeHammer>, <rats:rat_upgrade_basic>, <ore:craftingToolForgeHammer>], 
-	[<ore:ratPoop>, <randomthings:ingredient:11>, <ore:ratPoop>]
+	[<rats:rat_nugget>, <randomthings:ingredient:11>, <rats:rat_nugget>]
 ]);
 
 # Aristocrat 
@@ -144,7 +144,7 @@ recipes.remove(<rats:marbled_cheese_raw>);
 
 # Raw Plastic from squeeser
 furnace.remove(<rats:raw_plastic>);
-scripts.process.squeeze(<rats:plastic_waste>, <liquid:dirt> * 100, null, <rats:raw_plastic>);
+scripts.process.squeeze([<rats:plastic_waste>], <liquid:dirt> * 100, null, <rats:raw_plastic>);
 
 # Polyethene from rat plastic
 scripts.wrap.mekanism.enrichment.addRecipe(<rats:raw_plastic>*16, <mekanism:polyethene>);
@@ -261,3 +261,10 @@ remake("rats idol_of_ratlantis", <rats:idol_of_ratlantis>, [
 
 # Rat diamond melting
 scripts.process.melt(<rats:rat_diamond>, <liquid:diamond> * 165, "No Exceptions");
+
+# Harder little balls recipe (was from coal)
+mods.rats.recipes.removeGemcutterRatRecipe(<rats:little_black_squash_balls>);
+mods.rats.recipes.addGemcutterRatRecipe(<thermalfoundation:storage_resource>, <rats:little_black_squash_balls> * 3);
+
+# Red Coal alternative
+// mods.rt.RandomThingsTweaker.addImbuingRecipe(IItemStack top, IItemStack leftside, IItemStack bottom, IItemStack center, IItemStack result)

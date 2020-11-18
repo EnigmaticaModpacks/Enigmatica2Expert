@@ -390,13 +390,16 @@ scripts.process.crush(<minecraft:arrow>, <minecraft:flint>, "no exceptions", [<o
 
 
 # Ore Excavation
-recipes.remove(<oeintegration:excavatemodifier>);
-val kitWheels = <tconstruct:sharpening_kit>.withTag({Material: "stone"});
-recipes.addShaped("excavatemodifier", <oeintegration:excavatemodifier>, [
-	[<rats:little_black_squash_balls>, <tconstruct:excavator_head>.withTag({Material: "bronze"}), <rats:little_black_squash_balls>], 
-	[<ore:compressed3xDirt>, <ore:compressed3xCobblestone>, <ore:compressed3xNetherrack>], 
-	[kitWheels, kitWheels, kitWheels]
-]);
+craft.remake(<oeintegration:excavatemodifier>, ["pretty",
+	"D D D",
+	"A B C",
+	"E E E"], {
+	A: <ore:compressed3xDirt>,
+	B: <ore:compressed3xCobblestone>,
+	C: <ore:compressed3xNetherrack>,
+	D: <tconstruct:excavator_head>.withTag({Material: "bronze"}),
+	E: <tconstruct:sharpening_kit>.withTag({Material: "stone"}),
+});
 
 # Remove Refined storage cables
 rh(<immersivecables:coil_block:3>);
@@ -515,3 +518,19 @@ scripts.process.melt(<ore:tallow>, <liquid:biomass> * 200, "No Exceptions");
 scripts.process.melt(<ore:cheeseWheels>|<ore:blockCheese>, <liquid:cheese> * 1000, "No Exceptions");
 scripts.process.melt(<ore:foodCheese>|<actuallyadditions:item_food>, <liquid:cheese> * 250, "No Exceptions");
 scripts.wrap.tconstruct.Casting.addBasinRecipe(<rats:block_of_cheese>, null, <liquid:cheese>, 1000);
+
+# Hardened Ice Unification
+craft.make(<biomesoplenty:hard_ice> * 8, ["AAA","A A","AAA"], {A: <mysticalagriculture:ice_essence>});
+scripts.process.compress(<minecraft:packed_ice> * 2, <biomesoplenty:hard_ice>, "No Exceptions");
+
+# Ice balls
+scripts.process.mash(<biomesoplenty:hard_ice>, <mctsmelteryio:iceball> * 8, "No Exceptions");
+
+# Remove wrong grinding recipe
+mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:ender_pearl>);
+mods.appliedenergistics2.Grinder.removeRecipe(<thermalfoundation:material:895>);
+scripts.process.crush(<ore:enderpearl>, <appliedenergistics2:material:46>, "Except: Pulverizer PulseCentrifuge", null, null);
+
+# Milk Powder
+scripts.process.evaporate(<fluid:milk> * 250, <ic2:dust:33>, "No exceptions");
+scripts.process.solution([<ic2:dust:33>], [<fluid:water> * 250], [<fluid:milk> * 250], null, "Except: highoven");

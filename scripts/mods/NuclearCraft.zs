@@ -168,7 +168,7 @@ scripts.process.extract(<ore:fish>,           <nuclearcraft:gelatin> * 4, "excep
 scripts.process.crush(<nuclearcraft:roasted_cocoa_beans>, <nuclearcraft:ground_cocoa_nibs>, "except: manufactory", null, null);
 recipes.addShapeless("Crush Cocoa", <nuclearcraft:ground_cocoa_nibs>, [<ore:pestleAndMortar>, <nuclearcraft:roasted_cocoa_beans>]);
 
-scripts.process.squeeze(<nuclearcraft:ground_cocoa_nibs>, <liquid:cocoa_butter> * 144, "except: FluidExtractor", <nuclearcraft:cocoa_solids>);
+scripts.process.squeeze([<nuclearcraft:ground_cocoa_nibs>], <liquid:cocoa_butter> * 144, "except: FluidExtractor", <nuclearcraft:cocoa_solids>);
 
 scripts.process.compress(<harvestcraft:flouritem> * 2, <nuclearcraft:graham_cracker>, "except: Pressurizer");
 
@@ -229,3 +229,6 @@ addDecayRecipe([<environmentaltech:litherite>             , <actuallyadditions:b
 // 		mods.nuclearcraft.radiation.addBlockMutation(_from, _to, threshold);
 // 	}
 // }
+
+# Supercooled Ice compat
+scripts.process.fill(<ore:ice>, <fluid:liquidhelium> * 50, <nuclearcraft:block_ice>, "only: Transposer");

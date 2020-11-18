@@ -285,24 +285,24 @@ mods.cyclicmagic.Melter.removeShapedRecipe("amber", 1000);
 mods.cyclicmagic.Melter.removeShapedRecipe("crystal", 1000);
 
 # Liquid blue slimy items
-scripts.process.squeeze(<tconstruct:slime_dirt:1>,        <liquid:blueslime>*2000, null,  <biomesoplenty:mudball>);
-scripts.process.squeeze(<tconstruct:slime_leaves>,        <liquid:blueslime>*500,  null, null);
-scripts.process.squeeze(<tconstruct:slime_grass_tall>,    <liquid:blueslime>*200,  null, null);
-scripts.process.squeeze(<tconstruct:slime_grass_tall:1>,  <liquid:blueslime>*200,  null, null);
-scripts.process.squeeze(<tconstruct:slime_sapling>,       <liquid:blueslime>*1000, null, null);
-scripts.process.squeeze(<tconstruct:slime_vine_blue_end>, <liquid:blueslime>*200,  null, null);
-scripts.process.squeeze(<tconstruct:slime_vine_blue_mid>, <liquid:blueslime>*200,  null, <tconstruct:slime_vine_blue_end>);
-scripts.process.squeeze(<tconstruct:slime_vine_blue>,     <liquid:blueslime>*200,  null, <tconstruct:slime_vine_blue_mid>);
+scripts.process.squeeze([<tconstruct:slime_dirt:1>],        <liquid:blueslime>*2000, null,  <biomesoplenty:mudball>);
+scripts.process.squeeze([<tconstruct:slime_leaves>],        <liquid:blueslime>*500,  null, null);
+scripts.process.squeeze([<tconstruct:slime_grass_tall>],    <liquid:blueslime>*200,  null, null);
+scripts.process.squeeze([<tconstruct:slime_grass_tall:1>],  <liquid:blueslime>*200,  null, null);
+scripts.process.squeeze([<tconstruct:slime_sapling>],       <liquid:blueslime>*1000, null, null);
+scripts.process.squeeze([<tconstruct:slime_vine_blue_end>], <liquid:blueslime>*200,  null, null);
+scripts.process.squeeze([<tconstruct:slime_vine_blue_mid>], <liquid:blueslime>*200,  null, <tconstruct:slime_vine_blue_end>);
+scripts.process.squeeze([<tconstruct:slime_vine_blue>],     <liquid:blueslime>*200,  null, <tconstruct:slime_vine_blue_mid>);
 
 # Liquid purple slimy items
-scripts.process.squeeze(<tconstruct:slime_dirt:2>,          <liquid:purpleslime>*2000, null,  <biomesoplenty:mudball>);
-scripts.process.squeeze(<tconstruct:slime_leaves:1>,        <liquid:purpleslime>*500,  null,  null);
-scripts.process.squeeze(<tconstruct:slime_grass_tall:4>,    <liquid:purpleslime>*200,  null,  null);
-scripts.process.squeeze(<tconstruct:slime_grass_tall:5>,    <liquid:purpleslime>*200,  null,  null);
-scripts.process.squeeze(<tconstruct:slime_sapling:1>,       <liquid:purpleslime>*1000, null,  null);
-scripts.process.squeeze(<tconstruct:slime_vine_purple_end>, <liquid:purpleslime>*200,  null,  null);
-scripts.process.squeeze(<tconstruct:slime_vine_purple_mid>, <liquid:purpleslime>*200,  null,  <tconstruct:slime_vine_purple_end>);
-scripts.process.squeeze(<tconstruct:slime_vine_purple>,     <liquid:purpleslime>*200,  null,  <tconstruct:slime_vine_purple_mid>);
+scripts.process.squeeze([<tconstruct:slime_dirt:2>],          <liquid:purpleslime>*2000, null,  <biomesoplenty:mudball>);
+scripts.process.squeeze([<tconstruct:slime_leaves:1>],        <liquid:purpleslime>*500,  null,  null);
+scripts.process.squeeze([<tconstruct:slime_grass_tall:4>],    <liquid:purpleslime>*200,  null,  null);
+scripts.process.squeeze([<tconstruct:slime_grass_tall:5>],    <liquid:purpleslime>*200,  null,  null);
+scripts.process.squeeze([<tconstruct:slime_sapling:1>],       <liquid:purpleslime>*1000, null,  null);
+scripts.process.squeeze([<tconstruct:slime_vine_purple_end>], <liquid:purpleslime>*200,  null,  null);
+scripts.process.squeeze([<tconstruct:slime_vine_purple_mid>], <liquid:purpleslime>*200,  null,  <tconstruct:slime_vine_purple_end>);
+scripts.process.squeeze([<tconstruct:slime_vine_purple>],     <liquid:purpleslime>*200,  null,  <tconstruct:slime_vine_purple_mid>);
 
 # Remove cheap steel recipe
 HighOven.removeMixRecipe(<liquid:steel>);
@@ -339,3 +339,14 @@ recipes.addShaped(<biomesoplenty:mud_brick_block> * 2, [
 
 # Osgloglas recipe after moving to tconevo
 scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:osgloglas> * 144, [<liquid:osmium> * 144, <liquid:refined_obsidian> * 144,  <liquid:refined_glowstone> * 144]);
+
+# Molten Quartz and Lapis to blocks
+scripts.wrap.tconstruct.Casting.addBasinRecipe(<minecraft:quartz_block>, null, <liquid:quartz>, 2664);
+scripts.wrap.tconstruct.Casting.addBasinRecipe(<minecraft:lapis_block> , null, <liquid:lapis> , 5994);
+
+# Replace Plustick's Infinity -> TConEvo
+mods.nuclearcraft.melter.removeRecipeWithOutput([<fluid:infinity> * 144]);
+mods.nuclearcraft.melter.removeRecipeWithOutput([<fluid:infinity> * (144*9)]);
+mods.nuclearcraft.melter.addRecipe(<ore:ingotInfinity>, <fluid:infinity_metal> * 144);
+mods.nuclearcraft.melter.addRecipe(<ore:blockInfinity>, <fluid:infinity_metal> * (144*9));
+mods.nuclearcraft.ingot_former.addRecipe([<liquid:infinity_metal>*144, <avaritia:resource:6>]);

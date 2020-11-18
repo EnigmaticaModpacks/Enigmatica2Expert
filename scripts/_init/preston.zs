@@ -11,7 +11,7 @@ global compressIt as function(IItemStack, int)IItemStack =
     function (item as IItemStack, maxLevel as int) as IItemStack  {
   var o = item;
   val meta = item.damage as short;
-  for i in 1 to maxLevel {
+  for i in 1 to maxLevel+1 {
     val compressed = <preston:compressed_block>.withTag({
       stack: {id: item.definition.id, Count: 1 as byte, Damage: meta}, level: i
     });

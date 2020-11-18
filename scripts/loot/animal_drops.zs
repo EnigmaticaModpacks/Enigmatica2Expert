@@ -76,9 +76,9 @@ tweak("emberroot:entity/sprite_boss","main",null, null, <mysticalagriculture:ter
 
 # Tallow
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:tallow>);
-scripts.wrap.thaumcraft.Crucible.registerRecipe("Tallow from rotten flesh", "HEDGEALCHEMY@1", <thaumcraft:tallow>,   <minecraft:rotten_flesh>*4, [<aspect:ignis>]);
+scripts.wrap.thaumcraft.Crucible.registerRecipe("Tallow from rotten flesh", "HEDGEALCHEMY@1", <thaumcraft:tallow>,   <minecraft:rotten_flesh>, [<aspect:ignis>]);
 scripts.wrap.thaumcraft.Crucible.registerRecipe("Tallow from blubber",      "HEDGEALCHEMY@1", <thaumcraft:tallow>*8, <betteranimalsplus:blubber>, [<aspect:ignis>*4]);
-scripts.process.squeeze(<betteranimalsplus:blubber>, <liquid:lubricant> * 50, "except: CrushingTub Squeezer MechanicalSqueezer", null);
+scripts.process.squeeze([<betteranimalsplus:blubber>], <liquid:lubricant> * 50, "except: CrushingTub Squeezer MechanicalSqueezer", null);
 
 # This crab is unobtainable
 rh(<betteranimalsplus:crab_meat_cooked>);

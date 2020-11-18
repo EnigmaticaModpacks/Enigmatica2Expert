@@ -80,23 +80,21 @@ import mods.jei.JEI.removeAndHide as rh;
 # Infinity Catalyst
 	mods.avaritia.ExtremeCrafting.remove(<avaritia:resource:5>);
 	scripts.wrap.extendedcrafting.TableCrafting.addShapeless(0, <avaritia:resource:5>, 
-	[<ore:ingotCrystalMatrix>, <ore:ingotCosmicNeutronium>, <avaritia:cosmic_meatballs>, 
-	<avaritia:ultimate_stew>, <avaritia:endest_pearl>, <ore:record>, 
-	<draconicevolution:awakened_core>, <ore:blockDraconiumAwakened>, 
-	<ore:blockLudicrite>, <bigreactors:mineralbenitoite>, <bigreactors:mineralanglesite>, 
-	<ore:dragonEgg>, <extendedcrafting:storage:7>, <ore:blockAethium>, 
-	<ore:plateElite>, <ore:blockTitaniumAluminide>, <ore:blockTitaniumIridium>, 
-	<ore:blockEvilMetal>, <ore:blockDemonicMetal>, <ore:blockMirion>, 
-	<biomesoplenty:terrestrial_artifact>, <extendedcrafting:singularity>, <extendedcrafting:singularity:1>, 
-	<extendedcrafting:singularity:2>, <extendedcrafting:singularity:3>, <extendedcrafting:singularity:4>, <extendedcrafting:singularity:5>, 
-	<extendedcrafting:singularity:6>, <extendedcrafting:singularity:7>, <extendedcrafting:singularity:16>, 
-	<extendedcrafting:singularity:17>, <extendedcrafting:singularity:18>, <extendedcrafting:singularity:19>,
-	<extendedcrafting:singularity:22>, <extendedcrafting:singularity_custom:107>, <extendedcrafting:singularity_custom:100>, 
-	<extendedcrafting:singularity:65>, <extendedcrafting:singularity_custom:101>, <extendedcrafting:singularity:48>, 
-	<extendedcrafting:singularity:49>, <extendedcrafting:singularity:64>, <extendedcrafting:singularity:25>, 
-	<extendedcrafting:singularity:26>, <extendedcrafting:singularity:27>, <extendedcrafting:singularity:28>, 
-	<extendedcrafting:singularity:32>, <extendedcrafting:singularity:23>, <extendedcrafting:singularity:24>]);
-
+	[<avaritia:ultimate_stew>, <avaritia:endest_pearl>, <bigreactors:mineralbenitoite>, 
+	<ore:tokenOrIdolFlag>, 	<bigreactors:mineralanglesite>, <ore:record>, <avaritia:cosmic_meatballs>, 
+	<quark:soul_bead>, 	<ore:slimecrystalPink>, <ore:plateElite>, <bloodmagic:demon_crystal>, 
+	<ore:dragonEgg>, 	<scalinghealth:heartcontainer>, 
+	<rustic:fluid_bottle>.withTag({Fluid: {FluidName: "wine", Amount: 1000, Tag: {Quality: 1 as float}}}),
+	<ore:blockWither>, <ore:blockAethium>, 	<ore:blockCosmicNeutronium>, <ore:dustAlchEmerald>, 
+	<ore:blockEvilMetal>, <ore:blockCoalCoke>, 	<ore:compressed3xDustBedrock>, <ore:blockUUMatter>, 
+	<ore:blockLudicrite>, <ore:blockAmethyst>, 	<randomthings:spectreilluminator>, 
+	<twilightforest:block_storage:4>, <extrautils2:decorativesolid:6>, <ore:blockDilithium>, 	
+	<ore:blockCrystalMatrix>, <ore:blockEnderium>, <deepmoblearning:infused_ingot_block>, 	
+	<contenttweaker:terrestrial_artifact_block>, <ore:blockInsanium>, <appliedenergistics2:fluix_block>,
+	compressIt(<draconicevolution:draconium_block:1>, 2), <ore:blockMyrmexResin>, 
+	<ore:blockDraconicMetal>, 	<forestry:bee_combs_0>, <ore:blockPrimordial>, 
+	<extendedcrafting:storage:7>, <ore:blockAstralStarmetal>, 	<ore:blockOsgloglas>, <ore:blockMirion>]);
+	
 # Endest Pearl
 	mods.avaritia.ExtremeCrafting.remove(<avaritia:endest_pearl>);
 	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <avaritia:endest_pearl>, [

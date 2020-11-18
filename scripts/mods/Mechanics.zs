@@ -3,8 +3,17 @@ import crafttweaker.liquid.ILiquidStack;
 
 # Heavy mix lump
 recipes.remove(<mechanics:heavy_mesh> * 2);
-recipes.addShapeless(<mechanics:heavy_mesh> * 4, [
-  <fluid:oil> * 1000, <ore:dustLead>, <ore:dustLead>, <ore:dustQuartzBlack>, <ore:dustQuartzBlack>]);
+craft.shapeless(<mechanics:heavy_mesh> * 4, "CAABB", {
+  A: <ore:dustLead>,
+  B: <ore:dustQuartzBlack>,
+  C: Bucket("oil"),
+});
+craft.shapeless(<mechanics:heavy_mesh>, "CAB", {
+  A: <ore:dustLead>,
+  B: <ore:dustQuartzBlack>,
+  C: <ic2:crop_res:7>,
+});
+
 
 # Melting heavy metal
 scripts.process.melt(<mechanics:heavy_nugget>, <liquid:heavy_metal> * 16,   "No Exceptions");
@@ -13,7 +22,7 @@ scripts.process.melt(<mechanics:heavy_block>,  <liquid:heavy_metal> * 1296, "No 
 
 # heavy crushing block
 val compressed1 = compressIt(<mechanics:heavy_block>, 1);
-val compressed2 = compressIt(<actuallyadditions:block_misc:2>, 3);
+val compressed2 = compressIt(<actuallyadditions:block_misc:2>, 2);
 recipes.addShaped(<mechanics:crushing_block>, [
   [compressed1, compressed1],
   [compressed2, compressed2]]);

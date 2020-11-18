@@ -143,7 +143,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
     if (machineName == "grindstone") {
       # mods.astralsorcery.Grindstone.addRecipe(IItemStack input, IItemStack output, float doubleChance);
       for ii in inputIngr0.itemArray {
-        scripts.wrap.astralsorcery.Grindstone.addRecipe(ii, outputItem0, defaultChance0(extraChance, 0.0f));
+        scripts.wrap.astralsorcery.Grindstone.addRecipe(ii, outputItem0, defaultChance0(extraChance, 0.0f) / outputItem0.amount);
       }
       return machineName;
     }
@@ -605,15 +605,6 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       return machineName;
     }
 
-    if (machineName == "forestrysqueezer") {
-      #mods.forestry.Squeezer.addRecipe(ILiquidStack fluidOutput, IItemStack[] ingredients, int timePerItem, @Optional WeightedItemStack itemOutput);
-      for ii in inputIngr0.itemArray {
-        val wOut as WeightedItemStack = !isNull(outputItem0) ? outputItem0 % defaultChance0_int(extraChance, 20) : null;
-        scripts.wrap.forestry.Squeezer.addRecipe(outputLiquid0, [ii], 20, wOut);
-      }
-      return machineName;
-    }
-
     if (machineName == "crucible") {
       # mods.thermalexpansion.Crucible.addRecipe(ILiquidStack output, IItemStack input, int energy);
       for ii in inputIngr0.itemArray {
@@ -831,6 +822,17 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       } else {
         return info(machineNameAnyCase, inputLiquid0.name, "received work, but input and output amounts can't fit in machine");
       }
+    }
+
+    if (machineName == "forestrysqueezer") {
+      #mods.forestry.Squeezer.addRecipe(ILiquidStack fluidOutput, IItemStack[] ingredients, int timePerItem, @Optional WeightedItemStack itemOutput);
+      var inputItemStacks = [] as IItemStack[];
+      for inIngr in inputItems {
+        inputItemStacks = inputItemStacks + inIngr.itemArray[0];
+      }
+      val wOut as WeightedItemStack = !isNull(outputItem0) ? outputItem0 % defaultChance0_int(extraChance, 20) : null;
+      scripts.wrap.forestry.Squeezer.addRecipe(outputLiquid0, inputItemStacks, 20, wOut);
+      return machineName;
     }
   }
 
