@@ -33,7 +33,7 @@ var numeral = require('numeral');
 
 const utils = require('./utils.js');
 
-var cfg = utils.loadText("../config/environmentaltech/main.cfg");
+var cfg = utils.loadText("../../config/environmentaltech/main.cfg");
 
 const cell_efficiency = [];
 const matNames = [];

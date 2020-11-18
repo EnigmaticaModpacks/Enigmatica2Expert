@@ -1,5 +1,5 @@
 const escapeRegex = require('escape-string-regexp');
-const {loadText, saveText} = require('./utils.js');
+const {loadText, saveText} = require('../lib/utils.js');
 
 /*
 ₀₁₂₃₄₅₆₇₈₉

@@ -1,9 +1,9 @@
-const testFolder = '../mods/';
+const testFolder = '../../mods/';
 const fs = require('fs');
 const path = require("path");
 
-const e2e = fs.readdirSync(path.resolve(__dirname, '../../Enigmatica 2 Expert/mods/'));
-const e2ee= fs.readdirSync(path.resolve(__dirname, '../mods/'));
+const e2e = fs.readdirSync(path.resolve(__dirname, '../../../Enigmatica 2 Expert/mods/'));
+const e2ee= fs.readdirSync(path.resolve(__dirname, '../../mods/'));
 
 const cut = (s)=> s.match(/([^-_]+).*/)[1];
 
