@@ -710,3 +710,30 @@ for item in loadedMods["jaopca"].items {
 	
 # Milk powder as milk
 <ore:listAllmilk>.addItems([<ic2:dust:33>]);
+
+function addSharpeningKitOredict(level as int, names as string[]) {
+	for name in names {
+		oreDict["sharpeningKit" ~ level].add(<tconstruct:sharpening_kit>.withTag({Material: name}));
+	}
+}
+
+# ------------------------------------------------
+# Mining level Sharpening Kits
+# generated automatically with tweakerconstruct.zs
+# addSharpeningKitOredict(0, ["paper", "chocolate", "stone", "wood", "flint", "cactus", "polyethylene", "bone"]);
+# addSharpeningKitOredict(1, ["construction_alloy", "apatite", "livingrock", "tin", "rubber", "blueslime", "cheese", "sponge", "slime", "aquamarine", "copper", "nagascale", "aluminium"]);
+# addSharpeningKitOredict(2, ["treatedwood", "desert_myrmex", "jungle_myrmex", "plague_metal", "certus_quartz", "essence_metal", "firewood", "fluix", "sentient_metal", "carbon_fiber"]);
+# addSharpeningKitOredict(3, ["xu_magical_wood", "netherrack", "tanzanite", "prismarine", "void_crystal", "malachite_gem", "dragonbone", "peridot", "ruby", "iron", "sapphire", "fluix_steel", "bronze", "topaz", "lonsdaleite", "advanced_alloy", "fierymetal"]);
+# addSharpeningKitOredict(4, ["ma.prosperity", "livingwood", "palis_crystal", "lead", "silver", "black_quartz", "manasteel", "ma.soulium", "pigiron", "flux_crystal", "void_metal", "emerald_plustic", "thaumium", "bound_metal", "energetic_metal", "enori_crystal", "dark_steel", "weezer", "electrum", "restonia_crystal"]);
+# addSharpeningKitOredict(5, ["redstone_alloy", "endstone", "magmaslime", "energetic_alloy", "soularium", "pink_slime", "heavy", "ma.inferium", "invar", "draconium", "ma.base_essence", "pulsating_iron", "osmium", "steel", "diamantine_crystal", "emeraldic_crystal", "end_steel"]);
+# addSharpeningKitOredict(6, ["meat_metal", "obsidian", "mica", "sky_stone", "constantan", "nickel", "steeleaf", "knightslime", "knightmetal", "lumium", "alumite", "ma.prudentium", "amethyst", "refined_glowstone", "signalum", "pink_metal", "titanium"]);
+# addSharpeningKitOredict(7, ["xu_demonic_metal", "ardite", "xu_enchanted_metal", "litherite", "uranium", "psimetal", "psigem", "starmetal", "tough", "cobalt", "ma.intermedium", "hard_carbon"]);
+# addSharpeningKitOredict(8, ["electrical_steel", "conductive_iron", "erodium", "manyullyn", "thorium", "osmiridium", "boron", "magnesium", "refined_obsidian", "mirion", "xu_evil_metal", "ma.superium"]);
+# addSharpeningKitOredict(9, ["osgloglas", "dreamwood", "vibrant_alloy", "kyronite", "fluxed_electrum", "platinum", "boron_nitride", "dragonsteel_fire", "dragonsteel_ice"]);
+# addSharpeningKitOredict(10, ["pladium", "enderium", "iridium", "ma.supremium"]);
+# addSharpeningKitOredict(11, ["elementium", "ionite", "terrasteel", "universal_metal", "crystal_matrix"]);
+# addSharpeningKitOredict(12, ["primal_metal", "aethium", "wyvern_metal", "neutronium"]);
+# addSharpeningKitOredict(13, ["draconic_metal"]);
+# addSharpeningKitOredict(14, ["chaotic_metal"]);
+# addSharpeningKitOredict(15, ["infinity_metal"]);
+# ------------------------------------------------

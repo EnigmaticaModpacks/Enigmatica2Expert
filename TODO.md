@@ -32,27 +32,27 @@
 - 🧩 [x] Dimlet: Quark
 - 🧩 [x] Ender swords increase damage on IV
 - 𝓩𝒮 [x] Random Things Change drops of bean pod
+- 🔨 [x] Nerf Aquamarine mining level
+- 🔨 [x] Nerf Osgloglas
+- 🔨 [x] Use JEI search for mining levels to tweak it
+- ✏️ [X] IC2 Solar Precision Assembler
+- 𝓩𝒮 [x] Liquid Concrete NOT setted to infinite
+- ✏️ [x] Easier Rat Chief upgrade (apple is too pricy after crystal nerfing)
 
 ## Planned
 
 -----------
 
 - 🟢 [ ] Biome Tweaker (make planets ground higher, deep ocean biomes)
-- 🟢 [ ] Foliage color
-- 🟡 [ ] Dynamics Surroundings return Animania Back
 - 💥 [ ] Uses of singularities
 - 💥 [ ] New 🐝 for endgame
 - 💥 [ ] **Rats** Structures Generation
 - ✏️ [x] Change Creative Gas ingredients (remove items with NBT)
 - ✏️ [x] Creative Fluid Tank no `mekData:{}`
-- ✏️ [x] Easier Rat Chief upgrade (apple is too pricy after crystal nerfing)
-- ✏️ [X] IC2 Solar Precision Assembler
 - ✏️ [x] Sawdust Compat
-- 🔨 [ ] Use JEI search for mining levels to tweak it
-- 🔨 [ ] Nerf Aquamarine mining level
-- 🔨 [ ] Nerf Osgloglas
-- 🔨 [ ] TCon tools recycle
 - 🧩 [x] More radiactive blocks
+- ✏️ [ ] Fix XML recipes get wrong first items of Oredicts
+- 🔨 [ ] TCon tools recycle
 - 💥 [ ] Merge E2E-v2
 - 📖 [ ] BQ Osmium mining level alternatives
 - 📖 [ ] Creative Cube in book change to charged variant
@@ -80,7 +80,6 @@
 - 𝓩𝒮 [ ] Remove Useless NC recipes (for example enriching depleted fuel with salt)
 - 𝓩𝒮 [ ] Rename Diamond Lattice back
 - 𝓩𝒮 [ ] Vitium crystal in potion change required tags
-- 𝓩𝒮 [x] Liquid Concrete setted to infinite
 - ✏️ [ ] Remake "Animal" recipes to use Bee's instead of machines (alter recipes or use bee's ingrs)
 - ✏️ [ ] 4 Singularity => Creative bin
 - 🌍 [ ] Reload JER world data

@@ -73,6 +73,15 @@ module.exports.injectInFile = function(filename, keyStart, text, keyFinish) {
 }
 
 
+module.exports.begin = function(...args) {
+  process.stdout.write(args.join('\t'))
+}
+
+module.exports.end = function(...args) {
+  process.stdout.write(args.length ===0 ? ' done' :args.join('\t'))
+  console.log()
+}
+
 // # ######################################################################
 // #
 // # Utils
