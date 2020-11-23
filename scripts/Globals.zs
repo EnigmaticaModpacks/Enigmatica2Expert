@@ -200,10 +200,16 @@ global clearFluid as function(IItemStack)void =
 					# Usual tanks
 					tag = tag - "Fluid";
 				} else
+				if (!isNull(tag.tank)) {
+					# Open Blocks
+					tag = tag - "tank";
+				} else
 				if (!isNull(tag.FluidName) && !isNull(tag.Amount)) {
 					# Black hole or other
 					tag = tag - "FluidName" - "Amount";
 				}
+
+				if(tag == {} as IData) return out;
 				return out.withTag(tag);
 			}
 			return out;

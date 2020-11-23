@@ -25,3 +25,6 @@ for i in 0 to 16 {
       [wool  , <ore:ingotIron>  , wool]]);
   }
 }
+
+# Clear tanks
+clearFluid(<openblocks:tank>);
