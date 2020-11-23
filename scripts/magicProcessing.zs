@@ -25,6 +25,16 @@ for ore_entry in oreDict {
         meltingExceptions: meltingExceptions
       });
 
+      # Fix gems melting recipes
+      # 	Standart JAOPCA's furnace recipes for Ores that outputs
+      # gems instead of ingots have empty output, so add it forced
+      var smelted = utils.smelt(ore_entry);
+      if (isNull(smelted)) {
+        furnace.remove(<*>, ore_entry);
+        var gem = utils.getSomething(ore_name, ["gem", "dust"]);
+        if(!isNull(gem)) furnace.addRecipe(gem * 2, ore_entry);
+      }
+
       magicProcessing(ore_entry, ore_name);
     }
 	}
