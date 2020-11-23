@@ -6,14 +6,8 @@ recipes.remove(<mechanics:heavy_mesh> * 2);
 craft.shapeless(<mechanics:heavy_mesh> * 4, "CAABB", {
   A: <ore:dustLead>,
   B: <ore:dustQuartzBlack>,
-  C: Bucket("oil"),
+  C: <ore:bitumen>,
 });
-craft.shapeless(<mechanics:heavy_mesh>, "CAB", {
-  A: <ore:dustLead>,
-  B: <ore:dustQuartzBlack>,
-  C: <ic2:crop_res:7>,
-});
-
 
 # Melting heavy metal
 scripts.process.melt(<mechanics:heavy_nugget>, <liquid:heavy_metal> * 16,   "No Exceptions");
@@ -60,6 +54,7 @@ addBurstSeedRecipe(<contenttweaker:compressed_crushed_andesite>, null, <mechanic
 addBurstSeedRecipe(<contenttweaker:compressed_crushed_diorite> , null, <mechanics:burst_seed_diorite>);
 addBurstSeedRecipe(<contenttweaker:compressed_crushed_granite> , null, <mechanics:burst_seed_granite>);
 addBurstSeedRecipe(<enderio:block_infinity>, <bigreactors:dustcyanite>, <mechanics:burst_seed_grainsofinfinity>);
+addBurstSeedRecipe(<enderio:block_infinity>, <forestry:phosphor>      , <mechanics:burst_seed_grainsofinfinity>);
 
 # Empty rod remake
 recipes.addShaped(<mechanics:empty_rod>, [

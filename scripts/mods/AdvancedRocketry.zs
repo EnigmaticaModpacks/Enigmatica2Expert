@@ -13,7 +13,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	[<ore:plateTitaniumAluminide>, <advancedrocketry:liquidtank>, <ore:plateTitaniumAluminide>]]);
 
 # Rocket Fuel
-	scripts.wrap.immersiveengineering.Mixer.addRecipe(<liquid:rocketfuel> * 250, <liquid:oxygen> * 500, [<thermalfoundation:material:833>, <immersivepetroleum:material>], 25000);
+	scripts.wrap.immersiveengineering.Mixer.addRecipe(<liquid:rocketfuel> * 250, <liquid:oxygen> * 500, [<thermalfoundation:material:833>, <ore:bitumen>], 25000);
 
 # HeatProof Brick
 	recipes.remove(<advancedrocketry:blastbrick>);

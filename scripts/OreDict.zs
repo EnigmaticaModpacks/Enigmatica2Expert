@@ -737,3 +737,6 @@ function addSharpeningKitOredict(level as int, names as string[]) {
 # addSharpeningKitOredict(14, ["chaotic_metal"]);
 # addSharpeningKitOredict(15, ["infinity_metal"]);
 # ------------------------------------------------
+
+# Bitumen
+<ore:bitumen>.addItems([<thermalfoundation:material:892>, <immersivepetroleum:material>]);

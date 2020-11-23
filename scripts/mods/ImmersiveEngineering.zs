@@ -394,3 +394,24 @@ for block, slab in {
 } as IItemStack[IIngredient] {
 	craft.remake(slab * 6, ["AAA"], {A: block});
 }
+
+# Bitumen change to oredict
+craft.remake(<immersivepetroleum:stone_decoration> * 12, [
+	"ABA",
+	"CDC",
+	"ABA"], {
+	A: <ore:itemSlag>,
+	B: <ore:bitumen>,
+	C: <ore:gravel>,
+	D: Bucket("water"),
+});
+craft.remake(<immersivepetroleum:stone_decoration> * 8, [
+	"ABA",
+	"CDC",
+	"ABA"], {
+	A: <ore:sand>,
+	B: <ore:bitumen>,
+	C: <ore:gravel>,
+	D: Bucket("water"),
+});
+
