@@ -21,7 +21,7 @@ ofAnimatedSmoke:true
 ofVoidParticles:true
 ofWaterParticles:true
 ofPortalParticles:true
-ofPotionParticles:true
+ofPotionParticles:false
 ofFireworkParticles:true
 ofDrippingWaterLava:true
 ofAnimatedTerrain:true
@@ -58,7 +58,7 @@ ofEmissiveTextures:true
 ofLazyChunkLoading:true
 ofRenderRegions:false
 ofSmartAnimations:false
-ofDynamicFov:false
+ofDynamicFov:true
 ofAlternateBlocks:true
 ofDynamicLights:1
 ofScreenshotSize:1

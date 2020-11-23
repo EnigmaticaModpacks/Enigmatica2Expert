@@ -196,7 +196,7 @@ craft.remake(<cyclicmagic:storage_bag>, ["pretty",
 		'  ▬  ',
 		'○ □ ○',
 		'○ ○ ○'], {
-	'○': <thaumictinkerer:spellbinding_cloth:*>,
+	'○': <thaumictinkerer:spellbinding_cloth>.anyDamage(),
 	'▬': <fluxnetworks:flux>,
 	'□': <tconstruct:bow_string:*>
 });

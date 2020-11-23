@@ -38,6 +38,9 @@
 - ✏️ [X] IC2 Solar Precision Assembler
 - 𝓩𝒮 [x] Liquid Concrete NOT setted to infinite
 - ✏️ [x] Easier Rat Chief upgrade (apple is too pricy after crystal nerfing)
+- ✏️ [x] Sawdust Compat
+- 𝓩𝒮 [x] Blood Magic Runes tip
+- ✏️ [x] Buff Bitum
 
 ## Planned
 
@@ -47,10 +50,6 @@
 - 💥 [ ] Uses of singularities
 - 💥 [ ] New 🐝 for endgame
 - 💥 [ ] **Rats** Structures Generation
-- ✏️ [x] Change Creative Gas ingredients (remove items with NBT)
-- ✏️ [x] Creative Fluid Tank no `mekData:{}`
-- ✏️ [x] Sawdust Compat
-- 🧩 [x] More radiactive blocks
 - ✏️ [ ] Fix XML recipes get wrong first items of Oredicts
 - 🔨 [ ] TCon tools recycle
 - 💥 [ ] Merge E2E-v2
@@ -62,14 +61,6 @@
 - 📖 [ ] Gift Animal Baits in animals chapter
 - 📖 [ ] Ember Root Boss to book
 - 📖 [ ] CF Sprayer way earlier
-- 𝓩𝒮 [ ] Black Quartz Cluster outputs nothing
-- 𝓩𝒮 [ ] Blood Magic Runes tip
-- 𝓩𝒮 [ ] Chemical reactor can supply up to 200k RF/t
-- 𝓩𝒮 [ ] Compacting Drawer, Open Blocks tank, Tinker's tanks Clearing
-- 𝓩𝒮 [ ] Enrichment Chamber gives wrong dusts
-- 𝓩𝒮 [ ] Full Resonant Tank wont clear
-- 𝓩𝒮 [ ] IC2 Coolant Wont be consumed in salt reactor
-- 𝓩𝒮 [ ] Ice Balls stack up to 64
 - 𝓩𝒮 [ ] Inductions remake
 - 𝓩𝒮 [ ] Make Blood Stone Stackable
 - 𝓩𝒮 [ ] Make Draconic Armor symmetrical
@@ -80,11 +71,24 @@
 - 𝓩𝒮 [ ] Remove Useless NC recipes (for example enriching depleted fuel with salt)
 - 𝓩𝒮 [ ] Rename Diamond Lattice back
 - 𝓩𝒮 [ ] Vitium crystal in potion change required tags
+- 𝓩𝒮 [ ] IC2 Coolant Wont be consumed in salt reactor
+- ⚙️ [ ] Benefication for gems should return more gems
 - ✏️ [ ] Remake "Animal" recipes to use Bee's instead of machines (alter recipes or use bee's ingrs)
 - ✏️ [ ] 4 Singularity => Creative bin
 - 🌍 [ ] Reload JER world data
 - ✏️ [ ] Matter Condenser uncraftable
-
+- ✏️ [ ] Omega potion rename, logaryphmic level buff
+- ✏️ [ ] Combination Crafting for Energy Manipulator
+- ✏️ [ ] Crushed quartz is wrong
+- ✏️ [ ] Other colors from color essence
+- 𝓩𝒮 [x] Compacting Drawer, Open Blocks tank, Tinker's tanks Clearing
+- ✏️ [x] Change Creative Gas ingredients (remove items with NBT)
+- ✏️ [x] Creative Fluid Tank no `mekData:{}`
+- 🧩 [x] More radiactive blocks (some items wont get radiation)
+- ✏️ [ ] Benefication for Rat nuggets
+- ⚙️ [ ] process.squeeze from Forestry.zs should accept any machine (temp. disabled)
+- 𝓩𝒮 [ ] Remove excessive logging for non-debug clients
+- 𝓩𝒮 [ ] Remove excessive logging for non-debug clients
 
 ### Do after process.zs class rework:
 
@@ -123,6 +127,8 @@
 - ⚙️ [ ] Unify Black quartz
 - ✏️ [ ] Cant Craft Solar tier4 (tier3 cant be recognisable)
 - 🌍 [ ] New AdvRocke atmospheres
+- 𝓩𝒮 [ ] Ice Balls stack up to 64. Somehow not working, reported to github
+- 𝓩𝒮 [ ] New Pam's traps. Not actually working, new recipes wouldn't appear
 
 
 ## Unused TC traits

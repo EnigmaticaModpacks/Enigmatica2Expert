@@ -2,6 +2,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.item.IIngredient;
 import mods.jei.JEI.removeAndHide as rh;
+import scripts.craft.grid.Grid;
 #modloaded forestry
 
 # Fixing fruit juice amount from tomatos
@@ -170,3 +171,6 @@ for input,output in {
 # Remove pulp recipe
 mods.forestry.Carpenter.removeRecipe(<forestry:wood_pulp>);
 scripts.wrap.forestry.Carpenter.addRecipe(<thermalfoundation:material:800>, [[<ore:logWood>]], 40, <liquid:water> * 250);
+
+mods.forestry.Carpenter.removeRecipe(<forestry:letters>);
+scripts.wrap.forestry.Carpenter.addRecipe(<forestry:letters>, Grid(["AAA","AAA"], {A: <thermalfoundation:material:800>}).shaped(), 40, <liquid:water> * 250);

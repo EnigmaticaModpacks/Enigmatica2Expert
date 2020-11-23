@@ -89,6 +89,13 @@ scripts.process.alloy([
 	<randomthings:ingredient:2>,
 	<thermalfoundation:material:134>
 	] as IItemStack[], <randomthings:ingredient:3>, "No exceptions");
+mods.rt.RandomThingsTweaker.addImbuingRecipe(
+	<thermalfoundation:material:134>, 
+	<extrautils2:unstableingots>, 
+	<forestry:phosphor>, 
+	<randomthings:ingredient:2>, 
+	<randomthings:ingredient:3>
+);
 
 # Spectre Coil normal
 recipes.remove(<randomthings:spectrecoil_normal>);
@@ -176,4 +183,16 @@ craft.remake(<randomthings:slimecube>, ["pretty",
 	"B B B"], {
 	A: <ore:blockKnightslime>,
 	B: <ore:slimecrystalGreen>,
+});
+
+# Imbuer
+craft.remake(<randomthings:imbuingstation>, ["pretty",
+	"A B A",
+	"C D C",
+	"A E A"], {
+	A: <forestry:wood_pile>,
+	B: <minecraft:water_bucket>,
+	C: <ore:dustHydratedCoal>,
+	D: <tconstruct:materials:18>,
+	E: <rats:raw_plastic>,
 });

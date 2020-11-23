@@ -448,10 +448,6 @@ Remake(<toolbelt:belt>, [" A ", "CBC", "C C"], {
 	B: <quark:iron_button>,
 	C: <harvestcraft:hardenedleatheritem>});
 
-
-# Hydrated coal simplifying
-mods.inworldcrafting.FluidToItem.transform(<ic2:dust:3>, <fluid:water>, [<ore:dustCoal>]);
-
 # Lesser blaze powder
 craft.reshapeless(<minecraft:blaze_powder>, "A", { A: <minecraft:blaze_rod>, remove: <minecraft:blaze_powder>*2});
 
@@ -462,32 +458,29 @@ recipes.addShapeless(<minecraft:flint_and_steel>, [<ore:ingotSteel>, <ore:itemFl
 # *=======  =======*
 
 # More meats from traps
-// mods.harvestcrafttweaker.HarvestCraftTweakeraddGroundTrap(<ore:foodCheese>, [<rats:raw_rat>, <rats:rat_pelt>]);
-// mods.harvestcrafttweaker.HarvestCraftTweakeraddGroundTrap(<animania:block_straw>, [
-// 	<twilightforest:raw_venison>,
-// 	<betteranimalsplus:venisonraw>,
-// 	<betteranimalsplus:pheasantraw>,
-// 	<betteranimalsplus:pheasant_egg>,
-// 	<betteranimalsplus:turkey_egg>,
-// 	<betteranimalsplus:goose_egg>,
-// 	<betteranimalsplus:turkey_leg_raw>,
-// ]);
+mods.harvestcrafttweaker.HarvestCraftTweaker.addGroundTrap(<ore:foodCheese>, [<rats:raw_rat>, <rats:rat_pelt>]);
+mods.harvestcrafttweaker.HarvestCraftTweaker.addGroundTrap(<animania:block_straw>, [
+	<twilightforest:raw_venison>,
+	<betteranimalsplus:venisonraw>,
+	<betteranimalsplus:pheasantraw>,
+	<betteranimalsplus:pheasant_egg>,
+	<betteranimalsplus:turkey_egg>,
+	<betteranimalsplus:goose_egg>,
+	<betteranimalsplus:turkey_leg_raw>,
+]);
 
 # More traps
-// mods.harvestcrafttweaker.HarvestCraftTweakeraddWaterTrap(<thermalfoundation:bait>,   [<betteranimalsplus:crab_meat_raw>, <betteranimalsplus:eel_meat_raw>]);
-// mods.harvestcrafttweaker.HarvestCraftTweakeraddWaterTrap(<thermalfoundation:bait:1>, [<iceandfire:shiny_scales>, <betteranimalsplus:blubber>]);
-// mods.harvestcrafttweaker.HarvestCraftTweakeraddWaterTrap(<thermalfoundation:bait:2>, [
-// 	<iceandfire:sea_serpent_scales_blue>,
-// 	<iceandfire:sea_serpent_scales_bronze>,
-// 	<iceandfire:sea_serpent_scales_deepblue>,
-// 	<iceandfire:sea_serpent_scales_purple>,
-// 	<iceandfire:sea_serpent_scales_red>,
-// 	<iceandfire:sea_serpent_scales_teal>,
-// 	<iceandfire:sea_serpent_scales_green>,
-// ]);
-
-# Infinity liquid concrete
-mods.plustweaks.Liquid.setInfinite(<liquid:concrete>, true);
+mods.harvestcrafttweaker.HarvestCraftTweaker.addWaterTrap(<thermalfoundation:bait>,   [<betteranimalsplus:crab_meat_raw>, <betteranimalsplus:eel_meat_raw>]);
+mods.harvestcrafttweaker.HarvestCraftTweaker.addWaterTrap(<thermalfoundation:bait:1>, [<iceandfire:shiny_scales>, <betteranimalsplus:blubber>]);
+mods.harvestcrafttweaker.HarvestCraftTweaker.addWaterTrap(<thermalfoundation:bait:2>, [
+	<iceandfire:sea_serpent_scales_blue>,
+	<iceandfire:sea_serpent_scales_bronze>,
+	<iceandfire:sea_serpent_scales_deepblue>,
+	<iceandfire:sea_serpent_scales_purple>,
+	<iceandfire:sea_serpent_scales_red>,
+	<iceandfire:sea_serpent_scales_teal>,
+	<iceandfire:sea_serpent_scales_green>,
+]);
 
 
 # ------ Silicon unification ------
