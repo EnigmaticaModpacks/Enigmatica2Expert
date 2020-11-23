@@ -114,7 +114,7 @@ remake("rat_upgrade_basic_ratlantean", <rats:rat_upgrade_basic_ratlantean>, [
 remake("rat_upgrade_archeologist", <rats:rat_upgrade_archeologist>, [
 	[<rats:marbled_cheese_raw>, <ore:hatArcheologist>, <rats:marbled_cheese_raw>], 
 	[<ore:boneDragon>, <rats:rat_upgrade_basic_ratlantean>, <ore:boneDragon>], 
-	[<bloodmagic:sentient_pickaxe>, <ore:tokenOrIdolFlag>, <bloodmagic:sentient_shovel>]
+	[<randomthings:spectrepickaxe>.anyDamage(), <ore:tokenOrIdolFlag>, <randomthings:spectreshovel>.anyDamage()]
 ]);
 
 # Rat flowers
@@ -267,4 +267,9 @@ mods.rats.recipes.removeGemcutterRatRecipe(<rats:little_black_squash_balls>);
 mods.rats.recipes.addGemcutterRatRecipe(<thermalfoundation:storage_resource>, <rats:little_black_squash_balls> * 3);
 
 # Red Coal alternative
-// mods.rt.RandomThingsTweaker.addImbuingRecipe(IItemStack top, IItemStack leftside, IItemStack bottom, IItemStack center, IItemStack result)
+mods.rt.RandomThingsTweaker.addImbuingRecipe(
+<rustic:fluid_bottle>.withTag({Fluid: {FluidName: "wildberryjuice", Amount: 1000}}), 
+<actuallyadditions:item_misc:22>, 
+<deepmoblearning:soot_covered_redstone>, 
+<rats:little_black_squash_balls>, 
+<extrautils2:ingredients:4> * 3);
