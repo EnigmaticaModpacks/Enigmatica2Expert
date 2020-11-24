@@ -71,9 +71,9 @@ tweak("emberroot:entity/golem_red","main","minecraft:redstone", null, [<enderio:
 tweak("emberroot:entity/golem_yellow","main","minecraft:gold_nugget", null, [<thermalfoundation:material:228>], [1,3]);
 tweak("emberroot:entity/skeleton_frozen","main","minecraft:ice", null, [<mctsmelteryio:iceball>], [3,6]);
 tweak("emberroot:entity/sprite_mini","main","minecraft:rotten_flesh", null, [<mysticalagriculture:nature_essence>], [1,3]);
-tweak("emberroot:entity/sprite_normal","main","minecraft:rotten_flesh", null, [<mysticalagriculture:sapphire_essence>], [1,3]);
-tweak("emberroot:entity/sprite_greater","main",null, null, [<mysticalagriculture:ender_amethyst_essence>], [1,3]);
-tweak("emberroot:entity/sprite_boss","main",null, null, [<mysticalagriculture:terrasteel_essence>], [3,12]);
+tweak("emberroot:entity/sprite_normal","main","minecraft:rotten_flesh", null, [<mysticalagriculture:dye_essence>], [1,3]);
+tweak("emberroot:entity/sprite_greater","main",null, null, [<mysticalagriculture:platinum_essence>], [1,3]);
+tweak("emberroot:entity/sprite_boss","main",null, null, [<mysticalagriculture:ender_amethyst_essence>], [6,12]);
 tweak("randomthings:beanpod","Diamond","minecraft:diamond", null, [<biomesoplenty:gem:1>, <biomesoplenty:gem:2>, <biomesoplenty:gem:3>, <biomesoplenty:gem:4>, <biomesoplenty:gem:5>, <biomesoplenty:gem:6>, <biomesoplenty:gem:7>], [0,1]);
 
 # Tallow
