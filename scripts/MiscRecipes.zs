@@ -527,3 +527,6 @@ scripts.process.crush(<ore:enderpearl>, <appliedenergistics2:material:46>, "Exce
 # Milk Powder
 scripts.process.evaporate(<fluid:milk> * 250, <ic2:dust:33>, "No exceptions");
 scripts.process.solution([<ic2:dust:33>], [<fluid:water> * 250], [<fluid:milk> * 250], null, "Except: highoven");
+
+# Remove Glass pane non-oredict recipe
+recipes.removeByRecipeName("minecraft:glass_pane");

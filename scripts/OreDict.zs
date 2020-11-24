@@ -740,3 +740,8 @@ function addSharpeningKitOredict(level as int, names as string[]) {
 
 # Bitumen
 <ore:bitumen>.addItems([<thermalfoundation:material:892>, <immersivepetroleum:material>]);
+
+# Additional essence added with mysticalcreations
+<ore:essenceTier2>.add(<mysticalcreations:creosolite_essence>);
+<ore:essenceTier3>.add(<mysticalcreations:cheese_essence>);
+<ore:essenceTier5>.add(<mysticalcreations:ultimate_essence>);

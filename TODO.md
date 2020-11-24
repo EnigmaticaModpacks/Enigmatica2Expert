@@ -41,6 +41,20 @@
 - ✏️ [x] Sawdust Compat
 - 𝓩𝒮 [x] Blood Magic Runes tip
 - ✏️ [x] Buff Bitum
+- 📖 [x] Creative Cube in book change to charged variant
+- 📖 [x] Creative Gas in book change NBT
+- 📖 [x] Give Osmium scanner card on previous mining level
+- 📖 [x] Phased Field Generator in QuestBook (remove NBT)
+- 📖 [x] Animal Bait as Intro to Animal's chapter
+- 📖 [x] Ember Root Boss to book (emberroot:rootsonespriteboss)
+- 📖 [x] CF Sprayer way earlier
+- 𝓩𝒮 [x] Make Blood Stone Stackable
+- 𝓩𝒮 [x] Make Draconic Armor symmetrical
+- 𝓩𝒮 [x] Mystical creations essence to tiered oredict
+- 𝓩𝒮 [x] Remove TCon Clear Glass from chisel
+- 𝓩𝒮 [x] Remove Unoredicted recipe of glass panes
+- 𝓩𝒮 [x] Rename Diamond Lattice back
+- 𝓩𝒮 [x] Vitium crystal in potion change required tags
 
 ## Planned
 
@@ -54,30 +68,15 @@
 - 🔨 [ ] TCon tools recycle
 - 💥 [ ] Merge E2E-v2
 - 📖 [ ] BQ Osmium mining level alternatives
-- 📖 [ ] Creative Cube in book change to charged variant
-- 📖 [ ] Creative Gas in book change NBT
-- 📖 [ ] Give Osmium scanner card on previous mining level
-- 📖 [ ] Phased Field Generator in QuestBook (remove NBT)
-- 📖 [ ] Gift Animal Baits in animals chapter
-- 📖 [ ] Ember Root Boss to book
-- 📖 [ ] CF Sprayer way earlier
-- 𝓩𝒮 [ ] Inductions remake
-- 𝓩𝒮 [ ] Make Blood Stone Stackable
-- 𝓩𝒮 [ ] Make Draconic Armor symmetrical
-- 𝓩𝒮 [ ] Mystical creations essence to tiered oredict
-- 𝓩𝒮 [ ] Printed Page tooltip
-- 𝓩𝒮 [ ] Remove TCon Clear Glass from chisel
-- 𝓩𝒮 [ ] Remove Unoredicted recipe of glass panes
+- 𝓩𝒮 [x] Printed Page tooltip
+- 𝓩𝒮 [ ] Omega potion rename, logaryphmic level buff
+- 𝓩𝒮 [x] IC2 Coolant Wont be consumed in salt reactor
 - 𝓩𝒮 [ ] Remove Useless NC recipes (for example enriching depleted fuel with salt)
-- 𝓩𝒮 [ ] Rename Diamond Lattice back
-- 𝓩𝒮 [ ] Vitium crystal in potion change required tags
-- 𝓩𝒮 [ ] IC2 Coolant Wont be consumed in salt reactor
 - ⚙️ [ ] Benefication for gems should return more gems
 - ✏️ [ ] Remake "Animal" recipes to use Bee's instead of machines (alter recipes or use bee's ingrs)
 - ✏️ [ ] 4 Singularity => Creative bin
 - 🌍 [ ] Reload JER world data
 - ✏️ [ ] Matter Condenser uncraftable
-- ✏️ [ ] Omega potion rename, logaryphmic level buff
 - ✏️ [ ] Combination Crafting for Energy Manipulator
 - ✏️ [ ] Crushed quartz is wrong
 - ✏️ [ ] Other colors from color essence
@@ -88,7 +87,7 @@
 - ✏️ [ ] Benefication for Rat nuggets
 - ⚙️ [ ] process.squeeze from Forestry.zs should accept any machine (temp. disabled)
 - 𝓩𝒮 [ ] Remove excessive logging for non-debug clients
-- 𝓩𝒮 [ ] Remove excessive logging for non-debug clients
+- 𝓩𝒮 [ ] Merge 1.82a
 
 ### Do after process.zs class rework:
 

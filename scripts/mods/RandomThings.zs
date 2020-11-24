@@ -16,6 +16,7 @@ recipes.addShaped("ender_bucket2",
 
 # Blood stone from moon stone in Life Essense
 mods.inworldcrafting.FluidToItem.transform(<randomthings:rezstone>, <fluid:lifeessence>, [<extrautils2:ingredients:5>]);
+<randomthings:rezstone>.maxStackSize = 64;
 
 # Precious emerald from emerald in blueslime
 mods.inworldcrafting.FluidToItem.transform(<randomthings:ingredient:9> * 2, <fluid:blueslime>, [<ore:oreEmerald>]);

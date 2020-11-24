@@ -376,7 +376,6 @@ addDragonForgeRecipe(<minecraft:nether_star> * 2, <avaritia:resource> * 4, <avar
 
 # Lattice
 var CD = <mekanism:compresseddiamond>;
-<avaritia:resource>.displayName = "§eRecharged Diamond";
 recipes.remove(<avaritia:resource>);
 scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<avaritia:resource> * 2, 100000000, 1000000, CD, [CD]);
 # Somehow infuser craft item/tick after first item

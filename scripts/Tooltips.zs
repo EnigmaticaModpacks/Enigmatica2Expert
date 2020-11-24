@@ -1974,3 +1974,6 @@ addDescription(<opencomputers:print>,
 <bloodmagic:blood_rune:8> .addTooltip("§f+2% to the maximum capacity of your Blood Orb, additively");
 <bloodmagic:blood_rune:9> .addTooltip("§f-1 tick before the next processing (default is 20)");
 <bloodmagic:blood_rune:10>.addTooltip("§f1000 Charge");
+
+<computercraft:printout>.addTooltip("§fPrint with §eComputer Craft§r's §bPrinter");
+addDescription(<computercraft:printout>.withTag({pages: 1}), "§fPrint with §eComputer Craft§r's §bPrinter");

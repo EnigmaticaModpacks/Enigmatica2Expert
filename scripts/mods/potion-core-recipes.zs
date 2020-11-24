@@ -153,7 +153,7 @@ addBrewWithUpgrades(
   "potioncore:strong_slow_fall", "potioncore:long_slow_fall"
 );
 addBrewWithUpgradesFromBase(
-  "potioncore:slow_fall", <mysticalagriculture:chunk:18>, "potioncore:flight",
+  "potioncore:slow_fall", <forestry:butterfly_ge:*>, "potioncore:flight",
   null, "potioncore:long_flight",
   null, "potioncore:long_slow_fall"
 );

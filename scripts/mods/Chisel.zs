@@ -63,6 +63,10 @@ addVariation("marbledCheese", <rats:marbled_cheese_brick>);
 addVariation("marbledCheese", <rats:marbled_cheese_brick_chiseled>);
 addVariation("marbledCheese", <rats:marbled_cheese_brick_cracked>);
 
+# Remove clear glass from chisel
+mods.chisel.Carving.removeVariation("glass", <tconstruct:clear_glass>);
+
+
 # Harder  Iron chisel
 recipes.remove(<chisel:chisel_iron>);
 recipes.addShaped(<chisel:chisel_iron>, [
