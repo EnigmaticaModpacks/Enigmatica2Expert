@@ -530,3 +530,18 @@ scripts.process.solution([<ic2:dust:33>], [<fluid:water> * 250], [<fluid:milk> *
 
 # Remove Glass pane non-oredict recipe
 recipes.removeByRecipeName("minecraft:glass_pane");
+
+# Quarts dust wrong recipes
+val qwrong = <nuclearcraft:gem_dust:2>;
+val qdust = <appliedenergistics2:material:3>;
+recipes.removeByRecipeName("thermalfoundation:gem_dust");
+craft.shapeless(qdust, "AB", {
+	A: <ore:oreQuartz>,
+	B: <ore:dustPetrotheum>,
+});
+mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:quartz_ore>, <bloodmagic:cutting_fluid>]);
+mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:quartz_ore>);
+mods.immersiveengineering.Crusher.removeRecipesForInput(<minecraft:quartz>);
+mods.mekanism.crusher.removeRecipe(qwrong);
+mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:quartz>);
+scripts.process.crush(<ore:gemQuartz>, qdust, "only: iecrusher aegrinder mekcrusher", null, null);
