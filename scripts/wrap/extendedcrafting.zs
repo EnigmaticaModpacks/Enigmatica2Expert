@@ -23,9 +23,9 @@ import thaumcraft.aspect.CTAspectStack;
 zenClass Class_CompressionCrafting { zenConstructor() {}
 
 	// Uses of this method: 6
-	function addRecipe(output as IItemStack, input as IIngredient, inputCount as int, catalyst as IIngredient, rfCost as int, rfRate as int) as void {
+	function addRecipe(output as IItemStack, input as IItemStack, inputCount as int, catalyst as IItemStack, rfCost as int, rfRate as int) as void {
 		print('Recipe wrapped: mods.extendedcrafting.CompressionCrafting.addRecipe'~
-			serializeArguments([serialize_IItemStack(output), serialize_IIngredient(input), inputCount, serialize_IIngredient(catalyst), rfCost, rfRate]));
+			serializeArguments([serialize_IItemStack(output), serialize_IItemStack(input), inputCount, serialize_IItemStack(catalyst), rfCost, rfRate]));
 		mods.extendedcrafting.CompressionCrafting.addRecipe(output, input, inputCount, catalyst, rfCost, rfRate);
 	}
 

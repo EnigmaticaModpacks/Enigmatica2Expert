@@ -13,7 +13,6 @@ var categoriesToHide as string[] = [
 	"thermalexpansion.factorizer_split",
 	"Painter",
 	"forestry.bottler",
-	"jeresources.villager",
 	"ic2.scrapbox",
 	"EIOTank",
 	"xu2_machine_extrautils2:furnace",

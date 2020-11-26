@@ -327,7 +327,7 @@ list["θ"] = <ic2:te:134>;
 list["◆"] = <enderio:item_capacitor_stellar>;
 
 
-craft.make( <mekanism:machineblock2:11>.withTag({tier: 4, mekData:{}}), ["pretty",
+craft.make( <mekanism:machineblock2:11>.withTag({tier: 4}), ["pretty",
 "◉ ◉ ♀ ♀ ◆ ♀ ♀ . .",
 "◉ ◽ ▬ ▬ ◊ ▬ ▬ ◽ .",
 "θ ▬ ⩉ ⩉ ⩉ ⩉ ⩉ ▬ .",
@@ -339,7 +339,7 @@ craft.make( <mekanism:machineblock2:11>.withTag({tier: 4, mekData:{}}), ["pretty
 ". . . . . . . . ."], list);
 
 recipes.addShapeless("Creative Tank Reset", 
-<mekanism:machineblock2:11>.withTag({tier: 4, mekData: {}}), 
+<mekanism:machineblock2:11>.withTag({tier: 4}), 
 [<mekanism:machineblock2:11>.withTag({tier: 4})]);
 
 	
@@ -479,7 +479,7 @@ list["⌧"] = <ore:ingotInfinity>;
 list["⇭"] = twilightForestMasterTrophy;
 list["◯"] = <draconicevolution:reactor_core>;
 list["⇯"] = creativeCube;
-list["⇫"] = <mekanism:machineblock2:11>.withTag({tier: 4, mekData:{}});
+list["⇫"] = <mekanism:machineblock2:11>.withTag({tier: 4});
 
 /*  •◎♪♫♱✓⸕₇₈₉⇮⩈ζλ  */
 craft.make(<storagedrawers:upgrade_creative:1> * 2, ["pretty",

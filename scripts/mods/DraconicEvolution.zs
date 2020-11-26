@@ -1,6 +1,7 @@
 import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import scripts.craft.grid.Grid;
 #modloaded draconicevolution
 
 # *======= Recipes =======*
@@ -99,3 +100,12 @@ var ingrds as IItemStack[] = [
 ] as IItemStack[];
 scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(dchest, 20000000, 2000000, <minecraft:chest>, ingrds as IIngredient[]);
 scripts.wrap.actuallyadditions.Empowerer.addRecipe(dchest, <minecraft:chest>, ingrds[0], ingrds[1], ingrds[2], ingrds[3], 20000000/4, 400, [8.0, 0.1, 0.9]);
+
+# Combination Crafting Alternative for Ender Energy Manipulator
+scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(
+	<draconicevolution:ender_energy_manipulator>, 12000000, 1200000, 
+	<randomthings:obsidianskull>, Grid(["AABCCCCCCC"], {
+		A: <draconicevolution:draconic_core>,
+		B: <draconicevolution:dislocator>,
+		C: <deepmoblearning:pristine_matter_enderman>,
+	}).shapeless());

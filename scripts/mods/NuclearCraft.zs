@@ -198,7 +198,7 @@ mods.nuclearcraft.turbine.addRecipe([<liquid:ic2superheated_steam>, <liquid:ic2s
 mods.nuclearcraft.turbine.addRecipe([<liquid:ic2steam>, <liquid:low_quality_steam> * 2, 400.0d, 1.6d]);
 # Heat exchanger
 # mods.nuclearcraft.heat_exchanger.addRecipe([fluidInput, fluidOutput, double heatRequired, int temperatureIn, int temperatureOut]);
-mods.nuclearcraft.heat_exchanger.addRecipe([<liquid:ic2hot_coolant>, <liquid:ic2coolant>, -200.0d, 700, 300]);
+mods.nuclearcraft.heat_exchanger.addRecipe([<liquid:ic2hot_coolant>, <liquid:ic2coolant>, 10000.0d, 700, 300]);
 
 # Harder compressed RTG recipes
 for item in loadedMods["notenoughrtgs"].items {
@@ -211,7 +211,7 @@ addDecayRecipe([<contenttweaker:terrestrial_artifact_block>, <environmentaltech:
 addDecayRecipe([<environmentaltech:litherite>             , <actuallyadditions:block_misc:6>, 12000.0d, 18000.0d]);
 
 # Radiation mutations
-# Sadly, radiation mutatios works really laggy and cant 
+# Sadly, radiation mutations works really laggy and cant 
 #   be implemented in heavy modpacks...
 // for threshold, pair in {
 // 	0.05d: {

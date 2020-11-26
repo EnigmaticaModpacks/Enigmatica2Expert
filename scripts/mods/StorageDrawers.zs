@@ -1,5 +1,6 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
+import crafttweaker.data.IData;
 
 #modloaded storagedrawers
 
@@ -68,3 +69,12 @@ remakeDrawerUpgrade(<storagedrawers:upgrade_storage:1>, <ore:nuggetEndSteel>);
 remakeDrawerUpgrade(<storagedrawers:upgrade_storage:2>, <ore:nuggetCrystallineAlloy>);
 remakeDrawerUpgrade(<storagedrawers:upgrade_storage:3>, <ore:nuggetUltimate>);
 remakeDrawerUpgrade(<storagedrawers:upgrade_storage:4>, <ore:nuggetChaoticMetal>);
+
+# Drawers clearing
+function clearDrawer(inputs as IItemStack[]) as void  {
+	for it in inputs {
+		recipes.addShapeless("Clearing " ~ getItemName(it), it, [it]);
+	}
+}
+clearDrawer(<ore:drawerBasic>.items);
+clearDrawer([<storagedrawers:compdrawers>]);

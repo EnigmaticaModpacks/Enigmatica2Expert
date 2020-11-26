@@ -46,8 +46,8 @@
 - 📖 [x] Give Osmium scanner card on previous mining level
 - 📖 [x] Phased Field Generator in QuestBook (remove NBT)
 - 📖 [x] Animal Bait as Intro to Animal's chapter
-- 📖 [x] Ember Root Boss to book (emberroot:rootsonespriteboss)
-- 📖 [x] CF Sprayer way earlier
+- 📖 [x] Ember Root Boss to book
+- 📖 [x] CF Sprayer on other brunch
 - 𝓩𝒮 [x] Make Blood Stone Stackable
 - 𝓩𝒮 [x] Make Draconic Armor symmetrical
 - 𝓩𝒮 [x] Mystical creations essence to tiered oredict
@@ -55,6 +55,16 @@
 - 𝓩𝒮 [x] Remove Unoredicted recipe of glass panes
 - 𝓩𝒮 [x] Rename Diamond Lattice back
 - 𝓩𝒮 [x] Vitium crystal in potion change required tags
+- 𝓩𝒮 [x] Printed Page tooltip
+- 𝓩𝒮 [x] IC2 Coolant Wont be consumed in salt reactor
+- 𝓩𝒮 [x] Compacting Drawer, Open Blocks tank, Tinker's tanks Clearing
+- 🟡 [x] Extended Crafting replace to old version
+- ✏️ [x] Combination Crafting for Energy Manipulator
+- ✏️ [x] Other colors from color essence
+- ✏️ [x] Change Creative Gas ingredients (remove items with NBT)
+- 𝓩𝒮 [x] Remove Useless NC recipes (for example enriching depleted fuel with salt)
+- ✏️ [x] Creative Fluid Tank no `mekData:{}`
+- ✏️ [x] Crushed quartz is wrong
 
 ## Planned
 
@@ -64,30 +74,20 @@
 - 💥 [ ] Uses of singularities
 - 💥 [ ] New 🐝 for endgame
 - 💥 [ ] **Rats** Structures Generation
-- ✏️ [ ] Fix XML recipes get wrong first items of Oredicts
-- 🔨 [ ] TCon tools recycle
+- 🔨 [x] TCon tools recycle
 - 💥 [ ] Merge E2E-v2
 - 📖 [ ] BQ Osmium mining level alternatives
-- 𝓩𝒮 [x] Printed Page tooltip
 - 𝓩𝒮 [ ] Omega potion rename, logaryphmic level buff
-- 𝓩𝒮 [x] IC2 Coolant Wont be consumed in salt reactor
-- 𝓩𝒮 [ ] Remove Useless NC recipes (for example enriching depleted fuel with salt)
-- ⚙️ [ ] Benefication for gems should return more gems
-- ✏️ [ ] Remake "Animal" recipes to use Bee's instead of machines (alter recipes or use bee's ingrs)
-- ✏️ [ ] 4 Singularity => Creative bin
-- 🌍 [ ] Reload JER world data
-- ✏️ [ ] Matter Condenser uncraftable
-- ✏️ [ ] Combination Crafting for Energy Manipulator
-- ✏️ [ ] Crushed quartz is wrong
-- ✏️ [ ] Other colors from color essence
-- 𝓩𝒮 [x] Compacting Drawer, Open Blocks tank, Tinker's tanks Clearing
-- ✏️ [x] Change Creative Gas ingredients (remove items with NBT)
-- ✏️ [x] Creative Fluid Tank no `mekData:{}`
+- ✏️ [x] Fix XML recipes get wrong first items of Oredicts
+- ⚙️ [x] Benefication for gems should return more gems
 - 🧩 [x] More radiactive blocks (some items wont get radiation)
-- ✏️ [ ] Benefication for Rat nuggets
-- ⚙️ [ ] process.squeeze from Forestry.zs should accept any machine (temp. disabled)
+- ✏️ [x] Benefication for Rat nuggets
 - 𝓩𝒮 [ ] Remove excessive logging for non-debug clients
 - 𝓩𝒮 [ ] Merge 1.82a
+- ✏️ [ ] Remake "Animal" recipes to use Bee's instead of machines (alter recipes or use bee's ingrs)
+- ✏️ [ ] Simplify TE Backpacks
+- 🧩 [ ] Osmium Spawn too weak
+- 🌍 [ ] Reload JER world data
 
 ### Do after process.zs class rework:
 
@@ -105,6 +105,7 @@
 - ⚙️ [ ] Chained crafting (Solar Panels in precision assembler)
 - ⚙️ [ ] Ingredients with chance should multiplied if chance > 1.0
 - ⚙️ [ ] Use Rat Diamond in most machines
+- ⚙️ [ ] process.squeeze from Forestry.zs should accept any machine (temp. disabled)
 
 ## Long-term
 
@@ -128,6 +129,7 @@
 - 🌍 [ ] New AdvRocke atmospheres
 - 𝓩𝒮 [ ] Ice Balls stack up to 64. Somehow not working, reported to github
 - 𝓩𝒮 [ ] New Pam's traps. Not actually working, new recipes wouldn't appear
+- ✏️ [ ] 4 Singularity => Creative bin
 
 
 ## Unused TC traits
