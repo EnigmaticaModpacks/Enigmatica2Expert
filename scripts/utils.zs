@@ -22,9 +22,11 @@ zenClass Utils {
 
 	zenConstructor() { }
 
-  function getSomething(oreName as string, entryNames as string[]) as IItemStack {
+  function getSomething(oreName as string, entryNames as string[]) as IItemStack { return getSomething(oreName, entryNames, 1); }
+  function getSomething(oreName as string, entryNames as string[], amount as int) as IItemStack {
     if (isNull(oreName)) return null;
 
+    // Find with JAOPCA
     val JOREoutput = mods.jaopca.JAOPCA.getOre(oreName);
     var something as IItemStack = null;
     if (!isNull(JOREoutput)) {
@@ -34,21 +36,32 @@ zenClass Utils {
         k += 1;
       }
     }
+
+    // Find with Oredict
     if (isNull(something)) {
       for str in entryNames {
-        if (oreDict has (str~oreName)) {
-          var oreItems = oreDict[str~oreName].items;
+        val oreItems = oreDict[str~oreName].items;
+        if (oreItems.length>0) {
           for preffer in modPreference {
             for item in oreItems {
-              if(item.definition.id.startsWith(preffer)) return item;
+              if(item.definition.id.startsWith(preffer))
+                return countOutput(item * amount, oreName);
             }
           }
-          return oreDict[str~oreName].firstItem;
+          return countOutput(oreDict[str~oreName].firstItem * amount, oreName);
         }
       }
     }
+    
+    // Find with smelting
+    if (isNull(something) && entryNames has "any") {
+      val oreItems = oreDict['ore'~oreName].items;
+      if (oreItems.length>0) {
+        something = smelt(oreDict['ore'~oreName]);
+      }
+    }
 
-    return something;
+    return isNull(something) ? null : countOutput(something * amount, oreName);
   }
 
   # Return result of smelting in vanilla furnace
@@ -161,5 +174,52 @@ zenClass Utils {
 
     return result;
   }
+
+  
+  static defaultEmount as double[string] = {
+    "Amber"               : 2.0d,
+    "Amethyst"            : 2.0d,
+    "Apatite"             : 10.0d,
+    "Aquamarine"          : 4.0d,
+    "CertusQuartz"        : 3.0d,
+    "ChargedCertusQuartz" : 2.0d,
+    "Coal"                : 5.0d,
+    "Diamond"             : 2.0d,
+    "DimensionalShard"    : 3.0d,
+    "Emerald"             : 2.0d,
+    "Glowstone"           : 4.0d,
+    "Lapis"               : 10.0d,
+    "Malachite"           : 2.0d,
+    "Peridot"             : 2.0d,
+    "Quartz"              : 3.0d,
+    "QuartzBlack"         : 2.0d,
+    "quicksilver"         : 2.0d,
+    "Redstone"            : 10.0d,
+    "Ruby"                : 2.0d,
+    "Sapphire"            : 2.0d,
+    "Tanzanite"           : 2.0d,
+    "Topaz"               : 2.0d,
+  } as double[string];
+
+  function countOutput(item as IItemStack, oreName as string) as IItemStack {
+    val def = defaultEmount[oreName];
+    if(isNull(def)) return item;
+
+    val d = def as double;
+    if (d != 0.0d) {
+      return item * min(64, (((item.amount as double - 1.0d) * (d*0.75d) + d) as int));
+    }
+    return item;
+  }
+
+    
+  # Turn one item into another but keep all tags
+  static upgradeFnc as IRecipeFunction = function(out, ins, cInfo){
+    if(ins has "marked" && !isNull(ins.marked) && ins.marked.hasTag) {
+      var tag = ins.marked.tag;
+      return out.withTag(tag);
+    }
+    return out;
+  };
 }
 global utils as Utils = Utils();

@@ -142,8 +142,12 @@ function workEx(machineNameAnyCase as string, exceptions as string,
 
     if (machineName == "grindstone") {
       # mods.astralsorcery.Grindstone.addRecipe(IItemStack input, IItemStack output, float doubleChance);
-      for ii in inputIngr0.itemArray {
-        scripts.wrap.astralsorcery.Grindstone.addRecipe(ii, outputItem0, defaultChance0(extraChance, 0.0f) / outputItem0.amount);
+      if (inputIngr0.amount == 1) {
+        for ii in inputIngr0.itemArray {
+          scripts.wrap.astralsorcery.Grindstone.addRecipe(ii, outputItem0, defaultChance0(extraChance, 0.0f) / outputItem0.amount);
+        }
+      } else {
+        return info(machineNameAnyCase, getItemName(inputIngr0.itemArray[0]), "received work, but this machine can only work with 1 item as input");
       }
       return machineName;
     }
@@ -243,6 +247,11 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       if (strict) { mods.actuallyadditions.Crusher.removeRecipe(outputItem0); }
       # mods.actuallyadditions.Crusher.addRecipe(IItemStack output, IItemStack input, @Optional IItemStack outputSecondary, @Optional int outputSecondaryChance);
           
+      if (inputIngr0.amount != 1) {
+        return info(machineNameAnyCase, getItemName(inputIngr0.itemArray[0]), 
+        "received work, but this machine can only work with 1 item as input");
+      }
+
       for ii in inputIngr0.itemArray {
         if (haveExtra) {
           scripts.wrap.actuallyadditions.Crusher.addRecipe(outputItem0, ii, extra[0], defaultChance0_int(extraChance, 100));
@@ -254,9 +263,11 @@ function workEx(machineNameAnyCase as string, exceptions as string,
     }
 
     if (machineName == "aegrinder") {
+      # Grinder.removeRecipe(IItemStack input);
       # Grinder.addRecipe(IItemStack output, IItemStack input, int turns, @Optional IItemStack secondary1Output, @Optional float secondary1Chance, @Optional IItemStack secondary2Output, @Optional float secondary2Chance);
 
       for ii in inputIngr0.itemArray {
+        if (strict) { mods.appliedenergistics2.Grinder.removeRecipe(ii); }
         if (haveExtra) {
           if (extra.length == 1) {
             scripts.wrap.appliedenergistics2.Grinder.addRecipe(outputItem0, ii, 2, extra[0], extraChance[0]);
@@ -356,6 +367,11 @@ function workEx(machineNameAnyCase as string, exceptions as string,
     if (machineName == "crushingblock") {
       # addCrushingBlockRecipe(IItemStack input, IItemStack[] outputs, double[] probs)
 
+      if (inputIngr0.amount != 1) {
+        return info(machineNameAnyCase, getItemName(inputIngr0.itemArray[0]), 
+        "received work, but this machine can only work with 1 item as input");
+      }
+
       # Summ of chances should be equal 1, so we compute it
       var chancesSumm = 0.0f;
       var normalizedChances = [] as float[];
@@ -420,6 +436,11 @@ function workEx(machineNameAnyCase as string, exceptions as string,
     }
 
     if (machineName == "sagmill") {
+      if (inputIngr0.amount != 1) {
+        return info(machineNameAnyCase, getItemName(inputIngr0.itemArray[0]), 
+        "received work, but this machine can only work with 1 item as input");
+      }
+      
       if (combinedOutput.length > 0 && combinedChances.length >= combinedOutput.length) {
         scripts.wrap.enderio.SagMill.addRecipe(combinedOutput, combinedChances, inputIngr0);
       } else {
@@ -429,6 +450,8 @@ function workEx(machineNameAnyCase as string, exceptions as string,
     }
 
     if (machineName == "iecrusher") {
+      # mods.immersiveengineering.Crusher.removeRecipe(IItemstack output);
+      if (strict) { mods.immersiveengineering.Crusher.removeRecipe(outputItem0); }
       # mods.immersiveengineering.Crusher.addRecipe(IItemStack output, IIngredient input, int energy, @Optional IItemStack secondaryOutput, @Optional double secondaryChance);
       if (haveExtra) {
         scripts.wrap.immersiveengineering.Crusher.addRecipe(outputItem0, inputIngr0, 2048, extra[0], extraChance[0]);
@@ -575,6 +598,11 @@ function workEx(machineNameAnyCase as string, exceptions as string,
     if (machineName == "starlightinfuser") {
       # mods.astralsorcery.StarlightInfusion.addInfusion(IItemStack input, IItemStack output, boolean consumeMultiple, float consumptionChance, int craftingTickTime);
       
+      if (inputIngr0.amount != 1) {
+        return info(machineNameAnyCase, getItemName(inputIngr0.itemArray[0]), 
+        "received work, but this machine can only work with 1 item as input");
+      }
+
       if (inputItems.length == 1 && outputItems.length == 1) {
         for ii in inputIngr0.itemArray {
           scripts.wrap.astralsorcery.StarlightInfusion.addInfusion(ii, outputItem0, false, 0.7, 60);

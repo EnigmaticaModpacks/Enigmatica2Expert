@@ -14,6 +14,7 @@ import mods.jei.JEI.removeAndHide as rh;
 
 static meltingExceptions as IData = ['Amber','Redstone','Coal'] as IData;
 
+
 # Native clusters processing
 for ore_entry in oreDict {
 	val name = ore_entry.name;
@@ -31,8 +32,8 @@ for ore_entry in oreDict {
       var smelted = utils.smelt(ore_entry);
       if (isNull(smelted)) {
         furnace.remove(<*>, ore_entry);
-        var gem = utils.getSomething(ore_name, ["gem", "dust"]);
-        if(!isNull(gem)) furnace.addRecipe(gem * 2, ore_entry);
+        var gem = utils.getSomething(ore_name, ["gem", "dust", "any"], 2);
+        if(!isNull(gem)) furnace.addRecipe(gem, ore_entry);
       }
 
       magicProcessing(ore_entry, ore_name);
@@ -113,8 +114,8 @@ function magicProcessing(nativeClusterOreEntry as IOreDictEntry, ore_name as str
   scripts.process.beneficiate(dirtyGem, ore_name, 13, {meltingExceptions: meltingExceptions});
 
   # manual furnance
-  var ingotOrGem = utils.getSomething(ore_name, ["ingot", "gem", "dust"]);
-  if(!isNull(ingotOrGem)) furnace.addRecipe(ingotOrGem * 12, dirtyGem);
+  var ingotOrGem = utils.getSomething(ore_name, ["ingot", "gem", "dust", "any"], 12);
+  if(!isNull(ingotOrGem)) furnace.addRecipe(ingotOrGem, dirtyGem);
 
   #  ██╗
   # ███║

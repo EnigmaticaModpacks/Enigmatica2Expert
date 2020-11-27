@@ -39,6 +39,7 @@ import mods.jaopca.OreEntry;
 
 import scripts.processWork.work;
 import scripts.processWork.workEx;
+import scripts.processUtils.wholesCalc;
 
 import mods.ctutils.utils.Math.min;
 import mods.ctutils.utils.Math.max;
@@ -272,7 +273,13 @@ function magic(input as IIngredient[], output as IItemStack[], exceptions as str
 
 # Takes raw material (like Ore block) and enrich (process, treat) it to get materials
 # 📦 → 📦|💧
-function beneficiate(input as IIngredient, oreName as string, amount as int, opts as IData) {
+function beneficiate(_input as IIngredient, _oreName as string, _amount as double, opts as IData) {
+
+  val calc = wholesCalc(_amount);
+  val amount = calc.outs as int;
+  val input = _input * (_input.amount * calc.ins as int);
+
+  val oreName = (_oreName == "Aluminum") ? "Aluminium" : _oreName;
 
   val JA = mods.jaopca.JAOPCA.getOre(oreName);
   var exceptions = Dd(opts,'exceptions',{d:''}).asString();
@@ -292,21 +299,21 @@ function beneficiate(input as IIngredient, oreName as string, amount as int, opt
     min(1.0, 0.05  * amount)] as float[];
 
   # Crush Dust or Gem
-  val dustOrGem = utils.getSomething(oreName, ["dust", "gem"]);
+  val dustOrGem = utils.getSomething(oreName, ["dust", "gem", "any"], amount);
   if (!isNull(dustOrGem)) {
-    crush(input, dustOrGem * amount, exceptions ~ " macerator thermalCentrifuge", extra, extraChances);
+    crush(input, dustOrGem, exceptions ~ "macerator thermalCentrifuge", extra, extraChances);
   }
 
   # Crush IC2
-  val crushedOrDust = utils.getSomething(oreName, ["crushed", "dust"]);
+  val crushedOrDust = utils.getSomething(oreName, ["crushed", "dust", "any"], amount);
   if (!isNull(crushedOrDust)) {
-    crush(input, crushedOrDust * amount, "only: macerator", null, null);
+    crush(input, crushedOrDust, "only: macerator", null, null);
   }
 
   # Magic
-  val ingotOrGem = utils.getSomething(oreName, ["ingot", "gem"]);
+  val ingotOrGem = utils.getSomething(oreName, ["ingot", "gem", "any"], amount);
   if (!isNull(ingotOrGem)) {
-    magic([input], [ingotOrGem * amount], exceptions);
+    magic([input], [ingotOrGem], exceptions);
   }
 
   # Melt
@@ -318,17 +325,18 @@ function beneficiate(input as IIngredient, oreName as string, amount as int, opt
     var meltAllowed = true;
     for meltExc in meltingExceptions { if(meltExc.asString() == oreName) meltAllowed=false; }
     if(meltAllowed) {
-      if (JA.oreType.toLowerCase() == "ingot") { melt(input, liquid * (144*amount), exceptions); }
-      if (JA.oreType.toLowerCase() == "gem")   { melt(input, liquid * (666*amount), exceptions); }
+      if (JA.oreType.toLowerCase() == "ingot") { melt(input * 1, liquid * (144*amount / input.amount), exceptions); }
+      if (JA.oreType.toLowerCase() == "gem")   { melt(input * 1, liquid * (666*amount / input.amount), exceptions); }
     }
   }
 
   # Mekanism machines can't work with NBT tags for inputs
   # So check if we have NBT first
-  if (!input.itemArray[0].hasTag) {
-    val clump = utils.getSomething(oreName, ["clump"]);
+  if (isNull(input.itemArray[0].tag)) {
+
+    val clump = utils.getSomething(oreName, ["clump"], amount + 1);
     if(!isNull(clump)) {
-      workEx("mekpurification", exceptions, [input], null, [clump * (amount + 1)], null, null, null, null);
+      workEx("mekpurification", exceptions, [input], null, [clump], null, null, null, null);
     }
 
     val slurryName = "slurry" ~ oreName;
@@ -338,9 +346,9 @@ function beneficiate(input as IIngredient, oreName as string, amount as int, opt
       workEx("mekdissolution", exceptions, [input], null, null, null, null, null, {gasOutput: slurryName, gasOutputAmount: gasAmount});
     }
 
-    val shard = utils.getSomething(oreName, ["shard"]);
+    val shard = utils.getSomething(oreName, ["shard"], amount + 2);
     if(!isNull(shard)) {
-      workEx("mekinjection", exceptions, [input], null, [shard * (amount + 2)], null, null, null, null);
+      workEx("mekinjection", exceptions, [input], null, [shard], null, null, null, null);
     }
   }
 }
