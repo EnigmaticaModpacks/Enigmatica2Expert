@@ -3,74 +3,7 @@
 ## Finished
 
 -----------
-- 🟢 [x] Gotta Go Fast
-- ⚙️ [x] Supercooled ice compat
-- ✏️ [x] Creative Vending swap Draconium chests for Specilative Processor
-- ✏️ [x] Harder Botania's Magnet Ring
-- ✏️ [x] Creative RF Cube remove rainbow generators from input
-- ✏️ [x] Molten Lapis Cast, Molten Quartz
-- ✏️ [x] Raise Cooling Rate for useless NC active coolers
-- ✏️ [x] Remake Scoot-Covered Plate with right type of quartz
-- 🟡 [x] Better Hurt Timer
-- ⚙️ [x] Construction Foam Unify
-- ✏️ [x] Add Salis Mundis Recipe (now its hudden)
-- 📖 [x] BQ Give bucket of fuel as rewart to encourage fluids research
-- ✏️ [x] Remake Immersive slabs
-- 🌍 [x] Fix Alien Forest Dissapear
-- ⚙️ [x] Lower AE Grindstone double output (its 100% sometimes now)
-- ⚙️ [x] Return Ender dust Compat
-- ✏️ [x] Change Excavator Craft (swap little balls)
-- ✏️ [x] Hardened Ice (from MA essence, from packed ice, from compressor) -> Ice Balls
-- ✏️ [x] Simplify Infinity Catalyst (or Infinity Ingot)
-- ✏️ [x] Unifi Molten Infinity (remove Plustic version from NC melter)
-- 🧩 [x] Drawers more levels for storage upgrades
-- ✏️ [x] Simplify Ender Energy manipulator
-- ✏️ [x] Slime Cube easier
-- ✏️ [x] EU2 Harder Player Interface
-- ✏️ [x] Dry milk
-- 🧩 [x] Allow pulp from Hammer but change pulp uses. Unify dustWood
-- 🧩 [x] Dimlet: Quark
-- 🧩 [x] Ender swords increase damage on IV
-- 𝓩𝒮 [x] Random Things Change drops of bean pod
-- 🔨 [x] Nerf Aquamarine mining level
-- 🔨 [x] Nerf Osgloglas
-- 🔨 [x] Use JEI search for mining levels to tweak it
-- ✏️ [X] IC2 Solar Precision Assembler
-- 𝓩𝒮 [x] Liquid Concrete NOT setted to infinite
-- ✏️ [x] Easier Rat Chief upgrade (apple is too pricy after crystal nerfing)
-- ✏️ [x] Sawdust Compat
-- 𝓩𝒮 [x] Blood Magic Runes tip
-- ✏️ [x] Buff Bitum
-- 📖 [x] Creative Cube in book change to charged variant
-- 📖 [x] Creative Gas in book change NBT
-- 📖 [x] Give Osmium scanner card on previous mining level
-- 📖 [x] Phased Field Generator in QuestBook (remove NBT)
-- 📖 [x] Animal Bait as Intro to Animal's chapter
-- 📖 [x] Ember Root Boss to book
-- 📖 [x] CF Sprayer on other brunch
-- 𝓩𝒮 [x] Make Blood Stone Stackable
-- 𝓩𝒮 [x] Make Draconic Armor symmetrical
-- 𝓩𝒮 [x] Mystical creations essence to tiered oredict
-- 𝓩𝒮 [x] Remove TCon Clear Glass from chisel
-- 𝓩𝒮 [x] Remove Unoredicted recipe of glass panes
-- 𝓩𝒮 [x] Rename Diamond Lattice back
-- 𝓩𝒮 [x] Vitium crystal in potion change required tags
-- 𝓩𝒮 [x] Printed Page tooltip
-- 𝓩𝒮 [x] IC2 Coolant Wont be consumed in salt reactor
-- 𝓩𝒮 [x] Compacting Drawer, Open Blocks tank, Tinker's tanks Clearing
-- 🟡 [x] Extended Crafting replace to old version
-- ✏️ [x] Combination Crafting for Energy Manipulator
-- ✏️ [x] Other colors from color essence
-- ✏️ [x] Change Creative Gas ingredients (remove items with NBT)
-- 𝓩𝒮 [x] Remove Useless NC recipes (for example enriching depleted fuel with salt)
-- ✏️ [x] Creative Fluid Tank no `mekData:{}`
-- ✏️ [x] Crushed quartz is wrong
-- 🧩 [x] More radiactive blocks (some items wont get radiation)
-- ✏️ [x] Benefication for Rat nuggets
-- 𝓩𝒮 [x] Omega potion rename
-- ✏️ [x] Simplify Ratlanean Spirit
-- ⚙️ [x] Benefication for gems should return more gems
-- 🔨 [x] TCon tools recycle. Tables crafts
+
 
 ## Planned
 
@@ -89,6 +22,7 @@
 - 🧩 [ ] Osmium Spawn too weak
 - 🧩 [ ] Amber Dissapeared from TCon tool parts
 - 🌍 [ ] Reload JER world data. Its also not showing
+- 🔨 [ ] TCon tools recycle working only with first tier
 - ✏️ [x] Simplify TE Backpacks
 - ✏️ [x] Fix XML recipes get wrong first items of Oredicts
 
