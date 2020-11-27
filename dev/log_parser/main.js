@@ -2,7 +2,7 @@
 /*=============================================
 =                Variables                    =
 =============================================*/
-const utils = require('../utils.js');
+const utils = require('../lib/utils.js')
 
 /*=============================================
 =                  Helpers                    =
@@ -199,20 +199,20 @@ var ignore = [
   /\[jei\]: Recipe registry plugin is slow, took 14.53 ms. class pl.asie.preston.compat.jei.CompressorRecipeRegistryPlugin/,
   /\[dsurround\]: Cannot find sound that should be registered \[minecraft:\]/,
   /\[net.minecraft.client.settings.GameSettings\]: Skipping bad option: lastServer:/,
-  /\[FML\]:   Registry: 242 minecraft:entity.ghast.warn net.minecraft.util.SoundEvent@17ebbf1e/,
-  /\[FML\]:   Registry: 859 twilightforest:mob.hydra.warn net.minecraft.util.SoundEvent@28037b9d/,
-  /\[FML\]:   Registry: 242 minecraft:entity.ghast.warn net.minecraft.util.SoundEvent@17ebbf1e/,
-  /\[FML\]:   Registry: 859 twilightforest:mob.hydra.warn net.minecraft.util.SoundEvent@28037b9d/,
+  /\[FML\]: {3}Registry: 242 minecraft:entity.ghast.warn net.minecraft.util.SoundEvent@17ebbf1e/,
+  /\[FML\]: {3}Registry: 859 twilightforest:mob.hydra.warn net.minecraft.util.SoundEvent@28037b9d/,
+  /\[FML\]: {3}Registry: 242 minecraft:entity.ghast.warn net.minecraft.util.SoundEvent@17ebbf1e/,
+  /\[FML\]: {3}Registry: 859 twilightforest:mob.hydra.warn net.minecraft.util.SoundEvent@28037b9d/,
   /\[advancedrocketry\]: Unable to create file C:\\Users\\LD\\Twitch\\Minecraft\\Instances\\Enigmatica2Expert - Extended\\saves\\New World-\\advRocketry\\planetDefs.xml/,
   /\[com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService\]: Couldn't look up profile properties for .* Invalid uuid.,legacy=false\]/,
   /\[FML\]: \* Invalid registration attempt for an Ore Dictionary item with name doorWood has occurred\./, // Reported to MIA
   /\[FML\]: \* Mods using BASE must have their mod class extend IBaseMod!/,
   /\[net\.minecraft\.server\.MinecraftServer\]: Can't keep up! Did the system time change/,
-  /\[FML\]:   Registry: .*SoundEvent/,
+  /\[FML\]: {3}Registry: .*SoundEvent/,
 
   /Failed to initialize artifact .*: Unknown material/, // Reported to TconEvo
 
-];
+]
 
 
 
@@ -222,14 +222,14 @@ var ignore = [
 // Known errors that should be fixed but not listed
 var known = [
 
-];
+]
 
 /*=============================================
 =           Working                           =
 =============================================*/
 
-var log = utils.loadText("../logs/debug.log");
-var newLog = "";
+var log = utils.loadText('../../logs/debug.log')
+var newLog = ''
 
 var o = {
   total: 0,
@@ -238,39 +238,39 @@ var o = {
   viewed: 0,
 }
 for (const match of log.matchAll(/^.*\W(error|WARN)\W.*$/gmi)) {
-  var isIgnore = false;
-  o.total += 1;
+  var isIgnore = false
+  o.total += 1
   for (let i = 0; i < ignore.length; i++) {
     if (match[0].match(ignore[i])) {
-      isIgnore = true;
-      break;
+      isIgnore = true
+      break
     }
   }
   
   if (!isIgnore) {
     for (let i = 0; i < known.length; i++) {
       if (match[0].match(known[i])) {
-        isIgnore = true;
-        o.resolved -= 1;
-        break;
+        isIgnore = true
+        o.resolved -= 1
+        break
       }
     }
   }
 
   if (!isIgnore) {
     var line = match[0]
-      .replace(/^\[[\d:]+\] /,"");  // Remove timestamp
-    newLog += line + "\n";
+      .replace(/^\[[\d:]+\] /,'')  // Remove timestamp
+    newLog += line + '\n'
 
     if (o.viewed < 100) {
-      console.log("=>" + line);
-      o.viewed += 1;
+      console.log('=>' + line)
+      o.viewed += 1
     }
-    o.unknown += 1;
+    o.unknown += 1
   }
 }
-console.log("    Total Errors: ", o.total);
-console.log("Untreaten errors: ", o.unknown);
-console.log(" Resolved errors: ", o.resolved + "/" + known.length);
+console.log('    Total Errors: ', o.total)
+console.log('Untreaten errors: ', o.unknown)
+console.log(' Resolved errors: ', o.resolved + '/' + known.length)
 
-utils.saveText(newLog, "unknownErrors.log")
+utils.saveText(newLog, 'unknownErrors.log')

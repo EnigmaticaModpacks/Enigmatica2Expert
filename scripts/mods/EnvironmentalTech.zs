@@ -107,7 +107,7 @@ recipes.removeByRecipeName("environmentaltech:m_multiblocks/interconnect");
 # ######################################################################
 
 /* Patchouli_js('Energy/Environmental Tech',
-  require("../EvtTechSolarCalc.js").rf_t
+  require("../lib/EvtTechSolarCalc.js").rf_t
   .map((r,k)=>({
 		icon:	"environmentaltech:solar_cont_1",
     type:	"item_list",
