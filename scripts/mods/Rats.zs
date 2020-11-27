@@ -238,7 +238,7 @@ scripts.wrap.tconstruct.Casting.addTableRecipe(<rats:ancient_sawblade>, <ic2:blo
 recipes.addShaped("Ratlanean Flame", <rats:ratlantean_flame>, [
 	[null, <randomthings:ingredient:2>, null],
 	[<randomthings:ingredient:2>, <rats:raw_rat>, <randomthings:ingredient:2>],
-	[null, <fluid:fire_water> * 1000, null]
+	[null, <forestry:crafting_material:1>, null]
 ]);
 
 # Psionic rat brain

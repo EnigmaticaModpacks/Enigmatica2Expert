@@ -65,6 +65,12 @@
 - 𝓩𝒮 [x] Remove Useless NC recipes (for example enriching depleted fuel with salt)
 - ✏️ [x] Creative Fluid Tank no `mekData:{}`
 - ✏️ [x] Crushed quartz is wrong
+- 🧩 [x] More radiactive blocks (some items wont get radiation)
+- ✏️ [x] Benefication for Rat nuggets
+- 𝓩𝒮 [x] Omega potion rename
+- ✏️ [x] Simplify Ratlanean Spirit
+- ⚙️ [x] Benefication for gems should return more gems
+- 🔨 [x] TCon tools recycle. Tables crafts
 
 ## Planned
 
@@ -74,20 +80,17 @@
 - 💥 [ ] Uses of singularities
 - 💥 [ ] New 🐝 for endgame
 - 💥 [ ] **Rats** Structures Generation
-- 🔨 [x] TCon tools recycle
 - 💥 [ ] Merge E2E-v2
 - 📖 [ ] BQ Osmium mining level alternatives
-- 𝓩𝒮 [ ] Omega potion rename, logaryphmic level buff
-- ✏️ [x] Fix XML recipes get wrong first items of Oredicts
-- ⚙️ [x] Benefication for gems should return more gems
-- 🧩 [x] More radiactive blocks (some items wont get radiation)
-- ✏️ [x] Benefication for Rat nuggets
+- 𝓩𝒮 [ ] Omega potion logaryphmic level buff
 - 𝓩𝒮 [ ] Remove excessive logging for non-debug clients
 - 𝓩𝒮 [ ] Merge 1.82a
-- ✏️ [ ] Remake "Animal" recipes to use Bee's instead of machines (alter recipes or use bee's ingrs)
-- ✏️ [ ] Simplify TE Backpacks
+- ✏️ [ ] Make Aristocraft Upgrade harded
 - 🧩 [ ] Osmium Spawn too weak
-- 🌍 [ ] Reload JER world data
+- 🧩 [ ] Amber Dissapeared from TCon tool parts
+- 🌍 [ ] Reload JER world data. Its also not showing
+- ✏️ [x] Simplify TE Backpacks
+- ✏️ [x] Fix XML recipes get wrong first items of Oredicts
 
 ### Do after process.zs class rework:
 
@@ -106,6 +109,7 @@
 - ⚙️ [ ] Ingredients with chance should multiplied if chance > 1.0
 - ⚙️ [ ] Use Rat Diamond in most machines
 - ⚙️ [ ] process.squeeze from Forestry.zs should accept any machine (temp. disabled)
+- ⚙️ [ ] Mek machines should avoid items with NBT
 
 ## Long-term
 
