@@ -416,6 +416,11 @@ static convertElixir as function(IData)IData = function (elixirEffect as IData) 
 #
 # ######################################################################
 
+static durationFnc as function(int)int = function (x as int) as int {
+  val d = x as double;
+  return min(2147483646.0d,  d * 10.0d) as int;
+};
+
 # This function evaluates for each of 4 types of crafts:
 # 1. Combining vanilla potions into one
 # 2. Increase duration on Rustic's Elixirs
@@ -429,9 +434,9 @@ static potionFunction as IRecipeFunction = function(out, ins, cInfo) {
   # What kind of recipe is this
   val isLong   = !isNull(D(out.tag, "PotionLong"));
   val isStrong = !isNull(D(out.tag, "PotionStrong"));
-  val isMega   = !isNull(D(out.tag, "PotionMEGA"));
+  val isOMega  = !isNull(D(out.tag, "PotionOMEGA"));
 
-  # Maximums. Used only for Mega potion
+  # Maximums. Used only for OMega potion
   var maxDuration  as int = 1;
   var maxAmplifier as int = 0;
 
@@ -462,10 +467,11 @@ static potionFunction as IRecipeFunction = function(out, ins, cInfo) {
     }
 
     # Loop over each potion effects in list to amplify it
-    # Also calculate maximums for Mega potion
+    # Also calculate maximums for OMega potion
     for i in 0 to eData.length {
       val effect = eData[i];
-      var newDuration  = min(2147483646, (Dd(effect, "Duration", {d:1}).asInt() * (isLong   ? 10 : 1)));
+      var currDuration = Dd(effect, "Duration", {d:1}).asInt();
+      var newDuration  = isLong ? durationFnc(currDuration) : currDuration;
       var newAmplifier = min(127,        (Dd(effect, "Amplifier",{d:0}).asInt() + (isStrong ? 5  : 0)));
       maxDuration  = max(maxDuration,  newDuration);
       maxAmplifier = max(maxAmplifier, newAmplifier);
@@ -504,7 +510,7 @@ static potionFunction as IRecipeFunction = function(out, ins, cInfo) {
         }
       }
 
-      if(isMega){
+      if(isOMega){
         mergedList = mergedList + [newEffect + {Duration: maxDuration} as IData + {Amplifier: maxAmplifier} as IData] as IData;
       } else {
         mergedList = mergedList + [newEffect] as IData;
@@ -714,18 +720,18 @@ advancedBrew(Grid(["pretty",
 
 # ######################################################################
 #
-# MEGA potion
+# OMEGA potion
 #
 # ######################################################################
 
 
-val potMEGA = <bloodmagic:potion_flask>.withTag(
+val potOMEGA = <bloodmagic:potion_flask>.withTag(
   {
-    PotionMEGA: 1,
+    PotionOMEGA: 1,
 
     ench:[{lvl:1,id:36}],
     enchantmentColor:15326208,
-    display:{Name:"§eMEGA Potion"},
+    display:{Name:"§eOMEGA Potion"},
 
     CustomPotionEffects: [
       { Id: 1 as byte, Duration: 2400, Amplifier: 5 as byte }
@@ -754,5 +760,5 @@ advancedBrew(Grid(["pretty",
   # Liquid, Tool damage, Output
   <liquid:plasma> * 16000,
   3000,
-  potMEGA.withLore(["Combination of §dAll 3 bottles Effects, §aMaximum duration, §3Maximum potency"])
+  potOMEGA.withLore(["Combination of §dAll 3 bottles Effects, §aMaximum duration, §3Maximum potency"])
 );
