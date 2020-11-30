@@ -15,11 +15,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [
-					112,119,
-					-1,
-					1
-				]
+				"value": [-1,1,111,112,119]
 			}
 		},
 		"tin": {
@@ -39,11 +35,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [
-					112,119,
-					-1,
-					1
-				]
+				"value": [-1,1,111,112,119]
 			}
 		},
 		"aluminum": {
@@ -63,11 +55,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [
-					112,119,
-					-1,
-					1
-				]
+				"value": [-1,1,111,112,119]
 			}
 		},
 		"silver": {
@@ -95,11 +83,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [
-					112,119,
-					-1,
-					1
-				]
+				"value": [-1,1,111,112,119]
 			}
 		},
 		"lead": {
@@ -128,11 +112,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [
-					112,119,
-					-1,
-					1
-				]
+				"value": [-1,1,111,112,119]
 			}
 		},
 		"nickel": {
@@ -159,11 +139,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [
-					112,119,
-					-1,
-					1
-				]
+				"value": [-1,1,111,112,119]
 			}
 		},
 		"platinum": {
@@ -183,11 +159,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [
-					112,119,
-					-1,
-					1
-				]
+				"value": [-1,1,111,112,119]
 			}
 		},
 		"copper_ocean": {
@@ -212,11 +184,7 @@
 			},
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [
-					112,119,
-					-1,
-					1
-				]
+				"value": [-1,1,111,112,119]
 			}
 		},
 		"copper_high": {
@@ -233,12 +201,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [
-					119,
-					112,
-					-1,
-					1
-				]
+				"value": [-1,1,111,112,119]
 			}
 		}
 	}

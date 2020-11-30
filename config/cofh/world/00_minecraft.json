@@ -14,9 +14,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [
-					-1,1, 111, 100,101,102,103,106,109,110,113,115,118,119,120,122,123
-				]
+				"value": [-1,1,100,101,102,103,106,109,110,111,113,115,118,119,120,122,123]
 			}
 		},
 		"gravel": {
@@ -33,8 +31,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [
-					-1,1, 111, 101,102,113,122,119]
+				"value": [-1,1,101,102,111,113,119,122]
 			}
 		},
 		"diorite": {
@@ -56,11 +53,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [
-					112,
-					-1,
-					1
-				]
+				"value": [-1,1,111,112]
 			}
 		},
 		"granite": {
@@ -82,11 +75,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [
-					112,
-					-1,
-					1
-				]
+				"value": [-1,1,111,112]
 			}
 		},
 		"andesite": {
@@ -108,11 +97,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [
-					112,
-					-1,
-					1
-				]
+				"value": [-1,1,111,112]
 			}
 		},
 		"coal": {
@@ -129,12 +114,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [
-					119,
-					112,
-					-1,
-					1
-				]
+				"value": [-1,1,111,112,119]
 			}
 		},
 		"iron": {
@@ -151,11 +131,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [
-					112,119,
-					-1,
-					1
-				]
+				"value": [-1,1,111,112,119]
 			}
 		},
 		"gold": {
@@ -172,11 +148,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [
-					112,119,
-					-1,
-					1
-				]
+				"value": [-1,1,111,112,119]
 			}
 		},
 		"redstone": {
@@ -193,12 +165,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [
-					112,119,
-					111,
-					-1,
-					1
-				]
+				"value": [-1,1,111,112,119]
 			}
 		},
 		"diamond": {
@@ -215,11 +182,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [
-					112,119,
-					-1,
-					1
-				]
+				"value": [-1,1,111,112,119]
 			}
 		},
 		"lapis": {
@@ -236,11 +199,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [
-					112,119,
-					-1,
-					1
-				]
+				"value": [-1,1,111,112,119]
 			}
 		},
 		"mesa_gold": {
@@ -275,11 +234,7 @@
 			},
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [
-					112,119,
-					-1,
-					1
-				]
+				"value": [-1,1,111,112,119]
 			}
 		},
 		"emerald": {
@@ -315,11 +270,7 @@
 			},
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [
-					112,119,
-					-1,
-					1
-				]
+				"value": [-1,1,111,112,119]
 			}
 		},
 		"silverfish": {
@@ -355,11 +306,7 @@
 			},
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [
-					112,119,
-					-1,
-					1
-				]
+				"value": [-1,1,111,112,119]
 			}
 		},
 		"quartz": {

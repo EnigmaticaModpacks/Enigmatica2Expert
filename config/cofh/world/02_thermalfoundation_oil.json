@@ -117,10 +117,7 @@
 			},
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [
-					-1,119,
-					1, 112
-				]
+				"value": [-1,1,111,112,119]
 			}
 		},
 		"oil_shale": {
@@ -155,10 +152,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [
-					-1,119,
-					1, 112
-				]
+				"value": [-1,1,111,112,119]
 			}
 		}
 	}
