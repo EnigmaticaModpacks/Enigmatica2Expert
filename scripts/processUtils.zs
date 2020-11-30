@@ -134,9 +134,24 @@ function avdRockXmlRecipe(filename as string,
 
   # Inputs
   if(!isNull(inputItems)) { for ii in inputItems { if(ii.items.length > 0) {
-      val in_it = ii.items[0];
-      in_name = (isNull(in_name) ? in_it.displayName : (in_name ~ "+"));
-      s = s ~ '    <itemStack>' ~ in_it.definition.id ~ " " ~ ii.amount ~ " " ~ in_it.damage ~ '</itemStack>\n';
+      var display as string = null;
+      var id as string = null;
+      var meta as int = 0;
+      var type as string = null;
+      if(ii instanceof IOreDictEntry) {
+        var ore as IOreDictEntry = ii;
+        type = 'oreDict';
+        display = ore.name;
+        id = ore.name;
+      } else {
+        type = 'itemStack';
+        val in_it = ii.items[0];
+        display = in_it.displayName;
+        id = in_it.definition.id;
+        meta = in_it.damage;
+      }
+      in_name = (isNull(in_name) ? display : (in_name ~ "+"));
+      s = s ~ '    <'+type+'>' ~ id ~" "~ ii.amount ~ ((type = 'itemStack') ? " "~meta : '') ~ '</'+type+'>\n';
   }}}
   if(!isNull(inputLiquids)) { for ii in inputLiquids {
       in_name = (isNull(in_name) ? ii.displayName : (in_name ~ "+"));

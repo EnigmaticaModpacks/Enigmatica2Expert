@@ -9,7 +9,7 @@
 
 -----------
 
-- 🟢 [ ] Biome Tweaker (make planets ground higher, deep ocean biomes)
+- 🟢 [x] Biome Tweaker (make planets ground higher, deep ocean biomes)
 - 💥 [ ] Uses of singularities
 - 💥 [ ] New 🐝 for endgame
 - 💥 [ ] **Rats** Structures Generation
@@ -20,11 +20,13 @@
 - 𝓩𝒮 [ ] Merge 1.82a
 - ✏️ [ ] Make Aristocraft Upgrade harded
 - 🧩 [ ] Osmium Spawn too weak
+- 🧩 [ ] AS buff perks
 - 🧩 [ ] Amber Dissapeared from TCon tool parts
 - 🌍 [ ] Reload JER world data. Its also not showing
 - 🔨 [ ] TCon tools recycle working only with first tier
 - ✏️ [x] Simplify TE Backpacks
 - ✏️ [x] Fix XML recipes get wrong first items of Oredicts
+- [ ] Remove Probe from export mod list
 
 ### Do after process.zs class rework:
 
@@ -57,13 +59,11 @@
 - 💜 [ ] Check why Lumium so pricy
 - 💜 [ ] UU Forbid ME drives to be replicable
 - 💜 [ ] UU Silicon Wafer cant be seen in UU
-- 🔷 [ ] Prefect Fuel. Summ of several best fuels. Probably bunch of drums together
+- 🔷 [ ] Pefect Fuel. Summ of several best fuels. Probably bunch of drums together
 - 🔷 [ ] Tcon Armor that speed up time in bottle
 - 🔷 [ ] Wrong Uranium in oredict
 - 🌿 [ ] Patchouli book texture
 - 🔷 [ ] Magic processing byproducts
-- ⚙️ [ ] Unify Black quartz
-- ✏️ [ ] Cant Craft Solar tier4 (tier3 cant be recognisable)
 - 🌍 [ ] New AdvRocke atmospheres
 - 𝓩𝒮 [ ] Ice Balls stack up to 64. Somehow not working, reported to github
 - 𝓩𝒮 [ ] New Pam's traps. Not actually working, new recipes wouldn't appear

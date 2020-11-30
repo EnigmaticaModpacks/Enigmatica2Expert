@@ -348,3 +348,13 @@ function reworkClathrate(ore as IItemStack, crystal as IItemStack, dust as IItem
 reworkClathrate(<thermalfoundation:ore_fluid:2>, <thermalfoundation:material:893>, <thermalfoundation:material:101>, <liquid:redstone> * 1000);
 reworkClathrate(<thermalfoundation:ore_fluid:3>, <thermalfoundation:material:894>, <thermalfoundation:material:102>, <liquid:glowstone> * 2500);
 reworkClathrate(<thermalfoundation:ore_fluid:4>, <thermalfoundation:material:895>, <thermalfoundation:material:103>, <liquid:ender> * 2500);
+/* 
+# Simplify Satchels
+for i in 2 to 6 {
+	recipes.removeByRecipeName("thermalexpansion:satchel_"~i);
+}
+craft.make(<thermalexpansion:satchel:1>, ["aOa"] as string[], {O: <thermalexpansion:satchel:0>, a: <ore:nuggetInvar>,} as IIngredient[string], utils.upgradeFnc);
+craft.make(<thermalexpansion:satchel:2>, ["aOa"] as string[], {O: <thermalexpansion:satchel:1>, a: <ore:nuggetElectrum>,} as IIngredient[string], utils.upgradeFnc);
+craft.make(<thermalexpansion:satchel:3>, ["aOa"] as string[], {O: <thermalexpansion:satchel:2>, a: <ore:nuggetSignalum>,} as IIngredient[string], utils.upgradeFnc);
+craft.make(<thermalexpansion:satchel:4>, ["aOa"] as string[], {O: <thermalexpansion:satchel:3>, a: <ore:nuggetEnderium>,} as IIngredient[string], utils.upgradeFnc);
+ */
