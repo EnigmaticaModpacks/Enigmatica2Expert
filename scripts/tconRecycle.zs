@@ -182,7 +182,7 @@ RecipeBuilder.get("blacksmith")
 
   .setShapeless([disassemblable.marked("marked"), <tcomplement:chisel_head>.marked("catal")])
   .setRecipeFunction(function(out, ins, cInfo) {return getShard(ins, 1.0d);})
-  .setSecondaryIngredients([<ore:ballVibrantAlloy>])
+  .setSecondaryIngredients([<ore:ballDarkSteel>])
   .addOutput(<tconstruct:shard> * 16)
   .addTool(<tconstruct:hammer>, 100)
   .addTool(<tconevo:tool_sceptre>, 50)

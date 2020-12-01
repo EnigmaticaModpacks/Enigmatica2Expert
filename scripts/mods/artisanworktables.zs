@@ -89,7 +89,7 @@ craft.make(<artisanworktables:workstation:3>, ["pretty",
   "I": <ore:blockSteel>,
 });
 
-craft.make(<artisanworktables:workstation:3>, ["pretty",
+craft.make(<artisanworktables:workshop:3>, ["pretty",
   "▩ ▩ ▩",
   "▩ x ▩",
   "I   I"], {

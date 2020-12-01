@@ -2,55 +2,71 @@
   "dependencies": "advancedrocketry",
   "populate": {
 
-		"boulders2": {
+		"kelt_3_giant_holes": {
 			"distribution": "uniform",
 			"generator": {
 				"type": "sequential",
 				"generators": [
-					 {"type": "plate","block": "advancedrocketry:hotturf","radius": 10,"height":54,"material": ["stone", "lava", "water", "clay"]}
-					,{"type": "plate","block": "air","radius": 7,
-						"height":{"min":10, "max": 60, "value":{"operation":"SUBTRACT", "value-a":{"world-data":"CURRENT_Y"}, "value-b": 2}},
-						"material": ["draconicevolution:draconium_ore","advancedrocketry:hotturf","end_stone","redstone_ore","libvulpes:ore0","exnihilocreatio:block_endstone_crushed","thermalfoundation:ore_fluid","actuallyadditions:block_misc","nuclearcraft:ore","thaumcraft:ore_cinnabar"]}
+					 {"type": "plate","block": "advancedrocketry:hotturf","radius": 10,"height":64,"material": ["advancedrocketry:hotturf", "stone"]}
+					,{"type": "plate","block": "air","radius": 7,"height": 64,"material": ["advancedrocketry:hotturf", "stone", "lava", "water", "clay", "quark:elder_prismarine", "contenttweaker:compressed_crushed_granite","end_stone", "redstone_ore", "thermalfoundation:ore_fluid", "actuallyadditions:block_misc", "draconicevolution:draconium_ore", "nuclearcraft:ore", "thaumcraft:ore_cinnabar", "exnihilocreatio:block_endstone_crushed", "libvulpes:ore0"]}
 				]
 			},
       "chunk-chance": 30,
-			"cluster-count": {"min":2, "max": 4},
-			"min-height": 50,
-			"max-height": 51,
+			"cluster-count": {"min":1, "max": 4},
+			"min-height": 66,
+			"max-height": 66,
 			"dimension": {"restriction": "whitelist", "value": [119]}
     },
     
-		"crushed_endstone_gravel": {
+		"kelt_3_hollow_spaces_on_walls": {
+			"enabled": false,
+			"distribution": "uniform",
+			"generator": {
+				"type": "boulder",
+				"block": "air",
+				"diameter": 3,
+				"size-variance": 5,
+				"count-variance": 0,
+				"count": 1,
+				"material": "advancedrocketry:hotturf"
+			},
+			"cluster-count": 16,
+			"min-height": 10,
+			"max-height": 120,
+			"dimension": {"restriction": "whitelist", "value": [119]}
+		},
+    
+		"kelt_3_crushed_endstone_gravel": {
 			"distribution": "uniform",
 			"generator": {
 				"block": "exnihilocreatio:block_endstone_crushed",
-				"cluster-size": 40
+				"cluster-size": 30,
+				"material": ["stone", "quark:elder_prismarine", "contenttweaker:compressed_crushed_granite"]
 			},
-			"cluster-count": 12,
+			"cluster-count": 16,
 			"min-height": 0,
-			"max-height": 70,
+			"max-height": 144,
 			"dimension": {"restriction": "whitelist", "value": [119]}
 		},
 
-		"fall_ore_1": {
+		"kelt_3_ore_in_holes": {
 			"distribution": "uniform",
 			"generator": {
 				"type": "consecutive",
 				"generators": [
-					{"block": "end_stone","cluster-size": 90,"material": "advancedrocketry:hotturf"}
-					,{"block": "redstone_ore","cluster-size": 50,"material": "advancedrocketry:hotturf"}
-					,{"block": {"name": "thermalfoundation:ore_fluid","metadata": 2},"cluster-size": 30,"material": "advancedrocketry:hotturf"}
-					,{"block": {"name": "actuallyadditions:block_misc","metadata": 3},"cluster-size": 15,"material": "advancedrocketry:hotturf"}
-					,{"block": {"name": "draconicevolution:draconium_ore","metadata": 2},"cluster-size": 60,"material": "advancedrocketry:hotturf"}
-					,{"block": [{"name": "nuclearcraft:ore","metadata": 3},{"name": "nuclearcraft:ore","metadata": 5},{"name": "nuclearcraft:ore","metadata": 6},{"name": "nuclearcraft:ore","metadata": 7}],"cluster-size": 40,"material": "advancedrocketry:hotturf"}
-					,{"block": "thaumcraft:ore_cinnabar","cluster-size": 10,"material": "advancedrocketry:hotturf"}
+					{"block": "end_stone","cluster-size": 63,"material": "advancedrocketry:hotturf"}
+					,{"block": "redstone_ore","cluster-size": 35,"material": "advancedrocketry:hotturf"}
+					,{"block": {"name": "thermalfoundation:ore_fluid","metadata": 2},"cluster-size": 21,"material": "advancedrocketry:hotturf"}
+					,{"block": {"name": "actuallyadditions:block_misc","metadata": 3},"cluster-size": 11,"material": "advancedrocketry:hotturf"}
+					,{"block": {"name": "draconicevolution:draconium_ore","metadata": 2},"cluster-size": 42,"material": "advancedrocketry:hotturf"}
+					,{"block": [{"name": "nuclearcraft:ore","metadata": 3},{"name": "nuclearcraft:ore","metadata": 5},{"name": "nuclearcraft:ore","metadata": 6},{"name": "nuclearcraft:ore","metadata": 7}],"cluster-size": 28,"material": "advancedrocketry:hotturf"}
+					,{"block": "thaumcraft:ore_cinnabar","cluster-size": 7,"material": "advancedrocketry:hotturf"}
+					,{"block": "libvulpes:ore0","cluster-size": 14,"material": "advancedrocketry:hotturf"}
 				]
 			},
-			"cluster-count": 100,
-			"center-height": 10,
-			"spread": 65,
+			"cluster-count": 140,
 			"min-height": 10,
-			"max-height": 75,
+			"max-height": 121,
 			"dimension": {"restriction": "whitelist", "value": [119]}
 		}
   }
