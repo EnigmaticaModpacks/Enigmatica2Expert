@@ -114,19 +114,19 @@ The goal of the addon is to make E2:E even harder, "Expert of Expert" modpack.
   *Example: ▦ Sieves can give you Stack/Second of ore. Got nerf. But new x7 ore processing line comes in.*
 
 - More gain - harder recipe, no matter if item is hidden under "only experts knows about it".  
-  *Example: ⛏ Atomic Reconstructor*
+  *Example: ⛏ Atomic Disassembler got nerf*
 
-- Keep "Mine" part from game name "Minecraft" until endgame  
-  *Example: 🪐 New Ore diposits on planets*
+- Keep "Mine" part from name "Minecraft" until endgame  
+  *Example: 🪐 New Ore deposits on planets*
   
-- Replace vanilla-like armor and tools with Tinker's Variants.  
+- Replace vanilla-like equipment with Tinker's Variants.  
   *Example: 🛡️ Iron - Diamond armor was removed, recipes replaced*
   
 - Less crafting table recipes -> more new crafting ways.  
-  *Example: 🔮 Inferium essence can be compressed in compressor*
+  *Example: 🔮 Mystical Agriculture Essence can be made in compressor*
   
 - No exploits, less cheeses.  
-  *Example: 🍫 No more mob stripping farms for Terrasteel*
+  *Example: 🍫 No more mob stripping farms for easy Terrasteel*
 
 -----------------
 
