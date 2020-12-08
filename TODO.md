@@ -27,6 +27,15 @@
 - ✏️ [x] Simplify TE Backpacks
 - ✏️ [x] Fix XML recipes get wrong first items of Oredicts
 - [ ] Remove Probe from export mod list
+- [ ] Thaumcraft Research Table click description helper
+- [ ] Remove Botanical crafty crates from JEI categories
+- [ ] Modded tree saplings and Logs from Tree Essence
+- [ ] Harder Cyclic's Sprinkler
+- [ ] Mystical Agriculture changes:  
+  - Squeeze cow essence to milk
+
+#### List of items should be craftable with animals
+- [ ] Deep Dark Portal
 
 ### Do after process.zs class rework:
 
