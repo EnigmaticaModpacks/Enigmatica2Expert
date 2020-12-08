@@ -1,0 +1,12 @@
+{
+  "weight": 325,
+  "type": "tconevo:armour",
+  "name": "Shoes of Light",
+  "lore": "Shimmering treads adorned with pentacles.",
+  "armour": "boots",
+  "materials": [
+    "lumium",
+    "ionite",
+    "aethium"
+  ]
+}

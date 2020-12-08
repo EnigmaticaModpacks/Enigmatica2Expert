@@ -1,0 +1,12 @@
+{
+  "weight": 150,
+  "type": "tconevo:armour",
+  "name": "Guardian Angel",
+  "lore": "A brilliant plate of legend with the power to bring its wearer back from the brink of death.",
+  "armour": "chestplate",
+  "materials": [
+    "nickel",
+    "universal_metal",
+    "silver"
+  ]
+}

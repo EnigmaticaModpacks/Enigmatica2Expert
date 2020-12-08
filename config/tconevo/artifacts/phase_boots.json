@@ -1,0 +1,28 @@
+{
+  "weight": 420,
+  "type": "tconevo:armour",
+  "name": "Phase Boots",
+  "lore": "Boots that grant movement enhanced by powerful wind magic.",
+  "armour": "boots",
+  "materials": [
+    "cobalt",
+    "rubber",
+    "prismarine"
+  ],
+  "free_mods": 7,
+  "mods": [
+    {
+      "id": "speedy_armor",
+      "level": 100
+    },
+    {
+      "id": "shulkerweight_armor",
+      "level": 20
+    },
+    "high_stride_armor",
+    {
+      "id": "reinforced_armor",
+      "level": 5
+    }
+  ]
+}
