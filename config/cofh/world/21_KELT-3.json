@@ -8,7 +8,7 @@
 				"type": "sequential",
 				"generators": [
 					 {"type": "plate","block": "advancedrocketry:hotturf","radius": 10,"height":64,"material": ["advancedrocketry:hotturf", "stone"]}
-					,{"type": "plate","block": "air","radius": 7,"height": 64,"material": ["advancedrocketry:hotturf", "stone", "lava", "water", "clay", "quark:elder_prismarine", "contenttweaker:compressed_crushed_granite","end_stone", "redstone_ore", "thermalfoundation:ore_fluid", "actuallyadditions:block_misc", "draconicevolution:draconium_ore", "nuclearcraft:ore", "thaumcraft:ore_cinnabar", "exnihilocreatio:block_endstone_crushed", "libvulpes:ore0"]}
+					,{"type": "plate","block": "air","radius": 7,"height": 64,"material": ["advancedrocketry:hotturf", "stone", "lava", "water", "clay", "quark:elder_prismarine", "contenttweaker:compressed_crushed_granite","end_stone", "redstone_ore", "thermalfoundation:ore_fluid", "actuallyadditions:block_misc", "draconicevolution:draconium_ore", "nuclearcraft:ore", "thaumcraft:ore_cinnabar", "exnihilocreatio:block_endstone_crushed", "libvulpes:ore0", "nuclearcraft:fluid_sulfur", "nuclearcraft:fluid_sodium"]}
 				]
 			},
       "chunk-chance": 30,
@@ -64,7 +64,7 @@
 					,{"block": "libvulpes:ore0","cluster-size": 14,"material": "advancedrocketry:hotturf"}
 				]
 			},
-			"cluster-count": 140,
+			"cluster-count": 200,
 			"min-height": 10,
 			"max-height": 121,
 			"dimension": {"restriction": "whitelist", "value": [119]}
