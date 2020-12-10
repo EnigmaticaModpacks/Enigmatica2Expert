@@ -31,7 +31,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112,119]
+				"value": [-1,1,111,112,119,123]
 			}
 		},
 		"large_vein_coal": {
@@ -64,7 +64,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112,119]
+				"value": [-1,1,111,112,119,123]
 			}
 		},
 		"large_vein_redstone": {
@@ -97,7 +97,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112,119]
+				"value": [-1,1,111,112,119,123]
 			}
 		},
 		"large_vein_copper_gold": {
@@ -131,7 +131,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112,119]
+				"value": [-1,1,111,112,119,123]
 			}
 		},
 		"large_vein_tin_silver_lead": {
@@ -169,7 +169,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112,119]
+				"value": [-1,1,111,112,119,123]
 			}
 		}
 	}

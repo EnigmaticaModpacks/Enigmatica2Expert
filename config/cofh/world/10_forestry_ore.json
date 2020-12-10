@@ -17,7 +17,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112,119]
+				"value": [-1,1,111,112,119,123]
 			}
 		}
 	}

@@ -31,7 +31,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,101,102,111,113,119,122]
+				"value": [-1,1,101,102,111,113,119,122,123]
 			}
 		},
 		"diorite": {
@@ -53,7 +53,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112]
+				"value": [-1,1,111,112,123]
 			}
 		},
 		"granite": {
@@ -75,7 +75,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112]
+				"value": [-1,1,111,112,123]
 			}
 		},
 		"andesite": {
@@ -97,7 +97,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112]
+				"value": [-1,1,111,112,123]
 			}
 		},
 		"coal": {
@@ -114,7 +114,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112,119]
+				"value": [-1,1,111,112,119,123]
 			}
 		},
 		"iron": {
@@ -131,7 +131,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112,119]
+				"value": [-1,1,111,112,119,123]
 			}
 		},
 		"gold": {
@@ -148,7 +148,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112,119]
+				"value": [-1,1,111,112,119,123]
 			}
 		},
 		"redstone": {
@@ -165,7 +165,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112,119]
+				"value": [-1,1,111,112,119,123]
 			}
 		},
 		"diamond": {
@@ -182,7 +182,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112,119]
+				"value": [-1,1,111,112,119,123]
 			}
 		},
 		"lapis": {
@@ -199,7 +199,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112,119]
+				"value": [-1,1,111,112,119,123]
 			}
 		},
 		"mesa_gold": {
@@ -234,7 +234,7 @@
 			},
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112,119]
+				"value": [-1,1,111,112,119,123]
 			}
 		},
 		"emerald": {
@@ -270,7 +270,7 @@
 			},
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112,119]
+				"value": [-1,1,111,112,119,123]
 			}
 		},
 		"silverfish": {
@@ -306,7 +306,7 @@
 			},
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112,119]
+				"value": [-1,1,111,112,119,123]
 			}
 		},
 		"quartz": {

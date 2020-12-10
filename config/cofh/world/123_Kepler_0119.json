@@ -1,0 +1,100 @@
+{
+  "dependencies": "advancedrocketry",
+  "populate": {
+		"kepler_0119_ore_stalactite_01": {"dimension": {"restriction": "whitelist","value": [123]},"distribution": "cave","chunk-chance": 2,"ceiling": true,"ground-level": 210,"cluster-count": 4,"generator": {"type": "stalactite","min-height": 1 ,"height-variance": 7,"block": "minecraft:coal_ore"}},
+		"kepler_0119_ore_stalactite_02": {"dimension": {"restriction": "whitelist","value": [123]},"distribution": "cave","chunk-chance": 2,"ground-level": 175,"cluster-count": 3,"generator": {"type": "stalagmite","fat": true,"min-height": 5 ,"height-variance": 7,"block": {"name": "thermalfoundation:ore_fluid","metadata": 1}}},
+		"kepler_0119_ore_stalactite_03": {"dimension": {"restriction": "whitelist","value": [123]},"distribution": "cave","chunk-chance": 2,"ceiling": true,"ground-level": 150,"cluster-count": 2,"generator": {"type": "stalactite","fat": true,"min-height": 9 ,"height-variance": 7,"block": {"name": "actuallyadditions:block_misc","metadata": 3}}},
+		"kepler_0119_ore_stalactite_04": {"dimension": {"restriction": "whitelist","value": [123]},"distribution": "cave","chunk-chance": 2,"ceiling": true,"ground-level": 131,"cluster-count": 2,"generator": {"type": "stalactite","fat": true,"min-height": 12 ,"height-variance": 7,"block": {"name": "nuclearcraft:ore","metadata": 3}}},
+		"kepler_0119_ore_stalactite_05": {"dimension": {"restriction": "whitelist","value": [123]},"distribution": "cave","chunk-chance": 2,"ceiling": true,"ground-level": 117,"cluster-count": 1,"generator": {"type": "stalactite","fat": true,"alt-sinc": true,"min-height": 5 ,"height-variance": 7,"block": {"name": "nuclearcraft:ore","metadata": 5}}},
+		"kepler_0119_ore_stalactite_06": {"dimension": {"restriction": "whitelist","value": [123]},"distribution": "cave","chunk-chance": 2,"ceiling": true,"ground-level": 105,"cluster-count": 1,"generator": {"type": "stalactite","fat": true,"alt-sinc": true,"min-height": 5 ,"height-variance": 7,"block": {"name": "immersiveengineering:ore","metadata": 5}}},
+		"kepler_0119_ore_stalactite_07": {"dimension": {"restriction": "whitelist","value": [123]},"distribution": "cave","chunk-chance": 2,"ceiling": true,"ground-level":  95,"cluster-count": 1,"generator": {"type": "stalactite","fat": true,"alt-sinc": true,"min-height": 10,"height-variance":  4,"block": {"name": "thermalfoundation:ore_fluid","metadata": 2}}},
+		"kepler_0119_ore_stalactite_08": {"dimension": {"restriction": "whitelist","value": [123]},"distribution": "cave","chunk-chance": 3,"ceiling": true,"ground-level":  88,"cluster-count": 1,"generator": {"type": "stalactite","fat": true,"alt-sinc": true,"min-height": 2 ,"height-variance": 9,"block": {"name": "thermalfoundation:ore","metadata": 7}}},
+		"kepler_0119_ore_stalactite_09": {"dimension": {"restriction": "whitelist","value": [123]},"distribution": "cave","chunk-chance": 3,"ceiling": true,"ground-level":  81,"cluster-count": 2,"generator": {"type": "stalactite","fat": true,"alt-sinc": true,"min-height": 2 ,"height-variance":  3,"block": {"name": "libvulpes:ore0","metadata": 8}}},
+		"kepler_0119_ore_stalactite_10": {"dimension": {"restriction": "whitelist","value": [123]},"distribution": "cave","chunk-chance": 3,"ceiling": true,"ground-level": 190,"cluster-count": 2,"generator": {"type": "stalactite","height-mod": 10, "min-height": 1,"height-variance": 6,"block": "thaumcraft:amber_block"}},
+		"kepler_0119_ore_stalactite_11": {"dimension": {"restriction": "whitelist","value": [123]},"distribution": "cave","chunk-chance": 3,"ceiling": true,"ground-level": 190,"cluster-count":90,"generator": {"type": "stalactite","min-height": 1,"height-variance": 1,"block": "thermalfoundation:fluid_glowstone", "material": "thaumcraft:amber_block"}},
+
+			
+		"kepler_0119_andesite_crushed": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "exnihilocreatio:block_andesite_crushed",
+				"cluster-size": 66
+			},
+			"cluster-count": 6,
+			"min-height": 0,
+			"max-height": 256,
+			"dimension": {"restriction": "whitelist","value": [123]}
+		},
+
+		"kepler_0119_limestone": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "tconstruct:brownstone",
+				"cluster-size": 44
+			},
+			"cluster-count": 10,
+			"min-height": 10,
+			"max-height": 200,
+			"dimension": {"restriction": "whitelist","value": [123]}
+		},
+
+		"kepler_0119_geodes": {
+			"distribution": "gaussian",
+			"generator": {
+				"type": "geode",
+				"block": "advancedrocketry:geode",
+				"crust": "forestry:ash_block_3",
+				"hollow": true,
+				"filler": "air"
+			},
+			"cluster-count": 1,
+			"chunk-chance": 3,
+			"center-height": 14,
+			"spread": 10,
+			"dimension": {"restriction": "whitelist","value": [123]}
+		},
+
+		"kepler_0119_glowshrooms": {
+			"dimension": {"restriction": "whitelist","value": [123]},
+			"distribution": "cave",
+			"ground-level": 195,
+			"cluster-count": 7,
+			"generator": {
+				"type": "stalagmite",
+				"min-height": 1,
+				"height-variance": 0,
+				"size-variance": 0,
+				"gen-size": 0,
+				"height-mod": 50,
+				"block": "nuclearcraft:glowing_mushroom"
+			}
+		},
+
+		"kepler_0119_under_lava": {
+			"enabled": false,
+			"dimension": {"restriction": "whitelist","value": [123]},
+			"distribution": "underfluid",
+			"fluid": "enderio:block_fluid_construction_alloy",
+			"cluster-count": 3,
+			"generator": {
+				"radius": 6,
+				"block": "tconstruct:molten_iron"
+			}
+		},
+
+		"kepler_0119_under_water": {
+			"enabled": false,
+			"dimension": {"restriction": "whitelist","value": [123]},
+			"distribution": "underfluid",
+			"fluid": "immersivepetroleum:fluid_crude_oil",
+			"cluster-count": 3,
+			"generator": {
+				"radius": 2,
+				"block": "tconstruct:molten_steel"
+			}
+		}
+		
+  }
+}
+
+
