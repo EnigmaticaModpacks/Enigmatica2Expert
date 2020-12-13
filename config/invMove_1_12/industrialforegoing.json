@@ -1,0 +1,6 @@
+{
+  "Machine_movement": true,
+  "Conveyor_movement": true,
+  "Machine_background_disable": false,
+  "Conveyor_background_disable": false
+}

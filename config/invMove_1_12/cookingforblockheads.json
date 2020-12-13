@@ -1,0 +1,14 @@
+{
+  "Counter_movement": true,
+  "Fridge_movement": true,
+  "FruitBasket_movement": true,
+  "Oven_movement": true,
+  "RecipeBook_movement": true,
+  "SpiceRack_movement": true,
+  "Counter_background_disable": false,
+  "Fridge_background_disable": false,
+  "FruitBasket_background_disable": false,
+  "Oven_background_disable": false,
+  "RecipeBook_background_disable": false,
+  "SpiceRack_background_disable": false
+}
