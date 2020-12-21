@@ -87,41 +87,34 @@ static partsCosts as int[string] = {
 
 static getShard as function(IItemStack[string], double)IItemStack = 
 function (ins as IItemStack[string], quantity as double) as IItemStack {
-  utils.log("Enter TConRecyclee Recipe Function");
   if(isNull(ins.marked) || isNull(ins.catal)) return null;
 
-  utils.log("Check if input have tags");
   // Check if input have tags
   val tag = ins.marked.tag;
-  var mats = D(tag, "TinkerData.Materials");
+  var mats = D(tag).get("TinkerData.Materials");
   if(isNull(mats)) return null;
   
-  utils.log("Find catalyst level");
   // Find catalyst level
   val catal_tag = ins.catal.tag;
-  val catal_mat = D(catal_tag, "Material");
+  val catal_mat = D(catal_tag).get("Material");
   if(isNull(catal_mat)) return null;
   val forge_catal_mat = Toolforge.getMaterialFromID(catal_mat.asString());
   if(isNull(forge_catal_mat)) return null;
   val catal_lvl = forge_catal_mat.harvestLevelHead;
 
-  utils.log("Calculate material amount for each parts");
   // Calculate material amount for each parts
   val deconstructed = Toolforge.deconstructTool(ins.marked);
   var listCost = [] as int[];
   for dec in deconstructed {
-    if(!isNull(D(dec.tag, "Material"))) {
+    if(D(dec.tag).check("Material")) {
       val partCost = partsCosts[dec.definition.id];
       val cost = !isNull(partCost) ? partCost as int : 1;
       listCost = listCost + max(1, ceil(cost as double * quantity * 2.0d) as int);
-      utils.log("  listCost: ", listCost[listCost.length - 1]);
     }
   }
 
-  utils.log("Return if only one mat avaliable");
   // Return if only one mat avaliable
   val listLen = mats.asList().length;
-  utils.log("listLen = ", listLen);
   if(listLen<=0) return null;
   if(listLen==1) {
     val matName = mats.asList()[0].asString();
@@ -132,11 +125,9 @@ function (ins as IItemStack[string], quantity as double) as IItemStack {
     return <tconstruct:shard>.withTag({Material: matName}) * listCost[0];
   }
 
-  utils.log("Gather harvest levels of mats");
   // Gather harvest levels of mats
   var listNames = [] as string[];
   var listLevel = [] as int[];
-  var sorted = [] as int[];
   for i in 0 to listLen {
     val matName = mats.asList()[i].asString();
     val forgeMat = Toolforge.getMaterialFromID(matName);
@@ -146,8 +137,8 @@ function (ins as IItemStack[string], quantity as double) as IItemStack {
   }
   if(listNames.length <= 0) return null;
 
-  utils.log("Sort level indexes");
   // Sort level indexes
+  var sorted = [] as int[];
   for i in 0 to listLevel.length {
     var g_v = 0;
     var g_i = i;
@@ -155,25 +146,20 @@ function (ins as IItemStack[string], quantity as double) as IItemStack {
       if(listLevel[j] >= g_v && !(sorted has j)) {
         g_v = listLevel[j];
         g_i = j;
-        utils.log("    adding", g_v, g_i);
       }
     }
     sorted = sorted + g_i;
-    utils.log("  sorted + ", g_i);
   }
 
-  utils.log("Pick first applicable level");
   // Pick first applicable level
   for i in 0 to sorted.length {
     val index = sorted[i];
     val lvl = listLevel[index];
-    utils.log("  checking ", index, lvl);
 
     if(catal_lvl > lvl)
       return <tconstruct:shard>.withTag({Material: listNames[index]}) * listCost[index];
   }
 
-  utils.log("Return Null");
   return null;
 };
 

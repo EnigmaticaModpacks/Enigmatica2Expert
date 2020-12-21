@@ -59,7 +59,7 @@ var machineName = "armor_foundry";
 
 
 # Iterate over all avaliable armor
-for id, stage in armorStaged { if(isNull(D(stage, "recipe.noFoundry"))) {
+for id, stage in armorStaged { if(!D(stage).check("recipe.noFoundry")) {
 
 	# Each armor part as ItemStacks (in case if string is empty or wrong)
 	val p_h = <betterquesting:placeholder>;

@@ -59,7 +59,7 @@ function D_indexof(dataList as IData, field as string, value as string) as int {
   if (isNull(dataList) || dataList.length <= 0) return -1 as int;
 
   for i in 0 to dataList.length {
-    var sub = D(dataList[i], field);
+    var sub = D(dataList[i]).get(field);
     if (!isNull(sub) && sub.asString() == value) {
       return i;
     }
@@ -122,7 +122,7 @@ function pushModifier(tag as IData, name as string, data as IData) as IData {
     if(!isNull(found.current)) found = found + {current: (found.current + data.current)} as IData;
     if(!isNull(found.level  )) found = found + {level: (found.level   + data.level)} as IData;
 
-    if (!isNull(D(found, "extraInfo")))
+    if (D(found).check("extraInfo"))
       found = found + {extraInfo: ((found.current.asInt() - 1) ~ " / " ~ found.max.asString()) as IData};
 
     return (tag - "Modifiers") + {Modifiers: D_replace(tag.Modifiers, index, found)} as IData;
@@ -151,12 +151,12 @@ function addModifier(_item as IItemStack, name as string) as IItemStack {
 
   // Special cases for creative
   if (name == "creative") {
-    tag = tag + {Stats: {FreeModifiers: (Dd(tag, "Stats.FreeModifiers", {d:0}).asInt() + 1) as IData}} as IData;
+    tag = tag + {Stats: {FreeModifiers: (D(tag).getInt("Stats.FreeModifiers", 0) + 1) as IData}} as IData;
     tag = pushModifier(tag, name, {color:0,level:1});
   } else if (name != "soulbound") {
     // Other except creative and soulbound
-    tag = tag + {Stats: {FreeModifiers: max(0, Dd(tag, "Stats.FreeModifiers", {d:0}).asInt() - 1) as IData}} as IData;
-    tag = tag + {TinkerData: {UsedModifiers: (Dd(tag, "TinkerData.UsedModifiers", {d:0}).asInt() + 1) as IData}} as IData;
+    tag = tag + {Stats: {FreeModifiers: max(0, D(tag).getInt("Stats.FreeModifiers", 0) - 1) as IData}} as IData;
+    tag = tag + {TinkerData: {UsedModifiers: (D(tag).getInt("TinkerData.UsedModifiers", 0) + 1) as IData}} as IData;
   }
 
   if (name == "soulbound") {
@@ -212,7 +212,7 @@ function addModifier(_item as IItemStack, name as string) as IItemStack {
   }
   if (name == "magicmushroom") {
     tag = pushModifier(tag, name, {color:5614830});
-    tag = tag + {Stats: {HarvestLevel: (Dd(tag, "Stats.HarvestLevel", {d:0}).asInt() + 1) as IData}} as IData;
+    tag = tag + {Stats: {HarvestLevel: (D(tag).getInt("Stats.HarvestLevel", 0) + 1) as IData}} as IData;
   }
   if (name == "mending_moss") {
     tag = pushModifier(tag, name, {color:4434738,level:1});

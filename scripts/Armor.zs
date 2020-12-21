@@ -180,7 +180,7 @@ function createArmorSet(setData as IData, setId as string) {
 	}
 
 	# prev set
-	val prev = armorStaged[Dd(setData, "prev", {d:"undefined"})];
+	val prev = armorStaged[D(setData).get("prev", {d:"undefined"})];
 	
 	# Extra ingredient. Recipe is chained but have additional item
 	if (!isNull(setData.recipe) && !isNull(setData.recipe.extra)) {

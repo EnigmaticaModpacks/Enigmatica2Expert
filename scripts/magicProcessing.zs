@@ -44,10 +44,10 @@ for ore_entry in oreDict {
 
 function getPoop(ore_name as string) as IItemStack {
   for poop in scripts.RatsProcessing.listRatPoop {
-    var oreBlockDef = Dd(poop.tag, 'OreItem.id',{d:''}).asString();
+    var oreBlockDef = D(poop.tag).getString('OreItem.id','');
 
     if(oreBlockDef != '') {
-      var oreBlockDmg = Dd(poop.tag, 'OreItem.Damage',{d:0}).asInt();
+      var oreBlockDmg = D(poop.tag).getInt('OreItem.Damage', 0);
       var oreBlockItem = itemUtils.getItem(oreBlockDef, oreBlockDmg);
 
       if (!isNull(oreBlockItem)) {

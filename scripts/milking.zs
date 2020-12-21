@@ -106,10 +106,10 @@ function milk(e as crafttweaker.event.PlayerInteractEntityEvent) as bool {
   ) milkAmount *= 10.0;
 
   # Return if container accept only with bug portions
-  if(milkAmount < Dd(holdData, "portion", {d:1}).asFloat()) return false;
+  if(milkAmount < D(holdData).getFloat("portion", 1.0f)) return false;
 
   # Determine maximum tank size
-  var maxTankSize = Dd(holdData.tag, "Fluid.Amount", {d:holdData.tag.Amount}).asInt();
+  var maxTankSize = D(holdData.tag).getInt("Fluid.Amount", holdData.tag.Amount);
 
   #Spawn liquid on ground if overwhelming amount
   var spilled = max(0.0f, milkAmount - maxTankSize as float) as int;

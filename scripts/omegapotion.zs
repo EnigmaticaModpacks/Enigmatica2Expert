@@ -401,10 +401,10 @@ static elixirNameId as int[string] = {
 static convertElixir as function(IData)IData = function (elixirEffect as IData) as IData {
 
   var newData = elixirEffect as IData;
-  var effect = D(newData, "Effect");
-  if(!isNull(effect) && elixirNameId has effect.asString()) {
+  var effect = D(newData).getString("Effect");
+  if(!isNull(effect) && elixirNameId has effect) {
     newData = newData - "Effect";
-    newData = newData + {Id: elixirNameId[effect.asString()] as int} as IData;
+    newData = newData + {Id: elixirNameId[effect] as int} as IData;
   }
   return newData;
 };
@@ -432,9 +432,9 @@ static potionFunction as IRecipeFunction = function(out, ins, cInfo) {
   var compoundTags = [] as IData;
 
   # What kind of recipe is this
-  val isLong   = !isNull(D(out.tag, "PotionLong"));
-  val isStrong = !isNull(D(out.tag, "PotionStrong"));
-  val isOMega  = !isNull(D(out.tag, "PotionOMEGA"));
+  val isLong   = !isNull(D(out.tag).get("PotionLong"));
+  val isStrong = !isNull(D(out.tag).get("PotionStrong"));
+  val isOMega  = !isNull(D(out.tag).get("PotionOMEGA"));
 
   # Maximums. Used only for OMega potion
   var maxDuration  as int = 1;
@@ -444,14 +444,15 @@ static potionFunction as IRecipeFunction = function(out, ins, cInfo) {
   for m, marked in ins {
 
     # Try to get elixir data
-    var eData = D(marked.tag, "ElixirEffects");
+    val mTag = D(marked.tag);
+    var eData = mTag.get("ElixirEffects");
 
     # Try to get Flask or Vanilla combined data
-    if (isNull(eData)) eData = D(marked.tag, "CustomPotionEffects");
+    if (isNull(eData)) eData = mTag.get("CustomPotionEffects");
 
     # Try to get vanilla-like potion name
     if (isNull(eData)) {
-      eData = D(marked.tag, "Potion");
+      eData = mTag.get("Potion");
 
       # Still No data -> continue next marked item
       if (isNull(eData)) break;
@@ -470,9 +471,9 @@ static potionFunction as IRecipeFunction = function(out, ins, cInfo) {
     # Also calculate maximums for OMega potion
     for i in 0 to eData.length {
       val effect = eData[i];
-      var currDuration = Dd(effect, "Duration", {d:1}).asInt();
+      var currDuration = D(effect).getInt("Duration", 1);
       var newDuration  = isLong ? durationFnc(currDuration) : currDuration;
-      var newAmplifier = min(127,        (Dd(effect, "Amplifier",{d:0}).asInt() + (isStrong ? 5  : 0)));
+      var newAmplifier = min(127,        (D(effect).get("Amplifier",0) + (isStrong ? 5  : 0)));
       maxDuration  = max(maxDuration,  newDuration);
       maxAmplifier = max(maxAmplifier, newAmplifier);
       compoundTags = compoundTags + [effect + {Duration: newDuration} as IData + {Amplifier: newAmplifier} as IData] as IData;
@@ -632,7 +633,7 @@ var anyLong = <rustic:elixir:*> | potLong;
 var anyBrew as IIngredient = <rustic:fluid_bottle>.withTag({Fluid:{FluidName:"wine",Amount:1000,Tag:{Quality:1.0f}}});
 
 for item in itemUtils.getItemsByRegexRegistryName("rustic:fluid_bottle") {
-	if (!isNull(D(item.tag, "Fluid.Tag.Quality"))) { anyBrew |= item.withTag( item.tag + {Fluid:{Tag:{Quality:1.0f}}} ); }
+	if (D(item.tag).check("Fluid.Tag.Quality")) { anyBrew |= item.withTag( item.tag + {Fluid:{Tag:{Quality:1.0f}}} ); }
 }
 
 advancedBrew(Grid(["pretty",

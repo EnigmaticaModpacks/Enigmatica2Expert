@@ -217,52 +217,6 @@ global clearFluid as function(IItemStack)void =
 };
 
 
-# ########################
-# Safe get NBT tag by string keys
-# Example:
-#   D( {Fluid:{FluidName:"water"}} ,"Fluid.FluidName" ) => "water" as IData
-#   D( {A:[ {B:1}, {C:2} ]}        ,"A[1].C" )          => 2 as IData
-#   D( {A:[0,1,2]}                 ,"A[4].C" )          => null
-# ########################
-global D as function(IData, string)IData = 
-    function (data as IData, field as string) as IData  {
-	// Return same data if field is null
-	if (isNull(field)) return data;
-
-	if (!isNull(data)) {
-		var descend = data;
-		for tag in field.split("[\\.\\[\\]]") {
-			if (tag != "") {
-				var member as IData = null;
-				if (tag.matches("^\\d+$")) {
-					var num = tag as int;
-					if (descend.length > num) {
-						member = descend[num];
-					}
-				} else {
-					member = descend.memberGet(tag);
-				}
-				if (!isNull(member)) {
-					descend = member;
-				} else {
-					return null;
-				}
-			}
-		}
-		return descend;
-	}
-	return null;
-};
-
-# Safe get NBT tag by string key
-# Return {third parameter}.d if null
-global Dd as function(IData, string, IData)IData = 
-    function (data as IData, field as string, default as IData) as IData  {
-  val d = D(data, field);
-	if (!isNull(d)) return d;
-	return default.d;
-};
-
 
 # ########################
 # Gets a Bucket Item from a Liquid String

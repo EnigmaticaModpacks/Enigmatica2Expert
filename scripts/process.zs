@@ -282,7 +282,7 @@ function beneficiate(_input as IIngredient, _oreName as string, _amount as doubl
   val oreName = (_oreName == "Aluminum") ? "Aluminium" : _oreName;
 
   val JA = mods.jaopca.JAOPCA.getOre(oreName);
-  var exceptions = Dd(opts,'exceptions',{d:''}).asString();
+  var exceptions = D(opts).getString('exceptions','');
   exceptions = exceptions==''?null:exceptions;
 
   # Determine extra output based on JAOPCA
@@ -321,7 +321,7 @@ function beneficiate(_input as IIngredient, _oreName as string, _amount as doubl
   val altLiquid as ILiquidStack = game.getLiquid(oreName.toLowerCase());
   val liquid = isNull(molten) ? altLiquid : molten;
   if (!isNull(liquid) && !isNull(JA)) {
-    var meltingExceptions = Dd(opts,'meltingExceptions',{d:[]}).asList();
+    var meltingExceptions = D(opts).get('meltingExceptions',{d:[]}).asList();
     var meltAllowed = true;
     for meltExc in meltingExceptions { if(meltExc.asString() == oreName) meltAllowed=false; }
     if(meltAllowed) {
