@@ -1,4 +1,4 @@
-#priority 2000
+#priority 2010
 
 import crafttweaker.data.IData;
 import crafttweaker.item.IIngredient;
@@ -52,7 +52,7 @@ zenClass Utils {
         }
       }
     }
-    
+
     // Find with smelting
     if (isNull(something) && entryNames has "any") {
       val oreItems = oreDict['ore'~oreName].items;
@@ -100,8 +100,8 @@ zenClass Utils {
   function log(a as string, b as string) as void {log(a,b,null);}
   function log(a as string, b as string, c as string) as void {
     if (DEBUG) print(
-      (!isNull(a) ? a : "") ~ 
-      (!isNull(b) ? " " ~ b : "") ~ 
+      (!isNull(a) ? a : "") ~
+      (!isNull(b) ? " " ~ b : "") ~
       (!isNull(c) ? " " ~ c : ""));
   }
   function log(arr as string[]) as void {
@@ -142,12 +142,13 @@ zenClass Utils {
     }
 
     # Compute min-max for each dimension
-    var minX = Dd(options, "x.min" , {d:0.0d}).asDouble();
-    var maxX = Dd(options, "x.max" , {d:1.0d}).asDouble();
-    var minY = Dd(options, "y.min" , {d:0.0d}).asDouble();
-    var maxY = Dd(options, "y.max" , {d:1.0d}).asDouble();
-    var stepX= D(options, "x.step");
-    var stepY= D(options, "y.step");
+    val dopt = D(options);
+    var minX = dopt.getDouble("x.min" , 0.0d);
+    var maxX = dopt.getDouble("x.max" , 1.0d);
+    var minY = dopt.getDouble("y.min" , 0.0d);
+    var maxY = dopt.getDouble("y.max" , 1.0d);
+    var stepX= dopt.get("x.step");
+    var stepY= dopt.get("y.step");
 
     # Determine doulbe steps
     var intervalX = (maxX - minX) / (max(1, width  - 1) as double);
@@ -175,7 +176,7 @@ zenClass Utils {
     return result;
   }
 
-  
+
   static defaultEmount as double[string] = {
     "Amber"               : 2.0d,
     "Amethyst"            : 2.0d,
@@ -212,7 +213,7 @@ zenClass Utils {
     return item;
   }
 
-    
+
   # Turn one item into another but keep all tags
   var upgradeFnc as IRecipeFunction = function(out, ins, cInfo){
     if(ins has "marked" && !isNull(ins.marked) && ins.marked.hasTag) {
@@ -221,5 +222,49 @@ zenClass Utils {
     }
     return out;
   };
+
+
+
+  function sortInt(list as int[]) as int[] {
+    if(isNull(list)) return null;
+    if(list.length == 1) return [0];
+
+    var sorted = [] as int[];
+    for i in 0 to list.length {
+      var g_v = 0;
+      var g_i = i;
+      for j in 0 to list.length {
+        if(list[j] >= g_v && !(sorted has j)) {
+          g_v = list[j];
+          g_i = j;
+        }
+      }
+      sorted += g_i;
+    }
+    return sorted;
+  }
+
+
+  function repeat(n as int) as string {return repeat(" ", n);}
+  function repeat(s as string, n as int) as string {
+    if(n<=0) return "";
+    var str = "";
+    for i in 0 to n {
+      str += s;
+    }
+    return str;
+  }
+
+  function join(arr as string[]) as string { return join(arr, "\n"); }
+  function join(arr as string[], delimiter as string) as string {
+    var first = true;
+    var s = "";
+    for str in arr {
+      val d = !first ? delimiter: "";
+      first = false;
+      s += d ~ str;
+    }
+    return s;
+  }
 }
 global utils as Utils = Utils();

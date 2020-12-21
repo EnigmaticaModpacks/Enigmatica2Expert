@@ -127,7 +127,6 @@ static L as IIngredient[string] = {
   
   "▪": <ore:ingotSuperium>,
   "▬": <ore:ingotSupremium>,
-  "☼": <minecraft:nether_star>,
   "‗": <ore:ingotInsanium>,
   "┉": <ore:ingotCrystaltine>,
 } as IIngredient[string];
@@ -159,7 +158,7 @@ function addTieredRecipe(
 			"╳2╳"+
 			"○○□□"], L);
 		scripts.wrap.astralsorcery.Altar.addAttunementAltarRecipe(
-			craft.recipeName(output, grid),	output, 500, 200, grid.shapeless());
+			craft.uniqueRecipeName(output, grid),	output, 500, 200, grid.shapeless());
 	} else
 
 	if(tier == 3) {
@@ -169,7 +168,7 @@ function addTieredRecipe(
 			"╳3╳"+
 			"○○□□"], L);
 		scripts.wrap.astralsorcery.Altar.addAttunementAltarRecipe(
-			craft.recipeName(output, grid),	output, 500, 200, grid.shapeless());
+			craft.uniqueRecipeName(output, grid),	output, 500, 200, grid.shapeless());
 	} else
 
 	if(tier == 4) {
@@ -180,7 +179,7 @@ function addTieredRecipe(
 			"○○□□"+
 			"▪▪▪▪▪▪▪▪"], L);
 		scripts.wrap.astralsorcery.Altar.addConstellationAltarRecipe(
-			craft.recipeName(output, grid),	output, 1500, 250, grid.shapeless());
+			craft.uniqueRecipeName(output, grid),	output, 1500, 250, grid.shapeless());
 	} else
 
 	if(tier == 5) {
@@ -193,7 +192,9 @@ function addTieredRecipe(
 			"○○□□"+
 			"☼"], L);
 		scripts.wrap.astralsorcery.Altar.addTraitAltarRecipe(
-			craft.recipeName(output, grid),	output, 3500, 300, grid.shapeless(), "astralsorcery.constellation." ~ constelation);
+			craft.uniqueRecipeName(output, grid),	output, 3500, 300,
+			grid.shapeless(), "astralsorcery.constellation." ~ constelation
+		);
 	} else
 
 	if(tier == 6) {
@@ -207,7 +208,9 @@ function addTieredRecipe(
 			"‗‗‗‗"+
 			"☼"], L);
 		scripts.wrap.astralsorcery.Altar.addTraitAltarRecipe(
-			craft.recipeName(output, grid),	output, 5500, 600, grid.shapeless(), "astralsorcery.constellation." ~ constelation);
+			craft.uniqueRecipeName(output, grid),	output, 5500, 600,
+			grid.shapeless(), "astralsorcery.constellation." ~ constelation
+		);
 	}
 }
 
@@ -228,50 +231,51 @@ addTieredRecipe(2, <mysticalcreations:creosolite_seeds>,       [<openblocks:tank
 
 # *======= Seeds Tier 3 =======*
 addTieredRecipe(3, <mysticalagriculture:tier3_inferium_seeds>, [<ore:blockPrudentiumEssence>] , null);
-addTieredRecipe(3, <mysticalagriculture:nether_seeds> ,        [<ore:blockNetherWart> ,<ore:runeAutumnB> ] , null);
-addTieredRecipe(3, <mysticalagriculture:certus_quartz_seeds> , [<ore:blockCertusQuartz> ,<ore:runeSummerB> ] , null);
-addTieredRecipe(3, <mysticalagriculture:aquamarine_seeds> ,    [<ore:oreAquamarine> , <ore:runeSpringB> ] , null);
-addTieredRecipe(3, <mysticalagriculture:obsidian_seeds> ,      [<ore:plateDenseObsidian> ,<ore:runeAutumnB> ] , null);
-addTieredRecipe(3, <mysticalagriculture:redstone_seeds> ,      [<ore:blockRedstone> ,<ore:runeAutumnB> ] , null);
-addTieredRecipe(3, <mysticalagriculture:glowstone_seeds> ,     [<ore:glowstone> , <ore:runeWinterB> ] , null);
-addTieredRecipe(3, <mysticalagriculture:nether_quartz_seeds> , [<ore:blockQuartz> ,<ore:runeSummerB> ] , null);
-addTieredRecipe(3, <mysticalagriculture:iron_seeds> ,          [<ore:blockIron> ,<ore:runeSummerB> ] , null);
-addTieredRecipe(3, <mysticalagriculture:lead_seeds> ,          [<ore:blockLead> , <ore:runeWinterB> ] , null);
+addTieredRecipe(3, <mysticalagriculture:nether_seeds> ,        [<ore:blockNetherWart> ,<ore:runeAutumnB>], null);
+addTieredRecipe(3, <mysticalagriculture:certus_quartz_seeds> , [<ore:blockCertusQuartz> ,<ore:runeSummerB>], null);
+addTieredRecipe(3, <mysticalagriculture:aquamarine_seeds> ,    [<ore:oreAquamarine> , <ore:runeSpringB>], null);
+addTieredRecipe(3, <mysticalagriculture:obsidian_seeds> ,      [<ore:plateDenseObsidian> ,<ore:runeAutumnB>], null);
+addTieredRecipe(3, <mysticalagriculture:redstone_seeds> ,      [<ore:blockRedstone> ,<ore:runeAutumnB>], null);
+addTieredRecipe(3, <mysticalagriculture:glowstone_seeds> ,     [<ore:glowstone> , <ore:runeWinterB>], null);
+addTieredRecipe(3, <mysticalagriculture:nether_quartz_seeds> , [<ore:blockQuartz> ,<ore:runeSummerB>], null);
+addTieredRecipe(3, <mysticalagriculture:iron_seeds> ,          [<ore:blockIron> ,<ore:runeSummerB>], null);
+addTieredRecipe(3, <mysticalagriculture:lead_seeds> ,          [<ore:blockLead> , <ore:runeWinterB>], null);
 addTieredRecipe(3, <mysticalagriculture:sky_stone_seeds> ,     [<appliedenergistics2:material:45>, <ore:runeSpringB>] , null);
-addTieredRecipe(3, <mysticalagriculture:silver_seeds> ,        [<ore:blockSilver> ,<ore:runeSpringB> ] , null);
+addTieredRecipe(3, <mysticalagriculture:silver_seeds> ,        [<ore:blockSilver> ,<ore:runeSpringB>], null);
 addTieredRecipe(3, <mysticalagriculture:tin_seeds> ,           [<ore:blockTin> ,<ore:runeSummerB> ], null);
-addTieredRecipe(3, <mysticalagriculture:knightslime_seeds> ,   [<ore:blockKnightslime> ,<ore:runeWinterB> ] , null);
+addTieredRecipe(3, <mysticalagriculture:knightslime_seeds> ,   [<ore:blockKnightslime> ,<ore:runeWinterB>], null);
 addTieredRecipe(3, <mysticalagriculture:steeleaf_seeds> ,      [<twilightforest:block_storage:2>, <ore:runeSpringB>] , null);
 addTieredRecipe(3, <mysticalagriculture:ironwood_seeds> ,      [<twilightforest:block_storage>, <ore:runeSummerB>] , null);
-addTieredRecipe(3, <mysticalagriculture:black_quartz_seeds> ,  [<ore:blockBlackQuartz> , <ore:runeAutumnB> ] , null);
-addTieredRecipe(3, <mysticalcreations:cheese_seeds> ,          [<ore:cheeseWheels> ,<ore:runeSpringB> ] , null);
+addTieredRecipe(3, <mysticalagriculture:black_quartz_seeds> ,  [<ore:blockBlackQuartz> , <ore:runeAutumnB>], null);
+addTieredRecipe(3, <mysticalcreations:cheese_seeds> ,          [<ore:cheeseWheels> ,<ore:runeSpringB>], null);
 
 # *======= Seeds Tier 4 =======*
-addTieredRecipe(4, <mysticalagriculture:tier4_inferium_seeds>, [<ore:blockIntermediumEssence> ], null);
-addTieredRecipe(4, <mysticalagriculture:thaumium_seeds>,       [<ore:blockThaumium> ,<ore:runeWrathB> ], null);
-addTieredRecipe(4, <mysticalagriculture:ruby_seeds>,           [<biomesoplenty:gem_block:1> ,<ore:runeEnvyB> ], null);
+addTieredRecipe(4, <mysticalagriculture:tier4_inferium_seeds>, [<ore:blockIntermediumEssence>], null);
+addTieredRecipe(4, <mysticalagriculture:thaumium_seeds>,       [<ore:blockThaumium> ,<ore:runeWrathB>], null);
+addTieredRecipe(4, <mysticalagriculture:ruby_seeds>,           [<biomesoplenty:gem_block:1> ,<ore:runeEnvyB>], null);
 addTieredRecipe(4, <mysticalagriculture:fiery_ingot_seeds>,    [<twilightforest:block_storage:1>, <ore:runeManaB>], null);
 addTieredRecipe(4, <mysticalagriculture:knightmetal_seeds>,    [<twilightforest:knightmetal_block>, <ore:runeManaB>], null);
-addTieredRecipe(4, <mysticalagriculture:fluix_seeds>,          [<appliedenergistics2:fluix_block> ,<ore:runeManaB> ], null);
-addTieredRecipe(4, <mysticalagriculture:ardite_seeds>,         [<ore:blockArdite> ,<ore:runeWrathB> ], null);
-addTieredRecipe(4, <mysticalagriculture:peridot_seeds>,        [<biomesoplenty:gem_block:2> ,<ore:runeGluttonyB> ], null);
-addTieredRecipe(4, <mysticalagriculture:cobalt_seeds>,         [<ore:blockCobalt> ,<ore:runeWrathB> ], null);
-addTieredRecipe(4, <mysticalagriculture:sapphire_seeds>,       [<biomesoplenty:gem_block:6> ,<ore:runePrideB> ], null);
-addTieredRecipe(4, <mysticalagriculture:lapis_lazuli_seeds>,   [<ore:blockLapis> ,<ore:runeSlothB> ], null);
-addTieredRecipe(4, <mysticalagriculture:gold_seeds>,           [<ore:blockGold> ,<ore:runeSlothB> ], null);
-addTieredRecipe(4, <mysticalagriculture:amber_seeds>,          [<ore:blockAmber> ,<ore:runeGluttonyB> ], null);
-addTieredRecipe(4, <mysticalagriculture:topaz_seeds>,          [<biomesoplenty:gem_block:3> ,<ore:runeGluttonyB> ], null);
-addTieredRecipe(4, <mysticalagriculture:osmium_seeds>,         [<ore:blockOsmium> ,<ore:runeEnvyB> ], null);
-addTieredRecipe(4, <mysticalagriculture:malachite_seeds>,      [<biomesoplenty:gem_block:5> ,<ore:runePrideB> ], null);
-addTieredRecipe(4, <mysticalagriculture:tanzanite_seeds>,      [<biomesoplenty:gem_block:4> ,<ore:runeLustB> ], null);
-addTieredRecipe(4, <mysticalagriculture:nickel_seeds>,         [<ore:blockNickel> ,<ore:runeGreedB> ], null);
-addTieredRecipe(4, <mysticalagriculture:end_seeds>,            [<excompressum:compressed_block:10> ,<ore:runeLustB> ], null);
-addTieredRecipe(4, <mysticalagriculture:fluxed_electrum_seeds>,[<ore:blockElectrumFlux> ,<ore:runeGreedB> ], null);
-addTieredRecipe(4, <mysticalagriculture:diamond_seeds>,        [<ore:blockDiamond> ,<ore:runePrideB> ], null);
-addTieredRecipe(4, <mysticalagriculture:emerald_seeds>,        [<ore:blockEmerald> ,<ore:runeEnvyB> ], null);
+addTieredRecipe(4, <mysticalagriculture:fluix_seeds>,          [<appliedenergistics2:fluix_block> ,<ore:runeManaB>], null);
+addTieredRecipe(4, <mysticalagriculture:ardite_seeds>,         [<ore:blockArdite> ,<ore:runeWrathB>], null);
+addTieredRecipe(4, <mysticalagriculture:peridot_seeds>,        [<biomesoplenty:gem_block:2> ,<ore:runeGluttonyB>], null);
+addTieredRecipe(4, <mysticalagriculture:cobalt_seeds>,         [<ore:blockCobalt> ,<ore:runeWrathB>], null);
+addTieredRecipe(4, <mysticalagriculture:sapphire_seeds>,       [<biomesoplenty:gem_block:6> ,<ore:runePrideB>], null);
+addTieredRecipe(4, <mysticalagriculture:lapis_lazuli_seeds>,   [<ore:blockLapis> ,<ore:runeSlothB>], null);
+addTieredRecipe(4, <mysticalagriculture:gold_seeds>,           [<ore:blockGold> ,<ore:runeSlothB>], null);
+addTieredRecipe(4, <mysticalagriculture:amber_seeds>,          [<ore:blockAmber> ,<ore:runeGluttonyB>], null);
+addTieredRecipe(4, <mysticalagriculture:topaz_seeds>,          [<biomesoplenty:gem_block:3> ,<ore:runeGluttonyB>], null);
+addTieredRecipe(4, <mysticalagriculture:osmium_seeds>,         [<ore:blockOsmium> ,<ore:runeEnvyB>], null);
+addTieredRecipe(4, <mysticalagriculture:malachite_seeds>,      [<biomesoplenty:gem_block:5> ,<ore:runePrideB>], null);
+addTieredRecipe(4, <mysticalagriculture:tanzanite_seeds>,      [<biomesoplenty:gem_block:4> ,<ore:runeLustB>], null);
+addTieredRecipe(4, <mysticalagriculture:nickel_seeds>,         [<ore:blockNickel> ,<ore:runeGreedB>], null);
+addTieredRecipe(4, <mysticalagriculture:end_seeds>,            [<excompressum:compressed_block:10> ,<ore:runeLustB>], null);
+addTieredRecipe(4, <mysticalagriculture:fluxed_electrum_seeds>,[<ore:blockElectrumFlux> ,<ore:runeGreedB>], null);
+addTieredRecipe(4, <mysticalagriculture:diamond_seeds>,        [<ore:blockDiamond> ,<ore:runePrideB>], null);
+addTieredRecipe(4, <mysticalagriculture:emerald_seeds>,        [<ore:blockEmerald> ,<ore:runeEnvyB>], null);
 
 
 # *======= Seeds Tier 5 =======*
+L['☼'] = <minecraft:nether_star>;
 addTieredRecipe(5, <mysticalagriculture:void_metal_seeds>,     [<ore:blockVoid>], "mineralis");
 addTieredRecipe(5, <mysticalagriculture:tier5_inferium_seeds>, [<ore:blockSuperiumEssence>], "aevitas");
 addTieredRecipe(5, <mysticalagriculture:platinum_seeds>,       [<ore:blockPlatinum>], "mineralis");

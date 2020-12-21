@@ -1,6 +1,7 @@
 import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
+import scripts.craft.grid.Grid;
 
 #modloaded environmentaltech
 	
@@ -213,10 +214,10 @@ for i in 0 .. 6 {
 
 		if (i==3) {
 			recipes.remove(void_miner);
-			scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, void_miner, craft.grid(["𝓹",
+			scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, void_miner, Grid(["𝓹",
 				"B C B",
 				"R P R",
-				"I H I"], evtIngrs)); }
+				"I H I"], evtIngrs).shaped()); }
 
 		if (i==4) {
 			craft.remake(void_miner, ["𝓹",
