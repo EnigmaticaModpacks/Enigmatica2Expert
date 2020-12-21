@@ -1,0 +1,23 @@
+{
+  "dependencies": "advancedrocketry",
+  "populate": {
+
+		"uranus_geodes": {
+			"distribution": "uniform",
+			"generator": {
+				"type": "geode",
+				"block": "mysticalagradditions:molten_superium",
+				"crust": {"name": "minecraft:concrete_powder", "properties": {"color":"cyan"}},
+				"material": ["ice", "packed_ice"]
+			},
+			"cluster-count": 1,
+			"chunk-chance": 20,
+			"min-height": 60,
+			"max-height": 100,
+			"dimension": {"restriction": "whitelist","value": [109]}
+		}
+		
+  }
+}
+
+
