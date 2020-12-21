@@ -1,0 +1,53 @@
+{
+  "dependencies": "advancedrocketry",
+  "populate": {
+
+		"kepler_0118_stone_range": {
+			"distribution": "uniform",
+			"generator": {
+				"type": "plate",
+				"radius": 5,
+				"height": {"min":2, "max": 12},
+				"block": "stone",
+				"material": "astralsorcery:blockblackmarble"
+			},
+			"cluster-count": 4,
+			"center-height": 10,
+			"spread": 100,
+			"smoothness": 3,
+			"dimension": {"restriction": "whitelist","value": [122]}
+		},
+
+
+		
+		"kepler_0118_resourse_0": {"cluster-count": 6 , "min-height": 3,  "max-height": 200, "distribution": "uniform", "generator": { "block": {"name":"minecraft:concrete", "metadata":15},                   "material": "astralsorcery:blockblackmarble", "cluster-size":10 }, "dimension": {"restriction": "whitelist","value": [122]}},
+		"kepler_0118_resourse_1": {"cluster-count": 10, "min-height": 3,  "max-height": 200, "distribution": "uniform", "generator": { "block": {"name":"minecraft:concrete_powder", "metadata":15},            "material": "astralsorcery:blockblackmarble", "cluster-size":26 }, "dimension": {"restriction": "whitelist","value": [122]}},
+		"kepler_0118_resourse_2": {"cluster-count": 8 , "min-height": 3,  "max-height": 16,  "distribution": "uniform", "generator": { "block": {"name":"actuallyadditions:block_crystal", "metadata":3},       "material": "astralsorcery:blockblackmarble", "cluster-size": 4 }, "dimension": {"restriction": "whitelist","value": [122]}},
+		"kepler_0118_resourse_3": {"cluster-count": 12, "min-height": 20, "max-height": 40,  "distribution": "uniform", "generator": { "block": {"name":"appliedenergistics2:sky_stone_block"},                 "material": "astralsorcery:blockblackmarble", "cluster-size":17 }, "dimension": {"restriction": "whitelist","value": [122]}},
+		"kepler_0118_resourse_4": {"cluster-count": 8 , "min-height": 25, "max-height": 30,  "distribution": "uniform", "generator": { "block": {"name":"chisel:antiblock"},                                    "material": "astralsorcery:blockblackmarble", "cluster-size": 6 }, "dimension": {"restriction": "whitelist","value": [122]}},
+		"kepler_0118_resourse_5": {"cluster-count": 6 , "min-height": 40, "max-height": 120, "distribution": "uniform", "generator": { "block": {"name":"contenttweaker:compressed_crushed_skystone"},          "material": "astralsorcery:blockblackmarble", "cluster-size":12 }, "dimension": {"restriction": "whitelist","value": [122]}},
+		"kepler_0118_resourse_6": {"cluster-count": 6,  "min-height": 3,  "max-height": 5,   "distribution": "uniform", "generator": { "block": {"name":"darkutils:wither_block"},                              "material": "astralsorcery:blockblackmarble", "cluster-size": 2 }, "dimension": {"restriction": "whitelist","value": [122]}},
+		"kepler_0118_resourse_7": {"cluster-count": 34, "min-height": 3,  "max-height": 250, "distribution": "uniform", "generator": { "block": {"name":"environmentalmaterials:alabaster", "metadata":15},     "material": "astralsorcery:blockblackmarble", "cluster-size":120}, "dimension": {"restriction": "whitelist","value": [122]}},
+
+		"kepler_0118_resourse_9": {"cluster-count": 6 , "min-height": 80, "max-height": 100, "distribution": "uniform", "generator": { "block": {"name":"immersiveengineering:stone_decoration", "metadata":3}, "material": "astralsorcery:blockblackmarble", "cluster-size": 7 }, "dimension": {"restriction": "whitelist","value": [122]}},
+
+		
+
+		"kepler_0118_crystal_stalactite": {
+			"distribution": "cave",
+			"generator": {
+				"type": "stalagmite",
+				"block": {"name":"quark:crystal", "metadata":8},
+				"height-variance": 5,
+				"height-mod": 10,
+				"min-height": 2,
+				"material": "astralsorcery:blockblackmarble"
+			},
+			"ground-level": 110,
+			"cluster-count": 10,
+			"dimension": {"restriction": "whitelist","value": [122]}
+		}
+  }
+}
+
+
