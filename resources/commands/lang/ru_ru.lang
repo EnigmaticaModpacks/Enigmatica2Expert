@@ -1,0 +1,4 @@
+commands.lang.usage="/lang" или "/lang hand" чтобы вывести список предметов инвентаня в файл crafttweaker.log
+commands.lang.output=Выведено %s предметов в файл crafttweaker.log
+commands.lang.empty=Ваш инвентарь пуст. Положите туда непереведенные предметы
+commands.lang.hand=Выведен предмет из руки в файл crafttweaker.log

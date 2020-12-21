@@ -1,0 +1,4 @@
+commands.lang.usage="/land" or "/lang hand" to dump inventory or held item into crafttweaker.log file
+commands.lang.output=Output %s items into crafttweaker.log file
+commands.lang.empty=Your inventory is empty. Put untranslated item in
+commands.lang.hand=Output held item into crafttweaker.log file
