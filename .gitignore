@@ -28,10 +28,9 @@ config/jei/lookupHistory.zip
 config/jei/bookmarks.ini
 
 config/BlockDrops/modVersions.txt
-
 config/InvTweaks/InvTweaks.cfg
-
 config/scavenge/IResourceProperty.txt
+config/codechicken/supporters.json
 
 config/AppliedEnergistics2/aerecipes/
 config/AppliedEnergistics2/recipes/

@@ -9,16 +9,20 @@
 
 -----------
 
-- 🟢 [x] Biome Tweaker (make planets ground higher, deep ocean biomes)
+- 🟢 [x] Biome Tweaker (check dims: 110, 113, 118)
+- 🟢 [x] 10 New mods
+- 𝓩𝒮 [x] Russian Translation helper
+- 𝓩𝒮 [ ] Craft.zs makes feather disableable (README note or additional functionality)
 - 💥 [ ] Uses of singularities
 - 💥 [ ] New 🐝 for endgame
 - 💥 [ ] **Rats** Structures Generation
 - 💥 [ ] Merge E2E-v2
-- 📖 [ ] BQ Osmium mining level alternatives
+- 📖 [x] Hamster Wheel to book
+- 📖 [x] Immersive book multiblocks
 - 𝓩𝒮 [ ] Omega potion logaryphmic level buff
-- 𝓩𝒮 [ ] Remove excessive logging for non-debug clients
 - 𝓩𝒮 [ ] Merge 1.82a
-- ✏️ [ ] Make Aristocraft Upgrade harded
+- 𝓩𝒮 [ ] Remove Furnace recipes to prevent Dupes with Avaritia Firnace
+- ✏️ [ ] Make Aristocrat Upgrade harded
 - 🧩 [ ] Osmium Spawn too weak
 - 🧩 [ ] AS buff perks
 - 🧩 [ ] Amber Dissapeared from TCon tool parts
@@ -26,16 +30,34 @@
 - 🔨 [ ] TCon tools recycle working only with first tier
 - ✏️ [x] Simplify TE Backpacks
 - ✏️ [x] Fix XML recipes get wrong first items of Oredicts
-- [ ] Remove Probe from export mod list
-- [ ] Thaumcraft Research Table click description helper
-- [ ] Remove Botanical crafty crates from JEI categories
-- [ ] Modded tree saplings and Logs from Tree Essence
-- [ ] Harder Cyclic's Sprinkler
-- [ ] Mystical Agriculture changes:  
-  - Squeeze cow essence to milk
-
-#### List of items should be craftable with animals
-- [ ] Deep Dark Portal
+- 🧩 [ ] Remove Probe from export mod list
+- 𝓩𝒮 [ ] Thaumcraft Research Table click description helper
+- 𝓩𝒮 [ ] Remove Botanical crafty crates from JEI categories
+- ✏️ [ ] Modded tree saplings and Logs from Tree Essence
+- ✏️ [ ] Harder Cyclic's Sprinkler, Fan
+- ✏️ [ ] Simplify Cyclic's Amulets: Boat, Void
+- 🧩 [ ] Cyclic Dryer Shouldnt use energy
+- 🧩 [ ] Remove Cyclic Melter
+- 🧩 [ ] Nerf durability of Cyclics items (pearls, Glowes, Amulets)
+- 🧩 [ ] Localize Content Tweaker's items
+- ✏️ [ ] Mystical Agriculture: Squeeze cow essence to milk
+- ?? [x] Report Spiders spawns 4x times near Monolith
+- ✏️ [ ] Apatite: Lower spawn rate, make cheaper
+- ✏️ [ ] Cheaper Sandwitch station
+- ✏️ [ ] Drawers clearing wrongly
+- 🌍 [ ] Bug: Biome Tweaks wont work without /BTReload command
+- ✏️ [ ] Extra Utilities Magical planks in machines
+- ✏️ [ ] Remove Chiseling of Colored Clear Glass
+- ✏️ [ ] Portable Drill
+- List of items should be craftable with animals  
+  - [ ] Deep Dark Portal
+  - [ ] Scalling Health Hearts
+  - [ ] Spectre Coils
+  - [ ] Sieves
+- 𝓩𝒮 [ ] Remove on release:
+  - excessive logging for non-debug clients
+  - 🔴 Mod Extended Items Information
+  - 🔴 Satako (lib fo ^)
 
 ### Do after process.zs class rework:
 
@@ -227,8 +249,6 @@ mods.rt.RandomThingsTweaker.addImbuingRecipe(IItemStack top, IItemStack leftside
 - "_custom:108>" ,**Fluix Singularity**        - Free wires
 - "_custom:109>" ,**Titanium Singularity**     - Increase Mining speed
 - "_ultimate>"   ,**The Ultimate Singularity** - ? All above
-
-/cofh clearblocks LD01 100 200 100 packed_ice ice water lava dirt stone snow snow_layer gravel
 
 ## Characters to use in crafts:
 

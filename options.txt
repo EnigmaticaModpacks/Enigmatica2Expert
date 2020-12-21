@@ -2,7 +2,7 @@ version:1343
 invertYMouse:false
 mouseSensitivity:0.5
 fov:0.0
-gamma:0.52112675
+gamma:1.0
 saturation:0.0
 renderDistance:12
 guiScale:3
@@ -15,7 +15,7 @@ difficulty:2
 fancyGraphics:true
 ao:2
 renderClouds:true
-resourcePacks:["bq_lootchests","minevost_translation-1.8.zip","Better+Gendustry+v1.0.zip"]
+resourcePacks:["bq_lootchests","minevost_translation-1.8.zip","Better+Gendustry+v1.0.zip","minecraftfont.zip"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:en_us
@@ -45,7 +45,7 @@ reducedDebugInfo:false
 useNativeTransport:true
 entityShadows:true
 mainHand:right
-attackIndicator:2
+attackIndicator:1
 showSubtitles:false
 realmsNotifications:true
 enableWeakAttacks:false
@@ -94,6 +94,12 @@ key_Hub Expand Key:0
 key_Change Caster Focus:34
 key_Misc Caster Toggle:0
 key_keybind.baublesinventory:0
+key_quark.keybind.dropoff:0
+key_quark.keybind.chestSort:0
+key_quark.keybind.chestDropoff:0
+key_quark.keybind.chestMerge:0
+key_quark.keybind.chestRestock:0
+key_quark.keybind.chestExtract:0
 key_quark.emote.no:0
 key_quark.emote.yes:0
 key_quark.emote.wave:0
@@ -112,14 +118,8 @@ key_quark.emote.dab:0
 key_quark.emote.jet:0
 key_quark.emote.exorcist:0
 key_quark.emote.zombie:0
-key_quark.keybind.toggleAutojump:0
-key_quark.keybind.dropoff:0
-key_quark.keybind.chestSort:0
-key_quark.keybind.chestDropoff:0
-key_quark.keybind.chestMerge:0
-key_quark.keybind.chestRestock:0
-key_quark.keybind.chestExtract:0
 key_quark.keybind.lockBuilding:33:SHIFT
+key_quark.keybind.toggleAutojump:0
 key_key.toggle_shaders:0
 key_bloodmagic.keybind.open_holding:53:CONTROL
 key_bloodmagic.keybind.cycle_holding_pos:0
@@ -133,6 +133,9 @@ key_key.next_item.desc:0
 key_key.previous_item.desc:0
 key_key.open_danknull.desc:0
 key_key.togglehud.desc:0
+key_Toggle:15
+key_Extra information:211
+key_Add info to original tooltip:210
 key_key.xu2.searchforitems:21
 key_key.findme.search:21
 key_key.ftbutilities.nbt:0
@@ -282,8 +285,8 @@ key_key.travelersbackpack.toggle_tank:49
 key_key.travelersbackpack.cycle_tool:44
 key_key.vaultopic.view:34
 key_key.vaultopic.vice:47
-key_Toggle Jetpack:0
-key_Open Rocket GUI:43
+key_Toggle Jetpack:45
+key_Open Rocket GUI:46
 key_Toggle RCS:0
 key_Rotate Vehicle Right:32
 key_Rotate Vehicle Left:30
@@ -326,7 +329,7 @@ key_enderio.keybind.fovplus:0
 key_enderio.keybind.fovminus:0
 key_enderio.keybind.fovplusfast:0
 key_enderio.keybind.fovminusfast:0
-soundCategory_master:0.046357617
+soundCategory_master:0.33774835
 soundCategory_music:0.0
 soundCategory_record:0.09859155
 soundCategory_weather:0.4084507

@@ -109,7 +109,6 @@ var seedIssue = MaterialSystem
 	.setColor(Color.fromHex("E3D7C8"))
 	.build()
 	.registerPart(pfluid)
-	// .registerPart("molten")
 	.getData();
 seedIssue.addDataValue("temperature", "290");
 seedIssue.addDataValue("density", "2009");

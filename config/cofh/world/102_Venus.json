@@ -2,7 +2,7 @@
   "dependencies": "advancedrocketry",
   "populate": {
 
-		"uranus_geodes": {
+		"venus_magma": {
 			"distribution": "uniform",
 			"generator": {
 				"block": "magma",

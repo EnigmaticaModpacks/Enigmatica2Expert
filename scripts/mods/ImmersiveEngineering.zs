@@ -415,3 +415,12 @@ craft.remake(<immersivepetroleum:stone_decoration> * 8, [
 	D: Bucket("water"),
 });
 
+# [Portable_Drill] from [Bedrock_Miner][+2]
+craft.remake(<portabledrill:portable_drill>, ["pretty",
+  "╱ B ╱",
+  "  |  ",
+  "  |  "], {
+  "╱": <ore:stickSteel>,                 # Steel Rod
+  "B": <bedrockores:bedrock_miner>,      # Bedrock Miner
+  "|": <immersiveengineering:coresample> # Core Sample
+});

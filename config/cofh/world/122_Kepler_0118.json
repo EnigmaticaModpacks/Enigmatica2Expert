@@ -3,7 +3,7 @@
   "populate": {
 
 		"kepler_0118_stone_range": {
-			"distribution": "uniform",
+			"distribution": "gaussian",
 			"generator": {
 				"type": "plate",
 				"radius": 5,

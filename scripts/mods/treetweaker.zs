@@ -10,5 +10,5 @@ helix.setLeaf("advancedrocketry:alienleaves");
 helix.setGenBiome("advancedrocketry:alien_forest");
 helix.setMinHeight(50); //this tree is meant to be tall
 helix.setExtraHeight(30);
-helix.setGenFrequency(8); //make it not so frequent 
+helix.setGenFrequency(6); //make it not so frequent 
 helix.register();
