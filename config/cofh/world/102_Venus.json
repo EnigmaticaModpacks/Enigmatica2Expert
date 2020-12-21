@@ -1,0 +1,20 @@
+{
+  "dependencies": "advancedrocketry",
+  "populate": {
+
+		"uranus_geodes": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "magma",
+				"cluster-size": 80
+			},
+			"cluster-count": 4,
+			"min-height": 19,
+			"max-height": 21,
+			"dimension": {"restriction": "whitelist","value": [102]}
+		}
+		
+  }
+}
+
+
