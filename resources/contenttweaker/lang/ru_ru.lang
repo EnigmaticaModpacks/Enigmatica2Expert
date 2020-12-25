@@ -1,0 +1,26 @@
+itemGroup.other=ContentTweaker
+fluid.heavy_metal=Тяжёлый Метал
+fluid.cheese=Сыр
+fluid.seed=Семя
+
+item.contenttweaker.compressed_glowstone.name=Сжатая Светопыль
+item.contenttweaker.compressed_ender.name=Сжатый Эндер Жемчуг
+
+tile.contenttweaker.compressed_crushed_andesite.name=Сжатый Измельченный Андезит
+tile.contenttweaker.compressed_crushed_diorite.name=Сжатый Измельченный Диорит
+tile.contenttweaker.compressed_crushed_granite.name=Сжатый Измельченный Гранит
+tile.contenttweaker.compressed_crushed_skystone.name=Сжатый Измельченный Небесный Камень
+tile.contenttweaker.conglomerate_of_life.name=Конгломерат Жизни
+tile.contenttweaker.conglomerate_of_coal.name=Конгломерат Угля
+tile.contenttweaker.conglomerate_of_sun.name=Конгломерат Солнца
+
+item.contenttweaker.supremium_boots_base.name=Основание Ядра Супремиумных Ботинок
+item.contenttweaker.supremium_chest_base.name=Основание Ядра Супремиумного Нагрудника
+item.contenttweaker.supremium_helmet_base.name=Основание Ядра Супремиумного Шлема
+item.contenttweaker.supremium_leggings_base.name=Основание Ядра Супремиумных Понож
+item.contenttweaker.empowered_phosphor.name=Усиленный Фосфор
+item.contenttweaker.blasted_coal.name=Взорванный Уголь
+
+tile.contenttweaker.terrestrial_artifact_block.name=Блок Артефакта Земли
+
+contenttweaker.part.fluid=%s

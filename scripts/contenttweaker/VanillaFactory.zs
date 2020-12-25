@@ -113,3 +113,27 @@ var seedIssue = MaterialSystem
 seedIssue.addDataValue("temperature", "290");
 seedIssue.addDataValue("density", "2009");
 seedIssue.addDataValue("viscosity", "1000");
+
+
+# -------------------------------
+# Animal's blocks
+# -------------------------------
+function createBlock(name as string, level as int, blockMaterial as BlockMaterial) {
+	val c = VanillaFactory.createBlock(name, blockMaterial);
+	c.toolClass = "pickaxe";
+	c.toolLevel = level;
+	c.blockHardness = level * 1.6;
+	c.blockResistance = level * 1.4;
+	c.blockSoundType = <soundtype:ground>;
+	c.register();
+}
+
+createBlock("conglomerate_of_life", 5, <blockmaterial:clay>);
+createBlock("conglomerate_of_coal", 5, <blockmaterial:clay>);
+createBlock("conglomerate_of_sun",  5, <blockmaterial:clay>);
+
+# -------------------------------
+# Animal's items
+# -------------------------------
+itemBuilder.addItem("empowered_phosphor");
+itemBuilder.addItem("blasted_coal");

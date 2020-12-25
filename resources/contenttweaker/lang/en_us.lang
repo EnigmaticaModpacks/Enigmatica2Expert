@@ -1,4 +1,7 @@
 itemGroup.other=ContentTweaker
+fluid.heavy_metal=Heavy Metal
+fluid.cheese=Cheese
+fluid.seed=Seed
 
 item.contenttweaker.compressed_glowstone.name=Compressed Glowstone
 item.contenttweaker.compressed_ender.name=Compressed Ender
@@ -7,10 +10,16 @@ tile.contenttweaker.compressed_crushed_andesite.name=Compressed Crushed Andesite
 tile.contenttweaker.compressed_crushed_diorite.name=Compressed Crushed Diorite
 tile.contenttweaker.compressed_crushed_granite.name=Compressed Crushed Granite
 tile.contenttweaker.compressed_crushed_skystone.name=Compressed Crushed Skystone
+tile.contenttweaker.conglomerate_of_life.name=Conglomerate Of Life
+tile.contenttweaker.conglomerate_of_coal.name=Conglomerate Of Coal
+tile.contenttweaker.conglomerate_of_sun.name=Conglomerate Of Sun
+
 item.contenttweaker.supremium_boots_base.name=Supremium Boots Core Base
 item.contenttweaker.supremium_chest_base.name=Supremium Chestplate Core Base
 item.contenttweaker.supremium_helmet_base.name=Supremium Helmet Core Base
 item.contenttweaker.supremium_leggings_base.name=Supremium Leggins Core Base
+item.contenttweaker.empowered_phosphor.name=Empowered Phosphor
+item.contenttweaker.blasted_coal.name=Blasted Coal
 
 tile.contenttweaker.terrestrial_artifact_block.name=Terrestrial Artifact Block
 
