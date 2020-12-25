@@ -367,7 +367,7 @@ remakeEx(<iceandfire:dragonforge_ice_brick> * 2, [
 	[<ore:dragonIceScales>, <ore:bricksStone>, <ore:dragonIceScales>]]);
 
 # Dragon meal
-remakeFluidToItem(<iceandfire:dragon_meal>, <fluid:lifeessence>, <ore:primeMeatCooked>*8);
+remakeFluidToItem(<iceandfire:dragon_meal>, <fluid:blood>, <ore:primeMeatCooked>*8);
 
 # Remove craft table dragon recipes
 recipes.remove(<iceandfire:dragonforge_fire_core_disabled>);
@@ -502,46 +502,14 @@ for i, jar in pixieJars {
     makePixieJar("pixie_jar_"~i, jar, pixieDyes[i]);
 }
 
-
-##################
-# Hearts craft
-
-# Remove craft from shards
-recipes.remove(<scalinghealth:heartcontainer>);
-
-# Heart shard recipe
-mods.rats.recipes.addGemcutterRatRecipe(<actuallyadditions:item_crystal_empowered>, <scalinghealth:crystalshard>);
-
-# Animania lambs
-var lambNames as string[] = [
-    "animania:lamb_dorper", 
-    "animania:lamb_dorset", 
-    "animania:lamb_friesian", 
-    "animania:lamb_jacob", 
-    "animania:lamb_merino", 
-    "animania:lamb_suffolk"
-];
-
-var cshard = <scalinghealth:crystalshard>;
-recipes.remove(<cyclicmagic:heart_toxic>);
-var anyLambIngredient = <enderio:item_soul_vial:1>.withTag({entityId: lambNames[0]});
-for i in 1 to lambNames.length {
-	anyLambIngredient = anyLambIngredient.or(<enderio:item_soul_vial:1>.withTag({entityId: lambNames[i]}));
-}
-# Toxic heart from shards
-recipes.addShaped("cyclicmagic_heart_toxic", <cyclicmagic:heart_toxic>, [
-		[cshard, cshard, cshard], 
-		[cshard, anyLambIngredient, cshard], 
-		[cshard, cshard, cshard]
-]);
-<cyclicmagic:heart_toxic>.addTooltip("Craft with any Lamb soul");
-
-
 # Spring water recipe
 mods.iceandfire.recipes.addIceDragonForgeRecipe( 
     <biomesoplenty:jar_filled:1>, 
     Bucket("ic2hot_water"), 
     Bucket("hot_spring_water"));
+
+# Remove craft from shards
+recipes.remove(<scalinghealth:heartcontainer>);
 
 # Heart container recipe
 mods.iceandfire.recipes.addFireDragonForgeRecipe(

@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IIngredient;
 import mods.jei.JEI.removeAndHide as rh;
 
 #modloaded randomthings
@@ -13,10 +14,6 @@ recipes.addShaped("ender_bucket2",
 	<randomthings:enderbucket>,
 	[[<ore:plateIron>, <minecraft:ender_pearl>, <ore:plateIron>],
 	[null, <ore:plateIron>, null]]);
-
-# Blood stone from moon stone in Life Essense
-mods.inworldcrafting.FluidToItem.transform(<randomthings:rezstone>, <fluid:lifeessence>, [<extrautils2:ingredients:5>]);
-<randomthings:rezstone>.maxStackSize = 64;
 
 # Precious emerald from emerald in blueslime
 mods.inworldcrafting.FluidToItem.transform(<randomthings:ingredient:9> * 2, <fluid:blueslime>, [<ore:oreEmerald>]);
@@ -60,13 +57,6 @@ recipes.addShaped(<randomthings:spectreilluminator>, [
 	[<randomthings:ingredient:2>, <extrautils2:suncrystal>, <randomthings:ingredient:2>],
 	[null, <randomthings:ingredient:2>, null]]);
 
-# Energy Injector
-recipes.remove(<randomthings:spectreenergyinjector>);
-recipes.addShaped(<randomthings:spectreenergyinjector>, [
-	[<ic2:glass>, <ic2:glass>, <ic2:glass>],
-	[<ic2:glass>, <thermalexpansion:frame:128>, <ic2:glass>],
-	[<randomthings:ingredient:3>, <ore:plateDenseObsidian>, <randomthings:ingredient:3>]]);
-
 # Spectre Key
 val ectoplasm = <randomthings:ingredient:2>;
 recipes.remove(<randomthings:spectrekey>);
@@ -98,29 +88,6 @@ mods.rt.RandomThingsTweaker.addImbuingRecipe(
 	<randomthings:ingredient:3>
 );
 
-# Spectre Coil normal
-recipes.remove(<randomthings:spectrecoil_normal>);
-
-# Any rod
-recipes.addShaped(<randomthings:spectrecoil_normal>, [
-	[<ore:plateObsidian>, <randomthings:ingredient:12>, <ore:plateObsidian>],
-	[<randomthings:ingredient:12>, <immersiveengineering:graphite_electrode>, <randomthings:ingredient:12>],
-	[<ore:plateObsidian>, <randomthings:ingredient:3>, <ore:plateObsidian>]]);
-
-# Spectre Coil redstone
-recipes.remove(<randomthings:spectrecoil_redstone>);
-recipes.addShaped(<randomthings:spectrecoil_redstone>, [
-	[<ore:plateObsidian>, <randomthings:spectrecoil_normal>, <ore:plateObsidian>],
-	[<actuallyadditions:item_crystal_empowered>, <immersiveengineering:graphite_electrode>.anyDamage(), <actuallyadditions:item_crystal_empowered>],
-	[<ore:plateObsidian>, <randomthings:spectrecoil_normal>, <ore:plateObsidian>]]);
-
-# Spectre Coil ender
-recipes.remove(<randomthings:spectrecoil_ender>);
-recipes.addShaped(<randomthings:spectrecoil_ender>, [
-	[<ore:plateDenseObsidian>, <randomthings:spectrecoil_redstone>, <ore:plateDenseObsidian>],
-	[<rftools:infused_enderpearl>, <immersiveengineering:graphite_electrode>.anyDamage(), <rftools:infused_enderpearl>],
-	[<ore:plateDenseObsidian>, <randomthings:spectrecoil_redstone>, <ore:plateDenseObsidian>]]);
-
 
 # Spectre Charger Tier 1
 recipes.remove(<randomthings:spectrecharger>);
@@ -139,13 +106,6 @@ recipes.remove(<randomthings:spectrecharger:2>);
 recipes.addShaped(<randomthings:spectrecharger:2>, [
 	[<deepmoblearning:soot_covered_plate>, <randomthings:spectrecharger:1>, <deepmoblearning:soot_covered_plate>],
 	[<ore:itemEnderCrystalPowder>, <randomthings:spectrecharger:1>, <ore:itemEnderCrystalPowder>]]);
-
-# Spectre Lens
-recipes.remove(<randomthings:spectrelens>);
-recipes.addShaped(<randomthings:spectrelens>, [
-	[<randomthings:ingredient:3>, <avaritia:resource>, <randomthings:ingredient:3>],
-	[<ore:crystalLitherite>, <advancedrocketry:blocklens>, <ore:crystalLitherite>],
-	[<randomthings:ingredient:3>, <avaritia:resource>, <randomthings:ingredient:3>]]);
 
 # Make saplings with MA essence
 recipes.addShaped("Spectre Saplings", <randomthings:spectresapling> * 10, [
@@ -176,16 +136,6 @@ craft.remake(<randomthings:playerinterface>, ["pretty",
 	B: <fluxnetworks:flux>,
 });
 
-
-# Slime cube simplify (used Nether Star)
-craft.remake(<randomthings:slimecube>, ["pretty",
-	"B B B",
-	"B A B",
-	"B B B"], {
-	A: <ore:blockKnightslime>,
-	B: <ore:slimecrystalGreen>,
-});
-
 # Imbuer
 craft.remake(<randomthings:imbuingstation>, ["pretty",
 	"A B A",
@@ -197,3 +147,167 @@ craft.remake(<randomthings:imbuingstation>, ["pretty",
 	D: <tconstruct:materials:18>,
 	E: <rats:raw_plastic>,
 });
+
+
+# Blood stone from moon stone
+mods.inworldcrafting.FluidToItem.transform(<randomthings:rezstone>, <fluid:blood>, [<extrautils2:ingredients:5>]);
+<randomthings:rezstone>.maxStackSize = 64;
+
+# [Blackout_Powder*4] from [Bio_Coal][+2]
+craft.reshapeless(<randomthings:ingredient:13>, "F☺▲", {
+  "▲": <ore:dustAsh>,                   # Ash
+  "F": <fluxnetworks:flux>,             # Flux
+  "☺": <actuallyadditions:item_misc:22>, # Bio Coal
+  remove: <randomthings:ingredient:13> * 4
+});
+
+# [Slime_Cube] from [Mending_Moss][+2]
+craft.remake(<randomthings:slimecube>, ["pretty",
+  "s R s",
+  "R M R",
+  "s R s"], {
+  "R": <rats:rat_diamond>,       # Rat Diamond
+  "s": <ore:slimecrystalGreen>,  # Green Slime Crystal
+  "M": <tconstruct:materials:19> # Mending Moss
+});
+
+# [Peace_Candle] from [Crystallized_Amber][+2]
+craft.remake(<randomthings:peacecandle>, ["pretty",
+  "  ☼  ",
+  "☺ C ☺",
+  "  ☺  "], {
+  "C": <cyclicmagic:crystallized_amber>,      # Crystallized Amber
+  "☺": <contenttweaker:conglomerate_of_coal>, # Conglomerate Of Coal
+  "☼": <extrautils2:suncrystal>               # Sun Crystal
+});
+
+# [Fertilized_Dirt*2] from [Slop_Bucket][+3]
+craft.remake(<randomthings:fertilizeddirt> * 8, ["pretty",
+  "  i  ",
+  "d ~ d",
+  "  R  "], {
+  "R": <minecraft:rotten_flesh>, # Rotten Flesh
+  "d": <ore:fertilizer>,
+  "i": <ore:dirt>,
+  "~": Bucket("slop"), # Slop Bucket
+  remove: <randomthings:fertilizeddirt> * 2
+});
+
+
+
+var weatherIngrs = {
+  "a": <ore:feather>,               # Feather
+  "B": <ore:itemBeeswax>,           # Beeswax
+  "C": <forestry:pollen:1>,         # Crystalline Pollen Cluster
+  "f": <minecraft:double_plant>,    # Poppy
+  "l": <randomthings:ingredient:13>,# Blackout Powder
+  "e": <ore:animaniaEggs>,
+} as IIngredient[string];
+
+# [Weather_Egg_<Sun>*2] from [Egg][+3]
+craft.remake(<randomthings:weatheregg> * 2, ["pretty",
+  "B f B",
+  "l e l",
+  "B f B"], weatherIngrs
+);
+
+# [Weather_Egg_<Rain>*2] from [Egg][+3]
+craft.remake(<randomthings:weatheregg:1> * 2, ["pretty",
+  "B C B",
+  "l e l",
+  "B C B"], weatherIngrs
+);
+
+# [Weather_Egg_<Storm>*2] from [Egg][+3]
+craft.remake(<randomthings:weatheregg:2> * 2, ["pretty",
+  "B a B",
+  "l e l",
+  "B a B"], weatherIngrs
+);
+
+# Spectre string harder
+recipes.remove(<randomthings:ingredient:12>);
+mods.inworldcrafting.FluidToItem.transform(<randomthings:ingredient:12>, <fluid:liquid_sunshine>, [
+	<forestry:phosphor>,
+	<randomthings:ingredient:2>,
+	<mysticalagriculture:crafting:23>,
+]);
+
+
+var spectreIngrs = {
+  "♥": <randomthings:spectrecoil_redstone>,   # Redstone Spectre Coil
+  "p": <randomthings:spectrecoil_normal>,     # Spectre Coil
+  "□": <ore:fusedQuartz>,
+  "e": <ore:eyeofredstone>,                   # Eye of Redstone
+  "E": <ore:pearlEnderEye>,                   # Eye of Ender
+  "I": <twilightforest:ice_bomb>,             # Ice Bomb
+  "▬": <randomthings:ingredient:3>,           # Spectre Ingot
+  "o": <cyclicmagic:soulstone>,               # Soulstone
+  "P": <forestry:crafting_material:1>,        # Pulsating Mesh
+  "S": <randomthings:ingredient:12>,          # Spectre String
+  "i": <contenttweaker:conglomerate_of_coal>,
+  "l": <contenttweaker:conglomerate_of_life>,
+  "t": <contenttweaker:conglomerate_of_sun>,
+  "C": <cyclicmagic:crystallized_obsidian>, # Crystallized Obsidian
+} as IIngredient[string];
+
+# [Spectre_Coil] from [Ice_Bomb][+4]
+craft.remake(<randomthings:spectrecoil_normal>, ["pretty",
+  "S ▬ S",
+  "P I P",
+  "S i S"], spectreIngrs
+);
+
+# [Redstone_Spectre_Coil] from [Spectre_Coil][+4]
+craft.remake(<randomthings:spectrecoil_redstone>, ["pretty",
+  "S ▬ S",
+  "e p e",
+  "S l S"], spectreIngrs
+);
+
+# [Ender_Spectre_Coil] from [Redstone_Spectre_Coil][+4]
+craft.remake(<randomthings:spectrecoil_ender>, ["pretty",
+  "S ▬ S",
+  "E ♥ E",
+  "S t S"], spectreIngrs
+);
+
+# [Spectre_Lens] from [Hardened_Copper_Glass][+2]
+craft.remake(<randomthings:spectrelens>, ["S□S", "▬▬▬"], spectreIngrs);
+
+# [Spectre_Energy_Injector] from [Soulstone][+3]
+craft.remake(<randomthings:spectreenergyinjector>, ["pretty",
+  "□ □ □",
+  "□ o □",
+  "▬ p ▬"], spectreIngrs
+);
+
+# ----------------------------
+# Tools
+# ----------------------------
+<randomthings:spectrepickaxe>.maxDamage = 3000;
+<randomthings:spectreaxe>.maxDamage = 3000;
+<randomthings:spectreshovel>.maxDamage = 3000;
+<randomthings:spectresword>.maxDamage = 3000;
+craft.remake(<randomthings:spectrepickaxe>, ["pretty",
+  "▬ ▬ ▬",
+  "  C  ",
+  "  C  "], spectreIngrs);
+
+craft.remake(<randomthings:spectreaxe>, ["pretty",
+  "▬ ▬  ",
+  "▬ C  ",
+  "  C  "], spectreIngrs);
+
+craft.remake(<randomthings:spectreshovel>, ["pretty",
+  "  ▬  ",
+  "  C  ",
+  "  C  "], spectreIngrs);
+
+craft.remake(<randomthings:spectresword>, ["pretty",
+  "  ▬  ",
+  "  ▬  ",
+  "  C  "], spectreIngrs);
+
+
+# ----------------------------

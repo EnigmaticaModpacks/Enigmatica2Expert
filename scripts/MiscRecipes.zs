@@ -419,14 +419,18 @@ Remake(<bedrockores:bedrock_miner>, [
 	C: <ore:blockRedstone>,
 	D: <immersiveengineering:metal_device1:7>});
 
-	
-# Sandwiches
+# [Sandwich_Station] from [Cooking_Table][+3]
 recipes.remove(<culinaryconstruct:sandwich_station>);
-scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <culinaryconstruct:sandwich_station>, [
-	[<nuclearcraft:moresmore>, <ore:dragonsteelIngot>, <nuclearcraft:moresmore>], 
-	[<cookingforblockheads:counter>, <cookingforblockheads:cooking_table>, <cookingforblockheads:counter>], 
-	[<cookingforblockheads:counter>, <cookingforblockheads:counter>, <cookingforblockheads:counter>]
-]);
+scripts.wrap.extendedcrafting.TableCrafting.addShaped(0,
+<culinaryconstruct:sandwich_station>, Grid(["pretty",
+  "  T  ",
+  "F C F",
+  "K K K"], {
+  "C": <cookingforblockheads:cooking_table>, # Cooking Table
+  "T": <rats:tiny_coin>,                     # Tiny Coin
+  "F": <nuclearcraft:foursmore>,             # FourS'more QuadS'mingot
+  "K": <cookingforblockheads:counter>        # Kitchen Counter
+}).shaped());
 
 # Peacock fan
 recipes.addShaped(<twilightforest:peacock_fan>, [

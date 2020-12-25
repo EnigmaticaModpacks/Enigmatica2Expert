@@ -725,3 +725,23 @@ function addSharpeningKitOredict(level as int, names as string[]) {
 <ore:essenceTier2>.add(<mysticalcreations:creosolite_essence>);
 <ore:essenceTier3>.add(<mysticalcreations:cheese_essence>);
 <ore:essenceTier5>.add(<mysticalcreations:ultimate_essence>);
+
+# IC2 ashes to thedustAsh
+for item in <ore:dustAshes>.items {
+	<ore:dustAsh>.add(item);
+}
+
+# Animania wool
+<ore:woolPrime>.addItems([
+	<animania:wool:1>,
+	<animania:wool:6>,
+	<animania:wool>,
+	<animania:wool:4>,
+	<animania:wool:2>,
+	<animania:wool:5>,
+	<animania:wool:3>,
+]);
+
+# Its too hard to craft for being just obsidian
+<ore:gemObsidian>.remove(<cyclicmagic:crystallized_obsidian>);
+<ore:gemAmber>.remove(<cyclicmagic:crystallized_amber>);

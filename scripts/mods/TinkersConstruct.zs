@@ -277,7 +277,7 @@ for pos, names in utils.graph([
 
 # Remake some metals to able be melted only under amplyfiing tube
 mods.mechanics.addTubeRecipe([<thaumcraft:amber_block>] as IItemStack[], <liquid:amber> * 1000);
-mods.mechanics.addTubeRecipe([<minecraft:obsidian>] as IItemStack[], <liquid:crystal> * 1000);
+mods.mechanics.addTubeRecipe([<biomesoplenty:crystal>] as IItemStack[], <liquid:crystal> * 1000);
 
 # Remove cyclic recipes
 mods.cyclicmagic.Melter.removeShapedRecipe("amber", 100);

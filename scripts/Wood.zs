@@ -12,7 +12,7 @@ function saw(input as IIngredient, output as IItemStack, exceptions as string) {
   scripts.process.sawWood(input, output, "only: blockCutter strict: shapeless");
 
   # TE Sawmill generates x3 recipes automatically from craftingTable recipes so we add its in exceptions
-  scripts.process.sawWood(input, output, "except: TESawmill blockCutter shapeless AdvRockCutter " ~ exceptions);
+  scripts.process.sawWood(input, output, "except: TESawmill blockCutter shapeless " ~ exceptions);
 }
 
 
@@ -117,6 +117,10 @@ saw(<advancedrocketry:alienwood>    , <advancedrocketry:planks>          , "stri
 saw(<extrautils2:ironwood_log>      , <extrautils2:ironwood_planks>      , "strict: manufactory mekSawmill");
 saw(<extrautils2:ironwood_log:1>    , <extrautils2:ironwood_planks:1>    , "strict: manufactory mekSawmill");
 saw(<iceandfire:dreadwood_log>      , <iceandfire:dreadwood_planks>      , "no exceptions");
+
+# Magical wood special
+saw(<extrautils2:decorativesolidwood:1>,<extrautils2:decorativesolidwood>, "no exceptions");
+scripts.process.sawWood(<extrautils2:decorativesolidwood:1>,<extrautils2:decorativesolidwood>, "only: TESawmill");
 
 
 # Spectre Wood compat

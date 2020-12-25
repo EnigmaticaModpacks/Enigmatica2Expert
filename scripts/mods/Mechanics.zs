@@ -50,11 +50,9 @@ function addBurstSeedRecipe(input as IItemStack, additive as IItemStack, output 
   });
 }
 
-addBurstSeedRecipe(<contenttweaker:compressed_crushed_andesite>, null, <mechanics:burst_seed_andesite>);
-addBurstSeedRecipe(<contenttweaker:compressed_crushed_diorite> , null, <mechanics:burst_seed_diorite>);
-addBurstSeedRecipe(<contenttweaker:compressed_crushed_granite> , null, <mechanics:burst_seed_granite>);
 addBurstSeedRecipe(<enderio:block_infinity>, <bigreactors:dustcyanite>, <mechanics:burst_seed_grainsofinfinity>);
 addBurstSeedRecipe(<enderio:block_infinity>, <forestry:phosphor>      , <mechanics:burst_seed_grainsofinfinity>);
+addBurstSeedRecipe(<contenttweaker:conglomerate_of_coal>, <thermalfoundation:material:162>, <mechanics:burst_seed_black_iron>);
 
 # Empty rod remake
 recipes.addShaped(<mechanics:empty_rod>, [

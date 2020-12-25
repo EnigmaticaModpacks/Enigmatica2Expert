@@ -37,13 +37,6 @@ remake("rat_breeding_lantern", <rats:rat_breeding_lantern>, [
 	[null, <scalinghealth:heartdust>, null]
 ]);
 
-# Gemcutter upgrade
-remake("rat_upgrade_gemcutter", <rats:rat_upgrade_gemcutter>, [
-	[<randomthings:ingredient:9>, <ore:crystalFluix>, <randomthings:ingredient:9>], 
-	[<ore:crystalFluix>, <rats:rat_upgrade_basic>, <ore:crystalFluix>], 
-	[<randomthings:ingredient:9>, <ore:crystalFluix>, <randomthings:ingredient:9>]
-]);
-
 # Rat upgrade function
 function ratUpgrade(name as string, result as IItemStack, mat as IIngredient){
 	recipes.addShaped(name, result, [
@@ -76,25 +69,50 @@ recipes.addShaped("rat_upgrade_from_fragment", <rats:rat_upgrade_basic>, [
 	[fragment, fragment, fragment]]);
 
 
-# Chef upgrade
-remake("rat_upgrade_chef", <rats:rat_upgrade_chef>, [
-	[<ore:foodLemondrizzlecake>, <rats:chef_toque>.anyDamage(), <ore:foodLemondrizzlecake>], 
-	[<ore:foodLemondrizzlecake>, <rats:rat_upgrade_basic>, <ore:foodLemondrizzlecake>], 
-	[<rats:little_black_squash_balls>, <forestry:honey_pot>, <rats:little_black_squash_balls>]
-]);
+# [Rat_Upgrade__Gemcutter] from [Rat_Upgrade__Basic][+3]
+craft.remake(<rats:rat_upgrade_gemcutter>, ["pretty",
+  "P M P",
+  "▬ R ▬",
+  "P M P"], {
+  "P": <randomthings:ingredient:9>,      # Precious Emerald
+  "R": <rats:rat_upgrade_basic>,         # Rat Upgrade: Basic
+  "▬": <ore:ingotCarbon>,                # Carbon Brick
+  "M": <extrautils2:decorativesolidwood> # Magical Planks
+});
+
+
+# [Rat_Upgrade__Chef] from [Rat_Upgrade__Basic][+5]
+craft.remake(<rats:rat_upgrade_chef>, ["pretty",
+  "e C e",
+  "A R A",
+  "L H L"], {
+  "A": <cyclicmagic:food_step>,         # Apple of Lofty Stature
+  "R": <rats:rat_upgrade_basic>,        # Rat Upgrade: Basic
+  "C": <rats:chef_toque>.anyDamage(),   # Chef Toque
+  "e": <ore:foodLemondrizzlecake>,      # Lemon Drizzle Cake
+  "H": <forestry:honey_pot>,            # Honey Pot
+  "L": <rats:little_black_squash_balls> # Little Black Squash Balls
+});
+
+
+# [Rat_Upgrade__Aristoc-Rat] from [Rat_Upgrade__Basic][+4]
+craft.remake(<rats:rat_upgrade_aristocrat>, ["pretty",
+  "S T S",
+  "M R M",
+  "S § S"], {
+  "R": <rats:rat_upgrade_basic>, # Rat Upgrade: Basic
+  "S": <ore:coinSignalum>,       # Signalum Coin
+  "T": <rats:top_hat>.anyDamage(),# Top Hat
+  "§": <randomthings:slimecube>, # Slime Cube
+  "M": <tconstruct:materials:19> # Mending Moss
+});
+
 
 # Ore Dubling rat
 remakeEx(<rats:rat_upgrade_ore_doubling>, [
 	[<rats:rat_nugget>, <ore:craftingToolForgeHammer>, <rats:rat_nugget>], 
 	[<ore:craftingToolForgeHammer>, <rats:rat_upgrade_basic>, <ore:craftingToolForgeHammer>], 
 	[<rats:rat_nugget>, <randomthings:ingredient:11>, <rats:rat_nugget>]
-]);
-
-# Aristocrat 
-remakeEx(<rats:rat_upgrade_aristocrat>, [
-	[<ore:coinPlatinum>, <rats:top_hat>.anyDamage(), <ore:coinPlatinum>], 
-	[<randomthings:ingredient:9>, <rats:rat_upgrade_basic>, <randomthings:ingredient:9>], 
-	[<ore:coinPlatinum>, <extrautils2:opinium:2>, <ore:coinPlatinum>]
 ]);
 
 # Gem of ratlantis
@@ -194,7 +212,7 @@ var allCoinsConversions as IItemStack[] = [
 
 var k as int = 0;
 while (k < allCoinsConversions.length) {
-    mods.rats.recipes.addGemcutterRatRecipe(allCoinsConversions[k+1], allCoinsConversions[k]);
+    mods.rats.recipes.addGemcutterRatRecipe(allCoinsConversions[k+1], allCoinsConversions[k] * 4);
     k += 2;
 }
 
@@ -264,7 +282,7 @@ scripts.process.melt(<rats:rat_diamond>, <liquid:diamond> * 165, "No Exceptions"
 
 # Harder little balls recipe (was from coal)
 mods.rats.recipes.removeGemcutterRatRecipe(<rats:little_black_squash_balls>);
-mods.rats.recipes.addGemcutterRatRecipe(<thermalfoundation:storage_resource>, <rats:little_black_squash_balls> * 3);
+mods.rats.recipes.addGemcutterRatRecipe(<advancedrocketry:misc:1>, <rats:little_black_squash_balls> * 3);
 
 # Red Coal alternative
 mods.rt.RandomThingsTweaker.addImbuingRecipe(

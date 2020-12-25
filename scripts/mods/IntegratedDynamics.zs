@@ -11,12 +11,6 @@ import mods.jei.JEI.removeAndHide as rh;
 	scripts.wrap.integrateddynamics.MechanicalSqueezer.addRecipe(<thermalfoundation:ore:4>, <thermalfoundation:material:68> * 2, 0.50f, <thermalfoundation:material:68>);
 */
 
-# User
-	recipes.remove(<integratedtunnels:part_player_simulator_item>);
-	recipes.addShapeless("IT User", 
-	<integratedtunnels:part_player_simulator_item> * 2, 
-	[<extrautils2:user>.anyDamage(), <extrautils2:user>.anyDamage()]);
-
 # Generator
 	recipes.remove(<integrateddynamics:coal_generator>);
 	recipes.addShapedMirrored("IntegratedDynamics Generator", 

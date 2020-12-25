@@ -9,6 +9,41 @@
       "chance": 0.1,
       "fortuneChance": 0.0
     }
+  ],
+  "ore:woolPrime": [
+    {
+      "stack": {
+        "name": "jaopca:item_dusttinyquartzblack",
+        "amount": 2,
+        "meta": 0
+      },
+      "chance": 0.4,
+      "fortuneChance": 0.8
+    },{
+      "stack": {
+        "name": "jaopca:item_dusttinydiamond",
+        "amount": 2,
+        "meta": 0
+      },
+      "chance": 0.4,
+      "fortuneChance": 0.8
+    },{
+      "stack": {
+        "name": "jaopca:item_dusttinyosmium",
+        "amount": 2,
+        "meta": 0
+      },
+      "chance": 0.4,
+      "fortuneChance": 0.8
+    },{
+      "stack": {
+        "name": "mechanics:fuel_dust_tiny",
+        "amount": 2,
+        "meta": 0
+      },
+      "chance": 0.4,
+      "fortuneChance": 0.8
+    }
   ]
   ,"rats:ratglove_flower": [{"stack": {"name": "rats:ratglove_petals","amount": 1,"meta": 0},"chance": 0.3,"fortuneChance": 0.0}]
 }

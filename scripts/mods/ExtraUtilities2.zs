@@ -13,11 +13,22 @@ import crafttweaker.item.IItemStack;
 	[<immersiveengineering:metal_decoration1_slab:5>, <ore:itemCompressedDiamond>, <immersiveengineering:metal_decoration1_slab:5>], 
 	[<ore:itemCompressedDiamond>, <ore:itemCompressedDiamond>, <ore:itemCompressedDiamond>]]);
 
+	
 # User
 	recipes.remove(<extrautils2:user>);
-	recipes.addShapeless("ExU User", 
-	<extrautils2:user> * 2, 
-	[<cyclicmagic:block_user>.anyDamage(), <cyclicmagic:block_user>.anyDamage()]);
+	recipes.addShapedMirrored("extrautils2 User", 
+	<extrautils2:user>, 
+	[[<ore:ingotGold>, <ore:ingotRefinedObsidian>, <ore:ingotGold>],
+	[<minecraft:golden_pickaxe>, <computercraft:turtle_expanded>, <minecraft:golden_axe>], 
+	[<ore:compressed2xCobblestone>, <ore:compressed2xCobblestone>, <ore:compressed2xCobblestone>]]);
+
+# User rotate
+	val us1 = <integratedtunnels:part_player_simulator_item>;
+	val us2 = <extrautils2:user>;
+	recipes.remove(us1);
+	recipes.addShapeless("User rotate 1", us2 * 2, [us1.anyDamage(), us1.anyDamage()]);
+	recipes.addShapeless("User rotate 2", us1 * 2, [us2, us2]);
+
 
 # Redstone Clock
 	recipes.remove(<extrautils2:redstoneclock>);
@@ -85,14 +96,6 @@ import crafttweaker.item.IItemStack;
 	[[<minecraft:stone_slab>, <minecraft:stone_slab>, <minecraft:stone_slab>],
 	[<xnet:netcable:*>, <ore:blockRedstone>, <xnet:netcable:*>], 
 	[<minecraft:stone_slab>, <minecraft:stone_slab>, <minecraft:stone_slab>]]);
-
-# Deep Dark portal recipe
-	recipes.remove(<extrautils2:teleporter:1>);
-	recipes.addShaped("Deeep Dark Portal", 
-	<extrautils2:teleporter:1>, 
-	[[<ore:compressed6xCobblestone>, <ore:crystalLitherite>, <ore:compressed6xCobblestone>],
-	[<ore:ingotIridium>, <ore:ingotDraconium>, <ore:ingotIridium>], 
-	[<ore:compressed6xCobblestone>, <ore:crystalLitherite>, <ore:compressed6xCobblestone>]]);
 
 # Analog Crafter
 	recipes.remove(<extrautils2:analogcrafter>);
@@ -218,4 +221,15 @@ craft.remake(<extrautils2:playerchest>, ["pretty",
 	A: <extrautils2:decorativesolid:7>,
 	B: <extrautils2:ingredients:12>,
 	C: <enderstorage:ender_storage>,
+});
+
+# [Deep_Dark_Portal] from [Black_Iron_Lamp][+3]
+craft.remake(<extrautils2:teleporter:1>, ["pretty",
+  "░ ☺ ░",
+  "◊ B ◊",
+  "░ ☺ ░"], {
+  "░": <ore:compressed5xCobblestone>, # Sextuple Compressed Cobblestone
+  "B": <extendedcrafting:lamp:1>,     # Black Iron Lamp
+  "◊": <ore:gemIridium>,              # Iridium Ore
+  "☺": <contenttweaker:blasted_coal>  # Blasted Coal
 });

@@ -244,5 +244,20 @@
       "chance": 1.0,
       "fortuneChance": 0.0
     }
+  ],
+  "ore:blockCharcoal": [
+    {
+      "item": "actuallyadditions:item_misc:11",
+      "amount": 3,
+      "miningLevel": 1,
+      "chance": 0.3,
+      "fortuneChance": 0.9
+    }, {
+      "item": "advancedrocketry:misc:1",
+      "amount": 3,
+      "miningLevel": 1,
+      "chance": 0.33333,
+      "fortuneChance": 0.45
+    }
   ]
 }
