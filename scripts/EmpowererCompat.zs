@@ -13,27 +13,21 @@ import mods.jei.JEI.removeAndHide as rh;
 	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<thermalexpansion:frame:129>, 10000000, 1000000, <thermalexpansion:frame:128>, [<immersiveengineering:material:2>, <thermalfoundation:material:354>, <thermalfoundation:material:290>, <mekanism:basicblock:8>]);
 
 # Restonia
-	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<actuallyadditions:item_crystal_empowered>, 100000, 1000000, <actuallyadditions:item_crystal>, [<nuclearcraft:gem>, <thermalfoundation:material:513>, <tconstruct:tool_rod>.withTag({Material: "ardite"}), <minecraft:red_nether_brick>]);
 	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<actuallyadditions:block_crystal_empowered>, 1000000, 1000000, <actuallyadditions:block_crystal>, [<nuclearcraft:gem>, <thermalfoundation:material:513>, <tconstruct:tool_rod>.withTag({Material: "ardite"}), <minecraft:red_nether_brick>]);
 
 # Palis
-	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<actuallyadditions:item_crystal_empowered:1>, 100000, 1000000, <actuallyadditions:item_crystal:1>, [<tconstruct:ingots>, <ic2:plate:13>, <biomesoplenty:gem:6>, <tconstruct:slime_congealed:1>]);
 	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<actuallyadditions:block_crystal_empowered:1>, 1000000, 1000000, <actuallyadditions:block_crystal:1>, [<tconstruct:ingots>, <ic2:plate:13>, <biomesoplenty:gem:6>, <tconstruct:slime_congealed:1>]);
 
 # Diamantine
-	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<actuallyadditions:item_crystal_empowered:2>, 200000, 1000000, <actuallyadditions:item_crystal:2>, [<nuclearcraft:dust:10>, <botania:manaresource:2>, <tconstruct:ingots:2>, <biomesoplenty:gem:5>]);
 	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<actuallyadditions:block_crystal_empowered:2>, 2000000, 1000000, <actuallyadditions:block_crystal:2>, [<nuclearcraft:dust:10>, <botania:manaresource:2>, <tconstruct:ingots:2>, <biomesoplenty:gem:5>]);
 
 # Void
-	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<actuallyadditions:item_crystal_empowered:3>, 1000000, 1000000,  <actuallyadditions:item_crystal:3>, [<minecraft:dye>, <extendedcrafting:storage>, <ore:stoneBasalt>, <actuallyadditions:block_misc:2>]);
 	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<actuallyadditions:block_crystal_empowered:3>, 10000000, 1000000,  <actuallyadditions:block_crystal:3>, [<minecraft:dye>, <extendedcrafting:storage>, <ore:stoneBasalt>, <actuallyadditions:block_misc:2>]);
 
 # Emeradic
-	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<actuallyadditions:item_crystal_empowered:4>, 200000, 1000000, <actuallyadditions:item_crystal:4>, [<minecraft:dye:2>, <minecraft:emerald>, <nuclearcraft:dust:9>, <actuallyadditions:block_testifi_bucks_green_wall>]);
 	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<actuallyadditions:block_crystal_empowered:4>, 2000000, 1000000, <actuallyadditions:block_crystal:4>, [<minecraft:dye:2>, <minecraft:emerald>, <nuclearcraft:dust:9>, <actuallyadditions:block_testifi_bucks_green_wall>]);
 
 # Enori
-	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<actuallyadditions:item_crystal_empowered:5>, 100000, 1000000, <actuallyadditions:item_crystal:5>, [<minecraft:quartz_block>, <minecraft:bone_block>, <mekanism:ingot:1>, <nuclearcraft:gem:2>,]);
 	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<actuallyadditions:block_crystal_empowered:5>, 1000000, 1000000, <actuallyadditions:block_crystal:5>, [<minecraft:quartz_block>, <minecraft:bone_block>, <mekanism:ingot:1>, <nuclearcraft:gem:2>]);
 
 # Canola Seeds
