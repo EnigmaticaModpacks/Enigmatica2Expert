@@ -745,3 +745,14 @@ for item in <ore:dustAshes>.items {
 # Its too hard to craft for being just obsidian
 <ore:gemObsidian>.remove(<cyclicmagic:crystallized_obsidian>);
 <ore:gemAmber>.remove(<cyclicmagic:crystallized_amber>);
+
+# Mystical any crystal
+<ore:infusionCrystal>.addItems([
+	<mysticalagriculture:infusion_crystal>,
+	<matc:inferiumcrystal>,
+	<matc:prudentiumcrystal>,
+	<matc:intermediumcrystal>,
+	<matc:superiumcrystal>,
+	<matc:supremiumcrystal>,
+	<mysticalagriculture:master_infusion_crystal>
+]);

@@ -50,10 +50,6 @@ recipes.addShapedMirrored("Wither Proof Glass",
 	[[<ore:blockInferiumEssence>, <ore:blockPrudentiumEssence>, <ore:blockInferiumEssence>],
 	[<ore:manaDiamond>, <appliedenergistics2:quartz_growth_accelerator>, <ore:manaDiamond>], 
 	[<ore:blockInferiumEssence>, <ore:blockPrudentiumEssence>, <ore:blockInferiumEssence>]]);
-	
-# Infusion Crystal
-	recipes.remove(<mysticalagriculture:infusion_crystal>);
-	scripts.wrap.thermalexpansion.Infuser.addRecipe(<mysticalagriculture:infusion_crystal>, <biomesoplenty:gem>, 10000000);
 
 # Master Infusion Crystal
 	recipes.remove(<mysticalagriculture:master_infusion_crystal>);
@@ -457,3 +453,35 @@ craft.make(<biomesoplenty:white_dye>, ["pretty",
 	"  x  "], {
 	x: <mysticalagriculture:dye_essence>
 });
+
+# Remove previous 1 -> 4
+recipes.removeByRecipeName("mysticalagriculture:core/compression/inferium_essence_from");
+recipes.removeByRecipeName("mysticalagriculture:core/compression/prudentium_essence_from");
+recipes.removeByRecipeName("mysticalagriculture:core/compression/intermedium_essence_from");
+recipes.removeByRecipeName("mysticalagriculture:core/compression/superium_essence_from");
+recipes.removeByRecipeName("mysticalagradditions:insanium_essence_from");
+
+# 1 -> 4 required crystal
+val essesnses = [
+	<ore:essenceInsanium>.firstItem,
+	<ore:essenceSupremium>.firstItem,
+	<ore:essenceSuperium>.firstItem,
+	<ore:essenceIntermedium>.firstItem,
+	<ore:essencePrudentium>.firstItem,
+	<ore:essenceInferium>.firstItem,
+] as IItemStack[];
+
+# Create ingredient for any crystal
+var anyDamageCrystal as IIngredient = <ore:infusionCrystal>.itemArray[0].anyDamage();
+for i, it in <ore:infusionCrystal>.itemArray {
+	if(i==0) continue;
+	anyDamageCrystal = anyDamageCrystal.or(it);
+}
+
+for i, ess in essesnses {
+	if(i==0) continue;
+	craft.shapeless(ess * 4, "AB", {A: anyDamageCrystal, B: essesnses[i - 1]});
+}
+
+# New Crystals entry
+mods.rats.recipes.addChefRatRecipe(<ore:quartzMana>.firstItem, <mysticalagriculture:infusion_crystal>);
