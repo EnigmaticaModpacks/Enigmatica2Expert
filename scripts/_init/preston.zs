@@ -1,9 +1,13 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
+import mods.jei.JEI.removeAndHide as rh;
 
 #priority 3000
 #modloaded preston
+
+# Preston Unused item
+rh(<preston:compressor>);
 
 # Make shapeless crafts for specified block up to level for Preston mod
 # warning - compressing should be called only once

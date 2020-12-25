@@ -4,60 +4,67 @@
 
 -----------
 
+- 📖 [x] Hamster Wheel to book
+- 📖 [x] Immersive book multiblocks
+- 🟢 [x] 10 New mods
+- 𝓩𝒮 [x] Russian Translation helper
+- ✏️ [x] Portable Drill
+- ✏️ [x] Simplify TE Satchels
+- ✏️ [x] Apatite: Lower spawn rate, make cheaper
+- ✏️ [x] Cheaper Sandwitch station
+- ✏️ [x] Drawers clearing wrongly
+- ✏️ [x] Extra Utilities Magical planks in machines
+- ✏️ [x] Remove Chiseling of Colored Clear Glass
+- ✏️ [x] Cheaper experience solidifier
+- ✏️ [x] Remove Empowerer non-blocks
+- 🧩 [x] AS buff perks
+- 🧩 [x] Cyclic Dryer Shouldnt use energy. Also some another machines
+- 🧩 [x] Nerf durability of Cyclics Glowes
+- 🧩 [x] Remove Cyclic Melter
 
 ## Planned
 
 -----------
 
-- 🟢 [x] Biome Tweaker (check dims: 110, 113, 118)
-- 🟢 [x] 10 New mods
-- 𝓩𝒮 [x] Russian Translation helper
-- 𝓩𝒮 [ ] Craft.zs makes feather disableable (README note or additional functionality)
-- 💥 [ ] Uses of singularities
-- 💥 [ ] New 🐝 for endgame
+- ✏️ [x] Mystical Agriculture: Modded tree saplings from Tree Essence
+- ✏️ [x] Mystical Agriculture: Squeeze cow essence to milk
+- ✏️ [x] Mystical Agriculture: Simplify Essence crystals
+- ✏️ [x] Simplify Cyclic's Amulets: Boat, Void
+- ✏️ [ ] Fix XML recipes get wrong first items of Oredicts
+- 🌍 [ ] Reload JER world data. Its also not showing
 - 💥 [ ] **Rats** Structures Generation
 - 💥 [ ] Merge E2E-v2
-- 📖 [x] Hamster Wheel to book
-- 📖 [x] Immersive book multiblocks
-- 𝓩𝒮 [ ] Omega potion logaryphmic level buff
-- 𝓩𝒮 [ ] Merge 1.82a
-- 𝓩𝒮 [ ] Remove Furnace recipes to prevent Dupes with Avaritia Firnace
-- ✏️ [ ] Make Aristocrat Upgrade harded
-- 🧩 [ ] Osmium Spawn too weak
-- 🧩 [ ] AS buff perks
+- 💥 [ ] New 🐝 for endgame
+- 💥 [ ] Uses of singularities
 - 🧩 [ ] Amber Dissapeared from TCon tool parts
-- 🌍 [ ] Reload JER world data. Its also not showing
-- 🔨 [ ] TCon tools recycle working only with first tier
-- ✏️ [x] Simplify TE Backpacks
-- ✏️ [x] Fix XML recipes get wrong first items of Oredicts
-- 🧩 [ ] Remove Probe from export mod list
-- 𝓩𝒮 [ ] Thaumcraft Research Table click description helper
+- 🧩 [x] Localize Content Tweaker's items
+- 🧩 [ ] Osmium Spawn too weak
+- 🌿 [ ] Write Patchouli for new stuff
+- 🟢 [x] Biome Tweaker (check dims: 110, 113, 118)
+- 🟢 [ ] New mod: Ido
+- 🟢 [ ] New mod: Better diving
+- 🟢 [ ] LagGoggles
+- 𝓩𝒮 [ ] Craft.zs makes feather disableable (README note or additional functionality)
+- 𝓩𝒮 [ ] Craft.zs if string has only 1 character width "pretty" should be removed
+- 𝓩𝒮 [ ] Craft.zs should use Bucket global finction
+- 𝓩𝒮 [ ] Craft.zs automatic `anyDamage()`
+- 𝓩𝒮 [ ] Craft.zs Always add comma in lists
+- 𝓩𝒮 [ ] Craft.zs Many Ore Dict resolve
+- 𝓩𝒮 [ ] Craft.zs Ability to disable OreDicts
+- 𝓩𝒮 [ ] Craft.zs Automatic `remove:` additional if needed
+- 𝓩𝒮 [ ] Craft.zs `Fruit` letters key
+- 𝓩𝒮 [ ] Merge 1.82a
+- 𝓩𝒮 [ ] Omega potion logaryphmic level buff
+- 𝓩𝒮 [ ] Cyclic remake uses and crafts of all machines
 - 𝓩𝒮 [ ] Remove Botanical crafty crates from JEI categories
-- ✏️ [ ] Modded tree saplings and Logs from Tree Essence
-- ✏️ [ ] Harder Cyclic's Sprinkler, Fan
-- ✏️ [ ] Simplify Cyclic's Amulets: Boat, Void
-- 🧩 [ ] Cyclic Dryer Shouldnt use energy
-- 🧩 [ ] Remove Cyclic Melter
-- 🧩 [ ] Nerf durability of Cyclics items (pearls, Glowes, Amulets)
-- 🧩 [ ] Localize Content Tweaker's items
-- ✏️ [ ] Mystical Agriculture: Squeeze cow essence to milk
-- ?? [x] Report Spiders spawns 4x times near Monolith
-- ✏️ [ ] Apatite: Lower spawn rate, make cheaper
-- ✏️ [ ] Cheaper Sandwitch station
-- ✏️ [ ] Drawers clearing wrongly
-- 🌍 [ ] Bug: Biome Tweaks wont work without /BTReload command
-- ✏️ [ ] Extra Utilities Magical planks in machines
-- ✏️ [ ] Remove Chiseling of Colored Clear Glass
-- ✏️ [ ] Portable Drill
-- List of items should be craftable with animals  
-  - [ ] Deep Dark Portal
-  - [ ] Scalling Health Hearts
-  - [ ] Spectre Coils
-  - [ ] Sieves
+- 𝓩𝒮 [ ] Remove Furnace recipes to prevent Dupes with Avaritia Firnace
+- 𝓩𝒮 [ ] Thaumcraft Research Table click description helper
+
 - 𝓩𝒮 [ ] Remove on release:
   - excessive logging for non-debug clients
   - 🔴 Mod Extended Items Information
   - 🔴 Satako (lib fo ^)
+  - 🔴 Probe
 
 ### Do after process.zs class rework:
 
@@ -99,6 +106,8 @@
 - 𝓩𝒮 [ ] Ice Balls stack up to 64. Somehow not working, reported to github
 - 𝓩𝒮 [ ] New Pam's traps. Not actually working, new recipes wouldn't appear
 - ✏️ [ ] 4 Singularity => Creative bin
+- 🧩 [ ] Disable (?) Uncrafting grinder
+- ✏️ [ ] Light Blue Clear Glass have empty chiseling group
 
 
 ## Unused TC traits

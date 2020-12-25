@@ -48,7 +48,6 @@ config/brandon3055/contributors.json
 config/thaumicjei_itemstack_aspects.json
 config/brandon3055/ProjectIntelligence/
 config/tool_progression/blocks.cfg
-resources/mechanics/
 scripts/.zsrc
 config/BiomeTweaker/output/
 */Patchouli/garbage
@@ -62,3 +61,7 @@ config/tellme/*
 !config/tellme/oredictionary-by-key-individual-???.???
 !config/tellme/potions-???.???
 !config/tellme/potiontypes-???.???
+
+resources/mechanics/blockstates
+resources/mechanics/models
+!resources/mechanics/lang

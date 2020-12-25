@@ -52,20 +52,15 @@ import mods.actuallyadditions.BallOfFur.addReturn as addBallReturn;
 	[<ore:blockBlackQuartz>, <botania:lens:21>, <ore:blockBlackQuartz>], 
 	[<ore:blockBlackQuartz>, <actuallyadditions:item_color_lens>, <ore:blockBlackQuartz>]]);
 
-# Experience Solidifier
-	recipes.remove(<actuallyadditions:block_xp_solidifier>);
-	
-	recipes.addShapedMirrored("XP Bucket Cyclic", 
-	<actuallyadditions:block_xp_solidifier>, 
-	[[null, Bucket("xpjuice"), null],
-	[<actuallyadditions:block_crystal_empowered:2>, <actuallyadditions:item_misc:8>, <actuallyadditions:block_crystal_empowered:2>], 
-	[null, Bucket("xpjuice"), null]]);
-	
-	recipes.addShapedMirrored("XP Bucket TE", 
-	<actuallyadditions:block_xp_solidifier>, 
-	[[null, Bucket("experience"), null],
-	[<actuallyadditions:block_crystal_empowered:2>, <actuallyadditions:item_misc:8>, <actuallyadditions:block_crystal_empowered:2>], 
-	[null, Bucket("experience"), null]]);
+# [Experience_Solidifier] from [Advanced_Coil][+2]
+	craft.remake(<actuallyadditions:block_xp_solidifier>, ["pretty",
+		"  ~  ",
+		"☼ A ☼",
+		"  ~  "], {
+		"A": <actuallyadditions:item_misc:8>,     # Advanced Coil
+		"☼": <actuallyadditions:block_crystal:2>, # Diamatine Crystal Block
+		"~": Bucket("xpjuice") | Bucket("experience") | Bucket("essence")
+	});
 
 # Wood Casing
 	recipes.remove(<actuallyadditions:block_misc:4>);

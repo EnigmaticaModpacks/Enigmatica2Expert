@@ -144,9 +144,6 @@ for item in thaumcraftHintItems {
 	addDescription(<bloodmagic:item_demon_crystal:3>, "Obtained through the Resonance of the Faceted Crystal ritual.");
 	addDescription(<bloodmagic:item_demon_crystal:4>, "Obtained through the Resonance of the Faceted Crystal ritual.");
 
-# Solidified Experience
-	addDescription(<actuallyadditions:item_solidified_experience>, "This item does not grant Experience, its only use is to make Essence of Knowledge");
-	
 # Neutronium
 	addDescription(<avaritia:resource:2>,"Obtainable through the Neutron Collector OR through NC Fusion Reactor.");
 	

@@ -76,5 +76,5 @@ function clearDrawer(inputs as IItemStack[]) as void  {
 		recipes.addShapeless("Clearing " ~ getItemName(it), it, [it]);
 	}
 }
-clearDrawer(<ore:drawerBasic>.items);
+// clearDrawer(<ore:drawerBasic>.items); # Somehow it still give oredict
 clearDrawer([<storagedrawers:compdrawers>]);

@@ -11,7 +11,7 @@ function mutateXml(filePath, fnc) {
 
   if(fnc) fnc(obj);
 
-  var XML = convert.js2xml(obj, {spaces: 2, spaces: indent});
+  var XML = convert.js2xml(obj, {spaces: indent});
 
   utils.saveText(XML, filePath);
 }

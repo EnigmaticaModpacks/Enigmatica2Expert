@@ -19,9 +19,6 @@ import mods.tcomplement.highoven.MixRecipeBuilder;
 # Cobalt Block Unification
 	mods.tconstruct.Casting.removeBasinRecipe(<chisel:blockcobalt>);
 	scripts.wrap.tconstruct.Casting.addBasinRecipe(<tconstruct:metal>, null, <liquid:cobalt>, 1296);
-
-# Increase stack size for ice balls
-	<mctsmelteryio:iceball>.maxStackSize = 64;
 	
 # Item Rack
 	rh(<tconstruct:rack>);

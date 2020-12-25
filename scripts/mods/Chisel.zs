@@ -1,4 +1,5 @@
 import mods.chisel.Carving.addVariation;
+import crafttweaker.item.IItemStack as IItemStack;
 #modloaded chisel
 
 addVariation("basalt", <quark:basalt:1>);
@@ -65,6 +66,29 @@ addVariation("marbledCheese", <rats:marbled_cheese_brick_cracked>);
 
 # Remove clear glass from chisel
 mods.chisel.Carving.removeVariation("glass", <tconstruct:clear_glass>);
+
+for glass, col in {
+	<tconstruct:clear_stained_glass>    : "white",
+	<tconstruct:clear_stained_glass:1>  : "orange",
+	<tconstruct:clear_stained_glass:2>  : "magenta",
+	<tconstruct:clear_stained_glass:3>  : "light_blue",
+	<tconstruct:clear_stained_glass:3>  : "lightblue",
+	<tconstruct:clear_stained_glass:4>  : "yellow",
+	<tconstruct:clear_stained_glass:5>  : "lime",
+	<tconstruct:clear_stained_glass:6>  : "pink",
+	<tconstruct:clear_stained_glass:7>  : "gray",
+	<tconstruct:clear_stained_glass:8>  : "lightgray",
+	<tconstruct:clear_stained_glass:8>  : "silver",
+	<tconstruct:clear_stained_glass:9>  : "cyan",
+	<tconstruct:clear_stained_glass:10> : "purple",
+	<tconstruct:clear_stained_glass:11> : "blue",
+	<tconstruct:clear_stained_glass:12> : "brown",
+	<tconstruct:clear_stained_glass:13> : "green",
+	<tconstruct:clear_stained_glass:14> : "red",
+	<tconstruct:clear_stained_glass:15> : "black",
+} as string[IItemStack] {
+	mods.chisel.Carving.removeVariation("glassdyed"~col, glass);
+}
 
 
 # Harder  Iron chisel

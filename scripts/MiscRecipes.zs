@@ -1,6 +1,7 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.jei.JEI.removeAndHide as rh;
+import scripts.craft.grid.Grid;
 
 #priority -1
 

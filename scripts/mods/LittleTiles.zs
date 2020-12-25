@@ -13,7 +13,7 @@ remakeEx(<littletiles:recipeadvanced> * 5, [[<littletiles:recipe>, null, <little
 remakeEx(<littletiles:recipe> * 5, [[<computercraft:printout>, null, <computercraft:printout>],[null, <appliedenergistics2:material:39>, null], [<computercraft:printout>, null, <computercraft:printout>]]);
 remakeEx(<littletiles:grabber>, [[null, <ore:itemRubber>, <ore:itemRubber>],[null, core, <ore:itemRubber>], [rod, null, null]]);
 remakeEx(<littletiles:colortube>, [[null, <ore:wool>, <ore:wool>],[null, core, <ore:wool>], [rod, null, null]]);
-remakeEx(<littletiles:chisel>, [[null, null, <tcomplement:chisel_head>.withTag({Material: "integrationforegoing.plastic"})],[null, core, null], [rod, null, null]]);
+remakeEx(<littletiles:chisel>, [[null, null, <tcomplement:chisel_head>.withTag({Material: "rubber"})],[null, core, null], [rod, null, null]]);
 remakeEx(<littletiles:wrench>, [[null, rod, core],[null, rod, rod], [rod, null, null]]);
 remakeEx(<littletiles:container>, [[<mekanism:slickplasticblock:12>, <mekanism:slickplasticblock:12>, <mekanism:slickplasticblock:12>],[<mekanism:slickplasticblock:12>, core, <mekanism:slickplasticblock:12>], [<mekanism:slickplasticblock:12>, <mekanism:slickplasticblock:12>, <mekanism:slickplasticblock:12>]]);
 remakeEx(<littletiles:saw>, [[null, null, core],[null, rod, <ore:ingotIron>], [rod, <minecraft:iron_ingot>, null]]);

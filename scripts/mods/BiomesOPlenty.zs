@@ -75,3 +75,6 @@ import crafttweaker.item.WeightedItemStack;
 # Terrestrial Artifact block
 craft.shapeless(<contenttweaker:terrestrial_artifact_block>, "AAAAAAAAA", {A: <biomesoplenty:terrestrial_artifact>});
 craft.shapeless(<biomesoplenty:terrestrial_artifact> * 9,   "A", {A: <contenttweaker:terrestrial_artifact_block>});
+
+# To easy manage in inventory
+<biomesoplenty:jar_filled:1>.maxStackSize = 64;

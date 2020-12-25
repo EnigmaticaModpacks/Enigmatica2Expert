@@ -429,7 +429,7 @@ for i in 0 .. 4 {
 
 	# Add recipe of making core from base
 	# mods.rt.RandomThingsTweaker.addAnvilRecipe(IItemStack input1, IItemStack input2, IItemStack result, int levelcost);
-	mods.rockytweaks.Anvil.addRecipe(bases[i], <mysticalagriculture:master_infusion_crystal>, cores[i], 350);
+	mods.rockytweaks.Anvil.addRecipe(<mysticalagriculture:master_infusion_crystal>, bases[i], cores[i], 350);
 }
 
 # Missed 4 types of dyes

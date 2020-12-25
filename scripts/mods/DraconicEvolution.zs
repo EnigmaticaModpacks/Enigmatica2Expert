@@ -87,7 +87,7 @@ import scripts.craft.grid.Grid;
 	
 # Dislocator
 	recipes.remove(<draconicevolution:dislocator>);
-	makeEx(<draconicevolution:dislocator>, [[null, <rftools:infused_enderpearl>, null],[<mekanism:portableteleporter>, <cyclicmagic:ender_pearl_reuse>.anyDamage(), <mekanism:portableteleporter>], [null, <rftools:infused_enderpearl>, null]]);
+	makeEx(<draconicevolution:dislocator>, [[null, <rftools:infused_enderpearl>, null],[<mekanism:portableteleporter>, <randomthings:flootoken>, <mekanism:portableteleporter>], [null, <rftools:infused_enderpearl>, null]]);
 
 
 # Draconic chest easier

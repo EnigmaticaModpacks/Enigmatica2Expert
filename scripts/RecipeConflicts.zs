@@ -83,6 +83,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	recipes.remove(<forestry:resource_storage:3>);
 	recipes.remove(<forestry:resource_storage:1>);
 	recipes.remove(<forestry:resource_storage:2>);
+	recipes.remove(<tcomplement:storage>);
 	recipes.remove(<forestry:charcoal:0>);
 	recipes.remove(<chisel:block_charcoal2:1>);
 	recipes.remove(<immersiveengineering:stone_decoration:3>);
