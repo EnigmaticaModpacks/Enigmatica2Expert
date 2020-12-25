@@ -46,7 +46,7 @@ function bigTableEntry(val, matID, isRound=false) {
 }
 
 function tweakValue(defVal, n, outputCommand) {
-  if(!n || n==='' || n==='d' || n==defVal) return 'd'
+  if(n==null || n==='' || n==='d' || n==defVal) return 'd'
   if(!isNumber(n)) n = nice(eval(defVal + n))
 	n = eval(outputCommand)
 

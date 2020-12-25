@@ -2,7 +2,9 @@
 /*=============================================
 =                Variables                    =
 =============================================*/
+const fs = require('fs')
 const utils = require('../lib/utils.js')
+const path = require('path')
 
 /*=============================================
 =                  Helpers                    =
@@ -273,4 +275,5 @@ console.log('    Total Errors: ', o.total)
 console.log('Untreaten errors: ', o.unknown)
 console.log(' Resolved errors: ', o.resolved + '/' + known.length)
 
-utils.saveText(newLog, 'unknownErrors.log')
+
+fs.writeFileSync(path.resolve(__dirname, 'unknownErrors.log'), newLog)
