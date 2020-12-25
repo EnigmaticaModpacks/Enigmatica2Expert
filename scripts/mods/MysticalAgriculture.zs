@@ -454,6 +454,86 @@ craft.make(<biomesoplenty:white_dye>, ["pretty",
 	x: <mysticalagriculture:dye_essence>
 });
 
+# Squeeze cow essence
+scripts.process.squeeze([<mysticalagriculture:cow_essence>], <liquid:milk> * 250, "no exceptions", null);
+
+# Saplings from essence
+# ----------------------------
+
+# Ingredients for crafting poses
+var i = -1 as int; # Remember, -1 is long. What a shame.
+
+var groups = {
+	biomesoplenty: {<biomesoplenty:biome_essence>: [0,1,2,3]},
+	tconstruct   : {<ore:slimeball>: [0,1,2,3]},
+	other        : {<mysticalagriculture:nature_essence>: [0,1,2,3]},
+} as int[][IIngredient][string];
+
+for sap in <ore:treeSapling>.itemArray {
+	val owner = sap.definition.owner;
+	
+	if(owner == "biomesoplenty") {
+		if(sap.matches(<biomesoplenty:sapling_1:7>)) continue;
+		addSaplingsRecipe(owner~" sapling #"~i, sap * 10, groups.biomesoplenty);
+	} else
+
+	if (owner == "tconstruct") {
+		addSaplingsRecipe(owner~" sapling #"~i, sap * 6, groups.tconstruct);
+	} else
+
+	if (!owner.matches("minecraft|harvestcraft|twilightforest|randomthings|forestry|advancedrocketry")) {
+		addSaplingsRecipe(owner~" sapling #"~i, sap * 6, groups.other);
+	}
+
+	i += 1;
+}
+
+function shiftGroup(a as int[], n as int) as void {
+	a[n] = a[n] + 1;
+	if(a[n] > 5 + n) {
+		if(n == 0) {
+			a[0] = 0;
+			return;
+		}
+		shiftGroup(a, n - 1);
+		a[n] = a[n - 1] + 1;
+	}
+}
+
+
+static defGroup as IIngredient[] = [
+	<mysticalagriculture:nature_essence>,
+	<mysticalagriculture:nature_essence>,
+	<mysticalagriculture:wood_essence>,
+	<mysticalagriculture:wood_essence>,
+] as IIngredient[];
+
+
+function getIngredients(group as int[][IIngredient]) as IIngredient[][] {
+	val map = [
+		[null, null, null],
+		[null, null, null],
+		[null, null, null]
+	] as IIngredient[][];
+
+	for i0, arr in group {
+		for i, pos in arr {
+			val x as int = pos % 3;
+			val y = (pos / 3) as int;
+			map[y][x] = i==0 ? i0 : defGroup[i];
+		}
+
+		shiftGroup(arr, 3);
+	}
+	return map;
+}
+
+function addSaplingsRecipe(name as string, output as IItemStack, group as int[][IIngredient]) {
+	recipes.addShaped(name, output, getIngredients(group));
+}
+
+# ----------------------------
+
 # Remove previous 1 -> 4
 recipes.removeByRecipeName("mysticalagriculture:core/compression/inferium_essence_from");
 recipes.removeByRecipeName("mysticalagriculture:core/compression/prudentium_essence_from");
