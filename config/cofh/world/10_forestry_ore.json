@@ -7,7 +7,7 @@
 			"generator": {
 				"block": "forestry:resources",
 				"material": "minecraft:stone",
-				"cluster-size": 32
+				"cluster-size": 12
 			},
 			"cluster-count": 1,
 			"cluster-chance": 15,

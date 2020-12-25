@@ -182,3 +182,20 @@ scripts.wrap.forestry.Carpenter.addRecipe(<thermalfoundation:material:800>, [[<o
 
 mods.forestry.Carpenter.removeRecipe(<forestry:letters>);
 scripts.wrap.forestry.Carpenter.addRecipe(<forestry:letters>, Grid(["AAA","AAA"], {A: <thermalfoundation:material:800>}).shaped(), 40, <liquid:water> * 250);
+
+# Fertilizer ask less sand but more Apatite
+# [Fertilizer*8] from [Sand][+1]
+craft.remake(<forestry:fertilizer_compound> * 8, 
+	["◊", "s", "◊"], {
+  "s": <ore:sand>,      # Sand
+  "◊": <ore:gemApatite> # Apatite
+});
+
+# [Fertilizer*16] from [Apatite][+1]
+craft.remake(<forestry:fertilizer_compound> * 16, ["pretty",
+  "▲ ◊ ▲",
+  "▲ ▲ ▲",
+  "▲ ◊ ▲"], {
+  "▲": <ore:dustAsh>,   # Ash
+  "◊": <ore:gemApatite> # Apatite
+});
