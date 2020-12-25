@@ -264,15 +264,15 @@ static defaultWeaponMats as IData = [
   "prismarine"             , # 80
   "sponge"                 , # 81
   "slime"                  , # 81
+  "aquamarine"             , # 81
   "desert_myrmex"          , # 83
   "jungle_myrmex"          , # 83
-  "void_crystal"           , # 83
   "plague_metal"           , # 83
   "meat_metal"             , # 84
   "certus_quartz"          , # 85
   "magmaslime"             , # 85
-  "aquamarine"             , # 86
   "copper"                 , # 88
+  "void_crystal"           , # 88
   "palis_crystal"          , # 89
   "essence_metal"          , # 89
   "firewood"               , # 89
@@ -280,7 +280,6 @@ static defaultWeaponMats as IData = [
   "dragonbone"             , # 91
   "lead"                   , # 93
   "osgloglas"              , # 93
-  "energetic_alloy"        , # 95
   "peridot"                , # 96
   "soularium"              , # 96
   "silver"                 , # 97
@@ -293,6 +292,7 @@ static defaultWeaponMats as IData = [
   "black_quartz"           , # 102
   "ruby"                   , # 103
   "mica"                   , # 104
+  "energetic_alloy"        , # 105
   "iron"                   , # 106
   "sky_stone"              , # 107
   "ardite"                 , # 107
@@ -319,22 +319,20 @@ static defaultWeaponMats as IData = [
   "steeleaf"               , # 124
   "conductive_iron"        , # 125
   "aluminium"              , # 126
+  "ma.base_essence"        , # 127
   "knightslime"            , # 127
   "fierymetal"             , # 127
   "void_metal"             , # 128
   "emerald_plustic"        , # 129
   "invar"                  , # 130
   "draconium"              , # 131
-  "ma.base_essence"        , # 132
   "knightmetal"            , # 132
   "uranium"                , # 133
-  "thaumium"               , # 134
   "erodium"                , # 134
   "bound_metal"            , # 137
-  "energetic_metal"        , # 137
   "psimetal"               , # 138
   "psigem"                 , # 138
-  "pulsating_iron"         , # 139
+  "thaumium"               , # 139
   "osmium"                 , # 140
   "lumium"                 , # 141
   "enori_crystal"          , # 141
@@ -343,8 +341,10 @@ static defaultWeaponMats as IData = [
   "alumite"                , # 145
   "kyronite"               , # 146
   "ma.prudentium"          , # 146
+  "energetic_metal"        , # 147
   "dark_steel"             , # 147
   "weezer"                 , # 149
+  "pulsating_iron"         , # 149
   "amethyst"               , # 152
   "manyullyn"              , # 154
   "thorium"                , # 154
@@ -356,8 +356,8 @@ static defaultWeaponMats as IData = [
   "osmiridium"             , # 162
   "electrum"               , # 163
   "boron"                  , # 165
+  "starmetal"              , # 170
   "ionite"                 , # 172
-  "starmetal"              , # 175
   "magnesium"              , # 180
   "signalum"               , # 181
   "primal_metal"           , # 183
