@@ -1,11 +1,9 @@
 import mods.jei.JEI.removeAndHide as rh;
 
-# *======= Variables =======*
+# Conversion recipe between Thaumic Tinkerer Black Quartz Block & Botania Block of Smokey Quartz
+recipes.addShapeless(<botania:quartztypedark>, [<thaumictinkerer:black_quartz_block>]);
+recipes.addShapeless(<thaumictinkerer:black_quartz_block>, [<botania:quartztypedark>]);
 
-	val marble = <ore:stoneMarble>;
-	
-# *======= Recipe Conflicts =======*
-	
 # Disk Platter / Iron Chain Link
 	recipes.remove(<iceandfire:chain_link>);
 	recipes.addShaped(<iceandfire:chain_link> * 2, 
@@ -52,6 +50,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	<ore:itemSalt>, <ore:itemSalt>]);
 	
 # Quark Polished Marble
+	val marble = <ore:stoneMarble>;
 	recipes.removeShaped(<quark:marble:1>);
 	recipes.addShaped("Polished Marble", <quark:marble:1> * 9, 
 	[[marble, marble, marble],
