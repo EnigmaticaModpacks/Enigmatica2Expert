@@ -8,15 +8,14 @@ import crafttweaker.item.IItemStack;
 var itemsToRemove as string[] = [
 	
 	"actuallyadditions:block_misc:4",
+	"actuallyadditions:item_misc:5",
 	
 	"forestry:broken_bronze_shovel",
 	"forestry:broken_bronze_pickaxe",
 	"forestry:kit_pickaxe",
 	"forestry:kit_shovel",
 	
-	"ic2:ingot:1",
-	"ic2:ingot:2",
-	"ic2:ingot:6",
+	"ic2:ingot",
 	"ic2:bronze_pickaxe",
 	"ic2:filled_tin_can",
 	"ic2:bronze_boots",
@@ -34,18 +33,30 @@ var itemsToRemove as string[] = [
 	"immersiveengineering:axe_steel",
 	"immersiveengineering:sword_steel",
 	
-	"minecraft:iron_ingot",
+	"minecraft:bone",
+	"minecraft:bread",
+	"minecraft:bucket",
+	"minecraft:coal",
 	"minecraft:gold_ingot",
+	"minecraft:gunpowder",
+	"minecraft:iron_ingot",
 	"minecraft:iron_pickaxe",
 	"minecraft:iron_sword",
 	"minecraft:milk_bucket",
+	"minecraft:name_tag",
 	"minecraft:obsidian",
+	"minecraft:quartz",
+	"minecraft:redstone",
+	"minecraft:rotten_flesh",
+	"minecraft:string",
 	"minecraft:water_bucket",
+	"minecraft:wheat",
 
 	"twilightforest:uncrafting_table",
 	"enderio:item_dark_steel_sword",
 	"enderio:item_travel_staff",
-	"cyclicmagic:book_ender"
+	"enderio:item_material:9",
+	"cyclicmagic:book_ender",
 ];
 
 for item in itemsToRemove {
