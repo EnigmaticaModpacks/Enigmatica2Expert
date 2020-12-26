@@ -165,11 +165,6 @@ for input,output in {
 	<ore:glowstone>          : <fluid:glowstone> * 1000,
 	<ore:materialEnderPearl> : <fluid:ender> * 250,
 	
-	<ore:coal>
-	|<ore:dustCoal>
-	|<ore:ingotGraphite>
-	|<ore:dustGraphite>      : <fluid:coal> * 100,
-	
 	<ore:blockCoal>
 	|<ore:blockGraphite>     : <fluid:coal> * 900,
 } as ILiquidStack[IIngredient]  {

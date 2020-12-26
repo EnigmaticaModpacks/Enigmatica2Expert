@@ -21,26 +21,25 @@
 - 🧩 [x] Cyclic Dryer Shouldnt use energy. Also some another machines
 - 🧩 [x] Nerf durability of Cyclics Glowes
 - 🧩 [x] Remove Cyclic Melter
+- ✏️ [x] Mystical Agriculture: Squeeze cow essence to milk
+- ✏️ [x] Mystical Agriculture: Simplify Essence crystals
+- ✏️ [x] Simplify Cyclic's Amulets: Boat, Void
+- 🧩 [x] Localize Content Tweaker's items
+- ✏️ [x] Mystical Agriculture: Modded tree saplings from Tree Essence
 
 ## Planned
 
 -----------
 
-- ✏️ [x] Mystical Agriculture: Modded tree saplings from Tree Essence
-- ✏️ [x] Mystical Agriculture: Squeeze cow essence to milk
-- ✏️ [x] Mystical Agriculture: Simplify Essence crystals
-- ✏️ [x] Simplify Cyclic's Amulets: Boat, Void
-- ✏️ [ ] Fix XML recipes get wrong first items of Oredicts
-- 🌍 [ ] Reload JER world data. Its also not showing
+- ✏️ [x] Fix XML recipes get wrong first items of Oredicts
+- 🟢 [x] Biome Tweaker (check dims: 110, 113, 118)
 - 💥 [ ] **Rats** Structures Generation
 - 💥 [ ] Merge E2E-v2
 - 💥 [ ] New 🐝 for endgame
 - 💥 [ ] Uses of singularities
 - 🧩 [ ] Amber Dissapeared from TCon tool parts
-- 🧩 [x] Localize Content Tweaker's items
 - 🧩 [ ] Osmium Spawn too weak
 - 🌿 [ ] Write Patchouli for new stuff
-- 🟢 [x] Biome Tweaker (check dims: 110, 113, 118)
 - 🟢 [ ] New mod: Ido
 - 🟢 [ ] New mod: Better diving
 - 🟢 [ ] LagGoggles
@@ -53,12 +52,12 @@
 - 𝓩𝒮 [ ] Craft.zs Ability to disable OreDicts
 - 𝓩𝒮 [ ] Craft.zs Automatic `remove:` additional if needed
 - 𝓩𝒮 [ ] Craft.zs `Fruit` letters key
+- 🌍 [ ] Reload JER world data. Its also not showing
 - 𝓩𝒮 [ ] Merge 1.82a
 - 𝓩𝒮 [ ] Omega potion logaryphmic level buff
-- 𝓩𝒮 [ ] Cyclic remake uses and crafts of all machines
-- 𝓩𝒮 [ ] Remove Botanical crafty crates from JEI categories
 - 𝓩𝒮 [ ] Remove Furnace recipes to prevent Dupes with Avaritia Firnace
 - 𝓩𝒮 [ ] Thaumcraft Research Table click description helper
+- ✏️ [ ] Engineer hammer harder craft
 
 - 𝓩𝒮 [ ] Remove on release:
   - excessive logging for non-debug clients
@@ -106,7 +105,6 @@
 - 𝓩𝒮 [ ] Ice Balls stack up to 64. Somehow not working, reported to github
 - 𝓩𝒮 [ ] New Pam's traps. Not actually working, new recipes wouldn't appear
 - ✏️ [ ] 4 Singularity => Creative bin
-- 🧩 [ ] Disable (?) Uncrafting grinder
 - ✏️ [ ] Light Blue Clear Glass have empty chiseling group
 
 
@@ -114,106 +112,84 @@
 
 -----------
 
-- [x] barrett          | As health decreases, there is an increasing chance of a critical hit.
 - [x] darktraveler     | Surrounding mobs get randomly afflicted with damage.
-- [x] divineshield     | While this tool is in your hand, you are granted fire resistance. Also, damage is reduced, but at a durability cost.
-- [x] dprk             | When attacking or defending, Supreme Leaders will spawn, exploding on opponents in the same manner as a creeper.
-- [x] ghastly          | If the holder is attacked while sneaking, the attacker is inflicted with Slowness.
-- [ ] hailhydra        | Random explosions plague your enemies. Also, when you are attacked, there is a chance to get Absorption.
+- [x] hailhydra        | Random explosions plague your enemies. Also, when you are attacked, there is a chance to get Absorption.
 - [x] hearts           | The higher your health, the more damage you do.
 - [x] heavy_metal      | Increased knockback + Slowness on target.
-- [x] ignoble          | As one takes damage, one starts to harbor feelings of ignoble jealousy as the offender is killed. When this trait is enabled, those feelings are vented when attacking while sneaking.
-- [ ] illuminati       | While the tool is in your hand, nearby entities (that do not hold a tool with this trait) glow, and you become invisible.
-- [ ] jaded            | Mobs attacked with this tool have their ability to heal temporarily hindered.
-- [ ] morganlefay      | Bonus magic damage (ranging from 0.0 to 5.0; Gaussian distributed) is afflicted (it is absolute).
-- [x] mystical_fire    | Sets the target on fire, and damages the target with magic for a certain amount of time.
-- [ ] naphtha          | Arrows (and bolts) burn the target on impact.
+- [x] illuminati       | While the tool is in your hand, nearby entities (that do not hold a tool with this trait) glow, and you become invisible.
+- [x] morganlefay      | Bonus magic damage (ranging from 0.0 to 5.0; Gaussian distributed) is afflicted (it is absolute).
 - [x] rudeawakening    | Damage pierces armor (mobs only).
 - [x] spades           | The lower your health, the more damage you do.
 - [x] starfishy        | Press the "set portal" key (default "N") to set a virtual portal on the block you are pointing at. If you are on the brink of death, you have %d enori crystals to spare, and the portal has enough space above, then the crystals are consumed, you are teleported to the virtual portal, and you are spared. (The tool must be in your hand.)
-- [ ] thundering       | Summon a thunderbolt on impact.
-- [x] trash            | Random stuff is slowly generated when the tool is selected, but the tool is damaged slowly in this way.
+- [x] thundering       | Summon a thunderbolt on impact.
 - [x] unnamed          | Bonus damage accrued for each entity of the same type as the target close to it.
 - [x] vindictive       | Bonus damage to players, and you gain some health by attacking.
 - [x] blindbandit      | A mob called the "Blind Bandit" will sometimes be summoned for a limited time after you attack or are attacked. She will attack hostile mobs, and will also attack those who dare attack her (except you), piercing armor on mobs.
 - [x] botanical2       | 
+- [x] barrett          | ❌ As health decreases, there is an increasing chance of a critical hit.
+- [x] divineshield     | ❌ While this tool is in your hand, you are granted fire resistance. Also, damage is reduced, but at a durability cost.
+- [x] dprk             | ❌ When attacking or defending, Supreme Leaders will spawn, exploding on opponents in the same manner as a creeper.
+- [x] ghastly          | ❌ If the holder is attacked while sneaking, the attacker is inflicted with Slowness.
+- [x] ignoble          | ❌ As one takes damage, one starts to harbor feelings of ignoble jealousy as the offender is killed. When this trait is enabled, those feelings are vented when attacking while sneaking.
+- [x] jaded            | ❌ Mobs attacked with this tool have their ability to heal temporarily hindered.
+- [x] mystical_fire    | ❌ Sets the target on fire, and damages the target with magic for a certain amount of time.
+- [x] naphtha          | ❌ Arrows (and bolts) burn the target on impact.
+- [x] trash            | ❌ Random stuff is slowly generated when the tool is selected, but the tool is damaged slowly in this way.
+
+❌ - Could not find trait
 
 ## Items for crafting
 
 -----------
 
-- <contenttweaker:compressed_ender>
-- <advancedrocketry:misc:1>             <!-- Carbon plate -->
-- <extrautils2:decorativesolid:6>       <!-- Blue Quartz -->
-- <actuallyadditions:item_dust:3>       <!-- Emerald Dust -->
-- <draconicevolution:draconium_block:1> <!-- Charged Draconium -->
-- <fluxnetworks:flux> <!-- Flux -->
-- <enderio:item_material:75> <!-- Infinity Reagent -->
-- <twilightforest:firefly> <!-- Firefly -->
-- ✏️ More mechanics explosions
-- ✏️ More using for fluid Latex
-- ✏️ Plasma to craft
-- ✏️ To Crafts pile of neutronium
-- ✏️ Topaz To Crafts
-- ✏️ IC2 liquids to craft
-- ✏️ Crystallized Obsidian
-- ✏️ Forestry's Carton
-- Bibliocraft Printing Press
-- Iridium Rod
-- Titan-Alum rod
-- Titan-Alum Sheet
-- Spectre Illuminator
-- Ectoplasm
-- Blood Stone
-- Nano-Particles
-- Emeraldic
-- HSLA ingot
-- 💧 Crystallized Obsidian
-- 💧 Menril Resin
-- 💧 Liquid Chorus
-- 💧 Enriched Lava
-- 💧 Hot Spring Water
+amber                                     <!-- Amber                    -->
+hot_spring_water                          <!-- Hot Spring Water         -->
+latex                                     <!-- Latex                    -->
+ic2pahoehoe_lava                          <!-- Pahoehoe Lava            -->
+menrilresin                               <!-- Menril Resin             -->
+liquidchorus                              <!-- Liquid Chorus            -->
+blockfluiddirt                            <!-- Liquid Dirt              -->
+crystal                                   <!-- Crystallized Obsidian    -->
+ic2hot_water                              <!-- Hotspring Water          -->
+ic2construction_foam                      <!-- Construction Foam        -->
+<advancedrocketry:blocklens>              <!-- Lens                     -->
+<advancedrocketry:geode>                  <!-- Geode Block              -->
+<advancedrocketry:hotturf>                <!-- Oxidized Ferric Sand     -->
+<advancedrocketry:vitrifiedsand>          <!-- Vitrified Sand           -->
+<avaritia:resource>                       <!-- Diamond Lattice          -->
+<botania_tweaks:compressed_tiny_potato_8> <!-- Galactic Potato          -->
+<contenttweaker:compressed_ender>         <!-- Compressed Ender         -->
+<draconicevolution:draconium_block:1>     <!-- Charged Draconium Block  -->
+<enderio:block_holy_fog>                  <!-- Glowstone Nano-Particles -->
+<extrautils2:decorativesolid:6>           <!-- Blue Quartz              -->
+<forestry:carton>                         <!-- Carton                   -->
+<ore:crystalEmeraldic>                    <!-- Emeradic Crystal         -->
+<ore:crystalEnder>                        <!-- Resonant Clathrate       -->
+<ore:crystalGlowstone>                    <!-- Energized Clathrate      -->
+<ore:crystalRedstone>                     <!-- Destabilized Clathrate   -->
+<ore:dustEmerald>                         <!-- Crushed Emerald          -->
+<ore:dustEndstone>                        <!-- Crushed End Stone        -->
+<ore:gemTopaz>                            <!-- Topaz                    -->
+<ore:ingotHSLASteel>                      <!-- HSLA Steel Ingot         -->
+<ore:itemInfinityGoop>                    <!-- Infinity Reagent         -->
+<ore:plateSilicon>                        <!-- Silicon Plate            -->
+<ore:sheetSteel>                          <!-- Steel Sheet              -->
+<ore:sheetTitaniumAluminide>              <!-- Titanium Aluminide Sheet -->
+<ore:stickIridium>                        <!-- Iridium Rod              -->
+<ore:stickTitaniumAluminide>              <!-- Titanium Aluminide Rod   -->
+<randomthings:enderletter>                <!-- Ender Letter             -->
+<twilightforest:castle_door:3>            <!-- Blue Castle Door         -->
+<twilightforest:firefly>                  <!-- Firefly                  -->
 
-
----------------------
-ITEMS OF INTEREST
----------------------
-<avaritia:resource> -- Diamond Lattice
-<botania_tweaks:compressed_tiny_potato_7>
-<twilightforest:castle_door:*>
-
-<randomthings:spectreilluminator>
-
-<bibliocraft:enchantedplate>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 0 as short}]})
-<thaumcraft:nugget:10> -- Rare Earth
-<randomthings:ingredient:2> -- Ectoplasm
-<tombmanygraves:death_list>
-<randomthings:rezstone> -- Bloodstone
-<advancedrocketry:blocklens> - Lence (required precision assembler)
-<enderio:block_holy_fog> -- Nano-particles
-randomthings:strong_collapse -- Turnd upsidedown potion
-
-<liquid:hot_spring_water>
-<liquid:liquid_sunshine>
-<liquid:blockfluiddirt> -- Liquid Dirt from Animus
-<liquid:enrichedlava>
-<liquid:liquidchorus>
-<liquid:menrilresin>
-<liquid:crystal> -- Crystallized obsidian
-<liquid:amber> -- Crystallized amber
 
 ---------------------
 CRAFTS OF INTEREST
 ---------------------
 - **Burst Seed**
 - **Crushing Block**
+- **Explosion**
 - **Imbuing Station** (Note: IItemstacks must be in singletons or it will not work)
 mods.rt.RandomThingsTweaker.addImbuingRecipe(IItemStack top, IItemStack leftside, IItemStack bottom, IItemStack center, IItemStack result);
-
-
-### More info:
-
-/ct thaumcraftDump
 
 
 ## Ideas for singularities
@@ -258,21 +234,3 @@ mods.rt.RandomThingsTweaker.addImbuingRecipe(IItemStack top, IItemStack leftside
 - "_custom:108>" ,**Fluix Singularity**        - Free wires
 - "_custom:109>" ,**Titanium Singularity**     - Increase Mining speed
 - "_ultimate>"   ,**The Ultimate Singularity** - ? All above
-
-## Characters to use in crafts:
-
-!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžƎƒƬƮƵǍǎǏǐǑǒǓǔǕǖǗǘǙǚǛǜǞǟǠǡǢǣǦǧǨǩǰǴǵǸǹǺǻǼǽǾǿȀȁȄȅȆȈȉȌȍȐȑȔȕȘșȚțȞȟȢȤȦȧȨȩȪȫȬȭȮȯȰȱȲȳȷȽȾɆɚɶʮʯʹʺʼˆˇˉ˘˙˚˛˜˝ͰͱͲͳʹ͵Ͷͷ͸͹ͺͻͼͽ;Ϳ΀΁΂΃΄΅Ά·ΈΉΊ΋Ό΍ΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡ΢ΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώϏϐϑϒϓϔϕϖϗϘϙϚϛϜϝϞϟϠϡϤϰϱϲϳϴϵ϶ϷϸϹϺϻϼϽϾϿЀЁЂЃЄЅІЇЈЉЊЋЌЍЎЏАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяѐёђѓєѕіїјљњћќѝўџѠѡѢѣѤѥѦѧѨѩѪѫѬѭѮѯѰѱѲѳѴѵѶѷѸѹѿҊҋҌҍҎҏҐґҒғҔҕҖҗҘҙҚқҜҝҞҟҠҡҢңҤҥҦҧҨҩҪҫҬҭҮүҰұҲҳҴҵҶҷҸҹҺһҼҽҾҿӀӁӂӃӄӅӆӇӈӉӊӋӌӍӎӏӐӑӒӓӔӕӖӗӘәӚӛӜӝӞӟӠӡӢӣӤӥӦӧӨөӪӫӬӭӮӯӰӱӲӳӴӵӶӷӸӹӺӻӼӽӾӿԀԁԂԃԄԅԆԇԈԉԊԋԌԍԎԏԐԑԒԓԔԕԖԗԘԙԚԛԜԝԞԟԠԡԢԣԤԥԦԧԨԩԪԫԬԭԮԯḂḃḈḉḊḋḐḑḔḕḖḗḘḚḜḝḞḟḠḡḢḣḦḧḨḩḮḯḰḱḶḸḺḼḾḿṀṁṄṅṌṍṎṏṐṑṒṓṔṕṖṗṘṙṠṡṤṥṦṧṪṫṬṮṰṸṹṺṻṼṽẀẁẂẃẄẅẆẇẊẋẌẍẎẏẐẑẒẔẗẘẙẞẤấẦầẪẫẮắẰằẴẵẸẺẼẽẾếỀềỂỄễỆỐốỒồỖỗỲỳỸỹἀἁἂἃἄἅἆἇἈἉἊἋἌἍἎἏἐἑἒἓἔἕ἖἗ἘἙἚἛἜἝ἞἟ἠἡἢἣἤἥἦἧἨἩἪἫἬἭἮἯἰἱἲἳἴἵἶἷἸἹἺἻἼἽἾἿὀὁὂὃὄὅ὆὇ὈὉὊὋὌὍ὎὏ὐὑὒὓὔὕὖὗ὘Ὑ὚Ὓ὜Ὕ὞ὟὠὡὢὣὤὥὦὧὨὩὪὫὬὭὮὯὰάὲέὴήὶίὸόὺύὼώ὾὿ᾀᾁᾂᾃᾄᾅᾆᾇᾈᾉᾊᾋᾌᾍᾎᾏᾐᾑᾒᾓᾔᾕᾖᾗᾘᾙᾚᾛᾜᾝᾞᾟᾠᾡᾢᾣᾤᾥᾦᾧᾨᾩᾪᾫᾬᾭᾮᾯᾰᾱᾲᾳᾴ᾵ᾶᾷᾸᾹᾺΆᾼ᾽ι᾿῀῁ῂῃῄ῅ῆῇῈΈῊΉῌ῍῎῏ῐῑῒΐ῔῕ῖῗῘῙῚΊ῜῝῞῟ῠῡῢΰῤῥῦῧῨῩῪΎῬ῭΅`῰῱ῲῳῴ῵ῶῷῸΌῺΏῼ´῾῿  ‒–—―‖‗‘’‚“”„†‡•…‰‹›⁰⁲⁳⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ⁿ₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎₏₝₞₟₠€₮₯₸₹₺₽⃀⃁⃂⃃⃄⃅⃆⃇⃈⃉⃊⃋⃌⃍⃎⃏⃱⃲⃳⃴⃵⃶⃷⃸⃹⃺⃻⃼⃽⃾⃿ℓ№ℙ™ΩKÅ℮⅓⅔⅕⅖⅗⅘⅙⅚⅛⅜⅝⅞↌↍↎↏←↑→↓↔↕∂∆∊∍∏∑−∕∙√∞∩∫≈≠≡≢≤≥⌀⌂⌃⌄⌅⌆⌐⌠⌡⏻⏼⏽⏾⏿␧␨␩␪␫␬␭␮␯␰␱␲␳␴␵␶␷␸␹␺␻␼␽␾␿⑋⑌⑍⑎⑏⑐⑑⑒⑓⑔⑕⑖⑗⑘⑙⑚⑛⑜⑝⑞⑟─━│┃┄┅┆┇┈┉┊┋┌┍┎┏┐┑┒┓└┕┖┗┘┙┚┛├┝┞┟┠┡┢┣┤┥┦┧┨┩┪┫┬┭┮┯┰┱┲┳┴┵┶┷┸┹┺┻┼┽┾┿╀╁╂╃╄╅╆╇╈╉╊╋╌╍╎╏═║╒╓╔╕╖╗╘╙╚╛╜╝╞╟╠╡╢╣╤╥╦╧╨╩╪╫╬╭╮╯╰╱╲╳╴╵╶╷╸╹╺╻╼╽╾╿▀▄█▌▐░▒▓■□▪▫▬▲►▼◄◊○●◘◙☺☻☼♀♂♠♣♥♦♪♫
-
-<ticonmaterial:ma.supremium>.addTrait("tconevo.celestial_armor", "core");
-<ticonmaterial:ma.supremium>.addTrait("prosperous", "core");
-<ticonmaterial:xu_evil_metal>.addTrait("darkness", "handle");
-<ticonmaterial:xu_evil_metal>.addTrait("darkness", "extra");
-<ticonmaterial:xu_evil_metal>.addTrait("darkside", "core");
-<ticonmaterial:xu_evil_metal>.addTrait("darkside", "plates");
-<ticonmaterial:xu_evil_metal>.addTrait("darkside", "trim");
-<ticonmaterial:lonsdaleite>.addTrait("antimagic", "core");
-<ticonmaterial:lonsdaleite>.addTrait("antimagic", "plates");
-<ticonmaterial:lonsdaleite>.addTrait("antimagic", "trim");
-<ticonmaterial:ma.soulium>.addTrait("vindictive", "projectile");
-<ticonmaterial:ma.soulium>.addTrait("vindictive", "extra");
-<ticonmaterial:ma.soulium>.addTrait("vindictive", "handle");

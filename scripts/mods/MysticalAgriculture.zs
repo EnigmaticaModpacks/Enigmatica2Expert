@@ -460,32 +460,38 @@ scripts.process.squeeze([<mysticalagriculture:cow_essence>], <liquid:milk> * 250
 # Saplings from essence
 # ----------------------------
 
-# Ingredients for crafting poses
-var i = -1 as int; # Remember, -1 is long. What a shame.
-
-var groups = {
+static groups as int[][IIngredient][string] = {
 	biomesoplenty: {<biomesoplenty:biome_essence>: [0,1,2,3]},
 	tconstruct   : {<ore:slimeball>: [0,1,2,3]},
 	other        : {<mysticalagriculture:nature_essence>: [0,1,2,3]},
 } as int[][IIngredient][string];
 
-for sap in <ore:treeSapling>.itemArray {
+for sap in <ore:treeSapling>.items {
+	if(sap.damage == 32767)
+    for sap0 in sap.definition.subItems {
+			handleSapling(sap0);
+		}
+	else
+		handleSapling(sap);
+}
+
+static counter as int[] = [0] as int[];
+
+function handleSapling(sap as IItemStack) as void {
 	val owner = sap.definition.owner;
-	
+
 	if(owner == "biomesoplenty") {
-		if(sap.matches(<biomesoplenty:sapling_1:7>)) continue;
-		addSaplingsRecipe(owner~" sapling #"~i, sap * 10, groups.biomesoplenty);
+		if(sap.matches(<biomesoplenty:sapling_1:7>)) return;
+		addSaplingsRecipe(sap * 10, groups.biomesoplenty);
 	} else
 
 	if (owner == "tconstruct") {
-		addSaplingsRecipe(owner~" sapling #"~i, sap * 6, groups.tconstruct);
+		addSaplingsRecipe(sap * 6, groups.tconstruct);
 	} else
 
 	if (!owner.matches("minecraft|harvestcraft|twilightforest|randomthings|forestry|advancedrocketry")) {
-		addSaplingsRecipe(owner~" sapling #"~i, sap * 6, groups.other);
+		addSaplingsRecipe(sap * 6, groups.other);
 	}
-
-	i += 1;
 }
 
 function shiftGroup(a as int[], n as int) as void {
@@ -528,8 +534,9 @@ function getIngredients(group as int[][IIngredient]) as IIngredient[][] {
 	return map;
 }
 
-function addSaplingsRecipe(name as string, output as IItemStack, group as int[][IIngredient]) {
-	recipes.addShaped(name, output, getIngredients(group));
+function addSaplingsRecipe(sap as IItemStack, group as int[][IIngredient]) {
+	recipes.addShaped(sap.definition.owner~" sapling #"~counter[0], sap, getIngredients(group));
+	counter[0] = counter[0] + 1;
 }
 
 # ----------------------------
@@ -555,7 +562,7 @@ val essesnses = [
 var anyDamageCrystal as IIngredient = <ore:infusionCrystal>.itemArray[0].anyDamage();
 for i, it in <ore:infusionCrystal>.itemArray {
 	if(i==0) continue;
-	anyDamageCrystal = anyDamageCrystal.or(it);
+	anyDamageCrystal = anyDamageCrystal.or(it.anyDamage());
 }
 
 for i, ess in essesnses {

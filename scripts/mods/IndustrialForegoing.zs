@@ -39,6 +39,8 @@ function fluidDict(ins as string[]) {
 	fluidDict(hydrogen);
 	fluidDict(honey);
 
+	fluidDict(["ic2milk", "milk"]);
+
 # Protein Reactor, additional entires
 	for item in <ore:listAllmeatraw>.items {
 		ProteinReactor.add(item);
