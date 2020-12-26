@@ -1,4 +1,9 @@
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import mods.jei.JEI.removeAndHide as rh;
+import mods.cyclicmagic.Hydrator;  
+import mods.cyclicmagic.Solidifier;  
+import mods.cyclicmagic.Dehydrator;
 #modloaded cyclicmagic
 
 # *======= Recipes =======*
@@ -325,8 +330,8 @@ craft.remake(<cyclicmagic:charm_air>, ["pretty",
 });
 
 
-# [Uncrafting_Grinder] from [Conglomerate_Of_Sun][+4]
-craft.remake(<cyclicmagic:uncrafting_block>, ["pretty",
+# [auto_crafter] from [Conglomerate_Of_Sun][+4]
+craft.remake(<cyclicmagic:auto_crafter>, ["pretty",
   "s B s",
   "E C E",
   "▬ ▬ ▬"], {
@@ -364,3 +369,196 @@ craft.remake(<cyclicmagic:corrupted_chorus> * 4, ["pretty",
 # [Glowing_Chorus_Fruit] from [Crystallized_Obsidian_Bucket][+1]
 recipes.remove(<cyclicmagic:glowing_chorus> * 8);
 mods.inworldcrafting.FluidToItem.transform(<cyclicmagic:glowing_chorus>, <fluid:crystal>, [<cyclicmagic:corrupted_chorus>]);
+
+# [Ender_Wing] from [Golden_Egg][+4]
+craft.remake(<cyclicmagic:tool_warp_spawn>, ["pretty",
+  "  f B",
+  "▬ G f",
+  "P ▬  "], {
+  "P": <forestry:crafting_material:1>,      # Pulsating Mesh
+  "B": <actuallyadditions:item_hairy_ball>, # Ball of Fur
+  "f": <ore:peacockFeathers>,
+  "G": <randomthings:ingredient:11>,        # Golden Egg
+  "▬": <ore:ingotGold>                      # Gold Ingot
+});
+
+# [Ender_Wing_Prime] from [Golden_Egg][+4]
+craft.remake(<cyclicmagic:tool_warp_home>, ["pretty",
+  "  f S",
+  "▬ G f",
+  "P ▬  "], {
+  "P": <forestry:crafting_material:1>, # Pulsating Mesh
+  "S": <rats:string_cheese>,           # String Cheese
+  "f": <ore:peacockFeathers>,
+  "G": <randomthings:ingredient:11>,   # Golden Egg
+  "▬": <ore:ingotGold>                 # Gold Ingot
+});
+
+# [Automatic_Fishing_Net] from [Slime_Cube][+2]
+craft.remake(<cyclicmagic:block_fishing>, ["pretty",
+  "R W R",
+  "W § W",
+  "R W R"], {
+  "R": <ore:myrmexResin>,              # Desert Myrmex Resin Chunk
+  "W": <forestry:crafting_material:3>, # Woven Silk
+  "§": <randomthings:slimecube>        # Slime Cube
+});
+
+# [Fire_Starter] from [Crystallized_Amber][+4]
+craft.remake(<cyclicmagic:fire_starter>, ["pretty",
+  "R B R",
+  "▲ C ▲",
+  "R ☺ R"], {
+  "R": <forestry:refractory_wax>,            # Refractory Wax
+  "▲": <mechanics:fuel_dust_tiny>,           # Tiny Pile of Heavy Fuel Dust
+  "B": <biomesoplenty:jar_filled:1>,         # Blue Fire Jar
+  "C": <cyclicmagic:crystallized_amber>,     # Crystallized Amber
+  "☺": <contenttweaker:conglomerate_of_coal> # Conglomerate Of Coal
+});
+
+# [Hydrator] from [Ectoplasm][+3]
+craft.remake(<cyclicmagic:block_hydrator>, ["pretty",
+  "A B A",
+  "A E A",
+  "M M M"], {
+  "A": <ore:listAllwater>,               # Water Bucket
+  "B": <rats:little_black_squash_balls>, # Little Black Squash Balls
+  "E": <randomthings:ingredient:2>,      # Ectoplasm
+  "M": <extrautils2:decorativesolidwood> # Magical Planks
+});
+
+# [Solidifier] from [Ectoplasm][+3]
+craft.remake(<cyclicmagic:solidifier>, ["pretty",
+  "P B P",
+  "P E P",
+  "M M M"], {
+  "P": <ore:brickPeat>,                  # Peat
+  "B": <randomthings:ingredient:13>,     # Blackout Powder
+  "E": <randomthings:ingredient:2>,      # Ectoplasm
+  "M": <extrautils2:decorativesolidwood> # Magical Planks
+});
+
+# ---------------------------------------------
+# Cyclic machines rework
+# https://github.com/Lothrazar/Cyclic/tree/trunk/1.12/scripts_zen_example
+
+/*
+
+  📮 Packager
+
+*/
+for it in [
+  <minecraft:dirt:1>      , <minecraft:iron_block>       , <minecraft:iron_ingot>   ,
+  <minecraft:gold_block>  , <minecraft:gold_ingot>       , <minecraft:melon_block>  ,
+  <minecraft:coal_block>  , <minecraft:redstone_block>   , <minecraft:glowstone>    ,
+  <minecraft:brick_block> , <minecraft:nether_brick>     , <minecraft:quartz_block> ,
+  <minecraft:hay_block>   , <minecraft:emerald_block>    , <minecraft:diamond_block>,
+  <minecraft:magma>       , <minecraft:nether_wart_block>, <minecraft:slime>        ,
+  <minecraft:purpur_block>, <minecraft:clay>             , <minecraft:snow>         ,
+  <minecraft:prismarine>  , <minecraft:sandstone>        , <minecraft:red_sandstone>,
+  <minecraft:lapis_block> , <minecraft:bone_block>       ,
+] as IItemStack[] {
+  mods.cyclicmagic.Packager.removeRecipe(it);
+}
+
+val sa = <minecraft:sand>;
+val gr = <minecraft:gravel>;
+val packagerList = [
+  [<minecraft:concrete_powder> * 8   ], [sa, gr, <ore:dyeWhite>.firstItem],
+  [<minecraft:concrete_powder:1> * 8 ], [sa, gr, <ore:dyeOrange>.firstItem],
+  [<minecraft:concrete_powder:2> * 8 ], [sa, gr, <ore:dyeMagenta>.firstItem],
+  [<minecraft:concrete_powder:3> * 8 ], [sa, gr, <ore:dyeLightBlue>.firstItem],
+  [<minecraft:concrete_powder:4> * 8 ], [sa, gr, <ore:dyeYellow>.firstItem],
+  [<minecraft:concrete_powder:5> * 8 ], [sa, gr, <ore:dyeLime>.firstItem],
+  [<minecraft:concrete_powder:6> * 8 ], [sa, gr, <ore:dyePink>.firstItem],
+  [<minecraft:concrete_powder:7> * 8 ], [sa, gr, <ore:dyeGray>.firstItem],
+  [<minecraft:concrete_powder:8> * 8 ], [sa, gr, <ore:dyeLightGray>.firstItem],
+  [<minecraft:concrete_powder:9> * 8 ], [sa, gr, <ore:dyeCyan>.firstItem],
+  [<minecraft:concrete_powder:10> * 8], [sa, gr, <ore:dyePurple>.firstItem],
+  [<minecraft:concrete_powder:11> * 8], [sa, gr, <ore:dyeBlue>.firstItem],
+  [<minecraft:concrete_powder:12> * 8], [sa, gr, <ore:dyeBrown>.firstItem],
+  [<minecraft:concrete_powder:13> * 8], [sa, gr, <ore:dyeGreen>.firstItem],
+  [<minecraft:concrete_powder:14> * 8], [sa, gr, <ore:dyeRed>.firstItem],
+  [<minecraft:concrete_powder:15> * 8], [sa, gr, <ore:dyeBlack>.firstItem],
+
+  [<mctsmelteryio:iceball>   ], [<minecraft:snow> * 2     ],
+  [<mctsmelteryio:iceball>   ], [<minecraft:snowball> * 8 ],
+  [<rats:token_fragment>     ], [<rats:tiny_coin> * 9     ],
+  [<rats:token_piece>        ], [<rats:token_fragment> * 9],
+  [<rats:chunky_cheese_token>], [<rats:token_piece> * 9   ],
+  
+  [<environmentalmaterials:alabaster> * 4], [<minecraft:stone> * 4, <minecraft:dye:15>                   * 5],
+  [<environmentalmaterials:alabaster> * 4], [<minecraft:stone> * 4, <biomesoplenty:white_dye>            * 5],
+  [<environmentalmaterials:alabaster> * 4], [<minecraft:stone> * 4, <thermalfoundation:dye:15>           * 5],
+  [<environmentalmaterials:alabaster> * 4], [<minecraft:stone> * 4, <botania:dye>                        * 5],
+  [<environmentalmaterials:alabaster> * 4], [<minecraft:stone> * 4, <industrialforegoing:artificial_dye> * 5],
+  [<environmentalmaterials:alabaster> * 4], [<minecraft:stone> * 4, <quark:root_dye:2>                   * 5],
+  [<environmentalmaterials:alabaster> * 4], [<minecraft:stone> * 4, <gendustry:honey_drop:25>            * 5],
+] as IItemStack[][];
+
+for i, l in packagerList {
+  if(i%2==0) continue;
+  if(l.length==1)
+    mods.cyclicmagic.Packager.addRecipe(packagerList[i - 1][0], l[0]);
+  else
+    mods.cyclicmagic.Packager.addRecipe(packagerList[i - 1][0], l);
+}
+
+
+/*
+
+  💧 Hydrator
+
+*/
+
+Hydrator.addRecipe(<thermalexpansion:florb>.withTag({Fluid: "water"}), [<thermalexpansion:florb>], 1000);
+
+# Concrete
+var concreteArr = [<minecraft:clay_ball>, <minecraft:gravel>] as IItemStack[];
+Hydrator.addRecipe(<immersiveengineering:stone_decoration:5> * 4, concreteArr + (<minecraft:sand> * 2), 500);
+for it in <ore:itemSlag>.items {
+  Hydrator.addRecipe(<immersiveengineering:stone_decoration:5> * 6, concreteArr + (it * 2), 500);
+}
+
+# Asphalt Concrete
+for bit in <ore:bitumen>.items {
+  var aspConcreteArr = [bit, <minecraft:gravel>] as IItemStack[];
+  Hydrator.addRecipe(<immersivepetroleum:stone_decoration> * 4, aspConcreteArr + (<minecraft:sand> * 2), 500);
+  for it in <ore:itemSlag>.items {
+    Hydrator.addRecipe(<immersivepetroleum:stone_decoration> * 6, aspConcreteArr + (it * 2), 500);
+  }
+}
+
+# Super lubricient ice
+for it in <ore:slimeball>.items {
+  Hydrator.addRecipe(<randomthings:superlubricentice> * 16, [it, <minecraft:ice>], 1000);
+}
+
+# Decor blocks
+Hydrator.removeShapedRecipe(<minecraft:cobblestone>);
+Hydrator.addRecipe(<quark:iron_plate:1> * 3, [<minecraft:iron_ingot>], 125);
+Hydrator.addRecipe(<quark:iron_plate:1>, [<quark:iron_plate>], 125);
+
+# Misc
+Hydrator.addRecipe(<actuallyadditions:item_misc:12>, [<actuallyadditions:item_misc:9>], 250);
+Hydrator.addRecipe(<minecraft:ice>, [<thermalfoundation:material:1025>], 1000);
+
+/*
+
+  🌢 Dehydrator
+
+*/
+
+# Bug: Dehydrator always output only 100mb of water
+// Dehydrator.addRecipe(<ae2fc:fluid_drop>.withTag({Fluid: "water"}), <mysticalagriculture:water_essence>, 250);
+
+
+/*
+
+  🙫 Solidifier
+
+*/
+
+
+
+# ---------------------------------------------

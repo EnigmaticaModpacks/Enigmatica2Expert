@@ -232,14 +232,14 @@ craft.remake(<avaritiafurnace:fuelcompressor>, ["pretty",
 craft.remake(<avaritiafurnace:infinityfurnace>, ["pretty",
   "T R E R T",
   "# ▬ n ▬ #",
-  "H U I U H",
+  "H r I r H",
   "# ▬ Ϟ ▬ #",
   "T R E R T"], {
   "R": <rats:marbled_cheese_raw>,                 # Raw Marbled Cheese
   "#": <forestry:planks.0:9>, # Ebony
   "T": <avaritiafurnace:triplecompressedfurnace>, # Triple Compressed Furnace
   "E": <contenttweaker:empowered_phosphor>,       # Empowered Phosphor
-  "U": <cyclicmagic:uncrafting_block>,            # Uncrafting Grinder
+  "r": <rats:idol_of_ratlantis>,
   "H": <scalinghealth:heartcontainer>,            # Heart Container
   "I": <avaritiafurnace:infinityfuel>,            # Infinity Fuel
   "▬": <ore:dragonsteelIngot>,
