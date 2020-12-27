@@ -93,10 +93,6 @@ import mods.jei.JEI.removeAndHide as rh;
 	[<ore:ingotManasteel>, <ore:redstoneRoot>, <ore:ingotManasteel>], 
 	[<thaumcraft:fabric>, <ore:ingotManasteel>, <thaumcraft:fabric>]]);
 
-# Awakended Activation Crystal
-	recipes.remove(<bloodmagic:activation_crystal:1>);
-	scripts.wrap.bloodmagic.TartaricForge.addRecipe(<bloodmagic:activation_crystal:1>, [<ore:gaiaIngot>, <astralsorcery:iteminfusedglass>.anyDamage(), <actuallyadditions:item_misc:19>, <thaumcraft:metal_void>], 2000, 500);
-	
 # Blank Slate
 	mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:stone>);
 	scripts.wrap.bloodmagic.BloodAltar.addRecipe(<bloodmagic:slate>, <botania:livingrock>, 0, 1000, 10, 10);

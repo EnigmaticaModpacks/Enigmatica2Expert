@@ -330,3 +330,14 @@ for item, mass in itemMass {
 		mods.appliedenergistics2.Cannon.registerAmmo(item, mass);
 	}
 }
+
+# Circuits alternative
+scripts.process.saw(<ore:blockGold>, <appliedenergistics2:material:18> *  9, "only: AdvRockCutter");
+scripts.process.saw(<ore:blockDiamond>, <appliedenergistics2:material:17> *  9, "only: AdvRockCutter");
+scripts.process.saw(<ore:crystalPureCertusQuartz> * 9, <appliedenergistics2:material:16> *  9, "only: AdvRockCutter");
+
+val circIngrs = [<ore:dustRedstone>, <ore:itemSilicon>] as IIngredient[];
+val aeMat = <appliedenergistics2:material>.definition;
+scripts.processUtils.avdRockXmlRecipe("PrecisionAssembler", circIngrs + aeMat.makeStack(18), null, [aeMat.makeStack(22)], null);
+scripts.processUtils.avdRockXmlRecipe("PrecisionAssembler", circIngrs + aeMat.makeStack(17), null, [aeMat.makeStack(24)], null);
+scripts.processUtils.avdRockXmlRecipe("PrecisionAssembler", circIngrs + aeMat.makeStack(16), null, [aeMat.makeStack(23)], null);

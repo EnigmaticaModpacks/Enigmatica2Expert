@@ -1974,3 +1974,30 @@ addDescription(<opencomputers:print>,
 
 <computercraft:printout>.addTooltip("§fPrint with §eComputer Craft§r's §bPrinter");
 addDescription(<computercraft:printout>.withTag({pages: 1}), "§fPrint with §eComputer Craft§r's §bPrinter");
+	
+# Tooltips for TE Upgrades
+<thermalfoundation:upgrade:3>.addTooltip(format.yellow("Increases Augment Slots to 9"));
+<thermalfoundation:upgrade:2>.addTooltip(format.yellow("Increases Augment Slots to 5"));
+<thermalfoundation:upgrade:1>.addTooltip(format.yellow("Increases Augment Slots to 3"));
+
+# Recycler disabled
+<ic2:te:48>.addTooltip(format.red("Disabled. Use the Advanced Scrap Factory"));
+
+# Gas Intake disabled
+<advgenerators:gas_input>.addTooltip(format.red("Disabled due to not consuming fuel"));
+addDescription(<advgenerators:gas_input>, "How can I use Ethylene with Advanced Generators? Use the Rotary Condensentrator to convert the Ethylene to a liquid.");
+
+# Corium Bucket
+Bucket("corium").addTooltip(format.green("Obtainable by melting down a Fission Reactor"));
+
+# Modular Machine descriptions
+for machineName, description in {
+	"starlight_crafting_engine"       : "Needs §e§l1§r Item Input, §e§l1§r Fluid Input, §e§l1§r Item Output",
+	"advanced_metallurgic_fabricator" : "Needs §e§l1§r Item Input, §e§l1§r Fluid Input, §e§l1§r Item Output",
+	"advanced_thermionic_fabricator"  : "Needs §e§l1§r Item Input, §e§l1§r Fluid Input, §e§l1§r Item Output",
+	"advanced_carpenter"              : "Needs §e§l1§r Item Input, §e§l1§r Fluid Input, §e§l1§r Item Output",
+	"arcane_crafting_engine"          : "Needs §e§l1§r Item Input, §e§l1§r Item Output",
+	"advanced_scrap_factory"          : "Needs §e§l1§r Fluid Input, §e§l1§r Item Output",
+} as string[string] {
+	addDescription(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:"~machineName}), description);
+}

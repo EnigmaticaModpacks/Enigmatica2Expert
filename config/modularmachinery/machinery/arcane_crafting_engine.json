@@ -8,7 +8,7 @@
             "y": 0,
             "z": 2,
 			"elements": [
-                "casings_item_out"
+                "casings_modular"
             ]
         },
         {
@@ -40,7 +40,7 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "casings_item_in"
+                "casings_modular"
             ]
         },
         {
@@ -48,7 +48,7 @@
             "y": 0,
             "z": 4,
             "elements": [
-                "thaumcraft:crystal_ordo"
+                "thaumcraft:table_wood"
             ]
         },
         {
@@ -56,7 +56,7 @@
             "y": 0,
             "z": 4,
             "elements": [
-                "thaumcraft:crystal_ordo"
+                "thaumcraft:pedestal_arcane"
             ]
         },
         {
@@ -64,7 +64,7 @@
             "y": 0,
             "z": 4,
             "elements": [
-                "thaumcraft:crystal_ordo"
+                "thaumcraft:table_wood"
             ]
         },
         {

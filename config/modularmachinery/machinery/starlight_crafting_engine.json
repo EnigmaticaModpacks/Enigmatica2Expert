@@ -584,7 +584,7 @@
             "y": 0,
             "z": 5,
             "elements": [
-                "casings_fluid_in"
+                "casings_modular"
             ]
         },
         {
@@ -608,7 +608,7 @@
             "y": 0,
             "z": 5,
             "elements": [
-                "casings_item_in"
+                "casings_modular"
             ]
         },
         {
@@ -1272,7 +1272,7 @@
             "y": 0,
             "z": 9,
             "elements": [
-                "casings_item_out"
+                "casings_modular"
             ]
         },
         {

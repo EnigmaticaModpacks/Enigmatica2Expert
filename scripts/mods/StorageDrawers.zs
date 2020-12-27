@@ -56,6 +56,17 @@ import crafttweaker.data.IData;
 	[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
 	[<ore:stickWood>, <ore:plankWood>, <ore:stickWood>]]);
 
+# [Creative_Storage_Upgrade] from [Black_Hole_Unit][+3]
+craft.remake(<storagedrawers:upgrade_creative>, ["pretty",
+  "# S #",
+  "U B U",
+  "# S #"], {
+  "B": <industrialforegoing:black_hole_unit>, # Black Hole Unit
+  "#": <ore:stickWood>,                       # Stick
+  "S": <storagedrawers:upgrade_storage:4>,    # Storage Upgrade (V)
+  "U": <storagedrawers:upgrade_template>      # Upgrade Template
+});
+
 # Upgrades
 function remakeDrawerUpgrade(item as IItemStack, primary as IIngredient){
 	remakeEx(item, [

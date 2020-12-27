@@ -39,5 +39,24 @@
 		"modularmachinery:blockcasing@0",
 		"thermalfoundation:glass@6",
 		"thermalfoundation:glass@8"
-	]
+    ],
+    "casings_modular": [
+        "modularmachinery:blockcasing@0",
+        "modularmachinery:blockoutputbus@2",
+        "modularmachinery:blockoutputbus@3",
+        "modularmachinery:blockoutputbus@4",
+        "modularmachinery:blockoutputbus@5",
+        "modularmachinery:blockinputbus@2",
+		"modularmachinery:blockinputbus@3",
+		"modularmachinery:blockinputbus@4",
+        "modularmachinery:blockinputbus@5",
+        "modularmachinery:blockfluidoutputhatch@2",
+        "modularmachinery:blockfluidoutputhatch@3",
+        "modularmachinery:blockfluidoutputhatch@4",
+        "modularmachinery:blockfluidoutputhatch@5",
+        "modularmachinery:blockfluidinputhatch@2",
+		"modularmachinery:blockfluidinputhatch@3",
+		"modularmachinery:blockfluidinputhatch@4",
+		"modularmachinery:blockfluidinputhatch@5"    
+    ]
 }

@@ -37,6 +37,13 @@ import mods.jei.JEI.removeAndHide as rh;
 	[<ore:circuitAdvanced>, <immersiveengineering:blueprint>.anyDamage(), <ore:circuitAdvanced>], 
 	[<ore:ingotModularium>, <ore:circuitAdvanced>, <ore:ingotModularium>]]);
     
+# Advanced Scrap Factory
+	recipes.addShapedMirrored("Advanced Scrap Factory", 
+	<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:advanced_scrap_factory"}), 
+	[[<modularmachinery:blockcasing>, <ore:gearVibrant>, <modularmachinery:blockcasing>],
+	[<forge:bucketfilled>.withTag({FluidName: "ic2pahoehoe_lava", Amount: 1000}), <immersiveengineering:blueprint>.anyDamage(), <forge:bucketfilled>.withTag({FluidName: "ic2distilled_water", Amount: 1000})], 
+	[<modularmachinery:blockcasing>, <ore:gearVibrant>, <modularmachinery:blockcasing>]]);
+
 # Armor Foundry
 	recipes.addShapedMirrored("Armor Foundry", 
 	<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:armor_foundry"}), [

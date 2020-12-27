@@ -252,3 +252,19 @@ scripts.processUtils.avdRockXmlRecipe(
 	<ore:dustRedstone> * 48,
 	<ore:itemCoal> * 32,
 ], null, [<ic2:te:8> * 8], null);
+
+# Dense plates in Thermal Expansion Compactor
+for ore_entry in oreDict {
+	val name = ore_entry.name;
+	if (name.matches("plateDense[A-Z]\\w+")) {
+    val ore_name = name.substring(10);
+		val inpOre = (ore_name == "Obsidian")
+			? <ore:obsidian> * 4
+			: oreDict["block"~ore_name];
+		if(inpOre.items.length <= 0) continue;
+		scripts.process.compress(inpOre, ore_entry.firstItem, "only: Compactor");
+	}
+}
+	
+# Remove Recycler (replaced by Modular Machine)
+recipes.remove(<ic2:te:48>);

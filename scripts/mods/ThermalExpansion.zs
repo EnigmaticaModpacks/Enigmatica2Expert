@@ -357,3 +357,33 @@ craft.make(<thermalexpansion:satchel:1>, ["aOa"], {O: <thermalexpansion:satchel:
 craft.make(<thermalexpansion:satchel:2>, ["aOa"], {O: <thermalexpansion:satchel:1>.marked("marked"), a: <ore:nuggetElectrum>}, utils.upgradeFnc);
 craft.make(<thermalexpansion:satchel:3>, ["aOa"], {O: <thermalexpansion:satchel:2>.marked("marked"), a: <ore:nuggetSignalum>}, utils.upgradeFnc);
 craft.make(<thermalexpansion:satchel:4>, ["aOa"], {O: <thermalexpansion:satchel:3>.marked("marked"), a: <ore:nuggetEnderium>}, utils.upgradeFnc);
+
+# [Reinforced_Upgrade_Kit] from [Iridium_Gear][+2]
+craft.remake(<thermalfoundation:upgrade:1>, ["pretty",
+  "  ▬  ",
+  "▬ I ▬",
+  "□ ▬ □"], {
+  "□": <ore:blockGlassHardened>, # Hardened Copper Glass
+  "I": <ore:gearIridium>,        # Iridium Gear
+  "▬": <ore:ingotLumium>         # Lumium Ingot
+});
+
+# [Signalum_Upgrade_Kit] from [Lumium_Gear][+2]
+craft.remake(<thermalfoundation:upgrade:2>, ["pretty",
+  "  ▬  ",
+  "▬ L ▬",
+  "E ▬ E"], {
+  "E": <ore:plateElite>,    # Elite Plating
+  "▬": <ore:ingotSignalum>, # Signalum Ingot
+  "L": <ore:gearLumium>     # Lumium Gear
+});
+
+# [Resonant_Upgrade_Kit] from [Signalum_Gear][+2]
+craft.remake(<thermalfoundation:upgrade:3>, ["pretty",
+  "  ▬  ",
+  "▬ S ▬",
+  "☼ ▬ ☼"], {
+  "S": <ore:gearSignalum>,  # Signalum Gear
+  "▬": <ore:ingotEnderium>, # Enderium Ingot
+  "☼": <ore:crystalEnder>   # Resonant Clathrate
+});
