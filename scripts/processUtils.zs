@@ -138,11 +138,11 @@ function avdRockXmlRecipe(filename as string,
       var id as string = null;
       var meta as int = 0;
       var type as string = null;
-      if(ii instanceof IOreDictEntry) {
-        var ore as IOreDictEntry = ii;
+      val oreRegex = "<ore:(.*)>( \\* \\d+)?";
+      if(ii.commandString.matches(oreRegex)) {
         type = 'oreDict';
-        display = ore.name;
-        id = ore.name;
+        id = ii.commandString.replaceAll(oreRegex, "$1");
+        display = id;
       } else {
         type = 'itemStack';
         val in_it = ii.items[0];
@@ -151,7 +151,7 @@ function avdRockXmlRecipe(filename as string,
         meta = in_it.damage;
       }
       in_name = (isNull(in_name) ? display : (in_name ~ "+"));
-      s = s ~ '    <'+type+'>' ~ id ~" "~ ii.amount ~ ((type = 'itemStack') ? " "~meta : '') ~ '</'+type+'>\n';
+      s = s ~ '    <'+type+'>' ~ id ~" "~ ii.amount ~ ((meta != 0) ? " "~meta : '') ~ '</'+type+'>\n';
   }}}
   if(!isNull(inputLiquids)) { for ii in inputLiquids {
       in_name = (isNull(in_name) ? ii.displayName : (in_name ~ "+"));
