@@ -562,3 +562,37 @@ Hydrator.addRecipe(<minecraft:ice>, [<thermalfoundation:material:1025>], 1000);
 
 
 # ---------------------------------------------
+
+
+# [Sword_of_Atrophy] from [Crystal_Sword][+3]
+craft.remake(<cyclicmagic:sword_weakness>, ["pretty",
+  "    r",
+  "☺ ☼  ",
+  "C ☺  "], {
+  "r": <cyclicmagic:crystallized_amber>,    # Crystallized Amber
+  "C": <cyclicmagic:crystallized_obsidian>, # Crystallized Obsidian
+  "☺": <contenttweaker:blasted_coal>,       # Blasted Coal
+  "☼": <astralsorcery:itemcrystalsword>     # Crystal Sword
+});
+
+# [Sword_of_Decay] from [Crystal_Sword][+3]
+craft.remake(<cyclicmagic:sword_slowness>, ["pretty",
+  "    E",
+  "☺ ☼  ",
+  "C ☺  "], {
+  "C": <cyclicmagic:crystallized_obsidian>, # Crystallized Obsidian
+  "E": <contenttweaker:empowered_phosphor>, # Empowered Phosphor
+  "☺": <contenttweaker:blasted_coal>,       # Blasted Coal
+  "☼": <astralsorcery:itemcrystalsword>     # Crystal Sword
+});
+
+# [Sword_of_Evasion] from [Crystal_Sword][+3]
+craft.remake(<cyclicmagic:sword_ender>, ["pretty",
+  "    o",
+  "☺ ☼  ",
+  "C ☺  "], {
+  "C": <cyclicmagic:crystallized_obsidian>, # Crystallized Obsidian
+  "☺": <contenttweaker:blasted_coal>,       # Blasted Coal
+  "☼": <astralsorcery:itemcrystalsword>,    # Crystal Sword
+  "o": <cyclicmagic:corrupted_chorus>       # Corrupted Chorus Fruit
+});
