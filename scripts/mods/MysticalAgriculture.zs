@@ -572,3 +572,9 @@ for i, ess in essesnses {
 
 # New Crystals entry
 mods.rats.recipes.addChefRatRecipe(<ore:quartzMana>.firstItem, <mysticalagriculture:infusion_crystal>);
+
+# [Fertilized_Essence*2] from [Inferium_Essence][+1]
+craft.shapeless(<mysticalagriculture:fertilized_essence> * 3, "AB", {
+  A: <ore:fertilizer>,     # Fertilizer
+  B: <ore:essenceInferium> # Inferium Essence
+});
