@@ -387,3 +387,7 @@ craft.remake(<thermalfoundation:upgrade:3>, ["pretty",
   "▬": <ore:ingotEnderium>, # Enderium Ingot
   "☼": <ore:crystalEnder>   # Resonant Clathrate
 });
+
+# Remove TE vanilla compass & clock slag dupes
+mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft:compass>);
+mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft:clock>);
