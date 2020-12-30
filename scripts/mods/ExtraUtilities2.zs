@@ -233,3 +233,13 @@ craft.remake(<extrautils2:teleporter:1>, ["pretty",
   "◊": <ore:gemIridium>,              # Iridium Ore
   "☺": <contenttweaker:blasted_coal>  # Blasted Coal
 });
+
+# [Ender_Porcupine] from [Indexer][+2]
+craft.remake(<extrautils2:interactionproxy>, ["pretty",
+  "E T E",
+  "T I T",
+  "E T E"], {
+  "T": <cd4017be_lib:m:402>,     # Telekinetic Alloy
+  "E": <extrautils2:enderlilly>, # Ender Lilly
+  "I": <extrautils2:indexer>     # Indexer
+});
