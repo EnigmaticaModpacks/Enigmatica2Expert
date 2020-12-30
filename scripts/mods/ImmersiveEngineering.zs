@@ -429,3 +429,14 @@ craft.remake(<portabledrill:portable_drill>, ["pretty",
   "B": <bedrockores:bedrock_miner>,      # Bedrock Miner
   "|": <immersiveengineering:coresample> # Core Sample
 });
+
+# Forge hammer from IC2 harder to craft, so everyone used IE hammer
+# This change will force players to use Forge Hammer for making plates
+# [Engineer's_Hammer] from [Iron_Hammer_Head][+1]
+craft.remake(<immersiveengineering:tool>, ["pretty",
+  "    I",
+  "  /  ",
+  "/    "], {
+  "/": <ore:stickWood>, # Stick
+  "I": <tconstruct:hammer_head>.withTag({Material: "iron"}) # Iron Hammer Head
+});
