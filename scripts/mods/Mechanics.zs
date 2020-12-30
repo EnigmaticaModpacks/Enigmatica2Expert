@@ -52,7 +52,7 @@ function addBurstSeedRecipe(input as IItemStack, additive as IItemStack, output 
 
 addBurstSeedRecipe(<enderio:block_infinity>, <bigreactors:dustcyanite>, <mechanics:burst_seed_grainsofinfinity>);
 addBurstSeedRecipe(<enderio:block_infinity>, <forestry:phosphor>      , <mechanics:burst_seed_grainsofinfinity>);
-addBurstSeedRecipe(<contenttweaker:conglomerate_of_coal>, <thermalfoundation:material:162>, <mechanics:burst_seed_black_iron>);
+addBurstSeedRecipe(<contenttweaker:blasted_coal>, <thermalfoundation:material:162>, <mechanics:burst_seed_black_iron>);
 
 # Empty rod remake
 recipes.addShaped(<mechanics:empty_rod>, [

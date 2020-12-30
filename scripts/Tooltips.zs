@@ -2004,3 +2004,7 @@ for machineName, description in {
 
 # Nerfed torch
 <minecraft:torch>.addTooltip(format.red("Light level was nerfed"));
+
+# Nerfed torch
+<thaumcraft:table_wood>.addTooltip("§6Right Click with Scribing tools to make Research Table");
+<thaumcraft:research_table>.addTooltip("§6Right Click Scribing Tools over Wood Table to make");

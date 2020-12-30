@@ -216,6 +216,7 @@ for item in pressurePlates {
 	fertilizer.add(<minecraft:dye:15>);
 	fertilizer.add(<industrialforegoing:fertilizer>);
 	fertilizer.add(<forestry:fertilizer_compound>);
+	fertilizer.add(<mysticalagriculture:fertilized_essence>);
 	
 # Sawdust compat
 	<ore:pulpWood>.add(<thermalfoundation:material:800>);

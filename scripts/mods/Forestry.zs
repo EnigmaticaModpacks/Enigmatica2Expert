@@ -71,35 +71,6 @@ for tomato in <ore:cropTomato>.items {
 
 # Removing shapeless bronze crafting recipe
 	recipes.remove(<forestry:ingot_bronze>);
-	
-# *======= Carpenter =======*
-
-//mods.forestry.Carpenter.addRecipe(IItemStack output, IIngredient[][] ingredients, int packagingTime, @Optional ILiquidStack fluidInput, @Optional IItemStack box)
-#mods.forestry.Carpenter.addRecipe(<minecraft:redstone> * 9, [[<minecraft:redstone_block>]], 30);
-#mods.forestry.Carpenter.addRecipe(<minecraft:gold_ingot>, [[<minecraft:gold_block>]], 30, <liquid:for.honey> * 100);
-#mods.forestry.Carpenter.addRecipe(<minecraft:redstone_block>, [[<minecraft:redstone>,<minecraft:redstone>,<minecraft:redstone>],[<minecraft:redstone>,<minecraft:redstone>,<minecraft:redstone>],[<minecraft:redstone>,<minecraft:redstone>,<minecraft:redstone>]], 60, <liquid:water> * 200, <minecraft:stone>);
-
-//mods.forestry.Carpenter.removeRecipe(IItemStack output, @Optional ILiquidStack fluidInput);
-#mods.forestry.Carpenter.removeRecipe(<forestry:portable_alyzer>);
-#mods.forestry.Carpenter.removeRecipe(<forestry:wood_pulp>, <liquid:water>);
-
-# *======= Centrifuge =======*
-
-//mods.forestry.Centrifuge.addRecipe(WeightedItemStack[] output, IItemStack ingredients, int packagingTime);
-#mods.forestry.Centrifuge.addRecipe([(<minecraft:redstone> * 9) % 80, <minecraft:gold_ingot> % 12], <minecraft:redstone_block>, 100);
-
-//mods.forestry.Centrifuge.removeRecipe(IIngredient input);
-#mods.forestry.Centrifuge.removeRecipe(<forestry:bee_combs:*>);
-
-
-# *======= Fermenter =======*
-
-//mods.forestry.Fermenter.addRecipe(ILiquidStack fluidOutput, IItemStack resource, ILiquidStack fluidInput, int fermentationValue, float fluidOutputModifier);
-#mods.forestry.Fermenter.addRecipe(<liquid:lava>, <minecraft:obsidian>, <liquid:water>, 1000, 0.5);
-
-//mods.forestry.Fermenter.removeRecipe(IIngredient input);
-#mods.forestry.Fermenter.removeRecipe(<minecraft:reeds>);
-#mods.forestry.Fermenter.removeRecipe(<liquid:water>);
 
 #More Fermenter compat
 val FermenterFluid = {

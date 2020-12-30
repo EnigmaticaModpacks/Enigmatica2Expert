@@ -26,23 +26,32 @@
 - ✏️ [x] Simplify Cyclic's Amulets: Boat, Void
 - 🧩 [x] Localize Content Tweaker's items
 - ✏️ [x] Mystical Agriculture: Modded tree saplings from Tree Essence
+- 💥 [x] Merge E2E-v2
+- 𝓩𝒮 [x] Merge 1.82a
+- ✏️ [x] Fix XML recipes get wrong first items of Oredicts
+- ✏️ [x] ActAdd chest upgrades simplify
+- 𝓩𝒮 [x] Thaumcraft Research Table click description helper
+- ✏️ [x] Engineer hammer harder craft
+- ✏️ [x] Remove Compass Rich Slag dupe
+- ✏️ [x] Porcupine slightly harder recipe
 
 ## Planned
 
 -----------
 
-- ✏️ [x] Fix XML recipes get wrong first items of Oredicts
-- 🟢 [x] Biome Tweaker (check dims: 110, 113, 118)
-- 💥 [ ] **Rats** Structures Generation
-- 💥 [ ] Merge E2E-v2
-- 💥 [ ] New 🐝 for endgame
-- 💥 [ ] Uses of singularities
-- 🧩 [ ] Amber Dissapeared from TCon tool parts
-- 🧩 [ ] Osmium Spawn too weak
-- 🌿 [ ] Write Patchouli for new stuff
-- 🟢 [ ] New mod: Ido
-- 🟢 [ ] New mod: Better diving
+- 🔴 [ ] New mod: Ido
+- 🔴 [ ] New mod: Better diving
 - 🟢 [ ] LagGoggles
+- 💥 [x] New 🐝 for endgame
+- 💥 [ ] Uses of singularities
+- 💥 [ ] **Rats** Structures Generation
+- 🧩 [x] Osmium Spawn too weak
+- 🌿 [ ] Write Patchouli for new stuff
+- 🌍 [ ] Reload JER world data. Its also not showing
+- 𝓩𝒮 [ ] Omega potion logaryphmic level buff
+- 𝓩𝒮 [ ] Remove Furnace recipes to prevent Dupes with Avaritia Firnace
+- ✏️ [ ] Swap Iron in some to Fake iron
+
 - 𝓩𝒮 [ ] Craft.zs makes feather disableable (README note or additional functionality)
 - 𝓩𝒮 [ ] Craft.zs if string has only 1 character width "pretty" should be removed
 - 𝓩𝒮 [ ] Craft.zs should use Bucket global finction
@@ -52,12 +61,7 @@
 - 𝓩𝒮 [ ] Craft.zs Ability to disable OreDicts
 - 𝓩𝒮 [ ] Craft.zs Automatic `remove:` additional if needed
 - 𝓩𝒮 [ ] Craft.zs `Fruit` letters key
-- 🌍 [ ] Reload JER world data. Its also not showing
-- 𝓩𝒮 [ ] Merge 1.82a
-- 𝓩𝒮 [ ] Omega potion logaryphmic level buff
-- 𝓩𝒮 [ ] Remove Furnace recipes to prevent Dupes with Avaritia Firnace
-- 𝓩𝒮 [ ] Thaumcraft Research Table click description helper
-- ✏️ [ ] Engineer hammer harder craft
+- 𝓩𝒮 [ ] Craft.zs "Plain items" to just copy inventory of chest
 
 - 𝓩𝒮 [ ] Remove on release:
   - excessive logging for non-debug clients
@@ -91,7 +95,7 @@
 - [ ] Make some ORE spawn only on planets
 - [ ] Check why magnet shapeless recipes dissapeared
 - [ ] ⚙️ Primal Mana in other machines (no machines accept 3 liquids yet)
-- [ ] Fake players can use cans ?
+- [ ] Fake players can use Agriculture cans ?
 - 💜 [ ] Account Thaumcraft's aspects cost
 - 💜 [ ] Check why Lumium so pricy
 - 💜 [ ] UU Forbid ME drives to be replicable
@@ -106,6 +110,10 @@
 - 𝓩𝒮 [ ] New Pam's traps. Not actually working, new recipes wouldn't appear
 - ✏️ [ ] 4 Singularity => Creative bin
 - ✏️ [ ] Light Blue Clear Glass have empty chiseling group
+- 🌍 [ ] At dim 118 water animals not spawning. Also add more BoP plants on bottom of ocean
+- 🧩 [ ] Amber Dissapeared from TCon tool parts
+- 𝓩𝒮 [ ] Change some merchants: https://docs.blamejared.com/1.12/en/Mods/RockyTweaks/Merchant/
+- 𝓩𝒮 [ ] Requious Frakto JEI stuff
 
 
 ## Unused TC traits
@@ -137,6 +145,8 @@
 - [x] trash            | ❌ Random stuff is slowly generated when the tool is selected, but the tool is damaged slowly in this way.
 
 ❌ - Could not find trait
+
+barrett|divineshield|dprk|ghastly|ignoble|jaded|mystical_fire|naphtha|trash
 
 ## Items for crafting
 
