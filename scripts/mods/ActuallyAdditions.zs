@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IIngredient;
 import mods.jei.JEI.removeAndHide as rh;
 import mods.actuallyadditions.BallOfFur.addReturn as addBallReturn;
 
@@ -69,14 +70,6 @@ import mods.actuallyadditions.BallOfFur.addReturn as addBallReturn;
 	[[<ore:plankTreatedWood>, <forestry:oak_stick>, <ore:plankTreatedWood>],
 	[<forestry:oak_stick>, <ore:logWood>, <forestry:oak_stick>], 
 	[<ore:plankTreatedWood>, <forestry:oak_stick>, <ore:plankTreatedWood>]]);
-
-# "Small" Storage Crate
-	recipes.remove(<actuallyadditions:block_giant_chest>);
-	recipes.addShapedMirrored("Small Storage Crate", 
-	<actuallyadditions:block_giant_chest>, 
-	[[<immersiveengineering:wooden_device0:5>, <ore:plankTreatedWood>, <immersiveengineering:wooden_device0:5>],
-	[<ore:plankTreatedWood>, <actuallyadditions:block_misc:4>, <ore:plankTreatedWood>], 
-	[<immersiveengineering:wooden_device0:5>, <ore:plankTreatedWood>, <immersiveengineering:wooden_device0:5>]]);
 
 # Emerald Dust
 	recipes.remove(<actuallyadditions:item_dust:3>);
@@ -361,3 +354,52 @@ scripts.process.mash(<minecraft:cooked_porkchop>,  <actuallyadditions:item_food:
 
 # Canola unify
 scripts.process.squeeze([<actuallyadditions:item_misc:13>], <liquid:canolaoil> * 80, "except: ForestrySqueezer IndustrialSqueezer", null);
+
+# -----------------------------------------
+# Storage crate remake
+
+# [Storage_Crate_Keeper] from [Black_Quartz][+1]
+craft.remake(<actuallyadditions:item_crate_keeper>, ["pretty",
+  "  #  ",
+  "# • #",
+  "  #  "], {
+  "•": <ore:gemQuartzBlack>, # Black Quartz
+  "#": <ore:plankWood>       # Oak Wood Planks
+});
+
+var crateIngrs = {
+  "R": <immersiveengineering:wooden_device0:5>, # Reinforced Storage Crate
+  "≢": <actuallyadditions:block_misc:4>,        # Wood Casing
+  "#": <ore:plankWood>,                         # Oak Wood Planks
+  "e": <forestry:refractory_wax>,               # Refractory Wax
+  "*": <actuallyadditions:block_crystal:3>,     # Void Crystal Block
+  "☼": <actuallyadditions:block_crystal_empowered:3> # Empowered Void Crystal Block
+} as IIngredient[string];
+
+# [Small_Storage_Crate] from [Wood_Casing][+2]
+craft.remake(<actuallyadditions:block_giant_chest>, ["pretty",
+  "R e R",
+  "e ≢ e",
+  "R e R"],
+crateIngrs);
+
+# [Chest_To_Storage_Crate_Upgrade] from [Refractory_Wax][+1]
+craft.remake(<actuallyadditions:item_chest_to_crate_upgrade>, ["pretty",
+  "R e R",
+  "e   e",
+  "R e R"],
+crateIngrs);
+
+# [Small_To_Medium_Storage_Crate_Upgrade] from [Oak_Wood_Planks][+1]
+craft.remake(<actuallyadditions:item_small_to_medium_crate_upgrade>, ["pretty",
+  "* # *",
+  "#   #",
+  "* # *"],
+crateIngrs);
+
+# [Medium_To_Large_Storage_Crate_Upgrade] from [Oak_Wood_Planks][+1]
+craft.remake(<actuallyadditions:item_medium_to_large_crate_upgrade>, ["pretty",
+  "☼ # ☼",
+  "#   #",
+  "☼ # ☼"],
+crateIngrs);
