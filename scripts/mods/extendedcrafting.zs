@@ -128,3 +128,7 @@ recipes.addShaped(<extendedcrafting:interface>, [
 	[<ore:ingotBlackIron>, <extendedcrafting:material:10>, <ore:ingotBlackIron>],
 	[<extendedcrafting:material:17>, <extendedcrafting:frame>, <extendedcrafting:material:17>],
 	[<ore:ingotBlackIron>, <extendedcrafting:material:2>, <ore:ingotBlackIron>]]);
+
+# Pack 9->1 recipe for ender ingot (somehow its missed)
+val e = <extendedcrafting:material:37>;
+recipes.addShapeless("9->1 Ender Ingot", <extendedcrafting:material:36>, [e,e,e,e,e,e,e,e,e]);
