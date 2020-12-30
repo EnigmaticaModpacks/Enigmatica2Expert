@@ -120,7 +120,7 @@ var list = {
 
 
 var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
-  TrophyItem:{id:"twilightforest:trophy",Count:1 as byte, Damage:5 as short},
+  TrophyItem:{id:"twilightforest:miniature_structure",Count:1 as byte, Damage:0 as short},
   TrophyName:"Twilight Forest Master Trophy",
   TrophyVariant:"gold"
 });
