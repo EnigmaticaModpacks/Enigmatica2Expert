@@ -280,3 +280,8 @@ Patchouli_js(entryId, paged({
     wrap_bucket(o[0]), `${o[1].burnTime} ticks, ${o[1].powerPreTick} mana/tick`
   ] ))
 ))*/
+
+# --------------------------
+# Mana diamond from Rat Diamond recipe
+mods.botania.ManaInfusion.addInfusion(<botania:manaresource:2>, <rats:rat_diamond>, 10000);
+
