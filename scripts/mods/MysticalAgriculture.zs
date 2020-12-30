@@ -578,3 +578,7 @@ craft.shapeless(<mysticalagriculture:fertilized_essence> * 3, "AB", {
   A: <ore:fertilizer>,     # Fertilizer
   B: <ore:essenceInferium> # Inferium Essence
 });
+
+# Better enderpearl recipe
+recipes.removeByRecipeName("mysticalagriculture:ender_pearl");
+craft.shapeless(<minecraft:ender_pearl> * 6, "AAA", {A: <mysticalagriculture:enderman_essence>});
