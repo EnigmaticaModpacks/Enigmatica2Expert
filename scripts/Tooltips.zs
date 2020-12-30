@@ -2001,3 +2001,6 @@ for machineName, description in {
 } as string[string] {
 	addDescription(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:"~machineName}), description);
 }
+
+# Nerfed torch
+<minecraft:torch>.addTooltip(format.red("Light level was nerfed"));

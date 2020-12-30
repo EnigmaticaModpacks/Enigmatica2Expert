@@ -550,3 +550,6 @@ mods.immersiveengineering.Crusher.removeRecipesForInput(<minecraft:quartz>);
 mods.mekanism.crusher.removeRecipe(qwrong);
 mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:quartz>);
 scripts.process.crush(<ore:gemQuartz>, qdust, "only: iecrusher aegrinder mekcrusher", null, null);
+
+# Nerf torches from Light level 14
+<minecraft:torch>.asBlock().definition.lightLevel = 0.7f;
