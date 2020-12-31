@@ -34,23 +34,21 @@
 - ✏️ [x] Engineer hammer harder craft
 - ✏️ [x] Remove Compass Rich Slag dupe
 - ✏️ [x] Porcupine slightly harder recipe
+- 🔴 [x] New mod: Better diving
+- 🧩 [x] Bedrock Osmium Spawn too weak
+- ✏️ [x] Swap Iron in some to Fake iron
+- 💥 [x] New 🐝 for endgame
+- 🟢 [x] New mod: Ido
 
 ## Planned
 
 -----------
 
-- 🔴 [ ] New mod: Ido
-- 🔴 [ ] New mod: Better diving
-- 🟢 [ ] LagGoggles
-- 💥 [x] New 🐝 for endgame
+- 🌍 [ ] Reload JER world data. Its also not showing
 - 💥 [ ] Uses of singularities
 - 💥 [ ] **Rats** Structures Generation
-- 🧩 [x] Osmium Spawn too weak
-- 🌿 [ ] Write Patchouli for new stuff
-- 🌍 [ ] Reload JER world data. Its also not showing
 - 𝓩𝒮 [ ] Omega potion logaryphmic level buff
-- 𝓩𝒮 [ ] Remove Furnace recipes to prevent Dupes with Avaritia Firnace
-- ✏️ [ ] Swap Iron in some to Fake iron
+- 🌿 [ ] Write Patchouli for new stuff
 
 - 𝓩𝒮 [ ] Craft.zs makes feather disableable (README note or additional functionality)
 - 𝓩𝒮 [ ] Craft.zs if string has only 1 character width "pretty" should be removed
@@ -114,6 +112,8 @@
 - 🧩 [ ] Amber Dissapeared from TCon tool parts
 - 𝓩𝒮 [ ] Change some merchants: https://docs.blamejared.com/1.12/en/Mods/RockyTweaks/Merchant/
 - 𝓩𝒮 [ ] Requious Frakto JEI stuff
+- 🟢 [ ] LagGoggles
+- 𝓩𝒮 [x] Remove Furnace recipes to prevent Dupes with Avaritia Firnace
 
 
 ## Unused TC traits
