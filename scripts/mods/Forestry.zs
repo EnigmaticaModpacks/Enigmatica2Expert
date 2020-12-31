@@ -1,5 +1,6 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
+import crafttweaker.item.WeightedItemStack;
 import crafttweaker.item.IIngredient;
 import mods.jei.JEI.removeAndHide as rh;
 import scripts.craft.grid.Grid;
@@ -165,3 +166,119 @@ craft.remake(<forestry:fertilizer_compound> * 16, ["pretty",
   "▲": <ore:dustAsh>,   # Ash
   "◊": <ore:gemApatite> # Apatite
 });
+
+// Disabling Greenhouse
+rh(<forestry:greenhouse>);
+rh(<forestry:greenhouse:3>);
+rh(<forestry:greenhouse:4>);
+rh(<forestry:greenhouse:5>);	
+rh(<forestry:climatiser>);
+rh(<forestry:climatiser:1>);
+rh(<forestry:climatiser:2>);
+rh(<forestry:climatiser:3>);
+rh(<forestry:climatiser:4>);
+
+# ----------------------------------------------
+# Bees rework
+# ----------------------------------------------
+
+# Buff Pulsating mesh output
+mods.forestry.Carpenter.removeRecipe(<minecraft:ender_pearl>);
+mods.forestry.Carpenter.addRecipe(<actuallyadditions:block_misc:6> * 4, 
+	Grid(["AA","AA"], {A:<forestry:crafting_material:1>}).shaped(), 60);
+
+# Buff propolis to slime (was 1 poor slime ball)
+# [Knightslime_Nugget*3] from [Pollen_Cluster][+1]
+recipes.removeByRecipeName("forestry:propolis_to_slime");
+craft.remake(<tconstruct:nuggets:3> * 3, ["pretty",
+  "P o P",
+  "P o P",
+  "P o P"], {
+  "P": <forestry:propolis:*>, # Propolis
+  "o": <forestry:pollen>      # Pollen Cluster
+});
+
+# Buff light level of lit candles
+<forestry:candle:1>.asBlock().definition.lightLevel = 0.95;
+
+
+# ---------------------------
+# Remake old combs
+
+function reprocessComb(comb as IItemStack, outputs as WeightedItemStack[]) as void {
+	mods.forestry.Centrifuge.removeRecipe(comb);
+	mods.forestry.Centrifuge.addRecipe(outputs, comb, 60);
+
+	if(!comb.matches(<forestry:bee_combs:9>))
+		mods.thermalexpansion.Centrifuge.removeRecipe(comb);
+	scripts.wrap.thermalexpansion.Centrifuge.addRecipe(outputs, comb, null, 2000);
+}
+
+# [Frozen_Comb]
+reprocessComb(<forestry:bee_combs:4>, [
+	<forestry:beeswax> % 80,     # Beeswax
+	<forestry:pollen:1> % 20,    # Crystalline Pollen Cluster
+	<forestry:honey_drop> % 70,  # Honey Drop
+	<mctsmelteryio:iceball> % 40 # Iceball
+]);
+
+# [Dripping_Comb]
+reprocessComb(<forestry:bee_combs:5>, [
+	<thermalfoundation:material:1> % 20, # Gold Dust
+	<forestry:honeydew> % 100,  # Honeydew
+	<forestry:honey_drop> % 40  # Honey Drop
+]);
+
+# [Parched_Comb]
+reprocessComb(<forestry:bee_combs:7>, [
+	<minecraft:blaze_powder> % 25, # Blaze Powder
+	<forestry:beeswax> % 100,  # Beeswax
+	<forestry:honey_drop> % 90 # Honey Drop
+]);
+
+# [Powdery_Comb]
+reprocessComb(<forestry:bee_combs:10>, [
+	<forestry:beeswax> % 20,     # Beeswaxer
+	(<minecraft:gunpowder> * 4) % 100, # Gunpowder
+	<forestry:honey_drop> % 20   # Honey Drop
+]);
+
+# [Mossy_Comb]
+reprocessComb(<forestry:bee_combs:15>, [
+	<forestry:beeswax> % 100,  # Beeswax
+	<ic2:crafting:20> % 100,   # Plantball
+	<forestry:honey_drop> % 90 # Honey Drop
+]);
+
+# [Mellow_Comb]
+reprocessComb(<forestry:bee_combs:16>, [
+	<minecraft:glowstone_dust> % 40, # Glowstone Dust
+	<forestry:beeswax> % 20,   # Beeswax
+	<forestry:honeydew> % 60   # Honeydew
+]);
+
+# [Cocoa_Comb]
+reprocessComb(<forestry:bee_combs:1>, [
+  <forestry:beeswax> % 80, # Beeswax
+  <minecraft:dye:3> % 50, # Cocoa
+  <nuclearcraft:dark_chocolate> % 20 # Dark Chocolate
+]);
+
+# [Irradiated_Comb]
+reprocessComb(<forestry:bee_combs:9>, [
+  <forestry:beeswax> % 50, # Beeswax
+  <nuclearcraft:plutonium:14> % 2, # Tiny Clump of Plutonium-242
+  <nuclearcraft:uranium:10> % 40   # Tiny Clump of Uranium-238
+]);
+
+# [Wheaten_Comb]
+reprocessComb(<forestry:bee_combs:14>, [
+  <forestry:beeswax> % 80, # Beeswax
+  <harvestcraft:flouritem> % 100,
+  <nuclearcraft:graham_cracker> % 20 # Graham Cracker
+]);
+
+# ---------------------------
+
+
+
