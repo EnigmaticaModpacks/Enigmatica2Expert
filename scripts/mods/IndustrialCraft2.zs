@@ -184,7 +184,7 @@ import mods.ic2.ScrapBox;
 	
 # IC2 Block Cutting blades
 remakeEnvelop(<ic2:block_cutting_blade>,   <ore:stone>,        <tconstruct:large_sword_blade>.withTag({Material: "iron"}));
-remakeEnvelop(<ic2:block_cutting_blade:1>, <ore:blockIron>,    <tconstruct:large_sword_blade>.withTag({Material: "steel"}));
+remakeEnvelop(<ic2:block_cutting_blade:1>, <ore:blockFakeIron>,    <tconstruct:large_sword_blade>.withTag({Material: "steel"}));
 remakeEnvelop(<ic2:block_cutting_blade:2>, <ore:blockDiamond>, <tconstruct:large_sword_blade>.withTag({Material: "alumite"}));
 
 # New Scraps
@@ -245,7 +245,7 @@ scripts.processUtils.avdRockXmlRecipe(
 	"PrecisionAssembler", [
 	<ore:blockGlass> * 24,
 	<ore:itemRubber> * 40,
-	<ore:blockIron> * 30,
+	<ore:blockFakeIron> * 30,
 	<ore:ingotCopper> * 32,
 	<ore:ingotAluminum> * 32,
 	<ore:ingotTin> * 24,

@@ -159,7 +159,7 @@ function fluidDict(ins as string[]) {
 	<industrialforegoing:oredictionary_converter>, 
 	[[<ore:itemRubber>, <ore:itemRubber>, <ore:itemRubber>], 
 	[<ore:itemRubber>, <ore:oreIron>, <ore:itemRubber>], 
-	[<ore:nuggetIron>, <ore:ingotIron>, <ore:blockIron>]]);
+	[<ore:nuggetFakeIron>, <ore:ingotFakeIron>, <ore:blockFakeIron>]]);
 	
 	recipes.remove(<industrialforegoing:fluiddictionary_converter>);
 	recipes.addShaped("Industrialforegoing Fluiddictionary Converter",
@@ -172,20 +172,20 @@ function fluidDict(ins as string[]) {
 	recipes.remove(<industrialforegoing:conveyor>);
 	recipes.addShaped(<industrialforegoing:conveyor> * 4, [
 		[<ore:itemRubber>, <ore:itemRubber>, <ore:itemRubber>], 
-		[<ore:ingotIron>, <minecraft:redstone>, <ore:ingotIron>], 
+		[<ore:ingotFakeIron>, <minecraft:redstone>, <ore:ingotFakeIron>], 
 		[<ore:itemRubber>, <ore:itemRubber>, <ore:itemRubber>]]);
 
 	recipes.remove(<industrialforegoing:conveyor_upgrade>);
 	recipes.addShaped(<industrialforegoing:conveyor_upgrade>, [
-		[<ore:ingotIron>, <ore:itemRubber>, <ore:ingotIron>], 
-		[<ore:ingotIron>, <minecraft:dispenser>, <ore:ingotIron>], 
-		[<ore:ingotIron>, <industrialforegoing:conveyor:*>, <ore:ingotIron>]]);
+		[<ore:ingotFakeIron>, <ore:itemRubber>, <ore:ingotFakeIron>], 
+		[<ore:ingotFakeIron>, <minecraft:dispenser>, <ore:ingotFakeIron>], 
+		[<ore:ingotFakeIron>, <industrialforegoing:conveyor:*>, <ore:ingotFakeIron>]]);
 	recipes.remove(<industrialforegoing:conveyor_upgrade:1>);
 	
 	recipes.addShaped(<industrialforegoing:conveyor_upgrade:1>, [
-		[<ore:ingotIron>, <ore:itemRubber>, <ore:ingotIron>], 
-		[<ore:ingotIron>, <minecraft:hopper>, <ore:ingotIron>], 
-		[<ore:ingotIron>, <industrialforegoing:conveyor:*>, <ore:ingotIron>]]);
+		[<ore:ingotFakeIron>, <ore:itemRubber>, <ore:ingotFakeIron>], 
+		[<ore:ingotFakeIron>, <minecraft:hopper>, <ore:ingotFakeIron>], 
+		[<ore:ingotFakeIron>, <industrialforegoing:conveyor:*>, <ore:ingotFakeIron>]]);
 
 
 # mob_imprisonment_tool

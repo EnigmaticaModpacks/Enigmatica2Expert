@@ -3,8 +3,8 @@
 recipes.remove(<morphtool:tool>);
 recipes.addShaped("Morphing Tool", <morphtool:tool>, [
 	[null, <ore:dyeGreen>, <ore:dyeBlue>], 
-	[null, <ore:ingotIron>, <ore:dyeRed>], 
-	[<ore:ingotIron>, null, null]]);
+	[null, <ore:ingotFakeIron>, <ore:dyeRed>], 
+	[<ore:ingotFakeIron>, null, null]]);
 
 # Super Morph-O-Tool
 	recipes.addShaped("Superwrench", 

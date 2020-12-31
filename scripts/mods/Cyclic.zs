@@ -15,9 +15,9 @@ import mods.cyclicmagic.Dehydrator;
 	recipes.remove(<cyclicmagic:clock>);
 	recipes.addShapedMirrored("Cyclic Redstone Clock", 
 	<cyclicmagic:clock>, 
-	[[<ore:ingotIron>, <ore:circuitAdvanced>, <ore:ingotIron>],
+	[[<ore:ingotFakeIron>, <ore:circuitAdvanced>, <ore:ingotFakeIron>],
 	[<ore:circuitBasic>, <extrautils2:redstoneclock>, <ore:circuitBasic>], 
-	[<ore:ingotIron>, <ore:circuitAdvanced>, <ore:ingotIron>]]);
+	[<ore:ingotFakeIron>, <ore:circuitAdvanced>, <ore:ingotFakeIron>]]);
 
 # Fluid Storage Tank
 	recipes.remove(<cyclicmagic:block_storeempty>);
@@ -85,7 +85,7 @@ import mods.cyclicmagic.Dehydrator;
 	<cyclicmagic:block_anvil>, 
 	[[gemDiamondRat, <ore:plateDenseObsidian>, gemDiamondRat],
 	[<ore:dustRedstone>, <actuallyadditions:block_item_repairer>, <ore:dustRedstone>], 
-	[<ore:blockIron>, <ore:blockIron>, <ore:blockIron>]]);
+	[<ore:blockFakeIron>, <ore:blockFakeIron>, <ore:blockFakeIron>]]);
 	
 # Explosionproof Cyclic Glass
 	recipes.remove(<cyclicmagic:glass_strong>);

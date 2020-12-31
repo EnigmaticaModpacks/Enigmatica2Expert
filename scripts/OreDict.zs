@@ -760,3 +760,7 @@ for item in <ore:dustAshes>.items {
 
 # Slimes with TCon is not so rare, so better to keep this item separately
 <ore:slimeball>.remove(<quark:slime_bucket>);
+
+<ore:ingotFakeIron> .addItems([<minecraft:iron_ingot>,<enderio:item_alloy_ingot:9>]);
+<ore:blockFakeIron> .addItems([<minecraft:iron_block>,<enderio:block_alloy:9>]);
+<ore:nuggetFakeIron>.addItems([<minecraft:iron_nugget>,<enderio:item_alloy_nugget:9>]);

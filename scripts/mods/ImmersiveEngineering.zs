@@ -81,7 +81,7 @@ import crafttweaker.potions.IPotionEffect;
 	recipes.remove(<immersiveengineering:metal_device0:1>);
 	recipes.addShaped("MV Capacitor", 
 	<immersiveengineering:metal_device0:1>, 
-	[[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],
+	[[<ore:ingotFakeIron>, <ore:ingotFakeIron>, <ore:ingotFakeIron>],
 	[<ore:ingotElectrum>, <immersiveengineering:metal_device0>, <ore:ingotElectrum>], 
 	[<ore:plankTreatedWood>, <ore:blockRedstone>, <ore:plankTreatedWood>]]);
 	
@@ -93,8 +93,8 @@ import crafttweaker.potions.IPotionEffect;
 	[<ore:plankTreatedWood>, <ore:blockRedstone>, <ore:plankTreatedWood>]]);
 	
 # LV - MV Connectors/Relays
-	recipes.addShapeless("LV - MV Connector", <immersiveengineering:connector:2>, [<immersiveengineering:connector>, <ore:ingotIron>]);
-	recipes.addShapeless("LV - MV Relay", <immersiveengineering:connector:3>, [<immersiveengineering:connector:1>, <ore:ingotIron>]);
+	recipes.addShapeless("LV - MV Connector", <immersiveengineering:connector:2>, [<immersiveengineering:connector>, <ore:ingotFakeIron>]);
+	recipes.addShapeless("LV - MV Relay", <immersiveengineering:connector:3>, [<immersiveengineering:connector:1>, <ore:ingotFakeIron>]);
 
 # MV - HV Connectors/Relays
 	recipes.addShapeless("MV - HV Connector", <immersiveengineering:connector:4>, [<immersiveengineering:connector:2>, <ore:ingotAluminium>]);
@@ -438,5 +438,6 @@ craft.remake(<immersiveengineering:tool>, ["pretty",
   "  /  ",
   "/    "], {
   "/": <ore:stickWood>, # Stick
-  "I": <tconstruct:hammer_head>.withTag({Material: "iron"}) # Iron Hammer Head
+  "I": <tconstruct:hammer_head>.withTag({Material: "iron"}) 
+			|<tconstruct:hammer_head>.withTag({Material: "construction_alloy"})
 });

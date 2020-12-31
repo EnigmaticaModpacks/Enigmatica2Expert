@@ -5,11 +5,10 @@ recipes.addShapeless(<botania:quartztypedark>, [<thaumictinkerer:black_quartz_bl
 recipes.addShapeless(<thaumictinkerer:black_quartz_block>, [<botania:quartztypedark>]);
 
 # Disk Platter / Iron Chain Link
-	recipes.remove(<iceandfire:chain_link>);
-	recipes.addShaped(<iceandfire:chain_link> * 2, 
-	[[<ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>],
-	[<ore:nuggetIron>, null, <ore:nuggetIron>], 
-	[<ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>]]);
+	craft.remake(<iceandfire:chain_link> * 2, ["AAA","A A","AAA"],{
+		A: <ore:nuggetFakeIron>,
+		remove: <iceandfire:chain_link>
+	});
 
 # Polished Marble / Marble Pavement
 	recipes.remove(<quark:marble:1>);
@@ -61,7 +60,7 @@ recipes.addShapeless(<thaumictinkerer:black_quartz_block>, [<botania:quartztyped
 	recipes.remove(<mekanism:basicblock2:7>);
 	recipes.addShaped(<mekanism:basicblock2:7> * 8, 
 	[[<ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>],
-	[<ore:ingotSteel>, <ore:ingotIron>, <ore:ingotSteel>], 
+	[<ore:ingotSteel>, <ore:ingotFakeIron>, <ore:ingotSteel>], 
 	[<ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>]]);
 
 # Applied Llamagistics Wood Gear

@@ -234,7 +234,7 @@ addTieredRecipe(3, <mysticalagriculture:obsidian_seeds> ,      [<ore:plateDenseO
 addTieredRecipe(3, <mysticalagriculture:redstone_seeds> ,      [<ore:blockRedstone> ,<ore:runeAutumnB>], null);
 addTieredRecipe(3, <mysticalagriculture:glowstone_seeds> ,     [<ore:glowstone> , <ore:runeWinterB>], null);
 addTieredRecipe(3, <mysticalagriculture:nether_quartz_seeds> , [<ore:blockQuartz> ,<ore:runeSummerB>], null);
-addTieredRecipe(3, <mysticalagriculture:iron_seeds> ,          [<ore:blockIron> ,<ore:runeSummerB>], null);
+addTieredRecipe(3, <mysticalagriculture:iron_seeds> ,          [<ore:blockFakeIron> ,<ore:runeSummerB>], null);
 addTieredRecipe(3, <mysticalagriculture:lead_seeds> ,          [<ore:blockLead> , <ore:runeWinterB>], null);
 addTieredRecipe(3, <mysticalagriculture:sky_stone_seeds> ,     [<appliedenergistics2:material:45>, <ore:runeSpringB>] , null);
 addTieredRecipe(3, <mysticalagriculture:silver_seeds> ,        [<ore:blockSilver> ,<ore:runeSpringB>], null);

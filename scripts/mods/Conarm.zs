@@ -43,7 +43,7 @@ remakeEx(<conarm:travel_goggles_base>, [
 # gauntlet base
 remakeEx(<conarm:gauntlet_mat>, [
 	[null, null, <ore:deathwormChitin>], 
-	[<ore:ingotIron>, <ore:ingotIron>, <ore:deathwormChitin>], 
+	[<ore:ingotFakeIron>, <ore:ingotFakeIron>, <ore:deathwormChitin>], 
 	[null, <ore:deathwormChitin>, <ore:deathwormChitin>]
 ]);
 

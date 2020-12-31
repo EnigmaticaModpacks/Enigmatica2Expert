@@ -43,5 +43,5 @@ recipes.addShapeless("Over matter to Iron Blocks", <minecraft:iron_block> * 2, [
 val matterHell = <deepmoblearning:living_matter_hellish>;
 recipes.addShaped("Hellish matter to Gold Blocks", <minecraft:gold_block> * 4, [
   [<ore:glowstone>, matterHell, <ore:glowstone>],
-  [matterHell, <ore:blockIron>, matterHell],
+  [matterHell, <ore:blockFakeIron>, matterHell],
   [matterHell, matterHell, matterHell]]);

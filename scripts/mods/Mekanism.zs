@@ -416,7 +416,7 @@ for i, it in [
 		});
 		craft.remake( <mekanism:machineblock2:11>.withTag({tier: i}) , grid, { 
 			"#": it, 
-			"-": <ore:ingotIron>, 
+			"-": <ore:ingotFakeIron>, 
 			"o": i==0 ? null : <mekanism:machineblock2:11>.withTag({tier: i - 1}, false)
 		});
 }

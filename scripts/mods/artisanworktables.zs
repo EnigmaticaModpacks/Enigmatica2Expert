@@ -76,7 +76,7 @@ craft.make(<artisanworktables:worktable:3>, ["pretty",
   "▩ x ▩",
   "I   I"], {
   "x": <ore:workbench>,
-  "▩": <ore:blockIron>,
+  "▩": <ore:blockFakeIron>,
   "I": <preston:compressed_block>.withTag({stack: {id: "actuallyadditions:block_misc", Count: 1 as byte, Damage: 2 as short}, level: 1}),
 });
 

@@ -20,9 +20,9 @@ for i in 0 to 16 {
   if (!isNull(item2)) {
     recipes.remove(item2);
     recipes.addShaped(item2 * 4, [
-      [wool  , <ore:ingotIron>  , wool],
+      [wool  , <ore:ingotFakeIron>  , wool],
       [wool  , o     , wool],
-      [wool  , <ore:ingotIron>  , wool]]);
+      [wool  , <ore:ingotFakeIron>  , wool]]);
   }
 }
 

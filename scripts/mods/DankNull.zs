@@ -26,7 +26,7 @@ function dankPanelCraft(index as int, matPrimary as IIngredient, matSecondary as
 
 # dankPanelCraft(0, <ore:paneGlassRed>,	<ore:blockRedstone>);
 dankPanelCraft(1, <ic2:te:111>, 			<ore:blockLapis>);
-dankPanelCraft(2, <ic2:te:112>, 			<ore:blockIron>);
+dankPanelCraft(2, <ic2:te:112>, 			<ore:blockFakeIron>);
 dankPanelCraft(3, <ic2:te:113>,				<ore:blockGold>);
 dankPanelCraft(4, <ic2:te:114>,				<ore:blockDiamond>);
 dankPanelCraft(5, <ic2:te:115>,				<ore:blockEmerald>);

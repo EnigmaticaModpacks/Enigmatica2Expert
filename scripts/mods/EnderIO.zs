@@ -8,13 +8,12 @@ import scripts.process.solution;
 
 # Cheaper decorations
 var casing = <teslacorelib:machine_case>|<actuallyadditions:block_misc:9>|<mekanism:basicblock:8>|<nuclearcraft:part:10>;
-var constructionAlloyOrIron = <ore:ingotConstructionAlloy> | <ore:ingotIron>;
 recipes.remove(<enderio:item_material:2>);
 recipes.addShaped("Cheaper Chassis Parts", 
 <enderio:item_material:2> * 16, [
-[constructionAlloyOrIron, constructionAlloyOrIron, constructionAlloyOrIron], 
-[constructionAlloyOrIron, casing, constructionAlloyOrIron], 
-[constructionAlloyOrIron, constructionAlloyOrIron, constructionAlloyOrIron]]);
+[<ore:ingotFakeIron>, <ore:ingotFakeIron>, <ore:ingotFakeIron>], 
+[<ore:ingotFakeIron>, casing, <ore:ingotFakeIron>], 
+[<ore:ingotFakeIron>, <ore:ingotFakeIron>, <ore:ingotFakeIron>]]);
 
 
 # Impulse Hopper
@@ -54,9 +53,9 @@ recipes.addShaped("Cheaper Chassis Parts",
 	recipes.remove(<enderio:block_buffer:1>);
 	recipes.addShapedMirrored("Power Buffer", 
 	<enderio:block_buffer:1>, 
-	[[<ore:ingotIron>, <ore:ingotElectricalSteel>, <ore:ingotIron>],
+	[[<ore:ingotFakeIron>, <ore:ingotElectricalSteel>, <ore:ingotFakeIron>],
 	[<ore:ingotElectricalSteel>, <enderio:item_basic_capacitor>, <ore:ingotElectricalSteel>], 
-	[<ore:ingotIron>, <ore:ingotElectricalSteel>, <ore:ingotIron>]]);
+	[<ore:ingotFakeIron>, <ore:ingotElectricalSteel>, <ore:ingotFakeIron>]]);
 
 # Solar Panels
 	# Tier 2
@@ -194,13 +193,13 @@ recipes.addShaped("Cheaper Chassis Parts",
 	recipes.remove(<enderio:block_simple_crafter>);
 	recipes.addShaped(<enderio:block_simple_crafter>, [
 		[<ore:itemSilicon>, <ore:itemSilicon>, <ore:itemSilicon>], 
-		[<ore:ingotConstructionAlloy> | <ore:ingotIron>, <ic2:te:88>, <ore:ingotConstructionAlloy> | <ore:ingotIron>], 
+		[<ore:ingotFakeIron>, <ic2:te:88>, <ore:ingotFakeIron>], 
 		[<ore:gearStone>, <ore:workbench>, <ore:gearStone>]]);
 
 	recipes.remove(<enderio:block_crafter>);
 	recipes.addShaped(<enderio:block_crafter>, [
 		[<ore:itemSilicon>, <ore:itemSilicon>, <ore:itemSilicon>],
-		[<ore:ingotConstructionAlloy> | <ore:ingotIron>, <ic2:te:89>, <ore:ingotConstructionAlloy> | <ore:ingotIron>], 
+		[<ore:ingotFakeIron>, <ic2:te:89>, <ore:ingotFakeIron>], 
 		[<ore:gearIronInfinity>, <ore:workbench>, <ore:gearIronInfinity>]]);
 
 # Power Monitor simplify
@@ -246,7 +245,7 @@ recipes.remove(<enderio:block_niard>);
 recipes.addShaped(<enderio:block_niard>, [
 	[<immersiveengineering:metal_device1:6>, <enderio:block_tank>, <immersiveengineering:metal_device1:6>],
 	[<ore:craftingPiston>, <ore:chassis>, <ore:craftingPiston>],
-	[<ore:ingotIron>, <ore:barsIron>, <ore:ingotIron>]]);
+	[<ore:ingotFakeIron>, <ore:barsIron>, <ore:ingotFakeIron>]]);
 
 # Compat of nano glowstone
 scripts.process.crush(<enderio:item_material:76>, <enderio:block_holy_fog>, "except: sagMill", 

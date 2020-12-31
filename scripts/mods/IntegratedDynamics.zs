@@ -56,9 +56,9 @@ recipes.addShaped("part_connector_omni_directional_item", connector * 2, [
 recipes.remove(<integratedcrafting:part_interface_crafting_item>);
 recipes.addShaped("part_interface_crafting_item", 
 	<integratedcrafting:part_interface_crafting_item>, 
-	[[<ore:ingotIron>, <appliedenergistics2:crafting_unit>, <ore:ingotIron>], 
+	[[<ore:ingotFakeIron>, <appliedenergistics2:crafting_unit>, <ore:ingotFakeIron>], 
 	[<integrateddynamics:variable_transformer>, <integrateddynamics:crystalized_menril_block>, <integrateddynamics:variable_transformer:1>], 
-	[<ore:ingotIron>, <appliedenergistics2:crafting_unit>, <ore:ingotIron>]]);
+	[<ore:ingotFakeIron>, <appliedenergistics2:crafting_unit>, <ore:ingotFakeIron>]]);
 
 # terminal_storage
 recipes.remove(<integratedterminals:part_terminal_storage_item>);

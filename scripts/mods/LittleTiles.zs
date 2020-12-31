@@ -16,5 +16,5 @@ remakeEx(<littletiles:colortube>, [[null, <ore:wool>, <ore:wool>],[null, core, <
 remakeEx(<littletiles:chisel>, [[null, null, <tcomplement:chisel_head>.withTag({Material: "rubber"})],[null, core, null], [rod, null, null]]);
 remakeEx(<littletiles:wrench>, [[null, rod, core],[null, rod, rod], [rod, null, null]]);
 remakeEx(<littletiles:container>, [[<mekanism:slickplasticblock:12>, <mekanism:slickplasticblock:12>, <mekanism:slickplasticblock:12>],[<mekanism:slickplasticblock:12>, core, <mekanism:slickplasticblock:12>], [<mekanism:slickplasticblock:12>, <mekanism:slickplasticblock:12>, <mekanism:slickplasticblock:12>]]);
-remakeEx(<littletiles:saw>, [[null, null, core],[null, rod, <ore:ingotIron>], [rod, <minecraft:iron_ingot>, null]]);
-remakeEx(<littletiles:hammer>, [[null, <ore:ingotIron>, core],[null, rod, <ore:ingotIron>], [rod, null, null]]);
+remakeEx(<littletiles:saw>, [[null, null, core],[null, rod, <ore:ingotFakeIron>], [rod, <ore:ingotFakeIron>, null]]);
+remakeEx(<littletiles:hammer>, [[null, <ore:ingotFakeIron>, core],[null, rod, <ore:ingotFakeIron>], [rod, null, null]]);

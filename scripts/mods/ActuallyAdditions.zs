@@ -162,9 +162,6 @@ for item in <ore:stoneBasalt>.items {
 
 
 # *======= Grinder =======*
-	#OutputStack, InputStack, (Optional)Output2Stack, (Optional)Output2Chance
-	#mods.actuallyadditions.Crusher.addRecipe(<minecraft:iron_ore>, <minecraft:iron_ingot>, <minecraft:stone>, 50);
-	
 	#BoP Gems -> Dyes
 	scripts.wrap.actuallyadditions.Crusher.addRecipe(<minecraft:dye:9> * 2, <biomesoplenty:gem_block:1>, <minecraft:dye:9> * 2, 50);
 	scripts.wrap.actuallyadditions.Crusher.addRecipe(<minecraft:dye:2> * 2, <biomesoplenty:gem_block:2>, <minecraft:dye:2> * 2, 50);
