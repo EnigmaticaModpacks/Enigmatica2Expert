@@ -113,6 +113,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       combinedOutput = combinedOutput + extra[i];
       combinedChances = combinedChances + ((!isNull(extraChance) && extraChance.length > i) ? extraChance[i] : 1.0f);
   }}
+  val havecombinedOutput = !isNull(combinedOutput) && combinedOutput.length > 0;
 
 
   # Machines with one item slot for input and output
@@ -417,20 +418,34 @@ function workEx(machineNameAnyCase as string, exceptions as string,
 
     if (machineName == "tecentrifuge") {
       #mods.thermalexpansion.Centrifuge.addRecipe(WeightedItemStack[] outputs, IItemStack input, ILiquidStack fluid, int energy);
-      if (!isNull(combinedOutput)  && combinedOutput.length  > 0 &&
-          combinedChances.length >= combinedOutput.length) {
-        
-        # Calculate chanced output from combined
-        var chancedCombined = [] as WeightedItemStack[];
-        for i in 0 to combinedOutput.length {
-          chancedCombined = chancedCombined + combinedOutput[i] % ((combinedChances[i] * 100) as int);
-        }
-
-        for ii in inputIngr0.itemArray {
-          scripts.wrap.thermalexpansion.Centrifuge.addRecipe(chancedCombined, ii, outputLiquid0, 2000);
-        }
-      } else {
+      if (!havecombinedOutput) 
         return info(machineNameAnyCase, getItemName(inputIngr0.itemArray[0]), "received work, but this machine MUST have item output");
+        
+      # Calculate chanced output from combined
+      var chancedCombined = [] as WeightedItemStack[];
+      for i, out in combinedOutput {
+        chancedCombined = chancedCombined + out % ((combinedChances[i] * 100) as int);
+      }
+
+      for ii in inputIngr0.itemArray {
+        scripts.wrap.thermalexpansion.Centrifuge.addRecipe(chancedCombined, ii, outputLiquid0, 2000);
+      }
+      return machineName;
+    }
+
+    if (machineName == "centrifuge") {
+      //mods.forestry.Centrifuge.addRecipe(WeightedItemStack[] output, IItemStack ingredients, int packagingTime);
+      if (!havecombinedOutput) 
+        return info(machineNameAnyCase, getItemName(inputIngr0.itemArray[0]), "received work, but this machine MUST have item output");
+        
+      # Calculate chanced output from combined
+      var chancedCombined = [] as WeightedItemStack[];
+      for i, out in combinedOutput {
+        chancedCombined = chancedCombined + out % ((combinedChances[i] * 100) as int);
+      }
+
+      for ii in inputIngr0.itemArray {
+        mods.forestry.Centrifuge.addRecipe(chancedCombined, ii, 200);
       }
       return machineName;
     }
