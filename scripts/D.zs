@@ -24,7 +24,7 @@ Example
 
 
 import crafttweaker.data.IData;
-#priority 2020
+#priority 4000
 
 zenClass D_zs {
   /*

@@ -25,7 +25,7 @@ mods.rustic.EvaporatingBasin.addRecipe(<scalinghealth:heartdust>, <liquid:blood>
 # Heart shard from heat dust
 val hd = <scalinghealth:heartdust>;
 val hs = <scalinghealth:crystalshard>;
-mods.actuallyadditions.Compost.addRecipe(hs, <actuallyadditions:block_crystal>, hd, <minecraft:red_glazed_terracotta>);
+scripts.wrap.actuallyadditions.Compost.addRecipe(hs, <actuallyadditions:block_crystal>, hd, <minecraft:red_glazed_terracotta>);
 
 # Honey drop on evaporation
 mods.rustic.EvaporatingBasin.addRecipe(<forestry:honey_drop>, <liquid:animania_honey> * 1000);

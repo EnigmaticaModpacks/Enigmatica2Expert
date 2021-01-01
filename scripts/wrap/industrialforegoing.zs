@@ -25,12 +25,12 @@ zenClass Class_SludgeRefiner { zenConstructor() {}
 	// Uses of this method: 5
 	function add(output as IItemStack, ItemWeight as int) as void {
 		print('Recipe wrapped: mods.industrialforegoing.SludgeRefiner.add'~
-			serializeArguments([serialize_IItemStack(output), ItemWeight]));
+			serialize.args([serialize.IItemStack(output), ItemWeight]));
 		mods.industrialforegoing.SludgeRefiner.add(output, ItemWeight);
 	}
 
 }
-static SludgeRefiner as Class_SludgeRefiner = Class_SludgeRefiner() as Class_SludgeRefiner;
+static SludgeRefiner as Class_SludgeRefiner = Class_SludgeRefiner();
 
 //####################################################
 // Uses of this class: 1
@@ -39,9 +39,9 @@ zenClass Class_Extractor { zenConstructor() {}
 	// Uses of this method: 1
 	function add(output as IItemStack, fluid as ILiquidStack) as void {
 		print('Recipe wrapped: mods.industrialforegoing.Extractor.add'~
-			serializeArguments([serialize_IItemStack(output), serializeFluid(fluid)]));
+			serialize.args([serialize.IItemStack(output), serialize.ILiquidStack(fluid)]));
 		mods.industrialforegoing.Extractor.add(output, fluid);
 	}
 
 }
-static Extractor as Class_Extractor = Class_Extractor() as Class_Extractor;
+static Extractor as Class_Extractor = Class_Extractor();

@@ -72,7 +72,7 @@ zenClass Craft {
           ". Its more than vanilla table can handle.\nGrid:\n" ~ grid.toString());
         return;
          */
-        mods.extendedcrafting.TableCrafting.addShapeless(output, ingrs);
+        scripts.wrap.extendedcrafting.TableCrafting.addShapeless(output, ingrs);
       } else {
         recipes.addShapeless(rName, output, ingrs, fnc, null);
       }
@@ -86,7 +86,7 @@ zenClass Craft {
           ". Its more than vanilla table can handle.\nGrid:\n" ~ grid.toString());
         return;
          */
-        mods.extendedcrafting.TableCrafting.addShaped(output, grd);
+        scripts.wrap.extendedcrafting.TableCrafting.addShaped(output, grd);
         print("Adding shaped Extended Crafting Table recipe " ~ rName);
         if (!isNull(fnc)) { logger.logWarning("Cant add recipe function to Extended Crafting table, recipe: " ~ rName); }
       } else {

@@ -25,9 +25,9 @@ zenClass Class_Distillation { zenConstructor() {}
 	// Uses of this method: 1
 	function addRecipe(fluidOutputs as ILiquidStack[], itemOutputs as IItemStack[], fluidInput as ILiquidStack, energy as int, time as int, chance as float[]) as void {
 		print('Recipe wrapped: mods.immersivepetroleum.Distillation.addRecipe'~
-			serializeArguments([serializeFluids1d(fluidOutputs), serializeIngredients1d(itemOutputs), serializeFluid(fluidInput), energy, time, serializeArray(chance, "[]")]));
+			serialize.args([serialize.ILiquidStack__(fluidOutputs), serialize.IItemStack__(itemOutputs), serialize.ILiquidStack(fluidInput), energy, time, serialize.string__(chance)]));
 		mods.immersivepetroleum.Distillation.addRecipe(fluidOutputs, itemOutputs, fluidInput, energy, time, chance);
 	}
 
 }
-static Distillation as Class_Distillation = Class_Distillation() as Class_Distillation;
+static Distillation as Class_Distillation = Class_Distillation();

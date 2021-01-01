@@ -25,9 +25,9 @@ zenClass Class_<CLASS> { zenConstructor() {}
 	// Uses of this method: <METHOD_USES>/*<SPLITTER>*/
 	function <METHOD>(<ARGS_ZS>) as void {
 		print('Recipe wrapped: mods.<MOD>.<CLASS_PURE>.<METHOD>'~
-			serializeArguments([<ARGS_STR>]));
+			serialize.args([<ARGS_STR>]));
 		mods.<MOD>.<CLASS_PURE>.<METHOD>(<ARGS_REF>);
 	}
 /*<SPLITTER>*/
 }
-static <CLASS> as Class_<CLASS> = Class_<CLASS>() as Class_<CLASS>;
+static <CLASS> as Class_<CLASS> = Class_<CLASS>();

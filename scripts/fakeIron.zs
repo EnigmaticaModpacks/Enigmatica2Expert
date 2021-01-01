@@ -43,4 +43,4 @@ remakeShaped("valkyrielib:modifier_component", <valkyrielib:modifier_component> 
 
 # Manual recipes
 mods.mekanism.infuser.removeRecipe(<mekanism:enrichedalloy>);
-mods.mekanism.infuser.addRecipe("REDSTONE", 10, <ore:ingotFakeIron>, <mekanism:enrichedalloy>);
+scripts.wrap.mekanism.infuser.addRecipe("REDSTONE", 10, <ore:ingotFakeIron>, <mekanism:enrichedalloy>);

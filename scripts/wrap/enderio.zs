@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded enderio
-// Uses of this mod: 3
+// Uses of this mod: 2
 
 
 //####################################################
@@ -25,53 +25,53 @@ zenClass Class_AlloySmelter { zenConstructor() {}
 	// Uses of this method: 1
 	function addRecipe(output as IItemStack, input as IIngredient[]) as void {
 		print('Recipe wrapped: mods.enderio.AlloySmelter.addRecipe'~
-			serializeArguments([serialize_IItemStack(output), serializeIngredients1d(input)]));
+			serialize.args([serialize.IItemStack(output), serialize.IIngredient__(input)]));
 		mods.enderio.AlloySmelter.addRecipe(output, input);
 	}
 
 	function addRecipe(output as IItemStack, input as IIngredient[], energyCost as int) as void {
 		print('Recipe wrapped: mods.enderio.AlloySmelter.addRecipe'~
-			serializeArguments([serialize_IItemStack(output), serializeIngredients1d(input), energyCost]));
+			serialize.args([serialize.IItemStack(output), serialize.IIngredient__(input), energyCost]));
 		mods.enderio.AlloySmelter.addRecipe(output, input, energyCost);
 	}
 
 	function addRecipe(output as IItemStack, input as IIngredient[], energyCost as int, xp as float) as void {
 		print('Recipe wrapped: mods.enderio.AlloySmelter.addRecipe'~
-			serializeArguments([serialize_IItemStack(output), serializeIngredients1d(input), energyCost, xp]));
+			serialize.args([serialize.IItemStack(output), serialize.IIngredient__(input), energyCost, xp]));
 		mods.enderio.AlloySmelter.addRecipe(output, input, energyCost, xp);
 	}
 
 }
-static AlloySmelter as Class_AlloySmelter = Class_AlloySmelter() as Class_AlloySmelter;
+static AlloySmelter as Class_AlloySmelter = Class_AlloySmelter();
 
 //####################################################
-// Uses of this class: 2
+// Uses of this class: 1
 zenClass Class_SagMill { zenConstructor() {}
 
-	// Uses of this method: 2
+	// Uses of this method: 1
 	function addRecipe(output as IItemStack[], chances as float[], input as IIngredient) as void {
 		print('Recipe wrapped: mods.enderio.SagMill.addRecipe'~
-			serializeArguments([serializeIngredients1d(output), serializeArray(chances, "[]"), serialize_IIngredient(input)]));
+			serialize.args([serialize.IItemStack__(output), serialize.string__(chances), serialize.IIngredient(input)]));
 		mods.enderio.SagMill.addRecipe(output, chances, input);
 	}
 
 	function addRecipe(output as IItemStack[], chances as float[], input as IIngredient, bonusType as string) as void {
 		print('Recipe wrapped: mods.enderio.SagMill.addRecipe'~
-			serializeArguments([serializeIngredients1d(output), serializeArray(chances, "[]"), serialize_IIngredient(input), wrapS(bonusType)]));
+			serialize.args([serialize.IItemStack__(output), serialize.string__(chances), serialize.IIngredient(input), serialize._string(bonusType)]));
 		mods.enderio.SagMill.addRecipe(output, chances, input, bonusType);
 	}
 
 	function addRecipe(output as IItemStack[], chances as float[], input as IIngredient, bonusType as string, energyCost as int) as void {
 		print('Recipe wrapped: mods.enderio.SagMill.addRecipe'~
-			serializeArguments([serializeIngredients1d(output), serializeArray(chances, "[]"), serialize_IIngredient(input), wrapS(bonusType), energyCost]));
+			serialize.args([serialize.IItemStack__(output), serialize.string__(chances), serialize.IIngredient(input), serialize._string(bonusType), energyCost]));
 		mods.enderio.SagMill.addRecipe(output, chances, input, bonusType, energyCost);
 	}
 
 	function addRecipe(output as IItemStack[], chances as float[], input as IIngredient, bonusType as string, energyCost as int, xp as float[]) as void {
 		print('Recipe wrapped: mods.enderio.SagMill.addRecipe'~
-			serializeArguments([serializeIngredients1d(output), serializeArray(chances, "[]"), serialize_IIngredient(input), wrapS(bonusType), energyCost, serializeArray(xp, "[]")]));
+			serialize.args([serialize.IItemStack__(output), serialize.string__(chances), serialize.IIngredient(input), serialize._string(bonusType), energyCost, serialize.string__(xp)]));
 		mods.enderio.SagMill.addRecipe(output, chances, input, bonusType, energyCost, xp);
 	}
 
 }
-static SagMill as Class_SagMill = Class_SagMill() as Class_SagMill;
+static SagMill as Class_SagMill = Class_SagMill();

@@ -38,8 +38,8 @@ var slimeDirts as IItemStack[][IItemStack] = {
 
 for slime, dirts in slimeDirts {
 	for dirt in dirts {
-		mods.thermalexpansion.Centrifuge.addRecipe([slime % 50, <minecraft:dirt>], dirt, null, 4000);
-		mods.forestry.Centrifuge.addRecipe([slime % 25, <minecraft:dirt>], dirt, 100);
+		scripts.wrap.thermalexpansion.Centrifuge.addRecipe([slime % 50, <minecraft:dirt>], dirt, null, 4000);
+		scripts.wrap.forestry.Centrifuge.addRecipe([slime % 25, <minecraft:dirt>], dirt, 100);
 	}
 }
 

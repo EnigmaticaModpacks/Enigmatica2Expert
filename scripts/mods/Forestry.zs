@@ -184,7 +184,7 @@ rh(<forestry:climatiser:4>);
 
 # Buff Pulsating mesh output
 mods.forestry.Carpenter.removeRecipe(<minecraft:ender_pearl>);
-mods.forestry.Carpenter.addRecipe(<actuallyadditions:block_misc:6> * 4, 
+scripts.wrap.forestry.Carpenter.addRecipe(<actuallyadditions:block_misc:6> * 4, 
 	Grid(["AA","AA"], {A:<forestry:crafting_material:1>}).shaped(), 60);
 
 # Buff propolis to slime (was 1 poor slime ball)
@@ -207,7 +207,7 @@ craft.remake(<tconstruct:nuggets:3> * 3, ["pretty",
 
 function reprocessComb(comb as IItemStack, outputs as WeightedItemStack[]) as void {
 	mods.forestry.Centrifuge.removeRecipe(comb);
-	mods.forestry.Centrifuge.addRecipe(outputs, comb, 60);
+	scripts.wrap.forestry.Centrifuge.addRecipe(outputs, comb, 60);
 
 	if(!comb.matches(<forestry:bee_combs:9>))
 		mods.thermalexpansion.Centrifuge.removeRecipe(comb);

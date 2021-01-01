@@ -1,8 +1,6 @@
 const replace = require('replace-in-file')
-var RegexEscape = require("regex-escape")
 const fs = require('fs')
 const path = require('path')
-const { set } = require('numeral')
 const _ = require('lodash')
 
 //##############################################################
@@ -17,42 +15,42 @@ const _ = require('lodash')
 
 
 const typeSerialize = [
-  ['CTAspectStack'       , 'serialize_CTAspectStack($1)'     ],
-  ['CTAspectStack[]'     , 'serialize_CTAspectStack_1d($1)'  ],
-  ['IBlock'              , 'serialize_IBlock($1)'            ],
-  ['IGasStack'           , 'serializeGas($1)'                ],
-  ['IIngredient'         , 'serialize_IIngredient($1)'       ],
-  ['IIngredient[]'       , 'serializeIngredients1d($1)'      ],
-  ['IIngredient[][]'     , 'serializeIngredients2d($1)'      ],
-  ['IItemStack'          , 'serialize_IItemStack($1)'        ],
-  ['IItemStack[]'        , 'serializeIngredients1d($1)'      ],
-  ['IItemStack[][]'      , 'serializeIngredients2d($1)'      ],
-  ['ILiquidDefinition'   , 'serializeFluidDefinition($1)'    ],
-  ['ILiquidStack'        , 'serializeFluid($1)'              ],
-  ['ILiquidStack[]'      , 'serializeFluids1d($1)'           ],
-  ['IOreDictEntry'       , 'serialize_IOreDictEntry($1)'     ],
-  ['string'              , 'wrapS($1)'                       ],
-  ['string[]'            , 'serializeString1d($1)'           ],
-  ['WeightedItemStack'   , 'serializeWeightedItemStack($1)'  ],
-  ['WeightedItemStack[]' , 'serializeWeightedItemStack1d($1)'],
+  ['string'             , 'serialize._string($1)'            ],
+  ['string[]'           , 'serialize.string__($1)'           ],
+  ['CTAspectStack'      , 'serialize.CTAspectStack($1)'      ],
+  ['CTAspectStack[]'    , 'serialize.CTAspectStack__($1)'    ],
+  ['IBlock'             , 'serialize.IBlock($1)'             ],
+  ['IGasStack'          , 'serialize.IGasStack($1)'          ],
+  ['IIngredient'        , 'serialize.IIngredient($1)'        ],
+  ['IIngredient[]'      , 'serialize.IIngredient__($1)'      ],
+  ['IIngredient[][]'    , 'serialize.IIngredient____($1)'    ],
+  ['IItemStack'         , 'serialize.IItemStack($1)'         ],
+  ['IItemStack[]'       , 'serialize.IItemStack__($1)'       ],
+  ['IItemStack[][]'     , 'serialize.IItemStack____($1)'     ],
+  ['ILiquidDefinition'  , 'serialize.ILiquidDefinition($1)'  ],
+  ['ILiquidStack'       , 'serialize.ILiquidStack($1)'       ],
+  ['ILiquidStack[]'     , 'serialize.ILiquidStack__($1)'     ],
+  ['IOreDictEntry'      , 'serialize.IOreDictEntry($1)'      ],
+  ['WeightedItemStack'  , 'serialize.WeightedItemStack($1)'  ],
+  ['WeightedItemStack[]', 'serialize.WeightedItemStack__($1)'],
 
-  ['int'    , '$1'                                           ],
-  ['bool'   , '$1'                                           ],
-  ['short'  , '$1'                                           ],
-  ['long'   , '$1'                                           ],
-  ['float'  , '$1'                                           ],
-  ['double' , '$1'                                           ],
-  ['byte'   , '$1'                                           ],
-  ['boolean', '$1'                                           ],
+  ['int'    , '$1'],
+  ['bool'   , '$1'],
+  ['short'  , '$1'],
+  ['long'   , '$1'],
+  ['float'  , '$1'],
+  ['double' , '$1'],
+  ['byte'   , '$1'],
+  ['boolean', '$1'],
 
-  ['int[]'    , 'serializeArray($1, "[]")'                   ],
-  ['bool[]'   , 'serializeArray($1, "[]")'                   ],
-  ['short[]'  , 'serializeArray($1, "[]")'                   ],
-  ['long[]'   , 'serializeArray($1, "[]")'                   ],
-  ['float[]'  , 'serializeArray($1, "[]")'                   ],
-  ['double[]' , 'serializeArray($1, "[]")'                   ],
-  ['byte[]'   , 'serializeArray($1, "[]")'                   ],
-  ['boolean[]', 'serializeArray($1, "[]")'                   ],
+  ['int[]'    , 'serialize.string__($1)'],
+  ['bool[]'   , 'serialize.string__($1)'],
+  ['short[]'  , 'serialize.string__($1)'],
+  ['long[]'   , 'serialize.string__($1)'],
+  ['float[]'  , 'serialize.string__($1)'],
+  ['double[]' , 'serialize.string__($1)'],
+  ['byte[]'   , 'serialize.string__($1)'],
+  ['boolean[]', 'serialize.string__($1)'],
 ]
 
 const typesAliases = [
@@ -101,7 +99,7 @@ const signatureStrings = loadText('_functions.java')
   .split('\n')
   .filter(l=>l.trim())
 
-console.log('Loaded signatures: ', signatureStrings.length);
+console.log('Loaded signatures: ', signatureStrings.length)
 
 const signatures = signatureStrings.map(s=>{
   const m = s.match(/^mods\.(?<mod>\w+)\.(?<class>\w+(\.\w+)?)\.(?<method>\w+)\((?<args>.*)\)$/)
@@ -195,7 +193,7 @@ signatures.forEach(sig => {
   })
   pushFunction(sig.args.slice(argFrom))
 })
-console.log('Parsed functions: ', functionsCount, ' Including overloaded: ', overloadCount);
+console.log('Parsed functions: ', functionsCount, ' Including overloaded: ', overloadCount)
 
 
 //------------------------------------------------------------------
@@ -203,12 +201,12 @@ console.log('Parsed functions: ', functionsCount, ' Including overloaded: ', ove
 // and replace them with scripts.wrap.
 //------------------------------------------------------------------
 let rgx =
-  `^(?<before>[ 	]*(?!\/\/+|#+)[ 	]*(import )?)`+
-  `(?<namespace>mods|scripts\.wrap)`+
-  `\.(?<mod>${   [...   rgx_mod].join('|')})`+
-  `\.(?<class>${ [... rgx_class].join('|')})`+
-  `\.(?<method>${[...rgx_method].join('|')})`+
-  `(?<after>[ 	\n]*[(;])`
+  '^(?<before>[ 	]*(?!//+|#+)[ 	]*(import )?)'+
+  '(?<namespace>mods|scripts.wrap)'+
+  `.(?<mod>${   [...   rgx_mod].join('|')})`+
+  `.(?<class>${ [... rgx_class].join('|')})`+
+  `.(?<method>${[...rgx_method].join('|')})`+
+  '(?<after>[ 	\n]*[(;])'
 const replaceRegexp = new RegExp(rgx, 'gm')
 // console.log('Replace Regexp: ', replaceRegexp.source);
 // let rgx = /^[ 	]*(?!\/\/+|#+)[ 	]*(import )?mods\.(?!jei|jaopca|ctutils|zentoolforge|mekatweaker|artisanworktables)\w+(\.(?!remove\w*)\w+){1,}[ 	]*[(;]/gm
@@ -241,19 +239,19 @@ const options = {
 
 
 try {
-  const results = replace.sync(options);
+  const results = replace.sync(options)
   // console.log('Replacement results:', results);
   const changedFiles = results
     .filter(result => result.hasChanged)
-    .map(result => result.numReplacements + ' ' + result.file);
+    .map(result => result.numReplacements + ' ' + result.file)
 
   // console.log('changedFiles :>> ', changedFiles);
 }
 catch (error) {
-  console.error('Error occurred:', error);
+  console.error('Error occurred:', error)
 }
 
-console.log('Total replaces: ', totalReplaced);
+console.log('Total replaces: ', totalReplaced)
 
 
 //------------------------------------------------------------------
@@ -310,12 +308,12 @@ for (const [modName, txt] of Object.entries(fileContent)) {
   saveText(txt, `${modName}.zs`)
   rewrittenFiles++
 }
-console.log('Rewritten wrap files :>> ', rewrittenFiles);
+console.log('Rewritten wrap files :>> ', rewrittenFiles)
 
-console.log('Functions used :>>\n----------------------');
+console.log('Functions used :>>\n----------------------')
 functionsSet.forEach(s=>{
   let method = signatures.find(g=>new RegExp(`${g.mod}.${g.class}.${g.method}`).test(s))
 
   console.log(method.source)
 })
-console.log('----------------------');
+console.log('----------------------')

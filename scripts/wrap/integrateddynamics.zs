@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded integrateddynamics
-// Uses of this mod: 12
+// Uses of this mod: 10
 
 
 //####################################################
@@ -25,36 +25,36 @@ zenClass Class_DryingBasin { zenConstructor() {}
 	// Uses of this method: 2
 	function addRecipe(inputStack as IItemStack) as void {
 		print('Recipe wrapped: mods.integrateddynamics.DryingBasin.addRecipe'~
-			serializeArguments([serialize_IItemStack(inputStack)]));
+			serialize.args([serialize.IItemStack(inputStack)]));
 		mods.integrateddynamics.DryingBasin.addRecipe(inputStack);
 	}
 
 	function addRecipe(inputStack as IItemStack, inputFluid as ILiquidStack) as void {
 		print('Recipe wrapped: mods.integrateddynamics.DryingBasin.addRecipe'~
-			serializeArguments([serialize_IItemStack(inputStack), serializeFluid(inputFluid)]));
+			serialize.args([serialize.IItemStack(inputStack), serialize.ILiquidStack(inputFluid)]));
 		mods.integrateddynamics.DryingBasin.addRecipe(inputStack, inputFluid);
 	}
 
 	function addRecipe(inputStack as IItemStack, inputFluid as ILiquidStack, outputStack as IItemStack) as void {
 		print('Recipe wrapped: mods.integrateddynamics.DryingBasin.addRecipe'~
-			serializeArguments([serialize_IItemStack(inputStack), serializeFluid(inputFluid), serialize_IItemStack(outputStack)]));
+			serialize.args([serialize.IItemStack(inputStack), serialize.ILiquidStack(inputFluid), serialize.IItemStack(outputStack)]));
 		mods.integrateddynamics.DryingBasin.addRecipe(inputStack, inputFluid, outputStack);
 	}
 
 	function addRecipe(inputStack as IItemStack, inputFluid as ILiquidStack, outputStack as IItemStack, outputFluid as ILiquidStack) as void {
 		print('Recipe wrapped: mods.integrateddynamics.DryingBasin.addRecipe'~
-			serializeArguments([serialize_IItemStack(inputStack), serializeFluid(inputFluid), serialize_IItemStack(outputStack), serializeFluid(outputFluid)]));
+			serialize.args([serialize.IItemStack(inputStack), serialize.ILiquidStack(inputFluid), serialize.IItemStack(outputStack), serialize.ILiquidStack(outputFluid)]));
 		mods.integrateddynamics.DryingBasin.addRecipe(inputStack, inputFluid, outputStack, outputFluid);
 	}
 
 	function addRecipe(inputStack as IItemStack, inputFluid as ILiquidStack, outputStack as IItemStack, outputFluid as ILiquidStack, duration as int) as void {
 		print('Recipe wrapped: mods.integrateddynamics.DryingBasin.addRecipe'~
-			serializeArguments([serialize_IItemStack(inputStack), serializeFluid(inputFluid), serialize_IItemStack(outputStack), serializeFluid(outputFluid), duration]));
+			serialize.args([serialize.IItemStack(inputStack), serialize.ILiquidStack(inputFluid), serialize.IItemStack(outputStack), serialize.ILiquidStack(outputFluid), duration]));
 		mods.integrateddynamics.DryingBasin.addRecipe(inputStack, inputFluid, outputStack, outputFluid, duration);
 	}
 
 }
-static DryingBasin as Class_DryingBasin = Class_DryingBasin() as Class_DryingBasin;
+static DryingBasin as Class_DryingBasin = Class_DryingBasin();
 
 //####################################################
 // Uses of this class: 2
@@ -63,73 +63,73 @@ zenClass Class_MechanicalDryingBasin { zenConstructor() {}
 	// Uses of this method: 2
 	function addRecipe(inputStack as IItemStack) as void {
 		print('Recipe wrapped: mods.integrateddynamics.MechanicalDryingBasin.addRecipe'~
-			serializeArguments([serialize_IItemStack(inputStack)]));
+			serialize.args([serialize.IItemStack(inputStack)]));
 		mods.integrateddynamics.MechanicalDryingBasin.addRecipe(inputStack);
 	}
 
 	function addRecipe(inputStack as IItemStack, inputFluid as ILiquidStack) as void {
 		print('Recipe wrapped: mods.integrateddynamics.MechanicalDryingBasin.addRecipe'~
-			serializeArguments([serialize_IItemStack(inputStack), serializeFluid(inputFluid)]));
+			serialize.args([serialize.IItemStack(inputStack), serialize.ILiquidStack(inputFluid)]));
 		mods.integrateddynamics.MechanicalDryingBasin.addRecipe(inputStack, inputFluid);
 	}
 
 	function addRecipe(inputStack as IItemStack, inputFluid as ILiquidStack, outputStack as IItemStack) as void {
 		print('Recipe wrapped: mods.integrateddynamics.MechanicalDryingBasin.addRecipe'~
-			serializeArguments([serialize_IItemStack(inputStack), serializeFluid(inputFluid), serialize_IItemStack(outputStack)]));
+			serialize.args([serialize.IItemStack(inputStack), serialize.ILiquidStack(inputFluid), serialize.IItemStack(outputStack)]));
 		mods.integrateddynamics.MechanicalDryingBasin.addRecipe(inputStack, inputFluid, outputStack);
 	}
 
 	function addRecipe(inputStack as IItemStack, inputFluid as ILiquidStack, outputStack as IItemStack, outputFluid as ILiquidStack) as void {
 		print('Recipe wrapped: mods.integrateddynamics.MechanicalDryingBasin.addRecipe'~
-			serializeArguments([serialize_IItemStack(inputStack), serializeFluid(inputFluid), serialize_IItemStack(outputStack), serializeFluid(outputFluid)]));
+			serialize.args([serialize.IItemStack(inputStack), serialize.ILiquidStack(inputFluid), serialize.IItemStack(outputStack), serialize.ILiquidStack(outputFluid)]));
 		mods.integrateddynamics.MechanicalDryingBasin.addRecipe(inputStack, inputFluid, outputStack, outputFluid);
 	}
 
 	function addRecipe(inputStack as IItemStack, inputFluid as ILiquidStack, outputStack as IItemStack, outputFluid as ILiquidStack, duration as int) as void {
 		print('Recipe wrapped: mods.integrateddynamics.MechanicalDryingBasin.addRecipe'~
-			serializeArguments([serialize_IItemStack(inputStack), serializeFluid(inputFluid), serialize_IItemStack(outputStack), serializeFluid(outputFluid), duration]));
+			serialize.args([serialize.IItemStack(inputStack), serialize.ILiquidStack(inputFluid), serialize.IItemStack(outputStack), serialize.ILiquidStack(outputFluid), duration]));
 		mods.integrateddynamics.MechanicalDryingBasin.addRecipe(inputStack, inputFluid, outputStack, outputFluid, duration);
 	}
 
 }
-static MechanicalDryingBasin as Class_MechanicalDryingBasin = Class_MechanicalDryingBasin() as Class_MechanicalDryingBasin;
+static MechanicalDryingBasin as Class_MechanicalDryingBasin = Class_MechanicalDryingBasin();
 
 //####################################################
-// Uses of this class: 4
+// Uses of this class: 3
 zenClass Class_MechanicalSqueezer { zenConstructor() {}
 
-	// Uses of this method: 4
+	// Uses of this method: 3
 	function addRecipe(arg0 as IItemStack, arg1 as IItemStack, arg2 as float, arg3 as IItemStack, arg4 as float, arg5 as ILiquidStack) as void {
 		print('Recipe wrapped: mods.integrateddynamics.MechanicalSqueezer.addRecipe'~
-			serializeArguments([serialize_IItemStack(arg0), serialize_IItemStack(arg1), arg2, serialize_IItemStack(arg3), arg4, serializeFluid(arg5)]));
+			serialize.args([serialize.IItemStack(arg0), serialize.IItemStack(arg1), arg2, serialize.IItemStack(arg3), arg4, serialize.ILiquidStack(arg5)]));
 		mods.integrateddynamics.MechanicalSqueezer.addRecipe(arg0, arg1, arg2, arg3, arg4, arg5);
 	}
 
 	function addRecipe(arg0 as IItemStack, arg1 as IItemStack, arg2 as float, arg3 as IItemStack, arg4 as float, arg5 as IItemStack, arg6 as float, arg7 as ILiquidStack) as void {
 		print('Recipe wrapped: mods.integrateddynamics.MechanicalSqueezer.addRecipe'~
-			serializeArguments([serialize_IItemStack(arg0), serialize_IItemStack(arg1), arg2, serialize_IItemStack(arg3), arg4, serialize_IItemStack(arg5), arg6, serializeFluid(arg7)]));
+			serialize.args([serialize.IItemStack(arg0), serialize.IItemStack(arg1), arg2, serialize.IItemStack(arg3), arg4, serialize.IItemStack(arg5), arg6, serialize.ILiquidStack(arg7)]));
 		mods.integrateddynamics.MechanicalSqueezer.addRecipe(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
 	}
 
 }
-static MechanicalSqueezer as Class_MechanicalSqueezer = Class_MechanicalSqueezer() as Class_MechanicalSqueezer;
+static MechanicalSqueezer as Class_MechanicalSqueezer = Class_MechanicalSqueezer();
 
 //####################################################
-// Uses of this class: 4
+// Uses of this class: 3
 zenClass Class_Squeezer { zenConstructor() {}
 
-	// Uses of this method: 4
+	// Uses of this method: 3
 	function addRecipe(arg0 as IItemStack, arg1 as IItemStack, arg2 as float, arg3 as IItemStack, arg4 as float, arg5 as ILiquidStack) as void {
 		print('Recipe wrapped: mods.integrateddynamics.Squeezer.addRecipe'~
-			serializeArguments([serialize_IItemStack(arg0), serialize_IItemStack(arg1), arg2, serialize_IItemStack(arg3), arg4, serializeFluid(arg5)]));
+			serialize.args([serialize.IItemStack(arg0), serialize.IItemStack(arg1), arg2, serialize.IItemStack(arg3), arg4, serialize.ILiquidStack(arg5)]));
 		mods.integrateddynamics.Squeezer.addRecipe(arg0, arg1, arg2, arg3, arg4, arg5);
 	}
 
 	function addRecipe(arg0 as IItemStack, arg1 as IItemStack, arg2 as float, arg3 as IItemStack, arg4 as float, arg5 as IItemStack, arg6 as float, arg7 as ILiquidStack) as void {
 		print('Recipe wrapped: mods.integrateddynamics.Squeezer.addRecipe'~
-			serializeArguments([serialize_IItemStack(arg0), serialize_IItemStack(arg1), arg2, serialize_IItemStack(arg3), arg4, serialize_IItemStack(arg5), arg6, serializeFluid(arg7)]));
+			serialize.args([serialize.IItemStack(arg0), serialize.IItemStack(arg1), arg2, serialize.IItemStack(arg3), arg4, serialize.IItemStack(arg5), arg6, serialize.ILiquidStack(arg7)]));
 		mods.integrateddynamics.Squeezer.addRecipe(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
 	}
 
 }
-static Squeezer as Class_Squeezer = Class_Squeezer() as Class_Squeezer;
+static Squeezer as Class_Squeezer = Class_Squeezer();

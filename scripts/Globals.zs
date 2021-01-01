@@ -6,7 +6,7 @@ import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.data.IData;
 import mods.jei.JEI.removeAndHide as rh;
 
-#priority 3005
+#priority 5000
 
 global DEBUG as bool = true;
 

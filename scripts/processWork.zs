@@ -445,7 +445,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       }
 
       for ii in inputIngr0.itemArray {
-        mods.forestry.Centrifuge.addRecipe(chancedCombined, ii, 200);
+        scripts.wrap.forestry.Centrifuge.addRecipe(chancedCombined, ii, 200);
       }
       return machineName;
     }

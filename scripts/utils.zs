@@ -1,4 +1,4 @@
-#priority 2010
+#priority 4000
 
 import crafttweaker.data.IData;
 import crafttweaker.item.IIngredient;

@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded tconstruct
-// Uses of this mod: 75
+// Uses of this mod: 76
 
 
 //####################################################
@@ -25,73 +25,73 @@ zenClass Class_Alloy { zenConstructor() {}
 	// Uses of this method: 10
 	function addRecipe(output as ILiquidStack, inputs as ILiquidStack[]) as void {
 		print('Recipe wrapped: mods.tconstruct.Alloy.addRecipe'~
-			serializeArguments([serializeFluid(output), serializeFluids1d(inputs)]));
+			serialize.args([serialize.ILiquidStack(output), serialize.ILiquidStack__(inputs)]));
 		mods.tconstruct.Alloy.addRecipe(output, inputs);
 	}
 
 }
-static Alloy as Class_Alloy = Class_Alloy() as Class_Alloy;
+static Alloy as Class_Alloy = Class_Alloy();
 
 //####################################################
-// Uses of this class: 31
+// Uses of this class: 33
 zenClass Class_Casting { zenConstructor() {}
 
 	// Uses of this method: 22
 	function addTableRecipe(output as IItemStack, cast as IIngredient, fluid as ILiquidStack, amount as int) as void {
 		print('Recipe wrapped: mods.tconstruct.Casting.addTableRecipe'~
-			serializeArguments([serialize_IItemStack(output), serialize_IIngredient(cast), serializeFluid(fluid), amount]));
+			serialize.args([serialize.IItemStack(output), serialize.IIngredient(cast), serialize.ILiquidStack(fluid), amount]));
 		mods.tconstruct.Casting.addTableRecipe(output, cast, fluid, amount);
 	}
 
 	function addTableRecipe(output as IItemStack, cast as IIngredient, fluid as ILiquidStack, amount as int, consumeCast as bool) as void {
 		print('Recipe wrapped: mods.tconstruct.Casting.addTableRecipe'~
-			serializeArguments([serialize_IItemStack(output), serialize_IIngredient(cast), serializeFluid(fluid), amount, consumeCast]));
+			serialize.args([serialize.IItemStack(output), serialize.IIngredient(cast), serialize.ILiquidStack(fluid), amount, consumeCast]));
 		mods.tconstruct.Casting.addTableRecipe(output, cast, fluid, amount, consumeCast);
 	}
 
 	function addTableRecipe(output as IItemStack, cast as IIngredient, fluid as ILiquidStack, amount as int, consumeCast as bool, time as int) as void {
 		print('Recipe wrapped: mods.tconstruct.Casting.addTableRecipe'~
-			serializeArguments([serialize_IItemStack(output), serialize_IIngredient(cast), serializeFluid(fluid), amount, consumeCast, time]));
+			serialize.args([serialize.IItemStack(output), serialize.IIngredient(cast), serialize.ILiquidStack(fluid), amount, consumeCast, time]));
 		mods.tconstruct.Casting.addTableRecipe(output, cast, fluid, amount, consumeCast, time);
 	}
 
 	function addBasinRecipe(output as IItemStack, cast as IIngredient, fluid as ILiquidStack, amount as int) as void {
 		print('Recipe wrapped: mods.tconstruct.Casting.addBasinRecipe'~
-			serializeArguments([serialize_IItemStack(output), serialize_IIngredient(cast), serializeFluid(fluid), amount]));
+			serialize.args([serialize.IItemStack(output), serialize.IIngredient(cast), serialize.ILiquidStack(fluid), amount]));
 		mods.tconstruct.Casting.addBasinRecipe(output, cast, fluid, amount);
 	}
 
 	function addBasinRecipe(output as IItemStack, cast as IIngredient, fluid as ILiquidStack, amount as int, consumeCast as bool) as void {
 		print('Recipe wrapped: mods.tconstruct.Casting.addBasinRecipe'~
-			serializeArguments([serialize_IItemStack(output), serialize_IIngredient(cast), serializeFluid(fluid), amount, consumeCast]));
+			serialize.args([serialize.IItemStack(output), serialize.IIngredient(cast), serialize.ILiquidStack(fluid), amount, consumeCast]));
 		mods.tconstruct.Casting.addBasinRecipe(output, cast, fluid, amount, consumeCast);
 	}
 
 	function addBasinRecipe(output as IItemStack, cast as IIngredient, fluid as ILiquidStack, amount as int, consumeCast as bool, time as int) as void {
 		print('Recipe wrapped: mods.tconstruct.Casting.addBasinRecipe'~
-			serializeArguments([serialize_IItemStack(output), serialize_IIngredient(cast), serializeFluid(fluid), amount, consumeCast, time]));
+			serialize.args([serialize.IItemStack(output), serialize.IIngredient(cast), serialize.ILiquidStack(fluid), amount, consumeCast, time]));
 		mods.tconstruct.Casting.addBasinRecipe(output, cast, fluid, amount, consumeCast, time);
 	}
 
 }
-static Casting as Class_Casting = Class_Casting() as Class_Casting;
+static Casting as Class_Casting = Class_Casting();
 
 //####################################################
-// Uses of this class: 34
+// Uses of this class: 33
 zenClass Class_Melting { zenConstructor() {}
 
-	// Uses of this method: 34
+	// Uses of this method: 33
 	function addRecipe(output as ILiquidStack, input as IIngredient) as void {
 		print('Recipe wrapped: mods.tconstruct.Melting.addRecipe'~
-			serializeArguments([serializeFluid(output), serialize_IIngredient(input)]));
+			serialize.args([serialize.ILiquidStack(output), serialize.IIngredient(input)]));
 		mods.tconstruct.Melting.addRecipe(output, input);
 	}
 
 	function addRecipe(output as ILiquidStack, input as IIngredient, temp as int) as void {
 		print('Recipe wrapped: mods.tconstruct.Melting.addRecipe'~
-			serializeArguments([serializeFluid(output), serialize_IIngredient(input), temp]));
+			serialize.args([serialize.ILiquidStack(output), serialize.IIngredient(input), temp]));
 		mods.tconstruct.Melting.addRecipe(output, input, temp);
 	}
 
 }
-static Melting as Class_Melting = Class_Melting() as Class_Melting;
+static Melting as Class_Melting = Class_Melting();
