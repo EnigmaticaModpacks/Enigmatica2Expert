@@ -25,9 +25,9 @@ Icon | Summary
 <img src="https://media.forgecdn.net/avatars/thumbnails/14/190/256/256/635588122347757413.png" width="50"> | **`CoFH Core`** <br> Contains Core Functionality for all Team CoFH mods. Also does some really cool stuff on its own!
 <img src="https://media.forgecdn.net/avatars/thumbnails/12/80/256/256/635515125983340028.png" width="50"> | **`Extra Utilities`** <br> Just a bunch of useful things
 <img src="https://media.forgecdn.net/avatars/thumbnails/21/825/256/256/635733177880067480.png" width="50"> | **`McJtyLib`** <br> Companion mod for all mods by McJty (RFTools, Deep Resonance)
+<img src="https://media.forgecdn.net/avatars/thumbnails/19/498/256/256/635696278186178221_animated.gif" width="50"> | **`Applied Energistics 2`** <br> A Mod about Matter, Energy and using them to conquer the world..
 <img src="https://media.forgecdn.net/avatars/thumbnails/20/135/256/256/635707329671959611.png" width="50"> | **`Immersive Engineering`** <br> A retro-futuristic tech mod!
 <img src="https://media.forgecdn.net/avatars/thumbnails/47/527/256/256/636066936394500688.png" width="50"> | **`AppleSkin`** <br> Adds some useful information about food/hunger to the HUD
-<img src="https://media.forgecdn.net/avatars/thumbnails/19/498/256/256/635696278186178221_animated.gif" width="50"> | **`Applied Energistics 2`** <br> A Mod about Matter, Energy and using them to conquer the world..
 <img src="https://media.forgecdn.net/avatars/thumbnails/36/121/256/256/635934545550873146.jpeg" width="50"> | **`CodeChicken Lib 1.8.+`** <br> Contains various tools to make modding easier.
 <img src="https://media.forgecdn.net/avatars/thumbnails/8/22/256/256/635395662875748995.png" width="50"> | **`Pam's HarvestCraft`** <br> A farming mod that adds 60+ new crops, 36 new fruit trees, 17 new fish, simple beekeeping, and over 1100 new foods and items!
 <img src="https://media-cdn.overwolf.wtf/avatars/thumbnails/49/546/256/256/636079312327917356.png" width="50"> | **`AutoRegLib`** <br> A library to ease menial tasks in mod development.
@@ -79,11 +79,11 @@ Icon | Summary
 <img src="https://media.forgecdn.net/avatars/thumbnails/97/398/256/256/636291511517013564.png" width="50"> | **`Industrial Foregoing`** <br> A collection of machines to make your minecraft builds easier to automate
 <img src="https://media.forgecdn.net/avatars/thumbnails/169/286/256/256/636714350437863347.png" width="50"> | **`Mystical Agriculture`** <br> Adds resource crops for more than 150+ vanilla & modded materials!
 <img src="https://media.forgecdn.net/avatars/thumbnails/143/405/256/256/636549215976380264.png" width="50"> | **`FastWorkbench`** <br> A performance upgrade for the crafting table.
+<img src="https://media.forgecdn.net/avatars/thumbnails/46/11/256/256/636049798213511997.png" width="50"> | **`ZeroCore 2`** <br> Utility mod and multiblock API
 <img src="https://media.forgecdn.net/avatars/thumbnails/34/578/256/256/635911945662974667.png" width="50"> | **`KleeSlabs`** <br> Break only the half of a double slab that you're looking at.
 <img src="https://media.forgecdn.net/avatars/thumbnails/9/951/256/256/635442866020755480.jpeg" width="50"> | **`Thaumcraft`** <br> Thaumaturgy is the capability of a magician to work miracles. This is what this mod is all about - drawing magic from physical objects in the form of Essentia and reshaping it to perform miracles.
-<img src="https://media.forgecdn.net/avatars/thumbnails/46/11/256/256/636049798213511997.png" width="50"> | **`ZeroCore 2`** <br> Utility mod and multiblock API
-<img src="https://media.forgecdn.net/avatars/thumbnails/54/431/256/256/636135121624567839.png" width="50"> | **`WanionLib`** <br> Shared code library used by (not)all WanionCane mods!
 <img src="https://media.forgecdn.net/avatars/thumbnails/310/376/256/256/637398551210975973.png" width="50"> | **`Extreme Reactors 2`** <br> This is a port of the Big Reactors mod by Erogenous Beef to the current Minecraft versions 
+<img src="https://media.forgecdn.net/avatars/thumbnails/54/431/256/256/636135121624567839.png" width="50"> | **`WanionLib`** <br> Shared code library used by (not)all WanionCane mods!
 <img src="https://media.forgecdn.net/avatars/thumbnails/29/326/256/256/635843253254829591.png" width="50"> | **`Neat`** <br> Minimalistic Functional Unit Frames for the modern Minecrafter
 <img src="https://media.forgecdn.net/avatars/thumbnails/14/892/256/256/635608427047323265.jpeg" width="50"> | **`BiblioCraft`** <br> Bookcases, armor stands, shelves and so much more!
 <img src="https://media.forgecdn.net/avatars/thumbnails/89/38/256/256/636229039734109684.png" width="50"> | **`XNet`** <br> XNet is a highly optimized networking cable system for items, energy, fluids, information, ...
