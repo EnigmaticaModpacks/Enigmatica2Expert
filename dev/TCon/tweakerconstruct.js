@@ -31,7 +31,7 @@ const {transpose, injectInFile, begin, end} = require(paths.utils)
 
 
 // Format big numbers
-begin('Loading files .')
+begin('  Loading configs .')
 let cfg = fs.readFileSync(paths.default_config, 'utf8')
 begin('.')
 let currentCfg = fs.readFileSync(paths.tweakerconstruct_cfg, 'utf8')
@@ -91,8 +91,8 @@ function injectToEquipments(list, varName) {
   injectInFile(
     paths.equipGenration_zs,
     `static ${varName} as IData = [\n`,
-    listStr,
-    '\n] as IData;'
+    '\n] as IData;',
+    listStr
   )
 }
 
@@ -115,8 +115,8 @@ function injectOreDicts(list) {
 `# ------------------------------------------------
 # Mining level Sharpening Kits
 # generated automatically with tweakerconstruct.zs\n`,
-		listStr,
-    '# ------------------------------------------------'
+    '# ------------------------------------------------',
+		listStr
   )
 }
 
@@ -191,7 +191,7 @@ function parseStats(tweakGroup, tweakObj) {
 }
 
 async function start() {
-	begin('Parsing csv ')
+	begin('  Parsing csv ')
 	for(const filePath of glob.sync('dev/TCon/tweaks/*.csv')) {
 		begin('.')
 		const fileName = path.basename(filePath).split('.').slice(0, -1).join('.')
@@ -204,7 +204,7 @@ async function start() {
 	}
 	end()
 
-	begin('Saving files .')
+	begin('  Saving files .')
   fs.writeFileSync(paths.tweakerconstruct_cfg, currentCfg)
 	begin('.')
 	fs.writeFileSync(paths.bigTable, formattedTable)
@@ -218,3 +218,41 @@ async function start() {
 	}
 }
 start()
+
+
+/*
+
+## Unused TC traits
+
+-----------
+
+- [x] darktraveler  | Surrounding mobs get randomly afflicted with damage.
+- [x] hailhydra     | Random explosions plague your enemies. Also, when you are attacked, there is a chance to get Absorption.
+- [x] hearts        | The higher your health, the more damage you do.
+- [x] heavy_metal   | Increased knockback + Slowness on target.
+- [x] illuminati    | While the tool is in your hand, nearby entities (that do not hold a tool with this trait) glow, and you become invisible.
+- [x] morganlefay   | Bonus magic damage (ranging from 0.0 to 5.0; Gaussian distributed) is afflicted (it is absolute).
+- [x] rudeawakening | Damage pierces armor (mobs only).
+- [x] spades        | The lower your health, the more damage you do.
+- [x] starfishy     | Press the "set portal" key (default "N") to set a virtual portal on the block you are pointing at. If you are on the brink of death, you have %d enori crystals to spare, and the portal has enough space above, then the crystals are consumed, you are teleported to the virtual portal, and you are spared. (The tool must be in your hand.)
+- [x] thundering    | Summon a thunderbolt on impact.
+- [x] unnamed       | Bonus damage accrued for each entity of the same type as the target close to it.
+- [x] vindictive    | Bonus damage to players, and you gain some health by attacking.
+- [x] blindbandit   | A mob called the "Blind Bandit" will sometimes be summoned for a limited time after you attack or are attacked. She will attack hostile mobs, and will also attack those who dare attack her (except you), piercing armor on mobs.
+- [x] botanical2    | 
+- [x] barrett       | ❌ As health decreases, there is an increasing chance of a critical hit.
+- [x] divineshield  | ❌ While this tool is in your hand, you are granted fire resistance. Also, damage is reduced, but at a durability cost.
+- [x] dprk          | ❌ When attacking or defending, Supreme Leaders will spawn, exploding on opponents in the same manner as a creeper.
+- [x] ghastly       | ❌ If the holder is attacked while sneaking, the attacker is inflicted with Slowness.
+- [x] ignoble       | ❌ As one takes damage, one starts to harbor feelings of ignoble jealousy as the offender is killed. When this trait is enabled, those feelings are vented when attacking while sneaking.
+- [x] jaded         | ❌ Mobs attacked with this tool have their ability to heal temporarily hindered.
+- [x] mystical_fire | ❌ Sets the target on fire, and damages the target with magic for a certain amount of time.
+- [x] naphtha       | ❌ Arrows (and bolts) burn the target on impact.
+- [x] trash         | ❌ Random stuff is slowly generated when the tool is selected, but the tool is damaged slowly in this way.
+
+❌ - Could not find trait
+
+barrett|divineshield|dprk|ghastly|ignoble|jaded|mystical_fire|naphtha|trash
+
+
+*/
