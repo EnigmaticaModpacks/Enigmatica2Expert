@@ -645,6 +645,17 @@
 "Thaumcraft","thaumcraft:turretadvanced","EntityTurretCrossbowAdvanced",17
 "Thaumcraft","thaumcraft:turretbasic","EntityTurretCrossbow",16
 "Thaumcraft","thaumcraft:wisp","EntityWisp",26
+"Thaumic Augmentation","thaumicaugmentation:autocaster","EntityAutocaster",4
+"Thaumic Augmentation","thaumicaugmentation:autocaster_eldritch","EntityAutocasterEldritch",5
+"Thaumic Augmentation","thaumicaugmentation:dimensional_fracture","EntityDimensionalFracture",0
+"Thaumic Augmentation","thaumicaugmentation:eldritch_golem","EntityTAEldritchGolem",9
+"Thaumic Augmentation","thaumicaugmentation:eldritch_guardian","EntityTAEldritchGuardian",6
+"Thaumic Augmentation","thaumicaugmentation:eldritch_warden","EntityTAEldritchWarden",7
+"Thaumic Augmentation","thaumicaugmentation:golem_orb","EntityTAGolemOrb",10
+"Thaumic Augmentation","thaumicaugmentation:item_indestructible","EntityItemIndestructible",2
+"Thaumic Augmentation","thaumicaugmentation:item_rift_jar","EntityItemBlockRiftJar",1
+"Thaumic Augmentation","thaumicaugmentation:primal_wisp","EntityPrimalWisp",8
+"Thaumic Augmentation","thaumicaugmentation:shield_focus","EntityFocusShield",3
 "The Twilight Forest","twilightforest:adherent","EntityTFAdherent",56
 "The Twilight Forest","twilightforest:armored_giant","EntityTFArmoredGiant",53
 "The Twilight Forest","twilightforest:bighorn_sheep","EntityTFBighorn",1

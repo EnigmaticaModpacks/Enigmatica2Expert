@@ -3,6 +3,7 @@
 1,1,"the_end","false","false","net.minecraft.world.WorldProviderEnd"
 -1,-1,"Nether","false","false","biomesoplenty.common.world.WorldProviderBOPHell"
 144,144,"CompactMachines","false","false","org.dave.compactmachines3.world.WorldProviderMachines"
+14676,14676,"emptiness","false","false","thecodex6824.thaumicaugmentation.common.world.WorldProviderEmptiness"
 -11325,-11325,"Deep Dark","false","false","com.rwtema.extrautils2.dimensions.deep_dark.WorldProviderDeepDark"
 -343800852,-343800852,"Spectre","true","true","lumien.randomthings.handler.spectre.SpectreWorldProvider"
 -8,-8,"Ratlantis","false","false","com.github.alexthe666.rats.server.world.WorldProviderRatlantis"
