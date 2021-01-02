@@ -3,12 +3,7 @@
 =                Variables                    =
 =============================================*/
 const fs = require('fs')
-const utils = require('../lib/utils.js')
 const path = require('path')
-
-/*=============================================
-=                  Helpers                    =
-=============================================*/
 
 /*=============================================
 =               Ignoring errors               =
@@ -230,18 +225,19 @@ var known = [
 =           Working                           =
 =============================================*/
 
-var log = utils.loadText('../../logs/debug.log')
+var log = fs.readFileSync('logs/debug.log', 'utf8')
 var newLog = ''
 
-var o = {
+var stat = {
   total: 0,
   unknown: 0,
   resolved: known.length,
   viewed: 0,
 }
+
 for (const match of log.matchAll(/^.*\W(error|WARN)\W.*$/gmi)) {
   var isIgnore = false
-  o.total += 1
+  stat.total++
   for (let i = 0; i < ignore.length; i++) {
     if (match[0].match(ignore[i])) {
       isIgnore = true
@@ -253,7 +249,7 @@ for (const match of log.matchAll(/^.*\W(error|WARN)\W.*$/gmi)) {
     for (let i = 0; i < known.length; i++) {
       if (match[0].match(known[i])) {
         isIgnore = true
-        o.resolved -= 1
+        stat.resolved--
         break
       }
     }
@@ -264,16 +260,16 @@ for (const match of log.matchAll(/^.*\W(error|WARN)\W.*$/gmi)) {
       .replace(/^\[[\d:]+\] /,'')  // Remove timestamp
     newLog += line + '\n'
 
-    if (o.viewed < 100) {
-      console.log('=>' + line)
-      o.viewed += 1
+    if (stat.viewed < 100) {
+      // console.log('=>' + line)
+      stat.viewed++
     }
-    o.unknown += 1
+    stat.unknown++
   }
 }
-console.log('    Total Errors: ', o.total)
-console.log('Untreaten errors: ', o.unknown)
-console.log(' Resolved errors: ', o.resolved + '/' + known.length)
+console.log('      Total Errors⭕: ', stat.total)
+console.log('  Untreaten Errors🛑: ', stat.unknown)
+if(stat.resolved>0) console.log('   Resolved Errors ✅: ', stat.resolved + '/' + known.length)
 
 
 fs.writeFileSync(path.resolve(__dirname, 'unknownErrors.log'), newLog)
