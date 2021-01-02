@@ -150,7 +150,7 @@
 	<!-- [Construction Foam] from [Construction Paste+] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
-			<itemStack>buildinggadgets:constructionpaste 1 0</itemStack>
+			<itemStack>buildinggadgets:constructionpaste 1</itemStack>
 			<fluidStack>water 4000</fluidStack>
 		</input>
 		<output>
@@ -180,10 +180,10 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Quicksand] from [Soul Sand+] -->
+	<!-- [Quicksand] from [soulSand+] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
-			<itemStack>minecraft:soul_sand 1 0</itemStack>
+			<oreDict>soulSand 1</oreDict>
 			<fluidStack>blueslime 1000</fluidStack>
 		</input>
 		<output>

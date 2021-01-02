@@ -59,7 +59,7 @@ module.exports.transpose = function(a) {
 }
 
 
-module.exports.injectInFile = function(filename, keyStart, text, keyFinish) {
+module.exports.injectInFile = function(filename, keyStart, keyFinish, text) {
   try {
     return replace.sync({
       files: filename,
@@ -76,6 +76,8 @@ module.exports.injectInFile = function(filename, keyStart, text, keyFinish) {
 module.exports.begin = function(...args) {
   process.stdout.write(args.join('\t'))
 }
+
+module.exports.write = module.exports.begin
 
 module.exports.end = function(...args) {
   process.stdout.write(args.length ===0 ? ' done' :args.join('\t'))

@@ -243,17 +243,53 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Solar Panel] from [Glass+++++++] -->
+	<!-- [Logic Processor] from [dustRedstone++] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
-			<itemStack>minecraft:glass 24 0</itemStack>
-			<itemStack>ic2:crafting 40 0</itemStack>
-			<itemStack>minecraft:iron_block 30 0</itemStack>
-			<itemStack>ic2:ingot 32 2</itemStack>
-			<itemStack>thermalfoundation:material 32 132</itemStack>
-			<itemStack>ic2:ingot 24 6</itemStack>
-			<itemStack>minecraft:redstone 48 0</itemStack>
-			<itemStack>minecraft:coal 32 0</itemStack>
+			<oreDict>dustRedstone 1</oreDict>
+			<oreDict>itemSilicon 1</oreDict>
+			<itemStack>appliedenergistics2:material 1 18</itemStack>
+		</input>
+		<output>
+			<itemStack>appliedenergistics2:material 1 22</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Engineering Processor] from [dustRedstone++] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>dustRedstone 1</oreDict>
+			<oreDict>itemSilicon 1</oreDict>
+			<itemStack>appliedenergistics2:material 1 17</itemStack>
+		</input>
+		<output>
+			<itemStack>appliedenergistics2:material 1 24</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Calculation Processor] from [dustRedstone++] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>dustRedstone 1</oreDict>
+			<oreDict>itemSilicon 1</oreDict>
+			<itemStack>appliedenergistics2:material 1 16</itemStack>
+		</input>
+		<output>
+			<itemStack>appliedenergistics2:material 1 23</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Solar Panel] from [blockGlass+++++++] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>blockGlass 24</oreDict>
+			<oreDict>itemRubber 40</oreDict>
+			<oreDict>blockFakeIron 30</oreDict>
+			<oreDict>ingotCopper 32</oreDict>
+			<oreDict>ingotAluminum 32</oreDict>
+			<oreDict>ingotTin 24</oreDict>
+			<oreDict>dustRedstone 48</oreDict>
+			<oreDict>itemCoal 32</oreDict>
 		</input>
 		<output>
 			<itemStack>ic2:te 8 8</itemStack>
