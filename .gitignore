@@ -13,6 +13,7 @@
 ![!]Relese.bat
 !TODO.md
 !README.md
+!MODS.md
 !minecraftinstance.json
 !patchouli_books/
 
@@ -58,7 +59,6 @@ config/tellme/*
 !config/tellme/entities-???.???
 !config/tellme/fluids-???.???
 !config/tellme/food-items-???.???
-!config/tellme/oredictionary-by-key-individual-???.???
 !config/tellme/potions-???.???
 !config/tellme/potiontypes-???.???
 
