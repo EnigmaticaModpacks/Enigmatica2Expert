@@ -1,3 +1,11 @@
+/*
+
+  Script to wrapping zs functions into custom functions
+  with additional information output into crafttweaker.log
+
+*/
+
+
 const replace = require('replace-in-file')
 const fs = require('fs')
 const path = require('path')
@@ -99,8 +107,6 @@ const signatureStrings = loadText('_functions.java')
   .split('\n')
   .filter(l=>l.trim())
 
-console.log('Loaded signatures: ', signatureStrings.length)
-
 const signatures = signatureStrings.map(s=>{
   const m = s.match(/^mods\.(?<mod>\w+)\.(?<class>\w+(\.\w+)?)\.(?<method>\w+)\((?<args>.*)\)$/)
   m.groups.args = m.groups.args
@@ -193,7 +199,12 @@ signatures.forEach(sig => {
   })
   pushFunction(sig.args.slice(argFrom))
 })
-console.log('Parsed functions: ', functionsCount, ' Including overloaded: ', overloadCount)
+
+console.log(
+  '  Loaded functions: ', signatureStrings.length,
+  '  Parsed functions: ', functionsCount,
+  '  Including overloaded: ', overloadCount
+)
 
 
 //------------------------------------------------------------------
@@ -241,17 +252,15 @@ const options = {
 try {
   const results = replace.sync(options)
   // console.log('Replacement results:', results);
-  const changedFiles = results
-    .filter(result => result.hasChanged)
-    .map(result => result.numReplacements + ' ' + result.file)
+  // const changedFiles = results
+  //   .filter(result => result.hasChanged)
+  //   .map(result => result.numReplacements + ' ' + result.file)
 
   // console.log('changedFiles :>> ', changedFiles);
 }
 catch (error) {
   console.error('Error occurred:', error)
 }
-
-console.log('Total replaces: ', totalReplaced)
 
 
 //------------------------------------------------------------------
@@ -308,12 +317,13 @@ for (const [modName, txt] of Object.entries(fileContent)) {
   saveText(txt, `${modName}.zs`)
   rewrittenFiles++
 }
-console.log('Rewritten wrap files :>> ', rewrittenFiles)
 
-console.log('Functions used :>>\n----------------------')
-functionsSet.forEach(s=>{
-  let method = signatures.find(g=>new RegExp(`${g.mod}.${g.class}.${g.method}`).test(s))
+console.log('  Total replaces: ', totalReplaced, 'Rewritten wrap files :>> ', rewrittenFiles)
 
-  console.log(method.source)
-})
-console.log('----------------------')
+// console.log('Functions used :>>\n----------------------')
+// functionsSet.forEach(s=>{
+//   let method = signatures.find(g=>new RegExp(`${g.mod}.${g.class}.${g.method}`).test(s))
+
+//   console.log(method.source)
+// })
+// console.log('----------------------')
