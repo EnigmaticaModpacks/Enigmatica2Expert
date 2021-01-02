@@ -1,17 +1,31 @@
-const fs = require('fs')
-const {injectInFile, begin} = require('../lib/utils.js')
+/*
 
-function loadText(filename, encoding = 'utf8') {
-  return fs.readFileSync(filename, encoding)
+  Fake iron automatic recipes
+
+  Inspecting all recipes to automatically change some of them  
+
+  Required command before running
+  /ct recipes
+
+*/
+
+const fs = require('fs')
+const {injectInFile, write, end} = require('../lib/utils.js')
+
+const crafttweaker_log = fs.readFileSync('crafttweaker.log','utf8')
+const globMatch = crafttweaker_log.match(/^Recipes:$.*/ms)
+
+if(!globMatch) {
+  console.log('  ERROR: no /ct recipes found in crafttweaker.log')
+  return
 }
 
-let crafttweaker_log = loadText('crafttweaker.log')
-let recipes = crafttweaker_log.match(/^Recipes:$.*/ms)[0]
+const recipes = globMatch[0]
 
 let matchesCount = 0
-let resultArr = []
+const resultArr = []
 
-let whitelist = [
+const whitelist = [
   '<minecraft:anvil>',
   '<extrautils2:opinium>',
   '<extrautils2:opinium:1>',
@@ -37,25 +51,38 @@ let whitelist = [
   '<cyclicmagic:dehydrator>',
 ]
 
-for (const match of recipes.matchAll(/^(?<function>recipes\.addShape(?<postfix>d|less))\((?<name>".*?") *, *(?<output>[^, ]*?)(?<count> \* \d+)?, (?<grid>.*)\);$/gm)) {
-  let g = match.groups
+// Add already exist remakes
+const fakeIron_zs = fs.readFileSync('scripts/fakeIron.zs','utf8')
+const remakes = fakeIron_zs.match(/^# Start of automatically generated recipes:$.*/ms)[0]
+for (const match of remakes.matchAll(/^remakeShape.{1,4}\("[^"]+", (?<output><[^>]+>).*$/gm)) {
+  if(whitelist.includes(match.groups.output))
+    resultArr.push(match[0])
+}
 
-  let regex = /<(minecraft:iron_|ore:)(ingot|block|nugget)(?:Iron)?>/gi
+// Add new
+write('  Inspecting recipes ')
+for (const match of recipes.matchAll(/^(?<function>recipes\.addShape(?<postfix>d|less))\((?<name>".*?") *, *(?<output>[^, ]*?)(?<count> \* \d+)?, (?<grid>.*)\);$/gm)) {
+  const g = match.groups
+  matchesCount++
+  if(matchesCount%1000==0) write('.')
+
+  const regex = /<(minecraft:iron_|ore:)(ingot|block|nugget)(?:Iron)?>/gi
   if(
     !whitelist.includes(g.output) ||
     !g.grid.match(new RegExp('.*' + regex.source + '.*'))
   ) continue
 
-  let replacedGrid = g.grid.replaceAll(regex, (...args) => args[2].substring(0,1).toUpperCase())
-  let line = `remakeShape${g.postfix}(${g.name}, ${g.output}${g.count??''}, ${replacedGrid});`
+  const replacedGrid = g.grid.replaceAll(regex, (...args) => args[2].substring(0,1).toUpperCase())
+  const line = `remakeShape${g.postfix}(${g.name}, ${g.output}${g.count??''}, ${replacedGrid});`
   resultArr.push(line)
-  matchesCount++
-  if(matchesCount%100==0) begin('.')
 }
-console.log('matchesCount :>> ', matchesCount)
+end()
+
 
 injectInFile('scripts/fakeIron.zs', 
   '# Start of automatically generated recipes:\n',
-  resultArr.sort().join('\n'),
-  '\n# End of automatically generated recipes'
+  '\n# End of automatically generated recipes',
+  resultArr.sort().join('\n')
 )
+
+console.log(`  Saved ${resultArr.length} recipes to scripts/fakeIron.zs`)
