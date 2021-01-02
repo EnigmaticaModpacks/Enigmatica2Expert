@@ -1,22 +1,33 @@
+/*
+
+  Inspect_JS
+
+  Lookup for keyword "Inject_js" in all zs files
+  to evaluate block and inject its result
+
+*/
+
 
 const glob = require('glob')
 const fs = require('fs')
-const path = require('path')
-const _ = require('lodash')
 const csvParseSync = require('csv-parse/lib/sync')
 
-const {injectInFile} = require('../lib/utils.js')
+const {injectInFile, write, end} = require('../lib/utils.js')
 
 function loadText(filename, encoding = 'utf8') {
   return fs.readFileSync(filename, encoding)
 }
 
-
+// ----------------------------------
+// Functions that can be used in .zs files
+// ----------------------------------
+const _ = require('lodash') // eslint-disable-line no-unused-vars
 function getCsv(filePath) { // eslint-disable-line no-unused-vars
   return csvParseSync(loadText(filePath), {columns: true})
 }
+// ----------------------------------
 
-var occurences = []
+const occurences = []
 
 glob.sync('scripts/**/*.zs').forEach(filePath => {
   var zsfileContent = loadText(filePath)
@@ -31,6 +42,7 @@ glob.sync('scripts/**/*.zs').forEach(filePath => {
   }
 })
 
+write(`  Found ${occurences.length} Inject_js blocks. Evaluating `)
 
 occurences.forEach(cmd => {
   let injectString = ''
@@ -38,11 +50,13 @@ occurences.forEach(cmd => {
   try {
     injectString = eval(cmd.command)
   } catch (error) {
-    console.log('Comment block Error.\nFile:', cmd.filePath, ' Line:', cmd.line)
+    console.log('\nComment block Error.\nFile:', cmd.filePath, ' Line:', cmd.line)
     console.error(error)
     return
   }
   
-  injectInFile(cmd.filePath, cmd.command, '*/\n'+injectString, '\n/**/')
-
+  injectInFile(cmd.filePath, cmd.command, '\n/**/', '*/\n'+injectString)
+  write('.')
 })
+
+end()
