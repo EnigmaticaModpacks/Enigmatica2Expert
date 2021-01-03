@@ -74,7 +74,7 @@ tweak("emberroot:entity/sprite_mini","main","minecraft:rotten_flesh", null, [<my
 tweak("emberroot:entity/sprite_normal","main","minecraft:rotten_flesh", null, [<mysticalagriculture:dye_essence>], [1,3]);
 tweak("emberroot:entity/sprite_greater","main",null, null, [<mysticalagriculture:platinum_essence>], [1,3]);
 tweak("emberroot:entity/sprite_boss","main",null, null, [<mysticalagriculture:ender_amethyst_essence>], [6,12]);
-tweak("randomthings:beanpod","Diamond","minecraft:diamond", null, [<biomesoplenty:gem:1>, <biomesoplenty:gem:2>, <biomesoplenty:gem:3>, <biomesoplenty:gem:4>, <biomesoplenty:gem:5>, <biomesoplenty:gem:6>, <biomesoplenty:gem:7>], [0,1]);
+tweak("randomthings:beanpod","Diamond","minecraft:diamond", null, [<biomesoplenty:gem:1>, <biomesoplenty:gem:2>, <biomesoplenty:gem:3>, <biomesoplenty:gem:4>, <biomesoplenty:gem:5>, <biomesoplenty:gem:6>], [0,1]);
 
 # Tallow
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:tallow>);
