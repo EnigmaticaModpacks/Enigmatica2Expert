@@ -30,6 +30,9 @@
   - 🔴 Satako (lib fo ^)
   - 🔴 Probe
 
+- 𝓙𝙎 [ ] Translate to Russian:
+  - tips.txt
+
 ### Do after process.zs class rework:
 
 - 𝓩𝒮 [ ] Process rework in zenClass
@@ -80,6 +83,7 @@
 - 𝓩𝒮 [ ] Omega potion logaryphmic level buff
 - 💥 [ ] **Rats** Structures Generation
 - 💥 [ ] Uses of singularities
+- 🟢 [ ] Replace EnderIO modular to all-in-one version
 
 ## Items for crafting
 
