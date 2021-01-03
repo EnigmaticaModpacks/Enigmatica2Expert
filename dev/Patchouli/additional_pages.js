@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* 
 
   This file will be evaluated when Patchouli.js generating book
@@ -15,30 +16,30 @@ function loadJson(filename) {
 const defaultLoot_json = loadJson('./config/betterquesting/DefaultLoot.json')
 const lootboxes = {}
 const bareLoot = {}
-for (const [k,v1] of Object.entries(defaultLoot_json['groups:9'])) {
-  var currRarity = {
+for (const v1 of Object.values(defaultLoot_json['groups:9'])) {
+  const currRarity = {
     weight: v1['weight:3'],
     rewards: []
   }
   lootboxes[v1['name:8']] = currRarity
 
-  var currBareLoot = []
+  const currBareLoot = []
   bareLoot[v1['name:8']] = currBareLoot
 
-  for (const [k,v2] of Object.entries(v1['rewards:9'])) {
-    var currReward = {
+  for (const v2 of Object.values(v1['rewards:9'])) {
+    const currReward = {
       weight: v2['weight:3'],
       items: {}
     }
     currRarity.rewards.push(currReward)
 
-    for (const [k,v] of Object.entries(v2['items:9'])) {
-      var itemName = v['id:8'] + (v['Damage:2']!=0?(':'+v['Damage:2']):'')
-      var itemCount = v['Count:3']
-      var itemTag = v['tag:10'] ? renameDeep(v['tag:10'], key => key.split(':').shift()) : undefined
-      var tagAsString = itemTag ? JSON.stringify(itemTag) : ''
+    for (const v of Object.values(v2['items:9'])) {
+      const itemName = v['id:8'] + (v['Damage:2']!=0?(':'+v['Damage:2']):'')
+      const itemCount = v['Count:3']
+      const itemTag = v['tag:10'] ? renameDeep(v['tag:10'], key => key.split(':').shift()) : undefined
+      const tagAsString = itemTag ? JSON.stringify(itemTag) : ''
 
-      var resultString = itemName+'<count_here>'+tagAsString
+      const resultString = itemName+'<count_here>'+tagAsString
 
       currReward.items[resultString] = (currReward.items[resultString] || 0) + itemCount
     }
@@ -52,7 +53,7 @@ for (const [k,v1] of Object.entries(defaultLoot_json['groups:9'])) {
   }
 }
 
-var location = 'Items/Lootboxes'
+const location = 'Items/Lootboxes'
 
 Patchouli_js(location, {
 	icon:	'bq_standard:loot_chest',
@@ -92,12 +93,12 @@ Patchouli_js('Items/Magic Bean',
 // ----------------------------------------------------
 // Blood Magic
 // ----------------------------------------------------  
-var meteors = []
-var meteorFolder = './config/bloodmagic/meteors/'
+const meteors = []
+const meteorFolder = './config/bloodmagic/meteors/'
 fs.readdirSync(meteorFolder).forEach(filename => {
-  var content = fs.readFileSync(meteorFolder + filename, 'utf8')
-  var parsed = JSON.parse(content)
-  var shortName = filename.split(/[_.]/)[1]
+  const content = fs.readFileSync(meteorFolder + filename, 'utf8')
+  const parsed = JSON.parse(content)
+  const shortName = filename.split(/[_.]/)[1]
   meteors.push({
     ...parsed, 
     icon: 
@@ -129,10 +130,31 @@ meteors.forEach(meteor => {
     title: `${meteor.name} meteor`,
     type:	'grid',
     ...item$i(meteor.components.map(ore=>{
-      var found = csvArr.find(l=>l[0] === ore.oreName)
+      const found = csvArr.find(l=>l[0] === ore.oreName)
       return [found[1] +':'+ found[2] +'#'+Math.round(ore.weight/10)]
     }))
   })
 })
 
-
+// ----------------------------------------------------
+// TCon
+// ----------------------------------------------------
+Patchouli_js('Items/Recycling', [{
+  item:	'artisanworktables:worktable:3',
+	title: 'Tool recycling',
+  _text: `Tools can be disassembled in $(l)Blacksmith/$ tables.
+    $(li)Hardest tool part picked for output
+    $(li)Chisel head should be harder
+    $(li)Output amount based on material cost
+    $(li)Also based on table level`,
+},{
+  item:	'artisanworktables:worktable:3',
+	title: 'Table levels',
+  type: 'item_list',
+  _text1: `Different max
+          output for each
+          table:`,
+  item3: 'artisanworktables:worktable:3',   text3: '10%',
+  item4: 'artisanworktables:workstation:3', text4: '25%',
+  item5: 'artisanworktables:workshop:3',    text5: '100%',
+}])

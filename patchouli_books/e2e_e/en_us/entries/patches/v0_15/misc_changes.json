@@ -1,0 +1,66 @@
+{
+  "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
+  "name": "Misc Changes",
+  "icon": "randomthings:beanpod",
+  "priority": true,
+  "category": "patchouli:subcategories/v0_15",
+  "pages": [
+    {
+      "type": "item_spread",
+      "title": "Bean Pod Buff",
+      "item": "randomthings:beanpod",
+      "item0": "biomesoplenty:gem:1",
+      "item1": "biomesoplenty:gem:2",
+      "item2": "biomesoplenty:gem:3",
+      "item3": "biomesoplenty:gem:4",
+      "item4": "biomesoplenty:gem:5",
+      "item5": "biomesoplenty:gem:6",
+      "text": "$(l)Bean Pod/$ now drop BoP gems in addition to its old drops"
+    },
+    {
+      "title": "Bees",
+      "item": "gendustry:honey_comb:15",
+      "text": "There is $(l)16/$ new Bee species.$(br)Vanilla Bees was buffed too.",
+      "type": "spotlight"
+    },
+    {
+      "title": "Planets",
+      "item": "advancedrocketry:spacehelmet",
+      "text": "Barely every planet in space was $(l)changed/$$(br)Generation, ores and landscapes was changed",
+      "type": "spotlight"
+    },
+    {
+      "title": "Tesla Coil",
+      "item": "immersiveengineering:metal_device1:8",
+      "text": "Now deals $(#F31)90/$ damage but consume more RF",
+      "type": "spotlight"
+    },
+    {
+      "title": "Torches",
+      "item": "minecraft:torch",
+      "text": "Light level was nerfed to $(#F31)10/$",
+      "type": "spotlight"
+    },
+    {
+      "title": "Excavation",
+      "item": "oeintegration:excavatemodifier",
+      "text": "Excavation over Bedrock Ores was $(#F31)disabled/$",
+      "type": "spotlight"
+    },
+    {
+      "title": "Cyclic Machines",
+      "item": "cyclicmagic:auto_crafter",
+      "type": "grid_text",
+      "text": "This machines not using $(l)RF/$ anymore:",
+      "item0": "cyclicmagic:auto_crafter",
+      "item1": "cyclicmagic:auto_packager",
+      "item2": "cyclicmagic:block_fishing",
+      "item3": "cyclicmagic:block_hydrator",
+      "item4": "cyclicmagic:block_user",
+      "item5": "cyclicmagic:dehydrator",
+      "item6": "cyclicmagic:dropper_exact",
+      "item7": "cyclicmagic:fire_starter",
+      "item8": "cyclicmagic:solidifier"
+    }
+  ]
+}

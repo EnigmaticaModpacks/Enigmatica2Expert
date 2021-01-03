@@ -1,0 +1,26 @@
+{
+  "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
+  "name": "Nuclear",
+  "icon": "nuclearcraft:nuclear_furnace_idle",
+  "category": "patchouli:subcategories/v0_15",
+  "pages": [
+    {
+      "title": "Coolers Buff",
+      "item": "nuclearcraft:nuclear_furnace_idle",
+      "text": "Active reactor coolers was buffed",
+      "type": "spotlight"
+    },
+    {
+      "title": "Excess Mixings",
+      "item": "nuclearcraft:salt_mixer_idle",
+      "text": "Useless fluid mixings was removed.$(br)For example Depleted Fuel mixing with salt",
+      "type": "spotlight"
+    },
+    {
+      "title": "Radiation",
+      "item": "nuclearcraft:rtg_plutonium",
+      "text": "Radiation was added to various $(l)Avaritia/$ and $(l)Extended Crafting/$ items",
+      "type": "spotlight"
+    }
+  ]
+}

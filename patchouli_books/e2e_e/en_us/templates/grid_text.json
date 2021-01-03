@@ -1,0 +1,31 @@
+{
+  "components": [
+    { "x": -1, "y": -1,  "type": "header", "text": "#title" }
+    ,{ "x":0, "y": 32 , "type": "text", "text": "#text"}
+    
+    ,{ "x": 4, "y": 66, "type": "item", "item": "#item0"}
+    ,{ "x": 22, "y": 66, "type": "item", "item": "#item1"}
+    ,{ "x": 40, "y": 66, "type": "item", "item": "#item2"}
+    ,{ "x": 58, "y": 66, "type": "item", "item": "#item3"}
+    ,{ "x": 76, "y": 66, "type": "item", "item": "#item4"}
+    ,{ "x": 94, "y": 66, "type": "item", "item": "#item5"}
+    ,{ "x": 4, "y": 84, "type": "item", "item": "#item6"}
+    ,{ "x": 22, "y": 84, "type": "item", "item": "#item7"}
+    ,{ "x": 40, "y": 84, "type": "item", "item": "#item8"}
+    ,{ "x": 58, "y": 84, "type": "item", "item": "#item9"}
+    ,{ "x": 76, "y": 84, "type": "item", "item": "#item10"}
+    ,{ "x": 94, "y": 84, "type": "item", "item": "#item11"}
+    ,{ "x": 4, "y": 102, "type": "item", "item": "#item12"}
+    ,{ "x": 22, "y": 102, "type": "item", "item": "#item13"}
+    ,{ "x": 40, "y": 102, "type": "item", "item": "#item14"}
+    ,{ "x": 58, "y": 102, "type": "item", "item": "#item15"}
+    ,{ "x": 76, "y": 102, "type": "item", "item": "#item16"}
+    ,{ "x": 94, "y": 102, "type": "item", "item": "#item17"}
+    ,{ "x": 4, "y": 120, "type": "item", "item": "#item18"}
+    ,{ "x": 22, "y": 120, "type": "item", "item": "#item19"}
+    ,{ "x": 40, "y": 120, "type": "item", "item": "#item20"}
+    ,{ "x": 58, "y": 120, "type": "item", "item": "#item21"}
+    ,{ "x": 76, "y": 120, "type": "item", "item": "#item22"}
+    ,{ "x": 94, "y": 120, "type": "item", "item": "#item23"}
+  ]
+}

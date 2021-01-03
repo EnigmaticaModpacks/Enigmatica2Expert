@@ -1,0 +1,7 @@
+{
+  "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
+  "name": "v0.15",
+  "icon": "artisanworktables:artisans_grimoire_copper",
+  "description": "Space update!$(br2)Changes in this patch ->",
+  "parent": "patchouli:patches"
+}

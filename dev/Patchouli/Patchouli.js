@@ -13,7 +13,7 @@
 
 //////////////////////////////////////////
 // NodeJS dependencies
-process.env.NODE_PATH+=':/dev/lib'
+process.env.NODE_PATH+=':/dev/lib' // eslint-disable-line no-undef
 
 const { snakeCase }  = require('snake-case')
 const glob = require('glob')
@@ -31,7 +31,6 @@ write('  🌿 PatchouliJS:')
 //-----------------------------
 // Constants
 
-const currentVersion = 0.14
 const bookPath = './patchouli_books/e2e_e/en_us/'
 
 var defaultFileContent = {
@@ -132,18 +131,22 @@ const zsPagesCount = patchouliList.length - 1
 write('ZenScript Blocks: ' + zsPagesCount)
 
 // Patch pages
+const patchVersions = []
 var patchesPath = relative('patches/')
 readdir(patchesPath).forEach(filePath => {
-  var relPath = path.resolve(patchesPath, filePath)
+  const relPath = path.resolve(patchesPath, filePath)
+  const fileNoExt = filePath.split('.').slice(0, -1).join('.')
+  patchVersions.push(fileNoExt)
   patchouliList.push({
     filePath: relPath,
     command: loadText(relPath),
     overrides: {
-      subcategory: filePath.split('.').slice(0, -1).join('.')
+      subcategory: fileNoExt
     }
   })
 })
 
+const upperVersion = patchVersions.sort((a,b)=>b.localeCompare(a))[0]
 const patchPagesCount = patchouliList.length - 1 - zsPagesCount
 end(', Patches files: ' + patchPagesCount)
 
@@ -214,6 +217,7 @@ function text$i(array, fnc) { // eslint-disable-line no-unused-vars
 const pageTypesLength = {
   fluid_interaction: 10,
   grid: 42,
+  grid_text: 24,
   grid_description: 24,
   item_list:7,
   item_spread:7,
@@ -327,7 +331,9 @@ patchouliList.forEach(patchouliCommand => {
     // Parse patchouli path
     if(!entryId) entryId = 'Misc Changes'
     var patchouli_path = entryId.split('/')
-    if(patchouli_path.length==1) patchouli_path.unshift('Patches', 'v'+currentVersion)
+    if(patchouli_path.length==1) patchouli_path.unshift('Patches', 
+        patchouliCommand?.overrides?.subcategory ?? upperVersion
+      )
     const isSubcategory = patchouli_path.length >= 3
 
     // Overwrite data for generated patches
