@@ -227,9 +227,9 @@ recipes.removeByRecipeName("thermalexpansion:reservoir_14");
 # Clear content of reservior and tank
 for i in 0 to 5 {
 	val reservior as IItemStack = <thermalexpansion:reservoir>.definition.makeStack(i) as IItemStack;
-	clearFluid(reservior);
+	utils.clearFluid(reservior);
 }
-clearFluid(<thermalexpansion:tank:*>);
+utils.clearFluid(<thermalexpansion:tank:*>);
 
 mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 1 as byte}));
 mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 2 as byte}));

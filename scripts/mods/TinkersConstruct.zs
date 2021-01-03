@@ -387,5 +387,5 @@ mods.nuclearcraft.melter.addRecipe(<ore:blockInfinity>, <fluid:infinity_metal> *
 mods.nuclearcraft.ingot_former.addRecipe([<liquid:infinity_metal>*144, <avaritia:resource:6>]);
 
 # Clearing
-clearFluid(<tconstruct:seared_tank:0>);
-clearFluid(<tconstruct:seared_tank:1>);
+utils.clearFluid(<tconstruct:seared_tank:0>);
+utils.clearFluid(<tconstruct:seared_tank:1>);

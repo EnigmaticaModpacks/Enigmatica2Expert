@@ -27,4 +27,4 @@ for i in 0 to 16 {
 }
 
 # Clear tanks
-clearFluid(<openblocks:tank>);
+utils.clearFluid(<openblocks:tank>);

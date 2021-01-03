@@ -184,37 +184,7 @@ global Remake as function(IItemStack,         string[],            IIngredient[s
 };
 
 
-# ########################
-# Clear Fluid tag on item
-#  preserving other tags
-# ########################
-global clearFluid as function(IItemStack)void = 
-    function (input as IItemStack) as void  {
 
-	recipes.addShapeless("Fluid Clearing " ~ getItemName(input), 
-		input, [input.marked("marked")],
-		function(out, ins, cInfo) {
-			if(ins has "marked" && !isNull(ins.marked) && ins.marked.hasTag) {
-				var tag = ins.marked.tag;
-				if (!isNull(tag.Fluid)) {
-					# Usual tanks
-					tag = tag - "Fluid";
-				} else
-				if (!isNull(tag.tank)) {
-					# Open Blocks
-					tag = tag - "tank";
-				} else
-				if (!isNull(tag.FluidName) && !isNull(tag.Amount)) {
-					# Black hole or other
-					tag = tag - "FluidName" - "Amount";
-				}
-
-				if(tag == {} as IData) return out;
-				return out.withTag(tag);
-			}
-			return out;
-	}, null);
-};
 
 
 
