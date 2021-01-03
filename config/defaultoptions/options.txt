@@ -2,7 +2,7 @@ version:1343
 invertYMouse:false
 mouseSensitivity:0.5
 fov:0.0
-gamma:0.52112675
+gamma:1.0
 saturation:0.0
 renderDistance:12
 guiScale:3
@@ -15,9 +15,9 @@ difficulty:2
 fancyGraphics:true
 ao:2
 renderClouds:true
-resourcePacks:["bq_lootchests","minevost_translation-1.8.zip","Better+Gendustry+v1.0.zip"]
+resourcePacks:["bq_lootchests","minevost_translation-1.8.zip","Better+Gendustry+v1.0.zip","minecraftfont.zip"]
 incompatibleResourcePacks:[]
-lastServer:
+lastServer:192.168.193.234:55650
 lang:en_us
 chatVisibility:0
 chatColors:true
@@ -45,14 +45,14 @@ reducedDebugInfo:false
 useNativeTransport:true
 entityShadows:true
 mainHand:right
-attackIndicator:2
+attackIndicator:0
 showSubtitles:false
 realmsNotifications:true
 enableWeakAttacks:false
 autoJump:false
 narrator:0
 tutorialStep:none
-soundCategory_master:0.046357617
+soundCategory_master:0.33774835
 soundCategory_music:0.0
 soundCategory_record:0.09859155
 soundCategory_weather:0.4084507

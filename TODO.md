@@ -4,51 +4,14 @@
 
 -----------
 
-- 📖 [x] Hamster Wheel to book
-- 📖 [x] Immersive book multiblocks
-- 🟢 [x] 10 New mods
-- 𝓩𝒮 [x] Russian Translation helper
-- ✏️ [x] Portable Drill
-- ✏️ [x] Simplify TE Satchels
-- ✏️ [x] Apatite: Lower spawn rate, make cheaper
-- ✏️ [x] Cheaper Sandwitch station
-- ✏️ [x] Drawers clearing wrongly
-- ✏️ [x] Extra Utilities Magical planks in machines
-- ✏️ [x] Remove Chiseling of Colored Clear Glass
-- ✏️ [x] Cheaper experience solidifier
-- ✏️ [x] Remove Empowerer non-blocks
-- 🧩 [x] AS buff perks
-- 🧩 [x] Cyclic Dryer Shouldnt use energy. Also some another machines
-- 🧩 [x] Nerf durability of Cyclics Glowes
-- 🧩 [x] Remove Cyclic Melter
-- ✏️ [x] Mystical Agriculture: Squeeze cow essence to milk
-- ✏️ [x] Mystical Agriculture: Simplify Essence crystals
-- ✏️ [x] Simplify Cyclic's Amulets: Boat, Void
-- 🧩 [x] Localize Content Tweaker's items
-- ✏️ [x] Mystical Agriculture: Modded tree saplings from Tree Essence
-- 💥 [x] Merge E2E-v2
-- 𝓩𝒮 [x] Merge 1.82a
-- ✏️ [x] Fix XML recipes get wrong first items of Oredicts
-- ✏️ [x] ActAdd chest upgrades simplify
-- 𝓩𝒮 [x] Thaumcraft Research Table click description helper
-- ✏️ [x] Engineer hammer harder craft
-- ✏️ [x] Remove Compass Rich Slag dupe
-- ✏️ [x] Porcupine slightly harder recipe
-- 🔴 [x] New mod: Better diving
-- 🧩 [x] Bedrock Osmium Spawn too weak
-- ✏️ [x] Swap Iron in some to Fake iron
-- 💥 [x] New 🐝 for endgame
-- 🟢 [x] New mod: Ido
+- 🌿 [x] Write Patchouli for new stuff
 
 ## Planned
 
 -----------
 
-- 🌍 [ ] Reload JER world data. Its also not showing
-- 💥 [ ] Uses of singularities
-- 💥 [ ] **Rats** Structures Generation
-- 𝓩𝒮 [ ] Omega potion logaryphmic level buff
-- 🌿 [ ] Write Patchouli for new stuff
+- 🌍 [x] Reload JER world data. Its also not showing
+- 🔷 [ ] Disable Liquid Interactions
 
 - 𝓩𝒮 [ ] Craft.zs makes feather disableable (README note or additional functionality)
 - 𝓩𝒮 [ ] Craft.zs if string has only 1 character width "pretty" should be removed
@@ -90,10 +53,10 @@
 
 -----------
 
-- [ ] Make some ORE spawn only on planets
-- [ ] Check why magnet shapeless recipes dissapeared
-- [ ] ⚙️ Primal Mana in other machines (no machines accept 3 liquids yet)
-- [ ] Fake players can use Agriculture cans ?
+- 🔷 [ ] Make some ORE spawn only on planets
+- 🔷 [ ] Check why magnet shapeless recipes dissapeared
+- 🔷 [ ] ⚙️ Primal Mana in other machines (no machines accept 3 liquids yet)
+- 🔷 [ ] Fake players can use Agriculture cans ?
 - 💜 [ ] Account Thaumcraft's aspects cost
 - 💜 [ ] Check why Lumium so pricy
 - 💜 [ ] UU Forbid ME drives to be replicable
@@ -113,40 +76,10 @@
 - 𝓩𝒮 [ ] Change some merchants: https://docs.blamejared.com/1.12/en/Mods/RockyTweaks/Merchant/
 - 𝓩𝒮 [ ] Requious Frakto JEI stuff
 - 🟢 [ ] LagGoggles
-- 𝓩𝒮 [x] Remove Furnace recipes to prevent Dupes with Avaritia Firnace
-
-
-## Unused TC traits
-
------------
-
-- [x] darktraveler     | Surrounding mobs get randomly afflicted with damage.
-- [x] hailhydra        | Random explosions plague your enemies. Also, when you are attacked, there is a chance to get Absorption.
-- [x] hearts           | The higher your health, the more damage you do.
-- [x] heavy_metal      | Increased knockback + Slowness on target.
-- [x] illuminati       | While the tool is in your hand, nearby entities (that do not hold a tool with this trait) glow, and you become invisible.
-- [x] morganlefay      | Bonus magic damage (ranging from 0.0 to 5.0; Gaussian distributed) is afflicted (it is absolute).
-- [x] rudeawakening    | Damage pierces armor (mobs only).
-- [x] spades           | The lower your health, the more damage you do.
-- [x] starfishy        | Press the "set portal" key (default "N") to set a virtual portal on the block you are pointing at. If you are on the brink of death, you have %d enori crystals to spare, and the portal has enough space above, then the crystals are consumed, you are teleported to the virtual portal, and you are spared. (The tool must be in your hand.)
-- [x] thundering       | Summon a thunderbolt on impact.
-- [x] unnamed          | Bonus damage accrued for each entity of the same type as the target close to it.
-- [x] vindictive       | Bonus damage to players, and you gain some health by attacking.
-- [x] blindbandit      | A mob called the "Blind Bandit" will sometimes be summoned for a limited time after you attack or are attacked. She will attack hostile mobs, and will also attack those who dare attack her (except you), piercing armor on mobs.
-- [x] botanical2       | 
-- [x] barrett          | ❌ As health decreases, there is an increasing chance of a critical hit.
-- [x] divineshield     | ❌ While this tool is in your hand, you are granted fire resistance. Also, damage is reduced, but at a durability cost.
-- [x] dprk             | ❌ When attacking or defending, Supreme Leaders will spawn, exploding on opponents in the same manner as a creeper.
-- [x] ghastly          | ❌ If the holder is attacked while sneaking, the attacker is inflicted with Slowness.
-- [x] ignoble          | ❌ As one takes damage, one starts to harbor feelings of ignoble jealousy as the offender is killed. When this trait is enabled, those feelings are vented when attacking while sneaking.
-- [x] jaded            | ❌ Mobs attacked with this tool have their ability to heal temporarily hindered.
-- [x] mystical_fire    | ❌ Sets the target on fire, and damages the target with magic for a certain amount of time.
-- [x] naphtha          | ❌ Arrows (and bolts) burn the target on impact.
-- [x] trash            | ❌ Random stuff is slowly generated when the tool is selected, but the tool is damaged slowly in this way.
-
-❌ - Could not find trait
-
-barrett|divineshield|dprk|ghastly|ignoble|jaded|mystical_fire|naphtha|trash
+- 𝓩𝒮 [ ] Remove Furnace recipes to prevent Dupes with Avaritia Firnace. (have stash for it)
+- 𝓩𝒮 [ ] Omega potion logaryphmic level buff
+- 💥 [ ] **Rats** Structures Generation
+- 💥 [ ] Uses of singularities
 
 ## Items for crafting
 
@@ -204,43 +137,43 @@ mods.rt.RandomThingsTweaker.addImbuingRecipe(IItemStack top, IItemStack leftside
 
 ## Ideas for singularities
 
-- ">"            ,**Coal Singularity**         - Huge Burn Time
-- ":1>"          ,**Iron Singularity**         - Press Plates
-- ":2>"          ,**Lapis Lazuli Singularity** - Turns water into coolant
-- ":3>"          ,**Redstone Singularity**     - Produce Power
-- ":4>"          ,**Glowstone Singularity**    - Infinite glowing nano-particles
-- ":5>"          ,**Gold Singularity**         - ? Infinity gold when smelted ? Trade with villagers
-- ":6>"          ,**Diamond Singularity**      - Give indestructible to Tinkers tools and armor
-- ":7>"          ,**Emerald Singularity**      - ? Cycle Villagers
-- ":16>"         ,**Aluminum Singularity**     - ? Infinity ImmersEngin wires (click to create wire coil)
-- ":17>"         ,**Copper Singularity**       - ? Steam Powered
-- ":18>"         ,**Tin Singularity**          - ? Free cans when picking up liquids
-- ":19>"         ,**Bronze Singularity**       - ? Something about breaking blocks
-- ":22>"         ,**Silver Singularity**       - Holy damage zombies
-- ":23>"         ,**Lead Singularity**         - ? Radiation protection
-- ":24>"         ,**Steel Singularity**        - ? Machine case
-- ":25>"         ,**Nickel Singularity**       - ? Something about fuel
-- ":26>"         ,**Constantan Singularity**   - Shell and bullets for railgun or revolver
-- ":27>"         ,**Electrum Singularity**     - Capacitor upgrades
-- ":28>"         ,**Invar Singularity**        - Hardening Cell Frames
-- ":29>"         ,**Mithril Singularity**      - ? Turn manasteel blocks into mithril
-- ":32>"         ,**Uranium Singularity**      - Nuclear Fuel
-- ":34>"         ,**Platinum Singularity**     - ? Chemical reaction catalyst
-- ":35>"         ,**Iridium Singularity**      - ? RF for tinkers tools
-- ":48>"         ,**Signalum Singularity**     - Create destabilized redstone ORE from regular redstone ORE
-- ":49>"         ,**Lumium Singularity**       -
-- ":50>"         ,**Enderium Singularity**     - Random Teleportation 1000 blocks away
-- ":64>"         ,**Ardite Singularity**       - ? Durability of tools
-- ":65>"         ,**Cobalt Singularity**       - Starts a blue fire
-- ":66>"         ,**Manyullyn Singularity**    - 
-- "_custom:100>" ,**Quartz Singularity**       - ? Something about chiseling
-- "_custom:101>" ,**Certus Quartz**            - Instantly grow quartz crystals
-- "_custom:102>" ,**Black Quartz**             - ? Makes Black Quartz from White
-- "_custom:103>" ,**Hard Carbon Alloy**        - Can be used as previous tier for crafting armor
-- "_custom:104>" ,**Magnesium Diboride**       - Black Iron crafting catalyst
-- "_custom:105>" ,**Thorium Singularity**      - Nuclear fuel
-- "_custom:106>" ,**Fluxed Electrum ingula**   - Produce Power
-- "_custom:107>" ,**Flux Crystal ingularit**   - Charge items in hand
-- "_custom:108>" ,**Fluix Singularity**        - Free wires
-- "_custom:109>" ,**Titanium Singularity**     - Increase Mining speed
-- "_ultimate>"   ,**The Ultimate Singularity** - ? All above
+-              , **Coal Singularity**         - Huge Burn Time
+- :1>          , **Iron Singularity**         - Press Plates
+- :2>          , **Lapis Lazuli Singularity** - Turns water into coolant
+- :3>          , **Redstone Singularity**     - Produce Power
+- :4>          , **Glowstone Singularity**    - Infinite glowing nano-particles
+- :5>          , **Gold Singularity**         - ? Infinity gold when smelted ? Trade with villagers
+- :6>          , **Diamond Singularity**      - Give indestructible to Tinkers tools and armor
+- :7>          , **Emerald Singularity**      - ? Cycle Villagers
+- :16>         , **Aluminum Singularity**     - ? Infinity ImmersEngin wires (click to create wire coil)
+- :17>         , **Copper Singularity**       - ? Steam Powered
+- :18>         , **Tin Singularity**          - ? Free cans when picking up liquids
+- :19>         , **Bronze Singularity**       - ? Something about breaking blocks
+- :22>         , **Silver Singularity**       - Holy damage zombies
+- :23>         , **Lead Singularity**         - ? Radiation protection
+- :24>         , **Steel Singularity**        - ? Machine case
+- :25>         , **Nickel Singularity**       - ? Something about fuel
+- :26>         , **Constantan Singularity**   - Shell and bullets for railgun or revolver
+- :27>         , **Electrum Singularity**     - Capacitor upgrades
+- :28>         , **Invar Singularity**        - Hardening Cell Frames
+- :29>         , **Mithril Singularity**      - ? Turn manasteel blocks into mithril
+- :32>         , **Uranium Singularity**      - Nuclear Fuel
+- :34>         , **Platinum Singularity**     - ? Chemical reaction catalyst
+- :35>         , **Iridium Singularity**      - ? RF for tinkers tools
+- :48>         , **Signalum Singularity**     - Create destabilized redstone ORE from regular redstone ORE
+- :49>         , **Lumium Singularity**       -
+- :50>         , **Enderium Singularity**     - Random Teleportation 1000 blocks away
+- :64>         , **Ardite Singularity**       - ? Durability of tools
+- :65>         , **Cobalt Singularity**       - Starts a blue fire
+- :66>         , **Manyullyn Singularity**    - 
+- _custom:100> , **Quartz Singularity**       - ? Something about chiseling
+- _custom:101> , **Certus Quartz**            - Instantly grow quartz crystals
+- _custom:102> , **Black Quartz**             - ? Makes Black Quartz from White
+- _custom:103> , **Hard Carbon Alloy**        - Can be used as previous tier for crafting armor
+- _custom:104> , **Magnesium Diboride**       - Black Iron crafting catalyst
+- _custom:105> , **Thorium Singularity**      - Nuclear fuel
+- _custom:106> , **Fluxed Electrum ingula**   - Produce Power
+- _custom:107> , **Flux Crystal ingularit**   - Charge items in hand
+- _custom:108> , **Fluix Singularity**        - Free wires
+- _custom:109> , **Titanium Singularity**     - Increase Mining speed
+- _ultimate>   , **The Ultimate Singularity** - ? All above

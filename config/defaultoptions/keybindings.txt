@@ -58,7 +58,6 @@ key_quark.emote.dab:0:NONE
 key_quark.emote.jet:0:NONE
 key_quark.emote.exorcist:0:NONE
 key_quark.emote.zombie:0:NONE
-key_quark.keybind.toggleAutojump:0:NONE
 key_quark.keybind.dropoff:0:NONE
 key_quark.keybind.chestSort:0:NONE
 key_quark.keybind.chestDropoff:0:NONE
@@ -66,6 +65,7 @@ key_quark.keybind.chestMerge:0:NONE
 key_quark.keybind.chestRestock:0:NONE
 key_quark.keybind.chestExtract:0:NONE
 key_quark.keybind.lockBuilding:33:SHIFT
+key_quark.keybind.toggleAutojump:0:NONE
 key_key.toggle_shaders:0:NONE
 key_bloodmagic.keybind.open_holding:53:CONTROL
 key_bloodmagic.keybind.cycle_holding_pos:0:NONE
@@ -79,6 +79,9 @@ key_key.next_item.desc:0:NONE
 key_key.previous_item.desc:0:NONE
 key_key.open_danknull.desc:0:NONE
 key_key.togglehud.desc:0:NONE
+key_Toggle:15:NONE
+key_Extra information:211:NONE
+key_Add info to original tooltip:210:NONE
 key_key.xu2.searchforitems:21:NONE
 key_key.findme.search:21:NONE
 key_key.ftbutilities.nbt:0:NONE
@@ -228,8 +231,8 @@ key_key.travelersbackpack.toggle_tank:49:NONE
 key_key.travelersbackpack.cycle_tool:44:NONE
 key_key.vaultopic.view:34:NONE
 key_key.vaultopic.vice:47:NONE
-key_Toggle Jetpack:0:NONE
-key_Open Rocket GUI:43:NONE
+key_Toggle Jetpack:45:NONE
+key_Open Rocket GUI:46:NONE
 key_Toggle RCS:0:NONE
 key_Rotate Vehicle Right:32:NONE
 key_Rotate Vehicle Left:30:NONE
