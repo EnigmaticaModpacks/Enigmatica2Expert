@@ -5,7 +5,7 @@ import mods.ctutils.utils.Math.min;
 import mods.ctutils.utils.Math.max;
 
 # All armor data from table
-static armorStaged as IData[string] = scripts.DataTables.armorStaged;
+static armorStaged as IData[string] = scripts.equipment.armorData.armorStaged;
 
 # How much items need for each armor part [helmet, chest, legs, feet]
 static armorCostBySlot as int[] = [5, 8, 7, 4] as int[];

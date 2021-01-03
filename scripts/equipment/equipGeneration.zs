@@ -391,7 +391,7 @@ static defaultWeaponMats as IData = [
   "infinity_metal"         , # 19537
 ] as IData;
 
-static armorStaged as IData[string] = scripts.DataTables.armorStaged;
+static armorStaged as IData[string] = scripts.equipment.armorData.armorStaged;
 
 static armorEntitys as IData[] = [
   {
@@ -683,13 +683,13 @@ function addEquipment(iGroup as IData, entity as IEntityLivingBase, world as IWo
               while (picked has mod && antiloop < 100) {
                 mod = pick_qubic(
                   isArmor
-                    ? scripts.utils_tcon.allArmorModifiers 
-                    : scripts.utils_tcon.allToolModifiers
+                    ? scripts.equipment.utils_tcon.allArmorModifiers 
+                    : scripts.equipment.utils_tcon.allToolModifiers
                 );
                 antiloop += 1;
               }
               picked = picked + mod;
-              equip = scripts.utils_tcon.addModifier(equip, mod);
+              equip = scripts.equipment.utils_tcon.addModifier(equip, mod);
             }
           }
 
@@ -756,13 +756,13 @@ function generateTestItem() as IItemStack {
     // modified = addModifier(modified, mod);
   }
   for i in 0 to 4 {
-    modified = scripts.utils_tcon.addModifier(modified, "sharpness");
+    modified = scripts.equipment.utils_tcon.addModifier(modified, "sharpness");
   }
   for i in 0 to 4 {
-    modified = scripts.utils_tcon.addModifier(modified, "luck");
+    modified = scripts.equipment.utils_tcon.addModifier(modified, "luck");
   }
   for i in 0 to 4 {
-    modified = scripts.utils_tcon.addModifier(modified, "beheading");
+    modified = scripts.equipment.utils_tcon.addModifier(modified, "beheading");
   }
 
   return modified;

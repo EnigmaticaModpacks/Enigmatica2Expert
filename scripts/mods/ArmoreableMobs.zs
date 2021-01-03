@@ -92,7 +92,7 @@ function makeGroup(id as string, stage as IData, isSkeleton as bool){
 }
 
 # Create all stages
-for id, stage in scripts.DataTables.armorStaged {
+for id, stage in scripts.equipment.armorData.armorStaged {
     makeGroup(id, stage, false); # Weaponized group
     makeGroup(id, stage, true);  # Sceleton group
 }

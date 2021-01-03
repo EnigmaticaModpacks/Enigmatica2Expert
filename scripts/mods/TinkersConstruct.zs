@@ -57,6 +57,9 @@ for slime, dirts in slimeDirts {
 	
 # Item Rack
 	rh(<tconstruct:rack>);
+
+# Stone stick
+	rh(<tconstruct:stone_stick>);
 	
 # Blank Cast Resmelting
 	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:alubrass> * 144, <tconstruct:cast>);

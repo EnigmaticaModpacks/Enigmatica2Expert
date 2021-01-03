@@ -11,6 +11,11 @@ import crafttweaker.potions.IPotionEffect;
 
 #modloaded immersiveengineering
 
+
+	recipes.remove(<immersiveengineering:material:1>);
+	recipes.remove(<immersiveengineering:material:2>);
+	recipes.remove(<immersiveengineering:material:3>);
+
 # Removing Recycling recipes that produce IE Iron Nuggets
 	mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:29>);
 

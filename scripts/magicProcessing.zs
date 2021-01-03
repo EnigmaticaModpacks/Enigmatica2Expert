@@ -43,7 +43,7 @@ for ore_entry in oreDict {
 
 
 function getPoop(ore_name as string) as IItemStack {
-  for poop in scripts.RatsProcessing.listRatPoop {
+  for poop in scripts.mods.RatsProcessing.listRatPoop {
     var oreBlockDef = D(poop.tag).getString('OreItem.id','');
 
     if(oreBlockDef != '') {

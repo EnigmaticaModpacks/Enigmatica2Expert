@@ -88,7 +88,9 @@ import mods.jei.JEI.removeAndHide as rh;
 	<libvulpes:ore0:4>,
 	<libvulpes:ore0:5>,
 	<libvulpes:ore0:9>,
-	<libvulpes:ore0:10>
+	<libvulpes:ore0:10>,
+	<libvulpes:productrod:1>,
+	<libvulpes:productrod:6>
 
 	] as IItemStack[];
 	
@@ -101,7 +103,6 @@ import mods.jei.JEI.removeAndHide as rh;
 	<advancedrocketry:productrod>,
 	<advancedrocketry:productrod:1>,
 	<libvulpes:productrod:4>,
-	<libvulpes:productrod:6>,
 	<libvulpes:productrod:7>,
 	<libvulpes:productrod:10>,
 	<immersiveengineering:material:3>,

@@ -124,7 +124,7 @@ recipes.replaceAllOccurences(<minecraft:diamond_boots>, <conarm:boots_core>.with
 # ######################################################################
 
 
-static armorStaged as IData[string] = scripts.DataTables.armorStaged;
+static armorStaged as IData[string] = scripts.equipment.armorData.armorStaged;
 
 function getSetPiece(setData as IData, pieceN as int) as IItemStack {
 

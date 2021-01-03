@@ -52,7 +52,7 @@ const whitelist = [
 ]
 
 // Add already exist remakes
-const fakeIron_zs = fs.readFileSync('scripts/fakeIron.zs','utf8')
+const fakeIron_zs = fs.readFileSync('scripts/category/fakeIron.zs','utf8')
 const remakes = fakeIron_zs.match(/^# Start of automatically generated recipes:$.*/ms)[0]
 for (const match of remakes.matchAll(/^remakeShape.{1,4}\("[^"]+", (?<output><[^>]+>).*$/gm)) {
   if(whitelist.includes(match.groups.output))
@@ -79,10 +79,10 @@ for (const match of recipes.matchAll(/^(?<function>recipes\.addShape(?<postfix>d
 end()
 
 
-injectInFile('scripts/fakeIron.zs', 
+injectInFile('scripts/category/fakeIron.zs', 
   '# Start of automatically generated recipes:\n',
   '\n# End of automatically generated recipes',
   resultArr.sort().join('\n')
 )
 
-console.log(`  Saved ${resultArr.length} recipes to scripts/fakeIron.zs`)
+console.log(`  Saved ${resultArr.length} recipes to scripts/category/fakeIron.zs`)
