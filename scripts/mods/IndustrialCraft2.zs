@@ -183,9 +183,10 @@ import mods.ic2.ScrapBox;
 	recipes.remove(<ic2:dust:5>);
 	
 # IC2 Block Cutting blades
-remakeEnvelop(<ic2:block_cutting_blade>,   <ore:stone>,        <tconstruct:large_sword_blade>.withTag({Material: "iron"}));
-remakeEnvelop(<ic2:block_cutting_blade:1>, <ore:blockFakeIron>,    <tconstruct:large_sword_blade>.withTag({Material: "steel"}));
-remakeEnvelop(<ic2:block_cutting_blade:2>, <ore:blockDiamond>, <tconstruct:large_sword_blade>.withTag({Material: "alumite"}));
+val envelop = ["aaa","aBa","aaa"] as string[];
+craft.remake(<ic2:block_cutting_blade>,   envelop, {B:<ore:stone>,         a:<tconstruct:large_sword_blade>.withTag({Material: "iron"})});
+craft.remake(<ic2:block_cutting_blade:1>, envelop, {B:<ore:blockFakeIron>, a:<tconstruct:large_sword_blade>.withTag({Material: "steel"})});
+craft.remake(<ic2:block_cutting_blade:2>, envelop, {B:<ore:blockDiamond>,  a:<tconstruct:large_sword_blade>.withTag({Material: "alumite"})});
 
 # New Scraps
 ScrapBox.addDrop(<appliedenergistics2:material:6>, 4.0F);

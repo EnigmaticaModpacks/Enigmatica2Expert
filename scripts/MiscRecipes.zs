@@ -411,7 +411,7 @@ mods.inworldcrafting.FluidToFluid.transform(<liquid:sand>, <liquid:blueslime>, [
 scripts.process.solution([<ore:soulSand>], [<liquid:blueslime>*1000], [<liquid:sand>*1000], null, "except: highoven");
 
 # Bedrock Ore Miner
-Remake(<bedrockores:bedrock_miner>, [
+craft.remake(<bedrockores:bedrock_miner>, [
 	"ABA", 
 	"CDC", 
 	"ADA"], {
@@ -441,14 +441,14 @@ recipes.addShaped(<twilightforest:peacock_fan>, [
 ]);
 
 # Tool pouch
-Remake(<toolbelt:pouch>, ["ABA", "CDC", "CCC"], {
+craft.remake(<toolbelt:pouch>, ["ABA", "CDC", "CCC"], {
 	A: <ore:string>,
 	B: <quark:gold_button>,
 	C: <harvestcraft:hardenedleatheritem>,
 	D: <immersiveengineering:wooden_device0>});
 
 # Tool Belts
-Remake(<toolbelt:belt>, [" A ", "CBC", "C C"], {
+craft.remake(<toolbelt:belt>, [" A ", "CBC", "C C"], {
 	A: <conarm:travel_belt_base>,
 	B: <quark:iron_button>,
 	C: <harvestcraft:hardenedleatheritem>});
