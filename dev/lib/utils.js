@@ -9,6 +9,7 @@ Lunch with NodeJS
 const fs = require('fs')
 const path = require('path')
 const replace = require('replace-in-file')
+const del = require('del')
 
 
 /*=============================================
@@ -78,6 +79,7 @@ module.exports.begin = function(...args) {
 }
 
 module.exports.write = module.exports.begin
+module.exports.dot = module.exports.write('.')
 
 module.exports.end = function(...args) {
   process.stdout.write(args.length ===0 ? ' done' :args.join('\t'))
@@ -89,6 +91,11 @@ module.exports.end = function(...args) {
 // # Utils
 // #
 // # ######################################################################
+
+module.exports.globs = function(globs) {
+  return del.sync(globs, {dryRun: true, forced: true})
+}
+
 
 function renameKeys(obj, fn) {  
   if (typeof fn !== 'function') {
