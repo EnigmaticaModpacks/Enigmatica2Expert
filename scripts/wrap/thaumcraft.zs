@@ -24,7 +24,7 @@ zenClass Class_Crucible { zenConstructor() {}
 
 	// Uses of this method: 2
 	function registerRecipe(name as string, researchKey as string, output as IItemStack, input as IIngredient, aspects as CTAspectStack[]) as void {
-		print('Recipe wrapped: mods.thaumcraft.Crucible.registerRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.thaumcraft.Crucible.registerRecipe'~
 			serialize.args([serialize._string(name), serialize._string(researchKey), serialize.IItemStack(output), serialize.IIngredient(input), serialize.CTAspectStack__(aspects)]));
 		mods.thaumcraft.Crucible.registerRecipe(name, researchKey, output, input, aspects);
 	}
@@ -38,7 +38,7 @@ zenClass Class_Infusion { zenConstructor() {}
 
 	// Uses of this method: 4
 	function registerRecipe(name as string, research as string, output as IItemStack, instability as int, aspects as CTAspectStack[], centralItem as IIngredient, recipe as IIngredient[]) as void {
-		print('Recipe wrapped: mods.thaumcraft.Infusion.registerRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.thaumcraft.Infusion.registerRecipe'~
 			serialize.args([serialize._string(name), serialize._string(research), serialize.IItemStack(output), instability, serialize.CTAspectStack__(aspects), serialize.IIngredient(centralItem), serialize.IIngredient__(recipe)]));
 		mods.thaumcraft.Infusion.registerRecipe(name, research, output, instability, aspects, centralItem, recipe);
 	}
@@ -52,7 +52,7 @@ zenClass Class_SmeltingBonus { zenConstructor() {}
 
 	// Uses of this method: 4
 	function addSmeltingBonus(input as IIngredient, stack as WeightedItemStack) as void {
-		print('Recipe wrapped: mods.thaumcraft.SmeltingBonus.addSmeltingBonus'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.thaumcraft.SmeltingBonus.addSmeltingBonus'~
 			serialize.args([serialize.IIngredient(input), serialize.WeightedItemStack(stack)]));
 		mods.thaumcraft.SmeltingBonus.addSmeltingBonus(input, stack);
 	}

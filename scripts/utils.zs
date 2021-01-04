@@ -8,6 +8,8 @@ import crafttweaker.recipes.IRecipeFunction;
 
 
 zenClass Utils {
+  var DEBUG as bool = false;
+
   static modPreference as string[] = [
     "minecraft",
     "thermalfoundation",

@@ -24,7 +24,7 @@ zenClass Class_Centrifuge { zenConstructor() {}
 
 	// Uses of this method: 6
 	function addRecipe(outputs as WeightedItemStack[], input as IItemStack, fluid as ILiquidStack, energy as int) as void {
-		print('Recipe wrapped: mods.thermalexpansion.Centrifuge.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.thermalexpansion.Centrifuge.addRecipe'~
 			serialize.args([serialize.WeightedItemStack__(outputs), serialize.IItemStack(input), serialize.ILiquidStack(fluid), energy]));
 		mods.thermalexpansion.Centrifuge.addRecipe(outputs, input, fluid, energy);
 	}
@@ -38,19 +38,19 @@ zenClass Class_Compactor { zenConstructor() {}
 
 	// Uses of this method: 1
 	function addMintRecipe(output as IItemStack, input as IItemStack, energy as int) as void {
-		print('Recipe wrapped: mods.thermalexpansion.Compactor.addMintRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.thermalexpansion.Compactor.addMintRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), energy]));
 		mods.thermalexpansion.Compactor.addMintRecipe(output, input, energy);
 	}
 
 	function addPressRecipe(output as IItemStack, input as IItemStack, energy as int) as void {
-		print('Recipe wrapped: mods.thermalexpansion.Compactor.addPressRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.thermalexpansion.Compactor.addPressRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), energy]));
 		mods.thermalexpansion.Compactor.addPressRecipe(output, input, energy);
 	}
 
 	function addGearRecipe(output as IItemStack, input as IItemStack, energy as int) as void {
-		print('Recipe wrapped: mods.thermalexpansion.Compactor.addGearRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.thermalexpansion.Compactor.addGearRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), energy]));
 		mods.thermalexpansion.Compactor.addGearRecipe(output, input, energy);
 	}
@@ -64,7 +64,7 @@ zenClass Class_Crucible { zenConstructor() {}
 
 	// Uses of this method: 7
 	function addRecipe(output as ILiquidStack, input as IItemStack, energy as int) as void {
-		print('Recipe wrapped: mods.thermalexpansion.Crucible.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.thermalexpansion.Crucible.addRecipe'~
 			serialize.args([serialize.ILiquidStack(output), serialize.IItemStack(input), energy]));
 		mods.thermalexpansion.Crucible.addRecipe(output, input, energy);
 	}
@@ -78,7 +78,7 @@ zenClass Class_Infuser { zenConstructor() {}
 
 	// Uses of this method: 1
 	function addRecipe(output as IItemStack, input as IItemStack, energy as int) as void {
-		print('Recipe wrapped: mods.thermalexpansion.Infuser.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.thermalexpansion.Infuser.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), energy]));
 		mods.thermalexpansion.Infuser.addRecipe(output, input, energy);
 	}
@@ -92,7 +92,7 @@ zenClass Class_Transposer { zenConstructor() {}
 
 	// Uses of this method: 7
 	function addFillRecipe(output as IItemStack, input as IItemStack, fluid as ILiquidStack, energy as int) as void {
-		print('Recipe wrapped: mods.thermalexpansion.Transposer.addFillRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.thermalexpansion.Transposer.addFillRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), serialize.ILiquidStack(fluid), energy]));
 		mods.thermalexpansion.Transposer.addFillRecipe(output, input, fluid, energy);
 	}
@@ -106,19 +106,19 @@ zenClass Class_InductionSmelter { zenConstructor() {}
 
 	// Uses of this method: 15
 	function addRecipe(primaryOutput as IItemStack, primaryInput as IItemStack, secondaryInput as IItemStack, energy as int) as void {
-		print('Recipe wrapped: mods.thermalexpansion.InductionSmelter.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.thermalexpansion.InductionSmelter.addRecipe'~
 			serialize.args([serialize.IItemStack(primaryOutput), serialize.IItemStack(primaryInput), serialize.IItemStack(secondaryInput), energy]));
 		mods.thermalexpansion.InductionSmelter.addRecipe(primaryOutput, primaryInput, secondaryInput, energy);
 	}
 
 	function addRecipe(primaryOutput as IItemStack, primaryInput as IItemStack, secondaryInput as IItemStack, energy as int, secondaryOutput as IItemStack) as void {
-		print('Recipe wrapped: mods.thermalexpansion.InductionSmelter.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.thermalexpansion.InductionSmelter.addRecipe'~
 			serialize.args([serialize.IItemStack(primaryOutput), serialize.IItemStack(primaryInput), serialize.IItemStack(secondaryInput), energy, serialize.IItemStack(secondaryOutput)]));
 		mods.thermalexpansion.InductionSmelter.addRecipe(primaryOutput, primaryInput, secondaryInput, energy, secondaryOutput);
 	}
 
 	function addRecipe(primaryOutput as IItemStack, primaryInput as IItemStack, secondaryInput as IItemStack, energy as int, secondaryOutput as IItemStack, secondaryChance as int) as void {
-		print('Recipe wrapped: mods.thermalexpansion.InductionSmelter.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.thermalexpansion.InductionSmelter.addRecipe'~
 			serialize.args([serialize.IItemStack(primaryOutput), serialize.IItemStack(primaryInput), serialize.IItemStack(secondaryInput), energy, serialize.IItemStack(secondaryOutput), secondaryChance]));
 		mods.thermalexpansion.InductionSmelter.addRecipe(primaryOutput, primaryInput, secondaryInput, energy, secondaryOutput, secondaryChance);
 	}
@@ -132,19 +132,19 @@ zenClass Class_Insolator { zenConstructor() {}
 
 	// Uses of this method: 1
 	function addRecipe(primaryOutput as IItemStack, primaryInput as IItemStack, secondaryInput as IItemStack, energy as int) as void {
-		print('Recipe wrapped: mods.thermalexpansion.Insolator.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.thermalexpansion.Insolator.addRecipe'~
 			serialize.args([serialize.IItemStack(primaryOutput), serialize.IItemStack(primaryInput), serialize.IItemStack(secondaryInput), energy]));
 		mods.thermalexpansion.Insolator.addRecipe(primaryOutput, primaryInput, secondaryInput, energy);
 	}
 
 	function addRecipe(primaryOutput as IItemStack, primaryInput as IItemStack, secondaryInput as IItemStack, energy as int, secondaryOutput as IItemStack) as void {
-		print('Recipe wrapped: mods.thermalexpansion.Insolator.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.thermalexpansion.Insolator.addRecipe'~
 			serialize.args([serialize.IItemStack(primaryOutput), serialize.IItemStack(primaryInput), serialize.IItemStack(secondaryInput), energy, serialize.IItemStack(secondaryOutput)]));
 		mods.thermalexpansion.Insolator.addRecipe(primaryOutput, primaryInput, secondaryInput, energy, secondaryOutput);
 	}
 
 	function addRecipe(primaryOutput as IItemStack, primaryInput as IItemStack, secondaryInput as IItemStack, energy as int, secondaryOutput as IItemStack, secondaryChance as int) as void {
-		print('Recipe wrapped: mods.thermalexpansion.Insolator.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.thermalexpansion.Insolator.addRecipe'~
 			serialize.args([serialize.IItemStack(primaryOutput), serialize.IItemStack(primaryInput), serialize.IItemStack(secondaryInput), energy, serialize.IItemStack(secondaryOutput), secondaryChance]));
 		mods.thermalexpansion.Insolator.addRecipe(primaryOutput, primaryInput, secondaryInput, energy, secondaryOutput, secondaryChance);
 	}
@@ -158,19 +158,19 @@ zenClass Class_Pulverizer { zenConstructor() {}
 
 	// Uses of this method: 13
 	function addRecipe(output as IItemStack, input as IItemStack, energy as int) as void {
-		print('Recipe wrapped: mods.thermalexpansion.Pulverizer.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.thermalexpansion.Pulverizer.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), energy]));
 		mods.thermalexpansion.Pulverizer.addRecipe(output, input, energy);
 	}
 
 	function addRecipe(output as IItemStack, input as IItemStack, energy as int, secondaryOutput as IItemStack) as void {
-		print('Recipe wrapped: mods.thermalexpansion.Pulverizer.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.thermalexpansion.Pulverizer.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), energy, serialize.IItemStack(secondaryOutput)]));
 		mods.thermalexpansion.Pulverizer.addRecipe(output, input, energy, secondaryOutput);
 	}
 
 	function addRecipe(output as IItemStack, input as IItemStack, energy as int, secondaryOutput as IItemStack, secondaryChance as int) as void {
-		print('Recipe wrapped: mods.thermalexpansion.Pulverizer.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.thermalexpansion.Pulverizer.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), energy, serialize.IItemStack(secondaryOutput), secondaryChance]));
 		mods.thermalexpansion.Pulverizer.addRecipe(output, input, energy, secondaryOutput, secondaryChance);
 	}
@@ -184,7 +184,7 @@ zenClass Class_RedstoneFurnace { zenConstructor() {}
 
 	// Uses of this method: 2
 	function addPyrolysisRecipe(output as IItemStack, input as IItemStack, energy as int, creosote as int) as void {
-		print('Recipe wrapped: mods.thermalexpansion.RedstoneFurnace.addPyrolysisRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.thermalexpansion.RedstoneFurnace.addPyrolysisRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), energy, creosote]));
 		mods.thermalexpansion.RedstoneFurnace.addPyrolysisRecipe(output, input, energy, creosote);
 	}
@@ -198,19 +198,19 @@ zenClass Class_Sawmill { zenConstructor() {}
 
 	// Uses of this method: 4
 	function addRecipe(output as IItemStack, input as IItemStack, energy as int) as void {
-		print('Recipe wrapped: mods.thermalexpansion.Sawmill.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.thermalexpansion.Sawmill.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), energy]));
 		mods.thermalexpansion.Sawmill.addRecipe(output, input, energy);
 	}
 
 	function addRecipe(output as IItemStack, input as IItemStack, energy as int, secondaryOutput as IItemStack) as void {
-		print('Recipe wrapped: mods.thermalexpansion.Sawmill.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.thermalexpansion.Sawmill.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), energy, serialize.IItemStack(secondaryOutput)]));
 		mods.thermalexpansion.Sawmill.addRecipe(output, input, energy, secondaryOutput);
 	}
 
 	function addRecipe(output as IItemStack, input as IItemStack, energy as int, secondaryOutput as IItemStack, secondaryChance as int) as void {
-		print('Recipe wrapped: mods.thermalexpansion.Sawmill.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.thermalexpansion.Sawmill.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), energy, serialize.IItemStack(secondaryOutput), secondaryChance]));
 		mods.thermalexpansion.Sawmill.addRecipe(output, input, energy, secondaryOutput, secondaryChance);
 	}

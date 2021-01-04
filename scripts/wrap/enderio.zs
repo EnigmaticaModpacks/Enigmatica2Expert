@@ -24,19 +24,19 @@ zenClass Class_AlloySmelter { zenConstructor() {}
 
 	// Uses of this method: 1
 	function addRecipe(output as IItemStack, input as IIngredient[]) as void {
-		print('Recipe wrapped: mods.enderio.AlloySmelter.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.enderio.AlloySmelter.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient__(input)]));
 		mods.enderio.AlloySmelter.addRecipe(output, input);
 	}
 
 	function addRecipe(output as IItemStack, input as IIngredient[], energyCost as int) as void {
-		print('Recipe wrapped: mods.enderio.AlloySmelter.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.enderio.AlloySmelter.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient__(input), energyCost]));
 		mods.enderio.AlloySmelter.addRecipe(output, input, energyCost);
 	}
 
 	function addRecipe(output as IItemStack, input as IIngredient[], energyCost as int, xp as float) as void {
-		print('Recipe wrapped: mods.enderio.AlloySmelter.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.enderio.AlloySmelter.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient__(input), energyCost, xp]));
 		mods.enderio.AlloySmelter.addRecipe(output, input, energyCost, xp);
 	}
@@ -50,25 +50,25 @@ zenClass Class_SagMill { zenConstructor() {}
 
 	// Uses of this method: 1
 	function addRecipe(output as IItemStack[], chances as float[], input as IIngredient) as void {
-		print('Recipe wrapped: mods.enderio.SagMill.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.enderio.SagMill.addRecipe'~
 			serialize.args([serialize.IItemStack__(output), serialize.string__(chances), serialize.IIngredient(input)]));
 		mods.enderio.SagMill.addRecipe(output, chances, input);
 	}
 
 	function addRecipe(output as IItemStack[], chances as float[], input as IIngredient, bonusType as string) as void {
-		print('Recipe wrapped: mods.enderio.SagMill.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.enderio.SagMill.addRecipe'~
 			serialize.args([serialize.IItemStack__(output), serialize.string__(chances), serialize.IIngredient(input), serialize._string(bonusType)]));
 		mods.enderio.SagMill.addRecipe(output, chances, input, bonusType);
 	}
 
 	function addRecipe(output as IItemStack[], chances as float[], input as IIngredient, bonusType as string, energyCost as int) as void {
-		print('Recipe wrapped: mods.enderio.SagMill.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.enderio.SagMill.addRecipe'~
 			serialize.args([serialize.IItemStack__(output), serialize.string__(chances), serialize.IIngredient(input), serialize._string(bonusType), energyCost]));
 		mods.enderio.SagMill.addRecipe(output, chances, input, bonusType, energyCost);
 	}
 
 	function addRecipe(output as IItemStack[], chances as float[], input as IIngredient, bonusType as string, energyCost as int, xp as float[]) as void {
-		print('Recipe wrapped: mods.enderio.SagMill.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.enderio.SagMill.addRecipe'~
 			serialize.args([serialize.IItemStack__(output), serialize.string__(chances), serialize.IIngredient(input), serialize._string(bonusType), energyCost, serialize.string__(xp)]));
 		mods.enderio.SagMill.addRecipe(output, chances, input, bonusType, energyCost, xp);
 	}

@@ -107,7 +107,7 @@ function warning(machineNameAnyCase as string, inputStr as string, description a
 }
 
 function info(machineNameAnyCase as string, inputStr as string, description as string) as string {
-  print("process.work: [" ~ machineNameAnyCase ~ "] " ~ description ~ "  INPUT: " ~ inputStr);
+  utils.log("process.work: [" ~ machineNameAnyCase ~ "] " ~ description ~ "  INPUT: " ~ inputStr);
   return "";
 }
 
@@ -119,7 +119,7 @@ function info(machineNameAnyCase as string, inputStr as string, description as s
 # ######################################################################
 
 function xmlRecipe(filename as string, recipeContent as string) {
-  print('Put this recipe in file [' ~ filename ~ '] manually.\n' ~ recipeContent);
+  utils.log('Put this recipe in file [' ~ filename ~ '] manually.\n' ~ recipeContent);
 }
 
 function avdRockXmlRecipe(filename as string, 

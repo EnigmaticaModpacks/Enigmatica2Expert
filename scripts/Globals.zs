@@ -8,8 +8,6 @@ import mods.jei.JEI.removeAndHide as rh;
 
 #priority 5000
 
-global DEBUG as bool = true;
-
 # ######################################################################
 #
 # Global Functions

@@ -24,31 +24,31 @@ zenClass Class_Altar { zenConstructor() {}
 
 	// Uses of this method: 3
 	function addAttunementAltarRecipe(recipeLocation as string, output as IItemStack, starlight as int, craftTickTime as int, inputs as IIngredient[]) as void {
-		print('Recipe wrapped: mods.astralsorcery.Altar.addAttunementAltarRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.astralsorcery.Altar.addAttunementAltarRecipe'~
 			serialize.args([serialize._string(recipeLocation), serialize.IItemStack(output), starlight, craftTickTime, serialize.IIngredient__(inputs)]));
 		mods.astralsorcery.Altar.addAttunementAltarRecipe(recipeLocation, output, starlight, craftTickTime, inputs);
 	}
 
 	function addConstellationAltarRecipe(recipeLocation as string, output as IItemStack, starlight as int, craftTickTime as int, inputs as IIngredient[]) as void {
-		print('Recipe wrapped: mods.astralsorcery.Altar.addConstellationAltarRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.astralsorcery.Altar.addConstellationAltarRecipe'~
 			serialize.args([serialize._string(recipeLocation), serialize.IItemStack(output), starlight, craftTickTime, serialize.IIngredient__(inputs)]));
 		mods.astralsorcery.Altar.addConstellationAltarRecipe(recipeLocation, output, starlight, craftTickTime, inputs);
 	}
 
 	function addDiscoveryAltarRecipe(recipeLocation as string, output as IItemStack, starlight as int, craftTickTime as int, inputs as IIngredient[]) as void {
-		print('Recipe wrapped: mods.astralsorcery.Altar.addDiscoveryAltarRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.astralsorcery.Altar.addDiscoveryAltarRecipe'~
 			serialize.args([serialize._string(recipeLocation), serialize.IItemStack(output), starlight, craftTickTime, serialize.IIngredient__(inputs)]));
 		mods.astralsorcery.Altar.addDiscoveryAltarRecipe(recipeLocation, output, starlight, craftTickTime, inputs);
 	}
 
 	function addTraitAltarRecipe(recipeLocation as string, output as IItemStack, starlight as int, craftTickTime as int, inputs as IIngredient[]) as void {
-		print('Recipe wrapped: mods.astralsorcery.Altar.addTraitAltarRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.astralsorcery.Altar.addTraitAltarRecipe'~
 			serialize.args([serialize._string(recipeLocation), serialize.IItemStack(output), starlight, craftTickTime, serialize.IIngredient__(inputs)]));
 		mods.astralsorcery.Altar.addTraitAltarRecipe(recipeLocation, output, starlight, craftTickTime, inputs);
 	}
 
 	function addTraitAltarRecipe(recipeLocation as string, output as IItemStack, starlight as int, craftTickTime as int, inputs as IIngredient[], iRequiredConstellationFocusName as string) as void {
-		print('Recipe wrapped: mods.astralsorcery.Altar.addTraitAltarRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.astralsorcery.Altar.addTraitAltarRecipe'~
 			serialize.args([serialize._string(recipeLocation), serialize.IItemStack(output), starlight, craftTickTime, serialize.IIngredient__(inputs), serialize._string(iRequiredConstellationFocusName)]));
 		mods.astralsorcery.Altar.addTraitAltarRecipe(recipeLocation, output, starlight, craftTickTime, inputs, iRequiredConstellationFocusName);
 	}
@@ -62,13 +62,13 @@ zenClass Class_Grindstone { zenConstructor() {}
 
 	// Uses of this method: 1
 	function addRecipe(input as IItemStack, output as IItemStack) as void {
-		print('Recipe wrapped: mods.astralsorcery.Grindstone.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.astralsorcery.Grindstone.addRecipe'~
 			serialize.args([serialize.IItemStack(input), serialize.IItemStack(output)]));
 		mods.astralsorcery.Grindstone.addRecipe(input, output);
 	}
 
 	function addRecipe(input as IItemStack, output as IItemStack, doubleChance as float) as void {
-		print('Recipe wrapped: mods.astralsorcery.Grindstone.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.astralsorcery.Grindstone.addRecipe'~
 			serialize.args([serialize.IItemStack(input), serialize.IItemStack(output), doubleChance]));
 		mods.astralsorcery.Grindstone.addRecipe(input, output, doubleChance);
 	}
@@ -82,7 +82,7 @@ zenClass Class_StarlightInfusion { zenConstructor() {}
 
 	// Uses of this method: 2
 	function addInfusion(input as IItemStack, output as IItemStack, consumeMultiple as bool, consumptionChance as float, craftingTickTime as int) as void {
-		print('Recipe wrapped: mods.astralsorcery.StarlightInfusion.addInfusion'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.astralsorcery.StarlightInfusion.addInfusion'~
 			serialize.args([serialize.IItemStack(input), serialize.IItemStack(output), consumeMultiple, consumptionChance, craftingTickTime]));
 		mods.astralsorcery.StarlightInfusion.addInfusion(input, output, consumeMultiple, consumptionChance, craftingTickTime);
 	}
@@ -96,7 +96,7 @@ zenClass Class_LightTransmutation { zenConstructor() {}
 
 	// Uses of this method: 1
 	function addTransmutation(stackIn as IItemStack, stackOut as IItemStack, cost as double) as void {
-		print('Recipe wrapped: mods.astralsorcery.LightTransmutation.addTransmutation'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.astralsorcery.LightTransmutation.addTransmutation'~
 			serialize.args([serialize.IItemStack(stackIn), serialize.IItemStack(stackOut), cost]));
 		mods.astralsorcery.LightTransmutation.addTransmutation(stackIn, stackOut, cost);
 	}

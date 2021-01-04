@@ -24,7 +24,7 @@ zenClass Class_CompressionCrafting { zenConstructor() {}
 
 	// Uses of this method: 6
 	function addRecipe(output as IItemStack, input as IItemStack, inputCount as int, catalyst as IItemStack, rfCost as int, rfRate as int) as void {
-		print('Recipe wrapped: mods.extendedcrafting.CompressionCrafting.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.extendedcrafting.CompressionCrafting.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), inputCount, serialize.IItemStack(catalyst), rfCost, rfRate]));
 		mods.extendedcrafting.CompressionCrafting.addRecipe(output, input, inputCount, catalyst, rfCost, rfRate);
 	}
@@ -38,7 +38,7 @@ zenClass Class_CombinationCrafting { zenConstructor() {}
 
 	// Uses of this method: 30
 	function addRecipe(output as IItemStack, rf as long, rf_t as int, centerItem as IItemStack, ingredients as IIngredient[]) as void {
-		print('Recipe wrapped: mods.extendedcrafting.CombinationCrafting.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.extendedcrafting.CombinationCrafting.addRecipe'~
 			serialize.args([serialize.IItemStack(output), rf, rf_t, serialize.IItemStack(centerItem), serialize.IIngredient__(ingredients)]));
 		mods.extendedcrafting.CombinationCrafting.addRecipe(output, rf, rf_t, centerItem, ingredients);
 	}
@@ -52,7 +52,7 @@ zenClass Class_EnderCrafting { zenConstructor() {}
 
 	// Uses of this method: 1
 	function addShaped(output as IItemStack, input2d as IIngredient[][]) as void {
-		print('Recipe wrapped: mods.extendedcrafting.EnderCrafting.addShaped'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.extendedcrafting.EnderCrafting.addShaped'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient____(input2d)]));
 		mods.extendedcrafting.EnderCrafting.addShaped(output, input2d);
 	}
@@ -66,25 +66,25 @@ zenClass Class_TableCrafting { zenConstructor() {}
 
 	// Uses of this method: 29
 	function addShaped(level as int, output as IItemStack, inputs as IIngredient[][]) as void {
-		print('Recipe wrapped: mods.extendedcrafting.TableCrafting.addShaped'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.extendedcrafting.TableCrafting.addShaped'~
 			serialize.args([level, serialize.IItemStack(output), serialize.IIngredient____(inputs)]));
 		mods.extendedcrafting.TableCrafting.addShaped(level, output, inputs);
 	}
 
 	function addShaped(output as IItemStack, inputs as IIngredient[][]) as void {
-		print('Recipe wrapped: mods.extendedcrafting.TableCrafting.addShaped'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.extendedcrafting.TableCrafting.addShaped'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient____(inputs)]));
 		mods.extendedcrafting.TableCrafting.addShaped(output, inputs);
 	}
 
 	function addShapeless(level as int, output as IItemStack, inputs as IIngredient[]) as void {
-		print('Recipe wrapped: mods.extendedcrafting.TableCrafting.addShapeless'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.extendedcrafting.TableCrafting.addShapeless'~
 			serialize.args([level, serialize.IItemStack(output), serialize.IIngredient__(inputs)]));
 		mods.extendedcrafting.TableCrafting.addShapeless(level, output, inputs);
 	}
 
 	function addShapeless(output as IItemStack, inputs as IIngredient[]) as void {
-		print('Recipe wrapped: mods.extendedcrafting.TableCrafting.addShapeless'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.extendedcrafting.TableCrafting.addShapeless'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient__(inputs)]));
 		mods.extendedcrafting.TableCrafting.addShapeless(output, inputs);
 	}

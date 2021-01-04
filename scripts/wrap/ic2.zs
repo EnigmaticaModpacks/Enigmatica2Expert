@@ -24,13 +24,13 @@ zenClass Class_BlockCutter { zenConstructor() {}
 
 	// Uses of this method: 1
 	function addRecipe(output as IItemStack, input as IIngredient) as void {
-		print('Recipe wrapped: mods.ic2.BlockCutter.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.ic2.BlockCutter.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient(input)]));
 		mods.ic2.BlockCutter.addRecipe(output, input);
 	}
 
 	function addRecipe(output as IItemStack, input as IIngredient, hardness as int) as void {
-		print('Recipe wrapped: mods.ic2.BlockCutter.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.ic2.BlockCutter.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient(input), hardness]));
 		mods.ic2.BlockCutter.addRecipe(output, input, hardness);
 	}
@@ -44,7 +44,7 @@ zenClass Class_Canner { zenConstructor() {}
 
 	// Uses of this method: 1
 	function addEnrichRecipe(output as ILiquidStack, input as ILiquidStack, additive as IIngredient) as void {
-		print('Recipe wrapped: mods.ic2.Canner.addEnrichRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.ic2.Canner.addEnrichRecipe'~
 			serialize.args([serialize.ILiquidStack(output), serialize.ILiquidStack(input), serialize.IIngredient(additive)]));
 		mods.ic2.Canner.addEnrichRecipe(output, input, additive);
 	}
@@ -58,7 +58,7 @@ zenClass Class_Compressor { zenConstructor() {}
 
 	// Uses of this method: 1
 	function addRecipe(output as IItemStack, input as IIngredient) as void {
-		print('Recipe wrapped: mods.ic2.Compressor.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.ic2.Compressor.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient(input)]));
 		mods.ic2.Compressor.addRecipe(output, input);
 	}
@@ -72,7 +72,7 @@ zenClass Class_Extractor { zenConstructor() {}
 
 	// Uses of this method: 1
 	function addRecipe(output as IItemStack, input as IIngredient) as void {
-		print('Recipe wrapped: mods.ic2.Extractor.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.ic2.Extractor.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient(input)]));
 		mods.ic2.Extractor.addRecipe(output, input);
 	}
@@ -86,7 +86,7 @@ zenClass Class_Macerator { zenConstructor() {}
 
 	// Uses of this method: 1
 	function addRecipe(output as IItemStack, input as IIngredient) as void {
-		print('Recipe wrapped: mods.ic2.Macerator.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.ic2.Macerator.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient(input)]));
 		mods.ic2.Macerator.addRecipe(output, input);
 	}
@@ -100,13 +100,13 @@ zenClass Class_ThermalCentrifuge { zenConstructor() {}
 
 	// Uses of this method: 1
 	function addRecipe(outputs as IItemStack[], input as IIngredient) as void {
-		print('Recipe wrapped: mods.ic2.ThermalCentrifuge.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.ic2.ThermalCentrifuge.addRecipe'~
 			serialize.args([serialize.IItemStack__(outputs), serialize.IIngredient(input)]));
 		mods.ic2.ThermalCentrifuge.addRecipe(outputs, input);
 	}
 
 	function addRecipe(outputs as IItemStack[], input as IIngredient, minHeat as int) as void {
-		print('Recipe wrapped: mods.ic2.ThermalCentrifuge.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.ic2.ThermalCentrifuge.addRecipe'~
 			serialize.args([serialize.IItemStack__(outputs), serialize.IIngredient(input), minHeat]));
 		mods.ic2.ThermalCentrifuge.addRecipe(outputs, input, minHeat);
 	}

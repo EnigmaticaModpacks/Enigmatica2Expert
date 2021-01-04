@@ -24,7 +24,7 @@ zenClass Class_AlloySmelter { zenConstructor() {}
 
 	// Uses of this method: 1
 	function addRecipe(output as IItemStack, first as IIngredient, second as IIngredient, time as int) as void {
-		print('Recipe wrapped: mods.immersiveengineering.AlloySmelter.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.immersiveengineering.AlloySmelter.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient(first), serialize.IIngredient(second), time]));
 		mods.immersiveengineering.AlloySmelter.addRecipe(output, first, second, time);
 	}
@@ -38,19 +38,19 @@ zenClass Class_ArcFurnace { zenConstructor() {}
 
 	// Uses of this method: 7
 	function addRecipe(output as IItemStack, input as IIngredient, slag as IItemStack, time as int, energyPerTick as int) as void {
-		print('Recipe wrapped: mods.immersiveengineering.ArcFurnace.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.immersiveengineering.ArcFurnace.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient(input), serialize.IItemStack(slag), time, energyPerTick]));
 		mods.immersiveengineering.ArcFurnace.addRecipe(output, input, slag, time, energyPerTick);
 	}
 
 	function addRecipe(output as IItemStack, input as IIngredient, slag as IItemStack, time as int, energyPerTick as int, additives as IIngredient[]) as void {
-		print('Recipe wrapped: mods.immersiveengineering.ArcFurnace.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.immersiveengineering.ArcFurnace.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient(input), serialize.IItemStack(slag), time, energyPerTick, serialize.IIngredient__(additives)]));
 		mods.immersiveengineering.ArcFurnace.addRecipe(output, input, slag, time, energyPerTick, additives);
 	}
 
 	function addRecipe(output as IItemStack, input as IIngredient, slag as IItemStack, time as int, energyPerTick as int, additives as IIngredient[], specialRecipeType as string) as void {
-		print('Recipe wrapped: mods.immersiveengineering.ArcFurnace.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.immersiveengineering.ArcFurnace.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient(input), serialize.IItemStack(slag), time, energyPerTick, serialize.IIngredient__(additives), serialize._string(specialRecipeType)]));
 		mods.immersiveengineering.ArcFurnace.addRecipe(output, input, slag, time, energyPerTick, additives, specialRecipeType);
 	}
@@ -64,19 +64,19 @@ zenClass Class_Crusher { zenConstructor() {}
 
 	// Uses of this method: 27
 	function addRecipe(output as IItemStack, input as IIngredient, energy as int) as void {
-		print('Recipe wrapped: mods.immersiveengineering.Crusher.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.immersiveengineering.Crusher.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient(input), energy]));
 		mods.immersiveengineering.Crusher.addRecipe(output, input, energy);
 	}
 
 	function addRecipe(output as IItemStack, input as IIngredient, energy as int, secondaryOutput as IItemStack) as void {
-		print('Recipe wrapped: mods.immersiveengineering.Crusher.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.immersiveengineering.Crusher.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient(input), energy, serialize.IItemStack(secondaryOutput)]));
 		mods.immersiveengineering.Crusher.addRecipe(output, input, energy, secondaryOutput);
 	}
 
 	function addRecipe(output as IItemStack, input as IIngredient, energy as int, secondaryOutput as IItemStack, secondaryChance as double) as void {
-		print('Recipe wrapped: mods.immersiveengineering.Crusher.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.immersiveengineering.Crusher.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient(input), energy, serialize.IItemStack(secondaryOutput), secondaryChance]));
 		mods.immersiveengineering.Crusher.addRecipe(output, input, energy, secondaryOutput, secondaryChance);
 	}
@@ -90,7 +90,7 @@ zenClass Class_Fermenter { zenConstructor() {}
 
 	// Uses of this method: 3
 	function addRecipe(output as IItemStack, fluid as ILiquidStack, input as IIngredient, energy as int) as void {
-		print('Recipe wrapped: mods.immersiveengineering.Fermenter.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.immersiveengineering.Fermenter.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.ILiquidStack(fluid), serialize.IIngredient(input), energy]));
 		mods.immersiveengineering.Fermenter.addRecipe(output, fluid, input, energy);
 	}
@@ -104,13 +104,13 @@ zenClass Class_MetalPress { zenConstructor() {}
 
 	// Uses of this method: 14
 	function addRecipe(output as IItemStack, input as IIngredient, mold as IItemStack, energy as int) as void {
-		print('Recipe wrapped: mods.immersiveengineering.MetalPress.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.immersiveengineering.MetalPress.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient(input), serialize.IItemStack(mold), energy]));
 		mods.immersiveengineering.MetalPress.addRecipe(output, input, mold, energy);
 	}
 
 	function addRecipe(output as IItemStack, input as IIngredient, mold as IItemStack, energy as int, inputSize as int) as void {
-		print('Recipe wrapped: mods.immersiveengineering.MetalPress.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.immersiveengineering.MetalPress.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient(input), serialize.IItemStack(mold), energy, inputSize]));
 		mods.immersiveengineering.MetalPress.addRecipe(output, input, mold, energy, inputSize);
 	}
@@ -124,7 +124,7 @@ zenClass Class_Mixer { zenConstructor() {}
 
 	// Uses of this method: 1
 	function addRecipe(output as ILiquidStack, fluidInput as ILiquidStack, itemInputs as IIngredient[], energy as int) as void {
-		print('Recipe wrapped: mods.immersiveengineering.Mixer.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.immersiveengineering.Mixer.addRecipe'~
 			serialize.args([serialize.ILiquidStack(output), serialize.ILiquidStack(fluidInput), serialize.IIngredient__(itemInputs), energy]));
 		mods.immersiveengineering.Mixer.addRecipe(output, fluidInput, itemInputs, energy);
 	}
@@ -138,7 +138,7 @@ zenClass Class_Squeezer { zenConstructor() {}
 
 	// Uses of this method: 2
 	function addRecipe(output as IItemStack, fluid as ILiquidStack, input as IIngredient, energy as int) as void {
-		print('Recipe wrapped: mods.immersiveengineering.Squeezer.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.immersiveengineering.Squeezer.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.ILiquidStack(fluid), serialize.IIngredient(input), energy]));
 		mods.immersiveengineering.Squeezer.addRecipe(output, fluid, input, energy);
 	}

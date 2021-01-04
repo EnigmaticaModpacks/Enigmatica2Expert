@@ -24,19 +24,19 @@ zenClass Class_Crusher { zenConstructor() {}
 
 	// Uses of this method: 4
 	function add(output as IItemStack, input as IItemStack) as void {
-		print('Recipe wrapped: mods.extrautils2.Crusher.add'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.extrautils2.Crusher.add'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input)]));
 		mods.extrautils2.Crusher.add(output, input);
 	}
 
 	function add(output as IItemStack, input as IItemStack, secondaryOutput as IItemStack) as void {
-		print('Recipe wrapped: mods.extrautils2.Crusher.add'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.extrautils2.Crusher.add'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), serialize.IItemStack(secondaryOutput)]));
 		mods.extrautils2.Crusher.add(output, input, secondaryOutput);
 	}
 
 	function add(output as IItemStack, input as IItemStack, secondaryOutput as IItemStack, secondaryChance as float) as void {
-		print('Recipe wrapped: mods.extrautils2.Crusher.add'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.extrautils2.Crusher.add'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), serialize.IItemStack(secondaryOutput), secondaryChance]));
 		mods.extrautils2.Crusher.add(output, input, secondaryOutput, secondaryChance);
 	}
@@ -50,13 +50,13 @@ zenClass Class_Resonator { zenConstructor() {}
 
 	// Uses of this method: 1
 	function add(output as IItemStack, input as IItemStack, energy as int) as void {
-		print('Recipe wrapped: mods.extrautils2.Resonator.add'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.extrautils2.Resonator.add'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), energy]));
 		mods.extrautils2.Resonator.add(output, input, energy);
 	}
 
 	function add(output as IItemStack, input as IItemStack, energy as int, addOwnerTag as bool) as void {
-		print('Recipe wrapped: mods.extrautils2.Resonator.add'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.extrautils2.Resonator.add'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), energy, addOwnerTag]));
 		mods.extrautils2.Resonator.add(output, input, energy, addOwnerTag);
 	}

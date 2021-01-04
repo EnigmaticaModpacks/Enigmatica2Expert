@@ -87,7 +87,7 @@ zenClass Craft {
         return;
          */
         scripts.wrap.extendedcrafting.TableCrafting.addShaped(output, grd);
-        print("Adding shaped Extended Crafting Table recipe " ~ rName);
+        utils.log("Adding shaped Extended Crafting Table recipe " ~ rName);
         if (!isNull(fnc)) { logger.logWarning("Cant add recipe function to Extended Crafting table, recipe: " ~ rName); }
       } else {
         recipes.addShaped(rName, output, grd, fnc, null);

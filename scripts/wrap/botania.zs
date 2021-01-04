@@ -24,13 +24,13 @@ zenClass Class_PureDaisy { zenConstructor() {}
 
 	// Uses of this method: 11
 	function addRecipe(blockInput as IIngredient, blockOutput as IItemStack) as void {
-		print('Recipe wrapped: mods.botania.PureDaisy.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.botania.PureDaisy.addRecipe'~
 			serialize.args([serialize.IIngredient(blockInput), serialize.IItemStack(blockOutput)]));
 		mods.botania.PureDaisy.addRecipe(blockInput, blockOutput);
 	}
 
 	function addRecipe(blockInput as IIngredient, blockOutput as IItemStack, time as int) as void {
-		print('Recipe wrapped: mods.botania.PureDaisy.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.botania.PureDaisy.addRecipe'~
 			serialize.args([serialize.IIngredient(blockInput), serialize.IItemStack(blockOutput), time]));
 		mods.botania.PureDaisy.addRecipe(blockInput, blockOutput, time);
 	}

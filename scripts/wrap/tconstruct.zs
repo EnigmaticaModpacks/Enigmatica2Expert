@@ -24,7 +24,7 @@ zenClass Class_Alloy { zenConstructor() {}
 
 	// Uses of this method: 10
 	function addRecipe(output as ILiquidStack, inputs as ILiquidStack[]) as void {
-		print('Recipe wrapped: mods.tconstruct.Alloy.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.tconstruct.Alloy.addRecipe'~
 			serialize.args([serialize.ILiquidStack(output), serialize.ILiquidStack__(inputs)]));
 		mods.tconstruct.Alloy.addRecipe(output, inputs);
 	}
@@ -38,37 +38,37 @@ zenClass Class_Casting { zenConstructor() {}
 
 	// Uses of this method: 22
 	function addTableRecipe(output as IItemStack, cast as IIngredient, fluid as ILiquidStack, amount as int) as void {
-		print('Recipe wrapped: mods.tconstruct.Casting.addTableRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.tconstruct.Casting.addTableRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient(cast), serialize.ILiquidStack(fluid), amount]));
 		mods.tconstruct.Casting.addTableRecipe(output, cast, fluid, amount);
 	}
 
 	function addTableRecipe(output as IItemStack, cast as IIngredient, fluid as ILiquidStack, amount as int, consumeCast as bool) as void {
-		print('Recipe wrapped: mods.tconstruct.Casting.addTableRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.tconstruct.Casting.addTableRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient(cast), serialize.ILiquidStack(fluid), amount, consumeCast]));
 		mods.tconstruct.Casting.addTableRecipe(output, cast, fluid, amount, consumeCast);
 	}
 
 	function addTableRecipe(output as IItemStack, cast as IIngredient, fluid as ILiquidStack, amount as int, consumeCast as bool, time as int) as void {
-		print('Recipe wrapped: mods.tconstruct.Casting.addTableRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.tconstruct.Casting.addTableRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient(cast), serialize.ILiquidStack(fluid), amount, consumeCast, time]));
 		mods.tconstruct.Casting.addTableRecipe(output, cast, fluid, amount, consumeCast, time);
 	}
 
 	function addBasinRecipe(output as IItemStack, cast as IIngredient, fluid as ILiquidStack, amount as int) as void {
-		print('Recipe wrapped: mods.tconstruct.Casting.addBasinRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.tconstruct.Casting.addBasinRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient(cast), serialize.ILiquidStack(fluid), amount]));
 		mods.tconstruct.Casting.addBasinRecipe(output, cast, fluid, amount);
 	}
 
 	function addBasinRecipe(output as IItemStack, cast as IIngredient, fluid as ILiquidStack, amount as int, consumeCast as bool) as void {
-		print('Recipe wrapped: mods.tconstruct.Casting.addBasinRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.tconstruct.Casting.addBasinRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient(cast), serialize.ILiquidStack(fluid), amount, consumeCast]));
 		mods.tconstruct.Casting.addBasinRecipe(output, cast, fluid, amount, consumeCast);
 	}
 
 	function addBasinRecipe(output as IItemStack, cast as IIngredient, fluid as ILiquidStack, amount as int, consumeCast as bool, time as int) as void {
-		print('Recipe wrapped: mods.tconstruct.Casting.addBasinRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.tconstruct.Casting.addBasinRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient(cast), serialize.ILiquidStack(fluid), amount, consumeCast, time]));
 		mods.tconstruct.Casting.addBasinRecipe(output, cast, fluid, amount, consumeCast, time);
 	}
@@ -82,13 +82,13 @@ zenClass Class_Melting { zenConstructor() {}
 
 	// Uses of this method: 33
 	function addRecipe(output as ILiquidStack, input as IIngredient) as void {
-		print('Recipe wrapped: mods.tconstruct.Melting.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.tconstruct.Melting.addRecipe'~
 			serialize.args([serialize.ILiquidStack(output), serialize.IIngredient(input)]));
 		mods.tconstruct.Melting.addRecipe(output, input);
 	}
 
 	function addRecipe(output as ILiquidStack, input as IIngredient, temp as int) as void {
-		print('Recipe wrapped: mods.tconstruct.Melting.addRecipe'~
+		if(utils.DEBUG) print('Recipe wrapped: mods.tconstruct.Melting.addRecipe'~
 			serialize.args([serialize.ILiquidStack(output), serialize.IIngredient(input), temp]));
 		mods.tconstruct.Melting.addRecipe(output, input, temp);
 	}
