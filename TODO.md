@@ -4,14 +4,11 @@
 
 -----------
 
-- 🌿 [x] Write Patchouli for new stuff
 
 ## Planned
 
 -----------
 
-- 🌍 [x] Reload JER world data. Its also not showing
-- 🔷 [ ] Disable Liquid Interactions
 
 - 𝓩𝒮 [ ] Craft.zs makes feather disableable (README note or additional functionality)
 - 𝓩𝒮 [ ] Craft.zs if string has only 1 character width "pretty" should be removed
@@ -24,14 +21,6 @@
 - 𝓩𝒮 [ ] Craft.zs `Fruit` letters key
 - 𝓩𝒮 [ ] Craft.zs "Plain items" to just copy inventory of chest
 
-- 𝓩𝒮 [ ] Remove on release:
-  - excessive logging for non-debug clients
-  - 🔴 Mod Extended Items Information
-  - 🔴 Satako (lib fo ^)
-  - 🔴 Probe
-
-- 𝓙𝙎 [ ] Translate to Russian:
-  - tips.txt
 
 ### Do after process.zs class rework:
 
@@ -56,21 +45,16 @@
 
 -----------
 
+- 🔷 [ ] Fix Liquid Interactions
 - 🔷 [ ] Make some ORE spawn only on planets
 - 🔷 [ ] Check why magnet shapeless recipes dissapeared
 - 🔷 [ ] ⚙️ Primal Mana in other machines (no machines accept 3 liquids yet)
-- 🔷 [ ] Fake players can use Agriculture cans ?
-- 💜 [ ] Account Thaumcraft's aspects cost
-- 💜 [ ] Check why Lumium so pricy
-- 💜 [ ] UU Forbid ME drives to be replicable
-- 💜 [ ] UU Silicon Wafer cant be seen in UU
 - 🔷 [ ] Pefect Fuel. Summ of several best fuels. Probably bunch of drums together
 - 🔷 [ ] Tcon Armor that speed up time in bottle
 - 🔷 [ ] Wrong Uranium in oredict
 - 🌿 [ ] Patchouli book texture
 - 🔷 [ ] Magic processing byproducts
 - 🌍 [ ] New AdvRocke atmospheres
-- 𝓩𝒮 [ ] Ice Balls stack up to 64. Somehow not working, reported to github
 - 𝓩𝒮 [ ] New Pam's traps. Not actually working, new recipes wouldn't appear
 - ✏️ [ ] 4 Singularity => Creative bin
 - ✏️ [ ] Light Blue Clear Glass have empty chiseling group
@@ -84,6 +68,13 @@
 - 💥 [ ] **Rats** Structures Generation
 - 💥 [ ] Uses of singularities
 - 🟢 [ ] Replace EnderIO modular to all-in-one version
+- 𝓙𝙎 [ ] Translate to Russian: E2E book
+- 𝓙𝙎 [ ] Translate to Russian: JER dimension names
+- 𝓙𝙎 [ ] Translate to Russian: Tools doesnot work
+- 💜 [ ] Account Thaumcraft's aspects cost
+- 💜 [ ] Check why Lumium so pricy
+- 💜 [ ] UU Forbid ME drives to be replicable
+- 💜 [ ] UU Silicon Wafer cant be seen in UU
 
 ## Items for crafting
 

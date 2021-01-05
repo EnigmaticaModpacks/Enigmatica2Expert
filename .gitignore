@@ -65,3 +65,5 @@ config/tellme/*
 resources/mechanics/blockstates
 resources/mechanics/models
 !resources/mechanics/lang
+
+dev/lang/tmp
