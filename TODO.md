@@ -51,7 +51,6 @@
 - 🔷 [ ] ⚙️ Primal Mana in other machines (no machines accept 3 liquids yet)
 - 🔷 [ ] Pefect Fuel. Summ of several best fuels. Probably bunch of drums together
 - 🔷 [ ] Tcon Armor that speed up time in bottle
-- 🔷 [ ] Wrong Uranium in oredict
 - 🌿 [ ] Patchouli book texture
 - 🔷 [ ] Magic processing byproducts
 - 🌍 [ ] New AdvRocke atmospheres
@@ -59,6 +58,7 @@
 - ✏️ [ ] 4 Singularity => Creative bin
 - ✏️ [ ] Light Blue Clear Glass have empty chiseling group
 - 🌍 [ ] At dim 118 water animals not spawning. Also add more BoP plants on bottom of ocean
+- 🌍 [ ] Teleporting to Dim 115 can cause crash
 - 🧩 [ ] Amber Dissapeared from TCon tool parts
 - 𝓩𝒮 [ ] Change some merchants: https://docs.blamejared.com/1.12/en/Mods/RockyTweaks/Merchant/
 - 𝓩𝒮 [ ] Requious Frakto JEI stuff
