@@ -38,7 +38,7 @@ Patchouli_js([{
 	title: 'Cyclic Machines',
 	item:  'cyclicmagic:auto_crafter',
   type:  'grid_text',
-	text:  'This machines not using $(l)RF/$ anymore:',
+	text:  `These machines don't use $(l)RF/$ anymore`,
   ...item$i([
 		'auto_crafter',
 		'auto_packager',
