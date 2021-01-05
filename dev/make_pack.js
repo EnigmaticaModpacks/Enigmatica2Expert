@@ -8,15 +8,18 @@ const { execSync } = require('child_process')
 const fs = require('fs-extra')
 const path = require('path')
 const AdmZip = require('adm-zip')
-const {write, end, globs, dot} = require('./lib/utils.js')
+const {write, end, globs} = require('./lib/utils.js')
 const glob = require('glob')
 const del = require('del')
 const copyfiles = require('copyfiles')
+const replace = require('replace-in-file')
+
+const dot=()=>write('.')
 
 const distrDir = 'D:/MEGA_LD-LocksTO/Enigmatica/Distributable/'
-// const serverPath = 'D:/mc_server/E2E-Extended-Server/'
-const serverPath = 'D:/mc_server/test-folder/'
+const serverPath = 'D:/mc_server/E2E-Extended-Server/'
 const serverOverrides = 'D:/MEGA_LD-LocksTO/Enigmatica/server-overrides/'
+const ruOverrides = path.join(process.cwd(), 'dev/lang/ru_ru/')
 const tmpDir = 'D:/mc_tmp/'
 const zipPath = `${tmpDir}tmp.zip`
 const unzipDir = `${tmpDir}unzip/`
@@ -52,6 +55,7 @@ end()
 const removeGlob = [
   '*',
   '.gitignore',
+  'scripts/debug.zs',
   '!config',
   '!minemenu',
   '!patchouli_books',
@@ -138,4 +142,13 @@ end()
 
 // Add TL.exe
 addToPack(`${distrDir}TL.exe`)
+
+replace.sync({
+  files: 'config/defaultoptions/options.txt',
+  from: /^lang:\w+$/,
+  to: 'lang:ru_ru',
+})
+
+fs.copySync(ruOverrides, './', {overwrite: true})
+
 makeZip(`${distrDir}~E2E-Extended_RU_${version}.zip`)

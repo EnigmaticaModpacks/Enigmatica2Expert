@@ -79,7 +79,6 @@ module.exports.begin = function(...args) {
 }
 
 module.exports.write = module.exports.begin
-module.exports.dot = module.exports.write('.')
 
 module.exports.end = function(...args) {
   process.stdout.write(args.length ===0 ? ' done' :args.join('\t'))
