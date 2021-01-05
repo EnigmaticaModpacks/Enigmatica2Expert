@@ -30,9 +30,11 @@ Promise.all(union.map(m=>curseforge.getMod(m.addonID))).then(cursedUnion => {
   }
   
   for (const [key, rawList] of Object.entries(result)) {
-    let list = rawList.map(l=>
-      `<img src="${l.logo?.thumbnailUrl}" width="50"> | **\`${l.name}\`** <br> ${l.summary}`
-      )
+    const list = rawList.map(l=>{
+      const modFileName = union.find(o=>o.addonID===l.id)?.installedFile.FileNameOnDisk
+      return `<img src="${l.logo?.thumbnailUrl}" width="50"> | ` +
+        `**\`${l.name}\`** <sup>${modFileName}</sup> <br> ${l.summary}`
+      })
 
     injectInFile('MODS.md', 
     `<!-- Automatic generated list ${key} -->\n`,
