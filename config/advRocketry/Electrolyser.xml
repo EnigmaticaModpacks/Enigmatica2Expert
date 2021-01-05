@@ -50,7 +50,6 @@
 		<output>
 			<fluidStack>sodium 144</fluidStack>
 			<fluidStack>oxygen 500</fluidStack>
-			<fluidStack>water 1000</fluidStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -84,7 +83,6 @@
 		<output>
 			<fluidStack>deuterium 1000</fluidStack>
 			<fluidStack>tritium 50</fluidStack>
-			<fluidStack>oxygen 500</fluidStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -96,7 +94,6 @@
 		<output>
 			<fluidStack>deuterium 1000</fluidStack>
 			<fluidStack>tritium 50</fluidStack>
-			<fluidStack>oxygen 500</fluidStack>
 		</output>
 	</Recipe>
 </Recipes>
