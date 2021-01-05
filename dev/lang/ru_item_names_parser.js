@@ -59,8 +59,8 @@ const newlang =
 _.uniqBy(
 _.uniqBy(
   csv.filter(isNeedLoc), 
-e=>e.DISPLAY_NAME), 
-f=>f.UNLOCALIZED)
+'DISPLAY_NAME'), 
+'UNLOCALIZED')
 // const newlang = csv.filter(isNeedLoc)
 .filter(o=>!csv.some(p=>p.UNLOCALIZED===o.UNLOCALIZED && !isNeedLoc(p)))
 .filter(o=>!o.DISPLAY_NAME.match(/(\w+\.)+\w+/))
@@ -76,7 +76,7 @@ const newLangready = fs.readFileSync(
 
 const addsNewLang = newlang.map((o,i)=>
   newLangready[i].match(/.*[а-яА-Я].*/)
-  ? `${o.UNLOCALIZED}=${newLangready[i]}`
+  ? `${o.UNLOCALIZED}.name=${newLangready[i]}`
   : ''
 )
 .filter(o=>o!=='')

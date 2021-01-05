@@ -59,6 +59,13 @@ zenClass Descriptor {
 		else
 			addDescription(item, localized);
 	}
+	function describe(item as ILiquidStack, localized as string) as void {
+		if(localized.startsWith(langPrefix)) return;
+		if(localized.contains("\n")) 
+			addDescription(item, localized.split("\n"));
+		else
+			addDescription(item, localized);
+	}
 
 	/*
 		Other functions
@@ -231,7 +238,7 @@ desc.both(<libvulpes:productingot:7>, "obtained.fabricator_or_excavator"); # Tit
 <modularmachinery:itemmodularium>.displayName = desc.local("modularium_alloy");
 
 # Solar Panels
-val or_above = " " ~ desc.lang("et.or_above");
+val or_above = " " ~ desc.local("et.or_above");
 for i,a in [
 	[4,16,9],
 	[4,24,25],
