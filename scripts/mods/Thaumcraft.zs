@@ -37,9 +37,18 @@ scripts.wrap.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreLead>, <thermalfo
 
 # Removing wrong aspects from stuff
 	<ic2:dust:21>.setAspects(<aspect:metallum> * 1);
-	
-# Temp Recipes
-	recipes.addShapedMirrored("Temporary Void Seed Recipe", <thaumcraft:void_seed> * 4, [[<ore:mycelium>, <ore:crystalLonsdaleite>, <ore:mycelium>],[<ore:crystalLonsdaleite>, <mysticalagriculture:crafting:21>, <ore:crystalLonsdaleite>], [<ore:mycelium>, <ore:crystalLonsdaleite>, <ore:mycelium>]]);
+
+# [Equisetum_Ineris_Spore*4] from [Insanium_Essence][+2]
+craft.remake(<thaumcraft:void_seed> * 4, ["pretty",
+  "S A S",
+  "B I B",
+  "I L I"], {
+  B: <contenttweaker:blasted_coal>,
+  S: <exnihilocreatio:item_material:3>,
+	L: <botania:rune:14>,
+  I: <ore:essenceInsanium>,
+	A: <thaumcraft:taint_rock>|<thaumcraft:taint_soil>|<thaumcraft:taint_crust>,
+});
 
 # Wood Table
 	recipes.remove(<thaumcraft:table_wood>);
