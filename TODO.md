@@ -8,6 +8,20 @@
 ## Planned
 
 -----------
+- 📖 [ ] Enchance Armor quests, Guardian of Gaia quest
+- 📖 [ ] Win splash should be "Completing these items means winning the modpack!"
+- 📖 [ ] High oven quest more uses
+- 📖 [ ] Remove Osmium from `Level 5` quest or make bedrock-spawning ore something mid-game
+- 🧩 [ ] Primal Metal uncraftable (Probably Thaumic Augmentation disables it)
+- ✏️ [ ] Block Insanium => 9 Ingots
+- 🔷 [ ] Move platinum to Nether, make it way harder
+- 🔷 [ ] Remove Excess Mining levels: 
+  1. Collapse first 7 tiers in 5, as in vanilla. (Flint, Iron, Redstone, Obsidian, Cobalt)
+  2. Collapse last 7 tiers into 3. (Osgloglas, Enderium/Titanium, Supremium).
+- 🌿 Add Lava (and other default fuels) to smeltery fuel list
+- ✏️ Cheaper Furnace recipe
+- 𝓙𝙎 Add link to mod in mod list
+- Higher Mining level Ore should spawn lower
 
 
 - 𝓩𝒮 [ ] Craft.zs makes feather disableable (README note or additional functionality)
