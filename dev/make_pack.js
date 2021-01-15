@@ -9,9 +9,7 @@ const fs = require('fs-extra')
 const path = require('path')
 const AdmZip = require('adm-zip')
 const {write, end, globs} = require('./lib/utils.js')
-const glob = require('glob')
 const del = require('del')
-const copyfiles = require('copyfiles')
 const replace = require('replace-in-file')
 
 const dot=()=>write('.')
@@ -19,7 +17,7 @@ const dot=()=>write('.')
 const distrDir = 'D:/MEGA_LD-LocksTO/Enigmatica/Distributable/'
 const serverPath = 'D:/mc_server/E2E-Extended-Server/'
 const serverOverrides = 'D:/MEGA_LD-LocksTO/Enigmatica/server-overrides/'
-const ruOverrides = path.join(process.cwd(), 'dev/lang/ru_ru/')
+const ruOverrides = path.join(process.cwd(), 'dev/lang/ru_ru/') // eslint-disable-line no-undef
 const tmpDir = 'D:/mc_tmp/'
 const zipPath = `${tmpDir}tmp.zip`
 const unzipDir = `${tmpDir}unzip/`
@@ -44,7 +42,8 @@ end()
 
 // Get all files from latest Git commit (current branch)
 write(`git archive ${zipPath} ... `)
-execSync(`git archive --output=${zipPath} head`)
+// execSync(`git archive --output=${zipPath} head`)
+execSync(`git archive --output=${zipPath} tags/${version}`)
 end()
 
 // Extract to folder
@@ -60,6 +59,7 @@ const removeGlob = [
   '!minemenu',
   '!patchouli_books',
   '!resourcepacks',
+  '!shaderpacks',
   '!resources',
   '!schematics',
   '!scripts',
@@ -111,15 +111,66 @@ makeZip(`${distrDir}~E2E-Extended_${version}.zip`)
 ********************************************************/
 
 write('Installing server. Removing mods ')
-fs.rmdirSync(`${serverPath}/mods/`   , { recursive: true })
-dot()
-fs.rmdirSync(`${serverPath}/scripts/`, { recursive: true })
-end()
+fs.rmdirSync(`${serverPath}/mods/`   , { recursive: true }); dot()
+fs.rmdirSync(`${serverPath}/scripts/`, { recursive: true }); end()
+
 
 write('copying files ')
 globs([
   '*',
   '!minemenu',
+  '!resourcepacks',
+  'mods/*',
+  '!mods',
+  
+  // Im sure
+  '!mods/ShoulderSurfing*.jar',
+  '!mods/IconExporter*.jar',
+  '!mods/MouseTweaks*.jar',
+
+  // Not sure
+  '!mods/BetterAdvancements*.jar',
+  '!mods/betteranimals-*.jar',
+  '!mods/BetterFps*.jar',
+  '!mods/ChunkAnimator*.jar',
+  '!mods/Controlling-*.jar',
+  '!mods/CustomMainMenu*.jar',
+  '!mods/DamageTilt*.jar',
+  '!mods/DefaultOptions*.jar',
+  '!mods/DiscordSuite*.jar',
+  '!mods/DynamicSurroundings*.jar',
+  '!mods/dynamistics*.jar',
+  '!mods/enough-harvestcraft*.jar',
+  '!mods/FpsReducer*.jar',
+  '!mods/gendustryjei*.jar',
+  '!mods/Hwyla*.jar',
+  '!mods/InvMove*.jar',
+  '!mods/jeibees*.jar',
+  '!mods/jeivillagers*.jar',
+  '!mods/jetif*.jar',
+  '!mods/JustEnoughPetroleum*.jar',
+  '!mods/JustEnoughReactors*.jar',
+  '!mods/JustEnoughResources*.jar',
+  '!mods/justthetips*.jar',
+  '!mods/keywizard*.jar',
+  '!mods/lootcapacitortooltips*.jar',
+  '!mods/mekanismfluxified*.jar',
+  '!mods/MemoryTester*.jar',
+  '!mods/MineMenu*.jar',
+  '!mods/moreoverlays*.jar',
+  '!mods/Neat*.jar',
+  '!mods/NoNVFlash*.jar',
+  '!mods/OreLib*.jar',
+  '!mods/overloadedarmorbar*.jar',
+  '!mods/potiondescriptions*.jar',
+  '!mods/ReAuth*.jar',
+  '!mods/ReBind*.jar',
+  '!mods/TipTheScales*.jar',
+  '!mods/Toast Control*.jar',
+  '!mods/torohealth*.jar',
+  '!mods/toughnessbar*.jar',
+  '!mods/WailaHarvestability*.jar',
+  '!mods/Wawla*.jar',
 ]).forEach((fPath, i)=>{
   if(i%50==0) dot()
   fs.copySync(
