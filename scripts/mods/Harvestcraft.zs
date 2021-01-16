@@ -26,19 +26,15 @@ scripts.wrap.thermalexpansion.Pulverizer.addRecipe(<harvestcraft:groundvenisonit
 
 
 # Seeds/Crops that already have recipe added by IE and oredicted, will be removed and re-added from oredict
-                         
-val blacklist_fermenter = [<minecraft:potato>] as IItemStack[];
-
-val blacklist_squeezer = [<minecraft:wheat_seeds>,
-                         <minecraft:pumpkin_seeds>,
-                         <minecraft:beetroot_seeds>,
-                         <minecraft:melon_seeds>] as IItemStack[];
-
-for item in blacklist_fermenter {
+for item in [<minecraft:potato>] as IItemStack[] {
     mods.immersiveengineering.Fermenter.removeByInput(item);
 }
 
-for item in blacklist_squeezer {
+for item in [<minecraft:wheat_seeds>,
+    <minecraft:pumpkin_seeds>,
+    <minecraft:beetroot_seeds>,
+    <minecraft:melon_seeds>
+] as IItemStack[] {
     mods.immersiveengineering.Squeezer.removeByInput(item);
 }
 
@@ -56,4 +52,13 @@ for item in <ore:listAllberry>.items {
 
 for item in <ore:listAllseed>.items {
     scripts.wrap.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 80, item, 500);
+}
+
+
+for i, dye in scripts.category.dye.oreDye {
+    if(i==0) continue;
+    craft.reshapeless(itemUtils.getItem("harvestcraft:candledeco"~(i+1)) * 4, "AAAAc", {
+        A: <harvestcraft:candledeco1>,
+        c: dye,
+    });
 }
