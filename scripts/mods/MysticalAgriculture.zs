@@ -421,30 +421,23 @@ for i in 0 .. 4 {
 }
 
 # Missed 4 types of dyes
-craft.make(<biomesoplenty:green_dye>, ["pretty",
+val dyeEssence = {x: <mysticalagriculture:dye_essence>} as IIngredient[string];
+craft.make(<biomesoplenty:green_dye> * 4, ["pretty",
 	"x    ",
 	"  x  ",
-	"x    "], {
-	x: <mysticalagriculture:dye_essence>
-});
-craft.make(<biomesoplenty:brown_dye>, ["pretty",
+	"x    "], dyeEssence);
+craft.make(<biomesoplenty:brown_dye> * 4, ["pretty",
 	"  x  ",
 	"    x",
-	"  x  "], {
-	x: <mysticalagriculture:dye_essence>
-});
-craft.make(<biomesoplenty:blue_dye>, ["pretty",
+	"  x  "], dyeEssence);
+craft.make(<biomesoplenty:blue_dye> * 4, ["pretty",
 	"    x",
 	"  x  ",
-	"    x"], {
-	x: <mysticalagriculture:dye_essence>
-});
-craft.make(<biomesoplenty:white_dye>, ["pretty",
+	"    x"], dyeEssence);
+craft.make(<biomesoplenty:white_dye> * 4, ["pretty",
 	"  x  ",
 	"x    ",
-	"  x  "], {
-	x: <mysticalagriculture:dye_essence>
-});
+	"  x  "], dyeEssence);
 
 # Squeeze cow essence
 scripts.process.squeeze([<mysticalagriculture:cow_essence>], <liquid:milk> * 250, "no exceptions", null);
