@@ -190,7 +190,7 @@ scripts.wrap.forestry.Carpenter.addRecipe(<actuallyadditions:block_misc:6> * 4,
 # Buff propolis to slime (was 1 poor slime ball)
 # [Knightslime_Nugget*3] from [Pollen_Cluster][+1]
 recipes.removeByRecipeName("forestry:propolis_to_slime");
-craft.remake(<tconstruct:nuggets:3> * 3, ["pretty",
+craft.make(<tconstruct:nuggets:3> * 3, ["pretty",
   "P o P",
   "P o P",
   "P o P"], {
