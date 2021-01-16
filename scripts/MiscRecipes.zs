@@ -310,13 +310,15 @@ import scripts.craft.grid.Grid;
 	[<ore:plateAluminum>, null, <ore:plateAluminum>], 
 	[<ore:plateAluminum>, <ore:plateAluminum>, <ore:plateAluminum>]]);
 
-# Furnace
-	recipes.remove(<minecraft:furnace>);
-	recipes.addShapedMirrored("Furnace", 
-	<minecraft:furnace>, 
-	[[<ore:compressed1xCobblestone>, <ore:cobblestone>, <ore:compressed1xCobblestone>],
-	[<ore:gearStone>, <minecraft:coal:*>, <ore:gearStone>], 
-	[<ore:compressed1xCobblestone>, <ore:cobblestone>, <ore:compressed1xCobblestone>]]);
+# [Furnace] from [Coal][+2]
+	craft.remake(<minecraft:furnace>, ["pretty",
+		"░ ░ ░",
+		"S ☺ S",
+		"░ ░ ░"], {
+		"░": <ore:cobblestone>, # Cobblestone
+		"S": <ore:gearStone>,   # Stone Gear
+		"☺": <minecraft:coal:*> # Coal
+	});
 
 # Hopper
 	recipes.remove(<minecraft:hopper>);
