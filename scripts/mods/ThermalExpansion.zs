@@ -391,3 +391,8 @@ craft.remake(<thermalfoundation:upgrade:3>, ["pretty",
 # Remove TE vanilla compass & clock slag dupes
 mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft:compass>);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft:clock>);
+
+# Process Geodes
+scripts.process.crush(<thermalfoundation:geode>, <mysticalagradditions:insanium:5>, "No exceptions", 
+  [<mysticalagradditions:insanium:5>], [0.25]);
+
