@@ -804,16 +804,18 @@ function workEx(machineNameAnyCase as string, exceptions as string,
 
     if (machineName == "vat") {
       if (inputItems.length <= 2) {
-        var s = "<recipe name=\"" ~ outputLiquid0.displayName ~ "\" required=\"true\"><fermenting energy=\"10000\">\n";
+        var s = '<recipe name="' ~ outputLiquid0.displayName ~ '" required="true"><fermenting energy="10000">\n';
+        val in_f = (inputLiquid0.amount as float) / 1000;
+        val out_f = (outputLiquid0.amount as float) / 1000;
         for inIngr in inputItems {
-          s = s ~ "  <inputgroup>\n";
+          s = s ~ '  <inputgroup>\n';
           for ii in inIngr.itemArray {
-            s = s ~ "    <input name=\"" ~ ii.commandString.replaceAll("[<>]", "") ~ "\" multiplier=\"1.0\" />\n";
+            s = s ~ '    <input name="' ~ ii.commandString.replaceAll("[<>]", "") ~ '" multiplier="' ~ in_f / inputItems.length ~ '" />\n';
           }
-          s = s ~ "  </inputgroup>\n";
+          s = s ~ '  </inputgroup>\n';
         }
-        s = s ~ "    <inputfluid name=\"" ~ inputLiquid0.name ~ "\" multiplier=\"" ~ (outputLiquid0.amount as float) / 1000 ~ "\" />\n";
-        s = s ~ "    <outputfluid name=\"" ~ outputLiquid0.name ~ "\" /></fermenting></recipe>";
+        s = s ~ '    <inputfluid name="' ~ inputLiquid0.name ~ '" multiplier="' ~ in_f / out_f ~ '" />\n';
+        s = s ~ '    <outputfluid name="' ~ outputLiquid0.name ~ '" /></fermenting></recipe>';
 
         xmlRecipe("./config/enderio/recipes/user/user_recipes.xml", s);
         # mods.enderio.Vat.addRecipe(ILiquidStack output, ILiquidStack input, IIngredient[] slot1Solids, float[] slot1Mults, IIngredient[] slot2Solids, float[] slot2Mults, @Optional int energyCost);

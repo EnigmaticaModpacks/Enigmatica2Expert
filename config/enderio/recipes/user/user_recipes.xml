@@ -488,22 +488,13 @@
       <output name="minecraft:hopper, blockHopper"/>
     </crafting>
   </recipe>
-  <recipe name="sand" required="true">
-    <fermenting energy="10000">
-      <inputgroup>
-        <input name="minecraft:soul_sand" multiplier="1.0"/>
-      </inputgroup>
-      <inputfluid name="blueslime" multiplier="1.0"/>
-      <outputfluid name="sand"/>
-    </fermenting>
-  </recipe>
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Construction Foam" required="true">
     <fermenting energy="10000">
       <inputgroup>
-        <input name="buildinggadgets:constructionpaste" multiplier="1.0"/>
+        <input name="buildinggadgets:constructionpaste" multiplier="4.0"/>
       </inputgroup>
-      <inputfluid name="water" multiplier="4.0"/>
+      <inputfluid name="water" multiplier="1.0"/>
       <outputfluid name="ic2construction_foam"/>
     </fermenting>
   </recipe>
@@ -521,9 +512,9 @@
   <recipe name="Milk" required="true">
     <fermenting energy="10000">
       <inputgroup>
-        <input name="ic2:dust:33" multiplier="1.0"/>
+        <input name="ic2:dust:33" multiplier="0.25"/>
       </inputgroup>
-      <inputfluid name="water" multiplier="0.25"/>
+      <inputfluid name="water" multiplier="1.0"/>
       <outputfluid name="milk"/>
     </fermenting>
   </recipe>
