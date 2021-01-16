@@ -331,3 +331,14 @@ for i in 0 .. 6 {
 		". . . . . . . . ."], evtIngrs);
 	}
 }
+
+# Remake alabaster from cobblestone instead of stone
+# Because alabaster is yet another building colored stone and should be a bit less pricy
+recipes.removeByRecipeName("environmentalmaterials:m_alabaster/normal/alabaster_c_white_temp");
+craft.make(<environmentalmaterials:alabaster> * 5, ["pretty",
+  "░ d ░",
+  "d ░ d",
+  "░ d ░"], {
+  "░": <ore:cobblestone>, # Cobblestone
+  "d": <ore:dyeWhite>
+});
