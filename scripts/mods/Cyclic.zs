@@ -167,7 +167,7 @@ craft.remake(<cyclicmagic:charm_boat>, ["pretty",
 
 # Soul stone as T3 crafting ingredient
 recipes.remove(<cyclicmagic:soulstone>);
-mods.rockytweaks.Anvil.addRecipe(<cyclicmagic:ender_pearl_mounted>, <cyclicmagic:crystallized_obsidian>, <cyclicmagic:soulstone>, 50);
+mods.rockytweaks.Anvil.addRecipe(<cyclicmagic:ender_pearl_mounted>, <cyclicmagic:crystallized_obsidian>, <cyclicmagic:soulstone>, 45);
 
 
 # [Apple_of_Lofty_Stature] from [Mending_Moss][+2]
