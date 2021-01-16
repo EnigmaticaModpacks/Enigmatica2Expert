@@ -538,6 +538,8 @@ for it in <ore:slimeball>.items {
 Hydrator.removeShapedRecipe(<minecraft:cobblestone>);
 Hydrator.addRecipe(<quark:iron_plate:1> * 3, [<minecraft:iron_ingot>], 125);
 Hydrator.addRecipe(<quark:iron_plate:1>, [<quark:iron_plate>], 125);
+Hydrator.addRecipe(<chisel:waterstone>, [<minecraft:stone>], 125);
+
 
 # Misc
 Hydrator.addRecipe(<actuallyadditions:item_misc:12>, [<actuallyadditions:item_misc:9>], 250);
