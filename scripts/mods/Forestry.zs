@@ -140,7 +140,7 @@ for input,output in {
 	<ore:blockCoal>
 	|<ore:blockGraphite>     : <fluid:coal> * 900,
 } as ILiquidStack[IIngredient]  {
-	scripts.process.squeeze([<forestry:phosphor>, input], output, "only: ForestrySqueezer", null);
+	scripts.processWork.work(["ForestrySqueezer"], null, [<forestry:phosphor>, input], null, null,  [output], null, null);
 }
 
 # Remove pulp recipe
