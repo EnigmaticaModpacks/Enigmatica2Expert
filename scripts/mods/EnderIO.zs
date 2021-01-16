@@ -16,13 +16,18 @@ recipes.addShaped("Cheaper Chassis Parts",
 [<ore:ingotFakeIron>, <ore:ingotFakeIron>, <ore:ingotFakeIron>]]);
 
 
-# Impulse Hopper
-	recipes.remove(<enderio:block_impulse_hopper>);
-	recipes.addShaped("enderio_impulse_hopper_custom", 
-	<enderio:block_impulse_hopper>, 
-	[[<ore:ingotElectricalSteel>, <minecraft:hopper>, <ore:ingotElectricalSteel>], 
-	[<ore:gearEnergized>, <ic2:resource:12>, <ore:gearEnergized>], 
-	[<ore:ingotElectricalSteel>, <ore:ingotRedstoneAlloy>, <ore:ingotElectricalSteel>]]);
+# This is basically quantity filter with auto input/output
+# [Impulse_Hopper] from [Basic_Machine_Casing][+4]
+craft.remake(<enderio:block_impulse_hopper>, ["pretty",
+  "▬ ◘ ▬",
+  "I □ I",
+  "▬ ♥ ▬"], {
+  "□": <ore:machineBlock>,     # Basic Machine Casing
+  "♥": <ore:blockRedstone>,    # Block of Redstone
+  "◘": <ore:blockHopper>,      # Hopper
+  "I": <ore:gearIronInfinity>, # Infinity Bimetal Gear
+  "▬": <ore:ingotDarkSteel>    # Dark Steel Ingot
+});
 
 # Advanced Item Filter
 	recipes.remove(<enderio:item_advanced_item_filter>);
@@ -287,19 +292,19 @@ val fake_iron_variations =
 solution([<ore:dustBedrock>, fake_iron_variations      			       ], [<liquid:iron>      *72 ], [<liquid:construction_alloy>*216], [0.5, 1,    2700], "only: highoven");
 solution([<ore:dustBedrock>, <ore:dustObsidian>                    ], [<liquid:steel>     *144], [<liquid:dark_steel>        *144], [0.5, 1,    5500], "only: highoven");
 solution([<ore:dustBedrock>, <ore:dustEndstone>, <ore:dustObsidian>], [<liquid:dark_steel>*144], [<liquid:end_steel>         *144], [0.5, 1, 1, 5500], "only: highoven");
+solution([<ore:dustBedrock>, <ore:dustRedstone>                    ], [<liquid:iron>      *144], [<liquid:conductive_iron>   *144], [0.5, 1,    4200], "only: highoven");
 
 
 # Oxidiser
 val ox as IIngredient = <ore:itemInfinityGoop>; # Infinity reagent
 
 # EnderIO hard alloys
-solution([ox, <mysticalagriculture:crafting:28>], [<liquid:gold>*144           ], [<liquid:soularium> *144       ], [0.5, 1, 0.25, 5100], "only: highoven");
-solution([ox, <ore:itemSilicon>                ], [<liquid:steel>*144          ], [<liquid:electrical_steel> *144], [0.5, 1, 0.25, 3000], "only: highoven");
-solution([ox, <ore:dustEnergetic>              ], [<liquid:gold>*144           ], [<liquid:energetic_alloy> *144 ], [0.5, 1, 0.25, 3600], "only: highoven");
-solution([ox, <extendedcrafting:material:49>   ], [<liquid:energetic_alloy>*144], [<liquid:vibrant_alloy> *144   ], [0.5, 1, 0.25, 5400], "only: highoven");
-solution([ox, <ore:dustRedstone>               ], [<liquid:tin>*144            ], [<liquid:redstone_alloy> *144  ], [0.5, 1, 0.25, 3600], "only: highoven");
-solution([ox, <ore:dustRedstone>               ], [<liquid:iron>*144           ], [<liquid:conductive_iron> *144 ], [0.5, 1, 0.25, 4200], "only: highoven");
-solution([ox, <ore:dustEnderEye>               ], [<liquid:iron>*144           ], [<liquid:pulsating_iron> *144  ], [0.5, 1, 0.25, 5500], "only: highoven");
+solution([ox, <mysticalagriculture:crafting:28>], [<liquid:gold>*144           ], [<liquid:soularium> *144       ], [0.5, 1, 0.25, 7600], "only: highoven");
+solution([ox, <ore:itemSilicon>                ], [<liquid:steel>*144          ], [<liquid:electrical_steel> *144], [0.5, 1, 0.25, 4500], "only: highoven");
+solution([ox, <ore:dustEnergetic>              ], [<liquid:gold>*144           ], [<liquid:energetic_alloy> *144 ], [0.5, 1, 0.25, 5400], "only: highoven");
+solution([ox, <extendedcrafting:material:49>   ], [<liquid:energetic_alloy>*144], [<liquid:vibrant_alloy> *144   ], [0.5, 1, 0.25, 8100], "only: highoven");
+solution([ox, <ore:dustRedstone>               ], [<liquid:tin>*144            ], [<liquid:redstone_alloy> *144  ], [0.5, 1, 0.25, 5400], "only: highoven");
+solution([ox, <ore:dustEnderEye>               ], [<liquid:iron>*144           ], [<liquid:pulsating_iron> *144  ], [0.5, 1, 0.25, 8200], "only: highoven");
 
 # Cheaper conduit facades
 recipes.removeByRecipeName("enderio:conduit_facade_transparent");
