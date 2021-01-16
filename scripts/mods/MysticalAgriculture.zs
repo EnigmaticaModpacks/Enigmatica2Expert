@@ -442,6 +442,9 @@ craft.make(<biomesoplenty:white_dye> * 4, ["pretty",
 # Squeeze cow essence
 scripts.process.squeeze([<mysticalagriculture:cow_essence>], <liquid:milk> * 250, "no exceptions", null);
 
+# Squeeze water essence
+scripts.process.squeeze([<mysticalagriculture:water_essence>], <liquid:water> * 250, "no exceptions", null);
+
 # Saplings from essence
 # ----------------------------
 
