@@ -108,12 +108,17 @@ craft.remake(<rats:rat_upgrade_aristocrat>, ["pretty",
 });
 
 
-# Ore Dubling rat
-remakeEx(<rats:rat_upgrade_ore_doubling>, [
-	[<rats:rat_nugget>, <ore:craftingToolForgeHammer>, <rats:rat_nugget>], 
-	[<ore:craftingToolForgeHammer>, <rats:rat_upgrade_basic>, <ore:craftingToolForgeHammer>], 
-	[<rats:rat_nugget>, <randomthings:ingredient:11>, <rats:rat_nugget>]
-]);
+# [Rat_Upgrade__Ore_Doubling] from [Rat_Upgrade__Basic][+3]
+craft.remake(<rats:rat_upgrade_ore_doubling>, ["pretty",
+  "P T P",
+  "T R T",
+  "P G P"], {
+  "P": <rats:rat_nugget>,             # Rat "Nugget"
+  "R": <rats:rat_upgrade_basic>,      # Rat Upgrade: Basic
+  "T": <ic2:forge_hammer>.anyDamage().noReturn(),
+  "G": <randomthings:ingredient:11>   # Golden Egg
+});
+
 
 # Gem of ratlantis
 recipes.remove(<rats:gem_of_ratlantis>);
