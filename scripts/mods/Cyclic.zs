@@ -598,3 +598,16 @@ craft.remake(<cyclicmagic:sword_ender>, ["pretty",
   "☼": <astralsorcery:itemcrystalsword>,    # Crystal Sword
   "o": <cyclicmagic:corrupted_chorus>       # Corrupted Chorus Fruit
 });
+
+
+# Harder recipe to balance teleporting from caves
+# [Rod_of_Elevation] from [Escape_Rope][+3]
+craft.remake(<cyclicmagic:tool_elevate>, ["pretty",
+  "  ☼ M",
+  "  E ☼",
+  "╱    "], {
+  "╱": <ore:rodBlaze>,               # Blaze Rod
+  "E": <randomthings:escaperope>.anyDamage(), # Escape Rope
+  "☼": <scalinghealth:crystalshard>, # Heart Crystal Shard
+  "M": <tconstruct:materials:19>     # Mending Moss
+});
