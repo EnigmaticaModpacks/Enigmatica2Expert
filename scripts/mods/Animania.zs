@@ -91,6 +91,7 @@ recipes.removeByRecipeName("animania:straw");
 for i, meat in primeMeatCooked { 
 	furnace.remove(meat);
 	mods.inworldcrafting.FireCrafting.addRecipe(meat, primeMeatRaw[i], 20);
+    mods.rats.recipes.addChefRatRecipe(primeMeatRaw[i], meat);
 }
 
 # Cut cheese and prime meat in pieces
