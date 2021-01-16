@@ -102,6 +102,17 @@ scripts.wrap.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:living_armour_legging
 scripts.wrap.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:living_armour_boots>,   BRT, <conarm:boots_core>.withTag({Material: "iron"}),   "bloodmagic:textures/models/AlchemyArrays/bindingarray.png");
 
 #------------
+# Iron
+#------------
+for inp, out in {
+	<compactsolars:compact_solar_block> : <compactsolars:solar_hat_low_voltage>,
+	<compactsolars:compact_solar_block:1> : <compactsolars:solar_hat_medium_voltage>,
+	<compactsolars:compact_solar_block:2> : <compactsolars:solar_hat_high_voltage>,
+} as IItemStack[IIngredient] {
+	craft.reshapeless(out, "AB", {A: inp, B: <conarm:helmet_core>.withTag({Material: "iron"})});
+}
+
+#------------
 # Gold
 #------------
 recipes.replaceAllOccurences(<minecraft:golden_chestplate:*>, <conarm:chest_core>.withTag({Material: "electrum"}), <draconicevolution:tool_upgrade:9>);
