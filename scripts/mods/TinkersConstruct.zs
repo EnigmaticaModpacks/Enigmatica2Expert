@@ -180,19 +180,10 @@ for item in coals {
 	scripts.wrap.tconstruct.Casting.addTableRecipe(<bigreactors:ingotcyanite>, <tconstruct:cast_custom>, <liquid:cyanite>, 144, false);
 
 
-# Slime Boots
-	recipes.remove(<tconstruct:slime_boots:*>);
-	function remakeSlimeBoots(name as string, item as IItemStack, primary as IIngredient){
-		recipes.addShaped("Slime Boots " ~ name, item, [
-			[<ore:slimeball>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 34 as short}]}), <ore:slimeball>], 
-			[primary, <minecraft:leather_boots>.anyDamage(), primary]]);
+# Slime Boots remove and hide (replaced by Conarm)
+	for i in 0 to 5 {
+		rh(itemUtils.getItem("tconstruct:slime_boots", i));
 	}
-
-	remakeSlimeBoots("Green",  <tconstruct:slime_boots>,   <tconstruct:slime_congealed>);
-	remakeSlimeBoots("Blue",   <tconstruct:slime_boots:1>, <tconstruct:slime_congealed:1>);
-	remakeSlimeBoots("Purple", <tconstruct:slime_boots:2>, <tconstruct:slime_congealed:2>);
-	remakeSlimeBoots("Red",    <tconstruct:slime_boots:3>, <tconstruct:slime_congealed:3>);
-	remakeSlimeBoots("Orange", <tconstruct:slime_boots:4>, <tconstruct:slime_congealed:4>);
 
 # Slime Slings
 	recipes.remove(<tconstruct:slimesling:*>);
