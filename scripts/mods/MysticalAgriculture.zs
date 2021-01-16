@@ -69,14 +69,6 @@ recipes.addShapedMirrored("Wither Proof Glass",
 	[<botania:grassseeds:*>, <astralsorcery:itemrockcrystalsimple>.anyDamage(), <botania:grassseeds:*>], 
 	[<minecraft:gold_block>, <botania:grassseeds:*>, <minecraft:diamond_block>]]);
 
-# Insanium Ingot
-	recipes.remove(<mysticalagradditions:insanium:2>);
-	recipes.addShaped("Insanium Ingot", 
-	<mysticalagradditions:insanium:2>, 
-	[[null, <ore:essenceInsanium>, null],
-	[<ore:essenceInsanium>, <ore:ingotSupremium>, <ore:essenceInsanium>], 
-	[null, <ore:essenceInsanium>, null]]);
-
 # Tier 6 Crafting Seeds 
 	recipes.remove(<mysticalagradditions:insanium:1>);
 	scripts.wrap.forestry.Carpenter.addRecipe(<mysticalagradditions:insanium:1>, 
