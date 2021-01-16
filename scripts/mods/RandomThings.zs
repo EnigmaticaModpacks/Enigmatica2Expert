@@ -311,3 +311,13 @@ craft.remake(<randomthings:spectresword>, ["pretty",
 
 
 # ----------------------------
+
+# [Nature_Core] from [Soulstone][+2]
+craft.make(<randomthings:naturecore>, ["pretty",
+  "# § #",
+  "§ S §",
+  "# § #"], {
+  "#": <forestry:logs.1:3> | <forestry:logs.6>, # Any sequoia
+  "S": <cyclicmagic:soulstone>, # Soulstone
+  "§": <randomthings:slimecube> # Slime Cube
+});
