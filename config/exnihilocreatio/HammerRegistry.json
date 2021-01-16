@@ -251,13 +251,13 @@
       "amount": 3,
       "miningLevel": 1,
       "chance": 0.3,
-      "fortuneChance": 0.9
+      "fortuneChance": 0.0
     }, {
       "item": "advancedrocketry:misc:1",
-      "amount": 3,
+      "amount": 1,
       "miningLevel": 1,
-      "chance": 0.33333,
-      "fortuneChance": 0.45
+      "chance": 1.0,
+      "fortuneChance": 0.0
     }
   ]
 }
