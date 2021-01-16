@@ -599,6 +599,24 @@ craft.remake(<cyclicmagic:sword_ender>, ["pretty",
   "o": <cyclicmagic:corrupted_chorus>       # Corrupted Chorus Fruit
 });
 
+# Fix color of conveyor (was purple)
+# [Conveyor_Belt] from [Clay][+2]
+craft.remake(<cyclicmagic:plate_push>, ["pretty",
+  "▬ d ▬",
+  "d c d",
+  "▬ d ▬"], {
+  "c": <ore:clay>,     # Clay
+  "d": <ore:dyeLime>,
+  "▬": <ore:ingotIron> # Iron Ingot
+});
+
+# [Cobblestone] from [Pebble]
+craft.make(<minecraft:cobblestone>, ["pretty",
+  "r r r",
+  "r   r",
+  "r r r"], {
+  "r": <ore:rock> # Pebble
+});
 
 # Harder recipe to balance teleporting from caves
 # [Rod_of_Elevation] from [Escape_Rope][+3]
