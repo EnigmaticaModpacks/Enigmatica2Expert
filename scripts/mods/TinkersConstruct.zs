@@ -48,9 +48,6 @@ for slime, dirts in slimeDirts {
 	mods.tconstruct.Melting.removeRecipe(<liquid:bronze>, <ic2:pipe>);
 	mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <ic2:pipe:1>);
 
-# Prevent Smart Output from instantly breaking (setting it to same hardness as Smeltery Controllers)
-	<mctsmelteryio:machine:1>.hardness = <tconstruct:smeltery_controller>.hardness;
-
 # Cobalt Block Unification
 	mods.tconstruct.Casting.removeBasinRecipe(<chisel:blockcobalt>);
 	scripts.wrap.tconstruct.Casting.addBasinRecipe(<tconstruct:metal>, null, <liquid:cobalt>, 1296);
@@ -201,25 +198,6 @@ for item in coals {
 	remakeSlimeSlings("Red",    <tconstruct:slimesling:3>, <tconstruct:slime_congealed:3>);
 	remakeSlimeSlings("Magma",  <tconstruct:slimesling:4>, <tconstruct:slime_congealed:4>);
 
-
-# Recipes to remove 
-rh(<mctsmelteryio:powdered_fuel>);
-
-# Remake upgrades match Tinkers/IO crafts
-remakeEx(<mctsmelteryio:upgrade>, [[<minecraft:dye:4>, <minecraft:dye:4>, <minecraft:dye:4>], [<ore:ingotAluminum> | <ore:ingotLead>, <minecraft:paper>, <ore:ingotAluminum> | <ore:ingotLead>], [<minecraft:dye:4>, <minecraft:dye:4>, <minecraft:dye:4>]]);
-remakeEx(<mctsmelteryio:upgrade:1>, [[<ore:ingotCopper>, <ore:chest>, <ore:ingotCopper>], [<ore:chest>, <mctsmelteryio:upgrade>, <ore:chest>], [<ore:ingotCopper>, <ore:chest>, <ore:ingotCopper>]]);
-remakeEx(<mctsmelteryio:upgrade:2>, [[<ore:ingotAluminum>, <ore:ingotFakeIron>, <ore:ingotAluminum>], [<ore:ingotFakeIron>, <mctsmelteryio:upgrade:1>, <ore:ingotFakeIron>], [<ore:ingotAluminum>, <ore:ingotFakeIron>, <ore:ingotAluminum>]]);
-remakeEx(<mctsmelteryio:upgrade:3>, [[<ore:nuggetKnightslime>, <ore:ingotGold>, <ore:nuggetKnightslime>], [<ore:ingotGold>, <mctsmelteryio:upgrade:2>, <ore:ingotGold>], [<ore:nuggetKnightslime>, <ore:ingotGold>, <ore:nuggetKnightslime>]]);
-remakeEx(<mctsmelteryio:upgrade:4>, [[<ore:nuggetManyullyn>, gemDiamondRat, <ore:nuggetManyullyn>], [gemDiamondRat, <mctsmelteryio:upgrade:3>, gemDiamondRat], [<ore:nuggetManyullyn>, gemDiamondRat, <ore:nuggetManyullyn>]]);
-
-# Speed upgrade
-remakeEx(<mctsmelteryio:upgrade:6>, [
-	[<ore:gemEmerald>, <ore:listAllsugar>, <ore:gemEmerald>], 
-	[<ic2:upgrade>, <mctsmelteryio:upgrade>, <ic2:upgrade>], 
-	[<ore:gemEmerald>, <ore:listAllsugar>, <ore:gemEmerald>]
-]);
-
-	
 # *======= Fuels =======*
 
 /* Patchouli_js("Liquids/Smeltery Fuels", {
