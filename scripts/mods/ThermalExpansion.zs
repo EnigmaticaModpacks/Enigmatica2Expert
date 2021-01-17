@@ -269,13 +269,13 @@ recipes.addShaped(<thermalinnovation:magnet>, [
 function remakeMagnet(meta as int, i1 as IIngredient, i2 as IIngredient){
 	var item = itemUtils.getItem("thermalinnovation:magnet", meta);
 	var prev = itemUtils.getItem("thermalinnovation:magnet", meta - 1);
-	remake("TE Magnet  " ~ meta, item, [
+	recipes.addShaped("TE Magnet  " ~ meta, item, [
 		[null, i2, null],
 		[i1, prev, i1],
 		[i2, null, i2]]);
 }
 
-remakeMagnet(1, <thermalfoundation:material:162>, <enderio:item_alloy_nugget>);
+remakeMagnet(1, <thermalfoundation:material:162>, <enderio:item_alloy_nugget:0>);
 remakeMagnet(2, <thermalfoundation:material:161>, <enderio:item_alloy_nugget:3>);
 remakeMagnet(3, <thermalfoundation:material:165>, <enderio:item_alloy_nugget:1>);
 remakeMagnet(4, <thermalfoundation:material:167>, <enderio:item_alloy_nugget:2>);
@@ -353,7 +353,7 @@ reworkClathrate(<thermalfoundation:ore_fluid:4>, <thermalfoundation:material:895
 for i in 2 to 6 {
 	recipes.removeByRecipeName("thermalexpansion:satchel_"~i);
 }
-craft.make(<thermalexpansion:satchel:1>, ["aOa"], {O: <thermalexpansion:satchel:0>.marked("marked"), a: <ore:nuggetInvar>}, utils.upgradeFnc);
+craft.make(<thermalexpansion:satchel:1>, ["aOa"], {O: <thermalexpansion:satchel:0>.marked("marked"), a: <ore:nuggetInvar>   }, utils.upgradeFnc);
 craft.make(<thermalexpansion:satchel:2>, ["aOa"], {O: <thermalexpansion:satchel:1>.marked("marked"), a: <ore:nuggetElectrum>}, utils.upgradeFnc);
 craft.make(<thermalexpansion:satchel:3>, ["aOa"], {O: <thermalexpansion:satchel:2>.marked("marked"), a: <ore:nuggetSignalum>}, utils.upgradeFnc);
 craft.make(<thermalexpansion:satchel:4>, ["aOa"], {O: <thermalexpansion:satchel:3>.marked("marked"), a: <ore:nuggetEnderium>}, utils.upgradeFnc);
