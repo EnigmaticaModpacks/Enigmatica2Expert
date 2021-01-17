@@ -102,7 +102,8 @@ function makeZip(zipPath) {
 
 ********************************************************/
 
-makeZip(`${distrDir}~E2E-Extended_${version}.zip`)
+// makeZip(`${distrDir}~E2E-Extended_${version}.zip`)
+makeZip(`${distrDir}~E2E-Extended_latest.zip`)
 
 /********************************************************
 
@@ -169,8 +170,8 @@ globs([
   '!mods/Toast Control*.jar',
   '!mods/torohealth*.jar',
   '!mods/toughnessbar*.jar',
-  '!mods/WailaHarvestability*.jar',
-  '!mods/Wawla*.jar',
+  // '!mods/WailaHarvestability*.jar',
+  // '!mods/Wawla*.jar',
 ]).forEach((fPath, i)=>{
   if(i%50==0) dot()
   fs.copySync(
@@ -202,4 +203,4 @@ replace.sync({
 
 fs.copySync(ruOverrides, './', {overwrite: true})
 
-makeZip(`${distrDir}~E2E-Extended_RU_${version}.zip`)
+makeZip(`${distrDir}~E2E-Extended_RU_latest.zip`)
