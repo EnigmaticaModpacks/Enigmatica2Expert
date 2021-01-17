@@ -5,6 +5,7 @@ import crafttweaker.liquid.ILiquidDefinition;
 import mods.jei.JEI.removeAndHide as rh;
 import mods.tcomplement.highoven.HighOven;
 import mods.tcomplement.highoven.MixRecipeBuilder;
+import crafttweaker.data.IData;
 
 #modloaded tconstruct
 
@@ -358,3 +359,37 @@ mods.nuclearcraft.ingot_former.addRecipe([<liquid:infinity_metal>*144, <avaritia
 # Clearing
 utils.clearFluid(<tconstruct:seared_tank:0>);
 utils.clearFluid(<tconstruct:seared_tank:1>);
+
+# generate all possible patterns
+var dataList_allPatterns = [] as IData;
+var k = 0 as byte;
+for item in loadedMods["tconstruct"].items {
+	if (!item.definition.id.startsWith("tconstruct:pattern")) continue;
+	if(isNull(item.tag) || isNull(item.tag.PartType)) continue;
+
+	dataList_allPatterns += [{
+		Slot: k,
+		id: "tconstruct:pattern",
+		Count: 1 as byte,
+		Damage: 0 as short,
+		tag: item.tag
+	}] as IData; 
+	k += 1;
+}
+
+# Chest with all avaliable patterns
+# [Pattern_Chest] from [Oak_Chest][+4]
+recipes.removeByRecipeName("tconstruct:tools/table/chest/pattern");
+craft.make(<tconstruct:tooltables:4>.withTag({
+		inventory: {Items: dataList_allPatterns},
+		ench:[{lvl:1,id:36}],enchantmentColor:10057489,CustomPotionColor:10057489 // Colored shimmer
+	}), ["pretty",
+  "# a #",
+  "p c p",
+  "# M #"], {
+  "p": <ore:pattern>,        # Blank Pattern
+  "a": <tconstruct:book>,    # Materials and You
+  "#": <forestry:wood_pile>, # Wood Pile
+  "c": <ore:chest>,          # Oak Chest
+  "M": <conarm:book>         # Materials and You - Armory Addendum
+});
