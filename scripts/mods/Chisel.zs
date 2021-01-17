@@ -71,7 +71,6 @@ for glass, col in {
 	<tconstruct:clear_stained_glass>    : "white",
 	<tconstruct:clear_stained_glass:1>  : "orange",
 	<tconstruct:clear_stained_glass:2>  : "magenta",
-	<tconstruct:clear_stained_glass:3>  : "light_blue",
 	<tconstruct:clear_stained_glass:3>  : "lightblue",
 	<tconstruct:clear_stained_glass:4>  : "yellow",
 	<tconstruct:clear_stained_glass:5>  : "lime",
