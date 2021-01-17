@@ -229,7 +229,7 @@ craft.remake(<avaritiafurnace:infinityfurnace>, ["pretty",
   "# ▬ Ϟ ▬ #",
   "T R E R T"], {
   "R": <rats:marbled_cheese_raw>,                 # Raw Marbled Cheese
-  "#": <forestry:planks.0:9>, # Ebony
+  "#": <forestry:logs.1:3>,                       # Sequoia
   "T": <avaritiafurnace:triplecompressedfurnace>, # Triple Compressed Furnace
   "E": <contenttweaker:empowered_phosphor>,       # Empowered Phosphor
   "r": <rats:idol_of_ratlantis>,
