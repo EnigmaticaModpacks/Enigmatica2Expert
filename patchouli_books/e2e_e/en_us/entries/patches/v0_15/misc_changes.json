@@ -51,7 +51,7 @@
       "title": "Cyclic Machines",
       "item": "cyclicmagic:auto_crafter",
       "type": "grid_text",
-      "text": "This machines not using $(l)RF/$ anymore:",
+      "text": "These machines don't use $(l)RF/$ anymore",
       "item0": "cyclicmagic:auto_crafter",
       "item1": "cyclicmagic:auto_packager",
       "item2": "cyclicmagic:block_fishing",
