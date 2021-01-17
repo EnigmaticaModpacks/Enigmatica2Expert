@@ -2,6 +2,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 import mods.jei.JEI.removeAndHide;
+import crafttweaker.recipes.IRecipeFunction;
 #modloaded thermalexpansion
 
 # Planks/Slabs -> Sticks
@@ -396,3 +397,29 @@ mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft
 scripts.process.crush(<thermalfoundation:geode>, <mysticalagradditions:insanium:5>, "No exceptions", 
   [<mysticalagradditions:insanium:5>], [0.25]);
 
+# Remake Hardened versions of tank and chest
+# they required $hardenedGlass, that actually too hard to craft
+recipes.removeByRecipeName("thermalexpansion:tank_3");
+recipes.removeByRecipeName("thermalexpansion:strongbox_3");
+
+val hardenedIngrs = {
+  "P": <thermalexpansion:tank>     .withTag({RSControl: 0 as byte, Level: 1 as byte}).marked("marked"), # Portable Tank (Hardened)
+  "S": <thermalexpansion:strongbox>.withTag({Facing: 3 as byte,    Level: 1 as byte}).marked("marked"), # Strongbox (Hardened)
+  "□": <tconstruct:clear_glass>,
+  "▬": <ore:ingotElectrum> # Electrum Ingot
+} as IIngredient[string];
+
+val upgradeFnc as IRecipeFunction = function(out, ins, cInfo){
+	if(ins has "marked" && !isNull(ins.marked) && ins.marked.hasTag) {
+		return ins.marked.updateTag({Level: 2 as byte});
+	}
+	return out;
+};
+
+craft.make(<thermalexpansion:tank>     .withTag({RSControl: 0 as byte, Level: 2 as byte}), ["□▬□","▬P▬","□▬□"], hardenedIngrs, upgradeFnc);
+craft.make(<thermalexpansion:strongbox>.withTag({Facing: 3 as byte,    Level: 2 as byte}), ["□▬□","▬S▬","□▬□"], hardenedIngrs, upgradeFnc);
+
+# Add Strongboxes to JEI
+for i in 1 to 5 {
+	mods.jei.JEI.addItem(<thermalexpansion:strongbox>.withTag({Facing: 3 as byte, Level: i as byte}));
+}
