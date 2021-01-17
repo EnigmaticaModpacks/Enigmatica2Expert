@@ -4,7 +4,7 @@ mouseSensitivity:0.5
 fov:0.0
 gamma:1.0
 saturation:0.0
-renderDistance:12
+renderDistance:18
 guiScale:3
 particles:0
 bobView:true
@@ -45,7 +45,7 @@ reducedDebugInfo:false
 useNativeTransport:true
 entityShadows:true
 mainHand:right
-attackIndicator:0
+attackIndicator:2
 showSubtitles:false
 realmsNotifications:true
 enableWeakAttacks:false
@@ -94,6 +94,12 @@ key_Hub Expand Key:0
 key_Change Caster Focus:34
 key_Misc Caster Toggle:0
 key_keybind.baublesinventory:0
+key_quark.keybind.dropoff:0
+key_quark.keybind.chestSort:0
+key_quark.keybind.chestDropoff:0
+key_quark.keybind.chestMerge:0
+key_quark.keybind.chestRestock:0
+key_quark.keybind.chestExtract:0
 key_quark.emote.no:0
 key_quark.emote.yes:0
 key_quark.emote.wave:0
@@ -112,14 +118,8 @@ key_quark.emote.dab:0
 key_quark.emote.jet:0
 key_quark.emote.exorcist:0
 key_quark.emote.zombie:0
-key_quark.keybind.dropoff:0
-key_quark.keybind.chestSort:0
-key_quark.keybind.chestDropoff:0
-key_quark.keybind.chestMerge:0
-key_quark.keybind.chestRestock:0
-key_quark.keybind.chestExtract:0
-key_quark.keybind.lockBuilding:33:SHIFT
 key_quark.keybind.toggleAutojump:0
+key_quark.keybind.lockBuilding:33:SHIFT
 key_key.toggle_shaders:0
 key_bloodmagic.keybind.open_holding:53:CONTROL
 key_bloodmagic.keybind.cycle_holding_pos:0
@@ -220,7 +220,7 @@ key_key.connected_area:0
 key_key.rotate_mirror:0
 key_key.material_list:50
 key_key.carry.desc:42
-key_Options Gui:0
+key_Options Gui:207
 key_key.colytra.toggle.desc:0
 key_waila.keybind.wailaconfig:82
 key_waila.keybind.wailadisplay:79
@@ -329,7 +329,7 @@ key_enderio.keybind.fovplus:0
 key_enderio.keybind.fovminus:0
 key_enderio.keybind.fovplusfast:0
 key_enderio.keybind.fovminusfast:0
-soundCategory_master:0.33774835
+soundCategory_master:0.36092716
 soundCategory_music:0.0
 soundCategory_record:0.09859155
 soundCategory_weather:0.4084507
