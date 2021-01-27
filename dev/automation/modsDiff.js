@@ -20,8 +20,9 @@ console.log(`  💟 Asking Curseforge API for ${union.length} mods ...`)
 
 Promise.all(union.map(m=>curseforge.getMod(m.addonID))).then(cursedUnion => {
   console.log(`  💟 Curseforge API returns ${cursedUnion.length} mods ...`)
-  // cursedUnion.sort((a,b) => a.name.localeCompare(b.name))
   cursedUnion.sort((a,b) => b.downloads - a.downloads)
+
+  // console.log('%c 🌯 cursedUnion: ', 'font-size:20px;background-color: #ED9EC7;color:#fff;', cursedUnion)
 
   let result = {
     BOTH:     cursedUnion.filter(a => map_e2e[a.id] && map_e2ee[a.id]),
@@ -32,8 +33,7 @@ Promise.all(union.map(m=>curseforge.getMod(m.addonID))).then(cursedUnion => {
   for (const [key, rawList] of Object.entries(result)) {
     const list = rawList.map(l=>{
       const modFileName = union.find(o=>o.addonID===l.id)?.installedFile.FileNameOnDisk
-      return `<img src="${l.logo?.thumbnailUrl}" width="50"> | ` +
-        `**\`${l.name}\`** <sup>${modFileName}</sup> <br> ${l.summary}`
+      return `<img src="${l.logo?.thumbnailUrl}" width="50"> | [**${l.name}**](${l.url}) <sub><sup>${modFileName}</sup></sub> <br> ${l.summary}`
       })
 
     injectInFile('MODS.md', 
