@@ -22,6 +22,7 @@ var itemsToRemove as string[] = [
 	"ic2:bronze_chestplate", 
 	"ic2:bronze_leggings", 
 	"ic2:bronze_helmet",
+	"ic2:bronze_sword",
 	
 	"iceandfire:armor_silver_metal_helmet",
 	"iceandfire:armor_silver_metal_chestplate",
@@ -64,6 +65,10 @@ var itemsToRemove as string[] = [
 	"minecraft:diamond_chestplate",
 	"minecraft:diamond_leggings",
 	"minecraft:diamond_boots",
+	"minecraft:leather_helmet",
+	"minecraft:leather_chestplate",
+	"minecraft:leather_leggings",
+	"minecraft:leather_boots",
 
 	"twilightforest:uncrafting_table",
 	"enderio:item_dark_steel_sword",
