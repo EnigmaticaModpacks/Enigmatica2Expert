@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded thaumcraft
-// Uses of this mod: 10
+// Uses of this mod: 11
 
 
 //####################################################
@@ -47,10 +47,10 @@ zenClass Class_Infusion { zenConstructor() {}
 static Infusion as Class_Infusion = Class_Infusion();
 
 //####################################################
-// Uses of this class: 4
+// Uses of this class: 5
 zenClass Class_SmeltingBonus { zenConstructor() {}
 
-	// Uses of this method: 4
+	// Uses of this method: 5
 	function addSmeltingBonus(input as IIngredient, stack as WeightedItemStack) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.thaumcraft.SmeltingBonus.addSmeltingBonus'~
 			serialize.args([serialize.IIngredient(input), serialize.WeightedItemStack(stack)]));

@@ -277,7 +277,8 @@ function beneficiate(_input as IIngredient, _oreName as string, _amount as doubl
 
   val calc = wholesCalc(_amount);
   val amount = calc.outs as int;
-  val input = _input * (_input.amount * calc.ins as int);
+  val newOutAmount = _input.amount * calc.ins as int;
+  val input = (newOutAmount == 1 && _input.amount == 1) ? _input : _input * newOutAmount;
 
   val oreName = (_oreName == "Aluminum") ? "Aluminium" : _oreName;
 
@@ -289,14 +290,22 @@ function beneficiate(_input as IIngredient, _oreName as string, _amount as doubl
   var extra = [] as IItemStack[];
   if (!isNull(JA)) {
     var cx as IItemStack = null;
-    cx = utils.getSomething(JA.extraName,       ["dust", "gem"]); if (!isNull(cx)) extra = extra + cx;
-    cx = utils.getSomething(JA.secondExtraName, ["dust", "gem"]); if (!isNull(cx)) extra = extra + cx;
-    cx = utils.getSomething(JA.thirdExtraName,  ["dust", "gem"]); if (!isNull(cx)) extra = extra + cx;
+    cx = utils.getSomething(JA.extraName,       ["dust", "gem"]); if (!isNull(cx)) extra += cx;
+    cx = utils.getSomething(JA.secondExtraName, ["dust", "gem"]); if (!isNull(cx)) extra += cx;
+    cx = utils.getSomething(JA.thirdExtraName,  ["dust", "gem"]); if (!isNull(cx)) extra += cx;
   }
   var extraChances = [
     min(1.0, 1.0/6 * amount),
     min(1.0, 0.1   * amount),
     min(1.0, 0.05  * amount)] as float[];
+
+  # Infernal Furnace
+  if (!isNull(JA)) {
+    val nuggetExtra = utils.getSomething(JA.extraName, ["nugget"], amount);
+    if (!isNull(nuggetExtra)) {
+      workEx("infernalfurnace", exceptions, [input], null, null, null, [nuggetExtra], extraChances, null);
+    }
+  }
 
   # Crush Dust or Gem
   val dustOrGem = utils.getSomething(oreName, ["dust", "gem", "any"], amount);

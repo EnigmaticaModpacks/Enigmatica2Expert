@@ -476,6 +476,17 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       return machineName;
     }
 
+    if (machineName == "infernalfurnace") {
+      if (!haveExtra) {
+        return info(machineNameAnyCase, getItemName(inputIngr0.itemArray[0]), 
+        "received work, but this machine need extra output");
+      }
+      //mods.thaumcraft.SmeltingBonus.addSmeltingBonus(IIngredient input, WeightedItemStack stack)
+      scripts.wrap.thaumcraft.SmeltingBonus.addSmeltingBonus(inputIngr0, extra0 % defaultChance0_int(extraChance, 20));
+      
+      return machineName;
+    }
+
   }
 
   # Machines with ONE item output
