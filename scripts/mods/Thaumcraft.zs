@@ -136,3 +136,13 @@ craft.make(<thaumcraft:salis_mundus>, ["DEFCAB"], {
     }
     return out;
   }, true /* True for shapeless */);
+
+
+# Override aspects
+<rats:rat_diamond>.setAspects(<aspect:desiderium>*4, <aspect:vitreus>*4, <aspect:rattus>*4);
+<forestry:candle>.setAspects(<aspect:lux>*20, <aspect:herba>*5, <aspect:aer>*5);
+<forestry:stump>.setAspects(<aspect:lux>*20, <aspect:herba>*5, <aspect:aer>*5);
+<forestry:beeswax>.setAspects(<aspect:lux>*5, <aspect:aer>*2);
+<extrautils2:compressedcobblestone:0>.setAspects(<aspect:terra>*45, <aspect:perditio>*9);
+<extrautils2:compressedcobblestone:1>.setAspects(<aspect:terra>*405, <aspect:perditio>*81);
+<extrautils2:compressedcobblestone:2>.setAspects(<aspect:terra>*500, <aspect:perditio>*500);
