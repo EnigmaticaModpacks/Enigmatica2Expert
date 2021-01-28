@@ -46,4 +46,5 @@
     }
   ]
   ,"rats:ratglove_flower": [{"stack": {"name": "rats:ratglove_petals","amount": 1,"meta": 0},"chance": 0.3,"fortuneChance": 0.0}]
+  ,"biomesoplenty:double_plant:2": [{"stack": {"name": "minecraft:spider_eye","amount": 1,"meta": 0},"chance": 1.0,"fortuneChance": 1.0}]
 }

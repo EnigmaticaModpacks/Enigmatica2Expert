@@ -1,82 +1,21 @@
 {
-  "minecraft:leaves2:0": {
+  "ore:listAllveggie": {
+    "fluid": "water",
+    "amount": 250,
+    "color": "minecraft:leaves:0"
+  },
+  "ore:treeSapling": {
+    "fluid": "water",
+    "amount": 250,
+    "color": "minecraft:leaves:0"
+  },
+  "ore:listAllfruit": {
+    "fluid": "water",
+    "amount": 250,
+    "color": "minecraft:leaves:0"
+  },
+  "ore:treeLeaves": {
     "fluid": "water",
     "amount": 250
-  },
-  "minecraft:leaves2:1": {
-    "fluid": "water",
-    "amount": 250
-  },
-  "minecraft:apple:0": {
-    "fluid": "water",
-    "amount": 250,
-    "textureOverride": {
-      "name": "minecraft:leaves",
-      "meta": 0
-    }
-  },
-  "minecraft:leaves:0": {
-    "fluid": "water",
-    "amount": 250
-  },
-  "minecraft:leaves:1": {
-    "fluid": "water",
-    "amount": 250
-  },
-  "minecraft:leaves:2": {
-    "fluid": "water",
-    "amount": 250
-  },
-  "minecraft:leaves:3": {
-    "fluid": "water",
-    "amount": 250
-  },
-  "minecraft:sapling:0": {
-    "fluid": "water",
-    "amount": 250,
-    "textureOverride": {
-      "name": "minecraft:leaves",
-      "meta": 0
-    }
-  },
-  "minecraft:sapling:1": {
-    "fluid": "water",
-    "amount": 250,
-    "textureOverride": {
-      "name": "minecraft:leaves",
-      "meta": 1
-    }
-  },
-  "minecraft:sapling:2": {
-    "fluid": "water",
-    "amount": 250,
-    "textureOverride": {
-      "name": "minecraft:leaves",
-      "meta": 2
-    }
-  },
-  "minecraft:sapling:3": {
-    "fluid": "water",
-    "amount": 250,
-    "textureOverride": {
-      "name": "minecraft:leaves",
-      "meta": 3
-    }
-  },
-  "minecraft:sapling:4": {
-    "fluid": "water",
-    "amount": 250,
-    "textureOverride": {
-      "name": "minecraft:leaves2",
-      "meta": 0
-    }
-  },
-  "minecraft:sapling:5": {
-    "fluid": "water",
-    "amount": 250,
-    "textureOverride": {
-      "name": "minecraft:leaves2",
-      "meta": 1
-    }
   }
 }

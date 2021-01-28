@@ -3,8 +3,8 @@
     "hive": "forestry:beehives:0",
     "dim": 0,
     "adjacentBlocks": {
-      "ore:logWood": 1,
-      "ore:treeLeaves": 1
+      "ore:treeLeaves": 1,
+      "ore:logWood": 1
     }
   },
   {
@@ -25,8 +25,8 @@
     "hive": "forestry:beehives:3",
     "dim": 0,
     "adjacentBlocks": {
-      "ore:treeLeaves": 1,
-      "minecraft:log:3": 1
+      "minecraft:log:3": 1,
+      "ore:treeLeaves": 1
     }
   },
   {
@@ -40,8 +40,8 @@
     "hive": "forestry:beehives:5",
     "dim": 0,
     "adjacentBlocks": {
-      "minecraft:snow:0": 1,
-      "minecraft:ice:0": 1
+      "minecraft:ice:0": 1,
+      "minecraft:snow:0": 1
     }
   },
   {

@@ -2,13 +2,13 @@
   {
     "inputFluid": "water",
     "outputFluid": "witchwater",
+    "duration": 12000,
     "transformingBlocks": [
       "minecraft:mycelium:0"
     ],
     "blocksToSpawn": [
       "minecraft:brown_mushroom:0",
       "minecraft:red_mushroom:0"
-    ],
-    "duration": 12000
+    ]
   }
 ]

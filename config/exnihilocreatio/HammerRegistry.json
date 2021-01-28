@@ -237,12 +237,12 @@
     {
       "stack": {
         "name": "thermalfoundation:material",
-        "amount": 2,
+        "amount": 1,
         "meta": 800
       },
       "miningLevel": 0,
       "chance": 1.0,
-      "fortuneChance": 0.0
+      "fortuneChance": 1.0
     }
   ],
   "ore:blockCharcoal": [

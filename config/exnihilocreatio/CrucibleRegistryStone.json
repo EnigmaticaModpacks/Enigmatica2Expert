@@ -1,6 +1,40 @@
 {
-  "minecraft:cobblestone:0": {
+  "ore:sand": {
+    "fluid": "lava",
+    "amount": 100
+  },
+  "ore:obsidian": {
+    "fluid": "lava",
+    "amount": 1000
+  },
+  "ore:cobblestone": {
     "fluid": "lava",
     "amount": 250
+  },
+  "ore:stone": {
+    "fluid": "lava",
+    "amount": 250
+  },
+  "ore:dropHoney": {
+    "fluid": "for.honey",
+    "amount": 10,
+    "color": "forestry:bee_combs_0:0"
+  },
+  "exnihilocreatio:block_dust:0": {
+    "fluid": "lava",
+    "amount": 50
+  },
+  "ore:netherrack": {
+    "fluid": "lava",
+    "amount": 1000
+  },
+  "ore:gravel": {
+    "fluid": "lava",
+    "amount": 200
+  },
+  "ore:listAllseed": {
+    "fluid": "seed.oil",
+    "amount": 10,
+    "color": "minecraft:sponge:0"
   }
 }
