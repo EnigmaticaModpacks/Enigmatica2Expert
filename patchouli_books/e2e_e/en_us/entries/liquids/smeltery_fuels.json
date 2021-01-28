@@ -78,8 +78,10 @@
       "text2": "1400°К, 400 ticks",
       "item3": "forge:bucketfilled{FluidName:\"creosote\",Amount:1000}",
       "text3": "1400°К, 400 ticks",
-      "item4": "forge:bucketfilled{FluidName:\"steam\",Amount:1000}",
-      "text4": "500°К, 100 ticks",
+      "item4": "forge:bucketfilled{FluidName:\"lava\",Amount:1000}",
+      "text4": "1300°К, 80 ticks",
+      "item5": "forge:bucketfilled{FluidName:\"steam\",Amount:1000}",
+      "text5": "500°К, 100 ticks",
       "title": "Smeltery Fuels"
     }
   ]

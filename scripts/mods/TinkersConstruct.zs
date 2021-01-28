@@ -216,6 +216,10 @@ Patchouli_js("Liquids/Smeltery Fuels",
   }, 7, 
   from_crafttweaker_log(/Register Smeltery fuel. Temp: (?<temp>\d+), Burn time: (?<time>\d+), Name: (?<name>.*)/gm)
   .map(o=>o.groups)
+
+	// Default fuels
+	.concat([{temp:1300, time:80, name:"lava"}])
+
   .sort((a,b)=>b.temp*b.time - a.temp*a.time)
   .map(o=>[wrap_bucket(o.name), `${o.temp}°К, ${o.time} ticks`])
 ))*/
