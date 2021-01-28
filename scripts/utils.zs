@@ -227,8 +227,9 @@ zenClass Utils {
 
 
   # Clear Fluid tag on item preserving other tags
-  function clearFluid(input as IItemStack) as void  {
-    recipes.addShapeless("Fluid Clearing " ~ getItemName(input), 
+  function clearFluid(input as IItemStack) as void  {clearFluid(input, "Fluid Clearing " ~ getItemName(input));}
+  function clearFluid(input as IItemStack, recipeName as string) as void  {
+    recipes.addShapeless(recipeName, 
       input, [input.marked("marked")],
       function(out, ins, cInfo) {
         if(ins has "marked" && !isNull(ins.marked) && ins.marked.hasTag) {

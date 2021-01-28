@@ -98,7 +98,7 @@ recipes.addShaped(<chisel:chisel_iron>, [
 
 # Harder diamond chisel
 recipes.remove(<chisel:chisel_diamond>);
-scripts.wrap.tconstruct.Casting.addTableRecipe(<chisel:chisel_diamond>, <chisel:chisel_iron>, <liquid:diamond>, 666, true);
+craft.reshapeless(<chisel:chisel_diamond>, "AAB", {A: <minecraft:diamond>, B: <chisel:chisel_iron>});
 
 # Harder I-Chisel
 recipes.remove(<chisel:chisel_hitech>);

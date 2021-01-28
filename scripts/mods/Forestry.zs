@@ -431,3 +431,31 @@ zenClass BeeHelper {
 }
 
 BeeHelper().build();
+
+# Buff silk
+recipes.removeByRecipeName("forestry:silk_to_string");
+recipes.addShapeless("silk to string", <minecraft:string> * 32, [<forestry:crafting_material:2>]);
+
+# Simplify andvanced bags
+val bagNames = [
+	"miner",
+	"digger",
+	"forester",
+	"hunter",
+	"adventurer",
+	"builder",
+] as string[];
+
+for name in bagNames {
+	val advBag = itemUtils.getItem("forestry:"~name~"_bag_t2");
+	mods.forestry.Carpenter.removeRecipe(advBag);
+
+	scripts.wrap.forestry.Carpenter.addRecipe(advBag, scripts.craft.grid.Grid(["pretty",
+		"  G  ",
+		"S W S",
+		"  S  "], {
+		"S": <forestry:crafting_material:2>, # Silk Wisp
+		"G": <quark:gold_button>,            # Gold Button
+		"W": itemUtils.getItem("forestry:"~name~"_bag")
+	}).shaped(), 40, <liquid:water> * 250);
+}

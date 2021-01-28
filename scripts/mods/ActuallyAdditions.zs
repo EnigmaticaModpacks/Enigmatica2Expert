@@ -355,6 +355,9 @@ scripts.process.squeeze([<actuallyadditions:item_misc:13>], <liquid:canolaoil> *
 # -----------------------------------------
 # Storage crate remake
 
+# Stackable storage keeper
+<actuallyadditions:item_crate_keeper>.maxStackSize = 64;
+
 # [Storage_Crate_Keeper] from [Black_Quartz][+1]
 craft.remake(<actuallyadditions:item_crate_keeper>, ["pretty",
   "  #  ",
@@ -400,3 +403,78 @@ craft.remake(<actuallyadditions:item_medium_to_large_crate_upgrade>, ["pretty",
   "#   #",
   "☼ # ☼"],
 crateIngrs);
+
+# Original dripp was too pricy comparint to TCon tools
+# [Drill] from [Drill_Core][+2]
+craft.remake(<actuallyadditions:item_drill:3>, ["pretty",
+  "  D ╱",
+  "D ╱ D",
+  "r D  "], {
+  "╱": <ore:stickSteel>,                 # Steel Rod
+  "r": <actuallyadditions:item_misc:16>, # Drill Core
+  "D": <ore:nuggetDiamond>               # Diamond Nugget
+});
+
+# [Ring_of_Growth] from [Ring][+2]
+craft.remake(<actuallyadditions:item_growth_ring>, ["pretty",
+  "W ☼ W",
+  "☼ R ☼",
+  "W ☼ W"], {
+  "R": <actuallyadditions:item_misc:6>, # Ring
+  "W": <ore:seedWheat>,                 # Seeds
+  "☼": <ore:crystalEnori>               # Enori Crystal
+});
+
+# [Ring_of_Liquid_Banning] from [Ring][+2]
+craft.remake(<actuallyadditions:item_water_removal_ring>, ["pretty",
+  "S ☼ S",
+  "☼ R ☼",
+  "S ☼ S"], {
+  "R": <actuallyadditions:item_misc:6>, # Ring
+  "S": <openblocks:sponge>,             # Sponge
+  "☼": <ore:crystalPalis>               # Palis Crystal
+});
+
+for i in 0 to 10 {
+	recipes.removeByRecipeName("actuallybaubles:bauble_to_potion_ring_"~i);
+}
+
+val ringsIngredients = [
+	<ore:listAllsugar>,
+	<minecraft:repeater>,
+	<ore:dustBlaze>,
+	<ore:craftingPiston>,
+	<animania:plain_omelette>,
+	<ore:slimeball>,
+	<minecraft:magma_cream>,
+	<ore:fish>,
+	<minecraft:fermented_spider_eye>,
+	<minecraft:golden_carrot>,
+] as IIngredient[];
+
+for i in 0 to 10 {
+	val ring         = <actuallyadditions:item_potion_ring>.definition.makeStack(i);
+	val ringAdvanced = <actuallyadditions:item_potion_ring_advanced>.definition.makeStack(i);
+
+	craft.reshapeless(ring, "ABC", {
+		A: <actuallyadditions:item_misc:6>,
+		B: <ore:crystalDiamantine>,
+		C: ringsIngredients[i],
+	});
+
+	craft.shapeless(ringAdvanced, "AB", {
+		A: ring,
+		B: <actuallyadditions:item_crystal_empowered:2>
+	});
+}
+
+# Simplify because it produce only max 256 RF/T
+# [Bio_Reactor] from [Iron_Casing][+2]
+craft.remake(<actuallyadditions:block_bio_reactor>, ["pretty",
+  "S S S",
+  "☼ I ☼",
+  "S S S"], {
+  "S": <ore:treeSapling>,                # Oak Sapling
+  "I": <actuallyadditions:block_misc:9>, # Iron Casing
+  "☼": <ore:crystalEnori>                # Enori Crystal
+});

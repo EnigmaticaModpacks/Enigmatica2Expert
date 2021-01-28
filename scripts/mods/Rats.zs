@@ -122,9 +122,13 @@ craft.remake(<rats:rat_upgrade_ore_doubling>, ["pretty",
 
 # Gem of ratlantis
 recipes.remove(<rats:gem_of_ratlantis>);
-mods.botania.RuneAltar.addRecipe(<rats:gem_of_ratlantis>, [
-    <rats:ratglove_petals>, <rats:ratglove_petals>, <rats:ratglove_petals>, <ore:gemEmerald>, <ore:gemEmerald>, <ore:gemEmerald>
-], 20000);
+mods.rt.RandomThingsTweaker.addImbuingRecipe(
+	<randomthings:ingredient:2>, 
+	<rats:string_cheese>, 
+	<rats:ratglove_petals>, 
+	<minecraft:emerald>, 
+	<rats:gem_of_ratlantis>
+);
 
 # Ratlanean upgrade
 remake("rat_upgrade_basic_ratlantean", <rats:rat_upgrade_basic_ratlantean>, [

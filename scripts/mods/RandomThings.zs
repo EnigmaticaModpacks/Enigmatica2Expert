@@ -321,3 +321,56 @@ craft.make(<randomthings:naturecore>, ["pretty",
   "S": <cyclicmagic:soulstone>, # Soulstone
   "§": <randomthings:slimecube> # Slime Cube
 });
+
+# Cheaper (used ender pearl)
+# [Returning_Block_of_Sticks*8] from [Floo_Powder][+1]
+craft.remake(<randomthings:blockofsticks:1> * 8, ["pretty",
+  "□ □ □",
+  "□ F □",
+  "□ □ □"], {
+  "□": <randomthings:blockofsticks>, # Block of Sticks
+  "F": <randomthings:ingredient:7>   # Floo Powder
+});
+
+# [Eclipsed_Clock] from [Spectre_Illuminator][+2]
+craft.remake(<randomthings:eclipsedclock>, ["pretty",
+  "B O B",
+  "O S O",
+  "B O B"], {
+  "B": <randomthings:ingredient:13>,      # Blackout Powder
+  "S": <randomthings:spectreilluminator>, # Spectre Illuminator
+  "O": <bibliocraft:clock:*>              # Oak Clock
+});
+
+# Remove all default imbue recipes
+mods.rt.RandomThingsTweaker.removeAllImbuingRecipes();
+
+# Remake imbues, make them way cheaper
+mods.rt.RandomThingsTweaker.addImbuingRecipe(
+	<actuallyadditions:item_misc:11>,
+	<tconstruct:edible:4>,
+	<actuallyadditions:item_misc:10>,
+	<minecraft:potion>.withTag({Potion: "minecraft:water"}),
+	<randomthings:imbue>
+);
+mods.rt.RandomThingsTweaker.addImbuingRecipe(
+	<minecraft:red_mushroom>,
+	<minecraft:potato>,
+	<minecraft:brown_mushroom>,
+	<minecraft:potion>.withTag({Potion: "minecraft:water"}),
+	<randomthings:imbue:1>
+);
+mods.rt.RandomThingsTweaker.addImbuingRecipe(
+	<harvestcraft:beanitem>,
+	<minecraft:dye:4>,
+	<minecraft:glowstone_dust>,
+	<minecraft:potion>.withTag({Potion: "minecraft:water"}),
+	<randomthings:imbue:2>
+);
+mods.rt.RandomThingsTweaker.addImbuingRecipe(
+	<minecraft:netherbrick>,
+	<iceandfire:wither_shard>,
+	<minecraft:soul_sand>,
+	<minecraft:potion>.withTag({Potion: "minecraft:water"}),
+	<randomthings:imbue:3>
+);

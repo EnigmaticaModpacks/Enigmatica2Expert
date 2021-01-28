@@ -358,3 +358,31 @@ recipes.removeByRecipeName("enderio:ender_dust");
 
 # Remove default Infinity reagent recipe
 mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:75>);
+
+# [Simple_Inventory_Charger] from [LV_Capacitor][+2]
+craft.remake(<enderio:item_inventory_charger_simple>, ["D","L","▬"], {
+  "D": <ore:nuggetDarkSteel>,               # Dark Steel Nugget
+  "L": <immersiveengineering:metal_device0>,# LV Capacitor
+  "▬": <ore:ingotLead>,
+});
+
+# [Basic_Inventory_Charger] from [MV_Capacitor][+2]
+craft.remake(<enderio:item_inventory_charger_basic>, ["E","M","▬"], {
+  "E": <ore:nuggetElectricalSteel>,           # Electrical Steel Nugget
+  "M": <immersiveengineering:metal_device0:1>,# MV Capacitor
+  "▬": <ore:ingotLead>,
+});
+
+# [Inventory_Charger] from [HV_Capacitor][+2]
+craft.remake(<enderio:item_inventory_charger>, ["♥","H","▬"], {
+  "♥": <ore:nuggetRedstoneAlloy>,              # Redstone Alloy Nugget
+  "H": <immersiveengineering:metal_device0:2>, # HV Capacitor
+  "▬": <ore:ingotLead>,
+});
+
+# [Vibrant_Inventory_Charger] from [Basic_Capacitor][+2]
+craft.remake(<enderio:item_inventory_charger_vibrant>, ["P","B","▬"], {
+  "P": <ore:nuggetPulsatingIron>,      # Pulsating Iron Nugget
+  "B": <enderio:item_basic_capacitor>, # Basic Capacitor
+  "▬": <ore:ingotLead>,
+});

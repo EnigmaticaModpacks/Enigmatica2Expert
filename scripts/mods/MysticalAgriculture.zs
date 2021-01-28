@@ -477,7 +477,7 @@ function handleSapling(sap as IItemStack) as void {
 		addSaplingsRecipe(sap * 6, groups.tconstruct);
 	} else
 
-	if (!owner.matches("minecraft|harvestcraft|twilightforest|randomthings|forestry|advancedrocketry")) {
+	if (!owner.matches("minecraft|harvestcraft|twilightforest|randomthings|forestry|advancedrocketry|integrateddynamics")) {
 		addSaplingsRecipe(sap * 6, groups.other);
 	}
 }

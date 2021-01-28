@@ -218,7 +218,7 @@ addBrewWithUpgrades(
   null, "potioncore:long_perplexity"
 );
 addBrewWithUpgrades(
-  awkward, <minecraft:redstone>, "potioncore:extension",
+  awkward, <jaopca:item_dusttinyredstone>, "potioncore:extension",
   "potioncore:strong_extension", "potioncore:long_extension"
 );
 addBrewWithUpgrades(

@@ -3,6 +3,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 import mods.jei.JEI.removeAndHide;
 import crafttweaker.recipes.IRecipeFunction;
+import crafttweaker.data.IData;
 #modloaded thermalexpansion
 
 # Planks/Slabs -> Sticks
@@ -191,18 +192,6 @@ for slab in <ore:slabWood>.items {
 # Hardened Cell Frame
 	scripts.wrap.actuallyadditions.Empowerer.addRecipe(<thermalexpansion:frame:129>, <thermalexpansion:frame:128>, <immersiveengineering:material:2>, <thermalfoundation:material:354>, <thermalfoundation:material:290>, <mekanism:basicblock:8>, 2500000, 200, [0.25, 0.25, 0.29]);
 
-# Remove creative kit crafts (no actual creative conversion kit)
-recipes.removeByRecipeName("thermalexpansion:cell_14");
-recipes.removeByRecipeName("thermalexpansion:cell_15");
-recipes.removeByRecipeName("thermalexpansion:cell_16");
-recipes.removeByRecipeName("thermalexpansion:cell_17");
-recipes.removeByRecipeName("thermalexpansion:cell_18");
-recipes.removeByRecipeName("thermalexpansion:tank_14");
-recipes.removeByRecipeName("thermalexpansion:tank_15");
-recipes.removeByRecipeName("thermalexpansion:tank_16");
-recipes.removeByRecipeName("thermalexpansion:tank_17");
-recipes.removeByRecipeName("thermalexpansion:tank_18");
-
 # Dynamo harder recipes
 function remakeDynamo(name as string, item as IItemStack, i1 as IIngredient, i2 as IIngredient){
 	remake("ThermalExpansion Dynamo " ~ name, item, [
@@ -224,18 +213,6 @@ recipes.removeByRecipeName("thermalexpansion:reservoir_11");
 recipes.removeByRecipeName("thermalexpansion:reservoir_12");
 recipes.removeByRecipeName("thermalexpansion:reservoir_13");
 recipes.removeByRecipeName("thermalexpansion:reservoir_14");
-
-# Clear content of reservior and tank
-for i in 0 to 5 {
-	val reservior as IItemStack = <thermalexpansion:reservoir>.definition.makeStack(i) as IItemStack;
-	utils.clearFluid(reservior);
-}
-utils.clearFluid(<thermalexpansion:tank:*>);
-
-mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 1 as byte}));
-mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 2 as byte}));
-mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 3 as byte}));
-mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 4 as byte}));
 
 # Duct filling compat
 scripts.process.fill(<thermaldynamics:duct_0:6>,  <liquid:redstone>*200,  <thermaldynamics:duct_0:2>,  null);
@@ -289,11 +266,14 @@ mods.thermalexpansion.Coolant.addCoolant(<liquid:ender_distillation>, 4000000, 7
 mods.thermalexpansion.Coolant.addCoolant(<liquid:vapor_of_levity>, 4500000, 75);
 mods.thermalexpansion.Coolant.addCoolant(<liquid:blockfluidantimatter>, 5000000, 80);
 
+#####################################
 # Enderium harder recipe
+#####################################
+
 recipes.remove(<ore:dustEnderium>.firstItem * 4);
 
 # EnderIO Remove enderium and enderium base recipes
-var enderiumBase = <enderio:item_material:39>;
+val enderiumBase = <enderio:item_material:39>;
 val enderiumIngot = <thermalfoundation:material:167>;
 mods.enderio.AlloySmelter.removeRecipe(enderiumIngot);
 mods.enderio.AlloySmelter.removeRecipe(enderiumBase);
@@ -329,6 +309,7 @@ scripts.process.fill(<enderio:item_material:39>, <liquid:ender> * 500, enderiumI
 mods.tconstruct.Alloy.removeRecipe(<liquid:enderium>);
 scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:enderium> * 144, [<liquid:platinum> * 144,  <liquid:pulsating_iron> * 144, <liquid:ender> * 1500]);
 
+#####################################
 
 # Clathrates rework. More output
 function reworkClathrate(ore as IItemStack, crystal as IItemStack, dust as IItemStack, liquid as ILiquidStack) {
@@ -350,14 +331,7 @@ reworkClathrate(<thermalfoundation:ore_fluid:2>, <thermalfoundation:material:893
 reworkClathrate(<thermalfoundation:ore_fluid:3>, <thermalfoundation:material:894>, <thermalfoundation:material:102>, <liquid:glowstone> * 2500);
 reworkClathrate(<thermalfoundation:ore_fluid:4>, <thermalfoundation:material:895>, <thermalfoundation:material:103>, <liquid:ender> * 2500);
 
-# Simplify Satchels
-for i in 2 to 6 {
-	recipes.removeByRecipeName("thermalexpansion:satchel_"~i);
-}
-craft.make(<thermalexpansion:satchel:1>, ["aOa"], {O: <thermalexpansion:satchel:0>.marked("marked"), a: <ore:nuggetInvar>   }, utils.upgradeFnc);
-craft.make(<thermalexpansion:satchel:2>, ["aOa"], {O: <thermalexpansion:satchel:1>.marked("marked"), a: <ore:nuggetElectrum>}, utils.upgradeFnc);
-craft.make(<thermalexpansion:satchel:3>, ["aOa"], {O: <thermalexpansion:satchel:2>.marked("marked"), a: <ore:nuggetSignalum>}, utils.upgradeFnc);
-craft.make(<thermalexpansion:satchel:4>, ["aOa"], {O: <thermalexpansion:satchel:3>.marked("marked"), a: <ore:nuggetEnderium>}, utils.upgradeFnc);
+#####################################
 
 # [Reinforced_Upgrade_Kit] from [Iridium_Gear][+2]
 craft.remake(<thermalfoundation:upgrade:1>, ["pretty",
@@ -397,29 +371,161 @@ mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft
 scripts.process.crush(<thermalfoundation:geode>, <mysticalagradditions:insanium:5>, "No exceptions", 
   [<mysticalagradditions:insanium:5>], [0.25]);
 
-# Remake Hardened versions of tank and chest
+#####################################
+# Remake Hardened versions of equipment
 # they required $hardenedGlass, that actually too hard to craft
-recipes.removeByRecipeName("thermalexpansion:tank_3");
-recipes.removeByRecipeName("thermalexpansion:strongbox_3");
+#####################################
 
-val hardenedIngrs = {
-  "P": <thermalexpansion:tank>     .withTag({RSControl: 0 as byte, Level: 1 as byte}).marked("marked"), # Portable Tank (Hardened)
-  "S": <thermalexpansion:strongbox>.withTag({Facing: 3 as byte,    Level: 1 as byte}).marked("marked"), # Strongbox (Hardened)
-  "□": <tconstruct:clear_glass>,
-  "▬": <ore:ingotElectrum> # Electrum Ingot
-} as IIngredient[string];
+# Remove all old recipes
+for name in [
+	"frame_1"    , "frame_3"    , "frame_4"    , "frame_5",
+	"frame_6"    , "frame_7"    , "frame_8"    , "cell_1",
+	"cell_2"     , "cell_3"     , "cell_4"     , "cell_5",
+	"cell_6"     , "cell_7"     , "cell_8"     , "cell",
+	"cache_1"    , "cache_2"    , "cache_3"    , "cache_4",
+	"cache_5"    , "cache"      ,
+	// "reservoir_1", "reservoir_2", "reservoir_3", "reservoir_4", "reservoir"  ,
+	"satchel_2"  , "satchel_3"  , "satchel_4"  , "satchel_5",
+	"satchel_6"  , "satchel_7"  , "strongbox_1",
+	"strongbox_2", "strongbox_3", "strongbox_4", "strongbox_5",
+	"strongbox"  , "tank_1"     , "tank_2"     , "tank_3",
+	"tank_4"     , "tank_5"     , "tank"
+] as string[] {
+	recipes.removeByRecipeName("thermalexpansion:" ~ name);
+}
+
+# Also remove frames filling
+for i in 130 to 133 {
+	mods.thermalexpansion.Transposer.removeFillRecipe(<thermalexpansion:frame>.definition.makeStack(i), <liquid:redstone> * 4000);
+}
 
 val upgradeFnc as IRecipeFunction = function(out, ins, cInfo){
 	if(ins has "marked" && !isNull(ins.marked) && ins.marked.hasTag) {
-		return ins.marked.updateTag({Level: 2 as byte});
+		return ins.marked.updateTag({Level: D(ins.marked.tag).getByte("Level", 0) + 1 as byte});
 	}
 	return out;
 };
 
-craft.make(<thermalexpansion:tank>     .withTag({RSControl: 0 as byte, Level: 2 as byte}), ["□▬□","▬P▬","□▬□"], hardenedIngrs, upgradeFnc);
-craft.make(<thermalexpansion:strongbox>.withTag({Facing: 3 as byte,    Level: 2 as byte}), ["□▬□","▬S▬","□▬□"], hardenedIngrs, upgradeFnc);
+# Adding recipes
+val materials = [
+	"Tin",
+	"Invar",
+	"Electrum",
+	"Signalum",
+	"Enderium",
+] as string[];
+
+for i, mat in materials {
+	val lvl_i  = {Level: i as byte} as IData;
+	val lvl_im = {Level: (i - 1) as byte} as IData;
+
+	if(i != 0) {
+		# Simplify Satchels
+		craft.make(
+			<thermalexpansion:satchel>.definition.makeStack(i), ["aOa"],
+			{O: <thermalexpansion:satchel>.definition.makeStack(i - 1).marked("marked"), a: oreDict["nugget" ~ mat]}, utils.upgradeFnc
+		);
+
+		# Tank
+		craft.make(<thermalexpansion:tank>.withTag(lvl_i), ["pretty",
+			"□ a □",
+			"g ♥ g",
+			"□ a □"], {
+			"♥": <thermalexpansion:tank>.withTag(lvl_im).marked("marked"),
+			"a": oreDict["ingot" ~ materials[i - 1]],
+			"g": oreDict["gear" ~ mat],
+			"□": <tconstruct:clear_glass>,
+		}, upgradeFnc);
+
+		# Cache
+		craft.remake(<thermalexpansion:cache>.withTag(lvl_i), ["pretty",
+			", ▬ ,",
+			"▬ ♥ ▬",
+			", ▬ ,"], {
+			"♥": <thermalexpansion:cache>.withTag(lvl_im).marked("marked"),
+			"▬": oreDict["ingot" ~ materials[i - 1]],
+			",": oreDict["nugget" ~ mat],
+		}, upgradeFnc);
+
+		# Strongbox
+		craft.remake(<thermalexpansion:strongbox>.withTag(lvl_i), ["pretty",
+			"  ▬  ",
+			"i ♥ i",
+			"  ▬  "], {
+			"♥": <thermalexpansion:strongbox>.withTag(lvl_im).marked("marked"),
+			"▬": oreDict["ingot" ~ mat],
+			"i": oreDict["ingot" ~ materials[i - 1]],
+		}, upgradeFnc);
+	}
+
+	# Cell
+	craft.remake(<thermalexpansion:cell>.withTag(lvl_i), ["pretty",
+		"□ c □",
+		"g Ϟ g",
+		"□ c □"], {
+		"Ϟ": ((i==0) 
+			? <thermalexpansion:frame:128> # Energy Cell Frame
+			: <thermalexpansion:cell>.withTag(lvl_im)).marked("marked"),
+		"□": ((i==0)
+			? <ore:plateLead>
+			: oreDict["plate" ~ materials[i - 1]]),
+		"g": oreDict["gear" ~ mat],
+		"c": <thermalfoundation:material:515>, # Redstone Conductance Coil
+	}, (i==0)?null:upgradeFnc);
+}
+
+# Level 0 of items
+craft.make(<thermalexpansion:tank>.withTag({/* RSControl: 0 as byte,  */Level: 0 as byte}), ["pretty",
+	"  □  ",
+	"□ ▬ □",
+	"  ♥  "], {
+	"□": <ore:blockGlass>,
+	"♥": <thermalfoundation:material:512>, # Redstone Servo
+	"▬": <ore:ingotCopper>
+});
+
+# Cache
+craft.remake(<thermalexpansion:cache>.withTag({/* Facing: 3 as byte,  */Level: 0 as byte}), ["pretty",
+  "  ▬  ",
+  "▬ c ▬",
+  "  ♥  "], {
+  "c": <ore:chest>,                      # Oak Chest
+  "♥": <thermalfoundation:material:512>, # Redstone Servo
+  "▬": <ore:ingotTin>                    # Tin Ingot
+});
+
+# Strongbox
+craft.remake(<thermalexpansion:strongbox>.withTag({/* Facing: 3 as byte,  */Level: 0 as byte}), ["pretty",
+	"  ▬  ",
+	"i ♥ i",
+	"  ▬  "], {
+	"♥": <ore:chest>,
+	"▬": <ore:ingotTin>,
+	"i": <ore:ingotCopper>,
+});
+
+mods.jei.JEI.hide(<thermalexpansion:cell>.withTag({Recv: 10000, RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [2, 1, 1, 1, 1, 1] as byte[] as byte[], Level: 0 as byte, Send: 10000}));
+mods.jei.JEI.hide(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 0 as byte}));
+mods.jei.JEI.hide(<thermalexpansion:cache>.withTag({Facing: 3 as byte, Level: 0 as byte}));
+mods.jei.JEI.hide(<thermalexpansion:strongbox>.withTag({Facing: 3 as byte, Level: 0 as byte}));
 
 # Add Strongboxes to JEI
-for i in 1 to 5 {
-	mods.jei.JEI.addItem(<thermalexpansion:strongbox>.withTag({Facing: 3 as byte, Level: i as byte}));
+for i in 0 to 5 {
+	val tank = <thermalexpansion:tank>     .withTag({/* RSControl: 0 as byte,  */Level: i as byte});
+	utils.clearFluid(tank, "Clear TE Tank "~i);
+	mods.jei.JEI.addItem(tank);
+	mods.jei.JEI.addItem(<thermalexpansion:strongbox>.withTag({/* Facing: 3 as byte,  */Level: i as byte}));
+	mods.jei.JEI.addItem(<thermalexpansion:cache>    .withTag({/* Facing: 3 as byte,  */Level: i as byte}));
+	mods.jei.JEI.addItem(<thermalexpansion:cell>     .withTag({                   Level: i as byte}));
+}
+
+# Make cryotheum dust alternative
+recipes.removeByRecipeName("thermalfoundation:dust_cryotheum");
+recipes.addShapeless("dust_cryotheum x1", <thermalfoundation:material:1025> * 1, [<ore:dustBlizz>, <ore:dustBlizz>, <ore:dustRedstone>, <minecraft:snowball>]);
+recipes.addShapeless("dust_cryotheum x4", <thermalfoundation:material:1025> * 4, [<ore:dustBlizz>, <ore:dustBlizz>, <ore:dustRedstone>, <forestry:pollen:1>]);
+
+# Clear content of reserviors
+for i in 0 to 5 {
+	val reservior as IItemStack = <thermalexpansion:reservoir>.definition.makeStack(i) as IItemStack;
+	utils.clearFluid(reservior);
 }

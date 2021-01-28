@@ -5,14 +5,6 @@ import scripts.craft.grid.Grid;
 
 #priority -1
 
-# Eclipsed Clock
-	recipes.remove(<randomthings:eclipsedclock>);
-	recipes.addShapedMirrored("Eclipsed Clock", 
-	<randomthings:eclipsedclock>, 
-	[[<mekanism:otherdust:5>, <minecraft:clock>, <mekanism:otherdust:5>],
-	[<minecraft:clock>, <ore:netherStar>, <minecraft:clock>], 
-	[<mekanism:otherdust:5>, <minecraft:clock>, <mekanism:otherdust:5>]]);
-
 # Quark Marble Wall Oredicted version
 	recipes.remove(<quark:marble_wall>);
 	recipes.addShaped("Quark Marble Wall", 
@@ -512,7 +504,7 @@ scripts.wrap.thermalexpansion.Compactor.addMintRecipe(trueSilicon * 2, <minecraf
 recipes.addShapeless("Patchouli book", <patchouli:guide_book>.withTag({"patchouli:book": "patchouli:e2e_e"}), [<questbook:itemquestbook>]);
 
 # Tallow into biomass
-scripts.process.melt(<ore:tallow>, <liquid:biomass> * 200, "No Exceptions");
+scripts.process.melt(<ore:tallow>, <liquid:biomass> * 10, "No Exceptions");
 
 # Molten Cheese
 scripts.process.melt(<ore:cheeseWheels>|<ore:blockCheese>, <liquid:cheese> * 1000, "No Exceptions");

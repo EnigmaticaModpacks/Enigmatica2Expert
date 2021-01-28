@@ -62,14 +62,6 @@ for slime, dirts in slimeDirts {
 # Blank Cast Resmelting
 	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:alubrass> * 144, <tconstruct:cast>);
 
-# Firewood
-	recipes.remove(<tconstruct:firewood:1>);
-	recipes.addShapedMirrored("Firewood", 
-	<tconstruct:firewood:1>, 
-	[[<tconstruct:firewood>, <bloodmagic:component:1>, <tconstruct:firewood>],
-	[<bloodmagic:lava_crystal>, <tconstruct:firewood>, <bloodmagic:lava_crystal>], 
-	[<tconstruct:firewood>, <bloodmagic:component:1>, <tconstruct:firewood>]]);
-
 # Reinforcement Modifier
 	recipes.remove(<tconstruct:materials:14>);
 	recipes.addShapedMirrored("Reinforcement Modifier",
@@ -396,4 +388,14 @@ craft.make(<tconstruct:tooltables:4>.withTag({
   "#": <forestry:wood_pile>, # Wood Pile
   "c": <ore:chest>,          # Oak Chest
   "M": <conarm:book>         # Materials and You - Armory Addendum
+});
+
+# [Firewood] from [Pahoehoe_Lava_Bucket][+2]
+craft.remake(<tconstruct:firewood:1>, ["pretty",
+	"L B L",
+	"B ~ B",
+	"L B L"], {
+	"B": <forestry:bituminous_peat>, # Bituminous Peat
+	"L": <tconstruct:firewood>,      # Lavawood
+	"~": Bucket("ic2pahoehoe_lava")  # Pahoehoe Lava Bucket
 });

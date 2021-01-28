@@ -131,3 +131,12 @@ utils.compact(<exnihilocreatio:block_diorite_crushed> , <contenttweaker:compress
 utils.compact(<exnihilocreatio:block_skystone_crushed>, <contenttweaker:compressed_crushed_skystone>);
 utils.compact(<exnihilocreatio:block_granite_crushed> , <contenttweaker:compressed_crushed_granite>);
 
+# [Artificial_Hive] from [Hay_Bale][+1]
+craft.remake(<exnihilocreatio:hive>, ["pretty",
+  "B B B",
+  "b H b",
+  "B B B"], {
+  B: <ore:itemBeeswax>,    # Beeswax
+  H: <minecraft:hay_block>,# Hay Bale
+	b: <rustic:bee>
+});
