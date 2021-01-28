@@ -219,10 +219,10 @@ heavy.localizedName = "Heavy";
 heavy.itemLocalizer = function(thisMaterial, itemName){
     return "Heavy " + itemName;
 };
-heavy.addHeadMaterialStats(60, 0.01, 13.0, 5);
+heavy.addHeadMaterialStats(60, 0.01, 20.0, 5);
 heavy.addExtraMaterialStats(-40);
 heavy.addHandleMaterialStats(0.5, -10);
-heavy.addBowMaterialStats(0.01, 0.1, 13);
+heavy.addBowMaterialStats(0.01, 0.1, 20);
 heavy.addArrowShaftMaterialStats(0.2, -10);
 
 heavy.addCoreMaterialStats(10, 2.5);
