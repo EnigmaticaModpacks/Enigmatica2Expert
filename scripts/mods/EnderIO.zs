@@ -241,9 +241,9 @@ scripts.wrap.immersiveengineering.ArcFurnace.addRecipe(<enderio:item_material:72
 # Remake binder
 recipes.remove(<enderio:item_material:22> * 8);
 makeEx(<enderio:item_material:22> * 12, [
-	[<ore:dust>, <ore:materialWoolEnergetic>, <ore:dust>],
+	[<ore:dust>, <ore:dustEndstone>, <ore:dust>],
 	[<ore:dustClay>, <liquid:sand> * 1000, <ore:dustClay>],
-	[<ore:dust>, <ore:materialWoolEnergetic>, <ore:dust>]]);
+	[<ore:dust>, <ore:dustEndstone>, <ore:dust>]]);
 
 # Simplifi Niard
 recipes.remove(<enderio:block_niard>);

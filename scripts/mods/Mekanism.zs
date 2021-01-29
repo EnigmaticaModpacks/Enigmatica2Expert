@@ -326,17 +326,16 @@ scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <mekanismgenerators:rea
 	[<ore:plateElite>, <nuclearcraft:lithium_ion_battery_elite>, <nuclearcraft:lithium_ion_battery_elite>, <nuclearcraft:lithium_ion_battery_elite>, <ore:plateElite>]
 ]);
 
-# Speed Upgrade with energetic wool
-remake("mekanism speedupgrade", <mekanism:speedupgrade>, [
-	[<ore:blockGlass>, <energeticsheep:energetic_wool:*>, <ore:blockGlass>],
-	[<mekanism:enrichedalloy>, <ore:dustOsmium>, <mekanism:enrichedalloy>],
-	[<ore:blockGlass>, <energeticsheep:energetic_wool:*>, <ore:blockGlass>]]);
-
-# Energy Upgrade with energetic wool
-remake("mekanism energyupgrade", <mekanism:energyupgrade>, [
-	[<ore:blockGlass>, <energeticsheep:energetic_wool:*>, <ore:blockGlass>],
-	[<mekanism:enrichedalloy>, <ore:dustGold>, <mekanism:enrichedalloy>],
-	[<ore:blockGlass>, <energeticsheep:energetic_wool:*>, <ore:blockGlass>]]);
+val upgradeIngrs = {
+  "♠": <ore:dustGold>,      # Pulverized Gold
+  "A": <ore:alloyAdvanced>, # Enriched Alloy
+  "□": <ore:blockGlass>,    # Glass
+  "r": <ore:nuggetArdite>,  # Ardite Nugget
+  "▲": <ore:dustOsmium>,    # Osmium Dust
+  "C": <ore:nuggetCobalt>   # Cobalt Nugget
+} as IIngredient[string];
+craft.remake(<mekanism:speedupgrade>,  ["C□C", "A▲A", "C□C"], upgradeIngrs);
+craft.remake(<mekanism:energyupgrade>, ["r□r", "A♠A", "r□r"], upgradeIngrs);
 
 # Atomic disassembler
 recipes.removeShaped(<mekanism:atomicdisassembler>);

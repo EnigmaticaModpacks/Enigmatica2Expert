@@ -147,14 +147,14 @@
 # Harder card recipe
 recipes.removeByRecipeName("rftools:powercell_card");
 recipes.addShaped(<rftools:powercell_card> * 4, [
-	[<energeticsheep:energetic_wool:*>, <computercraft:printout>, <energeticsheep:energetic_wool:*>],
+	[<ore:dustEndstone>, <computercraft:printout>, <ore:dustEndstone>],
 	[<computercraft:printout>, <rats:charged_creeper_chunk>, <computercraft:printout>],
-	[<energeticsheep:energetic_wool:*>, <computercraft:printout>, <energeticsheep:energetic_wool:*>]]);
+	[<ore:dustEndstone>, <computercraft:printout>, <ore:dustEndstone>]]);
 
 # Power cells
 val iWireless = <cd4017be_lib:m:402>;
 val iGate = <biomesoplenty:crystal_shard>;
-val iPower = <energeticsheep:energetic_wool:*>;
+val iPower = <ore:dustEndstone>;
 remake("rftools powercell_simple", <rftools:powercell_simple>, [
 	[iPower, iWireless, iPower], 
 	[<minecraft:quartz>, <rftools:machine_frame>, <minecraft:quartz>], 
