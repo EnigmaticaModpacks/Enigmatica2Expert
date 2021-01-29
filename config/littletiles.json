@@ -9,7 +9,7 @@
   "general": {
     "allowFlowingWater": true,
     "allowFlowingLava": true,
-    "storagePerPixel": 1.0,
+    "storagePerPixel": 2.0,
     "enableBed": true,
     "enableAnimationCollision": true,
     "enableCollisionMotion": true,
@@ -17,7 +17,7 @@
   },
   "survival": {
     "limitAffectedBlocks": true,
-    "maxAffectedBlocks": 2,
+    "maxAffectedBlocks": 6,
     "harvestLevelBlock": 1,
     "editUnbreakable": false,
     "minimumTransparency": 255,

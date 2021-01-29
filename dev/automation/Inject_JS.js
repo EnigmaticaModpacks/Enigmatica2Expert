@@ -1,6 +1,6 @@
 /*
 
-  Inspect_JS
+  Inject_JS
 
   Lookup for keyword "Inject_js" in all zs files
   to evaluate block and inject its result
