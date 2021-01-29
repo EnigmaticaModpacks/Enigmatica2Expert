@@ -32,7 +32,7 @@ Promise.all(union.map(m=>curseforge.getMod(m.addonID))).then(cursedUnion => {
   
   for (const [key, rawList] of Object.entries(result)) {
     const list = rawList.map(l=>{
-      const modFileName = union.find(o=>o.addonID===l.id)?.installedFile.FileNameOnDisk
+      const modFileName = union.find(o=>o.addonID===l.id)?.installedFile?.FileNameOnDisk
       return `<img src="${l.logo?.thumbnailUrl}" width="50"> | [**${l.name}**](${l.url}) <sub><sup>${modFileName}</sup></sub> <br> ${l.summary}`
       })
 

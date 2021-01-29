@@ -355,9 +355,6 @@ scripts.process.squeeze([<actuallyadditions:item_misc:13>], <liquid:canolaoil> *
 # -----------------------------------------
 # Storage crate remake
 
-# Stackable storage keeper
-<actuallyadditions:item_crate_keeper>.maxStackSize = 64;
-
 # [Storage_Crate_Keeper] from [Black_Quartz][+1]
 craft.remake(<actuallyadditions:item_crate_keeper>, ["pretty",
   "  #  ",
