@@ -142,6 +142,12 @@ globs([
   '!mods/keywizard*.jar',
   '!mods/BetterFps*.jar',
   '!mods/betteranimals-*.jar',
+  '!mods/Biome Border Viewer*.jar',
+  '!mods/notifymeonstart*.jar',
+  '!mods/Tips-*.jar',
+  '!mods/ChatTweaks_*.jar',
+  '!mods/grid-*.jar',
+  '!mods/ping-*.jar',
 
   // Not sure
 /* 
