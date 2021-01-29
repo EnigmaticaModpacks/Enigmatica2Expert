@@ -1,5 +1,149 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
+# 0.17
+
+## 🟢 New Mods
+
+Icon | Summary
+------:|:------
+<img src="https://media.forgecdn.net/avatars/thumbnails/134/37/256/256/636488657582083451.png" width="50"> | [**LagGoggles**](https://www.curseforge.com/minecraft/mc-mods/laggoggles) <sub><sup>LagGoggles-FAT-1.12.2-4.11-92.jar</sup></sub> <br> A minecraft forge mod which profiles and visualises lag in the world.
+<img src="https://media.forgecdn.net/avatars/thumbnails/168/445/256/256/636709256650418668.png" width="50"> | [**Surge**](https://www.curseforge.com/minecraft/mc-mods/surge) <sub><sup>Surge-1.12.2-2.0.77.jar</sup></sub> <br> An open source performance enhancement mod.
+<img src="https://media.forgecdn.net/avatars/thumbnails/138/255/256/256/636520464179775826.png" width="50"> | [**Born in a Barn**](https://www.curseforge.com/minecraft/mc-mods/born-in-a-barn) <sub><sup>Born In A Barn V1.8-1.12-1.1.jar</sup></sub> <br> Fixed a Village ChunkLoading Issue
+<img src="https://media.forgecdn.net/avatars/thumbnails/177/555/256/256/636771733330412005.png" width="50"> | [**Tips**](https://www.curseforge.com/minecraft/mc-mods/tips) <sub><sup>Tips-1.12.2-1.0.9.jar</sup></sub> <br> This mod adds tips to loading menus. It also allows for modpacks and mods to add their own tips!
+<img src="https://media.forgecdn.net/avatars/thumbnails/135/618/256/256/636501629141583847.png" width="50"> | [**Athenaeum**](https://www.curseforge.com/minecraft/mc-mods/athenaeum) <sub><sup>athenaeum-1.12.2-1.19.2.jar</sup></sub> <br> This is my Minecraft mod library. There are many like it, but this one is mine.
+<img src="https://media.forgecdn.net/avatars/thumbnails/149/171/256/256/636587358046680164.png" width="50"> | [**Server Tab Info**](https://www.curseforge.com/minecraft/mc-mods/server-tab-info) <sub><sup>ServerTabInfo-1.12.2-1.2.6.jar</sup></sub> <br> A client and/or server mod that gives nice a way to view the mean tick time and ticks per second (TPS) of the game
+<img src="https://media.forgecdn.net/avatars/thumbnails/109/826/256/256/636382841953033335.png" width="50"> | [**Chat Tweaks**](https://www.curseforge.com/minecraft/mc-mods/chat-tweaks) <sub><sup>ChatTweaks_1.12.2-5.1.25.jar</sup></sub> <br> Twitch Emotes and Image Preview. Also basically like BetterTTV but for Minecraft.
+<img src="https://media.forgecdn.net/avatars/thumbnails/28/371/256/256/635826252878407531.png"  width="50"> | [**(Chat) Ping!**](https://www.curseforge.com/minecraft/mc-mods/chat-ping) <sub><sup>ping-1.9-3.0.9.jar</sup></sub> <br> Notifying users when they are mentioned in chat
+<img src="https://media.forgecdn.net/avatars/thumbnails/26/511/256/256/635793547757043222.png"  width="50"> | [**IC2 Crop-Breeding Plugin**](https://www.curseforge.com/minecraft/mc-mods/ic2-nei-crop-plugin) <sub><sup>IC2CropBreeding Plugin V1.12-1.1.jar</sup></sub> <br> Adds a Ingame Breeding Calculator into the Game
+<img src="https://media.forgecdn.net/avatars/thumbnails/282/269/256/256/637288548615817474.png" width="50"> | [**Grid**](https://www.curseforge.com/minecraft/mc-mods/grid) <sub><sup>grid-1.12-forge14.21.1.2387-1.4.jar</sup></sub> <br> Show a grid overlay that helps counting when you're building, and optionally spawn locations depending on light level
+<img src="https://media.forgecdn.net/avatars/thumbnails/207/323/256/256/636965628804677340.png" width="50"> | [**🔍 Jade**](https://www.curseforge.com/minecraft/mc-mods/jade) <sub><sup>Jade-0.1.0.jar</sup></sub> <br> HWYLA fork & addons
+<img src="https://media.forgecdn.net/avatars/thumbnails/159/973/256/256/636662483485973129.png" width="50"> | [**Biome Border Viewer**](https://www.curseforge.com/minecraft/mc-mods/biome-border-viewer) <sub><sup>Biome Border Viewer-1.3.0.0-1.12.2.jar</sup></sub> <br> Shows the borders of biomes.
+<img src="https://media.forgecdn.net/avatars/thumbnails/328/951/256/256/637453834515190647.png" width="50"> | [**Eye of Dragons**](https://www.curseforge.com/minecraft/mc-mods/eye-of-dragons) <sub><sup>eyeofdragons-0.0.2.jar</sup></sub> <br> Adds Eye of Dragons to find Ice and Fire (and Lightning) dragons
+<img src="https://media.forgecdn.net/avatars/thumbnails/324/397/256/256/637440163997600019.png" width="50"> | [**Kiro's Basic Blocks**](https://www.curseforge.com/minecraft/mc-mods/kiros-basic-blocks) <sub><sup>kirosblocks-1.1.jar</sup></sub> <br> An block texture addon for LittleTiles
+<img src="https://media.forgecdn.net/avatars/thumbnails/317/970/256/256/637423409414938144.png" width="50"> | [**NuclearCraft Reactor Builder**](https://www.curseforge.com/minecraft/mc-mods/nuclearcraft-reactor-builder) <sub><sup>NC-ReactorBuilder-1.12.2-1.0.1.jar</sup></sub> <br> An automated reactor builder for NuclearCraft!
+<img src="https://media.forgecdn.net/avatars/thumbnails/318/797/256/256/637426150328977672.png" width="50"> | [**Notify me**](https://www.curseforge.com/minecraft/mc-mods/notify-me) <sub><sup>notifymeonstart[1.12.2].jar</sup></sub> <br> send windows notification when your game is ready
+
+## 🔴 Removed Mods
+
+Icon | Summary | Reason of removal
+------:|:------|:-----
+<img src="https://media.forgecdn.net/avatars/thumbnails/128/511/256/256/636448328534995084.png" width="50"> | [**EnergeticSheep**](https://www.curseforge.com/minecraft/mc-mods/energeticsheep) <sub><sup>undefined</sup></sub> <br> Sheep that generate energy | Method of getting energy from wool is too unclear. For half of year playing with this mod i still dont understand how to use sheep to make energy
+<img src="https://media.forgecdn.net/avatars/thumbnails/112/514/256/256/636391997555358332.png" width="50"> | [**JustTheTips**](https://www.curseforge.com/minecraft/mc-mods/justthetips) <sub><sup>justthetips-1.12-1.0.1.1.jar</sup></sub> <br> Adds some tips to loading screens. | Replaced with **Tips**
+<img src="https://media.forgecdn.net/avatars/thumbnails/132/988/256/256/636479745271847923.png" width="50"> | [**JEI Villagers**](https://www.curseforge.com/minecraft/mc-mods/jei-villagers) <sub><sup>jeivillagers-1.12-1.0.2.jar</sup></sub> <br> A JEI addon that helps you to see what villagers have to offer. | **Just Anough Resources** adds same tab but better
+
+
+## ✏️ Recipes
+
+  - ![](https://git.io/JtJk9 "Beeswax") into less biomass
+  - ![](https://git.io/Jt8wG "Drill") simplify
+  - ![](https://git.io/Jt8wU "Ring of Growth") & ![](https://git.io/Jt8wt "Ring of Liquid Banning") simplify
+  - ![](https://git.io/JtlBk "Ring of Speed"), ![](https://git.io/Jt8wL "Advanced Ring of Speed") and all other AA rings simplify
+  - ![](https://git.io/JtJkM "Diamond Chisel") recipe fix
+  - ![](https://git.io/Jt8wq "Inventory Charger") and other EIO chargers simplify
+  - ![](https://git.io/JtqT3 "Artificial Hive") from ![](https://git.io/Jtmfo "Bee") recipe
+  - ![](https://git.io/Jt3tf "Silk Wisp") to ![](https://git.io/JLjcw "String") x32 buff
+  - ![](https://git.io/Jt8wY "Woven Mining Backpack") and other backpacks simplify
+  - ![](https://git.io/JtYHA "Ambrosia") now stackable x64
+  - ![](https://git.io/Jt342 "Morphing Tool") now content `integratedtunnels` wrench
+  - ![](https://git.io/Jt8wI "Menril Sapling") removed excess recipe from ![](https://git.io/Jt8ws "Nature Essence")
+  - [Potion Of Extension] ngredient changed
+  - ![](https://git.io/JtJkF "Returning Block of Sticks") simplify
+  - ![](https://git.io/JtLeh "Eclipsed Clock") simplify
+  - ![](https://git.io/JtG7O "Experience Imbue") and other imbues way simplier
+  - ![](https://git.io/JtmXk "Gem of Ratlantis") moved out of botania
+  - ![](https://git.io/JtnEj "Firewood") simplify. Mid Blood Magic was too pricy
+  - ![](https://git.io/Jt8wZ "Bio Reactor") simplify
+  - ![](https://git.io/Jt8wm "Resonant Upgrade Kit") Thermal Expansion: remake all tiered items
+    > After changing Upgrade Kits, recipes got changed, so many tiered
+    > recipes had glassHardened in their recipes, which too pricy for some of them.
+
+## 📖 Quest Book
+
+- New entries and rearranges
+  > Also type fixes from Petey
+
+## 🔄 Misc Changes
+
+- 🗃️ Loot table: remove Leather set and Bronze Sword
+  > ![](https://git.io/JtJkH "Leather Cap") ![](https://git.io/JtJky "Leather Tunic") ![](https://git.io/JtJkD "Leather Pants") ![](https://git.io/JtJk7 "Leather Boots") ![](https://git.io/JtlWX "Bronze Sword")
+
+## 🔵 Mods
+
+- ### 🔨 Tinker's Construct
+
+  - TCon: Add more melt recyclings, ![](https://git.io/Jtsg5 "Bee Smoker") for example.
+  - TConEvo: Aura Syphon Buff. ![](https://git.io/Jtnz8 "Dreamwood") material
+  - Tweakerconstruct: Balance changes. Some buffed, some nerfed
+    > Also disable antimagic trait (wont work anyway)
+
+- ### 🐉 Ice and Fire
+
+  - 4x more of ![](https://git.io/Jt8w3 "Pile of Gold") in dragon nests
+
+- ### 🦯 Thaumcraft
+
+  - Remake aspects for some items. ![](https://git.io/Jt8wO "Triple Compressed Cobblestone") for example
+  - Buff ![](https://git.io/JtkKU "Headband of Curiosity") back
+  - Disable ThaumTweaks craft tweaks
+    > Craft Tweaks was removed ![](https://git.io/Jt8wf "Primal Metal Ingot") recipe before
+  - [Infernal Furnace] added to Benefication
+    > Now this item groups would output more nuggets when smelted in Infernal Furnace
+    > - ![](https://git.io/JtlW0 "Native Charged Certus Quartz Cluster") Native Clusters
+    > - ![](https://git.io/JtlWR "Dirty Charged Certus Quartz") Dirty Ores
+    > - Rat Nuggets
+
+- ### 🌡️ Thermal Expansion
+
+  - ![](https://git.io/Jt8wn "Flux Capacitor (Reinforced)") nerfs. Now way less capacity
+  - ![](https://git.io/Jt8wT "Cache (Basic)") x10 buff
+  - ![](https://git.io/Jt8wM "Energy Cell (Basic)") capacity buff
+
+- ### 🌿 Patchouli
+
+  - Patchouli: Lava added to ![](https://git.io/JtlC2 "Smeltery Controller") Fuel list
+
+- ### 🖽 Little Tiles
+
+  - LittleTiles: remake all recipes, make cheaper
+    > Recipes was changed from recent LT update so need fixes.
+    > Also, LT now comes way earlier, no matter if it still give cheat ability to
+    > SilkTouch every block without consuming durability
+
+- ### 🎲 Random Things
+
+  - ![](https://git.io/Jt8wv "Block Destabilizer") range buff
+
+- ### 🟨 Recurrent Complex
+
+  - Recurrent Complex: Huge trees disabled
+    > They had wrong "empty space" blocks, so when generating cut huge squares of landscape
+
+- ### 👨‍🦯 ExNihiloCreatio
+  
+  - ![](https://git.io/JttBs "Eyebulb") output ![](https://git.io/Jt8wk "Spider Eye") with crook
+  - ![](https://git.io/Jt8we "Scented Hive") enabled, added recipe from ![](https://git.io/Jtmfo "Bee")
+
+- ### 🦌 Better Animals Plus
+
+  - Remove **Eels** from Twilight forest
+    > For some reasons they spawns in TF rivers like crazy in packs of 20-30 eels
+
+- ### 🛢️ Immersive Engineering
+
+  - Buff Dynamos (Mills) x3  
+  - Also revert Crusher working time. Its still broken btw
+
+- ### Actually Additions
+
+  - Buffed ![](https://git.io/Jt8w9 "Leaf-Eating Generator") Energy Production
+
+- ### Little Tiles
+
+  - Minor ranges tweaks
+
+----------------------------------------------------
+----------------------------------------------------
+
 # 0.16
 
 ## 🟡 Mods changes
