@@ -16,7 +16,7 @@ const crafttweaker_log = fs.readFileSync('crafttweaker.log','utf8')
 const globMatch = crafttweaker_log.match(/^Recipes:$.*/ms)
 
 if(!globMatch) {
-  console.log('  ERROR: no /ct recipes found in crafttweaker.log')
+  console.log('  🧥 ERROR: no /ct recipes found in crafttweaker.log')
   return
 }
 

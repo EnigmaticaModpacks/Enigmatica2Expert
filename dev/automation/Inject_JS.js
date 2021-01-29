@@ -42,7 +42,7 @@ glob.sync('scripts/**/*.zs').forEach(filePath => {
   }
 })
 
-write(`  Found ${occurences.length} Inject_js blocks. Evaluating `)
+write(`  🐲 Found ${occurences.length} Inject_js blocks. Evaluating `)
 
 occurences.forEach(cmd => {
   let injectString = ''

@@ -208,7 +208,15 @@ var ignore = [
   /\[FML\]: {3}Registry: .*SoundEvent/,
 
   /Failed to initialize artifact .*: Unknown material/, // Reported to TconEvo
-
+  /Mixin config mixins.harvestcrafttweaker.json does not specify "minVersion" property/,
+  /Mod floralchemy is loaded, but flower petropetunia is not present??/, // https://github.com/quat1024/BotaniaTweaks/issues/63
+  /\[Shoulder Surfing\]: Only found 13 code injections, but expected 9/,
+  /\[Shoulder Surfing\]: ShoulderSurfing should be disabled!/, // Dont care if work
+  /\[excompressum\]: Could not load remote skins for auto sieve:/,
+  /\[jei\]: Recipe registry plugin is slow, took .* ms. class pl.asie.preston.compat.jei.CompressorRecipeRegistryPlugin/,
+  /\[AstralSorcery Patreon Effect Loader\/WARN\] \[Astral Sorcery\]: Skipped .* patreon effects during loading due to malformed data!/,
+  /\[enderio\]: Refined Storage conduits NOT loaded. Refined Storage is not installed/,
+  /OBJModel\.Parser: found a face \('f'\) with more than 4 vertices, only the first 4 of these vertices will be rendered!/,
 ]
 
 
@@ -226,7 +234,7 @@ var known = [
 =============================================*/
 
 var log = fs.readFileSync('logs/debug.log', 'utf8')
-var newLog = ''
+var newLog = (log.match(/\[Client thread\/INFO\] (\[Surge\]: The game loaded in approximately +.* seconds.)/)?.[1] ?? '') + '\n'
 
 var stat = {
   total: 0,
