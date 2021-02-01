@@ -10,6 +10,22 @@ import scripts.craft.grid.Grid;
 import scripts.craft.helper.recipeInventory.RecipeInventory;
 import scripts.craft.helper.characterManager.CharacterManager;
 
+#------------------------------------------------------------------
+# Statics
+#------------------------------------------------------------------
+
+# ID of item, right clicking with will cause helper triggers
+static toolItemID as string = "minecraft:bone";
+
+# Set this to "false" if you dont want tool item caused recipe
+# printings in crafttweaker.log.
+# When set to "false", only item with NBT tag would cause triggers
+static isToolNoTag as bool = true;
+
+
+#------------------------------------------------------------------
+# Handlers
+#------------------------------------------------------------------
 zenClass RecipeWork { zenConstructor() {}
 
   var inventories as RecipeInventory[string] = {};
@@ -90,22 +106,23 @@ zenClass RecipeWork { zenConstructor() {}
   }
 
   function toString(style as string[]) as string {
-
-    var mergedMap = getMergedMap();
-    var s_mergedList = serialize.IIngredient_string_(mergedMap, style);
-
     val newStyle = merged ? (style + "merged") : style;
     var str as string[] = [];
     for pos, recipeInventory in inventories {
       str = str + recipeInventory.toString(newStyle);
     }
-    val joined = utils.join(str, style has "fancy" ? "\n\n" : "\n");
+    var result = utils.join(str, style has "noFancy" ? "\n" : "\n\n");
 
-    if(merged) return "var ingrs = {\n" ~
-      s_mergedList ~ "\n" ~ 
-      "} as IIngredient[string];\n\n" ~ joined;
+    if(merged) result = "val ingrs = {\n" ~
+      serialize.IIngredient_string_(getMergedMap(), style) ~ "\n" ~ 
+      "} as IIngredient[string];\n\n" ~ result;
+    
+    if(!(style has "noBucket")) return result.replaceAll(
+      '<forge:bucketfilled>\\.withTag\\(\\{FluidName: ("[^"]+"), Amount: 1000\\}\\)',
+      'Bucket($1)'
+    );
 
-    return joined;
+    return result;
   }
 }
 static recipeWorks as RecipeWork[IPlayer] = {};
@@ -121,14 +138,13 @@ events.onPlayerInteractBlock(function(e as PlayerInteractBlockEvent) {
   val world as IWorld = e.world;
   if(isNull(world) || world.remote) return;
 
+  val player as IPlayer = e.player;
+  if (isNull(player) || !player.creative) return;
+
   val currentItem = e.item;
   if (isNull(currentItem)) return;
-
-  var style as string[] = [];
-  if(currentItem.definition.id == "minecraft:stick")   style += "short";
-  if(currentItem.definition.id == "minecraft:bone")    style += "pretty";
-  if(currentItem.definition.id == "minecraft:feather") {style += "fancy"; style += "pretty";}
-  if (style.length == 0) return;
+  if(currentItem.definition.id != toolItemID) return;
+  if(!isToolNoTag && isNull(currentItem.tag)) return;
 
   val block as IBlock = world.getBlock(e.x, e.y, e.z);
   if (isNull(block)) return;
@@ -138,12 +154,6 @@ events.onPlayerInteractBlock(function(e as PlayerInteractBlockEvent) {
 
   val itemsList = data.Items;
   if (isNull(itemsList) || isNull(itemsList.asList()) || itemsList.length <= 0) return;
-
-  val player as IPlayer = e.player;
-  if (isNull(player)) return;
-
-  val creative = player.creative;
-  if (!creative) return;
 
   /*
     Create new map entry
@@ -161,6 +171,10 @@ events.onPlayerInteractBlock(function(e as PlayerInteractBlockEvent) {
     player.sendChat(workResult);
     recipeWork.flagMerged();
   } else {
+    val style = (!isNull(currentItem.tag) && !isNull(currentItem.tag.style))
+      ? currentItem.tag.style.asString().split(" ")
+      : [] as string[];
+
     val playerMessage = recipeWork.logOutput(style, player);
     player.sendChat(playerMessage);
     recipeWork.reset();

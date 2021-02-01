@@ -211,7 +211,7 @@ zenClass Grid {
     val style as string[] = isNull(_style) ? [] : _style;
 
     val isDense = (style has "dense");
-    val isPretty = (style has "pretty") && !isDense;
+    val isPretty = !(style has "noPretty") && !isDense;
     val ln   = isDense ? "" : "\n";
     val dlim = (isDense ? ", " : ",") ~ ln;
 
@@ -238,7 +238,7 @@ zenClass Grid {
     s += "]";
 
     # Add Ingredients Table
-    if(!(style has "no_map")) {
+    if(!(style has "noMap")) {
       val opts_s = isNull(opts) 
         ? "<options is not provided>" 
         : serialize.IIngredient_string_(opts, style);

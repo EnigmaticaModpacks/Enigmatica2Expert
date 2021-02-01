@@ -21,21 +21,21 @@ zenClass GridRecipe { zenConstructor() {}
 
     # Calculate grid, length and other stuff
     # Return if grid is empty
-    if(!gridBuilder.build()) return null;
+    if(!gridBuilder.build(output, style has "noRemove")) return null;
 
     var plainLength = "craft.remake(, );".length;
-    val isDense = (output_s.length + gridBuilder.length + plainLength) <= 60;
-    val isPretty = !isDense && (style has "pretty");
+    val isDense = style has "dense" || (output_s.length + gridBuilder.length + plainLength) <= 60;
 
     # Add Ingredients Table
-    var map_s      = (style has "merged") ? ", ingrs" ~ (isDense?"":"\n") : "";
+    var map_s = (style has "merged") ? ", ingrs" ~ (isDense?"":"\n") : "";
 
     var grid_style = style;
-    if(isDense)            grid_style += "dense";
-    if(style has "merged") grid_style += "no_map";
+    if(isDense) grid_style += "dense";
+    if(style has "merged") grid_style += "noMap";
+    if(!(style has "noPretty") && (gridBuilder.maxX <= 1 || gridBuilder.maxY <= 1)) grid_style += "noPretty";
     val grid_s = gridBuilder.grid.toString(grid_style) ~ map_s;
 
-    return (!(style has "fancy") ? "" :
+    return ((style has "noFancy") ? "" :
       "# "~craft.recipeName(output, gridBuilder.grid) ~ "\n") ~
       "craft.remake("~output_s~", "~grid_s~");";
   }

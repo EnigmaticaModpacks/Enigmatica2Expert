@@ -12,8 +12,8 @@ List of character that has barely same width for most monospace fonts
 zenClass CharacterManager { zenConstructor() {}
   # Symbols that would be used in case first letters cant be used
   static symbols as string = 
-    "○╳●⌀☻♀♂∞∩ͻͼͽ♪♫†‡§®£¥+⌆⌅" ~
-    "ͲΣΨΩαβγζξ∂¢!$%&:;<>@«₠€₮₯₸₹₺₽ℓ№ℙ™‖¦∏" ~
+    "○╳●⌀☻♀♂∞∩ͻ♪♫†‡§®£¥+⌆⌅" ~
+    "Ͳαβγζξ∂¢!$%&:;<>@«₠€₮₯₸₹₺₽ℓ№ℙ™‖¦∏" ~
     "↑←→↔↕∊∍∫≤≥►◄“”…"
   as string;
 
@@ -29,13 +29,15 @@ zenClass CharacterManager { zenConstructor() {}
     crystal:     "☼*",
     wood:        "#≢≠",
     energy:      "Ϟ√∑",
+    power:       "ΣΨΩ",
     bucket:      "~≈‰",
     redstone:    "♥▼⌄↓",
     quartz:      "•°",
     coal:        "☺©",
     stick:       "╱/|",
-    rod:         "╱/|",
-    shaft:       "╱/|",
+    rod:         "/|╱",
+    shaft:       "|/╱",
+    fruit:       "ͼͽ",
   } as string[string];
 
   # Words that would not be used to find letter

@@ -16,7 +16,7 @@ zenClass RecipeInventory {
     "ironchest:iron_chest:1":                     [ 9, 9],
     "ironchest:iron_chest:(2|5|6)":               [12, 9],
     "draconicevolution:draconium_chest":          [26,10],
-    "minecraft:chest":                            [ 9, 3],
+    "minecraft:chest.*":                          [ 9, 3],
     "rustic:vase.*":                              [ 9, 3],
     "rustic:cabinet.*":                           [ 9, 3],
     "bibliocraft:framedchest.*":                  [ 9, 3],
@@ -81,18 +81,12 @@ zenClass RecipeInventory {
     itemStack = itemStack * count;
     if(!isNull(it.tag)) itemStack = itemStack.withTag(it.tag);
 
-    # Use ore if possible
-    val ores = itemStack.ores;
-    val ingr as IIngredient = (!isNull(ores) && ores.length > 0) 
-      ? (itemStack.amount > 1 ? ores[0] * itemStack.amount : ores[0])
-      : itemStack;
-
     val gridIndex = isNull(slotData.gridIndex) ? 0 : slotData.gridIndex.asInt();
     if(!isNull(slotData.isOutput)) {
       gridRecipes[gridIndex].setOutput(itemStack);
     } else {
       gridRecipes[gridIndex].gridBuilder.insert(
-        ingr, 
+        itemStack, 
         isNull(slotData.slot) ? slot : slotData.slot.asInt(), 
         H>0?3:W);
     }
@@ -103,12 +97,13 @@ zenClass RecipeInventory {
     if(H==0) return {};
 
     val _x = slot % W;
+    val gridWidth = (W / 4) as int;
     if(_x >= W - (W%4)) return null;
 
     val _y = (slot / W) as int;
     val netX = (_x/4) as int;
     val netY = (_y/3) as int;
-    val gridIndex = netY * 3 + netX;
+    val gridIndex = netY * gridWidth + netX;
 
     val x = _x % 4;
     val y = _y % 3;
@@ -134,6 +129,6 @@ zenClass RecipeInventory {
       if(!isNull(s)) str += s;
     }
 
-    return utils.join(str, style has "fancy" ? "\n\n" : "\n");
+    return utils.join(str, style has "noFancy" ? "\n" : "\n\n");
   }
 }

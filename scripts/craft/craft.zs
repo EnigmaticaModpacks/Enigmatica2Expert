@@ -126,7 +126,7 @@ zenClass Craft {
       || isNull(item.itemArray[0]))
       return "null";
 
-    return item.itemArray[0].displayName.replaceAll("[: ]", "_").replaceAll("§.", "");
+    return item.itemArray[0].displayName.replaceAll("§.", "");
   }
 
   function itemCount(item as IIngredient) as string {
@@ -151,7 +151,7 @@ zenClass Craft {
     if (!isNull(registeredNames[name])) {
       var count = registeredNames[name];
       registeredNames[name] = count + 1;
-      name ~= "_#"~count;
+      name ~= " #"~count;
     } else {
       registeredNames[name] = 1;
     }

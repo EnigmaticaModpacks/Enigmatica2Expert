@@ -94,23 +94,6 @@ global remakeEx as function(IItemStack, IIngredient[][])void =
 	makeEx(item, input);
 };
 
-
-# ########################
-# Gets a Bucket Item from a Liquid String
-# ########################
-global Bucket as function(string)IItemStack = function (name as string) as IItemStack {
-	//Unique Buckets
-	if (name == "lava")  return <minecraft:lava_bucket>;
-	if (name == "water") return <minecraft:water_bucket>;
-	if (name == "milk")  return <minecraft:milk_bucket>;
-	
-	if (!isNull(name)) {
-		return <forge:bucketfilled>.withTag({FluidName: name, Amount: 1000});
-	} else {
-		return <minecraft:bucket>;
-	}
-};
-
 # Apply tag to bucket (in case we use TE potions or such)
 global BucketTag as function(string,IData)IItemStack = function (name as string, tag as IData) as IItemStack {
 	val b = Bucket(name as string);
