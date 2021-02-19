@@ -87,7 +87,6 @@ Patchouli_js('Items/Magic Bean',
 },
   config('cyclicmagic.cfg').cyclicmagic.blocks.magicbean.MagicBeanDropList
   .map(l=>l.replace(/\*(\d+)$/, ':$1'))
-
 ))
 
 // ----------------------------------------------------

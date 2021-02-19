@@ -113,9 +113,9 @@ remakeEx(<randomthings:igniter>, [
 recipes.remove(<cyclicmagic:tool_swap_match>);
 recipes.remove(<cyclicmagic:tool_swap>);
 recipes.remove(<cyclicmagic:cyclic_wand_build>);
-recipes.addShaped(<cyclicmagic:tool_swap>, [[null, <cd4017be_lib:m:402>, <appliedenergistics2:material:10>],[null, <redstonearsenal:material:192>, <cd4017be_lib:m:402>], [<enderio:block_reinforced_obsidian>, null, null]]);
-recipes.addShaped(<cyclicmagic:tool_swap_match>, [[null, <cd4017be_lib:m:402>, <randomthings:ingredient:9>],[null, <redstonearsenal:material:192>, <cd4017be_lib:m:402>], [<enderio:block_reinforced_obsidian>, null, null]]);
-recipes.addShaped(<cyclicmagic:cyclic_wand_build>, [[null, <cd4017be_lib:m:402>, gemDiamondRat],[null, <redstonearsenal:material:192>, <cd4017be_lib:m:402>], [<ore:blockBone>, null, null]]);
+recipes.addShaped(<cyclicmagic:tool_swap>, [[null, <ore:dustDimensional>, <appliedenergistics2:material:10>],[null, <redstonearsenal:material:192>, <ore:dustDimensional>], [<enderio:block_reinforced_obsidian>, null, null]]);
+recipes.addShaped(<cyclicmagic:tool_swap_match>, [[null, <ore:dustDimensional>, <randomthings:ingredient:9>],[null, <redstonearsenal:material:192>, <ore:dustDimensional>], [<enderio:block_reinforced_obsidian>, null, null]]);
+recipes.addShaped(<cyclicmagic:cyclic_wand_build>, [[null, <ore:dustDimensional>, gemDiamondRat],[null, <redstonearsenal:material:192>, <ore:dustDimensional>], [<ore:blockBone>, null, null]]);
 
 
 remakeEx(<cyclicmagic:battery>, [
@@ -238,7 +238,7 @@ craft.remake(<cyclicmagic:ender_pearl_mounted>, ["pretty",
   "▲ W ▲",
   "T ▲ T"], {
   "▲": <ore:dustEnderEye>,   # Ender Eye Dust
-  "T": <cd4017be_lib:m:402>, # Telekinetic Alloy
+  "T": <ore:dustDimensional>,
   "W": <ore:cheeseWheels>    # Cheese Wheel (Friesian)
 });
 

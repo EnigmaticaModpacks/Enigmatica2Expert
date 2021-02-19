@@ -242,7 +242,7 @@ function paged_full(opts, itemsOnPage, arr) {
 
 const paged = over([ // eslint-disable-line no-unused-vars
   [over.object, over.numberOptional, over.array, paged_full],
-  function() { throw new Error('paged() has no parameters') } // No parameters function
+  function() { throw new Error('paged() has wrong parameters') } // No parameters function
 ])
 
 function config(cfgPath) { // eslint-disable-line no-unused-vars

@@ -152,7 +152,7 @@ recipes.addShaped(<rftools:powercell_card> * 4, [
 	[<ore:dustEndstone>, <computercraft:printout>, <ore:dustEndstone>]]);
 
 # Power cells
-val iWireless = <cd4017be_lib:m:402>;
+val iWireless = <ore:dustDimensional>;
 val iGate = <biomesoplenty:crystal_shard>;
 val iPower = <ore:dustEndstone>;
 remake("rftools powercell_simple", <rftools:powercell_simple>, [

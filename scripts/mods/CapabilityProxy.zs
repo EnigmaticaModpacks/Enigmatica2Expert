@@ -1,13 +1,21 @@
 #modloaded capabilityproxy
 
-recipes.remove(<capabilityproxy:capability_proxy>);
-recipes.addShaped(<capabilityproxy:capability_proxy>, [
-  [<extrautils2:decorativesolid:7>, <cd4017be_lib:m:402>, <extrautils2:decorativesolid:7>],
-  [<cd4017be_lib:m:402>, <enderio:block_end_iron_bars>, <cd4017be_lib:m:402>],
-  [<extrautils2:decorativesolid:7>, <cd4017be_lib:m:402>, <extrautils2:decorativesolid:7>]]);
+# [Capability Proxy] from [End Steel Bars][+2]
+craft.remake(<capabilityproxy:capability_proxy>, ["pretty",
+  "Q ▲ Q",
+  "▲ E ▲",
+  "Q ▲ Q"], {
+  "Q": <extrautils2:decorativesolid:7>, # Quartzburnt
+  "▲": <ore:dustDimensional>,           # Dimensional Blend
+  "E": <enderio:block_end_iron_bars>,   # End Steel Bars
+});
 
-recipes.remove(<capabilityproxy:ranged_capability_proxy>);
-recipes.addShaped(<capabilityproxy:ranged_capability_proxy>, [
-  [<ore:plateEnderium>, <cyclicmagic:card_location>, <ore:plateEnderium>],
-  [<capabilityproxy:capability_proxy>, <capabilityproxy:capability_proxy>, <capabilityproxy:capability_proxy>],
-  [<ore:plateEnderium>, <cyclicmagic:card_location>, <ore:plateEnderium>]]);
+# [Ranged Capability Proxy] from [GPS Marker][+2]
+craft.remake(<capabilityproxy:ranged_capability_proxy>, ["pretty",
+  "E G E",
+  "C C C",
+  "E G E"], {
+  "C": <capabilityproxy:capability_proxy>, # Capability Proxy
+  "E": <ore:plateEnderium>,                # Enderium Plate
+  "G": <cyclicmagic:card_location>,        # GPS Marker
+});

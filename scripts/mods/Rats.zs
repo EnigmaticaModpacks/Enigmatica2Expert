@@ -271,8 +271,8 @@ recipes.addShaped("Ratlanean Flame", <rats:ratlantean_flame>, [
 # Psionic rat brain
 scripts.wrap.thaumcraft.Infusion.registerRecipe("psionic_rat_brain", "INFUSION", <rats:psionic_rat_brain>, 40, 
 	[<aspect:cognitio> * 150, <aspect:alienis> * 40, <aspect:rattus> * 80], <thaumcraft:brain>, 
-	[<rats:charged_creeper_chunk>, <rats:chunky_cheese_token>, <rats:charged_creeper_chunk>, <cd4017be_lib:m:402>, 
-	 <rats:charged_creeper_chunk>, <cd4017be_lib:m:402>, <draconicevolution:draconium_block:1>, <rats:charged_creeper_chunk>]
+	[<rats:charged_creeper_chunk>, <rats:chunky_cheese_token>, <rats:charged_creeper_chunk>, <ore:dustDimensional>, 
+	 <rats:charged_creeper_chunk>, <ore:dustDimensional>, <draconicevolution:draconium_block:1>, <rats:charged_creeper_chunk>]
 );
 
 # Oredict pirate hat recipe
