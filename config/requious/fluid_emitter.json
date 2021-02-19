@@ -1,0 +1,64 @@
+[
+  {
+    "capacity": 1000,
+    "allowLiquid": false,
+    "allowGas": false,
+    "minTemperature": 0,
+    "maxTemperature": 0,
+    "interval": 40,
+    "canEmit": false,
+    "canReceive": false,
+    "canRelay": false,
+    "resourceName": "liquid_emitter",
+    "model": "requious:fluid_emitter",
+    "colors": [
+      {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      }
+    ],
+    "hardness": 5.0,
+    "blastResistance": 5.0,
+    "aabb": {
+      "x1": 0.0,
+      "y1": 0.0,
+      "z1": 0.0,
+      "x2": 1.0,
+      "y2": 1.0,
+      "z2": 1.0
+    }
+  },
+  {
+    "capacity": 1000,
+    "allowLiquid": false,
+    "allowGas": false,
+    "minTemperature": 0,
+    "maxTemperature": 0,
+    "interval": 40,
+    "canEmit": false,
+    "canReceive": false,
+    "canRelay": false,
+    "resourceName": "gas_emitter",
+    "model": "requious:fluid_emitter",
+    "colors": [
+      {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      }
+    ],
+    "hardness": 5.0,
+    "blastResistance": 5.0,
+    "aabb": {
+      "x1": 0.0,
+      "y1": 0.0,
+      "z1": 0.0,
+      "x2": 1.0,
+      "y2": 1.0,
+      "z2": 1.0
+    }
+  }
+]
