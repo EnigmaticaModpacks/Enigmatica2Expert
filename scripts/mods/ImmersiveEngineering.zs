@@ -271,10 +271,8 @@ addLiquidFertilizer(<liquid:short.mead>           , 0.35);
 addChemthrowerEffect(<liquid:californium_250>, false, false, "generic" , 2, [<potion:ic2:radiation>.makePotionEffect(130, 2, false, true)] as IPotionEffect[]);
 addChemthrowerEffect(<liquid:plutonium_241>  , false, false, "generic" , 2, [<potion:ic2:radiation>.makePotionEffect(120, 2, false, true)] as IPotionEffect[]);
 addChemthrowerEffect(<liquid:curium_243>     , false, false, "generic" , 2, [<potion:ic2:radiation>.makePotionEffect(110, 2, false, true)] as IPotionEffect[]);
-addChemthrowerEffect(<liquid:tritium>        , false, false, "generic" , 2, [<potion:ic2:radiation>.makePotionEffect(100, 2, false, true)] as IPotionEffect[]);
 addChemthrowerEffect(<liquid:plutonium_238>  , false, false, "generic" , 2, [<potion:ic2:radiation>.makePotionEffect( 90, 2, false, true)] as IPotionEffect[]);
 addChemthrowerEffect(<liquid:americium_242>  , false, false, "generic" , 2, [<potion:ic2:radiation>.makePotionEffect( 80, 2, false, true)] as IPotionEffect[]);
-addChemthrowerEffect(<liquid:neutron>        , false, false, "generic" , 2, [<potion:ic2:radiation>.makePotionEffect( 70, 1, false, true)] as IPotionEffect[]);
 addChemthrowerEffect(<liquid:berkelium_248>  , false, false, "generic" , 2, [<potion:ic2:radiation>.makePotionEffect( 60, 1, false, true)] as IPotionEffect[]);
 addChemthrowerEffect(<liquid:californium_249>, false, false, "generic" , 2, [<potion:ic2:radiation>.makePotionEffect( 50, 1, false, true)] as IPotionEffect[]);
 addChemthrowerEffect(<liquid:americium_241>  , false, false, "generic" , 2, [<potion:ic2:radiation>.makePotionEffect( 40, 1, false, true)] as IPotionEffect[]);
@@ -299,6 +297,7 @@ addChemthrowerEffect(<liquid:ic2uu_matter>        ,false, false, "ic2uu_matter",
 addChemthrowerEffect(<liquid:ic2hot_coolant>      ,false, false, "onFire", 11);
 addChemthrowerEffect(<liquid:crystal>             ,false, false, "onFire", 20);
 addChemthrowerEffect(<liquid:plasma>              ,true , false, "onFire", 28);
+addChemthrowerEffect(<liquid:liquid_death>        ,false, false, "liquid_death", 30);
 addChemthrowerEffect(<liquid:neutron>             ,false, false, "onFire", 36);
 
 
