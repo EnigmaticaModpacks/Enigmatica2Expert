@@ -1,5 +1,91 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
+# 0.18
+ 
+## 🟢 New Mods
+
+Icon | Summary
+------:|:------
+<img src="https://media.forgecdn.net/avatars/thumbnails/220/560/256/256/637020934015742854.png" width="50">          | [**Requious Frakto**](https://www.curseforge.com/minecraft/mc-mods/requious-frakto)  <br> This is a techmod. It contains whatever you configure it to contain.
+<img src="https://media.forgecdn.net/avatars/thumbnails/223/208/256/256/637028185320847649.png" width="50">          | [**Psio**](https://www.curseforge.com/minecraft/mc-mods/psio)  <br> nerfs vazkii's psi into the ground
+<img src="https://media.forgecdn.net/avatars/thumbnails/330/801/256/256/637458866042247400.png" width="50">          | [**CraftTweaker Integration**](https://www.curseforge.com/minecraft/mc-mods/crafttweaker-integration)  <br> CraftTweaker is not just a recipe changer.
+<img src="https://media.forgecdn.net/avatars/thumbnails/330/607/256/256/637458259890755963.png" width="50">          | [**PSICaster**](https://www.curseforge.com/minecraft/mc-mods/psicaster)  <br> Makes PSI automatable.
+<img src="https://media.forgecdn.net/avatars/thumbnails/226/770/256/256/637046993390542539.png" width="50">          | [**Collective**](https://www.curseforge.com/minecraft/mc-mods/collective)  <br> Collective is a shared library with common code for all of Serilum's mods.
+<img src="https://media.forgecdn.net/avatars/thumbnails/336/773/256/256/637473377219739298.png" width="50">          | [**Hole Filler Mod**](https://www.curseforge.com/minecraft/mc-mods/hole-filler-mod)  <br> Automatically Fills in Holes!
+<img src="https://media.forgecdn.net/avatars/thumbnails/341/410/256/256/637484195977976685_animated.gif" width="50"> | [**Recast**](https://www.curseforge.com/minecraft/mc-mods/recast)  <br> Automatically re-casts the fishing rod line for a player when an item is caught.
+
+## 🔴 Removed Mods
+
+Icon | Summary | Reason of removal
+------:|:------|:-----
+<img src="https://media.forgecdn.net/avatars/thumbnails/28/371/256/256/635826252878407531.png" width="50">           | [**(Chat) Ping!**](https://www.curseforge.com/minecraft/mc-mods/chat-ping)  <br> Notifying users when they are mentioned in chat | Useless because makes no sound or color highliting of chat messages
+<img src="https://media.forgecdn.net/avatars/thumbnails/109/826/256/256/636382841953033335.png" width="50">          | [**Chat Tweaks**](https://www.curseforge.com/minecraft/mc-mods/chat-tweaks)  <br> Twitch Emotes and Image Preview. Also basically like BetterTTV but for Minecraft. | Spoiling well-known `Shift+T` functionality of Quark
+<img src="https://media.forgecdn.net/avatars/thumbnails/200/715/256/256/636915307717811039.png" width="50">          | [**Redstone Control**](https://www.curseforge.com/minecraft/mc-mods/redstone-control)  <br> Point to Point Redstone wires, data-flow oriented programmable compact circuits, fancy displays, control interfaces and more ... ![](https://git.io/JtSfh "Wireless Energy Transmitter Dish Assembly") | I deamed to make this mod works in modpack, but failed. It have great and interesting redstone mechanics, but i didnt find way how to use it in addon
+<img src="https://media.forgecdn.net/avatars/thumbnails/154/354/256/256/636625132573601981.png" width="50">          | [**CD4017BE Library**](https://www.curseforge.com/minecraft/mc-mods/cd4017be-library)  <br> Mod Library | Lib for Redstone Control
+<img src="https://media.forgecdn.net/avatars/thumbnails/318/797/256/256/637426150328977672.png" width="50">          | [**Notify me**](https://www.curseforge.com/minecraft/mc-mods/notify-me)  <br> send windows notification when your game is ready | Notifies too early, when about 2 minutes of loading left
+
+
+## ✏️ Recipes
+
+  - ![](https://git.io/JtDhK "Device Frame") return removed
+  - ![](https://git.io/Jtyeb "Output Variable Transformer") ![](https://git.io/JtyeA "Input Variable Transformer") ![](https://git.io/JtyeN "Mono-Directional Connector") harder, required ![](https://git.io/JtyxV "Cobalt Ingot")
+  - ![](https://git.io/Jtyv2 "White§r Conveyor Belt") ![](https://git.io/JtTuj "Conveyor Belt") x4 cheaper recipe
+  - ![](https://git.io/JtkoQ "Solar Helmet") recipe fix
+  - ![](https://git.io/Jt4CI "Alveary") x14 cheaper
+  - ![](https://git.io/Jtyx2 "Impregnated Stick") oredicted recipe
+  - ![](https://git.io/JtTuj "Conveyor Belt") fix
+  - ![](https://git.io/JtDhi "Molecular Assembler") less grindy recipe (no T3 Crafter)
+  - ![](https://git.io/Jt3vK "Advanced Ring of Fire Resistance") recipe fix
+  - ![](https://git.io/Jtyxa "ME Fluid Pattern: Molten FLiBe Salt Solution of Depleted HECf-249 Fluoride Fuel") added to process
+  - 6 different ![](https://git.io/Jtyxr "Morb (entity.twilightforest.harbinger_cube.name§r)") from ![](https://git.io/JtUEY "Heart Crystal Shard") recipes
+  - ![](https://git.io/Jtyxw "Gunpowder") shears from Creepers
+  - [Liquid Concrete] craft
+  - [Hole Filler] and [Throwable Hole Filler] crafts
+  - [Little Blueprint] fix
+  - [Compact Californium RTG] harder crafts
+
+## 📖 Quest Book
+
+- New and Updated entries
+
+## 🌍 World Generation
+
+- KELT-2ab ![](https://git.io/JtyNo "Kelp") and ![](https://git.io/JtyNr "Glowing Coral") generation
+- ![](https://git.io/JtyNw "Desert Myrmex Egg") Myrmexes in Overworld generation
+- Excavator ![](https://git.io/JtSJw "Black Quartz Ore") ore vein
+
+## 🔵 Mods
+
+- ### 🔨 Tinker's Construct
+
+  - ![](https://git.io/Jtyj2 "Pigiron Nugget") mining level fix
+  - ![](https://git.io/JtDRB "Essence-Infused Ingot") and ![](https://git.io/Jtngy "Pink Slime Crystal") new trait drafts
+
+- ### 🏪 Requious Fracto
+
+  - JEI integration:
+    > - Liquid interactions
+    > - Everflow Chalice
+    > - Infernal Furnace
+
+- ### 🛢️ Immersive Engineering
+
+  - ![](https://git.io/JtDnO "Chemical Thrower") add Liquid Death
+  - ![](https://git.io/Jtyja "Railgun") new ammo:
+    ![](https://git.io/JtDpz "Flux-Infused Obsidian Rod")![](https://git.io/JtDpa "Shaft (Steel)")![](https://git.io/JtDpg "Shaft (Iron)")![](https://git.io/JtDp2 "Shaft (Bronze)")
+
+## 🔄 Misc Changes
+
+  - Nerf ![](https://git.io/Jt1zE "Stone Torch") light level
+  - Return Ice and Fire ![](https://git.io/Jtyd1 "Sapphire") to oredict
+  - Make ![](https://git.io/JLhpj "Crystallized Obsidian") harder to match its mining level
+  - ![](https://git.io/Jtydj "Elevator") 2x speedup
+  - ![](https://git.io/JtDho "Sunflower") added to ![](https://git.io/JtDh9 "Market")
+  - Wisp from Thaumcraft blacklisted from Scalling Health damage
+
+
+
+
 # 0.17
 
 ## 🟢 New Mods
