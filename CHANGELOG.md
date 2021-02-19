@@ -6,7 +6,6 @@
 
 Icon | Summary
 ------:|:------
-<img src="https://media.forgecdn.net/avatars/thumbnails/220/560/256/256/637020934015742854.png" width="50">          | [**Requious Frakto**](https://www.curseforge.com/minecraft/mc-mods/requious-frakto)  <br> This is a techmod. It contains whatever you configure it to contain.
 <img src="https://media.forgecdn.net/avatars/thumbnails/223/208/256/256/637028185320847649.png" width="50">          | [**Psio**](https://www.curseforge.com/minecraft/mc-mods/psio)  <br> nerfs vazkii's psi into the ground
 <img src="https://media.forgecdn.net/avatars/thumbnails/330/801/256/256/637458866042247400.png" width="50">          | [**CraftTweaker Integration**](https://www.curseforge.com/minecraft/mc-mods/crafttweaker-integration)  <br> CraftTweaker is not just a recipe changer.
 <img src="https://media.forgecdn.net/avatars/thumbnails/330/607/256/256/637458259890755963.png" width="50">          | [**PSICaster**](https://www.curseforge.com/minecraft/mc-mods/psicaster)  <br> Makes PSI automatable.
@@ -60,13 +59,6 @@ Icon | Summary | Reason of removal
 
   - ![](https://git.io/Jtyj2 "Pigiron Nugget") mining level fix
   - ![](https://git.io/JtDRB "Essence-Infused Ingot") and ![](https://git.io/Jtngy "Pink Slime Crystal") new trait drafts
-
-- ### 🏪 Requious Fracto
-
-  - JEI integration:
-    > - Liquid interactions
-    > - Everflow Chalice
-    > - Infernal Furnace
 
 - ### 🛢️ Immersive Engineering
 
