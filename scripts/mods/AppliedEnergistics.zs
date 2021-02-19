@@ -138,13 +138,17 @@ import mods.jei.JEI.removeAndHide as rh;
 	scripts.wrap.extendedcrafting.CompressionCrafting.addRecipe(<appliedenergistics2:condenser>, 
 	<minecraft:piston>, 10000, <mekanism:machineblock:7>.withTag({recipeType: 3}), 1000000000, 1000000);
 	
-# Molecular Assembler
-	recipes.remove(<appliedenergistics2:molecular_assembler>);
-	recipes.addShapedMirrored("Molecular Assembler", 
-	<appliedenergistics2:molecular_assembler>, 
-	[[<ore:blockSheetmetalIron>, <appliedenergistics2:quartz_glass>, <ore:blockSheetmetalIron>],
-	[<appliedenergistics2:material:44>, <rftools:crafter3>, <appliedenergistics2:material:43>], 
-	[<ore:blockSheetmetalIron>, <appliedenergistics2:quartz_glass>, <ore:blockSheetmetalIron>]]);
+# [Molecular Assembler] from [Augment_ Pattern Validation][+4]
+craft.remake(<appliedenergistics2:molecular_assembler>, ["pretty",
+  "D • D",
+  "F u A",
+  "D • D"], {
+  "A": <appliedenergistics2:material:44>,  # Annihilation Core
+  "•": <appliedenergistics2:quartz_glass>, # Quartz Glass
+  "D": <enderio:item_data_conduit>,        # Data Conduit
+  "u": <thermalexpansion:augment:432>,     # Augment: Pattern Validation
+  "F": <appliedenergistics2:material:43>,  # Formation Core
+});
 
 # Grindstone
 	recipes.remove(<appliedenergistics2:grindstone>);

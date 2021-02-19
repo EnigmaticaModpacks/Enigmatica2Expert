@@ -458,7 +458,7 @@ for i in 0 to 10 {
 		C: ringsIngredients[i],
 	});
 
-	craft.shapeless(ringAdvanced, "AB", {
+	craft.reshapeless(ringAdvanced, "AB", {
 		A: ring,
 		B: <actuallyadditions:item_crystal_empowered:2>
 	});

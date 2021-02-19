@@ -169,11 +169,16 @@ function fluidDict(ins as string[]) {
 	[<minecraft:bucket>, <ore:gearIron>, <minecraft:bucket>]]);
 
 # Oredict Belts Recipes
-	recipes.remove(<industrialforegoing:conveyor>);
-	recipes.addShaped(<industrialforegoing:conveyor> * 4, [
-		[<ore:itemRubber>, <ore:itemRubber>, <ore:itemRubber>], 
-		[<ore:ingotFakeIron>, <minecraft:redstone>, <ore:ingotFakeIron>], 
-		[<ore:itemRubber>, <ore:itemRubber>, <ore:itemRubber>]]);
+# [White Conveyor Belt*32] from [Redstone][+2]
+craft.remake(<industrialforegoing:conveyor> * 32, ["pretty",
+  "R R R",
+  "▬ ♥ ▬",
+  "R R R"], {
+  "R": <ore:itemRubber>, # Plastic
+  "♥": <ore:dustRedstone>, # Redstone
+  "▬": <ore:ingotFakeIron>, # Iron Alloy Ingot
+  remove: <industrialforegoing:conveyor> * 4, # White Conveyor Belt
+});
 
 	recipes.remove(<industrialforegoing:conveyor_upgrade>);
 	recipes.addShaped(<industrialforegoing:conveyor_upgrade>, [

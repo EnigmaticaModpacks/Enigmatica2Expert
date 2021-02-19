@@ -763,7 +763,12 @@ function workEx(machineNameAnyCase as string, exceptions as string,
 
     if (machineName == "advrockelectrolyzer") {
       # Log recipes to manual add in XML file
-      avdRockXmlRecipe("Electrolyser", null, inputLiquids, null, outputLiquids);
+      var newOutputLiquids = outputLiquids;
+      if(outputLiquids.length > 2) {
+        newOutputLiquids = [] as ILiquidStack[];
+        for i in 0 .. 2 { newOutputLiquids += outputLiquids[i]; }
+      }
+      avdRockXmlRecipe("Electrolyser", null, inputLiquids, null, newOutputLiquids);
       return machineName;
     }
   }
@@ -835,6 +840,15 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       } else {
         return info(machineNameAnyCase, inputLiquid0.name, "received work, but amount of inputs > 2");
       }
+    }
+
+    if (machineName == "mixer") {
+      if (inputItems.length > 6) return info(machineNameAnyCase, inputLiquid0.name, "received work, but amount of inputs > 6");
+
+      # mods.immersiveengineering.Mixer.addRecipe(ILiquidStack output, ILiquidStack fluidInput, IIngredient[] itemInputs, int energy);
+      scripts.wrap.immersiveengineering.Mixer.addRecipe(outputLiquid0, inputLiquid0, inputItems, 2048);
+
+      return machineName;
     }
   }
 

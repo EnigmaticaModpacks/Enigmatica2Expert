@@ -378,7 +378,7 @@ scripts.process.crush(<thermalfoundation:geode>, <mysticalagradditions:insanium:
 
 # Remove all old recipes
 for name in [
-	"frame_1"    , "frame_3"    , "frame_4"    , "frame_5",
+	/*"frame_1",*/ "frame_3"    , "frame_4"    , "frame_5",
 	"frame_6"    , "frame_7"    , "frame_8"    , "cell_1",
 	"cell_2"     , "cell_3"     , "cell_4"     , "cell_5",
 	"cell_6"     , "cell_7"     , "cell_8"     , "cell",

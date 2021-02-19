@@ -201,10 +201,24 @@ mods.nuclearcraft.turbine.addRecipe([<liquid:ic2steam>, <liquid:low_quality_stea
 mods.nuclearcraft.heat_exchanger.addRecipe([<liquid:ic2hot_coolant>, <liquid:ic2coolant>, 10000.0d, 700, 300]);
 
 # Harder compressed RTG recipes
-for item in loadedMods["notenoughrtgs"].items {
-	recipes.replaceAllOccurences(<ore:ingotBronze>,      <nuclearcraft:alloy:15>, item);
-	recipes.replaceAllOccurences(<minecraft:gold_ingot>, <nuclearcraft:alloy:11>, item);
+val rtgs = [
+	<nuclearcraft:rtg_americium>  , <notenoughrtgs:rtg_americium_compact>  , <notenoughrtgs:rtg_americium_dense>  ,
+	<nuclearcraft:rtg_californium>, <notenoughrtgs:rtg_californium_compact>, <notenoughrtgs:rtg_californium_dense>,
+	<nuclearcraft:rtg_plutonium>  , <notenoughrtgs:rtg_plutonium_compact>  , <notenoughrtgs:rtg_plutonium_dense>  ,
+	<nuclearcraft:rtg_uranium>    , <notenoughrtgs:rtg_uranium_compact>    , <notenoughrtgs:rtg_uranium_dense>    ,
+] as IItemStack[];
+
+for i, output in rtgs {
+	if(i%3==0) continue;
+	craft.remake(output, ["pretty",
+		"x x x",
+		"x ▬ x",
+		"x x x"], {
+		"x": rtgs[i - 1],
+		"▬": i%3==1 ? <ore:ingotHSLASteel> : <ore:gemBoronNitride>,
+	});
 }
+
 
 # Decay generator as crafting method
 addDecayRecipe([<contenttweaker:terrestrial_artifact_block>, <environmentaltech:litherite>  , 24000.0d, 36000.0d]);

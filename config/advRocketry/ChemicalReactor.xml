@@ -147,6 +147,17 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Liquid Concrete] from [Grout+] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>tconstruct:soil 1</itemStack>
+			<fluidStack>water 250</fluidStack>
+		</input>
+		<output>
+			<fluidStack>concrete 250</fluidStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Construction Foam] from [Construction Paste+] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>

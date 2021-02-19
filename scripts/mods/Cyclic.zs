@@ -601,13 +601,14 @@ craft.remake(<cyclicmagic:sword_ender>, ["pretty",
 
 # Fix color of conveyor (was purple)
 # [Conveyor_Belt] from [Clay][+2]
-craft.remake(<cyclicmagic:plate_push>, ["pretty",
+craft.remake(<cyclicmagic:plate_push> * 8, ["pretty",
   "▬ d ▬",
   "d c d",
   "▬ d ▬"], {
   "c": <ore:clay>,     # Clay
   "d": <ore:dyeLime>,
-  "▬": <ore:ingotIron> # Iron Ingot
+  "▬": <ore:ingotIron>, # Iron Ingot
+  remove: <cyclicmagic:plate_push>,
 });
 
 # [Cobblestone] from [Pebble]

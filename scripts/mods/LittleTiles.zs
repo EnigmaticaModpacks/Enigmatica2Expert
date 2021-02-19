@@ -19,7 +19,7 @@ val ingrs = {
 } as IIngredient[string];
 
 craft.remake(<littletiles:hammer>,             [" O ", " ▬O", "▬  "], ingrs);
-craft.remake(<littletiles:recipeadvanced> * 4, ["  P", " M ", "P P"], ingrs);
+craft.remake(<littletiles:recipeadvanced> * 4, ["P P", " M ", "P P"], ingrs);
 craft.remake(<littletiles:saw>,                ["  #", " #╱", "▬╱ "], ingrs);
 craft.remake(<littletiles:container>,          [" O ", "w w", " w "], ingrs);
 craft.remake(<littletiles:wrench>,             ["  O", " # ", "▬  "], ingrs);

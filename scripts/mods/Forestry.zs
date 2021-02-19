@@ -459,3 +459,19 @@ for name in bagNames {
 		"W": itemUtils.getItem("forestry:"~name~"_bag")
 	}).shaped(), 40, <liquid:water> * 250);
 }
+
+# Simplify Alviery because its feels too grindy for so low value
+# [Alveary*14] from [Impregnated Casing][+1]
+craft.remake(<forestry:alveary.plain> * 14, ["pretty",
+  "S S S",
+  "S I S",
+  "S S S"], {
+  "S": <forestry:crafting_material:6>, # Scented Paneling
+  "I": <forestry:impregnated_casing>,  # Impregnated Casing
+  remove: <forestry:alveary.plain>,    # Alveary
+});
+
+# Use OreDict recipe for impregnated stick
+mods.forestry.Carpenter.removeRecipe(<forestry:oak_stick>);
+scripts.wrap.forestry.Carpenter.addRecipe(<forestry:oak_stick> * 2, [[<ore:logWood>],[<ore:logWood>]], 40, <liquid:oliveoil> * 100);
+scripts.wrap.forestry.Carpenter.addRecipe(<forestry:oak_stick> * 2, [[<ore:logWood>],[<ore:logWood>]], 40, <liquid:seed.oil> * 100);

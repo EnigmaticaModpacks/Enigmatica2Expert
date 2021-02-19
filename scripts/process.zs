@@ -206,7 +206,7 @@ function squeeze(input as IIngredient[], fluidOutput as ILiquidStack, exceptions
 # [💧+]  ⤴
 function solution(inputItems as IIngredient[], inputLiquids as ILiquidStack[], outputLiquids as ILiquidStack[], inputChance as float[], exceptions as string) {
 
-  work(["vat", "canner", "fluidenricher", "highoven", "ChemicalReactor"], 
+  work(["vat", "canner", "fluidenricher", "highoven", "ChemicalReactor", "Mixer"], 
     exceptions, inputItems, inputLiquids, null, outputLiquids, null, inputChance);
 }
 
@@ -301,7 +301,7 @@ function beneficiate(_input as IIngredient, _oreName as string, _amount as doubl
 
   # Infernal Furnace
   if (!isNull(JA)) {
-    val nuggetExtra = utils.getSomething(JA.extraName, ["nugget"], amount);
+    val nuggetExtra = utils.getSomething(JA.extraName, ["nugget"], amount * 3);
     if (!isNull(nuggetExtra)) {
       workEx("infernalfurnace", exceptions, [input], null, null, null, [nuggetExtra], extraChances, null);
     }

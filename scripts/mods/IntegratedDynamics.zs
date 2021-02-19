@@ -67,3 +67,34 @@ recipes.remove(<integratedterminals:part_terminal_storage_item>);
 	[[<ore:dustGlowstone>, <integratedterminals:menril_glass>, <ore:dustGlowstone>], 
 	[<integrateddynamics:variable_transformer>, <integrateddynamics:part_display_panel_item>, <integrateddynamics:variable_transformer:1>], 
 	[<ore:dustGlowstone>, <rftools:storage_scanner>, <ore:dustGlowstone>]]);
+
+# [Output Variable Transformer*4] from [Piston][+2]
+craft.remake(<integrateddynamics:variable_transformer> * 4, ["pretty",
+  "  ▬  ",
+  "C P C",
+  "  ▬  "], {
+  "P": <ore:craftingPiston>, # Piston
+  "C": <integrateddynamics:crystalized_menril_chunk>, # Crystalized Menril Chunk
+  "▬": <ore:ingotCobalt>,    # Cobalt Ingot
+});
+
+# [Input Variable Transformer*4] from [Sticky Piston][+2]
+craft.remake(<integrateddynamics:variable_transformer:1> * 4, ["pretty",
+  "  ▬  ",
+  "C P C",
+  "  ▬  "], {
+  "P": <ore:craftingPiston>, # Sticky Piston
+  "C": <integrateddynamics:crystalized_menril_chunk>, # Crystalized Menril Chunk
+  "▬": <ore:ingotCobalt>,    # Cobalt Ingot
+});
+
+# [Mono-Directional Connector] from [Manyullyn Item Frame][+3]
+craft.remake(<integrateddynamics:part_connector_mono_directional_item>, ["pretty",
+  "  O  ",
+  "L M L",
+  "  I  "], {
+  "I": <integrateddynamics:variable_transformer:1>, # Input Variable Transformer
+  "L": <integrateddynamics:cable>,                  # Logic Cable
+  "M": <tconstruct:fancy_frame:4>,                  # Manyullyn Item Frame
+  "O": <integrateddynamics:variable_transformer>,   # Output Variable Transformer
+});

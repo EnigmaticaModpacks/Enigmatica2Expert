@@ -447,3 +447,26 @@ craft.remake(<immersiveengineering:tool>, ["pretty",
   "I": <tconstruct:hammer_head>.withTag({Material: "iron"}) 
 			|<tconstruct:hammer_head>.withTag({Material: "construction_alloy"})
 });
+
+// Liquid Concrete alts
+scripts.process.solution([<tconstruct:soil>], [<liquid:water> * 250], [<liquid:concrete> * 250], null, "except: Vat Highoven Mixer");
+
+# [Conveyor Belt*32] from [Redstone][+2]
+craft.remake(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 32, ["pretty",
+  "l l l",
+  "▬ ♥ ▬"], {
+  "♥": <ore:dustRedstone>, # Redstone
+  "l": <ore:leather>,      # Leather
+  "▬": <ore:ingotFakeIron>, # Iron Alloy Ingot
+  remove: <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 8, # Conveyor Belt
+});
+
+# [Conveyor Belt*32] from [Redstone][+2]
+craft.remake(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 32, ["pretty",
+  "R R R",
+  "▬ ♥ ▬"], {
+  "R": <ore:itemRubber>, # Plastic
+  "♥": <ore:dustRedstone>, # Redstone
+  "▬": <ore:ingotFakeIron>, # Iron Alloy Ingot
+  remove: <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 8, # Conveyor Belt
+});

@@ -269,3 +269,13 @@ for ore_entry in oreDict {
 	
 # Remove Recycler (replaced by Modular Machine)
 recipes.remove(<ic2:te:48>);
+
+# [Solar Helmet] from [Solar Panel][+2]
+craft.remake(<ic2:solar_helmet>, ["pretty",
+  "  I  ",
+  "  2  ",
+  "C C C"], {
+  "2": <ore:ic2SolarPanel>, # Solar Panel
+  "C": <ore:itemCopperCable>, # Insulated Copper Cable
+  "I": <conarm:helmet_core>.withTag({Material: "iron"}), # Iron Helmet Core
+});

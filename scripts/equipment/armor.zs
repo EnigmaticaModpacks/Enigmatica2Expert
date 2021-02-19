@@ -74,7 +74,6 @@ for item in [
 
 # Replace recipes that used items
 for item in [
-	<ic2:solar_helmet>,
 	<openblocks:sonic_glasses>,
 	<plethora:module:6>,
 	<actuallyadditions:item_player_probe>,
