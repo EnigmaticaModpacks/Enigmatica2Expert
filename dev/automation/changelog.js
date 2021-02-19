@@ -36,10 +36,12 @@ logFromLastTag.split(/^commit .*$/gm).forEach(commitBlock=>{
 
 const annotations = [
   ['🟢', 'New Mods'],
+  ['🔴', 'Removed Mods'],
   ['🟡', 'Mods changes'],
   ['🧩', 'Configs'],
   ['✏️', 'Recipes'],
   ['📖', 'Quest Book'],
+  ['🌍', 'World Generation'],
   ['🔵', 'Mods', [
     ['🔨', 'Tinker\'s Construct'],
     ['🐉', 'Ice and Fire'],
@@ -52,6 +54,7 @@ const annotations = [
     ['🟨', 'Recurrent Complex'],
     ['🛢️', 'Immersive Engineering'],
     ['🗃️', 'Loot tables'],
+    ['🏪', 'Requious Fracto'],
   ]],
   ['🔄', 'Misc Changes'],
   ['🧱', 'Technical'],

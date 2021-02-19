@@ -1,6 +1,22 @@
-[main/ERROR] [mixin]: Mixin config mixins.harvestcrafttweaker.json does not specify "minVersion" property
-[Client thread/ERROR] [Botania Tweaks]: Mod floralchemy is loaded, but flower petropetunia is not present??
-[Thread-35/ERROR] [excompressum]: Could not load remote skins for auto sieve: 
-[Client thread/ERROR] [Shoulder Surfing]: Only found 13 code injections, but expected 9
-[Client thread/ERROR] [Shoulder Surfing]: ShoulderSurfing should be disabled!
-[Client thread/WARN] [jei]: Recipe registry plugin is slow, took 14.39 ms. class pl.asie.preston.compat.jei.CompressorRecipeRegistryPlugin
+[Surge]: The game loaded in approximately  715.316 seconds.
+[main/ERROR] [FML]: Coremod EyeOfDragonsPlugin: Unable to class load the plugin de.curlybracket.eyeofdragons.EyeOfDragonsPlugin
+[main/WARN] [FML]: Patcher expecting empty class data file for net.minecraft.block.state.BlockStateContainer$Builder, but received non-empty
+[Client thread/WARN] [FML]: Mod requious is missing the required element 'version' and no fallback can be found. Substituting '1.0'.
+[Client thread/ERROR] [FML]: Unable to read a class file correctly
+[Client thread/ERROR] [FML]: There was a problem reading the entry module-info.class in the jar C:\Users\LD\Twitch\Minecraft\Instances\Enigmatica2Expert - Extended\mods\dcintegration-1.1.19-1.12.jar - probably a corrupt zip
+[Client thread/WARN] [FML]: Zip file dcintegration-1.1.19-1.12.jar failed to read properly, it will be ignored
+[Client thread/WARN] [tweakersconstruct]: [Trait Tweaks] Could not find trait: difficulty_armor, skipping.
+[Client thread/ERROR] [Crafttweaker]: Catching
+[Client thread/ERROR] [Crafttweaker]: Catching
+[Client thread/ERROR] [Crafttweaker]: Catching
+[Client thread/ERROR] [Crafttweaker]: Catching
+[Client thread/ERROR] [Crafttweaker]: Catching
+[Client thread/ERROR] [Crafttweaker]: Catching
+[Client thread/ERROR] [Crafttweaker]: Catching
+[Client thread/WARN] [tconevo]: Failed to initialize artifact "phase_boots": Armour modification produced error: Not enough Modifiers. (1 needed)
+[pool-9-thread-2/ERROR] [unidict]: Immersive Engineering Integration: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+[Server thread/WARN] [advancedrocketry]: Dimension ID -2147483647 is not registered and a space station is orbiting it, moving to dimid 0
+[Client thread/WARN] [Config]: [OptiFine] java.lang.NullPointerException null
+[Client thread/WARN] [net.minecraft.client.network.NetHandlerPlayClient]: Received passengers for unknown entity
+[Client thread/WARN] [net.minecraft.client.network.NetHandlerPlayClient]: Received passengers for unknown entity
+[Client thread/WARN] [jei]: Recipe registry plugin is slow, took 15.43 ms. class dan200.computercraft.shared.integration.jei.RecipeResolver

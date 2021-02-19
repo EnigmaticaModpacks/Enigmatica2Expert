@@ -217,6 +217,7 @@ var ignore = [
   /\[AstralSorcery Patreon Effect Loader\/WARN\] \[Astral Sorcery\]: Skipped .* patreon effects during loading due to malformed data!/,
   /\[enderio\]: Refined Storage conduits NOT loaded. Refined Storage is not installed/,
   /OBJModel\.Parser: found a face \('f'\) with more than 4 vertices, only the first 4 of these vertices will be rendered!/,
+  /\[jetif\]: Couldn't load config field for Flux Networks, report this issue on JETIF's GitHub/, // actually not affecting game, https://github.com/Lykrast/JETIF/issues/20
 ]
 
 

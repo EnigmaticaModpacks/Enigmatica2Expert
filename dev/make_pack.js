@@ -203,12 +203,51 @@ end()
 // Add TL.exe
 addToPack(`${distrDir}TL.exe`)
 
+// Set Russian Language in default options
 replace.sync({
   files: 'config/defaultoptions/options.txt',
   from: /^lang:\w+$/,
   to: 'lang:ru_ru',
 })
 
+// Replace world names
+const planetNames = {
+  'Overworld'       : 'Надмир',
+  'Nether'          : 'Ад',
+  'The End'         : 'Энд',
+  'Twilight Forest' : 'Сумеречный Лес',
+  'Ratlantis'       : 'Ратландия',
+  'Deep Dark'       : 'Глубокая Тьма',
+  'Luna'            : 'Луна',
+  'Mercury'         : 'Меркурий',
+  'Venus'           : 'Венера',
+  'Mars'            : 'Марс',
+  'Io'              : 'Ио',
+  'Europa'          : 'Европа',
+  'Titan'           : 'Титан',
+  'Uranus'          : 'Уран',
+  'Neptune'         : 'Нептун',
+  'Proxima B'       : 'Проксима Б',
+  'Terra Nova'      : 'Терра Нова',
+  'Novus'           : 'Новус',
+  'Stella'          : 'Стелла',
+  // 'KELT-2ab'        : 'КЕЛЬТ-2ab',
+  // 'KELT-3'          : 'КЕЛЬТ-3',
+  // 'KELT-4ab'        : 'КЕЛЬТ-4ab',
+  // 'KELT-6a'         : 'КЕЛЬТ-6a',
+  'Kepler 0118'     : 'Кеплер 0118',
+  'Kepler 0119'     : 'Кеплер 0119',
+}
+replace.sync({
+  files: 'config/jeresources/world-gen.json',
+  from: /^    "dim": "(?<name>.*)(?<id> \(\))"$/, // eslint-disable-line no-regex-spaces
+  to: (...args)=>{
+    const groups = args[args.length - 2]
+    return '    "dim": "' + (planetNames[groups.name] ?? groups.name) + groups.id + '"'
+  },
+})
+
+// Override files
 fs.copySync(ruOverrides, './', {overwrite: true})
 
 makeZip(`${distrDir}~E2E-Extended_RU_latest.zip`)

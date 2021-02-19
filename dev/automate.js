@@ -15,6 +15,6 @@ const automationList = [
 
 for(const filePath of automationList) {
   console.log('📒', filePath)
-  require('.'+filePath.substr(3))
+  require.main.require('../' + filePath)
   console.log('---------------------------\n')
 }
