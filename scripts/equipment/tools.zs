@@ -98,11 +98,9 @@ import mods.jei.JEI.removeAndHide as rh;
 	
 		] as IItemStack[];
 
-	var vanillaToolTooltip = "Vanilla tools don't work. Use Tinkers' Construct tools";
 	for tool in toolsToNerf {
 		tool.maxDamage = 1;
-		mods.jei.JEI.addDescription(tool, vanillaToolTooltip);
-		tool.addTooltip(format.red(vanillaToolTooltip));
+		scripts.category.tooltips.desc.both(tool, "vanilla_tools");
 	}
 	
 	<minecraft:stone_sword>.maxDamage = 2;

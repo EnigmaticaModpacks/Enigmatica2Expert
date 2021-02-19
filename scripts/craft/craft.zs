@@ -126,7 +126,7 @@ zenClass Craft {
       || isNull(item.itemArray[0]))
       return "null";
 
-    return item.itemArray[0].displayName.replaceAll("§.", "");
+    return item.itemArray[0].displayName.replaceAll(":", "_").replaceAll("§.", "");
   }
 
   function itemCount(item as IIngredient) as string {

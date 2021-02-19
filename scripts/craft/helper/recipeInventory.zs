@@ -48,7 +48,7 @@ zenClass RecipeInventory {
         val netW = (W/4) as int;
         val netH = (H/3) as int;
         if(netW * netH > 1) {
-          for j in 1 to (netW * netH) {
+          for j in 0 to (netW * netH) {
             addRecipe();
           }
         }

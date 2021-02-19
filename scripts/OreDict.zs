@@ -39,8 +39,6 @@ for item in pressurePlates {
 # Fixing the Mineralis Ritual
 	<ore:oreNickel>.remove(<immersiveengineering:ore:4>);
 	
-	<ore:oreSapphire>.remove(<iceandfire:sapphire_ore>);
-	
 	<ore:oreSilver>.remove(<iceandfire:silver_ore:0>);
 	
 	<ore:oreTin>.remove(<forestry:resources:2>);

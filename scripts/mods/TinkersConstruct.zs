@@ -275,6 +275,8 @@ for pos, names in utils.graph([
 	}
 }
 
+# Easter Egg fuel
+mods.tconstruct.Fuel.registerFuel(<liquid:seed_fluid> * 10, 500000);
 
 # Remake some metals to able be melted only under amplyfiing tube
 mods.mechanics.addTubeRecipe([<thaumcraft:amber_block>] as IItemStack[], <liquid:amber> * 1000);
@@ -399,3 +401,6 @@ craft.remake(<tconstruct:firewood:1>, ["pretty",
 	"L": <tconstruct:firewood>,      # Lavawood
 	"~": Bucket("ic2pahoehoe_lava")  # Pahoehoe Lava Bucket
 });
+
+# Nerf stone torch light level
+<tconstruct:stone_torch>.asBlock().definition.lightLevel = 0.75f;

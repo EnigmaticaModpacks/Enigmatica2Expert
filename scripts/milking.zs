@@ -69,10 +69,9 @@ function milk(e as crafttweaker.event.PlayerInteractEntityEvent) as bool {
   if(isNull(holdItem)) return false; # Player hold something wrong
 
   # Check what animal can be milked
+  if(isNull(e.target) || isNull(e.target.definition)) return false;
+  if (! e.target instanceof IEntityLiving) return false;
   val targetName = e.target.definition.name;
-  if (! e.target instanceof IEntityLiving) {
-    return false;
-  }
 
   var milkAmount = 0.0f;
   for animal, amount in animals {

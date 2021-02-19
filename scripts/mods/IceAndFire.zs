@@ -49,7 +49,6 @@ import mods.jei.JEI.removeAndHide as rh;
 	val removals = [
 <iceandfire:sapphire_ore>,
 <iceandfire:sapphire_block>,
-<iceandfire:sapphire_gem>,
 <iceandfire:armor_silver_metal_helmet>,
 <iceandfire:armor_silver_metal_chestplate>,
 <iceandfire:armor_silver_metal_leggings>,

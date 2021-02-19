@@ -264,7 +264,6 @@
 "CC: Tweaked","computercraft:turtle_player","TurtlePlayer",0
 "Clumps","clumps:xp_orb_big","EntityXPOrbBig",0
 "Computronics","computronics:swarm","EntitySwarm",9
-"CreativeCore","creativecore:sit","EntitySit",0
 "Cyclic","cyclicmagic:blazebolt","EntityBlazeBolt",1107
 "Cyclic","cyclicmagic:boomerang","EntityBoomerang",1118
 "Cyclic","cyclicmagic:dungeonbolt","EntityDungeonEye",1110
@@ -331,16 +330,18 @@
 "Ender IO","enderio:owl_egg","EntityOwlEgg",9
 "Ender IO","enderio:primed_charge","EntityPrimedCharge",0
 "Ender IO","enderiomachines:weather_rocket","EntityWeatherRocket",33
-"EnergeticSheep","energeticsheep:energetic_sheep","EntityEnergeticSheep",0
 "Ex Compressum","excompressum:angry_chicken","EntityAngryChicken",0
 "Ex Nihilo Creatio","exnihilocreatio:thrown stone","ProjectileStone",0
 "Extra Utilities 2","extrautils2:boomerang","EntityBoomerang",0
 "Extra Utilities 2","extrautils2:chunkdata","EntityChunkData",1
+"Eye of Dragons","eyeofdragons:eye_of_firedragon","EntityFireDragonEye",1547
+"Eye of Dragons","eyeofdragons:eye_of_icedragon","EntityIceDragonEye",1548
 "Farming for Blockheads","farmingforblockheads:merchant","EntityMerchant",0
 "Flux Networks","fluxnetworks:flux","EntityFireItem",0
 "Forestry","forestry:butterflyge","EntityButterfly",0
 "Forestry","forestry:cart.apiary","EntityMinecartApiary",2
 "Forestry","forestry:cart.beehouse","EntityMinecartBeehouse",1
+"Hole Filler Mod","hole_filler_mod:entity_throwable_hole_filler","EntityThrowableHoleFiller",0
 "Ice and Fire","iceandfire:amphithere","EntityAmphithere",934
 "Ice and Fire","iceandfire:amphitherearrow","EntityAmphithereArrow",935
 "Ice and Fire","iceandfire:chaintie","EntityChainTie",939
@@ -415,6 +416,7 @@
 "IndustrialCraft 2","ic2:sticky_dynamite","EntityStickyDynamite",2
 "Integrated Dynamics","integrateddynamics:entityitemtargetted","EntityItemTargetted",0
 "LittleTiles","littletiles:animation","EntityAnimation",2
+"LittleTiles","littletiles:sit","EntitySit",1
 "LittleTiles","littletiles:sizetnt","EntitySizedTNTPrimed",0
 "Mekanism","mekanism:babyskeleton","EntityBabySkeleton",3
 "Mekanism","mekanism:balloon","EntityBalloon",2
@@ -537,6 +539,7 @@
 "Psi","psi:spell_grenade","EntitySpellGrenade",2
 "Psi","psi:spell_mine","EntitySpellMine",4
 "Psi","psi:spell_projectile","EntitySpellProjectile",0
+"Psio","psicosts:psi_flare","EntityPsiFlare",0
 "Quark","quark:archaeologist","EntityArchaeologist",16
 "Quark","quark:arrow_ender","EntityArrowEnder",5
 "Quark","quark:arrow_explosive","EntityArrowExplosive",6
@@ -598,6 +601,7 @@
 "Rats","rats:thrown_block","EntityThrownBlock",11
 "Rats","rats:vial_of_sentience","EntityVialOfSentience",12
 "Redstone Arsenal","redstonearsenal:flux_arrow","EntityArrowFlux",0
+"Requious Frakto","requious:spear","EntitySpark",0
 "Rustic","rustic:chair","EntityChair",1
 "Rustic","rustic:tomato","EntityTomato",0
 "Scaling Health","scalinghealth:blightfire","EntityBlightFire",0

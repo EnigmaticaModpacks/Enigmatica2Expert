@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded thermalexpansion
-// Uses of this mod: 65
+// Uses of this mod: 64
 
 
 //####################################################
@@ -71,20 +71,6 @@ zenClass Class_Crucible { zenConstructor() {}
 
 }
 static Crucible as Class_Crucible = Class_Crucible();
-
-//####################################################
-// Uses of this class: 1
-zenClass Class_Infuser { zenConstructor() {}
-
-	// Uses of this method: 1
-	function addRecipe(output as IItemStack, input as IItemStack, energy as int) as void {
-		if(utils.DEBUG) print('Recipe wrapped: mods.thermalexpansion.Infuser.addRecipe'~
-			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), energy]));
-		mods.thermalexpansion.Infuser.addRecipe(output, input, energy);
-	}
-
-}
-static Infuser as Class_Infuser = Class_Infuser();
 
 //####################################################
 // Uses of this class: 7

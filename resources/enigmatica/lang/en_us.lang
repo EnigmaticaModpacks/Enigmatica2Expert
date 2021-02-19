@@ -110,3 +110,4 @@ tooltips.lang.minecraft:torch=§4Light level was nerfed
 tooltips.lang.thaumcraft:table_wood=§6Right Click with Scribing tools to make Research Table
 tooltips.lang.thaumcraft:research_table=§6Right Click Scribing Tools over Wood Table to make
 tooltips.lang.opencomputers:print=\n§51)§r Craft OPPM floppy'\n§52)§r Install it on Tier2+ computer with Internet card'\n§53)§r Run §n"oppm install oppm"§r'\n§54)§r Restart'\n§55)§r Run §n"oppm install print3d"§r and §n"oppm install print3d-examples"§r'\n§56)§r §n"print3d /path/to/Tree.3dm"§r
+tooltips.lang.vanilla_tools=§4Vanilla tools don't work. Use Tinkers' Construct tools

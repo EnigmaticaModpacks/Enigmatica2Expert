@@ -86,3 +86,6 @@ scripts.process.squeeze(
 	"except: CrushingTub Squeezer MechanicalSqueezer TECentrifuge",
 	null
 );
+
+# Make Crystal block harder to match its mining level
+<biomesoplenty:crystal>.hardness = 50;

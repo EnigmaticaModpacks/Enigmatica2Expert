@@ -42,7 +42,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Molten Sodium++] from [Molten Sodium Hydroxide] -->
+	<!-- [Molten Sodium+] from [Molten Sodium Hydroxide] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<fluidStack>naoh 666</fluidStack>
@@ -75,7 +75,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Deuterium++] from [Heavy Water] -->
+	<!-- [Deuterium+] from [Heavy Water] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<fluidStack>heavywater 1000</fluidStack>
@@ -86,7 +86,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Deuterium++] from [Heavy Water] -->
+	<!-- [Deuterium+] from [Heavy Water] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<fluidStack>ic2heavy_water 1000</fluidStack>

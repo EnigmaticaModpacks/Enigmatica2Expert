@@ -75,7 +75,7 @@ zenClass Descriptor {
 	function local(item as IItemStack) as string { return local(autoLang(item)); }
 	function prefix(lang as string) as string { return langPrefix ~ lang; }
 }
-val desc = Descriptor("tooltips.lang.");
+static desc as Descriptor = Descriptor("tooltips.lang.");
 
 ////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////

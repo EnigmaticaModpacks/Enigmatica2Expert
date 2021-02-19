@@ -93,10 +93,3 @@ global remakeEx as function(IItemStack, IIngredient[][])void =
 	recipes.remove(item);
 	makeEx(item, input);
 };
-
-# Apply tag to bucket (in case we use TE potions or such)
-global BucketTag as function(string,IData)IItemStack = function (name as string, tag as IData) as IItemStack {
-	val b = Bucket(name as string);
-	if (!isNull(b) && !isNull(tag)) { return b.updateTag({Tag: tag}); }
-	return b;
-};

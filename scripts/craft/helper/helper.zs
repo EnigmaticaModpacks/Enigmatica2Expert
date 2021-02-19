@@ -118,7 +118,7 @@ zenClass RecipeWork { zenConstructor() {}
       "} as IIngredient[string];\n\n" ~ result;
     
     if(!(style has "noBucket")) return result.replaceAll(
-      '<forge:bucketfilled>\\.withTag\\(\\{FluidName: ("[^"]+"), Amount: 1000\\}\\)',
+      '<forge:bucketfilled>\\.withTag\\(\\{FluidName: ("[^"]+?"), Amount: 1000\\}\\)',
       'Bucket($1)'
     );
 
