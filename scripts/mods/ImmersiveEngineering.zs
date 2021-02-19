@@ -186,27 +186,28 @@ mods.immersiveengineering.Excavator.addMineral("Black Quartz", 20, 0.005, ["oreQ
 # addRailgunBullet(IIngredient item, float damage, float gravity, int[][] colorMap)
 # addRailgunBullet(IIngredient item, float damage, float gravity, IRailgunImpact effect, int[][] colorMap)
 
-/* Patchouli_js('Items/Railgui Bullets', {
-	item: "immersiveengineering:railgun",
-	title: "New Railgui Bullets",
-	type:  "item_list",
-	text0: `   Damage  |  Gravity`,
-  ...match_regex_below(/^addRailgunBullet\(<(.*?)> *, *(.*?), *(.*?), *.*\);$/gm)
-  .sort((a,b)=>b[2]-a[2]).reduce((o, m, i)=>{
-    o[`item${i+1}`] = m[1];
-    o[`text${i+1}`] = ` ${m[2].padStart(6)}    |   ${m[3].padStart(4)}`;
-    return o;
-  },{})
-})*/
+/* Patchouli_js('Items/Railgui Bullets', paged({
+	item: 'immersiveengineering:railgun',
+	title: 'New Railgui Bullets',
+	type:  'item_list',
+},[
+	[undefined, ' Damage  |  Gravity'],
+  ...match_regex_below(/^addRailgunBullet\(<(.*?)> *, *(.*?), *(.*?), *.*\);/gm)
+  .sort((a,b)=>b[2]-a[2])
+  .map(m=>[m[1], ` ${m[2].padStart(6)}    |   ${m[3].padStart(4)}`])
+]))*/
 
 val colorMap = [[0x777777, 0xa4a4a4]] as int[][];
-addRailgunBullet(<ore:stickTitaniumAluminide>  , 23, 0.9, colorMap);
-addRailgunBullet(<ore:stickTitaniumIridium>    , 27, 0.9, colorMap);
-addRailgunBullet(<extendedcrafting:material:3> , 27, 1.3, colorMap);
-addRailgunBullet(<ore:stickCopper>             , 14, 1.1, colorMap);
-addRailgunBullet(<ore:stickTitanium>           , 21, 1.15,colorMap);
-addRailgunBullet(<ore:stickIridium>            , 24, 1.15,colorMap);
-
+addRailgunBullet(<ore:stickCopper>             , 21, 1.1, colorMap);
+addRailgunBullet(<ore:stickTitanium>           , 30, 1.15,colorMap);
+addRailgunBullet(<ore:stickTitaniumAluminide>  , 33, 0.9, colorMap);
+addRailgunBullet(<redstonearsenal:material:193>, 32, 1.2, colorMap); # Flux-Infused Obsidian Rod
+addRailgunBullet(<ore:stickIridium>            , 36, 1.15,colorMap);
+addRailgunBullet(<ic2:crafting:29>,              28, 0.8, colorMap); # Shaft (Iron)
+addRailgunBullet(<ic2:crafting:42>,              34, 0.8, colorMap); # Shaft (Bronze)
+addRailgunBullet(<ic2:crafting:30>,              40, 0.8, colorMap); # Shaft (Steel)
+addRailgunBullet(<ore:stickTitaniumIridium>    , 44, 0.8, colorMap);
+addRailgunBullet(<extendedcrafting:material:3> , 48, 1.0, colorMap);
 
 # *======= Fertilizers =======*
 
