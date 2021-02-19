@@ -304,6 +304,7 @@ function beneficiate(_input as IIngredient, _oreName as string, _amount as doubl
     val nuggetExtra = utils.getSomething(JA.extraName, ["nugget"], amount * 3);
     if (!isNull(nuggetExtra)) {
       workEx("infernalfurnace", exceptions, [input], null, null, null, [nuggetExtra], extraChances, null);
+      scripts.requiousJei.add_infernal_furnace(input, nuggetExtra);
     }
   }
 

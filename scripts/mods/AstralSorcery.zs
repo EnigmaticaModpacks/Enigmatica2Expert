@@ -97,18 +97,6 @@ scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <astralsorcery:itemknow
 	[null, null, null, PC, PC, IW, IW]
 ]);
 
-
-/* Patchouli_js('Liquids/Liquid Interactions', 
-	paged({
-		type: "fluid_interaction",
-		icon: "astralsorcery:blockchalice"
-	},
-  match_block_below(/^ *\[<liquid:(.*?)>.*?<liquid:(.*?)>.*?<(.*?)>.*?<(.*?)>.*?<(.*?)>.*$/gm)
-  .reduce((arr, match) => {
-    match.slice(1).forEach((m,i)=>arr.push([i<2 ? wrap_bucket(m) : m]));
-    return arr
-  }, [])
-))*/
 # Chalice interactions
 val chaliceGrid = {
   # First                      , Second                                                             , ⏩ + ⏩                                , ⏩ + 🔷                             , 🔷 + ⏩                      ,
@@ -167,7 +155,13 @@ for lList, itList in chaliceGrid {
 	}
 
 	# Liquid interactions:
-	mods.plustweaks.Liquid.registerLiquidInteraction(lList[0], lList[1], itList[0].asBlock().definition.defaultState, true);
-	mods.plustweaks.Liquid.registerLiquidInteraction(lList[0], lList[1], itList[1].asBlock().definition.defaultState, false);
-	mods.plustweaks.Liquid.registerLiquidInteraction(lList[1], lList[0], itList[2].asBlock().definition.defaultState, true);
+	mods.plustweaks.Liquid.registerLiquidInteraction(lList[0], lList[1], itList[0].asBlock().definition.defaultState, false);
+	mods.plustweaks.Liquid.registerLiquidInteraction(lList[1], lList[0], itList[0].asBlock().definition.defaultState, false);
+}
+
+for lList, itList in chaliceGrid {
+	val b1 = Bucket(lList[0].name);
+	val b2 = Bucket(lList[1].name);
+	scripts.requiousJei.add_everflow_chalice(b1, b2, itList);
+	scripts.requiousJei.add_liquid_interaction(b1, b2, itList[0]);
 }
