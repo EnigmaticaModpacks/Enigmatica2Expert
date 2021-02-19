@@ -1,0 +1,59 @@
+{
+  "dependencies": "advancedrocketry",
+  "populate": {
+
+		"kelt_2ab_kelp": {
+			"distribution": "underwater",
+			"generator": {
+				"type": "sequential",
+				"generators": [
+					{
+						"type": "spout",
+						"block": "biomesoplenty:seaweed",
+						"radius": 0,
+						"height": {"min": 1, "max": 20},
+						"material": "water"
+					},
+					{
+						"type": "spout",
+						"block": "dirt",
+						"radius": 0,
+						"height": 2,
+						"material": "biomesoplenty:seaweed"
+					}
+				]
+			},
+			"cluster-count": 60,
+			"dimension": {"restriction": "whitelist", "value": [118]}
+		},
+
+		"kelt_2ab_glow_coral": {
+			"distribution": "underwater",
+			"generator": {
+				"type": "sequential",
+				"generators": [
+					{
+						"type": "spout",
+						"block": {"name": "biomesoplenty:coral","metadata": 3},
+						"radius": 0,
+						"height": 2,
+						"material": "water"
+					},
+					{
+						"type": "spout",
+						"block": "gravel",
+						"radius": 0,
+						"height": 1,
+						"material": {"name": "biomesoplenty:coral","metadata": 3}
+					}
+				]
+			},
+			"chunk-chance": 6,
+			"cluster-count": 20,
+			"dimension": {"restriction": "whitelist", "value": [118]}
+		}
+
+  }
+}
+
+
