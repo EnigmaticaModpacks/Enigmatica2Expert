@@ -1079,23 +1079,17 @@
       "addonID": 322861,
       "gameInstanceID": "94dbace8-9a1f-4cb9-a42e-cdcc902d8145",
       "installedFile": {
-        "id": 2899874,
-        "displayName": "PackagedExCrafting-1.12.2-1.0.1.2.jar",
-        "fileName": "PackagedExCrafting-1.12.2-1.0.1.2.jar",
-        "fileDate": "2020-03-13T10:41:38.323Z",
-        "fileLength": 186045,
+        "id": 3214400,
+        "displayName": "PackagedExCrafting-1.12.2-1.0.2.3.jar",
+        "fileName": "PackagedExCrafting-1.12.2-1.0.2.3.jar",
+        "fileDate": "2021-02-23T16:17:51.12Z",
+        "fileLength": 186144,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2899/874/PackagedExCrafting-1.12.2-1.0.1.2.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3214/400/PackagedExCrafting-1.12.2-1.0.2.3.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
-          {
-            "id": 0,
-            "addonId": 268387,
-            "type": 3,
-            "fileId": 0
-          },
           {
             "id": 0,
             "addonId": 308380,
@@ -1107,19 +1101,25 @@
             "addonId": 223794,
             "type": 2,
             "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 268387,
+            "type": 3,
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1576971509,
+            "fingerprint": 3347581378,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "thelm",
-            "fingerprint": 3958582030,
+            "fingerprint": 1138272010,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -1130,7 +1130,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 4157721733,
+        "packageFingerprint": 1674905460,
         "gameVersion": [
           "1.12.2"
         ],
@@ -1143,16 +1143,16 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "PackagedExCrafting-1.12.2-1.0.1.2.jar"
+        "FileNameOnDisk": "PackagedExCrafting-1.12.2-1.0.2.3.jar"
       },
       "dateInstalled": "2020-06-25T07:22:45.1598321Z",
-      "dateUpdated": "2020-06-25T07:22:45.1637897Z",
-      "dateLastUpdateAttempted": "2020-06-25T07:22:45.1637897Z",
-      "status": 5,
+      "dateUpdated": "2021-02-26T19:46:09.3135508Z",
+      "dateLastUpdateAttempted": "2021-02-26T19:46:09.3135508Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": true,
+      "isModified": false,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -1953,14 +1953,14 @@
       "addonID": 308380,
       "gameInstanceID": "94dbace8-9a1f-4cb9-a42e-cdcc902d8145",
       "installedFile": {
-        "id": 2977147,
-        "displayName": "PackagedAuto-1.12.2-1.0.3.14.jar",
-        "fileName": "PackagedAuto-1.12.2-1.0.3.14.jar",
-        "fileDate": "2020-06-10T17:26:13.463Z",
-        "fileLength": 217291,
+        "id": 3214216,
+        "displayName": "PackagedAuto-1.12.2-1.0.5.17.jar",
+        "fileName": "PackagedAuto-1.12.2-1.0.5.17.jar",
+        "fileDate": "2021-02-23T13:54:29.677Z",
+        "fileLength": 220178,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2977/147/PackagedAuto-1.12.2-1.0.3.14.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3214/216/PackagedAuto-1.12.2-1.0.5.17.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
@@ -1975,13 +1975,13 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2076283308,
+            "fingerprint": 2755311504,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "thelm",
-            "fingerprint": 358847170,
+            "fingerprint": 726907521,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -1992,7 +1992,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 1403313312,
+        "packageFingerprint": 1158209547,
         "gameVersion": [
           "1.12.2"
         ],
@@ -2005,16 +2005,16 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "PackagedAuto-1.12.2-1.0.3.14.jar"
+        "FileNameOnDisk": "PackagedAuto-1.12.2-1.0.5.17.jar"
       },
       "dateInstalled": "2020-05-31T19:58:23.937532Z",
-      "dateUpdated": "2020-08-05T11:30:32.1733821Z",
-      "dateLastUpdateAttempted": "2020-08-05T11:30:32.1733821Z",
-      "status": 5,
+      "dateUpdated": "2021-02-26T19:46:13.8221092Z",
+      "dateLastUpdateAttempted": "2021-02-26T19:46:13.8221092Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": true,
+      "isModified": false,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -3649,14 +3649,14 @@
       "addonID": 239197,
       "gameInstanceID": "94dbace8-9a1f-4cb9-a42e-cdcc902d8145",
       "installedFile": {
-        "id": 3202907,
-        "displayName": "CraftTweaker2-1.12-4.1.20.618.jar",
-        "fileName": "CraftTweaker2-1.12-4.1.20.618.jar",
-        "fileDate": "2021-02-13T21:04:04.147Z",
-        "fileLength": 1523777,
+        "id": 3218125,
+        "displayName": "CraftTweaker2-1.12-4.1.20.624.jar",
+        "fileName": "CraftTweaker2-1.12-4.1.20.624.jar",
+        "fileDate": "2021-02-26T17:06:26.727Z",
+        "fileLength": 1523974,
         "releaseType": 2,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3202/907/CraftTweaker2-1.12-4.1.20.618.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3218/125/CraftTweaker2-1.12-4.1.20.624.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -3664,7 +3664,7 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 291878750,
+            "fingerprint": 4287035803,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -3676,7 +3676,7 @@
           },
           {
             "foldername": "crafttweaker",
-            "fingerprint": 355251873,
+            "fingerprint": 2684010864,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -3694,7 +3694,7 @@
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 3342965723,
+            "fingerprint": 2728614297,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -3705,7 +3705,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 1829841549,
+        "packageFingerprint": 2191589084,
         "gameVersion": [
           "1.12.2"
         ],
@@ -3718,12 +3718,12 @@
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "CraftTweaker2-1.12-4.1.20.618.jar"
+        "FileNameOnDisk": "CraftTweaker2-1.12-4.1.20.624.jar"
       },
       "dateInstalled": "2020-09-15T13:19:17.3234851Z",
-      "dateUpdated": "2021-02-18T18:18:08.8314017Z",
-      "dateLastUpdateAttempted": "2021-02-18T18:18:08.8314017Z",
-      "status": 5,
+      "dateUpdated": "2021-02-26T19:46:47.0789719Z",
+      "dateLastUpdateAttempted": "2021-02-26T19:46:47.0789719Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -3845,14 +3845,14 @@
       "addonID": 444729,
       "gameInstanceID": "94dbace8-9a1f-4cb9-a42e-cdcc902d8145",
       "installedFile": {
-        "id": 3197372,
-        "displayName": "recast_1.12.2-1.0.jar",
-        "fileName": "recast_1.12.2-1.0.jar",
-        "fileDate": "2021-02-08T22:26:33.94Z",
-        "fileLength": 5491,
+        "id": 3215882,
+        "displayName": "recast_1.12.2-1.1.jar",
+        "fileName": "recast_1.12.2-1.1.jar",
+        "fileDate": "2021-02-24T21:12:51.85Z",
+        "fileLength": 5831,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3197/372/recast_1.12.2-1.0.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3215/882/recast_1.12.2-1.1.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
@@ -3867,19 +3867,19 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1097091958,
+            "fingerprint": 1592733620,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 1050121495,
+            "fingerprint": 2397848914,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 2203686302,
+            "fingerprint": 3993329959,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -3890,7 +3890,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 1165360276,
+        "packageFingerprint": 327467362,
         "gameVersion": [
           "Forge",
           "1.12.2"
@@ -3904,12 +3904,12 @@
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "recast_1.12.2-1.0.jar"
+        "FileNameOnDisk": "recast_1.12.2-1.1.jar"
       },
       "dateInstalled": "2021-02-18T18:23:57.2760926Z",
-      "dateUpdated": "2021-02-18T18:23:57.2780866Z",
-      "dateLastUpdateAttempted": "2021-02-18T18:23:57.2780866Z",
-      "status": 5,
+      "dateUpdated": "2021-02-26T19:46:08.9753542Z",
+      "dateLastUpdateAttempted": "2021-02-26T19:46:08.9753542Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -5932,14 +5932,14 @@
       "addonID": 267193,
       "gameInstanceID": "94dbace8-9a1f-4cb9-a42e-cdcc902d8145",
       "installedFile": {
-        "id": 3158203,
-        "displayName": "Chunk Pregenerator-V1.12-2.4.1",
-        "fileName": "Chunk Pregenerator-V1.12-2.4.1.jar",
-        "fileDate": "2021-01-04T14:14:15.443Z",
-        "fileLength": 527868,
+        "id": 3214752,
+        "displayName": "Chunk Pregenerator-V1.12-2.5.0",
+        "fileName": "Chunk Pregenerator-V1.12-2.5.0.jar",
+        "fileDate": "2021-02-23T20:33:13.05Z",
+        "fileLength": 543859,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3158/203/Chunk Pregenerator-V1.12-2.4.1.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3214/752/Chunk Pregenerator-V1.12-2.5.0.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -5947,18 +5947,18 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2392113988,
+            "fingerprint": 3838887051,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pregenerator",
-            "fingerprint": 4215259668,
+            "fingerprint": 2779473434,
             "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 1594581737,
+        "packageFingerprint": 2561881248,
         "gameVersion": [
           "1.12.2"
         ],
@@ -5971,12 +5971,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "Chunk Pregenerator-V1.12-2.4.1.jar"
+        "FileNameOnDisk": "Chunk Pregenerator-V1.12-2.5.0.jar"
       },
       "dateInstalled": "2020-02-05T17:37:14.6967813Z",
-      "dateUpdated": "2021-01-15T20:53:14.0798994Z",
-      "dateLastUpdateAttempted": "2021-01-15T20:53:14.0798994Z",
-      "status": 5,
+      "dateUpdated": "2021-02-26T19:46:51.6199206Z",
+      "dateLastUpdateAttempted": "2021-02-26T19:46:51.6199206Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -14412,24 +14412,6 @@
       "installedTargets": null
     },
     {
-      "addonID": 336748,
-      "gameInstanceID": "94dbace8-9a1f-4cb9-a42e-cdcc902d8145",
-      "installedFile": null,
-      "dateInstalled": "2021-02-19T20:57:58.065998Z",
-      "dateUpdated": "2021-02-19T20:57:58.065998Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
-      "preferenceAutoInstallUpdates": null,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": []
-    },
-    {
       "addonID": 228404,
       "gameInstanceID": "94dbace8-9a1f-4cb9-a42e-cdcc902d8145",
       "installedFile": {
@@ -22045,14 +22027,14 @@
       "addonID": 342584,
       "gameInstanceID": "94dbace8-9a1f-4cb9-a42e-cdcc902d8145",
       "installedFile": {
-        "id": 3205359,
-        "displayName": "collective-1.12.2-1.66.jar",
-        "fileName": "collective-1.12.2-1.66.jar",
-        "fileDate": "2021-02-15T20:40:12.753Z",
-        "fileLength": 100680,
+        "id": 3218029,
+        "displayName": "collective-1.12.2-1.68.jar",
+        "fileName": "collective-1.12.2-1.68.jar",
+        "fileDate": "2021-02-26T15:21:25.02Z",
+        "fileLength": 101188,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3205/359/collective-1.12.2-1.66.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3218/29/collective-1.12.2-1.68.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -22060,19 +22042,19 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 999526745,
+            "fingerprint": 203065593,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 3345485224,
+            "fingerprint": 4146274160,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 699852479,
+            "fingerprint": 2989383993,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -22083,7 +22065,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 839122750,
+        "packageFingerprint": 350666359,
         "gameVersion": [
           "Forge",
           "1.12.2"
@@ -22097,12 +22079,12 @@
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "collective-1.12.2-1.66.jar"
+        "FileNameOnDisk": "collective-1.12.2-1.68.jar"
       },
       "dateInstalled": "2021-02-18T18:23:56.9282565Z",
-      "dateUpdated": "2021-02-18T18:23:56.9302515Z",
-      "dateLastUpdateAttempted": "2021-02-18T18:23:56.9302515Z",
-      "status": 5,
+      "dateUpdated": "2021-02-26T19:46:49.4156403Z",
+      "dateLastUpdateAttempted": "2021-02-26T19:46:49.4156403Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -22201,14 +22183,14 @@
       "addonID": 435298,
       "gameInstanceID": "94dbace8-9a1f-4cb9-a42e-cdcc902d8145",
       "installedFile": {
-        "id": 3209377,
-        "displayName": "ctintegration-1.6.1.jar",
-        "fileName": "ctintegration-1.6.1.jar",
-        "fileDate": "2021-02-19T10:07:41.04Z",
-        "fileLength": 65057,
+        "id": 3211830,
+        "displayName": "ctintegration-1.7.2.jar",
+        "fileName": "ctintegration-1.7.2.jar",
+        "fileDate": "2021-02-21T17:13:45.653Z",
+        "fileLength": 74693,
         "releaseType": 2,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3209/377/ctintegration-1.6.1.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3211/830/ctintegration-1.7.2.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
@@ -22220,13 +22202,19 @@
           },
           {
             "id": 0,
-            "addonId": 237065,
+            "addonId": 223628,
             "type": 2,
             "fileId": 0
           },
           {
             "id": 0,
-            "addonId": 224791,
+            "addonId": 227083,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 237065,
             "type": 2,
             "fileId": 0
           },
@@ -22238,19 +22226,13 @@
           },
           {
             "id": 0,
-            "addonId": 306283,
+            "addonId": 224791,
             "type": 2,
             "fileId": 0
           },
           {
             "id": 0,
             "addonId": 291874,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 227083,
             "type": 2,
             "fileId": 0
           },
@@ -22274,7 +22256,7 @@
           },
           {
             "id": 0,
-            "addonId": 223628,
+            "addonId": 306283,
             "type": 2,
             "fileId": 0
           }
@@ -22283,24 +22265,24 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3449754183,
+            "fingerprint": 3811363092,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "xyz",
-            "fingerprint": 3491582518,
+            "fingerprint": 1366124524,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 464991298,
+            "fingerprint": 42155235,
             "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 826082248,
+        "packageFingerprint": 1026002318,
         "gameVersion": [
           "Forge",
           "1.12.2"
@@ -22314,11 +22296,11 @@
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "ctintegration-1.6.1.jar"
+        "FileNameOnDisk": "ctintegration-1.7.2.jar"
       },
       "dateInstalled": "2021-02-18T18:25:59.0291269Z",
-      "dateUpdated": "2021-02-19T14:50:39.2131101Z",
-      "dateLastUpdateAttempted": "2021-02-19T14:50:39.2131101Z",
+      "dateUpdated": "2021-02-26T19:46:43.0496998Z",
+      "dateLastUpdateAttempted": "2021-02-26T19:46:43.0496998Z",
       "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
@@ -27912,14 +27894,14 @@
       "addonID": 261199,
       "gameInstanceID": "94dbace8-9a1f-4cb9-a42e-cdcc902d8145",
       "installedFile": {
-        "id": 3160262,
-        "displayName": "animania-1.12.2-base-2.0.2.26",
-        "fileName": "animania-1.12.2-base-2.0.2.26.jar",
-        "fileDate": "2021-01-06T13:27:28.93Z",
-        "fileLength": 1619895,
+        "id": 3213136,
+        "displayName": "animania-1.12.2-base-2.0.3.28",
+        "fileName": "animania-1.12.2-base-2.0.3.28.jar",
+        "fileDate": "2021-02-22T17:13:19.587Z",
+        "fileLength": 1626689,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3160/262/animania-1.12.2-base-2.0.2.26.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3213/136/animania-1.12.2-base-2.0.3.28.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
@@ -27934,7 +27916,7 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3269209211,
+            "fingerprint": 3242973093,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -27946,24 +27928,24 @@
           },
           {
             "foldername": "assets",
-            "fingerprint": 2318404240,
+            "fingerprint": 2554208112,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 933746573,
+            "fingerprint": 4206017572,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 2932926591,
+            "fingerprint": 928183622,
             "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 1305359892,
+        "packageFingerprint": 1778381478,
         "gameVersion": [
           "Forge",
           "1.12.2"
@@ -27977,12 +27959,12 @@
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "animania-1.12.2-base-2.0.2.26.jar"
+        "FileNameOnDisk": "animania-1.12.2-base-2.0.3.28.jar"
       },
       "dateInstalled": "2020-09-15T14:15:45.983776Z",
-      "dateUpdated": "2021-01-15T20:52:10.1530487Z",
-      "dateLastUpdateAttempted": "2021-01-15T20:52:10.1530487Z",
-      "status": 5,
+      "dateUpdated": "2021-02-26T19:47:09.8280206Z",
+      "dateLastUpdateAttempted": "2021-02-26T19:47:09.8280206Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -31191,26 +31173,26 @@
       "addonID": 407632,
       "gameInstanceID": "94dbace8-9a1f-4cb9-a42e-cdcc902d8145",
       "installedFile": {
-        "id": 3142564,
-        "displayName": "animania-1.12.2-farm-1.0.1",
-        "fileName": "animania-1.12.2-farm-1.0.1.jar",
-        "fileDate": "2020-12-18T22:01:05.16Z",
-        "fileLength": 5528848,
+        "id": 3213139,
+        "displayName": "animania-1.12.2-farm-1.0.2.28",
+        "fileName": "animania-1.12.2-farm-1.0.2.28.jar",
+        "fileDate": "2021-02-22T17:15:26.5Z",
+        "fileLength": 5530204,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3142/564/animania-1.12.2-farm-1.0.1.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3213/139/animania-1.12.2-farm-1.0.2.28.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
             "id": 0,
-            "addonId": 261199,
+            "addonId": 268704,
             "type": 3,
             "fileId": 0
           },
           {
             "id": 0,
-            "addonId": 268704,
+            "addonId": 261199,
             "type": 3,
             "fileId": 0
           }
@@ -31231,12 +31213,12 @@
           },
           {
             "foldername": "com",
-            "fingerprint": 1682414259,
+            "fingerprint": 3502807840,
             "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 4233793305,
+        "packageFingerprint": 1433273761,
         "gameVersion": [
           "Forge",
           "1.12.2"
@@ -31250,12 +31232,12 @@
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "animania-1.12.2-farm-1.0.1.jar"
+        "FileNameOnDisk": "animania-1.12.2-farm-1.0.2.28.jar"
       },
       "dateInstalled": "2020-09-15T14:15:53.031451Z",
-      "dateUpdated": "2020-12-23T15:42:25.3511391Z",
-      "dateLastUpdateAttempted": "2020-12-23T15:42:25.3511391Z",
-      "status": 5,
+      "dateUpdated": "2021-02-26T19:47:01.1490936Z",
+      "dateLastUpdateAttempted": "2021-02-26T19:47:01.1490936Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -32172,26 +32154,26 @@
       "addonID": 407657,
       "gameInstanceID": "94dbace8-9a1f-4cb9-a42e-cdcc902d8145",
       "installedFile": {
-        "id": 3142563,
-        "displayName": "animania-1.12.2-extra-1.0.1",
-        "fileName": "animania-1.12.2-extra-1.0.1.jar",
-        "fileDate": "2020-12-18T22:00:18.497Z",
-        "fileLength": 1924546,
+        "id": 3213137,
+        "displayName": "animania-1.12.2-extra-1.0.2.28",
+        "fileName": "animania-1.12.2-extra-1.0.2.28.jar",
+        "fileDate": "2021-02-22T17:14:33.423Z",
+        "fileLength": 1926227,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3142/563/animania-1.12.2-extra-1.0.1.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3213/137/animania-1.12.2-extra-1.0.2.28.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
             "id": 0,
-            "addonId": 268704,
+            "addonId": 261199,
             "type": 3,
             "fileId": 0
           },
           {
             "id": 0,
-            "addonId": 261199,
+            "addonId": 268704,
             "type": 3,
             "fileId": 0
           }
@@ -32206,18 +32188,18 @@
           },
           {
             "foldername": "assets",
-            "fingerprint": 329802771,
+            "fingerprint": 2954883041,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 333598858,
+            "fingerprint": 260954659,
             "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2732311011,
+        "packageFingerprint": 3497978324,
         "gameVersion": [
           "Forge",
           "1.12.2"
@@ -32231,12 +32213,12 @@
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "animania-1.12.2-extra-1.0.1.jar"
+        "FileNameOnDisk": "animania-1.12.2-extra-1.0.2.28.jar"
       },
       "dateInstalled": "2020-09-15T14:15:50.2022523Z",
-      "dateUpdated": "2020-12-23T15:42:20.0773644Z",
-      "dateLastUpdateAttempted": "2020-12-23T15:42:20.0773644Z",
-      "status": 5,
+      "dateUpdated": "2021-02-26T19:47:08.0901205Z",
+      "dateLastUpdateAttempted": "2021-02-26T19:47:08.0901205Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
