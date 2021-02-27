@@ -137,3 +137,8 @@ createBlock("conglomerate_of_sun",  5, <blockmaterial:clay>);
 # -------------------------------
 itemBuilder.addItem("empowered_phosphor");
 itemBuilder.addItem("blasted_coal");
+
+# -------------------------------
+# Other
+# -------------------------------
+itemBuilder.addItem("bee_diversity");
