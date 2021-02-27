@@ -285,3 +285,5 @@ Patchouli_js(entryId, paged({
 # Mana diamond from Rat Diamond recipe
 mods.botania.ManaInfusion.addInfusion(<botania:manaresource:2>, <rats:rat_diamond>, 10000);
 
+# Way cheaper tiny potato dupe
+mods.botania.ManaInfusion.addInfusion(<botania:tinypotato> * 2, <botania:tinypotato>, 1);

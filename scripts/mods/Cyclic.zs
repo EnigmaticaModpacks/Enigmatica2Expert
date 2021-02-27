@@ -630,3 +630,6 @@ craft.remake(<cyclicmagic:tool_elevate>, ["pretty",
   "☼": <scalinghealth:crystalshard>, # Heart Crystal Shard
   "M": <tconstruct:materials:19>     # Mending Moss
 });
+
+# Remove because transcended by Conarm modifiers
+rh(<cyclicmagic:glowing_helmet:*>);

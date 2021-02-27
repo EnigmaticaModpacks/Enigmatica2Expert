@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import mods.industrialforegoing.BioReactor;
 import mods.industrialforegoing.ProteinReactor;
 import mods.industrialforegoing.FluidDictionary;
@@ -225,3 +226,55 @@ scripts.wrap.industrialforegoing.Extractor.add(<integrateddynamics:menril_log>, 
 # Stackable black hole tanks
 <industrialforegoing:black_hole_unit>.maxStackSize = 64;
 <industrialforegoing:black_hole_tank>.maxStackSize = 64;
+
+# Harder as being best tree chopping magic box
+# [Plant Gatherer] from [Machine Case][+4]
+craft.remake(<industrialforegoing:crop_recolector>, ["pretty",
+  "R ~ R",
+  "□ M □",
+  "R E R"], {
+  "□": <ic2:block_cutting_blade:2>, # Block Cutting Blade (Diamond)
+  "R": <ore:itemRubber>,            # Plastic
+  "E": <ore:gearElectrumFlux>,      # Fluxed Electrum Gear
+  "M": <teslacorelib:machine_case>, # Machine Case
+  "~": Bucket("if.protein"), # Protein Bucket
+});
+
+# Remake IF addons to being much harder at huge (+12) ranges
+for i, oreName in [
+	"FakeIron",
+	"Lead",
+	"Osmium",
+	"Invar",
+	"Ardite",
+	"RefinedGlowstone",
+	"ElectricalSteel",
+	"ElectrumFlux",
+	"Osmiridium",
+	"EssenceMetal",
+	"Enderium",
+	"Mirion",
+] as string[] {
+	val currentAddon = <industrialforegoing:range_addon>.definition.makeStack(i);
+
+	# Main crafting method
+	craft.remake(currentAddon, ["pretty",
+		"▬ R ▬",
+		"▬ □ ▬",
+		"▬ R ▬"], {
+		"□": <integratedterminals:menril_glass>,
+		"R": <ore:itemRubber>,     # Plastic
+		"▬": oreDict.get("ingot" ~ oreName),
+	});
+
+	if(i==0) continue;
+	# Upgrade is 9x times cheaper
+	craft.make(currentAddon, ["pretty",
+		"▬ R ▬",
+		"▬ □ ▬",
+		"▬ R ▬"], {
+		"□": <industrialforegoing:range_addon>.definition.makeStack(i - 1),
+		"R": <ore:itemRubber>,     # Plastic
+		"▬": oreDict.get("nugget" ~ oreName),
+	});
+}

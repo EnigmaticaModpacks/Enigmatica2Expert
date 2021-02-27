@@ -3,17 +3,21 @@ import crafttweaker.item.IItemStack;
 
 #modloaded conarm
 
-function remakeResistance(name as string, item as IItemStack, primary as IIngredient){
-	remake(name, item, 
-		[[<ore:blockDarkSteel>, primary, <ore:blockDarkSteel>],
-		[primary, <ore:myrmexResinGlass>, primary], 
-		[<ore:blockDarkSteel>, primary, <ore:blockDarkSteel>]]);
+function remakeResistance(item as IItemStack, primary as IIngredient){
+	craft.remake(item, ["pretty",
+		"▬ B ▬",
+		"B R B",
+		"▬ B ▬"], {
+		"B": primary,
+		"R": <ore:myrmexResinGlass>, # Desert Myrmex Resin Glass
+		"▬": <ore:ingotDarkSteel>,   # Dark Steel Ingot
+	});
 }
 
-remakeResistance("conarm_resist_mat", 	    <conarm:resist_mat>,  	   <ore:ingotHSLASteel>);
-remakeResistance("conarm_resist_mat_fire",  <conarm:resist_mat_fire>,  <ore:dragonscaleBlock>);
-remakeResistance("conarm_resist_mat_proj",  <conarm:resist_mat_proj>,  <ore:deathwormChitin>);
-remakeResistance("conarm_resist_mat_blast", <conarm:resist_mat_blast>, <ore:seaSerpentScaleBlock>);
+remakeResistance(<conarm:resist_mat>,  	    <ore:ingotHSLASteel>);
+remakeResistance(<conarm:resist_mat_fire>,  <ore:itemBeeswax>);
+remakeResistance(<conarm:resist_mat_proj>,  <ore:dragonscales>);
+remakeResistance(<conarm:resist_mat_blast>, <ore:dustAsh>);
 
 remake("Travel Belt Base", <conarm:travel_belt_base>, [
 	[null, <ore:string>, null],

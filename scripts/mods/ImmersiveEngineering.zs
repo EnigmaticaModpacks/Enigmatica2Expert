@@ -49,7 +49,7 @@ import crafttweaker.potions.IPotionEffect;
 
 # Sulfur Unification
   mods.immersiveengineering.Crusher.removeRecipe(<minecraft:blaze_powder>);
-  scripts.wrap.immersiveengineering.Crusher.addRecipe(<minecraft:blaze_powder> * 4, <ore:itemBlazeRod>, 2048, <thermalfoundation:material:771>, 0.5);
+  scripts.wrap.immersiveengineering.Crusher.addRecipe(<minecraft:blaze_powder> * 4, <ore:rodBlaze>, 2048, <thermalfoundation:material:771>, 0.5);
 
 # Aluminum Scaffolding
 	recipes.remove(<immersiveengineering:metal_decoration2:8>);

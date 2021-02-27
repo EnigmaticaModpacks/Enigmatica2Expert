@@ -7,8 +7,7 @@ recipes.addShaped("Morphing Tool", <morphtool:tool>, [
 	[<ore:ingotFakeIron>, null, null]]);
 
 # Super Morph-O-Tool
-	recipes.addShaped("Superwrench", 
-	<morphtool:tool>.withTag({"morphtool:is_morphing": 1 as byte, "morphtool:data": {
+val superMOT = <morphtool:tool>.withTag({"morphtool:is_morphing": 1 as byte, "morphtool:data": {
 	rftools:             {id:"rftools:smartwrench", Count: 1 as byte, Damage: 0 as short},
 	bigreactors:         {id:"bigreactors:wrench", Count: 1 as byte, Damage: 0 as short},
 	botania:             {id:"botania:twigwand", Count: 1 as byte, tag: {color1: 9, color2: 9}, Damage: 0 as short},
@@ -29,7 +28,11 @@ recipes.addShaped("Morphing Tool", <morphtool:tool>, [
 	environmentaltech:   {id:"environmentaltech:tool_multiblock_assembler", Count: 1 as byte, Damage: 0 as short},
 	mekanism:            {id:"mekanism:configurator", Count: 1 as byte, Damage: 0 as short},
 	immersiveengineering:{id:"immersiveengineering:tool", Count: 1 as byte, Damage: 0 as short}
-	}}),
-	[[null, <ore:gearCopper>, null],
+	},
+});
+
+recipes.addShaped("Superwrench", superMOT, [
+	[null, <ore:gearCopper>, null],
 	[<ore:gearSilver>, <morphtool:tool>, <ore:gearTin>], 
-	[null, <ore:gearLead>, null]]);
+	[null, <ore:gearLead>, null]
+]);
