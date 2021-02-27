@@ -1,5 +1,50 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
+# 0.19
+ 
+## 🟢 New Mods
+
+Icon | Summary
+------:|:------
+<img src="https://media.forgecdn.net/avatars/thumbnails/220/560/64/64/637020934015742854.png" width="50"> | [**Requious Frakto**](https://www.curseforge.com/minecraft/mc-mods/requious-frakto)  <br> This is a techmod. It contains whatever you configure it to contain.
+
+## ✏️ Recipes
+
+  - ![](https://git.io/JtNT1 "Vision Helmet") Remove and Hide
+  - ![](https://git.io/JtNTD "V.I.E.W. X (Vaultopic Inventory Explorer Workbot eXtended)") Change recipe out from Crafting Table
+  - ![](https://git.io/JLhhY "Galactic Potato") make cheaper
+  - ![](https://git.io/JtNTi "Impregnated Casing") from Any Log
+  - ![](https://git.io/JtNTM "Scented Paneling") from Any plank
+  - ![](https://git.io/JtN5b "Range Addon") Harder (and all other range addons)
+  - ![](https://git.io/JtNTy "Plant Gatherer") Harder
+  - ![](https://git.io/Jtd0k "Projectile Resistance") Cheaper
+
+
+
+## 🔵 Mods
+
+- ### 🐝 Forestry
+
+  - Bee Diversity initial: farm time in bottle from bees
+
+- ### 💘 Scalling Heals
+
+  - Disable Damage boost for blights
+  - Reduce x2 speed boost for blights
+  - No scalling in technical dims (Storage Cell, Spectre, etc)
+  - Reduce by half health and damage scalling by difficulty, includes animals
+  - Reduce distance scalling x5 times
+
+- ### 🏪 Requious Fracto
+
+  - JEI integration:
+    > - Liquid interactions
+    > - Everflow Chalice
+    > - Infernal Furnace
+
+
+
+
 # 0.18
  
 ## 🟢 New Mods
