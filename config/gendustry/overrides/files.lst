@@ -1,0 +1,7 @@
+# List of internal config files to load
+
+tuning.cfg
+recipes.cfg
+upgrades.cfg
+bees_color.cfg
+bees_patreon.cfg
