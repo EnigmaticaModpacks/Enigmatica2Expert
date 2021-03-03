@@ -19,13 +19,16 @@ import mods.jei.JEI.removeAndHide as rh;
 	[<integrateddynamics:crystalized_menril_block>, <integrateddynamics:energy_battery>.withTag({}), <integrateddynamics:crystalized_menril_block>], 
 	[<integrateddynamics:crystalized_menril_chunk>, <ic2:te:46>, <integrateddynamics:crystalized_menril_chunk>]]);
 
-# Mechanical Squeezer
-	recipes.remove(<integrateddynamics:mechanical_squeezer>);
-	recipes.addShapedMirrored("IntegratedDynamics Mechanical Squeezer", 
-	<integrateddynamics:mechanical_squeezer>, 
-	[[<ore:dustDiamond>, <integrateddynamics:squeezer>, <ore:dustDiamond>],
-	[<integrateddynamics:energy_battery>.withTag({}), <integrateddynamics:squeezer>, <integrateddynamics:energy_battery>.withTag({})], 
-	[<ore:plateObsidian>, <integrateddynamics:squeezer>, <ore:plateObsidian>]]);
+# [Mechanical Squeezer] from [Diamond Gear][+3]
+craft.remake(<integrateddynamics:mechanical_squeezer>, ["pretty",
+  "i S i",
+  "Ϟ S Ϟ",
+  "D S D"], {
+  "S": <integrateddynamics:squeezer>, # Squeezer
+  "D": <ore:plateDenseObsidian>,      # Dense Obsidian Plate
+  "i": <ore:gearDiamond>,             # Diamond Gear
+  "Ϟ": <integrateddynamics:energy_battery>.withTag({}), # Energy Battery
+});
 
 # Mechanical Drying Basin
 	recipes.remove(<integrateddynamics:mechanical_drying_basin>);
@@ -90,11 +93,42 @@ craft.remake(<integrateddynamics:variable_transformer:1> * 4, ["pretty",
 
 # [Mono-Directional Connector] from [Manyullyn Item Frame][+3]
 craft.remake(<integrateddynamics:part_connector_mono_directional_item>, ["pretty",
-  "  O  ",
+  "L O L",
   "L M L",
-  "  I  "], {
+  "L I L"], {
   "I": <integrateddynamics:variable_transformer:1>, # Input Variable Transformer
   "L": <integrateddynamics:cable>,                  # Logic Cable
-  "M": <tconstruct:fancy_frame:4>,                  # Manyullyn Item Frame
+  "M": <ore:ingotManyullyn>,
   "O": <integrateddynamics:variable_transformer>,   # Output Variable Transformer
+});
+
+# Alternative for easy stacking 50 batteries
+# [Energy Battery] from [Block of Redstone][+2]
+craft.remake(<integrateddynamics:energy_battery>.withTag({energy: 0, capacity: 5000000}), ["pretty",
+  "□ ◘ □",
+  "□ ♥ □",
+  "□ ◘ □"], {
+  "♥": compressIt(<minecraft:redstone_block>, 2),
+  "□": compressIt(<integrateddynamics:crystalized_menril_block>, 1), # Block of Crystalized Menril
+  "◘": <integrateddynamics:crystalized_chorus_block>, # Block of Crystalized Chorus
+});
+
+# [Logic Cable] from [Redstone][+2]
+craft.remake(<integrateddynamics:cable>, ["pretty",
+  "C # C",
+  "C ♥ C",
+  "C # C"], {
+  "C": <integrateddynamics:crystalized_menril_chunk>, # Crystalized Menril Chunk
+  "#": <ore:stickWood>, # Stick
+  "♥": <ore:dustRedstone>, # Redstone
+});
+
+# [Logic Cable*6] from [Redstone][+2]
+craft.make(<integrateddynamics:cable> * 4, ["pretty",
+  "C B C",
+  "C ♥ C",
+  "C B C"], {
+  "B": <tconstruct:materials:18>, # Ball of Moss
+  "C": <integrateddynamics:crystalized_menril_chunk>, # Crystalized Menril Chunk
+  "♥": <ore:dustRedstone>, # Redstone
 });

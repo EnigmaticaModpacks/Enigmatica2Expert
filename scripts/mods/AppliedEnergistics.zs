@@ -1,6 +1,7 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.item.IIngredient as IIngredient;
 import mods.jei.JEI.removeAndHide as rh;
+import scripts.craft.grid.Grid;
 #modloaded appliedenergistics2
 	
 	var pearlFluix = <ore:pearlFluix>;
@@ -215,13 +216,31 @@ craft.remake(<appliedenergistics2:molecular_assembler>, ["pretty",
 		[<appliedenergistics2:energy_cell>, <appliedenergistics2:part:76>, <appliedenergistics2:energy_cell>], 
 		[<appliedenergistics2:material:22>, <appliedenergistics2:energy_cell>, <appliedenergistics2:material:23>]]);
 
-		recipes.remove(controller);
-		recipes.addShaped("ME Controller", 
-		controller, 
-		[[<appliedenergistics2:smooth_sky_stone_block>, <advancedrocketry:ic:3>, <appliedenergistics2:smooth_sky_stone_block>],
-		[<appliedenergistics2:fluix_block>, <appliedenergistics2:energy_acceptor>, <appliedenergistics2:fluix_block>], 
-		[<teslacorelib:machine_case>, pearlFluix, <teslacorelib:machine_case>]]);
+		# [ME Controller] from [Energy Acceptor][+5]
+		craft.remake(<appliedenergistics2:controller>, ["pretty",
+			"C o C",
+			"F Ϟ F",
+			"M A M"], {
+			"A": <appliedenergistics2:material:28>,     # Advanced Card
+			"C": <contenttweaker:compressed_crushed_skystone>, # Compressed Crushed Skystone
+			"F": <ore:pearlFluix>,                      # Fluix Pearl
+			"M": <thermalexpansion:frame>,              # Machine Frame
+			"Ϟ": <appliedenergistics2:energy_acceptor>, # Energy Acceptor
+			"o": <advancedrocketry:ic:3>,               # Control Circuit Board
+		});
 	}
+
+# [Advanced Card*2] from [Calculation Processor][+3]
+craft.remake(<appliedenergistics2:material:28> * 2, ["pretty",
+  "▲ ▬  ",
+  "♥ C ▬",
+  "▲ ▬  "], {
+  "▲": <ore:dustCryotheum>,               # Cryotheum Dust
+  "C": <appliedenergistics2:material:23>, # Calculation Processor
+  "♥": <ore:ingotRedstoneAlloy>,          # Redstone Alloy Ingot
+  "▬": <ore:ingotElectricalSteel>,        # Electrical Steel Ingot
+});
+
 
 # Add ore for Better Questing
 <ore:craftingStorageAny>.add([
@@ -345,3 +364,31 @@ val aeMat = <appliedenergistics2:material>.definition;
 scripts.processUtils.avdRockXmlRecipe("PrecisionAssembler", circIngrs + aeMat.makeStack(18), null, [aeMat.makeStack(22)], null);
 scripts.processUtils.avdRockXmlRecipe("PrecisionAssembler", circIngrs + aeMat.makeStack(17), null, [aeMat.makeStack(24)], null);
 scripts.processUtils.avdRockXmlRecipe("PrecisionAssembler", circIngrs + aeMat.makeStack(16), null, [aeMat.makeStack(23)], null);
+
+# ---------------------------------------------------------
+# Make Quartz glass harder and then Show through fabricator
+
+recipes.remove(<appliedenergistics2:quartz_glass>);
+
+# [Quartz Glass*2] from [Glass][+1]
+craft.make(<appliedenergistics2:quartz_glass> * 2, ["pretty",
+  "• □ •",
+  "□ • □",
+  "• □ •"], {
+  "□": <ore:blockGlass>, # Glass
+  "•": <ore:dustQuartz> | <ore:dustCertusQuartz>,
+});
+
+# [Quartz Glass*8] from [Nether Quartz Dust]
+val qglass_grid = ["pretty",
+  "• • •",
+  "•   •",
+  "• • •"] as string[];
+scripts.wrap.forestry.ThermionicFabricator.addCast(<appliedenergistics2:quartz_glass> * 10, Grid(qglass_grid, {
+  "•": <ore:dustQuartz>,
+}).shaped(), <liquid: glass> * 1000, <forestry:wax_cast:*>);
+scripts.wrap.forestry.ThermionicFabricator.addCast(<appliedenergistics2:quartz_glass> * 10, Grid(qglass_grid, {
+  "•": <ore:dustCertusQuartz>,
+}).shaped(), <liquid: glass> * 1000, <forestry:wax_cast:*>);
+
+# ---------------------------------------------------------

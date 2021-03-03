@@ -218,7 +218,7 @@ for input, output in itemsToUnify {
 	<mekanismgenerators:generator:6>, 
 	[[<ore:ingotOsmium>, <immersiveengineering:wooden_device1:1>, <ore:ingotOsmium>],
 	[<ore:ingotOsmium>, <ore:alloyAdvanced>, <ore:ingotOsmium>], 
-	[<thermalfoundation:material:640>, <ore:circuitBasic>, <thermalfoundation:material:640>]]);
+	[<ore:plateElectrum>, <ore:circuitBasic>, <ore:plateElectrum>]]);
 
 # Solar Generator
 	recipes.remove(<mekanismgenerators:generator:1>);

@@ -6,6 +6,7 @@ import mods.alfinivia.ImmersiveEngineering.addRailgunBullet;
 import mods.alfinivia.ImmersiveEngineering.addLiquidFertilizer;
 import mods.alfinivia.ImmersiveEngineering.addItemFertilizer;
 import crafttweaker.potions.IPotionEffect;
+import scripts.craft.grid.Grid;
 
 
 
@@ -470,3 +471,28 @@ craft.remake(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveen
   "▬": <ore:ingotFakeIron>, # Iron Alloy Ingot
   remove: <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 8, # Conveyor Belt
 });
+
+
+# ---------------------------------------------------------
+# Wax cast alternative for Insulating glass
+
+recipes.remove(<immersiveengineering:stone_decoration:8>);
+
+# [Insulating Glass*4] from [Cactus Green][+1]
+craft.make(<immersiveengineering:stone_decoration:8>, ["pretty",
+  "  □  ",
+  "▲ d ▲",
+  "  □  "], {
+  "□": <ore:blockGlass>, # Glass
+  "▲": <ore:dustIron>,   # Pulverized Iron
+  "d": <ore:dyeGreen>,   # Cactus Green
+});
+
+# [Insulating Glass*4] from [Cactus Green][+1]
+scripts.wrap.forestry.ThermionicFabricator.addCast(<immersiveengineering:stone_decoration:8> * 6, Grid([
+  "▲d▲"], {
+  "▲": <ore:dustIron>, # Pulverized Iron
+  "d": <ore:dyeGreen>, # Cactus Green
+}).shaped(), <liquid: glass> * 1000, <forestry:wax_cast:*>);
+
+# ---------------------------------------------------------

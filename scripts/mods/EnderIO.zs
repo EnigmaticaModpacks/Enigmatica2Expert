@@ -290,7 +290,6 @@ val fake_iron_variations =
 
 # EnderIO simple alloys
 solution([<ore:dustBedrock>, fake_iron_variations      			       ], [<liquid:iron>      *72 ], [<liquid:construction_alloy>*216], [0.5, 1,    2700], "only: highoven");
-solution([<ore:dustBedrock>, <ore:dustObsidian>                    ], [<liquid:steel>     *144], [<liquid:dark_steel>        *144], [0.5, 1,    5500], "only: highoven");
 solution([<ore:dustBedrock>, <ore:dustEndstone>, <ore:dustObsidian>], [<liquid:dark_steel>*144], [<liquid:end_steel>         *144], [0.5, 1, 1, 5500], "only: highoven");
 solution([<ore:dustBedrock>, <ore:dustRedstone>                    ], [<liquid:iron>      *144], [<liquid:conductive_iron>   *144], [0.5, 1,    4200], "only: highoven");
 

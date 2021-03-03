@@ -68,22 +68,17 @@ import mods.jei.JEI.removeAndHide as rh;
     [<modularmachinery:blockcasing>, <mekanismgenerators:generator:12>, <modularmachinery:blockcasing>], 
     [<ic2:overclocked_heat_vent>, <modularmachinery:blockcasing>, <ic2:overclocked_heat_vent>]]);
 
-# Machine Controller
-    if (!isNull(itemUtils.getItem("appliedenergistics2:controller"))) {
-      recipes.remove(<modularmachinery:blockcontroller>);
-      recipes.addShaped("Modular Controller", 
-      <modularmachinery:blockcontroller>, 
-      [[<forestry:chipsets:1>.withTag({T:1 as short}, false), <rftools:screen>, <forestry:chipsets:1>.withTag({T:1 as short}, false)],
-      [<modularmachinery:blockcasing>, itemUtils.getItem("appliedenergistics2:controller"), <modularmachinery:blockcasing>], 
-      [null, <modularmachinery:blockcasing>, null]]);
-    } else {
-      recipes.remove(<modularmachinery:blockcontroller>);
-      recipes.addShaped("Modular Controller",
-      <modularmachinery:blockcontroller>,
-      [[<forestry:chipsets:1>.withTag({T:1 as short}, false), <rftools:screen>, <forestry:chipsets:1>.withTag({T:1 as short}, false)],
-      [<modularmachinery:blockcasing>, <appliedenergistics2:energy_acceptor>, <modularmachinery:blockcasing>],
-      [null, <modularmachinery:blockcasing>, null]]);
-    }
+# [Machine Controller] from [Machine Frame][+4]
+craft.remake(<modularmachinery:blockcontroller>, ["pretty",
+    "E S E",
+    "M a M",
+    "C M C"], {
+    "a": <rftools:machine_frame>,        # Machine Frame
+    "C": <advancedrocketry:ic:3>,        # Control Circuit Board
+    "S": <rftools:screen>,               # Screen
+    "E": <forestry:chipsets:1>.withTag({T: 1 as short}), # Enhanced Circuit Board
+    "M": <modularmachinery:blockcasing>, # Machine Casing
+});
 
 # Machine Casing
     recipes.remove(<modularmachinery:blockcasing>);

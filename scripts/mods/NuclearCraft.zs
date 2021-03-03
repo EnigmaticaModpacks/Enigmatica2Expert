@@ -58,6 +58,18 @@ mods.nuclearcraft.melter.addRecipe(<ore:obsidian>, <liquid:obsidian> * 144);
 	[<ore:plateBasic>, <nuclearcraft:lithium_ion_cell>, <ore:plateBasic>]
 	]);
 
+# [Alloy Furnace] from [Electric Furnace][+4]
+craft.remake(<nuclearcraft:alloy_furnace_idle>, ["pretty",
+  "B | B",
+  "b E b",
+  "B C B"], {
+  "B": <ore:plateBasic>,     # Basic Plating
+  "b": <ore:bioplastic>,     # Bioplastic
+  "C": <ore:solenoidCopper>, # Copper Solenoid
+  "E": <ic2:te:44>,          # Electric Furnace
+  "|": <ic2:crafting:42>,    # Shaft (Bronze)
+});
+
 # Add missing ingots/bricks to ingot former
 	//Brick
 	mods.nuclearcraft.ingot_former.addRecipe([<liquid:clay>*144, <minecraft:brick>, 1.0, 1.0]);

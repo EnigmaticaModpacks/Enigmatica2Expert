@@ -4,6 +4,7 @@ import crafttweaker.liquid.ILiquidStack;
 import mods.jei.JEI.removeAndHide;
 import crafttweaker.recipes.IRecipeFunction;
 import crafttweaker.data.IData;
+import scripts.craft.grid.Grid;
 #modloaded thermalexpansion
 
 # Planks/Slabs -> Sticks
@@ -54,12 +55,18 @@ for slab in <ore:slabWood>.items {
 	[<ore:ingotInvar>, <thermalexpansion:frame:64>, <ore:ingotInvar>], 
 	[<ore:gearCopper>, <immersiveengineering:metal_decoration0>, <ore:gearCopper>]]);
 
-# Reinforced Cell Frame (Empty)
-	recipes.addShapedMirrored("Reinforced Cell Frame", 
-	<thermalexpansion:frame:130>, 
-	[[<ore:gearSilver>, <thermalfoundation:material:515>, <ore:gearSilver>],
-	[<ore:plateElectrumFlux>, <thermalexpansion:frame:129>, <ore:plateElectrumFlux>], 
-	[<ore:gemCrystalFlux>, <tconstruct:large_plate>.withTag({Material: "electrum"}), <ore:gemCrystalFlux>]]);
+# [Reinforced Cell Frame (Empty)] from [Hardened Cell Frame][+5]
+craft.make(<thermalexpansion:frame:130>, ["pretty",
+  "S ♥ S",
+  "E H E",
+  "T ☼ T"], {
+  "S": <ore:gearSilver>,                 # Silver Gear
+  "T": <thermalfoundation:material:640>, # Tool Casing
+  "E": <ore:plateElectrumFlux>,          # Fluxed Electrum Plate
+  "♥": <thermalfoundation:material:515>, # Redstone Conductance Coil
+  "H": <thermalexpansion:frame:129>,     # Hardened Cell Frame
+  "☼": <ore:gemCrystalFlux>,             # Flux Crystal
+});
 
 # Reinforced Cell Frame (Full)
 	scripts.wrap.thermalexpansion.Transposer.addFillRecipe(<thermalexpansion:frame:146>, <thermalexpansion:frame:130>, <liquid:lumium> * 576, 250000);
@@ -144,7 +151,7 @@ for slab in <ore:slabWood>.items {
 
 # Energy Cell Frame
 	recipes.remove(<thermalexpansion:frame:128>);
-	scripts.wrap.mekanism.infuser.addRecipe("REDSTONE", 400, <thermalexpansion:frame>, <thermalexpansion:frame:128>);
+	scripts.wrap.mekanism.infuser.addRecipe("GLOWSTONE", 400, <thermalexpansion:frame>, <thermalexpansion:frame:128>);
 
 # Machine Frame
 	recipes.remove(<thermalexpansion:frame>);
@@ -529,3 +536,61 @@ for i in 0 to 5 {
 	val reservior as IItemStack = <thermalexpansion:reservoir>.definition.makeStack(i) as IItemStack;
 	utils.clearFluid(reservior);
 }
+
+# [Device Frame] from [Copper Gear][+2]
+recipes.remove(<thermalexpansion:frame:64>);
+scripts.wrap.forestry.ThermionicFabricator.addCast(<thermalexpansion:frame:64>, Grid(["pretty",
+  "▬   ▬",
+  "  C  ",
+  "▬   ▬"], {
+  "C": <ore:gearCopper>, # Copper Gear
+  "▬": <ore:ingotTin>,   # Tin Ingot
+}).shaped(), <liquid: glass> * 1000, <forestry:wax_cast:*>);
+
+# [Augment: Auxiliary Reception Coil] from [Redstone Servo][+2]
+craft.remake(<thermalexpansion:augment:128>, ["pretty",
+  "  E  ",
+  "T ♥ T",
+  "  E  "], {
+  "T": <thermalfoundation:material:640>, # Tool Casing
+  "E": <ore:plateElectrum>,              # Electrum Plate
+  "♥": <thermalfoundation:material:512>, # Redstone Servo
+});
+
+# [Augment: Auxiliary Sieve] from [Redstone Servo][+2]
+craft.remake(<thermalexpansion:augment:129>, ["pretty",
+  "  C  ",
+  "T ♥ T",
+  "  C  "], {
+  "C": <ore:plateConstantan>,            # Constantan Plate
+  "T": <thermalfoundation:material:640>, # Tool Casing
+  "♥": <thermalfoundation:material:512>, # Redstone Servo
+});
+
+# [Augment: Sapling Infuser] from [Redstone Servo][+2]
+craft.remake(<thermalexpansion:augment:323>, ["pretty",
+  "  L  ",
+  "T ♥ T",
+  "  L  "], {
+  "T": <thermalfoundation:material:640>, # Tool Casing
+  "♥": <thermalfoundation:material:512>, # Redstone Servo
+  "L": <ore:plateLumium>,                # Lumium Plate
+});
+
+# [Tool Casing] from [Block of Black Quartz][+2]
+craft.remake(<thermalfoundation:material:640>, ["pretty",
+  "R   R",
+  "E • E"], {
+  "R": <thermalfoundation:material:832>, # Rosin
+  "•": <ore:blockQuartzBlack>, # Block of Black Quartz
+  "E": <tconstruct:large_plate>.withTag({Material: "electrum"}), # Electrum Large Plate
+});
+
+# [Tool Casing*8] from [Block of Black Quartz][+2]
+craft.make(<thermalfoundation:material:640> * 8, ["pretty",
+  "R   R",
+  "E • E"], {
+  "R": <ore:dropRoyalJelly>,                # Royal Jelly
+  "•": <ore:blockQuartzBlack>, # Block of Black Quartz
+  "E": <tconstruct:large_plate>.withTag({Material: "electrum"}), # Electrum Large Plate
+});

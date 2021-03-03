@@ -171,7 +171,7 @@ for item in coals {
 
 
 # Slime Boots remove and hide (replaced by Conarm)
-	for i in 0 to 5 {
+	for i in 0 to 6 {
 		rh(itemUtils.getItem("tconstruct:slime_boots", i));
 	}
 
@@ -404,3 +404,18 @@ craft.remake(<tconstruct:firewood:1>, ["pretty",
 
 # Nerf stone torch light level
 <tconstruct:stone_torch>.asBlock().definition.lightLevel = 0.75f;
+
+# [Silky Cloth] from [Pulverized Gold][+1]
+craft.reshapeless(<tconstruct:materials:15>, "S▲", {
+  "▲": <ore:dustGold>,                 # Pulverized Gold
+  "S": <forestry:crafting_material:2>, # Silk Wisp
+});
+
+# Remake to avoid recipe conflict with Compressed Mossy Stone
+# [Ball of Moss] from [Moss Stone]
+craft.remake(<tconstruct:materials:18>, ["pretty",
+  "□ □ □",
+  "□   □",
+  "□ □ □"], {
+  "□": <ore:blockMossy>, # Moss Stone
+});

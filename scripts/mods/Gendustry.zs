@@ -9,7 +9,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	recipes.addShapedMirrored("Genetics Processor", 
 	<gendustry:genetics_processor> * 2, 
 	[[<appliedenergistics2:material:17>, <appliedenergistics2:material:11>, <appliedenergistics2:material:17>],
-	[<ore:circuitAdvanced>, <ore:materialEnderPearl>, <ore:circuitAdvanced>], 
+	[<ore:circuitAdvanced>, <ore:nuggetEnderium>, <ore:circuitAdvanced>], 
 	[<appliedenergistics2:material:17>, <appliedenergistics2:material:11>, <appliedenergistics2:material:17>]]);
 	
 # Environmental Processor
@@ -32,17 +32,17 @@ import mods.jei.JEI.removeAndHide as rh;
 	recipes.remove(<gendustry:upgrade_frame>);
 	recipes.addShaped("Upgrade Frame", 
 	<gendustry:upgrade_frame> * 2, 
-	[[<ore:plateDenseTin>, <ore:alloyBasic>, <ore:plateDenseTin>],
-	[<ore:alloyBasic>, <industrialforegoing:range_addon:*>, <ore:alloyBasic>], 
-	[<ore:plateDenseTin>, <ore:alloyBasic>, <ore:plateDenseTin>]]);
+	[[<ore:plateDenseTin>, <ore:plateSilicon>, <ore:plateDenseTin>],
+	[<ore:plateSilicon>, <industrialforegoing:range_addon:*>, <ore:plateSilicon>], 
+	[<ore:plateDenseTin>, <ore:plateSilicon>, <ore:plateDenseTin>]]);
 	
 # Power Module
 	recipes.remove(<gendustry:power_module>);
 	recipes.addShaped("Power Module", 
 	<gendustry:power_module>, 
-	[[<ore:gearBronze>, <ore:alloyBasic>, <ore:gearBronze>],
-	[<ore:alloyBasic>, <mekanism:energycube>, <ore:alloyBasic>], 
-	[<ore:gearBronze>, <ore:alloyBasic>, <ore:gearBronze>]]);
+	[[<ore:gearBronze>, <ore:gemAmber>, <ore:gearBronze>],
+	[<ore:gemAmber>, <mekanism:energycube>, <ore:gemAmber>], 
+	[<ore:gearBronze>, <ore:gemAmber>, <ore:gearBronze>]]);
 
 # Harded labware
 craft.make(<gendustry:labware> * 16, ["pretty",

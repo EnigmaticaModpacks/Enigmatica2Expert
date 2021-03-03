@@ -41,6 +41,7 @@ function fluidDict(ins as string[]) {
 	fluidDict(honey);
 
 	fluidDict(["ic2milk", "milk"]);
+	fluidDict(["if.protein", "protein"]);
 
 # Protein Reactor, additional entires
 	for item in <ore:listAllmeatraw>.items {
@@ -250,9 +251,9 @@ for i, oreName in [
 	"RefinedGlowstone",
 	"ElectricalSteel",
 	"ElectrumFlux",
-	"Osmiridium",
 	"EssenceMetal",
 	"Enderium",
+	"Osmiridium",
 	"Mirion",
 ] as string[] {
 	val currentAddon = <industrialforegoing:range_addon>.definition.makeStack(i);

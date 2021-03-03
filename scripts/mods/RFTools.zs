@@ -1,4 +1,5 @@
 #modloaded rftools
+import crafttweaker.item.IIngredient;
 	
 # Mooshroom Syringe
 	recipes.addShapeless("Mooshroom Syringe", 
@@ -151,29 +152,52 @@ recipes.addShaped(<rftools:powercell_card> * 4, [
 	[<computercraft:printout>, <rats:charged_creeper_chunk>, <computercraft:printout>],
 	[<ore:dustEndstone>, <computercraft:printout>, <ore:dustEndstone>]]);
 
-# Power cells
-val iWireless = <ore:dustDimensional>;
-val iGate = <biomesoplenty:crystal_shard>;
-val iPower = <ore:dustEndstone>;
-remake("rftools powercell_simple", <rftools:powercell_simple>, [
-	[iPower, iWireless, iPower], 
-	[<minecraft:quartz>, <rftools:machine_frame>, <minecraft:quartz>], 
-	[iPower, iWireless, iPower]]);
+# ------------------------------------------------
+# Power Cells
 
-remake("rftools powercell_normal", <rftools:powercell>, [
-	[<deepmoblearning:soot_covered_redstone>, iWireless, <deepmoblearning:soot_covered_redstone>],
-	 [iGate, <rftools:powercell_simple>, iGate], 
-	 [<deepmoblearning:soot_covered_redstone>, <minecraft:emerald>, <deepmoblearning:soot_covered_redstone>]]);
+val powercellsIngrs = {
+  "♠": <ore:dustEndstone>,            # Crushed End Stone
+  "P": <rftools:powercell>,           # Powercell
+  "▲": <ore:dustDimensional>,         # Dimensional Blend
+  "S": <cyclicmagic:soulstone>,       # Soulstone
+  "I": <rftools:infused_diamond>,     # Infused Diamond
+  "i": <rftools:powercell_simple>,    # Simple Powercell
+  "☼": <biomesoplenty:crystal_shard>, # Celestial Crystal Shard
+  "▬": <biomesoplenty:crystal>,
+  "M": <rftools:machine_frame>,       # Machine Frame
+} as IIngredient[string];
 
-remake("rftools powercell", <rftools:powercell>, [
-	[iPower, iWireless, iPower], 
-	[iGate, <rftools:machine_frame>, iGate], 
-	[iPower, <minecraft:emerald>, iPower]]);
 
-remake("rftools powercell_advanced", <rftools:powercell_advanced>, [
-	[iPower, <rftools:infused_diamond>, iPower], 
-	[<rftools:infused_diamond>, <rftools:powercell>, <rftools:infused_diamond>], 
-	[iPower, <rftools:infused_diamond>, iPower]]);
+# [Simple Powercell*2] from [Soulstone][+3]
+recipes.remove(<rftools:powercell_simple>);
+craft.make(<rftools:powercell_simple> * 2, ["pretty",
+  "▲ ♠ ▲",
+  "M S M",
+  "▲ ♠ ▲"], powercellsIngrs
+);
+
+# [Powercell] from [Simple Powercell][+2]
+recipes.remove(<rftools:powercell>);
+craft.make(<rftools:powercell>, ["pretty",
+  "▲ ☼ ▲",
+  "☼ S ☼",
+  "▲ ☼ ▲"], powercellsIngrs
+);
+
+# [Powercell*2] from [Soulstone][+3]
+craft.make(<rftools:powercell> * 2, ["pretty",
+  "▲ ▬ ▲",
+  "M S M",
+  "▲ ▬ ▲"], powercellsIngrs
+);
+
+# [Advanced Powercell] from [Powercell][+2]
+recipes.remove(<rftools:powercell_advanced>);
+craft.make(<rftools:powercell_advanced>, ["pretty",
+  "▲ I ▲",
+  "I P I",
+  "▲ I ▲"], powercellsIngrs
+);
 
 # Matter beamer
 remake("rftools matter_beamer", <rftools:matter_beamer>, [

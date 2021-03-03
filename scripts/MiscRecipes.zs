@@ -264,29 +264,44 @@ import scripts.craft.grid.Grid;
 # Chest to chest
 	recipes.addShapeless("Chest Conversion", <minecraft:chest> * 2, [<ore:chest>, <ore:chest>]);
 
-# EnderStorage Ender Chest
-	recipes.remove(<enderstorage:ender_storage>);
-	recipes.addShapedMirrored("Ender Chest", 
-	<enderstorage:ender_storage>, 
-	[[<ore:rodBlaze>, <darkutils:material>, <ore:rodBlaze>],
-	[<ore:obsidian>, <minecraft:ender_chest>, <ore:obsidian>], 
-	[<ore:ingotArdite>, <ore:enderpearl>, <ore:ingotArdite>]]);
+# [Ender Chest] from [Ender Chest][+5]
+craft.remake(<enderstorage:ender_storage>, ["pretty",
+  "C E C",
+  "M n M",
+  "▬ ▲ ▬"], {
+  "▲": <ore:dustWither>,          # Wither Ash
+  "C": <minecraft:web>,           # Cobweb
+  "E": <ore:nuggetEnderium>,      # Enderium Nugget
+  "▬": <ore:ingotArdite>,         # Ardite Ingot
+  "M": <tconstruct:materials:19>, # Mending Moss
+  "n": <ore:chestEnder>,          # Ender Chest
+});
 
-# EnderStorage Ender Tank
-	recipes.remove(<enderstorage:ender_storage:1>);
-	recipes.addShapedMirrored("Ender Tank",
-	<enderstorage:ender_storage:1>, 
-	[[<ore:ingotArdite>, <darkutils:material>, <ore:ingotArdite>],
-	[<ore:obsidian>, <minecraft:cauldron>, <ore:obsidian>], 
-	[<ore:rodBlaze>, <ore:enderpearl>, <ore:rodBlaze>]]);
+# [Ender Tank] from [Crucible][+5]
+craft.remake(<enderstorage:ender_storage:1>, ["pretty",
+  "C E C",
+  "M r M",
+  "▬ ▲ ▬"], {
+  "▲": <ore:dustWither>,          # Wither Ash
+  "r": <thaumcraft:crucible>,     # Crucible
+  "C": <minecraft:web>,           # Cobweb
+  "E": <ore:nuggetEnderium>,      # Enderium Nugget
+  "▬": <ore:ingotArdite>,         # Ardite Ingot
+  "M": <tconstruct:materials:19>, # Mending Moss
+});
 
-# Ender Pouch
-	recipes.remove(<enderstorage:ender_pouch>);
-	recipes.addShapedMirrored("Ender Pouch", 
-	<enderstorage:ender_pouch>, 
-	[[<ore:powderBlaze>, <harvestcraft:hardenedleatheritem>, <ore:powderBlaze>],
-	[<harvestcraft:hardenedleatheritem>, <ore:enderpearl>, <harvestcraft:hardenedleatheritem>], 
-	[<ore:ingotArdite>, <darkutils:material>, <ore:ingotArdite>]]);
+# [Ender Pouch] from [Mending Moss][+5]
+craft.remake(<enderstorage:ender_pouch>, ["pretty",
+  "C E C",
+  "H M H",
+  "▬ ▲ ▬"], {
+  "▲": <ore:dustWither>,                   # Wither Ash
+  "C": <minecraft:web>,                    # Cobweb
+  "E": <extendedcrafting:material:37>,     # Ender Nugget
+  "H": <harvestcraft:hardenedleatheritem>, # Hardened Leather
+  "▬": <ore:ingotArdite>,                  # Ardite Ingot
+  "M": <tconstruct:materials:19>,          # Mending Moss
+});
 
 # Cauldron
 	recipes.remove(<minecraft:cauldron>);

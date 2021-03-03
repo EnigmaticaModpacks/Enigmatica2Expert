@@ -71,13 +71,16 @@ import mods.cyclicmagic.Dehydrator;
 	[<ore:gemQuartz>, <ic2:resource:13>, <ore:gemQuartz>], 
 	[<ore:obsidian>, <ore:obsidian>, <ore:obsidian>]]);
 
-# Forester
-	recipes.remove(<cyclicmagic:block_forester>);
-	recipes.addShaped("Cyclic Forester", 
-	<cyclicmagic:block_forester>, 
-	[[<ore:logWood>, <minecraft:dispenser>, <ore:logWood>],
-	[<minecraft:diamond_axe>, <ic2:resource:12>, <minecraft:diamond_axe>], 
-	[<minecraft:furnace>, <minecraft:furnace>, <minecraft:furnace>]]);
+# [Forester] from [Conglomerate Of Coal][+3]
+craft.remake(<cyclicmagic:block_forester>, ["pretty",
+  "▲ § ▲",
+  "# ☺ #",
+  "# # #"], {
+  "▲": <ore:dustAsh>,                         # Ash
+  "#": <forestry:wood_pile>,                  # Wood Pile
+  "§": <randomthings:slimecube>,              # Slime Cube
+  "☺": <contenttweaker:conglomerate_of_coal>, # Conglomerate Of Coal
+});
 
 # Diamond Anvil
 	recipes.remove(<cyclicmagic:block_anvil>);
@@ -163,7 +166,17 @@ craft.remake(<cyclicmagic:charm_boat>, ["pretty",
 
 # ---------------- Animals
 
-
+# [Monster Ball*2] from [Heart Crystal Shard][+3]
+craft.remake(<cyclicmagic:magic_net> * 2, ["pretty",
+  "S G S",
+  "G ☼ G",
+  "C G C"], {
+  "C": <ore:nuggetCobalt>,           # Cobalt Nugget
+  "S": <minecraft:snowball>,         # Snowball
+  "G": <minecraft:tallgrass:*>,      # Grass
+  "☼": <scalinghealth:crystalshard>, # Heart Crystal Shard
+  remove: <cyclicmagic:magic_net>,   # Monster Ball
+});
 
 # Soul stone as T3 crafting ingredient
 recipes.remove(<cyclicmagic:soulstone>);

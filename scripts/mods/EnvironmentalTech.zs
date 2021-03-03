@@ -52,13 +52,30 @@ import scripts.craft.grid.Grid;
 	[<ore:blockTin>, <ore:ingotAlubrass>, <ore:blockTin>], 
 	[<thermalfoundation:material:165>, <ore:blockTin>, <thermalfoundation:material:165>]]);
 
-# Diode
-	recipes.remove(<environmentaltech:diode>);
-	recipes.addShapedMirrored("Diode", 
-	<environmentaltech:diode>, 
-	[[<appliedenergistics2:smooth_sky_stone_block>, <actuallyadditions:block_crystal_empowered:3>, <appliedenergistics2:smooth_sky_stone_block>],
-	[<ore:gearMithril>, <thermalexpansion:frame>, <ore:gearMithril>], 
-	[<appliedenergistics2:smooth_sky_stone_block>, <ic2:crafting:4>, <appliedenergistics2:smooth_sky_stone_block>]]);
+# [Diode] from [Energy Cell Frame][+4]
+craft.remake(<environmentaltech:diode>, ["pretty",
+  "I ☼ I",
+  "M Ϟ M",
+  "I r I"], {
+  "r": <ic2:crafting:4>,             # Iridium Reinforced Plate
+  "I": <mctsmelteryio:iceball>,      # Iceball
+  "☼": <actuallyadditions:block_crystal_empowered:3>, # Empowered Void Crystal Block
+  "M": <ore:gearMithril>,            # Mana Infused Gear
+  "Ϟ": <thermalexpansion:frame:128>, # Energy Cell Frame
+});
+
+# [Diode*2] from [Energy Cell Frame][+4]
+craft.remake(<environmentaltech:diode> * 2, ["pretty",
+  "I ☼ I",
+  "M Ϟ M",
+  "I r I"], {
+  "r": <ic2:crafting:4>,               # Iridium Reinforced Plate
+  "I": <forestry:crafting_material:5>, # Ice Shard
+  "☼": <actuallyadditions:block_crystal_empowered:3>, # Empowered Void Crystal Block
+  "M": <ore:gearMithril>,              # Mana Infused Gear
+  "Ϟ": <thermalexpansion:frame:128>,   # Energy Cell Frame
+  remove: <environmentaltech:diode>,   # Diode
+});
 
 # Litherite
 	recipes.remove(<environmentaltech:litherite_crystal>);

@@ -19,3 +19,13 @@ craft.remake(<capabilityproxy:ranged_capability_proxy>, ["pretty",
   "E": <ore:plateEnderium>,                # Enderium Plate
   "G": <cyclicmagic:card_location>,        # GPS Marker
 });
+
+# [Item Capability Proxy] from [Supremium Ingot][+2]
+craft.remake(<capabilityproxy:item_capability_proxy>, ["pretty",
+  "G ▬ G",
+  "C C C",
+  "G ▬ G"], {
+  "C": <capabilityproxy:capability_proxy>, # Capability Proxy
+  "G": <enderio:block_holy_fog>,           # Glowstone Nano-Particles
+  "▬": <ore:ingotSupremium>,               # Supremium Ingot
+});

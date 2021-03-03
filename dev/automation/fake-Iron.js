@@ -26,7 +26,6 @@ let matchesCount = 0
 const resultArr = []
 
 const whitelist = [
-  '<minecraft:anvil>',
   '<extrautils2:opinium>',
   '<extrautils2:opinium:1>',
   '<immersiveengineering:drillhead:1>',

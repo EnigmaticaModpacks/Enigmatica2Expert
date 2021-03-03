@@ -35,7 +35,6 @@ remakeShaped("extrautils2:opinium_1", <extrautils2:opinium:1>, [[null, <extrauti
 remakeShaped("extrautils2:spike_iron", <extrautils2:spike_iron> * 4, [[null, <minecraft:iron_sword:*>, null], [<minecraft:iron_sword:*>, I, <minecraft:iron_sword:*>], [I, B, I]]);
 remakeShaped("immersiveengineering:tool/drillhead_iron", <immersiveengineering:drillhead:1>, [[I, I, null], [B, B, I], [I, I, null]]);
 remakeShaped("integrateddynamics:squeezer", <integrateddynamics:squeezer>, [[<ore:stickWood>, B, <ore:stickWood>], [<ore:stickWood>, null, <ore:stickWood>], [<ore:plankWood>, I, <ore:plankWood>]]);
-remakeShaped("minecraft:anvil", <minecraft:anvil>, [[B, B, B], [null, I, null], [I, I, I]]);
 remakeShaped("rustic:condenser_advanced", <rustic:condenser_advanced>, [[null, <minecraft:netherbrick>, null], [<minecraft:netherbrick>, <minecraft:bucket>, <minecraft:netherbrick>], [<minecraft:netherbrick>, B, <minecraft:netherbrick>]]);
 remakeShaped("valkyrielib:modifier_component", <valkyrielib:modifier_component> * 4, [[<minecraft:concrete_powder:15>, <ore:dustRedstone>, <minecraft:concrete_powder:15>], [<ore:dustRedstone>, B, <ore:dustRedstone>], [<minecraft:concrete_powder:15>, <ore:dustRedstone>, <minecraft:concrete_powder:15>]]);
 # End of automatically generated recipes

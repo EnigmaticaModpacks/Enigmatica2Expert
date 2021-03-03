@@ -43,13 +43,33 @@ import crafttweaker.item.WeightedItemStack;
 	[<ore:ingotElvenElementium>, <biomesoplenty:terrestrial_artifact>, <ore:ingotElvenElementium>], 
 	[<ore:ingotElvenElementium>, <ore:ingotElvenElementium>, <ore:ingotElvenElementium>]]);
 
-# Terrestrial Artifact
-	recipes.remove(<biomesoplenty:terrestrial_artifact>);
-	recipes.addShapedMirrored("Terrestrial Artifact", 
-	<biomesoplenty:terrestrial_artifact>, 
-	[[<actuallyadditions:item_crystal_empowered>, <actuallyadditions:item_crystal_empowered:4>, <actuallyadditions:item_crystal_empowered>],
-	[<actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:2>, <actuallyadditions:item_crystal_empowered:3>], 
-	[<actuallyadditions:item_crystal_empowered>, <actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_crystal_empowered>]]);
+# [Terrestrial Artifact] from [Empowered Palis Crystal][+6]
+craft.remake(<biomesoplenty:terrestrial_artifact>, ["pretty",
+  "S S S",
+  "p * o",
+  "E ☼ m"], {
+  "S": <actuallyadditions:item_solidified_experience>, # Solidified Experience
+  "p": <actuallyadditions:item_crystal_empowered>,     # Empowered Restonia Crystal
+  "E": <actuallyadditions:item_crystal_empowered:3>,   # Empowered Void Crystal
+  "*": <actuallyadditions:item_crystal_empowered:1>,   # Empowered Palis Crystal
+  "☼": <actuallyadditions:item_crystal_empowered:4>,   # Empowered Emeradic Crystal
+  "m": <actuallyadditions:item_crystal_empowered:5>,   # Empowered Enori Crystal
+  "o": <actuallyadditions:item_crystal_empowered:2>,   # Empowered Diamatine Crystal
+});
+
+# [Terrestrial Artifact Block] from [Empowered Palis Crystal Block][+6]
+craft.remake(<contenttweaker:terrestrial_artifact_block>, ["pretty",
+  "S S S",
+  "◘ ◙ *",
+  "■ □ ☼"], {
+  "S": <actuallyadditions:item_solidified_experience>, # Solidified Experience
+  "■": <actuallyadditions:block_crystal_empowered:3>,  # Empowered Void Crystal Block
+  "□": <actuallyadditions:block_crystal_empowered:4>,  # Empowered Emeradic Crystal Block
+  "◘": <actuallyadditions:block_crystal_empowered>,    # Empowered Restonia Crystal Block
+  "◙": <actuallyadditions:block_crystal_empowered:1>,  # Empowered Palis Crystal Block
+  "*": <actuallyadditions:block_crystal_empowered:2>,  # Empowered Diamatine Crystal Block
+  "☼": <actuallyadditions:block_crystal_empowered:5>,  # Empowered Enori Crystal Block
+});
 
 # BoP Grass, Dirt, and Netherrack.
 	recipes.addShaped("BoP Mycelial Netherrack", <biomesoplenty:grass:8> * 8, [[<ore:netherrack>, <ore:netherrack>, <ore:netherrack>],[<ore:netherrack>, <minecraft:mycelium>, <ore:netherrack>], [<ore:netherrack>, <ore:netherrack>, <ore:netherrack>]]);
