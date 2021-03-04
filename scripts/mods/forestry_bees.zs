@@ -13,6 +13,23 @@ import crafttweaker.liquid.ILiquidStack;
 import mods.jei.JEI.removeAndHide as rh;
 import scripts.craft.grid.Grid;
 
+// 🟠🟡🟢🟣🟤🟥🟦🟧🟨🟩🟪🟫
+
+# Common ingredients
+static g as IItemStack[string] = {
+	'🟡' : <forestry:beeswax>,
+	'💛' : <forestry:honey_drop>,
+	'🤎' : <forestry:honeydew>,
+	'🟤' : <forestry:propolis>,
+	'🟠' : <forestry:propolis:1>, # Sticky Propolis
+	'🔴' : <forestry:refractory_wax>,
+	'🟫' : <forestry:mulch>,
+	'🔷' : <forestry:phosphor>,
+	'💜' : <randomthings:ingredient:1>,
+	'🤍' : <minecraft:ghast_tear>,
+	'⚪' : <thaumcraft:nugget:5>,
+} as IItemStack[string];
+
 
 # ----------------------------------------------
 # Bees rework
@@ -31,7 +48,7 @@ for input,output in {
 	<ore:blockCoal>
 	|<ore:blockGraphite>     : <fluid:coal> * 900,
 } as ILiquidStack[IIngredient]  {
-	scripts.processWork.work(["ForestrySqueezer"], null, [<forestry:phosphor>, input], null, null,  [output], null, null);
+	scripts.processWork.work(["ForestrySqueezer"], null, [g['🔷'], input], null, null,  [output], null, null);
 }
 
 # Buff silk
@@ -58,7 +75,6 @@ craft.make(<tconstruct:nuggets:3> * 3, ["pretty",
 
 # ---------------------------
 # Remake old combs
-
 function reprocessComb(comb as IItemStack, outputs as WeightedItemStack[]) as void {
 	mods.forestry.Centrifuge.removeRecipe(comb);
 	scripts.wrap.forestry.Centrifuge.addRecipe(outputs, comb, 60);
@@ -68,69 +84,81 @@ function reprocessComb(comb as IItemStack, outputs as WeightedItemStack[]) as vo
 	scripts.wrap.thermalexpansion.Centrifuge.addRecipe(outputs, comb, null, 2000);
 }
 
+# [Cocoa_Comb]
+reprocessComb(<forestry:bee_combs:1>, [
+  g['🟡'] % 80, # Beeswax
+  <minecraft:dye:3> % 50, # Cocoa
+  <nuclearcraft:milk_chocolate> % 20,
+]);
+
+# [Stringy_Comb]
+reprocessComb(<forestry:bee_combs:3>, [
+	g['🟠'],
+	g['💛'] % 40,  # Honey Drop
+]);
+
 # [Frozen_Comb]
 reprocessComb(<forestry:bee_combs:4>, [
-	<forestry:beeswax> % 80,     # Beeswax
-	<forestry:pollen:1> % 20,    # Crystalline Pollen Cluster
-	<forestry:honey_drop> % 70,  # Honey Drop
-	<mctsmelteryio:iceball> % 40 # Iceball
+	g['🟡'] % 80,     # Beeswax
+	g['💛'] % 70,  # Honey Drop
+	<forestry:pollen:1> % 20,     # Crystalline Pollen Cluster
+	<mctsmelteryio:iceball> % 80, # Iceball
 ]);
 
 # [Dripping_Comb]
 reprocessComb(<forestry:bee_combs:5>, [
+	g['🤎'] % 100, # Honeydew
+	g['💛'] % 40, # Honey Drop
 	<thermalfoundation:material:1> % 20, # Gold Dust
-	<forestry:honeydew> % 100,  # Honeydew
-	<forestry:honey_drop> % 40  # Honey Drop
 ]);
 
 # [Parched_Comb]
 reprocessComb(<forestry:bee_combs:7>, [
-	<minecraft:blaze_powder> % 25, # Blaze Powder
-	<forestry:beeswax> % 100,  # Beeswax
-	<forestry:honey_drop> % 90 # Honey Drop
+	(<minecraft:blaze_powder> * 2) % 45, # Blaze Powder
+	g['🟡'] % 100,  # Beeswax
+	g['💛'] % 90, # Honey Drop
 ]);
 
 # [Powdery_Comb]
 reprocessComb(<forestry:bee_combs:10>, [
-	<forestry:beeswax> % 20,     # Beeswaxer
+	g['🟡'] % 20,     # Beeswaxer
+	g['💛'] % 20,  # Honey Drop
 	(<minecraft:gunpowder> * 4) % 100, # Gunpowder
-	<forestry:honey_drop> % 20   # Honey Drop
 ]);
 
 # [Mossy_Comb]
 reprocessComb(<forestry:bee_combs:15>, [
-	<forestry:beeswax> % 100,  # Beeswax
-	<ic2:crafting:20> % 100,   # Plantball
-	<forestry:honey_drop> % 90 # Honey Drop
-]);
-
-# [Mellow_Comb]
-reprocessComb(<forestry:bee_combs:16>, [
-	<minecraft:glowstone_dust> % 40, # Glowstone Dust
-	<forestry:beeswax> % 20,   # Beeswax
-	<forestry:honeydew> % 60   # Honeydew
-]);
-
-# [Cocoa_Comb]
-reprocessComb(<forestry:bee_combs:1>, [
-  <forestry:beeswax> % 80, # Beeswax
-  <minecraft:dye:3> % 50, # Cocoa
-  <nuclearcraft:dark_chocolate> % 20 # Dark Chocolate
+	g['🟡'] % 100, # Beeswax
+	g['💛'] % 90, # Honey Drop
+	<tconstruct:materials:18> % 100,
 ]);
 
 # [Irradiated_Comb]
 reprocessComb(<forestry:bee_combs:9>, [
-  <forestry:beeswax> % 50, # Beeswax
-  <nuclearcraft:plutonium:14> % 2, # Tiny Clump of Plutonium-242
-  <nuclearcraft:uranium:10> % 40   # Tiny Clump of Uranium-238
+  g['🟡'] % 50, # Beeswax
+  <nuclearcraft:plutonium:14> % 20, # Tiny Clump of Plutonium-242
+  <nuclearcraft:uranium:10> % 80,  # Tiny Clump of Uranium-238
 ]);
 
 # [Wheaten_Comb]
 reprocessComb(<forestry:bee_combs:14>, [
-  <forestry:beeswax> % 80, # Beeswax
-  <harvestcraft:flouritem> % 100,
-  <nuclearcraft:graham_cracker> % 20 # Graham Cracker
+  g['🟡'] % 80, # Beeswax
+  (<harvestcraft:flouritem> * 3) % 100,
+  <nuclearcraft:graham_cracker> % 80, # Graham Cracker
 ]);
+
+# [Mellow_Comb]
+reprocessComb(<forestry:bee_combs:16>, [
+	g['🟡'] % 20, # Beeswax
+	g['🤎'] % 60, # Honeydew
+	<ore:dustSoularium>.firstItem % 40,
+]);
+
+# Add missed beecombs to JEI (Why they even missed??)
+val bee_comb_def = <forestry:bee_combs>.definition;
+for i in [1, 8, 9 ,10] as int[] {
+  mods.jei.JEI.addItem(bee_comb_def.makeStack(i));
+}
 
 # ---------------------------
 
@@ -182,68 +210,66 @@ by data from config/gendustry/bees.cfg
 */
 zenClass BeeHelper {
 
-	val bw as IItemStack = <forestry:beeswax>;
-	val rw as IItemStack = <forestry:refractory_wax>;
-	val mh as IItemStack = <forestry:mulch>;
-	val ph as IItemStack = <forestry:phosphor>;
-	val hd as IItemStack = <forestry:honey_drop>;
-	val hw as IItemStack = <forestry:honeydew>;
-	val tr as IItemStack = <randomthings:ingredient:1>;
-	val gt as IItemStack = <minecraft:ghast_tear>;
-	val qs as IItemStack = <thaumcraft:nugget:5>;
+	# Bees final production
+	val beesOutputs as IItemStack[][] = null; 
+
+	# Current bee index
+	var index as int = -1 as int;
+	var beesNames as string[] = [];
 
 	# Constructor should be called once to register all recipes
-	zenConstructor() {
+	zenConstructor(g as IItemStack[string]) {
 		beesOutputs = [
 				#Wax,Honeydrop, Main output
-				[bw ,hd, <enderio:item_alloy_nugget:9>],
-				[bw ,hd, <thermalfoundation:material:770>, <ic2:dust:25>],
-				[bw ,hw, <immersiveengineering:material:17>, <actuallyadditions:item_misc:10>],
-				[bw ,hw, <extendedcrafting:material:37>],
-				[bw ,qs, <appliedenergistics2:material:5>],
-				[rw ,gt, <extrautils2:ingredients:3>],
-				[mh ,hd, <thermalfoundation:material:865>],
-				[rw ,hw, shard("psigem"), shard("dreamwood"), shard("flux_crystal"), shard("amethyst")],
-				[rw ,hw, shard("desert_myrmex"), shard("jungle_myrmex"), shard("plague_metal")],
-				[ph ,hd, <botania:manaresource:1>],
-				[bw ,hd, <actuallyadditions:item_crystal_empowered:2>],
-				[bw ,hd, <botania:blacklotus>],
-				[rw ,hw, shard("litherite"), shard("erodium"), shard("kyronite"), shard("lonsdaleite")],
-				[rw ,hw, shard("pladium"), shard("ionite"), shard("aethium"), shard("boron_nitride")],
-				[bw ,tr, <extendedcrafting:material:49>],
-				[bw ,hd, <avaritia:resource>],
+				[g['🟡'] ,g['💛'], <enderio:item_alloy_nugget:9>],
+				[g['🟡'] ,g['💛'], <thermalfoundation:material:770>, <ic2:dust:25>],
+				[g['🟡'] ,g['🤎'], <immersiveengineering:material:17>, <actuallyadditions:item_misc:10>],
+				[g['🟡'] ,g['🤎'], <extendedcrafting:material:37>],
+				[g['🟡'] ,g['⚪'], <appliedenergistics2:material:5>],
+				[g['🔴'] ,g['🤍'], <extrautils2:ingredients:3>],
+				[g['🟫'] ,g['💛'], <thermalfoundation:material:865>],
+				[g['🔴'] ,g['🤎'], shard("psigem"), shard("dreamwood"), shard("flux_crystal"), shard("amethyst")],
+				[g['🔴'] ,g['🤎'], shard("desert_myrmex"), shard("jungle_myrmex"), shard("plague_metal")],
+				[g['🔷'] ,g['💛'], <botania:manaresource:1>],
+				[g['🟡'] ,g['💛'], <actuallyadditions:item_crystal_empowered:2>],
+				[g['🟡'] ,g['💛'], <botania:blacklotus>],
+				[g['🔴'] ,g['🤎'], shard("litherite"), shard("erodium"), shard("kyronite"), shard("lonsdaleite")],
+				[g['🔴'] ,g['🤎'], shard("pladium"), shard("ionite"), shard("aethium"), shard("boron_nitride")],
+				[g['🟡'] ,g['💜'], <extendedcrafting:material:49>],
+				[g['🟡'] ,g['💛'], <avaritia:resource>],
 			] as IItemStack[][];
 	}
 
 	function build() {
-			frst(       "Wacky"); scripts.process.melt(currHeneyDrop(), <fluid:construction_alloy> * 16, "No exceptions");
-			next(     "Chilled"); // Defined in bees.cfg
-			next(        "Oozy"); scripts.process.crush(currHeneyDrop(), currOut(), "No exceptions", [currOutList()[3]], [0.25]);
-			next(     "Elysian"); scripts.process.compress(currHeneyDrop() * 3, currOut(), "No exceptions");
-			next(     "Gallant"); furnace.addRecipe(currOut(), currHeneyDrop());
-			next(        "Dull"); scripts.process.saw(currComb(), currOut() * 6, "except: shapeless");
-			next(    "Deformed"); craft.shapeless(currOut(), "AAA", {A: currHeneyDrop()});
-			next(      "Potter"); addTinkersCentrifuges();
-			next(    "Tinsmith"); addTinkersCentrifuges();
-			next(     "Рaughty"); mods.botania.ManaInfusion.addInfusion(currOut(), currHeneyDrop(), 6000/2);
-			next(    "Egoistic"); mods.actuallyadditions.AtomicReconstructor.addRecipe(currOut(), currHeneyDrop(), 10000);
-			next(        "Vain"); craft.make(currOut(), [" B ","BHB"," B "], {B: <botania:petal:15>, H: currHeneyDrop()});
-			next(      "Tinker"); addTinkersCentrifuges();
-			next(     "Artisan"); addTinkersCentrifuges();
-			next(     "Selfish"); scripts.process.compress(currHeneyDrop() * 3, currOut(), "only: Compactor");
+			next("Wacky"   ); scripts.process.melt(c['💧'], <fluid:construction_alloy> * 16, "No exceptions");
+			next("Chilled" ); /* Defined in bees.cfg */
+			next("Oozy"    ); scripts.process.crush(c['💧'], c['🍯'], "No exceptions", [currOutList()[3]], [0.25]);
+			next("Elysian" ); scripts.process.compress(c['💧'] * 3, c['🍯'], "No exceptions");
+			next("Gallant" ); furnace.addRecipe(c['🍯'], c['💧']);
+			next("Dull"    ); scripts.process.saw(c['⚙️'], c['🍯'] * 6, "except: shapeless");
+			next("Deformed"); craft.shapeless(c['🍯'], "AAA", {A: c['💧']});
+			next("Potter"  ); addTinkersCentrifuges();
+			next("Tinsmith"); addTinkersCentrifuges();
+			next("Рaughty" ); mods.botania.ManaInfusion.addInfusion(c['🍯'], c['💧'], 6000/2);
+			next("Egoistic"); scripts.wrap.actuallyadditions.AtomicReconstructor.addRecipe(c['🍯'], c['💧'], 10000);
+			next("Vain"    ); craft.make(c['🍯'], [" B ","BHB"," B "], {B: <botania:petal:15>, H: c['💧']});
+			next("Tinker"  ); addTinkersCentrifuges();
+			next("Artisan" ); addTinkersCentrifuges();
+			next("Selfish" ); scripts.process.compress(c['💧'] * 3, c['🍯'], "only: Compactor");
 			next("Narcissistic"); mods.modularmachinery.RecipeBuilder.newBuilder("amf_diamond_lattice", "advanced_metallurgic_fabricator", 10)
 			.addEnergyPerTickInput(100000)
-			.addItemOutput(currOut())
-			.addItemInput(currHeneyDrop() * 4)
+			.addItemOutput(c['🍯'])
+			.addItemInput(c['💧'] * 4)
 			.addFluidInput(<liquid:diamond> * 666)
 			.build();
 
 		# Add missed centrifuge recipes
 		for drop in <gendustry:honey_drop>.definition.subItems {
 			val i = drop.damage;
+			if(i >= beesOutputs.length) continue;
 			val comb = <gendustry:honey_comb>.definition.makeStack(i);
 
-			val beeOuts = beesOutputs[(i - 1 + beesOutputs.length*100) % beesOutputs.length];
+			val beeOuts = beesOutputs[i];
 			scripts.processWork.work(["Centrifuge"], null, [comb], null, [drop], null, [beeOuts[0], beeOuts[1]], [beeHash(i, 1), beeHash(i, 2)]);
 		}
 	}
@@ -259,23 +285,24 @@ zenClass BeeHelper {
 		return <tconstruct:shard>.withTag({Material: mat});
 	}
 
-	# Bees final production
-	val beesOutputs as IItemStack[][] = null; 
-
-	# Current bee index
-	var index as int = 0;
-	var beesNames as string[] = [];
+  val c as IItemStack[string] = {
+    '🍯': null, # Current output
+    '💧': null, # Current honey
+    '⚙️': null, # Current Comb
+  } as IItemStack[string];
 
 	# Bee combs, honeydrops and outputs based on current index
-	function frst(s as string) {index = 0;  beesNames += s;}
-	function next(s as string) {index += 1; beesNames += s;}
+	function next(s as string) {
+    index += 1;
+    beesNames += s;
+    c['🍯'] = currOut();
+    c['💧'] = currHeneyDrop();
+    c['⚙️'] = currComb();
+  }
 	function   currOutList() as IItemStack[] { return beesOutputs[index]; }
 	function       currOut() as IItemStack   { return currOutList()[2]; }
 	function      currComb() as IItemStack   { return <gendustry:honey_comb>.definition.makeStack(index + 1); }
-	function currHeneyDrop() as IItemStack   {
-		val it = <gendustry:honey_drop>.definition.makeStack(index + 1);
-		return it;
-	}
+	function currHeneyDrop() as IItemStack   { return <gendustry:honey_drop>.definition.makeStack(index + 1); }
 
 	function addTinkersCentrifuges() {
 		var cuttedArr = [] as IItemStack[];
@@ -284,4 +311,4 @@ zenClass BeeHelper {
 	}
 }
 
-BeeHelper().build();
+BeeHelper(g).build();
