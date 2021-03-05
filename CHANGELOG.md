@@ -1,5 +1,126 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
+# 0.20
+
+## 🟢 New Mods
+
+Icon | Summary
+------:|:------
+<img src="https://media.forgecdn.net/avatars/thumbnails/183/420/256/256/636815141511404851.png" width="50"> | [**Bring Me The Rings!**](https://www.curseforge.com/minecraft/mc-mods/bring-me-the-rings) <sub><sup>BringMeTheRings-0.4.jar</sup></sub> <br> Expand the number of native ring slots in Baubles
+
+## ✏️ Recipes
+
+  - Changes:  
+    * ![](https://git.io/JqUJS "Ball of Moss")
+      ![](https://git.io/JqUJ9 "Machine Controller")
+      ![](https://git.io/JtN5b "Range Addon")
+      ![](https://git.io/JqUJ6 "Wind Generator")
+    * +9, +10, +11[Fluid: Dark Steel]
+ 
+  - Harder:  
+    ![](https://git.io/JqUJH "Silky Cloth")
+    ![](https://git.io/JqUJP "Genetics Processor")
+    ![](https://git.io/JqUUJ "Upgrade Frame")
+    ![](https://git.io/JqUJp "Power Module")
+    ![](https://git.io/JqUJ7 "ME Controller")
+    ![](https://git.io/JqUJg "Advanced Card")
+    ![](https://git.io/JqUJi "Item Capability Proxy")
+    ![](https://git.io/JqUJA "Climate Control Module")
+    ![](https://git.io/JqUJ2 "Bee Receptacle")
+    ![](https://git.io/JqUJx "Advanced mutatron")
+    ![](https://git.io/JqUUe "Ender Chest")
+    ![](https://git.io/JqUJj "Ender Tank")
+    ![](https://git.io/JqUUf "Ender Pouch")
+    ![](https://git.io/JqUJa "Reinforced Cell Frame (Empty)")
+    ![](https://git.io/JtDhK "Device Frame")
+    ![](https://git.io/JqUJy "Augment: Auxiliary Reception Coil")
+    ![](https://git.io/JqUJd "Augment: Auxiliary Sieve")
+    ![](https://git.io/JqUJF "Augment: Sapling Infuser")
+    ![](https://git.io/JqUJM "Tool Casing")
+    ![](https://git.io/JqUJX "Energy Cell Frame")
+    ![](https://git.io/JqUJb "Simple Powercell")
+    ![](https://git.io/JqUUU "Powercell")
+    ![](https://git.io/JqUJz "Advanced Powercell")
+    ![](https://git.io/JqUJV "Mechanical Squeezer")
+    ![](https://git.io/JtyeN "Mono-Directional Connector")
+    ![](https://git.io/JqUUk "Energy Battery")
+    ![](https://git.io/JqUJo "Logic Cable")
+    ![](https://git.io/JqUJ1 "Insulating Glass")
+    ![](https://git.io/JqUUv "Diode")
+    ![](https://git.io/JqUJN "Forester")
+    ![](https://git.io/JqUJQ "Monster Ball")
+    ![](https://git.io/JqUJr "Terrestrial Artifact")
+    ![](https://git.io/JqUJK "Terrestrial Artifact Block")
+    ![](https://git.io/JqUJw "Quartz Glass")
+    ![](https://git.io/JqUJD "Blank Gene Sample")
+
+  - Also Harder:  
+    * [Alloy Furnace] (NC)
+    * [Genetic Tempelate]
+    * [Fluid: Mutagen]
+    * [Fluid: Protein]
+    * [Fluid: DNA]
+
+## 🔵 Mods
+
+- ### 🔨 Tinker's Construct
+
+  - Remap Tool Leveling, Change lvl mult 3 -> 2
+
+- ### 💍 Baubles
+
+  - Add 4 fingers to Steve
+
+- ### 🅱 Block Drops
+
+  - Restore cached calculation to speedup initial load time
+
+- ### ☢️ NuclearCraft
+
+- Alloy Smelter - Descrease speed x3, x4 RF consumption
+
+- ### 🛹 Integrated Dynamics
+
+  - Increase energy consumption for Mechanical machines
+    > Basin: 80 -> 180 RF/t  
+    > Squeezer: 80 -> 400 RF/t
+
+- ### 🛢️ Immersive Engineering
+
+  - Slightly nerf Excavator
+
+- ### 🧙‍♂️ Cyclic
+  
+  - Forester not using energy anymore
+
+- ### ⬛ Bedrock Ore
+
+  - Double amount of ore in one block
+
+- ### 🐝 Forestry
+
+  - Buff bee work cycle 550 -> 400
+  - Buff vanilla bee production
+  - Buff Escritoire
+  - Gendustry machines consume 10x more RF
+  - Gendustry upgrades buff energy consumption percentage
+  - Simplify mutations of custom bees
+  - New genes for custom bees
+  - Better custom bees output
+  - Scrappy Bee
+
+## 🔄 Misc Changes
+
+  - ![](https://git.io/JqUUT "Tiny Torch") light level 12 -> 9
+
+
+<!-- ======================================================= -->
+---
+---
+---
+<!-- ======================================================= -->
+
+
 # 0.19
  
 ## 🟢 New Mods
