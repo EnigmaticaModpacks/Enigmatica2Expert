@@ -12,33 +12,40 @@ List of character that has barely same width for most monospace fonts
 zenClass CharacterManager { zenConstructor() {}
   # Symbols that would be used in case first letters cant be used
   static symbols as string = 
-    "○╳●⌀☻♀♂∞∩ͻ♪♫†‡§®£¥+⌆⌅" ~
-    "Ͳαβγζξ∂¢!$%&:;<>@«₠€₮₯₸₹₺₽ℓ№ℙ™‖¦∏" ~
-    "↑←→↔↕∊∍∫≤≥►◄“”…"
+    "○●⌀☻♀♂∞ͻ♪♫†‡§®£¥+⌆⌅" ~
+    "Ͳαβγζξ¢!$%:;<>@«₠€₮₯₸₹₺₽ℓ№ℙ™‖¦∏" ~
+    "↑←→↔↕∊∍∫≤≥►◄“”…▪▫•°"
   as string;
 
   # Unused:
   # 0123456789₀₁₂₃₄₅₆₇₈₉¹²³⁴⁵⁶⁷⁸⁹
 
-  static keywords as string[string] = {
-    cobblestone: "░▒▓",
-    ingot:       "▬‗_-=≡Ξ",
-    block:       "□◘◙■▪▫▄⌂▀",
-    dust:        "▲♠♣∆⌃^",
-    gem:         "◊♦¤θΘ",
-    crystal:     "☼*",
-    wood:        "#≢≠",
-    energy:      "Ϟ√∑",
-    power:       "ΣΨΩ",
-    bucket:      "~≈‰",
-    redstone:    "♥▼⌄↓",
-    quartz:      "•°",
-    coal:        "☺©",
-    stick:       "╱/|",
-    rod:         "/|╱",
-    shaft:       "|/╱",
-    fruit:       "ͼͽ",
-  } as string[string];
+  static keywords as string[][] = [
+    ["cobblestone", "░▒▓"    ],
+    ["ingot",       "▬-_‗=≡Ξ"],
+    ["block",       "■▄▀"    ],
+    ["plate",       "□п"     ],
+    ["casing",      "⌂"      ],
+    ["cell",        "◘"      ],
+    ["frame",       "◙"      ],
+    ["dust",        "▲♠♣∆"   ],
+    ["gem",         "◊♦θΘ"   ],
+    ["gear",        "¤☼"     ],
+    ["chunk",       "∩∂&"    ],
+    ["crystal",     "*╳"     ],
+    ["energy",      "Ϟ√∑"    ],
+    ["power",       "ΣΨΩ"    ],
+    ["bucket",      "~≈‰"    ],
+    ["redstone",    "♥▼⌄↓"   ],
+    ["quartz",      "⌃^"     ],
+    ["coal",        "©☺"     ],
+    ["stick",       "╱/|"    ],
+    ["rod",         "/|╱"    ],
+    ["shaft",       "|/╱"    ],
+    ["wood",        "#≢≠"    ],
+    ["fruit",       "ͼͽ"     ],
+    ["nugget",      "‚˛͵ͺι"  ],
+  ] as string[][];
 
   # Words that would not be used to find letter
   static wordsBlacklist as string[] = [
@@ -131,7 +138,9 @@ zenClass CharacterManager { zenConstructor() {}
       val _word = word.toLowerCase();
       if(wordsBlacklist has _word) continue;
 
-      for keyword, letters in keywords {
+      for pair in keywords {
+        val keyword = pair[0];
+        val letters = pair[1];
         if(keyword == _word) {
           for i in 0 to letters.length {
             val c = letters[i];

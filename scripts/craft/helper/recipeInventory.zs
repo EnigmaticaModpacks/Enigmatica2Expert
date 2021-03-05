@@ -45,25 +45,12 @@ zenClass RecipeInventory {
       if(sizeWH.length > 1) {
         # Init complex inventory with multiple recipes
         H = sizeWH[1];
-        val netW = (W/4) as int;
-        val netH = (H/3) as int;
-        if(netW * netH > 1) {
-          for j in 0 to (netW * netH) {
-            addRecipe();
-          }
-        }
       }
     }
-    addRecipe();
 
     for i, it in itemsList.asList() {
       processInventoryItem(i, it);
     }
-  }
-
-  function addRecipe() {
-    val rg = GridRecipe();
-    gridRecipes = gridRecipes + rg;
   }
 
   function processInventoryItem(index as int, it as IData) as void {
@@ -82,6 +69,7 @@ zenClass RecipeInventory {
     if(!isNull(it.tag)) itemStack = itemStack.withTag(it.tag);
 
     val gridIndex = isNull(slotData.gridIndex) ? 0 : slotData.gridIndex.asInt();
+    while(gridRecipes.length <= gridIndex) { gridRecipes += GridRecipe(); }
     if(!isNull(slotData.isOutput)) {
       gridRecipes[gridIndex].setOutput(itemStack);
     } else {

@@ -261,7 +261,7 @@ function fill(itemInput as IIngredient, fluidInput as ILiquidStack, output as II
   work(["DryingBasin"],            exceptions, [itemInput], [fluidInput * newAmount1], [output], null, null, null);
   work(["MechanicalDryingBasin"],  exceptions, [itemInput], [fluidInput * newAmount2], [output], null, null, null);
   work(["NCInfuser"],              exceptions, [itemInput], [lF(fluidInput, 1.2d)], [output], null, null, null);
-  work(["transposer"],             exceptions, [itemInput], [fluidInput], [output], null, null, null);
+  work(["Transposer"],             exceptions, [itemInput], [fluidInput], [output], null, null, null);
 }
 
 # Perfor some magic over item(s) to create new item(s)

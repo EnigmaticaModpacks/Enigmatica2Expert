@@ -474,3 +474,5 @@ craft.remake(<actuallyadditions:block_bio_reactor>, ["pretty",
   "I": <actuallyadditions:block_misc:9>, # Iron Casing
   "☼": <ore:crystalEnori>                # Enori Crystal
 });
+
+<actuallyadditions:block_tiny_torch>.asBlock().definition.lightLevel = 0.65f;
