@@ -84,11 +84,9 @@ function outputMd(arr=annotations, level=0) {
 
 outputMd(annotations)
 
-//! TODO: output also other fields, not listed in [annotations]
-
 for (const [key, arr] of Object.entries(map)) {
   if(!arr) continue
-  arr.forEach(l => {
+  arr.forEach(() => {
     outputList(key, '❓❓', 0)
   })  
 }
