@@ -147,17 +147,6 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Liquid Concrete] from [Grout+] -->
-	<Recipe timeRequired="10" power="40000">
-		<input>
-			<itemStack>tconstruct:soil 1</itemStack>
-			<fluidStack>water 250</fluidStack>
-		</input>
-		<output>
-			<fluidStack>concrete 250</fluidStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Construction Foam] from [Construction Paste+] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -169,14 +158,25 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Molten Refined Obsidian] from [Pulverized Obsidian+] -->
+	<!-- [Liquid Concrete] from [Grout+] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
-			<itemStack>thermalfoundation:material 1 770</itemStack>
-			<fluidStack>diamond 66</fluidStack>
+			<itemStack>tconstruct:soil 1</itemStack>
+			<fluidStack>water 250</fluidStack>
 		</input>
 		<output>
-			<fluidStack>refined_obsidian 144</fluidStack>
+			<fluidStack>concrete 250</fluidStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Milk] from [Milk Powder+] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>ic2:dust 1 33</itemStack>
+			<fluidStack>water 250</fluidStack>
+		</input>
+		<output>
+			<fluidStack>milk 250</fluidStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -191,6 +191,17 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Molten Refined Obsidian] from [Pulverized Obsidian+] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>thermalfoundation:material 1 770</itemStack>
+			<fluidStack>diamond 66</fluidStack>
+		</input>
+		<output>
+			<fluidStack>refined_obsidian 144</fluidStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Quicksand] from [soulSand+] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -199,17 +210,6 @@
 		</input>
 		<output>
 			<fluidStack>sand 1000</fluidStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Milk] from [Milk Powder+] -->
-	<Recipe timeRequired="10" power="40000">
-		<input>
-			<itemStack>ic2:dust 1 33</itemStack>
-			<fluidStack>water 250</fluidStack>
-		</input>
-		<output>
-			<fluidStack>milk 250</fluidStack>
 		</output>
 	</Recipe>
 </Recipes>

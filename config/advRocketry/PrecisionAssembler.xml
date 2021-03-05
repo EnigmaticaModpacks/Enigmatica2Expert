@@ -243,15 +243,15 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Logic Processor] from [dustRedstone++] -->
+	<!-- [Calculation Processor] from [dustRedstone++] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<oreDict>dustRedstone 1</oreDict>
 			<oreDict>itemSilicon 1</oreDict>
-			<itemStack>appliedenergistics2:material 1 18</itemStack>
+			<itemStack>appliedenergistics2:material 1 16</itemStack>
 		</input>
 		<output>
-			<itemStack>appliedenergistics2:material 1 22</itemStack>
+			<itemStack>appliedenergistics2:material 1 23</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -267,15 +267,15 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Calculation Processor] from [dustRedstone++] -->
+	<!-- [Logic Processor] from [dustRedstone++] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<oreDict>dustRedstone 1</oreDict>
 			<oreDict>itemSilicon 1</oreDict>
-			<itemStack>appliedenergistics2:material 1 16</itemStack>
+			<itemStack>appliedenergistics2:material 1 18</itemStack>
 		</input>
 		<output>
-			<itemStack>appliedenergistics2:material 1 23</itemStack>
+			<itemStack>appliedenergistics2:material 1 22</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->

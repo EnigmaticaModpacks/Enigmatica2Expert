@@ -22,6 +22,11 @@ for (const match of crafttweaker_log.matchAll(
   stat.total++
 }
 
+// Sort recipes inside changes to prevent object shuffling
+for (const c of Object.values(changes)) {
+  c.sort((a,b)=>a.localeCompare(b))
+}
+
 begin(`  Found ${stat.total} recipes for ${Object.keys(changes).length} files. Injecting `)
 
 // List of curated files and folders

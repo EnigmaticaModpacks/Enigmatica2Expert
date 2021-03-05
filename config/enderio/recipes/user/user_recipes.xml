@@ -499,16 +499,6 @@
     </fermenting>
   </recipe>
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-  <recipe name="Quicksand" required="true">
-    <fermenting energy="10000">
-      <inputgroup>
-        <input name="minecraft:soul_sand" multiplier="1.0"/>
-      </inputgroup>
-      <inputfluid name="blueslime" multiplier="1.0"/>
-      <outputfluid name="sand"/>
-    </fermenting>
-  </recipe>
-  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Milk" required="true">
     <fermenting energy="10000">
       <inputgroup>
@@ -516,6 +506,16 @@
       </inputgroup>
       <inputfluid name="water" multiplier="1.0"/>
       <outputfluid name="milk"/>
+    </fermenting>
+  </recipe>
+  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+  <recipe name="Quicksand" required="true">
+    <fermenting energy="10000">
+      <inputgroup>
+        <input name="minecraft:soul_sand" multiplier="1.0"/>
+      </inputgroup>
+      <inputfluid name="blueslime" multiplier="1.0"/>
+      <outputfluid name="sand"/>
     </fermenting>
   </recipe>
 </enderio:recipes>
