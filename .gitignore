@@ -29,7 +29,6 @@ config/jei/worldSettings.cfg
 config/jei/lookupHistory.zip
 config/jei/bookmarks.ini
 
-config/BlockDrops/modVersions.txt
 config/InvTweaks/InvTweaks.cfg
 config/scavenge/IResourceProperty.txt
 config/codechicken/supporters.json
@@ -41,7 +40,6 @@ config/AppliedEnergistics2/VersionChecker.cfg
 config/AppliedEnergistics2/CustomRecipes.cfg
 
 config/brandon3055/ResourceCache/
-config/BlockDrops/blockdrops.txt
 
 config/armoryexpansion/traits.txt
 
