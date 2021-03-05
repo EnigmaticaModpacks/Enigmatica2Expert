@@ -23,11 +23,10 @@ static g as IItemStack[string] = {
 	'🟤' : <forestry:propolis>,
 	'🟠' : <forestry:propolis:1>, # Sticky Propolis
 	'🔴' : <forestry:refractory_wax>,
-	'🟫' : <forestry:mulch>,
-	'🔷' : <forestry:phosphor>,
+	'🔷' : <contenttweaker:empowered_phosphor>,
 	'💜' : <randomthings:ingredient:1>,
 	'🤍' : <minecraft:ghast_tear>,
-	'⚪' : <thaumcraft:nugget:5>,
+	'⚪' : <thaumcraft:quicksilver>,
 } as IItemStack[string];
 
 
@@ -44,7 +43,7 @@ for input,output in {
 	<ore:blockRedstone>      : <fluid:redstone> * 900,
 	<ore:glowstone>          : <fluid:glowstone> * 1000,
 	<ore:materialEnderPearl> : <fluid:ender> * 250,
-	
+
 	<ore:blockCoal>
 	|<ore:blockGraphite>     : <fluid:coal> * 900,
 } as ILiquidStack[IIngredient]  {
@@ -58,7 +57,7 @@ recipes.addShapeless("silk to string", <minecraft:string> * 32, [<forestry:craft
 
 # Buff Pulsating mesh output
 mods.forestry.Carpenter.removeRecipe(<minecraft:ender_pearl>);
-scripts.wrap.forestry.Carpenter.addRecipe(<actuallyadditions:block_misc:6> * 4, 
+scripts.wrap.forestry.Carpenter.addRecipe(<actuallyadditions:block_misc:6> * 4,
 	Grid(["AA","AA"], {A:<forestry:crafting_material:1>}).shaped(), 60);
 
 # Buff propolis to slime (was 1 poor slime ball)
@@ -163,8 +162,6 @@ for i in [1, 8, 9 ,10] as int[] {
 # ---------------------------
 
 
-
-
 /*
 
 New Bees mutations
@@ -172,35 +169,42 @@ New Bees mutations
 Generated with https://arthursonzogni.com/Diagon/
 by data from config/gendustry/bees.cfg
 
-: ┌────────┐┌───────┐┌─────┐┌────────┐┌──────┐┌──────┐┌──────┐┌──────────┐
-: │Derpious││GLACIAL││BOGGY││AGRARIAN││EDENIC││TRICKY││HEROIC││PHANTASMAL│
-: └┬────┬──┘└┬───┬──┘└┬┬┬──┘└┬┬─────┬┘└┬────┬┘└┬─────┘└┬─────┘└┬─────────┘
-:  │    │    │   │    │││    ││   ┌─│──│────│──│───────┘       │          
-:  │    │    │   │   ┌│││────┘│   │┌│──│────│──┘               │          
-: ┌┘   ┌│────┘  ┌│───│┘││ ┌───┘   ││└─┐│    │ ┌────────────────┘          
-: │    ││       ││ ┌─│─┘│ │┌──────││──│┘    │ │                           
-: │┌───vv┐┌─────vv┐│┌v──v┐││┌─────vv┐┌v─────v┐│                           
-: ││Wacky││Chilled│││Oozy││││Gallant││Elysian││                           
-: │└──┬─┬┘└┬──────┘│└┬──┬┘││└┬┬───┬┬┘└┬──────┘│                           
-: │   │ │  │ ┌─────│─│──│─││─┘│   ││  │       │                           
-: │   │ │  │ │┌────│─│──│─┘│  │   ││  │       │                           
-: │  ┌│─│──┘ ││ ┌──┘ │ ┌│──┘  │   ││┌─┘       │                           
-: └┐ ││ └────││─│──┐ │ │└──┐  │   │└│─┐     ┌─┘                           
-:  │ ││      ││┌│──│─┘ │┌──│──┘   │ │ │     │                             
-: ┌v─vv┐┌────vvvv┐┌v───vv┐┌v──────v┐│┌v─────v┐                            
-: │Dull││Deformed││Potter││Tinsmith│││Paughty│                            
-: └─┬┬┬┘└─┬─┬┬───┘└──────┘└────────┘│└┬┬─────┘                            
-:   │││   │ ││    ┌─────────────────│─┘│                                  
-:   └││───│─││────│───┐    ┌────────│──┘                                  
-:    └│───│─││─┐  │ ┌─│────│────────┘                                     
-: ┌───v───v┐││┌v──v┐│┌v────v┐                                             
-: │Egoistic││││Vain│││Tinker│                                             
-: └────────┘││└┬─┬┬┘│└──────┘                                             
-:       ┌───││─┘ ││ └─┐                                                   
-:       │┌──┘│   └│──┐│                                                   
-: ┌─────vv┐┌─v────v┐┌vv──────────┐                                        
-: │Artisan││Selfish││Narcissistic│                                        
-: └───────┘└───────┘└────────────┘                                        
+┌─────┐┌────────┐┌──────┐┌────────┐┌────────┐┌──────┐┌────┐┌──────┐┌──────────┐┌─────┐┌────────┐┌──────┐┌───────┐
+│Boggy││Agrarian││Frugal││Derpious││Farmerly││Heroic││Miry││Modest││Phantasmal││Rural││Sinister││Wintry││Valiant│
+└┬────┘└┬───────┘└┬─────┘└┬┬──────┘└┬┬──────┘└┬┬───┬┘└┬┬─┬┘└┬─────┘└┬─────────┘└┬────┘└┬───────┘└┬─────┘└┬┬─────┘
+ │      │         │       ││      ┌─││────────││───│──││─│──│───────┘           │      │         │       ││
+┌┘      │ ┌───────┘┌──────┘│      │ ││      ┌─││───│──│┘ │  │                   │      │         │       ││
+│┌──────┘ │       ┌│───────│──────│─││──────│─││───│──│──│──│───────────────────┘      │         │       ││
+││┌───────│───────││───────┘     ┌│─││──────│─││───│──│──│──│──────────────────────────┘         │       ││
+│││      ┌│───────││─────────────││─┘│     ┌│─││───│──│──│──│────────────────────────────────────┘       ││
+│││      ││       ││     ┌───────││──┘     ││ ││   │┌─│──│──│────────────────────────────────────────────┘│
+│││      ││  ┌────││─────│───────││────────││─┘│   ││ │  │  │ ┌───────────────────────────────────────────┘
+│││      ││ ┌│────││─────│───────││────────││──┘   ││ │  │  │ │
+│││      ││ ││    ││    ┌│───────││────────││──────││─┘  │  │ │
+│││      ││ ││    ││    ││ ┌─────│┘┌───────││──────││────│──┘ │
+│││┌─────vv┐││┌───vv┐┌──vv┐│┌────v─v┐┌─────vv┐┌────vv┐┌──v────v┐
+││││Elysian││││Wacky││Oozy│││Gallant││Chilled││Potter││Tinsmith│
+│││└─┬─────┘││└─┬───┘└┬───┘│└┬┬─────┘└┬──────┘└──────┘└────────┘
+│││  │      │└──│─┐   │    │ ││       │
+││└──│──────│┐  │ │   │    │ ││       │
+│└──┐│   ┌──││──│─│───│────│─┘│       │
+└──┐││   │┌─││──│─│───┘   ┌┘  │       │
+┌──││┘   ││ ││  │ │      ┌│───┘       │
+│┌─││────││─┘│ ┌│─│──────││───────────┘
+││┌vv────vv┐┌v─vv┐│┌─────vv┐
+│││Scrappy ││Dull│││Paughty│
+││└──────┬┬┘└┬──┬┘│└┬────┬─┘
+││      ┌││──┘  │ │ │    │
+││      ││└┐   ┌│─│─┘    │
+│└──────││─│───││─│─┐    │
+│┌──────vv┐│┌──vv┐│┌v────v┐
+││Egoistic│││Vain│││Tinker│
+│└────────┘│└┬─┬┬┘│└──────┘
+│          │┌┘ └│─│─────┐
+└┐         └│──┐│ └─────│┐
+┌v──────────v┐┌vv─────┐┌vv─────┐
+│Narcissistic││Selfish││Artisan│
+└────────────┘└───────┘└───────┘
 */
 
 /*
@@ -211,7 +215,7 @@ by data from config/gendustry/bees.cfg
 zenClass BeeHelper {
 
 	# Bees final production
-	val beesOutputs as IItemStack[][] = null; 
+	val beesOutputs as IItemStack[][] = null;
 
 	# Current bee index
 	var index as int = -1 as int;
@@ -223,45 +227,40 @@ zenClass BeeHelper {
 				#Wax,Honeydrop, Main output
 				[g['🟡'] ,g['💛'], <enderio:item_alloy_nugget:9>],
 				[g['🟡'] ,g['💛'], <thermalfoundation:material:770>, <ic2:dust:25>],
-				[g['🟡'] ,g['🤎'], <immersiveengineering:material:17>, <actuallyadditions:item_misc:10>],
+				[g['🟡'] ,g['🤎'], <immersiveengineering:material:18>, <nuclearcraft:dust:8>],
 				[g['🟡'] ,g['🤎'], <extendedcrafting:material:37>],
 				[g['🟡'] ,g['⚪'], <appliedenergistics2:material:5>],
-				[g['🔴'] ,g['🤍'], <extrautils2:ingredients:3>],
-				[g['🟫'] ,g['💛'], <thermalfoundation:material:865>],
+				[g['🔴'] ,g['🤍'], <libvulpes:productnugget:7>],
+				[g['🟡'] ,g['💛'], <ic2:crafting:23> * 64],
 				[g['🔴'] ,g['🤎'], shard("psigem"), shard("dreamwood"), shard("flux_crystal"), shard("amethyst")],
 				[g['🔴'] ,g['🤎'], shard("desert_myrmex"), shard("jungle_myrmex"), shard("plague_metal")],
-				[g['🔷'] ,g['💛'], <botania:manaresource:1>],
+				[g['🔷'] ,g['💛'], <botania:manaresource:16>, <botania:manaresource:1>, <botania:manaresource:2>],
 				[g['🟡'] ,g['💛'], <actuallyadditions:item_crystal_empowered:2>],
-				[g['🟡'] ,g['💛'], <botania:blacklotus>],
+				[g['🟡'] ,g['💛'], <mysticalagradditions:insanium:5>],
 				[g['🔴'] ,g['🤎'], shard("litherite"), shard("erodium"), shard("kyronite"), shard("lonsdaleite")],
 				[g['🔴'] ,g['🤎'], shard("pladium"), shard("ionite"), shard("aethium"), shard("boron_nitride")],
 				[g['🟡'] ,g['💜'], <extendedcrafting:material:49>],
-				[g['🟡'] ,g['💛'], <avaritia:resource>],
+				[g['🟡'] ,g['💛'], <storagedrawers:upgrade_storage:3>],
 			] as IItemStack[][];
 	}
 
 	function build() {
-			next("Wacky"   ); scripts.process.melt(c['💧'], <fluid:construction_alloy> * 16, "No exceptions");
+			next("Wacky"   ); scripts.process.melt(c['💧'], <fluid:construction_alloy> * 144, "No exceptions");
 			next("Chilled" ); /* Defined in bees.cfg */
 			next("Oozy"    ); scripts.process.crush(c['💧'], c['🍯'], "No exceptions", [currOutList()[3]], [0.25]);
-			next("Elysian" ); scripts.process.compress(c['💧'] * 3, c['🍯'], "No exceptions");
-			next("Gallant" ); furnace.addRecipe(c['🍯'], c['💧']);
-			next("Dull"    ); scripts.process.saw(c['⚙️'], c['🍯'] * 6, "except: shapeless");
-			next("Deformed"); craft.shapeless(c['🍯'], "AAA", {A: c['💧']});
+			next("Elysian" ); scripts.process.compress(c['💧'], c['🍯'], "No exceptions");
+			next("Gallant" ); furnace.addRecipe(c['🍯'] * 2, c['💧']);
+			next("Dull"    ); scripts.process.saw(c['⚙️'], c['🍯'] * 7, "except: shapeless");
+			next("Scrappy" ); scripts.process.crush(c['💧'], c['🍯'], "No exceptions", [c['🍯'], c['🍯'], c['🍯']], [0.50, 0.25, 0.10]);
 			next("Potter"  ); addTinkersCentrifuges();
 			next("Tinsmith"); addTinkersCentrifuges();
-			next("Рaughty" ); mods.botania.ManaInfusion.addInfusion(c['🍯'], c['💧'], 6000/2);
+			next("Рaughty" ); mods.botania.ManaInfusion.addInfusion(currOutList()[2], c['💧'], 1000); mods.botania.ManaInfusion.addAlchemy(currOutList()[3], c['💧'], 2000); mods.botania.ManaInfusion.addConjuration(currOutList()[4], c['💧'], 5000); 
 			next("Egoistic"); scripts.wrap.actuallyadditions.AtomicReconstructor.addRecipe(c['🍯'], c['💧'], 10000);
-			next("Vain"    ); craft.make(c['🍯'], [" B ","BHB"," B "], {B: <botania:petal:15>, H: c['💧']});
+			next("Vain"    ); scripts.process.fill(c['💧'],  <liquid:base_essence> * 16,  c['🍯'],  "Except: Casting DryingBasin MechanicalDryingBasin");
 			next("Tinker"  ); addTinkersCentrifuges();
 			next("Artisan" ); addTinkersCentrifuges();
-			next("Selfish" ); scripts.process.compress(c['💧'] * 3, c['🍯'], "only: Compactor");
-			next("Narcissistic"); mods.modularmachinery.RecipeBuilder.newBuilder("amf_diamond_lattice", "advanced_metallurgic_fabricator", 10)
-			.addEnergyPerTickInput(100000)
-			.addItemOutput(c['🍯'])
-			.addItemInput(c['💧'] * 4)
-			.addFluidInput(<liquid:diamond> * 666)
-			.build();
+			next("Selfish" ); scripts.process.compress(c['💧'], c['🍯'], "only: Compactor");
+			next("Narcissistic"); craft.make(c['🍯'], ["UH"], {"U": <storagedrawers:upgrade_template>, "H": c['💧']});
 
 		# Add missed centrifuge recipes
 		for drop in <gendustry:honey_drop>.definition.subItems {
@@ -270,7 +269,8 @@ zenClass BeeHelper {
 			val comb = <gendustry:honey_comb>.definition.makeStack(i);
 
 			val beeOuts = beesOutputs[i];
-			scripts.processWork.work(["Centrifuge"], null, [comb], null, [drop], null, [beeOuts[0], beeOuts[1]], [beeHash(i, 1), beeHash(i, 2)]);
+			val honey_drop = i==7 ? drop * 3 : drop;
+			scripts.processWork.work(["Centrifuge"], null, [comb], null, [honey_drop], null, [beeOuts[0], beeOuts[1]], [beeHash(i, 1), beeHash(i, 2)]);
 		}
 	}
 
