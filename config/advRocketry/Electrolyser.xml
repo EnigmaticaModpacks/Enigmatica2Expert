@@ -74,11 +74,5 @@
     <fluidStack>tritium 50</fluidStack>
     </output></Recipe>
   
-  <Recipe timeRequired="10" power ="40000"><input>
-    <fluidStack>water 1000</fluidStack>
-    </input><output>
-    <fluidStack>hydrogen 1000</fluidStack>
-    <fluidStack>deuterium 50</fluidStack>
-    </output></Recipe>
 
 </Recipes>
