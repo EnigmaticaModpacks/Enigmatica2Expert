@@ -1,5 +1,21 @@
 ### Enigmatica 2: Expert Changelog
 
+## 1.83
+
+_[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.82.txt)_ | _Using Forge-1.12.2-14.23.5.2854_
+
+**Improvements/Changes**
+
+- Server: The ServerStart files have been updated to reflect Forge's change in jar name. 
+
+**Bug Fixes**
+
+- 
+
+**Mod Removals**
+
+- JEI Block Drops (Not great for load times)
+
 ## 1.82 (+1.82a)
 
 _[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.82.txt)_ | _Using Forge-1.12.2-14.23.5.2847_
