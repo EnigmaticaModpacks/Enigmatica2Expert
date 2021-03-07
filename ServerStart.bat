@@ -461,7 +461,7 @@ ECHO Checking for forge/minecraft binaries...
 ECHO INFO: Checking for forge/minecraft binaries... 1>>  "%~dp0logs\serverstart.log" 2>&1
 
 REM Check if forge is already installed
-IF NOT EXIST "%~dp0*forge*%MC_SERVER_FORGEVER%*universal*.jar" (
+IF NOT EXIST "%~dp0*forge*%MC_SERVER_FORGEVER%*.jar" (
 	ECHO FORGE %MC_SERVER_FORGEVER% binary not found, re-installing...
 	ECHO INFO: FORGE %MC_SERVER_FORGEVER% not found, re-installing... 1>>  "%~dp0logs\serverstart.log" 2>&1
 	GOTO INSTALLSTART
@@ -511,7 +511,7 @@ IF %MC_SERVER_SPONGE% EQU 1 (
 )
 
 REM set absolute paths for binary JARs
-(FOR /f "usebackq tokens=* delims=*" %%x in (`dir ^"*forge*%MC_SERVER_FORGEVER%*universal*.jar^" /B /O:-D`) DO SET "MC_SERVER_FORGE_JAR=%%x" & GOTO CHECKFILES1) 1>> "%~dp0logs\serverstart.log" 2>&1
+(FOR /f "usebackq tokens=* delims=*" %%x in (`dir ^"*forge*%MC_SERVER_FORGEVER%*.jar^" /B /O:-D`) DO SET "MC_SERVER_FORGE_JAR=%%x" & GOTO CHECKFILES1) 1>> "%~dp0logs\serverstart.log" 2>&1
 
 :CHECKFILES1
 (FOR /f "usebackq tokens=* delims=*" %%x in (`dir ^"*sponge*bootstrap*.jar^" /B /O:-D`) DO SET "MC_SERVER_SPONGE_BOOT=%%x" & GOTO CHECKFILES2) 1>> "%~dp0logs\serverstart.log" 2>&1
