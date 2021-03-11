@@ -319,3 +319,11 @@ global BucketTag as function(string,IData)IItemStack = function (name as string,
 	if (!isNull(b) && !isNull(tag)) { return b.updateTag({Tag: tag}); }
 	return b;
 };
+
+
+# ########################
+# Get mob soul by its name
+# ########################
+global Soul as function(string)IItemStack = function (name as string) as IItemStack {
+	return <draconicevolution:mob_soul>.withTag({EntityName: name});
+};

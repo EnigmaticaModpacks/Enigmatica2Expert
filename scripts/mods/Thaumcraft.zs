@@ -146,3 +146,8 @@ craft.make(<thaumcraft:salis_mundus>, ["DEFCAB"], {
 <extrautils2:compressedcobblestone:0>.setAspects(<aspect:terra>*45, <aspect:perditio>*9);
 <extrautils2:compressedcobblestone:1>.setAspects(<aspect:terra>*405, <aspect:perditio>*81);
 <extrautils2:compressedcobblestone:2>.setAspects(<aspect:terra>*500, <aspect:perditio>*500);
+
+# Tallow harder
+mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:tallow>);
+scripts.wrap.thaumcraft.Crucible.registerRecipe("Tallow from rotten flesh", "HEDGEALCHEMY@1", <thaumcraft:tallow>,   <minecraft:rotten_flesh>, [<aspect:ignis>]);
+scripts.wrap.thaumcraft.Crucible.registerRecipe("Tallow from blubber",      "HEDGEALCHEMY@1", <thaumcraft:tallow>*8, <betteranimalsplus:blubber>, [<aspect:ignis>*4]);

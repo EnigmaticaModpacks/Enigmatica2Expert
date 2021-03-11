@@ -33,18 +33,18 @@ for item in [
 <tcomplement:manyullyn_chestplate>,
 <tcomplement:manyullyn_leggings>,
 <tcomplement:manyullyn_boots>,
-// <minecraft:iron_helmet>,
+<minecraft:iron_helmet>,
 <minecraft:iron_chestplate>,
 <minecraft:iron_leggings>,
-// <minecraft:iron_boots>,
-// <minecraft:golden_boots>,
+<minecraft:iron_boots>,
+<minecraft:golden_boots>,
 <minecraft:golden_leggings>,
-// <minecraft:golden_chestplate>,
+<minecraft:golden_chestplate>,
 <minecraft:golden_helmet>,
-// <minecraft:diamond_helmet>,
-// <minecraft:diamond_chestplate>,
+<minecraft:diamond_helmet>,
+<minecraft:diamond_chestplate>,
 <minecraft:diamond_leggings>,
-// <minecraft:diamond_boots>,
+<minecraft:diamond_boots>,
 <ic2:alloy_chestplate>,
 <tcomplement:steel_helmet>,
 <tcomplement:steel_chestplate>,
@@ -73,19 +73,13 @@ for item in [
 #------------
 
 # Replace recipes that used items
-for item in [
-	<openblocks:sonic_glasses>,
-	<plethora:module:6>,
-	<actuallyadditions:item_player_probe>,
-	<compactsolars:solar_hat_low_voltage>,
-	<compactsolars:solar_hat_medium_voltage>,
-	<compactsolars:solar_hat_high_voltage>,
-] as IItemStack[] {
-	// recipes.replaceAllOccurences(<minecraft:iron_helmet>, 	<conarm:helmet_core>.withTag({Material: "iron"}), item);
-	// recipes.replaceAllOccurences(<minecraft:iron_helmet:*>, <conarm:helmet_core>.withTag({Material: "iron"}), item);
-}
+val helmet_iron = <conarm:helmet_core>.withTag({Material: "iron"});
+remakeEx(<actuallyadditions:item_player_probe>, [[<minecraft:iron_bars>, null, <minecraft:iron_bars>], [<minecraft:iron_bars>, helmet_iron, <minecraft:iron_bars>], [<actuallyadditions:item_crystal_empowered>, <minecraft:skull:1>, <actuallyadditions:item_crystal_empowered>]]);
+remakeEx(<openblocks:sonic_glasses>, [[<ore:ingotIron>, helmet_iron, <ore:ingotIron>], [<minecraft:obsidian>, <ore:stickWood>, <minecraft:obsidian>], [null, null, null]]);
+remakeEx(<plethora:module:6>, [[<computercraft:peripheral:1>, <ore:ingotIron>, <computercraft:peripheral:1>], [<computercraft:peripheral:4>, <computercraft:peripheral:4>, <computercraft:peripheral:4>], [<ore:ingotIron>, helmet_iron, <ore:ingotIron>]]);
 
-// recipes.replaceAllOccurences(<minecraft:iron_boots>, <conarm:boots_core>.withTag({Material: "iron"}), <randomthings:superlubricentboots>);
+remakeEx(<randomthings:superlubricentboots>, [[<conarm:boots_core>.withTag({Material: "iron"})], [<randomthings:ingredient:6>]]);
+
 
 //mods.bloodmagic.AlchemyArray.removeRecipe(IItemStack input, IItemStack catalyst);
 val BRT = <bloodmagic:component:8>;
@@ -108,22 +102,24 @@ for inp, out in {
 	<compactsolars:compact_solar_block:1> : <compactsolars:solar_hat_medium_voltage>,
 	<compactsolars:compact_solar_block:2> : <compactsolars:solar_hat_high_voltage>,
 } as IItemStack[IIngredient] {
-	craft.reshapeless(out, "AB", {A: inp, B: <conarm:helmet_core>.withTag({Material: "iron"})});
+	recipes.remove(out);
+	recipes.addShapeless(out, [<conarm:helmet_core>.withTag({Material: "iron"}), inp]);
 }
 
 #------------
 # Gold
 #------------
-// recipes.replaceAllOccurences(<minecraft:golden_chestplate:*>, <conarm:chest_core>.withTag({Material: "electrum"}), <draconicevolution:tool_upgrade:9>);
-// recipes.replaceAllOccurences(<minecraft:golden_boots:*>, <conarm:boots_core>.withTag({Material: "electrum"}), <draconicevolution:tool_upgrade:10>);
-// recipes.replaceAllOccurences(<minecraft:golden_boots:*>, <conarm:boots_core>.withTag({Material: "electrum"}), <draconicevolution:tool_upgrade:11>);
+remakeEx(<draconicevolution:tool_upgrade:9>, [[<minecraft:dye:4>, <draconicevolution:draconic_core:*>, <minecraft:dye:4>], [<ore:ingotDraconium>, <conarm:chest_core>.withTag({Material: "electrum"}), <ore:ingotDraconium>], [<minecraft:dye:4>, <draconicevolution:draconic_core:*>, <minecraft:dye:4>]]);
+remakeEx(<draconicevolution:tool_upgrade:10>, [[<minecraft:dye:4>, <draconicevolution:draconic_core:*>, <minecraft:dye:4>], [<ore:ingotDraconium>, <conarm:boots_core>.withTag({Material: "electrum"}), <ore:ingotDraconium>], [<minecraft:dye:4>, <ore:blockRedstone>, <minecraft:dye:4>]]);
+remakeEx(<draconicevolution:tool_upgrade:11>, [[<minecraft:dye:4>, <draconicevolution:draconic_core:*>, <minecraft:dye:4>], [<ore:ingotDraconium>, <conarm:boots_core>.withTag({Material: "electrum"}), <ore:ingotDraconium>], [<minecraft:dye:4>, <ore:blockSlime>, <minecraft:dye:4>]]);
 
 #------------
 # Diamond
 #------------
-// recipes.replaceAllOccurences(<minecraft:diamond_helmet>, <conarm:helmet_core>.withTag({Material: "diamantine_crystal"}), <plethora:module>);
-// recipes.replaceAllOccurences(<minecraft:diamond_chestplate:*>, <conarm:chest_core>.withTag({Material: "diamantine_crystal"}), <draconicevolution:tool_upgrade:8>);
-// recipes.replaceAllOccurences(<minecraft:diamond_boots>, <conarm:boots_core>.withTag({Material: "diamantine_crystal"}), <environmentaltech:modifier_jump_boost>);
+val dimBootsCore = <conarm:boots_core>.withTag({Material: "diamantine_crystal"});
+remakeEx(<plethora:module>, [[<ore:ingotGold>, <ore:chestEnder>, <ore:ingotGold>], [<ore:chestEnder>, <conarm:helmet_core>.withTag({Material: "diamantine_crystal"}), <ore:chestEnder>], [<ore:ingotGold>, <ore:chestEnder>, <ore:ingotGold>]]);
+remakeEx(<draconicevolution:tool_upgrade:8>, [[<minecraft:dye:4>, <draconicevolution:draconic_core:*>, <minecraft:dye:4>], [<ore:ingotDraconium>, <conarm:chest_core>.withTag({Material: "diamantine_crystal"}), <ore:ingotDraconium>], [<minecraft:dye:4>, <draconicevolution:draconic_core:*>, <minecraft:dye:4>]]);
+remakeEx(<environmentaltech:modifier_jump_boost>, [[dimBootsCore, <environmentaltech:litherite_crystal>, dimBootsCore], [<environmentaltech:mica>, <environmentaltech:modifier_null>, <environmentaltech:mica>], [dimBootsCore, <environmentaltech:lonsdaleite_crystal>, dimBootsCore]]);
 
 
 
