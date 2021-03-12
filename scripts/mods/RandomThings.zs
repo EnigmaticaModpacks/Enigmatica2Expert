@@ -285,29 +285,10 @@ craft.remake(<randomthings:spectreenergyinjector>, ["pretty",
 # ----------------------------
 # Tools
 # ----------------------------
-<randomthings:spectrepickaxe>.maxDamage = 3000;
-<randomthings:spectreaxe>.maxDamage = 3000;
-<randomthings:spectreshovel>.maxDamage = 3000;
-<randomthings:spectresword>.maxDamage = 3000;
-craft.remake(<randomthings:spectrepickaxe>, ["pretty",
-  "▬ ▬ ▬",
-  "  C  ",
-  "  C  "], spectreIngrs);
-
-craft.remake(<randomthings:spectreaxe>, ["pretty",
-  "▬ ▬  ",
-  "▬ C  ",
-  "  C  "], spectreIngrs);
-
-craft.remake(<randomthings:spectreshovel>, ["pretty",
-  "  ▬  ",
-  "  C  ",
-  "  C  "], spectreIngrs);
-
-craft.remake(<randomthings:spectresword>, ["pretty",
-  "  ▬  ",
-  "  ▬  ",
-  "  C  "], spectreIngrs);
+rh(<randomthings:spectrepickaxe>);
+rh(<randomthings:spectreaxe>);
+rh(<randomthings:spectreshovel>);
+rh(<randomthings:spectresword>);
 
 
 # ----------------------------

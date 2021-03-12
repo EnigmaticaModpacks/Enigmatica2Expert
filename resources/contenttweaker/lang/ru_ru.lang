@@ -2,6 +2,7 @@ itemGroup.other=ContentTweaker
 fluid.heavy_metal=Тяжёлый Метал
 fluid.cheese=Сыр
 fluid.seed=Семя
+fluid.spectre=Спектр
 
 item.contenttweaker.compressed_glowstone.name=Сжатая Светопыль
 item.contenttweaker.compressed_ender.name=Сжатый Эндер Жемчуг

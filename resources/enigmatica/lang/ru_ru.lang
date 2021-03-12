@@ -204,6 +204,9 @@ e2ee.tips.76=Ледяная бомба из сумеречного леса пр
 e2ee.tips.77=Жми Shift+F чтобы ступеньки не крутились когда их ставишь
 e2ee.tips.78=Криперов можно стричь
 
+e2ee.tconstruct.material.spectre.name=Призрачный
+e2ee.tconstruct.material.spectre.description=§bПризрачный%nКаждая деталь удлиняет руки
+
 tile.basalt.name=Базальт
 tile.blackholegenerator.name=Генератор черной дыры
 item.bucketEnrichedLava.name=Резервуар обогащенной лавы

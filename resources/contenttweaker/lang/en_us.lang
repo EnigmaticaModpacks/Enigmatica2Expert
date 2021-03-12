@@ -2,6 +2,7 @@ itemGroup.other=ContentTweaker
 fluid.heavy_metal=Heavy Metal
 fluid.cheese=Cheese
 fluid.seed=Seed
+fluid.spectre=Spectre
 
 item.contenttweaker.compressed_glowstone.name=Compressed Glowstone
 item.contenttweaker.compressed_ender.name=Compressed Ender

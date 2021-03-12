@@ -1,16 +1,22 @@
 #loader contenttweaker
 
-import mods.contenttweaker.tconstruct.TraitBuilder;
 import crafttweaker.block.IBlockState;
 import crafttweaker.event.IBlockEvent;
-import mods.contenttweaker.conarm.ArmorTraitBuilder;
-import mods.ctutils.utils.Math.min;
-import mods.ctutils.utils.Math.max;
 import crafttweaker.player.IPlayer;
+import mods.contenttweaker.Color;
+import mods.contenttweaker.conarm.ArmorTraitBuilder;
+import mods.contenttweaker.conarm.ExtendedMaterialBuilder;
+import mods.contenttweaker.tconstruct.TraitBuilder;
+import mods.ctutils.utils.Math.max;
+import mods.ctutils.utils.Math.min;
+import crafttweaker.world.IWorld;
 
+function getDrawSpeed(inversed as float) as float {
+    return (1.0 as float / inversed as float) as float;
+}
 
 /* 
-Taken from: wilderness-minecraft
+Some taken from: wilderness-minecraft
 https://github.com/badmonkey/wilderness-minecraft/blob/f32102d158566de9d346034b35c2f6226d369ff9/forge1.12/wilderness/scripts/content/traits_tcon.zs
 */
 
@@ -159,7 +165,7 @@ difficulty.register();
 //
 // difficulty_armor
 //
-val difficulty_armor = ArmorTraitBuilder.create("difficulty_armor");
+val difficulty_armor = ArmorTraitBuilder.create("difficulty");
 difficulty_armor.color = 0xd1310d;
 difficulty_armor.localizedName = "Difficulty";
 difficulty_armor.localizedDescription = "\u00a7oScalling Difficulty\n\u00a7rMining and attacking reduce player difficulty";
@@ -170,3 +176,58 @@ difficulty_armor.onDamaged = function(trait, armor, player, source, damage, newD
   return newDamage;
 };
 difficulty_armor.register();
+
+
+//
+// spectre
+//
+val spectre = ExtendedMaterialBuilder.create("spectre");
+spectre.color = 0x9CC1CE;
+spectre.craftable = false;
+spectre.castable = true;
+spectre.representativeItem = <item:randomthings:ingredient:3>;
+spectre.liquid = <liquid:spectre>;
+spectre.addItem(<ore:ingotSpectre>);
+spectre.localizedName = game.localize("e2ee.tconstruct.material.spectre.name");
+spectre.addHeadMaterialStats(400, 4.2, 6.0, 7);
+spectre.addHandleMaterialStats(1.4, -50);
+spectre.addExtraMaterialStats(64);
+spectre.addBowMaterialStats(getDrawSpeed(1.5), 1.0, 2.5);
+spectre.addProjectileMaterialStats();
+spectre.addCoreMaterialStats(200, 23.3);
+spectre.addPlatesMaterialStats(1.6, 100, 2);
+spectre.addTrimMaterialStats(70);
+spectre.register();
+
+function spectreMechanic(world as IWorld, player as IPlayer) as void {
+  if (world.isRemote()) return;
+  if (isNull(player)) return;
+  if (!player.isPotionActive(<potion:potioncore:reach>)) {
+    player.addPotionEffect(<potion:potioncore:reach>.makePotionEffect(40, 1));
+  }
+  val effect = player.getActivePotionEffect(<potion:potioncore:reach>);
+  player.addPotionEffect(<potion:potioncore:reach>.makePotionEffect(60, effect.amplifier + 1));
+}
+
+val spectre_armor = ArmorTraitBuilder.create("spectre");
+spectre_armor.color = 0x9CC1CE;
+spectre_armor.localizedName = game.localize("e2ee.tconstruct.material.spectre.name");
+spectre_armor.localizedDescription = game.localize("e2ee.tconstruct.material.spectre.description");
+spectre_armor.onAbility = function(trait, level, world, player) {
+  if (world.getWorldTime() % 40 != 0) return;
+  spectreMechanic(world, player);
+};
+spectre_armor.register();
+
+val spectre_trait = TraitBuilder.create("spectre");
+spectre_trait.color = 0x9CC1CE;
+spectre_trait.localizedName = game.localize("e2ee.tconstruct.material.spectre.name");
+spectre_trait.localizedDescription = game.localize("e2ee.tconstruct.material.spectre.description");
+spectre_trait.onUpdate = function(trait, tool, world, owner, itemSlot, isSelected) {
+  if (!isSelected) return;
+  if (world.getWorldTime() % 40 != 0) return;
+  if (! owner instanceof IPlayer) return;
+  val player as IPlayer = owner;
+  spectreMechanic(world, player);
+};
+spectre_trait.register();

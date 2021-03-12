@@ -419,3 +419,7 @@ craft.remake(<tconstruct:materials:18>, ["pretty",
   "□ □ □"], {
   "□": <ore:blockMossy>, # Moss Stone
 });
+
+# Molten Spectre
+scripts.process.melt(<ore:ingotSpectre>, <liquid:spectre> * 144, "No Exceptions");
+scripts.wrap.tconstruct.Casting.addTableRecipe(<randomthings:ingredient:3>, <tconstruct:cast_custom>, <liquid:spectre>, 144, false);

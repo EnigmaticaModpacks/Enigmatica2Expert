@@ -142,3 +142,16 @@ itemBuilder.addItem("blasted_coal");
 # Other
 # -------------------------------
 itemBuilder.addItem("bee_diversity");
+
+
+val molten_spectre = VanillaFactory.createFluid("spectre", 0x9CC1CE);
+molten_spectre.material = <blockmaterial:water>;
+molten_spectre.viscosity = 3000;
+molten_spectre.density = 6500;
+// molten_spectre.colorize = true;
+molten_spectre.temperature = 400;
+molten_spectre.luminosity = 10;
+molten_spectre.color = 0x9CC1CE;
+// molten_spectre.stillLocation = "base:fluids/molten";
+// molten_spectre.flowingLocation = "base:fluids/molten_flowing";
+molten_spectre.register();

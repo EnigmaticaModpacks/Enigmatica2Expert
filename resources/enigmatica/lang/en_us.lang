@@ -203,3 +203,6 @@ e2ee.tips.75=When you pick Core Sample, its automatically added to map. Change m
 e2ee.tips.76=Ice Bomb from Twilight Forest turns even flowing lava into obsidian
 e2ee.tips.77=Press Shift+F to lock stairs rotation
 e2ee.tips.78=You can shear Creeper
+
+e2ee.tconstruct.material.spectre.name=Spectre
+e2ee.tconstruct.material.spectre.description=§bSpectral%nEach part gives additional Reach potion effect

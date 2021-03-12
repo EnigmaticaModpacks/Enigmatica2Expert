@@ -141,7 +141,7 @@ remake("rat_upgrade_basic_ratlantean", <rats:rat_upgrade_basic_ratlantean>, [
 remake("rat_upgrade_archeologist", <rats:rat_upgrade_archeologist>, [
 	[<rats:marbled_cheese_raw>, <ore:hatArcheologist>, <rats:marbled_cheese_raw>], 
 	[<ore:boneDragon>, <rats:rat_upgrade_basic_ratlantean>, <ore:boneDragon>], 
-	[<randomthings:spectrepickaxe>.anyDamage(), <ore:tokenOrIdolFlag>, <randomthings:spectreshovel>.anyDamage()]
+	[<littletiles:hammer:*>, <ore:tokenOrIdolFlag>, <littletiles:saw:*>]
 ]);
 
 # Rat flowers
