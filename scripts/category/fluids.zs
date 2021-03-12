@@ -87,24 +87,24 @@ import mods.nuclearcraft.melter;
 # Chalice interactions
 val chaliceGrid = {
   # First                      , Second                                                             , ⏩ + ⏩                                , ⏩ + 🔷                             , 🔷 + ⏩                      ,
-  [<liquid:cloud_seed_concentrated>* 10 , <liquid:water>                         * 90 ,]: [<chisel:cloud>                          , <twilightforest:wispy_cloud>            , <twilightforest:fluffy_cloud>      ] ,
-  [<liquid:cloud_seed_concentrated>* 10 , <liquid:lava>                          * 90 ,]: [<exnihilocreatio:block_endstone_crushed>, <minecraft:end_stone>                   , <excompressum:compressed_block:7>  ] ,
-  [<liquid:cloud_seed_concentrated>* 10 , <liquid:astralsorcery.liquidstarlight> * 90 ,]: [<exnihilocreatio:block_dust>            , <exnihilocreatio:block_andesite_crushed>, <excompressum:compressed_block>    ] ,
-  [<liquid:lifeessence>            * 10 , <liquid:water>                         * 90 ,]: [<biomesoplenty:flesh>                   , <biomesoplenty:flesh>                   , <thaumcraft:flesh_block>           ] ,
-  [<liquid:lifeessence>            * 10 , <liquid:lava>                          * 90 ,]: [<thaumcraft:flesh_block>                , <thaumcraft:flesh_block>                , <thaumcraft:flesh_block>           ] ,
-  [<liquid:lifeessence>            * 10 , <liquid:astralsorcery.liquidstarlight> * 90 ,]: [<harvestcraft:honey>                    , <harvestcraft:honeycomb>                , <biomesoplenty:honey_block>        ] ,
-  [<liquid:lifeessence>            * 10 , <liquid:cloud_seed_concentrated>       * 90 ,]: [<animania:wool:4>                       , <animania:wool:2>                       , <animania:wool>                    ] ,
-  [<liquid:plasma>                 * 10 , <liquid:water>                         * 90 ,]: [<chisel:basalt2:7>                      , <chisel:basalt2:7>                      , <quark:basalt>                     ] ,
-  [<liquid:plasma>                 * 10 , <liquid:lava>                          * 90 ,]: [<minecraft:obsidian>                    , <chisel:lavastone>                      , <minecraft:magma>                  ] ,
-  [<liquid:plasma>                 * 10 , <liquid:astralsorcery.liquidstarlight> * 90 ,]: [<quark:marble>                          , <quark:slate>                           , <biomesoplenty:white_sandstone>    ] ,
-  [<liquid:plasma>                 * 10 , <liquid:cloud_seed_concentrated>       * 90 ,]: [<enderio:block_fused_quartz>            , <mysticalagriculture:storage:5>         , <biomesoplenty:crystal>            ] ,
-  [<liquid:plasma>                 * 10 , <liquid:lifeessence>                   * 90 ,]: [<minecraft:bone_block>                  , <minecraft:bone_block>                  , <minecraft:bone_block>             ] ,
-  [<liquid:ic2uu_matter>           * 10 , <liquid:water>                         * 90 ,]: [<quark:crystal:5>                       , <quark:crystal:6>                       , <actuallyadditions:block_crystal:2>] ,
-  [<liquid:ic2uu_matter>           * 10 , <liquid:lava>                          * 90 ,]: [<quark:basalt>                          , <draconicevolution:infused_obsidian>    , <draconicevolution:draconium_block>] ,
-  [<liquid:ic2uu_matter>           * 10 , <liquid:astralsorcery.liquidstarlight> * 90 ,]: [<quark:marble>                          , <minecraft:quartz_block>                , <thermalfoundation:storage:7>      ] ,
-  [<liquid:ic2uu_matter>           * 10 , <liquid:cloud_seed_concentrated>       * 90 ,]: [<randomthings:superlubricentice>        , <nuclearcraft:block_ice>                , <iceandfire:dragonsteel_ice_block> ] ,
-  [<liquid:ic2uu_matter>           * 10 , <liquid:lifeessence>                   * 90 ,]: [<tconstruct:slime_congealed:3>          , <minecraft:nether_wart_block>           , <tconevo:metal_block:5>            ] ,
-  [<liquid:ic2uu_matter>           * 10 , <liquid:plasma>                        * 90 ,]: [<enderio:block_infinity>                , <minecraft:obsidian>                    , <bigreactors:blockludicrite>       ] ,
+  [<liquid:cloud_seed_concentrated>* 10 , <liquid:water>                         * 90 ,]: [<chisel:cloud>                            , <twilightforest:wispy_cloud>            , <twilightforest:fluffy_cloud>      ] ,
+  [<liquid:cloud_seed_concentrated>* 10 , <liquid:lava>                          * 90 ,]: [<exnihilocreatio:block_endstone_crushed>  , <minecraft:end_stone>                   , <excompressum:compressed_block:7>  ] ,
+  [<liquid:cloud_seed_concentrated>* 10 , <liquid:astralsorcery.liquidstarlight> * 90 ,]: [<exnihilocreatio:block_dust>              , <exnihilocreatio:block_andesite_crushed>, <excompressum:compressed_block>    ] ,
+  [<liquid:lifeessence>            * 10 , <liquid:water>                         * 90 ,]: [<biomesoplenty:flesh>                     , <biomesoplenty:flesh>                   , <thaumcraft:flesh_block>           ] ,
+  [<liquid:lifeessence>            * 10 , <liquid:lava>                          * 90 ,]: [<tconstruct:slime:3>                      , <thaumcraft:flesh_block>                , <minecraft:nether_wart_block>      ] ,
+  [<liquid:lifeessence>            * 10 , <liquid:astralsorcery.liquidstarlight> * 90 ,]: [<harvestcraft:honey>                      , <harvestcraft:honeycomb>                , <biomesoplenty:honey_block>        ] ,
+  [<liquid:lifeessence>            * 10 , <liquid:cloud_seed_concentrated>       * 90 ,]: [<animania:wool:4>                         , <animania:wool:2>                       , <animania:wool>                    ] ,
+  [<liquid:plasma>                 * 10 , <liquid:water>                         * 90 ,]: [<chisel:basalt2:7>                        , <chisel:basalt2:7>                      , <quark:basalt>                     ] ,
+  [<liquid:plasma>                 * 10 , <liquid:lava>                          * 90 ,]: [<minecraft:obsidian>                      , <chisel:lavastone>                      , <minecraft:magma>                  ] ,
+  [<liquid:plasma>                 * 10 , <liquid:astralsorcery.liquidstarlight> * 90 ,]: [<quark:marble>                            , <quark:slate>                           , <biomesoplenty:white_sandstone>    ] ,
+  [<liquid:plasma>                 * 10 , <liquid:cloud_seed_concentrated>       * 90 ,]: [<enderio:block_fused_quartz>              , <mysticalagriculture:storage:5>         , <biomesoplenty:crystal>            ] ,
+  [<liquid:plasma>                 * 10 , <liquid:lifeessence>                   * 90 ,]: [<exnihilocreatio:block_netherrack_crushed>, <minecraft:bone_block>                  , <iceandfire:dragon_bone_block>     ] ,
+  [<liquid:ic2uu_matter>           * 10 , <liquid:water>                         * 90 ,]: [<quark:crystal:5>                         , <quark:crystal:6>                       , <actuallyadditions:block_crystal:2>] ,
+  [<liquid:ic2uu_matter>           * 10 , <liquid:lava>                          * 90 ,]: [<quark:basalt>                            , <draconicevolution:infused_obsidian>    , <draconicevolution:draconium_block>] ,
+  [<liquid:ic2uu_matter>           * 10 , <liquid:astralsorcery.liquidstarlight> * 90 ,]: [<quark:marble>                            , <minecraft:quartz_block>                , <thermalfoundation:storage:7>      ] ,
+  [<liquid:ic2uu_matter>           * 10 , <liquid:cloud_seed_concentrated>       * 90 ,]: [<randomthings:superlubricentice>          , <nuclearcraft:block_ice>                , <enderio:block_alloy:6>            ] ,
+  [<liquid:ic2uu_matter>           * 10 , <liquid:lifeessence>                   * 90 ,]: [<tconstruct:slime_congealed:3>            , <minecraft:nether_wart_block>           , <tconevo:metal_block:5>            ] ,
+  [<liquid:ic2uu_matter>           * 10 , <liquid:plasma>                        * 90 ,]: [<enderio:block_infinity>                  , <minecraft:obsidian>                    , <tconevo:metal_block:7>            ] ,
 } as IItemStack[][ILiquidStack[]];
 
 #### Honorable mentions: ####
@@ -149,6 +149,6 @@ for lList, itList in chaliceGrid {
 for lList, itList in chaliceGrid {
 	val b1 = Bucket(lList[0].name);
 	val b2 = Bucket(lList[1].name);
-	scripts.requiousJei.add_everflow_chalice(b1, b2, itList);
+	scripts.requiousJei.add_everflow_chalice(b2, b1, itList);
 	scripts.requiousJei.add_liquid_interaction(b1, b2, itList[0]);
 }

@@ -19,13 +19,16 @@ import mods.cyclicmagic.Dehydrator;
 	[<ore:circuitBasic>, <extrautils2:redstoneclock>, <ore:circuitBasic>], 
 	[<ore:ingotFakeIron>, <ore:circuitAdvanced>, <ore:ingotFakeIron>]]);
 
-# Fluid Storage Tank
-	recipes.remove(<cyclicmagic:block_storeempty>);
-	recipes.addShapedMirrored("Cyclic Fluid Storage Tank", 
-	<cyclicmagic:block_storeempty>, 
-	[[<ore:plateAluminium>, <ore:blockGlass>, <ore:plateAluminium>],
-	[<ore:blockGlass>, <thermalexpansion:tank>.anyDamage(), <ore:blockGlass>], 
-	[<ore:plateAluminium>, <ore:blockGlass>, <ore:plateAluminium>]]);
+# [Fluid Storage Tank] from [Tank][+3]
+craft.remake(<cyclicmagic:block_storeempty>, ["pretty",
+  "□ ▬ □",
+  "п T п",
+  "□ ▬ □"], {
+  "□": <ore:plateAluminium>,  # Aluminum Plate
+  "T": <openblocks:tank>,     # Tank
+  "▬": <ore:ingotBrickSeared>,# Seared Brick
+  "п": <ore:plateCopper>,     # Copper Plate
+});
 
 # Charms
 	recipes.remove(<cyclicmagic:charm_fire>);
@@ -56,6 +59,8 @@ import mods.cyclicmagic.Dehydrator;
 	[<minecraft:rabbit_foot>, <extrautils2:goldenlasso>.withTag({Animal:{id:"minecraft:chicken"} }), <minecraft:rabbit_foot>], 
 	[<ore:feather>, <ore:feather>, <ore:feather>]]);
 	
+  # Speed Charm + Elythra is too OP
+  <cyclicmagic:charm_speed>.maxDamage = 200;
 	recipes.remove(<cyclicmagic:charm_speed>);
 	recipes.addShaped("Speed Charm", 
 	<cyclicmagic:charm_speed>, 
@@ -474,8 +479,8 @@ for it in [
   mods.cyclicmagic.Packager.removeRecipe(it);
 }
 
-val sa = <minecraft:sand>;
-val gr = <minecraft:gravel>;
+val sa = <minecraft:sand> * 4;
+val gr = <minecraft:gravel> * 4;
 val packagerList = [
   [<minecraft:concrete_powder> * 8   ], [sa, gr, <ore:dyeWhite>.firstItem],
   [<minecraft:concrete_powder:1> * 8 ], [sa, gr, <ore:dyeOrange>.firstItem],
@@ -557,6 +562,28 @@ Hydrator.addRecipe(<chisel:waterstone>, [<minecraft:stone>], 125);
 # Misc
 Hydrator.addRecipe(<actuallyadditions:item_misc:12>, [<actuallyadditions:item_misc:9>], 250);
 Hydrator.addRecipe(<minecraft:ice>, [<thermalfoundation:material:1025>], 1000);
+
+# Remove terracotta hydrating to prevent Infinity Furnace dupe
+for item in [
+  <minecraft:white_glazed_terracotta>,
+  <minecraft:orange_glazed_terracotta>,
+  <minecraft:magenta_glazed_terracotta>,
+  <minecraft:light_blue_glazed_terracotta>,
+  <minecraft:yellow_glazed_terracotta>,
+  <minecraft:lime_glazed_terracotta>,
+  <minecraft:pink_glazed_terracotta>,
+  <minecraft:gray_glazed_terracotta>,
+  <minecraft:silver_glazed_terracotta>,
+  <minecraft:cyan_glazed_terracotta>,
+  <minecraft:purple_glazed_terracotta>,
+  <minecraft:blue_glazed_terracotta>,
+  <minecraft:brown_glazed_terracotta>,
+  <minecraft:green_glazed_terracotta>,
+  <minecraft:red_glazed_terracotta>,
+  <minecraft:black_glazed_terracotta>,
+] as IItemStack[] {
+  Hydrator.removeShapedRecipe(item);
+}
 
 /*
 

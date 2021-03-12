@@ -385,3 +385,21 @@ craft.remake(<enderio:item_inventory_charger_vibrant>, ["P","B","▬"], {
   "B": <enderio:item_basic_capacitor>, # Basic Capacitor
   "▬": <ore:ingotLead>,
 });
+
+# [Fluid Filter] from [Flopper][+1]
+craft.remake(<enderio:item_fluid_filter>, ["pretty",
+  "  p  ",
+  "p F p",
+  "  p  "], {
+  "p": <ore:paper>,       # Paper
+  "F": <flopper:flopper>, # Flopper
+});
+
+# [Omnivoir*4] from [Flopper][+1]
+craft.remake(<enderio:block_omni_reservoir> * 4, ["pretty",
+  "■ ■ ■",
+  "■ F ■",
+  "■ ■ ■"], {
+  "■": <ore:fusedGlass>, # Quite Clear Glass
+  "F": <flopper:flopper>, # Flopper
+});

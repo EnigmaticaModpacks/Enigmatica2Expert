@@ -12,8 +12,8 @@ import mods.jei.JEI.removeAndHide as rh;
 # Rune of Capacity
 	recipes.remove(<bloodmagic:blood_rune:6>);
 	recipes.addShaped("Rune of Capacity", <bloodmagic:blood_rune:6>, 
-	[[<extrautils2:decorativesolid:3>, <minecraft:bucket>, <extrautils2:decorativesolid:3>], 
-	[<minecraft:bucket>, <bloodmagic:blood_rune>, <minecraft:bucket>], 
+	[[<extrautils2:decorativesolid:3>, <flopper:flopper>, <extrautils2:decorativesolid:3>], 
+	[<flopper:flopper>, <bloodmagic:blood_rune>, <flopper:flopper>], 
 	[<extrautils2:decorativesolid:3>, <bloodmagic:slate:2>, <extrautils2:decorativesolid:3>]]);
 
 # Rune of Sacrifice
@@ -151,6 +151,14 @@ import mods.jei.JEI.removeAndHide as rh;
 	<ore:orbTier6>.add(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"}));
 	
 # Remake recipe of blood tanks
+
+# [Blood Tank Tier 1] from [Glass][+2]
+craft.remake(<bloodmagic:blood_tank>, ["B","■","A"], {
+  "B": <bloodmagic:slate>,        # Blank Slate
+  "■": <ore:blockGlass>, # Glass
+  "A": <thaumcraft:stone_arcane>, # Arcane Stone
+});
+
 recipes.addShapeless("Clearing Blood Tank 0", <bloodmagic:blood_tank>, [<bloodmagic:blood_tank>]);
 for i in 1 to 16 {
 	val tank = itemUtils.getItem("bloodmagic:blood_tank", i);

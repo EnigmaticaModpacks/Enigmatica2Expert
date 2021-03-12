@@ -62,7 +62,7 @@ for input, output in itemsToUnify {
 	[[<ore:ingotElectricalSteel>, <advgenerators:iron_wiring>, <ore:ingotElectricalSteel>]]);
 	recipes.addShapedMirrored("MekanismCable2", 
 	<mekanism:transmitter:1>.withTag({tier: 0}) * 8, 
-	[[<ore:ingotElectricalSteel>, <minecraft:bucket>, <ore:ingotElectricalSteel>]]);
+	[[<ore:ingotElectricalSteel>, <flopper:flopper>, <ore:ingotElectricalSteel>]]);
 	recipes.addShapedMirrored("MekanismCable3", 
 	<mekanism:transmitter:2>.withTag({tier: 0}) * 8, 
 	[[<ore:ingotElectricalSteel>, <appliedenergistics2:quartz_vibrant_glass>, <ore:ingotElectricalSteel>]]);
@@ -180,14 +180,6 @@ for input, output in itemsToUnify {
 	[[<mekanism:basicblock:7>, <ore:heartDragon>, <mekanism:basicblock:7>],
 	[<forestry:chipsets:3>.withTag({T:3 as short}, false), <mekanism:machineblock:11>|<mekanism:machineblock:11>.withTag({}), <forestry:chipsets:3>.withTag({T:3 as short}, false)], 
 	[<mekanism:basicblock:7>, <rftools:matter_beamer>, <mekanism:basicblock:7>]]);
-
-# Turbine Casing
-	recipes.remove(<mekanismgenerators:generator:10>);
-	recipes.addShapedMirrored("Mekanism Turbine Casing", 
-	<mekanismgenerators:generator:10> * 6, 
-	[[<actuallyadditions:block_misc:7>, <nuclearcraft:fission_block>, <actuallyadditions:block_misc:7>],
-	[<nuclearcraft:fission_block>, <mekanism:basicblock:8>, <nuclearcraft:fission_block>], 
-	[<actuallyadditions:block_misc:7>, <nuclearcraft:fission_block>, <actuallyadditions:block_misc:7>]]);
 
 # Reactor Controller
 #	recipes.remove(<mekanismgenerators:reactor>);
@@ -398,24 +390,79 @@ for i, it in [
 }
 
 # Remake recipes of gas/fluid tanks to remove recipe functions (they caused AE2 autocrafting issues)
-for i, it in [
+val mekTankIngrs = [
 	<ore:dustRedstone>,
 	<mekanism:enrichedalloy>,
 	<mekanism:reinforcedalloy>,
 	<mekanism:atomicalloy>,
-] as IIngredient[] {
-		var grid = [
-			"#-#", 
-			"-o-", 
-			"#-#"] as string[];
+	<mekanism:controlcircuit:3>,
+] as IIngredient[];
+for i, it in mekTankIngrs {
+	var grid = [
+		"#-#", 
+		"-o-", 
+		"#-#"] as string[];
+	if(i < 4) {
 		craft.remake( <mekanism:gastank>.withTag({tier: i}) , grid, { 
 			"#": it, 
 			"-": <ore:ingotOsmium>, 
 			"o": i==0 ? null : <mekanism:gastank>.withTag({tier: i - 1}, false)
 		});
-		craft.remake( <mekanism:machineblock2:11>.withTag({tier: i}) , grid, { 
-			"#": it, 
-			"-": <ore:ingotFakeIron>, 
-			"o": i==0 ? null : <mekanism:machineblock2:11>.withTag({tier: i - 1}, false)
-		});
+	}
+
+	if(i==0) continue;
+	craft.remake( <mekanism:machineblock2:11>.withTag({tier: i - 1}) , grid, { 
+		"#": it, 
+		"-": <ore:ingotFakeIron>, 
+		"o": i==1 ? null : <mekanism:machineblock2:11>.withTag({tier: i - 2}, false)
+	});
 }
+
+# [Dynamic Tank*10] from [Glass][+1]
+craft.remake(<mekanism:basicblock:9> * 10, ["pretty",
+  "  ⌂  ",
+  "⌂ ■ ⌂",
+  "  ⌂  "], {
+  "■": <ore:blockGlass>, # Glass
+  "⌂": <ic2:casing:5>, # Steel Item Casing
+  remove: <mekanism:basicblock:9>, # Dynamic Tank
+});
+
+# [Structural Glass*10] from [Glass][+1]
+craft.remake(<mekanism:basicblock:10> * 10, ["pretty",
+  "  ⌂  ",
+  "⌂ ■ ⌂",
+  "  ⌂  "], {
+  "■": <ore:blockGlass>, # Glass
+  "⌂": <ic2:casing:5>, # Steel Item Casing
+  remove: <mekanism:basicblock:10>, # Structural Glass
+});
+
+# [Turbine Blade] from [Atomic Alloy][+1]
+craft.remake(<mekanismgenerators:turbineblade>, ["pretty",
+  "  ▬  ",
+  "▬ U ▬",
+  "  ▬  "], {
+  "U": <ore:alloyUltimate>,  # Atomic Alloy
+  "▬": <ore:ingotHSLASteel>, # HSLA Steel Ingot
+});
+
+# [Turbine Rotor] from [Atomic Alloy][+1]
+craft.remake(<mekanismgenerators:generator:7>, ["pretty",
+  "□ U □",
+  "□ U □",
+  "□ U □"], {
+  "□": <ore:plateDenseSteel>, # Dense Steel Plate
+  "U": <ore:alloyUltimate>,   # Atomic Alloy
+});
+
+# [Turbine Casing*6] from [Steel Casing][+2]
+craft.remake(<mekanismgenerators:generator:10> * 6, ["pretty",
+  "T ⌂ T",
+  "⌂ S ⌂",
+  "T ⌂ T"], {
+  "⌂": <nuclearcraft:fission_block>, # Fission Reactor Casing
+  "S": <mekanism:basicblock:8>,      # Steel Casing
+  "T": <nuclearcraft:turbine_wall>,  # Turbine Wall
+	remove: <mekanismgenerators:generator:10>,
+});

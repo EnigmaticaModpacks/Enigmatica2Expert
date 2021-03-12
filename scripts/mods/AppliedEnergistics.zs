@@ -126,13 +126,16 @@ import scripts.craft.grid.Grid;
 	[pearlFluix, <mekanism:machineblock3>, pearlFluix], 
 	[<appliedenergistics2:quartz_vibrant_glass>, <ore:manaPearl>, <appliedenergistics2:quartz_vibrant_glass>]]);
 
-# Drive
-	recipes.remove(<appliedenergistics2:drive>);
-	recipes.addShaped("ME Drive", 
-	<appliedenergistics2:drive>, 
-	[[<ic2:casing:3>, <appliedenergistics2:material:24>, <ic2:casing:3>],
-	[<actuallyadditions:block_misc:9>, <opencomputers:diskdrive>, <actuallyadditions:block_misc:9>], 
-	[<ic2:casing:3>, <appliedenergistics2:material:24>, <ic2:casing:3>]]);
+# [ME Drive] from [Disk Drive][+3]
+craft.remake(<appliedenergistics2:drive>, ["pretty",
+  "A A A",
+  "A : A",
+  "E ◙ E"], {
+  "A": <ore:sheetAluminum>, # Aluminum Sheet
+  "E": <appliedenergistics2:material:24>, # Engineering Processor
+  "◙": <rftools:machine_frame>,           # Machine Frame
+  ":": <ore:oc:diskDrive>,                # Disk Drive
+});
 
 # Matter Condenser
 	recipes.remove(<appliedenergistics2:condenser>);	
@@ -226,7 +229,7 @@ craft.remake(<appliedenergistics2:molecular_assembler>, ["pretty",
 			"F": <ore:pearlFluix>,                      # Fluix Pearl
 			"M": <thermalexpansion:frame>,              # Machine Frame
 			"Ϟ": <appliedenergistics2:energy_acceptor>, # Energy Acceptor
-			"o": <advancedrocketry:ic:3>,               # Control Circuit Board
+			"o": <modularmachinery:blockcontroller>,
 		});
 	}
 
@@ -392,3 +395,28 @@ scripts.wrap.forestry.ThermionicFabricator.addCast(<appliedenergistics2:quartz_g
 }).shaped(), <liquid: glass> * 1000, <forestry:wax_cast:*>);
 
 # ---------------------------------------------------------
+
+# [Crafting Unit] from [Logic Processor][+3]
+craft.remake(<appliedenergistics2:crafting_unit>, ["pretty",
+  "▬ C ▬",
+  "M L M",
+  "▬ C ▬"], {
+  "C": <appliedenergistics2:material:23>, # Calculation Processor
+  "▬": <ore:ingotFluixSteel>,             # Fluix Steel Ingot
+  "L": <appliedenergistics2:material:22>, # Logic Processor
+  "M": <appliedenergistics2:part:76>,     # ME Dense Smart Cable - Fluix
+});
+
+# [ME Storage Bus] from [Resonant Requester][+2]
+recipes.remove(<appliedenergistics2:part:220>);
+recipes.addShaped("ME Storage Bus", <appliedenergistics2:part:220>, [
+	[<thermallogistics:requester:4>],        # Resonant Requester
+	[<actuallyadditions:block_giant_chest>], # Small Storage Crate
+	[<appliedenergistics2:interface>],       # ME Interface
+]);
+
+# [Certus Quartz Tank] from [Tank][+1]
+craft.reshapeless(<extracells:certustank>, 'ABB', {
+  "A": <openblocks:tank>,                  # Tank
+  "B": <appliedenergistics2:quartz_glass>, # Quartz Glass
+});

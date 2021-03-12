@@ -476,3 +476,26 @@ craft.remake(<actuallyadditions:block_bio_reactor>, ["pretty",
 });
 
 <actuallyadditions:block_tiny_torch>.asBlock().definition.lightLevel = 0.65f;
+
+# [Fluid Collector] from [Auto-Breaker][+1]
+recipes.removeByRecipeName("actuallyadditions:recipes142");
+craft.make(<actuallyadditions:block_fluid_collector>, [
+  "FAF"], {
+  "A": <actuallyadditions:block_breaker>, # Auto-Breaker
+  "F": <flopper:flopper>,                 # Flopper
+});
+
+# [Fluid Placer] from [Auto-Placer][+1]
+recipes.removeByRecipeName("actuallyadditions:recipes141");
+craft.make(<actuallyadditions:block_fluid_placer>, [
+  "FAF"], {
+  "A": <actuallyadditions:block_placer>, # Auto-Placer
+  "F": <flopper:flopper>,                # Flopper
+});
+
+# [Phantom Liquiface] from [Phantomface][+1]
+craft.remake(<actuallyadditions:block_phantom_liquiface>, [
+  "FPF"], {
+  "P": <actuallyadditions:block_phantomface>, # Phantomface
+  "F": <flopper:flopper>,                     # Flopper
+});

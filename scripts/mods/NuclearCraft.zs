@@ -70,6 +70,21 @@ craft.remake(<nuclearcraft:alloy_furnace_idle>, ["pretty",
   "|": <ic2:crafting:42>,    # Shaft (Bronze)
 });
 
+# [Empty Frame] from [Tin Gear][+2]
+craft.remake(<nuclearcraft:part:11>, ["pretty",
+  "□ ¤ □",
+  "п   п",
+  "□ ¤ □"], {
+  "□": <ore:plateBasic>,      # Basic Plating
+  "¤": <ore:gearTin>,         # Tin Gear
+  "п": <ore:plateDenseLapis>, # Dense Lapis Lazuli Plate
+});
+
+# Only leave Fluid fill recipe
+recipes.remove(<nuclearcraft:water_source>);
+scripts.process.fill(<nuclearcraft:part:11>, <fluid:water> * 2000, <nuclearcraft:water_source>, "only: Transposer");
+
+
 # Add missing ingots/bricks to ingot former
 	//Brick
 	mods.nuclearcraft.ingot_former.addRecipe([<liquid:clay>*144, <minecraft:brick>, 1.0, 1.0]);
@@ -212,21 +227,22 @@ mods.nuclearcraft.turbine.addRecipe([<liquid:ic2steam>, <liquid:low_quality_stea
 # mods.nuclearcraft.heat_exchanger.addRecipe([fluidInput, fluidOutput, double heatRequired, int temperatureIn, int temperatureOut]);
 mods.nuclearcraft.heat_exchanger.addRecipe([<liquid:ic2hot_coolant>, <liquid:ic2coolant>, 10000.0d, 700, 300]);
 
-# Harder compressed RTG recipes
-val rtgs = [
+# Harder compressed recipes
+val compressed = [
 	<nuclearcraft:rtg_americium>  , <notenoughrtgs:rtg_americium_compact>  , <notenoughrtgs:rtg_americium_dense>  ,
 	<nuclearcraft:rtg_californium>, <notenoughrtgs:rtg_californium_compact>, <notenoughrtgs:rtg_californium_dense>,
 	<nuclearcraft:rtg_plutonium>  , <notenoughrtgs:rtg_plutonium_compact>  , <notenoughrtgs:rtg_plutonium_dense>  ,
 	<nuclearcraft:rtg_uranium>    , <notenoughrtgs:rtg_uranium_compact>    , <notenoughrtgs:rtg_uranium_dense>    ,
+	<nuclearcraft:water_source>   , <nuclearcraft:water_source_compact>    , <nuclearcraft:water_source_dense>    ,
 ] as IItemStack[];
 
-for i, output in rtgs {
+for i, output in compressed {
 	if(i%3==0) continue;
 	craft.remake(output, ["pretty",
 		"x x x",
 		"x ▬ x",
 		"x x x"], {
-		"x": rtgs[i - 1],
+		"x": compressed[i - 1],
 		"▬": i%3==1 ? <ore:ingotHSLASteel> : <ore:gemBoronNitride>,
 	});
 }

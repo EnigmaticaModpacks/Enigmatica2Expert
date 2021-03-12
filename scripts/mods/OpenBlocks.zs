@@ -26,5 +26,13 @@ for i in 0 to 16 {
   }
 }
 
+# [Tank*2] from [Black Quartz][+1]
+craft.remake(<openblocks:tank> * 2, ["pretty",
+  "⌃ S",
+  "S ⌃"], {
+  "⌃": <ore:blockBlackQuartz>,     # Black Quartz
+  "S": <tconstruct:seared_tank:1>, # Seared Gauge
+});
+
 # Clear tanks
 utils.clearFluid(<openblocks:tank>);

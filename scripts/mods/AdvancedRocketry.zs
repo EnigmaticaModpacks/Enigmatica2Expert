@@ -117,12 +117,15 @@ import mods.jei.JEI.removeAndHide as rh;
 
 	<ore:stickIron>.remove(<advancedrocketry:productrod:1>);
 
-# Simplify tank
-recipes.remove(<advancedrocketry:liquidtank>);
-recipes.addShaped(<advancedrocketry:liquidtank>, [
-	[<ore:plateTitanium>, <ore:paneGlass>, <ore:plateTitanium>],
-	[<ore:plateTitanium>, <ore:paneGlass>, <ore:plateTitanium>],
-	[<ore:plateTitanium>, <ore:paneGlass>, <ore:plateTitanium>]]);
+
+# [Pressurized Tank] from [Tank][+1]
+craft.remake(<advancedrocketry:liquidtank>, ["pretty",
+  "  □  ",
+  "□ T □",
+  "  □  "], {
+  "□": <ore:plateSilicon>, # Silicon Plate
+  "T": <openblocks:tank>,  # Tank
+});
 recipes.addShapeless("Clearing AdvRock Tank", <advancedrocketry:liquidtank>, [<advancedrocketry:liquidtank>]);
 
 # Mushrooms as energy providers
@@ -146,3 +149,5 @@ scripts.process.work(ic2Cent, null , [<advancedrocketry:crystal>   * 4] , null ,
 scripts.process.work(ic2Cent, null , [<advancedrocketry:crystal:5> * 4] , null , [<jaopca:item_crystalthorium> * 3 , <actuallyadditions:item_crystal_empowered:3>* 2 , <environmentaltech:aethium_crystal>  ] , null , null , null);
 scripts.process.work(ic2Cent, null , [<advancedrocketry:crystal:2> * 4] , null , [<jaopca:item_crystaluranium> * 3 , <actuallyadditions:item_crystal_empowered:4>* 2 , <environmentaltech:litherite_crystal>] , null , null , null);
 scripts.process.work(ic2Cent, null , [<advancedrocketry:crystal:4> * 4] , null , [<jaopca:item_crystaliridium> * 3 , <actuallyadditions:item_crystal_empowered:5>* 2 , <environmentaltech:erodium_crystal>  ] , null , null , null);
+
+scripts.process.compress(<ore:blockCharcoal>, <advancedrocketry:misc:1>, "No Exceptions");

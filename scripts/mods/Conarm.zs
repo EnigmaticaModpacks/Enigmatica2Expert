@@ -57,3 +57,13 @@ remakeEx(<conarm:travel_sack>, [
 	[<minecraft:rabbit_hide>, <actuallyadditions:block_giant_chest>, <minecraft:rabbit_hide>], 
 	[<minecraft:rabbit_hide>, <minecraft:rabbit_hide>, <minecraft:rabbit_hide>]
 ]);
+
+# [Gauntlet of Far Reach] from [Gauntlet (Base)][+2]
+craft.remake(<conarm:gauntlet_mat_reach>, ["pretty",
+  "■ ▬ ■",
+  "▬ G ▬",
+  "■ ▬ ■"], {
+  "■": <ore:blockLapis>,            # Lapis Lazuli Block
+  "G": <conarm:gauntlet_mat>,       # Gauntlet (Base)
+  "▬": <randomthings:ingredient:3>, # Spectre Ingot
+});

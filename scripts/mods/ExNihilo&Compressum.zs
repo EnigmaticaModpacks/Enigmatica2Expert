@@ -140,3 +140,6 @@ craft.remake(<exnihilocreatio:hive>, ["pretty",
   H: <minecraft:hay_block>,# Hay Bale
 	b: <rustic:bee>
 });
+
+// Remove Burn Time to prevent confusing in JEI categories
+furnace.setFuel(<exnihilocreatio:hive:1>, 0);

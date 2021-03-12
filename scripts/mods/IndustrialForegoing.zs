@@ -168,7 +168,7 @@ function fluidDict(ins as string[]) {
 	<industrialforegoing:fluiddictionary_converter>,
 	[[<ore:itemRubber>, <ore:itemRubber>, <ore:itemRubber>], 
 	[<ore:blockGlass>, <ore:oreIron>, <ore:blockGlass>], 
-	[<minecraft:bucket>, <ore:gearIron>, <minecraft:bucket>]]);
+	[<flopper:flopper>, <ore:gearIron>, <flopper:flopper>]]);
 
 # Oredict Belts Recipes
 # [White Conveyor Belt*32] from [Redstone][+2]

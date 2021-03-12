@@ -254,7 +254,7 @@ zenClass BeeHelper {
 			next("Scrappy" ); scripts.process.crush(c['💧'], c['🍯'], "No exceptions", [c['🍯'], c['🍯'], c['🍯']], [0.50, 0.25, 0.10]);
 			next("Potter"  ); addTinkersCentrifuges();
 			next("Tinsmith"); addTinkersCentrifuges();
-			next("Рaughty" ); mods.botania.ManaInfusion.addInfusion(currOutList()[2], c['💧'], 1000); mods.botania.ManaInfusion.addAlchemy(currOutList()[3], c['💧'], 2000); mods.botania.ManaInfusion.addConjuration(currOutList()[4], c['💧'], 5000); 
+			next("Рaughty" ); mods.botania.ManaInfusion.addInfusion(currOutList()[2], c['💧'], 100); mods.botania.ManaInfusion.addAlchemy(currOutList()[3], c['💧'], 200); mods.botania.ManaInfusion.addConjuration(currOutList()[4], c['💧'], 500); 
 			next("Egoistic"); scripts.wrap.actuallyadditions.AtomicReconstructor.addRecipe(c['🍯'], c['💧'], 10000);
 			next("Vain"    ); scripts.process.fill(c['💧'],  <liquid:base_essence> * 16,  c['🍯'],  "Except: Casting DryingBasin MechanicalDryingBasin");
 			next("Tinker"  ); addTinkersCentrifuges();

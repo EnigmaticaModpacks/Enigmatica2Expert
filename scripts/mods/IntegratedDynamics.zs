@@ -132,3 +132,11 @@ craft.make(<integrateddynamics:cable> * 4, ["pretty",
   "C": <integrateddynamics:crystalized_menril_chunk>, # Crystalized Menril Chunk
   "♥": <ore:dustRedstone>, # Redstone
 });
+
+# [Fluid Interface] from [Flopper][+1]
+craft.remake(<integratedtunnels:part_interface_fluid_item>, ["pretty",
+  "∩ F ∩",
+  "∩ ∩ ∩"], {
+  "F": <flopper:flopper>, # Flopper
+  "∩": <integrateddynamics:crystalized_menril_chunk>, # Crystalized Menril Chunk
+});

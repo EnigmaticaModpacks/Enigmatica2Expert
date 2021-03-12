@@ -426,23 +426,23 @@ for i, mat in materials {
 	val lvl_i  = {Level: i as byte} as IData;
 	val lvl_im = {Level: (i - 1) as byte} as IData;
 
+	# Tank
+	craft.make(<thermalexpansion:tank>.withTag(lvl_i), ["pretty",
+		"□ a □",
+		"g ♥ g",
+		"□ a □"], {
+		"♥": i!=0 ? <thermalexpansion:tank>.withTag(lvl_im).marked("marked") : <thermalfoundation:material:864>,
+		"a": i!=0 ? oreDict["ingot" ~ materials[i - 1]] : <ore:ingotCopper>,
+		"g": oreDict["gear" ~ mat],
+		"□": <tconstruct:clear_glass>,
+	}, i!=0 ? upgradeFnc : null);
+
 	if(i != 0) {
 		# Simplify Satchels
 		craft.make(
 			<thermalexpansion:satchel>.definition.makeStack(i), ["aOa"],
 			{O: <thermalexpansion:satchel>.definition.makeStack(i - 1).marked("marked"), a: oreDict["nugget" ~ mat]}, utils.upgradeFnc
 		);
-
-		# Tank
-		craft.make(<thermalexpansion:tank>.withTag(lvl_i), ["pretty",
-			"□ a □",
-			"g ♥ g",
-			"□ a □"], {
-			"♥": <thermalexpansion:tank>.withTag(lvl_im).marked("marked"),
-			"a": oreDict["ingot" ~ materials[i - 1]],
-			"g": oreDict["gear" ~ mat],
-			"□": <tconstruct:clear_glass>,
-		}, upgradeFnc);
 
 		# Cache
 		craft.remake(<thermalexpansion:cache>.withTag(lvl_i), ["pretty",
@@ -480,16 +480,6 @@ for i, mat in materials {
 		"c": <thermalfoundation:material:515>, # Redstone Conductance Coil
 	}, (i==0)?null:upgradeFnc);
 }
-
-# Level 0 of items
-craft.make(<thermalexpansion:tank>.withTag({/* RSControl: 0 as byte,  */Level: 0 as byte}), ["pretty",
-	"  □  ",
-	"□ ▬ □",
-	"  ♥  "], {
-	"□": <ore:blockGlass>,
-	"♥": <thermalfoundation:material:512>, # Redstone Servo
-	"▬": <ore:ingotCopper>
-});
 
 # Cache
 craft.remake(<thermalexpansion:cache>.withTag({/* Facing: 3 as byte,  */Level: 0 as byte}), ["pretty",
@@ -594,3 +584,6 @@ craft.make(<thermalfoundation:material:640> * 8, ["pretty",
   "•": <ore:blockQuartzBlack>, # Block of Black Quartz
   "E": <tconstruct:large_plate>.withTag({Material: "electrum"}), # Electrum Large Plate
 });
+
+# Mending Moss Alt
+scripts.wrap.thermalexpansion.Enchanter.addRecipe(<tconstruct:materials:19> * 2, <tconstruct:materials:18>, <tconstruct:materials:18>, 12000, 3280 * 2, false);
