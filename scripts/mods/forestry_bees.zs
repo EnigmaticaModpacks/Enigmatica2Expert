@@ -135,8 +135,8 @@ reprocessComb(<forestry:bee_combs:15>, [
 # [Irradiated_Comb]
 reprocessComb(<forestry:bee_combs:9>, [
   g['🟡'] % 50, # Beeswax
-  <nuclearcraft:plutonium:14> % 20, # Tiny Clump of Plutonium-242
-  <nuclearcraft:uranium:10> % 80,  # Tiny Clump of Uranium-238
+  <ic2:nuclear> % 60,   # Enriched Uranium Nuclear Fuel
+  <ic2:nuclear:4> % 20, # MOX Nuclear Fuel
 ]);
 
 # [Wheaten_Comb]

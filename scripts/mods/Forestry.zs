@@ -222,3 +222,5 @@ val scentPanelGrid = Grid(["pretty",
 mods.forestry.Carpenter.removeRecipe(<forestry:crafting_material:6>);
 scripts.wrap.forestry.Carpenter.addRecipe(<forestry:crafting_material:6>, scentPanelGrid, 40, <liquid:for.honey> * 500);
 scripts.wrap.forestry.Carpenter.addRecipe(<forestry:crafting_material:6>, scentPanelGrid, 40, <liquid:honey>     * 500);
+
+<forestry:wax_cast>.maxStackSize = 64;
