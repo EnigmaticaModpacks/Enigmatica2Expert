@@ -1,11 +1,1 @@
-[Surge]: The game loaded in approximately  691.884 seconds.
-[main/ERROR] [FML]: Coremod EyeOfDragonsPlugin: Unable to class load the plugin de.curlybracket.eyeofdragons.EyeOfDragonsPlugin
-[main/WARN] [FML]: Patcher expecting empty class data file for net.minecraft.block.state.BlockStateContainer$Builder, but received non-empty
-[Client thread/WARN] [FML]: Mod requious is missing the required element 'version' and no fallback can be found. Substituting '1.0'.
-[Client thread/ERROR] [FML]: Unable to read a class file correctly
-[Client thread/ERROR] [FML]: There was a problem reading the entry module-info.class in the jar C:\Users\LD\Twitch\Minecraft\Instances\Enigmatica2Expert - Extended\mods\dcintegration-1.1.19-1.12.jar - probably a corrupt zip
-[Client thread/WARN] [FML]: Zip file dcintegration-1.1.19-1.12.jar failed to read properly, it will be ignored
-[Client thread/ERROR] [soundphysicsinjector]: Target node not found! org.orecruncher.dsurround.client.sound.ConfigSoundInstance
-[Client thread/WARN] [tweakersconstruct]: [Trait Tweaks] Could not find trait: difficulty_armor, skipping.
-[Client thread/WARN] [tconevo]: Failed to initialize artifact "phase_boots": Armour modification produced error: Not enough Modifiers. (1 needed)
-[pool-11-thread-4/ERROR] [unidict]: Immersive Engineering Integration: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+[Surge]: The game loaded in approximately  645.703 seconds.

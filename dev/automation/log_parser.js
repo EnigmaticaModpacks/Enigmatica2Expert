@@ -108,6 +108,15 @@ var ignore = [
 
   /\[immersiveengineering\]: Recipe has invalid inputs and will be ignored/,
 
+  /Coremod EyeOfDragonsPlugin: Unable to class load the plugin de.curlybracket.eyeofdragons.EyeOfDragonsPlugin/, // Reported https://github.com/MKuckert/eye-of-dragons/issues/4
+
+  // Something with dcintegration mod
+  /Unable to read a class file correctly/,
+  /There was a problem reading the entry module-info.class in the jar .*dcintegration.*- probably a corrupt zip/,
+  /Zip file dcintegration.*.jar failed to read properly, it will be ignored/,
+
+  /\[unidict\]: Immersive Engineering Integration: java\.lang\.IndexOutOfBoundsException: Index: 0, Size: 0/, // Reported, fixed https://github.com/WanionCane/UniDict/issues/195
+  /\[soundphysicsinjector\]: Target node not found! org\.orecruncher\.dsurround\.client\.sound\.ConfigSoundInstance/, // Reported: https://github.com/djpadbit/Sound-Physics/issues/69
 
   /*=============================================
   =               Ignoring Warnings             =
@@ -218,6 +227,8 @@ var ignore = [
   /\[enderio\]: Refined Storage conduits NOT loaded. Refined Storage is not installed/,
   /OBJModel\.Parser: found a face \('f'\) with more than 4 vertices, only the first 4 of these vertices will be rendered!/,
   /\[jetif\]: Couldn't load config field for Flux Networks, report this issue on JETIF's GitHub/, // actually not affecting game, https://github.com/Lykrast/JETIF/issues/20
+  /Mod requious is missing the required element 'version'/, // Reported: https://github.com/DaedalusGame/RequiousFrakto/issues/19
+  /Patcher expecting empty class data file for net\.minecraft\.block\.state\.BlockStateContainer\$Builder, but received non-empty/,
 ]
 
 
@@ -235,6 +246,7 @@ var known = [
 =============================================*/
 
 var log = fs.readFileSync('logs/debug.log', 'utf8')
+log = log.substring(0, log.indexOf('[Server thread/'))
 var newLog = (log.match(/\[Client thread\/INFO\] (\[Surge\]: The game loaded in approximately +.* seconds.)/)?.[1] ?? '') + '\n'
 
 var stat = {

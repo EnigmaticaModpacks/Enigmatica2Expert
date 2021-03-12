@@ -22,7 +22,7 @@ const numeral = require('numeral') // eslint-disable-line no-unused-vars
 
 //////////////////////////////////////////
 // Local dependencies
-const {matchBetween, write, end} = require('../lib/utils.js')
+const {matchBetween, write, end, config} = require('../lib/utils.js') // eslint-disable-line no-unused-vars
 const fs = require('fs')
 const path = require('path')
 
@@ -245,48 +245,6 @@ const paged = over([ // eslint-disable-line no-unused-vars
   function() { throw new Error('paged() has wrong parameters') } // No parameters function
 ])
 
-function config(cfgPath) { // eslint-disable-line no-unused-vars
-  var wholePath = 'config/' + cfgPath
-  var cfg = loadText(wholePath)
-  cfg = cfg
-    .replace(/^ *#.*$/gm, '') // Remove comments
-    .replace(/^~.*$/gm, '') // config version
-    .replace(/^ *(\w+|"[^"]+") *{ *$/gm, '$1:{') // class name
-    .replace(/^ *} *$/gm, '},') // end of block
-    .replace(/^ *\w:(?:([\w.]+)|"([^"]+)") *= *(.*)$/gm, (match, p1, p2, p3)=>{
-
-      return (isNaN(p3) && !(p3 === 'true' || p3 === 'false'))
-      ? `"${p1||p2}":"${p3}",`
-      : `"${p1||p2}":${p3},`
-    }) // simple values
-
-  // Replace lists
-  cfg = cfg.replace(/^ *\w:(?:([\w.]+)|"([^"]+)") *< *[\s\S\n\r]*?> *$/gm, (match, p1, p2)=>{
-    var lines = match.split('\n')
-    var content = lines.slice(1, lines.length-1)
-    return [
-      `"${p1||p2}"` + ': [',
-      ...content.map(l=>`"${l.trim()}",`),
-      '],'
-    ].join('\n')
-  })
-
-
-  var result
-  try {
-    result = eval(`({${cfg}})`)
-  } catch (error) {
-    console.log('Parsing config error. File: ', wholePath)
-    console.error(error)
-    saveText(
-      'return{'+
-      cfg.replace(/\n\n+/gm, '\n')
-      +'}',
-      path.resolve(__dirname, '_error_'+cfgPath.split('.').slice(0, -1).join('.')+'.js'))
-  }
-
-  return result
-}
 
 var book = {}
 const stat = {

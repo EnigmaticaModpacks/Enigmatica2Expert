@@ -153,3 +153,48 @@ function renameDeep(obj, cb) {
   return res
 }
 module.exports.renameDeep = renameDeep
+
+
+function config(cfgPath) {
+  var wholePath = 'config/' + cfgPath
+  var cfg = fs.readFileSync(wholePath, 'utf8')
+  cfg = cfg
+    .replace(/^ *#.*$/gm, '') // Remove comments
+    .replace(/^~.*$/gm, '') // config version
+    .replace(/^ *(\w+|"[^"]+") *{ *$/gm, '$1:{') // class name
+    .replace(/^ *} *$/gm, '},') // end of block
+    .replace(/^ *\w:(?:([\w.]+)|"([^"]+)") *= *(.*)$/gm, (match, p1, p2, p3)=>{
+
+      return (isNaN(p3) && !(p3 === 'true' || p3 === 'false')) || p3===''
+      ? `"${p1||p2}":"${p3}",`
+      : `"${p1||p2}":${p3},`
+    }) // simple values
+
+  // Replace lists
+  cfg = cfg.replace(/^ *\w:(?:([\w.]+)|"([^"]+)") *< *[\s\S\n\r]*?> *$/gm, (match, p1, p2)=>{
+    var lines = match.split('\n')
+    var content = lines.slice(1, lines.length-1)
+    return [
+      `"${p1||p2}"` + ': [',
+      ...content.map(l=>`"${l.trim()}",`),
+      '],'
+    ].join('\n')
+  })
+
+
+  var result
+  try {
+    result = eval(`({${cfg}})`)
+  } catch (error) {
+    console.log('Parsing config error. File: ', wholePath)
+    console.error(error)
+    saveText(
+      'return{'+
+      cfg.replace(/\n\n+/gm, '\n')
+      +'}',
+      path.resolve(__dirname, '_error_'+cfgPath.split('.').slice(0, -1).join('.')+'.js'))
+  }
+
+  return result
+}
+module.exports.config = config

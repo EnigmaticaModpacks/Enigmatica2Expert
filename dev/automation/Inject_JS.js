@@ -12,7 +12,7 @@ const glob = require('glob')
 const fs = require('fs')
 const csvParseSync = require('csv-parse/lib/sync')
 
-const {injectInFile, write, end} = require('../lib/utils.js')
+const {injectInFile, write, end, config} = require('../lib/utils.js') // eslint-disable-line no-unused-vars
 
 function loadText(filename, encoding = 'utf8') {
   return fs.readFileSync(filename, encoding)
@@ -60,3 +60,7 @@ occurences.forEach(cmd => {
 })
 
 end()
+
+console.log(
+
+)
