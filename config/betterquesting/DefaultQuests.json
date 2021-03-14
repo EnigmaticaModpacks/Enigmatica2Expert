@@ -1413,16 +1413,70 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "id:8": "bibliocraft:framedchest",
+              "Count:3": 6,
+              "tag:10": {
+                "renderTexture:8": "quark:blocks/iron_plate_rusted"
+              },
+              "Damage:2": 6,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "bibliocraft:framedchest",
+              "Count:3": 4,
+              "tag:10": {
+                "renderTexture:8": "chisel:blocks/metals/cobalt/badgreggy"
+              },
+              "Damage:2": 6,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "bibliocraft:framedchest",
+              "Count:3": 4,
+              "tag:10": {
+                "renderTexture:8": "chisel:blocks/factory/goldplate"
+              },
+              "Damage:2": 6,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "bibliocraft:framedchest",
+              "Count:3": 4,
+              "tag:10": {
+                "renderTexture:8": "sonarcore:blocks/connected/stablestonerimmedblack_green"
+              },
+              "Damage:2": 6,
+              "OreDict:8": ""
+            },
+            "4:10": {
+              "id:8": "bibliocraft:framedchest",
+              "Count:3": 1,
+              "tag:10": {
+                "renderTexture:8": "extendedcrafting:blocks/trimmed_ultimate"
+              },
+              "Damage:2": 6,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "1:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 1,
           "rewards:9": {
             "0:10": {
               "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
+                "astralsorcery:cap_item_amulet_holder:10": {
+                  "AS_Amulet_HolderLeast:4": -8469918875462925012,
+                  "AS_Amulet_HolderMost:4": -5260415147165141885
+                }
               },
-              "id:8": "bq_standard:loot_chest",
+              "id:8": "bibliocraft:handdrill",
               "Count:3": 1,
-              "Damage:2": 100,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -1559,16 +1613,59 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 1,
+          "choices:9": {
             "0:10": {
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
+              "id:8": "rustic:cabinet",
+              "Count:3": 4,
+              "tag:10": {
+                "material:10": {
+                  "id:8": "forestry:planks.1",
+                  "Count:1": 1,
+                  "Damage:2": 7
+                }
               },
-              "id:8": "bq_standard:loot_chest",
-              "Count:3": 1,
-              "Damage:2": 75,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "rustic:cabinet",
+              "Count:3": 4,
+              "tag:10": {
+                "material:10": {
+                  "id:8": "extrautils2:ironwood_planks",
+                  "Count:1": 1,
+                  "Damage:2": 0
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "rustic:cabinet",
+              "Count:3": 4,
+              "tag:10": {
+                "material:10": {
+                  "id:8": "chisel:planks-dark-oak",
+                  "Count:1": 1,
+                  "Damage:2": 5
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "rustic:cabinet",
+              "Count:3": 4,
+              "tag:10": {
+                "material:10": {
+                  "id:8": "forestry:planks.fireproof.1",
+                  "Count:1": 1,
+                  "Damage:2": 8
+                }
+              },
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -10607,7 +10704,7 @@
     "136:10": {
       "questID:3": 136,
       "preRequisites:11": [
-        139
+        144
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -11175,7 +11272,7 @@
     "144:10": {
       "questID:3": 144,
       "preRequisites:11": [
-        136
+        139
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -53215,7 +53312,7 @@
     "699:10": {
       "questID:3": 699,
       "preRequisites:11": [
-        136
+        144
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -53431,7 +53528,7 @@
     "702:10": {
       "questID:3": 702,
       "preRequisites:11": [
-        136
+        144
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -53641,7 +53738,7 @@
     "705:10": {
       "questID:3": 705,
       "preRequisites:11": [
-        136
+        144
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -53993,7 +54090,7 @@
           "icon:10": {
             "id:8": "enderio:item_material",
             "Count:3": 1,
-            "Damage:2": 1,
+            "Damage:2": 53,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -54107,12 +54204,12 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
-              "id:8": "bq_standard:loot_chest",
+              "id:8": "openblocks:trophy",
               "Count:3": 1,
-              "Damage:2": 101,
+              "tag:10": {
+                "entity_id:8": "minecraft:zombie_horse"
+              },
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -54679,8 +54776,11 @@
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "animania:entity_egg_cow_highland",
+            "id:8": "draconicevolution:mob_soul",
             "Count:3": 1,
+            "tag:10": {
+              "EntityName:8": "animania:bull_jersey"
+            },
             "Damage:2": 0,
             "OreDict:8": ""
           },
@@ -54715,24 +54815,654 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
-              "id:8": "animania:block_trough",
+              "id:8": "littletiles:multitiles",
               "Count:3": 1,
+              "tag:10": {
+                "tiles:9": {
+                  "0:10": {
+                    "boxes:9": {
+                      "0:11": [
+                        2,
+                        0,
+                        0,
+                        14,
+                        2,
+                        2
+                      ],
+                      "1:11": [
+                        2,
+                        0,
+                        14,
+                        14,
+                        2,
+                        16
+                      ],
+                      "2:11": [
+                        2,
+                        6,
+                        0,
+                        14,
+                        8,
+                        2
+                      ],
+                      "3:11": [
+                        2,
+                        6,
+                        14,
+                        14,
+                        8,
+                        16
+                      ],
+                      "4:11": [
+                        2,
+                        2,
+                        0,
+                        4,
+                        6,
+                        2
+                      ],
+                      "5:11": [
+                        12,
+                        2,
+                        0,
+                        14,
+                        6,
+                        2
+                      ],
+                      "6:11": [
+                        12,
+                        2,
+                        14,
+                        14,
+                        6,
+                        16
+                      ],
+                      "7:11": [
+                        2,
+                        2,
+                        14,
+                        4,
+                        6,
+                        16
+                      ],
+                      "8:11": [
+                        0,
+                        0,
+                        2,
+                        2,
+                        2,
+                        14
+                      ],
+                      "9:11": [
+                        14,
+                        0,
+                        2,
+                        16,
+                        2,
+                        14
+                      ],
+                      "10:11": [
+                        0,
+                        2,
+                        2,
+                        4,
+                        4,
+                        4
+                      ],
+                      "11:11": [
+                        0,
+                        2,
+                        12,
+                        4,
+                        4,
+                        14
+                      ],
+                      "12:11": [
+                        12,
+                        2,
+                        12,
+                        16,
+                        4,
+                        14
+                      ],
+                      "13:11": [
+                        12,
+                        2,
+                        2,
+                        16,
+                        4,
+                        4
+                      ]
+                    },
+                    "tile:10": {
+                      "block:8": "quark:vertical_planks:3"
+                    }
+                  },
+                  "1:10": {
+                    "bBox:11": [
+                      2,
+                      0,
+                      2,
+                      14,
+                      2,
+                      14
+                    ],
+                    "tile:10": {
+                      "block:8": "minecraft:hay_block"
+                    }
+                  },
+                  "2:10": {
+                    "boxes:9": {
+                      "0:11": [
+                        6,
+                        8,
+                        14,
+                        10,
+                        12,
+                        16
+                      ],
+                      "1:11": [
+                        6,
+                        8,
+                        0,
+                        10,
+                        12,
+                        2
+                      ]
+                    },
+                    "tile:10": {
+                      "invisible:1": 1,
+                      "block:8": "littletiles:ltstorageblocktile"
+                    }
+                  },
+                  "3:10": {
+                    "boxes:9": {
+                      "0:11": [
+                        10,
+                        8,
+                        6,
+                        12,
+                        10,
+                        8
+                      ],
+                      "1:11": [
+                        4,
+                        8,
+                        8,
+                        6,
+                        10,
+                        10
+                      ],
+                      "2:11": [
+                        3,
+                        2,
+                        6,
+                        7,
+                        5,
+                        7
+                      ],
+                      "3:11": [
+                        7,
+                        4,
+                        7,
+                        8,
+                        5,
+                        11
+                      ],
+                      "4:11": [
+                        9,
+                        2,
+                        4,
+                        13,
+                        5,
+                        5
+                      ],
+                      "5:11": [
+                        9,
+                        4,
+                        5,
+                        13,
+                        8,
+                        9
+                      ],
+                      "6:11": [
+                        13,
+                        4,
+                        5,
+                        14,
+                        5,
+                        9
+                      ],
+                      "7:11": [
+                        8,
+                        2,
+                        5,
+                        14,
+                        4,
+                        9
+                      ],
+                      "8:11": [
+                        9,
+                        2,
+                        9,
+                        13,
+                        5,
+                        10
+                      ],
+                      "9:11": [
+                        8,
+                        4,
+                        5,
+                        9,
+                        5,
+                        9
+                      ],
+                      "10:11": [
+                        2,
+                        2,
+                        7,
+                        8,
+                        4,
+                        11
+                      ],
+                      "11:11": [
+                        2,
+                        4,
+                        7,
+                        3,
+                        5,
+                        11
+                      ],
+                      "12:11": [
+                        3,
+                        2,
+                        11,
+                        7,
+                        5,
+                        12
+                      ],
+                      "13:11": [
+                        3,
+                        4,
+                        7,
+                        7,
+                        8,
+                        11
+                      ]
+                    },
+                    "tile:10": {
+                      "color:3": -8823979,
+                      "block:8": "minecraft:bone_block"
+                    }
+                  }
+                },
+                "min:11": [
+                  0,
+                  0,
+                  0
+                ],
+                "size:11": [
+                  16,
+                  12,
+                  16
+                ],
+                "display:10": {
+                  "Name:8": "Pair of Friesian Eggs"
+                },
+                "count:3": 31,
+                "structure:10": {
+                  "stackSizeLimit:3": 64,
+                  "invisibleStorage:1": 1,
+                  "lastSlot:3": 0,
+                  "name:8": "Pair of Friesian Eggs",
+                  "filled:3": 0,
+                  "numberOfSlots:3": 2,
+                  "id:8": "storage",
+                  "accessed:3": 0,
+                  "inventory:10": {
+                    "slot1:10": {
+                      "id:8": "animania:entity_egg_bull_friesian",
+                      "Count:1": 1,
+                      "Damage:2": 0
+                    },
+                    "size:3": 2,
+                    "slot0:10": {
+                      "id:8": "animania:entity_egg_cow_friesian",
+                      "Count:1": 1,
+                      "Damage:2": 0
+                    }
+                  },
+                  "inventorySize:3": 128
+                }
+              },
               "Damage:2": 0,
               "OreDict:8": ""
             },
             "1:10": {
-              "id:8": "animania:entity_egg_cow_random",
+              "id:8": "littletiles:multitiles",
               "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "2:10": {
-              "id:8": "animania:block_straw",
-              "Count:3": 5,
+              "tag:10": {
+                "tiles:9": {
+                  "0:10": {
+                    "boxes:9": {
+                      "0:11": [
+                        2,
+                        0,
+                        0,
+                        14,
+                        2,
+                        2
+                      ],
+                      "1:11": [
+                        2,
+                        0,
+                        14,
+                        14,
+                        2,
+                        16
+                      ],
+                      "2:11": [
+                        2,
+                        6,
+                        0,
+                        14,
+                        8,
+                        2
+                      ],
+                      "3:11": [
+                        2,
+                        6,
+                        14,
+                        14,
+                        8,
+                        16
+                      ],
+                      "4:11": [
+                        2,
+                        2,
+                        0,
+                        4,
+                        6,
+                        2
+                      ],
+                      "5:11": [
+                        12,
+                        2,
+                        0,
+                        14,
+                        6,
+                        2
+                      ],
+                      "6:11": [
+                        12,
+                        2,
+                        14,
+                        14,
+                        6,
+                        16
+                      ],
+                      "7:11": [
+                        2,
+                        2,
+                        14,
+                        4,
+                        6,
+                        16
+                      ],
+                      "8:11": [
+                        0,
+                        0,
+                        2,
+                        2,
+                        2,
+                        14
+                      ],
+                      "9:11": [
+                        14,
+                        0,
+                        2,
+                        16,
+                        2,
+                        14
+                      ],
+                      "10:11": [
+                        0,
+                        2,
+                        2,
+                        4,
+                        4,
+                        4
+                      ],
+                      "11:11": [
+                        0,
+                        2,
+                        12,
+                        4,
+                        4,
+                        14
+                      ],
+                      "12:11": [
+                        12,
+                        2,
+                        12,
+                        16,
+                        4,
+                        14
+                      ],
+                      "13:11": [
+                        12,
+                        2,
+                        2,
+                        16,
+                        4,
+                        4
+                      ]
+                    },
+                    "tile:10": {
+                      "block:8": "quark:vertical_planks:3"
+                    }
+                  },
+                  "1:10": {
+                    "bBox:11": [
+                      2,
+                      0,
+                      2,
+                      14,
+                      2,
+                      14
+                    ],
+                    "tile:10": {
+                      "block:8": "minecraft:hay_block"
+                    }
+                  },
+                  "2:10": {
+                    "boxes:9": {
+                      "0:11": [
+                        6,
+                        8,
+                        14,
+                        10,
+                        12,
+                        16
+                      ],
+                      "1:11": [
+                        6,
+                        8,
+                        0,
+                        10,
+                        12,
+                        2
+                      ]
+                    },
+                    "tile:10": {
+                      "invisible:1": 1,
+                      "block:8": "littletiles:ltstorageblocktile"
+                    }
+                  },
+                  "3:10": {
+                    "boxes:9": {
+                      "0:11": [
+                        2,
+                        2,
+                        7,
+                        8,
+                        4,
+                        11
+                      ],
+                      "1:11": [
+                        2,
+                        4,
+                        7,
+                        3,
+                        5,
+                        11
+                      ],
+                      "2:11": [
+                        3,
+                        4,
+                        7,
+                        7,
+                        8,
+                        11
+                      ],
+                      "3:11": [
+                        4,
+                        8,
+                        8,
+                        6,
+                        10,
+                        10
+                      ],
+                      "4:11": [
+                        3,
+                        2,
+                        6,
+                        7,
+                        5,
+                        7
+                      ],
+                      "5:11": [
+                        3,
+                        2,
+                        11,
+                        7,
+                        5,
+                        12
+                      ],
+                      "6:11": [
+                        7,
+                        4,
+                        7,
+                        8,
+                        5,
+                        11
+                      ],
+                      "7:11": [
+                        9,
+                        2,
+                        9,
+                        13,
+                        5,
+                        10
+                      ],
+                      "8:11": [
+                        8,
+                        2,
+                        5,
+                        14,
+                        4,
+                        9
+                      ],
+                      "9:11": [
+                        8,
+                        4,
+                        5,
+                        9,
+                        5,
+                        9
+                      ],
+                      "10:11": [
+                        9,
+                        4,
+                        5,
+                        13,
+                        8,
+                        9
+                      ],
+                      "11:11": [
+                        13,
+                        4,
+                        5,
+                        14,
+                        5,
+                        9
+                      ],
+                      "12:11": [
+                        10,
+                        8,
+                        6,
+                        12,
+                        10,
+                        8
+                      ],
+                      "13:11": [
+                        9,
+                        2,
+                        4,
+                        13,
+                        5,
+                        5
+                      ]
+                    },
+                    "tile:10": {
+                      "color:3": -13616815,
+                      "block:8": "minecraft:bone_block"
+                    }
+                  }
+                },
+                "min:11": [
+                  0,
+                  0,
+                  0
+                ],
+                "size:11": [
+                  16,
+                  12,
+                  16
+                ],
+                "display:10": {
+                  "Name:8": "Pair of Holstein Eggs"
+                },
+                "count:3": 31,
+                "structure:10": {
+                  "stackSizeLimit:3": 64,
+                  "invisibleStorage:1": 1,
+                  "lastSlot:3": 0,
+                  "name:8": "Pair of Holstein Eggs",
+                  "filled:3": 0,
+                  "numberOfSlots:3": 2,
+                  "id:8": "storage",
+                  "accessed:3": 0,
+                  "inventory:10": {
+                    "slot1:10": {
+                      "id:8": "animania:entity_egg_bull_holstein",
+                      "Count:1": 1,
+                      "Damage:2": 0
+                    },
+                    "size:3": 2,
+                    "slot0:10": {
+                      "id:8": "animania:entity_egg_cow_holstein",
+                      "Count:1": 1,
+                      "Damage:2": 0
+                    }
+                  },
+                  "inventorySize:3": 128
+                }
+              },
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -56411,9 +57141,9 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "id:8": "botania:manaresource",
-              "Count:3": 2,
-              "Damage:2": 8,
+              "id:8": "mia:pixie_dust_extractor",
+              "Count:3": 1,
+              "Damage:2": 0,
               "OreDict:8": ""
             },
             "2:10": {
@@ -58284,6 +59014,7 @@
               },
               "id:8": "botania:manaweavelegs",
               "Count:3": 1,
+              "tag:10": {},
               "Damage:2": 0,
               "OreDict:8": ""
             },
@@ -58293,6 +59024,7 @@
               },
               "id:8": "botania:manaweaveboots",
               "Count:3": 1,
+              "tag:10": {},
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -58403,6 +59135,7 @@
               },
               "id:8": "botania:manasteelchest",
               "Count:3": 1,
+              "tag:10": {},
               "Damage:2": 0,
               "OreDict:8": ""
             },
@@ -58531,6 +59264,7 @@
               },
               "id:8": "botania:elementiumchest",
               "Count:3": 1,
+              "tag:10": {},
               "Damage:2": 0,
               "OreDict:8": ""
             },
@@ -60248,6 +60982,296 @@
       }
     },
     "782:10": {
+      "questID:3": 782,
+      "preRequisites:11": [
+        49
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "storagedrawers:compdrawers",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Compacting Drawer",
+          "desc:8": "Quickly convert items between Storage Blocks and their original form, like §lNuggets§r, §lIngots§r, §lBlocks§r.\nAlso, converts Slime between colors."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "storagedrawers:compdrawers",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "id:8": "storagedrawers:quantify_key",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "fluiddrawers:tank",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "storagedrawers:upgrade_template",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "783:10": {
+      "questID:3": 783,
+      "preRequisites:11": [
+        13,
+        364
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "botania:specialflower",
+            "Count:3": 1,
+            "tag:10": {
+              "type:8": "petro_petunia"
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Petro Petunia",
+          "desc:8": "Generate mana from burnable fluids"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "botania:specialflower",
+              "Count:3": 1,
+              "tag:10": {
+                "type:8": "petro_petunia"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "784:10": {
+      "questID:3": 784,
+      "preRequisites:11": [
+        49
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "artisanworktables:worktable",
+            "Count:3": 1,
+            "Damage:2": 3,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Tinker\u0027s Recycling",
+          "desc:8": "Tinker\u0027s Tools and Armor can be recycled.\nSee more in \"Enigmatica\" book."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "artisanworktables:worktable",
+              "Count:3": 1,
+              "Damage:2": 3,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "enderio:block_alloy",
+              "Count:3": 5,
+              "Damage:2": 9,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "785:10": {
+      "questID:3": 785,
+      "preRequisites:11": [
+        59
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "capabilityproxy:item_capability_proxy",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Item Capability Proxy",
+          "desc:8": "This proxy can give acces to storage items like Satchels or Shulker Boxes.\n\nBut most powerful synergy achieved with §1DankNull"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "capabilityproxy:item_capability_proxy",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 50,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "786:10": {
       "questID:3": 786,
       "preRequisites:11": [
         787
@@ -60375,7 +61399,7 @@
         }
       }
     },
-    "783:10": {
+    "787:10": {
       "questID:3": 787,
       "preRequisites:11": [
         752
@@ -60511,7 +61535,167 @@
         }
       }
     },
-    "784:10": {
+    "788:10": {
+      "questID:3": 788,
+      "preRequisites:11": [
+        683
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {
+                "AS_Amulet_HolderLeast:4": -8469918875462925012,
+                "AS_Amulet_HolderMost:4": -5260415147165141885
+              }
+            },
+            "id:8": "actuallyadditions:item_tele_staff",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Teleportation Staff",
+          "desc:8": "Teleport the user to where the user is looking.\nThe maximum amount of blocks that can be teleported across is§l 49."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {
+                  "AS_Amulet_HolderLeast:4": -8469918875462925012,
+                  "AS_Amulet_HolderMost:4": -5260415147165141885
+                }
+              },
+              "id:8": "actuallyadditions:item_tele_staff",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "789:10": {
+      "questID:3": 789,
+      "preRequisites:11": [
+        126
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {
+                "AS_Amulet_HolderLeast:4": -8469918875462925012,
+                "AS_Amulet_HolderMost:4": -5260415147165141885
+              }
+            },
+            "id:8": "actuallyadditions:item_growth_ring",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Ring Of Growth",
+          "desc:8": "Cause the crops around the player in a 3 radius area to grow."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {
+                  "AS_Amulet_HolderLeast:4": -8469918875462925012,
+                  "AS_Amulet_HolderMost:4": -5260415147165141885
+                }
+              },
+              "id:8": "actuallyadditions:item_growth_ring",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "790:10": {
       "questID:3": 790,
       "preRequisites:11": [
         786
@@ -60642,7 +61826,84 @@
         }
       }
     },
-    "785:10": {
+    "791:10": {
+      "questID:3": 791,
+      "preRequisites:11": [
+        280
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "contenttweaker:bee_diversity",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Bee Diversity Store",
+          "desc:8": "Combine bees with Store to gather time.\nCombine with §bTime In Bottle§r to transfer time to bottle."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "contenttweaker:bee_diversity",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 50,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "792:10": {
       "questID:3": 792,
       "preRequisites:11": [
         565
@@ -60773,7 +62034,161 @@
         }
       }
     },
-    "786:10": {
+    "793:10": {
+      "questID:3": 793,
+      "preRequisites:11": [
+        274
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "forestry:alveary.plain",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Alveary",
+          "desc:8": "The Alveary is an advanced variant of the Apiary. The Alveary allows for combs to be produced faster due to its natural speed increase to production."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "forestry:alveary.plain",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "794:10": {
+      "questID:3": 794,
+      "preRequisites:11": [
+        278
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "exnihilocreatio:hive",
+            "Count:3": 1,
+            "Damage:2": 1,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Scented Hive",
+          "desc:8": "Scented Hive has to be placed in the world. It will eventually turn in to a bee hive, depending on blocks near it."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "exnihilocreatio:hive",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "forestry:apiarist_bag",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "forestry:database",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "795:10": {
       "questID:3": 795,
       "preRequisites:11": [
         52
@@ -60850,7 +62265,7 @@
         }
       }
     },
-    "787:10": {
+    "796:10": {
       "questID:3": 796,
       "preRequisites:11": [
         181
@@ -60924,7 +62339,7 @@
         }
       }
     },
-    "788:10": {
+    "797:10": {
       "questID:3": 797,
       "preRequisites:11": [
         51
@@ -60998,7 +62413,7 @@
         }
       }
     },
-    "789:10": {
+    "798:10": {
       "questID:3": 798,
       "preRequisites:11": [
         696,
@@ -61077,7 +62492,7 @@
         }
       }
     },
-    "790:10": {
+    "799:10": {
       "questID:3": 799,
       "preRequisites:11": [
         56
@@ -61190,7 +62605,7 @@
         }
       }
     },
-    "791:10": {
+    "800:10": {
       "questID:3": 800,
       "preRequisites:11": [
         51
@@ -61264,7 +62679,7 @@
         }
       }
     },
-    "792:10": {
+    "801:10": {
       "questID:3": 801,
       "preRequisites:11": [
         56
@@ -61348,7 +62763,7 @@
         }
       }
     },
-    "793:10": {
+    "802:10": {
       "questID:3": 802,
       "preRequisites:11": [
         53
@@ -61424,7 +62839,7 @@
         }
       }
     },
-    "794:10": {
+    "803:10": {
       "questID:3": 803,
       "preRequisites:11": [
         181
@@ -61498,7 +62913,7 @@
         }
       }
     },
-    "795:10": {
+    "804:10": {
       "questID:3": 804,
       "preRequisites:11": [
         167
@@ -61566,7 +62981,7 @@
         }
       }
     },
-    "796:10": {
+    "805:10": {
       "questID:3": 805,
       "preRequisites:11": [
         161
@@ -61634,7 +63049,7 @@
         }
       }
     },
-    "797:10": {
+    "806:10": {
       "questID:3": 806,
       "preRequisites:11": [
         161
@@ -61728,7 +63143,7 @@
         }
       }
     },
-    "798:10": {
+    "807:10": {
       "questID:3": 807,
       "preRequisites:11": [
         163
@@ -61796,7 +63211,7 @@
         }
       }
     },
-    "799:10": {
+    "808:10": {
       "questID:3": 808,
       "preRequisites:11": [
         280
@@ -61867,7 +63282,7 @@
         }
       }
     },
-    "800:10": {
+    "809:10": {
       "questID:3": 809,
       "preRequisites:11": [
         53
@@ -61947,7 +63362,7 @@
         }
       }
     },
-    "801:10": {
+    "810:10": {
       "questID:3": 810,
       "preRequisites:11": [
         698
@@ -62015,7 +63430,7 @@
         }
       }
     },
-    "802:10": {
+    "811:10": {
       "questID:3": 811,
       "preRequisites:11": [
         698
@@ -62083,7 +63498,7 @@
         }
       }
     },
-    "803:10": {
+    "812:10": {
       "questID:3": 812,
       "preRequisites:11": [
         707
@@ -62151,7 +63566,7 @@
         }
       }
     },
-    "804:10": {
+    "813:10": {
       "questID:3": 813,
       "preRequisites:11": [
         812
@@ -62219,10 +63634,10 @@
         }
       }
     },
-    "805:10": {
+    "814:10": {
       "questID:3": 814,
       "preRequisites:11": [
-        136
+        144
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -62287,7 +63702,7 @@
         }
       }
     },
-    "806:10": {
+    "815:10": {
       "questID:3": 815,
       "preRequisites:11": [
         146
@@ -62355,7 +63770,7 @@
         }
       }
     },
-    "807:10": {
+    "816:10": {
       "questID:3": 816,
       "preRequisites:11": [
         139
@@ -62423,7 +63838,7 @@
         }
       }
     },
-    "808:10": {
+    "817:10": {
       "questID:3": 817,
       "preRequisites:11": [
         220
@@ -62519,7 +63934,7 @@
         }
       }
     },
-    "809:10": {
+    "818:10": {
       "questID:3": 818,
       "preRequisites:11": [
         220
@@ -62587,7 +64002,7 @@
         }
       }
     },
-    "810:10": {
+    "819:10": {
       "questID:3": 819,
       "preRequisites:11": [
         723
@@ -62672,7 +64087,7 @@
         }
       }
     },
-    "811:10": {
+    "820:10": {
       "questID:3": 820,
       "preRequisites:11": [
         16
@@ -62744,7 +64159,7 @@
         }
       }
     },
-    "812:10": {
+    "821:10": {
       "questID:3": 821,
       "preRequisites:11": [
         820
@@ -62816,7 +64231,7 @@
         }
       }
     },
-    "813:10": {
+    "822:10": {
       "questID:3": 822,
       "preRequisites:11": [
         821
@@ -62894,7 +64309,7 @@
         }
       }
     },
-    "814:10": {
+    "823:10": {
       "questID:3": 823,
       "preRequisites:11": [
         16
@@ -62966,7 +64381,7 @@
         }
       }
     },
-    "815:10": {
+    "824:10": {
       "questID:3": 824,
       "preRequisites:11": [
         611
@@ -63034,7 +64449,7 @@
         }
       }
     },
-    "816:10": {
+    "825:10": {
       "questID:3": 825,
       "preRequisites:11": [
         613
@@ -63102,7 +64517,7 @@
         }
       }
     },
-    "817:10": {
+    "826:10": {
       "questID:3": 826,
       "preRequisites:11": [
         615
@@ -63170,7 +64585,7 @@
         }
       }
     },
-    "818:10": {
+    "827:10": {
       "questID:3": 827,
       "preRequisites:11": [
         615
@@ -63238,7 +64653,7 @@
         }
       }
     },
-    "819:10": {
+    "828:10": {
       "questID:3": 828,
       "preRequisites:11": [
         617
@@ -63306,7 +64721,7 @@
         }
       }
     },
-    "820:10": {
+    "829:10": {
       "questID:3": 829,
       "preRequisites:11": [
         617
@@ -63374,7 +64789,7 @@
         }
       }
     },
-    "821:10": {
+    "830:10": {
       "questID:3": 830,
       "preRequisites:11": [
         617
@@ -63442,7 +64857,7 @@
         }
       }
     },
-    "822:10": {
+    "831:10": {
       "questID:3": 831,
       "preRequisites:11": [
         617
@@ -63510,7 +64925,7 @@
         }
       }
     },
-    "823:10": {
+    "832:10": {
       "questID:3": 832,
       "preRequisites:11": [
         466
@@ -63578,7 +64993,79 @@
         }
       }
     },
-    "824:10": {
+    "833:10": {
+      "questID:3": 833,
+      "preRequisites:11": [
+        13
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "psi:programmer",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Gate: Psi",
+          "desc:8": "There is no PSI chapter, but Botania give access to the mod."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "psi:programmer",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 50,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "834:10": {
       "questID:3": 834,
       "preRequisites:11": [
         38
@@ -63650,7 +65137,7 @@
         }
       }
     },
-    "825:10": {
+    "835:10": {
       "questID:3": 835,
       "preRequisites:11": [
         843
@@ -63722,7 +65209,7 @@
         }
       }
     },
-    "826:10": {
+    "836:10": {
       "questID:3": 836,
       "preRequisites:11": [
         38
@@ -63794,7 +65281,7 @@
         }
       }
     },
-    "827:10": {
+    "837:10": {
       "questID:3": 837,
       "preRequisites:11": [
         777
@@ -63866,7 +65353,7 @@
         }
       }
     },
-    "828:10": {
+    "838:10": {
       "questID:3": 838,
       "preRequisites:11": [
         836
@@ -63938,7 +65425,85 @@
         }
       }
     },
-    "829:10": {
+    "839:10": {
+      "questID:3": 839,
+      "preRequisites:11": [
+        36
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "advgenerators:turbine_controller",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Gate: Advanced Generators",
+          "desc:8": "There is no Advanced Generators chapter, but Extra Utilities give access to the mod."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "advgenerators:turbine_controller",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "id:8": "advgenerators:exchanger_controller",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "advgenerators:steam_turbine_controller",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "advgenerators:syngas_controller",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "840:10": {
       "questID:3": 840,
       "preRequisites:11": [
         842
@@ -64010,7 +65575,7 @@
         }
       }
     },
-    "830:10": {
+    "841:10": {
       "questID:3": 841,
       "preRequisites:11": [
         840
@@ -64082,7 +65647,7 @@
         }
       }
     },
-    "831:10": {
+    "842:10": {
       "questID:3": 842,
       "preRequisites:11": [
         843
@@ -64154,7 +65719,7 @@
         }
       }
     },
-    "832:10": {
+    "843:10": {
       "questID:3": 843,
       "preRequisites:11": [
         38
@@ -64226,7 +65791,7 @@
         }
       }
     },
-    "833:10": {
+    "844:10": {
       "questID:3": 844,
       "preRequisites:11": [
         843
@@ -64311,7 +65876,7 @@
         }
       }
     },
-    "834:10": {
+    "845:10": {
       "questID:3": 845,
       "preRequisites:11": [
         838
@@ -64389,7 +65954,7 @@
         }
       }
     },
-    "835:10": {
+    "846:10": {
       "questID:3": 846,
       "preRequisites:11": [
         777
@@ -64461,7 +66026,7 @@
         }
       }
     },
-    "836:10": {
+    "847:10": {
       "questID:3": 847,
       "preRequisites:11": [
         848
@@ -64551,7 +66116,7 @@
         }
       }
     },
-    "837:10": {
+    "848:10": {
       "questID:3": 848,
       "preRequisites:11": [
         846
@@ -64623,7 +66188,7 @@
         }
       }
     },
-    "838:10": {
+    "849:10": {
       "questID:3": 849,
       "preRequisites:11": [
         846
@@ -64695,7 +66260,7 @@
         }
       }
     },
-    "839:10": {
+    "850:10": {
       "questID:3": 850,
       "preRequisites:11": [
         846
@@ -64767,7 +66332,7 @@
         }
       }
     },
-    "840:10": {
+    "851:10": {
       "questID:3": 851,
       "preRequisites:11": [
         834
@@ -64845,7 +66410,7 @@
         }
       }
     },
-    "841:10": {
+    "852:10": {
       "questID:3": 852,
       "preRequisites:11": [
         834
@@ -64929,7 +66494,7 @@
         }
       }
     },
-    "842:10": {
+    "853:10": {
       "questID:3": 853,
       "preRequisites:11": [
         854
@@ -65001,7 +66566,7 @@
         }
       }
     },
-    "843:10": {
+    "854:10": {
       "questID:3": 854,
       "preRequisites:11": [
         838
@@ -65073,7 +66638,7 @@
         }
       }
     },
-    "844:10": {
+    "855:10": {
       "questID:3": 855,
       "preRequisites:11": [
         777
@@ -65151,7 +66716,7 @@
         }
       }
     },
-    "845:10": {
+    "856:10": {
       "questID:3": 856,
       "preRequisites:11": [
         844
@@ -65223,7 +66788,7 @@
         }
       }
     },
-    "846:10": {
+    "857:10": {
       "questID:3": 857,
       "preRequisites:11": [
         840
@@ -65306,7 +66871,7 @@
         }
       }
     },
-    "847:10": {
+    "858:10": {
       "questID:3": 858,
       "preRequisites:11": [
         857
@@ -65349,6 +66914,959 @@
           "requiredItems:9": {
             "0:10": {
               "id:8": "ae2wtlib:infinity_booster_card",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "859:10": {
+      "questID:3": 859,
+      "preRequisites:11": [
+        330
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "extrautils2:terraformer",
+            "Count:3": 4,
+            "Damage:2": 1,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Terraformer",
+          "desc:8": "Terraformer changing biome around it. Can be handy for Bee breeding.\n1. Set block on ground\n2. Insert Biome Marker inside\n3. Increase range\n4. Place what submodules it requires beneath\n5. Fuel them up and supply each with Anthenna"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "extrautils2:terraformer",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "extrautils2:terraformer",
+              "Count:3": 1,
+              "Damage:2": 9,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "extrautils2:terraformer",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "extrautils2:biomemarker",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "860:10": {
+      "questID:3": 860,
+      "preRequisites:11": [
+        291
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "forestry:habitat_former",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Habitat Former",
+          "desc:8": "Allows players to manipulate the climate for bees in a specific region."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "forestry:habitat_former",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "861:10": {
+      "questID:3": 861,
+      "preRequisites:11": [
+        291
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "twilightforest:miniature_structure",
+            "Count:3": 1,
+            "Damage:2": 6,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Twilight Forest Quest ### map",
+          "desc:8": "TF quest Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "twilightforest:trophy",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "862:10": {
+      "questID:3": 862,
+      "preRequisites:11": [
+        291,
+        861
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "twilightforest:trophy",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Twilight Forest Quest ### naga",
+          "desc:8": "TF quest Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "twilightforest:trophy",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "863:10": {
+      "questID:3": 863,
+      "preRequisites:11": [
+        291,
+        862
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "twilightforest:trophy",
+            "Count:3": 1,
+            "Damage:2": 1,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Twilight Forest Quest ### lich",
+          "desc:8": "TF quest Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "twilightforest:trophy",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "864:10": {
+      "questID:3": 864,
+      "preRequisites:11": [
+        291,
+        863
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "twilightforest:trophy",
+            "Count:3": 1,
+            "Damage:2": 4,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Twilight Forest Quest ### knight",
+          "desc:8": "TF quest Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "twilightforest:trophy",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "865:10": {
+      "questID:3": 865,
+      "preRequisites:11": [
+        291,
+        864
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "twilightforest:trophy",
+            "Count:3": 1,
+            "Damage:2": 3,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Twilight Forest Quest ### ur",
+          "desc:8": "TF quest Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "twilightforest:trophy",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "866:10": {
+      "questID:3": 866,
+      "preRequisites:11": [
+        291,
+        863
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "twilightforest:alpha_fur",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Twilight Forest Quest ### alpha",
+          "desc:8": "TF quest Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "twilightforest:trophy",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "867:10": {
+      "questID:3": 867,
+      "preRequisites:11": [
+        291,
+        866
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "twilightforest:trophy",
+            "Count:3": 1,
+            "Damage:2": 5,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Twilight Forest Quest ### queen",
+          "desc:8": "TF quest Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "twilightforest:trophy",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "868:10": {
+      "questID:3": 868,
+      "preRequisites:11": [
+        291,
+        863
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "twilightforest:trophy",
+            "Count:3": 1,
+            "Damage:2": 6,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Twilight Forest Quest ### minosh",
+          "desc:8": "TF quest Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "twilightforest:trophy",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "869:10": {
+      "questID:3": 869,
+      "preRequisites:11": [
+        291,
+        868
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "twilightforest:trophy",
+            "Count:3": 1,
+            "Damage:2": 2,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Twilight Forest Quest ### hydra",
+          "desc:8": "TF quest Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "twilightforest:trophy",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "870:10": {
+      "questID:3": 870,
+      "preRequisites:11": [
+        291,
+        865,
+        867,
+        869
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "twilightforest:lamp_of_cinders",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Twilight Forest Quest ### lamp",
+          "desc:8": "TF quest Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "twilightforest:trophy",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "871:10": {
+      "questID:3": 871,
+      "preRequisites:11": [
+        291,
+        870
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "twilightforest:castle_rune_brick",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Twilight Forest Quest ### castle",
+          "desc:8": "TF quest Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "twilightforest:trophy",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -65615,47 +68133,68 @@
         },
         "33:10": {
           "sizeX:3": 24,
+          "x:3": 36,
+          "y:3": 36,
+          "id:3": 782,
+          "sizeY:3": 24
+        },
+        "34:10": {
+          "sizeX:3": 24,
+          "x:3": 36,
+          "y:3": 0,
+          "id:3": 784,
+          "sizeY:3": 24
+        },
+        "35:10": {
+          "sizeX:3": 24,
+          "x:3": 360,
+          "y:3": 108,
+          "id:3": 785,
+          "sizeY:3": 24
+        },
+        "36:10": {
+          "sizeX:3": 24,
           "x:3": 108,
           "y:3": 36,
           "id:3": 795,
           "sizeY:3": 24
         },
-        "34:10": {
+        "37:10": {
           "sizeX:3": 24,
           "x:3": 72,
           "y:3": 144,
           "id:3": 797,
           "sizeY:3": 24
         },
-        "35:10": {
+        "38:10": {
           "sizeX:3": 24,
           "x:3": 252,
           "y:3": 36,
           "id:3": 799,
           "sizeY:3": 24
         },
-        "36:10": {
+        "39:10": {
           "sizeX:3": 24,
           "x:3": 72,
           "y:3": 108,
           "id:3": 800,
           "sizeY:3": 24
         },
-        "37:10": {
+        "40:10": {
           "sizeX:3": 24,
           "x:3": 252,
           "y:3": 108,
           "id:3": 801,
           "sizeY:3": 24
         },
-        "38:10": {
+        "41:10": {
           "sizeX:3": 24,
           "x:3": 144,
           "y:3": 108,
           "id:3": 802,
           "sizeY:3": 24
         },
-        "39:10": {
+        "42:10": {
           "sizeX:3": 24,
           "x:3": 144,
           "y:3": 144,
@@ -65927,7 +68466,7 @@
           "desc:8": "Quests for Advanced Rocketry, a Tier 4 Tech mod. "
         }
       },
-      "order:3": 18
+      "order:3": 19
     },
     "2:10": {
       "quests:9": {
@@ -66017,8 +68556,8 @@
         },
         "12:10": {
           "sizeX:3": 24,
-          "x:3": -64,
-          "y:3": 40,
+          "x:3": -32,
+          "y:3": 72,
           "id:3": 285,
           "sizeY:3": 24
         },
@@ -66080,9 +68619,37 @@
         },
         "21:10": {
           "sizeX:3": 24,
+          "x:3": 64,
+          "y:3": 8,
+          "id:3": 791,
+          "sizeY:3": 24
+        },
+        "22:10": {
+          "sizeX:3": 24,
+          "x:3": -32,
+          "y:3": -24,
+          "id:3": 793,
+          "sizeY:3": 24
+        },
+        "23:10": {
+          "sizeX:3": 24,
+          "x:3": -96,
+          "y:3": -24,
+          "id:3": 794,
+          "sizeY:3": 24
+        },
+        "24:10": {
+          "sizeX:3": 24,
           "x:3": 32,
           "y:3": 40,
           "id:3": 808,
+          "sizeY:3": 24
+        },
+        "25:10": {
+          "sizeX:3": 24,
+          "x:3": -64,
+          "y:3": 40,
+          "id:3": 860,
           "sizeY:3": 24
         }
       },
@@ -66102,7 +68669,7 @@
           "desc:8": "Quests for Forestry, a Tier 1 Tech mod."
         }
       },
-      "order:3": 4
+      "order:3": 5
     },
     "3:10": {
       "quests:9": {
@@ -66343,7 +68910,7 @@
           "desc:8": "Quests for Immersive Engineering, a Tier 1 Tech mod."
         }
       },
-      "order:3": 5
+      "order:3": 6
     },
     "4:10": {
       "quests:9": {
@@ -66602,7 +69169,7 @@
           "desc:8": "Quests for Ender IO, a Tier 4 Tech mod."
         }
       },
-      "order:3": 20
+      "order:3": 21
     },
     "5:10": {
       "quests:9": {
@@ -66815,7 +69382,7 @@
           "desc:8": "Quests for Astral Sorcery."
         }
       },
-      "order:3": 7
+      "order:3": 8
     },
     "6:10": {
       "quests:9": {
@@ -67238,6 +69805,13 @@
           "y:3": 176,
           "id:3": 773,
           "sizeY:3": 24
+        },
+        "60:10": {
+          "sizeX:3": 24,
+          "x:3": 289,
+          "y:3": 195,
+          "id:3": 783,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 6,
@@ -67264,7 +69838,7 @@
           "desc:8": "Quests for Botania."
         }
       },
-      "order:3": 13
+      "order:3": 14
     },
     "7:10": {
       "quests:9": {
@@ -67589,7 +70163,7 @@
           "desc:8": "Quests for Mekanism, a Tier 2 Tech mod."
         }
       },
-      "order:3": 9
+      "order:3": 10
     },
     "8:10": {
       "quests:9": {
@@ -67925,7 +70499,7 @@
           "desc:8": "Quests for Blood Magic."
         }
       },
-      "order:3": 14
+      "order:3": 15
     },
     "9:10": {
       "quests:9": {
@@ -68278,7 +70852,7 @@
           "desc:8": "Quests for Thaumcraft."
         }
       },
-      "order:3": 6
+      "order:3": 7
     },
     "10:10": {
       "quests:9": {
@@ -68579,7 +71153,7 @@
           "desc:8": "Quests for IndustrialCraft2, a Tier 1 Tech mod."
         }
       },
-      "order:3": 3
+      "order:3": 4
     },
     "11:10": {
       "quests:9": {
@@ -68827,6 +71401,20 @@
           "y:3": 83,
           "id:3": 770,
           "sizeY:3": 24
+        },
+        "35:10": {
+          "sizeX:3": 24,
+          "x:3": 108,
+          "y:3": 144,
+          "id:3": 788,
+          "sizeY:3": 24
+        },
+        "36:10": {
+          "sizeX:3": 24,
+          "x:3": -176,
+          "y:3": 50,
+          "id:3": 789,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 11,
@@ -68845,7 +71433,7 @@
           "desc:8": "Quests for Actually Additions, a Tier 2 Tech mod."
         }
       },
-      "order:3": 10
+      "order:3": 11
     },
     "12:10": {
       "quests:9": {
@@ -68872,8 +71460,8 @@
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": 12,
-          "y:3": 132,
+          "x:3": -16,
+          "y:3": 128,
           "id:3": 136,
           "sizeY:3": 24
         },
@@ -68928,8 +71516,8 @@
         },
         "11:10": {
           "sizeX:3": 24,
-          "x:3": -16,
-          "y:3": 128,
+          "x:3": 12,
+          "y:3": 132,
           "id:3": 144,
           "sizeY:3": 24
         },
@@ -69090,7 +71678,7 @@
           "desc:8": "Quests for Industrial Foregoing, a Tier 2 Tech mod."
         }
       },
-      "order:3": 11
+      "order:3": 12
     },
     "13:10": {
       "quests:9": {
@@ -69468,7 +72056,7 @@
           "desc:8": "Quests for Thermal Expansion, a Tier 3 Tech mod."
         }
       },
-      "order:3": 17
+      "order:3": 18
     },
     "14:10": {
       "quests:9": {
@@ -69821,6 +72409,13 @@
           "y:3": 168,
           "id:3": 704,
           "sizeY:3": 24
+        },
+        "50:10": {
+          "sizeX:3": 24,
+          "x:3": 232,
+          "y:3": 8,
+          "id:3": 859,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 14,
@@ -69839,7 +72434,7 @@
           "desc:8": "Quests for Extra Utilities 2, a Tier 1.5 Tech mod."
         }
       },
-      "order:3": 8
+      "order:3": 9
     },
     "15:10": {
       "quests:9": {
@@ -70042,7 +72637,7 @@
           "desc:8": "Quests for RFTools, a Tier 2 Tech mod."
         }
       },
-      "order:3": 15
+      "order:3": 16
     },
     "16:10": {
       "quests:9": {
@@ -70609,7 +73204,7 @@
           "desc:8": "Quests for NuclearCraft, a Tier 2 Tech mod."
         }
       },
-      "order:3": 16
+      "order:3": 17
     },
     "18:10": {
       "quests:9": {
@@ -70868,7 +73463,7 @@
           "desc:8": "Quests for Environmental Tech, a Tier 4 Tech mod."
         }
       },
-      "order:3": 19
+      "order:3": 20
     },
     "19:10": {
       "quests:9": {
@@ -71148,7 +73743,7 @@
           "desc:8": "Quests for Draconic Evolution, a Tier 4 Tech mod."
         }
       },
-      "order:3": 21
+      "order:3": 22
     },
     "20:10": {
       "quests:9": {
@@ -71445,7 +74040,7 @@
           "desc:8": "Completing this chapter means winning the modpack!"
         }
       },
-      "order:3": 22
+      "order:3": 23
     },
     "21:10": {
       "quests:9": {
@@ -71613,13 +74208,13 @@
         "23:10": {
           "sizeX:3": 16,
           "x:3": 172,
-          "y:3": 68,
+          "y:3": 72,
           "id:3": 572,
           "sizeY:3": 16
         },
         "24:10": {
           "sizeX:3": 24,
-          "x:3": 216,
+          "x:3": 260,
           "y:3": 0,
           "id:3": 596,
           "sizeY:3": 24
@@ -71629,6 +74224,20 @@
           "x:3": 216,
           "y:3": 120,
           "id:3": 597,
+          "sizeY:3": 24
+        },
+        "26:10": {
+          "sizeX:3": 24,
+          "x:3": 260,
+          "y:3": 80,
+          "id:3": 833,
+          "sizeY:3": 24
+        },
+        "27:10": {
+          "sizeX:3": 24,
+          "x:3": 216,
+          "y:3": 0,
+          "id:3": 839,
           "sizeY:3": 24
         }
       },
@@ -71858,14 +74467,112 @@
           "desc:8": "§3Applied Energistics 2§r is a mod designed to compactly store items in a digital network called Matter Energy, or ME (pronounced Emm-Eee). \nDifferent devices can be connected to the ME Network, such as an ME Drive, for the storage of items, or an ME Terminal, allowing for access to that storage.\n\n"
         }
       },
-      "order:3": 12
+      "order:3": 13
+    },
+    "23:10": {
+      "quests:9": {
+        "0:10": {
+          "sizeX:3": 24,
+          "x:3": 0,
+          "y:3": 0,
+          "id:3": 861,
+          "sizeY:3": 24
+        },
+        "1:10": {
+          "sizeX:3": 24,
+          "x:3": 32,
+          "y:3": 0,
+          "id:3": 862,
+          "sizeY:3": 24
+        },
+        "2:10": {
+          "sizeX:3": 24,
+          "x:3": 64,
+          "y:3": 0,
+          "id:3": 863,
+          "sizeY:3": 24
+        },
+        "3:10": {
+          "sizeX:3": 24,
+          "x:3": 96,
+          "y:3": -32,
+          "id:3": 864,
+          "sizeY:3": 24
+        },
+        "4:10": {
+          "sizeX:3": 24,
+          "x:3": 128,
+          "y:3": -32,
+          "id:3": 865,
+          "sizeY:3": 24
+        },
+        "5:10": {
+          "sizeX:3": 24,
+          "x:3": 96,
+          "y:3": 0,
+          "id:3": 866,
+          "sizeY:3": 24
+        },
+        "6:10": {
+          "sizeX:3": 24,
+          "x:3": 128,
+          "y:3": 0,
+          "id:3": 867,
+          "sizeY:3": 24
+        },
+        "7:10": {
+          "sizeX:3": 24,
+          "x:3": 96,
+          "y:3": 32,
+          "id:3": 868,
+          "sizeY:3": 24
+        },
+        "8:10": {
+          "sizeX:3": 24,
+          "x:3": 128,
+          "y:3": 32,
+          "id:3": 869,
+          "sizeY:3": 24
+        },
+        "9:10": {
+          "sizeX:3": 24,
+          "x:3": 160,
+          "y:3": 0,
+          "id:3": 870,
+          "sizeY:3": 24
+        },
+        "10:10": {
+          "sizeX:3": 24,
+          "x:3": 192,
+          "y:3": 0,
+          "id:3": 871,
+          "sizeY:3": 24
+        }
+      },
+      "lineID:3": 23,
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "name:8": "Twilight Forest",
+          "icon:10": {
+            "id:8": "twilightforest:miniature_structure",
+            "Count:3": 1,
+            "Damage:2": 6,
+            "OreDict:8": ""
+          },
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "Adventure dimension"
+        }
+      },
+      "order:3": 3
     }
   },
   "questSettings:10": {
     "betterquesting:10": {
       "pack_name:8": "Enigmatica 2: Expert - Extended",
       "hardcore:1": 0,
-      "editmode:1": 0,
+      "editmode:1": 1,
       "livesMax:4": 10,
       "livesdef:3": 3,
       "home_anchor_y:5": 3.0,
