@@ -1,0 +1,145 @@
+{
+  "_index": "679:10",
+  "_pos": {
+    "_index": "44:10",
+    "_data": {
+      "sizeX:3": 24,
+      "x:3": 312,
+      "y:3": 8,
+      "id:3": 679,
+      "sizeY:3": 24
+    }
+  },
+  "_data": {
+    "questID:3": 679,
+    "preRequisites:11": [
+      675
+    ],
+    "properties:10": {
+      "betterquesting:10": {
+        "issilent:1": 0,
+        "lockedprogress:1": 1,
+        "tasklogic:8": "AND",
+        "repeattime:3": -1,
+        "simultaneous:1": 0,
+        "icon:10": {
+          "ForgeCaps:10": {
+            "astralsorcery:cap_item_amulet_holder:10": {}
+          },
+          "id:8": "thaumcraft:void_helm",
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": ""
+        },
+        "partysinglereward:1": 0,
+        "snd_update:8": "minecraft:entity.player.levelup",
+        "autoclaim:1": 0,
+        "repeatTime:4": -1,
+        "globalShare:8": "false",
+        "questLogic:8": "AND",
+        "ismain:1": 0,
+        "repeat_relative:1": 1,
+        "lockedProgress:8": "true",
+        "snd_complete:8": "minecraft:entity.player.levelup",
+        "taskLogic:8": "AND",
+        "partySingleReward:8": "false",
+        "visibility:8": "ALWAYS",
+        "isMain:8": "false",
+        "globalshare:1": 0,
+        "questlogic:8": "AND",
+        "name:8": "bq.quest679.name",
+        "autoClaim:8": "false",
+        "isSilent:8": "true",
+        "desc:8": "bq.quest679.desc"
+      }
+    },
+    "tasks:9": {
+      "0:10": {
+        "partialMatch:1": 1,
+        "autoConsume:1": 0,
+        "groupDetect:1": 0,
+        "ignoreNBT:1": 1,
+        "index:3": 0,
+        "consume:1": 0,
+        "requiredItems:9": {
+          "0:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "thaumcraft:void_helm",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "1:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "thaumcraft:void_chest",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "2:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "thaumcraft:void_legs",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "3:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "thaumcraft:void_boots",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          }
+        },
+        "taskID:8": "bq_standard:retrieval"
+      }
+    },
+    "rewards:9": {
+      "0:10": {
+        "rewardID:8": "bq_standard:choice",
+        "index:3": 0,
+        "choices:9": {
+          "0:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "bq_standard:loot_chest",
+            "Count:3": 1,
+            "Damage:2": 25,
+            "OreDict:8": ""
+          },
+          "1:10": {
+            "id:8": "thaumcraft:curio",
+            "Count:3": 1,
+            "Damage:2": 4,
+            "OreDict:8": ""
+          },
+          "2:10": {
+            "id:8": "thaumcraft:curio",
+            "Count:3": 1,
+            "Damage:2": 3,
+            "OreDict:8": ""
+          }
+        }
+      },
+      "1:10": {
+        "hideBlockIcon:1": 1,
+        "rewardID:8": "bq_standard:command",
+        "asScript:1": 1,
+        "description:8": "Allow mobs spawn with this armor set",
+        "viaPlayer:1": 0,
+        "index:3": 1,
+        "title:8": "bq_standard.reward.command",
+        "command:8": "gamestage silentadd VAR_NAME armor_void"
+      }
+    }
+  }
+}

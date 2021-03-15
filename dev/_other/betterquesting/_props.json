@@ -1,0 +1,22 @@
+{
+  "format:8": "2.0.0",
+  "questSettings:10": {
+    "betterquesting:10": {
+      "pack_name:8": "Enigmatica 2: Expert - Extended",
+      "hardcore:1": 0,
+      "editmode:1": 1,
+      "livesMax:4": 10,
+      "livesdef:3": 3,
+      "home_anchor_y:5": 3,
+      "livesDef:4": 3,
+      "home_anchor_x:5": 0.5,
+      "livesmax:3": 10,
+      "home_image:8": "modpack:textures/betterquesting/goal.png",
+      "party_enable:1": 1,
+      "editMode:8": "false",
+      "pack_version:3": 1,
+      "home_offset_x:3": -128,
+      "home_offset_y:3": 0
+    }
+  }
+}

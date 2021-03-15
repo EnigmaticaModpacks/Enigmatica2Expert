@@ -1,0 +1,22 @@
+{
+  "_index": "19:10",
+  "_data": {
+    "lineID:3": 19,
+    "properties:10": {
+      "betterquesting:10": {
+        "visibility:8": "ALWAYS",
+        "name:8": "Draconic Evolution",
+        "icon:10": {
+          "id:8": "draconicevolution:awakened_core",
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": ""
+        },
+        "bg_image:8": "",
+        "bg_size:3": 256,
+        "desc:8": "Quests for Draconic Evolution, a Tier 4 Tech mod."
+      }
+    },
+    "order:3": 22
+  }
+}

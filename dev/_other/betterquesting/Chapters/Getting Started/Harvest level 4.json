@@ -1,0 +1,118 @@
+{
+  "_index": "51:10",
+  "_pos": {
+    "_index": "8:10",
+    "_data": {
+      "sizeX:3": 24,
+      "x:3": 72,
+      "y:3": 72,
+      "id:3": 51,
+      "sizeY:3": 24
+    }
+  },
+  "_data": {
+    "questID:3": 51,
+    "preRequisites:11": [
+      49
+    ],
+    "properties:10": {
+      "betterquesting:10": {
+        "issilent:1": 0,
+        "snd_complete:8": "minecraft:entity.player.levelup",
+        "lockedprogress:1": 1,
+        "partySingleReward:8": "false",
+        "tasklogic:8": "OR",
+        "repeattime:3": -1,
+        "visibility:8": "ALWAYS",
+        "simultaneous:1": 0,
+        "icon:10": {
+          "id:8": "tconstruct:sharpening_kit",
+          "Count:3": 64,
+          "tag:10": {
+            "Material:8": "lead"
+          },
+          "Damage:2": 0,
+          "OreDict:8": ""
+        },
+        "globalshare:1": 0,
+        "questlogic:8": "AND",
+        "partysinglereward:1": 0,
+        "snd_update:8": "minecraft:entity.player.levelup",
+        "autoclaim:1": 0,
+        "ismain:1": 0,
+        "repeat_relative:1": 1,
+        "name:8": "bq.quest51.name",
+        "desc:8": "bq.quest51.desc"
+      }
+    },
+    "tasks:9": {
+      "0:10": {
+        "partialMatch:1": 1,
+        "autoConsume:1": 0,
+        "groupDetect:1": 0,
+        "ignoreNBT:1": 0,
+        "index:3": 0,
+        "consume:1": 0,
+        "requiredItems:9": {
+          "0:10": {
+            "id:8": "thermalfoundation:ore",
+            "Count:3": 2,
+            "Damage:2": 3,
+            "OreDict:8": "oreLead"
+          }
+        },
+        "taskID:8": "bq_standard:retrieval"
+      },
+      "1:10": {
+        "partialMatch:1": 1,
+        "autoConsume:1": 0,
+        "groupDetect:1": 0,
+        "ignoreNBT:1": 0,
+        "index:3": 1,
+        "consume:1": 0,
+        "requiredItems:9": {
+          "0:10": {
+            "id:8": "thermalfoundation:ore",
+            "Count:3": 2,
+            "Damage:2": 2,
+            "OreDict:8": "oreSilver"
+          }
+        },
+        "taskID:8": "bq_standard:retrieval"
+      }
+    },
+    "rewards:9": {
+      "0:10": {
+        "rewardID:8": "bq_standard:choice",
+        "index:3": 0,
+        "choices:9": {
+          "0:10": {
+            "id:8": "thermalfoundation:material",
+            "Count:3": 16,
+            "Damage:2": 163,
+            "OreDict:8": "ingotBronze"
+          },
+          "1:10": {
+            "id:8": "minecraft:iron_ingot",
+            "Count:3": 16,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "2:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "scannable:module_block",
+            "Count:3": 1,
+            "tag:10": {
+              "meta:3": 0,
+              "block:8": "mekanism:oreblock"
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          }
+        }
+      }
+    }
+  }
+}

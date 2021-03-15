@@ -1,0 +1,22 @@
+{
+  "_index": "12:10",
+  "_data": {
+    "lineID:3": 12,
+    "properties:10": {
+      "betterquesting:10": {
+        "visibility:8": "ALWAYS",
+        "name:8": "Industrial Foregoing",
+        "icon:10": {
+          "id:8": "industrialforegoing:mob_duplicator",
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": ""
+        },
+        "bg_image:8": "",
+        "bg_size:3": 256,
+        "desc:8": "Quests for Industrial Foregoing, a Tier 2 Tech mod."
+      }
+    },
+    "order:3": 12
+  }
+}

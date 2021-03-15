@@ -1,0 +1,22 @@
+{
+  "_index": "21:10",
+  "_data": {
+    "lineID:3": 21,
+    "properties:10": {
+      "betterquesting:10": {
+        "visibility:8": "ALWAYS",
+        "name:8": "Gates",
+        "icon:10": {
+          "id:8": "minecraft:crafting_table",
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": ""
+        },
+        "bg_image:8": "",
+        "bg_size:3": 256,
+        "desc:8": "This chapter contains the quests that gate the other chapters."
+      }
+    },
+    "order:3": 1
+  }
+}

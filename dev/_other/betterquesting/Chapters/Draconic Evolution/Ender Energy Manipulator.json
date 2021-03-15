@@ -1,0 +1,84 @@
+{
+  "_index": "530:10",
+  "_pos": {
+    "_index": "9:10",
+    "_data": {
+      "sizeX:3": 24,
+      "x:3": 48,
+      "y:3": 168,
+      "id:3": 530,
+      "sizeY:3": 24
+    }
+  },
+  "_data": {
+    "questID:3": 530,
+    "preRequisites:11": [
+      467
+    ],
+    "properties:10": {
+      "betterquesting:10": {
+        "issilent:1": 0,
+        "snd_complete:8": "minecraft:entity.player.levelup",
+        "lockedprogress:1": 1,
+        "tasklogic:8": "AND",
+        "repeattime:3": -1,
+        "visibility:8": "ALWAYS",
+        "simultaneous:1": 0,
+        "icon:10": {
+          "id:8": "draconicevolution:ender_energy_manipulator",
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": ""
+        },
+        "globalshare:1": 0,
+        "questlogic:8": "AND",
+        "partysinglereward:1": 0,
+        "snd_update:8": "minecraft:entity.player.levelup",
+        "autoclaim:1": 0,
+        "ismain:1": 0,
+        "repeat_relative:1": 1,
+        "name:8": "bq.quest530.name",
+        "desc:8": "bq.quest530.desc"
+      }
+    },
+    "tasks:9": {
+      "0:10": {
+        "partialMatch:1": 1,
+        "autoConsume:1": 0,
+        "groupDetect:1": 0,
+        "ignoreNBT:1": 1,
+        "index:3": 0,
+        "consume:1": 0,
+        "requiredItems:9": {
+          "0:10": {
+            "id:8": "draconicevolution:ender_energy_manipulator",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          }
+        },
+        "taskID:8": "bq_standard:retrieval"
+      }
+    },
+    "rewards:9": {
+      "0:10": {
+        "rewardID:8": "bq_standard:item",
+        "index:3": 0,
+        "rewards:9": {
+          "0:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "bq_standard:loot_chest",
+            "Count:3": 1,
+            "tag:10": {
+              "hideLootInfo:1": 1
+            },
+            "Damage:2": 50,
+            "OreDict:8": ""
+          }
+        }
+      }
+    }
+  }
+}

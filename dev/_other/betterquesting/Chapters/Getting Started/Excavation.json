@@ -1,0 +1,240 @@
+{
+  "_index": "434:10",
+  "_pos": {
+    "_index": "23:10",
+    "_data": {
+      "sizeX:3": 24,
+      "x:3": -108,
+      "y:3": 108,
+      "id:3": 434,
+      "sizeY:3": 24
+    }
+  },
+  "_data": {
+    "questID:3": 434,
+    "preRequisites:11": [
+      605
+    ],
+    "properties:10": {
+      "betterquesting:10": {
+        "issilent:1": 0,
+        "snd_complete:8": "minecraft:entity.player.levelup",
+        "lockedprogress:1": 1,
+        "tasklogic:8": "AND",
+        "repeattime:3": -1,
+        "visibility:8": "ALWAYS",
+        "simultaneous:1": 0,
+        "icon:10": {
+          "ForgeCaps:10": {
+            "plustic::10": {
+              "Size:3": 1,
+              "Items:9": {}
+            },
+            "astralsorcery:cap_item_amulet_holder:10": {},
+            "plustic:fruitsalad_cap:10": {
+              "Size:3": 5,
+              "Items:9": {}
+            },
+            "plustic:musicofthespheres_cap:10": {
+              "Size:3": 1,
+              "Items:9": {}
+            }
+          },
+          "id:8": "tconstruct:pickaxe",
+          "Count:3": 1,
+          "tag:10": {
+            "StatsOriginal:10": {
+              "AttackSpeedMultiplier:5": 1,
+              "MiningSpeed:5": 12,
+              "FreeModifiers:3": 3,
+              "Durability:3": 861,
+              "HarvestLevel:3": 7,
+              "Attack:5": 4.1
+            },
+            "display:10": {
+              "NoRename:1": 1,
+              "Name:8": "InfiHarvester"
+            },
+            "Stats:10": {
+              "AttackSpeedMultiplier:5": 1,
+              "MiningSpeed:5": 999999,
+              "FreeModifiers:3": 0,
+              "Durability:3": 999999,
+              "HarvestLevel:3": 7,
+              "Attack:5": 999999
+            },
+            "Special:10": {
+              "Categories:9": {
+                "0:8": "aoe",
+                "1:8": "tool",
+                "2:8": "harvest"
+              }
+            },
+            "TinkerData:10": {
+              "Materials:9": {
+                "0:8": "slime",
+                "1:8": "cobalt",
+                "2:8": "ardite"
+              },
+              "Modifiers:9": {
+                "0:8": "toolleveling",
+                "1:8": "infitool"
+              }
+            },
+            "Modifiers:9": {
+              "0:10": {
+                "identifier:8": "slimey_green",
+                "color:3": -8206221,
+                "level:3": 1
+              },
+              "1:10": {
+                "identifier:8": "momentum",
+                "color:3": -14122284,
+                "level:3": 1
+              },
+              "2:10": {
+                "identifier:8": "petramor",
+                "color:3": -3063280,
+                "level:3": 1
+              },
+              "3:10": {
+                "identifier:8": "toolleveling",
+                "color:3": 16777215,
+                "level:3": 1
+              },
+              "4:10": {
+                "identifier:8": "infitool",
+                "color:3": 16777215,
+                "level:3": 1
+              }
+            },
+            "Traits:9": {
+              "0:8": "slimey_green",
+              "1:8": "momentum",
+              "2:8": "petramor",
+              "3:8": "toolleveling",
+              "4:8": "infitool"
+            }
+          },
+          "Damage:2": 0,
+          "OreDict:8": ""
+        },
+        "globalshare:1": 0,
+        "questlogic:8": "AND",
+        "partysinglereward:1": 0,
+        "snd_update:8": "minecraft:entity.player.levelup",
+        "autoclaim:1": 0,
+        "ismain:1": 0,
+        "repeat_relative:1": 1,
+        "name:8": "bq.quest434.name",
+        "desc:8": "bq.quest434.desc"
+      }
+    },
+    "tasks:9": {
+      "0:10": {
+        "partialMatch:1": 1,
+        "autoConsume:1": 0,
+        "groupDetect:1": 0,
+        "ignoreNBT:1": 1,
+        "index:3": 0,
+        "consume:1": 0,
+        "requiredItems:9": {
+          "0:10": {
+            "ForgeCaps:10": {
+              "plustic::10": {
+                "Size:3": 1,
+                "Items:9": {}
+              },
+              "astralsorcery:cap_item_amulet_holder:10": {},
+              "plustic:fruitsalad_cap:10": {
+                "Size:3": 5,
+                "Items:9": {}
+              },
+              "plustic:musicofthespheres_cap:10": {
+                "Size:3": 1,
+                "Items:9": {}
+              }
+            },
+            "id:8": "tconstruct:pickaxe",
+            "Count:3": 1,
+            "tag:10": {
+              "StatsOriginal:10": {
+                "AttackSpeedMultiplier:5": 1,
+                "MiningSpeed:5": 3.75,
+                "FreeModifiers:3": 3,
+                "Durability:3": 143,
+                "HarvestLevel:3": 0,
+                "Attack:5": 2.175
+              },
+              "Stats:10": {
+                "AttackSpeedMultiplier:5": 1,
+                "MiningSpeed:5": 3.75,
+                "FreeModifiers:3": 2,
+                "Durability:3": 143,
+                "HarvestLevel:3": 0,
+                "Attack:5": 2.175
+              },
+              "Special:10": {
+                "Categories:9": {
+                  "0:8": "harvest",
+                  "1:8": "tool",
+                  "2:8": "aoe"
+                }
+              },
+              "TinkerData:10": {
+                "Materials:9": {
+                  "0:8": "wood",
+                  "1:8": "flint",
+                  "2:8": "wood"
+                },
+                "Modifiers:9": {
+                  "0:8": "toolleveling"
+                }
+              },
+              "Modifiers:9": {
+                "0:10": {
+                  "identifier:8": "ecological",
+                  "color:3": -7444965,
+                  "level:3": 1
+                },
+                "1:10": {
+                  "identifier:8": "crude",
+                  "color:3": -9868951,
+                  "level:3": 2,
+                  "crude2:1": 1
+                },
+                "2:10": {
+                  "identifier:8": "toolleveling",
+                  "color:3": 16777215,
+                  "level:3": 1
+                }
+              },
+              "Traits:9": {
+                "0:8": "ecological",
+                "1:8": "crude2",
+                "2:8": "toolleveling"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          }
+        },
+        "taskID:8": "bq_standard:retrieval"
+      }
+    },
+    "rewards:9": {
+      "0:10": {
+        "rewardID:8": "bq_standard:item",
+        "index:3": 0,
+        "rewards:9": {
+          "0:10": {
+            "id:8": "oeintegration:excavatemodifier",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          }
+        }
+      }
+    }
+  }
+}

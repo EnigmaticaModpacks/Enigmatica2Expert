@@ -1,0 +1,25 @@
+{
+  "_index": "3:10",
+  "_data": {
+    "lineID:3": 3,
+    "properties:10": {
+      "betterquesting:10": {
+        "visibility:8": "ALWAYS",
+        "name:8": "Immersive Engineering",
+        "icon:10": {
+          "ForgeCaps:10": {
+            "astralsorcery:cap_item_amulet_holder:10": {}
+          },
+          "id:8": "immersiveengineering:tool",
+          "Count:3": 1,
+          "Damage:2": 0,
+          "OreDict:8": ""
+        },
+        "bg_image:8": "",
+        "bg_size:3": 256,
+        "desc:8": "Quests for Immersive Engineering, a Tier 1 Tech mod."
+      }
+    },
+    "order:3": 6
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "_index": "721:10",
+  "_pos": {
+    "_index": "7:10",
+    "_data": {
+      "sizeX:3": 30,
+      "x:3": -135,
+      "y:3": -16,
+      "id:3": 721,
+      "sizeY:3": 30
+    }
+  },
+  "_data": {
+    "questID:3": 721,
+    "preRequisites:11": [
+      718
+    ],
+    "properties:10": {
+      "betterquesting:10": {
+        "issilent:1": 0,
+        "snd_complete:8": "minecraft:entity.player.levelup",
+        "lockedprogress:1": 1,
+        "tasklogic:8": "AND",
+        "repeattime:3": -1,
+        "visibility:8": "ALWAYS",
+        "simultaneous:1": 0,
+        "icon:10": {
+          "id:8": "animania:friesian_cheese_wheel",
+          "Count:3": 64,
+          "Damage:2": 0,
+          "OreDict:8": ""
+        },
+        "globalshare:1": 0,
+        "questlogic:8": "AND",
+        "snd_update:8": "minecraft:entity.player.levelup",
+        "autoclaim:1": 0,
+        "repeat_relative:1": 1,
+        "ismain:1": 1,
+        "name:8": "bq.quest721.name",
+        "desc:8": "bq.quest721.desc"
+      }
+    },
+    "tasks:9": {
+      "0:10": {
+        "partialMatch:1": 1,
+        "autoConsume:1": 0,
+        "groupDetect:1": 0,
+        "ignoreNBT:1": 0,
+        "index:3": 0,
+        "consume:1": 0,
+        "requiredItems:9": {
+          "0:10": {
+            "id:8": "animania:friesian_cheese_wheel",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "cheeseWheels"
+          }
+        },
+        "taskID:8": "bq_standard:retrieval"
+      }
+    },
+    "rewards:9": {
+      "0:10": {
+        "rewardID:8": "bq_standard:item",
+        "index:3": 0,
+        "rewards:9": {
+          "0:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "animania:carving_knife",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "1:10": {
+            "id:8": "minecraft:wheat",
+            "Count:3": 64,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "2:10": {
+            "id:8": "rats:garbage_pile",
+            "Count:3": 6,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          }
+        }
+      }
+    }
+  }
+}

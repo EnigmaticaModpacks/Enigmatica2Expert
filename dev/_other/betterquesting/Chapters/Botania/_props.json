@@ -1,0 +1,30 @@
+{
+  "_index": "6:10",
+  "_data": {
+    "lineID:3": 6,
+    "properties:10": {
+      "betterquesting:10": {
+        "RenderFull:1": 1,
+        "visibility:8": "ALWAYS",
+        "name:8": "Botania",
+        "icon:10": {
+          "ForgeCaps:10": {
+            "astralsorcery:cap_item_amulet_holder:10": {}
+          },
+          "id:8": "botania:twigwand",
+          "Count:3": 1,
+          "tag:10": {
+            "color1:3": 3,
+            "color2:3": 3
+          },
+          "Damage:2": 0,
+          "OreDict:8": ""
+        },
+        "bg_image:8": "",
+        "bg_size:3": 256,
+        "desc:8": "Quests for Botania."
+      }
+    },
+    "order:3": 14
+  }
+}

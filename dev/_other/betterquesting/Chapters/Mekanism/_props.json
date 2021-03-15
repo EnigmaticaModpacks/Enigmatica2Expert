@@ -1,0 +1,25 @@
+{
+  "_index": "7:10",
+  "_data": {
+    "lineID:3": 7,
+    "properties:10": {
+      "betterquesting:10": {
+        "visibility:8": "ALWAYS",
+        "name:8": "Mekanism",
+        "icon:10": {
+          "ForgeCaps:10": {
+            "astralsorcery:cap_item_amulet_holder:10": {}
+          },
+          "id:8": "mekanism:machineblock",
+          "Count:3": 1,
+          "Damage:2": 8,
+          "OreDict:8": ""
+        },
+        "bg_image:8": "",
+        "bg_size:3": 256,
+        "desc:8": "Quests for Mekanism, a Tier 2 Tech mod."
+      }
+    },
+    "order:3": 10
+  }
+}

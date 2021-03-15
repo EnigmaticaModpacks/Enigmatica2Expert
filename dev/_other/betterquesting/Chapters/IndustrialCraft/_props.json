@@ -1,0 +1,22 @@
+{
+  "_index": "10:10",
+  "_data": {
+    "lineID:3": 10,
+    "properties:10": {
+      "betterquesting:10": {
+        "visibility:8": "ALWAYS",
+        "name:8": "IndustrialCraft",
+        "icon:10": {
+          "id:8": "ic2:te",
+          "Count:3": 1,
+          "Damage:2": 3,
+          "OreDict:8": ""
+        },
+        "bg_image:8": "",
+        "bg_size:3": 256,
+        "desc:8": "Quests for IndustrialCraft2, a Tier 1 Tech mod."
+      }
+    },
+    "order:3": 4
+  }
+}
