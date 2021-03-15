@@ -1,5 +1,56 @@
 [
   {
+    "resourceName": "adv_bee_analyzer",
+    "model": "requious:adv_bee_analyzer",
+    "placeType": "Any",
+    "layerType": "Cutout",
+    "hasGUI": true,
+    "extraVariants": [],
+    "colors": [
+      {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      }
+    ],
+    "hardness": 5.0,
+    "blastResistance": 5.0,
+    "aabb": {
+      "x1": 0.0,
+      "y1": 0.0,
+      "z1": 0.0,
+      "x2": 1.0,
+      "y2": 1.0,
+      "z2": 1.0
+    }
+  },{
+    "resourceName": "infinity_furnace",
+    "model": "requious:infinity_furnace",
+    "placeType": "Any",
+    "layerType": "Cutout",
+    "hasGUI": true,
+    "extraVariants": [],
+    "colors": [
+      {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      }
+    ],
+    "hardness": 5.0,
+    "blastResistance": 5.0,
+    "aabb": {
+      "x1": 0.0,
+      "y1": 0.0,
+      "z1": 0.0,
+      "x2": 1.0,
+      "y2": 1.0,
+      "z2": 1.0
+    }
+  },
+  {
     "resourceName": "infernal_furnace",
     "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
   },

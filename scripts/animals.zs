@@ -222,7 +222,7 @@ craft.remake(<avaritiafurnace:fuelcompressor>, ["pretty",
 // ---------------------------
 
 # [Infinity_Furnace] from [Infinity_Fuel][+4]
-craft.remake(<avaritiafurnace:infinityfurnace>, ["pretty",
+craft.remake(<requious:infinity_furnace>, ["pretty",
   "T R E R T",
   "# ▬ n ▬ #",
   "H r I r H",

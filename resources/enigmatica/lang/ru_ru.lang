@@ -124,6 +124,11 @@ requious.jei.recipe.witch_water=Ведьмина Вода
 requious.jei.recipe.meteor=Метеор
 requious.jei.recipe.turbine=Турбина
 requious.jei.recipe.forestry_farm=Forestry Фермы
+requious.jei.recipe.adv_bee_analyzer=Расширенный Анализатор
+requious.jei.recipe.infinity_furnace=Печь Бесконечности
+
+tile.adv_bee_analyzer.name=Расширенный Анализатор
+tile.infinity_furnace.name=Печь Бесконечности
 
 e2ee.tips.1=Описания квестов часто содержат советы и рекомендации.
 e2ee.tips.2=Вы можете поместить свои большие установки в компактные машины, чтобы сэкономить место.

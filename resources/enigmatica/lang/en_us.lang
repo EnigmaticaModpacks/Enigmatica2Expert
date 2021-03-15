@@ -124,6 +124,11 @@ requious.jei.recipe.witch_water=Witch Water
 requious.jei.recipe.meteor=Meteor
 requious.jei.recipe.turbine=Turbine
 requious.jei.recipe.forestry_farm=Forestry Farm
+requious.jei.recipe.adv_bee_analyzer=Advanced Analyzer
+requious.jei.recipe.infinity_furnace=Infinity Furnace
+
+tile.adv_bee_analyzer.name=Advanced Analyzer
+tile.infinity_furnace.name=Infinity Furnace
 
 e2ee.tips.1=Quest descriptions often have tips and tricks.
 e2ee.tips.2=You can put your larger setups in Compact Machines to save space.
