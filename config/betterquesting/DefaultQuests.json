@@ -29,7 +29,7 @@
             "tag:10": {
               "tier:3": 4,
               "mekData:10": {
-                "energyStored:6": 1.7976931348623157E308
+                "energyStored:6": 1.7976931348623157e+308
               }
             },
             "Damage:2": 0,
@@ -64,7 +64,7 @@
               "tag:10": {
                 "tier:3": 4,
                 "mekData:10": {
-                  "energyStored:6": 1.7976931348623157E308
+                  "energyStored:6": 1.7976931348623157e+308
                 }
               },
               "Damage:2": 0,
@@ -2661,7 +2661,7 @@
           "viaPlayer:1": 0,
           "index:3": 0,
           "title:8": "bq_standard.reward.command",
-          "command:8": "/say VAR_NAME has obtained the Nature\u0027s Ruin!"
+          "command:8": "/say VAR_NAME has obtained the Nature's Ruin!"
         }
       }
     },
@@ -3236,7 +3236,7 @@
                     "Count:1": 1,
                     "tag:10": {
                       "StatsOriginal:10": {
-                        "AttackSpeedMultiplier:5": 1.0,
+                        "AttackSpeedMultiplier:5": 1,
                         "MiningSpeed:5": 1.5,
                         "FreeModifiers:3": 3,
                         "Durability:3": 61,
@@ -3244,7 +3244,7 @@
                         "Attack:5": 2.5
                       },
                       "Stats:10": {
-                        "AttackSpeedMultiplier:5": 1.0,
+                        "AttackSpeedMultiplier:5": 1,
                         "MiningSpeed:5": 1.5,
                         "FreeModifiers:3": 2,
                         "Durability:3": 61,
@@ -3329,7 +3329,7 @@
                         "FluidName:8": "cider",
                         "Amount:3": 1000,
                         "Tag:10": {
-                          "Quality:5": 1.0
+                          "Quality:5": 1
                         }
                       }
                     },
@@ -4000,7 +4000,7 @@
           "viaPlayer:1": 0,
           "index:3": 0,
           "title:8": "bq_standard.reward.command",
-          "command:8": "/say VAR_NAME has obtained the Creative Builder\u0027s Wand!"
+          "command:8": "/say VAR_NAME has obtained the Creative Builder's Wand!"
         }
       }
     },
@@ -4254,26 +4254,26 @@
               "Count:3": 1,
               "tag:10": {
                 "StatsOriginal:10": {
-                  "AttackSpeedMultiplier:5": 1.0,
-                  "MiningSpeed:5": 2.0,
-                  "DrawSpeed:5": 1.0,
+                  "AttackSpeedMultiplier:5": 1,
+                  "MiningSpeed:5": 2,
+                  "DrawSpeed:5": 1,
                   "FreeModifiers:3": 3,
-                  "ProjectileBonusDamage:5": 0.0,
+                  "ProjectileBonusDamage:5": 0,
                   "Durability:3": 35,
                   "HarvestLevel:3": 3,
-                  "Attack:5": 2.0,
-                  "Range:5": 1.0
+                  "Attack:5": 2,
+                  "Range:5": 1
                 },
                 "Stats:10": {
-                  "AttackSpeedMultiplier:5": 1.0,
-                  "MiningSpeed:5": 2.0,
-                  "DrawSpeed:5": 1.0,
+                  "AttackSpeedMultiplier:5": 1,
+                  "MiningSpeed:5": 2,
+                  "DrawSpeed:5": 1,
                   "FreeModifiers:3": 5,
-                  "ProjectileBonusDamage:5": 0.0,
+                  "ProjectileBonusDamage:5": 0,
                   "Durability:3": 35,
                   "HarvestLevel:3": 3,
-                  "Attack:5": 2.0,
-                  "Range:5": 1.0
+                  "Attack:5": 2,
+                  "Range:5": 1
                 },
                 "Special:10": {
                   "Categories:9": {
@@ -4338,7 +4338,7 @@
               "Count:3": 1,
               "tag:10": {
                 "StatsOriginal:10": {
-                  "AttackSpeedMultiplier:5": 1.0,
+                  "AttackSpeedMultiplier:5": 1,
                   "MiningSpeed:5": 6.8,
                   "FreeModifiers:3": 3,
                   "Durability:3": 631,
@@ -4346,7 +4346,7 @@
                   "Attack:5": 3.5
                 },
                 "Stats:10": {
-                  "AttackSpeedMultiplier:5": 1.0,
+                  "AttackSpeedMultiplier:5": 1,
                   "MiningSpeed:5": 6.8,
                   "FreeModifiers:3": 2,
                   "Durability:3": 631,
@@ -13544,7 +13544,7 @@
               "Count:3": 1,
               "tag:10": {
                 "mekData:10": {
-                  "energyStored:6": 60000.0
+                  "energyStored:6": 60000
                 }
               },
               "Damage:2": 0,
@@ -33031,8 +33031,8 @@
             "Count:3": 1,
             "tag:10": {
               "StatsOriginal:10": {
-                "AttackSpeedMultiplier:5": 1.0,
-                "MiningSpeed:5": 12.0,
+                "AttackSpeedMultiplier:5": 1,
+                "MiningSpeed:5": 12,
                 "FreeModifiers:3": 3,
                 "Durability:3": 861,
                 "HarvestLevel:3": 7,
@@ -33043,12 +33043,12 @@
                 "Name:8": "InfiHarvester"
               },
               "Stats:10": {
-                "AttackSpeedMultiplier:5": 1.0,
-                "MiningSpeed:5": 999999.0,
+                "AttackSpeedMultiplier:5": 1,
+                "MiningSpeed:5": 999999,
                 "FreeModifiers:3": 0,
                 "Durability:3": 999999,
                 "HarvestLevel:3": 7,
-                "Attack:5": 999999.0
+                "Attack:5": 999999
               },
               "Special:10": {
                 "Categories:9": {
@@ -33146,7 +33146,7 @@
               "Count:3": 1,
               "tag:10": {
                 "StatsOriginal:10": {
-                  "AttackSpeedMultiplier:5": 1.0,
+                  "AttackSpeedMultiplier:5": 1,
                   "MiningSpeed:5": 3.75,
                   "FreeModifiers:3": 3,
                   "Durability:3": 143,
@@ -33154,7 +33154,7 @@
                   "Attack:5": 2.175
                 },
                 "Stats:10": {
-                  "AttackSpeedMultiplier:5": 1.0,
+                  "AttackSpeedMultiplier:5": 1,
                   "MiningSpeed:5": 3.75,
                   "FreeModifiers:3": 2,
                   "Durability:3": 143,
@@ -41344,11 +41344,11 @@
               "Profile_0:10": {
                 "bowFireArrow:1": 0,
                 "bowZoomModifier:3": 0,
-                "bowShockPower:6": 0.0,
+                "bowShockPower:6": 0,
                 "bowArrowSpeedModifier:3": 0,
                 "bowAutoFire:1": 0,
-                "bowExplosionPower:6": 0.0,
-                "bowArrowDamage:6": 2.0
+                "bowExplosionPower:6": 0,
+                "bowArrowDamage:6": 2
               }
             },
             "Damage:2": 0,
@@ -41382,11 +41382,11 @@
                 "Profile_0:10": {
                   "bowFireArrow:1": 0,
                   "bowZoomModifier:3": 0,
-                  "bowShockPower:6": 0.0,
+                  "bowShockPower:6": 0,
                   "bowArrowSpeedModifier:3": 0,
                   "bowAutoFire:1": 0,
-                  "bowExplosionPower:6": 0.0,
-                  "bowArrowDamage:6": 2.0
+                  "bowExplosionPower:6": 0,
+                  "bowArrowDamage:6": 2
                 }
               },
               "Damage:2": 0,
@@ -57530,8 +57530,8 @@
             "id:8": "appliedenergistics2:matter_cannon",
             "Count:3": 1,
             "tag:10": {
-              "internalMaxPower:6": 200000.0,
-              "internalCurrentPower:6": 200000.0
+              "internalMaxPower:6": 200000,
+              "internalCurrentPower:6": 200000
             },
             "Damage:2": 0,
             "OreDict:8": ""
@@ -59707,7 +59707,7 @@
             "ForgeData:10": {},
             "RelativeAABB:9": {
               "0:6": -0.30000001192092896,
-              "1:6": 0.0,
+              "1:6": 0,
               "2:6": -0.30000001192092896,
               "3:6": 0.30000001192092896,
               "4:6": 1.9500000476837158,
@@ -59715,31 +59715,31 @@
             },
             "Attributes:9": {
               "0:10": {
-                "Base:6": -2.0,
+                "Base:6": -2,
                 "Name:8": "tc.mobmod"
               },
               "1:10": {
-                "Base:6": 0.0,
+                "Base:6": 0,
                 "Name:8": "tc.mobmodtaint"
               },
               "2:10": {
-                "Base:6": 1.0,
+                "Base:6": 1,
                 "Name:8": "potioncore.projectileDamage"
               },
               "3:10": {
-                "Base:6": 1.0,
+                "Base:6": 1,
                 "Name:8": "potioncore.magicDamage"
               },
               "4:10": {
-                "Base:6": 1.0,
+                "Base:6": 1,
                 "Name:8": "potioncore.jumpHeight"
               },
               "5:10": {
-                "Base:6": 1.0,
+                "Base:6": 1,
                 "Name:8": "potioncore.damageResistance"
               },
               "6:10": {
-                "Base:6": 0.0,
+                "Base:6": 0,
                 "Name:8": "potioncore.magicShielding"
               },
               "7:10": {
@@ -59747,19 +59747,19 @@
                 "Name:8": "tconevo.flightSpeed"
               },
               "8:10": {
-                "Base:6": 1.0,
+                "Base:6": 1,
                 "Name:8": "tconevo.damageTaken"
               },
               "9:10": {
-                "Base:6": 1.0,
+                "Base:6": 1,
                 "Name:8": "tconevo.evasionChance"
               },
               "10:10": {
-                "Base:6": 400.0,
+                "Base:6": 400,
                 "Name:8": "generic.maxHealth"
               },
               "11:10": {
-                "Base:6": 0.0,
+                "Base:6": 0,
                 "Name:8": "generic.knockbackResistance"
               },
               "12:10": {
@@ -59767,31 +59767,31 @@
                 "Name:8": "generic.movementSpeed"
               },
               "13:10": {
-                "Base:6": 12.0,
+                "Base:6": 12,
                 "Name:8": "generic.armor"
               },
               "14:10": {
-                "Base:6": 0.0,
+                "Base:6": 0,
                 "Name:8": "generic.armorToughness"
               },
               "15:10": {
-                "Base:6": 1.0,
+                "Base:6": 1,
                 "Name:8": "forge.swimSpeed"
               },
               "16:10": {
-                "Base:6": 128.0,
+                "Base:6": 128,
                 "Name:8": "generic.followRange"
               },
               "17:10": {
-                "Base:6": 4.0,
+                "Base:6": 4,
                 "Name:8": "generic.attackDamage"
               }
             },
             "Invulnerable:1": 0,
             "FallFlying:1": 0,
             "PortalCooldown:3": 0,
-            "AbsorptionAmount:5": 0.0,
-            "FallDistance:5": 0.0,
+            "AbsorptionAmount:5": 0,
+            "FallDistance:5": 0,
             "DeathTime:2": 0,
             "ForgeCaps:10": {
               "plethora:disableai:10": {},
@@ -59801,25 +59801,25 @@
               },
               "nuclearcraft:capability_entity_rads:10": {
                 "consumed:1": 0,
-                "radawayBuffer:6": 0.0,
+                "radawayBuffer:6": 0,
                 "shouldWarn:1": 0,
                 "radXUsed:1": 0,
-                "poisonBuffer:6": 0.0,
-                "radXCooldown:6": 0.0,
+                "poisonBuffer:6": 0,
+                "radXCooldown:6": 0,
                 "radXWoreOff:1": 0,
-                "radawayCooldown:6": 0.0,
-                "recentRadawayAddition:6": 0.0,
-                "maxRads:6": 20000.0,
-                "radawayBufferSlow:6": 0.0,
-                "externalRadiationResistance:6": 0.0,
-                "totalRads:6": 0.0,
+                "radawayCooldown:6": 0,
+                "recentRadawayAddition:6": 0,
+                "maxRads:6": 20000,
+                "radawayBufferSlow:6": 0,
+                "externalRadiationResistance:6": 0,
+                "totalRads:6": 0,
                 "setFromMaxHealth:1": 1,
-                "radiationLevel:6": 0.0,
-                "recentPoisonAddition:6": 0.0,
-                "recentRadXAddition:6": 0.0,
+                "radiationLevel:6": 0,
+                "recentPoisonAddition:6": 0,
+                "recentRadXAddition:6": 0,
                 "radiationImmunityStage:1": 0,
-                "internalRadiationResistance:6": 0.0,
-                "radiationImmunityTime:6": 0.0
+                "internalRadiationResistance:6": 0,
+                "radiationImmunityTime:6": 0
               },
               "tinkertoolleveling:entityxp:9": {},
               "dsurround:data:10": {
@@ -59867,13 +59867,13 @@
             "PersistenceRequired:1": 0,
             "id:8": "rats:black_death",
             "Motion:9": {
-              "0:6": 0.0,
-              "1:6": 0.0,
-              "2:6": 0.0
+              "0:6": 0,
+              "1:6": 0,
+              "2:6": 0
             },
             "Leashed:1": 0,
             "UUIDLeast:4": -7629121435670479000,
-            "Health:5": 400.0,
+            "Health:5": 400,
             "CloudsSummoned:3": 0,
             "LeftHanded:1": 0,
             "Air:2": 300,
@@ -59883,7 +59883,7 @@
             "RatsSummoned:3": 0,
             "Rotation:9": {
               "0:5": 3.1356926,
-              "1:5": 0.0
+              "1:5": 0
             },
             "UpdateBlocked:1": 0,
             "HandItems:9": {
@@ -59898,9 +59898,9 @@
             },
             "UUIDMost:4": 5830572876798709000,
             "Pos:9": {
-              "0:6": 0.0,
-              "1:6": 0.0,
-              "2:6": 0.0
+              "0:6": 0,
+              "1:6": 0,
+              "2:6": 0
             },
             "Fire:2": -1,
             "ArmorItems:9": {
@@ -59913,7 +59913,7 @@
             "HurtTime:2": 0,
             "SurgeAABB:9": {
               "0:6": -0.30000001192092896,
-              "1:6": 0.0,
+              "1:6": 0,
               "2:6": -0.30000001192092896,
               "3:6": 0.30000001192092896,
               "4:6": 1.9500000476837158,
@@ -60414,8 +60414,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Hole Filler",
-          "desc:8": "Throw it and walk away. Your hole will be filled in."
+          "name:8": "bq.quest778.name",
+          "desc:8": "bq.quest778.desc"
         }
       },
       "tasks:9": {
@@ -60473,7 +60473,7 @@
             "id:8": "ic2:nano_chestplate",
             "Count:3": 1,
             "tag:10": {
-              "charge:6": 1000000.0
+              "charge:6": 1000000
             },
             "Damage:2": 0,
             "OreDict:8": ""
@@ -60504,7 +60504,7 @@
               "id:8": "ic2:nano_helmet",
               "Count:3": 1,
               "tag:10": {
-                "charge:6": 1000000.0
+                "charge:6": 1000000
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -60516,7 +60516,7 @@
               "id:8": "ic2:nano_chestplate",
               "Count:3": 1,
               "tag:10": {
-                "charge:6": 1000000.0
+                "charge:6": 1000000
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -60528,7 +60528,7 @@
               "id:8": "ic2:nano_leggings",
               "Count:3": 1,
               "tag:10": {
-                "charge:6": 1000000.0
+                "charge:6": 1000000
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -60540,7 +60540,7 @@
               "id:8": "ic2:nano_boots",
               "Count:3": 1,
               "tag:10": {
-                "charge:6": 1000000.0
+                "charge:6": 1000000
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -60561,7 +60561,7 @@
               "id:8": "ic2:nano_saber",
               "Count:3": 1,
               "tag:10": {
-                "charge:6": 160000.0
+                "charge:6": 160000
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -60771,7 +60771,7 @@
             "id:8": "ic2:quantum_chestplate",
             "Count:3": 1,
             "tag:10": {
-              "charge:6": 1.0E7
+              "charge:6": 10000000
             },
             "Damage:2": 0,
             "OreDict:8": ""
@@ -60802,7 +60802,7 @@
               "id:8": "ic2:quantum_helmet",
               "Count:3": 1,
               "tag:10": {
-                "charge:6": 1.0E7
+                "charge:6": 10000000
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -60814,7 +60814,7 @@
               "id:8": "ic2:quantum_chestplate",
               "Count:3": 1,
               "tag:10": {
-                "charge:6": 1.0E7
+                "charge:6": 10000000
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -60826,7 +60826,7 @@
               "id:8": "ic2:quantum_leggings",
               "Count:3": 1,
               "tag:10": {
-                "charge:6": 1.0E7
+                "charge:6": 10000000
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -60838,7 +60838,7 @@
               "id:8": "ic2:quantum_boots",
               "Count:3": 1,
               "tag:10": {
-                "charge:6": 1.0E7
+                "charge:6": 10000000
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -60875,15 +60875,15 @@
               "Count:3": 1,
               "tag:10": {
                 "StatsOriginal:10": {
-                  "AttackSpeedMultiplier:5": 1.0,
-                  "MiningSpeed:5": 6.0,
+                  "AttackSpeedMultiplier:5": 1,
+                  "MiningSpeed:5": 6,
                   "FreeModifiers:3": 3,
                   "Durability:3": 711,
                   "HarvestLevel:3": 10,
                   "Attack:5": 6.8
                 },
                 "Stats:10": {
-                  "AttackSpeedMultiplier:5": 1.0,
+                  "AttackSpeedMultiplier:5": 1,
                   "MiningSpeed:5": 6.1609993,
                   "FreeModifiers:3": 2,
                   "Durability:3": 733,
@@ -61009,8 +61009,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Compacting Drawer",
-          "desc:8": "Quickly convert items between Storage Blocks and their original form, like §lNuggets§r, §lIngots§r, §lBlocks§r.\nAlso, converts Slime between colors."
+          "name:8": "bq.quest782.name",
+          "desc:8": "bq.quest782.desc"
         }
       },
       "tasks:9": {
@@ -61090,8 +61090,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Petro Petunia",
-          "desc:8": "Generate mana from burnable fluids"
+          "name:8": "bq.quest783.name",
+          "desc:8": "bq.quest783.desc"
         }
       },
       "tasks:9": {
@@ -61162,8 +61162,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Tinker\u0027s Recycling",
-          "desc:8": "Tinker\u0027s Tools and Armor can be recycled.\nSee more in \"Enigmatica\" book."
+          "name:8": "bq.quest784.name",
+          "desc:8": "bq.quest784.desc"
         }
       },
       "tasks:9": {
@@ -61227,8 +61227,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Item Capability Proxy",
-          "desc:8": "This proxy can give acces to storage items like Satchels or Shulker Boxes.\n\nBut most powerful synergy achieved with §1DankNull"
+          "name:8": "bq.quest785.name",
+          "desc:8": "bq.quest785.desc"
         }
       },
       "tasks:9": {
@@ -61568,8 +61568,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Teleportation Staff",
-          "desc:8": "Teleport the user to where the user is looking.\nThe maximum amount of blocks that can be teleported across is§l 49."
+          "name:8": "bq.quest788.name",
+          "desc:8": "bq.quest788.desc"
         }
       },
       "tasks:9": {
@@ -61648,8 +61648,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Ring Of Growth",
-          "desc:8": "Cause the crops around the player in a 3 radius area to grow."
+          "name:8": "bq.quest789.name",
+          "desc:8": "bq.quest789.desc"
         }
       },
       "tasks:9": {
@@ -61856,8 +61856,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Bee Diversity Store",
-          "desc:8": "Combine bees with Store to gather time.\nCombine with §bTime In Bottle§r to transfer time to bottle."
+          "name:8": "bq.quest791.name",
+          "desc:8": "bq.quest791.desc"
         }
       },
       "tasks:9": {
@@ -62061,8 +62061,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Alveary",
-          "desc:8": "The Alveary is an advanced variant of the Apiary. The Alveary allows for combs to be produced faster due to its natural speed increase to production."
+          "name:8": "bq.quest793.name",
+          "desc:8": "bq.quest793.desc"
         }
       },
       "tasks:9": {
@@ -62129,8 +62129,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Scented Hive",
-          "desc:8": "Scented Hive has to be placed in the world. It will eventually turn in to a bee hive, depending on blocks near it."
+          "name:8": "bq.quest794.name",
+          "desc:8": "bq.quest794.desc"
         }
       },
       "tasks:9": {
@@ -65021,8 +65021,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Gate: Psi",
-          "desc:8": "There is no PSI chapter, but Botania give access to the mod."
+          "name:8": "bq.quest833.name",
+          "desc:8": "bq.quest833.desc"
         }
       },
       "tasks:9": {
@@ -65453,8 +65453,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Gate: Advanced Generators",
-          "desc:8": "There is no Advanced Generators chapter, but Extra Utilities give access to the mod."
+          "name:8": "bq.quest839.name",
+          "desc:8": "bq.quest839.desc"
         }
       },
       "tasks:9": {
@@ -66811,7 +66811,7 @@
             "Count:3": 1,
             "tag:10": {
               "InfinityEnergy:3": 2147483647,
-              "internalCurrentPower:6": 1600000.0
+              "internalCurrentPower:6": 1600000
             },
             "Damage:2": 0,
             "OreDict:8": ""
@@ -66970,8 +66970,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Terraformer",
-          "desc:8": "Terraformer changing biome around it. Can be handy for Bee breeding.\n1. Set block on ground\n2. Insert Biome Marker inside\n3. Increase range\n4. Place what submodules it requires beneath\n5. Fuel them up and supply each with Anthenna"
+          "name:8": "bq.quest859.name",
+          "desc:8": "bq.quest859.desc"
         }
       },
       "tasks:9": {
@@ -67059,8 +67059,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Habitat Former",
-          "desc:8": "Allows players to manipulate the climate for bees in a specific region."
+          "name:8": "bq.quest860.name",
+          "desc:8": "bq.quest860.desc"
         }
       },
       "tasks:9": {
@@ -67127,8 +67127,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Twilight Forest Quest ### map",
-          "desc:8": "TF quest Description"
+          "name:8": "bq.quest861.name",
+          "desc:8": "bq.quest861.desc"
         }
       },
       "tasks:9": {
@@ -67211,8 +67211,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Twilight Forest Quest ### naga",
-          "desc:8": "TF quest Description"
+          "name:8": "bq.quest862.name",
+          "desc:8": "bq.quest862.desc"
         }
       },
       "tasks:9": {
@@ -67292,8 +67292,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Twilight Forest Quest ### lich",
-          "desc:8": "TF quest Description"
+          "name:8": "bq.quest863.name",
+          "desc:8": "bq.quest863.desc"
         }
       },
       "tasks:9": {
@@ -67373,8 +67373,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Twilight Forest Quest ### knight",
-          "desc:8": "TF quest Description"
+          "name:8": "bq.quest864.name",
+          "desc:8": "bq.quest864.desc"
         }
       },
       "tasks:9": {
@@ -67454,8 +67454,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Twilight Forest Quest ### ur",
-          "desc:8": "TF quest Description"
+          "name:8": "bq.quest865.name",
+          "desc:8": "bq.quest865.desc"
         }
       },
       "tasks:9": {
@@ -67535,8 +67535,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Twilight Forest Quest ### alpha Yeti",
-          "desc:8": "TF quest Description"
+          "name:8": "bq.quest866.name",
+          "desc:8": "bq.quest866.desc"
         }
       },
       "tasks:9": {
@@ -67616,8 +67616,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Twilight Forest Quest ### queen",
-          "desc:8": "TF quest Description"
+          "name:8": "bq.quest867.name",
+          "desc:8": "bq.quest867.desc"
         }
       },
       "tasks:9": {
@@ -67697,8 +67697,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Twilight Forest Quest ### minosh",
-          "desc:8": "TF quest Description"
+          "name:8": "bq.quest868.name",
+          "desc:8": "bq.quest868.desc"
         }
       },
       "tasks:9": {
@@ -67778,8 +67778,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Twilight Forest Quest ### hydra",
-          "desc:8": "TF quest Description"
+          "name:8": "bq.quest869.name",
+          "desc:8": "bq.quest869.desc"
         }
       },
       "tasks:9": {
@@ -67864,8 +67864,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Twilight Forest Quest ### lamp",
-          "desc:8": "TF quest Description"
+          "name:8": "bq.quest870.name",
+          "desc:8": "bq.quest870.desc"
         }
       },
       "tasks:9": {
@@ -67948,8 +67948,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Twilight Forest Quest ### castle",
-          "desc:8": "TF quest Description"
+          "name:8": "bq.quest871.name",
+          "desc:8": "bq.quest871.desc"
         }
       },
       "tasks:9": {
@@ -68312,7 +68312,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "ALWAYS",
-          "name:8": "Getting Started",
+          "name:8": "bq.chapter0.name",
           "icon:10": {
             "ForgeCaps:10": {
               "astralsorcery:cap_item_amulet_holder:10": {}
@@ -68324,7 +68324,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "This chapter explains how to get started with the pack."
+          "desc:8": "bq.chapter0.desc"
         }
       },
       "order:3": 0
@@ -68560,7 +68560,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "ALWAYS",
-          "name:8": "Advanced Rocketry",
+          "name:8": "bq.chapter1.name",
           "icon:10": {
             "id:8": "advancedrocketry:planetidchip",
             "Count:3": 1,
@@ -68569,7 +68569,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Quests for Advanced Rocketry, a Tier 4 Tech mod. "
+          "desc:8": "bq.chapter1.desc"
         }
       },
       "order:3": 19
@@ -68763,7 +68763,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "ALWAYS",
-          "name:8": "Forestry",
+          "name:8": "bq.chapter2.name",
           "icon:10": {
             "id:8": "forestry:carpenter",
             "Count:3": 1,
@@ -68772,7 +68772,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Quests for Forestry, a Tier 1 Tech mod."
+          "desc:8": "bq.chapter2.desc"
         }
       },
       "order:3": 5
@@ -69001,7 +69001,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "ALWAYS",
-          "name:8": "Immersive Engineering",
+          "name:8": "bq.chapter3.name",
           "icon:10": {
             "ForgeCaps:10": {
               "astralsorcery:cap_item_amulet_holder:10": {}
@@ -69013,7 +69013,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Quests for Immersive Engineering, a Tier 1 Tech mod."
+          "desc:8": "bq.chapter3.desc"
         }
       },
       "order:3": 6
@@ -69263,7 +69263,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "ALWAYS",
-          "name:8": "Ender IO",
+          "name:8": "bq.chapter4.name",
           "icon:10": {
             "id:8": "enderio:item_material",
             "Count:3": 1,
@@ -69272,7 +69272,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Quests for Ender IO, a Tier 4 Tech mod."
+          "desc:8": "bq.chapter4.desc"
         }
       },
       "order:3": 21
@@ -69473,7 +69473,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "ALWAYS",
-          "name:8": "Astral Sorcery",
+          "name:8": "bq.chapter5.name",
           "icon:10": {
             "ForgeCaps:10": {
               "astralsorcery:cap_item_amulet_holder:10": {}
@@ -69485,7 +69485,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Quests for Astral Sorcery."
+          "desc:8": "bq.chapter5.desc"
         }
       },
       "order:3": 8
@@ -69925,7 +69925,7 @@
         "betterquesting:10": {
           "RenderFull:1": 1,
           "visibility:8": "ALWAYS",
-          "name:8": "Botania",
+          "name:8": "bq.chapter6.name",
           "icon:10": {
             "ForgeCaps:10": {
               "astralsorcery:cap_item_amulet_holder:10": {}
@@ -69941,7 +69941,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Quests for Botania."
+          "desc:8": "bq.chapter6.desc"
         }
       },
       "order:3": 14
@@ -70254,7 +70254,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "ALWAYS",
-          "name:8": "Mekanism",
+          "name:8": "bq.chapter7.name",
           "icon:10": {
             "ForgeCaps:10": {
               "astralsorcery:cap_item_amulet_holder:10": {}
@@ -70266,7 +70266,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Quests for Mekanism, a Tier 2 Tech mod."
+          "desc:8": "bq.chapter7.desc"
         }
       },
       "order:3": 10
@@ -70593,7 +70593,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "ALWAYS",
-          "name:8": "Blood Magic",
+          "name:8": "bq.chapter8.name",
           "icon:10": {
             "id:8": "bloodmagic:altar",
             "Count:3": 1,
@@ -70602,7 +70602,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Quests for Blood Magic."
+          "desc:8": "bq.chapter8.desc"
         }
       },
       "order:3": 15
@@ -70943,7 +70943,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "ALWAYS",
-          "name:8": "Thaumcraft",
+          "name:8": "bq.chapter9.name",
           "icon:10": {
             "ForgeCaps:10": {
               "astralsorcery:cap_item_amulet_holder:10": {}
@@ -70955,7 +70955,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Quests for Thaumcraft."
+          "desc:8": "bq.chapter9.desc"
         }
       },
       "order:3": 7
@@ -71247,7 +71247,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "ALWAYS",
-          "name:8": "IndustrialCraft",
+          "name:8": "bq.chapter10.name",
           "icon:10": {
             "id:8": "ic2:te",
             "Count:3": 1,
@@ -71256,7 +71256,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Quests for IndustrialCraft2, a Tier 1 Tech mod."
+          "desc:8": "bq.chapter10.desc"
         }
       },
       "order:3": 4
@@ -71527,7 +71527,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "ALWAYS",
-          "name:8": "Actually Additions",
+          "name:8": "bq.chapter11.name",
           "icon:10": {
             "id:8": "actuallyadditions:block_empowerer",
             "Count:3": 1,
@@ -71536,7 +71536,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Quests for Actually Additions, a Tier 2 Tech mod."
+          "desc:8": "bq.chapter11.desc"
         }
       },
       "order:3": 11
@@ -71772,7 +71772,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "ALWAYS",
-          "name:8": "Industrial Foregoing",
+          "name:8": "bq.chapter12.name",
           "icon:10": {
             "id:8": "industrialforegoing:mob_duplicator",
             "Count:3": 1,
@@ -71781,7 +71781,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Quests for Industrial Foregoing, a Tier 2 Tech mod."
+          "desc:8": "bq.chapter12.desc"
         }
       },
       "order:3": 12
@@ -72136,7 +72136,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "ALWAYS",
-          "name:8": "Thermal Expansion",
+          "name:8": "bq.chapter13.name",
           "icon:10": {
             "id:8": "thermalexpansion:machine",
             "Count:3": 1,
@@ -72159,7 +72159,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Quests for Thermal Expansion, a Tier 3 Tech mod."
+          "desc:8": "bq.chapter13.desc"
         }
       },
       "order:3": 18
@@ -72528,7 +72528,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "ALWAYS",
-          "name:8": "Extra Utilities",
+          "name:8": "bq.chapter14.name",
           "icon:10": {
             "id:8": "extrautils2:user",
             "Count:3": 1,
@@ -72537,7 +72537,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Quests for Extra Utilities 2, a Tier 1.5 Tech mod."
+          "desc:8": "bq.chapter14.desc"
         }
       },
       "order:3": 9
@@ -72731,7 +72731,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "ALWAYS",
-          "name:8": "RFTools",
+          "name:8": "bq.chapter15.name",
           "icon:10": {
             "id:8": "rftools:builder",
             "Count:3": 1,
@@ -72740,7 +72740,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Quests for RFTools, a Tier 2 Tech mod."
+          "desc:8": "bq.chapter15.desc"
         }
       },
       "order:3": 16
@@ -73039,7 +73039,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "ALWAYS",
-          "name:8": "Animals",
+          "name:8": "bq.chapter16.name",
           "icon:10": {
             "id:8": "animania:entity_egg_cow_highland",
             "Count:3": 1,
@@ -73048,7 +73048,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Quests for mob-oriented mods: §2Animania§r, §2Rats§r, §2Ice \u0026 Fire"
+          "desc:8": "bq.chapter16.desc"
         }
       },
       "order:3": 2
@@ -73298,7 +73298,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "ALWAYS",
-          "name:8": "NuclearCraft",
+          "name:8": "bq.chapter17.name",
           "icon:10": {
             "id:8": "nuclearcraft:fission_controller_new_active",
             "Count:3": 1,
@@ -73307,7 +73307,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Quests for NuclearCraft, a Tier 2 Tech mod."
+          "desc:8": "bq.chapter17.desc"
         }
       },
       "order:3": 17
@@ -73557,7 +73557,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "ALWAYS",
-          "name:8": "Environmental Tech",
+          "name:8": "bq.chapter18.name",
           "icon:10": {
             "id:8": "environmentaltech:void_ore_miner_cont_1",
             "Count:3": 1,
@@ -73566,7 +73566,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Quests for Environmental Tech, a Tier 4 Tech mod."
+          "desc:8": "bq.chapter18.desc"
         }
       },
       "order:3": 20
@@ -73837,7 +73837,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "ALWAYS",
-          "name:8": "Draconic Evolution",
+          "name:8": "bq.chapter19.name",
           "icon:10": {
             "id:8": "draconicevolution:awakened_core",
             "Count:3": 1,
@@ -73846,7 +73846,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Quests for Draconic Evolution, a Tier 4 Tech mod."
+          "desc:8": "bq.chapter19.desc"
         }
       },
       "order:3": 22
@@ -74131,7 +74131,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "ALWAYS",
-          "name:8": "Bragging Rights",
+          "name:8": "bq.chapter20.name",
           "icon:10": {
             "ForgeCaps:10": {
               "astralsorcery:cap_item_amulet_holder:10": {}
@@ -74143,7 +74143,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Completing this chapter means winning the modpack!"
+          "desc:8": "bq.chapter20.desc"
         }
       },
       "order:3": 23
@@ -74351,7 +74351,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "ALWAYS",
-          "name:8": "Gates",
+          "name:8": "bq.chapter21.name",
           "icon:10": {
             "id:8": "minecraft:crafting_table",
             "Count:3": 1,
@@ -74360,7 +74360,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "This chapter contains the quests that gate the other chapters."
+          "desc:8": "bq.chapter21.desc"
         }
       },
       "order:3": 1
@@ -74561,7 +74561,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "NORMAL",
-          "name:8": "Applied Energetics",
+          "name:8": "bq.chapter22.name",
           "icon:10": {
             "id:8": "chisel:futura",
             "Count:3": 1,
@@ -74570,7 +74570,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "§3Applied Energistics 2§r is a mod designed to compactly store items in a digital network called Matter Energy, or ME (pronounced Emm-Eee). \nDifferent devices can be connected to the ME Network, such as an ME Drive, for the storage of items, or an ME Terminal, allowing for access to that storage.\n\n"
+          "desc:8": "bq.chapter22.desc"
         }
       },
       "order:3": 13
@@ -74659,7 +74659,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "NORMAL",
-          "name:8": "Twilight Forest",
+          "name:8": "bq.chapter23.name",
           "icon:10": {
             "id:8": "twilightforest:miniature_structure",
             "Count:3": 1,
@@ -74668,7 +74668,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Adventure dimension"
+          "desc:8": "bq.chapter23.desc"
         }
       },
       "order:3": 3
@@ -74681,7 +74681,7 @@
       "editmode:1": 1,
       "livesMax:4": 10,
       "livesdef:3": 3,
-      "home_anchor_y:5": 3.0,
+      "home_anchor_y:5": 3,
       "livesDef:4": 3,
       "home_anchor_x:5": 0.5,
       "livesmax:3": 10,
