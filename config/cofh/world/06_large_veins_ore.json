@@ -134,7 +134,7 @@
 				"value": [-1,1,111,112,119,123]
 			}
 		},
-		"large_vein_tin_silver_lead": {
+		"large_vein_tin_lead": {
 			"distribution": "fractal",
 			"generator": {
 				"block": [
@@ -145,13 +145,8 @@
 					},
 					{
 						"name": "thermalfoundation:ore",
-						"metadata": 2,
-						"weight": 15
-					},
-					{
-						"name": "thermalfoundation:ore",
 						"metadata": 3,
-						"weight": 15
+						"weight": 30
 					}
 				],
 				"material": "minecraft:stone",
