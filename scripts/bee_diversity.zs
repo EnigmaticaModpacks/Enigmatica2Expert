@@ -35,6 +35,10 @@ craft.make(<contenttweaker:bee_diversity>, ["pretty",
 
 <contenttweaker:bee_diversity>.maxStackSize = 1;
 
+function toTime(t as int) as string {
+  return (t/72000) ~ ":" ~ (t/1200%60) ~ ":" ~ (t/20%60);
+}
+
 <contenttweaker:bee_diversity>.addAdvancedTooltip(function(item) {   
   return "Total stored genes: §6" ~ D(item.tag).getInt("total");
 });
@@ -42,8 +46,10 @@ craft.make(<contenttweaker:bee_diversity>, ["pretty",
   return "Penalty: §4" ~ D(item.tag).getInt("penalty");
 });
 <contenttweaker:bee_diversity>.addAdvancedTooltip(function(item) {
-  val t = D(item.tag).getInt("reward");
-  return "Time reward:§3 " ~ (t/72000) ~ ":" ~ (t/1200%60) ~ ":" ~ (t/20%60);
+  return "Total reward: §3" ~ toTime(D(item.tag).getInt("reward"));
+});
+<contenttweaker:bee_diversity>.addAdvancedTooltip(function(item) {
+  return "§8Last reward: §7" ~ toTime(D(item.tag).getInt("last"));
 });
 
 //-------------------------------------------------------------------------------
@@ -79,6 +85,7 @@ function rewardCalculator(
 
 val diversityStoreOutput = <contenttweaker:bee_diversity>.withTag({
   reward: 20 * 60,
+  last: 20 * 60,
   total: 13,
   penalty: 0,
   hashes: {},
@@ -105,9 +112,11 @@ val storeFunction as IRecipeFunction = function(out, ins, cInfo) {
   val multiplier = multipliers[ins.bee.definition.id] as int;
   val total = dStore.getInt("total") + points;
   val penalty = max(0, dStore.getInt("penalty") + (points==0 ? 1 : -1));
-  val reward = dStore.getInt("reward") + rewardCalculator(total, points, penalty, multiplier);
+  val newReward = rewardCalculator(total, points, penalty, multiplier);
+  val reward = dStore.getInt("reward") + newReward;
   val newTag = {
     reward: reward,
+    last: newReward,
     total: total,
     hashes: hashes,
     penalty: penalty,
@@ -130,8 +139,10 @@ val beeIngredients = {
 } as IIngredient[string];
 
 for name, ingr in beeIngredients {
+  val timeReward as int = 20*60*multipliers[name];
   recipes.addShapeless("Bee Diversity " ~ name.replaceAll(":", "_"), diversityStoreOutput.updateTag({
-    reward: 20*60*multipliers[name] as int
+    reward: timeReward,
+    last: timeReward,
   }), [
     <contenttweaker:bee_diversity>.marked("store"),
     ingr.marked("bee")

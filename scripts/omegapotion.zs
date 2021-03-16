@@ -5,6 +5,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.recipes.IRecipeFunction;
 import mods.artisanworktables.builder.RecipeBuilder;
+import mods.ctutils.utils.Math.sqrt;
 import scripts.craft.grid.Grid;
 
 
@@ -420,6 +421,10 @@ static durationFnc as function(int)int = function (x as int) as int {
   val d = x as double;
   return min(2147483646.0d,  d * 10.0d) as int;
 };
+static amplifierFnc as function(int)int = function (x as int) as int {
+  val d = x as double;
+  return min(127, max(1, 50.0d / (d + 10.0d)));
+};
 
 # This function evaluates for each of 4 types of crafts:
 # 1. Combining vanilla potions into one
@@ -471,9 +476,10 @@ static potionFunction as IRecipeFunction = function(out, ins, cInfo) {
     # Also calculate maximums for OMega potion
     for i in 0 to eData.length {
       val effect = eData[i];
-      var currDuration = D(effect).getInt("Duration", 1);
-      var newDuration  = isLong ? durationFnc(currDuration) : currDuration;
-      var newAmplifier = min(127,        (D(effect).get("Amplifier",0) + (isStrong ? 5  : 0)));
+      var oldDuration  = D(effect).getInt("Duration", 1);
+      val oldAmplifier = D(effect).getInt("Amplifier",0);
+      var newDuration  = isLong   ? durationFnc(oldDuration)   : oldDuration;
+      var newAmplifier = isStrong ? amplifierFnc(oldAmplifier) : oldAmplifier;
       maxDuration  = max(maxDuration,  newDuration);
       maxAmplifier = max(maxAmplifier, newAmplifier);
       compoundTags = compoundTags + [effect + {Duration: newDuration} as IData + {Amplifier: newAmplifier} as IData] as IData;

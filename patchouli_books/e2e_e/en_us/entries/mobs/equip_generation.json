@@ -7,7 +7,7 @@
     {
       "item": "draconicevolution:mob_soul{EntityName:\"minecraft:zombie\"}",
       "title": "Equip Generation",
-      "text": "All mobs are generated with:$(br)$(li)Random TCon armor + weapon$(br)$(li)Random classic armor set + weapon$(br2)Chance that mob will have at least 1 equipment is$(br)$(li)80% base chance$(br)$(li)30% less in $(l)Overworld/$$(br)$(li)50% added to reroll for each next slot",
+      "text": "All mobs are generated with:$(br)$(li)Random TCon armor + weapon$(br)$(li)Random classic armor set + weapon$(br2)Chance that mob will have at least 1 equipment is$(br)$(li)80% base chance$(br)$(li)20% less in $(l)Overworld/$$(br)$(li)35% added to reroll for each next slot",
       "type": "spotlight"
     },
     {

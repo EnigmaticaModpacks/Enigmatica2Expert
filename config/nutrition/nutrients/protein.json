@@ -47,6 +47,13 @@
 			"portionMeat"
 		],
 		"items": [
+			"betteranimalsplus:eel_meat_cooked",
+			"betteranimalsplus:eel_meat_raw",
+			"betteranimalsplus:blubber",
+			"betteranimalsplus:crab_meat_cooked",
+			"betteranimalsplus:crab_meat_raw",
+			"betteranimalsplus:fried_egg",
+			"betteranimalsplus:venisonraw",
 			"abyssalcraft:beefp",
 			"abyssalcraft:chickenp",
 			"abyssalcraft:eggp",

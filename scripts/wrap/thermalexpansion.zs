@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded thermalexpansion
-// Uses of this mod: 64
+// Uses of this mod: 65
 
 
 //####################################################
@@ -71,6 +71,20 @@ zenClass Class_Crucible { zenConstructor() {}
 
 }
 static Crucible as Class_Crucible = Class_Crucible();
+
+//####################################################
+// Uses of this class: 1
+zenClass Class_Enchanter { zenConstructor() {}
+
+	// Uses of this method: 1
+	function addRecipe(output as IItemStack, input as IItemStack, secondInput as IItemStack, energy as int, experience as int, empowered as bool) as void {
+		if(utils.DEBUG) print('Recipe wrapped: mods.thermalexpansion.Enchanter.addRecipe'~
+			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), serialize.IItemStack(secondInput), energy, experience, empowered]));
+		mods.thermalexpansion.Enchanter.addRecipe(output, input, secondInput, energy, experience, empowered);
+	}
+
+}
+static Enchanter as Class_Enchanter = Class_Enchanter();
 
 //####################################################
 // Uses of this class: 7

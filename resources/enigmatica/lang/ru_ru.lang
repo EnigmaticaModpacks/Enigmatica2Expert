@@ -111,6 +111,8 @@ tooltips.lang.thaumcraft:table_wood=§6 Щелкните правой кнопк
 tooltips.lang.thaumcraft:research_table=§6 Щелкните правой кнопкой мыши инструменты для разметки деревянного стола, чтобы сделать
 tooltips.lang.opencomputers:print=\n §5 1) §r Создайте дискету OPPM '\n §5 2) §r Установите ее на компьютер Tier2 + с интернет-картой' \n  §5 3) §r Запустите §n "oppm install oppm" §r '\n §5 4) §r Restart' \n §5 5) §r Запустите §n "oppm install print3d" §r и §n "oppm install print3d-examples" §r '\n §5 6) §r §n "print3d /path/to/Tree.3dm" §r
 tooltips.lang.vanilla_tools=§4Ванильные инструменты не работают. Используйте инструменты Tinkers' Construct
+tooltips.lang.ae_lag=§cНе помещайте это в систему хранения AE, иначе это вызовет лаги.
+tooltips.lang.dont_put_into_ae=§cНе помещайте это в систему хранения AE, иначе вы не сможете вынуть его и начнутся лаги.
 
 requious.jei.recipe.infernal_furnace=Инфернальная Печь
 requious.jei.recipe.liquid_interaction=Прикасание Жидкостей

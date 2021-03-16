@@ -417,6 +417,44 @@ for machineName, lang in {
 	desc.jei(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:"~machineName}), lang);
 }
 
+for lang, items in {
+	ae_lag: [
+		<cyclicmagic:storage_bag>,
+		<extrautils2:bagofholding>,
+		<forestry:adventurer_bag_t2>,
+		<forestry:adventurer_bag>,
+		<forestry:apiarist_bag>,
+		<forestry:builder_bag_t2>,
+		<forestry:builder_bag>,
+		<forestry:digger_bag_t2>,
+		<forestry:digger_bag>,
+		<forestry:forester_bag_t2>,
+		<forestry:forester_bag>,
+		<forestry:hunter_bag_t2>,
+		<forestry:hunter_bag>,
+		<forestry:lepidopterist_bag>,
+		<forestry:miner_bag_t2>,
+		<forestry:miner_bag>,
+		<minecraft:written_book>,
+		<minecraft:skull:*>,
+	], 
+	dont_put_into_ae: [
+		<danknull:dank_null_0>,
+		<danknull:dank_null_1>,
+		<danknull:dank_null_2>,
+		<danknull:dank_null_3>,
+		<danknull:dank_null_4>,
+		<danknull:dank_null_5>,
+		<danknull:dank_null_6>,
+		<littletiles:recipeadvanced>,
+	], 
+} as IItemStack[][string] {
+	for item in items {
+		desc.jei(item, lang);
+	}
+}
+
+
 # Tooltips for IC2 matter fabricator
 	var uumatterTooltips = [
 		"minecraft:snowball", "0",                              "2",

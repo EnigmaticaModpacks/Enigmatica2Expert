@@ -15,14 +15,14 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded actuallyadditions
-// Uses of this mod: 28
+// Uses of this mod: 29
 
 
 //####################################################
-// Uses of this class: 5
+// Uses of this class: 6
 zenClass Class_AtomicReconstructor { zenConstructor() {}
 
-	// Uses of this method: 5
+	// Uses of this method: 6
 	function addRecipe(output as IItemStack, input as IItemStack, energyUsed as int) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.actuallyadditions.AtomicReconstructor.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), energyUsed]));
