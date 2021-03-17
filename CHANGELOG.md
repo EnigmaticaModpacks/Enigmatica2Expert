@@ -1,5 +1,165 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
+# 0.21
+
+## 🟢 New Mods
+
+Icon | Summary | Reason
+----:|:--------| ------
+<img src="https://media.forgecdn.net/avatars/thumbnails/189/181/256/256/636849056184187041.png" width="50"> | [**ThermalLogistics**](https://www.curseforge.com/minecraft/mc-mods/thermallogistics) <sup><sub>thermallogistics-0.3-42.jar</sub></sup> <br> The spiritual successor to Logistics Pipes | Should help players to automate things before AE2 avaliable
+<img src="https://media.forgecdn.net/avatars/thumbnails/213/458/256/256/636992567658475667.png" width="50"> | [**Tinkers' Modifier Modifier**](https://www.curseforge.com/minecraft/mc-mods/tinkers-modifier-modifier) <sup><sub>tconmodmod-1.12.2-1.0.5.jar</sub></sup> <br> modify modifiers for great and good profit | Changed **Diamond** modifier for Tinker's Tool. Now it asks for ![](https://git.io/JmVuJ "Empowered Diamatine Crystal")
+
+## 🟡 Updated Mods
+
+- [**Tweakers Construct**](https://www.curseforge.com/minecraft/mc-mods/tweakers-construct) <sup><sub>tweakersconstruct-1.12.2-1.6.0.jar</sub></sup>
+- [**CraftTweaker**](https://www.curseforge.com/minecraft/mc-mods/crafttweaker) <sup><sub>CraftTweaker2-1.12-4.1.20.626.jar</sub></sup>
+- [**Better Animal Models**](https://www.curseforge.com/minecraft/mc-mods/better-animal-models) <sup><sub>betteranimals-1.12.2-5.5.0.jar</sub></sup>
+- [**Hole Filler Mod**](https://www.curseforge.com/minecraft/mc-mods/hole-filler-mod) <sup><sub>hole_filler_mod-1.2.4.jar</sub></sup>
+- [**UniDict**](https://www.curseforge.com/minecraft/mc-mods/unidict) <sup><sub>UniDict-1.12.2-3.0.7.jar</sub></sup>
+- [**Collective**](https://www.curseforge.com/minecraft/mc-mods/collective) <sup><sub>collective-1.12.2-2.24.jar</sub></sup>
+- [**CreativeCore**](https://www.curseforge.com/minecraft/mc-mods/creativecore) <sup><sub>CreativeCore_v1.10.47_mc1.12.2.jar</sub></sup>
+- [**LittleTiles**](https://www.curseforge.com/minecraft/mc-mods/littletiles) <sup><sub>LittleTiles_v1.5.0-pre327_mc1.12.2.jar</sub></sup>
+
+## 🧩 Configs
+
+- Some block tool levels was rewritten
+- ![](https://git.io/JmV4G "Staff of Traveling") disable blinking through bedrock
+- More Forestry Farm Fertilizers (see JEI)
+- Fluid Drawers base is **4 -> 6 buckets**
+
+## ✏️ Recipes
+
+- Harder:
+  - ![](https://git.io/JmVvT "ME Drive")
+  ![](https://git.io/JqUJ7 "ME Controller")
+  ![](https://git.io/JmVvk "Crafting Unit")
+  ![](https://git.io/JmVe7 "ME Storage Bus")
+  ![](https://git.io/JmVvf "Gauntlet of Far Reach")
+  ![](https://git.io/JmVeA "Fluid Tank")
+  ![](https://git.io/JmVvU "Turbine Blade")
+  ![](https://git.io/JmVvs "Turbine Rotor")
+  ![](https://git.io/JmVeh "Turbine Casing")
+  ![](https://git.io/JmVep "Infinite Water Source")
+  ![](https://git.io/JmVBk "Frost Troll Leather")
+  ![](https://git.io/JtJwK "Portable Tank (Basic)")
+- Also Harder:
+  * Rod Frame
+  * [PSI Cell]
+  * [PSI-O Cell]
+  * [PSI-Dyne Cell]
+  * [PSI-Force Cell]
+  
+- Cheaper:
+  - ![](https://git.io/JmVvL "Magic Tallow")
+  ![](https://git.io/JmVvY "Blood Tank Tier 1")
+  ![](https://git.io/JmVve "Carbon Brick")
+  ![](https://git.io/JmVvI "Dynamic Tank")
+  ![](https://git.io/JmVeQ "Structural Glass")
+  ![](https://git.io/JmVvJ "Spell Inscriber")
+  ![](https://git.io/JmVeN "Rod Constructor")
+  
+  Other:
+  - ![](https://git.io/JmVe5 "Fluid Collector")![](https://git.io/JmVeb "Fluid Placer")![](https://git.io/JmVvO "Phantom Liquiface")![](https://git.io/JmVe9 "Rune of Capacity")![](https://git.io/JmVed "Fluid Filter")![](https://git.io/JmVvt "Omnivoir")
+    > now use ![](https://git.io/JtNTX "Flopper") in craft instead of bucket
+  - ![](https://git.io/JmVeF "Metal Press Mold: Unpacking") now outputs more
+  - ![](https://git.io/JmVR8 "Jungle Myrmex Resin Chunk")![](https://git.io/JmVRl "Desert Myrmex Resin Chunk") Added mana conversion
+  - Changed some Liquid Interactions
+  - Kiro's blocks now have crafts
+
+## 📖 Quest Book
+
+- Make Twilight Forest chapter with advancements
+  > This fixed bug when you cant progress in TF, help with team play. 
+- Enhance Armor quests
+- Added to quests: 
+  > ![](https://git.io/JmVRF "Terraformer")![](https://git.io/Jt8we "Scented Hive")![](https://git.io/JmV4m "Compacting Drawer")![](https://git.io/JmVeH "Habitat Former") [Bee Diversity] Alviery
+- ![](https://git.io/JmVex "Cabinet") add to early rewards
+- [Framed Chest] add to early rewards
+- Advanced Generators now have own **Gate**
+- Animal chapter entry have reward with Bull + Cow in it
+
+## 🌍 World Generation
+
+- Remove ![](https://git.io/JmV4s "Silver Ore") from generation completely
+  > There is too much difference ores spawns in overworld.
+  > Silver can be obtained as sub-product or with many other ore-generation techniques
+
+## 🔵 Mods
+
+- ### ☢️ NuclearCraft
+
+  - Remove armor plating recipes (they are annoying)
+
+- ### ⛽ Advanced Generators
+
+  - Recipes Overhaul
+    > - Removes duplications of AdvGen recipes
+    > - Cheaper controllers
+    > - Harder and buffed turbines
+    > 
+    > Before change, all tiers of turbines was abandoned, because
+    > when you can craft controller, Iron, Gold and other low-tier turbines too weak.
+    > Now, Controller way cheaper, but Steel tier turbines have similar gating
+    > as controller had before.
+
+- ### 🌠 Astral Sorcery
+
+  - Neromantic Prime fluid remap
+    > - Amber as main fluid
+    > - Less other fluids
+
+- ### 🌡️ Thermal Expansion
+
+  - Buff ![](https://git.io/JtJwK "Portable Tank (Basic)") Capacity
+    > Because now tank ask for TE-tier ingredients
+
+- ### 👨‍🏭 Mekanism
+
+  - ![](https://git.io/JmV0x "Digital Miner") x10 power consumption
+  - Buff ![](https://git.io/JmVEk "Basic Fluid Tank") capacity
+    > Because now first tank tier required Mekanism Ingredients
+
+- ### 🏪 Requious Fracto
+
+  - New machines: [Advanced Bee Analyzer] and ![](https://git.io/JtJIt "Infinity Furnace")
+  - New JEI categories
+    * Liquid Heat Exchanger
+    * Neromantic Prime
+    * Scented Hive
+    * 3D Printer
+    * Printer
+    * Witch Water
+    * Meteor
+    * Turbine
+    * Forestry Farm
+
+- ### 🐝 Forestry
+
+  - Misc Genes and outputs changes. Now custom bees have `Both 5` or such genes.
+
+- ### 🔨 Tinker's Construct
+
+  - ![](https://git.io/JmV4O "Alpha Yeti Fur") New material and trait
+  - ![](https://git.io/JmV4Y "Spectre Ingot") New material and trait
+  - Fix random modifiers, Difficulty accounting, misc balance
+  - TConEvo **Electric** nerfs (x50 consumption)
+
+- ### 🖥 OpenComputers
+
+  - Disable Buffer config
+    > Makes possible editing code from RL computer
+
+## 🔄 Misc Changes
+
+  * ![](https://git.io/JtDnO "Chemical Thrower") fix damage speed (try UU-matter as fuel, very cool)
+  * Fixed accidentally removed drop of **bone**, **string** and ![](https://git.io/JmVEg "Rotten Flesh")
+  * Betteranimalsplus got nutrition values
+  * Tooltips about lag in AE
+  * JEI hide recycler category
+  * "Last Reward" tooltip for [Bee Diversity Store]
+
+
+
 # 0.20
 
 ## 🟢 New Mods

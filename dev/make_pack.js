@@ -102,8 +102,7 @@ function makeZip(zipPath) {
 
 ********************************************************/
 
-// makeZip(`${distrDir}~E2E-Extended_${version}.zip`)
-makeZip(`${distrDir}~E2E-Extended_latest.zip`)
+makeZip(`${distrDir}E2E-Extended_latest.zip`)
 
 /********************************************************
 
@@ -148,6 +147,8 @@ globs([
   '!mods/ChatTweaks_*.jar',
   '!mods/grid-*.jar',
   '!mods/ping-*.jar',
+  '!mods/torohealth*.jar',
+  '!mods/toughnessbar*.jar',
 
   // Not sure
 /* 
@@ -174,8 +175,6 @@ globs([
   '!mods/ReBind*.jar',
   '!mods/TipTheScales*.jar',
   '!mods/Toast Control*.jar',
-  '!mods/torohealth*.jar',
-  '!mods/toughnessbar*.jar',
 */
   // '!mods/Hwyla*.jar',
   // '!mods/WailaHarvestability*.jar',
@@ -248,6 +247,7 @@ replace.sync({
 })
 
 // Override files
-fs.copySync(ruOverrides, './', {overwrite: true})
+try{fs.copySync(ruOverrides, './', {overwrite: true})}
+catch(e){} // eslint-disable-line no-empty
 
-makeZip(`${distrDir}~E2E-Extended_RU_latest.zip`)
+makeZip(`${distrDir}E2E-Extended_RU_latest.zip`)
