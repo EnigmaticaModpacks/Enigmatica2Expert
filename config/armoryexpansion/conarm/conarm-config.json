@@ -92,6 +92,32 @@
       "enableFletching": false,
       "enableProjectile": false
     },
+    "name": "alpha_fur",
+    "material": true,
+    "fluid": false,
+    "traits": true,
+    "armorOptions": {
+      "enableArmor": true,
+      "enableCore": true,
+      "enablePlates": true,
+      "enableTrim": true
+    }
+  },
+  {
+    "toolOptions": {
+      "enableTool": false,
+      "enableHead": false,
+      "enableHandle": false,
+      "enableExtra": false
+    },
+    "rangedOptions": {
+      "enableRanged": false,
+      "enableBow": false,
+      "enableBowString": false,
+      "enableShaft": false,
+      "enableFletching": false,
+      "enableProjectile": false
+    },
     "name": "awakened_plustic",
     "material": true,
     "fluid": false,

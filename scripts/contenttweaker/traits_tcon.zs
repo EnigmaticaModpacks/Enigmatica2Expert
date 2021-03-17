@@ -3,12 +3,16 @@
 import crafttweaker.block.IBlockState;
 import crafttweaker.event.IBlockEvent;
 import crafttweaker.player.IPlayer;
+import crafttweaker.entity.IEntityLivingBase;
+import crafttweaker.entity.IEntity;
 import mods.contenttweaker.Color;
 import mods.contenttweaker.conarm.ArmorTraitBuilder;
 import mods.contenttweaker.conarm.ExtendedMaterialBuilder;
 import mods.contenttweaker.tconstruct.TraitBuilder;
+import mods.contenttweaker.tconstruct.MaterialBuilder;
 import mods.ctutils.utils.Math.max;
 import mods.ctutils.utils.Math.min;
+import mods.ctutils.utils.Math.sqrt;
 import crafttweaker.world.IWorld;
 
 function getDrawSpeed(inversed as float) as float {
@@ -121,21 +125,14 @@ darkdefense.register();
 //
 val mentor = TraitBuilder.create("mentor");
 mentor.color = 0x216e2a;
-mentor.localizedName = "Mentor";
-mentor.localizedDescription = "\u00a7oPower of knowledge\n\u00a7rTool repair itself consuming experience";
-mentor.onUpdate = function(trait, tool, world, owner, itemSlot, isSelected) {
-  if(world.isRemote()) return;
-  if(world.getWorldTime() % 5 != 0) return;
-  if(tool.damage >= tool.maxDamage || !tool.isDamageable) return;
-  if(! owner instanceof IPlayer) return;
-  val player as IPlayer = owner;
-  if(player.xp < 2) return;
-  player.removeExperience(2);
-  // player.xp = player.xp - 2;
-
-  val dmg = max(0, tool.damage - 1);
-  // player.setItemToSlot(crafttweaker.entity.IEntityEquipmentSlot(itemSlot), tool.withDamage(dmg));
-  tool.damageItem(-1, owner);
+mentor.localizedName = game.localize("e2ee.tconstruct.material.mentor.name");
+mentor.localizedDescription = game.localize("e2ee.tconstruct.material.mentor.description");
+mentor.calcDamage = function(trait, tool, attacker, target, originalDamage, newDamage, isCritical) {
+  if (! attacker instanceof IPlayer) return newDamage;
+  val player as IPlayer = attacker;
+  var buff = sqrt(player.xp);
+  player.xp = player.xp * 0.99;
+  return newDamage + buff;
 };
 mentor.register();
 
@@ -172,7 +169,7 @@ difficulty_armor.localizedDescription = "\u00a7oScalling Difficulty\n\u00a7rMini
 difficulty_armor.onDamaged = function(trait, armor, player, source, damage, newDamage, evt) {
   if(player.world.isRemote()) return newDamage;
   if(newDamage <= 0) return newDamage;
-  mods.ctintegration.scalinghealth.DifficultyManager.addDifficulty(player, -0.01 * newDamage);
+  mods.ctintegration.scalinghealth.DifficultyManager.addDifficulty(player, -0.001 * newDamage);
   return newDamage;
 };
 difficulty_armor.register();
@@ -231,3 +228,58 @@ spectre_trait.onUpdate = function(trait, tool, world, owner, itemSlot, isSelecte
   spectreMechanic(world, player);
 };
 spectre_trait.register();
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+var 
+mat = MaterialBuilder.create("spectre_string");
+mat.color = 0x90a4ae; 
+mat.craftable = true;
+mat.castable = false;
+mat.representativeItem = <item:randomthings:ingredient:12>;
+mat.addItem(<item:randomthings:ingredient:12>);
+mat.localizedName = game.localize("e2ee.tconstruct.material.spectre_string.name");
+mat.addBowStringMaterialStats(2.2);
+mat.register();
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+mat = MaterialBuilder.create("alpha_fur");
+mat.color = 0x2196f3; 
+mat.craftable = true;
+mat.castable = false;
+mat.representativeItem = <item:twilightforest:alpha_fur>;
+mat.addItem(<item:twilightforest:alpha_fur>);
+mat.localizedName = game.localize("e2ee.tconstruct.material.alpha_fur.name");
+mat.addHeadMaterialStats(300, 2.0, 1.0, 1);
+mat.addHandleMaterialStats(0.1, 100);
+mat.addExtraMaterialStats(80);
+mat.addBowMaterialStats(1.0, 0.3, 1.0);
+mat.addProjectileMaterialStats();
+mat.register();
+
+
+var
+trait_armor = ArmorTraitBuilder.create("alpha_fur");
+trait_armor.color = 0x2196f3;
+trait_armor.localizedName = game.localize("e2ee.tconstruct.material.alpha_fur.name");
+trait_armor.localizedDescription = game.localize("e2ee.tconstruct.material.alpha_fur.description");
+trait_armor.onHurt = function(trait, armor, player, source, damage, newDamage, evt) {
+  if (!isNull(source.getTrueSource()) && source.getTrueSource() instanceof IEntityLivingBase) {
+    var attacker as IEntityLivingBase = source.getTrueSource();
+    attacker.addPotionEffect(<potion:minecraft:slowness>.makePotionEffect(60, 5));
+  }
+  return newDamage;
+};
+trait_armor.register();
+
+var
+trait = TraitBuilder.create("alpha_fur");
+trait.color = 0x2196f3;
+trait.localizedName = game.localize("e2ee.tconstruct.material.alpha_fur.name");
+trait.localizedDescription = game.localize("e2ee.tconstruct.material.alpha_fur.description");
+trait.afterHit = function(trait, tool, attacker, target, damageDealt, wasCritical, wasHit) {
+  target.addPotionEffect(<potion:minecraft:slowness>.makePotionEffect(60, 4));
+};
+trait.register();
