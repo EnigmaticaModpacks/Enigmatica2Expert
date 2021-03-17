@@ -1,0 +1,17 @@
+[
+    {
+        "modifier": "diamond",
+        "mutations": [
+            {
+                "type": "material",
+                "value": [
+                    {
+                        "type": "item",
+                        "item": "actuallyadditions:item_crystal_empowered",
+                        "meta": 2
+                    }
+                ]
+            }
+        ]
+    }
+]

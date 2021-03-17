@@ -404,6 +404,7 @@ desc.tooltip(Bucket("corium"), "fluid.corium");
 desc.tooltip(<minecraft:torch>);
 desc.tooltip(<thaumcraft:table_wood>);
 desc.tooltip(<thaumcraft:research_table>);
+desc.tooltip(<actuallyadditions:item_crystal_empowered:2>, 'tcon.diamond');
 
 # Modular Machine descriptions
 for machineName, lang in {

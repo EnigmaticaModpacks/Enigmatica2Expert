@@ -113,6 +113,7 @@ tooltips.lang.opencomputers:print=\n§51)§r Craft OPPM floppy'\n§52)§r Instal
 tooltips.lang.vanilla_tools=§4Vanilla tools don't work. Use Tinkers' Construct tools
 tooltips.lang.ae_lag=§cDo not put this into AE storage system or it will cause lag.
 tooltips.lang.dont_put_into_ae=§cDo not put this into AE storage system or you will not be able to take it out and lags will occur.
+tooltips.lang.tcon.diamond=§bUse as §lDiamond§r modifier
 
 requious.jei.recipe.infernal_furnace=Infernal Furnace
 requious.jei.recipe.liquid_interaction=Liquid Interaction
@@ -213,3 +214,8 @@ e2ee.tips.78=You can shear Creeper
 
 e2ee.tconstruct.material.spectre.name=Spectre
 e2ee.tconstruct.material.spectre.description=§bSpectral%nEach part gives additional Reach potion effect
+e2ee.tconstruct.material.mentor.name=Mentor
+e2ee.tconstruct.material.mentor.description=\u00a7oPower of knowledge\n\u00a7rEach hit consuming experience but deals more damage based on XP level
+e2ee.tconstruct.material.spectre_string.name=Spectre String
+e2ee.tconstruct.material.alpha_fur.name=Alpha Fur
+e2ee.tconstruct.material.alpha_fur.description=§bChilling\n§rChills targets or attackers
