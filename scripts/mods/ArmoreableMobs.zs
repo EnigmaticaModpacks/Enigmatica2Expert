@@ -61,9 +61,9 @@ function addArmorToGroup(group as ArmorGroup, stage as IData, isSkeleton as bool
       if (chargeable) {
         # Lower charge
         item = !isNull(it.tag.charge)
-          ? it.updateTag({charge: it.tag.charge as int / 11})
+          ? it.updateTag({charge: it.tag.charge.asInt() / 11})
           : (!isNull(it.tag.Energy)
-            ? it.updateTag({Energy: it.tag.Energy as int / 11})
+            ? it.updateTag({Energy: it.tag.Energy.asInt() / 11})
             : it);
       } else {
         # Damage item to 0.78

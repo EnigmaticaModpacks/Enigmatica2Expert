@@ -58,8 +58,8 @@ static allArmorModifiers as IData = [
 function D_indexof(dataList as IData, field as string, value as string) as int {
   if (isNull(dataList) || dataList.length <= 0) return -1 as int;
 
-  for i in 0 to dataList.length {
-    var sub = D(dataList[i]).get(field);
+  for i,d in dataList.asList() {
+    val sub = isNull(field) ? d : d.memberGet(field);
     if (!isNull(sub) && sub.asString() == value) {
       return i;
     }
@@ -145,7 +145,7 @@ function addModifier(_item as IItemStack, name as string) as IItemStack {
 
   var tag = item.tag as IData;
 
-  // Add modifire name in modifier list
+  // Add modifier name in modifier list
   if(isNull(D_find(tag.TinkerData.Modifiers, null, name)))
     tag = tag + {TinkerData: {Modifiers: [name] as IData}} as IData;
 

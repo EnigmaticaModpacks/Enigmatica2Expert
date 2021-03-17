@@ -18,7 +18,7 @@ const paths = {
 	utils:                '../lib/utils.js',
 	default_config:       'dev/default_configs/tweakersconstruct.cfg',
 	tweakerconstruct_cfg: 'config/tweakersconstruct.cfg',
-	equipGenration_zs:    'scripts/EquipGeneration.zs',
+	equipData_zs:    			'scripts/equipment/equipData.zs',
 	oredict_zs:   			  'scripts/OreDict.zs',
 	bigTable:             path.resolve(__dirname, './tweakersconstruct_table.cs'),// eslint-disable-line
 }
@@ -83,41 +83,27 @@ function tweakMaterial(tweakGroup, matID, tweakObj, defaultVals) {
 	}
 }
 
+const invalid = {
+	material: new Set(),
+	absent: new Set(),
+	fileInject: new Set(),
+}
+
 function injectToEquipments(list, varName) {
 	const listStr = list
 		.map(l=>`  ${('"'+l.mat+'"').padEnd(25)}, # ${round(l.power, 2)}`)
 		.join('\n')
 
-  injectInFile(
-    paths.equipGenration_zs,
-    `static ${varName} as IData = [\n`,
+	const injectResult = injectInFile(
+    paths.equipData_zs,
+    `val ${varName} as IData = [\n`,
     '\n] as IData;',
     listStr
   )
-}
 
-function injectOreDicts(list) {
-	const acc = {}
-	list.forEach(l=>{
-		const lvl = l.reals[3]
-		acc[lvl] = acc[lvl] ?? []
-		acc[lvl].push(l.mat)
-	})
-
-	let listStr = ''
-	for (const [lvl,arr] of Object.entries(acc)) {
-		listStr += `# addSharpeningKitOredict(${lvl}, [${arr.map(m=>'"'+m+'"').join(', ')}]);\n`
+  if(!injectResult.length) {
+		invalid.fileInject.add(`${paths.equipData_zs}: ${varName}`)
 	}
-
-
-  injectInFile(
-    paths.oredict_zs,
-`# ------------------------------------------------
-# Mining level Sharpening Kits
-# generated automatically with tweakerconstruct.zs\n`,
-    '# ------------------------------------------------',
-		listStr
-  )
 }
 
 function logBigTable(tweakGroup, tweakObj, bigTable) {
@@ -130,9 +116,6 @@ function logBigTable(tweakGroup, tweakObj, bigTable) {
 		drawHorizontalLine: (i, size) => i === 0 || i === 1 || i === size-1 || i === size-2
 	}) + '\n\n'
 }
-
-const invalidTweaks = new Set()
-const absentTweaks = new Set()
 
 // Compare group of parameters like "Armory Stat Tweaks" or "Fletching Stat Tweaks"
 // And save them to variable
@@ -169,10 +152,7 @@ function parseStats(tweakGroup, tweakObj) {
   list.sort((a,b) => a.power - b.power)
 
   if(tweakGroup === 'Armory Stat Tweaks') injectToEquipments(list, 'defaultArmorMats')
-  if(tweakGroup === 'Stat Tweaks') {
-		injectToEquipments(list, 'defaultWeaponMats')
-		injectOreDicts(list)
-	}
+  if(tweakGroup === 'Stat Tweaks')        injectToEquipments(list, 'defaultWeaponMats')
 
   logBigTable(tweakGroup, tweakObj, bigTable)
 
@@ -183,10 +163,10 @@ function parseStats(tweakGroup, tweakObj) {
 
 	// Invalid tweaks (exist in tweaks, but absent in actual tweakerconstruct.cfg)
 	Object.keys(tweakObj).forEach(o=>{
-		if(o.substr(0,1) !== '_' && !existMats.has(o)) invalidTweaks.add(o)
+		if(o.substr(0,1) !== '_' && !existMats.has(o)) invalid.material.add(o)
 	})
 	;[...existMats.values()].forEach(o=>{
-		if(!tweakObj[o]) absentTweaks.add(o)
+		if(!tweakObj[o]) invalid.absent.add(o)
 	})
 }
 
@@ -210,12 +190,14 @@ async function start() {
 	fs.writeFileSync(paths.bigTable, formattedTable)
 	end()
 
-	if(invalidTweaks.size>0) {
-		console.log(`Found ${invalidTweaks.size} invalid materials for tweaks: ${[...invalidTweaks].join(', ')}`)
-	}
-	if(absentTweaks.size>0) {
-		console.log(`Found ${absentTweaks.size} materials without tweaks: ${[...absentTweaks].join(', ')}`)
-	}
+	Object.entries(invalid).forEach(([key,map])=>{
+		if(map.size === 0) return
+		console.log(({
+			material: `Found ${map.size} invalid materials for tweaks: ${[...map].join(', ')}`,
+			absent:   `Found ${map.size} materials without tweaks: ${[...map].join(', ')}`,
+			fileInject: 'Unable to inject files: ' + [...map].map(s=>`"${s}"`).join(', '),
+		})[key])
+	})
 }
 start()
 
