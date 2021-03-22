@@ -114,7 +114,7 @@
 			<fogColor>1,0,0.5</fogColor>
 			<atmosphereDensity>100</atmosphereDensity>
 			<gravitationalMultiplier>95</gravitationalMultiplier>
-			<orbitalDistance>60</orbitalDistance>
+			<orbitalDistance>200</orbitalDistance>
 			<rotationalPeriod>12000</rotationalPeriod>		
         </planet>
 		<planet name="Terra Nova" DIMID="112" temp="287" customIcon="earthlike">
