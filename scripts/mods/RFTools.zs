@@ -91,28 +91,32 @@ import crafttweaker.item.IIngredient;
 	[<ore:dirt>, <rftools:shape_card:5>, <ore:dirt>], 
 	[<ore:dirt>, <ore:dirt>, <ore:dirt>]]);
 
+# [Crafter Tier 1] from [Machine Block][+2]
+craft.remake(<rftools:crafter1>, ["pretty",
+  "  U  ",
+  "♥ ■ ♥"], {
+  "■": <extrautils2:machine>, # Machine Block
+  "♥": <ore:gearRedstone>,    # Redstone Gear
+  "U": <ore:xuUpgradeSpeed>,  # Upgrade Speed
+});
 
-# Crafter tier 1-3
-	recipes.remove(<rftools:crafter1>);
-	recipes.addShapedMirrored("RFTools Crafter1",
-	<rftools:crafter1>, 
-	[[null, <ore:gearRedstone>, null],
-	[<extrautils2:analogcrafter>, <extrautils2:machine>, <extrautils2:analogcrafter>], 
-	[null, <ore:gearRedstone>, null]]);
+# [Crafter Tier 2] from [Crafter Tier 1][+2]
+craft.remake(<rftools:crafter2>, ["pretty",
+  "  U  ",
+  "♥ C ♥"], {
+  "C": <rftools:crafter1>,            # Crafter Tier 1
+  "♥": <ore:gearRedstone>,            # Redstone Gear
+  "U": <extrautils2:ingredients:15>,  # Upgrade Speed (Magical)
+});
 
-	recipes.remove(<rftools:crafter2>);
-	recipes.addShapedMirrored("RFTools Crafter2",
-	<rftools:crafter2>, 
-	[[null, <ore:gearRedstone>, null],
-	[<extrautils2:analogcrafter>, <rftools:crafter1>, <extrautils2:analogcrafter>], 
-	[null, <ore:gearRedstone>, null]]);
-		
-	recipes.remove(<rftools:crafter3>);
-	recipes.addShapedMirrored("RFTools Crafter3",
-	<rftools:crafter3>, 
-	[[null, <ore:gearRedstone>, null],
-	[<extrautils2:analogcrafter>, <rftools:crafter2>, <extrautils2:analogcrafter>], 
-	[null, <ore:gearRedstone>, null]]);
+# [Crafter Tier 3] from [Crafter Tier 2][+2]
+craft.remake(<rftools:crafter3>, ["pretty",
+  "  U  ",
+  "♥ C ♥"], {
+  "C": <rftools:crafter2>,            # Crafter Tier 2
+  "♥": <ore:gearRedstone>,            # Redstone Gear
+  "U": <extrautils2:ingredients:16>,  # Upgrade Speed (Ultimate)
+});
 
 # Storage Modules
 	recipes.remove(<rftools:storage_module>);
@@ -156,47 +160,51 @@ recipes.addShaped(<rftools:powercell_card> * 4, [
 # Power Cells
 
 val powercellsIngrs = {
-  "♠": <ore:dustEndstone>,            # Crushed End Stone
-  "P": <rftools:powercell>,           # Powercell
-  "▲": <ore:dustDimensional>,         # Dimensional Blend
-  "S": <cyclicmagic:soulstone>,       # Soulstone
-  "I": <rftools:infused_diamond>,     # Infused Diamond
-  "i": <rftools:powercell_simple>,    # Simple Powercell
-  "☼": <biomesoplenty:crystal_shard>, # Celestial Crystal Shard
-  "▬": <biomesoplenty:crystal>,
-  "M": <rftools:machine_frame>,       # Machine Frame
+  "■": <ore:blockDimensional>,       # Dimensional Blank Block
+  "P": <rftools:powercell>,          # Powercell
+  "▲": <ore:dustDimensional>,        # Dimensional Blend
+  "S": <cyclicmagic:soulstone>,      # Soulstone
+  "◙": <rftools:machine_frame>,      # Machine Frame
+  "I": <rftools:infused_diamond>,    # Infused Diamond
+  "i": <rftools:powercell_simple>,   # Simple Powercell
+  "ͼ": <cyclicmagic:glowing_chorus>, # Glowing Chorus Fruit
 } as IIngredient[string];
 
+recipes.remove(<rftools:powercell_simple>);
+recipes.remove(<rftools:powercell>);
+recipes.remove(<rftools:powercell_advanced>);
 
 # [Simple Powercell*2] from [Soulstone][+3]
-recipes.remove(<rftools:powercell_simple>);
 craft.make(<rftools:powercell_simple> * 2, ["pretty",
-  "▲ ♠ ▲",
-  "M S M",
-  "▲ ♠ ▲"], powercellsIngrs
+  "▲ ͼ ▲",
+  "◙ S ◙",
+  "▲ ͼ ▲"], powercellsIngrs
 );
 
 # [Powercell] from [Simple Powercell][+2]
-recipes.remove(<rftools:powercell>);
 craft.make(<rftools:powercell>, ["pretty",
-  "▲ ☼ ▲",
-  "☼ S ☼",
-  "▲ ☼ ▲"], powercellsIngrs
+  "▲ I ▲",
+  "▲ i ▲"], powercellsIngrs
 );
 
-# [Powercell*2] from [Soulstone][+3]
+# [Powercell*2] from [Soulstone][+4]
 craft.make(<rftools:powercell> * 2, ["pretty",
-  "▲ ▬ ▲",
-  "M S M",
-  "▲ ▬ ▲"], powercellsIngrs
+  "▲ I ▲",
+  "◙ S ◙",
+  "ͼ I ͼ"], powercellsIngrs
 );
 
 # [Advanced Powercell] from [Powercell][+2]
-recipes.remove(<rftools:powercell_advanced>);
 craft.make(<rftools:powercell_advanced>, ["pretty",
-  "▲ I ▲",
-  "I P I",
-  "▲ I ▲"], powercellsIngrs
+  "▲ ■ ▲",
+  "▲ P ▲"], powercellsIngrs
+);
+
+# [Advanced Powercell*2] from [Soulstone][+4]
+craft.make(<rftools:powercell_advanced> * 2, ["pretty",
+  "I ■ I",
+  "◙ S ◙",
+  "ͼ ■ ͼ"], powercellsIngrs
 );
 
 # Matter beamer
@@ -204,3 +212,6 @@ remake("rftools matter_beamer", <rftools:matter_beamer>, [
 	[<rats:charged_creeper_chunk>, <ore:glowstone>, <rats:charged_creeper_chunk>],
 	[<ore:glowstone>, <rftools:machine_frame>, <ore:glowstone>],
 	[<rats:charged_creeper_chunk>, <ore:glowstone>, <rats:charged_creeper_chunk>]]);
+
+# Remove Dimensional block, so it could be only obtainable in Dimensions
+recipes.remove(<rftoolsdim:dimensional_blank_block>);

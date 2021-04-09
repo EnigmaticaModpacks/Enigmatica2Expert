@@ -103,3 +103,9 @@ scripts.process.mash(<animania:holstein_cheese_wheel> , <animania:holstein_chees
 scripts.process.mash(<animania:friesian_cheese_wheel> , <animania:friesian_cheese_wedge> * 6 , null);
 scripts.process.mash(<animania:raw_prime_pork>        , <animania:raw_prime_bacon> * 6       , null);
 scripts.process.mash(<minecraft:wheat>                , <animania:block_straw> * 2           , null);
+
+# Remake Omelettes to use only Animania cheese
+recipes.remove(<animania:super_omelette>);
+recipes.remove(<animania:cheese_omelette>);
+recipes.addShapeless("animania_super_omelette",   <animania:super_omelette>,   [<animania:plain_omelette>, <ore:foodBaconCooked>, <animania:truffle>, <ore:cheeseAnimania>]);
+recipes.addShapeless("animania_cheese_omelette",  <animania:cheese_omelette>,  [<animania:plain_omelette>, <ore:cheeseAnimania>]);

@@ -36,3 +36,6 @@ craft.remake(<openblocks:tank> * 2, ["pretty",
 
 # Clear tanks
 utils.clearFluid(<openblocks:tank>);
+
+# Tank fast alt
+scripts.process.alloy([<ore:blockQuartzBlack>], <openblocks:tank>, "only: alloySmelter");

@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 
 #modloaded extrautils2
 	
@@ -213,6 +214,10 @@ scripts.process.mash(<minecraft:ender_pearl> , <extrautils2:endershard> * 16, nu
 //mods.extrautils2.Resonator.add(IItemStack output, IItemStack input, int energy, @Optional boolean addOwnerTag);
 scripts.wrap.extrautils2.Resonator.add(<extrautils2:decorativesolid:6>, <botania:quartztypemana>, 700 * 100);
 
+# Make quartzburnt harder (was 8 GP)
+mods.extrautils2.Resonator.remove(<extrautils2:decorativesolid:7>);
+scripts.wrap.extrautils2.Resonator.add(<extrautils2:decorativesolid:7>, <minecraft:quartz_block>, 80 * 100);
+
 # Harder Player Chest (was most easy player interface)
 craft.remake(<extrautils2:playerchest>, ["pretty",
 	"A A A",
@@ -230,7 +235,7 @@ craft.remake(<extrautils2:teleporter:1>, ["pretty",
   "░ ☺ ░"], {
   "░": <ore:compressed5xCobblestone>, # Sextuple Compressed Cobblestone
   "B": <extendedcrafting:lamp:1>,     # Black Iron Lamp
-  "◊": <ore:gemIridium>,              # Iridium Ore
+  "◊": <extrautils2:decorativesolid:6>, # Blue Quartz
   "☺": <contenttweaker:blasted_coal>  # Blasted Coal
 });
 
@@ -243,3 +248,65 @@ craft.remake(<extrautils2:interactionproxy>, ["pretty",
   "E": <extrautils2:enderlilly>, # Ender Lilly
   "I": <extrautils2:indexer>     # Indexer
 });
+
+# [Redstone Gear] from [Magical Planks][+1]
+craft.remake(<extrautils2:ingredients:1>, ["pretty",
+  "  ♥  ",
+  "♥ M ♥",
+  "  ♥  "], {
+  "♥": <ore:gemRedstone>,                 # Resonating Redstone Crystal
+  "M": <extrautils2:decorativesolidwood>, # Magical Planks
+});
+
+# *======= Ring Of The Flying Squid =======*
+remake("Ring Of The Flying Squid",
+<extrautils2:chickenring:1>, 
+[[<extrautils2:ineffableglass>, <actuallyadditions:item_misc:19>, <extrautils2:ineffableglass>],
+[<ore:plateDenseGold>, <extrautils2:chickenring>, <ore:plateDenseGold>], 
+[<minecraft:golden_apple>, <extrautils2:goldenlasso>.withTag({Animal: {id: "minecraft:squid"}}), <minecraft:golden_apple>]]);
+
+# *======= Angel Ring =======*
+for i in 0 to 6 {
+	recipes.removeByRecipeName("extrautils2:angel_ring_" ~ i); # Remove shaped
+}
+recipes.addShaped("Angel Ring", 
+	<extrautils2:angelring>, [
+	[<ore:plateDenseGold>, <botania:flighttiara:*>, <ore:plateDenseGold>], 
+	[<environmentaltech:modifier_creative_flight>, <extendedcrafting:material:40>, <environmentaltech:modifier_creative_flight>], 
+	[<ore:plateDenseGold>, <extrautils2:chickenring:1>, <ore:plateDenseGold>]
+]);
+
+# [Dragon Egg Mill] from [Redstone Gear][+3]
+craft.remake(<extrautils2:passivegenerator:8>, ["pretty",
+  "Q e Q",
+  "S ♥ S",
+  "Q e Q"], {
+  "Q": <extrautils2:decorativesolid:7>, # Quartzburnt
+  "S": <ore:netherStar>,                # Nether Star
+  "e": <ore:eyeofredstone>,             # Eye of Redstone
+  "♥": <ore:gearRedstone>,              # Redstone Gear
+});
+
+val coreToolIngrs = {
+  "⌃": <extrautils2:decorativesolid:6>, # Blue Quartz
+  "#": <ore:stickWood>,                 # Stick
+  "s": <ore:string>,                    # String
+  "O": <extrautils2:opinium:8>,         # Opinium Core (Perfected)
+} as IIngredient[string];
+
+# [Kikoku] from [Blue Quartz][+1]
+craft.remake(<extrautils2:lawsword>, ["O","O","⌃"], coreToolIngrs);
+
+# [Compound Bow] from [Blue Quartz][+2]
+craft.remake(<extrautils2:compoundbow>, ["pretty",
+  "O   s",
+  "  ⌃  ",
+  "s    "], coreToolIngrs
+);
+
+# [Fire Axe] from [Blue Quartz][+2]
+craft.remake(<extrautils2:fireaxe>, ["pretty",
+  "O ⌃",
+  "  #",
+  "  #"], coreToolIngrs
+);

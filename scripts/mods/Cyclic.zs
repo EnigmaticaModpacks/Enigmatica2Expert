@@ -562,6 +562,7 @@ Hydrator.addRecipe(<chisel:waterstone>, [<minecraft:stone>], 125);
 # Misc
 Hydrator.addRecipe(<actuallyadditions:item_misc:12>, [<actuallyadditions:item_misc:9>], 250);
 Hydrator.addRecipe(<minecraft:ice>, [<thermalfoundation:material:1025>], 1000);
+Hydrator.addRecipe(<biomesoplenty:mud>, [<minecraft:dirt>], 1000);
 
 # Remove terracotta hydrating to prevent Infinity Furnace dupe
 for item in [

@@ -570,3 +570,12 @@ craft.shapeless(<mysticalagriculture:fertilized_essence> * 3, "AB", {
 # Better enderpearl recipe
 recipes.removeByRecipeName("mysticalagriculture:ender_pearl");
 craft.shapeless(<minecraft:ender_pearl> * 6, "AAA", {A: <mysticalagriculture:enderman_essence>});
+
+# Base essence harder to use more magic
+recipes.removeByRecipeName("mysticalagriculture:crafting_16");
+scripts.process.solution(
+	[<ore:shardProsperity>, <ore:powderMana>, <ore:dustAstralStarmetal>],
+	[<liquid:brass> * 16],
+	[<liquid:base_essence> * 16],
+	[0.5, 0.05, 0.05, 3300], "only: highoven"
+);

@@ -99,13 +99,21 @@ for slime, dirts in slimeDirts {
 	[<ore:blockSeared>, <ore:blockSeared>, <ore:blockSeared>]]);	
 
 # Large Plates in Immersive Engineering Metal Press
-	#OutputStack, InputStack, MoldStack, Energy, SizeValue
-	scripts.wrap.immersiveengineering.MetalPress.addRecipe(<tconstruct:large_plate>.withTag({Material: "xu_demonic_metal"}), <extrautils2:simpledecorative:1>, <immersiveengineering:mold>, 16000, 1);
-	scripts.wrap.immersiveengineering.MetalPress.addRecipe(<tconstruct:large_plate>.withTag({Material: "lead"}), <thermalfoundation:storage:3>, <immersiveengineering:mold>, 16000, 1);
-	scripts.wrap.immersiveengineering.MetalPress.addRecipe(<tconstruct:large_plate>.withTag({Material: "iron"}), <minecraft:iron_block>, <immersiveengineering:mold>, 16000, 1);
-	scripts.wrap.immersiveengineering.MetalPress.addRecipe(<tconstruct:large_plate>.withTag({Material: "electrum"}), <thermalfoundation:storage_alloy:1>, <immersiveengineering:mold>, 16000, 1);
-	scripts.wrap.immersiveengineering.MetalPress.addRecipe(<tconstruct:large_plate>.withTag({Material: "flint"}), <excompressum:compressed_block:5>, <immersiveengineering:mold>, 16000, 1);
-	
+val pressPlates = {
+	xu_demonic_metal : <extrautils2:simpledecorative:1>,
+	lead             : <thermalfoundation:storage:3>,
+	iron             : <minecraft:iron_block>,
+	electrum         : <thermalfoundation:storage_alloy:1>,
+	flint            : <excompressum:compressed_block:5>,
+	osgloglas        : <ore:blockOsgloglas>,
+	black_quartz     : <ore:blockQuartzBlack> * 2,
+	heavy            : <ore:blockHeavy>,
+	constantan       : <ore:blockConstantan>,
+} as IIngredient[string];
+for out,inp in pressPlates {
+	scripts.wrap.immersiveengineering.MetalPress.addRecipe(<tconstruct:large_plate>.withTag({Material: out}), inp, <immersiveengineering:mold>, 16000, inp.amount);
+}
+
 	scripts.wrap.immersiveengineering.MetalPress.addRecipe(<tconstruct:tool_rod>.withTag({Material: "ardite"}), <tconstruct:ingots:1>, <immersiveengineering:mold:2>, 4000, 1);
 
 # EFLN
@@ -473,3 +481,7 @@ craft.make(<plustic:laser_medium>.withTag({Material: "endrod"}), ["pretty",
 });
 
 #-------------------------------------------------------------------------------
+
+# Remove Centrifuge (Causing dupes and looks weird)
+rh(<plustic:centrifuge:1>);
+rh(<plustic:centrifuge>);

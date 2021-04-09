@@ -106,7 +106,7 @@ import mods.actuallyadditions.BallOfFur.addReturn as addBallReturn;
 	recipes.addShaped("Atomic Reconstructor", 
 	<actuallyadditions:block_atomic_reconstructor>, 
 	[[<ore:plateSteel>, <forestry:thermionic_tubes:4>, <ore:plateSteel>],
-	[<ore:dustRedstone>, <actuallyadditions:block_misc:9>, <industrialforegoing:laser_lens_inverted:14>], 
+	[<ore:dustRedstone>, <actuallyadditions:block_misc:9>, null], 
 	[<ore:plateSteel>, <forestry:thermionic_tubes:4>, <ore:plateSteel>]]);
 
 # Removing Recipes
@@ -293,25 +293,6 @@ for i in 0 to listCatFur.length {
 	mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreMagnesium>, 250);
 	mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreThorium>, 250);
 	mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreCinnabar>, 250);
-
-
-# *======= Ring Of The Flying Squid =======*
-	remake("Ring Of The Flying Squid",
-	<extrautils2:chickenring:1>, 
-	[[<extrautils2:ineffableglass>, <minecraft:elytra>.anyDamage(), <extrautils2:ineffableglass>],
-	[<ore:plateDenseGold>, <actuallyadditions:item_misc:19>, <ore:plateDenseGold>], 
-	[<minecraft:golden_apple>, <extrautils2:chickenring>, <minecraft:golden_apple>]]);
-
-# *======= Angel Ring =======*
-for i in 0 to 6 {
-	recipes.removeByRecipeName("extrautils2:angel_ring_" ~ i); # Remove shaped
-}
-recipes.addShaped("Angel Ring", 
-	<extrautils2:angelring>, [
-	[<ore:plateDenseGold>, <botania:flighttiara:*>, <ore:plateDenseGold>], 
-	[<environmentaltech:modifier_creative_flight>, <extendedcrafting:material:40>, <environmentaltech:modifier_creative_flight>], 
-	[<ore:plateDenseGold>, <extrautils2:chickenring:1>, <ore:plateDenseGold>]
-]);
 
 # Harder Phantom Face
 remake("actuallyadditions Phantomface", <actuallyadditions:block_phantomface>, [

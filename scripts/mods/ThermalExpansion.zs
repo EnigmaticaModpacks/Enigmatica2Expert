@@ -112,14 +112,6 @@ craft.make(<thermalexpansion:frame:130>, ["pretty",
 	[<ore:ingotConstantan>, <thermalexpansion:frame>, <ore:ingotConstantan>], 
 	[<ore:gearCopper>, <thermalfoundation:material:513>, <ore:gearCopper>]]);
 
-# Fluid Transposer
-	recipes.remove(<thermalexpansion:machine:8>);
-	recipes.addShaped("Fluid Transposer", 
-	<thermalexpansion:machine:8>, 
-	[[<thermalexpansion:tank>, <forestry:carpenter>, <thermalexpansion:tank>],
-	[<ore:blockGlass>, <thermalexpansion:frame>, <ore:blockGlass>], 
-	[<ore:gearInvar>, <thermalfoundation:material:513>, <ore:gearInvar>]]);
-
 # Sawmill
 	recipes.remove(<thermalexpansion:machine:2>);
 	recipes.addShaped("Sawmill", 
@@ -128,19 +120,6 @@ craft.make(<thermalexpansion:frame:130>, ["pretty",
 	[<ore:logWood>, <thermalexpansion:frame>, <ore:logWood>], 
 	[<ore:gearCopper>, <thermalfoundation:material:513>, <ore:gearCopper>]]);
 
-# Pulverizer
-	recipes.remove(<thermalexpansion:machine:1>);
-	recipes.addShaped("Pulverizer", 
-	<thermalexpansion:machine:1>, 
-	[[<ore:craftingPiston>, <actuallyadditions:block_grinder>, <ore:craftingPiston>],
-	[<tconstruct:large_plate>.withTag({Material: "flint"}), <thermalexpansion:frame>, <tconstruct:large_plate>.withTag({Material: "flint"})], 
-	[<ore:gearCopper>, <thermalfoundation:material:513>, <ore:gearCopper>]]);
-	
-	recipes.addShaped("Pulverizer2", 
-	<thermalexpansion:machine:1>, 
-	[[<ore:craftingPiston>, <actuallyadditions:block_grinder_double>, <ore:craftingPiston>],
-	[<tconstruct:large_plate>.withTag({Material: "flint"}), <thermalexpansion:frame>, <tconstruct:large_plate>.withTag({Material: "flint"})], 
-	[<ore:gearCopper>, <thermalfoundation:material:513>, <ore:gearCopper>]]);
 
 # Primal Mana
 	scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:mana> * 125, [<liquid:mirion> * 18, <liquid:osgloglas> * 18, <liquid:ic2coolant> * 125]);
@@ -200,19 +179,20 @@ craft.make(<thermalexpansion:frame:130>, ["pretty",
 	scripts.wrap.actuallyadditions.Empowerer.addRecipe(<thermalexpansion:frame:129>, <thermalexpansion:frame:128>, <immersiveengineering:material:2>, <thermalfoundation:material:354>, <thermalfoundation:material:290>, <mekanism:basicblock:8>, 2500000, 200, [0.25, 0.25, 0.29]);
 
 # Dynamo harder recipes
-function remakeDynamo(name as string, item as IItemStack, i1 as IIngredient, i2 as IIngredient){
-	remake("ThermalExpansion Dynamo " ~ name, item, [
-		[null, <actuallyadditions:item_battery_triple>, null],
-		[<thermalfoundation:material:514>, i1 , <thermalfoundation:material:514>],
-		[i2, <mekanism:tierinstaller:1>, i2]]);
+function remakeDynamo(item as IItemStack, oreName as string) {
+	recipes.removeShaped(item);
+	recipes.addShaped("ThermalExpansion Dynamo " ~ item.damage, item, [
+		[null, <actuallyadditions:item_battery_double:*>, null],
+		[<thermalfoundation:material:514>, oreDict["plate"~oreName], <thermalfoundation:material:514>],
+		[oreDict["gear"~oreName], <mekanism:tierinstaller>, oreDict["gear"~oreName]]]);
 }
 
-remakeDynamo("0", <thermalexpansion:dynamo>,   <ore:plateCopper>,     <ore:gearCopper>);
-remakeDynamo("1", <thermalexpansion:dynamo:1>, <ore:plateInvar>,      <ore:gearInvar>);
-remakeDynamo("2", <thermalexpansion:dynamo:2>, <ore:plateTin>,        <ore:gearTin>);
-remakeDynamo("3", <thermalexpansion:dynamo:3>, <ore:plateLead>,       <ore:gearLead>);
-remakeDynamo("4", <thermalexpansion:dynamo:4>, <ore:plateElectrum>,   <ore:gearElectrum>);
-remakeDynamo("5", <thermalexpansion:dynamo:5>, <ore:plateConstantan>, <ore:gearConstantan>);
+remakeDynamo(<thermalexpansion:dynamo:0>, "Copper");
+remakeDynamo(<thermalexpansion:dynamo:1>, "Invar");
+remakeDynamo(<thermalexpansion:dynamo:2>, "Tin");
+remakeDynamo(<thermalexpansion:dynamo:3>, "Lead");
+remakeDynamo(<thermalexpansion:dynamo:4>, "Electrum");
+remakeDynamo(<thermalexpansion:dynamo:5>, "Constantan");
 
 # Remove old non-working reservior clearings
 recipes.removeByRecipeName("thermalexpansion:reservoir_10");
@@ -516,10 +496,18 @@ for i in 0 to 5 {
 	mods.jei.JEI.addItem(<thermalexpansion:cell>     .withTag({                   Level: i as byte}));
 }
 
-# Make cryotheum dust alternative
-recipes.removeByRecipeName("thermalfoundation:dust_cryotheum");
-recipes.addShapeless("dust_cryotheum x1", <thermalfoundation:material:1025> * 1, [<ore:dustBlizz>, <ore:dustBlizz>, <ore:dustRedstone>, <minecraft:snowball>]);
-recipes.addShapeless("dust_cryotheum x4", <thermalfoundation:material:1025> * 4, [<ore:dustBlizz>, <ore:dustBlizz>, <ore:dustRedstone>, <forestry:pollen:1>]);
+# Make Dusts alternatives
+val dustAlts = {
+	<thermalfoundation:material:1024> : [<ore:dustBlaze> , <ore:dustSulfur>    , <forestry:pollen>]  ,
+	<thermalfoundation:material:1025> : [<ore:dustBlizz> , <minecraft:snowball>, <forestry:pollen:1>],
+	<thermalfoundation:material:1026> : [<ore:dustBlitz> , <ore:dustSaltpeter> , <forestry:pollen>]  ,
+	<thermalfoundation:material:1027> : [<ore:dustBasalz>, <ore:dustObsidian>  , <forestry:pollen>]  ,
+} as IIngredient[][IItemStack];
+for out,list in dustAlts {
+	recipes.remove(out);
+	recipes.addShapeless(out.displayName~" x1", out,     [list[0], list[0],          <ore:dustRedstone>, list[1]]);
+	recipes.addShapeless(out.displayName~" x4", out * 4, [list[0], list[0], list[2], <ore:dustRedstone>, list[1]]);
+}
 
 # Clear content of reserviors
 for i in 0 to 5 {
@@ -545,6 +533,16 @@ craft.remake(<thermalexpansion:augment:128>, ["pretty",
   "T": <thermalfoundation:material:640>, # Tool Casing
   "E": <ore:plateElectrum>,              # Electrum Plate
   "♥": <thermalfoundation:material:512>, # Redstone Servo
+});
+
+# [Augment: Auxiliary Transmission Coil] from [Redstone Transmission Coil][+2]
+craft.remake(<thermalexpansion:augment:512>, ["pretty",
+  "  ¤ ♥",
+  "⌂ ♥ ¤",
+  "♥ ⌂  "], {
+  "⌂": <thermalfoundation:material:640>, # Tool Casing
+  "¤": <ore:gearSilver>,                 # Silver Gear
+  "♥": <thermalfoundation:material:514>, # Redstone Transmission Coil
 });
 
 # [Augment: Auxiliary Sieve] from [Redstone Servo][+2]
@@ -586,4 +584,77 @@ craft.make(<thermalfoundation:material:640> * 8, ["pretty",
 });
 
 # Mending Moss Alt
-scripts.wrap.thermalexpansion.Enchanter.addRecipe(<tconstruct:materials:19> * 2, <tconstruct:materials:18>, <tconstruct:materials:18>, 12000, 3280 * 2, false);
+scripts.wrap.thermalexpansion.Enchanter.addRecipe(
+	<tconstruct:materials:19> * 2, <tconstruct:materials:18>, <tconstruct:materials:18>,
+	12000, 3280 * 2, false
+);
+
+# [Pulverizer (Basic)] from [Machine Frame][+5]
+recipes.removeShaped(<thermalexpansion:machine:1>);
+craft.remake(<thermalexpansion:machine:1>, ["pretty",
+  "s C s",
+  "□ ◙ □",
+  "¤ ♥ ¤"], {
+  "□": <tconstruct:large_plate>.withTag({Material: "flint"}), # Flint Large Plate
+  "s": <biomesoplenty:white_sand>,        # White Sand
+  "C": <actuallyadditions:block_grinder> | <actuallyadditions:block_grinder_double>, # Crusher
+  "¤": <ore:gearElectrum>,                # Electrum Gear
+  "♥": <thermalfoundation:material:513>,  # Redstone Reception Coil
+  "◙": <thermalexpansion:frame>,          # Machine Frame
+});
+
+# [Phytogenic Insolator (Basic)] from [Machine Frame][+5]
+recipes.removeShaped(<thermalexpansion:machine:4>);
+craft.remake(<thermalexpansion:machine:4>, ["pretty",
+  "B A B",
+  "□ ◙ □",
+  "¤ ♥ ¤"], {
+  "□": <tconstruct:large_plate>.withTag({Material: "osgloglas"}), # Osgloglas Large Plate
+  "A": <forestry:arboretum>,             # Arboretum (Managed)
+  "B": <ore:itemBiomassRich>,            # Rich Biomass
+  "¤": <ore:gearElectrum>,               # Electrum Gear
+  "♥": <thermalfoundation:material:513>, # Redstone Reception Coil
+  "◙": <thermalexpansion:frame>,         # Machine Frame
+});
+
+# [Induction Smelter (Basic)] from [Machine Frame][+5]
+recipes.removeShaped(<thermalexpansion:machine:3>);
+craft.remake(<thermalexpansion:machine:3>, ["pretty",
+  "R I R",
+  "□ ◙ □",
+  "¤ ♥ ¤"], {
+  "□": <tconstruct:large_plate>.withTag({Material: "heavy"}), # Heavy Large Plate
+  "R": <thermalfoundation:material:832>, # Rosin
+  "¤": <ore:gearElectrum>,               # Electrum Gear
+  "♥": <thermalfoundation:material:513>, # Redstone Reception Coil
+  "I": <ic2:te:54>,                      # Induction Furnace
+  "◙": <thermalexpansion:frame>,         # Machine Frame
+});
+
+# [Fluid Transposer (Basic)] from [Machine Frame][+5]
+recipes.removeShaped(<thermalexpansion:machine:8>);
+craft.remake(<thermalexpansion:machine:8>, ["pretty",
+  "B C B",
+  "⌃ ◙ ⌃",
+  "¤ ♥ ¤"], {
+  "B": <actuallyadditions:item_water_bowl>, # Bowl of Water
+  "⌃": <tconstruct:large_plate>.withTag({Material: "black_quartz"}), # Black Quartz Large Plate
+  "C": <forestry:carpenter>,             # Carpenter
+  "¤": <ore:gearInvar>,                  # Invar Gear
+  "♥": <thermalfoundation:material:513>, # Redstone Reception Coil
+  "◙": <thermalexpansion:frame>,         # Machine Frame
+});
+
+# [Magma Crucible (Basic)] from [Machine Frame][+5]
+recipes.removeShaped(<thermalexpansion:machine:6>);
+craft.remake(<thermalexpansion:machine:6>, ["pretty",
+  "▬ S ▬",
+  "□ ◙ □",
+  "¤ ♥ ¤"], {
+  "□": <tconstruct:large_plate>.withTag({Material: "constantan"}), # Constantan Large Plate
+  "S": <tconstruct:smeltery_controller>, # Smeltery Controller
+  "¤": <ore:gearInvar>,                  # Invar Gear
+  "♥": <thermalfoundation:material:513>, # Redstone Reception Coil
+  "◙": <thermalexpansion:frame>,         # Machine Frame
+  "▬": <ore:ingotBrickNetherGlazed>,     # Nethercotta
+});

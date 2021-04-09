@@ -300,3 +300,7 @@ mods.rt.RandomThingsTweaker.addImbuingRecipe(
 <deepmoblearning:soot_covered_redstone>, 
 <rats:little_black_squash_balls>, 
 <extrautils2:ingredients:4> * 3);
+
+# Black Death Mask Recycle
+scripts.process.crush(<rats:black_death_mask>, <botania:petalblock:15>, "only: Grindstone SagMill eu2Crusher AACrusher IECrusher", 
+	[<botania:petalblock>, <botania:petalblock:14>, <botania:petalblock:7>], [0.9, 0.8, 0.7]);

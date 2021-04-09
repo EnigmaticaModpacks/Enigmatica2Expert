@@ -25,22 +25,22 @@ craft.remake(<advgenerators:iron_frame> * 2, ["pretty",
   "I": <immersiveengineering:material:8>, # Iron Mechanical Component
 });
 
-# [Control Circuit] from [Quartzburnt][+2]
+# [Control Circuit] from [Red Coal][+2]
 craft.remake(<advgenerators:controller>, ["pretty",
   "A Q A",
   "E E E"], {
   "A": <ore:circuitAdvanced>,           # Advanced Circuit
-  "Q": <extrautils2:decorativesolid:7>, # Quartzburnt
+  "Q": <extrautils2:ingredients:4>,     # Red Coal
   "E": <forestry:thermionic_tubes:12>,  # Ender Electron Tube
 });
 
-# [Pressure Valve] from [Hardened Fluiduct (Opaque)][+2]
+# [Pressure Valve] from [Hardened Fluiduct][+2]
 craft.remake(<advgenerators:pressure_valve>, ["pretty",
   "D I D",
   "I H I",
   "D I D"], {
   "D": <mekanism:basicblock:11>,    # Dynamic Valve
-  "H": <thermaldynamics:duct_16:*>, # Hardened Fluiduct (Opaque)
+  "H": <thermaldynamics:duct_16:2> | <thermaldynamics:duct_16:3>, # Hardened Fluiduct
   "I": <advgenerators:iron_tubing>, # Iron Tubing
 });
 
@@ -50,18 +50,18 @@ craft.remake(<advgenerators:advanced_pressure_valve>, ["pretty",
   "R P R",
   "R R R"], {
   "P": <advgenerators:pressure_valve>, # Pressure Valve
-  "R": <thermaldynamics:duct_0:*>,     # Resonant Fluxduct
+  "R": <thermaldynamics:duct_0:4>, # Resonant Fluxduct
 });
 
 
 
 val turbineTypes = {
-	iron      : {"▬": <ore:ingotFakeIron>     , "/": <tconstruct:large_plate>.withTag({Material: "iron"}) | <tconstruct:large_plate>.withTag({Material: "construction_alloy"}), "o": <advgenerators:iron_tubing>},
+	iron      : {"▬": <ore:plateIron>         , "/": <tconstruct:large_plate>.withTag({Material: "iron"}) | <tconstruct:large_plate>.withTag({Material: "construction_alloy"}), "o": <advgenerators:iron_tubing>},
 	bronze    : {"▬": <ore:plateBronze>       , "/": <tconstruct:large_plate>.withTag({Material: "bronze"}),         "o": <forestry:sturdy_machine>},
-	gold      : {"▬": <ore:plateGold>         , "/": <tconstruct:large_plate>.withTag({Material: "electrum"}),       "o": <forestry:chipsets:3>.withTag({T: 3 as short})},
-	steel     : {"▬": <ore:plateSteel>        , "/": <tconstruct:large_plate>.withTag({Material: "steel"}),          "o": <enderio:item_basic_capacitor:1>},
-	adv_alloy : {"▬": <ore:plateAdvancedAlloy>, "/": <tconstruct:large_plate>.withTag({Material: "advanced_alloy"}), "o": <ic2:crafting:4>},
-	manyullyn : {"▬": <ore:plateManyullyn>    , "/": <tconstruct:large_plate>.withTag({Material: "manyullyn"}),      "o": <plustic:mirioningot>},
+	gold      : {"▬": <ore:plateGold>         , "/": <tconstruct:large_plate>.withTag({Material: "electrum"}),       "o": <actuallyadditions:item_crystal_empowered:4>},
+	steel     : {"▬": <ore:plateSteel>        , "/": <tconstruct:large_plate>.withTag({Material: "steel"}),          "o": <enderio:item_basic_capacitor>},
+	adv_alloy : {"▬": <ore:plateAdvancedAlloy>, "/": <tconstruct:large_plate>.withTag({Material: "advanced_alloy"}), "o": <ore:stickTitaniumIridium>},
+	manyullyn : {"▬": <ore:ingotManyullyn>    , "/": <tconstruct:large_plate>.withTag({Material: "manyullyn"}),      "o": <mysticalagriculture:crafting:32>},
 	enderium  : {"▬": <ore:plateEnderium>     , "/": <tconstruct:large_plate>.withTag({Material: "enderium"}),       "o": <thermalfoundation:material:895>},
 } as IIngredient[string][string];
 
@@ -75,7 +75,7 @@ for name, ingrs in turbineTypes {
 	ingrs["R"] = rotor;
 
 	# Blade
-	craft.make(blade * 2, ["pretty",
+	craft.make(blade * 4, ["pretty",
 		"▬ ▬",
 		"▬ ▬",
 		"  ▬"], ingrs);
@@ -87,7 +87,7 @@ for name, ingrs in turbineTypes {
 		"B B B"], ingrs);
 
 	# Turbine
-	craft.make(turbine, ["pretty",
+	craft.make(name=="iron" ? turbine*4 : turbine, ["pretty",
 		"◙ ◙ ◙",
 		"R r R",
 		"◙ o ◙"], {

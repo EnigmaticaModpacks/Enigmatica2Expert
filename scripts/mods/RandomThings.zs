@@ -46,7 +46,7 @@ recipes.addShaped(<cyclicmagic:book_ender>, [
 # Time in bottle
 remake("randomthings_timeinabottle", <randomthings:timeinabottle>, [
 	[null, <animania:milk_bottle>, null], 
-	[<rats:little_black_squash_balls>, <minecraft:clock>, <rats:little_black_squash_balls>], 
+	[<randomthings:ingredient:13>, <minecraft:clock>, <randomthings:ingredient:13>], 
 	[<animania:milk_bottle>, <extrautils2:klein>, <animania:milk_bottle>]
 ]);
 
@@ -67,7 +67,7 @@ scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<randomthings:spectr
 	<storagedrawers:shroud_key>, [ectoplasm, ectoplasm, ectoplasm, ectoplasm]);
 
 # Spectre Anchor
-recipes.remove(<randomthings:spectreanchor>);
+recipes.removeShaped(<randomthings:spectreanchor>);
 recipes.addShaped(<randomthings:spectreanchor>, [
 	[<randomthings:ingredient:2>],
 	[<tombmanygraves:death_list>],

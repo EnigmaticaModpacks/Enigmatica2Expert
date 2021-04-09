@@ -562,3 +562,9 @@ scripts.process.crush(<ore:gemQuartz>, qdust, "only: iecrusher aegrinder mekcrus
 
 # Nerf torches from Light level 14
 <minecraft:torch>.asBlock().definition.lightLevel = 0.7f;
+
+# Missed melt recipe for Block Of Ender Pearls
+scripts.process.melt(<actuallyadditions:block_misc:6>, <liquid:ender> * 1000, "No Exceptions");
+
+# Prevent melting dupe
+craft.remake(<quark:obsidian_pressure_plate>, ["AA","AA"], {A: <ore:obsidian>});

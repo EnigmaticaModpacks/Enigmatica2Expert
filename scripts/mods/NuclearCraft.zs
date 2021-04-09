@@ -77,7 +77,7 @@ craft.remake(<nuclearcraft:part:11>, ["pretty",
   "□ ¤ □"], {
   "□": <ore:plateBasic>,      # Basic Plating
   "¤": <ore:gearTin>,         # Tin Gear
-  "п": <ore:plateDenseLapis>, # Dense Lapis Lazuli Plate
+  "п": <enderio:block_reservoir>, # Endervoir
 });
 
 # Only leave Fluid fill recipe
@@ -351,3 +351,6 @@ for fluid in [
 		game.getLiquid(fluid~"_fluoride_flibe")*288
 	]);
 }
+
+# Remove Niter recipe (way cheaper than any other)
+mods.nuclearcraft.manufactory.removeRecipeWithOutput(<thermalfoundation:material:772> * 2);

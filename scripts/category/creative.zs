@@ -371,33 +371,35 @@ recipes.addShapeless("Creative Tank Reset",
 	"            ☠ ☠  ", 
 	"                ◊"], list);
 
-# TIC Creative Modifier
-	list["F"] = <ore:blockPigiron>;
-	list["G"] = <ore:blockAlubrass>;
-	list["H"] = <tconstruct:materials:19>;
-	list["I"] = <ore:blockManyullyn>;
-	list["J"] = <ore:blockOsmiridium>;
-	list["K"] = <ore:slimecrystalBlue>;
-	list["L"] = <tconstruct:large_plate>.withTag({Material: "xu_magical_wood"});
-	list["M"] = <ore:blockKnightslime>;
-	list["N"] = <ore:slimecrystalGreen>;
-	list["O"] = <ore:blockAlumite>;
-	list["P"] = <tconstruct:metal:6>;
-	list["Q"] = <tconstruct:materials:12>;
-	list["R"] = <tconstruct:materials:13>;
-	list["S"] = <extendedcrafting:singularity:5>;
-	list["T"] = <ore:slimecrystalMagma>;
-
-	craft.make( <tconstruct:materials:50>, ["pretty",
-	"F G H H H H H G F",
-	"G F I J J J I F G",
-	"K I L M M M L I N",
-	"K O M P Q P M ▤ N",
-	"K O M R S R M ▤ N",
-	"K O M P Q P M ▤ N",
-	"K I L M M M L I N",
-	"G F I ▧ ▧ ▧ I F G",
-	"F G T T T T T G F"], list);
+# [Creative Modifier*2] from [Gold Singularity][+16]
+craft.remake(<tconstruct:materials:50> * 2, ["pretty",
+  "▄ ▀ e e e e e ▀ ▄",
+  "▀ ▄ M m m m M ▄ ▀",
+  "l M □ ■ ■ ■ □ M i",
+  "l A ■ S E S ■ r i",
+  "l A ■ x G x ■ r i",
+  "l A ■ S E S ■ r i",
+  "l M □ ■ ■ ■ □ M i",
+  "▀ ▄ M O O O M ▄ ▀",
+  "▄ ▀ s s s s s ▀ ▄"], {
+  "■": <ore:blockKnightslime>,           # Block of Knightslime
+  "▀": <ore:blockAlubrass>,              # Block of Aluminum Brass
+  "□": <tconstruct:large_plate>.withTag({Material: "xu_magical_wood"}), # Magical Wooden Large Plate
+  "A": <ore:blockAlumite>,               # Alumite Block
+  "▄": <ore:blockPigiron>,               # Block of Pigiron
+  "e": <tconstruct:materials:19>,        # Mending Moss
+  "E": <tconstruct:materials:12>,        # Expander (Horizontal)
+  "G": <extendedcrafting:singularity:5>, # Gold Singularity
+  "i": <ore:slimecrystalGreen>,          # Green Slime Crystal
+  "l": <ore:slimecrystalBlue>,           # Blue Slime Crystal
+  "M": <ore:blockManyullyn>,             # Block of Manyullyn
+  "m": <ore:blockOsmiridium>,            # Osmiridium Block
+  "O": <ore:blockOsgloglas>,             # Osgloglas Block
+  "r": <ore:blockMirion>,                # Mirion Block
+  "s": <ore:slimecrystalMagma>,          # Magma Slime Crystal
+  "S": <tconstruct:metal:6>,             # Silky Block of Jewel
+  "x": <tconstruct:materials:13>,        # Expander (Vertical)
+});
 
 # AE2 Creative Cell
 	craft.make(<appliedenergistics2:creative_storage_cell>, ["pretty",

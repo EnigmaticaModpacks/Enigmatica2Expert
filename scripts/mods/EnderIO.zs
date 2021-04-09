@@ -3,6 +3,7 @@ import crafttweaker.item.IIngredient;
 import mods.jei.JEI.removeAndHide as rh;
 import mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput as ncAlloyRm;
 import scripts.process.solution;
+import scripts.craft.grid.Grid;
 
 #modloaded enderio
 
@@ -319,9 +320,6 @@ recipes.addShaped(<enderio:item_conduit_facade> * 8, [
 	[BDR, null, BDR],
 	[BDR, BDR, BDR]]);
 
-# Nutritious stick craft
-mods.inworldcrafting.FluidToItem.transform(<enderio:item_material:8>, <fluid:nutrient_distillation>, [<minecraft:stick>]);
-
 # Avaritia Ender IO integration
 #Infinity ball from all other balls and infinity catalyst
 recipes.remove(<avaritiaio:grindingballinfinity> * 64);
@@ -395,11 +393,39 @@ craft.remake(<enderio:item_fluid_filter>, ["pretty",
   "F": <flopper:flopper>, # Flopper
 });
 
-# [Omnivoir*4] from [Flopper][+1]
+# [Omnivoir]*4 from [Flopper][+1]
 craft.remake(<enderio:block_omni_reservoir> * 4, ["pretty",
   "■ ■ ■",
   "■ F ■",
   "■ ■ ■"], {
-  "■": <ore:fusedGlass>, # Quite Clear Glass
+  "■": <ore:blockGlass>,
   "F": <flopper:flopper>, # Flopper
+});
+
+# [Omnivoir]*8 from [Flopper]
+scripts.wrap.forestry.ThermionicFabricator.addCast(<enderio:block_omni_reservoir> * 8,
+	[[<flopper:flopper>]], <liquid:glass> * 8000, <forestry:wax_cast:*>
+);
+
+# [Energy Gauge] from [Omnivoir][+2]
+craft.remake(<enderio:block_gauge>, ["pretty",
+  "  ▲  ",
+  "▬ O ▬"], {
+  "▲": <ore:dustBedrock>,              # Grains of Infinity
+  "▬": <ore:ingotFakeIron>,            # Iron Ingot
+  "O": <enderio:block_omni_reservoir>, # Omnivoir
+});
+
+# [Endervoir] from [Molten Lapis]
+recipes.remove(<enderio:block_reservoir>);
+scripts.wrap.tconstruct.Casting.addBasinRecipe(<enderio:block_reservoir>, <enderio:block_omni_reservoir>, <liquid:lapis>, 666 * 18);
+
+# [Black Paper]*8 from [Ink Sac][+1]
+craft.remake(<enderio:item_material:77> * 8, ["pretty",
+  "p p p",
+  "p d p",
+  "p p p"], {
+  "p": <ore:paper>,    # Paper
+  "d": <ore:dyeBlack>, # Ink Sac
+  remove: <ore:paperBlack>,
 });

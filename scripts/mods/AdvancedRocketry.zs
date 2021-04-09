@@ -118,13 +118,14 @@ import mods.jei.JEI.removeAndHide as rh;
 	<ore:stickIron>.remove(<advancedrocketry:productrod:1>);
 
 
-# [Pressurized Tank] from [Tank][+1]
+# [Pressurized Tank] from [Tank][+2]
 craft.remake(<advancedrocketry:liquidtank>, ["pretty",
-  "  □  ",
-  "□ T □",
-  "  □  "], {
-  "□": <ore:plateSilicon>, # Silicon Plate
-  "T": <openblocks:tank>,  # Tank
+  "T ◊ T",
+  "T a T",
+  "T ◊ T"], {
+  "a": <openblocks:tank>,   # Tank
+  "T": <ore:sheetTitanium>, # Titanium Sheet
+  "◊": <ore:gemDilithium>,  # Dilithium Crystal
 });
 recipes.addShapeless("Clearing AdvRock Tank", <advancedrocketry:liquidtank>, [<advancedrocketry:liquidtank>]);
 

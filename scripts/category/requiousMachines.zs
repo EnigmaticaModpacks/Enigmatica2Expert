@@ -5,6 +5,7 @@ import mods.requious.GaugeDirection;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.recipes.IFurnaceRecipe;
 
 #priority -100
 
@@ -51,16 +52,24 @@ function someMatches(ingr as IIngredient, str as string) as bool {
 	return false;
 }
 
-for r in furnace.all {
+static infinFurnaceBlacklist as string[] = [
+  "dustHydratedCoal",
+] as string[];
+
+for r in furnace.all { copyFurnaceRecipe(r); }
+
+function copyFurnaceRecipe(r as IFurnaceRecipe) as void {
   val inp = r.input;
   val out = r.output;
 
   # Remove recipe if it turn dust into ingot
-  if(someMatches(inp, "dust[A-Z]\\w+") && someMatches(out, "(ingot|gem)[A-Z]\\w+")) continue;
+  if(someMatches(inp, "dust[A-Z].+") && someMatches(out, "(ingot|gem)[A-Z].+")) return null;
 
 	# Remove recipes when -oxide versiot turn to non-oxide
-  if(someMatches(inp, "\\w+Oxide") && !someMatches(out, "\\w+Oxide")) continue;
+  if(someMatches(inp, ".+Oxide") && !someMatches(out, ".+Oxide")) return null;
 
+	# Remove by blacklist
+  for oreName in infinFurnaceBlacklist { if(someMatches(inp, oreName)) return null; }
 
   val assRecipe = AssemblyRecipe.create(function(c) {
     c.addItemOutput('output', out * min(64, out.amount * 4));
@@ -68,6 +77,7 @@ for r in furnace.all {
   .requireItem("input", inp)
   .requireDuration("duration", 200);
 
-  o.addRecipe(assRecipe);
-  o.addJEIRecipe(assRecipe);
+  <assembly:infinity_furnace>.addRecipe(assRecipe);
+  <assembly:infinity_furnace>.addJEIRecipe(assRecipe);
+  return null;
 }

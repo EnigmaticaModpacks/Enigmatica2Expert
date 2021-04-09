@@ -767,3 +767,14 @@ for item in <ore:dustAshes>.items {
 <ore:eyeOfDragon>.addItems([<eyeofdragons:eye_of_firedragon>, <eyeofdragons:eye_of_icedragon>]);
 
 <ore:ingotSpectre>.add(<randomthings:ingredient:3>);
+
+
+<ore:blockDimensional>.addItems([
+	<rftoolsdim:dimensional_blank_block>,
+	<rftoolsdim:dimensional_block>,
+	<rftoolsdim:dimensional_cross2_block>,
+	<rftoolsdim:dimensional_cross_block>,
+	<rftoolsdim:dimensional_pattern1_block>,
+	<rftoolsdim:dimensional_pattern2_block>,
+	<rftoolsdim:dimensional_small_blocks>,
+]);

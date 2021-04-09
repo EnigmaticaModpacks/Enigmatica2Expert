@@ -270,7 +270,7 @@ zenClass BeeHelper {
 		#-----------------------------------
 		# Add missed centrifuge recipes
 
-		// val removeFromTECentrifuge = [14, 13] as int[];
+		val removeBlacklist = [1,3,4,5,7] as int[];
 		// val makeTERecipeBlacklist = [10, 9, 12] as int[];
 
 		for drop in <gendustry:honey_drop>.definition.subItems {
@@ -280,7 +280,9 @@ zenClass BeeHelper {
 
 			val beeOuts = beesOutputs[i];
 			val honey_drop = i==7 ? drop * 3 : drop;
-			mods.thermalexpansion.Centrifuge.removeRecipe(comb);
+			if(!(removeBlacklist has i)) {
+				mods.thermalexpansion.Centrifuge.removeRecipe(comb);
+			}
 			scripts.processWork.work(["Centrifuge", "TECentrifuge"], null, [comb], null, [honey_drop], null, [beeOuts[0], beeOuts[1]], [beeHash(i, 1), beeHash(i, 2)]);
 		}
 	}

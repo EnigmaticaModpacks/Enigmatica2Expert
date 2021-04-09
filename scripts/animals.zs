@@ -1,6 +1,7 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import scripts.craft.grid.Grid;
+import mods.jei.JEI.removeAndHide as rh;
 
 // ======================================================
 //
@@ -185,6 +186,7 @@ craft.shapeless(<enderio:block_fused_quartz>, "AB", {
 // ---------------------------
 
 # [Fuel_Compressor] from [Crushing_Block][+3]
+rh(<avaritiafurnace:infinityfurnace>);
 craft.remake(<avaritiafurnace:fuelcompressor>, ["pretty",
   "# ▲ #",
   "▬ □ ▬",

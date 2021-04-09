@@ -11,6 +11,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	<immersiveengineering:shovel_steel>,
 	<immersiveengineering:axe_steel>,
 	<immersiveengineering:sword_steel>,
+	<immersiveengineering:hoe_steel>,
 	
 	<twilightforest:fiery_pickaxe>,
 	<twilightforest:steeleaf_pickaxe>.withTag({ench: [{lvl: 2 as short, id: 35 as short}]}),

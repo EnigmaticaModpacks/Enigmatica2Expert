@@ -140,3 +140,8 @@ craft.remake(<integratedtunnels:part_interface_fluid_item>, ["pretty",
   "F": <flopper:flopper>, # Flopper
   "∩": <integrateddynamics:crystalized_menril_chunk>, # Crystalized Menril Chunk
 });
+
+# Remove cheaty Propolis recipe
+# Other machines output only %10 of propolis
+mods.integrateddynamics.Squeezer.removeRecipesWithOutput(<forestry:propolis>, <fluid:for.honey> * 180);
+mods.integrateddynamics.MechanicalSqueezer.removeRecipesWithOutput(<forestry:propolis>, <fluid:for.honey> * 180);

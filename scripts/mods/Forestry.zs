@@ -173,17 +173,15 @@ val bagNames = [
 ] as string[];
 
 for name in bagNames {
+	val splBag = itemUtils.getItem("forestry:"~name~"_bag");
 	val advBag = itemUtils.getItem("forestry:"~name~"_bag_t2");
 	mods.forestry.Carpenter.removeRecipe(advBag);
 
-	scripts.wrap.forestry.Carpenter.addRecipe(advBag, scripts.craft.grid.Grid(["pretty",
-		"  G  ",
-		"S W S",
-		"  S  "], {
-		"S": <forestry:crafting_material:2>, # Silk Wisp
-		"G": <quark:gold_button>,            # Gold Button
-		"W": itemUtils.getItem("forestry:"~name~"_bag")
-	}).shaped(), 40, <liquid:water> * 250);
+	scripts.wrap.forestry.Carpenter.addRecipe(advBag, [
+		[<quark:gold_button>], # Gold Button
+		[splBag],
+		[<forestry:crafting_material:2>] # Silk Wisp
+	], 40, <liquid:water> * 250);
 }
 
 # Simplify Alviery because its feels too grindy for so low value
@@ -224,3 +222,16 @@ scripts.wrap.forestry.Carpenter.addRecipe(<forestry:crafting_material:6>, scentP
 scripts.wrap.forestry.Carpenter.addRecipe(<forestry:crafting_material:6>, scentPanelGrid, 40, <liquid:honey>     * 500);
 
 <forestry:wax_cast>.maxDamage = 32;
+
+# [Advanced Analyzer] from [Analyzer][+2]
+craft.remake(<requious:adv_bee_analyzer>, ["pretty",
+  "S t S",
+  "S A S"], {
+  "A": <forestry:analyzer>,            # Analyzer
+  "S": <forestry:crafting_material:6>, # Scented Paneling
+  "t": <forestry:propolis:1>,          # Sticky Propolis
+});
+
+# Just remake recipe, because different propolis wont actually work
+recipes.remove(<forestry:bituminous_peat>);
+recipes.addShaped("forestry_bituminous_peat", <forestry:bituminous_peat>, [[null, <ore:dustAsh>, null], [<forestry:peat:*>, <forestry:propolis:*>, <forestry:peat:*>], [null, <ore:dustAsh>, null]]);
