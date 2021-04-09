@@ -228,6 +228,7 @@
 			<skyColor>0,1,0</skyColor>
 			<fogColor>0,0,1</fogColor>
 			<hasRings>true</hasRings>
+			<generateVolcanos>true</generateVolcanos>
 			<atmosphereDensity>0</atmosphereDensity>
 			<gravitationalMultiplier>60</gravitationalMultiplier>
 			<orbitalDistance>130</orbitalDistance>
@@ -237,6 +238,7 @@
 			<biomeIds>advancedrocketry:hotdryrock</biomeIds>
 			<skyColor>0,1,0</skyColor>
 			<fogColor>0,0,1</fogColor>
+			<generageCraters>true</generageCraters>
 			<atmosphereDensity>0</atmosphereDensity>
 			<gravitationalMultiplier>60</gravitationalMultiplier>
 			<orbitalDistance>140</orbitalDistance>
