@@ -10,7 +10,6 @@ The goal of the addon is to make E2:E even harder, "Expert of Expert" modpack.
 10+ additional major mods and +70 tweaking and Quality of Life addons. Most important of them:
  - `Scalling Health`
  - `Construct's Armory`
- - `Deep Mob Learning`
  - `Harder Branch Mining`
  - `Little Tiles`
  - `Rats`
@@ -22,28 +21,33 @@ See full list in [MODS.md](MODS.md)
 
 -----------------
 
-## Principles of addon:
+## Principles and examples:
 
-- No item should disable bunch of other items.  
-  *Example: 💍 Angel ring should not be so cheap to diable every other variants of creative flight*
-
-- Less Resource-generating machines -> more resource processing ways.  
-  *Example: ▦ Sieves can give you Stack/Second of ore. Got nerf. But new x7 ore processing line comes in.*
-
-- More gain - harder recipe, no matter if item is hidden under "only experts knows about it".  
-  *Example: ⛏ Atomic Disassembler got nerf*
-
-- Keep "Mine" part from name "Minecraft" until endgame  
-  *Example: 🪐 New Ore deposits on planets*
+- ### No OP items
+  No item should disable bunch of other items.  
+  *![](https://git.io/JOv9z "Angel Ring") Angel ring should not be so cheap to diable every other variants of creative flight*
   
-- Replace vanilla-like equipment with Tinker's Variants.  
-  *Example: 🛡️ Iron - Diamond armor was removed, recipes replaced*
+- ### No exploits. Less cheese  
+  *![](https://git.io/JOv92 "Terrasteel Ingot") No more mob stripping farms for easy Terrasteel*
+
+- ### Less miners -> more manual mining + processing  
+  *![](https://git.io/JOv90 "Sieve") Sieves gave you Stack/Second of ore. Got nerf. But new x7 ore processing line comes in*
+
+- ### Clear guide
+  Quests and recipes reveal unpopular "hidden" mechanics  
+  *![](https://git.io/JtJMc "Quest Book") More Quest Book chapters describing "forgotten" items*
   
-- Less crafting table recipes -> more new crafting ways.  
-  *Example: 🔮 Mystical Agriculture Essence can be made in compressor*
+- ### Tinker's Hegemony  
+  Replace vanilla-like equipment with Tinker's Variants.  
+  *![](https://git.io/JOv9u "Iron Chestplate") Iron - Diamond armor was removed, recipes replaced*
   
-- No exploits, less cheeses.  
-  *Example: 🍫 No more mob stripping farms for easy Terrasteel*
+- ### Less crafting table -> more new crafting ways  
+  *![](https://git.io/JOv9g "§eInferium Essence") Mystical Agriculture Essence can be made in compressor*
+
+- ### Tech - Magic - Exploration  
+  This three ways more separated from each other, you chose your own way to enter late game  
+  *![](https://git.io/JOv9E "Pink Castle Rune Brick") Get Calcium Sulfite by recycling __Twilight Forest__ Castle*
+
 
 -----------------
 
