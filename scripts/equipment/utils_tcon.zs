@@ -136,29 +136,27 @@ function pushModifier(tag as IData, name as string, data as IData) as IData {
 # -------------------------------
 # Apply modifier
 # -------------------------------
-function addModifier(_item as IItemStack, name as string) as IItemStack {
-  if (isNull(name) || name == "") return _item;
-
-  // Automatically add creative modifier if this modifier required slot
-  var item = _item;
-  if(name != "creative" && name != "soulbound") item = addModifier(item, "creative");
-
-  var tag = item.tag as IData;
-
+function addSingleModifier(_tag as IData, name as string) as IData {
+  var tag = _tag;
+  
   // Add modifier name in modifier list
   if(isNull(D_find(tag.TinkerData.Modifiers, null, name)))
     tag = tag + {TinkerData: {Modifiers: [name] as IData}} as IData;
-
+  
   // Special cases for creative
   if (name == "creative") {
     tag = tag + {Stats: {FreeModifiers: (D(tag).getInt("Stats.FreeModifiers", 0) + 1) as IData}} as IData;
     tag = pushModifier(tag, name, {color:0,level:1});
-  } else if (name != "soulbound") {
+  } else if (name != "soulbound" && name != "tconevo.artifact") {
     // Other except creative and soulbound
     tag = tag + {Stats: {FreeModifiers: max(0, D(tag).getInt("Stats.FreeModifiers", 0) - 1) as IData}} as IData;
     tag = tag + {TinkerData: {UsedModifiers: (D(tag).getInt("TinkerData.UsedModifiers", 0) + 1) as IData}} as IData;
   }
 
+  if (name == "tconevo.artifact") {
+    tag = pushModifier(tag, name, {color:14333039,level:1});
+    tag = pushTrait(tag, name);
+  }
   if (name == "soulbound") {
     tag = pushModifier(tag, name, {color:16120748});
   }
@@ -302,6 +300,16 @@ function addModifier(_item as IItemStack, name as string) as IItemStack {
     tag = pushTrait(tag, name);
   }
 
-  return item.withTag(tag);
+  return tag;
+}
+
+function addModifier(_item as IItemStack, name as string) as IItemStack {
+  if (isNull(name) || name == "") return _item;
+
+  // Automatically add creative modifier if this modifier required slot
+  var item = _item;
+  if(name != "creative" && name != "soulbound") item = addModifier(item, "creative");
+
+  return item.withTag(addSingleModifier(item.tag, name));
 }
 

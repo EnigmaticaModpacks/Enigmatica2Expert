@@ -219,8 +219,13 @@ function equipEntity(iGroup as IData, entity as IEntityLivingBase, world as IWor
       equipBase.definition
     );
 
+    // Equip is invalid, skip
     if(isNull(equip)) continue;
 
+    // Add TconEvo "Artifact" modifier (ask for Unsealing to modify)
+    equip = equip.withTag(scripts.equipment.utils_tcon.addSingleModifier(equip.tag, "tconevo.artifact"));
+
+    // Other random mods
     if (random() < difficulty + 0.25d) equip = addRandomModifiers(equip, isArmor);
 
     # Damage item
