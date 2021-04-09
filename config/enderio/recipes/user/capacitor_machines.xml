@@ -22,7 +22,7 @@
   <capacitor key="enderio:block_buffer/use_creative"    base="0"        scaler="FIXED" />
   
   <capacitor key="enderio:block_buffer/intake" base="500000"   scaler="CUBIC" />
-  <capacitor key="enderio:block_buffer/buffer" base="20000000" scaler="POWER" />
+  <capacitor key="enderio:block_buffer/buffer" base="40000000" scaler="POWER" />
   <capacitor key="enderio:block_buffer/use"    base="0"        scaler="FIXED" />
 
   <capacitor key="enderio:block_farm_station/intake"          base="40000"    scaler="RANGE" />
