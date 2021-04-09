@@ -1,17 +1,49 @@
 [
-    {
-        "modifier": "diamond",
-        "mutations": [
-            {
-                "type": "material",
-                "value": [
-                    {
-                        "type": "item",
-                        "item": "actuallyadditions:item_crystal_empowered",
-                        "meta": 2
-                    }
-                ]
-            }
+  {
+    "modifier": "diamond",
+    "mutations": [
+      {
+        "type": "material",
+        "value": [
+          {
+            "type": "item",
+            "item": "actuallyadditions:item_crystal_empowered",
+            "meta": 2
+          }
         ]
-    }
+      }
+    ]
+  },
+  {
+    "modifier": "reinforced",
+    "mutations": [
+      {
+        "type": "colour",
+        "value": "ab47bc"
+      },
+      {
+        "type": "max_level",
+        "value": 10
+      },
+      {
+        "type": "material",
+        "value": [
+          {
+            "type": "item",
+            "item": "tconstruct:materials",
+            "meta": 14
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "modifier": "sharpness",
+    "mutations": [
+      {
+        "type": "max_level",
+        "value": 20
+      }
+    ]
+  }
 ]

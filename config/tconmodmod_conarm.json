@@ -1,3 +1,144 @@
 [
-
+  {
+    "modifier": "diamond_armor",
+    "mutations": [
+      {
+        "type": "material",
+        "value": [
+          {
+            "type": "item",
+            "item": "actuallyadditions:item_crystal_empowered",
+            "meta": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "modifier": "reinforced_armor",
+    "mutations": [
+      {
+        "type": "colour",
+        "value": "ab47bc"
+      },
+      {
+        "type": "max_level",
+        "value": 10
+      },
+      {
+        "type": "material",
+        "value": [
+          {
+            "type": "item",
+            "item": "tconstruct:materials",
+            "meta": 14
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "modifier": "resistant_armor",
+    "mutations": [
+      {
+        "type": "colour",
+        "value": "ff5252"
+      },
+      {
+        "type": "max_level",
+        "value": 8
+      },
+      {
+        "type": "material",
+        "value": [
+          {
+            "type": "item",
+            "item": "conarm:resist_mat"
+          }
+        ]
+      },
+      {
+        "type": "mod_slots",
+        "value": "all"
+      }
+    ]
+  },
+  {
+    "modifier": "fire_resistant_armor",
+    "mutations": [
+      {
+        "type": "colour",
+        "value": "ff5722"
+      },
+      {
+        "type": "max_level",
+        "value": 8
+      },
+      {
+        "type": "material",
+        "value": [
+          {
+            "type": "item",
+            "item": "conarm:resist_mat_fire"
+          }
+        ]
+      },
+      {
+        "type": "mod_slots",
+        "value": "all"
+      }
+    ]
+  },
+  {
+    "modifier": "blast_resistant_armor",
+    "mutations": [
+      {
+        "type": "colour",
+        "value": "7cb342"
+      },
+      {
+        "type": "max_level",
+        "value": 8
+      },
+      {
+        "type": "material",
+        "value": [
+          {
+            "type": "item",
+            "item": "conarm:resist_mat_blast"
+          }
+        ]
+      },
+      {
+        "type": "mod_slots",
+        "value": "all"
+      }
+    ]
+  },
+  {
+    "modifier": "projectile_resistant_armor",
+    "mutations": [
+      {
+        "type": "colour",
+        "value": "e0e0e0"
+      },
+      {
+        "type": "max_level",
+        "value": 8
+      },
+      {
+        "type": "material",
+        "value": [
+          {
+            "type": "item",
+            "item": "conarm:resist_mat_proj"
+          }
+        ]
+      },
+      {
+        "type": "mod_slots",
+        "value": "all"
+      }
+    ]
+  }
 ]

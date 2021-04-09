@@ -423,3 +423,53 @@ craft.remake(<tconstruct:materials:18>, ["pretty",
 # Molten Spectre
 scripts.process.melt(<ore:ingotSpectre>, <liquid:spectre> * 144, "No Exceptions");
 scripts.wrap.tconstruct.Casting.addTableRecipe(<randomthings:ingredient:3>, <tconstruct:cast_custom>, <liquid:spectre>, 144, false);
+
+#-------------------------------------------------------------------------------
+# Laser Nerfs
+#-------------------------------------------------------------------------------
+
+# [Blazerod Laser Medium] from [Draconium Ingot][+3]
+craft.make(<plustic:laser_medium>.withTag({Material: "blaze"}), ["pretty",
+  "/ / /",
+  "‚ ▬ *",
+  "/ / /"], {
+  "*": <advancedrocketry:crystal:4>,# Yellow Crystal Block
+  "‚": <ore:nuggetDraconicMetal>,   # Draconic Metal Nugget
+  "▬": <ore:ingotDraconium>,        # Draconium Ingot
+  "/": <ore:rodBlaze>,              # Blaze Rod
+});
+
+# [Prismarine Laser Medium] from [Basic Energy Relay Crystal][+3]
+craft.make(<plustic:laser_medium>.withTag({Material: "prismarine"}), ["pretty",
+  "◊ ◊ ◊",
+  "‚ Ϟ *",
+  "◊ ◊ ◊"], {
+  "◊": <ore:gemPrismarine> | <ore:shardPrismarine>, # Prismarine Shard
+  "*": <advancedrocketry:crystal:2>,                # Green Crystal Block
+  "‚": <ore:nuggetDraconicMetal>,                   # Draconic Metal Nugget
+  "Ϟ": <draconicevolution:energy_crystal>,          # Basic Energy Relay Crystal
+});
+
+# [Psigem Laser Medium] from [Wyvern Energy Relay Crystal][+3]
+craft.make(<plustic:laser_medium>.withTag({Material: "psigem"}), ["pretty",
+  "◊ ◊ ◊",
+  "‚ Ϟ *",
+  "◊ ◊ ◊"], {
+  "◊": <ore:gemPsi>,                         # Psigem
+  "‚": <ore:nuggetDraconicMetal>,            # Draconic Metal Nugget
+  "*": <advancedrocketry:crystal:1>,         # Blue Crystal Block
+  "Ϟ": <draconicevolution:energy_crystal:1>, # Wyvern Energy Relay Crystal
+});
+
+# [Endrod Laser Medium] from [Draconic Energy Relay Crystal][+3]
+craft.make(<plustic:laser_medium>.withTag({Material: "endrod"}), ["pretty",
+  "/ / /",
+  "‚ Ϟ *",
+  "/ / /"], {
+  "‚": <ore:nuggetDraconicMetal>,            # Draconic Metal Nugget
+  "*": <advancedrocketry:crystal:5>,         # Orange Crystal Block
+  "Ϟ": <draconicevolution:energy_crystal:2>, # Draconic Energy Relay Crystal
+  "/": <minecraft:end_rod>,                  # End Rod
+});
+
+#-------------------------------------------------------------------------------
