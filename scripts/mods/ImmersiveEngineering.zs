@@ -181,6 +181,7 @@ import scripts.craft.grid.Grid;
 mods.immersiveengineering.Excavator.addMineral("Osmium", 50, 0.005, ["oreTin", "oreOsmium", "oreSilver"], [0.01, 0.006, 0.003]);
 mods.immersiveengineering.Excavator.addMineral("Nuclear Ore", 20, 0.005, ["oreThorium", "oreBoron", "oreLithium", "oreMagnesium"], [0.01, 0.01, 0.01, 0.01]);
 mods.immersiveengineering.Excavator.addMineral("Black Quartz", 20, 0.005, ["oreQuartzBlack", "oreCoal"], [0.1, 0.3]);
+mods.immersiveengineering.Excavator.getMineral("Platinum").removeOre("oreIridium");
 
 # *======= Railgun rods =======*
 
