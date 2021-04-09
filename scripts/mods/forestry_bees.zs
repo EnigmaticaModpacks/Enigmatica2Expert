@@ -123,6 +123,7 @@ reprocessComb(<forestry:bee_combs:10>, [
 	g['🟡'] % 20,     # Beeswaxer
 	g['💛'] % 20,  # Honey Drop
 	(<minecraft:gunpowder> * 4) % 100, # Gunpowder
+	<nuclearcraft:marshmallow> % 30,
 ]);
 
 # [Mossy_Comb]
@@ -158,6 +159,10 @@ val bee_comb_def = <forestry:bee_combs>.definition;
 for i in [1, 8, 9 ,10] as int[] {
   mods.jei.JEI.addItem(bee_comb_def.makeStack(i));
 }
+mods.jei.JEI.addItem(<forestry:propolis:2>); # Pulsating Propolis
+
+# Missed propolis recycle recipe
+scripts.process.squeeze([<forestry:propolis>], null, "only: TECentrifuge", <ic2:misc_resource:4>);
 
 # ---------------------------
 
@@ -257,12 +262,17 @@ zenClass BeeHelper {
 			next("Рaughty" ); mods.botania.ManaInfusion.addInfusion(currOutList()[2], c['💧'], 100); mods.botania.ManaInfusion.addAlchemy(currOutList()[3], c['💧'], 200); mods.botania.ManaInfusion.addConjuration(currOutList()[4], c['💧'], 500); 
 			next("Egoistic"); scripts.wrap.actuallyadditions.AtomicReconstructor.addRecipe(c['🍯'], c['💧'], 10000);
 			next("Vain"    ); scripts.process.fill(c['💧'],  <liquid:base_essence> * 16,  c['🍯'],  "Except: Casting DryingBasin MechanicalDryingBasin");
-			next("Tinker"  ); addTinkersCentrifuges();
-			next("Artisan" ); addTinkersCentrifuges();
+			next("Tinker"  ); mods.thermalexpansion.Centrifuge.removeRecipe(c['⚙️']); addTinkersCentrifuges();
+			next("Artisan" ); mods.thermalexpansion.Centrifuge.removeRecipe(c['⚙️']); addTinkersCentrifuges();
 			next("Selfish" ); scripts.process.compress(c['💧'], c['🍯'], "only: Compactor");
-			next("Narcissistic"); craft.make(c['🍯'], ["UH"], {"U": <storagedrawers:upgrade_template>, "H": c['💧']});
+			next("Narcissistic"); craft.make(c['🍯'], ["HsH","sUs","HsH"], {s: <ore:stickWood>, U: <storagedrawers:upgrade_template>, H: c['💧']});
 
+		#-----------------------------------
 		# Add missed centrifuge recipes
+
+		// val removeFromTECentrifuge = [14, 13] as int[];
+		// val makeTERecipeBlacklist = [10, 9, 12] as int[];
+
 		for drop in <gendustry:honey_drop>.definition.subItems {
 			val i = drop.damage;
 			if(i >= beesOutputs.length) continue;
@@ -270,7 +280,8 @@ zenClass BeeHelper {
 
 			val beeOuts = beesOutputs[i];
 			val honey_drop = i==7 ? drop * 3 : drop;
-			scripts.processWork.work(["Centrifuge"], null, [comb], null, [honey_drop], null, [beeOuts[0], beeOuts[1]], [beeHash(i, 1), beeHash(i, 2)]);
+			mods.thermalexpansion.Centrifuge.removeRecipe(comb);
+			scripts.processWork.work(["Centrifuge", "TECentrifuge"], null, [comb], null, [honey_drop], null, [beeOuts[0], beeOuts[1]], [beeHash(i, 1), beeHash(i, 2)]);
 		}
 	}
 
