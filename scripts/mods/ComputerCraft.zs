@@ -41,3 +41,8 @@ remakeEx(<plethora:module:1>, [
 	[<ore:ingotFakeIron>, <ore:ingotFakeIron>, <ore:ingotFakeIron>],
 	[<ore:blockGlass>, gemDiamondRat, <actuallyadditions:block_laser_relay>],
 	[null, null, <ore:ingotFakeIron>]]);
+
+# Add missed items to JEI
+mods.jei.JEI.addItem(<opencomputers:print>);
+mods.jei.JEI.addItem(<opencomputers:misc>);
+mods.jei.JEI.addItem(<opencomputers:robot>);

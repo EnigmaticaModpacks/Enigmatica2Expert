@@ -1,3 +1,6 @@
+#priority 1000
+#modloaded requious
+
 import mods.requious.Assembly;
 import mods.requious.AssemblyRecipe;
 import mods.requious.SlotVisual;
@@ -5,8 +8,6 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 
-#priority 1000
-#modloaded requious
 
 function add(ass as Assembly, chunk as IItemStack[][IIngredient[]]) {
   for inputs, outputs in chunk {
@@ -169,6 +170,16 @@ x.addJEICatalyst(<opencomputers:printer>);
 x.setJEIDurationSlot(2,0,"duration", getVisGauge(1,8));
 addInsOuts(x, [[0,0],[1,0]], [[3,0]]);
 add(x, {[<opencomputers:material:28>, <ore:dye>] : [<opencomputers:print>]});
+
+// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+x = <assembly:electronics_assembler>;
+x.addJEICatalyst(<opencomputers:assembler>);
+x.setJEIDurationSlot(1,0,"duration", SlotVisual.arrowRight());
+addInsOuts(x, [[0,0]], [[2,0]]);
+add(x, {[<opencomputers:case1> | <opencomputers:case2> | <opencomputers:case3>] : [<opencomputers:robot>]});
+add(x, {[<opencomputers:material:17> | <opencomputers:material:18>] : [<opencomputers:misc>]});
+add(x, {[<opencomputers:material:23> | <opencomputers:material:24>] : [<opencomputers:misc:1>]});
 
 // -----------------------------------------------------------------------
 // -----------------------------------------------------------------------
@@ -336,5 +347,26 @@ return t
 for input in fertilizers {
   x.addJEIRecipe(AssemblyRecipe.create(function(container) {})
     .requireItem("item_in", input)
+  );
+}
+
+// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+x = <assembly:xp_bottler>;
+x.addJEICatalyst(<openblocks:xp_bottler>);
+x.setJEIFluidSlot(1, 0, 'liquid_input');
+x.setJEIDurationSlot(2,0,"duration", SlotVisual.arrowRight());
+addInsOuts(x, [[0,0]], [[3,0]]);
+
+for fluid in [
+  "essence",
+  "xpjuice",
+  "experience",
+] as string[] {
+  x.addJEIRecipe(AssemblyRecipe.create(function(container) {
+    container.addItemOutput('output0', <minecraft:experience_bottle>);
+  })
+  .requireFluid('liquid_input', game.getLiquid(fluid) * 160)
+  .requireItem("input0", <minecraft:glass_bottle>)
   );
 }

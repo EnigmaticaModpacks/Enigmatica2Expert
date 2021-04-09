@@ -380,7 +380,6 @@ val lp = desc.local("thaum.progress").toLowerCase();
 <thaumcraft:curio:5>.addTooltip("§f+ §5"~desc.local("thaum.artifice")~"§f " ~ lp);
 
 # 3d print tooltips
-mods.jei.JEI.addItem(<opencomputers:print>);
 desc.jei(<opencomputers:print>);
 
 # Blood runes helpers
