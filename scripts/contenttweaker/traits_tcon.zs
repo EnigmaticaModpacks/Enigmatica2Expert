@@ -203,7 +203,7 @@ function spectreMechanic(world as IWorld, player as IPlayer) as void {
     player.addPotionEffect(<potion:potioncore:reach>.makePotionEffect(40, 1));
   }
   val effect = player.getActivePotionEffect(<potion:potioncore:reach>);
-  player.addPotionEffect(<potion:potioncore:reach>.makePotionEffect(60, effect.amplifier + 1));
+  player.addPotionEffect(<potion:potioncore:reach>.makePotionEffect(40, effect.amplifier + 1));
 }
 
 val spectre_armor = ArmorTraitBuilder.create("spectre");

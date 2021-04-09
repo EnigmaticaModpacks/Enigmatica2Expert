@@ -7,7 +7,7 @@
   <capacitor key="enderio:block_simple_alloy_smelter/intake"             base="200000"   scaler="FIXED" />
   <capacitor key="enderio:block_simple_alloy_smelter/buffer"             base="20000"    scaler="FIXED" />
   <capacitor key="enderio:block_simple_alloy_smelter/use"                base="200"      scaler="FIXED" />
-  <capacitor key="enderio:block_simple_alloy_smelter/loss"               base="20"       scaler="FIXED" />
+  <capacitor key="enderio:block_simple_alloy_smelter/loss"               base="200"      scaler="FIXED" />
   <capacitor key="enderio:block_alloy_smelter/intake"                    base="200000"   scaler="POWER" />
   <capacitor key="enderio:block_alloy_smelter/buffer"                    base="2000000"  scaler="POWER" />
   <capacitor key="enderio:block_alloy_smelter/use"                       base="5000"     scaler="POWER" />

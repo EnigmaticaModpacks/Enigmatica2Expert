@@ -366,7 +366,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Lightwood planks] from [Wood] -->
+	<!-- [Lightwood planks] from [Lightwood Wood] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>advancedrocketry:alienwood 1</itemStack>

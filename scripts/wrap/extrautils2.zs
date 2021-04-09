@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded extrautils2
-// Uses of this mod: 6
+// Uses of this mod: 7
 
 
 //####################################################
@@ -45,10 +45,10 @@ zenClass Class_Crusher { zenConstructor() {}
 static Crusher as Class_Crusher = Class_Crusher();
 
 //####################################################
-// Uses of this class: 2
+// Uses of this class: 3
 zenClass Class_Resonator { zenConstructor() {}
 
-	// Uses of this method: 2
+	// Uses of this method: 3
 	function add(output as IItemStack, input as IItemStack, energy as int) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.extrautils2.Resonator.add'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), energy]));

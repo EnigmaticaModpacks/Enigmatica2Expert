@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded forestry
-// Uses of this mod: 38
+// Uses of this mod: 39
 
 
 //####################################################
@@ -93,10 +93,10 @@ zenClass Class_Squeezer { zenConstructor() {}
 static Squeezer as Class_Squeezer = Class_Squeezer();
 
 //####################################################
-// Uses of this class: 8
+// Uses of this class: 9
 zenClass Class_ThermionicFabricator { zenConstructor() {}
 
-	// Uses of this method: 8
+	// Uses of this method: 9
 	function addCast(output as IItemStack, ingredients as IIngredient[][], liquidStack as ILiquidStack) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.forestry.ThermionicFabricator.addCast'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient____(ingredients), serialize.ILiquidStack(liquidStack)]));

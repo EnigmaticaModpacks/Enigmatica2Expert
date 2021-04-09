@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded tconstruct
-// Uses of this mod: 76
+// Uses of this mod: 77
 
 
 //####################################################
@@ -33,7 +33,7 @@ zenClass Class_Alloy { zenConstructor() {}
 static Alloy as Class_Alloy = Class_Alloy();
 
 //####################################################
-// Uses of this class: 33
+// Uses of this class: 34
 zenClass Class_Casting { zenConstructor() {}
 
 	// Uses of this method: 22

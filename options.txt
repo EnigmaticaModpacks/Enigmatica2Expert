@@ -4,14 +4,14 @@ mouseSensitivity:0.5
 fov:0.0
 gamma:1.0
 saturation:0.0
-renderDistance:18
+renderDistance:10
 guiScale:3
 particles:0
 bobView:true
 anaglyph3d:false
 maxFps:260
 fboEnable:true
-difficulty:2
+difficulty:3
 fancyGraphics:true
 ao:2
 renderClouds:true
@@ -94,13 +94,14 @@ key_Hub Expand Key:0
 key_Change Caster Focus:34
 key_Misc Caster Toggle:0
 key_keybind.baublesinventory:0
-key_quark.keybind.toggleAutojump:0
+key_quark.keybind.lockBuilding:33:SHIFT
 key_quark.keybind.dropoff:0
 key_quark.keybind.chestSort:0
 key_quark.keybind.chestDropoff:0
 key_quark.keybind.chestMerge:0
 key_quark.keybind.chestRestock:0
 key_quark.keybind.chestExtract:0
+key_quark.keybind.toggleAutojump:0
 key_quark.emote.no:0
 key_quark.emote.yes:0
 key_quark.emote.wave:0
@@ -119,7 +120,6 @@ key_quark.emote.dab:0
 key_quark.emote.jet:0
 key_quark.emote.exorcist:0
 key_quark.emote.zombie:0
-key_quark.keybind.lockBuilding:33:SHIFT
 key_key.toggle_shaders:0
 key_bloodmagic.keybind.open_holding:53:CONTROL
 key_bloodmagic.keybind.cycle_holding_pos:0
@@ -178,7 +178,6 @@ key_key.open_wct.desc:58
 key_key.cycle_magnet_mode.desc:0
 key_key.narrator:0
 key_key.cofh.multimode:47
-key_key.toggle_focus.desc:15
 key_key.jei.toggleOverlay:24:CONTROL
 key_key.jei.focusSearch:33:CONTROL
 key_key.jei.toggleCheatMode:0
@@ -200,6 +199,9 @@ key_key.toggleDislocator:0
 key_key.cycleDigAOE:0
 key_key.cycleAttackAOE:0
 key_key.toggleShields:0
+key_key.immersiveengineering.magnetEquip:31
+key_key.immersiveengineering.chemthrowerSwitch:0
+key_key.toggle_focus.desc:15
 key_key.columnshiftup:0
 key_key.columnshiftdown:35
 key_key.columnbarup:26
@@ -223,7 +225,6 @@ key_key.connected_area:0
 key_key.rotate_mirror:0
 key_key.material_list:50
 key_key.carry.desc:42
-key_key.chattweaks.switch_chat_view:15:SHIFT
 key_Options Gui:207
 key_key.colytra.toggle.desc:0
 key_waila.keybind.wailaconfig:82
@@ -233,8 +234,6 @@ key_waila.keybind.recipe:0
 key_waila.keybind.usage:0
 key_key.clipboardPaste:0
 key_dsurround.cfg.keybind.AnimaniaBadges:0
-key_key.immersiveengineering.magnetEquip:31
-key_key.immersiveengineering.chemthrowerSwitch:0
 key_mekanism.key.mode:40
 key_mekanism.key.armorMode:34
 key_mekanism.key.feetMode:35
@@ -319,7 +318,7 @@ key_key.journeymap.fullscreen.west:203
 key_Profile GUI:210
 key_enderio.keybind.inventory:23
 key_enderio.keybind.dsu:19:CONTROL
-key_enderio.keybind.glidertoggle:34
+key_enderio.keybind.glidertoggle:37
 key_enderio.keybind.soundlocator:0
 key_enderio.keybind.nightvision:25
 key_enderio.keybind.gogglesofrevealing:0

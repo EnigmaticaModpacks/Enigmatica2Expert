@@ -22,32 +22,84 @@
       <output name="skullGuardianDiode"/>
     </slicing>
   </recipe>
-  <recipe name="Stirling Generator, Upgrade"><disabled/></recipe>
-  <recipe name="Enhanced Combustion Generator, Upgrade"><disabled/></recipe>
-  <recipe name="Alloy Smelter, Upgrade"><disabled/></recipe>
-  <recipe name="Solar Panel 2, Upgrade"><disabled/></recipe>
-  <recipe name="Solar Panel 3, Upgrade"><disabled/></recipe>
-  <recipe name="Solar Panel 4, Upgrade"><disabled/></recipe>
-  <recipe name="Crafter, Upgrade"><disabled/></recipe>
-  <recipe name="SAG Mill, Upgrade"><disabled/></recipe>
-  <recipe name="Gear, Wood"><disabled/></recipe>
-  <recipe name="Gear, ae2 messes things up"><disabled/></recipe>
-  <recipe name="Gear, just to be sure"><disabled/></recipe>
-  <recipe name="Gear, better save than sorry"><disabled/></recipe>
-  <recipe name="Gear, Stone"><disabled/></recipe>
-  <recipe name="Gear, Stone, Upgrade"><disabled/></recipe>
-  <recipe name="Enhanced Combustion Generator"><disabled/></recipe>
-  <recipe name="Enhanced Wired Charger"><disabled/></recipe>
-  <recipe name="Enhanced Wired Charger, Upgrade"><disabled/></recipe>
-  <recipe name="Wireless Charger (Antenna, enhanced)"><disabled/></recipe>
-  <recipe name="Wireless Charger (Antenna, enhanced), Upgrade 1"><disabled/></recipe>
-  <recipe name="Wireless Charger (Antenna, enhanced), Upgrade 2"><disabled/></recipe>
-  <recipe name="Enhanced Alloy Smelter"><disabled/></recipe>
-  <recipe name="Enhanced Alloy Smelter, Upgrade"><disabled/></recipe>
-  <recipe name="The Enhanced Vat"><disabled/></recipe>
-  <recipe name="The Enhanced Vat, Upgrade"><disabled/></recipe>
-  <recipe name="Enhanced SAG Mill"><disabled/></recipe>
-  <recipe name="Enhanced SAG Mill, Upgrade"><disabled/></recipe>
+  <recipe name="Stirling Generator, Upgrade">
+    <disabled/>
+  </recipe>
+  <recipe name="Enhanced Combustion Generator, Upgrade">
+    <disabled/>
+  </recipe>
+  <recipe name="Alloy Smelter, Upgrade">
+    <disabled/>
+  </recipe>
+  <recipe name="Solar Panel 2, Upgrade">
+    <disabled/>
+  </recipe>
+  <recipe name="Solar Panel 3, Upgrade">
+    <disabled/>
+  </recipe>
+  <recipe name="Solar Panel 4, Upgrade">
+    <disabled/>
+  </recipe>
+  <recipe name="Crafter, Upgrade">
+    <disabled/>
+  </recipe>
+  <recipe name="SAG Mill, Upgrade">
+    <disabled/>
+  </recipe>
+  <recipe name="Gear, Wood">
+    <disabled/>
+  </recipe>
+  <recipe name="Gear, ae2 messes things up">
+    <disabled/>
+  </recipe>
+  <recipe name="Gear, just to be sure">
+    <disabled/>
+  </recipe>
+  <recipe name="Gear, better save than sorry">
+    <disabled/>
+  </recipe>
+  <recipe name="Gear, Stone">
+    <disabled/>
+  </recipe>
+  <recipe name="Gear, Stone, Upgrade">
+    <disabled/>
+  </recipe>
+  <recipe name="Enhanced Combustion Generator">
+    <disabled/>
+  </recipe>
+  <recipe name="Enhanced Wired Charger">
+    <disabled/>
+  </recipe>
+  <recipe name="Enhanced Wired Charger, Upgrade">
+    <disabled/>
+  </recipe>
+  <recipe name="Wireless Charger (Antenna, enhanced)">
+    <disabled/>
+  </recipe>
+  <recipe name="Wireless Charger (Antenna, enhanced), Upgrade 1">
+    <disabled/>
+  </recipe>
+  <recipe name="Wireless Charger (Antenna, enhanced), Upgrade 2">
+    <disabled/>
+  </recipe>
+  <recipe name="Enhanced Alloy Smelter">
+    <disabled/>
+  </recipe>
+  <recipe name="Enhanced Alloy Smelter, Upgrade">
+    <disabled/>
+  </recipe>
+  <recipe name="The Enhanced Vat">
+    <disabled/>
+  </recipe>
+  <recipe name="The Enhanced Vat, Upgrade">
+    <disabled/>
+  </recipe>
+  <recipe name="Enhanced SAG Mill">
+    <disabled/>
+  </recipe>
+  <recipe name="Enhanced SAG Mill, Upgrade">
+    <disabled/>
+  </recipe>
   <recipe name="Sagmill: Flux Core" required="true">
     <sagmilling energy="1000000">
       <input name="thermalexpansion:frame:148"/>
@@ -60,10 +112,18 @@
       <output name="immersiveengineering:material:17"/>
     </sagmilling>
   </recipe>
-  <recipe name="Sagmill: Black Quartz Block"><disabled/></recipe>
-  <recipe name="Tweak: Stick from Wood"><disabled/></recipe>
-  <recipe name="Tweak: Chest from Wood"><disabled/></recipe>
-  <recipe name="Tweak: Wood Hopper"><disabled/></recipe>
+  <recipe name="Sagmill: Black Quartz Block">
+    <disabled/>
+  </recipe>
+  <recipe name="Tweak: Stick from Wood">
+    <disabled/>
+  </recipe>
+  <recipe name="Tweak: Chest from Wood">
+    <disabled/>
+  </recipe>
+  <recipe name="Tweak: Wood Hopper">
+    <disabled/>
+  </recipe>
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Construction Foam" required="true">
     <fermenting energy="10000">
