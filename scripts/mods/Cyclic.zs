@@ -337,6 +337,7 @@ craft.remake(<cyclicmagic:beacon_potion>, ["pretty",
 });
 
 # [Air_Charm] from [Ender_Orb][+3]
+<cyclicmagic:charm_air>.maxDamage = 2000;
 craft.remake(<cyclicmagic:charm_air>, ["pretty",
   "B I B",
   "G E G",
