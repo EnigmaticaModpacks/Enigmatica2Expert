@@ -51,7 +51,7 @@ async function init() {
     const rows = curseResult[group].map(curseAddon => 
       formatRow(modsDiff.map_union[curseAddon.id], curseAddon, isUpdated 
         ? {noIcon:true, noSummary:true, asList:true} 
-        : {fixedWidth:true}
+        : {}
       )
     )
     changelogText += [
@@ -120,6 +120,8 @@ async function init() {
       ['🛹', 'Integrated Dynamics'],
       ['🟨', 'Recurrent Complex'],
       ['🅱', 'Block Drops'],
+      ['🛸', 'EnderIO'],
+      ['🔩', 'RFTools'],
     ]],
     ['🔄', 'Misc Changes', [
       ['🧱', 'Technical'],

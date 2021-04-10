@@ -246,7 +246,8 @@ var known = [
 =============================================*/
 
 var log = fs.readFileSync('logs/debug.log', 'utf8')
-log = log.substring(0, log.indexOf('[Server thread/'))
+const serverThreadStart = log.indexOf('[Server thread/')
+if(serverThreadStart!==-1) log = log.substring(0, serverThreadStart)
 var newLog = (log.match(/\[Client thread\/INFO\] (\[Surge\]: The game loaded in approximately +.* seconds.)/)?.[1] ?? '') + '\n'
 
 var stat = {

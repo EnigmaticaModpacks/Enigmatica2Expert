@@ -342,6 +342,12 @@
 "Forestry","forestry:cart.apiary","EntityMinecartApiary",2
 "Forestry","forestry:cart.beehouse","EntityMinecartBeehouse",1
 "Hole Filler Mod","hole_filler_mod:entity_throwable_hole_filler","EntityThrowableHoleFiller",0
+"Hole Filler Mod","hole_filler_mod:entity_throwable_hole_filler_balanced","EntityThrowableHoleFillerBalanced",1
+"Hole Filler Mod","hole_filler_mod:entity_throwable_hole_filler_dark","EntityThrowableHoleFillerDark",6
+"Hole Filler Mod","hole_filler_mod:entity_throwable_hole_filler_lava","EntityThrowableHoleFillerLava",4
+"Hole Filler Mod","hole_filler_mod:entity_throwable_hole_filler_light","EntityThrowableHoleFillerLight",5
+"Hole Filler Mod","hole_filler_mod:entity_throwable_hole_filler_smart","EntityThrowableHoleFillerSmart",2
+"Hole Filler Mod","hole_filler_mod:entity_throwable_hole_filler_water","EntityThrowableHoleFillerWater",3
 "Ice and Fire","iceandfire:amphithere","EntityAmphithere",934
 "Ice and Fire","iceandfire:amphitherearrow","EntityAmphithereArrow",935
 "Ice and Fire","iceandfire:chaintie","EntityChainTie",939

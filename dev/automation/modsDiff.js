@@ -22,14 +22,14 @@ function getModsIds(json_Path_A, json_Path_B) {
     removed: A.filter(o =>!map_B[o.addonID]),
     updated: null,
   }
-  result.updated = B.filter(o => map_A[o.addonID] && map_A[o.addonID].installedFile.id !== o.installedFile.id)
+  result.updated = B.filter(o => map_A[o.addonID] && map_A[o.addonID].installedFile.id !== o.installedFile?.id)
   return result
 }
 
 module.exports.formatRow = formatRow
 function formatRow(mcAddon, curseAddon, options={}) {
   return (options.asList?'- ':'') + 
-  (options.noIcon?'':`<img src="${curseAddon.logo?.thumbnailUrl}"${options.fixedWidth?' width="50"':''}> | `)+
+  (options.noIcon?'':`<img src="${curseAddon.logo?.thumbnailUrl}" width="50"> | `)+
   `[**${curseAddon.name.trim()}**](${curseAddon.url}) `+
   `<sup>${options.isUpdated?' 🟡 ':''}<sub>${mcAddon?.installedFile?.FileNameOnDisk}</sub></sup>`+
   (options.noSummary?'':` <br> ${curseAddon.summary}`)

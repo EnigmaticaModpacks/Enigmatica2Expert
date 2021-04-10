@@ -1,0 +1,1 @@
+dev/lang/tmp*, config/BiomeTweaker/output/biome/*, node_modules/*, dev/default_configs/*, config/tellme/*, scripts/wrap/*, crash-reports/*, .git/*, CHANGELOG*, minecraftinstance.json*,assets\*, dumps\*, saves\* , *.zsrc, *.log, *aspects.json, items.csv, world-gen.json, blocks.cfg
