@@ -222,10 +222,6 @@ key_key.nutrition:49:NONE
 key_pi.key.open_pi:23:NONE
 key_pi.key.et_gui:23:NONE
 key_pi.key.et_world:23:CONTROL
-key_key.toolbelt.open:45:NONE
-key_key.toolbelt.cycle.left:0:NONE
-key_key.toolbelt.cycle.right:0:NONE
-key_key.toolbelt.slot:18:SHIFT
 key_key.travelersbackpack.inventory:48:NONE
 key_key.travelersbackpack.toggle_tank:49:NONE
 key_key.travelersbackpack.cycle_tool:44:NONE

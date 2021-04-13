@@ -449,19 +449,6 @@ recipes.addShaped(<twilightforest:peacock_fan>, [
 	[<ore:slimecrystalBlue>, <forestry:oak_stick>, <ore:peacockFeathers>]
 ]);
 
-# Tool pouch
-craft.remake(<toolbelt:pouch>, ["ABA", "CDC", "CCC"], {
-	A: <ore:string>,
-	B: <quark:gold_button>,
-	C: <harvestcraft:hardenedleatheritem>,
-	D: <immersiveengineering:wooden_device0>});
-
-# Tool Belts
-craft.remake(<toolbelt:belt>, [" A ", "CBC", "C C"], {
-	A: <conarm:travel_belt_base>,
-	B: <quark:iron_button>,
-	C: <harvestcraft:hardenedleatheritem>});
-
 # Lesser blaze powder
 craft.reshapeless(<minecraft:blaze_powder>, "A", { A: <minecraft:blaze_rod>, remove: <minecraft:blaze_powder>*2});
 

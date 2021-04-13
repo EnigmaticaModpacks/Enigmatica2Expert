@@ -375,7 +375,6 @@
   "recast": "1.2",
   "bloodmagic": "1.12.2-2.4.3-105",
   "orelib": "3.6.0.1",
-  "toolbelt": "1.9.13",
   "claybucket": "1.1",
   "silentlib": "3.0.13",
   "baubles": "1.5.2",
