@@ -48,6 +48,11 @@ function createCompressedBlock(name as string, level as int, blockMaterial as Bl
 	c.register();
 }
 
+createCompressedBlock("compressed_skystone", 6, <blockmaterial:rock>);
+createCompressedBlock("compressed_andesite", 4, <blockmaterial:rock>);
+createCompressedBlock("compressed_diorite" , 4, <blockmaterial:rock>);
+createCompressedBlock("compressed_granite" , 4, <blockmaterial:rock>);
+
 createCompressedBlock("compressed_crushed_skystone", 5, <blockmaterial:rock>);
 createCompressedBlock("compressed_crushed_andesite", 3, <blockmaterial:rock>);
 createCompressedBlock("compressed_crushed_diorite" , 3, <blockmaterial:rock>);

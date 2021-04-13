@@ -7,6 +7,10 @@ fluid.spectre=Spectre
 item.contenttweaker.compressed_glowstone.name=Compressed Glowstone
 item.contenttweaker.compressed_ender.name=Compressed Ender
 
+tile.contenttweaker.compressed_andesite.name=Compressed Andesite
+tile.contenttweaker.compressed_diorite.name=Compressed Diorite
+tile.contenttweaker.compressed_granite.name=Compressed Granite
+tile.contenttweaker.compressed_skystone.name=Compressed Skystone
 tile.contenttweaker.compressed_crushed_andesite.name=Compressed Crushed Andesite
 tile.contenttweaker.compressed_crushed_diorite.name=Compressed Crushed Diorite
 tile.contenttweaker.compressed_crushed_granite.name=Compressed Crushed Granite
