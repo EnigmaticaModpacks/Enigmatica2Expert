@@ -14,19 +14,10 @@
   "custom": {
     "__comment": "You can define additional blocks to be hammered by Compressed Hammers here. Use * as a wildcard for metadata. Use prefix ore: in name to query the Ore Dictionary.",
     "entries": [
-      {
-        "name": "",
-        "metadata": "*",
-        "rewards": [
-          {
-            "name": "",
-            "count": 1,
-            "metadata": "0",
-            "chance": 1.0,
-            "luck": 0.0
-          }
-        ]
-      }
+       {"name": "contenttweaker:compressed_andesite","metadata": "0", "rewards": [{"name": "exnihilocreatio:block_andesite_crushed","count": 9,"metadata": "0","chance": 1.0,"luck": 0.0}]}
+      ,{"name": "contenttweaker:compressed_diorite" ,"metadata": "0", "rewards": [{"name": "exnihilocreatio:block_diorite_crushed", "count": 9,"metadata": "0","chance": 1.0,"luck": 0.0}]}
+      ,{"name": "contenttweaker:compressed_granite" ,"metadata": "0", "rewards": [{"name": "exnihilocreatio:block_granite_crushed", "count": 9,"metadata": "0","chance": 1.0,"luck": 0.0}]}
+      ,{"name": "contenttweaker:compressed_skystone","metadata": "0", "rewards": [{"name": "exnihilocreatio:block_skystone_crushed","count": 9,"metadata": "0","chance": 1.0,"luck": 0.0}]}
     ],
     "example": {
       "__comment": "This example would allow Obsidian to be hammered into nine diamonds using a Compressed Hammer.",

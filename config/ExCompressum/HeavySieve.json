@@ -39,35 +39,129 @@
         "type": "list",
         "rewards": [
           {
-            "name": "jaopca:item_dusttinymalachite",
-            "metadata": 0,
-            "chance": 0.2,
-            "count": 7,
             "meshLevel": 2,
+            "name": "appliedenergistics2:crystal_seed",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.15,
             "rolls": 1
           },
           {
-            "name": "jaopca:item_dusttinyperidot",
-            "metadata": 0,
-            "chance": 0.2,
-            "count": 7,
             "meshLevel": 2,
+            "name": "thermalfoundation:material",
+            "metadata": 770,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.08,
             "rolls": 1
           },
           {
-            "name": "jaopca:item_dusttinymalachite",
-            "metadata": 0,
-            "chance": 0.4,
-            "count": 7,
             "meshLevel": 3,
+            "name": "appliedenergistics2:crystal_seed",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.15,
             "rolls": 1
           },
           {
-            "name": "jaopca:item_dusttinyperidot",
-            "metadata": 0,
-            "chance": 0.4,
-            "count": 7,
             "meshLevel": 3,
+            "name": "thermalfoundation:material",
+            "metadata": 770,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.08,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 3,
+            "name": "ic2:dust",
+            "metadata": 5,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.08,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 3,
+            "name": "nuclearcraft:gem",
+            "metadata": 4,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.04,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 3,
+            "name": "jaopca:item_pieceboron",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.11,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 3,
+            "name": "jaopca:item_pieceosmium",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.23,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "appliedenergistics2:crystal_seed",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.3,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "thermalfoundation:material",
+            "metadata": 770,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.15,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "ic2:dust",
+            "metadata": 5,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.15,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "nuclearcraft:gem",
+            "metadata": 4,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.08,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "jaopca:item_pieceboron",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.23,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "jaopca:item_pieceosmium",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.45,
             "rolls": 1
           }
         ]
@@ -78,35 +172,138 @@
         "type": "list",
         "rewards": [
           {
-            "name": "jaopca:item_dusttinyruby",
-            "metadata": 0,
-            "chance": 0.2,
-            "count": 7,
             "meshLevel": 2,
+            "name": "forestry:apatite",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.34,
             "rolls": 1
           },
           {
-            "name": "jaopca:item_dusttinytanzanite",
-            "metadata": 0,
-            "chance": 0.2,
-            "count": 7,
             "meshLevel": 2,
+            "name": "appliedenergistics2:crystal_seed",
+            "metadata": 600,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.08,
             "rolls": 1
           },
           {
-            "name": "jaopca:item_dusttinyruby",
+            "meshLevel": 2,
+            "name": "mekanism:salt",
             "metadata": 0,
-            "chance": 0.4,
-            "count": 7,
-            "meshLevel": 3,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.19,
             "rolls": 1
           },
           {
-            "name": "jaopca:item_dusttinytanzanite",
-            "metadata": 0,
-            "chance": 0.4,
-            "count": 7,
             "meshLevel": 3,
+            "name": "forestry:apatite",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.08,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 3,
+            "name": "appliedenergistics2:crystal_seed",
+            "metadata": 600,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.34,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 3,
+            "name": "mekanism:salt",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.19,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 3,
+            "name": "ic2:dust",
+            "metadata": 9,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.3,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 3,
+            "name": "exnihilocreatio:item_ore_aluminium",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.19,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 3,
+            "name": "jaopca:item_piecelithium",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.11,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "forestry:apatite",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.15,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "appliedenergistics2:crystal_seed",
+            "metadata": 600,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.38,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "mekanism:salt",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.34,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "ic2:dust",
+            "metadata": 9,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.34,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "exnihilocreatio:item_ore_aluminium",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.34,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "jaopca:item_piecelithium",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.23,
             "rolls": 1
           }
         ]
@@ -117,35 +314,129 @@
         "type": "list",
         "rewards": [
           {
-            "name": "jaopca:item_dusttinytopaz",
-            "metadata": 0,
-            "chance": 0.2,
-            "count": 7,
             "meshLevel": 2,
+            "name": "appliedenergistics2:crystal_seed",
+            "metadata": 1200,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.08,
             "rolls": 1
           },
           {
-            "name": "jaopca:item_dusttinysapphire",
-            "metadata": 0,
-            "chance": 0.2,
-            "count": 7,
             "meshLevel": 2,
+            "name": "appliedenergistics2:material",
+            "metadata": 5,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.02,
             "rolls": 1
           },
           {
-            "name": "jaopca:item_dusttinytopaz",
-            "metadata": 0,
-            "chance": 0.4,
-            "count": 7,
             "meshLevel": 3,
+            "name": "appliedenergistics2:crystal_seed",
+            "metadata": 1200,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.15,
             "rolls": 1
           },
           {
-            "name": "jaopca:item_dusttinysapphire",
-            "metadata": 0,
-            "chance": 0.4,
-            "count": 7,
             "meshLevel": 3,
+            "name": "appliedenergistics2:material",
+            "metadata": 5,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.08,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 3,
+            "name": "actuallyadditions:item_dust",
+            "metadata": 3,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.08,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 3,
+            "name": "nuclearcraft:gem",
+            "metadata": 3,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.04,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 3,
+            "name": "exnihilocreatio:item_ore_iron",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.23,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 3,
+            "name": "jaopca:item_piecemagnesium",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.08,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "appliedenergistics2:crystal_seed",
+            "metadata": 1200,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.3,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "appliedenergistics2:material",
+            "metadata": 5,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.15,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "actuallyadditions:item_dust",
+            "metadata": 3,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.15,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "nuclearcraft:gem",
+            "metadata": 3,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.08,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "exnihilocreatio:item_ore_iron",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.45,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "jaopca:item_piecemagnesium",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.15,
             "rolls": 1
           }
         ]
@@ -156,59 +447,156 @@
         "type": "list",
         "rewards": [
           {
-            "name": "jaopca:item_dusttinyamethyst",
-            "metadata": 0,
-            "chance": 0.6,
-            "count": 7,
-            "meshLevel": 3,
+            "meshLevel": 2,
+            "name": "biomesoplenty:gem",
+            "metadata": 1,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.04,
             "rolls": 1
           },
           {
-            "name": "jaopca:item_dusttinymalachite",
-            "metadata": 0,
-            "chance": 0.6,
-            "count": 7,
-            "meshLevel": 3,
+            "meshLevel": 2,
+            "name": "biomesoplenty:gem",
+            "metadata": 2,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.03,
             "rolls": 1
           },
           {
-            "name": "jaopca:item_dusttinyperidot",
-            "metadata": 0,
-            "chance": 0.6,
-            "count": 7,
-            "meshLevel": 3,
+            "meshLevel": 2,
+            "name": "biomesoplenty:gem",
+            "metadata": 5,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.02,
             "rolls": 1
           },
           {
-            "name": "jaopca:item_dusttinyruby",
-            "metadata": 0,
-            "chance": 0.6,
-            "count": 7,
-            "meshLevel": 3,
+            "meshLevel": 2,
+            "name": "biomesoplenty:gem",
+            "metadata": 6,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.06,
             "rolls": 1
           },
           {
-            "name": "jaopca:item_dusttinytanzanite",
-            "metadata": 0,
-            "chance": 0.6,
-            "count": 7,
             "meshLevel": 3,
+            "name": "biomesoplenty:gem",
+            "metadata": 1,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.2,
             "rolls": 1
           },
           {
-            "name": "jaopca:item_dusttinytopaz",
-            "metadata": 0,
-            "chance": 0.6,
-            "count": 7,
             "meshLevel": 3,
+            "name": "biomesoplenty:gem",
+            "metadata": 2,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.15,
             "rolls": 1
           },
           {
-            "name": "jaopca:item_dusttinysapphire",
-            "metadata": 0,
-            "chance": 0.6,
-            "count": 7,
             "meshLevel": 3,
+            "name": "biomesoplenty:gem",
+            "metadata": 3,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.3,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 3,
+            "name": "biomesoplenty:gem",
+            "metadata": 4,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.2,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 3,
+            "name": "biomesoplenty:gem",
+            "metadata": 5,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.1,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 3,
+            "name": "biomesoplenty:gem",
+            "metadata": 6,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.3,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "biomesoplenty:gem",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.1,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "biomesoplenty:gem",
+            "metadata": 1,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.4,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "biomesoplenty:gem",
+            "metadata": 2,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.3,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "biomesoplenty:gem",
+            "metadata": 3,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.6,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "biomesoplenty:gem",
+            "metadata": 4,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.4,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "biomesoplenty:gem",
+            "metadata": 5,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.2,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "biomesoplenty:gem",
+            "metadata": 6,
+            "count": 1,
+            "luck": 0.0,
+            "chance": 0.6,
             "rolls": 1
           }
         ]

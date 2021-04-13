@@ -94,8 +94,6 @@ import mods.jei.JEI.removeAndHide as rh;
 	<minecraft:stone_shovel>,
 
 	<minecraft:shears>,
-	<exnihilocreatio:hammer_diamond>,
-	<excompressum:compressed_hammer_diamond>,
 	
 		] as IItemStack[];
 

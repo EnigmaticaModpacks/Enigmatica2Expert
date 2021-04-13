@@ -41,7 +41,6 @@ const whitelist = [
   '<environmentaltech:lightning_cont_3>',
   '<environmentaltech:lightning_cont_2>',
   '<environmentaltech:lightning_cont_1>',
-  '<excompressum:auto_sieve>',
   '<extendedcrafting:table_basic>',
   '<rustic:condenser_advanced>',
   '<draconicevolution:crafting_injector>',

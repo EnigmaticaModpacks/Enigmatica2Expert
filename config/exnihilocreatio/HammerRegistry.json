@@ -259,5 +259,23 @@
       "chance": 1.0,
       "fortuneChance": 0.0
     }
+  ],
+  "ore:crushedDiorite": [
+    {
+      "item": "biomesoplenty:white_sand:4",
+      "amount": 1,
+      "miningLevel": 1,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
+  ],
+  "exnihilocreatio:block_andesite_crushed": [
+    {
+      "item": "biomesoplenty:dried_sand:0",
+      "amount": 1,
+      "miningLevel": 1,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
   ]
 }
