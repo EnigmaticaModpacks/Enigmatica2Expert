@@ -1,5 +1,219 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
+# 0.22
+
+## 🟢 New Mods
+
+Icon | Summary | Reason
+----:|:--------| ------
+<img src="https://media.forgecdn.net/avatars/thumbnails/269/673/256/256/637242595025033364.png" width="50"> | [**You Dropped This**](https://www.curseforge.com/minecraft/mc-mods/youdroppedthis) <sup><sub>YouDroppedThis-1.1.0.jar</sub></sup> <br> Simple customizable mod to play sounds when items are dropped. | Add more sound effects and also help to hear butterfingers in Twilight Forest
+<img src="https://media.forgecdn.net/avatars/thumbnails/137/218/256/256/636513615515731748.png" width="50"> | [**Tinkers Extras**](https://www.curseforge.com/minecraft/mc-mods/tinkersextras) <sup><sub>TinkersExtras-1.12.2-1.1.0.jar</sub></sup> <br> A tweaks mod for TinkersConstruct to disable certain elements of the mod | Restrict crafting of ![](https://git.io/JOGzD "Laser Medium Pattern") to make custom crafting
+<img src="https://media.forgecdn.net/avatars/thumbnails/317/984/256/256/637423606351535331.png" width="50"> | [**Better Questing Tweaker (BQTweaker)**](https://www.curseforge.com/minecraft/mc-mods/bqtweaker) <sup><sub>BQTweaker-1.1.0.jar</sub></sup> <br> Tweaker mod to change some aspects of BetterQuesting | Better BQ looking (not sure through, because some text align skrewed up)
+<img src="https://media.forgecdn.net/avatars/thumbnails/41/763/256/256/636000363793448321.png" width="50"> | [**Tinkers' Addons**](https://www.curseforge.com/minecraft/mc-mods/tinkers-addons) <sup><sub>Tinkers' Addons-1.12.1-1.0.7.jar</sub></sup> <br> Adding Back old TiCon Modifiers to Tinkers' Construct 2 | Adds Toolkits: +1 free modifier
+<img src="https://media.forgecdn.net/avatars/thumbnails/89/502/256/256/636231887954920121.png" width="50"> | [**Bad Wither No Cookie - Reloaded**](https://www.curseforge.com/minecraft/mc-mods/bad-wither-no-cookie-reloaded) <sup><sub>badwithernocookiereloaded-1.12.2-3.4.18.jar</sub></sup> <br> Localizes the wither and dragon attacking sounds. | Exists in `E2E` but mistakenly removed in previous patches
+
+## 🟡 Updated Mods
+
+- [**CraftTweaker**](https://www.curseforge.com/minecraft/mc-mods/crafttweaker) <sup><sub>CraftTweaker2-1.12-4.1.20.634.jar</sub></sup>
+- [**Zen Utils**](https://www.curseforge.com/minecraft/mc-mods/zenutil) <sup><sub>zenutils-1.6.7.jar</sub></sup>
+- [**Lazy AE2**](https://www.curseforge.com/minecraft/mc-mods/lazy-ae2) <sup><sub>lazy-ae2-1.12.2-1.1.26.jar</sub></sup>
+- [**UniDict**](https://www.curseforge.com/minecraft/mc-mods/unidict) <sup><sub>UniDict-1.12.2-3.0.8.jar</sub></sup>
+- [**Collective**](https://www.curseforge.com/minecraft/mc-mods/collective) <sup><sub>collective-1.12.2-2.25.jar</sub></sup>
+- [**AE2 Fluid Crafting**](https://www.curseforge.com/minecraft/mc-mods/ae2-fluid-crafting) <sup><sub>ae2fc-1.12.2-1.0.10.jar</sub></sup>
+- [**Immersive Technology**](https://www.curseforge.com/minecraft/mc-mods/mct-immersive-technology) <sup><sub>MCTImmersiveTechnology-1.12.2-1.8.94.jar</sub></sup>
+- [**LibVulpes**](https://www.curseforge.com/minecraft/mc-mods/libvulpes) <sup><sub>LibVulpes-1.12.2-0.4.2-83-universal.jar</sub></sup>
+- [**Advanced Rocketry**](https://www.curseforge.com/minecraft/mc-mods/advanced-rocketry) <sup><sub>AdvancedRocketry-1.12.2-2.0.0-242-universal.jar</sub></sup>
+- [**LittleTiles**](https://www.curseforge.com/minecraft/mc-mods/littletiles) <sup><sub>LittleTiles_v1.5.0-pre328_mc1.12.2.jar</sub></sup>
+- [**YUNG's Better Mineshafts (Forge)**](https://www.curseforge.com/minecraft/mc-mods/yungs-better-mineshafts-forge) <sup><sub>BetterMineshaftsForge-1.12.2-2.2.1.jar</sub></sup>
+- [**Broken Wings**](https://www.curseforge.com/minecraft/mc-mods/broken-wings) <sup><sub>brokenwings-3.0.0.jar</sub></sup>
+- [**JAOPCA**](https://www.curseforge.com/minecraft/mc-mods/jaopca) <sup><sub>JAOPCA-1.12.2-2.2.8.104.jar</sub></sup>
+
+## ✏️ Recipes
+
+  Harder:
+  - ![](https://git.io/JOG2Y "Quartzburnt")
+    ![](https://git.io/JOGgL "Deep Dark Portal")
+    ![](https://git.io/JOGgY "Redstone Gear")
+    ![](https://git.io/JOGzW "Ring of the Flying Squid")
+    ![](https://git.io/JOGz4 "Dragon Egg Mill")
+    ![](https://git.io/JOGui "Kikoku")
+    ![](https://git.io/JOGzR "Base Essence Ingot")
+    ![](https://git.io/JOGgJ "Empty Frame")
+    ![](https://git.io/JOGgI "Crafter Tier 1")
+    ![](https://git.io/JOGzz "Crafter Tier 2")
+    ![](https://git.io/JOGzo "Crafter Tier 3")
+    ![](https://git.io/JqUJb "Simple Powercell")
+    ![](https://git.io/JqUUU "Powercell")
+    ![](https://git.io/JqUJz "Advanced Powercell")
+    ![](https://git.io/JOGzA "Dimensional Blank Block")
+    ![](https://git.io/JOGzj "Pyrotheum Dust")
+    ![](https://git.io/JOGgT "Cryotheum Dust")
+    ![](https://git.io/JOGzl "Aerotheum Dust")
+    ![](https://git.io/JOGgv "Petrotheum Dust")
+    ![](https://git.io/JOGzd "Augment: Auxiliary Transmission Coil")
+    ![](https://git.io/JOGz2 "Pulverizer (Basic)")
+    ![](https://git.io/JOGz8 "Phytogenic Insolator (Basic)")
+    ![](https://git.io/JOGzw "Induction Smelter (Basic)")
+    ![](https://git.io/JOGzx "Fluid Transposer (Basic)")
+    ![](https://git.io/JOGz0 "Magma Crucible (Basic)")
+    ![](https://git.io/JOGgm "Obsidian Pressure Plate")
+    ![](https://git.io/JqUJb "Simple Powercell")
+    ![](https://git.io/JqUUU "Powercell")
+    ![](https://git.io/JqUJz "Advanced Powercell")
+    ![](https://git.io/JOGru "Heavy Oak Sieve")![](https://git.io/JOGrE "Heavy Spruce Sieve")![](https://git.io/JOGrg "Heavy Birch Sieve")![](https://git.io/JOGrw "Heavy Jungle Sieve")![](https://git.io/JOGrz "Heavy Acacia Sieve")
+    ![](https://git.io/JOGgU "Auto Sieve")
+    ![](https://git.io/JOGzK "Mana Sieve")
+    ![](https://git.io/JOGzi "Auto Heavy Sieve")
+  
+  Cheaper:
+  - ![](https://git.io/JOGzE "Creative Modifier")
+    ![](https://git.io/JmVvt "Omnivoir")
+    ![](https://git.io/JOGzM "Energy Gauge")
+    ![](https://git.io/JOGu6 "Endervoir")
+    ![](https://git.io/JOGzb "Black Paper")
+    ![](https://git.io/JOGgq "Compound Bow")
+    ![](https://git.io/JOGza "Fire Axe")
+    ![](https://git.io/JOG2Z "Tank")
+    ![](https://git.io/JOGzF "Time in a bottle")
+    ![](https://git.io/JOGgZ "Steam Dynamo (Basic)")
+    ![](https://git.io/JOGzB "Magmatic Dynamo (Basic)")
+    ![](https://git.io/JOGzV "Compression Dynamo (Basic)")
+    ![](https://git.io/JOGzy "Reactant Dynamo (Basic)")
+    ![](https://git.io/JOGzp "Enervation Dynamo (Basic)")
+    ![](https://git.io/JOGzC "Numismatic Dynamo (Basic)")
+    ![](https://git.io/JOG2W "Enderium Turbine")
+    ![](https://git.io/JOG2G "Steel Turbine")
+    ![](https://git.io/JOG2C "Gold Plated Turbine")
+    ![](https://git.io/JOG2n "Bronze Turbine")
+    ![](https://git.io/JOG23 "Manyullyn Turbine")
+    ![](https://git.io/JOG2B "Iron Turbine")
+    ![](https://git.io/JOG2O "Advanced Alloy Turbine")
+    ![](https://git.io/Jt8wY "Woven Mining Backpack")
+    ![](https://git.io/JOGzr "Woven Digging Backpack")
+    ![](https://git.io/JOGzu "Woven Foresting Backpack")
+    ![](https://git.io/JOGzS "Woven Hunting Backpack")
+    ![](https://git.io/JOGz5 "Woven Adventuring Backpack")
+    ![](https://git.io/JOGzX "Woven Building Backpack")
+
+  Other:
+  - ![](https://git.io/JOG28 "Control Circuit")
+    ![](https://git.io/JOGzP "Pressure Valve")
+    ![](https://git.io/JOGz7 "Advanced Pressure Valve")
+    ![](https://git.io/JOGz1 "Atomic Reconstructor")
+    ![](https://git.io/JOGz9 "Pressurized Tank")
+    ![](https://git.io/JOGzQ "Super Omelette")
+    ![](https://git.io/JOGgs "Cheese Omelette")
+    ![](https://git.io/JOGzH "Nutritious Stick")
+    ![](https://git.io/JOGg3 "Bituminous Peat")
+  - ![](https://git.io/JOGzN "Hydrated Coal Dust") in ![](https://git.io/JtJIt "Infinity Furnace")
+  - ![](https://git.io/JOGzF "Time in a bottle") Removed as crafting method
+  - ![](https://git.io/JOGgO "Steel Hoe") removed
+  - ![](https://git.io/JOGgk "Propolis") No longer avaliable in Integrated Dynamics machines
+  - ![](https://git.io/JtyoS "Black Death Mask") Recycle
+  - ![](https://git.io/JOGrV "Block of Enderpearl") Now meltable
+  - ![](https://git.io/JOG24 "Mud") in ![](https://git.io/JtTPL "Hydrator")
+  - ![](https://git.io/JOGuK "Niter") in ![](https://git.io/JOG2s "Manufactory") removed
+  - [Advanced Analyzer]
+
+## 📖 Quest Book
+
+- BetterQuesting: Quest fixes and additions
+  > - Remove ![](https://git.io/JOGuo "Medkit") from loot boxes
+  > - Add **Thermal Logistic** quests
+  > - Twilight Forest Rewards, Fix Metadata of Magic Map quest
+  > - Rework EU2 chapter
+  > - Laser Gun in Getting Started quest
+
+## 🔵 Mods
+
+- ### 🌡️ Thermal Expansion
+
+  - Buff Dynamos production
+
+- ### 🏪 Requious Fracto
+
+  - New JEI categories: **Electronics Assembler** & **XP Bottler**
+
+- ### 🐝 Forestry
+
+  - Fix Bees colors
+  - ![](https://git.io/JOGur "Escritoire") Buff
+  - ![](https://git.io/JOG2c "Wood Pile") More charcoal (not tested)
+  - Misc Bee output changes
+  - ![](https://git.io/JOGr0 "Adventuring Backpack") Buff
+
+- ### 🔨 Tinker's Construct
+
+  - Spectre Hand length fix
+  - EquipGeneration add **Artifact** trait to mob's tools
+    > This would prevent easy upgrading without unsealing
+  - Balance tweaks, Laser Returns, +Toolkits
+    > - [Laser Gun] enabled again
+    >   * Increased Energy consumption
+    >   * Laser Mediums craftable only with restrictions
+    > - Buff ![](https://git.io/JOGzh "Katana of the End") combo
+    > - Remove Durability Threshold for **Fluxed** modifier
+    >   > when you insert capacitors into tools
+    > - Buff **Piezoelectric** modifier
+    > - Fix **Electric** modifier power transfer Devider
+    > - Change **Electric** tool cost (about 4000 RF/use)
+    > - **Reinforcement** modifier has 10 levels
+    > - **Diamond** modifier require ![](https://git.io/JOGah "Diamatine Crystal") for armor too
+    > - **Resistant** modifier require level each
+    > - **Sharpness** modifier has max 20 levels
+
+- ### 🛢️ Immersive Engineering
+
+  - ![](https://git.io/JOG6r "Iridium Ore") not spawn in Excavator veins
+  - Excavator nerf x2 less ore yeld
+
+- ### 🛹 Integrated Dynamics
+
+  - Fix Jungle Biomes corruption
+    > Fixes `Enigmatica2Expert/issues/1895`
+
+- ### 🛸 EnderIO
+
+  - ![](https://git.io/JOGr2 "Power Buffer") x2 Buff
+    > Now buffer is twice cheaper than Basic Capacitor Bank
+    > but can be increased with good installed capacitor.
+
+- ### 🔩 RFTools
+
+  - ![](https://git.io/JqUJb "Simple Powercell") ![](https://git.io/JqUUU "Powercell") ![](https://git.io/JqUJz "Advanced Powercell") nerfs
+    > Power Cells avaliable relatively early and totally replace all other
+    > power transfer methods. This change would make difference between Powercells
+    > more visible
+
+
+- ### 🧙‍♂️ Cyclic
+
+  - ![](https://git.io/JOGzg "Air Charm") Nerf durability x2
+
+- ### 🧻 JEI
+
+  - Return ![](https://git.io/JmVeA "Fluid Tank") category
+
+- ### 💘 ScallingHeals
+
+  - Dimensions: `1` `7` and `-8` dimensions have different difficulties
+  - x2 slower difficulty scalling throught time
+  - Pinch Beetle blacklist
+  - ![](https://git.io/JOGz6 "Cursed Heart") and ![](https://git.io/JOGgt "Enchanted Heart") less values
+
+- ### 🐤 Broken Wings
+
+  - Broken Wings: ![](https://git.io/JOGzg "Air Charm"), ![](https://git.io/JOGra "Climbing Gloves") and ![](https://git.io/JOGgf "Hang Glider") restrictions
+    > In Twilight Forest
+
+- ### 🚀 Advanced Rocketry
+
+  - ![](https://git.io/JOGz9 "Pressurized Tank") Buff up to **50k** buckets
+  - Add Volcanoes and Craters (not tested ingame)
+  - Reset config in new mod version (bugs could appears)
+
+
+
 # 0.21
 
 ## 🟢 New Mods
