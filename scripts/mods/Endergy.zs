@@ -1,4 +1,3 @@
-import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.liquid.ILiquidDefinition;
 import mods.nuclearcraft.melter;
 import crafttweaker.item.IItemStack;
@@ -13,7 +12,7 @@ for s in [
 ] as string[] {
   for i in [0, 5, 6] as int[] {
     val it = itemUtils.getItem("enderio:"~s,i);
-    if (!isNull(it)) rh(it);
+    if (!isNull(it)) utils.rh(it, false);
   }
 }
 for s in [
@@ -31,18 +30,18 @@ for n in [144, 16, 144*9] as int[] {
   mods.nuclearcraft.melter.removeRecipeWithOutput([<liquid:energetic_silver> * n]);
 }
 
-rh(<enderio:item_endergy_conduit>);
-rh(<enderio:item_endergy_conduit:1>);
-rh(<enderio:item_endergy_conduit:2>);
-rh(<enderio:item_endergy_conduit:3>);
-rh(<enderio:item_endergy_conduit:4>);
-rh(<enderio:item_endergy_conduit:5>);
-rh(<enderio:item_endergy_conduit:6>);
-rh(<enderio:item_endergy_conduit:7>);
-rh(<enderio:item_capacitor_grainy>);
-rh(<enderio:item_capacitor_silver>);
-rh(<enderio:item_capacitor_energetic_silver>);
-rh(<enderio:item_capacitor_vivid>);
+utils.rh(<enderio:item_endergy_conduit>);
+utils.rh(<enderio:item_endergy_conduit:1>);
+utils.rh(<enderio:item_endergy_conduit:2>);
+utils.rh(<enderio:item_endergy_conduit:3>);
+utils.rh(<enderio:item_endergy_conduit:4>);
+utils.rh(<enderio:item_endergy_conduit:5>);
+utils.rh(<enderio:item_endergy_conduit:6>);
+utils.rh(<enderio:item_endergy_conduit:7>);
+utils.rh(<enderio:item_capacitor_grainy>);
+utils.rh(<enderio:item_capacitor_silver>);
+utils.rh(<enderio:item_capacitor_energetic_silver>);
+utils.rh(<enderio:item_capacitor_vivid>);
 recipes.removeByRecipeName("enderio:capacitor_crystalline_alt");
 
 # Remove liquids of removed alloys

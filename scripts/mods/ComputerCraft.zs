@@ -1,8 +1,7 @@
-import mods.jei.JEI.removeAndHide as rh;
 #modloaded computercraft
 
-	rh(<computercraft:turtle:1>);
-	rh(<computercraft:turtle_advanced>.withTag({leftUpgrade: 5 as short}));
+	utils.rh(<computercraft:turtle:1>);
+	utils.rh(<computercraft:turtle_advanced>.withTag({leftUpgrade: 5 as short}));
 
 # Wired Modem
 	recipes.remove(<computercraft:cable:1>);

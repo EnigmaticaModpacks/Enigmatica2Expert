@@ -1,15 +1,14 @@
-import mods.jei.JEI.removeAndHide as rh;
 #modloaded animus
 
 # Healing Shards
 	mods.bloodmagic.BloodAltar.removeRecipe(<animus:fragmenthealing>);
-	rh(<animus:fragmenthealing>);
+	utils.rh(<animus:fragmenthealing>);
 
 # Removing Khopesh'
-	rh(<animus:kama_wood>);
-	rh(<animus:kama_stone>);
-	rh(<animus:kama_iron>);
-	rh(<animus:kama_gold>);
+	utils.rh(<animus:kama_wood>);
+	utils.rh(<animus:kama_stone>);
+	utils.rh(<animus:kama_iron>);
+	utils.rh(<animus:kama_gold>);
 	
 # Leech Reagent
 	mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:sapling>, <minecraft:leaves>, <minecraft:tallgrass:1>, <minecraft:cooked_porkchop>]);

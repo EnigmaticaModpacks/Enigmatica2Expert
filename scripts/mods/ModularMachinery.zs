@@ -1,5 +1,4 @@
 import crafttweaker.item.IItemStack as IItemStack;
-import mods.jei.JEI.removeAndHide as rh;
 #modloaded modularmachinery
 
 # Arcane Crafting Engine
@@ -173,5 +172,5 @@ var itemsToRemove = [
 ] as IItemStack[];
 
 for item in itemsToRemove {
-    rh(item);
+    utils.rh(item);
 }

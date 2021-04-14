@@ -1,4 +1,3 @@
-import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 #modloaded extendedcrafting
@@ -7,10 +6,10 @@ import crafttweaker.item.IItemStack;
 	var blackIron = <ore:ingotBlackIron>;
 
 # Extended Crafting Table removal
-	rh(<extendedcrafting:crafting_table>);
+	utils.rh(<extendedcrafting:crafting_table>);
 
 # Handheld Crafting Table
-	rh(<extendedcrafting:handheld_table>);
+	utils.rh(<extendedcrafting:handheld_table>);
 	
 # Black Iron
 	recipes.remove(blackIron);

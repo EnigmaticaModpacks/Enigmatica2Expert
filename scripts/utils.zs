@@ -5,6 +5,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.recipes.IRecipeFunction;
+import mods.jei.JEI.removeAndHide as removeAndHide;
 
 
 zenClass Utils {
@@ -92,6 +93,26 @@ zenClass Utils {
     }
 
     return null;
+  }
+
+  # ########################
+  # Removing item everywhere
+  # ########################
+  function rh(ingr as IIngredient) as void { rh(ingr, true); }
+  function rh(ingr as IIngredient, removeOredict as bool) as void {
+    if (isNull(ingr)) return;
+
+    for item in ingr.items {
+      if(removeOredict) {
+        for ore in item.ores {
+          ore.remove(item);
+        }
+      }
+      furnace.remove(<*>, item);
+      recipes.remove(item);
+      // removeAndHide(item);
+      log('purged: ' ~ item.commandString);
+    }
   }
 
 

@@ -1,5 +1,4 @@
 import crafttweaker.item.IItemStack as IItemStack;
-import mods.jei.JEI.removeAndHide as rh;
 #modloaded ironchest
 
 # *======= Recipes =======*
@@ -143,5 +142,5 @@ import mods.jei.JEI.removeAndHide as rh;
 		] as IItemStack[];
 	
 	for item in chestsToHide {
-		rh(item);
+		utils.rh(item);
 	}

@@ -1,4 +1,3 @@
-import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 #modloaded exnihilocreatio
@@ -81,39 +80,39 @@ for i, inputArr in crushingInMachines {
 # *======= Remove & Hide =======*
 
 # Uncompressed Coal
-	rh(<excompressum:uncompressed_coal>);
+	utils.rh(<excompressum:uncompressed_coal>);
 
 # Duplicate compressed blocks
-	rh(<excompressum:compressed_block:2>);
-	rh(<excompressum:compressed_block:3>);
-	rh(<excompressum:compressed_block:4>);
-	rh(<excompressum:compressed_block:1>);
-	rh(<excompressum:compressed_block:9>);
+	utils.rh(<excompressum:compressed_block:2>);
+	utils.rh(<excompressum:compressed_block:3>);
+	utils.rh(<excompressum:compressed_block:4>);
+	utils.rh(<excompressum:compressed_block:1>);
+	utils.rh(<excompressum:compressed_block:9>);
 	
 # Crucibles
-	rh(<excompressum:wooden_crucible>);
-	rh(<excompressum:wooden_crucible:1>);
-	rh(<excompressum:wooden_crucible:2>);
-	rh(<excompressum:wooden_crucible:3>);
-	rh(<excompressum:wooden_crucible:4>);
-	rh(<excompressum:wooden_crucible:5>);
+	utils.rh(<excompressum:wooden_crucible>);
+	utils.rh(<excompressum:wooden_crucible:1>);
+	utils.rh(<excompressum:wooden_crucible:2>);
+	utils.rh(<excompressum:wooden_crucible:3>);
+	utils.rh(<excompressum:wooden_crucible:4>);
+	utils.rh(<excompressum:wooden_crucible:5>);
 	
-	rh(<exnihilocreatio:block_crucible>);
-	rh(<exnihilocreatio:block_crucible_wood>);
-	rh(<exnihilocreatio:block_crucible:1>);
+	utils.rh(<exnihilocreatio:block_crucible>);
+	utils.rh(<exnihilocreatio:block_crucible_wood>);
+	utils.rh(<exnihilocreatio:block_crucible:1>);
 	
 # Ex Nihilo Dusts
-	rh(<exnihilocreatio:item_ore_gold:2>);
-	rh(<exnihilocreatio:item_ore_iron:2>);
-	rh(<exnihilocreatio:item_ore_copper:2>);
-	rh(<exnihilocreatio:item_ore_tin:2>);
-	rh(<exnihilocreatio:item_ore_aluminium:2>);
-	rh(<exnihilocreatio:item_ore_lead:2>);
-	rh(<exnihilocreatio:item_ore_silver:2>);
-	rh(<exnihilocreatio:item_ore_nickel:2>);
+	utils.rh(<exnihilocreatio:item_ore_gold:2>);
+	utils.rh(<exnihilocreatio:item_ore_iron:2>);
+	utils.rh(<exnihilocreatio:item_ore_copper:2>);
+	utils.rh(<exnihilocreatio:item_ore_tin:2>);
+	utils.rh(<exnihilocreatio:item_ore_aluminium:2>);
+	utils.rh(<exnihilocreatio:item_ore_lead:2>);
+	utils.rh(<exnihilocreatio:item_ore_silver:2>);
+	utils.rh(<exnihilocreatio:item_ore_nickel:2>);
 
 # Remove excess mesh
-	rh(<excompressum:iron_mesh>);
+	utils.rh(<excompressum:iron_mesh>);
 	
 
 # Remove Sieves (defined in CompactMachines)

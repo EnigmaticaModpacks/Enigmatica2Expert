@@ -1,4 +1,3 @@
-import mods.jei.JEI.removeAndHide as rh;
 
 # Conversion recipe between Thaumic Tinkerer Black Quartz Block & Botania Block of Smokey Quartz
 recipes.addShapeless(<botania:quartztypedark>, [<thaumictinkerer:black_quartz_block>]);

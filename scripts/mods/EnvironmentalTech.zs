@@ -1,4 +1,3 @@
-import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import scripts.craft.grid.Grid;
@@ -84,7 +83,7 @@ craft.remake(<environmentaltech:diode> * 2, ["pretty",
 	[<ore:blockLitherite>]);
 
 # Removing Crystal Lens
-	rh(<environmentaltech:laser_lens_crystal>);
+	utils.rh(<environmentaltech:laser_lens_crystal>);
 
 remake("environmentaltech modifier_speed", 
 	<environmentaltech:modifier_speed>, [

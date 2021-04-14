@@ -2,7 +2,6 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.liquid.ILiquidDefinition;
-import mods.jei.JEI.removeAndHide as rh;
 import mods.tcomplement.highoven.HighOven;
 import mods.tcomplement.highoven.MixRecipeBuilder;
 import crafttweaker.data.IData;
@@ -54,10 +53,10 @@ for slime, dirts in slimeDirts {
 	scripts.wrap.tconstruct.Casting.addBasinRecipe(<tconstruct:metal>, null, <liquid:cobalt>, 1296);
 	
 # Item Rack
-	rh(<tconstruct:rack>);
+	utils.rh(<tconstruct:rack>);
 
 # Stone stick
-	rh(<tconstruct:stone_stick>);
+	utils.rh(<tconstruct:stone_stick>);
 	
 # Blank Cast Resmelting
 	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:alubrass> * 144, <tconstruct:cast>);
@@ -180,7 +179,7 @@ for item in coals {
 
 # Slime Boots remove and hide (replaced by Conarm)
 	for i in 0 to 6 {
-		rh(itemUtils.getItem("tconstruct:slime_boots", i));
+		utils.rh(itemUtils.getItem("tconstruct:slime_boots", i));
 	}
 
 # Slime Slings
@@ -483,5 +482,5 @@ craft.make(<plustic:laser_medium>.withTag({Material: "endrod"}), ["pretty",
 #-------------------------------------------------------------------------------
 
 # Remove Centrifuge (Causing dupes and looks weird)
-rh(<plustic:centrifuge:1>);
-rh(<plustic:centrifuge>);
+utils.rh(<plustic:centrifuge:1>);
+utils.rh(<plustic:centrifuge>);

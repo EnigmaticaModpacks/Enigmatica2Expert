@@ -2,7 +2,6 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.data.IData;
 import crafttweaker.item.IIngredient;
-import mods.jei.JEI.removeAndHide as rh;
 
 
 # ######################################################################
@@ -65,7 +64,7 @@ for item in [
 <twilightforest:steeleaf_chestplate>,
 <twilightforest:steeleaf_leggings>,
 <twilightforest:steeleaf_boots>,
-] as IItemStack[] { rh(item); }
+] as IItemStack[] { utils.rh(item); }
 
 
 #------------

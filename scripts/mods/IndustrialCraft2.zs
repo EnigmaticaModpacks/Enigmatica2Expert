@@ -1,4 +1,3 @@
-import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.ic2.ScrapBox;
@@ -167,10 +166,11 @@ import mods.ic2.ScrapBox;
 	[<minecraft:stone:*>, <tconstruct:soil>, <minecraft:stone:*>]]);
 	
 # MFE -> MFSU Upgrade Kit removal
-	rh(<ic2:upgrade_kit>);
+	utils.rh(<ic2:upgrade_kit>);
 	
 # Industrial Diamond (Replaced with regular diamond)
-	rh(<ic2:crafting:19>);
+	utils.rh(<ic2:crafting:19>);
+	utils.rh(<ic2:ingot:8>);
 	
 # Iridium TiC Compat
 	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:iridium> * 144, <ic2:misc_resource:1>, 500);

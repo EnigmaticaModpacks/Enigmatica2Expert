@@ -7,6 +7,8 @@ import crafttweaker.data.IData;
 import scripts.craft.grid.Grid;
 #modloaded thermalexpansion
 
+utils.rh(<ic2:coke>);
+
 # Planks/Slabs -> Sticks
 for plank in <ore:plankWood>.items {
 	scripts.wrap.thermalexpansion.Sawmill.addRecipe(<minecraft:stick> * 6, plank, 500, <thermalfoundation:material:800>, 30);

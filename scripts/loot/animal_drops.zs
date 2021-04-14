@@ -6,7 +6,6 @@ import loottweaker.vanilla.loot.LootTable;
 import loottweaker.vanilla.loot.LootPool;
 import loottweaker.vanilla.loot.Functions;
 import crafttweaker.data.IData;
-import mods.jei.JEI.removeAndHide as rh;
 
 
 # Remove old drop and add new
@@ -48,9 +47,9 @@ function tweak(table as string, poolStr as string, entryToRemove as string, item
     var smelted = utils.smelt(itemToRemove);
     if (!isNull(smelted)) {
       furnace.remove(smelted);
-      rh(smelted);
+      utils.rh(smelted);
     }
-    rh(itemToRemove);
+    utils.rh(itemToRemove);
   }
 }
 
@@ -80,7 +79,7 @@ tweak("randomthings:beanpod","Diamond","minecraft:diamond", null, [<biomesoplent
 scripts.process.squeeze([<betteranimalsplus:blubber>], <liquid:lubricant> * 50, "except: CrushingTub Squeezer MechanicalSqueezer", null);
 
 # This crab is unobtainable
-rh(<betteranimalsplus:crab_meat_cooked>);
+utils.rh(<betteranimalsplus:crab_meat_cooked>);
 furnace.remove(<betteranimalsplus:crab_meat_cooked>);
 
 

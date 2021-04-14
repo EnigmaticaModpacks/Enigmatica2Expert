@@ -1,6 +1,5 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.item.IIngredient;
-import mods.jei.JEI.removeAndHide as rh;
 
 #modloaded randomthings
 
@@ -285,10 +284,10 @@ craft.remake(<randomthings:spectreenergyinjector>, ["pretty",
 # ----------------------------
 # Tools
 # ----------------------------
-rh(<randomthings:spectrepickaxe>);
-rh(<randomthings:spectreaxe>);
-rh(<randomthings:spectreshovel>);
-rh(<randomthings:spectresword>);
+utils.rh(<randomthings:spectrepickaxe>);
+utils.rh(<randomthings:spectreaxe>);
+utils.rh(<randomthings:spectreshovel>);
+utils.rh(<randomthings:spectresword>);
 
 
 # ----------------------------

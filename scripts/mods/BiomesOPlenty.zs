@@ -1,5 +1,4 @@
 import crafttweaker.item.IItemStack as IItemStack;
-import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.WeightedItemStack;
 #modloaded biomesoplenty
 
@@ -90,7 +89,7 @@ craft.remake(<contenttweaker:terrestrial_artifact_block>, ["pretty",
 
 	
 # Amber Block
-	rh(<biomesoplenty:gem_block:7>);
+	utils.rh(<biomesoplenty:gem_block:7>);
 	
 # Terrestrial Artifact block
 craft.shapeless(<contenttweaker:terrestrial_artifact_block>, "AAAAAAAAA", {A: <biomesoplenty:terrestrial_artifact>});

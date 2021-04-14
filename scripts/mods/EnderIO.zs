@@ -1,6 +1,5 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
-import mods.jei.JEI.removeAndHide as rh;
 import mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput as ncAlloyRm;
 import scripts.process.solution;
 import scripts.craft.grid.Grid;
@@ -216,8 +215,8 @@ craft.remake(<enderio:block_impulse_hopper>, ["pretty",
 		[<ore:ingotElectricalSteel>, <enderio:item_power_conduit>, <ore:ingotElectricalSteel>]]);
 
 # Removals
-	rh(<enderio:item_material:30>);
-	rh(<enderio:item_material:31>);
+	utils.rh(<enderio:item_material:30>);
+	utils.rh(<enderio:item_material:31>);
 
 # Dark Steel Upgrade Recycling
 	mods.nuclearcraft.decay_hastener.addRecipe([<enderio:item_dark_steel_upgrade:1>.anyDamage(), <enderio:item_dark_steel_upgrade>, 2.0, 2.0]);

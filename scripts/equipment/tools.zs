@@ -1,5 +1,4 @@
 import crafttweaker.item.IItemStack as IItemStack;
-import mods.jei.JEI.removeAndHide as rh;
 	
 # *======= Recipes =======*
 
@@ -59,7 +58,7 @@ import mods.jei.JEI.removeAndHide as rh;
 ] as IItemStack[];
 		
 	for tool in toolsToRemove {
-		rh(tool);
+		utils.rh(tool);
 	}
 	
 # Vanilla tool nerfs

@@ -1,6 +1,5 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
-import mods.jei.JEI.removeAndHide as rh;
 import scripts.craft.grid.Grid;
 #modloaded forestry
 
@@ -122,7 +121,7 @@ for thing in thingsToferment {
 scripts.wrap.forestry.Squeezer.addRecipe(<liquid:juice> * 15, [<minecraft:melon>], 8);
 
 # Remove and hide charcoal block
-rh(<forestry:charcoal>);
+utils.rh(<forestry:charcoal>);
 
 # Remove pulp recipe
 mods.forestry.Carpenter.removeRecipe(<forestry:wood_pulp>);
@@ -149,15 +148,15 @@ craft.remake(<forestry:fertilizer_compound> * 16, ["pretty",
 });
 
 // Disabling Greenhouse
-rh(<forestry:greenhouse>);
-rh(<forestry:greenhouse:3>);
-rh(<forestry:greenhouse:4>);
-rh(<forestry:greenhouse:5>);	
-rh(<forestry:climatiser>);
-rh(<forestry:climatiser:1>);
-rh(<forestry:climatiser:2>);
-rh(<forestry:climatiser:3>);
-rh(<forestry:climatiser:4>);
+utils.rh(<forestry:greenhouse>);
+utils.rh(<forestry:greenhouse:3>);
+utils.rh(<forestry:greenhouse:4>);
+utils.rh(<forestry:greenhouse:5>);	
+utils.rh(<forestry:climatiser>);
+utils.rh(<forestry:climatiser:1>);
+utils.rh(<forestry:climatiser:2>);
+utils.rh(<forestry:climatiser:3>);
+utils.rh(<forestry:climatiser:4>);
 
 # Buff light level of lit candles
 <forestry:candle:1>.asBlock().definition.lightLevel = 0.95;

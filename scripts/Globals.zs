@@ -4,7 +4,6 @@ import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.data.IData;
-import mods.jei.JEI.removeAndHide as rh;
 
 #priority 5000
 

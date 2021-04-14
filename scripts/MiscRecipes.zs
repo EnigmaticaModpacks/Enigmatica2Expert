@@ -1,6 +1,5 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.item.IIngredient;
-import mods.jei.JEI.removeAndHide as rh;
 import scripts.craft.grid.Grid;
 
 #priority -1
@@ -362,17 +361,17 @@ craft.remake(<enderstorage:ender_pouch>, ["pretty",
 					
 # *======= Metal Nuggets =======*
 
-	rh(<immersiveengineering:metal:29>);
-	rh(<immersiveengineering:metal:20>);
-	rh(<immersiveengineering:metal:21>);
-	rh(<immersiveengineering:metal:22>);
-	rh(<immersiveengineering:metal:23>);
-	rh(<immersiveengineering:metal:24>);
-	rh(<immersiveengineering:metal:26>);
-	rh(<immersiveengineering:metal:27>);
-	rh(<immersiveengineering:metal:28>);
-	rh(<extendedcrafting:material:128>);
-	rh(<extendedcrafting:material:129>);
+	utils.rh(<immersiveengineering:metal:29>);
+	utils.rh(<immersiveengineering:metal:20>);
+	utils.rh(<immersiveengineering:metal:21>);
+	utils.rh(<immersiveengineering:metal:22>);
+	utils.rh(<immersiveengineering:metal:23>);
+	utils.rh(<immersiveengineering:metal:24>);
+	utils.rh(<immersiveengineering:metal:26>);
+	utils.rh(<immersiveengineering:metal:27>);
+	utils.rh(<immersiveengineering:metal:28>);
+	utils.rh(<extendedcrafting:material:128>);
+	utils.rh(<extendedcrafting:material:129>);
 	
 
 
@@ -412,8 +411,8 @@ craft.remake(<oeintegration:excavatemodifier>, ["pretty",
 });
 
 # Remove Refined storage cables
-rh(<immersivecables:coil_block:3>);
-rh(<immersivecables:wire_coil:3>);
+utils.rh(<immersivecables:coil_block:3>);
+utils.rh(<immersivecables:wire_coil:3>);
 
 # Make Quicksand
 mods.inworldcrafting.FluidToFluid.transform(<liquid:sand>, <liquid:blueslime>, [<ore:soulSand>]);
@@ -493,7 +492,6 @@ var trueSilicon = <appliedenergistics2:material:5>;
 # Removing
 furnace.remove(<appliedenergistics2:material:5>); # Furnance quartz dusts -> AE silicon
 mods.nuclearcraft.manufactory.removeRecipeWithOutput(<appliedenergistics2:material:5>); # Ingot->AE
-mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <libvulpes:productplate:3>); # Plate -> ingot (prevent dupe)
 mods.mekanism.crusher.removeRecipe(<nuclearcraft:gem:6>); # Sand -> silicon
 
 

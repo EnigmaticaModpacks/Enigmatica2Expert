@@ -1,10 +1,9 @@
 import crafttweaker.item.IItemStack as IItemStack;
-import mods.jei.JEI.removeAndHide as rh;
 
-	rh(<forestry:gear_tin>);
-	rh(<forestry:gear_bronze>);
-	rh(<forestry:gear_copper>);
-	rh(<appliedenergistics2:material:40>);
+	utils.rh(<forestry:gear_tin>);
+	utils.rh(<forestry:gear_bronze>);
+	utils.rh(<forestry:gear_copper>);
+	utils.rh(<appliedenergistics2:material:40>);
 	
 	val gearsToRemove = [
 	<appliedenergistics2:material:40>,

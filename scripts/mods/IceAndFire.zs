@@ -1,6 +1,5 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
-import mods.jei.JEI.removeAndHide as rh;
 #modloaded iceandfire
 
 # *======= Recipes =======*
@@ -192,7 +191,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	] as IItemStack[];
 	
 	for item in removals {
-		rh(item);
+		utils.rh(item);
 	}
 
 	# Dragon Armor

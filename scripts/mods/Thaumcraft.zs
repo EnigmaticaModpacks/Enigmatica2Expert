@@ -1,6 +1,5 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.item.IIngredient as IIngredient;
-import mods.jei.JEI.removeAndHide as rh;
 #modloaded thaumcraft
 
 # Crimson Rites

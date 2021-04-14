@@ -1,4 +1,3 @@
-import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.alfinivia.ImmersiveEngineering.addChemthrowerEffect;
@@ -39,7 +38,7 @@ import scripts.craft.grid.Grid;
 	recipes.remove(<thermalfoundation:storage_resource:1>);
 	recipes.addShaped("immersiveengineering_stone_decoration_3_custom", <immersiveengineering:stone_decoration:3>, [[<ore:fuelCoke>, <ore:fuelCoke>, <ore:fuelCoke>], [<ore:fuelCoke>, <ore:fuelCoke>, <ore:fuelCoke>], [<ore:fuelCoke>, <ore:fuelCoke>, <ore:fuelCoke>]]);
 
-	rh(<thermalfoundation:material:802>);
+	utils.rh(<thermalfoundation:material:802>);
 	mods.thermalexpansion.RedstoneFurnace.removePyrolysisRecipe(<minecraft:coal>);
 	scripts.wrap.thermalexpansion.RedstoneFurnace.addPyrolysisRecipe(<immersiveengineering:material:6>, 
 	<minecraft:coal>, 3000, 250);

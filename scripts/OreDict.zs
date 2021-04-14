@@ -2,7 +2,6 @@ import crafttweaker.item.IIngredient as IIngredient;
 import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.oredict.IOreDict as IOreDict;
 import crafttweaker.oredict.IOreDictEntry as IOreDictEntry;
-import mods.jei.JEI.removeAndHide as rh;
 	
 #priority 1000
 
@@ -224,8 +223,8 @@ for item in pressurePlates {
 # Diamond Chip
 	<ore:nuggetDiamond>.add(<opencomputers:material:29>);
 	<ore:chipDiamond>.add(<thermalfoundation:material:16>);
-	rh(<opencomputers:material:29>);
-	rh(<opencomputers:material>);
+	utils.rh(<opencomputers:material:29>);
+	utils.rh(<opencomputers:material>);
 	
 # Dragon hearts
 	<ore:heartDragon>.add(<draconicevolution:dragon_heart>);
@@ -302,20 +301,20 @@ for item in pressurePlates {
 # *======= Clearing Unused Blocks =======*
 
 # Steel blocks
-	rh(<ic2:resource:8>);
+	utils.rh(<ic2:resource:8>);
 
 # Copper blocks
-	rh(<ic2:resource:6>);
+	utils.rh(<ic2:resource:6>);
 
 # Tin blocks
-	rh(<ic2:resource:9>);
+	utils.rh(<ic2:resource:9>);
 
 # Silver blocks
-	rh(<ic2:resource:15>);
-	rh(<iceandfire:silver_block>);
+	utils.rh(<ic2:resource:15>);
+	utils.rh(<iceandfire:silver_block>);
 
 # Lead blocks
-	rh(<ic2:resource:7>);
+	utils.rh(<ic2:resource:7>);
 		
 # *======= Quark Specific Oredict =======*
 
@@ -690,7 +689,7 @@ function removeHunkOre(item as IItemStack) {
   for ore in item.ores {
     if (ore.name.startsWith("ore") || ore.name.startsWith("hunk") ) {
       ore.remove(item);
-			rh(item);
+			utils.rh(item);
     }
   }
 }

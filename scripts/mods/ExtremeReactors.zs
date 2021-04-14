@@ -1,4 +1,3 @@
-import mods.jei.JEI.removeAndHide as rh;
 #modloaded bigreactors
 	
 # *======= Recipes =======*

@@ -1,4 +1,3 @@
-import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.item.IIngredient;
 #modloaded mekanism
@@ -261,9 +260,9 @@ for input, output in itemsToUnify {
 	scripts.wrap.actuallyadditions.Empowerer.addRecipe(<mekanism:controlcircuit:3>, <mekanism:controlcircuit:2>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, 500000, 100, [0.5, 0.3, 0.2]);
 
 # Removing unused ores & Walkietalkie
-	rh(<mekanism:oreblock:1>);
-	rh(<mekanism:oreblock:2>);
-	rh(<mekanism:walkietalkie>);
+	utils.rh(<mekanism:oreblock:1>);
+	utils.rh(<mekanism:oreblock:2>);
+	utils.rh(<mekanism:walkietalkie>);
 
 # Tier applying
 	recipes.addShapeless(<mekanism:machineblock:5>.withTag({recipeType: 3, mekData: {}}), [<mekanism:machineblock:1>, <mekanism:tierinstaller>]);

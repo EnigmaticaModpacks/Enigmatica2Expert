@@ -1,9 +1,8 @@
-import mods.jei.JEI.removeAndHide as rh;
 
 #modloaded mctsmelteryio
 
 # Recipes to remove 
-rh(<mctsmelteryio:powdered_fuel>);
+utils.rh(<mctsmelteryio:powdered_fuel>);
 
 # Remake upgrades match Tinkers/IO crafts
 remakeEx(<mctsmelteryio:upgrade:0>, [[<minecraft:dye:4>, <minecraft:dye:4>, <minecraft:dye:4>], [<ore:ingotAluminum> | <ore:ingotLead>, <minecraft:paper>, <ore:ingotAluminum> | <ore:ingotLead>], [<minecraft:dye:4>, <minecraft:dye:4>, <minecraft:dye:4>]]);

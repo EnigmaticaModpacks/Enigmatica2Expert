@@ -1,6 +1,5 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.item.IIngredient;
-import mods.jei.JEI.removeAndHide as rh;
 import mods.actuallyadditions.BallOfFur.addReturn as addBallReturn;
 
 #modloaded actuallyadditions
@@ -120,7 +119,7 @@ import mods.actuallyadditions.BallOfFur.addReturn as addBallReturn;
 	] as IItemStack[];
 	
 	for items in recipesToRemove {
-		rh(items);
+		utils.rh(items);
 	}
 	
 # *======= Empowerer =======*

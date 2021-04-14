@@ -8,7 +8,6 @@ import mods.botaniatweaks.AgglomerationRecipe;
 import mods.botaniatweaks.Agglomeration;
 import mods.ctutils.utils.Math.abs;
 import crafttweaker.data.IData;
-import mods.jei.JEI.removeAndHide as rh;
 
 #priority -1
 

@@ -2,7 +2,6 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
-import mods.jei.JEI.removeAndHide as rh;
 import mods.jaopca.JAOPCA;
 import mods.jaopca.OreEntry;
 
@@ -20,7 +19,7 @@ for item in [
 	<rats:cauldron_milk>,
 	<rats:cauldron_cheese>
 ] as IItemStack[] {
-	rh(item);
+	utils.rh(item);
 }
 
 # Cage

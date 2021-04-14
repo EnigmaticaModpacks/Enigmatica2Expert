@@ -1,5 +1,4 @@
 import crafttweaker.item.IItemStack as IItemStack;
-import mods.jei.JEI.removeAndHide as rh;
 #modloaded advancedrocketry
 
 # Vulpes Library Silicon dust Manufactory* Recipe Removal (Credit TheShadoWZYE2)
@@ -95,7 +94,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	] as IItemStack[];
 	
 	for item in removals {
-		rh(item);
+		utils.rh(item);
 	}
 	
 	val recipesToRemove = [

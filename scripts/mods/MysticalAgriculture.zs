@@ -1,6 +1,5 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
-import mods.jei.JEI.removeAndHide as rh;
 import scripts.craft.grid.Grid;
 
 #modloaded mysticalagriculture
@@ -300,7 +299,7 @@ var itemsToRemoveAndHide as IItemStack[] = [
 ];
 
 for item in itemsToRemoveAndHide {
-	rh(item);
+	utils.rh(item);
 }
 
 # *======= Unification =======*

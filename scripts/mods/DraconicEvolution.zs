@@ -1,4 +1,3 @@
-import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import scripts.craft.grid.Grid;

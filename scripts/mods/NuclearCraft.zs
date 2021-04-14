@@ -1,4 +1,3 @@
-import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import mods.nuclearcraft.decay_generator.addRecipe as addDecayRecipe;
@@ -121,20 +120,20 @@ scripts.process.fill(<nuclearcraft:part:11>, <fluid:water> * 2000, <nuclearcraft
 
 # *======= Remove & Hide =======*
 	
-	rh(<nuclearcraft:ore>);
-	rh(<nuclearcraft:ore:1>);
-	rh(<nuclearcraft:ore:2>);
-	rh(<nuclearcraft:ore:4>);
-	rh(<nuclearcraft:dust>);
-	rh(<nuclearcraft:dust:2>);
-	rh(<nuclearcraft:dust:1>);
-	rh(<nuclearcraft:ingot:4>);
-	rh(<nuclearcraft:ingot:2>);
-	rh(<nuclearcraft:ingot:1>);
-	rh(<nuclearcraft:dust:4>);
-	rh(<nuclearcraft:alloy>);
-	rh(<nuclearcraft:alloy:5>);
-	rh(<nuclearcraft:ingot>);
+	utils.rh(<nuclearcraft:ore>);
+	utils.rh(<nuclearcraft:ore:1>);
+	utils.rh(<nuclearcraft:ore:2>);
+	utils.rh(<nuclearcraft:ore:4>);
+	utils.rh(<nuclearcraft:dust>);
+	utils.rh(<nuclearcraft:dust:2>);
+	utils.rh(<nuclearcraft:dust:1>);
+	utils.rh(<nuclearcraft:ingot:4>);
+	utils.rh(<nuclearcraft:ingot:2>);
+	utils.rh(<nuclearcraft:ingot:1>);
+	utils.rh(<nuclearcraft:dust:4>);
+	utils.rh(<nuclearcraft:alloy>);
+	utils.rh(<nuclearcraft:alloy:5>);
+	utils.rh(<nuclearcraft:ingot>);
 
 	
 # Remove Unused alloy recipes from EnderIO

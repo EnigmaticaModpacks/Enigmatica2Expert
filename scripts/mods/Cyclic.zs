@@ -1,6 +1,5 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
-import mods.jei.JEI.removeAndHide as rh;
 import mods.cyclicmagic.Hydrator;  
 import mods.cyclicmagic.Solidifier;  
 import mods.cyclicmagic.Dehydrator;
@@ -9,7 +8,7 @@ import mods.cyclicmagic.Dehydrator;
 # *======= Recipes =======*
 
 # Removing Simple Block Miner
-	rh(<cyclicmagic:block_miner>);
+	utils.rh(<cyclicmagic:block_miner>);
 
 # Redstone Clock
 	recipes.remove(<cyclicmagic:clock>);
@@ -674,4 +673,4 @@ craft.remake(<cyclicmagic:tool_elevate>, ["pretty",
 });
 
 # Remove because transcended by Conarm modifiers
-rh(<cyclicmagic:glowing_helmet:*>);
+utils.rh(<cyclicmagic:glowing_helmet>);

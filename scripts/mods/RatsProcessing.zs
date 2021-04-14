@@ -1,7 +1,6 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
-import mods.jei.JEI.removeAndHide as rh;
 import mods.jaopca.JAOPCA;
 import mods.jaopca.OreEntry;
 

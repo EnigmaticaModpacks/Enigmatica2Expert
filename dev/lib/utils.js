@@ -198,3 +198,5 @@ function config(cfgPath) {
   return result
 }
 module.exports.config = config
+
+module.exports.naturalSort = (a,b)=>a.localeCompare(b, undefined, {numeric: true, sensitivity: 'base'})
