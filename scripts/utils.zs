@@ -248,7 +248,9 @@ zenClass Utils {
 
 
   # Clear Fluid tag on item preserving other tags
-  function clearFluid(input as IItemStack) as void  {clearFluid(input, "Fluid Clearing " ~ getItemName(input));}
+  function clearFluid(input as IItemStack) as void  {
+    clearFluid(input, "Fluid Clearing " ~ input.definition.id.replaceAll(":", "_") ~ "_" ~ input.damage);
+  }
   function clearFluid(input as IItemStack, recipeName as string) as void  {
     recipes.addShapeless(recipeName, 
       input, [input.marked("marked")],
@@ -346,5 +348,9 @@ global BucketTag as function(string,IData)IItemStack = function (name as string,
 # Get mob soul by its name
 # ########################
 global Soul as function(string)IItemStack = function (name as string) as IItemStack {
-	return <draconicevolution:mob_soul>.withTag({EntityName: name});
+  val soul = itemUtils.getItem("draconicevolution:mob_soul");
+  if (!isNull(soul)) {
+    return soul.withTag({EntityName: name});
+  }
+	return null;
 };

@@ -139,21 +139,11 @@ meteors.forEach(meteor => {
 // TCon
 // ----------------------------------------------------
 Patchouli_js('Items/Recycling', [{
-  item:	'artisanworktables:worktable:3',
+  item:	'requious:tinkers_disassembler',
 	title: 'Tool recycling',
-  _text: `Tools can be disassembled in $(l)Blacksmith/$ tables.
-    $(li)Hardest tool part picked for output
-    $(li)Chisel head should be harder
+  _text: `Tools and Armor can be disassembled in $(l)Disassembler/$.
+    $(li)Softest item part picked for output first
+    $(li)Both of tools should have harvest level higher
     $(li)Output amount based on material cost
-    $(li)Also based on table level`,
-},{
-  item:	'artisanworktables:worktable:3',
-	title: 'Table levels',
-  type: 'item_list',
-  _text1: `Different max
-          output for each
-          table:`,
-  item3: 'artisanworktables:worktable:3',   text3: '10%',
-  item4: 'artisanworktables:workstation:3', text4: '25%',
-  item5: 'artisanworktables:workshop:3',    text5: '100%',
+    $(li)Also som more math`,
 }])

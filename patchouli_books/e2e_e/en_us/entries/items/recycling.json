@@ -1,26 +1,14 @@
 {
   "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
   "name": "Recycling",
-  "icon": "artisanworktables:worktable:3",
+  "icon": "requious:tinkers_disassembler",
   "category": "Items",
   "pages": [
     {
-      "item": "artisanworktables:worktable:3",
+      "item": "requious:tinkers_disassembler",
       "title": "Tool recycling",
-      "text": "Tools can be disassembled in $(l)Blacksmith/$ tables.$(br)$(li)Hardest tool part picked for output$(br)$(li)Chisel head should be harder$(br)$(li)Output amount based on material cost$(br)$(li)Also based on table level",
+      "text": "Tools and Armor can be disassembled in $(l)Disassembler/$.$(br)$(li)Softest item part picked for output first$(br)$(li)Both of tools should have harvest level higher$(br)$(li)Output amount based on material cost$(br)$(li)Also som more math",
       "type": "spotlight"
-    },
-    {
-      "item": "artisanworktables:worktable:3",
-      "title": "Table levels",
-      "type": "item_list",
-      "text1": "Different max$(br)output for each$(br)table:",
-      "item3": "artisanworktables:worktable:3",
-      "text3": "10%",
-      "item4": "artisanworktables:workstation:3",
-      "text4": "25%",
-      "item5": "artisanworktables:workshop:3",
-      "text5": "100%"
     }
   ]
 }

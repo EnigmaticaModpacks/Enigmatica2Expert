@@ -131,9 +131,11 @@ requious.jei.recipe.forestry_farm=Forestry Farm
 requious.jei.recipe.adv_bee_analyzer=Advanced Analyzer
 requious.jei.recipe.infinity_furnace=Infinity Furnace
 requious.jei.recipe.xp_bottler=XP Bottler
+requious.jei.recipe.tinkers_disassembler=Tinker's Disassembler
 
 tile.adv_bee_analyzer.name=Advanced Analyzer
 tile.infinity_furnace.name=Infinity Furnace
+tile.tinkers_disassembler.name=Tinker's Disassembler
 
 e2ee.tips.1=Quest descriptions often have tips and tricks.
 e2ee.tips.2=You can put your larger setups in Compact Machines to save space.

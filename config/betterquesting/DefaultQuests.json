@@ -61100,9 +61100,9 @@
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "artisanworktables:worktable",
+            "id:8": "requious:tinkers_disassembler",
             "Count:3": 1,
-            "Damage:2": 3,
+            "Damage:2": 0,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -61126,9 +61126,9 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "artisanworktables:worktable",
+              "id:8": "requious:tinkers_disassembler",
               "Count:3": 1,
-              "Damage:2": 3,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           },
