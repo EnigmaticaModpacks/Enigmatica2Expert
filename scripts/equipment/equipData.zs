@@ -176,12 +176,6 @@ val defaultArmorMats as IData = [
   "dragonsteel_fire"       , # 114
   "dragonsteel_ice"        , # 114
   "soularium"              , # 123
-  "ma.superium"            , # 124
-  "ma.supremium"           , # 138
-  "draconic_metal"         , # 208
-  "neutronium"             , # 347
-  "chaotic_metal"          , # 570
-  "infinity_metal"         , # 1535
 ] as IData;
 
 
@@ -332,11 +326,7 @@ val defaultWeaponMats as IData = [
   "kyronite"               , # 508
   "draconic_metal"         , # 542
   "pladium"                , # 567
-  "ma.supremium"           , # 599
   "ionite"                 , # 636
-  "aethium"                , # 713
-  "chaotic_metal"          , # 1016
-  "infinity_metal"         , # 19537
 ] as IData;
 
 static armorEntitys as IData = [
@@ -384,7 +374,7 @@ static armorEntitys as IData = [
     ],
     groups: [
       {
-        ticMats: ["construction_alloy", "tough", "thorium", "blackquartz_plustic", "void_actadd_plustic", "plague_metal", "aethium"]
+        ticMats: ["construction_alloy", "tough", "thorium", "blackquartz_plustic", "void_actadd_plustic", "plague_metal"]
       }
     ]
   },
@@ -406,7 +396,7 @@ static armorEntitys as IData = [
     ],
     groups: [
       {
-        ticMats: ["blueslime", "cobalt", "scaletealseaserpent", "scaledeepblueseaserpent", "scalesapphiredragon", "ma.base_essence", "starmetal", "psimetal", "sapphire", "psigem", "platinum_plustic", "manasteel", "palis_actadd_plustic", "diamatine_actadd_plustic", "hard_carbon", "tanzanite", "osmiridium", "pladium", "refined_obsidian", "ionite", "ma.superium"]
+        ticMats: ["blueslime", "cobalt", "scaletealseaserpent", "scaledeepblueseaserpent", "scalesapphiredragon", "ma.base_essence", "starmetal", "psimetal", "sapphire", "psigem", "platinum_plustic", "manasteel", "palis_actadd_plustic", "diamatine_actadd_plustic", "hard_carbon", "tanzanite", "osmiridium", "pladium", "refined_obsidian", "ionite"]
       }
     ]
   }
