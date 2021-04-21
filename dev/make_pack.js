@@ -149,6 +149,12 @@ globs([
   '!mods/ping-*.jar',
   '!mods/torohealth*.jar',
   '!mods/toughnessbar*.jar',
+  '!mods/badwithernocookiereloaded*.jar',
+  '!mods/BQTweaker*.jar',
+  '!mods/ReAuth*.jar',
+  '!mods/ReBind*.jar',
+  '!mods/MemoryTester*.jar',
+  '!mods/Neat*.jar',
 
   // Not sure
 /* 
@@ -166,16 +172,13 @@ globs([
   '!mods/justthetips*.jar',
   '!mods/lootcapacitortooltips*.jar',
   '!mods/mekanismfluxified*.jar',
-  '!mods/MemoryTester*.jar',
   '!mods/moreoverlays*.jar',
-  '!mods/Neat*.jar',
   '!mods/overloadedarmorbar*.jar',
   '!mods/potiondescriptions*.jar',
-  '!mods/ReAuth*.jar',
-  '!mods/ReBind*.jar',
   '!mods/TipTheScales*.jar',
   '!mods/Toast Control*.jar',
 */
+  // Sure not
   // '!mods/Hwyla*.jar',
   // '!mods/WailaHarvestability*.jar',
   // '!mods/Wawla*.jar',
