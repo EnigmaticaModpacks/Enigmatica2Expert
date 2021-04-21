@@ -1,5 +1,25 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
+# 0.23
+
+## 🔵 Mods
+
+
+- ### 🔨 Tinker's Construct
+
+  - Recycle rework. Now you can turn tools into shards: https://imgur.com/a/7ambQhN
+  - Temporary Remove High-end materials from random spawn, examples: ![](https://git.io/JOKc4 "Infinity Shard")![](https://git.io/JOKci "Chaotic Shard")![](https://git.io/JOKcP "Supremium Shard")
+  - ![](https://git.io/JOKc6 "Plate of Unsealing") way harder to prevent abusing mob drops
+
+## 🌎 Worldgen
+
+- Remove Slime Islands from Emptiness dim
+- Just Enough Resources: Add Emptiness dimension to JEI
+
+
+
+
+
 # 0.22
 
 ## 🟢 New Mods
