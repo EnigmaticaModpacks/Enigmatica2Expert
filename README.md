@@ -1,5 +1,6 @@
 # (draft) Description
 
+![](https://i.imgur.com/afnpdXm.png)
 
 **Enigmatica 2: Expert - Extended** is an addon for [Enigmatica 2: Expert](https://www.curseforge.com/minecraft/modpacks/enigmatica2expert)
 
