@@ -4,8 +4,8 @@
     "_index": "35:10",
     "_data": {
       "sizeX:3": 24,
-      "x:3": 360,
-      "y:3": 108,
+      "x:3": 363,
+      "y:3": 109,
       "id:3": 785,
       "sizeY:3": 24
     }
@@ -37,8 +37,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "Item Capability Proxy",
-        "desc:8": "This proxy can give acces to storage items like Satchels or Shulker Boxes.\n\nBut most powerful synergy achieved with §1DankNull"
+        "name:8": "bq.quest785.name",
+        "desc:8": "bq.quest785.desc"
       }
     },
     "tasks:9": {

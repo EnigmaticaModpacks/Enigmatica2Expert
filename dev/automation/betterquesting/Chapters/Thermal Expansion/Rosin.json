@@ -4,8 +4,8 @@
     "_index": "26:10",
     "_data": {
       "sizeX:3": 24,
-      "x:3": 224,
-      "y:3": 64,
+      "x:3": 332,
+      "y:3": 52,
       "id:3": 239,
       "sizeY:3": 24
     }
@@ -35,7 +35,7 @@
         "partysinglereward:1": 0,
         "snd_update:8": "minecraft:entity.player.levelup",
         "autoclaim:1": 0,
-        "ismain:1": 1,
+        "ismain:1": 0,
         "repeat_relative:1": 1,
         "name:8": "bq.quest239.name",
         "desc:8": "bq.quest239.desc"

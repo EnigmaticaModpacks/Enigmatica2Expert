@@ -5,7 +5,7 @@
     "properties:10": {
       "betterquesting:10": {
         "visibility:8": "ALWAYS",
-        "name:8": "Ender IO",
+        "name:8": "bq.chapter4.name",
         "icon:10": {
           "id:8": "enderio:item_material",
           "Count:3": 1,
@@ -14,7 +14,7 @@
         },
         "bg_image:8": "",
         "bg_size:3": 256,
-        "desc:8": "Quests for Ender IO, a Tier 4 Tech mod."
+        "desc:8": "bq.chapter4.desc"
       }
     },
     "order:3": 21

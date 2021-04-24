@@ -1,19 +1,19 @@
 {
-  "_index": "260:10",
+  "_index": "865:10",
   "_pos": {
-    "_index": "44:10",
+    "_index": "7:10",
     "_data": {
       "sizeX:3": 24,
-      "x:3": 320,
-      "y:3": 64,
-      "id:3": 260,
+      "x:3": 128,
+      "y:3": -40,
+      "id:3": 865,
       "sizeY:3": 24
     }
   },
   "_data": {
-    "questID:3": 260,
+    "questID:3": 865,
     "preRequisites:11": [
-      220
+      864
     ],
     "properties:10": {
       "betterquesting:10": {
@@ -25,9 +25,9 @@
         "visibility:8": "ALWAYS",
         "simultaneous:1": 0,
         "icon:10": {
-          "id:8": "thermalexpansion:augment",
+          "id:8": "twilightforest:trophy",
           "Count:3": 1,
-          "Damage:2": 402,
+          "Damage:2": 3,
           "OreDict:8": ""
         },
         "globalshare:1": 0,
@@ -37,8 +37,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "bq.quest260.name",
-        "desc:8": "bq.quest260.desc"
+        "name:8": "bq.quest865.name",
+        "desc:8": "bq.quest865.desc"
       }
     },
     "tasks:9": {
@@ -46,14 +46,14 @@
         "partialMatch:1": 1,
         "autoConsume:1": 0,
         "groupDetect:1": 0,
-        "ignoreNBT:1": 0,
+        "ignoreNBT:1": 1,
         "index:3": 0,
         "consume:1": 0,
         "requiredItems:9": {
           "0:10": {
-            "id:8": "thermalexpansion:augment",
+            "id:8": "twilightforest:trophy",
             "Count:3": 1,
-            "Damage:2": 402,
+            "Damage:2": 3,
             "OreDict:8": ""
           }
         },
@@ -66,15 +66,22 @@
         "index:3": 0,
         "rewards:9": {
           "0:10": {
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
-            "id:8": "bq_standard:loot_chest",
-            "Count:3": 1,
-            "Damage:2": 101,
+            "id:8": "twilightforest:charm_of_keeping_3",
+            "Count:3": 8,
+            "Damage:2": 0,
             "OreDict:8": ""
           }
         }
+      },
+      "1:10": {
+        "hideBlockIcon:1": 1,
+        "rewardID:8": "bq_standard:command",
+        "asScript:1": 1,
+        "description:8": "Grant Twilight Forest progress",
+        "viaPlayer:1": 0,
+        "index:3": 1,
+        "title:8": "bq_standard.reward.command",
+        "command:8": "/advancement grant VAR_NAME only twilightforest:progress_ur_ghast"
       }
     }
   }

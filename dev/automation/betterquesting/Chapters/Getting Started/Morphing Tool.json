@@ -4,8 +4,8 @@
     "_index": "37:10",
     "_data": {
       "sizeX:3": 24,
-      "x:3": 72,
-      "y:3": 144,
+      "x:3": 75,
+      "y:3": 133,
       "id:3": 797,
       "sizeY:3": 24
     }
@@ -68,16 +68,34 @@
     },
     "rewards:9": {
       "0:10": {
-        "rewardID:8": "bq_standard:item",
+        "rewardID:8": "bq_standard:choice",
         "index:3": 0,
-        "rewards:9": {
+        "choices:9": {
           "0:10": {
+            "id:8": "extrautils2:machine",
+            "Count:3": 1,
+            "tag:10": {
+              "Type:8": "extrautils2:generator_survival"
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "1:10": {
+            "id:8": "nuclearcraft:decay_generator",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "2:10": {
             "ForgeCaps:10": {
               "astralsorcery:cap_item_amulet_holder:10": {}
             },
             "id:8": "bq_standard:loot_chest",
             "Count:3": 1,
-            "Damage:2": 101,
+            "tag:10": {
+              "hideLootInfo:1": 1
+            },
+            "Damage:2": 0,
             "OreDict:8": ""
           }
         }

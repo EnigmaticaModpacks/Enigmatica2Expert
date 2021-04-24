@@ -37,8 +37,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "Scented Hive",
-        "desc:8": "Scented Hive has to be placed in the world. It will eventually turn in to a bee hive, depending on blocks near it."
+        "name:8": "bq.quest794.name",
+        "desc:8": "bq.quest794.desc"
       }
     },
     "tasks:9": {

@@ -43,8 +43,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "Ring Of Growth",
-        "desc:8": "Cause the crops around the player in a 3 radius area to grow."
+        "name:8": "bq.quest789.name",
+        "desc:8": "bq.quest789.desc"
       }
     },
     "tasks:9": {

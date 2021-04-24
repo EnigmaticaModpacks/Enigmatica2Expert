@@ -4,8 +4,8 @@
     "_index": "32:10",
     "_data": {
       "sizeX:3": 24,
-      "x:3": 180,
-      "y:3": 108,
+      "x:3": 183,
+      "y:3": 109,
       "id:3": 778,
       "sizeY:3": 24
     }
@@ -25,7 +25,7 @@
         "visibility:8": "ALWAYS",
         "simultaneous:1": 0,
         "icon:10": {
-          "id:8": "hole_filler_mod:item_throwable_hole_filler",
+          "id:8": "hole_filler_mod:throwable_hole_filler",
           "Count:3": 1,
           "Damage:2": 0,
           "OreDict:8": ""
@@ -37,8 +37,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "Hole Filler",
-        "desc:8": "Throw it and walk away. Your hole will be filled in."
+        "name:8": "bq.quest778.name",
+        "desc:8": "bq.quest778.desc"
       }
     },
     "tasks:9": {
@@ -51,7 +51,7 @@
         "consume:1": 0,
         "requiredItems:9": {
           "0:10": {
-            "id:8": "hole_filler_mod:item_throwable_hole_filler",
+            "id:8": "hole_filler_mod:throwable_hole_filler",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -66,7 +66,7 @@
         "index:3": 0,
         "rewards:9": {
           "0:10": {
-            "id:8": "hole_filler_mod:item_throwable_hole_filler",
+            "id:8": "hole_filler_mod:throwable_hole_filler",
             "Count:3": 10,
             "Damage:2": 0,
             "OreDict:8": ""

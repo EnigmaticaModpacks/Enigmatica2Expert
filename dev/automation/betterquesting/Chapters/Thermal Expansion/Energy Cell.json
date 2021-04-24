@@ -4,8 +4,8 @@
     "_index": "19:10",
     "_data": {
       "sizeX:3": 24,
-      "x:3": 176,
-      "y:3": 96,
+      "x:3": 68,
+      "y:3": 60,
       "id:3": 232,
       "sizeY:3": 24
     }
@@ -76,20 +76,7 @@
             "id:8": "thermalexpansion:cell",
             "Count:3": 1,
             "tag:10": {
-              "Recv:3": 5000,
-              "RSControl:1": 0,
-              "Facing:1": 3,
-              "Energy:3": 0,
-              "SideCache:7": [
-                2,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "Level:1": 0,
-              "Send:3": 5000
+              "Level:1": 0
             },
             "Damage:2": 0,
             "OreDict:8": ""

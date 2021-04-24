@@ -1,19 +1,19 @@
 {
-  "_index": "869:10",
+  "_index": "872:10",
   "_pos": {
-    "_index": "8:10",
+    "_index": "26:10",
     "_data": {
       "sizeX:3": 24,
-      "x:3": 128,
-      "y:3": 32,
-      "id:3": 869,
+      "x:3": 32,
+      "y:3": -24,
+      "id:3": 872,
       "sizeY:3": 24
     }
   },
   "_data": {
-    "questID:3": 869,
+    "questID:3": 872,
     "preRequisites:11": [
-      868
+      280
     ],
     "properties:10": {
       "betterquesting:10": {
@@ -25,9 +25,9 @@
         "visibility:8": "ALWAYS",
         "simultaneous:1": 0,
         "icon:10": {
-          "id:8": "twilightforest:trophy",
+          "id:8": "requious:adv_bee_analyzer",
           "Count:3": 1,
-          "Damage:2": 2,
+          "Damage:2": 0,
           "OreDict:8": ""
         },
         "globalshare:1": 0,
@@ -37,8 +37,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "Twilight Forest Quest ### hydra",
-        "desc:8": "TF quest Description"
+        "name:8": "Advanced Analyzer",
+        "desc:8": "Much faster than usual Analyzer block"
       }
     },
     "tasks:9": {
@@ -51,9 +51,9 @@
         "consume:1": 0,
         "requiredItems:9": {
           "0:10": {
-            "id:8": "twilightforest:trophy",
+            "id:8": "requious:adv_bee_analyzer",
             "Count:3": 1,
-            "Damage:2": 2,
+            "Damage:2": 0,
             "OreDict:8": ""
           }
         },
@@ -71,23 +71,10 @@
             },
             "id:8": "bq_standard:loot_chest",
             "Count:3": 1,
-            "tag:10": {
-              "hideLootInfo:1": 1
-            },
-            "Damage:2": 100,
+            "Damage:2": 101,
             "OreDict:8": ""
           }
         }
-      },
-      "1:10": {
-        "hideBlockIcon:1": 1,
-        "rewardID:8": "bq_standard:command",
-        "asScript:1": 1,
-        "description:8": "Grant Twilight Forest progress",
-        "viaPlayer:1": 0,
-        "index:3": 1,
-        "title:8": "bq_standard.reward.command",
-        "command:8": "/advancement grant VAR_NAME only twilightforest:progress_hydra"
       }
     }
   }

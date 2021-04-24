@@ -38,8 +38,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "Gate: Advanced Generators",
-        "desc:8": "There is no Advanced Generators chapter, but Extra Utilities give access to the mod."
+        "name:8": "bq.quest839.name",
+        "desc:8": "bq.quest839.desc"
       }
     },
     "tasks:9": {

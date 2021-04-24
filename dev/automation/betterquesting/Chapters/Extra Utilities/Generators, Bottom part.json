@@ -1,0 +1,47 @@
+{
+  "_index": "887:10",
+  "_pos": {
+    "_index": "53:10",
+    "_data": {
+      "sizeX:3": 8,
+      "x:3": 244,
+      "y:3": 68,
+      "id:3": 887,
+      "sizeY:3": 8
+    }
+  },
+  "_data": {
+    "questID:3": 887,
+    "preRequisites:11": [
+      888
+    ],
+    "properties:10": {
+      "betterquesting:10": {
+        "issilent:1": 0,
+        "snd_complete:8": "minecraft:entity.player.levelup",
+        "lockedprogress:1": 1,
+        "tasklogic:8": "AND",
+        "repeattime:3": -1,
+        "visibility:8": "ALWAYS",
+        "simultaneous:1": 0,
+        "icon:10": {
+          "id:8": "minecraft:air",
+          "Count:3": 0,
+          "Damage:2": 0,
+          "OreDict:8": ""
+        },
+        "globalshare:1": 0,
+        "questlogic:8": "AND",
+        "partysinglereward:1": 0,
+        "snd_update:8": "minecraft:entity.player.levelup",
+        "autoclaim:1": 1,
+        "ismain:1": 0,
+        "repeat_relative:1": 1,
+        "name:8": "Generators, Bottom part",
+        "desc:8": ""
+      }
+    },
+    "tasks:9": {},
+    "rewards:9": {}
+  }
+}

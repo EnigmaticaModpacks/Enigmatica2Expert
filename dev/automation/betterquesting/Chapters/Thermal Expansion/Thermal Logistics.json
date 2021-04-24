@@ -1,19 +1,19 @@
 {
-  "_index": "595:10",
+  "_index": "878:10",
   "_pos": {
-    "_index": "48:10",
+    "_index": "49:10",
     "_data": {
       "sizeX:3": 24,
-      "x:3": 0,
-      "y:3": 104,
-      "id:3": 595,
+      "x:3": 96,
+      "y:3": 60,
+      "id:3": 878,
       "sizeY:3": 24
     }
   },
   "_data": {
-    "questID:3": 595,
+    "questID:3": 878,
     "preRequisites:11": [
-      116
+      213
     ],
     "properties:10": {
       "betterquesting:10": {
@@ -25,10 +25,7 @@
         "visibility:8": "ALWAYS",
         "simultaneous:1": 0,
         "icon:10": {
-          "ForgeCaps:10": {
-            "astralsorcery:cap_item_amulet_holder:10": {}
-          },
-          "id:8": "extrautils2:angelring",
+          "id:8": "thermallogistics:terminal_item",
           "Count:3": 1,
           "Damage:2": 0,
           "OreDict:8": ""
@@ -40,8 +37,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "bq.quest595.name",
-        "desc:8": "bq.quest595.desc"
+        "name:8": "Thermal Logistics",
+        "desc:8": "This mod adds smart crafting to Thermal Dynamics using just two new servos: the §2Requester§r and the §2Crafter§r. \n\n§2Requesters§r are smart the smart version of the retriever from Thermal Dynamics. If they need an item not available in the network, they can request a crafter to make it for them.\n\n§2Crafters§r are attached to machines that can make an item using inputs. In the crafter, you specify what items go in and what items go out. Crafters can be linked together if a machine outputs on a different side than where it takes its input.\n\n"
       }
     },
     "tasks:9": {
@@ -54,10 +51,7 @@
         "consume:1": 0,
         "requiredItems:9": {
           "0:10": {
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
-            "id:8": "extrautils2:angelring",
+            "id:8": "thermallogistics:terminal_item",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -77,7 +71,7 @@
             },
             "id:8": "bq_standard:loot_chest",
             "Count:3": 1,
-            "Damage:2": 101,
+            "Damage:2": 75,
             "OreDict:8": ""
           }
         }

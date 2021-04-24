@@ -4,16 +4,16 @@
     "_index": "4:10",
     "_data": {
       "sizeX:3": 24,
-      "x:3": 296,
-      "y:3": 24,
+      "x:3": 332,
+      "y:3": 88,
       "id:3": 217,
-      "sizeY:3": 24
+      "sizeY:3": 32
     }
   },
   "_data": {
     "questID:3": 217,
     "preRequisites:11": [
-      216
+      239
     ],
     "properties:10": {
       "betterquesting:10": {
@@ -49,7 +49,7 @@
         "partysinglereward:1": 0,
         "snd_update:8": "minecraft:entity.player.levelup",
         "autoclaim:1": 0,
-        "ismain:1": 1,
+        "ismain:1": 0,
         "repeat_relative:1": 1,
         "name:8": "bq.quest217.name",
         "desc:8": "bq.quest217.desc"

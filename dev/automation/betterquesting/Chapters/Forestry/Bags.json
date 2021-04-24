@@ -1,19 +1,19 @@
 {
-  "_index": "246:10",
+  "_index": "891:10",
   "_pos": {
-    "_index": "33:10",
+    "_index": "27:10",
     "_data": {
       "sizeX:3": 24,
-      "x:3": 16,
-      "y:3": 72,
-      "id:3": 246,
+      "x:3": -128,
+      "y:3": -24,
+      "id:3": 891,
       "sizeY:3": 24
     }
   },
   "_data": {
-    "questID:3": 246,
+    "questID:3": 891,
     "preRequisites:11": [
-      222
+      97
     ],
     "properties:10": {
       "betterquesting:10": {
@@ -25,9 +25,12 @@
         "visibility:8": "ALWAYS",
         "simultaneous:1": 0,
         "icon:10": {
-          "id:8": "thermalexpansion:augment",
+          "ForgeCaps:10": {
+            "astralsorcery:cap_item_amulet_holder:10": {}
+          },
+          "id:8": "forestry:miner_bag_t2",
           "Count:3": 1,
-          "Damage:2": 513,
+          "Damage:2": 0,
           "OreDict:8": ""
         },
         "globalshare:1": 0,
@@ -37,8 +40,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "bq.quest246.name",
-        "desc:8": "bq.quest246.desc"
+        "name:8": "Bags",
+        "desc:8": "Storage Item.\n\nTo toggle the mode of a Backpack's features 'Use' it while 'Sneaking'\n\n§9Normal§r\nAutomatically picks-up assigned drops\n\n§6Lock§r (lock icon)\nItems may be inserted into a Backpack manually, but it does not pick up drops\n\n§eResupply§r (yellow arrow down icon)\nAutomatically resupplies items in the Players hotbar or inventory from the Backpack\n\n§2Receiving§r (green arrow up icon)\nIn this Mode 'Using' a chest while 'Sneaking' will transfer assigned Blocks/ Items from the chest to the Backpack"
       }
     },
     "tasks:9": {
@@ -46,14 +49,17 @@
         "partialMatch:1": 1,
         "autoConsume:1": 0,
         "groupDetect:1": 0,
-        "ignoreNBT:1": 0,
+        "ignoreNBT:1": 1,
         "index:3": 0,
         "consume:1": 0,
         "requiredItems:9": {
           "0:10": {
-            "id:8": "thermalexpansion:augment",
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "forestry:miner_bag_t2",
             "Count:3": 1,
-            "Damage:2": 513,
+            "Damage:2": 0,
             "OreDict:8": ""
           }
         },

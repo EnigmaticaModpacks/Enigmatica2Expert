@@ -1,0 +1,79 @@
+{
+  "_index": "885:10",
+  "_pos": {
+    "_index": "51:10",
+    "_data": {
+      "sizeX:3": 36,
+      "x:3": 329,
+      "y:3": 48,
+      "id:3": 885,
+      "sizeY:3": 20
+    }
+  },
+  "_data": {
+    "questID:3": 885,
+    "preRequisites:11": [
+      345,
+      347,
+      349,
+      343,
+      346,
+      350,
+      354,
+      335
+    ],
+    "properties:10": {
+      "betterquesting:10": {
+        "issilent:1": 0,
+        "snd_complete:8": "minecraft:entity.player.levelup",
+        "lockedprogress:1": 1,
+        "tasklogic:8": "AND",
+        "repeattime:3": -1,
+        "visibility:8": "ALWAYS",
+        "simultaneous:1": 0,
+        "icon:10": {
+          "id:8": "extrautils2:rainbowgenerator",
+          "Count:3": 1,
+          "Damage:2": 1,
+          "OreDict:8": ""
+        },
+        "globalshare:1": 0,
+        "questlogic:8": "AND",
+        "partysinglereward:1": 0,
+        "snd_update:8": "minecraft:entity.player.levelup",
+        "autoclaim:1": 0,
+        "ismain:1": 0,
+        "repeat_relative:1": 1,
+        "name:8": "Rainbow Generator Half",
+        "desc:8": "One of two..."
+      }
+    },
+    "tasks:9": {
+      "0:10": {
+        "partialMatch:1": 1,
+        "autoConsume:1": 0,
+        "groupDetect:1": 0,
+        "ignoreNBT:1": 1,
+        "index:3": 0,
+        "consume:1": 0,
+        "requiredItems:9": {
+          "0:10": {
+            "id:8": "extrautils2:rainbowgenerator",
+            "Count:3": 1,
+            "Damage:2": 1,
+            "OreDict:8": ""
+          }
+        },
+        "taskID:8": "bq_standard:retrieval"
+      }
+    },
+    "rewards:9": {
+      "0:10": {
+        "amount:3": 20,
+        "rewardID:8": "bq_standard:xp",
+        "isLevels:1": 1,
+        "index:3": 0
+      }
+    }
+  }
+}

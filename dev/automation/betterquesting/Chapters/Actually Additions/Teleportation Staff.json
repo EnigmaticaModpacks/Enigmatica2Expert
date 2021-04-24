@@ -43,8 +43,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "Teleportation Staff",
-        "desc:8": "Teleport the user to where the user is looking.\nThe maximum amount of blocks that can be teleported across is§l 49."
+        "name:8": "bq.quest788.name",
+        "desc:8": "bq.quest788.desc"
       }
     },
     "tasks:9": {

@@ -5,7 +5,7 @@
     "properties:10": {
       "betterquesting:10": {
         "visibility:8": "ALWAYS",
-        "name:8": "Environmental Tech",
+        "name:8": "bq.chapter18.name",
         "icon:10": {
           "id:8": "environmentaltech:void_ore_miner_cont_1",
           "Count:3": 1,
@@ -14,7 +14,7 @@
         },
         "bg_image:8": "",
         "bg_size:3": 256,
-        "desc:8": "Quests for Environmental Tech, a Tier 4 Tech mod."
+        "desc:8": "bq.chapter18.desc"
       }
     },
     "order:3": 20

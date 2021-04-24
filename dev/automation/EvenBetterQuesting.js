@@ -1,6 +1,21 @@
 const fs = require('fs')
 const path = require('path')
 const glob = require('glob')
+const { execSync } = require('child_process')
+
+
+module.exports.init = init
+function init(argv = process.argv) {
+  if(argv.unparse) unparse()
+  else parse()
+}
+
+
+const diff = execSync('git diff HEAD dev/automation/betterquesting').toString().trim()
+if(!diff) init()
+else {
+  console.log(' ❌📖 EvenBetterQuesting error: splitted folder have changes!')
+}
 
 /*
 
@@ -8,6 +23,7 @@ const glob = require('glob')
 
 */
 function parse() {
+  console.log('  📖 BetterQuesting. Splitting DefaultQuests.json into files')
 
   // Saving files functions
   function saveParsed(filename, txt) {
@@ -74,7 +90,6 @@ function parse() {
     }
   }
 }
-// parse()
 
 /*
 
@@ -82,6 +97,8 @@ function parse() {
 
 */
 function unparse() {
+  console.log('  📖 BetterQuesting. Join quests into DefaultQuests.json')
+
   function json_here(filePath) { return JSON.parse(
     fs.readFileSync(path.resolve(__dirname, filePath),'utf8')
   )}
@@ -137,4 +154,4 @@ function unparse() {
     JSON.stringify(book, null, 2)
   )
 }
-// unparse()
+

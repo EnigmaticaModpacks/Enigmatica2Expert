@@ -37,8 +37,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "Alveary",
-        "desc:8": "The Alveary is an advanced variant of the Apiary. The Alveary allows for combs to be produced faster due to its natural speed increase to production."
+        "name:8": "bq.quest793.name",
+        "desc:8": "bq.quest793.desc"
       }
     },
     "tasks:9": {

@@ -5,7 +5,7 @@
     "properties:10": {
       "betterquesting:10": {
         "visibility:8": "NORMAL",
-        "name:8": "Applied Energetics",
+        "name:8": "bq.chapter22.name",
         "icon:10": {
           "id:8": "chisel:futura",
           "Count:3": 1,
@@ -14,9 +14,9 @@
         },
         "bg_image:8": "",
         "bg_size:3": 256,
-        "desc:8": "§3Applied Energistics 2§r is a mod designed to compactly store items in a digital network called Matter Energy, or ME (pronounced Emm-Eee). \nDifferent devices can be connected to the ME Network, such as an ME Drive, for the storage of items, or an ME Terminal, allowing for access to that storage.\n\n"
+        "desc:8": "bq.chapter22.desc"
       }
     },
-    "order:3": 13
+    "order:3": 14
   }
 }

@@ -12,7 +12,9 @@
   },
   "_data": {
     "questID:3": 6,
-    "preRequisites:11": [],
+    "preRequisites:11": [
+      47
+    ],
     "properties:10": {
       "betterquesting:10": {
         "issilent:1": 0,

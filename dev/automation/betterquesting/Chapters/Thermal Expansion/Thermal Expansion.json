@@ -3,11 +3,11 @@
   "_pos": {
     "_index": "0:10",
     "_data": {
-      "sizeX:3": 24,
-      "x:3": 80,
-      "y:3": 24,
+      "sizeX:3": 32,
+      "x:3": 64,
+      "y:3": 20,
       "id:3": 213,
-      "sizeY:3": 24
+      "sizeY:3": 32
     }
   },
   "_data": {
@@ -38,7 +38,7 @@
         "partysinglereward:1": 0,
         "snd_update:8": "minecraft:entity.player.levelup",
         "autoclaim:1": 0,
-        "ismain:1": 0,
+        "ismain:1": 1,
         "repeat_relative:1": 1,
         "name:8": "bq.quest213.name",
         "desc:8": "bq.quest213.desc"

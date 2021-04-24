@@ -4,8 +4,8 @@
     "_index": "34:10",
     "_data": {
       "sizeX:3": 24,
-      "x:3": 36,
-      "y:3": 0,
+      "x:3": 39,
+      "y:3": 36,
       "id:3": 784,
       "sizeY:3": 24
     }
@@ -13,7 +13,8 @@
   "_data": {
     "questID:3": 784,
     "preRequisites:11": [
-      49
+      49,
+      130
     ],
     "properties:10": {
       "betterquesting:10": {
@@ -26,9 +27,9 @@
         "visibility:8": "ALWAYS",
         "simultaneous:1": 0,
         "icon:10": {
-          "id:8": "artisanworktables:worktable",
+          "id:8": "requious:tinkers_disassembler",
           "Count:3": 1,
-          "Damage:2": 3,
+          "Damage:2": 0,
           "OreDict:8": ""
         },
         "globalshare:1": 0,
@@ -38,8 +39,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "Tinker's Recycling",
-        "desc:8": "Tinker's Tools and Armor can be recycled.\nSee more in \"Enigmatica\" book."
+        "name:8": "bq.quest784.name",
+        "desc:8": "bq.quest784.desc"
       }
     },
     "tasks:9": {
@@ -52,9 +53,9 @@
         "consume:1": 0,
         "requiredItems:9": {
           "0:10": {
-            "id:8": "artisanworktables:worktable",
+            "id:8": "requious:tinkers_disassembler",
             "Count:3": 1,
-            "Damage:2": 3,
+            "Damage:2": 0,
             "OreDict:8": ""
           }
         },

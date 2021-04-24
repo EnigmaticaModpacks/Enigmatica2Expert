@@ -5,7 +5,7 @@
     "properties:10": {
       "betterquesting:10": {
         "visibility:8": "NORMAL",
-        "name:8": "Twilight Forest",
+        "name:8": "bq.chapter23.name",
         "icon:10": {
           "id:8": "twilightforest:miniature_structure",
           "Count:3": 1,
@@ -14,7 +14,7 @@
         },
         "bg_image:8": "",
         "bg_size:3": 256,
-        "desc:8": "Adventure dimension"
+        "desc:8": "bq.chapter23.desc"
       }
     },
     "order:3": 3

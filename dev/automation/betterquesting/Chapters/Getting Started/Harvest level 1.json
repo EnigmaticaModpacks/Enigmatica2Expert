@@ -3,7 +3,7 @@
   "_pos": {
     "_index": "4:10",
     "_data": {
-      "sizeX:3": 24,
+      "sizeX:3": 30,
       "x:3": -36,
       "y:3": 72,
       "id:3": 47,
@@ -13,7 +13,7 @@
   "_data": {
     "questID:3": 47,
     "preRequisites:11": [
-      18
+      46
     ],
     "properties:10": {
       "betterquesting:10": {

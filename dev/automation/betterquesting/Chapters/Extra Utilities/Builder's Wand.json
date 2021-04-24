@@ -3,17 +3,17 @@
   "_pos": {
     "_index": "13:10",
     "_data": {
-      "sizeX:3": 24,
-      "x:3": 40,
-      "y:3": 168,
+      "sizeX:3": 20,
+      "x:3": -4,
+      "y:3": 33,
       "id:3": 319,
-      "sizeY:3": 24
+      "sizeY:3": 20
     }
   },
   "_data": {
     "questID:3": 319,
     "preRequisites:11": [
-      325
+      330
     ],
     "properties:10": {
       "betterquesting:10": {

@@ -1,19 +1,21 @@
 {
-  "_index": "247:10",
+  "_index": "870:10",
   "_pos": {
-    "_index": "34:10",
+    "_index": "12:10",
     "_data": {
       "sizeX:3": 24,
-      "x:3": 16,
-      "y:3": 48,
-      "id:3": 247,
+      "x:3": 160,
+      "y:3": 0,
+      "id:3": 870,
       "sizeY:3": 24
     }
   },
   "_data": {
-    "questID:3": 247,
+    "questID:3": 870,
     "preRequisites:11": [
-      222
+      865,
+      867,
+      869
     ],
     "properties:10": {
       "betterquesting:10": {
@@ -25,9 +27,12 @@
         "visibility:8": "ALWAYS",
         "simultaneous:1": 0,
         "icon:10": {
-          "id:8": "thermalexpansion:augment",
+          "ForgeCaps:10": {
+            "astralsorcery:cap_item_amulet_holder:10": {}
+          },
+          "id:8": "twilightforest:lamp_of_cinders",
           "Count:3": 1,
-          "Damage:2": 512,
+          "Damage:2": 0,
           "OreDict:8": ""
         },
         "globalshare:1": 0,
@@ -37,8 +42,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "bq.quest247.name",
-        "desc:8": "bq.quest247.desc"
+        "name:8": "bq.quest870.name",
+        "desc:8": "bq.quest870.desc"
       }
     },
     "tasks:9": {
@@ -46,14 +51,17 @@
         "partialMatch:1": 1,
         "autoConsume:1": 0,
         "groupDetect:1": 0,
-        "ignoreNBT:1": 0,
+        "ignoreNBT:1": 1,
         "index:3": 0,
         "consume:1": 0,
         "requiredItems:9": {
           "0:10": {
-            "id:8": "thermalexpansion:augment",
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "twilightforest:lamp_of_cinders",
             "Count:3": 1,
-            "Damage:2": 512,
+            "Damage:2": 0,
             "OreDict:8": ""
           }
         },
@@ -66,15 +74,22 @@
         "index:3": 0,
         "rewards:9": {
           "0:10": {
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
-            "id:8": "bq_standard:loot_chest",
-            "Count:3": 1,
-            "Damage:2": 101,
+            "id:8": "twilightforest:charm_of_life_2",
+            "Count:3": 4,
+            "Damage:2": 0,
             "OreDict:8": ""
           }
         }
+      },
+      "1:10": {
+        "hideBlockIcon:1": 1,
+        "rewardID:8": "bq_standard:command",
+        "asScript:1": 1,
+        "description:8": "Grant Twilight Forest progress",
+        "viaPlayer:1": 0,
+        "index:3": 1,
+        "title:8": "bq_standard.reward.command",
+        "command:8": "/advancement grant VAR_NAME only twilightforest:progress_troll"
       }
     }
   }

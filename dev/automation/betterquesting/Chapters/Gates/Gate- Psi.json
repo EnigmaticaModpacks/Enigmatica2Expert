@@ -26,7 +26,7 @@
         "visibility:8": "ALWAYS",
         "simultaneous:1": 0,
         "icon:10": {
-          "id:8": "psi:programmer",
+          "id:8": "psi:cad_assembler",
           "Count:3": 1,
           "Damage:2": 0,
           "OreDict:8": ""
@@ -38,8 +38,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "Gate: Psi",
-        "desc:8": "There is no PSI chapter, but Botania give access to the mod."
+        "name:8": "bq.quest833.name",
+        "desc:8": "bq.quest833.desc"
       }
     },
     "tasks:9": {
@@ -52,7 +52,7 @@
         "consume:1": 0,
         "requiredItems:9": {
           "0:10": {
-            "id:8": "psi:programmer",
+            "id:8": "psi:cad_assembler",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""

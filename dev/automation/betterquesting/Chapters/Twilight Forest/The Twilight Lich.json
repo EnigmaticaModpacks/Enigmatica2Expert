@@ -1,7 +1,7 @@
 {
   "_index": "863:10",
   "_pos": {
-    "_index": "2:10",
+    "_index": "5:10",
     "_data": {
       "sizeX:3": 24,
       "x:3": 64,
@@ -37,8 +37,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "Twilight Forest Quest ### lich",
-        "desc:8": "TF quest Description"
+        "name:8": "bq.quest863.name",
+        "desc:8": "bq.quest863.desc"
       }
     },
     "tasks:9": {
@@ -66,15 +66,9 @@
         "index:3": 0,
         "rewards:9": {
           "0:10": {
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
-            "id:8": "bq_standard:loot_chest",
-            "Count:3": 1,
-            "tag:10": {
-              "hideLootInfo:1": 1
-            },
-            "Damage:2": 100,
+            "id:8": "twilightforest:twilight_sapling",
+            "Count:3": 4,
+            "Damage:2": 4,
             "OreDict:8": ""
           }
         }

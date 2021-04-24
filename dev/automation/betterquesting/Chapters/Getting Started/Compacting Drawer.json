@@ -4,8 +4,8 @@
     "_index": "33:10",
     "_data": {
       "sizeX:3": 24,
-      "x:3": 36,
-      "y:3": 36,
+      "x:3": 39,
+      "y:3": 157,
       "id:3": 782,
       "sizeY:3": 24
     }
@@ -38,8 +38,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "Compacting Drawer",
-        "desc:8": "Quickly convert items between Storage Blocks and their original form, like §lNuggets§r, §lIngots§r, §lBlocks§r.\nAlso, converts Slime between colors."
+        "name:8": "bq.quest782.name",
+        "desc:8": "bq.quest782.desc"
       }
     },
     "tasks:9": {

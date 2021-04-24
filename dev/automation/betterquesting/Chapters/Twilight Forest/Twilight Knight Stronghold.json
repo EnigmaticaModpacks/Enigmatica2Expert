@@ -1,19 +1,19 @@
 {
-  "_index": "862:10",
+  "_index": "864:10",
   "_pos": {
-    "_index": "1:10",
+    "_index": "6:10",
     "_data": {
       "sizeX:3": 24,
-      "x:3": 32,
-      "y:3": 0,
-      "id:3": 862,
+      "x:3": 96,
+      "y:3": -40,
+      "id:3": 864,
       "sizeY:3": 24
     }
   },
   "_data": {
-    "questID:3": 862,
+    "questID:3": 864,
     "preRequisites:11": [
-      861
+      863
     ],
     "properties:10": {
       "betterquesting:10": {
@@ -27,7 +27,7 @@
         "icon:10": {
           "id:8": "twilightforest:trophy",
           "Count:3": 1,
-          "Damage:2": 0,
+          "Damage:2": 4,
           "OreDict:8": ""
         },
         "globalshare:1": 0,
@@ -37,8 +37,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "Twilight Forest Quest ### naga",
-        "desc:8": "TF quest Description"
+        "name:8": "bq.quest864.name",
+        "desc:8": "bq.quest864.desc"
       }
     },
     "tasks:9": {
@@ -53,7 +53,7 @@
           "0:10": {
             "id:8": "twilightforest:trophy",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 4,
             "OreDict:8": ""
           }
         },
@@ -69,12 +69,9 @@
             "ForgeCaps:10": {
               "astralsorcery:cap_item_amulet_holder:10": {}
             },
-            "id:8": "bq_standard:loot_chest",
+            "id:8": "twilightforest:block_and_chain",
             "Count:3": 1,
-            "tag:10": {
-              "hideLootInfo:1": 1
-            },
-            "Damage:2": 100,
+            "Damage:2": 0,
             "OreDict:8": ""
           }
         }
@@ -87,7 +84,7 @@
         "viaPlayer:1": 0,
         "index:3": 1,
         "title:8": "bq_standard.reward.command",
-        "command:8": "/advancement grant VAR_NAME only twilightforest:progress_naga"
+        "command:8": "/advancement grant VAR_NAME only twilightforest:progress_knights"
       }
     }
   }

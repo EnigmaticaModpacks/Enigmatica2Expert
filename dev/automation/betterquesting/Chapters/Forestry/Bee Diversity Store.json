@@ -40,8 +40,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "Bee Diversity Store",
-        "desc:8": "Combine bees with Store to gather time.\nCombine with §bTime In Bottle§r to transfer time to bottle."
+        "name:8": "bq.quest791.name",
+        "desc:8": "bq.quest791.desc"
       }
     },
     "tasks:9": {

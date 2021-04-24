@@ -5,7 +5,7 @@
     "properties:10": {
       "betterquesting:10": {
         "visibility:8": "ALWAYS",
-        "name:8": "Bragging Rights",
+        "name:8": "bq.chapter20.name",
         "icon:10": {
           "ForgeCaps:10": {
             "astralsorcery:cap_item_amulet_holder:10": {}
@@ -17,7 +17,7 @@
         },
         "bg_image:8": "",
         "bg_size:3": 256,
-        "desc:8": "Completing this chapter means winning the modpack!"
+        "desc:8": "bq.chapter20.desc"
       }
     },
     "order:3": 23

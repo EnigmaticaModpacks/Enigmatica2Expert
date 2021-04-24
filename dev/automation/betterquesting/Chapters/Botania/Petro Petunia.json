@@ -41,8 +41,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "Petro Petunia",
-        "desc:8": "Generate mana from burnable fluids"
+        "name:8": "bq.quest783.name",
+        "desc:8": "bq.quest783.desc"
       }
     },
     "tasks:9": {
