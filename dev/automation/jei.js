@@ -1,37 +1,72 @@
-const {write, config, naturalSort, injectInFile} = require('../lib/utils.js')
+/*
+
+Gather information about 'purged' items from crafttweaker.log
+to add them into `jei/itemBlacklist.cfg`
+
+Also, sorts and cleanup jei blacklist
+
+*/
+
+const {write, config, naturalSort, injectInFile, csv} = require('../lib/utils.js')
 const fs = require('fs')
 const _ = require('lodash')
 
 write('  📑 jei.js, ')
 
-const purged = [...
-fs.readFileSync('crafttweaker.log','utf8')
-  .matchAll(/^\[INITIALIZATION\]\[CLIENT\]\[INFO\] purged: (.*)$/gm)
-]
-.map(m=>m[1])
-.map(s=>s.match(/<([^>]+)>(.withTag\(.*\))?/)[1])
-write(purged.length + ' is purged, ')
-
 const jeiPath = 'jei/itemBlacklist.cfg'
-let itemBlacklist = config(jeiPath).advanced.itemBlacklist
-const filtered = purged
-.filter(s=>!itemBlacklist.includes(s) && !s.includes('*'))
-.map(l=>{
-  const [__, source, meta] = l.match(/([^:]+:[^:]+)(:\d+)?/)
-  return source + (meta || ':0')
+const merged = [
+  ...config(jeiPath).advanced.itemBlacklist, 
+  ...getPurged()
+]
+const pure = []
+const removedMods = new Set()
+const modList = csv('config/tellme/mod-list-csv.csv')
+merged.forEach((s,i)=>{
+  // If duplicate
+  const next = merged.slice(i+1)
+  if (next.includes(s)) return
+
+  // If wildcarded
+  const def = s.match(/([^:]+:[^:]+)[:;].+/)?.[1]
+  if (def && merged.includes(def)) return
+
+  // If mod not exist
+  const mod = s.split(':')[0]
+  if (!['fluid','gas'].includes(mod) && !modList.some(m=>m.ModID===mod)) {
+    removedMods.add(mod)
+    return
+  }
+
+  pure.push(s)
 })
 
-write(itemBlacklist.length + ' was, ')
-
-itemBlacklist.push(...filtered)
-itemBlacklist = _.uniq(itemBlacklist.sort(naturalSort))
-
-write(itemBlacklist.length + ' becomes, ')
+pure.sort(naturalSort)
+write(', becomes: ' + pure.length)
+write(', removed mods:', [...removedMods])
 
 injectInFile('config/'+jeiPath, 
   '    S:itemBlacklist <\n',
   '\n     >',
-  itemBlacklist.map(s=>'        '+s).join('\n')
+  pure.map(s=>'        '+s).join('\n')
 )
 
-write(filtered.length, 'new items blacklisted\n')
+
+function getPurged() {
+  const totalPurged = [...fs.readFileSync('crafttweaker.log','utf8')
+    .matchAll(/^\[INITIALIZATION\]\[CLIENT\]\[INFO\] purged: (.*)$/gm)
+  ]
+  write(' total purged found:', totalPurged.length)
+
+  const purgedItems = totalPurged
+  .map(m=>m[1])
+  .map(s=>s.match(/<([^>]+)>(.withTag\(.*\))?/)[1])
+  .filter(s=>s)
+  .map(s=>{
+    let [__, source, meta] = s.match(/([^:]+:[^:]+)(:(\d+|\*))?/)
+    if(meta===':*') meta = ''
+    return source + (meta ?? ':0')
+  })
+
+  write(' after filtered:', purgedItems.length)
+  return purgedItems
+}

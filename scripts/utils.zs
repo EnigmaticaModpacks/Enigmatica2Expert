@@ -108,10 +108,17 @@ zenClass Utils {
           ore.remove(item);
         }
       }
-      furnace.remove(<*>, item);
-      recipes.remove(item);
-      // removeAndHide(item);
-      log('purged: ' ~ item.commandString);
+
+      val isAny = 
+        item.definition.subItems.length == 1 ||
+        (item.damage == 0 && item.isDamageable);
+      val actualItem = isAny ? item.anyDamage() : item;
+      furnace.remove(<*>, actualItem);
+      furnace.remove(actualItem);
+      recipes.remove(actualItem);
+
+      if (!DEBUG) continue;
+      log('purged: ' ~ actualItem.commandString);
     }
   }
 

@@ -10,6 +10,7 @@ const fs = require('fs')
 const path = require('path')
 const replace = require('replace-in-file')
 const del = require('del')
+const csvParseSync = require('csv-parse/lib/sync')
 
 
 /*=============================================
@@ -200,3 +201,5 @@ function config(cfgPath) {
 module.exports.config = config
 
 module.exports.naturalSort = (a,b)=>a.localeCompare(b, undefined, {numeric: true, sensitivity: 'base'})
+
+module.exports.csv = filename=>csvParseSync(fs.readFileSync(filename,'utf8'), {columns: true})
