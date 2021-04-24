@@ -1,6 +1,7 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.ic2.ScrapBox;
+import mods.ic2.MetalFormer.addRollingRecipe as addRollingRecipe;
 #modloaded ic2
 
 
@@ -279,3 +280,23 @@ craft.remake(<ic2:solar_helmet>, ["pretty",
   "C": <ore:itemCopperCable>, # Insulated Copper Cable
   "I": <conarm:helmet_core>.withTag({Material: "iron"}), # Iron Helmet Core
 });
+
+# Crafts from ini file
+addRollingRecipe(<advancedrocketry:productplate:1>, <ore:ingotTitaniumIridium>);
+addRollingRecipe(<advancedrocketry:productplate>  , <ore:ingotTitaniumAluminide>);
+addRollingRecipe(<immersiveengineering:metal:35>  , <ore:ingotUranium>);
+addRollingRecipe(<libvulpes:productplate:3>       , <ore:ingotSilicon>);
+addRollingRecipe(<libvulpes:productplate:7>       , <ore:ingotTitanium>);
+addRollingRecipe(<redstonearsenal:material:128>   , <ore:ingotElectrumFlux>);
+addRollingRecipe(<thermalfoundation:material:322> , <ore:ingotSilver>);
+addRollingRecipe(<thermalfoundation:material:324> , <ore:ingotAluminum>);
+addRollingRecipe(<thermalfoundation:material:325> , <ore:ingotNickel>);
+addRollingRecipe(<thermalfoundation:material:326> , <ore:ingotPlatinum>);
+addRollingRecipe(<thermalfoundation:material:327> , <ore:ingotIridium>);
+addRollingRecipe(<thermalfoundation:material:328> , <ore:ingotMithril>);
+addRollingRecipe(<thermalfoundation:material:353> , <ore:ingotElectrum>);
+addRollingRecipe(<thermalfoundation:material:354> , <ore:ingotInvar>);
+addRollingRecipe(<thermalfoundation:material:356> , <ore:ingotConstantan>);
+addRollingRecipe(<thermalfoundation:material:357> , <ore:ingotSignalum>);
+addRollingRecipe(<thermalfoundation:material:358> , <ore:ingotLumium>);
+addRollingRecipe(<thermalfoundation:material:359> , <ore:ingotEnderium>);
