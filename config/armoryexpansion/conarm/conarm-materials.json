@@ -639,6 +639,28 @@
   },
   {
     "coreMaterialStats": {
+      "durability": 18.0,
+      "defense": 21.9375,
+      "materialType": "core"
+    },
+    "platesMaterialStats": {
+      "durability": 0.0,
+      "modifier": 22.235294,
+      "toughness": 0.0,
+      "materialType": "plates"
+    },
+    "trimMaterialStats": {
+      "extraDurability": 0.0,
+      "materialType": "trim"
+    },
+    "identifier": "wolframium",
+    "color": -13683926,
+    "type": "METAL",
+    "castable": false,
+    "craftable": true
+  },
+  {
+    "coreMaterialStats": {
       "durability": 71.0,
       "defense": 34.65,
       "materialType": "core"
@@ -831,6 +853,28 @@
     },
     "identifier": "xu_magical_wood",
     "color": -131160,
+    "type": "METAL",
+    "castable": false,
+    "craftable": true
+  },
+  {
+    "coreMaterialStats": {
+      "durability": 36.0,
+      "defense": 27.0,
+      "materialType": "core"
+    },
+    "platesMaterialStats": {
+      "durability": 0.0,
+      "modifier": 22.235294,
+      "toughness": 0.0,
+      "materialType": "plates"
+    },
+    "trimMaterialStats": {
+      "extraDurability": 0.0,
+      "materialType": "trim"
+    },
+    "identifier": "endorium",
+    "color": -14976149,
     "type": "METAL",
     "castable": false,
     "craftable": true

@@ -15,6 +15,7 @@
     "previewLines": false,
     "previewLineThickness": 2,
     "enableRandomDisplayTick": false,
-    "uploadToVBODirectly": true
+    "uploadToVBODirectly": true,
+    "showTooltip": true
   }
 }
