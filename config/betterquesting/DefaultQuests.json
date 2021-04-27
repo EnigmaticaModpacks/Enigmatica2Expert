@@ -29,7 +29,7 @@
             "tag:10": {
               "tier:3": 4,
               "mekData:10": {
-                "energyStored:6": 1.7976931348623157E308
+                "energyStored:6": 1.7976931348623157e+308
               }
             },
             "Damage:2": 0,
@@ -64,7 +64,7 @@
               "tag:10": {
                 "tier:3": 4,
                 "mekData:10": {
-                  "energyStored:6": 1.7976931348623157E308
+                  "energyStored:6": 1.7976931348623157e+308
                 }
               },
               "Damage:2": 0,
@@ -2663,7 +2663,7 @@
           "viaPlayer:1": 0,
           "index:3": 0,
           "title:8": "bq_standard.reward.command",
-          "command:8": "/say VAR_NAME has obtained the Nature\u0027s Ruin!"
+          "command:8": "/say VAR_NAME has obtained the Nature's Ruin!"
         }
       }
     },
@@ -3238,7 +3238,7 @@
                     "Count:1": 1,
                     "tag:10": {
                       "StatsOriginal:10": {
-                        "AttackSpeedMultiplier:5": 1.0,
+                        "AttackSpeedMultiplier:5": 1,
                         "MiningSpeed:5": 1.5,
                         "FreeModifiers:3": 3,
                         "Durability:3": 61,
@@ -3246,7 +3246,7 @@
                         "Attack:5": 2.5
                       },
                       "Stats:10": {
-                        "AttackSpeedMultiplier:5": 1.0,
+                        "AttackSpeedMultiplier:5": 1,
                         "MiningSpeed:5": 1.5,
                         "FreeModifiers:3": 2,
                         "Durability:3": 61,
@@ -3331,7 +3331,7 @@
                         "FluidName:8": "cider",
                         "Amount:3": 1000,
                         "Tag:10": {
-                          "Quality:5": 1.0
+                          "Quality:5": 1
                         }
                       }
                     },
@@ -4002,7 +4002,7 @@
           "viaPlayer:1": 0,
           "index:3": 0,
           "title:8": "bq_standard.reward.command",
-          "command:8": "/say VAR_NAME has obtained the Creative Builder\u0027s Wand!"
+          "command:8": "/say VAR_NAME has obtained the Creative Builder's Wand!"
         }
       }
     },
@@ -4256,26 +4256,26 @@
               "Count:3": 1,
               "tag:10": {
                 "StatsOriginal:10": {
-                  "AttackSpeedMultiplier:5": 1.0,
-                  "MiningSpeed:5": 2.0,
-                  "DrawSpeed:5": 1.0,
+                  "AttackSpeedMultiplier:5": 1,
+                  "MiningSpeed:5": 2,
+                  "DrawSpeed:5": 1,
                   "FreeModifiers:3": 3,
-                  "ProjectileBonusDamage:5": 0.0,
+                  "ProjectileBonusDamage:5": 0,
                   "Durability:3": 35,
                   "HarvestLevel:3": 3,
-                  "Attack:5": 2.0,
-                  "Range:5": 1.0
+                  "Attack:5": 2,
+                  "Range:5": 1
                 },
                 "Stats:10": {
-                  "AttackSpeedMultiplier:5": 1.0,
-                  "MiningSpeed:5": 2.0,
-                  "DrawSpeed:5": 1.0,
+                  "AttackSpeedMultiplier:5": 1,
+                  "MiningSpeed:5": 2,
+                  "DrawSpeed:5": 1,
                   "FreeModifiers:3": 5,
-                  "ProjectileBonusDamage:5": 0.0,
+                  "ProjectileBonusDamage:5": 0,
                   "Durability:3": 35,
                   "HarvestLevel:3": 3,
-                  "Attack:5": 2.0,
-                  "Range:5": 1.0
+                  "Attack:5": 2,
+                  "Range:5": 1
                 },
                 "Special:10": {
                   "Categories:9": {
@@ -4340,7 +4340,7 @@
               "Count:3": 1,
               "tag:10": {
                 "StatsOriginal:10": {
-                  "AttackSpeedMultiplier:5": 1.0,
+                  "AttackSpeedMultiplier:5": 1,
                   "MiningSpeed:5": 6.8,
                   "FreeModifiers:3": 3,
                   "Durability:3": 631,
@@ -4348,7 +4348,7 @@
                   "Attack:5": 3.5
                 },
                 "Stats:10": {
-                  "AttackSpeedMultiplier:5": 1.0,
+                  "AttackSpeedMultiplier:5": 1,
                   "MiningSpeed:5": 6.8,
                   "FreeModifiers:3": 2,
                   "Durability:3": 631,
@@ -4622,15 +4622,15 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 1,
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "thermalfoundation:ore",
-              "Count:3": 2,
-              "Damage:2": 2,
-              "OreDict:8": "oreSilver"
+              "id:8": "actuallyadditions:block_misc",
+              "Count:3": 1,
+              "Damage:2": 3,
+              "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -13546,7 +13546,7 @@
               "Count:3": 1,
               "tag:10": {
                 "mekData:10": {
-                  "energyStored:6": 60000.0
+                  "energyStored:6": 60000
                 }
               },
               "Damage:2": 0,
@@ -19426,8 +19426,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Augment: Clastic Deposition",
-          "desc:8": "Allows for an igneous extruder to produce sedimentary rock, such as sand or gravel."
+          "name:8": "bq.quest250.name",
+          "desc:8": "bq.quest250.desc"
         }
       },
       "tasks:9": {
@@ -25271,8 +25271,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Utilities",
-          "desc:8": "Quest Branch for simple Utilities"
+          "name:8": "bq.quest330.name",
+          "desc:8": "bq.quest330.desc"
         }
       },
       "tasks:9": {
@@ -32979,8 +32979,8 @@
             "Count:3": 1,
             "tag:10": {
               "StatsOriginal:10": {
-                "AttackSpeedMultiplier:5": 1.0,
-                "MiningSpeed:5": 12.0,
+                "AttackSpeedMultiplier:5": 1,
+                "MiningSpeed:5": 12,
                 "FreeModifiers:3": 3,
                 "Durability:3": 861,
                 "HarvestLevel:3": 7,
@@ -32991,12 +32991,12 @@
                 "Name:8": "InfiHarvester"
               },
               "Stats:10": {
-                "AttackSpeedMultiplier:5": 1.0,
-                "MiningSpeed:5": 999999.0,
+                "AttackSpeedMultiplier:5": 1,
+                "MiningSpeed:5": 999999,
                 "FreeModifiers:3": 0,
                 "Durability:3": 999999,
                 "HarvestLevel:3": 7,
-                "Attack:5": 999999.0
+                "Attack:5": 999999
               },
               "Special:10": {
                 "Categories:9": {
@@ -33094,7 +33094,7 @@
               "Count:3": 1,
               "tag:10": {
                 "StatsOriginal:10": {
-                  "AttackSpeedMultiplier:5": 1.0,
+                  "AttackSpeedMultiplier:5": 1,
                   "MiningSpeed:5": 3.75,
                   "FreeModifiers:3": 3,
                   "Durability:3": 143,
@@ -33102,7 +33102,7 @@
                   "Attack:5": 2.175
                 },
                 "Stats:10": {
-                  "AttackSpeedMultiplier:5": 1.0,
+                  "AttackSpeedMultiplier:5": 1,
                   "MiningSpeed:5": 3.75,
                   "FreeModifiers:3": 2,
                   "Durability:3": 143,
@@ -41296,11 +41296,11 @@
               "Profile_0:10": {
                 "bowFireArrow:1": 0,
                 "bowZoomModifier:3": 0,
-                "bowShockPower:6": 0.0,
+                "bowShockPower:6": 0,
                 "bowArrowSpeedModifier:3": 0,
                 "bowAutoFire:1": 0,
-                "bowExplosionPower:6": 0.0,
-                "bowArrowDamage:6": 2.0
+                "bowExplosionPower:6": 0,
+                "bowArrowDamage:6": 2
               }
             },
             "Damage:2": 0,
@@ -41334,11 +41334,11 @@
                 "Profile_0:10": {
                   "bowFireArrow:1": 0,
                   "bowZoomModifier:3": 0,
-                  "bowShockPower:6": 0.0,
+                  "bowShockPower:6": 0,
                   "bowArrowSpeedModifier:3": 0,
                   "bowAutoFire:1": 0,
-                  "bowExplosionPower:6": 0.0,
-                  "bowArrowDamage:6": 2.0
+                  "bowExplosionPower:6": 0,
+                  "bowArrowDamage:6": 2
                 }
               },
               "Damage:2": 0,
@@ -57482,8 +57482,8 @@
             "id:8": "appliedenergistics2:matter_cannon",
             "Count:3": 1,
             "tag:10": {
-              "internalMaxPower:6": 200000.0,
-              "internalCurrentPower:6": 200000.0
+              "internalMaxPower:6": 200000,
+              "internalCurrentPower:6": 200000
             },
             "Damage:2": 0,
             "OreDict:8": ""
@@ -59656,7 +59656,7 @@
             "ForgeData:10": {},
             "RelativeAABB:9": {
               "0:6": -0.30000001192092896,
-              "1:6": 0.0,
+              "1:6": 0,
               "2:6": -0.30000001192092896,
               "3:6": 0.30000001192092896,
               "4:6": 1.9500000476837158,
@@ -59664,31 +59664,31 @@
             },
             "Attributes:9": {
               "0:10": {
-                "Base:6": -2.0,
+                "Base:6": -2,
                 "Name:8": "tc.mobmod"
               },
               "1:10": {
-                "Base:6": 0.0,
+                "Base:6": 0,
                 "Name:8": "tc.mobmodtaint"
               },
               "2:10": {
-                "Base:6": 1.0,
+                "Base:6": 1,
                 "Name:8": "potioncore.projectileDamage"
               },
               "3:10": {
-                "Base:6": 1.0,
+                "Base:6": 1,
                 "Name:8": "potioncore.magicDamage"
               },
               "4:10": {
-                "Base:6": 1.0,
+                "Base:6": 1,
                 "Name:8": "potioncore.jumpHeight"
               },
               "5:10": {
-                "Base:6": 1.0,
+                "Base:6": 1,
                 "Name:8": "potioncore.damageResistance"
               },
               "6:10": {
-                "Base:6": 0.0,
+                "Base:6": 0,
                 "Name:8": "potioncore.magicShielding"
               },
               "7:10": {
@@ -59696,19 +59696,19 @@
                 "Name:8": "tconevo.flightSpeed"
               },
               "8:10": {
-                "Base:6": 1.0,
+                "Base:6": 1,
                 "Name:8": "tconevo.damageTaken"
               },
               "9:10": {
-                "Base:6": 1.0,
+                "Base:6": 1,
                 "Name:8": "tconevo.evasionChance"
               },
               "10:10": {
-                "Base:6": 400.0,
+                "Base:6": 400,
                 "Name:8": "generic.maxHealth"
               },
               "11:10": {
-                "Base:6": 0.0,
+                "Base:6": 0,
                 "Name:8": "generic.knockbackResistance"
               },
               "12:10": {
@@ -59716,31 +59716,31 @@
                 "Name:8": "generic.movementSpeed"
               },
               "13:10": {
-                "Base:6": 12.0,
+                "Base:6": 12,
                 "Name:8": "generic.armor"
               },
               "14:10": {
-                "Base:6": 0.0,
+                "Base:6": 0,
                 "Name:8": "generic.armorToughness"
               },
               "15:10": {
-                "Base:6": 1.0,
+                "Base:6": 1,
                 "Name:8": "forge.swimSpeed"
               },
               "16:10": {
-                "Base:6": 128.0,
+                "Base:6": 128,
                 "Name:8": "generic.followRange"
               },
               "17:10": {
-                "Base:6": 4.0,
+                "Base:6": 4,
                 "Name:8": "generic.attackDamage"
               }
             },
             "Invulnerable:1": 0,
             "FallFlying:1": 0,
             "PortalCooldown:3": 0,
-            "AbsorptionAmount:5": 0.0,
-            "FallDistance:5": 0.0,
+            "AbsorptionAmount:5": 0,
+            "FallDistance:5": 0,
             "DeathTime:2": 0,
             "ForgeCaps:10": {
               "plethora:disableai:10": {},
@@ -59750,25 +59750,25 @@
               },
               "nuclearcraft:capability_entity_rads:10": {
                 "consumed:1": 0,
-                "radawayBuffer:6": 0.0,
+                "radawayBuffer:6": 0,
                 "shouldWarn:1": 0,
                 "radXUsed:1": 0,
-                "poisonBuffer:6": 0.0,
-                "radXCooldown:6": 0.0,
+                "poisonBuffer:6": 0,
+                "radXCooldown:6": 0,
                 "radXWoreOff:1": 0,
-                "radawayCooldown:6": 0.0,
-                "recentRadawayAddition:6": 0.0,
-                "maxRads:6": 20000.0,
-                "radawayBufferSlow:6": 0.0,
-                "externalRadiationResistance:6": 0.0,
-                "totalRads:6": 0.0,
+                "radawayCooldown:6": 0,
+                "recentRadawayAddition:6": 0,
+                "maxRads:6": 20000,
+                "radawayBufferSlow:6": 0,
+                "externalRadiationResistance:6": 0,
+                "totalRads:6": 0,
                 "setFromMaxHealth:1": 1,
-                "radiationLevel:6": 0.0,
-                "recentPoisonAddition:6": 0.0,
-                "recentRadXAddition:6": 0.0,
+                "radiationLevel:6": 0,
+                "recentPoisonAddition:6": 0,
+                "recentRadXAddition:6": 0,
                 "radiationImmunityStage:1": 0,
-                "internalRadiationResistance:6": 0.0,
-                "radiationImmunityTime:6": 0.0
+                "internalRadiationResistance:6": 0,
+                "radiationImmunityTime:6": 0
               },
               "tinkertoolleveling:entityxp:9": {},
               "dsurround:data:10": {
@@ -59816,13 +59816,13 @@
             "PersistenceRequired:1": 0,
             "id:8": "rats:black_death",
             "Motion:9": {
-              "0:6": 0.0,
-              "1:6": 0.0,
-              "2:6": 0.0
+              "0:6": 0,
+              "1:6": 0,
+              "2:6": 0
             },
             "Leashed:1": 0,
             "UUIDLeast:4": -7629121435670479000,
-            "Health:5": 400.0,
+            "Health:5": 400,
             "CloudsSummoned:3": 0,
             "LeftHanded:1": 0,
             "Air:2": 300,
@@ -59832,7 +59832,7 @@
             "RatsSummoned:3": 0,
             "Rotation:9": {
               "0:5": 3.1356926,
-              "1:5": 0.0
+              "1:5": 0
             },
             "UpdateBlocked:1": 0,
             "HandItems:9": {
@@ -59847,9 +59847,9 @@
             },
             "UUIDMost:4": 5830572876798709000,
             "Pos:9": {
-              "0:6": 0.0,
-              "1:6": 0.0,
-              "2:6": 0.0
+              "0:6": 0,
+              "1:6": 0,
+              "2:6": 0
             },
             "Fire:2": -1,
             "ArmorItems:9": {
@@ -59862,7 +59862,7 @@
             "HurtTime:2": 0,
             "SurgeAABB:9": {
               "0:6": -0.30000001192092896,
-              "1:6": 0.0,
+              "1:6": 0,
               "2:6": -0.30000001192092896,
               "3:6": 0.30000001192092896,
               "4:6": 1.9500000476837158,
@@ -60422,7 +60422,7 @@
             "id:8": "ic2:nano_chestplate",
             "Count:3": 1,
             "tag:10": {
-              "charge:6": 1000000.0
+              "charge:6": 1000000
             },
             "Damage:2": 0,
             "OreDict:8": ""
@@ -60453,7 +60453,7 @@
               "id:8": "ic2:nano_helmet",
               "Count:3": 1,
               "tag:10": {
-                "charge:6": 1000000.0
+                "charge:6": 1000000
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -60465,7 +60465,7 @@
               "id:8": "ic2:nano_chestplate",
               "Count:3": 1,
               "tag:10": {
-                "charge:6": 1000000.0
+                "charge:6": 1000000
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -60477,7 +60477,7 @@
               "id:8": "ic2:nano_leggings",
               "Count:3": 1,
               "tag:10": {
-                "charge:6": 1000000.0
+                "charge:6": 1000000
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -60489,7 +60489,7 @@
               "id:8": "ic2:nano_boots",
               "Count:3": 1,
               "tag:10": {
-                "charge:6": 1000000.0
+                "charge:6": 1000000
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -60510,7 +60510,7 @@
               "id:8": "ic2:nano_saber",
               "Count:3": 1,
               "tag:10": {
-                "charge:6": 160000.0
+                "charge:6": 160000
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -60720,7 +60720,7 @@
             "id:8": "ic2:quantum_chestplate",
             "Count:3": 1,
             "tag:10": {
-              "charge:6": 1.0E7
+              "charge:6": 10000000
             },
             "Damage:2": 0,
             "OreDict:8": ""
@@ -60751,7 +60751,7 @@
               "id:8": "ic2:quantum_helmet",
               "Count:3": 1,
               "tag:10": {
-                "charge:6": 1.0E7
+                "charge:6": 10000000
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -60763,7 +60763,7 @@
               "id:8": "ic2:quantum_chestplate",
               "Count:3": 1,
               "tag:10": {
-                "charge:6": 1.0E7
+                "charge:6": 10000000
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -60775,7 +60775,7 @@
               "id:8": "ic2:quantum_leggings",
               "Count:3": 1,
               "tag:10": {
-                "charge:6": 1.0E7
+                "charge:6": 10000000
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -60787,7 +60787,7 @@
               "id:8": "ic2:quantum_boots",
               "Count:3": 1,
               "tag:10": {
-                "charge:6": 1.0E7
+                "charge:6": 10000000
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -60824,15 +60824,15 @@
               "Count:3": 1,
               "tag:10": {
                 "StatsOriginal:10": {
-                  "AttackSpeedMultiplier:5": 1.0,
-                  "MiningSpeed:5": 6.0,
+                  "AttackSpeedMultiplier:5": 1,
+                  "MiningSpeed:5": 6,
                   "FreeModifiers:3": 3,
                   "Durability:3": 711,
                   "HarvestLevel:3": 10,
                   "Attack:5": 6.8
                 },
                 "Stats:10": {
-                  "AttackSpeedMultiplier:5": 1.0,
+                  "AttackSpeedMultiplier:5": 1,
                   "MiningSpeed:5": 6.1609993,
                   "FreeModifiers:3": 2,
                   "Durability:3": 733,
@@ -66779,7 +66779,7 @@
             "Count:3": 1,
             "tag:10": {
               "InfinityEnergy:3": 2147483647,
-              "internalCurrentPower:6": 1600000.0
+              "internalCurrentPower:6": 1600000
             },
             "Damage:2": 0,
             "OreDict:8": ""
@@ -67111,8 +67111,8 @@
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {
-                  "AS_Amulet_HolderLeast:4": -8469918875462925012,
-                  "AS_Amulet_HolderMost:4": -5260415147165141885
+                  "AS_Amulet_HolderLeast:4": -8469918875462925000,
+                  "AS_Amulet_HolderMost:4": -5260415147165142000
                 }
               },
               "id:8": "twilightforest:magic_map",
@@ -67970,8 +67970,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Advanced Analyzer",
-          "desc:8": "Much faster than usual Analyzer block"
+          "name:8": "bq.quest872.name",
+          "desc:8": "bq.quest872.desc"
         }
       },
       "tasks:9": {
@@ -68039,8 +68039,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Diamond",
-          "desc:8": "Diamond Modifier for Tinker\u0027s tools now obtained only with §bEmpowered Diamatine"
+          "name:8": "bq.quest873.name",
+          "desc:8": "bq.quest873.desc"
         }
       },
       "tasks:9": {
@@ -68105,8 +68105,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Toolkits",
-          "desc:8": "Toolkits works like §6Creative Modifiers§r but can be installed only once.\n\nThere is §0§64§r tiers of Toolkit Modifiers."
+          "name:8": "bq.quest874.name",
+          "desc:8": "bq.quest874.desc"
         }
       },
       "tasks:9": {
@@ -68184,8 +68184,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Phytogenic Insolator",
-          "desc:8": "Grows and multiplies plants using water, fertilizer and simulated sunlight."
+          "name:8": "bq.quest875.name",
+          "desc:8": "bq.quest875.desc"
         }
       },
       "tasks:9": {
@@ -68266,8 +68266,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Sapling Infuser",
-          "desc:8": "Allows for a phytogenic insolator to grow trees."
+          "name:8": "bq.quest876.name",
+          "desc:8": "bq.quest876.desc"
         }
       },
       "tasks:9": {
@@ -68334,8 +68334,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Rich Biomass",
-          "desc:8": "Can be processed into biocrude, which can then be processed into grassoline."
+          "name:8": "bq.quest877.name",
+          "desc:8": "bq.quest877.desc"
         }
       },
       "tasks:9": {
@@ -68402,8 +68402,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Thermal Logistics",
-          "desc:8": "This mod adds smart crafting to Thermal Dynamics using just two new servos: the §2Requester§r and the §2Crafter§r. \n\n§2Requesters§r are smart the smart version of the retriever from Thermal Dynamics. If they need an item not available in the network, they can request a crafter to make it for them.\n\n§2Crafters§r are attached to machines that can make an item using inputs. In the crafter, you specify what items go in and what items go out. Crafters can be linked together if a machine outputs on a different side than where it takes its input.\n\n"
+          "name:8": "bq.quest878.name",
+          "desc:8": "bq.quest878.desc"
         }
       },
       "tasks:9": {
@@ -68471,8 +68471,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Mini-Gate: Thermal Expansion",
-          "desc:8": "This mini-gate opens several simple Thermal Expansion machines."
+          "name:8": "bq.quest879.name",
+          "desc:8": "bq.quest879.desc"
         }
       },
       "tasks:9": {
@@ -68502,8 +68502,8 @@
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {
-                  "AS_Amulet_HolderLeast:4": -8469918875462925012,
-                  "AS_Amulet_HolderMost:4": -5260415147165141885
+                  "AS_Amulet_HolderLeast:4": -8469918875462925000,
+                  "AS_Amulet_HolderMost:4": -5260415147165142000
                 }
               },
               "id:8": "thermalexpansion:satchel",
@@ -68574,8 +68574,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Mini-Gate: Dynamos",
-          "desc:8": "This mini-gate opens Thermal Expansion §6Dynamos"
+          "name:8": "bq.quest880.name",
+          "desc:8": "bq.quest880.desc"
         }
       },
       "tasks:9": {
@@ -68645,8 +68645,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Stoneburnt",
-          "desc:8": "Tier1 EU2 crafting ingredient"
+          "name:8": "bq.quest881.name",
+          "desc:8": "bq.quest881.desc"
         }
       },
       "tasks:9": {
@@ -68704,8 +68704,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Quartzburnt",
-          "desc:8": "Tier2 EU2 crafting ingredient"
+          "name:8": "bq.quest882.name",
+          "desc:8": "bq.quest882.desc"
         }
       },
       "tasks:9": {
@@ -68763,8 +68763,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Blue Quartz",
-          "desc:8": "Tier3 EU2 crafting ingredient"
+          "name:8": "bq.quest883.name",
+          "desc:8": "bq.quest883.desc"
         }
       },
       "tasks:9": {
@@ -68829,8 +68829,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Rainbow Generator Half",
-          "desc:8": "One of two..."
+          "name:8": "bq.quest884.name",
+          "desc:8": "bq.quest884.desc"
         }
       },
       "tasks:9": {
@@ -68895,8 +68895,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Rainbow Generator Half",
-          "desc:8": "One of two..."
+          "name:8": "bq.quest885.name",
+          "desc:8": "bq.quest885.desc"
         }
       },
       "tasks:9": {
@@ -68934,7 +68934,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "issilent:1": 0,
+          "issilent:1": 1,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "lockedprogress:1": 1,
           "tasklogic:8": "AND",
@@ -68954,8 +68954,8 @@
           "autoclaim:1": 1,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Generators, Top part",
-          "desc:8": ""
+          "name:8": "bq.quest886.name",
+          "desc:8": "bq.quest886.desc"
         }
       },
       "tasks:9": {},
@@ -68968,7 +68968,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "issilent:1": 0,
+          "issilent:1": 1,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "lockedprogress:1": 1,
           "tasklogic:8": "AND",
@@ -68988,8 +68988,8 @@
           "autoclaim:1": 1,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Generators, Bottom part",
-          "desc:8": ""
+          "name:8": "bq.quest887.name",
+          "desc:8": "bq.quest887.desc"
         }
       },
       "tasks:9": {},
@@ -69002,7 +69002,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
-          "issilent:1": 0,
+          "issilent:1": 1,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "lockedprogress:1": 1,
           "tasklogic:8": "AND",
@@ -69022,8 +69022,8 @@
           "autoclaim:1": 1,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "XU2 Generators",
-          "desc:8": ""
+          "name:8": "bq.quest888.name",
+          "desc:8": "bq.quest888.desc"
         }
       },
       "tasks:9": {},
@@ -69063,7 +69063,7 @@
             "Count:3": 1,
             "tag:10": {
               "StatsOriginal:10": {
-                "AttackSpeedMultiplier:5": 1.0,
+                "AttackSpeedMultiplier:5": 1,
                 "LaserGunPower:5": 2.5,
                 "MiningSpeed:5": 6.75,
                 "FreeModifiers:3": 3,
@@ -69071,11 +69071,11 @@
                 "HarvestLevel:3": 8,
                 "LaserGunEnergy:3": 120000,
                 "Attack:5": 2.5,
-                "LaserGunRange:5": 20.0
+                "LaserGunRange:5": 20
               },
               "LockCooldown:3": 0,
               "Stats:10": {
-                "AttackSpeedMultiplier:5": 1.0,
+                "AttackSpeedMultiplier:5": 1,
                 "LaserGunPower:5": 2.5,
                 "MiningSpeed:5": 6.75,
                 "FreeModifiers:3": 2,
@@ -69083,7 +69083,7 @@
                 "HarvestLevel:3": 8,
                 "LaserGunEnergy:3": 120000,
                 "Attack:5": 2.5,
-                "LaserGunRange:5": 20.0
+                "LaserGunRange:5": 20
               },
               "Special:10": {
                 "Categories:9": {
@@ -69142,8 +69142,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Laser Gun",
-          "desc:8": "Laser Gun is OP tinker\u0027s weapon.\n\n- Uses 55000 RF for shot.\n- Laser Medium craftable (cant be made in Part Builder)\n\nParts:\n\n§5Battery§r - Only affects rf capacity but it uses power really high so it\u0027s not affect much.\n§5Handle§r - Only affects durability.\n§5Pipe piece§r - Only affects durability.\n§5Laser medium§r - Affects range and power."
+          "name:8": "bq.quest889.name",
+          "desc:8": "bq.quest889.desc"
         }
       },
       "tasks:9": {
@@ -69175,7 +69175,7 @@
               "Count:3": 1,
               "tag:10": {
                 "StatsOriginal:10": {
-                  "AttackSpeedMultiplier:5": 1.0,
+                  "AttackSpeedMultiplier:5": 1,
                   "LaserGunPower:5": 2.5,
                   "MiningSpeed:5": 6.75,
                   "FreeModifiers:3": 3,
@@ -69183,11 +69183,11 @@
                   "HarvestLevel:3": 8,
                   "LaserGunEnergy:3": 120000,
                   "Attack:5": 2.5,
-                  "LaserGunRange:5": 20.0
+                  "LaserGunRange:5": 20
                 },
                 "LockCooldown:3": 0,
                 "Stats:10": {
-                  "AttackSpeedMultiplier:5": 1.0,
+                  "AttackSpeedMultiplier:5": 1,
                   "LaserGunPower:5": 2.5,
                   "MiningSpeed:5": 6.75,
                   "FreeModifiers:3": 2,
@@ -69195,7 +69195,7 @@
                   "HarvestLevel:3": 8,
                   "LaserGunEnergy:3": 120000,
                   "Attack:5": 2.5,
-                  "LaserGunRange:5": 20.0
+                  "LaserGunRange:5": 20
                 },
                 "Special:10": {
                   "Categories:9": {
@@ -69299,8 +69299,8 @@
           "autoclaim:1": 0,
           "ismain:1": 1,
           "repeat_relative:1": 1,
-          "name:8": "Pressurized Tank",
-          "desc:8": "Holds 50,000 buckets of liquid"
+          "name:8": "bq.quest890.name",
+          "desc:8": "bq.quest890.desc"
         }
       },
       "tasks:9": {
@@ -69370,8 +69370,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Bags",
-          "desc:8": "Storage Item.\n\nTo toggle the mode of a Backpack\u0027s features \u0027Use\u0027 it while \u0027Sneaking\u0027\n\n§9Normal§r\nAutomatically picks-up assigned drops\n\n§6Lock§r (lock icon)\nItems may be inserted into a Backpack manually, but it does not pick up drops\n\n§eResupply§r (yellow arrow down icon)\nAutomatically resupplies items in the Players hotbar or inventory from the Backpack\n\n§2Receiving§r (green arrow up icon)\nIn this Mode \u0027Using\u0027 a chest while \u0027Sneaking\u0027 will transfer assigned Blocks/ Items from the chest to the Backpack"
+          "name:8": "bq.quest891.name",
+          "desc:8": "bq.quest891.desc"
         }
       },
       "tasks:9": {
@@ -69441,8 +69441,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Condition Overload",
-          "desc:8": "This mod adds one thing and one thing only: §5The Wicked Jewel§r.\n\nWhen added as modifier, the weapon gains the trait \"§6Condition Overload§r\".\nThe damage of the weapon is increased by §ehow many negative/harmful potion effects§r that are on the target (and by default, if the target is on fire.)"
+          "name:8": "bq.quest892.name",
+          "desc:8": "bq.quest892.desc"
         }
       },
       "tasks:9": {
@@ -69511,8 +69511,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Addon: §6Industrial Wires§r",
-          "desc:8": "Wires from this addont can convert energy between §4RF§r and §3EU§r.\n\nSee Engineers Manual to understand how to craft wires."
+          "name:8": "bq.quest893.name",
+          "desc:8": "bq.quest893.desc"
         }
       },
       "tasks:9": {
@@ -76370,7 +76370,7 @@
       "editmode:1": 0,
       "livesMax:4": 10,
       "livesdef:3": 3,
-      "home_anchor_y:5": 3.0,
+      "home_anchor_y:5": 3,
       "livesDef:4": 3,
       "home_anchor_x:5": 0.5,
       "livesmax:3": 10,

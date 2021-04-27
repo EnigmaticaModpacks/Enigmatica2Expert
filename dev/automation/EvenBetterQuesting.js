@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 const glob = require('glob')
-const { execSync } = require('child_process')
+const {isPathHasChanged} = require('../lib/utils.js')
 
 
 module.exports.init = init
@@ -10,12 +10,12 @@ function init(argv = process.argv) {
   else parse()
 }
 
-
-const diff = execSync('git diff HEAD dev/automation/betterquesting').toString().trim()
-if(!diff) init()
-else {
+if(isPathHasChanged('dev/automation/betterquesting')) {
   console.log(' ❌📖 EvenBetterQuesting error: splitted folder have changes!')
+  process.exit(1)
 }
+
+init()
 
 /*
 

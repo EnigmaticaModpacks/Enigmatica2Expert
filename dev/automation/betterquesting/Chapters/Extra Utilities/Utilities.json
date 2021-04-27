@@ -37,8 +37,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "Utilities",
-        "desc:8": "Quest Branch for simple Utilities"
+        "name:8": "bq.quest330.name",
+        "desc:8": "bq.quest330.desc"
       }
     },
     "tasks:9": {

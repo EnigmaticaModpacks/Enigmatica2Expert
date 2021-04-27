@@ -37,8 +37,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "Condition Overload",
-        "desc:8": "This mod adds one thing and one thing only: §5The Wicked Jewel§r.\n\nWhen added as modifier, the weapon gains the trait \"§6Condition Overload§r\".\nThe damage of the weapon is increased by §ehow many negative/harmful potion effects§r that are on the target (and by default, if the target is on fire.)"
+        "name:8": "bq.quest892.name",
+        "desc:8": "bq.quest892.desc"
       }
     },
     "tasks:9": {

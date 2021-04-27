@@ -37,8 +37,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "Thermal Logistics",
-        "desc:8": "This mod adds smart crafting to Thermal Dynamics using just two new servos: the §2Requester§r and the §2Crafter§r. \n\n§2Requesters§r are smart the smart version of the retriever from Thermal Dynamics. If they need an item not available in the network, they can request a crafter to make it for them.\n\n§2Crafters§r are attached to machines that can make an item using inputs. In the crafter, you specify what items go in and what items go out. Crafters can be linked together if a machine outputs on a different side than where it takes its input.\n\n"
+        "name:8": "bq.quest878.name",
+        "desc:8": "bq.quest878.desc"
       }
     },
     "tasks:9": {

@@ -44,8 +44,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "Rainbow Generator Half",
-        "desc:8": "One of two..."
+        "name:8": "bq.quest884.name",
+        "desc:8": "bq.quest884.desc"
       }
     },
     "tasks:9": {

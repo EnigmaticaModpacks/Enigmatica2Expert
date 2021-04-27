@@ -36,8 +36,8 @@
         "autoclaim:1": 0,
         "repeat_relative:1": 1,
         "ismain:1": 0,
-        "name:8": "Addon: §6Industrial Wires§r",
-        "desc:8": "Wires from this addont can convert energy between §4RF§r and §3EU§r.\n\nSee Engineers Manual to understand how to craft wires."
+        "name:8": "bq.quest893.name",
+        "desc:8": "bq.quest893.desc"
       }
     },
     "tasks:9": {

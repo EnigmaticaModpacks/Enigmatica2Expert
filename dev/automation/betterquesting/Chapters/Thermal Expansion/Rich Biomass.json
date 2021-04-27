@@ -37,8 +37,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "Rich Biomass",
-        "desc:8": "Can be processed into biocrude, which can then be processed into grassoline."
+        "name:8": "bq.quest877.name",
+        "desc:8": "bq.quest877.desc"
       }
     },
     "tasks:9": {

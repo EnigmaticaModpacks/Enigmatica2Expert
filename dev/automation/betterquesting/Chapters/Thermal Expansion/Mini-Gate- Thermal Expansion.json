@@ -38,8 +38,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "Mini-Gate: Thermal Expansion",
-        "desc:8": "This mini-gate opens several simple Thermal Expansion machines."
+        "name:8": "bq.quest879.name",
+        "desc:8": "bq.quest879.desc"
       }
     },
     "tasks:9": {

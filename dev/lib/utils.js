@@ -11,6 +11,7 @@ const path = require('path')
 const replace = require('replace-in-file')
 const del = require('del')
 const csvParseSync = require('csv-parse/lib/sync')
+const { execSync } = require('child_process')
 
 
 /*=============================================
@@ -203,3 +204,5 @@ module.exports.config = config
 module.exports.naturalSort = (a,b)=>a.localeCompare(b, undefined, {numeric: true, sensitivity: 'base'})
 
 module.exports.csv = filename=>csvParseSync(fs.readFileSync(filename,'utf8'), {columns: true})
+
+module.exports.isPathHasChanged = pPath=>!!execSync('git diff HEAD '+pPath).toString().trim()

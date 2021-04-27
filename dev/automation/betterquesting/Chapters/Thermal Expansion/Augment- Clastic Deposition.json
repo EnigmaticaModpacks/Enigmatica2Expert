@@ -37,8 +37,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "Augment: Clastic Deposition",
-        "desc:8": "Allows for an igneous extruder to produce sedimentary rock, such as sand or gravel."
+        "name:8": "bq.quest250.name",
+        "desc:8": "bq.quest250.desc"
       }
     },
     "tasks:9": {

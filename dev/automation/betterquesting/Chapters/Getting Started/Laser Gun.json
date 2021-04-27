@@ -123,8 +123,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "Laser Gun",
-        "desc:8": "Laser Gun is OP tinker's weapon.\n\n- Uses 55000 RF for shot.\n- Laser Medium craftable (cant be made in Part Builder)\n\nParts:\n\n§5Battery§r - Only affects rf capacity but it uses power really high so it's not affect much.\n§5Handle§r - Only affects durability.\n§5Pipe piece§r - Only affects durability.\n§5Laser medium§r - Affects range and power."
+        "name:8": "bq.quest889.name",
+        "desc:8": "bq.quest889.desc"
       }
     },
     "tasks:9": {

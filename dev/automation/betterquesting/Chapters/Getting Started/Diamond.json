@@ -38,8 +38,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "Diamond",
-        "desc:8": "Diamond Modifier for Tinker's tools now obtained only with §bEmpowered Diamatine"
+        "name:8": "bq.quest873.name",
+        "desc:8": "bq.quest873.desc"
       }
     },
     "tasks:9": {

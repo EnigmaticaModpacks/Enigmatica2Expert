@@ -37,8 +37,8 @@
         "autoclaim:1": 0,
         "ismain:1": 1,
         "repeat_relative:1": 1,
-        "name:8": "Pressurized Tank",
-        "desc:8": "Holds 50,000 buckets of liquid"
+        "name:8": "bq.quest890.name",
+        "desc:8": "bq.quest890.desc"
       }
     },
     "tasks:9": {

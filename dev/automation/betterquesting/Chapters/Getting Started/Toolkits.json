@@ -38,8 +38,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "Toolkits",
-        "desc:8": "Toolkits works like §6Creative Modifiers§r but can be installed only once.\n\nThere is §0§64§r tiers of Toolkit Modifiers."
+        "name:8": "bq.quest874.name",
+        "desc:8": "bq.quest874.desc"
       }
     },
     "tasks:9": {

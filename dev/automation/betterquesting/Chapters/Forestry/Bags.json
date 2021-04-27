@@ -40,8 +40,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "Bags",
-        "desc:8": "Storage Item.\n\nTo toggle the mode of a Backpack's features 'Use' it while 'Sneaking'\n\n§9Normal§r\nAutomatically picks-up assigned drops\n\n§6Lock§r (lock icon)\nItems may be inserted into a Backpack manually, but it does not pick up drops\n\n§eResupply§r (yellow arrow down icon)\nAutomatically resupplies items in the Players hotbar or inventory from the Backpack\n\n§2Receiving§r (green arrow up icon)\nIn this Mode 'Using' a chest while 'Sneaking' will transfer assigned Blocks/ Items from the chest to the Backpack"
+        "name:8": "bq.quest891.name",
+        "desc:8": "bq.quest891.desc"
       }
     },
     "tasks:9": {

@@ -37,8 +37,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "Quartzburnt",
-        "desc:8": "Tier2 EU2 crafting ingredient"
+        "name:8": "bq.quest882.name",
+        "desc:8": "bq.quest882.desc"
       }
     },
     "tasks:9": {

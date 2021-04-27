@@ -67,15 +67,15 @@
         "partialMatch:1": 1,
         "autoConsume:1": 0,
         "groupDetect:1": 0,
-        "ignoreNBT:1": 0,
+        "ignoreNBT:1": 1,
         "index:3": 1,
         "consume:1": 0,
         "requiredItems:9": {
           "0:10": {
-            "id:8": "thermalfoundation:ore",
-            "Count:3": 2,
-            "Damage:2": 2,
-            "OreDict:8": "oreSilver"
+            "id:8": "actuallyadditions:block_misc",
+            "Count:3": 1,
+            "Damage:2": 3,
+            "OreDict:8": ""
           }
         },
         "taskID:8": "bq_standard:retrieval"

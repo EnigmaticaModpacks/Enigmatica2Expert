@@ -51,8 +51,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "Phytogenic Insolator",
-        "desc:8": "Grows and multiplies plants using water, fertilizer and simulated sunlight."
+        "name:8": "bq.quest875.name",
+        "desc:8": "bq.quest875.desc"
       }
     },
     "tasks:9": {
