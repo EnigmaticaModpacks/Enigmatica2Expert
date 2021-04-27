@@ -483,8 +483,8 @@ scripts.wrap.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:component:8> , [<anim
 
 # Some troll items can be disassembled on crafting table
 # Using public function compressIt() to make Preston's blocks
-recipes.addShapeless("Disassemble troll column"       , <extrautils2:compressedcobblestone> * 4               , [<iceandfire:troll_weapon.column>]);
-recipes.addShapeless("Disassemble troll column_forest", compressIt(<minecraft:mossy_cobblestone>      , 1) * 4, [<iceandfire:troll_weapon.column_forest>]);
-recipes.addShapeless("Disassemble troll column_frost" , compressIt(<quark:biome_cobblestone:1>        , 1) * 4, [<iceandfire:troll_weapon.column_frost>]);
-recipes.addShapeless("Disassemble troll trunk"        , compressIt(<rustic:log:1>                     , 1) * 4, [<iceandfire:troll_weapon.trunk>]);
-recipes.addShapeless("Disassemble troll trunk_frost"  , compressIt(<integrateddynamics:menril_log>    , 1) * 4, [<iceandfire:troll_weapon.trunk_frost>]);
+recipes.addShapeless("Disassemble troll column"       , <extrautils2:compressedcobblestone> * 4                , [<iceandfire:troll_weapon.column>]);
+recipes.addShapeless("Disassemble troll column_forest", <additionalcompression:cobblestonemossy_compressed> * 4, [<iceandfire:troll_weapon.column_forest>]);
+recipes.addShapeless("Disassemble troll column_frost" , compressIt(<quark:biome_cobblestone:1>        , 1) * 4 , [<iceandfire:troll_weapon.column_frost>]);
+recipes.addShapeless("Disassemble troll trunk"        , <twilightforest:giant_log>                             , [<iceandfire:troll_weapon.trunk>]);
+recipes.addShapeless("Disassemble troll trunk_frost"  , compressIt(<integrateddynamics:menril_log>    , 1) * 4 , [<iceandfire:troll_weapon.trunk_frost>]);

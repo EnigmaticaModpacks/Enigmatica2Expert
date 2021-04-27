@@ -15,7 +15,7 @@ scripts.process.melt(<mechanics:heavy_ingot>,  <liquid:heavy_metal> * 144,  "No 
 scripts.process.melt(<mechanics:heavy_block>,  <liquid:heavy_metal> * 1296, "No Exceptions");
 
 # heavy crushing block
-val compressed1 = compressIt(<mechanics:heavy_block>, 1);
+val compressed1 = <mechanics:heavy_block>;
 val compressed2 = compressIt(<actuallyadditions:block_misc:2>, 2);
 recipes.addShaped(<mechanics:crushing_block>, [
   [compressed1, compressed1],
