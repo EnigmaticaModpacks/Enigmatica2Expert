@@ -1,3 +1,25 @@
+/*
+
+This script lookup entries in config/tool_progression/block_overwrites.cfg
+to find if they can use wildcard
+
+Example:
+
+    S:"biomesoplenty:gem_block:0"=pickaxe=4
+    S:"biomesoplenty:gem_block:1"=pickaxe=4
+    S:"biomesoplenty:gem_block:2"=pickaxe=4
+    S:"biomesoplenty:gem_block:3"=pickaxe=4
+    S:"biomesoplenty:gem_block:4"=pickaxe=4
+    S:"biomesoplenty:gem_block:5"=pickaxe=4
+    S:"biomesoplenty:gem_block:6"=pickaxe=4
+    S:"biomesoplenty:gem_block:7"=pickaxe=4
+
+Becomes:
+
+    S:"biomesoplenty:gem_block:*"=pickaxe=4
+
+*/
+
 const {escapeRegex} = require('../lib/utils.js')
 const fs = require('fs')
 

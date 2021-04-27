@@ -31,6 +31,7 @@ const modsToCopy = globs([
   '!mods/Extended Item Information*.jar',
   '!mods/Satako*.jar',
   '!mods/probe-*.jar',
+  '!mods/advancementscreenshot_*.jar',
 ])
 
 
@@ -55,6 +56,9 @@ const removeGlob = [
   '*',
   '.gitignore',
   'scripts/debug.zs',
+  'config/tellme',
+
+  // Folders to keep
   '!config',
   '!minemenu',
   '!patchouli_books',
@@ -64,6 +68,12 @@ const removeGlob = [
   '!schematics',
   '!scripts',
   '!structures',
+
+  // Mod-depended files
+  'config/Extended item information.cfg',
+  'config/satako.cfg',
+  'config/Probe.cfg',
+  'config/advancementscreenshot.cfg',
 ]
 
 // Change Working Directory
@@ -79,7 +89,6 @@ function addToPack(fPath, dirPath = './') {
 write('Copy mods ')
 modsToCopy.forEach((fPath, i) => {
   if(i%50==0) write('.')
-  // zip.addFile(fPath, path.join('mods', path.basename(fPath)))
   addToPack(fPath, 'mods')
 })
 end()

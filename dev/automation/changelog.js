@@ -93,36 +93,46 @@ async function init() {
     ['✏️', 'Recipes'],
     ['📖', 'Quest Book'],
     ['🌍', 'World Generation'],
-    ['🔵', 'Mods', [
-      ['🟢', 'New Mods'],
-      ['🔴', 'Removed Mods'],
-      ['🟡', 'Mods changes'],
-      ['☢️', 'NuclearCraft'],
-      ['⛽', 'Advanced Generators'],
-      ['⬛', 'Bedrock Ore'],
-      ['🌠', 'Astral Sorcery'],
-      ['🌡️', 'Thermal Expansion'],
-      ['🌿', 'Patchouli'],
-      ['🎲', 'Random Things'],
-      ['🏪', 'Requious Fracto'],
-      ['🐀', 'Rats'],
-      ['🐉', 'Ice and Fire'],
-      ['🐝', 'Forestry'],
-      ['👨‍🏭', 'Mekanism'],
-      ['💍', 'Baubles'],
-      ['📑', 'Tips'],
-      ['🔨', 'Tinker\'s Construct'],
-      ['🖥', 'OpenComputers'],
-      ['🖽', 'Little Tiles'],
-      ['🗃️', 'Loot tables'],
-      ['🦯', 'Thaumcraft'],
-      ['🛢️', 'Immersive Engineering'],
-      ['🛹', 'Integrated Dynamics'],
-      ['🟨', 'Recurrent Complex'],
-      ['🅱', 'Block Drops'],
-      ['🛸', 'EnderIO'],
-      ['🔩', 'RFTools'],
-    ]],
+    ['🔵', 'Mods', `
+      🟢 New Mods
+      🔴 Removed Mods
+      🟡 Mods changes
+      ☢️ NuclearCraft
+      ⛽ Advanced Generators
+      ⬛ Bedrock Ore
+      🌠 Astral Sorcery
+      🌡️ Thermal Expansion
+      🌿 Patchouli
+      🎲 Random Things
+      🏪 Requious Fracto
+      🐀 Rats
+      🐉 Ice and Fire
+      🐝 Forestry
+      👨‍🏭 Mekanism
+      💍 Baubles
+      📑 Tips
+      🔨 Tinker's Construct
+      🖥 OpenComputers
+      🖽 Little Tiles
+      🗃️ Loot tables
+      🦯 Thaumcraft
+      🛢️ Immersive Engineering
+      🛹 Integrated Dynamics
+      🟨 Recurrent Complex
+      🅱 Block Drops
+      🛸 EnderIO
+      🔩 RFTools
+      🩸 Blood Magic
+      🧬 Draconic Evolution
+      ▦ ExNihilio
+      🌾 Farming For Blockheads
+      💼 Actually Additionals
+      🧃 Open Blocks
+      📭 Storage Drawers
+      🔌 Industrial Craft 2
+      ⚙️ JAOPCA
+      🗂️ Additional Compression
+    `.trim().split('\n').map(l=>l.trim().split(' ')).map(([c,...r])=>[c, r.join(' ')])],
     ['🔄', 'Misc Changes', [
       ['🧱', 'Technical'],
       ['🚧', 'Develop'],

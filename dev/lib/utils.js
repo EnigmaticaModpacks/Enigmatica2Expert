@@ -41,7 +41,7 @@ module.exports.readdir = function(folderPath) {
 }
 
 var escapeRegex = function(string) {
-  return string.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')
+  return string.replace(/[/\\^$*+?.()|[\]{}]/g, '\\$&')
 }
 module.exports.escapeRegex = escapeRegex
 

@@ -44,7 +44,7 @@ function formatTable(rows) {
 }
 
 async function init() {
-  const diff = getModsIds('../Enigmatica 2 Expert/minecraftinstance.json', 'minecraftinstance.json')
+  const diff = getModsIds('../Enigmatica 2 Expert - E2E/minecraftinstance.json', 'minecraftinstance.json')
 
   console.log(`  💟 Asking Curseforge API for ${diff.union.length} mods ...`)
 
@@ -76,6 +76,7 @@ async function init() {
 module.exports.getModsIds = getModsIds
 module.exports.init = init
 
+if(process.argv?.[0]?.split('\\').pop()==='node.exe') init()
 
 /*
 
