@@ -553,3 +553,6 @@ craft.remake(<quark:obsidian_pressure_plate>, ["AA","AA"], {A: <ore:obsidian>});
 
 # Conflict recipes
 recipes.removeByRecipeName("quark:basalt_1");
+
+# Defined with portal spread
+recipes.removeShaped(<minecraft:red_nether_brick>);

@@ -299,14 +299,14 @@ craft.remake(<extrautils2:lawsword>, ["O","O","⌃"], coreToolIngrs);
 
 # [Compound Bow] from [Blue Quartz][+2]
 craft.remake(<extrautils2:compoundbow>, ["pretty",
-  "O   s",
-  "  ⌃  ",
+  "  O s",
+  "O ⌃  ",
   "s    "], coreToolIngrs
 );
 
 # [Fire Axe] from [Blue Quartz][+2]
 craft.remake(<extrautils2:fireaxe>, ["pretty",
   "O ⌃",
-  "  #",
+  "O #",
   "  #"], coreToolIngrs
 );

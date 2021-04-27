@@ -34,7 +34,7 @@ for i, inputArr in crushingInMachines {
 	val crushed    = inputArr[1];
 	scripts.wrap.thermalexpansion.Pulverizer.addRecipe(crushed, normal, 2000);
 
-	if(inputArr.length > 2) {
+	if(inputArr.length > 3) {
 		val compressed = inputArr[2];
 		val crushComps = inputArr[3];
 		utils.compact(normal, compressed);
@@ -42,7 +42,7 @@ for i, inputArr in crushingInMachines {
 		scripts.process.crush(compressed, crushed * 9, "only: SagMill", null, null);
 
 		if(inputArr.length > 4) {
-			scripts.process.crush(compressed, inputArr[4], "only: SagMill Pulverizer", null, null);
+			scripts.process.crush(crushComps, inputArr[4] * 9, "only: SagMill Pulverizer", null, null);
 		}
 	}
 }

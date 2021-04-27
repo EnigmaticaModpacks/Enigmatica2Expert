@@ -57,7 +57,7 @@ ${filtered.join('\n')}`
 })()
 )*/
 
-# Total Furnace recipes registered: 936
+# Total Furnace recipes registered: 928
 # Filtered: 70
 infinFurnace(<actuallyadditions:block_misc:3>, <actuallyadditions:item_misc:5>);
 infinFurnace(<actuallyadditions:item_dust:3>, <minecraft:emerald>);
@@ -93,7 +93,6 @@ infinFurnace(<betteranimalsplus:turkey_leg_raw>, <betteranimalsplus:turkey_leg_c
 infinFurnace(<betteranimalsplus:turkey_raw>, <betteranimalsplus:turkey_cooked>);
 infinFurnace(<bigreactors:dustblutonium>, <bigreactors:ingotblutonium>);
 infinFurnace(<bigreactors:dustcyanite>, <bigreactors:ingotcyanite>);
-#infinFurnace(<bigreactors:dustgraphite>, <bigreactors:ingotgraphite>);
 infinFurnace(<bigreactors:dustludicrite>, <bigreactors:ingotludicrite>);
 infinFurnace(<bigreactors:duststeel>, <thermalfoundation:material:160>);
 infinFurnace(<bigreactors:dustyellorium>, <immersiveengineering:metal:5>);
@@ -149,6 +148,7 @@ infinFurnace(<enderio:item_material:25>, <minecraft:gold_ingot>);
 #infinFurnace(<enderio:item_material:27>, <thermalfoundation:material:129>);
 infinFurnace(<enderio:item_material:74>, <enderio:item_alloy_ingot:7>);
 infinFurnace(<enderio:item_owl_egg>, <betteranimalsplus:fried_egg>);
+infinFurnace(<endreborn:block_wolframium_ore:*>, <endreborn:item_ingot_wolframium>);
 infinFurnace(<exnihilocreatio:item_material:2>, <exnihilocreatio:item_cooked_silkworm>);
 infinFurnace(<exnihilocreatio:item_ore_ardite:2>, <tconstruct:ingots:1>);
 infinFurnace(<exnihilocreatio:item_ore_cobalt:2>, <tconstruct:ingots>);
@@ -361,7 +361,7 @@ infinFurnace(<jaopca:item_crushedastralstarmetal>, <astralsorcery:itemcraftingco
 infinFurnace(<jaopca:item_crushedboron>, <nuclearcraft:ingot:5>);
 infinFurnace(<jaopca:item_crushedcobalt>, <tconstruct:ingots>);
 infinFurnace(<jaopca:item_crusheddraconium>, <draconicevolution:draconium_ingot>);
-infinFurnace(<jaopca:item_crushediridium>, <thermalfoundation:material:135>);
+infinFurnace(<jaopca:item_crushediridium>, <ic2:misc_resource:1>);
 infinFurnace(<jaopca:item_crushedlithium>, <nuclearcraft:ingot:6>);
 infinFurnace(<jaopca:item_crushedmagnesium>, <nuclearcraft:ingot:7>);
 infinFurnace(<jaopca:item_crushedmithril>, <thermalfoundation:material:136>);
@@ -374,7 +374,7 @@ infinFurnace(<jaopca:item_crushedpurifiedastralstarmetal>, <astralsorcery:itemcr
 infinFurnace(<jaopca:item_crushedpurifiedboron>, <nuclearcraft:ingot:5>);
 infinFurnace(<jaopca:item_crushedpurifiedcobalt>, <tconstruct:ingots>);
 infinFurnace(<jaopca:item_crushedpurifieddraconium>, <draconicevolution:draconium_ingot>);
-infinFurnace(<jaopca:item_crushedpurifiediridium>, <thermalfoundation:material:135>);
+infinFurnace(<jaopca:item_crushedpurifiediridium>, <ic2:misc_resource:1>);
 infinFurnace(<jaopca:item_crushedpurifiedlithium>, <nuclearcraft:ingot:6>);
 infinFurnace(<jaopca:item_crushedpurifiedmagnesium>, <nuclearcraft:ingot:7>);
 infinFurnace(<jaopca:item_crushedpurifiedmithril>, <thermalfoundation:material:136>);
@@ -448,7 +448,7 @@ infinFurnace(<jaopca:item_dirtygemdimensionalshard>, <rftools:dimensional_shard>
 infinFurnace(<jaopca:item_dirtygemdraconium>, <draconicevolution:draconium_ingot> * 12);
 infinFurnace(<jaopca:item_dirtygememerald>, <minecraft:emerald> * 18);
 infinFurnace(<jaopca:item_dirtygemgold>, <minecraft:gold_ingot> * 12);
-infinFurnace(<jaopca:item_dirtygemiridium>, <thermalfoundation:material:135> * 12);
+infinFurnace(<jaopca:item_dirtygemiridium>, <ic2:misc_resource:1> * 12);
 infinFurnace(<jaopca:item_dirtygemiron>, <minecraft:iron_ingot> * 12);
 infinFurnace(<jaopca:item_dirtygemlapis>, <minecraft:dye:4> * 64);
 infinFurnace(<jaopca:item_dirtygemlead>, <thermalfoundation:material:131> * 12);
@@ -594,22 +594,14 @@ infinFurnace(<minecraft:fish:1>, <minecraft:cooked_fish:1>);
 infinFurnace(<minecraft:fish>, <minecraft:cooked_fish>);
 infinFurnace(<minecraft:gold_ore:*>, <minecraft:gold_ingot>);
 infinFurnace(<minecraft:golden_axe:*>, <minecraft:gold_nugget>);
-infinFurnace(<minecraft:golden_boots:*>, <minecraft:gold_nugget>);
-infinFurnace(<minecraft:golden_chestplate:*>, <minecraft:gold_nugget>);
-infinFurnace(<minecraft:golden_helmet:*>, <minecraft:gold_nugget>);
 infinFurnace(<minecraft:golden_hoe:*>, <minecraft:gold_nugget>);
 infinFurnace(<minecraft:golden_horse_armor:*>, <minecraft:gold_nugget>);
-infinFurnace(<minecraft:golden_leggings:*>, <minecraft:gold_nugget>);
 infinFurnace(<minecraft:golden_pickaxe:*>, <minecraft:gold_nugget>);
 infinFurnace(<minecraft:golden_shovel:*>, <minecraft:gold_nugget>);
 infinFurnace(<minecraft:golden_sword:*>, <minecraft:gold_nugget>);
 infinFurnace(<minecraft:iron_axe:*>, <minecraft:iron_nugget>);
-infinFurnace(<minecraft:iron_boots:*>, <minecraft:iron_nugget>);
-infinFurnace(<minecraft:iron_chestplate:*>, <minecraft:iron_nugget>);
-infinFurnace(<minecraft:iron_helmet:*>, <minecraft:iron_nugget>);
 infinFurnace(<minecraft:iron_hoe:*>, <minecraft:iron_nugget>);
 infinFurnace(<minecraft:iron_horse_armor:*>, <minecraft:iron_nugget>);
-infinFurnace(<minecraft:iron_leggings:*>, <minecraft:iron_nugget>);
 infinFurnace(<minecraft:iron_ore:*>, <minecraft:iron_ingot>);
 infinFurnace(<minecraft:iron_pickaxe:*>, <minecraft:iron_nugget>);
 infinFurnace(<minecraft:iron_shovel:*>, <minecraft:iron_nugget>);
@@ -835,7 +827,7 @@ infinFurnace(<nuclearcraft:uranium:9>, <nuclearcraft:uranium:8>);
 infinFurnace(<nuclearcraft:uranium:11>, <nuclearcraft:uranium:10>);
 infinFurnace(<opencomputers:material:2>, <opencomputers:material:4>);
 infinFurnace(<quark:biome_cobblestone:2>, <minecraft:stone>);
-infinFurnace(<quark:crab_leg:*>, <quark:cooked_crab_leg>);
+#infinFurnace(<quark:crab_leg:*>, <quark:cooked_crab_leg>);
 infinFurnace(<quark:frog_leg:*>, <quark:cooked_frog_leg>);
 infinFurnace(<quark:trowel>, <minecraft:iron_nugget>);
 infinFurnace(<rats:marbled_cheese_brick:*>, <rats:marbled_cheese_brick_cracked>);
@@ -910,8 +902,9 @@ infinFurnace(<rats:rat_nugget_ore:96>.withTag({OreItem: {id: "biomesoplenty:gem_
 infinFurnace(<rats:rat_nugget_ore:97>.withTag({OreItem: {id: "nuclearcraft:ore", Count: 1 as byte, Damage: 3 as short}, IngotItem: {id: "nuclearcraft:ingot", Count: 1 as byte, Damage: 3 as short}}), <nuclearcraft:ingot:3>);
 infinFurnace(<rats:rat_nugget_ore:98>.withTag({OreItem: {id: "thermalfoundation:ore", Count: 1 as byte, Damage: 1 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1 as byte, Damage: 129 as short}}), <thermalfoundation:material:129>);
 infinFurnace(<rats:rat_nugget_ore:99>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 3 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 3 as short}}), <biomesoplenty:gem:3>);
-infinFurnace(<rats:rat_nugget_ore:100>.withTag({OreItem: {id: "immersiveengineering:ore", Count: 1 as byte, Damage: 5 as short}, IngotItem: {id: "immersiveengineering:metal", Count: 1 as byte, Damage: 5 as short}}), <immersiveengineering:metal:5>);
-infinFurnace(<rats:rat_nugget_ore:101>.withTag({OreItem: {id: "bigreactors:oreyellorite", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "bigreactors:ingotyellorium", Count: 1 as byte, Damage: 0 as short}}), <immersiveengineering:metal:5>);
+infinFurnace(<rats:rat_nugget_ore:100>.withTag({OreItem: {id: "endreborn:block_wolframium_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "endreborn:item_ingot_wolframium", Count: 1 as byte, Damage: 0 as short}}), <endreborn:item_ingot_wolframium>);
+infinFurnace(<rats:rat_nugget_ore:101>.withTag({OreItem: {id: "immersiveengineering:ore", Count: 1 as byte, Damage: 5 as short}, IngotItem: {id: "immersiveengineering:metal", Count: 1 as byte, Damage: 5 as short}}), <immersiveengineering:metal:5>);
+infinFurnace(<rats:rat_nugget_ore:102>.withTag({OreItem: {id: "bigreactors:oreyellorite", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "bigreactors:ingotyellorium", Count: 1 as byte, Damage: 0 as short}}), <immersiveengineering:metal:5>);
 infinFurnace(<rats:rat_nugget_ore>.withTag({OreItem: {id: "thermalfoundation:ore", Count: 1 as byte, Damage: 4 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1 as byte, Damage: 132 as short}}), <thermalfoundation:material:132>);
 infinFurnace(<rats:raw_rat:*>, <rats:cooked_rat>);
 infinFurnace(<rustic:dust_tiny_iron>, <minecraft:iron_nugget>);
@@ -942,7 +935,6 @@ infinFurnace(<tconstruct:slime_congealed:1>, <tconstruct:slime_channel:1> * 3);
 infinFurnace(<tconstruct:slime_congealed:2>, <tconstruct:slime_channel:2> * 3);
 infinFurnace(<tconstruct:slime_congealed:3>, <tconstruct:slime_channel:3> * 3);
 infinFurnace(<tconstruct:slime_congealed:4>, <tconstruct:slime_channel:4> * 3);
-infinFurnace(<tconstruct:slime_congealed:5>, <tconstruct:slime_channel:5> * 3);
 infinFurnace(<tconstruct:slime_congealed>, <tconstruct:slime_channel> * 3);
 infinFurnace(<tconstruct:soil:1>, <tconstruct:materials:9>);
 infinFurnace(<tconstruct:soil:2>, <tconstruct:materials:10>);

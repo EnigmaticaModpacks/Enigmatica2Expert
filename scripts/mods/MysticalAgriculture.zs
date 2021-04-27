@@ -578,3 +578,6 @@ scripts.process.solution(
 	[<liquid:base_essence> * 16],
 	[0.5, 0.05, 0.05, 3300], "only: highoven"
 );
+
+# Defined with portal spread
+recipes.removeShaped(<mysticalagriculture:soulstone>);

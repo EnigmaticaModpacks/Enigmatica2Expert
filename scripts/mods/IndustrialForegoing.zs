@@ -203,11 +203,17 @@ recipes.addShaped(<industrialforegoing:mob_imprisonment_tool>, [
 	[<ic2:sheet:1>, <ic2:sheet:1>, <ic2:sheet:1>]
 ]);
 
-# Mob Crusher and slaughter
-remake("Mob Slaughter", <industrialforegoing:mob_slaughter_factory>, [
-	[<ore:itemRubber>, <deepmoblearning:soot_covered_redstone>, <ore:itemRubber>],
-	[<redstonearsenal:tool.axe_flux>.anyDamage(), <teslacorelib:machine_case>, <redstonearsenal:tool.axe_flux>.anyDamage()],
-	[<ore:itemRubber>, <extrautils2:user>, <ore:itemRubber>]]);
+# [Mob Slaughter Factory] from [Machine Case][+4]
+craft.remake(<industrialforegoing:mob_slaughter_factory>, ["pretty",
+  "R T R",
+  "F M F",
+  "R □ R"], {
+  "□": <ic2:crafting:4>,                       # Iridium Reinforced Plate
+  "R": <ore:itemRubber>,                       # Plastic
+  "T": <immersiveengineering:metal_device1:8>, # Tesla Coil
+  "F": <redstonearsenal:material:224>,         # Fluxed Armor Plating
+  "M": <teslacorelib:machine_case>,            # Machine Case
+});
 
 remake("Mob Crusher",   <industrialforegoing:mob_relocator>, [
 	[<ore:itemRubber>, <redstonearsenal:tool.sword_flux>.anyDamage(), <ore:itemRubber>],

@@ -6,10 +6,13 @@ import mods.jaopca.OreEntry;
 
 
 
-# Parsed list from command /ct oredict ratPoop
-# dont forget to add "," at end
 static listRatPoop as IItemStack[] = [
-<rats:rat_nugget_ore>.withTag({OreItem: {id: "thermalfoundation:ore", Count: 1 as byte, Damage: 4 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1 as byte, Damage: 132 as short}}),
+/*Inject_js(
+[...loadText('crafttweaker_raw.log')
+.match(/^~ Furnace Recipes:(.*)($|\n\n)/ms)[1]
+.matchAll(/^(<rats:rat_nugget_ore.*?)~~.*$/gm)
+].map(o=>o[1]).sort(naturalSort).join(',\n')
+)*/
 <rats:rat_nugget_ore:1>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 7 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 7 as short}}),
 <rats:rat_nugget_ore:2>.withTag({OreItem: {id: "forestry:resources", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "forestry:apatite", Count: 1 as byte, Damage: 0 as short}}),
 <rats:rat_nugget_ore:3>.withTag({OreItem: {id: "astralsorcery:blockcustomsandore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "astralsorcery:itemcraftingcomponent", Count: 3 as byte, Damage: 0 as short}}),
@@ -80,8 +83,11 @@ static listRatPoop as IItemStack[] = [
 <rats:rat_nugget_ore:97>.withTag({OreItem: {id: "nuclearcraft:ore", Count: 1 as byte, Damage: 3 as short}, IngotItem: {id: "nuclearcraft:ingot", Count: 1 as byte, Damage: 3 as short}}),
 <rats:rat_nugget_ore:98>.withTag({OreItem: {id: "thermalfoundation:ore", Count: 1 as byte, Damage: 1 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1 as byte, Damage: 129 as short}}),
 <rats:rat_nugget_ore:99>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 3 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 3 as short}}),
-<rats:rat_nugget_ore:100>.withTag({OreItem: {id: "immersiveengineering:ore", Count: 1 as byte, Damage: 5 as short}, IngotItem: {id: "immersiveengineering:metal", Count: 1 as byte, Damage: 5 as short}}),
-<rats:rat_nugget_ore:101>.withTag({OreItem: {id: "bigreactors:oreyellorite", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "bigreactors:ingotyellorium", Count: 1 as byte, Damage: 0 as short}}),
+<rats:rat_nugget_ore:100>.withTag({OreItem: {id: "endreborn:block_wolframium_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "endreborn:item_ingot_wolframium", Count: 1 as byte, Damage: 0 as short}}),
+<rats:rat_nugget_ore:101>.withTag({OreItem: {id: "immersiveengineering:ore", Count: 1 as byte, Damage: 5 as short}, IngotItem: {id: "immersiveengineering:metal", Count: 1 as byte, Damage: 5 as short}}),
+<rats:rat_nugget_ore:102>.withTag({OreItem: {id: "bigreactors:oreyellorite", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "bigreactors:ingotyellorium", Count: 1 as byte, Damage: 0 as short}}),
+<rats:rat_nugget_ore>.withTag({OreItem: {id: "thermalfoundation:ore", Count: 1 as byte, Damage: 4 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1 as byte, Damage: 132 as short}})
+/**/
 ] as IItemStack[];
 
 
