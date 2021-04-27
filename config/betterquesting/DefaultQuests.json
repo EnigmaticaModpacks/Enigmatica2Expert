@@ -69413,6 +69413,171 @@
           }
         }
       }
+    },
+    "892:10": {
+      "questID:3": 892,
+      "preRequisites:11": [
+        59
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "conditionoverload:wicked_jewel",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Condition Overload",
+          "desc:8": "This mod adds one thing and one thing only: §5The Wicked Jewel§r.\n\nWhen added as modifier, the weapon gains the trait \"§6Condition Overload§r\".\nThe damage of the weapon is increased by §ehow many negative/harmful potion effects§r that are on the target (and by default, if the target is on fire.)"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "conditionoverload:wicked_jewel",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 50,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "893:10": {
+      "questID:3": 893,
+      "preRequisites:11": [
+        418
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "industrialwires:ic2_connector",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Addon: §6Industrial Wires§r",
+          "desc:8": "Wires from this addont can convert energy between §4RF§r and §3EU§r.\n\nSee Engineers Manual to understand how to craft wires."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "industrialwires:ic2_connector",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "industrialwires:ic2_wire_coil",
+              "Count:3": 1,
+              "tag:10": {
+                "wireLength:3": 1024
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "id:8": "industrialwires:ic2_connector",
+              "Count:3": 10,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "industrialwires:ic2_wire_coil",
+              "Count:3": 1,
+              "tag:10": {
+                "wireLength:3": 128
+              },
+              "Damage:2": 5,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "industrialwires:ic2_connector",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     }
   },
   "questLines:9": {
@@ -69738,6 +69903,13 @@
           "x:3": 399,
           "y:3": 109,
           "id:3": 889,
+          "sizeY:3": 24
+        },
+        "46:10": {
+          "sizeX:3": 24,
+          "x:3": 363,
+          "y:3": 133,
+          "id:3": 892,
           "sizeY:3": 24
         }
       },
@@ -72694,6 +72866,13 @@
           "x:3": 208,
           "y:3": 200,
           "id:3": 781,
+          "sizeY:3": 24
+        },
+        "40:10": {
+          "sizeX:3": 24,
+          "x:3": 88,
+          "y:3": -25,
+          "id:3": 893,
           "sizeY:3": 24
         }
       },
