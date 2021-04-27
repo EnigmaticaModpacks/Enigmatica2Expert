@@ -370,3 +370,79 @@ for fluid in [
   .requireItem("input0", <minecraft:glass_bottle>)
   );
 }
+
+// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+x = <assembly:nether_portal_spread>;
+x.addJEICatalyst(<minecraft:obsidian>);
+x.setJEIDurationSlot(5,0,"duration", SlotVisual.arrowRight());
+addInsOuts(x, [[4,0],[3,0],[2,0],[1,0],[0,0]], [[6,0],[7,0],[8,0]]);
+
+/*Inject_js(
+(()=>{
+const fluids = getCsv('config/tellme/fluids-csv.csv')
+
+const toStack=([__, mod, id, amount], isWildcard)=>{
+  const def = `${mod||'minecraft'}:${id}`
+  const fluid = fluids.find(o=>o.Block === def)
+  const count = parseInt(amount)>1?' * '+Math.min(64,amount):''
+  return (fluid
+    ? `Bucket("${fluid.Name}")`
+    : `<${def + (isWildcard===true ? ':*' : '')}>`)
+  + count
+}
+
+return loadText('config/netherportalspread/spreadsettings.txt')
+.split('\n')
+.filter(l=>l.match(/\S+/))
+.map(l=>l.match(/(?:([^:\s]+):)?([^:\s]+); \[([^\]]+)\],/))
+.map(m=>[
+  toStack(m, true),
+  [...m[3].matchAll(/(?:([^:\s]+):)?([^:\s]+)>(\d+)/g)].map(toStack).join(', '),
+]).reduce((acc,[inp, out])=>{
+  const arr = acc.find(o=>o[1]===out)?.[0]
+  if(arr) arr.push(inp)
+  else acc.push([[inp], out])
+  return acc
+}, [])
+.map(([inps, out])=>`add(x, {[${inps.join(', ')}] : [${out}]});`)
+.join('\n')
+})()
+)*/
+add(x, {[<additionalcompression:meatfish_compressed:*>, <additionalcompression:meatchicken_compressed:*>, <additionalcompression:meatbeef_compressed:*>, <additionalcompression:meatporkchop_compressed:*>] : [<thaumcraft:flesh_block>]});
+add(x, {[<appliedenergistics2:sky_stone_block:*>] : [<minecraft:quartz_block>]});
+add(x, {[<biomesoplenty:white_sand:*>] : [<quark:jasper>]});
+add(x, {[<chisel:basalt2:*>] : [<tconstruct:seared>]});
+add(x, {[<chisel:bricks:*>] : [<minecraft:red_nether_brick>]});
+add(x, {[<chisel:limestone:*>, <minecraft:sandstone:*>] : [<mysticalagriculture:soulstone>]});
+add(x, {[<chisel:marble2:*>, <astralsorcery:blockmarble:*>] : [<thaumictinkerer:black_quartz_block> * 10, <botania:quartztypedark>]});
+add(x, {[<iceandfire:ash:*>] : [<chisel:block_coal_coke>]});
+add(x, {[<minecraft:brick_block:*>] : [<minecraft:nether_brick>]});
+add(x, {[<minecraft:cobblestone:*>, <quark:slate:*>] : [<quark:biome_cobblestone>]});
+add(x, {[<minecraft:diamond_block:*>] : [<minecraft:gold_block>]});
+add(x, {[<minecraft:diamond_ore:*>, <minecraft:emerald_ore:*>, <appliedenergistics2:charged_quartz_ore:*>] : [<tconstruct:ore>]});
+add(x, {[<minecraft:emerald_block:*>] : [<tconstruct:metal>]});
+add(x, {[<minecraft:fence:*>] : [<minecraft:nether_brick_fence>]});
+add(x, {[<minecraft:gold_ore:*>, <minecraft:iron_ore:*>, <minecraft:lapis_ore:*>, <appliedenergistics2:quartz_ore:*>, <thaumcraft:ore_cinnabar:*>, <thaumcraft:ore_amber:*>] : [<netherendingores:ore_nether_modded_1>]});
+add(x, {[<minecraft:gravel:*>, <minecraft:clay:*>, <minecraft:leaves:*>, <minecraft:leaves2:*>, <advancedrocketry:alienleaves:*>, <exnihilocreatio:block_infesting_leaves:*>, <exnihilocreatio:block_infested_leaves:*>, <extrautils2:ironwood_leaves:*>, <biomesoplenty:leaves_0:*>, <biomesoplenty:leaves_1:*>, <biomesoplenty:leaves_2:*>, <biomesoplenty:leaves_3:*>, <biomesoplenty:leaves_4:*>, <biomesoplenty:leaves_5:*>, <forestry:leaves.decorative.0:*>, <forestry:leaves.decorative.1:*>, <forestry:leaves.decorative.2:*>] : [<biomesoplenty:ash_block>]});
+add(x, {[<minecraft:hardened_clay:*>] : [<tcomplement:scorched_block>]});
+add(x, {[<minecraft:log:*>, <minecraft:log2:*>] : [<advancedrocketry:charcoallog>]});
+add(x, {[<minecraft:melon_block:*>, <minecraft:hay_block:*>] : [<minecraft:nether_wart_block>]});
+add(x, {[<minecraft:mossy_cobblestone:*>] : [<minecraft:magma>]});
+add(x, {[<minecraft:mycelium:*>] : [<extrautils2:cursedearth>]});
+add(x, {[<minecraft:planks:*>] : [<tconstruct:firewood>]});
+add(x, {[<minecraft:prismarine:*>] : [<minecraft:glowstone>]});
+add(x, {[<minecraft:redstone_block:*>] : [<quark:smoker>]});
+add(x, {[<minecraft:redstone_ore:*>, <minecraft:coal_ore:*>, <thermalfoundation:ore:*>] : [<minecraft:quartz_ore>]});
+add(x, {[<minecraft:ice:*>] : [<minecraft:obsidian>]});
+add(x, {[<minecraft:sand:*>] : [<minecraft:soul_sand>]});
+add(x, {[<minecraft:slime:*>] : [<minecraft:bone_block>]});
+add(x, {[<minecraft:stone:*>, <minecraft:dirt:*>, <minecraft:grass:*>, <minecraft:grass_path:*>, <minecraft:farmland:*>, <biomesoplenty:grass:*>, <biomesoplenty:dirt:*>] : [<minecraft:netherrack> * 64, <minecraft:quartz_ore> * 4, <netherendingores:block_nether_netherfish>]});
+add(x, {[<minecraft:stonebrick:*>] : [<quark:magma_bricks>]});
+add(x, {[<thaumcraft:stone_porous:*>] : [<additionalcompression:dustgunpowder_compressed>, <forestry:ash_block_1> * 5]});
+add(x, {[<minecraft:yellow_flower:*>, <minecraft:red_flower:*>] : [<minecraft:fire>]});
+add(x, {[<biomesoplenty:flower_0:*>, <biomesoplenty:flower_1:*>] : [<biomesoplenty:blue_fire>]});
+add(x, {[<botania:flower:*>] : [<cyclicmagic:fire_dark>]});
+add(x, {[<minecraft:snow_layer:*>] : [<cyclicmagic:fire_frost>]});
+add(x, {[Bucket("water")] : [Bucket("blood")]});
+/**/
