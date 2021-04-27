@@ -8,7 +8,7 @@ The goal of the addon is to make E2:E even harder, "Expert of Expert" modpack.
 
 ## Less resources, Toughter mobs, Harder tools.
 
-10+ additional major mods and +70 tweaking and Quality of Life addons. Most important of them:
+10+ additional major mods and +100 tweaking and Quality of Life addons. Most important of them:
  - `Scalling Health`
  - `Construct's Armory`
  - `Harder Branch Mining`
@@ -44,10 +44,6 @@ See full list in [MODS.md](MODS.md)
   
 - ### Less crafting table -> more new crafting ways  
   *![](https://git.io/JOv9g "§eInferium Essence") Mystical Agriculture Essence can be made in compressor*
-
-- ### Tech - Magic - Exploration  
-  This three ways more separated from each other, you chose your own way to enter late game  
-  *![](https://git.io/JOv9E "Pink Castle Rune Brick") Get Calcium Sulfite by recycling __Twilight Forest__ Castle*
 
 
 -----------------
