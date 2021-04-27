@@ -398,6 +398,7 @@ desc.tooltip(<thermalfoundation:upgrade:1>);
 desc.tooltip(<thermalfoundation:upgrade:2>);
 desc.tooltip(<thermalfoundation:upgrade:3>);
 desc.tooltip(<ic2:te:48>); # Recycler disabled
+desc.tooltip(<ic2:quantum_chestplate>);
 desc.tooltip(<advgenerators:gas_input>); # Gas Intake disabled
 desc.tooltip(Bucket("corium"), "fluid.corium");
 desc.tooltip(<minecraft:torch>);
