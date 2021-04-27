@@ -55,6 +55,7 @@
 "Immersive Engineering","immersiveengineering:slippery","immersiveengineering.potion.slippery",90,"0x00171003 (   1511427)","true","false"
 "Immersive Engineering","immersiveengineering:sticky","immersiveengineering.potion.sticky",92,"0x009C6800 (  10250240)","true","false"
 "Immersive Engineering","immersiveengineering:stunned","immersiveengineering.potion.stunned",93,"0x00624A98 (   6441624)","true","false"
+"Industrial Wires","industrialwires:tinnitus","potion.industrialwires.tinnitus",175,"0xFFFF0000 (    -65536)","true","false"
 "IndustrialCraft 2","ic2:radiation","ic2.potion.radiation",0,"0x004E9331 (   5149489)","true","false"
 "Minecraft","minecraft:absorption","effect.absorption",22,"0x002552A5 (   2445989)","false","true"
 "Minecraft","minecraft:blindness","effect.blindness",15,"0x001F1F23 (   2039587)","true","false"

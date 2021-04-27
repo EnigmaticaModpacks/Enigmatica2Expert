@@ -326,6 +326,11 @@
 "EmberRoot Zoo","emberroot:timberwolf","EntityTimberWolf",17
 "EmberRoot Zoo","emberroot:withercat","EntityWitherCat",12
 "EmberRoot Zoo","emberroot:witherwitch","EntityWitherWitch",13
+"End: Reborn","endreborn:chronologist","EntityChronologist",4
+"End: Reborn","endreborn:end_fireball","EntityColdFireball",-1
+"End: Reborn","endreborn:endguard","EntityEGuard",1
+"End: Reborn","endreborn:endlord","EntityLord",3
+"End: Reborn","endreborn:watcher","EntityWatcher",2
 "Ender IO","enderio:falling_machine","EntityFallingMachine",1
 "Ender IO","enderio:owl_egg","EntityOwlEgg",9
 "Ender IO","enderio:primed_charge","EntityPrimedCharge",0
@@ -410,6 +415,7 @@
 "Immersive Engineering","immersiveengineering:skylinehook","EntitySkylineHook",1
 "Immersive Petroleum","immersivepetroleum:speedboat","EntitySpeedboat",0
 "Industrial Foregoing","industrialforegoing:pink_slime","EntityPinkSlime",135135
+"Industrial Wires","industrialwires:broken_part","EntityBrokenPart",0
 "IndustrialCraft 2","ic2:carbon_boat","EntityBoatCarbon",5
 "IndustrialCraft 2","ic2:dynamite","EntityDynamite",1
 "IndustrialCraft 2","ic2:electric_boat","EntityBoatElectric",7

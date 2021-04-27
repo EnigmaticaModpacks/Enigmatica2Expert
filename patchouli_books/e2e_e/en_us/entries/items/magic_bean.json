@@ -1161,7 +1161,8 @@
       "item1": "tconstruct:slime_vine_purple_end",
       "item2": "tconstruct:slime_vine_purple_mid",
       "item3": "tconstruct:slime_vine_purple",
-      "item4": "tconstruct:throwball"
+      "item4": "tconstruct:throwball",
+      "item5": "cyclicmagic:sprout_seed"
     }
   ]
 }

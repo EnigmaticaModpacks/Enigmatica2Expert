@@ -31,6 +31,9 @@
 "enderio:soulbound","enchantment.enderio.soulbound","EC_REALLY_ALL","VERY_RARE",31
 "enderio:witherarrow","enchantment.enderio.witherarrow","BOW","UNCOMMON",39
 "enderio:witherweapon","enchantment.enderio.witherweapon","WEAPON","UNCOMMON",37
+"endreborn:ender_core","enchantment.ender_core","ARMOR_CHEST","RARE",77
+"endreborn:ender_killer","enchantment.ender_killer","WEAPON","RARE",78
+"endreborn:shulker_core","enchantment.shulker_core","WEAPON","RARE",76
 "exnihilocreatio:sieve_efficiency","enchantment.sieve_efficiency","DIGGER","COMMON",42
 "exnihilocreatio:sieve_fortune","enchantment.sieve_fortune","DIGGER","RARE",43
 "exnihilocreatio:sieve_luck_of_the_sea","enchantment.sieve_luck_of_the_sea","DIGGER","RARE",44
