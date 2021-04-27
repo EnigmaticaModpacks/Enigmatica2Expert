@@ -268,7 +268,7 @@ trait_armor.localizedDescription = game.localize("e2ee.tconstruct.material.alpha
 trait_armor.onHurt = function(trait, armor, player, source, damage, newDamage, evt) {
   if (!isNull(source.getTrueSource()) && source.getTrueSource() instanceof IEntityLivingBase) {
     var attacker as IEntityLivingBase = source.getTrueSource();
-    attacker.addPotionEffect(<potion:minecraft:slowness>.makePotionEffect(60, 5));
+    attacker.addPotionEffect(<potion:twilightforest:frosted>.makePotionEffect(60, 5));
   }
   return newDamage;
 };
@@ -280,6 +280,6 @@ trait.color = 0x2196f3;
 trait.localizedName = game.localize("e2ee.tconstruct.material.alpha_fur.name");
 trait.localizedDescription = game.localize("e2ee.tconstruct.material.alpha_fur.description");
 trait.afterHit = function(trait, tool, attacker, target, damageDealt, wasCritical, wasHit) {
-  target.addPotionEffect(<potion:minecraft:slowness>.makePotionEffect(60, 4));
+  target.addPotionEffect(<potion:twilightforest:frosted>.makePotionEffect(60, 4));
 };
 trait.register();
