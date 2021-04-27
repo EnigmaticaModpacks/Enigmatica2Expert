@@ -40,6 +40,14 @@ key_Hub Expand Key:0:NONE
 key_Change Caster Focus:34:NONE
 key_Misc Caster Toggle:0:NONE
 key_keybind.baublesinventory:0:NONE
+key_quark.keybind.toggleAutojump:0:NONE
+key_quark.keybind.lockBuilding:33:SHIFT
+key_quark.keybind.dropoff:0:NONE
+key_quark.keybind.chestSort:0:NONE
+key_quark.keybind.chestDropoff:0:NONE
+key_quark.keybind.chestMerge:0:NONE
+key_quark.keybind.chestRestock:0:NONE
+key_quark.keybind.chestExtract:0:NONE
 key_quark.emote.no:0:NONE
 key_quark.emote.yes:0:NONE
 key_quark.emote.wave:0:NONE
@@ -58,14 +66,6 @@ key_quark.emote.dab:0:NONE
 key_quark.emote.jet:0:NONE
 key_quark.emote.exorcist:0:NONE
 key_quark.emote.zombie:0:NONE
-key_quark.keybind.dropoff:0:NONE
-key_quark.keybind.chestSort:0:NONE
-key_quark.keybind.chestDropoff:0:NONE
-key_quark.keybind.chestMerge:0:NONE
-key_quark.keybind.chestRestock:0:NONE
-key_quark.keybind.chestExtract:0:NONE
-key_quark.keybind.lockBuilding:33:SHIFT
-key_quark.keybind.toggleAutojump:0:NONE
 key_key.toggle_shaders:0:NONE
 key_bloodmagic.keybind.open_holding:53:CONTROL
 key_bloodmagic.keybind.cycle_holding_pos:0:NONE
@@ -75,15 +75,11 @@ key_key.conarm.toggle_chest.desc:35:NONE
 key_key.conarm.toggle_leg.desc:58:CONTROL
 key_key.betterquesting.quests:41:NONE
 key_cos.key.opencosarmorinventory:0:NONE
-key_key.next_item.desc:0:NONE
-key_key.previous_item.desc:0:NONE
-key_key.open_danknull.desc:0:NONE
-key_key.togglehud.desc:0:NONE
 key_Toggle:15:NONE
 key_Extra information:211:NONE
-key_Add info to original tooltip:210:NONE
+key_Add info to original tooltip:199:NONE
 key_key.xu2.searchforitems:21:NONE
-key_key.findme.search:21:NONE
+key_key.findme.search:83:NONE
 key_key.ftbutilities.nbt:0:NONE
 key_key.ftbutilities.trash:211:NONE
 key_key.open_menu:19:NONE
@@ -96,6 +92,11 @@ key_oreexcavation.key.shape:0:NONE
 key_openblocks.keybind.vario_switch:0:NONE
 key_openblocks.keybind.vario_vol_up:0:NONE
 key_openblocks.keybind.vario_vol_down:0:NONE
+key_key.ping:62:NONE
+key_ping.key.alert:75:NONE
+key_ping.key.mine:76:NONE
+key_ping.key.look:77:NONE
+key_ping.key.goto:72:NONE
 key_key.toggleFoVChanges:51:SHIFT
 key_key.reloadSoundSystem:66:SHIFT
 key_key.toggleTimeOfDayOverlay:0:NONE
@@ -112,6 +113,8 @@ key_schematica.key.renderToggle:0:NONE
 key_schematica.key.printerToggle:0:NONE
 key_schematica.key.moveHere:0:NONE
 key_schematica.key.pickBlock:0:NONE
+key_keys.servertabinfo.show:29:NONE
+key_keys.servertabinfo.show2:157:NONE
 key_Camera left:203:NONE
 key_Camera right:205:NONE
 key_Camera closer:200:NONE
@@ -120,9 +123,11 @@ key_Swap shoulder:24:NONE
 key_key.toastcontrol.clear:0:NONE
 key_key.open_wct.desc:58:NONE
 key_key.cycle_magnet_mode.desc:0:NONE
+key_key.next_item.desc:0:NONE
+key_key.previous_item.desc:0:NONE
+key_key.open_danknull.desc:0:NONE
+key_key.togglehud.desc:0:NONE
 key_key.narrator:0:NONE
-key_key.cofh.multimode:47:NONE
-key_key.toggle_focus.desc:15:NONE
 key_key.jei.toggleOverlay:24:CONTROL
 key_key.jei.focusSearch:33:CONTROL
 key_key.jei.toggleCheatMode:0:NONE
@@ -135,6 +140,7 @@ key_key.jei.nextPage:209:NONE
 key_key.jei.bookmark:30:NONE
 key_key.jei.toggleBookmarkOverlay:0:NONE
 key_nei.options.keys.gui.botania_corporea_request:0:NONE
+key_key.cofh.multimode:47:NONE
 key_key.placeItem:25:NONE
 key_key.toolConfig:52:NONE
 key_key.toolProfileChange:49:CONTROL
@@ -144,6 +150,9 @@ key_key.toggleDislocator:0:NONE
 key_key.cycleDigAOE:0:NONE
 key_key.cycleAttackAOE:0:NONE
 key_key.toggleShields:0:NONE
+key_key.immersiveengineering.magnetEquip:31:NONE
+key_key.immersiveengineering.chemthrowerSwitch:0:NONE
+key_key.toggle_focus.desc:15:NONE
 key_key.columnshiftup:0:NONE
 key_key.columnshiftdown:35:NONE
 key_key.columnbarup:26:NONE
@@ -157,6 +166,7 @@ key_key.dragon_down:44:NONE
 key_key.dragon_change_view:0:NONE
 key_bbw.key.mode:78:NONE
 key_bbw.key.fluidmode:0:NONE
+key_Show Biome Borders:48:CONTROL
 key_key.settings_menu:34:NONE
 key_key.range:19:NONE
 key_key.undo:22:NONE
@@ -166,7 +176,7 @@ key_key.connected_area:0:NONE
 key_key.rotate_mirror:0:NONE
 key_key.material_list:50:NONE
 key_key.carry.desc:42:NONE
-key_Options Gui:0:NONE
+key_Options Gui:207:NONE
 key_key.colytra.toggle.desc:0:NONE
 key_waila.keybind.wailaconfig:82:NONE
 key_waila.keybind.wailadisplay:79:NONE
@@ -175,14 +185,16 @@ key_waila.keybind.recipe:0:NONE
 key_waila.keybind.usage:0:NONE
 key_key.clipboardPaste:0:NONE
 key_dsurround.cfg.keybind.AnimaniaBadges:0:NONE
-key_key.immersiveengineering.magnetEquip:31:NONE
-key_key.immersiveengineering.chemthrowerSwitch:0:NONE
 key_mekanism.key.mode:40:NONE
 key_mekanism.key.armorMode:34:NONE
 key_mekanism.key.feetMode:35:NONE
 key_mekanism.key.voice:22:NONE
 key_FpsReducer.key.guiOpen:0:NONE
 key_FpsReducer.key.forceIdle:197:NONE
+key_key.showhide:48:NONE
+key_key.gridhere:35:NONE
+key_key.gridfixy:21:NONE
+key_key.gridspawns:38:NONE
 key_key.integrateddynamics.logic_programmer_focus_search:33:ALT
 key_key.integrateddynamics.logic_programmer_open_rename:0:NONE
 key_key.integratedterminals.terminal.tab.next:15:NONE
@@ -225,8 +237,8 @@ key_pi.key.et_world:23:CONTROL
 key_key.travelersbackpack.inventory:48:NONE
 key_key.travelersbackpack.toggle_tank:49:NONE
 key_key.travelersbackpack.cycle_tool:44:NONE
-key_key.vaultopic.view:34:NONE
-key_key.vaultopic.vice:47:NONE
+key_key.vaultopic.view:33:CONTROL
+key_key.vaultopic.vice:18:SHIFT
 key_Toggle Jetpack:45:NONE
 key_Open Rocket GUI:46:NONE
 key_Toggle RCS:0:NONE
@@ -250,9 +262,10 @@ key_key.journeymap.fullscreen.north:200:NONE
 key_key.journeymap.fullscreen.south:208:NONE
 key_key.journeymap.fullscreen.east:205:NONE
 key_key.journeymap.fullscreen.west:203:NONE
+key_Profile GUI:210:NONE
 key_enderio.keybind.inventory:23:NONE
 key_enderio.keybind.dsu:19:CONTROL
-key_enderio.keybind.glidertoggle:34:NONE
+key_enderio.keybind.glidertoggle:37:NONE
 key_enderio.keybind.soundlocator:0:NONE
 key_enderio.keybind.nightvision:25:NONE
 key_enderio.keybind.gogglesofrevealing:0:NONE
