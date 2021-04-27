@@ -777,3 +777,13 @@ for item in <ore:dustAshes>.items {
 	<rftoolsdim:dimensional_pattern2_block>,
 	<rftoolsdim:dimensional_small_blocks>,
 ]);
+
+# Remove conflicst
+<ore:blockGlassWhite>.remove(<enderio:block_fused_glass>);
+
+# Add oredict
+<ore:blockDraconiumCharged>.add(<draconicevolution:draconium_block:1>);
+<ore:blockMenril>.add(<integrateddynamics:crystalized_menril_block>);
+<ore:blockSugarcane>.add(<quark:reed_block>);
+<ore:blockSugar>.add(<quark:sugar_block>);
+<ore:blockFlesh>.add(<thaumcraft:flesh_block>);

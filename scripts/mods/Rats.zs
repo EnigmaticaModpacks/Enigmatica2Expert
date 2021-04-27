@@ -303,3 +303,11 @@ mods.rt.RandomThingsTweaker.addImbuingRecipe(
 # Black Death Mask Recycle
 scripts.process.crush(<rats:black_death_mask>, <botania:petalblock:15>, "only: Grindstone SagMill eu2Crusher AACrusher IECrusher", 
 	[<botania:petalblock>, <botania:petalblock:14>, <botania:petalblock:7>], [0.9, 0.8, 0.7]);
+
+# Conflict
+# [Assorted Vegetables] from [Potato][+2]
+craft.reshapeless(<rats:assorted_vegetables>, "BPCBPCBPC", {
+  "P": <ore:cropPotato>, # Potato
+  "B": <ore:cropBeetroot>, # Beetroot
+  "C": <ore:cropCarrot>, # Carrot
+});

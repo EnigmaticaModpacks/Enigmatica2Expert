@@ -66,6 +66,7 @@ craft.remake(<thaumcraft:void_seed> * 4, ["pretty",
 	]);
 
 # Amber Gem
+	recipes.removeByRecipeName("biomesoplenty:amber");
 	recipes.removeByRecipeName("thaumcraft:amberblocktoamber");
 	recipes.addShapeless("Amber Gem", <thaumcraft:amber> * 9, [<ore:blockAmber>]);
 
@@ -151,3 +152,6 @@ mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:tallow>);
 scripts.wrap.thaumcraft.Crucible.registerRecipe("Tallow from rotten flesh", "HEDGEALCHEMY@1", <thaumcraft:tallow>,   <minecraft:rotten_flesh>, [<aspect:ignis>]);
 scripts.wrap.thaumcraft.Crucible.registerRecipe("Tallow from tallow",       "HEDGEALCHEMY@1", <thaumcraft:tallow>*2, <quark:tallow>, [<aspect:ignis>*2]);
 scripts.wrap.thaumcraft.Crucible.registerRecipe("Tallow from blubber",      "HEDGEALCHEMY@1", <thaumcraft:tallow>*8, <betteranimalsplus:blubber>, [<aspect:ignis>*4]);
+
+# Conflicts
+utils.rh(<thaumcraft:nugget:1>);

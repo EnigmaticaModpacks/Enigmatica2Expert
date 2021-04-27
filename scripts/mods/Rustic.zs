@@ -31,3 +31,10 @@ scripts.process.grow(<rustic:olives>, <rustic:olives> * 9, null, null, 0);
 //     }
 //     return out.withTag({material: {id: id, Count: count, Damage: damage}});
 // 	});
+
+# Conflicting recipe
+# [Wooden Stake*4] from [Oak Log]
+craft.remake(<rustic:crop_stake> * 4, ["#","#","#"], {
+  "#": <ore:logWood>, # Oak Log
+  remove: <rustic:crop_stake>, # Wooden Stake
+});

@@ -61,14 +61,6 @@ recipes.addShapeless(<thaumictinkerer:black_quartz_block>, [<botania:quartztyped
 	[[<ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>],
 	[<ore:ingotSteel>, <ore:ingotFakeIron>, <ore:ingotSteel>], 
 	[<ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>]]);
-
-# Applied Llamagistics Wood Gear
-	recipes.remove(<appliedenergistics2:material:40>);
-	recipes.addShaped("Applied Llamagistics Wood Gear", 
-	<appliedenergistics2:material:40>, 
-	[[null, <ore:plankWood>, null],
-	[<ore:plankWood>, null, <ore:plankWood>], 
-	[null, <ore:plankWood>, null]]);
 	
 # *======= Metal Blocks =======*
 

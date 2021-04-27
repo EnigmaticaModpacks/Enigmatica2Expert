@@ -420,9 +420,8 @@ for i, it in mekTankIngrs {
 # [Dynamic Tank*10] from [Glass][+1]
 craft.remake(<mekanism:basicblock:9> * 10, ["pretty",
   "  ⌂  ",
-  "⌂ ■ ⌂",
+  "⌂   ⌂",
   "  ⌂  "], {
-  "■": <ore:blockGlass>, # Glass
   "⌂": <ic2:casing:5>, # Steel Item Casing
   remove: <mekanism:basicblock:9>, # Dynamic Tank
 });
@@ -465,3 +464,6 @@ craft.remake(<mekanismgenerators:generator:10> * 6, ["pretty",
   "T": <nuclearcraft:turbine_wall>,  # Turbine Wall
 	remove: <mekanismgenerators:generator:10>,
 });
+
+# Conflicts
+utils.rh(<mekanism:nugget:5>);

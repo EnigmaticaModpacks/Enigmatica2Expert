@@ -428,3 +428,6 @@ craft.remake(<enderio:item_material:77> * 8, ["pretty",
   "d": <ore:dyeBlack>, # Ink Sac
   remove: <ore:paperBlack>,
 });
+
+# Conflicts
+recipes.removeByRecipeName("enderio:self_resetting_lever_300_seconds_inverted");

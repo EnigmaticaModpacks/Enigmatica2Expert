@@ -31,6 +31,12 @@ import crafttweaker.item.IItemStack;
 	recipes.addShapeless("Witherbone Conversion2", 
 	<iceandfire:witherbone>, 
 	[<tconstruct:materials:17>]);
+
+# Wither Shard remake to prevent conflict
+	recipes.remove(<iceandfire:wither_shard>);
+	recipes.addShapeless("Witherbone shard", 
+	<iceandfire:wither_shard> * 3, 
+	[<ore:boneWither>, scripts.category.plates_and_casings.anyHammer]);
 	
 # Remove existing Ash -> Charcoal recipe (Credit TheShadoWZYE)
 	recipes.removeShaped(<minecraft:coal:1>, 
@@ -82,6 +88,7 @@ import crafttweaker.item.IItemStack;
 <iceandfire:myrmex_jungle_shovel>,
 <iceandfire:myrmex_jungle_sword>,
 <iceandfire:silver_ore>,
+<iceandfire:silver_nugget>,
 
 <iceandfire:dragonbone_sword>,
 <iceandfire:deathworm_yellow_helmet>,

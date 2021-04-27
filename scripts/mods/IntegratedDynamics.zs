@@ -75,7 +75,7 @@ craft.remake(<integrateddynamics:variable_transformer> * 4, ["pretty",
   "  ▬  ",
   "C P C",
   "  ▬  "], {
-  "P": <ore:craftingPiston>, # Piston
+  "P": <minecraft:piston>, # Piston
   "C": <integrateddynamics:crystalized_menril_chunk>, # Crystalized Menril Chunk
   "▬": <ore:ingotCobalt>,    # Cobalt Ingot
 });
@@ -85,7 +85,7 @@ craft.remake(<integrateddynamics:variable_transformer:1> * 4, ["pretty",
   "  ▬  ",
   "C P C",
   "  ▬  "], {
-  "P": <ore:craftingPiston>, # Sticky Piston
+  "P": <minecraft:sticky_piston>, # Sticky Piston
   "C": <integrateddynamics:crystalized_menril_chunk>, # Crystalized Menril Chunk
   "▬": <ore:ingotCobalt>,    # Cobalt Ingot
 });

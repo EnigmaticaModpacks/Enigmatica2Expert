@@ -62,3 +62,7 @@ for i, dye in scripts.category.dye.oreDye {
         c: dye,
     });
 }
+
+# Recipe Conflicts
+recipes.removeByRecipeName("harvestcraft:honeyitem_foodhoneydrop");
+recipes.removeByRecipeName("harvestcraft:honeyitem_drophoney");

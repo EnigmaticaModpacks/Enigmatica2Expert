@@ -100,10 +100,7 @@ import scripts.craft.grid.Grid;
 	recipes.addShapeless(<thermalfoundation:material:135>, [<ic2:misc_resource:1>]);
 	recipes.addShapeless(<ic2:misc_resource:1>, [<thermalfoundation:material:135>]);
 	
-# Graphite conversion 
-	recipes.addShapeless("Graphite Conversion 1", <bigreactors:ingotgraphite>, [<nuclearcraft:ingot:8>]);
-	recipes.addShapeless("Graphite Conversion 2", <nuclearcraft:ingot:8>, [<bigreactors:ingotgraphite>]);
-	
+# Graphite conversion 	
 	recipes.addShapeless("Graphite Conversion 3", <bigreactors:blockgraphite> * 2, [<nuclearcraft:ingot_block:8>, <nuclearcraft:ingot_block:8>]);
 	recipes.addShapeless("Graphite Conversion 4", <nuclearcraft:ingot_block:8> * 2, [<bigreactors:blockgraphite>, <bigreactors:blockgraphite>]);
 
@@ -553,3 +550,6 @@ scripts.process.melt(<actuallyadditions:block_misc:6>, <liquid:ender> * 1000, "N
 
 # Prevent melting dupe
 craft.remake(<quark:obsidian_pressure_plate>, ["AA","AA"], {A: <ore:obsidian>});
+
+# Conflict recipes
+recipes.removeByRecipeName("quark:basalt_1");

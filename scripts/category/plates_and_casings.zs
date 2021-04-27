@@ -1,5 +1,8 @@
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import mods.immersiveengineering.MetalPress;
+
+static anyHammer as IIngredient = <immersiveengineering:tool> | <ic2:forge_hammer>.anyDamage();
 
 # *======= Metal Plates =======*
 val platesData = {
@@ -32,7 +35,7 @@ val platesData = {
 for oreName, plate in platesData {
 	recipes.remove(plate);
 	val ingot = oreDict['ingot'~oreName];
-	recipes.addShapeless("plate EngHammer "~oreName, plate, [ingot, ingot, <immersiveengineering:tool> | <ic2:forge_hammer>.anyDamage()]);
+	recipes.addShapeless("plate EngHammer "~oreName, plate, [ingot, ingot, anyHammer]);
 
 	if(plate.definition.id.matches('(thermalfoundation|immersiveengineering).*'))
 		MetalPress.addRecipe(plate, ingot, <immersiveengineering:mold>, 125, 1);
@@ -60,7 +63,7 @@ for i in 30 .. 41 {
 	if(i!=35) utils.rh(plate);
 }
 
-recipes.addShapeless("steel_casing_with_tool", <ic2:casing:5> * 2, [<ore:plateSteel>, <immersiveengineering:tool> | <ic2:forge_hammer>.anyDamage()]);
+recipes.addShapeless("steel_casing_with_tool", <ic2:casing:5> * 2, [<ore:plateSteel>, anyHammer]);
 
 MetalPress.addRecipe(<ic2:casing:0> * 2, <ore:plateBronze>, <immersiveengineering:mold>, 125, 1);
 MetalPress.addRecipe(<ic2:casing:1> * 2, <ore:plateCopper>, <immersiveengineering:mold>, 125, 1);

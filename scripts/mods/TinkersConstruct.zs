@@ -43,6 +43,9 @@ for slime, dirts in slimeDirts {
 	}
 }
 
+# Remove redundant slimes
+utils.rh(<tconstruct:edible:5>);
+utils.rh(<tconstruct:slime_congealed:5>);
 
 # Removing Bronze / Steel dupes
 	mods.tconstruct.Melting.removeRecipe(<liquid:bronze>, <ic2:pipe>);

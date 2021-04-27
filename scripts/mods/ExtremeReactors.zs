@@ -115,3 +115,7 @@
 	#<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "vitium"}]}), 
 	<thaumcraft:mechanism_complex>]);
 	
+# Conflicts
+utils.rh(<bigreactors:ingotgraphite>);
+recipes.removeByRecipeName("bigreactors:block_graphite");
+recipes.removeByRecipeName("nuclearcraft:tile.nuclearcraft.ingot_block.graphite_1");
