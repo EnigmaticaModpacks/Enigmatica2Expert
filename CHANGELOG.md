@@ -1,5 +1,120 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
+# 0.24
+
+## 🟢 New Mods
+
+Icon | Summary | Reason
+----:|:--------| ------
+<img src="https://media.forgecdn.net/avatars/thumbnails/255/920/256/256/637203370124735161.png" width="50"> | [**Converting Industrial Wires**](https://www.curseforge.com/minecraft/mc-mods/converting-industrial-wires) <sup><sub>IndustrialWires-1.7-39.jar</sub></sup> <br> Industrial Wires but with energy conversion|IE-like wires that can convers RF <-> EU as alternative for Mek Cables
+<img src="https://media.forgecdn.net/avatars/thumbnails/347/586/256/256/637497633208268539.png" width="50"> | [**Hand Over Your Items**](https://www.curseforge.com/minecraft/mc-mods/hand-over-your-items) <sup><sub>handoveryouritems_1.12.2-1.2.jar</sub></sup> <br> Adds to ability for in-game players to give each other itemstacks without dropping/tossing them.|Because i tired to throw items on ground in MP
+<img src="https://media.forgecdn.net/avatars/thumbnails/281/832/256/256/637286891950950069.png" width="50"> | [**End: Reborn**](https://www.curseforge.com/minecraft/mc-mods/end-reborn) <sup><sub>EndReborn [0.3.9].jar</sub></sup> <br> Some additions to the End|Need more content in End
+<img src="https://media.forgecdn.net/avatars/thumbnails/226/207/256/256/637043945277684575.png" width="50"> | [**Nether Portal Spread**](https://www.curseforge.com/minecraft/mc-mods/nether-portal-spread) <sup><sub>netherportalspread_1.12.2-5.1.jar</sub></sup> <br> Spreads (nether) blocks to the overworld around nether and immersive portals in a configurable radius.|Cool looking and used as new crafting mechanic
+<img src="https://media.forgecdn.net/avatars/thumbnails/228/615/256/256/637051309921730731.png" width="50"> | [**Crying Ghasts**](https://www.curseforge.com/minecraft/mc-mods/crying-ghasts) <sup><sub>cryingghasts_1.12.2-1.3.jar</sub></sup> <br> Ghasts drop their tears periodically when a player is close, allowing sustainable farming.|Makes Ghast Farming less grindy
+<img src="https://media.forgecdn.net/avatars/thumbnails/237/397/256/256/637099926834713588.png" width="50"> | [**Condition Overload**](https://www.curseforge.com/minecraft/mc-mods/condition-overload) <sup><sub>conditionoverload-1.1.0.jar</sub></sup> <br> Tinkers Construct addon that adds in a Powerful Weapon Modifier|Late game modifier
+<img src="https://media.forgecdn.net/avatars/thumbnails/312/949/256/256/637407315722572617.png" width="50"> | [**MixinBooter**](https://www.curseforge.com/minecraft/mc-mods/mixin-booter) <sup><sub>mixinbooter-1.0.jar</sub></sup> <br> A core plugin that prepares, boots mixins. Making lives easier for 1.12.2 mixin modders.|Library for **Thaumic Speedup**
+<img src="https://media.forgecdn.net/avatars/thumbnails/230/21/256/256/637058620358653756.png" width="50"> | [**Smaller Nether Portals**](https://www.curseforge.com/minecraft/mc-mods/smaller-nether-portals) <sup><sub>smallernetherportals_1.12.2-1.6.jar</sub></sup> <br> Allows the creation of smaller nether portals, specifically 1x2, 1x3 and 2x2.|Vanilla-like improvment
+<img src="https://media.forgecdn.net/avatars/thumbnails/82/416/256/256/636180918658716768.png" width="50"> | [**Additional Compression**](https://www.curseforge.com/minecraft/mc-mods/additional-compression) <sup><sub>Additional-Compression-1.12.2-3.4.jar</sub></sup> <br> A Mod that Adds Compressed Blocks to Minecraft|For using in craft and easier storage
+<img src="https://media.forgecdn.net/avatars/thumbnails/334/385/256/256/637468213328449243.png" width="50"> | [**Precision Mining**](https://www.curseforge.com/minecraft/mc-mods/precision-mining) <sup><sub>miningspeed2-1.6.jar</sub></sup> <br> QOL mod that prevents overmining|Fix "too fast" Tinker's tools
+<img src="https://media.forgecdn.net/avatars/thumbnails/265/213/256/256/637228736265951330.png" width="50"> | [**[FORGE/FABRIC] Armor Curve**](https://www.curseforge.com/minecraft/mc-mods/armor-curve) <sup><sub>armorcurve-1.2.9.jar</sub></sup> <br> Adjust the armor scaling and degradation formulae for mobs and players.|Better math for overpowered Tinker's sets
+<img src="https://media.forgecdn.net/avatars/thumbnails/354/446/256/256/637512279994184609.png" width="50"> | [**IC2 Patcher**](https://www.curseforge.com/minecraft/mc-mods/ic2-patcher) <sup><sub>ic2patcher-1.0-beta.2.jar</sub></sup> <br> Fixes several issues in IndustrialCraft2|Fix some bugs and most importantly - add ability to **disable jetpack in Quantum Suit**
+<img src="https://media.forgecdn.net/avatars/thumbnails/9/285/256/256/635425001467813326.png" width="50"> | [**Ping**](https://www.curseforge.com/minecraft/mc-mods/ping) <sup><sub>Ping-1.12.2-1.4.5.jar</sub></sup> <br> Inspired by Portal 2, this mod brings the Ping tool into Minecraft|MP helper to point on blocks
+<img src="https://media.forgecdn.net/avatars/thumbnails/352/27/256/256/637507094992634249.png" width="50"> | [**Just Enough Drags**](https://www.curseforge.com/minecraft/mc-mods/just-enough-drags) <sup><sub>justenoughdrags-1.1-beta.5.jar</sub></sup> <br> Adds jei drag support to item filters|Cool feature from EnderIO to other filters
+<img src="https://media.forgecdn.net/avatars/thumbnails/307/78/256/256/637387132751465728.png" width="50"> | [**Advancement Screenshot**](https://www.curseforge.com/minecraft/mc-mods/advancement-screenshot) <sup><sub>advancementscreenshot_1.12.2-1.3.jar</sub></sup> <br> [Client] Takes a screenshot every time an advancement is achieved. Document your progress!|Avaliable only in dev
+<img src="https://media.forgecdn.net/avatars/thumbnails/232/533/256/256/637066773825345434.png" width="50"> | [**Creative Block Replacer**](https://www.curseforge.com/minecraft/mc-mods/creative-block-replacer) <sup><sub>creativeblockreplacer_1.12.2-1.4.jar</sub></sup> <br> Allows easy switching in between placing and replacing blocks in creative mode.|Helper for creative building
+<img src="https://media.forgecdn.net/avatars/thumbnails/297/106/256/256/637343255955991159.png" width="50"> | [**Mixin 0.7-0.8 Compatibility**](https://www.curseforge.com/minecraft/mc-mods/mixin-0-7-0-8-compatibility) <sup><sub>[___MixinCompat-0.8___].jar</sub></sup> <br> Allows mods that use 0.7 or 0.8 mixin to be compatible with each other|Library for **Precision Mining**
+<img src="https://media.forgecdn.net/avatars/thumbnails/33/283/256/256/635893403164870085.png" width="50"> | [**NetherPortalFix**](https://www.curseforge.com/minecraft/mc-mods/netherportalfix) <sup><sub>NetherPortalFix_1.12.1-5.3.17.jar</sub></sup> <br> Ensures correct destinations when travelling back and forth through Nether Portals in Multiplayer.|Nice fix
+<img src="https://media.forgecdn.net/avatars/thumbnails/302/258/256/256/637366701251451367.png" width="50"> | [**Thaumic Speedup**](https://www.curseforge.com/minecraft/mc-mods/thaumic-speedup) <sup><sub>thaumicspeedup-2.0.jar</sub></sup> <br> Speeds up Thaumcraft's loading process and 'optimizes' some internals. Extremely lazy project.|Actually descrease load time from 11 minutes to 9. Require to rename Dank/Null `.jar` file or would crash
+<img src="https://media.forgecdn.net/avatars/thumbnails/346/844/256/256/637496100920279441.png" width="50"> | [**Animania Cats & Dogs**](https://www.curseforge.com/minecraft/mc-mods/animania-cats-dogs) <sup><sub>animania-1.12.2-catsdogs-1.0.0.28.jar</sub></sup> <br> This Animania Addon adds Cats and Dogs to your game!|For people who like animals
+
+## 🔴 Removed Mods
+
+Icon | Summary | Reason
+----:|:--------| ------
+<img src="https://media.forgecdn.net/avatars/thumbnails/295/249/256/256/637336304211212554.png" width="50"> | [**ThaumTweaks**](https://www.curseforge.com/minecraft/mc-mods/thaumtweaks) <sup><sub>thaumtweaks-0.2.4.2.jar</sub></sup> <br> Small addon to make Thaum 6 more fair.|Caused significant lag. Would return when dev fix [this issue](https://github.com/GrigLog/ThaumTweaks/issues/18).
+<img src="https://media.forgecdn.net/avatars/thumbnails/307/21/256/256/637386849694673181.png" width="50"> | [**LogicalArmorRework**](https://www.curseforge.com/minecraft/mc-mods/logicalarmorrework) <sup><sub>logicalarmorrework-1.12.2-1.0.jar</sub></sup> <br> A mod that changes how armor works in Minecraft|Pushed out by **Armor Curve** mod
+
+## 🟡 Updated Mods
+
+- [**Tweakers Construct**](https://www.curseforge.com/minecraft/mc-mods/tweakers-construct) <sup><sub>tweakersconstruct-1.12.2-1.6.1.jar</sub></sup>
+- [**CraftTweaker**](https://www.curseforge.com/minecraft/mc-mods/crafttweaker) <sup><sub>CraftTweaker2-1.12-4.1.20.643.jar</sub></sup>
+- [**Cyclic**](https://www.curseforge.com/minecraft/mc-mods/cyclic) <sup><sub>Cyclic-1.12.2-1.20.9.jar</sub></sup>
+- [**Tinkers' Evolution**](https://www.curseforge.com/minecraft/mc-mods/tinkers-evolution) <sup><sub>tconevo-1.12.2-1.0.41.jar</sub></sup>
+- [**NuclearCraft Reactor Builder**](https://www.curseforge.com/minecraft/mc-mods/nuclearcraft-reactor-builder) <sup><sub>NC-ReactorBuilder-1.12.2-1.0.2.jar</sub></sup>
+- [**Carry On**](https://www.curseforge.com/minecraft/mc-mods/carry-on) <sup><sub>carryon-1.12.2-1.12.4.16.jar</sub></sup>
+- [**Collective**](https://www.curseforge.com/minecraft/mc-mods/collective) <sup><sub>collective-1.12.2-2.26.jar</sub></sup>
+- [**CreativeCore**](https://www.curseforge.com/minecraft/mc-mods/creativecore) <sup><sub>CreativeCore_v1.10.57_mc1.12.2.jar</sub></sup>
+- [**LittleTiles**](https://www.curseforge.com/minecraft/mc-mods/littletiles) <sup><sub>LittleTiles_v1.5.4_mc1.12.2.jar</sub></sup>
+- [**Ears**](https://www.curseforge.com/minecraft/mc-mods/ears) <sup><sub>ears-forge-1.12-1.2.2.jar</sub></sup>
+
+## ✏️ Recipes
+
+- Some recipes conflicts resolved.
+- Recipes changes:
+  - ![](https://git.io/J3Jnv "Big Red Nether Brick")
+    ![](https://git.io/Jtkwo "Soulstone")
+    ![](https://git.io/JOGgq "Compound Bow")
+    ![](https://git.io/JOGza "Fire Axe")
+    ![](https://git.io/J3JZF "Mob Slaughter Factory")
+  - [Wicked Jewel]
+  - other misc changes
+
+## 📖 Quest Book
+
+- **Condition Overload** and **Indus. Wires** quests
+
+## 🔵 Mods
+
+
+- ### 🌡️ Thermal Expansion
+
+  - Thermal Expansion: Disable tools (no changes actually)
+
+- ### 🏪 Requious Fracto
+
+  - Nether Portal Spread JEI. See ![](https://git.io/J3JEq "Obsidian")
+
+- ### 🐝 Forestry
+
+  - ![](https://git.io/JOGr0 "Adventuring Backpack") can accept any OreDicted item
+
+- ### 📑 Tips
+
+  - Few new tips and tooltips
+
+- ### 🔨 Tinker's Construct
+
+  - ![](https://git.io/JmV4O "Alpha Yeti Fur") material now cast **Frosted** effect from TwiFrst
+
+- ### 🩸 Blood Magic
+
+  - Remove baby animals from ![](https://git.io/J3JZd "Dagger of Sacrifice") list
+    > They cant be sacrificed anyway
+
+- ### ⚙️ JAOPCA
+
+  - Reload configs, Color was updated
+    > Useless items appears, like Plates and Sticks. Would be removed next release
+
+- ### 🚒 Nether Portal Spread
+
+  - Change spread blocks list
+
+## 🔄 Misc Changes
+
+  - ![](https://git.io/J3JEN "Magic Bean") drop itself too
+  - ![](https://git.io/J3JZN "Diamond Ore") Increase mining level 3 -> 4
+  - Ghasts crying if player near 64 blocks
+  - Immersive Engineering excavator less chance (0.33 -> 0.2)
+  - Industrial Wires buff cables up to **32 kEU/t**
+  - Nuclearcraft remove fluid duplicates
+  - Ping increase distance and duration
+  - JEI blacklist
+  - Forge Selective resource option (what it actually do? I dont know) `selectiveResourceReloadEnabled=false`
+
+
+
+
 # 0.23
 
 ## 🔵 Mods
