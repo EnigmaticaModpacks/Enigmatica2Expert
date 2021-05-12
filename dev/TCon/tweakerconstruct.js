@@ -91,6 +91,16 @@ const invalid = {
 
 function injectToEquipments(list, varName) {
 	const listStr = list
+		.filter(l => ![
+			'ma.superium',
+			'ma.supremium',
+			'spectre',
+			'draconic_metal',
+			'neutronium',
+			'aethium',
+			'chaotic_metal',
+			'infinity_metal',
+		].includes(l.mat))
 		.map(l=>`  ${('"'+l.mat+'"').padEnd(25)}, # ${round(l.power, 2)}`)
 		.join('\n')
 
@@ -113,7 +123,7 @@ function logBigTable(tweakGroup, tweakObj, bigTable) {
 		...transpose( bigTable.map(bt=>orderBy(bt)) ),
 		['Total Power',...tweakObj._names],
 	],{
-		drawHorizontalLine: (i, size) => i === 0 || i === 1 || i === size-1 || i === size-2
+		drawHorizontalLine: (i, size) => i === 0 || i === 1 || i === size || i === size-1
 	}) + '\n\n'
 }
 

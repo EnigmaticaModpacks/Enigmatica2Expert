@@ -1,10 +1,12 @@
 _names,HeadDurability,MiningSpeed,AttackDamage,HarvestLevel,HandleModifier,HandleDurability,ExtraDurability,DrawSpeed,Range,BonusDamage
 _importancy,sqrt(abs(n*10))*sign(n)/3,(n+1)**2,(n+1)**2/5,n*5,(n+3)**2-9,log(abs(n)+1)*sign(n)+8,log(n+50)*2-4,sqrt(n*10),n*4,n*2
-_output,"round(n)",n,n,"max(0,round(n))",n,"max(1,round(n))","max(1,round(n))",n,n,n
+_output,round(n),n,n,"max(0,round(n))",n,"max(1,round(n))","max(1,round(n))",n,n,n
 advanced_alloy,,,*1.5,,,,,,,
 aethium,*3,*3,*3,12,*3,*3,*3,*3,*3,*3
+alpha_fur,,,,,,,,,,
 aluminium,,,,,,,,,,
 alumite,*0.75,*0.75,*0.75,6,0.6,,-100,,,
+amber,,,,,,,,,,
 amethyst,,,,6,,,,,,
 apatite,,,,,,,,,,
 aquamarine,*0.75,*0.75,*0.75,0,,,,,,
@@ -44,6 +46,7 @@ emerald_plustic,,,,,,,,,,
 emeraldic_crystal,,,,5,,,,,,
 end_steel,*1.5,*1.83,*2,,,,,,,*1.22
 enderium,,,,10,,,,,,
+endorium,,,,,,,,,,
 endstone,,,,5,,,,,,
 energetic_alloy,,,,7,4,,,,,+3
 energetic_metal,,,,6,,,,,,
@@ -108,7 +111,7 @@ pladium,*3,*3,*3,10,*3,*3,*3,*3,*3,*3
 plague_metal,,,+3,2,,,,,,
 platinum,,,,9,,,,,,
 polyethylene,,,,,,,,,,
-primal_metal,,,,12,,,,,,
+primal_metal,+800,*1.5,*1.5,12,,,,,,*1.5
 prismarine,,,,3,,,,,,
 psigem,*0.5,*0.5,*0.5,7,,-170,-270,,,
 psimetal,*0.5,*0.5,*0.5,7,,-170,-270,,,
@@ -145,8 +148,9 @@ universal_metal,,,,11,,,,,,
 uranium,,,,7,,,,,,
 vibrant_alloy,,,,9,,,,,,
 void_crystal,*1.5,*1.5,*1.5,4,,,,,*3,
-void_metal,,,,,,,,,,
+void_metal,*2,*1.5,*1.5,10,,,,*0.75,,+4
 weezer,,,,,,,,,,
+wolframium,,,,,,,,,,
 wood,,,,,,,,,,
 wyvern_metal,,,,12,,,,,,
 xu_demonic_metal,,,*1.08,7,,,,,,
