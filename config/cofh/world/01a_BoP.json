@@ -1,0 +1,222 @@
+{
+  "dependencies": "biomesoplenty",
+  "populate": {
+    "bop_amethyst": {
+      "distribution": "uniform",
+      "generator": {
+        "block": {
+          "name": "biomesoplenty:gem_ore",
+          "metadata": 0
+        },
+        "material": "end_stone",
+        "cluster-size": 2
+      },
+      "cluster-count": 1,
+      "chunk-chance": 20,
+      "min-height": 4,
+      "max-height": 32,
+      "retrogen": "false",
+      "biome": {
+        "restriction": "whitelist",
+        "value": [
+          {
+            "type": "dictionary",
+            "entry": "END"
+          }
+        ]
+      },
+      "dimension": {
+        "restriction": "whitelist",
+        "value": [
+          1
+        ]
+      }
+    },
+    "bop_ruby": {
+      "distribution": "uniform",
+      "generator": {
+        "block": {
+          "name": "biomesoplenty:gem_ore",
+          "metadata": 1
+        },
+        "cluster-size": 2
+      },
+      "cluster-count": 1,
+      "chunk-chance": 8,
+      "min-height": 4,
+      "max-height": 32,
+      "retrogen": "false",
+      "biome": {
+        "restriction": "whitelist",
+        "value": [
+          {
+            "type": "dictionary",
+            "entry": "SWAMP"
+          }
+        ]
+      },
+      "dimension": {
+        "restriction": "blacklist",
+        "value": [
+          -1,
+          1
+        ]
+      }
+    },
+    "bop_peridot": {
+      "distribution": "uniform",
+      "generator": {
+        "block": {
+          "name": "biomesoplenty:gem_ore",
+          "metadata": 2
+        },
+        "cluster-size": 2
+      },
+      "cluster-count": 1,
+      "chunk-chance": 8,
+      "min-height": 4,
+      "max-height": 32,
+      "retrogen": "false",
+      "biome": {
+        "restriction": "whitelist",
+        "value": [
+          {
+            "type": "dictionary",
+            "entry": "FOREST, PLAINS"
+          }
+        ]
+      },
+      "dimension": {
+        "restriction": "blacklist",
+        "value": [
+          -1,
+          1
+        ]
+      }
+    },
+    "bop_topaz": {
+      "distribution": "uniform",
+      "generator": {
+        "block": {
+          "name": "biomesoplenty:gem_ore",
+          "metadata": 3
+        },
+        "cluster-size": 2
+      },
+      "cluster-count": 1,
+      "chunk-chance": 8,
+      "min-height": 4,
+      "max-height": 32,
+      "retrogen": "false",
+      "biome": {
+        "restriction": "whitelist",
+        "value": [
+          {
+            "type": "dictionary",
+            "entry": "MESA, SANDY"
+          }
+        ]
+      },
+      "dimension": {
+        "restriction": "blacklist",
+        "value": [
+          -1,
+          1
+        ]
+      }
+    },
+    "bop_tanzanite": {
+      "distribution": "uniform",
+      "generator": {
+        "block": {
+          "name": "biomesoplenty:gem_ore",
+          "metadata": 4
+        },
+        "cluster-size": 2
+      },
+      "cluster-count": 1,
+      "chunk-chance": 8,
+      "min-height": 4,
+      "max-height": 32,
+      "retrogen": "false",
+      "biome": {
+        "restriction": "whitelist",
+        "value": [
+          {
+            "type": "temperature",
+            "entry": "COLD"
+          }
+        ]
+      },
+      "dimension": {
+        "restriction": "blacklist",
+        "value": [
+          -1,
+          1
+        ]
+      }
+    },
+    "bop_malachite": {
+      "distribution": "uniform",
+      "generator": {
+        "block": {
+          "name": "biomesoplenty:gem_ore",
+          "metadata": 5
+        },
+        "cluster-size": 2
+      },
+      "cluster-count": 1,
+      "chunk-chance": 8,
+      "min-height": 4,
+      "max-height": 32,
+      "retrogen": "false",
+      "biome": {
+        "restriction": "whitelist",
+        "value": [
+          {
+            "type": "dictionary",
+            "entry": "FOREST, PLAINS"
+          }
+        ]
+      },
+      "dimension": {
+        "restriction": "blacklist",
+        "value": [
+          -1,
+          1
+        ]
+      }
+    },
+    "bop_sapphire": {
+      "distribution": "uniform",
+      "generator": {
+        "block": {
+          "name": "biomesoplenty:gem_ore",
+          "metadata": 6
+        },
+        "cluster-size": 2
+      },
+      "cluster-count": 1,
+      "chunk-chance": 8,
+      "min-height": 4,
+      "max-height": 32,
+      "retrogen": "false",
+      "biome": {
+        "restriction": "whitelist",
+        "value": [
+          {
+            "type": "dictionary",
+            "entry": "OCEAN"
+          }
+        ]
+      },
+      "dimension": {
+        "restriction": "blacklist",
+        "value": [
+          -1,
+          1
+        ]
+      }
+    }
+  }
+}
