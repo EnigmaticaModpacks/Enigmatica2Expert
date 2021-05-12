@@ -7,6 +7,7 @@ import mods.requious.SlotVisual;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
+import crafttweaker.item.WeightedItemStack;
 
 
 function add(ass as Assembly, chunk as IItemStack[][IIngredient[]]) {
@@ -47,8 +48,8 @@ x.setJEIDurationSlot(1,0,"duration", SlotVisual.arrowRight());
 x.setJEIDurationSlot(2,0,"duration", getVisGauge(1,13));
 addInsOuts(x, [[0,0]], [[3,0]]);
 
-function add_infernal_furnace(input as IIngredient, out as IItemStack) {
-  add(<assembly:infernal_furnace>, {[input] as IIngredient[]: [out]});
+function add_infernal_furnace(input as IIngredient, out as WeightedItemStack) {
+  add(<assembly:infernal_furnace>, {[input] as IIngredient[]: [out.stack.withLore(["§d§l" ~ out.percent as int ~ "%"])]});
 }
 
 // -----------------------------------------------------------------------
@@ -61,6 +62,34 @@ addInsOuts(x, [[0,0],[2,0]], [[1,1]]);
 function add_liquid_interaction(input1 as IIngredient, input2 as IIngredient, out as IItemStack) {
   add(<assembly:liquid_interaction>, {[input1, input2] : [out]});
 }
+
+add_liquid_interaction(Bucket("pyrotheum") | Bucket("cryotheum"), <minecraft:grass>, <minecraft:dirt>);
+
+add_liquid_interaction(Bucket("mana"), <thermalfoundation:storage:2>, <thermalfoundation:storage:8>);
+add_liquid_interaction(Bucket("mana"), <thermalfoundation:storage:3>, <minecraft:gold_block>);
+add_liquid_interaction(Bucket("mana"), <thermalfoundation:ore:3>, <minecraft:gold_ore>);
+add_liquid_interaction(Bucket("mana"), <thermalfoundation:ore:2>, <thermalfoundation:ore:8>);
+add_liquid_interaction(Bucket("mana"), <minecraft:dirt>, <minecraft:grass>);
+add_liquid_interaction(Bucket("mana"), <minecraft:dirt:1>, <minecraft:dirt:2>);
+add_liquid_interaction(Bucket("mana"), <minecraft:farmland>, <minecraft:mycelium>);
+add_liquid_interaction(Bucket("mana"), <minecraft:glass>, <minecraft:sand>);
+add_liquid_interaction(Bucket("mana"), <minecraft:lapis_ore>, <minecraft:lapis_block>);
+
+add_liquid_interaction(Bucket("pyrotheum"), <minecraft:cobblestone:*>, <minecraft:stone>);
+add_liquid_interaction(Bucket("pyrotheum"), <minecraft:sand:*>, <minecraft:glass>);
+add_liquid_interaction(Bucket("pyrotheum"), <minecraft:clay:*>, <minecraft:hardened_clay>);
+add_liquid_interaction(Bucket("pyrotheum"), <minecraft:stone_stairs:*>, <minecraft:stone_brick_stairs>);
+
+add_liquid_interaction(Bucket("cryotheum"), <minecraft:water_bucket>, <minecraft:ice>);
+add_liquid_interaction(Bucket("cryotheum"), <minecraft:water_bucket>, <minecraft:snow>);
+add_liquid_interaction(Bucket("cryotheum"), <minecraft:lava_bucket>, <minecraft:obsidian>);
+add_liquid_interaction(Bucket("cryotheum"), <minecraft:lava_bucket>, <minecraft:stone>);
+add_liquid_interaction(Bucket("cryotheum"), Soul('minecraft:creeper') | Soul('minecraft:zombie'), Soul('minecraft:snowman'));
+
+add_liquid_interaction(Bucket("petrotheum"), <minecraft:stone:*>, <minecraft:gravel>);
+add_liquid_interaction(Bucket("petrotheum"), <minecraft:cobblestone:*>, <minecraft:gravel>);
+add_liquid_interaction(Bucket("petrotheum"), <minecraft:stonebrick:*>, <minecraft:gravel>);
+add_liquid_interaction(Bucket("petrotheum"), <minecraft:mossy_cobblestone:*>, <minecraft:gravel>);
 
 // -----------------------------------------------------------------------
 // -----------------------------------------------------------------------
@@ -446,3 +475,71 @@ add(x, {[<botania:flower:*>] : [<cyclicmagic:fire_dark>]});
 add(x, {[<minecraft:snow_layer:*>] : [<cyclicmagic:fire_frost>]});
 add(x, {[Bucket("water")] : [Bucket("blood")]});
 /**/
+
+
+// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+x = <assembly:lens_of_the_miner>;
+x.addJEICatalyst(<actuallyadditions:item_mining_lens>);
+x.addJEICatalyst(<actuallyadditions:block_atomic_reconstructor>);
+x.setJEIDurationSlot(1,0,"duration", SlotVisual.arrowRight());
+addInsOuts(x, [[0,0]], [[2,0]]);
+
+function addMiningLensOre(base as IIngredient, oreDictName as string, weight as int) as void {
+  val ore = oreDict[oreDictName];
+  if(ore.items.length == 0) return;
+  val output = ore.firstItem.withLore(["§e§lWeight: " ~ weight]);
+  add(<assembly:lens_of_the_miner>, {[base] as IIngredient[] : [output]});
+}
+
+function addMiningLensStoneOre(oreDictName as string, weight as int) {
+  addMiningLensOre(<minecraft:stone>, oreDictName, weight);
+}
+function addMiningLensNetherOre(oreDictName as string, weight as int) {
+  addMiningLensOre(<minecraft:netherrack>, oreDictName, weight);
+}
+
+// Values taken from:
+// https://github.com/Ellpeck/ActuallyAdditions/blob/main/src/main/java/de/ellpeck/actuallyadditions/common/items/lens/LensMining.java
+addMiningLensNetherOre("oreNetherPlatinum", 20);
+addMiningLensNetherOre("oreArdite", 50);
+addMiningLensNetherOre("oreCobalt", 50);
+addMiningLensNetherOre("oreNetherDiamond", 50);
+addMiningLensNetherOre("oreNetherNickel", 100);
+addMiningLensNetherOre("oreNetherRedstone", 200);
+addMiningLensNetherOre("oreNetherLapis", 250);
+addMiningLensNetherOre("oreNetherGold", 500);
+addMiningLensNetherOre("oreNetherSilver", 1000);
+addMiningLensNetherOre("oreNetherLead", 1500);
+addMiningLensNetherOre("oreNetherTin", 1800);
+addMiningLensNetherOre("oreNetherCopper", 2000);
+addMiningLensNetherOre("oreNetherIron", 3000);
+addMiningLensNetherOre("oreQuartz", 3000);
+addMiningLensNetherOre("oreNetherCoal", 5000);
+
+addMiningLensStoneOre("orePlatinum", 20);
+addMiningLensStoneOre("oreEmerald", 30);
+addMiningLensStoneOre("oreMalachite", 40);
+addMiningLensStoneOre("orePeridot", 40);
+addMiningLensStoneOre("oreRuby", 40);
+addMiningLensStoneOre("oreSapphire", 40);
+addMiningLensStoneOre("oreTanzanite", 40);
+addMiningLensStoneOre("oreTopaz", 40);
+addMiningLensStoneOre("oreDiamond", 50);
+addMiningLensStoneOre("oreNickel", 100);
+addMiningLensStoneOre("oreAmber", 150);
+addMiningLensStoneOre("oreRedstone", 200);
+addMiningLensStoneOre("oreLapis", 250);
+addMiningLensStoneOre("oreUranium", 400);
+addMiningLensStoneOre("oreGold", 500);
+addMiningLensStoneOre("oreApatite", 700);
+addMiningLensStoneOre("oreCertusQuartz", 800);
+addMiningLensStoneOre("oreSilver", 1000);
+addMiningLensStoneOre("oreAluminium", 1200);
+addMiningLensStoneOre("oreLead", 1500);
+addMiningLensStoneOre("oreOsmium", 1500);
+addMiningLensStoneOre("oreTin", 1800);
+addMiningLensStoneOre("oreCopper", 2000);
+addMiningLensStoneOre("oreIron", 3000);
+addMiningLensStoneOre("oreQuartzBlack", 3000);
+addMiningLensStoneOre("oreCoal", 5000);
