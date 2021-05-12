@@ -98,7 +98,7 @@ import crafttweaker.item.IItemStack as IItemStack;
 
 	for tool in toolsToNerf {
 		tool.maxDamage = 1;
-		scripts.category.tooltips.desc.both(tool, "vanilla_tools");
+		scripts.category.tooltip_utils.desc.both(tool, "vanilla_tools");
 	}
 	
 	<minecraft:stone_sword>.maxDamage = 2;

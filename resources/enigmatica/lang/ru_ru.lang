@@ -1,5 +1,13 @@
 item.excompressum:bait_uncnown.name=Any Bait
 
+tooltips.lang.tag.generator=§6#Генератор
+tooltips.lang.tag.chunkloader=§9#Якорь
+tooltips.lang.tag.tank=§b#Резервуар
+tooltips.lang.tag.user=§5#Пользователь
+tooltips.lang.tag.hopper=§2#Воронка
+tooltips.lang.tag.miner=§1#Шахтер
+tooltips.lang.tag.voidminer=§3#ПустотныйШахтер
+
 tooltips.lang.removed.dupe_ore=Удалено, потому что с его помощью можно было обмануть несколько руд.
 tooltips.lang.crescent_hammer=Щелкните правой кнопкой мыши, используя молоток полумесяца, чтобы поднять. \n Кэш сохраняет свои обновления и инвентарь. \n Не ломай киркой!
 tooltips.lang.gauge_dropper=Может использоваться для очистки машин Mekanism от газов. Просто удерживайте капельницу с манометром и нажимайте левую кнопку мыши на газе изнутри машины.

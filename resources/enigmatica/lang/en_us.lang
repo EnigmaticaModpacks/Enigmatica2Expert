@@ -1,5 +1,13 @@
 item.excompressum:bait_uncnown.name=Any Bait
 
+tooltips.lang.tag.generator=§6#Generator
+tooltips.lang.tag.chunkloader=§9#ChunkLoader
+tooltips.lang.tag.tank=§b#Tank
+tooltips.lang.tag.user=§5#User
+tooltips.lang.tag.hopper=§2#Hopper
+tooltips.lang.tag.miner=§1#Miner
+tooltips.lang.tag.voidminer=§3#VoidMiner
+
 tooltips.lang.removed.dupe_ore=Removed, because it could be used to dupe multiple ores.
 tooltips.lang.crescent_hammer=Shift right click with a Crescent Hammer to pick up.\nThe Cache retains it's upgrades and inventory.\nDo not break with Pickaxe!
 tooltips.lang.gauge_dropper=Can be used to clear Mekanism machines of their gases. Simply hold the Gauge Dropper and Shift Left Click the Gas from inside the Machine.
