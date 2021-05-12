@@ -43,14 +43,6 @@ import crafttweaker.item.IItemStack as IItemStack;
 	[<forge:bucketfilled>.withTag({FluidName: "ic2pahoehoe_lava", Amount: 1000}), <immersiveengineering:blueprint>.anyDamage(), <forge:bucketfilled>.withTag({FluidName: "ic2distilled_water", Amount: 1000})], 
 	[<modularmachinery:blockcasing>, <ore:gearVibrant>, <modularmachinery:blockcasing>]]);
 
-# Armor Foundry
-	recipes.addShapedMirrored("Armor Foundry", 
-	<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:armor_foundry"}), [
-		[<ore:ingotModularium>, <tconstruct:hammer>.anyDamage(), <ore:ingotModularium>],
-		[<bloodmagic:upgrade_tome>, <immersiveengineering:blueprint>.anyDamage(), <bloodmagic:upgrade_tome>],
-		[<ore:ingotModularium>, <ore:blockKnightmetal>, <ore:ingotModularium>]]
-	);
-
 # Hydroponics
 	recipes.addShapedMirrored("Hydroponics", 
 	<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:hydroponics"}), [
