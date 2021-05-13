@@ -151,3 +151,14 @@ scripts.process.work(ic2Cent, null , [<advancedrocketry:crystal:2> * 4] , null ,
 scripts.process.work(ic2Cent, null , [<advancedrocketry:crystal:4> * 4] , null , [<jaopca:item_crystaliridium> * 3 , <actuallyadditions:item_crystal_empowered:5>* 2 , <environmentaltech:erodium_crystal>  ] , null , null , null);
 
 scripts.process.compress(<ore:blockCharcoal>, <advancedrocketry:misc:1>, "No Exceptions");
+
+# Generator was too cheap compared to other coal gens
+# [Coal Generator] from [Furnace][+2]
+craft.remake(<libvulpes:coalgenerator>, [
+  "B",
+  "F",
+  "□"], {
+  "□": <ore:plateTitanium>, # Titanium Plate
+  "B": <ore:itemBattery>,   # Small Battery
+  "F": <minecraft:furnace>, # Furnace
+});

@@ -404,6 +404,16 @@ val materials = [
 	"Enderium",
 ] as string[];
 
+val catalysts = [
+	<ore:dustCryotheum>, # Cryotheum Dust
+	<thermalfoundation:material:832>, # Rosin
+	<ore:itemSlagRich>, # Rich Slag
+	<ore:gearEmerald>, # Emerald Gear
+	<ore:clathrateRedstone>, # Destabilized Clathrate
+] as IIngredient[];
+
+
+recipes.removeShaped(<thermalexpansion:capacitor:*>);
 for i, mat in materials {
 	val lvl_i  = {Level: i as byte} as IData;
 	val lvl_im = {Level: (i - 1) as byte} as IData;
@@ -418,6 +428,19 @@ for i, mat in materials {
 		"g": oreDict["gear" ~ mat],
 		"□": <tconstruct:clear_glass>,
 	}, i!=0 ? upgradeFnc : null);
+
+	# [Flux Capacitor (Basic)] from [Copper Ingot][+3]
+	craft.make(<thermalexpansion:capacitor>.definition.makeStack(i), ["pretty",
+		"  ♥  ",
+		"▬ - ▬",
+		"♥ ▲ ♥"], {
+		"▲": catalysts[i],
+		"♥": <ore:ingotConductiveIron>,
+		"▬": oreDict["ingot" ~ mat],
+		"-": i!=0
+			? <thermalexpansion:capacitor>.definition.makeStack(i - 1) as IIngredient
+			: <ore:ingotCopper>,
+	});
 
 	if(i != 0) {
 		# Simplify Satchels

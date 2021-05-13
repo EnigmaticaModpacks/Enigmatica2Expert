@@ -19,14 +19,6 @@ recipes.addShapeless(<thaumictinkerer:black_quartz_block>, [<botania:quartztyped
 	[[<ore:stone>, <ore:stone>, <ore:stone>],
 	[<minecraft:lava_bucket>, <ore:stone>, <minecraft:lava_bucket>], 
 	[<ore:stone>, <ore:stone>, <ore:stone>]]);
-
-# OpenBlocks Scaffolding / Random Things Block of Sticks
-	recipes.remove(<randomthings:blockofsticks>);
-	recipes.addShaped("Random Things Block of Sticks", 
-	<randomthings:blockofsticks> * 8, 
-	[[<ore:stickWood>, <ore:stickWood>, <ore:stickWood>],
-	[<ore:stickWood>, <ore:stickWood>, <ore:stickWood>], 
-	[<ore:stickWood>, <ore:stickWood>, <ore:stickWood>]]);
 	
 # Pam's Lemonade
 	recipes.remove(<harvestcraft:lemonaideitem>);

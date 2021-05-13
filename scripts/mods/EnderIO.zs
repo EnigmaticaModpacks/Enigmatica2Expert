@@ -431,3 +431,41 @@ craft.remake(<enderio:item_material:77> * 8, ["pretty",
 
 # Conflicts
 recipes.removeByRecipeName("enderio:self_resetting_lever_300_seconds_inverted");
+
+# Harder to compete with all other item transfer methods
+# [Item Conduit*8] from [Vibrant Alloy Nugget][+1]
+craft.remake(<enderio:item_item_conduit> * 8, ["pretty",
+  "C C C",
+  "‚ ‚ ‚",
+  "C C C"], {
+  "C": <ore:itemConduitBinder>,  # Conduit Binder
+  "‚": <ore:nuggetVibrantAlloy>, # Vibrant Alloy Nugget
+});
+
+
+# Compressed blocks smelting
+val compressedBlocks = [
+	<extrautils2:compressedcobblestone>             , <additionalcompression:stone_compressed>  ,
+	<extrautils2:compressedcobblestone:1>           , <additionalcompression:stone_compressed:1>,
+	<extrautils2:compressedcobblestone:2>           , <additionalcompression:stone_compressed:2>,
+	<extrautils2:compressedcobblestone:3>           , <additionalcompression:stone_compressed:3>,
+	<extrautils2:compressedcobblestone:4>           , <additionalcompression:stone_compressed:4>,
+	<extrautils2:compressedcobblestone:5>           , <additionalcompression:stone_compressed:5>,
+	<extrautils2:compressedcobblestone:6>           , <additionalcompression:stone_compressed:6>,
+	<extrautils2:compressedcobblestone:7>           , <additionalcompression:stone_compressed:7>,
+	<additionalcompression:cobblestone_compressed:8>, <additionalcompression:stone_compressed:8>,
+	<additionalcompression:cobblestone_compressed:9>, <additionalcompression:stone_compressed:9>,
+] as IItemStack[];
+
+for i, input in compressedBlocks {
+	if(i%2==1) continue;
+	scripts.wrap.enderio.AlloySmelter.addRecipe(compressedBlocks[i + 1], [input], (i + 1) * 20000, (i + 1) * 200);
+}
+
+# Cheaper cause vanilla recipe require Vibrant Alloy
+# [Dark Steel Upgrade "Empowered"] from [Pulsating Crystal][+1]
+craft.reshapeless(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:energyupgrade"}), 
+  "B*", {
+  "B": <enderio:item_dark_steel_upgrade>, # Blank Dark Steel Upgrade
+  "*": <ore:itemPulsatingCrystal>,        # Pulsating Crystal
+});

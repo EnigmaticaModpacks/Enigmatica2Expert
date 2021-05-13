@@ -31,7 +31,8 @@
 	patchouli:             {id: "patchouli:guide_book",                 Count: 1 as byte, tag: {"akashictome:definedMod": "patchouli", "patchouli:book": "patchouli:e2e_e"},            Damage: 0 as short},
 
 	deepmoblearning:       {id: "patchouli:guide_book",                 Count: 1 as byte, tag: {"akashictome:definedMod": "deepmoblearning", "patchouli:book": "deepmoblearning:book"}, Damage: 0 as short},
-	conarm:                {id: "conarm:book",                          Count: 1 as byte, tag: {"akashictome:definedMod": "conarm"},                                                    Damage: 0 as short}
+	conarm:                {id: "conarm:book",                          Count: 1 as byte, tag: {"akashictome:definedMod": "conarm"},                                                    Damage: 0 as short},
+	endreborn: 						 {id: "patchouli:guide_book", 								Count: 1 as byte, tag: {"akashictome:definedMod": "endreborn", "patchouli:book": "endreborn:book"}, 						Damage: 0 as short}, 
 	}});
 	
 	recipes.addShaped("SuperTome", superTome, [

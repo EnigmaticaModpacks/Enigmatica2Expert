@@ -58,14 +58,19 @@ craft.remake(<cyclicmagic:block_storeempty>, ["pretty",
 	[<minecraft:rabbit_foot>, <extrautils2:goldenlasso>.withTag({Animal:{id:"minecraft:chicken"} }), <minecraft:rabbit_foot>], 
 	[<ore:feather>, <ore:feather>, <ore:feather>]]);
 	
-  # Speed Charm + Elythra is too OP
-  <cyclicmagic:charm_speed>.maxDamage = 200;
-	recipes.remove(<cyclicmagic:charm_speed>);
-	recipes.addShaped("Speed Charm", 
-	<cyclicmagic:charm_speed>, 
-	[[null, <minecraft:potion>.withTag({Potion: "minecraft:swiftness"}), null],
-	[<ore:foodCake>, <extrautils2:goldenlasso>.withTag({Animal:{id:"minecraft:horse"} }), <ore:foodCake>], 
-	[null, <minecraft:potion>.withTag({Potion: "minecraft:swiftness"}), null]]);
+# Speed Charm + Elythra is too OP
+<cyclicmagic:charm_speed>.maxDamage = 100;
+# [Speed Charm] from [Golden Lasso][+3]
+craft.remake(<cyclicmagic:charm_speed>, ["pretty",
+  "A S A",
+  "H G H",
+  "A S A"], {
+  "A": <quark:glowshroom>, # Glowshroom
+  "S": <actuallyadditions:item_solidified_experience>, # Solidified Experience
+  "G": <extrautils2:goldenlasso>.withTag({Animal: {id: "minecraft:horse"}}), # Golden Lasso
+  "H": <ore:foodCake>,    # Holiday Cake
+});
+
 
 # Harvester
 	recipes.remove(<cyclicmagic:harvester_block>);
@@ -336,7 +341,7 @@ craft.remake(<cyclicmagic:beacon_potion>, ["pretty",
 });
 
 # [Air_Charm] from [Ender_Orb][+3]
-<cyclicmagic:charm_air>.maxDamage = 2000;
+<cyclicmagic:charm_air>.maxDamage = 1000;
 craft.remake(<cyclicmagic:charm_air>, ["pretty",
   "B I B",
   "G E G",
@@ -674,3 +679,14 @@ craft.remake(<cyclicmagic:tool_elevate>, ["pretty",
 
 # Remove because transcended by Conarm modifiers
 utils.rh(<cyclicmagic:glowing_helmet>);
+
+# [Water Candle] from [End Rod][+3]
+craft.remake(<cyclicmagic:water_candle>, ["pretty",
+  "  R  ",
+  "▲ / ▲",
+  "□ □ □"], {
+  "□": <minecraft:light_weighted_pressure_plate>, # Weighted Pressure Plate (Light)
+  "▲": <scalinghealth:heartdust>,                 # Heart Dust
+  "R": <rats:rat_lantern>,                        # Rat Lantern
+  "/": <minecraft:end_rod>,                       # End Rod
+});

@@ -12,13 +12,16 @@ import scripts.craft.grid.Grid;
 recipes.remove(<advancedrocketry:misc:1>);
 
 # Heart dust
-recipes.remove(<scalinghealth:heartdust>);
-mods.rustic.EvaporatingBasin.addRecipe(<scalinghealth:heartdust>, <liquid:blood>*500);
+val HD = <scalinghealth:heartdust>;
+val HS = <scalinghealth:crystalshard>;
+# [Heart Dust] from [Pestle and Mortar][+1]
+craft.reshapeless(HD, 'A****', {
+  "A": <ore:pestleAndMortar>,        # Pestle and Mortar
+  "*": HS, # Heart Crystal Shard
+});
+scripts.process.crush(HS * 2, HD, "only: eu2Crusher AACrusher", [HD], [0.2f]);
+scripts.process.crush(HS    , HD, "only: SagMill Pulverizer", [HD, HD, HD], [0.8f, 0.4f, 0.2f]);
 
-# Heart shard from heat dust
-val hd = <scalinghealth:heartdust>;
-val hs = <scalinghealth:crystalshard>;
-scripts.wrap.actuallyadditions.Compost.addRecipe(hs, <actuallyadditions:block_crystal>, hd, <minecraft:red_glazed_terracotta>);
 
 # Honey drop on evaporation
 mods.rustic.EvaporatingBasin.addRecipe(<forestry:honey_drop>, <liquid:animania_honey> * 1000);

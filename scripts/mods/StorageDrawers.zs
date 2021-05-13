@@ -56,15 +56,25 @@ import crafttweaker.data.IData;
 	[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
 	[<ore:stickWood>, <ore:plankWood>, <ore:stickWood>]]);
 
-# [Creative_Storage_Upgrade] from [Black_Hole_Unit][+3]
-craft.remake(<storagedrawers:upgrade_creative>, ["pretty",
-  "# S #",
-  "U B U",
-  "# S #"], {
+# [Creative Storage Upgrade*4] from [Black Hole Unit][+8]
+craft.remake(<storagedrawers:upgrade_creative> * 4, ["pretty",
+  "i M # # # M i",
+  "M M T ‚ T M M",
+  "# T S ⌃ S T #",
+  "# ‚ t B t ‚ #",
+  "# T S ⌃ S T #",
+  "M M T ‚ T M M",
+  "i M # # # M i"], {
   "B": <industrialforegoing:black_hole_unit>, # Black Hole Unit
-  "#": <ore:stickWood>,                       # Stick
-  "S": <storagedrawers:upgrade_storage:4>,    # Storage Upgrade (V)
-  "U": <storagedrawers:upgrade_template>      # Upgrade Template
+  "#": <ore:plankWood>,                       # Spectre Planks
+  "S": <storagedrawers:upgrade_storage:2>,    # Storage Upgrade (III)
+  "⌃": <extrautils2:decorativesolid:6>,       # Blue Quartz
+  "T": <thaumcraft:taint_log>,                # Taintwood Log
+  "t": <storagedrawers:upgrade_storage:3>,    # Storage Upgrade (IV)
+  "i": <rftools:storage_module:2>,            # Tier 3 Storage Module
+  "‚": <ore:nuggetDraconicMetal>,             # Draconic Metal Nugget
+  "M": <extrautils2:decorativesolidwood>,     # Magical Planks
+  remove: <storagedrawers:upgrade_creative>,  # Creative Storage Upgrade
 });
 
 # Upgrades

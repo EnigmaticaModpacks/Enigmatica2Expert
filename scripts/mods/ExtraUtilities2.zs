@@ -50,14 +50,6 @@ import crafttweaker.item.IIngredient;
 	[<ore:dustLunar>, <ore:ingotUnstable>, <ore:dustLunar>], 
 	[<ore:dustLunar>, <ore:dustLunar>, <ore:dustLunar>]]);
 
-# Nether Star Generator
-	recipes.remove(<extrautils2:machine>.withTag({Type: "extrautils2:generator_netherstar"}),true);
-	recipes.addShaped("Nether Star Generator", 
-	<extrautils2:machine>.withTag({Type: "extrautils2:generator_netherstar"}), 
-	[[<quark:black_ash>, <quark:black_ash>, <quark:black_ash>],
-	[<ore:ingotEnderEnhanced>, <extendedcrafting:material:40>, <ore:ingotEnderEnhanced>], 
-	[<ore:blockRedstone>, <draconicevolution:generator>, <ore:blockRedstone>]]);
-
 # Fixing the Slime generator recipe (something went wrong with the oredict)
 	recipes.remove(<extrautils2:machine>.withTag({Type: "extrautils2:generator_slime"}),true);
 	recipes.addShaped("SlimeGen", 
@@ -310,3 +302,9 @@ craft.remake(<extrautils2:fireaxe>, ["pretty",
   "O #",
   "  #"], coreToolIngrs
 );
+
+
+# Harder Flat Transfer Nodes
+recipes.remove(<extrautils2:flattransfernode:*>);
+mods.mechanics.addCrushingBlockRecipe(<extrautils2:grocket:0>, [<extrautils2:flattransfernode:0>], [1.0d]);
+mods.mechanics.addCrushingBlockRecipe(<extrautils2:grocket:2>, [<extrautils2:flattransfernode:1>], [1.0d]);

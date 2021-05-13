@@ -118,7 +118,7 @@ import scripts.craft.grid.Grid;
 	recipes.addShaped("Redstone Engineering Block", 
 	<immersiveengineering:metal_decoration0:3> * 2, 
 	[[<ore:plateCopper>, <ore:ingotConstantan>, <ore:plateCopper>],
-	[<ore:ingotConstantan>, <ore:gearRedstone>, <ore:ingotConstantan>], 
+	[<ore:ingotConstantan>, <ore:gemRedstone>, <ore:ingotConstantan>], 
 	[<ore:plateCopper>, <ore:ingotConstantan>, <ore:plateCopper>]]);
 
 # Light Engineering Block
@@ -496,3 +496,6 @@ scripts.wrap.forestry.ThermionicFabricator.addCast(<immersiveengineering:stone_d
 }).shaped(), <liquid: glass> * 1000, <forestry:wax_cast:*>);
 
 # ---------------------------------------------------------
+
+# For some reason all coils melt into gold only in Magmatic Crucible
+mods.thermalexpansion.Crucible.removeRecipe(<immersiveengineering:metal_decoration0:0>);

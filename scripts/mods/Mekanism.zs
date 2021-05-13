@@ -417,24 +417,6 @@ for i, it in mekTankIngrs {
 	});
 }
 
-# [Dynamic Tank*10] from [Glass][+1]
-craft.remake(<mekanism:basicblock:9> * 10, ["pretty",
-  "  ⌂  ",
-  "⌂   ⌂",
-  "  ⌂  "], {
-  "⌂": <ic2:casing:5>, # Steel Item Casing
-  remove: <mekanism:basicblock:9>, # Dynamic Tank
-});
-
-# [Structural Glass*10] from [Glass][+1]
-craft.remake(<mekanism:basicblock:10> * 10, ["pretty",
-  "  ⌂  ",
-  "⌂ ■ ⌂",
-  "  ⌂  "], {
-  "■": <ore:blockGlass>, # Glass
-  "⌂": <ic2:casing:5>, # Steel Item Casing
-  remove: <mekanism:basicblock:10>, # Structural Glass
-});
 
 # [Turbine Blade] from [Atomic Alloy][+1]
 craft.remake(<mekanismgenerators:turbineblade>, ["pretty",

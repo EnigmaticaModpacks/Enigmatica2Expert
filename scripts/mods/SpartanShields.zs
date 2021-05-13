@@ -88,6 +88,8 @@ while (k < listShield.length) {
   # Recycling
   if(!isNull(recycle)) {
     scripts.wrap.immersiveengineering.ArcFurnace.addRecipe(recycle * 8, shield, <immersiveengineering:material:7>, 800, 2048);
+    // mods.immersivetweaker.Recycling.allowItemForRecycling(shield); # Add a recyclable item 
+    // Recycling.makeStackInvalidRecyclingOutput(<minecraft:iron_ingot>); # Prevent an item from being outputted
   }
 
   k += 3;

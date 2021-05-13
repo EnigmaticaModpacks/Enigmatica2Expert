@@ -18,15 +18,16 @@ import crafttweaker.item.IItemStack as IItemStack;
 	[<integrateddynamics:crystalized_menril_block>, <integrateddynamics:energy_battery>.withTag({}), <integrateddynamics:crystalized_menril_block>], 
 	[<integrateddynamics:crystalized_menril_chunk>, <ic2:te:46>, <integrateddynamics:crystalized_menril_chunk>]]);
 
-# [Mechanical Squeezer] from [Diamond Gear][+3]
+# [Mechanical Squeezer] from [Crushing Block][+4]
 craft.remake(<integrateddynamics:mechanical_squeezer>, ["pretty",
-  "i S i",
-  "Ϟ S Ϟ",
-  "D S D"], {
-  "S": <integrateddynamics:squeezer>, # Squeezer
-  "D": <ore:plateDenseObsidian>,      # Dense Obsidian Plate
-  "i": <ore:gearDiamond>,             # Diamond Gear
-  "Ϟ": <integrateddynamics:energy_battery>.withTag({}), # Energy Battery
+  "¤ ■ ¤",
+  "Ϟ   Ϟ",
+  "□ * □"], {
+  "■": <mechanics:crushing_block>, # Crushing Block
+  "□": <ore:plateDenseLapis>,      # Dense Lapis Lazuli Plate
+  "¤": <ore:gearVibrant>,          # Vibrant Bimetal Gear
+  "*": <actuallyadditions:block_crystal_empowered:1>, # Empowered Palis Crystal Block
+  "Ϟ": <integrateddynamics:energy_battery>, # Energy Battery
 });
 
 # Mechanical Drying Basin

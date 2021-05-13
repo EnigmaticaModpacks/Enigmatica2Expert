@@ -72,8 +72,7 @@ import crafttweaker.item.IIngredient;
 # Machine Base
 	recipes.remove(<rftools:machine_base>);
 	recipes.addShapedMirrored("Machine Base", 
-	<rftools:machine_base>, 
-	[[null, null, null],
+	<rftools:machine_base>, [
 	[<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>], 
 	[<ore:stone>, <ore:stone>, <ore:stone>]]);
 
@@ -215,3 +214,71 @@ remake("rftools matter_beamer", <rftools:matter_beamer>, [
 
 # Remove Dimensional block, so it could be only obtainable in Dimensions
 recipes.remove(<rftoolsdim:dimensional_blank_block>);
+
+# [Syringe] from [Tank][+2]
+recipes.removeShaped(<rftools:syringe>);
+craft.make(<rftools:syringe>, ["pretty",
+  "‚    ",
+  "  T  ",
+  "    □"], {
+  "□": <ore:plateAdvancedAlloy>, # Advanced Alloy
+  "T": <openblocks:tank>, # Tank
+  "‚": <ore:nuggetSteel>, # Steel Nugget
+});
+
+# [Charged Porter] from [Crystal Memory][+3]
+craft.remake(<rftools:charged_porter>, ["pretty",
+  "  ╳  ",
+  "▬ * ▬",
+  "  □  "], {
+  "□": <ore:plateAdvancedAlloy>, # Advanced Alloy
+  "╳": <ic2:lapotron_crystal>.anyDamage(), # Lapotron Crystal
+  "*": <ic2:crystal_memory>, # Crystal Memory
+  "▬": <extendedcrafting:material:36>,   # Ender Ingot
+});
+
+# [Advanced Charged Porter] from [Charged Porter][+2]
+craft.remake(<rftools:advanced_charged_porter>, ["pretty",
+  "▬ ‚ ▬",
+  "‚ C ‚",
+  "▬ ‚ ▬"], {
+  "C": <rftools:charged_porter>,       # Charged Porter
+  "‚": <extendedcrafting:material:49>, # Enhanced Ender Nugget
+  "▬": <extendedcrafting:material:36>, # Ender Ingot
+});
+
+# [Screen Controller] from [Machine Base][+4]
+craft.remake(<rftools:screen_controller>, ["pretty",
+  "I * I",
+  "□ M □",
+  "I п I"], {
+  "□": <ore:plateSilicon>,            # Silicon Plate
+  "I": <ore:itemInsulatedGlassCable>, # Glass Fibre Cable
+  "*": <ic2:lapotron_crystal>.anyDamage(), # Lapotron Crystal
+  "M": <rftools:machine_base>,        # Machine Base
+  "п": <ore:plateAdvancedAlloy>, # Advanced Alloy
+});
+
+# [Booster] from [Machine Base][+4]
+craft.remake(<rftools:booster>, ["pretty",
+  "I ▬ I",
+  "□ M □",
+  "I ~ I"], {
+  "□": <ore:plateSilicon>,            # Silicon Plate
+  "I": <ore:itemInsulatedGlassCable>, # Glass Fibre Cable
+  "▬": <ore:ingotPinkMetal>,          # Pink Slime Ingot
+  "M": <rftools:machine_base>,        # Machine Base
+  "~": Bucket("ic2hot_water") | Bucket("hot_spring_water"), # Hotspring Water Bucket
+});
+
+# [Elevator] from [Machine Base][+4]
+craft.remake(<rftools:elevator>, ["pretty",
+  "I R I",
+  "□ M □",
+  "I T I"], {
+  "□": <ore:plateSilicon>,            # Silicon Plate
+  "R": <ore:itemRubber>,              # Plastic
+  "T": <ic2:upgrade:1>,               # Transformer Upgrade
+  "I": <ore:itemInsulatedGlassCable>, # Glass Fibre Cable
+  "M": <rftools:machine_base>,        # Machine Base
+});

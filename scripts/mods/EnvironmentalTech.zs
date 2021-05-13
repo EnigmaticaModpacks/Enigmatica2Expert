@@ -285,7 +285,7 @@ for i in 0 .. 6 {
 	evtIngrs["c"] = (i==0) ? <actuallyadditions:block_crystal:1> : itemUtils.getItem("environmentaltech:solar_cont_" ~ (i));
 	evtIngrs["▄"] = <ore:blockBlackQuartz>;
 	evtIngrs["▆"] = <preston:compressed_block>.withTag({stack: {id: "actuallyadditions:block_misc", Count: 1 as byte, Damage: 2 as short}, level: 1});
-	evtIngrs["█"] = <preston:compressed_block>.withTag({stack: {id: "actuallyadditions:block_misc", Count: 1 as byte, Damage: 2 as short}, level: 2});
+	evtIngrs["█"] = compressIt(<actuallyadditions:block_misc:2>, 2);
 
 
 	recipes.remove(solController);

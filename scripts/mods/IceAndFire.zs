@@ -89,7 +89,6 @@ import crafttweaker.item.IItemStack;
 <iceandfire:myrmex_jungle_shovel>,
 <iceandfire:myrmex_jungle_sword>,
 <iceandfire:silver_ore>,
-<iceandfire:silver_nugget>,
 
 <iceandfire:dragonbone_sword>,
 <iceandfire:deathworm_yellow_helmet>,
@@ -201,6 +200,14 @@ import crafttweaker.item.IItemStack;
 	for item in removals {
 		utils.rh(item);
 	}
+
+
+
+for item in [
+	<iceandfire:silver_nugget>,
+] as IItemStack[] {
+	utils.rh(item, false);
+}
 
 	# Dragon Armor
 	val dragonArmor = [
@@ -566,3 +573,14 @@ scripts.process.squeeze([<iceandfire:jungle_myrmex_cocoon>  ], <liquid:resin>*48
 
 # StackSize was 1
 <iceandfire:ambrosia>.maxStackSize = 64;
+
+# Add recipe because snow villages is disabled
+# [Fishing Spear] from [Steel Arrow Head][+2]
+craft.remake(<iceandfire:fishing_spear>, ["pretty",
+  "S w  ",
+  "w M  ",
+  "    M"], {
+  "S": <tconstruct:arrow_head>.withTag({Material: "steel"}), # Steel Arrow Head
+  "w": <ore:woolPrime>, # Wool (Dorset, Brown)
+  "M": <extrautils2:decorativesolidwood>, # Magical Planks
+});

@@ -479,3 +479,16 @@ craft.remake(<actuallyadditions:block_phantom_liquiface>, [
   "P": <actuallyadditions:block_phantomface>, # Phantomface
   "F": <flopper:flopper>,                     # Flopper
 });
+
+# Harder to require more exploration
+# [Spawner Changer] from [Terrestrial Artifact][+3]
+recipes.removeShaped(<actuallyadditions:item_spawner_changer>);
+craft.make(<actuallyadditions:item_spawner_changer>, ["pretty",
+  "R S ▲",
+  "S T S",
+  "▲ S ▲"], {
+  "▲": <scalinghealth:heartdust>,            # Heart Dust
+  "R": <iceandfire:rotten_egg>,              # Rotten Egg
+  "S": <actuallyadditions:item_misc:20>,     # Spawner Shards
+  "T": <biomesoplenty:terrestrial_artifact>, # Terrestrial Artifact
+});

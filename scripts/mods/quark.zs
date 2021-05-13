@@ -34,3 +34,6 @@ for i, item in <quark:bark>.definition.subItems {
     "c": <additionalcompression:logwood_compressed>,
   });
 }
+
+# Fix conflicts with CoT compressed granite
+recipes.remove(<quark:world_stone_pavement:*>);

@@ -14,9 +14,9 @@ scripts.process.melt(<mechanics:heavy_nugget>, <liquid:heavy_metal> * 16,   "No 
 scripts.process.melt(<mechanics:heavy_ingot>,  <liquid:heavy_metal> * 144,  "No Exceptions");
 scripts.process.melt(<mechanics:heavy_block>,  <liquid:heavy_metal> * 1296, "No Exceptions");
 
-# heavy crushing block
+# Heavy Crushing block
 val compressed1 = <mechanics:heavy_block>;
-val compressed2 = compressIt(<actuallyadditions:block_misc:2>, 2);
+val compressed2 = compressIt(<actuallyadditions:block_misc:2>, 1);
 recipes.addShaped(<mechanics:crushing_block>, [
   [compressed1, compressed1],
   [compressed2, compressed2]]);
@@ -77,6 +77,14 @@ mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedobsidian> * 16);
 mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedglowstone> * 16);
 mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedobsidian> * 1296);
 mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedglowstone> * 1296);
+
+# Add recipes for high-end machines
+scripts.process.melt(<ore:nuggetRefinedObsidian>, <liquid:refined_obsidian>  *   16, "only: Crucible");
+scripts.process.melt(<ore:nuggetRefinedGlowstone>,<liquid:refined_glowstone> *   16, "only: Crucible");
+scripts.process.melt(<ore:ingotRefinedObsidian>,  <liquid:refined_obsidian>  *  144, "only: Crucible");
+scripts.process.melt(<ore:ingotRefinedGlowstone>, <liquid:refined_glowstone> *  144, "only: Crucible");
+scripts.process.melt(<ore:blockRefinedObsidian>,  <liquid:refined_obsidian>  * 1296, "only: Crucible");
+scripts.process.melt(<ore:blockRefinedGlowstone>, <liquid:refined_glowstone> * 1296, "only: Crucible");
 
 # Also recipe added in ChemicalReactor.xml
 # Add Tube recipes

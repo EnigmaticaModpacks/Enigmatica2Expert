@@ -438,12 +438,20 @@ val itemsToRecycle as string[] = [
 "twilightforest:yeti_helmet"             , "5"   , "twilightforest:alpha_fur"        , "!saw"             ,
 "twilightforest:naga_leggings"           , "7"   , "twilightforest:naga_scale"       , "!saw"             ,
 "twilightforest:naga_chestplate"         , "8"   , "twilightforest:naga_scale"       , "!saw"             ,
-"rats:archeologist_hat"                  , "4"   , "thermalfoundation:material:801"  ,""                  ,
-"quark:archaeologist_hat"                , "4"   , "thermalfoundation:material:801"  ,""                  ,
-"rats:pirat_cutlass"                     , "4"   , "thermalfoundation:material:133"  ,"nickel"            ,
-"rats:piper_hat"                         , "10"  , "minecraft:paper"                 ,"!saw"              ,
-"rats:pirat_hat"                         , "5"   , "minecraft:wool:15"               ,"!saw"              ,
-"quark:pirate_hat"                       , "5"   , "minecraft:wool:15"               ,"!saw"              ,
+"rats:archeologist_hat"                  , "4"   , "thermalfoundation:material:801"  , ""                 ,
+"quark:archaeologist_hat"                , "4"   , "thermalfoundation:material:801"  , ""                 ,
+"rats:pirat_cutlass"                     , "4"   , "thermalfoundation:material:133"  , "nickel"           ,
+"rats:piper_hat"                         , "10"  , "minecraft:paper"                 , "!saw"             ,
+"rats:pirat_hat"                         , "5"   , "minecraft:wool:15"               , "!saw"             ,
+"deepmoblearning:glitch_infused_boots"      , "4" , "deepmoblearning:glitch_fragment" , "" ,
+"deepmoblearning:glitch_infused_chestplate" , "8" , "deepmoblearning:glitch_fragment" , "" ,
+"deepmoblearning:glitch_infused_helmet"     , "5" , "deepmoblearning:glitch_fragment" , "" ,
+"deepmoblearning:glitch_infused_leggings"   , "7" , "deepmoblearning:glitch_fragment" , "" ,
+"deepmoblearning:glitch_infused_sword"      , "2" , "deepmoblearning:glitch_fragment" , "" ,
+"ic2:nano_boots"      , "4" , "ic2:crafting:15" , "!saw" ,
+"ic2:nano_chestplate" , "8" , "ic2:crafting:15" , "!saw" ,
+"ic2:nano_helmet"     , "5" , "ic2:crafting:15" , "!saw" ,
+"ic2:nano_leggings"   , "7" , "ic2:crafting:15" , "!saw" ,
 ];
 
 # Exceptions for machines that can saw
@@ -463,7 +471,7 @@ for i in 0 to itemsToRecycle.length {
 			} else if (itemsToRecycle[i+3] == "!saw") {
 				scripts.process.saw(item, resclItem * count, sawExcs);
 			} else {
-				scripts.process.crush(item, resclItem * count, "no exceptions", null, null);
+				scripts.process.crush(item, resclItem * count, "only: IECrusher SagMill Pulverizer", null, null);
 			}
 		} else {
 			logger.logWarning("Cant recycle [" ~ itemsToRecycle[i] ~ "]" ~ (isNull(item) ? "NULL" : "") ~" -> [" ~ itemsToRecycle[i+2] ~ "]" ~ (isNull(resclItem) ? "NULL" : ""));

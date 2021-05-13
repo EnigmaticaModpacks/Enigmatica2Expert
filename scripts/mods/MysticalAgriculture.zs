@@ -60,13 +60,6 @@ recipes.addShapedMirrored("Wither Proof Glass",
 	<botania:spark>, <botania:spark>, <botania:spark>, <botania:spark>,
 	<astralsorcery:itemcraftingcomponent:4>, <astralsorcery:itemcraftingcomponent:4>, <botania:manaresource:1>, <botania:manaresource:1>,
 	<botania:manaresource:1>, <botania:manaresource:1>, <astralsorcery:itemcraftingcomponent:4>, <astralsorcery:itemcraftingcomponent:4>]);
-	
-# Block of Prosperity
-	recipes.addShapedMirrored("Block of Prosperity", 
-	<mysticalagriculture:storage:5> * 2, 
-	[[<minecraft:emerald_block>, <botania:grassseeds:*>, <minecraft:quartz_block>],
-	[<botania:grassseeds:*>, <astralsorcery:itemrockcrystalsimple>.anyDamage(), <botania:grassseeds:*>], 
-	[<minecraft:gold_block>, <botania:grassseeds:*>, <minecraft:diamond_block>]]);
 
 # Tier 6 Crafting Seeds 
 	recipes.remove(<mysticalagradditions:insanium:1>);

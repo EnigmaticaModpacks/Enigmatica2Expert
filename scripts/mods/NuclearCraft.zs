@@ -353,3 +353,12 @@ for fluid in [
 
 # Remove Niter recipe (way cheaper than any other)
 mods.nuclearcraft.manufactory.removeRecipeWithOutput(<thermalfoundation:material:772> * 2);
+
+# [Universal Bin] from [Boron Ingot][+1]
+craft.remake(<nuclearcraft:bin>, ["pretty",
+  "□ ▬ □",
+  "▬   ▬",
+  "□ ▬ □"], {
+  "□": <ore:plateBasic>, # Basic Plating
+  "▬": <ore:ingotBoron>, # Boron Ingot
+});

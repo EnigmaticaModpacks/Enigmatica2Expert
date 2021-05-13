@@ -491,10 +491,10 @@ utils.rh(<plustic:centrifuge>);
 # Lock until endgame to lock mob dropped artifacts
 # [Plate of Unsealing] from [Silky Block of Jewel][+2]
 craft.remake(<tconevo:material:2>, ["pretty",
-  "■ ▄ ■",
-  "▄ ▀ ▄",
-  "■ ▄ ■"], {
-  "■": <ore:blockWyvernMetal>, # Wyvern Metal Block
-  "▀": <tconstruct:metal:6>,   # Silky Block of Jewel
-  "▄": <ore:blockCobalt>,      # Block of Cobalt
+  "▄ ■ ▄",
+  "■ ▀ ■",
+  "▄ ■ ▄"], {
+  "■": <ore:blockCobalt>,    # Block of Cobalt
+  "▀": <tconstruct:metal:6>, # Silky Block of Jewel
+  "▄": <ore:blockUUMatter>,  # UU-Metal Block
 });

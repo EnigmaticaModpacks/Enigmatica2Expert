@@ -208,7 +208,7 @@ craft.remake(<industrialforegoing:mob_slaughter_factory>, ["pretty",
   "R T R",
   "F M F",
   "R □ R"], {
-  "□": <ic2:crafting:4>,                       # Iridium Reinforced Plate
+  "□": <ore:plateIridium>,
   "R": <ore:itemRubber>,                       # Plastic
   "T": <immersiveengineering:metal_device1:8>, # Tesla Coil
   "F": <redstonearsenal:material:224>,         # Fluxed Armor Plating

@@ -81,21 +81,33 @@ for name, ingrs in turbineTypes {
 		"  ▬"], ingrs);
 
 	# Rotor
-	craft.make(rotor, ["pretty",
+	craft.make(name=="iron" ? rotor*4 : rotor, ["pretty",
 		"B B B",
 		"B / B",
 		"B B B"], ingrs);
 
-	# Turbine
-	craft.make(name=="iron" ? turbine*4 : turbine, ["pretty",
-		"◙ ◙ ◙",
-		"R r R",
-		"◙ o ◙"], {
-		"r": rotor,
-		"R": <advgenerators:iron_wiring>,        # Redstone-Iron Wiring
-		"◙": <advgenerators:iron_frame>,         # Iron Frame
-		"o": ingrs["o"]
-	});
+	if(name=="iron") {
+		# Turbine
+		craft.make(turbine * 4, ["pretty",
+			"r ◙ r",
+			"◙ o ◙",
+			"r ◙ r"], {
+			"r": rotor,
+			"◙": <advgenerators:iron_frame>,  # Iron Frame
+			"o": ingrs["o"]
+		});
+	} else {
+		# Turbine
+		craft.make(turbine, ["pretty",
+			"◙ ◙ ◙",
+			"R r R",
+			"◙ o ◙"], {
+			"r": rotor,
+			"R": <advgenerators:iron_wiring>, # Redstone-Iron Wiring
+			"◙": <advgenerators:iron_frame>,  # Iron Frame
+			"o": ingrs["o"]
+		});
+	}
 	
 	# Kit
 	if(isNull(kit)) continue;

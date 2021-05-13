@@ -37,16 +37,16 @@ scripts.wrap.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreLead>, <thermalfo
 # Removing wrong aspects from stuff
 	<ic2:dust:21>.setAspects(<aspect:metallum> * 1);
 
-# [Equisetum_Ineris_Spore*4] from [Insanium_Essence][+2]
+# [Void Seed*4] from [Insanium Essence][+4]
 craft.remake(<thaumcraft:void_seed> * 4, ["pretty",
-  "S A S",
-  "B I B",
-  "I L I"], {
-  B: <contenttweaker:blasted_coal>,
-  S: <exnihilocreatio:item_material:3>,
-	L: <botania:rune:14>,
-  I: <ore:essenceInsanium>,
-	A: <thaumcraft:taint_rock>|<thaumcraft:taint_soil>|<thaumcraft:taint_crust>,
+  "A I A",
+  "© T ©",
+  "T E T"], {
+  "A": <exnihilocreatio:item_material:3>, # Ancient Spores
+  "E": <ore:runeEnvyB>,                   # Rune of Envy
+  "©": <contenttweaker:blasted_coal>,     # Blasted Coal
+  "I": <ore:essenceInsanium>,             # Insanium Essence
+  "T": <thaumcraft:taint_rock>|<thaumcraft:taint_soil>|<thaumcraft:taint_crust>, # Tainted Rock
 });
 
 # Wood Table
@@ -155,3 +155,21 @@ scripts.wrap.thaumcraft.Crucible.registerRecipe("Tallow from blubber",      "HED
 
 # Conflicts
 utils.rh(<thaumcraft:nugget:1>);
+
+# Primordial Pearl alt (for some people who dont want to close rifts)
+scripts.wrap.astralsorcery.Altar.addConstellationAltarRecipe(
+	'Primordial Pearl alt',	<thaumcraft:primordial_pearl:7>, 1500, 250, scripts.craft.grid.Grid([
+	"TVT"+
+	"CSC"+
+	"TVT"+
+	"EEEE"+
+	"♦♦♦♦◊◊◊◊"], {
+  "C": <thaumcraft:causality_collapser>,    # Causality Collapser
+  "S": <ore:runeSlothB>,                    # Rune of Sloth
+  "T": <thaumcraft:taint_log>,              # Taintwood Log
+  "E": <contenttweaker:empowered_phosphor>, # Empowered Phosphor
+  "V": <thaumcraft:void_seed>,              # Void Seed
+  "♦": <ore:gemTopaz>,                      # Topaz
+  "◊": <ore:gemTanzanite>,                  # Tanzanite
+	}).shapeless()
+);

@@ -3,6 +3,14 @@ import crafttweaker.item.IIngredient;
 
 #modloaded randomthings
 
+# OpenBlocks Scaffolding / Random Things Block of Sticks
+	recipes.remove(<randomthings:blockofsticks>);
+	recipes.addShaped("Random Things Block of Sticks", 
+	<randomthings:blockofsticks> * 8, 
+	[[<ore:stickWood>, <ore:stickWood>, <ore:stickWood>],
+	[<ore:stickWood>, <ore:stickWood>, <ore:stickWood>], 
+	[<ore:stickWood>, <ore:stickWood>, <ore:stickWood>]]);
+
 # Ender bucket recipe change
 recipes.remove(<randomthings:enderbucket>);
 recipes.addShaped("ender_bucket1",
