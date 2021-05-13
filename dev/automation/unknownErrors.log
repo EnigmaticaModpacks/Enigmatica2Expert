@@ -1,1 +1,5 @@
-[Surge]: The game loaded in approximately  601.504 seconds.
+[Surge]: The game loaded in approximately  582.047 seconds.
+[main/ERROR] [mixin]: Mixin config mixins.mixincompat.json does not specify "minVersion" property
+[main/WARN] [mixin]: Reference map 'mixins.mixincompat.refmap.json' for mixins.mixincompat.json could not be read. If this is a development environment you can ignore this message
+[Client thread/WARN] [net.minecraft.nbt.NBTUtil]: Unable to read property: material with value: iron for blockstate: {Properties:{material:"iron",facing:"down",type:"kinetic_generator",transparent:"false"},Name:"ic2:te"}
+[Client thread/WARN] [net.minecraft.nbt.NBTUtil]: Unable to read property: material with value: iron for blockstate: {Properties:{material:"iron",facing:"down",type:"kinetic_generator",transparent:"false"},Name:"ic2:te"}

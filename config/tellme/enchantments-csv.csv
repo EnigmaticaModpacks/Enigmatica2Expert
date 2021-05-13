@@ -77,4 +77,11 @@
 "openblocks:flim_flam","enchantment.openblocks.flimflam","ALL","RARE",26
 "openblocks:last_stand","enchantment.openblocks.laststand","ARMOR","UNCOMMON",25
 "randomthings:magnetic","enchantment.randomthings.magnetic","DIGGER","VERY_RARE",27
+"scalingfeast:deprivationcurse","enchantment.scalingfeast.deprivationcurse","ARMOR_CHEST","UNCOMMON",84
+"scalingfeast:eternalfeast","enchantment.scalingfeast.eternalfeast","WEAPON","RARE",81
+"scalingfeast:famine","enchantment.scalingfeast.famine","WEAPON","UNCOMMON",82
+"scalingfeast:fasting","enchantment.scalingfeast.fasting","ARMOR_CHEST","UNCOMMON",80
+"scalingfeast:gluttony","enchantment.scalingfeast.gluttony","ARMOR_CHEST","RARE",79
+"scalingfeast:lazinesscurse","enchantment.scalingfeast.lazinesscurse","ARMOR_CHEST","RARE",85
+"scalingfeast:sensitivitycurse","enchantment.scalingfeast.sensitivitycurse","ARMOR_CHEST","UNCOMMON",83
 "spartanshields:ssenchspikes","enchantment.spartanshields:spikes","ss_shield","UNCOMMON",74
