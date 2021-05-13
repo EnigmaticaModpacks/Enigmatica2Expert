@@ -172,6 +172,14 @@ import mods.ic2.MetalFormer.addRollingRecipe as addRollingRecipe;
 # Industrial Diamond (Replaced with regular diamond)
 	utils.rh(<ic2:crafting:19>);
 	utils.rh(<ic2:ingot:8>);
+
+# Unused dusts
+utils.rh(<ic2:dust:7>);
+utils.rh(<ic2:dust:10>);
+utils.rh(<ic2:dust:12>);
+utils.rh(<ic2:dust:14>);
+utils.rh(<ic2:dust:4>);
+utils.rh(<ic2:dust:17>);
 	
 # Iridium TiC Compat
 	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:iridium> * 144, <ic2:misc_resource:1>, 500);
