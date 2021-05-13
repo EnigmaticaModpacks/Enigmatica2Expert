@@ -29,7 +29,7 @@
             "tag:10": {
               "tier:3": 4,
               "mekData:10": {
-                "energyStored:6": 1.7976931348623157e+308
+                "energyStored:6": 1.7976931348623157E308
               }
             },
             "Damage:2": 0,
@@ -64,7 +64,7 @@
               "tag:10": {
                 "tier:3": 4,
                 "mekData:10": {
-                  "energyStored:6": 1.7976931348623157e+308
+                  "energyStored:6": 1.7976931348623157E308
                 }
               },
               "Damage:2": 0,
@@ -2663,7 +2663,7 @@
           "viaPlayer:1": 0,
           "index:3": 0,
           "title:8": "bq_standard.reward.command",
-          "command:8": "/say VAR_NAME has obtained the Nature's Ruin!"
+          "command:8": "/say VAR_NAME has obtained the Nature\u0027s Ruin!"
         }
       }
     },
@@ -2752,10 +2752,7 @@
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
-            "id:8": "rftools:rftools_manual",
+            "id:8": "rftools:machine_frame",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -3238,7 +3235,7 @@
                     "Count:1": 1,
                     "tag:10": {
                       "StatsOriginal:10": {
-                        "AttackSpeedMultiplier:5": 1,
+                        "AttackSpeedMultiplier:5": 1.0,
                         "MiningSpeed:5": 1.5,
                         "FreeModifiers:3": 3,
                         "Durability:3": 61,
@@ -3246,7 +3243,7 @@
                         "Attack:5": 2.5
                       },
                       "Stats:10": {
-                        "AttackSpeedMultiplier:5": 1,
+                        "AttackSpeedMultiplier:5": 1.0,
                         "MiningSpeed:5": 1.5,
                         "FreeModifiers:3": 2,
                         "Durability:3": 61,
@@ -3331,7 +3328,7 @@
                         "FluidName:8": "cider",
                         "Amount:3": 1000,
                         "Tag:10": {
-                          "Quality:5": 1
+                          "Quality:5": 1.0
                         }
                       }
                     },
@@ -4002,7 +3999,7 @@
           "viaPlayer:1": 0,
           "index:3": 0,
           "title:8": "bq_standard.reward.command",
-          "command:8": "/say VAR_NAME has obtained the Creative Builder's Wand!"
+          "command:8": "/say VAR_NAME has obtained the Creative Builder\u0027s Wand!"
         }
       }
     },
@@ -4256,26 +4253,26 @@
               "Count:3": 1,
               "tag:10": {
                 "StatsOriginal:10": {
-                  "AttackSpeedMultiplier:5": 1,
-                  "MiningSpeed:5": 2,
-                  "DrawSpeed:5": 1,
+                  "AttackSpeedMultiplier:5": 1.0,
+                  "MiningSpeed:5": 2.0,
+                  "DrawSpeed:5": 1.0,
                   "FreeModifiers:3": 3,
-                  "ProjectileBonusDamage:5": 0,
+                  "ProjectileBonusDamage:5": 0.0,
                   "Durability:3": 35,
                   "HarvestLevel:3": 3,
-                  "Attack:5": 2,
-                  "Range:5": 1
+                  "Attack:5": 2.0,
+                  "Range:5": 1.0
                 },
                 "Stats:10": {
-                  "AttackSpeedMultiplier:5": 1,
-                  "MiningSpeed:5": 2,
-                  "DrawSpeed:5": 1,
+                  "AttackSpeedMultiplier:5": 1.0,
+                  "MiningSpeed:5": 2.0,
+                  "DrawSpeed:5": 1.0,
                   "FreeModifiers:3": 5,
-                  "ProjectileBonusDamage:5": 0,
+                  "ProjectileBonusDamage:5": 0.0,
                   "Durability:3": 35,
                   "HarvestLevel:3": 3,
-                  "Attack:5": 2,
-                  "Range:5": 1
+                  "Attack:5": 2.0,
+                  "Range:5": 1.0
                 },
                 "Special:10": {
                   "Categories:9": {
@@ -4340,7 +4337,7 @@
               "Count:3": 1,
               "tag:10": {
                 "StatsOriginal:10": {
-                  "AttackSpeedMultiplier:5": 1,
+                  "AttackSpeedMultiplier:5": 1.0,
                   "MiningSpeed:5": 6.8,
                   "FreeModifiers:3": 3,
                   "Durability:3": 631,
@@ -4348,7 +4345,7 @@
                   "Attack:5": 3.5
                 },
                 "Stats:10": {
-                  "AttackSpeedMultiplier:5": 1,
+                  "AttackSpeedMultiplier:5": 1.0,
                   "MiningSpeed:5": 6.8,
                   "FreeModifiers:3": 2,
                   "Durability:3": 631,
@@ -10545,11 +10542,8 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
-              "id:8": "industrialforegoing:straw",
-              "Count:3": 1,
+              "id:8": "industrialforegoing:conveyor",
+              "Count:3": 32,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -13546,7 +13540,7 @@
               "Count:3": 1,
               "tag:10": {
                 "mekData:10": {
-                  "energyStored:6": 60000
+                  "energyStored:6": 60000.0
                 }
               },
               "Damage:2": 0,
@@ -16407,19 +16401,25 @@
       "tasks:9": {},
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
-              "id:8": "redstonearsenal:tool.wrench_flux",
-              "Count:3": 1,
-              "tag:10": {
-                "Energy:3": 320000
-              },
-              "Damage:2": 0,
+              "id:8": "exnihilocreatio:item_doll",
+              "Count:3": 2,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "exnihilocreatio:item_doll",
+              "Count:3": 2,
+              "Damage:2": 5,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "exnihilocreatio:item_doll",
+              "Count:3": 2,
+              "Damage:2": 6,
               "OreDict:8": ""
             }
           }
@@ -19751,7 +19751,7 @@
     "255:10": {
       "questID:3": 255,
       "preRequisites:11": [
-        34
+        898
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -20023,7 +20023,7 @@
     "259:10": {
       "questID:3": 259,
       "preRequisites:11": [
-        277
+        268
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -20233,7 +20233,7 @@
     "262:10": {
       "questID:3": 262,
       "preRequisites:11": [
-        270
+        267
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -20375,7 +20375,6 @@
     "264:10": {
       "questID:3": 264,
       "preRequisites:11": [
-        34,
         255
       ],
       "properties:10": {
@@ -20391,7 +20390,7 @@
             "ForgeCaps:10": {
               "astralsorcery:cap_item_amulet_holder:10": {}
             },
-            "id:8": "rftools:advanced_charged_porter",
+            "id:8": "rftools:charged_porter",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -20420,7 +20419,7 @@
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
-              "id:8": "rftools:advanced_charged_porter",
+              "id:8": "rftools:charged_porter",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -20518,7 +20517,7 @@
     "266:10": {
       "questID:3": 266,
       "preRequisites:11": [
-        34
+        898
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -20551,7 +20550,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -20567,7 +20566,7 @@
               },
               "id:8": "rftools:storage_module",
               "Count:3": 1,
-              "Damage:2": 2,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           },
@@ -20663,7 +20662,7 @@
     "268:10": {
       "questID:3": 268,
       "preRequisites:11": [
-        34
+        898
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -20696,7 +20695,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -20708,6 +20707,12 @@
             },
             "1:10": {
               "id:8": "rftools:screen_controller",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "rftools:button_module",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -20749,7 +20754,7 @@
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "rftools:powercell",
+            "id:8": "rftools:powercell_simple",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -20775,7 +20780,7 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "rftools:powercell",
+              "id:8": "rftools:powercell_simple",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -20885,7 +20890,7 @@
     "271:10": {
       "questID:3": 271,
       "preRequisites:11": [
-        255
+        34
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -20953,7 +20958,7 @@
     "272:10": {
       "questID:3": 272,
       "preRequisites:11": [
-        271
+        34
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -21021,7 +21026,7 @@
     "273:10": {
       "questID:3": 273,
       "preRequisites:11": [
-        271
+        34
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -21157,7 +21162,7 @@
     "275:10": {
       "questID:3": 275,
       "preRequisites:11": [
-        273
+        34
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -21225,7 +21230,7 @@
     "276:10": {
       "questID:3": 276,
       "preRequisites:11": [
-        262
+        267
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -25527,7 +25532,7 @@
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "extrautils2:angelblock",
+            "id:8": "extrautils2:flattransfernode",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -25548,12 +25553,12 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "extrautils2:angelblock",
+              "id:8": "extrautils2:flattransfernode",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -32979,8 +32984,8 @@
             "Count:3": 1,
             "tag:10": {
               "StatsOriginal:10": {
-                "AttackSpeedMultiplier:5": 1,
-                "MiningSpeed:5": 12,
+                "AttackSpeedMultiplier:5": 1.0,
+                "MiningSpeed:5": 12.0,
                 "FreeModifiers:3": 3,
                 "Durability:3": 861,
                 "HarvestLevel:3": 7,
@@ -32991,12 +32996,12 @@
                 "Name:8": "InfiHarvester"
               },
               "Stats:10": {
-                "AttackSpeedMultiplier:5": 1,
-                "MiningSpeed:5": 999999,
+                "AttackSpeedMultiplier:5": 1.0,
+                "MiningSpeed:5": 999999.0,
                 "FreeModifiers:3": 0,
                 "Durability:3": 999999,
                 "HarvestLevel:3": 7,
-                "Attack:5": 999999
+                "Attack:5": 999999.0
               },
               "Special:10": {
                 "Categories:9": {
@@ -33094,7 +33099,7 @@
               "Count:3": 1,
               "tag:10": {
                 "StatsOriginal:10": {
-                  "AttackSpeedMultiplier:5": 1,
+                  "AttackSpeedMultiplier:5": 1.0,
                   "MiningSpeed:5": 3.75,
                   "FreeModifiers:3": 3,
                   "Durability:3": 143,
@@ -33102,7 +33107,7 @@
                   "Attack:5": 2.175
                 },
                 "Stats:10": {
-                  "AttackSpeedMultiplier:5": 1,
+                  "AttackSpeedMultiplier:5": 1.0,
                   "MiningSpeed:5": 3.75,
                   "FreeModifiers:3": 2,
                   "Durability:3": 143,
@@ -41296,11 +41301,11 @@
               "Profile_0:10": {
                 "bowFireArrow:1": 0,
                 "bowZoomModifier:3": 0,
-                "bowShockPower:6": 0,
+                "bowShockPower:6": 0.0,
                 "bowArrowSpeedModifier:3": 0,
                 "bowAutoFire:1": 0,
-                "bowExplosionPower:6": 0,
-                "bowArrowDamage:6": 2
+                "bowExplosionPower:6": 0.0,
+                "bowArrowDamage:6": 2.0
               }
             },
             "Damage:2": 0,
@@ -41334,11 +41339,11 @@
                 "Profile_0:10": {
                   "bowFireArrow:1": 0,
                   "bowZoomModifier:3": 0,
-                  "bowShockPower:6": 0,
+                  "bowShockPower:6": 0.0,
                   "bowArrowSpeedModifier:3": 0,
                   "bowAutoFire:1": 0,
-                  "bowExplosionPower:6": 0,
-                  "bowArrowDamage:6": 2
+                  "bowExplosionPower:6": 0.0,
+                  "bowArrowDamage:6": 2.0
                 }
               },
               "Damage:2": 0,
@@ -45120,8 +45125,21 @@
       },
       "tasks:9": {
         "0:10": {
-          "index:3": 1,
-          "taskID:8": "bq_standard:checkbox"
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "bloodmagic:altar",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
         }
       },
       "rewards:9": {
@@ -52588,7 +52606,7 @@
     "690:10": {
       "questID:3": 690,
       "preRequisites:11": [
-        695
+        903
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -52621,18 +52639,12 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
               "id:8": "rftoolsdim:dimension_enscriber",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "id:8": "rftoolsdim:empty_dimension_tab",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -52729,9 +52741,7 @@
     },
     "692:10": {
       "questID:3": 692,
-      "preRequisites:11": [
-        693
-      ],
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -52798,7 +52808,7 @@
     "693:10": {
       "questID:3": 693,
       "preRequisites:11": [
-        691
+        695
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -52866,7 +52876,7 @@
     "694:10": {
       "questID:3": 694,
       "preRequisites:11": [
-        692
+        691
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -52940,7 +52950,7 @@
     "695:10": {
       "questID:3": 695,
       "preRequisites:11": [
-        34
+        903
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -57482,8 +57492,8 @@
             "id:8": "appliedenergistics2:matter_cannon",
             "Count:3": 1,
             "tag:10": {
-              "internalMaxPower:6": 200000,
-              "internalCurrentPower:6": 200000
+              "internalMaxPower:6": 200000.0,
+              "internalCurrentPower:6": 200000.0
             },
             "Damage:2": 0,
             "OreDict:8": ""
@@ -59656,7 +59666,7 @@
             "ForgeData:10": {},
             "RelativeAABB:9": {
               "0:6": -0.30000001192092896,
-              "1:6": 0,
+              "1:6": 0.0,
               "2:6": -0.30000001192092896,
               "3:6": 0.30000001192092896,
               "4:6": 1.9500000476837158,
@@ -59664,31 +59674,31 @@
             },
             "Attributes:9": {
               "0:10": {
-                "Base:6": -2,
+                "Base:6": -2.0,
                 "Name:8": "tc.mobmod"
               },
               "1:10": {
-                "Base:6": 0,
+                "Base:6": 0.0,
                 "Name:8": "tc.mobmodtaint"
               },
               "2:10": {
-                "Base:6": 1,
+                "Base:6": 1.0,
                 "Name:8": "potioncore.projectileDamage"
               },
               "3:10": {
-                "Base:6": 1,
+                "Base:6": 1.0,
                 "Name:8": "potioncore.magicDamage"
               },
               "4:10": {
-                "Base:6": 1,
+                "Base:6": 1.0,
                 "Name:8": "potioncore.jumpHeight"
               },
               "5:10": {
-                "Base:6": 1,
+                "Base:6": 1.0,
                 "Name:8": "potioncore.damageResistance"
               },
               "6:10": {
-                "Base:6": 0,
+                "Base:6": 0.0,
                 "Name:8": "potioncore.magicShielding"
               },
               "7:10": {
@@ -59696,19 +59706,19 @@
                 "Name:8": "tconevo.flightSpeed"
               },
               "8:10": {
-                "Base:6": 1,
+                "Base:6": 1.0,
                 "Name:8": "tconevo.damageTaken"
               },
               "9:10": {
-                "Base:6": 1,
+                "Base:6": 1.0,
                 "Name:8": "tconevo.evasionChance"
               },
               "10:10": {
-                "Base:6": 400,
+                "Base:6": 400.0,
                 "Name:8": "generic.maxHealth"
               },
               "11:10": {
-                "Base:6": 0,
+                "Base:6": 0.0,
                 "Name:8": "generic.knockbackResistance"
               },
               "12:10": {
@@ -59716,31 +59726,31 @@
                 "Name:8": "generic.movementSpeed"
               },
               "13:10": {
-                "Base:6": 12,
+                "Base:6": 12.0,
                 "Name:8": "generic.armor"
               },
               "14:10": {
-                "Base:6": 0,
+                "Base:6": 0.0,
                 "Name:8": "generic.armorToughness"
               },
               "15:10": {
-                "Base:6": 1,
+                "Base:6": 1.0,
                 "Name:8": "forge.swimSpeed"
               },
               "16:10": {
-                "Base:6": 128,
+                "Base:6": 128.0,
                 "Name:8": "generic.followRange"
               },
               "17:10": {
-                "Base:6": 4,
+                "Base:6": 4.0,
                 "Name:8": "generic.attackDamage"
               }
             },
             "Invulnerable:1": 0,
             "FallFlying:1": 0,
             "PortalCooldown:3": 0,
-            "AbsorptionAmount:5": 0,
-            "FallDistance:5": 0,
+            "AbsorptionAmount:5": 0.0,
+            "FallDistance:5": 0.0,
             "DeathTime:2": 0,
             "ForgeCaps:10": {
               "plethora:disableai:10": {},
@@ -59750,25 +59760,25 @@
               },
               "nuclearcraft:capability_entity_rads:10": {
                 "consumed:1": 0,
-                "radawayBuffer:6": 0,
+                "radawayBuffer:6": 0.0,
                 "shouldWarn:1": 0,
                 "radXUsed:1": 0,
-                "poisonBuffer:6": 0,
-                "radXCooldown:6": 0,
+                "poisonBuffer:6": 0.0,
+                "radXCooldown:6": 0.0,
                 "radXWoreOff:1": 0,
-                "radawayCooldown:6": 0,
-                "recentRadawayAddition:6": 0,
-                "maxRads:6": 20000,
-                "radawayBufferSlow:6": 0,
-                "externalRadiationResistance:6": 0,
-                "totalRads:6": 0,
+                "radawayCooldown:6": 0.0,
+                "recentRadawayAddition:6": 0.0,
+                "maxRads:6": 20000.0,
+                "radawayBufferSlow:6": 0.0,
+                "externalRadiationResistance:6": 0.0,
+                "totalRads:6": 0.0,
                 "setFromMaxHealth:1": 1,
-                "radiationLevel:6": 0,
-                "recentPoisonAddition:6": 0,
-                "recentRadXAddition:6": 0,
+                "radiationLevel:6": 0.0,
+                "recentPoisonAddition:6": 0.0,
+                "recentRadXAddition:6": 0.0,
                 "radiationImmunityStage:1": 0,
-                "internalRadiationResistance:6": 0,
-                "radiationImmunityTime:6": 0
+                "internalRadiationResistance:6": 0.0,
+                "radiationImmunityTime:6": 0.0
               },
               "tinkertoolleveling:entityxp:9": {},
               "dsurround:data:10": {
@@ -59816,13 +59826,13 @@
             "PersistenceRequired:1": 0,
             "id:8": "rats:black_death",
             "Motion:9": {
-              "0:6": 0,
-              "1:6": 0,
-              "2:6": 0
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
             },
             "Leashed:1": 0,
             "UUIDLeast:4": -7629121435670479000,
-            "Health:5": 400,
+            "Health:5": 400.0,
             "CloudsSummoned:3": 0,
             "LeftHanded:1": 0,
             "Air:2": 300,
@@ -59832,7 +59842,7 @@
             "RatsSummoned:3": 0,
             "Rotation:9": {
               "0:5": 3.1356926,
-              "1:5": 0
+              "1:5": 0.0
             },
             "UpdateBlocked:1": 0,
             "HandItems:9": {
@@ -59847,9 +59857,9 @@
             },
             "UUIDMost:4": 5830572876798709000,
             "Pos:9": {
-              "0:6": 0,
-              "1:6": 0,
-              "2:6": 0
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
             },
             "Fire:2": -1,
             "ArmorItems:9": {
@@ -59862,7 +59872,7 @@
             "HurtTime:2": 0,
             "SurgeAABB:9": {
               "0:6": -0.30000001192092896,
-              "1:6": 0,
+              "1:6": 0.0,
               "2:6": -0.30000001192092896,
               "3:6": 0.30000001192092896,
               "4:6": 1.9500000476837158,
@@ -60422,7 +60432,7 @@
             "id:8": "ic2:nano_chestplate",
             "Count:3": 1,
             "tag:10": {
-              "charge:6": 1000000
+              "charge:6": 1000000.0
             },
             "Damage:2": 0,
             "OreDict:8": ""
@@ -60453,7 +60463,7 @@
               "id:8": "ic2:nano_helmet",
               "Count:3": 1,
               "tag:10": {
-                "charge:6": 1000000
+                "charge:6": 1000000.0
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -60465,7 +60475,7 @@
               "id:8": "ic2:nano_chestplate",
               "Count:3": 1,
               "tag:10": {
-                "charge:6": 1000000
+                "charge:6": 1000000.0
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -60477,7 +60487,7 @@
               "id:8": "ic2:nano_leggings",
               "Count:3": 1,
               "tag:10": {
-                "charge:6": 1000000
+                "charge:6": 1000000.0
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -60489,7 +60499,7 @@
               "id:8": "ic2:nano_boots",
               "Count:3": 1,
               "tag:10": {
-                "charge:6": 1000000
+                "charge:6": 1000000.0
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -60510,7 +60520,7 @@
               "id:8": "ic2:nano_saber",
               "Count:3": 1,
               "tag:10": {
-                "charge:6": 160000
+                "charge:6": 160000.0
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -60720,7 +60730,7 @@
             "id:8": "ic2:quantum_chestplate",
             "Count:3": 1,
             "tag:10": {
-              "charge:6": 10000000
+              "charge:6": 1.0E7
             },
             "Damage:2": 0,
             "OreDict:8": ""
@@ -60751,7 +60761,7 @@
               "id:8": "ic2:quantum_helmet",
               "Count:3": 1,
               "tag:10": {
-                "charge:6": 10000000
+                "charge:6": 1.0E7
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -60763,7 +60773,7 @@
               "id:8": "ic2:quantum_chestplate",
               "Count:3": 1,
               "tag:10": {
-                "charge:6": 10000000
+                "charge:6": 1.0E7
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -60775,7 +60785,7 @@
               "id:8": "ic2:quantum_leggings",
               "Count:3": 1,
               "tag:10": {
-                "charge:6": 10000000
+                "charge:6": 1.0E7
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -60787,7 +60797,7 @@
               "id:8": "ic2:quantum_boots",
               "Count:3": 1,
               "tag:10": {
-                "charge:6": 10000000
+                "charge:6": 1.0E7
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -60824,15 +60834,15 @@
               "Count:3": 1,
               "tag:10": {
                 "StatsOriginal:10": {
-                  "AttackSpeedMultiplier:5": 1,
-                  "MiningSpeed:5": 6,
+                  "AttackSpeedMultiplier:5": 1.0,
+                  "MiningSpeed:5": 6.0,
                   "FreeModifiers:3": 3,
                   "Durability:3": 711,
                   "HarvestLevel:3": 10,
                   "Attack:5": 6.8
                 },
                 "Stats:10": {
-                  "AttackSpeedMultiplier:5": 1,
+                  "AttackSpeedMultiplier:5": 1.0,
                   "MiningSpeed:5": 6.1609993,
                   "FreeModifiers:3": 2,
                   "Durability:3": 733,
@@ -65007,6 +65017,12 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "psi:programmer",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -66779,7 +66795,7 @@
             "Count:3": 1,
             "tag:10": {
               "InfinityEnergy:3": 2147483647,
-              "internalCurrentPower:6": 1600000
+              "internalCurrentPower:6": 1600000.0
             },
             "Damage:2": 0,
             "OreDict:8": ""
@@ -67109,15 +67125,9 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {
-                  "AS_Amulet_HolderLeast:4": -8469918875462925000,
-                  "AS_Amulet_HolderMost:4": -5260415147165142000
-                }
-              },
-              "id:8": "twilightforest:magic_map",
+              "id:8": "twilightforest:magic_map_empty",
               "Count:3": 1,
-              "Damage:2": 4,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           },
@@ -69063,7 +69073,7 @@
             "Count:3": 1,
             "tag:10": {
               "StatsOriginal:10": {
-                "AttackSpeedMultiplier:5": 1,
+                "AttackSpeedMultiplier:5": 1.0,
                 "LaserGunPower:5": 2.5,
                 "MiningSpeed:5": 6.75,
                 "FreeModifiers:3": 3,
@@ -69071,11 +69081,11 @@
                 "HarvestLevel:3": 8,
                 "LaserGunEnergy:3": 120000,
                 "Attack:5": 2.5,
-                "LaserGunRange:5": 20
+                "LaserGunRange:5": 20.0
               },
               "LockCooldown:3": 0,
               "Stats:10": {
-                "AttackSpeedMultiplier:5": 1,
+                "AttackSpeedMultiplier:5": 1.0,
                 "LaserGunPower:5": 2.5,
                 "MiningSpeed:5": 6.75,
                 "FreeModifiers:3": 2,
@@ -69083,7 +69093,7 @@
                 "HarvestLevel:3": 8,
                 "LaserGunEnergy:3": 120000,
                 "Attack:5": 2.5,
-                "LaserGunRange:5": 20
+                "LaserGunRange:5": 20.0
               },
               "Special:10": {
                 "Categories:9": {
@@ -69175,7 +69185,7 @@
               "Count:3": 1,
               "tag:10": {
                 "StatsOriginal:10": {
-                  "AttackSpeedMultiplier:5": 1,
+                  "AttackSpeedMultiplier:5": 1.0,
                   "LaserGunPower:5": 2.5,
                   "MiningSpeed:5": 6.75,
                   "FreeModifiers:3": 3,
@@ -69183,11 +69193,11 @@
                   "HarvestLevel:3": 8,
                   "LaserGunEnergy:3": 120000,
                   "Attack:5": 2.5,
-                  "LaserGunRange:5": 20
+                  "LaserGunRange:5": 20.0
                 },
                 "LockCooldown:3": 0,
                 "Stats:10": {
-                  "AttackSpeedMultiplier:5": 1,
+                  "AttackSpeedMultiplier:5": 1.0,
                   "LaserGunPower:5": 2.5,
                   "MiningSpeed:5": 6.75,
                   "FreeModifiers:3": 2,
@@ -69195,7 +69205,7 @@
                   "HarvestLevel:3": 8,
                   "LaserGunEnergy:3": 120000,
                   "Attack:5": 2.5,
-                  "LaserGunRange:5": 20
+                  "LaserGunRange:5": 20.0
                 },
                 "Special:10": {
                   "Categories:9": {
@@ -69578,6 +69588,981 @@
           }
         }
       }
+    },
+    "894:10": {
+      "questID:3": 894,
+      "preRequisites:11": [
+        821
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "storagedrawers:upgrade_creative",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "bq.quest894.name",
+          "desc:8": "bq.quest894.desc"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "storagedrawers:upgrade_creative",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 50,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "895:10": {
+      "questID:3": 895,
+      "preRequisites:11": [
+        139
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "industrialforegoing:straw",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "bq.quest895.name",
+          "desc:8": "bq.quest895.desc"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "industrialforegoing:straw",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "896:10": {
+      "questID:3": 896,
+      "preRequisites:11": [
+        57
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "enderio:item_item_conduit",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "bq.quest896.name",
+          "desc:8": "bq.quest896.desc"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "enderio:item_item_conduit",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "uberconduitprobe:uber_conduit_probe_item",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "897:10": {
+      "questID:3": 897,
+      "preRequisites:11": [
+        51
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "plustic::10": {
+                "Size:3": 1,
+                "Items:9": {}
+              },
+              "astralsorcery:cap_item_amulet_holder:10": {},
+              "plustic:fruitsalad_cap:10": {
+                "Size:3": 5,
+                "Items:9": {}
+              },
+              "plustic:musicofthespheres_cap:10": {
+                "Size:3": 1,
+                "Items:9": {}
+              }
+            },
+            "id:8": "tconstruct:pickaxe",
+            "Count:3": 1,
+            "tag:10": {
+              "StatsOriginal:10": {
+                "AttackSpeedMultiplier:5": 1.0,
+                "MiningSpeed:5": 1.5,
+                "FreeModifiers:3": 3,
+                "Durability:3": 1,
+                "HarvestLevel:3": 0,
+                "Attack:5": 2.25
+              },
+              "Stats:10": {
+                "AttackSpeedMultiplier:5": 1.0,
+                "MiningSpeed:5": 1.5,
+                "FreeModifiers:3": 2,
+                "Durability:3": 1,
+                "HarvestLevel:3": 0,
+                "Attack:5": 2.25,
+                "Broken:1": 1
+              },
+              "Special:10": {
+                "Categories:9": {
+                  "0:8": "aoe",
+                  "1:8": "tool",
+                  "2:8": "harvest"
+                }
+              },
+              "TinkerData:10": {
+                "Materials:9": {
+                  "0:8": "stone",
+                  "1:8": "stone",
+                  "2:8": "stone"
+                },
+                "Modifiers:9": {
+                  "0:8": "toolleveling"
+                }
+              },
+              "Modifiers:9": {
+                "0:10": {
+                  "identifier:8": "cheap",
+                  "color:3": -6710887,
+                  "level:3": 1
+                },
+                "1:10": {
+                  "identifier:8": "cheapskate",
+                  "color:3": -6710887,
+                  "level:3": 1
+                },
+                "2:10": {
+                  "identifier:8": "toolleveling",
+                  "color:3": 16777215,
+                  "level:3": 1,
+                  "xp:3": 1,
+                  "bonus_modifiers:3": 0
+                }
+              },
+              "Traits:9": {
+                "0:8": "cheap",
+                "1:8": "cheapskate",
+                "2:8": "toolleveling"
+              }
+            },
+            "Damage:2": 1,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "bq.quest897.name",
+          "desc:8": "bq.quest897.desc"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 3,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 0
+        }
+      }
+    },
+    "898:10": {
+      "questID:3": 898,
+      "preRequisites:11": [
+        4
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "rftools:machine_base",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "bq.quest898.name",
+          "desc:8": "bq.quest898.desc"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "rftools:machine_base",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "rftools:timer_block",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "899:10": {
+      "questID:3": 899,
+      "preRequisites:11": [
+        898
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "rftools:booster",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "bq.quest899.name",
+          "desc:8": "bq.quest899.desc"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "rftools:booster",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "900:10": {
+      "questID:3": 900,
+      "preRequisites:11": [
+        898
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "rftools:crafter1",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "bq.quest900.name",
+          "desc:8": "bq.quest900.desc"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "rftools:crafter1",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "901:10": {
+      "questID:3": 901,
+      "preRequisites:11": [
+        34
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "rftools:rf_monitor",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "bq.quest901.name",
+          "desc:8": "bq.quest901.desc"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "rftools:rf_monitor",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "902:10": {
+      "questID:3": 902,
+      "preRequisites:11": [
+        898
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "rftools:storage_module_tablet",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "bq.quest902.name",
+          "desc:8": "bq.quest902.desc"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "rftools:storage_module_tablet",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "903:10": {
+      "questID:3": 903,
+      "preRequisites:11": [
+        821
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "rftoolsdim:empty_dimension_tab",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "bq.quest903.name",
+          "desc:8": "bq.quest903.desc"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "rftoolsdim:empty_dimension_tab",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "904:10": {
+      "questID:3": 904,
+      "preRequisites:11": [
+        330
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "extrautils2:angelblock",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "bq.quest904.name",
+          "desc:8": "bq.quest904.desc"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "extrautils2:angelblock",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "905:10": {
+      "questID:3": 905,
+      "preRequisites:11": [
+        123
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "actuallyadditions:item_mining_lens",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "bq.quest905.name",
+          "desc:8": "bq.quest905.desc"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "actuallyadditions:item_mining_lens",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "906:10": {
+      "questID:3": 906,
+      "preRequisites:11": [
+        879
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "thermalexpansion:device",
+            "Count:3": 1,
+            "tag:10": {
+              "RSControl:1": 0,
+              "Facing:1": 3,
+              "Energy:3": 0,
+              "SideCache:7": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            },
+            "Damage:2": 1,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "bq.quest906.name",
+          "desc:8": "bq.quest906.desc"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "thermalinnovation:injector",
+              "Count:3": 1,
+              "tag:10": {},
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     }
   },
   "questLines:9": {
@@ -69910,6 +70895,20 @@
           "x:3": 363,
           "y:3": 133,
           "id:3": 892,
+          "sizeY:3": 24
+        },
+        "47:10": {
+          "sizeX:3": 24,
+          "x:3": 291,
+          "y:3": 133,
+          "id:3": 896,
+          "sizeY:3": 24
+        },
+        "48:10": {
+          "sizeX:3": 24,
+          "x:3": 75,
+          "y:3": 12,
+          "id:3": 897,
           "sizeY:3": 24
         }
       },
@@ -73154,6 +74153,13 @@
           "y:3": 50,
           "id:3": 789,
           "sizeY:3": 24
+        },
+        "37:10": {
+          "sizeX:3": 24,
+          "x:3": -24,
+          "y:3": 201,
+          "id:3": 905,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 11,
@@ -73399,6 +74405,13 @@
           "y:3": 28,
           "id:3": 816,
           "sizeY:3": 24
+        },
+        "32:10": {
+          "sizeX:3": 20,
+          "x:3": 14,
+          "y:3": -11,
+          "id:3": 895,
+          "sizeY:3": 20
         }
       },
       "lineID:3": 12,
@@ -73777,6 +74790,13 @@
           "y:3": 88,
           "id:3": 879,
           "sizeY:3": 24
+        },
+        "51:10": {
+          "sizeX:3": 16,
+          "x:3": 264,
+          "y:3": 92,
+          "id:3": 906,
+          "sizeY:3": 16
         }
       },
       "lineID:3": 13,
@@ -73976,8 +74996,8 @@
         },
         "23:10": {
           "sizeX:3": 20,
-          "x:3": 32,
-          "y:3": -19,
+          "x:3": 45,
+          "y:3": -7,
           "id:3": 334,
           "sizeY:3": 20
         },
@@ -74197,6 +75217,13 @@
           "y:3": 16,
           "id:3": 888,
           "sizeY:3": 8
+        },
+        "55:10": {
+          "sizeX:3": 20,
+          "x:3": 32,
+          "y:3": -19,
+          "id:3": 904,
+          "sizeY:3": 20
         }
       },
       "lineID:3": 14,
@@ -74220,185 +75247,199 @@
     "15:10": {
       "quests:9": {
         "0:10": {
-          "sizeX:3": 24,
-          "x:3": -104,
-          "y:3": -8,
+          "sizeX:3": 36,
+          "x:3": -18,
+          "y:3": -78,
           "id:3": 34,
-          "sizeY:3": 24
+          "sizeY:3": 38
         },
         "1:10": {
           "sizeX:3": 24,
-          "x:3": -72,
-          "y:3": 112,
+          "x:3": -183,
+          "y:3": 4,
           "id:3": 255,
           "sizeY:3": 24
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": 152,
-          "y:3": 88,
+          "x:3": -107,
+          "y:3": 28,
           "id:3": 259,
           "sizeY:3": 24
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": 120,
-          "y:3": 104,
+          "x:3": -36,
+          "y:3": 108,
           "id:3": 262,
           "sizeY:3": 24
         },
         "4:10": {
-          "sizeX:3": 24,
-          "x:3": 184,
-          "y:3": -8,
+          "sizeX:3": 30,
+          "x:3": 30,
+          "y:3": -30,
           "id:3": 263,
-          "sizeY:3": 24
+          "sizeY:3": 29
         },
         "5:10": {
           "sizeX:3": 24,
-          "x:3": -40,
-          "y:3": 104,
+          "x:3": -183,
+          "y:3": 28,
           "id:3": 264,
           "sizeY:3": 24
         },
         "6:10": {
-          "sizeX:3": 24,
-          "x:3": 56,
-          "y:3": 56,
+          "sizeX:3": 30,
+          "x:3": 36,
+          "y:3": 30,
           "id:3": 265,
-          "sizeY:3": 24
+          "sizeY:3": 29
         },
         "7:10": {
           "sizeX:3": 24,
-          "x:3": -136,
-          "y:3": 141,
+          "x:3": -159,
+          "y:3": 80,
           "id:3": 266,
           "sizeY:3": 24
         },
         "8:10": {
-          "sizeX:3": 24,
-          "x:3": 88,
-          "y:3": 40,
+          "sizeX:3": 36,
+          "x:3": -18,
+          "y:3": 66,
           "id:3": 267,
-          "sizeY:3": 24
+          "sizeY:3": 36
         },
         "9:10": {
           "sizeX:3": 24,
-          "x:3": 120,
-          "y:3": 24,
+          "x:3": -107,
+          "y:3": 4,
           "id:3": 268,
           "sizeY:3": 24
         },
         "10:10": {
-          "sizeX:3": 24,
-          "x:3": 152,
-          "y:3": 8,
+          "sizeX:3": 30,
+          "x:3": 36,
+          "y:3": 0,
           "id:3": 269,
-          "sizeY:3": 24
+          "sizeY:3": 29
         },
         "11:10": {
           "sizeX:3": 24,
-          "x:3": 104,
-          "y:3": 72,
+          "x:3": 12,
+          "y:3": 108,
           "id:3": 270,
           "sizeY:3": 24
         },
         "12:10": {
-          "sizeX:3": 24,
-          "x:3": -56,
-          "y:3": 144,
-          "id:3": 271,
-          "sizeY:3": 24
+          "sizeX:3": 30,
+          "x:3": -66,
+          "y:3": 0,
+          "id:3": 272,
+          "sizeY:3": 29
         },
         "13:10": {
-          "sizeX:3": 24,
-          "x:3": -40,
-          "y:3": 176,
-          "id:3": 272,
-          "sizeY:3": 24
+          "sizeX:3": 30,
+          "x:3": -60,
+          "y:3": 60,
+          "id:3": 275,
+          "sizeY:3": 30
         },
         "14:10": {
           "sizeX:3": 24,
-          "x:3": -24,
-          "y:3": 136,
-          "id:3": 273,
+          "x:3": -12,
+          "y:3": 108,
+          "id:3": 276,
           "sizeY:3": 24
         },
         "15:10": {
           "sizeX:3": 24,
-          "x:3": -8,
-          "y:3": 168,
-          "id:3": 275,
+          "x:3": 112,
+          "y:3": 8,
+          "id:3": 690,
           "sizeY:3": 24
         },
         "16:10": {
-          "sizeX:3": 24,
-          "x:3": 136,
-          "y:3": 136,
-          "id:3": 276,
-          "sizeY:3": 24
+          "sizeX:3": 32,
+          "x:3": 108,
+          "y:3": 44,
+          "id:3": 691,
+          "sizeY:3": 32
         },
         "17:10": {
           "sizeX:3": 24,
-          "x:3": 136,
-          "y:3": 56,
-          "id:3": 277,
+          "x:3": 148,
+          "y:3": 48,
+          "id:3": 693,
           "sizeY:3": 24
         },
         "18:10": {
           "sizeX:3": 24,
-          "x:3": 24,
-          "y:3": 72,
-          "id:3": 690,
+          "x:3": 112,
+          "y:3": 87,
+          "id:3": 694,
           "sizeY:3": 24
         },
         "19:10": {
           "sizeX:3": 24,
-          "x:3": 8,
-          "y:3": 120,
-          "id:3": 691,
+          "x:3": 148,
+          "y:3": 8,
+          "id:3": 695,
           "sizeY:3": 24
         },
         "20:10": {
-          "sizeX:3": 24,
-          "x:3": 24,
-          "y:3": 152,
-          "id:3": 692,
-          "sizeY:3": 24
+          "sizeX:3": 30,
+          "x:3": 30,
+          "y:3": 60,
+          "id:3": 717,
+          "sizeY:3": 29
         },
         "21:10": {
-          "sizeX:3": 24,
-          "x:3": 40,
-          "y:3": 104,
-          "id:3": 693,
-          "sizeY:3": 24
+          "sizeX:3": 30,
+          "x:3": -60,
+          "y:3": -30,
+          "id:3": 774,
+          "sizeY:3": 29
         },
         "22:10": {
           "sizeX:3": 24,
-          "x:3": 56,
-          "y:3": 136,
-          "id:3": 694,
+          "x:3": -144,
+          "y:3": -28,
+          "id:3": 898,
           "sizeY:3": 24
         },
         "23:10": {
           "sizeX:3": 24,
-          "x:3": -8,
-          "y:3": 88,
-          "id:3": 695,
+          "x:3": -131,
+          "y:3": 80,
+          "id:3": 899,
           "sizeY:3": 24
         },
         "24:10": {
           "sizeX:3": 24,
-          "x:3": -104,
-          "y:3": 128,
-          "id:3": 717,
+          "x:3": -107,
+          "y:3": 56,
+          "id:3": 900,
           "sizeY:3": 24
         },
         "25:10": {
+          "sizeX:3": 30,
+          "x:3": -66,
+          "y:3": 30,
+          "id:3": 901,
+          "sizeY:3": 29
+        },
+        "26:10": {
           "sizeX:3": 24,
-          "x:3": -169,
-          "y:3": 147,
-          "id:3": 774,
+          "x:3": -183,
+          "y:3": 56,
+          "id:3": 902,
+          "sizeY:3": 24
+        },
+        "27:10": {
+          "sizeX:3": 24,
+          "x:3": 128,
+          "y:3": -28,
+          "id:3": 903,
           "sizeY:3": 24
         }
       },
@@ -75779,6 +76820,13 @@
           "y:3": -62,
           "id:3": 823,
           "sizeY:3": 24
+        },
+        "39:10": {
+          "sizeX:3": 24,
+          "x:3": 102,
+          "y:3": 71,
+          "id:3": 894,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 20,
@@ -76012,6 +77060,13 @@
           "x:3": 92,
           "y:3": 44,
           "id:3": 880,
+          "sizeY:3": 16
+        },
+        "30:10": {
+          "sizeX:3": 16,
+          "x:3": 44,
+          "y:3": 4,
+          "id:3": 898,
           "sizeY:3": 16
         }
       },
@@ -76370,7 +77425,7 @@
       "editmode:1": 0,
       "livesMax:4": 10,
       "livesdef:3": 3,
-      "home_anchor_y:5": 3,
+      "home_anchor_y:5": 3.0,
       "livesDef:4": 3,
       "home_anchor_x:5": 0.5,
       "livesmax:3": 10,

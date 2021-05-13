@@ -1,19 +1,19 @@
 {
-  "_index": "263:10",
+  "_index": "905:10",
   "_pos": {
-    "_index": "4:10",
+    "_index": "37:10",
     "_data": {
-      "sizeX:3": 30,
-      "x:3": 30,
-      "y:3": -30,
-      "id:3": 263,
-      "sizeY:3": 29
+      "sizeX:3": 24,
+      "x:3": -24,
+      "y:3": 201,
+      "id:3": 905,
+      "sizeY:3": 24
     }
   },
   "_data": {
-    "questID:3": 263,
+    "questID:3": 905,
     "preRequisites:11": [
-      34
+      123
     ],
     "properties:10": {
       "betterquesting:10": {
@@ -25,7 +25,10 @@
         "visibility:8": "ALWAYS",
         "simultaneous:1": 0,
         "icon:10": {
-          "id:8": "rftools:environmental_controller",
+          "ForgeCaps:10": {
+            "astralsorcery:cap_item_amulet_holder:10": {}
+          },
+          "id:8": "actuallyadditions:item_mining_lens",
           "Count:3": 1,
           "Damage:2": 0,
           "OreDict:8": ""
@@ -37,8 +40,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "bq.quest263.name",
-        "desc:8": "bq.quest263.desc"
+        "name:8": "bq.quest905.name",
+        "desc:8": "bq.quest905.desc"
       }
     },
     "tasks:9": {
@@ -46,12 +49,15 @@
         "partialMatch:1": 1,
         "autoConsume:1": 0,
         "groupDetect:1": 0,
-        "ignoreNBT:1": 0,
+        "ignoreNBT:1": 1,
         "index:3": 0,
         "consume:1": 0,
         "requiredItems:9": {
           "0:10": {
-            "id:8": "rftools:environmental_controller",
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "actuallyadditions:item_mining_lens",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""

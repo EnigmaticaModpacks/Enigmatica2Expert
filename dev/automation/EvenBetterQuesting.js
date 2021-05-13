@@ -2,10 +2,18 @@ const fs = require('fs')
 const path = require('path')
 const glob = require('glob')
 const {isPathHasChanged} = require('../lib/utils.js')
+const replace = require('replace-in-file')
 
+const bq_quests_path = 'config/betterquesting/DefaultQuests.json'
 
 module.exports.init = init
 function init(argv = process.argv) {
+  replace.sync({
+    files: bq_quests_path,
+    from: /^(\s+"editmode:1": )1,/gm,
+    to: '$10,',
+  })
+
   if(argv.unparse) unparse()
   else parse()
 }
@@ -61,7 +69,7 @@ function parse() {
   }
 
   // Open big file
-  const bq_raw = JSON.parse(fs.readFileSync('config/betterquesting/DefaultQuests.json','utf8'))
+  const bq_raw = JSON.parse(fs.readFileSync(bq_quests_path,'utf8'))
   const questMap = new Map()
   Object.entries(bq_raw['questDatabase:9']).forEach(([i,q])=>{
     questMap.set(q['questID:3'], {_index:i,_pos:null,_data:q})
@@ -150,7 +158,7 @@ function unparse() {
   sortEntries(book, 'questLines:9')
 
   fs.writeFileSync(
-    'config/betterquesting/DefaultQuests.json',
+    bq_quests_path,
     JSON.stringify(book, null, 2)
   )
 }

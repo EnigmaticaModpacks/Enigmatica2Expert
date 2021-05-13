@@ -56,6 +56,12 @@
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
+          },
+          "1:10": {
+            "id:8": "psi:programmer",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
           }
         },
         "taskID:8": "bq_standard:retrieval"

@@ -48,11 +48,8 @@
         "index:3": 0,
         "rewards:9": {
           "0:10": {
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
-            "id:8": "industrialforegoing:straw",
-            "Count:3": 1,
+            "id:8": "industrialforegoing:conveyor",
+            "Count:3": 32,
             "Damage:2": 0,
             "OreDict:8": ""
           }

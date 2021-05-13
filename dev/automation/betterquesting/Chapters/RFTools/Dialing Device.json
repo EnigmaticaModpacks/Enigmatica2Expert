@@ -1,19 +1,19 @@
 {
   "_index": "272:10",
   "_pos": {
-    "_index": "13:10",
+    "_index": "12:10",
     "_data": {
-      "sizeX:3": 24,
-      "x:3": -40,
-      "y:3": 176,
+      "sizeX:3": 30,
+      "x:3": -66,
+      "y:3": 0,
       "id:3": 272,
-      "sizeY:3": 24
+      "sizeY:3": 29
     }
   },
   "_data": {
     "questID:3": 272,
     "preRequisites:11": [
-      271
+      34
     ],
     "properties:10": {
       "betterquesting:10": {

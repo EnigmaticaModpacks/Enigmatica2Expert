@@ -43,8 +43,21 @@
     },
     "tasks:9": {
       "0:10": {
-        "index:3": 1,
-        "taskID:8": "bq_standard:checkbox"
+        "partialMatch:1": 1,
+        "autoConsume:1": 0,
+        "groupDetect:1": 0,
+        "ignoreNBT:1": 1,
+        "index:3": 0,
+        "consume:1": 0,
+        "requiredItems:9": {
+          "0:10": {
+            "id:8": "bloodmagic:altar",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          }
+        },
+        "taskID:8": "bq_standard:retrieval"
       }
     },
     "rewards:9": {

@@ -4,8 +4,8 @@
     "_index": "5:10",
     "_data": {
       "sizeX:3": 24,
-      "x:3": -40,
-      "y:3": 104,
+      "x:3": -183,
+      "y:3": 28,
       "id:3": 264,
       "sizeY:3": 24
     }
@@ -13,7 +13,6 @@
   "_data": {
     "questID:3": 264,
     "preRequisites:11": [
-      34,
       255
     ],
     "properties:10": {
@@ -29,7 +28,7 @@
           "ForgeCaps:10": {
             "astralsorcery:cap_item_amulet_holder:10": {}
           },
-          "id:8": "rftools:advanced_charged_porter",
+          "id:8": "rftools:charged_porter",
           "Count:3": 1,
           "Damage:2": 0,
           "OreDict:8": ""
@@ -58,7 +57,7 @@
             "ForgeCaps:10": {
               "astralsorcery:cap_item_amulet_holder:10": {}
             },
-            "id:8": "rftools:advanced_charged_porter",
+            "id:8": "rftools:charged_porter",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""

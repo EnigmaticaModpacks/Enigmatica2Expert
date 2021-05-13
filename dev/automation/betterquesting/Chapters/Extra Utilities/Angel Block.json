@@ -1,17 +1,17 @@
 {
-  "_index": "334:10",
+  "_index": "904:10",
   "_pos": {
-    "_index": "23:10",
+    "_index": "55:10",
     "_data": {
       "sizeX:3": 20,
       "x:3": 32,
       "y:3": -19,
-      "id:3": 334,
+      "id:3": 904,
       "sizeY:3": 20
     }
   },
   "_data": {
-    "questID:3": 334,
+    "questID:3": 904,
     "preRequisites:11": [
       330
     ],
@@ -37,8 +37,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "bq.quest334.name",
-        "desc:8": "bq.quest334.desc"
+        "name:8": "bq.quest904.name",
+        "desc:8": "bq.quest904.desc"
       }
     },
     "tasks:9": {
