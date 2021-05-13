@@ -787,3 +787,8 @@ for item in <ore:dustAshes>.items {
 <ore:blockSugarcane>.add(<quark:reed_block>);
 <ore:blockSugar>.add(<quark:sugar_block>);
 <ore:blockFlesh>.add(<thaumcraft:flesh_block>);
+
+# Rearrange items in Dye Oredict to better integration
+# with AA [Lens Of Color]
+<ore:dyeBrown>.remove([<enderio:item_material:49>, <industrialforegoing:fertilizer>]);
+<ore:dyeGreen>.remove(<enderio:item_material:48>);
