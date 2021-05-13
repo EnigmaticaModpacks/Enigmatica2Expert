@@ -1,5 +1,199 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
+
+
+# 0.25
+
+## 🟢 New Mods
+
+Icon | Summary | Reason
+----:|:--------| ------
+<img src="https://media.forgecdn.net/avatars/thumbnails/239/522/256/256/637114384686820957.png" width="50"> | [**Performant**](https://www.curseforge.com/minecraft/mc-mods/performant) <sup><sub>performant-1.12.2-1.10.jar</sub></sup> <br> Lag begone! Increases Performance, less entity lag less rubberbanding, more players on the server | Probably should reduce some lags. Need tests
+<img src="https://media.forgecdn.net/avatars/thumbnails/258/376/256/256/637207865258153609.png" width="50"> | [**Scaling Feast**](https://www.curseforge.com/minecraft/mc-mods/scaling-feast) <sup><sub>scalingfeast-1.7.0.jar</sub></sup> <br> A simple, balanced way to increase your maximum hunger | Something interesting, for tests
+<img src="https://media.forgecdn.net/avatars/thumbnails/362/336/256/256/637529092874107816.png" width="50"> | [**Atlas Lib**](https://www.curseforge.com/minecraft/mc-mods/atlas-lib) <sup><sub>Atlas-Lib-1.12.2-1.1.2.jar</sub></sup> <br> A library for shared code between minecraft mods. | Lib for **Blood Smeltery**
+<img src="https://media.forgecdn.net/avatars/thumbnails/372/357/256/256/637543356508059182.png" width="50"> | [**Uber Conduit Probe**](https://www.curseforge.com/minecraft/mc-mods/uber-conduit-probe) <sup><sub>uberconduitprobe-1.0.1.jar</sub></sup> <br> No more clicking on 1000 conduit connections | Cool tool
+<img src="https://media.forgecdn.net/avatars/thumbnails/310/991/256/256/637400908142738750.png" width="50"> | [**BilingualName**](https://www.curseforge.com/minecraft/mc-mods/bilingualname) <sup><sub>bilingualname-1.2.jar</sub></sup> <br> show items' Engilish Name as tooltip | Help with localized clients
+<img src="https://media.forgecdn.net/avatars/thumbnails/376/298/256/256/637552466801290064.png" width="50"> | [**Blood Smeltery**](https://www.curseforge.com/minecraft/mc-mods/blood-smeltery) <sup><sub>Blood-Smeltery-1.12.2-1.1.1.jar</sub></sup> <br> A Blood Magic addon that allows automation via the TConstruct Smeltery | Blood magic need more integrations. This could help.
+
+## 🟡 Updated Mods
+
+Name|File
+----|----
+[**Surge**](https://www.curseforge.com/minecraft/mc-mods/surge) | <sup><sub>Surge-1.12.2-2.0.79.jar</sub></sup>
+[**AttributeFix**](https://www.curseforge.com/minecraft/mc-mods/attributefix) | <sup><sub>AttributeFix-1.12.2-1.0.10.jar</sub></sup>
+[**CraftTweaker**](https://www.curseforge.com/minecraft/mc-mods/crafttweaker) | <sup><sub>CraftTweaker2-1.12-4.1.20.646.jar</sub></sup>
+[**Zen Utils**](https://www.curseforge.com/minecraft/mc-mods/zenutil) | <sup><sub>zenutils-1.8.0.jar</sub></sup>
+[**Just Enough Items (JEI)**](https://www.curseforge.com/minecraft/mc-mods/jei) | <sup><sub>jei_1.12.2-4.16.1.302.jar</sub></sup>
+[**Precision Mining**](https://www.curseforge.com/minecraft/mc-mods/precision-mining) | <sup><sub>miningspeed2-1.7.jar</sub></sup>
+[**Advanced Rocketry**](https://www.curseforge.com/minecraft/mc-mods/advanced-rocketry) | <sup><sub>AdvancedRocketry-1.12.2-2.0.0-248-universal.jar</sub></sup>
+[**CreativeCore**](https://www.curseforge.com/minecraft/mc-mods/creativecore) | <sup><sub>CreativeCore_v1.10.58_mc1.12.2.jar</sub></sup>
+[**LittleTiles**](https://www.curseforge.com/minecraft/mc-mods/littletiles) | <sup><sub>LittleTiles_v1.5.8_mc1.12.2.jar</sub></sup>
+[**Just Enough Calculation**](https://www.curseforge.com/minecraft/mc-mods/st-enough-calculation) | <sup><sub>JustEnoughCalculation-1.12.2-3.2.6.jar</sub></sup>
+[**/dank/null**](https://www.curseforge.com/minecraft/mc-mods/dank-null) | <sup><sub>zz_DankNull-1.12.2-1.7.101.jar</sub></sup>
+[**JAOPCA**](https://www.curseforge.com/minecraft/mc-mods/jaopca) | <sup><sub>JAOPCA-1.12.2-2.2.8.105.jar</sub></sup>
+
+## ✏️ Recipes
+
+  Harder:
+  - ![](https://git.io/J3xyN "Spawner Changer")
+    ![](https://git.io/Jsmvp "Coal Generator")
+    ![](https://git.io/J3xyj "Speed Charm")
+    ![](https://git.io/Jsmvj "Water Candle")
+    ![](https://git.io/Jsmvh "Item Conduit")
+    ![](https://git.io/J3p0w "Flat Transfer Node (Items)")
+    ![](https://git.io/J3p0r "Flat Transfer Node (Fluids)")
+    ![](https://git.io/Jsmfk "Glass Fiber Wire Relay")
+    ![](https://git.io/JqUJV "Mechanical Squeezer")
+    ![](https://git.io/JmVvI "Dynamic Tank")
+    ![](https://git.io/JmVeQ "Structural Glass")
+    ![](https://git.io/JsmfJ "Syringe")
+    ![](https://git.io/JsmvA "Charged Porter")
+    ![](https://git.io/Jsmfq "Advanced Charged Porter")
+    ![](https://git.io/Jsmfs "Heart Dust")
+    ![](https://git.io/Jse6m "Flux Capacitor (Basic)")
+    ![](https://git.io/JsmfZ "Flux Capacitor (Hardened)")
+    ![](https://git.io/Jsmvb "Flux Capacitor (Reinforced)")
+    ![](https://git.io/Jsmfe "Flux Capacitor (Signalum)")
+    ![](https://git.io/JsmfO "Flux Capacitor (Resonant)")
+  
+  Cheaper
+  - ![](https://git.io/Jsmfv "Dark Steel Upgrade Empowered")
+    ![](https://git.io/J3pcV "Netherstar Generator")
+    ![](https://git.io/JsmfL "Redstone Engineering Block")
+    ![](https://git.io/J3JZF "Mob Slaughter Factory")
+    ![](https://git.io/J3hV0 "Crushing Block")
+    ![](https://git.io/J3xyF "Universal Bin")
+    ![](https://git.io/JsmfY "Screen Controller")
+    ![](https://git.io/JsmfG "Booster")
+    ![](https://git.io/Jtydj "Elevator")
+    ![](https://git.io/Jsmfn "Creative Storage Upgrade")
+    ![](https://git.io/JsmfU "Void Seed")
+    ![](https://git.io/JOKc6 "Plate of Unsealing")
+  
+  Other:
+  - ![](https://git.io/JsmfT "Fishing Spear") add recipe (because snow villages is disabled)
+  - ![](https://git.io/J3p4Z "Glitch Infused Chestplate") Set recycle
+  - ![](https://git.io/J3xy3 "NanoSuit Bodyarmor") Set recycle
+  - ![](https://git.io/JOG2B "Iron Turbine") Fix rotor dupe
+  - ![](https://git.io/Jsmfm "Akashic Tome") add **End Reborn**
+  - ![](https://git.io/JtJGS "Compressed Cobblestone") => [Compressed Stone] in ![](https://git.io/J3xyb "Alloy Smelter")
+  - ![](https://git.io/Jsmff "Copper Coil Block") cant be smelted in ![](https://git.io/JOGz0 "Magma Crucible (Basic)") anymore
+  - ![](https://git.io/JsvPH "Refined Obsidian Ingot") & ![](https://git.io/JsvPj "Glowstone Ingot") melt in ![](https://git.io/JOGz0 "Magma Crucible (Basic)")
+  - ![](https://git.io/Jt342 "Morphing Tool") add ![](https://git.io/JsmfI "Cheese Staff") and ![](https://git.io/Jsmft "Dragon Command Staff")
+  - ![](https://git.io/J3xFv "Block of Prosperity") remove crafting table recipe
+  - ![](https://git.io/JsmvN "Granite Pavement") and all other pavements remove (conflicted with compressed)
+  - ![](https://git.io/J3xSe "Primordial Pearl") add alt recipe
+
+## 📖 Quest Book
+
+  - **RFTools** chapter rework
+  - **Lens of miner**, **Flat Nodes**, and other additions
+  - **Psi** gate require both Programmer and Constructor
+  - **Dolls** in TE quest reward
+  - **Hypoinfuser** quest
+  - Fix **TwiForst** open quest
+
+## 🌍 World Generation
+
+- Disable **Forestry** trees to spawn
+- Add **BoP gem ore** back, but extremely rare, update JER
+
+## 🔵 Mods
+
+
+- ### 🌡️ Thermal Expansion
+
+  - Disable ![](https://git.io/JOGgv "Petrotheum Dust")/![](https://git.io/JOGzj "Pyrotheum Dust") shapelesses crush/smelt
+
+- ### 🏪 Requious Fracto
+
+  - JEI for ![](https://git.io/J3p8H "Lens of the Miner"), more Liq. Interacs
+    > - JEI shows **Thermal Expansion** fluids affect on world
+    > - Chances of output for **Infernal Furnace**
+
+- ### 🐉 Ice and Fire
+
+  - Remove **Snow Willages** and ![](https://git.io/Jtyd1 "Sapphire")
+    > It was nice try to see how they could integrate into modpack.  
+    > But actually, villages are boring, trades are too simple and couldnt
+    > tweaked. Sapphire have no actual advantages.
+
+- ### 👨‍🏭 Mekanism
+
+  - ![](https://git.io/J3pca "Atomic Disassembler") increase consumption
+    > - x20 Capacity
+    > - x20 consumption as weapon and hoe
+    > - x100 consumption as tool
+
+- ### 📑 Tips
+
+  - Remove outdated tips, rearrange, colors, automation
+
+- ### 🔨 Tinker's Construct
+
+  - ![](https://git.io/Jt8wf "Primal Metal Ingot") and ![](https://git.io/JsmUJ "Void Metal Ingot") Buff, remap mining levels
+    > IMPORTANT: Something broke TCon mining levels.  
+    > From version 0.24 all levels are dropped to default. Would be fixed next patches.
+
+- ### 🦯 Thaumcraft
+
+  - ![](https://git.io/J3xy7 "Hardened Ice") Add aspects
+
+- ### 🛢️ Immersive Engineering
+
+  - Fix **Industrial Wires** conversion rate
+
+- ### 💼 Actually Additionals
+
+  - Fix ![](https://git.io/JsewW "Lens of Color") conversions
+    > Before, lens would give acces to free ![](https://git.io/JOija "Lapis Lazuli") from, basically, flowers.  
+    > Now Lens accept __any__ ore-dicted dyes, but output only last ones
+    > (mostly Artificial Dyes)
+  - Remove ![](https://git.io/J3p84 "Yellorite Ore") from ![](https://git.io/J3p8H "Lens of the Miner")
+
+- ### 🏦 Modular Machinery
+
+  - Remove **Armor Foundry**
+    > It was intended to remove lot of microcraftings, but when
+    > modpack removes more and more vanilla-like armor, there
+    > is too few armor sets left
+
+- ### 🍁 Rustic
+
+  - Speedup ![](https://git.io/Jsmvx "Brewing Barrel") x2
+
+- ### 🚄 Vaultopic
+
+  - ![](https://git.io/Jsmf3 "V.I.C.E. (Vaultopic Item Crafting Entity)") Buff range x2
+
+- ### 👿 Extra Utilities 2
+
+  - ![](https://git.io/J3pcV "Netherstar Generator") nerf output x4, add 9 other recipes
+
+- ## 🚀 Advanced Rocketry
+
+  - Restore ![](https://git.io/JsmU3 "Solar Generator") buff (2500 RF/t)
+
+- ## 🧙‍♂️ Cyclic
+
+  - Increase ![](https://git.io/J3xyA "Magma Anvil") consumption x2
+
+- ## 🧻 JEI
+
+  - Add TAGS to items
+    > Write `##` is JEI to see all of them, or specify:
+    > - `##Generator`
+    > - `##Chunkloader`
+    > - `##User`
+    > - `##Miner`
+    > - `##Voidminer`
+    > - `##Hopper`
+    > - `##Tank`
+    > Tip: in JEI `Search Options`, switch `#Tooltip` to `require_prefix`
+
+
+
+
 # 0.24
 
 ## 🟢 New Mods
