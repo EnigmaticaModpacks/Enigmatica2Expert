@@ -64,18 +64,6 @@ const totalTime = log.match(/\[Client thread\/INFO\] \[Surge\]: The game loaded 
 console.log('MC load time: '+num(parseFloat(totalTime))+'s')
 console.log(drawBars(time_arr).slice(0,10).join('\n'))
 
-// ;['CraftTweaker2', 'Thaumcraft', 'Tinkers\' Construct', 'Immersive Engineering'].forEach(mod=>
-//   console.log('\n'+mod+':\n'+ chart_obj[mod].map((n,i)=>numeral(n).format('0.00').padStart(7)+' '+fml_steps[i]).join('\n'))
-// )
-
-function barsByRegex(rgx, len = 20, tCode = 's') {
-  return drawBars(
-  [...log.matchAll(rgx)]
-  .map(([_match, pluginName, time]) => [pluginName, parseFloat(time) * (tCode==='ms'?1:0.001)])
-  .sort(entriesSorter)
-  , 30, tCode).slice(0,len).join('\n')
-}
-
 console.log(
   '\nCraftTweaker script loading:'+
   num(parseFloat(
@@ -84,6 +72,18 @@ console.log(
   ) / 1000) + 's'
 )
 
+
+;['CraftTweaker2', 'Thaumcraft', 'Tinkers\' Construct', 'Immersive Engineering'].forEach(mod=>
+  console.log('\n'+mod+':\n'+ chart_obj[mod].map((n,i)=>numeral(n).format('0.00').padStart(7)+' '+fml_steps[i]).join('\n'))
+)
+
+function barsByRegex(rgx, len = 20, tCode = 's') {
+  return drawBars(
+  [...log.matchAll(rgx)]
+  .map(([_match, pluginName, time]) => [pluginName, parseFloat(time) * (tCode==='ms'?1:0.001)])
+  .sort(entriesSorter)
+  , 30, tCode).slice(0,len).join('\n')
+}
 console.log(
   '\nJEI Registered categories:\n'+
   barsByRegex(/\[jei\]: Registered +categories: (.*) in (\d+) ms/g, 5)

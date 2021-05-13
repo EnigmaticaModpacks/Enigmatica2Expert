@@ -26,12 +26,20 @@ write('Version: ')
 const version = execSync('git describe --tags --abbrev=0').toString().trim()
 end(version)
 
+// Mods that would be copied to all packages
 const modsToCopy = globs([
   'mods/*.jar',
   '!mods/Extended Item Information*.jar',
   '!mods/Satako*.jar',
   '!mods/probe-*.jar',
   '!mods/advancementscreenshot_*.jar',
+  '!mods/sampler-*.jar',
+])
+
+// Server only files
+const serverOnlyFiles = globs([
+  'mods/sampler-*.jar',
+  'config/sampler.ini',
 ])
 
 
@@ -52,6 +60,7 @@ write(`extractAllTo ${unzipDir} ... `)
 new AdmZip(zipPath).extractAllTo(unzipDir, true)
 end()
 
+// Files to remove from all distributable packages
 const removeGlob = [
   '*',
   '.gitignore',
@@ -74,6 +83,7 @@ const removeGlob = [
   'config/satako.cfg',
   'config/Probe.cfg',
   'config/advancementscreenshot.cfg',
+  'config/sampler.ini',
 ]
 
 // Change Working Directory
@@ -191,7 +201,9 @@ globs([
   // '!mods/Hwyla*.jar',
   // '!mods/WailaHarvestability*.jar',
   // '!mods/Wawla*.jar',
-]).forEach((fPath, i)=>{
+])
+.push(...serverOnlyFiles)
+.forEach((fPath, i)=>{
   if(i%50==0) dot()
   fs.copySync(
     fPath,

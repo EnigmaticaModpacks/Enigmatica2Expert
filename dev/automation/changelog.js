@@ -132,6 +132,11 @@ async function init() {
       🔌 Industrial Craft 2
       ⚙️ JAOPCA
       🗂️ Additional Compression
+      🏦 Modular Machinery
+      🍁 Rustic
+      🚄 Vaultopic
+      🍇 End Reborn
+      👿 Extra Utilities 2
     `.trim().split('\n').map(l=>l.trim().split(' ')).map(([c,...r])=>[c, r.join(' ')])],
     ['🔄', 'Misc Changes', [
       ['🧱', 'Technical'],

@@ -48,6 +48,8 @@ config/brandon3055/contributors.json
 config/thaumicjei_itemstack_aspects.json
 config/brandon3055/ProjectIntelligence/
 config/tool_progression/blocks.cfg
+config/tool_progression/materials.cfg
+config/tool_progression/tools.cfg
 scripts/.zsrc
 config/BiomeTweaker/output/
 */Patchouli/garbage
