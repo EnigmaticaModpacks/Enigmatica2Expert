@@ -234,13 +234,19 @@ zenClass Utils {
 
   function countOutput(item as IItemStack, oreName as string) as IItemStack {
     val def = defaultEmount[oreName];
-    if(isNull(def)) return item;
+    if(isNull(def)) return amountClamp(item);
 
     val d = def as double;
     if (d != 0.0d) {
       return item * min(64, (((item.amount as double - 1.0d) * (d*0.75d) + d) as int));
     }
-    return item;
+    return amountClamp(item);
+  }
+
+  function amountClamp(item as IItemStack) as IItemStack {
+    if(isNull(item)) return null;
+    if(item.amount==1) return item.anyAmount();
+    return item * min(64, item.amount);
   }
 
 

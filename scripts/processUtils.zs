@@ -86,13 +86,14 @@ function defaultChance0_int(extraChance as float[], default as int) as int  {
 }
 
 # Get input/output amount if we have non-whole output amount
-function wholesCalc(outputAmount as double) as int[string] {
+function wholesCalc(inputAmount as int, outputAmount as double) as double[string] {
   val whole = outputAmount as int as double;
   val residue = outputAmount - whole;
-  if(residue == 0) return {"ins": 1, "outs": outputAmount as int};
+  val out1 = outputAmount / inputAmount as double;
+  if(residue == 0) return {"ins": 1.0d, "outs": whole, "out1": out1};
   val ins = 1.0d / residue;
   val outs = outputAmount * ins;
-  return {"ins": ins as int, "outs": outs as int};
+  return {"ins": ins, "outs": outs, "out1": out1};
 }
 
 # ######################################################################

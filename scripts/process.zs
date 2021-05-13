@@ -275,7 +275,7 @@ function magic(input as IIngredient[], output as IItemStack[], exceptions as str
 # 📦 → 📦|💧
 function beneficiate(_input as IIngredient, _oreName as string, _amount as double, opts as IData) {
 
-  val calc = wholesCalc(_amount);
+  val calc = wholesCalc(_input.amount, _amount);
   val amount = calc.outs as int;
   val newOutAmount = _input.amount * calc.ins as int;
   val input = (newOutAmount == 1 && _input.amount == 1) ? _input : _input * newOutAmount;
@@ -301,10 +301,12 @@ function beneficiate(_input as IIngredient, _oreName as string, _amount as doubl
 
   # Infernal Furnace
   if (!isNull(JA)) {
-    val nuggetExtra = utils.getSomething(JA.extraName, ["nugget"], amount * 3);
+    val outTriple = (amount as double * (calc.out1 as double * 3.0d)) as int;
+    val nuggetExtra = utils.getSomething(JA.extraName, ["nugget"], outTriple);
+    val input1 = input.itemArray[0].anyAmount();
     if (!isNull(nuggetExtra)) {
-      workEx("infernalfurnace", exceptions, [input], null, null, null, [nuggetExtra], extraChances, null);
-      scripts.requiousJei.add_infernal_furnace(input, nuggetExtra);
+      workEx("infernalfurnace", exceptions, [input1], null, null, null, [nuggetExtra], extraChances, null);
+      scripts.requiousJei.add_infernal_furnace(input1, nuggetExtra % ((extraChances[0] * 100.0f) as int));
     }
   }
 
