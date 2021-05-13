@@ -15,11 +15,11 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded astralsorcery
-// Uses of this mod: 20
+// Uses of this mod: 21
 
 
 //####################################################
-// Uses of this class: 16
+// Uses of this class: 17
 zenClass Class_Altar { zenConstructor() {}
 
 	// Uses of this method: 3

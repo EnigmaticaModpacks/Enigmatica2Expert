@@ -300,6 +300,26 @@ static potNameTag as IData[string] = {
   "randomthings:collapse"                  : {Id: 42, Amplifier:  0, Duration:  450},
   "randomthings:long_collapse"             : {Id: 42, Amplifier:  0, Duration:  900},
   "randomthings:strong_collapse"           : {Id: 42, Amplifier:  1, Duration:  300},
+  "scalingfeast:bloated"                   : {Id:177, Amplifier:  0, Duration: 2400},
+  "scalingfeast:bloated_extended"          : {Id:177, Amplifier:  0, Duration: 4800},
+  "scalingfeast:bloated_strong"            : {Id:177, Amplifier:  1, Duration: 1200},
+  "scalingfeast:deficiency"                : {Id:178, Amplifier:  3, Duration:    1},
+  "scalingfeast:deficiency_strong"         : {Id:178, Amplifier:  6, Duration:    1},
+  "scalingfeast:hungerminus"               : {Id:181, Amplifier:  3, Duration: 2400},
+  "scalingfeast:hungerminus_extended"      : {Id:181, Amplifier:  3, Duration: 4800},
+  "scalingfeast:hungerminus_strong"        : {Id:181, Amplifier:  7, Duration: 1200},
+  "scalingfeast:hungerplus"                : {Id:179, Amplifier:  3, Duration: 3600},
+  "scalingfeast:hungerplus_extended"       : {Id:179, Amplifier:  3, Duration: 7200},
+  "scalingfeast:hungerplus_strong"         : {Id:179, Amplifier:  7, Duration: 1800},
+  "scalingfeast:ironstomach"               : {Id:182, Amplifier:  0, Duration: 3000},
+  "scalingfeast:ironstomach_extended"      : {Id:182, Amplifier:  0, Duration: 6000},
+  "scalingfeast:ironstomach_strong"        : {Id:182, Amplifier:  1, Duration: 1500},
+  "scalingfeast:metabolism"                : {Id:180, Amplifier:  0, Duration: 2400},
+  "scalingfeast:metabolism_extended"       : {Id:180, Amplifier:  0, Duration: 4800},
+  "scalingfeast:metabolism_strong"         : {Id:180, Amplifier:  1, Duration: 1200},
+  "scalingfeast:softstomach"               : {Id:176, Amplifier:  0, Duration: 2400},
+  "scalingfeast:softstomach_extended"      : {Id:176, Amplifier:  0, Duration: 4800},
+  "scalingfeast:softstomach_strong"        : {Id:176, Amplifier:  1, Duration: 1200},
 } as IData[string];
 
 static elixirNameId as int[string] = {
@@ -394,6 +414,13 @@ static elixirNameId as int[string] = {
   "potioncore:extension"                   : 167,
   "potioncore:curse"                       : 168,
   "cyclicmagic:potion.saturation"          : 171,
+  "scalingfeast:softstomach"               : 176,
+  "scalingfeast:bloated"                   : 177,
+  "scalingfeast:deficiency"                : 178,
+  "scalingfeast:hungerplus"                : 179,
+  "scalingfeast:metabolism"                : 180,
+  "scalingfeast:hungerminus"               : 181,
+  "scalingfeast:ironstomach"               : 182,
 } as int[string];
 
 

@@ -37,28 +37,23 @@ function infinFurnace(inp as IItemStack, out as IItemStack) as void {
 
 /*Inject_js(
 (()=>{
-  const bl = config('jei/itemBlacklist.cfg').advanced.itemBlacklist
-  const total = loadText('crafttweaker_raw.log')
-    .match(/^~ Furnace Recipes:(.*)($|\n\n)/ms)[1]
-    .split('\n')
-    .map(l=>l.match(/^(.*?)~~(.*?)~~.*$/))
-    .filter(l=>l)
+  const blacklist = config('jei/itemBlacklist.cfg').advanced.itemBlacklist
   let fcount = 0
-  const finder = o=>bl.includes(o.match(/^<([^>]+?)(:\*)?>.*$/)[1])
-  const filtered = total
-    .sort((a,b)=> naturalSort(a[1],b[1]) || naturalSort(a[2],b[2]))
-    .map(([__,input,output])=>
-    `${[input,output].some(finder) ? (fcount++,'#') : ''}infinFurnace(${input}, ${output});`
+  const isBlacklisted = (...items)=>items.some(item=>blacklist.includes(item.match(/^<([^>]+?)(:\*)?>.*$/)[1]))
+  const filtered = getFurnaceRecipes()
+    .map(({input,output})=>
+      (isBlacklisted(input, output) ? (fcount++,'#') : '') + 
+      `infinFurnace(${input}, ${output});`
     )
   return `
-# Total Furnace recipes registered: ${total.length}
+# Total Furnace recipes registered: ${getFurnaceRecipes().length}
 # Filtered: ${fcount}
 ${filtered.join('\n')}`
 })()
 )*/
 
-# Total Furnace recipes registered: 928
-# Filtered: 70
+# Total Furnace recipes registered: 923
+# Filtered: 65
 infinFurnace(<actuallyadditions:block_misc:3>, <actuallyadditions:item_misc:5>);
 infinFurnace(<actuallyadditions:item_dust:3>, <minecraft:emerald>);
 infinFurnace(<actuallyadditions:item_dust:7>, <actuallyadditions:item_misc:5>);
@@ -221,13 +216,8 @@ infinFurnace(<ic2:crushed:4>, <thermalfoundation:material:130>);
 infinFurnace(<ic2:crushed:5>, <thermalfoundation:material:129>);
 infinFurnace(<ic2:crushed>, <thermalfoundation:material:128>);
 infinFurnace(<ic2:dust:3>, <thermalfoundation:material:768>);
-#infinFurnace(<ic2:dust:4>, <thermalfoundation:material:128>);
-#infinFurnace(<ic2:dust:7>, <minecraft:gold_ingot>);
 #infinFurnace(<ic2:dust:8>, <minecraft:iron_ingot>);
-#infinFurnace(<ic2:dust:10>, <thermalfoundation:material:131>);
 infinFurnace(<ic2:dust:11>, <nuclearcraft:ingot:6>);
-#infinFurnace(<ic2:dust:14>, <thermalfoundation:material:130>);
-#infinFurnace(<ic2:dust:17>, <thermalfoundation:material:129>);
 infinFurnace(<ic2:dust>, <thermalfoundation:material:163>);
 infinFurnace(<ic2:misc_resource:4>, <ic2:crafting>);
 infinFurnace(<ic2:mug:1>, <ic2:mug:2>);

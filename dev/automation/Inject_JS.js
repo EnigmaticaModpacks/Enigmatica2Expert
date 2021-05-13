@@ -12,7 +12,7 @@ const glob = require('glob')
 const fs = require('fs')
 const csvParseSync = require('csv-parse/lib/sync')
 
-const {injectInFile, write, end, config, naturalSort, csv} = require('../lib/utils.js') // eslint-disable-line no-unused-vars
+const {injectInFile, write, end, config, naturalSort, csv, getFurnaceRecipes} = require('../lib/utils.js') // eslint-disable-line no-unused-vars
 
 function loadText(filename, encoding = 'utf8') {
   return fs.readFileSync(filename, encoding)
@@ -45,15 +45,19 @@ glob.sync('scripts/**/*.zs').forEach(filePath => {
 write(`  🐲 Found ${occurences.length} Inject_js blocks. Evaluating `)
 
 occurences.forEach(cmd => {
-  let injectString = ''
+  let injectValue = ''
   
   try {
-    injectString = eval(cmd.command)
+    injectValue = eval(cmd.command)
   } catch (error) {
     console.log('\nComment block Error.\nFile:', cmd.filePath, ' Line:', cmd.line)
     console.error(error)
     return
   }
+
+  const injectString = Array.isArray(injectValue)
+    ? injectValue.join('\n')
+    : injectValue
   
   injectInFile(cmd.filePath, cmd.command, '\n/**/', '*/\n'+injectString)
   write('.')

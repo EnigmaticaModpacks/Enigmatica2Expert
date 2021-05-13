@@ -35,16 +35,7 @@ function logDebugData() {
   }
   logRaw("  ]");
   logRaw("}");
-
-  // logRaw("");
-  // logRaw("~ Furnace Recipes:");
-  // for rec in furnace.all {
-  //   logRaw(
-  //     rec.input .commandString ~ "~~" ~ 
-  //     rec.output.commandString ~ "~~" ~ 
-  //     rec.xp
-  //   );
-  // }
+  
   logRaw("}");
 }
 

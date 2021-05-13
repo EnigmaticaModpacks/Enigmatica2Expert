@@ -8,10 +8,10 @@ import mods.jaopca.OreEntry;
 
 static listRatPoop as IItemStack[] = [
 /*Inject_js(
-[...loadText('crafttweaker_raw.log')
-.match(/^~ Furnace Recipes:(.*)($|\n\n)/ms)[1]
-.matchAll(/^(<rats:rat_nugget_ore.*?)~~.*$/gm)
-].map(o=>o[1]).sort(naturalSort).join(',\n')
+getFurnaceRecipes()
+.filter(g=>g.in_id==='rats:rat_nugget_ore')
+.map(g=>g.input)
+.join(',\n')
 )*/
 <rats:rat_nugget_ore:1>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 7 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 7 as short}}),
 <rats:rat_nugget_ore:2>.withTag({OreItem: {id: "forestry:resources", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "forestry:apatite", Count: 1 as byte, Damage: 0 as short}}),

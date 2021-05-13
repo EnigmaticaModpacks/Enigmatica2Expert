@@ -15,14 +15,14 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded enderio
-// Uses of this mod: 2
+// Uses of this mod: 3
 
 
 //####################################################
-// Uses of this class: 1
+// Uses of this class: 2
 zenClass Class_AlloySmelter { zenConstructor() {}
 
-	// Uses of this method: 1
+	// Uses of this method: 2
 	function addRecipe(output as IItemStack, input as IIngredient[]) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.enderio.AlloySmelter.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient__(input)]));

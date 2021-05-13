@@ -27,6 +27,7 @@ const mainLang = langFiles[0]
 
 // Quests
 const bq_raw = JSON.parse(fs.readFileSync(defaultQuests_path,'utf8'))
+let hasChanges = false
 Object.entries(bq_raw['questDatabase:9']).forEach(([_,q])=>{
   checkAndAdd(q, 'quest'+q['questID:3'], 'name')
   checkAndAdd(q, 'quest'+q['questID:3'], 'desc')
@@ -39,7 +40,7 @@ Object.entries(bq_raw['questLines:9']).forEach(([_,q])=>{
 })
 
 // Save files
-fs.writeFileSync('config/betterquesting/DefaultQuests.json', JSON.stringify(bq_raw, null, 2))
+if(hasChanges) fs.writeFileSync(defaultQuests_path, JSON.stringify(bq_raw, null, 2))
 
 // Save lang files
 validCodes.forEach((code, i) => saveLang(code, langFiles[i]))
@@ -72,6 +73,7 @@ function checkAndAdd(json_obj, lang_root, fieldName) {
 
   const langCode = 'bq.'+lang_id
   langFiles.forEach(l=>l[langCode] = text)
+  if(bq_props[bq_key] !== langCode) hasChanges = true
   bq_props[bq_key] = langCode
 }
 

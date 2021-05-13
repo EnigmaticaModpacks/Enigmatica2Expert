@@ -14,10 +14,11 @@ const replace = require('replace-in-file')
 
 const dot=()=>write('.')
 
+const mcClientPath = process.cwd()
 const distrDir = 'D:/MEGA_LD-LocksTO/Enigmatica/Distributable/'
 const serverPath = 'D:/mc_server/E2E-Extended-Server/'
 const serverOverrides = 'D:/MEGA_LD-LocksTO/Enigmatica/server-overrides/'
-const ruOverrides = path.join(process.cwd(), 'dev/lang/ru_ru/') // eslint-disable-line no-undef
+const ruOverrides = path.join(process.cwd(), 'dev/lang/ru_ru/') 
 const tmpDir = 'D:/mc_tmp/'
 const zipPath = `${tmpDir}tmp.zip`
 const unzipDir = `${tmpDir}unzip/`
@@ -87,7 +88,7 @@ const removeGlob = [
 ]
 
 // Change Working Directory
-process.chdir(unzipDir)// eslint-disable-line no-undef
+process.chdir(unzipDir)
 
 write(`removing files&folders ${unzipDir} ... `)
 end('removed:', del.sync(removeGlob, {dryRun: false}).length)
@@ -174,6 +175,7 @@ globs([
   '!mods/ReBind*.jar',
   '!mods/MemoryTester*.jar',
   '!mods/Neat*.jar',
+  '!mods/bilingualname*.jar',
 
   // Not sure
 /* 
@@ -202,15 +204,20 @@ globs([
   // '!mods/WailaHarvestability*.jar',
   // '!mods/Wawla*.jar',
 ])
-.push(...serverOnlyFiles)
-.forEach((fPath, i)=>{
-  if(i%50==0) dot()
-  fs.copySync(
-    fPath,
-    path.join(serverPath, path.relative(process.cwd(), fPath)), // eslint-disable-line no-undef
-    {overwrite: true}
-  )
-})
+.forEach(copyToServer(process.cwd()))
+serverOnlyFiles.forEach(copyToServer(mcClientPath))
+
+function copyToServer(relativeSource) { 
+  return (fPath, i)=>{
+    if(i%50==0) dot()
+    fs.copySync(
+      fPath,
+      path.join(serverPath, path.relative(relativeSource, fPath)), 
+      {overwrite: true}
+    )
+  }  
+}
+
 end()
 
 write('copying overrides ... ')

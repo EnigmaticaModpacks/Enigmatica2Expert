@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded actuallyadditions
-// Uses of this mod: 29
+// Uses of this mod: 28
 
 
 //####################################################
@@ -31,20 +31,6 @@ zenClass Class_AtomicReconstructor { zenConstructor() {}
 
 }
 static AtomicReconstructor as Class_AtomicReconstructor = Class_AtomicReconstructor();
-
-//####################################################
-// Uses of this class: 1
-zenClass Class_Compost { zenConstructor() {}
-
-	// Uses of this method: 1
-	function addRecipe(output as IItemStack, outputDisplay as IItemStack, input as IItemStack, inputDisplay as IItemStack) as void {
-		if(utils.DEBUG) print('Recipe wrapped: mods.actuallyadditions.Compost.addRecipe'~
-			serialize.args([serialize.IItemStack(output), serialize.IItemStack(outputDisplay), serialize.IItemStack(input), serialize.IItemStack(inputDisplay)]));
-		mods.actuallyadditions.Compost.addRecipe(output, outputDisplay, input, inputDisplay);
-	}
-
-}
-static Compost as Class_Compost = Class_Compost();
 
 //####################################################
 // Uses of this class: 12

@@ -310,6 +310,7 @@ static turbineFuel as int[string][] = [
   {biofuel         : 90},
   {refined_oil     : 95},
   {rocket_fuel     : 95},
+  {syngas          : 100},
   {refined_fuel    : 105},
   {rocketfuel      : 110},
   {fire_water      : 120},

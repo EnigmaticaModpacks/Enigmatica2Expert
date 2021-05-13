@@ -201,8 +201,16 @@ function config(cfgPath) {
 }
 module.exports.config = config
 
-module.exports.naturalSort = (a,b)=>a.localeCompare(b, undefined, {numeric: true, sensitivity: 'base'})
+const naturalSort = (a,b)=>a.localeCompare(b, undefined, {numeric: true, sensitivity: 'base'})
+module.exports.naturalSort = naturalSort
 
 module.exports.csv = filename=>csvParseSync(fs.readFileSync(filename,'utf8'), {columns: true})
 
 module.exports.isPathHasChanged = pPath=>!!execSync('git diff HEAD '+pPath).toString().trim()
+
+let furnaceRecipesHashed = undefined
+module.exports.getFurnaceRecipes = ()=>{
+  return furnaceRecipesHashed ??= [...fs.readFileSync('crafttweaker.log', 'utf8')
+    .matchAll(/^furnace\.addRecipe\((?<output><(?<out_id>[^>]+?)(?::(?<out_meta>\*|\d+))?>(?<out_tail>(\.withTag\(\{.*?\}\))?( \* \d+)?)?), (?<input><(?<in_id>[^>]+?)(?::(?<in_meta>\*|\d+))?>(?<in_tail>(\.withTag\(\{.*?\}\))?( \* \d+)?)?), .+\)$/gm)
+  ].map(m=>m.groups).sort((a,b)=>naturalSort(a.input,b.input))
+}
