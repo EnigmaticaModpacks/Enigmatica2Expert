@@ -308,3 +308,27 @@ craft.remake(<extrautils2:fireaxe>, ["pretty",
 recipes.remove(<extrautils2:flattransfernode:*>);
 mods.mechanics.addCrushingBlockRecipe(<extrautils2:grocket:0>, [<extrautils2:flattransfernode:0>], [1.0d]);
 mods.mechanics.addCrushingBlockRecipe(<extrautils2:grocket:2>, [<extrautils2:flattransfernode:1>], [1.0d]);
+
+# Netherstar Generator
+static generator_netherstar as extrautilities2.Tweaker.IMachine
+	= extrautilities2.Tweaker.IMachineRegistry.getMachine("extrautils2:generator_netherstar");
+generator_netherstar.removeRecipe({"input": <minecraft:nether_star>});
+
+# Old energy amount from 1 nether star: 9,600,000 RF
+# Old time: 2400
+# Old RF/T: 4000
+function addNetherStarGen(input as IIngredient, mult as double) {
+	val new_rate = 1000.0d;
+	generator_netherstar.addRecipe({"input": input}, {}, (new_rate * mult * 2400.0d) as int, 2400); # Default
+}
+
+addNetherStarGen(<minecraft:nether_star>                   , 1    ); # Default
+addNetherStarGen(<ore:blockNetherStar>                     , 6.0  ); # Block of Nether Stars
+addNetherStarGen(<extendedcrafting:material:40>            , 1.2  ); # Ender Star
+addNetherStarGen(<extendedcrafting:material:41>            , 0.12 ); # Ender Star Nugget
+addNetherStarGen(<mysticalagradditions:nether_star_seeds>  , 100.0); # Nether Star Seeds
+addNetherStarGen(<mysticalagradditions:stuff>              , 0.5  ); # Nether Star Shard
+addNetherStarGen(<ore:foodNetherstartoast>                 , 1.1  ); # Nether Star on Toast
+addNetherStarGen(<mysticalagradditions:nether_star_essence>, 0.06 ); # Nether Star Essence
+addNetherStarGen(<ore:nuggetNetherStar>                    , 0.11 ); # Nether Star Nugget
+addNetherStarGen(<mysticalagradditions:special>            , 3.0  ); # Nether Star Crux
