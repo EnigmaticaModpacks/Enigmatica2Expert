@@ -250,8 +250,8 @@ for item in [
 	}
 	
 # Dragons Breath from Dragon Forges
-	mods.iceandfire.recipes.addFireDragonForgeRecipe(<integrateddynamics:crystalized_chorus_chunk>, <botania:manaresource:15>, <minecraft:dragon_breath>); 
-	mods.iceandfire.recipes.addIceDragonForgeRecipe(<integrateddynamics:crystalized_chorus_chunk>, <botania:manaresource:15>, <minecraft:dragon_breath>);
+	scripts.wrap.iceandfire.recipes.addFireDragonForgeRecipe(<integrateddynamics:crystalized_chorus_chunk>, <botania:manaresource:15>, <minecraft:dragon_breath>); 
+	scripts.wrap.iceandfire.recipes.addIceDragonForgeRecipe(<integrateddynamics:crystalized_chorus_chunk>, <botania:manaresource:15>, <minecraft:dragon_breath>);
 	
 	
 
@@ -385,7 +385,8 @@ remakeEx(<iceandfire:dragonforge_ice_brick> * 2, [
 	[<ore:dragonIceScales>, <ore:bricksStone>, <ore:dragonIceScales>]]);
 
 # Dragon meal
-remakeFluidToItem(<iceandfire:dragon_meal>, <fluid:blood>, <ore:primeMeatCooked>*8);
+recipes.remove(<iceandfire:dragon_meal>);
+scripts.wrap.inworldcrafting.FluidToItem.transform(<iceandfire:dragon_meal>, <fluid:blood>, [<ore:primeMeatCooked>*4]);
 
 # Remove craft table dragon recipes
 recipes.remove(<iceandfire:dragonforge_fire_core_disabled>);
@@ -473,7 +474,7 @@ recipes.addShaped("iceandfire_deathworm_egg", <iceandfire:iceandfire.deathworm_e
 ]);
 
 # Big Worm
-mods.inworldcrafting.FluidToItem.transform(<iceandfire:iceandfire.deathworm_egg:1>, <liquid:blueslime>, [<iceandfire:iceandfire.deathworm_egg>]);
+scripts.wrap.inworldcrafting.FluidToItem.transform(<iceandfire:iceandfire.deathworm_egg:1>, <liquid:blueslime>, [<iceandfire:iceandfire.deathworm_egg>]);
 
 ##################
 # MYRMEX
@@ -521,7 +522,7 @@ for i, jar in pixieJars {
 }
 
 # Spring water recipe
-mods.iceandfire.recipes.addIceDragonForgeRecipe( 
+scripts.wrap.iceandfire.recipes.addIceDragonForgeRecipe( 
     <biomesoplenty:jar_filled:1>, 
     Bucket("ic2hot_water"), 
     Bucket("hot_spring_water"));
@@ -530,21 +531,21 @@ mods.iceandfire.recipes.addIceDragonForgeRecipe(
 recipes.remove(<scalinghealth:heartcontainer>);
 
 # Heart container recipe
-mods.iceandfire.recipes.addFireDragonForgeRecipe(
+scripts.wrap.iceandfire.recipes.addFireDragonForgeRecipe(
     <cyclicmagic:heart_toxic>, 
     Bucket("lifeessence"), 
     <scalinghealth:heartcontainer>);
-mods.iceandfire.recipes.addIceDragonForgeRecipe(
+scripts.wrap.iceandfire.recipes.addIceDragonForgeRecipe(
     <cyclicmagic:heart_toxic>, 
     Bucket("lifeessence"), 
     <scalinghealth:heartcontainer>);
 
 # Cursed and Enchanced hearts recipes
-mods.iceandfire.recipes.addFireDragonForgeRecipe(
+scripts.wrap.iceandfire.recipes.addFireDragonForgeRecipe(
     <extendedcrafting:material:32>, 
     <scalinghealth:heartcontainer>, 
     <scalinghealth:difficultychanger:1>);
-mods.iceandfire.recipes.addIceDragonForgeRecipe(
+scripts.wrap.iceandfire.recipes.addIceDragonForgeRecipe(
     <extendedcrafting:material:32>, 
     <scalinghealth:heartcontainer>, 
     <scalinghealth:difficultychanger>);
@@ -557,8 +558,8 @@ envelopCheese("hippocampusMorb", <thermalexpansion:morb>.withTag({Generic: 1 as 
 envelopCheese("serpentMorb",     <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "iceandfire:seaserpent"}), <iceandfire:shiny_scales>);
 
 # Lily crafts
-mods.inworldcrafting.FluidToItem.transform(<iceandfire:fire_lily>, <liquid:pyrotheum>, [<extrautils2:enderlilly>]);
-mods.inworldcrafting.FluidToItem.transform(<iceandfire:frost_lily>, <liquid:cryotheum>, [<extrautils2:enderlilly>]);
+scripts.wrap.inworldcrafting.FluidToItem.transform(<iceandfire:fire_lily>, <liquid:pyrotheum>, [<extrautils2:enderlilly>]);
+scripts.wrap.inworldcrafting.FluidToItem.transform(<iceandfire:frost_lily>, <liquid:cryotheum>, [<extrautils2:enderlilly>]);
 
 recipes.addShapeless(<iceandfire:dragonforge_ice_core_disabled>, [<iceandfire:dragonforge_ice_core>]);
 recipes.addShapeless(<iceandfire:dragonforge_fire_core_disabled>, [<iceandfire:dragonforge_fire_core>]);

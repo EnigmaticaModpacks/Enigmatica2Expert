@@ -241,3 +241,12 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(IItemStack output, long rf, 
 mods.extendedcrafting.EnderCrafting.addShaped(IItemStack output, IIngredient[][] input2d)
 mods.extendedcrafting.TableCrafting.addShaped(@optional int level, IItemStack output, IIngredient[][] inputs)
 mods.extendedcrafting.TableCrafting.addShapeless(@optional int level, IItemStack output, IIngredient[] inputs)
+
+mods.inworldcrafting.FluidToItem.transform(IItemStack output, ILiquidStack inputFluid, IIngredient[] inputItems, @Optional boolean consume)
+mods.inworldcrafting.FluidToFluid.transform(ILiquidStack output, ILiquidStack inputFluid, IIngredient[] inputItems, @Optional boolean consume)
+mods.inworldcrafting.FireCrafting.addRecipe(IItemStack output, IIngredient inputItem, @Optional int ticks)
+mods.inworldcrafting.ExplosionCrafting.explodeItemRecipe(IItemStack output, IIngredient inputItem, @Optional int survicechance)
+mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(IItemStack output, IItemStack blockStack, @Optional int itemSpawnChance)
+
+mods.iceandfire.recipes.addFireDragonForgeRecipe(IItemStack input, IItemStack bloodInput, IItemStack output)
+mods.iceandfire.recipes.addIceDragonForgeRecipe(IItemStack input, IItemStack bloodInput, IItemStack output)

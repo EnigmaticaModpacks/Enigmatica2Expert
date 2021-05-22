@@ -366,8 +366,8 @@ import crafttweaker.item.IItemStack as IItemStack;
 
 # Using Dragon forge to harder recipes
 function addDragonForgeRecipe(input1 as IItemStack, input2 as IItemStack, output as IItemStack) {
-	mods.iceandfire.recipes.addFireDragonForgeRecipe(input1, input2, output);
-	mods.iceandfire.recipes.addIceDragonForgeRecipe(input1, input2, output);
+	scripts.wrap.iceandfire.recipes.addFireDragonForgeRecipe(input1, input2, output);
+	scripts.wrap.iceandfire.recipes.addIceDragonForgeRecipe(input1, input2, output);
 }
 
 recipes.removeByRecipeName("avaritia:items/resource/crystal_matrix_ingot");

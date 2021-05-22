@@ -217,10 +217,9 @@ let rgx =
   `.(?<mod>${   [...   rgx_mod].join('|')})`+
   `.(?<class>${ [... rgx_class].join('|')})`+
   `.(?<method>${[...rgx_method].join('|')})`+
-  '(?<after>[ 	\n]*[(;])'
+  '(?<after>[ 	\n]*([(;]|as\\s+\\w+;))'
 const replaceRegexp = new RegExp(rgx, 'gm')
 // console.log('Replace Regexp: ', replaceRegexp.source);
-// let rgx = /^[ 	]*(?!\/\/+|#+)[ 	]*(import )?mods\.(?!jei|jaopca|ctutils|zentoolforge|mekatweaker|artisanworktables)\w+(\.(?!remove\w*)\w+){1,}[ 	]*[(;]/gm
 
 let totalReplaced = 0
 let functionsSet = new Set()

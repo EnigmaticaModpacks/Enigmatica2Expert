@@ -459,7 +459,7 @@ val compressedBlocks = [
 
 for i, input in compressedBlocks {
 	if(i%2==1) continue;
-	scripts.wrap.enderio.AlloySmelter.addRecipe(compressedBlocks[i + 1], [input], (i + 1) * 20000, (i + 1) * 200);
+	scripts.wrap.enderio.AlloySmelter.addRecipe(compressedBlocks[i + 1], [input], pow(4, i/2+1) * 1000, (i + 1) * 200);
 }
 
 # Cheaper cause vanilla recipe require Vibrant Alloy

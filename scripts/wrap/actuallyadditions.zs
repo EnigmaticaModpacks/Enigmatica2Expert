@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded actuallyadditions
-// Uses of this mod: 28
+// Uses of this mod: 29
 
 
 //####################################################
@@ -31,6 +31,20 @@ zenClass Class_AtomicReconstructor { zenConstructor() {}
 
 }
 static AtomicReconstructor as Class_AtomicReconstructor = Class_AtomicReconstructor();
+
+//####################################################
+// Uses of this class: 1
+zenClass Class_BallOfFur { zenConstructor() {}
+
+	// Uses of this method: 1
+	function addReturn(output as IItemStack, chance as int) as void {
+		if(utils.DEBUG) print('Recipe wrapped: mods.actuallyadditions.BallOfFur.addReturn'~
+			serialize.args([serialize.IItemStack(output), chance]));
+		mods.actuallyadditions.BallOfFur.addReturn(output, chance);
+	}
+
+}
+static BallOfFur as Class_BallOfFur = Class_BallOfFur();
 
 //####################################################
 // Uses of this class: 12

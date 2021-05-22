@@ -412,7 +412,7 @@ utils.rh(<immersivecables:coil_block:3>);
 utils.rh(<immersivecables:wire_coil:3>);
 
 # Make Quicksand
-mods.inworldcrafting.FluidToFluid.transform(<liquid:sand>, <liquid:blueslime>, [<ore:soulSand>]);
+scripts.wrap.inworldcrafting.FluidToFluid.transform(<liquid:sand>, <liquid:blueslime>, [<ore:soulSand>]);
 scripts.process.solution([<ore:soulSand>], [<liquid:blueslime>*1000], [<liquid:sand>*1000], null, "except: highoven");
 
 # Bedrock Ore Miner

@@ -391,7 +391,7 @@ craft.remake(<cyclicmagic:corrupted_chorus> * 4, ["pretty",
 
 # [Glowing_Chorus_Fruit] from [Crystallized_Obsidian_Bucket][+1]
 recipes.remove(<cyclicmagic:glowing_chorus> * 8);
-mods.inworldcrafting.FluidToItem.transform(<cyclicmagic:glowing_chorus>, <fluid:crystal>, [<cyclicmagic:corrupted_chorus>]);
+scripts.wrap.inworldcrafting.FluidToItem.transform(<cyclicmagic:glowing_chorus>, <fluid:crystal>, [<cyclicmagic:corrupted_chorus>]);
 
 # [Ender_Wing] from [Golden_Egg][+4]
 craft.remake(<cyclicmagic:tool_warp_spawn>, ["pretty",

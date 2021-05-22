@@ -131,7 +131,7 @@ function magicProcessing(nativeClusterOreEntry as IOreDictEntry, ore_name as str
 
   # mods.astralsorcery.StarlightInfusion.addInfusion(IItemStack input, IItemStack output, boolean consumeMultiple, float consumptionChance, int craftingTickTime);
   scripts.wrap.astralsorcery.StarlightInfusion.addInfusion(prevItem, crystalShard, true, 0.2, 20);
-  mods.inworldcrafting.FluidToItem.transform(currItem, <fluid:astralsorcery.liquidstarlight>, [prevItem*4], true);
+  scripts.wrap.inworldcrafting.FluidToItem.transform(currItem, <fluid:astralsorcery.liquidstarlight>, [prevItem*4], true);
   craft.shapeless(currItem,   "cccc",     {c: crystalShard});
   craft.shapeless(currItem*2, "cccccccc", {c: crystalShard});
 
@@ -146,15 +146,22 @@ function magicProcessing(nativeClusterOreEntry as IOreDictEntry, ore_name as str
   if (isNull(currItem)) return null; # 🛑
   furnace.addRecipe(dirtyGem * 4, currItem);
 
+  val biomeStone = itemUtils.getItem('botania:biomestonea', hash % 8) * 2;
   var a_recipe = AgglomerationRecipe.create();
   a_recipe.output(currItem);
   a_recipe.color1(0x1010FF).color2(0x0FFF3F).multiblock(agglMultiblock);
   a_recipe.inputs(Grid(["qO"], {
-      O: itemUtils.getItem('botania:biomestonea', hash % 8) * 2, 
+      O: biomeStone, 
       q: prevItem * 3,
     }).shapeless());
   a_recipe.manaCost(75000);
   Agglomeration.addRecipe(a_recipe);
+
+  scripts.wrap._custom.Agglomeration.addRecipe(
+    [<minecraft:diamond_block> * 4, prevItem * 3, biomeStone, <liquid:betterquesting.placeholder>.withTag({entry:"Mana"}) * 75000],
+    [currItem, <tconstruct:metal> * 4],
+    [<botania:terraplate>, <twilightforest:aurora_block> * 4]
+  );
 
   # ██████╗ 
   # ╚════██╗

@@ -1,13 +1,12 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.ic2.ScrapBox;
-import mods.ic2.MetalFormer.addRollingRecipe as addRollingRecipe;
 #modloaded ic2
 
 
 # Hydrated Coal Dust recipe consumes containers that can store 1000mB + liquid, this fixes that
 	recipes.remove(<ic2:dust:3>);
-	mods.inworldcrafting.FluidToItem.transform(<ic2:dust:3>, <fluid:water>, [<ore:dustCoal>]);
+	scripts.wrap.inworldcrafting.FluidToItem.transform(<ic2:dust:3>, <fluid:water>, [<ore:dustCoal>]);
 	// recipes.addShapeless("ic2_hydrated_coal_dust_liquid_fix", 
 	// <ic2:dust:3>, 
 	// [<ore:dustCoal>,<liquid:water> * 1000]);
@@ -290,24 +289,28 @@ craft.remake(<ic2:solar_helmet>, ["pretty",
 });
 
 # Crafts from ini file
-addRollingRecipe(<advancedrocketry:productplate:1>, <ore:ingotTitaniumIridium>);
-addRollingRecipe(<advancedrocketry:productplate>  , <ore:ingotTitaniumAluminide>);
-addRollingRecipe(<immersiveengineering:metal:35>  , <ore:ingotUranium>);
-addRollingRecipe(<libvulpes:productplate:3>       , <ore:ingotSilicon>);
-addRollingRecipe(<libvulpes:productplate:7>       , <ore:ingotTitanium>);
-addRollingRecipe(<redstonearsenal:material:128>   , <ore:ingotElectrumFlux>);
-addRollingRecipe(<thermalfoundation:material:322> , <ore:ingotSilver>);
-addRollingRecipe(<thermalfoundation:material:324> , <ore:ingotAluminum>);
-addRollingRecipe(<thermalfoundation:material:325> , <ore:ingotNickel>);
-addRollingRecipe(<thermalfoundation:material:326> , <ore:ingotPlatinum>);
-addRollingRecipe(<thermalfoundation:material:327> , <ore:ingotIridium>);
-addRollingRecipe(<thermalfoundation:material:328> , <ore:ingotMithril>);
-addRollingRecipe(<thermalfoundation:material:353> , <ore:ingotElectrum>);
-addRollingRecipe(<thermalfoundation:material:354> , <ore:ingotInvar>);
-addRollingRecipe(<thermalfoundation:material:356> , <ore:ingotConstantan>);
-addRollingRecipe(<thermalfoundation:material:357> , <ore:ingotSignalum>);
-addRollingRecipe(<thermalfoundation:material:358> , <ore:ingotLumium>);
-addRollingRecipe(<thermalfoundation:material:359> , <ore:ingotEnderium>);
+for out, inp in {
+	<advancedrocketry:productplate:1>: <ore:ingotTitaniumIridium>,
+	<advancedrocketry:productplate>  : <ore:ingotTitaniumAluminide>,
+	<immersiveengineering:metal:35>  : <ore:ingotUranium>,
+	<libvulpes:productplate:3>       : <ore:ingotSilicon>,
+	<libvulpes:productplate:7>       : <ore:ingotTitanium>,
+	<redstonearsenal:material:128>   : <ore:ingotElectrumFlux>,
+	<thermalfoundation:material:322> : <ore:ingotSilver>,
+	<thermalfoundation:material:324> : <ore:ingotAluminum>,
+	<thermalfoundation:material:325> : <ore:ingotNickel>,
+	<thermalfoundation:material:326> : <ore:ingotPlatinum>,
+	<thermalfoundation:material:327> : <ore:ingotIridium>,
+	<thermalfoundation:material:328> : <ore:ingotMithril>,
+	<thermalfoundation:material:353> : <ore:ingotElectrum>,
+	<thermalfoundation:material:354> : <ore:ingotInvar>,
+	<thermalfoundation:material:356> : <ore:ingotConstantan>,
+	<thermalfoundation:material:357> : <ore:ingotSignalum>,
+	<thermalfoundation:material:358> : <ore:ingotLumium>,
+	<thermalfoundation:material:359> : <ore:ingotEnderium>,
+} as IIngredient[IItemStack] {
+	scripts.wrap.ic2.MetalFormer.addRollingRecipe(out, inp);
+}
 
 # Harder to make "switch" connections a challenge
 # [Glass Fiber Wire Relay*4] from [Pure Certus Quartz Crystal][+3]

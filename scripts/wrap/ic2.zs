@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded ic2
-// Uses of this mod: 6
+// Uses of this mod: 7
 
 
 //####################################################
@@ -93,6 +93,20 @@ zenClass Class_Macerator { zenConstructor() {}
 
 }
 static Macerator as Class_Macerator = Class_Macerator();
+
+//####################################################
+// Uses of this class: 1
+zenClass Class_MetalFormer { zenConstructor() {}
+
+	// Uses of this method: 1
+	function addRollingRecipe(output as IItemStack, input as IIngredient) as void {
+		if(utils.DEBUG) print('Recipe wrapped: mods.ic2.MetalFormer.addRollingRecipe'~
+			serialize.args([serialize.IItemStack(output), serialize.IIngredient(input)]));
+		mods.ic2.MetalFormer.addRollingRecipe(output, input);
+	}
+
+}
+static MetalFormer as Class_MetalFormer = Class_MetalFormer();
 
 //####################################################
 // Uses of this class: 1

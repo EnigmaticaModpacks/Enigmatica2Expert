@@ -23,7 +23,7 @@ recipes.addShaped("ender_bucket2",
 	[null, <ore:plateIron>, null]]);
 
 # Precious emerald from emerald in blueslime
-mods.inworldcrafting.FluidToItem.transform(<randomthings:ingredient:9> * 2, <fluid:blueslime>, [<ore:oreEmerald>]);
+scripts.wrap.inworldcrafting.FluidToItem.transform(<randomthings:ingredient:9> * 2, <fluid:blueslime>, [<ore:oreEmerald>]);
 
 # Floo dust
 remakeEx(<randomthings:ingredient:7>*8, [
@@ -157,7 +157,7 @@ craft.remake(<randomthings:imbuingstation>, ["pretty",
 
 
 # Blood stone from moon stone
-mods.inworldcrafting.FluidToItem.transform(<randomthings:rezstone>, <fluid:blood>, [<extrautils2:ingredients:5>]);
+scripts.wrap.inworldcrafting.FluidToItem.transform(<randomthings:rezstone>, <fluid:blood>, [<extrautils2:ingredients:5>]);
 <randomthings:rezstone>.maxStackSize = 64;
 
 # [Blackout_Powder*4] from [Bio_Coal][+2]
@@ -234,7 +234,7 @@ craft.remake(<randomthings:weatheregg:2> * 2, ["pretty",
 
 # Spectre string harder
 recipes.remove(<randomthings:ingredient:12>);
-mods.inworldcrafting.FluidToItem.transform(<randomthings:ingredient:12>, <fluid:liquid_sunshine>, [
+scripts.wrap.inworldcrafting.FluidToItem.transform(<randomthings:ingredient:12>, <fluid:liquid_sunshine>, [
 	<forestry:phosphor>,
 	<randomthings:ingredient:2>,
 	<mysticalagriculture:crafting:23>,

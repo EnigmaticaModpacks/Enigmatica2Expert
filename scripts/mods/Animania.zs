@@ -89,7 +89,7 @@ recipes.removeByRecipeName("animania:straw");
 # Prime meat recipes
 for i, meat in primeMeatCooked { 
 	furnace.remove(meat);
-	mods.inworldcrafting.FireCrafting.addRecipe(meat, primeMeatRaw[i], 20);
+	scripts.wrap.inworldcrafting.FireCrafting.addRecipe(meat, primeMeatRaw[i], 20);
     mods.rats.recipes.addChefRatRecipe(primeMeatRaw[i], meat);
 }
 

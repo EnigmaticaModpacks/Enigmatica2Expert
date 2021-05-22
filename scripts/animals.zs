@@ -72,7 +72,7 @@ mods.rockytweaks.Anvil.addRecipe(<minecraft:writable_book>, <tconstruct:material
 // Step 2
 // ---------------------------
 
-mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(<contenttweaker:blasted_coal> * 2, <contenttweaker:conglomerate_of_coal>);
+scripts.wrap.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(<contenttweaker:blasted_coal> * 2, <contenttweaker:conglomerate_of_coal>);
 craft.make(<contenttweaker:conglomerate_of_coal>, ["pretty",
   "L B L",
   "▲ i ▲",

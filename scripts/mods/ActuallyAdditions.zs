@@ -1,6 +1,5 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.item.IIngredient;
-import mods.actuallyadditions.BallOfFur.addReturn as addBallReturn;
 
 #modloaded actuallyadditions
 	
@@ -278,7 +277,7 @@ for i in 0 to listCatFur.length {
 	if (i%3==0) {
 		var item = itemUtils.getItem(listCatFur[i], listCatFur[i+1]);
 		if (!isNull(item)) {
-			addBallReturn(item, listCatFur[i+2]);
+			scripts.wrap.actuallyadditions.BallOfFur.addReturn(item, listCatFur[i+2]);
 			val chance = (mods.ctutils.utils.Math.floor((listCatFur[i+2] as float) / weight * 10000) as double) / 100;
 			item.addTooltip(format.darkGray("Drops from ") ~ format.bold("Ball Of Fur") ~
 				format.darkGray(" with chance ") ~ format.gray(chance ~ "%"));
