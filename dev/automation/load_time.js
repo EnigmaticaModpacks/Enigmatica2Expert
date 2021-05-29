@@ -62,7 +62,7 @@ function drawBars(arr, width = 60, timeChar = 's') {
 
 const totalTime = log.match(/\[Client thread\/INFO\] \[Surge\]: The game loaded in approximately +(.*) seconds./)?.[1] ?? '0'
 console.log('MC load time: '+num(parseFloat(totalTime))+'s')
-console.log(drawBars(time_arr).slice(0,10).join('\n'))
+console.log(drawBars(time_arr).slice(0,20).join('\n'))
 
 console.log(
   '\nCraftTweaker script loading:'+

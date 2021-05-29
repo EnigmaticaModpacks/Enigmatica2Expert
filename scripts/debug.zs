@@ -27,7 +27,7 @@ function logDebugData() {
       logRaw(
         '    ["'~serialize(item.displayName)~'","'
         ~ item.definition.id ~ (item.damage!=0 ? ':'~item.damage : '') ~ '"'
-        ~ ",'"~serialize(sNbt)~"'"
+        ~ ',"'~serialize(sNbt)~'"'
         ~ "," ~ item.burnTime
         ~ ']' ~ (i==last ? '' : ',')
       );

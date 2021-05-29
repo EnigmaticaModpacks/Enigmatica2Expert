@@ -1,41 +1,37 @@
+/*
 
+  Collect all XML files with recipes that cant be handled by
+  zenscripts itself. This is usually EnderIO and AdvRocketry xml's
+
+*/
 const convert = require('xml-js')
 const detectIndent = require('detect-indent')
 const fs = require('fs')
 const glob = require('glob')
-const {begin, end} = require('../lib/utils.js')
+const {begin, end, naturalSort} = require('../lib/utils.js')
 
-const crafttweaker_log = fs.readFileSync('crafttweaker.log', 'utf8')
+// List of curated files and folders
+const curatedFiles = glob.sync(
+  'config/advRocketry/*.xml',
+  'config/enderio/recipes/user/user_recipes.xml'
+)
 
 const changes = {}
-const stat = {
-  total: 0,
-  files: new Map()
-}
+let total = 0
 
-for (const match of crafttweaker_log.matchAll(
+for (const {groups} of fs.readFileSync('crafttweaker.log', 'utf8').matchAll(
     /^\[INITIALIZATION\]\[CLIENT\]\[INFO\] Put this recipe in file \[(\.\/)?(?<filename>[^\]]*?)\] manually.\n\r?(?<recipe>(\s*<!--(.*)-->\n\r?)?([\s\S\n\r]*?<\/[rR]ecipe>))/gm
-  )) {
-  const g = match.groups
-  changes[g.filename] = changes[g.filename]??[]
-  changes[g.filename].push(g.recipe)
-  stat.total++
+)) {
+  (changes[groups.filename] ??= []).push(groups.recipe)
+  total++
 }
 
 // Sort recipes inside changes to prevent object shuffling
 for (const c of Object.values(changes)) {
-  c.sort((a,b)=>a.localeCompare(b))
+  c.sort(naturalSort)
 }
 
-begin(`  Found ${stat.total} recipes for ${Object.keys(changes).length} files. Injecting `)
-
-// List of curated files and folders
-const curatedFiles = [
-  ...glob.sync('config/advRocketry/*.xml'),
-  'config/enderio/recipes/user/user_recipes.xml'
-]
-
-const automaticComment = ' Recipe below generated automatically. Do not make changes or they gonna be rewritten. '
+begin(`  Found ${total} recipes for ${Object.keys(changes).length} files. Injecting `)
 
 function mutateXml(filePath, fnc) {
   const xml = fs.readFileSync(filePath, 'utf8')
@@ -47,6 +43,8 @@ function mutateXml(filePath, fnc) {
 
 // Normalize enderio recipes
 // mutateXml("../config/enderio/recipes/user/user_recipes.xml");
+
+const automaticComment = ' Recipe below generated automatically. Do not make changes or they gonna be rewritten. '
 
 for (const filePath of curatedFiles) {
   mutateXml(filePath, xml_obj => {

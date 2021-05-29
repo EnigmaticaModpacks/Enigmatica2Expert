@@ -20,7 +20,7 @@ function init(argv = process.argv) {
 
 if(isPathHasChanged('dev/automation/betterquesting')) {
   console.log(' ❌📖 EvenBetterQuesting error: splitted folder have changes!')
-  process.exit(1)
+  return
 }
 
 init()

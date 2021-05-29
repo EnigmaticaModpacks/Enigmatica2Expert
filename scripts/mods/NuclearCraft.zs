@@ -280,7 +280,7 @@ scripts.process.fill(<ore:ice>, <fluid:liquidhelium> * 50, <nuclearcraft:block_i
 for fluid in [
 /*Inject_js(
 (()=>{
-  const fuels = getCsv('config/tellme/fluids-csv.csv')
+  const fuels = getCSV('config/tellme/fluids-csv.csv')
 		.map(l=>l.Name.match(/^fuel_(.*)_fluoride$/)?.[1])
     .filter(s=>s)
 
@@ -321,7 +321,7 @@ for fluid in [
 for fluid in [
 /*Inject_js(
 (()=>{
-  const fuels = getCsv('config/tellme/fluids-csv.csv')
+  const fuels = getCSV('config/tellme/fluids-csv.csv')
 		.map(l=>l.Name.match(/^(((?!fuel).)*)_fluoride_flibe$/)?.[1])
     .filter(s=>s)
 		.sort((a, b) => b.length - a.length)

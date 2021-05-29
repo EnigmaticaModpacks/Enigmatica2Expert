@@ -44,7 +44,7 @@ function formatTable(rows) {
 }
 
 async function init() {
-  const diff = getModsIds('../Enigmatica 2 Expert - E2E/minecraftinstance.json', 'minecraftinstance.json')
+  const diff = getModsIds('../Enigmatica 2 Expert - E2E (unchanged, updated)/minecraftinstance.json', 'minecraftinstance.json')
 
   console.log(`  💟 Asking Curseforge API for ${diff.union.length} mods ...`)
 

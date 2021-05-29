@@ -35,6 +35,7 @@ const modsToCopy = globs([
   '!mods/probe-*.jar',
   '!mods/advancementscreenshot_*.jar',
   '!mods/sampler-*.jar',
+  '!mods/IconExporter-*.jar',
 ])
 
 // Server only files

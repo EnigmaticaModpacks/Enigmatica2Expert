@@ -8,34 +8,27 @@
 */
 
 
-const glob = require('glob')
 const fs = require('fs')
-const csvParseSync = require('csv-parse/lib/sync')
-
-const {injectInFile, write, end, config, naturalSort, csv, getFurnaceRecipes} = require('../lib/utils.js') // eslint-disable-line no-unused-vars
-
-function loadText(filename, encoding = 'utf8') {
-  return fs.readFileSync(filename, encoding)
-}
-
-// ----------------------------------
-// Functions that can be used in .zs files
-// ----------------------------------
+const glob = require('glob')
 const _ = require('lodash') // eslint-disable-line no-unused-vars
-function getCsv(filePath) { // eslint-disable-line no-unused-vars
-  return csvParseSync(loadText(filePath), {columns: true})
+
+const {injectInFile, write, end, config, naturalSort, getCSV, getFurnaceRecipes, least_common_multiplier} = require('../lib/utils.js') // eslint-disable-line no-unused-vars
+
+function loadText(filename) {
+  return fs.readFileSync(filename, 'utf8')
 }
+
 // ----------------------------------
 
 const occurences = []
 
 glob.sync('scripts/**/*.zs').forEach(filePath => {
-  var zsfileContent = loadText(filePath)
+  const zsfileContent = loadText(filePath)
   for (const match of zsfileContent.matchAll(/\\* *Inject_js(\([\s\S\n\r]*?\))\*\//gm)) {
-    var lineNumber = zsfileContent.substring(0, match.index).split('\n').length
+    const lineNumber = zsfileContent.substring(0, match.index).split('\n').length
     occurences.push({
       filePath: filePath,
-      command: match[1],
+      command: match[1].trim(),
       line: lineNumber,
       below: zsfileContent.substring(match.index + match[0].length),
     })
@@ -46,13 +39,16 @@ write(`  🐲 Found ${occurences.length} Inject_js blocks. Evaluating `)
 
 occurences.forEach(cmd => {
   let injectValue = ''
-  
-  try {
-    injectValue = eval(cmd.command)
-  } catch (error) {
-    console.log('\nComment block Error.\nFile:', cmd.filePath, ' Line:', cmd.line)
-    console.error(error)
-    return
+  if(/^\(\s*\)$/gmi.test(cmd.command)) {
+    injectValue = '# Empty Injection' 
+  } else {
+    try {
+      injectValue ||= eval(cmd.command)
+    } catch (error) {
+      console.log('\nComment block Error.\nFile:', cmd.filePath, '\nLine:', cmd.line, '\nCommand:', cmd.command)
+      console.error(error)
+      return
+    }
   }
 
   const injectString = Array.isArray(injectValue)
@@ -65,6 +61,7 @@ occurences.forEach(cmd => {
 
 end()
 
+// Test section:
 console.log(
 
 )

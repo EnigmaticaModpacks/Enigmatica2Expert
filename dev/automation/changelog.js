@@ -2,7 +2,7 @@
 const { execSync } = require('child_process')
 const fs = require('fs')
 const path = require('path')
-const {write, end} = require('../lib/utils.js')
+const {write, end, escapeRegex} = require('../lib/utils.js')
 const {getModsIds, formatRow} = require('./modsDiff.js')
 const curseforge = require('mc-curseforge-api')
 
@@ -103,6 +103,7 @@ async function init() {
       🌠 Astral Sorcery
       🌡️ Thermal Expansion
       🌿 Patchouli
+      🍃 Botania
       🎲 Random Things
       🏪 Requious Fracto
       🐀 Rats
@@ -137,12 +138,16 @@ async function init() {
       🚄 Vaultopic
       🍇 End Reborn
       👿 Extra Utilities 2
+      🌸 Industrial Foregoing
+      🧻 JEI
     `.trim().split('\n').map(l=>l.trim().split(' ')).map(([c,...r])=>[c, r.join(' ')])],
     ['🔄', 'Misc Changes', [
       ['🧱', 'Technical'],
       ['🚧', 'Develop'],
       ['🧹', 'Refactoring'],
       ['𝓩𝒮', 'ZenScript'],
+      ['📝', 'TODO'],
+      ['🧮', 'craft.zs'],
     ]],
   ]
 
@@ -153,7 +158,9 @@ async function init() {
     changelogText += (' '.repeat(Math.max(0,(level-1)*2)) + (level>0?'- ':'') + '#'.repeat(level) + `## ${categoryKey} ${desc}\n`) + '\n'
     for (const subject of map[categoryKey]??[]) {
       subject.split('\n').forEach((l,i)=>{
-        changelogText += (tab + `${i==0?'- ':'  > '}${l}`) + '\n'
+        const trimRgx = '^' + escapeRegex(desc).replace(/\s+/, '\\s*') + '\\s*:\\s*'
+        const trimmedSubject = l.replace(new RegExp(trimRgx, 'i'), '')
+        changelogText += (tab + `${i==0?'- ':'  > '}${trimmedSubject}`) + '\n'
       })
     }
     map[categoryKey] = undefined

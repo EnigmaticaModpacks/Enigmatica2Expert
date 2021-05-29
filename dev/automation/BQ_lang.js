@@ -19,7 +19,7 @@ const getLangPath = (langCode) => 'resources/betterquesting/lang/'+langCode+'.la
 const defaultQuests_path = 'config/betterquesting/DefaultQuests.json'
 if(isPathHasChanged(defaultQuests_path) || validCodes.map(getLangPath).some(isPathHasChanged)) {
   console.log(' ❌📖 BQ_lang error: Quests or Langs have changes!')
-  process.exit(1)
+  return
 }
 
 const langFiles = validCodes.map(getLangFile)

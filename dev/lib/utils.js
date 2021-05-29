@@ -17,37 +17,13 @@ const { execSync } = require('child_process')
 /*=============================================
 =                   Helpers                   =
 =============================================*/
-function loadText(filename, encoding = 'utf8') {
-  return fs.readFileSync(path.resolve(__dirname, filename), encoding)
-}
-module.exports.loadText = loadText
-
-module.exports.loadJson = function(filename) {
-  return JSON.parse(loadText(filename))
-}
-
-function saveText(txt, filename) {
-  var filePath = path.resolve(__dirname, filename)
-  fs.mkdirSync(path.dirname(filePath), { recursive: true })
-  fs.writeFileSync(filePath, txt)
-}
-module.exports.saveText = saveText
-
-module.exports.saveObjAsJson = function(obj, filename) {
-  saveText(JSON.stringify(obj, null, 2), filename)
-}
-
-module.exports.readdir = function(folderPath) {
-  return fs.readdirSync(path.resolve(__dirname, folderPath))
-}
-
-var escapeRegex = function(string) {
+const escapeRegex = function(string) {
   return string.replace(/[/\\^$*+?.()|[\]{}]/g, '\\$&')
 }
 module.exports.escapeRegex = escapeRegex
 
-var matchBetween = function(str, begin, end, regex) {
-  var sub = str
+const matchBetween = function(str, begin, end, regex) {
+  let sub = str
   if (begin) sub = str.substr(str.indexOf(begin) + begin.length)
   if (end)   sub = sub.substr(0, sub.indexOf(end))
   return [...sub.matchAll(regex)]
@@ -103,16 +79,16 @@ function renameKeys(obj, fn) {
     return obj
   }
 
-  var keys = Object.keys(obj)
-  var result = {}
+  const keys = Object.keys(obj)
+  const result = {}
   
 
-  for (var i = 0; i < keys.length; i++) {
-    var key = keys[i]
+  for (let i = 0; i < keys.length; i++) {
+    let key = keys[i]
     if (key == '__'){ continue }
 
-    var val = obj[key]
-    var str = fn(key, val)
+    const val = obj[key]
+    const str = fn(key, val)
     if (typeof str === 'string' && str !== '') {
       key = str
     }
@@ -120,36 +96,34 @@ function renameKeys(obj, fn) {
   }
 
   // Check if its array rather than object
-  var newKeys = Object.keys(result)
-  var isArray = (newKeys[0] == 0)
-  if (isArray) {for (var i = 1; i < newKeys.length; i++){
+  const newKeys = Object.keys(result)
+  let isArray = (newKeys[0] == 0)
+  if (isArray) {for (let i = 1; i < newKeys.length; i++){
       if (parseInt(newKeys[i]) != parseInt(newKeys[i-1])+1) {isArray = false}
   }}
   return (isArray ? Object.values(result) : result)
 }
 
 function renameDeep(obj, cb) {
-  var type = typeof(obj)
+  const type = typeof(obj)
 
   if (type !== 'object' && type !== 'array') {
     throw new Error('expected an object')
   }
 
-  var res = []
+  let res = []
   if (type === 'object') {
     obj = renameKeys(obj, cb)
   }
   if (!Array.isArray(obj)) { res = {} }
 
-  for (var key in obj) {
+  for (const key in obj) {
     if (key == '__'){ continue }
-    if (obj.hasOwnProperty(key)) {
-      var val = obj[key]
-      if (typeof(val) === 'object' || typeof(val) === 'array') {
-        res[key] = renameDeep(val, cb)
-      } else {
-        res[key] = val
-      }
+    const val = obj[key]
+    if (typeof(val) === 'object' || Array.isArray(val)) {
+      res[key] = renameDeep(val, cb)
+    } else {
+      res[key] = val
     }
   }
   return res
@@ -158,43 +132,40 @@ module.exports.renameDeep = renameDeep
 
 
 function config(cfgPath) {
-  var wholePath = 'config/' + cfgPath
-  var cfg = fs.readFileSync(wholePath, 'utf8')
-  cfg = cfg
+  const wholePath = 'config/' + cfgPath
+  let cfg = fs.readFileSync(wholePath, 'utf8')
     .replace(/^ *#.*$/gm, '') // Remove comments
     .replace(/^~.*$/gm, '') // config version
     .replace(/^ *(\w+|"[^"]+") *{ *$/gm, '$1:{') // class name
     .replace(/^ *} *$/gm, '},') // end of block
     .replace(/^ *\w:(?:([\w.]+)|"([^"]+)") *= *(.*)$/gm, (match, p1, p2, p3)=>{
-
       return (isNaN(p3) && !(p3 === 'true' || p3 === 'false')) || p3===''
       ? `"${p1||p2}":"${p3}",`
       : `"${p1||p2}":${p3},`
-    }) // simple values
-
-  // Replace lists
-  cfg = cfg.replace(/^ *\w:(?:([\w.]+)|"([^"]+)") *< *[\s\S\n\r]*?> *$/gm, (match, p1, p2)=>{
-    var lines = match.split('\n')
-    var content = lines.slice(1, lines.length-1)
-    return [
-      `"${p1||p2}"` + ': [',
-      ...content.map(l=>`"${l.trim()}",`),
-      '],'
-    ].join('\n')
-  })
+    }) // simple values  
+    .replace(/^ *\w:(?:([\w.]+)|"([^"]+)") *< *[\s\S\n\r]*?> *$/gm, (match, p1, p2)=>{
+      const lines = match.split('\n')
+      const content = lines.slice(1, lines.length-1)
+      return [
+        `"${p1||p2}"` + ': [',
+        ...content.map(l=>`"${l.trim()}",`),
+        '],'
+      ].join('\n')
+    })// Replace lists
 
 
-  var result
+  let result
   try {
     result = eval(`({${cfg}})`)
   } catch (error) {
     console.log('Parsing config error. File: ', wholePath)
     console.error(error)
-    saveText(
+    fs.writeFileSync(
+      path.resolve(__dirname, '_error_'+cfgPath.split('.').slice(0, -1).join('.')+'.js'),
       'return{'+
       cfg.replace(/\n\n+/gm, '\n')
-      +'}',
-      path.resolve(__dirname, '_error_'+cfgPath.split('.').slice(0, -1).join('.')+'.js'))
+      +'}'
+    )
   }
 
   return result
@@ -204,13 +175,25 @@ module.exports.config = config
 const naturalSort = (a,b)=>a.localeCompare(b, undefined, {numeric: true, sensitivity: 'base'})
 module.exports.naturalSort = naturalSort
 
-module.exports.csv = filename=>csvParseSync(fs.readFileSync(filename,'utf8'), {columns: true})
+module.exports.getCSV = filename=>csvParseSync(fs.readFileSync(filename,'utf8'), {columns: true})
 
-module.exports.isPathHasChanged = pPath=>!!execSync('git diff HEAD '+pPath).toString().trim()
+module.exports.isPathHasChanged = pPath=>{
+  try {
+    return !!execSync('git diff HEAD '+pPath).toString().trim()
+  } catch (error) {
+    return true
+  }
+}
 
 let furnaceRecipesHashed = undefined
 module.exports.getFurnaceRecipes = ()=>{
   return furnaceRecipesHashed ??= [...fs.readFileSync('crafttweaker.log', 'utf8')
     .matchAll(/^furnace\.addRecipe\((?<output><(?<out_id>[^>]+?)(?::(?<out_meta>\*|\d+))?>(?<out_tail>(\.withTag\(\{.*?\}\))?( \* \d+)?)?), (?<input><(?<in_id>[^>]+?)(?::(?<in_meta>\*|\d+))?>(?<in_tail>(\.withTag\(\{.*?\}\))?( \* \d+)?)?), .+\)$/gm)
   ].map(m=>m.groups).sort((a,b)=>naturalSort(a.input,b.input))
+}
+
+module.exports.least_common_multiplier = (...arr) => {
+  const gcd = (x, y) => (!y ? x : gcd(y, x % y))
+  const _lcm = (x, y) => (x * y) / gcd(x, y)
+  return [...arr].reduce((a, b) => _lcm(a, b))
 }

@@ -7,7 +7,7 @@ Also, sorts and cleanup jei blacklist
 
 */
 
-const {write, config, naturalSort, injectInFile, csv} = require('../lib/utils.js')
+const {write, config, naturalSort, injectInFile, getCSV} = require('../lib/utils.js')
 const fs = require('fs')
 const _ = require('lodash')
 
@@ -20,7 +20,7 @@ const merged = [
 ]
 const pure = []
 const removedMods = new Set()
-const modList = csv('config/tellme/mod-list-csv.csv')
+const modList = getCSV('config/tellme/mod-list-csv.csv')
 merged.forEach((s,i)=>{
   // If duplicate
   const next = merged.slice(i+1)
@@ -62,7 +62,7 @@ function getPurged() {
   .map(s=>s.match(/<([^>]+)>(.withTag\(.*\))?/)[1])
   .filter(s=>s)
   .map(s=>{
-    let [__, source, meta] = s.match(/([^:]+:[^:]+)(:(\d+|\*))?/)
+    let [,source, meta] = s.match(/([^:]+:[^:]+)(:(\d+|\*))?/)
     if(meta===':*') meta = ''
     return source + (meta ?? ':0')
   })

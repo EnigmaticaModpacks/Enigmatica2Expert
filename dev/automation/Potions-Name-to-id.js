@@ -11,19 +11,13 @@
 
 */
 
-const fs = require('fs')
-const {injectInFile, begin, end} = require('../lib/utils.js')
-const csv_parse = require('csv-parse/lib/sync')
+const {injectInFile, begin, end, getCSV} = require('../lib/utils.js')
 
 begin('  Renaming and updating config/tellme/')
 require('../../config/tellme/!rename&update.js')
 end()
 
-function getCsv(filepath) {
-  return csv_parse(fs.readFileSync(filepath, 'utf8'), {columns: true})
-}
-
-const potionsRegnameTag = getCsv('config/tellme/potions-csv.csv').map(l=>({
+const potionsRegnameTag = getCSV('config/tellme/potions-csv.csv').map(l=>({
   regName: l['Registry name'],
   tag: {Id: parseInt(l['ID'])}
 }))
@@ -31,7 +25,7 @@ const potionsRegnameTag = getCsv('config/tellme/potions-csv.csv').map(l=>({
 const potions = []
 let elixirNameID = []
 
-getCsv('config/tellme/potiontypes-csv.csv').forEach(pot => {
+getCSV('config/tellme/potiontypes-csv.csv').forEach(pot => {
   const found = potionsRegnameTag.find(o => {
     if ( pot.Effects == '') return false
     const match = pot.Effects.match(/^.*Potion:\[reg:(.*?),.*$/)[1]

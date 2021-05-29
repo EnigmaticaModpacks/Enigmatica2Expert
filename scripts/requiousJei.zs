@@ -410,7 +410,7 @@ addInsOuts(x, [[4,0],[3,0],[2,0],[1,0],[0,0]], [[6,0],[7,0],[8,0]]);
 
 /*Inject_js(
 (()=>{
-const fluids = getCsv('config/tellme/fluids-csv.csv')
+const fluids = getCSV('config/tellme/fluids-csv.csv')
 
 const toStack=([__, mod, id, amount], isWildcard)=>{
   const def = `${mod||'minecraft'}:${id}`
