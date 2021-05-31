@@ -45,7 +45,7 @@ import scripts.craft.grid.Grid;
 
 	mods.thermalexpansion.RedstoneFurnace.removePyrolysisRecipe(<minecraft:coal_block>);
 	scripts.wrap.thermalexpansion.RedstoneFurnace.addPyrolysisRecipe(<immersiveengineering:stone_decoration:3>, 
-	<minecraft:coal_block>, 2400, 2500);
+	<minecraft:coal_block>, 30000, 2500);
 
 # Sulfur Unification
   mods.immersiveengineering.Crusher.removeRecipe(<minecraft:blaze_powder>);
@@ -499,3 +499,11 @@ scripts.wrap.forestry.ThermionicFabricator.addCast(<immersiveengineering:stone_d
 
 # For some reason all coils melt into gold only in Magmatic Crucible
 mods.thermalexpansion.Crucible.removeRecipe(<immersiveengineering:metal_decoration0:0>);
+
+
+# [Concrete Trapdoor] from [Concrete]
+craft.remake(<engineersdoors:trapdoor_concrete>, ["pretty",
+  "c c",
+  "c c"], {
+  "c": <ore:concrete>, # Concrete
+});

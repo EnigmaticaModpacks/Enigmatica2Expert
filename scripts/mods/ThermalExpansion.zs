@@ -126,10 +126,6 @@ craft.make(<thermalexpansion:frame:130>, ["pretty",
 # Primal Mana
 	scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:mana> * 125, [<liquid:mirion> * 18, <liquid:osgloglas> * 18, <liquid:ic2coolant> * 125]);
 
-# Mana Infused Ingot&Block
-	scripts.wrap.mekanism.infuser.addRecipe("DIAMOND", 20, <botania:manaresource>, <thermalfoundation:material:136>);
-	scripts.wrap.mekanism.infuser.addRecipe("DIAMOND", 160, <botania:storage>, <thermalfoundation:storage:8>);
-
 # Energy Cell Frame
 	recipes.remove(<thermalexpansion:frame:128>);
 	scripts.wrap.mekanism.infuser.addRecipe("GLOWSTONE", 400, <thermalexpansion:frame>, <thermalexpansion:frame:128>);
@@ -435,7 +431,7 @@ for i, mat in materials {
 		"▬ - ▬",
 		"♥ ▲ ♥"], {
 		"▲": catalysts[i],
-		"♥": <ore:ingotConductiveIron>,
+		"♥": <ore:ingotRedstoneAlloy>,
 		"▬": oreDict["ingot" ~ mat],
 		"-": i!=0
 			? <thermalexpansion:capacitor>.definition.makeStack(i - 1) as IIngredient
@@ -621,7 +617,7 @@ craft.remake(<thermalexpansion:machine:1>, ["pretty",
   "□ ◙ □",
   "¤ ♥ ¤"], {
   "□": <tconstruct:large_plate>.withTag({Material: "flint"}), # Flint Large Plate
-  "s": <biomesoplenty:white_sand>,        # White Sand
+  "s": <ore:gearEmerald>,
   "C": <actuallyadditions:block_grinder> | <actuallyadditions:block_grinder_double>, # Crusher
   "¤": <ore:gearElectrum>,                # Electrum Gear
   "♥": <thermalfoundation:material:513>,  # Redstone Reception Coil

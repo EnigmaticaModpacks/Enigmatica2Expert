@@ -117,14 +117,14 @@ import crafttweaker.item.IItemStack as IItemStack;
 	<ore:stickIron>.remove(<advancedrocketry:productrod:1>);
 
 
-# [Pressurized Tank] from [Tank][+2]
+# [Pressurized Tank] from [Omnivoir][+2]
 craft.remake(<advancedrocketry:liquidtank>, ["pretty",
-  "T ◊ T",
-  "T a T",
-  "T ◊ T"], {
-  "a": <openblocks:tank>,   # Tank
-  "T": <ore:sheetTitanium>, # Titanium Sheet
-  "◊": <ore:gemDilithium>,  # Dilithium Crystal
+  "T ■ T",
+  "T O T",
+  "T ■ T"], {
+  "■": <ore:blockDilithium>,           # Block of Dilithium
+  "T": <ore:sheetTitaniumIridium>,     # Titanium Iridium Alloy Sheet
+  "O": <enderio:block_omni_reservoir>, # Omnivoir
 });
 recipes.addShapeless("Clearing AdvRock Tank", <advancedrocketry:liquidtank>, [<advancedrocketry:liquidtank>]);
 
@@ -162,3 +162,18 @@ craft.remake(<libvulpes:coalgenerator>, [
   "B": <ore:itemBattery>,   # Small Battery
   "F": <minecraft:furnace>, # Furnace
 });
+
+# [Advanced Machine Structure*4] from [Silicon Boule][+2]
+recipes.remove(<libvulpes:advstructuremachine>);
+scripts.processUtils.avdRockXmlRecipe("PrecisionAssembler",	[
+	<libvulpes:structuremachine> * 4, # Machine Structure
+	<ore:sheetTitanium> * 4,
+	<ore:gemDilithium> * 2,
+	<ore:bouleSilicon>,          
+], null,
+	[<libvulpes:advstructuremachine> * 4], null
+);
+
+# Press recipe instead crafting table
+recipes.remove(<advancedrocketry:misc>);
+scripts.wrap.immersiveengineering.MetalPress.addRecipe(<advancedrocketry:misc>, <ore:oc:screen3>, <immersiveengineering:mold:0>, 2000);

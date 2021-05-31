@@ -14,23 +14,6 @@ import crafttweaker.item.IIngredient;
 	[<immersiveengineering:metal_decoration1_slab:5>, <ore:itemCompressedDiamond>, <immersiveengineering:metal_decoration1_slab:5>], 
 	[<ore:itemCompressedDiamond>, <ore:itemCompressedDiamond>, <ore:itemCompressedDiamond>]]);
 
-	
-# User
-	recipes.remove(<extrautils2:user>);
-	recipes.addShapedMirrored("extrautils2 User", 
-	<extrautils2:user>, 
-	[[<ore:ingotGold>, <ore:ingotRefinedObsidian>, <ore:ingotGold>],
-	[<minecraft:golden_pickaxe>, <computercraft:turtle_expanded>, <minecraft:golden_axe>], 
-	[<ore:compressed2xCobblestone>, <ore:compressed2xCobblestone>, <ore:compressed2xCobblestone>]]);
-
-# User rotate
-	val us1 = <integratedtunnels:part_player_simulator_item>;
-	val us2 = <extrautils2:user>;
-	recipes.remove(us1);
-	recipes.addShapeless("User rotate 1", us2 * 2, [us1.anyDamage(), us1.anyDamage()]);
-	recipes.addShapeless("User rotate 2", us1 * 2, [us2, us2]);
-
-
 # Redstone Clock
 	recipes.remove(<extrautils2:redstoneclock>);
 	recipes.addShaped("XU2 Redstone Clock", 
@@ -328,3 +311,15 @@ addNetherStarGen(<ore:foodNetherstartoast>                 , 1.1  ); # Nether St
 addNetherStarGen(<mysticalagradditions:nether_star_essence>, 0.06 ); # Nether Star Essence
 addNetherStarGen(<ore:nuggetNetherStar>                    , 0.11 ); # Nether Star Nugget
 addNetherStarGen(<mysticalagradditions:special>            , 3.0  ); # Nether Star Crux
+
+# [Mechanical User] from [Player Simulator][+4]
+craft.remake(<extrautils2:user>, ["pretty",
+  "□ ◊ □",
+  "M P M",
+  "Q Q Q"], {
+  "P": <integratedtunnels:part_player_simulator_item>, # Player Simulator
+  "Q": <extrautils2:decorativesolid:7>, # Quartzburnt
+  "□": <tconstruct:large_plate>.withTag({Material: "xu_demonic_metal"}), # Demonic Large Plate
+  "◊": <ore:gemMoon>,                   # Moon Stone
+  "M": <tconstruct:materials:19>,       # Mending Moss
+});

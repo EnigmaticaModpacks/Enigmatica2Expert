@@ -177,7 +177,7 @@ for input, output in itemsToUnify {
 	recipes.remove(<mekanism:machineblock3>);
 	recipes.addShaped("Quantum Entangloporter", <mekanism:machineblock3>, 
 	[[<mekanism:basicblock:7>, <ore:heartDragon>, <mekanism:basicblock:7>],
-	[<forestry:chipsets:3>.withTag({T:3 as short}, false), <mekanism:machineblock:11>|<mekanism:machineblock:11>.withTag({}), <forestry:chipsets:3>.withTag({T:3 as short}, false)], 
+	[<modularmachinery:blockcasing:5>, <mekanism:machineblock:11>|<mekanism:machineblock:11>.withTag({}), <modularmachinery:blockcasing:5>], 
 	[<mekanism:basicblock:7>, <rftools:matter_beamer>, <mekanism:basicblock:7>]]);
 
 # Reactor Controller
@@ -464,3 +464,27 @@ utils.rh(<mekanism:nugget:5>);
 	) return '';
   return "§2Spawner with §a" ~ tag.mekData.blockData.tileTag.SpawnData.id.asString() ~ '§r';
 });
+
+
+# Harder because it is fastest pump in pack
+val pumpIngrs = {
+  "B": <ore:circuitBasic>,      # Basic Control Circuit
+  "⌂": <mekanism:basicblock:8>, # Steel Casing
+  "T": <enderio:block_omni_reservoir>,       # Tank
+  "U": <ore:alloyUltimate>,     # Atomic Alloy
+  "F": <flopper:flopper>,       # Flopper
+} as IIngredient[string];
+
+# [Electric Pump] from [Steel Casing][+3]
+craft.remake(<mekanism:machineblock:12>, ["pretty",
+  "  F  ",
+  "U ⌂ U",
+  "T T T"], pumpIngrs
+);
+
+# [Fluidic Plenisher] from [Steel Casing][+3]
+craft.remake(<mekanism:machineblock2:12>, ["pretty",
+  "B ⌂ B",
+  "  F  "], pumpIngrs
+);
+

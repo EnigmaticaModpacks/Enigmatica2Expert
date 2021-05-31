@@ -110,11 +110,11 @@ import scripts.craft.grid.Grid;
 	makeEx(<draconicevolution:dislocator>, [[null, <rftools:infused_enderpearl>, null],[<mekanism:portableteleporter>, <randomthings:flootoken>, <mekanism:portableteleporter>], [null, <rftools:infused_enderpearl>, null]]);
 
 
-# Draconic chest easier
+# Draconium chest easier
 var dchest = <draconicevolution:draconium_chest>;
 var ingrds as IItemStack[] = [
 	<actuallyadditions:block_giant_chest_large>, 
-	<draconicevolution:draconic_core>, 
+	<draconicevolution:draconium_block>, 
 	<actuallyadditions:block_giant_chest_large>, 
 	<draconicevolution:draconium_block>
 ] as IItemStack[];
@@ -129,3 +129,26 @@ scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(
 		B: <draconicevolution:dislocator>,
 		C: <deepmoblearning:pristine_matter_enderman>,
 	}).shapeless());
+
+# [Bound Dislocator (Point to Point)] from [Siren Tear][+2]
+craft.reshapeless(<draconicevolution:dislocator_bound:1>, "DrDS", {
+  "r": <draconicevolution:infused_obsidian>,       # Draconium Infused Obsidian
+  "S": <iceandfire:siren_tear>,                    # Siren Tear
+  "D": <draconicevolution:dislocator>.anyDamage(), # Dislocator
+});
+
+# [Bound Dislocator (Player)] from [Draconium Infused Obsidian][+2]
+craft.reshapeless(<draconicevolution:dislocator_bound:2>, "DrS", {
+  "r": <draconicevolution:infused_obsidian>,       # Draconium Infused Obsidian
+  "S": <iceandfire:siren_tear>,                    # Siren Tear
+  "D": <draconicevolution:dislocator>.anyDamage(), # Dislocator
+});
+
+# Harder to better fit as endgame ingredient
+# [Draconium Infused Obsidian] from [Draconium Dust*4][+2]
+recipes.remove(<draconicevolution:infused_obsidian>);
+scripts.process.alloy([
+	<biomesoplenty:crystal>,
+	<ore:dustDraconium> * 4,
+	<ore:ingotBrickNetherGlazed> * 6
+], <draconicevolution:infused_obsidian>, "no exceptions");

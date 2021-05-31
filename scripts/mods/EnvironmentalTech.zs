@@ -283,7 +283,7 @@ for i in 0 .. 6 {
 	var solController = itemUtils.getItem("environmentaltech:solar_cont_" ~ (i+1));
 	evtIngrs["_"] = <actuallyadditions:block_quartz_slab>;
 	evtIngrs["c"] = (i==0) ? <actuallyadditions:block_crystal:1> : itemUtils.getItem("environmentaltech:solar_cont_" ~ (i));
-	evtIngrs["▄"] = <ore:blockBlackQuartz>;
+	evtIngrs["▄"] = <ore:blockQuartzBlack>;
 	evtIngrs["▆"] = <preston:compressed_block>.withTag({stack: {id: "actuallyadditions:block_misc", Count: 1 as byte, Damage: 2 as short}, level: 1});
 	evtIngrs["█"] = compressIt(<actuallyadditions:block_misc:2>, 2);
 

@@ -418,10 +418,10 @@ val itemsToRecycle as string[] = [
 "enderio:item_stellar_alloy_boots"       , "4"   , SLR                               , "stellar_alloy"    ,
 "enderio:item_stellar_alloy_chestplate"  , "8"   , SLR                               , "stellar_alloy"    ,
 "enderio:item_stellar_alloy_leggings"    , "7"   , SLR                               , "stellar_alloy"    ,
-"ic2:quantum_boots"                      , "8"   , "thermalfoundation:material:135"  , "iridium"          ,
-"ic2:quantum_chestplate"                 , "8"   , "thermalfoundation:material:135"  , "iridium"          ,
-"ic2:quantum_helmet"                     , "8"   , "thermalfoundation:material:135"  , "iridium"          ,
-"ic2:quantum_leggings"                   , "8"   , "thermalfoundation:material:135"  , "iridium"          ,
+"ic2:quantum_boots"                      , "1"   , "thermalfoundation:material:135"  , "iridium"          ,
+"ic2:quantum_chestplate"                 , "1"   , "thermalfoundation:material:135"  , "iridium"          ,
+"ic2:quantum_helmet"                     , "1"   , "thermalfoundation:material:135"  , "iridium"          ,
+"ic2:quantum_leggings"                   , "1"   , "thermalfoundation:material:135"  , "iridium"          ,
 "iceandfire:troll_weapon.hammer"         , "8"   , "mechanics:heavy_ingot"           , "heavy_metal"      ,
 "animus:kama_diamond"                    , "8"   , "minecraft:diamond"               , ""                 ,
 "botania:manaweavehelm"                  , "20"  , "botania:manaresource:16"         , "!saw"             ,
@@ -448,10 +448,10 @@ val itemsToRecycle as string[] = [
 "deepmoblearning:glitch_infused_helmet"     , "5" , "deepmoblearning:glitch_fragment" , "" ,
 "deepmoblearning:glitch_infused_leggings"   , "7" , "deepmoblearning:glitch_fragment" , "" ,
 "deepmoblearning:glitch_infused_sword"      , "2" , "deepmoblearning:glitch_fragment" , "" ,
-"ic2:nano_boots"      , "4" , "ic2:crafting:15" , "!saw" ,
-"ic2:nano_chestplate" , "8" , "ic2:crafting:15" , "!saw" ,
-"ic2:nano_helmet"     , "5" , "ic2:crafting:15" , "!saw" ,
-"ic2:nano_leggings"   , "7" , "ic2:crafting:15" , "!saw" ,
+"ic2:nano_boots"      , "2" , "ic2:crafting:15" , "!shapeless" ,
+"ic2:nano_chestplate" , "3" , "ic2:crafting:15" , "!shapeless" ,
+"ic2:nano_helmet"     , "2" , "ic2:crafting:15" , "!shapeless" ,
+"ic2:nano_leggings"   , "3" , "ic2:crafting:15" , "!shapeless" ,
 ];
 
 # Exceptions for machines that can saw
@@ -463,13 +463,16 @@ for i in 0 to itemsToRecycle.length {
 		val item = itemUtils.getItem(itemsToRecycle[i]);
 		val count = itemsToRecycle[i+1] as int;
 		val resclItem = getItemstackFromString(itemsToRecycle[i+2]);
-		val resclLiqd = game.getLiquid(itemsToRecycle[i+3]);
+		val option = itemsToRecycle[i+3];
+		val resclLiqd = game.getLiquid(option);
 
 		if (!isNull(item) && !isNull(resclItem)) {
 			if (!isNull(resclLiqd)) {
 				scripts.process.recycleMetal(item, resclItem * count, resclLiqd * (count * 144), "no exceptions");
-			} else if (itemsToRecycle[i+3] == "!saw") {
+			} else if (option == "!saw") {
 				scripts.process.saw(item, resclItem * count, sawExcs);
+			} else if (option == "!shapeless") {
+				recipes.addShapeless("Recycle " ~ item.displayName, resclItem * count, [item]);
 			} else {
 				scripts.process.crush(item, resclItem * count, "only: IECrusher SagMill Pulverizer", null, null);
 			}

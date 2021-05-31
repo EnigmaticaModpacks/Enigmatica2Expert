@@ -193,3 +193,10 @@ scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, crDgr, [
 	[antBck, <animus:sigil_consumption>, capRune, capRune, capRune, null, null], 
 	[<bigreactors:mineralbenitoite>, antBck, null, null, null, null, null]
 ]);
+
+# Remove weak saltpater recipe
+mods.bloodmagic.AlchemyTable.removeRecipe([<bloodmagic:component:22>, <bloodmagic:component:22>, <thermalfoundation:material:768>]);
+
+# Purge saltpeter and sulfur
+utils.rh(<bloodmagic:component:24>);
+utils.rh(<bloodmagic:component:23>);

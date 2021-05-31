@@ -147,7 +147,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Construction Foam] from [Construction Paste+] -->
+	<!-- [Construction Foam] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>buildinggadgets:constructionpaste 1</itemStack>
@@ -158,7 +158,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Liquid Concrete] from [Grout+] -->
+	<!-- [Liquid Concrete] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>tconstruct:soil 1</itemStack>
@@ -169,7 +169,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Milk] from [Milk Powder+] -->
+	<!-- [Milk] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>ic2:dust 1 33</itemStack>
@@ -180,7 +180,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Molten Refined Glowstone] from [Osmium Dust+] -->
+	<!-- [Molten Refined Glowstone] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>mekanism:dust 1 2</itemStack>
@@ -191,7 +191,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Molten Refined Obsidian] from [Pulverized Obsidian+] -->
+	<!-- [Molten Refined Obsidian] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>thermalfoundation:material 1 770</itemStack>
@@ -202,7 +202,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Quicksand] from [soulSand+] -->
+	<!-- [Quicksand] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<oreDict>soulSand 1</oreDict>

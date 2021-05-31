@@ -26,16 +26,9 @@ for i in 0 to 16 {
   }
 }
 
-# [Tank*2] from [Black Quartz][+1]
-craft.remake(<openblocks:tank> * 2, ["pretty",
-  "⌃ S",
-  "S ⌃"], {
-  "⌃": <ore:blockBlackQuartz>,     # Black Quartz
-  "S": <tconstruct:seared_tank:1>, # Seared Gauge
-});
+# Tank recipe
+recipes.removeShaped(<openblocks:tank>);
+scripts.wrap.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(<openblocks:tank>, <enderio:block_omni_reservoir>);
 
 # Clear tanks
 utils.clearFluid(<openblocks:tank>);
-
-# Tank fast alt
-scripts.process.alloy([<ore:blockQuartzBlack>], <openblocks:tank>, "only: alloySmelter");

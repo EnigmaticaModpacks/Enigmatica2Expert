@@ -76,7 +76,7 @@ zenClass Utils {
   }
 
   function compact(a as IIngredient, b as IIngredient) as void {
-    recipes.addShapeless(b.itemArray[0] * 1, [a,a,a,a,a,a,a,a,a]);
+    recipes.addShapeless(b.itemArray[0].anyAmount(), [a,a,a,a,a,a,a,a,a]);
     recipes.addShapeless(a.itemArray[0] * 9, [b]);
   }
 

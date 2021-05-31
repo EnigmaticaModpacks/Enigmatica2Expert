@@ -50,33 +50,33 @@ function addArmorToGroup(group as ArmorGroup, stage as IData, isSkeleton as bool
     var listedItem = stage.list[i];
     var id = listedItem.id.asString();
     var itemNoNBT = itemUtils.getItem(id);
-    if(!isNull(itemNoNBT)) {
-      val it = itemNoNBT.withTag(isNull(listedItem.tag) ? {} : listedItem.tag);
+    if(isNull(itemNoNBT)) continue;
+    
+    val it = isNull(listedItem.tag) ? itemNoNBT : itemNoNBT.withTag(listedItem.tag);
 
-      # Check if can be charged
-      val chargeable = !isNull(it.tag) && (!isNull(it.tag.charge) || !isNull(it.tag.Energy));
+    # Check if can be charged
+    val chargeable = !isNull(it.tag) && (!isNull(it.tag.charge) || !isNull(it.tag.Energy));
 
-      var item as IItemStack = null;
-      
-      if (chargeable) {
-        # Lower charge
-        item = !isNull(it.tag.charge)
-          ? it.updateTag({charge: it.tag.charge.asInt() / 11})
-          : (!isNull(it.tag.Energy)
-            ? it.updateTag({Energy: it.tag.Energy.asInt() / 11})
-            : it);
-      } else {
-        # Damage item to 0.78
-        val loweredDmg = min(it.maxDamage, max(1, (it.maxDamage as float * 0.78f) as int));
-        item = it.isDamageable ? (it.withDamage(loweredDmg)) : it;
-      }
-
-      if (isNull( armSlots[item] )){
-        val weight = 1 + stage.tier.asInt();
-        armSlots[item] = ArmorHandler.createArmorSlot(sltName, item, weight, 0.1 /* <- chanceToDropOnDeath */);
-      }
-      group.addArmor(armSlots[item]);
+    var item as IItemStack = null;
+    
+    if (chargeable) {
+      # Lower charge
+      item = !isNull(it.tag.charge)
+        ? it.updateTag({charge: it.tag.charge.asInt() / 11})
+        : (!isNull(it.tag.Energy)
+          ? it.updateTag({Energy: it.tag.Energy.asInt() / 11})
+          : it);
+    } else {
+      # Damage item to 0.78
+      val loweredDmg = min(it.maxDamage, max(1, (it.maxDamage as float * 0.78f) as int));
+      item = it.isDamageable ? (it.withDamage(loweredDmg)) : it;
     }
+
+    if (isNull( armSlots[item] )){
+      val weight = 1 + stage.tier.asInt();
+      armSlots[item] = ArmorHandler.createArmorSlot(sltName, item, weight, 0.1 /* <- chanceToDropOnDeath */);
+    }
+    group.addArmor(armSlots[item]);
   }
 }
 

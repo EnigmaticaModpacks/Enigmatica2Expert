@@ -416,6 +416,32 @@ recipes.addShaped("ME Storage Bus", <appliedenergistics2:part:220>, [
 
 # [Certus Quartz Tank] from [Tank][+1]
 craft.reshapeless(<extracells:certustank>, 'ABB', {
-  "A": <openblocks:tank>,                  # Tank
+  "A": <enderio:block_omni_reservoir>,                  # Tank
   "B": <appliedenergistics2:quartz_glass>, # Quartz Glass
 });
+
+
+# ---------------------------------------------------------
+# Universal facade crafting recipe
+# Sadly, this cant be changed like this.
+# Option
+#   B:EnableFacadeCrafting=false
+# wont actually remove crafting recipes.
+# Also, recipes.remove dont work too.
+// val A = <appliedenergistics2:part:120>;
+// recipes.remove(<appliedenergistics2:facade:*>);
+// recipes.addHiddenShaped("Universal Facade", <appliedenergistics2:facade>, [
+// 	[null, A, null],       
+// 	[A, <*>.marked('block'), A],
+// 	[null, A, null],      
+// ],
+// function(out, ins, cInfo) {
+// 	if(isNull(ins) || isNull(ins.block)) return null;
+//   return <appliedenergistics2:facade>.withTag({damage: ins.block.damage, item: ins.block.definition.id});
+// });
+// recipes.addShaped("Universal Facade Example", <appliedenergistics2:facade>.withTag({damage: 0, item: "minecraft:cobblestone"}), [
+// 	[null, A, null],       
+// 	[A, <minecraft:cobblestone>, A],
+// 	[null, A, null],      
+// ]);
+# ---------------------------------------------------------

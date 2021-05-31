@@ -55,13 +55,17 @@ recipes.addShaped("part_connector_omni_directional_item", connector * 2, [
 	[mono, <integrateddynamics:cable>, mono], 
 	[null, part, null]]);
 
-# interface_crafting
-recipes.remove(<integratedcrafting:part_interface_crafting_item>);
-recipes.addShaped("part_interface_crafting_item", 
-	<integratedcrafting:part_interface_crafting_item>, 
-	[[<ore:ingotFakeIron>, <appliedenergistics2:crafting_unit>, <ore:ingotFakeIron>], 
-	[<integrateddynamics:variable_transformer>, <integrateddynamics:crystalized_menril_block>, <integrateddynamics:variable_transformer:1>], 
-	[<ore:ingotFakeIron>, <appliedenergistics2:crafting_unit>, <ore:ingotFakeIron>]]);
+# [Crafting Interface] from [Chorus Glass][+4]
+craft.remake(<integratedcrafting:part_interface_crafting_item>, ["pretty",
+  "□ ¤ □",
+  "O ■ I",
+  "□ ¤ □"], {
+  "■": <integratedterminals:chorus_glass>,          # Chorus Glass
+  "□": <ore:plateDenseLapis>,                       # Dense Lapis Lazuli Plate
+  "¤": <ore:gearVibrant>,                           # Vibrant Bimetal Gear
+  "I": <integrateddynamics:variable_transformer:1>, # Input Variable Transformer
+  "O": <integrateddynamics:variable_transformer>,   # Output Variable Transformer
+});
 
 # terminal_storage
 recipes.remove(<integratedterminals:part_terminal_storage_item>);
@@ -145,3 +149,14 @@ craft.remake(<integratedtunnels:part_interface_fluid_item>, ["pretty",
 # Other machines output only %10 of propolis
 mods.integrateddynamics.Squeezer.removeRecipesWithOutput(<forestry:propolis>, <fluid:for.honey> * 180);
 mods.integrateddynamics.MechanicalSqueezer.removeRecipesWithOutput(<forestry:propolis>, <fluid:for.honey> * 180);
+
+# [Player Simulator] from [Turtle][+3]
+craft.remake(<integratedtunnels:part_player_simulator_item>, ["pretty",
+  "L ▬ L",
+  "M T M",
+  "L ▬ L"], {
+  "T": <computercraft:turtle_expanded>,     # Turtle
+  "L": <integrateddynamics:logic_director>, # Logic Director
+  "▬": <ore:ingotRefinedObsidian>,          # Refined Obsidian Ingot
+  "M": <tconstruct:materials:19>,           # Mending Moss
+});

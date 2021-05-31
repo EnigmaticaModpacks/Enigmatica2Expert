@@ -7,17 +7,17 @@ import crafttweaker.item.IIngredient;
 	# Black Quartz Pillar
 	recipes.remove(<actuallyadditions:block_misc>);
 	recipes.addShaped("Black Quartz Pillar remake", <actuallyadditions:block_misc> * 2, 
-	[[<ore:blockBlackQuartz>],[<ore:blockBlackQuartz>]]);
+	[[<ore:blockQuartzBlack>],[<ore:blockQuartzBlack>]]);
 
 	# Chiseled Black Quartz Block
 	recipes.remove(<actuallyadditions:block_misc:1>);
 	recipes.addShaped("Chiseled Black Quartz Block remake", <actuallyadditions:block_misc:1> * 4, 
-	[[<ore:blockBlackQuartz>, <ore:blockBlackQuartz>],
-	[<ore:blockBlackQuartz>, <ore:blockBlackQuartz>]]);
+	[[<ore:blockQuartzBlack>, <ore:blockQuartzBlack>],
+	[<ore:blockQuartzBlack>, <ore:blockQuartzBlack>]]);
 
 #Black Quartz Block to Black Quartz
-	recipes.addShapeless("Black Quartz Block to Black Quartz", 
-	<actuallyadditions:item_misc:5> * 4, [<ore:blockBlackQuartz>]);
+recipes.removeShaped(<actuallyadditions:block_misc:2>);
+utils.compact(<ore:gemQuartzBlack>, <ore:blockQuartzBlack>);
 		
 # Drill Speed Augment I oredict compat
 	recipes.remove(<actuallyadditions:item_drill_upgrade_speed>);
@@ -43,13 +43,20 @@ import crafttweaker.item.IIngredient;
 	[<ore:foodCake>, <actuallyadditions:item_crystal_empowered:2>, <ore:foodCake>], 
 	[<actuallyadditions:item_crystal_empowered:5>, <ore:foodCake>, <actuallyadditions:item_crystal_empowered:5>]]);
 
-# Lens of the Miner
-	recipes.remove(<actuallyadditions:item_mining_lens>);
-	recipes.addShapedMirrored("Lens of the Miner", 
-	<actuallyadditions:item_mining_lens>, 
-	[[<ore:oreRedstone>, <ore:oreEmerald>, <ore:oreLapis>],
-	[<ore:blockBlackQuartz>, <botania:lens:21>, <ore:blockBlackQuartz>], 
-	[<ore:blockBlackQuartz>, <actuallyadditions:item_color_lens>, <ore:blockBlackQuartz>]]);
+# [Lens of the Miner] from [Lens of Color][+7]
+craft.remake(<actuallyadditions:item_mining_lens>, ["pretty",
+  "N ⌂ ⌃",
+  "E L E",
+  "e V ♥"], {
+  "⌂": <actuallyadditions:block_misc:8>,    # Ender Casing
+  "⌃": <ore:oreNetherChargedCertusQuartz>,  # Nether Charged Certus Quartz Ore
+  "E": <cyclicmagic:exp_pylon>,             # Experience Pylon
+  "♥": <ore:oreNetherRedstone>,             # Nether Redstone Ore
+  "e": <ore:oreNetherDiamond>,              # Nether Diamond Ore
+  "V": <actuallyadditions:block_miner>,     # Vertical Digger
+  "L": <actuallyadditions:item_color_lens>, # Lens of Color
+  "N": <ore:oreNetherEmerald>,              # Nether Emerald Ore
+});
 
 # [Experience_Solidifier] from [Advanced_Coil][+2]
 	craft.remake(<actuallyadditions:block_xp_solidifier>, ["pretty",
@@ -143,10 +150,7 @@ import crafttweaker.item.IIngredient;
 # Void
 	mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered:3>);
 	mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:block_crystal_empowered:3>);
-
-for item in <ore:stoneBasalt>.items {
-	scripts.wrap.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:3>, <actuallyadditions:block_crystal:3>, <minecraft:dye>, <extendedcrafting:storage>, item, <actuallyadditions:block_misc:2>, 2500000, 200, [0.1, 0.0, 0.0]);
-}
+	scripts.wrap.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:3>, <actuallyadditions:block_crystal:3>, <randomthings:ingredient:13>, <extendedcrafting:storage>, <chisel:basalt2:*>, <actuallyadditions:block_misc:2>, 2500000, 200, [0.1, 0.0, 0.0]);
 
 # Emeradic
 	mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered:4>);
@@ -288,13 +292,6 @@ for i in 0 to listCatFur.length {
 	}
 }
 
-# *======= Ore for Laser =======*
-	mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreBoron>, 250);
-	mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreLithium>, 250);
-	mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreMagnesium>, 250);
-	mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreThorium>, 250);
-	mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreCinnabar>, 250);
-
 # Harder Phantom Face
 remake("actuallyadditions Phantomface", <actuallyadditions:block_phantomface>, [
 	[null, <ore:chestWood>, null], 
@@ -311,7 +308,7 @@ recipes.addShaped(<actuallyadditions:block_greenhouse_glass> * 3, [
 # Black quartz
 val crushExceptions = "except: IECrusher SagMill Pulverizer AACrusher MekCrusher";
 scripts.process.crush(<ore:gemQuartzBlack>, <actuallyadditions:item_dust:7>, crushExceptions, null, null);
-scripts.process.crush(<ore:blockBlackQuartz>, <actuallyadditions:item_dust:7> * 4, crushExceptions ~ " Manufactory", null, null);
+scripts.process.crush(<ore:blockQuartzBlack>, <actuallyadditions:item_dust:7> * 9, crushExceptions ~ " Manufactory", null, null);
 
 # Recycle Quark crystals
 var crystalCrushExcept = "Macerator Grindstone AEGrinder ThermalCentrifuge mekCrusher MekEnrichment";
@@ -349,7 +346,7 @@ var crateIngrs = {
   "R": <immersiveengineering:wooden_device0:5>, # Reinforced Storage Crate
   "≢": <actuallyadditions:block_misc:4>,        # Wood Casing
   "#": <ore:plankWood>,                         # Oak Wood Planks
-  "e": <forestry:refractory_wax>,               # Refractory Wax
+  "e": <enderio:item_material:49>,              # Refractory Wax
   "*": <actuallyadditions:block_crystal:3>,     # Void Crystal Block
   "☼": <actuallyadditions:block_crystal_empowered:3> # Empowered Void Crystal Block
 } as IIngredient[string];
@@ -494,3 +491,46 @@ craft.make(<actuallyadditions:item_spawner_changer>, ["pretty",
   "S": <actuallyadditions:item_misc:20>,     # Spawner Shards
   "T": <biomesoplenty:terrestrial_artifact>, # Terrestrial Artifact
 });
+
+# [Vertical Digger] from [Empowered Void Crystal Block][+3]
+craft.remake(<actuallyadditions:block_miner>, ["pretty",
+  "⌃ ⌂ ⌃",
+  "⌂ * ⌂",
+  "⌃ D ⌃"], {
+  "⌂": <actuallyadditions:block_misc:9>, # Iron Casing
+  "⌃": <ore:blockQuartzBlack>, # Block of Black Quartz
+  "D": <actuallyadditions:item_drill:*>, # Drill
+  "*": <actuallyadditions:block_crystal_empowered:3>, # Empowered Void Crystal Block
+});
+
+# [Casing*4] from [Iron Casing][+1]
+craft.remake(<actuallyadditions:block_misc:7> * 4, ["pretty",
+  "  ⌃  ",
+  "⌃ ⌂ ⌃",
+  "  ⌃  "], {
+  "⌂": <actuallyadditions:block_misc:9>, # Iron Casing
+  "⌃": <ore:blockQuartzBlack>, # Block of Black Quartz
+});
+
+# [Ender Casing] from [Empowered Diamatine Crystal][+2]
+# Cheaper because used in many crafts
+craft.remake(<actuallyadditions:block_misc:8>, ["pretty",
+  "⌂ ▬ ⌂",
+  "▬ * ▬",
+  "⌂ ▬ ⌂"], {
+  "⌂": <actuallyadditions:block_misc:7>, # Casing
+  "*": <actuallyadditions:item_crystal_empowered:2>, # Empowered Diamatine Crystal
+  "▬": <extendedcrafting:material:36>,   # Ender Ingot
+});
+
+# [Basic Coil] from [Aluminum Ingot*2][+2]
+scripts.processUtils.avdRockXmlRecipe("PrecisionAssembler",
+	[<ore:stickWood> * 36,<ore:ingotAluminium> * 24,<ore:ingotFakeIron> * 24], null,
+	[<actuallyadditions:item_misc:7> * 12], null
+);
+
+# [Advanced Coil] from [Aluminum Ingot*2][+3]
+scripts.processUtils.avdRockXmlRecipe("PrecisionAssembler",
+	[<ore:stickWood> * 60, <ore:ingotGold> * 12, <ore:ingotAluminium> * 24, <ore:ingotFakeIron> * 24,], null,
+	[<actuallyadditions:item_misc:8> * 12], null
+);

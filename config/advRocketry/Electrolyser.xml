@@ -31,7 +31,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Deuterium+] from [Heavy Water] -->
+	<!-- [Deuterium+] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<fluidStack>heavywater 1000</fluidStack>
@@ -42,7 +42,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Deuterium+] from [Heavy Water] -->
+	<!-- [Deuterium+] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<fluidStack>ic2heavy_water 1000</fluidStack>
@@ -53,7 +53,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Hydrogen+] from [Hydrofluoric Acid] -->
+	<!-- [Hydrogen+] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<fluidStack>hydrofluoric_acid 1000</fluidStack>
@@ -64,7 +64,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Molten Aluminum+] from [Molten Alumina] -->
+	<!-- [Molten Aluminum+] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<fluidStack>alumina 144</fluidStack>
@@ -75,7 +75,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Molten Potassium+] from [Molten Potassium Hydroxide] -->
+	<!-- [Molten Potassium+] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<fluidStack>koh 666</fluidStack>
@@ -86,7 +86,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Molten Sodium+] from [Molten Sodium Hydroxide] -->
+	<!-- [Molten Sodium+] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<fluidStack>naoh 666</fluidStack>

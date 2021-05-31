@@ -23,7 +23,7 @@
 <Recipes useDefault="false">
 	<Recipe timeRequired="100" power="100000">
 		<input>
-			<oreDict>itemSilicon</oreDict>
+			<oreDict>ingotCarbon</oreDict>
 		</input>
 		<output>
 			<itemStack>libvulpes:productboule 1 3</itemStack>

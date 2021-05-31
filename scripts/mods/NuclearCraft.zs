@@ -174,7 +174,7 @@ remake("NC Fusion core", <nuclearcraft:fusion_core>, [
 
 	
 # Blutonium
-scripts.process.solution([<ic2:nuclear:7>, <actuallyadditions:item_crystal_empowered:1>, <thermalfoundation:material:136>], 
+scripts.process.solution([<ic2:nuclear:7>, <actuallyadditions:item_crystal_empowered:1>, <ore:ingotPlatinum>], 
 	[<liquid:cyanite> * (144*1)], [<liquid:plutonium> * (144/2)], [0.17, 1, 1, 3000], "only: highoven");
 
 # Boron arsenid simplify recipe
@@ -362,3 +362,12 @@ craft.remake(<nuclearcraft:bin>, ["pretty",
   "□": <ore:plateBasic>, # Basic Plating
   "▬": <ore:ingotBoron>, # Boron Ingot
 });
+
+# Late game alternatives
+# [Graphite Block] from [Block of Charcoal][+1]
+scripts.wrap.enderio.AlloySmelter.addRecipe(<nuclearcraft:ingot_block:8>, [<ore:blockCoal>], 4000);
+scripts.wrap.enderio.AlloySmelter.addRecipe(<nuclearcraft:ingot_block:8>, [<ore:blockCharcoal>], 4000);
+
+# [Dimensional Blend] from [Biome Essence]
+recipes.remove(<nuclearcraft:compound:8>);
+scripts.process.crush(<biomesoplenty:biome_essence>, <nuclearcraft:compound:8>, "only: eu2Crusher AACrusher IECrusher", [<thermalfoundation:material:66>], [0.1]);

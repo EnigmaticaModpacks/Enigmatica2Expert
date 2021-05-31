@@ -244,11 +244,6 @@ for item in pressurePlates {
 # Industrial Diamond
 	<ore:gemDiamond>.remove(<ic2:crafting:19>);
 
-# Black Quartz
-	<ore:blockBlackQuartz>.add(<actuallyadditions:block_misc>);
-	<ore:blockBlackQuartz>.add(<actuallyadditions:block_misc:1>);
-	<ore:blockBlackQuartz>.add(<actuallyadditions:block_misc:2>);
-
 # Certus Quartz
 	<ore:crystalCertus>.add(<appliedenergistics2:material>);
 	<ore:crystalCertus>.add(<appliedenergistics2:material:1>);
@@ -792,3 +787,19 @@ for item in <ore:dustAshes>.items {
 # with AA [Lens Of Color]
 <ore:dyeBrown>.remove([<enderio:item_material:49>, <industrialforegoing:fertilizer>]);
 <ore:dyeGreen>.remove(<enderio:item_material:48>);
+
+# Add missed Ores (used for Actually Additions)
+<ore:crushedNetherrack>.add(<exnihilocreatio:block_netherrack_crushed>);
+
+<ore:oreRockCrystal>.add(<astralsorcery:blockcustomore>);
+<ore:pelt>.addItems([
+	<betteranimalsplus:bear_skin_black>,
+	<betteranimalsplus:bear_skin_brown>,
+	<betteranimalsplus:bear_skin_kermode>,
+	<betteranimalsplus:wolf_pelt_arctic>,
+	<betteranimalsplus:wolf_pelt_black>,
+	<betteranimalsplus:wolf_pelt_brown>,
+	<betteranimalsplus:wolf_pelt_red>,
+	<betteranimalsplus:wolf_pelt_snowy>,
+	<betteranimalsplus:wolf_pelt_timber>,
+]);

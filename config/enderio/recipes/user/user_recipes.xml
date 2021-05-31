@@ -124,6 +124,29 @@
   <recipe name="Tweak: Wood Hopper">
     <disabled/>
   </recipe>
+  <!-- Mending Moss filling -->
+  <recipe name="Mending Moss filling 1" required="true">
+    <tanking type="FILL" logic="NONE">
+      <input name="tconstruct:materials:18" />
+      <fluid name="xpjuice" amount="3280" />
+      <output name="tconstruct:materials:19" />
+    </tanking>
+  </recipe>
+  <recipe name="Mending Moss filling 2" required="true">
+    <tanking type="FILL" logic="NONE">
+      <input name="tconstruct:materials:18" />
+      <fluid name="experience" amount="3280" />
+      <output name="tconstruct:materials:19" />
+    </tanking>
+  </recipe>
+  <recipe name="Mending Moss filling 3" required="true">
+    <tanking type="FILL" logic="NONE">
+      <input name="tconstruct:materials:18" />
+      <fluid name="essence" amount="3280" />
+      <output name="tconstruct:materials:19" />
+    </tanking>
+  </recipe>
+   
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Construction Foam" required="true">
     <fermenting energy="10000">

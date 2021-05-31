@@ -202,8 +202,8 @@ static armorStaged as IData[string] =
   armor_quantum:{
     prev: "armor_flux", 
     tier: 7,
-    material: "ic2:crafting:4",
-    recycle:  "ic2:crafting:4",
+    material: "ic2:misc_resource:2",
+    recycle:  "ic2:misc_resource:2",
     recipe: {manual: true},
     list: [
       {id:"ic2:quantum_helmet", tag:{charge:10000000}},

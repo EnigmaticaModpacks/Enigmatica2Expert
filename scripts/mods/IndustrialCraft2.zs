@@ -17,19 +17,6 @@ import mods.ic2.ScrapBox;
 # Batch Crafter, unintended behaviour
 	recipes.remove(<ic2:te:89>);
 
-# Missing Dust Compression
-	recipes.addShaped("LeadDustFromTiny", 
-	<thermalfoundation:material:67>, 
-	[[<ic2:dust:23>, <ic2:dust:23>, <ic2:dust:23>],
-	[<ic2:dust:23>, <ic2:dust:23>, <ic2:dust:23>], 
-	[<ic2:dust:23>, <ic2:dust:23>, <ic2:dust:23>]]);
-	
-	recipes.addShaped("LapisDustFromTiny", 
-	<ic2:dust:9>, 
-	[[<ic2:dust:22>, <ic2:dust:22>, <ic2:dust:22>],
-	[<ic2:dust:22>, <ic2:dust:22>, <ic2:dust:22>], 
-	[<ic2:dust:22>, <ic2:dust:22>, <ic2:dust:22>]]);
-
 # Crushed Ore Smeltery compat
 	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:aluminum> * 144, <jaopca:item_crushedaluminium>);
 	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:ardite> * 144, <jaopca:item_crushedardite>);
@@ -173,12 +160,15 @@ import mods.ic2.ScrapBox;
 	utils.rh(<ic2:ingot:8>);
 
 # Unused dusts
+utils.rh(<ic2:dust:4>);
 utils.rh(<ic2:dust:7>);
 utils.rh(<ic2:dust:10>);
 utils.rh(<ic2:dust:12>);
 utils.rh(<ic2:dust:14>);
-utils.rh(<ic2:dust:4>);
 utils.rh(<ic2:dust:17>);
+utils.rh(<ic2:dust:25>);
+utils.rh(<ic2:dust:36>);
+utils.rh(<ic2:nuclear:6>);
 	
 # Iridium TiC Compat
 	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:iridium> * 144, <ic2:misc_resource:1>, 500);
@@ -323,3 +313,51 @@ craft.remake(<industrialwires:ic2_connector:9> * 4, ["pretty",
   "I": <immersiveengineering:stone_decoration:8>, # Insulating Glass
   "n": <ore:itemInsulatedGlassCable>, # Glass Fibre Cable
 });
+
+# Remake Dust compession recipes
+function tinyDustFix(a as IItemStack, b as IItemStack) as void {
+	recipes.addShapeless("Pack " ~ a.displayName, b, [a,a,a,a,a,a,a,a,a]);
+}
+
+tinyDustFix(<ic2:dust:23>, <thermalfoundation:material:67>);
+tinyDustFix(<ic2:dust:22>, <ic2:dust:9>);
+tinyDustFix(<ic2:dust:28>, <thermalfoundation:material:65>);
+tinyDustFix(<ic2:dust:25>, <thermalfoundation:material:770>);
+tinyDustFix(<ic2:dust:20>, <thermalfoundation:material:1>);
+tinyDustFix(<ic2:dust:26>, <thermalfoundation:material:66>);
+
+# Crystal memory crafts
+function crystalRecipe(name as string, item as IItemStack, ingrs as IIngredient[]) {
+	recipes.remove(item);
+	recipes.addShapeless(name, <ic2:crystal_memory>.withTag({Pattern: {id: item.definition.id, Count: 1 as byte, Damage: item.damage as short}}), ingrs);
+	scripts.category.tooltip_utils.desc.both(item, "crystal_memory");
+}
+
+crystalRecipe("[Shape Card] crystal", <rftools:shape_card>,      [<ore:circuitElite>, <immersiveengineering:blueprint>.withTag({blueprint: "molds"}), <ic2:crystal_memory>, <ore:paper>, <ore:paper>]);
+crystalRecipe("[Base Addon] crystal", <teslacorelib:base_addon>, [<industrialforegoing:plastic>, <industrialforegoing:plastic>, <ic2:crystal_memory>, <ore:paper>, <ore:paper>]);
+
+# [Replicator] from [Energium Ingot][+3]
+craft.remake(<ic2:te:63>, ["pretty",
+  "C ▬ C",
+  "C ▬ C",
+  "M M M"], {
+  "C": <ic2:containment_plating>, # Containment Reactor Plating
+  "▬": <ore:ingotEnergium>,       # Energium Ingot
+  "M": <ic2:te:75>,   # MFSU
+});
+
+# [Heat-Capacity Reactor Plating] from [Dense Copper Plate][+1]
+craft.reshapeless(<ic2:heat_plating>, "п□", {
+  "□": <ore:plateDenseCopper>, # Dense Copper Plate
+  "п": <ore:plateLead>,        # Lead Plate
+});
+
+# [Containment Reactor Plating] from [Lead Plate][+1]
+craft.reshapeless(<ic2:containment_plating>, "п□□□", {
+  "□": <ore:plateAdvancedAlloy>, # Advanced Alloy
+  "п": <ore:plateLead>, # Lead Plate
+});
+
+# Reprocess plutonium
+mods.nuclearcraft.decay_hastener.addRecipe([<ic2:nuclear:3>, <nuclearcraft:uranium:4>, 2.0, 2.0]);
+mods.nuclearcraft.decay_hastener.addRecipe([<ic2:nuclear:7>, <nuclearcraft:uranium:6>, 2.0, 2.0]);

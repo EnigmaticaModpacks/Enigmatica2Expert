@@ -74,7 +74,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Clay-Coated Glowstone Dust] from [Glowstone Dust+] -->
+	<!-- [Clay-Coated Glowstone Dust] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>minecraft:glowstone_dust 1</itemStack>
@@ -85,7 +85,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Crystalline Alloy Ingot] from [itemPulsatingPowder++] -->
+	<!-- [Crystalline Alloy Ingot] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<oreDict>itemPulsatingPowder 1</oreDict>
@@ -97,7 +97,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Crystalline Pink Slime Ingot] from [itemEnderCrystalPowder++] -->
+	<!-- [Crystalline Pink Slime Ingot] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<oreDict>itemEnderCrystalPowder 1</oreDict>
@@ -109,7 +109,19 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [End Steel Ingot] from [ingotDarkSteel++] -->
+	<!-- [Draconium Infused Obsidian] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>biomesoplenty:crystal 1</itemStack>
+			<oreDict>dustDraconium 4</oreDict>
+			<oreDict>ingotBrickNetherGlazed 6</oreDict>
+		</input>
+		<output>
+			<itemStack>draconicevolution:infused_obsidian 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [End Steel Ingot] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<oreDict>ingotDarkSteel 1</oreDict>
@@ -121,7 +133,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Enderium Base] from [ingotPulsatingIron+] -->
+	<!-- [Enderium Base] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<oreDict>ingotPulsatingIron 1</oreDict>
@@ -132,7 +144,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [HSLA Steel Ingot] from [ingotIron+] -->
+	<!-- [HSLA Steel Ingot] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<oreDict>ingotIron 15</oreDict>
@@ -143,7 +155,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Melodic Alloy Ingot] from [itemVibrantPowder++] -->
+	<!-- [Melodic Alloy Ingot] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<oreDict>itemVibrantPowder 1</oreDict>
@@ -155,7 +167,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Pulsating Iron Ingot] from [Iron Ingot+] -->
+	<!-- [Pulsating Iron Ingot] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>minecraft:iron_ingot 1</itemStack>
@@ -166,7 +178,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Spectre Ingot] from [ingotUnstable++] -->
+	<!-- [Spectre Ingot] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<oreDict>ingotUnstable 1</oreDict>
@@ -178,7 +190,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Stellar Alloy Ingot] from [itemPrecientPowder++] -->
+	<!-- [Stellar Alloy Ingot] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<oreDict>itemPrecientPowder 1</oreDict>

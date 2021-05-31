@@ -46,7 +46,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Acacia Wood Planks] from [Acacia Log] -->
+	<!-- [Acacia Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>minecraft:log2 1</itemStack>
@@ -56,7 +56,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Balsa Wood Planks] from [Balsa Wood] -->
+	<!-- [Balsa Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.2 1 3</itemStack>
@@ -66,7 +66,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Baobab Wood Planks] from [Baobab Wood] -->
+	<!-- [Baobab Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.1 1 2</itemStack>
@@ -76,7 +76,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Birch Wood Planks] from [Birch Log] -->
+	<!-- [Birch Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>minecraft:log 1 2</itemStack>
@@ -86,7 +86,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Canopy Planks] from [Canopy Tree Wood] -->
+	<!-- [Canopy Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>twilightforest:twilight_log 1 1</itemStack>
@@ -96,7 +96,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Cherry Wood Planks] from [Cherry Wood] -->
+	<!-- [Cherry Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>biomesoplenty:log_0 1 5</itemStack>
@@ -106,7 +106,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Cherry Wood Planks] from [Cherry Wood] -->
+	<!-- [Cherry Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.3 1 3</itemStack>
@@ -116,7 +116,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Chestnut Wood Planks] from [Chestnut Wood] -->
+	<!-- [Chestnut Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.1 1</itemStack>
@@ -126,7 +126,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Citrus Wood Planks] from [Citrus Wood] -->
+	<!-- [Citrus Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.5 1 3</itemStack>
@@ -136,7 +136,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Cocobolo Wood Planks] from [Cocobolo Wood] -->
+	<!-- [Cocobolo Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.6 1 3</itemStack>
@@ -146,7 +146,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Dark Oak Wood Planks] from [Dark Oak Log] -->
+	<!-- [Dark Oak Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>minecraft:log2 1 1</itemStack>
@@ -156,7 +156,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Darkwood Planks] from [Darkwood] -->
+	<!-- [Darkwood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>twilightforest:twilight_log 1 3</itemStack>
@@ -166,7 +166,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Desert Acacia Wood Planks] from [Desert Acacia Wood] -->
+	<!-- [Desert Acacia Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.0 1 2</itemStack>
@@ -176,7 +176,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Dreadwood Planks] from [Dreadwood Log] -->
+	<!-- [Dreadwood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>iceandfire:dreadwood_log 1</itemStack>
@@ -186,7 +186,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Ebony Wood Planks] from [Ebony Wood] -->
+	<!-- [Ebony Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>biomesoplenty:log_3 1 6</itemStack>
@@ -196,7 +196,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Ebony Wood Planks] from [Ebony Wood] -->
+	<!-- [Ebony Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.2 1 1</itemStack>
@@ -206,7 +206,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Ethereal Wood Planks] from [Ethereal Wood] -->
+	<!-- [Ethereal Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>biomesoplenty:log_1 1 4</itemStack>
@@ -216,7 +216,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Eucalyptus Wood Planks] from [Eucalyptus Wood] -->
+	<!-- [Eucalyptus Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>biomesoplenty:log_3 1 7</itemStack>
@@ -226,7 +226,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Ferrous-Juniper Planks] from [Ferrous-Juniper Log] -->
+	<!-- [Ferrous-Juniper Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>extrautils2:ironwood_log 1</itemStack>
@@ -236,7 +236,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Fir Wood Planks] from [Fir Wood] -->
+	<!-- [Fir Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>biomesoplenty:log_0 1 7</itemStack>
@@ -246,7 +246,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Giant Sequoia Wood Planks] from [Giant Sequoia Wood] -->
+	<!-- [Giant Sequoia Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.6 1</itemStack>
@@ -256,7 +256,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Greatwood Planks] from [Greatwood Log] -->
+	<!-- [Greatwood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>thaumcraft:log_greatwood 1</itemStack>
@@ -266,7 +266,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Greenheart Wood Planks] from [Greenheart Wood] -->
+	<!-- [Greenheart Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.3 1 2</itemStack>
@@ -276,7 +276,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Hellbark Wood Planks] from [Hellbark Wood] -->
+	<!-- [Hellbark Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>biomesoplenty:log_2 1 7</itemStack>
@@ -286,7 +286,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Ipe Wood Planks] from [Ipe Wood] -->
+	<!-- [Ipe Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.6 1 1</itemStack>
@@ -296,7 +296,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Ironwood Planks] from [Ironwood] -->
+	<!-- [Ironwood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>rustic:log 1 1</itemStack>
@@ -306,7 +306,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Jacaranda Wood Planks] from [Jacaranda Wood] -->
+	<!-- [Jacaranda Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>biomesoplenty:log_3 1 4</itemStack>
@@ -316,7 +316,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Jungle Wood Planks] from [Cinnamon Wood] -->
+	<!-- [Jungle Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>harvestcraft:pamcinnamon 1</itemStack>
@@ -326,17 +326,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Jungle Wood Planks] from [Jungle Log] -->
-	<Recipe timeRequired="10" power="40000">
-		<input>
-			<itemStack>minecraft:log 1 3</itemStack>
-		</input>
-		<output>
-			<itemStack>minecraft:planks 10 3</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Jungle Wood Planks] from [Paperbark Wood] -->
+	<!-- [Jungle Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>harvestcraft:pampaperbark 1</itemStack>
@@ -346,7 +336,17 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Kapok Wood Planks] from [Kapok Wood] -->
+	<!-- [Jungle Wood Planks] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>minecraft:log 1 3</itemStack>
+		</input>
+		<output>
+			<itemStack>minecraft:planks 10 3</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Kapok Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.2 1</itemStack>
@@ -356,7 +356,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Larch Wood Planks] from [Larch Wood] -->
+	<!-- [Larch Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.0 1</itemStack>
@@ -366,7 +366,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Lightwood planks] from [Lightwood Wood] -->
+	<!-- [Lightwood planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>advancedrocketry:alienwood 1</itemStack>
@@ -376,7 +376,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Lime Wood Planks] from [Lime Wood] -->
+	<!-- [Lime Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.0 1 3</itemStack>
@@ -386,7 +386,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Magic Wood Planks] from [Magic Wood] -->
+	<!-- [Magic Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>biomesoplenty:log_1 1 5</itemStack>
@@ -396,7 +396,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Magical Planks] from [Magical Wood] -->
+	<!-- [Magical Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>extrautils2:decorativesolidwood 1 1</itemStack>
@@ -406,7 +406,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Mahoe Wood Planks] from [Mahoe Wood] -->
+	<!-- [Mahoe Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.4 1</itemStack>
@@ -416,7 +416,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Mahogany Wood Planks] from [Mahogany Wood] -->
+	<!-- [Mahogany Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>biomesoplenty:log_3 1 5</itemStack>
@@ -426,7 +426,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Mahogany Wood Planks] from [Mahogany Wood] -->
+	<!-- [Mahogany Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.2 1 2</itemStack>
@@ -436,7 +436,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Mangrove Planks] from [Mangrove Wood] -->
+	<!-- [Mangrove Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>twilightforest:twilight_log 1 2</itemStack>
@@ -446,7 +446,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Mangrove Wood Planks] from [Mangrove Wood] -->
+	<!-- [Mangrove Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>biomesoplenty:log_1 1 6</itemStack>
@@ -456,7 +456,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Maple Wood Planks] from [Maple Wood] -->
+	<!-- [Maple Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.5 1 2</itemStack>
@@ -466,7 +466,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Menril Wood Planks] from [Menril Wood] -->
+	<!-- [Menril Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>integrateddynamics:menril_log 1</itemStack>
@@ -476,7 +476,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Minewood Planks] from [Minewood] -->
+	<!-- [Minewood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>twilightforest:magic_log 1 2</itemStack>
@@ -486,7 +486,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Oak Wood Planks] from [Oak Log] -->
+	<!-- [Oak Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>minecraft:log 1</itemStack>
@@ -496,7 +496,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Olive Wood Planks] from [Olive Wood] -->
+	<!-- [Olive Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>rustic:log 1</itemStack>
@@ -506,7 +506,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Padauk Wood Planks] from [Padauk Wood] -->
+	<!-- [Padauk Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.6 1 2</itemStack>
@@ -516,7 +516,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Palm Wood Planks] from [Palm Wood] -->
+	<!-- [Palm Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>biomesoplenty:log_1 1 7</itemStack>
@@ -526,7 +526,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Palm Wood Planks] from [Palm Wood] -->
+	<!-- [Palm Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.4 1 2</itemStack>
@@ -536,7 +536,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Papaya Wood Planks] from [Papaya Wood] -->
+	<!-- [Papaya Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.4 1 3</itemStack>
@@ -546,7 +546,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Pine Wood Planks] from [Pine Wood] -->
+	<!-- [Pine Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>biomesoplenty:log_2 1 6</itemStack>
@@ -556,7 +556,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Pine Wood Planks] from [Pine Wood] -->
+	<!-- [Pine Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.5 1</itemStack>
@@ -566,7 +566,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Plum Wood Planks] from [Plum Wood] -->
+	<!-- [Plum Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.5 1 1</itemStack>
@@ -576,7 +576,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Poplar Wood Planks] from [Poplar Wood] -->
+	<!-- [Poplar Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.4 1 1</itemStack>
@@ -586,7 +586,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Printed Calculation Circuit] from [crystalPureCertusQuartz] -->
+	<!-- [Printed Calculation Circuit] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<oreDict>crystalPureCertusQuartz 9</oreDict>
@@ -596,7 +596,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Printed Engineering Circuit] from [blockDiamond] -->
+	<!-- [Printed Engineering Circuit] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<oreDict>blockDiamond 1</oreDict>
@@ -606,7 +606,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Printed Logic Circuit] from [blockGold] -->
+	<!-- [Printed Logic Circuit] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<oreDict>blockGold 1</oreDict>
@@ -616,7 +616,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Raw Ferrous-Juniper Planks] from [Ferrous-Juniper Log] -->
+	<!-- [Raw Ferrous-Juniper Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>extrautils2:ironwood_log 1 1</itemStack>
@@ -626,7 +626,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Redwood Wood Planks] from [Redwood Wood] -->
+	<!-- [Redwood Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>biomesoplenty:log_2 1 4</itemStack>
@@ -636,7 +636,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Sacred Oak Wood Planks] from [Sacred Oak Wood] -->
+	<!-- [Sacred Oak Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>biomesoplenty:log_0 1 4</itemStack>
@@ -646,7 +646,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Sequoia Wood Planks] from [Sequoia Wood] -->
+	<!-- [Sequoia Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.1 1 3</itemStack>
@@ -656,7 +656,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Silverwood Planks] from [Silverwood Log] -->
+	<!-- [Silverwood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>thaumcraft:log_silverwood 1</itemStack>
@@ -666,7 +666,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Sortingwood Planks] from [Sortingwood] -->
+	<!-- [Sortingwood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>twilightforest:magic_log 1 3</itemStack>
@@ -676,7 +676,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Spectre Planks] from [Spectre Wood] -->
+	<!-- [Spectre Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>randomthings:spectrelog 1</itemStack>
@@ -686,7 +686,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Spruce Wood Planks] from [Maple Wood] -->
+	<!-- [Spruce Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>harvestcraft:pammaple 1</itemStack>
@@ -696,7 +696,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Spruce Wood Planks] from [Spruce Log] -->
+	<!-- [Spruce Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>minecraft:log 1 1</itemStack>
@@ -706,7 +706,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Teak Wood Planks] from [Teak Wood] -->
+	<!-- [Teak Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.0 1 1</itemStack>
@@ -716,7 +716,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Timewood Planks] from [Timewood] -->
+	<!-- [Timewood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>twilightforest:magic_log 1</itemStack>
@@ -726,7 +726,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Titanium Nugget] from [Dull Comb] -->
+	<!-- [Titanium Nugget] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>gendustry:honey_comb 1 6</itemStack>
@@ -736,7 +736,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Transwood Planks] from [Transwood] -->
+	<!-- [Transwood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>twilightforest:magic_log 1 1</itemStack>
@@ -746,7 +746,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Twilight Oak Planks] from [Twilight Oak Wood] -->
+	<!-- [Twilight Oak Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>twilightforest:twilight_log 1</itemStack>
@@ -756,7 +756,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Umbran Wood Planks] from [Umbran Wood] -->
+	<!-- [Umbran Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>biomesoplenty:log_0 1 6</itemStack>
@@ -766,7 +766,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Walnut Wood Planks] from [Walnut Wood] -->
+	<!-- [Walnut Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.3 1 1</itemStack>
@@ -776,7 +776,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Wenge Wood Planks] from [Wenge Wood] -->
+	<!-- [Wenge Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.1 1 1</itemStack>
@@ -786,7 +786,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Willow Wood Planks] from [Willow Wood] -->
+	<!-- [Willow Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>biomesoplenty:log_2 1 5</itemStack>
@@ -796,7 +796,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Willow Wood Planks] from [Willow Wood] -->
+	<!-- [Willow Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.3 1</itemStack>
@@ -806,7 +806,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Zebrawood Wood Planks] from [Zebrawood Wood] -->
+	<!-- [Zebrawood Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<itemStack>forestry:logs.7 1</itemStack>

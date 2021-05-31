@@ -42,14 +42,6 @@ craft.reshapeless(<randomthings:ingredient:6> * 4, 'ABC', {
 	C: <ore:cropBean>,
 	});
 
-# Ender book
-recipes.remove(<cyclicmagic:book_ender>);
-recipes.addShaped(<cyclicmagic:book_ender>, [
-	[<randomthings:flootoken>, <rats:ratlantean_flame>, <randomthings:flootoken>], 
-	[<randomthings:flootoken>, <minecraft:book>, <randomthings:flootoken>], 
-	[<randomthings:flootoken>, <randomthings:flootoken>, <randomthings:flootoken>]
-]);
-
 # Time in bottle
 remake("randomthings_timeinabottle", <randomthings:timeinabottle>, [
 	[null, <animania:milk_bottle>, null], 

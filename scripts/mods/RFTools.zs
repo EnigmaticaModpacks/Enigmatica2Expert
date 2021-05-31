@@ -67,7 +67,7 @@ import crafttweaker.item.IIngredient;
 	<rftools:machine_frame> * 2, 
 	[[<ic2:heat_vent>, <ore:gearGold>, <ic2:heat_vent>],
 	[<industrialforegoing:dryrubber>, <teslacorelib:machine_case>, <industrialforegoing:dryrubber>], 
-	[<industrialforegoing:pink_slime>, <industrialforegoing:range_addon:*>, <industrialforegoing:pink_slime>]]);
+	[<industrialforegoing:pink_slime>, <tconevo:edible:1>, <industrialforegoing:pink_slime>]]);
 
 # Machine Base
 	recipes.remove(<rftools:machine_base>);
@@ -81,8 +81,8 @@ import crafttweaker.item.IIngredient;
 	recipes.addShapedMirrored("Quarry Card",
 	<rftools:shape_card:2>, 
 	[[<rftools:machine_frame>, <tconstruct:hammer_head>.withTag({Material: "osgloglas"}), <rftools:machine_frame>],
-	[<tconstruct:hammer_head>.withTag({Material: "manyullyn"}), <thermalexpansion:frame:146>, <tconstruct:hammer_head>.withTag({Material: "psimetal"})], 
-	[<rftools:machine_frame>, <tconstruct:hammer_head>.withTag({Material: "enderium"}), <rftools:machine_frame>]]);
+	[<tconstruct:hammer_head>.withTag({Material: "manyullyn"}), <thermalexpansion:frame:146>, <tconstruct:hammer_head>.withTag({Material: "enderium"})], 
+	[<rftools:machine_frame>, <rftools:shape_card>, <rftools:machine_frame>]]);
 	
 	recipes.addShaped("Quarry Card Clearing to Normal", 
 	<rftools:shape_card:2>, 
@@ -222,7 +222,7 @@ craft.make(<rftools:syringe>, ["pretty",
   "  T  ",
   "    □"], {
   "□": <ore:plateAdvancedAlloy>, # Advanced Alloy
-  "T": <openblocks:tank>, # Tank
+  "T": <enderio:block_omni_reservoir>, # Tank
   "‚": <ore:nuggetSteel>, # Steel Nugget
 });
 

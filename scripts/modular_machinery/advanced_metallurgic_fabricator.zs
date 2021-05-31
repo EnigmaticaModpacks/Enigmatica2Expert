@@ -17,13 +17,6 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_titanium_ingot", 
 	.addFluidInput(<liquid:liquidchlorine> * 500)
 	.build();
 
-mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_manasteel_ingot", machineName, 10)
-	.addEnergyPerTickInput(50000)
-	.addItemOutput(<ore:ingotMithril>, 6)
-	.addItemInput(<ore:ingotManasteel>, 4)
-	.addItemInput(<ore:gemDiamond>)
-	.build();
-
 mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_osgloglas_ingot", machineName, 10)
 	.addEnergyPerTickInput(100000)
 	.addItemOutput(<ore:ingotOsgloglas>, 2)

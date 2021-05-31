@@ -111,13 +111,22 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_refined_circuit_b
 	.build();
 
 mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_intricate_circuit_board", machineName, 5)
-	.addEnergyPerTickInput(50000)
+	.addEnergyPerTickInput(10000)
 	.addItemOutput(<forestry:chipsets:3>.withTag({T:3 as short}))
 	.addItemInput(<forestry:chipsets:0>.withTag({T:0 as short}, false))
 	.addItemInput(<forestry:chipsets:1>.withTag({T:1 as short}, false))
 	.addItemInput(<forestry:chipsets:2>.withTag({T:2 as short}, false))
-	.addItemInput(<appliedenergistics2:material:17> * 2)
-	.addItemInput(<ore:circuitUltimate>)
+	.addItemInput(<ore:gemAmber>, 3)
+	.addFluidInput(<liquid:water> * 5000)
+	.build();
+
+mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_machine_circuitry", machineName, 5)
+	.addEnergyPerTickInput(50000)
+	.addItemOutput(<modularmachinery:blockcasing:5>)
+	.addItemInput(<forestry:chipsets:3>.withTag({T: 3 as short}, false)) # Intricate Circuit Board
+	.addItemInput(<appliedenergistics2:material:17> * 2) # Printed Engineering Circuit
+	.addItemInput(<ore:circuitUltimate>)             # Ultimate Control Circuit
+	.addItemInput(<ore:ingotModularium>)             # Modularium Alloy
 	.addFluidInput(<liquid:water> * 5000)
 	.build();
 

@@ -25,7 +25,7 @@ import crafttweaker.item.IItemStack as IItemStack;
 # Advanced Carpenter
     recipes.addShapedMirrored("Advanced Carpenter", 
     <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:advanced_carpenter"}), 
-    [[<modularmachinery:blockcasing>, <appliedenergistics2:material:57>, <modularmachinery:blockcasing>],
+    [[<modularmachinery:blockcasing>, <thermaldynamics:duct_16:6> | <thermaldynamics:duct_16:7>, <modularmachinery:blockcasing>],
     [<forestry:carpenter>, <immersiveengineering:blueprint>.anyDamage(), <forestry:carpenter>], 
     [<modularmachinery:blockcasing>, <extracells:fluidcrafter>, <modularmachinery:blockcasing>]]);
     
@@ -88,12 +88,21 @@ craft.remake(<modularmachinery:blockcontroller>, ["pretty",
     [null, <modularmachinery:blockcasing>, null]]);
 
 # Machine Circuitry
-    recipes.remove(<modularmachinery:blockcasing:5>);
-    recipes.addShapedMirrored("Machine Circuitry", 
-    <modularmachinery:blockcasing:5>, 
-    [[null, <immersiveengineering:wirecoil:5>, null],
-    [<modularmachinery:blockcasing>, <forestry:chipsets:3>.withTag({T: 3 as short}, false), <modularmachinery:blockcasing>], 
-    [null, <modularmachinery:blockcasing>, null]]);
+recipes.remove(<modularmachinery:blockcasing:5>);
+scripts.wrap.forestry.Carpenter.addRecipe(<modularmachinery:blockcasing:5>, 
+    scripts.craft.grid.Grid(["pretty",
+    "P ▬ P",
+    "U I U",
+    "P ▬ P"], {
+    "I": <forestry:chipsets:3>.withTag({T: 3 as short}, false), # Intricate Circuit Board
+    "P": <appliedenergistics2:material:17>, # Printed Engineering Circuit
+    "U": <ore:circuitUltimate>,             # Ultimate Control Circuit
+    "▬": <ore:ingotModularium>,             # Modularium Alloy
+    }).shaped(),
+    40, <liquid:water> * 1000
+);
+
+
 
 # Modularium
     recipes.remove(<modularmachinery:itemmodularium>);

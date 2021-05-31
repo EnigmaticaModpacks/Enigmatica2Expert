@@ -194,3 +194,24 @@ craft.remake(<excompressum:auto_heavy_sieve>, ["pretty",
   "▄": <libvulpes:elitemotor>,            # Elite Motor
   "H": <excompressum:heavy_sieve:*>,      # Heavy Birch Sieve
 });
+
+# [Diamond Hammer] from [Nutritious Stick][+1]
+craft.remake(<exnihilocreatio:hammer_diamond>, ["pretty",
+  "  D  ",
+  "  ╱ D",
+  "╱    "], {
+  "╱": <ore:itemNutritiousStick>, # Nutritious Stick
+  "D": <ore:compressedDiamond2x>, # Double Compressed Diamond
+});
+
+# [Auto Compressed Hammer] from [Compressed Diamond Hammer][+4]
+craft.remake(<excompressum:auto_compressed_hammer>, ["pretty",
+  "  A  ",
+  "□ C □",
+  "◊ ■ ◊"], {
+  "■": <ore:blockMotor>,                  # Motor
+  "□": <ore:plateTitaniumIridium>,        # Titanium Iridium Alloy Plate
+  "A": <exnihilocreatio:item_material:3>, # Ancient Spores
+  "C": <excompressum:compressed_hammer_diamond>.anyDamage(), # Compressed Diamond Hammer
+  "◊": <ore:gemTanzanite>,                # Tanzanite
+});

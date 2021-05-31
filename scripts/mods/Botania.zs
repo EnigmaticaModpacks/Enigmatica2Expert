@@ -80,7 +80,7 @@ import crafttweaker.item.IIngredient as IIngredient;
 	<botania:manaresource:14>, 
 	[[<ore:dustMana>, <ore:eternalLifeEssence>, <ore:dustMana>],
 	[<ore:eternalLifeEssence>, <ore:ingotTerrasteel>, <ore:eternalLifeEssence>], 
-	[<ore:ingotMithril>, <ore:eternalLifeEssence>, <ore:ingotMithril>]]);
+	[<ore:ingotManasteel>, <ore:eternalLifeEssence>, <ore:ingotManasteel>]]);
 
 # Gaia Pylon
 	recipes.remove(<botania:pylon:2>);
@@ -198,19 +198,19 @@ mods.botania.Orechid.addOre("oreBoron", 1285);
 mods.botania.Orechid.addOre("oreProsperity", 900);
 
 function remakeRune(rune as IItemStack, ingrList as IIngredient[], mana as int) {
-	mods.botania.RuneAltar.removeRecipe(rune * 1);
+	mods.botania.RuneAltar.removeRecipe(rune.anyAmount());
 	mods.botania.RuneAltar.addRecipe(rune, ingrList, mana);
 }
 
-/* Water */   remakeRune(<botania:rune:0>*2, [<botania:manaresource:23>, <botania:manaresource>, <ore:foodBassraw>, <ore:dustBlizz>, <minecraft:reeds>, <ore:gemAquamarine>], 5000);
-/* Fire */    remakeRune(<botania:rune:1>*2, [<botania:manaresource:23>, <botania:manaresource>, <harvestcraft:blazingsoupitem>, <ore:dustBlaze>, <ore:slimeballMagma>, <minecraft:lava_bucket>], 5000);
-/* Earth */   remakeRune(<botania:rune:2>*2, [<botania:manaresource:23>, <botania:manaresource>, <ore:blockCoal>, <ore:dustBasalz>, <minecraft:mushroom_stew>, <extrautils2:compresseddirt>], 5000);
-/* Air */     remakeRune(<botania:rune:3>*2, [<botania:manaresource:23>, <botania:manaresource>, <minecraft:wool:3>, <ore:dustBlitz>, <ore:feather>, <ore:boneDragon>], 5000);
-/* Spring */  remakeRune(<botania:rune:4>,   [<botania:rune>, <botania:rune:1>, <minecraft:red_flower:1>, <minecraft:red_flower:2>, <quark:variant_sapling:1>, <minecraft:pumpkin_pie>], 10000);
-/* Summer */  remakeRune(<botania:rune:5>,   [<botania:rune:2>, <botania:rune:3>, <minecraft:sandstone:*>, <tconstruct:slime_congealed:*>, <minecraft:speckled_melon>, <ore:listAllicecream>], 10000);
-/* Autumn */  remakeRune(<botania:rune:6>,   [<botania:rune:1>, <botania:rune:3>, <botania:biomestonea:6>, <botania:biomestonea:3>, <botania:biomestonea>, <minecraft:fermented_spider_eye>], 10000);
-/* Winter */  remakeRune(<botania:rune:7>,   [<botania:rune>, <botania:rune:2>, <minecraft:snow>, <minecraft:packed_ice>, <botania:manaresource:22>, <ore:foodCake>], 10000);
-/* Mana */    remakeRune(<botania:rune:8>,   [<ore:manaDiamond>, <ore:manaDiamond>, <ore:quartzMana>, <ore:ingotMithril>, <botania:manaresource:22>, <botania:manaresource:1>], 20000);
+/* Water */   remakeRune(<botania:rune:0>*2, [<ore:dustBlizz>, <ore:fish>, <ore:gemAquamarine>, <ore:ingotManasteel>, <ore:powderMana>], 5000);
+/* Fire */    remakeRune(<botania:rune:1>*2, [<ore:dustBlaze>, <ore:slimeballMagma>, <ore:gemAmber>, <ore:ingotManasteel>, <ore:powderMana>], 5000);
+/* Earth */   remakeRune(<botania:rune:2>*2, [<ore:dustBasalz>, <thaumcraft:nugget:10>, <ore:podzol>, <ore:ingotManasteel>, <ore:powderMana>], 5000);
+/* Air */     remakeRune(<botania:rune:3>*2, [<ore:dustBlitz>, <ore:boneDragon>, <ore:peacockFeathers>, <ore:ingotManasteel>, <ore:powderMana>], 5000);
+/* Spring */  remakeRune(<botania:rune:4>,   [<ore:runeWaterB>, <ore:runeFireB>, <astralsorcery:blockinfusedwood:*>, <ore:flower>, <ore:nitor>], 10000);
+/* Summer */  remakeRune(<botania:rune:5>,   [<ore:runeEarthB>, <ore:runeAirB>, <ore:treeSapling>, <thaumcraft:crystal_essence:*>, <ore:livingwood>], 10000);
+/* Autumn */  remakeRune(<botania:rune:6>,   [<ore:runeFireB>, <ore:runeAirB>, <ore:quicksilver>, <minecraft:deadbush>, <botania:biomestonea:*>], 10000);
+/* Winter */  remakeRune(<botania:rune:7>,   [<ore:runeWaterB>, <ore:runeEarthB>, <mctsmelteryio:iceball>, <astralsorcery:itemusabledust>, <quark:crystal:*>], 10000);
+/* Mana */    remakeRune(<botania:rune:8>,   [<ore:manaPearl>, <ore:powderMana>, <ore:quartzMana>, <ore:manaDiamond>, <ore:clothManaweave>], 20000);
 /* Lust */    remakeRune(<botania:rune:9>,   [<ore:manaDiamond>, <ore:manaDiamond>, <botania:rune:5>, <botania:rune:5>, <botania:rune:3>, <botania:rune:3>], 25000);
 /* Gluttony */remakeRune(<botania:rune:10>,  [<ore:manaDiamond>, <ore:manaDiamond>, <botania:rune:7>, <botania:rune:7>, <botania:rune:1>, <botania:rune:1>], 25000);
 /* Greed */   remakeRune(<botania:rune:11>,  [<ore:manaDiamond>, <ore:manaDiamond>, <botania:rune:4>, <botania:rune:4>, <botania:rune>, <botania:rune>], 25000);

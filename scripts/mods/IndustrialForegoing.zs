@@ -105,7 +105,7 @@ function fluidDict(ins as string[]) {
 	recipes.remove(<industrialforegoing:black_hole_unit>);
 	recipes.addShapedMirrored("Black Hole Unit", <industrialforegoing:black_hole_unit>, 
 	[[<ore:itemRubber>, <actuallyadditions:item_crystal_empowered:3>, <ore:itemRubber>],
-	[<teslacorelib:machine_case>, <botania:blackholetalisman>.reuse(), <teslacorelib:machine_case>], 
+	[<teslacorelib:machine_case>, <advancedrocketry:ic:3>, <teslacorelib:machine_case>], 
 	[<mekanism:plasticblock:8>, <mekanism:basicblock:6>.withTag({tier: 3})|<mekanism:basicblock:6>.withTag({tier: 3, mekData: {itemCount: 0}}), <mekanism:plasticblock:8>]]);
 
 # Black Hole Controller
@@ -131,21 +131,17 @@ function fluidDict(ins as string[]) {
 	[<exnihilocreatio:item_doll>, <teslacorelib:machine_case>, <exnihilocreatio:item_doll:1>], 
 	[<ore:blockEmerald>, <thermalexpansion:frame:147>, <ore:blockEmerald>]]);
 
-# Mob Imprisonment Tool
-#	recipes.remove(<industrialforegoing:mob_imprisonment_tool>);
-#	recipes.addShaped("Mob Imprisonment Tool",
-#	<industrialforegoing:mob_imprisonment_tool>, 
-#	[[<ore:itemRubber>, <ore:enderpearl>, <ore:itemRubber>],
-#	[<ore:enderpearl>, <minecraft:ghast_tear>, <ore:enderpearl>], 
-#	[<ore:itemRubber>, <ore:enderpearl>, <ore:itemRubber>]]);
-
-# Laser Drill
-	recipes.remove(<industrialforegoing:laser_drill>);
-	recipes.addShaped("Laser Drill",
-	<industrialforegoing:laser_drill>, 
-	[[<ore:itemRubber>, <ore:blockRefinedGlowstone>, <ore:itemRubber>],
-	[<ic2:glass>, <thermalexpansion:frame>, <ic2:glass>], 
-	[<ore:gearDiamond>, <mekanismgenerators:reactorglass:1>, <ore:gearDiamond>]]);
+# [Laser Drill] from [Machine Frame][+4]
+craft.remake(<industrialforegoing:laser_drill>, ["pretty",
+  "¤ R R",
+  "■ ◙ L",
+  "¤ R R"], {
+  "■": <ore:blockRefinedGlowstone>, # Refined Glowstone
+  "R": <ore:itemRubber>,            # Plastic
+  "¤": <ore:gearDiamond>,           # Diamond Gear
+  "◙": <thermalexpansion:frame>,    # Machine Frame
+  "L": <mekanism:machineblock2:13>, # Laser
+});
 
 # Laser Base
 	recipes.remove(<industrialforegoing:laser_base>);

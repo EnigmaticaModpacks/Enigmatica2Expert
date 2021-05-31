@@ -3,6 +3,7 @@ import crafttweaker.item.IIngredient;
 import mods.cyclicmagic.Hydrator;  
 import mods.cyclicmagic.Solidifier;  
 import mods.cyclicmagic.Dehydrator;
+import crafttweaker.data.IData;
 #modloaded cyclicmagic
 
 # *======= Recipes =======*
@@ -24,7 +25,7 @@ craft.remake(<cyclicmagic:block_storeempty>, ["pretty",
   "п T п",
   "□ ▬ □"], {
   "□": <ore:plateAluminium>,  # Aluminum Plate
-  "T": <openblocks:tank>,     # Tank
+  "T": <enderio:block_omni_reservoir>,     # Tank
   "▬": <ore:ingotBrickSeared>,# Seared Brick
   "п": <ore:plateCopper>,     # Copper Plate
 });
@@ -391,7 +392,7 @@ craft.remake(<cyclicmagic:corrupted_chorus> * 4, ["pretty",
 
 # [Glowing_Chorus_Fruit] from [Crystallized_Obsidian_Bucket][+1]
 recipes.remove(<cyclicmagic:glowing_chorus> * 8);
-scripts.wrap.inworldcrafting.FluidToItem.transform(<cyclicmagic:glowing_chorus>, <fluid:crystal>, [<cyclicmagic:corrupted_chorus>]);
+scripts.wrap.inworldcrafting.FluidToItem.transform(<cyclicmagic:glowing_chorus>, <fluid:flux_goo>, [<cyclicmagic:corrupted_chorus>]);
 
 # [Ender_Wing] from [Golden_Egg][+4]
 craft.remake(<cyclicmagic:tool_warp_spawn>, ["pretty",
@@ -510,13 +511,13 @@ val packagerList = [
   [<rats:token_piece>        ], [<rats:token_fragment> * 9],
   [<rats:chunky_cheese_token>], [<rats:token_piece> * 9   ],
   
-  [<environmentalmaterials:alabaster> * 4], [<minecraft:stone> * 4, <minecraft:dye:15>                   * 5],
-  [<environmentalmaterials:alabaster> * 4], [<minecraft:stone> * 4, <biomesoplenty:white_dye>            * 5],
-  [<environmentalmaterials:alabaster> * 4], [<minecraft:stone> * 4, <thermalfoundation:dye:15>           * 5],
-  [<environmentalmaterials:alabaster> * 4], [<minecraft:stone> * 4, <botania:dye>                        * 5],
-  [<environmentalmaterials:alabaster> * 4], [<minecraft:stone> * 4, <industrialforegoing:artificial_dye> * 5],
-  [<environmentalmaterials:alabaster> * 4], [<minecraft:stone> * 4, <quark:root_dye:2>                   * 5],
-  [<environmentalmaterials:alabaster> * 4], [<minecraft:stone> * 4, <gendustry:honey_drop:25>            * 5],
+  [<environmentalmaterials:alabaster> * 4], [<minecraft:cobblestone> * 4, <minecraft:dye:15>                   * 5],
+  [<environmentalmaterials:alabaster> * 4], [<minecraft:cobblestone> * 4, <biomesoplenty:white_dye>            * 5],
+  [<environmentalmaterials:alabaster> * 4], [<minecraft:cobblestone> * 4, <thermalfoundation:dye:15>           * 5],
+  [<environmentalmaterials:alabaster> * 4], [<minecraft:cobblestone> * 4, <botania:dye>                        * 5],
+  [<environmentalmaterials:alabaster> * 4], [<minecraft:cobblestone> * 4, <industrialforegoing:artificial_dye> * 5],
+  [<environmentalmaterials:alabaster> * 4], [<minecraft:cobblestone> * 4, <quark:root_dye:2>                   * 5],
+  [<environmentalmaterials:alabaster> * 4], [<minecraft:cobblestone> * 4, <gendustry:honey_drop:25>            * 5],
 ] as IItemStack[][];
 
 for i, l in packagerList {
@@ -689,4 +690,41 @@ craft.remake(<cyclicmagic:water_candle>, ["pretty",
   "▲": <scalinghealth:heartdust>,                 # Heart Dust
   "R": <rats:rat_lantern>,                        # Rat Lantern
   "/": <minecraft:end_rod>,                       # End Rod
+});
+
+# [Experience Pylon] from [Mending Moss][+2]
+craft.remake(<cyclicmagic:exp_pylon>, ["pretty",
+  "S ▲ S",
+  "S M S",
+  "S ▲ S"], {
+  "▲": <ore:dustEmerald>,         # Crushed Emerald
+  "S": <actuallyadditions:item_solidified_experience>, # Solidified Experience
+  "M": <tconstruct:materials:19>, # Mending Moss
+});
+
+# [Empty Sack of Holding] from [Propolis][+2]
+craft.remake(<cyclicmagic:chest_sack_empty>, ["pretty",
+  "  s  ",
+  "B P B",
+  "B B B"], {
+  "P": <forestry:propolis:*>, # Propolis
+  "B": <ore:pelt>, # Brown Wolf Pelt
+  "s": <ore:string>, # String
+});
+
+# [Ender Book] from [Tome of Knowledge][+3]
+craft.remake(<cyclicmagic:book_ender>, ["pretty",
+  "▬ S ▬",
+  "R T R",
+  "▬ S ▬"], {
+  "R": <rats:ratlantean_flame>, # Ratlantean Spirit Flame
+  "S": <cyclicmagic:soulstone>, # Soulstone
+  "▬": <ore:ingotEndorium>,     # Endorium Ingot
+  "T": <thermalfoundation:tome_experience>
+    .withTag({Experience: 10000}, false)
+    .only(function(item) { return
+      !isNull(item.tag) &&
+      !isNull(item.tag.Experience) &&
+      item.tag.Experience.asInt() >= 10000
+    ;}), # Tome of Knowledge
 });

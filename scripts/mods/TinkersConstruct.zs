@@ -73,22 +73,24 @@ utils.rh(<tconstruct:slime_congealed:5>);
 	[<ore:blockSheetmetalGold>, <ore:plateDenseObsidian>, <ore:blockSheetmetalGold>]]);
 
 # Faster Alumite Alloying
-	mods.tconstruct.Alloy.removeRecipe(<liquid:alumite>);
+	// mods.tconstruct.Alloy.removeRecipe(<liquid:alumite>); // Removing PlusTic's alloys wouldn't have effect
 	scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:alumite> * 432, [<liquid:aluminum> * 720, <liquid:iron> * 288,  <liquid:obsidian> * 288]);
 	scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:alumite> * 864, [<liquid:aluminum> * 1440, <liquid:iron> * 576,  <liquid:obsidian> * 576]);
 
 # Faster Osmiridium Alloying
-	mods.tconstruct.Alloy.removeRecipe(<liquid:osmiridium>);
+	// mods.tconstruct.Alloy.removeRecipe(<liquid:osmiridium>); // Removing PlusTic's alloys wouldn't have effect
 	scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:osmiridium> * 144, [<liquid:osmium> * 72, <liquid:iridium> * 72]);
+
+# Osgloglas recipe after moving to tconevo
+	// mods.tconstruct.Alloy.removeRecipe(<liquid:osgloglas>); // Removing PlusTic's alloys wouldn't have effect
+	scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:osgloglas> * 144, [<liquid:osmium> * 144, <liquid:refined_obsidian> * 144,  <liquid:refined_glowstone> * 144]);
 
 # Faster Bronze Alloying
 	mods.tconstruct.Alloy.removeRecipe(<liquid:bronze>);
-
 	scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:bronze> * 288, [<liquid:tin> * 72, <liquid:copper> * 216]);
 	scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:bronze> * 576, [<liquid:tin> * 144, <liquid:copper> * 432]);
 
 	mods.tconstruct.Alloy.removeRecipe(<liquid:alubrass>);
-
 	scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:alubrass> * 288, [<liquid:copper> * 72, <liquid:aluminum> * 216]);
 	scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:alubrass> * 576, [<liquid:copper> * 144, <liquid:aluminum> * 432]);
 
@@ -121,7 +123,7 @@ for out,inp in pressPlates {
 # EFLN
 	recipes.remove(<tconstruct:throwball:1>);
 	recipes.addShapedMirrored("EFLN", 
-	<tconstruct:throwball:1> * 3, 
+	<tconstruct:throwball:1> * 2, 
 	[[<ore:dustSulfur>, <ore:gunpowder>, <ore:dustSulfur>],
 	[<ore:gunpowder>, <excompressum:compressed_block:5>, <ore:gunpowder>], 
 	[<ore:dustSulfur>, <ore:gunpowder>, <ore:dustSulfur>]]);
@@ -175,6 +177,7 @@ for item in coals {
 	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:cyanite> * 144, <ore:ingotCyanite> | <ore:dustCyanite>, 450);
 
 # Add recipes from liquids
+	scripts.wrap.tconstruct.Casting.addTableRecipe(<bigreactors:ingotblutonium>, <tconstruct:cast_custom>, <liquid:plutonium>, 144, false);
 	scripts.wrap.tconstruct.Casting.addBasinRecipe(<bigreactors:blockblutonium>, null, <liquid:plutonium>, 1296);
 	scripts.wrap.tconstruct.Casting.addBasinRecipe(<bigreactors:blockcyanite>, null, <liquid:cyanite>, 1296);
 	scripts.wrap.tconstruct.Casting.addTableRecipe(<bigreactors:ingotcyanite>, <tconstruct:cast_custom>, <liquid:cyanite>, 144, false);
@@ -292,10 +295,13 @@ mods.tconstruct.Fuel.registerFuel(<liquid:seed_fluid> * 10, 500000);
 mods.mechanics.addTubeRecipe([<thaumcraft:amber_block>] as IItemStack[], <liquid:amber> * 1000);
 mods.mechanics.addTubeRecipe([<biomesoplenty:crystal>] as IItemStack[], <liquid:crystal> * 1000);
 
-# Remove cyclic recipes
+# Remove other Fluid Amber Recipes
 mods.cyclicmagic.Melter.removeShapedRecipe("amber", 100);
 mods.cyclicmagic.Melter.removeShapedRecipe("amber", 1000);
 mods.cyclicmagic.Melter.removeShapedRecipe("crystal", 1000);
+mods.nuclearcraft.melter.removeRecipeWithOutput([<fluid:amber> * 1665]);
+mods.nuclearcraft.melter.removeRecipeWithOutput([<fluid:amber> * 666]);
+mods.nuclearcraft.melter.removeRecipeWithOutput([<fluid:amber> * 74]);
 
 # Liquid blue slimy items
 scripts.process.squeeze([<tconstruct:slime_dirt:1>],        <liquid:blueslime>*2000, null,  <biomesoplenty:mudball>);
@@ -338,6 +344,19 @@ scripts.wrap.tconstruct.Casting.addTableRecipe(<tconstruct:edible:1>, null, <liq
 scripts.wrap.tconstruct.Casting.addBasinRecipe(<tconstruct:slime_congealed:2>, null, <liquid:purpleslime>, 1000);
 scripts.wrap.tconstruct.Casting.addBasinRecipe(<tconstruct:slime_congealed:1>, null, <liquid:blueslime>  , 1000);
 
+# Slime mud
+craft.reshapeless(<tconstruct:soil:2>, "■sd", {
+  "■": <tconstruct:slime_congealed:1>,
+  "s": <minecraft:sand>,
+  "d": <minecraft:dirt:2>
+});
+craft.reshapeless(<tconstruct:soil:2>, "ssssad", {
+  "a": <minecraft:sand>,
+  "s": <tconstruct:edible:1>,
+  "d": <minecraft:dirt:2>
+});
+
+
 # Mud balls smelted into TCon bricks
 furnace.remove(<biomesoplenty:mud_brick>);
 furnace.addRecipe(<tconstruct:materials:1>, <biomesoplenty:mudball>);
@@ -349,9 +368,6 @@ recipes.addShaped(<biomesoplenty:mud_brick_block> * 2, [
 	[<tconstruct:materials:1>, null, <tconstruct:materials:1>], 
 	[<tconstruct:materials:1>, <tconstruct:materials:1>, <tconstruct:materials:1>]
 ]);
-
-# Osgloglas recipe after moving to tconevo
-scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:osgloglas> * 144, [<liquid:osmium> * 144, <liquid:refined_obsidian> * 144,  <liquid:refined_glowstone> * 144]);
 
 # Molten Quartz and Lapis to blocks
 scripts.wrap.tconstruct.Casting.addBasinRecipe(<minecraft:quartz_block>, null, <liquid:quartz>, 2664);
@@ -471,6 +487,18 @@ craft.make(<plustic:laser_medium>.withTag({Material: "psigem"}), ["pretty",
   "Ϟ": <draconicevolution:energy_crystal:1>, # Wyvern Energy Relay Crystal
 });
 
+# [Starmetal Laser Medium] from [Wyvern Energy Relay Crystal][+3]
+mods.tconstruct.Casting.removeTableRecipe(<plustic:laser_medium>.withTag({Material: "starmetal"}));
+craft.make(<plustic:laser_medium>.withTag({Material: "starmetal"}), ["pretty",
+  "▬ ▬ ▬",
+  "‚ Ϟ *",
+  "▬ ▬ ▬"], {
+  "*": <advancedrocketry:crystal:1>,         # Blue Crystal Block
+  "‚": <ore:nuggetDraconicMetal>,            # Draconic Metal Nugget
+  "▬": <ore:ingotAstralStarmetal>,           # Starmetal Ingot
+  "Ϟ": <draconicevolution:energy_crystal:1>, # Wyvern Energy Relay Crystal
+});
+
 # [Endrod Laser Medium] from [Draconic Energy Relay Crystal][+3]
 craft.make(<plustic:laser_medium>.withTag({Material: "endrod"}), ["pretty",
   "/ / /",
@@ -480,6 +508,16 @@ craft.make(<plustic:laser_medium>.withTag({Material: "endrod"}), ["pretty",
   "*": <advancedrocketry:crystal:5>,         # Orange Crystal Block
   "Ϟ": <draconicevolution:energy_crystal:2>, # Draconic Energy Relay Crystal
   "/": <minecraft:end_rod>,                  # End Rod
+});
+
+# [Aethium Armor Trim] from [Mica][+2]
+craft.remake(<conarm:armor_trim>.withTag({Material: "aethium"}), ["pretty",
+  "A I A",
+  "I m I",
+  "A I A"], {
+  "A": <tconstruct:shard>.withTag({Material: "aethium"}), # Aethium Shard
+  "I": <environmentaltech:interconnect>, # Interconnect
+  "m": <ore:mica>,                       # Mica
 });
 
 #-------------------------------------------------------------------------------

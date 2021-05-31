@@ -226,7 +226,7 @@ addTieredRecipe(3, <mysticalagriculture:tin_seeds> ,           [<ore:blockTin> ,
 addTieredRecipe(3, <mysticalagriculture:knightslime_seeds> ,   [<ore:blockKnightslime> ,<ore:runeWinterB>], null);
 addTieredRecipe(3, <mysticalagriculture:steeleaf_seeds> ,      [<twilightforest:block_storage:2>, <ore:runeSpringB>] , null);
 addTieredRecipe(3, <mysticalagriculture:ironwood_seeds> ,      [<twilightforest:block_storage>, <ore:runeSummerB>] , null);
-addTieredRecipe(3, <mysticalagriculture:black_quartz_seeds> ,  [<ore:blockBlackQuartz> , <ore:runeAutumnB>], null);
+addTieredRecipe(3, <mysticalagriculture:black_quartz_seeds> ,  [<ore:blockQuartzBlack> , <ore:runeAutumnB>], null);
 addTieredRecipe(3, <mysticalcreations:cheese_seeds> ,          [<ore:cheeseWheels> ,<ore:runeSpringB>], null);
 
 # *======= Seeds Tier 4 =======*
@@ -574,3 +574,12 @@ scripts.process.solution(
 
 # Defined with portal spread
 recipes.removeShaped(<mysticalagriculture:soulstone>);
+
+# [Base Crafting Seed] Harder to encourage Villager Trades
+craft.remake(<mysticalagriculture:crafting:16>, ["pretty",
+  "l l l",
+  "l s l",
+  "l l l"], {
+  "l": <ore:shardProsperity>,
+  "s": <ore:seed>,
+});

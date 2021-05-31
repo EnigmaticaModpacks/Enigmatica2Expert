@@ -140,13 +140,16 @@ craft.remake(<enderio:block_impulse_hopper>, ["pretty",
 	[<ore:dyeMachine>, <enderio:item_material>, <ore:dyeMachine>], 
 	[<enderio:block_reinforced_obsidian>, <ore:dyeMachine>, <enderio:block_reinforced_obsidian>]]);
 
-# Basic Capacitor
-	recipes.remove(<enderio:item_basic_capacitor>);
-	recipes.addShapedMirrored("Basic Capacitor", 
-	<enderio:item_basic_capacitor> * 2, 
-	[[null, <immersiveengineering:metal_device1:8>, null],
-	[<ore:dustBedrock>, <immersiveengineering:metal_device0:2>, <ore:dustBedrock>], 
-	[null, <immersiveengineering:metal_device1:8>, null]]);
+# [Basic Capacitor] from [Redstone Conductance Coil][+3]
+craft.remake(<enderio:item_basic_capacitor>, ["pretty",
+  "  H  ",
+  "I ♥ I",
+  "  ■  "], {
+  "■": <immersivecables:coil_block:1>,         # Dense Fluix Coil Block
+  "♥": <thermalfoundation:material:515>,       # Redstone Conductance Coil
+  "H": <immersiveengineering:metal_device0:2>, # HV Capacitor
+  "I": <ore:itemInfinityGoop>,                 # Infinity Reagent
+});
 
 # Double-Layer Capacitor
 	recipes.remove(<enderio:item_basic_capacitor:1>);
@@ -392,19 +395,16 @@ craft.remake(<enderio:item_fluid_filter>, ["pretty",
   "F": <flopper:flopper>, # Flopper
 });
 
-# [Omnivoir]*4 from [Flopper][+1]
+# [Omnivoir] from [Black Quartz][+1]
 craft.remake(<enderio:block_omni_reservoir> * 4, ["pretty",
-  "■ ■ ■",
-  "■ F ■",
-  "■ ■ ■"], {
-  "■": <ore:blockGlass>,
-  "F": <flopper:flopper>, # Flopper
+  "⌃ S",
+  "S ⌃"], {
+  "⌃": <ore:blockQuartzBlack>,     # Black Quartz
+  "S": <tconstruct:seared_tank:1>, # Seared Gauge
 });
 
-# [Omnivoir]*8 from [Flopper]
-scripts.wrap.forestry.ThermionicFabricator.addCast(<enderio:block_omni_reservoir> * 8,
-	[[<flopper:flopper>]], <liquid:glass> * 8000, <forestry:wax_cast:*>
-);
+# Omnivoir fast alt
+scripts.process.alloy([<ore:blockQuartzBlack>], <enderio:block_omni_reservoir> * 2, "only: alloySmelter");
 
 # [Energy Gauge] from [Omnivoir][+2]
 craft.remake(<enderio:block_gauge>, ["pretty",
@@ -468,4 +468,24 @@ craft.reshapeless(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "e
   "B*", {
   "B": <enderio:item_dark_steel_upgrade>, # Blank Dark Steel Upgrade
   "*": <ore:itemPulsatingCrystal>,        # Pulsating Crystal
+});
+
+
+# Add recipe to use in some AA crafts
+# [Organic Brown Dye] from [Crushed Black Quartz][+3]
+mods.rt.RandomThingsTweaker.addImbuingRecipe(
+	<forestry:refractory_wax>, # Refractory Wax
+	<actuallyadditions:item_misc:21>, # Biomass
+	<actuallyadditions:item_dust:7>, # Crushed Black Quartz
+	<forestry:decaying_wheat>, # Decaying Wheat
+	<enderio:item_material:49>
+);
+
+# [Pulsating Crystal] from [Biome Essence][+1]
+craft.remake(<enderio:item_material:14>, ["pretty",
+  "‚ ‚ ‚",
+  "‚ B ‚",
+  "‚ ‚ ‚"], {
+  "B": <biomesoplenty:biome_essence>, # Biome Essence
+  "‚": <ore:nuggetPulsatingIron>,     # Pulsating Iron Nugget
 });

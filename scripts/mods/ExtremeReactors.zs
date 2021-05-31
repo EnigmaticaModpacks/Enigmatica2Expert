@@ -71,10 +71,7 @@
 
 
 # Blutonium Ingot	
-	recipes.remove(<bigreactors:ingotblutonium>);
-	recipes.addShapeless("Blutonium Ingot from Block", 
-	<bigreactors:ingotblutonium> * 9, 
-	[<bigreactors:blockblutonium>]);
+	recipes.removeShaped(<bigreactors:ingotblutonium>);
 
 # Ludicrite Block
 	recipes.remove(<bigreactors:blockludicrite>);

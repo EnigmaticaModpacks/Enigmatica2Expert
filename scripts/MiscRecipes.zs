@@ -382,7 +382,7 @@ recipes.addShaped(<travelersbackpack:hose>, [
 recipes.remove(<travelersbackpack:backpack_tank>);
 recipes.addShaped(<travelersbackpack:backpack_tank>, [
 	[<ic2:casing:3>],
-	[<openblocks:tank>],
+	[<enderio:block_omni_reservoir>],
 	[<ic2:casing:3>]]);
 
 # Remake Sleeping bag (prevent conflict)
@@ -531,10 +531,6 @@ recipes.removeByRecipeName("minecraft:glass_pane");
 val qwrong = <nuclearcraft:gem_dust:2>;
 val qdust = <appliedenergistics2:material:3>;
 recipes.removeByRecipeName("thermalfoundation:gem_dust");
-craft.shapeless(qdust, "AB", {
-	A: <ore:oreQuartz>,
-	B: <ore:dustPetrotheum>,
-});
 mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:quartz_ore>, <bloodmagic:cutting_fluid>]);
 mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:quartz_ore>);
 mods.immersiveengineering.Crusher.removeRecipesForInput(<minecraft:quartz>);
@@ -546,7 +542,7 @@ scripts.process.crush(<ore:gemQuartz>, qdust, "only: iecrusher aegrinder mekcrus
 <minecraft:torch>.asBlock().definition.lightLevel = 0.7f;
 
 # Missed melt recipe for Block Of Ender Pearls
-scripts.process.melt(<actuallyadditions:block_misc:6>, <liquid:ender> * 1000, "No Exceptions");
+scripts.process.melt(<actuallyadditions:block_misc:6>, <liquid:ender> * 1000, "Except: Smeltery");
 
 # Prevent melting dupe
 craft.remake(<quark:obsidian_pressure_plate>, ["AA","AA"], {A: <ore:obsidian>});
@@ -556,3 +552,9 @@ recipes.removeByRecipeName("quark:basalt_1");
 
 # Defined with portal spread
 recipes.removeShaped(<minecraft:red_nether_brick>);
+
+<minecraft:cake>.maxStackSize = 64;
+
+# Compressed chest
+recipes.remove(<extrautils2:largishchest>);
+utils.compact(<ore:chest>, <extrautils2:largishchest>);

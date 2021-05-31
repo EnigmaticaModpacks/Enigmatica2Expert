@@ -15,13 +15,18 @@ for tomato in <ore:cropTomato>.items {
 	<forestry:book_forester>, 
 	[<minecraft:book>, <ore:treeSapling>, <ore:treeSapling>]);
 
-# Refined Circuit Board
-	mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:3>);
-	scripts.wrap.forestry.Carpenter.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}), 
-	[[<appliedenergistics2:material:17>, <forestry:chipsets>.withTag({T:0 as short}, false), <appliedenergistics2:material:17>],
-	[<ore:circuitUltimate>, <forestry:chipsets:1>.withTag({T:1 as short}, false), <ore:circuitUltimate>],
-	[<appliedenergistics2:material:17>, <forestry:chipsets:2>.withTag({T:2 as short}, false), <appliedenergistics2:material:17>]], 
-	40, <liquid:water> * 1000);
+# Intricate Circuit Board
+mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:3>);
+scripts.wrap.forestry.Carpenter.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}), 
+  scripts.craft.grid.Grid(["pretty",
+	"◊ B ◊",
+  "◊ E ◊",
+  "◊ R ◊"], {
+  "B": <forestry:chipsets:0>.withTag({T: 0 as short}, false), # Basic Circuit Board
+  "R": <forestry:chipsets:2>.withTag({T: 2 as short}, false), # Refined Circuit Board
+  "E": <forestry:chipsets:1>.withTag({T: 1 as short}, false), # Enhanced Circuit Board
+  "◊": <ore:gemAmber>, # Amber
+	}).shaped(), 40, <liquid:water> * 1000);
 
 # Sturdy Casing
 	recipes.remove(<forestry:sturdy_machine>);
