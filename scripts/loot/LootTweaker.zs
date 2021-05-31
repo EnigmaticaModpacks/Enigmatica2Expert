@@ -28,6 +28,8 @@ var itemsToRemove as string[] = [
 	"iceandfire:armor_silver_metal_chestplate",
 	"iceandfire:armor_silver_metal_leggings",
 	"iceandfire:armor_silver_metal_boots",
+	"iceandfire:silver_nugget",
+	"iceandfire:silver_ingot",
 	"iceandfire:sapphire_gem",
 	
 	"immersiveengineering:pickaxe_steel",
