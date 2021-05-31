@@ -35,6 +35,12 @@ Items that could be used in crafts:
 ![](https://git.io/JLhpN "Titanium Aluminide Sheet")
 ![](https://git.io/JLhh4 "Iridium Rod")
 ![](https://git.io/JLhpp "Titanium Aluminide Rod")
+![](https://git.io/JGGjO "Silicon Boule")
+![](https://git.io/JGGhx "Overworldian Matter")
+![](https://git.io/JGGjn "Biome Essence")
+![](https://git.io/JGGh7 "Mana Infused Ingot")
+![](https://git.io/JtyNr "Glowing Coral")
+![](https://git.io/JtyNo "Kelp")
 
 ## 💧 Liquids of Interest
 Liquids that should have more uses:
@@ -61,50 +67,33 @@ Liquids that should have more uses:
 ![](https://git.io/J3hVr "Thermionic Fabricator")
 ![](https://git.io/J3hVU "Compost")
 ![](https://git.io/JsegO "Drying Basin")
+![](https://git.io/Jsw4m "Miniaturization Field Projector")
+![](https://git.io/JG5U9 "Decay Generator")
+![](https://git.io/Jst3B "Crystal Memory")
 ![](https://git.io/J3hVE "Wooden Barrel") milking
+![](https://git.io/JG5US "Trading Upgrade")
 
 
 ----------------------------------------------------------------------------
 ----------------------------------------------------------------------------
-
 
 # TODO
 
-- [x] ✏️ ![](https://git.io/J3xFv "Block of Prosperity") make uncraftable
-- [x] ✏️ ![](https://git.io/JtJGS "Compressed Cobblestone") => [Compressed Stone] in ![](https://git.io/J3xyb "Alloy Smelter")
-- [x] ✏️ ![](https://git.io/J3ptI "Compressed Granite") Fix conflict
-- [x] ✏️ ![](https://git.io/J3ptI "Compressed Granite") in Pulverizer recipe fix
-- [x] ✏️ ![](https://git.io/JtyeA "Input Variable Transformer") fix conflict recipe with output
-- [x] ✏️ ![](https://git.io/JqUJV "Mechanical Squeezer") harder
-- [x] ✏️ ![](https://git.io/J3p4Z "Glitch Infused Chestplate") Recycle
-- [x] ✏️ ![](https://git.io/J3xy3 "NanoSuit Bodyarmor") recycle
-- [x] ✏️ ![](https://git.io/J3pcV "Netherstar Generator") return craft back but change output amount
-- [x] ✏️ ![](https://git.io/JOKc6 "Plate of Unsealing") cheaper
-- [x] ✏️ ![](https://git.io/J3xSe "Primordial Pearl") Craft
-- [x] ✏️ ![](https://git.io/J3xyN "Spawner Changer") harder?
-- [x] ✏️ ![](https://git.io/J3xyj "Speed Charm") harder
-- [x] ✏️ ![](https://git.io/J3xyF "Universal Bin") Cheaper
-- [x] ✏️ ![](https://git.io/Jse6m "Flux Capacitor (Basic)") Way harder. Give way for ![](https://git.io/JseP4 "Simple Inventory Charger")
-- [x] ✏️ ![](https://git.io/Jsey2 "Rat Nugget") in Infernal furnace should require 1 nugget
-- [x] ✏️ ![](https://git.io/JsvPH "Refined Obsidian Ingot") & ![](https://git.io/JsvPj "Glowstone Ingot") melt in ![](https://git.io/JOGz0 "Magma Crucible (Basic)")
-- [x] ✏️ ![](https://git.io/JOG2B "Iron Turbine") Upgrading gives free ![](https://git.io/JsfOh "Iron Turbine Rotor")
-- [x] ✏️ ![](https://git.io/JsewW "Lens of Color") can be used to dupe Lazuri
-- [ ] ✏️ ![](https://git.io/J3hV0 "Crushing Block") Use to craft Pressure Plates
-- [ ] ✏️ ![](https://git.io/Jst3y "Tanzanite Rod") Fix JAOPCA have excess parts
-- [ ] ✏️ ![](https://git.io/J3xSv "Tank") Make bigger, but harder to craft
-- [ ] ✏️ ![](https://git.io/JsfOp "White Sand") Remove from microcraftings
-- [ ] ✏️ ![](https://git.io/Jst3a "Shape Card (Quarry)") change PSI recipe
-- [ ] ✏️ ![](https://git.io/JsTPR "Starmetal Laser Medium") craft
-- [ ] ✏️ ![](https://git.io/JsTPa "Block of Coal Coke") in ![](https://git.io/JsTPV "Augment: Pyrolytic Conversion") done faster than non-block version
-- [ ] ✏️ ![](https://git.io/Jst3B "Crystal Memory") Make some items creatable only with UU matter by using pre-crafted disk
 - [ ] ✏️ ![](https://git.io/J3p8H "Lens of the Miner") change craft to non-magical
-- [ ] ✏️ [Cake] (mine) make stackable
-- [x] 🔄 ![](https://git.io/J3pca "Atomic Disassembler") x20 - x100 increase consumption
-- [x] 🔄 ![](https://git.io/J3xy7 "Hardened Ice") add aspects
-- [x] 🔄 ![](https://git.io/J3xyj "Speed Charm") Nerf durab even more
-- [x] 🔄 Remove Armor Foundry
-- [x] 🔄 Add **Void Miner** and **Miner** tags
-- [x] 🔄 Remove Excess Tips
+- [ ] ✏️ ![](https://git.io/JGGjy "Sulfur") purge
+- [ ] ✏️ ![](https://git.io/JGncp "Ender Book") harder, no depends on Rats dimension
+- [ ] ✏️ ![](https://git.io/JG5UH "Elite Plating") move whole crafting line from Crafting Table
+- [ ] ✏️ ![](https://git.io/Jst3y "Tanzanite Rod") Fix JAOPCA have excess parts
+- [ ] ✏️ Fix Preston making too many recipes
+- [ ] ✏️ [Quartz Silver] make compressing recipes
+- [ ] ✏️ ![](https://git.io/JZviQ "Conduit Binder") change craft to Compost
+- [ ] ✏️ ![](https://git.io/JZLjg "Alchemy Table") add more late game crafts
+- [ ] ✏️ ![](https://git.io/JGGjv "Precision Assembler") can work with fluids
+- [ ] ✏️ ![](https://git.io/JGGjS "Crystallizer") can work with fluids
+- [ ] ✏️ ![](https://git.io/JGGhp "Space Suit Chest-Piece") Add early acces, because Jetpack, Speedup stuff and similar not so cool for late game
+- [ ] ✏️ Repairer to TAGS and harder
+- [ ] ✏️ Remap all **#VoidMiners** to produce not all types of ore each
+- [ ] 🔄 Add **Crafter** tags
 - [ ] 🔄 UU requirement for a lot of things seems to be lower than what the tooltip says
 - [ ] 🔄 ![](https://git.io/J3xSU "Syngas Producer Controller") more fuels
 - [ ] 🔄 ![](https://git.io/J3p8B "Infinity Furnace") texture turned upsidedown
@@ -112,49 +101,27 @@ Liquids that should have more uses:
 - [ ] 🔄 Add conflict removing automation `/ct conflict`
 - [ ] 🔄 Make Health restriction to enter Nether
 - [ ] 🔄 `/bq_admin default load` and `/bqs_loot default load` automatically on **non-debug** lunches
-- [ ] 🔄 Enhance Myrmex loot
 - [ ] 🔄 Spectre fluid has no texture (invisible in world)
-- [x] 🔨 Blacklist powerful materials for Equip Generation
-- [x] 🔨 Buff Void Metal
-- [x] 🔨 Scythe make not so rare
-- [ ] 🔨 Osmium and other material levels apply wrong
-- [x] 🍇 End Reborn: Add Book to Akashik tome
+- [ ] 🔄 ![](https://git.io/JqUJ9 "Machine Controller") Remove **Advanced Metallurgic Fabricator**, move recipes to ![](https://git.io/JGGjU "Electric Arc Furnace")
+- [x] 🔄 Add new merchant trades
+- [ ] 🔄 Simplify Harder Branch Mining. Impossible. Something wrong with HBM configs
+- [ ] 🛸 EnderIO: Disable Death Urn
+- [ ] 🛸 EnderIO: Change values for Solar panels
+- [ ] 🛸 EnderIO: XP obelisk buff
+- [ ] 📖 ![](https://git.io/Jsw4f "Tiny Inventory System Storage") add
+- [ ] 🔨 Dragon Steel slightly nerf
+- [ ] 🔨 ![](https://git.io/JGBqu "Osmium Ingot") and other material levels apply wrong
+- [ ] 🔨 Add teleportation trait. 1. Set point, 2. Break special glass-like block to teleport
+- [ ] 🌍 Advanced Rocketry 121 KELT-6a have no leaves on trees
+- [ ] 🌍 118_KELT-2ab: Return Kelps
 - [ ] 🍇 End Reborn: Propertly Integrate. Discover mobs and nerf. Also the chorus guards (the white blazes) simply shouldn't be in the game
-- [x] 🧙‍♂️ ![](https://git.io/J3xyA "Magma Anvil") Harder and consume more lava
-- [ ] 🧙‍♂️ Blacklist for Repair (Primordial Pearl?)
-- [x] 🔄 Morphing Tool: Add Rats Staffs, and Ice&Fire staffs (dragon & myrmex)
-- [x] 💼 Actually Additionals: Remove ![](https://git.io/J3p84 "Yellorite Ore") from ![](https://git.io/J3p8H "Lens of the Miner")
-- [x] 📖 Harder Branch Mining explanation
-- [x] 📖 ![](https://git.io/J3p8l "Blood Altar") quest require item instead of checkbox
-- [x] 📖 **RFTools** rework
-- [ ] 📖 Swap Fortress Armor -> Void Thaumaturge Armor
-- [x] 📖 Psi in the quest book gates chapter is behind Botania, but if you find manasteel in dungeon chests you can use Psi without botania
-- [x] 📖 ![](https://git.io/J3p0w "Flat Transfer Node (Items)") ![](https://git.io/J3p0r "Flat Transfer Node (Fluids)") add
-- [x] 📖 ![](https://git.io/J3p8H "Lens of the Miner") add to quests
-- [x] 📖 Add hint that PSI restored when you gain XP
-- [x] 📖 TE syringes add
-- [x] 🏪 Add ![](https://git.io/J3p8H "Lens of the Miner")
-- [x] 🏪 Fluid -> Block contact (TE fluids) > This cold be special machine to less lag
-- [x] 🏪 Portal Spread + Remove exist recipes
-- [x] 🏪 ![](https://git.io/JstO0 "Primal Mana Tank") Add interaction
-- [ ] 🌍 Advanced Rocketry planets skrewed up
-- [x] 🌍 Disable Forestry Trees spawning > Finding Cherry tree, for example, gave huge boost for food and oil production
-- [x] 🌍 Disable Slime Islands in Thaum world
-- [x] 🌍 JER for Emptiness
-- [x] 🌍 Remove ice villages and replace all ice & fire sapphires with bops
-- [x] 🌍 Generate BoP gems rarely in world
-- [ ] 🌍 Update JER for End
-- [ ] 🚧 Fix `wrapper.js` wont work with `import mods...` statement
-- [ ] 🗃️ Loot Boxes: ![](https://git.io/JsvC6 "Impulsion Wand") Add
-- [x] 🔵 **Precision Mining** add hints and descriptions
-- [x] 🔴 Remove Sampler from release package
 - [ ] 🔵 Get use for **Immersive Tweaker**
 - [ ] 🔵 Add **Industrial Foregoing integration** [>here<](https://docs.blamejared.com/1.12/en/Mods/Integration_Foregoing/WashingFactory/)
 - [ ] 🟢 Add [Bansoko](https://www.curseforge.com/minecraft/mc-mods/bansoko) to rename Dank/null `.jar` so it could work with Thaumic Speedup
-- [ ] 🔵 Config [Armor Tweaks](https://www.curseforge.com/minecraft/mc-mods/armor-curve) [with that](https://gist.github.com/TeetoKaziim/21f534de598e5adff3e90dc615e263f7)
-- [ ] 🔴 Remove Spartan Shields
+- [ ] 🔴 Remove Spartan Shields from `armorData.zs`
 - [ ] 🔴 Remove Preston. Questionable, because still used for some blocks and i dont need to make textures
-
+- [ ] 🏪 Add Matter Replicator that **increase cost** of replication each operation
+- [ ] 🚧 Add automatical removing of hashed files to update them
 
 
 ----------------------------------------------------------------------------
