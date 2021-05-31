@@ -64,7 +64,6 @@ val defaultArmorMats as IData = [
   "kyronite"               , # 36
   "prismarine"             , # 36
   "energetic_metal"        , # 36
-  "osgloglas"              , # 36
   "sentient_metal"         , # 36
   "bronze"                 , # 37
   "refined_glowstone"      , # 37
@@ -133,6 +132,7 @@ val defaultArmorMats as IData = [
   "amber"                  , # 56
   "emeraldic_crystal"      , # 56
   "ma.inferium"            , # 56
+  "osgloglas"              , # 56
   "enderium"               , # 56
   "bound_metal"            , # 57
   "vibrant_alloy"          , # 57
@@ -218,7 +218,6 @@ val defaultWeaponMats as IData = [
   "malachite_gem"          , # 90
   "plague_metal"           , # 92
   "lead"                   , # 93
-  "osgloglas"              , # 93
   "peridot"                , # 96
   "soularium"              , # 96
   "silver"                 , # 97
@@ -257,6 +256,7 @@ val defaultWeaponMats as IData = [
   "pigiron"                , # 128
   "emerald_plustic"        , # 129
   "endorium"               , # 131
+  "osgloglas"              , # 131
   "steeleaf"               , # 132
   "uranium"                , # 133
   "energetic_alloy"        , # 135
