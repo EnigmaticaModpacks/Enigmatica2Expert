@@ -152,7 +152,7 @@ function mash(input as IIngredient, output as IItemStack, exceptions as string) 
 # [📦+] → 📦
 function alloy(input as IIngredient[], output as IItemStack, exceptions as string) {
   
-  work(["alloyFurnace", "induction", "alloySmelter", "arcFurnance", "AdvRockArc"],
+  work(["alloyFurnace", "induction", "alloySmelter", "arcFurnance", "AdvRockArc", "kiln"],
     exceptions, input, null, [output], null, null, null);
 }
 
