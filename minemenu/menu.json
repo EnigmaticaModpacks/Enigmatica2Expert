@@ -1,14 +1,14 @@
 {
   "main": {
-    "2": {
-      "title": "Explosive",
+    "0": {
+      "title": "Put On Wall",
       "icon": {
-        "name": "enderio:item_dark_steel_upgrade",
-        "damage": 1
+        "name": "minecraft:item_frame",
+        "damage": 0
       },
       "action": {
         "key": {
-          "key": "enderio.keybind.tnt",
+          "key": "key.placeItem",
           "toggle": false
         }
       }
