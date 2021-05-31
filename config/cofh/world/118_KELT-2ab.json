@@ -3,54 +3,53 @@
   "populate": {
 
 		"kelt_2ab_kelp": {
+			"enabled": false,
 			"distribution": "underwater",
 			"generator": {
-				"type": "sequential",
-				"generators": [
-					{
-						"type": "spout",
-						"block": "biomesoplenty:seaweed",
-						"radius": 0,
-						"height": {"min": 1, "max": 20},
-						"material": "water"
-					},
-					{
-						"type": "spout",
-						"block": "dirt",
-						"radius": 0,
-						"height": 2,
-						"material": "biomesoplenty:seaweed"
-					}
-				]
+        "type": "spout",
+        "block": "biomesoplenty:seaweed",
+        "radius": 0,
+        "height": {"min": 1, "max": 20},
+        "material": "water"
 			},
 			"cluster-count": 60,
 			"dimension": {"restriction": "whitelist", "value": [118]}
 		},
 
 		"kelt_2ab_glow_coral": {
+			"enabled": false,
 			"distribution": "underwater",
 			"generator": {
-				"type": "sequential",
-				"generators": [
-					{
-						"type": "spout",
-						"block": {"name": "biomesoplenty:coral","metadata": 3},
-						"radius": 0,
-						"height": 2,
-						"material": "water"
-					},
-					{
-						"type": "spout",
-						"block": "gravel",
-						"radius": 0,
-						"height": 1,
-						"material": {"name": "biomesoplenty:coral","metadata": 3}
-					}
-				]
+        "type": "spout",
+        "block": {"name": "biomesoplenty:coral","metadata": 3},
+        "radius": 0,
+        "height": 2,
+        "material": "water"
 			},
 			"chunk-chance": 6,
 			"cluster-count": 20,
 			"dimension": {"restriction": "whitelist", "value": [118]}
+		},
+
+		"kelt_2ab_clathrate_glowstone": {
+			"distribution": "uniform",
+			"generator": {
+				"block": { 					 					
+					"name": "thermalfoundation:ore_fluid", 					 					
+					"metadata": 3
+				},
+				"cluster-size": 2,
+				"material": ["stone", "gravel", "dirt"]
+			},
+			"cluster-count": 40,
+			"min-height": 5,
+			"max-height": 25,
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+          118
+				]
+			}
 		}
 
   }
