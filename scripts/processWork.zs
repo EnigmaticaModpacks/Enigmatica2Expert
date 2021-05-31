@@ -22,6 +22,7 @@ import scripts.processUtils.warning;
 import scripts.processUtils.info;
 import scripts.processUtils.avdRockXmlRecipe;
 import scripts.processUtils.xmlRecipe;
+import scripts.processUtils.enderioXmlRecipe;
 
 
 #priority 51
@@ -820,22 +821,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
 
     if (machineName == "vat") {
       if (inputItems.length <= 2) {
-        var s = '<recipe name="' ~ outputLiquid0.displayName ~ '" required="true"><fermenting energy="10000">\n';
-        val in_f = (inputLiquid0.amount as float) / 1000;
-        val out_f = (outputLiquid0.amount as float) / 1000;
-        for inIngr in inputItems {
-          s = s ~ '  <inputgroup>\n';
-          for ii in inIngr.itemArray {
-            s = s ~ '    <input name="' ~ ii.commandString.replaceAll("[<>]", "") ~ '" multiplier="' ~ in_f / inputItems.length ~ '" />\n';
-          }
-          s = s ~ '  </inputgroup>\n';
-        }
-        s = s ~ '    <inputfluid name="' ~ inputLiquid0.name ~ '" multiplier="' ~ in_f / out_f ~ '" />\n';
-        s = s ~ '    <outputfluid name="' ~ outputLiquid0.name ~ '" /></fermenting></recipe>';
-
-        xmlRecipe("./config/enderio/recipes/user/user_recipes.xml", s);
-        # mods.enderio.Vat.addRecipe(ILiquidStack output, ILiquidStack input, IIngredient[] slot1Solids, float[] slot1Mults, IIngredient[] slot2Solids, float[] slot2Mults, @Optional int energyCost);
-        # mods.enderio.Vat.addRecipe(outputLiquid0, inputLiquid0, [arrN_item(inputItems, 0)], [1.0f], [arrN_item(inputItems, 1)], [1.0f], 5000);
+        enderioXmlRecipe('fermenting', inputItems, inputLiquids, outputItems, outputLiquids, null);
         return machineName;
       } else {
         return info(machineNameAnyCase, inputLiquid0.name, "received work, but amount of inputs > 2");

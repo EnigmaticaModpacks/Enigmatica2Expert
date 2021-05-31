@@ -123,9 +123,31 @@ function xmlRecipe(filename as string, recipeContent as string) {
   utils.log('Put this recipe in file [' ~ filename ~ '] manually.\n' ~ recipeContent);
 }
 
+function enderioXmlRecipe(processName as string,
+  inputItems as IIngredient[], inputLiquids as ILiquidStack[],
+  outputItems as IItemStack[], outputLiquids as ILiquidStack[],
+  chances as float[]) as void {
+  if(!utils.DEBUG) return;
+  var s = '<recipe name="' ~ outputLiquids[0].displayName ~ '" required="true"><'~processName~' energy="10000">\n';
+  val in_f = (inputLiquids[0].amount as float) / 1000;
+  val out_f = (outputLiquids[0].amount as float) / 1000;
+  for inIngr in inputItems {
+    s = s ~ '  <inputgroup>\n';
+    for ii in inIngr.itemArray {
+      s = s ~ '    <input name="' ~ ii.commandString.replaceAll("[<>]", "") ~ '" multiplier="' ~ in_f / inputItems.length ~ '" />\n';
+    }
+    s = s ~ '  </inputgroup>\n';
+  }
+  s = s ~ '    <inputfluid name="' ~ inputLiquids[0].name ~ '" multiplier="' ~ in_f / out_f ~ '" />\n';
+  s = s ~ '    <outputfluid name="' ~ outputLiquids[0].name ~ '" /></'~processName~'></recipe>';
+
+  xmlRecipe("./config/enderio/recipes/user/user_recipes.xml", s);
+}
+
 function avdRockXmlRecipe(filename as string, 
   inputItems as IIngredient[], inputLiquids as ILiquidStack[],
-  outputItems as IItemStack[], outputLiquids as ILiquidStack[]) {
+  outputItems as IItemStack[], outputLiquids as ILiquidStack[]) as void {
+  if(!utils.DEBUG) return;
   
   var s = '';
 

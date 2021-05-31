@@ -152,10 +152,6 @@ import crafttweaker.item.IIngredient;
 	[[<tconstruct:clear_glass>, <ore:dustEnder>, <tconstruct:clear_glass>],
 	[<ore:dustEnder>, <minecraft:experience_bottle>, <ore:dustEnder>], 
 	[<tconstruct:clear_glass>, <ore:dustEnder>, <tconstruct:clear_glass>]]);
-	
-# Resonating Redstone Crystal
-	recipes.removeShapeless(<extrautils2:ingredients> * 2, 
-	[<minecraft:redstone_ore>, <thermalfoundation:material:1027>]);
 
 # Reinforced Drum
 recipes.removeByRecipeName("extrautils2:drum_4096");
