@@ -123,6 +123,7 @@ tooltips.lang.vanilla_tools=§4Ванильные инструменты не р
 tooltips.lang.ae_lag=§cНе помещайте это в систему хранения AE, иначе это вызовет лаги.
 tooltips.lang.dont_put_into_ae=§cНе помещайте это в систему хранения AE, иначе вы не сможете вынуть его и начнутся лаги.
 tooltips.lang.tcon.diamond=§bИспользовать как модификатор §lАлмаз§r
+tooltips.lang.botania.decay1hour=§eУвядает за 1 час
 
 requious.jei.recipe.infernal_furnace=Инфернальная Печь
 requious.jei.recipe.liquid_interaction=Прикасание Жидкостей
