@@ -5,22 +5,22 @@ import crafttweaker.item.IItemStack as IItemStack;
 
 # *======= Variables =======*
 
-	val cyclops_cave = loottweaker.LootTweaker.getTable("iceandfire:cyclops_cave");
-	val cyclops_cave_pool = cyclops_cave.getPool("cyclops_cave");
+val cyclops_cave = loottweaker.LootTweaker.getTable("iceandfire:cyclops_cave");
+val cyclops_cave_pool = cyclops_cave.getPool("cyclops_cave");
 
-	val fire_dragon_female_cave = loottweaker.LootTweaker.getTable("iceandfire:fire_dragon_female_cave");
-	val fire_dragon_female_cave_pool = fire_dragon_female_cave.getPool("fire_dragon_cave");
-    
-    val fire_dragon_male_cave = loottweaker.LootTweaker.getTable("iceandfire:fire_dragon_male_cave");
-	val fire_dragon_male_cave_pool = fire_dragon_male_cave.getPool("fire_dragon_cave");
+val fire_dragon_female_cave = loottweaker.LootTweaker.getTable("iceandfire:fire_dragon_female_cave");
+val fire_dragon_female_cave_pool = fire_dragon_female_cave.getPool("fire_dragon_cave");
 	
-	val ice_dragon_female_cave = loottweaker.LootTweaker.getTable("iceandfire:ice_dragon_female_cave");
-	val ice_dragon_female_cave_pool = ice_dragon_female_cave.getPool("ice_dragon_cave");
-    
-    val ice_dragon_male_cave = loottweaker.LootTweaker.getTable("iceandfire:ice_dragon_male_cave");
-	val ice_dragon_male_cave_pool = ice_dragon_male_cave.getPool("ice_dragon_cave");
+val fire_dragon_male_cave = loottweaker.LootTweaker.getTable("iceandfire:fire_dragon_male_cave");
+val fire_dragon_male_cave_pool = fire_dragon_male_cave.getPool("fire_dragon_cave");
+
+val ice_dragon_female_cave = loottweaker.LootTweaker.getTable("iceandfire:ice_dragon_female_cave");
+val ice_dragon_female_cave_pool = ice_dragon_female_cave.getPool("ice_dragon_cave");
 	
-	val caveloot = [
+val ice_dragon_male_cave = loottweaker.LootTweaker.getTable("iceandfire:ice_dragon_male_cave");
+val ice_dragon_male_cave_pool = ice_dragon_male_cave.getPool("ice_dragon_cave");
+
+val caveloot = [
 	<environmentaltech:litherite_crystal>,
 	<bigreactors:ingotblutonium>,
 	<ic2:nuclear:7>,
@@ -56,15 +56,14 @@ import crafttweaker.item.IItemStack as IItemStack;
 	<botania:brewvial>.withTag({brewKey: "regen"}),
 	<botania:brewvial>.withTag({brewKey: "speed"}),
 	<botania:brewvial>.withTag({brewKey: "clear"}),
-	<botania:brewflask>.withTag({brewKey: "strength"})
-	] as IItemStack[];
-	
-	for item in caveloot {
-	
+	<botania:brewflask>.withTag({brewKey: "strength"}),
+	<biomesoplenty:gem:6>,
+] as IItemStack[];
+
+for item in caveloot {
 	cyclops_cave_pool.addItemEntry(item, 3);
 	fire_dragon_female_cave_pool.addItemEntry(item, 3);
-    fire_dragon_male_cave_pool.addItemEntry(item, 3);
+	fire_dragon_male_cave_pool.addItemEntry(item, 3);
 	ice_dragon_female_cave_pool.addItemEntry(item, 3);
-    ice_dragon_male_cave_pool.addItemEntry(item, 3);
-	
-	}
+	ice_dragon_male_cave_pool.addItemEntry(item, 3);
+}

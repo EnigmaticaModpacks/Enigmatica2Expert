@@ -28,6 +28,7 @@ var itemsToRemove as string[] = [
 	"iceandfire:armor_silver_metal_chestplate",
 	"iceandfire:armor_silver_metal_leggings",
 	"iceandfire:armor_silver_metal_boots",
+	"iceandfire:sapphire_gem",
 	
 	"immersiveengineering:pickaxe_steel",
 	"immersiveengineering:shovel_steel",
@@ -73,3 +74,6 @@ for item in itemsToRemove {
 val enderman = LootTweaker.getTable("minecraft:entities/enderman"); //Enderman (make enderpearls drop 100% of the time)
 enderman.getPool("main").removeEntry("minecraft:ender_pearl"); //Remove main enderpearl entry
 enderman.getPool("main").addItemEntryHelper(<minecraft:ender_pearl>, 1, 0, [Functions.lootingEnchantBonus(0, 1, 0)], [Conditions.killedByPlayer()], "minecraft:ender_pearl");
+
+
+LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine").addItemEntry(<astralsorcery:itemgrapplewand>, 3);
