@@ -124,6 +124,8 @@ tooltips.lang.ae_lag=§cDo not put this into AE storage system or it will cause 
 tooltips.lang.dont_put_into_ae=§cDo not put this into AE storage system or you will not be able to take it out and lags will occur.
 tooltips.lang.tcon.diamond=§bUse as §lDiamond§r modifier
 tooltips.lang.botania.decay1hour=§eDecay in 1 hour
+tooltips.lang.tcon.slot_each=§eEach level requires a slot
+tooltips.lang.tcon.slot_first=§eOnly uses one slot
 
 requious.jei.recipe.infernal_furnace=Infernal Furnace
 requious.jei.recipe.liquid_interaction=Liquid Interaction

@@ -85,7 +85,7 @@
       },
       {
         "type": "mod_slots",
-        "value": "all"
+        "value": "first"
       }
     ]
   },
@@ -111,7 +111,7 @@
       },
       {
         "type": "mod_slots",
-        "value": "all"
+        "value": "first"
       }
     ]
   },
@@ -137,7 +137,7 @@
       },
       {
         "type": "mod_slots",
-        "value": "all"
+        "value": "first"
       }
     ]
   }

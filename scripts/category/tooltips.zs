@@ -331,6 +331,10 @@ desc.tooltip(<thaumcraft:table_wood>);
 desc.tooltip(<thaumcraft:research_table>);
 desc.tooltip(<actuallyadditions:item_crystal_empowered:2>, 'tcon.diamond');
 desc.tooltip(<botania:specialflower>.withTag({type: "endoflame"}), 'botania.decay1hour');
+desc.tooltip(<conarm:resist_mat>, 'tcon.slot_each');
+desc.tooltip(<conarm:resist_mat_fire>, 'tcon.slot_first');
+desc.tooltip(<conarm:resist_mat_proj>, 'tcon.slot_first');
+desc.tooltip(<conarm:resist_mat_blast>, 'tcon.slot_first');
 
 # Modular Machine descriptions
 for machineName, lang in {
