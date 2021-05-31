@@ -15,6 +15,25 @@
     ]
   },
   {
+    "modifier": "speedy_armor",
+    "mutations": [
+      {
+        "type": "colour",
+        "value": "910000"
+      },
+      {
+        "type": "material",
+        "value": [
+          {
+            "type": "item",
+            "item": "scalinghealth:heartdust",
+            "meta": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
     "modifier": "reinforced_armor",
     "mutations": [
       {

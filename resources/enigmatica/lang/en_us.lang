@@ -123,6 +123,7 @@ tooltips.lang.vanilla_tools=§4Vanilla tools don't work. Use Tinkers' Construct 
 tooltips.lang.ae_lag=§cDo not put this into AE storage system or it will cause lag.
 tooltips.lang.dont_put_into_ae=§cDo not put this into AE storage system or you will not be able to take it out and lags will occur.
 tooltips.lang.tcon.diamond=§bUse as §lDiamond§r modifier
+tooltips.lang.tcon.speedy=§bUse as §4Speedy§b Armor modifier
 tooltips.lang.botania.decay1hour=§eDecay in 1 hour
 tooltips.lang.tcon.slot_each=§eEach level requires a slot
 tooltips.lang.tcon.slot_first=§eOnly uses one slot

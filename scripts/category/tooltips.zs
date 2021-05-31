@@ -330,6 +330,7 @@ desc.tooltip(<minecraft:torch>);
 desc.tooltip(<thaumcraft:table_wood>);
 desc.tooltip(<thaumcraft:research_table>);
 desc.tooltip(<actuallyadditions:item_crystal_empowered:2>, 'tcon.diamond');
+desc.tooltip(<scalinghealth:heartdust>, 'tcon.speedy');
 desc.tooltip(<botania:specialflower>.withTag({type: "endoflame"}), 'botania.decay1hour');
 desc.tooltip(<conarm:resist_mat>, 'tcon.slot_each');
 desc.tooltip(<conarm:resist_mat_fire>, 'tcon.slot_first');
