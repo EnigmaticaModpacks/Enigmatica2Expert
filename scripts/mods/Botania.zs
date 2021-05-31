@@ -263,27 +263,6 @@ scripts.wrap.botania.PureDaisy.addRecipe(<ore:blockGlassBlue>,   <quark:crystal:
 scripts.wrap.botania.PureDaisy.addRecipe(<ore:blockGlassPurple>, <quark:crystal:7>);
 scripts.wrap.botania.PureDaisy.addRecipe(<ore:blockGlassBlack>,  <quark:crystal:8>);
 
-/* Patchouli_js()
-var entryId = 'Liquids/Petro Petunia';
-
-Patchouli_js(entryId, {
-  title: "Petro Petunia Fuels",
-  item: `botania:specialflower{type:"petro_petunia"}`,
-  type: "spotlight",
-  _text: `$(l)Petro Petunia/$ is generating flower that burns liquids around it to provide $(#1df)mana/$.`
-})
-
-Patchouli_js(entryId, paged({
-		title: "Petro Petunia Fuels",
-		type: "item_list",
-	},
-  [...Object.entries( config("acronym/floralchemy.cfg").fuelvalues )]
-  .sort((a,b)=>b[1].burnTime * b[1].powerPreTick - a[1].burnTime * a[1].powerPreTick)
-  .map(o=>( [
-    wrap_bucket(o[0]), `${o[1].burnTime} ticks, ${o[1].powerPreTick} mana/tick`
-  ] ))
-))*/
-
 # --------------------------
 # Mana diamond from Rat Diamond recipe
 mods.botania.ManaInfusion.addInfusion(<botania:manaresource:2>, <rats:rat_diamond>, 10000);
