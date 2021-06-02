@@ -1,19 +1,19 @@
 {
-  "_index": "261:10",
+  "_index": "700:10",
   "_pos": {
-    "_index": "42:10",
+    "_index": "30:10",
     "_data": {
       "sizeX:3": 24,
-      "x:3": 188,
-      "y:3": -12,
-      "id:3": 261,
+      "x:3": 100,
+      "y:3": -28,
+      "id:3": 700,
       "sizeY:3": 24
     }
   },
   "_data": {
-    "questID:3": 261,
+    "questID:3": 700,
     "preRequisites:11": [
-      258
+      16
     ],
     "properties:10": {
       "betterquesting:10": {
@@ -25,9 +25,9 @@
         "visibility:8": "ALWAYS",
         "simultaneous:1": 0,
         "icon:10": {
-          "id:8": "thermalfoundation:upgrade",
+          "id:8": "industrialforegoing:black_hole_controller_reworked",
           "Count:3": 1,
-          "Damage:2": 3,
+          "Damage:2": 0,
           "OreDict:8": ""
         },
         "globalshare:1": 0,
@@ -37,8 +37,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "bq.quest261.name",
-        "desc:8": "bq.quest261.desc"
+        "name:8": "bq.quest700.name",
+        "desc:8": "bq.quest700.desc"
       }
     },
     "tasks:9": {
@@ -51,9 +51,21 @@
         "consume:1": 0,
         "requiredItems:9": {
           "0:10": {
-            "id:8": "thermalfoundation:upgrade",
+            "id:8": "industrialforegoing:black_hole_controller_reworked",
             "Count:3": 1,
-            "Damage:2": 3,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "1:10": {
+            "id:8": "industrialforegoing:black_hole_unit",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "2:10": {
+            "id:8": "industrialforegoing:black_hole_tank",
+            "Count:3": 1,
+            "Damage:2": 0,
             "OreDict:8": ""
           }
         },
