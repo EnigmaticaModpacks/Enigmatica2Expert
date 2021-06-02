@@ -7,6 +7,7 @@ tooltips.lang.tag.user=§5#User
 tooltips.lang.tag.hopper=§2#Hopper
 tooltips.lang.tag.miner=§1#Miner
 tooltips.lang.tag.voidminer=§3#VoidMiner
+tooltips.lang.tag.flight=§b#Flight
 
 tooltips.lang.removed.dupe_ore=Removed, because it could be used to dupe multiple ores.
 tooltips.lang.crescent_hammer=Shift right click with a Crescent Hammer to pick up.\nThe Cache retains it's upgrades and inventory.\nDo not break with Pickaxe!
