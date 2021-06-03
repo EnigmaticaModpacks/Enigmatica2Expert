@@ -8534,6 +8534,104 @@
       "installedTargets": null
     },
     {
+      "addonID": 300750,
+      "gameInstanceID": "8877db37-bb77-41fd-9844-622598609ec7",
+      "installedFile": {
+        "id": 2695517,
+        "displayName": "RedstoneRepository-1.12.2-1.4.0-dev-universal.jar",
+        "fileName": "RedstoneRepository-1.12.2-1.4.0-dev-universal.jar",
+        "fileDate": "2019-04-04T21:05:22.117Z",
+        "fileLength": 699911,
+        "releaseType": 2,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2695/517/RedstoneRepository-1.12.2-1.4.0-dev-universal.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 69163,
+            "type": 3,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 227083,
+            "type": 3,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 70631,
+            "type": 3,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 3717272386,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "thundr",
+            "fingerprint": 1623614922,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "CoFH_at.cfg",
+            "fingerprint": 2527556509,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "mcmod.info",
+            "fingerprint": 131415515,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 1418306710,
+            "type": 0,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 1994960828,
+        "gameVersion": [
+          "1.12",
+          "1.12.1",
+          "1.12.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2017-06-07T05:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "RedstoneRepository-1.12.2-1.4.0-dev-universal.jar"
+      },
+      "dateInstalled": "2021-06-03T12:55:05.879678Z",
+      "dateUpdated": "2021-06-03T12:55:05.8906495Z",
+      "dateLastUpdateAttempted": "2021-06-03T12:55:05.8906495Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": null,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
+    },
+    {
       "addonID": 286230,
       "gameInstanceID": "8877db37-bb77-41fd-9844-622598609ec7",
       "installedFile": {
@@ -12137,6 +12235,145 @@
       "preferenceReleaseType": null,
       "manifestName": null,
       "installedTargets": null
+    },
+    {
+      "addonID": 460609,
+      "gameInstanceID": "8877db37-bb77-41fd-9844-622598609ec7",
+      "installedFile": {
+        "id": 3321381,
+        "displayName": "loliasm-2.5.jar",
+        "fileName": "loliasm-2.5.jar",
+        "fileDate": "2021-05-24T00:23:53.773Z",
+        "fileLength": 1054718,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3321/381/loliasm-2.5.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 419286,
+            "type": 3,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 405821820,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "zone",
+            "fingerprint": 2222606101,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "mcmod.info",
+            "fingerprint": 1351264629,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "mixins.bakedquadsquasher.json",
+            "fingerprint": 344022827,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "mixins.memory.json",
+            "fingerprint": 531499458,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "mixins.misc.json",
+            "fingerprint": 1444381830,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "mixins.modfixes.json",
+            "fingerprint": 310959023,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "mixins.recipes.json",
+            "fingerprint": 2696105982,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "mixins.registries.json",
+            "fingerprint": 1095174907,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "mixins.rendering.json",
+            "fingerprint": 1390620490,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "mixins.vanities.json",
+            "fingerprint": 3515345469,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "mixins.loliasm.refmap.json",
+            "fingerprint": 1493072104,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "me",
+            "fingerprint": 1293581537,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "org",
+            "fingerprint": 3092212652,
+            "type": 0,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 1776337995,
+        "gameVersion": [
+          "Forge",
+          "1.12.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "loliasm-2.5.jar"
+      },
+      "dateInstalled": "2021-06-03T12:55:18.5728373Z",
+      "dateUpdated": "2021-06-03T12:55:18.5798443Z",
+      "dateLastUpdateAttempted": "2021-06-03T12:55:18.5798443Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": null,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
     },
     {
       "addonID": 252848,
