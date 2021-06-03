@@ -28,7 +28,9 @@ zenClass Descriptor {
 	function tooltip(item as IItemStack, lang as string) as void {
 		val loc = local(lang);
 		if(loc.startsWith(langPrefix)) return;
-		item.addTooltip(loc);
+		for line in loc.split('\\\\n') {
+			item.addTooltip(line);
+		}
 	}
 
 	/*
