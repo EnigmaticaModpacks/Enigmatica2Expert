@@ -146,7 +146,7 @@ static armorStaged as IData[string] =
   ]},
   armor_void_robe:{
     prev: "armor_void", 
-    tier: 5,
+    tier: 6,
     material: "thaumcraft:void_seed",
     recycle:  "thaumcraft:void_seed",
     recipe: {manual: true},
@@ -154,9 +154,23 @@ static armorStaged as IData[string] =
       {id:"thaumcraft:void_robe_helm"},
       {id:"thaumcraft:void_robe_chest"},
       {id:"thaumcraft:void_robe_legs"},
-      {id:"thaumcraft:void_boots"},
+      {id:"thaumicaugmentation:void_boots"},
       {id:"thaumcraft:crimson_blade"},
       {id:"spartanshields:shield_tc_void"}
+  ]},
+  armor_space_suit:{
+    prev: "armor_leather", 
+    tier: 2,
+    material: "libvulpes:productsheet:6",
+    recycle:  "libvulpes:productsheet:6",
+    recipe: {manual: true},
+    list: [
+      {id:"advancedrocketry:spacehelmet"},
+      {id:"advancedrocketry:spacechestplate"},
+      {id:"advancedrocketry:spaceleggings"},
+      {id:"advancedrocketry:spaceboots"},
+      {id:"advancedrocketry:basiclasergun"},
+      {id:"advancedrocketry:misc:1"}
   ]},
   armor_nano:{
     prev: "armor_leather", 
