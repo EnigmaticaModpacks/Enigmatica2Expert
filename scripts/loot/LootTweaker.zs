@@ -75,7 +75,7 @@ for item in itemsToRemove {
 
 val enderman = LootTweaker.getTable("minecraft:entities/enderman"); //Enderman (make enderpearls drop 100% of the time)
 enderman.getPool("main").removeEntry("minecraft:ender_pearl"); //Remove main enderpearl entry
-enderman.getPool("main").addItemEntryHelper(<minecraft:ender_pearl>, 1, 0, [Functions.lootingEnchantBonus(0, 1, 0)], [Conditions.killedByPlayer()], "minecraft:ender_pearl");
+enderman.getPool("main").addItemEntry(<minecraft:ender_pearl>, 1, 0, [Functions.lootingEnchantBonus(0, 1, 0)], [Conditions.killedByPlayer()], "minecraft:ender_pearl");
 
 
 LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine").addItemEntry(<astralsorcery:itemgrapplewand>, 3);

@@ -5,6 +5,7 @@ import crafttweaker.oredict.IOreDictEntry;
 import loottweaker.vanilla.loot.LootTable;
 import loottweaker.vanilla.loot.LootPool;
 import loottweaker.vanilla.loot.Functions;
+import loottweaker.vanilla.loot.Conditions;
 import crafttweaker.data.IData;
 
 
@@ -21,19 +22,16 @@ function tweak(table as string, poolStr as string, entryToRemove as string, item
   # Add new drops
   if(!isNull(itemsToAdd)) {
     for itemToAdd in itemsToAdd {
-      if (!isNull(utils.smelt(itemToAdd))) {
+      val smelted = utils.smelt(itemToAdd);
+      if (!isNull(smelted)) {
         # Add with smelting function (if smelted item exist)
-        pool.addItemEntryHelper(itemToAdd, 1, 0, [
+        pool.addItemEntry(smelted, 1, 0, [
           Functions.setCount(minMax[0], minMax[1]), 
-          Functions.lootingEnchantBonus(0, 1, 0), 
-          Functions.parse({"function": "minecraft:furnace_smelt","conditions": [
-            {"properties": {"minecraft:on_fire": true}, 
-            "entity": "this", "condition": "minecraft:entity_properties"}
-            ]})
-        ], []);
+          Functions.lootingEnchantBonus(0, 1, 0)
+        ], [{condition: "entity_properties", entity: "this", properties: {"on_fire": true}}]);
       } else {
         # Add non-smelt function
-        pool.addItemEntryHelper(itemToAdd, 1, 0, [
+        pool.addItemEntry(itemToAdd, 1, 0, [
           Functions.setCount(minMax[0], minMax[1]), 
           Functions.lootingEnchantBonus(0, 1, 0)
         ], []);
