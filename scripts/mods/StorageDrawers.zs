@@ -1,6 +1,7 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.data.IData;
+import crafttweaker.item.ITooltipFunction;
 
 #modloaded storagedrawers
 
@@ -99,3 +100,51 @@ function clearDrawer(inputs as IItemStack[]) as void  {
 }
 // clearDrawer(<ore:drawerBasic>.items); # Somehow it still give oredict
 clearDrawer([<storagedrawers:compdrawers>]);
+
+static empty as string = '§8Empty§r';
+
+# Drawer sealed content
+function sealed(name as string) as string {
+	if(isNull(name)) return empty;
+	return "§2Sealed: §a" ~ name ~ '§r';
+}
+
+function firstItemInList(data as IData) as string {
+	if(isNull(data) || isNull(data.asList())) return empty;
+
+	for itemStorage in data.asList() {
+		val itemData = itemStorage.Item;
+		if(isNull(itemData) || isNull(itemData.id)) continue;
+		val id = itemData.id.asString();
+		val meta = isNull(itemData.Damage) ? 0 : itemData.Damage.asInt();
+		val item = itemUtils.getItem(id, meta);
+		if(!isNull(item)) return item.displayName;
+	}
+	return empty;
+}
+
+// Basic Drawers
+val basicDrawerTooltip as ITooltipFunction = function(item) {
+	return sealed(firstItemInList(D(item.tag).get("tile.Drawers")));
+};
+<storagedrawers:basicdrawers:*>.addAdvancedTooltip(basicDrawerTooltip);
+<storagedrawers:customdrawers:*>.addAdvancedTooltip(basicDrawerTooltip);
+
+
+// Compact Drawers
+val compactDrawerTooltip as ITooltipFunction = function(item) {
+	return sealed(firstItemInList(D(item.tag).get("tile.Drawers.Items")));
+};
+<storagedrawers:compdrawers>.addAdvancedTooltip(compactDrawerTooltip);
+<framedcompactdrawers:framed_compact_drawer>.addAdvancedTooltip(compactDrawerTooltip);
+
+// Fluid Drawers
+val fluidDrawerTooltip as ITooltipFunction = function(item) {
+	val d = D(item.tag).getString("Tile.Drawer.Fluid.FluidName");
+	if(isNull(d)) return empty;
+	val fluid = game.getLiquid(d);
+	if(isNull(fluid)) return empty;
+	return sealed(fluid.displayName);
+};
+<fluiddrawers:tank_custom>.addAdvancedTooltip(fluidDrawerTooltip);
+<fluiddrawers:tank>.addAdvancedTooltip(fluidDrawerTooltip);
