@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded mekanism
-// Uses of this mod: 28
+// Uses of this mod: 26
 
 
 //####################################################
@@ -89,10 +89,10 @@ zenClass Class_enrichment { zenConstructor() {}
 static enrichment as Class_enrichment = Class_enrichment();
 
 //####################################################
-// Uses of this class: 8
+// Uses of this class: 6
 zenClass Class_infuser { zenConstructor() {}
 
-	// Uses of this method: 8
+	// Uses of this method: 6
 	function addRecipe(infusionType as string, infusionConsumed as int, inputStack as IIngredient, outputStack as IItemStack) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.mekanism.infuser.addRecipe'~
 			serialize.args([serialize._string(infusionType), infusionConsumed, serialize.IIngredient(inputStack), serialize.IItemStack(outputStack)]));

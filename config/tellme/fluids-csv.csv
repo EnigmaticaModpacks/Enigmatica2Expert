@@ -97,6 +97,7 @@
 "cryotheum_nak_hot",4000,700,10000,7,"COMMON","false","nuclearcraft:fluid_cryotheum_nak_hot"
 "crystal",1200,300,1200,6,"COMMON","false","cyclicmagic:crystal"
 "crystal_matrix",2000,2400,10000,10,"UNCOMMON","false","-"
+"crystal_water",1000,300,1000,0,"COMMON","false","thaumadditions:crystal_water"
 "crystalline_alloy",9000,4500,3000,6,"COMMON","false","enderio:block_fluid_crystalline_alloy"
 "crystalline_pink_slime",9000,4500,3000,6,"COMMON","false","enderio:block_fluid_crystalline_pink_slime"
 "crystaloil",1000,3400,1000,0,"RARE","false","actuallyadditions:block_crystal_oil"

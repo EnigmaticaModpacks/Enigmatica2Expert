@@ -19,10 +19,10 @@ import thaumcraft.aspect.CTAspectStack;
 
 
 //####################################################
-// Uses of this class: 20
+// Uses of this class: 21
 zenClass Class_Carpenter { zenConstructor() {}
 
-	// Uses of this method: 20
+	// Uses of this method: 21
 	function addRecipe(output as IItemStack, ingredients as IIngredient[][], packagingTime as int) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.forestry.Carpenter.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient____(ingredients), packagingTime]));
@@ -93,10 +93,10 @@ zenClass Class_Squeezer { zenConstructor() {}
 static Squeezer as Class_Squeezer = Class_Squeezer();
 
 //####################################################
-// Uses of this class: 9
+// Uses of this class: 8
 zenClass Class_ThermionicFabricator { zenConstructor() {}
 
-	// Uses of this method: 9
+	// Uses of this method: 8
 	function addCast(output as IItemStack, ingredients as IIngredient[][], liquidStack as ILiquidStack) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.forestry.ThermionicFabricator.addCast'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient____(ingredients), serialize.ILiquidStack(liquidStack)]));

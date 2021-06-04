@@ -67,7 +67,7 @@ desc.jei(Bucket("xpjuice"), "obtained.fluid_transposer"); # XP Bucket
 desc.jei(<bibliocraft:biblioclipboard>, "removed.instability"); # Bibliocraft Clipboard
 desc.jei(<astralsorcery:blockcustomore>, "space_gen_high"); # Rock Crystals
 desc.jei(<bigreactors:ingotludicrite>, "craftable.ludictite"); # Uncraftable ingots
-desc.jei(<thermalfoundation:material:136>, "obtained.infuser_fabricator_planets"); # Mana Infused Ingot
+desc.jei(<thermalfoundation:material:136>, "obtained.mithril"); # Mana Infused Ingot
 desc.jei(<thermalexpansion:frame:129>, "requires.rf", "10.000.000"); # Thermal Expansion Casings
 desc.jei(<actuallyadditions:block_crystal_empowered>,   "requires.rf", "1.000.000");  # Restonia
 desc.jei(<actuallyadditions:block_crystal_empowered:1>, "requires.rf", "1.000.000");  # Palis
@@ -329,6 +329,7 @@ desc.tooltip(Bucket("corium"), "fluid.corium");
 desc.tooltip(<minecraft:torch>);
 desc.tooltip(<thaumcraft:table_wood>);
 desc.tooltip(<thaumcraft:research_table>);
+desc.tooltip(<openblocks:tank>);
 desc.tooltip(<actuallyadditions:item_crystal_empowered:2>, 'tcon.diamond');
 desc.tooltip(<scalinghealth:heartdust>, 'tcon.speedy');
 desc.tooltip(<botania:specialflower>.withTag({type: "endoflame"}), 'botania.decay1hour');

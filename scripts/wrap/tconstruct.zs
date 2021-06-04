@@ -15,14 +15,14 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded tconstruct
-// Uses of this mod: 77
+// Uses of this mod: 81
 
 
 //####################################################
-// Uses of this class: 10
+// Uses of this class: 13
 zenClass Class_Alloy { zenConstructor() {}
 
-	// Uses of this method: 10
+	// Uses of this method: 13
 	function addRecipe(output as ILiquidStack, inputs as ILiquidStack[]) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.tconstruct.Alloy.addRecipe'~
 			serialize.args([serialize.ILiquidStack(output), serialize.ILiquidStack__(inputs)]));
@@ -33,10 +33,10 @@ zenClass Class_Alloy { zenConstructor() {}
 static Alloy as Class_Alloy = Class_Alloy();
 
 //####################################################
-// Uses of this class: 34
+// Uses of this class: 35
 zenClass Class_Casting { zenConstructor() {}
 
-	// Uses of this method: 22
+	// Uses of this method: 23
 	function addTableRecipe(output as IItemStack, cast as IIngredient, fluid as ILiquidStack, amount as int) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.tconstruct.Casting.addTableRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient(cast), serialize.ILiquidStack(fluid), amount]));

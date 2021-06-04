@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded immersiveengineering
-// Uses of this mod: 52
+// Uses of this mod: 50
 
 
 //####################################################
@@ -33,10 +33,10 @@ zenClass Class_AlloySmelter { zenConstructor() {}
 static AlloySmelter as Class_AlloySmelter = Class_AlloySmelter();
 
 //####################################################
-// Uses of this class: 7
+// Uses of this class: 4
 zenClass Class_ArcFurnace { zenConstructor() {}
 
-	// Uses of this method: 7
+	// Uses of this method: 4
 	function addRecipe(output as IItemStack, input as IIngredient, slag as IItemStack, time as int, energyPerTick as int) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.immersiveengineering.ArcFurnace.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient(input), serialize.IItemStack(slag), time, energyPerTick]));
@@ -99,10 +99,10 @@ zenClass Class_Fermenter { zenConstructor() {}
 static Fermenter as Class_Fermenter = Class_Fermenter();
 
 //####################################################
-// Uses of this class: 10
+// Uses of this class: 11
 zenClass Class_MetalPress { zenConstructor() {}
 
-	// Uses of this method: 10
+	// Uses of this method: 11
 	function addRecipe(output as IItemStack, input as IIngredient, mold as IItemStack, energy as int) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.immersiveengineering.MetalPress.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient(input), serialize.IItemStack(mold), energy]));

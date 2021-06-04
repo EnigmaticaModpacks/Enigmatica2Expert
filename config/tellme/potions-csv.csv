@@ -170,6 +170,8 @@
 "Thaumcraft","thaumcraft:unnaturalhunger","potion.unhunger",46,"0x00446633 (   4482611)","true","false"
 "Thaumcraft","thaumcraft:visexhaust","potion.vis_exhaust",44,"0x00664477 (   6702199)","true","false"
 "Thaumcraft","thaumcraft:warpward","potion.warpward",47,"0x00E0F2F7 (  14742263)","false","false"
+"Thaumic Additions: Reconstructed","thaumadditions:sanity_checker","",183,"0xFFFFFFFF (        -1)","false","false"
+"Thaumic Additions: Reconstructed","thaumadditions:sonus","potion.thaumadditions:sonus",184,"0x00FFAA00 (  16755200)","false","false"
 "The Twilight Forest","twilightforest:frosted","twilightforest.effect.frosted",58,"0x0056CBFD (   5688317)","true","false"
 "Tinkers' Construct","tconstruct:carry","potion.carry",59,"0x00FFFFFF (  16777215)","false","false"
 "Tinkers' Construct","tconstruct:dot","potion.dot",64,"0x00FFFFFF (  16777215)","true","false"

@@ -55,7 +55,8 @@ function add_infernal_furnace(input as IIngredient, out as WeightedItemStack) {
 // -----------------------------------------------------------------------
 // -----------------------------------------------------------------------
 x = <assembly:liquid_interaction>;
-x.addJEICatalyst(<minecraft:lava_bucket>);
+x.addJEICatalyst(<littletiles:lttransparentcoloredblock:5>);
+x.addJEICatalyst(<littletiles:ltcoloredblock:12>);
 x.setJEIDurationSlot(1,0,"duration", getVisGauge(0,6));
 addInsOuts(x, [[0,0],[2,0]], [[1,1]]);
 
