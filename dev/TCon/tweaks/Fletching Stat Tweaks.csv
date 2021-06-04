@@ -1,13 +1,14 @@
 _names,Accuracy,Modifier
 _output,n,n
 _importancy,n*40.0,n*10.0
-leaf,,
 amphithere_feather,,
+feather,,
+ghostwood,,
+leaf,,
+raven_feather,,
 slimeleaf_blue,,
 slimeleaf_orange,,
 slimeleaf_purple,,
 steeleaf,,
-raven_feather,,
-feather,,
 stymph_feather,*1.1,*1.5
 titanium,*1.2,*1.2

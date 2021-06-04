@@ -19,6 +19,7 @@ val defaultArmorMats as IData = [
   "void_crystal"           , # 23
   "polyethylene"           , # 24
   "livingwood"             , # 24
+  "ghostwood"              , # 24
   "dreamwood"              , # 25
   "heavy"                  , # 25
   "construction_alloy"     , # 25
@@ -72,8 +73,10 @@ val defaultArmorMats as IData = [
   "pigiron"                , # 37
   "cobalt"                 , # 37
   "electrical_steel"       , # 38
+  "darkwood"               , # 38
   "blueslime"              , # 38
   "redstone_alloy"         , # 38
+  "bloodwood"              , # 38
   "slime"                  , # 39
   "magmaslime"             , # 40
   "boron"                  , # 41
@@ -132,7 +135,7 @@ val defaultArmorMats as IData = [
   "amber"                  , # 56
   "emeraldic_crystal"      , # 56
   "ma.inferium"            , # 56
-  "osgloglas"              , # 56
+  "fusewood"               , # 56
   "enderium"               , # 56
   "bound_metal"            , # 57
   "vibrant_alloy"          , # 57
@@ -157,21 +160,26 @@ val defaultArmorMats as IData = [
   "scaleredseaserpent"     , # 61
   "scalegreenseaserpent"   , # 61
   "sponge"                 , # 62
+  "sunnarium"              , # 62
   "plague_metal"           , # 63
   "titanium"               , # 67
+  "gelid_enderium"         , # 68
   "xu_evil_metal"          , # 68
   "starmetal"              , # 71
   "ma.prudentium"          , # 73
-  "mirion"                 , # 75
+  "osgloglas"              , # 73
   "energetic_alloy"        , # 75
   "boron_nitride"          , # 76
   "end_steel"              , # 77
   "terrasteel"             , # 77
   "fierymetal"             , # 78
+  "dark_matter"            , # 81
   "osmiridium"             , # 84
   "dark_steel"             , # 86
   "amethyst"               , # 87
+  "gelid_gem"              , # 91
   "knightmetal"            , # 96
+  "mirion"                 , # 96
   "wyvern_metal"           , # 97
   "ma.intermedium"         , # 98
   "weezer"                 , # 101
@@ -179,6 +187,7 @@ val defaultArmorMats as IData = [
   "dragonsteel_fire"       , # 114
   "dragonsteel_ice"        , # 114
   "soularium"              , # 123
+  "red_matter"             , # 128
 ] as IData;
 
 
@@ -256,13 +265,13 @@ val defaultWeaponMats as IData = [
   "pigiron"                , # 128
   "emerald_plustic"        , # 129
   "endorium"               , # 131
-  "osgloglas"              , # 131
   "steeleaf"               , # 132
   "uranium"                , # 133
   "energetic_alloy"        , # 135
   "black_quartz"           , # 135
   "manasteel"              , # 139
   "constantan"             , # 139
+  "bloodwood"              , # 141
   "carbon_fiber"           , # 143
   "steel"                  , # 143
   "fierymetal"             , # 143
@@ -290,12 +299,14 @@ val defaultWeaponMats as IData = [
   "osmium"                 , # 176
   "aluminium"              , # 179
   "magnesium"              , # 180
+  "ghostwood"              , # 181
   "diamantine_crystal"     , # 182
   "elementium"             , # 186
   "lumium"                 , # 187
   "enori_crystal"          , # 190
   "energetic_metal"        , # 190
   "bound_metal"            , # 191
+  "osgloglas"              , # 193
   "tough"                  , # 199
   "emeraldic_crystal"      , # 201
   "fluxed_electrum"        , # 203
@@ -306,18 +317,21 @@ val defaultWeaponMats as IData = [
   "refined_obsidian"       , # 221
   "xu_evil_metal"          , # 222
   "pulsating_iron"         , # 225
-  "mirion"                 , # 228
+  "gelid_gem"              , # 230
   "conductive_iron"        , # 237
   "platinum"               , # 242
   "ma.intermedium"         , # 243
   "titanium"               , # 245
+  "fusewood"               , # 245
   "enderium"               , # 246
   "terrasteel"             , # 247
   "boron_nitride"          , # 249
+  "gelid_enderium"         , # 261
   "iridium"                , # 262
   "signalum"               , # 265
   "end_steel"              , # 271
   "restonia_crystal"       , # 292
+  "sunnarium"              , # 306
   "void_metal"             , # 311
   "pink_metal"             , # 322
   "crystal_matrix"         , # 377
@@ -326,8 +340,12 @@ val defaultWeaponMats as IData = [
   "wyvern_metal"           , # 381
   "dragonsteel_fire"       , # 398
   "dragonsteel_ice"        , # 398
+  "dark_matter"            , # 432
+  "darkwood"               , # 447
+  "mirion"                 , # 464
   "litherite"              , # 597
   "erodium"                , # 683
+  "red_matter"             , # 758
   "kyronite"               , # 776
   "pladium"                , # 877
   "ionite"                 , # 992
