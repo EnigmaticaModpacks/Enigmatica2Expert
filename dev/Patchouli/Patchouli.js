@@ -98,7 +98,11 @@ function saveObjAsJson(obj, filename) {
   saveText(JSON.stringify(obj, null, 2), filename)
 }
 function readdir(folderPath) {
-  return fs.readdirSync(folderPath)
+  try {
+    return fs.readdirSync(folderPath)    
+  } catch (error) {
+    return []
+  }
 }
 function relative(filePath) {
   return path.relative(process.cwd(), path.resolve(__dirname, filePath))

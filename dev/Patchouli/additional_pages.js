@@ -90,52 +90,6 @@ Patchouli_js('Items/Magic Bean',
 ))
 
 // ----------------------------------------------------
-// Blood Magic
-// ----------------------------------------------------  
-const meteors = []
-const meteorFolder = './config/bloodmagic/meteors/'
-fs.readdirSync(meteorFolder).forEach(filename => {
-  const content = fs.readFileSync(meteorFolder + filename, 'utf8')
-  const parsed = JSON.parse(content)
-  const shortName = filename.split(/[_.]/)[1]
-  meteors.push({
-    ...parsed, 
-    icon: 
-      parsed.catalystStack.registryName.domain
-      +':'+ parsed.catalystStack.registryName.path
-      +':'+ parsed.catalystStack.meta,
-    name: shortName.charAt(0).toUpperCase() + shortName.slice(1)
-  })
-})
-
-Patchouli_js('Worldgen/Blood Magic Meteor', {
-    item:	'bloodmagic:activation_crystal:1',
-    type: 'item_list',
-    title: 'Mark of the Falling Tower',
-    text0: 'Cost and radius:',
-    ...meteors.reduce((o, m, i) => {
-      o['item'+(i+1)] = m.icon
-      o['text'+(i+1)] = `${m.cost / 1000}K essence, R=${m.radius}`
-      return o
-    }, {})
-})
-
-const csvArr = fs.readFileSync('config/tellme/oredictionary-by-key-individual-csv.csv', 'utf8')
-  .split(/\r?\n/).map(l=>eval(`([${l.replace(/""(?!$)/g, '\\"')}])`))
-
-
-meteors.forEach(meteor => {
-  Patchouli_js('Worldgen/Blood Magic Meteor', {
-    title: `${meteor.name} meteor`,
-    type:	'grid',
-    ...item$i(meteor.components.map(ore=>{
-      const found = csvArr.find(l=>l[0] === ore.oreName)
-      return [found[1] +':'+ found[2] +'#'+Math.round(ore.weight/10)]
-    }))
-  })
-})
-
-// ----------------------------------------------------
 // TCon
 // ----------------------------------------------------
 Patchouli_js('Items/Recycling', [{
