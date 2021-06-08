@@ -566,48 +566,22 @@ function addMiningLensNetherOre(oreDictName as string, weight as int) {
 
 // Values taken from:
 // https://github.com/Ellpeck/ActuallyAdditions/blob/main/src/main/java/de/ellpeck/actuallyadditions/common/items/lens/LensMining.java
-addMiningLensNetherOre("oreNetherPlatinum", 20);
-addMiningLensNetherOre("oreArdite", 50);
-addMiningLensNetherOre("oreCobalt", 50);
 addMiningLensNetherOre("oreNetherDiamond", 50);
-addMiningLensNetherOre("oreNetherNickel", 100);
 addMiningLensNetherOre("oreNetherRedstone", 200);
 addMiningLensNetherOre("oreNetherLapis", 250);
-addMiningLensNetherOre("oreNetherGold", 500);
-addMiningLensNetherOre("oreNetherSilver", 1000);
-addMiningLensNetherOre("oreNetherLead", 1500);
-addMiningLensNetherOre("oreNetherTin", 1800);
-addMiningLensNetherOre("oreNetherCopper", 2000);
-addMiningLensNetherOre("oreNetherIron", 3000);
 addMiningLensNetherOre("oreQuartz", 3000);
 addMiningLensNetherOre("oreNetherCoal", 5000);
+addMiningLensNetherOre("crushedNetherrack", 6000);
 
-addMiningLensStoneOre("orePlatinum", 20);
-addMiningLensStoneOre("oreEmerald", 30);
 addMiningLensStoneOre("oreMalachite", 40);
 addMiningLensStoneOre("orePeridot", 40);
 addMiningLensStoneOre("oreRuby", 40);
 addMiningLensStoneOre("oreSapphire", 40);
-addMiningLensStoneOre("oreTanzanite", 40);
-addMiningLensStoneOre("oreTopaz", 40);
-addMiningLensStoneOre("oreDiamond", 50);
-addMiningLensStoneOre("oreNickel", 100);
-addMiningLensStoneOre("oreAmber", 150);
-addMiningLensStoneOre("oreRedstone", 200);
-addMiningLensStoneOre("oreLapis", 250);
-addMiningLensStoneOre("oreUranium", 400);
-addMiningLensStoneOre("oreGold", 500);
 addMiningLensStoneOre("oreApatite", 700);
 addMiningLensStoneOre("oreCertusQuartz", 800);
-addMiningLensStoneOre("oreSilver", 1000);
-addMiningLensStoneOre("oreAluminium", 1200);
-addMiningLensStoneOre("oreLead", 1500);
-addMiningLensStoneOre("oreOsmium", 1500);
-addMiningLensStoneOre("oreTin", 1800);
-addMiningLensStoneOre("oreCopper", 2000);
-addMiningLensStoneOre("oreIron", 3000);
 addMiningLensStoneOre("oreQuartzBlack", 3000);
 addMiningLensStoneOre("oreCoal", 5000);
+addMiningLensStoneOre("gravel", 6000);
 
 
 // -----------------------------------------------------------------------
