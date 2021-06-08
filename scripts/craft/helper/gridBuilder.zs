@@ -47,18 +47,7 @@ zenClass GridBuilder { zenConstructor() {}
     mergedMap = newMap;
   }
 
-  function addRemoveField(output as IItemStack) as void {
-    if(isNull(output)) return;
-    for r in recipes.all {
-      if(isNull(r.output)) continue;
-      if(r.output.matches(output) && r.output.amount != output.amount) {
-        map["remove"] = r.output as IIngredient;
-        return;
-      }
-    }
-  }
-
-  function build(output as IItemStack, noRemove as bool) as bool {
+  function build(output as IItemStack) as bool {
     if(!haveData) return false;
 
     # Make ingredients map
@@ -69,7 +58,6 @@ zenClass GridBuilder { zenConstructor() {}
       val map_weight as int[IIngredient] = {};
       writeToMap(map_weight);
       map = CharacterManager().getMap(map_weight);
-      if(!noRemove) addRemoveField(output);
     }
 
     # Calculate minimum length

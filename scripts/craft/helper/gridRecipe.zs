@@ -21,7 +21,7 @@ zenClass GridRecipe { zenConstructor() {}
 
     # Calculate grid, length and other stuff
     # Return if grid is empty
-    if(!gridBuilder.build(output, style has "noRemove")) return null;
+    if(!gridBuilder.build(output)) return null;
 
     var plainLength = "craft.remake(, );".length;
     val isDense = style has "dense" || (output_s.length + gridBuilder.length + plainLength) <= 60;

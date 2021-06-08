@@ -106,9 +106,11 @@ zenClass Craft {
   function      remake(output as IItemStack, gridStr as string[], options as IIngredient[string], fnc as IRecipeFunction, isShapeless as bool) as void  {
     # Automatically remove previous recipe, or recipe tagged "remove" in options
     if (!isNull(options.remove)) {
-      recipes.remove(options.remove);
+      for item in options.remove.items {
+        recipes.remove(item.anyAmount());
+      }
     } else {
-      recipes.remove(output);
+      recipes.remove(output.anyAmount());
     }
 
     make(output, gridStr, options, fnc, isShapeless);
