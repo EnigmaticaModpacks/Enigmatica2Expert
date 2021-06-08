@@ -9632,1390 +9632,1476 @@
     "dim": "Nether (-1)"
   },
   {
-    "block": "biomesoplenty:biome_block:0",
-    "distrib": "0,0.0;10,0.0;11,8.203125E-6;12,1.8359375E-5;13,4.765625E-5;14,1.20703124E-4;15,1.06640626E-4;16,1.3828125E-4;17,1.8828125E-4;18,1.9648437E-4;19,2.328125E-4;20,2.621094E-4;21,3.1015626E-4;22,2.578125E-4;23,3.7304687E-4;24,2.8046875E-4;25,2.7382813E-4;26,3.0976563E-4;27,3.6289063E-4;28,3.7734376E-4;29,3.1484375E-4;30,3.652344E-4;31,3.921875E-4;32,4.03125E-4;33,0.0;",
-    "silktouch": true,
-    "dropsList": [
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:6}",
-        "fortunes": {
-          "0": 0.0074,
-          "1": 0.0126,
-          "2": 0.0181,
-          "3": 0.0182
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:82}",
-        "fortunes": {
-          "0": 0.0079,
-          "1": 0.0097,
-          "2": 0.0121,
-          "3": 0.0155
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:70}",
-        "fortunes": {
-          "0": 0.0073,
-          "1": 0.0119,
-          "2": 0.0139,
-          "3": 0.0207
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:168}",
-        "fortunes": {
-          "0": 0.0072,
-          "1": 0.013,
-          "2": 0.0133,
-          "3": 0.02
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:144}",
-        "fortunes": {
-          "0": 0.0089,
-          "1": 0.0143,
-          "2": 0.0173,
-          "3": 0.0192
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:128}",
-        "fortunes": {
-          "0": 0.0087,
-          "1": 0.0109,
-          "2": 0.0188,
-          "3": 0.0235
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:116}",
-        "fortunes": {
-          "0": 0.0098,
-          "1": 0.0137,
-          "2": 0.0152,
-          "3": 0.0146
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:104}",
-        "fortunes": {
-          "0": 0.0084,
-          "1": 0.011,
-          "2": 0.0153,
-          "3": 0.0254
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:171}",
-        "fortunes": {
-          "0": 0.0078,
-          "1": 0.0132,
-          "2": 0.0174,
-          "3": 0.0156
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:14}",
-        "fortunes": {
-          "0": 0.0111,
-          "1": 0.0135,
-          "2": 0.0206,
-          "3": 0.0278
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:143}",
-        "fortunes": {
-          "0": 0.0067,
-          "1": 0.0115,
-          "2": 0.0157,
-          "3": 0.0179
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:30}",
-        "fortunes": {
-          "0": 0.0089,
-          "1": 0.0116,
-          "2": 0.0196,
-          "3": 0.0206
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:94}",
-        "fortunes": {
-          "0": 0.0099,
-          "1": 0.0132,
-          "2": 0.0213,
-          "3": 0.0208
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:78}",
-        "fortunes": {
-          "0": 0.0112,
-          "1": 0.0157,
-          "2": 0.0232,
-          "3": 0.0321
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:66}",
-        "fortunes": {
-          "0": 0.0088,
-          "1": 0.0153,
-          "2": 0.0221,
-          "3": 0.0198
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:54}",
-        "fortunes": {
-          "0": 0.0087,
-          "1": 0.0112,
-          "2": 0.0151,
-          "3": 0.02
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:5}",
-        "fortunes": {
-          "0": 0.0097,
-          "1": 0.0141,
-          "2": 0.0173,
-          "3": 0.0226
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:93}",
-        "fortunes": {
-          "0": 0.0078,
-          "1": 0.0101,
-          "2": 0.0177,
-          "3": 0.0206
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:81}",
-        "fortunes": {
-          "0": 0.0091,
-          "1": 0.0145,
-          "2": 0.0163,
-          "3": 0.0224
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:169}",
-        "fortunes": {
-          "0": 0.0082,
-          "1": 0.0113,
-          "2": 0.0124,
-          "3": 0.0189
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:145}",
-        "fortunes": {
-          "0": 0.0067,
-          "1": 0.0099,
-          "2": 0.0171,
-          "3": 0.0235
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:117}",
-        "fortunes": {
-          "0": 0.0096,
-          "1": 0.0132,
-          "2": 0.0194,
-          "3": 0.0234
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:105}",
-        "fortunes": {
-          "0": 0.0095,
-          "1": 0.0125,
-          "2": 0.017,
-          "3": 0.0214
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:172}",
-        "fortunes": {
-          "0": 0.0098,
-          "1": 0.0132,
-          "2": 0.0171,
-          "3": 0.0197
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:49}",
-        "fortunes": {
-          "0": 0.0092,
-          "1": 0.013,
-          "2": 0.015,
-          "3": 0.0195
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:37}",
-        "fortunes": {
-          "0": 0.008,
-          "1": 0.0149,
-          "2": 0.0186,
-          "3": 0.0189
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:120}",
-        "fortunes": {
-          "0": 0.0074,
-          "1": 0.0101,
-          "2": 0.018,
-          "3": 0.0242
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:53}",
-        "fortunes": {
-          "0": 0.0096,
-          "1": 0.0171,
-          "2": 0.0159,
-          "3": 0.022
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:89}",
-        "fortunes": {
-          "0": 0.0065,
-          "1": 0.01,
-          "2": 0.0133,
-          "3": 0.0188
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:77}",
-        "fortunes": {
-          "0": 0.0082,
-          "1": 0.0109,
-          "2": 0.0165,
-          "3": 0.0304
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:65}",
-        "fortunes": {
-          "0": 0.0075,
-          "1": 0.0115,
-          "2": 0.0178,
-          "3": 0.0221
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:60}",
-        "fortunes": {
-          "0": 0.0087,
-          "1": 0.0152,
-          "2": 0.0184,
-          "3": 0.023
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:4}",
-        "fortunes": {
-          "0": 0.0079,
-          "1": 0.0129,
-          "2": 0.0154,
-          "3": 0.0236
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:114}",
-        "fortunes": {
-          "0": 0.008,
-          "1": 0.0147,
-          "2": 0.0204,
-          "3": 0.0204
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:138}",
-        "fortunes": {
-          "0": 0.0085,
-          "1": 0.0147,
-          "2": 0.0234,
-          "3": 0.0288
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:126}",
-        "fortunes": {
-          "0": 0.0071,
-          "1": 0.0128,
-          "2": 0.0161,
-          "3": 0.014
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:153}",
-        "fortunes": {
-          "0": 0.0094,
-          "1": 0.0124,
-          "2": 0.015,
-          "3": 0.02
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:141}",
-        "fortunes": {
-          "0": 0.0059,
-          "1": 0.0118,
-          "2": 0.0203,
-          "3": 0.0222
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:84}",
-        "fortunes": {
-          "0": 0.0097,
-          "1": 0.0165,
-          "2": 0.0179,
-          "3": 0.0241
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:72}",
-        "fortunes": {
-          "0": 0.0079,
-          "1": 0.0128,
-          "2": 0.0161,
-          "3": 0.0241
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:68}",
-        "fortunes": {
-          "0": 0.0106,
-          "1": 0.0134,
-          "2": 0.0201,
-          "3": 0.0254
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:56}",
-        "fortunes": {
-          "0": 0.0073,
-          "1": 0.0128,
-          "2": 0.0185,
-          "3": 0.0222
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:44}",
-        "fortunes": {
-          "0": 0.009,
-          "1": 0.0126,
-          "2": 0.0161,
-          "3": 0.02
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:32}",
-        "fortunes": {
-          "0": 0.0065,
-          "1": 0.0136,
-          "2": 0.013,
-          "3": 0.0201
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:71}",
-        "fortunes": {
-          "0": 0.0078,
-          "1": 0.0156,
-          "2": 0.0192,
-          "3": 0.0241
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:3}",
-        "fortunes": {
-          "0": 0.0088,
-          "1": 0.0155,
-          "2": 0.0185,
-          "3": 0.024
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:139}",
-        "fortunes": {
-          "0": 0.0098,
-          "1": 0.0158,
-          "2": 0.0174,
-          "3": 0.0216
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:115}",
-        "fortunes": {
-          "0": 0.0083,
-          "1": 0.0089,
-          "2": 0.0167,
-          "3": 0.0201
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:27}",
-        "fortunes": {
-          "0": 0.0083,
-          "1": 0.0113,
-          "2": 0.0191,
-          "3": 0.0281
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:170}",
-        "fortunes": {
-          "0": 0.0105,
-          "1": 0.015,
-          "2": 0.0161,
-          "3": 0.0215
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:154}",
-        "fortunes": {
-          "0": 0.008,
-          "1": 0.0122,
-          "2": 0.0131,
-          "3": 0.0163
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:142}",
-        "fortunes": {
-          "0": 0.0095,
-          "1": 0.0137,
-          "2": 0.0215,
-          "3": 0.0246
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:83}",
-        "fortunes": {
-          "0": 0.0086,
-          "1": 0.0146,
-          "2": 0.0181,
-          "3": 0.0213
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:79}",
-        "fortunes": {
-          "0": 0.0075,
-          "1": 0.0122,
-          "2": 0.0161,
-          "3": 0.0229
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:67}",
-        "fortunes": {
-          "0": 0.0085,
-          "1": 0.0121,
-          "2": 0.0145,
-          "3": 0.0163
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:55}",
-        "fortunes": {
-          "0": 0.0107,
-          "1": 0.0103,
-          "2": 0.0179,
-          "3": 0.0195
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:43}",
-        "fortunes": {
-          "0": 0.0101,
-          "1": 0.0131,
-          "2": 0.0213,
-          "3": 0.0225
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:2}",
-        "fortunes": {
-          "0": 0.0091,
-          "1": 0.0129,
-          "2": 0.0143,
-          "3": 0.0143
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:90}",
-        "fortunes": {
-          "0": 0.0066,
-          "1": 0.0126,
-          "2": 0.0211,
-          "3": 0.0217
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:136}",
-        "fortunes": {
-          "0": 0.0096,
-          "1": 0.0142,
-          "2": 0.0194,
-          "3": 0.0261
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:124}",
-        "fortunes": {
-          "0": 0.0075,
-          "1": 0.0111,
-          "2": 0.0163,
-          "3": 0.0144
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:148}",
-        "fortunes": {
-          "0": 0.0105,
-          "1": 0.014,
-          "2": 0.0164,
-          "3": 0.0273
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:58}",
-        "fortunes": {
-          "0": 0.0104,
-          "1": 0.0102,
-          "2": 0.0179,
-          "3": 0.0193
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:175}",
-        "fortunes": {
-          "0": 0.0079,
-          "1": 0.0115,
-          "2": 0.017,
-          "3": 0.022
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:86}",
-        "fortunes": {
-          "0": 0.0096,
-          "1": 0.012,
-          "2": 0.0151,
-          "3": 0.0179
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:74}",
-        "fortunes": {
-          "0": 0.0106,
-          "1": 0.0147,
-          "2": 0.0228,
-          "3": 0.0233
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:62}",
-        "fortunes": {
-          "0": 0.0071,
-          "1": 0.0123,
-          "2": 0.0146,
-          "3": 0.0149
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:50}",
-        "fortunes": {
-          "0": 0.0098,
-          "1": 0.0127,
-          "2": 0.0177,
-          "3": 0.0207
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:46}",
-        "fortunes": {
-          "0": 0.0092,
-          "1": 0.0153,
-          "2": 0.0171,
-          "3": 0.024
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:1}",
-        "fortunes": {
-          "0": 0.0089,
-          "1": 0.0139,
-          "2": 0.015,
-          "3": 0.0206
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:125}",
-        "fortunes": {
-          "0": 0.0101,
-          "1": 0.0127,
-          "2": 0.0177,
-          "3": 0.0271
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:113}",
-        "fortunes": {
-          "0": 0.0099,
-          "1": 0.0113,
-          "2": 0.0188,
-          "3": 0.0236
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:101}",
-        "fortunes": {
-          "0": 0.0094,
-          "1": 0.0133,
-          "2": 0.0162,
-          "3": 0.0188
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:177}",
-        "fortunes": {
-          "0": 0.0063,
-          "1": 0.0159,
-          "2": 0.0174,
-          "3": 0.0175
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:137}",
-        "fortunes": {
-          "0": 0.0071,
-          "1": 0.0154,
-          "2": 0.0177,
-          "3": 0.0249
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:69}",
-        "fortunes": {
-          "0": 0.008,
-          "1": 0.0156,
-          "2": 0.016,
-          "3": 0.0195
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:176}",
-        "fortunes": {
-          "0": 0.0098,
-          "1": 0.0115,
-          "2": 0.0178,
-          "3": 0.0223
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:152}",
-        "fortunes": {
-          "0": 0.0093,
-          "1": 0.014,
-          "2": 0.022,
-          "3": 0.0208
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:29}",
-        "fortunes": {
-          "0": 0.0106,
-          "1": 0.0119,
-          "2": 0.0191,
-          "3": 0.0257
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:85}",
-        "fortunes": {
-          "0": 0.0084,
-          "1": 0.0109,
-          "2": 0.013,
-          "3": 0.0159
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:73}",
-        "fortunes": {
-          "0": 0.0088,
-          "1": 0.01,
-          "2": 0.0187,
-          "3": 0.022
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:61}",
-        "fortunes": {
-          "0": 0.0079,
-          "1": 0.0139,
-          "2": 0.0161,
-          "3": 0.0236
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:57}",
-        "fortunes": {
-          "0": 0.009,
-          "1": 0.0112,
-          "2": 0.0127,
-          "3": 0.0213
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:45}",
-        "fortunes": {
-          "0": 0.0084,
-          "1": 0.0119,
-          "2": 0.0186,
-          "3": 0.0196
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:21}",
-        "fortunes": {
-          "0": 0.007,
-          "1": 0.0115,
-          "2": 0.0154,
-          "3": 0.0177
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:92}",
-        "fortunes": {
-          "0": 0.0084,
-          "1": 0.012,
-          "2": 0.0163,
-          "3": 0.0187
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:80}",
-        "fortunes": {
-          "0": 0.0093,
-          "1": 0.0117,
-          "2": 0.0159,
-          "3": 0.0196
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:146}",
-        "fortunes": {
-          "0": 0.0075,
-          "1": 0.0107,
-          "2": 0.0195,
-          "3": 0.0185
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:122}",
-        "fortunes": {
-          "0": 0.008,
-          "1": 0.0132,
-          "2": 0.0156,
-          "3": 0.0147
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:118}",
-        "fortunes": {
-          "0": 0.0102,
-          "1": 0.0153,
-          "2": 0.0164,
-          "3": 0.0154
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:106}",
-        "fortunes": {
-          "0": 0.01,
-          "1": 0.0141,
-          "2": 0.0203,
-          "3": 0.0227
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:48}",
-        "fortunes": {
-          "0": 0.0111,
-          "1": 0.0147,
-          "2": 0.0177,
-          "3": 0.0215
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:121}",
-        "fortunes": {
-          "0": 0.0112,
-          "1": 0.0153,
-          "2": 0.0172,
-          "3": 0.0297
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:173}",
-        "fortunes": {
-          "0": 0.0086,
-          "1": 0.011,
-          "2": 0.0141,
-          "3": 0.019
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:64}",
-        "fortunes": {
-          "0": 0.0059,
-          "1": 0.0113,
-          "2": 0.0137,
-          "3": 0.0169
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:52}",
-        "fortunes": {
-          "0": 0.0082,
-          "1": 0.0151,
-          "2": 0.0256,
-          "3": 0.0238
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:12}",
-        "fortunes": {
-          "0": 0.0102,
-          "1": 0.0152,
-          "2": 0.0169,
-          "3": 0.0247
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:88}",
-        "fortunes": {
-          "0": 0.0087,
-          "1": 0.0152,
-          "2": 0.021,
-          "3": 0.0185
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:76}",
-        "fortunes": {
-          "0": 0.0102,
-          "1": 0.0122,
-          "2": 0.0172,
-          "3": 0.0197
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:119}",
-        "fortunes": {
-          "0": 0.0075,
-          "1": 0.0134,
-          "2": 0.0187,
-          "3": 0.0268
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:91}",
-        "fortunes": {
-          "0": 0.008,
-          "1": 0.0135,
-          "2": 0.0159,
-          "3": 0.0257
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:147}",
-        "fortunes": {
-          "0": 0.0082,
-          "1": 0.0106,
-          "2": 0.0157,
-          "3": 0.0173
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:135}",
-        "fortunes": {
-          "0": 0.0091,
-          "1": 0.0141,
-          "2": 0.0173,
-          "3": 0.0205
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:123}",
-        "fortunes": {
-          "0": 0.0092,
-          "1": 0.0118,
-          "2": 0.0204,
-          "3": 0.0228
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:107}",
-        "fortunes": {
-          "0": 0.0089,
-          "1": 0.0154,
-          "2": 0.0188,
-          "3": 0.0192
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:159}",
-        "fortunes": {
-          "0": 0.0087,
-          "1": 0.0141,
-          "2": 0.0163,
-          "3": 0.0272
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:150}",
-        "fortunes": {
-          "0": 0.0094,
-          "1": 0.0133,
-          "2": 0.0174,
-          "3": 0.0216
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:59}",
-        "fortunes": {
-          "0": 0.0078,
-          "1": 0.0153,
-          "2": 0.0178,
-          "3": 0.0236
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:47}",
-        "fortunes": {
-          "0": 0.008,
-          "1": 0.0149,
-          "2": 0.0156,
-          "3": 0.0181
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:174}",
-        "fortunes": {
-          "0": 0.0085,
-          "1": 0.0156,
-          "2": 0.0209,
-          "3": 0.0183
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:75}",
-        "fortunes": {
-          "0": 0.012,
-          "1": 0.0123,
-          "2": 0.0173,
-          "3": 0.0262
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:63}",
-        "fortunes": {
-          "0": 0.0084,
-          "1": 0.0136,
-          "2": 0.0192,
-          "3": 0.0187
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:51}",
-        "fortunes": {
-          "0": 0.0063,
-          "1": 0.0131,
-          "2": 0.0139,
-          "3": 0.0184
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:35}",
-        "fortunes": {
-          "0": 0.0092,
-          "1": 0.0147,
-          "2": 0.0217,
-          "3": 0.0231
-        }
-      },
-      {
-        "itemStack": "biomesoplenty:biome_essence:0:{biomeID:87}",
-        "fortunes": {
-          "0": 0.0081,
-          "1": 0.0123,
-          "2": 0.016,
-          "3": 0.0181
-        }
-      }
-    ],
-    "dim": "The End (1)"
-  },
-  {
-    "block": "biomesoplenty:crystal:0",
-    "distrib": "0,0.0;3,0.0;4,1.5625E-6;5,3.125E-6;6,3.359375E-5;7,7.3046875E-5;8,1.03515624E-4;9,1.765625E-4;10,3.0664064E-4;11,4.0703124E-4;12,4.988281E-4;13,5.4921873E-4;14,6.167969E-4;15,5.859375E-4;16,5.234375E-4;17,4.59375E-4;18,4.1132813E-4;19,3.9765626E-4;20,3.875E-4;21,3.375E-4;22,3.2695313E-4;23,3.1523439E-4;24,3.0117188E-4;25,3.0507814E-4;26,2.4296874E-4;27,2.2148437E-4;28,2.1484375E-4;29,2.5E-4;30,2.3554688E-4;31,2.4570312E-4;32,2.2109375E-4;33,2.2695313E-4;34,1.96875E-4;35,2.2421875E-4;36,2.3320313E-4;37,2.2460938E-4;38,1.7851562E-4;39,2.0625E-4;40,2.3164063E-4;41,2.1054687E-4;42,1.7265625E-4;43,1.5859376E-4;44,1.6367188E-4;45,2.1328125E-4;46,2.2226562E-4;47,2.171875E-4;48,5.703125E-5;49,5.1953124E-5;50,6.601562E-5;51,7.617188E-5;52,5.78125E-5;53,6.953125E-5;54,6.171875E-5;55,6.4453125E-5;56,5.546875E-5;57,5.15625E-5;58,3.4375E-5;59,4.84375E-5;60,3.0078125E-5;61,3.359375E-5;62,1.328125E-5;63,1.3671875E-5;64,5.46875E-6;65,0.0;77,0.0;78,3.90625E-7;79,3.90625E-7;80,7.8125E-7;81,0.0;",
-    "silktouch": true,
-    "dropsList": [
-      {
-        "itemStack": "biomesoplenty:crystal_shard:0",
-        "fortunes": {
-          "0": 4,
-          "1": 4,
-          "2": 4,
-          "3": 4
-        }
-      }
-    ],
-    "dim": "The End (1)"
-  },
-  {
-    "block": "extrautils2:enderlilly:0",
-    "distrib": "0,0.0;24,0.0;25,3.90625E-7;26,0.0;27,0.0;28,3.90625E-7;29,7.8125E-7;30,3.90625E-7;31,0.0;32,0.0;33,1.5625E-6;34,1.953125E-6;35,1.953125E-6;36,1.171875E-6;37,2.734375E-6;38,2.734375E-6;39,1.953125E-6;40,2.734375E-6;41,1.5625E-6;42,1.953125E-6;43,2.734375E-6;44,1.953125E-6;45,4.6875E-6;46,5.859375E-6;47,2.734375E-6;48,7.8125E-7;49,1.171875E-6;50,1.171875E-6;51,2.34375E-6;52,3.515625E-6;53,3.90625E-7;54,3.90625E-7;55,7.8125E-7;56,3.90625E-7;57,1.4453125E-5;58,2.5390626E-5;59,3.4375E-5;60,3.4375E-5;61,3.9453123E-5;62,3.28125E-5;63,2.96875E-5;64,7.03125E-6;65,3.515625E-6;66,3.90625E-7;67,0.0;",
-    "silktouch": false,
-    "dropsList": [
-      {
-        "itemStack": "minecraft:ender_pearl:0",
-        "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
-        }
-      },
-      {
-        "itemStack": "extrautils2:enderlilly:0",
-        "fortunes": {
-          "0": 1.1025,
-          "1": 1.1376,
-          "2": 1.1937,
-          "3": 1.2495
-        }
-      }
-    ],
-    "dim": "The End (1)"
-  },
-  {
-    "block": "forestry:beehives:4",
-    "distrib": "0,0.0;34,0.0;35,3.90625E-7;36,0.0;37,3.90625E-7;38,0.0;39,3.90625E-7;40,0.0;46,0.0;47,7.8125E-7;48,0.0;49,1.171875E-6;50,0.0;56,0.0;57,1.171875E-6;58,3.90625E-7;59,1.171875E-6;60,1.5625E-6;61,1.953125E-6;62,3.125E-6;63,1.953125E-6;64,7.8125E-7;65,3.90625E-7;66,0.0;125,0.0;126,3.90625E-7;127,0.0;",
-    "silktouch": false,
-    "dropsList": [
-      {
-        "itemStack": "forestry:bee_combs:8",
-        "fortunes": {
-          "0": 0.8989,
-          "1": 0.9007,
-          "2": 0.9064,
-          "3": 0.899
-        }
-      },
-      {
-        "itemStack": "forestry:bee_drone_ge:0:{MaxH:60,Health:60,IsAnalyzed:0b,Genome:{Chromosomes:[{UID1:\"forestry.speciesEnded\",UID0:\"forestry.speciesEnded\",Slot:0b},{UID1:\"forestry.speedSlower\",UID0:\"forestry.speedSlower\",Slot:1b},{UID1:\"forestry.lifespanLonger\",UID0:\"forestry.lifespanLonger\",Slot:2b},{UID1:\"forestry.fertilityLow\",UID0:\"forestry.fertilityLow\",Slot:3b},{UID1:\"forestry.toleranceUp1\",UID0:\"forestry.toleranceUp1\",Slot:4b},{UID1:\"forestry.boolTrue\",UID0:\"forestry.boolTrue\",Slot:5b},{UID1:\"forestry.toleranceNone\",UID0:\"forestry.toleranceNone\",Slot:6b},{UID1:\"forestry.boolFalse\",UID0:\"forestry.boolFalse\",Slot:7b},{UID1:\"forestry.boolFalse\",UID0:\"forestry.boolFalse\",Slot:8b},{UID1:\"forestry.flowersEnd\",UID0:\"forestry.flowersEnd\",Slot:9b},{UID1:\"forestry.floweringSlowest\",UID0:\"forestry.floweringSlowest\",Slot:10b},{UID1:\"forestry.territoryLarge\",UID0:\"forestry.territoryLarge\",Slot:11b},{UID1:\"forestry.effectMisanthrope\",UID0:\"forestry.effectMisanthrope\",Slot:12b}]}}",
-        "fortunes": {
-          "0": 0.9011,
-          "1": 0.9104,
-          "2": 0.9014,
-          "3": 0.9048
-        }
-      },
-      {
-        "itemStack": "forestry:bee_princess_ge:0:{MaxH:60,Health:60,IsAnalyzed:0b,Genome:{Chromosomes:[{UID1:\"forestry.speciesEnded\",UID0:\"forestry.speciesEnded\",Slot:0b},{UID1:\"forestry.speedSlower\",UID0:\"forestry.speedSlower\",Slot:1b},{UID1:\"forestry.lifespanLonger\",UID0:\"forestry.lifespanLonger\",Slot:2b},{UID1:\"forestry.fertilityLow\",UID0:\"forestry.fertilityLow\",Slot:3b},{UID1:\"forestry.toleranceUp1\",UID0:\"forestry.toleranceUp1\",Slot:4b},{UID1:\"forestry.boolTrue\",UID0:\"forestry.boolTrue\",Slot:5b},{UID1:\"forestry.toleranceNone\",UID0:\"forestry.toleranceNone\",Slot:6b},{UID1:\"forestry.boolFalse\",UID0:\"forestry.boolFalse\",Slot:7b},{UID1:\"forestry.boolFalse\",UID0:\"forestry.boolFalse\",Slot:8b},{UID1:\"forestry.flowersEnd\",UID0:\"forestry.flowersEnd\",Slot:9b},{UID1:\"forestry.floweringSlowest\",UID0:\"forestry.floweringSlowest\",Slot:10b},{UID1:\"forestry.territoryLarge\",UID0:\"forestry.territoryLarge\",Slot:11b},{UID1:\"forestry.effectMisanthrope\",UID0:\"forestry.effectMisanthrope\",Slot:12b}]}}",
-        "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
-        }
-      }
-    ],
-    "dim": "The End (1)"
-  },
-  {
-    "block": "minecraft:air:0",
-    "distrib": "0,0.20218399;1,0.20218399;2,0.20218554;3,0.20218554;4,0.20218359;5,0.20218164;6,0.20214961;7,0.20211133;8,0.20208086;9,0.20200898;10,0.20178203;11,0.20008671;12,0.19476719;13,0.18619727;14,0.17617851;15,0.16549101;16,0.15476523;17,0.14584844;18,0.1377832;19,0.13026796;20,0.123348825;21,0.11715469;22,0.11194336;23,0.10735195;24,0.10311172;25,0.09918086;26,0.0954543;27,0.091836326;28,0.08864531;29,0.08562695;30,0.08294531;31,0.080357425;32,0.06774023;33,0.066896096;34,0.06611094;35,0.06527773;36,0.06454492;37,0.06438008;38,0.06419336;39,0.06418711;40,0.06427109;41,0.06414688;42,0.06395899;43,0.063678905;44,0.063513674;45,0.06336914;46,0.063376956;47,0.06343555;48,0.013128515;49,0.013236328;50,0.01353711;51,0.013985156;52,0.014324609;53,0.014395704;54,0.014419922;55,0.014474219;56,0.014517578;57,0.0188875;58,0.024734374;59,0.032993358;60,0.04195039;61,0.05185664;62,0.06044336;63,0.06754766;64,0.006038281;65,0.0068957033;66,0.007280859;67,0.0072890627;68,0.0072667967;69,0.007253906;70,0.0072660157;71,0.007271875;72,0.007275781;73,0.0072472654;74,0.0072910157;75,0.007304297;76,0.0073058596;77,0.007312109;78,0.0073265624;79,0.007341797;80,0.0014546874;81,0.0014554687;83,0.0014554687;84,0.0014503907;85,0.0014386718;86,0.0014460938;87,0.0014515625;88,0.0014511718;89,0.0014484375;91,0.0014484375;92,0.0014480469;93,0.0014328125;94,0.0014417969;95,0.0014421875;96,4.953125E-4;97,4.8125E-4;98,4.917969E-4;99,4.9257814E-4;100,4.9257814E-4;101,4.6875E-4;102,4.9921876E-4;103,4.996094E-4;104,5.0E-4;106,5.0E-4;107,4.996094E-4;108,5.0E-4;110,5.0E-4;111,4.996094E-4;112,4.96875E-4;113,4.8828125E-4;114,4.9023435E-4;115,4.917969E-4;116,4.910156E-4;117,4.582031E-4;118,4.8085937E-4;119,4.8203126E-4;120,4.828125E-4;121,4.3789062E-4;122,4.7617187E-4;123,4.7890624E-4;124,4.7890624E-4;125,3.9609376E-4;126,4.9257814E-4;127,4.929688E-4;128,0.0;",
-    "silktouch": false,
-    "dim": "The End (1)"
-  },
-  {
-    "block": "minecraft:banner:13:{BlockEntityTag:{Patterns:[{Pattern:\"tt\",Color:0},{Pattern:\"bt\",Color:0}]}}",
-    "distrib": "0,0.0;92,0.0;93,7.8125E-7;94,0.0;120,0.0;121,7.8125E-7;122,0.0;",
-    "silktouch": false,
-    "dropsList": [
-      {
-        "itemStack": "minecraft:banner:13:{BlockEntityTag:{Patterns:[{Pattern:\"tt\",Color:0},{Pattern:\"bt\",Color:0}]}}",
-        "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
-        }
-      }
-    ],
-    "dim": "The End (1)"
-  },
-  {
-    "block": "minecraft:bedrock:0",
-    "distrib": "0,0.0;62,0.0;63,3.90625E-7;64,0.0;78,0.0;79,3.90625E-7;80,0.0;",
-    "silktouch": true,
-    "dim": "The End (1)"
-  },
-  {
-    "block": "minecraft:chorus_flower:0",
-    "distrib": "0,0.0;42,0.0;43,7.8125E-7;44,0.0;45,0.0;46,3.90625E-7;47,3.90625E-7;48,0.0;49,3.90625E-7;50,0.0;51,0.0;52,7.8125E-7;53,0.0;54,1.5625E-6;55,3.90625E-7;56,2.734375E-6;57,1.953125E-6;58,2.734375E-6;59,3.125E-6;60,3.90625E-6;61,1.0546875E-5;62,1.2109375E-5;63,2.1875E-5;64,7.8125E-7;65,1.5625E-6;66,2.734375E-6;67,5.46875E-6;68,5.46875E-6;69,1.0546875E-5;70,1.2890625E-5;71,5.46875E-6;72,1.171875E-5;73,1.2109375E-5;74,1.25E-5;75,1.171875E-5;76,1.2109375E-5;77,1.2890625E-5;78,1.171875E-5;79,1.40625E-5;80,0.0;",
-    "silktouch": false,
-    "dim": "The End (1)"
-  },
-  {
-    "block": "minecraft:chorus_plant:0",
-    "distrib": "0,0.0;32,0.0;33,3.90625E-7;35,3.90625E-7;36,7.8125E-7;37,7.8125E-7;38,1.171875E-6;39,1.5625E-6;40,2.34375E-6;41,2.734375E-6;42,3.125E-6;43,2.34375E-6;44,3.515625E-6;45,4.6875E-6;46,4.6875E-6;47,5.078125E-6;48,4.6875E-6;49,5.078125E-6;50,8.203125E-6;51,1.40625E-5;52,1.796875E-5;53,2.03125E-5;54,2.6171874E-5;55,2.7734375E-5;56,2.8515626E-5;57,5.9375E-5;58,9.21875E-5;59,1.5234375E-4;60,2.3320313E-4;61,3.4023437E-4;62,4.7851563E-4;63,5.9023435E-4;64,5.9375E-5;65,7.03125E-5;66,8.6328124E-5;67,9.335938E-5;68,1.15625E-4;69,1.0976563E-4;70,1.078125E-4;71,1.1015625E-4;72,1.0E-4;73,1.03125E-4;74,8.9453126E-5;75,7.7734374E-5;76,7.578125E-5;77,6.875E-5;78,5.5078126E-5;79,3.90625E-5;80,0.0;",
-    "silktouch": false,
-    "dropsList": [
-      {
-        "itemStack": "minecraft:chorus_fruit:0",
-        "fortunes": {
-          "0": 0.4921,
-          "1": 0.4992,
-          "2": 0.4882,
-          "3": 0.4878
-        }
-      }
-    ],
-    "dim": "The End (1)"
-  },
-  {
-    "block": "minecraft:end_bricks:0",
-    "distrib": "0,0.0;61,0.0;62,1.5625E-6;64,1.5625E-6;65,0.0;66,3.90625E-6;67,3.515625E-6;68,3.515625E-6;69,0.0;70,5.46875E-6;71,3.125E-6;72,3.125E-6;73,0.0;89,0.0;90,2.34375E-6;91,1.5625E-6;92,1.5625E-6;93,0.0;94,4.6875E-6;95,3.90625E-6;96,3.125E-6;97,0.0;98,5.46875E-6;99,3.90625E-6;100,3.90625E-6;101,0.0;117,0.0;118,1.171875E-5;119,8.59375E-6;120,8.59375E-6;121,0.0;122,1.71875E-5;123,1.2890625E-5;124,1.2890625E-5;125,0.0;",
-    "silktouch": false,
-    "dim": "The End (1)"
-  },
-  {
-    "block": "minecraft:end_rod:0",
-    "distrib": "0,0.0;65,0.0;66,7.8125E-7;67,0.0;69,0.0;70,7.8125E-7;71,0.0;73,0.0;74,7.8125E-7;75,0.0;93,0.0;94,1.171875E-6;95,0.0;97,0.0;98,7.8125E-7;99,0.0;101,0.0;102,7.8125E-7;103,0.0;114,0.0;115,7.8125E-7;116,0.0;118,0.0;119,7.8125E-7;120,0.0;121,0.0;122,2.734375E-6;123,0.0;125,0.0;126,1.953125E-6;127,0.0;",
-    "silktouch": false,
-    "dropsList": [
-      {
-        "itemStack": "minecraft:end_rod:0",
-        "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
-        }
-      }
-    ],
-    "dim": "The End (1)"
-  },
-  {
-    "block": "minecraft:end_stone:0",
-    "distrib": "0,0.0;9,0.0;10,8.242187E-5;11,0.0016328125;12,0.006808594;13,0.01529375;14,0.025136719;15,0.035908595;16,0.045883205;17,0.05481211;18,0.06289336;19,0.070407815;20,0.07733477;21,0.08352344;22,0.08878906;23,0.09327851;24,0.09762422;25,0.101558596;26,0.10532695;27,0.1088836;28,0.112004295;29,0.11511523;30,0.11770703;31,0.12031406;32,0.12123789;33,0.12252617;34,0.123345315;35,0.12414922;36,0.12486445;37,0.12504452;38,0.12527773;39,0.12526445;40,0.12515312;41,0.12530352;42,0.12552343;43,0.12581368;44,0.12597539;45,0.12607227;46,0.1260543;47,0.12600118;48,0.06459375;49,0.064485155;50,0.06416875;51,0.063706644;52,0.06338047;53,0.06329883;54,0.063273825;55,0.0632168;56,0.06318086;57,0.05876953;58,0.052896094;59,0.044552736;60,0.03553125;61,0.025496485;62,0.0168;63,0.009577344;64,0.0012792968;65,4.078125E-4;66,1.6796876E-5;67,0.0;",
-    "silktouch": false,
-    "dim": "The End (1)"
-  },
-  {
-    "block": "minecraft:iron_bars:0",
-    "distrib": "0,0.0;78,0.0;79,6.25E-6;80,0.0;",
-    "silktouch": false,
-    "dim": "The End (1)"
-  },
-  {
-    "block": "minecraft:ladder:0",
-    "distrib": "0,0.0;121,0.0;122,3.90625E-7;124,3.90625E-7;125,0.0;",
-    "silktouch": false,
-    "dropsList": [
-      {
-        "itemStack": "minecraft:ladder:0",
-        "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
-        }
-      }
-    ],
-    "dim": "The End (1)"
-  },
-  {
-    "block": "minecraft:obsidian:0",
-    "distrib": "0,1.1445313E-4;63,1.1445313E-4;64,1.0625E-4;78,1.0625E-4;79,9.8046876E-5;80,4.453125E-5;95,4.453125E-5;96,0.0;",
-    "silktouch": false,
-    "dim": "The End (1)"
-  },
-  {
-    "block": "minecraft:purpur_block:0",
-    "distrib": "0,0.0;60,0.0;61,4.6875E-6;62,0.0;64,0.0;65,7.8125E-6;66,3.90625E-7;68,3.90625E-7;69,1.1328125E-5;70,0.0;72,0.0;73,2.1875E-5;74,0.0;84,0.0;85,1.5234375E-5;86,2.734375E-6;87,1.171875E-6;88,7.8125E-7;89,5.078125E-6;90,1.953125E-6;91,1.171875E-6;92,7.8125E-7;93,1.09375E-5;94,4.6875E-6;95,3.90625E-6;96,0.0;97,1.09375E-5;98,1.171875E-6;100,1.171875E-6;101,2.1875E-5;102,0.0;112,0.0;113,8.984375E-6;114,5.46875E-6;115,3.90625E-6;116,5.078125E-6;117,3.6328125E-5;118,2.734375E-6;119,1.5625E-6;120,1.171875E-6;121,3.5546876E-5;122,0.0;124,0.0;125,7.265625E-5;126,0.0;",
-    "silktouch": false,
-    "dim": "The End (1)"
-  },
-  {
-    "block": "minecraft:purpur_pillar:0",
-    "distrib": "0,0.0;61,0.0;62,7.8125E-7;64,7.8125E-7;65,0.0;66,7.8125E-7;68,7.8125E-7;69,0.0;70,7.8125E-7;72,7.8125E-7;73,0.0;83,0.0;84,3.515625E-6;85,0.0;87,0.0;88,7.8125E-7;89,0.0;90,7.8125E-7;91,7.8125E-7;92,1.5625E-6;93,0.0;94,1.171875E-6;95,1.171875E-6;96,7.8125E-7;97,0.0;98,7.8125E-7;100,7.8125E-7;101,0.0;111,0.0;112,2.34375E-6;113,0.0;115,0.0;116,3.90625E-7;117,0.0;118,2.34375E-6;120,2.34375E-6;121,0.0;122,2.734375E-6;124,2.734375E-6;125,0.0;126,4.6875E-6;127,4.6875E-6;128,0.0;",
-    "silktouch": false,
-    "dim": "The End (1)"
-  },
-  {
-    "block": "minecraft:purpur_slab:0",
-    "distrib": "0,0.0;65,0.0;66,7.8125E-7;68,7.8125E-7;69,3.90625E-7;70,0.0;93,0.0;94,1.171875E-6;95,1.171875E-6;96,0.0;113,0.0;114,1.171875E-6;117,1.171875E-6;118,3.90625E-7;119,3.90625E-7;120,1.5625E-6;121,1.953125E-6;122,0.0;124,0.0;125,3.90625E-7;127,3.90625E-7;128,0.0;",
-    "silktouch": false,
-    "dropsList": [
-      {
-        "itemStack": "minecraft:purpur_slab:0",
-        "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
-        }
-      }
-    ],
-    "dim": "The End (1)"
-  },
-  {
-    "block": "minecraft:purpur_stairs:0",
-    "distrib": "0,0.0;60,0.0;61,7.8125E-7;62,0.0;64,0.0;65,6.25E-6;66,0.0;68,0.0;69,7.8125E-6;70,0.0;72,0.0;73,9.375E-6;74,0.0;83,0.0;84,1.5625E-6;85,1.5625E-6;86,6.640625E-6;87,2.734375E-6;88,2.734375E-6;89,1.953125E-6;90,1.953125E-6;91,2.734375E-6;92,2.734375E-6;93,1.09375E-5;94,7.8125E-7;95,2.34375E-6;96,0.0;97,7.8125E-6;98,0.0;100,0.0;101,9.375E-6;102,0.0;103,3.90625E-7;104,0.0;106,0.0;107,3.90625E-7;108,0.0;110,0.0;111,3.90625E-7;112,7.8125E-7;113,2.734375E-6;114,3.125E-6;115,2.34375E-6;116,2.34375E-6;117,3.90625E-6;118,1.171875E-6;119,7.8125E-7;120,3.90625E-7;121,2.3828125E-5;122,7.8125E-7;124,7.8125E-7;125,3.0859374E-5;126,0.0;127,1.953125E-6;128,0.0;",
-    "silktouch": false,
-    "dropsList": [
-      {
-        "itemStack": "minecraft:purpur_stairs:0",
-        "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
-        }
-      }
-    ],
-    "dim": "The End (1)"
-  },
-  {
-    "block": "minecraft:stained_glass:2",
-    "distrib": "0,0.0;66,0.0;67,3.90625E-7;68,3.90625E-7;69,0.0;70,0.0;71,2.34375E-6;72,2.34375E-6;73,0.0;90,0.0;91,7.8125E-7;92,7.8125E-7;93,0.0;94,0.0;95,7.8125E-7;96,7.8125E-7;97,0.0;98,0.0;99,1.5625E-6;100,1.5625E-6;101,0.0;118,0.0;119,3.125E-6;120,3.125E-6;121,0.0;122,0.0;123,4.296875E-6;124,4.296875E-6;125,0.0;",
-    "silktouch": true,
-    "dim": "The End (1)"
-  },
-  {
-    "block": "thaumcraft:crystal_aer:0",
-    "distrib": "0,3.90625E-7;1,3.90625E-7;2,0.0;9,0.0;10,1.953125E-6;11,1.09375E-5;12,2.1484375E-5;13,1.25E-5;14,3.2421874E-5;15,2.1484375E-5;16,8.59375E-6;17,1.4453125E-5;18,2.8515626E-5;19,1.328125E-5;20,1.484375E-5;21,1.640625E-5;22,1.7578124E-5;23,1.2890625E-5;24,1.5234375E-5;25,1.4453125E-5;26,1.171875E-5;27,1.4453125E-5;28,8.984375E-6;29,1.09375E-5;30,7.03125E-6;31,7.421875E-6;32,7.03125E-6;33,5.859375E-6;34,5.46875E-6;35,7.421875E-6;36,8.984375E-6;37,9.375E-6;38,6.25E-6;39,7.8125E-6;40,5.859375E-6;41,2.34375E-6;42,3.90625E-6;43,5.078125E-6;44,8.59375E-6;45,5.859375E-6;46,4.6875E-6;47,4.296875E-6;48,0.0;49,1.171875E-6;50,1.171875E-6;51,0.0;52,3.90625E-7;53,7.8125E-7;54,0.0;59,0.0;60,7.8125E-7;61,1.171875E-6;62,0.0;",
-    "silktouch": false,
-    "dropsList": [
-      {
-        "itemStack": "thaumcraft:crystal_essence:0:{Aspects:[{amount:1,key:\"aer\"}]}",
-        "fortunes": {
-          "0": 4,
-          "1": 4,
-          "2": 4,
-          "3": 4
-        }
-      }
-    ],
-    "dim": "The End (1)"
-  },
-  {
-    "block": "thaumcraft:crystal_aqua:0",
-    "distrib": "0,0.0;10,0.0;11,7.421875E-6;12,1.484375E-5;13,9.765625E-6;14,1.1328125E-5;15,1.2109375E-5;16,1.640625E-5;17,8.59375E-6;18,8.203125E-6;19,7.03125E-6;20,5.078125E-6;21,2.734375E-6;22,6.25E-6;23,4.296875E-6;24,3.515625E-6;25,5.078125E-6;26,7.421875E-6;27,3.515625E-6;28,1.953125E-6;29,3.515625E-6;30,2.34375E-6;31,3.515625E-6;32,5.46875E-6;33,8.203125E-6;34,3.125E-6;35,5.46875E-6;36,2.734375E-6;37,2.34375E-6;38,4.296875E-6;39,2.734375E-6;40,2.34375E-6;41,1.171875E-6;42,5.078125E-6;43,4.6875E-6;44,3.515625E-6;45,2.34375E-6;46,1.953125E-6;47,1.5625E-6;48,0.0;53,0.0;54,1.953125E-6;55,1.171875E-6;56,0.0;62,0.0;63,3.90625E-7;65,3.90625E-7;66,0.0;",
-    "silktouch": false,
-    "dropsList": [
-      {
-        "itemStack": "thaumcraft:crystal_essence:0:{Aspects:[{amount:1,key:\"aqua\"}]}",
-        "fortunes": {
-          "0": 2,
-          "1": 2,
-          "2": 2,
-          "3": 2
-        }
-      }
-    ],
-    "dim": "The End (1)"
-  },
-  {
-    "block": "thaumcraft:crystal_ignis:0",
-    "distrib": "0,0.0;9,0.0;10,1.5625E-6;11,5.078125E-6;12,1.25E-5;13,1.171875E-5;14,1.9921876E-5;15,5.078125E-6;16,8.984375E-6;17,1.3671875E-5;18,1.6015625E-5;19,7.8125E-6;20,3.90625E-6;21,7.8125E-6;22,1.09375E-5;23,1.1328125E-5;24,1.6015625E-5;25,1.4453125E-5;26,7.421875E-6;27,4.296875E-6;28,3.90625E-6;29,5.859375E-6;30,3.90625E-6;31,3.515625E-6;32,3.125E-6;33,1.953125E-6;34,4.6875E-6;35,4.6875E-6;36,4.296875E-6;37,1.953125E-6;38,3.90625E-6;39,2.34375E-6;40,3.90625E-7;41,3.125E-6;42,3.125E-6;43,5.46875E-6;44,4.296875E-6;45,2.734375E-6;46,3.125E-6;47,4.6875E-6;48,0.0;49,1.5625E-6;50,1.171875E-6;51,0.0;",
-    "silktouch": false,
-    "dropsList": [
-      {
-        "itemStack": "thaumcraft:crystal_essence:0:{Aspects:[{amount:1,key:\"ignis\"}]}",
-        "fortunes": {
-          "0": 3,
-          "1": 3,
-          "2": 3,
-          "3": 3
-        }
-      }
-    ],
-    "dim": "The End (1)"
-  },
-  {
-    "block": "thaumcraft:crystal_ordo:0",
-    "distrib": "0,0.0;4,0.0;5,3.90625E-7;6,1.171875E-6;7,3.90625E-7;8,0.0;9,0.0;10,2.34375E-6;11,9.765625E-6;12,7.421875E-6;13,2.1484375E-5;14,1.8359375E-5;15,2.34375E-5;16,2.6171874E-5;17,2.109375E-5;18,1.7578124E-5;19,2.5390626E-5;20,1.328125E-5;21,1.4453125E-5;22,1.640625E-5;23,1.875E-5;24,1.328125E-5;25,1.2109375E-5;26,1.328125E-5;27,1.015625E-5;28,1.2890625E-5;29,9.375E-6;30,8.984375E-6;31,8.59375E-6;32,7.421875E-6;33,6.640625E-6;34,5.078125E-6;35,4.296875E-6;36,7.421875E-6;37,7.03125E-6;38,7.8125E-6;39,3.90625E-6;40,5.078125E-6;41,6.25E-6;42,3.90625E-6;43,3.125E-6;44,7.8125E-7;45,3.125E-6;46,3.125E-6;47,3.515625E-6;48,3.90625E-7;49,0.0;",
-    "silktouch": false,
-    "dropsList": [
-      {
-        "itemStack": "thaumcraft:crystal_essence:0:{Aspects:[{amount:1,key:\"ordo\"}]}",
-        "fortunes": {
-          "0": 4,
-          "1": 4,
-          "2": 4,
-          "3": 4
-        }
-      }
-    ],
-    "dim": "The End (1)"
-  },
-  {
-    "block": "thaumcraft:crystal_perditio:0",
-    "distrib": "0,1.171875E-6;1,1.171875E-6;2,0.0;5,0.0;6,3.90625E-7;7,7.8125E-7;8,1.171875E-6;9,0.0;10,8.59375E-6;11,8.59375E-6;12,3.3203127E-5;13,2.265625E-5;14,2.8515626E-5;15,1.9140625E-5;16,7.03125E-6;17,1.328125E-5;18,2.1484375E-5;19,1.2109375E-5;20,1.015625E-5;21,1.328125E-5;22,1.25E-5;23,1.3671875E-5;24,1.1328125E-5;25,1.328125E-5;26,8.59375E-6;27,1.328125E-5;28,6.640625E-6;29,1.0546875E-5;30,7.8125E-6;31,6.25E-6;32,4.6875E-6;33,8.203125E-6;34,6.640625E-6;35,8.203125E-6;36,1.40625E-5;37,9.375E-6;38,7.421875E-6;39,5.078125E-6;40,8.984375E-6;41,5.859375E-6;42,5.46875E-6;43,7.03125E-6;44,8.203125E-6;45,7.03125E-6;46,7.8125E-6;47,7.421875E-6;48,3.90625E-7;49,1.5625E-6;50,1.953125E-6;51,1.171875E-6;52,0.0;116,0.0;117,3.90625E-7;118,7.8125E-7;119,3.90625E-7;120,0.0;",
-    "silktouch": false,
-    "dropsList": [
-      {
-        "itemStack": "thaumcraft:crystal_essence:0:{Aspects:[{amount:1,key:\"perditio\"}]}",
-        "fortunes": {
-          "0": 2,
-          "1": 2,
-          "2": 2,
-          "3": 2
-        }
-      }
-    ],
-    "dim": "The End (1)"
-  },
-  {
-    "block": "thaumcraft:crystal_terra:0",
-    "distrib": "0,0.0;3,0.0;4,3.90625E-7;5,3.90625E-7;6,7.8125E-7;7,0.0;10,0.0;11,8.984375E-6;12,3.125E-6;13,1.953125E-5;14,2.2265625E-5;15,1.2109375E-5;16,8.203125E-6;17,6.25E-6;18,9.375E-6;19,1.3671875E-5;20,5.078125E-6;21,5.078125E-6;22,4.6875E-6;23,5.859375E-6;24,8.59375E-6;25,7.421875E-6;26,3.125E-6;27,4.6875E-6;28,9.375E-6;29,3.125E-6;30,1.953125E-6;31,2.34375E-6;32,6.25E-6;33,3.515625E-6;34,5.078125E-6;35,1.5625E-6;36,3.515625E-6;37,2.34375E-6;38,2.34375E-6;39,1.953125E-6;40,1.953125E-6;41,1.5625E-6;42,3.90625E-6;43,3.125E-6;44,1.953125E-6;45,3.90625E-7;46,3.90625E-7;47,1.171875E-6;48,0.0;",
-    "silktouch": false,
-    "dropsList": [
-      {
-        "itemStack": "thaumcraft:crystal_essence:0:{Aspects:[{amount:1,key:\"terra\"}]}",
-        "fortunes": {
-          "0": 3,
-          "1": 3,
-          "2": 3,
-          "3": 3
-        }
-      }
-    ],
-    "dim": "The End (1)"
-  },
+		"block": "minecraft:purpur_slab:0",
+		"distrib": "0,0.0;60,0.0;61,3.90625E-7;62,3.90625E-7;63,7.8125E-7;64,5.859375E-7;65,1.171875E-6;66,9.765625E-7;67,1.171875E-6;68,7.8125E-7;69,7.8125E-7;70,5.859375E-7;71,3.90625E-7;72,3.90625E-7;73,1.953125E-7;74,3.90625E-7;75,3.90625E-7;76,5.859375E-7;77,1.171875E-6;78,1.171875E-6;79,1.953125E-6;80,1.7578125E-6;81,9.765625E-7;82,9.765625E-7;83,2.1484375E-6;84,2.5390625E-6;85,1.7578125E-6;86,1.5625E-6;87,1.953125E-6;88,1.3671875E-6;89,1.171875E-6;90,7.8125E-7;91,3.90625E-7;92,1.171875E-6;93,1.7578125E-6;94,1.7578125E-6;95,3.90625E-7;96,7.8125E-7;97,1.7578125E-6;98,9.765625E-7;99,2.1484375E-6;100,2.1484375E-6;101,9.765625E-7;102,7.8125E-7;103,1.7578125E-6;104,2.5390625E-6;105,1.5625E-6;106,1.171875E-6;107,1.7578125E-6;108,2.5390625E-6;109,1.3671875E-6;110,9.765625E-7;111,1.3671875E-6;112,1.953125E-6;113,7.8125E-7;114,3.90625E-7;115,7.8125E-7;116,1.3671875E-6;117,1.3671875E-6;118,1.171875E-6;119,1.5625E-6;120,1.953125E-6;121,9.765625E-7;122,7.8125E-7;123,2.1484375E-6;124,2.734375E-6;125,9.765625E-7;126,7.8125E-7;127,1.3671875E-6;128,7.8125E-7;129,1.953125E-7;131,1.953125E-7;132,3.90625E-7;138,3.90625E-7;139,7.8125E-7;140,7.8125E-7;141,3.90625E-7;142,3.90625E-7;143,1.5625E-6;144,0.0;",
+		"silktouch": false,
+		"dropsList": [
+			{
+				"itemStack": "minecraft:purpur_slab:0",
+				"fortunes": {
+					"0": 1.0,
+					"1": 1.0,
+					"2": 1.0,
+					"3": 1.0
+				}
+			}
+		],
+		"dim": "The End (1)"
+	},
+	{
+		"block": "minecraft:ender_chest:0",
+		"distrib": "0,0.0;88,0.0;89,1.953125E-7;90,0.0;",
+		"silktouch": true,
+		"dropsList": [
+			{
+				"itemStack": "minecraft:obsidian:0",
+				"fortunes": {
+					"0": 8.0,
+					"1": 8.0,
+					"2": 8.0,
+					"3": 8.0
+				}
+			}
+		],
+		"dim": "The End (1)"
+	},
+	{
+		"block": "minecraft:end_bricks:0",
+		"distrib": "0,0.0;53,0.0;54,3.90625E-7;55,3.90625E-7;56,0.0;57,0.0;58,7.8125E-7;59,5.859375E-7;60,0.0;61,4.296875E-6;62,3.515625E-6;63,8.59375E-6;64,3.3203125E-6;65,1.40625E-5;66,8.398438E-6;67,1.3867188E-5;68,3.7109376E-6;69,1.8164063E-5;70,9.570313E-6;71,1.6015625E-5;72,3.125E-6;73,1.09375E-5;74,4.6875E-6;75,4.6875E-6;76,0.0;80,0.0;81,8.59375E-6;82,6.25E-6;83,6.25E-6;84,0.0;85,1.25E-5;86,1.015625E-5;87,1.015625E-5;88,0.0;89,1.7578124E-5;90,1.23046875E-5;91,1.6992188E-5;92,1.953125E-6;93,1.953125E-6;94,0.0;95,5.859375E-6;96,4.8828124E-6;97,5.2734376E-6;98,0.0;99,4.6875E-6;100,3.515625E-6;101,8.398438E-6;102,3.125E-6;103,3.125E-6;104,0.0;105,1.25E-5;106,9.375E-6;107,9.765625E-6;108,0.0;109,1.71875E-5;110,1.2890625E-5;111,1.2695313E-5;112,0.0;113,3.515625E-6;114,2.9296875E-6;115,2.9296875E-6;116,0.0;118,0.0;119,1.953125E-6;120,1.171875E-6;121,5.46875E-6;122,3.125E-6;123,3.125E-6;124,0.0;125,1.0546875E-5;126,8.0078125E-6;127,8.0078125E-6;128,0.0;129,4.6875E-6;130,3.7109376E-6;131,3.7109376E-6;132,0.0;152,0.0;153,5.859375E-7;154,1.953125E-7;155,5.859375E-7;156,0.0;",
+		"silktouch": false,
+		"dim": "The End (1)"
+	},
+	{
+		"block": "minecraft:chest:0",
+		"distrib": "0,0.0;88,0.0;89,1.953125E-7;90,0.0;108,0.0;109,3.90625E-7;110,0.0;",
+		"silktouch": false,
+		"dropsList": [
+			{
+				"itemStack": "minecraft:chest:0",
+				"fortunes": {
+					"0": 1.0,
+					"1": 1.0,
+					"2": 1.0,
+					"3": 1.0
+				}
+			}
+		],
+		"dim": "The End (1)"
+	},
+	{
+		"block": "minecraft:stained_glass:2",
+		"distrib": "0,0.0;61,0.0;62,7.8125E-7;63,7.8125E-7;64,5.859375E-7;65,5.859375E-7;66,2.1484375E-6;67,2.1484375E-6;68,9.765625E-7;69,1.3671875E-6;70,4.4921876E-6;71,4.4921876E-6;72,1.953125E-6;73,1.953125E-6;74,3.125E-6;75,3.125E-6;76,0.0;81,0.0;82,2.34375E-6;83,2.34375E-6;84,0.0;85,0.0;86,2.34375E-6;87,2.34375E-6;88,0.0;89,0.0;90,5.2734376E-6;91,5.2734376E-6;92,7.8125E-7;93,7.8125E-7;94,0.0;95,0.0;96,9.765625E-7;97,9.765625E-7;98,0.0;99,0.0;100,1.171875E-6;101,1.5625E-6;102,1.171875E-6;103,1.171875E-6;104,0.0;105,0.0;106,3.125E-6;107,3.125E-6;108,0.0;109,0.0;110,4.296875E-6;111,4.296875E-6;112,0.0;113,0.0;114,5.859375E-7;115,5.859375E-7;116,0.0;119,0.0;120,7.8125E-7;121,7.8125E-7;122,1.171875E-6;123,1.171875E-6;124,0.0;125,0.0;126,2.5390625E-6;127,2.5390625E-6;128,0.0;129,0.0;130,9.765625E-7;131,9.765625E-7;132,0.0;153,0.0;154,5.859375E-7;155,0.0;",
+		"silktouch": true,
+		"dim": "The End (1)"
+	},
+	{
+		"block": "minecraft:chorus_flower:0",
+		"distrib": "0,0.0;38,0.0;39,1.953125E-7;40,1.953125E-7;41,0.0;44,0.0;45,1.953125E-7;46,0.0;47,0.0;48,1.953125E-7;50,1.953125E-7;51,5.859375E-7;52,1.953125E-7;54,1.953125E-7;55,3.90625E-7;56,5.859375E-7;57,1.171875E-6;58,5.859375E-7;59,1.3671875E-6;60,1.953125E-6;61,7.6171873E-6;62,1.2695313E-5;63,3.2617187E-5;64,1.171875E-6;65,1.953125E-6;66,3.90625E-6;67,5.46875E-6;68,9.960938E-6;69,1.4648437E-5;70,2.1289063E-5;71,1.8945313E-5;72,1.9140625E-5;73,2.1289063E-5;74,2.0117188E-5;75,2.1484375E-5;76,2.4414063E-5;77,2.7929687E-5;78,2.34375E-5;79,2.0898438E-5;80,0.0;81,1.953125E-7;82,0.0;",
+		"silktouch": false,
+		"dim": "The End (1)"
+	},
+	{
+		"block": "thaumcraft:crystal_aqua:0",
+		"distrib": "0,0.0;8,0.0;9,1.171875E-6;10,2.5390625E-6;11,1.2109375E-5;12,1.171875E-5;13,2.1875E-5;14,2.5390626E-5;15,1.9726562E-5;16,1.9335937E-5;17,1.8945313E-5;18,2.1679687E-5;19,1.5039062E-5;20,1.3671875E-5;21,1.23046875E-5;22,1.2109375E-5;23,1.09375E-5;24,1.1914062E-5;25,1.09375E-5;26,1.2109375E-5;27,1.1132813E-5;28,6.8359377E-6;29,1.0742187E-5;30,7.6171873E-6;31,8.398438E-6;32,1.1523438E-5;33,7.03125E-6;34,5.6640624E-6;35,4.6875E-6;36,4.6875E-6;37,7.03125E-6;38,8.0078125E-6;39,7.03125E-6;40,6.640625E-6;41,4.4921876E-6;42,6.4453125E-6;43,4.4921876E-6;44,3.3203125E-6;45,3.90625E-6;46,8.203125E-6;47,6.4453125E-6;48,7.8125E-7;49,0.0;50,9.765625E-7;51,7.8125E-7;52,5.859375E-7;53,0.0;95,0.0;96,3.90625E-7;97,0.0;",
+		"silktouch": false,
+		"dropsList": [
+			{
+				"itemStack": "thaumcraft:crystal_essence:0:{Aspects:[{key:\"aqua\",amount:1}]}",
+				"fortunes": {
+					"0": 4.0,
+					"1": 4.0,
+					"2": 4.0,
+					"3": 4.0
+				}
+			}
+		],
+		"dim": "The End (1)"
+	},
+	{
+		"block": "minecraft:bedrock:0",
+		"distrib": "0,0.0;60,0.0;61,1.953125E-7;62,9.765625E-7;63,0.0;66,0.0;67,1.953125E-7;68,0.0;69,1.953125E-7;70,0.0;75,0.0;76,1.953125E-7;77,0.0;78,0.0;79,1.953125E-7;80,0.0;84,0.0;85,1.953125E-7;86,0.0;87,0.0;88,1.953125E-7;89,0.0;90,0.0;91,1.953125E-7;92,0.0;96,0.0;97,1.953125E-7;98,0.0;99,0.0;100,1.953125E-7;101,0.0;102,0.0;103,1.953125E-7;104,0.0;",
+		"silktouch": true,
+		"dim": "The End (1)"
+	},
+	{
+		"block": "forestry:beehives:4",
+		"distrib": "0,0.0;32,0.0;33,3.90625E-7;34,0.0;35,0.0;36,1.953125E-7;38,1.953125E-7;39,0.0;40,0.0;41,1.953125E-7;42,3.90625E-7;43,3.90625E-7;44,1.953125E-7;45,0.0;46,3.90625E-7;47,0.0;50,0.0;51,1.953125E-7;52,1.953125E-7;53,0.0;55,0.0;56,1.953125E-7;57,9.765625E-7;58,2.734375E-6;59,3.3203125E-6;60,5.078125E-6;61,5.078125E-6;62,2.734375E-6;63,2.5390625E-6;64,3.90625E-7;65,0.0;67,0.0;68,1.953125E-7;69,0.0;",
+		"silktouch": false,
+		"dropsList": [
+			{
+				"itemStack": "forestry:bee_combs:8",
+				"fortunes": {
+					"0": 0.9021,
+					"1": 0.894,
+					"2": 0.9035,
+					"3": 0.9097
+				}
+			},
+			{
+				"itemStack": "forestry:bee_princess_ge:0:{IsAnalyzed:0b,Health:60,MaxH:60,Genome:{Chromosomes:[{Slot:0b,UID0:\"forestry.speciesEnded\",UID1:\"forestry.speciesEnded\"},{Slot:1b,UID0:\"forestry.speedSlower\",UID1:\"forestry.speedSlower\"},{Slot:2b,UID0:\"forestry.lifespanLonger\",UID1:\"forestry.lifespanLonger\"},{Slot:3b,UID0:\"forestry.fertilityLow\",UID1:\"forestry.fertilityLow\"},{Slot:4b,UID0:\"forestry.toleranceUp1\",UID1:\"forestry.toleranceUp1\"},{Slot:5b,UID0:\"forestry.boolTrue\",UID1:\"forestry.boolTrue\"},{Slot:6b,UID0:\"forestry.toleranceNone\",UID1:\"forestry.toleranceNone\"},{Slot:7b,UID0:\"forestry.boolFalse\",UID1:\"forestry.boolFalse\"},{Slot:8b,UID0:\"forestry.boolFalse\",UID1:\"forestry.boolFalse\"},{Slot:9b,UID0:\"forestry.flowersEnd\",UID1:\"forestry.flowersEnd\"},{Slot:10b,UID0:\"forestry.floweringSlowest\",UID1:\"forestry.floweringSlowest\"},{Slot:11b,UID0:\"forestry.territoryLarge\",UID1:\"forestry.territoryLarge\"},{Slot:12b,UID0:\"forestry.effectMisanthrope\",UID1:\"forestry.effectMisanthrope\"}]}}",
+				"fortunes": {
+					"0": 1.0,
+					"1": 1.0,
+					"2": 1.0,
+					"3": 1.0
+				}
+			},
+			{
+				"itemStack": "forestry:bee_drone_ge:0:{IsAnalyzed:0b,Health:60,MaxH:60,Genome:{Chromosomes:[{Slot:0b,UID0:\"forestry.speciesEnded\",UID1:\"forestry.speciesEnded\"},{Slot:1b,UID0:\"forestry.speedSlower\",UID1:\"forestry.speedSlower\"},{Slot:2b,UID0:\"forestry.lifespanLonger\",UID1:\"forestry.lifespanLonger\"},{Slot:3b,UID0:\"forestry.fertilityLow\",UID1:\"forestry.fertilityLow\"},{Slot:4b,UID0:\"forestry.toleranceUp1\",UID1:\"forestry.toleranceUp1\"},{Slot:5b,UID0:\"forestry.boolTrue\",UID1:\"forestry.boolTrue\"},{Slot:6b,UID0:\"forestry.toleranceNone\",UID1:\"forestry.toleranceNone\"},{Slot:7b,UID0:\"forestry.boolFalse\",UID1:\"forestry.boolFalse\"},{Slot:8b,UID0:\"forestry.boolFalse\",UID1:\"forestry.boolFalse\"},{Slot:9b,UID0:\"forestry.flowersEnd\",UID1:\"forestry.flowersEnd\"},{Slot:10b,UID0:\"forestry.floweringSlowest\",UID1:\"forestry.floweringSlowest\"},{Slot:11b,UID0:\"forestry.territoryLarge\",UID1:\"forestry.territoryLarge\"},{Slot:12b,UID0:\"forestry.effectMisanthrope\",UID1:\"forestry.effectMisanthrope\"}]}}",
+				"fortunes": {
+					"0": 0.899,
+					"1": 0.8978,
+					"2": 0.8899,
+					"3": 0.9041
+				}
+			}
+		],
+		"dim": "The End (1)"
+	},
+	{
+		"block": "thaumcraft:crystal_ignis:0",
+		"distrib": "0,0.0;3,0.0;4,1.953125E-7;5,0.0;8,0.0;9,1.171875E-6;10,3.3203125E-6;11,1.25E-5;12,1.015625E-5;13,1.7773438E-5;14,1.25E-5;15,1.4257813E-5;16,1.8554687E-5;17,1.1914062E-5;18,6.640625E-6;19,1.23046875E-5;20,1.23046875E-5;21,1.0546875E-5;22,1.9140625E-5;23,8.984375E-6;24,8.59375E-6;25,1.3867188E-5;26,1.5429687E-5;27,1.2109375E-5;28,9.765625E-6;29,6.4453125E-6;30,1.0546875E-5;31,8.984375E-6;32,8.398438E-6;33,5.46875E-6;34,8.0078125E-6;35,7.8125E-6;36,9.765625E-6;37,6.640625E-6;38,4.8828124E-6;39,4.1015624E-6;40,4.1015624E-6;41,5.6640624E-6;42,7.2265625E-6;43,6.0546877E-6;44,5.859375E-6;45,5.46875E-6;46,3.515625E-6;47,6.0546877E-6;48,7.8125E-7;49,3.90625E-7;50,3.90625E-7;51,0.0;58,0.0;59,1.953125E-6;60,0.0;62,0.0;63,1.3671875E-6;64,0.0;66,0.0;67,3.90625E-7;68,0.0;78,0.0;79,1.171875E-6;80,0.0;",
+		"silktouch": false,
+		"dropsList": [
+			{
+				"itemStack": "thaumcraft:crystal_essence:0:{Aspects:[{key:\"ignis\",amount:1}]}",
+				"fortunes": {
+					"0": 4.0,
+					"1": 4.0,
+					"2": 4.0,
+					"3": 4.0
+				}
+			}
+		],
+		"dim": "The End (1)"
+	},
+	{
+		"block": "minecraft:purpur_pillar:0",
+		"distrib": "0,0.0;53,0.0;54,3.90625E-7;55,7.8125E-7;56,5.859375E-7;57,1.953125E-7;58,7.8125E-7;59,1.3671875E-6;60,9.765625E-7;61,1.171875E-6;62,7.8125E-7;63,2.34375E-6;64,1.953125E-7;65,2.1484375E-6;66,1.5625E-6;67,1.953125E-6;68,3.90625E-7;69,2.34375E-6;70,1.7578125E-6;71,2.34375E-6;72,5.859375E-7;73,3.90625E-6;74,3.3203125E-6;75,1.0742187E-5;76,2.34375E-6;77,5.859375E-6;78,3.515625E-6;79,6.25E-6;80,2.34375E-6;81,1.1914062E-5;82,6.25E-6;83,7.421875E-6;84,1.171875E-6;85,7.8125E-6;86,6.25E-6;87,8.59375E-6;88,2.34375E-6;89,1.0742187E-5;90,8.203125E-6;91,1.1328125E-5;92,2.734375E-6;93,1.2890625E-5;94,1.015625E-5;95,1.4648437E-5;96,1.171875E-6;97,9.570313E-6;98,8.398438E-6;99,1.015625E-5;100,5.859375E-7;101,1.1132813E-5;102,1.0351562E-5;103,1.40625E-5;104,2.34375E-6;105,1.2695313E-5;106,1.0351562E-5;107,1.1914062E-5;108,2.34375E-6;109,1.2695313E-5;110,1.0351562E-5;111,1.23046875E-5;112,0.0;113,1.015625E-5;114,1.015625E-5;115,1.23046875E-5;116,0.0;117,1.09375E-5;118,1.09375E-5;119,1.23046875E-5;120,3.90625E-7;121,1.1328125E-5;122,1.1132813E-5;123,1.2890625E-5;124,0.0;125,1.328125E-5;126,1.328125E-5;127,1.3085937E-5;128,0.0;129,2.9296875E-6;131,2.9296875E-6;132,0.0;133,4.6875E-6;134,4.6875E-6;135,4.296875E-6;136,0.0;137,4.1015624E-6;138,4.1015624E-6;139,2.9296875E-6;140,0.0;141,2.9296875E-6;143,2.9296875E-6;144,0.0;146,0.0;147,2.5390625E-6;148,9.765625E-7;149,3.125E-6;150,1.953125E-7;152,1.953125E-7;153,3.90625E-7;154,5.859375E-7;155,7.8125E-7;156,3.90625E-7;157,3.90625E-7;158,1.953125E-7;159,1.953125E-7;160,0.0;",
+		"silktouch": false,
+		"dim": "The End (1)"
+	},
+	{
+		"block": "minecraft:purpur_stairs:0",
+		"distrib": "0,0.0;59,0.0;60,3.90625E-7;61,0.0;62,3.90625E-7;63,0.0;64,8.789062E-6;65,0.0;66,7.2265625E-6;67,0.0;68,1.875E-5;69,0.0;70,7.6171873E-6;71,0.0;72,2.1875E-5;73,0.0;74,9.570313E-6;75,2.734375E-6;76,1.6796876E-5;77,9.570313E-6;78,3.7109376E-6;79,2.1484375E-6;80,3.90625E-6;81,2.34375E-6;82,5.2734376E-6;83,7.2265625E-6;84,1.7382812E-5;85,2.5390625E-6;86,4.1015624E-6;87,1.5625E-6;88,2.734375E-5;89,1.171875E-6;90,2.5390625E-6;91,5.859375E-7;92,3.066406E-5;93,1.953125E-7;94,1.484375E-5;95,2.5390625E-6;96,3.90625E-6;97,6.640625E-6;98,1.6015625E-5;99,2.9296875E-6;100,6.4453125E-6;101,4.8828124E-6;102,1.4453125E-5;103,2.9296875E-6;104,1.9921876E-5;105,1.7578125E-6;106,2.9296875E-6;107,1.3671875E-6;108,3.7695314E-5;109,5.859375E-7;110,1.7578125E-6;111,1.953125E-7;112,2.2460938E-5;113,2.5390625E-6;114,2.5390625E-6;115,1.5625E-6;116,6.0546877E-6;117,3.90625E-6;118,3.90625E-6;119,1.5625E-6;120,3.3203125E-6;121,4.296875E-6;122,7.8125E-6;123,1.953125E-6;124,1.015625E-5;125,2.9296875E-6;126,3.515625E-6;127,7.8125E-7;128,1.6015625E-5;129,0.0;130,7.8125E-7;131,0.0;132,6.640625E-6;133,0.0;134,1.5625E-6;135,0.0;136,5.859375E-7;137,0.0;138,1.3671875E-6;139,0.0;140,1.7578125E-6;141,0.0;142,9.765625E-7;143,0.0;147,0.0;148,1.171875E-6;149,5.859375E-7;150,7.8125E-7;151,1.953125E-7;152,1.5625E-6;153,3.90625E-7;154,3.90625E-7;155,2.1484375E-6;156,2.1484375E-6;157,1.7578125E-6;158,0.0;",
+		"silktouch": false,
+		"dropsList": [
+			{
+				"itemStack": "minecraft:purpur_stairs:0",
+				"fortunes": {
+					"0": 1.0,
+					"1": 1.0,
+					"2": 1.0,
+					"3": 1.0
+				}
+			}
+		],
+		"dim": "The End (1)"
+	},
+	{
+		"block": "minecraft:end_rod:0",
+		"distrib": "0,0.0;64,0.0;65,7.8125E-7;66,0.0;67,5.859375E-7;68,0.0;69,1.5625E-6;70,0.0;71,3.90625E-7;72,0.0;73,1.5625E-6;74,0.0;75,1.953125E-7;76,0.0;77,7.8125E-7;78,7.8125E-7;79,0.0;81,0.0;82,7.8125E-7;83,0.0;84,1.171875E-6;85,1.5625E-6;86,0.0;87,0.0;88,7.8125E-7;89,2.34375E-6;90,3.90625E-7;92,3.90625E-7;93,1.5625E-6;94,3.90625E-7;95,1.7578125E-6;96,0.0;97,0.0;98,1.5625E-6;99,7.8125E-7;100,0.0;101,3.90625E-7;102,1.171875E-6;103,9.765625E-7;104,0.0;105,1.953125E-6;106,7.8125E-7;107,3.90625E-7;108,0.0;109,2.34375E-6;110,7.8125E-7;111,3.90625E-7;112,0.0;113,7.8125E-7;114,7.8125E-7;115,3.90625E-7;116,0.0;117,3.90625E-7;118,7.8125E-7;119,3.90625E-7;120,0.0;121,0.0;122,1.5625E-6;123,7.8125E-7;124,0.0;125,7.8125E-7;126,7.8125E-7;127,3.90625E-7;128,0.0;129,1.171875E-6;130,0.0;132,0.0;133,3.90625E-7;134,0.0;137,0.0;138,3.90625E-7;139,0.0;141,0.0;142,1.171875E-6;143,0.0;155,0.0;156,1.953125E-7;157,0.0;",
+		"silktouch": false,
+		"dropsList": [
+			{
+				"itemStack": "minecraft:end_rod:0",
+				"fortunes": {
+					"0": 1.0,
+					"1": 1.0,
+					"2": 1.0,
+					"3": 1.0
+				}
+			}
+		],
+		"dim": "The End (1)"
+	},
+	{
+		"block": "minecraft:banner:13:{BlockEntityTag:{Patterns:[{Pattern:\"tt\",Color:0},{Pattern:\"bt\",Color:0}]}}",
+		"distrib": "0,0.0;87,0.0;88,1.5625E-6;89,0.0;93,0.0;94,1.171875E-6;95,0.0;103,0.0;104,1.5625E-6;105,0.0;",
+		"silktouch": false,
+		"dropsList": [
+			{
+				"itemStack": "minecraft:banner:13:{BlockEntityTag:{Patterns:[{Pattern:\"tt\",Color:0},{Pattern:\"bt\",Color:0}]}}",
+				"fortunes": {
+					"0": 1.0,
+					"1": 1.0,
+					"2": 1.0,
+					"3": 1.0
+				}
+			}
+		],
+		"dim": "The End (1)"
+	},
+	{
+		"block": "biomesoplenty:biome_block:0",
+		"distrib": "0,0.0;9,0.0;10,3.515625E-6;11,1.9140625E-5;12,4.921875E-5;13,1.1308594E-4;14,1.7578126E-4;15,2.3476563E-4;16,2.7421876E-4;17,3.9316405E-4;18,4.501953E-4;19,4.6660157E-4;20,4.8066405E-4;21,4.859375E-4;22,5.449219E-4;23,5.1035156E-4;24,6.205078E-4;25,6.513672E-4;26,6.3066406E-4;27,6.6757813E-4;28,6.310547E-4;29,6.738281E-4;30,7.0976565E-4;31,7.046875E-4;32,7.144531E-4;33,0.0;",
+		"silktouch": true,
+		"dropsList": [
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:6}",
+				"fortunes": {
+					"0": 0.0073,
+					"1": 0.0119,
+					"2": 0.0161,
+					"3": 0.0212
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:82}",
+				"fortunes": {
+					"0": 0.0085,
+					"1": 0.0116,
+					"2": 0.0167,
+					"3": 0.0234
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:70}",
+				"fortunes": {
+					"0": 0.0104,
+					"1": 0.0149,
+					"2": 0.0167,
+					"3": 0.022
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:168}",
+				"fortunes": {
+					"0": 0.0089,
+					"1": 0.0152,
+					"2": 0.0169,
+					"3": 0.0216
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:144}",
+				"fortunes": {
+					"0": 0.0103,
+					"1": 0.0087,
+					"2": 0.0158,
+					"3": 0.0201
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:128}",
+				"fortunes": {
+					"0": 0.0078,
+					"1": 0.0121,
+					"2": 0.017,
+					"3": 0.0202
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:116}",
+				"fortunes": {
+					"0": 0.0089,
+					"1": 0.0109,
+					"2": 0.019,
+					"3": 0.0216
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:104}",
+				"fortunes": {
+					"0": 0.0084,
+					"1": 0.0133,
+					"2": 0.0162,
+					"3": 0.022
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:171}",
+				"fortunes": {
+					"0": 0.0111,
+					"1": 0.0119,
+					"2": 0.019,
+					"3": 0.0219
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:14}",
+				"fortunes": {
+					"0": 0.008,
+					"1": 0.0232,
+					"2": 0.0191,
+					"3": 0.0226
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:143}",
+				"fortunes": {
+					"0": 0.0087,
+					"1": 0.0114,
+					"2": 0.0179,
+					"3": 0.0211
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:30}",
+				"fortunes": {
+					"0": 0.0081,
+					"1": 0.0143,
+					"2": 0.017,
+					"3": 0.0223
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:94}",
+				"fortunes": {
+					"0": 0.0085,
+					"1": 0.008,
+					"2": 0.0157,
+					"3": 0.0213
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:78}",
+				"fortunes": {
+					"0": 0.0095,
+					"1": 0.0127,
+					"2": 0.0179,
+					"3": 0.0209
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:66}",
+				"fortunes": {
+					"0": 0.0096,
+					"1": 0.0107,
+					"2": 0.0177,
+					"3": 0.0214
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:54}",
+				"fortunes": {
+					"0": 0.0092,
+					"1": 0.0145,
+					"2": 0.0167,
+					"3": 0.0234
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:5}",
+				"fortunes": {
+					"0": 0.0088,
+					"1": 0.0104,
+					"2": 0.0174,
+					"3": 0.0244
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:93}",
+				"fortunes": {
+					"0": 0.0072,
+					"1": 0.0131,
+					"2": 0.0182,
+					"3": 0.0237
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:81}",
+				"fortunes": {
+					"0": 0.0105,
+					"1": 0.0147,
+					"2": 0.0183,
+					"3": 0.0214
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:169}",
+				"fortunes": {
+					"0": 0.0068,
+					"1": 0.0115,
+					"2": 0.0178,
+					"3": 0.0207
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:145}",
+				"fortunes": {
+					"0": 0.0085,
+					"1": 0.0098,
+					"2": 0.0171,
+					"3": 0.0199
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:117}",
+				"fortunes": {
+					"0": 0.0069,
+					"1": 0.0133,
+					"2": 0.0156,
+					"3": 0.0223
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:105}",
+				"fortunes": {
+					"0": 0.0107,
+					"1": 0.0146,
+					"2": 0.0157,
+					"3": 0.0239
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:172}",
+				"fortunes": {
+					"0": 0.008,
+					"1": 0.0169,
+					"2": 0.0152,
+					"3": 0.0223
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:49}",
+				"fortunes": {
+					"0": 0.0086,
+					"1": 0.0099,
+					"2": 0.0157,
+					"3": 0.0201
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:37}",
+				"fortunes": {
+					"0": 0.0086,
+					"1": 0.0148,
+					"2": 0.0182,
+					"3": 0.0236
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:120}",
+				"fortunes": {
+					"0": 0.0097,
+					"1": 0.0151,
+					"2": 0.0167,
+					"3": 0.0197
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:53}",
+				"fortunes": {
+					"0": 0.0079,
+					"1": 0.0097,
+					"2": 0.017,
+					"3": 0.0203
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:89}",
+				"fortunes": {
+					"0": 0.0092,
+					"1": 0.0119,
+					"2": 0.0163,
+					"3": 0.0235
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:77}",
+				"fortunes": {
+					"0": 0.0091,
+					"1": 0.007,
+					"2": 0.016,
+					"3": 0.0217
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:65}",
+				"fortunes": {
+					"0": 0.0064,
+					"1": 0.0127,
+					"2": 0.0166,
+					"3": 0.02
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:60}",
+				"fortunes": {
+					"0": 0.0081,
+					"1": 0.0126,
+					"2": 0.0166,
+					"3": 0.0218
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:4}",
+				"fortunes": {
+					"0": 0.0098,
+					"1": 0.015,
+					"2": 0.018,
+					"3": 0.0211
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:114}",
+				"fortunes": {
+					"0": 0.0089,
+					"1": 0.0136,
+					"2": 0.0151,
+					"3": 0.0244
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:178}",
+				"fortunes": {
+					"0": 0.0088,
+					"1": 0.0114,
+					"2": 0.0184,
+					"3": 0.0208
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:138}",
+				"fortunes": {
+					"0": 0.0082,
+					"1": 0.0105,
+					"2": 0.0179,
+					"3": 0.0224
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:126}",
+				"fortunes": {
+					"0": 0.0074,
+					"1": 0.011,
+					"2": 0.0174,
+					"3": 0.0241
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:153}",
+				"fortunes": {
+					"0": 0.0079,
+					"1": 0.0148,
+					"2": 0.0175,
+					"3": 0.0218
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:141}",
+				"fortunes": {
+					"0": 0.0095,
+					"1": 0.0171,
+					"2": 0.0154,
+					"3": 0.0221
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:84}",
+				"fortunes": {
+					"0": 0.0087,
+					"1": 0.0158,
+					"2": 0.0174,
+					"3": 0.0232
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:72}",
+				"fortunes": {
+					"0": 0.008,
+					"1": 0.0119,
+					"2": 0.0183,
+					"3": 0.0203
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:68}",
+				"fortunes": {
+					"0": 0.0077,
+					"1": 0.0088,
+					"2": 0.0159,
+					"3": 0.024
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:56}",
+				"fortunes": {
+					"0": 0.0087,
+					"1": 0.0132,
+					"2": 0.019,
+					"3": 0.0204
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:44}",
+				"fortunes": {
+					"0": 0.0109,
+					"1": 0.0111,
+					"2": 0.0159,
+					"3": 0.0215
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:32}",
+				"fortunes": {
+					"0": 0.0091,
+					"1": 0.0154,
+					"2": 0.0177,
+					"3": 0.0211
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:3}",
+				"fortunes": {
+					"0": 0.0078,
+					"1": 0.0158,
+					"2": 0.0193,
+					"3": 0.021
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:71}",
+				"fortunes": {
+					"0": 0.0085,
+					"1": 0.0134,
+					"2": 0.0188,
+					"3": 0.0231
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:139}",
+				"fortunes": {
+					"0": 0.0085,
+					"1": 0.0124,
+					"2": 0.0174,
+					"3": 0.0205
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:115}",
+				"fortunes": {
+					"0": 0.0089,
+					"1": 0.0112,
+					"2": 0.0175,
+					"3": 0.0204
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:27}",
+				"fortunes": {
+					"0": 0.0081,
+					"1": 0.0107,
+					"2": 0.0166,
+					"3": 0.0244
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:170}",
+				"fortunes": {
+					"0": 0.0094,
+					"1": 0.0123,
+					"2": 0.0188,
+					"3": 0.0222
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:154}",
+				"fortunes": {
+					"0": 0.0101,
+					"1": 0.0186,
+					"2": 0.0164,
+					"3": 0.0212
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:142}",
+				"fortunes": {
+					"0": 0.0097,
+					"1": 0.0128,
+					"2": 0.0168,
+					"3": 0.0223
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:83}",
+				"fortunes": {
+					"0": 0.0077,
+					"1": 0.0122,
+					"2": 0.0166,
+					"3": 0.02
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:79}",
+				"fortunes": {
+					"0": 0.0087,
+					"1": 0.0116,
+					"2": 0.016,
+					"3": 0.0215
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:67}",
+				"fortunes": {
+					"0": 0.0084,
+					"1": 0.0105,
+					"2": 0.0156,
+					"3": 0.0216
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:55}",
+				"fortunes": {
+					"0": 0.0099,
+					"1": 0.013,
+					"2": 0.0174,
+					"3": 0.0226
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:43}",
+				"fortunes": {
+					"0": 0.0076,
+					"1": 0.0137,
+					"2": 0.018,
+					"3": 0.0194
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:90}",
+				"fortunes": {
+					"0": 0.0083,
+					"1": 0.0146,
+					"2": 0.0183,
+					"3": 0.0233
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:2}",
+				"fortunes": {
+					"0": 0.0065,
+					"1": 0.0144,
+					"2": 0.0183,
+					"3": 0.0227
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:136}",
+				"fortunes": {
+					"0": 0.0073,
+					"1": 0.0138,
+					"2": 0.0168,
+					"3": 0.0228
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:124}",
+				"fortunes": {
+					"0": 0.0073,
+					"1": 0.0151,
+					"2": 0.0183,
+					"3": 0.0207
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:148}",
+				"fortunes": {
+					"0": 0.0083,
+					"1": 0.0112,
+					"2": 0.018,
+					"3": 0.0232
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:58}",
+				"fortunes": {
+					"0": 0.0078,
+					"1": 0.0104,
+					"2": 0.0187,
+					"3": 0.0228
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:175}",
+				"fortunes": {
+					"0": 0.0094,
+					"1": 0.0124,
+					"2": 0.0171,
+					"3": 0.0196
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:86}",
+				"fortunes": {
+					"0": 0.0083,
+					"1": 0.0123,
+					"2": 0.017,
+					"3": 0.0226
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:74}",
+				"fortunes": {
+					"0": 0.0101,
+					"1": 0.0135,
+					"2": 0.0169,
+					"3": 0.0209
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:62}",
+				"fortunes": {
+					"0": 0.0081,
+					"1": 0.0086,
+					"2": 0.0167,
+					"3": 0.0202
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:50}",
+				"fortunes": {
+					"0": 0.0095,
+					"1": 0.0142,
+					"2": 0.0169,
+					"3": 0.0232
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:46}",
+				"fortunes": {
+					"0": 0.0085,
+					"1": 0.0154,
+					"2": 0.0161,
+					"3": 0.0215
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:1}",
+				"fortunes": {
+					"0": 0.0078,
+					"1": 0.019,
+					"2": 0.0173,
+					"3": 0.0202
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:125}",
+				"fortunes": {
+					"0": 0.0076,
+					"1": 0.0149,
+					"2": 0.0173,
+					"3": 0.0213
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:113}",
+				"fortunes": {
+					"0": 0.0084,
+					"1": 0.0126,
+					"2": 0.0185,
+					"3": 0.0187
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:101}",
+				"fortunes": {
+					"0": 0.0101,
+					"1": 0.0121,
+					"2": 0.0166,
+					"3": 0.0192
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:177}",
+				"fortunes": {
+					"0": 0.0095,
+					"1": 0.0141,
+					"2": 0.0165,
+					"3": 0.0219
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:137}",
+				"fortunes": {
+					"0": 0.0101,
+					"1": 0.0142,
+					"2": 0.0175,
+					"3": 0.0234
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:69}",
+				"fortunes": {
+					"0": 0.0084,
+					"1": 0.013,
+					"2": 0.0181,
+					"3": 0.0219
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:176}",
+				"fortunes": {
+					"0": 0.0088,
+					"1": 0.0173,
+					"2": 0.0168,
+					"3": 0.0216
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:152}",
+				"fortunes": {
+					"0": 0.0083,
+					"1": 0.0089,
+					"2": 0.0193,
+					"3": 0.0223
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:29}",
+				"fortunes": {
+					"0": 0.0078,
+					"1": 0.0135,
+					"2": 0.0182,
+					"3": 0.0221
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:85}",
+				"fortunes": {
+					"0": 0.0096,
+					"1": 0.0124,
+					"2": 0.0193,
+					"3": 0.0237
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:73}",
+				"fortunes": {
+					"0": 0.0103,
+					"1": 0.0133,
+					"2": 0.0176,
+					"3": 0.0233
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:61}",
+				"fortunes": {
+					"0": 0.0093,
+					"1": 0.0154,
+					"2": 0.0173,
+					"3": 0.0208
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:57}",
+				"fortunes": {
+					"0": 0.0078,
+					"1": 0.0143,
+					"2": 0.0179,
+					"3": 0.0196
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:45}",
+				"fortunes": {
+					"0": 0.0091,
+					"1": 0.0154,
+					"2": 0.0166,
+					"3": 0.0231
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:21}",
+				"fortunes": {
+					"0": 0.0089,
+					"1": 0.0158,
+					"2": 0.0184,
+					"3": 0.0213
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:92}",
+				"fortunes": {
+					"0": 0.0099,
+					"1": 0.0162,
+					"2": 0.0174,
+					"3": 0.0196
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:80}",
+				"fortunes": {
+					"0": 0.0079,
+					"1": 0.0103,
+					"2": 0.0182,
+					"3": 0.0237
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:146}",
+				"fortunes": {
+					"0": 0.0077,
+					"1": 0.0147,
+					"2": 0.0158,
+					"3": 0.0229
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:122}",
+				"fortunes": {
+					"0": 0.0087,
+					"1": 0.0113,
+					"2": 0.015,
+					"3": 0.0223
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:118}",
+				"fortunes": {
+					"0": 0.0075,
+					"1": 0.0163,
+					"2": 0.0185,
+					"3": 0.0158
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:106}",
+				"fortunes": {
+					"0": 0.0091,
+					"1": 0.0146,
+					"2": 0.0184,
+					"3": 0.0216
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:48}",
+				"fortunes": {
+					"0": 0.0098,
+					"1": 0.0116,
+					"2": 0.0173,
+					"3": 0.0229
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:121}",
+				"fortunes": {
+					"0": 0.0084,
+					"1": 0.0127,
+					"2": 0.0188,
+					"3": 0.0233
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:173}",
+				"fortunes": {
+					"0": 0.0082,
+					"1": 0.0116,
+					"2": 0.0176,
+					"3": 0.0224
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:64}",
+				"fortunes": {
+					"0": 0.0072,
+					"1": 0.0129,
+					"2": 0.0172,
+					"3": 0.0234
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:52}",
+				"fortunes": {
+					"0": 0.0106,
+					"1": 0.0118,
+					"2": 0.0161,
+					"3": 0.0203
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:12}",
+				"fortunes": {
+					"0": 0.0082,
+					"1": 0.0173,
+					"2": 0.0174,
+					"3": 0.021
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:88}",
+				"fortunes": {
+					"0": 0.0091,
+					"1": 0.018,
+					"2": 0.0192,
+					"3": 0.021
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:76}",
+				"fortunes": {
+					"0": 0.0095,
+					"1": 0.0123,
+					"2": 0.0174,
+					"3": 0.0206
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:119}",
+				"fortunes": {
+					"0": 0.0095,
+					"1": 0.0074,
+					"2": 0.0154,
+					"3": 0.0202
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:91}",
+				"fortunes": {
+					"0": 0.0094,
+					"1": 0.0089,
+					"2": 0.0171,
+					"3": 0.0224
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:135}",
+				"fortunes": {
+					"0": 0.0081,
+					"1": 0.0147,
+					"2": 0.0172,
+					"3": 0.0221
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:123}",
+				"fortunes": {
+					"0": 0.0071,
+					"1": 0.0121,
+					"2": 0.0169,
+					"3": 0.0229
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:107}",
+				"fortunes": {
+					"0": 0.0079,
+					"1": 0.0147,
+					"2": 0.0181,
+					"3": 0.024
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:159}",
+				"fortunes": {
+					"0": 0.0085,
+					"1": 0.0106,
+					"2": 0.0156,
+					"3": 0.0196
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:150}",
+				"fortunes": {
+					"0": 0.0091,
+					"1": 0.014,
+					"2": 0.0187,
+					"3": 0.0217
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:59}",
+				"fortunes": {
+					"0": 0.0102,
+					"1": 0.018,
+					"2": 0.0192,
+					"3": 0.023
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:47}",
+				"fortunes": {
+					"0": 0.0078,
+					"1": 0.0123,
+					"2": 0.0179,
+					"3": 0.0227
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:174}",
+				"fortunes": {
+					"0": 0.0098,
+					"1": 0.0111,
+					"2": 0.0172,
+					"3": 0.0219
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:75}",
+				"fortunes": {
+					"0": 0.009,
+					"1": 0.0113,
+					"2": 0.0182,
+					"3": 0.0212
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:63}",
+				"fortunes": {
+					"0": 0.009,
+					"1": 0.0112,
+					"2": 0.0154,
+					"3": 0.023
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:51}",
+				"fortunes": {
+					"0": 0.0072,
+					"1": 0.0139,
+					"2": 0.0166,
+					"3": 0.0224
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:35}",
+				"fortunes": {
+					"0": 0.0098,
+					"1": 0.0146,
+					"2": 0.0176,
+					"3": 0.0222
+				}
+			},
+			{
+				"itemStack": "biomesoplenty:biome_essence:0:{biomeID:87}",
+				"fortunes": {
+					"0": 0.0095,
+					"1": 0.01,
+					"2": 0.0156,
+					"3": 0.0201
+				}
+			}
+		],
+		"dim": "The End (1)"
+	},
+	{
+		"block": "minecraft:air:0",
+		"distrib": "0,0.38278222;1,0.38278222;2,0.3827791;3,0.38276112;4,0.38274276;5,0.38271114;6,0.3826539;7,0.38256797;8,0.38242128;9,0.38226426;10,0.38130254;11,0.3762578;12,0.3639205;13,0.3459117;14,0.32567462;15,0.3064072;16,0.28769746;17,0.27085996;18,0.25578535;19,0.24243672;20,0.23049843;21,0.2195918;22,0.2096791;23,0.20059434;24,0.19218574;25,0.18494043;26,0.17825624;27,0.1719123;28,0.1659664;29,0.16072011;30,0.1558379;31,0.15134454;32,0.13182305;33,0.13098887;34,0.13031875;35,0.1298293;36,0.12981172;37,0.1295377;38,0.12927715;39,0.12906328;40,0.12885976;41,0.12859668;42,0.12849824;43,0.12861523;44,0.1287834;45,0.1286916;46,0.12859024;47,0.12856582;48,0.025938477;49,0.025898634;50,0.025966797;51,0.026110156;52,0.026339844;53,0.026245117;54,0.026132617;55,0.026061133;56,0.02619336;57,0.034085352;58,0.047446877;59,0.06577441;60,0.08712598;61,0.10769766;62,0.12404336;63,0.13478477;64,0.012012695;65,0.013105469;66,0.0133869145;67,0.013455078;68,0.013405468;69,0.013426757;70,0.013415234;71,0.013442969;72,0.01337793;73,0.013456641;74,0.013432422;75,0.013483594;76,0.013429297;77,0.013513086;78,0.013551953;79,0.013579687;80,0.0024464843;81,0.0024605468;82,0.0024416016;83,0.002459961;84,0.002434961;85,0.0024679687;86,0.0024677734;87,0.002470703;88,0.002416797;89,0.002466797;90,0.002455664;91,0.0024722656;92,0.002384375;93,0.002491211;94,0.002465625;95,0.0024828124;96,0.0016207031;97,0.001640625;98,0.0016205078;99,0.0016447266;100,0.0016322265;101,0.0016498046;102,0.0016146484;103,0.0016734375;104,0.001627539;105,0.0016650391;106,0.0016660156;107,0.0016654297;108,0.0015564453;109,0.0016632812;110,0.0016638672;111,0.0016638672;112,0.0010943359;113,0.0011804687;114,0.0011816407;115,0.0011802735;116,0.0011552734;117,0.0011794922;118,0.0011761718;119,0.0011765625;120,0.0011523437;121,0.0011667969;122,0.0011603516;123,0.0011744141;124,0.001140625;125,0.0011679687;126,0.0011685546;127,0.0011689453;128,5.4472656E-4;129,5.9082033E-4;130,5.9121096E-4;131,5.9199217E-4;132,5.689453E-4;133,5.9453124E-4;134,5.9335935E-4;135,5.947266E-4;136,5.935547E-4;137,5.947266E-4;138,5.9335935E-4;139,5.941406E-4;140,5.90625E-4;141,5.939453E-4;142,5.9316406E-4;143,5.947266E-4;144,5.0E-5;146,5.0E-5;147,4.7460937E-5;148,4.0234376E-5;149,3.4179688E-5;150,4.3945314E-5;151,4.550781E-5;152,3.9453123E-5;153,4.453125E-5;154,3.3203127E-5;155,4.453125E-5;156,3.984375E-5;157,4.6875E-5;158,4.9609374E-5;159,4.9609374E-5;160,0.0;",
+		"silktouch": false,
+		"dim": "The End (1)"
+	},
+	{
+		"block": "biomesoplenty:crystal:0",
+		"distrib": "0,1.953125E-7;1,1.953125E-7;2,3.515625E-6;3,2.1484375E-5;4,3.964844E-5;5,7.148438E-5;6,1.2851563E-4;7,2.1445313E-4;8,3.6152345E-4;9,5.130859E-4;10,6.783203E-4;11,8.716797E-4;12,9.466797E-4;13,9.7324216E-4;14,0.0010125;15,9.890625E-4;16,0.0010019531;17,9.753906E-4;18,9.767578E-4;19,9.367188E-4;20,9.0078125E-4;21,7.777344E-4;22,6.7597657E-4;23,6.4277346E-4;24,5.5507815E-4;25,5.2148435E-4;26,4.990234E-4;27,4.7929687E-4;28,4.814453E-4;29,4.3535157E-4;30,4.339844E-4;31,4.3476562E-4;32,3.6796875E-4;33,3.7128906E-4;34,3.6074218E-4;35,3.0E-4;36,3.5078125E-4;37,3.6289063E-4;38,4.0898437E-4;39,4.1914062E-4;40,3.921875E-4;41,3.5917968E-4;42,3.4453126E-4;43,3.4628907E-4;44,3.2109374E-4;45,3.7773437E-4;46,3.576172E-4;47,3.7460937E-4;48,1.1035156E-4;49,9.199219E-5;50,1.1289062E-4;51,1.2675782E-4;52,1.171875E-4;53,1.1289062E-4;54,9.648438E-5;55,1.1035156E-4;56,8.789063E-5;57,1.0039062E-4;58,8.1640625E-5;59,6.875E-5;60,7.011719E-5;61,5.058594E-5;62,3.8867187E-5;63,1.2109375E-5;64,7.421875E-6;65,1.171875E-6;66,0.0;81,0.0;82,3.90625E-7;83,0.0;104,0.0;105,1.953125E-7;106,9.765625E-7;107,1.7578125E-6;108,5.859375E-7;109,3.90625E-7;110,1.3671875E-6;111,1.7578125E-6;112,1.953125E-7;113,3.90625E-7;114,3.90625E-7;115,0.0;116,1.953125E-7;117,0.0;118,0.0;119,9.765625E-7;120,2.9296875E-6;121,5.6640624E-6;122,3.125E-6;123,0.0;124,1.953125E-7;125,1.171875E-6;126,1.5625E-6;127,2.1484375E-6;128,1.5625E-6;129,0.0;147,0.0;148,1.953125E-7;149,0.0;",
+		"silktouch": true,
+		"dropsList": [
+			{
+				"itemStack": "biomesoplenty:crystal_shard:0",
+				"fortunes": {
+					"0": 4.0,
+					"1": 4.0,
+					"2": 4.0,
+					"3": 4.0
+				}
+			}
+		],
+		"dim": "The End (1)"
+	},
+	{
+		"block": "extrautils2:enderlilly:0",
+		"distrib": "0,0.0;24,0.0;25,1.953125E-7;27,1.953125E-7;28,0.0;29,0.0;30,1.953125E-7;32,1.953125E-7;33,6.0546877E-6;34,4.6875E-6;35,2.734375E-6;36,4.1015624E-6;37,3.125E-6;38,1.7578125E-6;39,1.7578125E-6;40,2.1484375E-6;41,6.4453125E-6;42,6.4453125E-6;43,4.296875E-6;44,5.078125E-6;45,2.5390625E-6;46,3.125E-6;47,3.3203125E-6;48,0.0;49,1.5625E-6;50,1.171875E-6;51,7.8125E-7;52,1.5625E-6;53,9.765625E-7;54,7.8125E-7;55,1.3671875E-6;56,9.765625E-7;57,3.105469E-5;58,5.234375E-5;59,6.816406E-5;60,8.730469E-5;61,7.890625E-5;62,6.8359375E-5;63,4.3359374E-5;64,5.6640624E-6;65,3.515625E-6;66,9.765625E-7;67,3.90625E-7;68,0.0;",
+		"silktouch": false,
+		"dropsList": [
+			{
+				"itemStack": "minecraft:ender_pearl:0",
+				"fortunes": {
+					"0": 1.0,
+					"1": 1.0,
+					"2": 1.0,
+					"3": 1.0
+				}
+			},
+			{
+				"itemStack": "extrautils2:enderlilly:0",
+				"fortunes": {
+					"0": 1.099,
+					"1": 1.1456,
+					"2": 1.1996,
+					"3": 1.253
+				}
+			}
+		],
+		"dim": "The End (1)"
+	},
+	{
+		"block": "minecraft:obsidian:0",
+		"distrib": "0,6.660156E-5;1,6.5625E-5;2,6.621094E-5;3,6.738281E-5;4,6.71875E-5;5,6.71875E-5;6,6.699219E-5;7,6.71875E-5;8,6.660156E-5;9,6.660156E-5;10,6.71875E-5;11,6.699219E-5;12,6.71875E-5;13,6.640625E-5;14,6.542969E-5;15,6.523437E-5;16,6.640625E-5;17,6.660156E-5;18,6.640625E-5;19,6.640625E-5;20,6.660156E-5;21,6.679688E-5;22,6.464844E-5;23,6.5625E-5;24,6.660156E-5;25,6.71875E-5;26,6.523437E-5;27,6.328125E-5;28,6.269531E-5;29,6.289063E-5;30,5.9960938E-5;31,5.9960938E-5;32,6.0351562E-5;33,6.0742186E-5;34,6.289063E-5;35,6.3867185E-5;36,6.328125E-5;37,6.4257816E-5;38,6.542969E-5;39,6.484375E-5;40,6.3671876E-5;41,6.484375E-5;42,6.582031E-5;43,6.601562E-5;44,6.640625E-5;45,6.601562E-5;46,6.542969E-5;47,6.464844E-5;48,6.5039065E-5;49,6.582031E-5;50,6.5625E-5;51,6.699219E-5;52,6.5625E-5;53,6.523437E-5;54,6.3085936E-5;55,6.542969E-5;56,6.71875E-5;57,6.875E-5;58,6.8359375E-5;59,6.660156E-5;60,6.699219E-5;61,6.738281E-5;62,6.8945315E-5;63,6.660156E-5;64,6.640625E-5;65,6.5625E-5;67,6.5625E-5;68,6.640625E-5;69,6.484375E-5;70,6.582031E-5;71,6.679688E-5;72,6.5625E-5;73,6.699219E-5;74,6.699219E-5;75,6.660156E-5;76,6.230469E-5;77,6.1132814E-5;78,6.171875E-5;79,5.859375E-5;80,5.878906E-5;81,5.917969E-5;82,5.878906E-5;83,5.8398437E-5;84,5.917969E-5;85,5.1953124E-5;86,5.1953124E-5;87,5.15625E-5;88,4.375E-5;89,4.3164062E-5;90,4.3945314E-5;91,3.8867187E-5;92,3.8671875E-5;93,3.8671875E-5;94,3.8867187E-5;95,3.808594E-5;96,3.8867187E-5;97,2.7148437E-5;98,2.7148437E-5;99,2.7929687E-5;100,1.7382812E-5;101,1.7382812E-5;102,1.6601563E-5;103,0.0;148,0.0;149,5.078125E-6;150,0.0;",
+		"silktouch": false,
+		"dim": "The End (1)"
+	},
+	{
+		"block": "minecraft:chorus_plant:0",
+		"distrib": "0,0.0;33,0.0;34,1.953125E-7;35,3.90625E-7;36,5.859375E-7;37,3.90625E-7;38,7.8125E-7;39,5.859375E-7;40,3.90625E-7;41,7.8125E-7;42,1.3671875E-6;43,2.1484375E-6;44,2.5390625E-6;45,3.125E-6;46,4.1015624E-6;47,4.1015624E-6;48,2.734375E-6;49,2.5390625E-6;50,4.1015624E-6;51,3.7109376E-6;52,6.0546877E-6;53,7.2265625E-6;54,9.570313E-6;55,9.179687E-6;56,1.0742187E-5;57,4.53125E-5;58,1.1054688E-4;59,2.3671876E-4;60,4.238281E-4;61,6.3496095E-4;62,9.03125E-4;63,0.0011212891;64,9.84375E-5;65,1.2753907E-4;66,1.5136719E-4;67,1.8007813E-4;68,1.9746093E-4;69,2.1621093E-4;70,1.9824218E-4;71,1.9648437E-4;72,1.9414062E-4;73,1.8554687E-4;74,1.7636719E-4;75,1.5429688E-4;76,1.4707031E-4;77,1.2167969E-4;78,9.726563E-5;79,7.148438E-5;80,1.953125E-7;81,0.0;",
+		"silktouch": false,
+		"dropsList": [
+			{
+				"itemStack": "minecraft:chorus_fruit:0",
+				"fortunes": {
+					"0": 0.4986,
+					"1": 0.5036,
+					"2": 0.5024,
+					"3": 0.4938
+				}
+			}
+		],
+		"dim": "The End (1)"
+	},
+	{
+		"block": "minecraft:purpur_block:0",
+		"distrib": "0,0.0;52,0.0;53,5.859375E-7;54,7.8125E-7;55,1.953125E-7;56,0.0;57,9.765625E-7;58,1.171875E-6;59,1.953125E-7;60,1.328125E-5;61,1.953125E-7;62,1.4648437E-5;63,7.8125E-7;64,3.1445314E-5;65,5.859375E-7;66,1.6992188E-5;67,5.859375E-7;68,4.4921875E-5;69,3.90625E-7;70,2.3632812E-5;71,1.953125E-7;72,6.328125E-5;73,0.0;74,3.2226562E-5;75,1.171875E-6;76,6.601562E-5;77,6.640625E-6;78,5.46875E-6;79,4.1015624E-6;80,3.4375E-5;81,4.4921876E-6;82,2.4023437E-5;83,5.46875E-6;84,3.359375E-5;85,3.7109376E-6;86,5.859375E-6;87,2.734375E-6;88,5.4882814E-5;89,4.4921876E-6;90,1.9921876E-5;91,3.3203125E-6;92,8.8867186E-5;93,5.859375E-7;94,1.6992188E-5;95,2.9296875E-6;96,2.7734375E-5;97,5.859375E-6;98,2.4023437E-5;99,6.25E-6;100,3.6132813E-5;101,5.2734376E-6;102,3.691406E-5;103,2.34375E-6;104,4.609375E-5;105,4.1015624E-6;106,5.078125E-6;107,4.296875E-6;108,1.0039062E-4;109,1.5625E-6;110,3.3203125E-6;111,1.3671875E-6;112,8.066406E-5;113,7.8125E-7;114,3.90625E-7;115,9.765625E-7;116,3.7109374E-5;117,3.90625E-6;118,7.03125E-6;119,4.6875E-6;120,3.7109374E-5;121,4.296875E-6;122,9.960938E-6;123,2.34375E-6;124,4.609375E-5;125,2.1484375E-6;126,7.8125E-7;127,2.5390625E-6;128,3.691406E-5;129,0.0;131,0.0;132,2.4023437E-5;133,0.0;134,0.0;135,5.859375E-7;136,5.46875E-6;137,7.8125E-7;138,3.90625E-7;139,2.1484375E-6;140,6.640625E-6;141,1.953125E-6;142,7.8125E-7;143,7.8125E-7;144,0.0;147,0.0;148,7.2265625E-6;149,7.03125E-6;150,5.078125E-6;151,4.1015624E-6;152,8.789062E-6;153,4.1015624E-6;154,1.5039062E-5;155,1.7578125E-6;156,7.2265625E-6;157,7.8125E-7;158,0.0;",
+		"silktouch": false,
+		"dim": "The End (1)"
+	},
+	{
+		"block": "thaumcraft:crystal_terra:0",
+		"distrib": "0,0.0;8,0.0;9,7.8125E-7;10,1.5625E-6;11,1.3867188E-5;12,2.578125E-5;13,2.1679687E-5;14,2.1679687E-5;15,1.4453125E-5;16,1.1523438E-5;17,1.953125E-5;18,1.953125E-5;19,1.4453125E-5;20,1.6015625E-5;21,1.3085937E-5;22,1.2109375E-5;23,1.2109375E-5;24,1.2695313E-5;25,1.3671875E-5;26,1.2890625E-5;27,8.984375E-6;28,7.6171873E-6;29,1.0351562E-5;30,8.203125E-6;31,5.46875E-6;32,4.8828124E-6;33,9.375E-6;34,8.0078125E-6;35,3.515625E-6;36,4.4921876E-6;37,7.2265625E-6;38,8.59375E-6;39,8.203125E-6;40,7.03125E-6;41,5.2734376E-6;42,1.0546875E-5;43,6.25E-6;44,6.0546877E-6;45,6.8359377E-6;46,5.078125E-6;47,5.6640624E-6;48,1.171875E-6;49,3.90625E-7;50,0.0;52,0.0;53,3.90625E-7;54,0.0;55,3.90625E-7;56,0.0;62,0.0;63,1.953125E-7;64,0.0;86,0.0;87,3.90625E-7;88,0.0;89,3.90625E-7;90,0.0;139,0.0;140,1.953125E-7;141,7.8125E-7;142,5.859375E-7;143,0.0;",
+		"silktouch": false,
+		"dropsList": [
+			{
+				"itemStack": "thaumcraft:crystal_essence:0:{Aspects:[{key:\"terra\",amount:1}]}",
+				"fortunes": {
+					"0": 4.0,
+					"1": 4.0,
+					"2": 4.0,
+					"3": 4.0
+				}
+			}
+		],
+		"dim": "The End (1)"
+	},
+	{
+		"block": "thaumcraft:crystal_perditio:0",
+		"distrib": "0,1.953125E-7;1,1.953125E-7;2,0.0;8,0.0;9,1.5625E-6;10,9.570313E-6;11,2.4804687E-5;12,4.0039064E-5;13,4.160156E-5;14,4.6289064E-5;15,4.2578125E-5;16,3.4179688E-5;17,4.140625E-5;18,3.574219E-5;19,3.3789063E-5;20,2.9296874E-5;21,3.5546876E-5;22,2.65625E-5;23,2.1875E-5;24,2.03125E-5;25,1.9140625E-5;26,2.5976562E-5;27,1.9140625E-5;28,2.03125E-5;29,1.3476562E-5;30,1.3476562E-5;31,1.484375E-5;32,1.3476562E-5;33,1.7382812E-5;34,1.7773438E-5;35,1.640625E-5;36,1.09375E-5;37,1.09375E-5;38,1.3867188E-5;39,1.6015625E-5;40,1.5820313E-5;41,1.2890625E-5;42,1.25E-5;43,1.0546875E-5;44,7.421875E-6;45,7.6171873E-6;46,7.421875E-6;47,8.398438E-6;48,5.859375E-7;49,1.953125E-7;50,1.171875E-6;51,1.953125E-7;52,1.953125E-6;53,1.953125E-7;54,0.0;55,1.953125E-7;56,3.90625E-7;57,3.90625E-7;58,7.8125E-7;59,0.0;60,3.90625E-7;61,0.0;62,5.859375E-7;63,7.8125E-7;64,0.0;72,0.0;73,1.953125E-7;74,1.953125E-7;75,0.0;",
+		"silktouch": false,
+		"dropsList": [
+			{
+				"itemStack": "thaumcraft:crystal_essence:0:{Aspects:[{key:\"perditio\",amount:1}]}",
+				"fortunes": {
+					"0": 2.0,
+					"1": 2.0,
+					"2": 2.0,
+					"3": 2.0
+				}
+			}
+		],
+		"dim": "The End (1)"
+	},
+	{
+		"block": "minecraft:end_stone:0",
+		"distrib": "0,0.0;9,0.0;10,7.556641E-4;11,0.005475;12,0.017580273;13,0.03537422;14,0.05536289;15,0.07453731;16,0.092194535;17,0.10881738;18,0.12379922;19,0.13706055;20,0.1490121;21,0.16012734;22,0.17022109;23,0.17938985;24,0.1872875;25,0.19344941;26,0.19864199;27,0.20303418;28,0.20671816;29,0.20932402;30,0.21176913;31,0.21422617;32,0.21463574;33,0.21490918;34,0.21503535;35,0.21531348;36,0.21513379;37,0.21525156;38,0.21534179;39,0.21541055;40,0.21541876;41,0.21580625;42,0.21643515;43,0.21739297;44,0.21883222;45,0.22087461;46,0.22354023;47,0.22668204;48,0.119134374;49,0.12037051;50,0.12122324;51,0.121671095;52,0.12176426;53,0.121864066;54,0.12199043;55,0.12204727;56,0.12193789;57,0.11396504;58,0.10053301;59,0.082074024;60,0.06050332;61,0.039751366;62,0.023139453;63,0.012218946;64,0.0015115234;65,4.232422E-4;66,1.02148435E-4;67,2.0703124E-5;68,0.0;",
+		"silktouch": false,
+		"dim": "The End (1)"
+	},
+	{
+		"block": "minecraft:ladder:0",
+		"distrib": "0,0.0;68,0.0;69,1.953125E-7;70,1.953125E-7;71,3.90625E-7;72,1.953125E-7;73,3.90625E-7;74,1.953125E-7;75,1.953125E-7;76,0.0;88,0.0;89,1.953125E-7;91,1.953125E-7;92,0.0;98,0.0;99,1.953125E-7;101,1.953125E-7;102,0.0;104,0.0;105,1.953125E-7;107,1.953125E-7;108,0.0;109,1.953125E-7;111,1.953125E-7;112,0.0;113,1.953125E-7;115,1.953125E-7;116,0.0;124,0.0;125,1.953125E-7;127,1.953125E-7;128,0.0;129,1.953125E-7;131,1.953125E-7;132,0.0;154,0.0;155,1.953125E-7;159,1.953125E-7;160,0.0;",
+		"silktouch": false,
+		"dropsList": [
+			{
+				"itemStack": "minecraft:ladder:0",
+				"fortunes": {
+					"0": 1.0,
+					"1": 1.0,
+					"2": 1.0,
+					"3": 1.0
+				}
+			}
+		],
+		"dim": "The End (1)"
+	},
+	{
+		"block": "biomesoplenty:gem_ore:0",
+		"distrib": "0,0.0;12,0.0;13,7.8125E-7;14,7.8125E-7;15,1.5625E-6;16,1.171875E-6;17,1.3671875E-6;18,1.3671875E-6;19,9.765625E-7;20,1.171875E-6;21,2.1484375E-6;22,1.171875E-6;23,1.953125E-6;24,1.7578125E-6;25,2.9296875E-6;26,2.5390625E-6;27,3.125E-6;28,2.734375E-6;29,3.90625E-6;30,3.3203125E-6;31,2.34375E-6;32,9.765625E-7;33,0.0;",
+		"silktouch": true,
+		"dropsList": [
+			{
+				"itemStack": "biomesoplenty:gem:0",
+				"fortunes": {
+					"0": 1.0,
+					"1": 1.3345,
+					"2": 1.7446,
+					"3": 2.1907
+				}
+			}
+		],
+		"dim": "The End (1)"
+	},
+	{
+		"block": "thaumcraft:crystal_ordo:0",
+		"distrib": "0,0.0;9,0.0;10,6.4453125E-6;11,2.4414063E-5;12,3.7304686E-5;13,3.046875E-5;14,4.0429688E-5;15,3.4179688E-5;16,3.2226562E-5;17,3.3984375E-5;18,2.7929687E-5;19,2.7148437E-5;20,2.7148437E-5;21,3.300781E-5;22,2.96875E-5;23,2.9882813E-5;24,1.8945313E-5;25,1.9921876E-5;26,2.1484375E-5;27,2.5585938E-5;28,2.65625E-5;29,2.5390626E-5;30,1.9921876E-5;31,1.8164063E-5;32,2.0703124E-5;33,1.7773438E-5;34,1.5039062E-5;35,1.484375E-5;36,7.03125E-6;37,7.421875E-6;38,6.0546877E-6;39,9.765625E-6;40,9.570313E-6;41,1.0742187E-5;42,9.179687E-6;43,1.0742187E-5;44,1.171875E-5;45,1.1132813E-5;46,9.765625E-6;47,1.2695313E-5;48,1.953125E-6;49,1.171875E-6;50,9.765625E-7;51,1.171875E-6;52,3.90625E-7;53,0.0;54,0.0;55,9.765625E-7;56,0.0;58,0.0;59,1.953125E-7;60,0.0;62,0.0;63,1.171875E-6;64,3.90625E-7;65,5.859375E-7;66,0.0;95,0.0;96,3.90625E-7;97,1.171875E-6;98,5.859375E-7;99,1.953125E-7;100,0.0;110,0.0;111,3.90625E-7;113,3.90625E-7;114,0.0;",
+		"silktouch": false,
+		"dropsList": [
+			{
+				"itemStack": "thaumcraft:crystal_essence:0:{Aspects:[{key:\"ordo\",amount:1}]}",
+				"fortunes": {
+					"0": 3.0,
+					"1": 3.0,
+					"2": 3.0,
+					"3": 3.0
+				}
+			}
+		],
+		"dim": "The End (1)"
+	},
+	{
+		"block": "minecraft:iron_bars:0",
+		"distrib": "0,0.0;78,0.0;79,3.125E-6;80,1.7578125E-6;81,1.7578125E-6;82,2.9296875E-6;83,0.0;",
+		"silktouch": false,
+		"dim": "The End (1)"
+	},
+	{
+		"block": "thaumcraft:crystal_aer:0",
+		"distrib": "0,0.0;5,0.0;6,1.953125E-7;7,1.953125E-7;8,0.0;9,5.859375E-7;10,1.25E-5;11,3.2617187E-5;12,4.2578125E-5;13,3.7304686E-5;14,4.3945314E-5;15,3.2421874E-5;16,4.8046873E-5;17,4.296875E-5;18,2.421875E-5;19,2.8710938E-5;20,3.1445314E-5;21,3.046875E-5;22,2.265625E-5;23,3.2226562E-5;24,2.578125E-5;25,2.4023437E-5;26,2.2851562E-5;27,1.9335937E-5;28,2.109375E-5;29,1.3867188E-5;30,1.1132813E-5;31,1.1328125E-5;32,1.23046875E-5;33,1.23046875E-5;34,1.3867188E-5;35,1.5234375E-5;36,1.0546875E-5;37,1.0351562E-5;38,6.8359377E-6;39,1.1523438E-5;40,1.4257813E-5;41,1.09375E-5;42,1.23046875E-5;43,1.3085937E-5;44,8.398438E-6;45,7.421875E-6;46,8.984375E-6;47,8.203125E-6;48,9.765625E-7;49,1.3671875E-6;50,5.859375E-7;51,3.90625E-7;52,3.90625E-7;53,0.0;58,0.0;59,1.5625E-6;60,0.0;61,1.953125E-7;62,0.0;63,1.953125E-7;64,0.0;109,0.0;110,1.953125E-7;111,1.171875E-6;112,0.0;120,0.0;121,3.90625E-7;122,9.765625E-7;123,1.171875E-6;124,1.953125E-7;125,0.0;147,0.0;148,1.953125E-7;149,0.0;",
+		"silktouch": false,
+		"dropsList": [
+			{
+				"itemStack": "thaumcraft:crystal_essence:0:{Aspects:[{key:\"aer\",amount:1}]}",
+				"fortunes": {
+					"0": 3.0,
+					"1": 3.0,
+					"2": 3.0,
+					"3": 3.0
+				}
+			}
+		],
+		"dim": "The End (1)"
+	},
+	{
+		"block": "endreborn:block_wolframium_ore:0",
+		"distrib": "0,0.0;9,0.0;10,4.6875E-6;11,2.2070313E-5;12,6.40625E-5;13,1.3164063E-4;14,2.0820313E-4;15,2.59375E-4;16,3.0332032E-4;17,3.796875E-4;18,4.0996095E-4;19,4.5957032E-4;20,4.855469E-4;21,5.296875E-4;22,5.841797E-4;23,6.273438E-4;24,6.0800783E-4;25,6.236328E-4;26,6.7714846E-4;27,6.726562E-4;28,6.7675783E-4;29,6.794922E-4;30,6.8828126E-4;31,7.1152346E-4;32,6.8515626E-4;33,6.970703E-4;34,6.9472654E-4;35,7.1152346E-4;36,7.2148436E-4;37,7.1484374E-4;38,7.4628904E-4;39,7.296875E-4;40,7.013672E-4;41,7.285156E-4;42,7.1875E-4;43,7.242187E-4;44,7.144531E-4;45,7.2773435E-4;46,6.8828126E-4;47,3.671875E-4;48,1.8164063E-5;49,0.0;",
+		"silktouch": false,
+		"dim": "The End (1)"
+	},
+	{
+		"block": "endreborn:block_entropy_end_stone:0",
+		"distrib": "0,0.0;9,0.0;10,1.953125E-6;11,1.6601563E-5;12,5.4296874E-5;13,1.07226566E-4;14,1.5761719E-4;15,1.9570312E-4;16,2.4609375E-4;17,2.8691406E-4;18,3.2402345E-4;19,3.9003906E-4;20,3.7402342E-4;21,2.3300781E-4;22,5.390625E-5;23,0.0;",
+		"silktouch": false,
+		"dim": "The End (1)"
+	},
+	{
+		"block": "endreborn:block_essence_ore:0",
+		"distrib": "0,7.8125E-7;1,1.7578125E-6;2,1.171875E-6;3,0.0;4,1.953125E-7;5,1.953125E-7;6,3.90625E-7;7,1.953125E-7;8,5.859375E-7;9,7.8125E-7;10,1.953125E-7;11,3.90625E-7;12,1.953125E-7;13,9.765625E-7;14,1.953125E-6;15,2.1484375E-6;16,9.765625E-7;17,7.8125E-7;18,9.765625E-7;19,9.765625E-7;20,7.8125E-7;21,5.859375E-7;22,2.734375E-6;23,1.7578125E-6;24,7.8125E-7;25,1.953125E-7;26,5.859375E-7;27,1.171875E-6;28,9.765625E-7;29,1.953125E-7;30,1.3671875E-6;31,1.953125E-6;32,2.1484375E-6;33,1.5625E-6;34,5.859375E-7;35,1.171875E-6;36,2.9296875E-6;37,2.9296875E-6;38,1.7578125E-6;39,2.34375E-6;40,3.125E-6;41,2.1484375E-6;42,7.8125E-7;43,0.0;44,1.953125E-7;45,3.90625E-7;46,1.3671875E-6;47,2.34375E-6;48,1.7578125E-6;49,1.3671875E-6;50,1.7578125E-6;51,3.90625E-7;52,1.7578125E-6;53,3.125E-6;54,5.2734376E-6;55,1.953125E-6;56,1.953125E-7;57,3.90625E-7;58,3.90625E-7;59,7.8125E-7;60,3.90625E-7;61,0.0;62,3.90625E-7;63,7.8125E-7;64,9.765625E-7;65,1.5625E-6;66,1.7578125E-6;67,1.7578125E-6;68,9.765625E-7;69,2.5390625E-6;70,1.5625E-6;71,5.859375E-7;72,1.7578125E-6;73,3.90625E-7;74,3.90625E-7;75,7.8125E-7;76,9.765625E-7;77,2.1484375E-6;78,9.765625E-7;79,3.90625E-7;80,3.90625E-7;81,0.0;82,3.90625E-7;83,7.8125E-7;84,0.0;87,0.0;88,9.765625E-7;89,1.5625E-6;90,7.8125E-7;91,1.953125E-7;92,3.90625E-7;93,3.90625E-7;94,1.953125E-7;95,9.765625E-7;96,1.953125E-7;97,7.8125E-7;98,7.8125E-7;99,0.0;101,0.0;102,7.8125E-7;103,0.0;",
+		"silktouch": true,
+		"dropsList": [
+			{
+				"itemStack": "endreborn:item_end_essence:0",
+				"fortunes": {
+					"0": 1.0,
+					"1": 1.0,
+					"2": 1.0,
+					"3": 1.0
+				}
+			}
+		],
+		"dim": "The End (1)"
+	},
+	{
+		"block": "endreborn:block_lormyte_crystal:0",
+		"distrib": "0,0.0;23,0.0;24,5.2578124E-4;25,0.0015916015;26,0.003065625;27,0.005019922;28,0.007317578;29,0.009969922;30,0.0123751955;31,0.01439668;32,0.015988672;33,0.017245509;34,0.017803712;35,0.018065039;36,0.018213673;37,0.0183625;38,0.018457618;39,0.018600976;40,0.018850977;41,0.018734962;42,0.018220313;43,0.017147265;44,0.01558164;45,0.013563672;46,0.01105625;47,0.008238477;48,0.0030226563;49,0.0018638672;50,9.201172E-4;51,3.1679688E-4;52,0.0;",
+		"silktouch": false,
+		"dim": "The End (1)"
+	},
   {
     "block": "actuallyadditions:block_misc:3",
     "distrib": "0,0.009929688;1,0.010307812;2,1.640625E-5;3,0.0;17,0.0;18,8.546875E-4;19,0.0012878906;20,0.0012777344;21,0.0012960938;22,0.0013414063;23,0.0013285156;24,0.0013488281;25,0.0012871093;26,0.0013058594;27,0.0011855469;28,9.441406E-4;29,6.636719E-4;30,5.25E-4;31,3.53125E-4;32,2.4726562E-4;33,1.7148438E-4;34,1.4296875E-4;35,9.101562E-5;36,8.320312E-5;37,6.5625E-5;38,5.78125E-5;39,5.9375E-5;40,3.90625E-5;41,5.4296874E-5;42,3.90625E-5;43,4.2578125E-5;44,3.59375E-5;45,3.6328125E-5;46,3.9453123E-5;47,4.375E-5;48,3.75E-5;49,3.6328125E-5;50,3.4375E-5;51,3.203125E-5;52,3.046875E-5;53,3.7890626E-5;54,3.90625E-5;55,1.328125E-5;56,0.0;",
