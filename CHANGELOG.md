@@ -1,6 +1,295 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
 
+# 0.26
+
+## 🟢 New Mods
+
+Icon | Summary | Reason
+----:|:--------| ------
+<img src="https://media.forgecdn.net/avatars/thumbnails/152/846/256/256/636614472137003477.png" width="50"> | [**Thaumic Additions: Reconstructed**](https://www.curseforge.com/minecraft/mc-mods/thaumic-additions) <sup><sub>ThaumicAdditions-1.12.2-12.6.7.jar</sub></sup> <br> Meet new neat and handy features to Thaumcraft VI | Test add for better Essentia Jars and other cool stuff
+<img src="https://media.forgecdn.net/avatars/thumbnails/166/444/256/256/636697974870138158.png" width="50"> | [**Redstone Repository Revolved**](https://www.curseforge.com/minecraft/mc-mods/redstone-repository-revolved) <sup><sub>RedstoneRepository-1.12.2-1.4.0-dev-universal.jar</sub></sup> <br> An addon to Redstone Arsenal | New materials for TCon, all and armor disabled (except baubles)
+<img src="https://media.forgecdn.net/avatars/thumbnails/358/827/256/256/637520208754289091.png" width="50"> | [**SneedASM**](https://www.curseforge.com/minecraft/mc-mods/sneedasm) <sup><sub>loliasm-2.5.jar</sub></sup> <br> Yet another crazy optimization mod - powered by ****s | Should lower memory usage
+<img src="https://media.forgecdn.net/avatars/thumbnails/385/440/256/256/637573099313673556.png" width="50"> | [**ExtraCells2 - SamLam140330's Fork**](https://www.curseforge.com/minecraft/mc-mods/extracells2-samlam140330s-fork) <sup><sub>ExtraCells-1.12.2-2.6.7.jar</sub></sup> <br> Giving you more ME storage cells and some other stuff for Applied Energistics 2 | Fork, Replace old Extra Cells mod
+<img src="https://media.forgecdn.net/avatars/thumbnails/265/6/256/256/637228246468007633.png" width="50"> | [**xXx_MoreToolMats_xXx (a PlusTiC fork without the evil, and apparently some new bugs idk)**](https://www.curseforge.com/minecraft/mc-mods/plusticminusbad) <sup><sub>plustic-8.0.3.jar</sub></sup> <br> Minecraft mod for adding new tools to and integrating various mods with Tinkers Construct | Replace PlusTic
+<img src="https://media.forgecdn.net/avatars/thumbnails/45/75/256/256/636039358080536200.png" width="50"> | [**Hammer (Lib) Core**](https://www.curseforge.com/minecraft/mc-mods/hammer-lib) <sup><sub>HammerLib-1.12.2-2.0.6.26.jar</sub></sup> <br> Library used by all of DragonForge team's mods. | Lib for Thaumic Additions
+
+<br>
+
+# 🟡 New but disabled mods
+This mods should be manually enabled by players, if they want to play with **Refined Storage**.  
+Crafts still tweaked.
+
+Icon | Summary 
+----:|:--------
+<img src="https://media.forgecdn.net/avatars/thumbnails/198/539/256/256/636900690640301258.png" width="50"> | [**RSInfiniteWireless**](https://www.curseforge.com/minecraft/mc-mods/rsinfinitewireless) <sup><sub>rsinfinitewireless-1.2.jar</sub></sup> <br> Adds back the Infinite Wireless Transmitter ! | 
+<img src="https://media.forgecdn.net/avatars/thumbnails/179/817/256/256/636789115663061246.png" width="50"> | [**Refined Storage: Requestify**](https://www.curseforge.com/minecraft/mc-mods/rs-requestify) <sup><sub>refinedstoragerequestify-1.12.2-1.0.2-3.jar</sub></sup> <br> Keep you refined storage stocked with crafteable items | 
+<img src="https://media.forgecdn.net/avatars/thumbnails/37/507/256/256/635952629598958912.png" width="50"> | [**Refined Storage**](https://www.curseforge.com/minecraft/mc-mods/refined-storage) <sup><sub>refinedstorage-1.6.16.jar</sub></sup> <br> An elegant solution to your hoarding problem. | 
+<img src="https://media.forgecdn.net/avatars/thumbnails/251/626/256/256/637184819329731874.png" width="50"> | [**Refined Storage Large Patterns**](https://www.curseforge.com/minecraft/mc-mods/rslargepatterns) <sup><sub>RSLargePatterns-1.12.2-1.0.0.1.jar</sub></sup> <br> The dream of automation realized. Again. | 
+<img src="https://media.forgecdn.net/avatars/thumbnails/106/273/256/256/636358693065137736.png" width="50"> | [**Refined Storage Addons**](https://www.curseforge.com/minecraft/mc-mods/refined-storage-addons) <sup><sub>refinedstorageaddons-0.4.5.jar</sub></sup> <br> An addon mod for Refined Storage. | 
+
+<br>
+
+## 🔴 Removed Mods
+
+Icon | Summary | Reason
+----:|:--------| ------
+<img src="https://media.forgecdn.net/avatars/thumbnails/317/984/256/256/637423606351535331.png" width="50"> | [**Better Questing Tweaker (BQTweaker)**](https://www.curseforge.com/minecraft/mc-mods/bqtweaker) <sup><sub>BQTweaker-1.1.0.jar</sub></sup> <br> Tweaker mod to change some aspects of BetterQuesting | Not updated with latest BQ versions, that caused messed up text aligment
+<img src="https://media.forgecdn.net/avatars/thumbnails/53/26/256/256/636121064554051162.png" width="50"> | [**Spartan Shields**](https://www.curseforge.com/minecraft/mc-mods/spartan-shields) <sup><sub>SpartanShields-1.12.2-1.5.4.jar</sub></sup> <br> Needing more Shields in Minecraft? You've come to the right place! | Barely unused mod
+<img src="https://media.forgecdn.net/avatars/thumbnails/232/533/256/256/637066773825345434.png" width="50"> | [**Creative Block Replacer**](https://www.curseforge.com/minecraft/mc-mods/creative-block-replacer) <sup><sub>creativeblockreplacer_1.12.2-1.4.jar</sub></sup> <br> Allows easy switching in between placing and replacing blocks in creative mode. | More annoying than useful
+<img src="https://media.forgecdn.net/avatars/thumbnails/89/502/256/256/636231887954920121.png" width="50"> | [**Bad Wither No Cookie - Reloaded**](https://www.curseforge.com/minecraft/mc-mods/bad-wither-no-cookie-reloaded) <sup><sub>badwithernocookiereloaded-1.12.2-3.4.18.jar</sub></sup> <br> Localizes the wither and dragon attacking sounds. | **RandomTweaks** can give same option without separate mod
+<img src="https://media.forgecdn.net/avatars/thumbnails/188/167/256/256/636843585210544210.png" width="50"> | [**Probe**](https://www.curseforge.com/minecraft/mc-mods/probe) <sup><sub>probe-0.1.24.jar</sub></sup> <br> Dump information to .zsrc file for vscode plugin. | No more used in Dev. Never appeared in release anyway.
+
+## 🟡 Updated Mods
+
+- [**Botania**](https://www.curseforge.com/minecraft/mc-mods/botania) <sup><sub>Botania r1.10-364.4.jar</sub></sup>
+- [**CraftTweaker**](https://www.curseforge.com/minecraft/mc-mods/crafttweaker) <sup><sub>CraftTweaker2-1.12-4.1.20.647.jar</sub></sup>
+- [**Zen Utils**](https://www.curseforge.com/minecraft/mc-mods/zenutil) <sup><sub>zenutils-1.8.1.jar</sub></sup>
+- [**Fluid Drawers**](https://www.curseforge.com/minecraft/mc-mods/fluid-drawers) <sup><sub>fluiddrawers-1.12.2-1.0.6.jar</sub></sup>
+- [**ContentTweaker**](https://www.curseforge.com/minecraft/mc-mods/contenttweaker) <sup><sub>ContentTweaker-1.12.2-4.10.0.jar</sub></sup>
+- [**Minor Integrations and Additions (MIA)**](https://www.curseforge.com/minecraft/mc-mods/minor-integrations-and-additions-mia) <sup><sub>mia-1.12.2-0.2.1a.jar</sub></sup>
+- [**Atlas Lib**](https://www.curseforge.com/minecraft/mc-mods/atlas-lib) <sup><sub>Atlas-Lib-1.12.2-1.1.3c.jar</sub></sup>
+- [**Tinkers' Evolution**](https://www.curseforge.com/minecraft/mc-mods/tinkers-evolution) <sup><sub>tconevo-1.12.2-1.0.42.jar</sub></sup>
+- [**Gas Conduits**](https://www.curseforge.com/minecraft/mc-mods/gas-conduits) <sup><sub>EnderIO-conduits-mekanism-1.12.2-5.3.70.jar</sub></sup>
+- [**Foam​Fix**](https://www.curseforge.com/minecraft/mc-mods/foamfix-optimization-mod) <sup><sub>foamfix-0.10.14-1.12.2.jar</sub></sup>
+- [**MixinBooter**](https://www.curseforge.com/minecraft/mc-mods/mixin-booter) <sup><sub>mixinbooter-2.0.jar</sub></sup>
+- [**Ender IO Endergy**](https://www.curseforge.com/minecraft/mc-mods/ender-io-endergy) <sup><sub>EnderIO-endergy-1.12.2-5.3.70.jar</sub></sup>
+- [**Ender Tweaker**](https://www.curseforge.com/minecraft/mc-mods/endertweaker) <sup><sub>EnderTweaker-1.12.2-1.2.2.jar</sub></sup>
+- [**LootTweaker**](https://www.curseforge.com/minecraft/mc-mods/loottweaker) <sup><sub>LootTweaker-0.3.0+MC1.12.2.jar</sub></sup>
+- [**NuclearCraft**](https://www.curseforge.com/minecraft/mc-mods/nuclearcraft-mod) <sup><sub>NuclearCraft-2.18z-1.12.2.jar</sub></sup>
+- [**MTLib**](https://www.curseforge.com/minecraft/mc-mods/mtlib) <sup><sub>MTLib-3.0.7.jar</sub></sup>
+- [**CraftTweaker Integration**](https://www.curseforge.com/minecraft/mc-mods/crafttweaker-integration) <sup><sub>ctintegration-1.8.0.jar</sub></sup>
+- [**CreativeCore**](https://www.curseforge.com/minecraft/mc-mods/creativecore) <sup><sub>CreativeCore_v1.10.61_mc1.12.2.jar</sub></sup>
+- [**ModTweaker**](https://www.curseforge.com/minecraft/mc-mods/modtweaker) <sup><sub>modtweaker-4.0.19.jar</sub></sup>
+- [**LittleTiles**](https://www.curseforge.com/minecraft/mc-mods/littletiles) <sup><sub>LittleTiles_v1.5.14_mc1.12.2.jar</sub></sup>
+- [**Ender IO**](https://www.curseforge.com/minecraft/mc-mods/ender-io) <sup><sub>EnderIO-1.12.2-5.3.70.jar</sub></sup>
+- [**Thaumic Augmentation**](https://www.curseforge.com/minecraft/mc-mods/thaumic-augmentation) <sup><sub>ThaumicAugmentation-1.12.2-2.1.1.jar</sub></sup>
+- [**Reborn Core**](https://www.curseforge.com/minecraft/mc-mods/reborncore) <sup><sub>RebornCore-1.12.2-3.19.5-universal.jar</sub></sup>
+
+## 🧩 Configs
+
+- Random Tweaks
+  > - `disableWitherSpawnSound=true`
+  > - `nearbyMonsterGlowParticles=true`
+- Scaling Feast: Fix losing hunger under 20, mixed tweaks
+
+## ✏️ Recipes
+
+- 
+  > ---------
+  > Harder:
+  > - ![](https://git.io/JZYfG "EFLN")
+  >   ![](https://git.io/JZYf8 "Glowing Chorus Fruit")
+  >   ![](https://git.io/JZYf0 "Electric Pump")
+  >   ![](https://git.io/JZYfB "Blue Slimy Mud")
+  >   ![](https://git.io/JsTPR "Starmetal Laser Medium")
+  >   ![](https://git.io/JZLjz "Aethium Armor Trim")
+  >   ![](https://git.io/Jse6m "Flux Capacitor (Basic)")
+  >   ![](https://git.io/JGncp "Ender Book")
+  >   ![](https://git.io/J3xSv "Tank")
+  >   ![](https://git.io/JZYfJ "Dimensional Blend")
+  >   ![](https://git.io/JZYvx "Base Crafting Seed")
+  >   ![](https://git.io/JZYfI "Player Simulator")
+  >   ![](https://git.io/JZYfY "Mechanical User")
+  >   ![](https://git.io/JZYv5 "Empowered Void Crystal Block")
+  >   ![](https://git.io/JZYf3 "Diamond Hammer")
+  >   ![](https://git.io/JZYfe "Auto Compressed Hammer")
+  >   ![](https://git.io/JZYfn "Pulsating Crystal")
+  >   ![](https://git.io/JZYvh "Draconium Infused Obsidian")
+  >   ![](https://git.io/JZYfu "Experience Pylon")
+  >   ![](https://git.io/JZLjE "Empty Sack of Holding")
+  >   ![](https://git.io/JOGz9 "Pressurized Tank")
+  >   ![](https://git.io/JGGh5 "Advanced Machine Structure")
+  >   ![](https://git.io/JGGjs "User Interface")
+  >   ![](https://git.io/JZYvp "Black Quartz Block")
+  >   ![](https://git.io/J3p8H "Lens of the Miner")
+  >   ![](https://git.io/Jsw8A "Small Storage Crate")
+  >   ![](https://git.io/JZYvb "Chest To Storage Crate Upgrade")
+  >   ![](https://git.io/JZYff "Vertical Digger")
+  >   ![](https://git.io/JZYfl "Casing")
+  >   ![](https://git.io/JGGje "Basic Circuit Plate")
+  >   ![](https://git.io/JGGjI "Advanced Circuit Plate")
+  >   ![](https://git.io/JGGjO "Silicon Boule")
+  > - ![](https://git.io/JGGh7 "Mana Infused Ingot") now only obtainable through [fluid:Primal Mana] interaction
+  > 
+  > ---------
+  > Cheaper:
+  > - ![](https://git.io/JGGjL "Intricate Circuit Board")
+  >   ![](https://git.io/JZYf4 "Fluidic Plenisher")
+  >   ![](https://git.io/JZYvj "Machine Circuitry")
+  >   ![](https://git.io/Jst3a "Shape Card (Quarry)")
+  >   ![](https://git.io/JZYfU "Blutonium Ingot")
+  >   ![](https://git.io/Jsw8N "Crafting Interface")
+  >   ![](https://git.io/JGGjm "Black Hole Unit")
+  >   ![](https://git.io/JZLju "Laser Drill")
+  >   ![](https://git.io/JGGjZ "Replicator")
+  >   ![](https://git.io/JZYvd "Heat-Capacity Reactor Plating")
+  >   ![](https://git.io/JZYvF "Containment Reactor Plating")
+  >   ![](https://git.io/JGGjJ "Basic Capacitor")
+  >   ![](https://git.io/JZYfT "Organic Brown Dye")
+  >   ![](https://git.io/Jsw8h "Draconium Chest")
+  >   ![](https://git.io/JZYfL "Bound Dislocator (Point to Point)")
+  >   ![](https://git.io/JZYvA "Bound Dislocator (Player)")
+  >   ![](https://git.io/JZYJ4 "Gaia Spirit Ingot")
+  >   ![](https://git.io/JZYfw "Ender Casing")
+  >   ![](https://git.io/JZYfR "Rune of Water")
+  >   ![](https://git.io/JGGhN "Rune of Fire")
+  >   ![](https://git.io/JZYf2 "Rune of Earth")
+  >   ![](https://git.io/JZYfO "Rune of Air")
+  >   ![](https://git.io/JZYfk "Rune of Spring")
+  >   ![](https://git.io/JZYfW "Rune of Summer")
+  >   ![](https://git.io/JZYfq "Rune of Autumn")
+  >   ![](https://git.io/JZYfm "Rune of Winter")
+  >   ![](https://git.io/JZYfg "Rune of Mana")
+  > - [Advanced Carpenter]
+  > 
+  > ---------
+  > Changed:
+  > - ![](https://git.io/J3xSv "Tank") => ![](https://git.io/JmVvt "Omnivoir") changed all occurances
+  > - ![](https://git.io/JOGrV "Block of Enderpearl") no more meltable in smeltery
+  > - ![](https://git.io/Jsw8p "Cake") stackable x64
+  > - ![](https://git.io/Jsw4i "Slightly-Larger Chest") now become "compressed chest"
+  > - ![](https://git.io/JZYfU "Blutonium Ingot") castable in smeltery
+  > - ![](https://git.io/JOGz2 "Pulverizer (Basic)") no more required ![](https://git.io/JsfOp "White Sand")
+  > - [Hearty Shank] recipe removed. Obtain in loot
+  > - ![](https://git.io/JZYJu "Graphite Block") from ![](https://git.io/JZYJB "Block of Charcoal") in ![](https://git.io/J3xyb "Alloy Smelter")
+  > - ![](https://git.io/Jst3B "Crystal Memory") now can be crafted with predefined recipes
+  > - ![](https://git.io/JZYfv "Tiny Pile of Plutonium") and ![](https://git.io/JGGhF "Plutonium") now recycleable into ![](https://git.io/JZYJR "Uranium-235")
+  > - ![](https://git.io/JZYJE "Block of Coal Coke") in ![](https://git.io/JsTPV "Augment: Pyrolytic Conversion") craft time fix
+  > - ![](https://git.io/JGGjY "Concrete Trapdoor") added craft
+  > - ![](https://git.io/Jsw4J "Basic Coil") and ![](https://git.io/JZYfV "Advanced Coil") in ![](https://git.io/JGGjv "Precision Assembler")
+  > - ![](https://git.io/JZYJV "QuantumSuit Bodyarmor") recycle give only 1 ingot
+  > - ![](https://git.io/J3xy3 "NanoSuit Bodyarmor") fix recycle
+  > - ![](https://git.io/JZYfE "Mending Moss") can be filled in ![](https://git.io/JmVeA "Fluid Tank")
+  > - ![](https://git.io/JZYJw "Sawdust") remove from Hammering
+  > - ![](https://git.io/JZYvN "Machine Frame") now require ![](https://git.io/JZYJ0 "Cooked Meat Ingot")
+
+## 📖 Quest Book
+
+- Space Suit add to mobs spawning, add TA void boots
+- Other Quests changes
+
+## 🌍 World Generation
+
+- ![](https://git.io/JZYfa "Dilithium Ore") x7 times rarely in Solar System
+- Disable 122 Kepler 0118 liquids replacing
+  > Replacing works fine, but after recent AdvRocketry update, each block
+  > was replaces into Boron-11, so planet looks like Boron mountains
+- Disable Seaweed on **118 KELT-2ab**, stalactite changes on **123 Kepler_0119**
+
+## 🔵 Mods
+
+- ### ☢️ NuclearCraft
+
+  - ![](https://git.io/JOija "Lapis Lazuli") nerf 25% active cooling
+    > Unlikely other active coolers, lapis melts into 666mb,
+    > that makes it very cheap comparing to other.
+
+- ### ⛽ Advanced Generators
+
+  - ![](https://git.io/Jsw4X "Heat Exchanger Controller") Buff steam output, add more sources:
+    > Added working with:
+    > - [fluid:pyrotheum]
+    > - [fluid:fire_water]
+    > - [fluid:enrichedlava]
+    > - [fluid:distwater]
+    > - [fluid:ic2hot_water]
+    > - [fluid:ic2distilled_water]
+
+- ### 🌡️ Thermal Expansion
+
+  - Redstone Repository: Nerf main ingredients crafts
+
+- ### 🌿 Patchouli
+
+  - Remove Patches and redundant info
+
+- ### 🍃 Botania
+
+  - ![](https://git.io/JZYfs "Endoflame") Decay in one hour (turn into dead bush)
+
+- ### 🏪 Requious Fracto
+
+  - JEI for ![](https://git.io/Jsw4X "Heat Exchanger Controller")
+  - JEI for ![](https://git.io/JGGj3 "Petro Petunia")
+
+- ### 🐀 Rats
+
+  - Rats Spawn Like Animals
+    > Should fix rapid Rat spawning when AS **Lucerna** ritual active  
+    > Usually, there is ~400 rats around it
+
+- ### 🐝 Forestry
+
+  - Remove Trees from spawning, update their JER
+
+- ### 👨‍🏭 Mekanism
+
+  - ![](https://git.io/JZYfZ "Ultimate Bin") buff and other Bins
+  - ![](https://git.io/JGGhd "Cardboard Box") Spawner Content tooltip
+  - Nerf Pump - x10 consumption
+    > Pump is too fast and too strong. Basically it fastest and efficient pump in pack  
+    > Also it have huge radius - 80 blocks - to drain entire Nether
+
+- ### 🔨 Tinker's Construct
+
+  - From **Aethium** material only ![](https://git.io/JZLjz "Aethium Armor Trim") gives flight
+  - TconEvo New liquids and materials, other mix tweaks
+  - ![](https://git.io/Jsmfs "Heart Dust") as Conarm Speed Modifier instead Redstone
+  - ![](https://git.io/JGncx "Osgloglas Ingot") Buff stats, but remove 2 traits
+    > **Global Traveler** and **Brown Magic** removed
+  - ![](https://git.io/JZYU3 "Fire Resistance") ![](https://git.io/Jtd0k "Projectile Resistance") ![](https://git.io/Jtd0J "Blast Resistance") only uses one slot
+    > Also add tooltips to Resistant Modifiers
+
+- ### 🗃️ Loot tables
+
+  - Add ME Storage Cells to Loot Boxes, add [Hearty Shank]
+  - Loot Tweaks
+    > - ![](https://git.io/Jsw46 "Sapphire") add to dragon lairs
+    > - ![](https://git.io/Jtyd1 "Sapphire") remove from loot
+    > - ![](https://git.io/JsvC6 "Impulsion Wand") add to AS shrines
+
+- ### 🔩 RFTools
+
+  - Round Environmental Modules values from epsilons
+
+- ### 💼 Actually Additionals
+
+  - ![](https://git.io/J3p8H "Lens of the Miner") Nerf
+    > Now it can only 5 types of Nether Ores and
+    > 9 types of Overworld Ores.
+    > See JEI for details.
+  - [Deathworm Chitin] Add to ![](https://git.io/JZYfz "Ball of Fur")
+
+- ### 📭 Storage Drawers
+
+  - Add Sealed content Tooltip
+  - ![](https://git.io/JZYfC "Sand") -> [Compressed Sand] prefferable for compacting (instead Sandstone)
+
+- ### 🌸 Industrial Foregoing
+
+  - x10 - x100 energy consumption
+    > Some machines was best machines in pack, like ![](https://git.io/JtNTy "Plant Gatherer")
+    > but still have too low consumption (from 10 RF/t).  
+    > Through, most low-tech machines would keep same low RF rate, like ![](https://git.io/JZYft "Dye Mixer")
+
+- ### 🧻 JEI
+
+  - Update item blacklist, Remove ![](https://git.io/JZYfc "Recycler") category
+  - Add TAGS to items `##Flight`
+
+## 🔄 Misc Changes
+
+- ![](https://git.io/JLhpD "Blasted Coal") Buff burn time
+- MineMenu: `Put On Wall` key
+- Buff ![](https://git.io/J3xSv "Tank") up to 24 buckets/block
+- JER: Update The End
+- Merchant new trades (WIP)
+
+
+
+
+
 
 # 0.25
 
