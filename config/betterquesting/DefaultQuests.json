@@ -3037,6 +3037,15 @@
               },
               "Damage:2": 0,
               "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "tconstruct:book",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         }
