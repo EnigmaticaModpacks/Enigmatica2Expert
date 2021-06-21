@@ -262,7 +262,6 @@ Bucket("blockfluidantimatter").addTooltip(format.aqua(desc.local("strike_with_li
 //Add tooltips to biome gems.
 for gems, tip in {
   [<ore:gemAmber>,    <ore:oreAmber>]    : "found.forest" ,
-  [<ore:gemEmerald>,  <ore:oreEmerald>]  : "found.mountain" ,
   [<ore:gemMalachite>,<ore:oreMalachite>]: "found.swamp" ,
   [<ore:gemPeridot>,  <ore:orePeridot>]  : "found.plains" ,
   [<ore:gemRuby>,     <ore:oreRuby>]     : "found.arid" ,
