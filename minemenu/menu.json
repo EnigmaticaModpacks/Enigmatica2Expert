@@ -13,6 +13,32 @@
         }
       }
     },
+    "1": {
+      "title": "Tool Belt",
+      "icon": {
+        "name": "conarm:travel_potion",
+        "damage": 0
+      },
+      "action": {
+        "key": {
+          "key": "key.conarm.toggle_leg.desc",
+          "toggle": false
+        }
+      }
+    },
+    "2": {
+      "title": "Night Vision",
+      "icon": {
+        "name": "conarm:travel_soul",
+        "damage": 0
+      },
+      "action": {
+        "key": {
+          "key": "key.conarm.toggle_helm.desc",
+          "toggle": false
+        }
+      }
+    },
     "3": {
       "title": "Change Tool Config",
       "icon": {
