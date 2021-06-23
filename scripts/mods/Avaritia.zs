@@ -90,7 +90,7 @@ import crafttweaker.item.IItemStack as IItemStack;
 	<twilightforest:block_storage:4>, <extrautils2:decorativesolid:6>, <ore:blockDilithium>, 	
 	<ore:blockCrystalMatrix>, <ore:blockEnderium>, <deepmoblearning:infused_ingot_block>, 	
 	<contenttweaker:terrestrial_artifact_block>, <ore:blockInsanium>, <appliedenergistics2:fluix_block>,
-	compressIt(<draconicevolution:draconium_block:1>, 2), <ore:blockMyrmexResin>, 
+	scripts.mods.preston.compressor.getCompressed(<draconicevolution:draconium_block:1>, 2), <ore:blockMyrmexResin>, 
 	<ore:blockDraconicMetal>, 	<forestry:bee_combs_0>, <ore:blockPrimordial>, 
 	<extendedcrafting:storage:7>, <ore:blockAstralStarmetal>, 	<ore:blockOsgloglas>, <ore:blockMirion>]);
 	

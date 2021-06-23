@@ -113,7 +113,7 @@ craft.remake(<integrateddynamics:energy_battery>.withTag({energy: 0, capacity: 5
   "□ ♥ □",
   "□ ◘ □"], {
   "♥": <additionalcompression:dustredstone_compressed:1>,
-  "□": compressIt(<integrateddynamics:crystalized_menril_block>, 1), # Block of Crystalized Menril
+  "□": scripts.mods.preston.compressor.getCompressed(<integrateddynamics:crystalized_menril_block>, 1), # Block of Crystalized Menril
   "◘": <integrateddynamics:crystalized_chorus_block>, # Block of Crystalized Chorus
 });
 

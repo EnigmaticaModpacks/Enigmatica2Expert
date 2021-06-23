@@ -16,7 +16,7 @@ scripts.process.melt(<mechanics:heavy_block>,  <liquid:heavy_metal> * 1296, "No 
 
 # Heavy Crushing block
 val compressed1 = <mechanics:heavy_block>;
-val compressed2 = compressIt(<actuallyadditions:block_misc:2>, 1);
+val compressed2 = scripts.mods.preston.compressor.getCompressed(<actuallyadditions:block_misc:2>, 1);
 recipes.addShaped(<mechanics:crushing_block>, [
   [compressed1, compressed1],
   [compressed2, compressed2]]);

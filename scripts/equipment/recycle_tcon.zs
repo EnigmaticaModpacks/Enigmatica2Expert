@@ -178,7 +178,7 @@ craft.make(<requious:tinkers_disassembler>, ["pretty",
   "I   I"], {
   "x": <ore:workbench>,
   "▩": <ore:blockFakeIron>,
-  "I": <preston:compressed_block>.withTag({stack: {id: "actuallyadditions:block_misc", Count: 1 as byte, Damage: 2 as short}, level: 1}),
+  "I": scripts.mods.preston.compressor.getCompressed(<actuallyadditions:block_misc:2>, 1),
 });
 
 # -----------------------------------------------------------------------
