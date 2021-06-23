@@ -199,6 +199,9 @@ for item in pressurePlates {
 	for cake in cakes {
 		<ore:foodCake>.add(cake);
 	}
+
+# AA cheese
+<ore:foodCheese>.add(<actuallyadditions:item_food>);
 	
 # Wither Dust
 	<ore:dustWither>.add(<darkutils:material>);

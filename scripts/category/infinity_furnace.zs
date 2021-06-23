@@ -52,7 +52,7 @@ ${filtered.join('\n')}`
 })()
 )*/
 
-# Total Furnace recipes registered: 923
+# Total Furnace recipes registered: 922
 # Filtered: 65
 infinFurnace(<actuallyadditions:block_misc:3>, <actuallyadditions:item_misc:5>);
 infinFurnace(<actuallyadditions:item_dust:3>, <minecraft:emerald>);
@@ -136,7 +136,6 @@ infinFurnace(<cookingforblockheads:recipe_book>, <cookingforblockheads:recipe_bo
 infinFurnace(<draconicevolution:draconium_dust:*>, <draconicevolution:draconium_ingot>);
 infinFurnace(<draconicevolution:draconium_ore:*>, <draconicevolution:draconium_ingot>);
 #infinFurnace(<enderio:item_material:21>, <minecraft:bread>);
-infinFurnace(<enderio:item_material:22>, <enderio:item_material:4> * 2);
 infinFurnace(<enderio:item_material:24>, <minecraft:iron_ingot>);
 infinFurnace(<enderio:item_material:25>, <minecraft:gold_ingot>);
 #infinFurnace(<enderio:item_material:26>, <thermalfoundation:material:128>);
@@ -351,7 +350,7 @@ infinFurnace(<jaopca:item_crushedastralstarmetal>, <astralsorcery:itemcraftingco
 infinFurnace(<jaopca:item_crushedboron>, <nuclearcraft:ingot:5>);
 infinFurnace(<jaopca:item_crushedcobalt>, <tconstruct:ingots>);
 infinFurnace(<jaopca:item_crusheddraconium>, <draconicevolution:draconium_ingot>);
-infinFurnace(<jaopca:item_crushediridium>, <ic2:misc_resource:1>);
+infinFurnace(<jaopca:item_crushediridium>, <thermalfoundation:material:135>);
 infinFurnace(<jaopca:item_crushedlithium>, <nuclearcraft:ingot:6>);
 infinFurnace(<jaopca:item_crushedmagnesium>, <nuclearcraft:ingot:7>);
 infinFurnace(<jaopca:item_crushedmithril>, <thermalfoundation:material:136>);
@@ -364,7 +363,7 @@ infinFurnace(<jaopca:item_crushedpurifiedastralstarmetal>, <astralsorcery:itemcr
 infinFurnace(<jaopca:item_crushedpurifiedboron>, <nuclearcraft:ingot:5>);
 infinFurnace(<jaopca:item_crushedpurifiedcobalt>, <tconstruct:ingots>);
 infinFurnace(<jaopca:item_crushedpurifieddraconium>, <draconicevolution:draconium_ingot>);
-infinFurnace(<jaopca:item_crushedpurifiediridium>, <ic2:misc_resource:1>);
+infinFurnace(<jaopca:item_crushedpurifiediridium>, <thermalfoundation:material:135>);
 infinFurnace(<jaopca:item_crushedpurifiedlithium>, <nuclearcraft:ingot:6>);
 infinFurnace(<jaopca:item_crushedpurifiedmagnesium>, <nuclearcraft:ingot:7>);
 infinFurnace(<jaopca:item_crushedpurifiedmithril>, <thermalfoundation:material:136>);
@@ -438,7 +437,7 @@ infinFurnace(<jaopca:item_dirtygemdimensionalshard>, <rftools:dimensional_shard>
 infinFurnace(<jaopca:item_dirtygemdraconium>, <draconicevolution:draconium_ingot> * 12);
 infinFurnace(<jaopca:item_dirtygememerald>, <minecraft:emerald> * 18);
 infinFurnace(<jaopca:item_dirtygemgold>, <minecraft:gold_ingot> * 12);
-infinFurnace(<jaopca:item_dirtygemiridium>, <ic2:misc_resource:1> * 12);
+infinFurnace(<jaopca:item_dirtygemiridium>, <thermalfoundation:material:135> * 12);
 infinFurnace(<jaopca:item_dirtygemiron>, <minecraft:iron_ingot> * 12);
 infinFurnace(<jaopca:item_dirtygemlapis>, <minecraft:dye:4> * 64);
 infinFurnace(<jaopca:item_dirtygemlead>, <thermalfoundation:material:131> * 12);

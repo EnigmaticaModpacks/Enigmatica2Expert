@@ -110,7 +110,7 @@ val pressPlates = {
 	electrum         : <thermalfoundation:storage_alloy:1>,
 	flint            : <excompressum:compressed_block:5>,
 	osgloglas        : <ore:blockOsgloglas>,
-	black_quartz     : <ore:blockQuartzBlack> * 2,
+	black_quartz     : <ore:blockQuartzBlack>,
 	heavy            : <ore:blockHeavy>,
 	constantan       : <ore:blockConstantan>,
 } as IIngredient[string];
@@ -513,11 +513,12 @@ craft.make(<plustic:laser_medium>.withTag({Material: "endrod"}), ["pretty",
 # [Aethium Armor Trim] from [Mica][+2]
 craft.remake(<conarm:armor_trim>.withTag({Material: "aethium"}), ["pretty",
   "A I A",
-  "I m I",
+  "L p L",
   "A I A"], {
   "A": <tconstruct:shard>.withTag({Material: "aethium"}), # Aethium Shard
   "I": <environmentaltech:interconnect>, # Interconnect
-  "m": <ore:mica>,                       # Mica
+  "L": <ore:blockLitherite>,
+	"p": <environmentaltech:modifier_piezo>,
 });
 
 #-------------------------------------------------------------------------------
@@ -543,3 +544,6 @@ craft.remake(<tconevo:material:2>, ["pretty",
 scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:sunnarium> * 144, [<liquid:liquid_sunshine> * 1000,  <liquid:terrasteel> * 144, <liquid:flux_goo> * 100]);
 scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:dark_matter> * 48, [<liquid:neutronium> * 144, <liquid:primal_metal> * 144,  <liquid:mana> * 250]);
 scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:red_matter> * 48, [<liquid:supremium> * 432,  <liquid:blockfluidantimatter> * 1000, <liquid:dark_matter> * 144]);
+
+# Melt Block of flesh
+scripts.process.melt(<ore:blockFlesh>, <liquid:blood> * 360, "No Exceptions");

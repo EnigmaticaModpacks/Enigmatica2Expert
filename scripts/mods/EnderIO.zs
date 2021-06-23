@@ -243,10 +243,14 @@ scripts.wrap.immersiveengineering.ArcFurnace.addRecipe(<enderio:item_material:72
 
 # Remake binder
 recipes.remove(<enderio:item_material:22> * 8);
-makeEx(<enderio:item_material:22> * 12, [
+makeEx(<enderio:item_material:22> * 24, [
 	[<ore:dust>, <ore:dustEndstone>, <ore:dust>],
 	[<ore:dustClay>, <liquid:sand> * 1000, <ore:dustClay>],
 	[<ore:dust>, <ore:dustEndstone>, <ore:dust>]]);
+
+# And remake binder as compost
+furnace.remove(<enderio:item_material:4>);
+scripts.wrap.actuallyadditions.Compost.addRecipe(<enderio:item_material:4>, <quark:quilted_wool:8>, <enderio:item_material:22>, <biomesoplenty:dirt:2>);
 
 # Simplifi Niard
 recipes.remove(<enderio:block_niard>);
@@ -493,3 +497,23 @@ craft.remake(<enderio:item_material:14>, ["pretty",
 # Remove Death urn (we have special mod for this. Urn not as handy)
 utils.rh(<enderio:item_material:81>, false);
 utils.rh(<enderio:block_death_pouch>, false);
+
+# [Experience Rod] from [Pulsating Crystal][+1]
+craft.remake(<enderio:item_xp_transfer>, ["pretty",
+  "    *",
+  "  ▬  ",
+  "▬    "], {
+  "*": <ore:itemPulsatingCrystal>, # Pulsating Crystal
+  "▬": <ore:ingotPulsatingIron>,   # Pulsating Iron Ingot
+});
+
+# [Experience Obelisk] from [Fluid Tank][+3]
+craft.remake(<enderio:block_experience_obelisk>, ["pretty",
+  "  /  ",
+  "▬ F ▬",
+  "S S S"], {
+  "S": <ore:itemSimpleChassiParts>, # Simple Machine Parts
+  "F": <enderio:block_tank>,        # Fluid Tank
+  "▬": <ore:ingotSoularium>,        # Soularium Ingot
+  "/": <enderio:item_xp_transfer>,  # Experience Rod
+});

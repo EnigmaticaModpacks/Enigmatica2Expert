@@ -45,3 +45,14 @@ recipes.addShaped("Hellish matter to Gold Blocks", <minecraft:gold_block> * 4, [
   [<ore:glowstone>, matterHell, <ore:glowstone>],
   [matterHell, <ore:blockFakeIron>, matterHell],
   [matterHell, matterHell, matterHell]]);
+
+# [Trial Keystone] from [Soot-covered Plate][+3]
+craft.remake(<deepmoblearning:trial_keystone>, ["pretty",
+  "◊ § ◊",
+  "□ п □",
+  "□ □ □"], {
+  "□": <ore:plateSilicon>,                   # Silicon Plate
+  "§": <deepmoblearning:trial_key>,          # Trial Key
+  "◊": <ore:gemDiamond>,                     # Diamond
+  "п": <deepmoblearning:soot_covered_plate>, # Soot-covered Plate
+});

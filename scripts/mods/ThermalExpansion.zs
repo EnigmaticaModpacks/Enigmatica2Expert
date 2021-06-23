@@ -586,6 +586,17 @@ craft.remake(<thermalexpansion:augment:323>, ["pretty",
   "L": <ore:plateLumium>,                # Lumium Plate
 });
 
+# [Augment_ Flux Reconstruction] from [Redstone Conductance Coil][+3]
+craft.remake(<thermalexpansion:augment:401>, ["pretty",
+  "  ▼  ",
+  "¤ ♥ ¤",
+  "  ▬  "], {
+  "¤": <ore:gearGelidEnderium>,          # Gelid Enderium Gear
+  "♥": <thermalfoundation:material:515>, # Redstone Conductance Coil
+  "▬": <ore:ingotCrystaltine>,           # Crystaltine Ingot
+  "▼": <ore:clathrateRedstone>,          # Destabilized Clathrate
+});
+
 # [Tool Casing] from [Block of Black Quartz][+2]
 craft.remake(<thermalfoundation:material:640>, ["pretty",
   "R   R",

@@ -121,7 +121,7 @@ craft.remake(<actuallyadditions:item_mining_lens>, ["pretty",
 	<actuallyadditions:item_dust:2>,
 	<actuallyadditions:item_dust:4>,
 	<actuallyadditions:item_dust:6>,
-	<actuallyadditions:block_misc:5>
+	<actuallyadditions:block_misc:5>,
 	] as IItemStack[];
 	
 	for items in recipesToRemove {
@@ -534,3 +534,46 @@ scripts.processUtils.avdRockXmlRecipe("PrecisionAssembler",
 	[<ore:stickWood> * 60, <ore:ingotGold> * 12, <ore:ingotAluminium> * 24, <ore:ingotFakeIron> * 24,], null,
 	[<actuallyadditions:item_misc:8> * 12], null
 );
+
+# New dough mechanic
+recipes.remove(<actuallyadditions:item_misc:4>);
+mods.rustic.CrushingTub.addRecipe(<liquid:water>, <actuallyadditions:item_misc:4> * 2, <harvestcraft:doughitem>);
+
+# Toast from baguette
+recipes.remove(<actuallyadditions:item_food:10>);
+recipes.addShapeless("Toast from baguette", <actuallyadditions:item_food:10>, [<actuallyadditions:item_food:15>]);
+scripts.process.mash(<actuallyadditions:item_food:15>, <actuallyadditions:item_food:10>*4, "no exceptions");
+
+# [Pizza] from [Carrot][+5]
+craft.remake(<actuallyadditions:item_food:14>, ["pretty",
+  "C K C",
+  "A a l",
+  "  D  "], {
+  "A": <ore:mushroomAny>, # Mushroom
+  "a": <ore:cropCarrot>, # Carrot
+  "C": <ore:foodCheese>, # Cheese
+  "D": <ore:foodDough>,  # Dough
+  "K": <actuallyadditions:item_knife>.anyDamage(), # Knife
+  "l": <ore:listAllfishcooked>, # Cooked Salmon
+});
+
+# [Big Cookie] from [Cocoa Beans][+1]
+craft.remake(<actuallyadditions:item_food:12>, ["pretty",
+  "D d D",
+  "d D d",
+  "D d D"], {
+  "D": <ore:foodDough>,            # Dough
+  "d": <minecraft:dye:3>, # Cocoa Beans
+});
+
+# [Chocolate Cake] from [Egg][+4]
+craft.remake(<actuallyadditions:item_food:8>, ["pretty",
+  "A A A",
+  "d d d",
+  "e D l"], {
+  "A": <ore:listAllmilk>, # Fresh Milk
+  "d": <minecraft:dye:3>, # Cocoa Beans
+  "D": <ore:foodDough>, # Dough
+  "e": <ore:listAllegg>, # Egg
+  "l": <ore:listAllsugar>, # Sugar
+});

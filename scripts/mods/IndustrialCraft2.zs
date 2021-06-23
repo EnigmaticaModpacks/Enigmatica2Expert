@@ -18,28 +18,15 @@ import mods.ic2.ScrapBox;
 	recipes.remove(<ic2:te:89>);
 
 # Crushed Ore Smeltery compat
-	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:aluminum> * 144, <jaopca:item_crushedaluminium>);
-	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:ardite> * 144, <jaopca:item_crushedardite>);
-	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:starmetal> * 144, <jaopca:item_crushedastralstarmetal>);
-	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:boron> * 144, <jaopca:item_crushedboron>);
-	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:cobalt> * 144, <jaopca:item_crushedcobalt>);
-	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:draconium> * 144, <jaopca:item_crusheddraconium>);
-	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:iridium> * 144, <jaopca:item_crushediridium>);
-	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:lithium> * 144, <jaopca:item_crushedlithium>);
-	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:magnesium> * 144, <jaopca:item_crushedmagnesium>);
-	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:mithril> * 144, <jaopca:item_crushedmithril>);
-	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:thorium> * 144, <jaopca:item_crushedthorium>);
-	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:platinum> * 144, <jaopca:item_crushedplatinum>);
-	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:osmium> * 144, <jaopca:item_crushedosmium>);
-	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:nickel> * 144, <jaopca:item_crushednickel>);
-	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:titanium> * 144, <jaopca:item_crushedtitanium>);
-	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:copper> * 144, <ic2:crushed>);
-	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:gold> * 144, <ic2:crushed:1>);
-	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:iron> * 144, <ic2:crushed:2>);
-	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:lead> * 144, <ic2:crushed:3>);
-	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:silver> * 144, <ic2:crushed:4>);
-	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:tin> * 144, <ic2:crushed:5>);
-	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:uranium> * 144, <ic2:crushed:6>);
+for ore_entry in oreDict {
+	val name = ore_entry.name;
+	if (!name.matches("crushed[A-Z]\\w+")) continue;
+
+	val liquid = game.getLiquid(name.substring(7).toLowerCase());
+	if(isNull(liquid)) continue;
+	
+	scripts.wrap.tconstruct.Melting.addRecipe(liquid * 144, ore_entry);
+}
 
 # Jetpacks	
 	recipes.remove(<ic2:jetpack_electric>.anyDamage());

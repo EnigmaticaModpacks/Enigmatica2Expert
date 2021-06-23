@@ -8,6 +8,10 @@ mods.nuclearcraft.melter.removeRecipeWithInput(<ore:obsidian>);
 mods.nuclearcraft.melter.removeRecipeWithInput(<ore:dustObsidian>);
 mods.nuclearcraft.melter.addRecipe(<ore:obsidian>, <liquid:obsidian> * 144);
 
+# Remove charcoal to coal conversion
+mods.nuclearcraft.melter.removeRecipeWithInput(<nuclearcraft:dust:8>);
+mods.nuclearcraft.melter.removeRecipeWithInput(<bigreactors:blockgraphite>);
+
 # Rhodochrosite
 	scripts.wrap.actuallyadditions.AtomicReconstructor.addRecipe(<nuclearcraft:gem>, <biomesoplenty:gem:1>, 15000);
 

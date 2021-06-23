@@ -446,7 +446,8 @@ recipes.addShaped(<twilightforest:peacock_fan>, [
 ]);
 
 # Lesser blaze powder
-craft.reshapeless(<minecraft:blaze_powder>, "A", { A: <minecraft:blaze_rod>, remove: <minecraft:blaze_powder>*2});
+recipes.removeShapeless(<minecraft:blaze_powder>, [<minecraft:blaze_rod>]);
+recipes.addShapeless("harder_blaze_dust", <minecraft:blaze_powder>, [<minecraft:blaze_rod>]);
 
 # Harder vanilla recipe
 recipes.remove(<minecraft:flint_and_steel>);
@@ -505,7 +506,7 @@ scripts.process.melt(<ore:tallow>, <liquid:biomass> * 10, "No Exceptions");
 
 # Molten Cheese
 scripts.process.melt(<ore:cheeseWheels>|<ore:blockCheese>, <liquid:cheese> * 1000, "No Exceptions");
-scripts.process.melt(<ore:foodCheese>|<actuallyadditions:item_food>, <liquid:cheese> * 250, "No Exceptions");
+scripts.process.melt(<ore:foodCheese>, <liquid:cheese> * 250, "No Exceptions");
 scripts.wrap.tconstruct.Casting.addBasinRecipe(<rats:block_of_cheese>, null, <liquid:cheese>, 1000);
 
 # Hardened Ice Unification

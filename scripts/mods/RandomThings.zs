@@ -226,7 +226,7 @@ craft.remake(<randomthings:weatheregg:2> * 2, ["pretty",
 
 # Spectre string harder
 recipes.remove(<randomthings:ingredient:12>);
-scripts.wrap.inworldcrafting.FluidToItem.transform(<randomthings:ingredient:12>, <fluid:liquid_sunshine>, [
+scripts.wrap.inworldcrafting.FluidToItem.transform(<randomthings:ingredient:12> * 4, <fluid:liquid_sunshine>, [
 	<forestry:phosphor>,
 	<randomthings:ingredient:2>,
 	<mysticalagriculture:crafting:23>,
