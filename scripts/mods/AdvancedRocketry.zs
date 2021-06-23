@@ -177,3 +177,11 @@ scripts.processUtils.avdRockXmlRecipe("PrecisionAssembler",	[
 # Press recipe instead crafting table
 recipes.remove(<advancedrocketry:misc>);
 scripts.wrap.immersiveengineering.MetalPress.addRecipe(<advancedrocketry:misc>, <ore:oc:screen3>, <immersiveengineering:mold:0>, 2000);
+
+# Advanced Alloys
+scripts.process.alloy([<ore:ingotElectricalSteel> * 2, <ore:ingotPlatinum>, <actuallyadditions:item_crystal_empowered:1>], <ore:ingotModularium>.firstItem * 2,        "only: AdvRockArc");
+scripts.process.alloy([<ore:ingotRefinedObsidian>, <ore:ingotOsmium>, <ore:ingotRefinedGlowstone>                       ], <ore:ingotOsgloglas>.firstItem * 2,         "only: AdvRockArc");
+scripts.process.alloy([<ore:ingotManasteel>, <ore:ingotElvenElementium>, <ore:ingotTerrasteel>, <ore:blockGlass> * 10   ], <ore:ingotMirion>.firstItem * 6,            "only: AdvRockArc");
+scripts.process.alloy([<ore:ingotIridium>, <ore:ingotOsmium>                                                            ], <ore:ingotOsmiridium>.firstItem * 4,        "only: AdvRockArc");
+scripts.process.alloy([<ore:blockDiamond>, <ore:blockRedstone> * 5                                                      ], <ore:blockCrystalFlux>.firstItem,           "only: AdvRockArc");
+scripts.process.alloy([<ore:ingotMagnesium> * 3, <ore:ingotBoron> * 6                                                   ], <ore:ingotMagnesiumDiboride>.firstItem * 9, "only: AdvRockArc");

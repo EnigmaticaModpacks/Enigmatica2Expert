@@ -110,7 +110,6 @@ tooltips.lang.ic2:quantum_chestplate=§bSpace+V§r to hover\n§bShift+V§r to di
 tooltips.lang.advgenerators:gas_input=Disabled due to not consuming fuel
 tooltips.lang.fluid.corium=§aObtainable by melting down a Fission Reactor
 tooltips.lang.mm.starlight_crafting_engine=Needs §9§l1§r Item Input, §9§l1§r Fluid Input, §9§l1§r Item Output
-tooltips.lang.mm.advanced_metallurgic_fabricator=Needs §9§l1§r Item Input, §9§l1§r Fluid Input, §9§l1§r Item Output
 tooltips.lang.mm.advanced_thermionic_fabricator=Needs §9§l1§r Item Input, §9§l1§r Fluid Input, §9§l1§r Item Output
 tooltips.lang.mm.advanced_carpenter=Needs §9§l1§r Item Input, §9§l1§r Fluid Input, §9§l1§r Item Output
 tooltips.lang.mm.arcane_crafting_engine=Needs §9§l1§r Item Input, §9§l1§r Item Output

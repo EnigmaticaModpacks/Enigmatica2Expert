@@ -29,13 +29,6 @@ import crafttweaker.item.IItemStack as IItemStack;
     [<forestry:carpenter>, <immersiveengineering:blueprint>.anyDamage(), <forestry:carpenter>], 
     [<modularmachinery:blockcasing>, <extracells:fluidcrafter>, <modularmachinery:blockcasing>]]);
     
-# Advanced Metallurgic Fabricator
-	recipes.addShapedMirrored("Advanced Metallurgic Fabricator", 
-	<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:advanced_metallurgic_fabricator"}), 
-	[[<ore:ingotModularium>, <ore:circuitAdvanced>, <ore:ingotModularium>],
-	[<ore:circuitAdvanced>, <immersiveengineering:blueprint>.anyDamage(), <ore:circuitAdvanced>], 
-	[<ore:ingotModularium>, <ore:circuitAdvanced>, <ore:ingotModularium>]]);
-    
 # Advanced Scrap Factory
 	recipes.addShapedMirrored("Advanced Scrap Factory", 
 	<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:advanced_scrap_factory"}), 

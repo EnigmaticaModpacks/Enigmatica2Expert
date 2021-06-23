@@ -340,7 +340,6 @@ desc.tooltip(<conarm:resist_mat_blast>, 'tcon.slot_first');
 # Modular Machine descriptions
 for machineName, lang in {
 	"starlight_crafting_engine"       : "mm.starlight_crafting_engine",
-	"advanced_metallurgic_fabricator" : "mm.advanced_metallurgic_fabricator",
 	"advanced_thermionic_fabricator"  : "mm.advanced_thermionic_fabricator",
 	"advanced_carpenter"              : "mm.advanced_carpenter",
 	"arcane_crafting_engine"          : "mm.arcane_crafting_engine",
