@@ -129,6 +129,12 @@ tooltips.lang.botania.decay1hour=§eУвядает за 1 час
 tooltips.lang.tcon.slot_each=§eКаждый уровень требует слот
 tooltips.lang.tcon.slot_first=§eИспользует только один слот
 tooltips.lang.crystal_memory=§cНе может быть скрафчен, только §4реплицирован§r\n§cИщите Крафты Кристалла Памяти
+tooltips.lang.botania:infinitefruit=§aДержите владельца, насыщенный, используя ману из своего инвентаря
+tooltips.lang.botania:kingkey=§aПобебленный всплеск ущерба Mana оружие
+tooltips.lang.botania:flugeleye=§aShift RMB Блок для связывания, удерживайте RMB для телепортации, использует ману
+tooltips.lang.botania:thorring=§aУвеличивает область разрушителя Terra Shatter
+tooltips.lang.botania:odinring=§aДополнительные сердца, защиты от утопления, удушья, пожара или ущерба для голода
+tooltips.lang.botania:lokiring=§aСтроительный инструмент
 
 requious.jei.recipe.infernal_furnace=Инфернальная Печь
 requious.jei.recipe.liquid_interaction=Прикасание Жидкостей

@@ -336,6 +336,12 @@ desc.tooltip(<conarm:resist_mat>, 'tcon.slot_each');
 desc.tooltip(<conarm:resist_mat_fire>, 'tcon.slot_first');
 desc.tooltip(<conarm:resist_mat_proj>, 'tcon.slot_first');
 desc.tooltip(<conarm:resist_mat_blast>, 'tcon.slot_first');
+desc.tooltip(<botania:infinitefruit>);
+desc.tooltip(<botania:kingkey>);
+desc.tooltip(<botania:flugeleye>);
+desc.tooltip(<botania:thorring>);
+desc.tooltip(<botania:odinring>);
+desc.tooltip(<botania:lokiring>);
 
 # Modular Machine descriptions
 for machineName, lang in {

@@ -130,6 +130,12 @@ tooltips.lang.botania.decay1hour=§eDecay in 1 hour
 tooltips.lang.tcon.slot_each=§eEach level requires a slot
 tooltips.lang.tcon.slot_first=§eOnly uses one slot
 tooltips.lang.crystal_memory=§cCan't be crafted, only §4replicated§r\nCheck §nCrystal Memory§r crafts
+tooltips.lang.botania:infinitefruit=§aKeep the owner saturated using Mana from his inventory
+tooltips.lang.botania:kingkey=§aBuffed splash damage Mana weapon
+tooltips.lang.botania:flugeleye=§aShift RMB a block to bind, hold RMB to teleport, uses Mana
+tooltips.lang.botania:thorring=§aIncreases area of Terra Shatterer
+tooltips.lang.botania:odinring=§aExtra hearts, protects from drowning, suffocation, fire or starvation damage
+tooltips.lang.botania:lokiring=§aBuilding tool
 
 requious.jei.recipe.infernal_furnace=Infernal Furnace
 requious.jei.recipe.liquid_interaction=Liquid Interaction
