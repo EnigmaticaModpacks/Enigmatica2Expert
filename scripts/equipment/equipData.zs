@@ -163,7 +163,6 @@ val defaultArmorMats as IData = [
   "sunnarium"              , # 62
   "plague_metal"           , # 63
   "titanium"               , # 67
-  "gelid_enderium"         , # 68
   "xu_evil_metal"          , # 68
   "starmetal"              , # 71
   "ma.prudentium"          , # 73
@@ -177,17 +176,18 @@ val defaultArmorMats as IData = [
   "osmiridium"             , # 84
   "dark_steel"             , # 86
   "amethyst"               , # 87
-  "gelid_gem"              , # 91
   "knightmetal"            , # 96
   "mirion"                 , # 96
   "wyvern_metal"           , # 97
   "ma.intermedium"         , # 98
   "weezer"                 , # 101
+  "dragonsteel_fire"       , # 110
+  "dragonsteel_ice"        , # 110
   "primal_metal"           , # 111
-  "dragonsteel_fire"       , # 114
-  "dragonsteel_ice"        , # 114
-  "soularium"              , # 123
+  "soularium"              , # 120
   "red_matter"             , # 128
+  "gelid_enderium"         , # 134
+  "gelid_gem"              , # 218
 ] as IData;
 
 
@@ -207,6 +207,7 @@ val defaultWeaponMats as IData = [
   "certus_quartz"          , # 67
   "bone"                   , # 71
   "dragonbone"             , # 73
+  "aquamarine"             , # 75
   "blueslime"              , # 75
   "tanzanite"              , # 75
   "apatite"                , # 77
@@ -217,7 +218,6 @@ val defaultWeaponMats as IData = [
   "polyethylene"           , # 81
   "tin"                    , # 81
   "livingrock"             , # 82
-  "aquamarine"             , # 82
   "treatedwood"            , # 82
   "magmaslime"             , # 85
   "copper"                 , # 88
@@ -225,10 +225,10 @@ val defaultWeaponMats as IData = [
   "firewood"               , # 89
   "amber"                  , # 90
   "malachite_gem"          , # 90
+  "soularium"              , # 91
   "plague_metal"           , # 92
   "lead"                   , # 93
   "peridot"                , # 96
-  "soularium"              , # 96
   "silver"                 , # 97
   "wolframium"             , # 98
   "xu_demonic_metal"       , # 98
@@ -317,7 +317,6 @@ val defaultWeaponMats as IData = [
   "refined_obsidian"       , # 221
   "xu_evil_metal"          , # 222
   "pulsating_iron"         , # 225
-  "gelid_gem"              , # 230
   "conductive_iron"        , # 237
   "platinum"               , # 242
   "ma.intermedium"         , # 243
@@ -326,7 +325,6 @@ val defaultWeaponMats as IData = [
   "enderium"               , # 246
   "terrasteel"             , # 247
   "boron_nitride"          , # 249
-  "gelid_enderium"         , # 261
   "iridium"                , # 262
   "signalum"               , # 265
   "end_steel"              , # 271
@@ -334,17 +332,19 @@ val defaultWeaponMats as IData = [
   "sunnarium"              , # 306
   "void_metal"             , # 311
   "pink_metal"             , # 322
+  "dragonsteel_fire"       , # 335
+  "dragonsteel_ice"        , # 335
   "crystal_matrix"         , # 377
   "universal_metal"        , # 380
   "primal_metal"           , # 380
   "wyvern_metal"           , # 381
-  "dragonsteel_fire"       , # 398
-  "dragonsteel_ice"        , # 398
   "dark_matter"            , # 432
   "darkwood"               , # 447
   "mirion"                 , # 464
   "litherite"              , # 597
+  "gelid_gem"              , # 642
   "erodium"                , # 683
+  "gelid_enderium"         , # 718
   "red_matter"             , # 758
   "kyronite"               , # 776
   "pladium"                , # 877

@@ -43,8 +43,8 @@ diamantine_crystal,,,,,,
 draconic_metal,,,,,,
 draconium,,,,,,
 dragonbone,,,,,,
-dragonsteel_fire,,*1.5,,,,
-dragonsteel_ice,,*1.5,,,,
+dragonsteel_fire,,*1.25,,,,
+dragonsteel_ice,,*1.25,,,,
 dreamwood,*2,*2,,*2,,*2
 electrical_steel,,,,,,
 electrum,,,,,,
@@ -69,8 +69,8 @@ fluix,,,,,,
 flux_crystal,,,,,,
 fluxed_electrum,,,,,,
 fusewood,*3,*3,*3,*3,*3,*3
-gelid_enderium,,,,,,
-gelid_gem,,,,,,
+gelid_enderium,*2,*2,*2,*2,*2,*2
+gelid_gem,*2,*2,*2,*2,*2,*2
 ghostwood,*2,*2,*2,*2,*2,*2
 hard_carbon,*1.08,*1.5,,,*1.51,
 heavy,,,,,,
@@ -159,7 +159,7 @@ signalum,*2,*2,*2,*2,+1,+20
 silver,,,,,,
 sky_stone,,,,,,
 slime,,,,,,
-soularium,,,,,,
+soularium,*0.75,,,,,
 spectre,,,,,,
 sponge,,,,,,
 starmetal,*0.8,*1.06,*20,*1.6,*4.67,
