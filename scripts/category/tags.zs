@@ -95,6 +95,13 @@ for lang, items in {
     <randomthings:enderanchor>,
   ],
 
+  "tag.repairer" : [
+    <actuallyadditions:block_item_repairer>,
+    <cyclicmagic:block_anvil_magma>,
+    <cyclicmagic:block_anvil>,
+    <thermalexpansion:augment:401>,
+  ],
+
   "tag.user" : [
     <computercraft:turtle_advanced>,
     <computercraft:turtle_expanded>,
@@ -103,6 +110,34 @@ for lang, items in {
     <integratedtunnels:part_player_simulator_item>,
     <opencomputers:misc:1>,
     <opencomputers:robot>,
+  ],
+
+  "tag.crafter" : [
+    <immersivepetroleum:schematic>.withTag({multiblock: "IE:Assembler"}),
+    <enderio:block_simple_crafter>,
+    <enderio:block_crafter>,
+    <extrautils2:analogcrafter>,
+    <industrialforegoing:fluid_crafter>,
+    <ic2:te:89>,
+    <rftools:crafter1>,
+    <rftools:crafter2>,
+    <rftools:crafter3>,
+    <thaumcraft:pattern_crafter>,
+    <thermallogistics:crafter>,
+    <thermallogistics:crafter:1>,
+    <thermallogistics:crafter:2>,
+    <thermallogistics:crafter:3>,
+    <thermallogistics:crafter:4>,
+    <thermalexpansion:machine:11>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte}),
+    <mekanism:machineblock3:5>,
+    <appliedenergistics2:molecular_assembler>,
+    <threng:big_assembler:2>,
+    <extracells:fluidcrafter>,
+    <cyclicmagic:auto_crafter>,
+    <botania:opencrate:1>,
+    <integratedcrafting:part_interface_crafting_item>,
+    <opencomputers:upgrade:11>,
+    <rats:rat_upgrade_crafting>,
   ],
 
   "tag.flight" : [

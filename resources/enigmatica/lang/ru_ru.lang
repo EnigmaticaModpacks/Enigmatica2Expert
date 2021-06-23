@@ -4,10 +4,12 @@ tooltips.lang.tag.generator=§6#Генератор
 tooltips.lang.tag.chunkloader=§9#Якорь
 tooltips.lang.tag.tank=§b#Резервуар
 tooltips.lang.tag.user=§5#Пользователь
+tooltips.lang.tag.crafter=§e#Крафтер
 tooltips.lang.tag.hopper=§2#Воронка
 tooltips.lang.tag.miner=§1#Шахтер
 tooltips.lang.tag.voidminer=§3#ПустотныйШахтер
 tooltips.lang.tag.flight=§b#Полет
+tooltips.lang.tag.repairer=§4#Чинитель
 
 tooltips.lang.removed.dupe_ore=Удалено, потому что с его помощью можно было обмануть несколько руд.
 tooltips.lang.crescent_hammer=Щелкните правой кнопкой мыши, используя молоток полумесяца, чтобы поднять. \n Кэш сохраняет свои обновления и инвентарь. \n Не ломай киркой!
