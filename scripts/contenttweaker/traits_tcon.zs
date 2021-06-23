@@ -60,7 +60,7 @@ https://github.com/badmonkey/wilderness-minecraft/blob/f32102d158566de9d346034b3
 val rage = TraitBuilder.create("blindrage");
 rage.color = 0x080808;
 rage.localizedName = "Blind Rage";
-rage.localizedDescription = "\u00a7oWho said you needed to see your enemies?\n\u00a7rDeal double damage when blinded";
+rage.localizedDescription = "§oWho said you needed to see your enemies?\n§rDeal double damage when blinded";
 rage.calcDamage = function(trait, tool, attacker, target, originalDamage, newDamage, isCritical)
 {
   if(attacker.isPotionActive(<potion:minecraft:blindness>)){
@@ -78,7 +78,7 @@ rage.register();
 val dark = TraitBuilder.create("darkness");
 dark.color = 0x332c3b;
 dark.localizedName = "Eternal Darkness";
-dark.localizedDescription = "\u00a7oJoin the dark side...\n\u00a7rYour tool loves the dark so much; it does more damage in the dark.";
+dark.localizedDescription = "§oJoin the dark side...\n§rYour tool loves the dark so much; it does more damage in the dark.";
 dark.calcDamage = function(trait, tool, attacker, target, originalDamage, newDamage, isCritical)
 {
   var light = attacker.world.getBrightness(attacker.getX(), attacker.getY(), attacker.getZ());
@@ -94,7 +94,7 @@ dark.register();
 val dire = TraitBuilder.create("dire");
 dire.color = 0x54514a;
 dire.localizedName = "Dire-Hit";
-dire.localizedDescription = "\u00a7oIt's super effective!\n\u00a7rYour tool will always land critical hits so long as you are at full health!";
+dire.localizedDescription = "§oIt's super effective!\n§rYour tool will always land critical hits so long as you are at full health!";
 dire.calcCrit = function(trait, tool, attacker, target)
 {
   return attacker.health >= attacker.maxHealth;
@@ -108,7 +108,7 @@ dire.register();
 val life = TraitBuilder.create("lifecycle");
 life.color = 0xff2010;
 life.localizedName = "Cycle of Life";
-life.localizedDescription = "\u00a7oFrom one to another.\n\u00a7rWhen your tool is damaged, you are healed for the damaged amount.";
+life.localizedDescription = "§oFrom one to another.\n§rWhen your tool is damaged, you are healed for the damaged amount.";
 life.onToolDamage = function(trait, tool, unmodifiedAmount, newAmount, holder)
 {
   holder.heal(newAmount);
@@ -123,7 +123,7 @@ life.register();
 val antimagic = ArmorTraitBuilder.create("antimagic");
 antimagic.color = 0x000000;
 antimagic.localizedName = "Anti-Magic";
-antimagic.localizedDescription = "\u00a7oNihilistic!\n\u00a7rYour armor doesn't believe in potions, and refuses to be affected by any potion effects; good or bad.";
+antimagic.localizedDescription = "§oNihilistic!\n§rYour armor doesn't believe in potions, and refuses to be affected by any potion effects; good or bad.";
 antimagic.onHurt = function(trait, armor, player, source, damage, newDamage, evt) {
   if(armor.damage < armor.maxDamage && source.isMagicDamage()) {
     evt.cancel();
@@ -142,7 +142,7 @@ antimagic.register();
 val darkdefense = ArmorTraitBuilder.create("darkside");
 darkdefense.color = 0x332c3b;
 darkdefense.localizedName = "The Dark Side";
-darkdefense.localizedDescription = "\u00a7oUnder the cover of darkness!\n\u00a7rYour armor loves the dark so much; you take less damage when in darkness.";
+darkdefense.localizedDescription = "§oUnder the cover of darkness!\n§rYour armor loves the dark so much; you take less damage when in darkness.";
 darkdefense.onHurt = function(trait, armor, player, source, damage, newDamage, event)
 {
   return newDamage * (0.75 + 0.25 * player.world.getBrightness(player.x, player.y, player.z) / 15.0);
@@ -160,11 +160,29 @@ mentor.localizedDescription = game.localize("e2ee.tconstruct.material.mentor.des
 mentor.calcDamage = function(trait, tool, attacker, target, originalDamage, newDamage, isCritical) {
   if (! attacker instanceof IPlayer) return newDamage;
   val player as IPlayer = attacker;
-  var buff = sqrt(player.xp);
-  player.xp = player.xp * 0.99;
-  return newDamage + buff;
+  val level = getItemMatAmount(tool, "essence_metal");
+  if (level <= 0) return newDamage;
+  player.xp = max(0, player.xp - level);
+  // player.removeExperience((player.getTotalXP() as float * (0.03f * level as float) + 1.0f) as int);
+  return newDamage + sqrt(player.xp * level);
 };
 mentor.register();
+
+var
+trait_armor = ArmorTraitBuilder.create("apprentice");
+trait_armor.color = 0x216e2a;
+trait_armor.localizedName = game.localize("e2ee.tconstruct.material.apprentice.name");
+trait_armor.localizedDescription = game.localize("e2ee.tconstruct.material.apprentice.description");
+trait_armor.onHurt = function(trait, armor, victim, source, damage, newDamage, evt) {
+  var level = 1;
+  if (victim instanceof IPlayer) {
+    val player as IPlayer = victim;
+    level = getArmorMatsAmount(player, "essence_metal");
+    player.addExperience((ceil(newDamage as double / 10.0d) * level as double) as int);
+  }
+  return newDamage + (newDamage as double * (0.1d * level as double)) as int;
+};
+trait_armor.register();
 
 
 //
@@ -173,7 +191,7 @@ mentor.register();
 val difficulty = TraitBuilder.create("difficulty");
 difficulty.color = 0xd1310d;
 difficulty.localizedName = "Difficulty";
-difficulty.localizedDescription = "\u00a7oScalling Difficulty\n\u00a7rMining and attacking reduce player difficulty";
+difficulty.localizedDescription = "§oScalling Difficulty\n§rMining and attacking reduce player difficulty";
 difficulty.afterBlockBreak = function(trait, tool, world, blockstate, miner, wasEffective, unknown) {
   if(world.isRemote()) return;
   if(! miner instanceof IPlayer) return;
@@ -195,7 +213,7 @@ difficulty.register();
 val difficulty_armor = ArmorTraitBuilder.create("difficulty");
 difficulty_armor.color = 0xd1310d;
 difficulty_armor.localizedName = "Difficulty";
-difficulty_armor.localizedDescription = "\u00a7oScalling Difficulty\n\u00a7rMining and attacking reduce player difficulty";
+difficulty_armor.localizedDescription = "§oScalling Difficulty\n§rMining and attacking reduce player difficulty";
 difficulty_armor.onDamaged = function(trait, armor, player, source, damage, newDamage, evt) {
   if(player.world.isRemote()) return newDamage;
   if(newDamage <= 0) return newDamage;
@@ -294,7 +312,6 @@ mat.addProjectileMaterialStats();
 mat.register();
 
 
-var
 trait_armor = ArmorTraitBuilder.create("alpha_fur");
 trait_armor.color = 0x2196f3;
 trait_armor.localizedName = game.localize("e2ee.tconstruct.material.alpha_fur.name");
