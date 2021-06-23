@@ -489,3 +489,7 @@ craft.remake(<enderio:item_material:14>, ["pretty",
   "B": <biomesoplenty:biome_essence>, # Biome Essence
   "‚": <ore:nuggetPulsatingIron>,     # Pulsating Iron Nugget
 });
+
+# Remove Death urn (we have special mod for this. Urn not as handy)
+utils.rh(<enderio:item_material:81>, false);
+utils.rh(<enderio:block_death_pouch>, false);
