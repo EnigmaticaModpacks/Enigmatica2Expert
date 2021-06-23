@@ -223,7 +223,7 @@ e2ee.tips.57=§bPSI Energy§r restoring when you gather §aXP§r.
 e2ee.tips.58=Успокойте слишком быстрый инструмент нажав "§l\§r".
 
 e2ee.tconstruct.material.spectre.name=Призрачный
-e2ee.tconstruct.material.spectre.description=§bПризрачный%nКаждая деталь удлиняет руки
+e2ee.tconstruct.material.spectre.description=§bПризрачный\nКаждая деталь удлиняет руки
 e2ee.tconstruct.material.mentor.name=Наставник
 e2ee.tconstruct.material.mentor.description=\u00a7oСила знания\n\u00a7rКаждый удар требует опыта, но наносит больше урона в зависимости от уровня опыта.
 e2ee.tconstruct.material.spectre_string.name=Призрачная Нить

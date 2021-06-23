@@ -1,5 +1,6 @@
 #loader contenttweaker
 
+import crafttweaker.item.IItemStack;
 import crafttweaker.block.IBlockState;
 import crafttweaker.event.IBlockEvent;
 import crafttweaker.player.IPlayer;
@@ -13,10 +14,39 @@ import mods.contenttweaker.tconstruct.MaterialBuilder;
 import mods.ctutils.utils.Math.max;
 import mods.ctutils.utils.Math.min;
 import mods.ctutils.utils.Math.sqrt;
+import mods.ctutils.utils.Math.ceil;
 import crafttweaker.world.IWorld;
+import crafttweaker.entity.IEntityEquipmentSlot as entEqSlot;
 
 function getDrawSpeed(inversed as float) as float {
     return (1.0 as float / inversed as float) as float;
+}
+
+function getItemMatAmount(item as IItemStack, lookup as string) as int {
+  if(
+    isNull(item) || 
+    isNull(item.tag) || 
+    isNull(item.tag.TinkerData) || 
+    isNull(item.tag.TinkerData.Materials) || 
+    isNull(item.tag.TinkerData.Materials.asList())
+  ) return 0;
+  var level = 0;
+  for i,name in item.tag.TinkerData.Materials.asList() {
+    if(name == lookup) level += 1;
+  }
+  return level;
+}
+
+static armSlots as entEqSlot[] = [
+	entEqSlot.head(), entEqSlot.chest(), entEqSlot.legs(), entEqSlot.feet()
+] as entEqSlot[];
+
+function getArmorMatsAmount(player as IPlayer, lookup as string) as int {
+  var level = 0;
+  for slot in armSlots {
+    level += getItemMatAmount(player.getItemInSlot(slot), lookup);
+  }
+  return level;
 }
 
 /* 
@@ -196,25 +226,18 @@ spectre.addPlatesMaterialStats(1.6, 100, 2);
 spectre.addTrimMaterialStats(70);
 spectre.register();
 
-function spectreMechanic(world as IWorld, player as IPlayer) as void {
+static spectreUpdateTime as int = 80;
+
+function spectreMechanic(world as IWorld, player as IPlayer, level as int) as void {
   if (world.isRemote()) return;
   if (isNull(player)) return;
   if (!player.isPotionActive(<potion:potioncore:reach>)) {
-    player.addPotionEffect(<potion:potioncore:reach>.makePotionEffect(40, 1));
+    player.addPotionEffect(<potion:potioncore:reach>.makePotionEffect(spectreUpdateTime, level - 1));
+    return;
   }
   val effect = player.getActivePotionEffect(<potion:potioncore:reach>);
-  player.addPotionEffect(<potion:potioncore:reach>.makePotionEffect(40, effect.amplifier + 1));
+  player.addPotionEffect(<potion:potioncore:reach>.makePotionEffect(spectreUpdateTime, effect.amplifier + level));
 }
-
-val spectre_armor = ArmorTraitBuilder.create("spectre");
-spectre_armor.color = 0x9CC1CE;
-spectre_armor.localizedName = game.localize("e2ee.tconstruct.material.spectre.name");
-spectre_armor.localizedDescription = game.localize("e2ee.tconstruct.material.spectre.description");
-spectre_armor.onAbility = function(trait, level, world, player) {
-  if (world.getWorldTime() % 40 != 0) return;
-  spectreMechanic(world, player);
-};
-spectre_armor.register();
 
 val spectre_trait = TraitBuilder.create("spectre");
 spectre_trait.color = 0x9CC1CE;
@@ -222,12 +245,23 @@ spectre_trait.localizedName = game.localize("e2ee.tconstruct.material.spectre.na
 spectre_trait.localizedDescription = game.localize("e2ee.tconstruct.material.spectre.description");
 spectre_trait.onUpdate = function(trait, tool, world, owner, itemSlot, isSelected) {
   if (!isSelected) return;
-  if (world.getWorldTime() % 40 != 0) return;
+  if (world.getWorldTime() % spectreUpdateTime != 0) return;
   if (! owner instanceof IPlayer) return;
   val player as IPlayer = owner;
-  spectreMechanic(world, player);
+  spectreMechanic(world, player, getItemMatAmount(tool, "spectre"));
 };
 spectre_trait.register();
+
+
+val spectre_armor = ArmorTraitBuilder.create("spectre");
+spectre_armor.color = 0x9CC1CE;
+spectre_armor.localizedName = game.localize("e2ee.tconstruct.material.spectre.name");
+spectre_armor.localizedDescription = game.localize("e2ee.tconstruct.material.spectre.description");
+spectre_armor.onAbility = function(trait, level, world, player) {
+  if (world.getWorldTime() % spectreUpdateTime != 0) return;
+  spectreMechanic(world, player, getArmorMatsAmount(player, "spectre"));
+};
+spectre_armor.register();
 
 /////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////
