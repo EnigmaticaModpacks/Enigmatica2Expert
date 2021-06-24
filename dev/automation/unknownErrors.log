@@ -1,4 +1,4 @@
-[Surge]: The game loaded in approximately  584.652 seconds.
+[Surge]: The game loaded in approximately  625.837 seconds.
 [main/ERROR] [mixin]: Mixin config mixins.mixincompat.json does not specify "minVersion" property
 [main/WARN] [mixin]: Reference map 'mixins.mixincompat.refmap.json' for mixins.mixincompat.json could not be read. If this is a development environment you can ignore this message
 [main/WARN] [sampler-core]: bce failed (d5, 1, false)
@@ -6,5 +6,3 @@
 [Client thread/WARN] [enderio]: Mekanism Gas conduits loaded. Let your networks connect!
 [Client thread/WARN] [net.minecraft.nbt.NBTUtil]: Unable to read property: material with value: iron for blockstate: {Properties:{material:"iron",facing:"down",type:"kinetic_generator",transparent:"false"},Name:"ic2:te"}
 [Client thread/WARN] [net.minecraft.nbt.NBTUtil]: Unable to read property: material with value: iron for blockstate: {Properties:{material:"iron",facing:"down",type:"kinetic_generator",transparent:"false"},Name:"ic2:te"}
-[pool-9-thread-2/ERROR] [blockdrops]: An error occured while calculating drops for Warded Chest (class java.lang.NullPointerException)
-[pool-9-thread-27/ERROR] [blockdrops]: An error occured while calculating drops for Rift in a Jar (class java.lang.NullPointerException)

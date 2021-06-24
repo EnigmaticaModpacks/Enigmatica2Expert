@@ -94,8 +94,13 @@ key_Hub Expand Key:0
 key_Change Caster Focus:34
 key_Misc Caster Toggle:0
 key_keybind.baublesinventory:0
+key_quark.keybind.dropoff:0
+key_quark.keybind.chestSort:0
+key_quark.keybind.chestDropoff:0
+key_quark.keybind.chestMerge:0
+key_quark.keybind.chestRestock:0
+key_quark.keybind.chestExtract:0
 key_quark.keybind.lockBuilding:33:SHIFT
-key_quark.keybind.toggleAutojump:0
 key_quark.emote.no:0
 key_quark.emote.yes:0
 key_quark.emote.wave:0
@@ -114,12 +119,7 @@ key_quark.emote.dab:0
 key_quark.emote.jet:0
 key_quark.emote.exorcist:0
 key_quark.emote.zombie:0
-key_quark.keybind.dropoff:0
-key_quark.keybind.chestSort:0
-key_quark.keybind.chestDropoff:0
-key_quark.keybind.chestMerge:0
-key_quark.keybind.chestRestock:0
-key_quark.keybind.chestExtract:0
+key_quark.keybind.toggleAutojump:0
 key_key.toggle_shaders:0
 key_bloodmagic.keybind.open_holding:53:CONTROL
 key_bloodmagic.keybind.cycle_holding_pos:0
@@ -127,6 +127,7 @@ key_bloodmagic.keybind.cycle_holding_neg:0
 key_key.conarm.toggle_helm.desc:39
 key_key.conarm.toggle_chest.desc:35
 key_key.conarm.toggle_leg.desc:58:CONTROL
+key_keybind.hammercorerenderstack:77
 key_key.betterquesting.quests:41
 key_cos.key.opencosarmorinventory:0
 key_Toggle:15
@@ -169,11 +170,6 @@ key_schematica.key.moveHere:0
 key_schematica.key.pickBlock:0
 key_keys.servertabinfo.show:29
 key_keys.servertabinfo.show2:157
-key_Camera left:203
-key_Camera right:205
-key_Camera closer:200
-key_Camera farther:208
-key_Swap shoulder:24
 key_key.toastcontrol.clear:0
 key_key.open_wct.desc:58
 key_key.cycle_magnet_mode.desc:0

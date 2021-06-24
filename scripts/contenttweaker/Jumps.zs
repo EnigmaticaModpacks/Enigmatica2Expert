@@ -76,7 +76,7 @@ function spawnDust(dust as IItemStack, e as EntityLivingFallEvent, power as doub
 	val vely = rndDouble(cotRand)/2.0d;
 	val velz = (rndDouble(cotRand)/2.0d - 0.25d);
 
-	val entItem = (dust * count).createEntityItem(entity.world, x, y, z);
+	val entItem = (dust * count).createEntityItem(entity.world, x as float, y as float, z as float);
 	entItem.motionX = velx;
 	entItem.motionY = vely;
 	entItem.motionZ = velz;
