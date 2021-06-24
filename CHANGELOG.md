@@ -1,6 +1,128 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
 
+# 0.27
+
+## 🔴 Removed Mods
+
+Icon | Summary | Reason
+----:|:--------| ------
+<img src="https://media.forgecdn.net/avatars/thumbnails/108/855/256/256/636375431792008840.png" width="50"> | [**Shoulder Surfing Reloaded**](https://www.curseforge.com/minecraft/mc-mods/shoulder-surfing-reloaded) <sup><sub>ShoulderSurfing-1.12.2-1.15.1.jar</sub></sup> <br> ShoulderSurfer Adapted to the latest versions | Latest version caused [lunch crash](https://github.com/Exopandora/ShoulderSurfing/issues/51). Also, shoulder view could be more handy for survival-oriented modpacks. In E2E precise clicking ask for first-person view.
+
+## 🟡 Updated Mods
+
+- [**CraftTweaker**](https://www.curseforge.com/minecraft/mc-mods/crafttweaker) <sup><sub>CraftTweaker2-1.12-4.1.20.652.jar</sub></sup>
+- [**Zen Utils**](https://www.curseforge.com/minecraft/mc-mods/zenutil) <sup><sub>zenutils-1.8.2.jar</sub></sup>
+- [**Atlas Lib**](https://www.curseforge.com/minecraft/mc-mods/atlas-lib) <sup><sub>Atlas-Lib-1.12.2-1.1.3d.jar</sub></sup>
+- [**Tinkers' Evolution**](https://www.curseforge.com/minecraft/mc-mods/tinkers-evolution) <sup><sub>tconevo-1.12.2-1.0.44.jar</sub></sup>
+- [**Hammer (Lib) Core**](https://www.curseforge.com/minecraft/mc-mods/hammer-lib) <sup><sub>HammerLib-1.12.2-2.0.6.27.jar</sub></sup>
+- [**IC2 Patcher**](https://www.curseforge.com/minecraft/mc-mods/ic2-patcher) <sup><sub>ic2patcher-2.0.2.jar</sub></sup>
+- [**Advanced Rocketry**](https://www.curseforge.com/minecraft/mc-mods/advanced-rocketry) <sup><sub>AdvancedRocketry-1.12.2-2.0.0-250-universal.jar</sub></sup>
+- [**Mouse Tweaks**](https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks) <sup><sub>MouseTweaks-2.10.1-mc1.12.2.jar</sub></sup>
+- [**LittleTiles**](https://www.curseforge.com/minecraft/mc-mods/littletiles) <sup><sub>LittleTiles_v1.5.15_mc1.12.2.jar</sub></sup>
+- [**LagGoggles**](https://www.curseforge.com/minecraft/mc-mods/laggoggles) <sup><sub>undefined</sub></sup>
+- [**Discord Integration Forge**](https://www.curseforge.com/minecraft/mc-mods/dcintegration) <sup><sub>dcintegration-forge-2.2.0-1.12.jar</sub></sup>
+- [**FPS Reducer**](https://www.curseforge.com/minecraft/mc-mods/fps-reducer) <sup><sub>FpsReducer-mc1.12.2-1.20.jar</sub></sup>
+
+## 🧩 Configs
+
+- Hole Filler Mod fix free dirt
+
+## ✏️ Recipes
+
+  - ![](https://git.io/Jn5Zn "Cheese") now OreDicted
+  - ![](https://git.io/Jn5ZV "Blaze Powder") from ![](https://git.io/Jn5Zz "Cinderpearl") recipe fix
+  - ![](https://git.io/Jn5Zl "Black Quartz Large Plate") now pressed from 1 ![](https://git.io/Jn5Zc "Block of Black Quartz")
+  - ![](https://git.io/JnzzL "Augment: Flux Reconstruction") now way harder because it could repair almost anything
+  - ![](https://git.io/Jn5Z2 "Spectre String") x4 cheaper
+  - ![](https://git.io/Jn5ZC "Potion of Extension") change ingredient
+  - ![](https://git.io/Jnzzk "Graphite Ingot") and ![](https://git.io/JZYJu "Graphite Block") cant be melted into coal anymore
+  - ![](https://git.io/JZviQ "Conduit Binder") now made in ![](https://git.io/J3hVU "Compost")
+  - ![](https://git.io/Jn5ZB "Dough") now made in ![](https://git.io/Jn5ZE "Crushing Tub")
+  - ![](https://git.io/Jn5Zg "Baguette") and ![](https://git.io/Jn5ZH "Toast") new crafts
+  - Recipes OreDicted: 
+    ![](https://git.io/Jn5ZF "Pizza") 
+    ![](https://git.io/Jn5ZR "Big Cookie") 
+    ![](https://git.io/Jn5Z0 "Chocolate Cake")
+  - Cheaper:
+    ![](https://git.io/Jn5Zu "Experience Rod")
+    ![](https://git.io/Jn5ZW "Experience Obelisk")
+    ![](https://git.io/Jnzzq "Trial Keystone")
+
+## 📖 Quest Book
+
+  - Quests changes
+
+## 🔵 Mods
+
+
+- ### 🌿 Patchouli
+
+  - Automatic lootbox page updates
+
+- ### 🍃 Botania
+
+  - 6 Relics tooltips
+
+- ### 🔨 Tinker's Construct
+
+  - TinkersEvolution: `disableDamageCutoff=true`, `meltSpeedMultiplier=2`
+  - Some tweaks and changes
+    > - ![](https://git.io/Jn5Z8 "Fire Dragonsteel Ingot") and ![](https://git.io/Jn5Za "Ice Dragonsteel Ingot") nerf about 15%
+    > - ![](https://git.io/Jn5Z4 "Soularium Ingot") durability 25% nerf
+    > - ![](https://git.io/JtURG "Aquamarine") nerf mining speed
+    > - [Gelid Enderium Ingot] and [Gelid Gem] x2 buffs
+  - New trait **Apprentice**, tweaks for **Mentor** (WIP)
+    > **Apprentice** - new armor trait. Stackable.
+    > Each part add `damage / 10` experience on being hurt,
+    > but deals 10% more damage for wielder
+    > 
+    > **Mentor** still have WIP math for calculating damage / xp
+    > 
+    > Also, fixes new line and color for custom traits description
+  - **Spectre** trait now stackable
+    > This trait add **Reach** potion effect level on player each 80 ticks for
+    > each armor part with this trait and each main/offhand
+    > tool part.
+
+- ### 🗃️ Loot tables
+
+  - Tank as reward: increase liquid amount from 16b to 24b
+
+- ### 🛸 EnderIO
+
+  - Buff packed Solar panels
+    > Now they produce up to 3M rf/t
+  - Disable [Death Urn]
+  - Signif. buff Inventory Storage
+
+- ### ⚙️ JAOPCA
+
+  - Fix blacklist (most unused items removed)
+
+- ### 🗂️ Additional Compression
+
+  - Fix conflicts and nerf burn time
+
+- ### 🏦 Modular Machinery
+
+  - Remove **Advanced Metallurgic Fabricator**
+    > Metallurgic fabricator was barely unused any progression style i know.
+    > Recipes moved to ![](https://git.io/JGGjU "Electric Arc Furnace"), becase it look similar.
+    > Also this could help AdvRcoketry to have more recipes.
+
+- ### 🧻 JEI
+
+  - Add tags **#Crafter** and **#Repairer**
+
+## 🔄 Misc Changes
+
+- MineMenu: Tool Belt and Night Vision
+- Misc: Remove Emerald `found in ...` tooltip
+- Automatic `/bq_admin default load` and `/bqs_loot` commands on player log in
+
+
+
 # 0.26
 
 ## 🟢 New Mods
