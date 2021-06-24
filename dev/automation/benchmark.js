@@ -164,7 +164,7 @@ function spliceModLoadArray(entryName, description, timeReduce) {
 
 // Split JEI
 spliceModLoadArray('Just Enough Items', 'Ingredient Filter', parseFloat(
-  debug_log.match(/\[jei\]: Building ingredient filter took (\d+\.\d+) s/)[1]
+  debug_log.match(/\[jei\]: Building ingredient filter took (\d+\.\d+) s/)?.[1] ?? 0
 ))
 spliceModLoadArray('Just Enough Items', 'Plugins', _.sumBy(jeiPlugins,1))
 
