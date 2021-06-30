@@ -4,6 +4,7 @@
 2) Extract it to an empty folder.
 3) If you want to change RAM usage, Java arguments etc, see the "settings" file.
 4) Double click "ServerStart" or "ServerStartLinux", whichever is appropriate.
+	On Linux you cannot run the script via sh directly
 5) Set EULA=true
 6) Pregenerate the world - See below for instructions.
 
