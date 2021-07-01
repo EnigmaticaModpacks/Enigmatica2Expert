@@ -99,3 +99,4 @@ MakeModpackFiles.bat
 MakeModpackFiles.ps1
 config/AppliedEnergistics2/CustomRecipes.cfg
 config/AppliedEnergistics2/VersionChecker.cfg
+config/astralsorcery/amulet_enchantments.cfg
