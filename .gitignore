@@ -12,6 +12,8 @@
 /screenshots/
 /mods/
 /world/
+/config/enderio/recipes/examples
+**/*.pdf
 
 # Utilities
 .github_changelog_generator
