@@ -1,46 +1,49 @@
 
 
 ## 📦 Items of Interest
-Items that could be used in crafts:
+Items that should have more uses:
 
-![](https://git.io/JOijn "Solidified Experience")
+### Tier 1
+![](https://git.io/JOPez "Dead Bush")
+![](https://git.io/JtJkX "Black Quartz")
+![](https://git.io/Jtjeu "Amber Block")
+![](https://git.io/JtyNr "Glowing Coral")
+![](https://git.io/JtyNo "Kelp")
+![](https://git.io/JnAYd "Cobweb")
+![](https://git.io/JcCWr "Magical Planks")
+
+### Tier 2
 ![](https://git.io/JOijc "Tanzanite")
 ![](https://git.io/JLhj4 "Topaz")
 ![](https://git.io/JOijC "Chorus Fruit")
-![](https://git.io/JOija "Lapis Lazuli")
-![](https://git.io/JOPez "Dead Bush")
-![](https://git.io/JOPvF "Glowcelium")
-![](https://git.io/JOPfR "Glowshroom")
 ![](https://git.io/JOXGv "Demon Ingot")
 ![](https://git.io/JO5J8 "Lavawood")
-![](https://git.io/JtJkX "Black Quartz")
-![](https://git.io/Jtjeu "Amber Block")
+![](https://git.io/JLhhk "Emeradic Crystal")
+![](https://git.io/JLhhq "Crushed Emerald")
+![](https://git.io/JLhhL "Infinity Reagent")
+![](https://git.io/JLhhn "Silicon Plate")
+![](https://git.io/JGGh7 "Mana Infused Ingot")
+![](https://git.io/JnN1t "Sun Crystal")
+![](https://git.io/JOijn "Solidified Experience")
+![](https://git.io/JLhhI "Compressed Ender")
+
+### Tier 3
+![](https://git.io/JLjsf "Basalt Sediment")
+![](https://git.io/JLhhf "Energized Clathrate")
+![](https://git.io/JLhph "Destabilized Clathrate")
+![](https://git.io/JLhhB "Steel Sheet")
+![](https://git.io/JLhpN "Titanium Aluminide Sheet")
+![](https://git.io/JGGjO "Silicon Boule")
+![](https://git.io/JGGhx "Overworldian Matter")
+
+### Tier 4
+![](https://git.io/JcBSs "Tiny Chaos Fragment")
 ![](https://git.io/JLhhe "Oxidized Ferric Sand")
 ![](https://git.io/JLhhs "Vitrified Sand")
 ![](https://git.io/JLhhm "Diamond Lattice")
 ![](https://git.io/JLhhY "Galactic Potato")
-![](https://git.io/JLhhI "Compressed Ender")
 ![](https://git.io/JLhpx "Charged Draconium Block")
-![](https://git.io/JLhpA "Glowstone Nano-Particles")
 ![](https://git.io/JLhhW "Blue Quartz")
-![](https://git.io/JLhh2 "Carton")
-![](https://git.io/JLhhk "Emeradic Crystal")
-![](https://git.io/JLhhf "Energized Clathrate")
-![](https://git.io/JLhph "Destabilized Clathrate")
-![](https://git.io/JLhhq "Crushed Emerald")
-![](https://git.io/JLhht "HSLA Steel Ingot")
-![](https://git.io/JLhhL "Infinity Reagent")
-![](https://git.io/JLhhn "Silicon Plate")
-![](https://git.io/JLhhB "Steel Sheet")
-![](https://git.io/JLhpN "Titanium Aluminide Sheet")
-![](https://git.io/JLhh4 "Iridium Rod")
-![](https://git.io/JLhpp "Titanium Aluminide Rod")
-![](https://git.io/JGGjO "Silicon Boule")
-![](https://git.io/JGGhx "Overworldian Matter")
-![](https://git.io/JGGjn "Biome Essence")
-![](https://git.io/JGGh7 "Mana Infused Ingot")
-![](https://git.io/JtyNr "Glowing Coral")
-![](https://git.io/JtyNo "Kelp")
 ![](https://git.io/JnzzI "Glitch Infused Ingot")
 
 ## 💧 Liquids of Interest
@@ -55,7 +58,6 @@ Liquids that should have more uses:
 ![](https://git.io/J3p4S "Pahoehoe Lava Tank")
 ![](https://git.io/J3p4F "Hotspring Water Tank")
 ![](https://git.io/J3p45 "Menril Resin Tank")
-![](https://git.io/J3p4Q "Construction Foam Tank")
 ![](https://git.io/J3p4n "Flux Goo Tank")
 ![](https://git.io/J3p4z "Syngas Tank")
 
@@ -73,6 +75,7 @@ Liquids that should have more uses:
 ![](https://git.io/Jst3B "Crystal Memory")
 ![](https://git.io/JG5US "Trading Upgrade")
 ![](https://git.io/Jsw4X "Heat Exchanger Controller")
+![](https://git.io/JZLjg "Alchemy Table")
 ![](https://git.io/J3hVE "Wooden Barrel") milking
 
 
@@ -81,36 +84,36 @@ Liquids that should have more uses:
 
 # TODO
 
-- [ ] ✏️ ![](https://git.io/JG5UH "Elite Plating") Move whole crafting line from Crafting Table
-- [ ] ✏️ ![](https://git.io/JGGhp "Space Suit Chest-Piece") Add early acces, because Jetpack, Speedup stuff and similar not so cool for late game
-- [ ] ✏️ ![](https://git.io/JGGjS "Crystallizer") can work with fluids
-- [ ] ✏️ ![](https://git.io/JGGjv "Precision Assembler") can work with fluids
-- [ ] ✏️ ![](https://git.io/JZLjg "Alchemy Table") add more late game crafts
-- [ ] ✏️ [Reinforced Drum] should be revived, because Reinforced Kit now harder. Also, remove chained craft
-- [ ] ✏️ Remap all **#VoidMiners** to produce not all types of ore each
-- [ ] 🍇 End Reborn: Propertly Integrate. Discover mobs and nerf. Also the chorus guards (the white blazes) simply shouldn't be in the game
+- [ ] ✏️ ![](https://git.io/Jc4mR "Benitoite")![](https://git.io/Jc4mB "Anglesite") Craft as ![](https://git.io/Jc4m8 "Benitoite Ore")![](https://git.io/Jc4m4 "Anglesite Ore") and then benificate
+- [ ] ✏️ ![](https://git.io/Jc4Qj "Basic Lithium Ion Battery") Cheaper, add to book
+- [ ] ✏️ ![](https://git.io/Jc47v "Miner's Tree Sapling") and other trees add craft
+- [ ] ✏️ ![](https://git.io/JOv90 "Sieve") Siften materials should be harder
+- [ ] ✏️ ![](https://git.io/JtJvo "Creative Bin") with ![](https://git.io/JcW2w "Salt")
+- [ ] ✏️ ![](https://git.io/JcW2R "Basic Tank") harder, buff storage up to 20-30 buckets
+- [ ] 🍇 End Reborn: Propertly Integrate. Also the chorus guards (the white blazes) simply shouldn't be in the game
 - [ ] 🏪 Add Matter Replicator that **increase cost** of replication each operation
-- [ ] 📖 Add [White Plastic Road]
+- [ ] 🏪 ![](https://git.io/JcCHa "Garden Cloche") fertilizers
 - [ ] 📖 ![](https://git.io/Jsw4f "Tiny Inventory System Storage") add
+- [ ] 🔄 Remap all **#VoidMiners** to produce not all types of ore each
 - [ ] 🔄 ![](https://git.io/J3p8B "Infinity Furnace") texture turned upsidedown
 - [ ] 🔄 ![](https://git.io/J3p88 "Ironberries") gives infinity Jump Boost effect
 - [ ] 🔄 ![](https://git.io/J3xSU "Syngas Producer Controller") more fuels
 - [ ] 🔄 **System Glitch** increase spawn cost
 - [ ] 🔄 Add conflict removing automation `/ct conflict`
 - [ ] 🔄 Make Health restriction to enter Nether
-- [ ] 🔄 JAOPCA Remove `dustSmall` entries
-- [ ] 🔄 JAOPCA return `crushedOre`
 - [ ] 🔄 Simplify Harder Branch Mining. Impossible. Something wrong with HBM configs
 - [ ] 🔄 Spectre fluid has no texture (invisible in world)
 - [ ] 🔄 UU requirement for a lot of things seems to be lower than what the tooltip says
-- [ ] 🔄 `for ore_entry in oreDict {` gather in one place
-- [ ] 🔨 ![](https://git.io/JGBqu "Osmium Ingot") and other material levels apply wrong. Probably TConEvo mess up that
+- [ ] 🔄 `for ore_entry in oreDict {` refactor code and gather in one place to speedup code
+- [ ] 🔄 Add Tip `Shift+F8 to refresh sound`
+- [ ] 🌍 ![](https://git.io/JcW2H "Ratglove Flower") Add spawn in Ratlantis, update JER
 - [ ] 🔨 ![](https://git.io/JnzzI "Glitch Infused Ingot") add material
-- [ ] 🔨 ![](https://git.io/JtURG "Aquamarine") nerf about 30% (can be achieved early from rivers). Probably not, because TConEvo couldnt be tweaked
 - [ ] 🔨 Add **hailhydra** trait to some material
 - [ ] 🔨 Add teleportation trait. 1. Set point, 2. Break special glass-like block to teleport
 - [ ] 🔴 Remove Preston. Questionable, because still used for some blocks and i dont need to make textures
 - [ ] 🔴 Remove Spartan Shields from `armorData.zs`
+- [ ] 🔴 Remove **Open Security**
+- [ ] 🔴 Remove **Computronics**
 - [ ] 🔵 Add **Industrial Foregoing integration** [>here<](https://docs.blamejared.com/1.12/en/Mods/Integration_Foregoing/WashingFactory/)
 - [ ] 🔵 Get use for **Immersive Tweaker**
 - [ ] 🟢 **Integrated Proxy** change recipe
