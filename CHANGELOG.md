@@ -1,6 +1,124 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
 
+# 0.28
+
+## 🟢 New Mods
+
+Icon | Summary | Reason
+----:|:--------| ------
+<img src="https://media.forgecdn.net/avatars/thumbnails/197/875/256/256/636895802097061618.png" width="50"> | [**ID Squeezer Tweak**](https://www.curseforge.com/minecraft/mc-mods/id-squeezer-tweak) <sup><sub>SqueezerPatch-1.12.2-1.0.0.jar</sub></sup> <br> Fixes the ID Squeezer at low TPS. | Should help with low (< 10) TPS
+<img src="https://media.forgecdn.net/avatars/thumbnails/265/341/256/256/637229158012603596.png" width="50"> | [**TickCentral**](https://www.curseforge.com/minecraft/mc-mods/tickcentral) <sup><sub>TickCentral-3.2.jar</sub></sup> <br> A future proof coremod for control over in-game ticking | Added with updated Lag Goggles
+<img src="https://media.forgecdn.net/avatars/thumbnails/388/322/256/256/637579369193737704.png" width="50"> | [**Integrated Proxy**](https://www.curseforge.com/minecraft/mc-mods/integrated-proxy) <sup><sub>integrated_proxy-1.12-1.0.14.jar</sub></sup> <br> An addon for Integrated Dynamics that allows you to redirect the part's target to another position. | Should replace **Capability Proxy** mod in future
+
+## 🟡 Updated Mods
+
+- [**LagGoggles**](https://www.curseforge.com/minecraft/mc-mods/laggoggles) <sup><sub>LagGoggles-1.12.2-5.8-132.jar</sub></sup>
+
+## ✏️ Recipes
+
+  * Changes:
+    - ![](https://git.io/Jsw4X "Heat Exchanger Controller") Consume less non-water cooles. More heat sources and block outputs.
+    - ![](https://git.io/JcuAe "Machine Frame") now ask for special ![](https://git.io/JLjsf "Basalt") instead of ![](https://git.io/JcuNh "Machine Case")
+    - ![](https://git.io/JsTPR "Starmetal Laser Medium")![](https://git.io/JcuNN "Prismarine Laser Medium")![](https://git.io/JcuAU "Blazerod Laser Medium")![](https://git.io/JcuAv "Endrod Laser Medium")![](https://git.io/JcuNF "Psigem Laser Medium") now require ![](https://git.io/JcBSs "Tiny Chaos Fragment") instead of ![](https://git.io/JcuNA "Draconic Metal Nugget")
+    - ![](https://git.io/JcuNj "Mana Dust") Require for ![](https://git.io/JOijc "Tanzanite") instead of ![](https://git.io/JcuNb "Mana Diamond")
+    - ![](https://git.io/JcuNx "Signalum Ingot") now ask for 3 Silver and 1 Copper (was 3 copper 1 silver)
+    - ![](https://git.io/JcW20 "Stone Gear") can be made in ![](https://git.io/JczsY "Compactor (Basic)")
+    - ![](https://git.io/Jczs0 "Floo Token") made in machines
+    - ![](https://git.io/Jczsn "Basic Plating") now less microcraftings
+    - ![](https://git.io/Jczsm "Advanced Plating")![](https://git.io/JczsV "DU Plating")![](https://git.io/JG5UH "Elite Plating") now can be made cheaper in ![](https://git.io/Jczsa "Precision Laser Etcher")
+    - ![](https://git.io/JcCWK "Cubic Boron Nitride")![](https://git.io/Jczsp "Sulfuric Acid Bucket")![](https://git.io/Jczst "Calcium Sulfate") cheaper pipeline alt only in 2 **AdvRocketry** machines
+    - ![](https://git.io/Jczsz "IC2 Hot Coolant") less efficient in **NuclearCraft** Heat Exchanger
+    - ![](https://git.io/JczsB "Nuke") Fix craft
+    - ![](https://git.io/Jczs6 "Iridium Neutron Reflector") can be crafted in ![](https://git.io/JGGjv "Precision Assembler")
+    - ![](https://git.io/JcW2e "Quad Fuel Rod (Uranium)") and ![](https://git.io/JcWgF "Quad Fuel Rod (MOX)") alternative crafts
+    - ![](https://git.io/JnN1T "Fluix Dust") can be made from ![](https://git.io/JnN1Y "Fluix Block")
+    - ![](https://git.io/Jcz3j "Electric Mushroom") buff ![](https://git.io/JOGzp "Enervation Dynamo (Basic)") output
+    - ![](https://git.io/Jc4mB "Anglesite") not dropping from ![](https://git.io/JZYfz "Ball of Fur") anymore
+    - ![](https://git.io/JnN1m "Thaumium Fortress Cuirass")![](https://git.io/Jcz3x "Thaumium Fortress Helm")![](https://git.io/JczsP "Thaumium Fortress Thigh Guards") recycle
+    - ![](https://git.io/JczsX "Interconnect")![](https://git.io/Jcz3N "Flight Speed Modifier")![](https://git.io/Jczs3 "Dislocator")![](https://git.io/JnN1O "Matter Condenser")![](https://git.io/JOGz7 "Advanced Pressure Valve")![](https://git.io/JczsL "Creative Gas Tank")![](https://git.io/Jczsx "Creative Fluid Tank") Misk changes
+    - Several **Fluid Interactions** buffs (see ![](https://git.io/JczsZ "Containment Chalice") in JEI)
+    - ![](https://git.io/Jczsk "Thermal Centrifuge") and ![](https://git.io/JczsK "Ore Washing Plant") now output right tiny dusts (instead of non-oredicted)
+    - ![](https://git.io/JOGru "Heavy Oak Sieve") otput only 6/9 of non-heavy output (was 7/9)
+    - ![](https://git.io/JcCKY "Basic Tier Installer")![](https://git.io/JcCD5 "Advanced Tier Installer")![](https://git.io/JcCDF "Elite Tier Installer")![](https://git.io/JcCDd "Ultimate Tier Installer") reworked: now used in crafts instead of ![](https://git.io/Jcz3p "Ultimate Fluid Tank")![](https://git.io/Jczsc "Ultimate Gas Tank")![](https://git.io/JczZY "Ultimate Energy Cube")
+      > Also reworked:
+      > - most **Mekanism** tiered machines
+      > - **Chemical ~** machines
+      > - ![](https://git.io/JczGs "Energy Upgrade")![](https://git.io/JczG3 "Speed Upgrade") used instead ![](https://git.io/JcCWP "Energy Tablet") in some crafts
+  
+  * Cheaper:
+    - ![](https://git.io/JcCW1 "Copper Solenoid")
+      ![](https://git.io/Jc4Qj "Basic Lithium Ion Battery")
+      ![](https://git.io/Jcz35 "Machine Vent")
+      ![](https://git.io/JGGjm "Black Hole Unit")
+      ![](https://git.io/JnAYd "Cobweb")
+      ![](https://git.io/JcWgj "Reactor Fuel Rod (Legacy)")
+      ![](https://git.io/Jczso "Stone Drum")
+      ![](https://git.io/Jczsu "Iron Drum")
+      ![](https://git.io/JcCHV "Reinforced Large Drum")
+      ![](https://git.io/Jcz3h "Demonically Gargantuan Drum")
+      ![](https://git.io/JOv90 "Sieve")
+      ![](https://git.io/JczsI "Simple Photovoltaic Cell")
+      ![](https://git.io/JnAY5 "Draconic Core")
+      ![](https://git.io/Jcz3b "Basic Energy Relay Crystal")
+      ![](https://git.io/JGGhp "Space Suit Chest-Piece")![](https://git.io/Jc4mP "Space Suit Helmet")![](https://git.io/Jc4mX "Space Suit Leggings")![](https://git.io/Jc4m1 "Space Suit Boots")
+      ![](https://git.io/JOGz9 "Pressurized Tank")
+      ![](https://git.io/Jczsq "Suit Workstation")
+      ![](https://git.io/Jczs4 "Low Pressure Tank")
+      ![](https://git.io/Jczsg "Pressure Tank")
+      ![](https://git.io/JczsE "High Pressure Tank")
+      ![](https://git.io/Jcz3F "Super High Pressure Tank")
+      ![](https://git.io/JczsC "Hover Upgrade")
+      ![](https://git.io/Jcz3D "Flight Speed Control Upgrade")
+      ![](https://git.io/Jczsr "Bionic Leg Upgrade")
+      ![](https://git.io/JczsO "Padded Landing Boots")
+      ![](https://git.io/JczsT "Anti-Fog Visor")
+      ![](https://git.io/Jczsw "Beacon Finder")
+      ![](https://git.io/Jczss "Jet Pack")
+      ![](https://git.io/Jczse "Atmosphere Analyzer")
+      ![](https://git.io/Jczsf "Glitch Infused Helmet")
+      ![](https://git.io/J3p4Z "Glitch Infused Chestplate")
+      ![](https://git.io/JczGO "Glitch Infused Leggings")
+      ![](https://git.io/Jczsl "Glitch Infused Greaves")
+      ![](https://git.io/Jcz3A "Awakened Draconium Block")
+  
+  * Harder:
+    - ![](https://git.io/JczsR "Teleportation Core")
+      ![](https://git.io/JczsJ "Carbonic Fluix Complex")
+      ![](https://git.io/Jczs2 "Logic Director")
+      ![](https://git.io/Jczsi "Upgrade Base")
+      ![](https://git.io/Jczs8 "Block of Crystaltine")
+      ![](https://git.io/JczsG "Vibrant Crystal")
+      ![](https://git.io/Jczsv "Photovoltaic Composite")
+      ![](https://git.io/JczsU "1k ME Storage Component")
+
+## 📖 Quest Book
+
+- Quests changes,change Potions in rewards to Splash Potions
+
+## 🔵 Mods
+
+
+- ### 👨‍🏭 Mekanism
+
+  - **Significantly** buff Tanks, Cubes and Bins
+    > Because now Ultimate versions of this items cost very much
+
+- ### 📑 Tips
+
+
+## 🔄 Misc Changes
+
+  - Tooltips for ![](https://git.io/Jcz37 "Large Inventory System Storage")![](https://git.io/Jcz3y "Medium Inventory System Storage")![](https://git.io/Jsw4f "Tiny Inventory System Storage")![](https://git.io/JczsW "Small Inventory System Storage")![](https://git.io/Jcz3H "Big Inventory System Storage")![](https://git.io/Jcz3S "Huge Inventory System Storage")![](https://git.io/Jcz3Q "Inventory System Storage Extended Warehouse")![](https://git.io/Jcz3d "Inventory System Storage Warehouse")![](https://git.io/Jcz39 "Enormous Inventory System Storage") and ![](https://git.io/JcCDd "Ultimate Tier Installer")
+  - Update JEI blacklist
+  - Update **Thaumic Speedup** cache
+  - **Thaumcraft** Crystals skip mining level to default
+  - **EndReborn** lower **End Guard** spawn
+  - Fluid Drawer slightly buff
+
+
+
+
 # 0.27
 
 ## 🔴 Removed Mods
