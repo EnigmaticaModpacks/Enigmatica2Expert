@@ -62,7 +62,6 @@ for lang, items in {
     <ic2:te:9>,
     <ic2:te:14>,
     <ic2:te:17>,
-    <ic2:te:19>,
     <immersiveengineering:metal_device1:3>,
     <immersivepetroleum:metal_device:1>,
     <industrialforegoing:biofuel_generator>,

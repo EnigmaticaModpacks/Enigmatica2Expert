@@ -48,6 +48,7 @@ tooltips.lang.craftable=Craftable.
 tooltips.lang.space_gen=This ore only generates on other planets.
 tooltips.lang.space_gen_high=Generates in large quantities on other planets.
 tooltips.lang.mekanism_factories=Factories are made by upgrading Machines in-world with Basic/Advanced/Elite Tier Installers.
+tooltips.lang.mekanism_t_ultimate=§dOnly works on Bins, Energy Cubes, Tanks and Gas Tanks
 tooltips.lang.ic2wrench=You can safely break IC2 machines with a Pickaxe.
 
 tooltips.lang.small_plate_presser=The earliest (and cheapest) way of making Metal Rods is with the Small Plate Presser from Advanced Rocketry.
@@ -136,6 +137,7 @@ tooltips.lang.botania:flugeleye=§aShift RMB a block to bind, hold RMB to telepo
 tooltips.lang.botania:thorring=§aIncreases area of Terra Shatterer
 tooltips.lang.botania:odinring=§aExtra hearts, protects from drowning, suffocation, fire or starvation damage
 tooltips.lang.botania:lokiring=§aBuilding tool
+tooltips.lang.store_x_stacks=§bStore up to %s stacks
 
 requious.jei.recipe.infernal_furnace=Infernal Furnace
 requious.jei.recipe.liquid_interaction=Liquid Interaction
@@ -187,7 +189,7 @@ e2ee.tips.20=§e/undo_excavation§r can undo §6Ore Excavator§r
 e2ee.tips.21=§e/wandOops§r can undo §6Better Builder's Wand§r
 e2ee.tips.22=§lAstral Sorcery Rituals§r (and linked Ritual Anchors) act as §lChunkloaders§r.
 e2ee.tips.23=§lHorologium§r only appears every 36 days, next night after §lSolar Eclipse§r
-e2ee.tips.24=§5Mystical Agriculture§r plants have a 5% chance of dropping §52 seeds§r when harvested with left click.
+e2ee.tips.24=§5Mystical Agriculture§r plants have a 5%% chance of dropping §52 seeds§r when harvested with left click.
 e2ee.tips.25=There are many different valid fuels for the Tinkers' Construct §nSmeltery§r, all with different attributes.
 e2ee.tips.26=§nPile of Ashes§r from the Nether are a great early game fuel source.
 e2ee.tips.27=The §nAkashic Tome§r is a portable bookshelf capable of holding all of your informational books and guides.
@@ -233,3 +235,5 @@ e2ee.tconstruct.material.apprentice.description=§oPower of study\n§r1/10 of in
 e2ee.tconstruct.material.spectre_string.name=Spectre String
 e2ee.tconstruct.material.alpha_fur.name=Alpha Fur
 e2ee.tconstruct.material.alpha_fur.description=§bChilling\n§rChills targets or attackers
+
+e2ee.tile.basalt_sediment=Basalt Sediment

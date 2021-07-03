@@ -150,6 +150,7 @@ desc.both(<mekanism:machineblock:5>, "mekanism_factories");
 desc.both(<mekanism:machineblock:6>, "mekanism_factories");
 desc.both(<mekanism:machineblock:7>, "mekanism_factories");
 desc.both(<libvulpes:productingot:7>, "obtained.fabricator_or_excavator"); # Titanium Ingot
+desc.both(<mekanism:tierinstaller:3>, "mekanism_t_ultimate");
 
 # Mystical Agriculture Seeds Tier 5 -> 6
 <mysticalagriculture:ender_amethyst_seeds>.addTooltip(desc.local("tier")~": §56§r");
@@ -342,6 +343,23 @@ desc.tooltip(<botania:flugeleye>);
 desc.tooltip(<botania:thorring>);
 desc.tooltip(<botania:odinring>);
 desc.tooltip(<botania:lokiring>);
+
+
+/*Inject_js(
+[...loadText('config/enderio/recipes/user/capacitor_machines.xml')
+.matchAll(/(enderio:block_inventory_chest_\w+)\/size"\s*base="(\d+)"/g)]
+.map(([,id,size])=>`desc.tooltip(<${id}>, 'store_x_stacks', ${size});`)
+)*/
+desc.tooltip(<enderio:block_inventory_chest_tiny>, 'store_x_stacks', 94);
+desc.tooltip(<enderio:block_inventory_chest_small>, 'store_x_stacks', 170);
+desc.tooltip(<enderio:block_inventory_chest_medium>, 'store_x_stacks', 255);
+desc.tooltip(<enderio:block_inventory_chest_big>, 'store_x_stacks', 358);
+desc.tooltip(<enderio:block_inventory_chest_large>, 'store_x_stacks', 506);
+desc.tooltip(<enderio:block_inventory_chest_huge>, 'store_x_stacks', 699);
+desc.tooltip(<enderio:block_inventory_chest_enormous>, 'store_x_stacks', 973);
+desc.tooltip(<enderio:block_inventory_chest_warehouse>, 'store_x_stacks', 1373);
+desc.tooltip(<enderio:block_inventory_chest_warehouse13>, 'store_x_stacks', 1944);
+/**/
 
 # Modular Machine descriptions
 for machineName, lang in {
