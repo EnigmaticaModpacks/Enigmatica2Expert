@@ -1,8 +1,12 @@
-[Surge]: The game loaded in approximately  625.837 seconds.
+[Surge]: The game loaded in approximately  612.522 seconds.
+[main/WARN] [mixin]: MixinEnvironment::addConfiguration is deprecated and will be removed. Use Mixins::addConfiguration instead!
+[main/WARN] [mixin]: MixinEnvironment::addConfiguration is deprecated and will be removed. Use Mixins::addConfiguration instead!
 [main/ERROR] [mixin]: Mixin config mixins.mixincompat.json does not specify "minVersion" property
 [main/WARN] [mixin]: Reference map 'mixins.mixincompat.refmap.json' for mixins.mixincompat.json could not be read. If this is a development environment you can ignore this message
 [main/WARN] [sampler-core]: bce failed (d5, 1, false)
+[Client thread/WARN] [mixin]: MixinEnvironment::addConfiguration is deprecated and will be removed. Use Mixins::addConfiguration instead!
 [Client thread/ERROR] [reborncore]: Invalid fingerprint detected for RebornCore!
 [Client thread/WARN] [enderio]: Mekanism Gas conduits loaded. Let your networks connect!
 [Client thread/WARN] [net.minecraft.nbt.NBTUtil]: Unable to read property: material with value: iron for blockstate: {Properties:{material:"iron",facing:"down",type:"kinetic_generator",transparent:"false"},Name:"ic2:te"}
 [Client thread/WARN] [net.minecraft.nbt.NBTUtil]: Unable to read property: material with value: iron for blockstate: {Properties:{material:"iron",facing:"down",type:"kinetic_generator",transparent:"false"},Name:"ic2:te"}
+[Client thread/WARN] [jei]: Sending runtime to plugin: com.buuz135.thaumicjei.ThaumcraftJEIPlugin took 152 ms

@@ -113,8 +113,9 @@ Liquids that should have more uses:
 - [ ] 🔴 Remove Spartan Shields from `armorData.zs`
 - [ ] 🔵 Add **Industrial Foregoing integration** [>here<](https://docs.blamejared.com/1.12/en/Mods/Integration_Foregoing/WashingFactory/)
 - [ ] 🔵 Get use for **Immersive Tweaker**
-- [ ] 🚧 Add automatical removing of hashed files to update them
+- [ ] 🟢 **Integrated Proxy** change recipe
 - [ ] 🟢 Add [Bansoko](https://www.curseforge.com/minecraft/mc-mods/bansoko) to rename Dank/null `.jar` so it could work with Thaumic Speedup
+- [ ] 🚧 Add automatical removing of hashed files to update them
 
 
 ----------------------------------------------------------------------------
