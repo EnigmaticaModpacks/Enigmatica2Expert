@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded immersiveengineering
-// Uses of this mod: 50
+// Uses of this mod: 51
 
 
 //####################################################
@@ -99,10 +99,10 @@ zenClass Class_Fermenter { zenConstructor() {}
 static Fermenter as Class_Fermenter = Class_Fermenter();
 
 //####################################################
-// Uses of this class: 11
+// Uses of this class: 12
 zenClass Class_MetalPress { zenConstructor() {}
 
-	// Uses of this method: 11
+	// Uses of this method: 12
 	function addRecipe(output as IItemStack, input as IIngredient, mold as IItemStack, energy as int) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.immersiveengineering.MetalPress.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient(input), serialize.IItemStack(mold), energy]));

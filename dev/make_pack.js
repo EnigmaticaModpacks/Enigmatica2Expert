@@ -148,7 +148,6 @@ globs([
   
   // List of client side mods only
   // Get from debug.log by "client side only." search
-  '!mods/badwithernocookiereloaded*.jar',
   '!mods/BetterAdvancements*.jar',
   '!mods/betteranimals-*.jar',
   '!mods/BetterFps*.jar',
@@ -183,7 +182,6 @@ globs([
   '!mods/MemoryTester*.jar',
   '!mods/MineMenu*.jar',
   '!mods/moreoverlays-*.jar',
-  '!mods/moreoverlays*.jar',
   '!mods/MouseTweaks*.jar',
   '!mods/Neat*.jar',
   '!mods/NoNVFlash*.jar',
@@ -191,10 +189,8 @@ globs([
   '!mods/OldJavaWarning-*.jar',
   '!mods/OreLib*.jar', // Dynamic Surroundings lib
   '!mods/overloadedarmorbar-*.jar',
-  '!mods/overloadedarmorbar*.jar',
   '!mods/ping-*.jar',
   '!mods/potiondescriptions-*.jar',
-  '!mods/potiondescriptions*.jar',
   '!mods/reauth-*.jar',
   '!mods/ReAuth*.jar',
   '!mods/ReBind*.jar',
@@ -204,7 +200,6 @@ globs([
   '!mods/Tips-*.jar',
   '!mods/TipTheScales-*.jar',
   '!mods/Toast Control-*.jar',
-  '!mods/Toast Control*.jar',
   '!mods/torohealth*.jar',
   '!mods/toughnessbar*.jar',
   '!mods/WailaHarvestability-mc*.jar',

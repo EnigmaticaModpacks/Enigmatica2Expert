@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded thermalexpansion
-// Uses of this mod: 64
+// Uses of this mod: 65
 
 
 //####################################################
@@ -33,7 +33,7 @@ zenClass Class_Centrifuge { zenConstructor() {}
 static Centrifuge as Class_Centrifuge = Class_Centrifuge();
 
 //####################################################
-// Uses of this class: 9
+// Uses of this class: 10
 zenClass Class_Compactor { zenConstructor() {}
 
 	// Uses of this method: 1

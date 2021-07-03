@@ -8,6 +8,7 @@ const convert = require('xml-js')
 const detectIndent = require('detect-indent')
 const fs = require('fs')
 const glob = require('glob')
+const _ = require('lodash')
 const {begin, end, naturalSort} = require('../lib/utils.js')
 
 // List of curated files and folders
@@ -26,9 +27,22 @@ for (const {groups} of fs.readFileSync('crafttweaker.log', 'utf8').matchAll(
   total++
 }
 
+
+function countInputs(a) {
+  const recipe = a.elements.find(o => o.name?.toLowerCase() === 'recipe').elements
+  const inputs = 
+    recipe.find(o => o.name?.toLowerCase() === 'input')?.elements
+    ??
+    recipe.find(o => o.type === 'element')?.elements.filter(e=>e.type==='element' && e.name.includes('input'))
+
+  return inputs.length
+}
+
 // Sort recipes inside changes to prevent object shuffling
-for (const c of Object.values(changes)) {
-  c.sort(naturalSort)
+for (const key of Object.keys(changes)) {
+  changes[key] = changes[key]
+    .map(recipe => convert.xml2js(recipe, {compact: false}))
+    .sort((a, b) => countInputs(b) - countInputs(a) || naturalSort(JSON.stringify(a), JSON.stringify(b)))
 }
 
 begin(`  Found ${total} recipes for ${Object.keys(changes).length} files. Injecting `)
@@ -65,8 +79,7 @@ for (const filePath of curatedFiles) {
 
     // Add recipes to this list
     if (!changes[filePath]) return
-    for (const recipe of changes[filePath]) {
-      const recipeXml = convert.xml2js(recipe, {compact: false})
+    for (const recipeXml of changes[filePath]) {
       recipeList.push({ type: 'comment', comment: automaticComment })
       recipeXml.elements.forEach(e => {
         recipeList.push(e)

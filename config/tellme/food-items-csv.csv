@@ -2,7 +2,7 @@
 "Actually Additions","actuallyadditions:item_canola_seed",10898,0,"false","Canola Seeds",1,0.01,"seedCanola"
 "Actually Additions","actuallyadditions:item_coffee",10882,0,"false","Cup with Coffee",8,5.0,""
 "Actually Additions","actuallyadditions:item_coffee_beans",10896,0,"false","Coffee Beans",1,1.0,"cropCoffee"
-"Actually Additions","actuallyadditions:item_food",10885,0,"true","Cheese",1,0.05,""
+"Actually Additions","actuallyadditions:item_food",10885,0,"true","Cheese",1,0.05,"foodCheese"
 "Actually Additions","actuallyadditions:item_food",10885,1,"true","Pumpkin Stew",6,0.3,""
 "Actually Additions","actuallyadditions:item_food",10885,2,"true","Carrot Juice",4,0.2,""
 "Actually Additions","actuallyadditions:item_food",10885,3,"true","Fish 'N' Chips",14,0.65,""

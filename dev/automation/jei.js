@@ -9,7 +9,6 @@ Also, sorts and cleanup jei blacklist
 
 const {write, config, naturalSort, injectInFile, getCSV} = require('../lib/utils.js')
 const fs = require('fs')
-const _ = require('lodash')
 
 write('  📑 jei.js, ')
 

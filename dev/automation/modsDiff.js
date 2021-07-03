@@ -22,7 +22,7 @@ function getModsIds(json_Path_A, json_Path_B) {
     removed: A.filter(o =>!map_B[o.addonID]),
     updated: null,
   }
-  result.updated = B.filter(o => map_A[o.addonID] && map_A[o.addonID].installedFile.id !== o.installedFile?.id)
+  result.updated = B.filter(o => map_A[o.addonID] && map_A[o.addonID].installedFile?.id !== o.installedFile?.id)
   return result
 }
 
