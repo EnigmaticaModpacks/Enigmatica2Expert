@@ -2,6 +2,8 @@ import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.jei.JEI.removeAndHide as rh;
 
+recipes.remove(<extrabitmanipulation:diamond_nugget>);
+
 # Eclipsed Clock
 	recipes.remove(<randomthings:eclipsedclock>);
 	recipes.addShapedMirrored("Eclipsed Clock", 

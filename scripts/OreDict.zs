@@ -4,6 +4,9 @@ import crafttweaker.oredict.IOreDict as IOreDict;
 import crafttweaker.oredict.IOreDictEntry as IOreDictEntry;
 import mods.jei.JEI.removeAndHide as rh;
 	
+
+<ore:chipDiamond>.add(<extrabitmanipulation:diamond_nugget>);
+
 # Oredicts for pressure plates
 var pressurePlates as IItemStack[] = [
 	<twilightforest:twilight_oak_plate>,
