@@ -30,10 +30,10 @@ var allGasesNames as string[] = ["hydrogen", "oxygen", "water", "chlorine", "sul
 	"slurryNickel", "slurryPlatinum", "slurryThorium", "slurryTitanium", "slurryUranium"] as string[];
 
 # Gas Ingredients (can use even gas tank without any gas)
-var gt as IIngredient = <mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000/* , gasName: allGasesNames[0] */}}}) as IIngredient;
+var gt as IIngredient = <mekanism:gastank>.withTag({tier: 1, mekData: { stored: {amount: 320000/* , gasName: allGasesNames[0] */}}}) as IIngredient;
 for i in 0 to allGasesNames.length {
   if (!isNull(mods.mekanism.MekanismHelper.getGas(allGasesNames[i]))) {
-    gt = gt.or( <mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: allGasesNames[i]}}}) );
+    gt = gt.or( <mekanism:gastank>.withTag({tier: 1, mekData: { stored: {amount: 320000, gasName: allGasesNames[i]}}}) );
   }
 }
 
@@ -252,7 +252,7 @@ craft.make( <rats:rat_upgrade_creative>, ["pretty",
 
 # Creative Gas Tank
 list["η"] = <avaritia:resource:4>;
-list["ι"] = <bloodmagic:blood_tank:15>;
+list["ι"] = <bloodmagic:blood_tank:9>;
 list["◴"] = Bucket("helium3");
 list["◵"] = Bucket("tritium");
 list["◶"] = Bucket("fluegas");
@@ -305,7 +305,7 @@ for fname in [
 	"latex","tree_oil",  "bio.ethanol", "liquidchorus", "heavy_metal", "mana", 	"crystal", "cloud_seed_concentrated", "ic2hot_coolant", 	
 ] as string[] {
 	fluidFrameSecondary =  fluidFrameSecondary + 
-		<thermalexpansion:tank>.withTag({Fluid: {FluidName: fname, Amount: 512000} , Level: 3 as byte});
+		<thermalexpansion:tank>.withTag({Fluid: {FluidName: fname, Amount: 400000} , Level: 2 as byte});
 }
 
 # Build the recipe

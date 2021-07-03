@@ -45,13 +45,14 @@
 	[<ore:plateDenseObsidian>, <bigreactors:reactorcasingcores>, <ore:plateDenseObsidian>], 
 	[<ic2:casing:2>, <ore:dustHOPGraphite>, <ic2:casing:2>]]);
 
-# Reactor Fuel Rod
-	recipes.remove(<bigreactors:reactorfuelrod>);
-	recipes.addShapedMirrored("ER Reactor Fuel Rod", 
-	<bigreactors:reactorfuelrod>, 
-	[[<ore:ingotGraphite>, <ore:blockGlassHardened>, <ore:ingotGraphite>],
-	[<ore:ingotUranium>, <ore:blockGlassHardened>, <ore:ingotUranium>], 
-	[<ore:ingotGraphite>, <ore:blockGlassHardened>, <ore:ingotGraphite>]]);
+# [Reactor Fuel Rod (Legacy)] from [Copper Plate][+1]
+craft.remake(<bigreactors:reactorfuelrod>, ["pretty",
+  "□   □",
+  "п   п",
+  "□   □"], {
+  "□": <ore:plateIron>,   # Iron Plate
+  "п": <ore:plateCopper>, # Copper Plate
+});
 
 # Reactor Control Rod
 	recipes.remove(<bigreactors:reactorcontrolrod>);

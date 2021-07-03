@@ -65,9 +65,6 @@ mods.mechanics.addTubeRecipe([<contenttweaker:conglomerate_of_sun>], <liquid:liq
 # Life Essence from Sun conglomerate
 mods.mechanics.addTubeRecipe([<contenttweaker:conglomerate_of_life>], <liquid:lifeessence> * 1000);
 
-# Mendin moss cafting alternative for automating
-mods.rockytweaks.Anvil.addRecipe(<minecraft:writable_book>, <tconstruct:materials:18>, <tconstruct:materials:19>, 10);
-
 
 // Step 2
 // ---------------------------

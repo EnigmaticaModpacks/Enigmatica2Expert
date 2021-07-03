@@ -139,7 +139,7 @@ craft.remake(<appliedenergistics2:drive>, ["pretty",
 # Matter Condenser
 	recipes.remove(<appliedenergistics2:condenser>);	
 	scripts.wrap.extendedcrafting.CompressionCrafting.addRecipe(<appliedenergistics2:condenser>, 
-	<minecraft:piston>, 10000, <mekanism:machineblock:7>.withTag({recipeType: 3}), 1000000000, 1000000);
+	<minecraft:piston>, 10000, <excompressum:double_compressed_diamond_hammer>, 1000000000, 1000000);
 	
 # [Molecular Assembler] from [Augment_ Pattern Validation][+4]
 craft.remake(<appliedenergistics2:molecular_assembler>, ["pretty",
@@ -254,6 +254,9 @@ craft.remake(<appliedenergistics2:material:28> * 2, ["pretty",
 
 # Sky stone Dust
 scripts.process.crush(<appliedenergistics2:sky_stone_block>, <appliedenergistics2:material:45>, "Except: AEGrinder Pulverizer", null, null);
+
+# Batch dust crushing
+scripts.process.crush(<appliedenergistics2:fluix_block>, <appliedenergistics2:material:8>, "only: SagMill", null, null);
 
 /* 
 Patchouli_js('Items/Matter Cannon', [
@@ -445,3 +448,14 @@ craft.reshapeless(<extracells:certustank>, 'ABB', {
 // 	[null, A, null],      
 // ]);
 # ---------------------------------------------------------
+
+# [1k ME Storage Component] from [Cobweb][+3]
+craft.remake(<appliedenergistics2:material:35>, ["pretty",
+  "♥ L ♥",
+  "⌃ C ⌃",
+  "♥ ⌃ ♥"], {
+  "⌃": <ore:crystalCertus>, # Certus Quartz Crystal
+  "C": <minecraft:web>, # Cobweb
+  "♥": <ore:dustRedstone>, # Redstone
+  "L": <appliedenergistics2:material:22>, # Logic Processor
+});

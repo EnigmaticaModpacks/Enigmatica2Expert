@@ -295,8 +295,8 @@ static armorStaged as IData[string] =
       {id:"spartanshields:shield_riot_rftools", tag:{Energy:1000000}}
   ]},
   armor_glitch_infused:{
-    prev: "armor_stellar", 
-    tier: 10,
+    prev: "armor_end_steel", 
+    tier: 9,
     material: "deepmoblearning:glitch_infused_ingot",
     recycle:  "deepmoblearning:glitch_infused_ingot",
     list: [

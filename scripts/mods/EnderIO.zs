@@ -268,7 +268,7 @@ scripts.process.alloy([<minecraft:glowstone_dust>, <minecraft:clay_ball>], <ende
 
 # Harder Vibrant Alloy
 mods.thermalexpansion.InductionSmelter.removeRecipe(<enderio:item_alloy_ingot:1>, <minecraft:ender_pearl>);
-scripts.process.alloy([<ore:ingotEnergeticAlloy>, <extendedcrafting:material:49>], <enderio:item_alloy_ingot:2> * 2, "ONLY: induction STRICT: alloySmelter");
+scripts.process.alloy([<ore:ingotEnergeticAlloy>, <extendedcrafting:material:49>], <enderio:item_alloy_ingot:2> * 2, "ONLY: induction alloySmelter");
 
 # Remove alloy recipes made in High Oven
 ncAlloyRm(<enderio:item_alloy_ingot>);
@@ -516,4 +516,38 @@ craft.remake(<enderio:block_experience_obelisk>, ["pretty",
   "F": <enderio:block_tank>,        # Fluid Tank
   "▬": <ore:ingotSoularium>,        # Soularium Ingot
   "/": <enderio:item_xp_transfer>,  # Experience Rod
+});
+
+# [Vibrant Crystal] from [Vibrant Alloy Ingot][+1]
+mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(<enderio:item_material:15>);
+mods.tconstruct.Casting.removeTableRecipe(<enderio:item_material:15>);
+craft.remake(<enderio:item_material:15>, ["pretty",
+  "  M  ",
+  "M ▬ M",
+  "  M  "], {
+  "▬": <ore:ingotVibrantAlloy>,   # Vibrant Alloy Ingot
+  "M": <tconstruct:materials:19>, # Mending Moss
+});
+
+# [Photovoltaic Composite] from [Silicon][+2]
+craft.reshapeless(<enderio:item_material:38>, "▲▲▲©S©▲▲▲", {
+  "▲": <ore:dustLapis>,    # Lapis Lazuli Dust
+  "S": <ore:ingotSilicon>, # Silicon
+  "©": <ore:dustCoal>,     # Pulverized Coal
+});
+
+# Low-level machines (original in Alloy Smelter)
+scripts.process.compress(<ore:itemPowderPhotovoltaic> * 4, <enderio:item_material:3>, "No Exceptions");
+scripts.wrap.immersiveengineering.MetalPress.addRecipe(<enderio:item_material:3>, <ore:itemPowderPhotovoltaic> * 4, <immersiveengineering:mold:0>, 2000);
+
+# Cheaper to match other solar panels
+# [Simple Photovoltaic Cell] from [Infinity Bimetal Gear][+3]
+craft.remake(<enderio:block_solar_panel>, ["pretty",
+  "‚ ‚ ‚",
+  "□ □ □",
+  "▲ ¤ ▲"], {
+  "□": <ore:itemPlatePhotovoltaic>, # Photovoltaic Plate
+  "▲": <ore:dustBedrock>,           # Grains of Infinity
+  "¤": <ore:gearIronInfinity>,      # Infinity Bimetal Gear
+  "‚": <ore:nuggetElectricalSteel>, # Electrical Steel Nugget
 });

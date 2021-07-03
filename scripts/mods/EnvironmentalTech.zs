@@ -82,8 +82,19 @@ craft.remake(<environmentaltech:diode> * 2, ["pretty",
 	<environmentaltech:litherite_crystal> * 9, 
 	[<ore:blockLitherite>]);
 
-# Removing Crystal Lens
-	utils.rh(<environmentaltech:laser_lens_crystal>);
+# Remove unused items
+utils.rh(<environmentaltech:laser_lens_crystal>);
+utils.rh(<valkyrielib:modifier_component>);
+utils.rh(<valkyrielib:modifier_speed>);
+
+# [Interconnect] from [Connector][+1]
+craft.remake(<environmentaltech:interconnect>, ["pretty",
+  "⌃ C ⌃",
+  "C ⌃ C",
+  "⌃ C ⌃"], {
+  "⌃": <ore:blockQuartzBlack>,        # Block of Black Quartz
+  "C": <environmentaltech:connector>, # Connector
+});
 
 remake("environmentaltech modifier_speed", 
 	<environmentaltech:modifier_speed>, [
@@ -357,4 +368,16 @@ craft.make(<environmentalmaterials:alabaster> * 5, ["pretty",
   "░ d ░"], {
   "░": <ore:cobblestone>, # Cobblestone
   "d": <ore:dyeWhite>
+});
+
+# [Flight Speed Modifier] from [Null Modifier][+4]
+craft.remake(<environmentaltech:modifier_flight_speed>, ["pretty",
+  "* ╳ *",
+  "m N m",
+  "* U *"], {
+  "╳": <ore:crystalIonite>,               # Ionite Crystal
+  "U": <ore:xuUpgradeSpeed>,              # Upgrade Speed
+  "*": <ore:crystalLonsdaleite>,          # Lonsdaleite Crystal
+  "m": <ore:mica>,                        # Mica
+  "N": <environmentaltech:modifier_null>, # Null Modifier
 });

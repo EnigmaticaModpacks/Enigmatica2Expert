@@ -806,3 +806,20 @@ for item in <ore:dustAshes>.items {
 	<betteranimalsplus:wolf_pelt_snowy>,
 	<betteranimalsplus:wolf_pelt_timber>,
 ]);
+
+# Remove useless oredict from redstone
+<ore:alloyBasic>.remove(<minecraft:redstone>);
+
+# Remove Chorus and Menril glasses from Glass, because they are pricy
+<ore:blockGlass>.remove(<integratedterminals:menril_glass>);
+<ore:blockGlass>.remove(<integratedterminals:chorus_glass>);
+
+# All items that produce about ~160 XP
+<ore:itemXP>.addItems([
+	<mysticalagriculture:xp_droplet>,
+	<mysticalagriculture:chunk:5>,
+	<mysticalagriculture:experience_essence>,
+	<deepmoblearning:living_matter_overworldian>,
+	<actuallyadditions:item_solidified_experience>,
+	<minecraft:experience_bottle>,
+]);

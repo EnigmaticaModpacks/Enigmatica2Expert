@@ -153,10 +153,11 @@ utils.rh(<ic2:dust:10>);
 utils.rh(<ic2:dust:12>);
 utils.rh(<ic2:dust:14>);
 utils.rh(<ic2:dust:17>);
+utils.rh(<ic2:dust:23>);
 utils.rh(<ic2:dust:25>);
 utils.rh(<ic2:dust:36>);
 utils.rh(<ic2:nuclear:6>);
-	
+
 # Iridium TiC Compat
 	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:iridium> * 144, <ic2:misc_resource:1>, 500);
 	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:iridium> * 16, <ic2:misc_resource:2>, 200);
@@ -306,12 +307,12 @@ function tinyDustFix(a as IItemStack, b as IItemStack) as void {
 	recipes.addShapeless("Pack " ~ a.displayName, b, [a,a,a,a,a,a,a,a,a]);
 }
 
-tinyDustFix(<ic2:dust:23>, <thermalfoundation:material:67>);
-tinyDustFix(<ic2:dust:22>, <ic2:dust:9>);
-tinyDustFix(<ic2:dust:28>, <thermalfoundation:material:65>);
-tinyDustFix(<ic2:dust:25>, <thermalfoundation:material:770>);
+tinyDustFix(<ic2:dust:19>, <thermalfoundation:material:64>);
 tinyDustFix(<ic2:dust:20>, <thermalfoundation:material:1>);
+tinyDustFix(<ic2:dust:22>, <ic2:dust:9>);
+tinyDustFix(<ic2:dust:25>, <thermalfoundation:material:770>);
 tinyDustFix(<ic2:dust:26>, <thermalfoundation:material:66>);
+tinyDustFix(<ic2:dust:28>, <thermalfoundation:material:65>);
 
 # Crystal memory crafts
 function crystalRecipe(name as string, item as IItemStack, ingrs as IIngredient[]) {
@@ -348,3 +349,38 @@ craft.reshapeless(<ic2:containment_plating>, "п□□□", {
 # Reprocess plutonium
 mods.nuclearcraft.decay_hastener.addRecipe([<ic2:nuclear:3>, <nuclearcraft:uranium:4>, 2.0, 2.0]);
 mods.nuclearcraft.decay_hastener.addRecipe([<ic2:nuclear:7>, <nuclearcraft:uranium:6>, 2.0, 2.0]);
+
+# This recipe was corrupted with error:
+#   Could not dump recipe for <ic2:te:2>
+#   java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+# [Nuke] from [Advanced Machine Casing][+2]
+craft.remake(<ic2:te:2>, ["pretty",
+  "I A I",
+  "I ■ I",
+  "I A I"], {
+  "■": <ore:machineBlockAdvanced>, # Advanced Machine Casing
+  "A": <ore:circuitAdvanced>,      # Advanced Circuit
+  "I": <ic2:iridium_reflector>,    # Iridium Neutron Reflector
+});
+
+# Batch crafting recipe for reflector, skipping microcraftings
+scripts.processUtils.avdRockXmlRecipe("PrecisionAssembler", [
+	<ore:plateCopper> * 64, # Copper Plate
+	<ore:dustTin> * 64,     # Pulverized Tin
+	<ore:dustCoal> * 64,    # Pulverized Coal
+	<ic2:crafting:4>,       # Iridium Reinforced Plate
+], null,
+	[<ic2:iridium_reflector>], null
+);
+
+# [Quad Fuel Rod (Uranium)] from [Enriched Uranium Nuclear Fuel]*4[+1]
+mods.cyclicmagic.Packager.addRecipe(<ic2:quad_uranium_fuel_rod>, [
+	<ic2:nuclear> * 4,            # Enriched Uranium Nuclear Fuel
+	<bigreactors:reactorfuelrod>, # Reactor Fuel Rod (Legacy)
+]);
+
+# [Quad Fuel Rod (MOX)] from [MOX Nuclear Fuel]*4[+1]
+mods.cyclicmagic.Packager.addRecipe(<ic2:quad_mox_fuel_rod>, [
+	<ic2:nuclear:4> * 4,          # MOX Nuclear Fuel
+	<bigreactors:reactorfuelrod>, # Reactor Fuel Rod (Legacy)
+]);

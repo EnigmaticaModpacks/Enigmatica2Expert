@@ -208,7 +208,6 @@ var listCatFur as string[] = [
 "twilightforest:alpha_fur"       , "0"    , "3",
 "twilightforest:arctic_fur"      , "0"    , "15",
 "animania:wool"                  , "3"    , "55",
-"bigreactors:mineralanglesite"   , "0"    , "1",
 
 "animania:blue_peacock_feather"      ,"0" ,"50",
 "animania:charcoal_peacock_feather"  ,"0" ,"50",

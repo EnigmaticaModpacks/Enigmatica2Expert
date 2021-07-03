@@ -4,9 +4,9 @@
 	recipes.remove(<thermaldynamics:duct_0>);
 	recipes.addShapedMirrored("Leadstone Fluxduct", 
 	<thermaldynamics:duct_0> * 12, 
-	[[<ore:alloyBasic>, <ore:alloyBasic>, <ore:alloyBasic>],
+	[[<ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>],
 	[<xnet:netcable:*>, <ore:blockGlass>, <xnet:netcable:*>], 
-	[<ore:alloyBasic>, <ore:alloyBasic>, <ore:alloyBasic>]]);
+	[<ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>]]);
 
 # Redstone Energy Fluxduct Empty
 	recipes.remove(<thermaldynamics:duct_0:6>);

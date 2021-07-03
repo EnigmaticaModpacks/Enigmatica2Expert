@@ -128,7 +128,7 @@ zenClass Craft {
       || isNull(item.itemArray[0]))
       return "null";
 
-    return item.itemArray[0].displayName.replaceAll(":", "_").replaceAll("§.", "");
+    return item.itemArray[0].displayName.replaceAll(":", "_").replaceAll('§.|"', "");
   }
 
   function itemCount(item as IIngredient) as string {
@@ -137,7 +137,7 @@ zenClass Craft {
   }
 
   function itemSerialize(item as IIngredient) as string {
-    return "["~itemName(item)~itemCount(item)~"]";
+    return "["~itemName(item)~"]"~itemCount(item);
   }
 
   function recipeName(output as IItemStack, gridStr as string[], options as IIngredient[string]) as string { return recipeName(output, Grid(gridStr, options)); }

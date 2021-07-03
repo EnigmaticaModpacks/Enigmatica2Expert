@@ -31,6 +31,8 @@ import crafttweaker.item.IItemStack as IItemStack;
 	<thermalfoundation:material:294>,
 	<thermalfoundation:material:295>,
 	<redstonearsenal:material:96>,
+	<jaopca:item_geardraconium>,
+	<redstonerepository:material:3>,
 	
 	] as IItemStack[];
 	

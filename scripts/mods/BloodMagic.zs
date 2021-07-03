@@ -200,3 +200,53 @@ mods.bloodmagic.AlchemyTable.removeRecipe([<bloodmagic:component:22>, <bloodmagi
 # Purge saltpeter and sulfur
 utils.rh(<bloodmagic:component:24>);
 utils.rh(<bloodmagic:component:23>);
+
+# Remove unused recipes
+val alcTableOres = [
+	<actuallyadditions:block_misc:3>,
+	<appliedenergistics2:charged_quartz_ore>,
+	<appliedenergistics2:quartz_ore>,
+	<astralsorcery:blockcustomore:1>,
+	<astralsorcery:blockcustomsandore>,
+	<bigreactors:oreyellorite>,
+	<biomesoplenty:gem_ore:1>,
+	<biomesoplenty:gem_ore:2>,
+	<biomesoplenty:gem_ore:3>,
+	<biomesoplenty:gem_ore:4>,
+	<biomesoplenty:gem_ore:5>,
+	<biomesoplenty:gem_ore:6>,
+	<biomesoplenty:gem_ore>,
+	<draconicevolution:draconium_ore>,
+	<forestry:resources>,
+	<immersiveengineering:ore:5>,
+	<libvulpes:ore0:8>,
+	<libvulpes:ore0>,
+	<mekanism:oreblock>,
+	<minecraft:diamond_ore>,
+	<minecraft:emerald_ore>,
+	<minecraft:gold_ore>,
+	<minecraft:iron_ore>,
+	<minecraft:lapis_ore>,
+	<minecraft:redstone_ore>,
+	<nuclearcraft:ore:3>,
+	<nuclearcraft:ore:5>,
+	<nuclearcraft:ore:6>,
+	<nuclearcraft:ore:7>,
+	<rftools:dimensional_shard_ore>,
+	<tconstruct:ore:1>,
+	<tconstruct:ore>,
+	<thaumcraft:ore_amber>,
+	<thermalfoundation:ore:1>,
+	<thermalfoundation:ore:2>,
+	<thermalfoundation:ore:3>,
+	<thermalfoundation:ore:4>,
+	<thermalfoundation:ore:5>,
+	<thermalfoundation:ore:6>,
+	<thermalfoundation:ore:7>,
+	<thermalfoundation:ore:8>,
+	<thermalfoundation:ore>,
+] as IItemStack[];
+
+for item in alcTableOres {
+	mods.bloodmagic.AlchemyTable.removeRecipe([item, <bloodmagic:cutting_fluid>]);
+}

@@ -370,12 +370,12 @@ const cfg = [...
   loadText('config/AdvGenerators/overrides/exchanger.cfg')
   .matchAll(/^\s*exchanger\s*:\s*(.*)$/gm)
 ].map(([,m])=>m.trim())
-const bl = (id)=>{const s=id.split(':'); return s.length>=2?id:'minecraft:'+s[0]}
+const bl = (id)=>{const s=id.split(':'); return s.length>=2?id.replace(/@(\d+)/,':$1'):'minecraft:'+s[0]}
 const B = (block,amount)=>`<${bl(block)}>${parseFloat(amount)>1?' * ' + amount : ''}`
 const H = (h)=>Math.round(h)
 return cfg
 .map(g=>g.match(
-  /fluid:(\w+) (\d+) mB(?: \+ (\d+) HU)? =>(?: fluid:(\w+) (\d+) ?mB)?(?: [BI]:(\w+) (\d+\.\d+))?(?: \+ (\d+) HU)?/
+  /fluid:(\w+) (\d+) mB(?: \+ (\d+) HU)? =>(?: fluid:(\w+) (\d+) ?mB)?(?: [BI]:(\w+(?::\w+)?(?:@\d+)?) (\d+\.\d+))?(?: \+ (\d+) HU)?/
 )?.slice(1))
 .filter(m=>m)
 .map(([
@@ -391,13 +391,14 @@ return cfg
 })()
 )*/
 addHeatExch(<fluid:lava>, 0, null, <minecraft:obsidian>, 30);
-addHeatExch(<fluid:pyrotheum>, 0, null, <minecraft:obsidian>, 60);
-addHeatExch(<fluid:fire_water>, 0, null, <minecraft:obsidian>, 200);
-addHeatExch(<fluid:enrichedlava>, 0, null, <minecraft:obsidian>, 500);
+addHeatExch(<fluid:ic2pahoehoe_lava>, 0, null, <advancedrocketry:basalt>, 40);
+addHeatExch(<fluid:pyrotheum>, 0, null, <chisel:basalt2:7>, 60);
+addHeatExch(<fluid:fire_water>, 0, null, <botania:blazeblock>, 200);
+addHeatExch(<fluid:enrichedlava>, 0, null, <draconicevolution:infused_obsidian>, 500);
 addHeatExch(<fluid:water> * 5, 3, <fluid:steam> * 15, null, 0);
-addHeatExch(<fluid:distwater> * 5, 2, <fluid:steam> * 15, null, 0);
-addHeatExch(<fluid:ic2hot_water> * 3, 2, <fluid:steam> * 15, null, 0);
-addHeatExch(<fluid:ic2distilled_water> * 4, 2, <fluid:steam> * 20, null, 0);
+addHeatExch(<fluid:distwater>, 200, <fluid:steam> * 300, null, 0);
+addHeatExch(<fluid:ic2hot_water>, 120, <fluid:steam> * 300, null, 0);
+addHeatExch(<fluid:ic2distilled_water>, 160, <fluid:steam> * 400, null, 0);
 addHeatExch(<fluid:ic2hot_coolant>, 0, <fluid:ic2coolant>, null, 40);
 /**/
 

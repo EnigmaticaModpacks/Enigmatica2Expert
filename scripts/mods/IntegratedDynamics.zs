@@ -160,3 +160,13 @@ craft.remake(<integratedtunnels:part_player_simulator_item>, ["pretty",
   "▬": <ore:ingotRefinedObsidian>,          # Refined Obsidian Ingot
   "M": <tconstruct:materials:19>,           # Mending Moss
 });
+
+# [Logic Director*4] from [Block of Crystalized Menril][+2]
+craft.remake(<integrateddynamics:logic_director> * 4, ["pretty",
+  "∩ ◊ ∩",
+  "∩ ■ ∩",
+  "∩ ◊ ∩"], {
+  "■": <ore:blockMenril>,  # Block of Crystalized Menril
+  "∩": <integrateddynamics:crystalized_chorus_chunk>, # Crystalized Chorus Chunk
+  "◊": <ore:gemTanzanite>, # Tanzanite
+});

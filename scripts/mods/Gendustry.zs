@@ -40,7 +40,7 @@ import crafttweaker.item.IItemStack as IItemStack;
 	recipes.addShaped("Power Module", 
 	<gendustry:power_module>, 
 	[[<ore:gearBronze>, <ore:gemAmber>, <ore:gearBronze>],
-	[<ore:gemAmber>, <mekanism:energycube>, <ore:gemAmber>], 
+	[<ore:gemAmber>, <mekanism:energyupgrade>, <ore:gemAmber>], 
 	[<ore:gearBronze>, <ore:gemAmber>, <ore:gearBronze>]]);
 
 # Harded labware

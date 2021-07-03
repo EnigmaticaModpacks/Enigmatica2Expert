@@ -45,15 +45,8 @@ craft.remake(<advgenerators:pressure_valve>, ["pretty",
 });
 
 # [Advanced Pressure Valve] from [Pressure Valve][+1]
-craft.remake(<advgenerators:advanced_pressure_valve>, ["pretty",
-  "R R R",
-  "R P R",
-  "R R R"], {
-  "P": <advgenerators:pressure_valve>, # Pressure Valve
-  "R": <thermaldynamics:duct_0:4>, # Resonant Fluxduct
-});
-
-
+recipes.remove(<advgenerators:advanced_pressure_valve>);
+scripts.process.fill(<advgenerators:pressure_valve>, <fluid:syngas> * 1000, <advgenerators:advanced_pressure_valve>, "only: MechanicalDryingBasin NCInfuser Transposer");
 
 val turbineTypes = {
 	iron      : {"▬": <ore:plateIron>         , "/": <tconstruct:large_plate>.withTag({Material: "iron"}) | <tconstruct:large_plate>.withTag({Material: "construction_alloy"}), "o": <advgenerators:iron_tubing>},

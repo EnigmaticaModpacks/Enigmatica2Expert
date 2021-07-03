@@ -19,3 +19,13 @@ recipes.addShaped(<threng:big_assembler> * 6, [
   [<ore:ingotFluixSteel>, <extendedcrafting:interface>, <ore:ingotFluixSteel>],
   [<environmentaltech:structure_frame_1>, <ore:ingotFluixSteel>, <environmentaltech:structure_frame_1>]
   ]);
+
+# [Carbonic Fluix Complex] from [Silicon][+2]
+craft.reshapeless(<threng:material:1>, "AABBC", {
+  A: <ore:dustFluix>,
+  B: <ore:dustQuartzBlack>,
+  C: <ore:ingotSilicon>,
+});
+
+mods.threng.Aggregator.removeRecipe(<threng:material:1>);
+mods.threng.Aggregator.addRecipe(<threng:material:1>, <ore:dustFluix>, <ore:dustQuartzBlack>, <ore:ingotSilicon>);

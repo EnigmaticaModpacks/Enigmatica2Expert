@@ -1,7 +1,7 @@
 {
   "options": {
     "__comment": "These options will affect the auto-generation of sieve rewards for compressed blocks. You can turn the auto-generation off individually in the defaults section.",
-    "loss for default generated rewards (out of 9)": 2
+    "loss for default generated rewards (out of 9)": 3
   },
   "defaults": {
     "__comment": "You can disable defaults by setting these to false. Do *NOT* try to add additional entries here. You can add additional entries in the custom section.",

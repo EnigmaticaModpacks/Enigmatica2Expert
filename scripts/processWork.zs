@@ -540,6 +540,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
     }
 
     if (machineName == "alloyfurnace") {
+      if (strict) { mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(outputItem0); }
       if (inputItems.length == 2) {
         mods.nuclearcraft.alloy_furnace.addRecipe(inputItems[0], inputItems[1], outputItem0);
       } else {

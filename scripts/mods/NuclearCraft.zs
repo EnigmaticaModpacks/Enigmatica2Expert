@@ -41,24 +41,35 @@ mods.nuclearcraft.melter.removeRecipeWithInput(<bigreactors:blockgraphite>);
 	recipes.remove(<nuclearcraft:part>);
 	recipes.addShapedMirrored("Basic Plating", 
 	<nuclearcraft:part> * 4, 
-	[[<ore:blockSheetmetalLead>, <ic2:casing:4>, <ore:blockSheetmetalLead>],
+	[[<ore:plateLead>, <ic2:casing:4>, <ore:plateLead>],
 	[<ic2:casing:4>, <ore:blockGraphite>, <ic2:casing:4>], 
-	[<ore:blockSheetmetalLead>, <ic2:casing:4>, <ore:blockSheetmetalLead>]]);
+	[<ore:plateLead>, <ic2:casing:4>, <ore:plateLead>]]);
+
+# Platings Laser Alternatives
+scripts.processUtils.avdRockXmlRecipe("PrecisionLaserEtcher", [<ore:plateLead> * 12, <ore:dustCrystalBinder> * 32, <ore:ingotUranium238> * 32, <ore:ingotTough> * 32], null, [<nuclearcraft:part:3> * 8], null);
+scripts.processUtils.avdRockXmlRecipe("PrecisionLaserEtcher", [<ore:plateLead> * 12, <ore:ingotUranium238> * 32, <ore:ingotTough> * 32], null, [<nuclearcraft:part:2> * 8], null);
+scripts.processUtils.avdRockXmlRecipe("PrecisionLaserEtcher", [<ore:plateLead> * 12, <ore:ingotTough> * 32], null, [<nuclearcraft:part:1> * 8], null);
+scripts.processUtils.avdRockXmlRecipe("PrecisionLaserEtcher", [<ore:plateLead> * 12, <ore:ingotGraphite> * 16], null, [<nuclearcraft:part> * 8], null);
+
+# Boron Nitride shortcut with AdvRock machines
+scripts.processUtils.avdRockXmlRecipe("ChemicalReactor", null, [<fluid:nitrogen> * 100, <fluid:hydrogen> * 300], null, [<fluid:ammonia> * 2000]);
+scripts.processUtils.avdRockXmlRecipe("Crystallizer", [<ore:dustBoron> * 5], [<fluid:ammonia> * 5000], [<nuclearcraft:gem:1> * 10], null);
+
 
 # Copper Solenoid
 	recipes.remove(<nuclearcraft:part:4>);
 	recipes.addShapedMirrored("Copper Solenoid", 
 	<nuclearcraft:part:4> * 4, 
 	[[<ore:plateCopper>, <ic2:casing:1>, <ore:plateCopper>],
-	[<ore:stickAluminum>, <ic2:ingot>, <ore:stickAluminum>], 
+	[<ore:stickAluminum>, <ore:plateAdvancedAlloy>, <ore:stickAluminum>], 
 	[<ore:plateCopper>, <ic2:casing:1>, <ore:plateCopper>]]);
 
-# Nuclearcraft Battery fix
+# Lithium Ion Battery
 	recipes.remove(<nuclearcraft:lithium_ion_battery_basic>);
 	recipes.addShapedMirrored(<nuclearcraft:lithium_ion_battery_basic>, 
-	[[<ore:plateBasic>, <nuclearcraft:lithium_ion_cell>, <ore:plateBasic>], 
-	[<nuclearcraft:lithium_ion_cell>, <ore:solenoidMagnesiumDiboride>, <nuclearcraft:lithium_ion_cell>], 
-	[<ore:plateBasic>, <nuclearcraft:lithium_ion_cell>, <ore:plateBasic>]
+	[[<ore:plateBasic>, null, <ore:plateBasic>], 
+	[null, <nuclearcraft:lithium_ion_cell>, null], 
+	[<ore:plateBasic>, null, <ore:plateBasic>]
 	]);
 
 # [Alloy Furnace] from [Electric Furnace][+4]
@@ -137,7 +148,9 @@ scripts.process.fill(<nuclearcraft:part:11>, <fluid:water> * 2000, <nuclearcraft
 	utils.rh(<nuclearcraft:dust:4>);
 	utils.rh(<nuclearcraft:alloy>);
 	utils.rh(<nuclearcraft:alloy:5>);
+	utils.rh(<nuclearcraft:alloy:9>);
 	utils.rh(<nuclearcraft:ingot>);
+	utils.rh(<nuclearcraft:gem_dust:2>);
 
 	
 # Remove Unused alloy recipes from EnderIO
@@ -228,7 +241,7 @@ mods.nuclearcraft.turbine.addRecipe([<liquid:ic2superheated_steam>, <liquid:ic2s
 mods.nuclearcraft.turbine.addRecipe([<liquid:ic2steam>, <liquid:low_quality_steam> * 2, 400.0d, 1.6d]);
 # Heat exchanger
 # mods.nuclearcraft.heat_exchanger.addRecipe([fluidInput, fluidOutput, double heatRequired, int temperatureIn, int temperatureOut]);
-mods.nuclearcraft.heat_exchanger.addRecipe([<liquid:ic2hot_coolant>, <liquid:ic2coolant>, 10000.0d, 700, 300]);
+mods.nuclearcraft.heat_exchanger.addRecipe([<liquid:ic2hot_coolant>, <liquid:ic2coolant>, 1000.0d, 600, 400]);
 
 # Harder compressed recipes
 val compressed = [

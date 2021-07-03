@@ -36,9 +36,6 @@ for input, output in itemsToUnify {
 # Starmetal Ingots
 	scripts.wrap.mekanism.smelter.addRecipe(<astralsorcery:itemcraftingcomponent:2>, <astralsorcery:itemcraftingcomponent:1>);
 	
-	var ultimateGasTank = <mekanism:gastank>.withTag({tier: 3, mekData:{}})|<mekanism:gastank>.withTag({tier: 3, mekData:{security:0}});
-	var ultimateFluidTank = <mekanism:machineblock2:11>.withTag({tier: 3, mekData:{}})|<mekanism:machineblock2:11>.withTag({tier: 3, mekData:{security:0}});
-	
 # Increasing Stacksize
 	<mekanism:tierinstaller>.maxStackSize = 16;
 	<mekanism:tierinstaller:1>.maxStackSize = 16;
@@ -85,24 +82,8 @@ for input, output in itemsToUnify {
 	recipes.addShaped("Thermal Evaporatotion Controller", 
 	<mekanism:basicblock:14>, 
 	[[<ore:circuitUltimate>, <ore:paneGlass>, <ore:circuitUltimate>],
-	[<mekanism:basicblock2>, ultimateFluidTank, <mekanism:basicblock2>], 
+	[<mekanism:basicblock2>, <mekanism:tierinstaller:2>, <mekanism:basicblock2>], 
 	[<mekanism:basicblock2>, <mekanism:basicblock2>, <mekanism:basicblock2>]]);
-
-# Chemical Oxidizer
-	recipes.remove(<mekanism:machineblock2:1>);
-	recipes.addShapedMirrored("Chemical Oxidizer", 
-	<mekanism:machineblock2:1>, 
-	[[<extrautils2:decorativesolid:3>, <ore:circuitUltimate>, <extrautils2:decorativesolid:3>],
-	[<mekanism:machineblock:13>, ultimateFluidTank, ultimateGasTank], 
-	[<extrautils2:decorativesolid:3>, <ore:circuitUltimate>, <extrautils2:decorativesolid:3>]]);
-
-# Chemical Infuser
-	recipes.remove(<mekanism:machineblock2:2>);
-	recipes.addShapedMirrored("Chemical Infuser", 
-	<mekanism:machineblock2:2>, 
-	[[<mekanism:basicblock:11>, <ore:circuitUltimate>, <mekanism:basicblock:11>],
-	[ultimateGasTank, <rftools:infused_diamond>, ultimateGasTank],
-	[<mekanism:basicblock:11>, <ore:circuitUltimate>, <mekanism:basicblock:11>]]);
 
 # Chemical Injection Chamber
 	recipes.remove(<mekanism:machineblock2:3>);
@@ -112,29 +93,54 @@ for input, output in itemsToUnify {
 	[<ore:blockGold>, <mekanism:machineblock:9>, <ore:blockGold>], 
 	[<ore:dustSulfur>, <ore:circuitUltimate>, <ore:dustSulfur>]]);
 
-# Chemical Dissolution Chamber
-	recipes.remove(<mekanism:machineblock2:6>);
-	recipes.addShapedMirrored("Chemical Dissolution Chamber", 
-	<mekanism:machineblock2:6>, 
-	[[<ore:circuitUltimate>, ultimateGasTank, <ore:circuitUltimate>],
-	[<mekanism:basicblock:11>, Bucket("sulfuric_acid")|Bucket("sulfuricacid"), <mekanism:basicblock:11>], 
-	[<ore:circuitUltimate>, ultimateGasTank, <ore:circuitUltimate>]]);
+val chemIngrs = {
+  "■": <mekanism:plasticblock:*>,            # Grey Plastic Block
+  "⌂": <mekanism:basicblock:8>,              # Steel Casing
+  "▲": <ore:dustSiliconDioxide>,             # Silicon Dioxide
+  "C": <advancedrocketry:crystallizer>,      # Crystallizer
+  "D": <nuclearcraft:water_source_dense>,    # Dense Infinite Water Source
+  "E": <mekanism:tierinstaller:2>,           # Elite Tier Installer
+  "I": <rftools:infused_diamond>,            # Infused Diamond
+  "*": <extrautils2:suncrystal>,             # Sun Crystal
+  "~": Bucket("sulfuric_acid")|Bucket("sulfuricacid"), # Sulfuric Acid Bucket
+  "O": <ic2:te:56>,                          # Ore Washing Plant
+} as IIngredient[string];
 
-# Chemical Washer
-	recipes.remove(<mekanism:machineblock2:7>);
-	recipes.addShapedMirrored("Chemical Washer", 
-	<mekanism:machineblock2:7>, 
-	[[<ore:circuitUltimate>, <nuclearcraft:water_source>, <ore:circuitUltimate>],
-	[<mekanismgenerators:reactor:2>, <ic2:te:56>, <mekanismgenerators:reactor:2>], 
-	[<ore:circuitUltimate>, ultimateGasTank, <ore:circuitUltimate>]]);
+# [Chemical Oxidizer] from [Steel Casing][+3]
+craft.remake(<mekanism:machineblock2:1>, ["pretty",
+  "■ ▲ ■",
+  "E ⌂ E",
+  "■ ▲ ■"], chemIngrs
+);
 
-# Chemical Crystallizer
-	recipes.remove(<mekanism:machineblock2:8>);
-	recipes.addShapedMirrored("Chemical Crystallizer", 
-	<mekanism:machineblock2:8>, 
-	[[ultimateGasTank, <extrautils2:suncrystal>, ultimateGasTank],
-	[<mekanismgenerators:reactor:2>, <advancedrocketry:crystallizer>, <mekanismgenerators:reactor:2>], 
-	[<ore:circuitUltimate>, <ic2:lapotron_crystal>.anyDamage(), <ore:circuitUltimate>]]);
+# [Chemical Infuser] from [Steel Casing][+3]
+craft.remake(<mekanism:machineblock2:2>, ["pretty",
+  "■ I ■",
+  "E ⌂ E",
+  "■ I ■"], chemIngrs
+);
+
+# [Chemical Dissolution Chamber] from [Steel Casing][+4]
+craft.remake(<mekanism:machineblock2:6>, ["pretty",
+  "■ ~ ■",
+  "E ⌂ E",
+  "■ ■ ■"], chemIngrs
+);
+
+# [Chemical Washer] from [Steel Casing][+4]
+craft.remake(<mekanism:machineblock2:7>, ["pretty",
+  "■ O ■",
+  "E ⌂ E",
+  "■ D ■"], chemIngrs
+);
+
+# [Chemical Crystallizer] from [Steel Casing][+4]
+craft.remake(<mekanism:machineblock2:8>, ["pretty",
+  "■ * ■",
+  "E ⌂ E",
+  "■ C ■"], chemIngrs
+);
+
 
 # Gas-burning generator
 	recipes.remove(<mekanismgenerators:generator:3>);
@@ -148,30 +154,6 @@ for input, output in itemsToUnify {
 	recipes.remove(<mekanism:machineblock:5>);
 	recipes.remove(<mekanism:machineblock:6>);
 	recipes.remove(<mekanism:machineblock:7>);
-	
-# Basic Tier Installer
-	recipes.remove(<mekanism:tierinstaller>);
-	recipes.addShaped("Basic Tier Installer", 
-	<mekanism:tierinstaller>, 
-	[[<ore:blockRedstone>, <ore:circuitAdvanced>, <ore:blockRedstone>],
-	[<ore:ingotSteel>, <mekanism:basicblock:8>, <ore:ingotSteel>], 
-	[<ore:blockRedstone>, <ore:circuitAdvanced>, <ore:blockRedstone>]]);
-
-# Advanced Tier Installer
-	recipes.remove(<mekanism:tierinstaller:1>);
-	recipes.addShaped("Advanced Tier Installer", 
-	<mekanism:tierinstaller:1>, 
-	[[<ore:alloyElite>, <ore:circuitElite>, <ore:alloyElite>],
-	[<ore:ingotZirconium>, <mekanism:basicblock:8>, <ore:ingotZirconium>], 
-	[<ore:alloyElite>, <ore:circuitElite>, <ore:alloyElite>]]);
-
-# Elite Tier Installer
-	recipes.remove(<mekanism:tierinstaller:2>);
-	recipes.addShaped("Elite Tier Installer", 
-	<mekanism:tierinstaller:2>, 
-	[[<ore:alloyUltimate>, <ore:circuitUltimate>, <ore:alloyUltimate>],
-	[<ore:ingotBlutonium>, <mekanism:basicblock:8>, <ore:ingotBlutonium>], 
-	[<ore:alloyUltimate>, <ore:circuitUltimate>, <ore:alloyUltimate>]]);
 
 # Quantum Entangloporter
 	recipes.remove(<mekanism:machineblock3>);
@@ -179,13 +161,6 @@ for input, output in itemsToUnify {
 	[[<mekanism:basicblock:7>, <ore:heartDragon>, <mekanism:basicblock:7>],
 	[<modularmachinery:blockcasing:5>, <mekanism:machineblock:11>|<mekanism:machineblock:11>.withTag({}), <modularmachinery:blockcasing:5>], 
 	[<mekanism:basicblock:7>, <rftools:matter_beamer>, <mekanism:basicblock:7>]]);
-
-# Reactor Controller
-#	recipes.remove(<mekanismgenerators:reactor>);
-#	recipes.addShaped(<mekanismgenerators:reactor>, 
-#	[[<ore:circuitUltimate>, ultimateGasTank, <ore:circuitUltimate>],
-#	[<mekanismgenerators:reactor:1>, <nuclearcraft:fusion_core>, <mekanismgenerators:reactor:1>], 
-#	[<mekanismgenerators:reactor:1>, <mekanismgenerators:reactor:1>, <mekanismgenerators:reactor:1>]]);
 	
 # Steel Casing
 	recipes.remove(<mekanism:basicblock:8>);
@@ -210,6 +185,13 @@ for input, output in itemsToUnify {
 	[[<ore:ingotOsmium>, <immersiveengineering:wooden_device1:1>, <ore:ingotOsmium>],
 	[<ore:ingotOsmium>, <ore:alloyAdvanced>, <ore:ingotOsmium>], 
 	[<ore:plateElectrum>, <ore:circuitBasic>, <ore:plateElectrum>]]);
+
+# [Solar Panel] from [Osmium Ingot][+2]
+craft.reshapeless(<mekanismgenerators:solarpanel>, "□▬A", {
+  "A": <ore:alloyAdvanced>, # Enriched Alloy
+  "□": <ore:itemPlatePhotovoltaic>, # Photovoltaic Plate
+  "▬": <ore:ingotOsmium>,           # Osmium Ingot
+});
 
 # Solar Generator
 	recipes.remove(<mekanismgenerators:generator:1>);
@@ -243,17 +225,17 @@ for input, output in itemsToUnify {
 	recipes.remove(<mekanism:controlcircuit:1>);
 	recipes.addShapedMirrored("Advanced Circuit",
 	<mekanism:controlcircuit:1>, 
-	[[<ore:alloyBasic>, <ore:alloyAdvanced>, <ore:alloyBasic>],
+	[[<ore:dustRedstone>, <ore:alloyAdvanced>, <ore:dustRedstone>],
 	[<ore:alloyAdvanced>, <ore:circuitBasic>, <ore:alloyAdvanced>], 
-	[<ore:alloyBasic>, <ore:alloyAdvanced>, <ore:alloyBasic>]]);
+	[<ore:dustRedstone>, <ore:alloyAdvanced>, <ore:dustRedstone>]]);
 
 # Elite Circuit
 	recipes.remove(<mekanism:controlcircuit:2>);
 	recipes.addShaped("Elite Circuit",
 	<mekanism:controlcircuit:2>, 
-	[[<ore:alloyBasic>, <ore:alloyElite>, <ore:alloyBasic>],
+	[[<ore:gemLapis>, <ore:alloyElite>, <ore:gemLapis>],
 	[<ore:alloyElite>, <ore:circuitAdvanced>, <ore:alloyElite>], 
-	[<ore:alloyBasic>, <ore:alloyElite>, <ore:alloyBasic>]]);
+	[<ore:gemLapis>, <ore:alloyElite>, <ore:gemLapis>]]);
 
 # Ultimate Circuit
 	recipes.remove(<mekanism:controlcircuit:3>);
@@ -269,43 +251,93 @@ for input, output in itemsToUnify {
 	recipes.addShapeless(<mekanism:machineblock:6>.withTag({recipeType: 3, mekData: {}}), [<mekanism:machineblock:5>.withTag({recipeType: 3, mekData: {}}), <mekanism:tierinstaller:1>]);
 	recipes.addShapeless(<mekanism:machineblock:7>.withTag({recipeType: 3, mekData: {}}), [<mekanism:machineblock:6>.withTag({recipeType: 3, mekData: {}}), <mekanism:tierinstaller:2>]);
 
+# Mek Tiered craft
+val mekTiers = [
+	# Primary           , Secondary                      , Additional         , Induction Cell Capacitors
+	[<ore:alloyAdvanced>,<ore:circuitAdvanced>           ,<ore:ingotOsmium>   , <enderio:item_basic_capacitor:0>],
+	[<ore:alloyElite>   ,<ore:circuitElite>              ,<ore:ingotZirconium>, <enderio:item_basic_capacitor:1>],
+	[<ore:alloyUltimate>,<ore:circuitUltimate>           ,<ore:ingotBlutonium>, <enderio:item_basic_capacitor:2>],
+	[<ic2:crafting:4>   ,<modularmachinery:blockcasing:5>,<ore:ingotLudicrite>, <enderio:item_capacitor_melodic>],
+] as IIngredient[][];
 
-# Mekanism Induction difficult
-remake("Mek Induction Provider 3", <mekanism:basicblock2:4>.withTag({tier: 3}) , [[<mekanism:tierinstaller:3> , <mekanism:basicblock2:4>.withTag({tier: 2}) , <mekanism:tierinstaller:3>] ,[<mekanism:basicblock2:4>.withTag({tier: 2}) , <mekanism:energycube>.withTag({tier: 3}) , <mekanism:basicblock2:4>.withTag({tier: 2})] , [<mekanism:tierinstaller:3> , <mekanism:basicblock2:4>.withTag({tier: 2}) , <mekanism:tierinstaller:3>]]);
-remake("Mek Induction Provider 2", <mekanism:basicblock2:4>.withTag({tier: 2}) , [[<ore:circuitElite>         , <mekanism:basicblock2:4>.withTag({tier: 1}) , <ore:circuitElite>]         ,[<mekanism:basicblock2:4>.withTag({tier: 1}) , <mekanism:energycube>.withTag({tier: 2}) , <mekanism:basicblock2:4>.withTag({tier: 1})] , [<ore:circuitElite>         , <mekanism:basicblock2:4>.withTag({tier: 1}) , <ore:circuitElite>]]);
-remake("Mek Induction Provider 1", <mekanism:basicblock2:4>.withTag({tier: 1}) , [[<ore:circuitAdvanced>      , <mekanism:basicblock2:4>.withTag({tier: 0}) , <ore:circuitAdvanced>]      ,[<mekanism:basicblock2:4>.withTag({tier: 0}) , <mekanism:energycube>.withTag({tier: 1}) , <mekanism:basicblock2:4>.withTag({tier: 0})] , [<ore:circuitAdvanced>      , <mekanism:basicblock2:4>.withTag({tier: 0}) , <ore:circuitAdvanced>]]);
-remake("Mek Induction Provider 0", <mekanism:basicblock2:4>.withTag({tier: 0}) , [[<ore:circuitBasic>         , <nuclearcraft:lithium_ion_cell>             , <ore:circuitBasic>]         ,[<nuclearcraft:lithium_ion_cell>             , <mekanism:energycube>.withTag({tier: 0}) , <nuclearcraft:lithium_ion_cell>]             , [<ore:circuitBasic>         , <nuclearcraft:lithium_ion_cell>             , <ore:circuitBasic>]]);
+function mekStorage(i as int, item as IItemStack, storageIngrs as IIngredient[string], strGrid as string[]) {
+	val output = item.withTag({tier: i});
+	craft.remake(output, strGrid, storageIngrs);
 
-# Tablet
-remakeEx(<mekanism:energytablet>, [[<ore:alloyAdvanced>, <ore:plateDenseCopper>, <ore:alloyAdvanced>],[<ore:dustLithium>, <ore:plateDenseGold>, <ore:dustLithium>], [<ore:alloyAdvanced>, <ore:plateDenseCopper>, <ore:alloyAdvanced>]]);
+	# Tier Installer upgrade
+	if(i>0) craft.shapeless(output, "CT", {
+		"C": item.withTag({tier: i - 1}),
+		"T": <mekanism:tierinstaller>.definition.makeStack(i),
+	});
+}
 
+for i,list in mekTiers {
+	val tierIngrs = {
+		"-": list[0], # Primary
+		"▬": list[1], # Secondary
+		"□": list[2], # Additional
+		"H": list[3], # Induction Cell Capacitors
+		"⌂": <mekanism:basicblock:8>, # Steel Casing
+		"T": <mekanism:tierinstaller>.definition.makeStack(i),
+		"d": <mekanism:speedupgrade>,
+		"Ϟ": i==0 ? <mekanism:energyupgrade>        : <mekanism:basicblock2:3>.withTag({tier: i - 1}),
+		"∑": i==0 ? <nuclearcraft:lithium_ion_cell> : <mekanism:basicblock2:4>.withTag({tier: i - 1}),
+		"◘": i==0 ? <ore:circuitBasic> as IIngredient : mekTiers[i - 1][1],
+	} as IIngredient[string];
 
-# Mek induction Cell
-val t1_cap = <enderio:item_basic_capacitor>;
-val t2_cap = <enderio:item_basic_capacitor:1>;
-val t3_cap = <enderio:item_basic_capacitor:2>;
-val t4_cap = <enderio:item_capacitor_melodic>;
-remake("Induction Cell 1", <mekanism:basicblock2:3>.withTag({tier: 0}), [
-	[t1_cap, <ore:battery>, t1_cap], 
-	[<ore:battery>, <mekanism:energycube>.withTag({tier: 0}), <ore:battery>], 
-	[t1_cap, <ore:battery>, t1_cap]
-]);
-remake("Induction Cell 2", <mekanism:basicblock2:3>.withTag({tier: 1}), [
-	[t2_cap, <mekanism:basicblock2:3>.withTag({tier: 0}), t2_cap], 
-	[<mekanism:basicblock2:3>.withTag({tier: 0}), <mekanism:energycube>.withTag({tier: 1}), <mekanism:basicblock2:3>.withTag({tier: 0})], 
-	[t2_cap, <mekanism:basicblock2:3>.withTag({tier: 0}), t2_cap]
-]);
-remake("Induction Cell 3", <mekanism:basicblock2:3>.withTag({tier: 2}), [
-	[t3_cap, <mekanism:basicblock2:3>.withTag({tier: 1}), t3_cap], 
-	[<mekanism:basicblock2:3>.withTag({tier: 1}), <mekanism:energycube>.withTag({tier: 2}), <mekanism:basicblock2:3>.withTag({tier: 1})], 
-	[t3_cap, <mekanism:basicblock2:3>.withTag({tier: 1}), t3_cap]
-]);
-remake("Induction Cell 4", <mekanism:basicblock2:3>.withTag({tier: 3}), [
-	[t4_cap, <mekanism:basicblock2:3>.withTag({tier: 2}), t4_cap], 
-	[<mekanism:basicblock2:3>.withTag({tier: 2}), <mekanism:energycube>.withTag({tier: 3}), <mekanism:basicblock2:3>.withTag({tier: 2})], 
-	[t4_cap, <mekanism:basicblock2:3>.withTag({tier: 2}), t4_cap]
-]);
+	# Tier Installers
+	craft.remake(tierIngrs.T.items[0], ["pretty",
+		"- ▬ -",
+		"□ ⌂ □",
+		"- ▬ -"], tierIngrs);
 
+	# [Basic Induction Cell] from [Basic Tier Installer][+2]
+	craft.remake(<mekanism:basicblock2:3>.withTag({tier: i}), ["pretty",
+		"H Ϟ H",
+		"Ϟ T Ϟ",
+		"H Ϟ H"], tierIngrs);
+
+	# [Basic Induction Provider] from [Basic Tier Installer][+2]
+	craft.remake(<mekanism:basicblock2:4>.withTag({tier: i}), ["pretty",
+		"◘ ∑ ◘",
+		"∑ d ∑",
+		"◘ ∑ ◘"], tierIngrs);
+
+	val storageIngrs = {
+		"♥": <ore:dustRedstone>,
+		"▬": <ore:ingotOsmium>,
+		"_": <ore:ingotFakeIron>,
+		"Ϟ": <mekanism:energyupgrade>, # Energy Upgrade
+		"░": <ore:cobblestone>, # Cobblestone
+		"B": <ore:circuitBasic>,# Basic Control Circuit
+		"A": <ore:alloyAdvanced>, # Enriched Alloy
+	} as IIngredient[string];
+	for j in 1 .. 4 {	if(i>=j) storageIngrs[""~j] = <mekanism:tierinstaller>.definition.makeStack(j); }
+
+	# [Basic Energy Cube] from [Energy Upgrade][+2]
+	mekStorage(i, <mekanism:energycube>, storageIngrs, ["pretty",
+		"♥ 1 ♥",
+		"2 Ϟ 3",
+		"♥ ▬ ♥"]);
+
+	# [Basic Bin] from [Basic Control Circuit][+4]
+	mekStorage(i, <mekanism:basicblock:6>, storageIngrs, ["pretty",
+		"░ 1 ░",
+		"2 B 3",
+		"░ ░ ░"]);
+
+	# [Basic Gas Tank] from [Advanced Tier Installer][+4]
+	mekStorage(i, <mekanism:gastank>, storageIngrs, ["pretty",
+		"♥ 1 ♥",
+		"2 ▬ 3",
+		"♥ ▬ ♥"]);
+
+	# [Basic Fluid Tank] from [Advanced Tier Installer][+4]
+	mekStorage(i, <mekanism:machineblock2:11>, storageIngrs, ["pretty",
+		"A 1 A",
+		"2 _ 3",
+		"A _ A"]);
+}
 
 # Mekanism Fusion Reactor
 recipes.remove(<mekanismgenerators:reactor>);
@@ -317,23 +349,35 @@ scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <mekanismgenerators:rea
 	[<ore:plateElite>, <nuclearcraft:lithium_ion_battery_elite>, <nuclearcraft:lithium_ion_battery_elite>, <nuclearcraft:lithium_ion_battery_elite>, <ore:plateElite>]
 ]);
 
-val upgradeIngrs = {
-  "♠": <ore:dustGold>,      # Pulverized Gold
-  "A": <ore:alloyAdvanced>, # Enriched Alloy
-  "□": <ore:blockGlass>,    # Glass
-  "r": <ore:nuggetArdite>,  # Ardite Nugget
-  "▲": <ore:dustOsmium>,    # Osmium Dust
-  "C": <ore:nuggetCobalt>   # Cobalt Nugget
+val upgrIngrs = {
+  "A": <ore:alloyAdvanced>,    # Enriched Alloy
+  "□": <ore:plateDenseCopper>, # Dense Copper Plate
+  "▲": <ore:dustLithium>,      # Lithium Dust
+  "♣": <ore:dustArdite>,       # Ardite Ore Dust
+  "♠": <ore:dustCobalt>,       # Cobalt Ore Dust
 } as IIngredient[string];
-craft.remake(<mekanism:speedupgrade>,  ["C□C", "A▲A", "C□C"], upgradeIngrs);
-craft.remake(<mekanism:energyupgrade>, ["r□r", "A♠A", "r□r"], upgradeIngrs);
+
+# [Energy Upgrade] from [Ardite Ore Dust][+3]
+craft.remake(<mekanism:energyupgrade>, ["pretty",
+  "A □ A",
+  "▲ ♣ ▲",
+  "A □ A"], upgrIngrs
+);
+
+# [Speed Upgrade] from [Cobalt Ore Dust][+3]
+craft.remake(<mekanism:speedupgrade>, ["pretty",
+  "A □ A",
+  "▲ ♠ ▲",
+  "A □ A"], upgrIngrs
+);
+
 
 # Atomic disassembler
 recipes.removeShaped(<mekanism:atomicdisassembler>);
 var anyDragonsteelRod = <tconstruct:tough_tool_rod>.withTag({Material: "dragonsteel_ice"}) |
 												<tconstruct:tough_tool_rod>.withTag({Material: "dragonsteel_fire"});
 recipes.addShaped(<mekanism:atomicdisassembler>, [
-	[<ore:ingotPlatinum>, <mekanism:tierinstaller:2>, <ore:ingotPlatinum>], 
+	[<ore:ingotPlatinum>, <mekanism:tierinstaller:3>, <ore:ingotPlatinum>], 
 	[<ore:ingotPlatinum>, anyDragonsteelRod, null], 
 	[null, anyDragonsteelRod, null]
 ]);
@@ -352,16 +396,20 @@ mods.mekanism.infuser.removeRecipe(<mekanism:otherdust:5>, <nuclearcraft:gem_dus
 mods.mekanism.infuser.removeRecipe(<mekanism:otherdust:5>, <enderio:item_material:29>);
 mods.mekanism.infuser.removeRecipe(<mekanism:otherdust:5>, <mekanism:otherdust:6>);
 
-
-# Fix cubes uncraftable in AE
-# Just remake original crafts, but without additional security tags
-remake("Mek Cube 1", <mekanism:energycube>.withTag({tier: 1}), [[<ore:alloyAdvanced>, <ore:battery>, <ore:alloyAdvanced>],[<ore:ingotOsmium>, <mekanism:energycube>.withTag({tier: 0}), <ore:ingotOsmium>], [<ore:alloyAdvanced>, <ore:battery>, <ore:alloyAdvanced>]]);
-remake("Mek Cube 2", <mekanism:energycube>.withTag({tier: 2}), [[<ore:alloyElite>, <ore:battery>, <ore:alloyElite>],[<ore:ingotGold>, <mekanism:energycube>.withTag({tier: 1}), <ore:ingotGold>], [<ore:alloyElite>, <ore:battery>, <ore:alloyElite>]]);
-remake("Mek Cube 3", <mekanism:energycube>.withTag({tier: 3}), [[<ore:alloyUltimate>, <ore:battery>, <ore:alloyUltimate>], [gemDiamondRat, <mekanism:energycube>.withTag({tier: 2}), gemDiamondRat], [<ore:alloyUltimate>, <ore:battery>, <ore:alloyUltimate>]]);
-
 # Also Teleporter
 recipes.remove(<mekanism:machineblock:11>);
 recipes.addShaped("Mek Teleporter", <mekanism:machineblock:11>.withTag({}), [[<ore:circuitBasic>, <mekanism:basicblock:8>, <ore:circuitBasic>],[<mekanism:basicblock:8>, <mekanism:teleportationcore>, <mekanism:basicblock:8>], [<ore:circuitBasic>, <mekanism:basicblock:8>, <ore:circuitBasic>]]);
+
+# [Teleportation Core] from [Pulsating Crystal][+3]
+craft.remake(<mekanism:teleportationcore>, ["pretty",
+  "▬ U ▬",
+  "S * S",
+  "▬ U ▬"], {
+  "S": <mekanism:speedupgrade>,    # Speed Upgrade
+  "U": <ore:alloyUltimate>,        # Atomic Alloy
+  "*": <ore:itemPulsatingCrystal>, # Pulsating Crystal
+  "▬": <ore:ingotCobalt>,          # Cobalt Ingot
+});
 
 # Cardboxes from Forestry's Carton
 remakeEx(<mekanism:cardboardbox>, [[<forestry:carton>, <forestry:carton>, <forestry:carton>],[<forestry:carton>, null, <forestry:carton>], [<forestry:carton>, <forestry:carton>, <forestry:carton>]]);
@@ -386,35 +434,6 @@ for i, it in [
 ] as IIngredient[] {
 	craft.remake(<mekanism:transmitter>.withTag({tier: i+1}) * 8, 
 		["###", "#o#", "###"], { "#": <mekanism:transmitter>.withTag({tier: i}), "o": it });
-}
-
-# Remake recipes of gas/fluid tanks to remove recipe functions (they caused AE2 autocrafting issues)
-val mekTankIngrs = [
-	<ore:dustRedstone>,
-	<mekanism:enrichedalloy>,
-	<mekanism:reinforcedalloy>,
-	<mekanism:atomicalloy>,
-	<mekanism:controlcircuit:3>,
-] as IIngredient[];
-for i, it in mekTankIngrs {
-	var grid = [
-		"#-#", 
-		"-o-", 
-		"#-#"] as string[];
-	if(i < 4) {
-		craft.remake( <mekanism:gastank>.withTag({tier: i}) , grid, { 
-			"#": it, 
-			"-": <ore:ingotOsmium>, 
-			"o": i==0 ? null : <mekanism:gastank>.withTag({tier: i - 1}, false)
-		});
-	}
-
-	if(i==0) continue;
-	craft.remake( <mekanism:machineblock2:11>.withTag({tier: i - 1}) , grid, { 
-		"#": it, 
-		"-": <ore:ingotFakeIron>, 
-		"o": i==1 ? null : <mekanism:machineblock2:11>.withTag({tier: i - 2}, false)
-	});
 }
 
 

@@ -518,6 +518,9 @@ val packagerList = [
   [<environmentalmaterials:alabaster> * 4], [<minecraft:cobblestone> * 4, <industrialforegoing:artificial_dye> * 5],
   [<environmentalmaterials:alabaster> * 4], [<minecraft:cobblestone> * 4, <quark:root_dye:2>                   * 5],
   [<environmentalmaterials:alabaster> * 4], [<minecraft:cobblestone> * 4, <gendustry:honey_drop:25>            * 5],
+
+  [<nuclearcraft:part:1>], [<ore:plateLead>.firstItem, <ic2:casing:4>, <ore:ingotGraphite>.firstItem * 2, <ore:ingotTough>.firstItem * 4, <minecraft:redstone> * 4],
+  [<nuclearcraft:part>], [<ore:plateLead>.firstItem, <ic2:casing:4>, <ore:ingotGraphite>.firstItem * 2],
 ] as IItemStack[][];
 
 for i, l in packagerList {
@@ -698,7 +701,7 @@ craft.remake(<cyclicmagic:exp_pylon>, ["pretty",
   "S M S",
   "S ▲ S"], {
   "▲": <ore:dustEmerald>,         # Crushed Emerald
-  "S": <actuallyadditions:item_solidified_experience>, # Solidified Experience
+  "S": <ore:itemXP>, # Solidified Experience
   "M": <tconstruct:materials:19>, # Mending Moss
 });
 

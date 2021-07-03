@@ -453,6 +453,9 @@ val itemsToRecycle as string[] = [
 "ic2:nano_chestplate" , "3" , "ic2:crafting:15" , "!shapeless" ,
 "ic2:nano_helmet"     , "2" , "ic2:crafting:15" , "!shapeless" ,
 "ic2:nano_leggings"   , "3" , "ic2:crafting:15" , "!shapeless" ,
+"thaumcraft:fortress_helm" , "7" , "thaumcraft:ingot", "thaumium",
+"thaumcraft:fortress_chest", "12", "thaumcraft:ingot", "thaumium",
+"thaumcraft:fortress_legs" , "10", "thaumcraft:ingot", "thaumium",
 ];
 
 # Exceptions for machines that can saw

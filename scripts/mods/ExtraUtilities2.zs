@@ -112,22 +112,6 @@ import crafttweaker.item.IIngredient;
 	[<forestry:thermionic_tubes:3>, <forestry:sturdy_machine>, <forestry:thermionic_tubes:3>], 
 	[polishedStone, <forestry:thermionic_tubes:3>, polishedStone]]);
 
-# Stone Drum
-	recipes.removeByRecipeName("extrautils2:drum_16");
-	recipes.addShapedMirrored("Stone Drum", 
-	<extrautils2:drum>, 
-	[[<extrautils2:compressedcobblestone:1>, <minecraft:stone_slab:*>, <extrautils2:compressedcobblestone:1>],
-	[<extrautils2:decorativesolid:3>, <minecraft:bucket>, <extrautils2:decorativesolid:3>], 
-	[<extrautils2:compressedcobblestone:1>, <minecraft:stone_slab:*>, <extrautils2:compressedcobblestone:1>]]);
-
-# Iron Drum
-	recipes.removeByRecipeName("extrautils2:drum_256");
-	recipes.addShapedMirrored("Iron Drum",
-	<extrautils2:drum:1>, 
-	[[<ore:blockSheetmetalIron>, <ore:plateDenseIron>, <ore:blockSheetmetalIron>],
-	[<minecraft:cauldron>, <extrautils2:drum>, <minecraft:cauldron>], 
-	[<ore:blockSheetmetalIron>, <ore:plateDenseIron>, <ore:blockSheetmetalIron>]]);
-
 # Klein Flask
 	recipes.remove(<extrautils2:klein>);
 	recipes.addShapedMirrored("Klein Flask", 
@@ -135,25 +119,6 @@ import crafttweaker.item.IIngredient;
 	[[<tconstruct:clear_glass>, <ore:dustEnder>, <tconstruct:clear_glass>],
 	[<ore:dustEnder>, <minecraft:experience_bottle>, <ore:dustEnder>], 
 	[<tconstruct:clear_glass>, <ore:dustEnder>, <tconstruct:clear_glass>]]);
-
-# Reinforced Drum
-recipes.removeByRecipeName("extrautils2:drum_4096");
-recipes.addShapedMirrored("Reinforced Drum",
-	<extrautils2:drum:2>, [
-		[<thermalfoundation:upgrade:33>, <botania:storage:3>, <thermalfoundation:upgrade:33>],
-		[<extrautils2:drum:1>, <extrautils2:drum:1>, <extrautils2:drum:1>], 
-		[<thermalfoundation:upgrade:33>, <botania:storage:3>, <thermalfoundation:upgrade:33>]
-	]);
-
-# Gargantuan Drum
-var demonPlate = <tconstruct:large_plate>.withTag({Material: "xu_demonic_metal"});
-recipes.removeByRecipeName("extrautils2:drum_65536");
-recipes.addShapedMirrored("Gargantuan Drum",
-	<extrautils2:drum:3>, [
-		[demonPlate, <liquid:high_pressure_steam>*1000, demonPlate],
-		[<extrautils2:drum:2>, <extrautils2:drum:2>, <extrautils2:drum:2>], 
-		[demonPlate, <liquid:high_pressure_steam>*1000, demonPlate]
-		]);
 
 # Sun crystal
 recipes.remove(<extrautils2:suncrystal:*>);
@@ -188,6 +153,10 @@ scripts.wrap.extrautils2.Resonator.add(<extrautils2:decorativesolid:6>, <botania
 # Make quartzburnt harder (was 8 GP)
 mods.extrautils2.Resonator.remove(<extrautils2:decorativesolid:7>);
 scripts.wrap.extrautils2.Resonator.add(<extrautils2:decorativesolid:7>, <minecraft:quartz_block>, 80 * 100);
+
+# Upgrade base from demonic ingot
+mods.extrautils2.Resonator.remove(<extrautils2:ingredients:9>);
+scripts.wrap.extrautils2.Resonator.add(<extrautils2:ingredients:9>, <extrautils2:ingredients:11> * 2, 8 * 100);
 
 # Harder Player Chest (was most easy player interface)
 craft.remake(<extrautils2:playerchest>, ["pretty",
@@ -322,4 +291,49 @@ craft.remake(<extrautils2:user>, ["pretty",
   "□": <tconstruct:large_plate>.withTag({Material: "xu_demonic_metal"}), # Demonic Large Plate
   "◊": <ore:gemMoon>,                   # Moon Stone
   "M": <tconstruct:materials:19>,       # Mending Moss
+});
+
+# [Stone Drum] from [Omnivoir][+1]
+recipes.removeByRecipeName("extrautils2:drum_16");
+craft.make(<extrautils2:drum>, [
+  "S",
+  "O",
+  "S"], {
+  "S": <extrautils2:decorativesolid:3>, # Stoneburnt
+  "O": <enderio:block_omni_reservoir>,  # Omnivoir
+});
+
+# [Iron Drum] from [Quartzburnt][+3]
+recipes.removeByRecipeName("extrautils2:drum_256");
+craft.make(<extrautils2:drum:1>, ["pretty",
+  "п Q п",
+  "S S S",
+  "□ Q □"], {
+  "Q": <extrautils2:decorativesolid:7>, # Quartzburnt
+  "□": <ore:plateIron>,                 # Iron Plate
+  "S": <extrautils2:drum>,              # Stone Drum
+  "п": <ore:plateDenseIron>,            # Dense Iron Plate
+});
+
+# [Reinforced Large Drum] from [Blue Quartz][+3]
+recipes.removeByRecipeName("extrautils2:drum_4096");
+craft.make(<extrautils2:drum:2>, ["pretty",
+  "R ⌃ R",
+  "I I I",
+  "□ ⌃ □"], {
+  "□": <ore:plateLumium>,               # Lumium Plate
+  "R": <tconstruct:materials:14>,       # Reinforcement
+  "⌃": <extrautils2:decorativesolid:6>, # Blue Quartz
+  "I": <extrautils2:drum:1>,            # Iron Drum
+});
+
+# [Demonically Gargantuan Drum] from [Any container with High Pressure Steam * 1000 mB][+2]
+recipes.removeByRecipeName("extrautils2:drum_65536");
+craft.make(<extrautils2:drum:3>, ["pretty",
+  "□ A □",
+  "R R R",
+  "□ A □"], {
+  "□": <tconstruct:large_plate>.withTag({Material: "xu_demonic_metal"}), # Demonic Large Plate
+  "A": Bucket("high_pressure_steam"), # Any container with High Pressure Steam * 1000 mB
+  "R": <extrautils2:drum:2>, # Reinforced Large Drum
 });

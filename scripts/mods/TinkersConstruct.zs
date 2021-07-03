@@ -460,7 +460,7 @@ craft.make(<plustic:laser_medium>.withTag({Material: "blaze"}), ["pretty",
   "‚ ▬ *",
   "/ / /"], {
   "*": <advancedrocketry:crystal:4>,# Yellow Crystal Block
-  "‚": <ore:nuggetDraconicMetal>,   # Draconic Metal Nugget
+  "‚": <draconicevolution:chaos_shard:3>,
   "▬": <ore:ingotDraconium>,        # Draconium Ingot
   "/": <ore:rodBlaze>,              # Blaze Rod
 });
@@ -472,7 +472,7 @@ craft.make(<plustic:laser_medium>.withTag({Material: "prismarine"}), ["pretty",
   "◊ ◊ ◊"], {
   "◊": <ore:gemPrismarine> | <ore:shardPrismarine>, # Prismarine Shard
   "*": <advancedrocketry:crystal:2>,                # Green Crystal Block
-  "‚": <ore:nuggetDraconicMetal>,                   # Draconic Metal Nugget
+  "‚": <draconicevolution:chaos_shard:3>,
   "Ϟ": <draconicevolution:energy_crystal>,          # Basic Energy Relay Crystal
 });
 
@@ -482,7 +482,7 @@ craft.make(<plustic:laser_medium>.withTag({Material: "psigem"}), ["pretty",
   "‚ Ϟ *",
   "◊ ◊ ◊"], {
   "◊": <ore:gemPsi>,                         # Psigem
-  "‚": <ore:nuggetDraconicMetal>,            # Draconic Metal Nugget
+  "‚": <draconicevolution:chaos_shard:3>,
   "*": <advancedrocketry:crystal:1>,         # Blue Crystal Block
   "Ϟ": <draconicevolution:energy_crystal:1>, # Wyvern Energy Relay Crystal
 });
@@ -494,7 +494,7 @@ craft.make(<plustic:laser_medium>.withTag({Material: "starmetal"}), ["pretty",
   "‚ Ϟ *",
   "▬ ▬ ▬"], {
   "*": <advancedrocketry:crystal:1>,         # Blue Crystal Block
-  "‚": <ore:nuggetDraconicMetal>,            # Draconic Metal Nugget
+  "‚": <draconicevolution:chaos_shard:3>,
   "▬": <ore:ingotAstralStarmetal>,           # Starmetal Ingot
   "Ϟ": <draconicevolution:energy_crystal:1>, # Wyvern Energy Relay Crystal
 });
@@ -504,7 +504,7 @@ craft.make(<plustic:laser_medium>.withTag({Material: "endrod"}), ["pretty",
   "/ / /",
   "‚ Ϟ *",
   "/ / /"], {
-  "‚": <ore:nuggetDraconicMetal>,            # Draconic Metal Nugget
+  "‚": <draconicevolution:chaos_shard:3>,
   "*": <advancedrocketry:crystal:5>,         # Orange Crystal Block
   "Ϟ": <draconicevolution:energy_crystal:2>, # Draconic Energy Relay Crystal
   "/": <minecraft:end_rod>,                  # End Rod

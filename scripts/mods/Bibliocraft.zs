@@ -34,3 +34,12 @@ craft.remake(<bibliocraft:framingsaw>, ["pretty",
 	A: <ore:itemFlint>,
 	B: <tconstruct:tough_tool_rod>.withTag({Material: "wood"}),
 	C: <ore:leather>});
+
+# [Print Press Chase] from [Iron Ingot][+1]
+craft.remake(<bibliocraft:bibliochase>, ["pretty",
+  "  #  ",
+  "# ▬ #",
+  "  #  "], {
+  "#": <ore:slabWood> | <ore:slabWoodOak>,    # Oak Wood Slab
+  "▬": <ore:ingotIron> | <ore:ingotFakeIron>, # Iron Ingot
+});

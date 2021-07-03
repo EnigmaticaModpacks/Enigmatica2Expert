@@ -88,6 +88,17 @@
   <recipe name="Enhanced Alloy Smelter, Upgrade">
     <disabled/>
   </recipe>
+  <recipe name="Alloy: Signalum (Thermal Expansion)">
+    <alloying energy="320000" exp="0">
+      <input name="ingotCopper"/>
+      <input name="ingotSilver" amount="3"/>
+      <input name="dustRedstone" amount="10"/>
+      <output name="ingotSignalum" amount="4"/>
+    </alloying>
+  </recipe>
+  <recipe name="Alloy: Vibrant Alloy">
+    <disabled/>
+  </recipe>   
   <recipe name="The Enhanced Vat">
     <disabled/>
   </recipe>

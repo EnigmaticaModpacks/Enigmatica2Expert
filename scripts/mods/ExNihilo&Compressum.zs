@@ -47,35 +47,24 @@ for i, inputArr in crushingInMachines {
 	}
 }
 
-# Sieve
-	recipes.remove(<exnihilocreatio:block_sieve>);
-	recipes.addShaped("Ex Nihilo Sieve",
-	<exnihilocreatio:block_sieve>, [
-	[<ore:plankWood>, null, <ore:plankWood>],
-	[<botania:livingrock0slab>, <ore:alloyAdvanced>, <botania:livingrock0slab>],
-	[<ore:stickTreatedWood>, null, <ore:stickTreatedWood>]]);
-
 # Remove oredict entries
 <ore:oreAluminium>.remove(<exnihilocreatio:item_ore_aluminium:1>);
 
-# Ex Nihilo dust conversion to ores
-	val orePieces as string[] = [
-		"Ardite" , "Cobalt"   , "Nickel" , "Silver"   ,
-		"Lead"   , "Aluminium", "Tin"    , "Copper"   ,
-		"Iron"   , "Gold"     , "Thorium", "Magnesium",
-		"Lithium", "Boron"    , "Uranium", "Osmium"
-	] as string[];
+# Ex Nihilo ore pieces conversion to ores
+for ore_entry in oreDict {
+	val name = ore_entry.name;
+	if (name.matches("piece[A-Z]\\w+")) {
+    val ore_name = name.substring(5);
+		if(ore_name=='Aluminum') continue;
 
-	for i in 0 to orePieces.length {
-		val name = orePieces[i];
-		val oreBlock = oreDict.get("ore" ~ name);
-		val p = oreDict.get("piece" ~ name);
+		val oreBlock = oreDict.get("ore" ~ ore_name);
+		if(isNull(oreBlock)) continue;
 
-		if (!isNull(oreBlock) && !isNull(p)) {
-			recipes.addShapeless("Ex Nihilo " ~ name ~ " x4", oreBlock.firstItem, [p, p, p, p]);
-			recipes.addShapeless("Ex Nihilo " ~ name ~ " x8", oreBlock.firstItem * 2, [p, p, p, p, p, p, p, p]);
-		}
+		val p = ore_entry;
+		recipes.addShapeless("Ex Nihilo " ~ name ~ " x4", oreBlock.firstItem, [p, p, p, p]);
+		recipes.addShapeless("Ex Nihilo " ~ name ~ " x8", oreBlock.firstItem * 2, [p, p, p, p, p, p, p, p]);
 	}
+}
 
 # *======= Remove & Hide =======*
 

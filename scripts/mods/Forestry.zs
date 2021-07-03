@@ -188,6 +188,15 @@ for name in bagNames {
 	], 40, <liquid:water> * 250);
 }
 
+# [Cobweb]*16 from [Silk Wisp]
+recipes.removeByRecipeName("forestry:silk_wisp_to_web");
+craft.make(<minecraft:web> * 16, ["pretty",
+  "S   S",
+  "  S  ",
+  "S   S"], {
+  "S": <forestry:crafting_material:2>, # Silk Wisp
+});
+
 # Simplify Alviery because its feels too grindy for so low value
 # [Alveary*14] from [Impregnated Casing][+1]
 craft.remake(<forestry:alveary.plain> * 14, ["pretty",

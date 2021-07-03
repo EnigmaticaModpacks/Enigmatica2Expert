@@ -143,3 +143,19 @@ scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<actuallyadditions:b
 scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<actuallyadditions:block_crystal_empowered:4>, 2000000, 1000000, <actuallyadditions:block_crystal:4>, [<minecraft:dye:2>, <minecraft:emerald>, <nuclearcraft:dust:9>, <actuallyadditions:block_testifi_bucks_green_wall>]);
 scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<actuallyadditions:block_crystal_empowered:5>, 1000000, 1000000, <actuallyadditions:block_crystal:5>, [<minecraft:quartz_block>, <minecraft:bone_block>, <mekanism:ingot:1>, <nuclearcraft:gem:2>]);
 scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<actuallyadditions:item_misc:24>, 100000, 1000000, <actuallyadditions:item_misc:23>, [<actuallyadditions:item_canola_seed>, <actuallyadditions:item_canola_seed>, <actuallyadditions:item_canola_seed>, <actuallyadditions:item_canola_seed>]);
+
+# [Block of Crystaltine] from [Glitch Infused Ingot][+4]
+mods.extendedcrafting.TableCrafting.remove(<extendedcrafting:material:24>);
+craft.make(<extendedcrafting:storage:3>, ["pretty",
+  "             ",
+  "■ ▬ ▬ ▬ ▬ ▬ ■",
+  "■ - ▄ ▄ ▄ - ■",
+  "■ - ▄ § ▄ - ■",
+  "■ - ▄ ▄ ▄ - ■",
+  "■ ▬ ▬ ▬ ▬ ▬ ■"], {
+  "■": <ore:blockDiamond>,                     # Block of Diamond
+  "▄": <ore:blockSilver>,                      # Block of Silver
+  "§": <deepmoblearning:glitch_infused_ingot>, # Glitch Infused Ingot
+  "▬": <ore:ingotMithril>,                     # Mana Infused Ingot
+  "-": <ore:ingotEvilMetal>,                   # Evil Infused Iron Ingot
+});

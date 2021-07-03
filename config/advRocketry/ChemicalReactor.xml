@@ -147,6 +147,17 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Ammonia] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<fluidStack>nitrogen 100</fluidStack>
+			<fluidStack>hydrogen 300</fluidStack>
+		</input>
+		<output>
+			<fluidStack>ammonia 2000</fluidStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Construction Foam] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -210,6 +221,17 @@
 		</input>
 		<output>
 			<fluidStack>sand 1000</fluidStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Sulfuric Acid] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>dustSulfur 60</oreDict>
+			<fluidStack>oxygen 3000</fluidStack>
+		</input>
+		<output>
+			<fluidStack>sulfuric_acid 6000</fluidStack>
 		</output>
 	</Recipe>
 </Recipes>

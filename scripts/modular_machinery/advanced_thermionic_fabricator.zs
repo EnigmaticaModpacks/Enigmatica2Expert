@@ -149,7 +149,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_machine_frame", m
 	.addItemInput(<rftools:machine_frame>)
 	.addItemInput(<immersiveengineering:metal_decoration0:5>)
 	.addItemInput(<actuallyadditions:block_misc:9>)
-	.addItemInput(<teslacorelib:machine_case>)
+	.addItemInput(<advancedrocketry:basalt>)
 	.addItemInput(<actuallyadditions:item_crystal:5> * 4)
 	.build();
 	

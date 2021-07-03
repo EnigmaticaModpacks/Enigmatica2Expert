@@ -14,7 +14,7 @@ import scripts.craft.grid.Grid;
 	[<ore:ingotElectricalSteel>, <industrialforegoing:mob_relocator>, <ore:ingotElectricalSteel>]]);
 
 # Charged Draconium
-	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconium_block:1> * 2, 2000000000, 100000000, <draconicevolution:draconium_block>, [<draconicevolution:draconium_block>]);
+	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconium_block:1> * 2, 2000000000, 50000000, <draconicevolution:draconium_block>, [<draconicevolution:draconium_block>]);
 
 # Crystal Binder
 	recipes.remove(<draconicevolution:crystal_binder>);
@@ -41,9 +41,9 @@ import scripts.craft.grid.Grid;
 	recipes.remove(<draconicevolution:draconic_core>);
 	recipes.addShapedMirrored("Draconic Core", 
 	<draconicevolution:draconic_core>, 
-	[[<ore:blockDraconium>, <ore:ingotBlutonium>, <ore:blockDraconium>],
+	[[<ore:gearDraconium>, <ore:ingotBlutonium>, <ore:gearDraconium>],
 	[<ore:crystalLitherite>, <gendustry:genetics_processor>, <ore:crystalLitherite>], 
-	[<ore:plateElite>, <draconicevolution:dislocator>, <ore:plateElite>]]);
+	[<ore:plateElite>, <draconicevolution:energy_crystal>, <ore:plateElite>]]);
 
 # Wyvern Core
 	recipes.remove(<draconicevolution:wyvern_core>);
@@ -91,12 +91,11 @@ import scripts.craft.grid.Grid;
 	[<ore:dustRedstone>,<randomthings:advancedredstonetorch_on>,<ore:dustRedstone>],
 	[<minecraft:stone_slab>,<minecraft:stone_slab>,<minecraft:stone_slab>]]);
 	
-# Basic Energy Relay Crystal
-	recipes.remove(<draconicevolution:energy_crystal>);
-	recipes.addShapedMirrored("Basic Energy Relay Crystal", <draconicevolution:energy_crystal>*4,
-	[[<industrialforegoing:laser_lens:11>,<actuallyadditions:block_laser_relay_extreme>,<industrialforegoing:laser_lens:11>],
-	[<enderio:item_alloy_ingot>,<ore:crystalAstralAny>,<enderio:item_alloy_ingot>],
-	[<industrialforegoing:laser_lens:11>,<actuallyadditions:block_laser_relay_extreme>,<industrialforegoing:laser_lens:11>]]);
+# [Basic Energy Relay Crystal] from [Fluix Steel Ingot][+3]
+recipes.removeShaped(<draconicevolution:energy_crystal>);
+scripts.wrap.bloodmagic.AlchemyTable.addRecipe(<draconicevolution:energy_crystal> * 4, [
+	<astralsorcery:blocklens>, <thermalfoundation:material:136>, <bigreactors:ingotcyanite>, <threng:material>,
+], 2000, 200, 2);
 	
 # Basic Wireless Energy Crystal
 	recipes.remove(<draconicevolution:energy_crystal:6>);
@@ -105,9 +104,16 @@ import scripts.craft.grid.Grid;
 	[<appliedenergistics2:material:41>,<draconicevolution:energy_crystal:0>,<appliedenergistics2:material:41>],
 	[<ore:dustAstralStarmetal>,<extrautils2:powertransmitter>,<ore:dustAstralStarmetal>]]);
 
-# Dislocator
-	recipes.remove(<draconicevolution:dislocator>);
-	makeEx(<draconicevolution:dislocator>, [[null, <rftools:infused_enderpearl>, null],[<mekanism:portableteleporter>, <randomthings:flootoken>, <mekanism:portableteleporter>], [null, <rftools:infused_enderpearl>, null]]);
+# [Dislocator] from [Chorus Glass][+3]
+craft.remake(<draconicevolution:dislocator>, ["pretty",
+  "F I F",
+  "T ■ T",
+  "F I F"], {
+  "■": <ore:blockGlass>,             # Chorus Glass
+  "T": <mekanism:teleportationcore>, # Teleportation Core
+  "F": <randomthings:flootoken>,     # Floo Token
+  "I": <rftools:infused_enderpearl>, # Infused Enderpearl
+});
 
 
 # Draconium chest easier

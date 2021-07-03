@@ -99,12 +99,18 @@ craft.make(<thermalexpansion:frame:130>, ["pretty",
 	<mekanism:controlcircuit:3>, <thermalfoundation:material:295>, <environmentaltech:litherite_crystal>,
 	<nuclearcraft:part:6>, <nuclearcraft:gem:1>]);
 	
-# Mana Dust
-	recipes.addShapedMirrored("Mana Dust", 
-	<thermalfoundation:material:1028> * 2, 
-	[[<ore:manaDiamond>, <ore:dustCryotheum>, <ore:manaDiamond>],
-	[<ore:dustPyrotheum>, <ore:powderMana>, <ore:dustAerotheum>], 
-	[<ore:manaDiamond>, <ore:dustPetrotheum>, <ore:manaDiamond>]]);
+# [Mana Dust*2] from [Mana Powder][+5]
+craft.remake(<thermalfoundation:material:1028> * 2, ["pretty",
+  "◊ ♠ ◊",
+  "∆ M ♣",
+  "◊ ▲ ◊"], {
+  "♠": <ore:dustAerotheum>,  # Aerotheum Dust
+  "▲": <ore:dustPyrotheum>,  # Pyrotheum Dust
+  "♣": <ore:dustPetrotheum>, # Petrotheum Dust
+  "∆": <ore:dustCryotheum>,  # Cryotheum Dust
+  "◊": <ore:gemTanzanite>,   # Tanzanite
+  "M": <ore:powderMana>,     # Mana Powder
+});
 
 # Centrifugal Seperator
 	recipes.remove(<thermalexpansion:machine:10>);
@@ -135,7 +141,7 @@ craft.make(<thermalexpansion:frame:130>, ["pretty",
 	scripts.wrap.forestry.ThermionicFabricator.addCast(<thermalexpansion:frame> * 2, 
 	[[<actuallyadditions:item_crystal:5>, <rftools:machine_frame>, <actuallyadditions:item_crystal:5>],
 	[<immersiveengineering:metal_decoration0:5>, <thermalexpansion:frame:64>, <actuallyadditions:block_misc:9>], 
-	[<actuallyadditions:item_crystal:5>, <teslacorelib:machine_case>, <actuallyadditions:item_crystal:5>]], 
+	[<actuallyadditions:item_crystal:5>, <advancedrocketry:basalt>, <actuallyadditions:item_crystal:5>]], 
 	<liquid:glass> * 6000);
 	
 # Removing craftable Bronze 
@@ -167,7 +173,7 @@ craft.make(<thermalexpansion:frame:130>, ["pretty",
 
 # Signalum Ingots
 	scripts.wrap.thermalexpansion.Transposer.addFillRecipe(<thermalfoundation:material:165>, <nuclearcraft:alloy:7>, <liquid:redstone> * 250, 5000);
-	scripts.wrap.thermalexpansion.InductionSmelter.addRecipe(<nuclearcraft:alloy:7> * 4, <thermalfoundation:material:130>, <thermalfoundation:material:128> * 3, 15000);
+	scripts.wrap.thermalexpansion.InductionSmelter.addRecipe(<nuclearcraft:alloy:7> * 4, <thermalfoundation:material:130> * 3, <thermalfoundation:material:128>, 15000);
 
 # Lumium Ingots
 	scripts.wrap.thermalexpansion.Transposer.addFillRecipe(<thermalfoundation:material:166>, <nuclearcraft:alloy:8>, <liquid:glowstone> * 250, 5000);
@@ -690,3 +696,18 @@ craft.remake(<thermalexpansion:machine:6>, ["pretty",
   "◙": <thermalexpansion:frame>,         # Machine Frame
   "▬": <ore:ingotBrickNetherGlazed>,     # Nethercotta
 });
+
+# Make Signalum ask for 3 Silver and 1 Copper
+# (was 3 copper 1 silver)
+mods.tconstruct.Alloy.removeRecipe(<liquid:signalum>);
+scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:signalum> * 144, [<liquid:silver> * 108, <liquid:copper> * 36,  <liquid:redstone> * 250]);
+craft.reshapeless(<thermalfoundation:material:101> * 4, "▲▲▲♠♥", {
+  "▲": <ore:dustSilver>, # Pulverized Silver
+  "♠": <ore:dustCopper>, # Pulverized Copper
+  "♥": Bucket("redstone"), # Destabilized Redstone Bucket
+});
+mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(<nuclearcraft:alloy:7> * 4);
+scripts.process.alloy([<ore:ingotSilver> * 3, <ore:ingotCopper>], <nuclearcraft:alloy:7> * 4, "only: alloyFurnace induction");
+
+# Stone Gear recipe
+scripts.wrap.thermalexpansion.Compactor.addGearRecipe(<thermalfoundation:material:23>, <minecraft:cobblestone:*> * 4, 16000);

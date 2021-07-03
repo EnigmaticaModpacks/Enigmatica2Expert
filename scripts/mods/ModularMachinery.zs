@@ -44,13 +44,13 @@ import crafttweaker.item.IItemStack as IItemStack;
         [<modularmachinery:blockcasing>, <mysticalagriculture:growth_accelerator>, <modularmachinery:blockcasing>]]
 	);
 
-# Machine Vent
-    recipes.remove(<modularmachinery:blockcasing:1>);
-    recipes.addShapedMirrored("Machine Vent", 
-    <modularmachinery:blockcasing:1> * 2, 
-    [[<ic2:overclocked_heat_vent>, <advancedrocketry:pipesealer>, <ic2:overclocked_heat_vent>],
-    [<modularmachinery:blockcasing>, <mekanismgenerators:generator:12>, <modularmachinery:blockcasing>], 
-    [<ic2:overclocked_heat_vent>, <modularmachinery:blockcasing>, <ic2:overclocked_heat_vent>]]);
+# [Machine Vent] from [Machine Casing][+1]
+craft.remake(<modularmachinery:blockcasing:1>, [
+    "T⌂T"], {
+    "⌂": <modularmachinery:blockcasing>,    # Machine Casing
+    "T": <mekanismgenerators:turbineblade>, # Turbine Blade
+});
+
 
 # [Machine Controller] from [Machine Frame][+4]
 craft.remake(<modularmachinery:blockcontroller>, ["pretty",

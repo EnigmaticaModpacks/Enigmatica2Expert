@@ -54,4 +54,51 @@
 			<itemStack>advancedrocketry:itemcircuitplate;2</itemStack>
 		</output>
 	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Elite Plating] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>plateLead 12</oreDict>
+			<oreDict>dustCrystalBinder 32</oreDict>
+			<oreDict>ingotUranium238 32</oreDict>
+			<oreDict>ingotTough 32</oreDict>
+		</input>
+		<output>
+			<itemStack>nuclearcraft:part 8 3</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [DU Plating] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>plateLead 12</oreDict>
+			<oreDict>ingotUranium238 32</oreDict>
+			<oreDict>ingotTough 32</oreDict>
+		</input>
+		<output>
+			<itemStack>nuclearcraft:part 8 2</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Advanced Plating] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>plateLead 12</oreDict>
+			<oreDict>ingotTough 32</oreDict>
+		</input>
+		<output>
+			<itemStack>nuclearcraft:part 8 1</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Basic Plating] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>plateLead 12</oreDict>
+			<oreDict>ingotGraphite 16</oreDict>
+		</input>
+		<output>
+			<itemStack>nuclearcraft:part 8 0</itemStack>
+		</output>
+	</Recipe>
 </Recipes>

@@ -101,12 +101,18 @@ function fluidDict(ins as string[]) {
 	[<extrautils2:drum:3>, <botania:blackholetalisman>.reuse(), <extrautils2:drum:3>], 
 	[<ore:sheetSteel>, <mekanism:plasticblock:8>, <ore:sheetSteel>]]);
 
-# Black Hole Unit
-	recipes.remove(<industrialforegoing:black_hole_unit>);
-	recipes.addShapedMirrored("Black Hole Unit", <industrialforegoing:black_hole_unit>, 
-	[[<ore:itemRubber>, <actuallyadditions:item_crystal_empowered:3>, <ore:itemRubber>],
-	[<teslacorelib:machine_case>, <advancedrocketry:ic:3>, <teslacorelib:machine_case>], 
-	[<mekanism:plasticblock:8>, <mekanism:basicblock:6>.withTag({tier: 3})|<mekanism:basicblock:6>.withTag({tier: 3, mekData: {itemCount: 0}}), <mekanism:plasticblock:8>]]);
+# [Black Hole Unit] from [Machine Case][+4]
+recipes.removeShaped(<industrialforegoing:black_hole_unit>);
+craft.make(<industrialforegoing:black_hole_unit>, ["pretty",
+  "R * R",
+  "R M R",
+  "■ U ■"], {
+  "■": <mekanism:plasticblock:*>,   # Grey Plastic Block
+  "R": <ore:itemRubber>,            # Plastic
+  "U": <mekanism:basicblock:6>.withTag({tier: 3}), # Ultimate Bin
+  "*": <actuallyadditions:item_crystal_empowered:3>, # Empowered Void Crystal
+  "M": <teslacorelib:machine_case>, # Machine Case
+});
 
 # Black Hole Controller
 	recipes.remove(<industrialforegoing:black_hole_controller_reworked>);

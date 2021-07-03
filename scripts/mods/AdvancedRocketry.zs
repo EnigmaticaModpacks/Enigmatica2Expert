@@ -1,6 +1,9 @@
 import crafttweaker.item.IItemStack as IItemStack;
 #modloaded advancedrocketry
 
+# Rename basalt as it not oredicted and have different uses
+<advancedrocketry:basalt>.displayName = game.localize("e2ee.tile.basalt_sediment");
+
 # Vulpes Library Silicon dust Manufactory* Recipe Removal (Credit TheShadoWZYE2)
 	mods.nuclearcraft.manufactory.removeRecipeWithOutput(<libvulpes:productdust:3>);
 	
@@ -129,7 +132,7 @@ craft.remake(<advancedrocketry:liquidtank>, ["pretty",
 recipes.addShapeless("Clearing AdvRock Tank", <advancedrocketry:liquidtank>, [<advancedrocketry:liquidtank>]);
 
 # Mushrooms as energy providers
-mods.thermalexpansion.EnervationDynamo.addFuel(<advancedrocketry:electricmushroom>, 60000000);
+mods.thermalexpansion.EnervationDynamo.addFuel(<advancedrocketry:electricmushroom>, 90000000);
 
 # Crystalls recycling
 val CLN = <ore:nuggetCrystaltine>.firstItem;
@@ -185,3 +188,176 @@ scripts.process.alloy([<ore:ingotManasteel>, <ore:ingotElvenElementium>, <ore:in
 scripts.process.alloy([<ore:ingotIridium>, <ore:ingotOsmium>                                                            ], <ore:ingotOsmiridium>.firstItem * 4,        "only: AdvRockArc");
 scripts.process.alloy([<ore:blockDiamond>, <ore:blockRedstone> * 5                                                      ], <ore:blockCrystalFlux>.firstItem,           "only: AdvRockArc");
 scripts.process.alloy([<ore:ingotMagnesium> * 3, <ore:ingotBoron> * 6                                                   ], <ore:ingotMagnesiumDiboride>.firstItem * 9, "only: AdvRockArc");
+
+# [Space Suit Helmet] from [Glass][+3]
+recipes.removeShaped(<advancedrocketry:spacehelmet>);
+craft.make(<advancedrocketry:spacehelmet>, ["pretty",
+  "□ ╱ □",
+  "╱ ■ ╱",
+  "w w w"], {
+  "■": <ore:blockGlass>, # Glass
+  "╱": <ore:stickTitanium>, # Titanium Rod
+  "□": <ore:plateTitanium>, # Titanium Plate
+  "w": <ore:woolPrime>, # Wool (Merino, White)
+});
+
+# [Space Suit Chest-Piece] from [Titanium Plate][+3]
+recipes.removeShaped(<advancedrocketry:spacechestplate>);
+craft.make(<advancedrocketry:spacechestplate>, ["pretty",
+  "w ╱ w",
+  "w □ w",
+  "w S w"], {
+  "□": <ore:plateTitanium>, # Titanium Plate
+  "╱": <ore:stickTitanium>, # Titanium Rod
+  "S": <ore:fanSteel>,      # Steel Fan
+  "w": <ore:woolPrime>, # Wool (Merino, White)
+});
+
+# [Space Suit Leggings] from [Titanium Rod][+1]
+recipes.removeShaped(<advancedrocketry:spaceleggings>);
+craft.make(<advancedrocketry:spaceleggings>, ["pretty",
+  "w ╱ w",
+  "w   w",
+  "w   w"], {
+  "╱": <ore:stickTitanium>, # Titanium Rod
+  "w": <ore:woolPrime>, # Wool (Merino, White)
+});
+
+# [Space Suit Boots] from [Titanium Rod][+2]
+recipes.removeShaped(<advancedrocketry:spaceboots>);
+craft.make(<advancedrocketry:spaceboots>, ["pretty",
+  "  ╱  ",
+  "w   w",
+  "□   □"], {
+  "□": <ore:plateTitanium>, # Titanium Plate
+  "╱": <ore:stickTitanium>, # Titanium Rod
+  "w": <ore:woolPrime>, # Wool (Merino, White)
+});
+
+# [Suit Workstation] from [Crafting Table][+3]
+recipes.removeShaped(<advancedrocketry:suitworkstation>);
+craft.make(<advancedrocketry:suitworkstation>, ["pretty",
+  "* * *",
+  "3 w 3",
+  "■ ■ ■"], {
+  "■": <ore:blockTitanium>, # Titanium Block
+  "3": <opencomputers:print>, # 3D Print
+  "w": <ore:workbench>, # Crafting Table
+  "*": <ore:crystalEmeraldic>, # Emeradic Crystal
+});
+
+# [Low Pressure Tank] from [Titanium Plate][+2]
+craft.make(<advancedrocketry:pressuretank>, ["pretty",
+  "п ◘ п",
+  "□ ◘ □",
+  "□ ◘ □"], {
+  "□": <ore:plateIron>,     # Iron Plate
+  "◘": <ic2:fluid_cell>.withTag({Fluid: {FluidName: "steam", Amount: 1000}}), # Universal Fluid Cell
+  "п": <ore:plateTitanium>, # Titanium Plate
+});
+
+# [Pressure Tank] from [Titanium Plate][+2]
+craft.make(<advancedrocketry:pressuretank:1>, ["pretty",
+  "п ◘ п",
+  "□ ◘ □",
+  "□ ◘ □"], {
+  "□": <ore:plateSteel>,    # Steel Plate
+  "◘": <ic2:fluid_cell>.withTag({Fluid: {FluidName: "ic2superheated_steam", Amount: 1000}}), # Universal Fluid Cell
+  "п": <ore:plateTitanium>, # Titanium Plate
+});
+
+# [High Pressure Tank] from [Titanium Plate][+2]
+craft.make(<advancedrocketry:pressuretank:2>, ["pretty",
+  "п ◘ п",
+  "□ ◘ □",
+  "□ ◘ □"], {
+  "□": <ore:plateAluminium>, # Aluminum Plate
+  "◘": <ic2:fluid_cell>.withTag({Fluid: {FluidName: "high_pressure_steam", Amount: 1000}}), # Universal Fluid Cell
+  "п": <ore:plateTitanium>,                        # Titanium Plate
+});
+
+# [Super High Pressure Tank] from [Titanium Plate][+2]
+craft.make(<advancedrocketry:pressuretank:3>, ["pretty",
+  "п ◘ п",
+  "□ ◘ □",
+  "□ ◘ □"], {
+  "□": <ore:plateTitaniumIridium>, # Titanium Iridium Alloy Plate
+  "◘": <ic2:fluid_cell>.withTag({Fluid: {FluidName: "preheated_water", Amount: 1000}}), # Universal Fluid Cell
+  "п": <ore:plateTitanium>,        # Titanium Plate
+});
+
+# [Hover Upgrade] from [Control Circuit Board][+3]
+craft.make(<advancedrocketry:itemupgrade>, ["pretty",
+  "  o  ",
+  "□ C □",
+  "* * *"], {
+  "□": <ore:plateTitanium>,        # Titanium Plate
+  "C": <advancedrocketry:ic:3>,    # Control Circuit Board
+  "*": <ore:crystalEmeraldic>,     # Emeradic Crystal
+  "o": <advgenerators:controller>, # Control Circuit
+});
+
+# [Flight Speed Control Upgrade] from [Control Circuit Board][+3]
+craft.make(<advancedrocketry:itemupgrade:1>, ["pretty",
+  "  M  ",
+  "□ C □",
+  "* * *"], {
+  "□": <ore:plateTitanium>,              # Titanium Plate
+  "C": <advancedrocketry:ic:3>,          # Control Circuit Board
+  "*": <ore:crystalEmeraldic>,           # Emeradic Crystal
+  "M": <modularmachinery:blockcasing:5>, # Machine Circuitry
+});
+
+# [Bionic Leg Upgrade] from [Control Circuit][+2]
+craft.make(<advancedrocketry:itemupgrade:2>, [
+  "■",
+  "C",
+  "F"], {
+  "■": <ore:blockMotor>,           # Motor
+  "C": <advgenerators:controller>, # Control Circuit
+  "F": <ore:foodFrograw>,          # Frog Leg
+});
+
+# [Padded Landing Boots] from [Control Circuit][+2]
+craft.make(<advancedrocketry:itemupgrade:3>, [
+  "RCw"], {
+  "R": <ic2:rubber_boots>.anyDamage(), # Rubber Boots
+  "C": <advgenerators:controller>,     # Control Circuit
+  "w": <ore:woolPrime>, # Wool (Merino, White)
+});
+
+# [Anti-Fog Visor] from [Traveller's Goggles (Base)][+1]
+craft.shapeless(<advancedrocketry:itemupgrade:4>, 
+  "CT", {
+  "C": <advgenerators:controller>,   # Control Circuit
+  "T": <conarm:travel_goggles_base>, # Traveller's Goggles (Base)
+});
+
+# [Beacon Finder] from [Engineer's Goggles][+1]
+craft.shapeless(<advancedrocketry:beaconfinder>, 
+  "CE", {
+  "C": <advgenerators:controller>,                # Control Circuit
+  "E": <actuallyadditions:item_engineer_goggles>, # Engineer's Goggles
+});
+
+# [Jet Pack] from [Cobweb][+3]
+craft.remake(<advancedrocketry:jetpack>, ["pretty",
+  "L C L",
+  "╱ C ╱",
+  "▲   ▲"], {
+  "╱": <ore:stickTitanium>,             # Titanium Rod
+  "▲": <ore:dustPyrotheum>,             # Pyrotheum Dust
+  "C": <minecraft:web>,                 # Cobweb
+  "L": <advancedrocketry:pressuretank>, # Low Pressure Tank
+});
+
+# [Atmosphere Analyzer] from [User Interface][+1]
+craft.shapeless(<advancedrocketry:atmanalyser>, 
+  "BU", {
+  "B": <ore:itemBattery>,       # Small Battery
+  "U": <advancedrocketry:misc>, # User Interface
+});
+
+# Some Alts with advanced machines
+scripts.processUtils.avdRockXmlRecipe("ChemicalReactor", [<ore:dustSulfur> * 60], [<fluid:oxygen> * 3000], null, [<fluid:sulfuric_acid> * 6000]);
+scripts.processUtils.avdRockXmlRecipe("Crystallizer", [<ore:dustFluorite> * 6], [<fluid:sulfuric_acid> * 6000], [<nuclearcraft:compound> * 6], null);

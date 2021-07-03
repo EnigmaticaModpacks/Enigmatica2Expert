@@ -65,4 +65,26 @@
 			<itemStack>astralsorcery:blockgemcrystals 1 4</itemStack>
 		</output>
 	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Calcium Sulfate] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>dustFluorite 6</oreDict>
+			<fluidStack>sulfuric_acid 6000</fluidStack>
+		</input>
+		<output>
+			<itemStack>nuclearcraft:compound 6 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Cubic Boron Nitride] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>dustBoron 5</oreDict>
+			<fluidStack>ammonia 5000</fluidStack>
+		</input>
+		<output>
+			<itemStack>nuclearcraft:gem 10 1</itemStack>
+		</output>
+	</Recipe>
 </Recipes>

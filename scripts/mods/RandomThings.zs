@@ -27,13 +27,16 @@ scripts.wrap.inworldcrafting.FluidToItem.transform(<randomthings:ingredient:9> *
 
 # Floo dust
 remakeEx(<randomthings:ingredient:7>*8, [
-	[<ore:enderpearl>, <ore:alloyBasic>, null], 
+	[<ore:enderpearl>, <ore:dustRedstone>, null], 
 	[<ore:gunpowder>, <ore:cropBean>, null]
 ]);
 recipes.addShaped("Floo Dust 64", <randomthings:ingredient:7>*64, [
-	[<appliedenergistics2:material:46>, <ore:alloyBasic>, null], 
+	[<appliedenergistics2:material:46>, <ore:dustRedstone>, null], 
 	[<ore:gunpowder>, <ore:cropBean>, null]
 ]);
+
+# Floo Token cheaper alt
+scripts.process.compress(<randomthings:ingredient:7> * 3, <randomthings:flootoken>, "No Exceptions");
 
 # Lubricient
 craft.reshapeless(<randomthings:ingredient:6> * 4, 'ABC', {
