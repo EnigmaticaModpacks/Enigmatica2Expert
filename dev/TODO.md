@@ -1,9 +1,9 @@
-
-
 ## 📦 Items of Interest
+
 Items that should have more uses:
 
 ### Tier 1
+
 ![](https://git.io/JOPez "Dead Bush")
 ![](https://git.io/JtJkX "Black Quartz")
 ![](https://git.io/Jtjeu "Amber Block")
@@ -13,6 +13,7 @@ Items that should have more uses:
 ![](https://git.io/JcCWr "Magical Planks")
 
 ### Tier 2
+
 ![](https://git.io/JOijc "Tanzanite")
 ![](https://git.io/JLhj4 "Topaz")
 ![](https://git.io/JOijC "Chorus Fruit")
@@ -26,8 +27,10 @@ Items that should have more uses:
 ![](https://git.io/JnN1t "Sun Crystal")
 ![](https://git.io/JOijn "Solidified Experience")
 ![](https://git.io/JLhhI "Compressed Ender")
+![](https://git.io/JOGgk "Propolis")
 
 ### Tier 3
+
 ![](https://git.io/JLjsf "Basalt Sediment")
 ![](https://git.io/JLhhf "Energized Clathrate")
 ![](https://git.io/JLhph "Destabilized Clathrate")
@@ -35,8 +38,10 @@ Items that should have more uses:
 ![](https://git.io/JLhpN "Titanium Aluminide Sheet")
 ![](https://git.io/JGGjO "Silicon Boule")
 ![](https://git.io/JGGhx "Overworldian Matter")
+[Huge Stalk]
 
 ### Tier 4
+
 ![](https://git.io/JcBSs "Tiny Chaos Fragment")
 ![](https://git.io/JLhhe "Oxidized Ferric Sand")
 ![](https://git.io/JLhhs "Vitrified Sand")
@@ -45,8 +50,10 @@ Items that should have more uses:
 ![](https://git.io/JLhpx "Charged Draconium Block")
 ![](https://git.io/JLhhW "Blue Quartz")
 ![](https://git.io/JnzzI "Glitch Infused Ingot")
+![](https://git.io/JCqV9 "Particle Generator")
 
 ## 💧 Liquids of Interest
+
 Liquids that should have more uses:
 
 ![](https://git.io/J3p4b "Amber Tank")
@@ -67,7 +74,6 @@ Liquids that should have more uses:
 ![](https://git.io/J3hV0 "Crushing Block")
 ![](https://git.io/J3hVR "TNT")
 ![](https://git.io/J3hVB "Imbuing Station")
-![](https://git.io/J3hVr "Thermionic Fabricator")
 ![](https://git.io/J3hVU "Compost")
 ![](https://git.io/JsegO "Drying Basin")
 ![](https://git.io/Jsw4m "Miniaturization Field Projector")
@@ -78,22 +84,62 @@ Liquids that should have more uses:
 ![](https://git.io/JZLjg "Alchemy Table")
 ![](https://git.io/J3hVE "Wooden Barrel") milking
 
+---
 
-----------------------------------------------------------------------------
-----------------------------------------------------------------------------
+---
 
 # TODO
 
-- [ ] ✏️ ![](https://git.io/Jc4mR "Benitoite")![](https://git.io/Jc4mB "Anglesite") Craft as ![](https://git.io/Jc4m8 "Benitoite Ore")![](https://git.io/Jc4m4 "Anglesite Ore") and then benificate
-- [ ] ✏️ ![](https://git.io/Jc4Qj "Basic Lithium Ion Battery") Cheaper, add to book
 - [ ] ✏️ ![](https://git.io/Jc47v "Miner's Tree Sapling") and other trees add craft
+- [x] ✏️ ![](https://git.io/JcCHV "Reinforced Large Drum") remove ![](https://git.io/JLhhW "Blue Quartz")
+- [x] ✏️ ![](https://git.io/JCt0B "Ultimate Essence") Fix tier to `6`
+- [x] ✏️ ![](https://git.io/JCt0E "Infinity Drill") cheaper
+- [ ] ✏️ ![](https://git.io/JCt0l "Energized Smelter") fix removed craft
+- [x] ✏️ ![](https://git.io/JCqVy "Star of PSI") Craft
+- [x] ✏️ ![](https://git.io/JCt0R "Creative Rod Frame") cheaper
+- [x] ✏️ ![](https://git.io/JCt0u "Lens") add to Starlight Crafting Engine
+- [x] ✏️ ![](https://git.io/JCt0W "Block of The Ultimate") Add craft
+- [x] ✏️ ![](https://git.io/JCt0z "Creative Paste Container") add cheap craft
+- [x] ✏️ ![](https://git.io/JCt02 "Advanced Bin") craft with tier installers push installers inside
+- [x] ✏️ ![](https://git.io/JCt04 "Dark Oak Chest") chisel conversions
+- [x] ✏️ ![](https://git.io/JCtgG "Flue Gas Bucket") remove from creative gas requirment
+- [x] ✏️ ![](https://git.io/JCtgs "Ultimate Seeds") Remove second craft
+- [x] ✏️ ![](https://git.io/JCtgZ "Sentient Armour Gem") Change craft from ![](https://git.io/JCt0g "Diamond Chestplate")
+- [ ] ✏️ ![](https://git.io/JcW2R "Basic Tank") harder, buff storage up to 20-30 buckets
+- [ ] ✏️ ![](https://git.io/Jcz3h "Demonically Gargantuan Drum") use in craft [Klein Flask] and make Flask harder
+- [ ] ✏️ ![](https://git.io/Jczsa "Precision Laser Etcher") Can input up to 100k RF/T
+- [x] ✏️ ![](https://git.io/Jczsx "Creative Fluid Tank") fix fluid amount
+- [x] ✏️ ![](https://git.io/JLhpD "Blasted Coal") Enrich with ![](https://git.io/J3xSJ "Syngas") ![](https://git.io/JCtzh "Gasoline Tank") ![](https://git.io/JCtge "Diesel Tank")
+- [x] ✏️ ![](https://git.io/JOGzE "Creative Modifier") cheaper
+- [x] ✏️ ![](https://git.io/JOGzF "Time in a bottle") Move all ingredients to Random Things
 - [ ] ✏️ ![](https://git.io/JOv90 "Sieve") Siften materials should be harder
 - [ ] ✏️ ![](https://git.io/JtJvo "Creative Bin") with ![](https://git.io/JcW2w "Salt")
-- [ ] ✏️ ![](https://git.io/JcW2R "Basic Tank") harder, buff storage up to 20-30 buckets
+- [ ] ✏️ [Inventory Panel Remote] Cheaper because it use a lot of fuel
+- [ ] ✏️ ![](https://git.io/JCqVS "Lithium Ion Cell") can be used to make infinity power (stackable and charging)
+- [ ] ✏️ **Omega Potion** cheaper
+- [X] ✏️ ![](https://git.io/Jc4mR "Benitoite")![](https://git.io/Jc4mB "Anglesite") Craft as ![](https://git.io/Jc4m8 "Benitoite Ore")![](https://git.io/Jc4m4 "Anglesite Ore") and then benificate
+- [x] ✏️ ![](https://git.io/Jc4Qj "Basic Lithium Ion Battery") Cheaper, add to book
+- [X] ✏️ ![](https://git.io/JCt0V "Creative Mill") cheaper
+- [x] ✏️ ![](https://git.io/JCt08 "Vain Honey Drop") -> ![](https://git.io/JcNYM "Insanium Coal") cheaper
+- [x] ✏️ ![](https://git.io/JCtzp "Red Liquid Tank")![](https://git.io/JCtzj "Dark Liquid Tank") Cheaper
+- [x] ✏️ ![](https://git.io/JcVA9 "Basic Voltaic Pile") Cheaper
+- [x] ✏️ ![](https://git.io/JcVAS "Reinforced Ender Bucket") Clearing
+- [x] ✏️ ![](https://git.io/JcVAw "Aethium") And other crystals remove from AdvRock crystals
+- [x] ✏️ ![](https://git.io/JczsZ "Containment Chalice") Use interaction as only way to achieve some high-end resources
+- [x] ✏️ ![](https://git.io/Jt8wI "Menril Sapling") Add in ![](https://git.io/JOv90 "Sieve")
+- [x] ✏️ ![](https://git.io/JtkwU "Sequoia Wood") occurances fix to fireproof too
+- [x] ✏️ [Access Proxy] harder
+- [x] ✏️ **Hydroponics** make cheaper
+- [x] ✏️ [Item Collector] fix plates in craft
 - [ ] 🍇 End Reborn: Propertly Integrate. Also the chorus guards (the white blazes) simply shouldn't be in the game
 - [ ] 🏪 Add Matter Replicator that **increase cost** of replication each operation
 - [ ] 🏪 ![](https://git.io/JcCHa "Garden Cloche") fertilizers
-- [ ] 📖 ![](https://git.io/Jsw4f "Tiny Inventory System Storage") add
+- [x] 📖 ![](https://git.io/Jsw4f "Tiny Inventory System Storage") add
+- [x] 📖 ![](https://git.io/JtTPk "Hydrator") add
+- [x] 📖 ![](https://git.io/JcVAV "Advanced Analyzer") add wait time
+- [x] 📖 ![](https://git.io/JCt0w "Mob Grinder") add
+- [ ] 📖 Trophy for each chapter
+- [ ] 📖 [Angel Ring] (0) add to Conflux
 - [ ] 🔄 Remap all **#VoidMiners** to produce not all types of ore each
 - [ ] 🔄 ![](https://git.io/J3p8B "Infinity Furnace") texture turned upsidedown
 - [ ] 🔄 ![](https://git.io/J3p88 "Ironberries") gives infinity Jump Boost effect
@@ -106,27 +152,31 @@ Liquids that should have more uses:
 - [ ] 🔄 UU requirement for a lot of things seems to be lower than what the tooltip says
 - [ ] 🔄 `for ore_entry in oreDict {` refactor code and gather in one place to speedup code
 - [ ] 🔄 Add Tip `Shift+F8 to refresh sound`
+- [ ] 🔄 NuclearCraft food add nutrition values
+- [ ] 🔄 Custom Animals drops non-cooked meat
+- [ ] 🔄 Check commits from origin 95fa2b3053123ee45de97c37d5d2f2e58cde6254
+- [ ] 🔄 Move harvest level changes to `.zs` [file](https://github.com/TCreopargh/GreedyCraft/blob/curseforge/scripts/tweaks/harvestlevel.zs)
 - [ ] 🌍 ![](https://git.io/JcW2H "Ratglove Flower") Add spawn in Ratlantis, update JER
-- [ ] 🔨 ![](https://git.io/JnzzI "Glitch Infused Ingot") add material
-- [ ] 🔨 Add **hailhydra** trait to some material
-- [ ] 🔨 Add teleportation trait. 1. Set point, 2. Break special glass-like block to teleport
 - [ ] 🔴 Remove Preston. Questionable, because still used for some blocks and i dont need to make textures
 - [ ] 🔴 Remove Spartan Shields from `armorData.zs`
-- [ ] 🔴 Remove **Open Security**
-- [ ] 🔴 Remove **Computronics**
+- [X] 🔴 Remove **Open Security**
+- [X] 🔴 Remove **Computronics**
+- [ ] 🔴 Remove **Cats And Dogs**
 - [ ] 🔵 Add **Industrial Foregoing integration** [>here<](https://docs.blamejared.com/1.12/en/Mods/Integration_Foregoing/WashingFactory/)
 - [ ] 🔵 Get use for **Immersive Tweaker**
-- [ ] 🟢 **Integrated Proxy** change recipe
 - [ ] 🟢 Add [Bansoko](https://www.curseforge.com/minecraft/mc-mods/bansoko) to rename Dank/null `.jar` so it could work with Thaumic Speedup
-- [ ] 🚧 Add automatical removing of hashed files to update them
+- [x] 🚧 Add automatical removing of hashed files to update them
 
+---
 
-----------------------------------------------------------------------------
-----------------------------------------------------------------------------
-
+---
 
 # Long-Term
 
+- [ ] ✏️ ![](https://git.io/JCt00 "Creative Harvest") add more crafts
+- [ ] 🔨 ![](https://git.io/JnzzI "Glitch Infused Ingot") add material
+- [ ] 🔨 Add **hailhydra** trait to some material
+- [ ] 🔨 Add teleportation trait. 1. Set point, 2. Break special glass-like block to teleport
 - [ ] ✏️ Add **Silicon Block**
 - [ ] ✏️ **Pefect Fuel** Summ of several best fuels. Probably bunch of drums together
 - [ ] ✏️ ![Florb (Empty)](https://git.io/JtJv9) filling (probably in Requrous Auto)
@@ -153,6 +203,7 @@ Liquids that should have more uses:
 - [ ] 🔄 Remove Automatically Achievment When logged in, there is 2-3 achievments. [Probably solution](https://github.com/TCreopargh/CraftTweakerIntegration/wiki/Advancements)
 
 ## ⚙️ Process.zs
+
 - [ ] Primal Mana in other machines (no machines accept 3 liquids yet)
 - [ ] `scripts.process` files should be rewritten to work with classes. Then:
 - [ ] Change `Exception` string to `IData`
@@ -166,35 +217,44 @@ Liquids that should have more uses:
 - [ ] Mek machines should avoid items with NBT
 
 ## ⛏️ Mining levels rework
+
 There is too much mining levels.
+
 - [ ] Higher Mining level Ore should spawn lower
-- [ ] Remove Excess Mining levels: 
+- [ ] Remove Excess Mining levels:
   1. Collapse first 7 tiers in 5, as in vanilla. (Flint, Iron, Redstone, Obsidian, Cobalt)
   2. Collapse last 7 tiers into 3. (Osgloglas, Enderium/Titanium, Supremium).
 
 ## 🧢 Capability Proxy
-- [ ] ![](https://git.io/J3xSf "Capability Proxy") Causing items to trashing. 
-  > How to reproduce: 
+
+- [ ] ![](https://git.io/J3xSf "Capability Proxy") Causing items to trashing.
+  > How to reproduce:
+  >
   > - Place Advanced Analyzer
   > - CapProxy on top
   > - Conduits inserts items in proxy
-  > - If Analyzer is full, items are destroyed  
-  > Remove mod completely if this problem persist
-  > Probably its EnderIO conduits btw. Or RequiousFracto
+  > - If Analyzer is full, items are destroyed
+  >   Remove mod completely if this problem persist
+  >   Probably its EnderIO conduits btw. Or RequiousFracto
+  >
 
 ## 🌳 CraftTree
+
 - [ ] Account Thaumcraft's aspects cost
 - [ ] Check why Lumium so pricy
 - [ ] UU Forbid ME drives to be replicable
 - [ ] UU Silicon Wafer cant be seen in UU
 
-----------------------------------------------------------------------------
-----------------------------------------------------------------------------
+---
+
+---
 
 # Unable to
 
-- [x] Buff Giant Sword
+- [X] Buff Giant Sword
   > Giant sword somehow cant be buffed with MaterialChanger mod
-- [x] ![](https://git.io/JtUEY "Heart Crystal Shard") should used to craft Morbs with mobs 
-   > Right now only 6 entities avaliable, need more
+  >
+- [X] ![](https://git.io/JtUEY "Heart Crystal Shard") should used to craft Morbs with mobs
+  > Right now only 6 entities avaliable, need more
   > Edit: Actually, its not "needed" because modpack already has a lot of spawning methods
+  >
