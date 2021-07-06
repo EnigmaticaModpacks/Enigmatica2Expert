@@ -188,26 +188,6 @@ for name in bagNames {
 	], 40, <liquid:water> * 250);
 }
 
-# [Cobweb]*16 from [Silk Wisp]
-recipes.removeByRecipeName("forestry:silk_wisp_to_web");
-craft.make(<minecraft:web> * 16, ["pretty",
-  "S   S",
-  "  S  ",
-  "S   S"], {
-  "S": <forestry:crafting_material:2>, # Silk Wisp
-});
-
-# Simplify Alviery because its feels too grindy for so low value
-# [Alveary*14] from [Impregnated Casing][+1]
-craft.remake(<forestry:alveary.plain> * 14, ["pretty",
-  "S S S",
-  "S I S",
-  "S S S"], {
-  "S": <forestry:crafting_material:6>, # Scented Paneling
-  "I": <forestry:impregnated_casing>,  # Impregnated Casing
-  remove: <forestry:alveary.plain>,    # Alveary
-});
-
 # Use OreDict recipe for impregnated stick
 mods.forestry.Carpenter.removeRecipe(<forestry:oak_stick>);
 scripts.wrap.forestry.Carpenter.addRecipe(<forestry:oak_stick> * 2, [[<ore:logWood>],[<ore:logWood>]], 40, <liquid:oliveoil> * 100);
@@ -218,21 +198,6 @@ val imprCasingGrid = Grid(["AAA","A A","AAA"], {A:<ore:logWood>}).shaped();
 mods.forestry.Carpenter.removeRecipe(<forestry:impregnated_casing>);
 scripts.wrap.forestry.Carpenter.addRecipe(<forestry:impregnated_casing>, imprCasingGrid, 40, <liquid:oliveoil> * 250);
 scripts.wrap.forestry.Carpenter.addRecipe(<forestry:impregnated_casing>, imprCasingGrid, 40, <liquid:seed.oil> * 250);
-
-# Way cheaper instead using Royal Jelly and Pollen Cluster to descrease grind
-# [Scented Paneling] from [Honeydew][+2]
-val scentPanelGrid = Grid(["pretty",
-	"  H  ",
-	"# # #",
-	"B   B"], {
-	"B": <ore:itemBeeswax>,  # Beeswax
-	"#": <ore:plankWood>,    # Oak Wood Planks
-	"H": <ore:dropHoneydew>, # Honeydew
-}).shaped();
-
-mods.forestry.Carpenter.removeRecipe(<forestry:crafting_material:6>);
-scripts.wrap.forestry.Carpenter.addRecipe(<forestry:crafting_material:6>, scentPanelGrid, 40, <liquid:for.honey> * 500);
-scripts.wrap.forestry.Carpenter.addRecipe(<forestry:crafting_material:6>, scentPanelGrid, 40, <liquid:honey>     * 500);
 
 <forestry:wax_cast>.maxDamage = 32;
 
@@ -245,6 +210,6 @@ craft.remake(<requious:adv_bee_analyzer>, ["pretty",
   "t": <forestry:propolis:1>,          # Sticky Propolis
 });
 
-# Just remake recipe, because different propolis wont actually work
+# Remake recipe, because original recipe cant actually accept any propolis (but shows any)
 recipes.remove(<forestry:bituminous_peat>);
 recipes.addShaped("forestry_bituminous_peat", <forestry:bituminous_peat>, [[null, <ore:dustAsh>, null], [<forestry:peat:*>, <forestry:propolis:*>, <forestry:peat:*>], [null, <ore:dustAsh>, null]]);

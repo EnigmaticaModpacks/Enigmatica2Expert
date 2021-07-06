@@ -160,6 +160,9 @@ for item in coals {
 
 # Remove Ender Pearl Melting (to remove the ability to alloy Enderium)
 	mods.tconstruct.Melting.removeRecipe(<liquid:ender>);
+
+# Missed melt recipe for Block Of Ender Pearls
+scripts.process.melt(<actuallyadditions:block_misc:6>, <liquid:ender> * 1000, "Except: Smeltery");
 	
 # Gear Cast
 	scripts.wrap.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <exnihilocreatio:item_material:7>, <liquid:gold>, 288, true);
@@ -384,6 +387,9 @@ mods.nuclearcraft.ingot_former.addRecipe([<liquid:infinity_metal>*144, <avaritia
 utils.clearFluid(<tconstruct:seared_tank:0>);
 utils.clearFluid(<tconstruct:seared_tank:1>);
 
+########################################################################################
+# Chest with all avaliable patterns
+
 # generate all possible patterns
 var dataList_allPatterns = [] as IData;
 var k = 0 as byte;
@@ -401,7 +407,6 @@ for item in loadedMods["tconstruct"].items {
 	k += 1;
 }
 
-# Chest with all avaliable patterns
 # [Pattern_Chest] from [Oak_Chest][+4]
 recipes.removeByRecipeName("tconstruct:tools/table/chest/pattern");
 craft.make(<tconstruct:tooltables:4>.withTag({
@@ -417,6 +422,7 @@ craft.make(<tconstruct:tooltables:4>.withTag({
   "c": <ore:chest>,          # Oak Chest
   "M": <conarm:book>         # Materials and You - Armory Addendum
 });
+########################################################################################
 
 # [Firewood] from [Pahoehoe_Lava_Bucket][+2]
 craft.remake(<tconstruct:firewood:1>, ["pretty",

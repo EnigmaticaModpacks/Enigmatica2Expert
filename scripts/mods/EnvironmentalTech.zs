@@ -73,7 +73,6 @@ craft.remake(<environmentaltech:diode> * 2, ["pretty",
   "☼": <actuallyadditions:block_crystal_empowered:3>, # Empowered Void Crystal Block
   "M": <ore:gearMithril>,              # Mana Infused Gear
   "Ϟ": <thermalexpansion:frame:128>,   # Energy Cell Frame
-  remove: <environmentaltech:diode>,   # Diode
 });
 
 # Litherite

@@ -8,5 +8,4 @@ craft.remake(<fluxnetworks:fluxcore> * 2, ["pretty",
   A: <ore:clathrateEnder>,
   B: <fluxnetworks:flux>,
   C: <fluxnetworks:fluxcore>,
-  remove: <fluxnetworks:fluxcore>
   });

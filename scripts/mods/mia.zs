@@ -11,5 +11,4 @@ craft.remake(<mia:armored_glass> * 4, ["pretty",
   "□ R □"], {
   "□": <ore:plateSilicon>,     # Silicon Plate
   "R": <ore:myrmexResinGlass>, # Desert Myrmex Resin Glass
-  remove: <mia:armored_glass>,
 });

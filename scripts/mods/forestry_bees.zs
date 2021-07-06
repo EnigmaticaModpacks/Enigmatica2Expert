@@ -53,6 +53,14 @@ for input,output in {
 recipes.removeByRecipeName("forestry:silk_to_string");
 recipes.addShapeless("silk to string", <minecraft:string> * 32, [<forestry:crafting_material:2>]);
 
+# [Cobweb]*16 from [Silk Wisp]
+recipes.removeByRecipeName("forestry:silk_wisp_to_web");
+craft.make(<minecraft:web> * 16, ["pretty",
+  "S   S",
+  "  S  ",
+  "S   S"], {
+  "S": <forestry:crafting_material:2>, # Silk Wisp
+});
 
 # Buff Pulsating mesh output
 mods.forestry.Carpenter.removeRecipe(<minecraft:ender_pearl>);
@@ -69,6 +77,30 @@ craft.make(<tconstruct:nuggets:3> * 3, ["pretty",
   "P": <forestry:propolis:*>, # Propolis
   "o": <forestry:pollen>      # Pollen Cluster
 });
+
+# Simplify Alviery because its feels too grindy for so low value
+# [Alveary*14] from [Impregnated Casing][+1]
+craft.remake(<forestry:alveary.plain> * 14, ["pretty",
+  "S S S",
+  "S I S",
+  "S S S"], {
+  "S": <forestry:crafting_material:6>, # Scented Paneling
+  "I": <forestry:impregnated_casing>,  # Impregnated Casing
+});
+
+# Way cheaper instead using Royal Jelly and Pollen Cluster to descrease grind
+# [Scented Paneling] from [Honeydew][+2]
+val scentPanelGrid = Grid(["pretty",
+	"  H  ",
+	"# # #",
+	"B   B"], {
+	"B": <ore:itemBeeswax>,  # Beeswax
+	"#": <ore:plankWood>,    # Oak Wood Planks
+	"H": <ore:dropHoneydew>, # Honeydew
+}).shaped();
+mods.forestry.Carpenter.removeRecipe(<forestry:crafting_material:6>);
+scripts.wrap.forestry.Carpenter.addRecipe(<forestry:crafting_material:6>, scentPanelGrid, 40, <liquid:for.honey> * 500);
+scripts.wrap.forestry.Carpenter.addRecipe(<forestry:crafting_material:6>, scentPanelGrid, 40, <liquid:honey>     * 500);
 
 
 # ---------------------------

@@ -388,3 +388,14 @@ scripts.wrap.enderio.AlloySmelter.addRecipe(<nuclearcraft:ingot_block:8>, [<ore:
 # [Dimensional Blend] from [Biome Essence]
 recipes.remove(<nuclearcraft:compound:8>);
 scripts.process.crush(<biomesoplenty:biome_essence>, <nuclearcraft:compound:8>, "only: eu2Crusher AACrusher IECrusher", [<thermalfoundation:material:66>], [0.1]);
+
+# Quartz -> [Quarts dust] (nuclearcraft) wrong output fix
+val qwrong = <nuclearcraft:gem_dust:2>;
+val qdust = <appliedenergistics2:material:3>;
+recipes.removeByRecipeName("thermalfoundation:gem_dust");
+mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:quartz_ore>, <bloodmagic:cutting_fluid>]);
+mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:quartz_ore>);
+mods.immersiveengineering.Crusher.removeRecipesForInput(<minecraft:quartz>);
+mods.mekanism.crusher.removeRecipe(qwrong);
+mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:quartz>);
+scripts.process.crush(<ore:gemQuartz>, qdust, "only: iecrusher aegrinder mekcrusher", null, null);

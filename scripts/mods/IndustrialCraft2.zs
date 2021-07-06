@@ -246,7 +246,7 @@ for ore_entry in oreDict {
 	if (name.matches("plateDense[A-Z]\\w+")) {
     val ore_name = name.substring(10);
 		val inpOre = (ore_name == "Obsidian")
-			? <ore:obsidian> * 4
+			? (<minecraft:obsidian> * 4) as IIngredient
 			: oreDict["block"~ore_name];
 		if(inpOre.items.length <= 0) continue;
 		scripts.process.compress(inpOre, ore_entry.firstItem, "only: Compactor");
@@ -384,3 +384,7 @@ mods.cyclicmagic.Packager.addRecipe(<ic2:quad_mox_fuel_rod>, [
 	<ic2:nuclear:4> * 4,          # MOX Nuclear Fuel
 	<bigreactors:reactorfuelrod>, # Reactor Fuel Rod (Legacy)
 ]);
+
+# Milk Powder
+scripts.process.evaporate(<fluid:milk> * 250, <ic2:dust:33>, "No exceptions");
+scripts.process.solution([<ic2:dust:33>], [<fluid:water> * 250], [<fluid:milk> * 250], null, "Except: highoven");

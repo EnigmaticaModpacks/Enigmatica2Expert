@@ -16,7 +16,6 @@ Example
     "#": <ore:plankTreatedWood>,        # Treated Wood Planks
     "♥": <ore:dustRedstone>,            # Redstone
     "I": <ore:plateIron>,               # Iron Plate
-    remove: <minecraft:piston>
   });
 
 */

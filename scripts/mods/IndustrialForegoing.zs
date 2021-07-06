@@ -181,7 +181,6 @@ craft.remake(<industrialforegoing:conveyor> * 32, ["pretty",
   "R": <ore:itemRubber>, # Plastic
   "♥": <ore:dustRedstone>, # Redstone
   "▬": <ore:ingotFakeIron>, # Iron Alloy Ingot
-  remove: <industrialforegoing:conveyor> * 4, # White Conveyor Belt
 });
 
 	recipes.remove(<industrialforegoing:conveyor_upgrade>);

@@ -185,7 +185,6 @@ craft.remake(<cyclicmagic:magic_net> * 2, ["pretty",
   "S": <minecraft:snowball>,         # Snowball
   "G": <minecraft:tallgrass:*>,      # Grass
   "☼": <scalinghealth:crystalshard>, # Heart Crystal Shard
-  remove: <cyclicmagic:magic_net>,   # Monster Ball
 });
 
 # Soul stone as T3 crafting ingredient
@@ -279,7 +278,6 @@ craft.remake(<cyclicmagic:sprout_seed> * 4, ["pretty",
   "4": <exnihilocreatio:item_seed_darkoak>,
   "5": <exnihilocreatio:item_seed_oak>,
   "6": <exnihilocreatio:item_seed_jungle>,
-  remove: <cyclicmagic:sprout_seed> * 2
 });
 
 # [Crystallized_Obsidian*2] from [Weather_Egg_<Rain>][+3]
@@ -291,7 +289,6 @@ craft.remake(<cyclicmagic:crystallized_obsidian> * 2, ["pretty",
   "C": <biomesoplenty:crystal>,     # Crystallized Obsidian
   "W": <randomthings:weatheregg:1>, # Weather Egg <Rain>
   "M": <tconstruct:materials:19>,   # Mending Moss
-  remove: <cyclicmagic:crystallized_obsidian>
 });
 
 # [Crystallized_Amber*2] from [Weather_Egg_<Sun>][+3]
@@ -326,7 +323,6 @@ craft.remake(<cyclicmagic:sprinkler> * 2, ["pretty",
   "t": <contenttweaker:conglomerate_of_coal>,
   "F": <randomthings:fertilizeddirt>,         # Fertilized Dirt
   "M": <extrautils2:decorativesolidwood>,     # Magical Planks
-	remove: <cyclicmagic:sprinkler>,
 });
 
 
@@ -387,7 +383,6 @@ craft.remake(<cyclicmagic:corrupted_chorus> * 4, ["pretty",
   "C": <ore:fruitForestry>,             # Cherry
   "S": <rats:string_cheese>,            # String Cheese
   "F": <minecraft:fermented_spider_eye>,# Fermented Spider Eye
-	remove: <cyclicmagic:corrupted_chorus> * 3
 });
 
 # [Glowing_Chorus_Fruit] from [Crystallized_Obsidian_Bucket][+1]
@@ -517,7 +512,6 @@ val packagerList = [
   [<environmentalmaterials:alabaster> * 4], [<minecraft:cobblestone> * 4, <botania:dye>                        * 5],
   [<environmentalmaterials:alabaster> * 4], [<minecraft:cobblestone> * 4, <industrialforegoing:artificial_dye> * 5],
   [<environmentalmaterials:alabaster> * 4], [<minecraft:cobblestone> * 4, <quark:root_dye:2>                   * 5],
-  [<environmentalmaterials:alabaster> * 4], [<minecraft:cobblestone> * 4, <gendustry:honey_drop:25>            * 5],
 
   [<nuclearcraft:part:1>], [<ore:plateLead>.firstItem, <ic2:casing:4>, <ore:ingotGraphite>.firstItem * 2, <ore:ingotTough>.firstItem * 4, <minecraft:redstone> * 4],
   [<nuclearcraft:part>], [<ore:plateLead>.firstItem, <ic2:casing:4>, <ore:ingotGraphite>.firstItem * 2],
@@ -658,7 +652,6 @@ craft.remake(<cyclicmagic:plate_push> * 8, ["pretty",
   "c": <ore:clay>,     # Clay
   "d": <ore:dyeLime>,
   "▬": <ore:ingotIron>, # Iron Ingot
-  remove: <cyclicmagic:plate_push>,
 });
 
 # [Cobblestone] from [Pebble]

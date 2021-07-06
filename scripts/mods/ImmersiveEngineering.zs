@@ -459,7 +459,6 @@ craft.remake(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveen
   "♥": <ore:dustRedstone>, # Redstone
   "l": <ore:leather>,      # Leather
   "▬": <ore:ingotFakeIron>, # Iron Alloy Ingot
-  remove: <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 8, # Conveyor Belt
 });
 
 # [Conveyor Belt*32] from [Redstone][+2]
@@ -469,7 +468,6 @@ craft.remake(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveen
   "R": <ore:itemRubber>, # Plastic
   "♥": <ore:dustRedstone>, # Redstone
   "▬": <ore:ingotFakeIron>, # Iron Alloy Ingot
-  remove: <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 8, # Conveyor Belt
 });
 
 

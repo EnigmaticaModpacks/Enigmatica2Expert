@@ -707,13 +707,6 @@ for item in loadedMods["jaopca"].items {
 # Milk powder as milk
 <ore:listAllmilk>.addItems([<ic2:dust:33>]);
 
-function addSharpeningKitOredict(level as int, names as string[]) {
-	for name in names {
-		oreDict["sharpeningKit" ~ level].add(<tconstruct:sharpening_kit>.withTag({Material: name}));
-	}
-}
-
-
 # Bitumen
 <ore:bitumen>.addItems([<thermalfoundation:material:892>, <immersivepetroleum:material>]);
 

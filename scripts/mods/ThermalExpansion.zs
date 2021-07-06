@@ -277,8 +277,7 @@ mods.nuclearcraft.infuser.removeRecipeWithOutput(<ore:ingotEnderium>.firstItem);
 val enderIngot = <extendedcrafting:material:36>;
 craft.reshapeless(enderIngot * 2, "ABB", {
 	A: <ore:ingotPlatinum>,
-	B: <ore:dustEnder>,
-	remove: enderIngot});
+	B: <ore:dustEnder>});
 scripts.wrap.mekanism.infuser.addRecipe("ENDER", 20, <ore:ingotPlatinum>, enderIngot * 2);
 
 # Remake Pulsating ender recipe
@@ -304,13 +303,13 @@ scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:enderium> * 144, [<liquid:platin
 
 # Clathrates rework. More output
 function reworkClathrate(ore as IItemStack, crystal as IItemStack, dust as IItemStack, liquid as ILiquidStack) {
-	# Rermove defaults outputs
+	# Remove default outputs
 	mods.thermalexpansion.Crucible.removeRecipe(ore);
 	mods.thermalexpansion.Crucible.removeRecipe(crystal);
 	mods.thermalexpansion.Transposer.removeFillRecipe(crystal, <liquid:cryotheum> * 200);
 	recipes.removeShapeless(<*>, [crystal, <thermalfoundation:material:1025>]);
 	
-	# Melting into raw liquids
+	# Buff melting into raw liquids
 	scripts.process.melt(ore, liquid * min(10000, liquid.amount * 4), "no exceptions");
 	scripts.process.melt(crystal, liquid, "no exceptions");
 

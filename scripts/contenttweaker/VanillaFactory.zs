@@ -20,6 +20,13 @@ import mods.ctutils.utils.Math.min;
 import mods.ctutils.utils.Math.random;
 import mods.ctutils.utils.Math.sqrt;
 
+mods.contenttweaker.VanillaFactory.createCreativeTab("other", <item:minecraft:coal:1>).register();
+
+function buildItem(name as string) {
+	val item = VanillaFactory.createItem(name) as Item;
+	item.setCreativeTab(<creativetab:other>);
+	item.register();
+}
 
 /*** Crafting Materials ***/
 for craftMat in [
@@ -35,7 +42,7 @@ for craftMat in [
   "compressed_ender",
   
 ] as string[] {
-	itemBuilder.addItem(craftMat);
+	buildItem(craftMat);
 }
 
 function createCompressedBlock(name as string, level as int, blockMaterial as BlockMaterial) {
@@ -140,13 +147,13 @@ createBlock("conglomerate_of_sun",  5, <blockmaterial:clay>);
 # -------------------------------
 # Animal's items
 # -------------------------------
-itemBuilder.addItem("empowered_phosphor");
-itemBuilder.addItem("blasted_coal");
+buildItem("empowered_phosphor");
+buildItem("blasted_coal");
 
 # -------------------------------
 # Other
 # -------------------------------
-itemBuilder.addItem("bee_diversity");
+buildItem("bee_diversity");
 
 
 val molten_spectre = VanillaFactory.createFluid("spectre", 0x9CC1CE);

@@ -408,8 +408,10 @@ craft.remake(<oeintegration:excavatemodifier>, ["pretty",
 });
 
 # Remove Refined storage cables
-utils.rh(<immersivecables:coil_block:3>);
-utils.rh(<immersivecables:wire_coil:3>);
+if(isNull(loadedMods["refinedstorage"])) {
+	utils.rh(<immersivecables:coil_block:3>);
+	utils.rh(<immersivecables:wire_coil:3>);
+}
 
 # Make Quicksand
 scripts.wrap.inworldcrafting.FluidToFluid.transform(<liquid:sand>, <liquid:blueslime>, [<ore:soulSand>]);
@@ -513,37 +515,11 @@ scripts.wrap.tconstruct.Casting.addBasinRecipe(<rats:block_of_cheese>, null, <li
 craft.make(<biomesoplenty:hard_ice> * 8, ["AAA","A A","AAA"], {A: <mysticalagriculture:ice_essence>});
 scripts.process.compress(<minecraft:packed_ice> * 2, <biomesoplenty:hard_ice>, "No Exceptions");
 
-# Ice balls
-scripts.process.mash(<biomesoplenty:hard_ice>, <mctsmelteryio:iceball> * 8, "No Exceptions");
-
-# Remove wrong grinding recipe
-mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:ender_pearl>);
-mods.appliedenergistics2.Grinder.removeRecipe(<thermalfoundation:material:895>);
-scripts.process.crush(<ore:enderpearl>, <appliedenergistics2:material:46>, "Except: Pulverizer PulseCentrifuge", null, null);
-
-# Milk Powder
-scripts.process.evaporate(<fluid:milk> * 250, <ic2:dust:33>, "No exceptions");
-scripts.process.solution([<ic2:dust:33>], [<fluid:water> * 250], [<fluid:milk> * 250], null, "Except: highoven");
-
 # Remove Glass pane non-oredict recipe
 recipes.removeByRecipeName("minecraft:glass_pane");
 
-# Quarts dust wrong recipes
-val qwrong = <nuclearcraft:gem_dust:2>;
-val qdust = <appliedenergistics2:material:3>;
-recipes.removeByRecipeName("thermalfoundation:gem_dust");
-mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:quartz_ore>, <bloodmagic:cutting_fluid>]);
-mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:quartz_ore>);
-mods.immersiveengineering.Crusher.removeRecipesForInput(<minecraft:quartz>);
-mods.mekanism.crusher.removeRecipe(qwrong);
-mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:quartz>);
-scripts.process.crush(<ore:gemQuartz>, qdust, "only: iecrusher aegrinder mekcrusher", null, null);
-
 # Nerf torches from Light level 14
 <minecraft:torch>.asBlock().definition.lightLevel = 0.7f;
-
-# Missed melt recipe for Block Of Ender Pearls
-scripts.process.melt(<actuallyadditions:block_misc:6>, <liquid:ender> * 1000, "Except: Smeltery");
 
 # Prevent melting dupe
 craft.remake(<quark:obsidian_pressure_plate>, ["AA","AA"], {A: <ore:obsidian>});

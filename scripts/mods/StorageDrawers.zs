@@ -75,7 +75,6 @@ craft.remake(<storagedrawers:upgrade_creative> * 4, ["pretty",
   "i": <rftools:storage_module:2>,            # Tier 3 Storage Module
   "‚": <ore:nuggetDraconicMetal>,             # Draconic Metal Nugget
   "M": <extrautils2:decorativesolidwood>,     # Magical Planks
-  remove: <storagedrawers:upgrade_creative>,  # Creative Storage Upgrade
 });
 
 # Upgrades
@@ -90,7 +89,7 @@ remakeDrawerUpgrade(<storagedrawers:upgrade_storage:0>, <ore:nuggetLead>);
 remakeDrawerUpgrade(<storagedrawers:upgrade_storage:1>, <ore:nuggetEndSteel>);
 remakeDrawerUpgrade(<storagedrawers:upgrade_storage:2>, <ore:nuggetCrystallineAlloy>);
 remakeDrawerUpgrade(<storagedrawers:upgrade_storage:3>, <ore:nuggetUltimate>);
-remakeDrawerUpgrade(<storagedrawers:upgrade_storage:4>, <ore:nuggetChaoticMetal>);
+remakeDrawerUpgrade(<storagedrawers:upgrade_storage:4>, <draconicevolution:chaos_shard:3>);
 
 # Drawers clearing
 function clearDrawer(inputs as IItemStack[]) as void  {

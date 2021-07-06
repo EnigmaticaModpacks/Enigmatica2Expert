@@ -160,7 +160,6 @@ craft.reshapeless(<randomthings:ingredient:13>, "F☺▲", {
   "▲": <ore:dustAsh>,                   # Ash
   "F": <fluxnetworks:flux>,             # Flux
   "☺": <actuallyadditions:item_misc:22>, # Bio Coal
-  remove: <randomthings:ingredient:13> * 4
 });
 
 # [Slime_Cube] from [Mending_Moss][+2]
@@ -192,7 +191,6 @@ craft.remake(<randomthings:fertilizeddirt> * 8, ["pretty",
   "d": <ore:fertilizer>,
   "i": <ore:dirt>,
   "~": Bucket("slop"), # Slop Bucket
-  remove: <randomthings:fertilizeddirt> * 2
 });
 
 

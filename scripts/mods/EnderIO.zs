@@ -430,7 +430,6 @@ craft.remake(<enderio:item_material:77> * 8, ["pretty",
   "p p p"], {
   "p": <ore:paper>,    # Paper
   "d": <ore:dyeBlack>, # Ink Sac
-  remove: <ore:paperBlack>,
 });
 
 # Conflicts
@@ -551,3 +550,8 @@ craft.remake(<enderio:block_solar_panel>, ["pretty",
   "¤": <ore:gearIronInfinity>,      # Infinity Bimetal Gear
   "‚": <ore:nuggetElectricalSteel>, # Electrical Steel Nugget
 });
+
+# Remove [Ender Pearl Powder] grinding recipes
+mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:ender_pearl>);
+mods.appliedenergistics2.Grinder.removeRecipe(<thermalfoundation:material:895>);
+scripts.process.crush(<ore:enderpearl>, <appliedenergistics2:material:46>, "Except: Pulverizer PulseCentrifuge", null, null);

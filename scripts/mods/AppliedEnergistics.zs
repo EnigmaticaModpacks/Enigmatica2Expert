@@ -359,7 +359,7 @@ for item, mass in itemMass {
 	}
 }
 
-# Circuits alternative
+# [Printed (Every) Circuit] shortcut in [Cutting Machine]
 scripts.process.saw(<ore:blockGold>, <appliedenergistics2:material:18> *  9, "only: AdvRockCutter");
 scripts.process.saw(<ore:blockDiamond>, <appliedenergistics2:material:17> *  9, "only: AdvRockCutter");
 scripts.process.saw(<ore:crystalPureCertusQuartz> * 9, <appliedenergistics2:material:16> *  9, "only: AdvRockCutter");

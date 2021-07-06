@@ -463,7 +463,6 @@ craft.remake(<mekanismgenerators:generator:10> * 6, ["pretty",
   "⌂": <nuclearcraft:fission_block>, # Fission Reactor Casing
   "S": <mekanism:basicblock:8>,      # Steel Casing
   "T": <nuclearcraft:turbine_wall>,  # Turbine Wall
-	remove: <mekanismgenerators:generator:10>,
 });
 
 # Conflicts
