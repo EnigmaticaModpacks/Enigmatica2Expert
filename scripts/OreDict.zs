@@ -586,8 +586,8 @@ for item in pressurePlates {
 		<minecraft:bed:12>, #Brown Bed
 		<minecraft:bed:13>, #Green Bed
 		<minecraft:bed:14>, #Red Bed
-		<minecraft:bed:15>, #Black Bed
-		<cyclicmagic:sleeping_mat>
+		<minecraft:bed:15> #Black Bed
+		#<cyclicmagic:sleeping_mat>
 
 	] as IItemStack[];
 	
