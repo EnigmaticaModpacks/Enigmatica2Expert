@@ -202,7 +202,6 @@ var ignore = [
   /\[enderio\]: Item used in cast recipe .* doesn't smelt into a fluid/,
   /\[keywizard\]: Controls gui override enabled, this may cause problems with other mods/,
   /\[keywizard\]: Conflicting mod detected, controls gui override may not work/,
-  /\[jei\]: Recipe registry plugin is slow, took 14.53 ms. class pl.asie.preston.compat.jei.CompressorRecipeRegistryPlugin/,
   /\[dsurround\]: Cannot find sound that should be registered \[minecraft:\]/,
   /\[net.minecraft.client.settings.GameSettings\]: Skipping bad option: lastServer:/,
   /\[FML\]: {3}Registry: 242 minecraft:entity.ghast.warn net.minecraft.util.SoundEvent@17ebbf1e/,

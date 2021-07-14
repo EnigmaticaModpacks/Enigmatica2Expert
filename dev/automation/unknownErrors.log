@@ -1,4 +1,4 @@
-[Surge]: The game loaded in approximately  612.522 seconds.
+[Surge]: The game loaded in approximately  558.108 seconds.
 [main/WARN] [mixin]: MixinEnvironment::addConfiguration is deprecated and will be removed. Use Mixins::addConfiguration instead!
 [main/WARN] [mixin]: MixinEnvironment::addConfiguration is deprecated and will be removed. Use Mixins::addConfiguration instead!
 [main/ERROR] [mixin]: Mixin config mixins.mixincompat.json does not specify "minVersion" property
@@ -9,4 +9,3 @@
 [Client thread/WARN] [enderio]: Mekanism Gas conduits loaded. Let your networks connect!
 [Client thread/WARN] [net.minecraft.nbt.NBTUtil]: Unable to read property: material with value: iron for blockstate: {Properties:{material:"iron",facing:"down",type:"kinetic_generator",transparent:"false"},Name:"ic2:te"}
 [Client thread/WARN] [net.minecraft.nbt.NBTUtil]: Unable to read property: material with value: iron for blockstate: {Properties:{material:"iron",facing:"down",type:"kinetic_generator",transparent:"false"},Name:"ic2:te"}
-[Client thread/WARN] [jei]: Sending runtime to plugin: com.buuz135.thaumicjei.ThaumcraftJEIPlugin took 152 ms
