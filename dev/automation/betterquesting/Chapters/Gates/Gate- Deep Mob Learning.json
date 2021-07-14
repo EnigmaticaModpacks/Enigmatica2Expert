@@ -1,11 +1,11 @@
 {
   "_index": "66:10",
   "_pos": {
-    "_index": "20:10",
+    "_index": "19:10",
     "_data": {
       "sizeX:3": 24,
-      "x:3": 168,
-      "y:3": 80,
+      "x:3": 264,
+      "y:3": 120,
       "id:3": 66,
       "sizeY:3": 24
     }
@@ -13,8 +13,7 @@
   "_data": {
     "questID:3": 66,
     "preRequisites:11": [
-      13,
-      35
+      13
     ],
     "properties:10": {
       "betterquesting:10": {
@@ -37,7 +36,7 @@
         "partysinglereward:1": 0,
         "snd_update:8": "minecraft:entity.player.levelup",
         "autoclaim:1": 0,
-        "ismain:1": 0,
+        "ismain:1": 1,
         "repeat_relative:1": 1,
         "name:8": "bq.quest66.name",
         "desc:8": "bq.quest66.desc"

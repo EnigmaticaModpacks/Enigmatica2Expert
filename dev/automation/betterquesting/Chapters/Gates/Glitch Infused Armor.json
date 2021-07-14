@@ -1,11 +1,11 @@
 {
   "_index": "572:10",
   "_pos": {
-    "_index": "23:10",
+    "_index": "22:10",
     "_data": {
       "sizeX:3": 16,
-      "x:3": 172,
-      "y:3": 72,
+      "x:3": 280,
+      "y:3": 112,
       "id:3": 572,
       "sizeY:3": 16
     }
@@ -110,10 +110,7 @@
             "OreDict:8": ""
           },
           "1:10": {
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
-            "id:8": "spartanshields:shield_basic_lead",
+            "id:8": "deepmoblearning:infused_ingot_block",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""

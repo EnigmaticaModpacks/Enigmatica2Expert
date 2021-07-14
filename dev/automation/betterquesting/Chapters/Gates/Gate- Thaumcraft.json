@@ -1,10 +1,10 @@
 {
   "_index": "596:10",
   "_pos": {
-    "_index": "24:10",
+    "_index": "23:10",
     "_data": {
       "sizeX:3": 24,
-      "x:3": 260,
+      "x:3": 216,
       "y:3": 0,
       "id:3": 596,
       "sizeY:3": 24
@@ -29,7 +29,7 @@
           "ForgeCaps:10": {
             "astralsorcery:cap_item_amulet_holder:10": {}
           },
-          "id:8": "thaumcraft:thaumonomicon",
+          "id:8": "thaumcraft:goggles",
           "Count:3": 1,
           "Damage:2": 0,
           "OreDict:8": ""
@@ -39,7 +39,7 @@
         "partysinglereward:1": 0,
         "snd_update:8": "minecraft:entity.player.levelup",
         "autoclaim:1": 0,
-        "ismain:1": 0,
+        "ismain:1": 1,
         "repeat_relative:1": 1,
         "name:8": "bq.quest596.name",
         "desc:8": "bq.quest596.desc"

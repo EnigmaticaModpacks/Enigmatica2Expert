@@ -106,12 +106,9 @@
             "OreDict:8": ""
           },
           "1:10": {
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
-            "id:8": "spartanshields:shield_basic_stone",
-            "Count:3": 1,
-            "Damage:2": 0,
+            "id:8": "botania:manaresource",
+            "Count:3": 16,
+            "Damage:2": 22,
             "OreDict:8": ""
           },
           "2:10": {

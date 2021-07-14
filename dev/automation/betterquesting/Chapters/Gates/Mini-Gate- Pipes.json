@@ -1,0 +1,106 @@
+{
+  "_index": "7:10",
+  "_pos": {
+    "_index": "3:10",
+    "_data": {
+      "sizeX:3": 16,
+      "x:3": 16,
+      "y:3": -8,
+      "id:3": 7,
+      "sizeY:3": 16
+    }
+  },
+  "_data": {
+    "questID:3": 7,
+    "preRequisites:11": [
+      4
+    ],
+    "properties:10": {
+      "betterquesting:10": {
+        "issilent:1": 0,
+        "snd_complete:8": "minecraft:entity.player.levelup",
+        "lockedprogress:1": 1,
+        "partySingleReward:8": "false",
+        "tasklogic:8": "AND",
+        "repeattime:3": -1,
+        "visibility:8": "ALWAYS",
+        "simultaneous:1": 0,
+        "icon:10": {
+          "id:8": "xnet:netcable",
+          "Count:3": 1,
+          "tag:10": {
+            "display:10": {
+              "LocName:8": "tile.xnet.netcable_blue.name"
+            }
+          },
+          "Damage:2": 0,
+          "OreDict:8": ""
+        },
+        "globalshare:1": 0,
+        "questlogic:8": "AND",
+        "partysinglereward:1": 0,
+        "snd_update:8": "minecraft:entity.player.levelup",
+        "autoclaim:1": 0,
+        "ismain:1": 0,
+        "repeat_relative:1": 1,
+        "name:8": "bq.quest7.name",
+        "desc:8": "bq.quest7.desc"
+      }
+    },
+    "tasks:9": {
+      "0:10": {
+        "partialMatch:1": 1,
+        "autoConsume:1": 0,
+        "groupDetect:1": 0,
+        "ignoreNBT:1": 0,
+        "index:3": 0,
+        "consume:1": 0,
+        "requiredItems:9": {
+          "0:10": {
+            "id:8": "xnet:netcable",
+            "Count:3": 32,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          }
+        },
+        "taskID:8": "bq_standard:retrieval"
+      }
+    },
+    "rewards:9": {
+      "0:10": {
+        "rewardID:8": "bq_standard:choice",
+        "index:3": 0,
+        "choices:9": {
+          "0:10": {
+            "id:8": "xnet:controller",
+            "Count:3": 2,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "1:10": {
+            "id:8": "xnet:netcable",
+            "Count:3": 64,
+            "tag:10": {
+              "display:10": {
+                "LocName:8": "tile.xnet.netcable_blue.name"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "2:10": {
+            "id:8": "xnet:connector",
+            "Count:3": 4,
+            "tag:10": {
+              "display:10": {
+                "LocName:8": "tile.xnet.connector_blue.name"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          }
+        }
+      }
+    }
+  }
+}

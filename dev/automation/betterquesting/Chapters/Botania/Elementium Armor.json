@@ -108,12 +108,9 @@
             "OreDict:8": ""
           },
           "1:10": {
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
-            "id:8": "spartanshields:shield_botania_elementium",
+            "id:8": "botania:storage",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 2,
             "OreDict:8": ""
           },
           "2:10": {

@@ -4,8 +4,8 @@
     "_index": "7:10",
     "_data": {
       "sizeX:3": 24,
-      "x:3": -12,
-      "y:3": 108,
+      "x:3": 132,
+      "y:3": 24,
       "id:3": 20,
       "sizeY:3": 24
     }
@@ -13,7 +13,7 @@
   "_data": {
     "questID:3": 20,
     "preRequisites:11": [
-      65
+      821
     ],
     "properties:10": {
       "betterquesting:10": {

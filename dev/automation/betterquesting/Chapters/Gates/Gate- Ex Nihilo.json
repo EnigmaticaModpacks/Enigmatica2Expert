@@ -5,7 +5,7 @@
     "_data": {
       "sizeX:3": 24,
       "x:3": 168,
-      "y:3": 40,
+      "y:3": 0,
       "id:3": 10,
       "sizeY:3": 24
     }
@@ -13,8 +13,7 @@
   "_data": {
     "questID:3": 10,
     "preRequisites:11": [
-      11,
-      13
+      46
     ],
     "properties:10": {
       "betterquesting:10": {
@@ -37,7 +36,7 @@
         "partysinglereward:1": 0,
         "snd_update:8": "minecraft:entity.player.levelup",
         "autoclaim:1": 0,
-        "ismain:1": 0,
+        "ismain:1": 1,
         "repeat_relative:1": 1,
         "name:8": "bq.quest10.name",
         "desc:8": "bq.quest10.desc"

@@ -1,7 +1,7 @@
 {
   "_index": "779:10",
   "_pos": {
-    "_index": "38:10",
+    "_index": "37:10",
     "_data": {
       "sizeX:3": 24,
       "x:3": 128,
@@ -125,15 +125,9 @@
             "OreDict:8": ""
           },
           "1:10": {
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
-            "id:8": "spartanshields:shield_riot_enderio",
-            "Count:3": 1,
-            "tag:10": {
-              "Energy:3": 1000000
-            },
-            "Damage:2": 0,
+            "id:8": "ic2:crafting",
+            "Count:3": 8,
+            "Damage:2": 15,
             "OreDict:8": ""
           },
           "2:10": {
