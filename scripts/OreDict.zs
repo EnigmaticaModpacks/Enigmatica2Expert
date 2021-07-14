@@ -713,7 +713,7 @@ for item in loadedMods["jaopca"].items {
 # Additional essence added with mysticalcreations
 <ore:essenceTier2>.add(<mysticalcreations:creosolite_essence>);
 <ore:essenceTier3>.add(<mysticalcreations:cheese_essence>);
-<ore:essenceTier5>.add(<mysticalcreations:ultimate_essence>);
+<ore:essenceTier6>.add(<mysticalcreations:ultimate_essence>);
 
 # IC2 ashes to thedustAsh
 for item in <ore:dustAshes>.items {
@@ -816,3 +816,30 @@ for item in <ore:dustAshes>.items {
 	<actuallyadditions:item_solidified_experience>,
 	<minecraft:experience_bottle>,
 ]);
+
+# Add oredict for benefication
+<ore:gemBenitoite>.add(<bigreactors:mineralbenitoite>);
+<ore:gemAnglesite>.add(<bigreactors:mineralanglesite>);
+
+# Alien Crystals for benefication
+<ore:aliencrystalViolet>.add(<advancedrocketry:crystal>);
+<ore:aliencrystalBlue>.add(<advancedrocketry:crystal:1>);
+<ore:aliencrystalGreen>.add(<advancedrocketry:crystal:2>);
+<ore:aliencrystalRed>.add(<advancedrocketry:crystal:3>);
+<ore:aliencrystalYellow>.add(<advancedrocketry:crystal:4>);
+<ore:aliencrystalOrange>.add(<advancedrocketry:crystal:5>);
+
+# Sequoia
+<ore:logSequoia>.addItems([
+	<forestry:logs.1:3>,
+	<forestry:logs.6>,
+	<forestry:logs.fireproof.1:3>,
+	<forestry:logs.fireproof.6>,
+]);
+
+# Missed Ingots and blocks
+<ore:ingotEnder>.add(<extendedcrafting:material:36>);
+<ore:blockEnder>.add(<extendedcrafting:storage:5>);
+
+<ore:ingotGlitch>.add(<deepmoblearning:glitch_infused_ingot>);
+<ore:blockGlitch>.add(<deepmoblearning:infused_ingot_block>);

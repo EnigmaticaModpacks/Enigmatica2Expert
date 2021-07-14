@@ -148,7 +148,7 @@ scripts.process.mash(<minecraft:ender_pearl> , <extrautils2:endershard> * 16, nu
 
 # Blue quartz as ultimate grid user
 //mods.extrautils2.Resonator.add(IItemStack output, IItemStack input, int energy, @Optional boolean addOwnerTag);
-scripts.wrap.extrautils2.Resonator.add(<extrautils2:decorativesolid:6>, <botania:quartztypemana>, 700 * 100);
+scripts.wrap.extrautils2.Resonator.add(<extrautils2:decorativesolid:6>, <botania:quartztypemana>, 600 * 100);
 
 # Make quartzburnt harder (was 8 GP)
 mods.extrautils2.Resonator.remove(<extrautils2:decorativesolid:7>);
@@ -334,6 +334,29 @@ craft.make(<extrautils2:drum:3>, ["pretty",
   "R R R",
   "□ A □"], {
   "□": <tconstruct:large_plate>.withTag({Material: "xu_demonic_metal"}), # Demonic Large Plate
-  "A": Bucket("high_pressure_steam"), # Any container with High Pressure Steam * 1000 mB
+  "A": <liquid:high_pressure_steam> * 1000, # Any container with High Pressure Steam * 1000 mB
   "R": <extrautils2:drum:2>, # Reinforced Large Drum
 });
+
+function getCreativeHarvest(item as IItemStack) as IItemStack{
+	return <extrautils2:creativeharvest>.withTag({creative_block: {meta: item.damage, block: item.definition.id}, display_stack: {id: item.definition.id, Count: 1 as byte, Damage: item.damage as short}});
+}
+
+# Infinity item sources
+val BQ = <extrautils2:decorativesolid:6>; # Blue Quartz
+scripts.wrap.extrautils2.Resonator.add(getCreativeHarvest(BQ), BQ, 1300 * 100);
+
+for item in [
+	<minecraft:dirt>,
+	<minecraft:concrete:7>,
+] as IItemStack[] {
+	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0,
+		getCreativeHarvest(item),
+		scripts.craft.grid.Grid(["pretty",
+		"d d d",
+		"d * d",
+		"d d d"], {
+		"d": item,
+		"*": <actuallyadditions:block_crystal_empowered:4>, # Empowered Emeradic Crystal Block
+	}).shaped());
+}

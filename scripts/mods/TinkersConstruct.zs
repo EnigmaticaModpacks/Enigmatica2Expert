@@ -548,8 +548,8 @@ craft.remake(<tconevo:material:2>, ["pretty",
 
 # New liquids
 scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:sunnarium> * 144, [<liquid:liquid_sunshine> * 1000,  <liquid:terrasteel> * 144, <liquid:flux_goo> * 100]);
-scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:dark_matter> * 48, [<liquid:neutronium> * 144, <liquid:primal_metal> * 144,  <liquid:mana> * 250]);
-scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:red_matter> * 48, [<liquid:supremium> * 432,  <liquid:blockfluidantimatter> * 1000, <liquid:dark_matter> * 144]);
+scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:dark_matter> * 144, [<liquid:neutronium> * 144, <liquid:primal_metal> * 144,  <liquid:mana> * 250]);
+scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:red_matter> * 144, [<liquid:supremium> * 432,  <liquid:blockfluidantimatter> * 1000, <liquid:dark_matter> * 144]);
 
 # Melt Block of flesh
 scripts.process.melt(<ore:blockFlesh>, <liquid:blood> * 360, "No Exceptions");

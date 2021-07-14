@@ -51,3 +51,14 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_prism_remake", ma
 	.addItemInput(<astralsorcery:itemcraftingcomponent:4>)
 	.addItemInput(<ore:dustAstralStarmetal>, 2)
 	.build();
+
+mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_lens", machineName, 600)
+	.addItemOutput(<astralsorcery:blocklens>.withTag({astralsorcery: {crystalProperties: {collectiveCapability: 50, size: 200, fract: 0, purity: 50, sizeOverride: -1}}}) * 3)
+	.addFluidInput(<liquid:astralsorcery.liquidstarlight> * 4000)
+	.addItemInput(<astralsorcery:blockinfusedwood:4> * 2)      # Engraved Infused Wood
+	.addItemInput(<astralsorcery:itemcraftingcomponent:3> * 3) # Glass Lens
+	.addItemInput(<ore:crystalAstralAny>)                      # Attuned Rock Crystal
+	.addItemInput(<ore:gemAquamarine>, 2)                      # Aquamarine
+	.addItemInput(<ore:ingotGold>)                             # Gold Ingot
+	.addItemInput(<ore:stoneMarblePolished>, 2)                # Runed Marble
+	.build();

@@ -63,6 +63,7 @@ for ore_entry in oreDict {
 		val p = ore_entry;
 		recipes.addShapeless("Ex Nihilo " ~ name ~ " x4", oreBlock.firstItem, [p, p, p, p]);
 		recipes.addShapeless("Ex Nihilo " ~ name ~ " x8", oreBlock.firstItem * 2, [p, p, p, p, p, p, p, p]);
+		scripts.process.compress(p * 4, oreBlock.firstItem, "except: Compressor");
 	}
 }
 

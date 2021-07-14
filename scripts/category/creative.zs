@@ -151,31 +151,177 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 
 # Ultimate Ingot
 	scripts.wrap.extendedcrafting.TableCrafting.addShapeless(0, <extendedcrafting:material:32>, 
-	[<nuclearcraft:ingot:3>, <nuclearcraft:ingot:5>, <minecraft:iron_ingot>,<minecraft:gold_ingot>,
-	<advancedrocketry:productingot>,<advancedrocketry:productingot:1>,<advancedrocketry:misc:1>,
-	<astralsorcery:itemcraftingcomponent:1>,<botania:manaresource>,<botania:manaresource:4>,
-	<botania:manaresource:7>,<draconicevolution:draconium_ingot>,<draconicevolution:draconic_ingot>,
-	<extendedcrafting:material>,<extendedcrafting:material:24>,<extrautils2:ingredients:11>,<extrautils2:ingredients:12>,
-	<extrautils2:ingredients:17>,<bigreactors:ingotcyanite>,<bigreactors:ingotblutonium>,
-	<bigreactors:ingotludicrite>,<immersiveengineering:material:19>,<immersiveengineering:metal:5>,
-	<mekanism:ingot>,<mekanism:ingot:1>,<mekanism:ingot:3>,<thermalfoundation:material:131>,
-	<thermalfoundation:material:132>,<thermalfoundation:material:133>,<thermalfoundation:material:134>,
-	<thermalfoundation:material:135>,<thermalfoundation:material:136>,<thermalfoundation:material:160>,
-	<thermalfoundation:material:161>,<nuclearcraft:ingot:6>,<nuclearcraft:ingot:7>,<nuclearcraft:ingot:8>,
-	<nuclearcraft:ingot:9>,<nuclearcraft:ingot:10>,<nuclearcraft:alloy:1>,<nuclearcraft:alloy:2>,
-	<nuclearcraft:alloy:3>,<nuclearcraft:alloy:4>,<nuclearcraft:alloy:6>,<plustic:alumiteingot>,
-	<plustic:osgloglasingot>,<plustic:osmiridiumingot>,<plustic:mirioningot>,<psi:material:1>,
-	<psi:material:3>,<psi:material:4>,<redstonearsenal:material:32>,<twilightforest:ironwood_ingot>,
-	<twilightforest:fiery_ingot>,<twilightforest:knightmetal_ingot>,<thermalfoundation:material:128>,
-	<thermalfoundation:material:129>,<thermalfoundation:material:162>,<thermalfoundation:material:163>,
-	<thermalfoundation:material:164>,<thermalfoundation:material:165>,<thermalfoundation:material:166>,
-	<thermalfoundation:material:167>,<tconstruct:ingots>,<tconstruct:ingots:1>,<tconstruct:ingots:2>,
-	<tconstruct:ingots:3>,<tconstruct:ingots:4>,<tconstruct:ingots:5>,<libvulpes:productingot:3>,
-	<libvulpes:productingot:7>, <extendedcrafting:material:36>, <extendedcrafting:material:48>,
-	<enderio:item_alloy_ingot:8>, <enderio:item_alloy_ingot:7>, <enderio:item_alloy_ingot:2>,
-	<enderio:item_alloy_ingot>, <mysticalagradditions:insanium:2>, <thaumcraft:ingot:2>,
-	<thaumcraft:ingot>, <thaumcraft:ingot:1>]);
+	[
+		<ore:ingotIridium>,
+		<ore:ingotTitaniumIridium>,
+		<ore:ingotConductiveIron>,
+		<ore:ingotEnergium>,
+		<ore:ingotRedstoneAlloy>,
+		<ore:ingotConstantan>,
+		<ore:ingotElectrumFlux>,
+		<ore:ingotAlubrass>,
+		<ore:ingotLumium>,
+		<ore:ingotInvar>,
+		<ore:ingotElectricalSteel>,
+		<ore:ingotIronwood>,
+		<ore:ingotFiery>,
+		<ore:ingotEvilMetal>,
+		<ore:ingotBrass>,
+		<ore:ingotEnergeticAlloy>,
+		<ore:ingotBronze>,
+		<ore:ingotRefinedGlowstone>,
+		<ore:ingotOsmium>,
+		<ore:ingotSteel>,
+		<ore:ingotSoularium>,
+		<ore:ingotBoundMetal>,
+		<ore:ingotDemonicMetal>,
+		<ore:ingotSignalum>,
+		<ore:ingotDraconiumAwakened>,
+		<ore:ingotEndSteel>,
+		<ore:ingotPigiron>,
+		<ore:ingotManganese>,
+		<ore:ingotBoron>,
+		<ore:ingotSoulium>,
+		<ore:ingotThorium>,
+		<ore:ingotHeavy>,
+		<ore:ingotArdite>,
+		<ore:ingotLudicrite>,
+		<ore:ingotElvenElementium>,
+		<ore:ingotMagnesium>,
+		<ore:ingotLithium>,
+		<ore:ingotIvoryPsi>,
+		<ore:ingotGraphite>,
+		<ore:ingotEbonyPsi>,
+		<ore:ingotBlackIron>,
+		<ore:ingotInsanium>,
+		<ore:ingotKnightslime>,
+		<ore:ingotUUMatter>,
+		<ore:ingotAlumite>,
+		<ore:ingotIceDragonsteel>,
+		<ore:ingotSilver>,
+		<ore:ingotAluminium>,
+		<ore:ingotTungsten>,
+		<ore:ingotDarkSteel>,
+		<ore:ingotVoid>,
+		<ore:ingotDraconium>,
+		<ore:ingotRefinedObsidian>,
+		<ore:ingotMelodicAlloy>,
+		<ore:ingotTin>,
+		<ore:ingotWyvernMetal>,
+		<ore:ingotThaumium>,
+		<ore:ingotAstralStarmetal>,
+		<ore:ingotEnderEnhanced>,
+		<ore:ingotManyullyn>,
+		<ore:ingotGlitch>,
+		<ore:ingotEndorium>,
+		<ore:ingotEnder>,
+		<ore:ingotCrystaltine>,
+		<ore:ingotGelidEnderium>,
+		<ore:ingotCobalt>,
+		<ore:ingotLead>,
+		<ore:ingotEssenceMetal>,
+		<ore:ingotEnderium>,
+		<ore:ingotUranium>,
+		<ore:ingotPulsatingIron>,
+		<ore:ingotTerrasteel>,
+		<ore:ingotPlatinum>,
+		<ore:ingotPsi>,
+		<ore:ingotOsmiridium>,
+		<ore:ingotMithril>,
+		<ore:ingotKnightmetal>,
+		<ore:ingotZirconium>,
+		<ore:ingotMirion>,
+		<ore:ingotOsgloglas>,
+		<ore:ingotEnchantedMetal>,
+	]);
 	
+
+# Ultimate Block
+	scripts.wrap.extendedcrafting.TableCrafting.addShapeless(0, <extendedcrafting:storage:4>, 
+	[
+		<ore:blockIridium>,
+		<ore:blockTitaniumIridium>,
+		<ore:blockConductiveIron>,
+		<ore:blockEnergium>,
+		<ore:blockRedstoneAlloy>,
+		<ore:blockConstantan>,
+		<ore:blockElectrumFlux>,
+		<ore:blockAlubrass>,
+		<ore:blockLumium>,
+		<ore:blockInvar>,
+		<ore:blockElectricalSteel>,
+		<twilightforest:block_storage>,
+		<ore:blockFiery>,
+		<ore:blockEvilMetal>,
+		<ore:blockBrass>,
+		<ore:blockEnergeticAlloy>,
+		<ore:blockBronze>,
+		<ore:blockRefinedGlowstone>,
+		<ore:blockOsmium>,
+		<ore:blockSteel>,
+		<ore:blockSoularium>,
+		<ore:blockBoundMetal>,
+		<ore:blockDemonicMetal>,
+		<ore:blockSignalum>,
+		<ore:blockDraconiumAwakened>,
+		<ore:blockEndSteel>,
+		<ore:blockPigiron>,
+		<ore:blockManganese>,
+		<ore:blockBoron>,
+		<ore:blockSoulium>,
+		<ore:blockThorium>,
+		<ore:blockHeavy>,
+		<ore:blockArdite>,
+		<ore:blockLudicrite>,
+		<botania:storage:2>,
+		<ore:blockMagnesium>,
+		<ore:blockLithium>,
+		<psi:psi_decorative:8>,
+		<ore:blockGraphite>,
+		<psi:psi_decorative:7>,
+		<ore:blockBlackIron>,
+		<ore:blockInsanium>,
+		<ore:blockKnightslime>,
+		<ore:blockUUMatter>,
+		<ore:blockAlumite>,
+		<ore:blockIceDragonsteel>,
+		<ore:blockSilver>,
+		<ore:blockAluminium>,
+		<endreborn:block_wolframium>,
+		<ore:blockDarkSteel>,
+		<ore:blockVoid>,
+		<ore:blockDraconium>,
+		<ore:blockRefinedObsidian>,
+		<ore:blockMelodicAlloy>,
+		<ore:blockTin>,
+		<ore:blockWyvernMetal>,
+		<ore:blockThaumium>,
+		<ore:blockAstralStarmetal>,
+		<extendedcrafting:storage:7>,
+		<ore:blockManyullyn>,
+		<ore:blockGlitch>,
+		<endreborn:block_endorium>,
+		<ore:blockEnder>,
+		<ore:blockCrystaltine>,
+		<ore:blockGelidEnderium>,
+		<ore:blockCobalt>,
+		<ore:blockLead>,
+		<ore:blockEssenceMetal>,
+		<ore:blockEnderium>,
+		<ore:blockUranium>,
+		<ore:blockPulsatingIron>,
+		<botania:storage:1>,
+		<ore:blockPlatinum>,
+		<psi:psi_decorative:1>,
+		<ore:blockOsmiridium>,
+		<ore:blockMithril>,
+		<ore:blockKnightmetal>,
+		<ore:blockZirconium>,
+		<ore:blockMirion>,
+		<ore:blockOsgloglas>,
+		<ore:blockEnchantedMetal>,
+	]);
+
 # Creative Builder's Wand
 	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <extrautils2:itemcreativebuilderswand>, 
 	[[<extrautils2:itembuilderswand>, <extrautils2:itembuilderswand>, <extrautils2:itembuilderswand>], 
@@ -250,27 +396,36 @@ craft.make( <rats:rat_upgrade_creative>, ["pretty",
 	"∪ ▭ ▭ ▭ ∪ ▭ ▭ ▭ ∪"], list);
 
 
-# Creative Gas Tank
-list["η"] = <avaritia:resource:4>;
-list["ι"] = <bloodmagic:blood_tank:9>;
-list["◴"] = Bucket("helium3");
-list["◵"] = Bucket("tritium");
-list["◶"] = Bucket("fluegas");
-list["◷"] = Bucket("aerotheum");
-list["♣"] = Bucket("vapor_of_levity");
-list["μ"] = creativeGasTankFrame;
-list["⫳"] = <advgenerators:turbine_enderium>;
-
-craft.make( <mekanism:gastank>.withTag({tier: 4}), ["pretty",
-	"▬ ▬ ▬ ◫ ♣ ◫ ▬ ▬ ▬",
-	"▬ ◉ ▧ ◊ ♣ ◊ ▧ ◉ ▬",
-	"▬ ▤ ◴ η ⫳ η ◵ ▤ ▬",
-	"◫ ♦ ⰱ ж ι ж ⰱ ♦ ◫",
-	"♣ ♣ ⫳ ι μ ι ⫳ ♣ ♣",
-	"◫ ♦ ⰱ ж ι ж ⰱ ♦ ◫",
-	"▬ ▤ ◶ η ⫳ η ◷ ▤ ▬",
-	"▬ ◉ ▧ ◊ ♣ ◊ ▧ ◉ ▬",
-	"▬ ▬ ▬ ◫ ♣ ◫ ▬ ▬ ▬"], list);
+# [Creative Gas Tank] from [Creative Gas Tank Frame][+17]
+craft.remake(<mekanism:gastank>.withTag({tier: 4}), ["pretty",
+  "▬ ▬ ▬ ■ ~ ■ ▬ ▬ ▬",
+  "▬ R ▄ ♦ ~ ♦ ▄ R ▬",
+  "▬ ▀ H - E - ≈ ▀ ▬",
+  "■ ◊ G A B A G ◊ ■",
+  "~ ~ E B ◙ B E ~ ~",
+  "■ ◊ G A B A G ◊ ■",
+  "▬ ▀ ‰ - E - Z ▀ ▬",
+  "▬ R ▄ ♦ ~ ♦ ▄ R ▬",
+  "▬ ▬ ▬ ■ ~ ■ ▬ ▬ ▬"], {
+  "G": <advancedrocketry:oxygencharger>,  # Gas Charge Pad
+  "E": <advgenerators:turbine_enderium>,  # Enderium Turbine
+  "B": <bloodmagic:blood_tank:9>,         # Blood Tank Tier 10
+  "A": <draconicevolution:awakened_core>, # Awakened Core
+  "R": <extrautils2:drum:2>,              # Reinforced Large Drum
+  "■": <ore:blockLudicrite>,              # Ludicrite Block
+  "▀": <ore:blockMirion>,                 # Mirion Block
+  "▄": <ore:blockOsgloglas>,              # Osgloglas Block
+  "♦": <ore:gemAnglesite>,                # Anglesite
+  "◊": <ore:gemBenitoite>,                # Benitoite
+  "-": <ore:ingotCosmicNeutronium>,       # Neutronium Ingot
+  "▬": <ore:ingotUltimate>,               # The Ultimate Ingot
+  "◙": creativeGasTankFrame,              # Creative Gas Tank Frame
+  "Z": FluidCell("aerotheum"),            # Zephyrean Aerotheum
+  "‰": FluidCell("exhauststeam"),         # Exhau Ststeam
+  "H": FluidCell("helium3"),              # Helium-3
+  "≈": FluidCell("tritium"),              # Tritium
+  "~": FluidCell("vapor_of_levity"),      # Vapor of Levity
+});
 
 recipes.addShapeless("Creative Gas Tank Clearing", 
 <mekanism:gastank>.withTag({tier: 4}), [<mekanism:gastank>.withTag({tier: 4})]);
@@ -305,7 +460,7 @@ for fname in [
 	"latex","tree_oil",  "bio.ethanol", "liquidchorus", "heavy_metal", "mana", 	"crystal", "cloud_seed_concentrated", "ic2hot_coolant", 	
 ] as string[] {
 	fluidFrameSecondary =  fluidFrameSecondary + 
-		<thermalexpansion:tank>.withTag({Fluid: {FluidName: fname, Amount: 400000} , Level: 2 as byte});
+		<thermalexpansion:tank>.withTag({Fluid: {FluidName: fname, Amount: 900000} , Level: 2 as byte});
 }
 
 # Build the recipe
@@ -341,19 +496,6 @@ recipes.addShapeless("Creative Tank Reset",
 <mekanism:machineblock2:11>.withTag({tier: 4}), 
 [<mekanism:machineblock2:11>.withTag({tier: 4})]);
 
-	
-# Psi Creative Rod Frame
-	scripts.wrap.extendedcrafting.TableCrafting.addShaped(4, <psi:cad_assembly:5>, 
-	[[<psi:cad_assembly:4>, <psi:cad_assembly:4>, <ore:ingotIvoryPsi>, null, null, null, null, null, null], 
-	[<psi:cad_assembly:4>, <ore:blockInfinity>, <psi:cad_assembly:4>, <ore:ingotIvoryPsi>, null, null, null, null, null], 
-	[<ore:ingotIvoryPsi>, <psi:cad_assembly:4>, <psi:cad_colorizer_:16>, <psi:cad_assembly:4>, null, null, null, null, null], 
-	[null, <ore:ingotIvoryPsi>, <psi:cad_assembly:4>, <bigreactors:mineralbenitoite>, <bigreactors:mineralbenitoite>, null, null, null, null], 
-	[null, null, null, <bigreactors:mineralbenitoite>, <psi:cad_assembly:3>, <psi:cad_assembly:3>, null, null, null], 
-	[null, null, null, null, <psi:cad_assembly:3>, <psi:cad_assembly:3>, <psi:cad_assembly:3>, null, null], 
-	[null, null, null, null, null, <psi:cad_assembly:3>, <psi:cad_assembly:3>, <psi:cad_assembly:3>, null], 
-	[null, null, null, null, null, null, <psi:cad_assembly:3>, <psi:cad_assembly:3>, <bigreactors:mineralbenitoite>], 
-	[null, null, null, null, null, null, null, <bigreactors:mineralbenitoite>, <bigreactors:mineralbenitoite>]]); 
-
 	list["π"] = <storagedrawers:upgrade_creative:1>;
 	list["ρ"] = <botania:exchangerod>;
 	list["ς"] = <buildinggadgets:exchangertool>.withTag({});
@@ -370,35 +512,26 @@ recipes.addShapeless("Creative Tank Reset",
 	"            ☠ ☠  ", 
 	"                ◊"], list);
 
-# [Creative Modifier*2] from [Gold Singularity][+16]
-craft.remake(<tconstruct:materials:50> * 2, ["pretty",
-  "▄ ▀ e e e e e ▀ ▄",
-  "▀ ▄ M m m m M ▄ ▀",
-  "l M □ ■ ■ ■ □ M i",
-  "l A ■ S E S ■ r i",
-  "l A ■ x G x ■ r i",
-  "l A ■ S E S ■ r i",
-  "l M □ ■ ■ ■ □ M i",
-  "▀ ▄ M O O O M ▄ ▀",
-  "▄ ▀ s s s s s ▀ ▄"], {
-  "■": <ore:blockKnightslime>,           # Block of Knightslime
-  "▀": <ore:blockAlubrass>,              # Block of Aluminum Brass
-  "□": <tconstruct:large_plate>.withTag({Material: "xu_magical_wood"}), # Magical Wooden Large Plate
-  "A": <ore:blockAlumite>,               # Alumite Block
-  "▄": <ore:blockPigiron>,               # Block of Pigiron
-  "e": <tconstruct:materials:19>,        # Mending Moss
-  "E": <tconstruct:materials:12>,        # Expander (Horizontal)
+# [Creative Modifier] from [Gold Singularity][+10]
+craft.remake(<tconstruct:materials:50>, ["pretty",
+  "S A A A S",
+  "▀ ■ □ ■ ▄",
+  "▀ s G M ▄",
+  "▀ ■ O ■ ▄",
+  "S P P P S"], {
+  "■": <tconstruct:metal:6>,             # Silky Block of Jewel
+  "▀": <ore:blockKnightslime>,           # Block of Knightslime
+  "P": <ore:blockPigiron>,               # Block of Pigiron
+  "A": <ore:blockAlubrass>,              # Block of Aluminum Brass
+  "□": <tconevo:material:2>,             # Plate of Unsealing
+  "S": <cyclicmagic:soulstone>,          # Soulstone
+  "s": <ore:blockOsgloglas>,             # Osgloglas Block
+  "▄": <ore:blockAlumite>,               # Alumite Block
   "G": <extendedcrafting:singularity:5>, # Gold Singularity
-  "i": <ore:slimecrystalGreen>,          # Green Slime Crystal
-  "l": <ore:slimecrystalBlue>,           # Blue Slime Crystal
-  "M": <ore:blockManyullyn>,             # Block of Manyullyn
-  "m": <ore:blockOsmiridium>,            # Osmiridium Block
-  "O": <ore:blockOsgloglas>,             # Osgloglas Block
-  "r": <ore:blockMirion>,                # Mirion Block
-  "s": <ore:slimecrystalMagma>,          # Magma Slime Crystal
-  "S": <tconstruct:metal:6>,             # Silky Block of Jewel
-  "x": <tconstruct:materials:13>,        # Expander (Vertical)
+  "M": <ore:blockMirion>,                # Mirion Block
+  "O": <ore:blockOsmiridium>,            # Osmiridium Block
 });
+
 
 # AE2 Creative Cell
 	craft.make(<appliedenergistics2:creative_storage_cell>, ["pretty",
@@ -427,18 +560,28 @@ craft.remake(<tconstruct:materials:50> * 2, ["pretty",
 	"        ▦        "], list);
 	
 
-# ExU2 Mill
-list["☹"] = <draconicevolution:draconium_capacitor:1>;
-craft.make(<extrautils2:passivegenerator:6>, ["pretty",
-	"ⱄ ⱄ ▬ ☐ ☐ ☐ ▬ ⱄ ⱄ",
-	"ⱄ ▬ ◩ ◩ ◊ ◩ ◩ ▬ ⱄ",
-	"▬ ◧ ♦ ♂ ☺ ♂ ♦ ◪ ▬",
-	"☐ ◧ ♂ ⰻ ☹ ⰻ ♂ ◪ ☐",
-	"☐ ◊ ☺ ☹ ж ☹ ☺ ◊ ☐",
-	"☐ ◧ ♂ ☼ ☹ ☼ ♂ ◪ ☐",
-	"▬ ◧ ♦ ♂ ☺ ♂ ♦ ◪ ▬",
-	"ⱄ ▬ ◨ ◨ ◊ ◨ ◨ ▬ ⱄ",
-	"ⱄ ⱄ ▬ ☐ ☐ ☐ ▬ ⱄ ⱄ"], list);
+# [Creative Mill] from [Deep Dark Portal][+11]
+craft.remake(<extrautils2:passivegenerator:6>, ["pretty",
+  "C ■ ⌃ W ⌃ ■ C",
+  "■ ⌃ a a a ⌃ ■",
+  "⌃ L O B O i ⌃",
+  "W L A D A i W",
+  "⌃ L O B O i ⌃",
+  "■ ⌃ F F F ⌃ ■",
+  "C ■ ⌃ W ⌃ ■ C"], {
+  "■": <ore:blockDraconiumCharged>,      # Charged Draconium Block
+  "a": <extrautils2:passivegenerator:3>, # Water Mill
+  "A": <bigreactors:mineralanglesite>,   # Anglesite
+  "B": <bigreactors:mineralbenitoite>,   # Benitoite
+  "⌃": <extrautils2:decorativesolid:6>,  # Blue Quartz
+  "C": <extendedcrafting:material:12>,   # Crystaltine Catalyst
+  "D": <extrautils2:teleporter:1>,       # Deep Dark Portal
+  "F": <extrautils2:passivegenerator:5>, # Fire Mill
+  "W": <draconicevolution:wyvern_core>,  # Wyvern Core
+  "i": <extrautils2:passivegenerator:4>, # Wind Mill
+  "L": <extrautils2:passivegenerator:2>, # Lava Mill
+  "O": <extrautils2:opinium:6>,          # Opinium Core (Amazing)
+});
 
 
 
@@ -454,6 +597,7 @@ list["■"] = <draconicevolution:fusion_crafting_core>;
 list["κ"] = <extrautils2:decorativesolid:6>;
 
 # Mekanism Creative Energy
+list["☹"] = <draconicevolution:draconium_capacitor:1>;
 var creativeCube = <mekanism:energycube>.withTag({tier:4,mekData:{energyStored:1.7976931348623157E308}});
 craft.make(creativeCube, ["pretty",
 	"◘ ◘ ◙ ◙ τ . . . .",

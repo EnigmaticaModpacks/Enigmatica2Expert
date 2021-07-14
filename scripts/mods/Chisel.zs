@@ -104,3 +104,12 @@ craft.reshapeless(<chisel:chisel_diamond>, "AAB", {A: <minecraft:diamond>, B: <c
 recipes.remove(<chisel:chisel_hitech>);
 recipes.addShapeless(<chisel:chisel_hitech>, 
 	[<ore:sheetHDPE>,<ore:sheetHDPE>,<chisel:chisel_diamond>]);
+
+
+# Chests
+addVariation("chest", <minecraft:chest>);
+addVariation("chest", <quark:custom_chest>);
+addVariation("chest", <quark:custom_chest:1>);
+addVariation("chest", <quark:custom_chest:2>);
+addVariation("chest", <quark:custom_chest:3>);
+addVariation("chest", <quark:custom_chest:4>);

@@ -121,6 +121,8 @@ remakeEx(<plethora:module>, [[<ore:ingotGold>, <ore:chestEnder>, <ore:ingotGold>
 remakeEx(<draconicevolution:tool_upgrade:8>, [[<minecraft:dye:4>, <draconicevolution:draconic_core:*>, <minecraft:dye:4>], [<ore:ingotDraconium>, <conarm:chest_core>.withTag({Material: "diamantine_crystal"}), <ore:ingotDraconium>], [<minecraft:dye:4>, <draconicevolution:draconic_core:*>, <minecraft:dye:4>]]);
 remakeEx(<environmentaltech:modifier_jump_boost>, [[dimBootsCore, <environmentaltech:litherite_crystal>, dimBootsCore], [<environmentaltech:mica>, <environmentaltech:modifier_null>, <environmentaltech:mica>], [dimBootsCore, <environmentaltech:lonsdaleite_crystal>, dimBootsCore]]);
 
+mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:diamond_chestplate:*>,<bloodmagic:soul_gem:1>,<minecraft:iron_block>,<minecraft:obsidian>]);
+scripts.wrap.bloodmagic.TartaricForge.addRecipe(<bloodmagic:sentient_armour_gem>, [<conarm:chest_core>.withTag({Material: "diamantine_crystal"}), <bloodmagic:soul_gem:1>, <minecraft:iron_block>, <minecraft:obsidian>], 250, 150);
 
 
 # ######################################################################

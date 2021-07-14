@@ -177,7 +177,7 @@ function grow(input as IIngredient, output as IItemStack, exceptions as string,
     <thermalfoundation:fertilizer:2> * a,
     input * 5,
   ] as IIngredient[];
-  work(["Hydroponics"], exceptions, combo, [<fluid:water> * 40000], [output * 64], null, !isNull(secondaryOutput) ? [secondaryOutput * 5] : null, [secondaryChance]);
+  work(["Hydroponics"], exceptions, combo, [<fluid:water> * 40000], [output * (64 * 3)], null, !isNull(secondaryOutput) ? [secondaryOutput * 5] : null, [secondaryChance]);
 }
 
 # Crushing rocks (like granite, andesite, etc..) to obtain dusts
@@ -273,7 +273,12 @@ function magic(input as IIngredient[], output as IItemStack[], exceptions as str
 
 # Takes raw material (like Ore block) and enrich (process, treat) it to get materials
 # 📦 → 📦|💧
-function beneficiate(_input as IIngredient, _oreName as string, _amount as double, opts as IData) {
+function beneficiate(
+  _input as IIngredient, # Raw item (mostly ore) that would be processed (amount account)
+  _oreName as string,    # Ore name of this material, for example "Gold"
+  _amount as double,     # Amount of default simple output (like smelting ore in furnace)
+  opts as IData          # Special options
+) {
 
   val calc = wholesCalc(_input.amount, _amount);
   val amount = calc.outs as int;

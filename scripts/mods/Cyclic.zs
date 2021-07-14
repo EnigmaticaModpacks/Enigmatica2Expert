@@ -210,12 +210,12 @@ craft.remake(<cyclicmagic:fan>, ["pretty",
   "L": <rats:little_black_squash_balls>  # Little Black Squash Balls
 });
 
-# [Item_Collector] from [Print_Press_Plate][+3]
+# [Item Collector] from [Print_Press_Plate][+3]
 craft.remake(<cyclicmagic:block_vacuum>, ["pretty",
   "R B R",
   "R P R",
   "R ▲ R"], {
-  "P": <bibliocraft:printplate>,         # Print Press Plate
+  "P": <bibliocraft:enchantedplate:*>,   # Print Press Plate
   "R": <sonarcore:reinforcedstoneblock>, # Reinforced Stone
   "▲": <ore:dustSkyStone>,               # Sky Stone Dust
   "B": <randomthings:ingredient:13>      # Blackout Powder

@@ -615,8 +615,17 @@ function workEx(machineNameAnyCase as string, exceptions as string,
         .addEnergyPerTickInput(200000);
 
       for ins in inputItems { builder.addItemInput(ins.itemArray[0]); }
-      for out in combinedOutput { builder.addItemOutput(out); }
       if (haveLiquidInput) { builder.addFluidInput(inputLiquid0); }
+      for out in combinedOutput {
+        val whole = (out.amount / 64) as int + 1;
+        val resid = out.amount % 64;
+        if(whole > 1) {
+          for w in 1 .. whole {
+            builder.addItemOutput(out * 64);
+          }
+        }
+        if(resid > 0) builder.addItemOutput(out * resid);
+      }
 
       builder.build();
       recipeCount += 1;

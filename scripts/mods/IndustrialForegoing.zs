@@ -286,3 +286,16 @@ for i, oreName in [
 		"▬": oreDict.get("nugget" ~ oreName),
 	});
 }
+
+# [Infinity Drill] from [Laser Drill][+4]
+recipes.removeByRecipeName("industrialforegoing:infinity_drill_0");
+craft.make(<industrialforegoing:infinity_drill>, ["pretty",
+  "  S D",
+  "▬ L S",
+  "▬ B  "], {
+  "B": <industrialforegoing:black_hole_unit>, # Black Hole Unit
+  "S": <immersiveengineering:drillhead:*>,    # Steel Drill Head
+  "D": <actuallyadditions:item_drill:*>,      # Drill
+  "▬": <ore:ingotPinkMetal>,                  # Pink Slime Ingot
+  "L": <industrialforegoing:laser_drill>,     # Laser Drill
+});

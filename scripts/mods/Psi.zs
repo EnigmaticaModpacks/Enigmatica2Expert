@@ -101,3 +101,40 @@ for out, inps in cads {
 	});
 }
 # --------------------------------------------------
+
+# [Star of PSI] from [PSI-Dyne Cell][+4]
+craft.remake(<psicosts:creative_cell>, ["pretty",
+  "P   § § P",
+  "§ ▬ D ▬  ",
+  "§ D ◘ D §",
+  "  ▬ D ▬ §",
+  "P § §   P"], {
+  "P": <deepmoblearning:pristine_matter_slime>, # Pristine Slime Matter
+  "D": <draconicevolution:draconic_core>,       # Draconic Core
+  "§": <deepmoblearning:glitch_infused_ingot>,  # Glitch Infused Ingot
+  "◘": <psicosts:psi_cell:2>,                   # PSI-Dyne Cell
+  "▬": <ore:ingotEbonyPsi>,                     # Ebony Psimetal Ingot
+});
+
+# [Creative Rod Frame] from [Benitoite][+9]
+craft.remake(<psi:cad_assembly:5>, ["pretty",
+  "  п □            ",
+  "D S п □ □        ",
+  "  D S * □ □      ",
+  "    D S * □ D    ",
+  "      D S ◘ ▲ D  ",
+  "        ◊ ▲ ◘ ▲ D",
+  "      D ■ ■ ▲ F  ",
+  "      ■ ■ ■ D    ",
+  "      D ■ D      "], {
+  "■": <psi:psi_decorative:7>,                    # Ebony Psimetal Block
+  "□": <psi:psi_decorative:6>,                    # Bright Psimetal Flow Plate
+  "▲": <ore:dustAlchAmethyst>,                    # Amethyst Alchemical Ore Dust
+  "S": <psicosts:creative_cell>,                  # Star of PSI
+  "D": <draconicevolution:infused_obsidian>,      # Draconium Infused Obsidian
+  "F": <psicosts:flux_resonator>,                 # Flux Resonator
+  "◘": <psicosts:psi_cell:3>,                     # PSI-Force Cell
+  "*": <extendedcrafting:singularity_custom:107>, # Flux Crystal Singularity
+  "◊": <ore:gemBenitoite>,                        # Benitoite
+  "п": <psi:psi_decorative:4>,                    # Dark Psimetal Flow Plate
+});

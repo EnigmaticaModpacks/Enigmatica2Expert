@@ -19,3 +19,16 @@ remake("buildinggadgets buildingtool", <buildinggadgets:buildingtool>,       [
 	[<ore:platePlatinum>, <opencomputers:misc>, <ore:platePlatinum>], 
 	[null, <capabilityproxy:ranged_capability_proxy>, null]]);
 
+# [Creative Paste Container] from [Mana Dust][+4]
+craft.remake(<buildinggadgets:constructionpastecontainercreative>, ["pretty",
+  "  L ▲ L",
+  "  ▬ P ▬",
+  "  ▬ P ▬",
+  "  ▬ P ▬",
+  "  C C C"], {
+  "P": <buildinggadgets:constructionpastecontainert3>.withTag({amount: 8192 as long}), # Paste Container T3
+  "▲": <ore:dustMana>,                      # Mana Dust
+  "C": <integratedterminals:chorus_glass>,  # Chorus Glass
+  "▬": <ore:ingotDraconium>,                # Draconium Ingot
+  "L": <integrateddynamics:logic_director>, # Logic Director
+});

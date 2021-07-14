@@ -14,27 +14,6 @@ mods.mekanism.crusher.removeRecipe(<bigreactors:dustgraphite>, <bigreactors:ingo
 for ingot in <ore:ingotGraphite>.items {
 	scripts.wrap.mekanism.crusher.addRecipe(ingot, <nuclearcraft:dust:8>);
 }
-
-# Energized Smelter is not entirely unified, this should fix that
-var itemsToUnify as IItemStack[IItemStack] = {
-	<ic2:crushed> : <thermalfoundation:material:128>,
-	<ic2:crushed:3> : <thermalfoundation:material:131>,
-	<ic2:crushed:4> : <thermalfoundation:material:130>,
-	<ic2:crushed:5> : <thermalfoundation:material:129>,
-	<ic2:purified> : <thermalfoundation:material:128>,
-	<ic2:purified:3> : <thermalfoundation:material:131>,
-	<ic2:purified:4> : <thermalfoundation:material:130>,
-	<ic2:purified:5> : <thermalfoundation:material:129>
-};
-
-for input, output in itemsToUnify {
-	mods.mekanism.smelter.removeRecipe(input);
-
-	scripts.wrap.mekanism.smelter.addRecipe(input, output);
-}
-
-# Starmetal Ingots
-	scripts.wrap.mekanism.smelter.addRecipe(<astralsorcery:itemcraftingcomponent:2>, <astralsorcery:itemcraftingcomponent:1>);
 	
 # Increasing Stacksize
 	<mekanism:tierinstaller>.maxStackSize = 16;
@@ -264,10 +243,16 @@ function mekStorage(i as int, item as IItemStack, storageIngrs as IIngredient[st
 	val output = item.withTag({tier: i});
 	craft.remake(output, strGrid, storageIngrs);
 
+	var gridStr = "CT";
+
+	# If this is Bin, add additional ingredient to prevent adding item to Bin storage
+	if(item.definition.id == 'mekanism:basicblock' && item.damage == 6) gridStr += "R";
+
 	# Tier Installer upgrade
-	if(i>0) craft.shapeless(output, "CT", {
+	if(i>0) craft.shapeless(output, gridStr, {
 		"C": item.withTag({tier: i - 1}),
 		"T": <mekanism:tierinstaller>.definition.makeStack(i),
+		"R": <ore:dustRedstone>,
 	});
 }
 

@@ -64,13 +64,6 @@ scripts.processUtils.avdRockXmlRecipe("Crystallizer", [<ore:dustBoron> * 5], [<f
 	[<ore:stickAluminum>, <ore:plateAdvancedAlloy>, <ore:stickAluminum>], 
 	[<ore:plateCopper>, <ic2:casing:1>, <ore:plateCopper>]]);
 
-# Lithium Ion Battery
-	recipes.remove(<nuclearcraft:lithium_ion_battery_basic>);
-	recipes.addShapedMirrored(<nuclearcraft:lithium_ion_battery_basic>, 
-	[[<ore:plateBasic>, null, <ore:plateBasic>], 
-	[null, <nuclearcraft:lithium_ion_cell>, null], 
-	[<ore:plateBasic>, null, <ore:plateBasic>]
-	]);
 
 # [Alloy Furnace] from [Electric Furnace][+4]
 craft.remake(<nuclearcraft:alloy_furnace_idle>, ["pretty",
@@ -399,3 +392,68 @@ mods.immersiveengineering.Crusher.removeRecipesForInput(<minecraft:quartz>);
 mods.mekanism.crusher.removeRecipe(qwrong);
 mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:quartz>);
 scripts.process.crush(<ore:gemQuartz>, qdust, "only: iecrusher aegrinder mekcrusher", null, null);
+
+# [Basic Voltaic Pile] from [Basic Plating][+2]
+craft.remake(<nuclearcraft:voltaic_pile_basic>, ["▬","□","⌂"], {
+  "□": <ore:plateBasic>,     # Basic Plating
+  "⌂": <ic2:casing:1>,       # Copper Item Casing
+  "▬": <ore:ingotMagnesium>, # Magnesium Ingot
+});
+
+# [Advanced Voltaic Pile] from [Advanced Plating][+2]
+craft.remake(<nuclearcraft:voltaic_pile_advanced>, ["B","□","⌂"], {
+  "□": <ore:plateAdvanced>, # Advanced Plating
+  "⌂": <ic2:casing:1>,      # Copper Item Casing
+  "B": <nuclearcraft:voltaic_pile_basic>, # Basic Voltaic Pile
+});
+
+# [DU Voltaic Pile] from [DU Plating][+2]
+craft.remake(<nuclearcraft:voltaic_pile_du>, ["A","□","⌂"], {
+  "□": <ore:plateDU>,  # DU Plating
+  "A": <nuclearcraft:voltaic_pile_advanced>, # Advanced Voltaic Pile
+  "⌂": <ic2:casing:1>, # Copper Item Casing
+});
+
+# [Elite Voltaic Pile] from [Elite Plating][+2]
+craft.remake(<nuclearcraft:voltaic_pile_elite>, ["D","□","⌂"], {
+  "□": <ore:plateElite>, # Elite Plating
+  "⌂": <ic2:casing:1>,   # Copper Item Casing
+  "D": <nuclearcraft:voltaic_pile_du>, # DU Voltaic Pile
+});
+
+# [Basic Lithium Ion Battery] from [Basic Plating][+2]
+craft.remake(<nuclearcraft:lithium_ion_battery_basic>, ["◘","□","M"], {
+  "□": <ore:plateBasic>,                # Basic Plating
+  "◘": <nuclearcraft:lithium_ion_cell>, # Lithium Ion Cell
+  "M": <ore:solenoidMagnesiumDiboride>, # Magnesium Diboride Solenoid
+});
+
+# [Advanced Lithium Ion Battery] from [Advanced Plating][+2]
+craft.remake(<nuclearcraft:lithium_ion_battery_advanced>, ["pretty",
+  "  □  ",
+  "B B B",
+  "  M  "], {
+  "□": <ore:plateAdvanced>,             # Advanced Plating
+  "B": <nuclearcraft:lithium_ion_battery_basic>, # Basic Lithium Ion Battery
+  "M": <ore:solenoidMagnesiumDiboride>, # Magnesium Diboride Solenoid
+});
+
+# [DU Lithium Ion Battery] from [DU Plating][+2]
+craft.remake(<nuclearcraft:lithium_ion_battery_du>, ["pretty",
+  "  □  ",
+  "A A A",
+  "  M  "], {
+  "A": <nuclearcraft:lithium_ion_battery_advanced>, # Advanced Lithium Ion Battery
+  "□": <ore:plateDU>,                   # DU Plating
+  "M": <ore:solenoidMagnesiumDiboride>, # Magnesium Diboride Solenoid
+});
+
+# [Elite Lithium Ion Battery] from [Elite Plating][+2]
+craft.remake(<nuclearcraft:lithium_ion_battery_elite>, ["pretty",
+  "  □  ",
+  "D D D",
+  "  M  "], {
+  "□": <ore:plateElite>,                # Elite Plating
+  "D": <nuclearcraft:lithium_ion_battery_du>, # DU Lithium Ion Battery
+  "M": <ore:solenoidMagnesiumDiboride>, # Magnesium Diboride Solenoid
+});

@@ -263,7 +263,6 @@ addTieredRecipe(5, <mysticalagriculture:uranium_seeds>,        [<ore:blockUraniu
 addTieredRecipe(5, <mysticalagriculture:rock_crystal_seeds>,   [<astralsorcery:itemcelestialcrystal>.anyDamage()], "mineralis");
 addTieredRecipe(5, <mysticalagriculture:draconium_seeds>,      [<ore:blockDraconium>], "mineralis");
 addTieredRecipe(5, <mysticalagradditions:neutronium_seeds>,    [<ore:ingotCosmicNeutronium>], "mineralis");
-addTieredRecipe(5, <mysticalcreations:ultimate_seeds>,         [<ore:blockUltimate>], "horologium");
 
 
 # *======= Seeds Tier 6 =======*
@@ -321,7 +320,7 @@ recipes.addShaped(Bucket("creosote"), [[null, <mysticalcreations:creosolite_esse
 # Add Mystical Creations processing in Insolator
 scripts.process.grow(<mysticalcreations:creosolite_seeds>, <mysticalcreations:creosolite_essence> * 9, "No exceptions", <mysticalcreations:creosolite_seeds>, 1);
 scripts.process.grow(<mysticalcreations:cheese_seeds>, 		<mysticalcreations:cheese_essence> * 9,      "No exceptions", <mysticalcreations:cheese_seeds>, 1);
-scripts.process.grow(<mysticalcreations:ultimate_seeds>,   <mysticalcreations:ultimate_essence> * 9,   "No exceptions", <mysticalcreations:ultimate_seeds>, 1);
+scripts.process.grow(<mysticalcreations:ultimate_seeds>,   <mysticalcreations:ultimate_essence> * 9,   "only: Hydroponics", <mysticalcreations:ultimate_seeds>, 1);
 
 # Recycling can
 scripts.process.recycleMetal(<mysticalagriculture:watering_can:0>, <mysticalagriculture:crafting:33> * 4, null, null);

@@ -119,7 +119,7 @@ craft.remake(<contenttweaker:empowered_phosphor> * 4, ["pretty",
   "P B P",
   "i P i"], {
   "P": <forestry:phosphor>,          # Phosphor
-  "B": <forestry:bituminous_peat>,   # Bituminous Peat
+  "B": <forestry:propolis:*>,
   "i": <contenttweaker:blasted_coal>
 });
 
@@ -230,7 +230,7 @@ craft.remake(<requious:infinity_furnace>, ["pretty",
   "# ▬ Ϟ ▬ #",
   "T R E R T"], {
   "R": <rats:marbled_cheese_raw>,                 # Raw Marbled Cheese
-  "#": <forestry:logs.1:3>,                       # Sequoia
+  "#": <ore:logSequoia>,                          # Sequoia
   "T": <avaritiafurnace:triplecompressedfurnace>, # Triple Compressed Furnace
   "E": <contenttweaker:empowered_phosphor>,       # Empowered Phosphor
   "r": <rats:idol_of_ratlantis>,

@@ -10,8 +10,8 @@
         { "x": -2, "y": 0, "z": 0, "elements": ["modularmachinery:blockcasing@0"] },
         { "x": -2, "y": 1, "z": 0, "elements": ["quark:colored_flowerpot_white@0"] },
         { "x": -2, "y": 2, "z": 0, "elements": ["actuallyadditions:block_colored_lamp_on@0"] },
-        { "x": -3, "y": 0, "z": 0, "elements": ["casings_energy_in"] },
-        { "x": -3, "y": 1, "z": 0, "elements": ["casings_modular"] },
+        { "x": -3, "y": 0, "z": 0, "elements": ["casings_modular", "casings_energy_in"] },
+        { "x": -3, "y": 1, "z": 0, "elements": ["casings_modular", "casings_energy_in"] },
         { "x": -3, "y": 2, "z": 0, "elements": ["actuallyadditions:block_lamp_powerer@5"] },
         { "x": 0,  "y": 1, "z": 0, "elements": ["quark:colored_flowerpot_white@0"] },
         { "x": 0,  "y": 2, "z": 0, "elements": ["actuallyadditions:block_colored_lamp_on@0"] },
@@ -21,8 +21,8 @@
         { "x": 2,  "y": 0, "z": 0, "elements": ["modularmachinery:blockcasing@0"] },
         { "x": 2,  "y": 1, "z": 0, "elements": ["quark:colored_flowerpot_white@0"] },
         { "x": 2,  "y": 2, "z": 0, "elements": ["actuallyadditions:block_colored_lamp_on@0"] },
-        { "x": 3,  "y": 0, "z": 0, "elements": ["casings_modular"] },
-        { "x": 3,  "y": 1, "z": 0, "elements": ["casings_modular"] },
+        { "x": 3,  "y": 0, "z": 0, "elements": ["casings_modular", "casings_energy_in"] },
+        { "x": 3,  "y": 1, "z": 0, "elements": ["casings_modular", "casings_energy_in"] },
         { "x": 3,  "y": 2, "z": 0, "elements": ["actuallyadditions:block_lamp_powerer@4"] }
     ]
 }

@@ -96,13 +96,6 @@ recipes.removeShaped(<draconicevolution:energy_crystal>);
 scripts.wrap.bloodmagic.AlchemyTable.addRecipe(<draconicevolution:energy_crystal> * 4, [
 	<astralsorcery:blocklens>, <thermalfoundation:material:136>, <bigreactors:ingotcyanite>, <threng:material>,
 ], 2000, 200, 2);
-	
-# Basic Wireless Energy Crystal
-	recipes.remove(<draconicevolution:energy_crystal:6>);
-	recipes.addShapedMirrored("Basic Wireless Enegy Crystal", <draconicevolution:energy_crystal:6>,
-	[[<ore:dustAstralStarmetal>,<extrautils2:powertransmitter>,<ore:dustAstralStarmetal>],
-	[<appliedenergistics2:material:41>,<draconicevolution:energy_crystal:0>,<appliedenergistics2:material:41>],
-	[<ore:dustAstralStarmetal>,<extrautils2:powertransmitter>,<ore:dustAstralStarmetal>]]);
 
 # [Dislocator] from [Chorus Glass][+3]
 craft.remake(<draconicevolution:dislocator>, ["pretty",
@@ -151,10 +144,15 @@ craft.reshapeless(<draconicevolution:dislocator_bound:2>, "DrS", {
 });
 
 # Harder to better fit as endgame ingredient
-# [Draconium Infused Obsidian] from [Draconium Dust*4][+2]
+# Defined in other files
 recipes.remove(<draconicevolution:infused_obsidian>);
-scripts.process.alloy([
-	<biomesoplenty:crystal>,
-	<ore:dustDraconium> * 4,
-	<ore:ingotBrickNetherGlazed> * 6
-], <draconicevolution:infused_obsidian>, "no exceptions");
+
+# [Particle Generator] from [Draconium Block][+2]
+craft.remake(<draconicevolution:particle_generator>, ["pretty",
+  "D ▬ D",
+  "▬ ■ ▬",
+  "D ▬ D"], {
+  "■": <ore:blockDraconium>,                 # Draconium Block
+  "D": <draconicevolution:infused_obsidian>, # Draconium Infused Obsidian
+  "▬": <ore:ingotDemonicMetal>,              # Demon Ingot
+});

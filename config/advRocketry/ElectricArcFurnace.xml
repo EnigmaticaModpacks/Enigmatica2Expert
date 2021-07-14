@@ -111,18 +111,6 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Draconium Infused Obsidian] -->
-	<Recipe timeRequired="10" power="40000">
-		<input>
-			<itemStack>biomesoplenty:crystal 1</itemStack>
-			<oreDict>dustDraconium 4</oreDict>
-			<oreDict>ingotBrickNetherGlazed 6</oreDict>
-		</input>
-		<output>
-			<itemStack>draconicevolution:infused_obsidian 1 0</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [End Steel Ingot] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>

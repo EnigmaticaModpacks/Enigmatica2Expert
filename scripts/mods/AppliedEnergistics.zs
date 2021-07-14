@@ -256,7 +256,7 @@ craft.remake(<appliedenergistics2:material:28> * 2, ["pretty",
 scripts.process.crush(<appliedenergistics2:sky_stone_block>, <appliedenergistics2:material:45>, "Except: AEGrinder Pulverizer", null, null);
 
 # Batch dust crushing
-scripts.process.crush(<appliedenergistics2:fluix_block>, <appliedenergistics2:material:8>, "only: SagMill", null, null);
+scripts.process.crush(<appliedenergistics2:fluix_block>, <appliedenergistics2:material:8> * 4, "only: SagMill", null, null);
 
 /* 
 Patchouli_js('Items/Matter Cannon', [

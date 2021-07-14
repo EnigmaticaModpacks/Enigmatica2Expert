@@ -22,6 +22,9 @@ recipes.addShaped("ender_bucket2",
 	[[<ore:plateIron>, <minecraft:ender_pearl>, <ore:plateIron>],
 	[null, <ore:plateIron>, null]]);
 
+# Clear reinforced bucket
+utils.clearFluid(<randomthings:reinforcedenderbucket>);
+
 # Precious emerald from emerald in blueslime
 scripts.wrap.inworldcrafting.FluidToItem.transform(<randomthings:ingredient:9> * 2, <fluid:blueslime>, [<ore:oreEmerald>]);
 
@@ -45,12 +48,17 @@ craft.reshapeless(<randomthings:ingredient:6> * 4, 'ABC', {
 	C: <ore:cropBean>,
 	});
 
-# Time in bottle
-remake("randomthings_timeinabottle", <randomthings:timeinabottle>, [
-	[null, <animania:milk_bottle>, null], 
-	[<randomthings:ingredient:13>, <minecraft:clock>, <randomthings:ingredient:13>], 
-	[<animania:milk_bottle>, <extrautils2:klein>, <animania:milk_bottle>]
-]);
+# [Time in a bottle] from [Clock][+4]
+craft.remake(<randomthings:timeinabottle>, ["pretty",
+  "  o  ",
+  "B C B",
+  "E P E"], {
+  "P": <randomthings:ingredient:9>,  # Precious Emerald
+  "B": <randomthings:ingredient:13>, # Blackout Powder
+  "C": <minecraft:clock>,            # Clock
+  "E": <randomthings:imbue:2>,       # Experience Imbue
+  "o": <animania:milk_bottle>,       # Bottle of Milk
+});
 
 # Illuminator
 recipes.remove(<randomthings:spectreilluminator>);
@@ -298,7 +306,7 @@ craft.make(<randomthings:naturecore>, ["pretty",
   "# § #",
   "§ S §",
   "# § #"], {
-  "#": <forestry:logs.1:3> | <forestry:logs.6>, # Any sequoia
+  "#": <ore:logSequoia>, # Any sequoia
   "S": <cyclicmagic:soulstone>, # Soulstone
   "§": <randomthings:slimecube> # Slime Cube
 });

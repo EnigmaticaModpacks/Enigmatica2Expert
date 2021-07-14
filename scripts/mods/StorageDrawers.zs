@@ -57,7 +57,7 @@ import crafttweaker.item.ITooltipFunction;
 	[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
 	[<ore:stickWood>, <ore:plankWood>, <ore:stickWood>]]);
 
-# [Creative Storage Upgrade*4] from [Black Hole Unit][+8]
+# [Creative Storage Upgrade]*4 from [Black Hole Unit][+8]
 craft.remake(<storagedrawers:upgrade_creative> * 4, ["pretty",
   "i M # # # M i",
   "M M T ‚ T M M",
@@ -73,7 +73,7 @@ craft.remake(<storagedrawers:upgrade_creative> * 4, ["pretty",
   "T": <thaumcraft:taint_log>,                # Taintwood Log
   "t": <storagedrawers:upgrade_storage:3>,    # Storage Upgrade (IV)
   "i": <rftools:storage_module:2>,            # Tier 3 Storage Module
-  "‚": <ore:nuggetDraconicMetal>,             # Draconic Metal Nugget
+  "‚": <draconicevolution:infused_obsidian>,
   "M": <extrautils2:decorativesolidwood>,     # Magical Planks
 });
 

@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded bloodmagic
-// Uses of this mod: 26
+// Uses of this mod: 27
 
 
 //####################################################
@@ -67,10 +67,10 @@ zenClass Class_BloodAltar { zenConstructor() {}
 static BloodAltar as Class_BloodAltar = Class_BloodAltar();
 
 //####################################################
-// Uses of this class: 7
+// Uses of this class: 8
 zenClass Class_TartaricForge { zenConstructor() {}
 
-	// Uses of this method: 7
+	// Uses of this method: 8
 	function addRecipe(output as IItemStack, inputs as IIngredient[], minSouls as double, soulDrain as double) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.bloodmagic.TartaricForge.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient__(inputs), minSouls, soulDrain]));

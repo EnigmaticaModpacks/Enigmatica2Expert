@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded extendedcrafting
-// Uses of this mod: 71
+// Uses of this mod: 72
 
 
 //####################################################
@@ -61,7 +61,7 @@ zenClass Class_EnderCrafting { zenConstructor() {}
 static EnderCrafting as Class_EnderCrafting = Class_EnderCrafting();
 
 //####################################################
-// Uses of this class: 34
+// Uses of this class: 35
 zenClass Class_TableCrafting { zenConstructor() {}
 
 	// Uses of this method: 29

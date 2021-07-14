@@ -36,13 +36,16 @@ import crafttweaker.item.IItemStack as IItemStack;
 	[<forge:bucketfilled>.withTag({FluidName: "ic2pahoehoe_lava", Amount: 1000}), <immersiveengineering:blueprint>.anyDamage(), <forge:bucketfilled>.withTag({FluidName: "ic2distilled_water", Amount: 1000})], 
 	[<modularmachinery:blockcasing>, <ore:gearVibrant>, <modularmachinery:blockcasing>]]);
 
-# Hydroponics
-	recipes.addShapedMirrored("Hydroponics", 
-	<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:hydroponics"}), [
-        [<modularmachinery:blockcasing>, <thermalexpansion:machine:4>.withTag({Level: 4}), <modularmachinery:blockcasing>],
-        [<thaumcraft:lamp_growth>, <immersiveengineering:blueprint>, <thaumcraft:lamp_growth>],
-        [<modularmachinery:blockcasing>, <mysticalagriculture:growth_accelerator>, <modularmachinery:blockcasing>]]
-	);
+# [Machine Blueprint] from [Engineer's Blueprint][+3]
+    craft.remake(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:hydroponics"}), ["pretty",
+        "▬ G ▬",
+        "G E G",
+        "▬ § ▬"], {
+        "E": <immersiveengineering:blueprint:*>,          # Engineer's Blueprint
+        "G": <actuallyadditions:block_greenhouse_glass>, # Greenhouse Glass
+        "§": <mysticalagriculture:growth_accelerator>,   # Growth Accelerator
+        "▬": <ore:ingotModularium>,                      # Modularium Alloy
+    });
 
 # [Machine Vent] from [Machine Casing][+1]
 craft.remake(<modularmachinery:blockcasing:1>, [

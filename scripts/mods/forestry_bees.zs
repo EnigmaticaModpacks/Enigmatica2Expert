@@ -292,7 +292,7 @@ zenClass BeeHelper {
 			next("Tinsmith"); addTinkersCentrifuges();
 			next("Рaughty" ); mods.botania.ManaInfusion.addInfusion(currOutList()[2], c['💧'], 100); mods.botania.ManaInfusion.addAlchemy(currOutList()[3], c['💧'], 200); mods.botania.ManaInfusion.addConjuration(currOutList()[4], c['💧'], 500); 
 			next("Egoistic"); scripts.wrap.actuallyadditions.AtomicReconstructor.addRecipe(c['🍯'], c['💧'], 10000);
-			next("Vain"    ); scripts.process.fill(c['💧'],  <liquid:base_essence> * 16,  c['🍯'],  "Except: Casting DryingBasin MechanicalDryingBasin");
+			next("Vain"    ); scripts.process.fill(c['💧'],  <liquid:base_essence>,  c['🍯'],  "Except: Casting DryingBasin MechanicalDryingBasin");
 			next("Tinker"  ); mods.thermalexpansion.Centrifuge.removeRecipe(c['⚙️']); addTinkersCentrifuges();
 			next("Artisan" ); mods.thermalexpansion.Centrifuge.removeRecipe(c['⚙️']); addTinkersCentrifuges();
 			next("Selfish" ); scripts.process.compress(c['💧'], c['🍯'], "only: Compactor");

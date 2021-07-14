@@ -1,4 +1,5 @@
-import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IItemStack;
+import crafttweaker.data.IData;
 #modloaded advancedrocketry
 
 # Rename basalt as it not oredicted and have different uses
@@ -135,23 +136,33 @@ recipes.addShapeless("Clearing AdvRock Tank", <advancedrocketry:liquidtank>, [<a
 mods.thermalexpansion.EnervationDynamo.addFuel(<advancedrocketry:electricmushroom>, 90000000);
 
 # Crystalls recycling
-val CLN = <ore:nuggetCrystaltine>.firstItem;
-val crtlExcps = "except: manufactory Macerator ThermalCentrifuge mekCrusher";
-scripts.process.crush(<advancedrocketry:crystal:3>, <jaopca:item_crystalardite>,  crtlExcps, [<actuallyadditions:item_crystal_empowered>,   <environmentaltech:kyronite_crystal>, CLN], [0.6f, 0.3f, 0.05f]);
-scripts.process.crush(<advancedrocketry:crystal:1>, <jaopca:item_crystalcobalt>,  crtlExcps, [<actuallyadditions:item_crystal_empowered:1>, <environmentaltech:pladium_crystal>,  CLN], [0.6f, 0.3f, 0.05f]);
-scripts.process.crush(<advancedrocketry:crystal>,   <jaopca:item_crystalplatinum>,crtlExcps, [<actuallyadditions:item_crystal_empowered:2>, <environmentaltech:ionite_crystal>,   CLN], [0.6f, 0.3f, 0.05f]);
-scripts.process.crush(<advancedrocketry:crystal:5>, <jaopca:item_crystalthorium>, crtlExcps, [<actuallyadditions:item_crystal_empowered:3>, <environmentaltech:aethium_crystal>,  CLN], [0.6f, 0.3f, 0.05f]);
-scripts.process.crush(<advancedrocketry:crystal:2>, <jaopca:item_crystaluranium>, crtlExcps, [<actuallyadditions:item_crystal_empowered:4>, <environmentaltech:litherite_crystal>,CLN], [0.6f, 0.3f, 0.05f]);
-scripts.process.crush(<advancedrocketry:crystal:4>, <jaopca:item_crystaliridium>, crtlExcps, [<actuallyadditions:item_crystal_empowered:5>, <environmentaltech:erodium_crystal>,  CLN], [0.6f, 0.3f, 0.05f]);
+val alienCrystals = {
+  Red   : [<advancedrocketry:crystal:3>, <actuallyadditions:item_crystal_empowered:2>, <jaopca:item_crystalardite>,  <environmentaltech:ionite_crystal>   ],
+  Blue  : [<advancedrocketry:crystal:1>, <actuallyadditions:item_crystal_empowered:1>, <jaopca:item_crystalcobalt>,  <environmentaltech:pladium_crystal>  ],
+  Violet: [<advancedrocketry:crystal:0>, <actuallyadditions:item_crystal_empowered:4>, <jaopca:item_crystalplatinum>,<environmentaltech:litherite_crystal>],
+  Orange: [<advancedrocketry:crystal:5>, <actuallyadditions:item_crystal_empowered:0>, <jaopca:item_crystalthorium>, <environmentaltech:kyronite_crystal> ],
+  Green : [<advancedrocketry:crystal:2>, <actuallyadditions:item_crystal_empowered:5>, <jaopca:item_crystaluranium>, <environmentaltech:erodium_crystal>  ],
+  Yellow: [<advancedrocketry:crystal:4>, <actuallyadditions:item_crystal_empowered:3>, <jaopca:item_crystaliridium>, <environmentaltech:aethium_crystal>  ],
+} as IItemStack[][string];
 
-# Special case for thermal centrifuge - it have no chances for secondary outputs
-val ic2Cent = ["ThermalCentrifuge"] as string[];
-scripts.process.work(ic2Cent, null , [<advancedrocketry:crystal:3> * 4] , null , [<jaopca:item_crystalardite>  * 3 , <actuallyadditions:item_crystal_empowered>  * 2 , <environmentaltech:kyronite_crystal> ] , null , null , null);
-scripts.process.work(ic2Cent, null , [<advancedrocketry:crystal:1> * 4] , null , [<jaopca:item_crystalcobalt>  * 3 , <actuallyadditions:item_crystal_empowered:1>* 2 , <environmentaltech:pladium_crystal>  ] , null , null , null);
-scripts.process.work(ic2Cent, null , [<advancedrocketry:crystal>   * 4] , null , [<jaopca:item_crystalplatinum>* 3 , <actuallyadditions:item_crystal_empowered:2>* 2 , <environmentaltech:ionite_crystal>   ] , null , null , null);
-scripts.process.work(ic2Cent, null , [<advancedrocketry:crystal:5> * 4] , null , [<jaopca:item_crystalthorium> * 3 , <actuallyadditions:item_crystal_empowered:3>* 2 , <environmentaltech:aethium_crystal>  ] , null , null , null);
-scripts.process.work(ic2Cent, null , [<advancedrocketry:crystal:2> * 4] , null , [<jaopca:item_crystaluranium> * 3 , <actuallyadditions:item_crystal_empowered:4>* 2 , <environmentaltech:litherite_crystal>] , null , null , null);
-scripts.process.work(ic2Cent, null , [<advancedrocketry:crystal:4> * 4] , null , [<jaopca:item_crystaliridium> * 3 , <actuallyadditions:item_crystal_empowered:5>* 2 , <environmentaltech:erodium_crystal>  ] , null , null , null);
+for crystalName, ingrs in alienCrystals {
+  val input       = ingrs[0];
+  val output      = ingrs[1];
+  val secondary   = ingrs[2];
+  val evt_crystal = ingrs[3];
+
+  # Main output + secondary
+  scripts.process.crush(input, output, "only: eu2Crusher AACrusher", [secondary], [0.3f]);
+
+  # Meat washing for EVT crystals
+  val tag = {Ore: "aliencrystal" + crystalName} as IData;
+  mods.industrialforegoing.WashingFactory.add("aliencrystal" + crystalName, <liquid:meat> * 200, <fluid:if.ore_fluid_raw>.withTag(tag) * 50);
+  mods.industrialforegoing.FermentationStation.add(<liquid:if.ore_fluid_raw>.withTag(tag), <liquid:if.ore_fluid_fermented>.withTag(tag));
+  mods.industrialforegoing.FluidSievingMachine.add(<liquid:if.ore_fluid_fermented>.withTag(tag) * 100, evt_crystal, <environmentaltech:mica>);
+
+  # Crystaltine extraction
+	scripts.process.fill(input, <liquid:ic2hot_water> * 250, <ore:nuggetCrystaltine>.firstItem, "only: NCInfuser Transposer");
+}
 
 scripts.process.compress(<ore:blockCharcoal>, <advancedrocketry:misc:1>, "No Exceptions");
 

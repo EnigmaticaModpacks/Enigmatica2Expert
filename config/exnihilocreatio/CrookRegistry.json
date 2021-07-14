@@ -8,6 +8,15 @@
       },
       "chance": 0.1,
       "fortuneChance": 0.0
+    },
+    {
+      "stack": {
+        "name": "integrateddynamics:menril_sapling",
+        "amount": 1,
+        "meta": 0
+      },
+      "chance": 0.01,
+      "fortuneChance": 0.0
     }
   ],
   "ore:woolPrime": [

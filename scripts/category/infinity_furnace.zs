@@ -52,8 +52,8 @@ ${filtered.join('\n')}`
 })()
 )*/
 
-# Total Furnace recipes registered: 922
-# Filtered: 65
+# Total Furnace recipes registered: 923
+# Filtered: 67
 infinFurnace(<actuallyadditions:block_misc:3>, <actuallyadditions:item_misc:5>);
 infinFurnace(<actuallyadditions:item_dust:3>, <minecraft:emerald>);
 infinFurnace(<actuallyadditions:item_dust:7>, <actuallyadditions:item_misc:5>);
@@ -88,6 +88,7 @@ infinFurnace(<betteranimalsplus:turkey_leg_raw>, <betteranimalsplus:turkey_leg_c
 infinFurnace(<betteranimalsplus:turkey_raw>, <betteranimalsplus:turkey_cooked>);
 infinFurnace(<bigreactors:dustblutonium>, <bigreactors:ingotblutonium>);
 infinFurnace(<bigreactors:dustcyanite>, <bigreactors:ingotcyanite>);
+#infinFurnace(<bigreactors:dustgraphite>, <bigreactors:ingotgraphite>);
 infinFurnace(<bigreactors:dustludicrite>, <bigreactors:ingotludicrite>);
 infinFurnace(<bigreactors:duststeel>, <thermalfoundation:material:160>);
 infinFurnace(<bigreactors:dustyellorium>, <immersiveengineering:metal:5>);
@@ -162,7 +163,7 @@ infinFurnace(<forestry:peat>, <forestry:ash>);
 #infinFurnace(<forestry:resources:2>, <thermalfoundation:material:129>);
 infinFurnace(<forestry:resources>, <forestry:apatite>);
 #infinFurnace(<gendustry:gene_sample:*>, <gendustry:gene_sample_blank>);
-infinFurnace(<gendustry:gene_template:*>, <gendustry:gene_template>);
+#infinFurnace(<gendustry:gene_template:*>, <gendustry:gene_template>);
 infinFurnace(<gendustry:honey_drop:5>, <appliedenergistics2:material:5> * 2);
 infinFurnace(<harvestcraft:anchovyrawitem:*>, <minecraft:cooked_fish>);
 infinFurnace(<harvestcraft:bassrawitem:*>, <minecraft:cooked_fish>);

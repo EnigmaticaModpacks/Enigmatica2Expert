@@ -91,28 +91,62 @@ craft.remake(<bigreactors:reactorfuelrod>, ["pretty",
 # Yellorite Block
 	recipes.remove(<bigreactors:blockyellorium>);
 	
-# Anglesite - Crystal made of ThermalExpansion/EnvironmentalTech/Ender IO/AE2 materials
-	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<bigreactors:mineralanglesite>, 100000000, 1000000, 
-	<appliedenergistics2:material:48>, [<thermalfoundation:material:894>,
-	<thermalfoundation:material:893>,  <thermalfoundation:material:895>, 
-	<thermalfoundation:material:865>,
-	<environmentaltech:litherite_crystal>, <environmentaltech:erodium_crystal>, 
-	<environmentaltech:kyronite_crystal>, <environmentaltech:pladium_crystal>, 
-	<environmentaltech:ionite_crystal>, <environmentaltech:aethium_crystal>,
-	<enderio:item_material:44>, <enderio:item_basic_capacitor:2>, 
-	<enderio:item_material:17>,  <enderio:item_material:18>, <enderio:item_material:19>]);	  
+# Anglesite - Highest tier of Tech mods crystals
+scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<bigreactors:oreanglesite>, 100000000, 1000000, 
+<additionalcompression:gravelend_compressed:2>, [
+	<appliedenergistics2:material:48>,
+	<biomesoplenty:terrestrial_artifact>,
+	<ore:clathrateGlowstone>,
+	<ore:clathrateRedstone>,
+	<ore:clathrateEnder>,
+	<ore:crystalSlagRich>,
+	<ore:itemAttractorCrystal>,
+	<ore:itemWeatherCrystal>,
+	<ore:itemPrecientCrystal>,
+	<ore:crystalLitherite>,
+	<ore:crystalErodium>,
+	<ore:crystalKyronite>,
+	<ore:crystalPladium>,
+	<ore:crystalIonite>,
+	<ore:crystalAethium>,
+	<ore:skullSentientEnder>,
+	<enderio:item_basic_capacitor:2>,
+	<ore:crystalPureFluix>,
+	<ore:gemDilithium>,
+	<ore:slimecrystalPink>,
+]);	  
 
-# Benitoite - Crystal made of Botania/AstralSorcery/BloodMagic/Thaumcraft materials
-	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<bigreactors:mineralbenitoite>, 100000000, 1000000, <botania:manaresource:5>, 
-	[<botania:manaresource:9>, <botania:manaresource:1>, <botania:manaresource:7>, 
-	<botania:pylon:1>, <botania:manaresource:2>, <botania:manaresource:8>, 
-	<astralsorcery:itemcraftingcomponent:2>, #<astralsorcery:itemshiftingstar>.withTag({}), 
-	<astralsorcery:itemcraftingcomponent:4>, <astralsorcery:itemcoloredlens:6>, 
-	<bloodmagic:blood_rune:9>, <bloodmagic:blood_rune:10>, <bloodmagic:points_upgrade>,
-	<bloodmagic:slate:4>, #<astralsorcery:itemcelestialcrystal>.withTag({}),
-	#<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "vitium"}]}), 
-	<thaumcraft:mechanism_complex>]);
-	
+
+# Benitoite - Highest tier of non-Tech mods crystals
+scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<bigreactors:orebenitoite>, 100000000, 1000000,
+<additionalcompression:gravelnether_compressed:2>, [
+	<ore:eternalLifeEssence>,
+	<thaumcraft:mechanism_complex>,
+	<ore:elvenDragonstone>,
+	<ore:manaPearl>,
+	<ore:ingotElvenElementium>,
+	<botania:pylon:1>,
+	<ore:manaDiamond>,
+	<ore:elvenPixieDust>,
+	<astralsorcery:itemcraftingcomponent:4>,
+	<astralsorcery:itemcoloredlens:6>,
+	<bloodmagic:blood_rune:9>,
+	<bloodmagic:blood_rune:10>,
+	<bloodmagic:points_upgrade>,
+	<bloodmagic:slate:4>,
+	<rats:gem_of_ratlantis>,
+	<ore:carminite>,
+	<randomthings:ingredient:2>,
+	<randomthings:rezstone>,
+	<cyclicmagic:soulstone>,
+	<astralsorcery:itemperkgem:1>,
+]);
+
+# Benefication of Anglesite and Benitoite
+scripts.process.beneficiate(<bigreactors:oreanglesite>, "Anglesite", 1, "only: Grindstone");
+scripts.process.beneficiate(<bigreactors:orebenitoite>, "Benitoite", 1, "only: Grindstone");
+
+
 # Conflicts
 utils.rh(<bigreactors:ingotgraphite>);
 recipes.removeByRecipeName("bigreactors:block_graphite");
