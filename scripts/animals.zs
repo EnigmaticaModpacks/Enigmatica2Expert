@@ -123,6 +123,9 @@ craft.remake(<contenttweaker:empowered_phosphor> * 4, ["pretty",
   "i": <contenttweaker:blasted_coal>
 });
 
+# Saturate Phosphor
+scripts.process.fill(<contenttweaker:empowered_phosphor>, <fluid:syngas> * 1000, <contenttweaker:saturated_phosphor>, "only: MechanicalDryingBasin NCInfuser Transposer");
+
 
 // Step 3
 // ---------------------------

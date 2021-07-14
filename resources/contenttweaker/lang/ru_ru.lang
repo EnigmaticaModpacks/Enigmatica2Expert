@@ -24,6 +24,7 @@ item.contenttweaker.supremium_chest_base.name=Основание Ядра Суп
 item.contenttweaker.supremium_helmet_base.name=Основание Ядра Супремиумного Шлема
 item.contenttweaker.supremium_leggings_base.name=Основание Ядра Супремиумных Понож
 item.contenttweaker.empowered_phosphor.name=Усиленный Фосфор
+item.contenttweaker.saturated_phosphor=Насыщенный Фосфор
 item.contenttweaker.blasted_coal.name=Взорванный Уголь
 
 tile.contenttweaker.terrestrial_artifact_block.name=Блок Артефакта Земли

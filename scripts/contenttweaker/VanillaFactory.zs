@@ -148,6 +148,7 @@ createBlock("conglomerate_of_sun",  5, <blockmaterial:clay>);
 # Animal's items
 # -------------------------------
 buildItem("empowered_phosphor");
+buildItem("saturated_phosphor");
 buildItem("blasted_coal");
 
 # -------------------------------
