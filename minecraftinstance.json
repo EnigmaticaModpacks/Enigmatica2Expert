@@ -2344,7 +2344,7 @@
       "dateInstalled": "2021-07-03T11:45:27.512453Z",
       "dateUpdated": "2021-07-03T11:45:27.5742884Z",
       "dateLastUpdateAttempted": "2021-07-03T11:45:27.5742884Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -4010,14 +4010,14 @@
       "addonID": 239197,
       "gameInstanceID": "6d7e8ef8-183b-487b-a631-3e4b8bd5377e",
       "installedFile": {
-        "id": 3357049,
-        "displayName": "CraftTweaker2-1.12-4.1.20.652.jar",
-        "fileName": "CraftTweaker2-1.12-4.1.20.652.jar",
-        "fileDate": "2021-06-19T05:33:31.58Z",
-        "fileLength": 1545751,
+        "id": 3383242,
+        "displayName": "CraftTweaker2-1.12-4.1.20.655.jar",
+        "fileName": "CraftTweaker2-1.12-4.1.20.655.jar",
+        "fileDate": "2021-07-10T01:57:12.65Z",
+        "fileLength": 1545792,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3357/49/CraftTweaker2-1.12-4.1.20.652.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3383/242/CraftTweaker2-1.12-4.1.20.655.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -4025,7 +4025,7 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2002765829,
+            "fingerprint": 3254912460,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -4037,7 +4037,7 @@
           },
           {
             "foldername": "crafttweaker",
-            "fingerprint": 2388424264,
+            "fingerprint": 3718103101,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -4055,7 +4055,7 @@
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 3754769264,
+            "fingerprint": 4122181433,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -4066,7 +4066,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 1310710750,
+        "packageFingerprint": 156829327,
         "gameVersion": [
           "1.12.2"
         ],
@@ -4079,12 +4079,12 @@
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "CraftTweaker2-1.12-4.1.20.652.jar"
+        "FileNameOnDisk": "CraftTweaker2-1.12-4.1.20.655.jar"
       },
       "dateInstalled": "2021-03-10T15:32:03.9316269Z",
-      "dateUpdated": "2021-06-24T06:01:08.4406852Z",
-      "dateLastUpdateAttempted": "2021-06-24T06:01:08.4406852Z",
-      "status": 5,
+      "dateUpdated": "2021-07-13T11:49:58.0542885Z",
+      "dateLastUpdateAttempted": "2021-07-13T11:49:58.0542885Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -4477,92 +4477,80 @@
       "addonID": 268250,
       "gameInstanceID": "6d7e8ef8-183b-487b-a631-3e4b8bd5377e",
       "installedFile": {
-        "id": 2544919,
-        "displayName": "immersivepetroleum-1.12.2-1.1.9.jar",
-        "fileName": "immersivepetroleum-1.12.2-1.1.9.jar",
-        "fileDate": "2018-03-25T17:36:20.13Z",
-        "fileLength": 906018,
+        "id": 3382321,
+        "displayName": "immersivepetroleum-1.12.2-1.1.10.jar",
+        "fileName": "immersivepetroleum-1.12.2-1.1.10.jar",
+        "fileDate": "2021-07-09T10:33:35.05Z",
+        "fileLength": 797724,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2544/919/immersivepetroleum-1.12.2-1.1.9.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3382/321/immersivepetroleum-1.12.2-1.1.10.jar",
         "isAlternate": false,
-        "alternateFileId": 2544920,
+        "alternateFileId": 0,
         "dependencies": [
           {
-            "id": 15821056,
+            "id": 0,
             "addonId": 231951,
             "type": 3,
-            "fileId": 2544919
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 900987018,
-            "type": 3,
+            "fingerprint": 862450308,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "flaxbeard",
-            "fingerprint": 3841297575,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 1362079390,
-            "type": 3,
+            "fingerprint": 458995455,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 2620956805,
-            "type": 3,
+            "fingerprint": 410440249,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 2194156202,
-            "type": 3,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 3500363263,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 4256046140,
+        "packageFingerprint": 4029569122,
         "gameVersion": [
           "1.12.2"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000012.0000000002",
-            "gameVersion": "1.12.2",
-            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 1363014,
-        "projectId": 268250,
-        "packageFingerprintId": 232603869,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 1553909,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "immersivepetroleum-1.12.2-1.1.9.jar"
+        "FileNameOnDisk": "immersivepetroleum-1.12.2-1.1.10.jar"
       },
       "dateInstalled": "2020-02-14T10:01:15.5705131Z",
-      "dateUpdated": "2019-02-14T10:01:15.5705131Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2021-07-13T11:49:57.4060212Z",
+      "dateLastUpdateAttempted": "2021-07-13T11:49:57.4060212Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": true,
+      "isModified": false,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -4666,26 +4654,26 @@
       "addonID": 401178,
       "gameInstanceID": "6d7e8ef8-183b-487b-a631-3e4b8bd5377e",
       "installedFile": {
-        "id": 3356138,
-        "displayName": "zenutils-1.8.2.jar",
-        "fileName": "zenutils-1.8.2.jar",
-        "fileDate": "2021-06-18T10:55:49.453Z",
-        "fileLength": 121281,
+        "id": 3382337,
+        "displayName": "zenutils-1.9.0.jar",
+        "fileName": "zenutils-1.9.0.jar",
+        "fileDate": "2021-07-09T11:15:07.253Z",
+        "fileLength": 147344,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3356/138/zenutils-1.8.2.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3382/337/zenutils-1.9.0.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
             "id": 0,
-            "addonId": 237065,
+            "addonId": 289412,
             "type": 2,
             "fileId": 0
           },
           {
             "id": 0,
-            "addonId": 289412,
+            "addonId": 237065,
             "type": 2,
             "fileId": 0
           },
@@ -4706,25 +4694,25 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2537943843,
+            "fingerprint": 3403402071,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "youyihj",
-            "fingerprint": 3838811984,
+            "fingerprint": 330558687,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 1907301498,
+            "fingerprint": 130584980,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 1374501723,
+            "fingerprint": 1631620378,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -4735,7 +4723,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 892279367,
+        "packageFingerprint": 1981994894,
         "gameVersion": [
           "1.12.2"
         ],
@@ -4748,12 +4736,12 @@
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "zenutils-1.8.2.jar"
+        "FileNameOnDisk": "zenutils-1.9.0.jar"
       },
       "dateInstalled": "2020-12-08T16:30:01.966532Z",
-      "dateUpdated": "2021-06-24T06:01:17.0307341Z",
-      "dateLastUpdateAttempted": "2021-06-24T06:01:17.0307341Z",
-      "status": 3,
+      "dateUpdated": "2021-07-13T10:58:17.903908Z",
+      "dateLastUpdateAttempted": "2021-07-13T10:58:17.903908Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -5846,23 +5834,17 @@
       "addonID": 402338,
       "gameInstanceID": "6d7e8ef8-183b-487b-a631-3e4b8bd5377e",
       "installedFile": {
-        "id": 3311172,
-        "displayName": "1.12.2-1.0.6",
-        "fileName": "fluiddrawers-1.12.2-1.0.6.jar",
-        "fileDate": "2021-05-16T02:07:43.853Z",
-        "fileLength": 142181,
+        "id": 3373954,
+        "displayName": "1.12.2-1.0.7",
+        "fileName": "fluiddrawers-1.12.2-1.0.7.jar",
+        "fileDate": "2021-07-02T15:20:28.91Z",
+        "fileLength": 142536,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3311/172/fluiddrawers-1.12.2-1.0.6.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3373/954/fluiddrawers-1.12.2-1.0.7.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
-          {
-            "id": 0,
-            "addonId": 376351,
-            "type": 2,
-            "fileId": 0
-          },
           {
             "id": 0,
             "addonId": 322344,
@@ -5874,19 +5856,25 @@
             "addonId": 223852,
             "type": 3,
             "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 376351,
+            "type": 2,
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1222065924,
+            "fingerprint": 3000640112,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "xyz",
-            "fingerprint": 44169627,
+            "fingerprint": 2195591094,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -5898,7 +5886,7 @@
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 1793618016,
+            "fingerprint": 479511581,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -5909,7 +5897,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 297448736,
+        "packageFingerprint": 3251442194,
         "gameVersion": [
           "1.12.2"
         ],
@@ -5922,12 +5910,12 @@
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "fluiddrawers-1.12.2-1.0.6.jar"
+        "FileNameOnDisk": "fluiddrawers-1.12.2-1.0.7.jar"
       },
       "dateInstalled": "2020-10-21T13:05:21.6487366Z",
-      "dateUpdated": "2021-06-02T18:53:38.3473788Z",
-      "dateLastUpdateAttempted": "2021-06-02T18:53:38.3473788Z",
-      "status": 3,
+      "dateUpdated": "2021-07-13T10:55:55.9915904Z",
+      "dateLastUpdateAttempted": "2021-07-13T10:55:55.9915904Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -6909,32 +6897,20 @@
       "addonID": 239286,
       "gameInstanceID": "6d7e8ef8-183b-487b-a631-3e4b8bd5377e",
       "installedFile": {
-        "id": 3279606,
-        "displayName": "Cyclic-1.12.2-1.20.9.jar",
-        "fileName": "Cyclic-1.12.2-1.20.9.jar",
-        "fileDate": "2021-04-17T06:16:04.783Z",
-        "fileLength": 3988141,
+        "id": 3386442,
+        "displayName": "Cyclic-1.12.2-1.20.11.jar",
+        "fileName": "Cyclic-1.12.2-1.20.11.jar",
+        "fileDate": "2021-07-12T19:48:26.72Z",
+        "fileLength": 3988367,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3279/606/Cyclic-1.12.2-1.20.9.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3386/442/Cyclic-1.12.2-1.20.11.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
             "id": 0,
-            "addonId": 228832,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 239197,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 238222,
+            "addonId": 250419,
             "type": 2,
             "fileId": 0
           },
@@ -6946,7 +6922,7 @@
           },
           {
             "id": 0,
-            "addonId": 309927,
+            "addonId": 238222,
             "type": 2,
             "fileId": 0
           },
@@ -6958,7 +6934,19 @@
           },
           {
             "id": 0,
-            "addonId": 250419,
+            "addonId": 239197,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 228832,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 309927,
             "type": 2,
             "fileId": 0
           }
@@ -6967,7 +6955,7 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2343486208,
+            "fingerprint": 2811741,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -6979,18 +6967,18 @@
           },
           {
             "foldername": "com",
-            "fingerprint": 2707810578,
+            "fingerprint": 3624381742,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 1222005304,
+            "fingerprint": 1268138761,
             "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 3529052094,
+        "packageFingerprint": 3804689212,
         "gameVersion": [
           "1.12.2"
         ],
@@ -7003,12 +6991,12 @@
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "Cyclic-1.12.2-1.20.9.jar"
+        "FileNameOnDisk": "Cyclic-1.12.2-1.20.11.jar"
       },
       "dateInstalled": "2020-05-31T19:58:23.937532Z",
-      "dateUpdated": "2021-04-25T07:17:42.4194011Z",
-      "dateLastUpdateAttempted": "2021-04-25T07:17:42.4194011Z",
-      "status": 5,
+      "dateUpdated": "2021-07-13T10:55:46.2967626Z",
+      "dateLastUpdateAttempted": "2021-07-13T10:55:46.2967626Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -12282,145 +12270,6 @@
       "installedTargets": null
     },
     {
-      "addonID": 460609,
-      "gameInstanceID": "6d7e8ef8-183b-487b-a631-3e4b8bd5377e",
-      "installedFile": {
-        "id": 3321381,
-        "displayName": "loliasm-2.5.jar",
-        "fileName": "loliasm-2.5.jar",
-        "fileDate": "2021-05-24T00:23:53.773Z",
-        "fileLength": 1054718,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3321/381/loliasm-2.5.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [
-          {
-            "id": 0,
-            "addonId": 419286,
-            "type": 3,
-            "fileId": 0
-          }
-        ],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 405821820,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "zone",
-            "fingerprint": 2222606101,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "mcmod.info",
-            "fingerprint": 1351264629,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "mixins.bakedquadsquasher.json",
-            "fingerprint": 344022827,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "mixins.memory.json",
-            "fingerprint": 531499458,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "mixins.misc.json",
-            "fingerprint": 1444381830,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "mixins.modfixes.json",
-            "fingerprint": 310959023,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "mixins.recipes.json",
-            "fingerprint": 2696105982,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "mixins.registries.json",
-            "fingerprint": 1095174907,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "mixins.rendering.json",
-            "fingerprint": 1390620490,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "mixins.vanities.json",
-            "fingerprint": 3515345469,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "mixins.loliasm.refmap.json",
-            "fingerprint": 1493072104,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "me",
-            "fingerprint": 1293581537,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "org",
-            "fingerprint": 3092212652,
-            "type": 0,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 1776337995,
-        "gameVersion": [
-          "Forge",
-          "1.12.2"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "loliasm-2.5.jar"
-      },
-      "dateInstalled": "2021-06-03T12:55:18.5728373Z",
-      "dateUpdated": "2021-06-03T12:55:18.5798443Z",
-      "dateLastUpdateAttempted": "2021-06-03T12:55:18.5798443Z",
-      "status": 5,
-      "preferenceAutoInstallUpdates": null,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
       "addonID": 252848,
       "gameInstanceID": "6d7e8ef8-183b-487b-a631-3e4b8bd5377e",
       "installedFile": {
@@ -13923,77 +13772,6 @@
       "dateLastUpdateAttempted": "2021-04-25T09:05:47.5894913Z",
       "status": 5,
       "preferenceAutoInstallUpdates": null,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
-      "addonID": 231687,
-      "gameInstanceID": "6d7e8ef8-183b-487b-a631-3e4b8bd5377e",
-      "installedFile": {
-        "id": 3205788,
-        "displayName": "OpenSecurity-1.12.2-1.0-71.jar",
-        "fileName": "OpenSecurity-1.12.2-1.0-71.jar",
-        "fileDate": "2021-02-16T05:57:15.647Z",
-        "fileLength": 598117,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3205/788/OpenSecurity-1.12.2-1.0-71.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 3093644049,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "pcl",
-            "fingerprint": 1497701241,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 1444120588,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "mcmod.info",
-            "fingerprint": 3152928965,
-            "type": 0,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 1390821700,
-        "gameVersion": [
-          "1.12.2"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "OpenSecurity-1.12.2-1.0-71.jar"
-      },
-      "dateInstalled": "2020-03-26T21:48:36.6362301Z",
-      "dateUpdated": "2021-02-18T18:20:33.4167134Z",
-      "dateLastUpdateAttempted": "2021-02-18T18:20:33.4167134Z",
-      "status": 5,
-      "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
       "isModified": false,
@@ -16205,27 +15983,27 @@
       "addonID": 313298,
       "gameInstanceID": "6d7e8ef8-183b-487b-a631-3e4b8bd5377e",
       "installedFile": {
-        "id": 3171294,
-        "displayName": "Thermal Logistics 0.3-42",
-        "fileName": "thermallogistics-0.3-42.jar",
-        "fileDate": "2021-01-17T11:01:11.54Z",
-        "fileLength": 394109,
+        "id": 3379693,
+        "displayName": "Thermal Logistics 0.3-43",
+        "fileName": "thermallogistics-0.3-43.jar",
+        "fileDate": "2021-07-07T09:24:57.907Z",
+        "fileLength": 394119,
         "releaseType": 2,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3171/294/thermallogistics-0.3-42.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3379/693/thermallogistics-0.3-43.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
             "id": 0,
-            "addonId": 69163,
-            "type": 2,
+            "addonId": 227443,
+            "type": 3,
             "fileId": 0
           },
           {
             "id": 0,
-            "addonId": 227443,
-            "type": 3,
+            "addonId": 69163,
+            "type": 2,
             "fileId": 0
           }
         ],
@@ -16239,13 +16017,13 @@
           },
           {
             "foldername": "astavie",
-            "fingerprint": 1651996083,
+            "fingerprint": 1400579661,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 2441985913,
+            "fingerprint": 1330407877,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -16262,7 +16040,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 3487806587,
+        "packageFingerprint": 3326153660,
         "gameVersion": [
           "Forge",
           "1.12.2"
@@ -16276,12 +16054,12 @@
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "thermallogistics-0.3-42.jar"
+        "FileNameOnDisk": "thermallogistics-0.3-43.jar"
       },
       "dateInstalled": "2021-03-10T15:35:14.4901945Z",
-      "dateUpdated": "2021-03-10T15:35:14.4921884Z",
-      "dateLastUpdateAttempted": "2021-03-10T15:35:14.4921884Z",
-      "status": 5,
+      "dateUpdated": "2021-07-13T10:58:34.1529937Z",
+      "dateLastUpdateAttempted": "2021-07-13T10:58:34.1529937Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -16296,14 +16074,14 @@
       "addonID": 247401,
       "gameInstanceID": "6d7e8ef8-183b-487b-a631-3e4b8bd5377e",
       "installedFile": {
-        "id": 3357508,
-        "displayName": "[1.12.2] Hammer Core - 2.0.6.27",
-        "fileName": "HammerLib-1.12.2-2.0.6.27.jar",
-        "fileDate": "2021-06-19T17:04:38.297Z",
-        "fileLength": 2426025,
+        "id": 3366814,
+        "displayName": "[1.12.2] Hammer Core - 2.0.6.28",
+        "fileName": "HammerLib-1.12.2-2.0.6.28.jar",
+        "fileDate": "2021-06-27T18:51:29.947Z",
+        "fileLength": 2433033,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3357/508/HammerLib-1.12.2-2.0.6.27.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3366/814/HammerLib-1.12.2-2.0.6.28.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -16311,7 +16089,7 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1603199389,
+            "fingerprint": 3776033468,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -16329,7 +16107,7 @@
           },
           {
             "foldername": "com",
-            "fingerprint": 844525441,
+            "fingerprint": 3991344637,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -16346,7 +16124,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 497685899,
+        "packageFingerprint": 4115732889,
         "gameVersion": [
           "1.12.2"
         ],
@@ -16359,12 +16137,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "HammerLib-1.12.2-2.0.6.27.jar"
+        "FileNameOnDisk": "HammerLib-1.12.2-2.0.6.28.jar"
       },
       "dateInstalled": "2021-06-24T06:30:47.6665676Z",
-      "dateUpdated": "2021-06-24T06:31:36.4017528Z",
-      "dateLastUpdateAttempted": "2021-06-24T06:31:36.4017528Z",
-      "status": 3,
+      "dateUpdated": "2021-07-13T10:56:08.5874658Z",
+      "dateLastUpdateAttempted": "2021-07-13T10:56:08.5874658Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -17566,85 +17344,6 @@
       "dateLastUpdateAttempted": "2021-06-02T19:11:12.7343645Z",
       "status": 5,
       "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
-      "addonID": 449616,
-      "gameInstanceID": "6d7e8ef8-183b-487b-a631-3e4b8bd5377e",
-      "installedFile": {
-        "id": 3213171,
-        "displayName": "animania-1.12.2-catsdogs-1.0.0.28",
-        "fileName": "animania-1.12.2-catsdogs-1.0.0.28.jar",
-        "fileDate": "2021-02-22T17:36:34.87Z",
-        "fileLength": 554151,
-        "releaseType": 2,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3213/171/animania-1.12.2-catsdogs-1.0.0.28.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [
-          {
-            "id": 0,
-            "addonId": 268704,
-            "type": 3,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 261199,
-            "type": 3,
-            "fileId": 0
-          }
-        ],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 2464251221,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 24865613,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "com",
-            "fingerprint": 198995800,
-            "type": 0,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 3146178433,
-        "gameVersion": [
-          "Forge",
-          "1.12.2"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2017-09-18T05:00:00Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "animania-1.12.2-catsdogs-1.0.0.28.jar"
-      },
-      "dateInstalled": "2021-04-28T10:32:46.4152603Z",
-      "dateUpdated": "2021-04-28T10:32:46.4242368Z",
-      "dateLastUpdateAttempted": "2021-04-28T10:32:46.4242368Z",
-      "status": 5,
-      "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
       "isModified": false,
@@ -20615,89 +20314,6 @@
       "installedTargets": null
     },
     {
-      "addonID": 446346,
-      "gameInstanceID": "6d7e8ef8-183b-487b-a631-3e4b8bd5377e",
-      "installedFile": {
-        "id": 3202390,
-        "displayName": "Computronics-1.12.2-1.6.6.jar",
-        "fileName": "Computronics-1.12.2-1.6.6.jar",
-        "fileDate": "2021-02-13T10:57:39.523Z",
-        "fileLength": 1291533,
-        "releaseType": 1,
-        "fileStatus": 3,
-        "downloadUrl": "https://edge.forgecdn.net/files/3202/390/Computronics-1.12.2-1.6.6.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [],
-        "isAvailable": false,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 654348590,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "pl",
-            "fingerprint": 1170611807,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "mcmod.info",
-            "fingerprint": 942528774,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 2892609083,
-            "type": 3,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 412480600,
-        "gameVersion": [
-          "1.12.2"
-        ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000012.0000000002",
-            "gameVersion": "1.12.2",
-            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
-          }
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 2,
-        "renderCacheId": 2170219,
-        "projectId": 446346,
-        "packageFingerprintId": 604696340,
-        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 2718877,
-        "gameVersionId": 4458,
-        "gameId": 432,
-        "isServerPack": false,
-        "FileNameOnDisk": "Computronics-1.12.2-1.6.6.jar"
-      },
-      "dateInstalled": "2021-03-10T15:32:31.097165Z",
-      "dateUpdated": "2021-03-10T15:32:31.097165Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
-      "preferenceAutoInstallUpdates": null,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
       "addonID": 390497,
       "gameInstanceID": "6d7e8ef8-183b-487b-a631-3e4b8bd5377e",
       "installedFile": {
@@ -23472,14 +23088,14 @@
       "addonID": 265461,
       "gameInstanceID": "6d7e8ef8-183b-487b-a631-3e4b8bd5377e",
       "installedFile": {
-        "id": 2721164,
-        "displayName": "rockytweaks-1.12.2-0.5.0.jar",
-        "fileName": "rockytweaks-1.12.2-0.5.0.jar",
-        "fileDate": "2019-06-07T01:33:30.793Z",
-        "fileLength": 32464,
-        "releaseType": 1,
+        "id": 2854573,
+        "displayName": "rockytweaks-1.12.2-0.6.0-PRE-RELEASE-3.jar",
+        "fileName": "rockytweaks-1.12.2-0.6.0-PRE-RELEASE-3.jar",
+        "fileDate": "2020-01-04T16:47:44.32Z",
+        "fileLength": 30561,
+        "releaseType": 2,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2721/164/rockytweaks-1.12.2-0.5.0.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/2854/573/rockytweaks-1.12.2-0.6.0-PRE-RELEASE-3.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
@@ -23491,13 +23107,13 @@
           },
           {
             "id": 0,
-            "addonId": 253211,
+            "addonId": 238222,
             "type": 3,
             "fileId": 0
           },
           {
             "id": 0,
-            "addonId": 238222,
+            "addonId": 253211,
             "type": 3,
             "fileId": 0
           }
@@ -23506,24 +23122,24 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 809759981,
+            "fingerprint": 2690555744,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "rocks",
-            "fingerprint": 2198372159,
+            "fingerprint": 3273785466,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 3633618222,
+            "fingerprint": 3784494252,
             "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 3078634596,
+        "packageFingerprint": 1167750461,
         "gameVersion": [
           "Forge",
           "1.12.2"
@@ -23537,16 +23153,16 @@
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "rockytweaks-1.12.2-0.5.0.jar"
+        "FileNameOnDisk": "rockytweaks-1.12.2-0.6.0-PRE-RELEASE-3.jar"
       },
-      "dateInstalled": "2020-08-14T09:43:52.8648092Z",
-      "dateUpdated": "2020-08-14T09:43:52.8668045Z",
-      "dateLastUpdateAttempted": "2020-08-14T09:43:52.8668045Z",
-      "status": 3,
-      "preferenceAutoInstallUpdates": false,
+      "dateInstalled": "2021-07-13T10:57:49.9871383Z",
+      "dateUpdated": "2021-07-13T10:57:50.0749025Z",
+      "dateLastUpdateAttempted": "2021-07-13T10:57:50.0749025Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": true,
+      "isModified": false,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -27086,7 +26702,7 @@
       "dateInstalled": "2021-07-03T11:45:16.2113027Z",
       "dateUpdated": "2021-07-03T11:45:16.225266Z",
       "dateLastUpdateAttempted": "2021-07-03T11:45:16.225266Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -29183,41 +28799,28 @@
       "addonID": 220954,
       "gameInstanceID": "6d7e8ef8-183b-487b-a631-3e4b8bd5377e",
       "installedFile": {
-        "id": 3308463,
-        "displayName": "modtweaker-4.0.19",
-        "fileName": "modtweaker-4.0.19.jar",
-        "fileDate": "2021-05-13T18:41:26.027Z",
-        "fileLength": 491315,
+        "id": 3368737,
+        "displayName": "modtweaker-4.0.20.4.jar",
+        "fileName": "modtweaker-4.0.20.4.jar",
+        "fileDate": "2021-06-29T11:20:46.507Z",
+        "fileLength": 492862,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3308/463/modtweaker-4.0.19.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3368/737/modtweaker-4.0.20.4.jar",
         "isAlternate": false,
         "alternateFileId": 0,
-        "dependencies": [
-          {
-            "id": 0,
-            "addonId": 253211,
-            "type": 3,
-            "fileId": 0
-          }
-        ],
+        "dependencies": [],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1957208513,
+            "fingerprint": 3275766718,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 3127178037,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "mcmod.info",
-            "fingerprint": 727474027,
+            "fingerprint": 2823426772,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -29226,10 +28829,17 @@
             "fingerprint": 1420232274,
             "type": 0,
             "invalidFingerprint": false
+          },
+          {
+            "foldername": "mcmod.info",
+            "fingerprint": 550860370,
+            "type": 0,
+            "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 3477662865,
+        "packageFingerprint": 1106888205,
         "gameVersion": [
+          "Forge",
           "1.12.2"
         ],
         "hasInstallScript": false,
@@ -29241,12 +28851,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "modtweaker-4.0.19.jar"
+        "FileNameOnDisk": "modtweaker-4.0.20.4.jar"
       },
       "dateInstalled": "2020-03-26T10:22:26.9217769Z",
-      "dateUpdated": "2021-06-02T18:53:23.8753296Z",
-      "dateLastUpdateAttempted": "2021-06-02T18:53:23.8753296Z",
-      "status": 5,
+      "dateUpdated": "2021-07-13T10:56:16.7012697Z",
+      "dateLastUpdateAttempted": "2021-07-13T10:56:16.7012697Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -36727,16 +36337,16 @@
       "addonID": 319441,
       "gameInstanceID": "6d7e8ef8-183b-487b-a631-3e4b8bd5377e",
       "installedFile": {
-        "id": 3339179,
-        "displayName": "ThaumicAugmentation-1.12.2-2.1.1.jar",
-        "fileName": "ThaumicAugmentation-1.12.2-2.1.1.jar",
-        "fileDate": "2021-06-05T17:08:48.11Z",
-        "fileLength": 7920611,
-        "releaseType": 2,
+        "id": 3378111,
+        "displayName": "ThaumicAugmentation-1.12.2-2.1.3.jar",
+        "fileName": "ThaumicAugmentation-1.12.2-2.1.3.jar",
+        "fileDate": "2021-07-06T01:14:47.917Z",
+        "fileLength": 7942678,
+        "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3339/179/ThaumicAugmentation-1.12.2-2.1.1.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3378/111/ThaumicAugmentation-1.12.2-2.1.3.jar",
         "isAlternate": false,
-        "alternateFileId": 3339181,
+        "alternateFileId": 3378113,
         "dependencies": [
           {
             "id": 0,
@@ -36755,19 +36365,19 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1661433343,
+            "fingerprint": 440181571,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 2869630381,
+            "fingerprint": 1326675115,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 2312826042,
+            "fingerprint": 3828337365,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -36779,12 +36389,12 @@
           },
           {
             "foldername": "thecodex6824",
-            "fingerprint": 3446400259,
+            "fingerprint": 2886651001,
             "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 826244427,
+        "packageFingerprint": 3623335176,
         "gameVersion": [
           "Forge",
           "1.12.2"
@@ -36798,12 +36408,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "ThaumicAugmentation-1.12.2-2.1.1.jar"
+        "FileNameOnDisk": "ThaumicAugmentation-1.12.2-2.1.3.jar"
       },
       "dateInstalled": "2020-12-28T09:56:07.287322Z",
-      "dateUpdated": "2021-06-07T17:09:02.9151851Z",
-      "dateLastUpdateAttempted": "2021-06-07T17:09:02.9151851Z",
-      "status": 3,
+      "dateUpdated": "2021-07-13T10:58:48.5042165Z",
+      "dateLastUpdateAttempted": "2021-07-13T10:58:48.5042165Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
