@@ -1,6 +1,115 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
 
+
+# 0.29
+
+## 🔴 Removed Mods
+
+Icon | Summary | Reason
+----:|:--------| ------
+<img src="https://media.forgecdn.net/avatars/thumbnails/346/844/256/256/637496100920279441.png" width="50"> | [**Animania Cats & Dogs**](https://www.curseforge.com/minecraft/mc-mods/animania-cats-dogs) <sup><sub>undefined</sub></sup> <br> This Animania Addon adds Cats and Dogs to your game! | Cats and dogs have barely no use.
+<img src="https://media.forgecdn.net/avatars/thumbnails/358/827/256/256/637520208754289091.png" width="50"> | [**SneedASM**](https://www.curseforge.com/minecraft/mc-mods/sneedasm) <sup><sub>loliasm-2.5.jar</sub></sup> <br> Yet another crazy optimization mod - powered by ****s | Can't actually feel the difference with this mod or without
+<img src="https://media.forgecdn.net/avatars/thumbnails/19/743/256/256/635700596326350676.png" width="50"> | [**OpenSecurity**](https://www.curseforge.com/minecraft/mc-mods/opensecurity) <sup><sub>OpenSecurity-1.12.2-1.0-71.jar</sub></sup> <br> Security addon for OpenComputers | Not much userful. Would add back on request.
+<img src="https://media.forgecdn.net/avatars/thumbnails/343/214/256/256/637488101185625226.jpeg" width="50"> | [**ComputerCraft Addons**](https://www.curseforge.com/minecraft/mc-mods/cc-addons) <sup><sub>Computronics-1.12.2-1.6.6.jar</sub></sup> <br> ComputerCraft Addons | Not much userful. Would add back on request.
+
+## 🟡 Updated Mods
+
+- [**CraftTweaker**](https://www.curseforge.com/minecraft/mc-mods/crafttweaker) <sup><sub>CraftTweaker2-1.12-4.1.20.655.jar</sub></sup>
+- [**Immersive Petroleum**](https://www.curseforge.com/minecraft/mc-mods/immersive-petroleum) <sup><sub>immersivepetroleum-1.12.2-1.1.10.jar</sub></sup>
+- [**Zen Utils**](https://www.curseforge.com/minecraft/mc-mods/zenutil) <sup><sub>zenutils-1.9.0.jar</sub></sup>
+- [**Fluid Drawers**](https://www.curseforge.com/minecraft/mc-mods/fluid-drawers) <sup><sub>fluiddrawers-1.12.2-1.0.7.jar</sub></sup>
+- [**Cyclic**](https://www.curseforge.com/minecraft/mc-mods/cyclic) <sup><sub>Cyclic-1.12.2-1.20.11.jar</sub></sup>
+- [**ThermalLogistics**](https://www.curseforge.com/minecraft/mc-mods/thermallogistics) <sup><sub>thermallogistics-0.3-43.jar</sub></sup>
+- [**Hammer (Lib) Core**](https://www.curseforge.com/minecraft/mc-mods/hammer-lib) <sup><sub>HammerLib-1.12.2-2.0.6.28.jar</sub></sup>
+- [**Animania Cats & Dogs**](https://www.curseforge.com/minecraft/mc-mods/animania-cats-dogs) <sup><sub>undefined</sub></sup>
+- [**Rocky Tweaks**](https://www.curseforge.com/minecraft/mc-mods/rocky-tweaks) <sup><sub>rockytweaks-1.12.2-0.6.0-PRE-RELEASE-3.jar</sub></sup>
+- [**ModTweaker**](https://www.curseforge.com/minecraft/mc-mods/modtweaker) <sup><sub>modtweaker-4.0.20.4.jar</sub></sup>
+- [**Thaumic Augmentation**](https://www.curseforge.com/minecraft/mc-mods/thaumic-augmentation) <sup><sub>ThaumicAugmentation-1.12.2-2.1.3.jar</sub></sup>
+
+## 🧩 Configs
+
+- Scaling Feast: set "Hunger Regen Type"=VANILLA_LIKE
+  > and
+  > "Saturated Regen Type"=VANILLA_LIKE
+
+## ✏️ Recipes
+
+- changes and fixes
+  > - ![](https://git.io/JZYvh "Draconium Infused Obsidian") Now obtainable only with ![](https://git.io/JczsZ "Containment Chalice") or in end
+  > - ![](https://git.io/Jt8wI "Menril Sapling") Can be crooked flom ![](https://git.io/Jcbxn "Acacia Leaves")
+  > - **Hydroponics** cheaper
+  > - ![](https://git.io/JCuhp "The Ultimate Ingot") revived craft
+  > - ![](https://git.io/JCt0W "Block of The Ultimate") add craft matching ingot
+  > - ![](https://git.io/JczsL "Creative Gas Tank") replace ![](https://git.io/JCzfY "Flue Gas Tank") with **Exhaust Steam**
+  > - ![](https://git.io/Jczsx "Creative Fluid Tank") fixed tanks in craft sizes (900 buckets now)
+  > - ![](https://git.io/JCt0R "Creative Rod Frame") cheaper (now obtainable before Infinity ingots)
+  > - ![](https://git.io/JOGzE "Creative Modifier") cheaper (now T2 table)
+  > - ![](https://git.io/JCt0V "Creative Mill") Way cheaper, T3 now
+  > - ![](https://git.io/JLjsf "Basalt") now obtainable from ![](https://git.io/JczsZ "Containment Chalice")
+  > - ![](https://git.io/JCuh5 "Empowered Phosphor") new have burn time **180000**, propolis in recipe
+  > - ![](https://git.io/JcbNV "French Fry") & ![](https://git.io/JcbbS "Bacon") have more output when mashing
+  > - ![](https://git.io/JCtgZ "Sentient Armour Gem") fix craft (remove ![](https://git.io/JCt0g "Diamond Chestplate"))
+  > - ![](https://git.io/JCuhx "Violet Crystal Block") and other AR crystals: new harder ways to recycle
+  > - [Fluix Dust] from [Fluix Block] fix
+  > - ![](https://git.io/JCt0z "Creative Paste Container") add craft
+  > - ![](https://git.io/JCt04 "Dark Oak Chest") and other chests conversion with **Chisel**
+  > - ![](https://git.io/JCzf3 "Item Collector") fix plate
+  > - ![](https://git.io/JCqV9 "Particle Generator") craft from ![](https://git.io/JZYvh "Draconium Infused Obsidian")
+  > - ![](https://git.io/JCuhN "Basic Wireless Energy Crystal") back vanilla craft
+  > - ![](https://git.io/JCuhh "Nickel Ore Piece") now turn to Ore in compressors
+  > - ![](https://git.io/JCt00 "Creative Harvest") add craft
+  > - ![](https://git.io/Jc4m4 "Anglesite Ore") and ![](https://git.io/Jc4m8 "Benitoite Ore") instead of gems craft
+  > - Vain Bee -> ![](https://git.io/JcNYM "Insanium Coal") cheaper
+  > - [Access Proxy] harder
+  > - ![](https://git.io/JCt02 "Advanced Bin") Fix craft
+  > - ![](https://git.io/JCtgs "Ultimate Seeds") fix second craft
+  > - ![](https://git.io/JCqVy "Star of PSI") add craft
+  > - ![](https://git.io/JcVAS "Reinforced Ender Bucket") clearing
+  > - ![](https://git.io/JOGzF "Time in a bottle") change craft
+  > - ![](https://git.io/JCt0u "Lens") add Modular Machinery craft
+  > 
+  > Cheaper:
+  > - **Dark Matter**
+  > - **Red Matter**
+  > - ![](https://git.io/JcVA9 "Basic Voltaic Pile")
+  >   ![](https://git.io/JCuhj "Advanced Voltaic Pile")
+  >   ![](https://git.io/JCuhd "DU Voltaic Pile")
+  >   ![](https://git.io/JCuhF "Elite Voltaic Pile")
+  >   ![](https://git.io/Jc4Qj "Basic Lithium Ion Battery")
+  >   ![](https://git.io/Jc47e "Advanced Lithium Ion Battery")
+  >   ![](https://git.io/Jc4Qh "DU Lithium Ion Battery")
+  >   ![](https://git.io/Jc4Qp "Elite Lithium Ion Battery")
+  >   ![](https://git.io/JLhhW "Blue Quartz")
+  >   ![](https://git.io/JCt0E "Infinity Drill")
+  >   ![](https://git.io/Jsmfn "Creative Storage Upgrade")
+
+## 📖 Quest Book
+
+- Quests changes
+
+## 🔵 Mods
+
+- ### 🍇 End Reborn
+
+  - Lower **Chronologyst** spawn ratio
+
+- ### 💼 Actually Additionals
+
+  - ![](https://git.io/JCzTK "Drill") buff mining level up to 8
+
+## 🔄 Misc Changes
+
+  - IC2: Enlarge Nuke maximum Diameter
+  - CoT new item - **Saturated Phosphor**
+    > Craft with enriching ![](https://git.io/JCuh5 "Empowered Phosphor") with syngas.
+    > Has huge burn time.
+
+
+
+
+
+
 # 0.28
 
 ## 🟢 New Mods
