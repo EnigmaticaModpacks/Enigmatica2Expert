@@ -2,7 +2,7 @@
 
 ## 1.83
 
-_[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.82.txt)_ | _Using Forge-1.12.2-14.23.5.2855_
+_[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.83.md)_ | _Using Forge-1.12.2-14.23.5.2855_
 
 **Note**:
 To fix the issue with Jungles not generating, we've had to make a change to biomes.
