@@ -4,10 +4,12 @@
 
 _[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.83.md)_ | _Using Forge-1.12.2-14.23.5.2855_
 
-**Note**:
-To fix the issue with Jungles not generating, we've had to make a change to biomes.
-Going forward worldgen should be more interesting and diverse.
-As a side-effect ugly chunk borders will generate between old and new chunks.
+**Notes**:
+
+- To fix the issue with Jungles not generating, we've had to make a change to biomes.
+  Going forward worldgen should be more interesting and diverse.
+  As a side-effect ugly chunk borders will generate between old and new chunks.
+- Please run the command `/bq_admin default load` to get the latest quest  updates.
 
 **Improvements/Changes**
 
