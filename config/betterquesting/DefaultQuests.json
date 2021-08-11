@@ -32936,13 +32936,14 @@
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "advancedrocketry:bucketrocketfuel",
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "forge:bucketfilled",
             "Count:3": 1,
             "tag:10": {
-              "Fluid:10": {
-                "FluidName:8": "rocketfuel",
-                "Amount:3": 1000
-              }
+              "FluidName:8": "rocketfuel",
+              "Amount:3": 1000
             },
             "Damage:2": 0,
             "OreDict:8": ""
@@ -33102,7 +33103,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Satellite Builder",
-          "desc:8": "Satellites can be used to collect data from celestial objects.\n \nSee \"http://65.78.115.159:8000/AdvancedRocketry/items/satellite.php\" for specific details."
+          "desc:8": "Satellites can be used to collect data from celestial objects.\n \n\nSee http://arwiki.dmodoomsirius.me/AdvancedRocketry/1.12.2/guides/Satellites.html for details."
         }
       },
       "tasks:9": {
@@ -33405,7 +33406,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Astrobody Data Processor",
-          "desc:8": "The Astrobody Data Processor is a multiblock machine used to research Asteroids, when provided with information from satellites.\n\nAsteroids contain extremely rare metals in abundance. Asteroids have been custom made for this pack.\n\nSee \"http://65.78.115.159:8000/AdvancedRocketry/guides/Missions.php\" for more information."
+          "desc:8": "The Astrobody Data Processor is a multiblock machine used to research Asteroids, when provided with information from satellites.\n\nAsteroids contain extremely rare metals in abundance. Asteroids have been custom made for this pack.\n\nSee http://arwiki.dmodoomsirius.me/AdvancedRocketry/1.12.2/guides/AsteroidMissions.html for more information."
         }
       },
       "tasks:9": {
