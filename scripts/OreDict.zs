@@ -3,7 +3,8 @@ import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.oredict.IOreDict as IOreDict;
 import crafttweaker.oredict.IOreDictEntry as IOreDictEntry;
 import mods.jei.JEI.removeAndHide as rh;
-	
+
+<ore:blockYellorium>.add(<immersiveengineering:storage:5>);	
 
 <ore:chipDiamond>.add(<extrabitmanipulation:diamond_nugget>);
 
