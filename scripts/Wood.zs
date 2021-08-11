@@ -116,3 +116,12 @@ saw(<integrateddynamics:menril_log> , <integrateddynamics:menril_planks> , "stri
 saw(<advancedrocketry:alienwood>    , <advancedrocketry:planks>          , "strict: manufactory mekSawmill");
 saw(<extrautils2:ironwood_log>      , <extrautils2:ironwood_planks>      , "strict: manufactory mekSawmill");
 saw(<extrautils2:ironwood_log:1>    , <extrautils2:ironwood_planks:1>    , "strict: manufactory mekSawmill");
+saw(<randomthings:spectrelog>       , <randomthings:spectreplank>        , "strict: manufactory mekSawmill");
+
+# Sawdust compat
+// mods.mekanism.sawmill.removeRecipe(<ore:stickWood>);
+mods.mekanism.sawmill.removeRecipe(<ore:plankWood>);
+mods.mekanism.sawmill.removeRecipe(<ore:slabWood>);
+mods.mekanism.sawmill.addRecipe(<ore:stickWood>, <thermalfoundation:material:800>);
+mods.mekanism.sawmill.addRecipe(<ore:plankWood>, <minecraft:stick> * 6, <thermalfoundation:material:800>, 0.25d);
+mods.mekanism.sawmill.addRecipe(<ore:slabWood> , <minecraft:stick> * 3, <thermalfoundation:material:800>, 0.25d / 2.0d);

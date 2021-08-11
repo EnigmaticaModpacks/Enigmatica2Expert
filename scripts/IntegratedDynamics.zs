@@ -57,3 +57,5 @@ recipes.addShaped("part_connector_omni_directional_item", connector * 2, [
 	[part, <enderstorage:ender_storage>, part], 
 	[mono, <integrateddynamics:cable>, mono], 
 	[null, part, null]]);
+	
+recipes.addShapeless("part_connector_omni_directional_item_12", connector * 2, [connector, connector]); 

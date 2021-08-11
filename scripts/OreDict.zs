@@ -3,7 +3,11 @@ import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.oredict.IOreDict as IOreDict;
 import crafttweaker.oredict.IOreDictEntry as IOreDictEntry;
 import mods.jei.JEI.removeAndHide as rh;
-	
+
+<ore:blockYellorium>.add(<immersiveengineering:storage:5>);	
+
+<ore:chipDiamond>.add(<extrabitmanipulation:diamond_nugget>);
+
 # Oredicts for pressure plates
 var pressurePlates as IItemStack[] = [
 	<twilightforest:twilight_oak_plate>,
@@ -583,8 +587,8 @@ for item in pressurePlates {
 		<minecraft:bed:12>, #Brown Bed
 		<minecraft:bed:13>, #Green Bed
 		<minecraft:bed:14>, #Red Bed
-		<minecraft:bed:15>, #Black Bed
-		<cyclicmagic:sleeping_mat>
+		<minecraft:bed:15> #Black Bed
+		#<cyclicmagic:sleeping_mat>
 
 	] as IItemStack[];
 	

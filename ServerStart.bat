@@ -461,7 +461,7 @@ ECHO Checking for forge/minecraft binaries...
 ECHO INFO: Checking for forge/minecraft binaries... 1>>  "%~dp0logs\serverstart.log" 2>&1
 
 REM Check if forge is already installed
-IF NOT EXIST "%~dp0*forge*%MC_SERVER_FORGEVER%*universal*.jar" (
+IF NOT EXIST "%~dp0*forge*%MC_SERVER_FORGEVER%*.jar" (
 	ECHO FORGE %MC_SERVER_FORGEVER% binary not found, re-installing...
 	ECHO INFO: FORGE %MC_SERVER_FORGEVER% not found, re-installing... 1>>  "%~dp0logs\serverstart.log" 2>&1
 	GOTO INSTALLSTART
@@ -511,7 +511,7 @@ IF %MC_SERVER_SPONGE% EQU 1 (
 )
 
 REM set absolute paths for binary JARs
-(FOR /f "usebackq tokens=* delims=*" %%x in (`dir ^"*forge*%MC_SERVER_FORGEVER%*universal*.jar^" /B /O:-D`) DO SET "MC_SERVER_FORGE_JAR=%%x" & GOTO CHECKFILES1) 1>> "%~dp0logs\serverstart.log" 2>&1
+(FOR /f "usebackq tokens=* delims=*" %%x in (`dir ^"*forge*%MC_SERVER_FORGEVER%*.jar^" /B /O:-D`) DO SET "MC_SERVER_FORGE_JAR=%%x" & GOTO CHECKFILES1) 1>> "%~dp0logs\serverstart.log" 2>&1
 
 :CHECKFILES1
 (FOR /f "usebackq tokens=* delims=*" %%x in (`dir ^"*sponge*bootstrap*.jar^" /B /O:-D`) DO SET "MC_SERVER_SPONGE_BOOT=%%x" & GOTO CHECKFILES2) 1>> "%~dp0logs\serverstart.log" 2>&1
@@ -628,55 +628,12 @@ IF NOT %MC_SERVER_FORGEURL%==DISABLE (
 	GOTO DOWNLOADINSTALLER
 )
 
-SET MC_SERVER_TMP_FLAG=0
-
-:FETCHHTML
-REM Download Forge Download Index HTML to parse the URL for the direct download
-ECHO INFO: Fetching index html from forge ^( https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_%MC_SERVER_MCVER%.html ^) 1>>  "%~dp0logs\serverstart.log" 2>&1
-%MC_SYS32%\bitsadmin.exe /rawreturn /nowrap /transfer dlforgehtml /download /priority FOREGROUND "https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_%MC_SERVER_MCVER%.html" "%~dp0forge-%MC_SERVER_MCVER%.html"  1>> "%~dp0logs\serverstart.log" 2>&1
-
-IF NOT EXIST "%~dp0forge-%MC_SERVER_MCVER%.html" (
-	IF "%MC_SERVER_TMP_FLAG%"=="0" (
-		ECHO Something went wrong, trying again...
-		SET MC_SERVER_TMP_FLAG=1
-		GOTO FETCHHTML
-	) ELSE (
-		SET MC_SERVER_ERROR_REASON=ForgeIndexNotFound
-		GOTO ERROR
-	)
+IF %MC_SERVER_FORGEURL%==DISABLE (
+	SET MC_SERVER_FORGEURL="https://maven.minecraftforge.net/net/minecraftforge/forge/%MC_SERVER_MCVER%-%MC_SERVER_FORGEVER%/forge-%MC_SERVER_MCVER%-%MC_SERVER_FORGEVER%-installer.jar"
+	GOTO DOWNLOADINSTALLER
 )
 
-REM Simple search for matching text to make sure we got the correct webpage/html (and not a 404, for example)
-REM ECHO DEBUG: Checking simple pattern match for forge ver to validate HTML... 1>>  "%~dp0logs\serverstart.log" 2>&1
-REM FIND /I "%MC_SERVER_FORGEVER%" forge-%MC_SERVER_MCVER%.html 1>> "%~dp0logs\serverstart.log" 2>&1 || (
-REM 	IF %MC_SERVER_TMP_FLAG% LEQ 0 (
-REM 		ECHO Something wrong with Forge download part 1 of 2
-REM 		ECHO Something wrong with Forge download part 1 of 2 1>>  "%~dp0logs\serverstart.log" 2>&1
-REM 		SET MC_SERVER_TMP_FLAG=1
-REM 		DEL /F /Q "%~dp0*forge-index.html"  1>> "%~dp0logs\serverstart.log" 2>&1 || ECHO INFO: No forge-index to delete 1>>  "%~dp0logs\serverstart.log" 2>&1
-REM 		GOTO FETCHHTML
-REM 	) ELSE (
-REM 		ECHO HTML Download failed a second time... stopping. 
-REM 		ECHO ERROR: HTML Download failed a second time... stopping. 1>>  "%~dp0logs\serverstart.log" 2>&1
-REM 		SET MC_SERVER_ERROR_REASON=ForgeDownloadURLNotFound
-REM 		GOTO ERROR
-REM 	)
-REM )
-
-REM More complex wannabe-regex (aka magic)
-FOR /f tokens^=^5^ delims^=^=^<^>^" %%G in ('%MC_SYS32%\FINDSTR.EXE /ir "https://files.minecraftforge.net/maven/net/minecraftforge/forge/%MC_SERVER_MCVER%-%MC_SERVER_FORGEVER%/forge-%MC_SERVER_MCVER%-%MC_SERVER_FORGEVER%-installer.jar" "%~dp0forge-%MC_SERVER_MCVER%.html"') DO SET MC_SERVER_FORGEURL=%%G & GOTO FETCHHTML1
-
-:FETCHHTML1
-IF "%MC_SERVER_FORGEURL%"=="%MC_SERVER_FORGEURL:installer.jar=%" (
-	IF "%MC_SERVER_TMP_FLAG%"=="0" (
-		ECHO Something went wrong, trying again...
-		SET MC_SERVER_TMP_FLAG=1
-		GOTO FETCHHTML
-	) ELSE (
-		SET MC_SERVER_ERROR_REASON=ForgeDownloadURLNotFound
-		GOTO ERROR
-	)
-) 
+SET MC_SERVER_TMP_FLAG=0
 
 ECHO Downloading FORGE (step 2 of 2). This can take several minutes, please be patient...
 SET MC_SERVER_TMP_FLAG=0
