@@ -13,17 +13,44 @@ _[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/ch
 
 **Improvements/Changes**
 
--   Server: The ServerStart files have been updated to reflect Forge's change in jar name.
+-   \[Suggestion\] Disable Cyclic's Sprinkler Animation to increase performance [\#1929](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1929)
+-   Official Docker images please! [\#1902](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1902)
 -   Quests: 2 New Quests for getting started (Credit [tweelix](https://github.com/tweelix))
+-   Server: The ServerStart files have been updated to reflect Forge's change in jar name.
 
 **Bug Fixes**
 
+-   "Conveyor Belt" from Cyclic seems to need the wrong dye colour. [\#1870](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1870)
+-   Actually Additions: Recipe conflict, Empowered Enori Crystal and Spawner Shards - 1.82a [\#1846](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1846)
+-   Advanced Rocketry Electrolyser [\#1836](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1836)
+-   Advanced Rocketry links broken in quest book \(404\) [\#1925](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1925)
+-   \[Bug\] \(COFH\) Flat Bedrock having 2 layers of bedrock bug AS Rituals in the nether and possibility other dimensions \(and mods\) [\#1899](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1899)
+-   \[Bug\] Big Reactors' Reactor don't accept Block of Uranium \(IE\) [\#1924](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1924)
+-   Can't craft OpenComputers Diamond Nuggets normally [\#1865](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1865)
+-   Coal Duplication Glitch [\#1878](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1878)
+-   Cyclic Auto Crafter Dupe [\#1506](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1506)
+-   Cyclic experience pylon exploit, dupe exp [\#1850](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1850)
 -   Disabled Cyclic inventory swapping
+-   Dragon breeding not working [\#1585](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1585)
+-   Duplication Bug Using CarryOn + Unpackagers [\#1934](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1934)
+-   IE Crusher Taking Ages To Crush Things [\#1841](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1841)
+-   Issue with current server files \(New ones are sorta out\) [\#1909](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1909)
+-   Issue with /Dank/Null version 1.7.91 [\#1619](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1619)
+-   Jungles don't generate [\#1895](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1895)
+-   Mining Levels seem to be broken. [\#1835](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1835)
+-   Nether ores explode with new Netherending Ores config [\#1856](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1856)
+-   Precision sawmill creates sawdust from different mods depending on recipe [\#1901](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1901)
+-   Server crashing with SFX Block [\#1886](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1886)
+-   Smokey Quartz Block and Black Quartz Block Recipe Conflict [\#1834](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1834)
+-   Solcarrot's foodlist desync, cant get more health, eaten food resets \(Remove Hunger Persistence\) [\#1724](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1724)
+-   Unable to copy Omni-Directional Connector group to another connector. [\#1908](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1908)
+-   Unable to craft Black Paper from EnderIO [\#1905](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1905)
+-   You can get 3 white wool and 3 oak wood planks from 1 leather and 1 red wool. [\#1898](https://github.com/NillerMedDild/Enigmatica2Expert/issues/1898)
 
 **Mod Removals**
 
--   JEI Block Drops (Not great for load times)
 -   Hunger Persistance (Bug with Spice of Life: Carrot Edition)
+-   JEI Block Drops (Not great for load times)
 
 ## 1.82 (+1.82a)
 
