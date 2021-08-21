@@ -162,7 +162,7 @@ check_connection(){
 		echo "WARN: Internet connectivity checking is disabled" >>serverstart.log 2>&1
 		echo "Skipping internet connectivity check"
 	else
-		if ping 8.8.8.8 >> /dev/null 2>&1; then
+		if ping -c 2 8.8.8.8 >> /dev/null 2>&1; then
 			echo "INFO: Ping to Google DNS successfull" >>serverstart.log 2>&1
 			echo "Ping to Google DNS successfull"
 		else
@@ -170,7 +170,7 @@ check_connection(){
 			echo "Ping to Google DNS failed. No internet access?"
 		fi
 
-		if ping 4.2.2.1 >> /dev/null 2>&1; then
+		if ping -c 2 4.2.2.1 >> /dev/null 2>&1; then
 			echo "INFO: Ping to L4 successfull" >>serverstart.log 2>&1
 			echo "Ping to L4 successfull"
 		else
