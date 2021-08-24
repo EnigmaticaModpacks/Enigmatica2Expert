@@ -75,6 +75,7 @@ createBlockStone("compressed_crushed_diorite" , 3, <blockmaterial:rock>);
 createBlockStone("compressed_crushed_granite" , 3, <blockmaterial:rock>);
 
 createBlockStone("terrestrial_artifact_block", 9, <blockmaterial:rock>);
+createBlockStone("silicon_block", 4, <blockmaterial:rock>);
 
 
 

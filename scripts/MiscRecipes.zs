@@ -541,6 +541,10 @@ mods.mechanics.addTubeRecipe([<contenttweaker:conglomerate_of_sun>], <liquid:liq
 
 # Life Essence from Sun conglomerate
 mods.mechanics.addTubeRecipe([<contenttweaker:conglomerate_of_life>], <liquid:lifeessence> * 1000);
+	
+# Silicon Block
+craft.shapeless(<contenttweaker:silicon_block>, "AAAAAAAAA", {A: <ore:ingotSilicon>});
+craft.shapeless(<libvulpes:productingot:3> * 9,   "A", {A: <contenttweaker:silicon_block>});
 
 # [Conglomerate_Of_Life*4] from [Soul_Vial][+4]
 var lambNames as string[] = [

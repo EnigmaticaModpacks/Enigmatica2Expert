@@ -19,6 +19,7 @@ tile.contenttweaker.compressed_crushed_skystone.name=Compressed Crushed Skystone
 tile.contenttweaker.conglomerate_of_life.name=Conglomerate Of Life
 tile.contenttweaker.conglomerate_of_coal.name=Conglomerate Of Coal
 tile.contenttweaker.conglomerate_of_sun.name=Conglomerate Of Sun
+tile.contenttweaker.silicon_block.name=Silicon Block
 
 item.contenttweaker.supremium_boots_base.name=Supremium Boots Core Base
 item.contenttweaker.supremium_chest_base.name=Supremium Chestplate Core Base
