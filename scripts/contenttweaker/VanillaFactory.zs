@@ -168,3 +168,18 @@ molten_spectre.color = 0x9CC1CE;
 // molten_spectre.stillLocation = "base:fluids/molten";
 // molten_spectre.flowingLocation = "base:fluids/molten_flowing";
 molten_spectre.register();
+
+# -------------------------------
+# perfect_fuel
+# -------------------------------
+val perfect_fuel = VanillaFactory.createFluid("perfect_fuel", 0xffcc00);
+// perfect_fuel.fillSound = <soundevent:block.note.snare>;
+perfect_fuel.material = <blockmaterial:lava>;
+perfect_fuel.luminosity = 20;
+perfect_fuel.viscosity = 8000;
+perfect_fuel.temperature= 10000;
+// perfect_fuel.stillLocation = "contenttweaker:fluids/perfect_fuel";
+// perfect_fuel.flowingLocation = "contenttweaker:fluids/perfect_fuel_flow";
+perfect_fuel.stillLocation = "contenttweaker:fluids/fluid";
+perfect_fuel.flowingLocation = "contenttweaker:fluids/fluid_flowing";
+perfect_fuel.register();

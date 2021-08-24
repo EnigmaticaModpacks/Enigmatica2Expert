@@ -213,7 +213,7 @@ for pos, names in utils.graph([
 	k: ["ic2uu_matter", "enrichedlava"],
 	l: ["neutron"],
 	n: ["empoweredoil"],
-	o: ["plasma"],
+	o: ["plasma", "perfect_fuel"],
 	p: ["infinity_metal"],
 
 	# Non-fuel Metals
@@ -307,3 +307,17 @@ scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:enrichedlava> * 1000, [
   <liquid:xu_enchanted_metal> * 288,  # Enchanted Metal
   <liquid:sic_vapor>          * 250,  # Silicon Carbide Vapor
 ]);
+
+# Perfect Fuel is best fluid fuel in game
+scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:perfect_fuel>, [
+  <liquid:rocketfuel>   * 40,
+  <liquid:enrichedlava> * 40,
+  <liquid:sunnarium>    * 10,
+]);
+
+# Usage for Perfect Fuel
+mods.enderio.CombustionGen.addFuel(<fluid:perfect_fuel>, 20000, 1500000);
+mods.thermalexpansion.MagmaticDynamo.addFuel(<fluid:perfect_fuel>, 2000000000);
+
+val PF = <fluid:perfect_fuel>;
+mods.nuclearcraft.fusion.addRecipe([PF * 1000, PF * 1000, PF * 1000, PF * 999, <fluid:helium> * 1000, <fluid:neutron> * 100, 2000.0d, 700000.0d, 1000000000.0d]);

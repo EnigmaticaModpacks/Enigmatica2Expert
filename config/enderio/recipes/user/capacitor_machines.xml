@@ -33,17 +33,17 @@
   <capacitor key="enderio:block_farm_station/stacksize_limit" base="16"       scaler="QUADRATIC" />
   <capacitor key="enderio:block_farm_station/boost"           base="100"      scaler="IDENTITY" /> <!-- boost: result is the percent chance that a block gets a growth tick, so with the default there is a 100% chance per capacitor level that one block is ticked, or in other words: one block per capacitor level is ticked. -->
  
-  <capacitor key="enderio:block_combustion_generator/loss"                base="0"       scaler="FIXED" />
-  <capacitor key="enderio:block_combustion_generator/buffer"              base="200000"  scaler="POWER" />
-  <capacitor key="enderio:block_combustion_generator/gen"                 base="24"      scaler="CHEMICAL" />
-  <capacitor key="enderio:block_combustion_generator/send"                base="1280"    scaler="POWER" />
-  <capacitor key="enderio:block_combustion_generator/efficiency"          base="1"       scaler="FIXED" />
+  <capacitor key="enderio:block_combustion_generator/loss"                base="0"        scaler="CENT" />
+  <capacitor key="enderio:block_combustion_generator/buffer"              base="10000000" scaler="POWER" />
+  <capacitor key="enderio:block_combustion_generator/gen"                 base="24"       scaler="CHEMICAL" />
+  <capacitor key="enderio:block_combustion_generator/send"                base="128000"   scaler="POWER" />
+  <capacitor key="enderio:block_combustion_generator/efficiency"          base="1"        scaler="FIXED" />
 
-  <capacitor key="enderio:block_enhanced_combustion_generator/loss"       base="0"       scaler="FIXED" />
-  <capacitor key="enderio:block_enhanced_combustion_generator/buffer"     base="800000"  scaler="POWER" />
-  <capacitor key="enderio:block_enhanced_combustion_generator/gen"        base="72"      scaler="CHEMICAL" />
-  <capacitor key="enderio:block_enhanced_combustion_generator/send"       base="1280"    scaler="POWER" />
-  <capacitor key="enderio:block_enhanced_combustion_generator/efficiency" base="200"     scaler="CENT" />
+  <capacitor key="enderio:block_enhanced_combustion_generator/loss"       base="0"        scaler="CENT" />
+  <capacitor key="enderio:block_enhanced_combustion_generator/buffer"     base="50000000" scaler="POWER" />
+  <capacitor key="enderio:block_enhanced_combustion_generator/gen"        base="72"       scaler="CHEMICAL" />
+  <capacitor key="enderio:block_enhanced_combustion_generator/send"       base="128000"   scaler="POWER" />
+  <capacitor key="enderio:block_enhanced_combustion_generator/efficiency" base="200"      scaler="CENT" />
   
   <capacitor key="enderio:block_stirling_generator/loss"                  base="0"       scaler="FIXED" />
   <capacitor key="enderio:block_stirling_generator/buffer"                base="2250000" scaler="POWER" />

@@ -316,6 +316,7 @@ static turbineFuel as int[string][] = [
   {fire_water      : 120},
   {empoweredoil    : 120},
   {rocketfuel      : 410},
+  {perfect_fuel    : 32800},
 /**/
 ];
 
@@ -605,6 +606,7 @@ Object.entries(
 .map(([fluid, consumption, manaTotal]) =>
   `  ${('"'+fluid+'":').padEnd(16)}[${consumption}, ${manaTotal}],`
 ))*/
+  "perfect_fuel": [12, 768000000],
   "rocketfuel":   [500, 480000],
   "empoweredoil": [1200, 100000],
   "refined_fuel": [1411, 85000],
