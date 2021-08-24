@@ -3,14 +3,21 @@
 #loader crafttweaker reloadableevents
 
 import crafttweaker.data.IData;
+import crafttweaker.player.IPlayer;
 import mods.ctintegration.advancement.AdvancementHelper;
 
 events.onPlayerLoggedIn(function(e as crafttweaker.event.PlayerLoggedInEvent){
   if(e.player.world.isRemote()) return;
 
-  var data as IData = e.player.data.PlayerPersisted;
-  if(!isNull(data) && !isNull(data.loggedIn)) return;
-  e.player.update({PlayerPersisted : {loggedIn : true as bool}});
+  val data as IData = e.player.data.enigmatica;
+  val logCount = (!isNull(data) && !isNull(data.logCount)) ? data.logCount.asInt() + 1 : 1;
+
+  # First login ever
+  if(logCount == 1) onFirstLogin(e);
+
+  # Other logins
+  e.player.update({enigmatica: {logCount: logCount}});
+  onEachLogin(e, logCount);
   
   // # Methods called always:
   // print("~~~ Player logged in event");
@@ -27,17 +34,31 @@ events.onPlayerLoggedIn(function(e as crafttweaker.event.PlayerLoggedInEvent){
   //   adv_progress.setCompleted();
   //   utils.log(["Advancement forcedly completed:", adv_id]);
   // }
+});
 
-  # For first login
+function onFirstLogin(e as crafttweaker.event.PlayerLoggedInEvent) as void {
   if(e.player.world.getWorldType() == "voidworld") {
     e.player.addGameStage("skyblock");
+    showWithDelay(e.player, "tooltips.dim_stages.enter_skyblock");
   } else {
-    e.player.addGameStage("normal_world");
+    // e.player.addGameStage("normal_world");
+  }
+}
+
+function onEachLogin(e as crafttweaker.event.PlayerLoggedInEvent, logCount as int) as void {
+  # This methods wont be called in debug invironment:
+  if(!utils.DEBUG) {
+    server.commandManager.executeCommand(server, "/bq_admin default load");
+    server.commandManager.executeCommand(server, "/bqs_loot default load");
   }
 
+  if(logCount == 2 && e.player.hasGameStage("skyblock")) {
+    showWithDelay(e.player, "tooltips.dim_stages.remind_skyblock");
+  }
+}
 
-  # This methods wont be called in debug invironment:
-  if(utils.DEBUG) return;
-  server.commandManager.executeCommand(server, "/bq_admin default load");
-  server.commandManager.executeCommand(server, "/bqs_loot default load");
-});
+function showWithDelay(player as IPlayer, lang as string) {
+  mods.zenutils.DelayManager.addDelayWork(function() {
+    player.sendMessage(game.localize(lang));
+  }, 20 * 10);
+}
