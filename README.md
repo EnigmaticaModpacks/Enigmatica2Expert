@@ -1,4 +1,4 @@
-# (draft) Description
+# Description
 
 ![](https://i.imgur.com/afnpdXm.png)
 
@@ -42,8 +42,8 @@ See full list in [MODS.md](MODS.md)
   Replace vanilla-like equipment with Tinker's Variants.  
   *![](https://git.io/JOv9u "Iron Chestplate") Iron - Diamond armor was removed, recipes replaced*
   
-- ### Less crafting table -> more new crafting ways  
-  *![](https://git.io/JOv9g "§eInferium Essence") Mystical Agriculture Essence can be made in compressor*
+- ### More exploration  
+  *[Rocket Assembler] Added a variety of new resources and unique terrain on planets and other dimensions*
 
 
 -----------------
