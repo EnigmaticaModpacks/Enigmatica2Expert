@@ -54018,7 +54018,7 @@
     "709:10": {
       "questID:3": 709,
       "preRequisites:11": [
-        65
+        821
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -63320,16 +63320,25 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
-              "id:8": "bq_standard:loot_chest",
+              "id:8": "colossalchests:chest_wall",
+              "Count:3": 9,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "colossalchests:colossal_chest",
               "Count:3": 1,
-              "Damage:2": 101,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "actuallyadditions:block_giant_chest",
+              "Count:3": 1,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -72287,6 +72296,1118 @@
           }
         }
       }
+    },
+    "929:10": {
+      "questID:3": 929,
+      "preRequisites:11": [
+        565
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "enderio:block_inventory_chest_tiny",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "bq.quest929.name",
+          "desc:8": "bq.quest929.desc"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "enderio:block_inventory_chest_tiny",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "930:10": {
+      "questID:3": 930,
+      "preRequisites:11": [
+        144
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "industrialforegoing:hydrator",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "bq.quest930.name",
+          "desc:8": "bq.quest930.desc"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "industrialforegoing:hydrator",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "931:10": {
+      "questID:3": 931,
+      "preRequisites:11": [
+        467
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "draconicevolution:grinder",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "bq.quest931.name",
+          "desc:8": "bq.quest931.desc"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "draconicevolution:grinder",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 50,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "932:10": {
+      "questID:3": 932,
+      "preRequisites:11": [
+        47
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "farmingforblockheads:market",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "bq.quest932.name",
+          "desc:8": "bq.quest932.desc"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "farmingforblockheads:market",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "id:8": "farmingforblockheads:fertilizer",
+              "Count:3": 64,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "farmingforblockheads:fertilizer",
+              "Count:3": 64,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "farmingforblockheads:fertilizer",
+              "Count:3": 64,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "933:10": {
+      "questID:3": 933,
+      "preRequisites:11": [
+        13,
+        368
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "botania:specialflower",
+            "Count:3": 1,
+            "tag:10": {
+              "type:8": "orechidVacuam"
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "bq.quest933.name",
+          "desc:8": "bq.quest933.desc"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "botania:specialflower",
+              "Count:3": 1,
+              "tag:10": {
+                "type:8": "orechidVacuam"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 50,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "934:10": {
+      "questID:3": 934,
+      "preRequisites:11": [
+        13,
+        387
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "botania:reachring",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "bq.quest934.name",
+          "desc:8": "bq.quest934.desc"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "botania:reachring",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 50,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "935:10": {
+      "questID:3": 935,
+      "preRequisites:11": [
+        605
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "forestry:worktable",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "bq.quest935.name",
+          "desc:8": "bq.quest935.desc"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "forestry:worktable",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "id:8": "farmingforblockheads:fertilizer",
+              "Count:3": 64,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "farmingforblockheads:fertilizer",
+              "Count:3": 64,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "farmingforblockheads:fertilizer",
+              "Count:3": 64,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "936:10": {
+      "questID:3": 936,
+      "preRequisites:11": [
+        771
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "rats:purifying_liquid",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "bq.quest936.name",
+          "desc:8": "bq.quest936.desc"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "rats:purifying_liquid",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "937:10": {
+      "questID:3": 937,
+      "preRequisites:11": [
+        467
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "draconicevolution:energy_storage_core",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "bq.quest937.name",
+          "desc:8": "bq.quest937.desc"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "draconicevolution:energy_storage_core",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "draconicevolution:energy_pylon",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "draconicevolution:particle_generator",
+              "Count:3": 4,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "draconicevolution:magnet",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "938:10": {
+      "questID:3": 938,
+      "preRequisites:11": [
+        100
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "immersiveengineering:metal_device1",
+            "Count:3": 1,
+            "Damage:2": 6,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "bq.quest938.name",
+          "desc:8": "bq.quest938.desc"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "immersiveengineering:metal_device1",
+              "Count:3": 1,
+              "Damage:2": 6,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "939:10": {
+      "questID:3": 939,
+      "preRequisites:11": [
+        718
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "thermalexpansion:morb",
+            "Count:3": 1,
+            "tag:10": {
+              "id:8": "rats:illager_piper"
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "bq.quest939.name",
+          "desc:8": "bq.quest939.desc"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "thermalexpansion:morb",
+              "Count:3": 1,
+              "tag:10": {
+                "id:8": "rats:illager_piper"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "openblocks:trophy",
+              "Count:3": 1,
+              "tag:10": {
+                "entity_id:8": "minecraft:cow"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "940:10": {
+      "questID:3": 940,
+      "preRequisites:11": [
+        53
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "partySingleReward:8": "false",
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "endreborn:death_essence",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 1,
+          "repeat_relative:1": 1,
+          "name:8": "bq.quest940.name",
+          "desc:8": "bq.quest940.desc"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "endreborn:death_essence",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "941:10": {
+      "questID:3": 941,
+      "preRequisites:11": [
+        940
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "endreborn:armour_chestplate_dragon",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "bq.quest941.name",
+          "desc:8": "bq.quest941.desc"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {
+                  "AS_Amulet_HolderLeast:4": -8469918875462925000,
+                  "AS_Amulet_HolderMost:4": -5260415147165142000
+                }
+              },
+              "id:8": "endreborn:armour_helmet_dragon",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "endreborn:armour_chestplate_dragon",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "endreborn:armour_leggings_dragon",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "endreborn:armour_boots_dragon",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "id:8": "endreborn:dragon_scales",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "endreborn:catalyst",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 25,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "1:10": {
+          "hideBlockIcon:1": 1,
+          "rewardID:8": "bq_standard:command",
+          "asScript:1": 1,
+          "description:8": "Allow mobs spawn with this armor set",
+          "viaPlayer:1": 0,
+          "index:3": 1,
+          "title:8": "bq_standard.reward.command",
+          "command:8": "gamestage silentadd VAR_NAME armor_dragon"
+        }
+      }
+    },
+    "942:10": {
+      "questID:3": 942,
+      "preRequisites:11": [
+        55
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {
+                "AS_Amulet_HolderLeast:4": -8469918875462925000,
+                "AS_Amulet_HolderMost:4": -5260415147165142000
+              }
+            },
+            "id:8": "usefulrailroads:rail_teleport",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "bq.quest942.name",
+          "desc:8": "bq.quest942.desc"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {
+                  "AS_Amulet_HolderLeast:4": -8469918875462925000,
+                  "AS_Amulet_HolderMost:4": -5260415147165142000
+                }
+              },
+              "id:8": "usefulrailroads:rail_teleport",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "enderio:item_rod_of_return",
+              "Count:3": 1,
+              "tag:10": {
+                "enderio:energy:3": 2000000,
+                "enderio:famount:3": 200
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "enderio:item_staff_of_levity",
+              "Count:3": 1,
+              "tag:10": {
+                "enderio.darksteel.upgrade.energyUpgrade:10": {
+                  "level:3": 3,
+                  "energy:3": 1000000
+                },
+                "enderio:famount:3": 8000
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "appliedenergistics2:charged_staff",
+              "Count:3": 1,
+              "tag:10": {
+                "internalMaxPower:6": 8000.0,
+                "internalCurrentPower:6": 8000.0
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     }
   },
   "questLines:9": {
@@ -72498,7 +73619,7 @@
         "29:10": {
           "sizeX:3": 24,
           "x:3": 3,
-          "y:3": 109,
+          "y:3": 108,
           "id:3": 762,
           "sizeY:3": 24
         },
@@ -72640,6 +73761,27 @@
           "x:3": -72,
           "y:3": 108,
           "id:3": 912,
+          "sizeY:3": 24
+        },
+        "50:10": {
+          "sizeX:3": 24,
+          "x:3": -33,
+          "y:3": 108,
+          "id:3": 932,
+          "sizeY:3": 24
+        },
+        "51:10": {
+          "sizeX:3": 24,
+          "x:3": -108,
+          "y:3": 131,
+          "id:3": 935,
+          "sizeY:3": 24
+        },
+        "52:10": {
+          "sizeX:3": 24,
+          "x:3": 219,
+          "y:3": 133,
+          "id:3": 942,
           "sizeY:3": 24
         }
       },
@@ -73358,6 +74500,13 @@
           "y:3": 40,
           "id:3": 917,
           "sizeY:3": 24
+        },
+        "32:10": {
+          "sizeX:3": 24,
+          "x:3": -96,
+          "y:3": -24,
+          "id:3": 938,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 3,
@@ -73619,6 +74768,13 @@
           "x:3": -24,
           "y:3": 48,
           "id:3": 792,
+          "sizeY:3": 24
+        },
+        "34:10": {
+          "sizeX:3": 24,
+          "x:3": 8,
+          "y:3": 112,
+          "id:3": 929,
           "sizeY:3": 24
         }
       },
@@ -74280,6 +75436,20 @@
           "x:3": 289,
           "y:3": 195,
           "id:3": 783,
+          "sizeY:3": 24
+        },
+        "61:10": {
+          "sizeX:3": 24,
+          "x:3": 361,
+          "y:3": 158,
+          "id:3": 933,
+          "sizeY:3": 24
+        },
+        "62:10": {
+          "sizeX:3": 24,
+          "x:3": 176,
+          "y:3": 208,
+          "id:3": 934,
           "sizeY:3": 24
         }
       },
@@ -76097,8 +77267,8 @@
         },
         "17:10": {
           "sizeX:3": 24,
-          "x:3": 28,
-          "y:3": 160,
+          "x:3": 12,
+          "y:3": 168,
           "id:3": 699,
           "sizeY:3": 24
         },
@@ -76111,7 +77281,7 @@
         },
         "19:10": {
           "sizeX:3": 24,
-          "x:3": -4,
+          "x:3": -12,
           "y:3": 160,
           "id:3": 702,
           "sizeY:3": 24
@@ -76185,6 +77355,13 @@
           "y:3": -11,
           "id:3": 895,
           "sizeY:3": 20
+        },
+        "30:10": {
+          "sizeX:3": 24,
+          "x:3": 36,
+          "y:3": 160,
+          "id:3": 930,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 12,
@@ -77452,6 +78629,20 @@
           "y:3": 168,
           "id:3": 819,
           "sizeY:3": 24
+        },
+        "38:10": {
+          "sizeX:3": 24,
+          "x:3": -24,
+          "y:3": 72,
+          "id:3": 936,
+          "sizeY:3": 24
+        },
+        "39:10": {
+          "sizeX:3": 24,
+          "x:3": -23,
+          "y:3": -81,
+          "id:3": 939,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 16,
@@ -78264,6 +79455,20 @@
           "y:3": 0,
           "id:3": 563,
           "sizeY:3": 36
+        },
+        "37:10": {
+          "sizeX:3": 24,
+          "x:3": 32,
+          "y:3": 196,
+          "id:3": 931,
+          "sizeY:3": 24
+        },
+        "38:10": {
+          "sizeX:3": 24,
+          "x:3": 48,
+          "y:3": 108,
+          "id:3": 937,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 19,
@@ -78512,8 +79717,8 @@
         },
         "32:10": {
           "sizeX:3": 24,
-          "x:3": 150,
-          "y:3": 108,
+          "x:3": -23,
+          "y:3": 55,
           "id:3": 709,
           "sizeY:3": 24
         },
@@ -78610,8 +79815,8 @@
         },
         "46:10": {
           "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": 86,
+          "x:3": 150,
+          "y:3": 108,
           "id:3": 927,
           "sizeY:3": 24
         },
@@ -78861,6 +80066,20 @@
           "x:3": 136,
           "y:3": -8,
           "id:3": 915,
+          "sizeY:3": 16
+        },
+        "31:10": {
+          "sizeX:3": 24,
+          "x:3": 264,
+          "y:3": 40,
+          "id:3": 940,
+          "sizeY:3": 24
+        },
+        "32:10": {
+          "sizeX:3": 16,
+          "x:3": 280,
+          "y:3": 36,
+          "id:3": 941,
           "sizeY:3": 16
         }
       },

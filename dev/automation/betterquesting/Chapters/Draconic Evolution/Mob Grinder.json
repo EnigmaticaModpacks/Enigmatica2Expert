@@ -1,37 +1,33 @@
 {
-  "_index": "927:10",
+  "_index": "931:10",
   "_pos": {
-    "_index": "46:10",
+    "_index": "37:10",
     "_data": {
       "sizeX:3": 24,
-      "x:3": 150,
-      "y:3": 108,
-      "id:3": 927,
+      "x:3": 32,
+      "y:3": 196,
+      "id:3": 931,
       "sizeY:3": 24
     }
   },
   "_data": {
-    "questID:3": 927,
+    "questID:3": 931,
     "preRequisites:11": [
-      65
+      467
     ],
     "properties:10": {
       "betterquesting:10": {
         "issilent:1": 0,
         "snd_complete:8": "minecraft:entity.player.levelup",
         "lockedprogress:1": 1,
-        "partySingleReward:8": "false",
         "tasklogic:8": "AND",
         "repeattime:3": -1,
         "visibility:8": "ALWAYS",
         "simultaneous:1": 0,
         "icon:10": {
-          "ForgeCaps:10": {
-            "astralsorcery:cap_item_amulet_holder:10": {}
-          },
-          "id:8": "psi:cad_assembly",
+          "id:8": "draconicevolution:grinder",
           "Count:3": 1,
-          "Damage:2": 5,
+          "Damage:2": 0,
           "OreDict:8": ""
         },
         "globalshare:1": 0,
@@ -41,8 +37,8 @@
         "autoclaim:1": 0,
         "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "bq.quest927.name",
-        "desc:8": "bq.quest927.desc"
+        "name:8": "bq.quest931.name",
+        "desc:8": "bq.quest931.desc"
       }
     },
     "tasks:9": {
@@ -55,12 +51,9 @@
         "consume:1": 0,
         "requiredItems:9": {
           "0:10": {
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
-            "id:8": "psi:cad_assembly",
+            "id:8": "draconicevolution:grinder",
             "Count:3": 1,
-            "Damage:2": 5,
+            "Damage:2": 0,
             "OreDict:8": ""
           }
         },
@@ -81,7 +74,7 @@
             "tag:10": {
               "hideLootInfo:1": 1
             },
-            "Damage:2": 25,
+            "Damage:2": 50,
             "OreDict:8": ""
           }
         }
