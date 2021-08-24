@@ -13,6 +13,7 @@ import mods.contenttweaker.Color;
 import mods.contenttweaker.Item;
 import mods.contenttweaker.MaterialSystem;
 import mods.contenttweaker.VanillaFactory;
+import mods.contenttweaker.SoundType;
 import mods.ctutils.utils.Math.abs;
 import mods.ctutils.utils.Math.floor;
 import mods.ctutils.utils.Math.max;
@@ -26,6 +27,24 @@ function buildItem(name as string) {
 	val item = VanillaFactory.createItem(name) as Item;
 	item.setCreativeTab(<creativetab:other>);
 	item.register();
+}
+
+function createBlock(name as string, level as int, blockMaterial as BlockMaterial, blockSoundType as SoundType) {
+	val c = VanillaFactory.createBlock(name, blockMaterial);
+	c.toolClass = "pickaxe";
+	c.toolLevel = level;
+	c.blockHardness = level * 1.6;
+	c.blockResistance = level * 1.4;
+	c.blockSoundType = blockSoundType;
+	c.register();
+}
+
+function createBlockGround(name as string, level as int, blockMaterial as BlockMaterial) {
+	createBlock(name, level, blockMaterial, <soundtype:ground>);
+}
+
+function createBlockStone(name as string, level as int, blockMaterial as BlockMaterial) {
+	createBlock(name, level, blockMaterial, <soundtype:stone>);
 }
 
 /*** Crafting Materials ***/
@@ -45,35 +64,18 @@ for craftMat in [
 	buildItem(craftMat);
 }
 
-function createCompressedBlock(name as string, level as int, blockMaterial as BlockMaterial) {
-	val c = VanillaFactory.createBlock(name, blockMaterial);
-	c.toolClass = "pickaxe";
-	c.toolLevel = level;
-	c.blockHardness = level * 1.6;
-	c.blockResistance = level * 1.4;
-	c.blockSoundType = <soundtype:stone>;
-	c.register();
-}
+createBlockStone("compressed_skystone", 6, <blockmaterial:rock>);
+createBlockStone("compressed_andesite", 4, <blockmaterial:rock>);
+createBlockStone("compressed_diorite" , 4, <blockmaterial:rock>);
+createBlockStone("compressed_granite" , 4, <blockmaterial:rock>);
 
-createCompressedBlock("compressed_skystone", 6, <blockmaterial:rock>);
-createCompressedBlock("compressed_andesite", 4, <blockmaterial:rock>);
-createCompressedBlock("compressed_diorite" , 4, <blockmaterial:rock>);
-createCompressedBlock("compressed_granite" , 4, <blockmaterial:rock>);
+createBlockStone("compressed_crushed_skystone", 5, <blockmaterial:rock>);
+createBlockStone("compressed_crushed_andesite", 3, <blockmaterial:rock>);
+createBlockStone("compressed_crushed_diorite" , 3, <blockmaterial:rock>);
+createBlockStone("compressed_crushed_granite" , 3, <blockmaterial:rock>);
 
-createCompressedBlock("compressed_crushed_skystone", 5, <blockmaterial:rock>);
-createCompressedBlock("compressed_crushed_andesite", 3, <blockmaterial:rock>);
-createCompressedBlock("compressed_crushed_diorite" , 3, <blockmaterial:rock>);
-createCompressedBlock("compressed_crushed_granite" , 3, <blockmaterial:rock>);
+createBlockStone("terrestrial_artifact_block", 9, <blockmaterial:rock>);
 
-
-val
-ta = VanillaFactory.createBlock("terrestrial_artifact_block", <blockmaterial:rock>);
-ta.toolClass = "pickaxe";
-ta.toolLevel = 9;
-ta.blockHardness = 9 * 1.6;
-ta.blockResistance = 9 * 1.4;
-ta.blockSoundType = <soundtype:stone>;
-ta.register();
 
 
 # -------------------------------
@@ -118,7 +120,7 @@ var pfluid = pFluidBuilder.build();
 var seedIssue = MaterialSystem
 	.getMaterialBuilder()
 	.setName("Seed")
-	.setColor(Color.fromHex("E3D7C8"))
+	.setColor(0xE3D7C8)
 	.build()
 	.registerPart(pfluid)
 	.getData();
@@ -130,19 +132,9 @@ seedIssue.addDataValue("viscosity", "1000");
 # -------------------------------
 # Animal's blocks
 # -------------------------------
-function createBlock(name as string, level as int, blockMaterial as BlockMaterial) {
-	val c = VanillaFactory.createBlock(name, blockMaterial);
-	c.toolClass = "pickaxe";
-	c.toolLevel = level;
-	c.blockHardness = level * 1.6;
-	c.blockResistance = level * 1.4;
-	c.blockSoundType = <soundtype:ground>;
-	c.register();
-}
-
-createBlock("conglomerate_of_life", 5, <blockmaterial:clay>);
-createBlock("conglomerate_of_coal", 5, <blockmaterial:clay>);
-createBlock("conglomerate_of_sun",  5, <blockmaterial:clay>);
+createBlockGround("conglomerate_of_life", 5, <blockmaterial:clay>);
+createBlockGround("conglomerate_of_coal", 5, <blockmaterial:clay>);
+createBlockGround("conglomerate_of_sun",  5, <blockmaterial:clay>);
 
 # -------------------------------
 # Animal's items

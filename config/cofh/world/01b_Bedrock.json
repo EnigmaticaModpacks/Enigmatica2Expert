@@ -1,0 +1,36 @@
+{
+  "populate": {
+
+		"bedrock_osmium_big": {
+			"distribution": "uniform",
+			"generator": {
+        "type": "cluster",
+        "cluster-size": 5,
+        "block": {
+          "name": "bedrockores:bedrock_ore",
+          "data-tag": "{amount: 30, oreMeta: 0, oreId: 3413}"
+        },
+        "material": "bedrock"
+			},
+			"cluster-count": 20,
+			"min-height": 2,
+			"max-height": 2
+    },
+    
+		"bedrock_osmium_small": {
+			"distribution": "uniform",
+			"generator": {
+        "type": "cluster",
+        "cluster-size": 6,
+        "block": {
+          "name": "bedrockores:bedrock_ore",
+          "data-tag": "{amount: 4, oreMeta: 0, oreId: 3413}"
+        },
+        "material": "bedrock"
+			},
+			"cluster-count": 5,
+			"min-height": 2,
+			"max-height": 2
+    }
+  }
+}
