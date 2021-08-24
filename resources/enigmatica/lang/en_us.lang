@@ -1,4 +1,4 @@
-item.excompressum:bait_uncnown.name=Any Bait
+item.excompressum:bait_unknown.name=Any Bait
 
 tooltips.lang.tag.generator=§6#Generator
 tooltips.lang.tag.chunkloader=§9#ChunkLoader
@@ -34,19 +34,16 @@ tooltips.lang.pumpjack=The Pumpjack needs a pipe to bedrock to function.
 tooltips.lang.requires.redstone400=Requires 400 Redstone Units.
 tooltips.lang.requires.redstone160=Requires 160 Redstone Units.
 tooltips.lang.reinforced_cell_frame=The Reinforced Cell Frame (Full) can only be made in a Fluid Transposer with an internal buffer of 250.000 RF or more.
-tooltips.lang.generates.other_planets=This ore only generates on other planets or in Deep Dark
-tooltips.lang.generates.other_planets.rutile=Rutile Ore only generates on other planets, but Titanium Ingots are craftable.
 tooltips.lang.obtained.fabricator_or_excavator=Obtainable through the Advanced Metallurgic Fabricator OR from IE Excavator.
 tooltips.lang.craftable.ludictite=Block of Ludicrite is craftable.
 tooltips.lang.obtained.mithril=Only obtainable through §9Primal Mana§r world interaction or in §1other dimensions§r
 tooltips.lang.removed.use_market=Disabled. Use the Market from Farming For Blockheads.
-tooltips.lang.craftable.prosperity=Block of Prosperity is craftable.
 tooltips.lang.ethylene_convert=How can I use Ethylene with Advanced Generators? Use the Rotary Condensentrator to convert the Ethylene to a liquid.
+tooltips.lang.redstone.need=§4Need redstone to function
 
 tooltips.lang.requires.rf=Requires %s RF to make.
 tooltips.lang.craftable=Craftable.
 tooltips.lang.space_gen=This ore only generates on other planets.
-tooltips.lang.space_gen_high=Generates in large quantities on other planets.
 tooltips.lang.mekanism_factories=Factories are made by upgrading Machines in-world with Basic/Advanced/Elite Tier Installers.
 tooltips.lang.mekanism_t_ultimate=§dOnly works on Bins, Energy Cubes, Tanks and Gas Tanks
 tooltips.lang.ic2wrench=You can safely break IC2 machines with a Pickaxe.

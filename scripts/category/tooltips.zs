@@ -55,7 +55,6 @@ desc.jei(<thaumcraft:crucible>, "click.cauldron"); # Crucible
 desc.jei(<avaritia:resource:2>, "obtained.neutron"); # Neutronium
 desc.jei(Bucket("xpjuice"), "obtained.fluid_transposer"); # XP Bucket
 desc.jei(<bibliocraft:biblioclipboard>, "removed.instability"); # Bibliocraft Clipboard
-desc.jei(<astralsorcery:blockcustomore>, "space_gen_high"); # Rock Crystals
 desc.jei(<bigreactors:ingotludicrite>, "craftable.ludictite"); # Uncraftable ingots
 desc.jei(<thermalfoundation:material:136>, "obtained.mithril"); # Mana Infused Ingot
 desc.jei(<thermalexpansion:frame:129>, "requires.rf", "10.000.000"); # Thermal Expansion Casings
@@ -67,7 +66,6 @@ desc.jei(<actuallyadditions:block_crystal_empowered:4>, "requires.rf", "2.000.00
 desc.jei(<actuallyadditions:block_crystal_empowered:5>, "requires.rf", "1.000.000");  # Enori
 desc.jei(<harvestcraft:market>, "removed.use_market"); # Pam's Harvestcraft Market
 desc.jei(<mekanism:controlcircuit:3>, "requires.rf", "2.000.000"); # Mekanism Ultimate Circuit
-desc.jei(<mysticalagriculture:crafting:5>, "craftable.prosperity"); # Mystical Agriculture Block of Prosperity
 
 
 desc.jei(<mekanism:machineblock:2>, "removed.dupe_ore");
@@ -101,8 +99,6 @@ desc.jei(<thermalexpansion:frame:146>, "reinforced_cell_frame");
 # IC2 Wrenches
 desc.jei(<ic2:electric_wrench>, "ic2wrench");
 desc.jei(<ic2:wrench>, "ic2wrench");
-desc.jei(<draconicevolution:draconium_ore>, "generates.other_planets");
-desc.jei(<libvulpes:ore0:8>, "generates.other_planets.rutile");
 
 # Thermal Expansion Resonant Machine Frame (Full)
 desc.jei(<thermalexpansion:frame:148>, "requires.rf", "100.000.000");
@@ -143,8 +139,7 @@ desc.both(<libvulpes:productingot:7>, "obtained.fabricator_or_excavator"); # Tit
 desc.both(<mekanism:tierinstaller:3>, "mekanism_t_ultimate");
 desc.both(<contenttweaker:conglomerate_of_life>, "any_lamb");
 
-# Mystical Agriculture Seeds Tier 5 -> 6
-<mysticalagriculture:ender_amethyst_seeds>.addTooltip(desc.local("tier")~": §56§r");
+# Mystical Agriculture Seeds Tier 6
 <mysticalagriculture:enderium_seeds>.addTooltip(desc.local("tier")~": §56§r");
 <mysticalagriculture:iridium_seeds>.addTooltip(desc.local("tier")~": §56§r");
 <mysticalagriculture:terrasteel_seeds>.addTooltip(desc.local("tier")~": §56§r");
