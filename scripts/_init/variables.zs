@@ -7,9 +7,6 @@ import crafttweaker.data.IData;
 
 #priority 3000
 
-
-# ######################################################################
-#
-# Global recipe ingredients
-#
-# ######################################################################
+# Importand preprocessor!
+# Significantly speedup CR load time (about 20s in 9m load time)
+#no_fix_recipe_book
