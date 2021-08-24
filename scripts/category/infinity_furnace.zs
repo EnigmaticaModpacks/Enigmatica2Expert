@@ -52,8 +52,8 @@ ${filtered.join('\n')}`
 })()
 )*/
 
-# Total Furnace recipes registered: 923
-# Filtered: 67
+# Total Furnace recipes registered: 922
+# Filtered: 69
 infinFurnace(<actuallyadditions:block_misc:3>, <actuallyadditions:item_misc:5>);
 infinFurnace(<actuallyadditions:item_dust:3>, <minecraft:emerald>);
 infinFurnace(<actuallyadditions:item_dust:7>, <actuallyadditions:item_misc:5>);
@@ -88,7 +88,6 @@ infinFurnace(<betteranimalsplus:turkey_leg_raw>, <betteranimalsplus:turkey_leg_c
 infinFurnace(<betteranimalsplus:turkey_raw>, <betteranimalsplus:turkey_cooked>);
 infinFurnace(<bigreactors:dustblutonium>, <bigreactors:ingotblutonium>);
 infinFurnace(<bigreactors:dustcyanite>, <bigreactors:ingotcyanite>);
-#infinFurnace(<bigreactors:dustgraphite>, <bigreactors:ingotgraphite>);
 infinFurnace(<bigreactors:dustludicrite>, <bigreactors:ingotludicrite>);
 infinFurnace(<bigreactors:duststeel>, <thermalfoundation:material:160>);
 infinFurnace(<bigreactors:dustyellorium>, <immersiveengineering:metal:5>);
@@ -632,7 +631,7 @@ infinFurnace(<mysticalagriculture:soulstone:1>, <mysticalagriculture:soulstone>)
 infinFurnace(<mysticalagriculture:soulstone:3>, <mysticalagriculture:soulstone:4>);
 infinFurnace(<mysticalagriculture:soulstone>, <mysticalagriculture:crafting:28>);
 infinFurnace(<netherendingores:ore_end_modded_1:1>, <thermalfoundation:ore> * 2);
-infinFurnace(<netherendingores:ore_end_modded_1:2>, <thermalfoundation:ore:7> * 2);
+#infinFurnace(<netherendingores:ore_end_modded_1:2>, <thermalfoundation:ore:7> * 2);
 infinFurnace(<netherendingores:ore_end_modded_1:3>, <thermalfoundation:ore:3> * 2);
 infinFurnace(<netherendingores:ore_end_modded_1:4>, <thermalfoundation:ore:8> * 2);
 infinFurnace(<netherendingores:ore_end_modded_1:5>, <thermalfoundation:ore:5> * 2);
@@ -640,14 +639,14 @@ infinFurnace(<netherendingores:ore_end_modded_1:6>, <thermalfoundation:ore:6> * 
 infinFurnace(<netherendingores:ore_end_modded_1:7>, <thermalfoundation:ore:2> * 2);
 infinFurnace(<netherendingores:ore_end_modded_1:8>, <thermalfoundation:ore:1> * 2);
 infinFurnace(<netherendingores:ore_end_modded_1:9>, <appliedenergistics2:quartz_ore> * 2);
-infinFurnace(<netherendingores:ore_end_modded_1:10>, <appliedenergistics2:charged_quartz_ore> * 2);
+#infinFurnace(<netherendingores:ore_end_modded_1:10>, <appliedenergistics2:charged_quartz_ore> * 2);
 infinFurnace(<netherendingores:ore_end_modded_1:11>, <mekanism:oreblock> * 2);
 infinFurnace(<netherendingores:ore_end_modded_1:12>, <immersiveengineering:ore:5> * 2);
 #infinFurnace(<netherendingores:ore_end_modded_1:13>, <bigreactors:oreyellorite> * 2);
-infinFurnace(<netherendingores:ore_end_modded_1:14>, <libvulpes:ore0> * 2);
+#infinFurnace(<netherendingores:ore_end_modded_1:14>, <libvulpes:ore0> * 2);
 infinFurnace(<netherendingores:ore_end_modded_2:1>, <biomesoplenty:gem_ore:1> * 2);
 infinFurnace(<netherendingores:ore_end_modded_2:2>, <biomesoplenty:gem_ore:6> * 2);
-infinFurnace(<netherendingores:ore_end_modded_2:3>, <biomesoplenty:gem_ore:2> * 2);
+#infinFurnace(<netherendingores:ore_end_modded_2:3>, <biomesoplenty:gem_ore:2> * 2);
 #infinFurnace(<netherendingores:ore_end_modded_2:5>, <netherendingores:ore_other_1:6> * 2);
 #infinFurnace(<netherendingores:ore_end_modded_2:6>, <netherendingores:ore_other_1:7> * 2);
 #infinFurnace(<netherendingores:ore_end_modded_2:7>, <netherendingores:ore_other_1:8> * 2);
@@ -659,7 +658,7 @@ infinFurnace(<netherendingores:ore_end_vanilla:3>, <minecraft:gold_ore> * 2);
 infinFurnace(<netherendingores:ore_end_vanilla:4>, <minecraft:iron_ore> * 2);
 infinFurnace(<netherendingores:ore_end_vanilla:5>, <minecraft:lapis_ore> * 2);
 infinFurnace(<netherendingores:ore_end_vanilla:6>, <minecraft:redstone_ore> * 2);
-#infinFurnace(<netherendingores:ore_end_vanilla>, <minecraft:coal_ore> * 2);
+infinFurnace(<netherendingores:ore_end_vanilla>, <minecraft:coal_ore> * 2);
 infinFurnace(<netherendingores:ore_nether_modded_1:1>, <thermalfoundation:ore> * 2);
 #infinFurnace(<netherendingores:ore_nether_modded_1:2>, <thermalfoundation:ore:7> * 2);
 infinFurnace(<netherendingores:ore_nether_modded_1:3>, <thermalfoundation:ore:3> * 2);

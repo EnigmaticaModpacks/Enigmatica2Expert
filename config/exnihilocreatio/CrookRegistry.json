@@ -19,6 +19,17 @@
       "fortuneChance": 0.0
     }
   ],
+  "integrateddynamics:menril_leaves": [
+    {
+      "stack": {
+        "name": "rustic:sapling",
+        "amount": 1,
+        "meta": 1
+      },
+      "chance": 0.01,
+      "fortuneChance": 0.0
+    }
+  ],
   "ore:woolPrime": [
     {
       "stack": {

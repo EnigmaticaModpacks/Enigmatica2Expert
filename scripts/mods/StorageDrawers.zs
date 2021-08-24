@@ -91,6 +91,16 @@ remakeDrawerUpgrade(<storagedrawers:upgrade_storage:2>, <ore:nuggetCrystallineAl
 remakeDrawerUpgrade(<storagedrawers:upgrade_storage:3>, <ore:nuggetUltimate>);
 remakeDrawerUpgrade(<storagedrawers:upgrade_storage:4>, <draconicevolution:chaos_shard:3>);
 
+# [Upgrade Template]*2 from [Basic Drawer][+2]
+craft.remake(<storagedrawers:upgrade_template> * 2, ["pretty",
+  "# D #",
+  "# B #",
+  "# D #"], {
+  "B": <ore:drawerBasic>,    # Basic Drawer
+  "#": <ore:stickWood>,      # Stick
+  "D": <minecraft:deadbush>, # Dead Bush
+});
+
 # Drawers clearing
 function clearDrawer(inputs as IItemStack[]) as void  {
 	for it in inputs {

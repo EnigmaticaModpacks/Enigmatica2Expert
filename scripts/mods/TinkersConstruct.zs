@@ -324,7 +324,7 @@ for item in loadedMods["tconstruct"].items {
 recipes.removeByRecipeName("tconstruct:tools/table/chest/pattern");
 craft.make(<tconstruct:tooltables:4>.withTag({
 		inventory: {Items: dataList_allPatterns},
-		ench:[{lvl:1,id:36}],enchantmentColor:10057489,CustomPotionColor:10057489 // Colored shimmer
+		ench:[{lvl:1,id:42}],enchantmentColor:10057489,CustomPotionColor:10057489 // Colored shimmer
 	}), ["pretty",
   "# a #",
   "p c p",
@@ -460,7 +460,7 @@ craft.remake(<tconevo:material:2>, ["pretty",
 #-------------------------------------------------------------------------------
 
 # New liquids
-scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:sunnarium> * 144, [<liquid:liquid_sunshine> * 1000,  <liquid:terrasteel> * 144, <liquid:flux_goo> * 100]);
+scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:sunnarium> * 144, [<liquid:liquid_sunshine> * 500, <liquid:flux_goo> * 100, <liquid:mirion> * 72]);
 scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:dark_matter> * 144, [<liquid:neutronium> * 144, <liquid:primal_metal> * 144,  <liquid:mana> * 250]);
 scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:red_matter> * 144, [<liquid:supremium> * 432,  <liquid:blockfluidantimatter> * 1000, <liquid:dark_matter> * 144]);
 

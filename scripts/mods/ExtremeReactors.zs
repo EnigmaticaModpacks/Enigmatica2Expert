@@ -143,8 +143,8 @@ scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<bigreactors:orebeni
 ]);
 
 # Benefication of Anglesite and Benitoite
-scripts.process.beneficiate(<bigreactors:oreanglesite>, "Anglesite", 1, "only: Grindstone");
-scripts.process.beneficiate(<bigreactors:orebenitoite>, "Benitoite", 1, "only: Grindstone");
+scripts.process.beneficiate(<bigreactors:oreanglesite>, "Anglesite", 1, {exceptions: "only: Grindstone"});
+scripts.process.beneficiate(<bigreactors:orebenitoite>, "Benitoite", 1, {exceptions: "only: Grindstone"});
 
 
 # Conflicts

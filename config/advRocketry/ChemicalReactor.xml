@@ -48,10 +48,10 @@
 			<itemStack>extendedcrafting:material 10 7</itemStack>
 		</output>
 	</Recipe>
-	<!-- EnderIO Liquids -->
+	<!-- EnderIO Liquids (Nutrient Distillation line) -->
 	<Recipe timeRequired="100" power="30000">
 		<input>
-			<fluidStack>water 32000</fluidStack>
+			<fluidStack>short.mead 16000</fluidStack>
 			<oreDict>itemSkull 8</oreDict>
 			<oreDict>itemPulsatingPowder 2</oreDict>
 			<oreDict>itemEnderCrystalPowder 1</oreDict>
@@ -63,7 +63,7 @@
 	</Recipe>
 	<Recipe timeRequired="40" power="30000">
 		<input>
-			<fluidStack>water 32000</fluidStack>
+			<fluidStack>short.mead 16000</fluidStack>
 			<oreDict>itemSkull 8</oreDict>
 			<oreDict>itemPulsatingPowder 1</oreDict>
 			<oreDict>itemEnderCrystalPowder 1</oreDict>
@@ -74,17 +74,17 @@
 	</Recipe>
 	<Recipe timeRequired="20" power="30000">
 		<input>
-			<fluidStack>water 2000</fluidStack>
+			<fluidStack>short.mead 1000</fluidStack>
 			<oreDict>itemSkull 1</oreDict>
 		</input>
 		<output>
 			<fluidStack>nutrient_distillation 500</fluidStack>
 		</output>
 	</Recipe>
-	<!--  -->
+	<!-- EnderIO Liquids (Hootch line) -->
 	<Recipe timeRequired="60" power="30000">
 		<input>
-			<fluidStack>water 8000</fluidStack>
+			<fluidStack>milk 16000</fluidStack>
 			<itemStack>minecraft:poisonous_potato 1 0</itemStack>
 			<oreDict>dustRedstone 1</oreDict>
 			<oreDict>dustBlaze 1</oreDict>
@@ -96,7 +96,7 @@
 	</Recipe>
 	<Recipe timeRequired="40" power="30000">
 		<input>
-			<fluidStack>water 8000</fluidStack>
+			<fluidStack>milk 16000</fluidStack>
 			<itemStack>minecraft:poisonous_potato 1 0</itemStack>
 			<oreDict>dustRedstone 1</oreDict>
 			<oreDict>dustBlaze 1</oreDict>
@@ -107,7 +107,7 @@
 	</Recipe>
 	<Recipe timeRequired="60" power="30000">
 		<input>
-			<fluidStack>water 8000</fluidStack>
+			<fluidStack>milk 16000</fluidStack>
 			<itemStack>minecraft:poisonous_potato 1 0</itemStack>
 			<oreDict>dustRedstone 1</oreDict>
 			<oreDict>gunpowder 1</oreDict>
@@ -118,17 +118,17 @@
 	</Recipe>
 	<Recipe timeRequired="20" power="30000">
 		<input>
-			<fluidStack>water 8000</fluidStack>
+			<fluidStack>milk 16000</fluidStack>
 			<itemStack>minecraft:poisonous_potato 1 0</itemStack>
 		</input>
 		<output>
 			<fluidStack>hootch 2000</fluidStack>
 		</output>
 	</Recipe>
-	<!--  -->
+	<!-- EnderIO liquids (Cloud Seed line) -->
 	<Recipe timeRequired="40" power="30000">
 		<input>
-			<fluidStack>water 2500</fluidStack>
+			<fluidStack>ice 400</fluidStack>
 			<oreDict>dustSilver 3</oreDict>
 			<oreDict>ice 2</oreDict>
 		</input>
@@ -138,12 +138,10 @@
 	</Recipe>
 	<Recipe timeRequired="20" power="30000">
 		<input>
-			<fluidStack>water 1250</fluidStack>
-			<oreDict>itemSalt 1</oreDict>
-			<oreDict>ice 1</oreDict>
+			<fluidStack>ice 200</fluidStack>
 		</input>
 		<output>
-			<fluidStack>cloud_seed 1250</fluidStack>
+			<fluidStack>cloud_seed 1000</fluidStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->

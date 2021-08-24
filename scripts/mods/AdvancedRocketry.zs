@@ -15,9 +15,6 @@ import crafttweaker.data.IData;
 	[<ore:ingotCarbon>, <advancedrocketry:blocklens>, <ore:ingotCarbon>], 
 	[<ore:plateTitaniumAluminide>, <advancedrocketry:liquidtank>, <ore:plateTitaniumAluminide>]]);
 
-# Rocket Fuel
-	scripts.wrap.immersiveengineering.Mixer.addRecipe(<liquid:rocketfuel> * 250, <liquid:oxygen> * 500, [<thermalfoundation:material:833>, <ore:bitumen>], 25000);
-
 # HeatProof Brick
 	recipes.remove(<advancedrocketry:blastbrick>);
 	recipes.addShaped("HeatProof Brick", 

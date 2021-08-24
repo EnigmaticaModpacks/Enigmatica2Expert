@@ -1,9 +1,8 @@
 import crafttweaker.item.IIngredient;
-import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IItemStack;
+import crafttweaker.liquid.ILiquidStack;
 import mods.alfinivia.ImmersiveEngineering.addChemthrowerEffect;
 import mods.alfinivia.ImmersiveEngineering.addRailgunBullet;
-import mods.alfinivia.ImmersiveEngineering.addLiquidFertilizer;
-import mods.alfinivia.ImmersiveEngineering.addItemFertilizer;
 import crafttweaker.potions.IPotionEffect;
 import scripts.craft.grid.Grid;
 
@@ -219,25 +218,19 @@ addRailgunBullet(<extendedcrafting:material:3> , 48, 1.0, colorMap);
 # addItemFertilizer(IIngredient item, IItemFertilizerMultiplier multiplier)
 # removeItemFertilizer(IItemStack item)
 
-/* Patchouli_js('Liquids/Cloche Fertilizers', {
-	item: "immersiveengineering:metal_device1:13",
-	title: "New Cloche Fertilizers",
-	type:  "item_list",
-	text0: `  Fertility (Water is 0.2)`,
-  ...match_regex_below(/^addLiquidFertilizer\(<liquid:(.*?)> *, *(.*?) *\);$/gm)
-  .sort((a,b)=>b[2]-a[2]).reduce((o, m, i)=>{
-    o[`item${i+1}`] = wrap_bucket(m[1]);
-    o[`text${i+1}`] = `     ${m[2].padStart(3)}`;
-    return o;
-  },{})
-})*/
+function addLiquidFertilizer(fluid as ILiquidStack, mult as float) {
+	if (fluid.name != 'water') mods.alfinivia.ImmersiveEngineering.addLiquidFertilizer(fluid, mult);
+	scripts.requiousJei.addGardenClocheFluid(fluid, (mult * 80.0f + 0.5f) as int);
+}
 
-addLiquidFertilizer(<liquid:meat>                 , 0.25);
-addLiquidFertilizer(<liquid:sewage>               , 0.3 );
-addLiquidFertilizer(<liquid:lifeessence>          , 0.45);
-addLiquidFertilizer(<liquid:nutrient_distillation>, 0.5 );
-addLiquidFertilizer(<liquid:for.honey>            , 0.35);
-addLiquidFertilizer(<liquid:short.mead>           , 0.35);
+addLiquidFertilizer(<liquid:water>                , 0.20f);
+addLiquidFertilizer(<liquid:meat>                 , 0.40f);
+addLiquidFertilizer(<liquid:sewage>               , 0.43f);
+addLiquidFertilizer(<liquid:for.honey>            , 0.45f);
+addLiquidFertilizer(<liquid:short.mead>           , 0.50f);
+addLiquidFertilizer(<liquid:lifeessence>          , 0.55f);
+addLiquidFertilizer(<liquid:nutrient_distillation>, 0.65f);
+addLiquidFertilizer(<liquid:vapor_of_levity>      , 0.80f);
 
 
 # *======= Chemical Thrower liquids =======*
@@ -254,7 +247,7 @@ addLiquidFertilizer(<liquid:short.mead>           , 0.35);
 		$(li)$(#727900)Strong Radiation/$ liquids have low damage, but gave Radiation III effect for 1-6 minutes
 		$(li)$(#C01B1B)High damage/$ only do big amount of damage
 		$(li)$(#957143)Flammable/$ set things on fire
-		$(li)$(#25A2AB)potion effects/$ damages and adds effects
+		$(li)$(#25A2AB)Potion effects/$ damages and adds effects
 		$(li)$(#3F1B10)Chocolates/$ gives several strong positive effects
 	`,
 })*/
@@ -321,7 +314,8 @@ addChemthrowerEffect(<liquid:biomass>      ,false, true, "chemicals", 3);
 addChemthrowerEffect(<liquid:biofuel>      ,false, true, "chemicals", 4);
 addChemthrowerEffect(<liquid:rocket_fuel>  ,false, true, "chemicals", 13);
 addChemthrowerEffect(<liquid:refined_fuel> ,false, true, "chemicals", 10);
-addChemthrowerEffect(<liquid:rocketfuel>   ,false, true, "chemicals", 15);
+addChemthrowerEffect(<liquid:rocketfuel>   ,false, true, "chemicals", 35);
+addChemthrowerEffect(<liquid:perfect_fuel> ,false, true, "chemicals", 350);
 
 
 # ----------------------------------------
@@ -505,3 +499,16 @@ craft.remake(<engineersdoors:trapdoor_concrete>, ["pretty",
   "c c"], {
   "c": <ore:concrete>, # Concrete
 });
+
+
+
+if(!isNull(loadedMods["immersivetech"])) {
+	# Cloud seed harder (also BoP Hotspring water as extra)
+	mods.enderio.Vat.removeRecipe(<liquid:cloud_seed>);
+	mods.immersivetechnology.CoolingTower.addRecipe(<liquid:cloud_seed> * 500, <liquid:hot_spring_water> * 10, <liquid:ice> * 200, <liquid:ice> * 200, <liquid:ic2hot_water> * 1000, 20);
+
+	# Rplace wrong salt
+	utils.rh(<immersivetech:material>);
+	mods.immersivetechnology.Distiller.removeRecipe(<liquid:water>);
+	mods.immersivetechnology.Distiller.addRecipe(<liquid:water> * 1000, <liquid:distwater> * 500, <mekanism:salt>, 2000, 20, 1.0f);
+}

@@ -320,7 +320,7 @@ craft.remake(<enderstorage:ender_pouch>, ["pretty",
 		"░ ░ ░"], {
 		"░": <ore:cobblestone>, # Cobblestone
 		"S": <ore:gearStone>,   # Stone Gear
-		"☺": <minecraft:coal:*> # Coal
+		"☺": <minecraft:coal:*>|<actuallyadditions:item_misc:22>, # Coal
 	});
 
 # Hopper
@@ -535,12 +535,6 @@ recipes.removeShaped(<minecraft:red_nether_brick>);
 # Compressed chest
 recipes.remove(<extrautils2:largishchest>);
 utils.compact(<ore:chest>, <extrautils2:largishchest>);
-
-# Recipes with no inputs
-recipes.remove(<minecraft:rail> * 8);
-recipes.remove(<minecraft:gunpowder> * 3);
-recipes.remove(<minecraft:torch> * 4);
-
 
 # Sunshine from Sun conglomerate
 mods.mechanics.addTubeRecipe([<contenttweaker:conglomerate_of_sun>], <liquid:liquid_sunshine> * 1000);

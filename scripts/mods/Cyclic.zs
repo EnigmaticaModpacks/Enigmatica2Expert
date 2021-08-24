@@ -187,11 +187,6 @@ craft.remake(<cyclicmagic:magic_net> * 2, ["pretty",
   "☼": <scalinghealth:crystalshard>, # Heart Crystal Shard
 });
 
-# Soul stone as T3 crafting ingredient
-recipes.remove(<cyclicmagic:soulstone>);
-mods.rockytweaks.Anvil.addRecipe(<cyclicmagic:ender_pearl_mounted>, <cyclicmagic:crystallized_obsidian>, <cyclicmagic:soulstone>, 45);
-
-
 # [Apple_of_Lofty_Stature] from [Mending_Moss][+2]
 craft.reshapeless(<cyclicmagic:food_step>, "PMr", {
   "P": <ore:cropApple>,

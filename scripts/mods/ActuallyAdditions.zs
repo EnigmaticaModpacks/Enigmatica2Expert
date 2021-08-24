@@ -45,10 +45,9 @@ utils.compact(<ore:gemQuartzBlack>, <ore:blockQuartzBlack>);
 
 # [Lens of the Miner] from [Lens of Color][+7]
 craft.remake(<actuallyadditions:item_mining_lens>, ["pretty",
-  "N ⌂ ⌃",
+  "N E ⌃",
   "E L E",
   "e V ♥"], {
-  "⌂": <actuallyadditions:block_misc:8>,    # Ender Casing
   "⌃": <ore:oreNetherChargedCertusQuartz>,  # Nether Charged Certus Quartz Ore
   "E": <cyclicmagic:exp_pylon>,             # Experience Pylon
   "♥": <ore:oreNetherRedstone>,             # Nether Redstone Ore
@@ -150,7 +149,7 @@ craft.remake(<actuallyadditions:item_mining_lens>, ["pretty",
 # Void
 	mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered:3>);
 	mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:block_crystal_empowered:3>);
-	scripts.wrap.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:3>, <actuallyadditions:block_crystal:3>, <randomthings:ingredient:13>, <extendedcrafting:storage>, <chisel:basalt2:*>, <actuallyadditions:block_misc:2>, 2500000, 200, [0.1, 0.0, 0.0]);
+	scripts.wrap.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:3>, <actuallyadditions:block_crystal:3>, <randomthings:ingredient:13>, <extendedcrafting:storage>, <chisel:basalt2:*>, <appliedenergistics2:sky_stone_block>, 2500000, 200, [0.1, 0.0, 0.0]);
 
 # Emeradic
 	mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered:4>);
@@ -576,3 +575,7 @@ craft.remake(<actuallyadditions:item_food:8>, ["pretty",
   "e": <ore:listAllegg>, # Egg
   "l": <ore:listAllsugar>, # Sugar
 });
+
+# Harder Void Stone (was from coal)
+mods.actuallyadditions.AtomicReconstructor.removeRecipe(<actuallyadditions:block_crystal:3>);
+mods.actuallyadditions.AtomicReconstructor.addRecipe(<actuallyadditions:block_crystal:3>, <actuallyadditions:block_misc:2>, 1000);

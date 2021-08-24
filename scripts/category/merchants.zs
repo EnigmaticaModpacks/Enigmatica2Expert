@@ -196,8 +196,8 @@ val merchData = {
       4: [
         [E*15, <ic2:forge_hammer>],
         [E*24, <exnihilocreatio:hammer_diamond>],
-        [<excompressum:compressed_hammer_diamond>, E*32],
-        [<excompressum:double_compressed_diamond_hammer>, E*64],
+        [<excompressum:compressed_hammer_diamond>, E*16],
+        [<excompressum:double_compressed_diamond_hammer>, E*48],
         [E*23, <tconstruct:tough_tool_rod>.withTag({Material: "ma.prosperity"})],
         [E*13, <tconstruct:tough_tool_rod>.withTag({Material: "amber"})],
         [E*25, <tconstruct:tough_tool_rod>.withTag({Material: "carbon_fiber"})],

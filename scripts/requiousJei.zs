@@ -313,9 +313,9 @@ static turbineFuel as int[string][] = [
   {rocket_fuel     : 95},
   {syngas          : 100},
   {refined_fuel    : 105},
-  {rocketfuel      : 110},
   {fire_water      : 120},
   {empoweredoil    : 120},
+  {rocketfuel      : 410},
 /**/
 ];
 
@@ -605,7 +605,7 @@ Object.entries(
 .map(([fluid, consumption, manaTotal]) =>
   `  ${('"'+fluid+'":').padEnd(16)}[${consumption}, ${manaTotal}],`
 ))*/
-  "rocketfuel":   [1000, 120000],
+  "rocketfuel":   [500, 480000],
   "empoweredoil": [1200, 100000],
   "refined_fuel": [1411, 85000],
   "diesel":       [3428, 17500],
@@ -619,7 +619,7 @@ Object.entries(
   val consumption = arr[0];
   val manaTotal = arr[1];
   x.addJEIRecipe(AssemblyRecipe.create(function(container) {
-    container.addItemOutput('output0', <botania:manatablet>.withTag({mana: manaTotal}));
+    container.addItemOutput('output0', <botania:manatablet>.withTag({mana: min(500000, manaTotal), display:{Name:"§b"~manaTotal~" Mana"}}));
   })
   .requireFluid('liquid_input', game.getLiquid(fluid) * consumption)
   );

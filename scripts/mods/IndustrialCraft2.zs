@@ -157,6 +157,8 @@ utils.rh(<ic2:dust:23>);
 utils.rh(<ic2:dust:25>);
 utils.rh(<ic2:dust:36>);
 utils.rh(<ic2:nuclear:6>);
+utils.rh(<ic2:nuclear:8>);
+utils.rh(<ic2:nuclear:9>);
 
 # Iridium TiC Compat
 	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:iridium> * 144, <ic2:misc_resource:1>, 500);

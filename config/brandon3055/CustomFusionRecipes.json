@@ -52,7 +52,7 @@
     "catalyst": "actuallyadditions:block_crystal,1,3",
     "energy": 2500000,
     "tier": 0,
-    "ingredients": ["randomthings:ingredient,1,13", "extendedcrafting:storage", "ore:stoneBasalt", "actuallyadditions:block_misc,1,2"]
+    "ingredients": ["randomthings:ingredient,1,13", "extendedcrafting:storage", "ore:stoneBasalt", "appliedenergistics2:sky_stone_block"]
   },
   {
     "mode": "ADD",

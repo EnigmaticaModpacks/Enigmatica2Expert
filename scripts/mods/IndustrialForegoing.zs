@@ -20,6 +20,9 @@ function fluidDict(ins as string[]) {
 	FluidDictionary.add("seed.oil", "seed_oil", 1);
 	FluidDictionary.add("seed_oil", "seed.oil", 1);
 
+	FluidDictionary.add("mead", "short.mead", 1);
+	FluidDictionary.add("short.mead", "mead", 1);
+
 	FluidDictionary.add("sulfuric_acid", "sulfuricacid", 1);
 	FluidDictionary.add("sulfuricacid", "sulfuric_acid", 1);
 
@@ -298,4 +301,30 @@ craft.make(<industrialforegoing:infinity_drill>, ["pretty",
   "D": <actuallyadditions:item_drill:*>,      # Drill
   "▬": <ore:ingotPinkMetal>,                  # Pink Slime Ingot
   "L": <industrialforegoing:laser_drill>,     # Laser Drill
+});
+
+# [Enchantment Factory] from [Machine Case][+5]
+craft.remake(<industrialforegoing:enchantment_invoker>, ["pretty",
+  "R u R",
+  "¤ M ¤",
+  "E B E"], {
+  "R": <industrialforegoing:plastic>, # Plastic
+  "B": <teslacorelib:base_addon>,   # Base Addon
+  "¤": <ore:gearMithril>,           # Mana Infused Gear
+  "E": <cyclicmagic:exp_pylon>,     # Experience Pylon
+  "u": scripts._init.variables.cowWrittenBook_ingr,
+  "M": <teslacorelib:machine_case>, # Machine Case
+});
+
+# [Enchantment Extractor] from [Machine Case][+5]
+craft.remake(<industrialforegoing:enchantment_extractor>, ["pretty",
+  "R B R",
+  "¤ M ¤",
+  "E n E"], {
+  "R": <industrialforegoing:plastic>, # Plastic
+  "B": scripts._init.variables.cowWrittenBook_ingr,
+  "¤": <ore:gearPlatinum>,          # Platinum Gear
+  "E": <cyclicmagic:exp_pylon>,     # Experience Pylon
+  "M": <teslacorelib:machine_case>, # Machine Case
+  "n": <thaumcraft:fabric:*>,       # Enchanted Fabric
 });

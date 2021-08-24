@@ -349,7 +349,7 @@ function beneficiate(
 
   # Mekanism machines can't work with NBT tags for inputs
   # So check if we have NBT first
-  if (isNull(input.itemArray[0].tag)) {
+  if (!input.itemArray[0].hasTag) {
 
     val clump = utils.getSomething(oreName, ["clump"], amount + 1);
     if(!isNull(clump)) {

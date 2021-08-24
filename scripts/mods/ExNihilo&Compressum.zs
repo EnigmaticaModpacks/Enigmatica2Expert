@@ -185,16 +185,17 @@ craft.remake(<excompressum:auto_heavy_sieve>, ["pretty",
   "H": <excompressum:heavy_sieve:*>,      # Heavy Birch Sieve
 });
 
-# [Diamond Hammer] from [Nutritious Stick][+1]
-craft.remake(<exnihilocreatio:hammer_diamond>, ["pretty",
-  "  D  ",
-  "  ╱ D",
-  "╱    "], {
-  "╱": <ore:itemNutritiousStick>, # Nutritious Stick
-  "D": <ore:compressedDiamond2x>, # Double Compressed Diamond
+# [Auto Hammer] from [Cobalt Sledge Hammer Head][+2]
+craft.remake(<excompressum:auto_hammer>, ["pretty",
+  "M I M",
+  "M C M",
+  "M I M"], {
+  "C": <tcomplement:sledge_head>.withTag({Material: "cobalt"}), # Cobalt Sledge Hammer Head
+  "I": <minecraft:iron_trapdoor>,         # Iron Trapdoor
+  "M": <extrautils2:decorativesolidwood>, # Magical Planks
 });
 
-# [Auto Compressed Hammer] from [Compressed Diamond Hammer][+4]
+# [Auto Compressed Hammer] from [Cobalt Hammer Head][+4]
 craft.remake(<excompressum:auto_compressed_hammer>, ["pretty",
   "  A  ",
   "□ C □",
@@ -202,6 +203,6 @@ craft.remake(<excompressum:auto_compressed_hammer>, ["pretty",
   "■": <ore:blockMotor>,                  # Motor
   "□": <ore:plateTitaniumIridium>,        # Titanium Iridium Alloy Plate
   "A": <exnihilocreatio:item_material:3>, # Ancient Spores
-  "C": <excompressum:compressed_hammer_diamond>.anyDamage(), # Compressed Diamond Hammer
+  "C": <tconstruct:hammer_head>.withTag({Material: "cobalt"}), # Cobalt Hammer Head
   "◊": <ore:gemTanzanite>,                # Tanzanite
 });

@@ -9,7 +9,10 @@ import mods.artisanworktables.builder.RecipeBuilder;
 var creativeGasTankFrame = <simple_trophies:trophy>.withTag({
 	TrophyItem:{id:"mekanism:gastank",Count:1 as byte, Damage:0 as short},
 	TrophyName:"Creative Gas Tank Frame",
-	TrophyVariant:"gold"
+	TrophyVariant:"gold",
+	TrophyColorRed: 255,
+	TrophyColorGreen: 230,
+	TrophyColorBlue: 0,
 });
 
 # Add to JEI and apply Information
@@ -121,14 +124,17 @@ var list = {
 var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
   TrophyItem:{id:"twilightforest:miniature_structure",Count:1 as byte, Damage:0 as short},
   TrophyName:"Twilight Forest Master Trophy",
-  TrophyVariant:"gold"
+  TrophyVariant:"gold",
+	TrophyColorRed: 31,
+	TrophyColorGreen: 209,
+	TrophyColorBlue: 0,
 });
 
 # Twilight Forest Master Trophy
-	recipes.addShapedMirrored("Twilight Forest Master Trophy", twilightForestMasterTrophy, 
-	[[<twilightforest:trophy>, <twilightforest:trophy:1>, <twilightforest:trophy:2>],
-	[<twilightforest:trophy:5>, <ore:blockCrystalMatrix>, <twilightforest:trophy:3>], 
-	[<twilightforest:trophy:4>, <twilightforest:trophy:8>, <twilightforest:trophy:6>]]);
+	recipes.addShapeless("Twilight Forest Master Trophy", twilightForestMasterTrophy, 
+	[<twilightforest:trophy>, <twilightforest:trophy:1>, <twilightforest:trophy:2>,
+	<twilightforest:trophy:5>, <ore:blockCrystalMatrix>, <twilightforest:trophy:3>, 
+	<twilightforest:trophy:4>, <twilightforest:trophy:8>, <twilightforest:trophy:6>]);
 
 # Master Trophy
 	mods.jei.JEI.addItem(twilightForestMasterTrophy);
@@ -436,41 +442,24 @@ recipes.addShapeless("Creative Gas Tank Clearing",
 var creativeFluidTankFrame = <simple_trophies:trophy>.withTag({
 	TrophyItem:{id:"mekanism:machineblock2",Count:1 as byte, Damage:11 as short},
 	TrophyName:"Creative Fluid Tank Frame",
-	TrophyVariant:"gold"
+	TrophyVariant:"gold",
+	TrophyColorGreen: 118,
+	TrophyColorBlue: 151,
+	TrophyColorRed: 40,
 });
+
+function advTank(fluid as string) as IIngredient {
+	return <mekanism:machineblock2:11>.withTag({tier: 1, mekData: {fluidTank: {FluidName: fluid, Amount: 400000}}});
+}
 
 # Add to JEI and apply Information
 mods.jei.JEI.addItem(creativeFluidTankFrame);
 
-// 25 buckets of liquids
-var fluidFrameIngr = [] as IIngredient[];
-for fname in [
-	"milk_goat"   , "for.honey"     , "amber"       ,"blockfluidantimatter","mutagen"    ,
-	"biomass"     , "empoweredoil"  , "witchwater"  , "xu_demonic_metal"  , "essence"    ,
-	"draconium"   , "sewage"        , "pyrotheum"   , "ic2pahoehoe_lava"  , "liquiddna"  ,
-	"corium"      , "essence"       , "juice"       , "ender"             , "cryotheum"  ,
-	"petrotheum"  , "refined_fuel"  , "mirion"      , "neutron"           , "plasma"     ,
-] as string[] {
-	fluidFrameIngr =  fluidFrameIngr + Bucket(fname);
-}
-
-// 9 Tanks of additionals
-var fluidFrameSecondary = [] as IIngredient[];
-for fname in [
-	"latex","tree_oil",  "bio.ethanol", "liquidchorus", "heavy_metal", "mana", 	"crystal", "cloud_seed_concentrated", "ic2hot_coolant", 	
-] as string[] {
-	fluidFrameSecondary =  fluidFrameSecondary + 
-		<thermalexpansion:tank>.withTag({Fluid: {FluidName: fname, Amount: 900000} , Level: 2 as byte});
-}
-
-# Build the recipe
-RecipeBuilder.get("chemist")
-  .setShapeless(fluidFrameIngr)
-  .setFluid(<liquid:ic2uu_matter> * 16000)
-  .setSecondaryIngredients(fluidFrameSecondary)
-  .addOutput(creativeFluidTankFrame)
-  .create();
-
+recipes.addShapeless("creative Fluid Tank Frame", creativeFluidTankFrame, [
+	advTank("cloud_seed_concentrated"), Bucket("corium")      , advTank("essence")    ,
+	Bucket("red_matter")              , Bucket("perfect_fuel"), Bucket("ic2uu_matter"),
+	advTank("witchwater")             , Bucket("crystal")     , advTank("plasma")     ,
+]);
 
 # *======= Mekanism Creative Tank =======*
 list["⍤"] = <mekanism:gastank>.withTag({tier: 4});

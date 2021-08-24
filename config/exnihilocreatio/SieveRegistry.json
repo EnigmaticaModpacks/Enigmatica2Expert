@@ -27,7 +27,9 @@
     { "drop": {"name": "exnihilocreatio:item_seed_potato"    , "meta": 0} , "chance": 0.05 , "meshLevel": 1 } ,
     { "drop": {"name": "exnihilocreatio:item_seed_rubber"    , "meta": 0} , "chance": 0.05 , "meshLevel": 1 } ,
     { "drop": {"name": "exnihilocreatio:item_material"       , "meta": 3} , "chance": 0.05 , "meshLevel": 1 } ,
-    { "drop": {"name": "exnihilocreatio:item_material"       , "meta": 4} , "chance": 0.05 , "meshLevel": 1 }
+    { "drop": {"name": "exnihilocreatio:item_material"       , "meta": 4} , "chance": 0.05 , "meshLevel": 1 } ,
+    { "drop": {"name": "actuallyadditions:item_canola_seed"  , "meta": 0} , "chance": 0.05 , "meshLevel": 1 } ,
+    { "drop": {"name": "extrautils2:redorchid"               , "meta": 0} , "chance": 0.02 , "meshLevel": 1 }
   ],
 
   "exnihilocreatio:block_netherrack_crushed:0": [

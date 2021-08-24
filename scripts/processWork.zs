@@ -59,6 +59,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
   val inputIngr0           = arrN_ingr(inputItems, 0);
   val haveItemInput        = !isNull(inputIngr0);
   val inputIsSingle        = haveItemInput && inputItems.length == 1;
+  val inputHasTag          = haveItemInput && !isNull(inputIngr0.itemArray[0]) && inputIngr0.itemArray[0].hasTag;
 
   val inputLiquid0         = arrN_liq(inputLiquids, 0);
   val haveLiquidInput      = !isNull(inputLiquid0);
@@ -186,22 +187,26 @@ function workEx(machineNameAnyCase as string, exceptions as string,
     }
 
     if (machineName == "mekenrichment") {
+      if(inputHasTag) return info(machineNameAnyCase, getItemName(inputIngr0.itemArray[0]), "received work, but this machine can not work with input contain NBT tags");
       // # mods.mekanism.enrichment.addRecipe(IIngredient inputStack, IItemStack outputStack);
       scripts.wrap.mekanism.enrichment.addRecipe(inputIngr0, outputItem0);
       return machineName;
     }
 
     if (machineName == "mekpurification") {
+      if(inputHasTag) return info(machineNameAnyCase, getItemName(inputIngr0.itemArray[0]), "received work, but this machine can not work with input contain NBT tags");
       scripts.wrap.mekanism.purification.addRecipe(inputIngr0, outputItem0);
       return machineName;
     }
 
     if (machineName == "mekinjection") {
+      if(inputHasTag) return info(machineNameAnyCase, getItemName(inputIngr0.itemArray[0]), "received work, but this machine can not work with input contain NBT tags");
       scripts.wrap.mekanism.chemical_injection.addRecipe(inputIngr0, <gas:hydrogenchloride>, outputItem0);
       return machineName;
     }
 
     if (machineName == "meksawmill") {
+      if(inputHasTag) return info(machineNameAnyCase, getItemName(inputIngr0.itemArray[0]), "received work, but this machine can not work with input contain NBT tags");
       if (strict) { mods.mekanism.sawmill.removeRecipe(inputIngr0); }
       # mods.mekanism.sawmill.addRecipe(IIngredient inputStack, IItemStack outputStack, @Optional IItemStack bonusOutput, @Optional double bonusChance);
       if (haveExtra) {
@@ -213,6 +218,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
     }
 
     if (machineName == "mekcrusher") {
+      if(inputHasTag) return info(machineNameAnyCase, getItemName(inputIngr0.itemArray[0]), "received work, but this machine can not work with input contain NBT tags");
       # mods.mekanism.crusher.addRecipe(IIngredient inputStack, IItemStack outputStack);
       # mods.mekanism.crusher.removeRecipe(IIngredient outputStack, @Optional IIngredient inputStack);
       if (strict) { mods.mekanism.crusher.removeRecipe(outputItem0); }
@@ -906,6 +912,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
   # 📦 → 🟡
   if (inputIsSingle && haveGasOutput) {
     if (machineName == "mekdissolution") {
+      if(inputHasTag) return info(machineNameAnyCase, getItemName(inputIngr0.itemArray[0]), "received work, but this machine can not work with input contain NBT tags");
       scripts.wrap.mekanism.chemical_dissolution.addRecipe(inputIngr0, outputGas);
       return machineName;
     }

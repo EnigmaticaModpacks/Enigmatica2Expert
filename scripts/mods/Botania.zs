@@ -197,6 +197,10 @@ mods.botania.Orechid.addOre("oreLithium", 1285);
 mods.botania.Orechid.addOre("oreBoron", 1285);
 mods.botania.Orechid.addOre("oreProsperity", 900);
 
+# Add Orechid Ingem ores
+mods.botania.OrechidIgnem.addOre("oreNetherChargedCertusQuartz", 800);
+mods.botania.OrechidIgnem.addOre("oreNetherEmerald", 800);
+
 function remakeRune(rune as IItemStack, ingrList as IIngredient[], mana as int) {
 	mods.botania.RuneAltar.removeRecipe(rune.anyAmount());
 	mods.botania.RuneAltar.addRecipe(rune, ingrList, mana);

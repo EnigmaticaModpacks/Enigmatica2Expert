@@ -424,7 +424,7 @@ craft.remake(<nuclearcraft:voltaic_pile_elite>, ["D","□","⌂"], {
 # [Basic Lithium Ion Battery] from [Basic Plating][+2]
 craft.remake(<nuclearcraft:lithium_ion_battery_basic>, ["◘","□","M"], {
   "□": <ore:plateBasic>,                # Basic Plating
-  "◘": <nuclearcraft:lithium_ion_cell>, # Lithium Ion Cell
+  "◘": <nuclearcraft:lithium_ion_cell>.withTag({}), # Lithium Ion Cell
   "M": <ore:solenoidMagnesiumDiboride>, # Magnesium Diboride Solenoid
 });
 
@@ -457,3 +457,8 @@ craft.remake(<nuclearcraft:lithium_ion_battery_elite>, ["pretty",
   "D": <nuclearcraft:lithium_ion_battery_du>, # DU Lithium Ion Battery
   "M": <ore:solenoidMagnesiumDiboride>, # Magnesium Diboride Solenoid
 });
+
+
+# New crafting ingredient for future usage
+// mods.immersivetechnology.SolarTower.addRecipe(ILiquidStack outputFluid, ILiquidStack inputFluid, int time);
+mods.immersivetechnology.SolarTower.addRecipe(<liquid:sic_vapor> * 1000, <liquid:carbon_dioxide> * 1000, 100);
