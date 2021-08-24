@@ -30,6 +30,18 @@
       "biome": "all",
       "retrogen": false,
       "dimension": {"restriction": "whitelist","value": [-8]}
-    }
+    },
+
+		"ratlantis_ratglowes": {
+			"distribution": "surface",
+			"generator": {
+				"type": "decoration",
+				"block": "rats:ratglove_flower",
+				"cluster-size": 3
+			},
+			"cluster-count": 50,
+      "biome": "all",
+      "dimension": {"restriction": "whitelist","value": [-8]}
+		}
   }
 }
