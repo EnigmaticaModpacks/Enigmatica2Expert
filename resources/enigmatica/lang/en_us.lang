@@ -161,6 +161,8 @@ requious.jei.recipe.xp_bottler=XP Bottler
 requious.jei.recipe.tinkers_disassembler=Tinker's Disassembler
 requious.jei.recipe.lens_of_the_miner=Lens Of The Miner
 requious.jei.recipe.petro_petunia=Petro Petunia
+requious.jei.recipe.syngas_producer=Syngas Producer
+requious.jei.recipe.garden_cloche=Garden Cloche
 
 tile.adv_bee_analyzer.name=Advanced Analyzer
 tile.infinity_furnace.name=Infinity Furnace

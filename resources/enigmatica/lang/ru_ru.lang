@@ -160,6 +160,8 @@ requious.jei.recipe.xp_bottler=XP Разливщик
 requious.jei.recipe.tinkers_disassembler=Разборщик Плотника
 requious.jei.recipe.lens_of_the_miner=Линза шахтера
 requious.jei.recipe.petro_petunia=Петро Петуния
+requious.jei.recipe.syngas_producer=Производитель Сингаза
+requious.jei.recipe.garden_cloche=Садовый колокол
 
 tile.adv_bee_analyzer.name=Расширенный Анализатор
 tile.infinity_furnace.name=Печь Бесконечности

@@ -626,10 +626,111 @@ Object.entries(
   val consumption = arr[0];
   val manaTotal = arr[1];
   x.addJEIRecipe(AssemblyRecipe.create(function(container) {
-    container.addItemOutput('output0', <botania:manatablet>.withTag({mana: min(500000, manaTotal), display:{Name:"§b"~manaTotal~" Mana"}}));
+    container.addItemOutput('output0',
+      <botania:manatablet>.withTag({mana: min(500000, manaTotal), display:{Name:"§b"~manaTotal~" Mana"}})
+      * (manaTotal / 500000 + 1)
+    );
   })
   .requireFluid('liquid_input', game.getLiquid(fluid) * consumption)
   );
 }
 
+// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+x = <assembly:syngas_producer>;
+x.addJEICatalyst(<advgenerators:syngas_controller>);
+x.setJEIItemSlot(0, 0, 'input0');
+x.setJEIDurationSlot(1,0,"duration", SlotVisual.arrowRight());
+x.setJEIFluidSlot(2, 0, 'fluid_out');
+
+function getOreDictBurnTime(oreName as string) as int {
+  for item in oreDict[oreName].items {
+    if (item.burnTime > 0) return item.burnTime;
+  }
+  return 0;
+}
+
+function addSyngas(input as IIngredient, carbon as int) as void {
+  if(carbon<=0) return;
+  <assembly:syngas_producer>.addJEIRecipe(AssemblyRecipe.create(function(container) {
+    container.addFluidOutput('fluid_out', <fluid:coal> * carbon);
+  })
+  .requireItem("input0", input)
+  );
+}
+
+
+/*Inject_js{
+const cfg = [...
+  loadText('config/AdvGenerators/overrides/syngas.cfg')
+  .matchAll(/^\s*carbon-value\s*:\s*(.*)$/gm)
+].map(([,m])=>m.trim())
+
+const bl = (id)=>((id.split(':').length===1?'minecraft:':'')+id).replace(/@(\d+)/,':$1')
+
+return cfg
+.map(l=>l.match(
+  /(B|I|OD):(\w+(?::\w+)?(?:@\d+)?) (?:=> (\d+)|DEFAULT)(?:\s*\/\/.*)?$/
+)?.slice(1))
+.filter(m=>m)
+.sort(([,,a],[,,b])=>naturalSort(b??'',a??''))
+.map(([type, _item, val])=>{
+  const OD = type==='OD'
+  const item = OD ? _item : _item.toLowerCase()
+  const it = `<${OD ? 'ore:'+item : bl(item)}>`
+  return ((OD ? !isODExist(item) : !isItemExist(bl(item)))?'#':'') +
+    `addSyngas(${it}, ${val ?? (OD ? `getOreDictBurnTime("${item}")` : it+'.burnTime')});`
+})
+}*/
+addSyngas(<contenttweaker:saturated_phosphor>, 450000);
+addSyngas(<ore:compressedCharcoal3x>, 256000);
+addSyngas(<ore:compressedCoal3x>, 256000);
+addSyngas(<contenttweaker:empowered_phosphor>, 180000);
+addSyngas(<contenttweaker:blasted_coal>, 120000);
+addSyngas(<ore:compressedCharcoal2x>, 64000);
+addSyngas(<ore:compressedCoal2x>, 64000);
+addSyngas(<contenttweaker:conglomerate_of_coal>, 60000);
+#addSyngas(<railcraft:cube:0>, 32000);
+addSyngas(<ore:blockFuelCoke>, 32000);
+addSyngas(<ore:crystalCrudeOil>, 32000);
+addSyngas(<ore:blockCharcoal>, 16000);
+addSyngas(<ore:blockGraphite>, 16000);
+addSyngas(<rats:little_black_squash_balls>, 8000);
+addSyngas(<ore:fuelCoke>, 3200);
+addSyngas(<mekanism:compressedcarbon>, 3200);
+addSyngas(<ore:logWood>, 1600);
+addSyngas(<ore:pulpWood>, 1600);
+addSyngas(<ore:dustCoal>, 1600);
+addSyngas(<ore:dustCharcoal>, 1600);
+#addSyngas(<ore:molecule_cellulose>, 1200);
+addSyngas(<mekanism:biofuel>, 800);
+addSyngas(<ore:plankWood>, 400);
+#addSyngas(<ore:element_C>, 200);
+addSyngas(<ore:blockCoal>, getOreDictBurnTime("blockCoal"));
+addSyngas(<minecraft:coal:0>, <minecraft:coal:0>.burnTime);
+addSyngas(<minecraft:coal:1>, <minecraft:coal:1>.burnTime);
+#addSyngas(<ore:itemCharcoalSugar>, getOreDictBurnTime("itemCharcoalSugar"));
+#addSyngas(<minefactoryreloaded:brick:15>, <minefactoryreloaded:brick:15>.burnTime);
+addSyngas(<ore:woodRubber>, getOreDictBurnTime("woodRubber"));
+addSyngas(<forestry:bituminous_peat>, <forestry:bituminous_peat>.burnTime);
+addSyngas(<forestry:peat>, <forestry:peat>.burnTime);
+addSyngas(<extrautils2:ingredients:4>, <extrautils2:ingredients:4>.burnTime);
+/**/
+
+// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+x = <assembly:garden_cloche>;
+x.addJEICatalyst(<immersiveengineering:metal_device1:13>);
+x.setJEIFluidSlot(0, 0, 'fluid_in');
+x.setJEIDurationSlot(1,0,"duration", getVisGauge(9,1));
+addInsOuts(x, [[1,0]], [[3,0]]);
+
+function addGardenClocheFluid(fluid as ILiquidStack, amount as int) as void {
+  <assembly:garden_cloche>.addJEIRecipe(AssemblyRecipe.create(function(c) {
+    c.addItemOutput('output0', <minecraft:potato> * amount);
+  })
+  .requireFluid('fluid_in', fluid * 100)
+  .requireItem("input0", <minecraft:potato>)
+  );
+}
 
