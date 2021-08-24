@@ -2,6 +2,7 @@
 	"name": "dairy",
 	"icon": "minecraft:milk_bucket",
 	"color": "a0d4f7",
+	"decay": 0.5,
 	"enabled": true,
 	"food": {
 		"oredict": [
