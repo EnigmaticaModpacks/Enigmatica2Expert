@@ -1,9 +1,13 @@
-/*
+/**
+ * @file Make necessary preparations to turn dev version of pack
+ * into distributable one
+ * 
+ * @author Krutoy242
+ * @link https://github.com/Krutoy242
+ */
 
-  Make necessary preparations to turn dev version of pack
-  into distributable one
+//@ts-check
 
-*/
 const { execSync } = require('child_process')
 const fs = require('fs-extra')
 const path = require('path')
@@ -14,18 +18,41 @@ const replace = require('replace-in-file')
 
 const dot=()=>write('.')
 
-const mcClientPath = process.cwd()
-const distrDir = 'D:/MEGA_LD-LocksTO/Enigmatica/Distributable/'
-const serverPath = 'D:/mc_server/E2E-Extended-Server/'
+const mcClientPath    = process.cwd()
+const ruOverrides     = path.join(mcClientPath, 'dev/lang/ru_ru/')
+const distrDir        = 'D:/MEGA_LD-LocksTO/Enigmatica/Distributable/'
+const serverPath      = 'D:/mc_server/E2E-Extended-Server/'
 const serverOverrides = 'D:/MEGA_LD-LocksTO/Enigmatica/server-overrides/'
-const ruOverrides = path.join(process.cwd(), 'dev/lang/ru_ru/') 
-const tmpDir = 'D:/mc_tmp/'
-const zipPath = `${tmpDir}tmp.zip`
-const unzipDir = `${tmpDir}unzip/`
+const tmpDir          = 'D:/mc_tmp/'
+const zipPath         = `${tmpDir}tmp.zip`
+const unzipDir        = `${tmpDir}unzip/`
 
 write('Version: ')
 const version = execSync('git describe --tags --abbrev=0').toString().trim()
 end(version)
+
+const hoursReadmeUpdated = (Date.now() - fs.statSync('CHANGELOG.md').mtime.getTime()) / (1000*60*60)
+if(hoursReadmeUpdated > 1) {
+  end('❌ You probably forget update CHANGELOG.md')
+  // @ts-ignore
+  return
+}
+const comittsAfterTag = 
+  parseInt(execSync('git rev-list --count HEAD'    ).toString().trim()) -
+  parseInt(execSync('git rev-list --count '+version).toString().trim())
+if(comittsAfterTag > 1) {
+  end('❌ There is commits after tag. You probably forget add tag')
+  // @ts-ignore
+  return
+}
+const lastTagDate = execSync('git show -s --format=%cd '+version).toString().trim().split('\n').pop()
+const lastTagHoursPassed = (Date.now() - Date.parse(lastTagDate)) / (1000*60*60)
+if(lastTagHoursPassed > 10) {
+  end('❌ More than 10 hours from last tag passed. You probably forget add tag')
+  // @ts-ignore
+  return
+}
+
 
 // Mods that would be copied to all packages
 const modsToCopy = globs([
@@ -88,14 +115,17 @@ const removeGlob = [
   'config/sampler.ini',
 ]
 
-/////////////////////////////////////////////////////////////////
+//! ///////////////////////////////////////////////////////////////
 // Change Working Directory
 process.chdir(unzipDir)
-/////////////////////////////////////////////////////////////////
+//! ///////////////////////////////////////////////////////////////
 
 write(`removing files&folders ${unzipDir} ... `)
 end('removed:', del.sync(removeGlob, {dryRun: false}).length)
 
+/**
+ * @param {string} fPath
+ */
 function addToPack(fPath, dirPath = './') {
   fs.copySync(fPath, path.join(dirPath, path.basename(fPath)))
 }
@@ -107,6 +137,9 @@ modsToCopy.forEach((fPath, i) => {
 })
 end()
 
+/**
+ * @param {string} zipPath
+ */
 function makeZip(zipPath) {
   const interval = setInterval(()=>write('.'), 500)
 
@@ -125,7 +158,7 @@ function makeZip(zipPath) {
 
 ********************************************************/
 
-makeZip(`${distrDir}E2E-Extended_latest.zip`)
+makeZip(`${distrDir}E2E-Extended_${version}.zip`)
 
 /********************************************************
 
@@ -191,7 +224,6 @@ globs([
   '!mods/overloadedarmorbar-*.jar',
   '!mods/ping-*.jar',
   '!mods/potiondescriptions-*.jar',
-  '!mods/reauth-*.jar',
   '!mods/ReAuth*.jar',
   '!mods/ReBind*.jar',
   '!mods/ShoulderSurfing*.jar',
@@ -216,8 +248,11 @@ globs([
 .forEach(copyToServer(process.cwd()))
 serverOnlyFiles.forEach(copyToServer(mcClientPath))
 
+/**
+ * @param {string} relativeSource
+ */
 function copyToServer(relativeSource) { 
-  return (fPath, i)=>{
+  return (/** @type {string} */ fPath, /** @type {number} */ i)=>{
     if(i%50==0) dot()
     fs.copySync(
       fPath,
@@ -279,8 +314,9 @@ const planetNames = {
 }
 replace.sync({
   files: 'config/jeresources/world-gen.json',
-  from: /^    "dim": "(?<name>.*)(?<id> \(\))"$/, // eslint-disable-line no-regex-spaces
-  to: (...args)=>{
+  from: /^\s+"dim": "(?<name>.*)(?<id> \(-?\d+\))"$/,
+  to: (/** @type {*[]} */ ...args)=>{
+    /** @type {Object<string, string>} */
     const groups = args[args.length - 2]
     return '    "dim": "' + (planetNames[groups.name] ?? groups.name) + groups.id + '"'
   },
@@ -290,4 +326,4 @@ replace.sync({
 try{fs.copySync(ruOverrides, './', {overwrite: true})}
 catch(e){} // eslint-disable-line no-empty
 
-makeZip(`${distrDir}E2E-Extended_RU_latest.zip`)
+makeZip(`${distrDir}E2E-Extended_RU_${version}.zip`)

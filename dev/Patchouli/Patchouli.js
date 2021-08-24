@@ -39,12 +39,6 @@ var defaultFileContent = {
     icon: 'minecraft:book'
   },
 
-  patches: {
-    description: 'Pick version:',
-    icon: 'artisanworktables:artisans_grimoire_electrum',
-    sortnum: -1,
-  },
-
   worldgen: {
     name: 'World Gen',
     icon: 'biomesoplenty:earth',

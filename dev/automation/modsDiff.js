@@ -2,6 +2,7 @@ const fs = require('fs')
 const curseforge = require('mc-curseforge-api')
 const {injectInFile} = require('../lib/utils.js')
 const _ = require('lodash')
+const {mod_loadTime_typles} = require('./benchmark.js')
 
 
 function getModsIds(json_Path_A, json_Path_B) {
@@ -26,17 +27,52 @@ function getModsIds(json_Path_A, json_Path_B) {
   return result
 }
 
+function getLogo(logo) {
+  const url = logo?.thumbnailUrl
+  if(!url) return
+
+  // Example of url:
+  // https://media.forgecdn.net/avatars/thumbnails/5/796/256/256/635351433944342580.png
+  // return url.replace(/(media\.forgecdn\.net\/avatars\/thumbnails\/\d+\/\d+\/)\d+\/\d+/, '$1'+'64/64')
+  return url
+}
+
+const loadTimeSumm = _.sumBy(mod_loadTime_typles, 1)
+const exceptionsList = [
+  'Just Enough Items (JEI)',
+  'Tinkers Construct',
+  'CraftTweaker'
+]
+function getSquare(modName) {
+  if(exceptionsList.includes(modName)) return '🟪'
+  
+  const loadTime = mod_loadTime_typles.find(([m])=>m===modName)?.[1]
+
+  if (isNaN(loadTime)) return '🟫'
+
+  const rate = loadTime / loadTimeSumm
+
+  if(rate < 0.0001) return '🟩'
+  if(rate < 0.001 ) return '🟨'
+  if(rate < 0.01  ) return '🟧'
+  if(rate >=0.01  ) return '🟥'
+}
+
 module.exports.formatRow = formatRow
 function formatRow(mcAddon, curseAddon, options={}) {
+  const name = curseAddon.name.trim()
   return (options.asList?'- ':'') + 
-  (options.noIcon?'':`<img src="${curseAddon.logo?.thumbnailUrl}" width="50"> | `)+
-  `[**${curseAddon.name.trim()}**](${curseAddon.url}) `+
+  (options.noIcon?'':`<img src="${getLogo(curseAddon.logo)}" width="50"> | ${getSquare(name)} `)+
+  `[**${name}**](${curseAddon.url}) `+
   `<sup>${options.isUpdated?' 🟡 ':''}<sub>${mcAddon?.installedFile?.FileNameOnDisk}</sub></sup>`+
   (options.noSummary?'':` <br> ${curseAddon.summary}`)
 }
 
+
 function formatTable(rows) {
   return [
+    `### ${rows.length} mods total.`,
+    '',
     'Icon | Summary',
     '----:|:-------',
     ...rows
@@ -46,12 +82,21 @@ function formatTable(rows) {
 async function init() {
   const diff = getModsIds('../Enigmatica 2 Expert - E2E (unchanged, updated)/minecraftinstance.json', 'minecraftinstance.json')
 
+  // Debug cutoff
+  // diff.union = diff.union.slice(-30)
+
   console.log(`  💟 Asking Curseforge API for ${diff.union.length} mods ...`)
 
   const cursedUnion = await Promise.all(diff.union.map(mcAddon=>curseforge.getMod(mcAddon.addonID)))
   
   console.log(`  💟 Curseforge API returns ${cursedUnion.length} mods ...`)
   cursedUnion.sort((a,b) => b.downloads - a.downloads)
+
+  
+  fs.writeFileSync(
+    'CurseForge_example_return.json',
+    JSON.stringify(cursedUnion, null, 2)
+  )
 
   let result = {
     BOTH:     cursedUnion.filter(({id}) => diff.map_A[id] && diff.map_B[id]),

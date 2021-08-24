@@ -6,18 +6,25 @@
 <p align="center" style="font-size:160%;">
 MC total load time:<br>
 <!--TOTAL_LOAD_TIME-->
-559.19 sec
+580.84 sec
 <!---->
 <br>
 <sup><sub>(
 <!--TOTAL_LOAD_TIME_MINUTES-->
-9.32 min
+9.68 min
 <!---->
 )</sub></sup>
 </p>
 
 <br>
 
+<!--
+
+Note for image scripts:
+- Newlines are ignored
+- This characters cant be used: +<"%
+
+-->
 
 <p align="center">
 <img src="https://quickchart.io/chart?w=400&h=30&c={
@@ -25,10 +32,10 @@ MC total load time:<br>
   data: {
     datasets: [
       {label: 'MODS:', data: [/*TOTAL_MODS_TIME*/
-        378.78
+        374.17
       /**/]},
       {label: 'FML stuff:',data: [/*TOTAL_STUF_TIME*/
-        180.41
+        206.66
       /**/]}
     ]
   },
@@ -57,7 +64,8 @@ MC total load time:<br>
       legend: !1,
       outlabels: {
         stretch: 5,
-        padding: 1
+        padding: 1,
+        text: (v,i)=>`${v.labels[v.dataIndex]} ${(v.percent*1000|0)/10}%25`
       }
     }
   },
@@ -65,33 +73,33 @@ MC total load time:<br>
   data: {...
 /*mods_loading_time*/
 `
-3C639D  15.59s Just Enough Items;
-36598D  27.26s Just Enough Items (Plugins);
-36598D  23.02s Just Enough Items (Ingredient Filter);
-9D5E3C  30.87s CraftTweaker2;
-8D5536   7.27s CraftTweaker2 (Script Loading);
-9D3C66   3.51s Tinkers' Construct;
-8D365C  25.83s Tinkers' Construct (Oredict Melting);
-733C9D  14.04s Immersive Engineering;
-979D3C  13.52s Minecraft Forge;
-3C5F9D  12.23s Sampling Performance Profiler;
-9D3C8F  11.87s IndustrialCraft 2;
-3C9D59  11.71s Ender IO;
-599D3C   8.58s OpenComputers;
-3C9A9D   7.30s Animania;
-3C9D86   6.86s Astral Sorcery;
-4F9D3C   5.54s Dynamic Surroundings;
-9D3C3C   4.25s Forestry;
-3C759D   4.20s Applied Energistics 2;
-4C9D3C   3.91s Recurrent Complex;
-923C9D   3.73s Integrated Dynamics;
-3F3C9D   3.63s Thermal Expansion;
-3C939D   3.50s Quark;
-3C9D3C   3.41s Extra Utilities 2;
-9D6B3C   3.23s Cyclic;
-444444  64.35s 37 Other mods;
-333333  53.02s 148 'Fast' mods (load 1.0s - 0.1s);
-222222   6.55s 214 'Instant' mods (load %3C 0.1s)
+3C639D  16.00s Just Enough Items;
+36598D  24.50s Just Enough Items (Plugins);
+36598D  36.09s Just Enough Items (Ingredient Filter);
+9D3C66   3.43s Tinkers' Construct;
+8D365C  26.11s Tinkers' Construct (Oredict Melting);
+979D3C  14.30s Minecraft Forge;
+9D3C8F  12.09s IndustrialCraft 2;
+8D9D3C  11.98s Forge Mod Loader;
+3C9D59  11.90s Ender IO;
+733C9D  11.03s Immersive Engineering;
+9D5E3C   3.55s CraftTweaker2;
+8D5536   6.76s CraftTweaker2 (Script Loading);
+599D3C   8.82s OpenComputers;
+3C9D86   7.56s Astral Sorcery;
+4F9D3C   6.78s Dynamic Surroundings;
+3C9A9D   6.14s Animania;
+9D3C3C   4.86s Forestry;
+3C759D   4.68s Applied Energistics 2;
+923C9D   4.51s Integrated Dynamics;
+3C9D3C   4.42s Extra Utilities 2;
+4C9D3C   4.30s Recurrent Complex;
+9D6B3C   4.03s Cyclic;
+3C939D   3.62s Quark;
+3F3C9D   3.52s Thermal Expansion;
+444444  74.80s 43 Other mods;
+333333  52.36s 152 'Fast' mods (load 1.0s - 0.1s);
+222222   6.03s 209 'Instant' mods (load %3C 0.1s)
 `
 /**/
     .split(';').reduce((a, l) => {
@@ -116,7 +124,7 @@ MC total load time:<br>
 
 <br>
 
-# Top Mods Details (except JEI)
+# Top Mods Details (except JEI, FML and Forge)
 <p align="center">
 <img src="https://quickchart.io/chart?w=400&h=450&c={options: {
     scales: {
@@ -130,13 +138,17 @@ MC total load time:<br>
         color: 'white',
         backgroundColor: 'rgba(46, 140, 171, 0.6)',
         borderColor: 'rgba(41, 168, 194, 1.0)',
-        borderWidth: 1,
+        borderWidth: 0.5,
         borderRadius: 3,
         padding: 0,
+        font: {size:10},
         formatter: (v,ctx) => 
           ctx.datasetIndex!=ctx.chart.data.datasets.length-1 ? null
-            : `${((ctx.chart.data.datasets.reduce((a,b)=>a- -b.data[ctx.dataIndex], 0) * 100) | 0) /100}s`
+            : `${((ctx.chart.data.datasets.reduce((a,b)=>a- -b.data[ctx.dataIndex], 0) * 10) | 0) /10}s`
       },
+      colorschemes: {
+        scheme: 'office.Damask6'
+      }
     }
   },
   type: 'bar',
@@ -159,17 +171,19 @@ let a={labels:[],datasets:[]};
 .forEach(([name])=>a.datasets.push({label:name,data:[]}));
 /*FML_STEPS_DETAILS*/
 `
-                                  1      2      3      4      5      6      7      8  ;
-CraftTweaker2                 |  0.65|  0.00|  3.05|  0.01|  0.00|  9.57| 24.87|  0.00;
-Tinkers' Construct            |  1.17|  0.03|  0.16|  0.05|  0.00| 27.93|  0.00|  0.00;
-Immersive Engineering         |  0.92|  0.01|  1.12|  1.11|  0.00| 10.89|  0.00|  0.00;
-Minecraft Forge               |  0.04|  0.00|  0.41|  0.00|  0.00|  0.00|  0.01| 13.07;
-Sampling Performance Profiler | 12.18|  0.00|  0.05|  0.00|  0.00|  0.00|  0.00|  0.00;
-IndustrialCraft 2             |  0.85|  0.01|  9.20|  0.77|  0.00|  1.05|  0.00|  0.00;
-Ender IO                      |  1.96|  0.01|  4.13|  0.47|  3.62|  0.16|  0.00|  1.37;
-OpenComputers                 |  0.18|  0.01|  5.42|  2.81|  0.16|  0.00|  0.00|  0.00;
-Animania                      |  0.30|  0.00|  2.91|  0.10|  0.00|  4.00|  0.00|  0.00;
-Astral Sorcery                |  0.25|  0.00|  4.49|  1.28|  0.00|  0.85|  0.00|  0.00
+                          1      2      3      4      5      6      7      8  ;
+Tinkers' Construct    |  1.26|  0.01|  0.17|  0.05|  0.00| 28.05|  0.00|  0.00;
+IndustrialCraft 2     |  0.78|  0.01|  9.43|  0.78|  0.00|  1.10|  0.00|  0.00;
+Ender IO              |  1.86|  0.01|  4.32|  0.58|  3.42|  0.46|  0.00|  1.26;
+Immersive Engineering |  1.12|  0.01|  1.28|  0.94|  0.00|  7.70|  0.00|  0.00;
+CraftTweaker2         |  0.57|  0.00|  3.39|  0.01|  0.00|  6.32|  0.02|  0.00;
+OpenComputers         |  0.16|  0.01|  5.61|  2.85|  0.19|  0.00|  0.00|  0.00;
+Astral Sorcery        |  0.22|  0.00|  5.25|  1.36|  0.00|  0.73|  0.00|  0.00;
+Dynamic Surroundings  |  0.19|  0.00|  0.31|  0.27|  0.00|  0.07|  5.95|  0.00;
+Animania              |  0.31|  0.00|  3.11|  0.10|  0.00|  2.62|  0.00|  0.00;
+Forestry              |  0.37|  0.01|  3.18|  1.08|  0.00|  0.23|  0.00|  0.00;
+Applied Energistics 2 |  0.23|  0.01|  3.35|  0.35|  0.17|  0.58|  0.00|  0.00;
+Integrated Dynamics   |  0.22|  0.00|  4.24|  0.05|  0.00|  0.00|  0.00|  0.00
 `
 /**/
 .split(';').slice(1)
@@ -198,22 +212,22 @@ let a={labels:[],datasets:[{
 }]};
 /*JEI_PLUGINS*/
 `
-  3.50: crazypants.enderio.machines.integration.jei.MachinesPlugin;
-  3.00: li.cil.oc.integration.jei.ModPluginOpenComputers;
-  2.75: com.rwtema.extrautils2.crafting.jei.XUJEIPlugin;
-  2.31: mezz.jei.plugins.vanilla.VanillaPlugin;
-  2.28: cofh.thermalexpansion.plugins.jei.JEIPluginTE;
-  2.24: jeresources.jei.JEIConfig;
-  1.75: com.github.sokyranthedragon.mia.integrations.jer.JeiJerIntegration$1;
-  1.20: forestry.factory.recipes.jei.FactoryJeiPlugin;
-  1.06: com.buuz135.industrial.jei.JEICustomPlugin;
-  0.92: ic2.jeiIntegration.SubModule;
-  0.74: com.buuz135.thaumicjei.ThaumcraftJEIPlugin;
-  0.54: knightminer.tcomplement.plugin.jei.JEIPlugin;
-  0.47: mctmods.smelteryio.library.util.jei.JEI;
-  0.47: nc.integration.jei.NCJEI;
-  0.22: net.bdew.jeibees.BeesJEIPlugin;
-  3.82: Other 116 Plugins
+  2.81: crazypants.enderio.machines.integration.jei.MachinesPlugin;
+  2.57: li.cil.oc.integration.jei.ModPluginOpenComputers;
+  2.48: mezz.jei.plugins.vanilla.VanillaPlugin;
+  2.28: com.rwtema.extrautils2.crafting.jei.XUJEIPlugin;
+  2.24: cofh.thermalexpansion.plugins.jei.JEIPluginTE;
+  1.35: jeresources.jei.JEIConfig;
+  1.33: com.github.sokyranthedragon.mia.integrations.jer.JeiJerIntegration$1;
+  1.05: forestry.factory.recipes.jei.FactoryJeiPlugin;
+  0.87: ic2.jeiIntegration.SubModule;
+  0.82: com.buuz135.industrial.jei.JEICustomPlugin;
+  0.68: knightminer.tcomplement.plugin.jei.JEIPlugin;
+  0.64: com.buuz135.thaumicjei.ThaumcraftJEIPlugin;
+  0.54: nc.integration.jei.NCJEI;
+  0.36: mctmods.smelteryio.library.util.jei.JEI;
+  0.34: crazypants.enderio.base.integration.jei.JeiPlugin;
+  4.15: Other 117 Plugins
 `
 /**/
 .split(';')
@@ -221,6 +235,77 @@ let a={labels:[],datasets:[{
 .forEach(([time, name])=>{
   a.labels.push(name);
   a.datasets[0].data.push(time)
+})
+;return a})()
+  }
+}"/>
+</p>
+
+<br>
+
+# FML Stuff
+<p align="center">
+<img src="https://quickchart.io/chart?w=500&h=400&c={
+  options: {
+    rotation: Math.PI,
+    cutoutPercentage: 55,
+    plugins: {
+      legend: !1,
+      outlabels: {
+        stretch: 5,
+        padding: 1,
+        text: (v)=>v.labels
+      },
+      doughnutlabel: {
+        labels: [
+          {
+            text: 'FML stuff:',
+            color: 'rgba(128, 128, 128, 0.5)',
+            font: {size: 18}
+          },
+          {
+            text: `${/*TOTAL_STUF_TIME*/
+              206.66
+            /**/}s`,
+            color: 'rgba(128, 128, 128, 1)',
+            font: {size: 22}
+          }
+        ]
+      },
+    }
+  },
+  type: 'outlabeledPie',
+  data: {...(()=>{
+let a = {
+  labels:[],
+  datasets:[{
+    backgroundColor: [],
+    data: [],
+    borderColor: 'rgba(22,22,22,0.3)',
+    borderWidth: 2
+  }]
+};
+/*FML_STUFF_TABLE*/
+`
+993A00   2.18s Loading sounds;
+994400   2.23s Loading Resource - SoundHandler;
+994F00  29.49s ModelLoader: blocks;
+995900   9.62s ModelLoader: items;
+996300  10.00s ModelLoader: baking;
+996D00   3.19s Applying remove recipe actions;
+997700   2.15s Applying remove furnace recipe actions;
+998200  36.02s Indexing ingredients;
+444444 111.79s Other
+`
+/**/
+.split(';')
+.map(l=>l.match(/(\w{6}) *(\d*\.\d*)s (.*)/))
+.forEach(([, col, time, name])=>{
+  a.labels.push([name, ' ', time, 's'].join(''));
+  a.datasets[0].data.push(parseFloat(time));
+  a.datasets[0].backgroundColor.push(
+    `${String.fromCharCode(35)}${col}`
+  )
 })
 ;return a})()
   }

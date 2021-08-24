@@ -1,11 +1,16 @@
-[Surge]: The game loaded in approximately  558.108 seconds.
 [main/WARN] [mixin]: MixinEnvironment::addConfiguration is deprecated and will be removed. Use Mixins::addConfiguration instead!
 [main/WARN] [mixin]: MixinEnvironment::addConfiguration is deprecated and will be removed. Use Mixins::addConfiguration instead!
 [main/ERROR] [mixin]: Mixin config mixins.mixincompat.json does not specify "minVersion" property
 [main/WARN] [mixin]: Reference map 'mixins.mixincompat.refmap.json' for mixins.mixincompat.json could not be read. If this is a development environment you can ignore this message
-[main/WARN] [sampler-core]: bce failed (d5, 1, false)
 [Client thread/WARN] [mixin]: MixinEnvironment::addConfiguration is deprecated and will be removed. Use Mixins::addConfiguration instead!
-[Client thread/ERROR] [reborncore]: Invalid fingerprint detected for RebornCore!
-[Client thread/WARN] [enderio]: Mekanism Gas conduits loaded. Let your networks connect!
-[Client thread/WARN] [net.minecraft.nbt.NBTUtil]: Unable to read property: material with value: iron for blockstate: {Properties:{material:"iron",facing:"down",type:"kinetic_generator",transparent:"false"},Name:"ic2:te"}
-[Client thread/WARN] [net.minecraft.nbt.NBTUtil]: Unable to read property: material with value: iron for blockstate: {Properties:{material:"iron",facing:"down",type:"kinetic_generator",transparent:"false"},Name:"ic2:te"}
+[Client thread/WARN] [mixin]: Error loading class: com/shinoow/abyssalcraft/common/util/BiomeUtil (java.lang.ClassNotFoundException: The specified class 'com.shinoow.abyssalcraft.common.util.BiomeUtil' was not found)
+[Client thread/WARN] [mixin]: Error loading class: com/cutievirus/creepingnether/entity/CorruptorAbstract (java.lang.ClassNotFoundException: The specified class 'com.cutievirus.creepingnether.entity.CorruptorAbstract' was not found)
+[Client thread/WARN] [mixin]: Error loading class: androsa/gaiadimension/world/layer/GenLayerGDRiverMix (java.lang.ClassNotFoundException: The specified class 'androsa.gaiadimension.world.layer.GenLayerGDRiverMix' was not found)
+[Client thread/WARN] [mixin]: Error loading class: climateControl/DimensionManager (java.lang.ClassNotFoundException: The specified class 'climateControl.DimensionManager' was not found)
+[Client thread/WARN] [mixin]: Error loading class: com/xcompwiz/mystcraft/symbol/symbols/SymbolFloatingIslands$BiomeReplacer (java.lang.ClassNotFoundException: The specified class 'com.xcompwiz.mystcraft.symbol.symbols.SymbolFloatingIslands$BiomeReplacer' was not found)
+[Client thread/WARN] [mixin]: Error loading class: thebetweenlands/common/block/terrain/BlockSpreadingDeath (java.lang.ClassNotFoundException: The specified class 'thebetweenlands.common.block.terrain.BlockSpreadingDeath' was not found)
+[Client thread/WARN] [mixin]: Error loading class: thebetweenlands/common/world/gen/layer/GenLayerVoronoiZoomInstanced (java.lang.ClassNotFoundException: The specified class 'thebetweenlands.common.world.gen.layer.GenLayerVoronoiZoomInstanced' was not found)
+[Client thread/WARN] [mixin]: Error loading class: cn/mcmod/tofucraft/world/gen/layer/GenLayerRiverMix (java.lang.ClassNotFoundException: The specified class 'cn.mcmod.tofucraft.world.gen.layer.GenLayerRiverMix' was not found)
+[Client thread/WARN] [mixin]: Error loading class: cn/mcmod/tofucraft/world/gen/layer/GenLayerTofuVoronoiZoom (java.lang.ClassNotFoundException: The specified class 'cn.mcmod.tofucraft.world.gen.layer.GenLayerTofuVoronoiZoom' was not found)
+[Client thread/WARN] [mixin]: Error loading class: net/tropicraft/core/common/worldgen/genlayer/GenLayerTropiVoronoiZoom (java.lang.ClassNotFoundException: The specified class 'net.tropicraft.core.common.worldgen.genlayer.GenLayerTropiVoronoiZoom' was not found)
+[Client thread/WARN] [mixin]: Error loading class: com/sk89q/worldedit/blocks/BaseBlock (java.lang.ClassNotFoundException: The specified class 'com.sk89q.worldedit.blocks.BaseBlock' was not found)

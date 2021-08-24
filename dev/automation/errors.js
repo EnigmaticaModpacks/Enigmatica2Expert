@@ -118,6 +118,8 @@ var ignore = [
   /\[unidict\]: Immersive Engineering Integration: java\.lang\.IndexOutOfBoundsException: Index: 0, Size: 0/, // Reported, fixed https://github.com/WanionCane/UniDict/issues/195
   /\[soundphysicsinjector\]: Target node not found! org\.orecruncher\.dsurround\.client\.sound\.ConfigSoundInstance/, // Reported: https://github.com/djpadbit/Sound-Physics/issues/69
 
+  /\[Client thread\/ERROR\] \[reborncore\]: Invalid fingerprint detected for RebornCore!/, // Reported: https://github.com/TechReborn/RebornCore/issues/180
+
   /*=============================================
   =               Ignoring Warnings             =
   =============================================*/
@@ -163,14 +165,15 @@ var ignore = [
   /ResourcePack: ignored non-lowercase namespace: META-INF in /,
   /\[net.minecraft.entity.passive.EntityVillager\]: PriceRange.* smaller than/,
   /\[ic2.Uu\]: UU predefined config: Can't find ItemStack for /,
+  /Mekanism Gas conduits loaded\. Let your networks connect!/,
+  /Unable to read property: material with value: iron for blockstate/,
+  /Mod advancedrocketrycore has been disabled through configuration/,
 
   /*=============================================
   =        Already inspected warnings           =
   =============================================*/
   /\[mixin\]: Static binding violation: PRIVATE @Overwrite method func_76615_h in mixins.phosphor.json:common.MixinChunk cannot reduce visibiliy of PUBLIC target method, visibility will be upgraded./,
-  /\[LLibrary Core\]: Failed to fetch hierarchy node for net.minecraft.client.renderer.DestroyBlockProgress. This may cause patch issues/,
-  /\[LLibrary Core\]: Failed to fetch hierarchy node for net.minecraft.client.renderer.culling.Frustum. This may cause patch issues/,
-  /\[LLibrary Core\]: Failed to fetch hierarchy node for net.minecraft.client.renderer.culling.ICamera. This may cause patch issues/,
+  /\[LLibrary Core\]: Failed to fetch hierarchy node for .*. This may cause patch issues/, // Reported https://github.com/iLexiconn/LLibrary/issues/156
   /\[net.minecraft.client.settings.GameSettings\]: Skipping bad option: lastServer:/,
   /\[LLibrary Core\]: Unable to call Core API! It has not been initialized yet!/,
   /\[net.minecraft.client.settings.GameSettings\]: Skipping bad option: lastServer:/,
@@ -247,7 +250,8 @@ var known = [
 var log = fs.readFileSync('logs/debug.log', 'utf8')
 const serverThreadStart = log.indexOf('[Server thread/')
 if(serverThreadStart!==-1) log = log.substring(0, serverThreadStart)
-var newLog = (log.match(/\[Client thread\/INFO\] (\[Surge\]: The game loaded in approximately +.* seconds.)/)?.[1] ?? '') + '\n'
+var newLog = ''
+// var newLog = (log.match(/\[Client thread\/INFO\] (\[Surge\]: The game loaded in approximately +.* seconds.)/)?.[1] ?? '') + '\n'
 
 var stat = {
   total: 0,

@@ -13,8 +13,11 @@ const automationList = [
   'scripts/wrap/_wrapper.js'
 ]
 
-for(const filePath of automationList) {
-  console.log('📒', filePath)
-  require.main.require('../' + filePath)?.init?.()
-  console.log('---------------------------\n')
+async function init() {
+  for(const filePath of automationList) {
+    console.log('📒', filePath)
+    await require.main.require('../' + filePath)?.init?.()
+    console.log('---------------------------\n')
+  }
 }
+init()

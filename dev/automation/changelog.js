@@ -1,24 +1,38 @@
+/**
+ * @file Generates changelogs based on git repo.
+ * @author Krutoy242
+ * @link https://github.com/Krutoy242
+ */
+
+//@ts-check
 
 const { execSync } = require('child_process')
 const fs = require('fs')
 const path = require('path')
-
-// console.log(execSync('git log --pretty=format:"%s%n  > %b" 1.82a..HEAD > ~tmp_git_log.md').toString().trim())
+const {getModsIds, formatRow} = require('./modsDiff.js')
+const curseforge = require('mc-curseforge-api')
 
 const GENERATE_MODS_CHANGES = true
 
-const escapeRegex = (string) => string.replace(/[/\\^$*+?.()|[\]{}]/g, '\\$&')
+/**
+ * @param {string} str
+ */
+const escapeRegex = (str) => str.replace(/[/\\^$*+?.()|[\]{}]/g, '\\$&')
 const write = (...args) => process.stdout.write(args.join('\t'))
 const end = (...args) => process.stdout.write((!args.length?' done' : args.join('\t')) + '\n')
 const dot = () => write('.')
+
+/**
+ * Guess next version
+ * @param {string} version tagged version in form `12.34`
+ * @example bumpVersion('0.12') // => '0.13'
+ */
 const bumpVersion = (version) => {
   const splittedVersion = version.split('.')
   const lastVersion = parseInt(splittedVersion.slice(-1)[0]) + 1
   const nextVersion = [...splittedVersion.slice(0, -1), lastVersion].join('.')
   return nextVersion
 }
-
-init()
 
 async function init() {
   write('  🧱 Generating changelog. ')
@@ -35,6 +49,9 @@ async function init() {
 
   const logFromLastTag = execSync(`git log ${version}..HEAD`).toString().trim()
 
+  /**
+   * @type {Object.<string, string[]>} dict
+   */
   const map = {}
   logFromLastTag.split(/^commit .*$/gm).forEach(commitBlock=>{
     const commitMatch = commitBlock.match(/^Author: .*?\nDate: .*?\n\n(?<message>.*)/ms)
@@ -42,8 +59,8 @@ async function init() {
     const commitMessage = commitMatch.groups.message.trim()
 
     const match = commitMessage.match(/^(?<symbol>[^a-zA-Z ]{1,5}) (?<subject>.+)/sm)
-    const s = match?.groups.symbol
-    if(!match || !s.trim()) return (map['other'] ??= []).push(commitMessage)
+    const symbol = match?.groups.symbol
+    if(!match || !symbol.trim()) return (map['other'] ??= []).push(commitMessage)
 
     // Remove leading spaces frow commit message
     const trimmedSubject = match.groups.subject
@@ -52,9 +69,11 @@ async function init() {
       .filter((l,i)=>l||i!=1)
       .join('\n')
 
-    return (map[s] ??= []).push(trimmedSubject)
+    return (map[symbol] ??= []).push(trimmedSubject)
   })
 
+  /** @typedef {Array<[string, string, Subcategory?]>} Subcategory */
+  /** @type {Subcategory} Category with optional {@link Subcategory} */
   const annotations = [
     ['🧩', 'Configs'],
     ['✏️', 'Recipes'],
@@ -63,8 +82,8 @@ async function init() {
     ['🔵', 'Mods', `
       🟢 New Mods
       🔴 Removed Mods
-      🟡 Mods changes
-      ▦ ExNihilio
+      🟡 Mods Changes
+      ▦ Ex Nihilo
       ☢️ NuclearCraft
       ⚙️ JAOPCA
       ⛽ Advanced Generators
@@ -72,7 +91,7 @@ async function init() {
       🌠 Astral Sorcery
       🌡️ Thermal Expansion
       🌱 Mystical Agriculture
-      🌳 TwilightForest
+      🌳 Twilight Forest
       🌴 BiomesOPlenty
       🌸 Industrial Foregoing
       🌾 Farming For Blockheads
@@ -83,7 +102,7 @@ async function init() {
       🎲 Random Things
       🏦 Modular Machinery
       🏪 Requious Fracto
-      🏴 DarkUtilities
+      🏴 Dark Utilities
       🐀 Rats
       🐉 Ice and Fire
       🐝 Forestry
@@ -91,21 +110,21 @@ async function init() {
       👨‍🏭 Mekanism
       👿 Extra Utilities 2
       💍 Baubles
-      💼 Actually Additionals
-      💽 Applied Energetics
+      💼 Actually Additions
+      💽 Applied Energistics
       📑 Tips
       📙 AkashicTome
       📭 Storage Drawers
-      🔌 Industrial Craft 2
+      🔌 IndustrialCraft 2
       🔠 MainMenu
       🔨 Tinker's Construct
       🔩 RFTools
       🖥 OpenComputers
-      🖽 Little Tiles
+      🖽 LittleTiles
       🗂️ Additional Compression
-      🗃️ Loot tables
+      🗃️ Loot Tables
       🦯 Thaumcraft
-      🧃 Open Blocks
+      🧃 OpenBlocks
       🧙‍♂️ Cyclic
       🧬 Draconic Evolution
       🧻 JEI
@@ -117,6 +136,11 @@ async function init() {
       🛹 Integrated Dynamics
       🟨 Recurrent Complex
       🅱 Block Drops
+      🥽 LagGoggles
+      🖥️ Deep Mob Learning
+      🍹 Nutrition
+      🙋‍♀️ Quark
+      🗳️ Colossal Chest
     `.trim().split('\n').map(l=>l.trim().split(' ')).map(([c,...r])=>[c, r.join(' ')])],
     ['🔄', 'Misc Changes', [
       ['🧱', 'Technical'],
@@ -128,6 +152,12 @@ async function init() {
     ]],
   ]
 
+  /**
+   * @param {string} categoryKey Symbol of Changelog category. Example: `🚧`
+   * @param {string} desc Description of this category. Example: `Develop`
+   * @param {number} level Current tab level
+   * @param {boolean} [isForced]
+   */
   function outputList(categoryKey, desc, level, isForced) {
     if(!map[categoryKey]?.length && !isForced) return
 
@@ -171,10 +201,10 @@ async function init() {
   end()
 }
 
+/**
+ * @param {string} version
+ */
 async function getModChanges(version) {
-  const {getModsIds, formatRow} = require('./modsDiff.js')
-  const curseforge = require('mc-curseforge-api')
-
   // Generating mod changings
   const tmpPath = '~tmp_old_mcinstance.json'
   execSync(`git show tags/${version}:minecraftinstance.json > `+tmpPath)
@@ -182,6 +212,7 @@ async function getModChanges(version) {
   fs.unlinkSync(tmpPath)
   
   write('  🧱 Ask CurseForge ')
+
   const [added,removed,updated] = await Promise.all(
     ['added','removed','updated'].map(
       group=>Promise.all(
@@ -222,3 +253,6 @@ async function getModChanges(version) {
 
   return result
 }
+
+module.exports.init = init
+if(process.argv?.[0]?.split('\\').pop()==='node.exe') init()

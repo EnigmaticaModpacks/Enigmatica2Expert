@@ -188,7 +188,7 @@ module.exports.isPathHasChanged = pPath=>{
 let furnaceRecipesHashed = undefined
 module.exports.getFurnaceRecipes = ()=>{
   return furnaceRecipesHashed ??= [...fs.readFileSync('crafttweaker.log', 'utf8')
-    .matchAll(/^furnace\.addRecipe\((?<output><(?<out_id>[^>]+?)(?::(?<out_meta>\*|\d+))?>(?<out_tail>(\.withTag\(\{.*?\}\))?( \* \d+)?)?), (?<input><(?<in_id>[^>]+?)(?::(?<in_meta>\*|\d+))?>(?<in_tail>(\.withTag\(\{.*?\}\))?( \* \d+)?)?), .+\)$/gm)
+    .matchAll(/^furnace\.addRecipe\((?<output><(?<out_id>[^>]+?)(?::(?<out_meta>\*|\d+))?>(?<out_tail>(\.withTag\((?<out_tag>\{.*?\})\))?( \* (?<out_amount>\d+))?)?), (?<input><(?<in_id>[^>]+?)(?::(?<in_meta>\*|\d+))?>(?<in_tail>(\.withTag\((?<in_tag>\{.*?\})\))?( \* (?<in_amount>\d+))?)?), .+\)$/gm)
   ].map(m=>m.groups).sort((a,b)=>naturalSort(a.input,b.input))
 }
 
