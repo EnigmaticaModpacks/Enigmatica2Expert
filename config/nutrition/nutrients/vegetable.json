@@ -31,6 +31,12 @@
 			"listAllveggie"
 		],
 		"items": [
+			"nuclearcraft:smore",
+			"nuclearcraft:moresmore",
+			"nuclearcraft:milk_chocolate",
+			"nuclearcraft:dark_chocolate",
+			"nuclearcraft:unsweetened_chocolate",
+			"nuclearcraft:dominos",
 			"abyssalcraft:mre",
 			"actuallyadditions:item_food:2",
 			"actuallyadditions:item_food:3",

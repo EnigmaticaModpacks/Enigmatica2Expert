@@ -34,6 +34,12 @@
 			"listAllgrain"
 		],
 		"items": [
+			"nuclearcraft:smore",
+			"nuclearcraft:moresmore",
+			"nuclearcraft:marshmallow",
+			"nuclearcraft:ground_cocoa_nibs",
+			"nuclearcraft:graham_cracker",
+			"nuclearcraft:dominos",
 			"actuallyadditions:item_canola_seed",
 			"actuallyadditions:item_coffee",
 			"actuallyadditions:item_food:6",

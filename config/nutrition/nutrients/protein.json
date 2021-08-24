@@ -47,6 +47,10 @@
 			"portionMeat"
 		],
 		"items": [
+			"nuclearcraft:smore",
+			"nuclearcraft:moresmore",
+			"nuclearcraft:marshmallow",
+			"nuclearcraft:dominos",
 			"betteranimalsplus:eel_meat_cooked",
 			"betteranimalsplus:eel_meat_raw",
 			"betteranimalsplus:blubber",

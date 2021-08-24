@@ -11,6 +11,10 @@
 			"listAllmilk"
 		],
 		"items": [
+			"nuclearcraft:smore",
+			"nuclearcraft:moresmore",
+			"nuclearcraft:milk_chocolate",
+			"nuclearcraft:cocoa_butter",
 			"actuallyadditions:item_food:0",
 			"actuallyadditions:item_food:8",
 			"actuallyadditions:item_food:9",
