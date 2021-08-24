@@ -294,8 +294,8 @@ for i in 0 .. 6 {
 	evtIngrs["_"] = <actuallyadditions:block_quartz_slab>;
 	evtIngrs["c"] = (i==0) ? <actuallyadditions:block_crystal:1> : itemUtils.getItem("environmentaltech:solar_cont_" ~ (i));
 	evtIngrs["▄"] = <ore:blockQuartzBlack>;
-	evtIngrs["▆"] = scripts.mods.preston.compressor.getCompressed(<actuallyadditions:block_misc:2>, 1);
-	evtIngrs["█"] = scripts.mods.preston.compressor.getCompressed(<actuallyadditions:block_misc:2>, 2);
+	evtIngrs["▆"] = <extendedcrafting:storage>;
+	evtIngrs["█"] = <actuallyadditions:block_crystal_empowered:3>;
 
 
 	recipes.remove(solController);

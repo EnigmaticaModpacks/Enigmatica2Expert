@@ -2,7 +2,6 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.data.IData;
 import crafttweaker.item.IIngredient;
-import scripts.mods.preston.compressor;
 
 
 # ######################################################################
@@ -497,9 +496,8 @@ scripts.wrap.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:component:8> , [<anim
 
 
 # Some troll items can be disassembled on crafting table
-# Using public function compressor.getCompressed() to make Preston's blocks
-recipes.addShapeless("Disassemble troll column"       , <extrautils2:compressedcobblestone> * 4                           , [<iceandfire:troll_weapon.column>]);
-recipes.addShapeless("Disassemble troll column_forest", <additionalcompression:cobblestonemossy_compressed> * 4           , [<iceandfire:troll_weapon.column_forest>]);
-recipes.addShapeless("Disassemble troll column_frost" , compressor.getCompressed(<quark:biome_cobblestone:1>     , 1) * 4 , [<iceandfire:troll_weapon.column_frost>]);
-recipes.addShapeless("Disassemble troll trunk"        , <twilightforest:giant_log>                                        , [<iceandfire:troll_weapon.trunk>]);
-recipes.addShapeless("Disassemble troll trunk_frost"  , compressor.getCompressed(<integrateddynamics:menril_log> , 1) * 4 , [<iceandfire:troll_weapon.trunk_frost>]);
+recipes.addShapeless("Disassemble troll column"       , <extrautils2:compressedcobblestone> * 4                 , [<iceandfire:troll_weapon.column>]);
+recipes.addShapeless("Disassemble troll column_forest", <additionalcompression:cobblestonemossy_compressed> * 4 , [<iceandfire:troll_weapon.column_forest>]);
+recipes.addShapeless("Disassemble troll column_frost" , <quark:biome_cobblestone:1> * 36                        , [<iceandfire:troll_weapon.column_frost>]);
+recipes.addShapeless("Disassemble troll trunk"        , <twilightforest:giant_log>                              , [<iceandfire:troll_weapon.trunk>]);
+recipes.addShapeless("Disassemble troll trunk_frost"  , <integrateddynamics:menril_log> * 36                    , [<iceandfire:troll_weapon.trunk_frost>]);
