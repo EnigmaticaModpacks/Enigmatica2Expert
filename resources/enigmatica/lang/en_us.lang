@@ -139,6 +139,8 @@ tooltips.lang.botania:thorring=§aIncreases area of Terra Shatterer
 tooltips.lang.botania:odinring=§aExtra hearts, protects from drowning, suffocation, fire or starvation damage
 tooltips.lang.botania:lokiring=§aBuilding tool
 tooltips.lang.store_x_stacks=§bStore up to %s stacks
+tooltips.dim_stages.healthy=§4You need to have at least §640 HP§4 (two rows of hearts) to visit §cNether
+tooltips.dim_stages.healthy_grant=You reached §640 HP§r (two rows of hearts)!§r Now you can to visit §cNether
 
 requious.jei.recipe.infernal_furnace=Infernal Furnace
 requious.jei.recipe.liquid_interaction=Liquid Interaction

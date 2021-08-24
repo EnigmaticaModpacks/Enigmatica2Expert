@@ -138,6 +138,8 @@ tooltips.lang.botania:thorring=§aУвеличивает область разр
 tooltips.lang.botania:odinring=§aДополнительные сердца, защиты от утопления, удушья, пожара или ущерба для голода
 tooltips.lang.botania:lokiring=§aСтроительный инструмент
 tooltips.lang.store_x_stacks=§bХранит до %s стаков
+tooltips.dim_stages.healthy=§4Вам нужно иметь хотя бы §640 HP§4 (две полоски сердец) что бы посетить §cНезер
+tooltips.dim_stages.healthy_grant=Вы набрали §640 HP§r (две полоски сердец)!§r Теперь вы можете посетить §cНезер
 
 requious.jei.recipe.infernal_furnace=Инфернальная Печь
 requious.jei.recipe.liquid_interaction=Прикасание Жидкостей
