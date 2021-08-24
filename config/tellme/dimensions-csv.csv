@@ -1,6 +1,6 @@
 "ID","DimensionType ID","Name","shouldLoadSpawn","Currently loaded","WorldProvider class"
 0,0,"overworld","true","true","net.minecraft.world.WorldProviderSurface"
-1,1,"the_end","false","false","net.minecraft.world.WorldProviderEnd"
+1,1,"the_end","false","true","net.minecraft.world.WorldProviderEnd"
 -1,-1,"Nether","false","false","biomesoplenty.common.world.WorldProviderBOPHell"
 144,144,"CompactMachines","false","false","org.dave.compactmachines3.world.WorldProviderMachines"
 14676,14676,"emptiness","false","false","thecodex6824.thaumicaugmentation.common.world.WorldProviderEmptiness"

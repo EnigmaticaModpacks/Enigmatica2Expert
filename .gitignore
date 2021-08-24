@@ -71,3 +71,4 @@ resources/mechanics/models
 dev/lang/tmp
 dev/automation/tmp CHANGELOG.md
 config/JustEnoughCalculation/data/groups.json
+config/activity.json
