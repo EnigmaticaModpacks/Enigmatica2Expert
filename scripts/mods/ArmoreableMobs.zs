@@ -65,7 +65,9 @@ function addArmorToGroup(group as ArmorGroup, stage as IData, isSkeleton as bool
         ? it.updateTag({charge: it.tag.charge.asInt() / 11})
         : (!isNull(it.tag.Energy)
           ? it.updateTag({Energy: it.tag.Energy.asInt() / 11})
-          : it);
+          : (!isNull(it.tag.PsioCharge)
+            ? it.updateTag({PsioCharge: it.tag.PsioCharge.asInt() / 11})
+            : it));
     } else {
       # Damage item to 0.78
       val loweredDmg = min(it.maxDamage, max(1, (it.maxDamage as float * 0.78f) as int));

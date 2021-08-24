@@ -35,7 +35,7 @@ static armorStaged as IData[string] =
       {id:"enderio:item_end_steel_leggings"},
       {id:"enderio:item_end_steel_boots"},
       {id:"enderio:item_end_steel_sword"},
-      {id:"spartanshields:shield_riot_rftools", tag:{Energy:1000000}}
+      {id:"enderio:item_end_steel_shield"}
   ]},
   armor_manaweave:{
     prev: "armor_leather", 
@@ -48,7 +48,7 @@ static armorStaged as IData[string] =
       {id:"botania:manaweavelegs"},
       {id:"botania:manaweaveboots"},
       {id:"botania:manaresource"},
-      {id:"spartanshields:shield_basic_stone"}
+      {id:"botania:grassseeds"}
   ]},
   armor_manasteel:{
     prev: "armor_manaweave", 
@@ -61,7 +61,7 @@ static armorStaged as IData[string] =
       {id:"botania:manasteellegs"},
       {id:"botania:manasteelboots"},
       {id:"tconstruct:broadsword", tag:{StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 4.5 as float, FreeModifiers: 3, Durability: 272, HarvestLevel: 4, Attack: 4.75 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 4.5 as float, FreeModifiers: 2, Durability: 272, HarvestLevel: 4, Attack: 4.75 as float}, Special: {Categories: ["tool", "weapon"]}, TinkerData: {Materials: ["manasteel", "manasteel", "manasteel"], Modifiers: ["toolleveling"]}, Modifiers: [{identifier: "momentum", color: -15764755, level: 1}, {identifier: "tconevo.mana_infused", color: -15764755, level: 1}, {identifier: "toolleveling", color: 16777215, level: 1}], Traits: ["momentum", "tconevo.mana_infused", "toolleveling"]}},
-      {id:"spartanshields:shield_botania_manasteel"}
+      {id:"botania:manaresource:3"}
   ]},
   armor_elementium:{
     prev: "armor_psimetal", 
@@ -74,7 +74,7 @@ static armorStaged as IData[string] =
       {id:"botania:elementiumlegs"},
       {id:"botania:elementiumboots"},
       {id:"botania:elementiumsword"},
-      {id:"spartanshields:shield_botania_elementium"}
+      {id:"botania:tinypotato"}
   ]},
   armor_terrasteel:{
     prev: "armor_elementium", 
@@ -88,7 +88,7 @@ static armorStaged as IData[string] =
       {id:"botania:terrasteellegs"},
       {id:"botania:terrasteelboots"},
       {id:"botania:terrasword"},
-      {id:"spartanshields:shield_botania_terrasteel"}
+      {id:"botania:terrapick"}
   ]},
   armor_living_armour:{
     prev: "armor_manasteel", 
@@ -102,7 +102,7 @@ static armorStaged as IData[string] =
       {id:"bloodmagic:living_armour_leggings"},
       {id:"bloodmagic:living_armour_boots"},
       {id:"animus:kama_bound"},
-      {id:"spartanshields:shield_abyssalcraft_dreadium"}
+      {id:"animus:bloodapple"}
   ]},
   armor_thaumium:{
     prev: "armor_manasteel", 
@@ -115,7 +115,7 @@ static armorStaged as IData[string] =
       {id:"thaumcraft:thaumium_legs"},
       {id:"thaumcraft:thaumium_boots"},
       {id:"thaumcraft:thaumium_sword"},
-      {id:"spartanshields:shield_basic_obsidian"}
+      {id:"thaumcraft:nitor_purple"}
   ]},
   armor_thaumium_fortress:{
     prev: "armor_thaumium", 
@@ -129,7 +129,7 @@ static armorStaged as IData[string] =
       {id:"thaumcraft:fortress_legs"},
       {id:"thaumcraft:thaumium_boots"},
       {id:"thaumcraft:thaumium_sword"},
-      {id:"spartanshields:shield_basic_obsidian"}
+      {id:"thaumcraft:alumentum"}
   ]},
   armor_void:{
     prev: "armor_thaumium", 
@@ -142,7 +142,7 @@ static armorStaged as IData[string] =
       {id:"thaumcraft:void_legs"},
       {id:"thaumcraft:void_boots"},
       {id:"thaumcraft:void_sword"},
-      {id:"spartanshields:shield_tc_thaumium"}
+      {id:"thaumcraft:bottle_taint"}
   ]},
   armor_void_robe:{
     prev: "armor_void", 
@@ -156,7 +156,7 @@ static armorStaged as IData[string] =
       {id:"thaumcraft:void_robe_legs"},
       {id:"thaumicaugmentation:void_boots"},
       {id:"thaumcraft:crimson_blade"},
-      {id:"spartanshields:shield_tc_void"}
+      {id:"thaumcraft:caster_basic"}
   ]},
   armor_space_suit:{
     prev: "armor_leather", 
@@ -184,7 +184,7 @@ static armorStaged as IData[string] =
       {id:"ic2:nano_leggings", tag:{charge:1000000}},
       {id:"ic2:nano_boots", tag:{charge:1000000}},
       {id:"ic2:nano_saber", tag:{charge:160000}},
-      {id:"spartanshields:shield_riot_enderio", tag:{Energy:1000000}}
+      {id:"ic2:cutter"}
   ]},
   armor_flux:{
     prev: "armor_nano", 
@@ -197,7 +197,7 @@ static armorStaged as IData[string] =
       {id:"redstonearsenal:armor.legs_flux", tag:{Energy:800000}},
       {id:"redstonearsenal:armor.boots_flux", tag:{Energy:800000}},
       {id:"redstonearsenal:tool.sword_flux", tag:{Energy:320000}},
-      {id:"spartanshields:shield_flux_ra", tag:{Energy:1000000}}
+      {id:"redstonearsenal:tool.shield_flux", tag:{Energy:320000}}
   ]},
   armor_quantum:{
     prev: "armor_flux", 
@@ -211,7 +211,7 @@ static armorStaged as IData[string] =
       {id:"ic2:quantum_leggings", tag:{charge:10000000}},
       {id:"ic2:quantum_boots", tag:{charge:10000000}},
       {id:"tconstruct:broadsword", tag:{StatsOriginal:{AttackSpeedMultiplier:1,MiningSpeed:6,FreeModifiers:3,Durability:711,HarvestLevel:10,Attack:6.8},Stats:{AttackSpeedMultiplier:1,MiningSpeed:6.1609993,FreeModifiers:2,Durability:733,HarvestLevel:10,Attack:6.915003},Special:{Categories:["tool","weapon"],alienStatBonus:{identifier:"",color:0,attack:0.11500002,durability:22,speed:0.161},alienStatPool:{identifier:"",color:16777215,attack:1.314999,durability:265,speed:1.9039981}},TinkerData:{Materials:["iridium","iridium","iridium"],Modifiers:["toolleveling"]},Modifiers:[{identifier:"dense",color:-5592406,level:1},{identifier:"alien",color:-5592406,level:1},{identifier:"toolleveling",color:16777215,level:1}],Traits:["dense","alien","toolleveling"]}},
-      {id:"spartanshields:shield_basic_lumium"}
+      {id:"ic2:chainsaw", tag:{charge:30000.0}}
   ]},
   armor_arctic:{
     prev: "armor_leather", 
@@ -237,7 +237,7 @@ static armorStaged as IData[string] =
       {id:"twilightforest:ironwood_leggings"},
       {id:"twilightforest:ironwood_boots"},
       {id:"twilightforest:ironwood_sword", tag:{ench:[{lvl:1,id:19}]}},
-      {id:"spartanshields:shield_tower_iron"}
+      {id:"twilightforest:ironwood_axe"}
   ]},
   armor_yeti:{
     prev: "armor_leather", 
@@ -250,7 +250,7 @@ static armorStaged as IData[string] =
       {id:"twilightforest:yeti_leggings"},
       {id:"twilightforest:yeti_boots"},
       {id:"cyclicmagic:sword_slowness"},
-      {id:"spartanshields:shield_basic_platinum"}
+      {id:"tconstruct:battlesign", tag:{StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 2.0 as float, FreeModifiers: 3, Durability: 130, HarvestLevel: 1, Attack: 1.0 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 2.0 as float, FreeModifiers: 2, Durability: 130, HarvestLevel: 1, Attack: 1.0 as float}, Special: {Categories: ["tool", "weapon"]}, TinkerData: {Materials: ["alpha_fur", "alpha_fur"], Modifiers: ["toolleveling"]}, Modifiers: [{identifier: "alpha_fur", color: -14575885, level: 1}, {identifier: "ecological", color: -14575885, level: 1}, {identifier: "toolleveling", color: 16777215, level: 1}], Traits: ["alpha_fur", "ecological", "toolleveling"]}}
   ]},
   armor_dark_steel:{
     prev: "armor_leather", 
@@ -264,7 +264,7 @@ static armorStaged as IData[string] =
       {id:"enderio:item_dark_steel_leggings"},
       {id:"enderio:item_dark_steel_boots"},
       {id:"enderio:item_dark_steel_sword"},
-      {id:"spartanshields:shield_riot_enderio", tag:{Energy:1000000}}
+      {id:"enderio:item_dark_steel_shield"}
   ]},
   armor_psimetal:{
     prev: "armor_manasteel", 
@@ -278,7 +278,7 @@ static armorStaged as IData[string] =
       {id:"psi:psimetal_exosuit_leggings"},
       {id:"psi:psimetal_exosuit_boots"},
       {id:"psi:psimetal_sword"},
-      {id:"spartanshields:shield_basic_enderium"}
+      {id:"psicosts:psi_cell:2", tag: {PsioCharge: 720000}}
   ]},
   armor_stellar:{
     prev: "armor_end_steel", 
@@ -292,7 +292,7 @@ static armorStaged as IData[string] =
       {id:"enderio:item_stellar_alloy_leggings"},
       {id:"enderio:item_stellar_alloy_boots"},
       {id:"enderio:item_stellar_alloy_sword"},
-      {id:"spartanshields:shield_riot_rftools", tag:{Energy:1000000}}
+      {id:"enderio:item_stellar_alloy_axe"}
   ]},
   armor_glitch_infused:{
     prev: "armor_end_steel", 
@@ -305,7 +305,7 @@ static armorStaged as IData[string] =
       {id:"deepmoblearning:glitch_infused_leggings"},
       {id:"deepmoblearning:glitch_infused_boots"},
       {id:"deepmoblearning:glitch_infused_sword"},
-      {id:"spartanshields:shield_riot_rftools", tag:{Energy:1000000}}
+      {id:"deepmoblearning:pristine_matter_dragon"}
   ]},
   armor_wyvern:{
     prev: ["armor_terrasteel", "armor_living_armour", "armor_void_robe", "armor_quantum", "armor_arctic", "armor_yeti", "armor_glitch_infused"],
