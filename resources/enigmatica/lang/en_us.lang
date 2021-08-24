@@ -227,6 +227,7 @@ e2ee.tips.55=[MP] §lCrouch + right-click§r another player to give an item.
 e2ee.tips.56=[MP] Hold §lF4§r to ping block.
 e2ee.tips.57=§bPSI Energy§r restoring when you gather §aXP§r.
 e2ee.tips.58=Calm down fastest tool by press "§l\§r".
+e2ee.tips.59=Press "§lShift+F8§r" to refresh sound device.
 
 
 e2ee.tconstruct.material.spectre.name=Spectre
