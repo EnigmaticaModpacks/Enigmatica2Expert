@@ -11,7 +11,6 @@ import mods.ctintegration.scalinghealth.DifficultyManager;
 import mods.ctutils.utils.Math.max;
 import mods.ctutils.utils.Math.min;
 import mods.ctutils.utils.Math.abs;
-import mods.ctutils.utils.Math.random as random;
 import mods.zentoolforge.Toolforge;
 import modtweaker.tconstruct.ITICMaterial;
 
@@ -77,46 +76,45 @@ static slots as IEntityEquipmentSlot[] = [
 ] as IEntityEquipmentSlot[];
 
 
-function rnd_qubic()  as double { var a as double = random(); return a*a*a; }
-function equipProbability(offset as double) as bool { return random() <= 0.75d * offset; }
+function rnd_qubic(w as IWorld)  as double { var a as double = w.random.nextDouble(); return a*a*a; }
 function dataOrData(a as IData, b as IData) as IData {return isNull(a) ? b : a;}
-function pick_qubic(list as IData) as string { return list[(rnd_qubic() * list.length) as int].asString(); }
-function pick_qubic_adv(list as IData, d as double) as string {
+function pick_qubic(list as IData, w as IWorld) as string { return list[(rnd_qubic(w) * list.length) as int].asString(); }
+function pick_qubic_adv(list as IData, d as double, w as IWorld) as string {
   // val _min = max(0, min(list.length - 4, list.length * pow(d, 2.0d)) - shift);
   // val index = (abs(a*a*a) * (list.length - _min) + _min) as int;
-  val a = random();
+  val a = w.random.nextDouble();
   val b = abs(pow(a, 4.0d * pow(1.1d - d, 2)));
   val index = (min(0.9999d, max(0.0d, b)) * list.length) as int;
   return list[index].asString();
 }
 
-function rndToolPart(_mats as IData, d as double, forWeapon as bool) as ITICMaterial{
+function rndToolPart(_mats as IData, d as double, forWeapon as bool, w as IWorld) as ITICMaterial{
   val defaults = forWeapon
     ? scripts.equipment.equipData.normDefs.tool
     : scripts.equipment.equipData.normDefs.armor;
   var i = 0;
   var mats = dataOrData(_mats, defaults);
-  var matName = pick_qubic_adv(mats, d);
+  var matName = pick_qubic_adv(mats, d, w);
   if (!isNull(_mats)) while (i < 20 && !(defaults has matName)) {
-    matName = pick_qubic_adv(mats, d);
+    matName = pick_qubic_adv(mats, d, w);
     i+=1;
   }
 
   var mat = Toolforge.getMaterialFromID(matName);
   while (i < 100 && isNull(mat)) {
-    matName = pick_qubic_adv(mats, d);
+    matName = pick_qubic_adv(mats, d, w);
     mat = Toolforge.getMaterialFromID(matName);
     i += 1;
   }
   return mat;
 }
 
-function getFourRandomTicMats(listTicmats as IData, difficulty as double, forWeapon as bool) as ITICMaterial[] {
+function getFourRandomTicMats(listTicmats as IData, difficulty as double, forWeapon as bool, w as IWorld) as ITICMaterial[] {
   return [
-    rndToolPart(listTicmats, difficulty, forWeapon),
-    rndToolPart(listTicmats, difficulty, forWeapon),
-    rndToolPart(listTicmats, difficulty, forWeapon),
-    rndToolPart(listTicmats, difficulty, forWeapon)
+    rndToolPart(listTicmats, difficulty, forWeapon, w),
+    rndToolPart(listTicmats, difficulty, forWeapon, w),
+    rndToolPart(listTicmats, difficulty, forWeapon, w),
+    rndToolPart(listTicmats, difficulty, forWeapon, w)
   ] as ITICMaterial[];
 }
 
@@ -128,44 +126,44 @@ function buildTiCTool(matList as ITICMaterial[], def as IItemDefinition) as IIte
   return null;
 }
 
-function getWeightedGroup(entry as IData) as IData {
+function getWeightedGroup(entry as IData, w as IWorld) as IData {
   if(isNull(entry.groups.asList())) return entry.groups;
   if(entry.groups.length == 1) return entry.groups[0];
 
   val norm = scripts.equipment.equipData.normalizedWeights[entry];
-  val rnd = random();
+  val rnd = w.random.nextDouble();
   for i, pos in norm {
     if(rnd < pos) return entry.groups[i];
   }
   return entry.groups[0];
 }
 
-function getEquipCount(isOverworld as bool, difficulty as double) as int {
+function getEquipCount(isOverworld as bool, difficulty as double, w as IWorld) as int {
   # Calculate probabilities
   # bigger number - less chance
   # ~30% more armor in other dimensions than Overworld
   val tolerance = DEFAULT_EQUIP_CHANCE * (isOverworld ? 1.0d : OVERWORLD_EQUIP_CHANCE) / (1.0d + pow(difficulty, 2) * 4.0d);
-  var currProb = random();
+  var currProb = w.random.nextDouble();
   var maxEquips= 0;
   for i in 0 to 6 {
     if(currProb < tolerance) break;
-    currProb *= min(random() + NEXT_EQUIP_CHANCE, 1.0d);
+    currProb *= min(w.random.nextDouble() + NEXT_EQUIP_CHANCE, 1.0d);
     maxEquips += 1;
   }
   return maxEquips;
 }
 
-function addRandomModifiers(item as IItemStack, isArmor as bool) as IItemStack {
+function addRandomModifiers(item as IItemStack, isArmor as bool, w as IWorld) as IItemStack {
   var picked = [] as string[];
   var equip = item;
-  for i in 0 to ((rnd_qubic() * 5.0d + 1.0d) as int) {
+  for i in 0 to ((rnd_qubic(w) * 5.0d + 1.0d) as int) {
     var mod as string = null;
     var antiloop = 0;
     while (picked has mod && antiloop < 100) {
       mod = pick_qubic(isArmor
         ? scripts.equipment.utils_tcon.allArmorModifiers
         : scripts.equipment.utils_tcon.allToolModifiers
-      );
+      , w);
       antiloop += 1;
     }
     picked += mod;
@@ -183,13 +181,13 @@ function getDifficulty(entity as IEntity) as double {
 function equipEntity(iGroup as IData, entity as IEntityLivingBase, world as IWorld) as void {
   val difficulty = getDifficulty(entity);
 
-  val maxEquips = getEquipCount(world.dimension==0, difficulty);
+  val maxEquips = getEquipCount(world.dimension==0, difficulty, world);
   if(maxEquips < 1) return;
 
   # Pick tier
-  val currGroup = getWeightedGroup(iGroup);
-  val randTicMatsWeapn =                   getFourRandomTicMats(currGroup.ticMats, difficulty, true);
-  val randTicMatsArmor = (maxEquips > 1) ? getFourRandomTicMats(currGroup.ticMats, difficulty, false) : null;
+  val currGroup = getWeightedGroup(iGroup, world);
+  val randTicMatsWeapn =                   getFourRandomTicMats(currGroup.ticMats, difficulty, true, world);
+  val randTicMatsArmor = (maxEquips > 1) ? getFourRandomTicMats(currGroup.ticMats, difficulty, false, world) : null;
 
   val equipSequence = [4, 1, 2, 3, 0, 5] as int[];
   for j in 0 to maxEquips {
@@ -204,7 +202,7 @@ function equipEntity(iGroup as IData, entity as IEntityLivingBase, world as IWor
       equipID = scripts.equipment.equipData.armDefinitions[i][0];
     } else {
       if(isNull(currGroup.ticWeapons)) continue;
-      var weapon = pick_qubic(currGroup.ticWeapons);
+      var weapon = pick_qubic(currGroup.ticWeapons, world);
       equipID = (!weapon.contains(":") ? "tconstruct:" : "") ~ weapon;
     }
     var equipBase = itemUtils.getItem(equipID);
@@ -226,11 +224,11 @@ function equipEntity(iGroup as IData, entity as IEntityLivingBase, world as IWor
     equip = equip.withTag(scripts.equipment.utils_tcon.addSingleModifier(equip.tag, "tconevo.artifact"));
 
     // Other random mods
-    if (random() < difficulty + 0.25d) equip = addRandomModifiers(equip, isArmor);
+    if (world.random.nextDouble() < difficulty + 0.25d) equip = addRandomModifiers(equip, isArmor, world);
 
     # Damage item
     if(equip.isDamageable) {
-      val rndDamage = (0.35d + random() / 2.0d) * equip.maxDamage;
+      val rndDamage = (0.35d + world.random.nextDouble() / 2.0d) * equip.maxDamage;
       val dmg = min(32766, max(1, rndDamage as int));
       equip = equip.withDamage(dmg);
     }
