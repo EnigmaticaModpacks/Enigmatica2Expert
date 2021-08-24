@@ -1,7 +1,7 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
-import mods.jei.JEI.removeAndHide;
 
+#modloaded artisanworktables
 
 // Remove unused table types
 // Other types removed in .cfg
@@ -9,12 +9,12 @@ for it in [
   <artisanworktables:worktable:9>,
   <artisanworktables:workstation:9>,
 ] as IItemStack[] {
-  removeAndHide(it);
+  utils.rh(it);
 }
 
 // Remove grimoires (unused for now)
 for it in itemUtils.getItemsByRegexRegistryName("artisanworktables:artisans_grimoire_.*") {
-  removeAndHide(it);
+  utils.rh(it);
 }
 
 var list = {} as IIngredient[string];

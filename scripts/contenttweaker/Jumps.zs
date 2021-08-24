@@ -7,7 +7,6 @@ import crafttweaker.item.IItemDefinition;
 import crafttweaker.entity.IEntityLivingBase;
 import crafttweaker.data.IData;
 import crafttweaker.world.IWorld;
-import mods.ctutils.utils.Math.random;
 import mods.ctutils.utils.Math.sqrt;
 import mods.ctutils.utils.Math.min;
 import mods.ctutils.utils.Math.max;

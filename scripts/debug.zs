@@ -47,7 +47,7 @@ function logDebugData() {
 }
 
 
-function logAdditionalDebugData(p as IPlayer) {
+function logAdditionalDebugData(player as IPlayer) {
   val commandsToRun = [
     "/ct botania apothecary",
     "/ct botania brews",
@@ -62,11 +62,19 @@ function logAdditionalDebugData(p as IPlayer) {
     "/ct recipes furnace",
     "/ct recipes",
     // "/ct names burntime",
+    "/defaultoptions saveKeys",
+    "/defaultoptions saveOptions",
   ] as string[];
 
   for cmd in commandsToRun {
     server.commandManager.executeCommand(server, cmd);
   }
+
+  # Delayed call to not overload joining world
+  mods.zenutils.DelayManager.addDelayWork(function() {
+    player.sendMessage('§eStarting §c/ct conflict');
+    server.commandManager.executeCommand(server, '/ct conflict');
+  }, 20 * 20);
 }
 
 zenClass DebugUtils {

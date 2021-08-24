@@ -11,6 +11,9 @@ zenClass Unique {
   var inputs as IIngredient[] = [];
   var positions as int[] = [];
 
+  // Private fields
+  var rotate as int = 0;
+
   zenConstructor(_inputs as IIngredient[]) {
     inputs = _inputs;
     for i in 0 .. inputs.length { positions += i; }
@@ -30,7 +33,8 @@ zenClass Unique {
     for i, pos in positions {
       val x as int = pos % 3;
       val y = (pos / 3) as int;
-      map[y][x] = inputs[i];
+      val index = (i + rotate) % inputs.length;
+      map[y][x] = inputs[index];
     }
     shiftGroup(positions, inputs.length - 1);
 
@@ -43,7 +47,8 @@ zenClass Unique {
     if(a[n] <= (9 - inputs.length) + n) return;
 
     if(n == 0) {
-      a[0] = 0;
+      a[n] = 0;
+      rotate += 1;
       return;
     }
     shiftGroup(a, n - 1);

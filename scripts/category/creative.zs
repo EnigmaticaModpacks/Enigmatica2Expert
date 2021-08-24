@@ -2,7 +2,6 @@ import crafttweaker.item.IItemCondition;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import scripts.craft.grid.Grid;
-import mods.artisanworktables.builder.RecipeBuilder;
 
 # *======= Gas Trophy Frame =======*
 

@@ -18,7 +18,6 @@ import mods.ctutils.utils.Math.abs;
 import mods.ctutils.utils.Math.floor;
 import mods.ctutils.utils.Math.max;
 import mods.ctutils.utils.Math.min;
-import mods.ctutils.utils.Math.random;
 import mods.ctutils.utils.Math.sqrt;
 
 mods.contenttweaker.VanillaFactory.createCreativeTab("other", <item:minecraft:coal:1>).register();

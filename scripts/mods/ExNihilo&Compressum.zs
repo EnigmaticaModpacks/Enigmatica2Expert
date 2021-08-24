@@ -50,23 +50,6 @@ for i, inputArr in crushingInMachines {
 # Remove oredict entries
 <ore:oreAluminium>.remove(<exnihilocreatio:item_ore_aluminium:1>);
 
-# Ex Nihilo ore pieces conversion to ores
-for ore_entry in oreDict {
-	val name = ore_entry.name;
-	if (name.matches("piece[A-Z]\\w+")) {
-    val ore_name = name.substring(5);
-		if(ore_name=='Aluminum') continue;
-
-		val oreBlock = oreDict.get("ore" ~ ore_name);
-		if(isNull(oreBlock)) continue;
-
-		val p = ore_entry;
-		recipes.addShapeless("Ex Nihilo " ~ name ~ " x4", oreBlock.firstItem, [p, p, p, p]);
-		recipes.addShapeless("Ex Nihilo " ~ name ~ " x8", oreBlock.firstItem * 2, [p, p, p, p, p, p, p, p]);
-		scripts.process.compress(p * 4, oreBlock.firstItem, "except: Compressor");
-	}
-}
-
 # *======= Remove & Hide =======*
 
 # Uncompressed Coal

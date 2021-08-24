@@ -14,33 +14,6 @@ import crafttweaker.data.IData;
 static meltingExceptions as IData = ['Amber','Redstone','Coal'] as IData;
 
 
-# Native clusters processing
-for ore_entry in oreDict {
-	val name = ore_entry.name;
-	if (name.matches("cluster[A-Z]\\w+")) {
-    var ore_name = name.substring(7);
-    if (ore_name != 'Aluminum') {
-      scripts.process.beneficiate(ore_entry, ore_name, 3, {
-        exceptions: "Pulverizer StarlightInfuser", 
-        meltingExceptions: meltingExceptions
-      });
-
-      # Fix gems melting recipes
-      # 	Standart JAOPCA's furnace recipes for Ores that outputs
-      # gems instead of ingots have empty output, so add it forced
-      var smelted = utils.smelt(ore_entry);
-      if (isNull(smelted)) {
-        furnace.remove(<*>, ore_entry);
-        var gem = utils.getSomething(ore_name, ["gem", "dust", "any"], 2);
-        if(!isNull(gem)) furnace.addRecipe(gem, ore_entry);
-      }
-
-      magicProcessing(ore_entry, ore_name);
-    }
-	}
-}
-
-
 function getPoop(ore_name as string) as IItemStack {
   for poop in scripts.mods.RatsProcessing.listRatPoop {
     var oreBlockDef = D(poop.tag).getString('OreItem.id','');
