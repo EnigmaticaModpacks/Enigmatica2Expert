@@ -151,6 +151,7 @@ desc.both(<mekanism:machineblock:6>, "mekanism_factories");
 desc.both(<mekanism:machineblock:7>, "mekanism_factories");
 desc.both(<libvulpes:productingot:7>, "obtained.fabricator_or_excavator"); # Titanium Ingot
 desc.both(<mekanism:tierinstaller:3>, "mekanism_t_ultimate");
+desc.both(<contenttweaker:conglomerate_of_life>, "any_lamb");
 
 # Mystical Agriculture Seeds Tier 5 -> 6
 <mysticalagriculture:ender_amethyst_seeds>.addTooltip(desc.local("tier")~": §56§r");

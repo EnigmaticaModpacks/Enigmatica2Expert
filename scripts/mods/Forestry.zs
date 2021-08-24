@@ -213,3 +213,11 @@ craft.remake(<requious:adv_bee_analyzer>, ["pretty",
 # Remake recipe, because original recipe cant actually accept any propolis (but shows any)
 recipes.remove(<forestry:bituminous_peat>);
 recipes.addShaped("forestry_bituminous_peat", <forestry:bituminous_peat>, [[null, <ore:dustAsh>, null], [<forestry:peat:*>, <forestry:propolis:*>, <forestry:peat:*>], [null, <ore:dustAsh>, null]]);
+
+# Bitumen from peat
+mods.rustic.CrushingTub.addRecipe(<liquid:oil> * 500, <thermalfoundation:material:892>, <forestry:bituminous_peat>);
+
+# Honey drop on evaporation
+mods.rustic.EvaporatingBasin.addRecipe(<forestry:honey_drop>, <liquid:animania_honey> * 1000);
+mods.rustic.EvaporatingBasin.addRecipe(<forestry:honey_drop>, <liquid:for.honey>      * 1000);
+mods.rustic.EvaporatingBasin.addRecipe(<forestry:honey_drop>, <liquid:honey>          * 1000);

@@ -540,3 +540,69 @@ utils.compact(<ore:chest>, <extrautils2:largishchest>);
 recipes.remove(<minecraft:rail> * 8);
 recipes.remove(<minecraft:gunpowder> * 3);
 recipes.remove(<minecraft:torch> * 4);
+
+
+# Sunshine from Sun conglomerate
+mods.mechanics.addTubeRecipe([<contenttweaker:conglomerate_of_sun>], <liquid:liquid_sunshine> * 1000);
+
+# Life Essence from Sun conglomerate
+mods.mechanics.addTubeRecipe([<contenttweaker:conglomerate_of_life>], <liquid:lifeessence> * 1000);
+
+# [Conglomerate_Of_Life*4] from [Soul_Vial][+4]
+var lambNames as string[] = [
+  "animania:lamb_dorper",
+  "animania:lamb_dorset",
+  "animania:lamb_friesian",
+  "animania:lamb_jacob",
+  "animania:lamb_merino",
+  "animania:lamb_suffolk"
+];
+var anyLambIngredient = <enderio:item_soul_vial:1>.withTag({entityId: lambNames[0]});
+for i in 1 to lambNames.length {
+	anyLambIngredient = anyLambIngredient.or(<enderio:item_soul_vial:1>.withTag({entityId: lambNames[i]}));
+}
+craft.make(<contenttweaker:conglomerate_of_life> * 4, ["pretty",
+  "D B D",
+  "▲ S ▲",
+  "D C D"], {
+  "▲": <iceandfire:pixie_dust>,             # Pixie Dust
+  "B": <randomthings:rezstone>,             # Blood Stone
+  "S": anyLambIngredient, # Soul Vial
+  "C": <cyclicmagic:crystallized_obsidian>, # Crystallized Obsidian
+  "D": <iceandfire:dragon_meal>             # Dragon Meal
+});
+
+# [Conglomerate_Of_Sun*8] from [Totem_of_Undying][+3]
+craft.make(<contenttweaker:conglomerate_of_sun> * 8, ["pretty",
+  "R o R",
+  "C T C",
+  "R o R"], {
+  "R": <ore:myrmexResin>,                # Desert Myrmex Resin Chunk
+  "C": <cyclicmagic:crystallized_amber>, # Crystallized Amber
+  "T": <minecraft:totem_of_undying>,     # Totem of Undying
+  "o": <ore:dropRoyalJelly>              # Royal Jelly
+});
+
+# Saturate Phosphor
+scripts.process.fill(<contenttweaker:empowered_phosphor>, <fluid:syngas> * 1000, <contenttweaker:saturated_phosphor>, "only: MechanicalDryingBasin NCInfuser Transposer");
+
+# [empowered_phosphor*4] from [Bituminous_Peat][+2]
+craft.remake(<contenttweaker:empowered_phosphor> * 4, ["pretty",
+  "i P i",
+  "P B P",
+  "i P i"], {
+  "P": <forestry:phosphor>,          # Phosphor
+  "B": <forestry:propolis:*>,
+  "i": <contenttweaker:blasted_coal>
+});
+
+scripts.wrap.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(<contenttweaker:blasted_coal> * 2, <contenttweaker:conglomerate_of_coal>);
+craft.make(<contenttweaker:conglomerate_of_coal>, ["pretty",
+  "L B L",
+  "▲ i ▲",
+  "L B L"], {
+  "▲": <mechanics:fuel_dust_tiny>,      # Tiny Pile of Heavy Fuel Dust
+  "B": <randomthings:ingredient:13>,    # Blackout Powder
+  "i": <forestry:bituminous_peat>,      # Bituminous Peat
+  "L": <rats:little_black_squash_balls> # Little Black Squash Balls
+});

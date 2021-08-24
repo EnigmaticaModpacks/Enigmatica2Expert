@@ -555,3 +555,9 @@ craft.remake(<enderio:block_solar_panel>, ["pretty",
 mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:ender_pearl>);
 mods.appliedenergistics2.Grinder.removeRecipe(<thermalfoundation:material:895>);
 scripts.process.crush(<ore:enderpearl>, <appliedenergistics2:material:46>, "Except: Pulverizer PulseCentrifuge", null, null);
+
+# [block_fused_quartz] from [Block_of_Quartz][+2]
+craft.shapeless(<enderio:block_fused_quartz>, "AB", {
+  A: <contenttweaker:empowered_phosphor>,
+  B: <ore:blockQuartz>,
+});

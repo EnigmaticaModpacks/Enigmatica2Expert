@@ -108,3 +108,12 @@ recipes.remove(<animania:super_omelette>);
 recipes.remove(<animania:cheese_omelette>);
 recipes.addShapeless("animania_super_omelette",   <animania:super_omelette>,   [<animania:plain_omelette>, <ore:foodBaconCooked>, <animania:truffle>, <ore:cheeseAnimania>]);
 recipes.addShapeless("animania_cheese_omelette",  <animania:cheese_omelette>,  [<animania:plain_omelette>, <ore:cheeseAnimania>]);
+
+# [Hamster_Wheel] from [Stone_Slab][+1]
+craft.remake(<animania:block_hamster_wheel>, ["pretty",
+    "  ╱  ",
+    "╱   ╱",
+    "S ╱ S"], {
+    "╱": <ore:stickIron>, # Iron Rod
+    "S": <ore:slabStone>  # Stone Slab
+});

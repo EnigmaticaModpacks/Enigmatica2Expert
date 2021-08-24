@@ -379,3 +379,14 @@ recipes.remove(<avaritia:resource>);
 scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<avaritia:resource> * 2, 100000000, 1000000, CD, [CD]);
 # Somehow infuser craft item/tick after first item
 # mods.thermalexpansion.Infuser.addRecipe(<avaritia:resource>, CD, 50000000);
+
+# [Fuel_Compressor] from [Crushing_Block][+3]
+craft.remake(<avaritiafurnace:fuelcompressor>, ["pretty",
+  "# ▲ #",
+  "▬ □ ▬",
+  "# ▲ #"], {
+  "□": <mechanics:crushing_block>,    # Crushing Block
+  "▲": <ore:compressed3xDustBedrock>, # Double Compressed Infinity Dust Block
+  "#": <forestry:logs.2:1>,           # Ebony Log
+  "▬": <ore:ingotBlackIron>           # Black Iron Ingot
+});

@@ -56,3 +56,16 @@ scripts.process.crush(<twilightforest:minotaur_axe>, <minecraft:diamond> * 11,
 # Increasing the durability of Twilight Forest rare items
   <twilightforest:crumble_horn>.maxDamage = 4096; # Orig: 1024
   <twilightforest:ore_magnet>.maxDamage = 128; # Orig: 16
+
+
+
+# [Ice_Bomb*4] from [Shulker_Pearl][+3]
+craft.remake(<twilightforest:ice_bomb> * 4, ["pretty",
+  "I C I",
+  "W ◊ W",
+  "I C I"], {
+  "C": <forestry:carton>,              # Carton
+  "W": <forestry:crafting_material:3>, # Woven Silk
+  "I": <forestry:crafting_material:5>, # Ice Shard
+  "◊": <ore:gemPearl>                  # Shulker Pearl
+});

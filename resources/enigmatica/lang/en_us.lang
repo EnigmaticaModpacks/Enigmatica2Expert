@@ -50,6 +50,7 @@ tooltips.lang.space_gen_high=Generates in large quantities on other planets.
 tooltips.lang.mekanism_factories=Factories are made by upgrading Machines in-world with Basic/Advanced/Elite Tier Installers.
 tooltips.lang.mekanism_t_ultimate=§dOnly works on Bins, Energy Cubes, Tanks and Gas Tanks
 tooltips.lang.ic2wrench=You can safely break IC2 machines with a Pickaxe.
+tooltips.lang.any_lamb=Craft with any §lLamb soul§r
 
 tooltips.lang.small_plate_presser=The earliest (and cheapest) way of making Metal Rods is with the Small Plate Presser from Advanced Rocketry.
 tooltips.lang.thaum_research=Most Thaumcraft items need to be unlocked through research in the Thaumonomicon.

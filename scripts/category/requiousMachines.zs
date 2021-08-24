@@ -31,6 +31,25 @@ o.addRecipe(AssemblyRecipe.create(function(c) {
 .requireEnergy('energy', 10000)
 );
 
+# [Infinity_Furnace] from [Infinity_Fuel][+4]
+utils.rh(<avaritiafurnace:infinityfurnace>);
+craft.remake(<requious:infinity_furnace>, ["pretty",
+  "T R E R T",
+  "# ▬ n ▬ #",
+  "H r I r H",
+  "# ▬ Ϟ ▬ #",
+  "T R E R T"], {
+  "R": <rats:marbled_cheese_raw>,                 # Raw Marbled Cheese
+  "#": <ore:logSequoia>,                          # Sequoia
+  "T": <avaritiafurnace:triplecompressedfurnace>, # Triple Compressed Furnace
+  "E": <contenttweaker:empowered_phosphor>,       # Empowered Phosphor
+  "r": <rats:idol_of_ratlantis>,
+  "H": <scalinghealth:heartcontainer>,            # Heart Container
+  "I": <avaritiafurnace:infinityfuel>,            # Infinity Fuel
+  "▬": <ore:dragonsteelIngot>,
+  "n": <randomthings:spectrecoil_ender>,          # Ender Spectre Coil
+  "Ϟ": <randomthings:spectreenergyinjector>       # Spectre Energy Injector
+});
 
 // -----------------------------------------------------------------------
 // -----------------------------------------------------------------------
