@@ -75,8 +75,7 @@ for item in [
 # Replace recipes that used items
 val helmet_iron = <conarm:helmet_core>.withTag({Material: "iron"});
 remakeEx(<actuallyadditions:item_player_probe>, [[<minecraft:iron_bars>, null, <minecraft:iron_bars>], [<minecraft:iron_bars>, helmet_iron, <minecraft:iron_bars>], [<actuallyadditions:item_crystal_empowered>, <minecraft:skull:1>, <actuallyadditions:item_crystal_empowered>]]);
-remakeEx(<openblocks:sonic_glasses>, [[<ore:ingotIron>, helmet_iron, <ore:ingotIron>], [<minecraft:obsidian>, <ore:stickWood>, <minecraft:obsidian>], [null, null, null]]);
-remakeEx(<plethora:module:6>, [[<computercraft:peripheral:1>, <ore:ingotIron>, <computercraft:peripheral:1>], [<computercraft:peripheral:4>, <computercraft:peripheral:4>, <computercraft:peripheral:4>], [<ore:ingotIron>, helmet_iron, <ore:ingotIron>]]);
+remakeEx(itemUtils.getItem("openblocks:sonic_glasses"), [[<ore:ingotIron>, helmet_iron, <ore:ingotIron>], [<minecraft:obsidian>, <ore:stickWood>, <minecraft:obsidian>], [null, null, null]]);
 
 remakeEx(<randomthings:superlubricentboots>, [[<conarm:boots_core>.withTag({Material: "iron"})], [<randomthings:ingredient:6>]]);
 
@@ -117,7 +116,6 @@ remakeEx(<draconicevolution:tool_upgrade:11>, [[<minecraft:dye:4>, <draconicevol
 # Diamond
 #------------
 val dimBootsCore = <conarm:boots_core>.withTag({Material: "diamantine_crystal"});
-remakeEx(<plethora:module>, [[<ore:ingotGold>, <ore:chestEnder>, <ore:ingotGold>], [<ore:chestEnder>, <conarm:helmet_core>.withTag({Material: "diamantine_crystal"}), <ore:chestEnder>], [<ore:ingotGold>, <ore:chestEnder>, <ore:ingotGold>]]);
 remakeEx(<draconicevolution:tool_upgrade:8>, [[<minecraft:dye:4>, <draconicevolution:draconic_core:*>, <minecraft:dye:4>], [<ore:ingotDraconium>, <conarm:chest_core>.withTag({Material: "diamantine_crystal"}), <ore:ingotDraconium>], [<minecraft:dye:4>, <draconicevolution:draconic_core:*>, <minecraft:dye:4>]]);
 remakeEx(<environmentaltech:modifier_jump_boost>, [[dimBootsCore, <environmentaltech:litherite_crystal>, dimBootsCore], [<environmentaltech:mica>, <environmentaltech:modifier_null>, <environmentaltech:mica>], [dimBootsCore, <environmentaltech:lonsdaleite_crystal>, dimBootsCore]]);
 

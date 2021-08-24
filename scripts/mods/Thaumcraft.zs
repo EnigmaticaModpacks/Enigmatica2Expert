@@ -13,7 +13,7 @@ scripts.wrap.thaumcraft.Infusion.registerRecipe("crimson_rites", "INFUSION",
 scripts.wrap.thaumcraft.Infusion.registerRecipe("spawn_lesser_crimson_portal", "INFUSION", 
 <minecraft:spawn_egg>.withTag({EntityTag: {id: "thaumcraft:cultistportallesser"}}), 15, 
 [<aspect:vitium> * 90, <aspect:mortuus> * 45, <aspect:praecantatio> * 90, <aspect:auram> * 30], 
-<openblocks:golden_egg>, 
+utils.tryCatch("openblocks:golden_egg", <minecraft:golden_apple:1>), 
 [<thaumcraft:metal_thaumium>, <thaumcraft:void_seed>, <thaumcraft:salis_mundus>, <thaumcraft:void_seed>, <minecraft:skull:1>, <thaumcraft:void_seed>, <extrautils2:teleporter:1>, <thaumcraft:void_seed>]);
 
 # Unification for the Smelting Bonus
@@ -152,7 +152,7 @@ craft.make(<thaumcraft:salis_mundus>, ["DEFCAB"], {
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:tallow>);
 scripts.wrap.thaumcraft.Crucible.registerRecipe("Tallow from rotten flesh", "HEDGEALCHEMY@1", <thaumcraft:tallow>,   <minecraft:rotten_flesh>, [<aspect:ignis>]);
 scripts.wrap.thaumcraft.Crucible.registerRecipe("Tallow from tallow",       "HEDGEALCHEMY@1", <thaumcraft:tallow>*2, <quark:tallow>, [<aspect:ignis>*2]);
-scripts.wrap.thaumcraft.Crucible.registerRecipe("Tallow from blubber",      "HEDGEALCHEMY@1", <thaumcraft:tallow>*8, <betteranimalsplus:blubber>, [<aspect:ignis>*4]);
+scripts.wrap.thaumcraft.Crucible.registerRecipe("Tallow from blubber",      "HEDGEALCHEMY@1", <thaumcraft:tallow>*8, utils.tryCatch('betteranimalsplus:blubber', <animania:raw_prime_pork>), [<aspect:ignis>*4]);
 
 # Conflicts
 utils.rh(<thaumcraft:nugget:1>);

@@ -404,7 +404,7 @@ craft.remake(<actuallyadditions:item_water_removal_ring>, ["pretty",
   "☼ R ☼",
   "S ☼ S"], {
   "R": <actuallyadditions:item_misc:6>, # Ring
-  "S": <openblocks:sponge>,             # Sponge
+  "S": utils.tryCatch("openblocks:sponge", <minecraft:sponge>),             # Sponge
   "☼": <ore:crystalPalis>               # Palis Crystal
 });
 
@@ -417,7 +417,7 @@ val ringsIngredients = [
 	<minecraft:repeater>,
 	<ore:dustBlaze>,
 	<ore:craftingPiston>,
-	<animania:plain_omelette>,
+	utils.tryCatch("animania:plain_omelette", <minecraft:egg>),
 	<ore:slimeball>,
 	<minecraft:magma_cream>,
 	<ore:fish>,

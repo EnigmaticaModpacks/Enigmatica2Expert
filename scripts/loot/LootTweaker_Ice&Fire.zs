@@ -3,6 +3,8 @@ import loottweaker.vanilla.loot.LootPool;
 import crafttweaker.item.IItemStack as IItemStack;
 #modloaded loottweaker
 
+#ignoreBracketErrors
+
 # *======= Variables =======*
 val cyclops_cave_pool            = loottweaker.LootTweaker.getTable("iceandfire:cyclops_cave").getPool("cyclops_cave");
 val fire_dragon_female_cave_pool = loottweaker.LootTweaker.getTable("iceandfire:fire_dragon_female_cave").getPool("fire_dragon_cave");
@@ -63,6 +65,7 @@ for item in caveloot {
 function addLootList(table as string, pool as string, map as int[IItemStack]) {
 	val loot_pool = loottweaker.LootTweaker.getTable(table).getPool(pool);
 	for item, weight in map {
+		if(isNull(item)) continue;
 		loot_pool.addItemEntry(item, weight);
 	}
 }

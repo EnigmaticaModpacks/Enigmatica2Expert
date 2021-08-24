@@ -1,4 +1,5 @@
 #modloaded rockytweaks
+#ignoreBracketErrors
 
 import mods.rockytweaks.Merchant.addTrade as addTrade;
 import crafttweaker.item.IIngredient;
@@ -8,9 +9,9 @@ recipes.remove(<cyclicmagic:block_shears>);
 val pap = <conarm:polishing_kit>.withTag({Material: "paper"});
 val E = <minecraft:emerald>;
 
-function getInjector(potionName as string) as IItemStack {
-  return <thermalinnovation:injector>.withTag({Fluid: {FluidName: "potion", Amount: 2000, Tag: {Potion: potionName}}});
-}
+// function getInjector(potionName as string) as IItemStack {
+//   return <thermalinnovation:injector>.withTag({Fluid: {FluidName: "potion", Amount: 2000, Tag: {Potion: potionName}}});
+// }
 
 val merchData = {
   "minecraft:farmer": {
@@ -213,6 +214,7 @@ val merchData = {
         [E*2, <tconstruct:tough_tool_rod>.withTag({Material: "treatedwood"})],
         [E*17, <tconstruct:tough_tool_rod>.withTag({Material: "ghostwood"})],
         [E*55, <plustic:osmiridiumingot>, <littletiles:hammer>],
+        [E*35, <littletiles:saw>],
       ],
     },
   },
@@ -442,16 +444,16 @@ for profession, pList in merchData {
   for career, cList in pList {
     for level, lList in cList {
       for items in lList {
-        if(items.length<=0) continue;
+        if(items.length<=0 || isNull(items[0]) || isNull(items[1])) continue;
         utils.log(['Adding merchant trade:',
           profession,
           career,
           '[' ~ items[0].displayName ~ ']',
           '[' ~ items[1].displayName ~ ']',
-          '[' ~ (items.length > 2 ? items[2].displayName : '') ~ ']',
+          '[' ~ ((items.length > 2 && !isNull(items[2])) ? items[2].displayName : '') ~ ']',
           level
         ]);
-        if(items.length > 2)
+        if(items.length > 2 && !isNull(items[2]))
           addTrade(profession, career, items[0], items[1], items[2], level);
         else if(items.length > 1)
           addTrade(profession, career, items[0], items[1], level);

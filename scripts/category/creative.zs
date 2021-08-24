@@ -86,7 +86,7 @@ var list = {
 	"◙": <compactsolars:compact_solar_block:2>,
 	"ж": <draconicevolution:awakened_core>,
 	"Ж": <draconicevolution:draconium_capacitor:1>,
-	"☑": <threng:material:14>, # Speculative Processor
+	"☑": utils.tryCatch("threng:material", 14, <gendustry:genetics_processor>), # Speculative Processor
 	"☠": <extendedcrafting:material:13>,
 	"ⱋ": <aeadditions:storage.component:3>,
 	"☒": <extrautils2:compressedcobblestone:7>,
@@ -574,7 +574,7 @@ craft.remake(<extrautils2:passivegenerator:6>, ["pretty",
 
 
 
-list["τ"] = <notenoughrtgs:rtg_californium_compact>;
+list["τ"] = utils.tryCatch("notenoughrtgs:rtg_californium_compact", <nuclearcraft:rtg_californium>);
 list["⁴"] = <environmentaltech:solar_cont_4>;
 list["⁵"] = <environmentaltech:solar_cont_5>;
 list["⁶"] = <environmentaltech:solar_cont_6>;

@@ -1,8 +1,17 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
-import mods.jei.JEI;
+import crafttweaker.player.IPlayer;
 
 #modloaded potioncore
+
+# Potioncore gives ability to jump incredeble hight
+# by holding jump key after eating [Ironberries].
+# "Controllable Jump Boost" config option wont help,
+# so we just remove potion effect on use
+events.onEntityLivingUseItemFinish(function(e as crafttweaker.event.EntityLivingUseItemEvent.Finish){
+  if(!e.isPlayer || e.player.world.isRemote() || e.item.definition.id != "rustic:ironberries") return;
+  e.player.removePotionEffect(<potion:minecraft:jump_boost>);
+});
 
 static gunPowder as IItemStack = <minecraft:gunpowder>;
 static dragonsBreath as IItemStack = <minecraft:dragon_breath>;
@@ -145,7 +154,7 @@ addBrewWithUpgrades(
   null, "potioncore:long_solid_core"
 );
 addBrewWithUpgrades(
-  awkward, <animania:honey_bottle>, "potioncore:revival",
+  awkward, utils.tryCatch("animania:honey_bottle", <forestry:honeyed_slice>), "potioncore:revival",
   "potioncore:strong_revival", "potioncore:long_revival"
 );
 addBrewWithUpgrades(

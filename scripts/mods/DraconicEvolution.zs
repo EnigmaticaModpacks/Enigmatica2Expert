@@ -94,7 +94,7 @@ import scripts.craft.grid.Grid;
 # [Basic Energy Relay Crystal] from [Fluix Steel Ingot][+3]
 recipes.removeShaped(<draconicevolution:energy_crystal>);
 scripts.wrap.bloodmagic.AlchemyTable.addRecipe(<draconicevolution:energy_crystal> * 4, [
-	<astralsorcery:blocklens>, <thermalfoundation:material:136>, <bigreactors:ingotcyanite>, <threng:material>,
+	<astralsorcery:blocklens>, <thermalfoundation:material:136>, <bigreactors:ingotcyanite>, utils.tryCatch("threng:material", <nuclearcraft:alloy:15>),
 ], 2000, 200, 2);
 
 # [Dislocator] from [Chorus Glass][+3]

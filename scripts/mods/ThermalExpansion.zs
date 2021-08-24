@@ -1,13 +1,10 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
-import mods.jei.JEI.removeAndHide;
 import crafttweaker.recipes.IRecipeFunction;
 import crafttweaker.data.IData;
 import scripts.craft.grid.Grid;
 #modloaded thermalexpansion
-
-utils.rh(<ic2:coke>);
 
 # Planks/Slabs -> Sticks
 for plank in <ore:plankWood>.items {
@@ -216,38 +213,6 @@ scripts.process.fill(<thermaldynamics:duct_32:5>, <liquid:glowstone>*200, <therm
 scripts.process.fill(<thermaldynamics:duct_32>,   <liquid:glowstone>*200, <thermaldynamics:duct_32:2>, null);
 scripts.process.fill(<thermaldynamics:duct_64:3>, <liquid:aerotheum>*500, <thermaldynamics:duct_64>,   null);
 scripts.process.fill(<thermaldynamics:duct_64>,   <liquid:ender>*1000,    <thermaldynamics:duct_64:2>, null);
-
-# Remove and hide creative innovation items
-removeAndHide(<thermalinnovation:quiver:32000>.withTag({}));
-removeAndHide(<thermalinnovation:injector:32000>.withTag({}));
-removeAndHide(<thermalinnovation:magnet:32000>.withTag({Energy: 600000}));
-
-# Remake magnet
-recipes.removeByRecipeName("thermalinnovation:magnet");
-recipes.removeByRecipeName("thermalinnovation:magnet_1");
-recipes.removeByRecipeName("thermalinnovation:magnet_2");
-recipes.removeByRecipeName("thermalinnovation:magnet_3");
-recipes.removeByRecipeName("thermalinnovation:magnet_4");
-
-# First level magnet
-recipes.addShaped(<thermalinnovation:magnet>, [
-	[<ore:ingotConductiveIron>, null, <ore:ingotConductiveIron>],
-	[<ore:ingotLead>, null, <ore:ingotLead>],
-	[null, <ore:ingotHeavy>, null]]);
-
-function remakeMagnet(meta as int, i1 as IIngredient, i2 as IIngredient){
-	var item = itemUtils.getItem("thermalinnovation:magnet", meta);
-	var prev = itemUtils.getItem("thermalinnovation:magnet", meta - 1);
-	recipes.addShaped("TE Magnet  " ~ meta, item, [
-		[null, i2, null],
-		[i1, prev, i1],
-		[i2, null, i2]]);
-}
-
-remakeMagnet(1, <thermalfoundation:material:162>, <enderio:item_alloy_nugget:0>);
-remakeMagnet(2, <thermalfoundation:material:161>, <enderio:item_alloy_nugget:3>);
-remakeMagnet(3, <thermalfoundation:material:165>, <enderio:item_alloy_nugget:1>);
-remakeMagnet(4, <thermalfoundation:material:167>, <enderio:item_alloy_nugget:2>);
 
 # More TE coolants
 # mods.thermalexpansion.Coolant.addCoolant(ILiquidStack fluid, int coolantRf, int coolantFactor);

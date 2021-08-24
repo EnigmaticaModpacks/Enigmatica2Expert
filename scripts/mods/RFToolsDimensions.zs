@@ -24,14 +24,14 @@
 	<rftoolsdim:dimlet_workbench>, 
 	[[<avaritia:double_compressed_crafting_table>, <rftoolsdim:dimlet_base>, <avaritia:double_compressed_crafting_table>],
 	[<rftools:crafter3>.anyDamage(), <thermalexpansion:frame:148>, <rftools:crafter3>.anyDamage()], 
-	[<avaritia:double_compressed_crafting_table>, <rftoolscontrol:workbench>.anyDamage(), <avaritia:double_compressed_crafting_table>]]);
+	[<avaritia:double_compressed_crafting_table>, utils.tryCatch(itemUtils.getItem("rftoolscontrol:workbench", 32767), <rftools:crafter3:*>), <avaritia:double_compressed_crafting_table>]]);
 
 # Dimension Enscriber
 	recipes.remove(<rftoolsdim:dimension_enscriber>);
 	recipes.addShapedMirrored("Dimension Enscriber", 
 	<rftoolsdim:dimension_enscriber>, 
 	[[<rftools:machine_base>, <rftoolsdim:empty_dimension_tab>, <rftools:machine_base>],
-	[<ae2stuff:inscriber>, <thermalexpansion:frame:148>, <ae2stuff:inscriber>], 
+	[utils.tryCatch("ae2stuff:inscriber", <appliedenergistics2:inscriber>), <thermalexpansion:frame:148>, utils.tryCatch("ae2stuff:inscriber", <appliedenergistics2:inscriber>)], 
 	[<rftools:machine_base>, <draconicevolution:draconic_core>, <rftools:machine_base>]]);
 
 # Phased Field Generator

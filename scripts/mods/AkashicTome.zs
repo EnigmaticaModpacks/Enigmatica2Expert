@@ -1,3 +1,4 @@
+#modloaded akashictome
 
 # Super Akashic Tome
 	val superTome = <akashictome:tome>.withTag({"akashictome:data": {

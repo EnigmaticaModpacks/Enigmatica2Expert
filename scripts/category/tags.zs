@@ -1,4 +1,5 @@
 #priority 1
+#ignoreBracketErrors
 
 import crafttweaker.item.IItemStack;
 
@@ -267,6 +268,7 @@ for lang, items in {
 
 } as IItemStack[][string] {
   for item in items {
+    if(isNull(item)) continue;
     desc.tooltip(item, lang);
   }
 }

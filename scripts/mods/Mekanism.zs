@@ -403,14 +403,6 @@ remakeEx(<mekanism:cardboardbox>, [[<forestry:carton>, <forestry:carton>, <fores
 scripts.wrap.mekanism.enrichment.addRecipe(<ore:dustGlowstone>,  <contenttweaker:compressed_glowstone>);
 scripts.wrap.mekanism.enrichment.addRecipe(<ore:dustEnderPearl>, <contenttweaker:compressed_ender>);
 
-# New Infuser types
-mods.mekatweaker.InfuserType.addTypeObject(<ore:dustGlowstone>,                   "GLOWSTONE", 10);
-mods.mekatweaker.InfuserType.addTypeObject(<ore:blockGlowstone>,                  "GLOWSTONE", 40);
-mods.mekatweaker.InfuserType.addTypeObject(<contenttweaker:compressed_glowstone>, "GLOWSTONE", 80);
-mods.mekatweaker.InfuserType.addTypeObject(<ore:dustEnderPearl>,              "ENDER", 10);
-mods.mekatweaker.InfuserType.addTypeObject(<ore:enderpearl>,                  "ENDER", 10);
-mods.mekatweaker.InfuserType.addTypeObject(<contenttweaker:compressed_ender>, "ENDER", 80);
-
 # Remake Universal cables for more efficient transfering of EU
 for i, it in [
 	<enderio:item_alloy_nugget:2>,

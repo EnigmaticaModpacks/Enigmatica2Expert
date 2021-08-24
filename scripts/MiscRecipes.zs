@@ -74,22 +74,6 @@ import scripts.craft.grid.Grid;
 	[<ore:egg>,<ore:egg>,<ore:egg>],
 	[null, <cyclicmagic:sprout_seed>, null]], 
 	40, <liquid:liquiddna> * 250);
-
-# OpenBlocks Glider
-	recipes.remove(<openblocks:generic>);
-	recipes.remove(<openblocks:hang_glider>);
-	
-	recipes.addShapedMirrored("Glider Wings", 
-	<openblocks:generic>, 
-	[[<harvestcraft:hardenedleatheritem>, <forestry:oak_stick>, null],
-	[<harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>, <forestry:oak_stick>], 
-	[<harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>]]);
-	
-	recipes.addShapedMirrored("Hang Glider", 
-	<openblocks:hang_glider>, 
-	[[null, null, null],
-	[<openblocks:generic>, <forestry:oak_stick>, <openblocks:generic>], 
-	[null, null, null]]);
 	
 # Mud conversion
 	recipes.remove(<animania:block_mud>);
@@ -371,24 +355,6 @@ craft.remake(<enderstorage:ender_pouch>, ["pretty",
 	utils.rh(<extendedcrafting:material:129>);
 	
 
-
-# *======= Traveler's Backpacks =======*
-recipes.remove(<travelersbackpack:hose>);
-recipes.addShaped(<travelersbackpack:hose>, [
-	[<travelersbackpack:hose_nozzle>, <ore:itemRubber>, <ore:itemRubber>],
-	[null, null, <ore:itemRubber>],
-	[null, null, <ore:dyeGreen>]]);
-
-recipes.remove(<travelersbackpack:backpack_tank>);
-recipes.addShaped(<travelersbackpack:backpack_tank>, [
-	[<ic2:casing:3>],
-	[<enderio:block_omni_reservoir>],
-	[<ic2:casing:3>]]);
-
-# Remake Sleeping bag (prevent conflict)
-remakeEx(<travelersbackpack:sleeping_bag_bottom>, [[<quark:quilted_wool:14>, <quark:quilted_wool:14>, <quark:quilted_wool>]]);
-
-
 # *======= Recycles =======*
 
 # Arrows recycle
@@ -455,34 +421,6 @@ recipes.addShapeless("harder_blaze_dust", <minecraft:blaze_powder>, [<minecraft:
 recipes.remove(<minecraft:flint_and_steel>);
 recipes.addShapeless(<minecraft:flint_and_steel>, [<ore:ingotSteel>, <ore:itemFlint>]);
 
-# *=======  =======*
-
-# More meats from traps
-mods.harvestcrafttweaker.HarvestCraftTweaker.addGroundTrap(<ore:foodCheese>, [<rats:raw_rat>, <rats:rat_pelt>]);
-mods.harvestcrafttweaker.HarvestCraftTweaker.addGroundTrap(<animania:block_straw>, [
-	<twilightforest:raw_venison>,
-	<betteranimalsplus:venisonraw>,
-	<betteranimalsplus:pheasantraw>,
-	<betteranimalsplus:pheasant_egg>,
-	<betteranimalsplus:turkey_egg>,
-	<betteranimalsplus:goose_egg>,
-	<betteranimalsplus:turkey_leg_raw>,
-]);
-
-# More traps
-mods.harvestcrafttweaker.HarvestCraftTweaker.addWaterTrap(<thermalfoundation:bait>,   [<betteranimalsplus:crab_meat_raw>, <betteranimalsplus:eel_meat_raw>]);
-mods.harvestcrafttweaker.HarvestCraftTweaker.addWaterTrap(<thermalfoundation:bait:1>, [<iceandfire:shiny_scales>, <betteranimalsplus:blubber>]);
-mods.harvestcrafttweaker.HarvestCraftTweaker.addWaterTrap(<thermalfoundation:bait:2>, [
-	<iceandfire:sea_serpent_scales_blue>,
-	<iceandfire:sea_serpent_scales_bronze>,
-	<iceandfire:sea_serpent_scales_deepblue>,
-	<iceandfire:sea_serpent_scales_purple>,
-	<iceandfire:sea_serpent_scales_red>,
-	<iceandfire:sea_serpent_scales_teal>,
-	<iceandfire:sea_serpent_scales_green>,
-]);
-
-
 # ------ Silicon unification ------
 
 var trueSilicon = <appliedenergistics2:material:5>;
@@ -499,9 +437,6 @@ mods.mekanism.crusher.removeRecipe(<nuclearcraft:gem:6>); # Sand -> silicon
 furnace.addRecipe(trueSilicon, <ore:dustCertusQuartz>, 4.0d);
 furnace.addRecipe(trueSilicon, <ore:dustNetherQuartz>, 4.0d);
 scripts.wrap.thermalexpansion.Compactor.addMintRecipe(trueSilicon * 2, <minecraft:sand>, 4000);
-
-# Quest Book -> Patchouli book
-recipes.addShapeless("Patchouli book", <patchouli:guide_book>.withTag({"patchouli:book": "patchouli:e2e_e"}), [<questbook:itemquestbook>]);
 
 # Tallow into biomass
 scripts.process.melt(<ore:tallow>, <liquid:biomass> * 10, "No Exceptions");
@@ -526,9 +461,6 @@ craft.remake(<quark:obsidian_pressure_plate>, ["AA","AA"], {A: <ore:obsidian>});
 
 # Conflict recipes
 recipes.removeByRecipeName("quark:basalt_1");
-
-# Defined with portal spread
-recipes.removeShaped(<minecraft:red_nether_brick>);
 
 <minecraft:cake>.maxStackSize = 64;
 

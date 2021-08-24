@@ -89,6 +89,7 @@ global makeEx as function(IItemStack, IIngredient[][])void =
 global remakeEx as function(IItemStack, IIngredient[][])void = 
     function (item as IItemStack, input as IIngredient[][]) as void  {
 
+	if(isNull(item)) return;
 	recipes.remove(item);
 	makeEx(item, input);
 };

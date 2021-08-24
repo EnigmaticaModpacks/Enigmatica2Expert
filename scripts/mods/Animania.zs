@@ -1,3 +1,5 @@
+#modloaded animania
+
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
@@ -11,6 +13,17 @@ import mods.jaopca.OreEntry;
 # Animania
 #
 # ######################################################################
+
+#CheeseArray (yes, hashtag)
+for cheese in [
+	<animania:friesian_cheese_wheel>,
+	<animania:holstein_cheese_wheel>,
+	<animania:jersey_cheese_wheel>,
+	<animania:goat_cheese_wheel>,
+	<animania:sheep_cheese_wheel>
+] as IItemStack[] {
+	scripts.category.tooltip_utils.desc.jei(cheese, "cheese_in_mold");
+}
 
 ##################
 # Ore Dict

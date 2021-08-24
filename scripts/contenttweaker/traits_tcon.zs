@@ -245,16 +245,19 @@ spectre.addTrimMaterialStats(70);
 spectre.register();
 
 static spectreUpdateTime as int = 80;
+static hasPotioncore as bool = loadedMods.contains("potioncore");
 
 function spectreMechanic(world as IWorld, player as IPlayer, level as int) as void {
   if (world.isRemote()) return;
   if (isNull(player)) return;
-  if (!player.isPotionActive(<potion:potioncore:reach>)) {
-    player.addPotionEffect(<potion:potioncore:reach>.makePotionEffect(spectreUpdateTime, level - 1));
+  val levelMult = hasPotioncore ? 1 : 3;
+  val newEffect = hasPotioncore ? <potion:potioncore:reach> : <potion:cyclicmagic:magnet>;
+  if (!player.isPotionActive(newEffect)) {
+    player.addPotionEffect(newEffect.makePotionEffect(spectreUpdateTime, level * levelMult - 1));
     return;
   }
-  val effect = player.getActivePotionEffect(<potion:potioncore:reach>);
-  player.addPotionEffect(<potion:potioncore:reach>.makePotionEffect(spectreUpdateTime, effect.amplifier + level));
+  val existEffect = player.getActivePotionEffect(newEffect);
+  player.addPotionEffect(newEffect.makePotionEffect(spectreUpdateTime, existEffect.amplifier + level * levelMult));
 }
 
 val spectre_trait = TraitBuilder.create("spectre");

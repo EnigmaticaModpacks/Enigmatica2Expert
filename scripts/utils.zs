@@ -5,7 +5,6 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.recipes.IRecipeFunction;
-import mods.jei.JEI.removeAndHide as removeAndHide;
 
 
 zenClass Utils {
@@ -259,6 +258,31 @@ zenClass Utils {
     return out;
   };
 
+
+  # Try to get item by string. If fail - return second vaiant
+  function tryCatch(first as string, meta as int, second as IItemStack) as IItemStack {
+    val item = itemUtils.getItem(first, meta);
+    return isNull(item) ? second : item;
+  }
+  function tryCatch(first as string, second as IItemStack) as IItemStack {
+    return tryCatch(first, 0, second);
+  }
+  function tryCatch(first as IItemStack, second as IItemStack) as IItemStack {
+    return isNull(first) ? second : first;
+  }
+
+  # Safe get item with nbt tag and amount
+  function get(id as string                                            ) as IItemStack {return get(id,    0,      1, null);}
+  function get(id as string, meta as short                             ) as IItemStack {return get(id, meta,      1, null);}
+  function get(id as string, meta as short, amount as int              ) as IItemStack {return get(id, meta, amount, null);}
+  function get(id as string, meta as short, amount as int, nbt as IData) as IItemStack {
+    val item = itemUtils.getItem(id, meta);
+    if(isNull(item)) return null;
+
+    return isNull(nbt)
+      ? (amount > 1 ? item * amount : item)
+      : (amount > 1 ? item * amount : item).withTag(nbt);
+  }
 
   # Clear Fluid tag on item preserving other tags
   function clearFluid(input as IItemStack) as void  {

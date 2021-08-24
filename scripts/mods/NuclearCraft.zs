@@ -458,7 +458,10 @@ craft.remake(<nuclearcraft:lithium_ion_battery_elite>, ["pretty",
   "M": <ore:solenoidMagnesiumDiboride>, # Magnesium Diboride Solenoid
 });
 
-
-# New crafting ingredient for future usage
-// mods.immersivetechnology.SolarTower.addRecipe(ILiquidStack outputFluid, ILiquidStack inputFluid, int time);
-mods.immersivetechnology.SolarTower.addRecipe(<liquid:sic_vapor> * 1000, <liquid:carbon_dioxide> * 1000, 100);
+if(!isNull(loadedMods["immersivetech"])) {
+	# New crafting ingredient for future usage
+	// mods.immersivetechnology.SolarTower.addRecipe(ILiquidStack outputFluid, ILiquidStack inputFluid, int time);
+	mods.immersivetechnology.SolarTower.addRecipe(<liquid:sic_vapor> * 1000, <liquid:carbon_dioxide> * 1000, 100);
+} else {
+	mods.nuclearcraft.dissolver.addRecipe(<minecraft:coal>, <liquid:carbon_dioxide> * 1000, <liquid:sic_vapor> * 1000);
+}

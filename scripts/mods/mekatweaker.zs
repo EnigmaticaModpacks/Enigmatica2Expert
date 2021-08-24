@@ -1,10 +1,9 @@
-#loader mekatweaker
+#modloaded mekatweaker
 
-import mods.mekatweaker.InfuserType;
-
-/*
-Code and textures from: https://github.com/Redfire75369/Nucleon
-*/
-
-InfuserType.addType("GLOWSTONE");
-InfuserType.addType("ENDER");
+# New Infuser types
+mods.mekatweaker.InfuserType.addTypeObject(<ore:dustGlowstone>,                   "GLOWSTONE", 10);
+mods.mekatweaker.InfuserType.addTypeObject(<ore:blockGlowstone>,                  "GLOWSTONE", 40);
+mods.mekatweaker.InfuserType.addTypeObject(<contenttweaker:compressed_glowstone>, "GLOWSTONE", 80);
+mods.mekatweaker.InfuserType.addTypeObject(<ore:dustEnderPearl>,              "ENDER", 10);
+mods.mekatweaker.InfuserType.addTypeObject(<ore:enderpearl>,                  "ENDER", 10);
+mods.mekatweaker.InfuserType.addTypeObject(<contenttweaker:compressed_ender>, "ENDER", 80);

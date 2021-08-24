@@ -42,16 +42,6 @@ for item in [
 
 <extrautils2:ingredients:13>.addTooltip(format.aqua(desc.local("not_consumed")));
 
-#CheeseArray (yes, hashtag)
-for cheese in [
-	<animania:friesian_cheese_wheel>,
-	<animania:holstein_cheese_wheel>,
-	<animania:jersey_cheese_wheel>,
-	<animania:goat_cheese_wheel>,
-	<animania:sheep_cheese_wheel>
-] as IItemStack[] {
-	desc.jei(cheese, "cheese_in_mold");
-}
 
 desc.jei(<extrautils2:bagofholding>, "removed.instability"); # Bag of Holding
 desc.jei(<enderio:item_material:17>, "enticing_crystal"); # Enticing Crystal
@@ -330,7 +320,6 @@ desc.tooltip(Bucket("corium"), "fluid.corium");
 desc.tooltip(<minecraft:torch>);
 desc.tooltip(<thaumcraft:table_wood>);
 desc.tooltip(<thaumcraft:research_table>);
-desc.tooltip(<openblocks:tank>);
 desc.tooltip(<actuallyadditions:item_crystal_empowered:2>, 'tcon.diamond');
 desc.tooltip(<scalinghealth:heartdust>, 'tcon.speedy');
 desc.tooltip(<botania:specialflower>.withTag({type: "endoflame"}), 'botania.decay1hour');
@@ -402,7 +391,6 @@ for lang, items in {
 		<danknull:dank_null_4>,
 		<danknull:dank_null_5>,
 		<danknull:dank_null_6>,
-		<littletiles:recipeadvanced>,
 	], 
 } as IItemStack[][string] {
 	for item in items {

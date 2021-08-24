@@ -195,22 +195,13 @@ craft.remake(<appliedenergistics2:molecular_assembler>, ["pretty",
 	recipes.remove(<appliedenergistics2:quantum_ring>);
 
 	var controller = itemUtils.getItem("appliedenergistics2:controller");
-	var meConduit = <enderio:item_me_conduit:1>;
-	var anyFluix = <ore:crystalFluix> | <appliedenergistics2:material:12>;
 	
 	if (isNull(controller)) {
 		recipes.addShapedMirrored("Quantum Ring", 
 		<appliedenergistics2:quantum_ring>, 
 		[[<appliedenergistics2:material:9>, <appliedenergistics2:energy_cell>, <appliedenergistics2:material:24>],
-		[<appliedenergistics2:energy_cell>, meConduit, <appliedenergistics2:energy_cell>], 
+		[<appliedenergistics2:energy_cell>, <enderio:item_me_conduit:1>, <appliedenergistics2:energy_cell>], 
 		[<appliedenergistics2:material:22>, <appliedenergistics2:energy_cell>, <appliedenergistics2:material:23>]]);
-		
-		recipes.remove(<rf-capability-adapter:aecapabilityadapter>);
-		recipes.addShaped("Capability Adapter", 
-		<rf-capability-adapter:aecapabilityadapter>, 
-		[[<ore:ingotFakeIron>, anyFluix, <ore:ingotFakeIron>], 
-		[anyFluix, meConduit, anyFluix],
-		[<ore:ingotFakeIron>, anyFluix, <ore:ingotFakeIron>]]);
 	} else {
 		recipes.addShapedMirrored("Quantum Ring", 
 		<appliedenergistics2:quantum_ring>, 
@@ -412,7 +403,7 @@ craft.remake(<appliedenergistics2:crafting_unit>, ["pretty",
 # [ME Storage Bus] from [Resonant Requester][+2]
 recipes.remove(<appliedenergistics2:part:220>);
 recipes.addShaped("ME Storage Bus", <appliedenergistics2:part:220>, [
-	[<thermallogistics:requester:4>],        # Resonant Requester
+	[utils.tryCatch("thermallogistics:requester", 4, <thermaldynamics:retriever:4>)], # Resonant Requester
 	[<actuallyadditions:block_giant_chest>], # Small Storage Crate
 	[<appliedenergistics2:interface>],       # ME Interface
 ]);

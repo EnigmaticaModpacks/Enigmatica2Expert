@@ -290,11 +290,6 @@ for item in pressurePlates {
 	gearTin.remove(<forestry:gear_tin>);
 	gearCopper.remove(<forestry:gear_copper>);
 	gearBronze.remove(<forestry:gear_bronze>);
-	
-# Immersive Tech Salt
-	<ore:itemSalt>.add(<immersivetech:material>);
-	<ore:foodSalt>.add(<immersivetech:material>);
-	<ore:dustSalt>.add(<immersivetech:material>);
 
 # *======= Clearing Unused Blocks =======*
 
@@ -753,9 +748,6 @@ for item in <ore:dustAshes>.items {
 <ore:blockFakeIron> .addItems([<minecraft:iron_block>,<enderio:block_alloy:9>]);
 <ore:nuggetFakeIron>.addItems([<minecraft:iron_nugget>,<enderio:item_alloy_nugget:9>]);
 
-# New OreDict for Questbook
-<ore:eyeOfDragon>.addItems([<eyeofdragons:eye_of_firedragon>, <eyeofdragons:eye_of_icedragon>]);
-
 <ore:ingotSpectre>.add(<randomthings:ingredient:3>);
 
 
@@ -788,17 +780,6 @@ for item in <ore:dustAshes>.items {
 <ore:crushedNetherrack>.add(<exnihilocreatio:block_netherrack_crushed>);
 
 <ore:oreRockCrystal>.add(<astralsorcery:blockcustomore>);
-<ore:pelt>.addItems([
-	<betteranimalsplus:bear_skin_black>,
-	<betteranimalsplus:bear_skin_brown>,
-	<betteranimalsplus:bear_skin_kermode>,
-	<betteranimalsplus:wolf_pelt_arctic>,
-	<betteranimalsplus:wolf_pelt_black>,
-	<betteranimalsplus:wolf_pelt_brown>,
-	<betteranimalsplus:wolf_pelt_red>,
-	<betteranimalsplus:wolf_pelt_snowy>,
-	<betteranimalsplus:wolf_pelt_timber>,
-]);
 
 # Remove useless oredict from redstone
 <ore:alloyBasic>.remove(<minecraft:redstone>);

@@ -1,3 +1,4 @@
+#modloaded morphtool
 
 # Oredict remake
 recipes.remove(<morphtool:tool>);

@@ -145,7 +145,10 @@ val compactDrawerTooltip as ITooltipFunction = function(item) {
 	return sealed(firstItemInList(D(item.tag).get("tile.Drawers.Items")));
 };
 <storagedrawers:compdrawers>.addAdvancedTooltip(compactDrawerTooltip);
-<framedcompactdrawers:framed_compact_drawer>.addAdvancedTooltip(compactDrawerTooltip);
+
+if(!isNull(loadedMods["framedcompactdrawers"])) {
+	itemUtils.getItem("framedcompactdrawers:framed_compact_drawer").addAdvancedTooltip(compactDrawerTooltip);
+}
 
 // Fluid Drawers
 val fluidDrawerTooltip as ITooltipFunction = function(item) {

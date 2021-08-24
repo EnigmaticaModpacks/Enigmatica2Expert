@@ -89,6 +89,7 @@ import crafttweaker.item.IItemStack;
 <iceandfire:myrmex_jungle_shovel>,
 <iceandfire:myrmex_jungle_sword>,
 <iceandfire:silver_ore>,
+<iceandfire:silver_block>,
 
 <iceandfire:dragonbone_sword>,
 <iceandfire:deathworm_yellow_helmet>,

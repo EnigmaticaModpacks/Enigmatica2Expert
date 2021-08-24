@@ -1,4 +1,6 @@
 #loader preinit
+#modloaded treetweaker
+
 import mods.treetweaker.TreeFactory;
 
 //Due to the sheer size of this lad, it can be slow to generate

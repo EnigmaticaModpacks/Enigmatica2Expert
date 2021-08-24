@@ -1,5 +1,6 @@
 #priority 1000
 #modloaded requious
+#ignoreBracketErrors
 
 import mods.requious.Assembly;
 import mods.requious.AssemblyRecipe;
@@ -14,10 +15,12 @@ function add(ass as Assembly, chunk as IItemStack[][IIngredient[]]) {
   for inputs, outputs in chunk {
     val assRec = AssemblyRecipe.create(function(container) {
       for i, output in outputs {
+        if(isNull(output)) continue;
         container.addItemOutput("output" ~ i, output);
       }
     });
     for i, input in inputs {
+      if(isNull(input)) continue;
       assRec.requireItem("input"~i, input);
     }
     ass.addJEIRecipe(assRec);
@@ -55,8 +58,7 @@ function add_infernal_furnace(input as IIngredient, out as WeightedItemStack) {
 // -----------------------------------------------------------------------
 // -----------------------------------------------------------------------
 x = <assembly:liquid_interaction>;
-x.addJEICatalyst(<littletiles:lttransparentcoloredblock:5>);
-x.addJEICatalyst(<littletiles:ltcoloredblock:12>);
+x.addJEICatalyst(<minecraft:lava_bucket>);
 x.setJEIDurationSlot(1,0,"duration", getVisGauge(0,6));
 addInsOuts(x, [[0,0],[2,0]], [[1,1]]);
 
@@ -449,23 +451,26 @@ for input in fertilizers {
 
 // -----------------------------------------------------------------------
 // -----------------------------------------------------------------------
-x = <assembly:xp_bottler>;
-x.addJEICatalyst(<openblocks:xp_bottler>);
-x.setJEIFluidSlot(1, 0, 'liquid_input');
-x.setJEIDurationSlot(2,0,"duration", SlotVisual.arrowRight());
-addInsOuts(x, [[0,0]], [[3,0]]);
+val xp_bottler = itemUtils.getItem("openblocks:xp_bottler");
+if(!isNull(xp_bottler)) {
+  x = <assembly:xp_bottler>;
+  x.addJEICatalyst(xp_bottler);
+  x.setJEIFluidSlot(1, 0, 'liquid_input');
+  x.setJEIDurationSlot(2,0,"duration", SlotVisual.arrowRight());
+  addInsOuts(x, [[0,0]], [[3,0]]);
 
-for fluid in [
-  "essence",
-  "xpjuice",
-  "experience",
-] as string[] {
-  x.addJEIRecipe(AssemblyRecipe.create(function(container) {
-    container.addItemOutput('output0', <minecraft:experience_bottle>);
-  })
-  .requireFluid('liquid_input', game.getLiquid(fluid) * 160)
-  .requireItem("input0", <minecraft:glass_bottle>)
-  );
+  for fluid in [
+    "essence",
+    "xpjuice",
+    "experience",
+  ] as string[] {
+    x.addJEIRecipe(AssemblyRecipe.create(function(container) {
+      container.addItemOutput('output0', <minecraft:experience_bottle>);
+    })
+    .requireFluid('liquid_input', game.getLiquid(fluid) * 160)
+    .requireItem("input0", <minecraft:glass_bottle>)
+    );
+  }
 }
 
 // -----------------------------------------------------------------------

@@ -55,18 +55,6 @@ recipes.addShaped("part_connector_omni_directional_item", connector * 2, [
 	[mono, <integrateddynamics:cable>, mono], 
 	[null, part, null]]);
 
-# [Crafting Interface] from [Chorus Glass][+4]
-craft.remake(<integratedcrafting:part_interface_crafting_item>, ["pretty",
-  "□ ¤ □",
-  "O ■ I",
-  "□ ¤ □"], {
-  "■": <integratedterminals:chorus_glass>,          # Chorus Glass
-  "□": <ore:plateDenseLapis>,                       # Dense Lapis Lazuli Plate
-  "¤": <ore:gearVibrant>,                           # Vibrant Bimetal Gear
-  "I": <integrateddynamics:variable_transformer:1>, # Input Variable Transformer
-  "O": <integrateddynamics:variable_transformer>,   # Output Variable Transformer
-});
-
 # terminal_storage
 recipes.remove(<integratedterminals:part_terminal_storage_item>);
 	recipes.addShaped("part_terminal_storage_item", 
@@ -108,12 +96,12 @@ craft.remake(<integrateddynamics:part_connector_mono_directional_item>, ["pretty
 
 # Alternative for easy stacking 50 batteries
 # [Energy Battery] from [Block of Redstone][+2]
-craft.remake(<integrateddynamics:energy_battery>.withTag({energy: 0, capacity: 5000000}), ["pretty",
+craft.remake(<integrateddynamics:energy_battery>.withTag({energy: 0, capacity: 8000000}), ["pretty",
   "□ ◘ □",
   "□ ♥ □",
   "□ ◘ □"], {
   "♥": <additionalcompression:dustredstone_compressed:1>,
-  "□": scripts.mods.preston.compressor.getCompressed(<integrateddynamics:crystalized_menril_block>, 1), # Block of Crystalized Menril
+  "□": utils.tryCatch(utils.get("openblocks:tank", 0, 1, {tank: {FluidName: "menrilresin", Amount: 24000}}), Bucket("menrilresin")),
   "◘": <integrateddynamics:crystalized_chorus_block>, # Block of Crystalized Chorus
 });
 

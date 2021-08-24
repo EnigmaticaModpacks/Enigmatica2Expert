@@ -159,6 +159,11 @@ utils.rh(<ic2:dust:36>);
 utils.rh(<ic2:nuclear:6>);
 utils.rh(<ic2:nuclear:8>);
 utils.rh(<ic2:nuclear:9>);
+utils.rh(<ic2:resource:8>); # Steel blocks
+utils.rh(<ic2:resource:6>); # Copper blocks
+utils.rh(<ic2:resource:9>); # Tin blocks
+utils.rh(<ic2:resource:15>); # Silver blocks
+utils.rh(<ic2:resource:7>); # Lead blocks
 
 # Iridium TiC Compat
 	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:iridium> * 144, <ic2:misc_resource:1>, 500);
@@ -291,18 +296,6 @@ for out, inp in {
 } as IIngredient[IItemStack] {
 	scripts.wrap.ic2.MetalFormer.addRollingRecipe(out, inp);
 }
-
-# Harder to make "switch" connections a challenge
-# [Glass Fiber Wire Relay*4] from [Pure Certus Quartz Crystal][+3]
-craft.remake(<industrialwires:ic2_connector:9> * 4, ["pretty",
-  "  n  ",
-  "I ⌃ I",
-  "I ■ I"], {
-  "■": <mekanism:plasticblock:*>, # Black Plastic Block
-  "⌃": <ore:crystalPureCertusQuartz>, # Pure Certus Quartz Crystal
-  "I": <immersiveengineering:stone_decoration:8>, # Insulating Glass
-  "n": <ore:itemInsulatedGlassCable>, # Glass Fibre Cable
-});
 
 # Remake Dust compession recipes
 function tinyDustFix(a as IItemStack, b as IItemStack) as void {

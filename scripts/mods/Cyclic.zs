@@ -149,7 +149,7 @@ recipes.addShaped("Cyclic Shears", <cyclicmagic:shears_obsidian>, [
 # Harder Sleeping mat
 recipes.remove(<cyclicmagic:sleeping_mat>);
 recipes.addShapeless("Cyclic Sleep Mat", <cyclicmagic:sleeping_mat>, [
-	<travelersbackpack:sleeping_bag_bottom>, <ore:leather>]);
+	utils.tryCatch("travelersbackpack:sleeping_bag_bottom", <minecraft:rabbit_hide>), <ore:leather>]);
 
 # Lower durab of glowes (default is 6000)
 <cyclicmagic:glove_climb>.maxDamage = 3000;
@@ -199,7 +199,7 @@ craft.remake(<cyclicmagic:fan>, ["pretty",
   "  B  ",
   "L H L",
   "R R R"], {
-  "R": <sonarcore:reinforcedstoneblock>, # Reinforced Stone
+  "R": <extrautils2:decorativesolidwood>,# Magical Planks
   "B": <randomthings:ingredient:13>,     # Blackout Powder
   "H": <animania:block_hamster_wheel>,   # Hamster Wheel
   "L": <rats:little_black_squash_balls>  # Little Black Squash Balls
@@ -211,7 +211,7 @@ craft.remake(<cyclicmagic:block_vacuum>, ["pretty",
   "R P R",
   "R ▲ R"], {
   "P": <bibliocraft:enchantedplate:*>,   # Print Press Plate
-  "R": <sonarcore:reinforcedstoneblock>, # Reinforced Stone
+  "R": <extrautils2:decorativesolidwood>,# Magical Planks
   "▲": <ore:dustSkyStone>,               # Sky Stone Dust
   "B": <randomthings:ingredient:13>      # Blackout Powder
 });
@@ -340,7 +340,7 @@ craft.remake(<cyclicmagic:charm_air>, ["pretty",
   "B I B"], {
   "B": <actuallyadditions:item_misc:15>, # Bat's Wing
   "E": <cyclicmagic:ender_pearl_reuse>.anyDamage(),  # Ender Orb
-  "G": <openblocks:generic>,             # Glider Wing
+  "G": utils.tryCatch("openblocks:generic", <enderio:item_material:6>), # Glider Wing
   "I": <twilightforest:ice_bomb>         # Ice Bomb
 });
 
@@ -563,25 +563,8 @@ Hydrator.addRecipe(<minecraft:ice>, [<thermalfoundation:material:1025>], 1000);
 Hydrator.addRecipe(<biomesoplenty:mud>, [<minecraft:dirt>], 1000);
 
 # Remove terracotta hydrating to prevent Infinity Furnace dupe
-for item in [
-  <minecraft:white_glazed_terracotta>,
-  <minecraft:orange_glazed_terracotta>,
-  <minecraft:magenta_glazed_terracotta>,
-  <minecraft:light_blue_glazed_terracotta>,
-  <minecraft:yellow_glazed_terracotta>,
-  <minecraft:lime_glazed_terracotta>,
-  <minecraft:pink_glazed_terracotta>,
-  <minecraft:gray_glazed_terracotta>,
-  <minecraft:silver_glazed_terracotta>,
-  <minecraft:cyan_glazed_terracotta>,
-  <minecraft:purple_glazed_terracotta>,
-  <minecraft:blue_glazed_terracotta>,
-  <minecraft:brown_glazed_terracotta>,
-  <minecraft:green_glazed_terracotta>,
-  <minecraft:red_glazed_terracotta>,
-  <minecraft:black_glazed_terracotta>,
-] as IItemStack[] {
-  Hydrator.removeShapedRecipe(item);
+for i in 0 .. 16 {
+  Hydrator.removeShapedRecipe(itemUtils.getItem("minecraft:stained_hardened_clay", i));
 }
 
 /*

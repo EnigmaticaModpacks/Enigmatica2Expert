@@ -117,7 +117,8 @@ function addTieredRecipe(
 	output as IItemStack, 
 	ingrs as IIngredient[], 
 	constelation as string
-) {
+) as void {
+	if(isNull(output)) return;
 	val tier = curr_tier;
 
 	recipes.remove(output);
@@ -209,7 +210,7 @@ addTieredRecipe(<mysticalagriculture:copper_seeds>,         [<ore:blockCopper>,<
 addTieredRecipe(<mysticalagriculture:mystical_flower_seeds>,[<ore:manaDiamond>, <ore:manaPearl>, <mysticalagriculture:crafting:10>], null);
 addTieredRecipe(<mysticalagriculture:apatite_seeds>,        [<ore:blockApatite>,<ore:runeWaterB>], null);
 addTieredRecipe(<mysticalagriculture:coal_seeds>,           [<ore:blockCoal>,<ore:runeEarthB>], null);
-addTieredRecipe(<mysticalcreations:creosolite_seeds>,       [<openblocks:tank>.withTag({tank: {FluidName: "creosote", Amount: 16000}}),<ore:runeEarthB>], null);
+addTieredRecipe(itemUtils.getItem("mysticalcreations:creosolite_seeds"), [utils.tryCatch(utils.get("openblocks:tank", 0, 1, {tank: {FluidName: "creosote", Amount: 24000}}), Bucket("creosote")),<ore:runeEarthB>], null);
 addTieredRecipe(<mysticalagriculture:tin_seeds> ,           [<ore:blockTin> ,<ore:runeSummerB> ], null);
 addTieredRecipe(<mysticalagriculture:sky_stone_seeds> ,     [<appliedenergistics2:material:45>, <ore:runeSpringB>] , null);
 addTieredRecipe(<mysticalagriculture:nether_seeds> ,        [<ore:blockNetherWart> ,<ore:runeAutumnB>], null);
@@ -232,7 +233,7 @@ addTieredRecipe(<mysticalagriculture:knightslime_seeds> ,   [<ore:blockKnightsli
 addTieredRecipe(<mysticalagriculture:steeleaf_seeds> ,      [<twilightforest:block_storage:2>, <ore:runeSpringB>] , null);
 addTieredRecipe(<mysticalagriculture:ironwood_seeds> ,      [<twilightforest:block_storage>, <ore:runeSummerB>] , null);
 addTieredRecipe(<mysticalagriculture:black_quartz_seeds> ,  [<ore:blockQuartzBlack> , <ore:runeAutumnB>], null);
-addTieredRecipe(<mysticalcreations:cheese_seeds>,           [<ore:cheeseWheels> ,<ore:runeSpringB>], null);
+addTieredRecipe(itemUtils.getItem("mysticalcreations:cheese_seeds"), [<ore:cheeseWheels> ,<ore:runeSpringB>], null);
 
 # *======= Seeds Tier 4 =======*
 curr_tier = 4;
@@ -284,7 +285,7 @@ L['☼'] = <ore:blockNetherStar>;
 addTieredRecipe(<mysticalagradditions:awakened_draconium_seeds>, [<ore:blockDraconiumAwakened>  , <astralsorcery:itemcoloredlens:2>, <draconicevolution:wyvern_energy_core>] ,"mineralis");
 addTieredRecipe(<mysticalagradditions:nether_star_seeds>       , [<ore:blockNetherStar>         , <astralsorcery:itemcoloredlens:2>], "aevitas");
 addTieredRecipe(<mysticalagradditions:dragon_egg_seeds>        , [<mysticalagradditions:stuff:3>], "aevitas");
-addTieredRecipe(<mysticalcreations:ultimate_seeds>             , [<ore:blockUltimate>           ], "horologium");
+addTieredRecipe(itemUtils.getItem("mysticalcreations:ultimate_seeds") , [<ore:blockUltimate>           ], "horologium");
 
 
 # *======= Remove & Hide =======*
@@ -315,20 +316,6 @@ for item in itemsToRemoveAndHide {
 # Changed Amber Essence to the more sensible amber
   recipes.removeByRecipeName("mysticalagriculture:gemamber");
   recipes.addShaped("Mystical Agriculture Amber", <thaumcraft:amber> * 6, [[<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>],[<mysticalagriculture:amber_essence>,null,<mysticalagriculture:amber_essence>],[<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>]]);
-
-# Mystical Creations Recipes
-recipes.addShaped(<extendedcrafting:material:33>*3, [[<mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>],[<mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>], [<mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>, <mysticalcreations:ultimate_essence>]]);
-recipes.addShaped(<animania:sheep_cheese_wheel>, [[<mysticalcreations:cheese_essence>, null, <mysticalcreations:cheese_essence>],[null, <mysticalcreations:cheese_essence>, null], [null, null, null]]);
-recipes.addShaped(<animania:goat_cheese_wheel>, [[null, <mysticalcreations:cheese_essence>, null],[null, <mysticalcreations:cheese_essence>, null], [null, <mysticalcreations:cheese_essence>, null]]);
-recipes.addShaped(<animania:jersey_cheese_wheel>, [[null, null, null],[<mysticalcreations:cheese_essence>, <mysticalcreations:cheese_essence>, <mysticalcreations:cheese_essence>], [null, null, null]]);
-recipes.addShaped(<animania:holstein_cheese_wheel>, [[null, null, <mysticalcreations:cheese_essence>],[null, <mysticalcreations:cheese_essence>, null], [<mysticalcreations:cheese_essence>, null, null]]);
-recipes.addShaped(<animania:friesian_cheese_wheel>, [[<mysticalcreations:cheese_essence>, null, null],[null, <mysticalcreations:cheese_essence>, null], [null, null, <mysticalcreations:cheese_essence>]]);
-recipes.addShaped(Bucket("creosote"), [[null, <mysticalcreations:creosolite_essence>, null],[<mysticalcreations:creosolite_essence>, <minecraft:bucket>.noReturn(), <mysticalcreations:creosolite_essence>], [null, <mysticalcreations:creosolite_essence>, null]]);
-
-# Add Mystical Creations processing in Insolator
-scripts.process.grow(<mysticalcreations:creosolite_seeds>, <mysticalcreations:creosolite_essence> * 9, "No exceptions", <mysticalcreations:creosolite_seeds>, 1);
-scripts.process.grow(<mysticalcreations:cheese_seeds>, 		<mysticalcreations:cheese_essence> * 9,      "No exceptions", <mysticalcreations:cheese_seeds>, 1);
-scripts.process.grow(<mysticalcreations:ultimate_seeds>,   <mysticalcreations:ultimate_essence> * 9,   "only: Hydroponics", <mysticalcreations:ultimate_seeds>, 1);
 
 # Recycling can
 scripts.process.recycleMetal(<mysticalagriculture:watering_can:0>, <mysticalagriculture:crafting:33> * 4, null, null);
@@ -582,9 +569,6 @@ scripts.process.solution(
 	[<liquid:base_essence> * 16],
 	[0.5, 0.05, 0.05, 3300], "only: highoven"
 );
-
-# Defined with portal spread
-recipes.removeShaped(<mysticalagriculture:soulstone>);
 
 # [Base Crafting Seed] Harder to encourage Villager Trades
 craft.remake(<mysticalagriculture:crafting:16>, ["pretty",

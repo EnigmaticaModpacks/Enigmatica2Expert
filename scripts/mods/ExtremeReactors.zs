@@ -59,14 +59,14 @@ craft.remake(<bigreactors:reactorfuelrod>, ["pretty",
 	recipes.addShapedMirrored("ER Reactor Control Rod", 
 	<bigreactors:reactorcontrolrod>, 
 	[[<bigreactors:reactorcasing>, <ore:circuitUltimate>, <bigreactors:reactorcasing>],
-	[<bigreactors:reactorcasing>, <rftoolscontrol:cpu_core_500>, <bigreactors:reactorcasing>], 
+	[<bigreactors:reactorcasing>, utils.tryCatch("rftoolscontrol:cpu_core_500", <ore:circuitUltimate>.firstItem), <bigreactors:reactorcasing>], 
 	[<bigreactors:reactorcasing>, <ore:dustRedstone>, <bigreactors:reactorcasing>]]);
 
 # Turbine Controller
 	recipes.remove(<bigreactors:turbinecontroller>);
 	recipes.addShapedMirrored("ER Turbine Controller", 
 	<bigreactors:turbinecontroller>, 
-	[[<bigreactors:turbinehousing>, <rftoolscontrol:cpu_core_2000>, <bigreactors:turbinehousing>],
+	[[<bigreactors:turbinehousing>, utils.tryCatch("rftoolscontrol:cpu_core_2000", <ore:circuitUltimate>.firstItem), <bigreactors:turbinehousing>],
 	[<bigreactors:turbinehousing>, <ic2:te:18>, <bigreactors:turbinehousing>], 
 	[<bigreactors:turbinehousing>, <ic2:crafting:36>, <bigreactors:turbinehousing>]]);
 
