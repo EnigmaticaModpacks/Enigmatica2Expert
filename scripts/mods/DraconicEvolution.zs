@@ -20,8 +20,8 @@ import scripts.craft.grid.Grid;
 	recipes.remove(<draconicevolution:crystal_binder>);
 	recipes.addShapedMirrored("DE Crystal Binder", 
 	<draconicevolution:crystal_binder>, 
-	[[null, gemDiamondRat, <ore:ingotCobalt>],
-	[null, <ore:rodBlaze>, gemDiamondRat], 
+	[[null, <ore:gemDiamondRat>, <ore:ingotCobalt>],
+	[null, <ore:rodBlaze>, <ore:gemDiamondRat>], 
 	[<actuallyadditions:item_laser_wrench>, null, null]]);
 
 # Wyvern Tools

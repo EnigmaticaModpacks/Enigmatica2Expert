@@ -13,7 +13,7 @@ import crafttweaker.item.ITooltipFunction;
 	<storagedrawers:controller>, 
 	[[<ic2:resource:11>, <ic2:resource:11>, <ic2:resource:11>],
 	[<immersiveengineering:metal_decoration0:3>, <ore:drawerBasic>, <immersiveengineering:metal_decoration0:3>], 
-	[<appliedenergistics2:smooth_sky_stone_block>, gemDiamondRat, <appliedenergistics2:smooth_sky_stone_block>]]);
+	[<appliedenergistics2:smooth_sky_stone_block>, <ore:gemDiamondRat>, <appliedenergistics2:smooth_sky_stone_block>]]);
 
 # Drawer 1x1
 	recipes.addShapedMirrored("Drawer 1x1",

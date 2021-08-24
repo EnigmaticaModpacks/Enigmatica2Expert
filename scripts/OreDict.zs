@@ -843,3 +843,7 @@ for item in <ore:dustAshes>.items {
 
 <ore:ingotGlitch>.add(<deepmoblearning:glitch_infused_ingot>);
 <ore:blockGlitch>.add(<deepmoblearning:infused_ingot_block>);
+
+# Rat Diamond
+<ore:gemDiamondRat>.add(<rats:rat_diamond>);
+<ore:gemDiamondRat>.addItems(<ore:gemDiamond>.items);

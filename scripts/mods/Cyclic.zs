@@ -96,7 +96,7 @@ craft.remake(<cyclicmagic:block_forester>, ["pretty",
 	recipes.remove(<cyclicmagic:block_anvil>);
 	recipes.addShaped("Diamond Anvil", 
 	<cyclicmagic:block_anvil>, 
-	[[gemDiamondRat, <ore:plateDenseObsidian>, gemDiamondRat],
+	[[<ore:gemDiamondRat>, <ore:plateDenseObsidian>, <ore:gemDiamondRat>],
 	[<ore:dustRedstone>, <actuallyadditions:block_item_repairer>, <ore:dustRedstone>], 
 	[<ore:blockFakeIron>, <ore:blockFakeIron>, <ore:blockFakeIron>]]);
 	
@@ -128,7 +128,7 @@ recipes.remove(<cyclicmagic:tool_swap>);
 recipes.remove(<cyclicmagic:cyclic_wand_build>);
 recipes.addShaped(<cyclicmagic:tool_swap>, [[null, <ore:dustDimensional>, <appliedenergistics2:material:10>],[null, <redstonearsenal:material:192>, <ore:dustDimensional>], [<enderio:block_reinforced_obsidian>, null, null]]);
 recipes.addShaped(<cyclicmagic:tool_swap_match>, [[null, <ore:dustDimensional>, <randomthings:ingredient:9>],[null, <redstonearsenal:material:192>, <ore:dustDimensional>], [<enderio:block_reinforced_obsidian>, null, null]]);
-recipes.addShaped(<cyclicmagic:cyclic_wand_build>, [[null, <ore:dustDimensional>, gemDiamondRat],[null, <redstonearsenal:material:192>, <ore:dustDimensional>], [<ore:blockBone>, null, null]]);
+recipes.addShaped(<cyclicmagic:cyclic_wand_build>, [[null, <ore:dustDimensional>, <ore:gemDiamondRat>],[null, <redstonearsenal:material:192>, <ore:dustDimensional>], [<ore:blockBone>, null, null]]);
 
 
 remakeEx(<cyclicmagic:battery>, [

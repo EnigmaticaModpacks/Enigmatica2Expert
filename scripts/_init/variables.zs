@@ -13,5 +13,3 @@ import crafttweaker.data.IData;
 # Global recipe ingredients
 #
 # ######################################################################
-
-global gemDiamondRat as IIngredient = <ore:gemDiamond> | <rats:rat_diamond>;

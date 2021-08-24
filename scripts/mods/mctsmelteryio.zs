@@ -12,7 +12,7 @@ remakeEx(<mctsmelteryio:upgrade:0>, [[<minecraft:dye:4>, <minecraft:dye:4>, <min
 remakeEx(<mctsmelteryio:upgrade:1>, [[<ore:ingotCopper>, <ore:chest>, <ore:ingotCopper>], [<ore:chest>, <mctsmelteryio:upgrade>, <ore:chest>], [<ore:ingotCopper>, <ore:chest>, <ore:ingotCopper>]]);
 remakeEx(<mctsmelteryio:upgrade:2>, [[<ore:ingotAluminum>, <ore:ingotFakeIron>, <ore:ingotAluminum>], [<ore:ingotFakeIron>, <mctsmelteryio:upgrade:1>, <ore:ingotFakeIron>], [<ore:ingotAluminum>, <ore:ingotFakeIron>, <ore:ingotAluminum>]]);
 remakeEx(<mctsmelteryio:upgrade:3>, [[<ore:nuggetKnightslime>, <ore:ingotGold>, <ore:nuggetKnightslime>], [<ore:ingotGold>, <mctsmelteryio:upgrade:2>, <ore:ingotGold>], [<ore:nuggetKnightslime>, <ore:ingotGold>, <ore:nuggetKnightslime>]]);
-remakeEx(<mctsmelteryio:upgrade:4>, [[<ore:nuggetManyullyn>, gemDiamondRat, <ore:nuggetManyullyn>], [gemDiamondRat, <mctsmelteryio:upgrade:3>, gemDiamondRat], [<ore:nuggetManyullyn>, gemDiamondRat, <ore:nuggetManyullyn>]]);
+remakeEx(<mctsmelteryio:upgrade:4>, [[<ore:nuggetManyullyn>, <ore:gemDiamondRat>, <ore:nuggetManyullyn>], [<ore:gemDiamondRat>, <mctsmelteryio:upgrade:3>, <ore:gemDiamondRat>], [<ore:nuggetManyullyn>, <ore:gemDiamondRat>, <ore:nuggetManyullyn>]]);
 
 # Speed upgrade
 remakeEx(<mctsmelteryio:upgrade:6>, [

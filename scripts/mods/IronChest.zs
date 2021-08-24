@@ -24,7 +24,7 @@ import crafttweaker.item.IItemStack as IItemStack;
 	recipes.addShaped("Diamond Chest", 
 	<ironchest:iron_chest:2>, 
 	[[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>],
-	[gemDiamondRat, <ironchest:iron_chest:1>, gemDiamondRat], 
+	[<ore:gemDiamondRat>, <ironchest:iron_chest:1>, <ore:gemDiamondRat>], 
 	[<ore:blockGlass>, <ore:gearDiamond>, <ore:blockGlass>]]);
 
 # Wood -> Iron
@@ -48,7 +48,7 @@ import crafttweaker.item.IItemStack as IItemStack;
 	recipes.addShaped("GoldToDiamond", 
 	<ironchest:gold_diamond_chest_upgrade>, 
 	[[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>],
-	[gemDiamondRat, <ore:plateGold>, gemDiamondRat], 
+	[<ore:gemDiamondRat>, <ore:plateGold>, <ore:gemDiamondRat>], 
 	[<ore:blockGlass>, <ore:gearDiamond>, <ore:blockGlass>]]);
 
 # Shulker Wood -> Iron
@@ -72,7 +72,7 @@ import crafttweaker.item.IItemStack as IItemStack;
 	recipes.addShaped("ShulkerGoldToDiamond", 
 	<ironchest:gold_diamond_shulker_upgrade>, 
 	[[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>],
-	[gemDiamondRat, <ore:plateDenseGold>, gemDiamondRat], 
+	[<ore:gemDiamondRat>, <ore:plateDenseGold>, <ore:gemDiamondRat>], 
 	[<ore:blockGlass>, <ore:gearDiamond>, <ore:blockGlass>]]);
 
 # Shulker Diamond -> Crystal

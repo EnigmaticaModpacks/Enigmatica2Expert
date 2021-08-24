@@ -25,8 +25,8 @@
 
 # Khopesh
 remake("animus_kama_diamond", <animus:kama_diamond>, [
-	[null, gemDiamondRat, null], 
-	[gemDiamondRat, null, <ore:blockDiamond>], 
+	[null, <ore:gemDiamondRat>, null], 
+	[<ore:gemDiamondRat>, null, <ore:blockDiamond>], 
 	[null, null, <forestry:oak_stick>]
 ]);
 

@@ -38,7 +38,7 @@
 # Get rid of recipe that uses every weapon in game
 remakeEx(<plethora:module:1>, [
 	[<ore:ingotFakeIron>, <ore:ingotFakeIron>, <ore:ingotFakeIron>],
-	[<ore:blockGlass>, gemDiamondRat, <actuallyadditions:block_laser_relay>],
+	[<ore:blockGlass>, <ore:gemDiamondRat>, <actuallyadditions:block_laser_relay>],
 	[null, null, <ore:ingotFakeIron>]]);
 
 # Add missed items to JEI

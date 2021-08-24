@@ -40,7 +40,7 @@ craft.remake(<enderio:block_impulse_hopper>, ["pretty",
 # Painting Machine
 	recipes.remove(<enderio:block_painter>);
 	recipes.addShaped("Ender IO Painting Machine", <enderio:block_painter>, 
-	[[<ore:gemQuartz>, gemDiamondRat, <ore:gemQuartz>], 
+	[[<ore:gemQuartz>, <ore:gemDiamondRat>, <ore:gemQuartz>], 
 	[<ore:gearIronInfinity>, <nuclearcraft:part:10>, <ore:gearIronInfinity>], 
 	[<ore:ingotElectricalSteel>, <ore:ingotElectricalSteel>, <ore:ingotElectricalSteel>]]);
 
