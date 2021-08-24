@@ -734,3 +734,20 @@ function addGardenClocheFluid(fluid as ILiquidStack, amount as int) as void {
   );
 }
 
+
+// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+x = <assembly:typewriter>;
+x.addJEICatalyst(<bibliocraft:typewriter>);
+x.addJEICatalyst(<bibliocraft:desk>);
+x.setJEIDurationSlot(4,1,"duration", SlotVisual.arrowRight());
+addInsOuts(x, [[2,0],[0,1],[1,1],[2,1],[1,2],[2,2]], [[6,1]]);
+
+add(x, {[
+  <minecraft:name_tag:*>,
+  <minecraft:paper>,
+  <bibliocraft:typewriter:*>,
+  Soul('minecraft:cow'),
+  <bibliocraft:desk:*>,
+  <bibliocraft:seat:*>,
+] : [scripts._init.variables.cowWrittenBook]});
