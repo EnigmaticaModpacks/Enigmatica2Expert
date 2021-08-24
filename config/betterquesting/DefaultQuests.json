@@ -43260,7 +43260,7 @@
           "viaPlayer:1": 0,
           "index:3": 1,
           "title:8": "bq_standard.reward.command",
-          "command:8": "gamestage silentadd VAR_NAME armor_knightslime"
+          "command:8": "gamestage silentadd VAR_NAME armor_glitch_infused"
         }
       }
     },
