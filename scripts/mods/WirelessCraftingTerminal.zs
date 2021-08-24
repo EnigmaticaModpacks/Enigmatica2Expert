@@ -14,6 +14,6 @@ import crafttweaker.item.IItemStack as IItemStack;
 	recipes.addShaped("Infinity Booster Card", 
 	<ae2wtlib:infinity_booster_card>, 
 	[[<appliedenergistics2:quantum_link>, <appliedenergistics2:material:47>, <appliedenergistics2:quantum_link>],
-	[<bigreactors:mineralanglesite>, <extracells:storage.component:1>, <bigreactors:mineralanglesite>], 
+	[<bigreactors:mineralanglesite>, <aeadditions:storage.component:1>, <bigreactors:mineralanglesite>], 
 	[<appliedenergistics2:quantum_link>, <appliedenergistics2:material:47>, <appliedenergistics2:quantum_link>]]);
 

@@ -24,7 +24,7 @@ import crafttweaker.item.IItemStack as IItemStack;
 	recipes.addShaped("Mutagen Tank", 
 	<gendustry:mutagen_tank>, 
 	[[<ore:plateTin>, <ore:blockGlass>, <ore:plateTin>],
-	[<ore:plateTin>, <extracells:certustank>, <ore:plateTin>], 
+	[<ore:plateTin>, <aeadditions:certustank>, <ore:plateTin>], 
 	[<ore:plateTin>, <ore:blockGlass>, <ore:plateTin>]]);
 
 # Upgrade Frame

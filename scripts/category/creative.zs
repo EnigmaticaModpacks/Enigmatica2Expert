@@ -88,7 +88,7 @@ var list = {
 	"Ж": <draconicevolution:draconium_capacitor:1>,
 	"☑": <threng:material:14>, # Speculative Processor
 	"☠": <extendedcrafting:material:13>,
-	"ⱋ": <extracells:storage.component:3>,
+	"ⱋ": <aeadditions:storage.component:3>,
 	"☒": <extrautils2:compressedcobblestone:7>,
 	"◱": <extrautils2:decorativesolid:3>,
 	"⩉": <extrautils2:drum:3>,

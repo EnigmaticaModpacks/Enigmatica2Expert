@@ -32,7 +32,7 @@ import scripts.craft.grid.Grid;
 		[<ironchest:iron_chest:2>, <ironchest:iron_chest:2>, <ironchest:iron_chest:2>]]);
 
     if(!isNull(input)) {
-      recipes.addShapeless("Shapeless - "~output.displayName, output, [<extracells:storage.casing>, input]);
+      recipes.addShapeless("Shapeless - "~output.displayName, output, [<aeadditions:storage.casing>, input]);
 		}
 	}
 
@@ -43,15 +43,15 @@ import scripts.craft.grid.Grid;
 		[<appliedenergistics2:material:8>, input, <appliedenergistics2:material:8>], 
 		[<ore:plateGold>, <ironchest:iron_chest:1>, <ore:plateGold>]]);
     if(!isNull(input)) {
-      recipes.addShapeless("Shapeless - "~output.displayName, output, [<extracells:storage.casing:2>, input]);
+      recipes.addShapeless("Shapeless - "~output.displayName, output, [<aeadditions:storage.casing:2>, input]);
 		}
 	}
 
 # ---=== Storage Housings ===---
 
   newCellRecipe(null, <appliedenergistics2:material:39>);
-  newAdvCellRecipe(null, <extracells:storage.casing>);
-  newGasCellRecipe(null, <extracells:storage.casing:2>);
+  newAdvCellRecipe(null, <aeadditions:storage.casing>);
+  newGasCellRecipe(null, <aeadditions:storage.casing:2>);
 
 # ---=== Basic Cells ===---
   val cellRecipes = {
@@ -80,42 +80,42 @@ import scripts.craft.grid.Grid;
 
 # ---=== Advanced Cells ===---
   for i in 0 .. 4 {
-    newAdvCellRecipe(<extracells:storage.component>.definition.makeStack(i), <extracells:storage.physical>.definition.makeStack(i));
+    newAdvCellRecipe(<aeadditions:storage.component>.definition.makeStack(i), <aeadditions:storage.physical>.definition.makeStack(i));
   }
 
 # ---=== Gas Cells ===---
   for i in 0 .. 7 {
-    newGasCellRecipe(<extracells:storage.component>.definition.makeStack(i+11), <extracells:storage.gas>.definition.makeStack(i));
+    newGasCellRecipe(<aeadditions:storage.component>.definition.makeStack(i+11), <aeadditions:storage.gas>.definition.makeStack(i));
   }
 
 # ---=== High Tier Storage Components ===---
-	recipes.remove(<extracells:storage.component>);
+	recipes.remove(<aeadditions:storage.component>);
 	recipes.addShapedMirrored("AE2 Storage Components 256k", 
-	<extracells:storage.component>, 
+	<aeadditions:storage.component>, 
 	[[<ore:dustEnder>, <appliedenergistics2:material:24>, <ore:dustEnder>],
 	[<appliedenergistics2:material:38>, <appliedenergistics2:material:22>, <appliedenergistics2:material:38>], 
 	[<ore:dustEnder>, <appliedenergistics2:material:38>, <ore:dustEnder>]]);
 
-	recipes.remove(<extracells:storage.component:1>);
+	recipes.remove(<aeadditions:storage.component:1>);
 	recipes.addShapedMirrored("AE2 Storage Components 1024k", 
-	<extracells:storage.component:1>, 
+	<aeadditions:storage.component:1>, 
 	[[<ore:dustEnder>, <appliedenergistics2:material:24>, <ore:dustEnder>],
-	[<extracells:storage.component>, <appliedenergistics2:material:22>, <extracells:storage.component>], 
-	[<ore:dustEnder>, <extracells:storage.component>, <ore:dustEnder>]]);
+	[<aeadditions:storage.component>, <appliedenergistics2:material:22>, <aeadditions:storage.component>], 
+	[<ore:dustEnder>, <aeadditions:storage.component>, <ore:dustEnder>]]);
 
-	recipes.remove(<extracells:storage.component:2>);
+	recipes.remove(<aeadditions:storage.component:2>);
 	recipes.addShapedMirrored("AE2 Storage Components 4096k", 
-	<extracells:storage.component:2>, 
+	<aeadditions:storage.component:2>, 
 	[[<ore:dustEnder>, <appliedenergistics2:material:24>, <ore:dustEnder>],
-	[<extracells:storage.component:1>, <appliedenergistics2:material:22>, <extracells:storage.component:1>], 
-	[<ore:dustEnder>, <extracells:storage.component:1>, <ore:dustEnder>]]);
+	[<aeadditions:storage.component:1>, <appliedenergistics2:material:22>, <aeadditions:storage.component:1>], 
+	[<ore:dustEnder>, <aeadditions:storage.component:1>, <ore:dustEnder>]]);
 
-	recipes.remove(<extracells:storage.component:3>);
+	recipes.remove(<aeadditions:storage.component:3>);
 	recipes.addShapedMirrored("AE2 Storage Components 16384k", 
-	<extracells:storage.component:3>, 
+	<aeadditions:storage.component:3>, 
 	[[<ore:dustEnder>, <appliedenergistics2:material:24>, <ore:dustEnder>],
-	[<extracells:storage.component:2>, <appliedenergistics2:material:22>, <extracells:storage.component:2>], 
-	[<ore:dustEnder>, <extracells:storage.component:2>, <ore:dustEnder>]]);
+	[<aeadditions:storage.component:2>, <appliedenergistics2:material:22>, <aeadditions:storage.component:2>], 
+	[<ore:dustEnder>, <aeadditions:storage.component:2>, <ore:dustEnder>]]);
 	
 # Quantum Link Chamber
 	recipes.remove(<appliedenergistics2:quantum_link>);
@@ -418,7 +418,7 @@ recipes.addShaped("ME Storage Bus", <appliedenergistics2:part:220>, [
 ]);
 
 # [Certus Quartz Tank] from [Tank][+1]
-craft.reshapeless(<extracells:certustank>, 'ABB', {
+craft.reshapeless(<aeadditions:certustank>, 'ABB', {
   "A": <enderio:block_omni_reservoir>,                  # Tank
   "B": <appliedenergistics2:quartz_glass>, # Quartz Glass
 });
