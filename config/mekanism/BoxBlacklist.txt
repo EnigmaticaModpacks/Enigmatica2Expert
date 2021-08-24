@@ -58,3 +58,4 @@ environmentaltech:nano_cont_personal_4 0
 environmentaltech:nano_cont_personal_5 0
 environmentaltech:nano_cont_personal_6 0
 cookingforblockheads:fridge 0
+bedrockores:bedrock_ore 0
