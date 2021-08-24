@@ -43,7 +43,7 @@ craft.remake(<integrateddynamics:mechanical_squeezer>, ["pretty",
 var connector = <integrateddynamics:part_connector_omni_directional_item>;
 var part = <integrateddynamics:logic_director>;
 var mono = <integrateddynamics:part_connector_mono_directional_item>;
-recipes.remove(connector);
+recipes.removeShaped(connector);
 
 recipes.addShaped("part_connector_omni_directional_item_11", connector * 3, [
 	[part, <enderio:block_transceiver>, part], 

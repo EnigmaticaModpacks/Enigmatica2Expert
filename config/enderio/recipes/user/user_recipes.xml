@@ -117,6 +117,19 @@
       <output name="fluxnetworks:fluxcore" amount="32"/>
     </sagmilling>
   </recipe>
+  <recipe name="Sagmill: Coal" required="true">
+    <sagmilling energy="2400">
+      <input name="minecraft:coal:0" />
+      <output name="dustCoal" />
+      <output name="dustSulfur" chance="0.1" required="false" />
+    </sagmilling>
+  </recipe>
+  <recipe name="Quartz Dust">
+    <sagmilling bonus="chance_only" energy="2400">
+      <input name="gemQuartz" />
+      <output name="POWDER_QUARTZ" />
+    </sagmilling>
+  </recipe>
   <recipe name="Sagmill: Coke Dust" required="true">
     <sagmilling energy="4000">
       <input name="immersiveengineering:material:6"/>

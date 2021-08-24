@@ -194,7 +194,7 @@ craft.reshapeless(<mekanismgenerators:solarpanel>, "□▬A", {
 	<mekanism:machineblock:4>, 
 	[[<ore:alloyUltimate>, <ore:circuitUltimate>, <ore:alloyUltimate>],
 	[<thermalexpansion:frame>, <mekanism:robit>.anyDamage(), <thermalexpansion:frame>], 
-	[<mekanism:machineblock:11>, <computercraft:computer:16384>, <mekanism:machineblock:11>]]);
+	[<mekanism:machineblock:11>, <computercraft:computer:16384>.withTag({})|<computercraft:computer:16384>, <mekanism:machineblock:11>]]);
 
 # Basic circuit
 	mods.mekanism.infuser.removeRecipe(<mekanism:controlcircuit>);

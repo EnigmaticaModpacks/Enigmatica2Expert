@@ -11,6 +11,11 @@ import crafttweaker.item.IIngredient;
 	[<ore:stickWood>, <ore:stickWood>, <ore:stickWood>], 
 	[<ore:stickWood>, <ore:stickWood>, <ore:stickWood>]]);
 
+recipes.remove(<randomthings:idcard>);
+recipes.addShapeless("idcard",
+	<randomthings:idcard>,
+	[<ore:paper>,<ore:dyeBlack>, <ore:dyeRed>]);
+
 # Ender bucket recipe change
 recipes.remove(<randomthings:enderbucket>);
 recipes.addShaped("ender_bucket1",
