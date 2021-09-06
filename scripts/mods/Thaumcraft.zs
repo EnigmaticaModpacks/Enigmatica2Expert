@@ -36,6 +36,7 @@ scripts.wrap.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreLead>, <thermalfo
 
 # Removing wrong aspects from stuff
 	<ic2:dust:21>.setAspects(<aspect:metallum> * 1);
+	<conarm:armor_trim:*>.setAspects(<aspect:terra>);
 
 # [Void Seed*4] from [Insanium Essence][+4]
 craft.remake(<thaumcraft:void_seed> * 4, ["pretty",
