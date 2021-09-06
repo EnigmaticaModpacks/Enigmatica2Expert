@@ -52,8 +52,6 @@ val merchData = {
         [E*40, <actuallyadditions:block_fishing_net>],
       ],
     },
-  },
-  "minecraft:farmer": {
     "fletcher": {
       3: [
         [E, <animania:wool:0>],

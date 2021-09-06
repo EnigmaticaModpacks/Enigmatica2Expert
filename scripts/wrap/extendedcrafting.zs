@@ -15,14 +15,14 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded extendedcrafting
-// Uses of this mod: 72
+// Uses of this mod: 68
 
 
 //####################################################
-// Uses of this class: 6
+// Uses of this class: 7
 zenClass Class_CompressionCrafting { zenConstructor() {}
 
-	// Uses of this method: 6
+	// Uses of this method: 7
 	function addRecipe(output as IItemStack, input as IItemStack, inputCount as int, catalyst as IItemStack, rfCost as int, rfRate as int) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.extendedcrafting.CompressionCrafting.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), inputCount, serialize.IItemStack(catalyst), rfCost, rfRate]));
@@ -33,10 +33,10 @@ zenClass Class_CompressionCrafting { zenConstructor() {}
 static CompressionCrafting as Class_CompressionCrafting = Class_CompressionCrafting();
 
 //####################################################
-// Uses of this class: 30
+// Uses of this class: 29
 zenClass Class_CombinationCrafting { zenConstructor() {}
 
-	// Uses of this method: 30
+	// Uses of this method: 29
 	function addRecipe(output as IItemStack, rf as long, rf_t as int, centerItem as IItemStack, ingredients as IIngredient[]) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.extendedcrafting.CombinationCrafting.addRecipe'~
 			serialize.args([serialize.IItemStack(output), rf, rf_t, serialize.IItemStack(centerItem), serialize.IIngredient__(ingredients)]));
@@ -61,10 +61,10 @@ zenClass Class_EnderCrafting { zenConstructor() {}
 static EnderCrafting as Class_EnderCrafting = Class_EnderCrafting();
 
 //####################################################
-// Uses of this class: 35
+// Uses of this class: 31
 zenClass Class_TableCrafting { zenConstructor() {}
 
-	// Uses of this method: 29
+	// Uses of this method: 26
 	function addShaped(level as int, output as IItemStack, inputs as IIngredient[][]) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.extendedcrafting.TableCrafting.addShaped'~
 			serialize.args([level, serialize.IItemStack(output), serialize.IIngredient____(inputs)]));

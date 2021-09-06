@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded mekanism
-// Uses of this mod: 24
+// Uses of this mod: 29
 
 
 //####################################################
@@ -61,6 +61,20 @@ zenClass Class_crusher { zenConstructor() {}
 static crusher as Class_crusher = Class_crusher();
 
 //####################################################
+// Uses of this class: 1
+zenClass Class_separator { zenConstructor() {}
+
+	// Uses of this method: 1
+	function addRecipe(inputFluid as ILiquidStack, inputRF as double, outputGas1 as IGasStack, outputGas2 as IGasStack) as void {
+		if(utils.DEBUG) print('Recipe wrapped: mods.mekanism.separator.addRecipe'~
+			serialize.args([serialize.ILiquidStack(inputFluid), inputRF, serialize.IGasStack(outputGas1), serialize.IGasStack(outputGas2)]));
+		mods.mekanism.separator.addRecipe(inputFluid, inputRF, outputGas1, outputGas2);
+	}
+
+}
+static separator as Class_separator = Class_separator();
+
+//####################################################
 // Uses of this class: 5
 zenClass Class_enrichment { zenConstructor() {}
 
@@ -75,10 +89,10 @@ zenClass Class_enrichment { zenConstructor() {}
 static enrichment as Class_enrichment = Class_enrichment();
 
 //####################################################
-// Uses of this class: 6
+// Uses of this class: 10
 zenClass Class_infuser { zenConstructor() {}
 
-	// Uses of this method: 6
+	// Uses of this method: 10
 	function addRecipe(infusionType as string, infusionConsumed as int, inputStack as IIngredient, outputStack as IItemStack) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.mekanism.infuser.addRecipe'~
 			serialize.args([serialize._string(infusionType), infusionConsumed, serialize.IIngredient(inputStack), serialize.IItemStack(outputStack)]));

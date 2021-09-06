@@ -827,3 +827,24 @@ for item in <ore:dustAshes>.items {
 # Rat Diamond
 <ore:gemDiamondRat>.add(<rats:rat_diamond>);
 <ore:gemDiamondRat>.addItems(<ore:gemDiamond>.items);
+
+<ore:foodNutrients5>.addItems([
+	<minecraft:golden_apple:1>,
+	<harvestcraft:chickencurryitem>,
+	<harvestcraft:hamandpineapplepizzaitem>,
+	<harvestcraft:randomtacoitem>,
+	<harvestcraft:gourmetporkburgeritem>,
+	<harvestcraft:delightedmealitem>,
+	<harvestcraft:deluxenachoesitem>,
+	<harvestcraft:netherstartoastitem>,
+	<harvestcraft:chimichangaitem>,
+	<harvestcraft:ploughmanslunchitem>,
+	<harvestcraft:deluxechickencurryitem>,
+	<harvestcraft:thankfuldinneritem>,
+	<harvestcraft:gourmetvenisonburgeritem>,
+]);
+
+<ore:listAllmeatraw>.addItems([
+	<animania:raw_peacock>,
+	<animania:raw_prime_peacock>,
+]);

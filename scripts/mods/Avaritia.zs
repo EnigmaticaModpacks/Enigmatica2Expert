@@ -43,34 +43,20 @@ import crafttweaker.item.IItemStack as IItemStack;
 	[null, null, null, null, null, null, null, null, null]
 	]);
 
-# Neutron Collector
-  if (!isNull(itemUtils.getItem("appliedenergistics2:controller"))) {
-	  mods.avaritia.ExtremeCrafting.remove(<avaritia:neutron_collector>);
-	  scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <avaritia:neutron_collector>, [
-	  [<environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>], 
-	  [<environmentaltech:mica>, null, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, null, <environmentaltech:mica>], 
-	  [<environmentaltech:mica>, null, <forestry:chipsets:3>.withTag({T:3 as short}, false), <ore:circuitUltimate>, <advancedrocketry:ic:2>, <ore:circuitUltimate>, <forestry:chipsets:3>.withTag({T:3 as short}, false), null, <environmentaltech:mica>], 
-	  [<ore:ingotCrystalMatrix>, null, <ore:circuitUltimate>, <advgenerators:controller>, <advgenerators:controller>, <advgenerators:controller>, <ore:circuitUltimate>, null, <ore:ingotCrystalMatrix>], 
-	  [null, null, <advancedrocketry:ic:2>, <advgenerators:controller>, itemUtils.getItem("appliedenergistics2:controller"), <advgenerators:controller>, <advancedrocketry:ic:2>, null, null], 
-	  [<ore:ingotCrystalMatrix>, null, <ore:circuitUltimate>, <advgenerators:controller>, <advgenerators:controller>, <advgenerators:controller>, <ore:circuitUltimate>, null, <ore:ingotCrystalMatrix>], 
-	  [<actuallyadditions:block_heat_collector>, null, <forestry:chipsets:3>.withTag({T:3 as short}, false), <ore:circuitUltimate>, <advancedrocketry:ic:2>, <ore:circuitUltimate>, <forestry:chipsets:3>.withTag({T:3 as short}, false), null, <actuallyadditions:block_heat_collector>], 
-	  [<actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>, null, null, null, null, null, <actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>], 
-	  [<actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>, <ore:ingotCrystalMatrix>, <actuallyadditions:block_heat_collector>, <ore:ingotCrystalMatrix>, <actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>]
-		]);
-	} else {
-	  mods.avaritia.ExtremeCrafting.remove(<avaritia:neutron_collector>);
-	  scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <avaritia:neutron_collector>, [
-	  [<environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>], 
-	  [<environmentaltech:mica>, null, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, null, <environmentaltech:mica>], 
-	  [<environmentaltech:mica>, null, <forestry:chipsets:3>.withTag({T:3 as short}, false), <ore:circuitUltimate>, <advancedrocketry:ic:2>, <ore:circuitUltimate>, <forestry:chipsets:3>.withTag({T:3 as short}, false), null, <environmentaltech:mica>], 
-	  [<ore:ingotCrystalMatrix>, null, <ore:circuitUltimate>, <advgenerators:controller>, <advgenerators:controller>, <advgenerators:controller>, <ore:circuitUltimate>, null, <ore:ingotCrystalMatrix>], 
-	  [null, null, <advancedrocketry:ic:2>, <advgenerators:controller>, <appliedenergistics2:energy_acceptor>, <advgenerators:controller>, <advancedrocketry:ic:2>, null, null], 
-	  [<ore:ingotCrystalMatrix>, null, <ore:circuitUltimate>, <advgenerators:controller>, <advgenerators:controller>, <advgenerators:controller>, <ore:circuitUltimate>, null, <ore:ingotCrystalMatrix>], 
-	  [<actuallyadditions:block_heat_collector>, null, <forestry:chipsets:3>.withTag({T:3 as short}, false), <ore:circuitUltimate>, <advancedrocketry:ic:2>, <ore:circuitUltimate>, <forestry:chipsets:3>.withTag({T:3 as short}, false), null, <actuallyadditions:block_heat_collector>], 
-	  [<actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>, null, null, null, null, null, <actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>], 
-	  [<actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>, <ore:ingotCrystalMatrix>, <actuallyadditions:block_heat_collector>, <ore:ingotCrystalMatrix>, <actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>]
-		]);
-	}
+# [Neutron Collector] from [Glitch Infused Ingot][+4]
+mods.avaritia.ExtremeCrafting.remove(<avaritia:neutron_collector>);
+craft.make(<avaritia:neutron_collector>, ["pretty",
+  "⌃ U U U ⌃",
+  "U C T C U",
+  "U T ▬ T U",
+  "U C T C U",
+  "⌃ U U U ⌃"], {
+  "C": <advgenerators:controller>,        # Control Circuit
+  "⌃": <extrautils2:decorativesolid:6>,   # Blue Quartz
+  "T": <draconicevolution:chaos_shard:3>, # Tiny Chaos Fragment
+  "U": <ore:circuitUltimate>,             # Ultimate Control Circuit
+  "▬": <ore:ingotGlitch>,                 # Glitch Infused Ingot
+});
 
 # Neutronium Compressor isn't used
 	mods.avaritia.ExtremeCrafting.remove(<avaritia:neutronium_compressor>);
@@ -79,33 +65,37 @@ import crafttweaker.item.IItemStack as IItemStack;
 	mods.avaritia.ExtremeCrafting.remove(<avaritia:resource:5>);
 	scripts.wrap.extendedcrafting.TableCrafting.addShapeless(0, <avaritia:resource:5>, 
 	[<avaritia:ultimate_stew>, <avaritia:endest_pearl>, <bigreactors:mineralbenitoite>, 
-	<ore:tokenOrIdolFlag>, 	<bigreactors:mineralanglesite>, <ore:record>, <avaritia:cosmic_meatballs>, 
+	<ore:tokenOrIdolFlag>, 	<bigreactors:mineralanglesite>, <darkutils:shulker_pearl>, <avaritia:cosmic_meatballs>, 
 	<quark:soul_bead>, 	<ore:slimecrystalPink>, <ore:plateElite>, <bloodmagic:demon_crystal>, 
 	<ore:dragonEgg>, 	<scalinghealth:heartcontainer>, 
 	<rustic:fluid_bottle>.withTag({Fluid: {FluidName: "wine", Amount: 1000, Tag: {Quality: 1 as float}}}),
 	<ore:blockWither>, <ore:blockAethium>, 	<ore:blockCosmicNeutronium>, <ore:dustAlchEmerald>, 
-	<ore:blockEvilMetal>, <ore:blockCoalCoke>, 	<ore:compressed3xDustBedrock>, <ore:blockUUMatter>, 
+	<ore:blockEvilMetal>, <ore:blockCoalCoke>, 	<ore:compressed3xDustBedrock>, <tconstruct:firewood:1>, 
 	<ore:blockLudicrite>, <ore:blockAmethyst>, 	<randomthings:spectreilluminator>, 
-	<twilightforest:block_storage:4>, <extrautils2:decorativesolid:6>, <ore:blockDilithium>, 	
+	<twilightforest:block_storage:4>, <ore:blockSupremium>, <ore:blockDilithium>, 	
 	<ore:blockCrystalMatrix>, <ore:blockEnderium>, <deepmoblearning:infused_ingot_block>, 	
-	<contenttweaker:terrestrial_artifact_block>, <ore:blockInsanium>, <appliedenergistics2:fluix_block>,
+	<contenttweaker:terrestrial_artifact_block>, <extrautils2:decorativesolid:6>, <appliedenergistics2:fluix_block>,
 	<draconicevolution:draconium_block:1>, <ore:blockMyrmexResin>, 
-	<ore:blockDraconicMetal>, 	<forestry:bee_combs_0>, <ore:blockPrimordial>, 
-	<extendedcrafting:storage:7>, <ore:blockAstralStarmetal>, 	<ore:blockOsgloglas>, <ore:blockMirion>]);
+	<advancedrocketry:hotturf>, <forestry:bee_combs_0>, <ore:blockBoundMetal>, 
+	<extendedcrafting:storage:7>, <ore:blockAstralStarmetal>, <ore:blockOsgloglas>, <ore:blockMirion>]);
 	
-# Endest Pearl
-	mods.avaritia.ExtremeCrafting.remove(<avaritia:endest_pearl>);
-	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <avaritia:endest_pearl>, [
-	[null, null, null, <ore:endstone>, <ore:endstone>, <ore:endstone>, null, null, null], 
-	[null, null, <ore:endstone>, <extrautils2:endershard>, <cyclicmagic:ender_eye_orb>, <extrautils2:endershard>, <ore:endstone>, null, null], 
-	[null, <ore:endstone>, <darkutils:material:1>, <ore:enderpearl>, <ore:enderpearl>, <ore:enderpearl>, <darkutils:material:1>, <ore:endstone>, null], 
-	[<ore:endstone>, <extrautils2:endershard>, <ore:enderpearl>, <ore:enderpearl>, <actuallyadditions:block_misc:8>, <ore:enderpearl>, <ore:enderpearl>, <extrautils2:endershard>, <ore:endstone>], 
-	[<ore:endstone>, <cyclicmagic:ender_eye_orb>, <ore:enderpearl>, <actuallyadditions:block_misc:8>, <actuallyadditions:item_misc:19>, <actuallyadditions:block_misc:8>, <ore:enderpearl>, <cyclicmagic:ender_eye_orb>, <ore:endstone>], 
-	[<ore:endstone>, <extrautils2:endershard>, <ore:enderpearl>, <ore:enderpearl>, <actuallyadditions:block_misc:8>, <ore:enderpearl>, <ore:enderpearl>, <extrautils2:endershard>, <ore:endstone>], 
-	[null, <ore:endstone>, <darkutils:material:1>, <ore:enderpearl>, <ore:enderpearl>, <ore:enderpearl>, <darkutils:material:1>, <ore:endstone>, null], 
-	[null, null, <ore:endstone>, <extrautils2:endershard>, <cyclicmagic:ender_eye_orb>, <extrautils2:endershard>, <ore:endstone>, null, null], 
-	[null, null, null, <ore:endstone>, <ore:endstone>, <ore:endstone>, null, null, null]
-	]);
+# [Endest Pearl] from [Pristine Enderman Matter][+5]
+mods.avaritia.ExtremeCrafting.remove(<avaritia:endest_pearl>);
+craft.make(<avaritia:endest_pearl>, ["pretty",
+  "    - D -    ",
+  "  - ▬ ▬ ▬ -  ",
+  "- ▬ E ⌂ E ▬ -",
+  "D ▬ ⌂ P ⌂ ▬ D",
+  "- ▬ E ⌂ E ▬ -",
+  "  - ▬ ▬ ▬ -  ",
+  "    - D -    "], {
+  "P": <deepmoblearning:pristine_matter_enderman>, # Pristine Enderman Matter
+  "⌂": <actuallyadditions:block_misc:8>,           # Ender Casing
+  "D": <minecraft:dragon_breath>,                  # Dragon's Breath
+  "E": <cyclicmagic:exp_pylon>,                    # Experience Pylon
+  "▬": <ore:ingotEndorium>,                        # Endorium Ingot
+  "-": <ore:ingotEndSteel>,                        # End Steel Ingot
+});
 	
 # Skullfire Sword
  	mods.avaritia.ExtremeCrafting.remove(<avaritia:skullfire_sword>);
@@ -117,87 +107,80 @@ import crafttweaker.item.IItemStack as IItemStack;
 	[<ore:netherStar>, null, null, null, null]
 ]);
 
-# Ultimate Stew
-	scripts.wrap.extendedcrafting.TableCrafting.addShapeless(4, 
-	<avaritia:ultimate_stew> * 9,  
-	[<ore:ingotCosmicNeutronium>, 
-	<ore:cropWheat>, 
-	<ore:cropApple>, 
-	<ore:cropMelon>, 
-	<ore:cropBean>, 
-	<ore:cropPumpkin>, 
-	<ore:cropCarrot>, 
-	<ore:cropPotato>, 
-	<ore:cropBeetroot>, 
-	<ore:cropAsparagus>, 
-	<ore:cropCorn>, 
-	<ore:cropBambooshoot>, 
-	<ore:cropCucumber>, 
-	<ore:cropWintersquash>, 
-	<ore:cropZucchini>, 
-	<ore:cropOnion>, 
-	<ore:cropBeet>, 
-	<ore:cropParsnip>, 
-	<ore:cropRadish>, 
-	<ore:cropRutabaga>, 
-	<ore:cropSweetpotato>, 
-	<ore:cropTurnip>, 
-	<ore:cropRhubarb>, 
-	<ore:cropCelery>, 
-	<ore:cropSpiceleaf>, 
-	<ore:cropBroccoli>, 
-	<ore:cropCauliflower>, 
-	<ore:cropLeek>, 
-	<ore:cropLettuce>, 
-	<ore:cropScallion>, 
-	<ore:cropArtichoke>, 
-	<ore:cropBrusselsprout>, 
-	<ore:cropCabbage>, 
-	<ore:cropSpinach>, 
-	<ore:mushroomAny>, 
-	<ore:cropBellpepper>, 
-	<ore:cropEggplant>, 
-	<ore:cropOkra>, 
-	<ore:cropPeas>, 
-	<ore:cropSeaweed>, 
-	<ore:cropWaterchestnut>, 
-	<ore:cropTomato>, 
-	<ore:cropGarlic>, 
-	<ore:cropBlackberry>, 
-	<ore:cropBlueberry>, 
-	<ore:cropRaspberry>, 
-	<ore:cropStrawberry>, 
-	<ore:cropCranberry>, 
-	<ore:cropGooseberry>, 
-	<rustic:ironberries>, 
-	<rustic:wildberries>, 
-	<ore:cropGrape>]);
+# [Ultimate Stew]*9 from [Cosmic Meatballs][+6]
+craft.make(<avaritia:ultimate_stew> * 9, ["pretty",
+  "  ■       ■  ",
+  "■ F B C B F ■",
+  "■ G G G G G ■",
+  "■ G G G G G ■",
+  "■ ( ( ( ( ( ■",
+  "  ■ ■ ■ ■ ■  ",
+  "  ▲ ▲ ▲ ▲ ▲  "], {
+  "■": <ore:blockDilithium>,        # Block of Dilithium
+  "▲": <ore:dustMana>,              # Mana Dust
+  "B": <rustic:fluid_bottle>.withTag({Fluid: {FluidName: "wine", Amount: 1000, Tag: {Quality: 1.0 as float}}}), # Bottle of Wine
+  "C": <avaritia:cosmic_meatballs>, # Cosmic Meatballs
+  "F": <nuclearcraft:foursmore>,    # FourS'more QuadS'mingot
+  "G": <ore:foodNutrients5>,        # Golden Apple
+  "(": <ic2:filled_tin_can>,        # (Filled) Tin Can
+});
 
-# Cosmic Meatballs
-	scripts.wrap.extendedcrafting.TableCrafting.addShapeless(4, 
-	<avaritia:cosmic_meatballs> * 9, 
-	[<ore:ingotCosmicNeutronium>, 
-	<minecraft:porkchop>, 
-	<minecraft:beef>, 
-	<minecraft:chicken>, 
-	<minecraft:rabbit>, 
-	<minecraft:mutton>, 
-	<animania:raw_prime_steak>,
-	<animania:raw_prime_pork>,
-	<animania:raw_prime_bacon>,
-	<animania:raw_prime_chicken>,
-	<animania:raw_prime_mutton>,
-	<animania:raw_prime_rabbit>,
-	<animania:raw_frog_legs>,
-	<animania:raw_horse>,
-	<animania:raw_chevon>,
-	<animania:raw_prime_chevon>,
-	<animania:raw_peacock>,
-	<animania:raw_prime_beef>,
-	<animania:raw_prime_peacock>,
-	<harvestcraft:turkeyrawitem>, 
-	<harvestcraft:venisonrawitem>, 
-	<harvestcraft:duckrawitem>]);
+# [Cosmic Meatballs]
+scripts.wrap.extendedcrafting.TableCrafting.addShapeless(
+	<avaritia:cosmic_meatballs> * 9, [
+/*Inject_js(
+  getCSV('config/tellme/items-csv.csv')
+  .filter(o=>o['Ore Dict keys'].split(',').includes('listAllmeatraw'))
+  .map(o=>itemize(o['Registry name'], o['Meta/dmg']))
+	.sort(naturalSort)
+  .map(o=>`    ${isBlacklisted(o)?'#':''}<${o}>,`)
+)*/
+    <animania:raw_chevon>,
+    <animania:raw_frog_legs>,
+    <animania:raw_horse>,
+    <animania:raw_peacock>,
+    <animania:raw_prime_beef>,
+    <animania:raw_prime_chevon>,
+    <animania:raw_prime_chicken>,
+    <animania:raw_prime_mutton>,
+    <animania:raw_prime_peacock>,
+    <animania:raw_prime_pork>,
+    <animania:raw_prime_rabbit>,
+    <animania:raw_prime_steak>,
+    <betteranimalsplus:pheasantraw>,
+    <betteranimalsplus:turkey_leg_raw>,
+    <betteranimalsplus:turkey_raw>,
+    #<betteranimalsplus:venisonraw>,
+    <harvestcraft:duckrawitem>,
+    <harvestcraft:groundbeefitem>,
+    <harvestcraft:groundchickenitem>,
+    <harvestcraft:groundduckitem>,
+    <harvestcraft:groundfishitem>,
+    <harvestcraft:groundmuttonitem>,
+    <harvestcraft:groundporkitem>,
+    <harvestcraft:groundrabbititem>,
+    <harvestcraft:groundturkeyitem>,
+    <harvestcraft:groundvenisonitem>,
+    <harvestcraft:grubitem>,
+    <harvestcraft:rawtofabbititem>,
+    <harvestcraft:rawtofaconitem>,
+    <harvestcraft:rawtofeakitem>,
+    <harvestcraft:rawtofenisonitem>,
+    <harvestcraft:rawtofickenitem>,
+    <harvestcraft:rawtofuduckitem>,
+    <harvestcraft:rawtofurkeyitem>,
+    <harvestcraft:rawtofuttonitem>,
+    <harvestcraft:turkeyrawitem>,
+    <harvestcraft:venisonrawitem>,
+    <minecraft:beef>,
+    <minecraft:chicken>,
+    <minecraft:mutton>,
+    <minecraft:porkchop>,
+    <minecraft:rabbit>,
+    <rats:raw_rat>,
+    <tconevo:edible>,
+/**/
+]);
 		
 # Neutronium Ingot
 	var ni = <ore:ingotCosmicNeutronium>;

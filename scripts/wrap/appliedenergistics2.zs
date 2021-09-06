@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded appliedenergistics2
-// Uses of this mod: 4
+// Uses of this mod: 6
 
 
 //####################################################
@@ -55,3 +55,29 @@ zenClass Class_Grinder { zenConstructor() {}
 
 }
 static Grinder as Class_Grinder = Class_Grinder();
+
+//####################################################
+// Uses of this class: 2
+zenClass Class_Inscriber { zenConstructor() {}
+
+	// Uses of this method: 2
+	function addRecipe(output as IItemStack, input as IItemStack, inscribe as bool) as void {
+		if(utils.DEBUG) print('Recipe wrapped: mods.appliedenergistics2.Inscriber.addRecipe'~
+			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), inscribe]));
+		mods.appliedenergistics2.Inscriber.addRecipe(output, input, inscribe);
+	}
+
+	function addRecipe(output as IItemStack, input as IItemStack, inscribe as bool, topInput as IItemStack) as void {
+		if(utils.DEBUG) print('Recipe wrapped: mods.appliedenergistics2.Inscriber.addRecipe'~
+			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), inscribe, serialize.IItemStack(topInput)]));
+		mods.appliedenergistics2.Inscriber.addRecipe(output, input, inscribe, topInput);
+	}
+
+	function addRecipe(output as IItemStack, input as IItemStack, inscribe as bool, topInput as IItemStack, bottomInput as IItemStack) as void {
+		if(utils.DEBUG) print('Recipe wrapped: mods.appliedenergistics2.Inscriber.addRecipe'~
+			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), inscribe, serialize.IItemStack(topInput), serialize.IItemStack(bottomInput)]));
+		mods.appliedenergistics2.Inscriber.addRecipe(output, input, inscribe, topInput, bottomInput);
+	}
+
+}
+static Inscriber as Class_Inscriber = Class_Inscriber();

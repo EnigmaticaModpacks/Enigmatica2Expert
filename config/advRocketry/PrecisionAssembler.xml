@@ -159,25 +159,8 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Solar Panel] -->
-	<Recipe timeRequired="10" power="40000">
-		<input>
-			<oreDict>blockGlass 24</oreDict>
-			<oreDict>itemRubber 40</oreDict>
-			<oreDict>blockFakeIron 30</oreDict>
-			<oreDict>ingotCopper 32</oreDict>
-			<oreDict>ingotAluminum 32</oreDict>
-			<oreDict>ingotTin 24</oreDict>
-			<oreDict>dustRedstone 48</oreDict>
-			<oreDict>itemCoal 32</oreDict>
-		</input>
-		<output>
-			<itemStack>ic2:te 8 8</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Advanced Coil] -->
-	<Recipe timeRequired="10" power="40000">
+	<Recipe timeRequired="40" power="140000">
 		<input>
 			<oreDict>stickWood 60</oreDict>
 			<oreDict>ingotGold 12</oreDict>
@@ -190,7 +173,7 @@
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Advanced Machine Structure] -->
-	<Recipe timeRequired="10" power="40000">
+	<Recipe timeRequired="80" power="60000">
 		<input>
 			<itemStack>libvulpes:structuremachine 4</itemStack>
 			<oreDict>sheetTitanium 4</oreDict>
@@ -203,7 +186,7 @@
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Iridium Neutron Reflector] -->
-	<Recipe timeRequired="10" power="40000">
+	<Recipe timeRequired="80" power="160000">
 		<input>
 			<oreDict>plateCopper 64</oreDict>
 			<oreDict>dustTin 64</oreDict>
@@ -215,8 +198,21 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Solar Panel] -->
+	<Recipe timeRequired="100" power="120000">
+		<input>
+			<oreDict>plateIron 64</oreDict>
+			<oreDict>gemLapis 48</oreDict>
+			<oreDict>circuitBasic 16</oreDict>
+			<oreDict>dustCoal 16</oreDict>
+		</input>
+		<output>
+			<itemStack>ic2:te 16 8</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Basic Coil] -->
-	<Recipe timeRequired="10" power="40000">
+	<Recipe timeRequired="20" power="70000">
 		<input>
 			<oreDict>stickWood 36</oreDict>
 			<oreDict>ingotAluminium 24</oreDict>

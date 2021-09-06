@@ -99,10 +99,10 @@ zenClass Class_Fermenter { zenConstructor() {}
 static Fermenter as Class_Fermenter = Class_Fermenter();
 
 //####################################################
-// Uses of this class: 12
+// Uses of this class: 13
 zenClass Class_MetalPress { zenConstructor() {}
 
-	// Uses of this method: 12
+	// Uses of this method: 13
 	function addRecipe(output as IItemStack, input as IIngredient, mold as IItemStack, energy as int) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.immersiveengineering.MetalPress.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient(input), serialize.IItemStack(mold), energy]));
@@ -119,10 +119,10 @@ zenClass Class_MetalPress { zenConstructor() {}
 static MetalPress as Class_MetalPress = Class_MetalPress();
 
 //####################################################
-// Uses of this class: 2
+// Uses of this class: 1
 zenClass Class_Mixer { zenConstructor() {}
 
-	// Uses of this method: 2
+	// Uses of this method: 1
 	function addRecipe(output as ILiquidStack, fluidInput as ILiquidStack, itemInputs as IIngredient[], energy as int) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.immersiveengineering.Mixer.addRecipe'~
 			serialize.args([serialize.ILiquidStack(output), serialize.ILiquidStack(fluidInput), serialize.IIngredient__(itemInputs), energy]));

@@ -176,13 +176,13 @@ craft.remake(<libvulpes:coalgenerator>, [
 
 # [Advanced Machine Structure*4] from [Silicon Boule][+2]
 recipes.remove(<libvulpes:advstructuremachine>);
-scripts.processUtils.avdRockXmlRecipe("PrecisionAssembler",	[
+scripts.processUtils.avdRockXmlRecipeEx("PrecisionAssembler",	[
 	<libvulpes:structuremachine> * 4, # Machine Structure
 	<ore:sheetTitanium> * 4,
 	<ore:gemDilithium> * 2,
 	<ore:bouleSilicon>,          
 ], null,
-	[<libvulpes:advstructuremachine> * 4], null
+	[<libvulpes:advstructuremachine> * 4], null, {power: 60000, timeRequired: 80}
 );
 
 # Press recipe instead crafting table
@@ -367,7 +367,7 @@ craft.shapeless(<advancedrocketry:atmanalyser>,
 });
 
 # Some Alts with advanced machines
-scripts.processUtils.avdRockXmlRecipe("ChemicalReactor", [<ore:dustSulfur> * 60], [<fluid:oxygen> * 3000], null, [<fluid:sulfuric_acid> * 6000]);
+scripts.processUtils.avdRockXmlRecipeEx("ChemicalReactor", [<ore:dustSulfur> * 60], [<fluid:oxygen> * 3000], null, [<fluid:sulfuric_acid> * 6000], {power: 140000, timeRequired: 30});
 scripts.processUtils.avdRockXmlRecipe("Crystallizer", [<ore:dustFluorite> * 6], [<fluid:sulfuric_acid> * 6000], [<nuclearcraft:compound> * 6], null);
 
 # Remove carbon (defined in ExNihilio configs)

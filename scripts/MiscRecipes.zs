@@ -39,10 +39,8 @@ import scripts.craft.grid.Grid;
 	[<ore:blockUranium>]);
 	
 # Amber Conversion
-	recipes.addShapeless("BoP Amber", 
-	<biomesoplenty:gem:7>, [<thaumcraft:amber>]);
-	recipes.addShapeless("Thaumcraft Amber", 
-	<thaumcraft:amber>, [<biomesoplenty:gem:7>]);
+	recipes.addShapeless("BoP Amber", <biomesoplenty:gem:7> * 2, [<thaumcraft:amber>,<thaumcraft:amber>]);
+	recipes.addShapeless("Thaumcraft Amber", <thaumcraft:amber> * 2, [<biomesoplenty:gem:7>,<biomesoplenty:gem:7>]);
 
 # End Crystal
 	recipes.remove(<minecraft:end_crystal>);
@@ -81,8 +79,8 @@ import scripts.craft.grid.Grid;
 	recipes.addShapeless("Animania Mud", <animania:block_mud>, [<biomesoplenty:mud>]);
 
 # Iridium conversion
-	recipes.addShapeless(<thermalfoundation:material:135>, [<ic2:misc_resource:1>]);
-	recipes.addShapeless(<ic2:misc_resource:1>, [<thermalfoundation:material:135>]);
+	recipes.addShapeless(<thermalfoundation:material:135> * 2, [<ic2:misc_resource:1>, <ic2:misc_resource:1>]);
+	recipes.addShapeless(<ic2:misc_resource:1> * 2, [<thermalfoundation:material:135>, <thermalfoundation:material:135>]);
 	
 # Graphite conversion 	
 	recipes.addShapeless("Graphite Conversion 3", <bigreactors:blockgraphite> * 2, [<nuclearcraft:ingot_block:8>, <nuclearcraft:ingot_block:8>]);

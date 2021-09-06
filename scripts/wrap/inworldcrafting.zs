@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded inworldcrafting
-// Uses of this mod: 14
+// Uses of this mod: 15
 
 
 //####################################################
@@ -79,10 +79,10 @@ zenClass Class_FireCrafting { zenConstructor() {}
 static FireCrafting as Class_FireCrafting = Class_FireCrafting();
 
 //####################################################
-// Uses of this class: 2
+// Uses of this class: 3
 zenClass Class_ExplosionCrafting { zenConstructor() {}
 
-	// Uses of this method: 2
+	// Uses of this method: 3
 	function explodeBlockRecipe(output as IItemStack, blockStack as IItemStack) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(blockStack)]));

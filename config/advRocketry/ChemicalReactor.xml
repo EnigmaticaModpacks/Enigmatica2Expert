@@ -146,13 +146,13 @@
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Ammonia] -->
-	<Recipe timeRequired="10" power="40000">
+	<Recipe timeRequired="80" power="120000">
 		<input>
-			<fluidStack>nitrogen 100</fluidStack>
-			<fluidStack>hydrogen 300</fluidStack>
+			<fluidStack>nitrogen 800</fluidStack>
+			<fluidStack>hydrogen 2400</fluidStack>
 		</input>
 		<output>
-			<fluidStack>ammonia 2000</fluidStack>
+			<fluidStack>ammonia 16000</fluidStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -223,7 +223,7 @@
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Sulfuric Acid] -->
-	<Recipe timeRequired="10" power="40000">
+	<Recipe timeRequired="30" power="140000">
 		<input>
 			<oreDict>dustSulfur 60</oreDict>
 			<fluidStack>oxygen 3000</fluidStack>

@@ -8,12 +8,6 @@ import scripts.craft.grid.Grid;
 
 # Cheaper decorations
 var casing = <teslacorelib:machine_case>|<actuallyadditions:block_misc:9>|<mekanism:basicblock:8>|<nuclearcraft:part:10>;
-recipes.remove(<enderio:item_material:2>);
-recipes.addShaped("Cheaper Chassis Parts", 
-<enderio:item_material:2> * 16, [
-[<ore:ingotFakeIron>, <ore:ingotFakeIron>, <ore:ingotFakeIron>], 
-[<ore:ingotFakeIron>, casing, <ore:ingotFakeIron>], 
-[<ore:ingotFakeIron>, <ore:ingotFakeIron>, <ore:ingotFakeIron>]]);
 
 
 # This is basically quantity filter with auto input/output
@@ -269,6 +263,10 @@ scripts.process.alloy([<minecraft:glowstone_dust>, <minecraft:clay_ball>], <ende
 # Harder Vibrant Alloy
 mods.thermalexpansion.InductionSmelter.removeRecipe(<enderio:item_alloy_ingot:1>, <minecraft:ender_pearl>);
 scripts.process.alloy([<ore:ingotEnergeticAlloy>, <extendedcrafting:material:49>], <enderio:item_alloy_ingot:2> * 2, "ONLY: induction alloySmelter");
+scripts.process.alloy([<enderio:block_alloy:1>, <extendedcrafting:material:48>], <enderio:block_alloy:2> * 2, "only: AdvRockArc");
+
+# Energetic Alloy Block
+scripts.process.alloy([<minecraft:redstone_block>, <minecraft:glowstone_dust> * 9, <minecraft:gold_block>], <enderio:block_alloy:1>, "only: AdvRockArc");
 
 # Remove alloy recipes made in High Oven
 ncAlloyRm(<enderio:item_alloy_ingot>);
@@ -459,6 +457,8 @@ mods.rt.RandomThingsTweaker.addImbuingRecipe(
 );
 
 # [Pulsating Crystal] from [Biome Essence][+1]
+mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(<enderio:item_material:14>);
+mods.tconstruct.Casting.removeTableRecipe(<enderio:item_material:14>);
 craft.remake(<enderio:item_material:14>, ["pretty",
   "‚ ‚ ‚",
   "‚ B ‚",
@@ -510,7 +510,7 @@ craft.reshapeless(<enderio:item_material:38>, "▲▲▲©S©▲▲▲", {
 });
 
 # Low-level machines (original in Alloy Smelter)
-scripts.process.compress(<ore:itemPowderPhotovoltaic> * 4, <enderio:item_material:3>, "No Exceptions");
+scripts.process.compress(<ore:itemPowderPhotovoltaic> * 4, <enderio:item_material:3>, "Except: Compressor");
 scripts.wrap.immersiveengineering.MetalPress.addRecipe(<enderio:item_material:3>, <ore:itemPowderPhotovoltaic> * 4, <immersiveengineering:mold:0>, 2000);
 
 # Cheaper to match other solar panels
@@ -535,3 +535,87 @@ craft.shapeless(<enderio:block_fused_quartz>, "AB", {
   A: <contenttweaker:empowered_phosphor>,
   B: <ore:blockQuartz>,
 });
+
+# [Electric Light] from [Glowstone Dust][+3]
+craft.remake(<enderio:block_electric_light>, ["pretty",
+  "■ ■ ■",
+  "S ▲ S",
+  "S ‚ S"], {
+  "■": <ore:fusedQuartz>, # Fused Quartz
+  "▲": <ore:dustGlowstone>, # Glowstone Dust
+  "S": <ore:ingotSilicon>, # Silicon
+  "‚": <ore:nuggetElectricalSteel>, # Electrical Steel Nugget
+});
+
+# [Wireless Light] from [Pulsating Iron Ingot][+1]
+craft.reshapeless(<enderio:block_electric_light:4>, 
+  "E▬", {
+  "E": <enderio:block_electric_light>, # Electric Light
+  "▬": <ore:ingotPulsatingIron>,       # Pulsating Iron Ingot
+});
+recipes.removeByRecipeName("enderio:light_wireless_inverted_upgrade");
+recipes.addShapeless("light_wireless_inverted_upgrade", <enderio:block_electric_light:5>, [<enderio:block_electric_light:1>, <ore:ingotPulsatingIron>]);
+
+# [Inventory Sensor] from [Emeradic Crystal][+4]
+craft.remake(<enderio:block_inventory_panel_sensor>, ["pretty",
+  "▬ R ▬",
+  "♥ * ♥",
+  "▬ ▼ ▬"], {
+  "R": <ore:itemRemoteAwarenessUpgrade>, # Remote Awareness Upgrade
+  "♥": <ore:ingotRedstoneAlloy>,         # Redstone Alloy Ingot
+  "*": <ore:crystalEmeraldic>,           # Emeradic Crystal
+  "▬": <ore:ingotElectricalSteel>,       # Electrical Steel Ingot
+  "▼": <minecraft:comparator>,           # Redstone Comparator
+});
+
+# [Tiny Inventory System Storage] from [Electrical Steel Ingot][+3]
+craft.remake(<enderio:block_inventory_chest_tiny>, ["pretty",
+  "I R",
+  "I ▬",
+  "I □"], {
+  "□": <ore:plateSilicon>,               # Silicon Plate
+  "R": <ore:itemRemoteAwarenessUpgrade>, # Remote Awareness Upgrade
+  "I": <ironchest:iron_chest>,           # Iron Chest
+  "▬": <ore:ingotElectricalSteel>,       # Electrical Steel Ingot
+});
+
+# [Inventory Panel] from [Grains of Vibrancy][+3]
+craft.remake(<enderio:block_inventory_panel>, ["pretty",
+  "R * R",
+  "* V *",
+  "R P R"], {
+  "P": <enderio:block_tank:1>,           # Pressurized Fluid Tank
+  "R": <ore:itemRemoteAwarenessUpgrade>, # Remote Awareness Upgrade
+  "V": <ore:itemVibrantPowder>,          # Grains of Vibrancy
+  "*": <ore:itemPulsatingCrystal>,       # Pulsating Crystal
+});
+
+# [Inventory Panel Remote] from [Inventory Panel][+2]
+craft.remake(<enderio:item_inventory_remote>, ["pretty",
+  "    □",
+  "□ I □",
+  "□ T □"], {
+  "□": <enderio:block_painted_pressure_plate:4>, # Weighted Pressure Plate (Heavy)
+  "T": <enderio:block_travel_anchor>,            # Travel Anchor
+  "I": <enderio:block_inventory_panel>,          # Inventory Panel
+});
+
+# New Machine Part recipes (cheaper then previous)
+recipes.remove(<enderio:item_material:69>);
+recipes.remove(<enderio:item_material:2>);
+recipes.remove(<enderio:item_material:68>);
+for block, result in {
+	<ic2:resource:12>                : {<enderio:item_material:69> : 8},
+	<ic2:resource:13>                : {<enderio:item_material:69> : 16},
+
+	<actuallyadditions:block_misc:9> : {<enderio:item_material:2>  : 10},
+	<mekanism:basicblock:8>          : {<enderio:item_material:2>  : 16},
+
+	<libvulpes:structuremachine>     : {<enderio:item_material:68> : 10},
+	<appliedenergistics2:controller> : {<enderio:item_material:68> : 16},
+} as int[IItemStack][IItemStack] {
+	for output, amount in result {
+		scripts.wrap.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(output * amount, block);
+	}
+}
+

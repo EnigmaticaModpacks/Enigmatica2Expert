@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded thermalexpansion
-// Uses of this mod: 65
+// Uses of this mod: 67
 
 
 //####################################################
@@ -33,7 +33,7 @@ zenClass Class_Centrifuge { zenConstructor() {}
 static Centrifuge as Class_Centrifuge = Class_Centrifuge();
 
 //####################################################
-// Uses of this class: 10
+// Uses of this class: 11
 zenClass Class_Compactor { zenConstructor() {}
 
 	// Uses of this method: 1
@@ -87,10 +87,10 @@ zenClass Class_Enchanter { zenConstructor() {}
 static Enchanter as Class_Enchanter = Class_Enchanter();
 
 //####################################################
-// Uses of this class: 9
+// Uses of this class: 10
 zenClass Class_Transposer { zenConstructor() {}
 
-	// Uses of this method: 9
+	// Uses of this method: 10
 	function addFillRecipe(output as IItemStack, input as IItemStack, fluid as ILiquidStack, energy as int) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.thermalexpansion.Transposer.addFillRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), serialize.ILiquidStack(fluid), energy]));

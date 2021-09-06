@@ -8,7 +8,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_wyvern_core", mac
 	.addItemInput(<ore:shulkerShell>)
 	.addItemInput(<ore:ingotLudicrite>, 2)
 	.addItemInput(<environmentaltech:pladium>)
-	.addItemInput(<minecraft:nether_star>)
+	.addItemInput(<minecraft:sponge>)
 	.addItemInput(<draconicevolution:draconic_core> * 3)
 	.addFluidInput(<liquid:mana> * 500)
 	.build();

@@ -141,6 +141,7 @@ utils.rh(<ic2:dust:7>);
 utils.rh(<ic2:dust:10>);
 utils.rh(<ic2:dust:12>);
 utils.rh(<ic2:dust:14>);
+utils.rh(<ic2:dust:16>);
 utils.rh(<ic2:dust:17>);
 utils.rh(<ic2:dust:23>);
 utils.rh(<ic2:dust:25>);
@@ -223,18 +224,25 @@ craft.remake(<ic2:te:111>, ["pretty",
 # Remove CF Powder but replace it with Building Gadget's powder
 scripts.process.solution([<buildinggadgets:constructionpaste>], [<fluid:water> * 4000], [<fluid:ic2construction_foam> * 4000], null, "Except: highoven");
 
-# Solar panel batch crafting
-scripts.processUtils.avdRockXmlRecipe(
+# [Solar Panel] from [Pulverized Coal][+3]
+craft.remake(<ic2:te:8>, ["pretty",
+  "◊ ◊ ◊",
+  "□ © □",
+  "□ B □"], {
+  "□": <ore:plateIron>, # Iron Plate
+  "B": <ore:circuitBasic>, # Electronic Circuit
+  "©": <ore:dustCoal>, # Pulverized Coal
+  "◊": <ore:gemLapis>, # Lapis Lazuli
+});
+
+# [Solar Panel] batch crafting
+scripts.processUtils.avdRockXmlRecipeEx(
 	"PrecisionAssembler", [
-	<ore:blockGlass> * 24,
-	<ore:itemRubber> * 40,
-	<ore:blockFakeIron> * 30,
-	<ore:ingotCopper> * 32,
-	<ore:ingotAluminum> * 32,
-	<ore:ingotTin> * 24,
-	<ore:dustRedstone> * 48,
-	<ore:itemCoal> * 32,
-], null, [<ic2:te:8> * 8], null);
+	<ore:plateIron> * 64,
+	<ore:gemLapis> * 48,
+	<ore:circuitBasic> * 16,
+	<ore:dustCoal> * 16,
+], null, [<ic2:te:8> * 16], null, {power: 120000, timeRequired: 100});
 	
 # Remove Recycler (replaced by Modular Machine)
 recipes.remove(<ic2:te:48>);
@@ -321,27 +329,14 @@ craft.reshapeless(<ic2:containment_plating>, "п□□□", {
 mods.nuclearcraft.decay_hastener.addRecipe([<ic2:nuclear:3>, <nuclearcraft:uranium:4>, 2.0, 2.0]);
 mods.nuclearcraft.decay_hastener.addRecipe([<ic2:nuclear:7>, <nuclearcraft:uranium:6>, 2.0, 2.0]);
 
-# This recipe was corrupted with error:
-#   Could not dump recipe for <ic2:te:2>
-#   java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-# [Nuke] from [Advanced Machine Casing][+2]
-craft.remake(<ic2:te:2>, ["pretty",
-  "I A I",
-  "I ■ I",
-  "I A I"], {
-  "■": <ore:machineBlockAdvanced>, # Advanced Machine Casing
-  "A": <ore:circuitAdvanced>,      # Advanced Circuit
-  "I": <ic2:iridium_reflector>,    # Iridium Neutron Reflector
-});
-
 # Batch crafting recipe for reflector, skipping microcraftings
-scripts.processUtils.avdRockXmlRecipe("PrecisionAssembler", [
+scripts.processUtils.avdRockXmlRecipeEx("PrecisionAssembler", [
 	<ore:plateCopper> * 64, # Copper Plate
 	<ore:dustTin> * 64,     # Pulverized Tin
 	<ore:dustCoal> * 64,    # Pulverized Coal
 	<ic2:crafting:4>,       # Iridium Reinforced Plate
 ], null,
-	[<ic2:iridium_reflector>], null
+	[<ic2:iridium_reflector>], null, {power: 160000, timeRequired: 80}
 );
 
 # [Quad Fuel Rod (Uranium)] from [Enriched Uranium Nuclear Fuel]*4[+1]
@@ -359,3 +354,15 @@ mods.cyclicmagic.Packager.addRecipe(<ic2:quad_mox_fuel_rod>, [
 # Milk Powder
 scripts.process.evaporate(<fluid:milk> * 250, <ic2:dust:33>, "No exceptions");
 scripts.process.solution([<ic2:dust:33>], [<fluid:water> * 250], [<fluid:milk> * 250], null, "Except: highoven");
+
+# Stone dust alt usage
+furnace.addRecipe(<tconstruct:materials>, <ore:dustStone>);
+
+# [Treated Wood Planks]*8 from [Creosote Bucket][+1]
+craft.remake(<immersiveengineering:treated_wood> * 8, ["pretty",
+  "# # #",
+  "# ~ #",
+  "# # #"], {
+  "#": <ore:plankWood>, # Oak Wood Planks
+  "~": Bucket("ic2creosote"), # Creosote Bucket
+});

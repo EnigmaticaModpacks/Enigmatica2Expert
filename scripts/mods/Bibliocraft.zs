@@ -40,6 +40,6 @@ craft.remake(<bibliocraft:bibliochase>, ["pretty",
   "  #  ",
   "# ▬ #",
   "  #  "], {
-  "#": <ore:slabWood> | <ore:slabWoodOak>,    # Oak Wood Slab
-  "▬": <ore:ingotIron> | <ore:ingotFakeIron>, # Iron Ingot
+  "#": <ore:slabWood>,      # Oak Wood Slab
+  "▬": <ore:ingotFakeIron>, # Iron Ingot
 });

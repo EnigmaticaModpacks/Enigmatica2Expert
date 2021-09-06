@@ -239,6 +239,45 @@
     </fermenting>
   </recipe>
 
+  <recipe name="Advanced Inventory Panel Remote" required="true">
+    <crafting upgrade="true">
+      <grid size="3x3">
+        <item/><item/><item name="PPP_DARK_STEEL" />
+        <item name="PPP_DARK_STEEL" /><item name="enderio:item_inventory_remote:0" /><item name="PPP_DARK_STEEL" />
+        <item name="PPP_DARK_STEEL" /><item name="ingotVibrantAlloy" /><item name="PPP_DARK_STEEL" />
+      </grid>
+      <output name="enderio:item_inventory_remote:1" />
+    </crafting>
+  </recipe>
+
+  <recipe name="Inventory Chest, Big" required="true">
+    <crafting upgrade="true">
+      <grid size="2x3">
+        <item name="ironchest:iron_chest:2" /><item name="REMOTE_AWARENESS_UPGRADE" />
+        <item name="ironchest:iron_chest:2" /><item name="enderio:item_material:49" />
+        <item name="ironchest:iron_chest:2" /><item name="enderio:block_inventory_chest_medium"/>
+      </grid>
+      <output name="enderio:block_inventory_chest_big" />
+    </crafting>
+  </recipe>
+  <recipe name="Inventory Chest, Enormous" required="true">
+    <crafting upgrade="true">
+      <grid size="3x3">
+        <item /><item name="REMOTE_AWARENESS_UPGRADE" /><item />
+        <item name="actuallyadditions:block_giant_chest_large:0" /><item name="SIMPLE_CHASSIS" /><item name="actuallyadditions:block_giant_chest_large:0" />
+        <item /><item name="enderio:block_inventory_chest_huge"/><item />
+      </grid>
+      <output name="enderio:block_inventory_chest_enormous" />
+    </crafting>
+  </recipe>
+
+  <recipe name="Alloy: Black Dye">
+    <disabled/>
+  </recipe>
+  <recipe name="Alloy: Black Dye, Variant">
+    <disabled/>
+  </recipe>
+
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Construction Foam" required="true">
     <fermenting energy="10000">

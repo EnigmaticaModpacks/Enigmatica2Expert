@@ -511,7 +511,6 @@ return loadText('config/netherportalspread/spreadsettings.txt')
 .join('\n')
 })()
 )*/
-add(x, {[<additionalcompression:meatfish_compressed:*>, <additionalcompression:meatchicken_compressed:*>, <additionalcompression:meatbeef_compressed:*>, <additionalcompression:meatporkchop_compressed:*>] : [<thaumcraft:flesh_block>]});
 add(x, {[<appliedenergistics2:sky_stone_block:*>] : [<minecraft:quartz_block>]});
 add(x, {[<biomesoplenty:white_sand:*>] : [<quark:jasper>]});
 add(x, {[<chisel:basalt2:*>] : [<tconstruct:seared>]});
@@ -520,20 +519,20 @@ add(x, {[<chisel:limestone:*>, <minecraft:sandstone:*>] : [<mysticalagriculture:
 add(x, {[<chisel:marble2:*>, <astralsorcery:blockmarble:*>] : [<thaumictinkerer:black_quartz_block> * 10, <botania:quartztypedark>]});
 add(x, {[<iceandfire:ash:*>] : [<chisel:block_coal_coke>]});
 add(x, {[<minecraft:brick_block:*>] : [<minecraft:nether_brick>]});
-add(x, {[<minecraft:cobblestone:*>, <quark:slate:*>] : [<quark:biome_cobblestone>]});
+add(x, {[<minecraft:cobblestone:*>, <quark:slate:*>, <minecraft:stone_stairs:*>] : [<quark:biome_cobblestone>]});
 add(x, {[<minecraft:diamond_block:*>] : [<minecraft:gold_block>]});
 add(x, {[<minecraft:diamond_ore:*>, <minecraft:emerald_ore:*>, <appliedenergistics2:charged_quartz_ore:*>] : [<tconstruct:ore>]});
 add(x, {[<minecraft:emerald_block:*>] : [<tconstruct:metal>]});
 add(x, {[<minecraft:fence:*>] : [<minecraft:nether_brick_fence>]});
 add(x, {[<minecraft:gold_ore:*>, <minecraft:iron_ore:*>, <minecraft:lapis_ore:*>, <appliedenergistics2:quartz_ore:*>, <thaumcraft:ore_cinnabar:*>, <thaumcraft:ore_amber:*>] : [<netherendingores:ore_nether_modded_1>]});
-add(x, {[<minecraft:gravel:*>, <minecraft:clay:*>, <minecraft:leaves:*>, <minecraft:leaves2:*>, <advancedrocketry:alienleaves:*>, <exnihilocreatio:block_infesting_leaves:*>, <exnihilocreatio:block_infested_leaves:*>, <extrautils2:ironwood_leaves:*>, <biomesoplenty:leaves_0:*>, <biomesoplenty:leaves_1:*>, <biomesoplenty:leaves_2:*>, <biomesoplenty:leaves_3:*>, <biomesoplenty:leaves_4:*>, <biomesoplenty:leaves_5:*>, <forestry:leaves.decorative.0:*>, <forestry:leaves.decorative.1:*>, <forestry:leaves.decorative.2:*>] : [<biomesoplenty:ash_block>]});
+add(x, {[<minecraft:gravel:*>, <minecraft:clay:*>, <minecraft:leaves:*>, <minecraft:leaves2:*>, <advancedrocketry:alienleaves:*>, <exnihilocreatio:block_infesting_leaves:*>, <exnihilocreatio:block_infested_leaves:*>, <extrautils2:ironwood_leaves:*>, <biomesoplenty:leaves_0:*>, <biomesoplenty:leaves_1:*>, <biomesoplenty:leaves_2:*>, <biomesoplenty:leaves_3:*>, <biomesoplenty:leaves_4:*>, <biomesoplenty:leaves_5:*>, <forestry:leaves.decorative.0:*>, <forestry:leaves.decorative.1:*>, <forestry:leaves.decorative.2:*>, <rustic:leaves:*>] : [<biomesoplenty:ash_block>]});
 add(x, {[<minecraft:hardened_clay:*>] : [<tcomplement:scorched_block>]});
 add(x, {[<minecraft:log:*>, <minecraft:log2:*>] : [<advancedrocketry:charcoallog>]});
 add(x, {[<minecraft:melon_block:*>, <minecraft:hay_block:*>] : [<minecraft:nether_wart_block>]});
 add(x, {[<minecraft:mossy_cobblestone:*>] : [<minecraft:magma>]});
 add(x, {[<minecraft:mycelium:*>] : [<extrautils2:cursedearth>]});
 add(x, {[<minecraft:planks:*>] : [<tconstruct:firewood>]});
-add(x, {[<minecraft:prismarine:*>] : [<minecraft:glowstone>]});
+add(x, {[<minecraft:prismarine:*>, <minecraft:piston:*>] : [<minecraft:glowstone>]});
 add(x, {[<minecraft:redstone_block:*>] : [<quark:smoker>]});
 add(x, {[<minecraft:redstone_ore:*>, <minecraft:coal_ore:*>, <thermalfoundation:ore:*>] : [<minecraft:quartz_ore>]});
 add(x, {[<minecraft:ice:*>] : [<minecraft:obsidian>]});
@@ -547,6 +546,17 @@ add(x, {[<biomesoplenty:flower_0:*>, <biomesoplenty:flower_1:*>] : [<biomesoplen
 add(x, {[<botania:flower:*>] : [<cyclicmagic:fire_dark>]});
 add(x, {[<minecraft:snow_layer:*>] : [<cyclicmagic:fire_frost>]});
 add(x, {[Bucket("water")] : [Bucket("blood")]});
+add(x, {[<additionalcompression:meatfish_compressed:*>, <additionalcompression:meatchicken_compressed:*>, <additionalcompression:meatbeef_compressed:*>, <additionalcompression:meatporkchop_compressed:*>] : [<thaumcraft:flesh_block>]});
+add(x, {[<minecraft:wool:*>] : [<quark:color_slime>]});
+add(x, {[<minecraft:stone_slab:*>] : [<quark:fire_stone_slab>]});
+add(x, {[<minecraft:wooden_slab:*>] : [<appliedenergistics2:sky_stone_slab>]});
+add(x, {[<minecraft:glass_pane:*>] : [<chisel:glasspane1>]});
+add(x, {[<minecraft:cobblestone_wall:*>] : [<mysticalagriculture:cobbled_soulstone_wall>]});
+add(x, {[<minecraft:spruce_stairs:*>, <minecraft:oak_stairs:*>] : [<quark:basalt>]});
+add(x, {[<rats:garbage_pile:*>] : [<tconstruct:soil>]});
+add(x, {[<floralchemy:hedge:*>] : [<twilightforest:thorns>]});
+add(x, {[<minecraft:wooden_door:*>] : [<minecraft:iron_bars>]});
+add(x, {[<minecraft:glass:*>] : [<chisel:glassdyedred>]});
 /**/
 
 

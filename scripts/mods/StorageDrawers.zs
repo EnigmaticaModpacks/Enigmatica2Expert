@@ -160,3 +160,13 @@ val fluidDrawerTooltip as ITooltipFunction = function(item) {
 };
 <fluiddrawers:tank_custom>.addAdvancedTooltip(fluidDrawerTooltip);
 <fluiddrawers:tank>.addAdvancedTooltip(fluidDrawerTooltip);
+
+# [Basic Tank] from [Block of Black Quartz][+2]
+craft.remake(<fluiddrawers:tank>, ["pretty",
+  "Q ⌃ Q",
+  "F   F",
+  "Q ⌃ Q"], {
+  "Q": <immersiveengineering:stone_decoration:9>, # Quickdry Concrete
+  "⌃": <ore:blockQuartzBlack>,                    # Block of Black Quartz
+  "F": <flopper:flopper>,                         # Flopper
+});

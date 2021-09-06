@@ -112,21 +112,15 @@ import crafttweaker.item.IIngredient;
 	[<forestry:thermionic_tubes:3>, <forestry:sturdy_machine>, <forestry:thermionic_tubes:3>], 
 	[polishedStone, <forestry:thermionic_tubes:3>, polishedStone]]);
 
-# Klein Flask
-	recipes.remove(<extrautils2:klein>);
-	recipes.addShapedMirrored("Klein Flask", 
-	<extrautils2:klein>, 
-	[[<tconstruct:clear_glass>, <ore:dustEnder>, <tconstruct:clear_glass>],
-	[<ore:dustEnder>, <minecraft:experience_bottle>, <ore:dustEnder>], 
-	[<tconstruct:clear_glass>, <ore:dustEnder>, <tconstruct:clear_glass>]]);
-
-# Sun crystal
+# [Sun Crystal (Empty)] from [Pure Certus Quartz Crystal][+1]
 recipes.remove(<extrautils2:suncrystal:*>);
-var sunIngr = <liquid:glowstone> * 1000; # <volumetricflask:volumetric_flask_2000>.withTag({Fluid: {FluidName: "glowstone", Amount: 2000}});
-recipes.addShaped(<extrautils2:suncrystal:250>, [
-	[null, sunIngr, null],
-	[sunIngr, <ic2:energy_crystal>.anyDamage(), sunIngr], 
-	[null, sunIngr, null]]);
+craft.remake(<extrautils2:suncrystal:250>, ["pretty",
+  "◊ ◊ ◊",
+  "◊ ⌃ ◊",
+  "◊ ◊ ◊"], {
+  "⌃": <appliedenergistics2:material:10>, # Pure Certus Quartz Crystal
+  "◊": <ore:gemAmber>, # Amber
+});
 
 # Not sure if this would work:
 vanilla.seeds.removeSeed(<extrautils2:enderlilly>);
@@ -293,6 +287,17 @@ craft.remake(<extrautils2:user>, ["pretty",
   "M": <tconstruct:materials:19>,       # Mending Moss
 });
 
+# [Klein Bottle] from [Xorcite Shard][+3]
+craft.remake(<extrautils2:klein>, ["pretty",
+  "C X C",
+  "M □ M",
+  "M □ M"], {
+  "□": <tconstruct:large_plate>.withTag({Material: "xu_demonic_metal"}), # Demonic Large Plate
+  "C": <minecraft:web>,                   # Cobweb
+  "X": <endreborn:death_essence>,         # Xorcite Shard
+  "M": <extrautils2:decorativesolidwood>, # Magical Planks
+});
+
 # [Stone Drum] from [Omnivoir][+1]
 recipes.removeByRecipeName("extrautils2:drum_16");
 craft.make(<extrautils2:drum>, [
@@ -315,27 +320,28 @@ craft.make(<extrautils2:drum:1>, ["pretty",
   "п": <ore:plateDenseIron>,            # Dense Iron Plate
 });
 
-# [Reinforced Large Drum] from [Blue Quartz][+3]
+# [Reinforced Large Drum] from [Klein Bottle][+3]
 recipes.removeByRecipeName("extrautils2:drum_4096");
 craft.make(<extrautils2:drum:2>, ["pretty",
-  "R ⌃ R",
+  "R K R",
   "I I I",
-  "□ ⌃ □"], {
-  "□": <ore:plateLumium>,               # Lumium Plate
-  "R": <tconstruct:materials:14>,       # Reinforcement
-  "⌃": <extrautils2:decorativesolid:6>, # Blue Quartz
-  "I": <extrautils2:drum:1>,            # Iron Drum
+  "□ K □"], {
+  "□": <ore:plateLumium>,         # Lumium Plate
+  "R": <tconstruct:materials:14>, # Reinforcement
+  "I": <extrautils2:drum:1>,      # Iron Drum
+  "K": <extrautils2:klein>,       # Klein Bottle
 });
 
-# [Demonically Gargantuan Drum] from [Any container with High Pressure Steam * 1000 mB][+2]
+# [Demonically Gargantuan Drum] from [High Pressure Steam Bucket][+3]
 recipes.removeByRecipeName("extrautils2:drum_65536");
 craft.make(<extrautils2:drum:3>, ["pretty",
-  "□ A □",
+  "K ~ K",
   "R R R",
-  "□ A □"], {
-  "□": <tconstruct:large_plate>.withTag({Material: "xu_demonic_metal"}), # Demonic Large Plate
-  "A": <liquid:high_pressure_steam> * 1000, # Any container with High Pressure Steam * 1000 mB
-  "R": <extrautils2:drum:2>, # Reinforced Large Drum
+  "⌃ ~ ⌃"], {
+  "R": <extrautils2:drum:2>,            # Reinforced Large Drum
+  "⌃": <extrautils2:decorativesolid:6>, # Blue Quartz
+  "K": <extrautils2:klein>,             # Klein Bottle
+  "~": Bucket("high_pressure_steam"), # High Pressure Steam Bucket
 });
 
 function getCreativeHarvest(item as IItemStack) as IItemStack{

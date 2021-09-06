@@ -368,3 +368,12 @@ mods.rt.RandomThingsTweaker.addImbuingRecipe(
 	<minecraft:potion>.withTag({Potion: "minecraft:water"}),
 	<randomthings:imbue:3>
 );
+
+# [Sound Box] from [Citrus Wood Planks]*6[+1]
+craft.remake(<randomthings:soundbox>, ["pretty",
+  "◊ ◊ ◊",
+  "◊ # ◊",
+  "◊ ◊ ◊"], {
+  "#": <ore:plankWood> * 6, # Citrus Wood Planks
+  "◊": <ore:gemLapis>, # Lapis Lazuli
+});

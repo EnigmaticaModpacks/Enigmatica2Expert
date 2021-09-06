@@ -46,13 +46,13 @@ mods.nuclearcraft.melter.removeRecipeWithInput(<bigreactors:blockgraphite>);
 	[<ore:plateLead>, <ic2:casing:4>, <ore:plateLead>]]);
 
 # Platings Laser Alternatives
-scripts.processUtils.avdRockXmlRecipe("PrecisionLaserEtcher", [<ore:plateLead> * 12, <ore:dustCrystalBinder> * 32, <ore:ingotUranium238> * 32, <ore:ingotTough> * 32], null, [<nuclearcraft:part:3> * 8], null);
-scripts.processUtils.avdRockXmlRecipe("PrecisionLaserEtcher", [<ore:plateLead> * 12, <ore:ingotUranium238> * 32, <ore:ingotTough> * 32], null, [<nuclearcraft:part:2> * 8], null);
-scripts.processUtils.avdRockXmlRecipe("PrecisionLaserEtcher", [<ore:plateLead> * 12, <ore:ingotTough> * 32], null, [<nuclearcraft:part:1> * 8], null);
-scripts.processUtils.avdRockXmlRecipe("PrecisionLaserEtcher", [<ore:plateLead> * 12, <ore:ingotGraphite> * 16], null, [<nuclearcraft:part> * 8], null);
+scripts.processUtils.avdRockXmlRecipeEx("PrecisionLaserEtcher", [<ore:plateLead> * 12, <ore:dustCrystalBinder> * 32, <ore:ingotUranium238> * 32, <ore:ingotTough> * 32], null, [<nuclearcraft:part:3> * 8], null, {power: 70000, timeRequired: 20});
+scripts.processUtils.avdRockXmlRecipeEx("PrecisionLaserEtcher", [<ore:plateLead> * 12, <ore:ingotUranium238> * 32, <ore:ingotTough> * 32], null, [<nuclearcraft:part:2> * 8], null, {power: 100000, timeRequired: 40});
+scripts.processUtils.avdRockXmlRecipeEx("PrecisionLaserEtcher", [<ore:plateLead> * 12, <ore:ingotTough> * 32], null, [<nuclearcraft:part:1> * 8], null, {power: 130000, timeRequired: 60});
+scripts.processUtils.avdRockXmlRecipeEx("PrecisionLaserEtcher", [<ore:plateLead> * 12, <ore:ingotGraphite> * 16], null, [<nuclearcraft:part> * 8], null, {power: 160000, timeRequired: 80});
 
 # Boron Nitride shortcut with AdvRock machines
-scripts.processUtils.avdRockXmlRecipe("ChemicalReactor", null, [<fluid:nitrogen> * 100, <fluid:hydrogen> * 300], null, [<fluid:ammonia> * 2000]);
+scripts.processUtils.avdRockXmlRecipeEx("ChemicalReactor", null, [<fluid:nitrogen> * 800, <fluid:hydrogen> * 2400], null, [<fluid:ammonia> * 16000], {power: 120000, timeRequired: 80});
 scripts.processUtils.avdRockXmlRecipe("Crystallizer", [<ore:dustBoron> * 5], [<fluid:ammonia> * 5000], [<nuclearcraft:gem:1> * 10], null);
 
 
@@ -179,7 +179,7 @@ makeEx(<nuclearcraft:upgrade:1>*2, [
 # Fusion core with 3d prints
 remake("NC Fusion core", <nuclearcraft:fusion_core>, [
 	[<opencomputers:print>, <nuclearcraft:accelerator_electromagnet_idle>, <opencomputers:print>],
-	[<nuclearcraft:chemical_reactor_idle>, <nuclearcraft:voltaic_pile_elite>, <nuclearcraft:chemical_reactor_idle>],
+	[<nuclearcraft:chemical_reactor_idle>, <nuclearcraft:voltaic_pile_elite>.withTag({}), <nuclearcraft:chemical_reactor_idle>],
 	[<opencomputers:print>, <nuclearcraft:accelerator_electromagnet_idle>, <opencomputers:print>]]);
 
 	
@@ -201,7 +201,7 @@ scripts.process.alloy([<ore:ingotIron> * 15, <ore:dustCarbonManganese>], <ore:in
 scripts.process.extract(<minecraft:porkchop>, <nuclearcraft:gelatin> * 8, "except: manufactory");
 scripts.process.extract(<ore:fish>,           <nuclearcraft:gelatin> * 4, "except: manufactory");
 
-scripts.process.crush(<nuclearcraft:roasted_cocoa_beans>, <nuclearcraft:ground_cocoa_nibs>, "except: manufactory", null, null);
+scripts.process.crushEx(<nuclearcraft:roasted_cocoa_beans>, <nuclearcraft:ground_cocoa_nibs>, "except: manufactory", null, null, {bonusType: "MULTIPLY_OUTPUT"});
 recipes.addShapeless("Crush Cocoa", <nuclearcraft:ground_cocoa_nibs>, [<ore:pestleAndMortar>, <nuclearcraft:roasted_cocoa_beans>]);
 
 scripts.process.squeeze([<nuclearcraft:ground_cocoa_nibs>], <liquid:cocoa_butter> * 144, "except: FluidExtractor", <nuclearcraft:cocoa_solids>);
@@ -456,3 +456,22 @@ if(!isNull(loadedMods["immersivetech"])) {
 } else {
 	mods.nuclearcraft.dissolver.addRecipe(<minecraft:coal>, <liquid:carbon_dioxide> * 1000, <liquid:sic_vapor> * 1000);
 }
+
+# More melting compat
+mods.nuclearcraft.melter.addRecipe(<ore:nuggetManyullyn>, <fluid:manyullyn> * (144/9));
+mods.nuclearcraft.melter.addRecipe(<ore:ingotManyullyn>, <fluid:manyullyn> * 144);
+mods.nuclearcraft.melter.addRecipe(<ore:blockManyullyn>, <fluid:manyullyn> * (144*9));
+
+mods.nuclearcraft.melter.addRecipe(<threng:material>, <fluid:fluix_steel> * 144);
+mods.nuclearcraft.ingot_former.addRecipe([<fluid:fluix_steel>*144, <threng:material>, 1.0, 1.0]);
+
+# Uranium RTG should require [Advanced Plating] instead of Basic
+# [Uranium RTG] from [Uranium-238 Block][+2]
+craft.remake(<nuclearcraft:rtg_uranium>, ["pretty",
+  "□ ▬ □",
+  "▬ ■ ▬",
+  "□ ▬ □"], {
+  "■": <ore:blockUranium238>, # Uranium-238 Block
+  "□": <ore:plateAdvanced>,   # Advanced Plating
+  "▬": <ore:ingotGraphite>,   # Graphite Ingot
+});

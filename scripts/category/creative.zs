@@ -344,22 +344,23 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 	<opencomputers:screen2>, <opencomputers:screen1>]);
 
 
-# Rat upgrade
-craft.make( <rats:rat_upgrade_creative>, ["pretty",
-		"▬ ▢ ▢ ▢ ▢ ▢ ▬",
-		"▢ ⩉ ☼ ☼ ☼ ⩉ ▢",
-		"▢ ☼ ◊ ♥ ◊ ☼ ▢",
-		"▢ ☼ ♥ ◪ ♥ ☼ ▢",
-		"▢ ☼ ◊ ♥ ◊ ☼ ▢",
-		"▢ ⩉ ☼ ☼ ☼ ⩉ ▢",
-		"▬ ▢ ▢ ▢ ▢ ▢ ▬"], {
-	"▢": <ore:cheeseWheels>,
-	"▬": <extendedcrafting:material:24>,
-	"☼": <rats:chunky_cheese_token>,
-	"⩉": <botania:brewflask>.withTag({brewKey: "overload"}),
-	"◊": <scalinghealth:difficultychanger>,
-	"♥": <scalinghealth:heartcontainer>,
-	"◪": <rats:rat_upgrade_nonbeliever>,
+# [Rat Upgrade: Creative] from [Rat Upgrade_ Nonbeliever][+7]
+craft.remake(<rats:rat_upgrade_creative>, ["pretty",
+  "▬ W W W W W ▬",
+  "W F R R R F W",
+  "W R ▲ H ▲ R W",
+  "W R C § C R W",
+  "W R ▲ H ▲ R W",
+  "W F R R R F W",
+  "▬ W W W W W ▬"], {
+  "R": <ore:myrmexResinGlass>,         # Desert Myrmex Resin Glass
+  "▲": <scalinghealth:heartdust>,      # Heart Dust
+  "C": <rats:chunky_cheese_token>,     # Chunky Cheese Token
+  "F": <botania:brewflask>.withTag({brewKey: "overload"}), # Flask of Overload (6)
+  "W": <ore:cheeseWheels>,             # Cheese Wheel (Sheep)
+  "§": <rats:rat_upgrade_nonbeliever>, # Rat Upgrade: Nonbeliever
+  "H": <scalinghealth:heartcontainer>, # Heart Container
+  "▬": <ore:ingotCrystaltine>,         # Crystaltine Ingot
 });
 
 

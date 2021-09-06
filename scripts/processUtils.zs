@@ -187,10 +187,12 @@ function AR_inputLiquids(inputLiquids as ILiquidStack[]) as string {
   return s;
 }
 
-function avdRockXmlRecipe(filename as string, 
+function avdRockXmlRecipeEx(filename as string, 
   inputItems as IIngredient[], inputLiquids as ILiquidStack[],
-  outputItems as IItemStack[], outputLiquids as ILiquidStack[]) as void {
+  outputItems as IItemStack[], outputLiquids as ILiquidStack[],
+  options as IData) as void {
   if(!utils.DEBUG) return;
+  val dOpt = D(options);
   
   # Dumpt all names for inputs and outputs
   var out_name as string = null;
@@ -214,7 +216,13 @@ function avdRockXmlRecipe(filename as string,
 
   # Add prefix (reverse order)
   s = '  <!-- [' ~ out_name ~ '] -->\n' ~
-      '  <Recipe timeRequired="10" power ="40000"><input>\n' ~ s;
+      '  <Recipe timeRequired="'~dOpt.getInt('timeRequired', 10)~'" power="'~dOpt.getInt('power', 40000)~'"><input>\n' ~ s;
 
   xmlRecipe("./config/advRocketry/"~filename~".xml", s);
+}
+
+function avdRockXmlRecipe(filename as string, 
+  inputItems as IIngredient[], inputLiquids as ILiquidStack[],
+  outputItems as IItemStack[], outputLiquids as ILiquidStack[]) as void {
+    avdRockXmlRecipeEx(filename, inputItems, inputLiquids, outputItems, outputLiquids, null);
 }

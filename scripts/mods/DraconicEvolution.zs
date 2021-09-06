@@ -49,7 +49,7 @@ import scripts.craft.grid.Grid;
 	recipes.remove(<draconicevolution:wyvern_core>);
 	scripts.wrap.forestry.Carpenter.addRecipe(<draconicevolution:wyvern_core>, 
 	[[<ore:shulkerShell>, <draconicevolution:draconic_core>, <ore:shulkerShell>],
-	[<draconicevolution:draconic_core>, <minecraft:nether_star>, <draconicevolution:draconic_core>], 
+	[<draconicevolution:draconic_core>, <minecraft:sponge>, <draconicevolution:draconic_core>], 
 	[<ore:ingotLudicrite>, <environmentaltech:pladium>, <ore:ingotLudicrite>]], 
 	40, <liquid:mana> * 1000);
 
@@ -155,4 +155,36 @@ craft.remake(<draconicevolution:particle_generator>, ["pretty",
   "■": <ore:blockDraconium>,                 # Draconium Block
   "D": <draconicevolution:infused_obsidian>, # Draconium Infused Obsidian
   "▬": <ore:ingotDemonicMetal>,              # Demon Ingot
+});
+
+# [Energy Core] from [Basalt Sediment][+3]
+craft.remake(<draconicevolution:energy_storage_core>, ["pretty",
+  "□ D □",
+  "▬ B ▬",
+  "□ ▬ □"], {
+  "□": <tconstruct:large_plate>.withTag({Material: "xu_demonic_metal"}), # Demonic Large Plate
+  "B": <advancedrocketry:basalt>,         # Basalt Sediment
+  "D": <draconicevolution:draconic_core>, # Draconic Core
+  "▬": <ore:ingotDraconium>,              # Draconium Ingot
+});
+
+# [Energy Pylon]*2 from [Basalt Sediment][+3]
+craft.remake(<draconicevolution:energy_pylon> * 2, ["pretty",
+  "□ D □",
+  "▬ B ▬",
+  "□ ▬ □"], {
+  "□": <ore:plateTitanium>,               # Titanium Plate
+  "B": <advancedrocketry:basalt>,         # Basalt Sediment
+  "D": <draconicevolution:draconic_core>, # Draconic Core
+  "▬": <ore:ingotDraconium>,              # Draconium Ingot
+});
+
+# [Energy Core Stabilizer] from [Draconic Core][+2]
+craft.remake(<draconicevolution:particle_generator:2>, ["pretty",
+  "¤ ■ ¤",
+  "■ D ■",
+  "¤ ■ ¤"], {
+  "■": <ore:blockAmber>,                  # Amber Block
+  "¤": <ore:gearMithril>,                 # Mana Infused Gear
+  "D": <draconicevolution:draconic_core>, # Draconic Core
 });

@@ -1,5 +1,6 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.liquid.ILiquidStack;
 import mods.industrialforegoing.BioReactor;
 import mods.industrialforegoing.ProteinReactor;
 import mods.industrialforegoing.FluidDictionary;
@@ -28,23 +29,12 @@ function fluidDict(ins as string[]) {
 
 	FluidDictionary.add("ic2hydrogen", "hydrogen", 1);
 
-	var hydrogen = [
-		"hydrogen",
-		"liquidhydrogen",
-		"ic2hydrogen"
-	] as string[];
-
-	var honey = [
-		"animania_honey",
-		"for.honey",
-		"honey"
-	] as string[];
-
-	fluidDict(hydrogen);
-	fluidDict(honey);
+	fluidDict(["hydrogen", "liquidhydrogen", "ic2hydrogen"]);
+	fluidDict(["animania_honey", "for.honey", "honey"]);
 
 	fluidDict(["ic2milk", "milk"]);
 	fluidDict(["if.protein", "protein"]);
+	fluidDict(["ic2creosote", "creosote"]);
 
 # Protein Reactor, additional entires
 	for item in <ore:listAllmeatraw>.items {
@@ -328,3 +318,15 @@ craft.remake(<industrialforegoing:enchantment_extractor>, ["pretty",
   "M": <teslacorelib:machine_case>, # Machine Case
   "n": <thaumcraft:fabric:*>,       # Enchanted Fabric
 });
+
+# [Energy Field Addon] from [Range Addon][+2]
+craft.remake(<industrialforegoing:energy_field_addon>, ["pretty",
+  "F ▬ F",
+  "▬ R ▬",
+  "F ▬ F"], {
+  "R": <industrialforegoing:range_addon:*>, # Range Addon
+  "F": <fluxnetworks:flux>,                 # Flux
+  "▬": <ore:ingotPinkMetal>,                # Pink Slime Ingot
+});
+
+

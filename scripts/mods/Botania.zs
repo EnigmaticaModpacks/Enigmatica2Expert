@@ -273,3 +273,13 @@ mods.botania.ManaInfusion.addInfusion(<botania:manaresource:2>, <rats:rat_diamon
 
 # Way cheaper tiny potato dupe
 mods.botania.ManaInfusion.addInfusion(<botania:tinypotato> * 2, <botania:tinypotato>, 1);
+
+# Make Crafty Crate tables free
+mods.botania.ElvenTrade.removeRecipe(<botania_tweaks:basic_extended_crafty_crate>);
+mods.botania.ElvenTrade.removeRecipe(<botania_tweaks:advanced_extended_crafty_crate>);
+mods.botania.ElvenTrade.removeRecipe(<botania_tweaks:elite_extended_crafty_crate>);
+mods.botania.ElvenTrade.removeRecipe(<botania_tweaks:ultimate_extended_crafty_crate>);
+mods.botania.ElvenTrade.addRecipe([<botania_tweaks:basic_extended_crafty_crate>, <extendedcrafting:table_basic>], [<botania:opencrate:1>, <extendedcrafting:table_basic>]);
+mods.botania.ElvenTrade.addRecipe([<botania_tweaks:advanced_extended_crafty_crate>, <extendedcrafting:table_advanced>], [<botania:opencrate:1>, <extendedcrafting:table_advanced>]);
+mods.botania.ElvenTrade.addRecipe([<botania_tweaks:elite_extended_crafty_crate>, <extendedcrafting:table_elite>], [<botania:opencrate:1>, <extendedcrafting:table_elite>]);
+mods.botania.ElvenTrade.addRecipe([<botania_tweaks:ultimate_extended_crafty_crate>, <extendedcrafting:table_ultimate>], [<botania:opencrate:1>, <extendedcrafting:table_ultimate>]);

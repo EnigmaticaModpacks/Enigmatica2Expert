@@ -172,21 +172,27 @@ craft.reshapeless(<mekanismgenerators:solarpanel>, "□▬A", {
   "▬": <ore:ingotOsmium>,           # Osmium Ingot
 });
 
-# Solar Generator
-	recipes.remove(<mekanismgenerators:generator:1>);
-	recipes.addShaped("Solar Generator", 
-	<mekanismgenerators:generator:1>, 
-	[[<mekanismgenerators:solarpanel>, <mekanismgenerators:solarpanel>, <mekanismgenerators:solarpanel>],
-	[<ore:alloyAdvanced>, <ic2:te:8>, <ore:alloyAdvanced>], 
-	[<ore:dustOsmium>, <ore:circuitBasic>, <ore:dustOsmium>]]);
+# [Solar Generator] from [Osmium Dust][+2]
+craft.remake(<mekanismgenerators:generator:1>, [
+  "S",
+  "▲",
+  "B"], {
+  "▲": <ore:dustOsmium>,                # Osmium Dust
+  "B": <ore:circuitBasic>,              # Electronic Circuit
+  "S": <mekanismgenerators:solarpanel>, # Solar Panel
+});
 
-# Advanced Solar Generator
-	recipes.remove(<mekanismgenerators:generator:5>);
-	recipes.addShaped("Advanced Solar Generator", 
-	<mekanismgenerators:generator:5>, 
-	[[<mekanismgenerators:generator:1>, <mekanism:reinforcedalloy>, <mekanismgenerators:generator:1>],
-	[<mekanismgenerators:generator:1>, <ore:alloyElite>, <mekanismgenerators:generator:1>], 
-	[<ore:ingotOsmium>, <tconstruct:large_plate>.withTag({Material: "iron"}), <ore:ingotOsmium>]]);
+# [Advanced Solar Generator] from [Iron Large Plate][+3]
+craft.remake(<mekanismgenerators:generator:5>, ["pretty",
+  "S E S",
+  "S E S",
+  "▲ □ ▲"], {
+  "□": <tconstruct:large_plate>.withTag({Material: "iron"}), # Iron Large Plate
+  "▲": <ore:dustOsmium>,                # Osmium Dust
+  "S": <mekanismgenerators:solarpanel>, # Solar Panel
+  "E": <ore:alloyElite>,                # Reinforced Alloy
+});
+
 	
 # Digital Miner
 	recipes.remove(<mekanism:machineblock:4>);
@@ -265,8 +271,8 @@ for i,list in mekTiers {
 		"⌂": <mekanism:basicblock:8>, # Steel Casing
 		"T": <mekanism:tierinstaller>.definition.makeStack(i),
 		"d": <mekanism:speedupgrade>,
-		"Ϟ": i==0 ? <mekanism:energyupgrade>        : <mekanism:basicblock2:3>.withTag({tier: i - 1}),
-		"∑": i==0 ? <nuclearcraft:lithium_ion_cell> : <mekanism:basicblock2:4>.withTag({tier: i - 1}),
+		"Ϟ": i==0 ? <mekanism:energyupgrade> : <mekanism:basicblock2:3>.withTag({tier: i - 1}),
+		"∑": i==0 ? <nuclearcraft:lithium_ion_cell>.withTag({}) : <mekanism:basicblock2:4>.withTag({tier: i - 1}),
 		"◘": i==0 ? <ore:circuitBasic> as IIngredient : mekTiers[i - 1][1],
 	} as IIngredient[string];
 
@@ -483,3 +489,41 @@ craft.remake(<mekanism:machineblock2:12>, ["pretty",
   "  F  "], pumpIngrs
 );
 
+# [Enrichment Chamber] from [Steel Casing][+3]
+craft.make(<mekanism:machineblock>, ["pretty",
+  "A ▬ A",
+  "B ⌂ B",
+  "A ▬ A"], {
+  "A": <ore:itemEnrichedAlloy>, # Enriched Alloy
+  "B": <ore:circuitBasic>,      # Basic Control Circuit
+  "⌂": <mekanism:basicblock:8>, # Steel Casing
+  "▬": <ore:ingotFakeIron>,     # Iron Ingot
+});
+
+# [Energized Smelter] from [Steel Casing][+3]
+craft.make(<mekanism:machineblock:10>, ["pretty",
+  "A ▬ A",
+  "▬ ⌂ ▬",
+  "A F A"], {
+  "A": <ore:itemEnrichedAlloy>, # Enriched Alloy
+  "⌂": <mekanism:basicblock:8>, # Steel Casing
+  "F": <minecraft:furnace>,     # Furnace
+  "▬": <ore:ingotFakeIron>,     # Iron Ingot
+});
+
+# Remake salt block
+recipes.remove(<mekanism:saltblock>);
+recipes.addShapeless("salt block", <mekanism:saltblock>, [<ore:itemSalt>,<ore:itemSalt>,<ore:itemSalt>,<ore:itemSalt>]);
+
+# More infuser recipes
+recipes.remove(<nuclearcraft:glowing_mushroom>);
+scripts.wrap.mekanism.infuser.addRecipe("CARBON",  50, <industrialforegoing:pink_slime>, <enderio:item_material:50>);
+scripts.wrap.mekanism.infuser.addRecipe("CARBON",  50, <ore:animaniaEggs>, <enderio:item_material:50>);
+scripts.wrap.mekanism.infuser.addRecipe("FUNGI" ,  20, <ore:dustGlowstone>, <nuclearcraft:glowing_mushroom>);
+scripts.wrap.mekanism.infuser.addRecipe("BIO"   , 100, <ore:eternalLifeEssence> * 4, <botania:overgrowthseed>);
+
+# Infinite Salt source
+scripts.wrap.extendedcrafting.CompressionCrafting.addRecipe(
+	<mekanism:basicblock:6>.withTag({tier: 4, mekData: {storedItem: {id: "mekanism:salt", Count: 1 as byte, Damage: 0 as short}, itemCount: 2147483647}}), 
+	<mekanism:salt>, 2000, <mekanism:basicblock:6>.withTag({tier: 3}), 2000000, 100000
+);

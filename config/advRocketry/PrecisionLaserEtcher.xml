@@ -32,7 +32,7 @@
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
 <Recipes useDefault="true">
-	<Recipe timeRequired="1200" power="600">
+	<Recipe timeRequired="1200" power="60000">
 		<input>
 			<itemStack>advancedrocketry:lens</itemStack>
 			<itemStack>ic2:plate;1;2</itemStack>
@@ -43,7 +43,7 @@
 			<itemStack>advancedrocketry:itemcircuitplate;2;1</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="1200" power="400">
+	<Recipe timeRequired="1200" power="40000">
 		<input>
 			<itemStack>advancedrocketry:lens</itemStack>
 			<itemStack>ic2:plate;1;2</itemStack>
@@ -56,7 +56,7 @@
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Elite Plating] -->
-	<Recipe timeRequired="10" power="40000">
+	<Recipe timeRequired="20" power="70000">
 		<input>
 			<oreDict>plateLead 12</oreDict>
 			<oreDict>dustCrystalBinder 32</oreDict>
@@ -69,7 +69,7 @@
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [DU Plating] -->
-	<Recipe timeRequired="10" power="40000">
+	<Recipe timeRequired="40" power="100000">
 		<input>
 			<oreDict>plateLead 12</oreDict>
 			<oreDict>ingotUranium238 32</oreDict>
@@ -81,7 +81,7 @@
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Advanced Plating] -->
-	<Recipe timeRequired="10" power="40000">
+	<Recipe timeRequired="60" power="130000">
 		<input>
 			<oreDict>plateLead 12</oreDict>
 			<oreDict>ingotTough 32</oreDict>
@@ -92,7 +92,7 @@
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Basic Plating] -->
-	<Recipe timeRequired="10" power="40000">
+	<Recipe timeRequired="80" power="160000">
 		<input>
 			<oreDict>plateLead 12</oreDict>
 			<oreDict>ingotGraphite 16</oreDict>

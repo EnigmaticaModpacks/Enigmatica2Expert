@@ -494,9 +494,9 @@ mods.thermalexpansion.Crucible.removeRecipe(<immersiveengineering:metal_decorati
 
 
 # [Concrete Trapdoor] from [Concrete]
-craft.remake(<engineersdoors:trapdoor_concrete>, ["pretty",
-  "c c",
-  "c c"], {
+craft.remake(<engineersdoors:trapdoor_concrete> * 2, ["pretty",
+  "c c c",
+  "c c c"], {
   "c": <ore:concrete>, # Concrete
 });
 
@@ -512,3 +512,23 @@ if(!isNull(loadedMods["immersivetech"])) {
 	mods.immersivetechnology.Distiller.removeRecipe(<liquid:water>);
 	mods.immersivetechnology.Distiller.addRecipe(<liquid:water> * 1000, <liquid:distwater> * 500, <mekanism:salt>, 2000, 20, 1.0f);
 }
+
+# Way cheaper cause cool looking and need pumping out to function
+# [Fluid Pipe]*32 from [Iron Plate]
+craft.remake(<immersiveengineering:metal_device1:6> * 32, ["pretty",
+  "□ □ □",
+  "     ",
+  "□ □ □"], {
+  "□": <ore:plateIron>, # Iron Plate
+});
+
+# Cheaper because it can hold only 100k RF and cant be tweaked
+# [Capacitor Backpack] from [Redstone][+2]
+recipes.removeShaped(<immersiveengineering:powerpack>);
+craft.make(<immersiveengineering:powerpack>, ["pretty",
+  "  ▬  ",
+  "# ♥ #"], {
+  "#": <ore:plankTreatedWood>, # Treated Wood Planks
+  "♥": <ore:dustRedstone>,     # Redstone
+  "▬": <ore:ingotLead>,        # Lead Ingot
+});

@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded enderio
-// Uses of this mod: 5
+// Uses of this mod: 6
 
 
 //####################################################
@@ -45,10 +45,10 @@ zenClass Class_AlloySmelter { zenConstructor() {}
 static AlloySmelter as Class_AlloySmelter = Class_AlloySmelter();
 
 //####################################################
-// Uses of this class: 1
+// Uses of this class: 2
 zenClass Class_SagMill { zenConstructor() {}
 
-	// Uses of this method: 1
+	// Uses of this method: 2
 	function addRecipe(output as IItemStack[], chances as float[], input as IIngredient) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.enderio.SagMill.addRecipe'~
 			serialize.args([serialize.IItemStack__(output), serialize.string__(chances), serialize.IIngredient(input)]));

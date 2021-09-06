@@ -323,8 +323,8 @@ mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft
 mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft:clock>);
 
 # Process Geodes
-scripts.process.crush(<thermalfoundation:geode>, <mysticalagradditions:insanium:5>, "No exceptions", 
-  [<mysticalagradditions:insanium:5>], [0.25]);
+scripts.process.crushEx(<thermalfoundation:geode>, <mysticalagradditions:insanium:5>, "No exceptions", 
+  [<mysticalagradditions:insanium:5>], [0.25], {bonusType: "MULTIPLY_OUTPUT"});
 
 #####################################
 # Remake Hardened versions of equipment
@@ -675,3 +675,8 @@ scripts.process.alloy([<ore:ingotSilver> * 3, <ore:ingotCopper>], <nuclearcraft:
 
 # Stone Gear recipe
 scripts.wrap.thermalexpansion.Compactor.addGearRecipe(<thermalfoundation:material:23>, <minecraft:cobblestone:*> * 4, 16000);
+
+# Way to craft Oil Ore (alternative way to get Tar)
+scripts.wrap.tconstruct.Casting.addBasinRecipe(<thermalfoundation:ore_fluid>, <minecraft:sand>, <liquid:oil>, 2000);
+scripts.wrap.tconstruct.Casting.addBasinRecipe(<thermalfoundation:ore_fluid:5>, <minecraft:sand:1>, <liquid:oil>, 2000);
+scripts.wrap.tconstruct.Casting.addBasinRecipe(<thermalfoundation:ore_fluid:1>, <minecraft:gravel>, <liquid:oil>, 2000);

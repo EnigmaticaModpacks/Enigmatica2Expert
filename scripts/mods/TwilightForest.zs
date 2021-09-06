@@ -69,3 +69,69 @@ craft.remake(<twilightforest:ice_bomb> * 4, ["pretty",
   "I": <forestry:crafting_material:5>, # Ice Shard
   "◊": <ore:gemPearl>                  # Shulker Pearl
 });
+
+# [Sickly Twilight Oak Sapling]*8 from [Moonworm][+1]
+craft.remake(<twilightforest:twilight_sapling> * 8, ["pretty",
+  "S S S",
+  "S M S",
+  "S S S"], {
+  "S": <ore:treeSapling>,         # Oak Sapling
+  "M": <twilightforest:moonworm>, # Moonworm
+});
+
+# [Tree of Transformation Sapling] from [Naga Scale][+3]
+craft.remake(<twilightforest:twilight_sapling:6>, ["pretty",
+  "L N L",
+  "L # L",
+  "T # T"], {
+  "#": <twilightforest:twilight_log:2>,    # Mangrove Wood
+  "T": <twilightforest:torchberries>,      # Torchberries
+  "L": <integrateddynamics:menril_leaves>, # Menril Leaves
+  "N": <twilightforest:naga_scale>,        # Naga Scale
+});
+
+# [Sorting Tree Sapling] from [Naga Scale][+3]
+craft.remake(<twilightforest:twilight_sapling:8>, ["pretty",
+  "L N L",
+  "L # L",
+  "T # T"], {
+  "#": <twilightforest:twilight_log:1>, # Canopy Tree Wood
+  "T": <twilightforest:torchberries>,   # Torchberries
+  "L": <twilightforest:magic_leaves:1>, # Leaves of Transformation
+  "N": <twilightforest:naga_scale>,     # Naga Scale
+});
+
+# [Tree of Time Sapling] from [Naga Scale][+3]
+craft.remake(<twilightforest:twilight_sapling:5>, ["pretty",
+  "L N L",
+  "L # L",
+  "T # T"], {
+  "#": <twilightforest:twilight_log:3>, # Darkwood
+  "T": <twilightforest:torchberries>,   # Torchberries
+  "L": <twilightforest:magic_leaves:1>, # Leaves of Transformation
+  "N": <twilightforest:naga_scale>,     # Naga Scale
+});
+
+# [Miner's Tree Sapling] from [Huge Stalk][+5]
+craft.remake(<twilightforest:twilight_sapling:7>, ["pretty",
+  "L N L",
+  "L H L",
+  "≢ ≠ #"], {
+  "≠": <twilightforest:magic_log:3>,       # Sortingwood
+  "≢": <twilightforest:magic_log:1>,       # Transwood
+  "#": <twilightforest:magic_log>,         # Timewood
+  "H": <twilightforest:huge_stalk>,        # Huge Stalk
+  "L": <twilightforest:twilight_leaves:3>, # Rainbow Oak Leaves
+  "N": <twilightforest:naga_scale>,        # Naga Scale
+});
+
+# [Robust Twilight Oak Sapling] from [Cicada][+3]
+craft.remake(<twilightforest:twilight_sapling:4>, ["pretty",
+  "F C F",
+  "# ≢ #",
+  "# ≢ #"], {
+  "≢": <twilightforest:magic_log:2>,  # Minewood
+  "#": <twilightforest:twilight_log>, # Twilight Oak Wood
+  "C": <twilightforest:cicada>,       # Cicada
+  "F": <twilightforest:firefly>,      # Firefly
+});

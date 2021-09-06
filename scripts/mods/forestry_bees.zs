@@ -283,11 +283,11 @@ zenClass BeeHelper {
 	function build() {
 			next("Wacky"   ); scripts.process.melt(c['💧'], <fluid:construction_alloy> * 144, "No exceptions");
 			next("Chilled" ); /* Defined in bees.cfg */
-			next("Oozy"    ); scripts.process.crush(c['💧'], c['🍯'], "No exceptions", [currOutList()[3]], [0.25]);
+			next("Oozy"    ); scripts.process.crushEx(c['💧'], c['🍯'], "No exceptions", [currOutList()[3]], [0.25], {bonusType: "MULTIPLY_OUTPUT"});
 			next("Elysian" ); scripts.process.compress(c['💧'], c['🍯'], "No exceptions");
 			next("Gallant" ); furnace.addRecipe(c['🍯'] * 2, c['💧']);
 			next("Dull"    ); scripts.process.saw(c['⚙️'], c['🍯'] * 7, "except: shapeless");
-			next("Scrappy" ); scripts.process.crush(c['💧'], c['🍯'], "No exceptions", [c['🍯'], c['🍯'], c['🍯']], [0.50, 0.25, 0.10]);
+			next("Scrappy" ); scripts.process.crushEx(c['💧'], c['🍯'], "No exceptions", [c['🍯'], c['🍯'], c['🍯']], [0.50, 0.25, 0.10], {bonusType: "MULTIPLY_OUTPUT"});
 			next("Potter"  ); addTinkersCentrifuges();
 			next("Tinsmith"); addTinkersCentrifuges();
 			next("Рaughty" ); mods.botania.ManaInfusion.addInfusion(currOutList()[2], c['💧'], 100); mods.botania.ManaInfusion.addAlchemy(currOutList()[3], c['💧'], 200); mods.botania.ManaInfusion.addConjuration(currOutList()[4], c['💧'], 500); 

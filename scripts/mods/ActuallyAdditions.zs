@@ -309,13 +309,16 @@ scripts.process.crush(<ore:gemQuartzBlack>, <actuallyadditions:item_dust:7>, cru
 scripts.process.crush(<ore:blockQuartzBlack>, <actuallyadditions:item_dust:7> * 9, crushExceptions ~ " Manufactory", null, null);
 
 # Recycle Quark crystals
-var crystalCrushExcept = "Macerator Grindstone AEGrinder ThermalCentrifuge mekCrusher MekEnrichment";
-scripts.process.crush(<quark:crystal:1>, <actuallyadditions:item_crystal_shard>   * 3, crystalCrushExcept, null, null);
-scripts.process.crush(<quark:crystal:6>, <actuallyadditions:item_crystal_shard:1> * 3, crystalCrushExcept, null, null);
-scripts.process.crush(<quark:crystal:5>, <actuallyadditions:item_crystal_shard:2> * 3, crystalCrushExcept, null, null);
-scripts.process.crush(<quark:crystal:8>, <actuallyadditions:item_crystal_shard:3> * 3, crystalCrushExcept, null, null);
-scripts.process.crush(<quark:crystal:4>, <actuallyadditions:item_crystal_shard:4> * 3, crystalCrushExcept, null, null);
-scripts.process.crush(<quark:crystal>  , <actuallyadditions:item_crystal_shard:5> * 3, crystalCrushExcept, null, null);
+function recycleCrystal(input as IItemStack, output as IItemStack) {
+	scripts.process.crush(input, output, "Macerator Grindstone AEGrinder ThermalCentrifuge mekCrusher MekEnrichment SagMill", null, null);
+	scripts.processWork.workEx("SagMill", null, [input], null, [output], null, null, null, {bonusType: "MULTIPLY_OUTPUT"});
+}
+recycleCrystal(<quark:crystal:1>, <actuallyadditions:item_crystal_shard>   * 3);
+recycleCrystal(<quark:crystal:6>, <actuallyadditions:item_crystal_shard:1> * 3);
+recycleCrystal(<quark:crystal:5>, <actuallyadditions:item_crystal_shard:2> * 3);
+recycleCrystal(<quark:crystal:8>, <actuallyadditions:item_crystal_shard:3> * 3);
+recycleCrystal(<quark:crystal:4>, <actuallyadditions:item_crystal_shard:4> * 3);
+recycleCrystal(<quark:crystal>  , <actuallyadditions:item_crystal_shard:5> * 3);
 
 # Other better ways to make Bio-mash and other food
 scripts.process.mash(<ore:listAllseed>*4,   <actuallyadditions:item_misc:1>*4, "no exceptions");
@@ -522,15 +525,15 @@ craft.remake(<actuallyadditions:block_misc:8>, ["pretty",
 });
 
 # [Basic Coil] from [Aluminum Ingot*2][+2]
-scripts.processUtils.avdRockXmlRecipe("PrecisionAssembler",
+scripts.processUtils.avdRockXmlRecipeEx("PrecisionAssembler",
 	[<ore:stickWood> * 36,<ore:ingotAluminium> * 24,<ore:ingotFakeIron> * 24], null,
-	[<actuallyadditions:item_misc:7> * 12], null
+	[<actuallyadditions:item_misc:7> * 12], null, {power: 70000, timeRequired: 20}
 );
 
 # [Advanced Coil] from [Aluminum Ingot*2][+3]
-scripts.processUtils.avdRockXmlRecipe("PrecisionAssembler",
+scripts.processUtils.avdRockXmlRecipeEx("PrecisionAssembler",
 	[<ore:stickWood> * 60, <ore:ingotGold> * 12, <ore:ingotAluminium> * 24, <ore:ingotFakeIron> * 24,], null,
-	[<actuallyadditions:item_misc:8> * 12], null
+	[<actuallyadditions:item_misc:8> * 12], null, {power: 140000, timeRequired: 40}
 );
 
 # New dough mechanic
@@ -578,4 +581,4 @@ craft.remake(<actuallyadditions:item_food:8>, ["pretty",
 
 # Harder Void Stone (was from coal)
 mods.actuallyadditions.AtomicReconstructor.removeRecipe(<actuallyadditions:block_crystal:3>);
-mods.actuallyadditions.AtomicReconstructor.addRecipe(<actuallyadditions:block_crystal:3>, <actuallyadditions:block_misc:2>, 1000);
+scripts.wrap.actuallyadditions.AtomicReconstructor.addRecipe(<actuallyadditions:block_crystal:3>, <actuallyadditions:block_misc:2>, 1000);

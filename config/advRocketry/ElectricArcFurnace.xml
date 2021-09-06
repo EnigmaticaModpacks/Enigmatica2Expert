@@ -123,6 +123,18 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Energetic Alloy Block] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>minecraft:redstone_block 1</itemStack>
+			<itemStack>minecraft:glowstone_dust 9</itemStack>
+			<itemStack>minecraft:gold_block 1</itemStack>
+		</input>
+		<output>
+			<itemStack>enderio:block_alloy 1 1</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Melodic Alloy Ingot] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -257,6 +269,17 @@
 		</input>
 		<output>
 			<itemStack>enderio:item_alloy_ingot 1 5</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Vibrant Alloy Block] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>enderio:block_alloy 1 1</itemStack>
+			<itemStack>extendedcrafting:material 1 48</itemStack>
+		</input>
+		<output>
+			<itemStack>enderio:block_alloy 2 2</itemStack>
 		</output>
 	</Recipe>
 </Recipes>

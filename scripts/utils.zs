@@ -397,5 +397,5 @@ global Soul as function(string)IItemStack = function (name as string) as IItemSt
 # Fluid Cell is like bucket, but stackable
 # ########################
 global FluidCell as function(string)IItemStack = function (name as string) as IItemStack {
-	return <ic2:fluid_cell>.withTag({FluidName: name, Amount: 1000});
+	return <ic2:fluid_cell>.withTag({Fluid: {FluidName: name, Amount: 1000}});
 };

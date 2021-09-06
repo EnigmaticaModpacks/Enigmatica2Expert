@@ -35,6 +35,17 @@ import scripts.processUtils.enderioXmlRecipe;
 
 static recipeCount as int = 0 as int;
 
+static staticOpts as IData = {} as IData;
+
+function getOption(options as IData, field as string) as IData {
+  return (!isNull(options) && !isNull(options.memberGet(field)))
+    ? options.memberGet(field)
+    : (!isNull(staticOpts) && !isNull(staticOpts.memberGet(field))
+      ? staticOpts.memberGet(field)
+      : null
+    );
+}
+
 # Picks one machine to inject recipe in it
 # Function receive all possible combinations of input and outputs of one machine
 # Any argument can be null except machine name
@@ -464,7 +475,11 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       }
       
       if (combinedOutput.length > 0 && combinedChances.length >= combinedOutput.length) {
-        scripts.wrap.enderio.SagMill.addRecipe(combinedOutput, combinedChances, inputIngr0);
+        val bonusType = getOption(options, 'bonusType');
+        if(isNull(bonusType))
+          scripts.wrap.enderio.SagMill.addRecipe(combinedOutput, combinedChances, inputIngr0);
+        else
+          scripts.wrap.enderio.SagMill.addRecipe(combinedOutput, combinedChances, inputIngr0, bonusType.asString());
       } else {
         return info(machineNameAnyCase, getItemName(inputIngr0.itemArray[0]), "received work, but no output or extra was found");
       }

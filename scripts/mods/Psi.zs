@@ -54,8 +54,8 @@ craft.remake(<psi:cad_assembly:5>, ["pretty",
   "  D S * □ □      ",
   "    D S * □ D    ",
   "      D S ◘ ▲ D  ",
-  "        ◊ ▲ ◘ ▲ D",
-  "      D ■ ■ ▲ F  ",
+  "        ◊ ■ ◘ F D",
+  "      D ■ ■ ■ F  ",
   "      ■ ■ ■ D    ",
   "      D ■ D      "], {
   "S": utils.tryCatch("psicosts:creative_cell", <psi:cad_assembly:4>), # Star of PSI

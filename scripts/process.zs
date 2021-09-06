@@ -116,15 +116,19 @@ function sawWood(input as IIngredient, output as IItemStack, exceptions as strin
 
 # Crush (grind) item to get it dusts and byproducts
 # 📦 → 📦 + [📦]?
-function crush(input as IIngredient, output as IItemStack, exceptions as string, extra as IItemStack[], extraChance as float[]) {
-  
-  work([
+function crushEx(input as IIngredient, output as IItemStack, exceptions as string, extra as IItemStack[], extraChance as float[], opts as IData) {
+  for machine in [
     "manufactory"  , "Macerator"  , "eu2Crusher"        ,
     "AACrusher"    , "IECrusher"  , "SagMill"           ,
     "Grindstone"   , "AEGrinder"  , "ThermalCentrifuge" ,
     "Pulverizer"   , "mekCrusher" , "crushingBlock"     ,
     "MekEnrichment",
-  ],exceptions, [input], null, [output], null, extra, extraChance);
+  ] as string[] {
+    workEx(machine, exceptions, [input], null, [output], null, extra, extraChance, opts);
+  }
+}
+function crush(input as IIngredient, output as IItemStack, exceptions as string, extra as IItemStack[], extraChance as float[]) {
+  crushEx(input, output, exceptions, extra, extraChance, null);
 }
 
 # Compress item to another
@@ -318,7 +322,7 @@ function beneficiate(
   # Crush Dust or Gem
   val dustOrGem = utils.getSomething(oreName, ["dust", "gem", "any"], amount);
   if (!isNull(dustOrGem)) {
-    crush(input, dustOrGem, exceptions ~ "macerator thermalCentrifuge", extra, extraChances);
+    crushEx(input, dustOrGem, exceptions ~ "macerator thermalCentrifuge", extra, extraChances, {bonusType: "MULTIPLY_OUTPUT"});
   }
 
   # Crush IC2
