@@ -6,7 +6,7 @@ recipes.remove(<deepmoblearning:glitch_infused_sword>);
 recipes.addShaped(<deepmoblearning:glitch_infused_sword>, [
   [null, null, ing],
   [null, ing, null],
-  [<enderio:item_stellar_alloy_sword>.anyDamage(), null, null]]);
+  [<endreborn:sword_shard>, null, null]]);
 
 recipes.remove(<deepmoblearning:soot_covered_plate> * 8);
 recipes.addShaped(<deepmoblearning:soot_covered_plate> * 4, [
@@ -55,4 +55,14 @@ craft.remake(<deepmoblearning:trial_keystone>, ["pretty",
   "§": <deepmoblearning:trial_key>,          # Trial Key
   "◊": <ore:gemDiamond>,                     # Diamond
   "п": <deepmoblearning:soot_covered_plate>, # Soot-covered Plate
+});
+
+# [Blank Data Model] from [Soot-covered Redstone][+2]
+craft.remake(<deepmoblearning:data_model_blank>, ["pretty",
+  "* M *",
+  "M ♥ M",
+  "* M *"], {
+  "♥": <deepmoblearning:soot_covered_redstone>, # Soot-covered Redstone
+  "*": <ore:itemPulsatingCrystal>,              # Pulsating Crystal
+  "M": <endreborn:food_ender_flesh>,            # Mysical Flesh
 });

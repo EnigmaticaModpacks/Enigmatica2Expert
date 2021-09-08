@@ -1,11 +1,10 @@
 {
   "outputs": [
-  
-	{
-	"target": "blue",
-	"weight": 14,
-	"id": "astralsorcery:blockcustomsandore"
-	},
+    {
+      "target": "blue",
+      "weight": 14,
+      "id": "astralsorcery:blockcustomsandore"
+    },
     {
       "target": "green",
       "weight": 20,

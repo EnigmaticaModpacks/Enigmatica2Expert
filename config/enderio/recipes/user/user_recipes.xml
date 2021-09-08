@@ -98,7 +98,17 @@
   </recipe>
   <recipe name="Alloy: Vibrant Alloy">
     <disabled/>
-  </recipe>   
+  </recipe>
+
+  <!-- End: Reborn integration -->
+  <recipe name="Alloy: End Steel" required="true">
+    <alloying energy="20000" exp="0.5">
+      <input name="oredict:endstone"/>
+      <input name="ingotDarkSteel"/>
+      <input name="ingotTungsten"/>
+      <output name="ingotEndSteel"/>
+    </alloying>
+  </recipe>
   <recipe name="The Enhanced Vat">
     <disabled/>
   </recipe>

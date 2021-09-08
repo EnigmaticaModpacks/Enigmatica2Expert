@@ -818,8 +818,8 @@ for item in <ore:dustAshes>.items {
 ]);
 
 # Missed Ingots and blocks
-<ore:ingotEnder>.add(<extendedcrafting:material:36>);
-<ore:blockEnder>.add(<extendedcrafting:storage:5>);
+<ore:ingotEnderat>.add(<extendedcrafting:material:36>);
+<ore:blockEnderat>.add(<extendedcrafting:storage:5>);
 
 <ore:ingotGlitch>.add(<deepmoblearning:glitch_infused_ingot>);
 <ore:blockGlitch>.add(<deepmoblearning:infused_ingot_block>);
@@ -848,3 +848,8 @@ for item in <ore:dustAshes>.items {
 	<animania:raw_peacock>,
 	<animania:raw_prime_peacock>,
 ]);
+
+<ore:dustObsidian>.remove(<endreborn:catalyst>);
+<ore:tungstenIngot>.remove(<endreborn:item_ingot_wolframium>);
+<ore:oreXorcite>.add(<endreborn:dragon_essence>);
+<ore:gemXorcite>.add(<endreborn:death_essence>);

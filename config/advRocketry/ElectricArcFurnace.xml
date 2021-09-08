@@ -111,11 +111,23 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [End Steel Block] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>blockDarkSteel 1</oreDict>
+			<itemStack>endreborn:block_wolframium 1</itemStack>
+			<oreDict>compressed1xEndStone 1</oreDict>
+		</input>
+		<output>
+			<itemStack>enderio:block_alloy 1 8</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [End Steel Ingot] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<oreDict>ingotDarkSteel 1</oreDict>
-			<oreDict>obsidian 1</oreDict>
+			<itemStack>endreborn:item_ingot_wolframium 1</itemStack>
 			<oreDict>endstone 1</oreDict>
 		</input>
 		<output>

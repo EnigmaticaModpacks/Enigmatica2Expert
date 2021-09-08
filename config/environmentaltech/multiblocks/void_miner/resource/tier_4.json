@@ -13,7 +13,7 @@
   {"id": "minecraft:hardened_clay"            , "weight": 12 , "target": "orange" }     ,
   {"id": "minecraft:mossy_cobblestone"        , "weight": 10 , "target": "green" }      ,
   {"id": "minecraft:mycelium"                 , "weight": 8  , "target": "" }           ,
-  {"id": "minecraft:sand:"                    , "weight": 300, "target": "yellow" }     ,
+  {"id": "minecraft:sand"                    , "weight": 300, "target": "yellow" }     ,
   {"id": "minecraft:sand:1"                   , "weight": 24 , "target": "yellow" }     ,
   {"id": "minecraft:sponge"                   , "weight": 12 , "target": "yellow" }     ,
   {"id": "minecraft:stone:0"                  , "weight": 32 , "target": "gray" }       ,
@@ -22,6 +22,7 @@
   {"id": "minecraft:stone:5"                  , "weight": 30 , "target": "gray" }       ,
   {"id": "rustic:slate"                       , "weight": 30 , "target": "gray" }       ,
   
+  {"id": "endreborn:block_essence_ore"       , "weight": 20  , "target": "purple" }  ,
   {"id": "biomesoplenty:flesh"               , "weight": 20  , "target": "red" }  ,
   {"id": "biomesoplenty:mud"                 , "weight": 40  , "target": "brown" }  ,
   {"id": "iceandfire:chared_cobblestone"     , "weight": 15  , "target": "gray" }  ,

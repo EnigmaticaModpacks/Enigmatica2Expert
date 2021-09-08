@@ -117,14 +117,6 @@ craft.remake(<enderio:block_impulse_hopper>, ["pretty",
 	recipes.remove(<enderio:item_material:73>);
 	scripts.wrap.immersiveengineering.MetalPress.addRecipe(<enderio:item_material:73>, <enderio:item_alloy_ingot:6>, <immersiveengineering:mold:1>, 16000, 4);
 	scripts.wrap.thermalexpansion.Compactor.addGearRecipe(<enderio:item_material:73>, <enderio:item_alloy_ingot:6> * 4, 16000);
-	
-# Simple Machine Chassis
-	recipes.remove(<enderio:item_material>);
-	recipes.addShapedMirrored("Simple Machine Chassis", 
-	<enderio:item_material>, 
-	[[<ore:plateTitaniumAluminide>, <ore:gearIronInfinity>, <ore:plateTitaniumAluminide>],
-	[<enderio:block_dark_iron_bars>, <thermalexpansion:frame:129>, <enderio:block_dark_iron_bars>], 
-	[<ore:plateTitaniumAluminide>, <ore:gearIronInfinity>, <ore:plateTitaniumAluminide>]]);
 
 # Machine Chassis
 	recipes.remove(<enderio:item_material:1>);
@@ -294,9 +286,9 @@ val fake_iron_variations =
 <thermalfoundation:material:103>;
 
 # EnderIO simple alloys
-solution([<ore:dustBedrock>, fake_iron_variations      			       ], [<liquid:iron>      *72 ], [<liquid:construction_alloy>*216], [0.5, 1,    2700], "only: highoven");
-solution([<ore:dustBedrock>, <ore:dustEndstone>, <ore:dustObsidian>], [<liquid:dark_steel>*144], [<liquid:end_steel>         *144], [0.5, 1, 1, 5500], "only: highoven");
-solution([<ore:dustBedrock>, <ore:dustRedstone>                    ], [<liquid:iron>      *144], [<liquid:conductive_iron>   *144], [0.5, 1,    4200], "only: highoven");
+solution([<ore:dustBedrock>, fake_iron_variations      			        ], [<liquid:iron>      *72 ], [<liquid:construction_alloy>*216], [0.5, 1,    2700], "only: highoven");
+solution([<ore:dustBedrock>, <ore:dustEndstone>, <ore:ingotTungsten>], [<liquid:dark_steel>*144], [<liquid:end_steel>         *144], [0.5, 1, 1, 5500], "only: highoven");
+solution([<ore:dustBedrock>, <ore:dustRedstone>                     ], [<liquid:iron>      *144], [<liquid:conductive_iron>   *144], [0.5, 1,    4200], "only: highoven");
 
 
 # Oxidiser
@@ -326,7 +318,8 @@ recipes.addShaped(<enderio:item_conduit_facade> * 8, [
 
 
 # End Steel process
-scripts.process.alloy([<ore:ingotDarkSteel>, <ore:obsidian>, <ore:endstone>], <ore:ingotEndSteel>.firstItem, "except: alloySmelter");
+scripts.process.alloy([<ore:ingotDarkSteel>, <endreborn:item_ingot_wolframium>, <ore:endstone>], <ore:ingotEndSteel>.firstItem, "except: alloySmelter");
+scripts.process.alloy([<ore:blockDarkSteel>, <endreborn:block_wolframium>, <ore:compressed1xEndStone>], <ore:blockEndSteel>.firstItem, "only: advrockarc");
 
 # Excess ender dust recipe
 recipes.removeByRecipeName("enderio:ender_dust");
@@ -506,7 +499,7 @@ craft.remake(<enderio:item_material:15>, ["pretty",
 craft.reshapeless(<enderio:item_material:38>, "▲▲▲©S©▲▲▲", {
   "▲": <ore:dustLapis>,    # Lapis Lazuli Dust
   "S": <ore:ingotSilicon>, # Silicon
-  "©": <ore:dustCoal>,     # Pulverized Coal
+  "©": <endreborn:food_ender_flesh>
 });
 
 # Low-level machines (original in Alloy Smelter)

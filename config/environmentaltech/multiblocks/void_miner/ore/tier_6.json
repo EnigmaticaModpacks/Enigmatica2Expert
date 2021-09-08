@@ -109,6 +109,16 @@
       "target": "white",
       "weight": 10,
       "id": "rftools:dimensional_shard_ore"
+    },
+    {
+      "target": "purple",
+      "weight": 10,
+      "id": "endreborn:dragon_essence"
+    },
+    {
+      "target": "white",
+      "weight": 10,
+      "id": "rftools:dimensional_shard_ore"
     }
   ]
 }

@@ -1,10 +1,10 @@
 {
   "outputs": [
-  	{
-	"target": "blue",
-	"weight": 14,
-	"id": "astralsorcery:blockcustomsandore"
-	},
+    {
+      "target": "blue",
+      "weight": 14,
+      "id": "astralsorcery:blockcustomsandore"
+    },
     {
       "target": "green",
       "weight": 12,
@@ -194,6 +194,11 @@
       "target": "white",
       "weight": 7,
       "id": "OD:oreSalt"
+    },
+    {
+      "target": "purple",
+      "weight": 30,
+      "id": "endreborn:block_wolframium_ore"
     }
   ]
 }

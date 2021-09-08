@@ -139,12 +139,17 @@ import scripts.craft.grid.Grid;
   recipes.removeByRecipeName("minecraft:paper"); # Removed because EnderCore adds a shapeless one
   recipes.removeByRecipeName("mekanism:paper"); # Removed because CHEATS
 	
-# Elytra
-	recipes.addShaped("Elytra", 
-	<minecraft:elytra>, 
-	[[<minecraft:banner:15>, <minecraft:leather_chestplate>.anyDamage(), <minecraft:banner:15>],
-	[<minecraft:banner:15>, <minecraft:chorus_fruit_popped>, <minecraft:banner:15>], 
-	[<actuallyadditions:item_crystal:2>, null, <actuallyadditions:item_crystal:2>]]);
+# [Elytra] from [Purpur Shards][+3]
+recipes.removeShaped(<minecraft:elytra>);
+craft.make(<minecraft:elytra>, ["pretty",
+  "A C A",
+  "A P A",
+  "X   X"], {
+  "P": <endreborn:item_end_shard>,     # Purpur Shards
+  "A": <endreborn:item_angel_feather>, # Angel Feather
+  "C": <minecraft:web>,                # Cobweb
+  "X": <endreborn:death_essence>,      # Xorcite Shard
+});
 
 # Farming for Blockheads Market
 	recipes.remove(<farmingforblockheads:market>);

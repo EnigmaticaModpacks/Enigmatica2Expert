@@ -1,10 +1,10 @@
 {
   "outputs": [
-  	{
-	"target": "blue",
-	"weight": 14,
-	"id": "astralsorcery:blockcustomsandore"
-	},
+    {
+      "target": "blue",
+      "weight": 14,
+      "id": "astralsorcery:blockcustomsandore"
+    },
     {
       "target": "green",
       "weight": 14,
@@ -199,6 +199,16 @@
       "target": "white",
       "weight": 7,
       "id": "OD:oreSalt"
+    },
+    {
+      "target": "purple",
+      "weight": 30,
+      "id": "endreborn:block_wolframium_ore"
+    },
+    {
+      "target": "white",
+      "weight": 10,
+      "id": "rftools:dimensional_shard_ore"
     }
   ]
 }

@@ -11,7 +11,7 @@
   {"id": "minecraft:grass"                    , "weight": 10 , "target": "green" }      ,
   {"id": "minecraft:gravel"                   , "weight": 30 , "target": "silver" }     ,
   {"id": "minecraft:hardened_clay"            , "weight": 12 , "target": "orange" }     ,
-  {"id": "minecraft:sand:"                    , "weight": 300, "target": "yellow" }     ,
+  {"id": "minecraft:sand"                    , "weight": 300, "target": "yellow" }     ,
   {"id": "minecraft:sand:1"                   , "weight": 24 , "target": "yellow" }     ,
   {"id": "minecraft:stone:0"                  , "weight": 32 , "target": "gray" }       ,
   {"id": "minecraft:stone:1"                  , "weight": 30 , "target": "pink" }       ,

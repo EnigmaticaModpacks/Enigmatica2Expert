@@ -1,10 +1,10 @@
 {
   "outputs": [
-  	{
-	"target": "blue",
-	"weight": 14,
-	"id": "astralsorcery:blockcustomsandore"
-	},
+    {
+      "target": "blue",
+      "weight": 14,
+      "id": "astralsorcery:blockcustomsandore"
+    },
     {
       "target": "green",
       "weight": 18,
@@ -219,6 +219,16 @@
       "target": "silver",
       "weight": 11,
       "id": "mysticalagriculture:prosperity_ore"
+    },
+    {
+      "target": "purple",
+      "weight": 30,
+      "id": "endreborn:block_wolframium_ore"
+    },
+    {
+      "target": "white",
+      "weight": 10,
+      "id": "rftools:dimensional_shard_ore"
     }
   ]
 }

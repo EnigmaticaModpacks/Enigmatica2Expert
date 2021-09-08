@@ -72,4 +72,8 @@
     {"stack": {"name": "twilightforest:twilight_sapling","meta": 3,"amount": 1},"chance": 0.1 ,"fortuneChance": 0.2 },
     {"stack": {"name": "twilightforest:twilight_sapling","meta": 9,"amount": 1},"chance": 0.01,"fortuneChance": 0.02}
   ]
+
+  ,"extrautils2:enderlilly": [
+    {"stack": {"name": "endreborn:item_raw_endorium","meta": 0,"amount": 1},"chance": 1.0 ,"fortuneChance": 1.0 }
+  ]
 }

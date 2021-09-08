@@ -1,0 +1,22 @@
+{
+  "dependencies": "biomesoplenty",
+  "populate": {
+
+		"endreborn_essence": {
+			"distribution": "uniform",
+			"generator": {
+				"type": "stalactite",
+        "material": "end_stone",
+				"block": "endreborn:block_essence_ore",
+				"height-variance": 2,
+        "min-height": 1,
+				"gen-size": 1
+			},
+			"min-height": 0,
+			"max-height": 15,
+			"cluster-count": 3,
+      "chunk-chance": 20,
+			"dimension": {"restriction": "whitelist","value": [1]}
+		}
+  }
+}

@@ -10,6 +10,7 @@
   {"id": "minecraft:soul_sand"                , "weight": 16 , "target": "brown" }      ,
   {"id": "minecraft:sponge"                   , "weight": 12 , "target": "yellow" }     ,
   
+  {"id": "endreborn:block_lormyte_crystal"   , "weight": 30  , "target": "purple" }  ,
   {"id": "biomesoplenty:flesh"               , "weight": 20  , "target": "red" }  ,
   {"id": "iceandfire:chared_cobblestone"     , "weight": 15  , "target": "gray" }  ,
   {"id": "iceandfire:chared_dirt"            , "weight": 15  , "target": "gray" }  ,

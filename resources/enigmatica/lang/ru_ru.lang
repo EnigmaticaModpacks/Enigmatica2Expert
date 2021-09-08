@@ -1,4 +1,6 @@
 item.excompressum:bait_unknown.name=Any Bait
+item.catalyst.name=§dОбсидианский катализатор
+tile.block_decorative_lormyte.name=Лормитовый Блок
 
 tooltips.lang.tag.generator=§6#Генератор
 tooltips.lang.tag.chunkloader=§9#Якорь

@@ -14,6 +14,7 @@
   {"id": "minecraft:soul_sand"                , "weight": 16 , "target": "brown" }      ,
   {"id": "minecraft:sponge"                   , "weight": 12 , "target": "yellow" }     ,
   
+  {"id": "endreborn:block_essence_ore"       , "weight": 20  , "target": "purple" }  ,
   {"id": "biomesoplenty:flesh"               , "weight": 20  , "target": "red" }  ,
   {"id": "biomesoplenty:mud"                 , "weight": 40  , "target": "brown" }  ,
   {"id": "iceandfire:chared_cobblestone"     , "weight": 15  , "target": "gray" }  ,

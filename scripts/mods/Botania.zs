@@ -189,6 +189,7 @@ import crafttweaker.item.IIngredient as IIngredient;
 
 # Remove unused ORE
 mods.botania.Orechid.removeOre("oreYellorite");
+mods.botania.Orechid.removeOre("oreTungsten");
 
 # Add missed ORE
 mods.botania.Orechid.addOre("oreThorium", 1285);

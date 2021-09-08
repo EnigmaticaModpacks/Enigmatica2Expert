@@ -280,6 +280,20 @@ static armorStaged as IData[string] =
       {id:"psi:psimetal_sword"},
       {id:"psicosts:psi_cell:2", tag: {PsioCharge: 720000}}
   ]},
+  armor_dragon:{
+    prev: "armor_ironwood", 
+    tier: 5,
+    material: "endreborn:dragon_scales",
+    recycle:  "endreborn:dragon_scales",
+    recipe: {extra: "endreborn:item_ender_string"},
+    list: [
+      {id:"endreborn:armour_helmet_dragon"},
+      {id:"endreborn:armour_chestplate_dragon"},
+      {id:"endreborn:armour_leggings_dragon"},
+      {id:"endreborn:armour_boots_dragon"},
+      {id:"endreborn:tool_magnifier"},
+      {id:"endreborn:death_essence"}
+  ]},
   armor_stellar:{
     prev: "armor_end_steel", 
     tier: 9,

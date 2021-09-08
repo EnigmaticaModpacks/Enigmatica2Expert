@@ -12,7 +12,7 @@
   {"id": "minecraft:gravel"                   , "weight": 30 , "target": "silver" }     ,
   {"id": "minecraft:hardened_clay"            , "weight": 12 , "target": "orange" }     ,
   {"id": "minecraft:mossy_cobblestone"        , "weight": 10 , "target": "green" }      ,
-  {"id": "minecraft:sand:"                    , "weight": 300, "target": "yellow" }     ,
+  {"id": "minecraft:sand"                    , "weight": 300, "target": "yellow" }     ,
   {"id": "minecraft:sand:1"                   , "weight": 24 , "target": "yellow" }     ,
   {"id": "minecraft:sponge"                   , "weight": 12 , "target": "yellow" }     ,
   {"id": "minecraft:stone:0"                  , "weight": 32 , "target": "gray" }       ,
@@ -21,6 +21,8 @@
   {"id": "minecraft:stone:5"                  , "weight": 30 , "target": "gray" }       ,
   {"id": "rustic:slate"                       , "weight": 30 , "target": "gray" }       ,
   
+  {"id": "endreborn:block_essence_ore"       , "weight": 20  , "target": "purple" }  ,
+  {"id": "endreborn:block_lormyte_crystal"   , "weight": 30  , "target": "purple" }  ,
   {"id": "iceandfire:chared_cobblestone"     , "weight": 15  , "target": "gray" }  ,
   {"id": "iceandfire:chared_dirt"            , "weight": 15  , "target": "gray" }  ,
   {"id": "iceandfire:chared_grass"           , "weight": 15  , "target": "gray" }  ,
