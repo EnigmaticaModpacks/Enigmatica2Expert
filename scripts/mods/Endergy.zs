@@ -15,14 +15,6 @@ for s in [
     if (!isNull(it)) utils.rh(it, false);
   }
 }
-for s in [
-  "item_alloy_endergy_ingot",
-] as string[] {
-  for i in [0, 5, 6] as int[] {
-    val it = itemUtils.getItem("enderio:"~s,i);
-    if (!isNull(it)) mods.enderio.AlloySmelter.removeRecipe(it);
-  }
-}
 
 for n in [144, 16, 144*9] as int[] {
   mods.nuclearcraft.melter.removeRecipeWithOutput([<liquid:crude_steel> * n]);
@@ -48,12 +40,6 @@ recipes.removeByRecipeName("enderio:capacitor_crystalline_alt");
 mods.tconstruct.Melting.removeRecipe(<liquid:crude_steel>);
 mods.tconstruct.Melting.removeRecipe(<liquid:energetic_silver>);
 mods.tconstruct.Melting.removeRecipe(<liquid:vivid_alloy>);
-
-# Remove alloys with changed recipe
-mods.enderio.AlloySmelter.removeRecipe(<ore:ingotCrystallineAlloy>.firstItem);
-mods.enderio.AlloySmelter.removeRecipe(<ore:ingotCrystallinePinkSlime>.firstItem);
-mods.enderio.AlloySmelter.removeRecipe(<ore:ingotMelodicAlloy>.firstItem);
-mods.enderio.AlloySmelter.removeRecipe(<ore:ingotStellarAlloy>.firstItem * 2);
 
 # Add harder stepped alloys
 scripts.process.alloy([<ore:itemPulsatingPowder>   , <ore:ingotVibrantAlloy>        , <ore:ingotSentientMetal>], <ore:ingotCrystallineAlloy>.firstItem    , "no exceptions");

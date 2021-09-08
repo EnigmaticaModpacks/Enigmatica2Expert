@@ -109,6 +109,41 @@
       <output name="ingotEndSteel"/>
     </alloying>
   </recipe>
+
+  <!-- Disable recipes that EnderTweaker cant -->
+  <recipe name="Alloy: Enderium Base (Thermal Expansion)">
+    <disabled/>
+  </recipe>
+  <recipe name="Alloy: Enderium (Thermal Expansion)">
+    <disabled/>
+  </recipe>
+  <recipe name="Infinity Goop">
+    <disabled/>
+  </recipe>
+  <recipe name="Infinity Goop, Charcoal">
+    <disabled/>
+  </recipe>
+  <recipe name="Alloy: Pulsating Iron">
+    <disabled/>
+  </recipe>
+
+  <!-- Disable Endenergy alloys -->
+  <recipe name="Alloy: Endergy Crude Steel">
+    <disabled/>
+  </recipe>
+  <recipe name="Alloy: Endergy Crystalline Alloy">
+    <disabled/>
+  </recipe>
+  <recipe name="Alloy: Endergy Crystalline Pink Slime">
+    <disabled/>
+  </recipe>
+  <recipe name="Alloy: Endergy Melodic Alloy">
+    <disabled/>
+  </recipe>
+  <recipe name="Alloy: Endergy Stellar Alloy">
+    <disabled/>
+  </recipe>
+
   <recipe name="The Enhanced Vat">
     <disabled/>
   </recipe>

@@ -324,9 +324,6 @@ scripts.process.alloy([<ore:blockDarkSteel>, <endreborn:block_wolframium>, <ore:
 # Excess ender dust recipe
 recipes.removeByRecipeName("enderio:ender_dust");
 
-# Remove default Infinity reagent recipe
-mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:75>);
-
 # [Simple_Inventory_Charger] from [LV_Capacitor][+2]
 craft.remake(<enderio:item_inventory_charger_simple>, ["D","L","▬"], {
   "D": <ore:nuggetDarkSteel>,               # Dark Steel Nugget
