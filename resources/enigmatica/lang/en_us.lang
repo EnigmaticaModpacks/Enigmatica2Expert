@@ -2,6 +2,24 @@ item.excompressum:bait_unknown.name=Any Bait
 item.catalyst.name=§dObsidian Catalyst
 tile.block_decorative_lormyte.name=Lormyte Block
 
+# Bugged langs that losed their names
+entity.Villager.shady_merchant=Shady Merchant
+entity.Villager.red_mechanic=Red Mechanic
+entity.Villager.alchemist=Alchemist
+entity.Villager.endreborn.end_explorer=End Explorer
+entity.Villager.endreborn.nether_explorer=Nether Explorer
+entity.Villager.endreborn.overworld_explorer=Overworld Explorer
+entity.Villager.plague_doctor=Plague Doctor
+item.advgenerators.turbine_blade_gold.name=Gold Turbine Blade
+tile.witchwater.name=Witchwater
+tile.colored_waterfall_block.name=Colored Waterfall Block
+robot.name=Generic Robot
+material.Dilithium.name=Dilithium
+item.battery.0.name=Single Battery
+item.battery.1.name=Quadruple Battery
+tile.rftdimtweak.dimension_builder.name=Dimension Builder
+tile.rftdimtweak.dimension_editor.name=Dimension Editor
+
 tooltips.lang.tag.generator=§6#Generator
 tooltips.lang.tag.chunkloader=§9#ChunkLoader
 tooltips.lang.tag.tank=§b#Tank

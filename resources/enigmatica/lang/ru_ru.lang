@@ -2,6 +2,24 @@ item.excompressum:bait_unknown.name=Any Bait
 item.catalyst.name=§dОбсидианский катализатор
 tile.block_decorative_lormyte.name=Лормитовый Блок
 
+# Bugged langs that losed their names
+entity.Villager.shady_merchant=Тенистый торговец
+entity.Villager.red_mechanic=Красный механик
+entity.Villager.alchemist=Алхимик
+entity.Villager.endreborn.end_explorer=Конец Проводник
+entity.Villager.endreborn.nether_explorer=Проводник
+entity.Villager.endreborn.overworld_explorer=Опытный проводник
+entity.Villager.plague_doctor=Чума доктора
+item.advgenerators.turbine_blade_gold.name=Золотая турбинная лезвие
+tile.witchwater.name=Ведьма
+tile.colored_waterfall_block.name=Цветной блок водопада
+robot.name=Общий робот
+material.Dilithium.name=Диллимий
+item.battery.0.name=Одиночный аккумулятор
+item.battery.1.name=Четырехместный аккумулятор
+tile.rftdimtweak.dimension_builder.name=Cтроитель измерений
+tile.rftdimtweak.dimension_editor.name=Редактор измерений
+
 tooltips.lang.tag.generator=§6#Генератор
 tooltips.lang.tag.chunkloader=§9#Якорь
 tooltips.lang.tag.tank=§b#Резервуар
