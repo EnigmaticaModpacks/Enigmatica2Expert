@@ -11,7 +11,6 @@ import crafttweaker.data.IData;
 
 #priority -1
 
-static meltingExceptions as IData = ['Amber','Redstone','Coal'] as IData;
 
 
 function getPoop(ore_name as string) as IItemStack {
@@ -83,7 +82,7 @@ function magicProcessing(nativeClusterOreEntry as IOreDictEntry, ore_name as str
   # ████╔╝██║
   # ╚██████╔╝
   #  ╚═════╝ 
-  scripts.process.beneficiate(dirtyGem, ore_name, 13, {meltingExceptions: meltingExceptions});
+  scripts.process.beneficiate(dirtyGem, ore_name, 13, {meltingExceptions: scripts._init.variables.meltingExceptions});
 
   # manual furnance
   var ingotOrGem = utils.getSomething(ore_name, ["ingot", "gem", "dust", "any"], 12);

@@ -6,7 +6,7 @@ import crafttweaker.item.IIngredient;
 
 static beneficateOptions as IData = {
   exceptions: "Pulverizer StarlightInfuser",
-  meltingExceptions: scripts.magicProcessing.meltingExceptions
+  meltingExceptions: scripts._init.variables.meltingExceptions
 } as IData;
 
 function getOreName(name as string, part as string) as string {

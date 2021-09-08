@@ -85,15 +85,4 @@
 			<fluidStack>water 1000</fluidStack>
 		</output>
 	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Molten Sodium+] -->
-	<Recipe timeRequired="10" power="40000">
-		<input>
-			<fluidStack>naoh 666</fluidStack>
-		</input>
-		<output>
-			<fluidStack>sodium 144</fluidStack>
-			<fluidStack>oxygen 500</fluidStack>
-		</output>
-	</Recipe>
 </Recipes>

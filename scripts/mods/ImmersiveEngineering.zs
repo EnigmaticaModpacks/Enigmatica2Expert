@@ -500,19 +500,6 @@ craft.remake(<engineersdoors:trapdoor_concrete> * 2, ["pretty",
   "c": <ore:concrete>, # Concrete
 });
 
-
-
-if(!isNull(loadedMods["immersivetech"])) {
-	# Cloud seed harder (also BoP Hotspring water as extra)
-	mods.enderio.Vat.removeRecipe(<liquid:cloud_seed>);
-	mods.immersivetechnology.CoolingTower.addRecipe(<liquid:cloud_seed> * 500, <liquid:hot_spring_water> * 10, <liquid:ice> * 200, <liquid:ice> * 200, <liquid:ic2hot_water> * 1000, 20);
-
-	# Rplace wrong salt
-	utils.rh(<immersivetech:material>);
-	mods.immersivetechnology.Distiller.removeRecipe(<liquid:water>);
-	mods.immersivetechnology.Distiller.addRecipe(<liquid:water> * 1000, <liquid:distwater> * 500, <mekanism:salt>, 2000, 20, 1.0f);
-}
-
 # Way cheaper cause cool looking and need pumping out to function
 # [Fluid Pipe]*32 from [Iron Plate]
 craft.remake(<immersiveengineering:metal_device1:6> * 32, ["pretty",

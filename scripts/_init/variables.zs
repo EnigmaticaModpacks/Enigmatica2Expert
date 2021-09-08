@@ -11,6 +11,7 @@ import crafttweaker.data.IData;
 # Significantly speedup CR load time (about 20s in 9m load time)
 #no_fix_recipe_book
 
+static meltingExceptions as IData = ['Amber','Redstone','Coal','Diamond'] as IData;
 
 static cowWrittenBook as IItemStack = <minecraft:written_book>.withTag(
   {
