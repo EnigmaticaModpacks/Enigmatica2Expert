@@ -1,0 +1,64 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "Dungeon",
+  "items": [
+    {
+      "weight": 1.0,
+      "min": 5,
+      "max": 10,
+      "item": {
+        "id": "minecraft:tipped_arrow",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Potion": {
+              "nbtType": "string",
+              "nbt": "minecraft:long_weakness"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 5,
+      "max": 10,
+      "item": {
+        "id": "minecraft:tipped_arrow",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Potion": {
+              "nbtType": "string",
+              "nbt": "minecraft:strong_harming"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 4.910394668579102,
+      "min": 5,
+      "max": 10,
+      "item": {
+        "id": "minecraft:tipped_arrow",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Potion": {
+              "nbtType": "string",
+              "nbt": "minecraft:long_slowness"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

@@ -1,0 +1,67 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "vizHouse",
+  "items": [
+    {
+      "weight": 20.692365646362305,
+      "min": 1,
+      "max": 10,
+      "item": {
+        "id": "minecraft:book",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 5.2210845947265625,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "minecraft:emerald",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 7.019199371337891,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:writable_book",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 15.548633575439453,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:iron_axe",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 25.946786880493164,
+      "min": 2,
+      "max": 20,
+      "item": {
+        "id": "minecraft:coal",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 20.692365646362305,
+      "min": 1,
+      "max": 21,
+      "item": {
+        "id": "minecraft:reeds",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

@@ -8,7 +8,6 @@
 !schematics/
 !minemenu/
 !resourcepacks/
-!structures/active
 !dev/
 ![!]Relese.bat
 !TODO.md
@@ -18,6 +17,8 @@
 !.gitattributes
 !minecraftinstance.json
 !patchouli_books/
+!structures/
+structures/inactive
 
 # Files created by luncher
 config/splash.properties

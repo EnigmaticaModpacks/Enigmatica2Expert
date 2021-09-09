@@ -1,0 +1,107 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "Village",
+  "items": [
+    {
+      "weight": 0.5354365706443787,
+      "min": 5,
+      "max": 64,
+      "item": {
+        "id": "minecraft:potato",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5354365706443787,
+      "min": 5,
+      "max": 64,
+      "item": {
+        "id": "harvestcraft:garlicitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5354365706443787,
+      "min": 5,
+      "max": 64,
+      "item": {
+        "id": "harvestcraft:onionitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5354365706443787,
+      "min": 5,
+      "max": 64,
+      "item": {
+        "id": "minecraft:wheat",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5354365706443787,
+      "min": 5,
+      "max": 20,
+      "item": {
+        "id": "harvestcraft:seaweeditem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5354365706443787,
+      "min": 5,
+      "max": 20,
+      "item": {
+        "id": "minecraft:mutton",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5354365706443787,
+      "min": 5,
+      "max": 20,
+      "item": {
+        "id": "harvestcraft:shrimprawitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5354365706443787,
+      "min": 5,
+      "max": 20,
+      "item": {
+        "id": "minecraft:fish",
+        "damage": 1,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5354365706443787,
+      "min": 5,
+      "max": 20,
+      "item": {
+        "id": "harvestcraft:crayfishrawitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5354365706443787,
+      "min": 5,
+      "max": 20,
+      "item": {
+        "id": "minecraft:fish",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

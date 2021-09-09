@@ -1,0 +1,103 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "vizHouse",
+  "items": [
+    {
+      "weight": 1.0950840711593628,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:written_book",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "pages": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "string",
+                  "nbt": "{\"text\":\"Waking up to the sun, shining rays of new life.\\n\\nWhat a wonderful thing that is, the sun. And life.\\n\\nAnd sunshine shimmering in splendor.\"}"
+                }
+              ]
+            },
+            "author": {
+              "nbtType": "string",
+              "nbt": "vizthex"
+            },
+            "title": {
+              "nbtType": "string",
+              "nbt": "Sunshine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0950840711593628,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:written_book",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "pages": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "string",
+                  "nbt": "{\"text\":\"With that, he took his final breath.....and then expired.\\n\\nHis kin inherited all that he owned.\"}"
+                }
+              ]
+            },
+            "author": {
+              "nbtType": "string",
+              "nbt": "vizthex"
+            },
+            "title": {
+              "nbtType": "string",
+              "nbt": "Passing Away"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0950840711593628,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:written_book",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "pages": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "string",
+                  "nbt": "{\"text\":\"And so, the Queen bid her goodbyes to her subjects.\"}"
+                }
+              ]
+            },
+            "author": {
+              "nbtType": "string",
+              "nbt": "vizthex"
+            },
+            "title": {
+              "nbtType": "string",
+              "nbt": "Goodbyes"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

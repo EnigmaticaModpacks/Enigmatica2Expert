@@ -1,0 +1,87 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "VillageChest",
+  "items": [
+    {
+      "weight": 0.4858947992324829,
+      "min": 1,
+      "max": 8,
+      "item": {
+        "id": "harvestcraft:tomatoitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.25986868143081665,
+      "min": 1,
+      "max": 15,
+      "item": {
+        "id": "harvestcraft:garlicitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5354365706443787,
+      "min": 1,
+      "max": 6,
+      "item": {
+        "id": "harvestcraft:sweetpotatoitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.4400899410247803,
+      "min": 1,
+      "max": 8,
+      "item": {
+        "id": "harvestcraft:bellpepperitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.1442086547613144,
+      "min": 1,
+      "max": 20,
+      "item": {
+        "id": "harvestcraft:peasitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.4858947992324829,
+      "min": 1,
+      "max": 5,
+      "item": {
+        "id": "harvestcraft:cabbageitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.4400899410247803,
+      "min": 1,
+      "max": 6,
+      "item": {
+        "id": "harvestcraft:lettuceitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.32298368215560913,
+      "min": 1,
+      "max": 8,
+      "item": {
+        "id": "harvestcraft:onionitem",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

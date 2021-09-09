@@ -1,0 +1,63 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "Ammunition",
+  "items": [
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:skull",
+        "damage": 3,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "RepairCost": {
+              "nbtType": "int",
+              "nbt": 0
+            },
+            "SkullOwner": {
+              "nbtType": "compound",
+              "nbt": {
+                "Id": {
+                  "nbtType": "string",
+                  "nbt": "d9dc3de0-66f8-4156-888c-ee63da497460"
+                },
+                "Properties": {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "textures": {
+                      "nbtType": "list",
+                      "nbt": [
+                        {
+                          "nbtType": "compound",
+                          "nbt": {
+                            "Value": {
+                              "nbtType": "string",
+                              "nbt": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjI1MjNlMTVlOTk4NjM1NWExZjg1MWY0M2Y3NTBlZTNmMjNjODlhZTEyMzYzMWRhMjQxZjg3MmJhN2E3ODEifX19"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Cannonball"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

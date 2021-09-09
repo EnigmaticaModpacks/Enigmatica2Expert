@@ -1,0 +1,63 @@
+{
+  "data": {
+    "environmentMatcher": "",
+    "transformers": [
+      {
+        "type": "naturalAir",
+        "transformer": {
+          "id": "naturalAir_21555c83",
+          "sourceExpression": "reccomplex:negativeSpace \u0026 #1",
+          "destExpression": "",
+          "naturalExpansionDistance": 4.0,
+          "naturalExpansionRandomization": 10.0
+        }
+      },
+      {
+        "type": "negativeSpace",
+        "transformer": {
+          "id": "negativeSpace_a76e7693",
+          "sourceExpression": "reccomplex:negativeSpace \u0026 #0",
+          "destExpression": ""
+        }
+      },
+      {
+        "type": "natural",
+        "transformer": {
+          "id": "natural_e9824e45",
+          "sourceExpression": "reccomplex:naturalFloor \u0026 #0",
+          "destExpression": "is:replaceable | is:foliage",
+          "naturalExpansionDistance": 4.0,
+          "naturalExpansionRandomization": 6.0
+        }
+      },
+      {
+        "type": "replaceAll",
+        "transformer": {
+          "uniform": false,
+          "id": "replace_1bdee071",
+          "sourceExpression": "reccomplex:naturalFloor \u0026 #1",
+          "destination": [
+            {
+              "block": "minecraft:air",
+              "metadata": 0,
+              "tileEntity": "null"
+            }
+          ]
+        }
+      },
+      {
+        "type": "villagereplace",
+        "transformer": {
+          "id": "villagereplace_efcf78ca",
+          "sourceExpression": ""
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Village Specific",
+    "description": [
+      "Matches the materials of the biome"
+    ]
+  }
+}

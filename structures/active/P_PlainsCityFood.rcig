@@ -1,0 +1,167 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "Village",
+  "items": [
+    {
+      "weight": 0.25986868143081665,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "harvestcraft:barleyitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.25986868143081665,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "harvestcraft:ryeitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.25986868143081665,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "harvestcraft:oatsitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.25986868143081665,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "minecraft:wheat",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.25986868143081665,
+      "min": 8,
+      "max": 16,
+      "item": {
+        "id": "harvestcraft:blackberryitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.25986868143081665,
+      "min": 8,
+      "max": 16,
+      "item": {
+        "id": "harvestcraft:blueberryitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.25986868143081665,
+      "min": 8,
+      "max": 16,
+      "item": {
+        "id": "harvestcraft:raspberryitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.25986868143081665,
+      "min": 8,
+      "max": 16,
+      "item": {
+        "id": "harvestcraft:strawberryitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.20703016221523285,
+      "min": 8,
+      "max": 16,
+      "item": {
+        "id": "harvestcraft:grapeitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.25986868143081665,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "minecraft:carrot",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.25986868143081665,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "harvestcraft:tomatoitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.25986868143081665,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "harvestcraft:leekitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.25986868143081665,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "harvestcraft:lettuceitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.25986868143081665,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "harvestcraft:cabbageitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.20703016221523285,
+      "min": 5,
+      "max": 10,
+      "item": {
+        "id": "minecraft:beef",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.20703016221523285,
+      "min": 5,
+      "max": 10,
+      "item": {
+        "id": "minecraft:porkchop",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

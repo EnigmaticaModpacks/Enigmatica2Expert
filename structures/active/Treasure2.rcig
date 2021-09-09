@@ -1,0 +1,396 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "Treasure2",
+  "items": [
+    {
+      "weight": 6.248647212982178,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "minecraft:diamond",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 9.281763076782227,
+      "min": 1,
+      "max": 27,
+      "item": {
+        "id": "minecraft:gold_ingot",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 6.624965190887451,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "minecraft:emerald",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:potion",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "CustomPotionEffects": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "Duration": {
+                      "nbtType": "int",
+                      "nbt": 3000
+                    },
+                    "Id": {
+                      "nbtType": "int",
+                      "nbt": 2
+                    }
+                  }
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "Duration": {
+                      "nbtType": "int",
+                      "nbt": 1200
+                    },
+                    "Id": {
+                      "nbtType": "int",
+                      "nbt": 5
+                    },
+                    "Amplifier": {
+                      "nbtType": "int",
+                      "nbt": 2
+                    }
+                  }
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "Duration": {
+                      "nbtType": "int",
+                      "nbt": 3000
+                    },
+                    "Id": {
+                      "nbtType": "int",
+                      "nbt": 9
+                    }
+                  }
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "Duration": {
+                      "nbtType": "int",
+                      "nbt": 3000
+                    },
+                    "Id": {
+                      "nbtType": "int",
+                      "nbt": 15
+                    }
+                  }
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "Duration": {
+                      "nbtType": "int",
+                      "nbt": 1200
+                    },
+                    "Id": {
+                      "nbtType": "int",
+                      "nbt": 17
+                    }
+                  }
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "Duration": {
+                      "nbtType": "int",
+                      "nbt": 1200
+                    },
+                    "Id": {
+                      "nbtType": "int",
+                      "nbt": 22
+                    },
+                    "Amplifier": {
+                      "nbtType": "int",
+                      "nbt": 1
+                    }
+                  }
+                }
+              ]
+            },
+            "CustomPotionColor": {
+              "nbtType": "int",
+              "nbt": 16163584
+            },
+            "HideFlags": {
+              "nbtType": "int",
+              "nbt": 63
+            },
+            "Potion": {
+              "nbtType": "string",
+              "nbt": "minecraft:water"
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Lore": {
+                  "nbtType": "list",
+                  "nbt": [
+                    {
+                      "nbtType": "string",
+                      "nbt": "Drink up me hearties yo ho!"
+                    }
+                  ]
+                },
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Beer"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:potion",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "CustomPotionEffects": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "ShowParticles": {
+                      "nbtType": "byte",
+                      "nbt": 0
+                    },
+                    "Duration": {
+                      "nbtType": "int",
+                      "nbt": 600
+                    },
+                    "Id": {
+                      "nbtType": "int",
+                      "nbt": 5
+                    }
+                  }
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "ShowParticles": {
+                      "nbtType": "byte",
+                      "nbt": 0
+                    },
+                    "Id": {
+                      "nbtType": "int",
+                      "nbt": 6
+                    }
+                  }
+                }
+              ]
+            },
+            "CustomPotionColor": {
+              "nbtType": "int",
+              "nbt": 8587070
+            },
+            "HideFlags": {
+              "nbtType": "int",
+              "nbt": 63
+            },
+            "Potion": {
+              "nbtType": "string",
+              "nbt": "minecraft:water"
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Lore": {
+                  "nbtType": "list",
+                  "nbt": [
+                    {
+                      "nbtType": "string",
+                      "nbt": "Beer but more sophisticated."
+                    }
+                  ]
+                },
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Wine"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:potion",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "CustomPotionEffects": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "ShowParticles": {
+                      "nbtType": "byte",
+                      "nbt": 0
+                    },
+                    "Id": {
+                      "nbtType": "int",
+                      "nbt": 6
+                    },
+                    "Amplifier": {
+                      "nbtType": "int",
+                      "nbt": 28
+                    }
+                  }
+                }
+              ]
+            },
+            "CustomPotionColor": {
+              "nbtType": "int",
+              "nbt": 8781822
+            },
+            "HideFlags": {
+              "nbtType": "int",
+              "nbt": 63
+            },
+            "Potion": {
+              "nbtType": "string",
+              "nbt": "minecraft:water"
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Lore": {
+                  "nbtType": "list",
+                  "nbt": [
+                    {
+                      "nbtType": "string",
+                      "nbt": "[Made in China]"
+                    }
+                  ]
+                },
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Elixer of Healing"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:potion",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "CustomPotionEffects": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "Duration": {
+                      "nbtType": "int",
+                      "nbt": 2400
+                    },
+                    "Id": {
+                      "nbtType": "int",
+                      "nbt": 18
+                    }
+                  }
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "Id": {
+                      "nbtType": "int",
+                      "nbt": 23
+                    },
+                    "Amplifier": {
+                      "nbtType": "int",
+                      "nbt": 49
+                    }
+                  }
+                }
+              ]
+            },
+            "CustomPotionColor": {
+              "nbtType": "int",
+              "nbt": 10109203
+            },
+            "HideFlags": {
+              "nbtType": "int",
+              "nbt": 63
+            },
+            "Potion": {
+              "nbtType": "string",
+              "nbt": "minecraft:water"
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Lore": {
+                  "nbtType": "list",
+                  "nbt": [
+                    {
+                      "nbtType": "string",
+                      "nbt": "Hungry, but not."
+                    }
+                  ]
+                },
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Hunger Suppressant"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

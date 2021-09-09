@@ -1,0 +1,458 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "Treasure1",
+  "items": [
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:golden_sword",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "ench": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "int",
+                      "nbt": 15
+                    },
+                    "id": {
+                      "nbtType": "int",
+                      "nbt": 16
+                    }
+                  }
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "int",
+                      "nbt": 15
+                    },
+                    "id": {
+                      "nbtType": "int",
+                      "nbt": 21
+                    }
+                  }
+                }
+              ]
+            },
+            "Unbreakable": {
+              "nbtType": "int",
+              "nbt": 1
+            },
+            "HideFlags": {
+              "nbtType": "int",
+              "nbt": 63
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Lore": {
+                  "nbtType": "list",
+                  "nbt": [
+                    {
+                      "nbtType": "string",
+                      "nbt": "Imbued by the Gods"
+                    }
+                  ]
+                },
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Aztecan Sword"
+                }
+              }
+            },
+            "AttributeModifiers": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "UUIDMost": {
+                      "nbtType": "int",
+                      "nbt": 1
+                    },
+                    "UUIDLeast": {
+                      "nbtType": "int",
+                      "nbt": 1
+                    },
+                    "Amount": {
+                      "nbtType": "int",
+                      "nbt": 1000
+                    },
+                    "AttributeName": {
+                      "nbtType": "string",
+                      "nbt": "generic.attackSpeed"
+                    },
+                    "Operation": {
+                      "nbtType": "int",
+                      "nbt": 0
+                    },
+                    "Name": {
+                      "nbtType": "string",
+                      "nbt": "generic.attackSpeed"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:diamond_pickaxe",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "ench": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "int",
+                      "nbt": 5
+                    },
+                    "id": {
+                      "nbtType": "int",
+                      "nbt": 32
+                    }
+                  }
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "int",
+                      "nbt": 15
+                    },
+                    "id": {
+                      "nbtType": "int",
+                      "nbt": 35
+                    }
+                  }
+                }
+              ]
+            },
+            "Unbreakable": {
+              "nbtType": "int",
+              "nbt": 1
+            },
+            "HideFlags": {
+              "nbtType": "int",
+              "nbt": 7
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Lore": {
+                  "nbtType": "list",
+                  "nbt": [
+                    {
+                      "nbtType": "string",
+                      "nbt": "Found in the dunes of Africa"
+                    }
+                  ]
+                },
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Bejeweled Pickaxe"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:iron_axe",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "ench": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "int",
+                      "nbt": 10
+                    },
+                    "id": {
+                      "nbtType": "int",
+                      "nbt": 32
+                    }
+                  }
+                }
+              ]
+            },
+            "Unbreakable": {
+              "nbtType": "int",
+              "nbt": 1
+            },
+            "HideFlags": {
+              "nbtType": "int",
+              "nbt": 7
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Lore": {
+                  "nbtType": "list",
+                  "nbt": [
+                    {
+                      "nbtType": "string",
+                      "nbt": "Forged in the mountains of Norway"
+                    }
+                  ]
+                },
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Vanadium Steel Axe"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:fishing_rod",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "ench": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "int",
+                      "nbt": 100
+                    },
+                    "id": {
+                      "nbtType": "int",
+                      "nbt": 62
+                    }
+                  }
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "int",
+                      "nbt": 100
+                    },
+                    "id": {
+                      "nbtType": "int",
+                      "nbt": 61
+                    }
+                  }
+                }
+              ]
+            },
+            "Unbreakable": {
+              "nbtType": "int",
+              "nbt": 1
+            },
+            "HideFlags": {
+              "nbtType": "int",
+              "nbt": 63
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Lore": {
+                  "nbtType": "list",
+                  "nbt": [
+                    {
+                      "nbtType": "string",
+                      "nbt": "A russian made fishing rod, some said they saw Dmitry pull out another fishing rod from the water."
+                    }
+                  ]
+                },
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Dmitry\u0027s Incredible Fishing Rod"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:bow",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "ench": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "int",
+                      "nbt": 10
+                    },
+                    "id": {
+                      "nbtType": "int",
+                      "nbt": 49
+                    }
+                  }
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "int",
+                      "nbt": 15
+                    },
+                    "id": {
+                      "nbtType": "int",
+                      "nbt": 48
+                    }
+                  }
+                }
+              ]
+            },
+            "Unbreakable": {
+              "nbtType": "int",
+              "nbt": 1
+            },
+            "HideFlags": {
+              "nbtType": "int",
+              "nbt": 7
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Lore": {
+                  "nbtType": "list",
+                  "nbt": [
+                    {
+                      "nbtType": "string",
+                      "nbt": "Some say that this bow belonged to Gengis Khan, but it actually doesn\u0027t."
+                    },
+                    {
+                      "nbtType": "string",
+                      "nbt": "Arrows guaranteed to hurt, a lot."
+                    }
+                  ]
+                },
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Mongolian Bow"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 8.315797805786133,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "minecraft:gold_nugget",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Lore": {
+                  "nbtType": "list",
+                  "nbt": [
+                    {
+                      "nbtType": "string",
+                      "nbt": "Somewhat useless"
+                    }
+                  ]
+                },
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Gold Coin"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 6.624965190887451,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:light_weighted_pressure_plate",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Lore": {
+                  "nbtType": "list",
+                  "nbt": [
+                    {
+                      "nbtType": "string",
+                      "nbt": "Heavy but fancy."
+                    }
+                  ]
+                },
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Golden Plate"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

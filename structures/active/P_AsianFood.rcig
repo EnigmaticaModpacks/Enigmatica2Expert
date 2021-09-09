@@ -1,0 +1,127 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "Village",
+  "items": [
+    {
+      "weight": 0.7087690830230713,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "minecraft:fish",
+        "damage": 3,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.7087690830230713,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "harvestcraft:seaweeditem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.7087690830230713,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "minecraft:fish",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.7087690830230713,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "harvestcraft:riceitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.7087690830230713,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "harvestcraft:bambooshootitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.7087690830230713,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "harvestcraft:curryleafitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.7087690830230713,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "minecraft:chicken",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.7087690830230713,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "minecraft:beef",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.7087690830230713,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "harvestcraft:tealeafitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.7087690830230713,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "harvestcraft:soybeanitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.7087690830230713,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "harvestcraft:chilipepperitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.7087690830230713,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "harvestcraft:gingeritem",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

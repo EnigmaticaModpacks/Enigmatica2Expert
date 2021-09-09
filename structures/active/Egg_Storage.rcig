@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "Egg_Storage",
+  "items": [
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "minecraft:egg",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

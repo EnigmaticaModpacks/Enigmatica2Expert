@@ -1,0 +1,133 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "Captain\u0027s_Chest",
+  "items": [
+    {
+      "weight": 6.624965190887451,
+      "min": 1,
+      "max": 3,
+      "item": {
+        "id": "minecraft:book",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 9.797295570373535,
+      "min": 1,
+      "max": 10,
+      "item": {
+        "id": "minecraft:paper",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 2.0475566387176514,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:writable_book",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:potion",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "CustomPotionEffects": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "ShowParticles": {
+                      "nbtType": "byte",
+                      "nbt": 0
+                    },
+                    "Duration": {
+                      "nbtType": "int",
+                      "nbt": 1200
+                    },
+                    "Id": {
+                      "nbtType": "int",
+                      "nbt": 9
+                    }
+                  }
+                }
+              ]
+            },
+            "CustomPotionColor": {
+              "nbtType": "int",
+              "nbt": 2368548
+            },
+            "Potion": {
+              "nbtType": "string",
+              "nbt": "minecraft:water"
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Lore": {
+                  "nbtType": "list",
+                  "nbt": [
+                    {
+                      "nbtType": "string",
+                      "nbt": "Don\u0027t Drink"
+                    }
+                  ]
+                },
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Ink Bottle"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.23224952816963196,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:gold_nugget",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Lore": {
+                  "nbtType": "list",
+                  "nbt": [
+                    {
+                      "nbtType": "string",
+                      "nbt": "Somewhat useless"
+                    }
+                  ]
+                },
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Gold Coin"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

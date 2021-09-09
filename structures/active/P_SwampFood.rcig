@@ -1,0 +1,177 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "Village",
+  "items": [
+    {
+      "weight": 0.4858947992324829,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "minecraft:brown_mushroom",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.4858947992324829,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "minecraft:red_mushroom",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.4858947992324829,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:mushroom_stew",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.4858947992324829,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "harvestcraft:whitemushroomitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.4858947992324829,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "minecraft:reeds",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.4858947992324829,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "minecraft:fish",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.4858947992324829,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "harvestcraft:waterchestnutitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.4858947992324829,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "harvestcraft:riceitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.4858947992324829,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "harvestcraft:lettuceitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.4858947992324829,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "harvestcraft:caulifloweritem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.4858947992324829,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "harvestcraft:broccoliitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.4858947992324829,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "harvestcraft:asparagusitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.4858947992324829,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "harvestcraft:crayfishrawitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.4858947992324829,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "harvestcraft:frograwitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.4858947992324829,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "harvestcraft:clamrawitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.4858947992324829,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "harvestcraft:catfishrawitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.4858947992324829,
+      "min": 5,
+      "max": 15,
+      "item": {
+        "id": "harvestcraft:scalloprawitem",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "Gunpowder",
+  "items": [
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:gunpowder",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}
