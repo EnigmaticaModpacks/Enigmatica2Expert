@@ -21,6 +21,7 @@ tile.rftdimtweak.dimension_builder.name=Cтроитель измерений
 tile.rftdimtweak.dimension_editor.name=Редактор измерений
 
 tooltips.lang.tag.generator=§6#Генератор
+tooltips.lang.tag.solar=§f#Солнечный
 tooltips.lang.tag.chunkloader=§9#Якорь
 tooltips.lang.tag.tank=§b#Резервуар
 tooltips.lang.tag.user=§5#Пользователь

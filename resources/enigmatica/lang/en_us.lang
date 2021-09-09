@@ -21,6 +21,7 @@ tile.rftdimtweak.dimension_builder.name=Dimension Builder
 tile.rftdimtweak.dimension_editor.name=Dimension Editor
 
 tooltips.lang.tag.generator=§6#Generator
+tooltips.lang.tag.solar=§f#Solar
 tooltips.lang.tag.chunkloader=§9#ChunkLoader
 tooltips.lang.tag.tank=§b#Tank
 tooltips.lang.tag.user=§5#User
