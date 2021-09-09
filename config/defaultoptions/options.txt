@@ -1,7 +1,7 @@
 version:1343
 invertYMouse:false
 mouseSensitivity:0.5
-fov:0.1
+fov:0.0
 gamma:1.0
 saturation:0.0
 renderDistance:7
@@ -11,7 +11,7 @@ bobView:false
 anaglyph3d:false
 maxFps:260
 fboEnable:true
-difficulty:3
+difficulty:2
 fancyGraphics:false
 ao:2
 renderClouds:fast
@@ -39,7 +39,7 @@ chatHeightFocused:1.0
 chatHeightUnfocused:0.44366196
 chatScale:1.0
 chatWidth:1.0
-mipmapLevels:2
+mipmapLevels:4
 forceUnicodeFont:false
 reducedDebugInfo:false
 useNativeTransport:true
@@ -52,7 +52,7 @@ enableWeakAttacks:false
 autoJump:false
 narrator:0
 tutorialStep:none
-soundCategory_master:0.36092716
+soundCategory_master:0.26821193
 soundCategory_music:0.0
 soundCategory_record:0.09859155
 soundCategory_weather:0.4084507

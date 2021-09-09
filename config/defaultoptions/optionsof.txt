@@ -1,10 +1,10 @@
-ofFogType:3
+ofFogType:2
 ofFogStart:0.8
 ofMipmapType:0
 ofOcclusionFancy:false
 ofSmoothFps:false
 ofSmoothWorld:true
-ofAoLevel:0.53521127
+ofAoLevel:1.0
 ofClouds:0
 ofCloudsHeight:1.0
 ofTrees:0
@@ -29,7 +29,7 @@ ofAnimatedTextures:true
 ofRainSplash:true
 ofLagometer:false
 ofShowFps:false
-ofAutoSaveTicks:4000
+ofAutoSaveTicks:7200
 ofBetterGrass:3
 ofConnectedTextures:2
 ofWeather:true
@@ -58,9 +58,9 @@ ofEmissiveTextures:true
 ofLazyChunkLoading:true
 ofRenderRegions:false
 ofSmartAnimations:false
-ofDynamicFov:true
+ofDynamicFov:false
 ofAlternateBlocks:true
-ofDynamicLights:1
+ofDynamicLights:3
 ofScreenshotSize:1
 ofCustomEntityModels:true
 ofCustomGuis:true
