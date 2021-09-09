@@ -1,23 +1,29 @@
 {
   "forge_marker": 1,
   "defaults": {
-      "model": "requious:infinity_furnace",
-      "transform": "forge:default-block"
+    "model": "requious:infinity_furnace",
+    "textures": {
+      "0": "requious:blocks/infinity_furnace_front",
+      "1": "requious:blocks/infinity_furnace_side",
+      "2": "requious:blocks/infinity_furnace_bottom",
+      "particle": "requious:blocks/infinity_furnace_side"
+    },
+    "transform": "forge:default-block"
   },
   "variants":{
-      "normal":[{}],
-      "inventory":[{}],
-      "facing": {
-          "down":  { "x": 180 },
-          "up":    { },
-          "north": { "x": 90 },
-          "south": { "x": 90, "y": 180 },
-          "west":  { "x": 90, "y": 270 },
-          "east":  { "x": 90, "y": 90 }
-      },
-      "active": {
-          "true": {},
-          "false": {}
-      }
+    "normal":[{}],
+    "inventory":[{}],
+    "facing": {
+        "down":  { "x": 180 },
+        "up":    { },
+        "north": { "x": 90 },
+        "south": { "x": 90, "y": 180 },
+        "west":  { "x": 90, "y": 270 },
+        "east":  { "x": 90, "y": 90 }
+    },
+    "active": {
+      "true": {},
+      "false": {}
+    }
   }
 }
