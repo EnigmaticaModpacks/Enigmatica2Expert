@@ -761,3 +761,157 @@ add(x, {[
   <bibliocraft:desk:*>,
   <bibliocraft:seat:*>,
 ] : [scripts._init.variables.cowWrittenBook]});
+
+
+// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+x = <assembly:excavator>;
+x.addJEICatalyst(<immersiveengineering:metal_multiblock:11>);
+x.addJEICatalyst(<immersiveengineering:metal_multiblock:12>);
+x.addJEICatalyst(<immersivepetroleum:schematic>.withTag({multiblock: "IE:ExcavatorDemo", flip: 1 as byte}));
+
+val excavatorList = [
+/*Inject_js{
+
+const oreSet = new Map()
+const defList = [
+  [25, 0.1, ['oreIron'    , 'oreNickel'       , 'oreTin'          , 'denseoreIron'                       ], [0.5, 0.25, 0.20, 0.05]],
+  [25, 0.1, ['oreIron'    , 'oreGold'                                                                    ], [0.85, 0.15]],
+  [20, 0.1, ['oreIron'    , 'dustSulfur'                                                                 ], [0.5, 0.5]],
+  [20, 0.2, ['oreAluminum', 'oreTitanium'     , 'denseoreAluminum'                                       ], [0.90, 0.05, 0.05]],
+  [30, 0.2, ['oreCopper'  , 'oreGold'         , 'oreNickel'       , 'denseoreCopper'                     ], [0.65, 0.25, 0.05, 0.05]],
+  [15, 0.2, ['oreTin'     , 'denseoreTin'                                                                ], [0.95, 0.05]],
+  [20, 0.3, ['oreGold'    , 'oreCopper'       , 'oreNickel'       , 'denseoreGold'                       ], [0.65, 0.25, 0.05, 0.05]],
+  [20, 0.3, ['oreNickel'  , 'orePlatinum'     , 'oreIron'         , 'denseoreNickel'                     ], [0.85, 0.05, 0.05, 0.05]],
+  [ 5, 0.35,['orePlatinum', 'oreNickel'       , '-oreIridium-'    , 'denseorePlatinum'                   ], [0.40, 0.30, 0.15, 0.1, 0.05]],
+  [10, 0.35,['oreUranium' , 'oreLead'         , 'orePlutonium'    , 'denseoreUranium'                    ], [0.55, 0.3, 0.1, 0.05]],
+  [ 5, 0.3, ['oreQuartz'  , 'oreCertusQuartz'                                                            ], [0.6, 0.4]],
+  [15, 0.2, ['oreLead'    , 'oreSilver'       , 'oreSulfur'       , 'denseoreLead'   , 'denseoreSilver'  ], [0.40, 0.40, 0.1, 0.05, 0.05]],
+  [10, 0.15,['oreLead'    , 'oreSilver'       , 'denseoreLead'                                           ], [0.55, 0.4, 0.05]],
+  [10, 0.2, ['oreSilver'  , 'oreLead'         , 'denseoreSilver'                                         ], [0.55, 0.4, 0.05]],
+  [10, 0.2, ['oreLapis'   , 'oreIron'         , 'dustSulfur'      , 'denseoreLapis'                      ], [0.65, 0.275, 0.025, 0.05]],
+  [15, 0.1, ['oreRedstone', 'denseoreRedstone', 'oreRuby'         , 'oreCinnabar'    , 'dustSulfur'      ], [0.75, 0.05, 0.05, 0.1, 0.05]],
+  [25, 0.1, ['oreCoal'    , 'denseoreCoal'    , 'oreDiamond'      , 'oreEmerald'                         ], [0.92, 0.1, 0.015, 0.015]],
+  [25, 0.05,['blockClay'  , 'sand'            , 'gravel'                                                 ], [0.5, 0.3, 0.2]],
+]
+
+glob.sync('scripts/**'+'/*.zs').forEach(filePath => {
+  for (const match of loadText(filePath).matchAll(/immersiveengineering\.Excavator\.addMineral\("[^"]+?", (.*)\);/gm)) {
+    defList.push(eval(`([${match[1]}])`))
+  }
+})
+
+const wSumm = _.sum(defList.map(([a])=>a))
+defList.forEach(([weight, failChance, ores, probs])=>{
+  const sum = _.sum(probs)
+  probs = probs.map(p=>p/sum)
+
+  const gain = weight / wSumm * (1-failChance)
+
+  ores.forEach((ore,i)=>{
+    oreSet.set(ore, (oreSet.get(ore)??0) + gain * probs[i])
+  })
+})
+
+const result = [...oreSet]
+  .filter(([ore])=>isODExist(ore))
+  .sort(([,a],[,b])=>b-a)
+
+return result.map(([ore,weight])=>
+    `  ${$('ore', ore, 0, weight / result[0][1] * 64, null, '.firstItem')},`
+  )
+
+}*/
+  <ore:oreIron>.firstItem * 64,
+  <ore:oreTin>.firstItem * 63,
+  <ore:oreCoal>.firstItem * 52,
+  <ore:oreSilver>.firstItem * 30,
+  <ore:oreNickel>.firstItem * 30,
+  <ore:oreCopper>.firstItem * 28,
+  <ore:oreGold>.firstItem * 27,
+  <ore:oreOsmium>.firstItem * 23,
+  <ore:oreLead>.firstItem * 22,
+  <ore:oreAluminum>.firstItem * 21,
+  <ore:blockClay>.firstItem * 17,
+  <ore:oreRedstone>.firstItem * 15,
+  <ore:dustSulfur>.firstItem * 14,
+  <ore:sand>.firstItem * 10,
+  <ore:oreLapis>.firstItem * 7,
+  <ore:oreThorium>.firstItem * 7,
+  <ore:oreBoron>.firstItem * 7,
+  <ore:oreLithium>.firstItem * 7,
+  <ore:oreMagnesium>.firstItem * 7,
+  <ore:oreQuartzBlack>.firstItem * 7,
+  <ore:gravel>.firstItem * 7,
+  <ore:oreUranium>.firstItem * 5,
+  <ore:oreQuartz>.firstItem * 3,
+  <ore:orePlatinum>.firstItem * 3,
+  <ore:oreCertusQuartz>.firstItem * 2,
+  <ore:oreCinnabar>.firstItem * 2,
+  <ore:oreTitanium>.firstItem,
+  <ore:oreRuby>.firstItem,
+  <ore:oreDiamond>.firstItem,
+  <ore:oreEmerald>.firstItem,
+/**/
+] as IItemStack[];
+
+k = 0;
+for _y in 0 .. (excavatorList.length / 9 + 1) as int {
+  for _x in 0 .. 9 {
+    x.setJEIItemSlot(_x, _y, 'output'~k);
+    k += 1;
+  }
+}
+
+add(x, {[] : excavatorList});
+
+// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+x = <assembly:mineralis>;
+x.addJEICatalyst(<astralsorcery:blockritualpedestal>);
+x.addJEICatalyst(<astralsorcery:itemtunedcelestialcrystal>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.mineralis", crystalProperties: {collectiveCapability: 100, size: 900, fract: 0, purity: 100, sizeOverride: -1}}}));
+x.addJEICatalyst(<astralsorcery:itemtunedrockcrystal>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.mineralis", crystalProperties: {collectiveCapability: 100, size: 400, fract: 0, purity: 100, sizeOverride: -1}}}));
+
+val mineralisList = [
+/*Inject_js{
+  const list = config('astralsorcery/mineralis_ritual.cfg').data.data
+  .map(o=>((a,b)=>[a, parseInt(b)])(...o.split(';')))
+  .filter(([od])=>isODExist(od))
+  .sort(([,a],[,b])=>b-a)
+  let max = _.max(list.map(([,a])=>a))
+  return list.map(([od,w])=>`  ${$('ore', od, 0, Math.max(1,(w/max*64)|0), null, '.firstItem')},`)
+}*/
+  <ore:oreCoal>.firstItem * 64,
+  <ore:oreIron>.firstItem * 30,
+  <ore:oreTin>.firstItem * 18,
+  <ore:oreCopper>.firstItem * 13,
+  <ore:oreLead>.firstItem * 12,
+  <ore:oreOsmium>.firstItem * 11,
+  <ore:oreRedstone>.firstItem * 8,
+  <ore:oreAluminum>.firstItem * 7,
+  <ore:oreBoron>.firstItem * 7,
+  <ore:oreLithium>.firstItem * 7,
+  <ore:oreMagnesium>.firstItem * 7,
+  <ore:oreThorium>.firstItem * 7,
+  <ore:oreGold>.firstItem * 6,
+  <ore:oreUranium>.firstItem * 6,
+  <ore:oreCertusQuartz>.firstItem * 6,
+  <ore:oreNickel>.firstItem * 3,
+  <ore:oreDiamond>.firstItem * 2,
+  <ore:oreSilver>.firstItem * 2,
+  <ore:oreLapis>.firstItem,
+  <ore:oreEmerald>.firstItem,
+  <ore:oreMithril>.firstItem,
+  <ore:orePlatinum>.firstItem,
+/**/
+] as IItemStack[];
+
+k = 0;
+for _y in 0 .. (mineralisList.length / 9 + 1) as int {
+  for _x in 0 .. 9 {
+    x.setJEIItemSlot(_x, _y, 'output'~k);
+    k += 1;
+  }
+}
+
+add(x, {[] : mineralisList});
