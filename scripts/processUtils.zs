@@ -133,7 +133,7 @@ function enderioXmlRecipe(processName as string,
   outputItems as IItemStack[], outputLiquids as ILiquidStack[],
   chances as float[]) as void {
   if(!utils.DEBUG) return;
-  var s = '<recipe name="' ~ outputLiquids[0].displayName ~ '" required="true"><'~processName~' energy="10000">\n';
+  var s = '<recipe name="' ~ outputLiquids[0].displayName ~ '"><'~processName~' energy="10000">\n';
   val in_f = (inputLiquids[0].amount as float) / 1000;
   val out_f = (outputLiquids[0].amount as float) / 1000;
   for inIngr in inputItems {

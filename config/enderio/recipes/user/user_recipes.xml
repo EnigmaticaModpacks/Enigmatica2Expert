@@ -101,7 +101,7 @@
   </recipe>
 
   <!-- End: Reborn integration -->
-  <recipe name="Alloy: End Steel" required="true">
+  <recipe name="Alloy: End Steel">
     <alloying energy="20000" exp="0.5">
       <input name="oredict:endstone"/>
       <input name="ingotDarkSteel"/>
@@ -156,17 +156,17 @@
   <recipe name="Enhanced SAG Mill, Upgrade">
     <disabled/>
   </recipe>
-  <recipe name="Sagmill: Flux Core" required="true">
+  <recipe name="Sagmill: Flux Core">
     <sagmilling energy="1000000">
       <input name="thermalexpansion:frame:148"/>
       <output name="fluxnetworks:fluxcore" amount="32"/>
     </sagmilling>
   </recipe>
-  <recipe name="Sagmill: Coal" required="true">
+  <recipe name="Sagmill: Coal">
     <sagmilling energy="2400">
       <input name="minecraft:coal:0" />
       <output name="dustCoal" />
-      <output name="dustSulfur" chance="0.1" required="false" />
+      <output name="dustSulfur" chance="0.1" />
     </sagmilling>
   </recipe>
   <recipe name="Quartz Dust">
@@ -175,7 +175,7 @@
       <output name="POWDER_QUARTZ" />
     </sagmilling>
   </recipe>
-  <recipe name="Sagmill: Coke Dust" required="true">
+  <recipe name="Sagmill: Coke Dust">
     <sagmilling energy="4000">
       <input name="immersiveengineering:material:6"/>
       <output name="immersiveengineering:material:17"/>
@@ -194,21 +194,21 @@
     <disabled/>
   </recipe>
   <!-- Mending Moss filling -->
-  <recipe name="Mending Moss filling 1" required="true">
+  <recipe name="Mending Moss filling 1">
     <tanking type="FILL" logic="NONE">
       <input name="tconstruct:materials:18" />
       <fluid name="xpjuice" amount="3280" />
       <output name="tconstruct:materials:19" />
     </tanking>
   </recipe>
-  <recipe name="Mending Moss filling 2" required="true">
+  <recipe name="Mending Moss filling 2">
     <tanking type="FILL" logic="NONE">
       <input name="tconstruct:materials:18" />
       <fluid name="experience" amount="3280" />
       <output name="tconstruct:materials:19" />
     </tanking>
   </recipe>
-  <recipe name="Mending Moss filling 3" required="true">
+  <recipe name="Mending Moss filling 3">
     <tanking type="FILL" logic="NONE">
       <input name="tconstruct:materials:18" />
       <fluid name="essence" amount="3280" />
@@ -216,7 +216,7 @@
     </tanking>
   </recipe>
   <!-- Replace Water to Mead -->
-  <recipe name="Nutrient Distilation" required="true">
+  <recipe name="Nutrient Distilation">
     <fermenting energy="50000">
       <inputgroup>
         <input name="itemSkull" multiplier="2.0" />
@@ -239,7 +239,7 @@
     </fermenting>
   </recipe>
   <!-- Replace Water to Milk -->
-  <recipe name="Hootch" required="true">
+  <recipe name="Hootch">
     <fermenting energy="50000">
       <inputgroup>
         <input name="minecraft:poisonous_potato" multiplier="8.0" />
@@ -261,7 +261,7 @@
       <outputfluid name="hootch" />
     </fermenting>
   </recipe>
-  <recipe name="Hootch milk" required="true">
+  <recipe name="Hootch milk">
     <fermenting energy="50000">
       <inputgroup>
         <input name="minecraft:poisonous_potato" multiplier="8.0" />
@@ -284,7 +284,7 @@
     </fermenting>
   </recipe>
 
-  <recipe name="Advanced Inventory Panel Remote" required="true">
+  <recipe name="Advanced Inventory Panel Remote">
     <crafting upgrade="true">
       <grid size="3x3">
         <item/><item/><item name="PPP_DARK_STEEL" />
@@ -295,7 +295,7 @@
     </crafting>
   </recipe>
 
-  <recipe name="Inventory Chest, Big" required="true">
+  <recipe name="Inventory Chest, Big">
     <crafting upgrade="true">
       <grid size="2x3">
         <item name="ironchest:iron_chest:2" /><item name="REMOTE_AWARENESS_UPGRADE" />
@@ -305,7 +305,7 @@
       <output name="enderio:block_inventory_chest_big" />
     </crafting>
   </recipe>
-  <recipe name="Inventory Chest, Enormous" required="true">
+  <recipe name="Inventory Chest, Enormous">
     <crafting upgrade="true">
       <grid size="3x3">
         <item /><item name="REMOTE_AWARENESS_UPGRADE" /><item />
@@ -324,7 +324,7 @@
   </recipe>
 
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-  <recipe name="Construction Foam" required="true">
+  <recipe name="Construction Foam">
     <fermenting energy="10000">
       <inputgroup>
         <input name="buildinggadgets:constructionpaste" multiplier="4.0"/>
@@ -334,7 +334,7 @@
     </fermenting>
   </recipe>
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-  <recipe name="Milk" required="true">
+  <recipe name="Milk">
     <fermenting energy="10000">
       <inputgroup>
         <input name="ic2:dust:33" multiplier="0.25"/>
@@ -344,7 +344,7 @@
     </fermenting>
   </recipe>
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-  <recipe name="Quicksand" required="true">
+  <recipe name="Quicksand">
     <fermenting energy="10000">
       <inputgroup>
         <input name="minecraft:soul_sand" multiplier="1.0"/>
