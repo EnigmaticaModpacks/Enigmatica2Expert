@@ -1,5 +1,53 @@
 [
   {
+    "block": "rftoolsdim:block_blockdimensionalshard:0",
+    "distrib": "0,0.0;1,0.001;250,0.001;251,0.0;",
+    "silktouch": false,
+    "dim": "RFTools Dimension"
+  },
+  {
+    "block": "rftoolsdim:dimensional_blank_block:0",
+    "distrib": "0,0.0;1,0.001;250,0.001;251,0.0;",
+    "silktouch": false,
+    "dim": "RFTools Dimension"
+  },
+  {
+    "block": "rftoolsdim:dimensional_block:0",
+    "distrib": "0,0.0;1,0.001;250,0.001;251,0.0;",
+    "silktouch": false,
+    "dim": "RFTools Dimension"
+  },
+  {
+    "block": "rftoolsdim:dimensional_cross2_block:0",
+    "distrib": "0,0.0;1,0.001;250,0.001;251,0.0;",
+    "silktouch": false,
+    "dim": "RFTools Dimension"
+  },
+  {
+    "block": "rftoolsdim:dimensional_cross_block:0",
+    "distrib": "0,0.0;1,0.001;250,0.001;251,0.0;",
+    "silktouch": false,
+    "dim": "RFTools Dimension"
+  },
+  {
+    "block": "rftoolsdim:dimensional_pattern1_block:0",
+    "distrib": "0,0.0;1,0.001;250,0.001;251,0.0;",
+    "silktouch": false,
+    "dim": "RFTools Dimension"
+  },
+  {
+    "block": "rftoolsdim:dimensional_pattern2_block:0",
+    "distrib": "0,0.0;1,0.001;250,0.001;251,0.0;",
+    "silktouch": false,
+    "dim": "RFTools Dimension"
+  },
+  {
+    "block": "rftoolsdim:dimensional_small_blocks:0",
+    "distrib": "0,0.0;1,0.001;250,0.001;251,0.0;",
+    "silktouch": false,
+    "dim": "RFTools Dimension"
+  },
+  {
     "block": "actuallyadditions:block_misc:3",
     "distrib": "0,0.010323828;1,0.010483203;2,0.0;17,0.0;18,7.390625E-4;19,0.0011359375;20,0.00115625;21,0.0011183594;22,0.0011640625;23,0.001115625;24,0.0011289063;25,0.0011265625;26,0.0011210938;27,0.0011703125;28,0.0011492188;29,0.0012015625;30,0.0012648437;31,0.0012699219;32,0.0012441407;33,0.0012757812;34,0.0012503907;35,0.0012191406;36,0.0011800781;37,0.0011566406;38,0.0011921875;39,0.0011601562;40,0.001165625;41,0.0011347656;42,0.0011027344;43,0.001071875;44,0.0010789062;45,0.0010667968;46,0.0010265625;47,9.378906E-4;48,7.2109373E-4;49,7.40625E-4;50,7.3515624E-4;51,7.2773435E-4;52,7.5273437E-4;53,7.617187E-4;54,7.4101565E-4;55,2.5585937E-4;56,0.0;",
     "silktouch": true,
