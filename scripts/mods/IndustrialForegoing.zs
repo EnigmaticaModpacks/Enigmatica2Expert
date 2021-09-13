@@ -330,3 +330,29 @@ craft.remake(<industrialforegoing:energy_field_addon>, ["pretty",
 });
 
 
+# Remove barely all Ore benification to leave only meat washing
+function cleanupBenification(item as IItemStack, ingot as IItemStack, dust as IItemStack, fluid as ILiquidStack) as void {
+	recipes.removeShapeless(<*>, [item, <immersiveengineering:tool>]);
+	furnace.remove(<*>, item.anyDamage());
+	mods.actuallyadditions.Crusher.removeRecipe(dust);
+	mods.appliedenergistics2.Grinder.removeRecipe(item);
+	mods.astralsorcery.Grindstone.removeRecipe(dust);
+	mods.enderio.SagMill.removeRecipe(item);
+	mods.extrautils2.Crusher.remove(item);
+	mods.immersiveengineering.ArcFurnace.removeRecipe(ingot);
+	mods.immersiveengineering.Crusher.removeRecipesForInput(item);
+	mods.mekanism.chemical.injection.removeRecipe(<*>, item);
+	mods.mekanism.enrichment.removeRecipe(item);
+	mods.mekanism.purification.removeRecipe(<*>, item);
+	mods.nuclearcraft.manufactory.removeRecipeWithInput([item]);
+	mods.nuclearcraft.melter.removeRecipeWithInput([item]);
+	mods.tconstruct.Melting.removeRecipe(fluid, item);
+	mods.thermalexpansion.Crucible.removeRecipe(item);
+	mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, item);
+	mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:865>, item);
+	mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:866>, item);
+	mods.thermalexpansion.Pulverizer.removeRecipe(item);
+}
+
+mods.thaumcraft.Crucible.removeRecipe(<jaopca:item_clustertitanium>);
+cleanupBenification(<libvulpes:ore0:8>, <libvulpes:productingot:7>, <libvulpes:productdust:7>, <fluid:titanium>);
