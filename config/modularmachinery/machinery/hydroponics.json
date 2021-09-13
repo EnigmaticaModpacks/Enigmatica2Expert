@@ -2,7 +2,7 @@
     "registryname": "hydroponics",
     "localizedname": "Hydroponics",
     "requires-blueprint": true,
-    "color": "EEEEEE",
+	"color": "afb08d",
     "parts": [
         { "x": -1, "y": 0, "z": 0, "elements": ["modularmachinery:blockcasing@0"] },
         { "x": -1, "y": 1, "z": 0, "elements": ["quark:colored_flowerpot_white@0"] },

@@ -1,51 +1,58 @@
-import crafttweaker.item.IItemStack as IItemStack;
 #modloaded modularmachinery
 
-# Arcane Crafting Engine
-    recipes.addShapedMirrored("Arcane Crafting Engine", 
-    <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:arcane_crafting_engine"}), 
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
+import scripts.craft.grid.Grid;
+
+val modIngrs = {
+
+arcane_crafting_engine:
     [[<ore:ingotModularium>, <thaumcraft:mechanism_complex>, <ore:ingotModularium>],
     [<thaumcraft:salis_mundus>, <immersiveengineering:blueprint>.anyDamage(), <thaumcraft:salis_mundus>], 
-    [<ore:ingotModularium>, <thaumcraft:salis_mundus>, <ore:ingotModularium>]]);
+    [<ore:ingotModularium>, <thaumcraft:salis_mundus>, <ore:ingotModularium>]],
 
-# Advanced Thermionic Fabricator
-	recipes.addShapedMirrored("Advanced Thermionic Fabricator", 
-	<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:advanced_thermionic_fabricator"}), 
+advanced_thermionic_fabricator:
 	[[<modularmachinery:blockcasing>, <aeadditions:storage.component:8>, <modularmachinery:blockcasing>],
 	[<forestry:fabricator>, <immersiveengineering:blueprint>.anyDamage(), <forestry:fabricator>], 
-	[<modularmachinery:blockcasing>, <aeadditions:fluidcrafter>, <modularmachinery:blockcasing>]]);
+	[<modularmachinery:blockcasing>, <aeadditions:fluidcrafter>, <modularmachinery:blockcasing>]],
 
-# Starlight Crafting Engine
-	recipes.addShapedMirrored("Starlight Crafting Engine", 
-	<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:starlight_crafting_engine"}), 
+starlight_crafting_engine:
 	[[<ore:ingotModularium>, <astralsorcery:itemshiftingstar>, <ore:ingotModularium>],
 	[<ore:ingotModularium>, <immersiveengineering:blueprint>.anyDamage(), <ore:ingotModularium>], 
-	[<ore:ingotModularium>, <astralsorcery:itemcraftingcomponent:4>, <ore:ingotModularium>]]);
+	[<ore:ingotModularium>, <astralsorcery:itemcraftingcomponent:4>, <ore:ingotModularium>]],
 
-# Advanced Carpenter
-    recipes.addShapedMirrored("Advanced Carpenter", 
-    <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:advanced_carpenter"}), 
+advanced_carpenter:
     [[<modularmachinery:blockcasing>, <thermaldynamics:duct_16:6> | <thermaldynamics:duct_16:7>, <modularmachinery:blockcasing>],
     [<forestry:carpenter>, <immersiveengineering:blueprint>.anyDamage(), <forestry:carpenter>], 
-    [<modularmachinery:blockcasing>, <aeadditions:fluidcrafter>, <modularmachinery:blockcasing>]]);
+    [<modularmachinery:blockcasing>, <aeadditions:fluidcrafter>, <modularmachinery:blockcasing>]],
     
-# Advanced Scrap Factory
-	recipes.addShapedMirrored("Advanced Scrap Factory", 
-	<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:advanced_scrap_factory"}), 
+advanced_scrap_factory:
 	[[<modularmachinery:blockcasing>, <ore:gearVibrant>, <modularmachinery:blockcasing>],
 	[<forge:bucketfilled>.withTag({FluidName: "ic2pahoehoe_lava", Amount: 1000}), <immersiveengineering:blueprint>.anyDamage(), <forge:bucketfilled>.withTag({FluidName: "ic2distilled_water", Amount: 1000})], 
-	[<modularmachinery:blockcasing>, <ore:gearVibrant>, <modularmachinery:blockcasing>]]);
+	[<modularmachinery:blockcasing>, <ore:gearVibrant>, <modularmachinery:blockcasing>]],
 
-# [Machine Blueprint] from [Engineer's Blueprint][+3]
-    craft.remake(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:hydroponics"}), ["pretty",
-        "▬ G ▬",
-        "G E G",
-        "▬ § ▬"], {
-        "E": <immersiveengineering:blueprint:*>,          # Engineer's Blueprint
-        "G": <actuallyadditions:block_greenhouse_glass>, # Greenhouse Glass
-        "§": <mysticalagriculture:growth_accelerator>,   # Growth Accelerator
-        "▬": <ore:ingotModularium>,                      # Modularium Alloy
-    });
+hydroponics:
+  Grid(["pretty",
+    "▬ G ▬",
+    "G E G",
+    "▬ § ▬"], {
+    "E": <immersiveengineering:blueprint:*>,         # Engineer's Blueprint
+    "G": <actuallyadditions:block_greenhouse_glass>, # Greenhouse Glass
+    "§": <appliedenergistics2:quartz_growth_accelerator>,
+    "▬": <ore:ingotModularium>,                      # Modularium Alloy
+  }).shaped(),
+
+} as IIngredient[][][string];
+
+for name, grid in modIngrs {
+  val blueprint = <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:"~name});
+	recipes.addShapedMirrored("modularmachinery " ~ name, blueprint, grid);
+
+	recipes.addShapeless("modularcontroller " ~ name, 
+    itemUtils.getItem("modularcontroller:"~name~"_controller"), 
+    [<modularmachinery:blockcontroller>, blueprint]
+  );
+}
 
 # [Machine Vent] from [Machine Casing][+1]
 craft.remake(<modularmachinery:blockcasing:1>, [

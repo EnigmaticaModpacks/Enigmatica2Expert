@@ -1,6 +1,7 @@
 {
 	"registryname": "advanced_thermionic_fabricator",
     "localizedname": "Advanced Thermionic Fabricator",
+	"color": "8da5b0",
     "parts": [
         {
             "x": -2,

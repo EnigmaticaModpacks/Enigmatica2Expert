@@ -1,6 +1,7 @@
 {
 	"registryname": "advanced_scrap_factory",
     "localizedname": "Advanced Scrap Factory",
+	"color": "706764",
     "parts": [
         {
             "x": 1,

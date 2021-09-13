@@ -1,6 +1,7 @@
 {
 	"registryname": "advanced_carpenter",
     "localizedname": "Advanced Carpenter",
+	"color": "a3977c",
     "parts": [
         {"x": -1,"y": -1,"z": 0,"elements": ["modularmachinery:blockcasing@0"]},
         {"x": -1,"y": -1,"z": 1,"elements": ["modularmachinery:blockcasing@0"]},
