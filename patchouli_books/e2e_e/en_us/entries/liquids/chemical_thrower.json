@@ -6,7 +6,7 @@
   "pages": [
     {
       "title": "New Chemicals",
-      "text": "Many liquids can be used in $(l)Chemical Thrower/$ as ammo.$(br)$(li)$(#727900)Strong Radiation/$ liquids have low damage, but gave Radiation III effect for 1-6 minutes$(br)$(li)$(#C01B1B)High damage/$ only do big amount of damage$(br)$(li)$(#957143)Flammable/$ set things on fire$(br)$(li)$(#25A2AB)potion effects/$ damages and adds effects$(br)$(li)$(#3F1B10)Chocolates/$ gives several strong positive effects",
+      "text": "Many liquids can be used in $(l)Chemical Thrower/$ as ammo.$(br)$(li)$(#727900)Strong Radiation/$ liquids have low damage, but gave Radiation III effect for 1-6 minutes$(br)$(li)$(#C01B1B)High damage/$ only do big amount of damage$(br)$(li)$(#957143)Flammable/$ set things on fire$(br)$(li)$(#25A2AB)Potion effects/$ damages and adds effects$(br)$(li)$(#3F1B10)Chocolates/$ gives several strong positive effects",
       "type": "text"
     },
     {
@@ -45,24 +45,26 @@
     {
       "title": "Flammable",
       "type": "grid_description",
-      "item0": "forge:bucketfilled{FluidName:\"rocketfuel\",Amount:1000}",
-      "text0": "15",
-      "item1": "forge:bucketfilled{FluidName:\"rocket_fuel\",Amount:1000}",
-      "text1": "13",
-      "item2": "forge:bucketfilled{FluidName:\"empoweredoil\",Amount:1000}",
-      "text2": "12",
-      "item3": "forge:bucketfilled{FluidName:\"refined_fuel\",Amount:1000}",
-      "text3": "10",
-      "item4": "forge:bucketfilled{FluidName:\"crystaloil\",Amount:1000}",
-      "text4": "6",
-      "item5": "forge:bucketfilled{FluidName:\"biofuel\",Amount:1000}",
-      "text5": "4",
-      "item6": "forge:bucketfilled{FluidName:\"canolaoil\",Amount:1000}",
-      "text6": "3",
-      "item7": "forge:bucketfilled{FluidName:\"biomass\",Amount:1000}",
+      "item0": "forge:bucketfilled{FluidName:\"perfect_fuel\",Amount:1000}",
+      "text0": "350",
+      "item1": "forge:bucketfilled{FluidName:\"rocketfuel\",Amount:1000}",
+      "text1": "35",
+      "item2": "forge:bucketfilled{FluidName:\"rocket_fuel\",Amount:1000}",
+      "text2": "13",
+      "item3": "forge:bucketfilled{FluidName:\"empoweredoil\",Amount:1000}",
+      "text3": "12",
+      "item4": "forge:bucketfilled{FluidName:\"refined_fuel\",Amount:1000}",
+      "text4": "10",
+      "item5": "forge:bucketfilled{FluidName:\"crystaloil\",Amount:1000}",
+      "text5": "6",
+      "item6": "forge:bucketfilled{FluidName:\"biofuel\",Amount:1000}",
+      "text6": "4",
+      "item7": "forge:bucketfilled{FluidName:\"canolaoil\",Amount:1000}",
       "text7": "3",
-      "item8": "forge:bucketfilled{FluidName:\"oil\",Amount:1000}",
-      "text8": "2"
+      "item8": "forge:bucketfilled{FluidName:\"biomass\",Amount:1000}",
+      "text8": "3",
+      "item9": "forge:bucketfilled{FluidName:\"oil\",Amount:1000}",
+      "text9": "2"
     },
     {
       "item0": "forge:bucketfilled{FluidName:\"hydrofluoric_acid\",Amount:1000}",
