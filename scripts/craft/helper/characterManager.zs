@@ -66,7 +66,7 @@ zenClass CharacterManager { zenConstructor() {}
     }
     if(len == 1) return {getCharacter(ingrs[0]): ingrs[0]};
 
-    val sorted_indexes = utils.sortInt(weights);
+    val sorted_indexes = scripts.craft.craft_utils.sortInt(weights);
     val result as IIngredient[string] = {};
     for i, k in sorted_indexes {
       val ingr = ingrs[k];

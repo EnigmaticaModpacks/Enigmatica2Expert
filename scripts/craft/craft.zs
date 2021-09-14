@@ -22,22 +22,22 @@ Example
 
 #priority 2000
 
-/*
-  If you do not have ExtendedCrafting mod, remove #modloaded line 
-  and make changes in function make()
-*/
-#modloaded extendedcrafting
-
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.recipes.IRecipeFunction;
 import scripts.craft.grid.Grid;
+import scripts.craft.craft_extension.Extension;
 
 
 zenClass Craft {
   # Private fields
   # Store names that already was used to prevent same retcipe names
   var registeredNames as int[string] = {};
+
+  # Extensions of default Crafting Table capabilities.
+  # For example, Craft.zs can be extended with Extended Crafting
+  # recipe adding function.
+  var extensions as Extension = null;
 
 	zenConstructor() {}
 
@@ -46,12 +46,12 @@ zenClass Craft {
   #------------------------------------------------------------------
 
   # Create new Crafting Table recipe
-  function shapeless(output as IItemStack, gridStr as string  , options as IIngredient[string]                        ) as void {make(output,[gridStr],options, null, true);}
-  function shapeless(output as IItemStack, gridStr as string  , options as IIngredient[string], fnc as IRecipeFunction) as void {make(output,[gridStr],options,  fnc, true);}
-  function    shaped(output as IItemStack, gridStr as string[], options as IIngredient[string]                        ) as void {make(output, gridStr, options, null, false);}
-  function    shaped(output as IItemStack, gridStr as string[], options as IIngredient[string], fnc as IRecipeFunction) as void {make(output, gridStr, options,  fnc, false);}
-  function      make(output as IItemStack, gridStr as string[], options as IIngredient[string])                         as void {make(output, gridStr, options, null, false);}
-  function      make(output as IItemStack, gridStr as string[], options as IIngredient[string], fnc as IRecipeFunction) as void {make(output, gridStr, options, fnc, false);}
+  function shapeless(output as IItemStack, gridLine as string , options as IIngredient[string]                        ) as void {make(output,[gridLine],options, null, true);}
+  function shapeless(output as IItemStack, gridLine as string , options as IIngredient[string], fnc as IRecipeFunction) as void {make(output,[gridLine],options,  fnc, true);}
+  function    shaped(output as IItemStack, gridStr as string[], options as IIngredient[string]                        ) as void {make(output, gridStr,  options, null, false);}
+  function    shaped(output as IItemStack, gridStr as string[], options as IIngredient[string], fnc as IRecipeFunction) as void {make(output, gridStr,  options,  fnc, false);}
+  function      make(output as IItemStack, gridStr as string[], options as IIngredient[string])                         as void {make(output, gridStr,  options, null, false);}
+  function      make(output as IItemStack, gridStr as string[], options as IIngredient[string], fnc as IRecipeFunction) as void {make(output, gridStr,  options,  fnc, false);}
   function      make(output as IItemStack, gridStr as string[], options as IIngredient[string], fnc as IRecipeFunction, isShapeless as bool) as void {
     var grid = Grid(gridStr, options);
     if (!isNull(grid.error)) {
@@ -61,33 +61,29 @@ zenClass Craft {
 
     val rName = uniqueRecipeName(output, grid);
 
+    # Iterate over all extensions
+    var ext = extensions;
+    while(!isNull(ext)) {
+      if(ext.tryCraft(output, rName, grid, fnc, null, isShapeless)) return;
+      ext = ext.next;
+    }
+
+    # No extensions matches, use vanilla crafting table
     if (isShapeless) {
       var ingrs = grid.shapeless();
       if (ingrs.length > 9) {
-        /*
-        # If you do not have ExtendedCrafting mod, uncomment this block
-        # and comment line below
         logger.logWarning("craft.make error: ingredients count is "~ingrs.length~
           ". Its more than vanilla table can handle.\nGrid:\n" ~ grid.toString());
         return;
-         */
-        scripts.wrap.extendedcrafting.TableCrafting.addShapeless(output, ingrs);
       } else {
         recipes.addShapeless(rName, output, ingrs, fnc, null);
       }
     } else {
       var grd = grid.shaped();
       if (max(grid.X, grid.Y) > 3) {
-        /* 
-        # If you do not have ExtendedCrafting mod, uncomment this block
-        # and comment code block below
         logger.logWarning("craft.make error: ingredients size is "~grid.X~":"~grid.Y~
           ". Its more than vanilla table can handle.\nGrid:\n" ~ grid.toString());
         return;
-         */
-        scripts.wrap.extendedcrafting.TableCrafting.addShaped(output, grd);
-        utils.log("Adding shaped Extended Crafting Table recipe " ~ rName);
-        if (!isNull(fnc)) { logger.logWarning("Cant add recipe function to Extended Crafting table, recipe: " ~ rName); }
       } else {
         recipes.addShaped(rName, output, grd, fnc, null);
       }
@@ -96,12 +92,12 @@ zenClass Craft {
   }
 
   # Create new Crafting Table recipe, but would remove old recipe first
-  function reshapeless(output as IItemStack, gridStr as string  , options as IIngredient[string]                        ) as void {remake(output,[gridStr],options, null, true );}
-  function reshapeless(output as IItemStack, gridStr as string  , options as IIngredient[string], fnc as IRecipeFunction) as void {remake(output,[gridStr],options,  fnc, true );}
-  function    reshaped(output as IItemStack, gridStr as string[], options as IIngredient[string]                        ) as void {remake(output, gridStr, options, null, false);}
-  function    reshaped(output as IItemStack, gridStr as string[], options as IIngredient[string], fnc as IRecipeFunction) as void {remake(output, gridStr, options,  fnc, false);}
-  function      remake(output as IItemStack, gridStr as string[], options as IIngredient[string])                         as void {remake(output, gridStr, options, null, false);}
-  function      remake(output as IItemStack, gridStr as string[], options as IIngredient[string], fnc as IRecipeFunction) as void {remake(output, gridStr, options, fnc, false);}
+  function reshapeless(output as IItemStack, gridLine as string , options as IIngredient[string]                        ) as void {remake(output,[gridLine],options, null, true );}
+  function reshapeless(output as IItemStack, gridLine as string , options as IIngredient[string], fnc as IRecipeFunction) as void {remake(output,[gridLine],options,  fnc, true );}
+  function    reshaped(output as IItemStack, gridStr as string[], options as IIngredient[string]                        ) as void {remake(output, gridStr,  options, null, false);}
+  function    reshaped(output as IItemStack, gridStr as string[], options as IIngredient[string], fnc as IRecipeFunction) as void {remake(output, gridStr,  options,  fnc, false);}
+  function      remake(output as IItemStack, gridStr as string[], options as IIngredient[string])                         as void {remake(output, gridStr,  options, null, false);}
+  function      remake(output as IItemStack, gridStr as string[], options as IIngredient[string], fnc as IRecipeFunction) as void {remake(output, gridStr,  options,  fnc, false);}
   function      remake(output as IItemStack, gridStr as string[], options as IIngredient[string], fnc as IRecipeFunction, isShapeless as bool) as void  {
     # Automatically remove previous recipe, or recipe tagged "remove" in options
     if (!isNull(options.remove)) {
@@ -158,6 +154,15 @@ zenClass Craft {
     }
 
     return name;
+  }
+
+  function pushExtension(ext as Extension) as void {
+    if (isNull(extensions)) extensions = ext;
+    else {
+      var lastExt = extensions;
+      while(!isNull(lastExt.next)) lastExt = lastExt.next;
+      lastExt.next = ext;
+    }
   }
 }
 global craft as Craft = Craft();

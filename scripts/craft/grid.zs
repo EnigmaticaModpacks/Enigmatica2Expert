@@ -130,6 +130,7 @@ zenClass Grid {
     # Make ingredients list from string grid
     shapedList = [[]];
     for y, row in map {
+      if(row.length==0) continue;
       for x in 0 to row.length {
         if (shapedList.length <= y) shapedList += [] as IIngredient[];
         shapedList[y] = shapedList[y] + opts[row[x]];
@@ -146,11 +147,12 @@ zenClass Grid {
     # Make ingredients list from string grid
     shapelessList = [];
     for y, row in map {
+      if(row.length==0) continue;
       for x in 0 to row.length {
         # Add ingredient in list
         var ingr = opts[row[x]];
         if (!isNull(ingr)) {
-          shapelessList = shapelessList + ingr;
+          shapelessList += ingr;
         }
       }
     }
@@ -205,43 +207,57 @@ zenClass Grid {
     return opts[minKey];
   }
 
+  # Get joined grid string.
+  # In other words - sequence of characters in appearing order
+  function getOrder() as string {
+    if(isNull(map) || isMapEmpty()) return '';
+    var order = '';
+    for y, row in map { order += row; }
+    return order;
+  }
+
   # Return string representation of grid
   function toString() as string { return toString([]); }
   function toString(_style as string[]) as string {
     val style as string[] = isNull(_style) ? [] : _style;
 
-    val isDense = (style has "dense");
-    val isPretty = !(style has "noPretty") && !isDense;
+    val isDense     =  (style has "dense");
+    val isShapeless =  (style has "shapeless");
+    val isPretty    = !isShapeless && !isDense && !(style has "noPretty");
     val ln   = isDense ? "" : "\n";
     val dlim = (isDense ? ", " : ",") ~ ln;
 
     # "pretty" prefix
-    var s = "[";
+    var s = isShapeless?'"':"[";
     if(isPretty) s +='"pretty"' ~ dlim;
-    else s += ln;
+    else if(!isShapeless) s += ln;
 
     # 2d Grid
     if(isNull(map)) 
-      s += "<no grid map>" ;
+      s += "<no grid map>";
     else if(isMapEmpty()) 
       s += "<no grid letters match options>";
     else
       for y, row in map {
-        var l = "";
-        if(y!=0) l = dlim;
-        if(!isDense) l += "  ";
-        l += serialize._string(isPretty
-          ? row.replaceAll("(.)(?!$)", "$1 ")
-          : row);
-        s += l;
+        if(isShapeless) {
+          s += isNull(opts[" "]) ? row.replaceAll(" ", "") : row;
+        } else {
+          var l = "";
+          if(y!=0) l = dlim;
+          if(!isDense) l += "  ";
+          l += serialize._string(isPretty
+            ? row.replaceAll("(.)(?!$)", "$1 ")
+            : row);
+          s += l;
+        }
       }
-    s += "]";
+    s += isShapeless?'"':"]";
 
     # Add Ingredients Table
     if(!(style has "noMap")) {
       val opts_s = isNull(opts) 
         ? "<options is not provided>" 
-        : serialize.IIngredient_string_(opts, style);
+        : serialize.IIngredient_string_(opts, style, getOrder());
       s += ", {"~ln~ opts_s ~ln~ "}";
     }
 
