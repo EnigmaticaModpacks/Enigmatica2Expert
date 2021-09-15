@@ -52,18 +52,18 @@ function tweak(table as string, poolStr as string, entryToRemove as string, item
   }
 }
 
-tweak("quark:entities/crab","legs","quark:crab_leg", <quark:crab_leg>, [<harvestcraft:crabrawitem>], [1,3]);
-tweak("twilightforest:entities/helmet_crab","fish","minecraft:fish", null, [<harvestcraft:crabrawitem>], [1,3]);
-tweak("twilightforest:entities/deer","meat","twilightforest:raw_venison", <twilightforest:raw_venison>, [<harvestcraft:venisonrawitem>], [1,3]);
-tweak("emberroot:entity/golem_blue","main","minecraft:iron_nugget", null, [<thermalfoundation:material:16>], [1,3]);
-tweak("emberroot:entity/golem_green","main","minecraft:gunpowder", null, [<mysticalagriculture:crafting:40>], [1,3]);
-tweak("emberroot:entity/golem_orange","main","minecraft:coal", null, [<mekanism:nugget:3>], [1,3]);
-tweak("emberroot:entity/golem_purple","main","minecraft:spider_eye", null, [<mechanics:heavy_nugget>], [1,3]);
-tweak("emberroot:entity/golem_red","main","minecraft:redstone", null, [<enderio:item_alloy_nugget:3>], [1,3]);
-tweak("emberroot:entity/golem_yellow","main","minecraft:gold_nugget", null, [<thermalfoundation:material:228>], [1,3]);
-tweak("emberroot:entity/skeleton_frozen","main","minecraft:ice", null, [<mctsmelteryio:iceball>], [3,6]);
-tweak("emberroot:entity/sprite_mini","main","minecraft:rotten_flesh", null, [<mysticalagriculture:nature_essence>], [1,3]);
-tweak("emberroot:entity/sprite_normal","main","minecraft:rotten_flesh", null, [<mysticalagriculture:dye_essence>], [1,3]);
-tweak("emberroot:entity/sprite_greater","main",null, null, [<mysticalagriculture:platinum_essence>], [1,3]);
-tweak("emberroot:entity/sprite_boss","main",null, null, [<mysticalagriculture:ender_amethyst_essence>], [6,12]);
-tweak("randomthings:beanpod","Diamond","minecraft:diamond", null, [<biomesoplenty:gem:1>, <biomesoplenty:gem:2>, <biomesoplenty:gem:3>, <biomesoplenty:gem:4>, <biomesoplenty:gem:5>, <biomesoplenty:gem:6>], [0,1]);
+tweak("quark:entities/crab"                , "legs"     , "quark:crab_leg", <quark:crab_leg>, [<harvestcraft:crabrawitem>], [1,3]);
+tweak("twilightforest:entities/helmet_crab", "fish"     , "minecraft:fish", null, [<harvestcraft:crabrawitem>], [1,3]);
+tweak("twilightforest:entities/deer"       , "meat"     , "twilightforest:raw_venison", <twilightforest:raw_venison>, [<harvestcraft:venisonrawitem>], [1,3]);
+tweak("emberroot:entity/golem_blue"        , "main"     , null, null, [<thermalfoundation:material:16>], [1,3]);
+tweak("emberroot:entity/golem_green"       , "main"     , null, null, [<mysticalagriculture:crafting:40>], [1,3]);
+tweak("emberroot:entity/golem_orange"      , "main"     , null, null, [<mekanism:nugget:3>], [1,3]);
+tweak("emberroot:entity/golem_purple"      , "main"     , null, null, [<mechanics:heavy_nugget>], [1,3]);
+tweak("emberroot:entity/golem_red"         , "main"     , null, null, [<enderio:item_alloy_nugget:3>], [1,3]);
+tweak("emberroot:entity/golem_yellow"      , "main"     , null, null, [<thermalfoundation:material:228>], [1,3]);
+tweak("emberroot:entity/skeleton_frozen"   , "main"     , null, null, [<mctsmelteryio:iceball>], [3,6]);
+tweak("emberroot:entity/sprite_mini"       , "main"     , null, null, [<mysticalagriculture:nature_essence>], [1,3]);
+tweak("emberroot:entity/sprite_normal"     , "main"     , null, null, [<mysticalagriculture:dye_essence>], [1,3]);
+tweak("emberroot:entity/sprite_greater"    , "main"     , null, null, [<mysticalagriculture:platinum_essence>], [1,3]);
+tweak("emberroot:entity/sprite_boss"       , "main"     , null, null, [<mysticalagriculture:ender_amethyst_essence>], [6,12]);
+tweak("randomthings:beanpod"               , "Diamond"  , "minecraft:diamond", null, [<biomesoplenty:gem:1>, <biomesoplenty:gem:2>, <biomesoplenty:gem:3>, <biomesoplenty:gem:4>, <biomesoplenty:gem:5>, <biomesoplenty:gem:6>], [0,1]);
