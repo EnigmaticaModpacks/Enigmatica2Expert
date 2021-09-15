@@ -1,6 +1,440 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
 
+# 0.30
+
+**IMPORTANT!**  
+In this version default world type is **VOID**.  
+Manually change to **Biomes O Plenty** in new world options.
+
+
+## 🟢 New Mods
+
+Icon | Summary | Reason
+----:|:--------| ------
+<img src="https://media.forgecdn.net/avatars/thumbnails/266/967/256/256/637234263329276851.png" width="50"> | 🟫 [**Game Stages Viewer**](https://www.curseforge.com/minecraft/mc-mods/game-stages-viewer) <sup><sub>gamestagesviewer-1.0.jar</sub></sup> <br> Visualize the your stages of the Game Stages | Help player find all received mob armor stages
+<img src="https://media.forgecdn.net/avatars/thumbnails/108/684/256/256/636374315485450120.png" width="50"> | 🟨 [**U Team Core**](https://www.curseforge.com/minecraft/mc-mods/u-team-core) <sup><sub>u_team_core-1.12.2-2.2.5.147.jar</sub></sup> <br> This libary contains many usefull modding stuff | Lib
+<img src="https://media.forgecdn.net/avatars/thumbnails/101/718/256/256/636324883919963872.png" width="50"> | 🟩 [**Dimension Stages**](https://www.curseforge.com/minecraft/mc-mods/dimension-stages) <sup><sub>DimensionStages-1.12.2-2.0.23.jar</sub></sup> <br> Allows access to dimensions to be restricted based on stages. | Forbid Visiting Nether unless you get 40 hp
+<img src="https://media.forgecdn.net/avatars/thumbnails/394/880/256/256/637592369221037365.png" width="50"> | 🟫 [**AE Additions - ExtraCells2 Fork**](https://www.curseforge.com/minecraft/mc-mods/ae-additions-extra-cells-2-fork) <sup><sub>AEAdditions-1.12.2-1.3.1.jar</sub></sup> <br> An Updated Extra Cells 2 fork with bug fixes, improvements and new things | Updated mod
+<img src="https://media.forgecdn.net/avatars/thumbnails/158/41/256/256/636649849318027366.png" width="50"> | 🟩 [**JustEnoughIDs**](https://www.curseforge.com/minecraft/mc-mods/jeid) <sup><sub>JustEnoughIDs-1.0.3-55.jar</sub></sup> <br> Remove the block, item, and biome ID limits by using the 1.13 chunk format in 1.12 | Better than NEID
+<img src="https://media.forgecdn.net/avatars/thumbnails/431/99/256/256/637665942273064272.png" width="50"> | 🟨 [**Modular Controller**](https://www.curseforge.com/minecraft/mc-mods/modular-controller) <sup><sub>ModularController-1.1.2.jar</sub></sup> <br> An addon to Modular Machinery making each machine has its own controller. | Could be more useful then ![](https://git.io/JuAMS "Machine Blueprint")
+<img src="https://media.forgecdn.net/avatars/thumbnails/177/405/256/256/636770491013689770.png" width="50"> | 🟨 [**Useful Railroads**](https://www.curseforge.com/minecraft/mc-mods/useful-railroads) <sup><sub>useful_railroads-1.12.2-1.1.3.24.jar</sub></sup> <br> Wo don't want extreme high speed rails for travel? | Early game automation and item transport
+<img src="https://media.forgecdn.net/avatars/thumbnails/139/476/256/256/636528457531380269.png" width="50"> | 🟫 [**Terracart Reloaded**](https://www.curseforge.com/minecraft/mc-mods/terracart-reloaded) <sup><sub>terracartreloaded-1.12.2-1.2.3.jar</sub></sup> <br> Terraria Cart in Minecraft, Right click track and have fun! | QOL mod for rail lovers
+<img src="https://media.forgecdn.net/avatars/thumbnails/156/357/256/256/636638775074425697.png" width="50"> | 🟩 [**Enable Cheats**](https://www.curseforge.com/minecraft/mc-mods/enable-cheats) <sup><sub>EnableCheats-1.12.2-1.0.0.jar</sub></sup> <br> Enable or Disable Cheats without opening to LAN | Little sugar
+<img src="https://media.forgecdn.net/avatars/thumbnails/160/614/256/256/636666750686247023.png" width="50"> | 🟨 [**Deep Mob Learning - Blood Magic Addon**](https://www.curseforge.com/minecraft/mc-mods/deep-mob-learning-blood-magic-addon) <sup><sub>deepmoblearningbm-1.12.2-1.0.1-universal.jar</sub></sup> <br> BloodMagic addon for Deep Mob Learning. | More integration
+<img src="https://media.forgecdn.net/avatars/thumbnails/85/928/256/256/636205851394458635.png" width="50"> | 🟨 [**Void Island Control**](https://www.curseforge.com/minecraft/mc-mods/void-island-control) <sup><sub>voidislandcontrol-1.5.3.jar</sub></sup> <br> Adds a world type for a customizable, multiplayer, "void" world. | Add ability to create Skyblock worlds. Actual skyblock recipes not propertly tweaked yet
+<img src="https://media.forgecdn.net/avatars/thumbnails/328/240/256/256/637451982118648315.png" width="50"> | 🟫 [**Tinkers' Addons(Fork) with Mod Support**](https://www.curseforge.com/minecraft/mc-mods/tinkers-addons-fork) <sup><sub>Tinkers' Addons-1.12.2-1.0.10.jar</sub></sup> <br> Adding Back old TiCon Modifiers to Tinkers' Construct 2 with Construct's Armory Support | Conarm support for toolkits
+<img src="https://media.forgecdn.net/avatars/thumbnails/354/118/256/256/637511625805500753.png" width="50"> | 🟧 [**spark**](https://www.curseforge.com/minecraft/mc-mods/spark) <sup><sub>spark-forge1122.jar</sub></sup> <br> spark is a performance profiling plugin/mod for Minecraft clients, servers and proxies. | Great profiler
+<img src="https://media.forgecdn.net/avatars/thumbnails/275/632/256/256/637262902934662148.png" width="50"> | 🟩 [**Stupid Horse Stand Still**](https://www.curseforge.com/minecraft/mc-mods/stupid-horse-stand-still) <sup><sub>horsestandstill-1.12.2-1.0.0.jar</sub></sup> <br> Dismounting a saddled horse instructs it to wait for you | Little more sugar
+<img src="https://media.forgecdn.net/avatars/thumbnails/284/308/256/256/637296797301571773.png" width="50"> | 🟫 [**RFTools Dimension Tweaker**](https://www.curseforge.com/minecraft/mc-mods/rftools-dimension-tweaker) <sup><sub>RFTDimTweak-1.12.2-1.0.jar</sub></sup> <br> Provides end-game and overflow-free variants of dimension machines. | Alternative cheaper and better machines
+<img src="https://media.forgecdn.net/avatars/thumbnails/28/535/256/256/635829271511825665.png" width="50"> | 🟨 [**Colossal Chests**](https://www.curseforge.com/minecraft/mc-mods/colossal-chests) <sup><sub>ColossalChests-1.12.2-1.7.3.jar</sub></sup> <br> For when regular chests are too small | Modpack have multiblock Tanks, now it will have multiblock Chests!
+<img src="https://media.forgecdn.net/avatars/thumbnails/388/609/256/256/637580698900743739.png" width="50"> | 🟫 [**ContentTweaker Registry Orderer**](https://www.curseforge.com/minecraft/mc-mods/contenttweaker-registry-orderer) <sup><sub>CoTRO-1.0.0-1.12.2.jar</sub></sup> <br> Orders the registration of ContentTweaker items and blocks | Without this mod items are shuffled in `@contenttweaker` tab
+
+## 🔴 Removed Mods
+
+Icon | Summary | Reason
+----:|:--------| ------
+<img src="https://media.forgecdn.net/avatars/thumbnails/239/522/256/256/637114384686820957.png" width="50"> | 🟫 [**Performant**](https://www.curseforge.com/minecraft/mc-mods/performant) <sup><sub>performant-1.12.2-1.10.jar</sub></sup> <br> Lag begone! Increases Performance, less entity lag less rubberbanding, more players on the server | Caused [jump+place block bug](https://github.com/someaddons/performant_issues/issues/68)
+<img src="https://media.forgecdn.net/avatars/thumbnails/341/410/256/256/637484195977976685_animated.gif" width="50"> | 🟫 [**Recast**](https://www.curseforge.com/minecraft/mc-mods/recast) <sup><sub>recast_1.12.2-1.2.jar</sub></sup> <br> 🎣 Automatically re-casts the fishing rod line for a player when an item is caught. | In automation modpack this should do a machine. Or at least a rat.
+<img src="https://media.forgecdn.net/avatars/thumbnails/233/408/256/256/637071875768748102.png" width="50"> | 🟫 [**Immersive Tweaker**](https://www.curseforge.com/minecraft/mc-mods/immersive-tweaker) <sup><sub>immersivetweaker-0.1.jar</sub></sup> <br> Additional CraftTweaker compat for Immersive Engineering | Add Arc Furnance equipment recycling, but only with vanilla recipes
+<img src="https://media.forgecdn.net/avatars/thumbnails/260/993/256/256/637216341847519420.png" width="50"> | 🟫 [**Artisan Automation**](https://www.curseforge.com/minecraft/mc-mods/artisan-automation) <sup><sub>artisanautomation-1.12.2-1.0.6.jar</sub></sup> <br> An automation solution for Artisan Worktables. | Artisan Worktables was used only for 5 recipes. Movedthis recipes to other crafting methods.
+<img src="https://media.forgecdn.net/avatars/thumbnails/300/225/256/256/637356608867340430.png" width="50"> | 🟫 [**Extra CPUs**](https://www.curseforge.com/minecraft/mc-mods/extracpus) <sup><sub>extracpus-1.12.2-1.1.0.jar</sub></sup> <br> A mod to give you more Crafting Storages for Applied Energistics 2. | Incomptable with new ExtraCells2 fork
+<img src="https://media.forgecdn.net/avatars/thumbnails/24/252/256/256/635754842297919962.png" width="50"> | 🟫 [**NotEnoughIDs**](https://www.curseforge.com/minecraft/mc-mods/notenoughids) <sup><sub>NotEnoughIDs-1.5.4.4.jar</sub></sup> <br> Extends hardcoded block id limit | Replaced with JEID
+<img src="https://media.forgecdn.net/avatars/thumbnails/135/621/256/256/636501635168660414.png" width="50"> | 🟫 [**Artisan Worktables 1.12**](https://www.curseforge.com/minecraft/mc-mods/artisan-worktables) <sup><sub>artisanworktables-1.12.2-1.24.2.jar</sub></sup> <br> Themed worktables with a tool slot. Optional tools provided. CraftTweaker, JEI, GameStages. | Artisan Worktables was used only for 5 recipes. Movedthis recipes to other crafting methods.
+<img src="https://media.forgecdn.net/avatars/thumbnails/135/819/256/256/636503139447725408.png" width="50"> | 🟫 [**Preston**](https://www.curseforge.com/minecraft/mc-mods/preston) <sup><sub>Preston-0.3.5.jar</sub></sup> <br> Compressed blocks on a massive scale | Deprecated with other compression mod
+<img src="https://media.forgecdn.net/avatars/thumbnails/41/763/256/256/636000363793448321.png" width="50"> | 🟨 [**Tinkers' Addons**](https://www.curseforge.com/minecraft/mc-mods/tinkers-addons) <sup><sub>Tinkers' Addons-1.12.1-1.0.7.jar</sub></sup> <br> Adding Back old TiCon Modifiers to Tinkers' Construct 2 | Replaced with its fork
+<img src="https://media.forgecdn.net/avatars/thumbnails/144/165/256/256/636554078130517823.png" width="50"> | 🟫 [**Sampler**](https://www.curseforge.com/minecraft/mc-mods/sampler) <sup><sub>sampler-1.84.jar</sub></sup> <br> Performance oriented debugging/administration tools | Replaced with Spark
+
+## 🟡 Updated Mods
+
+- [**PackagedAuto**](https://www.curseforge.com/minecraft/mc-mods/packagedauto) <sup><sub>PackagedAuto-1.12.2-1.0.5.18.jar</sub></sup>
+- [**Dropt**](https://www.curseforge.com/minecraft/mc-mods/dropt) <sup><sub>dropt-1.12.2-1.19.1.jar</sub></sup>
+- [**B.A.S.E**](https://www.curseforge.com/minecraft/mc-mods/base) <sup><sub>base-1.12.2-3.14.0.jar</sub></sup>
+- [**Scaling Feast**](https://www.curseforge.com/minecraft/mc-mods/scaling-feast) <sup><sub>scalingfeast-1.8.0.jar</sub></sup>
+- [**CraftTweaker**](https://www.curseforge.com/minecraft/mc-mods/crafttweaker) <sup><sub>CraftTweaker2-1.12-4.1.20.660.jar</sub></sup>
+- [**Brandon's Core**](https://www.curseforge.com/minecraft/mc-mods/brandons-core) <sup><sub>BrandonsCore-1.12.2-2.4.20.162-universal.jar</sub></sup>
+- [**Draconic Evolution**](https://www.curseforge.com/minecraft/mc-mods/draconic-evolution) <sup><sub>Draconic-Evolution-1.12.2-2.3.28.354-universal.jar</sub></sup>
+- [**ME Capability Adapter**](https://www.curseforge.com/minecraft/mc-mods/capability-adapter) <sup><sub>capabilityadapter-1.1.2.jar</sub></sup>
+- [**Zen Utils**](https://www.curseforge.com/minecraft/mc-mods/zenutil) <sup><sub>zenutils-1.9.4.jar</sub></sup>
+- [**Atlas Lib**](https://www.curseforge.com/minecraft/mc-mods/atlas-lib) <sup><sub>Atlas-Lib-1.12.2-1.1.4.jar</sub></sup>
+- [**Nether Portal Spread**](https://www.curseforge.com/minecraft/mc-mods/nether-portal-spread) <sup><sub>netherportalspread_1.12.2-5.4.jar</sub></sup>
+- [**Hole Filler Mod**](https://www.curseforge.com/minecraft/mc-mods/hole-filler-mod) <sup><sub>hole_filler_mod-1.2.4.1-mc_1.12.2-forge.jar</sub></sup>
+- [**IC2 Patcher**](https://www.curseforge.com/minecraft/mc-mods/ic2-patcher) <sup><sub>ic2patcher-2.0.3.jar</sub></sup>
+- [**Kiro's Basic Blocks**](https://www.curseforge.com/minecraft/mc-mods/kiros-basic-blocks) <sup><sub>kirosblocks-1.2.jar</sub></sup>
+- [**Collective**](https://www.curseforge.com/minecraft/mc-mods/collective) <sup><sub>collective-1.12.2-2.64.jar</sub></sup>
+- [**AE2 Fluid Crafting**](https://www.curseforge.com/minecraft/mc-mods/ae2-fluid-crafting) <sup><sub>ae2fc-1.12.2-1.0.11.jar</sub></sup>
+- [**Advancement Screenshot**](https://www.curseforge.com/minecraft/mc-mods/advancement-screenshot) <sup><sub>advancementscreenshot_1.12.2-2.0.jar</sub></sup>
+- [**Uber Conduit Probe**](https://www.curseforge.com/minecraft/mc-mods/uber-conduit-probe) <sup><sub>uberconduitprobe-1.0.3.jar</sub></sup>
+- [**Immersive Technology**](https://www.curseforge.com/minecraft/mc-mods/mct-immersive-technology) <sup><sub>MCTImmersiveTechnology-1.12.2-1.9.96.jar</sub></sup>
+- [**LibVulpes**](https://www.curseforge.com/minecraft/mc-mods/libvulpes) <sup><sub>LibVulpes-1.12.2-0.4.2-84-universal.jar</sub></sup>
+- [**Advanced Rocketry**](https://www.curseforge.com/minecraft/mc-mods/advanced-rocketry) <sup><sub>AdvancedRocketry-1.12.2-2.0.0-254-universal.jar</sub></sup>
+- [**MixinBootstrap**](https://www.curseforge.com/minecraft/mc-mods/mixinbootstrap) <sup><sub>_MixinBootstrap-1.1.0.jar</sub></sup>
+- [**CreativeCore**](https://www.curseforge.com/minecraft/mc-mods/creativecore) <sup><sub>CreativeCore_v1.10.63_mc1.12.2.jar</sub></sup>
+- [**LittleTiles**](https://www.curseforge.com/minecraft/mc-mods/littletiles) <sup><sub>LittleTiles_v1.5.21_mc1.12.2.jar</sub></sup>
+- [**Ears**](https://www.curseforge.com/minecraft/mc-mods/ears) <sup><sub>ears-forge-1.12-1.2.3.jar</sub></sup>
+- [**Tesla Core Lib**](https://www.curseforge.com/minecraft/mc-mods/tesla-core-lib) <sup><sub>tesla-core-lib-1.12.2-1.0.18.jar</sub></sup>
+- [**Thaumic Augmentation**](https://www.curseforge.com/minecraft/mc-mods/thaumic-augmentation) <sup><sub>ThaumicAugmentation-1.12.2-2.1.4.jar</sub></sup>
+
+## 🧩 Configs
+
+- Scaling Feast: fix hunger cant reach >20
+  > Problem was with mod **Random Tweaks** that tries to manage hunger too.
+
+## ✏️ Recipes
+
+- Disable barely all benefication of ![](https://git.io/JRLyd "Rutile Ore")
+  > How Titanium can be obtained only through this machines:
+    - ![](https://git.io/JRLy7 "Washing Factory")
+      ![](https://git.io/JGGjU "Electric Arc Furnace")
+      ![](https://git.io/JuA6p "Chemical Dissolution Chamber")
+- OreDict.zs refactor. Could cause some oreDict bugs, but i checked twice.
+- ![](https://git.io/JuAi9 "Auto Hammer")![](https://git.io/JZYfe "Auto Compressed Hammer") Changed recipes
+- ![](https://git.io/JCt0z "Creative Paste Container") fix wrong nbt
+- ![](https://git.io/Jc4Qj "Basic Lithium Ion Battery") fix battery tag
+- ![](https://git.io/JuAPq "Rocket Fuel Tank") buff but makes harder
+- ![](https://git.io/JuAin "Nutrient Distillation Tank") now made from ![](https://git.io/JuAiw "Short Mead Tank") instead of water
+- ![](https://git.io/JuAiF "Hootch Tank") made from ![](https://git.io/JcbNB "Milk")
+- ![](https://git.io/JuAiX "Cloud Seed Tank") made from ![](https://git.io/JuAiB "Crushed Ice Tank") in Cooling Tower instead of ![](https://git.io/JtJf9 "The Vat")
+- Creative Fluid Tank Frame now made in vanilla crafting table
+- ![](https://git.io/JZYf3 "Diamond Hammer") Drop to vanilla recipe but set efficiency to `0` (very slow)
+- ![](https://git.io/JuAMM "Orechid Ignem") add 2 new ore (for Lens Of The Miner)
+- ![](https://git.io/JuAiw "Short Mead Tank") <-> ![](https://git.io/JuAMF "Mead Tank") conversion
+- ![](https://git.io/JtIrt "Rat Diamond") new 6 most common uses
+- Simple Trophyes now have colored piedestal
+- Mekanism's machines no longer process Rat Poop
+- Fix accidentally removed vanilla recipes, ![](https://git.io/Jt1ue "Rail") for example
+- ![](https://git.io/JZYv5 "Empowered Void Crystal Block") from ![](https://git.io/JuAio "Sky Stone Block") instead of ![](https://git.io/JZYvp "Black Quartz Block")
+- ![](https://git.io/JuAid "Void Crystal Block") from ![](https://git.io/JZYvp "Black Quartz Block") instead ![](https://git.io/JuAiH "Block of Coal")
+- Rearrange several Mystical Agriculture seeds tiers
+- ![](https://git.io/JcCHa "Garden Cloche") +1 liquid
+- ![](https://git.io/JtJfx "Furnace") from ![](https://git.io/JuAiP "Bio Coal") too
+- Some Conflicts fixing
+- ![](https://git.io/Jczsa "Precision Laser Etcher") and some other AR machines use more energy and work slower
+- Twilight Forest Trees add recipes
+- ![](https://git.io/JuAig "Ironwood Sapling") add recipe
+- **A lot** of new outputs from ![](https://git.io/Jcbxn "Acacia Leaves"), ![](https://git.io/JuAPU "Turf Block") and ![](https://git.io/JuAiu "Prismarine") in ![](https://git.io/JOv90 "Sieve")
+- ![](https://git.io/JZYfn "Pulsating Crystal") fix excess recipes
+- ![](https://git.io/J0kg2 "Enrichment Chamber"), ![](https://git.io/JCt0l "Energized Smelter") fix missing recipes
+- ![](https://git.io/JtJvo "Creative Bin") with ![](https://git.io/JuAiA "Salt") add recipe
+- ![](https://git.io/JRqca "Universal Fluid Cell") in creative crafts fix
+- 14 new portal spread conversions
+- [Blood-Infused Stone] proper alloy ingredients
+- ![](https://git.io/JuAiR "Blank Rune")![](https://git.io/JuAiV "Blank Slate") fix cast cost
+- ![](https://git.io/JRLyD "The Ultimate Singularity") removed **12** Tier1 singularities, added +1 new
+- ![](https://git.io/JnN1J "SAG Mill") some custom recipes work with Grinding Balls now
+- ![](https://git.io/JuAie "Energetic Alloy Block")![](https://git.io/JRLSe "Vibrant Alloy Block") alts in ![](https://git.io/JGGjU "Electric Arc Furnace")
+- ![](https://git.io/J0kgg "Stone Dust") -> ![](https://git.io/J0kgz "Seared Brick") recipe
+- ![](https://git.io/JuAis "Molten Manyullyn Tank") & [Molten Fluix Steel] melting and casting with NuclearCraft
+- ![](https://git.io/JuAPI "PSI-O Cell") now keep charge when upgrading
+- ![](https://git.io/Jsmfs "Heart Dust") now used instead of Shards to craft morbs
+- Several IC2 recipes was revealed (was hidden)
+- ![](https://git.io/JuMld "Advanced Alchemic Condenser") now can make Morbs
+- ![](https://git.io/JuAPf "Treated Wood Planks") now can be made from IC2 Creosote
+- ![](https://git.io/JRLy9 "Metallurgic Infuser") accept more Fungies
+- ![](https://git.io/JRLy9 "Metallurgic Infuser") add recipes:
+  * ![](https://git.io/JuAiZ "Overgrowth Seed")
+  * ![](https://git.io/JuAPv "Glowing Mushroom")
+  * ![](https://git.io/JuAi3 "Organic Black Dye")
+ 
+ **Add craft for:**
+ - ![](https://git.io/JuAiv "Sickly Twilight Oak Sapling")
+   ![](https://git.io/JuAiT "Robust Twilight Oak Sapling")
+   ![](https://git.io/JuAif "Tree of Time Sapling")
+   ![](https://git.io/JuA6x "Tree of Transformation Sapling")
+   ![](https://git.io/Jc47v "Miner's Tree Sapling")
+   ![](https://git.io/JuAiJ "Sorting Tree Sapling")
+ 
+ **Harder:**
+  - ![](https://git.io/JuAic "Enchantment Factory")
+    ![](https://git.io/JuAia "Upgrade Template")
+    ![](https://git.io/JuAiM "Klein Bottle")
+    ![](https://git.io/JcW2R "Basic Tank")
+    ![](https://git.io/JE8nA "Uranium RTG")
+    ![](https://git.io/JuAi2 "Solar Generator")
+    ![](https://git.io/JuA6N "Advanced Solar Generator")
+  - [Enchantment Extractor]
+  - [Teleport Rail]
+ 
+ **Cheaper**
+  - ![](https://git.io/J3p8H "Lens of the Miner")
+    ![](https://git.io/JuAi6 "Molten Sunnarium Tank")
+    ![](https://git.io/JZITJ "Inventory Panel")
+    ![](https://git.io/Jcz37 "Large Inventory System Storage")![](https://git.io/Jcz3y "Medium Inventory System Storage")![](https://git.io/Jsw4f "Tiny Inventory System Storage")![](https://git.io/JczsW "Small Inventory System Storage")![](https://git.io/Jcz3H "Big Inventory System Storage")![](https://git.io/Jcz3S "Huge Inventory System Storage")![](https://git.io/Jcz3Q "Inventory System Storage Extended Warehouse")![](https://git.io/Jcz3d "Inventory System Storage Warehouse")![](https://git.io/Jcz39 "Enormous Inventory System Storage")
+    ![](https://git.io/JRLyX "Rat Upgrade: Creative")
+    ![](https://git.io/JRLyH "Infinity Catalyst")
+    ![](https://git.io/JRLyF "Endest Pearl")
+    ![](https://git.io/JRLSs "Ultimate Stew")
+    ![](https://git.io/JRLSn "Cosmic Meatballs")
+    ![](https://git.io/JuAiL "Electric Light")
+    ![](https://git.io/JuAiO "Wireless Light")
+    ![](https://git.io/JuAi8 "Inventory Sensor")
+    ![](https://git.io/JuA6j "Machine Parts")
+    ![](https://git.io/JcCHV "Reinforced Large Drum")
+    ![](https://git.io/Jcz3h "Demonically Gargantuan Drum")
+    ![](https://git.io/JuAir "Rain Tank")
+    ![](https://git.io/JCt0R "Creative Rod Frame")
+    ![](https://git.io/JRLSO "Neutron Collector")
+    ![](https://git.io/J03tf "Wyvern Core")
+    ![](https://git.io/JuAil "Energy Core")
+    ![](https://git.io/JuAi1 "Energy Pylon")
+    ![](https://git.io/JRsaA "Energy Core Stabilizer")
+    ![](https://git.io/JuAiU "Sun Crystal (Empty)")
+    ![](https://git.io/J03te "Fluid Pipe")
+    ![](https://git.io/JE8np "Capacitor Backpack")
+    ![](https://git.io/JuAip "Solar Panel")
+    ![](https://git.io/JuAi4 "Refractory Bricks")
+    ![](https://git.io/JuAPk "Energy Field Addon")
+  - [Inventory Panel Remote]
+  - [Advanced Inventory Panel Remote]
+  - [Infinity Grinding Ball]
+  - [(Every) Extended Crafty Crate]
+  
+  **Add craft to:**
+  - ![](https://git.io/JuAig "Ironwood Sapling")
+    ![](https://git.io/JuAMy "Canola Seeds")
+    ![](https://git.io/JuAiN "Red Orchid")
+
+## 📖 Quest Book
+
+- Quests changes
+- Fix Glitch Infused armor set spawning
+
+## 🔵 Mods
+
+- Modular Controller integration, new colors for modular machines
+- NEID->JEID changes
+- Mod replace: **ExtraCells** -> **AE Additionals**
+
+- ### 🔴 Removed Mods
+
+  - Cleanup last mentions of **Spartan Shields**
+  - Remove **Preston** from recipes
+
+- ### ▦ Ex Nihilo
+
+  - Return **Compost** recipes
+
+- ### ☢️ NuclearCraft
+
+  - Nerf t1 solar to 30 RF/t
+  - ![](https://git.io/JCqVS "Lithium Ion Cell") make unstackable to prevent FE dupe
+  - Always enable rad overlay (no need ![](https://git.io/JuAi0 "Geiger Counter"))
+  - Add nutrition values to food
+  - Fix ![](https://git.io/JuAiC "Infinity Ingot") radiation
+
+- ### ⛽ Advanced Generators
+
+  - AdvGen: More ![](https://git.io/J3xSJ "Syngas") carbon sources (see JEI)
+    > Also increase internal tank capacity
+
+- ### 🌠 Astral Sorcery
+
+  - **Mineralis** work with any stone variant
+
+- ### 🌸 Industrial Foregoing
+
+  - Buff ![](https://git.io/JuAiI "Energy Field Provider")
+
+- ### 🌿 Patchouli
+
+  - Patchouli_js: Automatic Update
+
+- ### 🍇 End Reborn
+
+  - Modpack Integration
+    > - Some **structure** and **mob** spawning chances changed
+    > - ![](https://git.io/JuAPe "Essence Ore") more generation
+    > - ![](https://git.io/JuAiz "End Steel Ingot") using tungsten now
+    > - ![](https://git.io/JuAiG "Void Ore Miner Controller Tier 5")![](https://git.io/JuA6A "Void Resource Miner Controller Tier 5") new entries
+    > - ![](https://git.io/JuAit "Endorium Nugget") from ![](https://git.io/JuAiS "Ender Lilly")
+    > - ![](https://git.io/JuAiY "Lormyte Crystal") and ![](https://git.io/JuAih "Dragon Scales") recipes
+    > - ![](https://git.io/JuAiE "Tungsten Ore") [Xorcite Cluster] in [Orechid Vacuam]
+    > - ![](https://git.io/JuAiW "Dragon Chestplate") set craft and mob spawn
+    > - ![](https://git.io/JuAiq "Simple Machine Chassis") Now uses [Lormyte Block]
+    > - ![](https://git.io/Jczsv "Photovoltaic Composite") now uses ![](https://git.io/JuAPt "Mysical Flesh")
+    > - [Fluix-Plated Iron Ingot] Remake
+    > - ![](https://git.io/JqUUe "Ender Chest")![](https://git.io/JuAiK "Enchantment Table")![](https://git.io/JuAix "Beacon") now use ![](https://git.io/JuAij "Essence")
+    > - ![](https://git.io/JuAPL "Elytra") remake
+    > - This items use ![](https://git.io/JuAiy "Tungsten Ingot") instead of ![](https://git.io/JLjca "Iron Ingot"):
+    >   - ![](https://git.io/JuAPJ "Basic Card")
+    >     ![](https://git.io/JuAPT "ME Interface")
+    >     ![](https://git.io/JuAik "ME Fluid Interface")
+    >     [ME Gas Interface]
+
+- ### 🏪 Requious Fracto
+
+  - JEI for **Excavator** and **Mineralis**
+  - Fix ![](https://git.io/J3p8B "Infinity Furnace")
+    > texture turned upsidedown  
+    > But still turned wrong in world
+  - JEI for **A book written by a Cow**
+  - JEI for ![](https://git.io/J3xSU "Syngas Producer Controller") & ![](https://git.io/JcCHa "Garden Cloche")
+
+- ### 🐀 Rats
+
+  - Probably fix issue when rats spawn as worms
+  - Add ![](https://git.io/JcW2H "Ratglove Flower") native spawning in Ratlantis
+
+- ### 👨‍🏭 Mekanism
+
+  - Buff solars to 50 and 250 RF/t
+  - [Cardboard Box] cant grab **Bedrock Ore**
+
+- ### 👿 Extra Utilities 2
+
+  - Buff [(any) Lux Saber] damage 11 -> 21
+
+- ### 📑 Tips
+
+  - New tips and tooltips
+
+- ### 📭 Storage Drawers
+
+  - Buff all drawer upgrades +1
+  - Buff ![](https://git.io/JcW2R "Basic Tank") up to 16b
+
+- ### 🔌 IndustrialCraft 2
+
+  - Nerf solar back to 1 EU/t
+
+- ### 🔨 Tinker's Construct
+
+  - **Laser Gun** Rework - 1,000,000 RF/shot
+    > - Now each shot consuming 1M RF
+    > - **Battery Cells** now craftable in table instead of casting
+    > - ![](https://git.io/JcuNp "Laser Medium Cast") now cheaper (but still require ![](https://git.io/JcBSs "Tiny Chaos Fragment"))
+  - Add `hailhydra` trait to ![](https://git.io/JuAi7 "Sky Stone")
+  - Fix damage indicator not working
+    > Before, when player fast hitting target,
+    > there was no reload cursor indicator.
+  - ![](https://git.io/JuAib "Apatite") add **Brittle** trait
+    > This would help to disable abusing infinity apatite tools for farms
+
+- ### 🦯 Thaumcraft
+
+  - Fix **Armor Trim** aspects
+
+- ### 🧬 Draconic Evolution
+
+  - Buff **Energy Core** tiers  
+    > Now its:
+    > 1.  50,000,000,000
+    > 2.  100,000,000,000
+    > 3.  150,000,000,000
+    > 4.  200,000,000,000
+    > 5.  4,000,000,000,000
+    > 6.  8,000,000,000,000
+    > 7.  10,000,000,000,000
+    > 8.  9.223372036854776E18
+
+- ### 🧻 JEI
+
+  - blacklist updates
+  - Add tag **#Solar**
+  - Always show all Thaumcraft recipes
+    > Hidden recipes without research confuse players when they
+    > cant see progression
+  - Add Tags to 3 NC machines
+
+- ### 🩸 Blood Magic
+
+  - **DML** integration increase RF/T consumption
+
+- ### 🛢️ Immersive Engineering
+
+  - Immersive Tech: More recipes integrations
+    > - ![](https://git.io/JuAiX "Cloud Seed Tank") recipe
+    > - ![](https://git.io/JuAMD "Molten Diamond Tank") now can be obtainable only in **Melting Crucible**
+    > - ![](https://git.io/JuAi5 "Chlorine Tank") and ![](https://git.io/JuAiD "Liquid Sodium Tank") now only obtainable in multyblock
+    > - ![](https://git.io/JuAiQ "Hydrogen") and [Oxygen] in ![](https://git.io/JuA6h "Electrolytic Separator") 10x times HARDER
+    >   but obtainable in multiblock
+  - Make Tin, Copper & Gold wires longer (32)
+    > This would help compete them with other types of wires
+
+- ### 🛸 EnderIO
+
+  - Remove `required="true"` to not crash game when item missed
+  - `AlloySmelter.removeRecipe` not working, switch to `user_recipes.xml`
+
+- ### 🟨 Recurrent Complex
+
+  - Add A lot new [Village structures](https://complex.ivorius.de/submissions/184) 
+
+- ### 🥽 LagGoggles
+
+  - Higher red threshold
+
+- ### 🖥️ Deep Mob Learning
+
+  - Rule spawn Glitch
+    > - Add spawn with **RFTools Spawner**
+    > - Forbid Spawn with ![](https://git.io/JuAii "Mob Duplicator")
+
+- ### 🍹 Nutrition
+
+  - **Dairy** nutrition decay twice slower
+    > Now when eating non-dairy food, your `dairy` value would descrease
+    > twice slower compared to other nutrients.
+    > 
+    > This could help, because usually, minecraft have less variaty for milk
+    > products than other types of food.
+
+- ### 🙋‍♀️ Quark
+
+  - Enables **Piston Move Tile Entities**
+    > Take care.  
+    > All **RandomThings** tile entities blacklisted
+
+- ### 🗳️ Colossal Chest
+
+  - Integration and recipes
+
+- ### 🌎 JER
+
+  - JER: Add RFTools ![](https://git.io/JOGzA "Dimensional Blank Block")
+  - JER: Update **Ratlantis (-8)** and **Novus (113)**
+
+## 🔄 Misc Changes
+
+- Fix some `.name` named items
+- Forbid Visit any dimensions except Overworld
+  > For skyblock mode
+- Void Island Control configs
+- Make all hard blocks slower but disable Ore slow in deeps
+  > Modpack have bunch of blocks with higher mining level than vanilla values.
+  > For example: Metal Blocks, Void Ore Miner's cores, Thaum Wood Logs.
+  > 
+  > Before, all hard blocks had default mining speed a.k.a. **hardness**.
+  > Now Hardness start to change from **level 3**
+  > by formula `(lvl^2)/2`
+  > 
+  > Same time, **Harder Branch Mining** was disabled for Ores, so,
+  > mining ore blocks in deeps would be easier
+- 
+  > - [Excavate Modifier] Change texture to 16x16
+  > - ![](https://git.io/JqUJK "Terrestrial Artifact Block") improve texture
+
+- ### 🧱 Technical
+
+  - CoT new item - [Silicon Block]
+  - New Fluid: **Perfect Fuel**
+    > **Perfect Fuel** crafting from bunch of different TOP-Tier fluids.
+    > Used as fuel for bunch of different machines.
+    > Also used as ingredient for Creative Fluid Tank.
+
+## 🔥 Nether
+
+- Restrict visiting **Nether** if you not having 40 HP
+
+## 🍯 OMega potion
+
+- Refactor, remove Artisan Worktable craft, cheaper
+
+
+
+
+
+
 
 # 0.29
 
