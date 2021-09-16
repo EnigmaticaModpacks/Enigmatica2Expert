@@ -1,6 +1,57 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
 
+# 0.31
+
+## ✏️ Recipes
+
+- Return accidentally removed ![](https://git.io/JuAPf "Treated Wood Planks") recipe
+
+## 📖 Quest Book
+
+- BetterQuesting: Minor quest description changes
+
+## ⛏️ Mining
+
+- Set to default some custom block's hardness (a.k.a Mining Speed)
+  > When ore has several meta- variations,
+  > all Ores receive hardness of hardest block.
+  > 
+  > Now if Ore block have non-standard hardness, all its meta- variations
+  > would have smallest hardness value.
+  > 
+  > Bonus: Sequoia Wood Logs (and several other Forestry's high-tier trees)
+  > now have `Axe` tool and mining level of `4`.
+  > Also, some Actually Addition's blocks with same Block Definition
+  > (`actuallyadditions:block_misc`) now have `hardness = 4`
+
+## 🔵 Mods
+
+
+- ### ☢️ NuclearCraft
+
+  - ![](https://git.io/JCqVS "Lithium Ion Cell") make stackable back
+    > Seems like i was wrong and FE cant be actually duped.
+
+- ### 🔨 Tinker's Construct
+
+  - **Speedy** Modifier now x5 times cheaper
+    > **Speedy** Modifier uses ![](https://git.io/Jsmfs "Heart Dust") and its not so easy to earn.
+    >
+    > Now you need only 10 dust to reach 1 level.
+
+- ### 🍗 Scaling Feast
+
+  - Remap Hunger bonuses milestones.
+    > Starting at 20, for every `10 + 5n` new food you get **+2 shanks**.
+    > 
+    > `n` increments every `n` milestones. First 5 milestones: `20, 35, 50, 70, 90`.
+  - Replace Ore generation with CofhWorld
+    > [Exhausting Ore] now rare
+
+
+
+
 # 0.30
 
 **IMPORTANT!**  
