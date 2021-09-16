@@ -79,6 +79,7 @@ async function init() {
     ['✏️', 'Recipes'],
     ['📖', 'Quest Book'],
     ['🌍', 'World Generation'],
+    ['⛏️', 'Mining'],
     ['🔵', 'Mods', `
       🟢 New Mods
       🔴 Removed Mods
@@ -115,7 +116,7 @@ async function init() {
       📑 Tips
       📙 AkashicTome
       📭 Storage Drawers
-      🔌 IndustrialCraft 2
+      🔌 Industrial Craft 2
       🔠 MainMenu
       🔨 Tinker's Construct
       🔩 RFTools
@@ -141,6 +142,7 @@ async function init() {
       🍹 Nutrition
       🙋‍♀️ Quark
       🗳️ Colossal Chest
+      🍗 Scaling Feast
     `.trim().split('\n').map(l=>l.trim().split(' ')).map(([c,...r])=>[c, r.join(' ')])],
     ['🔄', 'Misc Changes', [
       ['🧱', 'Technical'],

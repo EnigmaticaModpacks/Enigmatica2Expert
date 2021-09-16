@@ -326,4 +326,4 @@ replace.sync({
 try{fs.copySync(ruOverrides, './', {overwrite: true})}
 catch(e){} // eslint-disable-line no-empty
 
-makeZip(`${distrDir}E2E-Extended_RU_${version}.zip`)
+makeZip(`${distrDir}E2E-Extended_${version}_RU.zip`)

@@ -6,7 +6,6 @@ const replace = require('replace-in-file')
 
 const bq_quests_path = 'config/betterquesting/DefaultQuests.json'
 
-module.exports.init = init
 function init(argv = process.argv) {
   replace.sync({
     files: bq_quests_path,
@@ -23,7 +22,8 @@ if(isPathHasChanged('dev/automation/betterquesting')) {
   return
 }
 
-init()
+module.exports.init = init
+if(process.argv?.[0]?.split('\\').pop()==='node.exe') init()
 
 /*
 
