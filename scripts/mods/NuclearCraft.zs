@@ -3,9 +3,6 @@ import crafttweaker.item.IItemStack;
 import mods.nuclearcraft.decay_generator.addRecipe as addDecayRecipe;
 #modloaded nuclearcraft
 
-# Make Lithium Cells unstackable to prevent RF dupe with charging->uncharging
-<nuclearcraft:lithium_ion_cell>.maxStackSize = 1;
-
 # Removing an Obsidian dupe
 mods.nuclearcraft.melter.removeRecipeWithInput(<ore:obsidian>);
 mods.nuclearcraft.melter.removeRecipeWithInput(<ore:dustObsidian>);
