@@ -43,7 +43,7 @@ See full list in [MODS.md](MODS.md)
   *![](https://git.io/JOv9u "Iron Chestplate") Iron - Diamond armor was removed, recipes replaced*
   
 - ### More exploration  
-  *[Rocket Assembler] Added a variety of new resources and unique terrain on planets and other dimensions*
+  *![](https://git.io/Jze1z "Rocket Assembling Machine") Added a variety of new resources and unique terrain on planets and other dimensions*
 
 
 -----------------
