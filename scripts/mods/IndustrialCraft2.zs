@@ -359,7 +359,7 @@ scripts.process.solution([<ic2:dust:33>], [<fluid:water> * 250], [<fluid:milk> *
 furnace.addRecipe(<tconstruct:materials>, <ore:dustStone>);
 
 # [Treated Wood Planks]*8 from [Creosote Bucket][+1]
-craft.remake(<immersiveengineering:treated_wood> * 8, ["pretty",
+craft.make(<immersiveengineering:treated_wood> * 8, ["pretty",
   "# # #",
   "# ~ #",
   "# # #"], {
