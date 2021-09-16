@@ -85,6 +85,11 @@ Liquids that should have more uses:
 
 # TODO
 
+- [ ] 🔄 Move from DimensionStages to pure ZS
+- [x] 🔄 Fix hardness for blocks of same id but different meta (TE ore)
+- [x] ☢️ Revert [Lithium Ion Cell] unstackableness
+- [ ] 🍗 [Exhaustion Ore] integrate in tinkers
+- [ ] ✏️ **Colossal Chests** rethink recipes
 
 ---
 
