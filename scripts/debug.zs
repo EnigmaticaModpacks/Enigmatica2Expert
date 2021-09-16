@@ -56,7 +56,6 @@ function logAdditionalDebugData(player as IPlayer) {
     "/ct botania daisy",
     "/ct botania altar",
     "/ct thaumcraftDump",
-    // "/tellme dump-csv all",
     "/ct loottables all",
     "/ct oredict",
     "/ct recipes furnace",
@@ -72,9 +71,14 @@ function logAdditionalDebugData(player as IPlayer) {
 
   # Delayed call to not overload joining world
   mods.zenutils.DelayManager.addDelayWork(function() {
-    player.sendMessage('§eStarting §c/ct conflict');
+    player.sendMessage('Developing: §eStarting §c/ct conflict');
     server.commandManager.executeCommand(server, '/ct conflict');
   }, 20 * 20);
+
+  mods.zenutils.DelayManager.addDelayWork(function() {
+    player.sendMessage('Developing: §eStarting §c/tellme dump-csv all');
+    server.commandManager.executeCommand(server, '/tellme dump-csv all');
+  }, 20 * 80);
 }
 
 zenClass DebugUtils {
