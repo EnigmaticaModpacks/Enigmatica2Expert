@@ -22,6 +22,10 @@
         "value": "910000"
       },
       {
+        "type": "per_level",
+        "value": 10
+      },
+      {
         "type": "material",
         "value": [
           {
