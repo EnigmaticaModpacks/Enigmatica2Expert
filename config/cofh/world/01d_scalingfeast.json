@@ -1,0 +1,57 @@
+{
+  "populate": {
+
+		"exhausting_ore_overworld": {
+      "distribution": "uniform",
+      "generator": {
+        "block": "scalingfeast:exhaustingore",
+        "cluster-size": 2
+      },
+      "cluster-count": 12,
+      "chunk-chance": 8,
+      "min-height": 1,
+      "max-height": 25,
+      "biome": {
+        "restriction": "whitelist",
+        "value": [
+          {
+            "type": "temperature",
+            "entry": "COLD"
+          },{
+            "type": "temperature",
+            "entry": "WARM"
+          }
+        ]
+      },
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [-1,1,111,112,119,123]
+			}
+		},
+
+		"exhausting_ore_nether": {
+      "distribution": "uniform",
+      "generator": {
+        "block": {
+					"name": "scalingfeast:exhaustingore",
+					"properties": {
+						"type": "netherrack"
+					}},
+        "cluster-size": 3
+      },
+      "cluster-count": 24,
+      "chunk-chance": 8,
+      "min-height": 1,
+      "max-height": 45,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "NETHER"
+					}
+				]
+			}
+		}
+  }
+}
