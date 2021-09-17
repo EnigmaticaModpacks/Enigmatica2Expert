@@ -85,11 +85,10 @@ Liquids that should have more uses:
 
 # TODO
 
-- [ ] 🔄 Move from DimensionStages to pure ZS
-- [x] 🔄 Fix hardness for blocks of same id but different meta (TE ore)
-- [x] ☢️ Revert [Lithium Ion Cell] unstackableness
+- [ ] 🔴 Remove Dimension Stages
 - [ ] 🍗 [Exhaustion Ore] integrate in tinkers
 - [ ] ✏️ **Colossal Chests** rethink recipes
+- [ ] ✏️ [Rat on Arrow] add craft, add Dispenser Behaviour, add quest.
 
 ---
 
@@ -100,6 +99,7 @@ Liquids that should have more uses:
 - [ ] ✏️ ![](https://git.io/JCt00 "Creative Harvest") add more crafts
 - [ ] ✏️ ![](https://git.io/JOv90 "Sieve") Siften materials should be harder
 - [ ] ✏️ **4x** ![Coal Singularity](https://git.io/JtJfM) (or other) => ![Creative Bin](https://git.io/JtJvo) (or other ways to craft creative bins with one unchangable item)
+- [ ] ✏️ Add non-linear progression for End Tech (DE, Avaritia)
 - [ ] 🌍 118_KELT-2ab: Return Kelps
 - [ ] 🌍 Add generation of structures in **Ratlantis**
 - [ ] 🌍 Add new AdvRocke atmospheres
