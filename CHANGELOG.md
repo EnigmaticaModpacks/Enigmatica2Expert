@@ -1,6 +1,53 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
 
+# v0.32
+
+## ✏️ Recipes
+
+- 
+  > - Fix melting of ![](https://git.io/JzksM "Crushed Aluminium Ore") and ![](https://git.io/JzksV "Crushed Astral Starmetal Ore")
+  > - ![](https://git.io/Jzksg "Tin Wire Relay")![](https://git.io/Jzks0 "Copper Wire Relay")![](https://git.io/JzksE "Gold Wire Relay")![](https://git.io/JzksB "Universal HV Wire Relay")![](https://git.io/Jsmfk "Glass Fiber Wire Relay") output x8 instead of x4
+
+## 📖 Quest Book
+
+- Some Quests changes
+
+## 🌍 World Generation
+
+- ![](https://git.io/JRLSc "Osmium Ore") in bedrock rework
+  > * No other ores except Osmium is generated in bedrock
+  > * Osmium now appear in **each chunk**
+  > * Fix bug where ![](https://git.io/Jzksr "Computer") or ![](https://git.io/Jzks1 "Rotary Condensentrator") was spawn instead of Osmium
+
+## 🔵 Mods
+
+
+- ### ☢️ NuclearCraft
+
+  - Remove radiation from ![](https://git.io/Jzksz "Uranium Ore")
+    > This would remove natural radiation in chunks.  
+    > Chunks with ![](https://git.io/JcbNz "Thorium Ore") would still have little radiation through.
+
+- ### 🧻 JEI
+
+  - Add ![](https://git.io/Jzks2 "Geode") to Block Drops
+
+- ### 🛢️ Immersive Engineering
+
+  - Nerf x2 ![](https://git.io/Jzkso "Thermoelectric Generator")
+    > Because many liquids temperature was buffed,
+    > Thermoelectric Generator got unexpected buff.
+    > This change should make it similar to Solars effectiveness
+
+## 🔄 Misc Changes
+
+- Fix player unable to teleport other dimensions
+
+
+
+
+
 # 0.31
 
 ## ✏️ Recipes
