@@ -93,6 +93,7 @@ end()
 const removeGlob = [
   '*',
   '.gitignore',
+  '.gitattributes',
   'scripts/debug.zs',
   'config/tellme',
 

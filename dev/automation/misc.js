@@ -1,17 +1,6 @@
-const {getCSV} = require('../lib/utils.js')
 const fs = require('fs')
 const replace = require('replace-in-file')
 
-
-// Replace actual blocks IDs (they changing when new blocks added)
-const blockID = getCSV('config/tellme/blocks-csv.csv').find(
-  o => o['Registry name']=='mekanism:oreblock' && o['Display name']=='Osmium Ore'
-).BlockID
-replace.sync({
-  files: 'config/cofh/world/01b_Bedrock.json',
-  from: /(oreId: )\d+/g,
-  to: '$1'+blockID,
-})
 
 // Replace Optifine item ID
 const debug_log = fs.readFileSync('logs/debug.log', 'utf8')

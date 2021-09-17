@@ -7,10 +7,11 @@
 const glob = require('glob')
 
 const automationList = [
+  'config/tellme/!rename&update.js',
   ...glob.sync('dev/automation/*.js'),
   'dev/TCon/tweakerconstruct.js',
   'dev/Patchouli/Patchouli.js',
-  'scripts/wrap/_wrapper.js'
+  'scripts/wrap/_wrapper.js',
 ]
 
 async function init() {

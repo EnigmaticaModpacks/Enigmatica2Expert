@@ -9,6 +9,7 @@
 
 
 const fs = require('fs')
+const path = require('path')
 const glob = require('glob')
 const pdf = require('pdf-parse') // eslint-disable-line no-unused-vars
 const _ = require('lodash') // eslint-disable-line no-unused-vars
@@ -17,6 +18,14 @@ const {injectInFile, write, end, config, naturalSort, getCSV, getFurnaceRecipes,
 
 function loadText(filename) {
   return fs.readFileSync(filename, 'utf8')
+}
+
+function saveText(txt, filename) { // eslint-disable-line no-unused-vars
+  fs.mkdirSync(path.dirname(filename), { recursive: true })
+  fs.writeFileSync(filename, txt)
+}
+function saveObjAsJson(obj, filename) { // eslint-disable-line no-unused-vars
+  saveText(JSON.stringify(obj, null, 2), filename)
 }
 
 const allItems = getCSV('config/tellme/items-csv.csv')

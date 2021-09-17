@@ -71,7 +71,7 @@ function formatRow(mcAddon, curseAddon, options={}) {
 
 function formatTable(rows) {
   return [
-    `### ${rows.length} mods total.`,
+    `${rows.length} mods in this section.`,
     '',
     'Icon | Summary',
     '----:|:-------',
