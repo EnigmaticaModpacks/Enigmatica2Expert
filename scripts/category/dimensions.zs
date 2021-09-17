@@ -2,9 +2,6 @@
 import crafttweaker.player.IPlayer;
 
 
-# Restriction
-mods.DimensionStages.addDimensionStage("healthy", -1);
-
 # Check health and add game stage allowing to enter nether
 function checkAndGrant(player as IPlayer) as void {
   if(
@@ -30,18 +27,20 @@ events.onEntityTravelToDimension(function(e as crafttweaker.event.EntityTravelTo
   val player as IPlayer = e.entity;
   checkAndGrant(player);
 
+  val isNether = e.dimension == -1;
   if(player.hasGameStage("skyblock")) {
     # Show message that player playing skyblock and cant visit any dims
-    if(e.dimension == -1 || restrictedDims has e.dimension) {
+    if(isNether || restrictedDims has e.dimension) {
       player.sendMessage(game.localize("tooltips.dim_stages.restricted"));
+      e.cancel();
     }
   }
-  else if(
-    e.dimension == -1 &&
-    !player.hasGameStage("healthy")
-  ) {
-    # Show message that player not healthy anough
-    player.sendMessage(game.localize("tooltips.dim_stages.healthy"));
+  else {
+    if(isNether && !player.hasGameStage("healthy")) {
+      # Show message that player not healthy anough
+      player.sendMessage(game.localize("tooltips.dim_stages.healthy"));
+      e.cancel();
+    }
   }
 });
 
@@ -79,7 +78,3 @@ getCSV('config/tellme/dimensions-csv.csv')
   123,
 /**/
 ] as int[];
-
-for dim in restrictedDims {
-  mods.DimensionStages.addDimensionStage("normal_world", dim);
-}
