@@ -66,9 +66,9 @@
     },
     "rewards:9": {
       "0:10": {
-        "rewardID:8": "bq_standard:item",
+        "rewardID:8": "bq_standard:choice",
         "index:3": 0,
-        "rewards:9": {
+        "choices:9": {
           "0:10": {
             "ForgeCaps:10": {
               "astralsorcery:cap_item_amulet_holder:10": {}
@@ -76,6 +76,24 @@
             "id:8": "claybucket:claybucket",
             "Count:3": 1,
             "Damage:2": 2,
+            "OreDict:8": ""
+          },
+          "1:10": {
+            "id:8": "thermalexpansion:florb",
+            "Count:3": 5,
+            "tag:10": {
+              "Fluid:8": "lava"
+            },
+            "Damage:2": 1,
+            "OreDict:8": ""
+          },
+          "2:10": {
+            "id:8": "randomthings:soundpattern",
+            "Count:3": 1,
+            "tag:10": {
+              "sound:8": "nuclearcraft:player.geiger_tick"
+            },
+            "Damage:2": 0,
             "OreDict:8": ""
           }
         }

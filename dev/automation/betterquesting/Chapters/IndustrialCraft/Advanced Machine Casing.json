@@ -14,7 +14,6 @@
     "questID:3": 70,
     "preRequisites:11": [
       69,
-      72,
       413
     ],
     "properties:10": {
