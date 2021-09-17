@@ -14,14 +14,20 @@ function getOreName(name as string, part as string) as string {
   return null;
 }
 
+# Pairs of ore names and respective liquid
+val ore_liquid_exceptions = {
+  Aluminium:       "aluminum",
+  AstralStarmetal: "starmetal",
+} as string[string];
+
 for ore_entry in oreDict {
 	val name = ore_entry.name;
-  if(name.endsWith('Aluminum')) continue;
 
   # Ex Nihilo ore pieces conversion to ores
   var
   ore_name = getOreName(name, "piece");
 	if (!isNull(ore_name)) {
+    if(ore_name == 'Aluminum') continue;
 		val oreBlock = oreDict.get("ore" ~ ore_name);
 		if(isNull(oreBlock)) continue;
 
@@ -35,6 +41,7 @@ for ore_entry in oreDict {
   # Native clusters processing
   ore_name = getOreName(name, "cluster");
 	if (!isNull(ore_name)) {
+    if(ore_name == 'Aluminum') continue;
     scripts.process.beneficiate(ore_entry, ore_name, 3, beneficateOptions);
 
     # Fix gems melting recipes
@@ -54,7 +61,9 @@ for ore_entry in oreDict {
   # Crushed Ore Smeltery compat
   ore_name = getOreName(name, "crushed");
 	if (!isNull(ore_name)) {
-    val liquid = game.getLiquid(ore_name.toLowerCase());
+    if(ore_name == 'Aluminum') continue;
+    val exception = ore_liquid_exceptions[ore_name];
+    val liquid = game.getLiquid(isNull(exception) ? ore_name.toLowerCase() : exception);
     if(isNull(liquid)) continue;
 
     scripts.wrap.tconstruct.Melting.addRecipe(liquid * 144, ore_entry);
@@ -64,6 +73,7 @@ for ore_entry in oreDict {
   # Dense plates in Thermal Expansion Compactor
   ore_name = getOreName(name, "plateDense");
 	if (!isNull(ore_name)) {
+    if(ore_name == 'Aluminum') continue;
 		val inpOre = (ore_name == "Obsidian")
 			? (<minecraft:obsidian> * 4) as IIngredient
 			: oreDict["block"~ore_name];
