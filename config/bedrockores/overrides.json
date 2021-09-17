@@ -1,4 +1,5 @@
 [
+  {"enabled": false,"state": {"name": "actuallyadditions:block_misc","properties": {"type": "ore_black_quartz"}}},
   {"enabled": false,"state": {"name": "forestry:resources","properties": {"resource": "copper"}}},
   {"enabled": false,"state": {"name": "forestry:resources","properties": {"resource": "tin"}}},
   {"enabled": false,"state": {"name": "immersiveengineering:ore","properties": {"type": "aluminum"}}},
@@ -13,11 +14,13 @@
   {"enabled": false,"state": {"name": "minecraft:gold_ore"}},
   {"enabled": false,"state": {"name": "minecraft:redstone_ore"}},
   {"enabled": false,"state": {"name": "minecraft:lapis_ore"}},
+  {"enabled": false,"state": {"name": "minecraft:diamond_ore"}},
 
   {"enabled": false,"state": {"name": "thermalfoundation:ore","properties": {"type": "copper"}}},
   {"enabled": false,"state": {"name": "thermalfoundation:ore","properties": {"type": "tin"}}},
   {"enabled": false,"state": {"name": "thermalfoundation:ore","properties": {"type": "silver"}}},
   {"enabled": false,"state": {"name": "thermalfoundation:ore","properties": {"type": "lead"}}},
+  {"enabled": false,"state": {"name": "thermalfoundation:ore","properties": {"type": "nickel"}}},
 
   {"enabled": false,"state": {"name": "mekanism:oreblock","properties": {"type": "tin"}}},
   {"enabled": false,"state": {"name": "mekanism:oreblock","properties": {"type": "copper"}}},
@@ -30,30 +33,14 @@
       }
     },
     "weight": 100,
-    "widthMin": 4,
-    "widthMax": 7,
-    "countMin": 10,
-    "countMax": 14,
-    "yieldMin": 40,
+    "widthMin": 7,
+    "widthMax": 8,
+    "countMin": 4,
+    "countMax": 8,
+    "yieldMin": 20,
     "yieldMax": 250,
     "group": "osmium",
     "groupOrder": "mekanism"
-  },
-  {
-    "state": {
-      "name": "actuallyadditions:block_misc",
-      "properties": {
-        "type": "ore_black_quartz"
-      }
-    },
-    "widthMin": 3,
-    "widthMax": 5,
-    "countMin": 8,
-    "countMax": 12,
-    "yieldMin": 32,
-    "yieldMax": 40,
-    "group": "black_quartz",
-    "groupOrder": "actuallyadditions"
   },
   {
     "state": {
