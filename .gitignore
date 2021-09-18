@@ -70,6 +70,7 @@ resources/mechanics/models
 !resources/mechanics/lang
 
 dev/lang/tmp
-dev/automation/tmp CHANGELOG.md
+dev/automation/**/~*
+dev/default_configs/default_config_outdated
 config/JustEnoughCalculation/data/groups.json
 config/activity.json
