@@ -1,0 +1,24 @@
+             ,Total Power  ,Modifier      ,BonusAmmo  
+heavy        ,         0   ,         0.2  ,       -10 
+endrod       ,         7.2 ,         0.7  ,         1 
+steeleaf     ,         8   ,         0.6  ,        10 
+fierymetal   ,         8   ,         0.8  ,         0 
+blaze        ,         8.6 ,         0.8  ,         3 
+ice          ,         9.5 ,         0.95 ,         0 
+tnt          ,         9.5 ,         0.95 ,         0 
+livingwood   ,        10   ,         1    ,         0 
+bone         ,        10   ,         0.9  ,         5 
+wood         ,        10   ,         1    ,         0 
+amber        ,        11   ,         1    ,         5 
+ghostwood    ,        11.4 ,         0.9  ,        12 
+darkwood     ,        12   ,         1    ,        10 
+treatedwood  ,        12   ,         1.2  ,         0 
+reed         ,        12.5 ,         1.05 ,        10 
+fusewood     ,        13.3 ,         1.25 ,         4 
+dragonbone   ,        13.4 ,         1.3  ,         2 
+wolframium   ,        14.2 ,         1.4  ,         1 
+bloodwood    ,        15   ,         1.5  ,         0 
+endorium     ,        15   ,         1.4  ,         5 
+polyethylene ,        15.1 ,         0.75 ,        38 
+dreamwood    ,        17.5 ,         1.25 ,        25 
+nagascale    ,        18   ,         1.4  ,        20 

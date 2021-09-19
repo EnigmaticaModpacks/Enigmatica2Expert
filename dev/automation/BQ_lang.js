@@ -22,7 +22,7 @@ let hasChanges = false
 /** @type {Object<string, string>[]} */
 let langFiles
 
-async function init() {
+const init = module.exports.init = async function() {
   if(isPathHasChanged(defaultQuests_path) || validCodes.map(getLangPath).some(isPathHasChanged)) {
     console.log(' ❌📖 BQ_lang error: Quests or Langs have changes!')
     return
@@ -147,6 +147,4 @@ function saveLang(langCode, langFile) {
   )
 }
 
-
-module.exports.init = init
-if(process.argv?.[0]?.split('\\').pop()==='node.exe') init()
+if(require.main === module) init()

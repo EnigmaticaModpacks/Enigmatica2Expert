@@ -1,74 +1,127 @@
-/*
+/**
+ * @file Parse default Tweakerconstruct config and special tweakers
+ * csv files to make new tweaks
+ * 
+ * @author Krutoy242
+ * @link https://github.com/Krutoy242
+ */
 
-	This script parsing default Tweakerconstruct config and special tweakers
-	csv files to make new tweaks
-
-*/
+//@ts-check
 
 
 const {max, round, abs, sign,sqrt,pow,log} = Math // eslint-disable-line
-const {table} = require('table')
-const {orderBy} = require('natural-orderby')
+const {table, getBorderCharacters } = require('table')
 const fs = require('fs')
 const path = require('path')
 const csv = require('csvtojson')
 const glob = require('glob')
+const {injectInFile, begin, end, loadText, subFileName, saveText} = require('../lib/utils.js')
 
 const paths = {
-	utils:                '../lib/utils.js',
 	default_config:       'dev/default_configs/tweakersconstruct.cfg',
 	tweakerconstruct_cfg: 'config/tweakersconstruct.cfg',
 	equipData_zs:    			'scripts/equipment/equipData.zs',
-	oredict_zs:   			  'scripts/OreDict.zs',
-	bigTable:             path.resolve(__dirname, './tweakersconstruct_table.cs'),// eslint-disable-line
+	oredict_zs:   			  'scripts/OreDict.zs'
 }
 
-const {transpose, injectInFile, begin, end} = require(paths.utils)
+/**@type {string} */
+let default_tweakers_cfg
+
+/**@type {string} */
+let current_tweakers_cfg
 
 /*=============================================
 =                  Parse                      =
 =============================================*/
 
-
-// Format big numbers
-begin('  Loading configs .')
-let cfg = fs.readFileSync(paths.default_config, 'utf8')
-begin('.')
-let currentCfg = fs.readFileSync(paths.tweakerconstruct_cfg, 'utf8')
-end()
-let formattedTable = ''
-
+/**
+ * @param {string} s
+ */
 function isNumber(s) { return /^\d+\.?\d*$/.test(s) }
-function nice(v) { return  round(parseFloat(v)*100)/100}
-function cut(s) { return s.substr(Math.max(0, s.length - 20)) }
-function bigTableEntry(val, matID, isRound=false) {
-	return `${((isRound ? round(val,2) : nice(val)) + '').padStart(5)} ${cut(matID)}`
+
+/**
+ * @param {string|number} v
+ */
+function nice(v) { return round((+v)*100)/100}
+
+/**
+ * @param {number|'d'} v
+ */
+function d_nice(v) { return v=='d' ? 'd' : nice(v)}
+
+
+/**
+ * @param {number} v
+ */
+function veryNice(v) {
+	const val = nice(v)
+	const left = val|0
+	const right = nice(val - left)
+	return (left+'').padStart(10) + (right?'.'+(right+'').substr(2,2):'')
 }
 
-function tweakValue(defVal, n, outputCommand) {
-  if(n==null || n==='' || n==='d' || n==defVal) return 'd'
-  if(!isNumber(n)) n = nice(eval(defVal + n))
-	n = eval(outputCommand)
+/**
+ * @param {number|'d'} defVal Default value from 'default_configs/tweakersconstruct.cfg'
+ * @param {string | number} n Tweak string
+ * @param {string} _output string to be evaluated to get result
+ * @return {number|'d'}
+ */
+function tweakValue(defVal, n, _output) {
+  if(n==null || n==='' || n==='d' || n===defVal) return 'd'
 
-	if(parseFloat(n) === parseFloat(defVal)) return 'd'
+	// Convert 'n' when its in form of math '*2'
+  if(!isNumber(n+'')) n = parseFloat(eval(`${defVal}${n}`))
+	else n = +n
+	
+	// Calculate output result (usually rounding value or make non-negative)
+	/** @type {number} */
+	const result = eval(_output)
 
-  return n
+	// After changes value didnt mutated
+	if(result === +defVal) return 'd'
+
+  return result
 }
 
+/**
+ * @typedef {{
+ *   nums: (number | "d")[],
+ *   reals: number[],
+ *   mat: string,
+ *   power: number,
+ *   tweaks: string[],
+ *   raw: string,
+ *   tweaked: boolean,
+ * }} TweakedMaterial
+ */
 
-function tweakMaterial(tweakGroup, matID, tweakObj, defaultVals) {
+/**
+ * 
+ * @param {string} matID 
+ * @param {TweakObj} tweakObj 
+ * @param {(number|'d')[]} defaultVals String of number or 'd'
+ */
+function tweakMaterial(matID, tweakObj, defaultVals) {
   const nums = defaultVals.map((defVal,i) =>
-    tweakValue(defVal, tweakObj[matID]?.[i], tweakObj._output?.[i] || 'n')
+    tweakValue(defVal, tweakObj[matID]?.[i], tweakObj._output?.[i] ?? 'n')
 	)
-	const reals = nums.map((n,i)=>parseFloat(isNaN(n) ? (parseFloat(defaultVals[i]) || 0.0) : n))
-	let isActuallyTweaked = nums.some((v,i)=>
-		v!=='d' && v!=defaultVals[i]
+
+	/**
+	 * Factical material stats
+	 * @type {number[]}
+	 */
+	const reals = nums.map((n,i)=>
+		typeof n !== 'number' || isNaN(+n) ? +defaultVals[i] || 0.0 : n
+	)
+
+	const isActuallyTweaked = nums.some((v,i)=>
+		v!=='d' && v != +defaultVals[i]
 	)
 
 	// Compute total power of material after tweaks
 	let power = 0
-	reals.forEach((num,i) => {
-		let n = num // eslint-disable-line
+	reals.forEach((real,i) => {
+		let n = real // eslint-disable-line
 		power += eval(tweakObj._importancy[i])
 	})
 
@@ -78,15 +131,15 @@ function tweakMaterial(tweakGroup, matID, tweakObj, defaultVals) {
 		mat: matID,
 		power,
 		tweaks: tweakObj[matID] ?? nums.map(()=>''),
-		raw: `        ${matID}:${nums.join(':')}`,
+		raw: `        ${matID}:${nums.map(d_nice).join(':')}`,
 		tweaked: isActuallyTweaked
 	}
 }
 
 const invalid = {
-	material: new Set(),
-	absent: new Set(),
-	fileInject: new Set(),
+	/** @type {Set<string>} */ material:   new Set(),
+	/** @type {Set<string>} */ absent:     new Set(),
+	/** @type {Set<string>} */ fileInject: new Set(),
 }
 
 function injectToEquipments(list, varName) {
@@ -101,7 +154,7 @@ function injectToEquipments(list, varName) {
 			'chaotic_metal',
 			'infinity_metal',
 		].includes(l.mat))
-		.map(l=>`  ${('"'+l.mat+'"').padEnd(25)}, # ${round(l.power, 2)}`)
+		.map(l=>`  ${('"'+l.mat+'"').padEnd(25)}, # ${round(l.power)}`)
 		.join('\n')
 
 	const injectResult = injectInFile(
@@ -116,101 +169,160 @@ function injectToEquipments(list, varName) {
 	}
 }
 
-function logBigTable(tweakGroup, tweakObj, bigTable) {
-	// Output a table of values
-	formattedTable += tweakGroup+'\n'+table([
-		['Total Power',...tweakObj._names.map((name,i)=>name+'\n'+tweakObj._importancy[i])],
-		...transpose( bigTable.map(bt=>orderBy(bt)) ),
-		['Total Power',...tweakObj._names],
-	],{
-		drawHorizontalLine: (i, size) => i === 0 || i === 1 || i === size || i === size-1
-	}) + '\n\n'
+/**
+ * @param {string} tweakGroup
+ * @param {TweakObj} tweakObj
+ * @param {TweakedMaterial[]} list
+ */
+function writeStatsTable(tweakGroup, tweakObj, list) {
+
+	const outputTable = [
+		[    '', 'Total Power',...tweakObj._names], // Header
+		...list.map(l=>[
+			l.mat, veryNice(l.power),...l.reals.map(veryNice)
+		])
+	]
+
+	const csvTable = table(outputTable, {
+    border: {
+			...getBorderCharacters('void'),
+			bodyJoin: ','
+		},
+    columnDefault: {
+			paddingLeft: 0,
+			paddingRight: 1
+    },
+    drawHorizontalLine: () => false
+	})
+
+	saveText(csvTable, path.resolve(__dirname,
+		`./stats/${tweakGroup.replace(/\s+Tweaks$/i, 's')}.csv`
+	))
 }
 
-// Compare group of parameters like "Armory Stat Tweaks" or "Fletching Stat Tweaks"
-// And save them to variable
+/**
+ * @typedef {{
+ * 		[x: string]: string[];
+ * 		_names: string[];
+ * 		_output: string[];
+ * 		_importancy: string[];
+ * }} TweakObj
+ */
+
+/**
+ * Compare group of parameters like "Armory Stat Tweaks" or "Fletching Stat Tweaks"
+ * And save them to variable
+ * 
+ * @param {string} tweakGroup Group like `Armory Stat Tweaks` or `Arrow Shaft Stat Tweaks`
+ * @param {TweakObj} tweakObj
+ */
 function parseStats(tweakGroup, tweakObj) {
 	const lookupString = `(S:"?${tweakGroup}"? <[\\n\\r])([\\r\\s\\S]*?)\\n(     >)`
 
 	const rgx = new RegExp(lookupString)
-	const cfgListChunk = cfg.match(rgx)[0]
+	const cfgListChunk = default_tweakers_cfg.match(rgx)[0]
 
+	
+	/**
+	 * New recalculated values list
+	 * @type {TweakedMaterial[]}
+	 */
+	const list = []
 
-	const list = [] // New recalculated values list
-	const existMats = new Set() // Materials that exists in current pack
-	const bigTable = [[], ...tweakObj._names.map(()=>[])]
+	/**
+	 * Materials that exists in current pack
+	 * @type {Set<string>}
+	 */
+	const existMats = new Set()
 
 	for (const match of cfgListChunk.matchAll(/^ *(?<matID>[^:\n]+):(?<rawValues>[^<\n]+)$/gm)) {
 		const matID = match.groups.matID
-		let defaultVals = match.groups.rawValues.split(':')
+
+		let defaultVals = match.groups.rawValues.split(':').map(n=>isNaN(+n)?'d':+n)
 
 		existMats.add(matID)
 
-    const tweaked = tweakMaterial(tweakGroup, matID, tweakObj, defaultVals)
+    const tweaked = tweakMaterial(matID, tweakObj, defaultVals)
     list.push(tweaked)
-
-    // Add values to big table
-    bigTable[0].push(bigTableEntry(tweaked.power, tweaked.mat, true))
-    tweaked.reals.forEach((real,i) => {
-      // let n = real
-      // let importancy = eval(tweakObj._importancy[i])
-      // let resultStr = (nice(importancy)+' ').padStart(6)+valMat(n)
-      bigTable[i+1].push(bigTableEntry(real, tweaked.mat))
-    })
 	}
 
-  list.sort((a,b) => a.power - b.power)
+	list.sort((a, b) => a.power - b.power)
 
   if(tweakGroup === 'Armory Stat Tweaks') injectToEquipments(list, 'defaultArmorMats')
   if(tweakGroup === 'Stat Tweaks')        injectToEquipments(list, 'defaultWeaponMats')
 
-  logBigTable(tweakGroup, tweakObj, bigTable)
+  writeStatsTable(tweakGroup, tweakObj, list)
+  replaceInCurrentConfig(list, lookupString)
+	addInvalidTweaks(tweakObj, existMats)
+}
 
-	// Write back in cfg loaded text
-	currentCfg = currentCfg.replace(new RegExp(lookupString, 'm'), `$1${
-    list.filter(l=>l.tweaked).map(l=>l.raw).join('\n') + '\n'
-  }$3`)
+/**
+ * Write back in cfg loaded text
+ * @param {TweakedMaterial[]} list 
+ * @param {string} lookupString 
+ */
+function replaceInCurrentConfig(list, lookupString) {
+	current_tweakers_cfg = current_tweakers_cfg.replace(
+		new RegExp(lookupString, 'm'),
+		`$1${list.filter(l => l.tweaked).map(l => l.raw).join('\n') + '\n'}$3`
+	)
+}
 
-	// Invalid tweaks (exist in tweaks, but absent in actual tweakerconstruct.cfg)
-	Object.keys(tweakObj).forEach(o=>{
-		if(o.substr(0,1) !== '_' && !existMats.has(o)) invalid.material.add(o)
-	})
-	;[...existMats.values()].forEach(o=>{
-		if(!tweakObj[o]) invalid.absent.add(o)
+/**
+ * Invalid tweaks (exist in tweaks, but absent in actual tweakerconstruct.cfg)
+ * @param {TweakObj} tweakObj
+ * @param {Set<string>} existMats
+ */
+function addInvalidTweaks(tweakObj, existMats) {
+	Object.keys(tweakObj).forEach(o => {
+		if (o.substr(0, 1) !== '_' && !existMats.has(o))
+			invalid.material.add(o)
+	});[...existMats.values()].forEach(o => {
+		if (!tweakObj[o])
+			invalid.absent.add(o)
 	})
 }
 
-async function start() {
+const init = module.exports.init = async function() {
+	// Format big numbers
+	begin('  Loading configs .')
+	default_tweakers_cfg = loadText(paths.default_config); begin('.')
+	current_tweakers_cfg = loadText(paths.tweakerconstruct_cfg); end()
+	
 	begin('  Parsing csv ')
-	for(const filePath of glob.sync('dev/TCon/tweaks/*.csv')) {
+	for(const filePath of glob.sync(path.resolve(__dirname, './tweaks/*.csv'))) {
 		begin('.')
-		const fileName = path.basename(filePath).split('.').slice(0, -1).join('.')
-		const result = await csv({
+
+		/**
+		 * @type {(string)[][]}
+		 */
+		const csvResult = await csv({
 			noheader:true,
 			output: 'csv'
 		}).fromFile(filePath)
 
-		parseStats(fileName, result.reduce((a,v)=>(a[v[0]]=v.slice(1),a), {}))
+		/** @type {*} */
+		const materialTweaks = csvResult.reduce((a,v)=>(a[v[0]]=v.slice(1),a), {})
+
+		parseStats(subFileName(filePath), materialTweaks)
 	}
 	end()
 
 	begin('  Saving files .')
-  fs.writeFileSync(paths.tweakerconstruct_cfg, currentCfg)
-	begin('.')
-	fs.writeFileSync(paths.bigTable, formattedTable)
+  fs.writeFileSync(paths.tweakerconstruct_cfg, current_tweakers_cfg)
 	end()
 
-	Object.entries(invalid).forEach(([key,map])=>{
-		if(map.size === 0) return
+	Object.entries(invalid).forEach(([key,set])=>{
+		if(set.size === 0) return
 		console.log(({
-			material: `Found ${map.size} invalid materials for tweaks: ${[...map].join(', ')}`,
-			absent:   `Found ${map.size} materials without tweaks: ${[...map].join(', ')}`,
-			fileInject: 'Unable to inject files: ' + [...map].map(s=>`"${s}"`).join(', '),
+			material: `Found ${set.size} invalid materials for tweaks: ${[...set].join(', ')}`,
+			absent:   `Found ${set.size} materials without tweaks: ${[...set].join(', ')}`,
+			fileInject: 'Unable to inject files: ' + [...set].map(s=>`"${s}"`).join(', '),
 		})[key])
 	})
 }
-start()
 
+if(require.main === module) init()
 
 /*
 

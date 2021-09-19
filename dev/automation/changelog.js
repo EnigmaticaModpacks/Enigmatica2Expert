@@ -12,6 +12,88 @@ const path = require('path')
 const {getModsIds, formatRow} = require('./modsDiff.js')
 const curseforge = require('mc-curseforge-api')
 
+/** @typedef {Array<[string, string, Subcategory?]>} Subcategory */
+/** @type {Subcategory} Category with optional {@link Subcategory} */
+const annotations = [
+  ['🧩', 'Configs'],
+  ['📖', 'Quest Book'],
+  ['🌍', 'World Generation'],
+  ['✏️', 'Recipes'],
+  ['🔵', 'Mods', `
+    🟢 New Mods
+    🔴 Removed Mods
+    🟡 Mods Changes
+    ▦ Ex Nihilo
+    ☢️ NuclearCraft
+    ⚙️ JAOPCA
+    ⛽ Advanced Generators
+    ⬛ Bedrock Ore
+    🌠 Astral Sorcery
+    🌡️ Thermal Expansion
+    🌱 Mystical Agriculture
+    🌳 Twilight Forest
+    🌴 BiomesOPlenty
+    🌸 Industrial Foregoing
+    🌾 Farming For Blockheads
+    🌿 Patchouli
+    🍁 Rustic
+    🍃 Botania
+    🍇 End Reborn
+    🎲 Random Things
+    🏦 Modular Machinery
+    🏪 Requious Fracto
+    🏴 Dark Utilities
+    🐀 Rats
+    🐉 Ice and Fire
+    🐝 Forestry
+    🐮 Animania
+    👨‍🏭 Mekanism
+    👿 Extra Utilities 2
+    💍 Baubles
+    💼 Actually Additions
+    💽 Applied Energistics
+    📑 Tips
+    📙 AkashicTome
+    📭 Storage Drawers
+    🔌 Industrial Craft 2
+    🔠 MainMenu
+    🔨 Tinker's Construct
+    🔩 RFTools
+    🖥 OpenComputers
+    🖽 LittleTiles
+    🗂️ Additional Compression
+    🗃️ Loot Tables
+    🦯 Thaumcraft
+    🧃 OpenBlocks
+    🧙‍♂️ Cyclic
+    🧬 Draconic Evolution
+    🧻 JEI
+    🩸 Blood Magic
+    🪐 AdvRocketry
+    🚄 Vaultopic
+    🛢️ Immersive Engineering
+    🛸 EnderIO
+    🛹 Integrated Dynamics
+    🟨 Recurrent Complex
+    🅱 Block Drops
+    🥽 LagGoggles
+    🖥️ Deep Mob Learning
+    🍹 Nutrition
+    🙋‍♀️ Quark
+    🗳️ Colossal Chest
+    🍗 Scaling Feast
+  `.trim().split('\n').map(l=>l.trim().split(' ')).map(([c,...r])=>[c, r.join(' ')])],
+  ['🔄', 'Misc Changes', [
+    ['🧱', 'Technical'],
+    ['🚧', 'Develop'],
+    ['🧹', 'Refactoring'],
+    ['𝓩𝒮', 'ZenScript'],
+    ['📝', 'TODO'],
+    ['🧮', 'craft.zs'],
+    ['⛏️', 'Mining'],
+  ]],
+]
+
 const GENERATE_MODS_CHANGES = true
 
 /**
@@ -34,7 +116,7 @@ const bumpVersion = (version) => {
   return nextVersion
 }
 
-async function init() {
+const init = module.exports.init = async function() {
   write('  🧱 Generating changelog. ')
 
   // Get last tagged version
@@ -71,88 +153,6 @@ async function init() {
 
     return (map[symbol] ??= []).push(trimmedSubject)
   })
-
-  /** @typedef {Array<[string, string, Subcategory?]>} Subcategory */
-  /** @type {Subcategory} Category with optional {@link Subcategory} */
-  const annotations = [
-    ['🧩', 'Configs'],
-    ['✏️', 'Recipes'],
-    ['📖', 'Quest Book'],
-    ['🌍', 'World Generation'],
-    ['⛏️', 'Mining'],
-    ['🔵', 'Mods', `
-      🟢 New Mods
-      🔴 Removed Mods
-      🟡 Mods Changes
-      ▦ Ex Nihilo
-      ☢️ NuclearCraft
-      ⚙️ JAOPCA
-      ⛽ Advanced Generators
-      ⬛ Bedrock Ore
-      🌠 Astral Sorcery
-      🌡️ Thermal Expansion
-      🌱 Mystical Agriculture
-      🌳 Twilight Forest
-      🌴 BiomesOPlenty
-      🌸 Industrial Foregoing
-      🌾 Farming For Blockheads
-      🌿 Patchouli
-      🍁 Rustic
-      🍃 Botania
-      🍇 End Reborn
-      🎲 Random Things
-      🏦 Modular Machinery
-      🏪 Requious Fracto
-      🏴 Dark Utilities
-      🐀 Rats
-      🐉 Ice and Fire
-      🐝 Forestry
-      🐮 Animania
-      👨‍🏭 Mekanism
-      👿 Extra Utilities 2
-      💍 Baubles
-      💼 Actually Additions
-      💽 Applied Energistics
-      📑 Tips
-      📙 AkashicTome
-      📭 Storage Drawers
-      🔌 Industrial Craft 2
-      🔠 MainMenu
-      🔨 Tinker's Construct
-      🔩 RFTools
-      🖥 OpenComputers
-      🖽 LittleTiles
-      🗂️ Additional Compression
-      🗃️ Loot Tables
-      🦯 Thaumcraft
-      🧃 OpenBlocks
-      🧙‍♂️ Cyclic
-      🧬 Draconic Evolution
-      🧻 JEI
-      🩸 Blood Magic
-      🪐 AdvRocketry
-      🚄 Vaultopic
-      🛢️ Immersive Engineering
-      🛸 EnderIO
-      🛹 Integrated Dynamics
-      🟨 Recurrent Complex
-      🅱 Block Drops
-      🥽 LagGoggles
-      🖥️ Deep Mob Learning
-      🍹 Nutrition
-      🙋‍♀️ Quark
-      🗳️ Colossal Chest
-      🍗 Scaling Feast
-    `.trim().split('\n').map(l=>l.trim().split(' ')).map(([c,...r])=>[c, r.join(' ')])],
-    ['🔄', 'Misc Changes', [
-      ['🧱', 'Technical'],
-      ['🚧', 'Develop'],
-      ['🧹', 'Refactoring'],
-      ['𝓩𝒮', 'ZenScript'],
-      ['📝', 'TODO'],
-      ['🧮', 'craft.zs'],
-    ]],
-  ]
 
   /**
    * @param {string} categoryKey Symbol of Changelog category. Example: `🚧`
@@ -199,7 +199,7 @@ async function init() {
   }
 
   changelogText += '\n\n'
-  fs.writeFileSync(path.resolve(__dirname, 'tmp CHANGELOG.md'), changelogText)
+  fs.writeFileSync(path.resolve(__dirname, 'data/~CHANGELOG.md'), changelogText)
   end()
 }
 
@@ -256,5 +256,4 @@ async function getModChanges(version) {
   return result
 }
 
-module.exports.init = init
-if(process.argv?.[0]?.split('\\').pop()==='node.exe') init()
+if(require.main === module) init()

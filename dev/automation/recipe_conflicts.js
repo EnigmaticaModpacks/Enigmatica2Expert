@@ -1,3 +1,12 @@
+/**
+ * @file Research crafttweaker.log after /ct conflicts to show whats wrong
+ * 
+ * @author Krutoy242
+ * @link https://github.com/Krutoy242
+ */
+
+//@ts-check
+
 const fs = require('fs')
 const chalk = require('chalk')
 const {table} = require('table')
@@ -5,7 +14,7 @@ const {write} = require('../lib/utils.js')
 
 
 const allConflicts = []
-function init() {
+const init = module.exports.init = async function() {
   write(chalk.rgb(20, 184, 132)('  🡺🢀 Recipe Conflicts. '))
   const crafttweaker_log = fs.readFileSync('crafttweaker.log', 'utf8')
   const conflictingStartText = '[SERVER_STARTED][SERVER][INFO] Conflicting: '
@@ -24,6 +33,7 @@ function init() {
   if(!allConflicts.length) return noConflicts()
 
 
+  /** @type {*} */
   const config = {
     columns: [
       { alignment: 'right' },
@@ -78,5 +88,4 @@ function handleConflict(match) {
   ])
 }
 
-module.exports.init = init
-if(process.argv?.[0]?.split('\\').pop()==='node.exe') init()
+if(require.main === module) init()

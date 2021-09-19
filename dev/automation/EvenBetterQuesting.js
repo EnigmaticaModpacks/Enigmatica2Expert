@@ -1,3 +1,13 @@
+/**
+ * @file Splits better `DefaultQuests.json` into different files
+ * for easier managment
+ * 
+ * @author Krutoy242
+ * @link https://github.com/Krutoy242
+ */
+
+//@ts-check
+
 const fs = require('fs')
 const path = require('path')
 const glob = require('glob')
@@ -6,24 +16,24 @@ const replace = require('replace-in-file')
 
 const bq_quests_path = 'config/betterquesting/DefaultQuests.json'
 
-function init(argv = process.argv) {
+const init = module.exports.init = async function() {
+  if(isPathHasChanged('dev/automation/betterquesting')) {
+    console.log(' ❌📖 EvenBetterQuesting error: splitted folder have changes!')
+    return
+  }
+
   replace.sync({
     files: bq_quests_path,
     from: /^(\s+"editmode:1": )1,/gm,
     to: '$10,',
   })
 
-  if(argv.unparse) unparse()
+  // @ts-ignore
+  if(process.argv.unparse) unparse()
   else parse()
 }
 
-if(isPathHasChanged('dev/automation/betterquesting')) {
-  console.log(' ❌📖 EvenBetterQuesting error: splitted folder have changes!')
-  return
-}
-
-module.exports.init = init
-if(process.argv?.[0]?.split('\\').pop()==='node.exe') init()
+if(require.main === module) init()
 
 /*
 

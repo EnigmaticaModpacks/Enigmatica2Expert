@@ -1,3 +1,12 @@
+/**
+ * @file Create MODS.md
+ * 
+ * @author Krutoy242
+ * @link https://github.com/Krutoy242
+ */
+
+//@ts-check
+
 const fs = require('fs')
 const curseforge = require('mc-curseforge-api')
 const {injectInFile} = require('../lib/utils.js')
@@ -5,7 +14,7 @@ const _ = require('lodash')
 const {mod_loadTime_typles} = require('./benchmark.js')
 
 
-function getModsIds(json_Path_A, json_Path_B) {
+const getModsIds = module.exports.getModsIds = function (json_Path_A, json_Path_B) {
   const A = JSON.parse(fs.readFileSync(json_Path_A, 'utf8')).installedAddons
   const B = JSON.parse(fs.readFileSync(json_Path_B, 'utf8')).installedAddons
   const union = _.uniqBy([...B, ...A], 'addonID')
@@ -37,7 +46,7 @@ function getLogo(logo) {
   return url
 }
 
-const loadTimeSumm = _.sumBy(mod_loadTime_typles, 1)
+const loadTimeSumm = _.sumBy(mod_loadTime_typles, '1')
 const exceptionsList = [
   'Just Enough Items (JEI)',
   'Tinkers Construct',
@@ -58,8 +67,7 @@ function getSquare(modName) {
   if(rate >=0.01  ) return '🟥'
 }
 
-module.exports.formatRow = formatRow
-function formatRow(mcAddon, curseAddon, options={}) {
+const formatRow = module.exports.formatRow = function (mcAddon, curseAddon, options={}) {
   const name = curseAddon.name.trim()
   return (options.asList?'- ':'') + 
   (options.noIcon?'':`<img src="${getLogo(curseAddon.logo)}" width="50"> | ${getSquare(name)} `)+
@@ -79,7 +87,7 @@ function formatTable(rows) {
   ].join('\n')
 }
 
-async function init() {
+const init = module.exports.init = async function() {
   const diff = getModsIds('../Enigmatica 2 Expert - E2E (unchanged, updated)/minecraftinstance.json', 'minecraftinstance.json')
 
   // Debug cutoff
@@ -118,70 +126,5 @@ async function init() {
   }
 }
 
-module.exports.getModsIds = getModsIds
-module.exports.init = init
 
-if(process.argv?.[0]?.split('\\').pop()==='node.exe') init()
-
-/*
-
-Curseforge Result:
-
-interface RootObject {
-  id: number;
-  name: string;
-  authors: Author[];
-  attachments: Attachment[];
-  url: string;
-  summary: string;
-  defaultFileId: number;
-  downloads: number;
-  latestFiles: LatestFile[];
-  key: string;
-  featured: boolean;
-  popularityScore: number;
-  gamePopularityRank: number;
-  primaryLanguage: string;
-  logo: Attachment;
-  updated: string;
-  created: string;
-  released: string;
-  available: boolean;
-}
-
-interface LatestFile {
-  id: number;
-  minecraft_versions: string[];
-  file_size: number;
-  timestamp: string;
-  release_type: number;
-  download_url: string;
-  mod_dependencies: any[];
-  alternate: boolean;
-  alternate_id: number;
-  available: boolean;
-}
-
-interface Attachment {
-  id: number;
-  projectId: number;
-  description: string;
-  isDefault: boolean;
-  thumbnailUrl: string;
-  title: string;
-  url: string;
-  status: number;
-}
-
-interface Author {
-  name: string;
-  url: string;
-  projectId: number;
-  id: number;
-  projectTitleId?: any;
-  projectTitleTitle?: any;
-  userId: number;
-  twitchId: number;
-}
-
-*/
+if(require.main === module) init()

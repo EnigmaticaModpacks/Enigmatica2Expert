@@ -293,8 +293,8 @@ benchmark.JEI_ADDITIONALS = '\n`\n' +
 //############################################################################
 //############################################################################
 
-function init() {
-  const tempelate = fs.readFileSync(path.resolve(__dirname, 'benchmark.md'),'utf8')
+const init = module.exports.init = async function() {
+  const tempelate = fs.readFileSync(path.resolve(__dirname, 'data/benchmark.md'),'utf8')
 
   let benchmark_md = tempelate
   ;[...tempelate.matchAll(
@@ -304,11 +304,9 @@ function init() {
     benchmark_md = benchmark_md.replaceAll(whole, content)
   })
 
-  fs.writeFileSync(path.resolve(__dirname,'benchmark.md'), benchmark_md)
+  fs.writeFileSync(path.resolve(__dirname,'data/benchmark.md'), benchmark_md)
 }
-
-module.exports.init = init
-if(process.argv?.[0]?.split('\\').pop()==='node.exe') init()
+if(require.main === module) init()
 
 /* 
 

@@ -1,3 +1,12 @@
+/**
+ * @file Research debug.log file to find unknown errors
+ * 
+ * @author Krutoy242
+ * @link https://github.com/Krutoy242
+ */
+
+//@ts-check
+
 
 /*=============================================
 =                Variables                    =
@@ -8,7 +17,7 @@ const path = require('path')
 /*=============================================
 =               Ignoring errors               =
 =============================================*/
-var ignore = [
+const ignore = [
   /Parsing error loading built-in advancement/,
   / \[tconstruct-modifier\]: Cannot load modifier-model /,
   / \[(tconstruct-API|conarm)\]: Could not load multimodel /,
@@ -168,6 +177,7 @@ var ignore = [
   /Mekanism Gas conduits loaded\. Let your networks connect!/,
   /Unable to read property: material with value: iron for blockstate/,
   /Mod advancedrocketrycore has been disabled through configuration/,
+  /Sending runtime to plugin: .+ took .* ms/,
 
   /*=============================================
   =        Already inspected warnings           =
@@ -239,7 +249,7 @@ var ignore = [
 =               Ignoring known                =
 =============================================*/
 // Known errors that should be fixed but not listed
-var known = [
+const known = [
 
 ]
 
@@ -247,54 +257,56 @@ var known = [
 =           Working                           =
 =============================================*/
 
-var log = fs.readFileSync('logs/debug.log', 'utf8')
-const serverThreadStart = log.indexOf('[Server thread/')
-if(serverThreadStart!==-1) log = log.substring(0, serverThreadStart)
-var newLog = ''
-// var newLog = (log.match(/\[Client thread\/INFO\] (\[Surge\]: The game loaded in approximately +.* seconds.)/)?.[1] ?? '') + '\n'
+const init = module.exports.init = async function() {
+  let log = fs.readFileSync('logs/debug.log', 'utf8')
+  const serverThreadStart = log.indexOf('[Server thread/')
+  if(serverThreadStart!==-1) log = log.substring(0, serverThreadStart)
+  var newLog = ''
 
-var stat = {
-  total: 0,
-  unknown: 0,
-  resolved: known.length,
-  viewed: 0,
-}
-
-for (const match of log.matchAll(/^.*\W(error|WARN)\W.*$/gmi)) {
-  var isIgnore = false
-  stat.total++
-  for (let i = 0; i < ignore.length; i++) {
-    if (match[0].match(ignore[i])) {
-      isIgnore = true
-      break
-    }
+  var stat = {
+    total: 0,
+    unknown: 0,
+    resolved: known.length,
+    viewed: 0,
   }
-  
-  if (!isIgnore) {
-    for (let i = 0; i < known.length; i++) {
-      if (match[0].match(known[i])) {
+
+  for (const match of log.matchAll(/^.*\W(error|WARN)\W.*$/gmi)) {
+    var isIgnore = false
+    stat.total++
+    for (let i = 0; i < ignore.length; i++) {
+      if (match[0].match(ignore[i])) {
         isIgnore = true
-        stat.resolved--
         break
       }
     }
-  }
-
-  if (!isIgnore) {
-    var line = match[0]
-      .replace(/^\[[\d:]+\] /,'')  // Remove timestamp
-    newLog += line + '\n'
-
-    if (stat.viewed < 100) {
-      // console.log('=>' + line)
-      stat.viewed++
+    
+    if (!isIgnore) {
+      for (let i = 0; i < known.length; i++) {
+        if (match[0].match(known[i])) {
+          isIgnore = true
+          stat.resolved--
+          break
+        }
+      }
     }
-    stat.unknown++
+
+    if (!isIgnore) {
+      var line = match[0]
+        .replace(/^\[[\d:]+\] /,'')  // Remove timestamp
+      newLog += line + '\n'
+
+      if (stat.viewed < 100) {
+        // console.log('=>' + line)
+        stat.viewed++
+      }
+      stat.unknown++
+    }
   }
+  console.log('      Total Errors⭕: ', stat.total)
+  console.log('  Untreaten Errors🛑: ', stat.unknown)
+  if(stat.resolved>0) console.log('   Resolved Errors ✅: ', stat.resolved + '/' + known.length)
+
+
+  fs.writeFileSync(path.resolve(__dirname, 'data/unknownErrors.log'), newLog)
 }
-console.log('      Total Errors⭕: ', stat.total)
-console.log('  Untreaten Errors🛑: ', stat.unknown)
-if(stat.resolved>0) console.log('   Resolved Errors ✅: ', stat.resolved + '/' + known.length)
-
-
-fs.writeFileSync(path.resolve(__dirname, 'unknownErrors.log'), newLog)
+if(require.main === module) init()

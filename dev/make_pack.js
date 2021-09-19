@@ -237,6 +237,8 @@ globs([
   '!mods/toughnessbar*.jar',
   '!mods/WailaHarvestability-mc*.jar',
 
+  '!mods/gamestagesviewer-*.jar',
+
   // Not sure
 /* 
   '!mods/gendustryjei*.jar',

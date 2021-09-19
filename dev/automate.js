@@ -14,6 +14,8 @@ const automationList = [
   'scripts/wrap/_wrapper.js',
 ]
 
+
+
 async function init() {
   for(const filePath of automationList) {
     console.log('📒', filePath)
