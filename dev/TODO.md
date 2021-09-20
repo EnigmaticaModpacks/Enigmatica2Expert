@@ -25,9 +25,9 @@ Items that should have more uses:
 ![](https://git.io/JOGgk "Propolis")
 ![](https://git.io/JRLSJ "Ice Shard")
 ![](https://git.io/JRnDa "Tar")
+![](https://git.io/JznPT "Lormyte Block")
 [Quickdry Concrete]
 [Cow Written Book]
-[Lormyte Block]
 
 ### Tier 3
 
@@ -85,10 +85,12 @@ Liquids that should have more uses:
 
 # TODO
 
-- [ ] 🔴 Remove Dimension Stages
 - [ ] 🍗 [Exhaustion Ore] integrate in tinkers
 - [ ] ✏️ **Colossal Chests** rethink recipes
-- [ ] ✏️ [Rat on Arrow] add craft, add Dispenser Behaviour, add quest.
+- [ ] ✏️ ![](https://git.io/JznPk "Rat on Arrow") add craft, add Dispenser Behaviour, add quest.
+- [ ] ✏️ Add written books by animals to craft
+- [ ] ✏️ ![](https://git.io/JznPI "Amplifying Tube") remove vanilla recipes
+- [ ] 🚧 Add skyblock client/server changes
 
 ---
 
