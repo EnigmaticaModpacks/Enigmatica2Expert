@@ -98,7 +98,7 @@ val defaultArmorMats as IData = [
   "xu_enchanted_metal"     , # 44
   "ma.soulium"             , # 44
   "carbon_fiber"           , # 44
-  "hard_carbon"            , # 44
+  "hard_carbon"            , # 45
   "platinum"               , # 45
   "signalum"               , # 45
   "alumite"                , # 45
@@ -140,7 +140,7 @@ val defaultArmorMats as IData = [
   "bound_metal"            , # 57
   "vibrant_alloy"          , # 57
   "flux_crystal"           , # 57
-  "crystal_matrix"         , # 58
+  "crystal_matrix"         , # 57
   "void_metal"             , # 58
   "steel"                  , # 58
   "dragonbone"             , # 59
@@ -236,8 +236,8 @@ val defaultWeaponMats as IData = [
   "obsidian"               , # 100
   "ruby"                   , # 103
   "void_crystal"           , # 105
-  "psimetal"               , # 106
-  "psigem"                 , # 106
+  "psimetal"               , # 105
+  "psigem"                 , # 105
   "palis_crystal"          , # 106
   "iron"                   , # 106
   "dreamwood"              , # 106

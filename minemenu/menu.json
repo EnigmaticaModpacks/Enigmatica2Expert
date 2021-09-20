@@ -1,14 +1,14 @@
 {
   "main": {
     "0": {
-      "title": "Put On Wall",
+      "title": "Hang Item",
       "icon": {
-        "name": "minecraft:item_frame",
+        "name": "quark:glass_item_frame",
         "damage": 0
       },
       "action": {
         "key": {
-          "key": "key.placeItem",
+          "key": "key.draconicevolution.placeItem",
           "toggle": false
         }
       }
@@ -35,19 +35,6 @@
       "action": {
         "key": {
           "key": "key.conarm.toggle_helm.desc",
-          "toggle": false
-        }
-      }
-    },
-    "3": {
-      "title": "Change Tool Config",
-      "icon": {
-        "name": "draconicevolution:energy_crystal",
-        "damage": 3
-      },
-      "action": {
-        "key": {
-          "key": "key.toolProfileChange",
           "toggle": false
         }
       }

@@ -6,6 +6,7 @@ It should not exist in release version.
 */
 
 #priority 3999
+#loader crafttweaker reloadableevents
 
 import mods.ctintegration.data.DataUtil;
 import mods.ctintegration.util.RawLogger.logRaw as logRaw;
