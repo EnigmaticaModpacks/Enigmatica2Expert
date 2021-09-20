@@ -581,4 +581,6 @@ craft.remake(<actuallyadditions:item_food:8>, ["pretty",
 
 # Harder Void Stone (was from coal)
 mods.actuallyadditions.AtomicReconstructor.removeRecipe(<actuallyadditions:block_crystal:3>);
+mods.actuallyadditions.AtomicReconstructor.removeRecipe(<actuallyadditions:item_crystal:3>);
 scripts.wrap.actuallyadditions.AtomicReconstructor.addRecipe(<actuallyadditions:block_crystal:3>, <actuallyadditions:block_misc:2>, 1000);
+scripts.wrap.actuallyadditions.AtomicReconstructor.addRecipe(<actuallyadditions:item_crystal:3>, <actuallyadditions:item_misc:5>, 100);

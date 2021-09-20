@@ -1,4 +1,7 @@
 
+#modloaded rustic
+
+import crafttweaker.item.IItemStack;
 
 # Simplified Crushing tub
 recipes.remove(<rustic:crushing_tub>);
@@ -37,3 +40,6 @@ scripts.process.grow(<rustic:olives>, <rustic:olives> * 9, null, null, 0);
 craft.remake(<rustic:crop_stake> * 4, ["#","#","#"], {
   "#": <ore:logWood>, # Oak Log
 });
+
+# Skyblock alt
+mods.rustic.CrushingTub.addRecipe(<liquid:water> * 100, <minecraft:dye:2>, <minecraft:cactus>);

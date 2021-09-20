@@ -363,6 +363,7 @@
     {"meshLevel": 1, "drop": {"name": "biomesoplenty:plant_1"      , "meta": 9}  , "chance": 0.01},
     {"meshLevel": 1, "drop": {"name": "biomesoplenty:plant_1"      , "meta": 11} , "chance": 0.01},
     {"meshLevel": 1, "drop": {"name": "biomesoplenty:plant_1"      , "meta": 11} , "chance": 0.01},
+    {"meshLevel": 1, "drop": {"name": "biomesoplenty:bamboo"       , "meta": 0}  , "chance": 0.01},
     {"meshLevel": 1, "drop": {"name": "biomesoplenty:double_plant" , "meta": 0}  , "chance": 0.01},
     {"meshLevel": 1, "drop": {"name": "biomesoplenty:double_plant" , "meta": 1}  , "chance": 0.01},
     {"meshLevel": 1, "drop": {"name": "biomesoplenty:double_plant" , "meta": 3}  , "chance": 0.01},

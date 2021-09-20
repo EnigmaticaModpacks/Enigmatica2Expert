@@ -254,7 +254,7 @@ val combustionGenerator_fuels = {
 
 /*Inject_js(
 [...
-  (await pdf(fs.readFileSync('config/enderio/recipes/fuels.pdf'))).text
+  (await getPDF('config/enderio/recipes/fuels.pdf'))
   .matchAll(/<recipe name="Fuel: .*\n.*?<fuel fluid="(\w+)" pertick="(\d+)" ticks="(\d+)".*\n.*?<\/recipe>/gm)
 ]
 .sort((a,b)=>b[2]*b[3] - a[2]*a[3])

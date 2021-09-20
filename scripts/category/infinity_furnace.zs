@@ -31,7 +31,7 @@ infinFurnace(<ore:logWood>, <minecraft:coal:1> * 4);
 
 /*Inject_js{
 
-const manualBlacklist = `
+const manualBlacklist = new Set(`
 biomesoplenty:mud
 biomesoplenty:mudball
 ic2:dust:3
@@ -47,22 +47,14 @@ tcomplement:scorched_stairs_brick
 tconstruct:brownstone:3
 tconstruct:seared:3
 thermalfoundation:material:864
-`.trim().split('\n')
-
-const jei_blacklist = config('jei/itemBlacklist.cfg').advanced.itemBlacklist
-
-const itemsCSV = getCSV('config/tellme/items-csv.csv')
-.filter(o=>o['Ore Dict keys'])
-.map(o=>[o['Registry name'], o['Meta/dmg'], o['Ore Dict keys'].split(',')])
-
-const getItemOredict = (id,meta) => itemsCSV.find(([wid,wmeta]) => id===wid && (meta==='*' || wmeta==(meta||0)))?.[2] ?? []
+`.trim().split('\n'))
 
 const filters = [
-  [ '#', 0, (items) => items.some(([id,meta])=> jei_blacklist.includes(id) || jei_blacklist.includes(id+':'+meta) )],
-  ['//', 0, ([[id,meta]]) => manualBlacklist.includes(id + ((meta && meta!=='*') ? ':'+meta : ''))],
+  [ '#', 0, (items) => items.some(([id,meta])=>isJEIBlacklisted(id,meta))],
+  ['//', 0, ([[id,meta]]) => manualBlacklist.has(id + ((meta && meta!=='*') ? ':'+meta : ''))],
   ['##', 0, ([[id,meta],[out_id,out_meta]]) => {
-    const  in_ore = getItemOredict(id,meta)
-    const out_ore = getItemOredict(out_id,out_meta)
+    const  in_ore = [...getItemOredictSet(id,meta).keys()]
+    const out_ore = [...getItemOredictSet(out_id,out_meta).keys()]
     return in_ore.includes('logWood')
       || in_ore.some(o=>o.match(/dust[A-Z].+/)) &&  out_ore.some(o=>o.match(/(ingot|gem)[A-Z].+/))
       || in_ore.some(o=>o.match(/.+Oxide/))     && !out_ore.some(o=>o.match(/.+Oxide/))
@@ -99,9 +91,9 @@ ${filtered.join('\n')}`
 }*/
 
 # Total Furnace recipes registered: 919
-# Filtered by JEI blacklist: 72
+# Filtered by JEI blacklist: 75
 # Filtered manuallly (antidupe): 14
-# Filtered by oredict: 201
+# Filtered by oredict: 200
 infinFurnace(utils.get("actuallyadditions:block_misc", 3), utils.get("actuallyadditions:item_misc", 5));
 infinFurnace(utils.get("actuallyadditions:item_dust", 3), utils.get("minecraft:emerald"));
 ##infinFurnace(utils.get("actuallyadditions:item_dust", 7), utils.get("actuallyadditions:item_misc", 5));
@@ -266,7 +258,7 @@ infinFurnace(utils.get("ic2:crushed"), utils.get("thermalfoundation:material", 1
 #infinFurnace(utils.get("ic2:dust", 8), utils.get("minecraft:iron_ingot"));
 ##infinFurnace(utils.get("ic2:dust", 11), utils.get("nuclearcraft:ingot", 6));
 ##infinFurnace(utils.get("ic2:dust", 15), utils.get("tconstruct:materials"));
-##infinFurnace(utils.get("ic2:dust"), utils.get("thermalfoundation:material", 163));
+#infinFurnace(utils.get("ic2:dust"), utils.get("thermalfoundation:material", 163));
 infinFurnace(utils.get("ic2:misc_resource", 4), utils.get("ic2:crafting"));
 infinFurnace(utils.get("ic2:mug", 1), utils.get("ic2:mug", 2));
 infinFurnace(utils.get("ic2:purified", 1), utils.get("minecraft:gold_ingot"));
@@ -312,7 +304,7 @@ infinFurnace(utils.get("iceandfire:stymphalian_bird_feather", W), utils.get("the
 #infinFurnace(utils.get("immersiveengineering:ore", 3), utils.get("thermalfoundation:material", 130));
 #infinFurnace(utils.get("immersiveengineering:ore", 4), utils.get("thermalfoundation:material", 133));
 infinFurnace(utils.get("immersiveengineering:ore", 5), utils.get("immersiveengineering:metal", 5));
-infinFurnace(utils.get("immersiveengineering:ore"), utils.get("thermalfoundation:material", 128));
+#infinFurnace(utils.get("immersiveengineering:ore"), utils.get("thermalfoundation:material", 128));
 infinFurnace(utils.get("industrialforegoing:dryrubber", W), utils.get("industrialforegoing:plastic"));
 ##infinFurnace(utils.get("integrateddynamics:menril_log_filled"), utils.get("minecraft:coal", 1));
 ##infinFurnace(utils.get("integrateddynamics:menril_log"), utils.get("minecraft:coal", 1));
@@ -736,7 +728,7 @@ infinFurnace(utils.get("netherendingores:ore_nether_vanilla"), utils.get("minecr
 #infinFurnace(utils.get("netherendingores:ore_other_1", 1), utils.get("minecraft:quartz"));
 infinFurnace(utils.get("netherendingores:ore_other_1", 4), utils.get("tconstruct:ingots"));
 #infinFurnace(utils.get("netherendingores:ore_other_1", 5), utils.get("tconstruct:ingots"));
-infinFurnace(utils.get("netherendingores:ore_other_1"), utils.get("minecraft:quartz"));
+#infinFurnace(utils.get("netherendingores:ore_other_1"), utils.get("minecraft:quartz"));
 ##infinFurnace(utils.get("nuclearcraft:americium", 1), utils.get("nuclearcraft:americium"));
 ##infinFurnace(utils.get("nuclearcraft:americium", 3), utils.get("nuclearcraft:americium", 2));
 ##infinFurnace(utils.get("nuclearcraft:americium", 5), utils.get("nuclearcraft:americium", 4));

@@ -160,8 +160,8 @@ craft.remake(<cyclicmagic:charm_void>, ["pretty",
   "◊ § ◊",
   "▲ ◊ ▲"], {
   "▲": <ore:dustEnderEye>,          # Ender Eye Dust
-  "§": <randomthings:slimecube>,    # Slime Cube
-  "◊": <ore:gemPearl>,              # Shulker Pearl
+  "§": <ore:dyePurple>,
+  "◊": <ore:quicksilver>,
 });
 
 # [Sailor_Charm] from [Heart_Crystal_Shard][+2]

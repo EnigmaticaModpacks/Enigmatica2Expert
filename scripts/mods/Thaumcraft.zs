@@ -175,3 +175,17 @@ scripts.wrap.astralsorcery.Altar.addConstellationAltarRecipe(
   "◊": <ore:gemTanzanite>,                  # Tanzanite
 	}).shapeless()
 );
+
+
+// ---------------------------
+// No-exploration recipe
+for aspect, ingr in {
+  aer     : <minecraft:feather>,
+  terra   : <minecraft:mossy_cobblestone>,
+  ignis   : <minecraft:blaze_powder>,
+  aqua    : <minecraft:potion>.withTag({Potion: "minecraft:water"}),
+  ordo    : <minecraft:netherbrick>,
+  perditio: <minecraft:gunpowder>,
+} as IItemStack[string] {
+  mods.rustic.Condenser.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: aspect}]}), <thaumcraft:nugget:9>, ingr);
+}

@@ -130,3 +130,9 @@ craft.remake(<animania:block_hamster_wheel>, ["pretty",
     "╱": <ore:stickIron>, # Iron Rod
     "S": <ore:slabStone>  # Stone Slab
 });
+
+# Skyblock Alt
+scripts.wrap.tconstruct.Casting.addBasinRecipe(<animania:wild_hive>, <architecturecraft:shape>.withTag({Shape: 33, BaseName: "minecraft:planks"}, false), <liquid:oliveoil>, 1000, true, 100);
+scripts.wrap.tconstruct.Casting.addBasinRecipe(<animania:wild_hive>, <architecturecraft:shape>.withTag({Shape: 33, BaseName: "minecraft:planks"}, false), <liquid:animania_honey>, 1000, true, 100);
+scripts.wrap.tconstruct.Casting.addBasinRecipe(<animania:wild_hive>, <architecturecraft:shape>.withTag({Shape: 33, BaseName: "minecraft:planks"}, false), <liquid:for.honey>, 1000, true, 100);
+scripts.wrap.tconstruct.Casting.addBasinRecipe(<animania:wild_hive>, <architecturecraft:shape>.withTag({Shape: 33, BaseName: "minecraft:planks"}, false), <liquid:honey>, 1000, true, 100);

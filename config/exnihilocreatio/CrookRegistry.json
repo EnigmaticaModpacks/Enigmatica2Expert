@@ -15,7 +15,16 @@
         "amount": 1,
         "meta": 0
       },
-      "chance": 0.01,
+      "chance": 0.02,
+      "fortuneChance": 0.0
+    },
+    {
+      "stack": {
+        "name": "rustic:sapling",
+        "amount": 1,
+        "meta": 0
+      },
+      "chance": 0.02,
       "fortuneChance": 0.0
     },
     {
@@ -24,7 +33,7 @@
         "amount": 1,
         "meta": 1
       },
-      "chance": 0.01,
+      "chance": 0.02,
       "fortuneChance": 0.0
     }
   ],

@@ -133,7 +133,7 @@ scripts.wrap.extendedcrafting.TableCrafting.addShapeless(
   .filter(o=>o['Ore Dict keys'].split(',').includes('listAllmeatraw'))
   .map(o=>itemize(o['Registry name'], o['Meta/dmg']))
 	.sort(naturalSort)
-  .map(o=>`    ${isBlacklisted(o)?'#':''}<${o}>,`)
+  .map(o=>`    ${isJEIBlacklisted(o)?'#':''}<${o}>,`)
 )*/
     <animania:raw_chevon>,
     <animania:raw_frog_legs>,

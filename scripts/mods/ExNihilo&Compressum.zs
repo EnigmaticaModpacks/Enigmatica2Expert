@@ -103,6 +103,15 @@ craft.remake(<exnihilocreatio:hive>, ["pretty",
 	b: <rustic:bee>
 });
 
+craft.remake(<exnihilocreatio:hive> * 2, ["pretty",
+  "B B B",
+  "b H b",
+  "B B B"], {
+  B: <ore:itemBeeswax>,    # Beeswax
+  H: <harvestcraft:beehive>,
+	b: <rustic:bee>
+});
+
 // Remove Burn Time to prevent confusing in JEI categories
 furnace.setFuel(<exnihilocreatio:hive:1>, 0);
 

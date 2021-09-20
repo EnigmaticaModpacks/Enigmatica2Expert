@@ -14,6 +14,7 @@ import scripts.craft.grid.Grid;
 	recipes.remove(<immersiveengineering:material:1>);
 	recipes.remove(<immersiveengineering:material:2>);
 	recipes.remove(<immersiveengineering:material:3>);
+	utils.rh(<immersiveengineering:material:24>);
 
 # Removing Recycling recipes that produce IE Iron Nuggets
 	mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:29>);

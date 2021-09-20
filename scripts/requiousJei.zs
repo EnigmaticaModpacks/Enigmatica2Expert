@@ -245,8 +245,8 @@ x.setJEIFluidSlot(0, 0, 'f1');
 
 static meteors as string[][] = [
 /*Inject_js(
-fs.readdirSync('config/bloodmagic/meteors')
-.map(filename => JSON.parse(loadText('config/bloodmagic/meteors/' + filename)))
+glob.sync('config/bloodmagic/meteors/*.json')
+.map(loadJson)
 .map(f=>
   [
   `${f.catalystStack.registryName.domain}:${f.catalystStack.registryName.path}`,
@@ -254,7 +254,7 @@ fs.readdirSync('config/bloodmagic/meteors')
   f.cost,
   ...f.components.map(c=>c.oreName.substring(3))
   ]
- .map(s=>`"${s}"`).join(', ')
+  .map(s=>`"${s}"`).join(', ')
 ).map(s=>`[${s}]`).join(',\n')
 )*/
 ["minecraft:iron_block", "0", "600000", "Iron", "Copper", "Tin", "Silver", "Lead", "Gold", "Lapis", "Redstone", "Aluminum"],

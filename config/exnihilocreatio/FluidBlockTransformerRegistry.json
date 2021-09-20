@@ -134,5 +134,20 @@
     "fluidName": "lava",
     "input": "appliedenergistics2:material:45",
     "output": "appliedenergistics2:sky_stone_block:0"
+  },
+  {
+    "fluidName": "animania_honey",
+    "input": "minecraft:hay_block",
+    "output": "harvestcraft:beehive"
+  },
+  {
+    "fluidName": "for.honey",
+    "input": "minecraft:hay_block",
+    "output": "harvestcraft:beehive"
+  },
+  {
+    "fluidName": "honey",
+    "input": "minecraft:hay_block",
+    "output": "harvestcraft:beehive"
   }
 ]
