@@ -4421,26 +4421,26 @@
       "addonID": 281657,
       "gameInstanceID": "06685845-4f98-4fe1-bf3c-da90768e9d32",
       "installedFile": {
-        "id": 3447697,
-        "displayName": "capabilityadapter-1.1.2.jar",
-        "fileName": "capabilityadapter-1.1.2.jar",
-        "fileDate": "2021-09-03T02:28:53.677Z",
-        "fileLength": 81747,
+        "id": 3196507,
+        "displayName": "capabilityadapter-1.1.1.jar",
+        "fileName": "capabilityadapter-1.1.1.jar",
+        "fileDate": "2021-02-08T04:45:13.493Z",
+        "fileLength": 81051,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3447/697/capabilityadapter-1.1.2.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3196/507/capabilityadapter-1.1.1.jar",
         "isAlternate": false,
-        "alternateFileId": 3447699,
+        "alternateFileId": 3196508,
         "dependencies": [
           {
             "id": 0,
-            "addonId": 248453,
+            "addonId": 223794,
             "type": 3,
             "fileId": 0
           },
           {
             "id": 0,
-            "addonId": 223794,
+            "addonId": 248453,
             "type": 3,
             "fileId": 0
           }
@@ -4449,13 +4449,13 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 404873344,
+            "fingerprint": 1845370366,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "me",
-            "fingerprint": 2692590319,
+            "fingerprint": 2025992454,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -4467,7 +4467,7 @@
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 3593066685,
+            "fingerprint": 3948304252,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -4478,7 +4478,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2315714575,
+        "packageFingerprint": 3674945999,
         "gameVersion": [
           "1.12",
           "1.12.1",
@@ -4494,11 +4494,11 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "capabilityadapter-1.1.2.jar"
+        "FileNameOnDisk": "capabilityadapter-1.1.1.jar"
       },
       "dateInstalled": "2020-02-05T17:37:14.6848133Z",
-      "dateUpdated": "2021-09-07T09:22:15.1357832Z",
-      "dateLastUpdateAttempted": "2021-09-07T09:22:15.1357832Z",
+      "dateUpdated": "2021-09-19T07:37:42.0241986Z",
+      "dateLastUpdateAttempted": "2021-09-19T07:37:42.0241986Z",
       "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
@@ -5506,96 +5506,6 @@
       "dateLastUpdateAttempted": "2020-06-19T08:11:05.5295284Z",
       "status": 5,
       "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
-      "addonID": 269398,
-      "gameInstanceID": "06685845-4f98-4fe1-bf3c-da90768e9d32",
-      "installedFile": {
-        "id": 2643976,
-        "displayName": "DimensionStages-1.12.2-2.0.23.jar",
-        "fileName": "DimensionStages-1.12.2-2.0.23.jar",
-        "fileDate": "2018-12-03T23:14:30.2Z",
-        "fileLength": 18251,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2643/976/DimensionStages-1.12.2-2.0.23.jar",
-        "isAlternate": false,
-        "alternateFileId": 2643977,
-        "dependencies": [
-          {
-            "id": 0,
-            "addonId": 239197,
-            "type": 3,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 268655,
-            "type": 3,
-            "fileId": 0
-          }
-        ],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 1100308284,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "LICENSE",
-            "fingerprint": 3634485962,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 3594345772,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "mcmod.info",
-            "fingerprint": 2761705975,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "net",
-            "fingerprint": 3194936940,
-            "type": 0,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 2857534586,
-        "gameVersion": [
-          "1.12.2"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "DimensionStages-1.12.2-2.0.23.jar"
-      },
-      "dateInstalled": "2021-08-10T19:22:43.0006405Z",
-      "dateUpdated": "2021-08-10T19:22:43.0445235Z",
-      "dateLastUpdateAttempted": "2021-08-10T19:22:43.0445235Z",
-      "status": 5,
-      "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
       "isModified": false,
@@ -19257,14 +19167,14 @@
       "addonID": 284350,
       "gameInstanceID": "06685845-4f98-4fe1-bf3c-da90768e9d32",
       "installedFile": {
-        "id": 3063275,
-        "displayName": "athenaeum-1.12.2-1.19.2.jar",
-        "fileName": "athenaeum-1.12.2-1.19.2.jar",
-        "fileDate": "2020-09-23T16:18:30.743Z",
-        "fileLength": 330344,
+        "id": 3466382,
+        "displayName": "athenaeum-1.12.2-1.19.3.jar",
+        "fileName": "athenaeum-1.12.2-1.19.3.jar",
+        "fileDate": "2021-09-20T00:03:46.38Z",
+        "fileLength": 330435,
         "releaseType": 2,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3063/275/athenaeum-1.12.2-1.19.2.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3466/382/athenaeum-1.12.2-1.19.3.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -19272,13 +19182,13 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2353244547,
+            "fingerprint": 804796779,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 3278673306,
+            "fingerprint": 2645600320,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -19290,7 +19200,7 @@
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 4091768551,
+            "fingerprint": 2160335240,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -19301,7 +19211,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 3585388275,
+        "packageFingerprint": 558402289,
         "gameVersion": [
           "Forge",
           "1.12.2"
@@ -19315,12 +19225,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "athenaeum-1.12.2-1.19.2.jar"
+        "FileNameOnDisk": "athenaeum-1.12.2-1.19.3.jar"
       },
       "dateInstalled": "2020-07-21T11:49:52.5655652Z",
-      "dateUpdated": "2020-10-12T17:15:41.6058995Z",
-      "dateLastUpdateAttempted": "2020-10-12T17:15:41.6058995Z",
-      "status": 5,
+      "dateUpdated": "2021-09-20T11:30:23.107541Z",
+      "dateLastUpdateAttempted": "2021-09-20T11:30:23.107541Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -24440,7 +24350,7 @@
       "dateInstalled": "2021-02-18T18:23:56.9282565Z",
       "dateUpdated": "2021-09-15T08:03:07.2528098Z",
       "dateLastUpdateAttempted": "2021-09-15T08:03:07.2528098Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -27427,7 +27337,7 @@
       "dateInstalled": "2020-05-31T19:58:23.9425185Z",
       "dateUpdated": "2021-09-15T19:07:21.9697204Z",
       "dateLastUpdateAttempted": "2021-09-15T19:07:21.9697204Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -29041,14 +28951,14 @@
       "addonID": 257814,
       "gameInstanceID": "06685845-4f98-4fe1-bf3c-da90768e9d32",
       "installedFile": {
-        "id": 3437866,
-        "displayName": "CreativeCore_v1.10.63_mc1.12.2.jar",
-        "fileName": "CreativeCore_v1.10.63_mc1.12.2.jar",
-        "fileDate": "2021-08-24T18:34:10.387Z",
-        "fileLength": 1289902,
+        "id": 3467502,
+        "displayName": "CreativeCore_v1.10.64_mc1.12.2.jar",
+        "fileName": "CreativeCore_v1.10.64_mc1.12.2.jar",
+        "fileDate": "2021-09-21T08:21:16.817Z",
+        "fileLength": 1289953,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3437/866/CreativeCore_v1.10.63_mc1.12.2.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3467/502/CreativeCore_v1.10.64_mc1.12.2.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -29068,7 +28978,7 @@
           },
           {
             "foldername": "com",
-            "fingerprint": 2854922274,
+            "fingerprint": 2103034958,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -29079,7 +28989,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 669045958,
+        "packageFingerprint": 3058122146,
         "gameVersion": [
           "1.12.2"
         ],
@@ -29092,12 +29002,12 @@
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "CreativeCore_v1.10.63_mc1.12.2.jar"
+        "FileNameOnDisk": "CreativeCore_v1.10.64_mc1.12.2.jar"
       },
       "dateInstalled": "2020-04-23T09:32:25.2795745Z",
-      "dateUpdated": "2021-08-25T11:57:17.589564Z",
-      "dateLastUpdateAttempted": "2021-08-25T11:57:17.589564Z",
-      "status": 5,
+      "dateUpdated": "2021-09-21T10:38:14.9300963Z",
+      "dateLastUpdateAttempted": "2021-09-21T10:38:14.9300963Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -29273,14 +29183,14 @@
       "addonID": 257818,
       "gameInstanceID": "06685845-4f98-4fe1-bf3c-da90768e9d32",
       "installedFile": {
-        "id": 3445700,
-        "displayName": "LittleTiles_v1.5.21_mc1.12.2.jar",
-        "fileName": "LittleTiles_v1.5.21_mc1.12.2.jar",
-        "fileDate": "2021-09-01T09:07:32.813Z",
-        "fileLength": 2241831,
+        "id": 3467543,
+        "displayName": "LittleTiles_v1.5.22_mc1.12.2.jar",
+        "fileName": "LittleTiles_v1.5.22_mc1.12.2.jar",
+        "fileDate": "2021-09-21T10:11:37.623Z",
+        "fileLength": 2247099,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3445/700/LittleTiles_v1.5.21_mc1.12.2.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3467/543/LittleTiles_v1.5.22_mc1.12.2.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
@@ -29307,7 +29217,7 @@
           },
           {
             "foldername": "com",
-            "fingerprint": 3281263460,
+            "fingerprint": 2083956357,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -29318,7 +29228,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 1450356025,
+        "packageFingerprint": 484824972,
         "gameVersion": [
           "1.12.2"
         ],
@@ -29331,12 +29241,12 @@
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "LittleTiles_v1.5.21_mc1.12.2.jar"
+        "FileNameOnDisk": "LittleTiles_v1.5.22_mc1.12.2.jar"
       },
       "dateInstalled": "2021-06-24T06:16:29.6931072Z",
-      "dateUpdated": "2021-09-07T09:22:22.7244315Z",
-      "dateLastUpdateAttempted": "2021-09-07T09:22:22.7244315Z",
-      "status": 5,
+      "dateUpdated": "2021-09-21T10:38:00.1370974Z",
+      "dateLastUpdateAttempted": "2021-09-21T10:38:00.1370974Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -31906,14 +31816,14 @@
       "addonID": 412013,
       "gameInstanceID": "06685845-4f98-4fe1-bf3c-da90768e9d32",
       "installedFile": {
-        "id": 3440604,
-        "displayName": "[FORGE 1.12] Ears v1.2.3",
-        "fileName": "ears-forge-1.12-1.2.3.jar",
-        "fileDate": "2021-08-27T09:48:12.937Z",
-        "fileLength": 101040,
+        "id": 3466455,
+        "displayName": "[FORGE 1.12] Ears v1.2.4",
+        "fileName": "ears-forge-1.12-1.2.4.jar",
+        "fileDate": "2021-09-20T02:21:20.993Z",
+        "fileLength": 282415,
         "releaseType": 2,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3440/604/ears-forge-1.12-1.2.3.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3466/455/ears-forge-1.12-1.2.4.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -31921,19 +31831,19 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 841629893,
+            "fingerprint": 3853373113,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 2837908047,
+            "fingerprint": 2383226415,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 144792946,
+            "fingerprint": 1780369473,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -31944,7 +31854,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2735721992,
+        "packageFingerprint": 4000771701,
         "gameVersion": [
           "Forge",
           "1.12.2"
@@ -31958,12 +31868,12 @@
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "ears-forge-1.12-1.2.3.jar"
+        "FileNameOnDisk": "ears-forge-1.12-1.2.4.jar"
       },
       "dateInstalled": "2021-09-07T09:22:45.7844819Z",
-      "dateUpdated": "2021-09-07T09:22:45.8024318Z",
-      "dateLastUpdateAttempted": "2021-09-07T09:22:45.8024318Z",
-      "status": 5,
+      "dateUpdated": "2021-09-20T11:30:19.7336087Z",
+      "dateLastUpdateAttempted": "2021-09-20T11:30:19.7336087Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -33024,20 +32934,26 @@
       "addonID": 476863,
       "gameInstanceID": "06685845-4f98-4fe1-bf3c-da90768e9d32",
       "installedFile": {
-        "id": 3292392,
-        "displayName": "Blood-Smeltery-1.12.2-1.1.1.jar",
-        "fileName": "Blood-Smeltery-1.12.2-1.1.1.jar",
-        "fileDate": "2021-04-28T22:48:18.423Z",
-        "fileLength": 55699,
+        "id": 3461109,
+        "displayName": "Blood-Smeltery-1.12.2-1.1.2.jar",
+        "fileName": "Blood-Smeltery-1.12.2-1.1.2.jar",
+        "fileDate": "2021-09-16T12:59:59.663Z",
+        "fileLength": 61164,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3292/392/Blood-Smeltery-1.12.2-1.1.1.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3461/109/Blood-Smeltery-1.12.2-1.1.2.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
             "id": 0,
-            "addonId": 224791,
+            "addonId": 463826,
+            "type": 3,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 74072,
             "type": 3,
             "fileId": 0
           },
@@ -33049,20 +32965,14 @@
           },
           {
             "id": 0,
-            "addonId": 74072,
-            "type": 3,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 463826,
-            "type": 3,
-            "fileId": 0
-          },
-          {
-            "id": 0,
             "addonId": 272671,
             "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 224791,
+            "type": 3,
             "fileId": 0
           },
           {
@@ -33076,13 +32986,13 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1541622769,
+            "fingerprint": 3495377515,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "net",
-            "fingerprint": 277431950,
+            "fingerprint": 815920317,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -33105,7 +33015,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 173473424,
+        "packageFingerprint": 815433942,
         "gameVersion": [
           "1.12.2"
         ],
@@ -33118,11 +33028,11 @@
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "Blood-Smeltery-1.12.2-1.1.1.jar"
+        "FileNameOnDisk": "Blood-Smeltery-1.12.2-1.1.2.jar"
       },
       "dateInstalled": "2021-05-12T11:49:01.7143967Z",
-      "dateUpdated": "2021-05-12T11:49:01.7233741Z",
-      "dateLastUpdateAttempted": "2021-05-12T11:49:01.7233741Z",
+      "dateUpdated": "2021-09-19T07:40:43.6940586Z",
+      "dateLastUpdateAttempted": "2021-09-19T07:40:43.6940586Z",
       "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
@@ -36545,6 +36455,77 @@
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
       "status": 5,
       "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 251301,
+      "gameInstanceID": "06685845-4f98-4fe1-bf3c-da90768e9d32",
+      "installedFile": {
+        "id": 2659489,
+        "displayName": "TS2K16-1.2.10.jar",
+        "fileName": "TS2K16-1.2.10.jar",
+        "fileDate": "2019-01-13T02:38:25.19Z",
+        "fileLength": 95669,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2659/489/TS2K16-1.2.10.jar",
+        "isAlternate": false,
+        "alternateFileId": 2659491,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 680467762,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "ts2k16",
+            "fingerprint": 2061391986,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "mcmod.info",
+            "fingerprint": 1915997799,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "title.png",
+            "fingerprint": 4043618256,
+            "type": 0,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 3163397084,
+        "gameVersion": [
+          "1.12.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "TS2K16-1.2.10.jar"
+      },
+      "dateInstalled": "2021-09-20T11:31:03.4848591Z",
+      "dateUpdated": "2021-09-20T11:31:03.4868654Z",
+      "dateLastUpdateAttempted": "2021-09-20T11:31:03.4868654Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
       "isModified": false,
