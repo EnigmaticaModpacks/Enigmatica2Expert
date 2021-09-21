@@ -1,6 +1,55 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
 
+# v0.33
+
+## 🟢 New Mods
+
+Icon | Summary | Reason
+----:|:--------| ------
+<img src="https://media.forgecdn.net/avatars/thumbnails/51/174/256/256/636100833430881872.png" width="50"> | 🟫 [**Twerk Sim 2K16**](https://www.curseforge.com/minecraft/mc-mods/twerk-sim-2k16) <sup><sub>TS2K16-1.2.10.jar</sub></sup> <br> Work it, twerk it, grow that wood! | Would help for skyblock mode but wouldn't harm for main mode
+
+## 🔴 Removed Mods
+
+Icon | Summary | Reason
+----:|:--------| ------
+<img src="https://media.forgecdn.net/avatars/thumbnails/101/718/256/256/636324883919963872.png" width="50"> | 🟫 [**Dimension Stages**](https://www.curseforge.com/minecraft/mc-mods/dimension-stages) <sup><sub>DimensionStages-1.12.2-2.0.23.jar</sub></sup> <br> Allows access to dimensions to be restricted based on stages. | All mod functionality replaced with `𝓩𝒮`
+
+
+## ✏️ Recipes
+
+- **New recipes:**
+  - ![](https://git.io/Jz84B "Bamboo")
+    ![](https://git.io/Jz84z "Olive Sapling")
+    ![](https://git.io/Jz84R "Beehive")
+    ![](https://git.io/Jz848 "Beeswax")
+    ![](https://git.io/Jz840 "Bee Nest")
+    ![](https://git.io/Jz84E "Vis Crystal")
+  
+- **Cheaper:**
+  - ![](https://git.io/Jz844 "Void Charm")
+    ![](https://git.io/JtqT3 "Artificial Hive")
+
+- **Misc Changes:**
+  - ![](https://git.io/Jz84l "Void Crystal") fix craft from ![](https://git.io/JtJfN "Coal") -> ![](https://git.io/JtJkX "Black Quartz")
+  - ![](https://git.io/Jz84u "Water") from ![](https://git.io/Jz84g "Cactus")
+
+## 🔵 Mods
+
+- ### 🐀 Rats
+
+  - x2 increase rat spawn rate
+
+- ### 👨‍🏭 Mekanism
+
+  - ![](https://git.io/JRLSc "Osmium Ore") Since it based in bedrock, drop it's Hardness to default value
+
+
+
+
+
+
+
 # v0.32
 
 ## ✏️ Recipes
