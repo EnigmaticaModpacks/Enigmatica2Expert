@@ -539,3 +539,11 @@ craft.make(<contenttweaker:conglomerate_of_coal>, ["pretty",
   "i": <forestry:bituminous_peat>,      # Bituminous Peat
   "L": <rats:little_black_squash_balls> # Little Black Squash Balls
 });
+
+# Red sand harder (for sieves)
+mods.tconstruct.Casting.removeBasinRecipe(<minecraft:sand:1>);
+scripts.wrap.tconstruct.Casting.addBasinRecipe(<minecraft:sand:1>, <exnihilocreatio:block_granite_crushed>, <liquid:blood>, 10);
+
+# Redstone from Sool-covered version
+mods.harvestcrafttweaker.HarvestCraftTweaker.addWaterFilter(<deepmoblearning:soot_covered_redstone> * 8, <actuallyadditions:item_misc:10> * 8, <jaopca:item_dusttinyredstone> * 64);
+scripts.wrap.thermalexpansion.Transposer.addFillRecipe(<minecraft:redstone>, <deepmoblearning:soot_covered_redstone>, <fluid:water> * 10, 100);

@@ -54,12 +54,15 @@ addBurstSeedRecipe(<enderio:block_infinity>, <bigreactors:dustcyanite>, <mechani
 addBurstSeedRecipe(<enderio:block_infinity>, <forestry:phosphor>      , <mechanics:burst_seed_grainsofinfinity>);
 addBurstSeedRecipe(<contenttweaker:blasted_coal>, <thermalfoundation:material:162>, <mechanics:burst_seed_black_iron>);
 
-# Empty rod remake
-recipes.addShaped(<mechanics:empty_rod>, [
-[<mechanics:heavy_nugget>, <ore:blockGlass>, <mechanics:heavy_nugget>],
-[<mechanics:heavy_nugget>, <ore:blockGlass>, <mechanics:heavy_nugget>],
-[<mechanics:heavy_nugget>, <ore:blockGlass>, <mechanics:heavy_nugget>],
-]);
+# [Empty Rod] from [Glass][+1]
+craft.remake(<mechanics:empty_rod>, ["pretty",
+  "  ▬ ■",
+  "▬ ■ ▬",
+  "■ ▬  "], {
+  "▬": <ore:ingotCarbon>, # Carbon Brick
+  "■": <ore:blockGlass>, # Glass
+});
+
 
 
 # ----------------------------------

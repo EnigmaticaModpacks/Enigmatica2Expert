@@ -108,3 +108,9 @@ scripts.process.squeeze(
 
 # Make Crystal block harder to match its mining level
 <biomesoplenty:crystal>.hardness = 50;
+
+# Skyblock alts Hellbark Sapling and lava squeezing
+scripts.wrap.inworldcrafting.FireCrafting.addRecipe(<biomesoplenty:sapling_1:4>, <ore:sapling>, 30);
+scripts.process.squeeze([<biomesoplenty:log_2:7>], <liquid:lava> * 60, "only: Squeezer MechanicalSqueezer", null);
+scripts.process.squeeze([<biomesoplenty:planks_0:11>], <liquid:lava> * 30, "only: Squeezer MechanicalSqueezer", null);
+scripts.process.squeeze([<biomesoplenty:leaves_3:8>], <liquid:lava> * 30, "only: Squeezer MechanicalSqueezer", null);

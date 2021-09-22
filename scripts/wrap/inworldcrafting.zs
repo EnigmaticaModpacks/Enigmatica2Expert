@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded inworldcrafting
-// Uses of this mod: 15
+// Uses of this mod: 16
 
 
 //####################################################
@@ -59,10 +59,10 @@ zenClass Class_FluidToFluid { zenConstructor() {}
 static FluidToFluid as Class_FluidToFluid = Class_FluidToFluid();
 
 //####################################################
-// Uses of this class: 1
+// Uses of this class: 2
 zenClass Class_FireCrafting { zenConstructor() {}
 
-	// Uses of this method: 1
+	// Uses of this method: 2
 	function addRecipe(output as IItemStack, inputItem as IIngredient) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.inworldcrafting.FireCrafting.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient(inputItem)]));

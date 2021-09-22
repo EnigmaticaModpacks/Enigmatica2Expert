@@ -135,3 +135,10 @@ craft.remake(<twilightforest:twilight_sapling:4>, ["pretty",
   "C": <twilightforest:cicada>,       # Cicada
   "F": <twilightforest:firefly>,      # Firefly
 });
+
+# Twilight worm
+recipes.addShaped("twilightforest_moonworm", <twilightforest:moonworm>, [
+	[<ore:egg>, <tconstruct:slime_channel>, <ore:egg>], 
+	[<tconstruct:slime_channel>, null, null], 
+	[<ore:egg>, <tconstruct:slime_channel>, <exnihilocreatio:item_material:2>]
+]);

@@ -93,3 +93,25 @@ scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <astralsorcery:itemknow
 	[null, BT, BT, CO, CO, IW, IW], 
 	[null, null, null, PC, PC, IW, IW]
 ]);
+
+# [Marble]*8 from [Aquamarine][+1]
+craft.make(<astralsorcery:blockmarble> * 8, ["pretty",
+  "D D D",
+  "D ◊ D",
+  "D D D"], {
+  "D": <ore:stoneDiorite>,  # Diorite
+  "◊": <ore:gemAquamarine>, # Aquamarine
+});
+
+# [Luminous Crafting Table] from [Arcane Workbench][+2]
+recipes.addShaped("Luminous Crafting Table - RecipeAction", <astralsorcery:blockaltar>, scripts.craft.grid.Grid(["pretty",
+  "M n M",
+  "M A M",
+  "M   M"], {
+  "M": <ore:stoneMarble>, # Marble
+  "n": <thaumcraft:nitor_black>, # Black Nitor
+  "A": <thaumcraft:arcane_workbench>, # Arcane Workbench
+}).shaped(), null, function(out,cInfo,player){
+	if(isNull(player)) return;
+	server.commandManager.executeCommand(server, '/astralsorcery research '~player.name~' BASIC_CRAFT');
+});

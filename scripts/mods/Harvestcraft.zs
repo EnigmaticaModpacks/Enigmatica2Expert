@@ -68,6 +68,22 @@ recipes.removeByRecipeName("harvestcraft:honeyitem_foodhoneydrop");
 recipes.removeByRecipeName("harvestcraft:honeyitem_drophoney");
 
 
+# [Fresh Water]*8 from [Water Clay Bucket]
+craft.shapeless(<harvestcraft:freshwateritem> * 8, "~", {
+  "~": <claybucket:claybucket:1>.transformReplace(<claybucket:claybucket>), # Water Clay Bucket
+});
+
+# [Shipping Bin] from [Magical Apple][+2]
+craft.remake(<harvestcraft:shippingbin>, ["pretty",
+  "C # C",
+  "# M #",
+  "C # C"], {
+  "C": <tconstruct:soil:4>,      # Consecrated Soil
+  "#": <forestry:wood_pile>,     # Wood Pile
+  "M": <extrautils2:magicapple>, # Magical Apple
+});
+
+
 # *=======  =======*
 
 # Not Working untill this issue fixed:

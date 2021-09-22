@@ -134,15 +134,6 @@
       "fortuneChance": 0.0
     }
   ],
-  "ore:crushedGranite": [
-    {
-      "item": "minecraft:sand:1",
-      "amount": 1,
-      "miningLevel": 0,
-      "chance": 1.0,
-      "fortuneChance": 0.0
-    }
-  ],
   "minecraft:concrete:0": [
     {
       "item": "minecraft:concrete_powder:0",

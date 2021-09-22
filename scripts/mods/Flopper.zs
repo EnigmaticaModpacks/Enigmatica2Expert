@@ -1,8 +1,11 @@
 #modloaded flopper
 
-recipes.remove(<flopper:flopper>);
 
-recipes.addShaped(<flopper:flopper>, [
-  [<ic2:casing:6>, null, <ic2:casing:6>],
-  [<ic2:casing:6>, null, <ic2:casing:6>],
-  [null, <ic2:casing:6>, null]]);
+# [Flopper] from [Dried Clay][+1]
+craft.remake(<flopper:flopper>, ["pretty",
+  "A   A",
+  "A D A",
+  "  A  "], {
+  "A": <minecraft:stone:6>,     # Polished Andesite
+  "D": <tconstruct:dried_clay>, # Dried Clay
+});

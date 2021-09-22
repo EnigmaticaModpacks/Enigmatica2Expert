@@ -460,12 +460,6 @@ for i in 0 to hippCrafIngredients.length {
 
 ##################
 # WORMS
-# Twilight worm
-recipes.addShaped("twilightforest_moonworm", <twilightforest:moonworm>, [
-	[<ore:animaniaEggs>, <tconstruct:slime_channel>, <ore:animaniaEggs>], 
-	[<tconstruct:slime_channel>, null, null], 
-	[<ore:animaniaEggs>, <tconstruct:slime_channel>, <exnihilocreatio:item_material:2>]
-]);
 
 # Small worm
 recipes.addShaped("iceandfire_deathworm_egg", <iceandfire:iceandfire.deathworm_egg>*3, [

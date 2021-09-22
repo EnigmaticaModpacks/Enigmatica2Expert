@@ -26,7 +26,7 @@ val crushingInMachines = [
 	[<minecraft:end_stone>                , <exnihilocreatio:block_endstone_crushed>  ],
 	[<minecraft:stone:5>                  , <exnihilocreatio:block_andesite_crushed>, <contenttweaker:compressed_andesite>, <contenttweaker:compressed_crushed_andesite>, <biomesoplenty:dried_sand>],
 	[<minecraft:stone:3>                  , <exnihilocreatio:block_diorite_crushed> , <contenttweaker:compressed_diorite>,  <contenttweaker:compressed_crushed_diorite> , <biomesoplenty:white_sand>],
-	[<minecraft:stone:1>                  , <exnihilocreatio:block_granite_crushed> , <contenttweaker:compressed_granite>,  <contenttweaker:compressed_crushed_granite> , <minecraft:sand:1>],
+	[<minecraft:stone:1>                  , <exnihilocreatio:block_granite_crushed> , <contenttweaker:compressed_granite>,  <contenttweaker:compressed_crushed_granite>],
 	[<appliedenergistics2:sky_stone_block>, <exnihilocreatio:block_skystone_crushed>, <contenttweaker:compressed_skystone>, <contenttweaker:compressed_crushed_skystone>],
 ] as IItemStack[][];
 for i, inputArr in crushingInMachines {

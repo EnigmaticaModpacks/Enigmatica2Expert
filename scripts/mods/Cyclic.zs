@@ -702,3 +702,12 @@ craft.remake(<cyclicmagic:book_ender>, ["pretty",
       item.tag.Experience.asInt() >= 10000
     ;}), # Tome of Knowledge
 });
+
+# [Emerald Apple] from [Magical Apple][+1]
+craft.remake(<cyclicmagic:apple_emerald>, ["pretty",
+  "  ◊  ",
+  "◊ M ◊",
+  "  ◊  "], {
+  "◊": <ore:gemEmerald>,         # Emerald
+  "M": <extrautils2:magicapple>, # Magical Apple
+});

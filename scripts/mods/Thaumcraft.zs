@@ -182,9 +182,9 @@ scripts.wrap.astralsorcery.Altar.addConstellationAltarRecipe(
 for aspect, ingr in {
   aer     : <minecraft:feather>,
   terra   : <minecraft:mossy_cobblestone>,
-  ignis   : <minecraft:blaze_powder>,
+  ignis   : <rustic:chili_pepper>,
   aqua    : <minecraft:potion>.withTag({Potion: "minecraft:water"}),
-  ordo    : <minecraft:netherbrick>,
+  ordo    : <advancedrocketry:misc:1>,
   perditio: <minecraft:gunpowder>,
 } as IItemStack[string] {
   mods.rustic.Condenser.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: aspect}]}), <thaumcraft:nugget:9>, ingr);
