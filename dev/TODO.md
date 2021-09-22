@@ -9,6 +9,7 @@ Items that should have more uses:
 ![](https://git.io/JtyNo "Kelp")
 ![](https://git.io/JnAYd "Cobweb")
 ![](https://git.io/JcCWr "Magical Planks")
+[Bottle of Wine]
 
 ### Tier 2
 
@@ -91,6 +92,8 @@ Liquids that should have more uses:
 - [ ] ✏️ Add written books by animals to craft
 - [ ] ✏️ ![](https://git.io/JznPI "Amplifying Tube") remove vanilla recipes
 - [ ] 🚧 Add skyblock client/server changes
+- [ ] 🔄 Blacklist Bedrock Ore for [Mining Laser]
+- [ ] 🔄 [Infin Furnace] (req) front texture empty on client
 
 ---
 
@@ -127,6 +130,7 @@ Liquids that should have more uses:
 - [ ] 🔨 Integrate Plustic laser: https://github.com/Landmaster/PlusTiC/wiki/CraftTweaker-integration
 - [ ] 🔨 Ironwood Add material. Drop Armor from mobs on hit
 - [ ] 🧮 Craft.zs: Add Forestry extensions
+- [ ] 🧮 Craft.zs: [Gold Nugget] to make vanilla prefixes
 - [ ] 🟢 Add [Bansoko](https://www.curseforge.com/minecraft/mc-mods/bansoko) to rename Dank/null `.jar` so it could work with Thaumic Speedup
 - [ ] 🟢 Add [Heat And Climate](https://www.curseforge.com/minecraft/mc-mods/heat-and-climate)
 
