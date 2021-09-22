@@ -1,6 +1,44 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
 
+# v0.33.1
+
+## 📖 Quest Book
+
+- BetterQuesting: Some Quests changes
+
+## ✏️ Recipes
+
+**New recipes:**
+  - ![](https://git.io/Jn5Zz "Cinderpearl")
+    ![](https://git.io/Jz0Vs "Certus Quartz Nugget")
+    ![](https://git.io/Jz0aA "Copper Ore Piece")
+    ![](https://git.io/Jz0aQ "Arid Garden")![](https://git.io/Jz0VZ "Frost Garden")![](https://git.io/Jz0a7 "Shaded Garden")![](https://git.io/Jz0ad "Windy Garden")![](https://git.io/Jz0Vq "Soggy Garden")![](https://git.io/Jz0V8 "Garden Soup")![](https://git.io/Jz0a5 "Tropical Garden")
+    ![](https://git.io/Jz0Vl "Marble")
+    ![](https://git.io/Jz0ah "Luminous Crafting Table")
+    ![](https://git.io/Jz0VL "Fresh Water")
+  
+**Cheaper:**
+  - ![](https://git.io/Jz0VI "Stone Wand")
+    ![](https://git.io/Jz0VT "Iron Wand")
+    ![](https://git.io/Jz0Vc "Emerald Apple")
+    ![](https://git.io/JtNTX "Flopper")
+    ![](https://git.io/Jz0Vm "Moonworm")
+    ![](https://git.io/Jz0Vt "Empty Rod")
+  
+**Harder:**
+  - ![](https://git.io/Jz0VO "Red Sand")
+    ![](https://git.io/Jz0VU "Shipping Bin")
+  
+**Misc Changes:**
+  - ![](https://git.io/Jz0VY "Lava") from ![](https://git.io/Jz0aj "Hellbark Wood")
+  - ![](https://git.io/Jz0aF "Soot-covered Redstone") can be washed
+  - ![](https://git.io/JLjc2 "Dirt") in ![](https://git.io/J3hVE "Wooden Barrel") reworked
+
+
+
+
+
 # v0.33
 
 ## 🟢 New Mods
