@@ -7,8 +7,11 @@
         "visibility:8": "ALWAYS",
         "name:8": "bq.chapter16.name",
         "icon:10": {
-          "id:8": "animania:entity_egg_cow_highland",
+          "id:8": "openblocks:trophy",
           "Count:3": 1,
+          "tag:10": {
+            "entity_id:8": "minecraft:cow"
+          },
           "Damage:2": 0,
           "OreDict:8": ""
         },

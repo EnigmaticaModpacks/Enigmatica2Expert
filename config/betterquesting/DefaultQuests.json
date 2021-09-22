@@ -4412,7 +4412,7 @@
           "snd_complete:8": "minecraft:entity.player.levelup",
           "lockedprogress:1": 1,
           "partySingleReward:8": "false",
-          "tasklogic:8": "AND",
+          "tasklogic:8": "OR",
           "repeattime:3": -1,
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
@@ -4450,6 +4450,23 @@
               "Count:3": 2,
               "Damage:2": 0,
               "OreDict:8": "oreIron"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:iron_ingot",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -73479,6 +73496,88 @@
           }
         }
       }
+    },
+    "943:10": {
+      "questID:3": 943,
+      "preRequisites:11": [
+        718
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "tconstruct:piggybackpack",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Piggybackpack",
+          "desc:8": "The §6Piggybackpack§r is an armor piece that allows §lcarrying§r of mobs and players.\n\n- Use the §6Piggybackpack§r in hand on the entity they want to pick up.\n- For the entity to get off, the §6Piggybackpack§r must be taken off of the player."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "tconstruct:piggybackpack",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "id:8": "minecraft:splash_potion",
+              "Count:3": 1,
+              "tag:10": {
+                "Potion:8": "potioncore:love"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:splash_potion",
+              "Count:3": 1,
+              "tag:10": {
+                "Potion:8": "extrautils2:xu2.love"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "minecraft:lead",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     }
   },
   "questLines:9": {
@@ -78714,6 +78813,13 @@
           "y:3": -81,
           "id:3": 939,
           "sizeY:3": 24
+        },
+        "40:10": {
+          "sizeX:3": 24,
+          "x:3": -47,
+          "y:3": -81,
+          "id:3": 943,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 16,
@@ -78722,8 +78828,11 @@
           "visibility:8": "ALWAYS",
           "name:8": "bq.chapter16.name",
           "icon:10": {
-            "id:8": "animania:entity_egg_cow_highland",
+            "id:8": "openblocks:trophy",
             "Count:3": 1,
+            "tag:10": {
+              "entity_id:8": "minecraft:cow"
+            },
             "Damage:2": 0,
             "OreDict:8": ""
           },
