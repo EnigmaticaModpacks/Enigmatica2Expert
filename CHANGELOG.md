@@ -1,6 +1,39 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
 
+# v0.33.2
+
+## 📖 Quest Book
+
+- Lower Thaumcraft Gate requirment
+
+## ✏️ Recipes
+
+**New recipes:**
+- ![](https://git.io/JuAPe "Essence Ore")
+  ![](https://git.io/JzVqs "Ferrous-Juniper Sapling")
+  ![](https://git.io/JzVqT "Spawn Stymphalian Bird")
+
+**Cheaper:**
+- ![](https://git.io/JOGg3 "Bituminous Peat")
+  ![](https://git.io/JzVqm "Inferium Watering Can")![](https://git.io/JzVqY "Prudentium Watering Can")![](https://git.io/JzVqq "Intermedium Watering Can")![](https://git.io/JzVqU "Superium Watering Can")![](https://git.io/JzVqt "Supremium Watering Can")
+  ![](https://git.io/JzVqk "Precious Emerald")
+  ![](https://git.io/JzVq3 "Slime Cube")
+  ![](https://git.io/JtJvV "Nature Core")
+  ![](https://git.io/JtJFW "Rat Upgrade: Aristoc-Rat")
+  ![](https://git.io/JCuh5 "Empowered Phosphor")
+
+**Misc Changes:**
+- ![](https://git.io/JzVqI "Crushed Endstone")![](https://git.io/JsfOp "White Sand") more output in ![](https://git.io/JOv90 "Sieve")
+- ![](https://git.io/JzVqO "Garbage Pile") Added cool recipe and then can be siften in ![](https://git.io/JOv90 "Sieve")
+- ![](https://git.io/JLjc2 "Dirt") cheaper in ![](https://git.io/J3hVE "Wooden Barrel")
+- ![](https://git.io/JzVqL "Iron Ore Piece") add craft in ![](https://git.io/JsegO "Drying Basin")
+
+
+
+
+
+
 # v0.33.1
 
 ## 📖 Quest Book
