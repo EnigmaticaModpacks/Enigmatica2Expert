@@ -7,7 +7,7 @@
 -11325,-11325,"Deep Dark","false","false","com.rwtema.extrautils2.dimensions.deep_dark.WorldProviderDeepDark"
 -343800852,-343800852,"Spectre","true","true","lumien.randomthings.handler.spectre.SpectreWorldProvider"
 -8,-8,"Ratlantis","false","false","com.github.alexthe666.rats.server.world.WorldProviderRatlantis"
-7,7,"twilight_forest","false","true","twilightforest.world.WorldProviderTwilightForest"
+7,7,"twilight_forest","false","false","twilightforest.world.WorldProviderTwilightForest"
 -2,3,"space","false","false","zmaster587.advancedRocketry.world.provider.WorldProviderSpace"
 2,-11,"Storage Cell","true","true","appeng.spatial.StorageWorldProvider"
 100,2,"planet","false","false","zmaster587.advancedRocketry.world.provider.WorldProviderPlanet"
