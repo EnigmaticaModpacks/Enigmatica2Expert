@@ -36,8 +36,8 @@
         "autoclaim:1": 0,
         "repeat_relative:1": 1,
         "ismain:1": 0,
-        "name:8": "Piggybackpack",
-        "desc:8": "The §6Piggybackpack§r is an armor piece that allows §lcarrying§r of mobs and players.\n\n- Use the §6Piggybackpack§r in hand on the entity they want to pick up.\n- For the entity to get off, the §6Piggybackpack§r must be taken off of the player."
+        "name:8": "bq.quest943.name",
+        "desc:8": "bq.quest943.desc"
       }
     },
     "tasks:9": {
