@@ -187,5 +187,8 @@ for aspect, ingr in {
   ordo    : <advancedrocketry:misc:1>,
   perditio: <minecraft:gunpowder>,
 } as IItemStack[string] {
-  mods.rustic.Condenser.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: aspect}]}), <thaumcraft:nugget:9>, ingr);
+	mods.rustic.Condenser.addRecipe(
+		<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: aspect}]}),
+		[<thaumcraft:nugget:9>, ingr], null, null
+	);
 }

@@ -70,6 +70,10 @@ recipes.addShapeless(<endreborn:block_decorative_lormyte>, [LS,LS,LS,LS,LS,LS,LS
 # Fix automatic recipe
 mods.actuallyadditions.Crusher.removeRecipe(<endreborn:death_essence>);
 
+# Skyblock Alternative
+# [Essence Ore] from [Molten Obsidian Bucket][+1]
+scripts.wrap.tconstruct.Casting.addBasinRecipe(<endreborn:block_essence_ore>, <endreborn:block_decorative_lormyte>, <liquid:obsidian>, 144, true);
+
 # [Simple Machine Chassis] from [Hardened Cell Frame][+3]
 craft.remake(<enderio:item_material>, ["pretty",
   "□ ¤ □",

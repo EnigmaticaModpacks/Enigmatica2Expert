@@ -30,8 +30,8 @@ recipes.addShaped("ender_bucket2",
 # Clear reinforced bucket
 utils.clearFluid(<randomthings:reinforcedenderbucket>);
 
-# Precious emerald from emerald in blueslime
-scripts.wrap.inworldcrafting.FluidToItem.transform(<randomthings:ingredient:9> * 2, <fluid:blueslime>, [<ore:oreEmerald>]);
+# Add recipe
+scripts.wrap.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(<randomthings:ingredient:9> * 9, <minecraft:emerald_block>);
 
 # Floo dust
 remakeEx(<randomthings:ingredient:7>*8, [
@@ -175,14 +175,13 @@ craft.reshapeless(<randomthings:ingredient:13>, "F☺▲", {
   "☺": <actuallyadditions:item_misc:22>, # Bio Coal
 });
 
-# [Slime_Cube] from [Mending_Moss][+2]
+# [Slime Cube] from [Mending Moss][+1]
 craft.remake(<randomthings:slimecube>, ["pretty",
-  "s R s",
-  "R M R",
-  "s R s"], {
-  "R": <rats:rat_diamond>,       # Rat Diamond
-  "s": <ore:slimecrystalGreen>,  # Green Slime Crystal
-  "M": <tconstruct:materials:19> # Mending Moss
+  "  s  ",
+  "s M s",
+  "  s  "], {
+  "s": <ore:slimecrystal> | <ore:slimecrystalGreen>, # Green Slime Crystal
+  "M": <tconstruct:materials:19>, # Mending Moss
 });
 
 # [Peace_Candle] from [Crystallized_Amber][+2]
@@ -306,14 +305,14 @@ utils.rh(<randomthings:spectresword>);
 
 # ----------------------------
 
-# [Nature_Core] from [Soulstone][+2]
-craft.make(<randomthings:naturecore>, ["pretty",
+# [Nature Core] from [Experience Pylon][+2]
+craft.remake(<randomthings:naturecore>, ["pretty",
   "# § #",
-  "§ S §",
+  "§ E §",
   "# § #"], {
-  "#": <ore:logSequoia>, # Any sequoia
-  "S": <cyclicmagic:soulstone>, # Soulstone
-  "§": <randomthings:slimecube> # Slime Cube
+  "#": <twilightforest:twilight_log:*>,
+  "§": <randomthings:slimecube>,     # Slime Cube
+  "E": <cyclicmagic:exp_pylon>,      # Experience Pylon
 });
 
 # Cheaper (used ender pearl)

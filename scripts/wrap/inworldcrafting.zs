@@ -19,10 +19,10 @@ import thaumcraft.aspect.CTAspectStack;
 
 
 //####################################################
-// Uses of this class: 10
+// Uses of this class: 9
 zenClass Class_FluidToItem { zenConstructor() {}
 
-	// Uses of this method: 10
+	// Uses of this method: 9
 	function transform(output as IItemStack, inputFluid as ILiquidStack, inputItems as IIngredient[]) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.inworldcrafting.FluidToItem.transform'~
 			serialize.args([serialize.IItemStack(output), serialize.ILiquidStack(inputFluid), serialize.IIngredient__(inputItems)]));
@@ -79,10 +79,10 @@ zenClass Class_FireCrafting { zenConstructor() {}
 static FireCrafting as Class_FireCrafting = Class_FireCrafting();
 
 //####################################################
-// Uses of this class: 3
+// Uses of this class: 4
 zenClass Class_ExplosionCrafting { zenConstructor() {}
 
-	// Uses of this method: 3
+	// Uses of this method: 4
 	function explodeBlockRecipe(output as IItemStack, blockStack as IItemStack) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(blockStack)]));

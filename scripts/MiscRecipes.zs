@@ -519,15 +519,9 @@ craft.make(<contenttweaker:conglomerate_of_sun> * 8, ["pretty",
 # Saturate Phosphor
 scripts.process.fill(<contenttweaker:empowered_phosphor>, <fluid:syngas> * 1000, <contenttweaker:saturated_phosphor>, "only: MechanicalDryingBasin NCInfuser Transposer");
 
-# [empowered_phosphor*4] from [Bituminous_Peat][+2]
-craft.remake(<contenttweaker:empowered_phosphor> * 4, ["pretty",
-  "i P i",
-  "P B P",
-  "i P i"], {
-  "P": <forestry:phosphor>,          # Phosphor
-  "B": <forestry:propolis:*>,
-  "i": <contenttweaker:blasted_coal>
-});
+# [Empowered Phosphor] from [Phosphor][+1]
+scripts.process.alloy([<contenttweaker:blasted_coal>, <forestry:phosphor>], <contenttweaker:empowered_phosphor>, "Only: Kiln Induction");
+
 
 scripts.wrap.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(<contenttweaker:blasted_coal> * 2, <contenttweaker:conglomerate_of_coal>);
 craft.make(<contenttweaker:conglomerate_of_coal>, ["pretty",
@@ -542,7 +536,7 @@ craft.make(<contenttweaker:conglomerate_of_coal>, ["pretty",
 
 # Red sand harder (for sieves)
 mods.tconstruct.Casting.removeBasinRecipe(<minecraft:sand:1>);
-scripts.wrap.tconstruct.Casting.addBasinRecipe(<minecraft:sand:1>, <exnihilocreatio:block_granite_crushed>, <liquid:blood>, 10);
+scripts.wrap.tconstruct.Casting.addBasinRecipe(<minecraft:sand:1>, <exnihilocreatio:block_granite_crushed>, <liquid:blood>, 10, true);
 
 # Redstone from Sool-covered version
 mods.harvestcrafttweaker.HarvestCraftTweaker.addWaterFilter(<deepmoblearning:soot_covered_redstone> * 8, <actuallyadditions:item_misc:10> * 8, <jaopca:item_dusttinyredstone> * 64);

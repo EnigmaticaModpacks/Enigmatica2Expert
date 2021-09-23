@@ -317,13 +317,6 @@ for item in itemsToRemoveAndHide {
   recipes.removeByRecipeName("mysticalagriculture:gemamber");
   recipes.addShaped("Mystical Agriculture Amber", <thaumcraft:amber> * 6, [[<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>],[<mysticalagriculture:amber_essence>,null,<mysticalagriculture:amber_essence>],[<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>]]);
 
-# Recycling can
-scripts.process.recycleMetal(<mysticalagriculture:watering_can:0>, <mysticalagriculture:crafting:33> * 4, null, null);
-scripts.process.recycleMetal(<mysticalagriculture:watering_can:1>, <mysticalagriculture:crafting:34> * 4, null, null);
-scripts.process.recycleMetal(<mysticalagriculture:watering_can:2>, <mysticalagriculture:crafting:35> * 4, null, null);
-scripts.process.recycleMetal(<mysticalagriculture:watering_can:3>, <mysticalagriculture:crafting:36> * 4, null, null);
-scripts.process.recycleMetal(<mysticalagriculture:watering_can:4>, <mysticalagriculture:crafting:37> * 4, null, null);
-
 # Hydroponics Inferium grows
 val inferCount = {
 	<mysticalagriculture:tier1_inferium_seeds>  : 3,
@@ -578,3 +571,28 @@ craft.remake(<mysticalagriculture:crafting:16>, ["pretty",
   "l": <ore:shardProsperity>,
   "s": <ore:seed>,
 });
+
+# Watering Cans WAAAAY cheaper
+val watering_ingrs = {
+  "e": <mysticalagriculture:watering_can>,   # Inferium Watering Can
+  "p": <mysticalagriculture:watering_can:1>, # Prudentium Watering Can
+  "§": <mysticalagriculture:watering_can:2>, # Intermedium Watering Can
+  "b": <mysticalagriculture:watering_can:3>, # Superium Watering Can
+  "B": <actuallyadditions:item_water_bowl>,  # Bowl of Water
+  "I": <ore:essenceInferium>,                # Inferium Essence
+  "P": <ore:essencePrudentium>,              # Prudentium Essence
+  "n": <ore:essenceIntermedium>,             # Intermedium Essence
+  "u": <ore:essenceSuperium>,                # Superium Essence
+  "S": <ore:essenceSupremium>,               # Supremium Essence
+} as IIngredient[string];
+
+# [Inferium Watering Can] from [Bowl of Water][+1]
+craft.remake(<mysticalagriculture:watering_can>, ["pretty",
+  "I    ",
+  "I B I",
+  "  I I"], watering_ingrs
+);
+craft.reshapeless(<mysticalagriculture:watering_can:1>, "eP", watering_ingrs);
+craft.reshapeless(<mysticalagriculture:watering_can:2>, "pn", watering_ingrs);
+craft.reshapeless(<mysticalagriculture:watering_can:3>, "§u", watering_ingrs);
+craft.reshapeless(<mysticalagriculture:watering_can:4>, "bS", watering_ingrs);

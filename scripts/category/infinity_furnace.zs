@@ -90,7 +90,7 @@ ${filtered.join('\n')}`
 
 }*/
 
-# Total Furnace recipes registered: 919
+# Total Furnace recipes registered: 918
 # Filtered by JEI blacklist: 75
 # Filtered manuallly (antidupe): 14
 # Filtered by oredict: 200
@@ -931,7 +931,6 @@ infinFurnace(utils.get("rats:rat_nugget_ore", 100, 1, {OreItem: {id: "immersivee
 infinFurnace(utils.get("rats:rat_nugget_ore", 101, 1, {OreItem: {id: "bigreactors:oreyellorite", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "bigreactors:ingotyellorium", Count: 1 as byte, Damage: 0 as short}}), utils.get("immersiveengineering:metal", 5));
 infinFurnace(utils.get("rats:rat_nugget_ore", 0, 1, {OreItem: {id: "thermalfoundation:ore", Count: 1 as byte, Damage: 4 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1 as byte, Damage: 132 as short}}), utils.get("thermalfoundation:material", 132));
 infinFurnace(utils.get("rats:raw_rat", W), utils.get("rats:cooked_rat"));
-infinFurnace(utils.get("rustic:dust_tiny_iron"), utils.get("minecraft:iron_nugget"));
 infinFurnace(utils.get("rustic:honeycomb"), utils.get("rustic:beeswax"));
 ##infinFurnace(utils.get("rustic:log", 1), utils.get("minecraft:coal", 1));
 ##infinFurnace(utils.get("rustic:log"), utils.get("minecraft:coal", 1));

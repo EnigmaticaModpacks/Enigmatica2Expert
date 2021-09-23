@@ -43,3 +43,9 @@ craft.remake(<rustic:crop_stake> * 4, ["#","#","#"], {
 
 # Skyblock alt
 mods.rustic.CrushingTub.addRecipe(<liquid:water> * 100, <minecraft:dye:2>, <minecraft:cactus>);
+
+# Remove tiny pile and replace it with Ore Piece
+mods.forestry.Squeezer.removeRecipe(<liquid:ironberryjuice>);
+mods.rustic.EvaporatingBasin.removeRecipe(<rustic:dust_tiny_iron>);
+utils.rh(<rustic:dust_tiny_iron>);
+mods.rustic.EvaporatingBasin.addRecipe(<exnihilocreatio:item_ore_iron>, <liquid:ironberryjuice> * 1250, 40*20);

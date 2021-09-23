@@ -308,6 +308,9 @@ val crushExceptions = "except: IECrusher SagMill Pulverizer AACrusher MekCrusher
 scripts.process.crush(<ore:gemQuartzBlack>, <actuallyadditions:item_dust:7>, crushExceptions, null, null);
 scripts.process.crush(<ore:blockQuartzBlack>, <actuallyadditions:item_dust:7> * 9, crushExceptions ~ " Manufactory", null, null);
 
+# Missed Crushed Emerald recipe
+scripts.process.crush(<ore:gemEmerald>, <actuallyadditions:item_dust:3>, "Only: Grindstone AEGrinder", null, null);
+
 # Recycle Quark crystals
 function recycleCrystal(input as IItemStack, output as IItemStack) {
 	scripts.process.crush(input, output, "Macerator Grindstone AEGrinder ThermalCentrifuge mekCrusher MekEnrichment SagMill", null, null);

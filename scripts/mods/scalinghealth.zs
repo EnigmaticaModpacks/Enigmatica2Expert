@@ -16,13 +16,14 @@ scripts.process.crush(HS    , HD, "only: SagMill Pulverizer", [HD, HD, HD], [0.8
 
 // ---------------------------
 for mobId, ingr in {
-  "emberroot:enderminy"     : <ore:enderpearl>,                         #  Ender Pearl
-  "emberroot:knight_fallen" : <tconstruct:sword_blade>.withTag({Material: "iron"}),       # Iron Sword Blade
-  "emberroot:hero"          : <minecraft:armor_stand>,                  #  Armor Stand
-  "emberroot:rainbow_golem" : <ore:blockSheetmetalIron>,                #  Iron Sheetmetal
-  "emberroot:withercat"     : <ore:dustWither>,                         #  Wither Dust
-  "quark:crab"              : <ore:foodCrabraw>,                        #  Raw Crab
-  "rats:illager_piper"      : <ore:foodCheese>,
+  "emberroot:enderminy"        : <ore:enderpearl>,                         #  Ender Pearl
+  "emberroot:knight_fallen"    : <tconstruct:sword_blade>.withTag({Material: "iron"}),       # Iron Sword Blade
+  "emberroot:hero"             : <minecraft:armor_stand>,                  #  Armor Stand
+  "emberroot:rainbow_golem"    : <ore:blockSheetmetalIron>,                #  Iron Sheetmetal
+  "emberroot:withercat"        : <ore:dustWither>,                         #  Wither Dust
+  "quark:crab"                 : <ore:foodCrabraw>,                        #  Raw Crab
+  "rats:illager_piper"         : <ore:foodCheese>,
+  "iceandfire:stymphalianbird" : <ore:peacockFeathers>,
 } as IIngredient[string] {
   val h = <scalinghealth:heartdust>;
   mods.rustic.Condenser.addRecipe(

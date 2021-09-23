@@ -241,7 +241,7 @@
   ],
   "ore:crushedDiorite": [
     {
-      "item": "biomesoplenty:white_sand:4",
+      "item": "biomesoplenty:white_sand:0",
       "amount": 1,
       "miningLevel": 1,
       "chance": 1.0,

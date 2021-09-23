@@ -366,3 +366,12 @@ for item in [
 		"*": <actuallyadditions:block_crystal_empowered:4>, # Empowered Emeradic Crystal Block
 	}).shaped());
 }
+
+# Make Ferrous Trees better integrated
+furnace.remove(<*>, <extrautils2:ironwood_planks>);
+furnace.remove(<*>, <extrautils2:ironwood_planks:1>);
+scripts.wrap.tconstruct.Melting.addRecipe(<liquid:iron> *  32, <extrautils2:ironwood_log:0>);
+scripts.wrap.tconstruct.Melting.addRecipe(<liquid:iron> * 144, <extrautils2:ironwood_log:1>);
+scripts.wrap.tconstruct.Melting.addRecipe(<liquid:iron> *  16, <extrautils2:ironwood_planks:0>);
+scripts.wrap.tconstruct.Melting.addRecipe(<liquid:iron> *  80, <extrautils2:ironwood_planks:1>);
+scripts.wrap.tconstruct.Casting.addTableRecipe(<extrautils2:ironwood_sapling>, <ore:treeSapling>, <liquid:iron>, 576, true);

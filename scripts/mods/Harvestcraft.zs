@@ -1,6 +1,8 @@
 #Compatibility for Immersive Engineering <liquid:ethanol> and <liquid:plantoil>
 import crafttweaker.item.IItemStack;
 
+utils.rh(<harvestcraft:market>);
+
 oreDict.cropLychee.add(<harvestcraft:lycheeitem>);
 oreDict.cropJackfruit.add(<harvestcraft:jackfruititem>);
 

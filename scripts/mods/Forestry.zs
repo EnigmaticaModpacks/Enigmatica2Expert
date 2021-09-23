@@ -211,8 +211,12 @@ craft.remake(<requious:adv_bee_analyzer>, ["pretty",
 });
 
 # Remake recipe, because original recipe cant actually accept any propolis (but shows any)
-recipes.remove(<forestry:bituminous_peat>);
-recipes.addShaped("forestry_bituminous_peat", <forestry:bituminous_peat>, [[null, <ore:dustAsh>, null], [<forestry:peat:*>, <forestry:propolis:*>, <forestry:peat:*>], [null, <ore:dustAsh>, null]]);
+# [Bituminous Peat]*6 from [Propolis]*3[+2]
+craft.reshapeless(<forestry:bituminous_peat> * 6, "▲r▲PPPPPP", {
+  "▲": <ore:dustAsh>,         # Ash
+  "r": <forestry:propolis:*>, # Propolis
+  "P": <ore:brickPeat>,       # Peat
+});
 
 # Bitumen from peat
 mods.rustic.CrushingTub.addRecipe(<liquid:oil> * 500, <thermalfoundation:material:892>, <forestry:bituminous_peat>);

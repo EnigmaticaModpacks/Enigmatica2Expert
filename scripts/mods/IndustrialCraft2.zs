@@ -364,5 +364,5 @@ craft.make(<immersiveengineering:treated_wood> * 8, ["pretty",
   "# ~ #",
   "# # #"], {
   "#": <ore:plankWood>, # Oak Wood Planks
-  "~": Bucket("ic2creosote"), # Creosote Bucket
+  "~": <fluid:ic2creosote> * 1000, # Creosote Bucket
 });

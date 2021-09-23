@@ -566,3 +566,6 @@ remove(<ore:dustObsidian>, <endreborn:catalyst>);
 remove(<ore:tungstenIngot>, <endreborn:item_ingot_wolframium>);
 add(<ore:oreXorcite>, <endreborn:dragon_essence>);
 add(<ore:gemXorcite>, <endreborn:death_essence>);
+
+# Add missed leaves
+addItems(<ore:treeLeaves>, [<exnihilocreatio:block_infested_leaves>, <exnihilocreatio:block_infesting_leaves>]);

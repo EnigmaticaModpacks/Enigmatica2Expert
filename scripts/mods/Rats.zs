@@ -100,7 +100,7 @@ craft.remake(<rats:rat_upgrade_aristocrat>, ["pretty",
   "M R M",
   "S § S"], {
   "R": <rats:rat_upgrade_basic>, # Rat Upgrade: Basic
-  "S": <ore:coinSignalum>,       # Signalum Coin
+  "S": <ore:coinGold>,
   "T": <rats:top_hat>.anyDamage(),# Top Hat
   "§": <randomthings:slimecube>, # Slime Cube
   "M": <tconstruct:materials:19> # Mending Moss
@@ -323,3 +323,59 @@ craft.reshapeless(<rats:assorted_vegetables>, "BPCBPCBPC", {
   "B": <ore:cropBeetroot>, # Beetroot
   "C": <ore:cropCarrot>, # Carrot
 });
+
+#--------------------------------------------------------------------------------------
+# Garbage Pile recipe based on various item parameters
+val ph = <betterquesting:placeholder>.withTag({display:{Name:"§k--§r Any §eDIFFERENT§r item §k--"}}).withLore(["§6Affect output amount§r"]);
+recipes.addShapeless("Garbage_placeholder", <rats:garbage_pile> * 6, [<rats:contaminated_food>,ph,ph,ph,ph,ph,ph,ph,ph,]);
+
+recipes.addHiddenShapeless("Garbage_function", <rats:garbage_pile>, [
+  <rats:contaminated_food>,
+  <*>.marked("m0"),
+  <*>.marked("m1"),
+  <*>.marked("m2"),
+  <*>.marked("m3"),
+  <*>.marked("m4"),
+  <*>.marked("m5"),
+  <*>.marked("m6"),
+  <*>.marked("m7")
+], function(out, ins, cInfo) {
+
+  # Check unique
+  for i in 0 to 7 {
+    val a = ins["m"~i];
+    if(isNull(a)) return null;
+    for j in (i+1) to 8 {
+      val b = ins["m"~j];
+      if(isNull(b)) return null;
+      if (a has b) {
+        return null; # Ingredient duplicate
+      }
+    }
+  }
+
+  # Calculate how much garbage
+  var amount = 0.0d;
+  for i in 0 to 8 {
+    val a = ins["m"~i];
+
+    var v = 1.0d;
+    if(a.maxStackSize != 64) v+=1.5d;
+    if(a.hardness > 8.0f) v+=2.0d;
+    if(a.hardness > 60.0f) v+=6.0d;
+    if(a.hasTag) v+=0.75d;
+    if(!isNull(a.toolClasses) && a.toolClasses.length > 0) v+=2.5d;
+    if(a.isDamageable) v+=1.25d;
+    if(a.isItemBlock) amount -= 0.75d;
+    if(!a.isStackable) v+=2.5d;
+    if(a.burnTime > 300) v+=2.0d;
+    if(a.burnTime > 1600) v+=8.0d;
+    if(!isNull(a.enchantments) && a.enchantments.length > 0) v+=10.0d;
+    if(a.definition.owner != "minecraft") v+=0.5d;
+
+    amount += v;
+  }
+
+  return out * max(1, min(64, amount as int));
+}, null);
+#--------------------------------------------------------------------------------------

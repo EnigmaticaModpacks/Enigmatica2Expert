@@ -196,7 +196,7 @@ function crushRock(input as IIngredient, output as IItemStack[], chances as floa
 function squeeze(input as IIngredient[], fluidOutput as ILiquidStack, exceptions as string, itemOutput as IItemStack) {
   
   work(["CrushingTub"],         exceptions, input, null, [iF(itemOutput, 0.5d)],  [lF(fluidOutput, 0.5d)],      null, null);
-  work(["Squeezer"],            exceptions, input, null, [iF(itemOutput, 0.5d)],  [lF(fluidOutput, 0.666666d)], null, null);
+  work(["Squeezer"],            exceptions, input, null, [iF(itemOutput, 0.5d)],  [lF(fluidOutput, 0.666667d)], null, null);
   work(["MechanicalSqueezer"],  exceptions, input, null, [iF(itemOutput, 0.5d)],  [lF(fluidOutput, 0.75d)],     null, null);
   work(["ForestrySqueezer"],    exceptions, input, null, [iF(itemOutput, 0.5d)],  [lF(fluidOutput, 0.9d)],      null, null);
   work(["TECentrifuge"],        exceptions, input, null, [iF(itemOutput, 0.75d)], [fluidOutput], null, null);
