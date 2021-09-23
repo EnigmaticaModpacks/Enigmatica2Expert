@@ -91,9 +91,21 @@ Liquids that should have more uses:
 - [ ] ✏️ ![](https://git.io/JznPk "Rat on Arrow") add craft, add Dispenser Behaviour, add quest.
 - [ ] ✏️ Add written books by animals to craft
 - [ ] ✏️ ![](https://git.io/JznPI "Amplifying Tube") remove vanilla recipes
-- [ ] 🚧 Add skyblock client/server changes
-- [ ] 🔄 Blacklist Bedrock Ore for [Mining Laser]
+- [ ] ✏️ https://i.imgur.com/fUbNLGh.png
+- [ ] ✏️ [Diamond Ore] add Skyblock
+- [ ] ✏️ [Garbage Pile] describ that craft should be from DIFFERENT items. Fix last slot amount
+- [ ] ✏️ [Potion Of Doom] fix brew
+- [ ] ✏️ Add Dragon Spawning method
+- [ ] ✏️ Rats as alt for some machine recipes
+- [ ] ✏️ Add Twilight Forest spawners to Skyblock craft
+- [ ] ✏️ [Transformation powder] better recipe
+- [ ] ✏️ [Torchberry plant] add
 - [ ] 🔄 [Infin Furnace] (req) front texture empty on client
+- [ ] 🔄 Add Loading for `automate.js` https://github.com/cronvel/terminal-kit/blob/88b3d838dd456b837fb884bee1f92d2a4b21c85e/doc/spChars.md#ref.spChars.animation
+- [ ] 🔄 Blacklist Bedrock Ore for [Mining Laser]
+- [ ] 🔄 Fix TCon Recycle crashing 
+- [ ] 🔄 Integrate https://github.com/release-it/release-it
+- [ ] 🚧 Add skyblock client/server changes
 
 ---
 
