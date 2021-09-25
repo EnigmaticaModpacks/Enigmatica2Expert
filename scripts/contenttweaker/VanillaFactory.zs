@@ -175,3 +175,13 @@ perfect_fuel.temperature= 10000;
 perfect_fuel.stillLocation = "contenttweaker:fluids/fluid";
 perfect_fuel.flowingLocation = "contenttweaker:fluids/fluid_flowing";
 perfect_fuel.register();
+
+# -------------------------------
+# Knowledge Absorber
+# -------------------------------
+var x = VanillaFactory.createItem("knowledge_absorber");
+x.maxStackSize = 1;
+x.rarity = "rare";
+x.maxDamage = 10;
+x.glowing = true;
+x.register();
