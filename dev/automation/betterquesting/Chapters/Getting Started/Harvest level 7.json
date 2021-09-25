@@ -79,6 +79,40 @@
           }
         },
         "taskID:8": "bq_standard:retrieval"
+      },
+      "2:10": {
+        "partialMatch:1": 1,
+        "autoConsume:1": 0,
+        "groupDetect:1": 0,
+        "ignoreNBT:1": 1,
+        "index:3": 2,
+        "consume:1": 0,
+        "requiredItems:9": {
+          "0:10": {
+            "id:8": "tconstruct:ingots",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          }
+        },
+        "taskID:8": "bq_standard:retrieval"
+      },
+      "3:10": {
+        "partialMatch:1": 1,
+        "autoConsume:1": 0,
+        "groupDetect:1": 0,
+        "ignoreNBT:1": 1,
+        "index:3": 3,
+        "consume:1": 0,
+        "requiredItems:9": {
+          "0:10": {
+            "id:8": "tconstruct:ingots",
+            "Count:3": 1,
+            "Damage:2": 1,
+            "OreDict:8": ""
+          }
+        },
+        "taskID:8": "bq_standard:retrieval"
       }
     },
     "rewards:9": {
