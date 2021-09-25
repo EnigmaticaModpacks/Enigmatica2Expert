@@ -1,6 +1,31 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
 
+# v0.33.3
+
+## 📖 Quest Book
+
+- Quests changes
+
+## ✏️ Recipes
+
+  **New recipes:**
+  - ![](https://git.io/JzX6Q "Purple Slimy Grass")![](https://git.io/JzX69 "Blue Slime Sapling")![](https://git.io/JzX6d "Purple Slime Sapling")
+  - [Knowledge Absorber] combined with different books gives different Ores
+
+  **Misc Changes:**
+  - ![](https://git.io/JzX6D "Canola Oil") and ![](https://git.io/JzX6H "Creosote") give less burn time in Smeltery
+  - ![](https://git.io/JzX6y "Blazing Pyrotheum Tank")![](https://git.io/JzX65 "Gelid Cryotheum Tank")![](https://git.io/JzX6F "Zephyrean Aerotheum Tank")![](https://git.io/JzX67 "Tectonic Petrotheum Tank") can be melted with ![](https://git.io/JtJfb "Phosphor")
+
+### ⛏️ Mining
+
+  - Lower Hardness for some vanilla blocks like ![](https://git.io/JzX6S "Netherrack")
+
+
+
+
+
+
 # v0.33.2
 
 ## 📖 Quest Book
