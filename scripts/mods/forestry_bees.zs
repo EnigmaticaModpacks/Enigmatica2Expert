@@ -33,12 +33,8 @@ static g as IItemStack[string] = {
 # Bees rework
 # ----------------------------------------------
 
-# Phosphor as melting mechannics
+# Empowered Phosphor as melting mechannics
 for input,output in {
-	<ore:dustPyrotheum>      : <fluid:pyrotheum> * 250,
-	<ore:dustCryotheum>      : <fluid:cryotheum> * 250,
-	<ore:dustAerotheum>      : <fluid:aerotheum> * 250,
-	<ore:dustPetrotheum>     : <fluid:petrotheum> * 250,
 	<ore:blockRedstone>      : <fluid:redstone> * 900,
 	<ore:glowstone>          : <fluid:glowstone> * 1000,
 	<ore:materialEnderPearl> : <fluid:ender> * 250,
@@ -46,7 +42,17 @@ for input,output in {
 	<ore:blockCoal>
 	|<ore:blockGraphite>     : <fluid:coal> * 900,
 } as ILiquidStack[IIngredient]  {
-	scripts.processWork.work(["ForestrySqueezer"], null, [g['🔷'], input], null, null,  [output], null, null);
+	scripts.processWork.work(["ForestrySqueezer"], null, [<contenttweaker:empowered_phosphor>, input], null, null,  [output], null, null);
+}
+
+# Phosphor as melting mechannics
+for input,output in {
+	<ore:dustPyrotheum>      : <fluid:pyrotheum> * 250,
+	<ore:dustCryotheum>      : <fluid:cryotheum> * 250,
+	<ore:dustAerotheum>      : <fluid:aerotheum> * 250,
+	<ore:dustPetrotheum>     : <fluid:petrotheum> * 250,
+} as ILiquidStack[IIngredient]  {
+	scripts.processWork.work(["ForestrySqueezer"], null, [<forestry:phosphor>, input], null, null,  [output], null, null);
 }
 
 # Buff silk

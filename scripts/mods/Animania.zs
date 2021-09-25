@@ -132,7 +132,8 @@ craft.remake(<animania:block_hamster_wheel>, ["pretty",
 });
 
 # Skyblock Alt
-scripts.wrap.tconstruct.Casting.addBasinRecipe(<animania:wild_hive>, <architecturecraft:shape>.withTag({Shape: 33, BaseName: "minecraft:planks"}, false), <liquid:oliveoil>, 1000, true, 100);
-scripts.wrap.tconstruct.Casting.addBasinRecipe(<animania:wild_hive>, <architecturecraft:shape>.withTag({Shape: 33, BaseName: "minecraft:planks"}, false), <liquid:animania_honey>, 1000, true, 100);
-scripts.wrap.tconstruct.Casting.addBasinRecipe(<animania:wild_hive>, <architecturecraft:shape>.withTag({Shape: 33, BaseName: "minecraft:planks"}, false), <liquid:for.honey>, 1000, true, 100);
-scripts.wrap.tconstruct.Casting.addBasinRecipe(<animania:wild_hive>, <architecturecraft:shape>.withTag({Shape: 33, BaseName: "minecraft:planks"}, false), <liquid:honey>, 1000, true, 100);
+var sphere = <architecturecraft:shape>.withTag({Shape: 33, BaseName: "minecraft:planks", BaseData: 0});
+scripts.wrap.tconstruct.Casting.addBasinRecipe(<animania:wild_hive>, sphere, <liquid:oliveoil>, 1000, true, 100);
+scripts.wrap.tconstruct.Casting.addBasinRecipe(<animania:wild_hive>, sphere, <liquid:animania_honey>, 1000, true, 100);
+scripts.wrap.tconstruct.Casting.addBasinRecipe(<animania:wild_hive>, sphere, <liquid:for.honey>, 1000, true, 100);
+scripts.wrap.tconstruct.Casting.addBasinRecipe(<animania:wild_hive>, sphere, <liquid:honey>, 1000, true, 100);

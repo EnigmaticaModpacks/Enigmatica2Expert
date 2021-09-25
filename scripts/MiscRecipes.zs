@@ -538,6 +538,38 @@ craft.make(<contenttweaker:conglomerate_of_coal>, ["pretty",
 mods.tconstruct.Casting.removeBasinRecipe(<minecraft:sand:1>);
 scripts.wrap.tconstruct.Casting.addBasinRecipe(<minecraft:sand:1>, <exnihilocreatio:block_granite_crushed>, <liquid:blood>, 10, true);
 
-# Redstone from Sool-covered version
-mods.harvestcrafttweaker.HarvestCraftTweaker.addWaterFilter(<deepmoblearning:soot_covered_redstone> * 8, <actuallyadditions:item_misc:10> * 8, <jaopca:item_dusttinyredstone> * 64);
-scripts.wrap.thermalexpansion.Transposer.addFillRecipe(<minecraft:redstone>, <deepmoblearning:soot_covered_redstone>, <fluid:water> * 10, 100);
+
+# Knowledge absorber craft
+# [Golden eye] from [Ender Orb Translocator][+3]
+craft.make(<contenttweaker:knowledge_absorber>, ["pretty",
+  "  *  ",
+  "L E L",
+  "  R  "], {
+  "*": <extrautils2:suncrystal>,  # Sun Crystal
+  "L": <ore:shardLormyte>,        # Lormyte Crystal
+  "E": <cyclicmagic:ender_pearl_mounted>.anyDamage(), # Ender Orb Translocator
+  "R": <ore:itemResin>, # Sticky Resin
+});
+
+# Create "Void Miner" recipes by animals
+for mobName, arr in {
+	Cow     : [<ore:endstone>, <netherendingores:ore_end_modded_1:11>],
+	Pig     : [<ore:endstone>, <netherendingores:ore_end_vanilla:3>],
+	Cat     : [<ore:endstone>, <endreborn:block_wolframium_ore>],
+	Enderman: [<ore:endstone>, <endreborn:dragon_essence>],
+	Chicken : [<ore:endstone>, <netherendingores:ore_end_vanilla:6>],
+	Dog     : [<ore:stone>,    <actuallyadditions:block_misc:3>],
+	Sheep   : [<ore:stone>,    <forestry:resources>],
+	Creeper : [<ore:endstone>, <netherendingores:ore_end_vanilla:1>],
+	Zombie  : [<ore:endstone>, <netherendingores:ore_end_modded_1:12>],
+} as IIngredient[][string] {
+	val book = scripts._init.variables.bookWrittenBy_ingr[mobName];
+	if(arr.length < 2 || isNull(arr[0]) || isNull(arr[1]) || isNull(book)) continue;
+	val input = arr[0];
+	val output = arr[1].itemArray[0];
+	recipes.addShapeless("knowledge_absorber_"~mobName, output * 7, [
+		input, book, input,
+		input, <contenttweaker:knowledge_absorber>.anyDamage().transformDamage(), input, 
+		input, input, input,
+	]);
+}

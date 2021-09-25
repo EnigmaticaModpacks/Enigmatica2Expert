@@ -406,3 +406,10 @@ scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:red_matter> * 144, [<liquid:supr
 
 # Melt Block of flesh
 scripts.process.melt(<ore:blockFlesh>, <liquid:blood> * 360, "No Exceptions");
+
+# [Purple Slimy Grass]*16 from [Purple Dye][+2]
+craft.shapeless(<tconstruct:slime_grass:8> * 6, "sdM", {
+  "s": <ore:slimeball>, # Slimeball
+  "d": <ore:dyePurple>, # Purple Dye
+  "M": <ore:ballMud>,   # Mud Ball
+});
