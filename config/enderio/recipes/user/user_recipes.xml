@@ -220,6 +220,21 @@
       <output name="minecraft:redstone"/>
     </tanking>
   </recipe>
+  <!-- Treating planks alt -->
+  <recipe name="Treated Planks IC2">
+    <tanking type="FILL" logic="NONE">
+      <input name="plankWood"/>
+      <fluid name="ic2creosote" amount="125"/>
+      <output name="immersiveengineering:treated_wood"/>
+    </tanking>
+  </recipe>
+  <recipe name="Treated Planks Immersive">
+    <tanking type="FILL" logic="NONE">
+      <input name="plankWood"/>
+      <fluid name="creosote" amount="125"/>
+      <output name="immersiveengineering:treated_wood"/>
+    </tanking>
+  </recipe>
   <!-- Replace Water to Mead -->
   <recipe name="Nutrient Distilation">
     <fermenting energy="50000">

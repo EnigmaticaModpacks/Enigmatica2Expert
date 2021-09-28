@@ -9,12 +9,6 @@ recipes.addShaped(<travelersbackpack:hose>, [
 	[null, null, <ore:itemRubber>],
 	[null, null, <ore:dyeGreen>]]);
 
-recipes.remove(<travelersbackpack:backpack_tank>);
-recipes.addShaped(<travelersbackpack:backpack_tank>, [
-	[<ic2:casing:3>],
-	[<enderio:block_omni_reservoir>],
-	[<ic2:casing:3>]]);
-
 # Remake Sleeping bag (prevent conflict)
 remakeEx(<travelersbackpack:sleeping_bag_bottom>, [[<quark:quilted_wool:14>, <quark:quilted_wool:14>, <quark:quilted_wool>]]);
 

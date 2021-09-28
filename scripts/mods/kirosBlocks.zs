@@ -43,5 +43,5 @@ val unique = scripts.unique.Unique([
 for i, item in loadedMods["kirosblocks"].items {
   if (hasRecipes has item.definition.id.substring(12)) continue;
 
-  recipes.addShaped("kirosblocks #"~i, item, unique.next());
+  recipes.addShaped("kirosblocks #"~i, item * 4, unique.next());
 }

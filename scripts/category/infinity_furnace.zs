@@ -62,7 +62,7 @@ const filters = [
 ]
 
 const isBlacklisted = (...items) => filters.find(([,,condition],i)=>
-  condition(items) && filters[i][1]++
+  condition(items) && ++filters[i][1]
 )?.[0] || ''
 
 const overload = (id,meta,nbt,amount)=>{
@@ -95,7 +95,7 @@ ${filtered.join('\n')}`
 # Filtered manuallly (antidupe): 14
 # Filtered by oredict: 200
 infinFurnace(utils.get("actuallyadditions:block_misc", 3), utils.get("actuallyadditions:item_misc", 5));
-infinFurnace(utils.get("actuallyadditions:item_dust", 3), utils.get("minecraft:emerald"));
+##infinFurnace(utils.get("actuallyadditions:item_dust", 3), utils.get("minecraft:emerald"));
 ##infinFurnace(utils.get("actuallyadditions:item_dust", 7), utils.get("actuallyadditions:item_misc", 5));
 infinFurnace(utils.get("actuallyadditions:item_misc", 4), utils.get("actuallyadditions:item_food", 15));
 infinFurnace(utils.get("actuallyadditions:item_misc", 9), utils.get("actuallyadditions:item_food", 17));
@@ -131,7 +131,7 @@ infinFurnace(utils.get("betteranimalsplus:turkey_raw"), utils.get("betteranimals
 ##infinFurnace(utils.get("bigreactors:dustludicrite"), utils.get("bigreactors:ingotludicrite"));
 ##infinFurnace(utils.get("bigreactors:duststeel"), utils.get("thermalfoundation:material", 160));
 ##infinFurnace(utils.get("bigreactors:dustyellorium"), utils.get("immersiveengineering:metal", 5));
-infinFurnace(utils.get("bigreactors:oreyellorite"), utils.get("immersiveengineering:metal", 5));
+#infinFurnace(utils.get("bigreactors:oreyellorite"), utils.get("immersiveengineering:metal", 5));
 infinFurnace(utils.get("biomesoplenty:gem_ore", 1), utils.get("biomesoplenty:gem", 1));
 infinFurnace(utils.get("biomesoplenty:gem_ore", 2), utils.get("biomesoplenty:gem", 2));
 infinFurnace(utils.get("biomesoplenty:gem_ore", 3), utils.get("biomesoplenty:gem", 3));
@@ -157,7 +157,7 @@ infinFurnace(utils.get("biomesoplenty:gem_ore"), utils.get("biomesoplenty:gem"))
 ##infinFurnace(utils.get("biomesoplenty:log_3", 6), utils.get("minecraft:coal", 1));
 ##infinFurnace(utils.get("biomesoplenty:log_3", 7), utils.get("minecraft:coal", 1));
 ##infinFurnace(utils.get("biomesoplenty:log_4", 5), utils.get("minecraft:coal", 1));
-infinFurnace(utils.get("biomesoplenty:mud"), utils.get("minecraft:dirt"));
+//infinFurnace(utils.get("biomesoplenty:mud"), utils.get("minecraft:dirt"));
 //infinFurnace(utils.get("biomesoplenty:mudball"), utils.get("tconstruct:materials", 1));
 infinFurnace(utils.get("biomesoplenty:plant_1", 6), utils.get("minecraft:dye", 2));
 infinFurnace(utils.get("biomesoplenty:white_sand"), utils.get("minecraft:glass"));

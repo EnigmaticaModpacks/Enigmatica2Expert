@@ -437,17 +437,14 @@
   ],
 
   "rats:garbage_pile": [
-    {"meshLevel": 1, "drop": {"name": "mysticalagriculture:crafting"  , "meta": 5} , "chance": 0.3},
-    {"meshLevel": 1, "drop": {"name": "exnihilocreatio:item_ore_tin"  , "meta": 0} , "chance": 0.3},
-    {"meshLevel": 1, "drop": {"name": "exnihilocreatio:item_ore_lead" , "meta": 0} , "chance": 0.2},
+    {"meshLevel": 1, "drop": {"name": "mysticalagriculture:crafting"  , "meta": 5} , "chance": 0.15},
+    {"meshLevel": 1, "drop": {"name": "exnihilocreatio:item_ore_tin"  , "meta": 0} , "chance": 0.15},
+    {"meshLevel": 1, "drop": {"name": "exnihilocreatio:item_ore_lead" , "meta": 0} , "chance": 0.1},
     {"meshLevel": 1, "drop": {"name": "jaopca:item_nuggetlapis"       , "meta": 0} , "chance": 1.0},
-    {"meshLevel": 1, "drop": {"name": "jaopca:item_nuggetlapis"       , "meta": 0} , "chance": 1.0},
-    {"meshLevel": 1, "drop": {"name": "jaopca:item_nuggetlapis"       , "meta": 0} , "chance": 1.0},
-    {"meshLevel": 1, "drop": {"name": "jaopca:item_nuggetlapis"       , "meta": 0} , "chance": 0.9},
-    {"meshLevel": 1, "drop": {"name": "jaopca:item_nuggetamber"       , "meta": 0} , "chance": 1.0},
-    {"meshLevel": 1, "drop": {"name": "jaopca:item_nuggetamber"       , "meta": 0} , "chance": 0.8},
-    {"meshLevel": 1, "drop": {"name": "tconstruct:nuggets"            , "meta": 1} , "chance": 0.5},
-    {"meshLevel": 1, "drop": {"name": "mysticalagriculture:rock_crystal_essence", "meta": 0} , "chance": 0.03}
+    {"meshLevel": 1, "drop": {"name": "jaopca:item_nuggetlapis"       , "meta": 0} , "chance": 0.8},
+    {"meshLevel": 1, "drop": {"name": "jaopca:item_nuggetamber"       , "meta": 0} , "chance": 0.9},
+    {"meshLevel": 1, "drop": {"name": "tconstruct:nuggets"            , "meta": 1} , "chance": 0.25},
+    {"meshLevel": 1, "drop": {"name": "mysticalagriculture:rock_crystal_essence", "meta": 0} , "chance": 0.015}
   ],
 
   "ore:blockSlimeDirt": [

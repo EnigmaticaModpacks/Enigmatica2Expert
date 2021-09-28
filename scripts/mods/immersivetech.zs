@@ -8,7 +8,7 @@ mods.immersivetechnology.CoolingTower.addRecipe(<liquid:cloud_seed> * 500, <liqu
 # Rplace wrong salt
 utils.rh(<immersivetech:material>);
 mods.immersivetechnology.Distiller.removeRecipe(<liquid:water>);
-mods.immersivetechnology.Distiller.addRecipe(<liquid:water> * 1000, <liquid:distwater> * 500, <mekanism:salt>, 2000, 20, 1.0f);
+mods.immersivetechnology.Distiller.addRecipe(<liquid:distwater> * 500, <liquid:water> * 1000, <mekanism:salt>, 2000, 20, 1.0f);
 
 #------------------------------------------------------------------------
 # Harder Electolyze

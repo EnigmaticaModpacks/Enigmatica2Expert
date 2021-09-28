@@ -250,3 +250,6 @@ val alcTableOres = [
 for item in alcTableOres {
 	mods.bloodmagic.AlchemyTable.removeRecipe([item, <bloodmagic:cutting_fluid>]);
 }
+
+# [Blood Wood] from [Spectre Wood]*2
+scripts.wrap.bloodmagic.BloodAltar.addRecipe(<animus:blockbloodwood>, <randomthings:spectrelog>, 0, 2000, 12, 12);

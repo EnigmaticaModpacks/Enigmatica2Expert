@@ -127,12 +127,11 @@ craft.remake(<twilightforest:twilight_sapling:7>, ["pretty",
 
 # [Robust Twilight Oak Sapling] from [Cicada][+3]
 craft.remake(<twilightforest:twilight_sapling:4>, ["pretty",
-  "F C F",
+  "F F F",
   "# ≢ #",
   "# ≢ #"], {
   "≢": <twilightforest:magic_log:2>,  # Minewood
   "#": <twilightforest:twilight_log>, # Twilight Oak Wood
-  "C": <twilightforest:cicada>,       # Cicada
   "F": <twilightforest:firefly>,      # Firefly
 });
 
@@ -142,3 +141,6 @@ recipes.addShaped("twilightforest_moonworm", <twilightforest:moonworm>, [
 	[<tconstruct:slime_channel>, null, null], 
 	[<ore:egg>, <tconstruct:slime_channel>, <exnihilocreatio:item_material:2>]
 ]);
+
+# [Glowstone Dust] from [Firefly][+1]
+scripts.process.crush(<twilightforest:firefly>, <minecraft:glowstone_dust> * 2, "only: crushingBlock",null,null);

@@ -7,14 +7,16 @@ import crafttweaker.item.IItemStack;
 val HD = <scalinghealth:heartdust>;
 val HS = <scalinghealth:crystalshard>;
 # [Heart Dust] from [Pestle and Mortar][+1]
-craft.reshapeless(HD, 'A****', {
+craft.reshapeless(HD, 'A***', {
   "A": <ore:pestleAndMortar>,        # Pestle and Mortar
   "*": HS, # Heart Crystal Shard
 });
+mods.rats.recipes.addGemcutterRatRecipe(HS, HD);
 scripts.process.crush(HS * 2, HD, "only: eu2Crusher AACrusher", [HD], [0.2f]);
 scripts.process.crush(HS    , HD, "only: SagMill Pulverizer", [HD, HD, HD], [0.8f, 0.4f, 0.2f]);
 
 // ---------------------------
+val h = <scalinghealth:heartdust>;
 for mobId, ingr in {
   "emberroot:enderminy"        : <ore:enderpearl>,                         #  Ender Pearl
   "emberroot:knight_fallen"    : <tconstruct:sword_blade>.withTag({Material: "iron"}),       # Iron Sword Blade
@@ -25,7 +27,6 @@ for mobId, ingr in {
   "rats:illager_piper"         : <ore:foodCheese>,
   "iceandfire:stymphalianbird" : <ore:peacockFeathers>,
 } as IIngredient[string] {
-  val h = <scalinghealth:heartdust>;
   mods.rustic.Condenser.addRecipe(
     <thermalexpansion:morb>.withTag({id: mobId}),
     [h,h,h], ingr, <thermalexpansion:morb>, <fluid:water> * 50, 40);

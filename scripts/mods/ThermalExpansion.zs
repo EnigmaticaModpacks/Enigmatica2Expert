@@ -127,7 +127,7 @@ craft.remake(<thermalfoundation:material:1028> * 2, ["pretty",
 
 
 # Primal Mana
-	scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:mana> * 125, [<liquid:mirion> * 18, <liquid:osgloglas> * 18, <liquid:ic2coolant> * 125]);
+	scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:mana> * 125, [<liquid:spectre> * 144, <liquid:flux_goo> * 125]);
 
 # Energy Cell Frame
 	recipes.remove(<thermalexpansion:frame:128>);

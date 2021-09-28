@@ -284,3 +284,9 @@ mods.botania.ElvenTrade.addRecipe([<botania_tweaks:basic_extended_crafty_crate>,
 mods.botania.ElvenTrade.addRecipe([<botania_tweaks:advanced_extended_crafty_crate>, <extendedcrafting:table_advanced>], [<botania:opencrate:1>, <extendedcrafting:table_advanced>]);
 mods.botania.ElvenTrade.addRecipe([<botania_tweaks:elite_extended_crafty_crate>, <extendedcrafting:table_elite>], [<botania:opencrate:1>, <extendedcrafting:table_elite>]);
 mods.botania.ElvenTrade.addRecipe([<botania_tweaks:ultimate_extended_crafty_crate>, <extendedcrafting:table_ultimate>], [<botania:opencrate:1>, <extendedcrafting:table_ultimate>]);
+
+# [Faint Amaranth] from [Goldenrod]
+mods.botania.ManaInfusion.addInfusion(<astralsorcery:blockcustomflower>, <biomesoplenty:flower_1:1>, 10000);
+
+# Melt Gaia's Head to receive Dark Matter
+scripts.process.melt(<botania:gaiahead>, <liquid:dark_matter> * (144*3), "except: Melter");

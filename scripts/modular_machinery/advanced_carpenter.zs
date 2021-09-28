@@ -10,7 +10,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_wyvern_core", mac
 	.addItemInput(<environmentaltech:pladium>)
 	.addItemInput(<minecraft:sponge>)
 	.addItemInput(<draconicevolution:draconic_core> * 3)
-	.addFluidInput(<liquid:mana> * 500)
+	.addFluidInput(<liquid:ic2hot_coolant> * 1000)
 	.build();
 
 mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_draconic_energy_core", machineName, 20)
@@ -19,7 +19,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_draconic_energy_c
 	.addItemInput(<ore:ingotDraconiumAwakened>, 2)
 	.addItemInput(<draconicevolution:wyvern_energy_core> * 4)
 	.addItemInput( <draconicevolution:wyvern_core>)
-	.addFluidInput(<liquid:mana> * 500)
+	.addFluidInput(<liquid:ic2hot_coolant> * 1000)
 	.build();
 
 mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_crafting_core", machineName, 20)

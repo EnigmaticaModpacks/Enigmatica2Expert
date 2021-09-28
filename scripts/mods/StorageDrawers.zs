@@ -67,7 +67,7 @@ craft.remake(<storagedrawers:upgrade_creative> * 4, ["pretty",
   "M M T ‚ T M M",
   "i M # # # M i"], {
   "B": <industrialforegoing:black_hole_unit>, # Black Hole Unit
-  "#": <ore:plankWood>,                       # Spectre Planks
+  "#": <randomthings:spectreplank>,           # Spectre Planks
   "S": <storagedrawers:upgrade_storage:2>,    # Storage Upgrade (III)
   "⌃": <extrautils2:decorativesolid:6>,       # Blue Quartz
   "T": <thaumcraft:taint_log>,                # Taintwood Log

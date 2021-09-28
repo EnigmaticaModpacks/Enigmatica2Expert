@@ -68,7 +68,6 @@ desc.jei(<harvestcraft:market>, "removed.use_market"); # Pam's Harvestcraft Mark
 desc.jei(<mekanism:controlcircuit:3>, "requires.rf", "2.000.000"); # Mekanism Ultimate Circuit
 
 
-desc.jei(<mekanism:machineblock:2>, "removed.dupe_ore");
 desc.jei(<thermalexpansion:cache>, "crescent_hammer");
 desc.jei(<mekanism:gaugedropper>, "gauge_dropper");
 desc.jei(<environmentaltech:void_ore_miner_cont_6>, "miner_tier_6_specializes");

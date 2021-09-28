@@ -51,7 +51,7 @@ import scripts.craft.grid.Grid;
 	[[<ore:shulkerShell>, <draconicevolution:draconic_core>, <ore:shulkerShell>],
 	[<draconicevolution:draconic_core>, <minecraft:sponge>, <draconicevolution:draconic_core>], 
 	[<ore:ingotLudicrite>, <environmentaltech:pladium>, <ore:ingotLudicrite>]], 
-	40, <liquid:mana> * 1000);
+	40, <liquid:ic2hot_coolant> * 2000);
 
 # Draconic Energy Core
 	recipes.remove(<draconicevolution:draconic_energy_core>);
@@ -59,7 +59,7 @@ import scripts.craft.grid.Grid;
 	[[<ore:ingotDraconiumAwakened>, <draconicevolution:wyvern_energy_core>, <ore:ingotDraconiumAwakened>],
 	[<draconicevolution:wyvern_energy_core>, <draconicevolution:wyvern_core>, <draconicevolution:wyvern_energy_core>], 
 	[<ore:ingotDraconiumAwakened>, <draconicevolution:wyvern_energy_core>, <ore:ingotDraconiumAwakened>]], 
-	40, <liquid:mana> * 1000);
+	40, <liquid:ic2hot_coolant> * 2000);
 	
 # Fusion Crafting Core
 	recipes.remove(<draconicevolution:fusion_crafting_core>);

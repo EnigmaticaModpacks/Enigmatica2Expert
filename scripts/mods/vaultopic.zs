@@ -17,8 +17,9 @@ craft.remake(<vaultopic:view_small>, ["pretty",
 });
 
 recipes.remove(<vaultopic:view_big>);
-scripts.process.compress(<vaultopic:view_small>, <vaultopic:view_big>, "no exceptions");
-scripts.process.crush(<vaultopic:view_small>, <vaultopic:view_big>, "only: crushingBlock",null,null);
+scripts.process.fill(<vaultopic:view_small>, <fluid:menrilresin> * 500, <vaultopic:view_big>, "no exceptions");
+
 
 recipes.remove(<vaultopic:vice>);
-scripts.process.fill(<vaultopic:view_big>, <fluid:menrilresin> * 500, <vaultopic:vice>, "no exceptions");
+scripts.process.compress(<vaultopic:view_big>, <vaultopic:vice>, "no exceptions");
+scripts.process.crush(<vaultopic:view_big>, <vaultopic:vice>, "only: crushingBlock",null,null);

@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded bloodmagic
-// Uses of this mod: 27
+// Uses of this mod: 28
 
 
 //####################################################
@@ -53,10 +53,10 @@ zenClass Class_AlchemyTable { zenConstructor() {}
 static AlchemyTable as Class_AlchemyTable = Class_AlchemyTable();
 
 //####################################################
-// Uses of this class: 7
+// Uses of this class: 8
 zenClass Class_BloodAltar { zenConstructor() {}
 
-	// Uses of this method: 7
+	// Uses of this method: 8
 	function addRecipe(output as IItemStack, input as IItemStack, minimumTier as int, syphon as int, consumeRate as int, drainRate as int) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.bloodmagic.BloodAltar.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), minimumTier, syphon, consumeRate, drainRate]));

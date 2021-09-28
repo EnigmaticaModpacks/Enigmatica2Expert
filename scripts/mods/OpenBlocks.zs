@@ -7,14 +7,14 @@ scripts.category.tooltip_utils.desc.tooltip(<openblocks:tank>);
 scripts.category.tooltip_utils.desc.tooltip(<openblocks:builder_guide>, 'redstone.need');
 scripts.category.tooltip_utils.desc.tooltip(<openblocks:guide>, 'redstone.need');
 
-val o = <actuallyadditions:block_misc:8>;
+val o = <ore:ingotExhausting>;
 
 for i in 0 to 16 {
   val item1 = itemUtils.getItem("openblocks:elevator", i);
   val wool = <minecraft:wool>.definition.makeStack(i);
   if (!isNull(item1)) {
     recipes.remove(item1);
-    recipes.addShaped(item1 * 4, [
+    recipes.addShaped(item1, [
       [wool  , wool  , wool],
       [wool  , o     , wool],
       [wool  , wool  , wool]]);
@@ -23,10 +23,10 @@ for i in 0 to 16 {
   val item2 = itemUtils.getItem("openblocks:elevator_rotating", i);
   if (!isNull(item2)) {
     recipes.remove(item2);
-    recipes.addShaped(item2 * 4, [
+    recipes.addShaped(item2, [
       [wool  , <ore:ingotFakeIron>  , wool],
       [wool  , o     , wool],
-      [wool  , <ore:ingotFakeIron>  , wool]]);
+      [wool  , wool  , wool]]);
   }
 }
 

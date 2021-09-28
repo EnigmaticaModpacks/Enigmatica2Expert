@@ -234,6 +234,7 @@ addTieredRecipe(<mysticalagriculture:steeleaf_seeds> ,      [<twilightforest:blo
 addTieredRecipe(<mysticalagriculture:ironwood_seeds> ,      [<twilightforest:block_storage>, <ore:runeSummerB>] , null);
 addTieredRecipe(<mysticalagriculture:black_quartz_seeds> ,  [<ore:blockQuartzBlack> , <ore:runeAutumnB>], null);
 addTieredRecipe(itemUtils.getItem("mysticalcreations:cheese_seeds"), [<ore:cheeseWheels> ,<ore:runeSpringB>], null);
+addTieredRecipe(<mysticalagriculture:end_seeds>,            [<excompressum:compressed_block:10> ,<ore:runeWinterB>], null);
 
 # *======= Seeds Tier 4 =======*
 curr_tier = 4;
@@ -255,7 +256,6 @@ addTieredRecipe(<mysticalagriculture:osmium_seeds>,         [<ore:blockOsmium> ,
 addTieredRecipe(<mysticalagriculture:malachite_seeds>,      [<biomesoplenty:gem_block:5> ,<ore:runePrideB>], null);
 addTieredRecipe(<mysticalagriculture:tanzanite_seeds>,      [<biomesoplenty:gem_block:4> ,<ore:runeLustB>], null);
 addTieredRecipe(<mysticalagriculture:nickel_seeds>,         [<ore:blockNickel> ,<ore:runeGreedB>], null);
-addTieredRecipe(<mysticalagriculture:end_seeds>,            [<excompressum:compressed_block:10> ,<ore:runeLustB>], null);
 addTieredRecipe(<mysticalagriculture:fluxed_electrum_seeds>,[<ore:blockElectrumFlux> ,<ore:runeGreedB>], null);
 addTieredRecipe(<mysticalagriculture:diamond_seeds>,        [<ore:blockDiamond> ,<ore:runePrideB>], null);
 addTieredRecipe(<mysticalagriculture:emerald_seeds>,        [<ore:blockEmerald> ,<ore:runeEnvyB>], null);

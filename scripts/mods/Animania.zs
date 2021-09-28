@@ -137,3 +137,58 @@ scripts.wrap.tconstruct.Casting.addBasinRecipe(<animania:wild_hive>, sphere, <li
 scripts.wrap.tconstruct.Casting.addBasinRecipe(<animania:wild_hive>, sphere, <liquid:animania_honey>, 1000, true, 100);
 scripts.wrap.tconstruct.Casting.addBasinRecipe(<animania:wild_hive>, sphere, <liquid:for.honey>, 1000, true, 100);
 scripts.wrap.tconstruct.Casting.addBasinRecipe(<animania:wild_hive>, sphere, <liquid:honey>, 1000, true, 100);
+
+# Spawn random animals
+// ---------------------------
+for output, ingrs in {
+  # [Random Peacock] from [Ground Turkey]*2[+3]
+  <animania:entity_egg_peacock_random> : [
+    <harvestcraft:groundturkeyitem>,   # Ground Turkey
+    <mysticalagriculture:crafting:24>, # Mystical Feather
+    <rats:feathery_wing>,              # Feathery Wing
+  ],
+
+  # [Random Rabbit] from [Ground Rabbit]*2[+2]
+  <animania:entity_egg_rabbit_random> : [
+    <harvestcraft:groundrabbititem>, # Ground Rabbit
+    <minecraft:rabbit_foot>,         # Rabbit's Foot
+    <tconstruct:edible:15>,          # Rabbit Jerky
+  ],
+
+  # [Random Cow] from [Ground Beef]*2[+2]
+  <animania:entity_egg_cow_random> : [
+    <harvestcraft:groundbeefitem>,  # Ground Beef
+    <cookingforblockheads:cow_jar>, # Cow in a Jar
+    <ore:blockCheese>,              # Block of Cheese
+  ],
+
+  # [Random Pig] from [Ground Pork]*2[+2]
+  <animania:entity_egg_pig_random> : [
+    <harvestcraft:groundporkitem>, # Ground Pork
+    <tconstruct:edible>,           # Bacon
+    <ore:nuggetPigiron>,           # Pigiron Nugget
+  ],
+
+  # [Random Chicken] from [Ground Chicken]*2[+2]
+  <animania:entity_egg_chicken_random> : [
+    <harvestcraft:groundchickenitem>, # Ground Chicken
+    <tconstruct:edible:12>,           # Chicken Jerky
+    <ore:blockMeatChicken>,           # Single Compressed Chicken
+  ],
+
+  # [Random Goat] from [Ground Venison]*2[+2]
+  <animania:entity_egg_goat_random> : [
+    <harvestcraft:groundvenisonitem>, # Ground Venison
+    <ore:boneWither>,                 # Necrotic Bone
+    <endreborn:food_ender_flesh>,     # Mysical Flesh
+  ],
+
+  # [Random Sheep] from [Ground Mutton]*2[+2]
+  <animania:entity_egg_sheep_random> : [
+    <harvestcraft:groundmuttonitem>,    # Ground Mutton
+    <ore:wool>,                         # White Wool
+    <harvestcraft:hardenedleatheritem>, # Hardened Leather
+  ],
+} as IIngredient[][IItemStack] {
+  mods.rustic.Condenser.addRecipe(output, ingrs, <scalinghealth:heartdust>, <tconstruct:edible:33>, <fluid:wine> * 1000, 40);
+}

@@ -580,3 +580,13 @@ craft.remake(<iceandfire:fishing_spear>, ["pretty",
   "w": <ore:woolPrime>, # Wool (Dorset, Brown)
   "M": <extrautils2:decorativesolidwood>, # Magical Planks
 });
+
+# Add obtaining
+# [Dreadwood Log]*8 from [Dread Shard][+1]
+craft.make(<iceandfire:dreadwood_log> * 8, ["pretty",
+  "# # #",
+  "# D #",
+  "# # #"], {
+  "#": <randomthings:spectrelog>, # Spectre Wood
+  "D": <iceandfire:dread_shard>,  # Dread Shard
+});

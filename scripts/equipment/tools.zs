@@ -23,7 +23,6 @@ import crafttweaker.item.IItemStack as IItemStack;
 	<botania:manasteelshears>, 
 	<botania:elementiumpick>,
 	<botania:elementiumshovel>,
-	<botania:elementiumaxe>,
 	<botania:elementiumsword>,
 	<botania:elementiumshears>,
 

@@ -4,6 +4,7 @@ import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.jaopca.JAOPCA;
 import mods.jaopca.OreEntry;
+import mods.ctutils.utils.Math.sqrt;
 
 # ######################################################################
 #
@@ -11,7 +12,8 @@ import mods.jaopca.OreEntry;
 #
 # ######################################################################
 
-# Remove cheese recipe from milk
+# Remove cheese recipe from milk and from regular cheese
+recipes.remove(<rats:block_of_cheese>);
 mods.tconstruct.Casting.removeBasinRecipe(<rats:block_of_cheese>);
 
 for item in [
@@ -22,19 +24,21 @@ for item in [
 	utils.rh(item);
 }
 
-# Cage
-remake("rats_rat_cage", <rats:rat_cage>, [
-	[<ore:stickIron>, <ore:stickIron>, <ore:stickIron>], 
-	[<ore:stickIron>, <ore:stickIron>, <ore:stickIron>], 
-	[<mekanism:polyethene:2>, <animania:wool:*>, <mekanism:polyethene:2>]
-]);
+# [Rat Cage] from [Wool (Suffolk, Brown)][+2]
+craft.remake(<rats:rat_cage>, ["pretty",
+  "╱ ╱ ╱",
+  "╱ ╱ ╱",
+  "O w O"], {
+  "╱": <ore:stickIron>, # Iron Rod
+  "O": <ore:plastic>, # Raw Plastic
+  "w": <ore:woolPrime>, # Wool (Suffolk, Brown)
+});
 
-# Breeding Lantern
-remake("rat_breeding_lantern", <rats:rat_breeding_lantern>, [
-	[null, <randomthings:escaperope>.anyDamage(), null], 
-	[<scalinghealth:heartdust>, <minecraft:potion>.withTag({Potion: "extrautils2:xu2.love"}), <scalinghealth:heartdust>], 
-	[null, <scalinghealth:heartdust>, null]
-]);
+# [Rat Breeding Lantern] from [Heart Dust][+1]
+craft.reshapeless(<rats:rat_breeding_lantern>, "E▲", {
+  "E": <randomthings:escaperope>.anyDamage(), # Escape Rope
+  "▲": <scalinghealth:heartdust>,             # Heart Dust
+});
 
 # Rat upgrade function
 function ratUpgrade(name as string, result as IItemStack, mat as IIngredient){
@@ -169,8 +173,14 @@ scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <rats:creative_cheese>,
 #
 # ######################################################################
 
-# Remove original marbled cheese recipe
-recipes.remove(<rats:marbled_cheese_raw>);
+# [Raw Marbled Cheese]*9 from [Raw Marbled Cheese][+1]
+craft.remake(<rats:marbled_cheese_raw> * 9, ["pretty",
+  "M M M",
+  "M R M",
+  "M M M"], {
+  "M": <ore:stoneMarble>, # Marble
+  "R": <rats:marbled_cheese_raw>, # Raw Marbled Cheese
+});
 
 # Raw Plastic from squeeser
 furnace.remove(<rats:raw_plastic>);
@@ -224,8 +234,8 @@ var allCoinsConversions as IItemStack[] = [
 
 var k as int = 0;
 while (k < allCoinsConversions.length) {
-    mods.rats.recipes.addGemcutterRatRecipe(allCoinsConversions[k+1], allCoinsConversions[k] * 4);
-    k += 2;
+  mods.rats.recipes.addGemcutterRatRecipe(allCoinsConversions[k+1], allCoinsConversions[k] * 4);
+  k += 2;
 }
 
 # Magic bean
@@ -326,11 +336,11 @@ craft.reshapeless(<rats:assorted_vegetables>, "BPCBPCBPC", {
 
 #--------------------------------------------------------------------------------------
 # Garbage Pile recipe based on various item parameters
-val ph = <betterquesting:placeholder>.withTag({display:{Name:"§k--§r Any §eDIFFERENT§r item §k--"}}).withLore(["§6Affect output amount§r"]);
+val ph = <betterquesting:placeholder>.withTag({display:{Name:game.localize("e2ee.garbage.any_different_item")}}).withLore([game.localize("e2ee.garbage.affect_output_amount")]);
 recipes.addShapeless("Garbage_placeholder", <rats:garbage_pile> * 6, [<rats:contaminated_food>,ph,ph,ph,ph,ph,ph,ph,ph,]);
 
 recipes.addHiddenShapeless("Garbage_function", <rats:garbage_pile>, [
-  <rats:contaminated_food>,
+  <rats:contaminated_food>.marked("m8"),
   <*>.marked("m0"),
   <*>.marked("m1"),
   <*>.marked("m2"),
@@ -342,10 +352,10 @@ recipes.addHiddenShapeless("Garbage_function", <rats:garbage_pile>, [
 ], function(out, ins, cInfo) {
 
   # Check unique
-  for i in 0 to 7 {
+  for i in 0 to 8 {
     val a = ins["m"~i];
     if(isNull(a)) return null;
-    for j in (i+1) to 8 {
+    for j in (i+1) to 9 {
       val b = ins["m"~j];
       if(isNull(b)) return null;
       if (a has b) {
@@ -356,22 +366,22 @@ recipes.addHiddenShapeless("Garbage_function", <rats:garbage_pile>, [
 
   # Calculate how much garbage
   var amount = 0.0d;
-  for i in 0 to 8 {
+  for i in 0 to 9 {
     val a = ins["m"~i];
+    if (<rats:contaminated_food> has a) continue;
 
     var v = 1.0d;
-    if(a.maxStackSize != 64) v+=1.5d;
-    if(a.hardness > 8.0f) v+=2.0d;
-    if(a.hardness > 60.0f) v+=6.0d;
-    if(a.hasTag) v+=0.75d;
-    if(!isNull(a.toolClasses) && a.toolClasses.length > 0) v+=2.5d;
-    if(a.isDamageable) v+=1.25d;
-    if(a.isItemBlock) amount -= 0.75d;
-    if(!a.isStackable) v+=2.5d;
-    if(a.burnTime > 300) v+=2.0d;
-    if(a.burnTime > 1600) v+=8.0d;
-    if(!isNull(a.enchantments) && a.enchantments.length > 0) v+=10.0d;
+
+    v += max(0, sqrt(a.hardness + 1) - 1);
+    v += !isNull(a.toolClasses)  && a.toolClasses.length  > 0 ? a.toolClasses.length  : 0;
+    v += !isNull(a.enchantments) && a.enchantments.length > 0 ? pow(3, a.enchantments.length) : 0;
+    v += max(0, sqrt(sqrt(a.burnTime / 10)) - 1);
+    if(a.maxStackSize != 64)              v+=0.5d;
+    if(!a.isStackable)                    v+=0.5d;
+    if(a.hasTag)                          v+=0.5d;
+    if(a.isDamageable)                    v+=0.5d;
     if(a.definition.owner != "minecraft") v+=0.5d;
+    if(a.isItemBlock)                     v-=0.75d;
 
     amount += v;
   }
@@ -379,3 +389,54 @@ recipes.addHiddenShapeless("Garbage_function", <rats:garbage_pile>, [
   return out * max(1, min(64, amount as int));
 }, null);
 #--------------------------------------------------------------------------------------
+# [Mysterious Token Fragment]*2 from [Cheese][+1]
+craft.remake(<rats:token_fragment> * 2, ["pretty",
+  "T T T",
+  "T C T",
+  "T T T"], {
+  "T": <rats:tiny_coin>, # Tiny Coin
+  "C": <ore:foodCheese>, # Cheese
+});
+
+# [Mysterious Token Chunk] from [Block of Cheese][+1]
+craft.remake(<rats:token_piece>, ["pretty",
+  "M M M",
+  "M ■ M",
+  "M M M"], {
+  "M": <rats:token_fragment>, # Mysterious Token Fragment
+  "■": <ore:blockCheese>,     # Block of Cheese
+});
+
+# [Chunky Cheese Token] from [Cheese Wheel (Friesian)][+1]
+craft.remake(<rats:chunky_cheese_token>, ["pretty",
+  "∩ ∩ ∩",
+  "∩ W ∩",
+  "∩ ∩ ∩"], {
+  "∩": <rats:token_piece>, # Mysterious Token Chunk
+  "W": <ore:cheeseWheels>, # Cheese Wheel (Friesian)
+});
+
+#--------------------------------------------------------------------------------------
+# Add additional gemcutter recipes as alternatives
+
+val gemcutterList = [
+  <quark:jasper>                 , <scalingfeast:exhaustingnugget> * 2, # [Exhausting Nugget] from [Jasper]
+  
+  <minecraft:redstone>           , <actuallyadditions:item_crystal>   , # [Restonia Crystal] from [Redstone]
+  <minecraft:dye:4>              , <actuallyadditions:item_crystal:1> , # [Palis Crystal] from [Lapis Lazuli]
+  <minecraft:diamond>            , <actuallyadditions:item_crystal:2> , # [Diamatine Crystal] from [Diamond]
+  <minecraft:emerald>            , <actuallyadditions:item_crystal:4> , # [Emeradic Crystal] from [Emerald]
+  <minecraft:iron_ingot>         , <actuallyadditions:item_crystal:5> , # [Enori Crystal] from [Iron Ingot]
+  <actuallyadditions:item_misc:5>, <actuallyadditions:item_crystal:3> , # [Void Crystal] from [Black Quartz]
+] as IItemStack[];
+
+for i, input in gemcutterList {
+  if (i%2!=0) continue;
+  mods.rats.recipes.addGemcutterRatRecipe(input, gemcutterList[i+1]);
+}
+
+# Add Rat on Arrow
+mods.rustic.Condenser.addRecipe(<rats:rat_arrow>,[
+  <scalinghealth:heartdust>,
+  <rats:rat_pelt>,
+], null, <minecraft:arrow>, <fluid:water> * 50, 40);

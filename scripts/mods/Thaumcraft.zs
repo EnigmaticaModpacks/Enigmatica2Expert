@@ -37,6 +37,7 @@ scripts.wrap.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreLead>, <thermalfo
 # Removing wrong aspects from stuff
 	<ic2:dust:21>.setAspects(<aspect:metallum> * 1);
 	<conarm:armor_trim:*>.setAspects(<aspect:terra>);
+	<harvestcraft:freshwateritem>.removeAspects(<aspect:metallum>);
 
 # [Void Seed*4] from [Insanium Essence][+4]
 craft.remake(<thaumcraft:void_seed> * 4, ["pretty",
@@ -183,7 +184,7 @@ for aspect, ingr in {
   aer     : <minecraft:feather>,
   terra   : <minecraft:mossy_cobblestone>,
   ignis   : <rustic:chili_pepper>,
-  aqua    : <minecraft:potion>.withTag({Potion: "minecraft:water"}),
+  aqua    : <harvestcraft:freshwateritem>,
   ordo    : <advancedrocketry:misc:1>,
   perditio: <minecraft:gunpowder>,
 } as IItemStack[string] {

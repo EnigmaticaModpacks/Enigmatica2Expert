@@ -551,6 +551,27 @@ craft.make(<contenttweaker:knowledge_absorber>, ["pretty",
   "R": <ore:itemResin>, # Sticky Resin
 });
 
+val transformedAbsorber = <contenttweaker:knowledge_absorber>.anyDamage().transform(function(item, player) {
+	val damaged = (item.damage + 1) < item.maxDamage
+		? item.withDamage(item.damage + 1)
+		: null;
+
+	if(
+		isNull(player) ||
+		isNull(player.world) ||
+		player.world.isRemote() ||
+		!item.isEnchanted ||
+		item.enchantments.length < 1
+	) return damaged;
+
+	for ench in item.enchantments {
+		if(ench.definition != <enchantment:minecraft:unbreaking>) continue;
+
+		if(player.world.random.nextDouble() > 1.0d / (ench.level + 1) as double) return item;
+	}
+	return damaged;
+});
+
 # Create "Void Miner" recipes by animals
 for mobName, arr in {
 	Cow     : [<ore:endstone>, <netherendingores:ore_end_modded_1:11>],
@@ -569,7 +590,7 @@ for mobName, arr in {
 	val output = arr[1].itemArray[0];
 	recipes.addShapeless("knowledge_absorber_"~mobName, output * 7, [
 		input, book, input,
-		input, <contenttweaker:knowledge_absorber>.anyDamage().transformDamage(), input, 
+		input, transformedAbsorber, input, 
 		input, input, input,
 	]);
 }

@@ -2,8 +2,6 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.liquid.ILiquidDefinition;
-import mods.tcomplement.highoven.HighOven;
-import mods.tcomplement.highoven.MixRecipeBuilder;
 import crafttweaker.data.IData;
 
 #modloaded tconstruct
@@ -240,7 +238,7 @@ scripts.process.squeeze([<tconstruct:slime_vine_purple_mid>], <liquid:purpleslim
 scripts.process.squeeze([<tconstruct:slime_vine_purple>],     <liquid:purpleslime>*200,  null,  <tconstruct:slime_vine_purple_mid>);
 
 # Remove cheap steel recipe
-HighOven.removeMixRecipe(<liquid:steel>);
+mods.tcomplement.highoven.HighOven.removeMixRecipe(<liquid:steel>);
 
 # More Scorched bricks recipes
 scripts.wrap.immersiveengineering.ArcFurnace.addRecipe(<tcomplement:materials:1>, <minecraft:brick>, <immersiveengineering:material:7>, 10, 512);

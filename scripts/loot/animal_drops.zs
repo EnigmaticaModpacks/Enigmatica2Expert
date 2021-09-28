@@ -11,7 +11,15 @@ import crafttweaker.data.IData;
 #priority 10
 
 # Remove old drop and add new
-function tweak(table as string, poolStr as string, entryToRemove as string, itemToRemove as IItemStack, itemsToAdd as IItemStack[], minMax as int[]) {
+function tweakEx(
+  table as string,
+  poolStr as string,
+  entryToRemove as string,
+  itemToRemove as IItemStack,
+  itemsToAdd as IItemStack[],
+  minMax as int[],
+  isByPlayer as bool
+) {
   
   # Current pool
   var pool = loottweaker.LootTweaker.getTable(table).getPool(poolStr);
@@ -29,13 +37,13 @@ function tweak(table as string, poolStr as string, entryToRemove as string, item
         pool.addItemEntry(smelted, 1, 0, [
           Functions.setCount(minMax[0], minMax[1]), 
           Functions.lootingEnchantBonus(0, 1, 0)
-        ], [{condition: "entity_properties", entity: "this", properties: {"on_fire": true}}]);
+        ], isByPlayer ? [Conditions.killedByPlayer(), {condition: "entity_properties", entity: "this", properties: {"on_fire": true}}] : [{condition: "entity_properties", entity: "this", properties: {"on_fire": true}}]);
       } else {
         # Add non-smelt function
         pool.addItemEntry(itemToAdd, 1, 0, [
           Functions.setCount(minMax[0], minMax[1]), 
           Functions.lootingEnchantBonus(0, 1, 0)
-        ], []);
+        ], isByPlayer ? [Conditions.killedByPlayer()] : []);
       }
     }
   }
@@ -50,6 +58,14 @@ function tweak(table as string, poolStr as string, entryToRemove as string, item
     }
     utils.rh(itemToRemove);
   }
+}
+
+function tweak(table as string, poolStr as string, entryToRemove as string, itemToRemove as IItemStack, itemsToAdd as IItemStack[], minMax as int[]) {
+  tweakEx(table, poolStr, entryToRemove, itemToRemove, itemsToAdd, minMax, false);
+}
+
+function tweak_byPlayer(table as string, poolStr as string, entryToRemove as string, itemToRemove as IItemStack, itemsToAdd as IItemStack[], minMax as int[]) {
+  tweakEx(table, poolStr, entryToRemove, itemToRemove, itemsToAdd, minMax, true);
 }
 
 tweak("quark:entities/crab"                , "legs"     , "quark:crab_leg", <quark:crab_leg>, [<harvestcraft:crabrawitem>], [1,3]);

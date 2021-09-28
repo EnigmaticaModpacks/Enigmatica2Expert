@@ -182,6 +182,6 @@ perfect_fuel.register();
 var x = VanillaFactory.createItem("knowledge_absorber");
 x.maxStackSize = 1;
 x.rarity = "rare";
-x.maxDamage = 10;
+x.maxDamage = 9;
 x.glowing = true;
 x.register();

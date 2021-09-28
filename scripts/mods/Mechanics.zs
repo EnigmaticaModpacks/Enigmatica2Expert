@@ -32,6 +32,7 @@ recipes.addShaped(<mechanics:amplifying_tube>, [
 # Remove excess recipes
 mods.mechanics.removeTubeRecipe(<minecraft:stone>);
 mods.mechanics.removeTubeRecipe(<minecraft:cobblestone>);
+mods.mechanics.removeTubeRecipe(<minecraft:leaves>);
 
 # Blasting powder
 recipes.addShapeless(<mechanics:bursting_powder>, [

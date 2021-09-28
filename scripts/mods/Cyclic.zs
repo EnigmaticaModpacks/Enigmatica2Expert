@@ -81,15 +81,15 @@ craft.remake(<cyclicmagic:charm_speed>, ["pretty",
 	[<ore:gemQuartz>, <ic2:resource:13>, <ore:gemQuartz>], 
 	[<ore:obsidian>, <ore:obsidian>, <ore:obsidian>]]);
 
-# [Forester] from [Conglomerate Of Coal][+3]
+# [Forester] from [Uncolossal Chest][+3]
 craft.remake(<cyclicmagic:block_forester>, ["pretty",
   "▲ § ▲",
-  "# ☺ #",
+  "# U #",
   "# # #"], {
-  "▲": <ore:dustAsh>,                         # Ash
-  "#": <forestry:wood_pile>,                  # Wood Pile
-  "§": <randomthings:slimecube>,              # Slime Cube
-  "☺": <contenttweaker:conglomerate_of_coal>, # Conglomerate Of Coal
+  "▲": <ore:dustAsh>,                     # Ash
+  "§": <randomthings:slimecube>,          # Slime Cube
+  "#": <randomthings:spectreplank>,       # Spectre Planks
+  "U": <colossalchests:uncolossal_chest>, # Uncolossal Chest
 });
 
 # Diamond Anvil
@@ -239,24 +239,20 @@ craft.remake(<cyclicmagic:storage_bag>, ["pretty",
 });
 
 
-# [Ender_Orb] from [Cheese_Wheel_(Friesian)][+2]
-craft.remake(<cyclicmagic:ender_pearl_reuse>, ["pretty",
-  "☼ ▲ ☼",
-  "▲ W ▲",
-  "☼ ▲ ☼"], {
-  "▲": <ore:dustEnderEye>,          # Ender Eye Dust
-  "W": <ore:cheeseWheels>,          # Cheese Wheel (Friesian)
-  "☼": <scalinghealth:crystalshard> # Heart Crystal Shard
+# [Ender Orb] from [Redstone][+3]
+craft.reshapeless(<cyclicmagic:ender_pearl_reuse>, "W▲▬♥", {
+  "W": <ore:cheeseWheels>,       # Cheese Wheel (Friesian)
+  "▲": <ore:dustDimensional>,    # Dimensional Blend
+  "▬": <ore:ingotPulsatingIron>, # Pulsating Iron Ingot
+  "♥": <ore:dustRedstone>,       # Redstone
 });
 
-# [Ender_Orb_Translocator] from [Cheese_Wheel_(Friesian)][+2]
-craft.remake(<cyclicmagic:ender_pearl_mounted>, ["pretty",
-  "T ▲ T",
-  "▲ W ▲",
-  "T ▲ T"], {
-  "▲": <ore:dustEnderEye>,   # Ender Eye Dust
-  "T": <ore:dustDimensional>,
-  "W": <ore:cheeseWheels>    # Cheese Wheel (Friesian)
+# [Ender Orb Translocator] from [Lapis Lazuli][+3]
+craft.reshapeless(<cyclicmagic:ender_pearl_mounted>, "W▲▬◊", {
+  "W": <ore:cheeseWheels>,       # Cheese Wheel (Friesian)
+  "▲": <ore:dustDimensional>,    # Dimensional Blend
+  "▬": <ore:ingotPulsatingIron>, # Pulsating Iron Ingot
+  "◊": <ore:gemLapis>,           # Lapis Lazuli
 });
 
 
@@ -497,9 +493,6 @@ val packagerList = [
 
   [<mctsmelteryio:iceball>   ], [<minecraft:snow> * 2     ],
   [<mctsmelteryio:iceball>   ], [<minecraft:snowball> * 8 ],
-  [<rats:token_fragment>     ], [<rats:tiny_coin> * 9     ],
-  [<rats:token_piece>        ], [<rats:token_fragment> * 9],
-  [<rats:chunky_cheese_token>], [<rats:token_piece> * 9   ],
   
   [<environmentalmaterials:alabaster> * 4], [<minecraft:cobblestone> * 4, <minecraft:dye:15>                   * 5],
   [<environmentalmaterials:alabaster> * 4], [<minecraft:cobblestone> * 4, <biomesoplenty:white_dye>            * 5],

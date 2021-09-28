@@ -311,7 +311,7 @@ function beneficiate(
   # Infernal Furnace
   if (!isNull(JA)) {
     val outTriple = (amount as double * (calc.out1 as double * 3.0d)) as int;
-    val nuggetExtra = utils.getSomething(JA.extraName, ["nugget"], outTriple);
+    val nuggetExtra = utils.getSomething(JA.secondExtraName, ["nugget"], outTriple);
     val input1 = input.itemArray[0].anyAmount();
     if (!isNull(nuggetExtra)) {
       workEx("infernalfurnace", exceptions, [input1], null, null, null, [nuggetExtra], extraChances, null);

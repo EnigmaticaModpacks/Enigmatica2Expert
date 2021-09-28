@@ -569,3 +569,6 @@ add(<ore:gemXorcite>, <endreborn:death_essence>);
 
 # Add missed leaves
 addItems(<ore:treeLeaves>, [<exnihilocreatio:block_infested_leaves>, <exnihilocreatio:block_infesting_leaves>]);
+
+# Add missed seeds, that drops from grass
+addItems(<ore:listAllSeed>, [<rustic:tomato_seeds>, <rustic:chili_pepper_seeds>, <immersiveengineering:seed>]);
