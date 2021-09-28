@@ -253,24 +253,20 @@ function getGroup(entity as string) as IData {
   return null;
 }
 
-function onSpawnEvent(e as EntityLivingSpawnEvent) {
-  if(!e.world.isRemote()) {
-    val iGroup = getGroup(e.entityLivingBase.definition.id);
-    if (!isNull(iGroup) && !isNull(iGroup.groups)){
-      equipEntity(iGroup, e.entityLivingBase, e.world);
-    }
-  }
+function onSpawnEvent(e as crafttweaker.event.EntityJoinWorldEvent) as void {
+  if(e.world.isRemote() || !(e.entity instanceof IEntityLivingBase)) return;
+  val entity as IEntityLivingBase = e.entity;
 
-  e.pass();
+  if(isNull(e.entity.definition) || isNull(e.entity.definition.id)) return;
+  val iGroup = getGroup(entity.definition.id);
+
+  if (isNull(iGroup) || isNull(iGroup.groups)) return;
+  equipEntity(iGroup, entity, e.world);
 }
 
 # -------------------------------
 # Hook on events
 # -------------------------------
-events.onSpecialSpawn(function(event as EntityLivingSpawnEvent){
-  onSpawnEvent(event);
-});
-
-events.onCheckSpawn(function(event as EntityLivingSpawnEvent){
+events.onEntityJoinWorld(function(event as crafttweaker.event.EntityJoinWorldEvent){
   onSpawnEvent(event);
 });
