@@ -133,7 +133,7 @@
             "id:8": "tconstruct:broad_axe_head",
             "Count:3": 1,
             "tag:10": {
-              "Material:8": "sponge"
+              "Material:8": "fusewood"
             },
             "Damage:2": 0,
             "OreDict:8": ""

@@ -66,21 +66,21 @@
         "index:3": 0,
         "choices:9": {
           "0:10": {
-            "id:8": "farmingforblockheads:fertilizer",
+            "id:8": "kirosblocks:flowerbed_thin_block",
             "Count:3": 64,
             "Damage:2": 0,
             "OreDict:8": ""
           },
           "1:10": {
-            "id:8": "farmingforblockheads:fertilizer",
+            "id:8": "kirosblocks:camo_block",
             "Count:3": 64,
-            "Damage:2": 1,
+            "Damage:2": 0,
             "OreDict:8": ""
           },
           "2:10": {
-            "id:8": "farmingforblockheads:fertilizer",
+            "id:8": "kirosblocks:rust_block",
             "Count:3": 64,
-            "Damage:2": 2,
+            "Damage:2": 0,
             "OreDict:8": ""
           }
         }
