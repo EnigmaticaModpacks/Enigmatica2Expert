@@ -1,6 +1,12 @@
+# Custom renames
 item.excompressum:bait_unknown.name=Any Bait
 item.catalyst.name=§dОбсидианский катализатор
 tile.block_decorative_lormyte.name=Лормитовый Блок
+e2ee.tile.basalt_sediment=Базальтовые Отложения
+
+# Manual langs
+e2ee.garbage.any_different_item=§k--§r Любые §eРАЗНЫЕ§r предметы §k--§r
+e2ee.garbage.affect_output_amount=§6Количество меняется§r
 
 # Bugged langs that losed their names
 entity.Villager.shady_merchant=Тенистый торговец
@@ -252,6 +258,7 @@ e2ee.tips.56=[MP] Удерживайте F4 что бы пингануть бл�
 e2ee.tips.57=§bPSI Energy§r restoring when you gather §aXP§r.
 e2ee.tips.58=Успокойте слишком быстрый инструмент нажав "§l\§r".
 e2ee.tips.59=Нажми "§lShift+F8§r" освежить звуковое устройство.
+e2ee.tips.60=§nЖидкостный резервуар§r из Ender IO - топите блоки в лаве что бы получить немного больше лавы.
 
 e2ee.tconstruct.material.spectre.name=Призрачный
 e2ee.tconstruct.material.spectre.description=§bПризрачный\nКаждая деталь удлиняет руки
@@ -262,8 +269,6 @@ e2ee.tconstruct.material.apprentice.description=§oСила исследован
 e2ee.tconstruct.material.spectre_string.name=Призрачная Нить
 e2ee.tconstruct.material.alpha_fur.name=Альфа-мех
 e2ee.tconstruct.material.alpha_fur.description=§bОхлаждение\n§rТормозит цель или нападающих
-
-e2ee.tile.basalt_sediment=Базальтовые Отложения
 
 tile.basalt.name=Базальт
 tile.blackholegenerator.name=Генератор черной дыры

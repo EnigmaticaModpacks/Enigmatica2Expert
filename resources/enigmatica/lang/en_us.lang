@@ -1,6 +1,12 @@
+# Custom renames
 item.excompressum:bait_unknown.name=Any Bait
 item.catalyst.name=§dObsidian Catalyst
 tile.block_decorative_lormyte.name=Lormyte Block
+e2ee.tile.basalt_sediment=Basalt Sediment
+
+# Manual langs
+e2ee.garbage.any_different_item=§k--§r Any §eDIFFERENT§r item §k--§r
+e2ee.garbage.affect_output_amount=§6Affect output amount§r
 
 # Bugged langs that losed their names
 entity.Villager.shady_merchant=Shady Merchant
@@ -253,6 +259,7 @@ e2ee.tips.56=[MP] Hold §lF4§r to ping block.
 e2ee.tips.57=§bPSI Energy§r restoring when you gather §aXP§r.
 e2ee.tips.58=Calm down fastest tool by press "§l\§r".
 e2ee.tips.59=Press "§lShift+F8§r" to refresh sound device.
+e2ee.tips.60=§nFluid Tank§r from Ender IO - When trashing items in §elava§r, a tiny amount more §elava§r will be produced.
 
 
 e2ee.tconstruct.material.spectre.name=Spectre
@@ -264,5 +271,3 @@ e2ee.tconstruct.material.apprentice.description=§oPower of study\n§r1/10 of in
 e2ee.tconstruct.material.spectre_string.name=Spectre String
 e2ee.tconstruct.material.alpha_fur.name=Alpha Fur
 e2ee.tconstruct.material.alpha_fur.description=§bChilling\n§rChills targets or attackers
-
-e2ee.tile.basalt_sediment=Basalt Sediment
