@@ -1,7 +1,7 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
-import crafttweaker.player.IPlayer;
 
+#norun
 #modloaded potioncore
 
 # Potioncore gives ability to jump incredeble hight
