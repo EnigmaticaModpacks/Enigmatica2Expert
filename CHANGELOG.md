@@ -1,97 +1,137 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
 
-# v0.33.3
+# v0.34
+
+## 🟡 Updated Mods
+
+- [**ME Capability Adapter**](https://www.curseforge.com/minecraft/mc-mods/capability-adapter) <sup><sub>capabilityadapter-1.1.3.jar</sub></sup>
+- [**Ender Tweaker**](https://www.curseforge.com/minecraft/mc-mods/endertweaker) <sup><sub>EnderTweaker-1.12.2-1.2.3.jar</sub></sup>
+- [**CreativeCore**](https://www.curseforge.com/minecraft/mc-mods/creativecore) <sup><sub>CreativeCore_v1.10.65_mc1.12.2.jar</sub></sup>
+- [**LittleTiles**](https://www.curseforge.com/minecraft/mc-mods/littletiles) <sup><sub>LittleTiles_v1.5.27_mc1.12.2.jar</sub></sup>
 
 ## 📖 Quest Book
 
-- Quests changes
+- Quests changes and updates
 
 ## ✏️ Recipes
 
-  **New recipes:**
-  - ![](https://git.io/JzX6Q "Purple Slimy Grass")![](https://git.io/JzX69 "Blue Slime Sapling")![](https://git.io/JzX6d "Purple Slime Sapling")
-  - [Knowledge Absorber] combined with different books gives different Ores
-
-  **Misc Changes:**
-  - ![](https://git.io/JzX6D "Canola Oil") and ![](https://git.io/JzX6H "Creosote") give less burn time in Smeltery
-  - ![](https://git.io/JzX6y "Blazing Pyrotheum Tank")![](https://git.io/JzX65 "Gelid Cryotheum Tank")![](https://git.io/JzX6F "Zephyrean Aerotheum Tank")![](https://git.io/JzX67 "Tectonic Petrotheum Tank") can be melted with ![](https://git.io/JtJfb "Phosphor")
-
-### ⛏️ Mining
-
-  - Lower Hardness for some vanilla blocks like ![](https://git.io/JzX6S "Netherrack")
-
-
-
-
-
-
-# v0.33.2
-
-## 📖 Quest Book
-
-- Lower Thaumcraft Gate requirment
-
-## ✏️ Recipes
 
 **New recipes:**
-- ![](https://git.io/JuAPe "Essence Ore")
+- ![](https://git.io/JzX6Q "Purple Slimy Grass")![](https://git.io/JzX69 "Blue Slime Sapling")![](https://git.io/JzX6d "Purple Slime Sapling")
+- [Knowledge Absorber] (new item) combined with different books gives different Ores
+- ![](https://git.io/JuAPf "Treated Wood Planks") in ![](https://git.io/JmVeA "Fluid Tank")
+- ![](https://git.io/Jz9q2 "Transformation Powder") & ![](https://git.io/Jz9qa "Torchberry Plant") by crooking
+- ![](https://git.io/Jn5Zz "Cinderpearl")
+  ![](https://git.io/Jz0Vs "Certus Quartz Nugget")
+  ![](https://git.io/Jz0aA "Copper Ore Piece")
+  ![](https://git.io/Jz0aQ "Arid Garden")![](https://git.io/Jz0VZ "Frost Garden")![](https://git.io/Jz0a7 "Shaded Garden")![](https://git.io/Jz0ad "Windy Garden")![](https://git.io/Jz0Vq "Soggy Garden")![](https://git.io/Jz0V8 "Garden Soup")![](https://git.io/Jz0a5 "Tropical Garden")
+  ![](https://git.io/Jz0Vl "Marble")
+  ![](https://git.io/Jz0ah "Luminous Crafting Table")
+  ![](https://git.io/Jz0VL "Fresh Water")
+  ![](https://git.io/JuAPe "Essence Ore")
   ![](https://git.io/JzVqs "Ferrous-Juniper Sapling")
-  ![](https://git.io/JzVqT "Spawn Stymphalian Bird")
+  ![](https://git.io/JzVqT "Spawn Stymphalian Bird")![](https://git.io/JgexX "Random Peacock")
+  ![](https://git.io/Jgexc "Random Rabbit")
+  ![](https://git.io/Jgexu "Random Cow")
+  ![](https://git.io/Jgexg "Random Pig")
+  ![](https://git.io/JgexK "Random Chicken")
+  ![](https://git.io/JgexC "Random Goat")
+  ![](https://git.io/JgexE "Random Sheep")
+  ![](https://git.io/Jz9qo "Faint Amaranth")
+  ![](https://git.io/Jgex4 "Blood Wood")
+  ![](https://git.io/JcbN2 "Dreadwood Log")
+  ![](https://git.io/Jgexw "Raw Marbled Cheese")
 
 **Cheaper:**
-- ![](https://git.io/JOGg3 "Bituminous Peat")
+- ![](https://git.io/Jz0VI "Stone Wand")
+  ![](https://git.io/Jz0VT "Iron Wand")
+  ![](https://git.io/Jz0Vc "Emerald Apple")
+  ![](https://git.io/JtNTX "Flopper")
+  ![](https://git.io/Jz0Vm "Moonworm")
+  ![](https://git.io/Jz0Vt "Empty Rod")
+  ![](https://git.io/JOGg3 "Bituminous Peat")
   ![](https://git.io/JzVqm "Inferium Watering Can")![](https://git.io/JzVqY "Prudentium Watering Can")![](https://git.io/JzVqq "Intermedium Watering Can")![](https://git.io/JzVqU "Superium Watering Can")![](https://git.io/JzVqt "Supremium Watering Can")
   ![](https://git.io/JzVqk "Precious Emerald")
   ![](https://git.io/JzVq3 "Slime Cube")
   ![](https://git.io/JtJvV "Nature Core")
   ![](https://git.io/JtJFW "Rat Upgrade: Aristoc-Rat")
   ![](https://git.io/JCuh5 "Empowered Phosphor")
-
-**Misc Changes:**
-- ![](https://git.io/JzVqI "Crushed Endstone")![](https://git.io/JsfOp "White Sand") more output in ![](https://git.io/JOv90 "Sieve")
-- ![](https://git.io/JzVqO "Garbage Pile") Added cool recipe and then can be siften in ![](https://git.io/JOv90 "Sieve")
-- ![](https://git.io/JLjc2 "Dirt") cheaper in ![](https://git.io/J3hVE "Wooden Barrel")
-- ![](https://git.io/JzVqL "Iron Ore Piece") add craft in ![](https://git.io/JsegO "Drying Basin")
-
-
-
-
-
-
-# v0.33.1
-
-## 📖 Quest Book
-
-- BetterQuesting: Some Quests changes
-
-## ✏️ Recipes
-
-**New recipes:**
-  - ![](https://git.io/Jn5Zz "Cinderpearl")
-    ![](https://git.io/Jz0Vs "Certus Quartz Nugget")
-    ![](https://git.io/Jz0aA "Copper Ore Piece")
-    ![](https://git.io/Jz0aQ "Arid Garden")![](https://git.io/Jz0VZ "Frost Garden")![](https://git.io/Jz0a7 "Shaded Garden")![](https://git.io/Jz0ad "Windy Garden")![](https://git.io/Jz0Vq "Soggy Garden")![](https://git.io/Jz0V8 "Garden Soup")![](https://git.io/Jz0a5 "Tropical Garden")
-    ![](https://git.io/Jz0Vl "Marble")
-    ![](https://git.io/Jz0ah "Luminous Crafting Table")
-    ![](https://git.io/Jz0VL "Fresh Water")
-  
-**Cheaper:**
-  - ![](https://git.io/Jz0VI "Stone Wand")
-    ![](https://git.io/Jz0VT "Iron Wand")
-    ![](https://git.io/Jz0Vc "Emerald Apple")
-    ![](https://git.io/JtNTX "Flopper")
-    ![](https://git.io/Jz0Vm "Moonworm")
-    ![](https://git.io/Jz0Vt "Empty Rod")
+  ![](https://git.io/JqUJN "Forester")
+  ![](https://git.io/Jgexz "Ender Orb")
+  ![](https://git.io/Jgex8 "Ender Orb Translocator")
+  ![](https://git.io/J03tf "Wyvern Core")
+  ![](https://git.io/JgexW "Draconic Energy Core")
+  ![](https://git.io/Jz9qD "End Seeds")
+  ![](https://git.io/JgexZ "Elevator")
+  ![](https://git.io/Jz9qM "Rat Cage")
+  ![](https://git.io/JgexR "Rat Breeding Lantern")
+  ![](https://git.io/Jsmfs "Heart Dust")
+  ![](https://git.io/JtNTD "V.I.E.W. X (Vaultopic Inventory Explorer Workbot eXtended)")
+  ![](https://git.io/JgexG "Mysterious Token Fragment")![](https://git.io/Jgexr "Mysterious Token Chunk")![](https://git.io/Jgexn "Chunky Cheese Token")
+  ![](https://git.io/JtkK3 "Traveler's Backpack")
   
 **Harder:**
   - ![](https://git.io/Jz0VO "Red Sand")
     ![](https://git.io/Jz0VU "Shipping Bin")
-  
+
 **Misc Changes:**
-  - ![](https://git.io/Jz0VY "Lava") from ![](https://git.io/Jz0aj "Hellbark Wood")
-  - ![](https://git.io/Jz0aF "Soot-covered Redstone") can be washed
-  - ![](https://git.io/JLjc2 "Dirt") in ![](https://git.io/J3hVE "Wooden Barrel") reworked
+- ![](https://git.io/Jz0VY "Lava") from ![](https://git.io/Jz0aj "Hellbark Wood")
+- ![](https://git.io/Jz0aF "Soot-covered Redstone") can be washed
+- ![](https://git.io/JLjc2 "Dirt") in ![](https://git.io/J3hVE "Wooden Barrel") reworked
+- ![](https://git.io/JzVqI "Crushed Endstone")![](https://git.io/JsfOp "White Sand") more output in ![](https://git.io/JOv90 "Sieve")
+- ![](https://git.io/JzVqO "Garbage Pile") Added cool recipe and then can be siften in ![](https://git.io/JOv90 "Sieve")
+- ![](https://git.io/JLjc2 "Dirt") cheaper in ![](https://git.io/J3hVE "Wooden Barrel")
+- ![](https://git.io/JzVqL "Iron Ore Piece") add craft in ![](https://git.io/JsegO "Drying Basin")
+- This items could be melted into ![](https://git.io/JzqUd "Molten Iron"):  
+  > ![](https://git.io/JgeGF "Ferrous-Juniper Log")
+  > ![](https://git.io/JgeGN "Ferrous-Juniper Log")
+  > ![](https://git.io/JgeGb "Ferrous-Juniper Planks")
+  > ![](https://git.io/JgeGd "Raw Ferrous-Juniper Planks")
+- ![](https://git.io/JzX6D "Canola Oil") and ![](https://git.io/JzX6H "Creosote") give less burn time in Smeltery
+- ![](https://git.io/JzX6y "Blazing Pyrotheum Tank")![](https://git.io/JzX65 "Gelid Cryotheum Tank")![](https://git.io/JzX6F "Zephyrean Aerotheum Tank")![](https://git.io/JzX67 "Tectonic Petrotheum Tank") can be melted with ![](https://git.io/JtJfb "Phosphor")
+- ![](https://git.io/J3hVE "Wooden Barrel") bit more ingredients for Composting
+- ![](https://git.io/Jgex0 "Elementium Axe") return from purged to cut ![](https://git.io/Jgex2 "Gaia Guardian's Head") and melt it
+- ![](https://git.io/Jgexl "Gold Ingot") now dropping x20 times more when Zombie Pigman killed by player
+- ![](https://git.io/JgexB "Block of Cheese") removed Crafting Table recipe
+- ![](https://git.io/Jz9qS "Firefly") can be recycled
+- ![](https://git.io/Jgexa "Rat Upgrade: Gemcutter") now can obtain ![](https://git.io/JgexV "Exhausting Nugget") and AA crystals
+- ![](https://git.io/JgexM "Stardust")![](https://git.io/Jgex6 "Cobalt Ore Dust") obtainable as byproduct for several ores
+- ![](https://git.io/JcNG4 "Combiner") enable and add recipes
+- ![](https://git.io/JgexP "Primal Mana") new recipe from ![](https://git.io/Jgexi "Spectre") and ![](https://git.io/Jgexo "Flux Goo")
+- **Infernal Furnace** now output secondary extra (was first extra)
+
+## 🔵 Mods
+
+- ### 🐀 Rats
+
+  - Enable rats despawning
+    > For some reason in Twilight Forest rats spawned continuously
+    > This change should stop it
+
+- ### 🔨 Tinker's Construct
+
+  - EquipGeneration increase performance
+    > Instead using `onSpecialSpawn` and `onCheckSpawn` events
+    > now using `onEntityJoinWorld` that would increase performance
+
+- ### 🛸 EnderIO
+
+  - Buff ![](https://git.io/Jgex1 "Pressurized Fluid Tank") up to 128 buckets
+
+- ### 🗳️ Colossal Chest
+
+  - Max Size set to `5`
+
+- ### 🍯 Potion Core
+
+  - Temporary disable all recipes
+    > Something broke and sometimes brewing output ![](https://git.io/Jz9qK "Potion of Doom") instead of right potion result
+
+### ⛏️ Mining
+
+  - Lower Hardness for some vanilla blocks like ![](https://git.io/JzX6S "Netherrack")
+
 
 
 
