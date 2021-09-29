@@ -600,10 +600,10 @@
         "isServerPack": false,
         "FileNameOnDisk": "portabledrill-1.2.1.jar"
       },
-      "dateInstalled": "2020-12-08T16:27:26.3225828Z",
-      "dateUpdated": "2021-01-15T21:02:15.9610729Z",
-      "dateLastUpdateAttempted": "2021-01-15T21:02:15.9610729Z",
-      "status": 5,
+      "dateInstalled": "2021-09-29T13:33:18.8724615Z",
+      "dateUpdated": "2021-09-29T13:33:18.8733768Z",
+      "dateLastUpdateAttempted": "2021-09-29T13:33:18.8733768Z",
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -4421,26 +4421,26 @@
       "addonID": 281657,
       "gameInstanceID": "06685845-4f98-4fe1-bf3c-da90768e9d32",
       "installedFile": {
-        "id": 3196507,
-        "displayName": "capabilityadapter-1.1.1.jar",
-        "fileName": "capabilityadapter-1.1.1.jar",
-        "fileDate": "2021-02-08T04:45:13.493Z",
-        "fileLength": 81051,
+        "id": 3474317,
+        "displayName": "capabilityadapter-1.1.3.jar",
+        "fileName": "capabilityadapter-1.1.3.jar",
+        "fileDate": "2021-09-26T21:31:51.793Z",
+        "fileLength": 81749,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3196/507/capabilityadapter-1.1.1.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3474/317/capabilityadapter-1.1.3.jar",
         "isAlternate": false,
-        "alternateFileId": 3196508,
+        "alternateFileId": 3474318,
         "dependencies": [
           {
             "id": 0,
-            "addonId": 223794,
+            "addonId": 248453,
             "type": 3,
             "fileId": 0
           },
           {
             "id": 0,
-            "addonId": 248453,
+            "addonId": 223794,
             "type": 3,
             "fileId": 0
           }
@@ -4449,13 +4449,13 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1845370366,
+            "fingerprint": 2991576662,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "me",
-            "fingerprint": 2025992454,
+            "fingerprint": 2470111891,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -4467,7 +4467,7 @@
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 3948304252,
+            "fingerprint": 1203101350,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -4478,7 +4478,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 3674945999,
+        "packageFingerprint": 4115154708,
         "gameVersion": [
           "1.12",
           "1.12.1",
@@ -4494,12 +4494,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "capabilityadapter-1.1.1.jar"
+        "FileNameOnDisk": "capabilityadapter-1.1.3.jar"
       },
       "dateInstalled": "2020-02-05T17:37:14.6848133Z",
-      "dateUpdated": "2021-09-19T07:37:42.0241986Z",
-      "dateLastUpdateAttempted": "2021-09-19T07:37:42.0241986Z",
-      "status": 5,
+      "dateUpdated": "2021-09-29T12:25:19.8261453Z",
+      "dateLastUpdateAttempted": "2021-09-29T12:25:19.8261453Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -16552,26 +16552,26 @@
       "addonID": 312195,
       "gameInstanceID": "06685845-4f98-4fe1-bf3c-da90768e9d32",
       "installedFile": {
-        "id": 3333886,
-        "displayName": "EnderTweaker-1.12.2-1.2.2.jar",
-        "fileName": "EnderTweaker-1.12.2-1.2.2.jar",
-        "fileDate": "2021-06-01T17:37:43.287Z",
-        "fileLength": 31302,
+        "id": 3474382,
+        "displayName": "EnderTweaker-1.12.2-1.2.3.jar",
+        "fileName": "EnderTweaker-1.12.2-1.2.3.jar",
+        "fileDate": "2021-09-26T23:48:19.683Z",
+        "fileLength": 31753,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3333/886/EnderTweaker-1.12.2-1.2.2.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3474/382/EnderTweaker-1.12.2-1.2.3.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
             "id": 0,
-            "addonId": 239197,
+            "addonId": 64578,
             "type": 3,
             "fileId": 0
           },
           {
             "id": 0,
-            "addonId": 64578,
+            "addonId": 239197,
             "type": 3,
             "fileId": 0
           }
@@ -16580,25 +16580,26 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1015137669,
+            "fingerprint": 463015484,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "shadows",
-            "fingerprint": 2072541912,
+            "fingerprint": 944460897,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 964706282,
+            "fingerprint": 1798522450,
             "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 1249230574,
+        "packageFingerprint": 4093035393,
         "gameVersion": [
+          "Forge",
           "1.12.2"
         ],
         "hasInstallScript": false,
@@ -16610,12 +16611,12 @@
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "EnderTweaker-1.12.2-1.2.2.jar"
+        "FileNameOnDisk": "EnderTweaker-1.12.2-1.2.3.jar"
       },
-      "dateInstalled": "2021-06-02T19:07:50.6882203Z",
-      "dateUpdated": "2021-06-02T19:07:50.781969Z",
-      "dateLastUpdateAttempted": "2021-06-02T19:07:50.781969Z",
-      "status": 5,
+      "dateInstalled": "2021-09-29T12:26:17.715542Z",
+      "dateUpdated": "2021-09-29T12:26:17.7185331Z",
+      "dateLastUpdateAttempted": "2021-09-29T12:26:17.7185331Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -19230,7 +19231,7 @@
       "dateInstalled": "2020-07-21T11:49:52.5655652Z",
       "dateUpdated": "2021-09-20T11:30:23.107541Z",
       "dateLastUpdateAttempted": "2021-09-20T11:30:23.107541Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -20273,10 +20274,10 @@
         "isServerPack": false,
         "FileNameOnDisk": "armorcurve-1.2.9.jar"
       },
-      "dateInstalled": "2021-04-25T09:08:37.0546991Z",
-      "dateUpdated": "2021-04-25T09:08:37.1046478Z",
-      "dateLastUpdateAttempted": "2021-04-25T09:08:37.1046478Z",
-      "status": 5,
+      "dateInstalled": "2021-09-29T12:27:52.1383154Z",
+      "dateUpdated": "2021-09-29T12:27:52.1393131Z",
+      "dateLastUpdateAttempted": "2021-09-29T12:27:52.1393131Z",
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -28951,14 +28952,14 @@
       "addonID": 257814,
       "gameInstanceID": "06685845-4f98-4fe1-bf3c-da90768e9d32",
       "installedFile": {
-        "id": 3467502,
-        "displayName": "CreativeCore_v1.10.64_mc1.12.2.jar",
-        "fileName": "CreativeCore_v1.10.64_mc1.12.2.jar",
-        "fileDate": "2021-09-21T08:21:16.817Z",
-        "fileLength": 1289953,
+        "id": 3467576,
+        "displayName": "CreativeCore_v1.10.65_mc1.12.2.jar",
+        "fileName": "CreativeCore_v1.10.65_mc1.12.2.jar",
+        "fileDate": "2021-09-21T11:14:55.707Z",
+        "fileLength": 1290012,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3467/502/CreativeCore_v1.10.64_mc1.12.2.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3467/576/CreativeCore_v1.10.65_mc1.12.2.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -28978,7 +28979,7 @@
           },
           {
             "foldername": "com",
-            "fingerprint": 2103034958,
+            "fingerprint": 4082932824,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -28989,7 +28990,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 3058122146,
+        "packageFingerprint": 95026547,
         "gameVersion": [
           "1.12.2"
         ],
@@ -29002,11 +29003,11 @@
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "CreativeCore_v1.10.64_mc1.12.2.jar"
+        "FileNameOnDisk": "CreativeCore_v1.10.65_mc1.12.2.jar"
       },
       "dateInstalled": "2020-04-23T09:32:25.2795745Z",
-      "dateUpdated": "2021-09-21T10:38:14.9300963Z",
-      "dateLastUpdateAttempted": "2021-09-21T10:38:14.9300963Z",
+      "dateUpdated": "2021-09-29T12:27:06.7566561Z",
+      "dateLastUpdateAttempted": "2021-09-29T12:27:06.7566561Z",
       "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
@@ -29183,14 +29184,14 @@
       "addonID": 257818,
       "gameInstanceID": "06685845-4f98-4fe1-bf3c-da90768e9d32",
       "installedFile": {
-        "id": 3467543,
-        "displayName": "LittleTiles_v1.5.22_mc1.12.2.jar",
-        "fileName": "LittleTiles_v1.5.22_mc1.12.2.jar",
-        "fileDate": "2021-09-21T10:11:37.623Z",
-        "fileLength": 2247099,
+        "id": 3475272,
+        "displayName": "LittleTiles_v1.5.27_mc1.12.2.jar",
+        "fileName": "LittleTiles_v1.5.27_mc1.12.2.jar",
+        "fileDate": "2021-09-28T02:23:22.413Z",
+        "fileLength": 2248731,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3467/543/LittleTiles_v1.5.22_mc1.12.2.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3475/272/LittleTiles_v1.5.27_mc1.12.2.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
@@ -29217,7 +29218,7 @@
           },
           {
             "foldername": "com",
-            "fingerprint": 2083956357,
+            "fingerprint": 2552431265,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -29228,7 +29229,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 484824972,
+        "packageFingerprint": 310610867,
         "gameVersion": [
           "1.12.2"
         ],
@@ -29241,11 +29242,11 @@
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "LittleTiles_v1.5.22_mc1.12.2.jar"
+        "FileNameOnDisk": "LittleTiles_v1.5.27_mc1.12.2.jar"
       },
       "dateInstalled": "2021-06-24T06:16:29.6931072Z",
-      "dateUpdated": "2021-09-21T10:38:00.1370974Z",
-      "dateLastUpdateAttempted": "2021-09-21T10:38:00.1370974Z",
+      "dateUpdated": "2021-09-29T12:25:41.460553Z",
+      "dateLastUpdateAttempted": "2021-09-29T12:25:41.460553Z",
       "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
@@ -31873,7 +31874,7 @@
       "dateInstalled": "2021-09-07T09:22:45.7844819Z",
       "dateUpdated": "2021-09-20T11:30:19.7336087Z",
       "dateLastUpdateAttempted": "2021-09-20T11:30:19.7336087Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -36524,7 +36525,7 @@
       "dateInstalled": "2021-09-20T11:31:03.4848591Z",
       "dateUpdated": "2021-09-20T11:31:03.4868654Z",
       "dateLastUpdateAttempted": "2021-09-20T11:31:03.4868654Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
