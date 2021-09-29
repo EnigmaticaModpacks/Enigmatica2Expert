@@ -43,7 +43,7 @@ const reverseNaturalSort = (a,b) => naturalSort(reverseStr(a), reverseStr(b))
 
 const itemize = (id,meta) => id + (meta!=0 ? ':'+meta : '')
 const $ = (source, id, meta, count, nbt, modifiers) => {
-  return `<${source}:${id}${meta?':'+meta:''}>${nbt?'.withTag('+nbt+')':''}${modifiers||''}${parseInt(count)>1?' * '+(count|0):''}`
+  return `<${source}:${id}${meta&&meta!='0'?':'+meta:''}>${nbt?'.withTag('+nbt+')':''}${modifiers||''}${parseInt(count)>1?' * '+(count|0):''}`
 }
 
 

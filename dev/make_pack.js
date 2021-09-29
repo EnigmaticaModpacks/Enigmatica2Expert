@@ -17,6 +17,7 @@ const del = require('del')
 const replace = require('replace-in-file')
 
 const dot=()=>write('.')
+const getFileName = (s) => s.replace(/^.*[\\/]/, '')
 
 const mcClientPath    = process.cwd()
 const ruOverrides     = path.join(mcClientPath, 'dev/lang/ru_ru/')
@@ -71,6 +72,11 @@ const serverOnlyFiles = globs([
   'config/sampler.ini',
 ])
 
+// Server only files moved to root
+const serverOnlyFiles_toRoot = globs([
+  'server/*',
+])
+
 
 // Remove old tmp folder
 write(`Clearing ${tmpDir} ... `)
@@ -108,7 +114,7 @@ const removeGlob = [
   '!scripts',
   '!structures',
 
-  // Mod-depended files
+  // Remove Mod-depended files
   'config/Extended item information.cfg',
   'config/satako.cfg',
   'config/Probe.cfg',
@@ -144,7 +150,7 @@ end()
 function makeZip(zipPath) {
   const interval = setInterval(()=>write('.'), 500)
 
-  write('Create zip ... ')
+  write('📥 Create zip ... ')
   const zip = new AdmZip()
   zip.addLocalFolder('./')
   write(' writing zip ... ')
@@ -167,13 +173,14 @@ makeZip(`${distrDir}E2E-Extended_${version}.zip`)
 
 ********************************************************/
 
-write('Installing server. Removing mods ')
+write('Installing server. Removing old folders ')
 fs.rmdirSync(`${serverPath}/mods/`   , { recursive: true }); dot()
+fs.rmdirSync(`${serverPath}/config/` , { recursive: true }); dot()
 fs.rmdirSync(`${serverPath}/scripts/`, { recursive: true }); end()
 
 
 write('copying files ')
-globs([
+const serverFilesList = globs([
   '*',
   '!minemenu',
   '!resourcepacks',
@@ -248,7 +255,8 @@ globs([
   '!mods/mekanismfluxified*.jar',
 */
 ])
-.forEach(copyToServer(process.cwd()))
+
+serverFilesList.forEach(copyToServer(process.cwd()))
 serverOnlyFiles.forEach(copyToServer(mcClientPath))
 
 /**
@@ -262,13 +270,19 @@ function copyToServer(relativeSource) {
       path.join(serverPath, path.relative(relativeSource, fPath)), 
       {overwrite: true}
     )
-  }  
+  }
 }
-
+write(' copying overrides ... ')
+fs.copySync(serverOverrides, serverPath, {overwrite: true})
 end()
 
-write('copying overrides ... ')
-fs.copySync(serverOverrides, serverPath, {overwrite: true})
+write('📥 Create server zip ... ')
+const serverZip = new AdmZip()
+serverFilesList       .forEach(fPath=>serverZip.addLocalFile(path.relative(process.cwd(), fPath)))
+serverOnlyFiles       .forEach(fPath=>serverZip.addLocalFile(fPath, path.relative(mcClientPath, fPath)))
+serverOnlyFiles_toRoot.forEach(fPath=>serverZip.addLocalFile(fPath, getFileName(fPath)))
+write(' writing zip ... ')
+serverZip.writeZip(`${distrDir}E2E-Extended_${version}_server.zip`)
 end()
 
 /********************************************************

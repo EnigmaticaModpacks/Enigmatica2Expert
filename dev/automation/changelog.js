@@ -82,6 +82,7 @@ const annotations = [
     🙋‍♀️ Quark
     🗳️ Colossal Chest
     🍗 Scaling Feast
+    🍯 Potion Core
   `.trim().split('\n').map(l=>l.trim().split(' ')).map(([c,...r])=>[c, r.join(' ')])],
   ['🔄', 'Misc Changes', [
     ['🧱', 'Technical'],
