@@ -14,6 +14,7 @@
 
 const glob = require('glob')
 const _ = require('lodash')
+const {table, getBorderCharacters} = require('table')
 
 const {
   injectInFile,
@@ -32,6 +33,8 @@ const {
   getPDF,
   loadJson,
   getItemOredictSet,
+  getSubMetas,
+  getByOredict,
 } = require('../lib/utils.js')
 
 function saveObjAsJson(obj, filename) {
@@ -47,6 +50,12 @@ const $ = (source, id, meta, count, nbt, modifiers) => {
 }
 
 
+const flatTable = (arr) => table(arr, {
+  border: getBorderCharacters('void'),
+  columnDefault: { paddingLeft: 0,paddingRight: 0 },
+  drawHorizontalLine: () => false
+})
+
 // ----------------------------------
 
 const init = module.exports.init = async function() {
@@ -54,7 +63,7 @@ const init = module.exports.init = async function() {
 
   glob.sync('scripts/**/*.zs').forEach(filePath => {
     const zsfileContent = loadText(filePath)
-    for (const match of zsfileContent.matchAll(/\\*\s*Inject_js((\(|\{)[\s\S\n\r]*?(\)|\}))\*\//gm)) {
+    for (const match of zsfileContent.matchAll(/\/\*\s*Inject_js((\(|\{)[\s\S\n\r]*?(\)|\}))\*\//gm)) {
       const lineNumber = zsfileContent.substring(0, match.index).split('\n').length
       const [, whole, p1, p2] = match
       occurences.push({
@@ -84,11 +93,14 @@ const init = module.exports.init = async function() {
       }
     }
 
-    const injectString = Array.isArray(injectValue)
-      ? injectValue.join('\n')
-      : injectValue
+    const injectString = !Array.isArray(injectValue)
+      ? injectValue
+      : (injectValue.every(Array.isArray)
+        ? flatTable(injectValue)
+        : injectValue.join('\n')
+      )
     
-    injectInFile(cmd.filePath, cmd.capture, '\n/**/', '*/\n'+injectString)
+    injectInFile(cmd.filePath, cmd.capture, '/**/', '*/\n'+injectString+'\n')
     write('.')
   }
 

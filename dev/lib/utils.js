@@ -179,13 +179,32 @@ module.exports.isJEIBlacklisted = (def,meta) => (
 
 let itemsTree
 
-/** @type {function(string,string=):Set<string>} */
-module.exports.getItemOredictSet = (id,meta='0') => ((itemsTree ??= 
+const initItemsTree = ()=> itemsTree ??= 
   getCSV('config/tellme/items-csv.csv').reduce(
   (result, o) => (
     (result[o['Registry name']] ??= {})[o['Meta/dmg']] = new Set(o['Ore Dict keys'].split(','))
   , result), {})
-)[id] ??= {})[meta=='*' ? 0 : meta] ??= new Set()
+
+/** @type {function(string,string=):Set<string>} */
+module.exports.getItemOredictSet = (id,meta='0') => (initItemsTree()[id] ??= {})[meta=='*' ? 0 : meta] ??= new Set()
+
+module.exports.getSubMetas = (definition) => Object.keys(initItemsTree()[definition] ??= {}).map(s=>parseInt(s))
+
+module.exports.getByOredict = (ore) => //_.uniq(
+  getCSV('config/tellme/items-csv.csv')
+  .filter(o=>o['Ore Dict keys'].split(',').includes(ore))
+  .map(o=>({
+    mod: o['Mod name'],
+    id: o['Registry name'],
+    itemId: o['Item ID'],
+    damage: parseInt(o['Meta/dmg']),
+    hasSubtypes: o['Subtypes'],
+    display: o['Display name'],
+    ores: o['Ore Dict keys'].split(','),
+    owner: o['Registry name'].split(':')[0],
+    commandString: `<${o['Registry name']}${o['Meta/dmg']=='0'?'':':'+o['Meta/dmg']}>`
+  }))
+  // .map(o=>`<${o['Registry name']}${o['Meta/dmg']=='0'?'':':'+o['Meta/dmg']}>`))
 
 
 const escapeRegex = function(string) {

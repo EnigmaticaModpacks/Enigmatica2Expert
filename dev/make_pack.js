@@ -7,7 +7,6 @@
  */
 
 //@ts-check
-
 const { execSync } = require('child_process')
 const fs = require('fs-extra')
 const path = require('path')
@@ -18,6 +17,7 @@ const replace = require('replace-in-file')
 
 const dot=()=>write('.')
 const getFileName = (s) => s.replace(/^.*[\\/]/, '')
+const isDirectory = (f) => fs.existsSync(f) && fs.lstatSync(f).isDirectory()
 
 const mcClientPath    = process.cwd()
 const ruOverrides     = path.join(mcClientPath, 'dev/lang/ru_ru/')
@@ -70,11 +70,6 @@ const modsToCopy = globs([
 const serverOnlyFiles = globs([
   'mods/sampler-*.jar',
   'config/sampler.ini',
-])
-
-// Server only files moved to root
-const serverOnlyFiles_toRoot = globs([
-  'server/*',
 ])
 
 
@@ -148,14 +143,11 @@ end()
  * @param {string} zipPath
  */
 function makeZip(zipPath) {
-  const interval = setInterval(()=>write('.'), 500)
-
   write('📥 Create zip ... ')
   const zip = new AdmZip()
   zip.addLocalFolder('./')
   write(' writing zip ... ')
   zip.writeZip(zipPath)
-  clearInterval(interval)
   end()
 }
 
@@ -184,6 +176,9 @@ const serverFilesList = globs([
   '*',
   '!minemenu',
   '!resourcepacks',
+  '!patchouli_books',
+  '!resources',
+  'resources/**/*.lang',
   'mods/*',
   '!mods',
   
@@ -255,7 +250,6 @@ const serverFilesList = globs([
   '!mods/mekanismfluxified*.jar',
 */
 ])
-
 serverFilesList.forEach(copyToServer(process.cwd()))
 serverOnlyFiles.forEach(copyToServer(mcClientPath))
 
@@ -276,14 +270,36 @@ write(' copying overrides ... ')
 fs.copySync(serverOverrides, serverPath, {overwrite: true})
 end()
 
+
+// Server only files moved to root
+const serverOnlyToRut = globs([
+  'server/*',
+])
+
 write('📥 Create server zip ... ')
 const serverZip = new AdmZip()
-serverFilesList       .forEach(fPath=>serverZip.addLocalFile(path.relative(process.cwd(), fPath)))
-serverOnlyFiles       .forEach(fPath=>serverZip.addLocalFile(fPath, path.relative(mcClientPath, fPath)))
-serverOnlyFiles_toRoot.forEach(fPath=>serverZip.addLocalFile(fPath, getFileName(fPath)))
+addToServerZip(serverFilesList, f=>path.relative(process.cwd(), f))
+addToServerZip(serverOnlyFiles, f=>path.relative(mcClientPath, f))
+addToServerZip(serverOnlyToRut, f=>getFileName(f))
 write(' writing zip ... ')
 serverZip.writeZip(`${distrDir}E2E-Extended_${version}_server.zip`)
 end()
+
+/**
+ * 
+ * @param {string[]} filesAndFolders Absolute pathes of folder and files that should be added to zip
+ * @param {(f:string) => string} zipPath_cb Callback to change path inside zip archive
+ */
+function addToServerZip(filesAndFolders, zipPath_cb) {
+  filesAndFolders.forEach(f=>{
+    const zipPath = zipPath_cb(f)
+    const dirName = path.dirname(zipPath)
+    isDirectory(f)
+      ? serverZip.addLocalFolder(f, zipPath)
+      : serverZip.addLocalFile(f, dirName==='.' ? undefined : dirName)
+  })
+}
+
 
 /********************************************************
 
