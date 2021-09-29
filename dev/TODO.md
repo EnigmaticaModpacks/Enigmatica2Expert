@@ -9,8 +9,9 @@ Items that should have more uses:
 ![](https://git.io/JtyNo "Kelp")
 ![](https://git.io/JnAYd "Cobweb")
 ![](https://git.io/JcCWr "Magical Planks")
-[Bacon] (tinker)
-[Bottle of Wine]
+![](https://git.io/Jz9q1 "Bacon")
+![](https://git.io/Jz9qX "Bottle of Wine")
+![](https://git.io/JuAPt "Mysical Flesh")
 
 ### Tier 2
 
@@ -30,6 +31,7 @@ Items that should have more uses:
 ![](https://git.io/JznPT "Lormyte Block")
 [Quickdry Concrete]
 [Cow Written Book]
+[Exhausting Ingot]
 
 ### Tier 3
 
@@ -87,23 +89,22 @@ Liquids that should have more uses:
 
 # TODO
 
-- [ ] 🍗 [Exhaustion Ore] integrate in tinkers
-- [ ] ✏️ **Colossal Chests** rethink recipes
-- [ ] ✏️ ![](https://git.io/JznPk "Rat on Arrow") add craft, add Dispenser Behaviour, add quest.
-- [ ] ✏️ ![](https://git.io/JznPI "Amplifying Tube") remove vanilla recipes
-- [ ] ✏️ https://i.imgur.com/fUbNLGh.png
-- [ ] ✏️ [Garbage Pile] describ that craft should be from DIFFERENT items. Fix last slot amount, Add Lang
-- [ ] ✏️ [Potion Of Doom] fix brew
+- [x] ✏️ [Primal Mana] add craft
+- [ ] ✏️ Check recipes for normal mode from v0.32
+- [ ] ✏️ ![](https://git.io/Jz9qK "Potion of Doom") fix brew (reason: potioncore)
 - [ ] ✏️ Rats as alt for some machine recipes
 - [ ] ✏️ Add Twilight Forest spawners to Skyblock craft
-- [ ] ✏️ [Transformation powder] better recipe
-- [ ] ✏️ [Torchberry plant] add
-- [ ] ✏️ [Knowledge Absorber] add Unbreaking mechanics
-- [ ] 🔄 [Bean Pod] add drop list
-- [ ] 🔄 [Infin Furnace] (req) front texture empty on client
+- [x] ✏️ [Knowledge Absorber] add Unbreaking mechanics
+- [ ] ✏️ Add cobalt and other ore to skyblock
+- [ ] ✏️ Rewrite Extra in JAOPCA cfg for skyblock
+- [ ] ✏️ [Batbox] cheaper
+- [ ] ✏️ Fix Knowledge Absorber unbreaking mechanics (glitching)
+- [ ] 🔄 Use `ench.makeTag();` to retrieve **shimmering** ench
+- [ ] 🔄 ![](https://git.io/Jz9qy "Bean Pod") add drop list
+- [ ] 🔄 ![](https://git.io/J3p8B "Infinity Furnace") front texture empty on client
 - [ ] 🔄 Add Loading for `automate.js` https://github.com/cronvel/terminal-kit/blob/88b3d838dd456b837fb884bee1f92d2a4b21c85e/doc/spChars.md#ref.spChars.animation
-- [ ] 🔄 Blacklist Bedrock Ore for [Mining Laser]
-- [ ] 🔄 Fix TCon Recycle crashing 
+- [ ] 🔄 Blacklist Bedrock Ore for ![](https://git.io/Jz9q9 "Mining Laser")
+- [ ] 🔄 Fix TCon Recycle crashing
 - [ ] 🔄 Integrate https://github.com/release-it/release-it
 - [ ] 🚧 Add skyblock client/server changes
 
@@ -124,6 +125,7 @@ Liquids that should have more uses:
 - [ ] 🌍 Add water animals at dim 118
 - [ ] 🌍 Advanced Rocketry 121 KELT-6a have no leaves on trees
 - [ ] 🌿 Patchouli: Change **texture** of book
+- [ ] 🏪 Add separated tab for complicated crafting table crafts
 - [ ] 🏪 ![](https://git.io/J3p8B "Infinity Furnace") add speed upgrades
 - [ ] 🏪 **RequiousFracto** Causing items to trashing with **Energy Slot**. [Reported](https://github.com/DaedalusGame/RequiousFrakto/issues/21)
 - [ ] 🏪 Add Matter Replicator that **increase cost** of replication each operation
@@ -136,13 +138,15 @@ Liquids that should have more uses:
 - [ ] 🔄 Spectre fluid has no texture (invisible in world)
 - [ ] 🔄 UU requirement for a lot of things seems to be lower than what the tooltip says
 - [ ] 🔄 Remap all **#VoidMiners** to produce not all types of ore each
-- [ ] 🔨 ![](https://git.io/JnzzI "Glitch Infused Ingot") add material
+- [ ] 🔨 ![](https://git.io/JnzzI "Glitch Infused Ingot") add material. Ability: drom matter from mobs
 - [ ] 🔨 Add armor trait that speed up gain for `Time In Bottle`
 - [ ] 🔨 Add teleportation trait. 1. Set point, 2. Break special glass-like block to teleport
 - [ ] 🔨 Integrate Plustic laser: https://github.com/Landmaster/PlusTiC/wiki/CraftTweaker-integration
 - [ ] 🔨 Ironwood Add material. Drop Armor from mobs on hit
+- [ ] 🧮 Craft.zs: In recipe name `A from B*2` remove amount if its control amount
 - [ ] 🧮 Craft.zs: Add Forestry extensions
-- [ ] 🧮 Craft.zs: [Gold Nugget] to make vanilla prefixes
+- [ ] 🧮 Craft.zs: Ability to use vanilla crafting methods
+- [ ] 🧮 Craft.zs: ![](https://git.io/Jz9qH "Gold Nugget") to make vanilla prefixes
 - [ ] 🟢 Add [Bansoko](https://www.curseforge.com/minecraft/mc-mods/bansoko) to rename Dank/null `.jar` so it could work with Thaumic Speedup
 - [ ] 🟢 Add [Heat And Climate](https://www.curseforge.com/minecraft/mc-mods/heat-and-climate)
 
