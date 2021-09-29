@@ -50,7 +50,28 @@ See full list in [MODS.md](MODS.md)
 
 ## Installation
 
-See [Releases page](https://github.com/Krutoy242/Enigmatica2Expert-Extended/releases).
+<sub><sup>
+Beta Test exists to find critical bugs. CurseForge release will be out for a while and the modpack will only be distributed through GutHub.
+</sup></sub>
+
+### Fresh Installation
+1. Init vanilla MC `1.12.2 ForgeOptifine`. Lunch it to make your luncher create all required files.
+2. Overwrite MC folder with content from archive `E2E-Extended_{version}.zip`
+
+- Loading time ~8 minutes.
+- Recommended RAM: `8Gb`.
+- Optifine optionable.
+
+### Update from older version
+1. Remove folders `mods`, `scripts`
+2. Same as `2.` above
+
+
+### Version details
+In this version default world type is VOID. This is unintentional.  
+**Manually change** to `Biomes O Plenty` in new world options.
+
+-----------------
 
 ## Developing strategy
 
