@@ -90,19 +90,21 @@ Liquids that should have more uses:
 # TODO
 
 - [x] ✏️ [Primal Mana] add craft
-- [ ] ✏️ Check recipes for normal mode from v0.32
 - [ ] ✏️ ![](https://git.io/Jz9qK "Potion of Doom") fix brew (reason: potioncore)
 - [ ] ✏️ Rats as alt for some machine recipes
 - [ ] ✏️ Add Twilight Forest spawners to Skyblock craft
-- [x] ✏️ [Knowledge Absorber] add Unbreaking mechanics
-- [ ] ✏️ Add cobalt and other ore to skyblock
-- [ ] ✏️ Rewrite Extra in JAOPCA cfg for skyblock
-- [ ] ✏️ [Batbox] cheaper
-- [ ] ✏️ Fix Knowledge Absorber unbreaking mechanics (glitching)
+- [ ] ✏️ Add cobalt and other ore to JAOPCA cfg for skyblock
+- [x] ✏️ [Batbox] cheaper
+- [ ] ✏️ Fix [Knowledge Absorber] unbreaking mechanics (glitching)
+- [x] ✏️ [Garbage Pile] change ardite to [Ardite Ore piece]
+- [x] ✏️ [(Every) Compressed Crushed] add to compressed hammering
+- [x] 🔄 Disable Purpur Guards
+- [x] 🔄 "Book written by" add lang
+- [ ] 🔄 Traveler's Backpack add tips
 - [ ] 🔄 Use `ench.makeTag();` to retrieve **shimmering** ench
 - [ ] 🔄 ![](https://git.io/Jz9qy "Bean Pod") add drop list
 - [ ] 🔄 ![](https://git.io/J3p8B "Infinity Furnace") front texture empty on client
-- [ ] 🔄 Add Loading for `automate.js` https://github.com/cronvel/terminal-kit/blob/88b3d838dd456b837fb884bee1f92d2a4b21c85e/doc/spChars.md#ref.spChars.animation
+- [ ] 🔄 Add Loading for `automate.js` https://github.com/cronvel/terminal-kit/blob/master/doc/spChars.md#ref.spChars.animation
 - [ ] 🔄 Blacklist Bedrock Ore for ![](https://git.io/Jz9q9 "Mining Laser")
 - [ ] 🔄 Fix TCon Recycle crashing
 - [ ] 🔄 Integrate https://github.com/release-it/release-it
