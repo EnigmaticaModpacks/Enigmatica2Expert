@@ -4,10 +4,13 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 
 # Fix recipes (each original quark recipe use basalt bricks for some reason)
-for i, item in <quark:world_stone_carved>.definition.subItems {
+for i in [
+/*Inject_js(getSubMetas('quark:world_stone_carved').join(', '))*/
+0, 1, 2, 3, 4, 5, 6, 7
+/**/
+] as int[] {
   if(i==3) continue;
-  recipes.remove(item);
-  craft.make(item * 8, ["pretty",
+  craft.remake(<quark:world_stone_carved>.definition.makeStack(i) * 8, ["pretty",
     "G G G",
     "G   G",
     "G G G"], {
@@ -24,9 +27,8 @@ val mcWoodLogs = [
   <minecraft:log2>,
   <minecraft:log2:1>,
 ] as IItemStack[];
-for i, item in <quark:bark>.definition.subItems {
-  recipes.remove(item);
-  craft.make(item * 17, ["pretty",
+for i, log in mcWoodLogs {
+  craft.remake(<quark:bark>.definition.makeStack(i) * 17, ["pretty",
     "G G G",
     "G c G",
     "G G G"], {

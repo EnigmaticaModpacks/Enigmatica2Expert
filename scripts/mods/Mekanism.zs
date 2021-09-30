@@ -19,7 +19,7 @@ getCSV('config/tellme/items-csv.csv')
 ]})
 .filter(o=>o)
 .map(([item, mat], i, arr)=>
-  `mods.mekanism.combiner.addRecipe(<ore:block${(mat+'>,').padEnd(17)} ${$(...item.split(':'))});`
+  `scripts.wrap.mekanism.combiner.addRecipe(<ore:block${(mat+'>,').padEnd(17)} ${$(...item.split(':'))});`
 )
 )*/
 scripts.wrap.mekanism.combiner.addRecipe(<ore:blockAluminium>,       <exnihilocreatio:item_ore_aluminium>);

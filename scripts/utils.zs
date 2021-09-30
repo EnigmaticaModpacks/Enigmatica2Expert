@@ -108,16 +108,14 @@ zenClass Utils {
         }
       }
 
-      val isAny = 
-        item.definition.subItems.length == 1 ||
-        (item.damage == 0 && item.isDamageable);
-      val actualItem = isAny ? item.anyDamage() : item;
+      val actualItem = (item.damage == 0 && item.isDamageable)
+        ? item.anyDamage()
+        : item;
       furnace.remove(<*>, actualItem);
       furnace.remove(actualItem);
       recipes.remove(actualItem);
 
-      if (!DEBUG) continue;
-      log('purged: ' ~ actualItem.commandString);
+      if (DEBUG) log('purged: ' ~ actualItem.commandString, item.displayName);
     }
   }
 

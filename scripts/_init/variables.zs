@@ -4,6 +4,7 @@ import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.data.IData;
+import mods.zenutils.I18n;
 
 #priority 3000
 
@@ -26,7 +27,7 @@ function addWrittenBook(
   bookWriters[name] = id;
   bookWrittenBy[name] = <minecraft:written_book>.withTag(
     {
-      display:{Name:"§6A book written by a " + name},
+      display:{Name: I18n.format(game.localize("e2ee.written_book.by"), game.localize("e2ee.written_book."~name))},
       author: name,
       pages: [lookupText[0]~'?', lookupText[1]~'?', ]
     }

@@ -142,10 +142,9 @@ import scripts.craft.grid.Grid;
 # [Elytra] from [Purpur Shards][+3]
 recipes.removeShaped(<minecraft:elytra>);
 craft.make(<minecraft:elytra>, ["pretty",
+  "A   A",
   "A C A",
-  "A P A",
   "X   X"], {
-  "P": <endreborn:item_end_shard>,     # Purpur Shards
   "A": <endreborn:item_angel_feather>, # Angel Feather
   "C": <minecraft:web>,                # Cobweb
   "X": <endreborn:death_essence>,      # Xorcite Shard

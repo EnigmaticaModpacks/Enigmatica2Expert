@@ -226,3 +226,6 @@ craft.remake(<endreborn:block_end_stone_smooth> * 8, ["pretty",
   "e e e"], {
   "e": <ore:endstone>, # End Stone
 });
+
+# Purpur guards are disables, so make Purpur Shards craftable
+mods.rustic.EvaporatingBasin.addRecipe(<endreborn:item_end_shard>, <liquid:liquidchorus> * 1000, 20*20);

@@ -7,6 +7,16 @@ e2ee.tile.basalt_sediment=Базальтовые Отложения
 # Manual langs
 e2ee.garbage.any_different_item=§k--§r Любые §eРАЗНЫЕ§r предметы §k--§r
 e2ee.garbage.affect_output_amount=§6Количество меняется§r
+e2ee.written_book.by=§6Книга, написанная %s
+e2ee.written_book.Cow=Коровой
+e2ee.written_book.Pig=Свиньей
+e2ee.written_book.Cat=Кошкой
+e2ee.written_book.Enderman=Эндерменом
+e2ee.written_book.Chicken=Курицей
+e2ee.written_book.Dog=Собакой
+e2ee.written_book.Sheep=Овцой
+e2ee.written_book.Creeper=Крипером
+e2ee.written_book.Zombie=Зомби
 
 # Bugged langs that losed their names
 entity.Villager.shady_merchant=Тенистый торговец

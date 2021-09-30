@@ -7,6 +7,16 @@ e2ee.tile.basalt_sediment=Basalt Sediment
 # Manual langs
 e2ee.garbage.any_different_item=§k--§r Any §eDIFFERENT§r item §k--§r
 e2ee.garbage.affect_output_amount=§6Affect output amount§r
+e2ee.written_book.by=§6A book written by a %s
+e2ee.written_book.Cow=Cow
+e2ee.written_book.Pig=Pig
+e2ee.written_book.Cat=Cat
+e2ee.written_book.Enderman=Enderman
+e2ee.written_book.Chicken=Chicken
+e2ee.written_book.Dog=Dog
+e2ee.written_book.Sheep=Sheep
+e2ee.written_book.Creeper=Creeper
+e2ee.written_book.Zombie=Zombie
 
 # Bugged langs that losed their names
 entity.Villager.shady_merchant=Shady Merchant

@@ -59,7 +59,7 @@ craft.remake(<cyclicmagic:block_storeempty>, ["pretty",
 	[<minecraft:rabbit_foot>, <extrautils2:goldenlasso>.withTag({Animal:{id:"minecraft:chicken"} }), <minecraft:rabbit_foot>], 
 	[<ore:feather>, <ore:feather>, <ore:feather>]]);
 	
-# Speed Charm + Elythra is too OP
+# Speed Charm + Elytra is too OP
 <cyclicmagic:charm_speed>.maxDamage = 100;
 # [Speed Charm] from [Golden Lasso][+3]
 craft.remake(<cyclicmagic:charm_speed>, ["pretty",
