@@ -295,7 +295,7 @@ key_Open Rocket GUI:46
 key_Toggle RCS:0
 key_Rotate Vehicle Right:32
 key_Rotate Vehicle Left:30
-key_Move Vehicle Up:44
+key_Move Vehicle Up:0
 key_Move Vehicle Down:45
 key_key.journeymap.zoom_in:13
 key_key.journeymap.zoom_out:12
