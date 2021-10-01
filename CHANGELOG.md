@@ -1,6 +1,46 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
 
+# v0.34.1
+
+## ✏️ Recipes
+
+
+**New Recipes:**
+- ![](https://git.io/JgKYr "Dried Sand")![](https://git.io/JsfOp "White Sand")![](https://git.io/JgKYo "Purpur Shards")
+
+**Cheaper:**
+- ![](https://git.io/JgKYK "BatBox")![](https://git.io/JuAPL "Elytra")
+
+**Misc Changes:**
+- Fix some **Immersive Engineering** items was uncraftable
+- Removing redundant items code was rewritten - accidentally recipes for
+non-exist items could appear.
+
+## 🔵 Mods
+
+
+- ### 🍇 End Reborn
+
+  - Disable Purpur Guards
+    > They are too annoying for their shooting range.
+
+- ### 🐀 Rats
+
+  - Fix ratlantis mobs has 0 hp
+
+## 🔄 Misc Changes
+
+- 
+  > - Disable "No Team" notifications
+  > - Disables player damage when they are stuck in walls to prevent
+  > random dying when long world load in Multiplayer
+
+
+
+
+
+
 # v0.34
 
 ## 🟡 Updated Mods
