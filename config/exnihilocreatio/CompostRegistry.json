@@ -1,4 +1,6 @@
 {
+  "extrautils2:redorchid:0"               : {"value": 0.05  , "color": {"r": 1.0,"g": 0.15,"b": 0.1,"a": 1.0},"compostBlock": {"name": "minecraft:redstone_ore","meta": 0}},
+
   "exnihilocreatio:item_cooked_silkworm:0": {"value": 0.6668, "color": {"r": 1.0,"g": 0.85,"b": 0.4,"a": 1.0},"compostBlock": {"name": "minecraft:dirt","meta": 0}},
   "exnihilocreatio:item_material:2"       : {"value": 0.5   , "color": {"r": 1.0,"g": 0.85,"b": 0.4,"a": 1.0},"compostBlock": {"name": "minecraft:dirt","meta": 0}},
   "minecraft:baked_potato:0"              : {"value": 0.5   , "color": {"r": 1.0,"g": 0.85,"b": 0.4,"a": 1.0},"compostBlock": {"name": "minecraft:dirt","meta": 0}},

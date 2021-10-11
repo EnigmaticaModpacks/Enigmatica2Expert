@@ -81,4 +81,5 @@ endermanPool.addItemEntry(<minecraft:ender_pearl>, 1, 0, [Functions.lootingEncha
 LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine").addItemEntry(<astralsorcery:itemgrapplewand>, 3);
 
 # More Zombie Pigman gold drop
-scripts.loot.animal_drops.tweak_byPlayer("minecraft:entities/zombie_pigman", "pool2", "minecraft:gold_ingot", null, [<minecraft:gold_ingot>], [0,1]);
+LootTweaker.getTable("minecraft:entities/zombie_pigman").getPool("main")
+.addItemEntry(<minecraft:gold_ingot>, 1, 0, [Functions.lootingEnchantBonus(0, 1, 0)], [Conditions.killedByPlayer()], "minecraft:gold_ingot");

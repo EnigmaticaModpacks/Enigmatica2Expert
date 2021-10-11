@@ -87,7 +87,7 @@ function remakeDrawerUpgrade(item as IItemStack, primary as IIngredient){
 
 remakeDrawerUpgrade(<storagedrawers:upgrade_storage:0>, <ore:nuggetLead>);
 remakeDrawerUpgrade(<storagedrawers:upgrade_storage:1>, <ore:nuggetEndSteel>);
-remakeDrawerUpgrade(<storagedrawers:upgrade_storage:2>, <ore:nuggetCrystallineAlloy>);
+remakeDrawerUpgrade(<storagedrawers:upgrade_storage:2>, <ore:nuggetMirion>);
 remakeDrawerUpgrade(<storagedrawers:upgrade_storage:3>, <ore:nuggetUltimate>);
 remakeDrawerUpgrade(<storagedrawers:upgrade_storage:4>, <draconicevolution:chaos_shard:3>);
 

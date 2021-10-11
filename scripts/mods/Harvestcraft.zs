@@ -86,6 +86,41 @@ craft.remake(<harvestcraft:shippingbin>, ["pretty",
 });
 
 
+
+# [Grinder] from [Framed Shelf][+3]
+craft.remake(<harvestcraft:grinder>, ["pretty",
+  "D S D",
+  "D F D",
+  "R R R"], {
+  "D": <tconstruct:materials:2>,           # Dried Brick
+  "S": <exnihilocreatio:block_axle_stone>, # Stone Axle
+  "F": <bibliocraft:shelf:6>,              # Framed Shelf
+  "R": <sonarcore:reinforceddirtbrick>,    # Reinforced Dirt Brick
+});
+
+# [Presser] from [Framed Shelf][+3]
+craft.remake(<harvestcraft:presser>, ["pretty",
+  "D ░ D",
+  "D F D",
+  "R ░ R"], {
+  "D": <tconstruct:materials:2>,        # Dried Brick
+  "░": <ore:compressed1xCobblestone>,   # Compressed Cobblestone
+  "F": <bibliocraft:shelf:6>,           # Framed Shelf
+  "R": <sonarcore:reinforceddirtbrick>, # Reinforced Dirt Brick
+});
+
+# [Water Filter] from [Reinforced Dirt Brick][+1]
+craft.remake(<harvestcraft:waterfilter>, ["pretty",
+  "  S  ",
+  "S R S",
+  "  S  "], {
+  "S": <exnihilocreatio:item_mesh:1>,   # String Mesh
+  "R": <sonarcore:reinforceddirtbrick>, # Reinforced Dirt Brick
+});
+
+
+
+
 # *=======  =======*
 
 # Not Working untill this issue fixed:

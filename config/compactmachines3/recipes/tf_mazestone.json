@@ -1,0 +1,35 @@
+{
+  "name": "compactmachines3:tf_mazestone",
+  "target-item": "twilightforest:maze_stone",
+  "target-meta": 0,
+  "target-count": 27,
+
+  "duration": 20,
+
+  "catalyst": "twilightforest:naga_scale",
+
+  "input-types": {
+    "w": { "id": "sonarcore:reinforcedstoneblock" },
+    "o": { "id": "mekanism:basicblock" }
+  },
+
+  "symmetrical": true,
+  "shape": [
+    [
+      ["w","w","w"],
+      ["w","o","w"],
+      ["w","w","w"]
+    ],
+    [
+      ["w","w","w"],
+      ["w","o","w"],
+      ["w","w","w"]
+    ],
+    [
+      ["w","w","w"],
+      ["w","o","w"],
+      ["w","w","w"]
+    ]
+  ]
+
+}

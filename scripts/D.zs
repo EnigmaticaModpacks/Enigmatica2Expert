@@ -26,6 +26,8 @@ Example
 import crafttweaker.data.IData;
 #priority 4000
 
+#loader crafttweaker reloadableevents
+
 zenClass D_zs {
   /*
     Stored original IData

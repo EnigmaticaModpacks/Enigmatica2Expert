@@ -115,7 +115,7 @@
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<oreDict>blockDarkSteel 1</oreDict>
-			<itemStack>endreborn:block_wolframium 1</itemStack>
+			<itemStack>endreborn:item_ingot_wolframium 1</itemStack>
 			<oreDict>compressed1xEndStone 1</oreDict>
 		</input>
 		<output>
@@ -127,7 +127,7 @@
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<oreDict>ingotDarkSteel 1</oreDict>
-			<itemStack>endreborn:item_ingot_wolframium 1</itemStack>
+			<itemStack>endreborn:wolframium_nugget 1</itemStack>
 			<oreDict>endstone 1</oreDict>
 		</input>
 		<output>
@@ -180,18 +180,6 @@
 		</input>
 		<output>
 			<itemStack>plustic:osgloglasingot 2 0</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Spectre Ingot] -->
-	<Recipe timeRequired="10" power="40000">
-		<input>
-			<oreDict>ingotUnstable 1</oreDict>
-			<itemStack>randomthings:ingredient 1 2</itemStack>
-			<itemStack>thermalfoundation:material 1 134</itemStack>
-		</input>
-		<output>
-			<itemStack>randomthings:ingredient 1 3</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->

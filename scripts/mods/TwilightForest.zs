@@ -144,3 +144,97 @@ recipes.addShaped("twilightforest_moonworm", <twilightforest:moonworm>, [
 
 # [Glowstone Dust] from [Firefly][+1]
 scripts.process.crush(<twilightforest:firefly>, <minecraft:glowstone_dust> * 2, "only: crushingBlock",null,null);
+
+#-------------------------------------------------------------------------
+# SPAWNERS
+#-------------------------------------------------------------------------
+
+# [Naga Spawner] from [Propolis]*3[+3]
+craft.remake(<twilightforest:boss_spawner>, ["pretty",
+  "□ M □",
+  "* P *",
+  "□ M □"], {
+  "□": <ore:plateMithril>,                  # Mana Infused Plate
+  "M": <twilightforest:magic_map_focus>,    # Magic Map Focus
+  "*": <actuallyadditions:block_crystal:4>, # Emeradic Crystal Block
+  "P": <forestry:propolis:*>,               # Propolis
+});
+
+# [Lich Spawner] from [Propolis]*3[+3]
+craft.remake(<twilightforest:boss_spawner:1>, ["pretty",
+  "□ N □",
+  "* P *",
+  "□ N □"], {
+  "□": <ore:plateMithril>,                  # Mana Infused Plate
+  "N": <twilightforest:naga_scale>,         # Naga Scale
+  "*": <actuallyadditions:block_crystal:4>, # Emeradic Crystal Block
+  "P": <forestry:propolis:*>,               # Propolis
+});
+
+# [Alpha Yeti Spawner] from [Glitch Infused Ingot][+3]
+craft.remake(<twilightforest:boss_spawner:7>, ["pretty",
+  "□ A □",
+  "■ ▬ ■",
+  "□ A □"], {
+  "□": <ore:plateMithril>,             # Mana Infused Plate
+  "A": <ore:furArctic>,                # Arctic Fur
+  "■": <twilightforest:block_storage>, # Block of Ironwood
+  "▬": <ore:ingotGlitch>,              # Glitch Infused Ingot
+});
+
+# [Knight Phantoms Spawner] from [Glitch Infused Ingot][+3]
+craft.remake(<twilightforest:boss_spawner:4>, ["pretty",
+  "□ M □",
+  "■ ▬ ■",
+  "□ M □"], {
+  "□": <ore:plateMithril>,             # Mana Infused Plate
+  "M": <twilightforest:cooked_meef>,   # Meef Steak
+  "■": <twilightforest:block_storage>, # Block of Ironwood
+  "▬": <ore:ingotGlitch>,              # Glitch Infused Ingot
+});
+
+# [Minoshroom Spawner] from [Glitch Infused Ingot][+3]
+craft.remake(<twilightforest:boss_spawner:6>, ["pretty",
+  "□ C □",
+  "■ ▬ ■",
+  "□ C □"], {
+  "□": <ore:plateMithril>,             # Mana Infused Plate
+  "C": <twilightforest:cicada>,        # Cicada
+  "■": <twilightforest:block_storage>, # Block of Ironwood
+  "▬": <ore:ingotGlitch>,              # Glitch Infused Ingot
+});
+
+# [Hydra Spawner] from [Galactic Potato][+3]
+craft.remake(<twilightforest:boss_spawner:2>, ["pretty",
+  "□ M □",
+  "■ G ■",
+  "□ M □"], {
+  "□": <ore:plateMithril>,                        # Mana Infused Plate
+  "M": <twilightforest:meef_stroganoff>,          # Meef Stroganoff
+  "■": <twilightforest:block_storage:4>,          # Block of Carminite
+  "G": <botania_tweaks:compressed_tiny_potato_8>, # Galactic Potato
+});
+
+# [Ur-Ghast Spawner] from [Galactic Potato][+3]
+craft.remake(<twilightforest:boss_spawner:3>, ["pretty",
+  "□ ■ □",
+  "▄ G ▄",
+  "□ ■ □"], {
+  "□": <ore:plateMithril>,                        # Mana Infused Plate
+  "■": <ore:blockKnightmetal>,                    # Block of Knightmetal
+  "▄": <twilightforest:block_storage:4>,          # Block of Carminite
+  "G": <botania_tweaks:compressed_tiny_potato_8>, # Galactic Potato
+});
+
+# [Snow Queen Spawner] from [Galactic Potato][+3]
+craft.remake(<twilightforest:boss_spawner:5>, ["pretty",
+  "□ ■ □",
+  "▄ G ▄",
+  "□ ■ □"], {
+  "□": <ore:plateMithril>,                        # Mana Infused Plate
+  "■": <twilightforest:block_storage:3>,          # Block of Arctic Fur
+  "▄": <twilightforest:block_storage:4>,          # Block of Carminite
+  "G": <botania_tweaks:compressed_tiny_potato_8>, # Galactic Potato
+});
+
+#-------------------------------------------------------------------------

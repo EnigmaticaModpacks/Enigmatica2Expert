@@ -590,3 +590,9 @@ craft.make(<iceandfire:dreadwood_log> * 8, ["pretty",
   "#": <randomthings:spectrelog>, # Spectre Wood
   "D": <iceandfire:dread_shard>,  # Dread Shard
 });
+
+# Alternative instead using machines
+scripts.wrap.iceandfire.recipes.addFireDragonForgeRecipe(<minecraft:iron_ingot>, <darkutils:material>, <extrautils2:ingredients:17>); 
+scripts.wrap.iceandfire.recipes.addIceDragonForgeRecipe(<minecraft:iron_ingot>, <darkutils:material>, <extrautils2:ingredients:17>);
+scripts.wrap.iceandfire.recipes.addFireDragonForgeRecipe(<minecraft:iron_block>, <darkutils:wither_block>, <extrautils2:simpledecorative:2>); 
+scripts.wrap.iceandfire.recipes.addIceDragonForgeRecipe(<minecraft:iron_block>, <darkutils:wither_block>, <extrautils2:simpledecorative:2>);

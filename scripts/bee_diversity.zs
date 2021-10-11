@@ -89,8 +89,8 @@ val diversityStoreOutput = <contenttweaker:bee_diversity>.withTag({
   total: 13,
   penalty: 0,
   hashes: {},
-  ench:[{lvl:1,id:42}], enchantmentColor: storeColor(0, 13)
-});
+  enchantmentColor: storeColor(0, 13)
+} + <enchantment:enderio:shimmer>.makeEnchantment(1).makeTag());
 
 val storeFunction as IRecipeFunction = function(out, ins, cInfo) {
   val dbee = D(ins.bee.tag);
@@ -120,8 +120,8 @@ val storeFunction as IRecipeFunction = function(out, ins, cInfo) {
     total: total,
     hashes: hashes,
     penalty: penalty,
-    ench:[{lvl:1,id:42}], enchantmentColor: storeColor(penalty, reward),
-  } as IData;
+    enchantmentColor: storeColor(penalty, reward),
+  } as IData + <enchantment:enderio:shimmer>.makeEnchantment(1).makeTag();
 
 
   if(isNull(ins.store.tag)) return ins.store.withTag(newTag);

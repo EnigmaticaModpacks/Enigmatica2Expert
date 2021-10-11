@@ -1,7 +1,6 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
-#norun
 #modloaded potioncore
 
 # Potioncore gives ability to jump incredeble hight
@@ -21,14 +20,6 @@ static redstone as IItemStack = <minecraft:redstone>;
 val fermentedSpiderEye as IItemStack = <minecraft:fermented_spider_eye>;
 val awkward = "minecraft:awkward";
 val mundane = "minecraft:mundane";
-
-# remove one of the old potion of slowness recipes to override them later
-removeBrew("minecraft:leaping", fermentedSpiderEye);
-removeBrew("minecraft:long_leaping", fermentedSpiderEye);
-# remove one of the old potion of harming recipes to override them later
-removeBrew("minecraft:poison", fermentedSpiderEye);
-removeBrew("minecraft:long_poison", fermentedSpiderEye);
-removeBrew("minecraft:strong_poison", fermentedSpiderEye);
 
 # add a weakness recipe that makes more sense (original recipe still works)
 addBrew("minecraft:strength", fermentedSpiderEye, "minecraft:weakness");
@@ -269,15 +260,6 @@ addBrewWithUpgrades(
   mundane, <minecraft:obsidian>, "potioncore:resistance",
   "potioncore:strong_resistance", "potioncore:long_resistance"
 );
-
-# remove a recipe for a potion, splash potion and lingering potion
-function removeBrew(basePotionName as string,
-                             ingredient as IItemStack) {
-  # brewing.removeRecipe(IItemStack input, IItemStack ingredient);
-  brewing.removeRecipe(asPotion(basePotionName), ingredient);
-  brewing.removeRecipe(asSplashPotion(basePotionName), ingredient);
-  brewing.removeRecipe(asLingeringPotion(basePotionName), ingredient);
-}
 
 # add a recipe for a potion, splash potion and lingering potion
 function addBrew(basePotionName as string,

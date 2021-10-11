@@ -71,4 +71,24 @@ function tweak_byPlayer(table as string, poolStr as string, entryToRemove as str
 tweak("quark:entities/crab"                , "legs"     , "quark:crab_leg", <quark:crab_leg>, [<harvestcraft:crabrawitem>], [1,3]);
 tweak("twilightforest:entities/helmet_crab", "fish"     , "minecraft:fish", null, [<harvestcraft:crabrawitem>], [1,3]);
 tweak("twilightforest:entities/deer"       , "meat"     , "twilightforest:raw_venison", <twilightforest:raw_venison>, [<harvestcraft:venisonrawitem>], [1,3]);
-tweak("randomthings:beanpod"               , "Diamond"  , "minecraft:diamond", null, [<biomesoplenty:gem:1>, <biomesoplenty:gem:2>, <biomesoplenty:gem:3>, <biomesoplenty:gem:4>, <biomesoplenty:gem:5>, <biomesoplenty:gem:6>], [0,1]);
+
+
+/*Inject_js{
+setBlockDrops('randomthings:beanpod', [...
+  cmd.below.match(/tweak.*randomthings:beanpod.*null,\s*\[(.*)\],\s*\[0,1\]\);/)[1]
+  .split(/\s*,\s{0,}/)
+  .map((cap,i,arr)=>({
+    stack: cap.match(/<([^>]+)>.{0,}/)[1],
+    chance: (100/arr.length) | 0,
+    luck: [0,1,2,3].map(()=>[0,1])
+  })),
+{stack: 'minecraft:iron_ingot', luck: [8,20]},
+{stack: 'minecraft:gold_ingot', luck: [4,15]},
+{stack: 'minecraft:emerald', luck: [0,2]},
+{stack: 'randomthings:beans', luck: [4,8]},
+])
+return '# Done!'
+}*/
+# Done!
+/**/
+tweak("randomthings:beanpod", "Diamond", "minecraft:diamond", null, [<biomesoplenty:gem:1>, <biomesoplenty:gem:2>, <biomesoplenty:gem:3>, <biomesoplenty:gem:4>, <biomesoplenty:gem:5>, <biomesoplenty:gem:6>], [0,1]);

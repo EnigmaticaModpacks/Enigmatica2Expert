@@ -118,13 +118,13 @@ function workEx(machineNameAnyCase as string, exceptions as string,
   var combinedChances as float[] = null;
   if (haveItemOutput) { for i in 0 to outputItems.length {
       if (isNull(combinedOutput)) { combinedOutput = []; combinedChances = []; }
-      combinedOutput = combinedOutput + outputItems[i];
-      combinedChances = combinedChances + 1.0f;
+      combinedOutput += outputItems[i];
+      combinedChances += 1.0f;
   }}
   if (haveExtra) { for i in 0 to extra.length {
       if (isNull(combinedOutput)) { combinedOutput = []; combinedChances = []; }
-      combinedOutput = combinedOutput + extra[i];
-      combinedChances = combinedChances + ((!isNull(extraChance) && extraChance.length > i) ? extraChance[i] : 1.0f);
+      combinedOutput += extra[i];
+      combinedChances += ((!isNull(extraChance) && extraChance.length > i) ? extraChance[i] : 1.0f);
   }}
   val havecombinedOutput = !isNull(combinedOutput) && combinedOutput.length > 0;
 
@@ -288,10 +288,9 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       for ii in inputIngr0.itemArray {
         if (strict) { mods.appliedenergistics2.Grinder.removeRecipe(ii); }
         if (haveExtra) {
-          if (extra.length == 1) {
-            scripts.wrap.appliedenergistics2.Grinder.addRecipe(outputItem0, ii, 2, extra[0], extraChance[0]);
-          }else if (extra.length >= 2) {
-            scripts.wrap.appliedenergistics2.Grinder.addRecipe(outputItem0, ii, 2, extra[0], extraChance[0], extra[1], extraChance[1]);
+          # Grindstone has bug - first extra always omitted, only outputting second one
+          if (extra.length >= 1) {
+            scripts.wrap.appliedenergistics2.Grinder.addRecipe(outputItem0, ii, 2, extra[0], extraChance[0], extra[0], extraChance[0]);
           }
         } else {
           scripts.wrap.appliedenergistics2.Grinder.addRecipe(outputItem0, ii, 2);
@@ -745,7 +744,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
     if (machineName == "transposer") { 
       //mods.thermalexpansion.Transposer.addFillRecipe(IItemStack output, IItemStack input, ILiquidStack fluid, int energy);
       for ii in inputIngr0.itemArray {
-        scripts.wrap.thermalexpansion.Transposer.addFillRecipe(outputItem0, ii, inputLiquid0, 2000);
+        scripts.wrap.thermalexpansion.Transposer.addFillRecipe(outputItem0, ii, inputLiquid0, 6000);
       }
       return machineName;
     }

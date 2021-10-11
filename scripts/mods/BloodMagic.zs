@@ -177,7 +177,7 @@ for i in 1 to 16 {
 }
 
 # Creative Dagger
-val crDgr = <bloodmagic:sacrificial_dagger:1>.withTag({ench:[{lvl:0,id:0}],HideFlags:1});
+val crDgr = <bloodmagic:sacrificial_dagger:1>.withTag({HideFlags:1} + <enchantment:enderio:shimmer>.makeEnchantment(1).makeTag());
 mods.jei.JEI.addItem(crDgr);
 
 val capRune = <bloodmagic:blood_rune:7>;

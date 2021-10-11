@@ -79,6 +79,7 @@
     { "meshLevel": 2, "drop": {"name": "appliedenergistics2:material" , "meta": 46} , "chance": 0.3},
     { "meshLevel": 2, "drop": {"name": "darkutils:shulker_pearl"      , "meta": 0}  , "chance": 0.1},
     { "meshLevel": 2, "drop": {"name": "jaopca:item_pieceuranium"     , "meta": 0}  , "chance": 0.2},
+    { "meshLevel": 2, "drop": {"name": "biomesoplenty:crystal_shard"  , "meta": 0}  , "chance": 0.2},
 
     { "meshLevel": 3, "drop": {"name": "minecraft:chorus_fruit"       , "meta": 0}  , "chance": 1.0},
     { "meshLevel": 3, "drop": {"name": "nuclearcraft:compound"        , "meta": 8}  , "chance": 0.2},

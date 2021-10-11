@@ -628,8 +628,7 @@ function advancedBrew(
 val potCombined = <minecraft:potion>.withTag(
   {
     PotionCombined: 1,
-
-    ench:[{lvl:1,id:42}],
+    
     enchantmentColor:327880,
     CustomPotionColor:327691,
     display:{Name:"§dCombo Potion"},
@@ -641,7 +640,7 @@ val potCombined = <minecraft:potion>.withTag(
         Id:2,Amplifier:0,Duration:600
       }
     ]
-  }
+  } + <enchantment:enderio:shimmer>.makeEnchantment(1).makeTag()
 );
 var anyCombined = potCombined | <minecraft:potion:*>;
 
@@ -670,7 +669,6 @@ val potLong = <rustic:elixir>.withTag(
   {
     PotionLong: 1,
 
-    ench:[{lvl:1,id:42}],
     enchantmentColor:2720000,
     display:{Name:"§aLong Elixir"},
 
@@ -679,7 +677,7 @@ val potLong = <rustic:elixir>.withTag(
         Effect: "minecraft:speed", Duration: (20*60*60*24), Amplifier: 0
       }
     ]
-  }
+  } + <enchantment:enderio:shimmer>.makeEnchantment(1).makeTag()
 );
 var anyLong = <rustic:elixir:*> | potLong;
 
@@ -715,7 +713,6 @@ val potStrong = <bloodmagic:potion_flask>.withTag(
   {
     PotionStrong: 1,
 
-    ench:[{lvl:1,id:42}],
     enchantmentColor:831714,
     CustomPotionColor:27294,
     display:{Name:"§3Strong Potion"},
@@ -723,7 +720,7 @@ val potStrong = <bloodmagic:potion_flask>.withTag(
     CustomPotionEffects: [
       { Id: 1 as byte, Duration: 2400, Amplifier: 5 as byte }
     ]
-  }
+  } + <enchantment:enderio:shimmer>.makeEnchantment(1).makeTag()
 );
 
 var anyStrong = potStrong | <bloodmagic:potion_flask>.withTag({CustomPotionEffects:[]}, false);
@@ -767,14 +764,13 @@ val potOMEGA = <bloodmagic:potion_flask>.withTag(
   {
     PotionOMEGA: 1,
 
-    ench:[{lvl:1,id:42}],
     enchantmentColor:15326208,
     display:{Name:"§eOMEGA Potion"},
 
     CustomPotionEffects: [
       { Id: 1 as byte, Duration: 2400, Amplifier: 5 as byte }
     ]
-  }
+  } + <enchantment:enderio:shimmer>.makeEnchantment(1).makeTag()
 );
 
 advancedBrew(Grid(["pretty",

@@ -282,3 +282,14 @@ craft.remake(<rftools:elevator>, ["pretty",
   "I": <ore:itemInsulatedGlassCable>, # Glass Fibre Cable
   "M": <rftools:machine_base>,        # Machine Base
 });
+
+# [Storage Control Screen Module] from [Machine Frame][+2]
+recipes.removeByRecipeName("rftools:storage_control_module");
+craft.make(<rftools:storage_control_module>, ["pretty",
+  "  A  ",
+  "A ◙ A",
+  "  d  "], {
+  "A": <xnet:antenna_dish>,                   # Antenna Dish
+  "◙": <rftools:machine_frame>,               # Machine Frame
+  "d": <endreborn:item_advanced_ender_pearl>, # Advanced Ender Pearl
+});

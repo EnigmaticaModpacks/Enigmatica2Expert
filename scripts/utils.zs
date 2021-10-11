@@ -6,6 +6,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.recipes.IRecipeFunction;
 
+#loader crafttweaker reloadableevents
 
 zenClass Utils {
   var DEBUG as bool = false;
@@ -333,14 +334,6 @@ zenClass Utils {
 
 }
 global utils as Utils = Utils();
-
-# Apply tag to bucket (in case we use TE potions or such)
-global BucketTag as function(string,IData)IItemStack = function (name as string, tag as IData) as IItemStack {
-	val b = Bucket(name as string);
-	if (!isNull(b) && !isNull(tag)) { return b.updateTag({Tag: tag}); }
-	return b;
-};
-
 
 # ########################
 # Get mob soul by its name

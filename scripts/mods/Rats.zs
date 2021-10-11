@@ -440,3 +440,13 @@ mods.rustic.Condenser.addRecipe(<rats:rat_arrow>,[
   <scalinghealth:heartdust>,
   <rats:rat_pelt>,
 ], null, <minecraft:arrow>, <fluid:water> * 50, 40);
+
+#---------------------------------
+# Rat Alts
+#---------------------------------
+# [Lunar Reactive Dust] from [Lapis Lazuli]
+mods.rats.recipes.addChefRatRecipe(<minecraft:dye:4>, <extrautils2:ingredients:3>);
+
+# [Liveroots] from [Roots]
+mods.rats.recipes.addChefRatRecipe(<twilightforest:root>, <twilightforest:root:1>);
+#---------------------------------

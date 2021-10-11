@@ -291,18 +291,11 @@ function beneficiate(
 
   val oreName = (_oreName == "Aluminum") ? "Aluminium" : _oreName;
 
-  val JA = mods.jaopca.JAOPCA.getOre(oreName);
   var exceptions = D(opts).getString('exceptions','');
   exceptions = exceptions==''?null:exceptions;
 
   # Determine extra output based on JAOPCA
-  var extra = [] as IItemStack[];
-  if (!isNull(JA)) {
-    var cx as IItemStack = null;
-    cx = utils.getSomething(JA.extraName,       ["dust", "gem"]); if (!isNull(cx)) extra += cx;
-    cx = utils.getSomething(JA.secondExtraName, ["dust", "gem"]); if (!isNull(cx)) extra += cx;
-    cx = utils.getSomething(JA.thirdExtraName,  ["dust", "gem"]); if (!isNull(cx)) extra += cx;
-  }
+  val JA = mods.jaopca.JAOPCA.getOre(oreName);
   var extraChances = [
     min(1.0, 1.0/6 * amount),
     min(1.0, 0.1   * amount),
@@ -312,8 +305,8 @@ function beneficiate(
   if (!isNull(JA)) {
     val outTriple = (amount as double * (calc.out1 as double * 3.0d)) as int;
     val nuggetExtra = utils.getSomething(JA.secondExtraName, ["nugget"], outTriple);
-    val input1 = input.itemArray[0].anyAmount();
     if (!isNull(nuggetExtra)) {
+      val input1 = input.itemArray[0].anyAmount();
       workEx("infernalfurnace", exceptions, [input1], null, null, null, [nuggetExtra], extraChances, null);
       scripts.requiousJei.add_infernal_furnace(input1, nuggetExtra % ((extraChances[0] * 100.0f) as int));
     }
@@ -322,7 +315,8 @@ function beneficiate(
   # Crush Dust or Gem
   val dustOrGem = utils.getSomething(oreName, ["dust", "gem", "any"], amount);
   if (!isNull(dustOrGem)) {
-    crushEx(input, dustOrGem, exceptions ~ "macerator thermalCentrifuge", extra, extraChances, {bonusType: "MULTIPLY_OUTPUT"});
+    val extraList = scripts.process_data.getExtras(oreName, ["dust", "gem"]);
+    crushEx(input, dustOrGem, exceptions ~ "macerator thermalCentrifuge crushingBlock", extraList, extraChances, {bonusType: "MULTIPLY_OUTPUT"});
   }
 
   # Crush IC2

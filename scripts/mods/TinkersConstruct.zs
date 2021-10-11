@@ -322,8 +322,8 @@ for item in loadedMods["tconstruct"].items {
 recipes.removeByRecipeName("tconstruct:tools/table/chest/pattern");
 craft.make(<tconstruct:tooltables:4>.withTag({
 		inventory: {Items: dataList_allPatterns},
-		ench:[{lvl:1,id:42}],enchantmentColor:10057489,CustomPotionColor:10057489 // Colored shimmer
-	}), ["pretty",
+		enchantmentColor:10057489,CustomPotionColor:10057489 // Colored shimmer
+	} + <enchantment:enderio:shimmer>.makeEnchantment(1).makeTag()), ["pretty",
   "# a #",
   "p c p",
   "# M #"], {
@@ -404,10 +404,3 @@ scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:red_matter> * 144, [<liquid:supr
 
 # Melt Block of flesh
 scripts.process.melt(<ore:blockFlesh>, <liquid:blood> * 360, "No Exceptions");
-
-# [Purple Slimy Grass]*16 from [Purple Dye][+2]
-craft.shapeless(<tconstruct:slime_grass:8> * 6, "sdM", {
-  "s": <ore:slimeball>, # Slimeball
-  "d": <ore:dyePurple>, # Purple Dye
-  "M": <ore:ballMud>,   # Mud Ball
-});

@@ -455,6 +455,7 @@ addItems(<ore:blockFakeIron>, [<minecraft:iron_block>, <enderio:block_alloy:9>])
 addItems(<ore:nuggetFakeIron>, [<minecraft:iron_nugget>, <enderio:item_alloy_nugget:9>]);
 
 add(<ore:ingotSpectre>, <randomthings:ingredient:3>);
+add(<ore:ingotPhosphor>, <forestry:phosphor>);
 
 addItems(<ore:blockDimensional>, [
 	<rftoolsdim:dimensional_blank_block>,

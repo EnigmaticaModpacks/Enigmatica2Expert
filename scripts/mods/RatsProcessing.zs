@@ -9,7 +9,7 @@ import mods.jaopca.OreEntry;
 static listRatPoop as IItemStack[] = [
 /*Inject_js(
 getFurnaceRecipes()
-.filter(g=>g.in_id==='rats:rat_nugget_ore')
+?.filter(g=>g.in_id==='rats:rat_nugget_ore')
 .map(g=>g.input)
 .join(',\n')
 )*/

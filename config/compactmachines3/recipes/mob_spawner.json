@@ -1,0 +1,30 @@
+{
+  "name": "compactmachines3:mob_spawner",
+  "target-item": "minecraft:mob_spawner",
+  "target-meta": 0,
+  "target-count": 1,
+
+  "duration": 60,
+
+  "catalyst": "scalinghealth:heartdust",
+
+  "input-types": {
+    "w": { "id": "immersiveengineering:metal_decoration1" },
+    "o": { "id": "contenttweaker:conglomerate_of_life" }
+  },
+
+  "symmetrical": true,
+  "shape": [
+    [
+      ["w","w","w"],
+      ["w","-","w"],
+      ["w","w","w"]
+    ],
+    [
+      ["w","w","w"],
+      ["w","o","w"],
+      ["w","w","w"]
+    ]
+  ]
+
+}

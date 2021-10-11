@@ -90,18 +90,12 @@ recipes.addShaped(<randomthings:spectreanchor>, [
 
 # Spectre Ingot
 recipes.remove(<randomthings:ingredient:3>);
-scripts.process.alloy([
-	<ore:ingotUnstable>,
-	<randomthings:ingredient:2>,
-	<thermalfoundation:material:134>
-	] as IItemStack[], <randomthings:ingredient:3>, "No exceptions");
-mods.rt.RandomThingsTweaker.addImbuingRecipe(
-	<thermalfoundation:material:134>, 
+recipes.addShapeless("Spectre Ingot Harder", <randomthings:ingredient:3>, [
 	<extrautils2:unstableingots>, 
+	<randomthings:ingredient:2>,
+	<thermalfoundation:material:134>, 
 	<forestry:phosphor>, 
-	<randomthings:ingredient:2>, 
-	<randomthings:ingredient:3>
-);
+]);
 
 
 # Spectre Charger Tier 1
@@ -182,16 +176,6 @@ craft.remake(<randomthings:slimecube>, ["pretty",
   "  s  "], {
   "s": <ore:slimecrystal> | <ore:slimecrystalGreen>, # Green Slime Crystal
   "M": <tconstruct:materials:19>, # Mending Moss
-});
-
-# [Peace_Candle] from [Crystallized_Amber][+2]
-craft.remake(<randomthings:peacecandle>, ["pretty",
-  "  ☼  ",
-  "☺ C ☺",
-  "  ☺  "], {
-  "C": <cyclicmagic:crystallized_amber>,      # Crystallized Amber
-  "☺": <contenttweaker:conglomerate_of_coal>, # Conglomerate Of Coal
-  "☼": <extrautils2:suncrystal>               # Sun Crystal
 });
 
 # [Fertilized_Dirt*2] from [Slop_Bucket][+3]

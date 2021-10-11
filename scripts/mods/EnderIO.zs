@@ -203,10 +203,6 @@ craft.remake(<enderio:item_basic_capacitor>, ["pretty",
 		[<ore:ingotElectricalSteel>, <nuclearcraft:part:10> | <teslacorelib:machine_case> | <actuallyadditions:block_misc:9> | <mekanism:basicblock:8>, <ore:ingotElectricalSteel>], 
 		[<ore:ingotElectricalSteel>, <enderio:item_power_conduit>, <ore:ingotElectricalSteel>]]);
 
-# Removals
-	utils.rh(<enderio:item_material:30>);
-	utils.rh(<enderio:item_material:31>);
-
 # Dark Steel Upgrade Recycling
 	mods.nuclearcraft.decay_hastener.addRecipe([<enderio:item_dark_steel_upgrade:1>.anyDamage(), <enderio:item_dark_steel_upgrade>, 2.0, 2.0]);
 
@@ -287,7 +283,7 @@ val fake_iron_variations =
 
 # EnderIO simple alloys
 solution([<ore:dustBedrock>, fake_iron_variations      			        ], [<liquid:iron>      *72 ], [<liquid:construction_alloy>*216], [0.5, 1,    2700], "only: highoven");
-solution([<ore:dustBedrock>, <ore:dustEndstone>, <ore:ingotTungsten>], [<liquid:dark_steel>*144], [<liquid:end_steel>         *144], [0.5, 1, 1, 5500], "only: highoven");
+solution([<ore:dustBedrock>, <ore:dustEndstone>,<ore:nuggetTungsten>], [<liquid:dark_steel>*144], [<liquid:end_steel>         *144], [0.5, 1, 1, 5500], "only: highoven");
 solution([<ore:dustBedrock>, <ore:dustRedstone>                     ], [<liquid:iron>      *144], [<liquid:conductive_iron>   *144], [0.5, 1,    4200], "only: highoven");
 
 
@@ -318,8 +314,8 @@ recipes.addShaped(<enderio:item_conduit_facade> * 8, [
 
 
 # End Steel process
-scripts.process.alloy([<ore:ingotDarkSteel>, <endreborn:item_ingot_wolframium>, <ore:endstone>], <ore:ingotEndSteel>.firstItem, "except: alloySmelter");
-scripts.process.alloy([<ore:blockDarkSteel>, <endreborn:block_wolframium>, <ore:compressed1xEndStone>], <ore:blockEndSteel>.firstItem, "only: advrockarc");
+scripts.process.alloy([<ore:ingotDarkSteel>, <endreborn:wolframium_nugget>, <ore:endstone>], <ore:ingotEndSteel>.firstItem, "except: alloySmelter");
+scripts.process.alloy([<ore:blockDarkSteel>, <endreborn:item_ingot_wolframium>, <ore:compressed1xEndStone>], <ore:blockEndSteel>.firstItem, "only: advrockarc");
 
 # Excess ender dust recipe
 recipes.removeByRecipeName("enderio:ender_dust");

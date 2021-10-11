@@ -6,7 +6,7 @@ It should not exist in release version.
 */
 
 #priority 3999
-#loader crafttweaker reloadableevents
+// #loader crafttweaker reloadableevents
 
 import mods.ctintegration.data.DataUtil;
 import mods.ctintegration.util.RawLogger.logRaw as logRaw;
@@ -72,12 +72,12 @@ function logAdditionalDebugData(player as IPlayer) {
 
   # Delayed call to not overload joining world
   mods.zenutils.DelayManager.addDelayWork(function() {
-    player.sendMessage('Developing: §eStarting §c/ct conflict');
+    player.sendMessage('Developing: Starting §c/ct conflict');
     server.commandManager.executeCommand(server, '/ct conflict');
   }, 20 * 20);
 
   mods.zenutils.DelayManager.addDelayWork(function() {
-    player.sendMessage('Developing: §eStarting §c/tellme dump-csv all');
+    player.sendMessage('Developing: Starting §c/tellme dump-csv all');
     server.commandManager.executeCommand(server, '/tellme dump-csv all');
   }, 20 * 80);
 }

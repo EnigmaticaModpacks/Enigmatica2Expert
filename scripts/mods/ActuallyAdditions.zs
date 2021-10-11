@@ -587,3 +587,13 @@ mods.actuallyadditions.AtomicReconstructor.removeRecipe(<actuallyadditions:block
 mods.actuallyadditions.AtomicReconstructor.removeRecipe(<actuallyadditions:item_crystal:3>);
 scripts.wrap.actuallyadditions.AtomicReconstructor.addRecipe(<actuallyadditions:block_crystal:3>, <actuallyadditions:block_misc:2>, 1000);
 scripts.wrap.actuallyadditions.AtomicReconstructor.addRecipe(<actuallyadditions:item_crystal:3>, <actuallyadditions:item_misc:5>, 100);
+
+# [Solar Panel]*4 from [Casing][+2]
+craft.remake(<actuallyadditions:block_furnace_solar> * 4, ["pretty",
+  "* * *",
+  "B ⌂ B"], {
+  "*": <ore:crystalPalis>,               # Palis Crystal
+  "B": <actuallyadditions:item_misc:7>,  # Basic Coil
+  "⌂": <actuallyadditions:block_misc:7>, # Casing
+});
+

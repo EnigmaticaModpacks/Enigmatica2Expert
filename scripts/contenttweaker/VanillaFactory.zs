@@ -146,7 +146,10 @@ buildItem("blasted_coal");
 # -------------------------------
 # Other
 # -------------------------------
-buildItem("bee_diversity");
+var x = VanillaFactory.createItem("bee_diversity");
+x.setCreativeTab(<creativetab:other>);
+x.rarity = "rare";
+x.register();
 
 
 val molten_spectre = VanillaFactory.createFluid("spectre", 0x9CC1CE);
@@ -179,7 +182,7 @@ perfect_fuel.register();
 # -------------------------------
 # Knowledge Absorber
 # -------------------------------
-var x = VanillaFactory.createItem("knowledge_absorber");
+x = VanillaFactory.createItem("knowledge_absorber");
 x.maxStackSize = 1;
 x.rarity = "rare";
 x.maxDamage = 9;

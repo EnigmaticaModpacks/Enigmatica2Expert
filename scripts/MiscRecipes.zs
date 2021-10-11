@@ -550,23 +550,29 @@ craft.make(<contenttweaker:knowledge_absorber>, ["pretty",
   "R": <ore:itemResin>, # Sticky Resin
 });
 
+# Oh my gold, this hack!
+# I cant use random() function, because it would return different values
+# on client and server, that would result ingredient being
+# dissapearing on one side and persist on another.
+# This code not perfect any way - it would give different values
+# when playing on server. But it would be happen stable amount of times.
+static absorber_crafts_count as long[crafttweaker.world.IWorld] = {} as long[crafttweaker.world.IWorld];
+
 val transformedAbsorber = <contenttweaker:knowledge_absorber>.anyDamage().transform(function(item, player) {
-	val damaged = (item.damage + 1) < item.maxDamage
+	absorber_crafts_count[player.world] =
+		!isNull(absorber_crafts_count[player.world]) ? absorber_crafts_count[player.world] as long + 1 : 1;
+
+	val damaged = (item.damage) < item.maxDamage
 		? item.withDamage(item.damage + 1)
 		: null;
 
-	if(
-		isNull(player) ||
-		isNull(player.world) ||
-		player.world.isRemote() ||
-		!item.isEnchanted ||
-		item.enchantments.length < 1
-	) return damaged;
+	if(!item.isEnchanted || item.enchantments.length < 1) return damaged;
 
 	for ench in item.enchantments {
 		if(ench.definition != <enchantment:minecraft:unbreaking>) continue;
-
-		if(player.world.random.nextDouble() > 1.0d / (ench.level + 1) as double) return item;
+		return (
+			(player.world.time + absorber_crafts_count[player.world] as long) % ((ench.level + 1) as long) != 0
+		) ? item : damaged;
 	}
 	return damaged;
 });

@@ -3,6 +3,7 @@
 
 # Tooltips for IC2 matter fabricator
 var uumatterTooltips = [
+	"teslacorelib:base_addon", "0",                         "100",
 	"minecraft:snowball", "0",                              "2",
 	"minecraft:dirt", "0",                                  "2",
 	"minecraft:stone", "3",                                 "3",
