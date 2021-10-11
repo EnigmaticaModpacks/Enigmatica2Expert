@@ -66,6 +66,34 @@ for item in [
 <twilightforest:steeleaf_boots>,
 ] as IItemStack[] { utils.rh(item); }
 
+// Manually lower max durability to prevent using armor
+// because it could still be obtained from merchants and other places
+val armorMaxDamageMap = {
+	1: [
+		<minecraft:iron_helmet>,
+		<minecraft:iron_chestplate>,
+		<minecraft:iron_leggings>,
+		<minecraft:iron_boots>,
+	],
+	5: [
+		<minecraft:golden_helmet>,
+		<minecraft:golden_chestplate>,
+		<minecraft:golden_leggings>,
+		<minecraft:golden_boots>,
+	],
+  10: [
+		<minecraft:diamond_helmet>,
+		<minecraft:diamond_chestplate>,
+		<minecraft:diamond_leggings>,
+		<minecraft:diamond_boots>,
+	],
+} as IItemStack[][int];
+
+for maxDamage, list in armorMaxDamageMap {
+	for item in list {
+		item.maxDamage = maxDamage;
+	}
+}
 
 #------------
 # Iron
