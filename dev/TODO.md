@@ -29,9 +29,11 @@ Items that should have more uses:
 ![](https://git.io/JRLSJ "Ice Shard")
 ![](https://git.io/JRnDa "Tar")
 ![](https://git.io/JznPT "Lormyte Block")
+![](https://git.io/JVBLv "Exhausting Ingot")
+![](https://git.io/JVBL3 "Charged Creeper Chunk")
+![](https://git.io/JoUaU "Quicksilver")
 [Quickdry Concrete]
 [Cow Written Book]
-[Exhausting Ingot]
 
 ### Tier 3
 
@@ -44,6 +46,7 @@ Items that should have more uses:
 ![](https://git.io/JGGhx "Overworldian Matter")
 ![](https://git.io/JRLSU "Huge Stalk")
 ![](https://git.io/JRLyA "Ectoplasm")
+![](https://git.io/JnzzI "Glitch Infused Ingot")
 
 ### Tier 4
 
@@ -54,7 +57,6 @@ Items that should have more uses:
 ![](https://git.io/JLhhY "Galactic Potato")
 ![](https://git.io/JLhpx "Charged Draconium Block")
 ![](https://git.io/JLhhW "Blue Quartz")
-![](https://git.io/JnzzI "Glitch Infused Ingot")
 ![](https://git.io/JCqV9 "Particle Generator")
 ![](https://git.io/JuMlF "Material Absorber")
 
@@ -75,13 +77,13 @@ Liquids that should have more uses:
 ![](https://git.io/J3hVP "Bursting Powder")
 ![](https://git.io/J3hV0 "Crushing Block")
 ![](https://git.io/J3hVR "TNT")
-![](https://git.io/JsegO "Drying Basin")
 ![](https://git.io/Jsw4m "Miniaturization Field Projector")
 ![](https://git.io/JG5U9 "Decay Generator")
 ![](https://git.io/Jst3B "Crystal Memory")
 ![](https://git.io/J3hVE "Wooden Barrel MILKING")
 ![](https://git.io/JtJkQ "Drying Rack")
 ![](https://git.io/JuMld "Advanced Alchemic Condenser")
+![](https://git.io/JtDnO "Chemical Thrower")
 
 ---
 
@@ -89,24 +91,10 @@ Liquids that should have more uses:
 
 # TODO
 
-- [x] ✏️ [Primal Mana] add craft
-- [ ] ✏️ ![](https://git.io/Jz9qK "Potion of Doom") fix brew (reason: potioncore)
-- [ ] ✏️ Rats as alt for some machine recipes
-- [ ] ✏️ Add Twilight Forest spawners to Skyblock craft
-- [ ] ✏️ Add cobalt and other ore to JAOPCA cfg for skyblock
-- [x] ✏️ [Batbox] cheaper
-- [ ] ✏️ Fix [Knowledge Absorber] unbreaking mechanics (glitching)
-- [x] ✏️ [Garbage Pile] change ardite to [Ardite Ore piece]
-- [x] ✏️ [(Every) Compressed Crushed] add to compressed hammering
-- [x] 🔄 Disable Purpur Guards
-- [x] 🔄 "Book written by" add lang
-- [ ] 🔄 Traveler's Backpack add tips
-- [ ] 🔄 Use `ench.makeTag();` to retrieve **shimmering** ench
-- [ ] 🔄 ![](https://git.io/Jz9qy "Bean Pod") add drop list
+- [ ] ✏️ ![](https://git.io/JoUaT "Small Plate Presser") add sub-outputs
+- [ ] ✏️ Add "Any different Item" with CoT to not confuse players
+- [ ] ✏️ [Cobalt Dust] Replace with EnderIO variant (its beautiful)
 - [ ] 🔄 ![](https://git.io/J3p8B "Infinity Furnace") front texture empty on client
-- [ ] 🔄 Add Loading for `automate.js` https://github.com/cronvel/terminal-kit/blob/master/doc/spChars.md#ref.spChars.animation
-- [ ] 🔄 Blacklist Bedrock Ore for ![](https://git.io/Jz9q9 "Mining Laser")
-- [ ] 🔄 Fix TCon Recycle crashing
 - [ ] 🔄 Integrate https://github.com/release-it/release-it
 - [ ] 🚧 Add skyblock client/server changes
 
@@ -116,6 +104,7 @@ Liquids that should have more uses:
 
 # Long-Term
 
+- [ ] ✏️ Rats as alt for some machine recipes
 - [ ] ✏️ ![](https://git.io/JCt00 "Creative Harvest") add more crafts
 - [ ] ✏️ ![](https://git.io/JOv90 "Sieve") Siften materials should be harder
 - [ ] ✏️ **4x** ![Coal Singularity](https://git.io/JtJfM) (or other) => ![Creative Bin](https://git.io/JtJvo) (or other ways to craft creative bins with one unchangable item)
@@ -151,15 +140,11 @@ Liquids that should have more uses:
 - [ ] 🧮 Craft.zs: ![](https://git.io/Jz9qH "Gold Nugget") to make vanilla prefixes
 - [ ] 🟢 Add [Bansoko](https://www.curseforge.com/minecraft/mc-mods/bansoko) to rename Dank/null `.jar` so it could work with Thaumic Speedup
 - [ ] 🟢 Add [Heat And Climate](https://www.curseforge.com/minecraft/mc-mods/heat-and-climate)
-
-## ⛏️ Mining levels rework
-
-There is too much mining levels.
-
-- [ ] Higher Mining level Ore should spawn lower
-- [ ] Remove Excess Mining levels:
-  1. Collapse first 7 tiers in 5, as in vanilla. (Flint, Iron, Redstone, Obsidian, Cobalt)
-  2. Collapse last 7 tiers into 3. (Osgloglas, Enderium/Titanium, Supremium).
+- [ ] ⛏️ Mining levels rework. There is too much mining levels.
+  > * [ ] Higher Mining level Ore should spawn lower
+  > * [ ] Remove Excess Mining levels:
+  >   1. Collapse first 7 tiers in 5, as in vanilla. (Flint, Iron, Redstone, Obsidian, Cobalt)
+  >   2. Collapse last 7 tiers into 3. (Osgloglas, Enderium/Titanium, Supremium).
 
 ---
 
@@ -167,6 +152,7 @@ There is too much mining levels.
 
 # Unable to
 
+- 🔄 Blacklist Bedrock Ore for ![](https://git.io/Jz9q9 "Mining Laser")
 - Buff Giant Sword
   > Giant sword somehow cant be buffed with MaterialChanger mod
 - ![](https://git.io/JtUEY "Heart Crystal Shard") should used to craft Morbs with mobs
@@ -174,3 +160,4 @@ There is too much mining levels.
   > Edit: Actually, its not "needed" because modpack already has a lot of spawning methods
 - `<gendustry:gene_sample>.maxStackSize = 64;` **Transposer** dupe Samples when stackable
 - **Dynamic Surroundings** cause **Better Questing** book not play sounds when getting quests
+
