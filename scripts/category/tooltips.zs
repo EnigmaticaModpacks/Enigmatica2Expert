@@ -327,7 +327,26 @@ desc.tooltip(<botania:flugeleye>);
 desc.tooltip(<botania:thorring>);
 desc.tooltip(<botania:odinring>);
 desc.tooltip(<botania:lokiring>);
+desc.tooltip(<travelersbackpack:travelers_backpack:2>,  'backpack.Bat');
+desc.tooltip(<travelersbackpack:travelers_backpack:15>, 'backpack.Bookshelf');
+desc.tooltip(<travelersbackpack:travelers_backpack:17>, 'backpack.Cactus');
+desc.tooltip(<travelersbackpack:travelers_backpack:28>, 'backpack.Chicken');
+desc.tooltip(<travelersbackpack:travelers_backpack:64>, 'backpack.Creeper');
+desc.tooltip(<travelersbackpack:travelers_backpack:22>, 'backpack.Dragon');
+desc.tooltip(<travelersbackpack:travelers_backpack:8>,  'backpack.Emerald');
+desc.tooltip(<travelersbackpack:travelers_backpack:53>, 'backpack.Pig');
+desc.tooltip(<travelersbackpack:travelers_backpack:51>, 'backpack.Pigman');
+desc.tooltip(<travelersbackpack:travelers_backpack:57>, 'backpack.Rainbow');
+desc.tooltip(<travelersbackpack:travelers_backpack:67>, 'backpack.Slime');
+desc.tooltip(<travelersbackpack:travelers_backpack:62>, 'backpack.Squid');
+desc.tooltip(<travelersbackpack:travelers_backpack:63>, 'backpack.Sunflower');
+desc.tooltip(<travelersbackpack:travelers_backpack:73>, 'backpack.Wolf');
 
+
+desc.both(<netherendingores:ore_nether_modded_1:7>, 'worldgen.disabled_use_sub');
+desc.both(<netherendingores:ore_end_modded_1:7>, 'worldgen.disabled_use_sub');
+desc.both(<thermalfoundation:ore:2>, 'worldgen.disabled_use_sub');
+desc.both(<twilightforest:transformation_powder>);
 
 /*Inject_js(
 [...loadText('config/enderio/recipes/user/capacitor_machines.xml')

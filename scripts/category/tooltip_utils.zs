@@ -16,6 +16,7 @@ zenClass Descriptor {
 	/*
 		Add both: tooltip and description
 	*/
+	function both(item as IItemStack) as void { both(item, autoLang(item)); }
 	function both(item as IItemStack, lang as string) as void {
 		tooltip(item, lang);
 		jei(item, lang);
