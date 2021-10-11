@@ -6,6 +6,27 @@ import mods.jaopca.JAOPCA;
 import mods.jaopca.OreEntry;
 import mods.ctutils.utils.Math.sqrt;
 
+# Untamed tagged rats still despawns.
+# Deny this by costom event
+events.onAllowDespawn(function(e as crafttweaker.event.EntityLivingSpawnEvent) {
+  if(
+    e.world.isRemote()
+    || !(e.entity instanceof crafttweaker.entity.IEntityAnimal)
+    || e.entityLivingBase.definition.id != 'rats:rat'
+  ) return;
+
+  if(
+    !isNull(e.entity.customName)
+    && e.entity.customName != ''
+    && !e.entity.customName.endsWith('Compressed Rat')
+    && !e.entity.customName.endsWith('Compressed Plague Rat')
+  ) {
+    return e.deny();
+  }
+
+  e.allow();
+});
+
 # ######################################################################
 #
 # Craft Changes
@@ -92,7 +113,7 @@ craft.remake(<rats:rat_upgrade_chef>, ["pretty",
   "A": <cyclicmagic:food_step>,         # Apple of Lofty Stature
   "R": <rats:rat_upgrade_basic>,        # Rat Upgrade: Basic
   "C": <rats:chef_toque>.anyDamage(),   # Chef Toque
-  "e": <ore:foodLemondrizzlecake>,      # Lemon Drizzle Cake
+  "e": <ore:foodCake>,
   "H": <forestry:honey_pot>,            # Honey Pot
   "L": <rats:little_black_squash_balls> # Little Black Squash Balls
 });
