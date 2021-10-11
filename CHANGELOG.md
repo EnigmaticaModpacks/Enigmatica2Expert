@@ -1,6 +1,108 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
 
+# v0.35
+
+
+## 🟢 New Mods
+
+Icon | Summary | Reason
+----:|:--------| ------
+<img src="https://media.forgecdn.net/avatars/thumbnails/33/253/256/256/635892752942054834.png" width="50"> | 🟫 [**Default World Generator (port)**](https://www.curseforge.com/minecraft/mc-mods/default-world-generator-port) <sup><sub>DefaultWorldGenerator-port-1.12-2.3.jar</sub></sup> <br> Change the Default World Generator for both clients and servers! | Would fix issue that Void world generated as default
+
+## 🟡 Updated Mods
+
+- [**CraftTweaker**](https://www.curseforge.com/minecraft/mc-mods/crafttweaker) <sup><sub>CraftTweaker2-1.12-4.1.20.662.jar</sub></sup>  
+- [**Modular Controller**](https://www.curseforge.com/minecraft/mc-mods/modular-controller) <sup><sub>ModularController-1.1.4.jar</sub></sup>  
+- [**LittleTiles**](https://www.curseforge.com/minecraft/mc-mods/littletiles) <sup><sub>LittleTiles_v1.5.28_mc1.12.2.jar</sub></sup>  
+
+
+## ✏️ **Recipes**
+  - ### 🖉 **New Recipes**
+    - [Mob Spawner]
+    - ![](https://git.io/JoPgx "Mazestone")
+      ![](https://git.io/JoP2e "Infested Towerwood")
+      ![](https://git.io/JoP2m "Raw Turkey")
+      ![](https://git.io/JoFuW "Celestial Crystal Shard")
+      ![](https://git.io/JoFuR "Redstone Ore")
+    - ![](https://git.io/JoP2O "Naga Spawner")
+      ![](https://git.io/JoP2Y "Lich Spawner")
+      ![](https://git.io/JoP2J "Alpha Yeti Spawner")
+      ![](https://git.io/JoP2v "Knight Phantoms Spawner")
+      ![](https://git.io/JoP2T "Minoshroom Spawner")
+      ![](https://git.io/JoP23 "Hydra Spawner")
+      ![](https://git.io/JoPgb "Ur-Ghast Spawner")
+      ![](https://git.io/JoPgp "Snow Queen Spawner")
+
+  - ### ✐ **Cheaper**
+    - ![](https://git.io/JuAiz "End Steel Ingot")
+      ![](https://git.io/JoPg7 "Solar Panel")
+      ![](https://git.io/JoFug "Grinder")
+      ![](https://git.io/JoFuE "Presser")
+      ![](https://git.io/JoFuB "Water Filter")
+      ![](https://git.io/JtJFs "Storage Upgrade (III)")
+
+  - ### ✎ **Harder**
+    - ![](https://git.io/JoFuu "Unbreakable Wand")
+      ![](https://git.io/JoFu0 "Storage Control Screen Module")
+
+  - ### ✏ **Misc Changes**
+    - ![](https://git.io/JmV4Y "Spectre Ingot") made in crafting table instead of alloying
+    - ![](https://git.io/JoPgH "Lunar Reactive Dust")![](https://git.io/JoP2s "Liveroots") add rat alternative craft
+    - ![](https://git.io/JoPgA "Peace Candle") remove craft
+    - ![](https://git.io/Jgexl "Gold Ingot") actually increase drop rate from pigman
+    - ![](https://git.io/JzX6Q "Purple Slimy Grass") Remove excess recipe (one added with TCon itself)
+    - ![](https://git.io/JoFu8 "Base Addon") fix unreplicable
+    - ![](https://git.io/JOGzx "Fluid Transposer (Basic)") fix new recipes was hidden in JEI
+    - ![](https://git.io/JoFuC "Evil Infused Iron Ingot") now have alt in Dragon Forge
+    - ![](https://git.io/JoFul "Lingering Potion of Wings") fix all **Potion Core** crafts (now craftable)
+    - [Knowledge Absorber] add Unbreaking enchant affect craft
+    - ![](https://git.io/J3hV0 "Crushing Block") excluded from benefication (cant process ![](https://git.io/JoFu4 "Dirty Iron") for example)
+    - ![](https://git.io/JoFuc "Quartz Grindstone") fix extra output (was second extra, now first extra)
+    - ![](https://git.io/JnN1J "SAG Mill") fix any dirty ore ![](https://git.io/JoFu4 "Dirty Iron") thrid extra output
+
+
+
+## 🔵 **Mods**
+
+  - ### ⚙️ **JAOPCA**: Rework all extra outputs
+      > Now machines that able to provide byproducts would output many
+      > different materials.  
+      > [Full list in this Gist](https://gist.github.com/Krutoy242/d19065d619acbfbba08140675ab0632b)
+
+  - ### 🎲 **Random Things**: Disable ![](https://git.io/JoPgA "Peace Candle") gen (item not actually working)
+
+  - ### 🐀 **Rats**
+    - Higher Rat Dig Strength up to 20 (was 4)
+    - Fix untamed named rats despawning
+
+  - ### 📑 **Tips**: for some items
+      > ![](https://git.io/JtkK3 "Traveler's Backpack")![](https://git.io/JmV4s "Silver Ore")![](https://git.io/Jz9q2 "Transformation Powder")
+
+  - ### 🔨 **Tinker's Construct**: Recycle rework, fix crash
+
+  - ### 🧻 **JEI**
+    - Add ![](https://git.io/JoPgj "Liveroot") to JER
+    - Add [Quickdry Concrete] to jei list
+    - Add tag ![](https://git.io/JoPg7 "Solar Panel") to **##Solar** tag
+    - Add ![](https://git.io/JtDnO "Chemical Thrower") category
+    - Add block drops for ![](https://git.io/Jz9qy "Bean Pod") and [Monster Spawner]
+
+  - ### 🙋‍♀️ **Quark**: Blacklist all Mekanism's Tile Entities to move with piston
+
+  - ### 🍗 **Scaling Feast**: Fix wrong placement of hunger stat numbers, fixes #10
+
+
+
+## 🔄 **Misc Changes**
+  - Lower to 1-5-10 max durability of vanilla armor
+  - ### 📖 **Quest Book**: Add ![](https://git.io/JoP2L "Common Treasure")![](https://git.io/JoP2U "Uncommon Treasure")![](https://git.io/JoP2t "Rare Treasure") in loot chests
+
+
+
+
+
+
 # v0.34.1
 
 ## ✏️ Recipes
