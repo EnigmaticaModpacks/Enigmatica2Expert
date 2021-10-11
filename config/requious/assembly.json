@@ -2,7 +2,7 @@
   {
     "resourceName": "adv_bee_analyzer",
     "model": "requious:adv_bee_analyzer",
-    "placeType": "Any",
+    "placeType": "Horizontal",
     "layerType": "Cutout",
     "hasGUI": true,
     "extraVariants": [],
@@ -27,7 +27,7 @@
   },{
     "resourceName": "infinity_furnace",
     "model": "requious:infinity_furnace",
-    "placeType": "Any",
+    "placeType": "Horizontal",
     "layerType": "Cutout",
     "hasGUI": true,
     "extraVariants": [],
@@ -53,7 +53,7 @@
   {
     "resourceName": "tinkers_disassembler",
     "model": "requious:assembly_block",
-    "placeType": "Any",
+    "placeType": "Horizontal",
     "layerType": "Cutout",
     "hasGUI": true,
     "extraVariants": [],

@@ -15,14 +15,14 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded iceandfire
-// Uses of this mod: 9
+// Uses of this mod: 13
 
 
 //####################################################
-// Uses of this class: 9
+// Uses of this class: 13
 zenClass Class_recipes { zenConstructor() {}
 
-	// Uses of this method: 4
+	// Uses of this method: 6
 	function addFireDragonForgeRecipe(input as IItemStack, bloodInput as IItemStack, output as IItemStack) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.iceandfire.recipes.addFireDragonForgeRecipe'~
 			serialize.args([serialize.IItemStack(input), serialize.IItemStack(bloodInput), serialize.IItemStack(output)]));

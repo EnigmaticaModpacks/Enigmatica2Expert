@@ -15,14 +15,14 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded appliedenergistics2
-// Uses of this mod: 7
+// Uses of this mod: 6
 
 
 //####################################################
-// Uses of this class: 5
+// Uses of this class: 4
 zenClass Class_Grinder { zenConstructor() {}
 
-	// Uses of this method: 5
+	// Uses of this method: 4
 	function addRecipe(output as IItemStack, input as IItemStack, turns as int) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.appliedenergistics2.Grinder.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), turns]));

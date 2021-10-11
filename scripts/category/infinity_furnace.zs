@@ -73,7 +73,9 @@ const overload = (id,meta,nbt,amount)=>{
   return s
 }
 
-const filtered = getFurnaceRecipes()
+const furnaceRecipes = getFurnaceRecipes()
+if(!furnaceRecipes) return undefined
+const filtered = furnaceRecipes
   .map(({out_id, out_meta, out_tag, out_amount, in_id, in_meta, in_tag, in_amount})=>
     isBlacklisted([in_id, in_meta], [out_id, out_meta]) +
     'infinFurnace(utils.get('+
@@ -82,7 +84,7 @@ const filtered = getFurnaceRecipes()
   )
 
 return `
-# Total Furnace recipes registered: ${getFurnaceRecipes().length}
+# Total Furnace recipes registered: ${furnaceRecipes.length}
 # Filtered by JEI blacklist: ${filters[0][1]}
 # Filtered manuallly (antidupe): ${filters[1][1]}
 # Filtered by oredict: ${filters[2][1]}
@@ -90,8 +92,8 @@ ${filtered.join('\n')}`
 
 }*/
 
-# Total Furnace recipes registered: 918
-# Filtered by JEI blacklist: 75
+# Total Furnace recipes registered: 920
+# Filtered by JEI blacklist: 77
 # Filtered manuallly (antidupe): 14
 # Filtered by oredict: 200
 infinFurnace(utils.get("actuallyadditions:block_misc", 3), utils.get("actuallyadditions:item_misc", 5));
@@ -180,6 +182,8 @@ infinFurnace(utils.get("draconicevolution:draconium_ore", W), utils.get("draconi
 ##infinFurnace(utils.get("enderio:item_material", 25), utils.get("minecraft:gold_ingot"));
 #infinFurnace(utils.get("enderio:item_material", 26), utils.get("thermalfoundation:material", 128));
 #infinFurnace(utils.get("enderio:item_material", 27), utils.get("thermalfoundation:material", 129));
+#infinFurnace(utils.get("enderio:item_material", 30), utils.get("tconstruct:ingots", 1));
+#infinFurnace(utils.get("enderio:item_material", 31), utils.get("tconstruct:ingots"));
 ##infinFurnace(utils.get("enderio:item_material", 74), utils.get("enderio:item_alloy_ingot", 7));
 infinFurnace(utils.get("enderio:item_owl_egg"), utils.get("betteranimalsplus:fried_egg"));
 infinFurnace(utils.get("endreborn:block_wolframium_ore", W), utils.get("endreborn:item_ingot_wolframium"));

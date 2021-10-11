@@ -1,6 +1,6 @@
 [
   {
-    "generateSubItems": true,
+    "generateSubItems": false,
     "capacity": 1000,
     "minInput": 0,
     "maxInput": 2147483647,

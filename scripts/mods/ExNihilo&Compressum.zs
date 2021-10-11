@@ -83,6 +83,8 @@ for i, inputArr in crushingInMachines {
 	utils.rh(<exnihilocreatio:item_ore_lead:2>);
 	utils.rh(<exnihilocreatio:item_ore_silver:2>);
 	utils.rh(<exnihilocreatio:item_ore_nickel:2>);
+	utils.rh(<exnihilocreatio:item_ore_ardite:2>, false);
+	utils.rh(<exnihilocreatio:item_ore_cobalt:2>, false);
 
 # Manually remake some
 var x = <exnihilocreatio:item_ore_aluminium:2>;
