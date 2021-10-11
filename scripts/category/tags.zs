@@ -72,6 +72,7 @@ for lang, items in {
   ],
 
   "tag.solar" : [
+    <actuallyadditions:block_furnace_solar>,
     <advancedrocketry:solargenerator>,
     <compactsolars:compact_solar_block:1>,
     <compactsolars:compact_solar_block:2>,
