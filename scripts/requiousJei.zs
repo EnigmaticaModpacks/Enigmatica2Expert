@@ -137,7 +137,7 @@ x.addJEICatalyst(<astralsorcery:blockchalice>);
 
 static fluidOutputs as ILiquidStack[] = [
 /*Inject_js(
-config('astralsorcery/fluid_rarities.cfg').data.data
+config('config/astralsorcery/fluid_rarities.cfg').data.data
 .slice(0, 9*5)
 .map(l=>l.split(';'))
 .map(l=>[
@@ -420,7 +420,7 @@ for i in 0 .. 11 {
 static fertilizers as IItemStack[] = [
 /*Inject_js(
 (()=>{
-let t = config('forestry/farm.cfg').fertilizers.items
+let t = config('config/forestry/farm.cfg').fertilizers.items
   .map(l=>l.split(';'))
 let max =       Math.max(...t.map(l=>l[1]))
 let qnt = max / Math.min(...t.map(l=>l[1])) + 1
@@ -614,7 +614,7 @@ x.setJEIItemSlot(2, 0, 'output0');
 for fluid, arr in {
 /*Inject_js(
 Object.entries(
-  config('acronym/floralchemy.cfg').fuelvalues
+  config('config/acronym/floralchemy.cfg').fuelvalues
 ).map(([fluid, {burnTime, powerPreTick}]) => 
   [fluid, ((20*60) / burnTime * 1000) | 0, powerPreTick * burnTime]
 ).sort((a, b) => b[2] - a[2])
@@ -877,7 +877,7 @@ x.addJEICatalyst(<astralsorcery:itemtunedrockcrystal>.withTag({astralsorcery: {c
 
 val mineralisList = [
 /*Inject_js{
-  const list = config('astralsorcery/mineralis_ritual.cfg').data.data
+  const list = config('config/astralsorcery/mineralis_ritual.cfg').data.data
   .map(o=>((a,b)=>[a, parseInt(b)])(...o.split(';')))
   .filter(([od])=>isODExist(od))
   .sort(([,a],[,b])=>b-a)

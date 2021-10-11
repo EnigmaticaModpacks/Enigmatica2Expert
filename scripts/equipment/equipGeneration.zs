@@ -59,7 +59,7 @@ static OVERWORLD_EQUIP_CHANCE as double = 0.8d; // Chance modifier for Overworld
 static NEXT_EQUIP_CHANCE as double      = 0.35d; // Reroll addition for next equipment slot
 
 static SCALLINGHEALTH_MAX_DIFFICULTY as double = 
-/*Inject_js(config('scalinghealth/main.cfg').main.difficulty['Max Value']+'.0d;')*/
+/*Inject_js(config('config/scalinghealth/main.cfg').main.difficulty['Max Value']+'.0d;')*/
 1000.0d;
 /**/
 
