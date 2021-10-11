@@ -90,6 +90,11 @@ write(`extractAllTo ${unzipDir} ... `)
 new AdmZip(zipPath).extractAllTo(unzipDir, true)
 end()
 
+//! ///////////////////////////////////////////////////////////////
+// Change Working Directory
+process.chdir(unzipDir)
+//! ///////////////////////////////////////////////////////////////
+
 // Files to remove from all distributable packages
 const removeGlob = [
   '*',
@@ -116,11 +121,6 @@ const removeGlob = [
   'config/advancementscreenshot.cfg',
   'config/sampler.ini',
 ]
-
-//! ///////////////////////////////////////////////////////////////
-// Change Working Directory
-process.chdir(unzipDir)
-//! ///////////////////////////////////////////////////////////////
 
 write(`removing files&folders ${unzipDir} ... `)
 end('removed:', del.sync(removeGlob, {dryRun: false}).length)

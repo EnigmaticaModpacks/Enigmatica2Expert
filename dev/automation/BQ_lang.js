@@ -9,7 +9,7 @@
 //@ts-check
 
 const fs = require('fs')
-const {isPathHasChanged, naturalSort} = require('../lib/utils.js')
+const {isPathHasChanged, naturalSort, loadText, loadJson} = require('../lib/utils.js')
 
 const validCodes = [
   'en_us',
@@ -17,21 +17,22 @@ const validCodes = [
 ]
 
 const defaultQuests_path = 'config/betterquesting/DefaultQuests.json'
-let hasChanges = false
 
 /** @type {Object<string, string>[]} */
 let langFiles
 
-const init = module.exports.init = async function() {
+let totalChanges = 0
+
+const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
+  await h.begin('Checking requirments')
   if(isPathHasChanged(defaultQuests_path) || validCodes.map(getLangPath).some(isPathHasChanged)) {
-    console.log(' ❌📖 BQ_lang error: Quests or Langs have changes!')
-    return
+    return h.error('Quests or Langs have changes!')
   }
 
   langFiles = validCodes.map(getLangFile)
 
-  /** @type {Object} */
-  const bq_raw = JSON.parse(fs.readFileSync(defaultQuests_path,'utf8'))
+  await h.begin('Parsing DefaultQuests.json')
+  const bq_raw = loadJson(defaultQuests_path)
 
   // Quests
   Object.entries(bq_raw['questDatabase:9']).forEach(([_,q])=>{
@@ -45,10 +46,12 @@ const init = module.exports.init = async function() {
     checkAndAdd(q, 'chapter'+q['lineID:3'], 'desc')
   })
 
-  if(hasChanges) save_DefaultQuests_json(bq_raw)
+  if(totalChanges) save_DefaultQuests_json(bq_raw)
 
   // Save lang files
   validCodes.forEach((code, i) => saveLang(code, langFiles[i]))
+
+  h.result(`Changes: ${totalChanges}`)
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////
@@ -82,7 +85,7 @@ function save_DefaultQuests_json(jsonObj) {
  */
 function getLangFile(langCode) {
   return Object.fromEntries(
-    fs.readFileSync(getLangPath(langCode),'utf8')
+    loadText(getLangPath(langCode))
     .split('\n')
     .map(l=>[
       l.substring(0, l.indexOf('=')),
@@ -109,7 +112,7 @@ function checkAndAdd(json_obj, lang_root, fieldName) {
 
   const langCode = 'bq.'+lang_id
   langFiles.forEach(l=>l[langCode] = text)
-  if(bq_props[bq_key] !== langCode) hasChanges = true
+  if(bq_props[bq_key] !== langCode) totalChanges++
   bq_props[bq_key] = langCode
 }
 

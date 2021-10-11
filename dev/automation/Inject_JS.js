@@ -18,8 +18,6 @@ const {table, getBorderCharacters} = require('table')
 
 const {
   injectInFile,
-  write,
-  end,
   config,
   naturalSort,
   getCSV,
@@ -35,6 +33,9 @@ const {
   getItemOredictSet,
   getSubMetas,
   getByOredict,
+  setBlockDrops,
+  getByOredict_first,
+  prefferedModSort,
 } = require('../lib/utils.js')
 
 function saveObjAsJson(obj, filename) {
@@ -56,11 +57,24 @@ const flatTable = (arr) => table(arr, {
   drawHorizontalLine: () => false
 })
 
+/**
+ * @param {any} injectValue
+ */
+function formatOutput(injectValue) {
+  return !Array.isArray(injectValue)
+  ? injectValue
+  : (injectValue.every(Array.isArray)
+    ? flatTable(injectValue)
+    : injectValue.join('\n')
+  )
+}
+
 // ----------------------------------
 
-const init = module.exports.init = async function() {
+const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
   const occurences = []
 
+  await h.begin('Searching Inject_js blocks in .zs files')
   glob.sync('scripts/**/*.zs').forEach(filePath => {
     const zsfileContent = loadText(filePath)
     for (const match of zsfileContent.matchAll(/\/\*\s*Inject_js((\(|\{)[\s\S\n\r]*?(\)|\}))\*\//gm)) {
@@ -76,7 +90,9 @@ const init = module.exports.init = async function() {
     }
   })
 
-  write(`  🐲 Found ${occurences.length} Inject_js blocks. Evaluating `)
+  await h.begin('Evaluating', occurences.length)
+  let countBlocks = 0
+  let countChanged = 0
 
   for (const cmd of occurences) {
     let injectValue = ''
@@ -87,33 +103,33 @@ const init = module.exports.init = async function() {
         const evalStr = `(async()=>{return ${cmd.command}})()`
         injectValue ||= await eval(evalStr)
       } catch (error) {
-        console.log('\nComment block Error.\nFile: '+cmd.filePath+':'+cmd.line, '\nCapture:', cmd.capture)
-        console.error(error)
-        return
+        return h.error('\nComment block Error.\nFile: '+cmd.filePath+':'+cmd.line, '\nCapture:', cmd.capture, error)
       }
     }
 
-    const injectString = !Array.isArray(injectValue)
-      ? injectValue
-      : (injectValue.every(Array.isArray)
-        ? flatTable(injectValue)
-        : injectValue.join('\n')
-      )
+    const injectString = formatOutput(injectValue)
     
-    injectInFile(cmd.filePath, cmd.capture, '/**/', '*/\n'+injectString+'\n')
-    write('.')
+    if(injectString == null) {
+      h.warn(cmd.filePath+':'+cmd.line+' Returned empty result!')
+    } else {
+      const replaceResults = injectInFile(cmd.filePath, cmd.capture, '/**/', '*/\n'+injectString+'\n')
+      replaceResults.forEach(o=>countBlocks  += o.numMatches??0)
+      replaceResults.forEach(o=>countChanged += o.numReplacements??0)
+    }
+
+    h.step()
   }
 
-  end()
+  h.result(`Blocks: ${countBlocks}, Changed: ${countChanged}`)
 }
 
 if(require.main === module) init()
 
 // Test section:
-;(async()=>console.log(
-// (()=>{
+;(async()=>console.log(formatOutput(
+(()=>{
 
 
 
-// })()
-))()
+})()
+)))()

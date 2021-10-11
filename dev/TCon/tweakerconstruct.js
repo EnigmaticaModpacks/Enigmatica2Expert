@@ -15,7 +15,7 @@ const fs = require('fs')
 const path = require('path')
 const csv = require('csvtojson')
 const glob = require('glob')
-const {injectInFile, begin, end, loadText, subFileName, saveText} = require('../lib/utils.js')
+const {injectInFile, loadText, subFileName, saveText} = require('../lib/utils.js')
 
 const paths = {
 	default_config:       'dev/default_configs/tweakersconstruct.cfg',
@@ -254,6 +254,8 @@ function parseStats(tweakGroup, tweakObj) {
   writeStatsTable(tweakGroup, tweakObj, list)
   replaceInCurrentConfig(list, lookupString)
 	addInvalidTweaks(tweakObj, existMats)
+
+	return list.length
 }
 
 /**
@@ -283,16 +285,19 @@ function addInvalidTweaks(tweakObj, existMats) {
 	})
 }
 
-const init = module.exports.init = async function() {
-	// Format big numbers
-	begin('  Loading configs .')
-	default_tweakers_cfg = loadText(paths.default_config); begin('.')
-	current_tweakers_cfg = loadText(paths.tweakerconstruct_cfg); end()
-	
-	begin('  Parsing csv ')
-	for(const filePath of glob.sync(path.resolve(__dirname, './tweaks/*.csv'))) {
-		begin('.')
+const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
 
+	// Format big numbers
+	await h.begin('Loading default tweakersconstruct.cfg')
+	default_tweakers_cfg = loadText(paths.default_config)
+
+	await h.begin('Loading current tweakersconstruct.cfg')
+	current_tweakers_cfg = loadText(paths.tweakerconstruct_cfg)
+	
+	const tweaksCSVList = glob.sync(path.resolve(__dirname, './tweaks/*.csv'))
+	await h.begin('Parsing CSVs', tweaksCSVList.length)
+	let totalTweaked = 0
+	for(const filePath of tweaksCSVList) {
 		/**
 		 * @type {(string)[][]}
 		 */
@@ -304,22 +309,24 @@ const init = module.exports.init = async function() {
 		/** @type {*} */
 		const materialTweaks = csvResult.reduce((a,v)=>(a[v[0]]=v.slice(1),a), {})
 
-		parseStats(subFileName(filePath), materialTweaks)
-	}
-	end()
+		totalTweaked += parseStats(subFileName(filePath), materialTweaks)
 
-	begin('  Saving files .')
+		h.step()
+	}
+
+	await h.begin('Saving files')
   fs.writeFileSync(paths.tweakerconstruct_cfg, current_tweakers_cfg)
-	end()
 
 	Object.entries(invalid).forEach(([key,set])=>{
 		if(set.size === 0) return
-		console.log(({
+		h.warn(({
 			material: `Found ${set.size} invalid materials for tweaks: ${[...set].join(', ')}`,
 			absent:   `Found ${set.size} materials without tweaks: ${[...set].join(', ')}`,
 			fileInject: 'Unable to inject files: ' + [...set].map(s=>`"${s}"`).join(', '),
 		})[key])
 	})
+
+	h.result(`Total lines tweaked: ${totalTweaked}`)
 }
 
 if(require.main === module) init()

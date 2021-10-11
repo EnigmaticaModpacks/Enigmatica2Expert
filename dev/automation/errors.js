@@ -13,6 +13,7 @@
 =============================================*/
 const fs = require('fs')
 const path = require('path')
+const { loadText } = require('../lib/utils')
 
 /*=============================================
 =               Ignoring errors               =
@@ -257,8 +258,10 @@ const known = [
 =           Working                           =
 =============================================*/
 
-const init = module.exports.init = async function() {
-  let log = fs.readFileSync('logs/debug.log', 'utf8')
+const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
+
+  await h.begin('Loading & parsing debug.log')
+  let log = loadText('logs/debug.log')
   const serverThreadStart = log.indexOf('[Server thread/')
   if(serverThreadStart!==-1) log = log.substring(0, serverThreadStart)
   var newLog = ''
@@ -270,7 +273,10 @@ const init = module.exports.init = async function() {
     viewed: 0,
   }
 
-  for (const match of log.matchAll(/^.*\W(error|WARN)\W.*$/gmi)) {
+  const allErrors = [...log.matchAll(/^.*\W(error|WARN)\W.*$/gmi)]
+  await h.begin(`Found ${allErrors.length} errors`)
+
+  for (const match of allErrors) {
     var isIgnore = false
     stat.total++
     for (let i = 0; i < ignore.length; i++) {
@@ -291,22 +297,21 @@ const init = module.exports.init = async function() {
     }
 
     if (!isIgnore) {
-      var line = match[0]
-        .replace(/^\[[\d:]+\] /,'')  // Remove timestamp
+      var line = match[0].replace(/^\[[\d:]+\] /,'')  // Remove timestamp
       newLog += line + '\n'
 
       if (stat.viewed < 100) {
-        // console.log('=>' + line)
         stat.viewed++
       }
       stat.unknown++
     }
   }
-  console.log('      Total Errors⭕: ', stat.total)
-  console.log('  Untreaten Errors🛑: ', stat.unknown)
-  if(stat.resolved>0) console.log('   Resolved Errors ✅: ', stat.resolved + '/' + known.length)
-
 
   fs.writeFileSync(path.resolve(__dirname, 'data/unknownErrors.log'), newLog)
+
+  h.result(
+    `Errors Total: ${stat.total}, Untreaten: ${stat.unknown}` +
+    (stat.resolved ? `, Resolved: ${stat.resolved}/${known.length}` : '')
+  )
 }
 if(require.main === module) init()

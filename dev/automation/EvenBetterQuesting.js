@@ -11,26 +11,32 @@
 const fs = require('fs')
 const path = require('path')
 const glob = require('glob')
-const {isPathHasChanged} = require('../lib/utils.js')
+const {isPathHasChanged, loadJson, loadText} = require('../lib/utils.js')
 const replace = require('replace-in-file')
 
 const bq_quests_path = 'config/betterquesting/DefaultQuests.json'
 
-const init = module.exports.init = async function() {
-  if(isPathHasChanged('dev/automation/betterquesting')) {
-    console.log(' ❌📖 EvenBetterQuesting error: splitted folder have changes!')
-    return
-  }
+const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
 
+  await h.begin('Disabling edit mode')
   replace.sync({
     files: bq_quests_path,
     from: /^(\s+"editmode:1": )1,/gm,
     to: '$10,',
   })
 
+  await h.begin('Checking requirments')
+  if(isPathHasChanged('dev/automation/betterquesting')) {
+    return h.error(' ❌📖 EvenBetterQuesting error: splitted folder have changes!')
+  }
+
   // @ts-ignore
-  if(process.argv.unparse) unparse()
-  else parse()
+  if(process.argv.unparse) {
+    await h.begin('Join quests into DefaultQuests.json')
+    unparse()
+  } else {
+    h.result('.json files created: ' + await parse(h))
+  }
 }
 
 if(require.main === module) init()
@@ -40,8 +46,8 @@ if(require.main === module) init()
   Split one huge file into many
 
 */
-function parse() {
-  console.log('  📖 BetterQuesting. Splitting DefaultQuests.json into files')
+async function parse(h) {
+  let totalFilesCreated = 0
 
   // Saving files functions
   function saveParsed(filename, txt) {
@@ -49,17 +55,23 @@ function parse() {
     fs.mkdirSync(path.dirname(filePath), { recursive: true })
     fs.writeFileSync(filePath, txt)
   }
-  function saveJSON(filename, obj) { return saveParsed(filename, JSON.stringify(obj, null, 2)) }
+
+  function saveJSON(filename, obj) {
+    totalFilesCreated++
+    return saveParsed(filename, JSON.stringify(obj, null, 2))
+  }
 
   // Remove current splitted qiests
+  await h.begin('Remove current splitted qiests')
   fs.rmdirSync(path.resolve(__dirname, 'betterquesting'), { recursive: true })
   
   // Open lang file to make quests
   const questLang = Object.fromEntries(
-    fs.readFileSync('resources/betterquesting/lang/en_us.lang','utf8')
+    loadText('resources/betterquesting/lang/en_us.lang')
     .split('\n')
     .map(l=>[l.substring(0, l.indexOf('=')), l.substring(l.indexOf('=') + 1)])
-    )
+  )
+
   function findRealQuestname(name) {
     if(name.match(/^[^.]+\.[^.]+\.[^.]+$/)) return questLang[name] ?? name
     return name
@@ -79,7 +91,8 @@ function parse() {
   }
 
   // Open big file
-  const bq_raw = JSON.parse(fs.readFileSync(bq_quests_path,'utf8'))
+  await h.begin('Mapping DefaultQuests.json')
+  const bq_raw = loadJson(bq_quests_path)
   const questMap = new Map()
   Object.entries(bq_raw['questDatabase:9']).forEach(([i,q])=>{
     questMap.set(q['questID:3'], {_index:i,_pos:null,_data:q})
@@ -91,8 +104,11 @@ function parse() {
   saveJSON('_props', {['format:8']: bq_raw['format:8'], ['questSettings:10']:{['betterquesting:10']: mainMap}})
 
   // Chapters
+  const questChapters_entries =  Object.entries(bq_raw['questLines:9'])
+  await h.begin('Creating chapters', questChapters_entries.length)
+
   const chapNameGen = unicNameGenerator()
-  for (const [index, ch] of Object.entries(bq_raw['questLines:9'])) {
+  for (const [index, ch] of questChapters_entries) {
     const qName = ch['properties:10']['betterquesting:10']['name:8']
     const folder = 'Chapters/'+chapNameGen(qName)+'/'
     const questLines = ch['quests:9']
@@ -106,7 +122,11 @@ function parse() {
       const qName = questNameGen(jsQuest._data['properties:10']['betterquesting:10']['name:8'])
       saveJSON(folder+qName, jsQuest)
     }
+
+    h.step()
   }
+
+  return totalFilesCreated
 }
 
 /*
@@ -115,13 +135,11 @@ function parse() {
 
 */
 function unparse() {
-  console.log('  📖 BetterQuesting. Join quests into DefaultQuests.json')
-
   function json_here(filePath) { return JSON.parse(
-    fs.readFileSync(path.resolve(__dirname, filePath),'utf8')
+    loadText(path.resolve(__dirname, filePath))
   )}
   function json_abs(filePath) { return JSON.parse(
-    fs.readFileSync(filePath,'utf8')
+    loadText(filePath)
   )}
 
   const book = {

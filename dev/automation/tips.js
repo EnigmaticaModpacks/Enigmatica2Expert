@@ -10,13 +10,11 @@
 //@ts-check
 
 const fs = require('fs')
-const {write, injectInFile} = require('../lib/utils.js')
+const {injectInFile, loadText} = require('../lib/utils.js')
 
-const init = module.exports.init = async function() {
-  write('  📜 tips.js')
+const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
 
-  function loadText(filename) {return fs.readFileSync(filename, 'utf8')}
-
+  await h.begin('Loading files')
   function getTips(lang) {
     return [...lang.matchAll(
       /^(?<match>e2ee\.tips\.(?<id>\d+)=(?<text>.*))$/gm
@@ -30,8 +28,6 @@ const init = module.exports.init = async function() {
   const rawFiles = filePathes.map(fp => loadText(fp))
   const rawTips  = rawFiles.map(getTips)
   const mainTips = rawTips[0]
-
-  write(', total: ' + mainTips.length)
 
   // cfg
   injectInFile('config/tips.cfg', 
@@ -53,9 +49,6 @@ const init = module.exports.init = async function() {
     )
   )
   replaceTips(1, filtered_ru)
-  write(', ru_ru removed: ' + (mainTips.length - filtered_ru.length))
-  write(', ru_ru unlocalized: ' + unlocalizedCount)
-
 
   function replaceTips(fileIndex, newGroups) {
     const oldTipsText = rawFiles[fileIndex]
@@ -77,7 +70,7 @@ const init = module.exports.init = async function() {
     fs.writeFileSync(filePathes[fileIndex], replaced)
   }
 
-  write(' ...done\n')
+  h.result(`Total tips: ${mainTips.length}, Unlocalized: ${unlocalizedCount}`)
 }
 
 if(require.main === module) init()

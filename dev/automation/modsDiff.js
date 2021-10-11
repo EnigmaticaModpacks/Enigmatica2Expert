@@ -7,19 +7,28 @@
 
 //@ts-check
 
-const fs = require('fs')
 const curseforge = require('mc-curseforge-api')
-const {injectInFile} = require('../lib/utils.js')
+const {injectInFile, loadJson} = require('../lib/utils.js')
 const _ = require('lodash')
-const {mod_loadTime_typles} = require('./benchmark.js')
-
+const {getModLoadTimeTyples} = require('./benchmark.js')
 
 const getModsIds = module.exports.getModsIds = function (json_Path_A, json_Path_B) {
-  const A = JSON.parse(fs.readFileSync(json_Path_A, 'utf8')).installedAddons
-  const B = JSON.parse(fs.readFileSync(json_Path_B, 'utf8')).installedAddons
+
+  /** @type {InstalledAddon[]} */ 
+  const A = loadJson(json_Path_A).installedAddons
+
+  /** @type {InstalledAddon[]} */ 
+  const B = loadJson(json_Path_B).installedAddons
+
   const union = _.uniqBy([...B, ...A], 'addonID')
+
+  /** @type {Object<number, InstalledAddon>} */
   const map_A = {}; A.forEach(e=>map_A[e.addonID] = e)
+
+  /** @type {Object<number, InstalledAddon>} */
   const map_B = {}; B.forEach(e=>map_B[e.addonID] = e)
+  
+  /** @type {Object<number, InstalledAddon>} */
   const map_union = {}; union.forEach(e=>map_union[e.addonID] = e)
 
   const result = {
@@ -30,6 +39,8 @@ const getModsIds = module.exports.getModsIds = function (json_Path_A, json_Path_
     both:    B.filter(o => map_A[o.addonID]),
     added:   B.filter(o =>!map_A[o.addonID]),
     removed: A.filter(o =>!map_B[o.addonID]),
+
+    /** @type {InstalledAddon[]} */ 
     updated: null,
   }
   result.updated = B.filter(o => map_A[o.addonID] && map_A[o.addonID].installedFile?.id !== o.installedFile?.id)
@@ -46,20 +57,20 @@ function getLogo(logo) {
   return url
 }
 
-const loadTimeSumm = _.sumBy(mod_loadTime_typles, '1')
 const exceptionsList = [
   'Just Enough Items (JEI)',
   'Tinkers Construct',
   'CraftTweaker'
 ]
+
 function getSquare(modName) {
   if(exceptionsList.includes(modName)) return '🟪'
   
-  const loadTime = mod_loadTime_typles.find(([m])=>m===modName)?.[1]
+  const loadTime = getModLoadTimeTyples().find(([m])=>m===modName)?.[1]
 
   if (isNaN(loadTime)) return '🟫'
 
-  const rate = loadTime / loadTimeSumm
+  const rate = loadTime / _.sumBy(getModLoadTimeTyples(), '1')
 
   if(rate < 0.0001) return '🟩'
   if(rate < 0.001 ) return '🟨'
@@ -87,25 +98,30 @@ function formatTable(rows) {
   ].join('\n')
 }
 
-const init = module.exports.init = async function() {
+const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
+
+  await h.begin('Get Mods diffs from JSONs')
   const diff = getModsIds('../Enigmatica 2 Expert - E2E (unchanged, updated)/minecraftinstance.json', 'minecraftinstance.json')
 
   // Debug cutoff
   // diff.union = diff.union.slice(-30)
 
-  console.log(`  💟 Asking Curseforge API for ${diff.union.length} mods ...`)
+  await h.begin('Asking Curseforge API for mods', diff.union.length)
 
-  const cursedUnion = await Promise.all(diff.union.map(mcAddon=>curseforge.getMod(mcAddon.addonID)))
+  const cursedUnion = await Promise.all(diff.union.map(mcAddon=>{
+    const p = curseforge.getMod(mcAddon.addonID)
+    p.then(()=>h.step())
+    return p
+  }))
   
-  console.log(`  💟 Curseforge API returns ${cursedUnion.length} mods ...`)
   cursedUnion.sort((a,b) => b.downloads - a.downloads)
-
   
-  fs.writeFileSync(
-    'CurseForge_example_return.json',
-    JSON.stringify(cursedUnion, null, 2)
-  )
+  // fs.writeFileSync(
+  //   'CurseForge_example_return.json',
+  //   JSON.stringify(cursedUnion, null, 2)
+  // )
 
+  await h.begin('Create markdown')
   let result = {
     BOTH:     cursedUnion.filter(({id}) => diff.map_A[id] && diff.map_B[id]),
     EXTENDED: cursedUnion.filter(({id}) =>!diff.map_A[id] && diff.map_B[id]),
@@ -124,7 +140,87 @@ const init = module.exports.init = async function() {
       formatTable(rows)
     )
   }
+
+  h.result(`Described ${cursedUnion.length} mods`)
 }
 
 
 if(require.main === module) init()
+
+/**
+ * @typedef {Object} InstalledAddon
+ * @property {number} addonID
+ * @property {string} gameInstanceID
+ * @property {InstalledFile} installedFile
+ * @property {string} dateInstalled
+ * @property {string} dateUpdated
+ * @property {string} dateLastUpdateAttempted
+ * @property {number} status
+ * @property {boolean} [preferenceAutoInstallUpdates]
+ * @property {boolean} preferenceAlternateFile
+ * @property {boolean} preferenceIsIgnored
+ * @property {boolean} isModified
+ * @property {boolean} isWorkingCopy
+ * @property {boolean} isFuzzyMatch
+ * @property {any} [preferenceReleaseType]
+ * @property {any} [manifestName]
+ * @property {any} [installedTargets]
+ */
+
+/**
+ * @typedef {Object} InstalledFile
+ * @property {number} id
+ * @property {string} displayName
+ * @property {string} fileName
+ * @property {string} fileDate
+ * @property {number} fileLength
+ * @property {number} releaseType
+ * @property {number} fileStatus
+ * @property {string} downloadUrl
+ * @property {boolean} isAlternate
+ * @property {number} alternateFileId
+ * @property {Dependency[]} dependencies
+ * @property {boolean} isAvailable
+ * @property {Module[]} modules
+ * @property {number} packageFingerprint
+ * @property {string[]} gameVersion
+ * @property {boolean} hasInstallScript
+ * @property {boolean} isCompatibleWithClient
+ * @property {number} categorySectionPackageType
+ * @property {number} restrictProjectFileAccess
+ * @property {number} projectStatus
+ * @property {number} projectId
+ * @property {string} gameVersionDateReleased
+ * @property {number} gameId
+ * @property {boolean} isServerPack
+ * @property {string} FileNameOnDisk
+ * @property {SortableGameVersion[]} [sortableGameVersion]
+ * @property {number} [renderCacheId]
+ * @property {number} [packageFingerprintId]
+ * @property {number} [gameVersionMappingId]
+ * @property {number} [gameVersionId]
+ */
+
+/**
+ * @typedef {Object} SortableGameVersion
+ * @property {string} gameVersionPadded
+ * @property {string} gameVersion
+ * @property {string} gameVersionReleaseDate
+ * @property {string} gameVersionName
+ */
+
+/**
+ * @typedef {Object} Module
+ * @property {string} foldername
+ * @property {number} fingerprint
+ * @property {number} type
+ * @property {boolean} invalidFingerprint
+ */
+
+/**
+ * @typedef {Object} Dependency
+ * @property {number} id
+ * @property {number} addonId
+ * @property {number} type
+ * @property {number} fileId
+ */

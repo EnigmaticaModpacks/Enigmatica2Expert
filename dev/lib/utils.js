@@ -25,7 +25,7 @@ const pdf = require('pdf-parse')
 
 /**
  * A function that result would be hashed based on input string
- * @type {Map<function(string): any, Object<string, string>>}
+ * @type {Map<function(string): any, Object<string, {mtime: number, result: any}>>} x is filename
  */
 const hashMap = new Map()
 
@@ -36,15 +36,20 @@ const hashMap = new Map()
  */
 function createHashedFunction(fn) {
   /**
-   * @param {string} fnParam 
-   * @returns {*}
+   * @param {string} filename
+   * @returns {T}
    */
-  var inner = (fnParam) => {
-    /** @type any */
-    const result = fn(fnParam)
-    const hash = hashMap.get(fn) ?? {}
-    hash[fnParam] = result
-    hashMap.set(fn, hash)
+  const inner = (filename) => {
+    const hashFunction = hashMap.get(fn) ?? {}
+    const oldResult = hashFunction[filename]
+    const mtime = fs.statSync(filename).mtime.getTime()
+    if(oldResult && oldResult.mtime === mtime) {
+      return oldResult.result
+    }
+
+    const result = fn(filename)
+    hashFunction[filename] = {result, mtime}
+    hashMap.set(fn, hashFunction)
     return result
   }
 
@@ -61,7 +66,7 @@ function createHashedFunction(fn) {
  * 
  * @example subFileName('C:/main.js') // 'main'
  */
-module.exports.subFileName = filePath => path.basename(filePath).split('.').slice(0, -1).join('.')
+const subFileName = module.exports.subFileName = filePath => path.basename(filePath).split('.').slice(0, -1).join('.')
 
 /**
  * Load file from disk or from hash
@@ -75,30 +80,36 @@ const loadText = module.exports.loadText = createHashedFunction(filename =>
  * Load JSON file from disk or from hash
  * @param {string} filename
  */
-module.exports.loadJson = createHashedFunction(filename => JSON.parse(loadText(filename)))
+const loadJson = module.exports.loadJson = createHashedFunction(filename => JSON.parse(loadText(filename)))
 
 /**
  * Load CSV file from disk or from hash
  * @param {string} filename
- * @return {Object[]}
  */
-const getCSV = module.exports.getCSV = createHashedFunction(filename => 
+const getCSV = module.exports.getCSV = createHashedFunction(/** @return {Object<string, string>[]} */filename => 
   csvParseSync(fs.readFileSync(filename,'utf8'), {columns: true})
+)
+
+/**
+ * Load CSV file from disk or from hash
+ * @param {string} filename
+ */
+module.exports.getPDF = createHashedFunction(async filename => 
+  (await pdf(fs.readFileSync(filename))).text
 )
 
 
 
-const config = module.exports.config = createHashedFunction(cfgPath => {
-  const wholePath = 'config/' + cfgPath
-  let cfg = loadText(wholePath)
+const config = module.exports.config = createHashedFunction(filename => {
+  let cfg = loadText(filename)
     .replace(/^ *#.*$/gm, '') // Remove comments
     .replace(/^~.*$/gm, '') // config version
     .replace(/^ *(\w+|"[^"]+") *{ *$/gm, '$1:{') // class name
     .replace(/^ *} *$/gm, '},') // end of block
     .replace(/^ *\w:(?:([\w.]+)|"([^"]+)") *= *(.*)$/gm, (match, p1, p2, p3)=>{
       return (isNaN(p3) && !(p3 === 'true' || p3 === 'false')) || p3===''
-      ? `"${p1||p2}":"${p3}",`
-      : `"${p1||p2}":${p3},`
+      ? `"${p1||p2}":"${p3.replace(/"/g, '\\"')}",`
+      : `"${p1||p2}":${ p3.replace(/"/g, '\\"')},`
     }) // simple values  
     .replace(/^ *\w:(?:([\w.]+)|"([^"]+)") *< *[\s\S\n\r]*?> *$/gm, (match, p1, p2)=>{
       const lines = match.split('\n')
@@ -118,10 +129,10 @@ const config = module.exports.config = createHashedFunction(cfgPath => {
   try {
     result = eval(`({${cfg}})`)
   } catch (error) {
-    console.log('Parsing config error. File: ', wholePath)
+    console.log('Parsing config error. File: ', filename)
     console.error(error)
     fs.writeFileSync(
-      path.resolve(__dirname, '_error_'+cfgPath.split('.').slice(0, -1).join('.')+'.js'),
+      path.resolve(__dirname, '_error_'+subFileName(filename)+'.js'),
       'return{'+
       cfg.replace(/\n\n+/gm, '\n')
       +'}'
@@ -132,21 +143,22 @@ const config = module.exports.config = createHashedFunction(cfgPath => {
 })
 
 /**
- * Load CSV file from disk or from hash
- * @param {string} filename
- * @return {Object[]}
- */
-module.exports.getPDF = createHashedFunction(async filename => 
-  (await pdf(fs.readFileSync(filename))).text
-)
-/**
  * Save Text but create folder if needed
  * @param {string} txt
  * @param {string} filename
  */
-module.exports.saveText = function(txt, filename) {
+const saveText = module.exports.saveText = function(txt, filename) {
   fs.mkdirSync(path.dirname(filename), { recursive: true })
   fs.writeFileSync(filename, txt)
+}
+
+/**
+ * Save object in file
+ * @param {string} obj
+ * @param {string} filename
+ */
+module.exports.saveObjAsJson = function(obj, filename) {
+  saveText(JSON.stringify(obj, null, 2), filename)
 }
 
 /** @type {Set<string>} */
@@ -173,7 +185,7 @@ module.exports.isItemExist = (id) => (
 /** @type {Set<string>} */
 let jeiBlacklist
 module.exports.isJEIBlacklisted = (def,meta) => (
-  jeiBlacklist ??= new Set(config('jei/itemBlacklist.cfg').advanced.itemBlacklist)
+  jeiBlacklist ??= new Set(config('config/jei/itemBlacklist.cfg').advanced.itemBlacklist)
 ).has(def) || jeiBlacklist.has(def+':'+(meta??'0'))
 
 
@@ -182,6 +194,7 @@ let itemsTree
 const initItemsTree = ()=> itemsTree ??= 
   getCSV('config/tellme/items-csv.csv').reduce(
   (result, o) => (
+    // @ts-ignore
     (result[o['Registry name']] ??= {})[o['Meta/dmg']] = new Set(o['Ore Dict keys'].split(','))
   , result), {})
 
@@ -190,27 +203,87 @@ module.exports.getItemOredictSet = (id,meta='0') => (initItemsTree()[id] ??= {})
 
 module.exports.getSubMetas = (definition) => Object.keys(initItemsTree()[definition] ??= {}).map(s=>parseInt(s))
 
-module.exports.getByOredict = (ore) => //_.uniq(
-  getCSV('config/tellme/items-csv.csv')
-  .filter(o=>o['Ore Dict keys'].split(',').includes(ore))
-  .map(o=>({
-    mod: o['Mod name'],
-    id: o['Registry name'],
-    itemId: o['Item ID'],
-    damage: parseInt(o['Meta/dmg']),
-    hasSubtypes: o['Subtypes'],
-    display: o['Display name'],
-    ores: o['Ore Dict keys'].split(','),
-    owner: o['Registry name'].split(':')[0],
-    commandString: `<${o['Registry name']}${o['Meta/dmg']=='0'?'':':'+o['Meta/dmg']}>`
-  }))
-  // .map(o=>`<${o['Registry name']}${o['Meta/dmg']=='0'?'':':'+o['Meta/dmg']}>`))
-
-
 const escapeRegex = function(string) {
   return string.replace(/[/\\^$*+?.()|[\]{}]/g, '\\$&')
 }
 module.exports.escapeRegex = escapeRegex
+
+/**
+ * @typedef {Object} TMStack Tell Me Item Stack
+ * @property {string} mod 'Astral Sorcery'
+ * @property {string} id 'minecraft:stone'
+ * @property {number} itemId 1234
+ * @property {number} damage 2
+ * @property {boolean} hasSubtypes true
+ * @property {string} display 'Celestial Altar'
+ * @property {string[]} ores 'stoneGranite,stoneGranitePolished'
+ * @property {string} owner 'astralsorcery'
+ * @property {string} commandString '<astralsorcery:blockaltar:2>'
+ */
+
+/**
+ * 
+ * @param {string} ore 
+ * @returns {TMStack[]}
+ */
+const getByOredict = module.exports.getByOredict = (ore) => {
+  const rgx = new RegExp(`^${escapeRegex(ore)}$`, 'i')
+  return getCSV('config/tellme/items-csv.csv')
+  .filter(o=>o['Ore Dict keys'])
+  .filter(o=>o['Ore Dict keys'].split(',').some(ore=>rgx.test(ore)))
+  .map(/** @return {TMStack} */o=>({
+    mod: o['Mod name'],
+    owner: o['Registry name'].split(':')[0],
+    id: o['Registry name'],
+    itemId: parseInt(o['Item ID']),
+    damage: parseInt(o['Meta/dmg']),
+    hasSubtypes: o['Subtypes']==='true',
+    display: o['Display name'],
+    ores: o['Ore Dict keys'].split(','),
+    commandString: `<${o['Registry name']}${o['Meta/dmg']=='0'?'':':'+o['Meta/dmg']}>`
+  }))
+}
+
+/**
+ * 
+ * @param {string} ore 
+ * @returns {TMStack}
+ */
+module.exports.getByOredict_first = (ore) => getByOredict(ore).sort(prefferedModSort)[0]
+
+/** @type {Object<string,number>}}*/
+const modWeights = `
+  minecraft
+  thermalfoundation
+  immersiveengineering
+  ic2
+  mekanism
+  appliedenergistics2
+  actuallyadditions
+  tconstruct
+  chisel
+  biomesoplenty
+  nuclearcraft
+  draconicevolution
+  libvulpes
+  astralsorcery
+  rftools
+  extrautils2
+  forestry
+  bigreactors
+  enderio
+  exnihilocreatio
+`.trim().split('\n').map(l=>l.trim()).reverse().reduce((map,v,i)=>(map[v]=i, map),{})
+
+/**
+ * @param {TMStack} a 
+ * @param {TMStack} b
+ */
+const prefferedModSort = module.exports.prefferedModSort = (a,b) => {
+  const va = modWeights[b.owner]??0, vb = modWeights[a.owner]??0
+  return va > vb ? 1 : (va < vb ? -1 : 0)
+}
+
 
 const matchBetween = function(str, begin, end, regex) {
   let sub = str
@@ -234,6 +307,7 @@ module.exports.injectInFile = function(filename, keyStart, keyFinish, text) {
       files: filename,
       from: new RegExp(escapeRegex(keyStart) + '[\\s\\S\n\r]*?' + escapeRegex(keyFinish), 'm'),
       to: keyStart+text+keyFinish,
+      countMatches: true
     })
   }
   catch (error) {
@@ -246,16 +320,104 @@ module.exports.write = module.exports.begin = function(...args) {
   process.stdout.write(args.join('\t'))
 }
 
-module.exports.end = function(...args) {
+const end = module.exports.end = function(...args) {
   process.stdout.write(args.length ===0 ? ' done' :args.join('\t'))
   console.log()
 }
+
+module.exports.done = end
 
 // # ######################################################################
 // #
 // # Utils
 // #
 // # ######################################################################
+
+/**
+ * @typedef {Object} BlockDrop
+ * @property {string} name
+ * @property {number} meta
+ * @property {number} length
+ */
+
+/**
+ * @typedef {Object} DropEntry
+ * @property {string} stack
+ * @property {number} [chance]
+ * @property {[left:number, right:number][] | [left:number, right:number]} [luck]
+ */
+
+/**
+ * Add new drop list
+ * If second parameter is null - remove entry
+ * @param {string} block_stack
+ * @param {DropEntry[]} [dropList]
+ * @param {boolean} [isSkipSaving]
+ */
+const setBlockDrops = module.exports.setBlockDrops = function(block_stack, dropList, isSkipSaving=false) {
+  const [source, id, _block_meta] = block_stack.split(':')
+  const block_meta = parseInt(_block_meta||'0')
+  const block_id = `${source}:${id}`
+
+  let newObj
+  
+  if(dropList?.length) {
+    newObj = {
+      name: block_id,
+      meta: block_meta,
+      length: dropList.length
+    }
+
+    dropList.forEach((o,i)=>{
+      const [drop_source, drop_id, drop_meta] = o.stack.split(':')
+      newObj['name'+i] = `${drop_source}:${drop_id}`
+      newObj['meta'+i] = parseInt(drop_meta||'0')
+      for (let j=0;j<4;j++) newObj[j+'chance'+i] = o.chance||100.0
+      for (let j=0;j<4;j++) newObj[j+  'pair'+i] = `{
+  "left": ${o.luck?.[j]?.[0] ?? o.luck?.[0] ?? 1},
+  "right": ${o.luck?.[j]?.[1] ?? o.luck?.[1] ?? 1}\n}`
+    })
+  }
+
+  /** @type {BlockDrop[]} */
+  const arr = loadJson('config/BlockDrops/blockdrops.txt')
+  const entryIndex = arr.findIndex(o=>o.name===block_id && o.meta===block_meta)
+
+  if(newObj)
+    if(entryIndex !== -1) Object.assign(arr[entryIndex], newObj)
+    else(arr.push(newObj))
+  else
+    arr.splice(entryIndex, 1)
+  
+  if(!isSkipSaving) {
+    saveBlockDrops(arr)
+  }
+
+  return arr
+}
+
+
+/**
+ * 
+ * @param {{block_stack:string, dropList:DropEntry[]}[]} [blockDropList]
+ */
+module.exports.setBlockDropsList = function(blockDropList) {
+  let arr
+  blockDropList.forEach(o => arr=setBlockDrops(o.block_stack, o.dropList, true))
+  return saveBlockDrops(arr)
+}
+
+/**
+ * @param {BlockDrop[]} arr
+ */
+function saveBlockDrops(arr) {
+  saveText(
+    JSON.stringify(arr, null, 2)
+      .replace(/^(\s+"\d+chance\d+": \d+)(,?)$/gm, '$1.0$2')
+    , 'config/BlockDrops/blockdrops.txt'
+  )
+  return arr
+}
 
 /**
  * @param {string | readonly string[]} globs
@@ -331,8 +493,13 @@ const renameDeep = module.exports.renameDeep = (obj, cb) => {
   return res
 }
 
-const naturalSort = (a,b)=>a.localeCompare(b, undefined, {numeric: true, sensitivity: 'base'})
-module.exports.naturalSort = naturalSort
+/**
+ * 
+ * @param {string} a
+ * @param {string} b
+ */
+const naturalSort = module.exports.naturalSort = (a,b)=>a.localeCompare(b, undefined, {numeric: true, sensitivity: 'base'})
+
 
 module.exports.isPathHasChanged = pPath=>{
   try {
@@ -344,7 +511,19 @@ module.exports.isPathHasChanged = pPath=>{
 
 let furnaceRecipesHashed = undefined
 module.exports.getFurnaceRecipes = ()=>{
-  return furnaceRecipesHashed ??= [...fs.readFileSync('crafttweaker.log', 'utf8')
+  if(furnaceRecipesHashed) return furnaceRecipesHashed
+
+  const text = loadText('crafttweaker.log')
+  const lookup = '\nFurnace Recipes:\n'
+  const startIndex = text.indexOf(lookup)
+  if(startIndex == -1) return undefined
+
+  const sub = text.substring(startIndex + lookup.length)
+  const endIndex = sub.indexOf('\nRecipes:\n')
+  
+  const subSub = endIndex == -1 ? sub : sub.substring(0, endIndex)
+
+  return furnaceRecipesHashed = [...subSub
     .matchAll(/^furnace\.addRecipe\((?<output><(?<out_id>[^>]+?)(?::(?<out_meta>\*|\d+))?>(?<out_tail>(\.withTag\((?<out_tag>\{.*?\})\))?( \* (?<out_amount>\d+))?)?), (?<input><(?<in_id>[^>]+?)(?::(?<in_meta>\*|\d+))?>(?<in_tail>(\.withTag\((?<in_tag>\{.*?\})\))?( \* (?<in_amount>\d+))?)?), .+\)$/gm)
   ].map(m=>m.groups).sort((a,b)=>naturalSort(a.input,b.input))
 }

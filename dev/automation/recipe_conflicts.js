@@ -7,30 +7,30 @@
 
 //@ts-check
 
-const fs = require('fs')
 const chalk = require('chalk')
 const {table} = require('table')
-const {write} = require('../lib/utils.js')
+const {loadText} = require('../lib/utils.js')
 
 
 const allConflicts = []
-const init = module.exports.init = async function() {
-  write(chalk.rgb(20, 184, 132)('  🡺🢀 Recipe Conflicts. '))
-  const crafttweaker_log = fs.readFileSync('crafttweaker.log', 'utf8')
+const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
+
+  await h.begin('Loading files')
+  const crafttweaker_log = loadText('crafttweaker.log')
   const conflictingStartText = '[SERVER_STARTED][SERVER][INFO] Conflicting: '
   const conflictingIndex = crafttweaker_log.indexOf(conflictingStartText)
-  if(conflictingIndex==-1)
-    return noConflicts()
+  if(conflictingIndex==-1) return noConflicts(h)
   
   const subLog = crafttweaker_log.substring(conflictingIndex)
-  
-  for (const [,match] of subLog.matchAll(
+  const unfilteredConflicts = [...subLog.matchAll(
     /^\[SERVER_STARTED\]\[SERVER\]\[INFO\] (\[(Shaped|Shapeless)\] .*)$/gmi
-  )) {
+  )]
+  
+  for (const [,match] of unfilteredConflicts) {
     handleConflict(match)
   }
 
-  if(!allConflicts.length) return noConflicts()
+  if(!allConflicts.length) return noConflicts(h)
 
 
   /** @type {*} */
@@ -39,16 +39,16 @@ const init = module.exports.init = async function() {
       { alignment: 'right' },
       { alignment: 'right' },
       { alignment: 'left' },
-    ],
+    ]
   }
 
   const output = table(allConflicts, config)
-  write('\n')
-  console.log(output)
+  
+  h.warn('\n'+output)
 }
 
-function noConflicts() {
-  write(chalk.rgb(153, 153, 0)`No conflicting recipes found.  `)
+function noConflicts(h) {
+  h.result('No conflicting recipes found')
 }
 
 

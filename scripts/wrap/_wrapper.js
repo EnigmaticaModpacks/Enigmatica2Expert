@@ -1,15 +1,18 @@
-/*
+/**
+ * @file Script to wrapping zs functions into custom functions
+ * with additional information output into crafttweaker.log
+ * 
+ * @author Krutoy242
+ * @link https://github.com/Krutoy242
+ */
 
-  Script to wrapping zs functions into custom functions
-  with additional information output into crafttweaker.log
-
-*/
-
+//@ts-check
 
 const replace = require('replace-in-file')
-const fs = require('fs')
-const path = require('path')
+const { resolve } = require('path')
 const _ = require('lodash')
+const { loadText, saveText } = require('../../dev/lib/utils')
+const { defaultHelper } = require('../../dev/automate')
 
 //##############################################################
 //
@@ -61,6 +64,7 @@ const typeSerialize = [
   ['boolean[]', 'serialize.string__($1)'],
 ]
 
+/** @type {[string, RegExp][]} */
 const typesAliases = [
   ['IIngredient' , /itemInput\d*/  ] ,
   ['IItemStack'  , /itemOutput\d*/ ] ,
@@ -77,14 +81,6 @@ const typesAliases = [
 // Helpers
 //
 //##############################################################
-function loadText(filename, encoding = 'utf8') {
-  return fs.readFileSync(path.resolve(__dirname, filename), encoding)
-}
-
-function saveText(txt, filename) {
-  fs.writeFileSync(path.resolve(__dirname, filename), txt)
-}
-
 const noTypeSet = new Set()
 
 function getSerialization(type) {
@@ -99,88 +95,84 @@ function getSerialization(type) {
   return replStr[1]
 }
 
-//------------------------------------------------------------------
-// Parse all avaliable functions
-//------------------------------------------------------------------
-const signatureStrings = loadText('_functions.java')
-  .replace(/\/\*[\s\S]*?\*\/|([^\\:]|^)\/\/.*$/gm, '$1') // Block comments, line comments
-  .split('\n')
-  .filter(l=>l.trim())
+/**
+ * @typedef Argument
+ * @property {string} name
+ * @property {any} type
+ * @property {boolean} isOptional
+ */
 
-const signatures = signatureStrings.map(s=>{
-  const m = s.match(/^mods\.(?<mod>\w+)\.(?<class>\w+(\.\w+)?)\.(?<method>\w+)\((?<args>.*)\)$/)
-  m.groups.args = m.groups.args
-    .replace(/^\[|\]$/gm, '')
-    .split(',')
-    .map((a,i)=>{
-      const g = a.trim()
-        .match(/(?<isOptional>@[Oo]ptional )?(?:(?<type1>[^ ]+) (?<name1>[^ ]+)$|(?<name2>[^ ]+) as (?<type2>[^ ]+)$|^(?<type3>[^ ]+)$)/)
-        .groups
+/**
+ * @param {string} args
+ * @returns {Argument[]}
+ */
+function mutateArgs(args) {
+  return args.replace(/^\[|\]$/gm, '').split(',').map(mapArgs)
+}
 
+/**
+ * @param {string} a
+ * @param {number} i
+ */
+function mapArgs(a,i) {
+  const g = a.trim()
+    .match(/(?<isOptional>@[Oo]ptional )?(?:(?<type1>[^ ]+) (?<name1>[^ ]+)$|(?<name2>[^ ]+) as (?<type2>[^ ]+)$|^(?<type3>[^ ]+)$)/)
+    .groups
 
-      function fixType(v, cb) {
-        for (const [alias, typeRgx] of typesAliases) {
-          if(typeRgx.test(v)) {
-            return cb(alias, typeRgx)
-          }
-        }
-        return v
+  function fixType(v, cb) {
+    for (const [alias, typeRgx] of typesAliases) {
+      if(typeRgx.test(v)) {
+        return cb(alias, typeRgx)
       }
+    }
+    return v
+  }
 
-      if(g.type3) {
-        fixType(g.type3, alias => {
-          g.type1 = alias, g.name1 = g.type3
-        })
-      }
-
-      return {
-        name: (g.name1 || g.name2 || `arg${i}`).replace(/^(in)$/, '_$1'),
-        type: fixType(g.type1 || g.type2 || g.type3, v=>v),
-        isOptional: g.isOptional != undefined
-      }
+  if(g.type3) {
+    fixType(g.type3, alias => {
+      g.type1 = alias, g.name1 = g.type3
     })
-  return {...m.groups, source: s}
-})
+  }
+
+  return {
+    name: (g.name1 || g.name2 || `arg${i}`).replace(/^(in)$/, '_$1'),
+    type: fixType(g.type1 || g.type2 || g.type3, v=>v),
+    isOptional: g.isOptional != undefined
+  }
+}
 
 
-//------------------------------------------------------------------
-// Create data structure
-// mod{} -> class{} -> method{} -> functions[] -> 3 types of arguments {}
-//------------------------------------------------------------------
-let rgx_mod    = new Set()
-let rgx_class  = new Set()
-let rgx_method = new Set()
+/**@type {Set<string>}*/ let rgx_mod    = new Set()
+/**@type {Set<string>}*/ let rgx_class  = new Set()
+/**@type {Set<string>}*/ let rgx_method = new Set()
 
+/** @typedef {Object<string, string>[]} _Method */
+/** @typedef {Object<string, _Method>} _Class */
+/** @typedef {Object<string, _Class>} _Mod */
+/**
+ * @type {Object<string, _Mod>}
+ */
 const structure = {}
-let functionsCount = 0
-let overloadCount = 0
-signatures.forEach(sig => {
-  // mods
-  if(!structure[sig.mod]) {
-    structure[sig.mod] = {}
-    rgx_mod.add(sig.mod)
-  }
 
-  // classes in mod
-  if(!structure[sig.mod][sig.class]) {
-    structure[sig.mod][sig.class] = {}
-    rgx_class.add(sig.class)
-  }
 
-  // Method in class
-  if(!structure[sig.mod][sig.class][sig.method]) {
-    structure[sig.mod][sig.class][sig.method] = []
-    rgx_method.add(sig.method)
-  }
+/**
+ * @param {{ mod: string; class: string; method: string; args: Argument[]; }} sig
+ */
+function initSignature(sig) {
+  structure[sig.mod]                        ??= (   rgx_mod.add(sig.mod),    {})
+  structure[sig.mod][sig.class]             ??= ( rgx_class.add(sig.class),  {})
+  structure[sig.mod][sig.class][sig.method] ??= (rgx_method.add(sig.method), [])
 
-  // functions in method
+  /**
+   * @param {Argument[]} args
+   */
   function pushFunction(args) {
     structure[sig.mod][sig.class][sig.method].push({
       ['<ARGS_ZS>' ]: args.map(a=>`${a.name} as ${a.type}`).join(', '),
       ['<ARGS_STR>']: args.map(a=>a.name.replace(/(.*)/, getSerialization(a.type))).join(', '),
       ['<ARGS_REF>']: args.map(a=>a.name).join(', '),
     })
-    functionsCount++
+    // functionsCount++
   }
   let argFrom = null
   let argTo = 0
@@ -191,138 +183,155 @@ signatures.forEach(sig => {
       } else {
         pushFunction(sig.args.slice(0, i))
       }
-      overloadCount++
+      // overloadCount++
     } else {
       if(argFrom==null) argFrom = i
       argTo = Math.max(argTo, i+1)
     }
   })
   pushFunction(sig.args.slice(argFrom))
-})
-
-console.log(
-  '  Loaded functions: ', signatureStrings.length,
-  '  Parsed functions: ', functionsCount,
-  '  Including overloaded: ', overloadCount
-)
-
-
-//------------------------------------------------------------------
-// Find all occurances in .zs files
-// and replace them with scripts.wrap.
-//------------------------------------------------------------------
-let rgx =
-  '^(?<before>[ 	]*(?!//+|#+)[ 	]*(import )?)'+
-  '(?<namespace>mods|scripts.wrap)'+
-  `.(?<mod>${   [...   rgx_mod].join('|')})`+
-  `.(?<class>${ [... rgx_class].join('|')})`+
-  `.(?<method>${[...rgx_method].join('|')})`+
-  '(?<after>[ 	\n]*([(;]|as\\s+\\w+;))'
-const replaceRegexp = new RegExp(rgx, 'gm')
-// console.log('Replace Regexp: ', replaceRegexp.source);
-
-let totalReplaced = 0
-let functionsSet = new Set()
-
-const options = {
-  files: 'scripts/**/*.zs',
-  ignore: 'scripts/wrap/*',
-  from: replaceRegexp,
-  countMatches: true,
-  // dry: true,
-  to: (...args) => {
-    let g = args[args.length-2]
-
-    // Increment counters
-    function inc(p) {_.set(structure, [...p, '_counter'], _.get(structure, [...p, '_counter'], 0)+1)}
-    inc([g.mod])
-    inc([g.mod, g.class.replace('_','.')])
-    inc([g.mod, g.class.replace('_','.'), g.method])
-
-    functionsSet.add([g.mod, g.class, g.method].join('.'))
-    totalReplaced++
-
-    return `${g.before}scripts.wrap.${g.mod}.${g.class.replace(/\./g,'_')}.${g.method}${g.after}`
-    // return '$<before>scripts.wrap.$<mod>.$<class>.$<method>$<after>'
-  },
 }
 
+/**
+ * Parse all avaliable functions
+ * @param {import ("../../dev/automate").Helper} h
+ */
+const init = module.exports.init = async function(h=defaultHelper) {
 
-try {
-  const results = replace.sync(options)
-  // console.log('Replacement results:', results);
-  // const changedFiles = results
-  //   .filter(result => result.hasChanged)
-  //   .map(result => result.numReplacements + ' ' + result.file)
+  h.begin('Loading Signatures')
+  const signatureStrings = loadText(resolve(__dirname, '_functions.java'))
+    .replace(/\/\*[\s\S]*?\*\/|([^\\:]|^)\/\/.*$/gm, '$1') // Block comments, line comments
+    .split('\n')
+    .filter(l=>l.trim())
 
-  // console.log('changedFiles :>> ', changedFiles);
-}
-catch (error) {
-  console.error('Error occurred:', error)
-}
+  const signatures = signatureStrings.map(s=>{
+    const groups = s.match(/^mods\.(?<mod>\w+)\.(?<class>\w+(\.\w+)?)\.(?<method>\w+)\((?<args>.*)\)$/).groups
+    return {
+      mod: groups.mod,
+      class: groups.class,
+      method: groups.method,
+      args: mutateArgs(groups.args),
+      source: s
+    }
+  })
+
+  // let functionsCount = 0
+  // let overloadCount = 0
+  signatures.forEach(initSignature)
+  h.done()
+
+  // console.log(
+  //   '  Loaded functions: ', signatureStrings.length,
+  //   '  Parsed functions: ', functionsCount,
+  //   '  Including overloaded: ', overloadCount
+  // )
 
 
-//------------------------------------------------------------------
-// Write content in file
-//------------------------------------------------------------------
-const [
-  tempelate_Header,
-  tempelate_ClassHead,
-  tempelate_Method,
-  tempelate_Function,
-  tempelate_ClassTail,
-] = loadText('_tempelate').split('/*<SPLITTER>*/')
+  //------------------------------------------------------------------
+  // Find all occurances in .zs files
+  // and replace them with scripts.wrap.
+  //------------------------------------------------------------------
+  let rgx =
+    '^(?<before>[ 	]*(?!//+|#+)[ 	]*(import )?)'+
+    '(?<namespace>mods|scripts.wrap)'+
+    `.(?<mod>${   [...   rgx_mod].join('|')})`+
+    `.(?<class>${ [... rgx_class].join('|')})`+
+    `.(?<method>${[...rgx_method].join('|')})`+
+    '(?<after>[ 	\n]*([(;]|as\\s+\\w+;))'
+  const replaceRegexp = new RegExp(rgx, 'gm')
 
-const fileContent = {}
+  let totalReplaced = 0
+  // let functionsSet = new Set()
 
-for (const [modName, modObj] of Object.entries(structure)) {
+  const options = {
+    files: 'scripts/**/*.zs',
+    ignore: 'scripts/wrap/*',
+    from: replaceRegexp,
+    countMatches: true,
+    to: (...args) => {
+      let g = args[args.length-2]
 
-  for (const [className, classObj] of Object.entries(modObj)) {
-    let classText = ''
+      // Increment counters
+      function inc(p) {_.set(structure, [...p, '_counter'], _.get(structure, [...p, '_counter'], 0)+1)}
+      inc([g.mod])
+      inc([g.mod, g.class.replace('_','.')])
+      inc([g.mod, g.class.replace('_','.'), g.method])
 
-    for (const [methodName, methodObj] of Object.entries(classObj)) {
+      // functionsSet.add([g.mod, g.class, g.method].join('.'))
+      totalReplaced++
 
-      if(methodObj._counter && Array.isArray(methodObj)) {
-        for (const funcArgs of methodObj) {
-          let functionText = tempelate_Function
-          for (const [aKey, aTxt] of Object.entries(funcArgs)) {
-            functionText = functionText.replace(aKey, aTxt)
+      return `${g.before}scripts.wrap.${g.mod}.${g.class.replace(/\./g,'_')}.${g.method}${g.after}`
+    },
+  }
+
+  h.begin('Replacing in .zs files')
+  try {
+    replace.sync(options)
+  }
+  catch (error) {
+    h.error('Error occurred:', error)
+  }
+  h.done()
+
+
+  //------------------------------------------------------------------
+  // Write content in file
+  //------------------------------------------------------------------
+  h.begin('Rewriting wrapper/ files')
+  const [
+    tempelate_Header,
+    tempelate_ClassHead,
+    tempelate_Method,
+    tempelate_Function,
+    tempelate_ClassTail,
+  ] = loadText(resolve(__dirname, '_tempelate')).split('/*<SPLITTER>*/')
+
+  /** @type {Object<string, string>} */
+  const fileContent = {}
+
+  for (const [modName, modObj] of Object.entries(structure)) {
+
+    for (const [className, classObj] of Object.entries(modObj)) {
+      let classText = ''
+
+      for (const [methodName, methodObj] of Object.entries(classObj)) {
+
+        if(methodObj._counter && Array.isArray(methodObj)) {
+          for (const funcArgs of methodObj) {
+            let functionText = tempelate_Function
+            for (const [aKey, aTxt] of Object.entries(funcArgs)) {
+              functionText = functionText.replace(aKey, aTxt)
+            }
+            classText ||= tempelate_Method.replace(/<METHOD_USES>/g, methodObj._counter)
+            classText += functionText.replace(/<METHOD>/g, methodName)
           }
-          classText = classText || tempelate_Method.replace(/<METHOD_USES>/g, methodObj._counter)
-          classText += functionText.replace(/<METHOD>/g, methodName)
         }
       }
-    }
 
-    if(classText) {
-      classText = tempelate_ClassHead
-        .replace(/<CLASS_USES>/g, classObj._counter)
-        + classText + tempelate_ClassTail
+      if(classText) {
+        classText = tempelate_ClassHead
+          .replace(/<CLASS_USES>/g, classObj._counter)
+          + classText + tempelate_ClassTail
 
-      fileContent[modName] = fileContent[modName] || tempelate_Header
-        .replace(/<MOD>/g, modName)
-        .replace(/<MOD_USES>/g, modObj._counter)
+        fileContent[modName] = fileContent[modName] || tempelate_Header
+          .replace(/<MOD>/g, modName)
+          .replace(/<MOD_USES>/g, modObj._counter)
 
-      fileContent[modName] += classText
-        .replace(/<CLASS>/g, className.replace(/\./g,'_'))
-        .replace(/<CLASS_PURE>/g, className)
-        .replace(/<MOD>/g, modName)
+        fileContent[modName] += classText
+          .replace(/<CLASS>/g, className.replace(/\./g,'_'))
+          .replace(/<CLASS_PURE>/g, className)
+          .replace(/<MOD>/g, modName)
+      }
     }
   }
+
+  // let rewrittenFiles = 0
+  for (const [modName, txt] of Object.entries(fileContent)) {
+    saveText(txt, resolve(__dirname, `${modName}.zs`))
+    // rewrittenFiles++
+  }
+
+  h.result(`Total replaces: ${totalReplaced}`)
 }
 
-let rewrittenFiles = 0
-for (const [modName, txt] of Object.entries(fileContent)) {
-  saveText(txt, `${modName}.zs`)
-  rewrittenFiles++
-}
-
-console.log('  Total replaces: ', totalReplaced, 'Rewritten wrap files :>> ', rewrittenFiles)
-
-// console.log('Functions used :>>\n----------------------')
-// functionsSet.forEach(s=>{
-//   let method = signatures.find(g=>new RegExp(`${g.mod}.${g.class}.${g.method}`).test(s))
-
-//   console.log(method.source)
-// })
-// console.log('----------------------')
+if(require.main === module) init()

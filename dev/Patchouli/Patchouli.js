@@ -1,32 +1,34 @@
-/*
+/**
+ * @file Patchouli_js
+ *    Automatic Patchouli pages generator.
+ *    Handy for ingame patchnoter
+ *  Usage:
+ *    1. Install dependencies (see require section below)
+ *    2. Add "Patchouli_js()" comment blocks in .zs files
+ *    3. Run from terminal:
+ *        node patchouli.js
+ * 
+ * @author Krutoy242
+ * @link https://github.com/Krutoy242
+ */
 
-  Patchouli_js
-    Automatic Patchouli pages generator.
-    Handy for ingame patchnoter
-
-  Usage:
-    1. Install dependencies (see require section below)
-    2. Add "Patchouli_js()" comment blocks in .zs files
-    3. Run from terminal:
-        node patchouli.js
-*/
+//@ts-check
 
 //////////////////////////////////////////
 // NodeJS dependencies
 process.env.NODE_PATH+=':/dev/lib' // eslint-disable-line no-undef
 
+const fs = require('fs')
+const path = require('path')
 const { snakeCase }  = require('snake-case')
 const glob = require('glob')
 const over = require('over')
 const numeral = require('numeral') // eslint-disable-line no-unused-vars
-
 //////////////////////////////////////////
 // Local dependencies
-const {matchBetween, write, end, config} = require('../lib/utils.js') // eslint-disable-line no-unused-vars
-const fs = require('fs')
-const path = require('path')
+const {matchBetween, config, loadText, saveObjAsJson} = require('../lib/utils.js') // eslint-disable-line no-unused-vars
+const { defaultHelper } = require('../automate')
 
-write('  🌿 PatchouliJS:')
 
 //-----------------------------
 // Constants
@@ -81,16 +83,6 @@ var defaultFileContent = {
 // Extract Patchouli_js comment blocks from .zs files
 //
 // ######################################################################
-function loadText(filename, encoding = 'utf8') {
-  return fs.readFileSync(filename, encoding)
-}
-function saveText(txt, filename) {
-  fs.mkdirSync(path.dirname(filename), { recursive: true })
-  fs.writeFileSync(filename, txt)
-}
-function saveObjAsJson(obj, filename) {
-  saveText(JSON.stringify(obj, null, 2), filename)
-}
 function readdir(folderPath) {
   try {
     return fs.readdirSync(folderPath)    
@@ -98,55 +90,10 @@ function readdir(folderPath) {
     return []
   }
 }
-function relative(filePath) {
-  return path.relative(process.cwd(), path.resolve(__dirname, filePath))
-}
 
-var patchouliList = []
+const relative = filePath => path.relative(process.cwd(), path.resolve(__dirname, filePath))
 
-// Add Additional pages
-const additional_pages_path = relative('additional_pages.js')
-patchouliList.push({
-  filePath: additional_pages_path,
-  command: loadText(additional_pages_path)
-})
 
-// Generate list of all documentation entries
-glob.sync('scripts/**/*.zs').forEach(filePath => {
-  var zsfileContent = loadText(filePath)
-  for (const match of zsfileContent.matchAll(/\\* *(Patchouli_js\([\s\S\n\r]*?\))\*\//gm)) {
-    var lineNumber = zsfileContent.substring(0, match.index).split('\n').length
-    patchouliList.push({
-      filePath: filePath,
-      command: match[1],
-      line: lineNumber,
-      below: zsfileContent.substring(match.index + match[0].length),
-    })
-  }
-})
-
-const zsPagesCount = patchouliList.length - 1
-write('ZenScript Blocks: ' + zsPagesCount)
-
-// Patch pages
-const patchVersions = []
-var patchesPath = relative('patches/')
-readdir(patchesPath).forEach(filePath => {
-  const relPath = path.resolve(patchesPath, filePath)
-  const fileNoExt = filePath.split('.').slice(0, -1).join('.')
-  patchVersions.push(fileNoExt)
-  patchouliList.push({
-    filePath: relPath,
-    command: loadText(relPath),
-    overrides: {
-      subcategory: fileNoExt
-    }
-  })
-})
-
-const upperVersion = patchVersions.sort((a,b)=>b.localeCompare(a))[0]
-const patchPagesCount = patchouliList.length - 1 - zsPagesCount
-end(', Patches files: ' + patchPagesCount)
 
 // ######################################################################
 //
@@ -155,11 +102,7 @@ end(', Patches files: ' + patchPagesCount)
 // ######################################################################
 
 // Match all regex from crafttweaker.log
-var crafttweaker_log = null
-function from_crafttweaker_log(rgx) { // eslint-disable-line no-unused-vars
-  crafttweaker_log = crafttweaker_log ?? loadText('crafttweaker.log')
-  return [...crafttweaker_log.matchAll(rgx)]
-}
+const from_crafttweaker_log = rgx => [...loadText('crafttweaker.log').matchAll(rgx)] // eslint-disable-line no-unused-vars
 
 // Transform ZenScript's item string into Patchouli's item string
 function parse_item(str) { // eslint-disable-line no-unused-vars
@@ -168,7 +111,7 @@ function parse_item(str) { // eslint-disable-line no-unused-vars
   var nbtStr = match[3]
   if(nbtStr){
     nbtStr = nbtStr.replace(/(\b)as \w+(\b)/gm, '$1$2')
-    eval('var nbtObj='+nbtStr)
+    const nbtObj = eval(nbtStr)
     return itemDefinition + JSON.stringify(nbtObj)
   } else {
     return itemDefinition
@@ -244,186 +187,280 @@ const paged = over([ // eslint-disable-line no-unused-vars
 ])
 
 
-var book = {}
-const stat = {
-  totalEntries: 0
-}
+// ######################################################################
+//
+// Init
+//
+// ######################################################################
 
-// Iterate over comment blocks
-patchouliList.forEach(patchouliCommand => {
+/**
+ * @typedef {Object} PatchouliCommand
+ * @property {string} filePath
+ * @property {string} command
+ * @property {number} [line]
+ * @property {string} [below]
+ * @property {Object} [overrides]
+ */
 
-  // ######################################################################
-  //
-  // Content-dependent helper functions
-  //
-  // ######################################################################
 
-  // Returns array of matching regex
-  //  All options are optional
-  function match_below(opts) {
-    if (opts && opts.regex) {
-      return matchBetween(patchouliCommand.below, opts.begin, opts.end, opts.regex)
-    } else {
-      return matchBetween(patchouliCommand.below, opts.begin, opts.end, /[\s\S\n\r]*/gm)[0][0]
-    }
+/**
+ * @param {import ("../automate").Helper} h
+ */
+const init = module.exports.init = async function(h=defaultHelper) {
+
+  /** @type {PatchouliCommand[]} */
+  const patchouliList = []
+
+  // Add Additional pages
+  const additional_pages_path = relative('additional_pages.js')
+  patchouliList.push({
+    filePath: additional_pages_path,
+    command: loadText(additional_pages_path)
+  })
+
+  // Generate list of all documentation entries
+  const zsFileList = glob.sync('scripts/**/*.zs')
+  await h.begin(`Scan ${zsFileList.length} .ZS files`)
+
+  const patchuoliBlocksList = zsFileList
+    .map(f=>[f, loadText(f)])
+    .map(/** @return {[string, string, RegExpMatchArray[]]} */
+      ([f, s]) => [f, s, [...s.matchAll(/\\* *(Patchouli_js\([\s\S\n\r]*?\))\*\//gm)]]
+    )
+    .filter(([,,matches])=>matches.length)
+  h.done()
+
+
+  patchuoliBlocksList.forEach(([filePath, zsfileContent, matches]) =>
+    matches.forEach(match => patchouliList.push({
+      filePath,
+      command: match[1],
+      line: zsfileContent.substring(0, match.index).split('\n').length,
+      below: zsfileContent.substring(match.index + match[0].length),
+  })))
+
+  // Patch pages
+  const patchVersions = []
+  var patchesPath = relative('patches/')
+  readdir(patchesPath).forEach(filePath => {
+    const relPath = path.resolve(patchesPath, filePath)
+    const fileNoExt = filePath.split('.').slice(0, -1).join('.')
+    patchVersions.push(fileNoExt)
+    patchouliList.push({
+      filePath: relPath,
+      command: loadText(relPath),
+      overrides: {
+        subcategory: fileNoExt
+      }
+    })
+  })
+
+  const upperVersion = patchVersions.sort((a,b)=>b.localeCompare(a))[0]
+
+  await h.begin('Evaluating blocks', patchouliList.length)
+
+
+  const book = {}
+  const stat = {
+    totalEntries: 0
   }
 
-  // Return all matches of regex under Patchouli_js block until empty line
-  function match_block_below(regex) { // eslint-disable-line no-unused-vars
-    return match_below({regex, end: '\n\n'})
-  }
+  // Iterate over comment blocks
+  patchouliList.forEach(patchouliCommand => {
 
-  // Return all matches of regex under Patchouli_js block until end of file
-  function match_regex_below(regex) { // eslint-disable-line no-unused-vars
-    return [...patchouliCommand.below.matchAll(regex)]
-  }
+    // ######################################################################
+    //
+    // Content-dependent helper functions
+    //
+    // ######################################################################
 
-  // ######################################################################
-  //
-  // Main function
-  //
-  // ######################################################################
-  function Patchouli_js_single(entryId, p) {
-    // Parse patchouli path
-    if(!entryId) entryId = 'Misc Changes'
-    var patchouli_path = entryId.split('/')
-    if(patchouli_path.length==1) patchouli_path.unshift('Patches', 
-        patchouliCommand?.overrides?.subcategory ?? upperVersion
-      )
-    const isSubcategory = patchouli_path.length >= 3
-
-    // Overwrite data for generated patches
-    p = {...p, ...patchouliCommand.overrides}
-
-
-    function defVal(obj, field, def) {
-      obj[field] = obj[field] || def
-      return obj[field]
+    // Returns array of matching regex
+    //  All options are optional
+    function match_below(opts) {
+      const matchResult = matchBetween(patchouliCommand.below, opts.begin, opts.end, opts.regex ?? /[\s\S\n\r]*/gm)
+      return opts?.regex ? matchResult : matchResult[0][0]
     }
 
-    var obj_category = defVal(book, patchouli_path[0], {})
-    var obj_entry
-    var categoryPath
-    var entry_name
-
-    if(isSubcategory){
-      entry_name = patchouli_path[2]
-      categoryPath = `patchouli:subcategories/${snakeCase(patchouli_path[1])}`
-      var obj_subcategory = defVal(obj_category, 'subcategory:'+patchouli_path[1], {})
-      obj_entry = defVal(obj_subcategory, entry_name, {})
-    } else {
-      entry_name = patchouli_path[1]
-      categoryPath = patchouli_path[0]
-      obj_entry = defVal(obj_category, 'entry:'+entry_name, {})
+    // Return all matches of regex under Patchouli_js block until empty line
+    function match_block_below(regex) { // eslint-disable-line no-unused-vars
+      return match_below({regex, end: '\n\n'})
     }
 
-    // Guess mandatory fields for entry
-    defVal(obj_entry, 'name', entry_name)
-    defVal(obj_entry, 'category', categoryPath)
-    defVal(obj_entry, 'pages', [])
-    defVal(obj_entry, 'icon' , p.icon || p.item || 'minecraft:book')
+    // Return all matches of regex under Patchouli_js block until end of file
+    function match_regex_below(regex) { // eslint-disable-line no-unused-vars
+      return [...patchouliCommand.below.matchAll(regex)]
+    }
 
-    // Copy all fields
-    var page = {}
-    var entryKeys = ['category', 'subcategory', 'entry', 'icon']
-    for (const key in p) {
-      if (!entryKeys.includes(key)) {
-        if (key[0]==='_') {
-          page[key.substr(1)] = parse_text(p[key])
-        } else {
-          page[key] = p[key]
+    // ######################################################################
+    //
+    // Main function
+    //
+    // ######################################################################
+    function Patchouli_js_single(entryId, p) {
+      // Parse patchouli path
+      if(!entryId) entryId = 'Misc Changes'
+      var patchouli_path = entryId.split('/')
+      if(patchouli_path.length==1) patchouli_path.unshift('Patches', 
+          patchouliCommand?.overrides?.subcategory ?? upperVersion
+        )
+      const isSubcategory = patchouli_path.length >= 3
+
+      // Overwrite data for generated patches
+      p = {...p, ...patchouliCommand.overrides}
+
+
+      function defVal(obj, field, def) {
+        obj[field] = obj[field] || def
+        return obj[field]
+      }
+
+      var obj_category = defVal(book, patchouli_path[0], {})
+      var obj_entry
+      var categoryPath
+      var entry_name
+
+      if(isSubcategory){
+        entry_name = patchouli_path[2]
+        categoryPath = `patchouli:subcategories/${snakeCase(patchouli_path[1])}`
+        var obj_subcategory = defVal(obj_category, 'subcategory:'+patchouli_path[1], {})
+        obj_entry = defVal(obj_subcategory, entry_name, {})
+      } else {
+        entry_name = patchouli_path[1]
+        categoryPath = patchouli_path[0]
+        obj_entry = defVal(obj_category, 'entry:'+entry_name, {})
+      }
+
+      // Guess mandatory fields for entry
+      defVal(obj_entry, 'name', entry_name)
+      defVal(obj_entry, 'category', categoryPath)
+      defVal(obj_entry, 'pages', [])
+      defVal(obj_entry, 'icon' , p.icon || p.item || 'minecraft:book')
+
+      // Copy all fields
+      var page = {}
+      var entryKeys = ['category', 'subcategory', 'entry', 'icon']
+      for (const key in p) {
+        if (!entryKeys.includes(key)) {
+          if (key[0]==='_') {
+            page[key.substr(1)] = parse_text(p[key])
+          } else {
+            page[key] = p[key]
+          }
         }
       }
+
+      // Guess mandatory fields for page
+      page.type  = page.type  || (p.item ? 'spotlight' : 'text')
+
+      // Title is not mandatory but many page types used it
+      page.title = page.title || patchouli_path[patchouli_path.length-1]
+
+      // Add page
+      obj_entry.pages.push(page)
+      stat.totalEntries++
     }
 
-    // Guess mandatory fields for page
-    page.type  = page.type  || (p.item ? 'spotlight' : 'text')
+    const Patchouli_js = over([ // eslint-disable-line no-unused-vars
+      [over.stringOptionalWithDefault(''), over.array, (str, arr)=>arr.forEach(o=>Patchouli_js_single(str, o))],
+      [over.stringOptionalWithDefault(''), over.object, Patchouli_js_single],
+      // [over.object, obj=>Patchouli_js_single('', obj)],
+      // [over.array,  arr=>arr.forEach(obj=>Patchouli_js_single('', obj))],
+      function() { return } // No parameters function
+    ])
 
-    // Title is not mandatory but many page types used it
-    page.title = page.title || patchouli_path[patchouli_path.length-1]
+    try {
+      eval(patchouliCommand.command)
+    } catch (error) {
+      console.log('Patchouli_js comment block Error.\nFile:', patchouliCommand.filePath, ' Line:', patchouliCommand.line)
+      console.error(error)
+    }
+    h.step()
+  })
+  h.done()
 
-    // Add page
-    obj_entry.pages.push(page)
-    stat.totalEntries++
-  }
-
-  const Patchouli_js = over([ // eslint-disable-line no-unused-vars
-    [over.stringOptionalWithDefault(''), over.array, (str, arr)=>arr.forEach(o=>Patchouli_js_single(str, o))],
-    [over.stringOptionalWithDefault(''), over.object, Patchouli_js_single],
-    // [over.object, obj=>Patchouli_js_single('', obj)],
-    // [over.array,  arr=>arr.forEach(obj=>Patchouli_js_single('', obj))],
-    function() { return } // No parameters function
-  ])
-
-  try {
-    eval(patchouliCommand.command)
-  } catch (error) {
-    console.log('Patchouli_js comment block Error.\nFile:', patchouliCommand.filePath, ' Line:', patchouliCommand.line)
-    console.error(error)
-  }
-
-})
-
-// ######################################################################
-//
-// Write collected pages into patchouli folders
-//
-// ######################################################################
-
-// Remove old trash can contents
-const garbagePath = path.resolve(__dirname, './garbage')
-fs.rmdirSync(garbagePath, { recursive: true })
-
-// Move old patchouli files
-fs.mkdir(garbagePath, { recursive: true }, (err) => {if (err) throw err});
-['categories','entries'].forEach(fldr=>{
-  try {
-    fs.renameSync(path.resolve(bookPath, fldr), path.resolve(garbagePath, fldr))
-  } catch (error) {}
-})
-
-function saveBookFile(_partName, subfolder, content) {
-  var partName = snakeCase(_partName)
-  saveObjAsJson(
-    {
-      __comment: 'This file generated automatically with Patchouli.js. All changes will be rewritten',
-      ...defaultFileContent['*'],
-      ...defaultFileContent[partName],
-      name: _partName,
-      ...content
-    },
-    bookPath + subfolder + partName +'.json'
-  )
-  return partName
+  await writeResult(stat, book, h)
 }
+if(require.main === module) init()
 
-write(`  🌿 Writing total entries: ${stat.totalEntries} `)
 
-// Iterate through new generated book entries
-for (const [_categoryName, category] of Object.entries(book)) {
-  write('.')
+/**
+ * Write collected pages into patchouli folders
+ * @param {{totalEntries: number}} stat 
+ * @param {{}} book 
+ * @param {import('../automate').Helper} h
+ */
+async function writeResult(stat, book, h) {
 
-  var categoryName = saveBookFile(_categoryName, 'categories/', {})
+  // Remove old trash can contents
+  const garbagePath = path.resolve(__dirname, './garbage')
+  fs.rmdirSync(garbagePath, { recursive: true })
 
-  for (const [_subcategoryName, subcategory] of Object.entries(category)) {
+  // Move old patchouli files
+  fs.mkdir(garbagePath, { recursive: true }, (err) => {
+    if (err)
+      throw err
+  });
+  ['categories', 'entries'].forEach(fldr => {
+    try {
+      fs.renameSync(path.resolve(bookPath, fldr), path.resolve(garbagePath, fldr))
+    } catch (error) {
+      return []
+    }
+  })
 
-    var actualName = _subcategoryName.split(':').slice(1).join(':')
-    var isCategory = _subcategoryName.startsWith('subcategory:')
-    if(isCategory) {
-      var subcategoryName = saveBookFile(actualName, 'categories/subcategories/', {
-        parent: 'patchouli:'+categoryName,
-      })
 
-      for (const [_entryName, entry] of Object.entries(subcategory)) {
-        saveBookFile(_entryName, `entries/${categoryName}/${subcategoryName}/`, entry )
+  let totalFilesCreated = 0
+
+  /**
+   * 
+   * @param {string} _partName 
+   * @param {string} subfolder 
+   * @param {object} content 
+   * @returns 
+   */
+  function saveBookFile(_partName, subfolder, content) {
+    var partName = snakeCase(_partName)
+    saveObjAsJson(
+      {
+        __comment: 'This file generated automatically with Patchouli.js. All changes will be rewritten',
+        ...defaultFileContent['*'],
+        ...defaultFileContent[partName],
+        name: _partName,
+        ...content
+      },
+      bookPath + subfolder + partName + '.json'
+    )
+    totalFilesCreated++
+    return partName
+  }
+
+	await h.begin(`Writing ${stat.totalEntries} entries in files`, Object.entries(book).length)
+
+  // Iterate through new generated book entries
+  for (const [_categoryName, category] of Object.entries(book)) {
+    const categoryName = saveBookFile(_categoryName, 'categories/', {})
+
+    for (const [_subcategoryName, subcategory] of Object.entries(category)) {
+
+      const actualName = _subcategoryName.split(':').slice(1).join(':')
+      const isCategory = _subcategoryName.startsWith('subcategory:')
+      if (isCategory) {
+        const subcategoryName = saveBookFile(actualName, 'categories/subcategories/', {
+          parent: 'patchouli:' + categoryName,
+        })
+
+        for (const [_entryName, entry] of Object.entries(subcategory)) {
+          saveBookFile(_entryName, `entries/${categoryName}/${subcategoryName}/`, entry)
+        }
+      } else {
+        saveBookFile(actualName, `entries/${categoryName}/`, subcategory)
       }
-    } else {
-      saveBookFile(actualName, `entries/${categoryName}/`, subcategory )
     }
+    h.step()
   }
-}
-end()
 
+  h.result('Total files created: '+totalFilesCreated)
+}
 /*
 function findNewPoint(x, y, angle, distance) {
   var result = {};

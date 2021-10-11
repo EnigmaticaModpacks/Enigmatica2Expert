@@ -11,14 +11,16 @@
 const convert = require('xml-js')
 const detectIndent = require('detect-indent')
 const fs = require('fs')
-const {begin, end, naturalSort, globs} = require('../lib/utils.js')
+const {naturalSort, globs, loadText} = require('../lib/utils.js')
 const path = require('path')
 
-const init = module.exports.init = async function() {
+const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
+
+  await h.begin('Reading crafttweaker.log')
   const changes = {}
   let total = 0
 
-  for (const {groups} of fs.readFileSync('crafttweaker.log', 'utf8').matchAll(
+  for (const {groups} of loadText('crafttweaker.log').matchAll(
       /^\[INITIALIZATION\]\[CLIENT\]\[INFO\] Put this recipe in file \[(\.\/)?(?<filename>[^\]]*?)\] manually.\n\r?(?<recipe>(\s*<!--(.*)-->\n\r?)?([\s\S\n\r]*?<\/[rR]ecipe>))/gm
   )) {
     (changes[groups.filename] ??= []).push(groups.recipe)
@@ -43,10 +45,10 @@ const init = module.exports.init = async function() {
       .sort((a, b) => countInputs(b) - countInputs(a) || naturalSort(JSON.stringify(a), JSON.stringify(b)))
   }
 
-  begin(`  Found ${total} recipes for ${Object.keys(changes).length} files. Injecting `)
+  await h.begin('Injecting in files', Object.keys(changes).length)
 
   function mutateXml(filePath, fnc) {
-    const xml = fs.readFileSync(filePath, 'utf8')
+    const xml = loadText(filePath)
     const obj = convert.xml2js(xml, {compact: false})
     if(fnc) fnc(obj)
     const XML = convert.js2xml(obj, {spaces: detectIndent(xml).indent || '	'})
@@ -85,11 +87,13 @@ const init = module.exports.init = async function() {
         recipeXml.elements.forEach(e => {
           recipeList.push(e)
         })
+        // h.step()
       }
-      begin('.')
     })
+    h.step()
   }
-  end()
+  
+  h.result(`Total XML recipes: ${total}`)
 }
 
 if(require.main === module) init()

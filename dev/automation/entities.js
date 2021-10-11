@@ -19,7 +19,7 @@ const nice = v => {return numeral(+v).format('0.0')}
 
 
 
-const init = module.exports.init = async function() {
+const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
 
   //###############################################################################
   // Living Matter
@@ -98,6 +98,8 @@ const init = module.exports.init = async function() {
 
 
   saveText(replacedConfig, 'config/rftools/rftools.cfg')
+
+  h.result(`Rewritten ${mobspawnamounts.length} entities and ${livingmatter.length} livingmatter`)
 }
 
 

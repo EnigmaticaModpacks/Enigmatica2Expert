@@ -7,23 +7,26 @@
 
 //@ts-check
 
-const fs = require('fs')
 const replace = require('replace-in-file')
-const {injectInFile, write, end} = require('../lib/utils.js')
+const {injectInFile, loadText, setBlockDropsList} = require('../lib/utils.js')
 const del = require('del')
 
 
 
-const init = module.exports.init = async function() {
-  // Replace Optifine item ID
-  const debug_log = fs.readFileSync('logs/debug.log', 'utf8')
+const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
+
+  await h.begin('Replacing Optifine item IDs')
+  const debug_log = loadText('logs/debug.log')
   const lootChestID = debug_log.match(/Registry: (\d+) bq_standard:loot_chest bq_standard.items.ItemLootChest/)?.[1]
+  let countReplacedIDs = 0
   if(lootChestID) {
     replace.sync({
       files: 'resourcepacks/bq_lootchests/assets/minecraft/mcpatcher/cit/loot_chest_*.properties',
       from: /(items=)\d+/gm,
-      to: '$1'+lootChestID
+      to: '$1'+lootChestID,
+      countMatches: true
     })
+    .forEach(r=>countReplacedIDs += r.numReplacements??0)
   }
 
   //###############################################################################
@@ -41,17 +44,16 @@ const init = module.exports.init = async function() {
 
   */
 
-  const crafttweaker_log = fs.readFileSync('crafttweaker.log','utf8')
+  await h.begin('Managing Fake iron recipes')
+  const crafttweaker_log = loadText('crafttweaker.log')
   const globMatch = crafttweaker_log.match(/^Recipes:$.*/ms)
 
   if(!globMatch) {
-    console.log('  🧥 ERROR: no /ct recipes found in crafttweaker.log')
-    return
+    return h.error('No /ct recipes found in crafttweaker.log')
   }
 
   const recipes = globMatch[0]
 
-  let matchesCount = 0
   const resultArr = []
 
   const whitelist = [
@@ -79,7 +81,7 @@ const init = module.exports.init = async function() {
   ]
 
   // Add already exist remakes
-  const fakeIron_zs = fs.readFileSync('scripts/category/fakeIron.zs','utf8')
+  const fakeIron_zs = loadText('scripts/category/fakeIron.zs')
   const remakes = fakeIron_zs.match(/^# Start of automatically generated recipes:$.*/ms)[0]
   for (const match of remakes.matchAll(/^remakeShape.{1,4}\("[^"]+", (?<output><[^>]+>).*$/gm)) {
     if(whitelist.includes(match.groups.output))
@@ -87,11 +89,8 @@ const init = module.exports.init = async function() {
   }
 
   // Add new
-  write('  Inspecting recipes ')
   for (const match of recipes.matchAll(/^(?<function>recipes\.addShape(?<postfix>d|less))\((?<name>".*?") *, *(?<output>[^, ]*?)(?<count> \* \d+)?, (?<grid>.*)\);$/gm)) {
     const g = match.groups
-    matchesCount++
-    if(matchesCount%1000==0) write('.')
 
     const regex = /<(minecraft:iron_|ore:)(ingot|block|nugget)(?:Iron)?>/gi
     if(
@@ -103,7 +102,6 @@ const init = module.exports.init = async function() {
     const line = `remakeShape${g.postfix}(${g.name}, ${g.output}${g.count??''}, ${replacedGrid});`
     resultArr.push(line)
   }
-  end()
 
 
   injectInFile('scripts/category/fakeIron.zs', 
@@ -112,18 +110,45 @@ const init = module.exports.init = async function() {
     resultArr.sort().join('\n')
   )
 
-  console.log(`  Saved ${resultArr.length} recipes to scripts/category/fakeIron.zs`)
+  //###############################################################################
+  //###############################################################################
+  //###############################################################################
+
+  await h.begin('Removing cached files')
+  const countCachedRemoved = del.sync([
+    'config/thaumicjei_itemstack_aspects.json',
+    'config/thaumicspeedup/cache.lock',
+  ], {dryRun: false}).length
 
   //###############################################################################
   //###############################################################################
   //###############################################################################
 
-  console.log('  💘 Removing cached files: ',
-    del.sync([
-      'config/thaumicjei_itemstack_aspects.json',
-      'config/thaumicspeedup/cache.lock',
-    ], {dryRun: false})
-  )
+  /*
+
+    Manually handle blockdrops.txt
+
+  */
+  await h.begin('Handling blockdrops.txt')
+  // Remove noisy urns
+  setBlockDropsList([
+    {block_stack: 'thaumcraft:loot_crate_common',   dropList: undefined},
+    {block_stack: 'thaumcraft:loot_urn_common',     dropList: undefined},
+    {block_stack: 'thaumcraft:loot_crate_uncommon', dropList: undefined},
+    {block_stack: 'thaumcraft:loot_urn_uncommon',   dropList: undefined},
+    {block_stack: 'thaumcraft:loot_crate_rare',     dropList: undefined},
+    {block_stack: 'thaumcraft:loot_urn_rare',       dropList: undefined},
+    
+    {block_stack: 'minecraft:mob_spawner',          dropList: [
+      {stack:'enderio:item_broken_spawner'},
+      {stack:'actuallyadditions:item_misc:20', luck: [1,3]},
+    ]}
+  ])
+
+  //###############################################################################
+  //###############################################################################
+  //###############################################################################
+  h.result(`Replaced Optifine: ${countReplacedIDs}, Saved fakeIron recipes: ${resultArr.length}, Removed cached: ${countCachedRemoved}`)
 }
 
 if(require.main === module) init()

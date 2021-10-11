@@ -85,7 +85,7 @@ Patchouli_js('Items/Magic Bean',
     icon:	'cyclicmagic:sprout_seed',
     type:	'grid'
 },
-  config('cyclicmagic.cfg').cyclicmagic.blocks.magicbean.MagicBeanDropList
+  config('config/cyclicmagic.cfg').cyclicmagic.blocks.magicbean.MagicBeanDropList
   .map(l=>l.replace(/\*(\d+)$/, ':$1'))
 ))
 
@@ -96,8 +96,8 @@ Patchouli_js('Items/Recycling', [{
   item:	'requious:tinkers_disassembler',
 	title: 'Tool recycling',
   _text: `Tools and Armor can be disassembled in $(l)Disassembler/$.
-    $(li)Softest item part picked for output first
-    $(li)Both of tools should have harvest level higher
+    $(li)The disassembler will try to deliver the strongest material
+    $(li)Both of tools should have most or equal harvest level
     $(li)Output amount based on material cost
-    $(li)Also som more math`,
+    $(li)Also sum more math`,
 }])

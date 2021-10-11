@@ -9,20 +9,22 @@
 
 //@ts-check
 
-const {write, config, naturalSort, injectInFile, getCSV} = require('../lib/utils.js')
-const fs = require('fs')
+const {config, naturalSort, injectInFile, getCSV, loadText} = require('../lib/utils.js')
 
-const init = module.exports.init = async function() {
-  write('  📑 jei.js, ')
+const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
 
-  const jeiPath = 'jei/itemBlacklist.cfg'
+  await h.begin('Get files')
+  const jeiConfigPath = 'config/jei/itemBlacklist.cfg'
+  const purged = getPurged()
   const merged = [
-    ...config(jeiPath).advanced.itemBlacklist, 
-    ...getPurged()
+    ...config(jeiConfigPath).advanced.itemBlacklist, 
+    ...purged
   ]
   const pure = []
   const removedMods = new Set()
   const modList = getCSV('config/tellme/mod-list-csv.csv')
+
+  await h.begin(`Fixing blacklist with ${merged.length} entries`)
   merged.forEach((s,i)=>{
     // If duplicate
     const next = merged.slice(i+1)
@@ -43,10 +45,8 @@ const init = module.exports.init = async function() {
   })
 
   pure.sort(naturalSort)
-  write(', becomes: ' + pure.length)
-  write(', removed mods:', [...removedMods])
 
-  injectInFile('config/'+jeiPath, 
+  injectInFile(jeiConfigPath, 
     '    S:itemBlacklist <\n',
     '\n     >',
     pure.map(s=>'        '+s).join('\n')
@@ -54,10 +54,9 @@ const init = module.exports.init = async function() {
 
 
   function getPurged() {
-    const totalPurged = [...fs.readFileSync('crafttweaker.log','utf8')
+    const totalPurged = [...loadText('crafttweaker.log')
       .matchAll(/^\[INITIALIZATION\]\[CLIENT\]\[INFO\] purged: (.*)$/gm)
     ]
-    write(' total purged found:', totalPurged.length)
 
     const purgedItems = totalPurged
     .map(m=>m[1])
@@ -69,8 +68,9 @@ const init = module.exports.init = async function() {
       return source + (meta ?? ':0')
     })
 
-    write(' after filtered:', purgedItems.length)
     return purgedItems
   }
+
+  h.result(`Purged / Manually Blacklisted: ${purged.length} / ${pure.length - purged.length}`)
 }
 if(require.main === module) init()
