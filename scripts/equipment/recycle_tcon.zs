@@ -13,6 +13,9 @@ import mods.requious.MachineVisual;
 import mods.requious.RecipeContainer;
 import mods.requious.SlotVisual;
 import mods.zentoolforge.Toolforge;
+import modtweaker.tconstruct.ITICMaterial;
+
+
 
 // Examples of Requious Fracto: https://github.com/DaedalusGame/The-Testbed
 
@@ -60,6 +63,57 @@ val disassemblable =
 ;
 
 
+// Materials that has harvestLevelHead stat
+static materialWithHeadWhitelist as string[] = [
+/*Inject_js(
+_.chunk(
+config('dev/default_configs/tweakersconstruct.cfg')['stat tweaks']['Stat Tweaks']
+.map(l=>`"${l.match(/^([^:]+):.+/)[1]}",`)
+, 5)
+)*/
+"nagascale",       "steeleaf",         "fierymetal",      "knightmetal",       "electrical_steel",  
+"energetic_alloy", "vibrant_alloy",    "redstone_alloy",  "conductive_iron",   "pulsating_iron",    
+"dark_steel",      "soularium",        "end_steel",       "construction_alloy","stone",             
+"flint",           "cactus",           "bone",            "obsidian",          "prismarine",        
+"endstone",        "paper",            "sponge",          "firewood",          "iron",              
+"pigiron",         "knightslime",      "slime",           "blueslime",         "magmaslime",        
+"netherrack",      "cobalt",           "ardite",          "manyullyn",         "copper",            
+"bronze",          "lead",             "silver",          "electrum",          "steel",             
+"treatedwood",     "heavy",            "spectre",         "alpha_fur",         "dragonbone",        
+"desert_myrmex",   "jungle_myrmex",    "dragonsteel_fire","dragonsteel_ice",   "weezer",            
+"endorium",        "wolframium",       "xu_magical_wood", "xu_evil_metal",     "xu_enchanted_metal",
+"xu_demonic_metal","black_quartz",     "restonia_crystal","palis_crystal",     "diamantine_crystal",
+"void_crystal",    "emeraldic_crystal","enori_crystal",   "sunnarium",         "sky_stone",         
+"certus_quartz",   "fluix",            "fluix_steel",     "aquamarine",        "starmetal",         
+"crystal_matrix",  "neutronium",       "infinity_metal",  "bound_metal",       "sentient_metal",    
+"livingrock",      "livingwood",       "dreamwood",       "manasteel",         "terrasteel",        
+"elementium",      "draconium",        "wyvern_metal",    "draconic_metal",    "chaotic_metal",     
+"litherite",       "erodium",          "kyronite",        "pladium",           "ionite",            
+"aethium",         "lonsdaleite",      "mica",            "apatite",           "essence_metal",     
+"meat_metal",      "pink_slime",       "pink_metal",      "rubber",            "advanced_alloy",    
+"energetic_metal", "carbon_fiber",     "iridium",         "universal_metal",   "osmium",            
+"refined_obsidian","refined_glowstone","polyethylene",    "ghostwood",         "bloodwood",         
+"darkwood",        "fusewood",         "dark_matter",     "red_matter",        "fluxed_electrum",   
+"flux_crystal",    "gelid_enderium",   "gelid_gem",       "thaumium",          "void_metal",        
+"primal_metal",    "amber",            "tin",             "aluminium",         "nickel",            
+"platinum",        "invar",            "constantan",      "signalum",          "lumium",            
+"enderium",        "ma.prosperity",    "ma.soulium",      "ma.base_essence",   "ma.inferium",       
+"ma.prudentium",   "ma.intermedium",   "ma.superium",     "ma.supremium",      "boron",             
+"tough",           "hard_carbon",      "boron_nitride",   "thorium",           "uranium",           
+"magnesium",       "chocolate",        "alumite",         "sapphire",          "ruby",              
+"peridot",         "malachite_gem",    "topaz",           "tanzanite",         "amethyst",          
+"osgloglas",       "osmiridium",       "titanium",        "psimetal",          "psigem",            
+"cheese",          "plague_metal",     "mirion",          "emerald_plustic",   "wood",              
+
+/**/
+] as string[];
+
+function getHeadStat(mat as ITICMaterial) as int {
+  if(materialWithHeadWhitelist has mat.getName) return mat.harvestLevelHead;
+  return 1;
+}
+
+
 static validToolsList as string[] = [
   "tconstruct:hammer",
   "tconstruct:battlesign",
@@ -81,7 +135,9 @@ static validToolsList as string[] = [
 var validTools as IIngredient = itemUtils.getItem(validToolsList[0]).anyDamage();
 for i, toolId in validToolsList {
   if(i==0) continue;
-  validTools = validTools | itemUtils.getItem(toolId).anyDamage();
+  val tool = itemUtils.getItem(toolId);
+  if(isNull(tool)) continue;
+  validTools = validTools | tool.anyDamage();
 }
 
 
@@ -140,6 +196,8 @@ static partsCosts as int[string] = {
 
 val ghostBg = SlotVisual.create(1,1).addPart("requious:textures/gui/assembly_slots.png",0,1);
 
+static OUTPUT_SLOTS as int = 1;
+
 static gh as int[string][] = [
   {x:3, y:2},
   {x:4, y:2},
@@ -153,7 +211,7 @@ o.setItemSlot  (gh[0].x,gh[0].y,ComponentFace.all(), 1).setGroup("ghost0").setAc
 o.setItemSlot  (gh[1].x,gh[1].y,ComponentFace.all(), 1).setGroup("ghost1").setAccess(false,false).setHandAccess(false,false).noDrop().setBackground(ghostBg);
 o.setDurationSlot(2,1).setGroup("duration0").setVisual(SlotVisual.arrowRight());
 o.setDurationSlot(5,1).setGroup("duration1").setVisual(SlotVisual.arrowRight());
-for i in 0 .. 4 { o.setItemSlot(6+(i%2),i/2+1,ComponentFace.all(),64).setGroup("output"~i).setAccess(false,true).setHandAccess(false,true); }
+for i in 0 .. OUTPUT_SLOTS { o.setItemSlot(6+(i%2),i/2+1,ComponentFace.all(),64).setGroup("output").setAccess(false,true).setHandAccess(false,true); }
 // o.setTextSlot(3,0).setVisual(SlotVisual.create(1,1)).setRenderText("%s", ['v_ghost0']).alignCenter();
 // o.setTextSlot(4,0).setVisual(SlotVisual.create(1,1)).setRenderText("%s", ['v_ghost1']).alignCenter();
 
@@ -164,7 +222,7 @@ o.setJEIItemSlot  (gh[0].x,gh[0].y,"ghost0", ghostBg);
 o.setJEIItemSlot  (gh[1].x,gh[1].y,"ghost1", ghostBg);
 o.setJEIDurationSlot(2,1,"duration0",SlotVisual.arrowRight());
 o.setJEIDurationSlot(5,1,"duration1",SlotVisual.arrowRight());
-for i in 0 .. 4 { o.setJEIItemSlot(6+(i%2),i/2+1,"output"~i); }
+for i in 0 .. OUTPUT_SLOTS { o.setJEIItemSlot(6+(i%2),i/2+1,"output"); }
 
 o.addVisual(MachineVisual.smoke("active".asVariable(), V(0,0.25,0.25), V(0,0.75,0.75), V(-0.1,0,0), Color.normal([51,102,153]),30,true));
 o.addVisual(MachineVisual.smoke("active".asVariable(), V(1,0.25,0.25), V(1,0.75,0.75), V(0.1,0,0),  Color.normal([51,102,153]),30,true));
@@ -209,6 +267,7 @@ function getShards(
 
   // Check if input have tags
   val mats_data = D(input.tag).get("TinkerData.Materials");
+  if(isNull(mats_data)) utils.log(["⚠️ mats_data is null"]);
   if(isNull(mats_data)) return null;
   val mats = mats_data.asList();
 
@@ -224,12 +283,15 @@ function getShards(
 
   // Return if only one mat avaliable
   val listLen = mats.length;
+  if(listLen<=0) utils.log(["⚠️ listLen<=0"]);
   if(listLen<=0) return null;
   if(listLen==1) {
     val matName = mats[0].asString();
     val forgeMat = Toolforge.getMaterialFromID(matName);
+    if(isNull(forgeMat)) utils.log(["⚠️ isNull(forgeMat)"]);
     if(isNull(forgeMat)) return null;
-    if(tool_lvl <= forgeMat.harvestLevelHead) return null;
+    if(tool_lvl <= getHeadStat(forgeMat)) utils.log(["⚠️ tool_lvl <= forgeMat.harvestLevelHead"]);
+    if(tool_lvl <= getHeadStat(forgeMat)) return null;
 
     return [getWeightedShard(matName, listCost[0])];
   }
@@ -242,8 +304,9 @@ function getShards(
     val forgeMat = Toolforge.getMaterialFromID(matName);
     if(isNull(forgeMat)) continue;
     listNames += matName;
-    listLevel += forgeMat.harvestLevelHead;
+    listLevel += getHeadStat(forgeMat);
   }
+  if(listNames.length <= 0) utils.log(["⚠️ listNames.length <= 0"]);
   if(listNames.length <= 0) return null;
 
   // Sort level indexes
@@ -259,10 +322,11 @@ function getShards(
     val index = sorted[(sortOrder < 0) ? sorted.length - _i - 1 : _i];
     val lvl = listLevel[index];
 
-    if(tool_lvl > lvl)
+    if(tool_lvl >= lvl)
       result += getWeightedShard(listNames[index], listCost[index]);
   }
 
+  if(result.length==0) utils.log(["⚠️ result.length==0"]);
   return result.length==0 ? null : result;
 }
 
@@ -280,27 +344,39 @@ function getToolsStats(tool as IItemStack) as double[string] {
   } as double[string];
 }
 
-function damageItemInSlot(machine as MachineContainer, x as int, y as int, damage as int) {
-  val item = machine.getItem(x,y);
-  machine.setItem(x,y, item.withDamage(item.damage + damage));
-}
-
 # ⚒️ Damage tools
+function damageTools(c as RecipeContainer) {
+  utils.log([' ⚒️ damage tools']);
+  for i in 0 .. 2 {
+    val item = c.machine.getItem(3+i,1);
+    c.machine.setItem(3+i,1, item.withDamage(min(item.maxDamage, item.damage + 10)));
+}
+}
+// function damageTools(c as RecipeContainer) {
+  // utils.log([' ⚒️ damage tools']);
+//   for i in 0 .. 2 {
+//     val item = c.machine.getItem(3+i,1);
+//     val isDamaged = item.mutable().attemptDamageItem(10);
+    // utils.log([' ⚒️ succesfully damaged:', isDamaged]);
+//   }
+// }
+
 function addWorldOutput(c as RecipeContainer) {
   c.addWorldOutput(function(machine) {
-    damageItemInSlot(machine, 3,1, 10);
-    damageItemInSlot(machine, 4,1, 10);
-
     # 👻 Remove ghosts
+    utils.log([' ⚒️-👻']);
     machine.setItem(gh[0].x, gh[0].y, null);
     machine.setItem(gh[1].x, gh[1].y, null);
 
+    utils.log([' ⚒️ ✔']);
     return true;
   });
 }
 
 function getRecipe(input_item as IIngredient, tool0 as IIngredient, tool1 as IIngredient, isJEI as bool) as AssemblyRecipe {
   return AssemblyRecipe.create(function(c) {
+    utils.log(['']);
+    utils.log([' enter AssemblyRecipe.create()']);
 
     ################################################################
 
@@ -312,8 +388,10 @@ function getRecipe(input_item as IIngredient, tool0 as IIngredient, tool1 as IIn
       for i in 0 .. 2 {
         val tool = c.machine.getItem(3+i,1);
         if(getGhostID(input, i) != tool.definition.id) {
-          c.addItemOutput("output0", <tconstruct:shard>.withTag({Material: "stone"}));
+          utils.log([' futile!']);
+          c.addItemOutput("output", <tconstruct:shard>.withTag({Material: "stone"}));
           addWorldOutput(c);
+          // damageTools(c);
           return;
         }
       }
@@ -322,12 +400,14 @@ function getRecipe(input_item as IIngredient, tool0 as IIngredient, tool1 as IIn
     ################################################################
 
     # 🔨 Tools
+    utils.log([' get tool stats...']);
     val toolsStats = [
       getToolsStats(c.jei ? tool0.items[0] : c.machine.getItem(3,1)),
       getToolsStats(c.jei ? tool1.items[0] : c.machine.getItem(4,1)),
     ] as double[string][];
 
     if(c.jei) {
+      utils.log([' 👻 Setting ghosts..']);
       # 👻 Set ghosts
       c.addItemOutput("ghost0", getGhostItem(input, 0));
       c.addItemOutput("ghost1", getGhostItem(input, 1));
@@ -344,31 +424,41 @@ function getRecipe(input_item as IIngredient, tool0 as IIngredient, tool1 as IIn
 
     ################################################################
 
+    utils.log([' get shards...']);
     var shards = getShards(input, tool_lvl, amount, sortOrder, quantity);
 
     # 👞 Output shards
-    if(isNull(shards) || shards.length == 0) shards = [<tconstruct:shard>.weight(1)] as WeightedItemStack[];
+    if(isNull(shards) || shards.length == 0)
+      shards = [<tconstruct:shard>.withTag({Material: "stone"}).weight(1)] as WeightedItemStack[];
 
     # 🢂 Output
-    for i,shard in shards {
+    for i,_ in shards {
+      if(i >= OUTPUT_SLOTS) continue;
+      val shard = shards[shards.length - i - 1];
 			if(c.jei) {
-				c.addItemOutput("output"~i, shard.stack.withLore(["§d§l" ~ shard.percent as int ~ "%"]));
+				c.addItemOutput("output", shard.stack.withLore(["§d§l" ~ shard.percent as int ~ "%"]));
 			} else if(quantity >= 1.0d || c.random.nextDouble() < shard.chance) {
-				c.addItemOutput("output"~i, shard.stack);
+        utils.log(['  🢂 output', shard.stack.commandString]);
+				c.addItemOutput("output", shard.stack);
       }
+      utils.log(['🢂 output added', shard.stack.commandString ~ " % " ~ shard.percent as int]);
 		}
 
     addWorldOutput(c);
+    if(!c.jei) damageTools(c);
 
+    utils.log(['✔️ done']);
   })
   .requireItem("input", input_item.marked("input"))
   .requireItem("tool0", tool0.marked("tool0"), 1, 0)
   .requireItem("tool1", tool1.marked("tool1"), 1, 0)
   .requireWorldCondition("world",function(machine) {
+    utils.log([' requireWorldCondition()...']);
     for i in 0 .. 2 {
       val tool = machine.getItem(3+i,1);
       if(tool.damage + 10 > tool.maxDamage) return false;
     }
+    utils.log([' done!']);
     return true;
   }, 10)
   .setActive(80)
@@ -430,34 +520,46 @@ o.addRecipe(AssemblyRecipe.create(function(c) {
 # ╚█████╔╝███████╗██║
 #  ╚════╝ ╚══════╝╚═╝
 # -----------------------------------------------------------------------
-val tool_examples = {
-  <tconstruct:lumberaxe>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 6.51 as float, FreeModifiers: 3, Durability: 1104, HarvestLevel: 4, Attack: 8.360001 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 6.51 as float, FreeModifiers: 4, Durability: 1104, HarvestLevel: 4, Attack: 8.360001 as float}, Special: {Categories: ["aoe", "harvest", "tool"]}, TinkerData: {Materials: ["wood", "manyullyn", "iron", "paper"], Modifiers: ["toolleveling"]}, Modifiers: [{identifier: "ecological", color: -7444965 as long, level: 1}, {identifier: "insatiable", color: -6202120 as long, level: 1}, {identifier: "magnetic", color: -3487030 as long, level: 2, magnetic2: 1 as byte}, {identifier: "writable", color: -1 as long, level: 1, writable1: 1 as byte}, {identifier: "toolleveling", color: 16777215, level: 1}], Traits: ["ecological", "insatiable", "magnetic2", "writable1", "toolleveling"]}):
-  [[
-    <tconstruct:frypan>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 6.2 as float, FreeModifiers: 3, Durability: 456, HarvestLevel: 2, Attack: 4.5 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 6.2 as float, FreeModifiers: 3, Durability: 456, HarvestLevel: 2, Attack: 4.5 as float}, Special: {Categories: ["weapon", "tool"]}, TinkerData: {Materials: ["pigiron", "pigiron"], Modifiers: ["toolleveling"]}, Modifiers: [{identifier: "tasty", color: -1073509, level: 1}, {identifier: "baconlicious", color: -1073509, level: 1}, {identifier: "toolleveling", color: 16777215, level: 1}], Traits: ["tasty", "baconlicious", "toolleveling"]}),
-    <tconstruct:excavator>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 6.2 as float, FreeModifiers: 3, Durability: 1155, HarvestLevel: 2, Attack: 4.5 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 6.2 as float, FreeModifiers: 3, Durability: 1155, HarvestLevel: 2, Attack: 4.5 as float}, Special: {Categories: ["harvest", "tool", "aoe"]}, TinkerData: {Materials: ["pigiron", "pigiron", "pigiron", "pigiron"], Modifiers: ["toolleveling"]}, Modifiers: [{identifier: "tasty", color: -1073509, level: 1}, {identifier: "baconlicious", color: -1073509, level: 1}, {identifier: "toolleveling", color: 16777215, level: 1}], Traits: ["tasty", "baconlicious", "toolleveling"]}),
-  ],[
-    <tconstruct:frypan>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 6.2 as float, FreeModifiers: 3, Durability: 456, HarvestLevel: 2, Attack: 4.5 as float}, Stats: {AttackSpeedMultiplier: 1.6 as float, MiningSpeed: 6.2 as float, FreeModifiers: 0, Durability: 456, HarvestLevel: 2, Attack: 4.5 as float}, Special: {Categories: ["weapon", "tool"]}, TinkerData: {UsedModifiers: 3, Materials: ["pigiron", "pigiron"], Modifiers: ["toolleveling", "haste"]}, Modifiers: [{identifier: "tasty", color: -1073509, level: 1}, {identifier: "baconlicious", color: -1073509, level: 1}, {identifier: "toolleveling", color: 16777215, level: 1}, {identifier: "haste", current: 150, color: 9502720, level: 3, max: 150, extraInfo: "149 / 150"}], Traits: ["tasty", "baconlicious", "toolleveling"]}),
-    <tconstruct:excavator>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 6.2 as float, FreeModifiers: 3, Durability: 1155, HarvestLevel: 2, Attack: 4.5 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 22.626122 as float, FreeModifiers: 0, Durability: 1155, HarvestLevel: 2, Attack: 4.5 as float}, Special: {Categories: ["harvest", "tool", "aoe"]}, TinkerData: {UsedModifiers: 3, Materials: ["pigiron", "pigiron", "pigiron", "pigiron"], Modifiers: ["toolleveling", "haste"]}, Modifiers: [{identifier: "tasty", color: -1073509, level: 1}, {identifier: "baconlicious", color: -1073509, level: 1}, {identifier: "toolleveling", color: 16777215, level: 1}, {identifier: "haste", current: 150, color: 9502720, level: 3, max: 150, extraInfo: "149 / 150"}], Traits: ["tasty", "baconlicious", "toolleveling"]}),
-  ],[
-    <tconstruct:frypan>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 6.2 as float, FreeModifiers: 3, Durability: 456, HarvestLevel: 2, Attack: 4.5 as float}, Stats: {AttackSpeedMultiplier: 2.0 as float, MiningSpeed: 6.7 as float, FreeModifiers: 0, Durability: 956, HarvestLevel: 3, Attack: 12.564729 as float}, Special: {Categories: ["weapon", "tool"]}, TinkerData: {UsedModifiers: 9, Materials: ["pigiron", "pigiron"], Modifiers: ["toolleveling", "sharpness", "creative", "haste", "diamond"]}, Modifiers: [{identifier: "tasty", color: -1073509, level: 1}, {identifier: "baconlicious", color: -1073509, level: 1}, {identifier: "toolleveling", color: 16777215, level: 1}, {identifier: "sharpness", current: 216, color: 16774902, level: 3, max: 216, extraInfo: "215 / 216"}, {identifier: "creative", color: 0, level: 6}, {identifier: "haste", current: 250, color: 9502720, level: 5, max: 250, extraInfo: "249 / 250"}, {identifier: "diamond", color: 9237730}], Traits: ["tasty", "baconlicious", "toolleveling"]}),
-    <tconstruct:excavator>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 6.2 as float, FreeModifiers: 3, Durability: 1155, HarvestLevel: 2, Attack: 4.5 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 29.733969 as float, FreeModifiers: 0, Durability: 1655, HarvestLevel: 4, Attack: 12.564729 as float}, Special: {Categories: ["harvest", "tool", "aoe"]}, TinkerData: {UsedModifiers: 9, Materials: ["pigiron", "pigiron", "pigiron", "pigiron"], Modifiers: ["toolleveling", "sharpness", "creative", "haste", "fortifymanyullyn", "diamond"]}, Modifiers: [{identifier: "tasty", color: -1073509, level: 1}, {identifier: "baconlicious", color: -1073509, level: 1}, {identifier: "toolleveling", color: 16777215, level: 1}, {identifier: "sharpness", current: 216, color: 16774902, level: 3, max: 216, extraInfo: "215 / 216"}, {identifier: "creative", color: 0, level: 6}, {identifier: "haste", current: 250, color: 9502720, level: 5, max: 250, extraInfo: "249 / 250"}, {identifier: "fortifymanyullyn", color: -6202120}, {identifier: "diamond", color: 9237730}], Traits: ["tasty", "baconlicious", "toolleveling"]}),
-  ]],
+function constructTool(base as IItemStack, mat1 as string, mat2 as string, mat3 as string, mat4 as string) as IItemStack {
+  return Toolforge.buildTool(base.definition, [
+    Toolforge.getMaterialFromID(mat1),
+    Toolforge.getMaterialFromID(mat2),
+    Toolforge.getMaterialFromID(mat3),
+    Toolforge.getMaterialFromID(mat4),
+  ]);
+}
 
-  <tconstruct:lumberaxe:1000>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 6.51 as float, FreeModifiers: 3, Durability: 1104, HarvestLevel: 4, Attack: 8.360001 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 6.51 as float, FreeModifiers: 4, Durability: 1104, HarvestLevel: 4, Attack: 8.360001 as float}, Special: {Categories: ["aoe", "harvest", "tool"]}, TinkerData: {Materials: ["wood", "manyullyn", "iron", "paper"], Modifiers: ["toolleveling"]}, Modifiers: [{identifier: "ecological", color: -7444965 as long, level: 1}, {identifier: "insatiable", color: -6202120 as long, level: 1}, {identifier: "magnetic", color: -3487030 as long, level: 2, magnetic2: 1 as byte}, {identifier: "writable", color: -1 as long, level: 1, writable1: 1 as byte}, {identifier: "toolleveling", color: 16777215, level: 1}], Traits: ["ecological", "insatiable", "magnetic2", "writable1", "toolleveling"]}):
-  [[
-    <tconstruct:frypan>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 6.2 as float, FreeModifiers: 3, Durability: 456, HarvestLevel: 2, Attack: 4.5 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 6.2 as float, FreeModifiers: 3, Durability: 456, HarvestLevel: 2, Attack: 4.5 as float}, Special: {Categories: ["weapon", "tool"]}, TinkerData: {Materials: ["pigiron", "pigiron"], Modifiers: ["toolleveling"]}, Modifiers: [{identifier: "tasty", color: -1073509, level: 1}, {identifier: "baconlicious", color: -1073509, level: 1}, {identifier: "toolleveling", color: 16777215, level: 1}], Traits: ["tasty", "baconlicious", "toolleveling"]}),
-    <tconstruct:excavator>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 6.2 as float, FreeModifiers: 3, Durability: 1155, HarvestLevel: 2, Attack: 4.5 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 6.2 as float, FreeModifiers: 3, Durability: 1155, HarvestLevel: 2, Attack: 4.5 as float}, Special: {Categories: ["harvest", "tool", "aoe"]}, TinkerData: {Materials: ["pigiron", "pigiron", "pigiron", "pigiron"], Modifiers: ["toolleveling"]}, Modifiers: [{identifier: "tasty", color: -1073509, level: 1}, {identifier: "baconlicious", color: -1073509, level: 1}, {identifier: "toolleveling", color: 16777215, level: 1}], Traits: ["tasty", "baconlicious", "toolleveling"]}),
-  ],[
-    <tconstruct:frypan>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 6.2 as float, FreeModifiers: 3, Durability: 456, HarvestLevel: 2, Attack: 4.5 as float}, Stats: {AttackSpeedMultiplier: 1.6 as float, MiningSpeed: 6.2 as float, FreeModifiers: 0, Durability: 456, HarvestLevel: 2, Attack: 4.5 as float}, Special: {Categories: ["weapon", "tool"]}, TinkerData: {UsedModifiers: 3, Materials: ["pigiron", "pigiron"], Modifiers: ["toolleveling", "haste"]}, Modifiers: [{identifier: "tasty", color: -1073509, level: 1}, {identifier: "baconlicious", color: -1073509, level: 1}, {identifier: "toolleveling", color: 16777215, level: 1}, {identifier: "haste", current: 150, color: 9502720, level: 3, max: 150, extraInfo: "149 / 150"}], Traits: ["tasty", "baconlicious", "toolleveling"]}),
-    <tconstruct:excavator>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 6.2 as float, FreeModifiers: 3, Durability: 1155, HarvestLevel: 2, Attack: 4.5 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 22.626122 as float, FreeModifiers: 0, Durability: 1155, HarvestLevel: 2, Attack: 4.5 as float}, Special: {Categories: ["harvest", "tool", "aoe"]}, TinkerData: {UsedModifiers: 3, Materials: ["pigiron", "pigiron", "pigiron", "pigiron"], Modifiers: ["toolleveling", "haste"]}, Modifiers: [{identifier: "tasty", color: -1073509, level: 1}, {identifier: "baconlicious", color: -1073509, level: 1}, {identifier: "toolleveling", color: 16777215, level: 1}, {identifier: "haste", current: 150, color: 9502720, level: 3, max: 150, extraInfo: "149 / 150"}], Traits: ["tasty", "baconlicious", "toolleveling"]}),
-  ],[
-    <tconstruct:frypan>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 6.2 as float, FreeModifiers: 3, Durability: 456, HarvestLevel: 2, Attack: 4.5 as float}, Stats: {AttackSpeedMultiplier: 2.0 as float, MiningSpeed: 6.7 as float, FreeModifiers: 0, Durability: 956, HarvestLevel: 3, Attack: 12.564729 as float}, Special: {Categories: ["weapon", "tool"]}, TinkerData: {UsedModifiers: 9, Materials: ["pigiron", "pigiron"], Modifiers: ["toolleveling", "sharpness", "creative", "haste", "diamond"]}, Modifiers: [{identifier: "tasty", color: -1073509, level: 1}, {identifier: "baconlicious", color: -1073509, level: 1}, {identifier: "toolleveling", color: 16777215, level: 1}, {identifier: "sharpness", current: 216, color: 16774902, level: 3, max: 216, extraInfo: "215 / 216"}, {identifier: "creative", color: 0, level: 6}, {identifier: "haste", current: 250, color: 9502720, level: 5, max: 250, extraInfo: "249 / 250"}, {identifier: "diamond", color: 9237730}], Traits: ["tasty", "baconlicious", "toolleveling"]}),
-    <tconstruct:excavator>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 6.2 as float, FreeModifiers: 3, Durability: 1155, HarvestLevel: 2, Attack: 4.5 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 29.733969 as float, FreeModifiers: 0, Durability: 1655, HarvestLevel: 4, Attack: 12.564729 as float}, Special: {Categories: ["harvest", "tool", "aoe"]}, TinkerData: {UsedModifiers: 9, Materials: ["pigiron", "pigiron", "pigiron", "pigiron"], Modifiers: ["toolleveling", "sharpness", "creative", "haste", "fortifymanyullyn", "diamond"]}, Modifiers: [{identifier: "tasty", color: -1073509, level: 1}, {identifier: "baconlicious", color: -1073509, level: 1}, {identifier: "toolleveling", color: 16777215, level: 1}, {identifier: "sharpness", current: 216, color: 16774902, level: 3, max: 216, extraInfo: "215 / 216"}, {identifier: "creative", color: 0, level: 6}, {identifier: "haste", current: 250, color: 9502720, level: 5, max: 250, extraInfo: "249 / 250"}, {identifier: "fortifymanyullyn", color: -6202120}, {identifier: "diamond", color: 9237730}], Traits: ["tasty", "baconlicious", "toolleveling"]}),
-  ]]
-} as IItemStack[][][IItemStack];
+val example_tool = constructTool(<tconstruct:lumberaxe>, "wood", "manyullyn", "iron", "paper");
 
-for input, exampleList in tool_examples {
-  for toolPair in exampleList {
-    o.addJEIRecipe(getRecipe(input, toolPair[0], toolPair[1], true));
+val toolExamples = [
+  example_tool,
+  example_tool.withDamage(example_tool.maxDamage * 0.75),
+] as IItemStack[];
+
+val materialExamples = [
+  ["paper","paper","stone","flint"],
+  ["knightslime","manyullyn","pigiron","endstone"],
+  ["chaotic_metal","draconic_metal","wyvern_metal","draconium"],
+] as string[][];
+
+val modifiersExamples = [
+  [],
+  ["diamond", "sharpness", "haste", "emerald"],
+] as string[][];
+
+for tool in toolExamples {
+  for modifiers in modifiersExamples {
+    for mats in materialExamples {
+      var a = constructTool(getGhostItem(tool, 0), mats[0], mats[1], mats[2], mats[3]);
+      var b = constructTool(getGhostItem(tool, 1), mats[0], mats[1], mats[2], mats[3]);
+      for modif in modifiers {
+        a = scripts.equipment.utils_tcon.addModifier(a, modif);
+        b = scripts.equipment.utils_tcon.addModifier(b, modif);
+      }
+      utils.log(["♻ Adding JEI recipe:", tool.commandString]);
+      utils.log(["♻ A:", a.commandString]);
+      utils.log(["♻ B:", b.commandString]);
+      o.addJEIRecipe(getRecipe(tool, a, b, true));
   }
+}
 }
