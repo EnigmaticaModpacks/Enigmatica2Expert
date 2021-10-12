@@ -14,3 +14,5 @@
 [Client thread/WARN] [mixin]: Error loading class: cn/mcmod/tofucraft/world/gen/layer/GenLayerTofuVoronoiZoom (java.lang.ClassNotFoundException: The specified class 'cn.mcmod.tofucraft.world.gen.layer.GenLayerTofuVoronoiZoom' was not found)
 [Client thread/WARN] [mixin]: Error loading class: net/tropicraft/core/common/worldgen/genlayer/GenLayerTropiVoronoiZoom (java.lang.ClassNotFoundException: The specified class 'net.tropicraft.core.common.worldgen.genlayer.GenLayerTropiVoronoiZoom' was not found)
 [Client thread/WARN] [mixin]: Error loading class: com/sk89q/worldedit/blocks/BaseBlock (java.lang.ClassNotFoundException: The specified class 'com.sk89q.worldedit.blocks.BaseBlock' was not found)
+[Client thread/WARN] [mixin]: Error loading class: team/chisel/client/TextureStitcher$MagicStitchingSprite (java.lang.ClassNotFoundException: The specified class 'team.chisel.client.TextureStitcher$MagicStitchingSprite' was not found)
+[Client thread/WARN] [org.dimdev.utils.ModIdentifier]: Failed to identify sun.reflect.GeneratedMethodAccessor12 (untransformed name: sun.reflect.GeneratedMethodAccessor12)

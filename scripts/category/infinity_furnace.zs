@@ -92,7 +92,7 @@ ${filtered.join('\n')}`
 
 }*/
 
-# Total Furnace recipes registered: 920
+# Total Furnace recipes registered: 918
 # Filtered by JEI blacklist: 77
 # Filtered manuallly (antidupe): 14
 # Filtered by oredict: 200
@@ -182,14 +182,12 @@ infinFurnace(utils.get("draconicevolution:draconium_ore", W), utils.get("draconi
 ##infinFurnace(utils.get("enderio:item_material", 25), utils.get("minecraft:gold_ingot"));
 #infinFurnace(utils.get("enderio:item_material", 26), utils.get("thermalfoundation:material", 128));
 #infinFurnace(utils.get("enderio:item_material", 27), utils.get("thermalfoundation:material", 129));
-#infinFurnace(utils.get("enderio:item_material", 30), utils.get("tconstruct:ingots", 1));
-#infinFurnace(utils.get("enderio:item_material", 31), utils.get("tconstruct:ingots"));
+##infinFurnace(utils.get("enderio:item_material", 30), utils.get("tconstruct:ingots", 1));
+##infinFurnace(utils.get("enderio:item_material", 31), utils.get("tconstruct:ingots"));
 ##infinFurnace(utils.get("enderio:item_material", 74), utils.get("enderio:item_alloy_ingot", 7));
 infinFurnace(utils.get("enderio:item_owl_egg"), utils.get("betteranimalsplus:fried_egg"));
 infinFurnace(utils.get("endreborn:block_wolframium_ore", W), utils.get("endreborn:item_ingot_wolframium"));
 infinFurnace(utils.get("exnihilocreatio:item_material", 2), utils.get("exnihilocreatio:item_cooked_silkworm"));
-##infinFurnace(utils.get("exnihilocreatio:item_ore_ardite", 2), utils.get("tconstruct:ingots", 1));
-##infinFurnace(utils.get("exnihilocreatio:item_ore_cobalt", 2), utils.get("tconstruct:ingots"));
 infinFurnace(utils.get("extrautils2:decorativesolid", 4), utils.get("extrautils2:decorativeglass"));
 ##infinFurnace(utils.get("extrautils2:ironwood_log", W), utils.get("minecraft:coal", 1));
 infinFurnace(utils.get("extrautils2:ironwood_planks", W), utils.get("minecraft:iron_nugget"));
@@ -356,13 +354,13 @@ infinFurnace(utils.get("jaopca:item_clusteramber"), utils.get("thaumcraft:amber"
 infinFurnace(utils.get("jaopca:item_clusteramethyst"), utils.get("biomesoplenty:gem", 0, 3));
 infinFurnace(utils.get("jaopca:item_clusterapatite"), utils.get("forestry:apatite", 0, 17));
 infinFurnace(utils.get("jaopca:item_clusteraquamarine"), utils.get("astralsorcery:itemcraftingcomponent", 0, 7));
-infinFurnace(utils.get("jaopca:item_clusterardite"), utils.get("exnihilocreatio:item_ore_ardite", 2, 2));
+#infinFurnace(utils.get("jaopca:item_clusterardite"), utils.get("exnihilocreatio:item_ore_ardite", 2, 2));
 infinFurnace(utils.get("jaopca:item_clusterastralstarmetal"), utils.get("astralsorcery:itemcraftingcomponent", 2, 2));
 infinFurnace(utils.get("jaopca:item_clusterboron"), utils.get("nuclearcraft:dust", 5, 2));
 infinFurnace(utils.get("jaopca:item_clustercertusquartz"), utils.get("appliedenergistics2:material", 0, 5));
 infinFurnace(utils.get("jaopca:item_clusterchargedcertusquartz"), utils.get("appliedenergistics2:material", 1, 3));
 infinFurnace(utils.get("jaopca:item_clustercoal"), utils.get("minecraft:coal", 0, 8));
-infinFurnace(utils.get("jaopca:item_clustercobalt"), utils.get("exnihilocreatio:item_ore_cobalt", 2, 2));
+#infinFurnace(utils.get("jaopca:item_clustercobalt"), utils.get("exnihilocreatio:item_ore_cobalt", 2, 2));
 infinFurnace(utils.get("jaopca:item_clusterdiamond"), utils.get("minecraft:diamond", 0, 3));
 infinFurnace(utils.get("jaopca:item_clusterdilithium"), utils.get("libvulpes:productgem", 0, 2));
 infinFurnace(utils.get("jaopca:item_clusterdimensionalshard"), utils.get("rftools:dimensional_shard", 0, 5));
