@@ -91,10 +91,17 @@ Liquids that should have more uses:
 
 # TODO
 
-- [ ] ✏️ ![](https://git.io/JoUaT "Small Plate Presser") add sub-outputs
+- [x] ✏️ ![](https://git.io/JoUaT "Small Plate Presser") add sub-outputs (oredict output), buff plate output
 - [ ] ✏️ Add "Any different Item" with CoT to not confuse players
 - [ ] ✏️ [Cobalt Dust] Replace with EnderIO variant (its beautiful)
+- [ ] ✏️ Return vanilla armor, but remove recipes
+- [ ] ✏️ Add [Uncrafting Table] as Endgame item, and [Uncrafting Grinder] right before creative upgrade
+- [ ] ✏️ Less microcraftings for Pam's machines
+- [ ] ✏️ [Tungsten ingot] add to JAOPCA
+- [ ] ✏️ [Storage Control Screen Module] harder
+- [ ] ✏️ Rewrite benification process back to JAOPCA's
 - [ ] 🔄 ![](https://git.io/J3p8B "Infinity Furnace") front texture empty on client
+- [ ] 🔄 Install New Mods
 - [ ] 🔄 Integrate https://github.com/release-it/release-it
 - [ ] 🚧 Add skyblock client/server changes
 
