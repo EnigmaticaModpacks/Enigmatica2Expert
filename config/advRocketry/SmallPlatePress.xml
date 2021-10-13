@@ -141,4 +141,448 @@
 			<itemStack>advancedrocketry:productplate 4 1</itemStack>
 		</output>
 	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Aluminum Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreAluminium</oreDict>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material 1 68</itemStack>
+			<itemStack>ic2:dust 4 21</itemStack>
+			<itemStack>jaopca:item_dusttinyaquamarine 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Amber Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreAmber</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_dustamber 1 0</itemStack>
+			<itemStack>ic2:dust 4 21</itemStack>
+			<itemStack>jaopca:item_dusttinydiamond 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Apatite Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreApatite</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_dustapatite 1 0</itemStack>
+			<itemStack>jaopca:item_dusttinyaluminium 4 0</itemStack>
+			<itemStack>jaopca:item_dusttinymagnesium 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Aquamarine Shale] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreAquamarine</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_dustaquamarine 1 0</itemStack>
+			<itemStack>jaopca:item_dusttinyaluminium 4 0</itemStack>
+			<itemStack>jaopca:item_dusttinyemerald 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Ardite Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreArdite</oreDict>
+		</input>
+		<output>
+			<itemStack>enderio:item_material 1 30</itemStack>
+			<itemStack>jaopca:item_dusttinyosmium 4 0</itemStack>
+			<itemStack>ic2:dust 1 20</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Black Quartz Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreQuartzBlack</oreDict>
+		</input>
+		<output>
+			<itemStack>actuallyadditions:item_dust 1 7</itemStack>
+			<itemStack>jaopca:item_dusttinycoal 4 0</itemStack>
+			<itemStack>jaopca:item_dusttinyaquamarine 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Boron Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreBoron</oreDict>
+		</input>
+		<output>
+			<itemStack>nuclearcraft:dust 1 5</itemStack>
+			<itemStack>jaopca:item_dusttinymagnesium 4 0</itemStack>
+			<itemStack>jaopca:item_dusttinyquartz 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Charged Certus Quartz Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreCertusQuartz</oreDict>
+		</input>
+		<output>
+			<itemStack>appliedenergistics2:material 1 2</itemStack>
+			<itemStack>jaopca:item_dusttinyquartz 4 0</itemStack>
+			<itemStack>jaopca:item_dusttinydiamond 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Coal Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreCoal</oreDict>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material 1 768</itemStack>
+			<itemStack>jaopca:item_dusttinyquartzblack 4 0</itemStack>
+			<itemStack>jaopca:item_dusttinyquartz 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Cobalt Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreCobalt</oreDict>
+		</input>
+		<output>
+			<itemStack>enderio:item_material 1 31</itemStack>
+			<itemStack>ic2:dust 4 21</itemStack>
+			<itemStack>jaopca:item_dusttinynickel 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Copper Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreCopper</oreDict>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material 1 64</itemStack>
+			<itemStack>ic2:dust 4 28</itemStack>
+			<itemStack>ic2:dust 1 20</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Diamond Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ic2:dust 1 5</itemStack>
+			<itemStack>jaopca:item_dusttinycertusquartz 4 0</itemStack>
+			<itemStack>jaopca:item_dusttinymalachite 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Dilithium Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreDilithium</oreDict>
+		</input>
+		<output>
+			<itemStack>libvulpes:productdust 1 0</itemStack>
+			<itemStack>ic2:dust 4 24</itemStack>
+			<itemStack>jaopca:item_dusttinydimensionalshard 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Dimensional Shard Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreDimensionalShard</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_dustdimensionalshard 1 0</itemStack>
+			<itemStack>jaopca:item_dusttinyastralstarmetal 4 0</itemStack>
+			<itemStack>jaopca:item_dusttinyperidot 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Draconium Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreDraconium</oreDict>
+		</input>
+		<output>
+			<itemStack>draconicevolution:draconium_dust 1 0</itemStack>
+			<itemStack>jaopca:item_dusttinyardite 4 0</itemStack>
+			<itemStack>jaopca:item_dusttinyastralstarmetal 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Emerald Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreEmerald</oreDict>
+		</input>
+		<output>
+			<itemStack>actuallyadditions:item_dust 1 3</itemStack>
+			<itemStack>jaopca:item_dusttinyperidot 4 0</itemStack>
+			<itemStack>jaopca:item_dusttinymalachite 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Ender Amethyst Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreAmethyst</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_dustamethyst 1 0</itemStack>
+			<itemStack>jaopca:item_dusttinycobalt 4 0</itemStack>
+			<itemStack>jaopca:item_dusttinychargedcertusquartz 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Gold Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreGold</oreDict>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material 1 1</itemStack>
+			<itemStack>ic2:dust 4 26</itemStack>
+			<itemStack>jaopca:item_dusttinyaluminium 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Iridium Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreIridium</oreDict>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material 1 71</itemStack>
+			<itemStack>jaopca:item_dusttinyplatinum 4 0</itemStack>
+			<itemStack>jaopca:item_dusttinyosmium 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Iron Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreIron</oreDict>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material 1 0</itemStack>
+			<itemStack>jaopca:item_dusttinynickel 4 0</itemStack>
+			<itemStack>ic2:dust 1 20</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Lapis Lazuli Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreLapis</oreDict>
+		</input>
+		<output>
+			<itemStack>ic2:dust 1 9</itemStack>
+			<itemStack>jaopca:item_dusttinyapatite 4 0</itemStack>
+			<itemStack>jaopca:item_dusttinysapphire 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Lead Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreLead</oreDict>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material 1 67</itemStack>
+			<itemStack>ic2:dust 4 19</itemStack>
+			<itemStack>ic2:dust 1 26</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Lithium Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreLithium</oreDict>
+		</input>
+		<output>
+			<itemStack>ic2:dust 1 11</itemStack>
+			<itemStack>jaopca:item_dusttinyaluminium 4 0</itemStack>
+			<itemStack>jaopca:item_dusttinyapatite 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Magnesium Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreMagnesium</oreDict>
+		</input>
+		<output>
+			<itemStack>nuclearcraft:dust 1 7</itemStack>
+			<itemStack>ic2:dust 4 21</itemStack>
+			<itemStack>ic2:dust 1 19</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Malachite Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreMalachite</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_dustmalachite 1 0</itemStack>
+			<itemStack>ic2:dust 4 22</itemStack>
+			<itemStack>ic2:dust 1 19</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Mana Infused Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreMithril</oreDict>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material 1 72</itemStack>
+			<itemStack>ic2:dust 4 20</itemStack>
+			<itemStack>jaopca:item_dusttinyastralstarmetal 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Nickel Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreNickel</oreDict>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material 1 69</itemStack>
+			<itemStack>jaopca:item_dusttinyplatinum 4 0</itemStack>
+			<itemStack>jaopca:item_dusttinyosmium 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Osmium Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreOsmium</oreDict>
+		</input>
+		<output>
+			<itemStack>mekanism:dust 1 2</itemStack>
+			<itemStack>jaopca:item_dusttinynickel 4 0</itemStack>
+			<itemStack>jaopca:item_dusttinyplatinum 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Peridot Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>orePeridot</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_dustperidot 1 0</itemStack>
+			<itemStack>jaopca:item_dusttinyemerald 4 0</itemStack>
+			<itemStack>jaopca:item_dusttinydiamond 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Platinum Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>orePlatinum</oreDict>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material 1 70</itemStack>
+			<itemStack>jaopca:item_dusttinynickel 4 0</itemStack>
+			<itemStack>jaopca:item_dusttinyiridium 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Redstone Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreRedstone</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:redstone 1 0</itemStack>
+			<itemStack>jaopca:item_dusttinycoal 4 0</itemStack>
+			<itemStack>jaopca:item_dusttinyquartzblack 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Ruby Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreRuby</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_dustruby 1 0</itemStack>
+			<itemStack>jaopca:item_dusttinyaluminium 4 0</itemStack>
+			<itemStack>jaopca:item_dusttinymagnesium 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Sapphire Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreSapphire</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_dustsapphire 1 0</itemStack>
+			<itemStack>jaopca:item_dusttinyaluminium 4 0</itemStack>
+			<itemStack>jaopca:item_dusttinydraconium 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Starmetal Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreAstralStarmetal</oreDict>
+		</input>
+		<output>
+			<itemStack>astralsorcery:itemcraftingcomponent 1 2</itemStack>
+			<itemStack>ic2:dust 4 26</itemStack>
+			<itemStack>jaopca:item_dusttinydiamond 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Tanzanite Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreTanzanite</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_dusttanzanite 1 0</itemStack>
+			<itemStack>jaopca:item_dusttinyquartz 4 0</itemStack>
+			<itemStack>jaopca:item_dusttinydiamond 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Thorium Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreThorium</oreDict>
+		</input>
+		<output>
+			<itemStack>nuclearcraft:dust 1 3</itemStack>
+			<itemStack>jaopca:item_dusttinyuranium 4 0</itemStack>
+			<itemStack>jaopca:item_dusttinyboron 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Topaz Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreTopaz</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_dusttopaz 1 0</itemStack>
+			<itemStack>jaopca:item_dusttinyquartzblack 4 0</itemStack>
+			<itemStack>jaopca:item_dusttinyquartz 1 0</itemStack>
+		</output>
+	</Recipe>
 </Recipes>
