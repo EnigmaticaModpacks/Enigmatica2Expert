@@ -1,6 +1,51 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
 
+# v0.36
+
+
+## 🟢 New Mods
+
+Icon | Summary | Reason
+----:|:--------| ------
+<img src="https://media.forgecdn.net/avatars/thumbnails/326/306/256/256/637446119467182217.png" width="50"> | 🟩 [**Aqua Acrobatics**](https://www.curseforge.com/minecraft/mc-mods/aqua-acrobatics) <sup><sub>AquaAcrobatics-v1.3.5-1.12.2.jar</sub></sup> <br> Fancy swimming, elegant sneaking: modern movement without compromises in 1.12. | Better than **Idō**
+<img src="https://media.forgecdn.net/avatars/thumbnails/151/327/256/256/636603225300587402.png" width="50"> | 🟩 [**VanillaFix**](https://www.curseforge.com/minecraft/mc-mods/vanillafix) <sup><sub>VanillaFix-1.0.10-150.jar</sub></sup> <br> Keep playing after a crash, Increase your FPS by up to 3x | Performance mod
+<img src="https://media.forgecdn.net/avatars/thumbnails/203/29/256/256/636930071936544657_animated.gif" width="50"> | 🟨 [**Gambling Style**](https://www.curseforge.com/minecraft/mc-mods/gambling-style) <sup><sub>GamblingStyle-v1.1.2-1.12.2.jar</sub></sup> <br> Overhauled villager trading gui for far better usability and a lot of convenient extras. | QOL addon
+<img src="https://media.forgecdn.net/avatars/thumbnails/205/55/256/256/636945344962892592.png" width="50"> | 🟨 [**Let Me Sleep**](https://www.curseforge.com/minecraft/mc-mods/let-me-sleep) <sup><sub>LetMeSleep-v1.2.2-1.12.2.jar</sub></sup> <br> Bad dreams? Configure your sleeping experience to your desires.| Better than **Just Sleep**
+
+## 🔴 Removed Mods
+
+Icon | Summary | Reason
+----:|:--------| ------
+<img src="https://media.forgecdn.net/avatars/thumbnails/179/172/256/256/636784045568071942.png" width="50"> | 🟫 [**Just Sleep**](https://www.curseforge.com/minecraft/mc-mods/just-sleep) <sup><sub>JustSleep-1.0.0.1.jar</sub></sup> <br> Just sleep allows you to sleep in other beds without setting your spawn location. | Replaced by **Let Me Sleep**
+<img src="https://media.forgecdn.net/avatars/thumbnails/132/883/256/256/636478921997010608.jpeg" width="50"> | 🟫 [**Bed Patch**](https://www.curseforge.com/minecraft/mc-mods/bed-patch) <sup><sub>bedpatch-2.2-1.12.2.jar</sub></sup> <br> A small mod that fixes the vanilla "stuck in bed" bug | Replaced by **Let Me Sleep**
+<img src="https://media.forgecdn.net/avatars/thumbnails/214/845/256/256/636994435717300712.png" width="50"> | 🟫 [**Idō**](https://www.curseforge.com/minecraft/mc-mods/ido) <sup><sub>ido-1.12.2-2.0.0-B.jar</sub></sup> <br> Brings 1.13 and 1.14 movement like swimming and crawling into 1.12.2 | Replaced by **Aqua Acrobatics**
+<img src="https://media.forgecdn.net/avatars/thumbnails/54/911/256/256/636139469480553122.png" width="50"> | 🟫 [**Reborn Core**](https://www.curseforge.com/minecraft/mc-mods/reborncore) <sup><sub>RebornCore-1.12.2-3.19.5-universal.jar</sub></sup> <br> Powering Team Reborn | Lib for **Bed Patch**
+
+## 🟡 Updated Mods
+
+- [**Advanced Rocketry**](https://www.curseforge.com/minecraft/mc-mods/advanced-rocketry) <sup><sub>AdvancedRocketry-1.12.2-2.0.0-256-universal.jar</sub></sup>
+- [**JAOPCA**](https://www.curseforge.com/minecraft/mc-mods/jaopca) <sup><sub>JAOPCA-1.12.2-2.2.8.106.jar</sub></sup>
+
+## ✏️ **Recipes**
+  - ### ✏ **Misc Changes**: ![](https://git.io/JoUaT "Small Plate Presser") Now crush ore and output 2 extra tiny dusts
+    >   For example: ![](https://git.io/JKYuF "Amber Ore") ->
+    >   1x![](https://git.io/JKYub "Amber Dust") + 6x![](https://git.io/JKYu5 "Tiny Pile of Iron Dust") + 1x![](https://git.io/JKYud "Tiny Pile of Aquamarine Dust")
+
+## 🔵 **Mods**
+  - ### ⬛ **Bedrock Ore**: enable `uiOnlyWhenSneaking` config
+
+## 🔄 **Misc Changes**
+  - Clear negative potions after sleep
+  - Heal 2 hearts after sleep
+  - ### 📖 **Quest Book**: Quests changes
+  - ### 📑 **Tooltips**: for ![](https://git.io/JsmfJ "Syringe")
+
+
+
+
+
+
 # v0.35
 
 
