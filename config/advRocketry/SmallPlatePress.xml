@@ -63,26 +63,10 @@
 	</Recipe>
 	<Recipe timeRequired="0" power="0">
 		<input>
-			<oreDict>oreDilithium</oreDict>
-		</input>
-		<output>
-			<itemStack>libvulpes:productdust 1</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power="0">
-		<input>
 			<oreDict>blockIron</oreDict>
 		</input>
 		<output>
 			<itemStack>thermalfoundation:material 4 32</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power="0">
-		<input>
-			<oreDict>oreIron</oreDict>
-		</input>
-		<output>
-			<itemStack>thermalfoundation:material 1 0</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="0" power="0">
@@ -95,14 +79,6 @@
 	</Recipe>
 	<Recipe timeRequired="0" power="0">
 		<input>
-			<oreDict>oreGold</oreDict>
-		</input>
-		<output>
-			<itemStack>thermalfoundation:material 1 1</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power="0">
-		<input>
 			<oreDict>blockCopper</oreDict>
 		</input>
 		<output>
@@ -111,26 +87,10 @@
 	</Recipe>
 	<Recipe timeRequired="0" power="0">
 		<input>
-			<oreDict>oreCopper</oreDict>
-		</input>
-		<output>
-			<itemStack>thermalfoundation:material 1 64</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power="0">
-		<input>
 			<oreDict>blockTin</oreDict>
 		</input>
 		<output>
 			<itemStack>thermalfoundation:material 4 321</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power="0">
-		<input>
-			<oreDict>oreTin</oreDict>
-		</input>
-		<output>
-			<itemStack>thermalfoundation:material 1 65</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="0" power="0">
@@ -159,26 +119,10 @@
 	</Recipe>
 	<Recipe timeRequired="0" power="0">
 		<input>
-			<oreDict>oreAluminum</oreDict>
-		</input>
-		<output>
-			<itemStack>thermalfoundation:material 1 68</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power="0">
-		<input>
 			<oreDict>blockIridium</oreDict>
 		</input>
 		<output>
 			<itemStack>thermalfoundation:material 4 327</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power="0">
-		<input>
-			<oreDict>oreIridium</oreDict>
-		</input>
-		<output>
-			<itemStack>thermalfoundation:material 1 71</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="0" power="0">
@@ -195,126 +139,6 @@
 		</input>
 		<output>
 			<itemStack>advancedrocketry:productplate 4 1</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power="0">
-		<input>
-			<oreDict>oreSilver</oreDict>
-		</input>
-		<output>
-			<itemStack>thermalfoundation:material 1 66</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power="0">
-		<input>
-			<oreDict>oreLead</oreDict>
-		</input>
-		<output>
-			<itemStack>thermalfoundation:material 1 67</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power="0">
-		<input>
-			<oreDict>oreNickel</oreDict>
-		</input>
-		<output>
-			<itemStack>thermalfoundation:material 1 69</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power="0">
-		<input>
-			<oreDict>orePlatinum</oreDict>
-		</input>
-		<output>
-			<itemStack>thermalfoundation:material 1 70</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power="0">
-		<input>
-			<oreDict>oreMithril</oreDict>
-		</input>
-		<output>
-			<itemStack>thermalfoundation:material 1 72</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power="0">
-		<input>
-			<oreDict>oreOsmium</oreDict>
-		</input>
-		<output>
-			<itemStack>mekanism:dust 1 2</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power="0">
-		<input>
-			<oreDict>oreThorium</oreDict>
-		</input>
-		<output>
-			<itemStack>nuclearcraft:dust 1 3</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power="0">
-		<input>
-			<oreDict>oreBoron</oreDict>
-		</input>
-		<output>
-			<itemStack>nuclearcraft:dust 1 5</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power="0">
-		<input>
-			<oreDict>oreLithium</oreDict>
-		</input>
-		<output>
-			<itemStack>ic2:dust 1 11</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power="0">
-		<input>
-			<oreDict>oreMagnesium</oreDict>
-		</input>
-		<output>
-			<itemStack>nuclearcraft:dust 1 7</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power="0">
-		<input>
-			<oreDict>oreQuartzBlack</oreDict>
-		</input>
-		<output>
-			<itemStack>actuallyadditions:item_dust 1 7</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power="0">
-		<input>
-			<oreDict>oreArdite</oreDict>
-		</input>
-		<output>
-			<itemStack>exnihilocreatio:item_ore_ardite 1 2</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power="0">
-		<input>
-			<oreDict>oreCobalt</oreDict>
-		</input>
-		<output>
-			<itemStack>exnihilocreatio:item_ore_cobalt 1 2</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power="0">
-		<input>
-			<oreDict>oreAstralStarmetal</oreDict>
-		</input>
-		<output>
-			<itemStack>astralsorcery:itemcraftingcomponent 1 2</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power="0">
-		<input>
-			<oreDict>oreUranium</oreDict>
-		</input>
-		<output>
-			<itemStack>immersiveengineering:metal 1 14</itemStack>
 		</output>
 	</Recipe>
 </Recipes>
