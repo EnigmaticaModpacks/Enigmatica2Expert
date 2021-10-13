@@ -25,18 +25,21 @@ const {
   least_common_multiplier,
   loadText,
   saveText,
+  getPDF,
+  loadJson,
+  setBlockDrops,
+} = require('../lib/utils.js')
+
+const {
   isODExist,
   isItemExist,
   isJEIBlacklisted,
-  getPDF,
-  loadJson,
   getItemOredictSet,
   getSubMetas,
   getByOredict,
-  setBlockDrops,
   getByOredict_first,
   prefferedModSort,
-} = require('../lib/utils.js')
+} = require('../lib/tellme.js')
 
 function saveObjAsJson(obj, filename) {
   saveText(JSON.stringify(obj, null, 2), filename)

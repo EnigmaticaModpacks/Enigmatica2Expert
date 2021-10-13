@@ -9,7 +9,8 @@
 
 const _ = require('lodash')
 const path = require('path')
-const { getCSV, isBlock, loadText, saveText } = require('../lib/utils.js')
+const { getCSV, loadText, saveText } = require('../lib/utils.js')
+const { isBlock } = require('../lib/tellme.js')
 const numeral = require('numeral')
 
 /**

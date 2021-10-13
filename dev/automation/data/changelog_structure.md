@@ -2,6 +2,7 @@
 
 ### Comments started with `#`
 ### `x ` before symbol - this commit wouldnt be shown in changelog
+### Aliases separated with `|`
 
 ### Order here would be used for changelog order
 

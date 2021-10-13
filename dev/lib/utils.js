@@ -86,7 +86,7 @@ const loadJson = module.exports.loadJson = createHashedFunction(filename => JSON
  * Load CSV file from disk or from hash
  * @param {string} filename
  */
-const getCSV = module.exports.getCSV = createHashedFunction(/** @return {Object<string, string>[]} */filename => 
+module.exports.getCSV = createHashedFunction(/** @return {Object<string, string>[]} */filename => 
   csvParseSync(fs.readFileSync(filename,'utf8'), {columns: true})
 )
 
@@ -100,7 +100,7 @@ module.exports.getPDF = createHashedFunction(async filename =>
 
 
 
-const config = module.exports.config = createHashedFunction(filename => {
+module.exports.config = createHashedFunction(filename => {
   let cfg = loadText(filename)
     .replace(/^ *#.*$/gm, '') // Remove comments
     .replace(/^~.*$/gm, '') // config version
@@ -161,129 +161,9 @@ module.exports.saveObjAsJson = function(obj, filename) {
   saveText(JSON.stringify(obj, null, 2), filename)
 }
 
-/** @type {Set<string>} */
-let isBlocks
-/**
- * @param {string} itemID
- */
-module.exports.isBlock = (itemID) => (
-  isBlocks ??= new Set(getCSV('config/tellme/blocks-csv.csv').map(o=>o['Registry name']))
-).has(itemID)
-
-/** @type {Set<string>} */
-let existOreDicts
-module.exports.isODExist = (oreName) => (
-  existOreDicts ??= new Set(getCSV('config/tellme/items-csv.csv').map(o=>o['Ore Dict keys'].split(',')).flat())
-).has(oreName)
-
-/** @type {Set<string>} */
-let existItems
-module.exports.isItemExist = (id) => (
-  existItems ??= new Set(getCSV('config/tellme/items-csv.csv').map(o=>o['Registry name']))
-).has(id.split(':').slice(0,2).join(':'))
-
-/** @type {Set<string>} */
-let jeiBlacklist
-module.exports.isJEIBlacklisted = (def,meta) => (
-  jeiBlacklist ??= new Set(config('config/jei/itemBlacklist.cfg').advanced.itemBlacklist)
-).has(def) || jeiBlacklist.has(def+':'+(meta??'0'))
-
-
-let itemsTree
-
-const initItemsTree = ()=> itemsTree ??= 
-  getCSV('config/tellme/items-csv.csv').reduce(
-  (result, o) => (
-    // @ts-ignore
-    (result[o['Registry name']] ??= {})[o['Meta/dmg']] = new Set(o['Ore Dict keys'].split(','))
-  , result), {})
-
-/** @type {function(string,string=):Set<string>} */
-module.exports.getItemOredictSet = (id,meta='0') => (initItemsTree()[id] ??= {})[meta=='*' ? 0 : meta] ??= new Set()
-
-module.exports.getSubMetas = (definition) => Object.keys(initItemsTree()[definition] ??= {}).map(s=>parseInt(s))
-
-const escapeRegex = function(string) {
+const escapeRegex = module.exports.escapeRegex = function(string) {
   return string.replace(/[/\\^$*+?.()|[\]{}]/g, '\\$&')
 }
-module.exports.escapeRegex = escapeRegex
-
-/**
- * @typedef {Object} TMStack Tell Me Item Stack
- * @property {string} mod 'Astral Sorcery'
- * @property {string} id 'minecraft:stone'
- * @property {number} itemId 1234
- * @property {number} damage 2
- * @property {boolean} hasSubtypes true
- * @property {string} display 'Celestial Altar'
- * @property {string[]} ores 'stoneGranite,stoneGranitePolished'
- * @property {string} owner 'astralsorcery'
- * @property {string} commandString '<astralsorcery:blockaltar:2>'
- */
-
-/**
- * 
- * @param {string} ore 
- * @returns {TMStack[]}
- */
-const getByOredict = module.exports.getByOredict = (ore) => {
-  const rgx = new RegExp(`^${escapeRegex(ore)}$`, 'i')
-  return getCSV('config/tellme/items-csv.csv')
-  .filter(o=>o['Ore Dict keys'])
-  .filter(o=>o['Ore Dict keys'].split(',').some(ore=>rgx.test(ore)))
-  .map(/** @return {TMStack} */o=>({
-    mod: o['Mod name'],
-    owner: o['Registry name'].split(':')[0],
-    id: o['Registry name'],
-    itemId: parseInt(o['Item ID']),
-    damage: parseInt(o['Meta/dmg']),
-    hasSubtypes: o['Subtypes']==='true',
-    display: o['Display name'],
-    ores: o['Ore Dict keys'].split(','),
-    commandString: `<${o['Registry name']}${o['Meta/dmg']=='0'?'':':'+o['Meta/dmg']}>`
-  }))
-}
-
-/**
- * 
- * @param {string} ore 
- * @returns {TMStack}
- */
-module.exports.getByOredict_first = (ore) => getByOredict(ore).sort(prefferedModSort)[0]
-
-/** @type {Object<string,number>}}*/
-const modWeights = `
-  minecraft
-  thermalfoundation
-  immersiveengineering
-  ic2
-  mekanism
-  appliedenergistics2
-  actuallyadditions
-  tconstruct
-  chisel
-  biomesoplenty
-  nuclearcraft
-  draconicevolution
-  libvulpes
-  astralsorcery
-  rftools
-  extrautils2
-  forestry
-  bigreactors
-  enderio
-  exnihilocreatio
-`.trim().split('\n').map(l=>l.trim()).reverse().reduce((map,v,i)=>(map[v]=i, map),{})
-
-/**
- * @param {TMStack} a 
- * @param {TMStack} b
- */
-const prefferedModSort = module.exports.prefferedModSort = (a,b) => {
-  const va = modWeights[b.owner]??0, vb = modWeights[a.owner]??0
-  return va > vb ? 1 : (va < vb ? -1 : 0)
-}
-
 
 const matchBetween = function(str, begin, end, regex) {
   let sub = str
