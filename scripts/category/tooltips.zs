@@ -347,6 +347,8 @@ desc.both(<netherendingores:ore_nether_modded_1:7>, 'worldgen.disabled_use_sub')
 desc.both(<netherendingores:ore_end_modded_1:7>, 'worldgen.disabled_use_sub');
 desc.both(<thermalfoundation:ore:2>, 'worldgen.disabled_use_sub');
 desc.both(<twilightforest:transformation_powder>);
+desc.both(<rftools:syringe>, 'syringe_craftable');
+desc.both(<rftools:spawner>, 'syringe_craftable');
 
 /*Inject_js(
 [...loadText('config/enderio/recipes/user/capacitor_machines.xml')

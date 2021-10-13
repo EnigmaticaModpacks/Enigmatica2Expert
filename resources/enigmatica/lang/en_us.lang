@@ -188,6 +188,7 @@ tooltips.lang.backpack.Sunflower=§aWill feed you while you stay in the sun, slo
 tooltips.lang.backpack.Wolf=§aChecks around for any wolves that may lurk around.\n§aIf any of them gets mad at you,\n§ait will promptly forget about the whole deal.\n§aAlso if it's full moon,\n§ayou'll gain werewolf strenght!
 tooltips.lang.worldgen.disabled_use_sub=§6World generation §cdisabled§r.
 tooltips.lang.twilightforest:transformation_powder=§3Sheep§r -> §2Bighorn Sheep\n§3Pig§r -> §2Wild Boar\n§3Cow§r -> §2Wild Deer\n§3Wolf§r -> §2Hostile Wolf\n§3Chicken§r -> §2Penguin\n§3Witch§r -> §2Skeleton Druid\n§3Bat§r -> §2Forest Raven\n§3Blaze§r -> §2Twilight Wraith\n§3Cave Spider§r -> §2Swarm Spider\n§3Zombie Pigman§r -> §2Minotaur\n§3Spider§r -> §2Hedge Spider
+tooltips.lang.syringe_craftable=§nSyringe§r is craftable but hidden in JEI
 
 tooltips.dim_stages.healthy=§4You need to have at least §640 HP§4 (two rows of hearts) to visit §cNether
 tooltips.dim_stages.healthy_grant=You reached §640 HP§r (two rows of hearts)!§r Now you can to visit §cNether
