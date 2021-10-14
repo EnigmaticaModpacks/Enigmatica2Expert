@@ -108,25 +108,20 @@ if(require.main === module) init()
 
 
 function getCustomRecipes() { return {
+
 'config/advRocketry/SmallPlatePress.xml': 
   _(getByOreKind('ore'))
-  .mapValues(/** @return {[string, import('../lib/tellme.js').TMStack[]]} */
-    (tm,oreBase)=>{
-    const kind_stack = getByOreBase(oreBase)
-    return [
-      oreBase, [
-        tm,
-        kind_stack['dust'],
-        getExtra(oreBase)['dustTiny'],
-        getExtra(oreBase, 1)['dustTiny'],
-    ]]
-  })
-  .filter(([,tuple]) => tuple.slice(1).every(tm=>tm))
-  .map(([oreBase, tms])=>`
-  <!-- [${tms[0].display}] -->
+  .mapValues(/** @return {[string, import('../lib/tellme.js').TMStack, string]} */
+    (tm,oreBase)=>[oreBase, tm, getExtra(oreBase, 2)]
+  )
+  .filter(([,,outputOreBase]) => !!getByOreBase(outputOreBase)['dustTiny'])
+  .map(([oreBase, tm, outputOreBase])=>`
+  <!-- [${tm.display}] -->
   <Recipe timeRequired="0" power="0">
     <input><oreDict>ore${oreBase}</oreDict></input><output>`
-    +tms.slice(1).map((tm,i)=>`<itemStack>${`${tm.id} ${[1,4,1][i]} ${tm.damage}`}</itemStack>`).join('\n')+
-  '</output></Recipe>')
+    +`<oreDict>dustTiny${outputOreBase}</oreDict>`
+  +'</output></Recipe>')
   .value()
+
+
 }}

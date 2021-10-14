@@ -48,15 +48,20 @@ function oreBaseToJaopcaKey(oreBase) {
 }
 
 module.exports = {
-  /** @param {string} oreBase */
+  
+  /**
+   * @param {string} oreBase
+   * @returns {string?} extra oreBase
+   */
   getExtra: (oreBase, extraIndex = 0) => 
-    getByOreBase(
       ['extra','extra2','extra3'].map(key =>
         config('config/JAOPCA.cfg')[oreBaseToJaopcaKey(oreBase)]?.[key]
-      )[extraIndex]
-    )
-  // getExtra: (oreBase, extraIndex = 0) => getList()
-  //   .find(tm=>['id', 'damage'].every(k=>tm[k]===tmStack[k]))[extraIndex]
+      )[extraIndex],
+
+  /** @param {string} oreBase */
+  getExtraTMStack: (oreBase, extraIndex = 0) => 
+    getByOreBase(this.getExtra(oreBase, extraIndex))
+
 }
 
 
