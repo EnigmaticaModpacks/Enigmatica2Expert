@@ -45,7 +45,6 @@ Items that should have more uses:
 ![](https://git.io/JGGjO "Silicon Boule")
 ![](https://git.io/JGGhx "Overworldian Matter")
 ![](https://git.io/JRLSU "Huge Stalk")
-![](https://git.io/JRLyA "Ectoplasm")
 ![](https://git.io/JnzzI "Glitch Infused Ingot")
 
 ### Tier 4
@@ -82,8 +81,8 @@ Liquids that should have more uses:
 ![](https://git.io/Jst3B "Crystal Memory")
 ![](https://git.io/J3hVE "Wooden Barrel MILKING")
 ![](https://git.io/JtJkQ "Drying Rack")
-![](https://git.io/JuMld "Advanced Alchemic Condenser")
 ![](https://git.io/JtDnO "Chemical Thrower")
+[Spectre Key]
 
 ---
 
@@ -92,16 +91,65 @@ Liquids that should have more uses:
 # TODO
 
 - [x] ✏️ ![](https://git.io/JoUaT "Small Plate Presser") add sub-outputs (oredict output), buff plate output
-- [ ] ✏️ Add "Any different Item" with CoT to not confuse players
 - [ ] ✏️ [Cobalt Dust] Replace with EnderIO variant (its beautiful)
-- [ ] ✏️ Return vanilla armor, but remove recipes
+- [x] ✏️ Return vanilla armor, but remove recipes
 - [ ] ✏️ Add [Uncrafting Table] as Endgame item, and [Uncrafting Grinder] right before creative upgrade
 - [ ] ✏️ Less microcraftings for Pam's machines
 - [ ] ✏️ [Tungsten ingot] add to JAOPCA
 - [ ] ✏️ [Storage Control Screen Module] harder
 - [ ] ✏️ Rewrite benification process back to JAOPCA's
+- [x] ✏️ [Apple Sprout] harder, add to compost
+- [x] ✏️ [Menril Berries] add nutrients
+- [ ] ✏️ [Hellbark sapling] change craft
+- [x] ✏️ [Redstone dust] fix in [Grinder]
+- [x] ✏️ [Spectre Ingot] fix unstable ingot usage
+- [x] ✏️ Rat Poop fix pulverizer cant process it.
+- [ ] ✏️ Add chained crafts for Nether Portal Spread
+- [x] ✏️ [Compressed Crushed Diorite] -> [White Sand] hammering
+- [x] ✏️ [Rat burger] add nutrients
+- [x] ✏️ [Cheese] tool part nerf 50%
+- [ ] ✏️ [Lead Ore Chunk] fix craft from ore (iterate Exnihilio items, remove invis. recipe)
+- [x] ✏️ [Floo Powder] fix 2x2 craft wrong place
+- [x] ✏️ [Grape Seed] add to list all seeds
+- [x] ✏️ [Traveler Knapsack] add to list all seeds
+- [ ] ✏️ [Bee nest] make not in basing but in world
+- [x] ✏️ [Brownstone] way cheaper
+- [x] ✏️ [Biome Marker] add craft
+- [x] ✏️ [Slimy Grass] add craft
+- [x] ✏️ [Constellation Paper] add craft
+- [ ] ✏️ [Orechid] cheaper
+- [x] ✏️ [Climograph] replace to rat diamond
+- [x] ✏️ [Hamster] add craft
+- [ ] ✏️ [Player Interface] cheaper
+- [ ] ✏️ [Chronologist] add rare drop
+- [x] ✏️ [Molten Heavy] cast ingots
+- [x] ✏️ **Vex** Add rare drop, probably Diamonds
+- [x] ✏️ [Fertilized Essence] craft not from inferium
+- [x] ✏️ Lower rat output for EU gems
+- [ ] ✏️ Fix rats coins output (probably remove completely)
+- [ ] ✏️ [Carbon brick] fix hammering
+- [ ] ✏️ [Starlinght] + [Water] => [Ice] add to JEI
+- [ ] ✏️ Add EEPROM with `user`, `attacker`, `trader`
+- [ ] 🔨 Grinding rework
+- [ ] 🔨 **Fiery Metal** higher mining level, add to book
+- [ ] 📖 Deep Mob Learning gate require plate
+- [ ] 📖 [Backpack] (forestry) Add as reward
+- [ ] 📖 [Porous Stone] Add
+- [ ] 📖 [Rat Gemcutter] less diamond as reward
+- [ ] 📖 Change sound of quest complete to another
+- [ ] 📖 Piper Remove quest
+- [ ] 📖 **TF Animals** move from "Animals"
+- [ ] 📖 [Pipete] add to book
+- [ ] 📖 Change Sound of completing
+- [ ] 📖 Fix pairs of eggs
+- [ ] 📖 Add ferrous trees
+- [ ] 📖 Add CC/OC gate, add neural interface searching
+- [ ] 📖 Add [Nature's Compass]
+- [ ] 📖 Add [Biome Marker]
+- [ ] 🌍 Add JER for Spectre
+- [x] 🔄 Sonar Core add to [building backpack]
 - [ ] 🔄 ![](https://git.io/J3p8B "Infinity Furnace") front texture empty on client
-- [ ] 🔄 Install New Mods
+- [ ] 🔄 Install https://www.curseforge.com/minecraft/mc-mods/moddirector, load default options with it.
 - [ ] 🔄 Integrate https://github.com/release-it/release-it
 - [ ] 🚧 Add skyblock client/server changes
 
