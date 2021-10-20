@@ -5,7 +5,6 @@ tile.block_decorative_lormyte.name=Лормитовый Блок
 e2ee.tile.basalt_sediment=Базальтовые Отложения
 
 # Manual langs
-e2ee.garbage.any_different_item=§k--§r Любые §eРАЗНЫЕ§r предметы §k--§r
 e2ee.garbage.affect_output_amount=§6Количество меняется§r
 e2ee.written_book.by=§6Книга, написанная %s
 e2ee.written_book.Cow=Коровой

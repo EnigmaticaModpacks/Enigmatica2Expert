@@ -52,3 +52,20 @@ recipes.addShapedMirrored("Hang Glider",
 [[null, null, null],
 [<openblocks:generic>, <forestry:oak_stick>, <openblocks:generic>], 
 [null, null, null]]);
+
+# [Healer] from [Heart Crystal Shard][+1]
+craft.remake(<openblocks:heal>, ["pretty",
+  "  q  ",
+  "q * q",
+  "  q  "], {
+  "q": <ore:quicksilver>,            # Quicksilver
+  "*": <scalinghealth:crystalshard>, # Heart Crystal Shard
+});
+
+# [XP Drain] from [Aluminium Rod]
+craft.remake(<openblocks:xp_drain>, ["pretty",
+  "╱ ╱ ╱",
+  "╱ ╱ ╱",
+  "╱ ╱ ╱"], {
+  "╱": <ore:stickAluminium>, # Aluminium Rod
+});

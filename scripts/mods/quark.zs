@@ -39,3 +39,23 @@ for i, log in mcWoodLogs {
 
 # Fix conflicts with CoT compressed granite
 recipes.remove(<quark:world_stone_pavement:*>);
+
+# [Iron Rod] from [Slime in a Bucket][+2]
+craft.remake(<quark:iron_rod>, ["pretty",
+  "    ╱",
+  "  ~  ",
+  "B    "], {
+  "╱": <ore:stickIron>,      # Iron Rod
+  "~": <quark:slime_bucket>, # Slime in a Bucket
+  "B": <ore:stoneBrimstone>, # Brimstone
+});
+
+# [Backpack] from [Iron Rod][+2]
+craft.make(<quark:backpack>, ["pretty",
+  "  ▬  ",
+  "J / J",
+  "J J J"], {
+  "▬": <ore:ingotExhausting>, # Exhausting Ingot
+  "J": <ore:stoneJasper>,     # Jasper
+  "/": <quark:iron_rod>,      # Iron Rod
+});

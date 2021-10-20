@@ -346,37 +346,29 @@ function getToolsStats(tool as IItemStack) as double[string] {
 
 # ⚒️ Damage tools
 function damageTools(c as RecipeContainer) {
-  utils.log([' ⚒️ damage tools']);
+  // utils.log([' ⚒️ damage tools']);
   for i in 0 .. 2 {
     val item = c.machine.getItem(3+i,1);
     c.machine.setItem(3+i,1, item.withDamage(min(item.maxDamage, item.damage + 10)));
 }
 }
-// function damageTools(c as RecipeContainer) {
-  // utils.log([' ⚒️ damage tools']);
-//   for i in 0 .. 2 {
-//     val item = c.machine.getItem(3+i,1);
-//     val isDamaged = item.mutable().attemptDamageItem(10);
-    // utils.log([' ⚒️ succesfully damaged:', isDamaged]);
-//   }
-// }
 
 function addWorldOutput(c as RecipeContainer) {
   c.addWorldOutput(function(machine) {
     # 👻 Remove ghosts
-    utils.log([' ⚒️-👻']);
+    // utils.log([' ⚒️-👻']);
     machine.setItem(gh[0].x, gh[0].y, null);
     machine.setItem(gh[1].x, gh[1].y, null);
 
-    utils.log([' ⚒️ ✔']);
+    // utils.log([' ⚒️ ✔']);
     return true;
   });
 }
 
 function getRecipe(input_item as IIngredient, tool0 as IIngredient, tool1 as IIngredient, isJEI as bool) as AssemblyRecipe {
   return AssemblyRecipe.create(function(c) {
-    utils.log(['']);
-    utils.log([' enter AssemblyRecipe.create()']);
+    // utils.log(['']);
+    // utils.log([' enter AssemblyRecipe.create()']);
 
     ################################################################
 
@@ -388,7 +380,7 @@ function getRecipe(input_item as IIngredient, tool0 as IIngredient, tool1 as IIn
       for i in 0 .. 2 {
         val tool = c.machine.getItem(3+i,1);
         if(getGhostID(input, i) != tool.definition.id) {
-          utils.log([' futile!']);
+          // utils.log([' futile!']);
           c.addItemOutput("output", <tconstruct:shard>.withTag({Material: "stone"}));
           addWorldOutput(c);
           // damageTools(c);
@@ -400,14 +392,14 @@ function getRecipe(input_item as IIngredient, tool0 as IIngredient, tool1 as IIn
     ################################################################
 
     # 🔨 Tools
-    utils.log([' get tool stats...']);
+    // utils.log([' get tool stats...']);
     val toolsStats = [
       getToolsStats(c.jei ? tool0.items[0] : c.machine.getItem(3,1)),
       getToolsStats(c.jei ? tool1.items[0] : c.machine.getItem(4,1)),
     ] as double[string][];
 
     if(c.jei) {
-      utils.log([' 👻 Setting ghosts..']);
+      // utils.log([' 👻 Setting ghosts..']);
       # 👻 Set ghosts
       c.addItemOutput("ghost0", getGhostItem(input, 0));
       c.addItemOutput("ghost1", getGhostItem(input, 1));
@@ -424,7 +416,7 @@ function getRecipe(input_item as IIngredient, tool0 as IIngredient, tool1 as IIn
 
     ################################################################
 
-    utils.log([' get shards...']);
+    // utils.log([' get shards...']);
     var shards = getShards(input, tool_lvl, amount, sortOrder, quantity);
 
     # 👞 Output shards
@@ -438,27 +430,27 @@ function getRecipe(input_item as IIngredient, tool0 as IIngredient, tool1 as IIn
 			if(c.jei) {
 				c.addItemOutput("output", shard.stack.withLore(["§d§l" ~ shard.percent as int ~ "%"]));
 			} else if(quantity >= 1.0d || c.random.nextDouble() < shard.chance) {
-        utils.log(['  🢂 output', shard.stack.commandString]);
+        // utils.log(['  🢂 output', shard.stack.commandString]);
 				c.addItemOutput("output", shard.stack);
       }
-      utils.log(['🢂 output added', shard.stack.commandString ~ " % " ~ shard.percent as int]);
+      // utils.log(['🢂 output added', shard.stack.commandString ~ " % " ~ shard.percent as int]);
 		}
 
     addWorldOutput(c);
     if(!c.jei) damageTools(c);
 
-    utils.log(['✔️ done']);
+    // utils.log(['✔️ done']);
   })
   .requireItem("input", input_item.marked("input"))
   .requireItem("tool0", tool0.marked("tool0"), 1, 0)
   .requireItem("tool1", tool1.marked("tool1"), 1, 0)
   .requireWorldCondition("world",function(machine) {
-    utils.log([' requireWorldCondition()...']);
+    // utils.log([' requireWorldCondition()...']);
     for i in 0 .. 2 {
       val tool = machine.getItem(3+i,1);
       if(tool.damage + 10 > tool.maxDamage) return false;
     }
-    utils.log([' done!']);
+    // utils.log([' done!']);
     return true;
   }, 10)
   .setActive(80)
@@ -556,9 +548,9 @@ for tool in toolExamples {
         a = scripts.equipment.utils_tcon.addModifier(a, modif);
         b = scripts.equipment.utils_tcon.addModifier(b, modif);
       }
-      utils.log(["♻ Adding JEI recipe:", tool.commandString]);
-      utils.log(["♻ A:", a.commandString]);
-      utils.log(["♻ B:", b.commandString]);
+      // utils.log(["♻ Adding JEI recipe:", tool.commandString]);
+      // utils.log(["♻ A:", a.commandString]);
+      // utils.log(["♻ B:", b.commandString]);
       o.addJEIRecipe(getRecipe(tool, a, b, true));
   }
 }

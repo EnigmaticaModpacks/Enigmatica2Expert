@@ -125,7 +125,7 @@ for poop in listRatPoop{
       
       if(!isNull(poopEntry)) { # Check if listed item exist (can happen if mod was removed)
         scripts.process.beneficiate(poop, poopEntry.oreName, 1.5d, {
-          exceptions: "manufactory melter", // This machines somehow wont work
+          exceptions: "manufactory melter pulverizer", // This machines somehow wont work
           meltingExceptions: scripts._init.variables.meltingExceptions
         });
       }

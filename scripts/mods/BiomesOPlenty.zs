@@ -111,6 +111,6 @@ scripts.process.squeeze(
 
 # Skyblock alts Hellbark Sapling and lava squeezing
 scripts.wrap.inworldcrafting.FireCrafting.addRecipe(<biomesoplenty:sapling_1:4>, <ore:treeSapling>, 30);
-scripts.process.squeeze([<biomesoplenty:log_2:7>], <liquid:lava> * 240, "only: Squeezer MechanicalSqueezer", null);
-scripts.process.squeeze([<biomesoplenty:planks_0:11>], <liquid:lava> * 120, "only: Squeezer MechanicalSqueezer", null);
-scripts.process.squeeze([<biomesoplenty:leaves_3:8>], <liquid:lava> * 120, "only: Squeezer MechanicalSqueezer", null);
+scripts.process.squeeze([<biomesoplenty:log_2:7>], <liquid:lava> * 480, "only: Squeezer MechanicalSqueezer", null);
+scripts.process.squeeze([<biomesoplenty:planks_0:11>], <liquid:lava> * 240, "only: Squeezer MechanicalSqueezer", null);
+scripts.process.squeeze([<biomesoplenty:leaves_3:8>], <liquid:lava> * 240, "only: Squeezer MechanicalSqueezer", null);

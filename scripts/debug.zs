@@ -6,7 +6,7 @@ It should not exist in release version.
 */
 
 #priority 3999
-// #loader crafttweaker reloadableevents
+#loader crafttweaker reloadableevents
 
 import mods.ctintegration.data.DataUtil;
 import mods.ctintegration.util.RawLogger.logRaw as logRaw;
@@ -69,17 +69,6 @@ function logAdditionalDebugData(player as IPlayer) {
   for cmd in commandsToRun {
     server.commandManager.executeCommand(server, cmd);
   }
-
-  # Delayed call to not overload joining world
-  mods.zenutils.DelayManager.addDelayWork(function() {
-    player.sendMessage('Developing: Starting §c/ct conflict');
-    server.commandManager.executeCommand(server, '/ct conflict');
-  }, 20 * 20);
-
-  mods.zenutils.DelayManager.addDelayWork(function() {
-    player.sendMessage('Developing: Starting §c/tellme dump-csv all');
-    server.commandManager.executeCommand(server, '/tellme dump-csv all');
-  }, 20 * 80);
 }
 
 zenClass DebugUtils {
@@ -94,12 +83,6 @@ zenClass DebugUtils {
     timeMark = time + 200 as long;
     return true;
   }
-
-  function secondTime(time as long) as bool {
-    if(second || timeMark > time) return false;
-    second = true;
-    return true;
-  }
 }
 static debugUtils as DebugUtils = DebugUtils();
 
@@ -107,10 +90,32 @@ events.onPlayerLoggedIn(function(e as crafttweaker.event.PlayerLoggedInEvent){
   if(e.player.world.isRemote()) return;
   if(!debugUtils.firstTime(e.player.world.time)) return;
   logDebugData();
+
+  # Delayed call to not overload joining world
+  mods.zenutils.DelayManager.addDelayWork(function() {
+    e.player.sendMessage('Developing: §cCreating crafttweaker_raw.log');
+    logDebugData();
+  }, 20 * 10);
+
+  mods.zenutils.DelayManager.addDelayWork(function() {
+    e.player.sendMessage('Developing: §c/logAdditionalDebugData()');
+    logAdditionalDebugData(e.player);
+  }, 20 * 20);
+
+  mods.zenutils.DelayManager.addDelayWork(function() {
+    e.player.sendMessage('Developing: Starting §c/ct conflict');
+    server.commandManager.executeCommand(server, '/ct conflict');
+  }, 20 * 40);
+
+  mods.zenutils.DelayManager.addDelayWork(function() {
+    e.player.sendMessage('Developing: Starting §c/tellme dump-csv all');
+    server.commandManager.executeCommand(server, '/tellme dump-csv all');
+  }, 20 * 80);
 });
 
-events.onPlayerTick(function(e as crafttweaker.event.PlayerTickEvent){
+
+
+events.onPlayerInteractBlock(function(e as crafttweaker.event.PlayerInteractBlockEvent){
   if(e.player.world.isRemote()) return;
-  if(!debugUtils.secondTime(e.player.world.time)) return;
-  logAdditionalDebugData(e.player);
+  // if(!isNull(e.player.currentItem)) return;
 });

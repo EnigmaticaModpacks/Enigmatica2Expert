@@ -196,6 +196,7 @@ scripts.process.alloy([<ore:ingotManasteel>, <ore:ingotElvenElementium>, <ore:in
 scripts.process.alloy([<ore:ingotIridium>, <ore:ingotOsmium>                                                            ], <ore:ingotOsmiridium>.firstItem * 4,        "only: AdvRockArc");
 scripts.process.alloy([<ore:blockDiamond>, <ore:blockRedstone> * 5                                                      ], <ore:blockCrystalFlux>.firstItem,           "only: AdvRockArc");
 scripts.process.alloy([<ore:ingotMagnesium> * 3, <ore:ingotBoron> * 6                                                   ], <ore:ingotMagnesiumDiboride>.firstItem * 9, "only: AdvRockArc");
+scripts.process.alloy([<nuclearcraft:compound:7>, <mekanism:salt> * 4, <ic2:crafting:15>                                ], <ore:ingotTitanium>.firstItem,              "only: AdvRockArc");
 
 # [Space Suit Helmet] from [Glass][+3]
 recipes.removeShaped(<advancedrocketry:spacehelmet>);

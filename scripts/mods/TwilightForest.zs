@@ -59,8 +59,8 @@ scripts.process.crush(<twilightforest:minotaur_axe>, <minecraft:diamond> * 11,
 
 
 
-# [Ice_Bomb*4] from [Shulker_Pearl][+3]
-craft.remake(<twilightforest:ice_bomb> * 4, ["pretty",
+# [Ice Bomb] from [Shulker_Pearl][+3]
+craft.remake(<twilightforest:ice_bomb> * 8, ["pretty",
   "I C I",
   "W ◊ W",
   "I C I"], {

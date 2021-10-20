@@ -189,6 +189,13 @@ for output, ingrs in {
     <ore:wool>,                         # White Wool
     <harvestcraft:hardenedleatheritem>, # Hardened Leather
   ],
+
+  # Hamster
+  <animania:entity_egg_hamster> : [
+    <ore:foodGroundnutmeg>,
+    <animania:hamster_food>,
+    <animania:hamster_ball_clear>,
+  ],
 } as IIngredient[][IItemStack] {
   mods.rustic.Condenser.addRecipe(output, ingrs, <scalinghealth:heartdust>, <tconstruct:edible:33>, <fluid:wine> * 1000, 40);
 }

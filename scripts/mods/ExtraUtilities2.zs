@@ -375,3 +375,27 @@ scripts.wrap.tconstruct.Melting.addRecipe(<liquid:iron> * 144, <extrautils2:iron
 scripts.wrap.tconstruct.Melting.addRecipe(<liquid:iron> *  16, <extrautils2:ironwood_planks:0>);
 scripts.wrap.tconstruct.Melting.addRecipe(<liquid:iron> *  80, <extrautils2:ironwood_planks:1>);
 scripts.wrap.tconstruct.Casting.addTableRecipe(<extrautils2:ironwood_sapling>, <ore:treeSapling>, <liquid:iron>, 576, true);
+
+# Rat diamond alt
+# [Climograph Base Unit] from [Machine Block][+3]
+craft.remake(<extrautils2:terraformer:9>, ["pretty",
+  "▬ ◊ ▬",
+  "S ■ S",
+  "▬ ◊ ▬"], {
+  "▬": <ore:ingotFakeIron>,  # Iron Ingot
+  "◊": <ore:gemDiamondRat>,  # Diamond
+  "S": <ore:treeSapling>,    # Olive Sapling
+  "■": <extrautils2:machine>,# Machine Block
+});
+
+#-----------------------------------------------------------------------------------------------
+#- Biome Markers
+#-----------------------------------------------------------------------------------------------
+for biome, input in {
+	"minecraft:hell" : <ore:blockCobalt>,
+	"minecraft:sky"  : <endreborn:block_decorative_lormyte>,
+	"rats:ratlantis" : <rats:marbled_cheese_raw>,
+} as IIngredient[string] {
+	recipes.addShapeless(<extrautils2:biomemarker>.withTag({Biome: biome}), [<extrautils2:biomemarker>, input]);
+}
+#-----------------------------------------------------------------------------------------------

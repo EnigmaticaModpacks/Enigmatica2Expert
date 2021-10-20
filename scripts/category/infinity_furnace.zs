@@ -92,7 +92,7 @@ ${filtered.join('\n')}`
 
 }*/
 
-# Total Furnace recipes registered: 918
+# Total Furnace recipes registered: 926
 # Filtered by JEI blacklist: 77
 # Filtered manuallly (antidupe): 14
 # Filtered by oredict: 200
@@ -621,14 +621,22 @@ infinFurnace(utils.get("minecraft:fish", 1), utils.get("minecraft:cooked_fish", 
 infinFurnace(utils.get("minecraft:fish"), utils.get("minecraft:cooked_fish"));
 infinFurnace(utils.get("minecraft:gold_ore", W), utils.get("minecraft:gold_ingot"));
 infinFurnace(utils.get("minecraft:golden_axe", W), utils.get("minecraft:gold_nugget"));
+infinFurnace(utils.get("minecraft:golden_boots", W), utils.get("minecraft:gold_nugget"));
+infinFurnace(utils.get("minecraft:golden_chestplate", W), utils.get("minecraft:gold_nugget"));
+infinFurnace(utils.get("minecraft:golden_helmet", W), utils.get("minecraft:gold_nugget"));
 infinFurnace(utils.get("minecraft:golden_hoe", W), utils.get("minecraft:gold_nugget"));
 infinFurnace(utils.get("minecraft:golden_horse_armor", W), utils.get("minecraft:gold_nugget"));
+infinFurnace(utils.get("minecraft:golden_leggings", W), utils.get("minecraft:gold_nugget"));
 infinFurnace(utils.get("minecraft:golden_pickaxe", W), utils.get("minecraft:gold_nugget"));
 infinFurnace(utils.get("minecraft:golden_shovel", W), utils.get("minecraft:gold_nugget"));
 infinFurnace(utils.get("minecraft:golden_sword", W), utils.get("minecraft:gold_nugget"));
 infinFurnace(utils.get("minecraft:iron_axe", W), utils.get("minecraft:iron_nugget"));
+infinFurnace(utils.get("minecraft:iron_boots", W), utils.get("minecraft:iron_nugget"));
+infinFurnace(utils.get("minecraft:iron_chestplate", W), utils.get("minecraft:iron_nugget"));
+infinFurnace(utils.get("minecraft:iron_helmet", W), utils.get("minecraft:iron_nugget"));
 infinFurnace(utils.get("minecraft:iron_hoe", W), utils.get("minecraft:iron_nugget"));
 infinFurnace(utils.get("minecraft:iron_horse_armor", W), utils.get("minecraft:iron_nugget"));
+infinFurnace(utils.get("minecraft:iron_leggings", W), utils.get("minecraft:iron_nugget"));
 infinFurnace(utils.get("minecraft:iron_ore", W), utils.get("minecraft:iron_ingot"));
 infinFurnace(utils.get("minecraft:iron_pickaxe", W), utils.get("minecraft:iron_nugget"));
 infinFurnace(utils.get("minecraft:iron_shovel", W), utils.get("minecraft:iron_nugget"));

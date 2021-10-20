@@ -115,12 +115,6 @@ remakeEx(<cyclicmagic:glove_climb>, [
 	[<rats:feral_rat_claw>, <ic2:misc_resource:4>, <harvestcraft:hardenedleatheritem>],
 	[null, <harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>]]);
 
-# Igniter
-remakeEx(<randomthings:igniter>, [
-	[<ore:gearSteel>, <ore:gearSteel>, <ore:netherrack>],
-	[<minecraft:dispenser>, <iceandfire:fire_dragon_blood>, <ore:netherrack>],
-	[<ore:gearSteel>, <ore:gearSteel>, <ore:netherrack>]]);
-
 	
 # Scepters harder
 recipes.remove(<cyclicmagic:tool_swap_match>);
@@ -703,4 +697,12 @@ craft.remake(<cyclicmagic:apple_emerald>, ["pretty",
   "  ◊  "], {
   "◊": <ore:gemEmerald>,         # Emerald
   "M": <extrautils2:magicapple>, # Magical Apple
+});
+
+# [Apple Sprout] from [Single Compressed Apples][+1]
+craft.remake(<cyclicmagic:apple>, [
+  "#",
+  "■"], {
+  "#": <ore:stickWood>, # Stick
+  "■": <ore:blockCropApple>, # Single Compressed Apples
 });

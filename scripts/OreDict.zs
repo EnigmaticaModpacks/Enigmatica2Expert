@@ -189,6 +189,9 @@ addItems(<ore:fertilizer>, [
 	<industrialforegoing:fertilizer>,
 	<forestry:fertilizer_compound>,
 	<mysticalagriculture:fertilized_essence>,
+	<thermalfoundation:fertilizer>,
+	<thermalfoundation:fertilizer:1>,
+	<thermalfoundation:fertilizer:2>,
 ]);
 
 # Sawdust compat
@@ -572,4 +575,12 @@ add(<ore:gemXorcite>, <endreborn:death_essence>);
 addItems(<ore:treeLeaves>, [<exnihilocreatio:block_infested_leaves>, <exnihilocreatio:block_infesting_leaves>]);
 
 # Add missed seeds, that drops from grass
-addItems(<ore:listAllseed>, [<rustic:tomato_seeds>, <rustic:chili_pepper_seeds>, <immersiveengineering:seed>]);
+addItems(<ore:listAllseed>, [
+	<rustic:tomato_seeds>, 
+	<rustic:chili_pepper_seeds>, 
+	<immersiveengineering:seed>,
+	<rustic:grape_stem>,
+]);
+
+# Fix missed berry
+add(<ore:listAllberry>, <integrateddynamics:menril_berries>);

@@ -1,5 +1,5 @@
 {
-  "extrautils2:redorchid:0"               : {"value": 0.05  , "color": {"r": 1.0,"g": 0.15,"b": 0.1,"a": 1.0},"compostBlock": {"name": "minecraft:redstone_ore","meta": 0}},
+  "extrautils2:redorchid:0"               : {"value": 0.1   , "color": {"r": 1.0,"g": 0.15,"b": 0.1,"a": 1.0},"compostBlock": {"name": "minecraft:redstone_ore","meta": 0}},
 
   "exnihilocreatio:item_cooked_silkworm:0": {"value": 0.6668, "color": {"r": 1.0,"g": 0.85,"b": 0.4,"a": 1.0},"compostBlock": {"name": "minecraft:dirt","meta": 0}},
   "exnihilocreatio:item_material:2"       : {"value": 0.5   , "color": {"r": 1.0,"g": 0.85,"b": 0.4,"a": 1.0},"compostBlock": {"name": "minecraft:dirt","meta": 0}},
@@ -25,6 +25,7 @@
   "ore:listAllveggie"                     : {"value": 0.25  , "color": {"r": 0.207,"g": 0.658,"b": 0.164,"a": 1.0},"compostBlock": {"name": "minecraft:dirt","meta": 0}},
   "actuallyadditions:item_misc:1"         : {"value": 0.3334, "color": {"r": 0.207,"g": 0.658,"b": 0.164,"a": 1.0},"compostBlock": {"name": "minecraft:dirt","meta": 0}},
   "ore:seedCanola"                        : {"value": 0.3334, "color": {"r": 0.207,"g": 0.658,"b": 0.164,"a": 1.0},"compostBlock": {"name": "minecraft:dirt","meta": 0}},
+  "cyclicmagic:apple:0"                   : {"value": 0.125 , "color": {"r": 0.207,"g": 0.658,"b": 0.164,"a": 1.0},"compostBlock": {"name": "minecraft:dirt","meta": 0}},
 
   "minecraft:rotten_flesh:0"              : {"value": 0.6668, "color": {"r": 0.58,"g": 0.24,"b": 0.26,"a": 1.0},"compostBlock": {"name": "minecraft:dirt","meta": 0}},
   "minecraft:spider_eye:0"                : {"value": 1     , "color": {"r": 0.58,"g": 0.24,"b": 0.26,"a": 1.0},"compostBlock": {"name": "minecraft:dirt","meta": 0}},

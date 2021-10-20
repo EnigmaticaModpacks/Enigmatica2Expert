@@ -75,11 +75,15 @@ for item in itemsToRemove {
 
 val endermanPool = LootTweaker.getTable("minecraft:entities/enderman").getPool("main"); //Enderman (make enderpearls drop 100% of the time)
 endermanPool.removeEntry("minecraft:ender_pearl"); //Remove main enderpearl entry
-endermanPool.addItemEntry(<minecraft:ender_pearl>, 1, 0, [Functions.lootingEnchantBonus(0, 1, 0)], [Conditions.killedByPlayer()], "minecraft:ender_pearl");
+endermanPool.addItemEntry(<minecraft:ender_pearl>, 1, 0, [Functions.lootingEnchantBonus(0, 1, 0)], [Conditions.killedByPlayer()]);
 
 
 LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine").addItemEntry(<astralsorcery:itemgrapplewand>, 3);
 
 # More Zombie Pigman gold drop
 LootTweaker.getTable("minecraft:entities/zombie_pigman").getPool("main")
-.addItemEntry(<minecraft:gold_ingot>, 1, 0, [Functions.lootingEnchantBonus(0, 1, 0)], [Conditions.killedByPlayer()], "minecraft:gold_ingot");
+.addItemEntry(<minecraft:gold_ingot>, 1, 0, [Functions.lootingEnchantBonus(0, 1, 0)], [Conditions.killedByPlayer()]);
+
+# Vex
+LootTweaker.getTable("minecraft:entities/vex").getPool("main")
+.addItemEntry(<deepmoblearning:living_matter_overworldian>, 1, 0, [Functions.lootingEnchantBonus(0, 1, 0), Functions.setCount(0, 1)], [Conditions.killedByPlayer()]);

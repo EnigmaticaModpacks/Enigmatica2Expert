@@ -271,6 +271,31 @@ craft.reshapeless(<tconstruct:soil:2>, "ssssad", {
 });
 
 
+# [Green Slimy Grass] from [Mud][+1]
+craft.shapeless(<tconstruct:slime_grass:1>, "ss■ss", {
+  "s": <ore:slimeballGreen>, # Slimeball
+  "■": <ore:blockMud>,       # Mud
+});
+
+# [Blue Slimy Grass] from [Mud][+1]
+craft.shapeless(<tconstruct:slime_grass:2>, "ss■ss", {
+  "s": <ore:slimeballBlue>, # Slime Ball
+  "■": <ore:blockMud>,      # Mud
+});
+
+# [Purple Slimy Grass] from [Mud][+1]
+craft.shapeless(<tconstruct:slime_grass:8>, "ss■ss", {
+  "s": <ore:slimeballPurple>, # Slime Ball
+  "■": <ore:blockMud>,        # Mud
+});
+
+# [Magma Slimy Grass] from [Mud][+1]
+craft.shapeless(<tconstruct:slime_grass:14>, "ss■ss", {
+  "s": <ore:slimeballMagma>, # Slime Ball
+  "■": <ore:blockMud>,       # Mud
+});
+
+
 # Mud balls smelted into TCon bricks
 furnace.remove(<biomesoplenty:mud_brick>);
 furnace.addRecipe(<tconstruct:materials:1>, <biomesoplenty:mudball>);
@@ -404,3 +429,13 @@ scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:red_matter> * 144, [<liquid:supr
 
 # Melt Block of flesh
 scripts.process.melt(<ore:blockFlesh>, <liquid:blood> * 360, "No Exceptions");
+
+# Way cheaper to keep easy roads
+# [Rough Brownstone]*64 from [Redstone][+1]
+craft.remake(<tconstruct:brownstone:1> * 64, ["pretty",
+  "s s s",
+  "s ♥ s",
+  "s s s"], {
+  "s": <ore:sandstone>,    # Sandstone
+  "♥": <ore:dustRedstone>, # Redstone
+});

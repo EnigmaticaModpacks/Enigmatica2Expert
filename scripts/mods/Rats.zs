@@ -232,7 +232,7 @@ var allCoinsConversions as IItemStack[] = [
     <jaopca:item_cointhorium>,          <nuclearcraft:ingot:3>,
     <jaopca:item_cointitanium>,         <libvulpes:productingot:7>,
     <jaopca:item_coinuranium>,          <immersiveengineering:metal:5>,
-    <thermalfoundation:coin>,           <minecraft:iron_ingot>,
+    // <thermalfoundation:coin>,           <minecraft:iron_ingot>,
     <thermalfoundation:coin:1>,         <minecraft:gold_ingot>,
     <thermalfoundation:coin:64>,        <thermalfoundation:material:128>,
     <thermalfoundation:coin:65>,        <thermalfoundation:material:129>,
@@ -357,7 +357,7 @@ craft.reshapeless(<rats:assorted_vegetables>, "BPCBPCBPC", {
 
 #--------------------------------------------------------------------------------------
 # Garbage Pile recipe based on various item parameters
-val ph = <betterquesting:placeholder>.withTag({display:{Name:game.localize("e2ee.garbage.any_different_item")}}).withLore([game.localize("e2ee.garbage.affect_output_amount")]);
+val ph = <contenttweaker:any_different_item>.withLore([game.localize("e2ee.garbage.affect_output_amount")]);
 recipes.addShapeless("Garbage_placeholder", <rats:garbage_pile> * 6, [<rats:contaminated_food>,ph,ph,ph,ph,ph,ph,ph,ph,]);
 
 recipes.addHiddenShapeless("Garbage_function", <rats:garbage_pile>, [
@@ -443,12 +443,12 @@ craft.remake(<rats:chunky_cheese_token>, ["pretty",
 val gemcutterList = [
   <quark:jasper>                 , <scalingfeast:exhaustingnugget> * 2, # [Exhausting Nugget] from [Jasper]
   
-  <minecraft:redstone>           , <actuallyadditions:item_crystal>   , # [Restonia Crystal] from [Redstone]
-  <minecraft:dye:4>              , <actuallyadditions:item_crystal:1> , # [Palis Crystal] from [Lapis Lazuli]
-  <minecraft:diamond>            , <actuallyadditions:item_crystal:2> , # [Diamatine Crystal] from [Diamond]
-  <minecraft:emerald>            , <actuallyadditions:item_crystal:4> , # [Emeradic Crystal] from [Emerald]
-  <minecraft:iron_ingot>         , <actuallyadditions:item_crystal:5> , # [Enori Crystal] from [Iron Ingot]
-  <actuallyadditions:item_misc:5>, <actuallyadditions:item_crystal:3> , # [Void Crystal] from [Black Quartz]
+  <minecraft:redstone>           , <actuallyadditions:block_crystal_cluster_redstone>,
+  <minecraft:dye:4>              , <actuallyadditions:block_crystal_cluster_lapis>,
+  <minecraft:diamond>            , <actuallyadditions:block_crystal_cluster_diamond>,
+  <minecraft:emerald>            , <actuallyadditions:block_crystal_cluster_emerald>,
+  <minecraft:iron_ingot>         , <actuallyadditions:block_crystal_cluster_iron>,
+  <actuallyadditions:item_misc:5>, <actuallyadditions:block_crystal_cluster_coal>,
 ] as IItemStack[];
 
 for i, input in gemcutterList {

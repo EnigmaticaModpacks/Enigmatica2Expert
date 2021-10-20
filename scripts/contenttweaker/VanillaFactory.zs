@@ -146,6 +146,8 @@ buildItem("blasted_coal");
 # -------------------------------
 # Other
 # -------------------------------
+buildItem("any_different_item");
+
 var x = VanillaFactory.createItem("bee_diversity");
 x.setCreativeTab(<creativetab:other>);
 x.rarity = "rare";

@@ -34,14 +34,9 @@ utils.clearFluid(<randomthings:reinforcedenderbucket>);
 scripts.wrap.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(<randomthings:ingredient:9> * 9, <minecraft:emerald_block>);
 
 # Floo dust
-remakeEx(<randomthings:ingredient:7>*8, [
-	[<ore:enderpearl>, <ore:dustRedstone>, null], 
-	[<ore:gunpowder>, <ore:cropBean>, null]
-]);
-recipes.addShaped("Floo Dust 64", <randomthings:ingredient:7>*64, [
-	[<appliedenergistics2:material:46>, <ore:dustRedstone>, null], 
-	[<ore:gunpowder>, <ore:cropBean>, null]
-]);
+recipes.remove(<randomthings:ingredient:7>);
+recipes.addShapeless("Floo Dust 8",  <randomthings:ingredient:7> *8, [<ore:enderpearl>, <ore:dustRedstone>, <ore:gunpowder>, <ore:cropBean>]);
+recipes.addShapeless("Floo Dust 64", <randomthings:ingredient:7>*64, [<appliedenergistics2:material:46>, <ore:dustRedstone>, <ore:gunpowder>, <ore:cropBean>]);
 
 # Floo Token cheaper alt
 scripts.process.compress(<randomthings:ingredient:7> * 3, <randomthings:flootoken>, "No Exceptions");
@@ -53,16 +48,15 @@ craft.reshapeless(<randomthings:ingredient:6> * 4, 'ABC', {
 	C: <ore:cropBean>,
 	});
 
-# [Time in a bottle] from [Clock][+4]
+# [Time in a bottle] from [Experience Imbue][+3]
 craft.remake(<randomthings:timeinabottle>, ["pretty",
-  "  o  ",
-  "B C B",
-  "E P E"], {
-  "P": <randomthings:ingredient:9>,  # Precious Emerald
-  "B": <randomthings:ingredient:13>, # Blackout Powder
+  "  C  ",
+  "  E  ",
+  "B F B"], {
   "C": <minecraft:clock>,            # Clock
   "E": <randomthings:imbue:2>,       # Experience Imbue
-  "o": <animania:milk_bottle>,       # Bottle of Milk
+  "B": <randomthings:ingredient:13>, # Blackout Powder
+  "F": <randomthings:ingredient:7>,  # Floo Powder
 });
 
 # Illuminator
@@ -72,14 +66,15 @@ recipes.addShaped(<randomthings:spectreilluminator>, [
 	[<randomthings:ingredient:2>, <extrautils2:suncrystal>, <randomthings:ingredient:2>],
 	[null, <randomthings:ingredient:2>, null]]);
 
-# Spectre Key
-val ectoplasm = <randomthings:ingredient:2>;
-recipes.remove(<randomthings:spectrekey>);
-scripts.wrap.actuallyadditions.Empowerer.addRecipe(<randomthings:spectrekey>, 
-	<storagedrawers:shroud_key>, ectoplasm, ectoplasm, ectoplasm, ectoplasm,
-	25000, 100, [1.0, 0.0, 0.0]);
-scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<randomthings:spectrekey>, 100000, 1000000, 
-	<storagedrawers:shroud_key>, [ectoplasm, ectoplasm, ectoplasm, ectoplasm]);
+
+# [Spectre Key] from [Concealment Key][+1]
+craft.remake(<randomthings:spectrekey>, ["pretty",
+  "  E  ",
+  "E C E",
+  "  E  "], {
+  "E": <randomthings:ingredient:2>, # Ectoplasm
+  "C": <storagedrawers:shroud_key>, # Concealment Key
+});
 
 # Spectre Anchor
 recipes.removeShaped(<randomthings:spectreanchor>);
@@ -91,7 +86,7 @@ recipes.addShaped(<randomthings:spectreanchor>, [
 # Spectre Ingot
 recipes.remove(<randomthings:ingredient:3>);
 recipes.addShapeless("Spectre Ingot Harder", <randomthings:ingredient:3>, [
-	<extrautils2:unstableingots>, 
+	<extrautils2:unstableingots:*>, 
 	<randomthings:ingredient:2>,
 	<thermalfoundation:material:134>, 
 	<forestry:phosphor>, 
@@ -169,24 +164,24 @@ craft.reshapeless(<randomthings:ingredient:13>, "F☺▲", {
   "☺": <actuallyadditions:item_misc:22>, # Bio Coal
 });
 
-# [Slime Cube] from [Mending Moss][+1]
+# [Slime Cube] from [Mending Moss][+2]
 craft.remake(<randomthings:slimecube>, ["pretty",
-  "  s  ",
+  "F s F",
   "s M s",
-  "  s  "], {
-  "s": <ore:slimecrystal> | <ore:slimecrystalGreen>, # Green Slime Crystal
-  "M": <tconstruct:materials:19>, # Mending Moss
+  "F s F"], {
+  "F": <randomthings:ingredient:7>, # Floo Powder
+  "s": <ore:slimecrystal>, # Green Slime Crystal
+  "M": <tconstruct:materials:19>,   # Mending Moss
 });
 
-# [Fertilized_Dirt*2] from [Slop_Bucket][+3]
+# [Fertilized Dirt]*8 from [Slop Bucket][+2]
 craft.remake(<randomthings:fertilizeddirt> * 8, ["pretty",
-  "  i  ",
-  "d ~ d",
-  "  R  "], {
-  "R": <minecraft:rotten_flesh>, # Rotten Flesh
-  "d": <ore:fertilizer>,
-  "i": <ore:dirt>,
-  "~": Bucket("slop"), # Slop Bucket
+  "F f F",
+  "f ~ f",
+  "F f F"], {
+  "F": <randomthings:ingredient:7>, # Floo Powder
+  "f": <ore:fertilizer>,            # Fertilizer
+  "~": <fluid:slop> * 1000,         # Slop Bucket
 });
 
 
@@ -201,30 +196,29 @@ var weatherIngrs = {
 } as IIngredient[string];
 
 # [Weather_Egg_<Sun>*2] from [Egg][+3]
-craft.remake(<randomthings:weatheregg> * 2, ["pretty",
+craft.remake(<randomthings:weatheregg> * 4, ["pretty",
   "B f B",
   "l e l",
   "B f B"], weatherIngrs
 );
 
 # [Weather_Egg_<Rain>*2] from [Egg][+3]
-craft.remake(<randomthings:weatheregg:1> * 2, ["pretty",
+craft.remake(<randomthings:weatheregg:1> * 4, ["pretty",
   "B C B",
   "l e l",
   "B C B"], weatherIngrs
 );
 
 # [Weather_Egg_<Storm>*2] from [Egg][+3]
-craft.remake(<randomthings:weatheregg:2> * 2, ["pretty",
+craft.remake(<randomthings:weatheregg:2> * 4, ["pretty",
   "B a B",
   "l e l",
   "B a B"], weatherIngrs
 );
 
-# Spectre string harder
+# Spectre String harder
 recipes.remove(<randomthings:ingredient:12>);
 scripts.wrap.inworldcrafting.FluidToItem.transform(<randomthings:ingredient:12> * 4, <fluid:liquid_sunshine>, [
-	<forestry:phosphor>,
 	<randomthings:ingredient:2>,
 	<mysticalagriculture:crafting:23>,
 ]);
@@ -268,15 +262,25 @@ craft.remake(<randomthings:spectrecoil_ender>, ["pretty",
   "S t S"], spectreIngrs
 );
 
-# [Spectre_Lens] from [Hardened_Copper_Glass][+2]
-craft.remake(<randomthings:spectrelens>, ["S□S", "▬▬▬"], spectreIngrs);
+# [Spectre Lens] from [Spectre Ingot][+2]
+craft.remake(<randomthings:spectrelens>, ["pretty",
+  "◊ ◊ ◊",
+  "# ▬ #"], {
+  "◊": <ore:gemPearl>,              # Shulker Pearl
+  "#": <randomthings:spectreplank>, # Spectre Planks
+  "▬": <ore:ingotSpectre>,          # Spectre Ingot
+});
 
-# [Spectre_Energy_Injector] from [Soulstone][+3]
+# [Spectre Energy Injector] from [Soulstone][+3]
 craft.remake(<randomthings:spectreenergyinjector>, ["pretty",
-  "□ □ □",
-  "□ o □",
-  "▬ p ▬"], spectreIngrs
-);
+  "■ ■ ■",
+  "▬ S ▬",
+  "o o o"], {
+  "■": <ore:fusedQuartz>,       # Fused Quartz
+  "▬": <ore:ingotSpectre>,      # Spectre Ingot
+  "S": <cyclicmagic:soulstone>, # Soulstone
+  "o": <ore:obsidian>,          # Obsidian
+});
 
 # ----------------------------
 # Tools
@@ -359,4 +363,76 @@ craft.remake(<randomthings:soundbox>, ["pretty",
   "◊ ◊ ◊"], {
   "#": <ore:plankWood> * 6, # Citrus Wood Planks
   "◊": <ore:gemLapis>, # Lapis Lazuli
+});
+
+
+# [Summoning Pendulum] from [Iron Rod][+1]
+craft.remake(<randomthings:summoningpendulum>, [
+  "/",
+  "#",
+  "#"], {
+  "/": <quark:iron_rod>,            # Iron Rod
+  "#": <randomthings:spectreplank>, # Spectre Planks
+});
+
+# [Spectre Coil Nr. 46] from [Conglomerate Of Coal][+3]
+craft.remake(<randomthings:spectrecoil_number>, ["pretty",
+  "# ◊ #",
+  "F © F",
+  "# F #"], {
+  "#": <randomthings:spectreplank>,           # Spectre Planks
+  "◊": <ore:gemPearl>,                        # Shulker Pearl
+  "F": <randomthings:ingredient:7>,           # Floo Powder
+  "©": <contenttweaker:conglomerate_of_coal>, # Conglomerate Of Coal
+});
+
+# [Pitcher Plant] from [Oxeye Daisy][+2]
+craft.remake(<randomthings:pitcherplant>, [
+  "M",
+  "f",
+  "F"], {
+  "M": <endreborn:food_ender_flesh>,  # Mysical Flesh
+  "f": <ore:flower>,                  # Oxeye Daisy
+  "F": <randomthings:fertilizeddirt>, # Fertilized Dirt
+});
+
+# [Stable Ender Pearl] from [Ender Pearl][+2]
+craft.remake(<randomthings:stableenderpearl>, ["pretty",
+  "  F  ",
+  "F e F",
+  "  o  "], {
+  "F": <randomthings:ingredient:7>, # Floo Powder
+  "e": <ore:enderpearl>,            # Ender Pearl
+  "o": <ore:obsidian>,              # Obsidian
+});
+
+# [Item Collector] from [Bottle o' Enchanting][+2]
+craft.remake(<randomthings:itemcollector>, ["pretty",
+  "  F  ",
+  "  X  ",
+  "o o o"], {
+  "F": <randomthings:ingredient:7>, # Floo Powder
+  "X": <ore:itemXP>,                # Bottle o' Enchanting
+  "o": <ore:obsidian>,              # Obsidian
+});
+
+# [Rain Shield] from [Blaze Rod][+2]
+craft.remake(<randomthings:rainshield>, ["pretty",
+  "    F",
+  "  /  ",
+  "B    "], {
+  "F": <randomthings:ingredient:7>, # Floo Powder
+  "/": <ore:rodBlaze>,              # Blaze Rod
+  "B": <ore:stoneBrimstone>,        # Brimstone
+});
+
+# [Igniter] from [Compressed Cobblestone][+3]
+craft.remake(<randomthings:igniter>, ["pretty",
+  "¤ ¤ n",
+  "░ R R",
+  "¤ ¤ n"], {
+  "¤": <ore:gearSteel>,               # Steel Gear
+  "n": <ore:netherrack>,              # Netherrack
+  "░": <ore:compressed1xCobblestone>, # Compressed Cobblestone
+  "R": <randomthings:rainshield>,     # Rain Shield
 });

@@ -117,3 +117,14 @@ recipes.addShaped("Luminous Crafting Table - RecipeAction", <astralsorcery:block
 	val server = player.server;
 	server.commandManager.executeCommand(server, '/astralsorcery research '~player.name~' BASIC_CRAFT');
 });
+
+
+# Skyblock alt
+# [Constellation Paper] from [Glass Lens][+3]
+val pp = <astralsorcery:itemcraftingcomponent:5>;
+scripts.wrap.astralsorcery.Altar.addAttunementAltarRecipe("Const paper",	<astralsorcery:itemconstellationpaper>, 900, 400, [
+	null, <thaumcraft:curio:4>, null,                    # Illuminating Curiosity
+	null, <astralsorcery:itemcraftingcomponent:3>, null, # Glass Lens
+	null, <minecraft:golden_apple:1>, null,              # Golden Apple
+	pp, pp, pp, pp
+]);

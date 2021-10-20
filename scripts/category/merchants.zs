@@ -168,7 +168,6 @@ val merchData = {
       ],
       7: [
         [E*15, <nuclearcraft:rad_shielding:1>, <nuclearcraft:rad_shielding:2>],
-        [E*32, <conarm:travel_sack>],
         [E*50, <conarm:travel_soul>],
         [E*10, pap, <conarm:polishing_kit>.withTag({Material: "flux_crystal"})],
         [E*10, pap, <conarm:polishing_kit>.withTag({Material: "scalebronzeseaserpent"})],

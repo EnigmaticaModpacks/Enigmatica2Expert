@@ -419,6 +419,7 @@
     {"meshLevel": 1, "drop": {"name": "harvestcraft:frostgarden"   , "meta": 0}  , "chance": 0.02},
     {"meshLevel": 1, "drop": {"name": "harvestcraft:aridgarden"    , "meta": 0}  , "chance": 0.02},
     {"meshLevel": 1, "drop": {"name": "harvestcraft:soggygarden"   , "meta": 0}  , "chance": 0.02},
+    {"meshLevel": 1, "drop": {"name": "rustic:wildberry_bush"      , "meta": 0}  , "chance": 0.01},
 
     {"meshLevel": 1, "drop": {"name": "biomesoplenty:plant_0"      , "meta": 0}  , "chance": 0.04},
     {"meshLevel": 1, "drop": {"name": "biomesoplenty:plant_0"      , "meta": 1}  , "chance": 0.04},

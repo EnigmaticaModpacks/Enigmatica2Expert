@@ -148,9 +148,7 @@
 			<oreDict>oreAluminium</oreDict>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material 1 68</itemStack>
-			<itemStack>ic2:dust 4 21</itemStack>
-			<itemStack>jaopca:item_dusttinyaquamarine 1 0</itemStack>
+			<oreDict>dustTinySapphire</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -160,9 +158,7 @@
 			<oreDict>oreAmber</oreDict>
 		</input>
 		<output>
-			<itemStack>jaopca:item_dustamber 1 0</itemStack>
-			<itemStack>ic2:dust 4 21</itemStack>
-			<itemStack>jaopca:item_dusttinydiamond 1 0</itemStack>
+			<oreDict>dustTinyCertusQuartz</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -172,9 +168,7 @@
 			<oreDict>oreApatite</oreDict>
 		</input>
 		<output>
-			<itemStack>jaopca:item_dustapatite 1 0</itemStack>
-			<itemStack>jaopca:item_dusttinyaluminium 4 0</itemStack>
-			<itemStack>jaopca:item_dusttinymagnesium 1 0</itemStack>
+			<oreDict>dustTinyThorium</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -184,9 +178,7 @@
 			<oreDict>oreAquamarine</oreDict>
 		</input>
 		<output>
-			<itemStack>jaopca:item_dustaquamarine 1 0</itemStack>
-			<itemStack>jaopca:item_dusttinyaluminium 4 0</itemStack>
-			<itemStack>jaopca:item_dusttinyemerald 1 0</itemStack>
+			<oreDict>dustTinyTitanium</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -196,9 +188,7 @@
 			<oreDict>oreArdite</oreDict>
 		</input>
 		<output>
-			<itemStack>enderio:item_material 1 30</itemStack>
-			<itemStack>jaopca:item_dusttinyosmium 4 0</itemStack>
-			<itemStack>ic2:dust 1 20</itemStack>
+			<oreDict>dustTinyTopaz</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -208,9 +198,7 @@
 			<oreDict>oreQuartzBlack</oreDict>
 		</input>
 		<output>
-			<itemStack>actuallyadditions:item_dust 1 7</itemStack>
-			<itemStack>jaopca:item_dusttinycoal 4 0</itemStack>
-			<itemStack>jaopca:item_dusttinyaquamarine 1 0</itemStack>
+			<oreDict>dustTinyTopaz</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -220,9 +208,7 @@
 			<oreDict>oreBoron</oreDict>
 		</input>
 		<output>
-			<itemStack>nuclearcraft:dust 1 5</itemStack>
-			<itemStack>jaopca:item_dusttinymagnesium 4 0</itemStack>
-			<itemStack>jaopca:item_dusttinyquartz 1 0</itemStack>
+			<oreDict>dustTinyQuartzBlack</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -232,9 +218,7 @@
 			<oreDict>oreCertusQuartz</oreDict>
 		</input>
 		<output>
-			<itemStack>appliedenergistics2:material 1 2</itemStack>
-			<itemStack>jaopca:item_dusttinyquartz 4 0</itemStack>
-			<itemStack>jaopca:item_dusttinydiamond 1 0</itemStack>
+			<oreDict>dustTinyLapis</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -244,9 +228,7 @@
 			<oreDict>oreCoal</oreDict>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material 1 768</itemStack>
-			<itemStack>jaopca:item_dusttinyquartzblack 4 0</itemStack>
-			<itemStack>jaopca:item_dusttinyquartz 1 0</itemStack>
+			<oreDict>dustTinyCertusQuartz</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -256,9 +238,7 @@
 			<oreDict>oreCobalt</oreDict>
 		</input>
 		<output>
-			<itemStack>enderio:item_material 1 31</itemStack>
-			<itemStack>ic2:dust 4 21</itemStack>
-			<itemStack>jaopca:item_dusttinynickel 1 0</itemStack>
+			<oreDict>dustTinyBoron</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -268,9 +248,7 @@
 			<oreDict>oreCopper</oreDict>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material 1 64</itemStack>
-			<itemStack>ic2:dust 4 28</itemStack>
-			<itemStack>ic2:dust 1 20</itemStack>
+			<oreDict>dustTinyIron</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -280,9 +258,7 @@
 			<oreDict>oreDiamond</oreDict>
 		</input>
 		<output>
-			<itemStack>ic2:dust 1 5</itemStack>
-			<itemStack>jaopca:item_dusttinycertusquartz 4 0</itemStack>
-			<itemStack>jaopca:item_dusttinymalachite 1 0</itemStack>
+			<oreDict>dustTinySapphire</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -292,9 +268,7 @@
 			<oreDict>oreDilithium</oreDict>
 		</input>
 		<output>
-			<itemStack>libvulpes:productdust 1 0</itemStack>
-			<itemStack>ic2:dust 4 24</itemStack>
-			<itemStack>jaopca:item_dusttinydimensionalshard 1 0</itemStack>
+			<oreDict>dustTinyAstralStarmetal</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -304,9 +278,7 @@
 			<oreDict>oreDimensionalShard</oreDict>
 		</input>
 		<output>
-			<itemStack>jaopca:item_dustdimensionalshard 1 0</itemStack>
-			<itemStack>jaopca:item_dusttinyastralstarmetal 4 0</itemStack>
-			<itemStack>jaopca:item_dusttinyperidot 1 0</itemStack>
+			<oreDict>dustTinyTanzanite</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -316,9 +288,7 @@
 			<oreDict>oreDraconium</oreDict>
 		</input>
 		<output>
-			<itemStack>draconicevolution:draconium_dust 1 0</itemStack>
-			<itemStack>jaopca:item_dusttinyardite 4 0</itemStack>
-			<itemStack>jaopca:item_dusttinyastralstarmetal 1 0</itemStack>
+			<oreDict>dustTinyAmethyst</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -328,9 +298,7 @@
 			<oreDict>oreEmerald</oreDict>
 		</input>
 		<output>
-			<itemStack>actuallyadditions:item_dust 1 3</itemStack>
-			<itemStack>jaopca:item_dusttinyperidot 4 0</itemStack>
-			<itemStack>jaopca:item_dusttinymalachite 1 0</itemStack>
+			<oreDict>dustTinyTanzanite</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -340,9 +308,7 @@
 			<oreDict>oreAmethyst</oreDict>
 		</input>
 		<output>
-			<itemStack>jaopca:item_dustamethyst 1 0</itemStack>
-			<itemStack>jaopca:item_dusttinycobalt 4 0</itemStack>
-			<itemStack>jaopca:item_dusttinychargedcertusquartz 1 0</itemStack>
+			<oreDict>dustTinyAstralStarmetal</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -352,9 +318,7 @@
 			<oreDict>oreGold</oreDict>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material 1 1</itemStack>
-			<itemStack>ic2:dust 4 26</itemStack>
-			<itemStack>jaopca:item_dusttinyaluminium 1 0</itemStack>
+			<oreDict>dustTinyMithril</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -364,9 +328,7 @@
 			<oreDict>oreIridium</oreDict>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material 1 71</itemStack>
-			<itemStack>jaopca:item_dusttinyplatinum 4 0</itemStack>
-			<itemStack>jaopca:item_dusttinyosmium 1 0</itemStack>
+			<oreDict>dustTinyDimensionalShard</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -376,9 +338,7 @@
 			<oreDict>oreIron</oreDict>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material 1 0</itemStack>
-			<itemStack>jaopca:item_dusttinynickel 4 0</itemStack>
-			<itemStack>ic2:dust 1 20</itemStack>
+			<oreDict>dustTinyTin</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -388,9 +348,7 @@
 			<oreDict>oreLapis</oreDict>
 		</input>
 		<output>
-			<itemStack>ic2:dust 1 9</itemStack>
-			<itemStack>jaopca:item_dusttinyapatite 4 0</itemStack>
-			<itemStack>jaopca:item_dusttinysapphire 1 0</itemStack>
+			<oreDict>dustTinyDiamond</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -400,9 +358,7 @@
 			<oreDict>oreLead</oreDict>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material 1 67</itemStack>
-			<itemStack>ic2:dust 4 19</itemStack>
-			<itemStack>ic2:dust 1 26</itemStack>
+			<oreDict>dustTinyUranium</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -412,9 +368,7 @@
 			<oreDict>oreLithium</oreDict>
 		</input>
 		<output>
-			<itemStack>ic2:dust 1 11</itemStack>
-			<itemStack>jaopca:item_dusttinyaluminium 4 0</itemStack>
-			<itemStack>jaopca:item_dusttinyapatite 1 0</itemStack>
+			<oreDict>dustTinyTopaz</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -424,9 +378,7 @@
 			<oreDict>oreMagnesium</oreDict>
 		</input>
 		<output>
-			<itemStack>nuclearcraft:dust 1 7</itemStack>
-			<itemStack>ic2:dust 4 21</itemStack>
-			<itemStack>ic2:dust 1 19</itemStack>
+			<oreDict>dustTinyNickel</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -436,9 +388,7 @@
 			<oreDict>oreMalachite</oreDict>
 		</input>
 		<output>
-			<itemStack>jaopca:item_dustmalachite 1 0</itemStack>
-			<itemStack>ic2:dust 4 22</itemStack>
-			<itemStack>ic2:dust 1 19</itemStack>
+			<oreDict>dustTinyIron</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -448,9 +398,17 @@
 			<oreDict>oreMithril</oreDict>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material 1 72</itemStack>
-			<itemStack>ic2:dust 4 20</itemStack>
-			<itemStack>jaopca:item_dusttinyastralstarmetal 1 0</itemStack>
+			<oreDict>dustTinyMithril</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Nether Quartz Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreQuartz</oreDict>
+		</input>
+		<output>
+			<oreDict>dustTinyAmethyst</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -460,9 +418,7 @@
 			<oreDict>oreNickel</oreDict>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material 1 69</itemStack>
-			<itemStack>jaopca:item_dusttinyplatinum 4 0</itemStack>
-			<itemStack>jaopca:item_dusttinyosmium 1 0</itemStack>
+			<oreDict>dustTinyCobalt</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -472,9 +428,7 @@
 			<oreDict>oreOsmium</oreDict>
 		</input>
 		<output>
-			<itemStack>mekanism:dust 1 2</itemStack>
-			<itemStack>jaopca:item_dusttinynickel 4 0</itemStack>
-			<itemStack>jaopca:item_dusttinyplatinum 1 0</itemStack>
+			<oreDict>dustTinyIridium</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -484,9 +438,7 @@
 			<oreDict>orePeridot</oreDict>
 		</input>
 		<output>
-			<itemStack>jaopca:item_dustperidot 1 0</itemStack>
-			<itemStack>jaopca:item_dusttinyemerald 4 0</itemStack>
-			<itemStack>jaopca:item_dusttinydiamond 1 0</itemStack>
+			<oreDict>dustTinyMagnesium</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -496,9 +448,7 @@
 			<oreDict>orePlatinum</oreDict>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material 1 70</itemStack>
-			<itemStack>jaopca:item_dusttinynickel 4 0</itemStack>
-			<itemStack>jaopca:item_dusttinyiridium 1 0</itemStack>
+			<oreDict>dustTinyDraconium</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -508,9 +458,7 @@
 			<oreDict>oreRedstone</oreDict>
 		</input>
 		<output>
-			<itemStack>minecraft:redstone 1 0</itemStack>
-			<itemStack>jaopca:item_dusttinycoal 4 0</itemStack>
-			<itemStack>jaopca:item_dusttinyquartzblack 1 0</itemStack>
+			<oreDict>dustTinyChargedCertusQuartz</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -520,9 +468,7 @@
 			<oreDict>oreRuby</oreDict>
 		</input>
 		<output>
-			<itemStack>jaopca:item_dustruby 1 0</itemStack>
-			<itemStack>jaopca:item_dusttinyaluminium 4 0</itemStack>
-			<itemStack>jaopca:item_dusttinymagnesium 1 0</itemStack>
+			<oreDict>dustTinySapphire</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -532,9 +478,17 @@
 			<oreDict>oreSapphire</oreDict>
 		</input>
 		<output>
-			<itemStack>jaopca:item_dustsapphire 1 0</itemStack>
-			<itemStack>jaopca:item_dusttinyaluminium 4 0</itemStack>
-			<itemStack>jaopca:item_dusttinydraconium 1 0</itemStack>
+			<oreDict>dustTinyTitanium</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Silver Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreSilver</oreDict>
+		</input>
+		<output>
+			<oreDict>dustTinyIridium</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -544,9 +498,7 @@
 			<oreDict>oreAstralStarmetal</oreDict>
 		</input>
 		<output>
-			<itemStack>astralsorcery:itemcraftingcomponent 1 2</itemStack>
-			<itemStack>ic2:dust 4 26</itemStack>
-			<itemStack>jaopca:item_dusttinydiamond 1 0</itemStack>
+			<oreDict>dustTinySapphire</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -556,9 +508,7 @@
 			<oreDict>oreTanzanite</oreDict>
 		</input>
 		<output>
-			<itemStack>jaopca:item_dusttanzanite 1 0</itemStack>
-			<itemStack>jaopca:item_dusttinyquartz 4 0</itemStack>
-			<itemStack>jaopca:item_dusttinydiamond 1 0</itemStack>
+			<oreDict>dustTinyAmethyst</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -568,9 +518,17 @@
 			<oreDict>oreThorium</oreDict>
 		</input>
 		<output>
-			<itemStack>nuclearcraft:dust 1 3</itemStack>
-			<itemStack>jaopca:item_dusttinyuranium 4 0</itemStack>
-			<itemStack>jaopca:item_dusttinyboron 1 0</itemStack>
+			<oreDict>dustTinyTitanium</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Tin Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreTin</oreDict>
+		</input>
+		<output>
+			<oreDict>dustTinyCopper</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -580,9 +538,17 @@
 			<oreDict>oreTopaz</oreDict>
 		</input>
 		<output>
-			<itemStack>jaopca:item_dusttopaz 1 0</itemStack>
-			<itemStack>jaopca:item_dusttinyquartzblack 4 0</itemStack>
-			<itemStack>jaopca:item_dusttinyquartz 1 0</itemStack>
+			<oreDict>dustTinyDiamond</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Uranium Ore] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreUranium</oreDict>
+		</input>
+		<output>
+			<oreDict>dustTinyThorium</oreDict>
 		</output>
 	</Recipe>
 </Recipes>

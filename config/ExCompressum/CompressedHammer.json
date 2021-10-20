@@ -19,8 +19,8 @@
       ,{"name": "contenttweaker:compressed_granite" ,"metadata": "0", "rewards": [{"name": "exnihilocreatio:block_granite_crushed", "count": 9,"metadata": "0","chance": 1.0,"luck": 0.0}]}
       ,{"name": "contenttweaker:compressed_skystone","metadata": "0", "rewards": [{"name": "exnihilocreatio:block_skystone_crushed","count": 9,"metadata": "0","chance": 1.0,"luck": 0.0}]}
 
-      ,{"name": "contenttweaker:compressed_diorite" ,"metadata": "0", "rewards": [{"name": "biomesoplenty:dried_sand","count": 9,"metadata": "0","chance": 1.0,"luck": 0.0}]}
-      ,{"name": "contenttweaker:compressed_andesite","metadata": "0", "rewards": [{"name": "biomesoplenty:white_sand","count": 9,"metadata": "0","chance": 1.0,"luck": 0.0}]}
+      ,{"name": "contenttweaker:compressed_crushed_andesite","metadata": "0", "rewards": [{"name": "biomesoplenty:dried_sand","count": 9,"metadata": "0","chance": 1.0,"luck": 0.0}]}
+      ,{"name": "contenttweaker:compressed_crushed_diorite" ,"metadata": "0", "rewards": [{"name": "biomesoplenty:white_sand","count": 9,"metadata": "0","chance": 1.0,"luck": 0.0}]}
     ],
     "example": {
       "__comment": "This example would allow Obsidian to be hammered into nine diamonds using a Compressed Hammer.",

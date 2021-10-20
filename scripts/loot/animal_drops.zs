@@ -64,10 +64,6 @@ function tweak(table as string, poolStr as string, entryToRemove as string, item
   tweakEx(table, poolStr, entryToRemove, itemToRemove, itemsToAdd, minMax, false);
 }
 
-function tweak_byPlayer(table as string, poolStr as string, entryToRemove as string, itemToRemove as IItemStack, itemsToAdd as IItemStack[], minMax as int[]) {
-  tweakEx(table, poolStr, entryToRemove, itemToRemove, itemsToAdd, minMax, true);
-}
-
 tweak("quark:entities/crab"                , "legs"     , "quark:crab_leg", <quark:crab_leg>, [<harvestcraft:crabrawitem>], [1,3]);
 tweak("twilightforest:entities/helmet_crab", "fish"     , "minecraft:fish", null, [<harvestcraft:crabrawitem>], [1,3]);
 tweak("twilightforest:entities/deer"       , "meat"     , "twilightforest:raw_venison", <twilightforest:raw_venison>, [<harvestcraft:venisonrawitem>], [1,3]);

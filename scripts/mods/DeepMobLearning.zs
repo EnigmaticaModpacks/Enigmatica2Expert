@@ -68,5 +68,5 @@ craft.remake(<deepmoblearning:data_model_blank>, ["pretty",
 });
 
 # Redstone from Sool-covered version
-mods.harvestcrafttweaker.HarvestCraftTweaker.addWaterFilter(<deepmoblearning:soot_covered_redstone> * 8, <actuallyadditions:item_misc:10> * 8, <jaopca:item_dusttinyredstone> * 64);
+mods.harvestcrafttweaker.HarvestCraftTweaker.addWaterFilter(<deepmoblearning:soot_covered_redstone>, <actuallyadditions:item_misc:10>, <jaopca:item_dusttinyredstone> * 8);
 scripts.wrap.thermalexpansion.Transposer.addFillRecipe(<minecraft:redstone>, <deepmoblearning:soot_covered_redstone>, <fluid:water> * 10, 1000);

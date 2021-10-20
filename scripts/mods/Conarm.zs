@@ -51,12 +51,16 @@ remakeEx(<conarm:gauntlet_mat>, [
 	[null, <ore:deathwormChitin>, <ore:deathwormChitin>]
 ]);
 
-# Travel sack
-remakeEx(<conarm:travel_sack>, [
-	[<rats:rat_toga>, <minecraft:rabbit_hide>, <rats:rat_toga>], 
-	[<minecraft:rabbit_hide>, <actuallyadditions:block_giant_chest>, <minecraft:rabbit_hide>], 
-	[<minecraft:rabbit_hide>, <minecraft:rabbit_hide>, <minecraft:rabbit_hide>]
-]);
+# [Traveller's Knapsack] from [Uncolossal Chest][+2]
+craft.remake(<conarm:travel_sack>, ["pretty",
+  "p   p",
+  "R U R",
+  "R R R"], {
+  "p": <ore:pelt>,                        # Snowy Wolf Pelt
+  "R": <minecraft:rabbit_hide>,           # Rabbit Hide
+  "U": <colossalchests:uncolossal_chest>, # Uncolossal Chest
+});
+
 
 # [Gauntlet of Far Reach] from [Gauntlet (Base)][+2]
 craft.remake(<conarm:gauntlet_mat_reach>, ["pretty",

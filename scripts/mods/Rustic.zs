@@ -49,3 +49,13 @@ mods.forestry.Squeezer.removeRecipe(<liquid:ironberryjuice>);
 mods.rustic.EvaporatingBasin.removeRecipe(<rustic:dust_tiny_iron>);
 utils.rh(<rustic:dust_tiny_iron>);
 mods.rustic.EvaporatingBasin.addRecipe(<exnihilocreatio:item_ore_iron>, <liquid:ironberryjuice> * 1250, 40*20);
+
+# [Liquid Barrel] from [Oak Wood Slab][+2]
+craft.remake(<rustic:liquid_barrel>, ["pretty",
+  "#   #",
+  "‚   ‚",
+  "# ≢ #"], {
+  "#": <ore:plankWood>, # Oak Wood Planks
+  "‚": <ore:nuggetFakeIron>, # Iron Alloy Nugget
+  "≢": <ore:slabWood>, # Oak Wood Slab
+});
