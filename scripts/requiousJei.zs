@@ -236,6 +236,7 @@ add(x, {[Soul('minecraft:spider')]   : [Soul('minecraft:cave_spider')]});
 add(x, {[Soul('minecraft:squid')]    : [Soul('minecraft:ghast')]});
 add(x, {[Soul('minecraft:villager')] : [Soul('minecraft:zombie_villager')]});
 add(x, {[Soul('minecraft:pig')]      : [Soul('minecraft:zombie_pigman')]});
+add(x, {[<openblocks:luggage>]       : [<openblocks:luggage>.withTag({size: 54})]});
 
 // -----------------------------------------------------------------------
 // -----------------------------------------------------------------------
