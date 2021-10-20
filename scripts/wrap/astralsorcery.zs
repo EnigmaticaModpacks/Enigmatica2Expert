@@ -15,14 +15,14 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded astralsorcery
-// Uses of this mod: 21
+// Uses of this mod: 22
 
 
 //####################################################
-// Uses of this class: 17
+// Uses of this class: 18
 zenClass Class_Altar { zenConstructor() {}
 
-	// Uses of this method: 3
+	// Uses of this method: 4
 	function addAttunementAltarRecipe(recipeLocation as string, output as IItemStack, starlight as int, craftTickTime as int, inputs as IIngredient[]) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.astralsorcery.Altar.addAttunementAltarRecipe'~
 			serialize.args([serialize._string(recipeLocation), serialize.IItemStack(output), starlight, craftTickTime, serialize.IIngredient__(inputs)]));

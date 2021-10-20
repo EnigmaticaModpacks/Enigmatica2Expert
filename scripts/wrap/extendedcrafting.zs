@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded extendedcrafting
-// Uses of this mod: 68
+// Uses of this mod: 67
 
 
 //####################################################
@@ -33,10 +33,10 @@ zenClass Class_CompressionCrafting { zenConstructor() {}
 static CompressionCrafting as Class_CompressionCrafting = Class_CompressionCrafting();
 
 //####################################################
-// Uses of this class: 29
+// Uses of this class: 28
 zenClass Class_CombinationCrafting { zenConstructor() {}
 
-	// Uses of this method: 29
+	// Uses of this method: 28
 	function addRecipe(output as IItemStack, rf as long, rf_t as int, centerItem as IItemStack, ingredients as IIngredient[]) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.extendedcrafting.CombinationCrafting.addRecipe'~
 			serialize.args([serialize.IItemStack(output), rf, rf_t, serialize.IItemStack(centerItem), serialize.IIngredient__(ingredients)]));

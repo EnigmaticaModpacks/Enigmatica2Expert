@@ -121,7 +121,7 @@
 "Ice and Fire","iceandfire:ice_dragon_flesh",9362,0,"false","Ice Dragon Flesh",8,0.8,""
 "Ice and Fire","iceandfire:pixie_dust",9383,0,"false","Pixie Dust",1,0.3,""
 "IndustrialCraft 2","ic2:terra_wart",4172,0,"false","Terra Wart",0,1.0,""
-"Integrated Dynamics","integrateddynamics:menril_berries",10347,0,"false","Menril Berries",4,0.3,""
+"Integrated Dynamics","integrateddynamics:menril_berries",10347,0,"false","Menril Berries",4,0.3,"listAllberry"
 "Minecraft","minecraft:apple",260,0,"false","Apple",4,0.3,"cropApple,listAllfruit"
 "Minecraft","minecraft:baked_potato",393,0,"false","Baked Potato",5,0.6,""
 "Minecraft","minecraft:beef",363,0,"false","Raw Beef",3,0.3,"foodMeat,listAllbeefraw,listAllmeatraw"

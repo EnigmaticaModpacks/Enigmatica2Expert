@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded actuallyadditions
-// Uses of this mod: 32
+// Uses of this mod: 31
 
 
 //####################################################
@@ -87,10 +87,10 @@ zenClass Class_Crusher { zenConstructor() {}
 static Crusher as Class_Crusher = Class_Crusher();
 
 //####################################################
-// Uses of this class: 10
+// Uses of this class: 9
 zenClass Class_Empowerer { zenConstructor() {}
 
-	// Uses of this method: 10
+	// Uses of this method: 9
 	function addRecipe(output as IItemStack, input as IItemStack, modifier1 as IItemStack, modifier2 as IItemStack, modifier3 as IItemStack, modifier4 as IItemStack, energyPerStand as int, time as int) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.actuallyadditions.Empowerer.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), serialize.IItemStack(modifier1), serialize.IItemStack(modifier2), serialize.IItemStack(modifier3), serialize.IItemStack(modifier4), energyPerStand, time]));
