@@ -316,3 +316,6 @@ e2ee.tconstruct.material.apprentice.description=§oPower of study\n§r1/10 of in
 e2ee.tconstruct.material.spectre_string.name=Spectre String
 e2ee.tconstruct.material.alpha_fur.name=Alpha Fur
 e2ee.tconstruct.material.alpha_fur.description=§bChilling\n§rChills targets or attackers
+e2ee.tconstruct.material.grinding.name=Grinding
+e2ee.tconstruct.material.grinding.description=§oJump!\n§rOre in your hands crushes up to x6 when you run+jump. Faster and higher!
+e2ee.tconstruct.material.heavy.name=Heavy

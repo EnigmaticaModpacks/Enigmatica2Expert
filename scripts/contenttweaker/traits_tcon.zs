@@ -337,3 +337,57 @@ trait.afterHit = function(trait, tool, attacker, target, damageDealt, wasCritica
   target.addPotionEffect(<potion:twilightforest:frosted>.makePotionEffect(60, 4));
 };
 trait.register();
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+# -------------------------------
+# Grinding Tait
+# -------------------------------
+val grindingTrait = ArmorTraitBuilder.create("grinding");
+grindingTrait.color = 0x444450;
+grindingTrait.localizedName = game.localize("e2ee.tconstruct.material.grinding.name");
+grindingTrait.localizedDescription = game.localize("e2ee.tconstruct.material.grinding.description");
+
+# -------------------------------
+# Hook on events
+# -------------------------------
+grindingTrait.onFalling = function(trait, armor, player, event) {
+  if(event.entityLivingBase.world.isRemote()) return;
+  scripts.contenttweaker.trait_grinding.onFalling(trait, armor, player, event);
+};
+grindingTrait.register();
+
+# -------------------------------
+# Tic + Conarm Material
+# -------------------------------
+val heavy = ExtendedMaterialBuilder.create("heavy");
+
+heavy.liquid = <liquid:heavy_metal>;
+heavy.castable = true;
+heavy.craftable = false;
+
+heavy.color = 0x444450;
+heavy.addItem(<item:mechanics:heavy_ingot>);
+heavy.representativeItem = <item:mechanics:heavy_ingot>;
+heavy.localizedName = game.localize("e2ee.tconstruct.material.heavy.name");
+heavy.itemLocalizer = function(thisMaterial, itemName){
+    return game.localize("e2ee.tconstruct.material.heavy.name") + " " + itemName;
+};
+heavy.addHeadMaterialStats(60, 0.01, 20.0, 5);
+heavy.addExtraMaterialStats(-40);
+heavy.addHandleMaterialStats(0.5, -10);
+heavy.addBowMaterialStats(0.01, 0.1, 20);
+heavy.addArrowShaftMaterialStats(0.2, -10);
+
+heavy.addCoreMaterialStats(10, 2.5);
+heavy.addPlatesMaterialStats(0.3, 5, 0);
+heavy.addTrimMaterialStats(0.4);
+
+heavy.addMaterialTrait("heavy", "head");
+heavy.addMaterialTrait("heavy", "core");
+heavy.addMaterialTrait("heavy", "plates");
+heavy.addMaterialTrait("grinding_armor");
+heavy.addProjectileMaterialStats();
+heavy.register();

@@ -314,6 +314,9 @@ e2ee.tconstruct.material.apprentice.description=§oСила исследован
 e2ee.tconstruct.material.spectre_string.name=Призрачная Нить
 e2ee.tconstruct.material.alpha_fur.name=Альфа-мех
 e2ee.tconstruct.material.alpha_fur.description=§bОхлаждение\n§rТормозит цель или нападающих
+e2ee.tconstruct.material.grinding.name=Шлифование
+e2ee.tconstruct.material.grinding.description=§oПрыгай!\n§rРуда в ваших руках крошится до x6 при беге + прыжке. Быстрее и выше!
+e2ee.tconstruct.material.heavy.name=Тяжеловатый
 
 tile.basalt.name=Базальт
 tile.blackholegenerator.name=Генератор черной дыры

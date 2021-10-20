@@ -23,7 +23,7 @@ cactus,,,+1,0,,,,,,
 carbon_fiber,,,,,,,,,,
 certus_quartz,/2,/2,/2,2,,,,,,
 chaotic_metal,,,,14,,,,,,
-cheese,+400,,,,,,,,,
+cheese,,,,,,,,,,
 chocolate,+300,,,,,,,,,
 cobalt,,,,7,,,,,,
 conductive_iron,*2,*2,*2,8,*2,*2,*2,,*2,*2
@@ -56,7 +56,7 @@ energetic_metal,,,,6,,,,,,
 enori_crystal,*2,*1.5,*1.5,4,,,,,,
 erodium,*3,*3,*3,8,*3,*3,*3,*3,*3,*3
 essence_metal,,,,,,,,,,
-fierymetal,,,+3,,,,,*1.5,*1.5,+2
+fierymetal,,,+3,9,,,,*1.5,*1.5,+2
 firewood,,,,2,,,,,,
 flint,,,,0,,,,,,
 fluix_steel,,,,,,,,,,

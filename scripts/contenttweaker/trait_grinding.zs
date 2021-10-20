@@ -86,7 +86,7 @@ function spawnDust(dust as IItemStack, e as EntityLivingFallEvent, power as doub
 # -------------------------------
 # Event
 # -------------------------------
-function onEvent(
+function onFalling(
 		trait as mods.contenttweaker.conarm.ArmorTrait,
 		armor as IItemStack, 
 		player as crafttweaker.player.IPlayer,
@@ -183,54 +183,3 @@ function onEvent(
 		}
 	}
 }
-
-# -------------------------------
-# Grinding Tait
-# -------------------------------
-val grindingTrait = mods.contenttweaker.conarm.ArmorTraitBuilder.create("grinding");
-grindingTrait.color = 0x444450;
-grindingTrait.localizedDescription = "Jump!\n\u00a7 Ore in your hands drop tiny piles when you run+jumping";
-grindingTrait.localizedName = "Grinding";
-
-# -------------------------------
-# Hook on events
-# -------------------------------
-grindingTrait.onFalling = function(trait, armor, player, event) {
-  if(!event.entityLivingBase.world.isRemote()) {
-		onEvent(trait, armor, player, event);
-	}
-};
-grindingTrait.register();
-
-# -------------------------------
-# Tic + Conarm Material
-# -------------------------------
-val heavy = mods.contenttweaker.conarm.ExtendedMaterialBuilder.create("heavy");
-
-heavy.liquid = <liquid:heavy_metal>;
-heavy.castable = true;
-heavy.craftable = false;
-
-heavy.color = 0x444450;
-heavy.addItem(<item:mechanics:heavy_ingot>);
-heavy.representativeItem = <item:mechanics:heavy_ingot>;
-heavy.localizedName = "Heavy";
-heavy.itemLocalizer = function(thisMaterial, itemName){
-    return "Heavy " + itemName;
-};
-heavy.addHeadMaterialStats(60, 0.01, 20.0, 5);
-heavy.addExtraMaterialStats(-40);
-heavy.addHandleMaterialStats(0.5, -10);
-heavy.addBowMaterialStats(0.01, 0.1, 20);
-heavy.addArrowShaftMaterialStats(0.2, -10);
-
-heavy.addCoreMaterialStats(10, 2.5);
-heavy.addPlatesMaterialStats(0.3, 5, 0);
-heavy.addTrimMaterialStats(0.4);
-
-heavy.addMaterialTrait("heavy", "head");
-heavy.addMaterialTrait("heavy", "core");
-heavy.addMaterialTrait("heavy", "plates");
-heavy.addMaterialTrait("grinding_armor");
-heavy.addProjectileMaterialStats();
-heavy.register();

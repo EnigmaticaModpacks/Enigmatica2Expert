@@ -212,6 +212,7 @@ val defaultWeaponMats as IData = [
   "tanzanite"              , # 75
   "apatite"                , # 77
   "endstone"               , # 77
+  "cheese"                 , # 78
   "prismarine"             , # 80
   "sponge"                 , # 81
   "slime"                  , # 81
@@ -221,7 +222,6 @@ val defaultWeaponMats as IData = [
   "treatedwood"            , # 82
   "magmaslime"             , # 85
   "copper"                 , # 88
-  "cheese"                 , # 88
   "firewood"               , # 89
   "amber"                  , # 90
   "malachite_gem"          , # 90
@@ -274,7 +274,6 @@ val defaultWeaponMats as IData = [
   "bloodwood"              , # 141
   "carbon_fiber"           , # 143
   "steel"                  , # 143
-  "fierymetal"             , # 143
   "redstone_alloy"         , # 144
   "fluix_steel"            , # 146
   "dark_steel"             , # 147
@@ -296,6 +295,7 @@ val defaultWeaponMats as IData = [
   "draconium"              , # 166
   "thaumium"               , # 172
   "heavy"                  , # 173
+  "fierymetal"             , # 173
   "osmium"                 , # 176
   "aluminium"              , # 179
   "magnesium"              , # 180
