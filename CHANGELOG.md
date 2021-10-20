@@ -1,6 +1,116 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
 
+# v0.37
+
+
+## 🟡 Updated Mods
+
+- [**Zen Utils**](https://www.curseforge.com/minecraft/mc-mods/zenutil) <sup><sub>zenutils-1.9.5.jar</sub></sup>
+- [**Chunk-Pregenerator**](https://www.curseforge.com/minecraft/mc-mods/chunkpregenerator) <sup><sub>Chunk Pregenerator-V1.12-2.5.1.jar</sub></sup>
+- [**Hammer Lib**](https://www.curseforge.com/minecraft/mc-mods/hammer-lib) <sup><sub>HammerLib-1.12.2-2.0.6.31.jar</sub></sup>
+- [**Animus**](https://www.curseforge.com/minecraft/mc-mods/animus) <sup><sub>Animus-1.12-2.1.8.jar</sub></sup>
+- [**Immersive Technology**](https://www.curseforge.com/minecraft/mc-mods/mct-immersive-technology) <sup><sub>MCTImmersiveTechnology-1.12.2-1.9.97.jar</sub></sup>
+- [**LittleTiles**](https://www.curseforge.com/minecraft/mc-mods/littletiles) <sup><sub>LittleTiles_v1.5.31_mc1.12.2.jar</sub></sup>
+- [**Let Me Sleep**](https://www.curseforge.com/minecraft/mc-mods/let-me-sleep) <sup><sub>LetMeSleep-v1.2.3-1.12.2.jar</sub></sup>
+- [**JAOPCA**](https://www.curseforge.com/minecraft/mc-mods/jaopca) <sup><sub>undefined</sub></sup>
+
+
+## ✏️ **Recipes**
+  - ### 🖉 **New Recipes**
+    - ![](https://git.io/Jw3xg "Titanium Ingot") in ![](https://git.io/JGGjU "Electric Arc Furnace")
+    - ![](https://git.io/J6y78 "Slop") in ![](https://git.io/J3hVE "Wooden Barrel")
+    - ![](https://git.io/J6y7f "Biome Marker") for Hell, End, Ratlantis
+    - ![](https://git.io/J6y7n "Molten Heavy Metal Tank") casting
+    - ![](https://git.io/J6y70 "Green Slimy Grass")![](https://git.io/J6y7G "Blue Slimy Grass")![](https://git.io/JzX6Q "Purple Slimy Grass")![](https://git.io/J6y7L "Magma Slimy Grass")
+    - ![](https://git.io/J6y7Y "Healer")
+      ![](https://git.io/J6y7r "Backpack")
+      ![](https://git.io/J6y7R "Summoning Pendulum")
+      ![](https://git.io/J6yQN "Spectre Coil Nr. 450")
+      ![](https://git.io/J6y7v "Pitcher Plant")
+      ![](https://git.io/J6y7g "Wildberry Bush")
+      ![](https://git.io/J6yQj "Hamster")
+      ![](https://git.io/J6yQF "Constellation Paper")
+
+  - ### ✐ **Cheaper**
+    - ![](https://git.io/Jz0VY "Lava") from [Hellbark]
+    - ![](https://git.io/J6y7l "Maim Trap")
+      ![](https://git.io/J6y7a "Iron Rod")
+      ![](https://git.io/JOGzF "Time in a bottle")
+      ![](https://git.io/J6y73 "Spectre Key")
+      ![](https://git.io/J6yQh "Fertilized Dirt")
+      ![](https://git.io/J6y7s "Weather Egg <Sun>")![](https://git.io/J6yQx "Weather Egg <Rain>")![](https://git.io/J6y7C "Weather Egg <Storm>")
+      ![](https://git.io/Jn5Z2 "Spectre String")
+      ![](https://git.io/J6y7c "Spectre Lens")
+      ![](https://git.io/J6y74 "Spectre Energy Injector")
+      ![](https://git.io/J6y7T "Stable Ender Pearl")
+      ![](https://git.io/J6y7m "Item Collector")
+      ![](https://git.io/J6y7E "Rain Shield")
+      ![](https://git.io/J6y7o "Igniter")
+      ![](https://git.io/J6y7u "Liquid Barrel")
+      ![](https://git.io/J6y72 "Ice Bomb")
+      ![](https://git.io/J6y7z "Traveller's Knapsack")
+
+  - ### ✎ **Harder**
+    - ![](https://git.io/J6y7V "XP Drain")
+      ![](https://git.io/JzVq3 "Slime Cube")
+      ![](https://git.io/J6y7I "Apple Sprout")
+      ![](https://git.io/JcbbK "Fertilized Essence")
+
+  - ### ✏ **Misc Changes**
+    - New util item: [Any Different Item]
+    - **Vex** now drops ![](https://git.io/JGGhx "Overworldian Matter")
+    - **Vex** Cant be spawned with ![](https://git.io/J3xyN "Spawner Changer") and ![](https://git.io/JuAii "Mob Duplicator")
+    - ![](https://git.io/J6y7w "Player Trap") can be crafted from ![](https://git.io/JtIrt "Rat Diamond")
+    - ![](https://git.io/JoUaT "Small Plate Presser") only output thrid extra in tiny amounts
+    - ![](https://git.io/J6yQA "Compressed Crushed Andesite") and ![](https://git.io/J6yQb "Compressed Crushed Diorite") fix hammering
+    - Unhide vanilla armor, make default durability, but remove crafts
+    - ![](https://git.io/J6yQd "Climograph Base Unit") from rat diamond
+    - ![](https://git.io/Jgexa "Rat Upgrade: Gemcutter") now output AA Crystal Clusters instead of gems
+    - Rat Ore Nuggets cant be put in ![](https://git.io/JOGz2 "Pulverizer (Basic)") anymore
+    - ![](https://git.io/JcbNm "Phyto-Gro") add to `ore:fertilizer`
+    - ![](https://git.io/J6y7k "Menril Berries") added to `ore:listAllberry`
+    - ![](https://git.io/J6y7t "Grape Seeds") added to `ore:listAllseed`
+
+
+
+## 🔵 **Mods**
+
+  - ### ☢️ **NuclearCraft**: Move Radiation hud to right bottom
+
+  - ### 🐝 **Forestry**: ![](https://git.io/J6y7J "Building Backpack") add **Sonar Core** blocks
+
+  - ### 📑 **Tips**: for items:
+      > - Most Open Blocks Trophy
+      > - ![](https://git.io/J6y7U "Fusewood Shard")![](https://git.io/J6y7W "Darkwood Shard")![](https://git.io/J6y7e "Bloodwood Shard")![](https://git.io/J6y7O "Ghostwood Shard")
+
+  - ### 🔨 **Tinker's Construct**
+    - ![](https://git.io/J6yQp "Fiery Ingot") buff mining level to `9`
+    - ![](https://git.io/J6y7Z "Cheese") nerf durability to `-400`
+    - **Grinding** trait rework (WIP)
+
+  - ### 🧻 **JEI**
+    - Add ![](https://git.io/J6y7B "Luggage")
+    - blacklist updates
+    - Remove Slime Islands mentions from **Emptiness**
+
+
+
+## 🔄 **Misc Changes**
+
+  - Typo Fixes and New Mod Changes (#13)
+    > - Push Player Out Of Blocks
+    > - Replenish Air Slowly
+    > - Disable spawn a monster and wake player when sleeping in an insufficiently lit area
+    > - Tooltips and tips typo fixes
+
+  - ### ⛏️ **Mining**: Lower Hardness for Amber, Cinnabar and Charged Quartz ores
+
+
+
+
+
+
 # v0.36
 
 
