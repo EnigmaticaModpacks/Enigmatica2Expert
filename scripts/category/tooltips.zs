@@ -275,9 +275,7 @@ for item in [
 	<quark:horse_whistle>,
 	<quark:slime_bucket>,
 ] as IItemStack[] {
-	for line in desc.local(item).split("\n") {
-    item.addTooltip(format.white(line));
-  }
+	desc.tooltip(item);
 }
 
 # Thaumcraft Curiocity
@@ -342,6 +340,21 @@ desc.tooltip(<travelersbackpack:travelers_backpack:62>, 'backpack.Squid');
 desc.tooltip(<travelersbackpack:travelers_backpack:63>, 'backpack.Sunflower');
 desc.tooltip(<travelersbackpack:travelers_backpack:73>, 'backpack.Wolf');
 
+desc.tooltip(<openblocks:trophy>.withTag({entity_id: "minecraft:blaze"})            , 'trophy.blaze');
+desc.tooltip(<openblocks:trophy>.withTag({entity_id: "minecraft:cave_spider"})      , 'trophy.cave_spider');
+desc.tooltip(<openblocks:trophy>.withTag({entity_id: "minecraft:creeper"})          , 'trophy.creeper');
+desc.tooltip(<openblocks:trophy>.withTag({entity_id: "minecraft:enderman"})         , 'trophy.enderman');
+desc.tooltip(<openblocks:trophy>.withTag({entity_id: "minecraft:evocation_illager"}), 'trophy.evocation_illager');
+desc.tooltip(<openblocks:trophy>.withTag({entity_id: "minecraft:elder_guardian"})   , 'trophy.elder_guardian');
+desc.tooltip(<openblocks:trophy>.withTag({entity_id: "minecraft:llama"})            , 'trophy.llama');
+desc.tooltip(<openblocks:trophy>.withTag({entity_id: "minecraft:mooshroom"})        , 'trophy.mooshroom');
+desc.tooltip(<openblocks:trophy>.withTag({entity_id: "minecraft:shulker"})          , 'trophy.shulker');
+desc.tooltip(<openblocks:trophy>.withTag({entity_id: "minecraft:skeleton"})         , 'trophy.skeleton');
+desc.tooltip(<openblocks:trophy>.withTag({entity_id: "minecraft:snowman"})          , 'trophy.snowman');
+desc.tooltip(<openblocks:trophy>.withTag({entity_id: "minecraft:squid"})            , 'trophy.squid');
+desc.tooltip(<openblocks:trophy>.withTag({entity_id: "minecraft:witch"})            , 'trophy.witch');
+
+
 
 desc.both(<netherendingores:ore_nether_modded_1:7>, 'worldgen.disabled_use_sub');
 desc.both(<netherendingores:ore_end_modded_1:7>, 'worldgen.disabled_use_sub');
@@ -349,6 +362,10 @@ desc.both(<thermalfoundation:ore:2>, 'worldgen.disabled_use_sub');
 desc.both(<twilightforest:transformation_powder>);
 desc.both(<rftools:syringe>, 'syringe_craftable');
 desc.both(<rftools:spawner>, 'syringe_craftable');
+desc.both(<tconstruct:shard>.withTag({Material: "fusewood"}), 'tcon.fusewood');
+desc.both(<tconstruct:shard>.withTag({Material: "darkwood"}), 'tcon.darkwood');
+desc.both(<tconstruct:shard>.withTag({Material: "bloodwood"}), 'tcon.bloodwood');
+desc.both(<tconstruct:shard>.withTag({Material: "ghostwood"}), 'tcon.ghostwood');
 
 /*Inject_js(
 [...loadText('config/enderio/recipes/user/capacitor_machines.xml')
