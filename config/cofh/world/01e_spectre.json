@@ -1,0 +1,22 @@
+{
+  "dependencies": "randomthings",
+  "populate": {
+
+		"spectre_tc_crystal_0": {
+			"generator": {
+				"block": {"name": "thaumcraft:crystal_aer", "properties": {"gen": "1", "size": "3"}},
+				"type": "stalagmite",
+				"min-height": 1,
+				"height-variance": 0,
+				"size-variance": 0,
+				"gen-size": 0,
+				"height-mod": 50,
+        "material": "randomthings:spectreblock"
+			},
+			"dimension": {"restriction": "whitelist","value": [-343800852]},
+			"distribution": "cave",
+			"ground-level": 6,
+			"cluster-count": 4
+		}
+  }
+}
