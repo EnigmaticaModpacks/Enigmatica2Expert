@@ -46,8 +46,8 @@
   "name": "Enigmatica2Expert - Extended",
   "cachedScans": [],
   "isValid": true,
-  "lastPreviousMatchUpdate": "2021-09-07T06:49:12.799225Z",
-  "lastRefreshAttempt": "2021-09-07T09:49:16.3785331+03:00",
+  "lastPreviousMatchUpdate": "2021-10-20T09:47:09.1753441Z",
+  "lastRefreshAttempt": "2021-10-20T12:47:11.0084415+03:00",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.12.2",
@@ -306,19 +306,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -672,7 +675,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -749,7 +753,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -1271,25 +1276,29 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -1902,7 +1911,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -2331,7 +2341,7 @@
       "dateInstalled": "2021-10-12T13:17:04.8342745Z",
       "dateUpdated": "2021-10-12T13:17:04.8352726Z",
       "dateLastUpdateAttempted": "2021-10-12T13:17:04.8352726Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -2558,19 +2568,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -2783,19 +2796,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -2927,7 +2943,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -3041,7 +3058,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -3118,7 +3136,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -3203,19 +3222,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -3299,13 +3321,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -3454,7 +3478,7 @@
       "dateInstalled": "2021-10-12T13:30:13.9522937Z",
       "dateUpdated": "2021-10-12T13:30:13.9572801Z",
       "dateLastUpdateAttempted": "2021-10-12T13:30:13.9572801Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -3675,61 +3699,71 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000009.0000000004",
             "gameVersion": "1.9.4",
             "gameVersionReleaseDate": "2016-05-10T05:00:00Z",
-            "gameVersionName": "1.9.4"
+            "gameVersionName": "1.9.4",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000010.0000000002",
             "gameVersion": "1.10.2",
             "gameVersionReleaseDate": "2016-06-23T05:00:00Z",
-            "gameVersionName": "1.10.2"
+            "gameVersionName": "1.10.2",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000011",
             "gameVersion": "1.11",
             "gameVersionReleaseDate": "2016-11-14T06:00:00Z",
-            "gameVersionName": "1.11"
+            "gameVersionName": "1.11",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000010.0000000001",
             "gameVersion": "1.10.1",
             "gameVersionReleaseDate": "2016-06-22T05:00:00Z",
-            "gameVersionName": "1.10.1"
+            "gameVersionName": "1.10.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000010",
             "gameVersion": "1.10",
             "gameVersionReleaseDate": "2016-06-08T05:00:00Z",
-            "gameVersionName": "1.10"
+            "gameVersionName": "1.10",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000011.0000000001",
             "gameVersion": "1.11.1",
             "gameVersionReleaseDate": "2016-12-20T06:00:00Z",
-            "gameVersionName": "1.11.1"
+            "gameVersionName": "1.11.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000011.0000000002",
             "gameVersion": "1.11.2",
             "gameVersionReleaseDate": "2016-12-21T06:00:00Z",
-            "gameVersionName": "1.11.2"
+            "gameVersionName": "1.11.2",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -4240,7 +4274,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -4436,7 +4471,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -4843,94 +4879,107 @@
       "addonID": 401178,
       "gameInstanceID": "06685845-4f98-4fe1-bf3c-da90768e9d32",
       "installedFile": {
-        "id": 3432318,
-        "displayName": "zenutils-1.9.4.jar",
-        "fileName": "zenutils-1.9.4.jar",
-        "fileDate": "2021-08-20T11:39:55.837Z",
-        "fileLength": 152689,
+        "id": 3491578,
+        "displayName": "zenutils-1.9.5.jar",
+        "fileName": "zenutils-1.9.5.jar",
+        "fileDate": "2021-10-15T05:49:57.277Z",
+        "fileLength": 154930,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3432/318/zenutils-1.9.4.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3491/578/zenutils-1.9.5.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
-            "id": 0,
-            "addonId": 289412,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
+            "id": 75854297,
             "addonId": 270789,
             "type": 3,
-            "fileId": 0
+            "fileId": 3491578
           },
           {
-            "id": 0,
-            "addonId": 237065,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
+            "id": 75854296,
             "addonId": 239197,
             "type": 3,
-            "fileId": 0
+            "fileId": 3491578
+          },
+          {
+            "id": 75854294,
+            "addonId": 237065,
+            "type": 2,
+            "fileId": 3491578
+          },
+          {
+            "id": 75854295,
+            "addonId": 289412,
+            "type": 2,
+            "fileId": 3491578
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 983673224,
-            "type": 0,
+            "fingerprint": 3118558898,
+            "type": 3,
             "invalidFingerprint": false
           },
           {
             "foldername": "youyihj",
-            "fingerprint": 4248566555,
-            "type": 0,
+            "fingerprint": 3966805668,
+            "type": 3,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
             "fingerprint": 3548225530,
-            "type": 0,
+            "type": 3,
             "invalidFingerprint": false
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 2008550535,
-            "type": 0,
+            "fingerprint": 2544858622,
+            "type": 3,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 496323842,
-            "type": 0,
+            "type": 3,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 1666775278,
+        "packageFingerprint": 3575224693,
         "gameVersion": [
           "1.12.2"
         ],
+        "sortableGameVersion": [
+          {
+            "gameVersionPadded": "0000000001.0000000012.0000000002",
+            "gameVersion": "1.12.2",
+            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 628
+          }
+        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
+        "categorySectionPackageType": 6,
+        "restrictProjectFileAccess": 1,
+        "projectStatus": 4,
+        "renderCacheId": 2540837,
+        "projectId": 401178,
+        "packageFingerprintId": 762713172,
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
-        "gameId": 0,
+        "gameVersionMappingId": 3383225,
+        "gameVersionId": 6756,
+        "gameId": 432,
         "isServerPack": false,
-        "FileNameOnDisk": "zenutils-1.9.4.jar"
+        "FileNameOnDisk": "zenutils-1.9.5.jar"
       },
       "dateInstalled": "2020-12-08T16:30:01.966532Z",
-      "dateUpdated": "2021-08-25T11:57:42.301622Z",
-      "dateLastUpdateAttempted": "2021-08-25T11:57:42.301622Z",
-      "status": 5,
+      "dateUpdated": "2021-10-20T09:45:40.2741176Z",
+      "dateLastUpdateAttempted": "2021-10-20T09:45:40.2741176Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -5080,19 +5129,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -5169,7 +5221,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -5267,19 +5320,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -5439,7 +5495,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -5535,7 +5592,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -5625,7 +5683,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -5728,13 +5787,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -5975,19 +6036,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -6193,19 +6257,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -6572,14 +6639,14 @@
       "addonID": 267193,
       "gameInstanceID": "06685845-4f98-4fe1-bf3c-da90768e9d32",
       "installedFile": {
-        "id": 3214752,
-        "displayName": "Chunk Pregenerator-V1.12-2.5.0",
-        "fileName": "Chunk Pregenerator-V1.12-2.5.0.jar",
-        "fileDate": "2021-02-23T20:33:13.05Z",
-        "fileLength": 543859,
+        "id": 3490718,
+        "displayName": "Chunk Pregenerator-V1.12-2.5.1",
+        "fileName": "Chunk Pregenerator-V1.12-2.5.1.jar",
+        "fileDate": "2021-10-14T09:16:25.27Z",
+        "fileLength": 543872,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3214/752/Chunk Pregenerator-V1.12-2.5.0.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3490/718/Chunk Pregenerator-V1.12-2.5.1.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -6588,35 +6655,64 @@
           {
             "foldername": "META-INF",
             "fingerprint": 3838887051,
-            "type": 0,
+            "type": 3,
             "invalidFingerprint": false
           },
           {
             "foldername": "pregenerator",
-            "fingerprint": 2779473434,
-            "type": 0,
+            "fingerprint": 2670515777,
+            "type": 3,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2561881248,
+        "packageFingerprint": 2722055263,
         "gameVersion": [
+          "1.12.1",
+          "1.12",
           "1.12.2"
+        ],
+        "sortableGameVersion": [
+          {
+            "gameVersionPadded": "0000000001.0000000012.0000000001",
+            "gameVersion": "1.12.1",
+            "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 628
+          },
+          {
+            "gameVersionPadded": "0000000001.0000000012",
+            "gameVersion": "1.12",
+            "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 628
+          },
+          {
+            "gameVersionPadded": "0000000001.0000000012.0000000002",
+            "gameVersion": "1.12.2",
+            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 628
+          }
         ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameId": 0,
+        "categorySectionPackageType": 6,
+        "restrictProjectFileAccess": 1,
+        "projectStatus": 4,
+        "renderCacheId": 2539735,
+        "projectId": 267193,
+        "packageFingerprintId": 762019839,
+        "gameVersionDateReleased": "2007-07-01T05:00:00Z",
+        "gameVersionMappingId": 3381014,
+        "gameVersionId": 4457,
+        "gameId": 432,
         "isServerPack": false,
-        "FileNameOnDisk": "Chunk Pregenerator-V1.12-2.5.0.jar"
+        "FileNameOnDisk": "Chunk Pregenerator-V1.12-2.5.1.jar"
       },
       "dateInstalled": "2020-02-05T17:37:14.6967813Z",
-      "dateUpdated": "2021-02-26T19:46:51.6199206Z",
-      "dateLastUpdateAttempted": "2021-02-26T19:46:51.6199206Z",
-      "status": 5,
+      "dateUpdated": "2021-10-20T09:44:48.5587865Z",
+      "dateLastUpdateAttempted": "2021-10-20T09:44:48.5587865Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -7333,31 +7429,36 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000010.0000000002",
             "gameVersion": "1.10.2",
             "gameVersionReleaseDate": "2016-06-23T05:00:00Z",
-            "gameVersionName": "1.10.2"
+            "gameVersionName": "1.10.2",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000011.0000000002",
             "gameVersion": "1.11.2",
             "gameVersionReleaseDate": "2016-12-21T06:00:00Z",
-            "gameVersionName": "1.11.2"
+            "gameVersionName": "1.11.2",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -7447,7 +7548,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -7905,7 +8007,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -8097,13 +8200,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -8186,7 +8291,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -8462,7 +8568,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -8722,7 +8829,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -8812,7 +8920,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -9018,25 +9127,29 @@
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -9139,13 +9252,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -9321,19 +9436,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -10024,7 +10142,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -10260,7 +10379,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -10451,7 +10571,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -10979,7 +11100,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -11230,7 +11352,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -11303,19 +11426,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -11593,7 +11719,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -11760,7 +11887,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -11845,19 +11973,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -11955,19 +12086,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -12420,13 +12554,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -12679,13 +12815,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -13044,7 +13182,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -13290,7 +13429,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -13386,7 +13526,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -13484,19 +13625,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -13592,7 +13736,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -14066,7 +14211,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -14234,13 +14380,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -14430,37 +14578,43 @@
             "gameVersionPadded": "0000000001.0000000009.0000000004",
             "gameVersion": "1.9.4",
             "gameVersionReleaseDate": "2016-05-10T05:00:00Z",
-            "gameVersionName": "1.9.4"
+            "gameVersionName": "1.9.4",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000010.0000000002",
             "gameVersion": "1.10.2",
             "gameVersionReleaseDate": "2016-06-23T05:00:00Z",
-            "gameVersionName": "1.10.2"
+            "gameVersionName": "1.10.2",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000011.0000000002",
             "gameVersion": "1.11.2",
             "gameVersionReleaseDate": "2016-12-21T06:00:00Z",
-            "gameVersionName": "1.11.2"
+            "gameVersionName": "1.11.2",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000013.0000000002",
             "gameVersion": "1.13.2",
             "gameVersionReleaseDate": "2018-10-22T00:00:00Z",
-            "gameVersionName": "1.13.2"
+            "gameVersionName": "1.13.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -14628,7 +14782,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -14724,13 +14879,15 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -14897,7 +15054,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -15160,7 +15318,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -15250,13 +15409,15 @@
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -15698,7 +15859,7 @@
       "dateInstalled": "2021-10-12T13:28:00.4341456Z",
       "dateUpdated": "2021-10-12T13:28:00.4351314Z",
       "dateLastUpdateAttempted": "2021-10-12T13:28:00.4351314Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -16145,14 +16306,14 @@
       "addonID": 247401,
       "gameInstanceID": "06685845-4f98-4fe1-bf3c-da90768e9d32",
       "installedFile": {
-        "id": 3366814,
-        "displayName": "[1.12.2] Hammer Core - 2.0.6.28",
-        "fileName": "HammerLib-1.12.2-2.0.6.28.jar",
-        "fileDate": "2021-06-27T18:51:29.947Z",
-        "fileLength": 2433033,
+        "id": 3493538,
+        "displayName": "[1.12.2] Hammer Core - 2.0.6.31",
+        "fileName": "HammerLib-1.12.2-2.0.6.31.jar",
+        "fileDate": "2021-10-17T02:40:54.833Z",
+        "fileLength": 2434333,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3366/814/HammerLib-1.12.2-2.0.6.28.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3493/538/HammerLib-1.12.2-2.0.6.31.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -16160,60 +16321,73 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3776033468,
-            "type": 0,
+            "fingerprint": 4217899325,
+            "type": 3,
             "invalidFingerprint": false
           },
           {
             "foldername": "asm.properties",
             "fingerprint": 6029263,
-            "type": 0,
+            "type": 3,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
             "fingerprint": 1882780959,
-            "type": 0,
+            "type": 3,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 3991344637,
-            "type": 0,
+            "fingerprint": 1636194136,
+            "type": 3,
             "invalidFingerprint": false
           },
           {
             "foldername": "mcmod.info",
             "fingerprint": 3547676547,
-            "type": 0,
+            "type": 3,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 2520228967,
-            "type": 0,
+            "type": 3,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 4115732889,
+        "packageFingerprint": 3399001155,
         "gameVersion": [
           "1.12.2"
         ],
+        "sortableGameVersion": [
+          {
+            "gameVersionPadded": "0000000001.0000000012.0000000002",
+            "gameVersion": "1.12.2",
+            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 628
+          }
+        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
+        "categorySectionPackageType": 6,
+        "restrictProjectFileAccess": 1,
+        "projectStatus": 4,
+        "renderCacheId": 2543417,
+        "projectId": 247401,
+        "packageFingerprintId": 763889639,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameId": 0,
+        "gameVersionMappingId": 3388482,
+        "gameVersionId": 4458,
+        "gameId": 432,
         "isServerPack": false,
-        "FileNameOnDisk": "HammerLib-1.12.2-2.0.6.28.jar"
+        "FileNameOnDisk": "HammerLib-1.12.2-2.0.6.31.jar"
       },
       "dateInstalled": "2021-06-24T06:30:47.6665676Z",
-      "dateUpdated": "2021-07-13T10:56:08.5874658Z",
-      "dateLastUpdateAttempted": "2021-07-13T10:56:08.5874658Z",
-      "status": 5,
+      "dateUpdated": "2021-10-20T09:44:40.5841751Z",
+      "dateLastUpdateAttempted": "2021-10-20T09:44:40.5841751Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -16396,7 +16570,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -16497,7 +16672,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -16587,13 +16763,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -16683,7 +16861,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -16953,7 +17132,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -17056,13 +17236,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -17216,7 +17398,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -17735,7 +17918,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -18474,19 +18658,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -19112,7 +19299,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -19191,19 +19379,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -19293,13 +19484,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -19474,13 +19667,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -19636,13 +19831,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -20070,7 +20267,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -20250,13 +20448,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -20352,7 +20552,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -20604,7 +20805,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -20779,7 +20981,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -20886,7 +21089,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -20972,19 +21176,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -21094,19 +21301,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -21142,35 +21352,35 @@
       "addonID": 229664,
       "gameInstanceID": "06685845-4f98-4fe1-bf3c-da90768e9d32",
       "installedFile": {
-        "id": 2888473,
-        "displayName": "Animus-1.12-2.1.7.jar",
-        "fileName": "Animus-1.12-2.1.7.jar",
-        "fileDate": "2020-02-25T07:42:43.89Z",
-        "fileLength": 349684,
-        "releaseType": 1,
+        "id": 3496560,
+        "displayName": "Animus-1.12-2.1.8.jar",
+        "fileName": "Animus-1.12-2.1.8.jar",
+        "fileDate": "2021-10-19T21:10:01.537Z",
+        "fileLength": 354079,
+        "releaseType": 2,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2888/473/Animus-1.12-2.1.7.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3496/560/Animus-1.12-2.1.8.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
-            "id": 37186346,
-            "addonId": 228832,
-            "type": 3,
-            "fileId": 2888473
-          },
-          {
-            "id": 37186345,
+            "id": 76233853,
             "addonId": 224791,
             "type": 3,
-            "fileId": 2888473
+            "fileId": 3496560
+          },
+          {
+            "id": 76233854,
+            "addonId": 228832,
+            "type": 3,
+            "fileId": 3496560
           }
         ],
         "isAvailable": true,
         "modules": [
           {
-            "foldername": "META-INF",
-            "fingerprint": 4018629793,
+            "foldername": "assets",
+            "fingerprint": 2116161472,
             "type": 3,
             "invalidFingerprint": false
           },
@@ -21181,14 +21391,14 @@
             "invalidFingerprint": false
           },
           {
-            "foldername": "assets",
-            "fingerprint": 3144452075,
+            "foldername": "mcmod.info",
+            "fingerprint": 744574725,
             "type": 3,
             "invalidFingerprint": false
           },
           {
-            "foldername": "mcmod.info",
-            "fingerprint": 400138729,
+            "foldername": "META-INF",
+            "fingerprint": 4018629793,
             "type": 3,
             "invalidFingerprint": false
           },
@@ -21199,7 +21409,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 4208511036,
+        "packageFingerprint": 2395911925,
         "gameVersion": [
           "Forge",
           "1.12.2"
@@ -21209,13 +21419,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 68441
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 628
           }
         ],
         "hasInstallScript": false,
@@ -21223,20 +21435,20 @@
         "categorySectionPackageType": 6,
         "restrictProjectFileAccess": 1,
         "projectStatus": 4,
-        "renderCacheId": 1776673,
+        "renderCacheId": 2547343,
         "projectId": 229664,
-        "packageFingerprintId": 415296601,
+        "packageFingerprintId": 765953306,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 2109819,
+        "gameVersionMappingId": 3396540,
         "gameVersionId": 4458,
         "gameId": 432,
         "isServerPack": false,
-        "FileNameOnDisk": "Animus-1.12-2.1.7.jar"
+        "FileNameOnDisk": "Animus-1.12-2.1.8.jar"
       },
       "dateInstalled": "2020-03-07T09:40:53.9116041Z",
-      "dateUpdated": "2019-03-07T09:40:53.9116041Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2021-10-20T09:44:37.3867422Z",
+      "dateLastUpdateAttempted": "2021-10-20T09:44:37.3867422Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -21300,19 +21512,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -21642,7 +21857,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -21822,7 +22038,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -21924,7 +22141,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -22026,7 +22244,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -22110,7 +22329,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -22376,13 +22596,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -22911,7 +23133,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -23103,13 +23326,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -23364,19 +23589,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -23568,7 +23796,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -23942,7 +24171,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -24168,7 +24398,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -24270,7 +24501,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -25097,7 +25329,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -25181,7 +25414,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -25385,7 +25619,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -25626,7 +25861,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -25900,7 +26136,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -25979,19 +26216,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -26168,19 +26408,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -26265,19 +26508,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -26385,7 +26631,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -26468,7 +26715,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -26564,7 +26812,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -26738,13 +26987,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -26834,13 +27085,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -26924,13 +27177,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -27140,7 +27395,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -27176,71 +27432,91 @@
       "addonID": 359407,
       "gameInstanceID": "06685845-4f98-4fe1-bf3c-da90768e9d32",
       "installedFile": {
-        "id": 3431948,
-        "displayName": "MCTImmersiveTechnology-1.12.2-1.9.96.jar",
-        "fileName": "MCTImmersiveTechnology-1.12.2-1.9.96.jar",
-        "fileDate": "2021-08-20T00:33:19.13Z",
-        "fileLength": 3429710,
+        "id": 3490481,
+        "displayName": "MCTImmersiveTechnology-1.12.2-1.9.97.jar",
+        "fileName": "MCTImmersiveTechnology-1.12.2-1.9.97.jar",
+        "fileDate": "2021-10-14T00:57:20.08Z",
+        "fileLength": 3429709,
         "releaseType": 2,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3431/948/MCTImmersiveTechnology-1.12.2-1.9.96.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3490/481/MCTImmersiveTechnology-1.12.2-1.9.97.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
-            "id": 0,
+            "id": 75836652,
             "addonId": 231951,
             "type": 3,
-            "fileId": 0
+            "fileId": 3490481
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2713273176,
-            "type": 0,
+            "fingerprint": 1458259100,
+            "type": 3,
             "invalidFingerprint": false
           },
           {
             "foldername": "mctmods",
-            "fingerprint": 3873102679,
-            "type": 0,
+            "fingerprint": 1771212597,
+            "type": 3,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 2655863125,
-            "type": 0,
+            "fingerprint": 3244824323,
+            "type": 3,
             "invalidFingerprint": false
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 87299144,
-            "type": 0,
+            "fingerprint": 3063465926,
+            "type": 3,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 854496068,
+        "packageFingerprint": 2953725,
         "gameVersion": [
           "Forge",
           "1.12.2"
         ],
+        "sortableGameVersion": [
+          {
+            "gameVersionPadded": "0",
+            "gameVersion": "",
+            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 68441
+          },
+          {
+            "gameVersionPadded": "0000000001.0000000012.0000000002",
+            "gameVersion": "1.12.2",
+            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 628
+          }
+        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
+        "categorySectionPackageType": 6,
+        "restrictProjectFileAccess": 1,
+        "projectStatus": 4,
+        "renderCacheId": 2539424,
+        "projectId": 359407,
+        "packageFingerprintId": 761936999,
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
-        "gameId": 0,
+        "gameVersionMappingId": 3380487,
+        "gameVersionId": 6756,
+        "gameId": 432,
         "isServerPack": false,
-        "FileNameOnDisk": "MCTImmersiveTechnology-1.12.2-1.9.96.jar"
+        "FileNameOnDisk": "MCTImmersiveTechnology-1.12.2-1.9.97.jar"
       },
       "dateInstalled": "2020-08-05T11:33:10.0623403Z",
-      "dateUpdated": "2021-08-25T11:58:15.4593319Z",
-      "dateLastUpdateAttempted": "2021-08-25T11:58:15.4593319Z",
-      "status": 5,
+      "dateUpdated": "2021-10-20T09:45:06.7381831Z",
+      "dateLastUpdateAttempted": "2021-10-20T09:45:06.7381831Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -27317,25 +27593,29 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -27505,7 +27785,7 @@
       "dateInstalled": "2020-05-31T19:58:23.9425185Z",
       "dateUpdated": "2021-10-12T13:15:55.8484117Z",
       "dateLastUpdateAttempted": "2021-10-12T13:15:55.8484117Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -27667,7 +27947,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -27783,19 +28064,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -27978,19 +28262,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -28321,7 +28608,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -28537,7 +28825,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -28626,7 +28915,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -28728,7 +29018,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -28904,19 +29195,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -28993,7 +29287,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -29083,7 +29378,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -29243,7 +29539,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -29279,22 +29576,22 @@
       "addonID": 257818,
       "gameInstanceID": "06685845-4f98-4fe1-bf3c-da90768e9d32",
       "installedFile": {
-        "id": 3483878,
-        "displayName": "LittleTiles_v1.5.28_mc1.12.2.jar",
-        "fileName": "LittleTiles_v1.5.28_mc1.12.2.jar",
-        "fileDate": "2021-10-07T11:05:55.943Z",
-        "fileLength": 2248992,
+        "id": 3496017,
+        "displayName": "LittleTiles_v1.5.31_mc1.12.2.jar",
+        "fileName": "LittleTiles_v1.5.31_mc1.12.2.jar",
+        "fileDate": "2021-10-19T08:57:21.12Z",
+        "fileLength": 2251782,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3483/878/LittleTiles_v1.5.28_mc1.12.2.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3496/17/LittleTiles_v1.5.31_mc1.12.2.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
-            "id": 0,
+            "id": 76195739,
             "addonId": 257814,
             "type": 3,
-            "fileId": 0
+            "fileId": 3496017
           }
         ],
         "isAvailable": true,
@@ -29302,47 +29599,68 @@
           {
             "foldername": "mcmod.info",
             "fingerprint": 1976679851,
-            "type": 0,
+            "type": 3,
             "invalidFingerprint": false
           },
           {
             "foldername": "META-INF",
             "fingerprint": 1650751083,
-            "type": 0,
+            "type": 3,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 3593607953,
-            "type": 0,
+            "fingerprint": 9056816,
+            "type": 3,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
             "fingerprint": 3296988887,
-            "type": 0,
+            "type": 3,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 3569661521,
+        "packageFingerprint": 917097271,
         "gameVersion": [
+          "Forge",
           "1.12.2"
+        ],
+        "sortableGameVersion": [
+          {
+            "gameVersionPadded": "0",
+            "gameVersion": "",
+            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 68441
+          },
+          {
+            "gameVersionPadded": "0000000001.0000000012.0000000002",
+            "gameVersion": "1.12.2",
+            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 628
+          }
         ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
+        "categorySectionPackageType": 6,
+        "restrictProjectFileAccess": 1,
+        "projectStatus": 4,
+        "renderCacheId": 2546640,
+        "projectId": 257818,
+        "packageFingerprintId": 765588842,
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
-        "gameId": 0,
+        "gameVersionMappingId": 3395058,
+        "gameVersionId": 6756,
+        "gameId": 432,
         "isServerPack": false,
-        "FileNameOnDisk": "LittleTiles_v1.5.28_mc1.12.2.jar"
+        "FileNameOnDisk": "LittleTiles_v1.5.31_mc1.12.2.jar"
       },
       "dateInstalled": "2021-10-09T11:16:24.5722997Z",
-      "dateUpdated": "2021-10-09T11:16:24.5762891Z",
-      "dateLastUpdateAttempted": "2021-10-09T11:16:24.5762891Z",
-      "status": 5,
+      "dateUpdated": "2021-10-20T09:45:31.8756163Z",
+      "dateLastUpdateAttempted": "2021-10-20T09:45:31.8756163Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -29685,7 +30003,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -30302,13 +30621,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -30476,7 +30797,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -30565,7 +30887,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -30654,7 +30977,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -31043,7 +31367,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -31253,7 +31578,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -31349,7 +31675,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -31433,7 +31760,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -31626,7 +31954,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -32033,19 +32362,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -32249,7 +32581,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -32625,7 +32958,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -32846,7 +33180,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -33006,7 +33341,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -33531,7 +33867,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -33627,7 +33964,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -33813,7 +34151,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -33915,13 +34254,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -34179,7 +34520,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -34433,19 +34775,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -34759,13 +35104,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -34938,7 +35285,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -35300,14 +35648,14 @@
       "addonID": 322764,
       "gameInstanceID": "06685845-4f98-4fe1-bf3c-da90768e9d32",
       "installedFile": {
-        "id": 3163476,
-        "displayName": "LetMeSleep-v1.2.2-1.12.2.jar",
-        "fileName": "LetMeSleep-v1.2.2-1.12.2.jar",
-        "fileDate": "2021-01-09T18:55:22.233Z",
+        "id": 3491956,
+        "displayName": "LetMeSleep-v1.2.3-1.12.2.jar",
+        "fileName": "LetMeSleep-v1.2.3-1.12.2.jar",
+        "fileDate": "2021-10-15T16:36:17.23Z",
         "fileLength": 48249,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3163/476/LetMeSleep-v1.2.2-1.12.2.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3491/956/LetMeSleep-v1.2.3-1.12.2.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -35315,54 +35663,74 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 376569214,
-            "type": 0,
+            "fingerprint": 3089396853,
+            "type": 3,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
             "fingerprint": 560753200,
-            "type": 0,
+            "type": 3,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 3242263400,
-            "type": 0,
+            "fingerprint": 3228835101,
+            "type": 3,
             "invalidFingerprint": false
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 1476513579,
-            "type": 0,
+            "fingerprint": 1148973598,
+            "type": 3,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 1210162951,
-            "type": 0,
+            "type": 3,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2844754008,
+        "packageFingerprint": 2930327095,
         "gameVersion": [
           "Forge",
           "1.12.2"
         ],
+        "sortableGameVersion": [
+          {
+            "gameVersionPadded": "0",
+            "gameVersion": "",
+            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 68441
+          },
+          {
+            "gameVersionPadded": "0000000001.0000000012.0000000002",
+            "gameVersion": "1.12.2",
+            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 628
+          }
+        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
+        "categorySectionPackageType": 6,
+        "restrictProjectFileAccess": 1,
+        "projectStatus": 4,
+        "renderCacheId": 2541316,
+        "projectId": 322764,
+        "packageFingerprintId": 762962322,
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
-        "gameId": 0,
+        "gameVersionMappingId": 3384217,
+        "gameVersionId": 6756,
+        "gameId": 432,
         "isServerPack": false,
-        "FileNameOnDisk": "LetMeSleep-v1.2.2-1.12.2.jar"
+        "FileNameOnDisk": "LetMeSleep-v1.2.3-1.12.2.jar"
       },
       "dateInstalled": "2021-10-12T13:27:47.0622253Z",
-      "dateUpdated": "2021-10-12T13:27:47.0642208Z",
-      "dateLastUpdateAttempted": "2021-10-12T13:27:47.0642208Z",
+      "dateUpdated": "2021-10-20T09:45:12.2000673Z",
+      "dateLastUpdateAttempted": "2021-10-20T09:45:12.2000673Z",
       "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
@@ -35504,7 +35872,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -35822,7 +36191,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -36056,7 +36426,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -36152,7 +36523,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -36266,7 +36638,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -36439,7 +36812,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -36529,7 +36903,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -36564,71 +36939,11 @@
     {
       "addonID": 266936,
       "gameInstanceID": "06685845-4f98-4fe1-bf3c-da90768e9d32",
-      "installedFile": {
-        "id": 3487112,
-        "displayName": "JAOPCA-1.12.2-2.2.8.106.jar",
-        "fileName": "JAOPCA-1.12.2-2.2.8.106.jar",
-        "fileDate": "2021-10-10T18:29:09.663Z",
-        "fileLength": 455081,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3487/112/JAOPCA-1.12.2-2.2.8.106.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [
-          {
-            "id": 0,
-            "addonId": 275153,
-            "type": 3,
-            "fileId": 0
-          }
-        ],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 1078218285,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "de",
-            "fingerprint": 4170845716,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "thelm",
-            "fingerprint": 616331680,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 1455654317,
-            "type": 0,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 3274276256,
-        "gameVersion": [
-          "1.12.2"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "JAOPCA-1.12.2-2.2.8.106.jar"
-      },
+      "installedFile": null,
       "dateInstalled": "2021-10-12T13:42:05.4840783Z",
-      "dateUpdated": "2021-10-12T13:42:05.4920292Z",
-      "dateLastUpdateAttempted": "2021-10-12T13:42:05.4920292Z",
-      "status": 3,
+      "dateUpdated": "2021-10-20T09:45:49.2290216Z",
+      "dateLastUpdateAttempted": "2021-10-20T09:45:49.2290216Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -36691,7 +37006,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -36860,19 +37176,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -37055,19 +37374,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -37164,13 +37486,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -37369,13 +37693,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -37620,7 +37946,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -37709,7 +38036,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
