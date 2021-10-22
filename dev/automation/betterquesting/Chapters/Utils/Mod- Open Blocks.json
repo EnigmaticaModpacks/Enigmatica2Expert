@@ -1,0 +1,65 @@
+{
+  "_index": "973:10",
+  "_pos": {
+    "_index": "23:10",
+    "_data": {
+      "sizeX:3": 32,
+      "x:3": -168,
+      "y:3": 268,
+      "id:3": 973,
+      "sizeY:3": 32
+    }
+  },
+  "_data": {
+    "questID:3": 973,
+    "preRequisites:11": [
+      1050
+    ],
+    "properties:10": {
+      "betterquesting:10": {
+        "issilent:1": 0,
+        "snd_complete:8": "minecraft:entity.player.levelup",
+        "lockedprogress:1": 1,
+        "tasklogic:8": "OR",
+        "repeattime:3": -1,
+        "visibility:8": "ALWAYS",
+        "simultaneous:1": 0,
+        "icon:10": {
+          "ForgeCaps:10": {
+            "astralsorcery:cap_item_amulet_holder:10": {
+              "AS_Amulet_HolderLeast:4": -8469918875462925000,
+              "AS_Amulet_HolderMost:4": -5260415147165142000
+            }
+          },
+          "id:8": "openblocks:dev_null",
+          "Count:3": 1,
+          "tag:10": {},
+          "Damage:2": 0,
+          "OreDict:8": ""
+        },
+        "globalshare:1": 0,
+        "questlogic:8": "AND",
+        "snd_update:8": "minecraft:entity.player.levelup",
+        "autoclaim:1": 0,
+        "repeat_relative:1": 1,
+        "ismain:1": 1,
+        "name:8": "bq.quest973.name",
+        "desc:8": "bq.quest973.desc"
+      }
+    },
+    "tasks:9": {
+      "0:10": {
+        "index:3": 0,
+        "taskID:8": "bq_standard:checkbox"
+      }
+    },
+    "rewards:9": {
+      "0:10": {
+        "amount:3": 1,
+        "rewardID:8": "bq_standard:xp",
+        "isLevels:1": 1,
+        "index:3": 0
+      }
+    }
+  }
+}

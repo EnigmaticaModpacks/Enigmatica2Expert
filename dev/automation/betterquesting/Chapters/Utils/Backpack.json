@@ -1,0 +1,148 @@
+{
+  "_index": "1047:10",
+  "_pos": {
+    "_index": "80:10",
+    "_data": {
+      "sizeX:3": 24,
+      "x:3": -476,
+      "y:3": 312,
+      "id:3": 1047,
+      "sizeY:3": 24
+    }
+  },
+  "_data": {
+    "questID:3": 1047,
+    "preRequisites:11": [
+      950
+    ],
+    "properties:10": {
+      "betterquesting:10": {
+        "issilent:1": 0,
+        "snd_complete:8": "minecraft:entity.player.levelup",
+        "lockedprogress:1": 1,
+        "tasklogic:8": "OR",
+        "repeattime:3": -1,
+        "visibility:8": "ALWAYS",
+        "simultaneous:1": 0,
+        "icon:10": {
+          "ForgeCaps:10": {
+            "astralsorcery:cap_item_amulet_holder:10": {}
+          },
+          "id:8": "quark:backpack",
+          "Count:3": 1,
+          "tag:10": {
+            "Inventory:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {},
+              "4:10": {},
+              "5:10": {},
+              "6:10": {},
+              "7:10": {},
+              "8:10": {},
+              "9:10": {},
+              "10:10": {},
+              "11:10": {},
+              "12:10": {},
+              "13:10": {},
+              "14:10": {},
+              "15:10": {},
+              "16:10": {},
+              "17:10": {},
+              "18:10": {},
+              "19:10": {},
+              "20:10": {},
+              "21:10": {},
+              "22:10": {},
+              "23:10": {},
+              "24:10": {},
+              "25:10": {},
+              "26:10": {}
+            }
+          },
+          "Damage:2": 0,
+          "OreDict:8": ""
+        },
+        "globalshare:1": 0,
+        "questlogic:8": "AND",
+        "snd_update:8": "minecraft:entity.player.levelup",
+        "autoclaim:1": 0,
+        "repeat_relative:1": 1,
+        "ismain:1": 0,
+        "name:8": "bq.quest1047.name",
+        "desc:8": "bq.quest1047.desc"
+      }
+    },
+    "tasks:9": {
+      "0:10": {
+        "partialMatch:1": 1,
+        "autoConsume:1": 0,
+        "groupDetect:1": 0,
+        "ignoreNBT:1": 1,
+        "index:3": 0,
+        "consume:1": 0,
+        "requiredItems:9": {
+          "0:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "quark:backpack",
+            "Count:3": 1,
+            "tag:10": {
+              "Inventory:9": {
+                "0:10": {},
+                "1:10": {},
+                "2:10": {},
+                "3:10": {},
+                "4:10": {},
+                "5:10": {},
+                "6:10": {},
+                "7:10": {},
+                "8:10": {},
+                "9:10": {},
+                "10:10": {},
+                "11:10": {},
+                "12:10": {},
+                "13:10": {},
+                "14:10": {},
+                "15:10": {},
+                "16:10": {},
+                "17:10": {},
+                "18:10": {},
+                "19:10": {},
+                "20:10": {},
+                "21:10": {},
+                "22:10": {},
+                "23:10": {},
+                "24:10": {},
+                "25:10": {},
+                "26:10": {}
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          }
+        },
+        "taskID:8": "bq_standard:retrieval"
+      }
+    },
+    "rewards:9": {
+      "0:10": {
+        "rewardID:8": "bq_standard:item",
+        "index:3": 0,
+        "rewards:9": {
+          "0:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "bq_standard:loot_chest",
+            "Count:3": 1,
+            "Damage:2": 101,
+            "OreDict:8": ""
+          }
+        }
+      }
+    }
+  }
+}

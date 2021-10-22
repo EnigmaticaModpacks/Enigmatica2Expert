@@ -1,44 +1,43 @@
 {
-  "_index": "93:10",
+  "_index": "990:10",
   "_pos": {
-    "_index": "21:10",
+    "_index": "36:10",
     "_data": {
       "sizeX:3": 24,
-      "x:3": 219,
-      "y:3": 109,
-      "id:3": 93,
+      "x:3": -240,
+      "y:3": 208,
+      "id:3": 990,
       "sizeY:3": 24
     }
   },
   "_data": {
-    "questID:3": 93,
+    "questID:3": 990,
     "preRequisites:11": [
-      55
+      992
     ],
     "properties:10": {
       "betterquesting:10": {
         "issilent:1": 0,
         "snd_complete:8": "minecraft:entity.player.levelup",
         "lockedprogress:1": 1,
-        "tasklogic:8": "AND",
+        "tasklogic:8": "OR",
         "repeattime:3": -1,
         "visibility:8": "ALWAYS",
         "simultaneous:1": 0,
         "icon:10": {
-          "id:8": "randomthings:eclipsedclock",
+          "id:8": "randomthings:igniter",
           "Count:3": 1,
           "Damage:2": 0,
           "OreDict:8": ""
         },
         "globalshare:1": 0,
         "questlogic:8": "AND",
-        "partysinglereward:1": 0,
         "snd_update:8": "minecraft:entity.player.levelup",
         "autoclaim:1": 0,
-        "ismain:1": 0,
         "repeat_relative:1": 1,
-        "name:8": "bq.quest93.name",
-        "desc:8": "bq.quest93.desc"
+        "ismain:1": 0,
+        "name:8": "bq.quest990.name",
+        "desc:8": "bq.quest990.desc"
       }
     },
     "tasks:9": {
@@ -51,7 +50,7 @@
         "consume:1": 0,
         "requiredItems:9": {
           "0:10": {
-            "id:8": "randomthings:eclipsedclock",
+            "id:8": "randomthings:igniter",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -66,15 +65,12 @@
         "index:3": 0,
         "rewards:9": {
           "0:10": {
-            "id:8": "randomthings:prismarineenderbridge",
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "bq_standard:loot_chest",
             "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "1:10": {
-            "id:8": "randomthings:enderanchor",
-            "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 101,
             "OreDict:8": ""
           }
         }

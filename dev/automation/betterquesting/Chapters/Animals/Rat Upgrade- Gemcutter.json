@@ -65,8 +65,8 @@
         "index:3": 0,
         "choices:9": {
           "0:10": {
-            "id:8": "minecraft:diamond",
-            "Count:3": 64,
+            "id:8": "minecraft:diamond_ore",
+            "Count:3": 8,
             "Damage:2": 0,
             "OreDict:8": ""
           },

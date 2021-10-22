@@ -1,7 +1,7 @@
 {
   "_index": "944:10",
   "_pos": {
-    "_index": "41:10",
+    "_index": "40:10",
     "_data": {
       "sizeX:3": 24,
       "x:3": -168,
@@ -12,9 +12,7 @@
   },
   "_data": {
     "questID:3": 944,
-    "preRequisites:11": [
-      721
-    ],
+    "preRequisites:11": [],
     "properties:10": {
       "betterquesting:10": {
         "issilent:1": 0,

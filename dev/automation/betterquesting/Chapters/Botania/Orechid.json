@@ -4,8 +4,8 @@
     "_index": "35:10",
     "_data": {
       "sizeX:3": 24,
-      "x:3": 368,
-      "y:3": 136,
+      "x:3": 72,
+      "y:3": 268,
       "id:3": 395,
       "sizeY:3": 24
     }
@@ -14,7 +14,7 @@
     "questID:3": 395,
     "preRequisites:11": [
       13,
-      368
+      367
     ],
     "properties:10": {
       "betterquesting:10": {
@@ -39,7 +39,7 @@
         "partysinglereward:1": 0,
         "snd_update:8": "minecraft:entity.player.levelup",
         "autoclaim:1": 0,
-        "ismain:1": 0,
+        "ismain:1": 1,
         "repeat_relative:1": 1,
         "name:8": "bq.quest395.name",
         "desc:8": "bq.quest395.desc"

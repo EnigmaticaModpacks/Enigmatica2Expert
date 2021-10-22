@@ -28,7 +28,7 @@
           "ForgeCaps:10": {
             "astralsorcery:cap_item_amulet_holder:10": {}
           },
-          "id:8": "forestry:miner_bag_t2",
+          "id:8": "forestry:miner_bag",
           "Count:3": 1,
           "Damage:2": 0,
           "OreDict:8": ""
@@ -57,7 +57,7 @@
             "ForgeCaps:10": {
               "astralsorcery:cap_item_amulet_holder:10": {}
             },
-            "id:8": "forestry:miner_bag_t2",
+            "id:8": "forestry:miner_bag",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -68,16 +68,43 @@
     },
     "rewards:9": {
       "0:10": {
-        "rewardID:8": "bq_standard:item",
+        "rewardID:8": "bq_standard:choice",
         "index:3": 0,
-        "rewards:9": {
+        "choices:9": {
           "0:10": {
             "ForgeCaps:10": {
               "astralsorcery:cap_item_amulet_holder:10": {}
             },
-            "id:8": "bq_standard:loot_chest",
+            "id:8": "forestry:digger_bag_t2",
             "Count:3": 1,
-            "Damage:2": 101,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "1:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "forestry:forester_bag_t2",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "2:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "forestry:hunter_bag_t2",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "3:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "forestry:builder_bag_t2",
+            "Count:3": 1,
+            "Damage:2": 0,
             "OreDict:8": ""
           }
         }
