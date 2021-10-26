@@ -21,6 +21,7 @@
 
       ,{"name": "contenttweaker:compressed_crushed_andesite","metadata": "0", "rewards": [{"name": "biomesoplenty:dried_sand","count": 9,"metadata": "0","chance": 1.0,"luck": 0.0}]}
       ,{"name": "contenttweaker:compressed_crushed_diorite" ,"metadata": "0", "rewards": [{"name": "biomesoplenty:white_sand","count": 9,"metadata": "0","chance": 1.0,"luck": 0.0}]}
+      ,{"name": "additionalcompression:charcoal_compressed" ,"metadata": "1", "rewards": [{"name": "advancedrocketry:misc"   ,"count": 9,"metadata": "1","chance": 1.0,"luck": 0.0}]}
     ],
     "example": {
       "__comment": "This example would allow Obsidian to be hammered into nine diamonds using a Compressed Hammer.",

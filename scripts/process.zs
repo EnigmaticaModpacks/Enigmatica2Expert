@@ -315,7 +315,13 @@ function beneficiate(
   # Crush Dust or Gem
   val dustOrGem = utils.getSomething(oreName, ["dust", "gem", "any"], amount);
   if (!isNull(dustOrGem)) {
-    val extraList = scripts.process_data.getExtras(oreName, ["dust", "gem"]);
+    var extraList = [] as IItemStack[];
+    if (!isNull(JA)) {
+      var cx as IItemStack = null;
+      cx = utils.getSomething(JA.extraName,       ["dust", "gem"]); if (!isNull(cx)) extraList += cx;
+      cx = utils.getSomething(JA.secondExtraName, ["dust", "gem"]); if (!isNull(cx)) extraList += cx;
+      cx = utils.getSomething(JA.thirdExtraName,  ["dust", "gem"]); if (!isNull(cx)) extraList += cx;
+    }
     crushEx(input, dustOrGem, exceptions ~ "macerator thermalCentrifuge crushingBlock", extraList, extraChances, {bonusType: "MULTIPLY_OUTPUT"});
   }
 

@@ -627,6 +627,10 @@ craft.make(<storagedrawers:upgrade_creative:1> * 2, ["pretty",
 	"▣ ◽ ◽ ☑ ⱋ ☑ ◽ ◽ ▣",
 	"χ ▣ ☠ ☠ ◊ ☠ ☠ ▣ χ"], list);
 
-recipes.addShapeless("Creative Storage Upgrade Duplication", 
+recipes.addHiddenShapeless("Creative Storage Upgrade Duplication", 
 <storagedrawers:upgrade_creative:1> * 2, 
 [<storagedrawers:upgrade_creative:1>]);
+
+# Add later
+recipes.remove(<twilightforest:uncrafting_table>);
+recipes.remove(<cyclicmagic:uncrafting_block>);

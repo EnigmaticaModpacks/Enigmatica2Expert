@@ -320,4 +320,4 @@ mods.enderio.CombustionGen.addFuel(<fluid:perfect_fuel>, 20000, 1500000);
 mods.thermalexpansion.MagmaticDynamo.addFuel(<fluid:perfect_fuel>, 2000000000);
 
 val PF = <fluid:perfect_fuel>;
-mods.nuclearcraft.fusion.addRecipe([PF * 1000, PF * 1000, PF * 1000, PF * 999, <fluid:helium> * 1000, <fluid:neutron> * 100, 2000.0d, 700000.0d, 1000000000.0d]);
+mods.nuclearcraft.fusion.addRecipe([PF * 1000, PF * 1000, PF * 1000, PF * 999, <fluid:flux_goo> * 1000, <fluid:blockfluidantimatter> * 1000, 2000.0d, 700000.0d, 1000000000.0d]);

@@ -396,12 +396,14 @@ remove(<ore:listAllicecream>, <harvestcraft:silkentofuitem>);
 # Clear "ore" entry from hunks
 # And remove hunks from JEI
 function removeHunkOre(item as IItemStack) {
+	var isRh = false;
   for ore in item.ores {
     if (ore.name.startsWith("ore") || ore.name.startsWith("hunk") ) {
       ore.remove(item);
-			utils.rh(item);
+			isRh = true;
     }
   }
+	if(isRh) utils.rh(item);
 }
 
 for item in loadedMods["exnihilocreatio"].items {
@@ -584,3 +586,13 @@ addItems(<ore:listAllseed>, [
 
 # Fix missed berry
 add(<ore:listAllberry>, <integrateddynamics:menril_berries>);
+
+# Pebbles to be replaceable with other ones
+remove(<ore:pebble>, <botania:manaresource:21>);
+addItems(<ore:pebble>, [
+	<cyclicmagic:stone_pebble>,
+	<exnihilocreatio:item_pebble>,
+	<exnihilocreatio:item_pebble:1>,
+	<exnihilocreatio:item_pebble:2>,
+	<exnihilocreatio:item_pebble:3>,
+]);

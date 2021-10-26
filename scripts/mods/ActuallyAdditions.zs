@@ -597,3 +597,9 @@ craft.remake(<actuallyadditions:block_furnace_solar> * 4, ["pretty",
   "⌂": <actuallyadditions:block_misc:7>, # Casing
 });
 
+# [Resonant Rice]*6 from [Ender Shard][+2]
+craft.reshapeless(<actuallyadditions:item_resonant_rice> * 6, "REg", {
+  "R": <actuallyadditions:item_food:16>, # Rice
+  "E": <extrautils2:endershard>,         # Ender Shard
+  "g": <ore:gunpowder>,                  # Gunpowder
+});

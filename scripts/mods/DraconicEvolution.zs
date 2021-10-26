@@ -65,17 +65,23 @@ import scripts.craft.grid.Grid;
 	recipes.remove(<draconicevolution:fusion_crafting_core>);
 	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe
 	(<draconicevolution:fusion_crafting_core>, 1000000000, 1000000, 
-	<extendedcrafting:crafting_core>, 
-	[<draconicevolution:draconic_core>, <draconicevolution:wyvern_energy_core>, 
-	<draconicevolution:wyvern_core>, <actuallyadditions:item_misc:19>, 
-	<minecraft:nether_star>, <ic2:crafting:4>, 
-	<plustic:mirionblock>, <plustic:osmiridiumblock>, <plustic:osgloglasblock>, 
-	<actuallyadditions:block_empowerer>, 
-	<nuclearcraft:fusion_core>, <environmentaltech:litherite>, 
-	<environmentaltech:erodium>, <environmentaltech:kyronite>, 
-	<environmentaltech:pladium>, <environmentaltech:ionite>, 
-	<environmentaltech:aethium>, <extendedcrafting:storage:3>,
-	<biomesoplenty:terrestrial_artifact>, <thermalexpansion:frame:148>]);
+	<extendedcrafting:crafting_core>, [
+		<draconicevolution:draconic_core>,
+		<draconicevolution:wyvern_energy_core>,
+		<draconicevolution:wyvern_core>,
+		<actuallyadditions:item_misc:19>,
+		<minecraft:nether_star>,
+		<ic2:crafting:4>,
+		<plustic:mirionblock>,
+		<plustic:osmiridiumblock>,
+		<plustic:osgloglasblock>,
+		<actuallyadditions:block_empowerer>,
+		<nuclearcraft:fusion_core>,
+		<environmentaltech:aethium>,
+		<extendedcrafting:storage:3>,
+		<biomesoplenty:terrestrial_artifact>,
+		<thermalexpansion:frame:148>
+	]);
 
 # Wyvern Energy Core
 	recipes.remove(<draconicevolution:wyvern_energy_core>);
@@ -112,9 +118,9 @@ craft.remake(<draconicevolution:dislocator>, ["pretty",
 # Draconium chest easier
 var dchest = <draconicevolution:draconium_chest>;
 var ingrds as IItemStack[] = [
-	<actuallyadditions:block_giant_chest_large>, 
-	<draconicevolution:draconium_block>, 
-	<actuallyadditions:block_giant_chest_large>, 
+	<actuallyadditions:block_giant_chest>,
+	<draconicevolution:draconium_block>,
+	<actuallyadditions:block_giant_chest>,
 	<draconicevolution:draconium_block>
 ] as IItemStack[];
 scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(dchest, 20000000, 2000000, <minecraft:chest>, ingrds as IIngredient[]);

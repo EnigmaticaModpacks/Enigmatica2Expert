@@ -149,5 +149,10 @@
     "fluidName": "honey",
     "input": "minecraft:hay_block",
     "output": "harvestcraft:beehive"
+  },
+  {
+    "fluidName": "crystal",
+    "input": "randomthings:ingredient:1",
+    "output": "endreborn:block_lormyte_crystal"
   }
 ]

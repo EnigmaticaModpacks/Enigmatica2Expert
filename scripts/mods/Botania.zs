@@ -1,7 +1,83 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.item.IIngredient as IIngredient;
 #modloaded botania
-	
+
+
+#----- Orechid progression -----#
+
+# Remove unused ORE
+mods.botania.Orechid.removeOre("oreYellorite");
+mods.botania.Orechid.removeOre("oreTungsten");
+
+# Remove orechid advanced ore (only leave basic ones)
+mods.botania.Orechid.removeOre("oreLead");
+mods.botania.Orechid.removeOre("oreTin");
+mods.botania.Orechid.removeOre("oreOsmium");
+mods.botania.Orechid.removeOre("oreSilver");
+mods.botania.Orechid.removeOre("oreQuartzBlack");
+mods.botania.Orechid.removeOre("oreCertusQuartz");
+mods.botania.Orechid.removeOre("oreAluminium");
+mods.botania.Orechid.removeOre("oreAluminum");
+mods.botania.Orechid.removeOre("oreGold");
+mods.botania.Orechid.removeOre("oreNickel");
+mods.botania.Orechid.removeOre("oreUranium");
+mods.botania.Orechid.removeOre("oreDiamond");
+mods.botania.Orechid.removeOre("oreTopaz");
+mods.botania.Orechid.removeOre("oreMalachite");
+mods.botania.Orechid.removeOre("oreTanzanite");
+mods.botania.Orechid.removeOre("oreRuby");
+mods.botania.Orechid.removeOre("orePeridot");
+mods.botania.Orechid.removeOre("oreSapphire");
+mods.botania.Orechid.removeOre("oreEmerald");
+mods.botania.Orechid.removeOre("orePlatinum");
+mods.botania.Orechid.removeOre("oreMithril");
+
+# Add Orechid Ingem ores
+mods.botania.OrechidIgnem.addOre("oreNetherChargedCertusQuartz", 800);
+mods.botania.OrechidIgnem.addOre("oreNetherEmerald", 800);
+
+
+#-------------------------------#
+# [Orechid] from [Mystical Red Petal][+7]
+mods.botania.Apothecary.removeRecipe("orechid");
+mods.botania.Apothecary.addRecipe("orechid", [
+	<ore:petalGray>,       # Mystical Gray Petal
+	<ore:petalYellow>,     # Mystical Yellow Petal
+	<ore:petalGreen>,      # Mystical Green Petal
+	<ore:petalRed>,        # Mystical Red Petal
+	<ore:quicksilver>,     # Quicksilver
+	<ore:redstoneRoot>,    # Redstone Root
+	<ore:nuggetBrass>,     # Alchemical Brass Nugget
+	<ore:nuggetManasteel>, # Manasteel Nugget
+]);
+
+# [Orechid Ignem] from [Rune of Autumn][+7]
+mods.botania.Apothecary.removeRecipe("orechidIgnem");
+mods.botania.Apothecary.addRecipe("orechidIgnem", [
+	<ore:petalRed>,         # Mystical Red Petal
+	<ore:petalWhite>,       # Mystical White Petal
+	<ore:petalPink>,        # Mystical Pink Petal
+	<ore:runeAutumnB>,      # Rune of Autumn
+	<ore:runeManaB>,        # Rune of Mana
+	<ore:redstoneRoot>,     # Redstone Root
+	<ore:nuggetThaumium>,   # Thaumium Nugget
+	<ore:nuggetTerrasteel>, # Terrasteel Nugget
+]);
+
+# [Orechid Vacuam] from [Rune of Pride][+7]
+mods.botania.Apothecary.removeRecipe("orechidVacuam");
+mods.botania.Apothecary.addRecipe("orechidVacuam", [
+	<ore:petalYellow>,    # Mystical Yellow Petal
+	<ore:petalPurple>,    # Mystical Purple Petal
+	<ore:petalBlack>,     # Mystical Black Petal
+	<ore:runePrideB>,     # Rune of Pride
+	<ore:runeGreedB>,     # Rune of Greed
+	<ore:redstoneRoot>,   # Redstone Root
+	<ore:nuggetVoid>,     # Void Metal Nugget
+	<ore:elvenPixieDust>, # Pixie Dust
+]);
+#-------------------------------#
+
 # Mana Pool
 	recipes.remove(<botania:pool>);
 	recipes.addShapedMirrored("Mana Pool", 
@@ -186,21 +262,6 @@ import crafttweaker.item.IIngredient as IIngredient;
 	recipes.addShapeless("Petal Duplication13", <botania:petal:13> * 4, [<botania:petal:13>, <ore:fertilizer>, <ore:fertilizer>, <ore:fertilizer>, <ore:fertilizer>]);
 	recipes.addShapeless("Petal Duplication14", <botania:petal:14> * 4, [<botania:petal:14>, <ore:fertilizer>, <ore:fertilizer>, <ore:fertilizer>, <ore:fertilizer>]);
 	recipes.addShapeless("Petal Duplication15", <botania:petal:15> * 4, [<botania:petal:15>, <ore:fertilizer>, <ore:fertilizer>, <ore:fertilizer>, <ore:fertilizer>]);
-
-# Remove unused ORE
-mods.botania.Orechid.removeOre("oreYellorite");
-mods.botania.Orechid.removeOre("oreTungsten");
-
-# Add missed ORE
-mods.botania.Orechid.addOre("oreThorium", 1285);
-mods.botania.Orechid.addOre("oreMagnesium", 1285);
-mods.botania.Orechid.addOre("oreLithium", 1285);
-mods.botania.Orechid.addOre("oreBoron", 1285);
-mods.botania.Orechid.addOre("oreProsperity", 900);
-
-# Add Orechid Ingem ores
-mods.botania.OrechidIgnem.addOre("oreNetherChargedCertusQuartz", 800);
-mods.botania.OrechidIgnem.addOre("oreNetherEmerald", 800);
 
 function remakeRune(rune as IItemStack, ingrList as IIngredient[], mana as int) {
 	mods.botania.RuneAltar.removeRecipe(rune.anyAmount());

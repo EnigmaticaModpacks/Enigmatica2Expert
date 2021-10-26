@@ -3,10 +3,15 @@ import crafttweaker.liquid.ILiquidStack;
 
 # Heavy mix lump
 recipes.remove(<mechanics:heavy_mesh> * 2);
-craft.shapeless(<mechanics:heavy_mesh> * 4, "CAABB", {
+craft.shapeless(<mechanics:heavy_mesh> * 4, "AACBB", {
   A: <ore:dustLead>,
   B: <ore:dustQuartzBlack>,
   C: <ore:bitumen>,
+});
+craft.shapeless(<mechanics:heavy_mesh> * 6, "AACBB", {
+  A: <ore:dustLead>,
+  B: <ore:dustQuartzBlack>,
+  C: <forestry:propolis:*>,
 });
 
 # Melting heavy metal

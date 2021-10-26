@@ -31,4 +31,21 @@
 	
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
-<Recipes useDefault="true"/>
+<Recipes useDefault="false">
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Magic centrifuge] -->
+	<Recipe timeRequired="20" power="100000">
+		<input>
+			<fluidStack>enrichedlava 1000</fluidStack>
+		</input>
+		<output>
+			<fluidStack>flux_goo 80</fluidStack>
+			<fluidStack>thaumium 60</fluidStack>
+			<fluidStack>livingrock 50</fluidStack>
+			<fluidStack>manasteel 45</fluidStack>
+			<fluidStack>bound_metal 15</fluidStack>
+			<fluidStack>terrasteel 2</fluidStack>
+			<fluidStack>elementium 1</fluidStack>
+		</output>
+	</Recipe>
+</Recipes>

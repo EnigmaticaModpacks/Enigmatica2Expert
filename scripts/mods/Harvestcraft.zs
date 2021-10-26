@@ -85,29 +85,26 @@ craft.remake(<harvestcraft:shippingbin>, ["pretty",
   "M": <extrautils2:magicapple>, # Magical Apple
 });
 
-
-
-# [Grinder] from [Framed Shelf][+3]
+# [Grinder] from [Stone Gear][+2]
 craft.remake(<harvestcraft:grinder>, ["pretty",
-  "D S D",
-  "D F D",
+  "D ¤ D",
+  "D ¤ D",
   "R R R"], {
-  "D": <tconstruct:materials:2>,           # Dried Brick
-  "S": <exnihilocreatio:block_axle_stone>, # Stone Axle
-  "F": <bibliocraft:shelf:6>,              # Framed Shelf
-  "R": <sonarcore:reinforceddirtbrick>,    # Reinforced Dirt Brick
+  "D": <tconstruct:materials:2>,        # Dried Brick
+  "¤": <ore:gearStone>,                 # Stone Gear
+  "R": <sonarcore:reinforceddirtbrick>, # Reinforced Dirt Brick
 });
 
-# [Presser] from [Framed Shelf][+3]
+# [Presser] from [Compressed Cobblestone][+2]
 craft.remake(<harvestcraft:presser>, ["pretty",
   "D ░ D",
-  "D F D",
+  "D   D",
   "R ░ R"], {
   "D": <tconstruct:materials:2>,        # Dried Brick
   "░": <ore:compressed1xCobblestone>,   # Compressed Cobblestone
-  "F": <bibliocraft:shelf:6>,           # Framed Shelf
   "R": <sonarcore:reinforceddirtbrick>, # Reinforced Dirt Brick
 });
+
 
 # [Water Filter] from [Reinforced Dirt Brick][+1]
 craft.remake(<harvestcraft:waterfilter>, ["pretty",

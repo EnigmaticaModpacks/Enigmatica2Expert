@@ -3,6 +3,9 @@ import crafttweaker.item.IIngredient;
 
 #modloaded randomthings
 
+# Nerf from 300
+furnace.setFuel(<randomthings:blockofsticks>, 80);
+
 # OpenBlocks Scaffolding / Random Things Block of Sticks
 	recipes.remove(<randomthings:blockofsticks>);
 	recipes.addShaped("Random Things Block of Sticks", 
@@ -86,10 +89,10 @@ recipes.addShaped(<randomthings:spectreanchor>, [
 # Spectre Ingot
 recipes.remove(<randomthings:ingredient:3>);
 recipes.addShapeless("Spectre Ingot Harder", <randomthings:ingredient:3>, [
-	<extrautils2:unstableingots:*>, 
+	<ore:ingotUnstable>,
 	<randomthings:ingredient:2>,
-	<thermalfoundation:material:134>, 
-	<forestry:phosphor>, 
+	<thermalfoundation:material:134>,
+	<forestry:phosphor>,
 ]);
 
 
@@ -129,15 +132,14 @@ craft.remake(<randomthings:beans:1>, ["pretty",
 	O: <ore:cropBean>,
 });
 
-# Player Interface (used Nether Star)
+# [Player Interface] from [Evil Tear][+2]
 craft.remake(<randomthings:playerinterface>, ["pretty",
-	"B A B",
-	"B O B",
-	"B C B"], {
-	A: <cyclicmagic:ender_eye_orb>,
-	C: <randomthings:ingredient:9>,
-	O: <enderstorage:ender_storage>,
-	B: <fluxnetworks:flux>,
+  "B E B",
+  "E v E",
+  "B E B"], {
+  "B": <randomthings:ingredient:13>, # Blackout Powder
+  "E": <randomthings:ingredient:2>,  # Ectoplasm
+  "v": <randomthings:ingredient:1>,  # Evil Tear
 });
 
 # Imbuer
@@ -190,6 +192,7 @@ var weatherIngrs = {
   "a": <ore:feather>,               # Feather
   "B": <ore:itemBeeswax>,           # Beeswax
   "C": <forestry:pollen:1>,         # Crystalline Pollen Cluster
+  "c": <mctsmelteryio:iceball>,
   "f": <minecraft:double_plant>,    # Poppy
   "l": <randomthings:ingredient:13>,# Blackout Powder
   "e": <ore:animaniaEggs>,
@@ -203,10 +206,15 @@ craft.remake(<randomthings:weatheregg> * 4, ["pretty",
 );
 
 # [Weather_Egg_<Rain>*2] from [Egg][+3]
-craft.remake(<randomthings:weatheregg:1> * 4, ["pretty",
+craft.remake(<randomthings:weatheregg:1> * 8, ["pretty",
   "B C B",
   "l e l",
   "B C B"], weatherIngrs
+);
+craft.make(<randomthings:weatheregg:1> * 4, ["pretty",
+  "B c B",
+  "l e l",
+  "B c B"], weatherIngrs
 );
 
 # [Weather_Egg_<Storm>*2] from [Egg][+3]
@@ -435,4 +443,14 @@ craft.remake(<randomthings:igniter>, ["pretty",
   "n": <ore:netherrack>,              # Netherrack
   "░": <ore:compressed1xCobblestone>, # Compressed Cobblestone
   "R": <randomthings:rainshield>,     # Rain Shield
+});
+
+# Harder (or not) Evil Tear
+recipes.remove(<randomthings:ingredient:1>);
+scripts.process.evaporate(<fluid:crystal> * 1000, <randomthings:ingredient:1>, "No Exceptions");
+
+# [Escape Rope] from [String][+1]
+craft.reshapeless(<randomthings:escaperope>, "▬s", {
+  "▬": <ore:ingotDemonicMetal>, # Demon Ingot
+  "s": <ore:string>,            # String
 });

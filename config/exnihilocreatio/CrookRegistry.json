@@ -83,8 +83,4 @@
     {"stack": {"name": "twilightforest:transformation_powder","meta": 0,"amount": 1},"chance": 0.01,"fortuneChance": 0.02},
     {"stack": {"name": "twilightforest:twilight_plant"       ,"meta": 7,"amount": 1},"chance": 0.08,"fortuneChance": 1.0}
   ]
-
-  ,"extrautils2:enderlilly": [
-    {"stack": {"name": "endreborn:item_raw_endorium","meta": 0,"amount": 1},"chance": 1.0 ,"fortuneChance": 1.0 }
-  ]
 }

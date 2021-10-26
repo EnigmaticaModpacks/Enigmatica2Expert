@@ -16,8 +16,6 @@ function remakeShapeless(name as string, output as IItemStack, grid as IIngredie
 }
 
 # Start of automatically generated recipes:
-remakeShaped("cyclicmagic:item.ender_eye_orb_1", <cyclicmagic:ender_eye_orb>, [[<minecraft:ender_eye>, <minecraft:ender_eye>, <minecraft:ender_eye>], [<minecraft:ender_eye>, B, <minecraft:ender_eye>], [<minecraft:ender_eye>, <minecraft:ender_eye>, <minecraft:ender_eye>]]);
-remakeShaped("cyclicmagic:tile.dehydrator_1", <cyclicmagic:dehydrator>, [[<ore:dustRedstone>, null, <ore:dustRedstone>], [<minecraft:clay:*>, B, <minecraft:clay:*>], [<ore:logWood>, <ore:logWood>, <ore:logWood>]]);
 remakeShaped("cyclicmagic:tile.fluid_drain_1", <cyclicmagic:fluid_drain>, [[<minecraft:piston:*>, <minecraft:dropper:*>, <minecraft:piston:*>], [<minecraft:gunpowder:*>, B, <minecraft:gunpowder:*>], [<minecraft:hardened_clay:*>, <minecraft:hardened_clay:*>, <minecraft:hardened_clay:*>]]);
 remakeShaped("draconicevolution:crafting_injector", <draconicevolution:crafting_injector>, [[<ore:gemDiamond>, <draconicevolution:draconic_core:*>, <ore:gemDiamond>], [<ore:stone>, B, <ore:stone>], [<ore:stone>, <ore:stone>, <ore:stone>]]);
 remakeShaped("environmentaltech:m_multiblocks/m_lightning/lightning_cont_1", <environmentaltech:lightning_cont_1>, [[<environmentaltech:interconnect>, <environmentaltech:lightning_rod_insulated>, <environmentaltech:interconnect>], [<ore:blockLitherite>, <environmentaltech:lightning_rod_insulated>, <ore:blockLitherite>], [<ore:blockLitherite>, B, <ore:blockLitherite>]]);

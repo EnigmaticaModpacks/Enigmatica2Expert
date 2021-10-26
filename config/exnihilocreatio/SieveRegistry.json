@@ -343,17 +343,17 @@
   ],
 
   "ore:prismarine": [
-    {"meshLevel": 1, "drop": {"name": "biomesoplenty:coral"    , "meta": 0} , "chance": 0.06},
-    {"meshLevel": 1, "drop": {"name": "biomesoplenty:coral"    , "meta": 1} , "chance": 0.06},
-    {"meshLevel": 1, "drop": {"name": "biomesoplenty:coral"    , "meta": 2} , "chance": 0.06},
-    {"meshLevel": 1, "drop": {"name": "biomesoplenty:coral"    , "meta": 3} , "chance": 0.06},
-    {"meshLevel": 1, "drop": {"name": "biomesoplenty:coral"    , "meta": 4} , "chance": 0.06},
-    {"meshLevel": 1, "drop": {"name": "biomesoplenty:seaweed"  , "meta": 0} , "chance": 0.06},
-    {"meshLevel": 1, "drop": {"name": "minecraft:waterlily"    , "meta": 0} , "chance": 0.06},
-    {"meshLevel": 1, "drop": {"name": "biomesoplenty:waterlily", "meta": 0} , "chance": 0.06},
-    {"meshLevel": 1, "drop": {"name": "biomesoplenty:waterlily", "meta": 1} , "chance": 0.06},
-    {"meshLevel": 1, "drop": {"name": "biomesoplenty:waterlily", "meta": 2} , "chance": 0.06},
-    {"meshLevel": 1, "drop": {"name": "biomesoplenty:waterlily", "meta": 3} , "chance": 0.06}
+    {"meshLevel": 1, "drop": {"name": "biomesoplenty:coral"    , "meta": 0} , "chance": 0.6},
+    {"meshLevel": 1, "drop": {"name": "biomesoplenty:coral"    , "meta": 1} , "chance": 0.6},
+    {"meshLevel": 1, "drop": {"name": "biomesoplenty:coral"    , "meta": 2} , "chance": 0.6},
+    {"meshLevel": 1, "drop": {"name": "biomesoplenty:coral"    , "meta": 3} , "chance": 0.6},
+    {"meshLevel": 1, "drop": {"name": "biomesoplenty:coral"    , "meta": 4} , "chance": 0.6},
+    {"meshLevel": 1, "drop": {"name": "biomesoplenty:seaweed"  , "meta": 0} , "chance": 0.6},
+    {"meshLevel": 1, "drop": {"name": "minecraft:waterlily"    , "meta": 0} , "chance": 0.6},
+    {"meshLevel": 1, "drop": {"name": "biomesoplenty:waterlily", "meta": 0} , "chance": 0.6},
+    {"meshLevel": 1, "drop": {"name": "biomesoplenty:waterlily", "meta": 1} , "chance": 0.6},
+    {"meshLevel": 1, "drop": {"name": "biomesoplenty:waterlily", "meta": 2} , "chance": 0.6},
+    {"meshLevel": 1, "drop": {"name": "biomesoplenty:waterlily", "meta": 3} , "chance": 0.6}
   ],
 
   "ore:treeLeaves": [

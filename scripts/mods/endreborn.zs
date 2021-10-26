@@ -229,3 +229,6 @@ craft.remake(<endreborn:block_end_stone_smooth> * 8, ["pretty",
 
 # Purpur guards are disables, so make Purpur Shards craftable
 mods.rustic.EvaporatingBasin.addRecipe(<endreborn:item_end_shard>, <liquid:liquidchorus> * 1000, 20*20);
+
+# [Endorium Nugget]*6 from [Ender Lilly][+1]
+scripts.category.expire_in_block.set(<extrautils2:enderlilly>, {"cyclicmagic:fire_dark" : <endreborn:item_raw_endorium> * 6});

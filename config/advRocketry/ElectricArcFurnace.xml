@@ -35,7 +35,7 @@
 			<itemStack>minecraft:coal 1 1</itemStack>
 		</input>
 		<output>
-			<itemStack>libvulpes:productingot 2 6</itemStack>
+			<oreDict>ingotSteel 2</oreDict>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="16" power="100000">
@@ -198,9 +198,9 @@
 	<!-- [Titanium Ingot] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
-			<itemStack>nuclearcraft:compound 1 7</itemStack>
-			<itemStack>mekanism:salt 4</itemStack>
-			<itemStack>ic2:crafting 1 15</itemStack>
+			<oreDict>dustBorax 1</oreDict>
+			<oreDict>itemSalt 4</oreDict>
+			<oreDict>plateCarbon 1</oreDict>
 		</input>
 		<output>
 			<itemStack>libvulpes:productingot 1 7</itemStack>

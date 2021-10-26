@@ -4,6 +4,10 @@ import scripts.craft.grid.Grid;
 
 #priority -1
 
+# Buff Elythra durability (was 432)
+<minecraft:elytra>.maxDamage = 1200;
+<colytra:elytra_bauble>.maxDamage = 1200;
+
 # Quark Marble Wall Oredicted version
 	recipes.remove(<quark:marble_wall>);
 	recipes.addShaped("Quark Marble Wall", 

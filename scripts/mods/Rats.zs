@@ -125,7 +125,7 @@ craft.remake(<rats:rat_upgrade_aristocrat>, ["pretty",
   "M R M",
   "S § S"], {
   "R": <rats:rat_upgrade_basic>, # Rat Upgrade: Basic
-  "S": <ore:coinGold>,
+  "S": <ore:ingotExhausting>,
   "T": <rats:top_hat>.anyDamage(),# Top Hat
   "§": <randomthings:slimecube>, # Slime Cube
   "M": <tconstruct:materials:19> # Mending Moss
@@ -220,45 +220,6 @@ furnace.addRecipe(<rats:rat_tube_white>, <mekanism:polyethene:1>);
 val compressed_D = <mekanism:compresseddiamond>;
 scripts.wrap.mekanism.enrichment.addRecipe(<rats:rat_diamond>, compressed_D);
 
-var allCoinsConversions as IItemStack[] = [
-    <jaopca:item_coinardite>,           <tconstruct:ingots:1>,
-    <jaopca:item_coinastralstarmetal>,  <astralsorcery:itemcraftingcomponent:1>,
-    <jaopca:item_coinboron>,            <nuclearcraft:ingot:5>,
-    <jaopca:item_coincobalt>,           <tconstruct:ingots>,
-    <jaopca:item_coindraconium>,        <draconicevolution:draconium_ingot>,
-    <jaopca:item_coinlithium>,          <nuclearcraft:ingot:6>,
-    <jaopca:item_coinmagnesium>,        <nuclearcraft:ingot:7>,
-    <jaopca:item_coinosmium>,           <mekanism:ingot:1>,
-    <jaopca:item_cointhorium>,          <nuclearcraft:ingot:3>,
-    <jaopca:item_cointitanium>,         <libvulpes:productingot:7>,
-    <jaopca:item_coinuranium>,          <immersiveengineering:metal:5>,
-    // <thermalfoundation:coin>,           <minecraft:iron_ingot>,
-    <thermalfoundation:coin:1>,         <minecraft:gold_ingot>,
-    <thermalfoundation:coin:64>,        <thermalfoundation:material:128>,
-    <thermalfoundation:coin:65>,        <thermalfoundation:material:129>,
-    <thermalfoundation:coin:66>,        <thermalfoundation:material:130>,
-    <thermalfoundation:coin:67>,        <thermalfoundation:material:131>,
-    <thermalfoundation:coin:68>,        <thermalfoundation:material:132>,
-    <thermalfoundation:coin:69>,        <thermalfoundation:material:133>,
-    <thermalfoundation:coin:70>,        <thermalfoundation:material:134>,
-    <thermalfoundation:coin:71>,        <thermalfoundation:material:135>,
-    <thermalfoundation:coin:72>,        <thermalfoundation:material:136>,
-    <thermalfoundation:coin:96>,        <thermalfoundation:material:160>,
-    <thermalfoundation:coin:97>,        <thermalfoundation:material:161>,
-    <thermalfoundation:coin:98>,        <thermalfoundation:material:162>,
-    <thermalfoundation:coin:99>,        <thermalfoundation:material:163>,
-    <thermalfoundation:coin:100>,       <thermalfoundation:material:164>,
-    <thermalfoundation:coin:101>,       <thermalfoundation:material:165>,
-    <thermalfoundation:coin:102>,       <thermalfoundation:material:166>,
-    <thermalfoundation:coin:103>,       <thermalfoundation:material:167>
-];
-
-var k as int = 0;
-while (k < allCoinsConversions.length) {
-  mods.rats.recipes.addGemcutterRatRecipe(allCoinsConversions[k+1], allCoinsConversions[k] * 4);
-  k += 2;
-}
-
 # Magic bean
 mods.rats.recipes.addChefRatRecipe(<randomthings:beans:1>, <randomthings:beans:2>);
 
@@ -300,6 +261,11 @@ recipes.addShaped("Ratlanean Flame", <rats:ratlantean_flame>, [
 	[null, <randomthings:ingredient:2>, null],
 	[<randomthings:ingredient:2>, <rats:raw_rat>, <randomthings:ingredient:2>],
 	[null, <forestry:crafting_material:1>, null]
+]);
+recipes.addShaped("Ratlanean Flame 2", <rats:ratlantean_flame>, [
+	[null, <randomthings:ingredient:2>, null],
+	[<randomthings:ingredient:2>, <rats:raw_rat>, <randomthings:ingredient:2>],
+	[null, <ore:ingotEndorium>, null]
 ]);
 
 # Psionic rat brain

@@ -91,7 +91,7 @@ for ingot in <ore:ingotGraphite>.items {
 	recipes.remove(<mekanism:jetpack>);
 	recipes.addShaped("Mekanism Jetpack", 
 	<mekanism:jetpack>, 
-	[[<ore:ingotSteel>, <minecraft:elytra>.anyDamage(), <ore:ingotSteel>],
+	[[<ore:ingotSteel>, <minecraft:web>, <ore:ingotSteel>],
 	[<ore:plateBronze>, <mekanism:gastank>, <ore:plateBronze>], 
 	[<ore:plateBronze>, <ore:circuitElite>, <ore:plateBronze>]]);
 

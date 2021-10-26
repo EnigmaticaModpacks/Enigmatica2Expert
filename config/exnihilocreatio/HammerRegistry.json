@@ -224,15 +224,6 @@
       "fortuneChance": 0.0
     }
   ],
-  "ore:blockCharcoal": [
-    {
-      "item": "advancedrocketry:misc:1",
-      "amount": 1,
-      "miningLevel": 1,
-      "chance": 1.0,
-      "fortuneChance": 0.0
-    }
-  ],
   "ore:crushedDiorite": [
     {
       "item": "biomesoplenty:white_sand:0",

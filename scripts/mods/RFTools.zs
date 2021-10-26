@@ -166,7 +166,7 @@ val powercellsIngrs = {
   "◙": <rftools:machine_frame>,      # Machine Frame
   "I": <rftools:infused_diamond>,    # Infused Diamond
   "i": <rftools:powercell_simple>,   # Simple Powercell
-  "ͼ": <cyclicmagic:glowing_chorus>, # Glowing Chorus Fruit
+  "ͼ": <integrateddynamics:logic_director>,
 } as IIngredient[string];
 
 recipes.remove(<rftools:powercell_simple>);
@@ -283,13 +283,12 @@ craft.remake(<rftools:elevator>, ["pretty",
   "M": <rftools:machine_base>,        # Machine Base
 });
 
-# [Storage Control Screen Module] from [Machine Frame][+2]
+# [Storage Control Screen Module] from [Infused Diamond][+1]
 recipes.removeByRecipeName("rftools:storage_control_module");
 craft.make(<rftools:storage_control_module>, ["pretty",
   "  A  ",
-  "A ◙ A",
-  "  d  "], {
-  "A": <xnet:antenna_dish>,                   # Antenna Dish
-  "◙": <rftools:machine_frame>,               # Machine Frame
-  "d": <endreborn:item_advanced_ender_pearl>, # Advanced Ender Pearl
+  "A I A",
+  "  A  "], {
+  "A": <xnet:antenna_dish>,       # Antenna Dish
+  "I": <rftools:infused_diamond>, # Infused Diamond
 });

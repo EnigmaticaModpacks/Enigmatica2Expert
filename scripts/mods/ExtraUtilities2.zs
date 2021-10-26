@@ -370,10 +370,10 @@ for item in [
 # Make Ferrous Trees better integrated
 furnace.remove(<*>, <extrautils2:ironwood_planks>);
 furnace.remove(<*>, <extrautils2:ironwood_planks:1>);
-scripts.wrap.tconstruct.Melting.addRecipe(<liquid:iron> *  32, <extrautils2:ironwood_log:0>);
-scripts.wrap.tconstruct.Melting.addRecipe(<liquid:iron> * 144, <extrautils2:ironwood_log:1>);
-scripts.wrap.tconstruct.Melting.addRecipe(<liquid:iron> *  16, <extrautils2:ironwood_planks:0>);
-scripts.wrap.tconstruct.Melting.addRecipe(<liquid:iron> *  80, <extrautils2:ironwood_planks:1>);
+scripts.process.melt(<extrautils2:ironwood_log:0>   , <liquid:iron> *  32, "No Exceptions");
+scripts.process.melt(<extrautils2:ironwood_log:1>   , <liquid:iron> * 144, "No Exceptions");
+scripts.process.melt(<extrautils2:ironwood_planks:0>, <liquid:iron> *  16, "No Exceptions");
+scripts.process.melt(<extrautils2:ironwood_planks:1>, <liquid:iron> *  80, "No Exceptions");
 scripts.wrap.tconstruct.Casting.addTableRecipe(<extrautils2:ironwood_sapling>, <ore:treeSapling>, <liquid:iron>, 576, true);
 
 # Rat diamond alt
@@ -392,9 +392,13 @@ craft.remake(<extrautils2:terraformer:9>, ["pretty",
 #- Biome Markers
 #-----------------------------------------------------------------------------------------------
 for biome, input in {
-	"minecraft:hell" : <ore:blockCobalt>,
-	"minecraft:sky"  : <endreborn:block_decorative_lormyte>,
-	"rats:ratlantis" : <rats:marbled_cheese_raw>,
+	"minecraft:hell"      : <ore:blockCobalt>,
+	"minecraft:sky"       : <endreborn:block_decorative_lormyte>,
+	"rats:ratlantis"      : <rats:marbled_cheese_raw>,
+	"minecraft:taiga"     : <minecraft:snow>,
+	"minecraft:swampland" : <twilightforest:twilight_log:2> | <biomesoplenty:log_1:6>,
+	"minecraft:ice_flats" : <biomesoplenty:hard_ice>,
+	"minecraft:desert"    : Bucket('sand'),
 } as IIngredient[string] {
 	recipes.addShapeless(<extrautils2:biomemarker>.withTag({Biome: biome}), [<extrautils2:biomemarker>, input]);
 }

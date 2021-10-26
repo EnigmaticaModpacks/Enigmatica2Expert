@@ -358,15 +358,15 @@ craft.remake(<enderio:item_fluid_filter>, ["pretty",
 });
 
 # [Omnivoir] from [Black Quartz][+1]
-craft.remake(<enderio:block_omni_reservoir> * 4, ["pretty",
+craft.remake(<enderio:block_omni_reservoir>, ["pretty",
   "⌃ S",
   "S ⌃"], {
-  "⌃": <ore:blockQuartzBlack>,     # Black Quartz
-  "S": <tconstruct:seared_tank:1>, # Seared Gauge
+  "⌃": <ore:gemQuartzBlack>,
+  "S": <tconstruct:materials>,
 });
 
 # Omnivoir fast alt
-scripts.process.alloy([<ore:blockQuartzBlack>], <enderio:block_omni_reservoir> * 2, "only: alloySmelter");
+scripts.process.alloy([<ore:gemQuartzBlack> * 2], <enderio:block_omni_reservoir>, "only: alloySmelter");
 
 # [Energy Gauge] from [Omnivoir][+2]
 craft.remake(<enderio:block_gauge>, ["pretty",
@@ -379,7 +379,7 @@ craft.remake(<enderio:block_gauge>, ["pretty",
 
 # [Endervoir] from [Molten Lapis]
 recipes.remove(<enderio:block_reservoir>);
-scripts.wrap.tconstruct.Casting.addBasinRecipe(<enderio:block_reservoir>, <enderio:block_omni_reservoir>, <liquid:lapis>, 666 * 18);
+scripts.wrap.tconstruct.Casting.addBasinRecipe(<enderio:block_reservoir>, <enderio:block_omni_reservoir>, <liquid:lapis>, 666 * 9);
 
 # [Black Paper]*8 from [Ink Sac][+1]
 craft.remake(<enderio:item_material:77> * 8, ["pretty",
@@ -438,7 +438,7 @@ mods.rt.RandomThingsTweaker.addImbuingRecipe(
 	<forestry:refractory_wax>, # Refractory Wax
 	<actuallyadditions:item_misc:21>, # Biomass
 	<actuallyadditions:item_dust:7>, # Crushed Black Quartz
-	<forestry:decaying_wheat>, # Decaying Wheat
+	<forestry:mulch>,
 	<enderio:item_material:49>
 );
 
@@ -605,3 +605,6 @@ for block, result in {
 	}
 }
 
+# [Enhanced Dye Blend] from [Grains of Piezallity][+1]
+recipes.remove(<enderio:item_material:67>);
+scripts.category.expire_in_block.setEx(<ore:itemPulsatingPowder>, {"enderio:block_cold_fire" : <enderio:item_material:67>}, <enderio:item_cold_fire_igniter>.withTag({"enderio:famount": 1000}));

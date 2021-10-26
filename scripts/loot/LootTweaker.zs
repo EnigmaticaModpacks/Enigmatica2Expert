@@ -86,4 +86,7 @@ LootTweaker.getTable("minecraft:entities/zombie_pigman").getPool("main")
 
 # Vex
 LootTweaker.getTable("minecraft:entities/vex").getPool("main")
-.addItemEntry(<deepmoblearning:living_matter_overworldian>, 1, 0, [Functions.lootingEnchantBonus(0, 1, 0), Functions.setCount(0, 1)], [Conditions.killedByPlayer()]);
+.addItemEntryHelper(<deepmoblearning:living_matter_overworldian>, 1, 0, [Functions.lootingEnchantBonus(0, 1, 0), Functions.setCount(0, 1)], [Conditions.killedByPlayer()]);
+
+# Chronologist
+<entity:endreborn:chronologist>.addPlayerOnlyDrop(<deepmoblearning:living_matter_extraterrestrial>, 1, 2);

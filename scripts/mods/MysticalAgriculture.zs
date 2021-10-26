@@ -230,7 +230,7 @@ addTieredRecipe(<mysticalagriculture:iron_seeds> ,          [<ore:blockFakeIron>
 addTieredRecipe(<mysticalagriculture:lead_seeds> ,          [<ore:blockLead> , <ore:runeWinterB>], null);
 addTieredRecipe(<mysticalagriculture:silver_seeds> ,        [<ore:blockSilver> ,<ore:runeSpringB>], null);
 addTieredRecipe(<mysticalagriculture:knightslime_seeds> ,   [<ore:blockKnightslime> ,<ore:runeWinterB>], null);
-addTieredRecipe(<mysticalagriculture:steeleaf_seeds> ,      [<twilightforest:block_storage:2>, <ore:runeSpringB>] , null);
+addTieredRecipe(<mysticalagriculture:steeleaf_seeds> ,      [<ore:blockSteel>, <ore:runeSpringB>] , null);
 addTieredRecipe(<mysticalagriculture:ironwood_seeds> ,      [<twilightforest:block_storage>, <ore:runeSummerB>] , null);
 addTieredRecipe(<mysticalagriculture:black_quartz_seeds> ,  [<ore:blockQuartzBlack> , <ore:runeAutumnB>], null);
 addTieredRecipe(itemUtils.getItem("mysticalcreations:cheese_seeds"), [<ore:cheeseWheels> ,<ore:runeSpringB>], null);

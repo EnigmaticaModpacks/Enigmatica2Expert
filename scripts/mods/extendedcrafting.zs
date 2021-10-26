@@ -100,19 +100,6 @@ import crafttweaker.item.IItemStack;
 	[blackIron, <extendedcrafting:storage>, blackIron]], 
 	40, <liquid:coal> * 1000);
 
-# Increasing the price of Lapis, Redstone, Coal & Glowstone Singularities
-	mods.extendedcrafting.CompressionCrafting.remove(<extendedcrafting:singularity>);
-	scripts.wrap.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity>, <minecraft:coal_block>, 10000, <extendedcrafting:material:12>, 1000000000, 1000000);
-
-	mods.extendedcrafting.CompressionCrafting.remove(<extendedcrafting:singularity:2>);
-	scripts.wrap.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity:2>, <minecraft:lapis_block>, 10000, <extendedcrafting:material:12>, 1000000000, 1000000);
-
-	mods.extendedcrafting.CompressionCrafting.remove(<extendedcrafting:singularity:3>);
-	scripts.wrap.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity:3>, <minecraft:redstone_block>, 10000, <extendedcrafting:material:12>, 1000000000, 1000000);
-
-	mods.extendedcrafting.CompressionCrafting.remove(<extendedcrafting:singularity:4>);
-	scripts.wrap.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity:4>, <minecraft:glowstone>, 10000, <extendedcrafting:material:12>, 1000000000, 1000000);
-
 # Luminiscence made in chemical reactor and drying basin
 recipes.removeByRecipeName("extendedcrafting:luminessence");
 scripts.process.evaporate(<fluid:liquid_sunshine> * 1000, <extendedcrafting:material:7> * 2, null);

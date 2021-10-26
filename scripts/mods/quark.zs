@@ -59,3 +59,6 @@ craft.make(<quark:backpack>, ["pretty",
   "J": <ore:stoneJasper>,     # Jasper
   "/": <quark:iron_rod>,      # Iron Rod
 });
+
+# Alt usage
+scripts.process.extract(<quark:glowcelium>, <thermalfoundation:material:2049>, "No Exceptions");

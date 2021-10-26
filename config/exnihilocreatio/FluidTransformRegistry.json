@@ -10,5 +10,23 @@
       "minecraft:brown_mushroom:0",
       "minecraft:red_mushroom:0"
     ]
+  },
+  {
+    "inputFluid": "menrilresin",
+    "outputFluid": "crystal",
+    "duration": 12000,
+    "transformingBlocks": [
+      "randomthings:spectreblock:0"
+    ],
+    "blocksToSpawn": [
+      "thaumcraft:crystal_aer:0",
+      "thaumcraft:crystal_aqua:0",
+      "thaumcraft:crystal_essence:0",
+      "thaumcraft:crystal_ignis:0",
+      "thaumcraft:crystal_ordo:0",
+      "thaumcraft:crystal_perditio:0",
+      "thaumcraft:crystal_terra:0",
+      "thaumcraft:crystal_vitium:0"
+    ]
   }
 ]

@@ -69,3 +69,21 @@ craft.remake(<openblocks:xp_drain>, ["pretty",
   "╱ ╱ ╱"], {
   "╱": <ore:stickAluminium>, # Aluminium Rod
 });
+
+
+# [Auto Anvil] from [Anvil][+2]
+craft.remake(<openblocks:auto_anvil>, ["pretty",
+  "▬ T ▬",
+  "▬ A ▬"], {
+  "▬": <ore:ingotFakeIron>, # Iron Alloy Ingot
+  "T": <openblocks:tank>, # Tank
+  "A": <minecraft:anvil>, # Anvil
+});
+
+# [XP Shower] from [Tempered Glass][+1]
+craft.remake(<openblocks:xp_shower>, ["pretty",
+  "▬ ▬ ▬",
+  "T    "], {
+  "▬": <ore:ingotFakeIron>, # Iron Alloy Ingot
+  "T": <cyclicmagic:glass_strong>, # Tempered Glass
+});

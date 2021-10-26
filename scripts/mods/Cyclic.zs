@@ -11,127 +11,25 @@ import crafttweaker.data.IData;
 # Removing Simple Block Miner
 	utils.rh(<cyclicmagic:block_miner>);
 
-# Redstone Clock
-	recipes.remove(<cyclicmagic:clock>);
-	recipes.addShapedMirrored("Cyclic Redstone Clock", 
-	<cyclicmagic:clock>, 
-	[[<ore:ingotFakeIron>, <ore:circuitAdvanced>, <ore:ingotFakeIron>],
-	[<ore:circuitBasic>, <extrautils2:redstoneclock>, <ore:circuitBasic>], 
-	[<ore:ingotFakeIron>, <ore:circuitAdvanced>, <ore:ingotFakeIron>]]);
-
-# [Fluid Storage Tank] from [Tank][+3]
-craft.remake(<cyclicmagic:block_storeempty>, ["pretty",
-  "□ ▬ □",
-  "п T п",
-  "□ ▬ □"], {
-  "□": <ore:plateAluminium>,  # Aluminum Plate
-  "T": <enderio:block_omni_reservoir>,     # Tank
-  "▬": <ore:ingotBrickSeared>,# Seared Brick
-  "п": <ore:plateCopper>,     # Copper Plate
+# [Redstone Clock] from [Ectoplasm][+2]
+craft.remake(<cyclicmagic:clock>, ["pretty",
+  "■ ♥ ■",
+  "♥ E ♥",
+  "■ ♥ ■"], {
+  "■": <ore:blockPearl>,                        # Pearl Block
+  "♥": <randomthings:advancedredstonetorch_on>, # Advanced Redstone Torch
+  "E": <randomthings:ingredient:2>,             # Ectoplasm
 });
 
-# Charms
-	recipes.remove(<cyclicmagic:charm_fire>);
-	recipes.addShapedMirrored("Fire Charm", 
-	<cyclicmagic:charm_fire>, 
-	[[<tconstruct:edible:34>, <minecraft:potion>.withTag({Potion: "minecraft:fire_resistance"}), <tconstruct:edible:34>],
-	[<ore:powderBlaze>, <extrautils2:goldenlasso:1>.withTag({Animal:{id:"minecraft:blaze"}}), <ore:powderBlaze>], 
-	[<tconstruct:edible:34>, <minecraft:potion>.withTag({Potion: "minecraft:fire_resistance"}), <tconstruct:edible:34>]]);
-
-	recipes.remove(<cyclicmagic:charm_water>);
-	recipes.addShapedMirrored("Water Charm", 
-	<cyclicmagic:charm_water>, 
-	[[<minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>],
-	[<mekanism:gastank>, <extrautils2:goldenlasso>.withTag({Animal:{id:"minecraft:squid"}}), <mekanism:gastank>], 
-	[<minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>]]);
-	
-	recipes.remove(<cyclicmagic:charm_antidote>);
-	recipes.addShapedMirrored("Antidote Charm", 
-	<cyclicmagic:charm_antidote>, 
-	[[<ore:listAllmilk>, <ore:listAllmilk>, <ore:listAllmilk>],
-	[<minecraft:poisonous_potato>, <extrautils2:goldenlasso:1>.withTag({Animal:{id:"minecraft:witch"}}), <minecraft:poisonous_potato>], 
-	[<ore:listAllmilk>, <ore:listAllmilk>, <ore:listAllmilk>]]);
-
-	recipes.remove(<cyclicmagic:charm_wing>);
-	recipes.addShapedMirrored("Wing Charm", 
-	<cyclicmagic:charm_wing>, 
-	[[<ore:feather>, <ore:feather>, <ore:feather>],
-	[<minecraft:rabbit_foot>, <extrautils2:goldenlasso>.withTag({Animal:{id:"minecraft:chicken"} }), <minecraft:rabbit_foot>], 
-	[<ore:feather>, <ore:feather>, <ore:feather>]]);
-	
 # Speed Charm + Elytra is too OP
 <cyclicmagic:charm_speed>.maxDamage = 100;
-# [Speed Charm] from [Golden Lasso][+3]
-craft.remake(<cyclicmagic:charm_speed>, ["pretty",
-  "A S A",
-  "H G H",
-  "A S A"], {
-  "A": <quark:glowshroom>, # Glowshroom
-  "S": <actuallyadditions:item_solidified_experience>, # Solidified Experience
-  "G": <extrautils2:goldenlasso>.withTag({Animal: {id: "minecraft:horse"}}), # Golden Lasso
-  "H": <ore:foodCake>,    # Holiday Cake
-});
 
-
-# Harvester
-	recipes.remove(<cyclicmagic:harvester_block>);
-	recipes.addShaped("Cyclic Harvester", 
-	<cyclicmagic:harvester_block>, 
-	[[<ore:gemEmerald>, <minecraft:dispenser>, <ore:gemEmerald>],
-	[<ore:gemQuartz>, <ic2:resource:13>, <ore:gemQuartz>], 
-	[<ore:obsidian>, <ore:obsidian>, <ore:obsidian>]]);
-
-# [Forester] from [Uncolossal Chest][+3]
-craft.remake(<cyclicmagic:block_forester>, ["pretty",
-  "▲ § ▲",
-  "# U #",
-  "# # #"], {
-  "▲": <ore:dustAsh>,                     # Ash
-  "§": <randomthings:slimecube>,          # Slime Cube
-  "#": <randomthings:spectreplank>,       # Spectre Planks
-  "U": <colossalchests:uncolossal_chest>, # Uncolossal Chest
-});
-
-# Diamond Anvil
-	recipes.remove(<cyclicmagic:block_anvil>);
-	recipes.addShaped("Diamond Anvil", 
-	<cyclicmagic:block_anvil>, 
-	[[<ore:gemDiamondRat>, <ore:plateDenseObsidian>, <ore:gemDiamondRat>],
-	[<ore:dustRedstone>, <actuallyadditions:block_item_repairer>, <ore:dustRedstone>], 
-	[<ore:blockFakeIron>, <ore:blockFakeIron>, <ore:blockFakeIron>]]);
-	
-# Explosionproof Cyclic Glass
-	recipes.remove(<cyclicmagic:glass_strong>);
-	recipes.addShaped("Cyclic Strong Glass", 
-	<cyclicmagic:glass_strong>*8, 
-	[[<extrautils2:decorativeglass:3>, <extrautils2:decorativeglass:3>, <extrautils2:decorativeglass:3>], 
-	[<extrautils2:decorativeglass:3>, <enderio:block_reinforced_obsidian>, <extrautils2:decorativeglass:3>], 
-	[<extrautils2:decorativeglass:3>, <extrautils2:decorativeglass:3>, <extrautils2:decorativeglass:3>]
-	]);
-	
-# Climbing Gloves
-remakeEx(<cyclicmagic:glove_climb>, [
-	[<rats:feral_rat_claw>, <rats:feral_rat_claw>, null],
-	[<rats:feral_rat_claw>, <ic2:misc_resource:4>, <harvestcraft:hardenedleatheritem>],
-	[null, <harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>]]);
-
-	
-# Scepters harder
-recipes.remove(<cyclicmagic:tool_swap_match>);
-recipes.remove(<cyclicmagic:tool_swap>);
-recipes.remove(<cyclicmagic:cyclic_wand_build>);
-recipes.addShaped(<cyclicmagic:tool_swap>, [[null, <ore:dustDimensional>, <appliedenergistics2:material:10>],[null, <redstonearsenal:material:192>, <ore:dustDimensional>], [<enderio:block_reinforced_obsidian>, null, null]]);
-recipes.addShaped(<cyclicmagic:tool_swap_match>, [[null, <ore:dustDimensional>, <randomthings:ingredient:9>],[null, <redstonearsenal:material:192>, <ore:dustDimensional>], [<enderio:block_reinforced_obsidian>, null, null]]);
-recipes.addShaped(<cyclicmagic:cyclic_wand_build>, [[null, <ore:dustDimensional>, <ore:gemDiamondRat>],[null, <redstonearsenal:material:192>, <ore:dustDimensional>], [<ore:blockBone>, null, null]]);
-
-
-remakeEx(<cyclicmagic:battery>, [
-	[<ore:clay>, <ore:blockRedstone>, <ore:clay>],
-	[<ore:blockRedstone>, <rats:charged_creeper_chunk>, <ore:blockRedstone>],
-	[<ore:clay>, <ore:blockRedstone>, <ore:clay>]]);
-
-# Clear tank
-recipes.addShapeless("Cyclic tank clear", <cyclicmagic:block_storeempty>, [<cyclicmagic:block_storeempty>]);
+# Lower durab of glowes (default is 6000)
+<cyclicmagic:glove_climb>.maxDamage = 3000;
+<cyclicmagic:charm_air>.maxDamage = 1000;
+<cyclicmagic:sword_weakness>.maxDamage = 150;
+<cyclicmagic:sword_slowness>.maxDamage = 150;
+<cyclicmagic:sword_ender>.maxDamage = 150;
 
 # Harder shears
 recipes.remove(<cyclicmagic:shears_obsidian>);
@@ -145,72 +43,24 @@ recipes.remove(<cyclicmagic:sleeping_mat>);
 recipes.addShapeless("Cyclic Sleep Mat", <cyclicmagic:sleeping_mat>, [
 	utils.tryCatch("travelersbackpack:sleeping_bag_bottom", <minecraft:rabbit_hide>), <ore:leather>]);
 
-# Lower durab of glowes (default is 6000)
-<cyclicmagic:glove_climb>.maxDamage = 3000;
-
 # [Void_Charm] from [Slime_Cube][+3]
 craft.remake(<cyclicmagic:charm_void>, ["pretty",
-  "▲ ◊ ▲",
-  "◊ § ◊",
-  "▲ ◊ ▲"], {
-  "▲": <ore:dustEnderEye>,          # Ender Eye Dust
+  "▲ § ▲",
+  "§ ◊ §",
+  "▲ § ▲"], {
+  "▲": <ore:dustEnderEye>,
   "§": <ore:dyePurple>,
   "◊": <ore:quicksilver>,
 });
 
-# [Sailor_Charm] from [Heart_Crystal_Shard][+2]
-craft.remake(<cyclicmagic:charm_boat>, ["pretty",
-  "A A A",
-  "b ☼ b",
-  "A A A"], {
-  "A": <ore:listAllsugar>,          # Sugar
-  "b": <ore:boat>,                  # Oak Boat
-  "☼": <scalinghealth:crystalshard> # Heart Crystal Shard
+# [Apple of Lofty Stature] from [Slime Cube][+1]
+craft.remake(<cyclicmagic:food_step>, ["pretty",
+  "  L  ",
+  "L § L",
+  "  L  "], {
+  "L": <cyclicmagic:apple_lapis>, # Lapis Apple
+  "§": <randomthings:slimecube>,  # Slime Cube
 });
-
-# ---------------- Animals
-
-# [Monster Ball*2] from [Heart Crystal Shard][+3]
-craft.remake(<cyclicmagic:magic_net> * 2, ["pretty",
-  "S G S",
-  "G ☼ G",
-  "C G C"], {
-  "C": <ore:nuggetCobalt>,           # Cobalt Nugget
-  "S": <minecraft:snowball>,         # Snowball
-  "G": <minecraft:tallgrass:*>,      # Grass
-  "☼": <scalinghealth:crystalshard>, # Heart Crystal Shard
-});
-
-# [Apple_of_Lofty_Stature] from [Mending_Moss][+2]
-craft.reshapeless(<cyclicmagic:food_step>, "PMr", {
-  "P": <ore:cropApple>,
-  "r": <randomthings:ingredient:9>, # Precious Emerald
-  "M": <tconstruct:materials:19>    # Mending Moss
-});
-
-# [Fan] from [Hamster_Wheel][+3]
-craft.remake(<cyclicmagic:fan>, ["pretty",
-  "  B  ",
-  "L H L",
-  "R R R"], {
-  "R": <extrautils2:decorativesolidwood>,# Magical Planks
-  "B": <randomthings:ingredient:13>,     # Blackout Powder
-  "H": <animania:block_hamster_wheel>,   # Hamster Wheel
-  "L": <rats:little_black_squash_balls>  # Little Black Squash Balls
-});
-
-# [Item Collector] from [Print_Press_Plate][+3]
-craft.remake(<cyclicmagic:block_vacuum>, ["pretty",
-  "R B R",
-  "R P R",
-  "R ▲ R"], {
-  "P": <bibliocraft:enchantedplate:*>,   # Print Press Plate
-  "R": <extrautils2:decorativesolidwood>,# Magical Planks
-  "▲": <ore:dustSkyStone>,               # Sky Stone Dust
-  "B": <randomthings:ingredient:13>      # Blackout Powder
-});
-
-
 
 # [Player_Launcher] from [Slimesling][+2]
 craft.remake(<cyclicmagic:tool_launcher>, ["pretty",
@@ -249,197 +99,34 @@ craft.reshapeless(<cyclicmagic:ender_pearl_mounted>, "W▲▬◊", {
   "◊": <ore:gemLapis>,           # Lapis Lazuli
 });
 
-
-craft.remake(<cyclicmagic:sprout_seed> * 4, ["pretty",
-  "1 2 3",
-  "R F R",
-  "4 5 6"], {
-  "R": <forestry:refractory_wax>,     # Refractory Wax
-  "F": <randomthings:fertilizeddirt>, # Fertilized Dirt
-  "W": <ore:listAllseed>,             # Seeds
-  "1": <exnihilocreatio:item_seed_spruce>,
-  "2": <exnihilocreatio:item_seed_acacia>,
-  "3": <exnihilocreatio:item_seed_birch>,
-  "4": <exnihilocreatio:item_seed_darkoak>,
-  "5": <exnihilocreatio:item_seed_oak>,
-  "6": <exnihilocreatio:item_seed_jungle>,
+# [Crystallized Amber] from [Chorus Glass][+3]
+craft.remake(<cyclicmagic:crystallized_amber>, ["pretty",
+  "M W",
+  "■ C"], {
+  "M": <tconstruct:materials:19>,          # Mending Moss
+  "W": <randomthings:weatheregg>,          # Weather Egg <Sun>
+  "■": <ore:blockAmber>,                   # Amber Block
+  "C": <integratedterminals:chorus_glass>, # Chorus Glass
 });
 
-# [Crystallized_Obsidian*2] from [Weather_Egg_<Rain>][+3]
-craft.remake(<cyclicmagic:crystallized_obsidian> * 2, ["pretty",
-  "  M  ",
-  "□ W □",
-  "C C C"], {
-  "□": <integratedterminals:chorus_glass>,
-  "C": <biomesoplenty:crystal>,     # Crystallized Obsidian
-  "W": <randomthings:weatheregg:1>, # Weather Egg <Rain>
-  "M": <tconstruct:materials:19>,   # Mending Moss
+# [Crystallized Obsidian] from [Chorus Glass][+3]
+craft.remake(<cyclicmagic:crystallized_obsidian>, ["pretty",
+  "M W",
+  "C h"], {
+  "M": <tconstruct:materials:19>,          # Mending Moss
+  "W": <randomthings:weatheregg:1>,        # Weather Egg <Rain>
+  "C": <biomesoplenty:crystal>,            # Crystallized Obsidian
+  "h": <integratedterminals:chorus_glass>, # Chorus Glass
 });
 
-# [Crystallized_Amber*2] from [Weather_Egg_<Sun>][+3]
-craft.remake(<cyclicmagic:crystallized_amber> * 2, ["pretty",
-  "  M  ",
-  "◘ W ◘",
-  "□ □ □"], {
-  "□": <ore:blockAmber>,          # Block of Amber
-  "W": <randomthings:weatheregg>, # Weather Egg <Sun>
-  "◘": <integratedterminals:chorus_glass>,
-  "M": <tconstruct:materials:19>  # Mending Moss
-});
-
-
-# [Automated_User] from [Weather_Egg_<Storm>][+3]
-craft.remake(<cyclicmagic:block_user>, ["pretty",
-  "  ◊  ",
-  "C W C",
-  "# # #"], {
-  "#": <randomthings:spectrelog>,
-  "C": <rats:charged_creeper_chunk>, # Charged Creeper Chunk
-  "W": <randomthings:weatheregg:2>,  # Weather Egg <Storm>
-  "◊": <ore:gemPearl>                # Shulker Pearl
-});
-
-# [Sprinkler*2] from [Fertilized_Dirt][+3]
-craft.remake(<cyclicmagic:sprinkler> * 2, ["pretty",
-  "A A A",
-  "  F  ",
-  "M t M"], {
-  "A": <ore:listAllwater>,                    # Water Bucket
-  "t": <contenttweaker:conglomerate_of_coal>,
-  "F": <randomthings:fertilizeddirt>,         # Fertilized Dirt
-  "M": <extrautils2:decorativesolidwood>,     # Magical Planks
-});
-
-
-# [Pharos_Beacon] from [Spectre_Illuminator][+3]
-craft.remake(<cyclicmagic:beacon_potion>, ["pretty",
-  "□ B □",
-  "□ S □",
-  "▬ ▬ ▬"], {
-  "□": <ore:fusedQuartz>,
-  "B": <biomesoplenty:jar_filled:1>,      # Blue Fire Jar
-  "S": <randomthings:spectreilluminator>, # Spectre Illuminator
-  "▬": <ore:ingotPulsatingIron>           # Pulsating Iron Ingot
-});
-
-# [Air_Charm] from [Ender_Orb][+3]
-<cyclicmagic:charm_air>.maxDamage = 1000;
-craft.remake(<cyclicmagic:charm_air>, ["pretty",
-  "B I B",
-  "G E G",
-  "B I B"], {
-  "B": <actuallyadditions:item_misc:15>, # Bat's Wing
-  "E": <cyclicmagic:ender_pearl_reuse>.anyDamage(),  # Ender Orb
-  "G": utils.tryCatch("openblocks:generic", <enderio:item_material:6>), # Glider Wing
-  "I": <twilightforest:ice_bomb>         # Ice Bomb
-});
-
-
-# [auto_crafter] from [Conglomerate_Of_Sun][+4]
-craft.remake(<cyclicmagic:auto_crafter>, ["pretty",
-  "s B s",
-  "E C E",
-  "▬ ▬ ▬"], {
-  "B": <biomesoplenty:jar_filled:1>,         # Blue Fire Jar
-  "s": <quark:slime_bucket>,
-  "C": <contenttweaker:conglomerate_of_sun>, # Conglomerate Of Sun
-  "E": <contenttweaker:empowered_phosphor>,  # Empowered Phosphor
-  "▬": <ore:ingotBlackIron>                  # Black Iron Ingot
-});
-
-
-
-# [Empty_Heart_Container] from [Conglomerate_Of_Life][+2]
+# [Empty Heart Container] from [Conglomerate_Of_Life][+2]
 craft.remake(<cyclicmagic:heart_toxic>, ["pretty",
   "☼ S ☼",
   "☼ C ☼",
   "☼ ☼ ☼"], {
   "S": <iceandfire:siren_tear>,               # Siren Tear
   "C": <contenttweaker:conglomerate_of_life>, # Conglomerate Of Life
-  "☼": <scalinghealth:crystalshard>           # Heart Crystal Shard
-});
-
-# [Corrupted_Chorus_Fruit*4] from [Fermented_Spider_Eye][+3]
-craft.remake(<cyclicmagic:corrupted_chorus> * 4, ["pretty",
-  "P S P",
-  "C F C",
-  "P S P"], {
-  "P": <minecraft:chorus_fruit>,
-  "C": <ore:fruitForestry>,             # Cherry
-  "S": <rats:string_cheese>,            # String Cheese
-  "F": <minecraft:fermented_spider_eye>,# Fermented Spider Eye
-});
-
-# [Glowing_Chorus_Fruit] from [Crystallized_Obsidian_Bucket][+1]
-recipes.remove(<cyclicmagic:glowing_chorus> * 8);
-scripts.wrap.inworldcrafting.FluidToItem.transform(<cyclicmagic:glowing_chorus>, <fluid:flux_goo>, [<cyclicmagic:corrupted_chorus>]);
-
-# [Ender_Wing] from [Golden_Egg][+4]
-craft.remake(<cyclicmagic:tool_warp_spawn>, ["pretty",
-  "  f B",
-  "▬ G f",
-  "P ▬  "], {
-  "P": <forestry:crafting_material:1>,      # Pulsating Mesh
-  "B": <actuallyadditions:item_hairy_ball>, # Ball of Fur
-  "f": <ore:peacockFeathers>,
-  "G": <randomthings:ingredient:11>,        # Golden Egg
-  "▬": <ore:ingotGold>                      # Gold Ingot
-});
-
-# [Ender_Wing_Prime] from [Golden_Egg][+4]
-craft.remake(<cyclicmagic:tool_warp_home>, ["pretty",
-  "  f S",
-  "▬ G f",
-  "P ▬  "], {
-  "P": <forestry:crafting_material:1>, # Pulsating Mesh
-  "S": <rats:string_cheese>,           # String Cheese
-  "f": <ore:peacockFeathers>,
-  "G": <randomthings:ingredient:11>,   # Golden Egg
-  "▬": <ore:ingotGold>                 # Gold Ingot
-});
-
-# [Automatic_Fishing_Net] from [Slime_Cube][+2]
-craft.remake(<cyclicmagic:block_fishing>, ["pretty",
-  "R W R",
-  "W § W",
-  "R W R"], {
-  "R": <ore:myrmexResin>,              # Desert Myrmex Resin Chunk
-  "W": <forestry:crafting_material:3>, # Woven Silk
-  "§": <randomthings:slimecube>        # Slime Cube
-});
-
-# [Fire_Starter] from [Crystallized_Amber][+4]
-craft.remake(<cyclicmagic:fire_starter>, ["pretty",
-  "R B R",
-  "▲ C ▲",
-  "R ☺ R"], {
-  "R": <forestry:refractory_wax>,            # Refractory Wax
-  "▲": <mechanics:fuel_dust_tiny>,           # Tiny Pile of Heavy Fuel Dust
-  "B": <biomesoplenty:jar_filled:1>,         # Blue Fire Jar
-  "C": <cyclicmagic:crystallized_amber>,     # Crystallized Amber
-  "☺": <contenttweaker:conglomerate_of_coal> # Conglomerate Of Coal
-});
-
-# [Hydrator] from [Ectoplasm][+3]
-craft.remake(<cyclicmagic:block_hydrator>, ["pretty",
-  "A B A",
-  "A E A",
-  "M M M"], {
-  "A": <ore:listAllwater>,               # Water Bucket
-  "B": <rats:little_black_squash_balls>, # Little Black Squash Balls
-  "E": <randomthings:ingredient:2>,      # Ectoplasm
-  "M": <extrautils2:decorativesolidwood> # Magical Planks
-});
-
-# [Solidifier] from [Ectoplasm][+3]
-craft.remake(<cyclicmagic:solidifier>, ["pretty",
-  "P B P",
-  "P E P",
-  "M M M"], {
-  "P": <ore:brickPeat>,                  # Peat
-  "B": <randomthings:ingredient:13>,     # Blackout Powder
-  "E": <randomthings:ingredient:2>,      # Ectoplasm
-  "M": <extrautils2:decorativesolidwood> # Magical Planks
+  "☼": <scalinghealth:heartdust>,             # Heart Dust
 });
 
 # ---------------------------------------------
@@ -497,7 +184,44 @@ val packagerList = [
 
   [<nuclearcraft:part:1>], [<ore:plateLead>.firstItem, <ic2:casing:4>, <ore:ingotGraphite>.firstItem * 2, <ore:ingotTough>.firstItem * 4, <minecraft:redstone> * 4],
   [<nuclearcraft:part>], [<ore:plateLead>.firstItem, <ic2:casing:4>, <ore:ingotGraphite>.firstItem * 2],
+
+
+  [<cyclicmagic:magic_net> * 4]   , [
+    <minecraft:snowball>,      # Snowball
+    <minecraft:tallgrass>,     # Grass
+    <scalinghealth:heartdust>, # Heart Dust
+  ],
+  [<cyclicmagic:ender_snow>]      , [
+    <extrautils2:decorativesolidwood>, # Magical Planks
+    <ore:stickStone>.firstItem,        # Stone Rod
+    <minecraft:snowball>,              # Snowball
+  ],
+  [<cyclicmagic:ender_blaze>]     , [
+    <extrautils2:decorativesolidwood>, # Magical Planks
+    <ore:stickStone>.firstItem,        # Stone Rod
+    <forestry:ash>,                    # Ash
+  ],
+  [<cyclicmagic:battery>]         , [
+    <rats:charged_creeper_chunk>, # Charged Creeper Chunk
+    <minecraft:redstone_block>,   # Block of Redstone
+    <ore:dustAsh>.firstItem * 4,  # Ash
+  ],
+  [<cyclicmagic:block_storeempty>], [
+    <thermalfoundation:material:324>,   # Aluminum Plate
+    <tconstruct:materials>,             # Seared Brick
+    <ore:gemQuartzBlack>.firstItem * 4, # Black Quartz
+    <thermalfoundation:material:320>,   # Copper Plate
+  ],
 ] as IItemStack[][];
+
+recipes.remove(<cyclicmagic:magic_net>);
+recipes.remove(<cyclicmagic:ender_snow>);
+recipes.remove(<cyclicmagic:ender_blaze>);
+recipes.remove(<cyclicmagic:battery>);
+recipes.remove(<cyclicmagic:block_storeempty>);
+
+# Clear tank
+recipes.addShapeless("Cyclic tank clear", <cyclicmagic:block_storeempty>, [<cyclicmagic:block_storeempty>]);
 
 for i, l in packagerList {
   if(i%2==0) continue;
@@ -533,6 +257,7 @@ for bit in <ore:bitumen>.items {
 }
 
 # Super lubricient ice
+recipes.remove(<randomthings:superlubricentice>);
 for it in <ore:slimeball>.items {
   Hydrator.addRecipe(<randomthings:superlubricentice> * 16, [it, <minecraft:ice>], 1000);
 }
@@ -554,6 +279,9 @@ for i in 0 .. 16 {
   Hydrator.removeShapedRecipe(itemUtils.getItem("minecraft:stained_hardened_clay", i));
 }
 
+
+Hydrator.removeShapedRecipe(<minecraft:wool>);
+
 /*
 
   🌢 Dehydrator
@@ -563,6 +291,18 @@ for i in 0 .. 16 {
 # Bug: Dehydrator always output only 100mb of water
 // Dehydrator.addRecipe(<ae2fc:fluid_drop>.withTag({Fluid: "water"}), <mysticalagriculture:water_essence>, 250);
 
+# Remove default useless concrete recipes
+for i in 0 .. 16 {
+  Dehydrator.removeShapedRecipe(<minecraft:concrete_powder>.definition.makeStack(i));
+}
+
+recipes.remove(<cyclicmagic:stone_pebble>);
+Dehydrator.addRecipe(<cyclicmagic:stone_pebble>, <biomesoplenty:mudball>, 100);
+
+# Fast dryed clay
+Dehydrator.addRecipe(<tconstruct:materials:2>, <minecraft:clay_ball> * 2, 100);
+Dehydrator.addRecipe(<tconstruct:dried_clay>, <minecraft:clay> * 2, 100);
+
 
 /*
 
@@ -570,42 +310,59 @@ for i in 0 .. 16 {
 
 */
 
+# Remove bugged recipe (Apple + Biomass => null)
+// Solidifier.removeShapedRecipe(null); # Cant remove sadly =(
 
+# Remake crystallized items to be bit harder
+Solidifier.removeShapedRecipe(<cyclicmagic:crystallized_amber>);
+Solidifier.addRecipe(<cyclicmagic:crystallized_amber>,    [<randomthings:weatheregg>], "amber", 1000);
+
+Solidifier.removeShapedRecipe(<cyclicmagic:crystallized_obsidian>);
+Solidifier.addRecipe(<cyclicmagic:crystallized_obsidian>, [<randomthings:weatheregg:1>], "crystal", 1000);
+
+Solidifier.addRecipe(<cyclicmagic:glowing_chorus>, [<cyclicmagic:corrupted_chorus>], "crystal", 1000);
+
+// Solidifier.addRecipe(<minecraft:clay>, [<minecraft:dirt>, <minecraft:dirt>], "water", 300);
+
+recipes.remove(<cyclicmagic:charm_antidote>); Solidifier.addRecipe(<cyclicmagic:charm_antidote>, [<ore:quicksilver>.firstItem], "poison"     , 1000);
+recipes.remove(<cyclicmagic:charm_water>   ); Solidifier.addRecipe(<cyclicmagic:charm_water>   , [<ore:quicksilver>.firstItem], "water"      , 1000);
+recipes.remove(<cyclicmagic:charm_boat>    ); Solidifier.addRecipe(<cyclicmagic:charm_boat>    , [<ore:quicksilver>.firstItem], "canolaoil"  , 1000);
+recipes.remove(<cyclicmagic:charm_fire>    ); Solidifier.addRecipe(<cyclicmagic:charm_fire>    , [<ore:quicksilver>.firstItem], "lava"       , 1000);
+recipes.remove(<cyclicmagic:charm_wing>    ); Solidifier.addRecipe(<cyclicmagic:charm_wing>    , [<ore:quicksilver>.firstItem], "knightslime", 1000);
+
+Solidifier.addRecipe(<forestry:oak_stick> * 2, [<ore:logWood>.firstItem * 2], "oliveoil", 100);
+Solidifier.addRecipe(<forestry:oak_stick> * 2, [<ore:logWood>.firstItem * 2], "seed.oil", 100);
 
 # ---------------------------------------------
 
-
-# [Sword_of_Atrophy] from [Crystal_Sword][+3]
+# [Sword of Atrophy] from [Iron Sword][+2]
 craft.remake(<cyclicmagic:sword_weakness>, ["pretty",
-  "    r",
-  "☺ ☼  ",
-  "C ☺  "], {
-  "r": <cyclicmagic:crystallized_amber>,    # Crystallized Amber
-  "C": <cyclicmagic:crystallized_obsidian>, # Crystallized Obsidian
-  "☺": <contenttweaker:blasted_coal>,       # Blasted Coal
-  "☼": <astralsorcery:itemcrystalsword>     # Crystal Sword
+  "    ◊",
+  "  I  ",
+  "T    "], {
+  "◊": <ore:gemPeridot>,                   # Peridot
+  "I": <minecraft:iron_sword>.anyDamage(), # Iron Sword
+  "T": <cyclicmagic:glass_strong>,         # Tempered Glass
 });
 
-# [Sword_of_Decay] from [Crystal_Sword][+3]
+# [Sword of Decay] from [Iron Sword][+2]
 craft.remake(<cyclicmagic:sword_slowness>, ["pretty",
-  "    E",
-  "☺ ☼  ",
-  "C ☺  "], {
-  "C": <cyclicmagic:crystallized_obsidian>, # Crystallized Obsidian
-  "E": <contenttweaker:empowered_phosphor>, # Empowered Phosphor
-  "☺": <contenttweaker:blasted_coal>,       # Blasted Coal
-  "☼": <astralsorcery:itemcrystalsword>     # Crystal Sword
+  "    ◊",
+  "  I  ",
+  "T    "], {
+  "◊": <ore:gemSapphire>,                  # Sapphire
+  "I": <minecraft:iron_sword>.anyDamage(), # Iron Sword
+  "T": <cyclicmagic:glass_strong>,         # Tempered Glass
 });
 
-# [Sword_of_Evasion] from [Crystal_Sword][+3]
+# [Sword of Evasion] from [Iron Sword][+2]
 craft.remake(<cyclicmagic:sword_ender>, ["pretty",
-  "    o",
-  "☺ ☼  ",
-  "C ☺  "], {
-  "C": <cyclicmagic:crystallized_obsidian>, # Crystallized Obsidian
-  "☺": <contenttweaker:blasted_coal>,       # Blasted Coal
-  "☼": <astralsorcery:itemcrystalsword>,    # Crystal Sword
-  "o": <cyclicmagic:corrupted_chorus>       # Corrupted Chorus Fruit
+  "    *",
+  "  I  ",
+  "T    "], {
+  "*": <biomesoplenty:crystal_shard>,      # Celestial Crystal Shard
+  "I": <minecraft:iron_sword>.anyDamage(), # Iron Sword
+  "T": <cyclicmagic:glass_strong>,         # Tempered Glass
 });
 
 # Fix color of conveyor (was purple)
@@ -619,39 +376,8 @@ craft.remake(<cyclicmagic:plate_push> * 8, ["pretty",
   "▬": <ore:ingotIron>, # Iron Ingot
 });
 
-# [Cobblestone] from [Pebble]
-craft.make(<minecraft:cobblestone>, ["pretty",
-  "r r r",
-  "r   r",
-  "r r r"], {
-  "r": <ore:rock> # Pebble
-});
-
-# Harder recipe to balance teleporting from caves
-# [Rod_of_Elevation] from [Escape_Rope][+3]
-craft.remake(<cyclicmagic:tool_elevate>, ["pretty",
-  "  ☼ M",
-  "  E ☼",
-  "╱    "], {
-  "╱": <ore:rodBlaze>,               # Blaze Rod
-  "E": <randomthings:escaperope>.anyDamage(), # Escape Rope
-  "☼": <scalinghealth:crystalshard>, # Heart Crystal Shard
-  "M": <tconstruct:materials:19>     # Mending Moss
-});
-
 # Remove because transcended by Conarm modifiers
 utils.rh(<cyclicmagic:glowing_helmet>);
-
-# [Water Candle] from [End Rod][+3]
-craft.remake(<cyclicmagic:water_candle>, ["pretty",
-  "  R  ",
-  "▲ / ▲",
-  "□ □ □"], {
-  "□": <minecraft:light_weighted_pressure_plate>, # Weighted Pressure Plate (Light)
-  "▲": <scalinghealth:heartdust>,                 # Heart Dust
-  "R": <rats:rat_lantern>,                        # Rat Lantern
-  "/": <minecraft:end_rod>,                       # End Rod
-});
 
 # [Experience Pylon] from [Mending Moss][+2]
 craft.remake(<cyclicmagic:exp_pylon>, ["pretty",
@@ -699,10 +425,418 @@ craft.remake(<cyclicmagic:apple_emerald>, ["pretty",
   "M": <extrautils2:magicapple>, # Magical Apple
 });
 
-# [Apple Sprout] from [Single Compressed Apples][+1]
-craft.remake(<cyclicmagic:apple>, [
-  "#",
-  "■"], {
-  "#": <ore:stickWood>, # Stick
-  "■": <ore:blockCropApple>, # Single Compressed Apples
+# [Apple Sprout] and some other items
+recipes.remove(<cyclicmagic:apple>);
+recipes.remove(<cyclicmagic:corrupted_chorus>);
+recipes.remove(<cyclicmagic:glowing_chorus>);
+scripts.category.tooltip_utils.desc.both(<cyclicmagic:apple>, "kill.slime.by.zombie");
+scripts.category.tooltip_utils.desc.both(<cyclicmagic:corrupted_chorus>, "kill.slime.by.enderman");
+scripts.loot.entity_kill_entity.add("minecraft:slime", "minecraft:zombie", <cyclicmagic:apple>);
+scripts.loot.entity_kill_entity.add("minecraft:slime", "minecraft:enderman", <cyclicmagic:corrupted_chorus>);
+
+# Craft in fire
+recipes.remove(<cyclicmagic:apple_lapis>);
+recipes.remove(<cyclicmagic:horse_upgrade_type>);
+scripts.category.expire_in_block.set(<ore:cropApple>,  {"cyclicmagic:fire_frost": <cyclicmagic:apple_lapis>});
+scripts.category.expire_in_block.set(<ore:cropCarrot>, {"cyclicmagic:fire_dark" : <cyclicmagic:horse_upgrade_type>});
+
+# [Dehydrator] from [Iron Rod][+2]
+craft.remake(<cyclicmagic:dehydrator>, ["pretty",
+  "c   c",
+  "c / c",
+  "# # #"], {
+  "c": <ore:clay>, # Clay
+  "/": <quark:iron_rod>, # Iron Rod
+  "#": <ore:plankWood>, # Oak Wood Planks
 });
+
+# [Magic Bean]*4 from [Pebble]*2[+7]
+craft.remake(<cyclicmagic:sprout_seed> * 4, ["pretty",
+  "● ○ ⌀",
+  "F r F",
+  "l s A"], {
+  "●": <exnihilocreatio:item_seed_oak>,     # Oak Seed
+  "○": <exnihilocreatio:item_seed_spruce>,  # Spruce Seed
+  "⌀": <exnihilocreatio:item_seed_birch>,   # Birch Seed
+  "F": <randomthings:fertilizeddirt>,       # Fertilized Dirt
+  "r": <cyclicmagic:stone_pebble>,          # Pebble
+  "l": <exnihilocreatio:item_seed_jungle>,  # Jungle Seed
+  "s": <exnihilocreatio:item_seed_acacia>,  # Acacia Seed
+  "A": <exnihilocreatio:item_seed_darkoak>, # Dark Oak Seed
+});
+
+# [Forester] from [Magical Planks][+3]
+craft.remake(<cyclicmagic:block_forester>, ["pretty",
+  "r M r",
+  "▲ M ▲",
+  "L L L"], {
+  "r": <cyclicmagic:stone_pebble>,        # Pebble
+  "M": <extrautils2:decorativesolidwood>, # Magical Planks
+  "▲": <ore:dustAsh>,                     # Ash
+  "L": <tconstruct:firewood>,             # Lavawood
+});
+
+# [Automatic Fishing Net] from [Pebble]*2[+2]
+craft.remake(<cyclicmagic:block_fishing>, ["pretty",
+  "M C M",
+  "C r C",
+  "M C M"], {
+  "M": <extrautils2:decorativesolidwood>, # Magical Planks
+  "C": <minecraft:web>,                   # Cobweb
+  "r": <cyclicmagic:stone_pebble>,        # Pebble
+});
+
+# [Antimatter Evaporator] from [Sponge][+2]
+craft.remake(<cyclicmagic:ender_water>, ["pretty",
+  "  ◊ ◊",
+  "r S ◊",
+  "S r  "], {
+  "◊": <ore:gemLapis>,            # Lapis Lazuli
+  "r": <cyclicmagic:stone_pebble>,# Pebble
+  "S": <openblocks:sponge>,       # Sponge
+});
+
+# [Water Spreader] from [Demon Ingot][+3]
+craft.remake(<cyclicmagic:water_spreader>, ["pretty",
+  "r ◊ r",
+  "  ▬  ",
+  "  ■  "], {
+  "r": <cyclicmagic:stone_pebble>, # Pebble
+  "◊": <ore:gemLapis>,             # Lapis Lazuli
+  "▬": <ore:ingotDemonicMetal>,    # Demon Ingot
+  "■": <ore:blockLapis>,           # Lapis Lazuli Block
+});
+
+# [Hydrator] from [Ectoplasm][+3]
+craft.remake(<cyclicmagic:block_hydrator>, ["pretty",
+  "A y A",
+  "A E A",
+  "M M M"], {
+  "A": <ore:listAllwater>,                # Fresh Water
+  "y": <endreborn:food_ender_flesh>,      # Mysical Flesh
+  "E": <randomthings:ingredient:2>,       # Ectoplasm
+  "M": <extrautils2:decorativesolidwood>, # Magical Planks
+});
+
+# [Tempered Glass]*6 from [Mysical Flesh][+2]
+craft.remake(<cyclicmagic:glass_strong> * 6, ["pretty",
+  "r F r",
+  "r M r",
+  "r r r"], {
+  "r": <cyclicmagic:stone_pebble>,   # Pebble
+  "F": <thermalexpansion:florb>.withTag({Fluid: "water"}), # Florb (Water)
+  "M": <endreborn:food_ender_flesh>, # Mysical Flesh
+});
+
+# [Fan] from [Tempered Glass][+1]
+craft.remake(<cyclicmagic:fan>, [
+  "H",
+  "T"], {
+  "H": <animania:block_hamster_wheel>, # Hamster Wheel
+  "T": <cyclicmagic:glass_strong>,     # Tempered Glass
+});
+
+# [Standard Exchange Scepter] from [Pure Certus Quartz Crystal][+2]
+craft.remake(<cyclicmagic:tool_swap>, ["pretty",
+  "  ▲ ⌃",
+  "  T ▲",
+  "T    "], {
+  "▲": <ore:dustDimensional>,      # Dimensional Blend
+  "⌃": <ore:crystalPureCertusQuartz>, # Pure Certus Quartz Crystal
+  "T": <cyclicmagic:glass_strong>, # Tempered Glass
+});
+
+# [Gentle Exchange Scepter] from [Precious Emerald][+2]
+craft.remake(<cyclicmagic:tool_swap_match>, ["pretty",
+  "  ▲ P",
+  "  T ▲",
+  "T    "], {
+  "▲": <ore:dustDimensional>,       # Dimensional Blend
+  "P": <randomthings:ingredient:9>, # Precious Emerald
+  "T": <cyclicmagic:glass_strong>,  # Tempered Glass
+});
+
+# [Rod of Elevation] from [Blaze Rod][+2]
+craft.remake(<cyclicmagic:tool_elevate>, ["pretty",
+  "    E",
+  "  /  ",
+  "T    "], {
+  "E": <randomthings:ingredient:2>,# Ectoplasm
+  "/": <ore:rodBlaze>,             # Blaze Rod
+  "T": <cyclicmagic:glass_strong>, # Tempered Glass
+});
+
+# [Enchanter] from [Tank][+4]
+craft.remake(<cyclicmagic:block_enchanter>, ["pretty",
+  "  L  ",
+  "S T S",
+  "■ E ■"], {
+  "L": <openblocks:luggage>.withTag({size: 54}), # Luggage
+  "S": <cyclicmagic:ender_eye_orb>,              # Solid Ender Eye
+  "T": <openblocks:tank>,                        # Tank
+  "■": <endreborn:block_decorative_lormyte>,     # Lormyte Block
+  "E": <minecraft:enchanting_table>,             # Enchantment Table
+});
+
+# [Magma Anvil] from [Luggage][+3]
+craft.remake(<cyclicmagic:block_anvil_magma>, ["pretty",
+  "■ ■ ■",
+  "  L  ",
+  "░ T ░"], {
+  "■": <ore:blockMagma>,                         # Magma Block
+  "L": <openblocks:luggage>.withTag({size: 54}), # Luggage
+  "░": <ore:cobblestone>,                        # Cobblestone
+  "T": <cyclicmagic:glass_strong>,               # Tempered Glass
+});
+
+# [Ender Wing Prime] from [Precious Emerald][+2]
+recipes.remove(<cyclicmagic:tool_warp_home>);
+craft.make(<cyclicmagic:tool_warp_home:16>, ["pretty",
+  "  f f",
+  "  P f",
+  "E    "], {
+  "f": <ore:peacockFeathers>,       # White Peacock Feather
+  "P": <randomthings:ingredient:9>, # Precious Emerald
+  "E": <randomthings:ingredient:1>, # Evil Tear
+});
+
+# [Ender Wing] from [Rat Diamond][+2]
+recipes.remove(<cyclicmagic:tool_warp_spawn>);
+craft.make(<cyclicmagic:tool_warp_spawn:16>, ["pretty",
+  "  f f",
+  "  ◊ f",
+  "E    "], {
+  "f": <ore:peacockFeathers>,       # White Peacock Feather
+  "◊": <ore:gemDiamondRat>,         # Rat Diamond
+  "E": <randomthings:ingredient:1>, # Evil Tear
+});
+
+# [Climbing Gloves] from [Evil Tear][+2]
+craft.remake(<cyclicmagic:glove_climb>, ["pretty",
+  "R R  ",
+  "R E l",
+  "  l l"], {
+  "R": <ore:itemResin>,             # Sticky Resin
+  "E": <randomthings:ingredient:1>, # Evil Tear
+  "l": <ore:leather>,               # Leather
+});
+
+# [Powered Diamond Anvil] from [Magma Anvil][+4]
+craft.remake(<cyclicmagic:block_anvil>, ["pretty",
+  "◊ E ◊",
+  "∩ M ∩",
+  "■ ■ ■"], {
+  "◊": <ore:gemDiamondRat>,             # Rat Diamond
+  "E": <randomthings:ingredient:1>,     # Evil Tear
+  "∩": <rats:charged_creeper_chunk>,    # Charged Creeper Chunk
+  "M": <cyclicmagic:block_anvil_magma>, # Magma Anvil
+  "■": <ore:blockFakeIron>,             # Iron Alloy Block
+});
+
+# [Solid Ender Eye] from [Eye of Ender][+1]
+recipes.remove(<cyclicmagic:ender_eye_orb>);
+craft.make(<cyclicmagic:ender_eye_orb:100>, ["pretty",
+  "‚ ‚ ‚",
+  "‚ E ‚",
+  "‚ ‚ ‚"], {
+  "‚": <ore:nuggetFakeIron>, # Iron Alloy Nugget
+  "E": <ore:pearlEnderEye>,  # Eye of Ender
+});
+
+# [Chaos Reaper] from [Solid Ender Eye][+2]
+craft.remake(<cyclicmagic:wand_hypno>, ["pretty",
+  "  G S",
+  "  T G",
+  "T    "], {
+  "G": <minecraft:golden_carrot>,   # Golden Carrot
+  "S": <cyclicmagic:ender_eye_orb>, # Solid Ender Eye
+  "T": <cyclicmagic:glass_strong>,  # Tempered Glass
+});
+
+# [Speed Charm] from [Evil Tear][+3]
+craft.remake(<cyclicmagic:charm_speed>, ["qͼ","SE"], {
+  "q": <ore:quicksilver>,             # Quicksilver
+  "ͼ": <cyclicmagic:corrupted_chorus>,# Corrupted Chorus Fruit
+  "S": <cyclicmagic:ender_eye_orb>,   # Solid Ender Eye
+  "E": <randomthings:ingredient:1>,   # Evil Tear
+});
+
+# [Auto Crafter] from [Corrupted Chorus Fruit][+2]
+craft.remake(<cyclicmagic:auto_crafter>, ["pretty",
+  "T E T",
+  "T ͼ T",
+  "T T T"], {
+  "T": <cyclicmagic:glass_strong>,     # Tempered Glass
+  "E": <randomthings:ingredient:1>,    # Evil Tear
+  "ͼ": <cyclicmagic:corrupted_chorus>, # Corrupted Chorus Fruit
+});
+
+# [Sprinkler] from [Mending Moss][+3]
+craft.remake(<cyclicmagic:sprinkler>, ["pretty",
+  "F ͼ F",
+  "e M e"], {
+  "F": <thermalexpansion:florb>.withTag({Fluid: "water"}), # Florb (Water)
+  "ͼ": <cyclicmagic:corrupted_chorus>, # Corrupted Chorus Fruit
+  "e": <randomthings:fertilizeddirt>,  # Fertilized Dirt
+  "M": <tconstruct:materials:19>,      # Mending Moss
+});
+
+# [Packager] from [Crafting Table][+2]
+craft.remake(<cyclicmagic:auto_packager>, ["pretty",
+  "◊ R ◊",
+  "R w R",
+  "◊ R ◊"], {
+  "◊": <ore:gemLapis>,       # Lapis Lazuli
+  "R": <rustic:wildberries>, # Wildberries
+  "w": <ore:workbench>,      # Crafting Table
+});
+
+# [Fire Starter] from [Enchanted Plate][+4]
+craft.remake(<cyclicmagic:fire_starter>, ["pretty",
+  "n D n",
+  "B □ B",
+  "L L L"], {
+  "n": <ore:netherrack>,                         # Netherrack
+  "D": <cyclicmagic:ender_blaze>.anyDamage(),    # Duskflame Hex
+  "B": <randomthings:ingredient:13>,             # Blackout Powder
+  "□": <bibliocraft:enchantedplate>.anyDamage(), # Enchanted Plate
+  "L": <tconstruct:firewood>,                    # Lavawood
+});
+
+# [Structure Builder] from [Battery][+3]
+craft.remake(<cyclicmagic:builder_block>, ["pretty",
+  "♥ ░ ♥",
+  "░ B ░",
+  "L L L"], {
+  "♥": <ore:blockRedstone>,           # Block of Redstone
+  "░": <ore:compressed1xCobblestone>, # Compressed Cobblestone
+  "B": <cyclicmagic:battery>,         # Battery
+  "L": <tconstruct:firewood>,         # Lavawood
+});
+
+# [Controlled Miner] from [Battery][+3]
+craft.remake(<cyclicmagic:block_miner_smart>, ["pretty",
+  "■ ░ ■",
+  "░ B ░",
+  "L L L"], {
+  "■": <ore:blockLapis>,              # Lapis Lazuli Block
+  "░": <ore:compressed1xCobblestone>, # Compressed Cobblestone
+  "B": <cyclicmagic:battery>,         # Battery
+  "L": <tconstruct:firewood>,         # Lavawood
+});
+
+# [Harvester] from [Battery][+4]
+craft.remake(<cyclicmagic:harvester_block>, ["pretty",
+  "P e P",
+  "M B M",
+  "L L L"], {
+  "P": <randomthings:ingredient:9>,       # Precious Emerald
+  "e": <ore:essence>,                     # Essence
+  "M": <extrautils2:decorativesolidwood>, # Magical Planks
+  "B": <cyclicmagic:battery>,             # Battery
+  "L": <tconstruct:firewood>,             # Lavawood
+});
+
+# [Engraved Thunder] from [Stone Rod][+3]
+craft.remake(<cyclicmagic:ender_lightning>, ["pretty",
+  "  ▬ ■",
+  "  / ▬",
+  "B    "], {
+  "▬": <ore:ingotDemonicMetal>, # Demon Ingot
+  "■": <ore:blockAmber>,        # Amber Block
+  "/": <ore:stickStone>,        # Stone Rod
+  "B": <cyclicmagic:battery>,   # Battery
+});
+
+# [Water Candle] from [Heart Dust][+2]
+craft.remake(<cyclicmagic:water_candle>, ["pretty",
+  "  ‚  ",
+  "  ▲  ",
+  "□ □ □"], {
+  "‚": <endreborn:item_raw_endorium>,             # Endorium Nugget
+  "▲": <scalinghealth:heartdust>,                 # Heart Dust
+  "□": <minecraft:light_weighted_pressure_plate>, # Weighted Pressure Plate (Light)
+});
+
+# [Ranged Building Scepter] from [Endorium Nugget][+1]
+craft.remake(<cyclicmagic:cyclic_wand_build>, ["pretty",
+  "    ‚",
+  "  T  ",
+  "T    "], {
+  "‚": <endreborn:item_raw_endorium>, # Endorium Nugget
+  "T": <cyclicmagic:glass_strong>,    # Tempered Glass
+});
+
+# [Item Collector] from [Lapis Apple][+2]
+craft.remake(<cyclicmagic:block_vacuum>, ["pretty",
+  "M L M",
+  "M ▲ M",
+  "M ▲ M"], {
+  "M": <extrautils2:decorativesolidwood>, # Magical Planks
+  "L": <cyclicmagic:apple_lapis>,         # Lapis Apple
+  "▲": <ore:dustSkyStone>,                # Sky Stone Dust
+});
+
+# [Solidifier] from [Endorium Nugget][+4]
+craft.remake(<cyclicmagic:solidifier>, ["pretty",
+  "F P F",
+  "■ ‚ ■",
+  "M M M"], {
+  "F": <cyclicmagic:block_storeempty>,    # Fluid Storage Tank
+  "P": <darkutils:ender_pearl_hopper>,    # Pearled Ender Hopper
+  "■": <ore:blockFakeIron>,               # Iron Alloy Block
+  "‚": <endreborn:item_raw_endorium>,     # Endorium Nugget
+  "M": <extrautils2:decorativesolidwood>, # Magical Planks
+});
+
+# [Automated User] from [Shulker Pearl][+3]
+craft.remake(<cyclicmagic:block_user>, ["pretty",
+  "  ͼ  ",
+  "# ◊ #",
+  "M M M"], {
+  "ͼ": <cyclicmagic:glowing_chorus>,      # Glowing Chorus Fruit
+  "#": <randomthings:spectrelog>,         # Spectre Wood
+  "◊": <ore:gemPearl>,                    # Shulker Pearl
+  "M": <extrautils2:decorativesolidwood>, # Magical Planks
+});
+
+# [Air Charm] from [Ender Wing][+3]
+craft.remake(<cyclicmagic:charm_air>, ["qͼ","IE"], {
+  "q": <ore:quicksilver>,                         # Quicksilver
+  "ͼ": <cyclicmagic:glowing_chorus>,              # Glowing Chorus Fruit
+  "I": <twilightforest:ice_bomb>,                 # Ice Bomb
+  "E": <cyclicmagic:tool_warp_spawn>.anyDamage(), # Ender Wing
+});
+
+# [Pharos Beacon] from [Spectre Illuminator][+3]
+craft.remake(<cyclicmagic:beacon_potion>, ["pretty",
+  "▬ ͼ ▬",
+  "▬ S ▬",
+  "- - -"], {
+  "▬": <ore:ingotSpectre>,                # Spectre Ingot
+  "ͼ": <cyclicmagic:glowing_chorus>,      # Glowing Chorus Fruit
+  "S": <randomthings:spectreilluminator>, # Spectre Illuminator
+  "-": <ore:ingotEndorium>,               # Endorium Ingot
+});
+
+# [Pattern Replicator] from [Battery][+2]
+craft.remake(<cyclicmagic:builder_pattern>, ["pretty",
+  "♥   ♥",
+  "◊ B ◊",
+  "♥   ♥"], {
+  "♥": <ore:blockRedstone>,   # Block of Redstone
+  "◊": <ore:gemDiamondRat>,   # Diamond
+  "B": <cyclicmagic:battery>, # Battery
+});
+
+# [Inventory Upgrade] from [Sugar Block][+3]
+craft.remake(<cyclicmagic:inventory_food>, ["pretty",
+  "e e e",
+  "▬ ■ ▬",
+  "C C C"], {
+  "e": <ore:essence>,       # Essence
+  "▬": <ore:ingotEndorium>, # Endorium Ingot
+  "■": <ore:blockSugar>,    # Sugar Block
+  "C": <ore:foodCake>,      # Cake
+});
+

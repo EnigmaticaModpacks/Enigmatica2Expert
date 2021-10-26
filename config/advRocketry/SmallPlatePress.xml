@@ -22,6 +22,36 @@
 <!-->
 <Recipes useDefault="false">
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Adaminite Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockAdaminite</oreDict>
+		</input>
+		<output>
+			<oreDict>plateAdaminite 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Aluminium Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockAluminium</oreDict>
+		</input>
+		<output>
+			<oreDict>plateAluminium 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Aluminium Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockSheetmetalAluminium</oreDict>
+		</input>
+		<output>
+			<oreDict>stickAluminium 3</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Aluminum Ore] -->
 	<Recipe timeRequired="0" power="0">
 		<input>
@@ -92,6 +122,46 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [BoundMetal Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockBoundMetal</oreDict>
+		</input>
+		<output>
+			<oreDict>plateBoundMetal 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Brass Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockBrass</oreDict>
+		</input>
+		<output>
+			<oreDict>plateBrass 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Bronze Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockBronze</oreDict>
+		</input>
+		<output>
+			<oreDict>plateBronze 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [ChaoticMetal Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockChaoticMetal</oreDict>
+		</input>
+		<output>
+			<oreDict>plateChaoticMetal 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Charged Certus Quartz Ore] -->
 	<Recipe timeRequired="0" power="0">
 		<input>
@@ -119,6 +189,36 @@
 		</input>
 		<output>
 			<oreDict>dustTinyBoron</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Constantan Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockConstantan</oreDict>
+		</input>
+		<output>
+			<oreDict>plateConstantan 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Copper Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockCopper</oreDict>
+		</input>
+		<output>
+			<oreDict>plateCopper 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Copper Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockSheetmetalCopper</oreDict>
+		</input>
+		<output>
+			<oreDict>stickCopper 3</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -162,6 +262,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [DraconicMetal Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockDraconicMetal</oreDict>
+		</input>
+		<output>
+			<oreDict>plateDraconicMetal 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Draconium Ore] -->
 	<Recipe timeRequired="0" power="0">
 		<input>
@@ -169,6 +279,26 @@
 		</input>
 		<output>
 			<oreDict>dustTinyAmethyst</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Electrum Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockElectrum</oreDict>
+		</input>
+		<output>
+			<oreDict>plateElectrum 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [ElectrumFlux Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockElectrumFlux</oreDict>
+		</input>
+		<output>
+			<oreDict>plateElectrumFlux 6</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -192,6 +322,56 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Enderium Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockEnderium</oreDict>
+		</input>
+		<output>
+			<oreDict>plateEnderium 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Energium Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockEnergium</oreDict>
+		</input>
+		<output>
+			<oreDict>plateEnergium 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [EssenceMetal Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockEssenceMetal</oreDict>
+		</input>
+		<output>
+			<oreDict>plateEssenceMetal 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [GelidEnderium Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockGelidEnderium</oreDict>
+		</input>
+		<output>
+			<oreDict>plateGelidEnderium 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Gold Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockGold</oreDict>
+		</input>
+		<output>
+			<oreDict>plateGold 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Gold Ore] -->
 	<Recipe timeRequired="0" power="0">
 		<input>
@@ -199,6 +379,36 @@
 		</input>
 		<output>
 			<oreDict>dustTinyMithril</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [HDPE Sticks] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<itemStack>mekanism:plasticblock 1 15</itemStack>
+		</input>
+		<output>
+			<oreDict>stickHDPE 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Invar Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockInvar</oreDict>
+		</input>
+		<output>
+			<oreDict>plateInvar 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Iridium Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockIridium</oreDict>
+		</input>
+		<output>
+			<oreDict>plateIridium 6</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -212,6 +422,26 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Iron Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockIron</oreDict>
+		</input>
+		<output>
+			<oreDict>plateIron 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Iron Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockSheetmetalIron</oreDict>
+		</input>
+		<output>
+			<oreDict>stickIron 3</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Iron Ore] -->
 	<Recipe timeRequired="0" power="0">
 		<input>
@@ -222,6 +452,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Lapis Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockLapis</oreDict>
+		</input>
+		<output>
+			<oreDict>plateLapis 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Lapis Lazuli Ore] -->
 	<Recipe timeRequired="0" power="0">
 		<input>
@@ -229,6 +469,16 @@
 		</input>
 		<output>
 			<oreDict>dustTinyDiamond</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Lead Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockLead</oreDict>
+		</input>
+		<output>
+			<oreDict>plateLead 6</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -249,6 +499,16 @@
 		</input>
 		<output>
 			<oreDict>dustTinyTopaz</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Lumium Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockLumium</oreDict>
+		</input>
+		<output>
+			<oreDict>plateLumium 6</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -282,6 +542,36 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Mithminite Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockMithminite</oreDict>
+		</input>
+		<output>
+			<oreDict>plateMithminite 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Mithril Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockMithril</oreDict>
+		</input>
+		<output>
+			<oreDict>plateMithril 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Mithrillium Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockMithrillium</oreDict>
+		</input>
+		<output>
+			<oreDict>plateMithrillium 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Nether Quartz Ore] -->
 	<Recipe timeRequired="0" power="0">
 		<input>
@@ -289,6 +579,16 @@
 		</input>
 		<output>
 			<oreDict>dustTinyAmethyst</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Nickel Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockNickel</oreDict>
+		</input>
+		<output>
+			<oreDict>plateNickel 6</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -322,6 +622,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Platinum Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockPlatinum</oreDict>
+		</input>
+		<output>
+			<oreDict>platePlatinum 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Platinum Ore] -->
 	<Recipe timeRequired="0" power="0">
 		<input>
@@ -329,6 +639,16 @@
 		</input>
 		<output>
 			<oreDict>dustTinyDraconium</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Primordial Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockPrimordial</oreDict>
+		</input>
+		<output>
+			<oreDict>platePrimordial 6</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -362,6 +682,36 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [SentientMetal Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockSentientMetal</oreDict>
+		</input>
+		<output>
+			<oreDict>plateSentientMetal 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Signalum Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockSignalum</oreDict>
+		</input>
+		<output>
+			<oreDict>plateSignalum 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Silver Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockSilver</oreDict>
+		</input>
+		<output>
+			<oreDict>plateSilver 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Silver Ore] -->
 	<Recipe timeRequired="0" power="0">
 		<input>
@@ -382,6 +732,36 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Steel Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockSheetmetalSteel</oreDict>
+		</input>
+		<output>
+			<oreDict>stickSteel 3</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Steel Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockSteel</oreDict>
+		</input>
+		<output>
+			<oreDict>plateSteel 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Stone Sticks] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>cobblestone</oreDict>
+		</input>
+		<output>
+			<oreDict>stickStone 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Tanzanite Ore] -->
 	<Recipe timeRequired="0" power="0">
 		<input>
@@ -389,6 +769,16 @@
 		</input>
 		<output>
 			<oreDict>dustTinyAmethyst</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Thaumium Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockThaumium</oreDict>
+		</input>
+		<output>
+			<oreDict>plateThaumium 6</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -402,6 +792,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Tin Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockTin</oreDict>
+		</input>
+		<output>
+			<oreDict>plateTin 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Tin Ore] -->
 	<Recipe timeRequired="0" power="0">
 		<input>
@@ -409,6 +809,36 @@
 		</input>
 		<output>
 			<oreDict>dustTinyCopper</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Titanium Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockTitanium</oreDict>
+		</input>
+		<output>
+			<oreDict>plateTitanium 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [TitaniumAluminide Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockTitaniumAluminide</oreDict>
+		</input>
+		<output>
+			<oreDict>plateTitaniumAluminide 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [TitaniumIridium Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockTitaniumIridium</oreDict>
+		</input>
+		<output>
+			<oreDict>plateTitaniumIridium 6</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -422,6 +852,26 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [TreatedWood Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>plankTreatedWood</oreDict>
+		</input>
+		<output>
+			<oreDict>stickTreatedWood 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Uranium Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockUranium</oreDict>
+		</input>
+		<output>
+			<oreDict>plateUranium 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Uranium Ore] -->
 	<Recipe timeRequired="0" power="0">
 		<input>
@@ -429,6 +879,46 @@
 		</input>
 		<output>
 			<oreDict>dustTinyThorium</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [UUMatter Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockUUMatter</oreDict>
+		</input>
+		<output>
+			<oreDict>plateUUMatter 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Void Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockVoid</oreDict>
+		</input>
+		<output>
+			<oreDict>plateVoid 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Wood Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>plankWood</oreDict>
+		</input>
+		<output>
+			<oreDict>stickWood 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [WyvernMetal Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockWyvernMetal</oreDict>
+		</input>
+		<output>
+			<oreDict>plateWyvernMetal 6</oreDict>
 		</output>
 	</Recipe>
 </Recipes>

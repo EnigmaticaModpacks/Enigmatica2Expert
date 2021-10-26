@@ -23,13 +23,13 @@ import mods.ic2.ScrapBox;
 
 	recipes.addShapedMirrored("IC2 Electric Jetpack", 
 	<ic2:jetpack_electric>, 
-	[[<ic2:casing:5>, <minecraft:elytra>.anyDamage(), <ic2:casing:5>],
+	[[<ic2:casing:5>, <minecraft:web>, <ic2:casing:5>],
 	[<ore:circuitAdvanced>, <ic2:batpack>.anyDamage(), <ore:circuitAdvanced>], 
 	[<ic2:casing:5>, null, <ic2:casing:5>]]);
 	
 	recipes.addShapedMirrored("IC2 Jetpack", 
 	<ic2:jetpack:27>, 
-	[[<ic2:casing:5>, <minecraft:elytra>.anyDamage(), <ic2:casing:5>],
+	[[<ic2:casing:5>, <minecraft:web>, <ic2:casing:5>],
 	[<ore:circuitAdvanced>, <ic2:te:29>, <ore:circuitAdvanced>], 
 	[<ic2:casing:5>, null, <ic2:casing:5>]]);
 

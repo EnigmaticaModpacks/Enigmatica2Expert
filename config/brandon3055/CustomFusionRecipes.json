@@ -150,9 +150,9 @@
     "energy": 5000000,
     "tier": 0,
     "ingredients": [
-      "actuallyadditions:block_giant_chest_large",
+      "actuallyadditions:block_giant_chest",
       "draconicevolution:draconium_block",
-      "actuallyadditions:block_giant_chest_large",
+      "actuallyadditions:block_giant_chest",
       "draconicevolution:draconium_block"
     ]
   },

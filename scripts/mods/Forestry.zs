@@ -234,3 +234,6 @@ craft.remake(<forestry:raintank>, ["pretty",
   "⌂": <ic2:casing:3>,# Iron Item Casing
   "#": <ore:logWood>, # Oak Log
 });
+
+# Pipete clearing
+recipes.addShapeless("Pipete clearing", <forestry:pipette>, [<forestry:pipette>]);

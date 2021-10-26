@@ -125,12 +125,23 @@ import scripts.craft.grid.Grid;
 	[pearlFluix, <mekanism:machineblock3>, pearlFluix], 
 	[<appliedenergistics2:quartz_vibrant_glass>, <ore:manaPearl>, <appliedenergistics2:quartz_vibrant_glass>]]);
 
+# [Blast resistant ME Drive] from [Disk Drive][+3]
+craft.remake(<aeadditions:hardmedrive>, ["pretty",
+  "▬ ▬ ▬",
+  "▬ : ▬",
+  "E ◙ E"], {
+  "▬": <ore:ingotRefinedObsidian>,        # Refined Obsidian Ingot
+  ":": <ore:oc:diskDrive>,                # Disk Drive
+  "E": <appliedenergistics2:material:24>, # Engineering Processor
+  "◙": <rftools:machine_frame>,           # Machine Frame
+});
+
 # [ME Drive] from [Disk Drive][+3]
 craft.remake(<appliedenergistics2:drive>, ["pretty",
   "A A A",
   "A : A",
   "E ◙ E"], {
-  "A": <ore:sheetAluminum>, # Aluminum Sheet
+  "A": <ore:sheetAluminum>, 							# Aluminum Sheet
   "E": <appliedenergistics2:material:24>, # Engineering Processor
   "◙": <rftools:machine_frame>,           # Machine Frame
   ":": <ore:oc:diskDrive>,                # Disk Drive

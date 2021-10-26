@@ -62,54 +62,8 @@ val disassemblable =
   | <tconstruct:shuriken:*>
 ;
 
-
-// Materials that has harvestLevelHead stat
-static materialWithHeadWhitelist as string[] = [
-/*Inject_js(
-_.chunk(
-config('dev/default_configs/tweakersconstruct.cfg')['stat tweaks']['Stat Tweaks']
-.map(l=>`"${l.match(/^([^:]+):.+/)[1]}",`)
-, 5)
-)*/
-"nagascale",       "steeleaf",         "fierymetal",      "knightmetal",       "electrical_steel",  
-"energetic_alloy", "vibrant_alloy",    "redstone_alloy",  "conductive_iron",   "pulsating_iron",    
-"dark_steel",      "soularium",        "end_steel",       "construction_alloy","stone",             
-"flint",           "cactus",           "bone",            "obsidian",          "prismarine",        
-"endstone",        "paper",            "sponge",          "firewood",          "iron",              
-"pigiron",         "knightslime",      "slime",           "blueslime",         "magmaslime",        
-"netherrack",      "cobalt",           "ardite",          "manyullyn",         "copper",            
-"bronze",          "lead",             "silver",          "electrum",          "steel",             
-"treatedwood",     "heavy",            "spectre",         "alpha_fur",         "dragonbone",        
-"desert_myrmex",   "jungle_myrmex",    "dragonsteel_fire","dragonsteel_ice",   "weezer",            
-"endorium",        "wolframium",       "xu_magical_wood", "xu_evil_metal",     "xu_enchanted_metal",
-"xu_demonic_metal","black_quartz",     "restonia_crystal","palis_crystal",     "diamantine_crystal",
-"void_crystal",    "emeraldic_crystal","enori_crystal",   "sunnarium",         "sky_stone",         
-"certus_quartz",   "fluix",            "fluix_steel",     "aquamarine",        "starmetal",         
-"crystal_matrix",  "neutronium",       "infinity_metal",  "bound_metal",       "sentient_metal",    
-"livingrock",      "livingwood",       "dreamwood",       "manasteel",         "terrasteel",        
-"elementium",      "draconium",        "wyvern_metal",    "draconic_metal",    "chaotic_metal",     
-"litherite",       "erodium",          "kyronite",        "pladium",           "ionite",            
-"aethium",         "lonsdaleite",      "mica",            "apatite",           "essence_metal",     
-"meat_metal",      "pink_slime",       "pink_metal",      "rubber",            "advanced_alloy",    
-"energetic_metal", "carbon_fiber",     "iridium",         "universal_metal",   "osmium",            
-"refined_obsidian","refined_glowstone","polyethylene",    "ghostwood",         "bloodwood",         
-"darkwood",        "fusewood",         "dark_matter",     "red_matter",        "fluxed_electrum",   
-"flux_crystal",    "gelid_enderium",   "gelid_gem",       "thaumium",          "void_metal",        
-"primal_metal",    "amber",            "tin",             "aluminium",         "nickel",            
-"platinum",        "invar",            "constantan",      "signalum",          "lumium",            
-"enderium",        "ma.prosperity",    "ma.soulium",      "ma.base_essence",   "ma.inferium",       
-"ma.prudentium",   "ma.intermedium",   "ma.superium",     "ma.supremium",      "boron",             
-"tough",           "hard_carbon",      "boron_nitride",   "thorium",           "uranium",           
-"magnesium",       "chocolate",        "alumite",         "sapphire",          "ruby",              
-"peridot",         "malachite_gem",    "topaz",           "tanzanite",         "amethyst",          
-"osgloglas",       "osmiridium",       "titanium",        "psimetal",          "psigem",            
-"cheese",          "plague_metal",     "mirion",          "emerald_plustic",   "wood",              
-
-/**/
-] as string[];
-
 function getHeadStat(mat as ITICMaterial) as int {
-  if(materialWithHeadWhitelist has mat.getName) return mat.harvestLevelHead;
+  if (mat.hasHeadStats()) return mat.harvestLevelHead;
   return 1;
 }
 

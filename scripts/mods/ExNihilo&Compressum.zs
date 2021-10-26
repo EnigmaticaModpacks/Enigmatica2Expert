@@ -205,3 +205,21 @@ craft.remake(<excompressum:auto_compressed_hammer>, ["pretty",
   "C": <tconstruct:hammer_head>.withTag({Material: "cobalt"}), # Cobalt Hammer Head
   "◊": <ore:gemTanzanite>,                # Tanzanite
 });
+
+# Remake pebbles to accept half of any pebble
+recipes.removeByRecipeName("exnihilocreatio:cobblestone");
+recipes.removeByRecipeName("exnihilocreatio:stone_1");
+recipes.removeByRecipeName("exnihilocreatio:stone_3");
+recipes.removeByRecipeName("exnihilocreatio:stone_5");
+val pebbleList = [
+	<exnihilocreatio:item_pebble>  , <minecraft:cobblestone>,
+	<exnihilocreatio:item_pebble:1>, <minecraft:stone:1>    ,
+	<exnihilocreatio:item_pebble:2>, <minecraft:stone:3>    ,
+	<exnihilocreatio:item_pebble:3>, <minecraft:stone:5>    ,
+] as IItemStack[];
+for i, item in pebbleList {
+	if(i%2==0) continue;
+	val peb = pebbleList[i - 1];
+	recipes.addShapeless("Pebble x1 "~i, item    , [peb, peb, <ore:pebble>, <ore:pebble>]);
+	recipes.addShapeless("Pebble x2 "~i, item * 2, [peb, peb, peb, peb, <ore:pebble>, <ore:pebble>, <ore:pebble>, <ore:pebble>]);
+}
