@@ -15,7 +15,10 @@ module.exports.isBlock = (itemID) => (
 
 /** @type {Set<string>} */
 let existOreDicts
-module.exports.isODExist = (oreName) => (
+/**
+ * @param {string} oreName
+ */
+const isODExist = module.exports.isODExist = (oreName) => (
   existOreDicts ??= new Set(getCSV('config/tellme/items-csv.csv').map(o=>o['Ore Dict keys'].split(',')).flat())
 ).has(oreName)
 
@@ -83,10 +86,23 @@ module.exports.getByOreBase = (oreBase) => {
  * @param {string} kindKey 
  * @returns {{[OreBase: string]: TMStack}}
  */
-module.exports.getByOreKind = (kindKey) => {
+const getByOreKind = module.exports.getByOreKind = (kindKey) => {
   return getByOreRgx(new RegExp(`^${kindKey}([A-Z]\\w+)$`))
 }
 
+
+/**
+ * @param {string[]} kindKeys 
+ * @returns {string[]} oreBases which exist each of keys
+ */
+module.exports.getOreBases_byKinds = (kindKeys) => {
+  let entries = Object.entries(getByOreKind(kindKeys[0]))
+  kindKeys.slice(1).forEach(kindKey=> {
+    entries = entries.filter(([oreBase])=>isODExist(kindKey+oreBase))
+  })
+  
+  return entries.map(([b])=>b)
+}
 
 /**
  * 

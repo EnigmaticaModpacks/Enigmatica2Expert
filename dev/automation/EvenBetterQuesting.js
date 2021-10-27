@@ -81,7 +81,9 @@ async function parse(h) {
   function unicNameGenerator() {
     const uniqNames = new Set()
     return function (name) {
-      const narmalName = findRealQuestname(name).replace(/[/\\?%*:|"<>]/g, '-')
+      const narmalName = findRealQuestname(name)
+        .replace(/[/\\?%*:|"<>]/g, '-') // Remove file system unsupported symbols
+        .replace(/§./g, '') // Remove string formattings
       let idName = narmalName
       let k = 0
       while (uniqNames.has(idName)) idName = narmalName + ' #' + k++
@@ -109,8 +111,8 @@ async function parse(h) {
 
   const chapNameGen = unicNameGenerator()
   for (const [index, ch] of questChapters_entries) {
-    const qName = ch['properties:10']['betterquesting:10']['name:8']
-    const folder = 'Chapters/'+chapNameGen(qName)+'/'
+    const chapName = ch['properties:10']['betterquesting:10']['name:8']
+    const folder = 'Chapters/'+chapNameGen(chapName)+'/'
     const questLines = ch['quests:9']
     delete ch['quests:9']
     saveJSON(folder+'_props', {_index:index, _data: ch})

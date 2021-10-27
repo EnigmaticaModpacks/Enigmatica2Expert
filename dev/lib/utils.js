@@ -154,7 +154,7 @@ const saveText = module.exports.saveText = function(txt, filename) {
 
 /**
  * Save object in file
- * @param {string} obj
+ * @param {Object} obj
  * @param {string} filename
  */
 module.exports.saveObjAsJson = function(obj, filename) {

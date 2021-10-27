@@ -14,7 +14,7 @@ const fs = require('fs')
 const {naturalSort, globs, loadText} = require('../lib/utils.js')
 const path = require('path')
 const _ = require('lodash')
-const { getByOreKind, getByOreBase } = require('../lib/tellme.js')
+const { getByOreKind, getByOreBase, getOreBases_byKinds } = require('../lib/tellme.js')
 const { getExtra } = require('../lib/jaopca.js')
 
 const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
@@ -106,22 +106,90 @@ const init = module.exports.init = async function(h=require('../automate').defau
 
 if(require.main === module) init()
 
+/**
+ * @param {string} input
+ * @param {string|number} amount
+ */
+function xmlIngr(input, amount=1) {
+  const parts = input.split(':')
+  return parts.length > 1
+    ? `<itemStack>${parts.slice(0,2).join(':')}${(amount!=1||parts[2])? ' '+amount : ''}${parts[2]? ' '+parts[2] : ''}</itemStack>`
+    : `<oreDict>${input}${amount!=1? ' '+amount : ''}</oreDict>`
+}
+
+/**
+ * @param {string | string[]} input
+ */
+function parseItems(input) {
+  return (Array.isArray(input) ? input : [input])
+    // @ts-ignore
+    .map(s=>s.startsWith('<') ? s : xmlIngr(...(s.includes(' ') ? s.split(' ') : [s])))
+    .join('\n')
+}
+
+/**
+ * @param {string} name
+ * @param {string | string[]} inputs
+ * @param {string | string[]} outputs
+ */
+function makeXMLRecipe(name, inputs, outputs, timeRequired = 0, power = 0) {
+  return `<!-- [${name}] -->
+  <Recipe timeRequired="${timeRequired}" power="${power}"><input>`
+    +parseItems(inputs)
+    +'</input><output>'
+    +parseItems(outputs)
+  +'</output></Recipe>'
+}
+
 
 function getCustomRecipes() { return {
 
-'config/advRocketry/SmallPlatePress.xml': 
-  _(getByOreKind('ore'))
-  .mapValues(/** @return {[string, import('../lib/tellme.js').TMStack, string]} */
-    (tm,oreBase)=>[oreBase, tm, getExtra(oreBase, 2)]
+'config/advRocketry/SmallPlatePress.xml': [
+  ..._(getByOreKind('ore'))
+    .mapValues(/** @return {[string, import('../lib/tellme.js').TMStack, string]} */
+      (tm,oreBase)=>[oreBase, tm, getExtra(oreBase, 2)]
+    )
+    .filter(([,,outputOreBase]) => !!getByOreBase(outputOreBase)['dustTiny'])
+    .map(([oreBase, tm, outputOreBase])=>makeXMLRecipe(
+      tm.display,
+      `ore${oreBase}`,
+      `dustTiny${outputOreBase}`
+    ))
+    .value()
+  ,
+  ...[
+      ['3', 'blockSheetmetal','stick'],
+      ['6', 'block','plate']
+    ].map(kinds=>
+      getOreBases_byKinds(kinds.slice(1))
+      .map(oreBase=>[oreBase, kinds[1], kinds[2], kinds[0]])
+    )
+    .flat()
+    .concat([
+      [       'Wood', 'plank', 'stick', '6'],
+      ['TreatedWood', 'plank', 'stick', '6'],
+    ])
+    .map(([oreBase, kind1, kind2, amount])=>makeXMLRecipe(
+      `${oreBase} Block`,
+      `${kind1}${oreBase}`,
+      `${kind2}${oreBase} ${amount}`
+    ))
+  ,
+  makeXMLRecipe('Stone Sticks','cobblestone','stickStone 6'),
+  makeXMLRecipe('HDPE Sticks','mekanism:plasticblock:15','stickHDPE 6'),
+],
+
+'config/advRocketry/Centrifuge.xml': [
+  makeXMLRecipe('Magic centrifuge','<fluidStack>enrichedlava 1000</fluidStack>',[
+    'flux_goo '    + 80,
+    'thaumium '    + 60,
+    'livingrock '  + 50,
+    'manasteel '   + 45,
+    'bound_metal ' + 15,
+    'terrasteel '  + 2,
+    'elementium '  + 1,
+  ].map(s=>`<fluidStack>${s}</fluidStack>`),
+  20, 100000
   )
-  .filter(([,,outputOreBase]) => !!getByOreBase(outputOreBase)['dustTiny'])
-  .map(([oreBase, tm, outputOreBase])=>`
-  <!-- [${tm.display}] -->
-  <Recipe timeRequired="0" power="0">
-    <input><oreDict>ore${oreBase}</oreDict></input><output>`
-    +`<oreDict>dustTiny${outputOreBase}</oreDict>`
-  +'</output></Recipe>')
-  .value()
-
-
+],
 }}

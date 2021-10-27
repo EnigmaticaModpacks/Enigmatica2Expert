@@ -26,7 +26,7 @@ let totalChanges = 0
 const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
   await h.begin('Checking requirments')
   if(isPathHasChanged(defaultQuests_path) || validCodes.map(getLangPath).some(isPathHasChanged)) {
-    return h.error('Quests or Langs have changes!')
+    return h.error('\nQuests or Langs have changes!')
   }
 
   langFiles = validCodes.map(getLangFile)

@@ -75,9 +75,7 @@ const init = module.exports.init = async function(h=require('../automate').defau
     '<extendedcrafting:table_basic>',
     '<rustic:condenser_advanced>',
     '<draconicevolution:crafting_injector>',
-    '<cyclicmagic:ender_eye_orb>',
     '<cyclicmagic:fluid_drain>',
-    '<cyclicmagic:dehydrator>',
   ]
 
   // Add already exist remakes

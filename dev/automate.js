@@ -66,7 +66,7 @@ module.exports.defaultHelper = {
     this.done()
     // @ts-ignore
     if(steps) (this.steps = steps, this.stepSize = steps / 30)
-    process.stdout.write(`🔹 ${s}` + (steps?` [${steps}] `:''))
+    process.stdout.write(`🔹 ${s.trim()}` + (steps?` [${steps}] `:''))
     this.isUnfinishedTask = true
   },
   done: function (s='') {

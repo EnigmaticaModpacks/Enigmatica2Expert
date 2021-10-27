@@ -84,7 +84,7 @@ const formatRow = module.exports.formatRow = function (mcAddon, curseAddon, opti
   (options.noIcon?'':`<img src="${getLogo(curseAddon.logo)}" width="50"> | ${getSquare(name)} `)+
   `[**${name}**](${curseAddon.url}) `+
   `<sup>${options.isUpdated?' 🟡 ':''}<sub>${mcAddon?.installedFile?.FileNameOnDisk}</sub></sup>`+
-  (options.noSummary?'':` <br> ${curseAddon.summary}`)
+  (options.noSummary?'':` <br> ${curseAddon.summary}`)+' | '
 }
 
 
