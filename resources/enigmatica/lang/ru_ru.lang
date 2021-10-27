@@ -238,6 +238,7 @@ requious.jei.recipe.syngas_producer=Производитель Сингаза
 requious.jei.recipe.garden_cloche=Садовый колокол
 requious.jei.recipe.typewriter=Печатная машинка
 requious.jei.recipe.chemthrower=Химический распылитель
+requious.jei.recipe.expire_in_block=Пропадает в блоке
 
 tile.adv_bee_analyzer.name=Расширенный Анализатор
 tile.infinity_furnace.name=Печь Бесконечности

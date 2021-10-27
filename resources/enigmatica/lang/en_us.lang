@@ -239,6 +239,7 @@ requious.jei.recipe.syngas_producer=Syngas Producer
 requious.jei.recipe.garden_cloche=Garden Cloche
 requious.jei.recipe.typewriter=Typewriter
 requious.jei.recipe.chemthrower=Chemical Thrower
+requious.jei.recipe.expire_in_block=Expire In Block
 
 tile.adv_bee_analyzer.name=Advanced Analyzer
 tile.infinity_furnace.name=Infinity Furnace
