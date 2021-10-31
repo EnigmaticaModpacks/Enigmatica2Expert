@@ -204,6 +204,8 @@ tooltips.lang.trophy.skeleton=§eСтрелять стрелой
 tooltips.lang.trophy.snowman=§eСпаун снег
 tooltips.lang.trophy.squid=§eВода для возрождения
 tooltips.lang.trophy.witch=§eСлепой игрок
+tooltips.lang.kill.slime.by.zombie=§aПадает когда Зомби убивает Слайма
+tooltips.lang.kill.slime.by.enderman=§aПадает когда §nЭндермен§r убивает §nСлайма§r
 
 tooltips.dim_stages.healthy=§4Вам нужно иметь хотя бы §640 HP§4 (две полоски сердец) что бы посетить §cНезер
 tooltips.dim_stages.healthy_grant=Вы набрали §640 HP§r (две полоски сердец)!§r Теперь вы можете посетить §cНезер

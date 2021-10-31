@@ -205,6 +205,8 @@ tooltips.lang.trophy.skeleton=§eShoot Arrow
 tooltips.lang.trophy.snowman=§eSpawn snow
 tooltips.lang.trophy.squid=§eSpawn water
 tooltips.lang.trophy.witch=§eBlind player
+tooltips.lang.kill.slime.by.zombie=§2Drops when §nSlime§2 killed by §nZombie
+tooltips.lang.kill.slime.by.enderman=§2Drops when §nSlime§2 killed by §nEnderman
 
 tooltips.dim_stages.healthy=§4You need to have at least §640 HP§4 (two rows of hearts) to visit §cNether
 tooltips.dim_stages.healthy_grant=You reached §640 HP§r (two rows of hearts)!§r Now you can to visit §cNether

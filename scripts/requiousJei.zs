@@ -67,6 +67,9 @@ function add_liquid_interaction(input1 as IIngredient, input2 as IIngredient, ou
 }
 
 add_liquid_interaction(Bucket("blood"), Bucket("water"), <biomesoplenty:flesh>);
+add_liquid_interaction(Bucket("astralsorcery.liquidstarlight"), Bucket("water"), <minecraft:ice>);
+add_liquid_interaction(Bucket("astralsorcery.liquidstarlight"), Bucket("lava"), <minecraft:sand>);
+add_liquid_interaction(Bucket("astralsorcery.liquidstarlight"), Bucket("lava"), <astralsorcery:blockcustomsandore>);
 
 add_liquid_interaction(Bucket("mana"), <thermalfoundation:storage:2>, <thermalfoundation:storage:8>);
 add_liquid_interaction(Bucket("mana"), <thermalfoundation:storage:3>, <minecraft:gold_block>);
@@ -543,9 +546,7 @@ add(x, {[<minecraft:slime:*>] : [<minecraft:bone_block>]});
 add(x, {[<minecraft:stonebrick:*>] : [<quark:magma_bricks>]});
 add(x, {[<thaumcraft:stone_porous:*>] : [<additionalcompression:dustgunpowder_compressed>, <forestry:ash_block_1> * 5]});
 add(x, {[<minecraft:yellow_flower:*>, <minecraft:red_flower:*>] : [<minecraft:fire>]});
-add(x, {[<biomesoplenty:flower_0:*>, <biomesoplenty:flower_1:*>] : [<biomesoplenty:blue_fire>]});
-add(x, {[<botania:flower:*>] : [<cyclicmagic:fire_dark>]});
-add(x, {[<minecraft:snow_layer:*>] : [<cyclicmagic:fire_frost>]});
+add(x, {[<biomesoplenty:flower_0:*>, <biomesoplenty:flower_1:*>, <botania:flower:*>, <minecraft:snow_layer:*>] : [<biomesoplenty:blue_fire>]});
 add(x, {[Bucket("water")] : [Bucket("blood")]});
 add(x, {[<additionalcompression:meatfish_compressed:*>, <additionalcompression:meatchicken_compressed:*>, <additionalcompression:meatbeef_compressed:*>, <additionalcompression:meatporkchop_compressed:*>] : [<thaumcraft:flesh_block>]});
 add(x, {[<minecraft:wool:*>] : [<quark:color_slime>]});
