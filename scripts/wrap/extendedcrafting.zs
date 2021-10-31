@@ -15,14 +15,14 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded extendedcrafting
-// Uses of this mod: 67
+// Uses of this mod: 63
 
 
 //####################################################
-// Uses of this class: 7
+// Uses of this class: 3
 zenClass Class_CompressionCrafting { zenConstructor() {}
 
-	// Uses of this method: 7
+	// Uses of this method: 3
 	function addRecipe(output as IItemStack, input as IItemStack, inputCount as int, catalyst as IItemStack, rfCost as int, rfRate as int) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.extendedcrafting.CompressionCrafting.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), inputCount, serialize.IItemStack(catalyst), rfCost, rfRate]));

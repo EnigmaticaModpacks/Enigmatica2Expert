@@ -286,7 +286,7 @@ key_pi.key.open_pi:23
 key_pi.key.et_gui:23
 key_pi.key.et_world:23:CONTROL
 key_key.travelersbackpack.inventory:48
-key_key.travelersbackpack.toggle_tank:49
+key_key.travelersbackpack.toggle_tank:45:CONTROL
 key_key.travelersbackpack.cycle_tool:44
 key_key.vaultopic.view:33:CONTROL
 key_key.vaultopic.vice:18:SHIFT

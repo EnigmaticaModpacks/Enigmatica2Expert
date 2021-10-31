@@ -34,13 +34,13 @@ function tweakEx(
       val smelted = utils.smelt(itemToAdd);
       if (!isNull(smelted)) {
         # Add with smelting function (if smelted item exist)
-        pool.addItemEntry(smelted, 1, 0, [
+        pool.addItemEntryHelper(smelted, 1, 0, [
           Functions.setCount(minMax[0], minMax[1]), 
           Functions.lootingEnchantBonus(0, 1, 0)
         ], isByPlayer ? [Conditions.killedByPlayer(), {condition: "entity_properties", entity: "this", properties: {"on_fire": true}}] : [{condition: "entity_properties", entity: "this", properties: {"on_fire": true}}]);
       } else {
         # Add non-smelt function
-        pool.addItemEntry(itemToAdd, 1, 0, [
+        pool.addItemEntryHelper(itemToAdd, 1, 0, [
           Functions.setCount(minMax[0], minMax[1]), 
           Functions.lootingEnchantBonus(0, 1, 0)
         ], isByPlayer ? [Conditions.killedByPlayer()] : []);

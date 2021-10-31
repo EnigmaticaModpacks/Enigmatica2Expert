@@ -15,14 +15,14 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded inworldcrafting
-// Uses of this mod: 16
+// Uses of this mod: 15
 
 
 //####################################################
-// Uses of this class: 9
+// Uses of this class: 8
 zenClass Class_FluidToItem { zenConstructor() {}
 
-	// Uses of this method: 9
+	// Uses of this method: 8
 	function transform(output as IItemStack, inputFluid as ILiquidStack, inputItems as IIngredient[]) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.inworldcrafting.FluidToItem.transform'~
 			serialize.args([serialize.IItemStack(output), serialize.ILiquidStack(inputFluid), serialize.IIngredient__(inputItems)]));
