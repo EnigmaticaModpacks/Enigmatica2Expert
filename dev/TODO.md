@@ -4,7 +4,6 @@ Items that should have more uses:
 
 ### Tier 1
 
-![](https://git.io/Jtjeu "Amber Block")
 ![](https://git.io/JtyNr "Glowing Coral")
 ![](https://git.io/JtyNo "Kelp")
 ![](https://git.io/JnAYd "Cobweb")
@@ -80,9 +79,7 @@ Liquids that should have more uses:
 ![](https://git.io/JG5U9 "Decay Generator")
 ![](https://git.io/Jst3B "Crystal Memory")
 ![](https://git.io/J3hVE "Wooden Barrel MILKING")
-![](https://git.io/JtJkQ "Drying Rack")
 ![](https://git.io/JtDnO "Chemical Thrower")
-[Spectre Key]
 
 ---
 
@@ -90,67 +87,52 @@ Liquids that should have more uses:
 
 # TODO
 
-- [x] ✏️ ![](https://git.io/JoUaT "Small Plate Presser") add sub-outputs (oredict output), buff plate output
-- [ ] ✏️ [Cobalt Dust] Replace with EnderIO variant (its beautiful)
-- [x] ✏️ Return vanilla armor, but remove recipes
+- [x] ✏️ Less microcraftings for Pam's machines
+- [x] ✏️ [Storage Control Screen Module] harder
+- [x] ✏️ Rewrite benification process back to JAOPCA's
+- [x] ✏️ [Hellbark sapling] change craft
+- [x] ✏️ [Lead Ore Chunk] fix craft from ore (iterate Exnihilio items, remove invis. recipe)
+- [x] ✏️ [Orechid] cheaper
+- [x] ✏️ [Chronologist] add rare drop
+- [x] ✏️ Fix rats coins output (probably remove completely)
+- [x] ✏️ [Carbon brick] fix hammering
+- [x] ✏️ [Starlinght] + [Water] => [Ice] add to JEI. Also blood+water, starlight+lava
+- [x] ✏️ [Elythra] Remove from jetpacks
+- [x] ✏️ Add modded trees to ts2k16
 - [ ] ✏️ Add [Uncrafting Table] as Endgame item, and [Uncrafting Grinder] right before creative upgrade
-- [ ] ✏️ Less microcraftings for Pam's machines
+- [ ] ✏️ Add non-magic way to finish modpack
+- [ ] ✏️ Add *Blue Fire Jar* crafts
 - [ ] ✏️ [Tungsten ingot] add to JAOPCA
-- [ ] ✏️ [Storage Control Screen Module] harder
-- [ ] ✏️ Rewrite benification process back to JAOPCA's
-- [x] ✏️ [Apple Sprout] harder, add to compost
-- [x] ✏️ [Menril Berries] add nutrients
-- [ ] ✏️ [Hellbark sapling] change craft
-- [x] ✏️ [Redstone dust] fix in [Grinder]
-- [x] ✏️ [Spectre Ingot] fix unstable ingot usage
-- [x] ✏️ Rat Poop fix pulverizer cant process it.
-- [ ] ✏️ Add chained crafts for Nether Portal Spread
-- [x] ✏️ [Compressed Crushed Diorite] -> [White Sand] hammering
-- [x] ✏️ [Rat burger] add nutrients
-- [x] ✏️ [Cheese] tool part nerf 50%
-- [ ] ✏️ [Lead Ore Chunk] fix craft from ore (iterate Exnihilio items, remove invis. recipe)
-- [x] ✏️ [Floo Powder] fix 2x2 craft wrong place
-- [x] ✏️ [Grape Seed] add to list all seeds
-- [x] ✏️ [Traveler Knapsack] add to list all seeds
 - [ ] ✏️ [Bee nest] make not in basing but in world
-- [x] ✏️ [Brownstone] way cheaper
-- [x] ✏️ [Biome Marker] add craft
-- [x] ✏️ [Slimy Grass] add craft
-- [x] ✏️ [Constellation Paper] add craft
-- [ ] ✏️ [Orechid] cheaper
-- [x] ✏️ [Climograph] replace to rat diamond
-- [x] ✏️ [Hamster] add craft
-- [ ] ✏️ [Player Interface] cheaper
-- [ ] ✏️ [Chronologist] add rare drop
-- [x] ✏️ [Molten Heavy] cast ingots
-- [x] ✏️ **Vex** Add rare drop, probably Diamonds
-- [x] ✏️ [Fertilized Essence] craft not from inferium
-- [x] ✏️ Lower rat output for EU gems
-- [ ] ✏️ Fix rats coins output (probably remove completely)
-- [ ] ✏️ [Carbon brick] fix hammering
-- [ ] ✏️ [Starlinght] + [Water] => [Ice] add to JEI
+- [ ] ✏️ [Cobalt Dust] Replace with EnderIO variant (its beautiful)
 - [ ] ✏️ Add EEPROM with `user`, `attacker`, `trader`
+- [ ] ✏️ Add Mob Trophies recipes
+- [ ] ✏️ Add Curiosity crafts
 - [ ] 🔨 Grinding rework
-- [ ] 🔨 **Fiery Metal** higher mining level, add to book
-- [ ] 📖 Deep Mob Learning gate require plate
-- [ ] 📖 [Backpack] (forestry) Add as reward
-- [ ] 📖 [Porous Stone] Add
-- [ ] 📖 [Rat Gemcutter] less diamond as reward
-- [ ] 📖 Change sound of quest complete to another
-- [ ] 📖 Piper Remove quest
-- [ ] 📖 **TF Animals** move from "Animals"
-- [ ] 📖 [Pipete] add to book
-- [ ] 📖 Change Sound of completing
+- [x] 📖 Deep Mob Learning gate require plate
+- [x] 📖 [Backpack] (forestry) Add as reward
+- [x] 📖 [Porous Stone] Add
+- [x] 📖 [Rat Gemcutter] less diamond as reward
+- [x] 📖 Piper Remove quest
+- [x] 📖 **TF Animals** move from "Animals"
+- [x] 📖 [Pipete] add to book
 - [ ] 📖 Fix pairs of eggs
-- [ ] 📖 Add ferrous trees
+- [x] 📖 Add ferrous trees
 - [ ] 📖 Add CC/OC gate, add neural interface searching
-- [ ] 📖 Add [Nature's Compass]
-- [ ] 📖 Add [Biome Marker]
+- [x] 📖 Add [Nature's Compass]
+- [x] 📖 Add IE triangles
+- [x] 📖 Add [Pattern Replicator]
+- [x] 📖 Add [Inventory Upgrade]
+- [x] 📖 Add [Redstone Clock]
+- [ ] 📖 Change sound of quest complete to another
 - [ ] 🌍 Add JER for Spectre
+- [x] 🔄 [Flint and steel] give player at start instead of lava
+- [x] 🔄 Add `resources` to make_modpack
 - [x] 🔄 Sonar Core add to [building backpack]
 - [ ] 🔄 ![](https://git.io/J3p8B "Infinity Furnace") front texture empty on client
 - [ ] 🔄 Install https://www.curseforge.com/minecraft/mc-mods/moddirector, load default options with it.
 - [ ] 🔄 Integrate https://github.com/release-it/release-it
+- [ ] 🔄 Integrate **Village Names**
 - [ ] 🚧 Add skyblock client/server changes
 
 ---
@@ -184,6 +166,7 @@ Liquids that should have more uses:
 - [ ] 🔄 Spectre fluid has no texture (invisible in world)
 - [ ] 🔄 UU requirement for a lot of things seems to be lower than what the tooltip says
 - [ ] 🔄 Remap all **#VoidMiners** to produce not all types of ore each
+- [ ] 🔄 Move to **NUclearCraft:Overhauled**
 - [ ] 🔨 ![](https://git.io/JnzzI "Glitch Infused Ingot") add material. Ability: drom matter from mobs
 - [ ] 🔨 Add armor trait that speed up gain for `Time In Bottle`
 - [ ] 🔨 Add teleportation trait. 1. Set point, 2. Break special glass-like block to teleport
