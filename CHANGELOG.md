@@ -1,6 +1,194 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
 
+# v0.38
+
+
+## 🟢 New Mods
+
+Icon | Summary | Reason
+----:|:--------| ------
+<img src="https://media.forgecdn.net/avatars/thumbnails/200/673/256/256/636914940710758684.png" width="50"> | 🟧 [**Village Names**](https://www.curseforge.com/minecraft/mc-mods/village-names) <sup><sub>VillageNames-1.12.2-4.3.7.jar</sub></sup> <br> Generate names for villages and villagers, as well as for other entities and structures. | Would make villages even richer.
+<img src="https://media.forgecdn.net/avatars/thumbnails/254/124/256/256/637197335439078686.png" width="50"> | 🟫 [**ModDirector**](https://www.curseforge.com/minecraft/mc-mods/moddirector) <sup><sub>mod-director-launchwrapper-1.5-SNAPSHOT-all.jar</sub></sup> <br> A mod to automatically download and load other mods before starting | Would be used later to download default configs and non-curseforge mods.
+
+## 🔴 Removed Mods
+
+Icon | Summary | Reason
+----:|:--------| ------
+<img src="https://media.forgecdn.net/avatars/thumbnails/304/710/256/256/637378126956149226.png" width="50"> | 🟫 [**Ears**](https://www.curseforge.com/minecraft/mc-mods/ears) <sup><sub>ears-forge-1.12-1.2.4.jar</sub></sup> <br> Faithful fancy fashion features for fuzzy folk. 1.2 - 1.18 Forge/Fabric/Rift + more. | Its happens that ears actually not working. Also this mod more for local groups.
+
+## 🟡 Updated Mods
+
+- **CraftTweaker**
+- **Atlas Lib**
+- **LootTweaker**
+- **Carry On**
+- **LibNine**
+- **Immersive Technology**
+- **LibVulpes**
+- **LittleTiles**
+- **Dynamic Surroundings**
+- **Discord Integration Forge**
+- **JAOPCA**
+
+
+## [> Mods updates detailed.](changelogs/CHANGELOG_MODS_v0.38.md)
+
+
+## ✏️ **Recipes**
+  - ### 🖉 **New Recipes**
+    - ![](https://git.io/JoUaT "Small Plate Presser") add many sticks and buff plates recipes
+    - ![](https://git.io/JP6gc "Lormyte Stone") in ![](https://git.io/JP6zp "Stone Barrel")
+    - ![](https://git.io/JPiDe "Crystallized Obsidian Bucket") from ![](https://git.io/JLhhc "Menril Resin")
+    - Many recipes changes for this machines: ![](https://git.io/JP6zb "Dehydrator")![](https://git.io/JP6zF "Solidifier")![](https://git.io/JtTPL "Hydrator")![](https://git.io/Jsw8b "Packager")
+    - ![](https://git.io/JP6gl "Enriched Lava") now can be separated into many liquids in ![](https://git.io/JPiDf "Essentia Centrifuge"):
+      > ![](https://git.io/JP6gI "Molten Thaumium")
+      > ![](https://git.io/JP6gV "Molten Manasteel")
+      > ![](https://git.io/JP6gv "Fluidic Sentience")
+      > ![](https://git.io/JP6gG "Molten Bound Metal")
+      > ![](https://git.io/JP6zM "Molten Livingrock")
+      > ![](https://git.io/JP6zh "Molten Terrasteel")
+      > ![](https://git.io/Jgexo "Flux Goo")
+    - ![](https://git.io/Jz0VC "Hellbark Leaves")
+      ![](https://git.io/JmVve "Carbon Brick")
+
+  - ### ✐ **Cheaper**
+    - ![](https://git.io/JuAiu "Prismarine") now outputs x10 times more resources in ![](https://git.io/JOv90 "Sieve")
+    - ![](https://git.io/Jsw8h "Draconium Chest")
+      ![](https://git.io/JP6zQ "Resonant Rice")
+      ![](https://git.io/Jz844 "Void Charm")
+      ![](https://git.io/JPiDv "Crystallized Amber")
+      ![](https://git.io/JP6zD "Crystallized Obsidian")
+      ![](https://git.io/JP6KP "Superlubricent Ice")
+      ![](https://git.io/JmVvt "Omnivoir")
+      ![](https://git.io/JOGu6 "Endervoir")
+      ![](https://git.io/JuAit "Endorium Nugget")
+      ![](https://git.io/JP6g3 "Steeleaf Seeds")
+      ![](https://git.io/JPiDI "Player Interface")
+      ![](https://git.io/JP6go "Escape Rope")
+      ![](https://git.io/JP6gt "Crystal Matrix Ingot")
+      ![](https://git.io/JcbNq "Orechid")
+      ![](https://git.io/JuAMM "Orechid Ignem")
+      ![](https://git.io/JP6gB "Orechid Vacuam")
+      ![](https://git.io/JPiDJ "Redstone Clock")
+      ![](https://git.io/JP6z5 "Sword of Atrophy")
+      ![](https://git.io/JP6gL "Sword of Decay")
+      ![](https://git.io/JP6gU "Sword of Evasion")
+      ![](https://git.io/JZYfT "Organic Brown Dye")
+      ![](https://git.io/JPi1x "Blast resistant ME Drive")
+
+  - ### ✎ **Harder**
+    - ![](https://git.io/JuAit "Endorium Nugget")
+      ![](https://git.io/JP6zP "Stone Pebble")
+      ![](https://git.io/J6y7I "Apple Sprout")
+      ![](https://git.io/JP6gr "Lapis Apple")
+      ![](https://git.io/JP6gq "Infected Carrot")
+      ![](https://git.io/JtkwT "Auto Anvil")
+      ![](https://git.io/JP6zd "XP Shower")
+      ![](https://git.io/JP6zx "Apple of Lofty Stature")
+      ![](https://git.io/JoFu0 "Storage Control Screen Module")
+      ![](https://git.io/JP6zx "Apple of Lofty Stature")
+      ![](https://git.io/JqUJQ "Monster Ball")
+      ![](https://git.io/JP6gz "Frost Bringer")
+      ![](https://git.io/JP6g2 "Duskflame Hex")
+      ![](https://git.io/Jt8DE "Battery")
+      ![](https://git.io/JP6zj "Fluid Storage Tank")
+
+  - ### ✏ **Misc Changes**
+    - Fix ![](https://git.io/JGGjU "Electric Arc Furnace") steel recipe (was wrong steel)
+    - ![](https://git.io/JgeGN "Ferrous-Juniper Log") now can be melted in more machines
+    - ![](https://git.io/JP6ga "Heavy Mix Lump") also can be made from ![](https://git.io/JOGgk "Propolis")
+    - ![](https://git.io/J6yQx "Weather Egg <Rain>") alt from ![](https://git.io/JP6oY "Iceball")
+    - ![](https://git.io/JP6z9 "Block of Sticks") nerf burn time
+    - ![](https://git.io/JP6gK "Evil Tear") Alternative recipe
+    - [Ratlanean Flame] Alt recipe
+    - ![](https://git.io/JqUJb "Simple Powercell") not require ![](https://git.io/JZYf8 "Glowing Chorus Fruit") anymore
+    - ![](https://git.io/JuAPL "Elytra") durability buffet 432 -> 1200
+    - Pebbles from ExNihilo now can be mixed together to save rare pebbles
+    - ![](https://git.io/JOPvF "Glowcelium") add recycle
+    - ![](https://git.io/Jgexa "Rat Upgrade: Gemcutter") cant make coins anymore
+    - ![](https://git.io/JuAPL "Elytra") not used in jetpacks recipes anymore
+    - ![](https://git.io/JoFug "Grinder")![](https://git.io/JoFuE "Presser") less microcraftings
+    - ![](https://git.io/JP6gY "Fusion Crafting Core") remove all ET materials except Aethium
+    - ![](https://git.io/JP6oT "Pipette") added clearing
+    - ![](https://git.io/JcbNq "Orechid") now can produce only ~8 ores
+    - ![](https://git.io/JP6gO "Perfect Fuel") in ![](https://git.io/JRLSt "Fusion Core") produce ![](https://git.io/Jgexo "Flux Goo") and ![](https://git.io/JP6g0 "Antimatter")
+    - Added recipes for all ![](https://git.io/JPiDU "Molten Gelid Enderium Bucket") tools and armor
+    - ![](https://git.io/JP6ge "Extraterrestrial Matter") drops from Chronologist
+    - Other craft changes:
+      ![](https://git.io/JP6zb "Dehydrator")
+      ![](https://git.io/JqUJN "Forester")
+      ![](https://git.io/JP6gk "Automatic Fishing Net")
+      ![](https://git.io/JP6gg "Antimatter Evaporator")
+      ![](https://git.io/JP6zH "Water Spreader")
+      ![](https://git.io/JtTPL "Hydrator")
+      ![](https://git.io/JPiMe "Fan")
+      ![](https://git.io/JP6zX "Standard Exchange Scepter")
+      ![](https://git.io/JP6gf "Gentle Exchange Scepter")
+      ![](https://git.io/JtJH6 "Rod of Elevation")
+      ![](https://git.io/JPi1h "Enchanter")
+      ![](https://git.io/J3xyA "Magma Anvil")
+      ![](https://git.io/JP6zy "Ender Wing Prime")
+      ![](https://git.io/JP6g4 "Ender Wing")
+      ![](https://git.io/JOGra "Climbing Gloves")
+      ![](https://git.io/JP6zA "Powered Diamond Anvil")
+      ![](https://git.io/JRLyy "Solid Ender Eye")
+      ![](https://git.io/JP6z7 "Chaos Reaper")
+      ![](https://git.io/J3xyj "Speed Charm")
+      ![](https://git.io/JP6gR "Auto Crafter")
+      ![](https://git.io/JPi1p "Sprinkler")
+      ![](https://git.io/Jsw8b "Packager")
+      ![](https://git.io/JP6gn "Fire Starter")
+      ![](https://git.io/JPi1j "Structure Builder")
+      ![](https://git.io/JP6gm "Controlled Miner")
+      ![](https://git.io/JP6gE "Harvester")
+      ![](https://git.io/JP6gJ "Engraved Thunder")
+      ![](https://git.io/Jsmvj "Water Candle")
+      ![](https://git.io/JP6gu "Ranged Building Scepter")
+      ![](https://git.io/J6y7m "Item Collector")
+      ![](https://git.io/JP6zF "Solidifier")
+      ![](https://git.io/JP6gW "Automated User")
+      ![](https://git.io/JOGzg "Air Charm")
+      ![](https://git.io/JP6gZ "Pharos Beacon")
+      ![](https://git.io/JP6gs "Pattern Replicator")
+      ![](https://git.io/JPiDk "Inventory Upgrade")
+
+
+
+## 🔵 **Mods**
+  - ### 🏪 **Requious Fracto**
+    - ![](https://git.io/JP6gT "Liquid Starlight") more interactions added to JEI
+    - JEI for **Expire In Block**
+
+  - ### 🐝 **Forestry**: Speedup bees x2 (400 => 200 ticks per cycle)
+
+  - ### 🔨 **Tinker's Construct**: Slightly buff ![](https://git.io/JP6g6 "Heavy Ingot")
+
+  - ### 🛢️ **Immersive Engineering**
+    - Buff Steel Tank to 20,000 buckets
+    - Buff internal fluid storage of most machines
+    - Buff x5
+    - x6 times all ![](https://git.io/JPiDT "Steam") consumption/production
+    - Buff x10 times fuels for boiler
+
+
+
+## 🔄 **Misc Changes**
+  - Change starting inventory for Skyblock mode to ![](https://git.io/JP6gw "Flint and Steel") instead of ![](https://git.io/JP6gC "Lava Clay Bucket")
+  - Enable ![](https://git.io/JP6zS "Uncrafting Table") uncrafting ability (table itself still unavaliable)
+  - Add all modded saplings to **Twerk** mechanics
+  - Nerf Cyclic's swords damage and durability
+  - ![](https://git.io/JP6z1 "Sword of the Zephyr") buff damage
+  - **Chronologist** forbid in spawners
+  - More carryon blacklist
+  - Cyclic Machines using more RF/T
+  - ### 📖 **Quest Book**: Quests changes, New **Utils** chapter
+
+
+
+
+
+
 # v0.37
 
 
