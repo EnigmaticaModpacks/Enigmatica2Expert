@@ -7,7 +7,6 @@ Items that should have more uses:
 ![](https://git.io/JtyNr "Glowing Coral")
 ![](https://git.io/JtyNo "Kelp")
 ![](https://git.io/JnAYd "Cobweb")
-![](https://git.io/JcCWr "Magical Planks")
 ![](https://git.io/Jz9q1 "Bacon")
 ![](https://git.io/Jz9qX "Bottle of Wine")
 ![](https://git.io/JuAPt "Mysical Flesh")
@@ -87,18 +86,6 @@ Liquids that should have more uses:
 
 # TODO
 
-- [x] ✏️ Less microcraftings for Pam's machines
-- [x] ✏️ [Storage Control Screen Module] harder
-- [x] ✏️ Rewrite benification process back to JAOPCA's
-- [x] ✏️ [Hellbark sapling] change craft
-- [x] ✏️ [Lead Ore Chunk] fix craft from ore (iterate Exnihilio items, remove invis. recipe)
-- [x] ✏️ [Orechid] cheaper
-- [x] ✏️ [Chronologist] add rare drop
-- [x] ✏️ Fix rats coins output (probably remove completely)
-- [x] ✏️ [Carbon brick] fix hammering
-- [x] ✏️ [Starlinght] + [Water] => [Ice] add to JEI. Also blood+water, starlight+lava
-- [x] ✏️ [Elythra] Remove from jetpacks
-- [x] ✏️ Add modded trees to ts2k16
 - [ ] ✏️ Add [Uncrafting Table] as Endgame item, and [Uncrafting Grinder] right before creative upgrade
 - [ ] ✏️ Add non-magic way to finish modpack
 - [ ] ✏️ Add *Blue Fire Jar* crafts
@@ -107,32 +94,34 @@ Liquids that should have more uses:
 - [ ] ✏️ [Cobalt Dust] Replace with EnderIO variant (its beautiful)
 - [ ] ✏️ Add EEPROM with `user`, `attacker`, `trader`
 - [ ] ✏️ Add Mob Trophies recipes
-- [ ] ✏️ Add Curiosity crafts
+- [ ] ✏️ Add Curiosity crafts. Probably from Twilight Forest Trees
+- [x] ✏️ [Basic Tank] not from concrete to make it avaliable early
+- [x] ✏️ [Compressed Cobblestone] melting in smeltery
+- [x] ✏️ [Endervoir] high-tech recipe
+- [x] ✏️ [Mechanical Crafter] add recipe
+- [x] ✏️ [Endorium Nugget] backwards conversion
+- [ ] ✏️ [Lormyte Stone] change ingredient from Evil tear
+- [x] ✏️ [Rat Nugget] -> rare seed
+- [ ] ✏️ [Pharos Beacon] harder
+- [x] ✏️ [Slime Essense] add more slimes to craft
+- [x] ✏️ Remove Basalz and other mob dusts from Botania Runes
+- [ ] ✏️ Add default arguments to process
+- [x] ✏️ Add [Wood Pile] from [Wood Essence]
+- [x] ✏️ [Magic Infuser] fix craft (empty secondary)
+- [x] ✏️ Random Things Plates cheaper
+- [x] ✏️ Water Essence give uses
+- [x] ✏️ [Logic Cable] harder, [mono-directional] harder
+- [x] ✏️ [Cheese] (harvestcraft) harder
 - [ ] 🔨 Grinding rework
-- [x] 📖 Deep Mob Learning gate require plate
-- [x] 📖 [Backpack] (forestry) Add as reward
-- [x] 📖 [Porous Stone] Add
-- [x] 📖 [Rat Gemcutter] less diamond as reward
-- [x] 📖 Piper Remove quest
-- [x] 📖 **TF Animals** move from "Animals"
-- [x] 📖 [Pipete] add to book
-- [ ] 📖 Fix pairs of eggs
-- [x] 📖 Add ferrous trees
 - [ ] 📖 Add CC/OC gate, add neural interface searching
-- [x] 📖 Add [Nature's Compass]
-- [x] 📖 Add IE triangles
-- [x] 📖 Add [Pattern Replicator]
-- [x] 📖 Add [Inventory Upgrade]
-- [x] 📖 Add [Redstone Clock]
 - [ ] 📖 Change sound of quest complete to another
-- [ ] 🌍 Add JER for Spectre
-- [x] 🔄 [Flint and steel] give player at start instead of lava
-- [x] 🔄 Add `resources` to make_modpack
-- [x] 🔄 Sonar Core add to [building backpack]
-- [ ] 🔄 ![](https://git.io/J3p8B "Infinity Furnace") front texture empty on client
+- [x] 📖 Utilities change main and other quests from Check Box
+- [x] 📖 Typesetting Table fix plate
+- [x] 📖 Osgloglas Sharp kit add another reward
+- [x] 📖 Morphing Tool better reward
+- [x] 📖 Chunky Cheese Token Better reward
 - [ ] 🔄 Install https://www.curseforge.com/minecraft/mc-mods/moddirector, load default options with it.
 - [ ] 🔄 Integrate https://github.com/release-it/release-it
-- [ ] 🔄 Integrate **Village Names**
 - [ ] 🚧 Add skyblock client/server changes
 
 ---
@@ -141,6 +130,7 @@ Liquids that should have more uses:
 
 # Long-Term
 
+- [ ] 🔄 ![](https://git.io/J3p8B "Infinity Furnace") front texture empty on client
 - [ ] ✏️ Rats as alt for some machine recipes
 - [ ] ✏️ ![](https://git.io/JCt00 "Creative Harvest") add more crafts
 - [ ] ✏️ ![](https://git.io/JOv90 "Sieve") Siften materials should be harder
