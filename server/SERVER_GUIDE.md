@@ -29,24 +29,24 @@
 Run these commands:
 
 Pregenerates a circle of terrain, with radius of 300 chunks, centered on 0 0
-```
+```r
 /pregen gen startradius circle 0 0 300 0
 ```
 
 Pregenerates a circle of terrain, with radius of 50 chunks, centered on 0 0 in the Twilight Forest
 Only applicable for modpacks with the Twilight Forest
-```
+```r
 /pregen gen startradius circle 0 0 50 7
 ```
 
 This process will take a while, so I suggest you speed it up:
 Increases speed drastically
-```
+```r
 /pregen timepertick 250
 ```
 
 Allocates most of the servers resources to the pregenerator.
-```
+```r
 /pregen utils setPriority Pregenerator
 ```
 

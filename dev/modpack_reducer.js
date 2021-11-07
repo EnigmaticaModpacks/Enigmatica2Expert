@@ -2,7 +2,7 @@
 const {globs} = require('./lib/utils.js')
 const term = require('terminal-kit').terminal
 const chalk = require('chalk')
-const fs = require('fs')
+const {renameSync} = require('fs')
 // const path = require('path')
 const _ = require('lodash')
 const escapeGlob = require('glob-escape')
@@ -90,7 +90,7 @@ async function renameMods(actionName, list, toDisable) {
     progressBar.startItem(fileName)
 
     const newPath = toDisable ? oldPath+'.disabled' : oldPath.replace(/\.disabled$/, '')
-    fs.renameSync(oldPath, newPath)
+    renameSync(oldPath, newPath)
     // console.log('old, new :>> ', chalk.yellow(getFileName(oldPath)), chalk.green(getFileName(newPath)))
 
     progressBar.update(progress += updateBit)

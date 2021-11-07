@@ -77,6 +77,7 @@
   🗳️ Colossal Chest
   🍗 Scaling Feast
   🍯 Potion Core
+  🏝️ Void Island Control
 
 🔄 Misc Changes | Misc
   🧩 Configs

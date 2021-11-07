@@ -1,5 +1,7 @@
 [main/WARN] [mixin]: MixinEnvironment::addConfiguration is deprecated and will be removed. Use Mixins::addConfiguration instead!
 [main/WARN] [mixin]: MixinEnvironment::addConfiguration is deprecated and will be removed. Use Mixins::addConfiguration instead!
+[main/WARN] [ModDirector[CORE]]: This modpack does not contain a modpack.json, if you are the author, consider adding one!
+[main/WARN] [ModDirector/ForgeLateLoader[Launchwrapper]]: Failed to find deobf tweaker, injecting after deobf tweaker at first place
 [main/ERROR] [mixin]: Mixin config mixins.mixincompat.json does not specify "minVersion" property
 [main/WARN] [mixin]: Reference map 'mixins.mixincompat.refmap.json' for mixins.mixincompat.json could not be read. If this is a development environment you can ignore this message
 [Client thread/WARN] [mixin]: MixinEnvironment::addConfiguration is deprecated and will be removed. Use Mixins::addConfiguration instead!
@@ -15,4 +17,7 @@
 [Client thread/WARN] [mixin]: Error loading class: net/tropicraft/core/common/worldgen/genlayer/GenLayerTropiVoronoiZoom (java.lang.ClassNotFoundException: The specified class 'net.tropicraft.core.common.worldgen.genlayer.GenLayerTropiVoronoiZoom' was not found)
 [Client thread/WARN] [mixin]: Error loading class: com/sk89q/worldedit/blocks/BaseBlock (java.lang.ClassNotFoundException: The specified class 'com.sk89q.worldedit.blocks.BaseBlock' was not found)
 [Client thread/WARN] [mixin]: Error loading class: team/chisel/client/TextureStitcher$MagicStitchingSprite (java.lang.ClassNotFoundException: The specified class 'team.chisel.client.TextureStitcher$MagicStitchingSprite' was not found)
-[Client thread/WARN] [org.dimdev.utils.ModIdentifier]: Failed to identify sun.reflect.GeneratedMethodAccessor12 (untransformed name: sun.reflect.GeneratedMethodAccessor12)
+[Client thread/ERROR] [soundphysicsinjector]: What the hell, DS's version is not properly formatted ?
+[Client thread/ERROR] [soundphysicsinjector]: What the hell, DS's version is not properly formatted ?
+[Client thread/WARN] [dsurround]: Invalid fingerprint detected!
+[Client thread/WARN] [org.dimdev.utils.ModIdentifier]: Failed to identify sun.reflect.GeneratedMethodAccessor13 (untransformed name: sun.reflect.GeneratedMethodAccessor13)

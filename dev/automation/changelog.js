@@ -480,7 +480,7 @@ function filterCommitMap(commitMap, changelogStructure) {
         .join('|')
 
       const subMatchesRgx = new RegExp(
-        `^\\*\\*(?<subName>${anySubcatName}):?\\*\\*:?\\s*`+
+        `^(?:\\*\\*)?(?<subName>${anySubcatName}):?(?:\\*\\*)?:?\\s*`+
         `(?<content>${
           '('
           +'\n[-*]\\s.*' // Any list item

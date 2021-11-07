@@ -116,6 +116,7 @@ const init = module.exports.init = async function(h=require('../automate').defau
   const countCachedRemoved = del.sync([
     'config/thaumicjei_itemstack_aspects.json',
     'config/thaumicspeedup/cache.lock',
+    'config/tinker_ore_dict_melting_cache.dat',
   ], {dryRun: false}).length
 
   //###############################################################################
