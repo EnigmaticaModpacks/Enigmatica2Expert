@@ -170,3 +170,11 @@ craft.remake(<fluiddrawers:tank>, ["pretty",
   "⌃": <ore:blockQuartzBlack>,                    # Block of Black Quartz
   "F": <flopper:flopper>,                         # Flopper
 });
+craft.make(<fluiddrawers:tank>, ["pretty",
+  "Q ⌃ Q",
+  "F   F",
+  "Q ⌃ Q"], {
+  "Q": <forestry:propolis:*>,
+  "⌃": <ore:blockQuartzBlack>,                    # Block of Black Quartz
+  "F": <flopper:flopper>,                         # Flopper
+});

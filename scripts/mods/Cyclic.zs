@@ -188,7 +188,7 @@ val packagerList = [
 
   [<cyclicmagic:magic_net> * 4]   , [
     <minecraft:snowball>,      # Snowball
-    <minecraft:tallgrass>,     # Grass
+    <minecraft:tallgrass:*>,   # Grass
     <scalinghealth:heartdust>, # Heart Dust
   ],
   [<cyclicmagic:ender_snow>]      , [

@@ -152,7 +152,6 @@ val merchData = {
         [E*12, <conarm:travel_goggles>],
         [E*12, <conarm:travel_sneak>],
         [E*4, <conarm:frosty_soles>],
-        [E*10, pap, <conarm:polishing_kit>.withTag({Material: "fluix_steel"})],
         [E*10, pap, <conarm:polishing_kit>.withTag({Material: "bloodwood"})],
         [E*10, pap, <conarm:polishing_kit>.withTag({Material: "chitintandeathworm"})],
       ],

@@ -63,8 +63,8 @@ recipes.remove(<integratedterminals:part_terminal_storage_item>);
 	[<integrateddynamics:variable_transformer>, <integrateddynamics:part_display_panel_item>, <integrateddynamics:variable_transformer:1>], 
 	[<ore:dustGlowstone>, <rftools:storage_scanner>, <ore:dustGlowstone>]]);
 
-# [Output Variable Transformer*4] from [Piston][+2]
-craft.remake(<integrateddynamics:variable_transformer> * 4, ["pretty",
+# [Output Variable Transformer] from [Piston][+2]
+craft.remake(<integrateddynamics:variable_transformer> * 2, ["pretty",
   "  ▬  ",
   "C P C",
   "  ▬  "], {
@@ -73,8 +73,8 @@ craft.remake(<integrateddynamics:variable_transformer> * 4, ["pretty",
   "▬": <ore:ingotCobalt>,    # Cobalt Ingot
 });
 
-# [Input Variable Transformer*4] from [Sticky Piston][+2]
-craft.remake(<integrateddynamics:variable_transformer:1> * 4, ["pretty",
+# [Input Variable Transformer] from [Sticky Piston][+2]
+craft.remake(<integrateddynamics:variable_transformer:1> * 2, ["pretty",
   "  ▬  ",
   "C P C",
   "  ▬  "], {
@@ -90,7 +90,7 @@ craft.remake(<integrateddynamics:part_connector_mono_directional_item>, ["pretty
   "L I L"], {
   "I": <integrateddynamics:variable_transformer:1>, # Input Variable Transformer
   "L": <integrateddynamics:cable>,                  # Logic Cable
-  "M": <ore:ingotManyullyn>,
+  "M": <tconstruct:large_plate>.withTag({Material: "manyullyn"}),
   "O": <integrateddynamics:variable_transformer>,   # Output Variable Transformer
 });
 

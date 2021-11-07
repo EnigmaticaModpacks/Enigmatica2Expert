@@ -403,3 +403,28 @@ for biome, input in {
 	recipes.addShapeless(<extrautils2:biomemarker>.withTag({Biome: biome}), [<extrautils2:biomemarker>, input]);
 }
 #-----------------------------------------------------------------------------------------------
+
+# Fix enchanting tables in craft
+# [Magic Infuser] from [Climograph Base Unit][+1]
+craft.reshapeless(<extrautils2:terraformer:8>, "CEE", {
+  "C": <extrautils2:terraformer:9>,   # Climograph Base Unit
+  "E": <endreborn:block_essence_ore>, # Essence Ore
+});
+
+# [Mechanical Crafter] from [Redstone Gear][+2]
+craft.remake(<extrautils2:crafter>, ["pretty",
+  "# # #",
+  "░ ♥ ░",
+  "░ ░ ░"], {
+  "#": <extrautils2:ironwood_planks:0>, # Ferrous-Juniper Planks
+  "░": <ore:cobblestone>,               # Cobblestone
+  "♥": <ore:gearRedstone>,              # Redstone Gear
+});
+craft.make(<extrautils2:crafter>, ["pretty",
+  "# # #",
+  "░ ♥ ░",
+  "░ ░ ░"], {
+  "#": <extrautils2:ironwood_planks:1>, # Ferrous-Juniper Planks
+  "░": <ore:cobblestone>,               # Cobblestone
+  "♥": <ore:gearRedstone>,              # Redstone Gear
+});

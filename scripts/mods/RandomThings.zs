@@ -454,3 +454,31 @@ craft.reshapeless(<randomthings:escaperope>, "▬s", {
   "▬": <ore:ingotDemonicMetal>, # Demon Ingot
   "s": <ore:string>,            # String
 });
+
+# [Plate Base]*4 from [Paper][+1]
+craft.remake(<randomthings:ingredient:8> * 4, ["pretty",
+  "I   I",
+  "  p  ",
+  "I   I"], {
+  "I": <ore:barsIron>, # Iron Bars
+  "p": <ore:paper>,    # Paper
+});
+
+# [Collection Plate]*2 from [Wooden Hopper][+1]
+craft.remake(<randomthings:plate_collection> * 2, ["pretty",
+  "□   □",
+  "  W  ",
+  "□   □"], {
+  "□": <randomthings:ingredient:8>, # Plate Base
+  "W": <tconstruct:wooden_hopper>,  # Wooden Hopper
+});
+
+# [Extraction Plate]*2 from [Wooden Hopper][+2]
+craft.remake(<randomthings:plate_extraction> * 2, ["pretty",
+  "□ ‚ □",
+  "‚ W ‚",
+  "□ ‚ □"], {
+  "□": <randomthings:ingredient:8>, # Plate Base
+  "‚": <ore:nuggetFakeIron>,        # Iron Alloy Nugget
+  "W": <tconstruct:wooden_hopper>,  # Wooden Hopper
+});

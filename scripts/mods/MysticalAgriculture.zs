@@ -581,3 +581,65 @@ craft.reshapeless(<mysticalagriculture:watering_can:1>, "eP", watering_ingrs);
 craft.reshapeless(<mysticalagriculture:watering_can:2>, "pn", watering_ingrs);
 craft.reshapeless(<mysticalagriculture:watering_can:3>, "§u", watering_ingrs);
 craft.reshapeless(<mysticalagriculture:watering_can:4>, "bS", watering_ingrs);
+
+# [Mud Ball]*16 from [Water Essence]*2[+1]
+craft.make(<biomesoplenty:mudball> * 16, ["pretty",
+  "i T i",
+  "T   T",
+  "i T i"], {
+  "i": <mysticalagriculture:dirt_essence>,  # Dirt Essence
+  "T": <mysticalagriculture:water_essence>, # Water Essence
+});
+
+# [Wood Pile]*8 from [Wood Essence]
+craft.make(<forestry:wood_pile> * 12, ["pretty",
+  "T   T",
+  "T   T",
+  "T   T"], {
+  "T": <mysticalagriculture:wood_essence>, # Wood Essence
+});
+
+# [Slime Ball]*8 from [Water Essence]*2[+1]
+craft.make(<tconstruct:edible:1> * 8, ["pretty",
+  "  T  ",
+  "T i T",
+  "  T  "], {
+  "T": <mysticalagriculture:slime_essence>, # Slime Essence
+  "i": <mysticalagriculture:water_essence>, # Water Essence
+});
+
+# [Slime Ball]*8 from [Obsidian Essence]*2[+1]
+craft.make(<tconstruct:edible:2> * 8, ["pretty",
+  "  T  ",
+  "T i T",
+  "  T  "], {
+  "T": <mysticalagriculture:slime_essence>,    # Slime Essence
+  "i": <mysticalagriculture:obsidian_essence>, # Obsidian Essence
+});
+
+# [Coagulated Blood]*8 from [Zombie Essence]*2[+1]
+craft.make(<tconstruct:edible:3> * 8, ["pretty",
+  "  T  ",
+  "T i T",
+  "  T  "], {
+  "T": <mysticalagriculture:slime_essence>,  # Slime Essence
+  "i": <mysticalagriculture:zombie_essence>, # Zombie Essence
+});
+
+# [Slime Ball]*8 from [Fire Essence]*2[+1]
+craft.make(<tconstruct:edible:4> * 8, ["pretty",
+  "  T  ",
+  "T i T",
+  "  T  "], {
+  "T": <mysticalagriculture:slime_essence>, # Slime Essence
+  "i": <mysticalagriculture:fire_essence>,  # Fire Essence
+});
+
+# [Slime in a Bucket] from [Bucket][+1]
+craft.make(<quark:slime_bucket>, ["pretty",
+  "  T  ",
+  "T ~ T",
+  "  T  "], {
+  "T": <mysticalagriculture:slime_essence>, # Slime Essence
+  "~": <minecraft:bucket>,                  # Bucket
+});

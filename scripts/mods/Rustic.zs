@@ -59,3 +59,6 @@ craft.remake(<rustic:liquid_barrel>, ["pretty",
   "‚": <ore:nuggetFakeIron>, # Iron Alloy Nugget
   "≢": <ore:slabWood>, # Oak Wood Slab
 });
+
+# Crushed ice pricy alt
+mods.rustic.CrushingTub.addRecipe(<liquid:ice> * 100, null, <mctsmelteryio:iceball>);

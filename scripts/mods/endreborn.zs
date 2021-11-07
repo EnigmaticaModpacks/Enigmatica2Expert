@@ -232,3 +232,10 @@ mods.rustic.EvaporatingBasin.addRecipe(<endreborn:item_end_shard>, <liquid:liqui
 
 # [Endorium Nugget]*6 from [Ender Lilly][+1]
 scripts.category.expire_in_block.set(<extrautils2:enderlilly>, {"cyclicmagic:fire_dark" : <endreborn:item_raw_endorium> * 6});
+
+# [Endorium Ingot] from [Endorium Nugget]
+recipes.addShapeless("Endorium Nuggets from Ingot", <endreborn:item_raw_endorium> * 9, [<endreborn:item_ingot_endorium>]);
+recipes.removeByRecipeName("endreborn:items/item_ingot_endorium_2");
+craft.shapeless(<endreborn:item_ingot_endorium>, "‚‚‚‚‚‚‚‚‚", {
+  "‚": <endreborn:item_raw_endorium>, # Endorium Nugget
+});

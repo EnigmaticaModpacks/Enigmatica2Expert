@@ -115,6 +115,13 @@ craft.remake(<harvestcraft:waterfilter>, ["pretty",
   "R": <sonarcore:reinforceddirtbrick>, # Reinforced Dirt Brick
 });
 
+# [Cheese]*2 from [Milk][+3]
+craft.reshapeless(<harvestcraft:cheeseitem> * 2, "PACSS", {
+  "P": <ore:toolPot>,     # Pot
+  "A": <ore:listAllmilk>, # Milk
+  "C": <ore:foodCheese>,  # Cheese
+  "S": <ore:itemSalt>,    # Salt
+});
 
 
 

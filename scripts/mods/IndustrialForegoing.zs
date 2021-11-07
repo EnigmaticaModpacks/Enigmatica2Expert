@@ -329,6 +329,18 @@ craft.remake(<industrialforegoing:energy_field_addon>, ["pretty",
   "▬": <ore:ingotPinkMetal>,                # Pink Slime Ingot
 });
 
+# [Pitiful Fuel Generator] from [Rubber][+4]
+craft.remake(<industrialforegoing:pitiful_fuel_generator>, ["pretty",
+  "░ □ ░",
+  "¤ R ¤",
+  "░ F ░"], {
+  "░": <ore:cobblestone>,   # Cobblestone
+  "□": <ore:plateGold>,     # Gold Plate
+  "¤": <ore:gearIron>,      # Iron Gear
+  "R": <ore:itemRubber>,    # Rubber
+  "F": <minecraft:furnace>, # Furnace
+});
+
 
 # Remove barely all Ore benification to leave only meat washing
 function cleanupBenification(item as IItemStack, ingot as IItemStack, dust as IItemStack, fluid as ILiquidStack) as void {

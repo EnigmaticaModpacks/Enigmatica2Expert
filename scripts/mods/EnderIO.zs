@@ -380,6 +380,7 @@ craft.remake(<enderio:block_gauge>, ["pretty",
 # [Endervoir] from [Molten Lapis]
 recipes.remove(<enderio:block_reservoir>);
 scripts.wrap.tconstruct.Casting.addBasinRecipe(<enderio:block_reservoir>, <enderio:block_omni_reservoir>, <liquid:lapis>, 666 * 9);
+scripts.process.fill(<enderio:block_omni_reservoir>,  <liquid:lapis> * (666 * 9),  <enderio:block_reservoir>,  "only: NCInfuser Transposer");
 
 # [Black Paper]*8 from [Ink Sac][+1]
 craft.remake(<enderio:item_material:77> * 8, ["pretty",

@@ -221,8 +221,8 @@ for pos, names in utils.graph([
 	"2": [],
 	"3": ["osmium", "obsidian", "vibrant_alloy", "pulsating_iron", "end_steel"],
 	"4": ["xu_demonic_metal", "mirion", "signalum", "lumium", "crystalline_alloy", "melodic_alloy", "crystalline_pink_slime"],
-	"5": ["xu_enchanted_metal", "xu_evil_metal"],
-	"6": ["stellar_alloy", "osgloglas", "enderium"],
+	"5": ["xu_enchanted_metal", "xu_evil_metal", "fierymetal"],
+	"6": ["stellar_alloy", "osgloglas", "enderium", "supremium"],
 }) {
 	for name in names {
 		var temp = pos.x as int;

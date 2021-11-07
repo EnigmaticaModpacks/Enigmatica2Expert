@@ -73,7 +73,7 @@ function spawnItems(inputItEnt as IEntityItem, output as IItemStack) as void {
       inputItEnt.world.spawnEntity(itemEntity);
 
       inputItEnt.world.playSound("thaumcraft:poof", "ambient", pos, 0.5f, 1.5f);
-      server.commandManager.executeCommand(server, "/particle fireworksSpark "~inputItEnt.x~" "~inputItEnt.y~" "~inputItEnt.z~" 0 0.1 0 0.1 5");
+      // server.commandManager.executeCommand(server, "/particle fireworksSpark "~inputItEnt.x~" "~inputItEnt.y~" "~inputItEnt.z~" 0 0.1 0 0.1 5");
     }, i * 3 + 1);
 
     i += 1;

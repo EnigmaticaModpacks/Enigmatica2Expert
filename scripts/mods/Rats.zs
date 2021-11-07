@@ -437,3 +437,10 @@ mods.rats.recipes.addChefRatRecipe(<minecraft:dye:4>, <extrautils2:ingredients:3
 # [Liveroots] from [Roots]
 mods.rats.recipes.addChefRatRecipe(<twilightforest:root>, <twilightforest:root:1>);
 #---------------------------------
+
+# Additional usage
+# [Crystallized Canola Seed] from [Canola Seeds][+1]
+craft.shapeless(<actuallyadditions:item_misc:23>, "PPPPCPPPP", {
+  "P": <ore:ratPoop>,    # Rat "Nugget"
+  "C": <ore:seedCanola>, # Canola Seeds
+});
