@@ -5,6 +5,8 @@ import crafttweaker.oredict.IOreDictEntry;
 import mods.jaopca.JAOPCA;
 import mods.jaopca.OreEntry;
 import mods.ctutils.utils.Math.sqrt;
+import mods.ctutils.utils.Math.max;
+import mods.ctutils.utils.Math.min;
 
 # Untamed tagged rats still despawns.
 # Deny this by costom event
@@ -326,6 +328,41 @@ craft.reshapeless(<rats:assorted_vegetables>, "BPCBPCBPC", {
 val ph = <contenttweaker:any_different_item>.withLore([game.localize("e2ee.garbage.affect_output_amount")]);
 recipes.addShapeless("Garbage_placeholder", <rats:garbage_pile> * 6, [<rats:contaminated_food>,ph,ph,ph,ph,ph,ph,ph,ph,]);
 
+# Dirt       - 0.5 = 0
+# Obsidian   - 50 = 0.6
+# Maze Stone - 100 = 0.9
+function getValue_hardness    (a as IItemStack) as double { return max(0.0d, (sqrt(a.hardness as double + 1.0d) - 1.0d) / 5.0d); }
+
+# Wood Log     - 300    = 0.26807
+# Coal Block   - 16000  = 1.064912
+# Blasted Coal - 120000 = 1.89327
+function getValue_burnTime    (a as IItemStack) as double { return max(0.0d, sqrt(sqrt(a.burnTime as double / 10.0d)) - 1.0d) / 5.0d; }
+
+# 1 = 0.2
+# 3 = 0.8
+# 5 = 3.2
+function getValue_enchantments(a as IItemStack) as double { return (!isNull(a.enchantments) && a.enchantments.length > 0 ? pow(2, a.enchantments.length) as double : 0.0d) / 10.0d; }
+
+function getValue_toolClasses (a as IItemStack) as double { return (!isNull(a.toolClasses)  && a.toolClasses.length  > 0 ? a.toolClasses.length as double : 0.0d) / 10.0d; }
+
+# Get input item multiplication value
+# Maximum value would be `x^8 = 64, x= 2^(3/4) ~~ 1.68`, about 0.168 each property
+function getItemMults(a as IItemStack) as double {
+  var v = 1.0d;
+
+  v += getValue_hardness(a);
+  v += getValue_burnTime(a);
+  v += getValue_enchantments(a);
+  v += getValue_toolClasses(a);
+  if(a.maxStackSize != 64 || !a.isStackable) v+=0.1d;
+  if(a.hasTag)                               v+=0.1d;
+  if(a.isDamageable)                         v+=0.1d;
+  if(a.definition.owner == "minecraft")      v-=0.1d;
+  if(a.isItemBlock)                          v-=0.1d;
+
+  return v;
+}
+
 recipes.addHiddenShapeless("Garbage_function", <rats:garbage_pile>, [
   <rats:contaminated_food>.marked("m8"),
   <*>.marked("m0"),
@@ -352,25 +389,11 @@ recipes.addHiddenShapeless("Garbage_function", <rats:garbage_pile>, [
   }
 
   # Calculate how much garbage
-  var amount = 0.0d;
+  var amount = 1.0d;
   for i in 0 to 9 {
-    val a = ins["m"~i];
-    if (<rats:contaminated_food> has a) continue;
-
-    var v = 1.0d;
-
-    v += max(0, sqrt(a.hardness + 1) - 1);
-    v += !isNull(a.toolClasses)  && a.toolClasses.length  > 0 ? a.toolClasses.length  : 0;
-    v += !isNull(a.enchantments) && a.enchantments.length > 0 ? pow(3, a.enchantments.length) : 0;
-    v += max(0, sqrt(sqrt(a.burnTime / 10)) - 1);
-    if(a.maxStackSize != 64)              v+=0.5d;
-    if(!a.isStackable)                    v+=0.5d;
-    if(a.hasTag)                          v+=0.5d;
-    if(a.isDamageable)                    v+=0.5d;
-    if(a.definition.owner != "minecraft") v+=0.5d;
-    if(a.isItemBlock)                     v-=0.75d;
-
-    amount += v;
+    val item = ins["m"~i];
+    if (<rats:contaminated_food> has item) continue;
+    amount *= getItemMults(item);
   }
 
   return out * max(1, min(64, amount as int));
