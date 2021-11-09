@@ -72,29 +72,23 @@
         "index:3": 0,
         "choices:9": {
           "0:10": {
-            "id:8": "extrautils2:machine",
+            "id:8": "libvulpes:coalgenerator",
             "Count:3": 1,
-            "tag:10": {
-              "Type:8": "extrautils2:generator_survival"
-            },
             "Damage:2": 0,
             "OreDict:8": ""
           },
           "1:10": {
-            "id:8": "nuclearcraft:decay_generator",
+            "id:8": "extrautils2:machine",
             "Count:3": 1,
+            "tag:10": {
+              "Type:8": "extrautils2:generator"
+            },
             "Damage:2": 0,
             "OreDict:8": ""
           },
           "2:10": {
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
-            "id:8": "bq_standard:loot_chest",
+            "id:8": "industrialforegoing:pitiful_fuel_generator",
             "Count:3": 1,
-            "tag:10": {
-              "hideLootInfo:1": 1
-            },
             "Damage:2": 0,
             "OreDict:8": ""
           }

@@ -5276,13 +5276,34 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
               "id:8": "mekanism:atomicalloy",
               "Count:3": 8,
               "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "twilightforest:steeleaf_ingot",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {
+                  "AS_Amulet_HolderLeast:4": -8469918875462925012,
+                  "AS_Amulet_HolderMost:4": -5260415147165141885
+                }
+              },
+              "id:8": "bq_standard:loot_chest",
+              "Count:3": 1,
+              "tag:10": {
+                "hideLootInfo:1": 1
+              },
+              "Damage:2": 75,
               "OreDict:8": ""
             }
           }
@@ -56560,16 +56581,25 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
-              "id:8": "bq_standard:loot_chest",
-              "Count:3": 1,
-              "Damage:2": 50,
+              "id:8": "rats:marbled_cheese_raw",
+              "Count:3": 64,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "rats:block_of_cheese",
+              "Count:3": 32,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "rats:contaminated_food",
+              "Count:3": 64,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -62577,29 +62607,23 @@
           "index:3": 0,
           "choices:9": {
             "0:10": {
-              "id:8": "extrautils2:machine",
+              "id:8": "libvulpes:coalgenerator",
               "Count:3": 1,
-              "tag:10": {
-                "Type:8": "extrautils2:generator_survival"
-              },
               "Damage:2": 0,
               "OreDict:8": ""
             },
             "1:10": {
-              "id:8": "nuclearcraft:decay_generator",
+              "id:8": "extrautils2:machine",
               "Count:3": 1,
+              "tag:10": {
+                "Type:8": "extrautils2:generator"
+              },
               "Damage:2": 0,
               "OreDict:8": ""
             },
             "2:10": {
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
-              "id:8": "bq_standard:loot_chest",
+              "id:8": "industrialforegoing:pitiful_fuel_generator",
               "Count:3": 1,
-              "tag:10": {
-                "hideLootInfo:1": 1
-              },
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -74408,9 +74432,12 @@
             },
             "2:10": {
               "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
+                "astralsorcery:cap_item_amulet_holder:10": {
+                  "AS_Amulet_HolderLeast:4": -8469918875462925012,
+                  "AS_Amulet_HolderMost:4": -5260415147165141885
+                }
               },
-              "id:8": "bibliocraft:atlasplate",
+              "id:8": "bibliocraft:enchantedplate",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -75865,8 +75892,25 @@
       },
       "tasks:9": {
         "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
-          "taskID:8": "bq_standard:checkbox"
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "openblocks:dev_null",
+              "Count:3": 1,
+              "tag:10": {},
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
         }
       },
       "rewards:9": {
@@ -79215,12 +79259,8 @@
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
-            "id:8": "cyclicmagic:sleeping_mat",
+            "id:8": "minecraft:apple",
             "Count:3": 1,
-            "tag:10": {},
             "Damage:2": 0,
             "OreDict:8": ""
           },
@@ -79236,8 +79276,21 @@
       },
       "tasks:9": {
         "0:10": {
-          "index:3": 1,
-          "taskID:8": "bq_standard:checkbox"
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:apple",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
         }
       },
       "rewards:9": {
@@ -86998,7 +87051,7 @@
           "desc:8": "bq.chapter16.desc"
         }
       },
-      "order:3": 3
+      "order:3": 2
     },
     "17:10": {
       "quests:9": {
@@ -88779,7 +88832,7 @@
           "desc:8": "bq.chapter23.desc"
         }
       },
-      "order:3": 4
+      "order:3": 3
     },
     "24:10": {
       "quests:9": {
@@ -89392,15 +89445,8 @@
           "visibility:8": "ALWAYS",
           "name:8": "bq.chapter24.name",
           "icon:10": {
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {
-                "AS_Amulet_HolderLeast:4": -8469918875462925000,
-                "AS_Amulet_HolderMost:4": -5260415147165142000
-              }
-            },
-            "id:8": "cyclicmagic:sleeping_mat",
+            "id:8": "minecraft:apple",
             "Count:3": 1,
-            "tag:10": {},
             "Damage:2": 0,
             "OreDict:8": ""
           },
@@ -89409,7 +89455,7 @@
           "desc:8": "bq.chapter24.desc"
         }
       },
-      "order:3": 2
+      "order:3": 4
     }
   },
   "questSettings:10": {
