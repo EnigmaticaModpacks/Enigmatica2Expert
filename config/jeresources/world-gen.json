@@ -1,5 +1,17 @@
 [
   {
+    "block": "randomthings:spectreblock:0",
+    "distrib": "0,1.0;1,0.01;2,0.01;3,1.0;4,0.0",
+    "silktouch": false,
+    "dim": "Spectre (-343800852)"
+  },
+  {
+    "block": "randomthings:spectrecore:0",
+    "distrib": "0,0.05;1,0.0;",
+    "silktouch": false,
+    "dim": "Spectre (-343800852)"
+  },
+  {
     "block": "rftoolsdim:block_blockdimensionalshard:0",
     "distrib": "0,0.0;1,0.001;250,0.001;251,0.0;",
     "silktouch": false,
