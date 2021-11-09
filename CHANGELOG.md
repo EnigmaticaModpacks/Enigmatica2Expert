@@ -1,6 +1,88 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
 
+# v0.39
+
+
+## 🟢 New Mods
+
+Icon | Summary | Reason
+----:|:--------| ------
+<img src="https://media.forgecdn.net/avatars/thumbnails/453/721/256/256/637719719509416092.png" width="50"> | 🟫 [**Tinkers OreDict Cache**](https://www.curseforge.com/minecraft/mc-mods/tinkers-oredict-cache) <sup><sub>TinkersOreDictCache-1.0.jar</sub></sup> <br> caches all oredict smelting recipes of TConstruct to speed up game loading. | Speedup modpack loading for about 30 seconds! (-6% of total load time)
+<img src="https://media.forgecdn.net/avatars/thumbnails/445/527/256/256/637701622407921289.png" width="50"> | 🟨 [**Better P2P**](https://www.curseforge.com/minecraft/mc-mods/betterp2p) <sup><sub>betterp2p-1.12.2-1.2.2.jar</sub></sup> <br> Better P2P and memory card for Applied Energistics 2 | Sounds nice, should test that
+
+## 🟡 Updated Mods
+
+- **Village Names**
+- **CraftTweaker**
+- **Zen Utils**
+- **Modular Controller**
+- **Just Enough Drags**
+- **LittleTiles**
+
+
+## [> Mods updates detailed.](changelogs/CHANGELOG_MODS_v0.39.md)
+
+
+## ✏️ **Recipes**
+  - ### 🖉 **New Recipes**
+    - ![](https://git.io/JtJGS "Compressed Cobblestone") and 19 other compressed items could be melted (with reduced output)
+    - ![](https://git.io/JOGu6 "Endervoir") in Transposerand and Fluid Infuser
+    - ![](https://git.io/JXrMO "Crystallized Canola Seed") from ![](https://git.io/Jsey2 "Rat Nugget")
+    - ![](https://git.io/JcW2R "Basic Tank") from ![](https://git.io/JOGgk "Propolis")
+    - ![](https://git.io/JcNYb "Blizz Rod")![](https://git.io/JXrM8 "Blitz Rod")![](https://git.io/JXrMl "Basalz Rod")
+    - ![](https://git.io/JXrMC "Crushed Ice")
+
+  - ### ✐ **Cheaper**
+    - ![](https://git.io/JXrMB "Pitiful Fuel Generator")
+      ![](https://git.io/JXrM3 "Plate Base")
+      ![](https://git.io/JXrMn "Collection Plate")
+      ![](https://git.io/JXrM4 "Extraction Plate")
+
+  - ### ✎ **Harder**
+    - ![](https://git.io/JXrMZ "Endorium Ingot")
+      ![](https://git.io/J6y7Z "Cheese")
+      ![](https://git.io/Jtyeb "Output Variable Transformer")
+      ![](https://git.io/JtyeA "Input Variable Transformer")
+      ![](https://git.io/JtyeN "Mono-Directional Connector")
+      [Mechanical Crafter]
+
+  - ### ✏ **Misc Changes**
+    - ![](https://git.io/JXrXU "Molten Fiery Tank") and ![](https://git.io/JXV80 "Molten Supremium") higher temperature
+    - ![](https://git.io/JcbNq "Orechid") Significantly buff ![](https://git.io/JXrMR "Apatite Ore") output
+    - ![](https://git.io/JXrMs "Magic Infuser") fix missed ingredients
+    - ![](https://git.io/JtJff "Water Essence")![](https://git.io/JcbNU "Wood Essence")![](https://git.io/JXrMW "Slime Essence") have new crafting usages
+
+
+
+## 🔵 **Mods**
+  - ### 🐀 **Rats**: ![](https://git.io/JzVqO "Garbage Pile") use **Multiply** insted of **addition** to get amount
+      > Before, each item add their own fraction to result amount.  
+      > Now, all "values" of inputs would be multiplied with each other.  
+      > This makes recipe harder to automate, but easier to make more Garbage manually
+
+  - ### 💼 **Actually Additions**: Buff ![](https://git.io/JXrXR "Worm") lifetime x10
+
+  - ### 🔨 **Tinker's Construct**: Extend melting ignore list (More items could be melted)
+
+  - ### 🧻 **JEI**: Add spectre blocks in **Spectre** dimension
+
+  - ### 🏝️ **Void Island Control**: Disable island protection
+      > Now player can travel far from spawn
+
+
+
+## 🔄 **Misc Changes**
+  - ### 📖 **Quest Book**
+    - Quests updates
+    - Lootboxes: ![](https://git.io/JRLSO "Neutron Collector") remove from loot
+    - Osgloglas crafting - fix description (fix #14)
+
+
+
+
+
+
 # v0.38
 
 
