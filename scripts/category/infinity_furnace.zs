@@ -92,7 +92,7 @@ ${filtered.join('\n')}`
 
 }*/
 
-# Total Furnace recipes registered: 926
+# Total Furnace recipes registered: 925
 # Filtered by JEI blacklist: 77
 # Filtered manuallly (antidupe): 14
 # Filtered by oredict: 200
@@ -190,7 +190,6 @@ infinFurnace(utils.get("endreborn:block_wolframium_ore", W), utils.get("endrebor
 infinFurnace(utils.get("exnihilocreatio:item_material", 2), utils.get("exnihilocreatio:item_cooked_silkworm"));
 infinFurnace(utils.get("extrautils2:decorativesolid", 4), utils.get("extrautils2:decorativeglass"));
 ##infinFurnace(utils.get("extrautils2:ironwood_log", W), utils.get("minecraft:coal", 1));
-infinFurnace(utils.get("extrautils2:ironwood_planks", W), utils.get("minecraft:iron_nugget"));
 ##infinFurnace(utils.get("forestry:logs.0", W), utils.get("minecraft:coal", 1));
 ##infinFurnace(utils.get("forestry:logs.1", W), utils.get("minecraft:coal", 1));
 ##infinFurnace(utils.get("forestry:logs.2", W), utils.get("minecraft:coal", 1));
