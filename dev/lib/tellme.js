@@ -1,38 +1,38 @@
 
 //@ts-check
 
-const _ = require('lodash')
-const { getCSV, config } = require('./utils')
+import _ from 'lodash'
+import { getCSV, config } from './utils.js'
 
 /** @type {Set<string>} */
 let isBlocks
 /**
  * @param {string} itemID
  */
-module.exports.isBlock = (itemID) => (
+export function isBlock(itemID) { return (
   isBlocks ??= new Set(getCSV('config/tellme/blocks-csv.csv').map(o=>o['Registry name']))
-).has(itemID)
+).has(itemID)}
 
 /** @type {Set<string>} */
 let existOreDicts
 /**
  * @param {string} oreName
  */
-const isODExist = module.exports.isODExist = (oreName) => (
+export const isODExist = (oreName) => (
   existOreDicts ??= new Set(getCSV('config/tellme/items-csv.csv').map(o=>o['Ore Dict keys'].split(',')).flat())
 ).has(oreName)
 
 /** @type {Set<string>} */
 let existItems
-module.exports.isItemExist = (id) => (
+export function isItemExist(id) { return (
   existItems ??= new Set(getCSV('config/tellme/items-csv.csv').map(o=>o['Registry name']))
-).has(id.split(':').slice(0,2).join(':'))
+).has(id.split(':').slice(0,2).join(':'))}
 
 /** @type {Set<string>} */
 let jeiBlacklist
-module.exports.isJEIBlacklisted = (def,meta) => (
+export function isJEIBlacklisted(def,meta) { return (
   jeiBlacklist ??= new Set(config('config/jei/itemBlacklist.cfg').advanced.itemBlacklist)
-).has(def) || jeiBlacklist.has(def+':'+(meta??'0'))
+).has(def) || jeiBlacklist.has(def+':'+(meta??'0'))}
 
 
 let itemsTree
@@ -45,9 +45,9 @@ const initItemsTree = ()=> itemsTree ??=
   , result), {})
 
 /** @type {function(string,string=):Set<string>} */
-module.exports.getItemOredictSet = (id,meta='0') => (initItemsTree()[id] ??= {})[meta=='*' ? 0 : meta] ??= new Set()
+export function getItemOredictSet(id,meta='0') { return (initItemsTree()[id] ??= {})[meta=='*' ? 0 : meta] ??= new Set()}
 
-module.exports.getSubMetas = (definition) => Object.keys(initItemsTree()[definition] ??= {}).map(s=>parseInt(s))
+export function getSubMetas(definition) { return Object.keys(initItemsTree()[definition] ??= {}).map(s=>parseInt(s))}
 
 
 /**
@@ -68,7 +68,7 @@ module.exports.getSubMetas = (definition) => Object.keys(initItemsTree()[definit
  * @param {string} ore 
  * @returns {TMStack[]}
  */
-const getByOredict = module.exports.getByOredict = (ore) => {
+export const getByOredict = (ore) => {
   return getOresByRegex(new RegExp(`^${ore}$`, 'i'))
 }
 
@@ -77,7 +77,7 @@ const getByOredict = module.exports.getByOredict = (ore) => {
  * @param {string} oreBase 
  * @returns {{[OreKind: string]: TMStack}}
  */
-module.exports.getByOreBase = (oreBase) => {
+export function getByOreBase(oreBase) {
   return getByOreRgx(new RegExp(`^(\\w+)${oreBase}$`))
 }
 
@@ -86,7 +86,7 @@ module.exports.getByOreBase = (oreBase) => {
  * @param {string} kindKey 
  * @returns {{[OreBase: string]: TMStack}}
  */
-const getByOreKind = module.exports.getByOreKind = (kindKey) => {
+export const getByOreKind = (kindKey) => {
   return getByOreRgx(new RegExp(`^${kindKey}([A-Z]\\w+)$`))
 }
 
@@ -95,7 +95,7 @@ const getByOreKind = module.exports.getByOreKind = (kindKey) => {
  * @param {string[]} kindKeys 
  * @returns {string[]} oreBases which exist each of keys
  */
-module.exports.getOreBases_byKinds = (kindKeys) => {
+export function getOreBases_byKinds(kindKeys) {
   let entries = Object.entries(getByOreKind(kindKeys[0]))
   kindKeys.slice(1).forEach(kindKey=> {
     entries = entries.filter(([oreBase])=>isODExist(kindKey+oreBase))
@@ -157,7 +157,7 @@ function tellmeToObj(o) {
  * @param {string} ore 
  * @returns {TMStack}
  */
-module.exports.getByOredict_first = (ore) => getByOredict(ore).sort(prefferedModSort)[0]
+export function getByOredict_first(ore) { return getByOredict(ore).sort(prefferedModSort)[0]}
 
 /** @type {Object<string,number>}}*/
 const modWeights = `
@@ -187,7 +187,7 @@ const modWeights = `
  * @param {TMStack} a 
  * @param {TMStack} b
  */
-const prefferedModSort = module.exports.prefferedModSort = (a,b) => {
+export const prefferedModSort = (a,b) => {
   const va = modWeights[b.owner]??0, vb = modWeights[a.owner]??0
   return va > vb ? 1 : (va < vb ? -1 : 0)
 }

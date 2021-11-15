@@ -7,11 +7,14 @@
 
 //@ts-check
 
-const _ = require('lodash')
-const path = require('path')
-const { getCSV, loadText, saveText } = require('../lib/utils.js')
-const { isBlock } = require('../lib/tellme.js')
-const numeral = require('numeral')
+import _ from 'lodash'
+import { getCSV, loadText, saveText, defaultHelper } from '../lib/utils.js'
+import { isBlock } from '../lib/tellme.js'
+import numeral from 'numeral'
+
+
+import { URL, fileURLToPath  } from 'url' // @ts-ignore
+function relative(relPath='./') { return fileURLToPath(new URL(relPath, import.meta.url)) }
 
 /**
  * @param {string|number} v
@@ -20,12 +23,12 @@ const nice = v => {return numeral(+v).format('0.0')}
 
 
 
-const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
+export async function init(h=defaultHelper) {
 
   //###############################################################################
   // Living Matter
   //###############################################################################
-  const livingmatter = getCSV(path.resolve(__dirname, './data/living_matter.csv'))
+  const livingmatter = getCSV(relative('./data/living_matter.csv'))
   .map(l=>` <
           ${isBlock(l.ID) ? 'B' : 'I'}
           ${l.ID}
@@ -57,24 +60,24 @@ const init = module.exports.init = async function(h=require('../automate').defau
   // Spawner
   //###############################################################################
 
-  const mobspawnamounts = getCSV(path.resolve(__dirname, './data/entities.csv'))
+  const mobspawnamounts = getCSV(relative('./data/entities.csv'))
   .map(l=>`    S:"${l.ID}.spawnamount.0" <
           ${isBlock(l.Representation) ? 'B' : 'I'}
           ${l.Representation}
           0
-          ${nice(l.Value/10000)}
+          ${nice(parseFloat(l.Value)/10000)}
       >
       S:"${l.ID}.spawnamount.1" <
           ${isBlock(l['Home Block']) ? 'B' : 'I'}
           ${l['Home Block']}
           0
-          ${nice(l.Value/2000)}
+          ${nice(parseFloat(l.Value)/2000)}
       >
       S:"${l.ID}.spawnamount.2" <
           L
           
           0
-          ${nice(Math.sqrt(l.Value))}
+          ${nice(Math.sqrt(parseFloat(l.Value)))}
       >`)
 
 
@@ -104,4 +107,5 @@ const init = module.exports.init = async function(h=require('../automate').defau
 }
 
 
-if(require.main === module) init()
+// @ts-ignore
+if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()

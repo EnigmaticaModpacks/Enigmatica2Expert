@@ -7,12 +7,12 @@
 
 //@ts-check
 
-const curseforge = require('mc-curseforge-api')
-const {injectInFile, loadJson} = require('../lib/utils.js')
-const _ = require('lodash')
-const {getModLoadTimeTyples} = require('./benchmark.js')
+import { getMod } from 'mc-curseforge-api'
+import { injectInFile, loadJson, defaultHelper } from '../lib/utils.js'
+import _ from 'lodash'
+import { getModLoadTimeTyples } from './benchmark.js'
 
-const getModsIds = module.exports.getModsIds = function (json_Path_A, json_Path_B) {
+export function getModsIds(json_Path_A, json_Path_B) {
 
   /** @type {InstalledAddon[]} */ 
   const A = loadJson(json_Path_A).installedAddons
@@ -78,7 +78,7 @@ function getSquare(modName) {
   if(rate >=0.01  ) return '🟥'
 }
 
-const formatRow = module.exports.formatRow = function (mcAddon, curseAddon, options={}) {
+export function formatRow(mcAddon, curseAddon, options={}) {
   const name = curseAddon.name.trim()
   return (options.asList?'- ':'') + 
   (options.noIcon?'':`<img src="${getLogo(curseAddon.logo)}" width="50"> | ${getSquare(name)} `)+
@@ -98,7 +98,7 @@ function formatTable(rows) {
   ].join('\n')
 }
 
-const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
+export async function init(h=defaultHelper) {
 
   await h.begin('Get Mods diffs from JSONs')
   const diff = getModsIds('../Enigmatica 2 Expert - E2E (unchanged, updated)/minecraftinstance.json', 'minecraftinstance.json')
@@ -109,7 +109,7 @@ const init = module.exports.init = async function(h=require('../automate').defau
   await h.begin('Asking Curseforge API for mods', diff.union.length)
 
   const cursedUnion = await Promise.all(diff.union.map(mcAddon=>{
-    const p = curseforge.getMod(mcAddon.addonID)
+    const p = getMod(mcAddon.addonID)
     p.then(()=>h.step())
     return p
   }))
@@ -145,7 +145,8 @@ const init = module.exports.init = async function(h=require('../automate').defau
 }
 
 
-if(require.main === module) init()
+// @ts-ignore
+if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()
 
 /**
  * @typedef {Object} InstalledAddon

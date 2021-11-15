@@ -10,12 +10,15 @@
 
 
 const {max, round, abs, sign,sqrt,pow,log} = Math // eslint-disable-line
-const {table, getBorderCharacters } = require('table')
-const fs = require('fs')
-const path = require('path')
-const csv = require('csvtojson')
-const glob = require('glob')
-const {injectInFile, loadText, subFileName, saveText} = require('../lib/utils.js')
+import { table, getBorderCharacters } from 'table'
+import { writeFileSync } from 'fs'
+import csv from 'csvtojson'
+import glob from 'glob'
+import { injectInFile, loadText, subFileName, saveText, defaultHelper } from '../lib/utils.js'
+
+import { URL, fileURLToPath  } from 'url' // @ts-ignore
+function relative(relPath='./') { return fileURLToPath(new URL(relPath, import.meta.url)) }
+
 
 const paths = {
 	default_config:       'dev/default_configs/tweakersconstruct.cfg',
@@ -195,7 +198,7 @@ function writeStatsTable(tweakGroup, tweakObj, list) {
     drawHorizontalLine: () => false
 	})
 
-	saveText(csvTable, path.resolve(__dirname,
+	saveText(csvTable, relative(
 		`./stats/${tweakGroup.replace(/\s+Tweaks$/i, 's')}.csv`
 	))
 }
@@ -285,7 +288,7 @@ function addInvalidTweaks(tweakObj, existMats) {
 	})
 }
 
-const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
+export async function init(h=defaultHelper) {
 
 	// Format big numbers
 	await h.begin('Loading default tweakersconstruct.cfg')
@@ -294,7 +297,7 @@ const init = module.exports.init = async function(h=require('../automate').defau
 	await h.begin('Loading current tweakersconstruct.cfg')
 	current_tweakers_cfg = loadText(paths.tweakerconstruct_cfg)
 	
-	const tweaksCSVList = glob.sync(path.resolve(__dirname, './tweaks/*.csv'))
+	const tweaksCSVList = glob.sync(relative('./tweaks/*.csv'))
 	await h.begin('Parsing CSVs', tweaksCSVList.length)
 	let totalTweaked = 0
 	for(const filePath of tweaksCSVList) {
@@ -315,7 +318,7 @@ const init = module.exports.init = async function(h=require('../automate').defau
 	}
 
 	await h.begin('Saving files')
-  fs.writeFileSync(paths.tweakerconstruct_cfg, current_tweakers_cfg)
+  writeFileSync(paths.tweakerconstruct_cfg, current_tweakers_cfg)
 
 	Object.entries(invalid).forEach(([key,set])=>{
 		if(set.size === 0) return
@@ -329,7 +332,8 @@ const init = module.exports.init = async function(h=require('../automate').defau
 	h.result(`Total lines tweaked: ${totalTweaked}`)
 }
 
-if(require.main === module) init()
+// @ts-ignore
+if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()
 
 /*
 

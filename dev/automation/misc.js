@@ -7,20 +7,20 @@
 
 //@ts-check
 
-const replace = require('replace-in-file')
-const {injectInFile, loadText, setBlockDropsList} = require('../lib/utils.js')
-const del = require('del')
+import replace_in_file from 'replace-in-file'
+import { injectInFile, loadText, setBlockDropsList, defaultHelper } from '../lib/utils.js'
+import del from 'del'
 
 
 
-const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
+export async function init(h=defaultHelper) {
 
   await h.begin('Replacing Optifine item IDs')
   const debug_log = loadText('logs/debug.log')
   const lootChestID = debug_log.match(/Registry: (\d+) bq_standard:loot_chest bq_standard.items.ItemLootChest/)?.[1]
   let countReplacedIDs = 0
   if(lootChestID) {
-    replace.sync({
+    replace_in_file.sync({
       files: 'resourcepacks/bq_lootchests/assets/minecraft/mcpatcher/cit/loot_chest_*.properties',
       from: /(items=)\d+/gm,
       to: '$1'+lootChestID,
@@ -150,4 +150,5 @@ const init = module.exports.init = async function(h=require('../automate').defau
   h.result(`Replaced Optifine: ${countReplacedIDs}, Saved fakeIron recipes: ${resultArr.length}, Removed cached: ${countCachedRemoved}`)
 }
 
-if(require.main === module) init()
+// @ts-ignore
+if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()

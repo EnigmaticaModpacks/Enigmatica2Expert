@@ -1,8 +1,10 @@
-const { readdirSync, renameSync } = require('fs')
-const { resolve } = require('path')
+import { readdirSync, renameSync } from 'fs'
 
-readdirSync(__dirname)
+import { URL, fileURLToPath  } from 'url' // @ts-ignore
+function relative(relPath='./') { return fileURLToPath(new URL(relPath, import.meta.url)) }
+
+
+readdirSync(relative())
   .filter(f => f.match(/^.*\.(csv|txt)$/))
-  .forEach(f => renameSync(resolve(__dirname, f), resolve(__dirname, 
-    f.replace(/^([\w-]+?)_.*\.(csv|txt)$/, '$1.$2')
+  .forEach(f => renameSync(relative(f), relative(f.replace(/^([\w-]+?)_.*\.(csv|txt)$/, '$1.$2')
   )))

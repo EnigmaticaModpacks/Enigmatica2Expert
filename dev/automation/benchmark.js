@@ -9,12 +9,14 @@
 //@ts-check
 
 
-const fs = require('fs')
-const { resolve } = require('path')
-const {escapeRegex, loadText} = require('../lib/utils.js')
-const _ = require('lodash')
-const numeral = require('numeral')
-const Color = require('color')
+import { writeFileSync } from 'fs'
+import { escapeRegex, loadText, defaultHelper } from '../lib/utils.js'
+import _ from 'lodash'
+import numeral from 'numeral'
+import Color from 'color'
+
+import { URL, fileURLToPath  } from 'url' // @ts-ignore
+function relative(relPath='./') { return fileURLToPath(new URL(relPath, import.meta.url)) }
 
 //############################################################################
 //############################################################################
@@ -64,7 +66,8 @@ function getModLoadTimeTyples() {
 
   return mod_loadTime_typles = chart_arr.map(([modName, steps])=>[modName, _.sum(steps)])
 }
-module.exports.getModLoadTimeTyples = getModLoadTimeTyples
+const _getModLoadTimeTyples = getModLoadTimeTyples
+export { _getModLoadTimeTyples as getModLoadTimeTyples }
 
 
 /** @param {string} s */
@@ -89,7 +92,7 @@ function num(n) {
   return numeral(typeof n == 'string' ? parseFloat(n) : n).format('0.00').padStart(6)
 }
 
-const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
+export async function init(h=defaultHelper) {
 
 
   //############################################################################
@@ -301,7 +304,7 @@ const init = module.exports.init = async function(h=require('../automate').defau
   //############################################################################
 
   await h.begin('Writing file')
-  const tempelate = loadText(resolve(__dirname, 'data/benchmark.md'))
+  const tempelate = loadText(relative('data/benchmark.md'))
 
   let benchmark_md = tempelate
   ;[...tempelate.matchAll(
@@ -311,11 +314,12 @@ const init = module.exports.init = async function(h=require('../automate').defau
     benchmark_md = benchmark_md.replaceAll(whole, content)
   })
 
-  fs.writeFileSync(resolve(__dirname,'data/benchmark.md'), benchmark_md)
+  writeFileSync(relative('data/benchmark.md'), benchmark_md)
 
   h.result(`Load Time total: ${benchmark.TOTAL_LOAD_TIME}`)
 }
-if(require.main === module) init()
+// @ts-ignore
+if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()
 
 /* 
 

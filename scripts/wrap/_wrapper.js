@@ -8,11 +8,13 @@
 
 //@ts-check
 
-const replace = require('replace-in-file')
-const { resolve } = require('path')
-const _ = require('lodash')
-const { loadText, saveText } = require('../../dev/lib/utils')
-const { defaultHelper } = require('../../dev/automate')
+import replace_in_file from 'replace-in-file'
+import _ from 'lodash'
+import { loadText, saveText, defaultHelper } from '../../dev/lib/utils.js'
+
+import { URL, fileURLToPath  } from 'url' // @ts-ignore
+function relative(relPath='./') { return fileURLToPath(new URL(relPath, import.meta.url)) }
+
 
 //##############################################################
 //
@@ -194,12 +196,11 @@ function initSignature(sig) {
 
 /**
  * Parse all avaliable functions
- * @param {import ("../../dev/automate").Helper} h
  */
-const init = module.exports.init = async function(h=defaultHelper) {
+export async function init(h=defaultHelper) {
 
   h.begin('Loading Signatures')
-  const signatureStrings = loadText(resolve(__dirname, '_functions.java'))
+  const signatureStrings = loadText(relative('_functions.java'))
     .replace(/\/\*[\s\S]*?\*\/|([^\\:]|^)\/\/.*$/gm, '$1') // Block comments, line comments
     .split('\n')
     .filter(l=>l.trim())
@@ -266,7 +267,7 @@ const init = module.exports.init = async function(h=defaultHelper) {
 
   h.begin('Replacing in .zs files')
   try {
-    replace.sync(options)
+    replace_in_file.sync(options)
   }
   catch (error) {
     h.error('Error occurred:', error)
@@ -284,7 +285,7 @@ const init = module.exports.init = async function(h=defaultHelper) {
     tempelate_Method,
     tempelate_Function,
     tempelate_ClassTail,
-  ] = loadText(resolve(__dirname, '_tempelate')).split('/*<SPLITTER>*/')
+  ] = loadText(relative('_tempelate')).split('/*<SPLITTER>*/')
 
   /** @type {Object<string, string>} */
   const fileContent = {}
@@ -327,11 +328,12 @@ const init = module.exports.init = async function(h=defaultHelper) {
 
   // let rewrittenFiles = 0
   for (const [modName, txt] of Object.entries(fileContent)) {
-    saveText(txt, resolve(__dirname, `${modName}.zs`))
+    saveText(txt, relative(`${modName}.zs`))
     // rewrittenFiles++
   }
 
   h.result(`Total replaces: ${totalReplaced}`)
 }
 
-if(require.main === module) init()
+// @ts-ignore
+if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()

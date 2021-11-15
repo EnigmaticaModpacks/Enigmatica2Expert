@@ -18,17 +18,17 @@
 // NodeJS dependencies
 process.env.NODE_PATH+=':/dev/lib' // eslint-disable-line no-undef
 
-const fs = require('fs')
-const path = require('path')
-const { snakeCase }  = require('snake-case')
-const glob = require('glob')
-const over = require('over')
-const numeral = require('numeral') // eslint-disable-line no-unused-vars
+import { readdirSync, rmdirSync, mkdir, renameSync } from 'fs'
+import { relative as _relative, resolve } from 'path'
+import { snakeCase } from 'snake-case'
+import glob from 'glob'
+import over from 'over'
+import numeral from 'numeral' // eslint-disable-line no-unused-vars
 //////////////////////////////////////////
 // Local dependencies
-const {matchBetween, config, loadText, saveObjAsJson} = require('../lib/utils.js') // eslint-disable-line no-unused-vars
-const { defaultHelper } = require('../automate')
-
+import * as evtTechSolarCalc from '../lib/EvtTechSolarCalc.js' // eslint-disable-line no-unused-vars
+import { matchBetween, config, loadText, saveObjAsJson, defaultHelper } from '../lib/utils.js' // eslint-disable-line no-unused-vars
+import {init as initAdditionalPages} from './additional_pages.js'
 
 //-----------------------------
 // Constants
@@ -85,13 +85,15 @@ var defaultFileContent = {
 // ######################################################################
 function readdir(folderPath) {
   try {
-    return fs.readdirSync(folderPath)    
+    return readdirSync(folderPath)    
   } catch (error) {
     return []
   }
 }
 
-const relative = filePath => path.relative(process.cwd(), path.resolve(__dirname, filePath))
+import { URL, fileURLToPath  } from 'url' // @ts-ignore
+function relative(relPath='./') { return fileURLToPath(new URL(relPath, import.meta.url)) }
+
 
 
 
@@ -196,26 +198,21 @@ const paged = over([ // eslint-disable-line no-unused-vars
 /**
  * @typedef {Object} PatchouliCommand
  * @property {string} filePath
- * @property {string} command
+ * @property {string|Function} command
  * @property {number} [line]
  * @property {string} [below]
  * @property {Object} [overrides]
  */
 
-
-/**
- * @param {import ("../automate").Helper} h
- */
-const init = module.exports.init = async function(h=defaultHelper) {
+export async function init(h=defaultHelper) {
 
   /** @type {PatchouliCommand[]} */
   const patchouliList = []
 
   // Add Additional pages
-  const additional_pages_path = relative('additional_pages.js')
   patchouliList.push({
-    filePath: additional_pages_path,
-    command: loadText(additional_pages_path)
+    filePath: 'additional_pages.js',
+    command: initAdditionalPages
   })
 
   // Generate list of all documentation entries
@@ -243,7 +240,7 @@ const init = module.exports.init = async function(h=defaultHelper) {
   const patchVersions = []
   var patchesPath = relative('patches/')
   readdir(patchesPath).forEach(filePath => {
-    const relPath = path.resolve(patchesPath, filePath)
+    const relPath = resolve(patchesPath, filePath)
     const fileNoExt = filePath.split('.').slice(0, -1).join('.')
     patchVersions.push(fileNoExt)
     patchouliList.push({
@@ -369,9 +366,12 @@ const init = module.exports.init = async function(h=defaultHelper) {
     ])
 
     try {
-      eval(patchouliCommand.command)
+      if(typeof patchouliCommand.command === 'string')
+        eval(patchouliCommand.command)
+      else
+        patchouliCommand.command(Patchouli_js, {paged,config})
     } catch (error) {
-      console.log('Patchouli_js comment block Error.\nFile:', patchouliCommand.filePath, ' Line:', patchouliCommand.line)
+      console.log(`Patchouli_js comment block Error.\nFile: ${patchouliCommand.filePath}:${patchouliCommand.line??0}`)
       console.error(error)
     }
     h.step()
@@ -380,29 +380,30 @@ const init = module.exports.init = async function(h=defaultHelper) {
 
   await writeResult(stat, book, h)
 }
-if(require.main === module) init()
+
+// @ts-ignore
+if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()
 
 
 /**
  * Write collected pages into patchouli folders
  * @param {{totalEntries: number}} stat 
- * @param {{}} book 
- * @param {import('../automate').Helper} h
+ * @param {{}} book
  */
-async function writeResult(stat, book, h) {
+async function writeResult(stat, book, h=defaultHelper) {
 
   // Remove old trash can contents
-  const garbagePath = path.resolve(__dirname, './garbage')
-  fs.rmdirSync(garbagePath, { recursive: true })
+  const garbagePath = relative('./garbage')
+  rmdirSync(garbagePath, { recursive: true })
 
   // Move old patchouli files
-  fs.mkdir(garbagePath, { recursive: true }, (err) => {
+  mkdir(garbagePath, { recursive: true }, (err) => {
     if (err)
       throw err
   });
   ['categories', 'entries'].forEach(fldr => {
     try {
-      fs.renameSync(path.resolve(bookPath, fldr), path.resolve(garbagePath, fldr))
+      renameSync(resolve(bookPath, fldr), resolve(garbagePath, fldr))
     } catch (error) {
       return []
     }

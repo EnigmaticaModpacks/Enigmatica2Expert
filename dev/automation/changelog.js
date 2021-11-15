@@ -1,4 +1,3 @@
-/* eslint-disable no-regex-spaces */
 /**
  * @file Generates changelogs based on git repo.
  * @author Krutoy242
@@ -6,6 +5,7 @@
  */
 
 //@ts-check
+/* eslint-disable no-regex-spaces */
 
 /*
 ██╗███╗   ███╗██████╗  ██████╗ ██████╗ ████████╗███████╗
@@ -16,17 +16,19 @@
 ╚═╝╚═╝     ╚═╝╚═╝      ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝
 */
 
-const { execSync } = require('child_process')
-const fs = require('fs')
-const util = require('util')
-const exec = util.promisify(require('child_process').exec)
-const path = require('path')
-const {getModsIds, formatRow} = require('./modsDiff.js')
-const curseforge = require('mc-curseforge-api')
-const { loadText, escapeRegex, loadJson, saveObjAsJson } = require('../lib/utils.js')
-const { resolve } = require('path')
-const _ = require('lodash')
-const replace = require('replace-in-file')
+import { writeFileSync } from 'fs'
+import { promisify } from 'util'
+import { getModsIds, formatRow } from './modsDiff.js'
+import { getMod } from 'mc-curseforge-api'
+import { loadText, escapeRegex, loadJson, saveObjAsJson, defaultHelper } from '../lib/utils.js'
+import _ from 'lodash'
+import replace_in_file from 'replace-in-file'
+import { execSync, exec as _exec } from 'child_process'
+const exec = promisify(_exec)
+
+
+import { URL, fileURLToPath  } from 'url' // @ts-ignore
+function relative(relPath) { return fileURLToPath(new URL(relPath, import.meta.url)) }
 
 /*
 ██╗   ██╗ █████╗ ██████╗ ██╗ █████╗ ██████╗ ██╗     ███████╗███████╗
@@ -54,13 +56,12 @@ const minecraftinstance_old = 'minecraftinstance_old.json'
 ██║██║ ╚████║██║   ██║   
 ╚═╝╚═╝  ╚═══╝╚═╝   ╚═╝   
 */
-const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
+export async function init(h=defaultHelper) {
 
   await h.begin('Determine version')
 
   // Get last tagged version
   const version = execSync('git describe --tags --abbrev=0').toString().trim()
-  // const version = '0.30'
 
   // Try to bump version
   const nextVersion = bumpVersion(version)
@@ -78,7 +79,7 @@ const init = module.exports.init = async function(h=require('../automate').defau
   const commitMap = getCommitMap(version)
 
   const changelogStructure = parseChangelogStructure(
-    loadText(resolve(__dirname, 'data/changelog_structure.md'))
+    loadText(relative('data/changelog_structure.md'))
   )
 
   const blacklistedCategories = filterCommitMap(commitMap, changelogStructure)
@@ -172,8 +173,8 @@ const init = module.exports.init = async function(h=require('../automate').defau
 
   await h.begin('Writing in file')
   changelogLines.push(...commitLogChanges, '\n\n')
-  const fullChLogPath = path.resolve(__dirname, 'data/~CHANGELOG_LATEST.md')
-  fs.writeFileSync(fullChLogPath, changelogLines.join('\n'))
+  const fullChLogPath = relative('data/~CHANGELOG_LATEST.md')
+  writeFileSync(fullChLogPath, changelogLines.join('\n'))
 
   // Automatically assign icons
   await h.begin('Automatic iconisation')
@@ -188,7 +189,8 @@ const init = module.exports.init = async function(h=require('../automate').defau
     `Blacklisted: ${blacklistedCategories}`)
 }
 
-if(require.main === module) init()
+// @ts-ignore
+if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()
 
 /*
 ███╗   ███╗ ██████╗ ██████╗ ███████╗
@@ -198,7 +200,7 @@ if(require.main === module) init()
 ██║ ╚═╝ ██║╚██████╔╝██████╔╝███████║
 ╚═╝     ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝
 */
-async function getModChanges(version, nextVersion, /** @type {typeof import('../automate').defaultHelper} */ h) {
+async function getModChanges(version, nextVersion, h=defaultHelper) {
   const modsDiff = getModsIds(minecraftinstance_old, 'minecraftinstance.json')
 
   let counstGets = 0
@@ -206,7 +208,7 @@ async function getModChanges(version, nextVersion, /** @type {typeof import('../
     group=>Promise.all(
       modsDiff[group].map(
         (/** @type {import('./modsDiff.js').InstalledAddon} */ m) =>{
-          const p = curseforge.getMod(m.addonID)
+          const p = getMod(m.addonID)
           p.then(()=>h.step())
           counstGets++
           return p
@@ -264,7 +266,7 @@ async function getModChanges(version, nextVersion, /** @type {typeof import('../
   })
 
   // Make changelogs even better
-  replace.sync({
+  replace_in_file.sync({
     files: nextModsChangelogs,
     from: /(?<prefix>^####.*$)(?<body>([\s\S\n](?!\n##)){1,})/gmi,
     to: (/** @type {any[]} */ ...args)=>{

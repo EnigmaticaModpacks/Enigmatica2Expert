@@ -1,8 +1,8 @@
-const fs = require('fs-extra')
-const { saveForGoogle, loadAfterForGoogle } = require('./langUtils.js')
+import { readFileSync, writeFileSync } from 'fs-extra'
+import { saveForGoogle, loadAfterForGoogle } from './langUtils.js'
 
 const bq_path = 'config/betterquesting/DefaultQuests.json'
-const BQ = JSON.parse(fs.readFileSync(bq_path, 'utf8'))
+const BQ = JSON.parse(readFileSync(bq_path, 'utf8'))
 const en_us_lang = []
 const keys = []
 const ru_ru_unloc = []
@@ -39,7 +39,7 @@ for (const quest of Object.values(BQ['questDatabase:9'])) {
 /*
   Save automatically generated lang file
 */
-fs.writeFileSync(
+writeFileSync(
   'resources/betterquesting/lang/en_us.lang',
   en_us_lang.join('\n')
 )
@@ -55,7 +55,7 @@ saveForGoogle('bq', ru_ru_unloc)
 const ru_ru_lang = loadAfterForGoogle('bq')
   .map((l,i)=>`${keys[i]}=${l}`)
 
-fs.writeFileSync(
+writeFileSync(
     'resources/betterquesting/lang/ru_ru.lang',
     ru_ru_lang.join('\n')
   )

@@ -9,10 +9,10 @@
 
 //@ts-check
 
-const fs = require('fs')
-const {injectInFile, loadText} = require('../lib/utils.js')
+import { writeFileSync } from 'fs'
+import { injectInFile, loadText, defaultHelper } from '../lib/utils.js'
 
-const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
+export async function init(h=defaultHelper) {
 
   await h.begin('Loading files')
   function getTips(lang) {
@@ -67,10 +67,11 @@ const init = module.exports.init = async function(h=require('../automate').defau
       replaced.substring(firstOccure)
     
     // Write
-    fs.writeFileSync(filePathes[fileIndex], replaced)
+    writeFileSync(filePathes[fileIndex], replaced)
   }
 
   h.result(`Total tips: ${mainTips.length}, Unlocalized: ${unlocalizedCount}`)
 }
 
-if(require.main === module) init()
+// @ts-ignore
+if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()

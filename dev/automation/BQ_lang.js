@@ -8,8 +8,8 @@
 
 //@ts-check
 
-const fs = require('fs')
-const {isPathHasChanged, naturalSort, loadText, loadJson} = require('../lib/utils.js')
+import { writeFileSync } from 'fs'
+import { isPathHasChanged, naturalSort, loadText, loadJson, defaultHelper } from '../lib/utils.js'
 
 const validCodes = [
   'en_us',
@@ -23,7 +23,7 @@ let langFiles
 
 let totalChanges = 0
 
-const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
+export async function init(h=defaultHelper) {
   await h.begin('Checking requirments')
   if(isPathHasChanged(defaultQuests_path) || validCodes.map(getLangPath).some(isPathHasChanged)) {
     return h.error('\nQuests or Langs have changes!')
@@ -77,7 +77,7 @@ function save_DefaultQuests_json(jsonObj) {
     .replace(/^(\s*"[^:]+:6": )1(0{7,})(,?)$/gm, (m, p1, p2, p3) => p1 + '1.0E' + p2.length + p3) // Add e+ values for round numbers
     .replace(/^(\s*"[^:]+:(?:6|5)": -?\d+)(,?)$/gm, '$1.0$2') // Add decimal to float values
     .replace(/^\s*"[^:]+:8": ".*'.*",?$/gm, (m) => m.replace('\'', '\\u0027')) // Change characters to codes
-  fs.writeFileSync(defaultQuests_path, str)
+  writeFileSync(defaultQuests_path, str)
 }
 
 /**
@@ -143,11 +143,12 @@ function saveLang(langCode, langFile) {
     return naturalSort(a1, b1) || b2 - a2
   })
 
-  fs.writeFileSync(getLangPath(langCode), 
+  writeFileSync(getLangPath(langCode), 
     lFile.map(([k,v]) =>
       `${k}=${v.replace(/\n/g, '%n')}`
     ).join('\n')
   )
 }
 
-if(require.main === module) init()
+// @ts-ignore
+if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()

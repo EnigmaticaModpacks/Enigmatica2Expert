@@ -8,16 +8,16 @@
 
 //@ts-check
 
-const convert = require('xml-js')
-const detectIndent = require('detect-indent')
-const fs = require('fs')
-const {naturalSort, globs, loadText} = require('../lib/utils.js')
-const path = require('path')
-const _ = require('lodash')
-const { getByOreKind, getByOreBase, getOreBases_byKinds } = require('../lib/tellme.js')
-const { getExtra } = require('../lib/jaopca.js')
+import { xml2js, js2xml } from 'xml-js'
+import detectIndent from 'detect-indent'
+import { writeFileSync } from 'fs'
+import { relative } from 'path'
+import _ from 'lodash'
+import { getExtra } from '../lib/jaopca.js'
+import { getByOreKind, getByOreBase, getOreBases_byKinds } from '../lib/tellme.js'
+import { naturalSort, globs, loadText, defaultHelper } from '../lib/utils.js'
 
-const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
+export async function init(h=defaultHelper) {
 
   await h.begin('Reading crafttweaker.log')
 
@@ -49,7 +49,7 @@ const init = module.exports.init = async function(h=require('../automate').defau
 
   // Sort recipes inside changes to prevent object shuffling
   const changes = _(changesText).mapValues(arr=>arr
-    .map(recipe => convert.xml2js(recipe, {compact: false}))
+    .map(recipe => xml2js(recipe, {compact: false}))
     .sort((a, b) => countInputs(b) - countInputs(a) || naturalSort(JSON.stringify(a), JSON.stringify(b)))
   ).value()
 
@@ -57,10 +57,10 @@ const init = module.exports.init = async function(h=require('../automate').defau
 
   function mutateXml(filePath, fnc) {
     const xml = loadText(filePath)
-    const obj = convert.xml2js(xml, {compact: false})
+    const obj = xml2js(xml, {compact: false})
     if(fnc) fnc(obj)
-    const XML = convert.js2xml(obj, {spaces: detectIndent(xml).indent || '	'})
-    fs.writeFileSync(filePath, XML)
+    const XML = js2xml(obj, {spaces: detectIndent(xml).indent || '	'})
+    writeFileSync(filePath, XML)
   }
 
   const automaticComment = ' Recipe below generated automatically. Do not make changes or they gonna be rewritten. '
@@ -69,7 +69,7 @@ const init = module.exports.init = async function(h=require('../automate').defau
   const curatedFiles = globs([
     'config/advRocketry/*.xml',
     'config/enderio/recipes/user/user_recipes.xml'
-  ]).map(p=>path.relative(process.cwd(),p).replace(/\\/g,'/'))
+  ]).map(p=>relative(process.cwd(),p).replace(/\\/g,'/'))
 
   for (const filePath of curatedFiles) {
     mutateXml(filePath, xml_obj => {
@@ -104,7 +104,8 @@ const init = module.exports.init = async function(h=require('../automate').defau
   h.result(`Total XML recipes: ${total}`)
 }
 
-if(require.main === module) init()
+// @ts-ignore
+if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()
 
 /**
  * @param {string} input

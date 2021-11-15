@@ -7,13 +7,13 @@
 
 //@ts-check
 
-const chalk = require('chalk')
-const {table} = require('table')
-const {loadText} = require('../lib/utils.js')
-
+import { table } from 'table'
+import { defaultHelper, loadText } from '../lib/utils.js'
+import chalk from 'chalk'
+const { rgb } = chalk
 
 const allConflicts = []
-const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
+export async function init(h=defaultHelper) {
 
   await h.begin('Loading files')
   const crafttweaker_log = loadText('crafttweaker.log')
@@ -82,10 +82,11 @@ function handleConflict(match) {
   if (fineConflicts.some(isFine=>isFine(r1, r2))) return
 
   allConflicts.push([
-    chalk.rgb(160,250,100)(rec1_item) +'\n'+ chalk.rgb(160,250,200)(rec2_item),
-    chalk.rgb(100,200,100)(rec1_out)  +'\n'+ chalk.rgb(100,200,200)(rec2_out),
-    chalk.rgb( 50,120,20) (rec1_name) +'\n'+ chalk.rgb( 50,120,120)(rec2_name),
+    rgb(160,250,100)(rec1_item) +'\n'+ rgb(160,250,200)(rec2_item),
+    rgb(100,200,100)(rec1_out)  +'\n'+ rgb(100,200,200)(rec2_out),
+    rgb( 50,120,20) (rec1_name) +'\n'+ rgb( 50,120,120)(rec2_name),
   ])
 }
 
-if(require.main === module) init()
+// @ts-ignore
+if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()

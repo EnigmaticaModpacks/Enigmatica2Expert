@@ -1,6 +1,6 @@
 
-const fs = require('fs')
-const path = require('path')
+import { writeFileSync, readFileSync } from 'fs'
+import path from 'path'
 
 function serializeCommandChars(array) {
   return array
@@ -10,15 +10,15 @@ function serializeCommandChars(array) {
     .join('\n')
 }
 
-module.exports.saveForGoogle = function(filename, array) {
+export function saveForGoogle(filename, array) {
 
   let summ = 0
   let chunkNumber = 0
   let chunks = []
 
   function saveChunks() {
-    fs.writeFileSync(
-      path.resolve(__dirname, `unloc/${filename}${chunkNumber}.txt`),
+    writeFileSync(
+      relative(`unloc/${filename}${chunkNumber}.txt`),
       serializeCommandChars(chunks)
     )
   }
@@ -37,8 +37,8 @@ module.exports.saveForGoogle = function(filename, array) {
   
 }
 
-module.exports.loadAfterForGoogle = function(filename) {
-  return fs.readFileSync(path.resolve(__dirname, `uploc/${filename}.txt`),'utf8')
+export function loadAfterForGoogle(filename) {
+  return readFileSync(relative(`uploc/${filename}.txt`),'utf8')
     .split('\n')
     .map(l=>l.replace(/< ?<(\S ?)> ?>/gm,     '%$1'))
     .map(l=>l.replace(/\{ ?\{(\S ?)\} ?\}/gm, '§$1'))

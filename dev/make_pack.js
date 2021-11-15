@@ -7,20 +7,20 @@
  */
 
 //@ts-check
-const { execSync } = require('child_process')
-const fs = require('fs-extra')
-const path = require('path')
-const AdmZip = require('adm-zip')
-const {write, end, globs} = require('./lib/utils.js')
-const del = require('del')
-const replace = require('replace-in-file')
+import { execSync } from 'child_process'
+import { existsSync, lstatSync, statSync, rmdirSync, mkdir, copySync } from 'fs-extra'
+import { join, basename, relative, dirname } from 'path'
+import AdmZip from 'adm-zip'
+import { write, end, globs } from './lib/utils.js'
+import { sync } from 'del'
+import { sync as _sync } from 'replace-in-file'
 
 const dot=()=>write('.')
 const getFileName = (s) => s.replace(/^.*[\\/]/, '')
-const isDirectory = (f) => fs.existsSync(f) && fs.lstatSync(f).isDirectory()
+const isDirectory = (f) => existsSync(f) && lstatSync(f).isDirectory()
 
 const mcClientPath    = process.cwd()
-const ruOverrides     = path.join(mcClientPath, 'dev/lang/ru_ru/')
+const ruOverrides     = join(mcClientPath, 'dev/lang/ru_ru/')
 const distrDir        = 'D:/MEGA_LD-LocksTO/Enigmatica/Distributable/'
 const serverPath      = 'D:/mc_server/E2E-Extended-Server/'
 const serverOverrides = 'D:/MEGA_LD-LocksTO/Enigmatica/server-overrides/'
@@ -32,7 +32,7 @@ write('Version: ')
 const version = execSync('git describe --tags --abbrev=0').toString().trim()
 end(version)
 
-const hoursReadmeUpdated = (Date.now() - fs.statSync('CHANGELOG.md').mtime.getTime()) / (1000*60*60)
+const hoursReadmeUpdated = (Date.now() - statSync('CHANGELOG.md').mtime.getTime()) / (1000*60*60)
 if(hoursReadmeUpdated > 1) {
   end('❌ You probably forget update CHANGELOG.md')
   // @ts-ignore
@@ -75,8 +75,8 @@ const serverOnlyFiles = globs([
 
 // Remove old tmp folder
 write(`Clearing ${tmpDir} ... `)
-fs.rmdirSync(tmpDir, { recursive: true })
-fs.mkdir(tmpDir, { recursive: true }, (err) => {if (err) throw err})
+rmdirSync(tmpDir, { recursive: true })
+mkdir(tmpDir, { recursive: true }, (err) => {if (err) throw err})
 end()
 
 // Get all files from latest Git commit (current branch)
@@ -123,13 +123,13 @@ const removeGlob = [
 ]
 
 write(`removing files&folders ${unzipDir} ... `)
-end('removed:', del.sync(removeGlob, {dryRun: false}).length)
+end('removed:', sync(removeGlob, {dryRun: false}).length)
 
 /**
  * @param {string} fPath
  */
 function addToPack(fPath, dirPath = './') {
-  fs.copySync(fPath, path.join(dirPath, path.basename(fPath)))
+  copySync(fPath, join(dirPath, basename(fPath)))
 }
 
 write('Copy mods ')
@@ -166,9 +166,9 @@ makeZip(`${distrDir}E2E-Extended_${version}.zip`)
 ********************************************************/
 
 write('Installing server. Removing old folders ')
-fs.rmdirSync(`${serverPath}/mods/`   , { recursive: true }); dot()
-fs.rmdirSync(`${serverPath}/config/` , { recursive: true }); dot()
-fs.rmdirSync(`${serverPath}/scripts/`, { recursive: true }); end()
+rmdirSync(`${serverPath}/mods/`   , { recursive: true }); dot()
+rmdirSync(`${serverPath}/config/` , { recursive: true }); dot()
+rmdirSync(`${serverPath}/scripts/`, { recursive: true }); end()
 
 
 write('copying files ')
@@ -238,6 +238,7 @@ const serverFilesList = globs([
   '!mods/torohealth*.jar',
   '!mods/toughnessbar*.jar',
   '!mods/WailaHarvestability-mc*.jar',
+  '!mods/justenoughdrags-*.jar',
 
   '!mods/gamestagesviewer-*.jar',
 
@@ -259,15 +260,15 @@ serverOnlyFiles.forEach(copyToServer(mcClientPath))
 function copyToServer(relativeSource) { 
   return (/** @type {string} */ fPath, /** @type {number} */ i)=>{
     if(i%50==0) dot()
-    fs.copySync(
+    copySync(
       fPath,
-      path.join(serverPath, path.relative(relativeSource, fPath)), 
+      join(serverPath, relative(relativeSource, fPath)), 
       {overwrite: true}
     )
   }
 }
 write(' copying overrides ... ')
-fs.copySync(serverOverrides, serverPath, {overwrite: true})
+copySync(serverOverrides, serverPath, {overwrite: true})
 end()
 
 
@@ -278,8 +279,8 @@ const serverOnlyToRut = globs([
 
 write('📥 Create server zip ... ')
 const serverZip = new AdmZip()
-addToServerZip(serverFilesList, f=>path.relative(process.cwd(), f))
-addToServerZip(serverOnlyFiles, f=>path.relative(mcClientPath, f))
+addToServerZip(serverFilesList, f=>relative(process.cwd(), f))
+addToServerZip(serverOnlyFiles, f=>relative(mcClientPath, f))
 addToServerZip(serverOnlyToRut, f=>getFileName(f))
 write(' writing zip ... ')
 serverZip.writeZip(`${distrDir}E2E-Extended_${version}_server.zip`)
@@ -293,7 +294,7 @@ end()
 function addToServerZip(filesAndFolders, zipPath_cb) {
   filesAndFolders.forEach(f=>{
     const zipPath = zipPath_cb(f)
-    const dirName = path.dirname(zipPath)
+    const dirName = dirname(zipPath)
     isDirectory(f)
       ? serverZip.addLocalFolder(f, zipPath)
       : serverZip.addLocalFile(f, dirName==='.' ? undefined : dirName)
@@ -311,7 +312,7 @@ function addToServerZip(filesAndFolders, zipPath_cb) {
 addToPack(`${distrDir}TL.exe`)
 
 // Set Russian Language in default options
-replace.sync({
+_sync({
   files: 'config/defaultoptions/options.txt',
   from: /^lang:\w+$/,
   to: 'lang:ru_ru',
@@ -345,7 +346,7 @@ const planetNames = {
   'Kepler 0118'     : 'Кеплер 0118',
   'Kepler 0119'     : 'Кеплер 0119',
 }
-replace.sync({
+_sync({
   files: 'config/jeresources/world-gen.json',
   from: /^\s+"dim": "(?<name>.*)(?<id> \(-?\d+\))"$/,
   to: (/** @type {*[]} */ ...args)=>{
@@ -356,7 +357,7 @@ replace.sync({
 })
 
 // Override files
-try{fs.copySync(ruOverrides, './', {overwrite: true})}
+try{copySync(ruOverrides, './', {overwrite: true})}
 catch(e){} // eslint-disable-line no-empty
 
 makeZip(`${distrDir}E2E-Extended_${version}_RU.zip`)

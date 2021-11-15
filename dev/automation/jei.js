@@ -9,9 +9,9 @@
 
 //@ts-check
 
-const {config, naturalSort, injectInFile, getCSV, loadText} = require('../lib/utils.js')
+import { config, naturalSort, injectInFile, getCSV, loadText, defaultHelper } from '../lib/utils.js'
 
-const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
+export async function init(h=defaultHelper) {
 
   await h.begin('Get files')
   const jeiConfigPath = 'config/jei/itemBlacklist.cfg'
@@ -73,4 +73,5 @@ const init = module.exports.init = async function(h=require('../automate').defau
 
   h.result(`Purged / Manually Blacklisted: ${purged.length} / ${pure.length - purged.length}`)
 }
-if(require.main === module) init()
+// @ts-ignore
+if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()

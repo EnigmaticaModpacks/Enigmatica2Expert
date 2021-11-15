@@ -1,11 +1,22 @@
+/**
+ * @file Disable mods by givn lists
+ * 
+ * @author Krutoy242
+ * @link https://github.com/Krutoy242
+ */
 
-const {globs} = require('./lib/utils.js')
-const term = require('terminal-kit').terminal
-const chalk = require('chalk')
-const {renameSync} = require('fs')
-// const path = require('path')
-const _ = require('lodash')
-const escapeGlob = require('glob-escape')
+//@ts-check
+
+import { globs } from './lib/utils.js'
+import { renameSync } from 'fs'
+import _ from 'lodash'
+import escapeGlob from 'glob-escape'
+import chalk from 'chalk'
+
+import { createRequire } from 'module'
+const require = createRequire(import.meta.url)
+const termkit = require("terminal-kit")
+const term = termkit.createTerminal();
 
 const getMods = (s, isDisabled=false)=>globs(_.uniq(
   s.trim()

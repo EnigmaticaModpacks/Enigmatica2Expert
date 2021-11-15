@@ -2,16 +2,9 @@
 //@ts-check
 
 
-const _ = require('lodash')
-const {
-  getByOredict_first,
-  prefferedModSort,
-  getByOreBase,
-} = require('./tellme.js')
-const {
-  config,
-  naturalSort,
-} = require('./utils.js')
+import _ from 'lodash'
+import { getByOredict_first, prefferedModSort, getByOreBase } from './tellme.js'
+import { config, defaultHelper, naturalSort } from './utils.js'
 
 let list
 
@@ -47,25 +40,16 @@ function oreBaseToJaopcaKey(oreBase) {
   return oreBase.replace(/(.)?([A-Z])/g, (m,p1,p2)=>(p1?p1+'_':'')+p2.toLowerCase())
 }
 
-module.exports = {
-  
-  /**
-   * @param {string} oreBase
-   * @returns {string?} extra oreBase
-   */
-  getExtra: (oreBase, extraIndex = 0) => 
-      ['extra','extra2','extra3'].map(key =>
-        config('config/JAOPCA.cfg')[oreBaseToJaopcaKey(oreBase)]?.[key]
-      )[extraIndex],
-
-  /** @param {string} oreBase */
-  getExtraTMStack: (oreBase, extraIndex = 0) => 
-    getByOreBase(this.getExtra(oreBase, extraIndex))
-
+export function getExtra(oreBase, extraIndex = 0) {
+  return ['extra', 'extra2', 'extra3'].map(key => config('config/JAOPCA.cfg')[oreBaseToJaopcaKey(oreBase)]?.[key]
+  )[extraIndex]
+}
+export function getExtraTMStack(oreBase, extraIndex = 0) {
+  return getByOreBase(this.getExtra(oreBase, extraIndex))
 }
 
 
-const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
+export async function init(h=defaultHelper) {
   console.log([
     'Main | Extra 1-2-3',
     '------ | ------',
@@ -77,4 +61,5 @@ const init = module.exports.init = async function(h=require('../automate').defau
   ].join('\n'))
 }
 
-if(require.main === module) init()
+// @ts-ignore
+if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()

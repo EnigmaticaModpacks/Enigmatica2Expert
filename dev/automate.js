@@ -7,16 +7,16 @@
  */
 
 //@ts-check
-const glob = require('glob')
-const chalk = require('chalk')
-const cliProgress = require('cli-progress')
-const {ValueFormat} = cliProgress.Format
+import glob from 'glob'
+import cli_progress from 'cli-progress'
+import { defaultHelper } from './lib/utils.js'
+import chalk from 'chalk'
+const { Format, MultiBar } = cli_progress
+const { gray, green, dim } = chalk
+const {ValueFormat} = Format
 
 const getFileName = (/** @type {string} */ s) => s.replace(/^.*[\\/]/, '')
 const write = (s) => process.stdout.write(s)
-
-// console.log(glob.sync('dev/automation/*.js'))
-// process.exit(0)
 
 const automationList = [
   'config/tellme/!rename&update.js',
@@ -46,54 +46,9 @@ const automationOrder = [
   'dev/automation/modsDiff.js',           // 16091
 ]
 
-/**
- * @typedef {Object} Helper
- * @property {(startItem: string, steps?: number)=>void} begin
- * @property {(itemDone?: any)=>void} done
- * @property {(s?: any)=>void} step
- * @property {(s?: any)=>void} result
- * @property {typeof console.log} warn
- * @property {typeof console.error} error
- * @property {boolean} [isUnfinishedTask]
- */
-
-/**
- * @type {Helper}
- */
-module.exports.defaultHelper = {
-  /** @this {Helper} */
-  begin: function (s, steps) {
-    this.done()
-    // @ts-ignore
-    if(steps) (this.steps = steps, this.stepSize = steps / 30)
-    process.stdout.write(`🔹 ${s.trim()}` + (steps?` [${steps}] `:''))
-    this.isUnfinishedTask = true
-  },
-  done: function (s='') {
-    if(!this.isUnfinishedTask) return
-    process.stdout.write(` ${chalk.gray(`${s} ✔`)}\n`)
-    this.isUnfinishedTask = false
-  },
-  step: function (s) {
-    // @ts-ignore
-    if(this.steps <= 30 || (this.steps-- % this.stepSize === 0)) {
-      process.stdout.write(s??'.')
-    }
-  },
-  result: function (s='') {
-    this.done()
-    process.stdout.write(`✔️ ${chalk.dim.green(`${s}`)}\n`)
-  },
-  warn : console.log,
-  error: console.error,
-
-  isUnfinishedTask: false,
-}
-
-
 // create new container
-const multibar = new cliProgress.MultiBar({
-  format: '{fileName} '+chalk.gray('[{bar}] | {value}/{total} | {ms} |')+' {task}',
+const multibar = new MultiBar({
+  format: '{fileName} '+gray('[{bar}] | {value}/{total} | {ms} |')+' {task}',
   hideCursor: true,
   // fps: 30,
   // forceRedraw: true,
@@ -103,9 +58,6 @@ const multibar = new cliProgress.MultiBar({
 let starttime = 0
 const timings = []
 async function init() {
-  // process.stdout.write('\u001b[2J\u001b[0;0H')
-  // write('\n')
-
   const promises = automationOrder
   .filter(f=>automationList.includes(f))
   .concat(automationOrder
@@ -127,7 +79,8 @@ async function init() {
   // )
   process.exit(0)
 }
-if(require.main === module) init()
+// @ts-ignore
+if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()
 
 /**
  * @param {string} filePath
@@ -138,19 +91,19 @@ async function startTask(filePath, i) {
   /**
    * @type {import ("./TCon/tweakerconstruct")}
    */
-  const jsmodule = require.main.require('../' + filePath)
+  const jsmodule = await import('../' + filePath)
   if(!jsmodule) return
 
   const progressBar = multibar.create(0, 0, {
-    fileName: chalk.green(fileName.padStart(24)),
+    fileName: green(fileName.padStart(24)),
     task: '',
     ms: '     '
   })
 
   let hasResult = false
 
-  /** @type {Helper} */
-  const h = {
+  /** @type {typeof defaultHelper} */
+  const h = progressBar ? {
     begin: async (task, steps) => {
       progressBar.update(progressBar.getTotal(), {task})
       progressBar.setTotal(progressBar.getTotal() + (steps??1))
@@ -164,12 +117,12 @@ async function startTask(filePath, i) {
       progressBar.increment()
     },
     result : (s) => {
-      progressBar.update({task: `✔️  ${s.replace(/\b(\d+)\b/g, chalk.dim.yellow('$1'))}`})
+      progressBar.update({task: `✔️  ${s.replace(/\b(\d+)\b/g, dim.yellow('$1'))}`})
       hasResult = true
     },
-    warn : console.log,
-    error: console.error,
-  }
+    warn : (s='?') =>  progressBar.update({task: `⚠️ ${chalk.dim.yellow(`${s}`)}`}),
+    error: (s='!') => (progressBar.update({task: `🛑 ${chalk.dim.red   (`${s}`)}`}), hasResult = true),
+  } : defaultHelper
 
   // const result = jsmodule.init ? jsmodule.init(h) : runSimpleFile(fileName)
   const result = jsmodule.init 
@@ -182,12 +135,15 @@ async function startTask(filePath, i) {
   result.then(()=>{
     const timeTook = new Date().getTime() - starttime - i*10
     timings[i] = [automationList[i], timeTook]
-    progressBar.update({ms: `${timeTook}`.padStart(5)})
 
+    if(!progressBar) return
+    progressBar.update({ms: `${timeTook}`.padStart(5)})
     progressBar.update(progressBar.getTotal())
     if(!hasResult) progressBar.update({task: '✔️'})
     progressBar.stop()
   })
+
+  result.catch(reason => console.log('reason :>> ', reason))
 
   // await new Promise(r => setTimeout(r, 10))
   return result

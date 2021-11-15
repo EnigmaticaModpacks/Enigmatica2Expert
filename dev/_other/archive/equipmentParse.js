@@ -1,10 +1,9 @@
-const fs = require('fs');
-const path = require("path");
-const jsonText  = fs.readFileSync(path.resolve(__dirname, "DefaultQuests.json"));
+import { readFileSync, writeFileSync } from 'fs';
+const jsonText  = readFileSync(relative("DefaultQuests.json"));
 // var jsonText = fs.readFileSync('./DefaultQuests.json').toString();
 var O = JSON.parse(jsonText);
 var log = console.log;
-const rftObj = require("./Entities.js")
+import { listMatter as _listMatter, mobspawn, livingmatter as _livingmatter } from "./Entities.js";
 
 
 var s = 
@@ -261,7 +260,7 @@ s = s.slice(0, -2) + "\n] as IData;\n\n";
 // #
 // # ######################################################################
 
-var listMatter = rftObj.listMatter
+var listMatter = _listMatter
 
 const regexp = /(\w+:\w+)@*(\d*) = (\d+)/g;
 const matches = listMatter.matchAll(regexp);
@@ -285,8 +284,8 @@ s += "] as string[];\n"
 // #
 // # ######################################################################
 
-var savePath = path.resolve(__dirname, "_both/scripts/DataTables.zs")
-fs.writeFileSync(savePath, s)
+var savePath = relative("_both/scripts/DataTables.zs")
+writeFileSync(savePath, s)
 
 
 // # ######################################################################
@@ -295,8 +294,8 @@ fs.writeFileSync(savePath, s)
 // #
 // # ######################################################################
 
-var rftoolsPath = path.resolve(__dirname, "_both/config/rftools/rftools.cfg")
-var rftools_cfg = fs.readFileSync(rftoolsPath, 'utf8')
+var rftoolsPath = relative("_both/config/rftools/rftools.cfg")
+var rftools_cfg = readFileSync(rftoolsPath, 'utf8')
 
 
 function replaceBetweenKeywords(source, word1, word2, replace) {  
@@ -305,7 +304,7 @@ function replaceBetweenKeywords(source, word1, word2, replace) {
         `${word1}\n${replace}${word2}` )
 }
 
-const entities = rftObj.mobspawn
+const entities = mobspawn
 var mobspawnrf = ""
 var mobspawnamounts = ""
 for (i = 0; i < entities.length; i+=4) {
@@ -346,7 +345,7 @@ rftools_cfg = replaceBetweenKeywords(
     rftools_cfg, "# Extended mobspawnrf {", "# Extended mobspawnrf }", mobspawnrf)
 
 // Living matter
-const livingmatter = rftObj.livingmatter
+const livingmatter = _livingmatter
 var e2eNextIndex = 34
 var sliving = ""
 for (i = 0; i < livingmatter.length; i+=3) {
@@ -367,4 +366,4 @@ rftools_cfg = replaceBetweenKeywords(
     rftools_cfg, "# Extended livingmatter {", "# Extended livingmatter }", sliving)
 
 
-fs.writeFileSync(rftoolsPath, rftools_cfg)
+writeFileSync(rftoolsPath, rftools_cfg)

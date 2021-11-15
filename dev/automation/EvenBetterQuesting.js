@@ -8,18 +8,21 @@
 
 //@ts-check
 
-const fs = require('fs')
-const path = require('path')
-const glob = require('glob')
-const {isPathHasChanged, loadJson, loadText} = require('../lib/utils.js')
-const replace = require('replace-in-file')
+import { mkdirSync, writeFileSync, rmdirSync } from 'fs'
+import { dirname } from 'path'
+import glob from 'glob'
+import { defaultHelper, isPathHasChanged, loadJson, loadText } from '../lib/utils.js'
+import replace_in_file from 'replace-in-file'
+
+import { URL, fileURLToPath  } from 'url' // @ts-ignore
+function relative(relPath='./') { return fileURLToPath(new URL(relPath, import.meta.url)) }
 
 const bq_quests_path = 'config/betterquesting/DefaultQuests.json'
 
-const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
+export async function init(h=defaultHelper) {
 
   await h.begin('Disabling edit mode')
-  replace.sync({
+  replace_in_file.sync({
     files: bq_quests_path,
     from: /^(\s+"editmode:1": )1,/gm,
     to: '$10,',
@@ -39,21 +42,22 @@ const init = module.exports.init = async function(h=require('../automate').defau
   }
 }
 
-if(require.main === module) init()
+// @ts-ignore
+if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()
 
 /*
 
   Split one huge file into many
 
 */
-async function parse(h) {
+async function parse(h=defaultHelper) {
   let totalFilesCreated = 0
 
   // Saving files functions
   function saveParsed(filename, txt) {
-    var filePath = path.resolve(__dirname, 'betterquesting/' + filename + '.json')
-    fs.mkdirSync(path.dirname(filePath), { recursive: true })
-    fs.writeFileSync(filePath, txt)
+    var filePath = relative('betterquesting/' + filename + '.json')
+    mkdirSync(dirname(filePath), { recursive: true })
+    writeFileSync(filePath, txt)
   }
 
   function saveJSON(filename, obj) {
@@ -63,7 +67,7 @@ async function parse(h) {
 
   // Remove current splitted qiests
   await h.begin('Remove current splitted qiests')
-  fs.rmdirSync(path.resolve(__dirname, 'betterquesting'), { recursive: true })
+  rmdirSync(relative('betterquesting'), { recursive: true })
   
   // Open lang file to make quests
   const questLang = Object.fromEntries(
@@ -86,7 +90,7 @@ async function parse(h) {
         .replace(/§./g, '') // Remove string formattings
       let idName = narmalName
       let k = 0
-      while (uniqNames.has(idName)) idName = narmalName + ' #' + k++
+      while (uniqNames.has(idName)) idName = narmalName + ' _' + k++
       uniqNames.add(idName)
       return idName
     }
@@ -138,7 +142,7 @@ async function parse(h) {
 */
 function unparse() {
   function json_here(filePath) { return JSON.parse(
-    loadText(path.resolve(__dirname, filePath))
+    loadText(relative(filePath))
   )}
   function json_abs(filePath) { return JSON.parse(
     loadText(filePath)
@@ -167,7 +171,7 @@ function unparse() {
     return Object.fromEntries(toSort)
   }
 
-  const chapters = glob.sync(path.resolve(__dirname, 'betterquesting/Chapters/*'))
+  const chapters = glob.sync(relative('betterquesting/Chapters/*'))
   for (const chapterFolder of chapters) {
     const props = json_abs(chapterFolder + '/_props.json')
     const chapterQuests = []
@@ -187,7 +191,7 @@ function unparse() {
   sortEntries(book, 'questDatabase:9')
   sortEntries(book, 'questLines:9')
 
-  fs.writeFileSync(
+  writeFileSync(
     bq_quests_path,
     JSON.stringify(book, null, 2)
   )

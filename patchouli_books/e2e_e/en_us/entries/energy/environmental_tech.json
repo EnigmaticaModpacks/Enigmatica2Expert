@@ -13,10 +13,10 @@
       "item3": "environmentaltech:solar_cell_pladium#9",
       "item4": "environmentaltech:solar_cell_ionite#9",
       "item5": "environmentaltech:solar_cell_aethium#9",
-      "text0": "      1,105 RF/t",
+      "text0": "      1,106 RF/t",
       "text1": "      2,442 RF/t",
       "text2": "      5,437 RF/t",
-      "text3": "     12,026 RF/t",
+      "text3": "     12,027 RF/t",
       "text4": "     23,040 RF/t",
       "text5": "     23,040 RF/t"
     },
@@ -29,7 +29,7 @@
       "item3": "environmentaltech:solar_cell_pladium#25",
       "item4": "environmentaltech:solar_cell_ionite#25",
       "item5": "environmentaltech:solar_cell_aethium#25",
-      "text0": "      5,529 RF/t",
+      "text0": "      5,530 RF/t",
       "text1": "     12,211 RF/t",
       "text2": "     27,187 RF/t",
       "text3": "     60,134 RF/t",
@@ -49,8 +49,8 @@
       "text1": "     43,081 RF/t",
       "text2": "     95,916 RF/t",
       "text3": "    212,154 RF/t",
-      "text4": "    469,827 RF/t",
-      "text5": "  1,040,449 RF/t"
+      "text4": "    469,828 RF/t",
+      "text5": "  1,040,450 RF/t"
     },
     {
       "type": "item_list",
@@ -61,11 +61,11 @@
       "item3": "environmentaltech:solar_cell_pladium#81",
       "item4": "environmentaltech:solar_cell_ionite#81",
       "item5": "environmentaltech:solar_cell_aethium#81",
-      "text0": "     58,047 RF/t",
+      "text0": "     58,048 RF/t",
       "text1": "    128,188 RF/t",
       "text2": "    285,400 RF/t",
-      "text3": "    631,266 RF/t",
-      "text4": "  1,397,977 RF/t",
+      "text3": "    631,267 RF/t",
+      "text4": "  1,397,978 RF/t",
       "text5": "  3,095,868 RF/t"
     },
     {
@@ -79,10 +79,10 @@
       "item5": "environmentaltech:solar_cell_aethium#121",
       "text0": "    156,083 RF/t",
       "text1": "    344,684 RF/t",
-      "text2": "    767,409 RF/t",
+      "text2": "    767,410 RF/t",
       "text3": "  1,697,406 RF/t",
       "text4": "  3,759,007 RF/t",
-      "text5": "  8,324,445 RF/t"
+      "text5": "  8,324,446 RF/t"
     },
     {
       "type": "item_list",
@@ -94,7 +94,7 @@
       "item4": "environmentaltech:solar_cell_ionite#169",
       "item5": "environmentaltech:solar_cell_aethium#169",
       "text0": "    392,401 RF/t",
-      "text1": "    866,552 RF/t",
+      "text1": "    866,553 RF/t",
       "text2": "  1,929,306 RF/t",
       "text3": "  4,267,364 RF/t",
       "text4": "  9,450,331 RF/t",

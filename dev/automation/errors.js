@@ -11,9 +11,11 @@
 /*=============================================
 =                Variables                    =
 =============================================*/
-const fs = require('fs')
-const path = require('path')
-const { loadText } = require('../lib/utils')
+import { writeFileSync } from 'fs'
+import { defaultHelper, loadText } from '../lib/utils.js'
+
+import { URL, fileURLToPath  } from 'url' // @ts-ignore
+function relative(relPath='./') { return fileURLToPath(new URL(relPath, import.meta.url)) }
 
 /*=============================================
 =               Ignoring errors               =
@@ -258,7 +260,7 @@ const known = [
 =           Working                           =
 =============================================*/
 
-const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
+export async function init(h=defaultHelper) {
 
   await h.begin('Loading & parsing debug.log')
   let log = loadText('logs/debug.log')
@@ -307,11 +309,12 @@ const init = module.exports.init = async function(h=require('../automate').defau
     }
   }
 
-  fs.writeFileSync(path.resolve(__dirname, 'data/unknownErrors.log'), newLog)
+  writeFileSync(relative('data/unknownErrors.log'), newLog)
 
   h.result(
     `Errors Total: ${stat.total}, Untreaten: ${stat.unknown}` +
     (stat.resolved ? `, Resolved: ${stat.resolved}/${known.length}` : '')
   )
 }
-if(require.main === module) init()
+// @ts-ignore
+if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()

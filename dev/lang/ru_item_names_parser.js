@@ -1,6 +1,6 @@
 
-const fs = require('fs-extra')
-const path = require('path')
+import { readFileSync, writeFileSync } from 'fs-extra'
+import path from 'path'
 
 /********************************************
 
@@ -12,7 +12,7 @@ const lang_path = 'resources/enigmatica/lang/en_us.lang'
 const lang_ru_path = 'resources/enigmatica/lang/ru_ru.lang'
 const matcher = /^(tooltips\.lang\.[^=]+)=(.*)$/
 const lang = 
-fs.readFileSync(lang_path,'utf8')
+  readFileSync(lang_path,'utf8')
   .split('\n')
   .map(l=>l.match(matcher)?.[2] ?? '')
   .filter(l=>l!=='')
@@ -21,16 +21,16 @@ fs.readFileSync(lang_path,'utf8')
   .map(l=>l.replace(/\\(\S)/gm, '(($1))'))
   .join('\n')
 
-// fs.writeFileSync(path.resolve(__dirname, 'ru_ru.lang'), lang)
+// fs.writeFileSync(relative('ru_ru.lang'), lang)
 
-const ru_ru_lang_arr = fs.readFileSync(path.resolve(__dirname, 'ru_ru.lang'),'utf8')
+const ru_ru_lang_arr = readFileSync(relative('ru_ru.lang'),'utf8')
   .split('\n')
   .map(l=>l.replace(/< ?<(\S ?)> ?>/gm,     '%$1'))
   .map(l=>l.replace(/\{ ?\{(\S ?)\} ?\}/gm, '§$1'))
   .map(l=>l.replace(/\( ?\((\S ?)\) ?\)/gm, '\\$1'))
 
 let k=-1
-const translated = fs.readFileSync(lang_path,'utf8')
+const translated = readFileSync(lang_path,'utf8')
   .split('\n')
   .map(l=> l.match(matcher)
     ? (k++, l.replace(matcher, '$1='+ru_ru_lang_arr[k].trim()))
@@ -45,10 +45,10 @@ const translated = fs.readFileSync(lang_path,'utf8')
 
 ********************************************/
 
-const csvParseSync = require('csv-parse/lib/sync')
-const _ = require('lodash')
+import csvParseSync from 'csv-parse/lib/sync'
+import { uniqBy } from 'lodash'
 
-const csv = csvParseSync(fs.readFileSync(path.resolve(__dirname, 'ru_item_names.csv'),'utf8'), {columns: true})
+const csv = csvParseSync(readFileSync(relative('ru_item_names.csv'),'utf8'), {columns: true})
 
 function isNeedLoc(l) {
   return !l.DISPLAY_NAME.match(/.*[а-яА-Я].*/) &&
@@ -56,8 +56,8 @@ function isNeedLoc(l) {
 }
 
 const newlang = 
-_.uniqBy(
-_.uniqBy(
+  uniqBy(
+  uniqBy(
   csv.filter(isNeedLoc), 
 'DISPLAY_NAME'), 
 'UNLOCALIZED')
@@ -67,10 +67,10 @@ _.uniqBy(
 
 const toLang = newlang.map(o=>o.DISPLAY_NAME).join('\n')
 
-fs.writeFileSync(path.resolve(__dirname, 'ru_ru_csv.txt'), toLang)
+writeFileSync(relative('ru_ru_csv.txt'), toLang)
 
-const newLangready = fs.readFileSync(
-  path.resolve(__dirname, 'ru_ru_csv_translated'),'utf8'
+const newLangready = readFileSync(
+  relative('ru_ru_csv_translated'),'utf8'
 )
 .split('\n')
 
@@ -82,4 +82,4 @@ const addsNewLang = newlang.map((o,i)=>
 .filter(o=>o!=='')
 .join('\n')
 
-fs.writeFileSync(lang_ru_path, translated + '\n\n\n' + addsNewLang)
+writeFileSync(lang_ru_path, translated + '\n\n\n' + addsNewLang)

@@ -12,12 +12,11 @@
 //@ts-check
 /* eslint-disable no-unused-vars */
 
-const glob = require('glob')
-const _ = require('lodash')
-const {table, getBorderCharacters} = require('table')
+import glob from 'glob'
+import _ from 'lodash'
+import { table, getBorderCharacters } from 'table'
 
-const {
-  injectInFile,
+import { injectInFile,
   config,
   naturalSort,
   getCSV,
@@ -28,10 +27,10 @@ const {
   getPDF,
   loadJson,
   setBlockDrops,
-} = require('../lib/utils.js')
+  defaultHelper,
+} from '../lib/utils.js'
 
-const {
-  isODExist,
+import { isODExist,
   isItemExist,
   isJEIBlacklisted,
   getItemOredictSet,
@@ -39,7 +38,7 @@ const {
   getByOredict,
   getByOredict_first,
   prefferedModSort,
-} = require('../lib/tellme.js')
+} from '../lib/tellme.js'
 
 function saveObjAsJson(obj, filename) {
   saveText(JSON.stringify(obj, null, 2), filename)
@@ -74,7 +73,7 @@ function formatOutput(injectValue) {
 
 // ----------------------------------
 
-const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
+export async function init(h=defaultHelper) {
   const occurences = []
 
   await h.begin('Searching Inject_js blocks in .zs files')
@@ -126,7 +125,8 @@ const init = module.exports.init = async function(h=require('../automate').defau
   h.result(`Blocks: ${countBlocks}, Changed: ${countChanged}`)
 }
 
-if(require.main === module) init()
+// @ts-ignore
+if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()
 
 // Test section:
 ;(async()=>console.log(formatOutput(

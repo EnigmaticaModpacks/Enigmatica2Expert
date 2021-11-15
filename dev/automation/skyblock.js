@@ -7,12 +7,12 @@
 
 //@ts-check
 
-const _ = require('lodash')
-const {loadText, saveText} = require('../lib/utils.js')
-const {relative, resolve} = require('path')
+import _ from 'lodash'
+import { defaultHelper, loadText, saveText } from '../lib/utils.js'
+import { relative, resolve } from 'path'
 
 
-const init = module.exports.init = async function(h=require('../automate').defaultHelper) {
+export async function init(h=defaultHelper) {
 
   await h.begin('Replacing skyblock configs')
 
@@ -41,4 +41,5 @@ const init = module.exports.init = async function(h=require('../automate').defau
   h.result(`Replaced in files: ${totalReplaced}`)
 }
 
-if(require.main === module) init()
+// @ts-ignore
+if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()

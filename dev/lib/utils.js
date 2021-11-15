@@ -11,13 +11,14 @@
 /*=============================================
 =                Variables                    =
 =============================================*/
-const fs = require('fs')
-const path = require('path')
-const replace = require('replace-in-file')
-const del = require('del')
-const csvParseSync = require('csv-parse/lib/sync')
-const { execSync } = require('child_process')
-const pdf = require('pdf-parse')
+import { statSync, readFileSync, writeFileSync, mkdirSync } from 'fs'
+import { basename, resolve, dirname } from 'path'
+import replace_in_file from 'replace-in-file'
+import del from 'del'
+import csvParseSync from 'csv-parse/lib/sync.js'
+import { execSync } from 'child_process'
+import pdf from 'pdf-parse/lib/pdf-parse.js'
+import chalk from 'chalk'
 
 /*=============================================
 =            Internal Helpers                 =
@@ -25,14 +26,14 @@ const pdf = require('pdf-parse')
 
 /**
  * A function that result would be hashed based on input string
- * @type {Map<function(string): any, Object<string, {mtime: number, result: any}>>} x is filename
+ * @type {Map<(filePath: string) => any, {[filePath: string]: {mtime: number, result: any}}>} x is filename
  */
 const hashMap = new Map()
 
 /**
  * @template T
- * @param {function(string): T} fn
- * @returns {function(string): T} wrapped function
+ * @param {(filePath: string) => T} fn
+ * @returns {(filePath: string) => T} wrapped function
  */
 function createHashedFunction(fn) {
   /**
@@ -42,7 +43,7 @@ function createHashedFunction(fn) {
   const inner = (filename) => {
     const hashFunction = hashMap.get(fn) ?? {}
     const oldResult = hashFunction[filename]
-    const mtime = fs.statSync(filename).mtime.getTime()
+    const mtime = statSync(filename).mtime.getTime()
     if(oldResult && oldResult.mtime === mtime) {
       return oldResult.result
     }
@@ -66,41 +67,41 @@ function createHashedFunction(fn) {
  * 
  * @example subFileName('C:/main.js') // 'main'
  */
-const subFileName = module.exports.subFileName = filePath => path.basename(filePath).split('.').slice(0, -1).join('.')
+export const subFileName = filePath => basename(filePath).split('.').slice(0, -1).join('.')
 
 /**
  * Load file from disk or from hash
  * @returns {string}
  */
-const loadText = module.exports.loadText = createHashedFunction(filename => 
-  fs.readFileSync(filename, 'utf8')
+export const loadText = createHashedFunction(filename => 
+  readFileSync(filename, 'utf8')
 )
 
 /**
  * Load JSON file from disk or from hash
  * @param {string} filename
  */
-const loadJson = module.exports.loadJson = createHashedFunction(filename => JSON.parse(loadText(filename)))
+export const loadJson = createHashedFunction(filename => JSON.parse(loadText(filename)))
 
 /**
  * Load CSV file from disk or from hash
  * @param {string} filename
  */
-module.exports.getCSV = createHashedFunction(/** @return {Object<string, string>[]} */filename => 
-  csvParseSync(fs.readFileSync(filename,'utf8'), {columns: true})
+export const getCSV = createHashedFunction(/** @return {Object<string, string>[]} */filename => 
+  csvParseSync(readFileSync(filename,'utf8'), {columns: true})
 )
 
 /**
  * Load CSV file from disk or from hash
  * @param {string} filename
  */
-module.exports.getPDF = createHashedFunction(async filename => 
-  (await pdf(fs.readFileSync(filename))).text
+export const getPDF = createHashedFunction(async filename => 
+  (await pdf(readFileSync(filename))).text
 )
 
 
 
-module.exports.config = createHashedFunction(filename => {
+export const config = createHashedFunction(filename => {
   let cfg = loadText(filename)
     .replace(/^ *#.*$/gm, '') // Remove comments
     .replace(/^~.*$/gm, '') // config version
@@ -131,8 +132,8 @@ module.exports.config = createHashedFunction(filename => {
   } catch (error) {
     console.log('Parsing config error. File: ', filename)
     console.error(error)
-    fs.writeFileSync(
-      path.resolve(__dirname, '_error_'+subFileName(filename)+'.js'),
+    writeFileSync(
+      relative('_error_'+subFileName(filename)+'.js'),
       'return{'+
       cfg.replace(/\n\n+/gm, '\n')
       +'}'
@@ -147,9 +148,9 @@ module.exports.config = createHashedFunction(filename => {
  * @param {string} txt
  * @param {string} filename
  */
-const saveText = module.exports.saveText = function(txt, filename) {
-  fs.mkdirSync(path.dirname(filename), { recursive: true })
-  fs.writeFileSync(filename, txt)
+export function saveText(txt, filename) {
+  mkdirSync(dirname(filename), { recursive: true })
+  writeFileSync(filename, txt)
 }
 
 /**
@@ -157,33 +158,31 @@ const saveText = module.exports.saveText = function(txt, filename) {
  * @param {Object} obj
  * @param {string} filename
  */
-module.exports.saveObjAsJson = function(obj, filename) {
+export function saveObjAsJson(obj, filename) {
   saveText(JSON.stringify(obj, null, 2), filename)
 }
 
-const escapeRegex = module.exports.escapeRegex = function(string) {
+export function escapeRegex(string) {
   return string.replace(/[/\\^$*+?.()|[\]{}]/g, '\\$&')
 }
 
-const matchBetween = function(str, begin, end, regex) {
+export function matchBetween(str, begin, end, regex) {
   let sub = str
   if (begin) sub = str.substr(str.indexOf(begin) + begin.length)
   if (end)   sub = sub.substr(0, sub.indexOf(end))
   return [...sub.matchAll(regex)]
 }
-module.exports.matchBetween = matchBetween
 
-
-module.exports.transpose = function(a) {
+export function transpose(a) {
   return Object.keys(a[0]).map(function(c) {
       return a.map(function(r) { return r[c] })
   })
 }
 
 
-module.exports.injectInFile = function(filename, keyStart, keyFinish, text) {
+export function injectInFile(filename, keyStart, keyFinish, text) {
   try {
-    return replace.sync({
+    return replace_in_file.sync({
       files: filename,
       from: new RegExp(escapeRegex(keyStart) + '[\\s\\S\n\r]*?' + escapeRegex(keyFinish), 'm'),
       to: keyStart+text+keyFinish,
@@ -196,16 +195,17 @@ module.exports.injectInFile = function(filename, keyStart, keyFinish, text) {
 }
 
 
-module.exports.write = module.exports.begin = function(...args) {
+export function write(...args) {
   process.stdout.write(args.join('\t'))
 }
 
-const end = module.exports.end = function(...args) {
-  process.stdout.write(args.length ===0 ? ' done' :args.join('\t'))
+export function end(...args) {
+  process.stdout.write(args.length === 0 ? ' done' : args.join('\t'))
   console.log()
 }
 
-module.exports.done = end
+export const begin = write
+export const done = end
 
 // # ######################################################################
 // #
@@ -234,7 +234,7 @@ module.exports.done = end
  * @param {DropEntry[]} [dropList]
  * @param {boolean} [isSkipSaving]
  */
-const setBlockDrops = module.exports.setBlockDrops = function(block_stack, dropList, isSkipSaving=false) {
+export function setBlockDrops(block_stack, dropList, isSkipSaving=false) {
   const [source, id, _block_meta] = block_stack.split(':')
   const block_meta = parseInt(_block_meta||'0')
   const block_id = `${source}:${id}`
@@ -281,7 +281,7 @@ const setBlockDrops = module.exports.setBlockDrops = function(block_stack, dropL
  * 
  * @param {{block_stack:string, dropList:DropEntry[]}[]} [blockDropList]
  */
-module.exports.setBlockDropsList = function(blockDropList) {
+export function setBlockDropsList(blockDropList) {
   let arr
   blockDropList.forEach(o => arr=setBlockDrops(o.block_stack, o.dropList, true))
   return saveBlockDrops(arr)
@@ -302,7 +302,7 @@ function saveBlockDrops(arr) {
 /**
  * @param {string | readonly string[]} globs
  */
-module.exports.globs = function(globs) {
+export function globs(globs) {
   return del.sync(globs, {dryRun: true, force: true})
 }
 
@@ -349,7 +349,7 @@ function renameKeys(obj, cb) {
  * @param {renameKeysCallback} cb
  * @return {*} 
  */
-const renameDeep = module.exports.renameDeep = (obj, cb) => {
+export function renameDeep(obj, cb) {
   const type = typeof(obj)
 
   if (type !== 'object' && !Array.isArray(obj)) {
@@ -378,10 +378,10 @@ const renameDeep = module.exports.renameDeep = (obj, cb) => {
  * @param {string} a
  * @param {string} b
  */
-const naturalSort = module.exports.naturalSort = (a,b)=>a.localeCompare(b, undefined, {numeric: true, sensitivity: 'base'})
+export const naturalSort = (a,b) => a.localeCompare(b, undefined, {numeric: true, sensitivity: 'base'})
 
 
-module.exports.isPathHasChanged = pPath=>{
+export function isPathHasChanged(pPath){
   try {
     return !!execSync('git diff HEAD '+pPath).toString().trim()
   } catch (error) {
@@ -390,7 +390,7 @@ module.exports.isPathHasChanged = pPath=>{
 }
 
 let furnaceRecipesHashed = undefined
-module.exports.getFurnaceRecipes = ()=>{
+export function getFurnaceRecipes(){
   if(furnaceRecipesHashed) return furnaceRecipesHashed
 
   const text = loadText('crafttweaker.log')
@@ -408,8 +408,54 @@ module.exports.getFurnaceRecipes = ()=>{
   ].map(m=>m.groups).sort((a,b)=>naturalSort(a.input,b.input))
 }
 
-module.exports.least_common_multiplier = (...arr) => {
+export function least_common_multiplier(...arr) {
   const gcd = (x, y) => (!y ? x : gcd(y, x % y))
   const _lcm = (x, y) => (x * y) / gcd(x, y)
   return [...arr].reduce((a, b) => _lcm(a, b))
 }
+
+
+/**
+ * @typedef {Object} Helper
+ * @property {(startItem: string, steps?: number)=>void} begin
+ * @property {(itemDone?: any)=>void} done
+ * @property {(s?: any)=>void} step
+ * @property {(s?: any)=>void} result
+ * @property {typeof console.log} warn
+ * @property {typeof console.error} error
+ * @property {boolean} [isUnfinishedTask]
+ */
+
+/**
+ * @type {Helper}
+ */
+export const defaultHelper = {
+  /** @this {Helper} */
+  begin: function (s, steps) {
+    this.done()
+    // @ts-ignore
+    if(steps) (this.steps = steps, this.stepSize = steps / 30)
+    process.stdout.write(`🔹 ${s.trim()}` + (steps?` [${steps}] `:''))
+    this.isUnfinishedTask = true
+  },
+  done: function (s='') {
+    if(!this.isUnfinishedTask) return
+    process.stdout.write(` ${chalk.gray(`${s} ✔`)}\n`)
+    this.isUnfinishedTask = false
+  },
+  step: function (s='.') {
+    // @ts-ignore
+    if(this.steps <= 30 || (this.steps-- % this.stepSize === 0)) {
+      process.stdout.write(s)
+    }
+  },
+  result: function (s='') {
+    this.done()
+    process.stdout.write(`✔️ ${chalk.dim.green(`${s}`)}\n`)
+  },
+  warn : function (s='') { process.stdout.write(`⚠️ ${chalk.dim.yellow(`${s}`)}`) },
+  error: function (s='') { process.stdout.write(`🛑 ${chalk.dim.red   (`${s}`)}`) },
+
+  isUnfinishedTask: false,
+}
+
