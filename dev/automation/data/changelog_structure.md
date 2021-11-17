@@ -78,6 +78,7 @@
   🍗 Scaling Feast
   🍯 Potion Core
   🏝️ Void Island Control
+  🎒 Traveler's Backpack
 
 🔄 Misc Changes | Misc
   🧩 Configs

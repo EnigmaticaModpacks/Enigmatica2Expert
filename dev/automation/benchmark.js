@@ -35,9 +35,7 @@ ModIdMapping - `
 
 /**
  * Chart with loading time
- * @type {Object<string, number[]>} ChartObj
- * @property {string} mod Mod name
- * @property {number} fml_step_time Time taken for each FML step
+ * @type {{[mod: string]: number[]}} Time taken for each FML step
  */
 const chart_obj = {}
 
@@ -173,21 +171,25 @@ export async function init(h=defaultHelper) {
   function spliceModLoadArray(entryName, description, timeReduce) {
     const entry = modLoadArray.find(e=>e[2]===entryName)
     if(!entry) return
+
+    if(!timeReduce || isNaN(timeReduce)) return
+    const [eColor, eTime, eName] = entry
+
     modLoadArray.splice(
       modLoadArray.indexOf(entry),
       1,
-      [entry[0], entry[1]-timeReduce, entry[2]],
+      [eColor, eTime-timeReduce, eName],
       [
-        Color('#'+entry[0]).darken(0.1).hex().slice(1),
+        Color('#'+eColor).darken(0.1).hex().slice(1),
         timeReduce,
-        entry[2] + ` (${description})`
+        eName + ` (${description})`
       ]
     )
   }
 
   // Split JEI
   spliceModLoadArray('Just Enough Items', 'Ingredient Filter', parseFloat(
-    debug_log.match(/\[jei\]: Building ingredient filter took (\d+\.\d+) s/)?.[1] ?? '0'
+    debug_log.match(/\[jei\]: Building ingredient filter took (\d+\.\d+) s/)?.[1]
   ))
   spliceModLoadArray('Just Enough Items', 'Plugins', _.sumBy(jeiPlugins,'1'))
 

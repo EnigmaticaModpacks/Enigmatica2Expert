@@ -48,65 +48,63 @@ export async function init(h=defaultHelper) {
   const crafttweaker_log = loadText('crafttweaker.log')
   const globMatch = crafttweaker_log.match(/^Recipes:$.*/ms)
 
-  if(!globMatch) {
-    return h.error('No /ct recipes found in crafttweaker.log')
-  }
-
-  const recipes = globMatch[0]
-
   const resultArr = []
+  if(globMatch) {
+    const recipes = globMatch[0]
+    const whitelist = [
+      '<extrautils2:opinium>',
+      '<extrautils2:opinium:1>',
+      '<immersiveengineering:drillhead:1>',
+      '<excompressum:auto_compressor>',
+      '<integrateddynamics:squeezer>',
+      '<ic2:crafting:18>',
+      '<extrautils2:spike_iron>',
+      '<valkyrielib:modifier_component>',
+      '<environmentaltech:lightning_rod>',
+      '<environmentaltech:lightning_cont_6>',
+      '<environmentaltech:lightning_cont_5>',
+      '<environmentaltech:lightning_cont_4>',
+      '<environmentaltech:lightning_cont_3>',
+      '<environmentaltech:lightning_cont_2>',
+      '<environmentaltech:lightning_cont_1>',
+      '<extendedcrafting:table_basic>',
+      '<rustic:condenser_advanced>',
+      '<draconicevolution:crafting_injector>',
+      '<cyclicmagic:fluid_drain>',
+    ]
 
-  const whitelist = [
-    '<extrautils2:opinium>',
-    '<extrautils2:opinium:1>',
-    '<immersiveengineering:drillhead:1>',
-    '<excompressum:auto_compressor>',
-    '<integrateddynamics:squeezer>',
-    '<ic2:crafting:18>',
-    '<extrautils2:spike_iron>',
-    '<valkyrielib:modifier_component>',
-    '<environmentaltech:lightning_rod>',
-    '<environmentaltech:lightning_cont_6>',
-    '<environmentaltech:lightning_cont_5>',
-    '<environmentaltech:lightning_cont_4>',
-    '<environmentaltech:lightning_cont_3>',
-    '<environmentaltech:lightning_cont_2>',
-    '<environmentaltech:lightning_cont_1>',
-    '<extendedcrafting:table_basic>',
-    '<rustic:condenser_advanced>',
-    '<draconicevolution:crafting_injector>',
-    '<cyclicmagic:fluid_drain>',
-  ]
+    // Add already exist remakes
+    const fakeIron_zs = loadText('scripts/category/fakeIron.zs')
+    const remakes = fakeIron_zs.match(/^# Start of automatically generated recipes:$.*/ms)[0]
+    for (const match of remakes.matchAll(/^remakeShape.{1,4}\("[^"]+", (?<output><[^>]+>).*$/gm)) {
+      if(whitelist.includes(match.groups.output))
+        resultArr.push(match[0])
+    }
 
-  // Add already exist remakes
-  const fakeIron_zs = loadText('scripts/category/fakeIron.zs')
-  const remakes = fakeIron_zs.match(/^# Start of automatically generated recipes:$.*/ms)[0]
-  for (const match of remakes.matchAll(/^remakeShape.{1,4}\("[^"]+", (?<output><[^>]+>).*$/gm)) {
-    if(whitelist.includes(match.groups.output))
-      resultArr.push(match[0])
+    // Add new
+    for (const match of recipes.matchAll(/^(?<function>recipes\.addShape(?<postfix>d|less))\((?<name>".*?") *, *(?<output>[^, ]*?)(?<count> \* \d+)?, (?<grid>.*)\);$/gm)) {
+      const g = match.groups
+
+      const regex = /<(minecraft:iron_|ore:)(ingot|block|nugget)(?:Iron)?>/gi
+      if(
+        !whitelist.includes(g.output) ||
+        !g.grid.match(new RegExp('.*' + regex.source + '.*'))
+      ) continue
+
+      const replacedGrid = g.grid.replaceAll(regex, (...args) => args[2].substring(0,1).toUpperCase())
+      const line = `remakeShape${g.postfix}(${g.name}, ${g.output}${g.count??''}, ${replacedGrid});`
+      resultArr.push(line)
+    }
+
+
+    injectInFile('scripts/category/fakeIron.zs', 
+      '# Start of automatically generated recipes:\n',
+      '\n# End of automatically generated recipes',
+      resultArr.sort().join('\n')
+    )
+  } else {
+    h.warn('No /ct recipes found in crafttweaker.log')
   }
-
-  // Add new
-  for (const match of recipes.matchAll(/^(?<function>recipes\.addShape(?<postfix>d|less))\((?<name>".*?") *, *(?<output>[^, ]*?)(?<count> \* \d+)?, (?<grid>.*)\);$/gm)) {
-    const g = match.groups
-
-    const regex = /<(minecraft:iron_|ore:)(ingot|block|nugget)(?:Iron)?>/gi
-    if(
-      !whitelist.includes(g.output) ||
-      !g.grid.match(new RegExp('.*' + regex.source + '.*'))
-    ) continue
-
-    const replacedGrid = g.grid.replaceAll(regex, (...args) => args[2].substring(0,1).toUpperCase())
-    const line = `remakeShape${g.postfix}(${g.name}, ${g.output}${g.count??''}, ${replacedGrid});`
-    resultArr.push(line)
-  }
-
-
-  injectInFile('scripts/category/fakeIron.zs', 
-    '# Start of automatically generated recipes:\n',
-    '\n# End of automatically generated recipes',
-    resultArr.sort().join('\n')
-  )
 
   //###############################################################################
   //###############################################################################

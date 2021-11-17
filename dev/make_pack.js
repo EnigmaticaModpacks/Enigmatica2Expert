@@ -8,12 +8,13 @@
 
 //@ts-check
 import { execSync } from 'child_process'
-import { existsSync, lstatSync, statSync, rmdirSync, mkdir, copySync } from 'fs-extra'
+import fs_extra from 'fs-extra'
+const { existsSync, lstatSync, statSync, rmdirSync, mkdir, copySync } = fs_extra
 import { join, basename, relative, dirname } from 'path'
 import AdmZip from 'adm-zip'
 import { write, end, globs } from './lib/utils.js'
 import { sync } from 'del'
-import { sync as _sync } from 'replace-in-file'
+import replace_in_file from 'replace-in-file'
 
 const dot=()=>write('.')
 const getFileName = (s) => s.replace(/^.*[\\/]/, '')
@@ -35,23 +36,20 @@ end(version)
 const hoursReadmeUpdated = (Date.now() - statSync('CHANGELOG.md').mtime.getTime()) / (1000*60*60)
 if(hoursReadmeUpdated > 1) {
   end('❌ You probably forget update CHANGELOG.md')
-  // @ts-ignore
-  return
+  process.exit(1)
 }
 const comittsAfterTag = 
   parseInt(execSync('git rev-list --count HEAD'    ).toString().trim()) -
   parseInt(execSync('git rev-list --count '+version).toString().trim())
 if(comittsAfterTag > 1) {
   end('❌ There is commits after tag. You probably forget add tag')
-  // @ts-ignore
-  return
+  process.exit(1)
 }
 const lastTagDate = execSync('git show -s --format=%cd '+version).toString().trim().split('\n').pop()
 const lastTagHoursPassed = (Date.now() - Date.parse(lastTagDate)) / (1000*60*60)
 if(lastTagHoursPassed > 10) {
   end('❌ More than 10 hours from last tag passed. You probably forget add tag')
-  // @ts-ignore
-  return
+  process.exit(1)
 }
 
 
@@ -312,7 +310,7 @@ function addToServerZip(filesAndFolders, zipPath_cb) {
 addToPack(`${distrDir}TL.exe`)
 
 // Set Russian Language in default options
-_sync({
+replace_in_file.sync({
   files: 'config/defaultoptions/options.txt',
   from: /^lang:\w+$/,
   to: 'lang:ru_ru',
@@ -346,7 +344,7 @@ const planetNames = {
   'Kepler 0118'     : 'Кеплер 0118',
   'Kepler 0119'     : 'Кеплер 0119',
 }
-_sync({
+replace_in_file.sync({
   files: 'config/jeresources/world-gen.json',
   from: /^\s+"dim": "(?<name>.*)(?<id> \(-?\d+\))"$/,
   to: (/** @type {*[]} */ ...args)=>{

@@ -67,7 +67,8 @@ export async function init(h=defaultHelper) {
   const nextVersion = bumpVersion(version)
   await h.begin('Version ' + version + ' -> ' + nextVersion + ' ')
 
-  const changelogLines = [`# ${nextVersion}`,'','']
+  /** @type {string[]} */
+  const changelogLines = []
 
   // Extract old minecraftinstance.json (from latest assigned tag)
   execSync(`git show tags/${version}:minecraftinstance.json > ${minecraftinstance_old}`)
@@ -174,7 +175,7 @@ export async function init(h=defaultHelper) {
   await h.begin('Writing in file')
   changelogLines.push(...commitLogChanges, '\n\n')
   const fullChLogPath = relative('data/~CHANGELOG_LATEST.md')
-  writeFileSync(fullChLogPath, changelogLines.join('\n'))
+  writeFileSync(fullChLogPath, [`# ${nextVersion}\n\n`, ...changelogLines].join('\n'))
 
   // Automatically assign icons
   await h.begin('Automatic iconisation')

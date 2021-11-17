@@ -1,6 +1,5 @@
 [main/WARN] [mixin]: MixinEnvironment::addConfiguration is deprecated and will be removed. Use Mixins::addConfiguration instead!
 [main/WARN] [mixin]: MixinEnvironment::addConfiguration is deprecated and will be removed. Use Mixins::addConfiguration instead!
-[main/WARN] [ModDirector[CORE]]: This modpack does not contain a modpack.json, if you are the author, consider adding one!
 [main/WARN] [ModDirector/ForgeLateLoader[Launchwrapper]]: Failed to find deobf tweaker, injecting after deobf tweaker at first place
 [main/ERROR] [mixin]: Mixin config mixins.mixincompat.json does not specify "minVersion" property
 [main/WARN] [mixin]: Reference map 'mixins.mixincompat.refmap.json' for mixins.mixincompat.json could not be read. If this is a development environment you can ignore this message

@@ -20,6 +20,10 @@ import { execSync } from 'child_process'
 import pdf from 'pdf-parse/lib/pdf-parse.js'
 import chalk from 'chalk'
 
+import { URL, fileURLToPath  } from 'url' // @ts-ignore
+function relative(relPath='./') { return fileURLToPath(new URL(relPath, import.meta.url)) }
+
+
 /*=============================================
 =            Internal Helpers                 =
 =============================================*/
@@ -267,7 +271,7 @@ export function setBlockDrops(block_stack, dropList, isSkipSaving=false) {
     if(entryIndex !== -1) Object.assign(arr[entryIndex], newObj)
     else(arr.push(newObj))
   else
-    arr.splice(entryIndex, 1)
+    if(entryIndex !== -1) arr.splice(entryIndex, 1)
   
   if(!isSkipSaving) {
     saveBlockDrops(arr)
