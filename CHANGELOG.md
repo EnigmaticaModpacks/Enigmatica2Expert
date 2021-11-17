@@ -1,6 +1,64 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
 
+# v0.40
+
+
+## 🟢 New Mods
+
+Icon | Summary | Reason
+----:|:--------| ------
+<img src="https://media.forgecdn.net/avatars/thumbnails/358/827/256/256/637520208754289091.png" width="50"> | 🟫 [**SneedASM**](https://www.curseforge.com/minecraft/mc-mods/sneedasm) <sup><sub>loliasm-4.3.jar</sub></sup> <br> Huge optimizations that are targeted at 1.12.2. Feed and sneed. | Need some tests. Disabled in this version
+
+## 🟡 Updated Mods
+
+- **AE Additions - ExtraCells2 Fork**
+- **Athenaeum**
+- **Kiro's Basic Blocks**
+- **Collective (Forge)**
+- **CreativeCore**
+- **LittleTiles**
+- **Just Enough Calculation**
+
+
+## [> Mods updates detailed.](changelogs/CHANGELOG_MODS_v0.40.md)
+
+
+## ✏️ **Recipes**
+  - ### 🖉 **New Recipes**
+    - ![](https://git.io/JZviQ "Conduit Binder") in ![](https://git.io/JGGjS "Crystallizer")
+    - [Single Compressed Wood] => ![](https://git.io/J1BGw "Block of Charcoal")
+    - [Double Compressed Wood] => [Single Compressed Charcoal]
+    - ![](https://git.io/J1Bs6 "Fertilizer")
+
+  - ### ✐ **Cheaper**
+    - ![](https://git.io/Jsw4e "Shock Absorber")
+      ![](https://git.io/JtJJk "White Alabaster")
+
+  - ### ✏ **Misc Changes**
+    - ![](https://git.io/J1Bsi "Hardened Casing") now craftable from ![](https://git.io/JtIrt "Rat Diamond")
+    - Gas Turbine x5 ![](https://git.io/J1BsP "Flue Gas") output
+    - ![](https://git.io/JzVqO "Garbage Pile") buff output amount
+
+
+
+## 🔵 **Mods**
+  - ### 🐝 **Forestry**: Add all Environmental Materials blocks to ![](https://git.io/J6y7J "Building Backpack")
+
+  - ### 👨‍🏭 **Mekanism**: buff ![](https://git.io/JCt02 "Advanced Bin") and higher
+
+  - ### 🎒 **Traveler's Backpack**: buff tank up to 100 buckets
+
+
+
+## 🔄 **Misc Changes**
+  - ### 📖 **Quest Book**: Quests updates
+
+
+
+
+
+
 # v0.39
 
 

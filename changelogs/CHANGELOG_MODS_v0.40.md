@@ -1,0 +1,317 @@
+# Enigmatica2Expert-Extended v0.39⟶Enigmatica2Expert-Extended v0.40
+
+## Added
+
+* [SneedASM](https://www.curseforge.com/minecraft/mc-mods/sneedasm)
+
+## Updated
+
+### [AE Additions - ExtraCells2 Fork](https://www.curseforge.com/minecraft/mc-mods/ae-additions-extra-cells-2-fork) ([AEAdditions-1.12.2-1.3.1](https://www.curseforge.com/minecraft/mc-mods/ae-additions-extra-cells-2-fork/files/3430042)⟶[AEAdditions-1.12.2-1.3.2](https://www.curseforge.com/minecraft/mc-mods/ae-additions-extra-cells-2-fork/files/3526105))
+
+#### [AEAdditions-1.12.2-1.3.2](https://www.curseforge.com/minecraft/mc-mods/ae-additions-extra-cells-2-fork/files/3526105)
+  > 
+  > Changelog
+  > 
+  > [1.3.2](https://github.com/the9grounds/AE-Additions/tree/1.3.2) (2021-11-14)
+  > 
+  > Closed issues:
+  > 
+  > * Fluid Autofiller Causing Crash [#41](https://github.com/the9grounds/AE-Additions/issues/41)
+  > 
+  > Merged pull requests:
+  > 
+  > * Fix gas storage bus [#44](https://github.com/the9grounds/AE-Additions/pull/44)
+  > 
+  > [1.3.1](https://github.com/the9grounds/AE-Additions/tree/1.3.1) (2021-08-18)
+  > 
+  > Fixed bugs:
+  > 
+  > * [1.12.2] Crash [#40](https://github.com/the9grounds/AE-Additions/issues/40)
+  > 
+  > [1.3.0](https://github.com/the9grounds/AE-Additions/tree/1.3.0) (2021-07-18)
+  > 
+  > Implemented enhancements:
+  > 
+  > * Add gas interface [#24](https://github.com/the9grounds/AE-Additions/pull/24)
+  > 
+  > Fixed bugs:
+  > 
+  > * Actually fix gas duplication with gas import bus [#25](https://github.com/the9grounds/AE-Additions/issues/25)
+  > * Crash in FuelBurnTime [#23](https://github.com/the9grounds/AE-Additions/issues/23)
+  > 
+  > [1.2.3](https://github.com/the9grounds/AE-Additions/tree/1.2.3) (2021-07-11)
+  > 
+  > Fixed bugs:
+  > 
+  > * Crashes when EnderIO isn't installed [#22](https://github.com/the9grounds/AE-Additions/issues/22)
+  > 
+  > [1.2.2](https://github.com/the9grounds/AE-Additions/tree/1.2.2) (2021-06-24)
+  > 
+  > Fixed bugs:
+  > 
+  > * Cell Workbench filters do not work for fluid storage above 256k [#19](https://github.com/the9grounds/AE-Additions/issues/19)
+  > 
+  > [1.2.1](https://github.com/the9grounds/AE-Additions/tree/1.2.1) (2021-06-24)
+  > 
+  > Fixed bugs:
+  > 
+  > * JEI doesn't show the recipes for items [#18](https://github.com/the9grounds/AE-Additions/issues/18)
+  > 
+  > [1.2.0](https://github.com/the9grounds/AE-Additions/tree/1.2.0) (2021-06-24)
+  > 
+  > Implemented enhancements:
+  > 
+  > * Ability to add upgrades to fluid auto filler [#16](https://github.com/the9grounds/AE-Additions/issues/16)
+  > 
+  > Fixed bugs:
+  > 
+  > * When removing patterns from fluid crafter, it doesn't update the available patterns in the ME system [#17](https://github.com/the9grounds/AE-Additions/issues/17)
+  > * Using wrench on fluid crafter doesn't drop upgrades [#15](https://github.com/the9grounds/AE-Additions/issues/15)
+  > * Breaking Fluid Crafter doesn't drop upgrades [#14](https://github.com/the9grounds/AE-Additions/issues/14)
+  > * Shift clicking dropper when on gas emitter does nothing [#13](https://github.com/the9grounds/AE-Additions/issues/13)
+  > * Null exception when shift clicking mekanism dropper [#12](https://github.com/the9grounds/AE-Additions/issues/12)
+  > 
+  > Closed issues:
+  > 
+  > * Make fluid auto filler more user friendly [#11](https://github.com/the9grounds/AE-Additions/issues/11)
+  > 
+  > [1.1.0](https://github.com/the9grounds/AE-Additions/tree/1.1.0) (2021-06-18)
+  > 
+  > Implemented enhancements:
+  > 
+  > * Add ability to add acceleration cards to Fluid Assembler [#9](https://github.com/the9grounds/AE-Additions/issues/9)
+  > 
+  > Fixed bugs:
+  > 
+  > * Opening Wireless Fluid Terminal does nothing [#7](https://github.com/the9grounds/AE-Additions/issues/7)
+  > 
+  > Merged pull requests:
+  > 
+  > * Add acceleration upgrade to fluid crafter [#10](https://github.com/the9grounds/AE-Additions/pull/10)
+  > 
+  > [1.0.3](https://github.com/the9grounds/AE-Additions/tree/1.0.3) (2021-06-16)
+  > 
+  > Fixed bugs:
+  > 
+  > * Fix conversion issues with GasTerminal & Add disclaimer to numberOfTypes in config [#5](https://github.com/the9grounds/AE-Additions/pull/5)
+  > 
+  > [1.0.2](https://github.com/the9grounds/AE-Additions/tree/1.0.2) (2021-06-16)
+  > 
+  > [1.0.1](https://github.com/the9grounds/AE-Additions/tree/1.0.1) (2021-06-16)
+  > 
+  > Fixed bugs:
+  > 
+  > * Infinite loop when adding dropper to input slot in Gas Terminal [#4](https://github.com/the9grounds/AE-Additions/issues/4)
+  > * Gas terminal not updated when inserting new gas into system [#1](https://github.com/the9grounds/AE-Additions/issues/1)
+  > 
+  > Closed issues:
+  > 
+  > * Gas textures in terminal don't show up correctly [#3](https://github.com/the9grounds/AE-Additions/issues/3)
+  > 
+  > Merged pull requests:
+  > 
+  > * [ci] Fix github actions [#2](https://github.com/the9grounds/AE-Additions/pull/2)
+  > 
+  > [1.0.0](https://github.com/the9grounds/AE-Additions/tree/1.0.0) (2021-06-14)
+  > 
+  > * This Changelog was automatically generated by [githubchangeloggenerator](https://github.com/github-changelog-generator/github-changelog-generator)
+  > 
+#### [AEAdditions-1.12.2-1.3.2](https://www.curseforge.com/minecraft/mc-mods/ae-additions-extra-cells-2-fork/files/3525375)
+  > 
+  > Changelog
+  > 
+  > [1.3.2](https://github.com/the9grounds/AE-Additions/tree/1.3.2) (2021-11-14)
+  > 
+  > Closed issues:
+  > 
+  > * Fluid Autofiller Causing Crash [#41](https://github.com/the9grounds/AE-Additions/issues/41)
+  > 
+  > Merged pull requests:
+  > 
+  > * Fix gas storage bus [#44](https://github.com/the9grounds/AE-Additions/pull/44)
+  > 
+  > [1.3.1](https://github.com/the9grounds/AE-Additions/tree/1.3.1) (2021-08-18)
+  > 
+  > Fixed bugs:
+  > 
+  > * [1.12.2] Crash [#40](https://github.com/the9grounds/AE-Additions/issues/40)
+  > 
+  > [1.3.0](https://github.com/the9grounds/AE-Additions/tree/1.3.0) (2021-07-18)
+  > 
+  > Implemented enhancements:
+  > 
+  > * Add gas interface [#24](https://github.com/the9grounds/AE-Additions/pull/24)
+  > 
+  > Fixed bugs:
+  > 
+  > * Actually fix gas duplication with gas import bus [#25](https://github.com/the9grounds/AE-Additions/issues/25)
+  > * Crash in FuelBurnTime [#23](https://github.com/the9grounds/AE-Additions/issues/23)
+  > 
+  > [1.2.3](https://github.com/the9grounds/AE-Additions/tree/1.2.3) (2021-07-11)
+  > 
+  > Fixed bugs:
+  > 
+  > * Crashes when EnderIO isn't installed [#22](https://github.com/the9grounds/AE-Additions/issues/22)
+  > 
+  > [1.2.2](https://github.com/the9grounds/AE-Additions/tree/1.2.2) (2021-06-24)
+  > 
+  > Fixed bugs:
+  > 
+  > * Cell Workbench filters do not work for fluid storage above 256k [#19](https://github.com/the9grounds/AE-Additions/issues/19)
+  > 
+  > [1.2.1](https://github.com/the9grounds/AE-Additions/tree/1.2.1) (2021-06-24)
+  > 
+  > Fixed bugs:
+  > 
+  > * JEI doesn't show the recipes for items [#18](https://github.com/the9grounds/AE-Additions/issues/18)
+  > 
+  > [1.2.0](https://github.com/the9grounds/AE-Additions/tree/1.2.0) (2021-06-24)
+  > 
+  > Implemented enhancements:
+  > 
+  > * Ability to add upgrades to fluid auto filler [#16](https://github.com/the9grounds/AE-Additions/issues/16)
+  > 
+  > Fixed bugs:
+  > 
+  > * When removing patterns from fluid crafter, it doesn't update the available patterns in the ME system [#17](https://github.com/the9grounds/AE-Additions/issues/17)
+  > * Using wrench on fluid crafter doesn't drop upgrades [#15](https://github.com/the9grounds/AE-Additions/issues/15)
+  > * Breaking Fluid Crafter doesn't drop upgrades [#14](https://github.com/the9grounds/AE-Additions/issues/14)
+  > * Shift clicking dropper when on gas emitter does nothing [#13](https://github.com/the9grounds/AE-Additions/issues/13)
+  > * Null exception when shift clicking mekanism dropper [#12](https://github.com/the9grounds/AE-Additions/issues/12)
+  > 
+  > Closed issues:
+  > 
+  > * Make fluid auto filler more user friendly [#11](https://github.com/the9grounds/AE-Additions/issues/11)
+  > 
+  > [1.1.0](https://github.com/the9grounds/AE-Additions/tree/1.1.0) (2021-06-18)
+  > 
+  > Implemented enhancements:
+  > 
+  > * Add ability to add acceleration cards to Fluid Assembler [#9](https://github.com/the9grounds/AE-Additions/issues/9)
+  > 
+  > Fixed bugs:
+  > 
+  > * Opening Wireless Fluid Terminal does nothing [#7](https://github.com/the9grounds/AE-Additions/issues/7)
+  > 
+  > Merged pull requests:
+  > 
+  > * Add acceleration upgrade to fluid crafter [#10](https://github.com/the9grounds/AE-Additions/pull/10)
+  > 
+  > [1.0.3](https://github.com/the9grounds/AE-Additions/tree/1.0.3) (2021-06-16)
+  > 
+  > Fixed bugs:
+  > 
+  > * Fix conversion issues with GasTerminal & Add disclaimer to numberOfTypes in config [#5](https://github.com/the9grounds/AE-Additions/pull/5)
+  > 
+  > [1.0.2](https://github.com/the9grounds/AE-Additions/tree/1.0.2) (2021-06-16)
+  > 
+  > [1.0.1](https://github.com/the9grounds/AE-Additions/tree/1.0.1) (2021-06-16)
+  > 
+  > Fixed bugs:
+  > 
+  > * Infinite loop when adding dropper to input slot in Gas Terminal [#4](https://github.com/the9grounds/AE-Additions/issues/4)
+  > * Gas terminal not updated when inserting new gas into system [#1](https://github.com/the9grounds/AE-Additions/issues/1)
+  > 
+  > Closed issues:
+  > 
+  > * Gas textures in terminal don't show up correctly [#3](https://github.com/the9grounds/AE-Additions/issues/3)
+  > 
+  > Merged pull requests:
+  > 
+  > * [ci] Fix github actions [#2](https://github.com/the9grounds/AE-Additions/pull/2)
+  > 
+  > [1.0.0](https://github.com/the9grounds/AE-Additions/tree/1.0.0) (2021-06-14)
+  > 
+  > * This Changelog was automatically generated by [githubchangeloggenerator](https://github.com/github-changelog-generator/github-changelog-generator)
+  > 
+### [Athenaeum](https://www.curseforge.com/minecraft/mc-mods/athenaeum) ([athenaeum-1.12.2-1.19.3.jar](https://www.curseforge.com/minecraft/mc-mods/athenaeum/files/3466382)⟶[athenaeum-1.12.2-1.19.4.jar](https://www.curseforge.com/minecraft/mc-mods/athenaeum/files/3521417))
+
+#### [athenaeum-1.12.2-1.19.4.jar](https://www.curseforge.com/minecraft/mc-mods/athenaeum/files/3521417)
+  > 
+  > See [https://github.com/codetaylor/athenaeum/commits/master](https://github.com/codetaylor/athenaeum/commits/master)
+  > 
+### [Collective (Forge)](https://www.curseforge.com/minecraft/mc-mods/collective) ([collective-1.12.2-2.64.jar](https://www.curseforge.com/minecraft/mc-mods/collective/files/3454171)⟶[collective-1.12.2-2.65.jar](https://www.curseforge.com/minecraft/mc-mods/collective/files/3521684))
+
+#### [collective-1.12.2-2.65.jar](https://www.curseforge.com/minecraft/mc-mods/collective/files/3521684)
+  > 
+  > Changelog:
+  > 
+  > Updated backend code.
+  > 
+  > Increased support for modded villagers.
+  > 
+  > =========
+  > 
+  > The complete changelog with previous versions can be found at [https://minecraft.natamus.com/collective/changelog/](https://minecraft.natamus.com/collective/changelog/).
+  > 
+  > Thank you very much to my [Patrons](https://patreon.com/ricksouth) and [Github Sponsors](https://github.com/sponsors/ricksouth) for supporting this mod's development:
+  > 
+  > Adara Christine | joj | Kreezcraft.com | limpjellyfish | Morgan Schetzle | Robert Gilbert | Tyler Behl
+  > 
+### [CreativeCore](https://www.curseforge.com/minecraft/mc-mods/creativecore) ([CreativeCore_v1.10.65_mc1.12.2.jar](https://www.curseforge.com/minecraft/mc-mods/creativecore/files/3467576)⟶[CreativeCore_v1.10.68_mc1.12.2.jar](https://www.curseforge.com/minecraft/mc-mods/creativecore/files/3522788))
+
+#### [CreativeCore_v1.10.68_mc1.12.2.jar](https://www.curseforge.com/minecraft/mc-mods/creativecore/files/3522788)
+  > 
+  > Fixed sending packets from subworld
+  > 
+  > Fixed tileentity update issue
+  > 
+  > Fixed sending update to players tracking entity
+  > 
+### [Just Enough Calculation](https://www.curseforge.com/minecraft/mc-mods/just-enough-calculation) ([JustEnoughCalculation-1.12.2-3.2.6.jar](https://www.curseforge.com/minecraft/mc-mods/just-enough-calculation/files/3293954)⟶[JustEnoughCalculation-1.12.2-3.2.7.jar](https://www.curseforge.com/minecraft/mc-mods/just-enough-calculation/files/3524685))
+
+#### [JustEnoughCalculation-1.12.2-3.2.7.jar](https://www.curseforge.com/minecraft/mc-mods/just-enough-calculation/files/3524685)
+  > 
+  > Fix #94
+  > 
+### [Kiro's Basic Blocks](https://www.curseforge.com/minecraft/mc-mods/kiros-basic-blocks) ([Kiro's Basic Blocks v1.2](https://www.curseforge.com/minecraft/mc-mods/kiros-basic-blocks/files/3426368)⟶[Kiro's Basic Blocks v1.2.1](https://www.curseforge.com/minecraft/mc-mods/kiros-basic-blocks/files/3526794))
+
+#### [Kiro's Basic Blocks v1.2.1](https://www.curseforge.com/minecraft/mc-mods/kiros-basic-blocks/files/3526794)
+  > 
+  > NEW:
+  > 
+  > * Added LittleTiles as a dependency
+  > * Added the following blocks:
+  > * Default Fire Block - The same texture/coloring as the vanilla fire block, but can be chiseled
+  > * Added the following 32x blocks (all textures are subject to change):
+  > * Wallpaper 1
+  > * Dyeable Leaves
+  > * Leaves
+  > * Chain Fence
+  > * Shiny Metal
+  > * Added tooltips to describe certain blocks special properties (rotation, emissiveness, etc). Thanks _Doc for the code!
+  > * Added a new tab for 32x block (tab icon pending)
+  > 
+  > CHANGES:
+  > 
+  > * Fixed names of some blocks and tabs having an extra space before the actual name
+  > * Fixed some blocks being in the wrong tabs
+  > 
+### [LittleTiles](https://www.curseforge.com/minecraft/mc-mods/littletiles) ([LittleTiles_v1.5.35_mc1.12.2.jar](https://www.curseforge.com/minecraft/mc-mods/littletiles/files/3516089)⟶[LittleTiles_v1.5.45_mc1.12.2.jar](https://www.curseforge.com/minecraft/mc-mods/littletiles/files/3523199))
+
+#### [LittleTiles_v1.5.45_mc1.12.2.jar](https://www.curseforge.com/minecraft/mc-mods/littletiles/files/3523199)
+  > 
+  > Fixed crash when using door outside of minecrafts height bounds
+  > 
+#### [LittleTiles_v1.5.44_mc1.12.2.jar](https://www.curseforge.com/minecraft/mc-mods/littletiles/files/3522789)
+  > 
+  > Added no INoPushEntity
+  > 
+  > Reworked door opening system (now only handled server side)
+  > 
+  > Reworked smooth door transition
+  > 
+  > Updated to creativecore tileentity update change
+  > 
+  > Fixed box cache not getting reset in all caches
+  > 
+  > Fixed getting stuck in rendering loop
+  > 
+  > Fixed saving invalid te for structure block connection
+  > 
+  > Fixed not canceling wheel click event if sub world sensitive click wheel event is canceled
+  > 
+  > Fixed not face culling from te to vanilla blocks
+  > 
+  > Generated using [ChangelogGenerator 2.0.0-pre10](https://github.com/TheRandomLabs/ChangelogGenerator).
+  > 
