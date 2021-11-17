@@ -89,7 +89,7 @@ key_of.key.zoom:-97
 key_ALT Key:0
 key_Boost Key:0
 key_Mode Switch Key:47
-key_Side Inventory Key:0
+key_Side Inventory Key:77
 key_Hub Expand Key:0
 key_Change Caster Focus:34
 key_Misc Caster Toggle:0
@@ -150,7 +150,7 @@ key_openblocks.keybind.vario_vol_down:0
 key_key.ping:62
 key_ping.key.alert:75
 key_ping.key.mine:76
-key_ping.key.look:77
+key_ping.key.look:0
 key_ping.key.goto:72
 key_key.toggleFoVChanges:51:SHIFT
 key_key.reloadSoundSystem:66:SHIFT
