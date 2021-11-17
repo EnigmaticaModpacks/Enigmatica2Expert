@@ -66,6 +66,20 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Conduit Binder+] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>dust 20</oreDict>
+			<itemStack>ic2:dust 5 1</itemStack>
+			<itemStack>nuclearcraft:gem_dust 5 11</itemStack>
+			<fluidStack>sand 5000</fluidStack>
+		</input>
+		<output>
+			<itemStack>enderio:item_material 64 4</itemStack>
+			<itemStack>enderio:item_material 56 4</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Calcium Sulfate] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>

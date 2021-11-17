@@ -523,3 +523,7 @@ craft.make(<immersiveengineering:powerpack>, ["pretty",
   "♥": <ore:dustRedstone>,     # Redstone
   "▬": <ore:ingotLead>,        # Lead Ingot
 });
+
+# Add compressed variations
+scripts.wrap.immersiveengineering.CokeOven.addRecipe(<thermalfoundation:storage_resource>, 250 *  9, <additionalcompression:logwood_compressed>, 900 * 9);
+scripts.wrap.immersiveengineering.CokeOven.addRecipe(<additionalcompression:charcoal_compressed>, 12000, <additionalcompression:logwood_compressed:1>, 900 * 81);

@@ -603,3 +603,13 @@ craft.reshapeless(<actuallyadditions:item_resonant_rice> * 6, "REg", {
   "E": <extrautils2:endershard>,         # Ender Shard
   "g": <ore:gunpowder>,                  # Gunpowder
 });
+
+# [Shock Absorber] from [Advanced Coil][+2]
+craft.remake(<actuallyadditions:block_shock_suppressor>, ["pretty",
+  "■ * ■",
+  "* A *",
+  "■ * ■"], {
+  "■": <ore:blockSkyStone>,             # Sky Stone
+  "*": <ore:crystalVoid>,               # Void Crystal
+  "A": <actuallyadditions:item_misc:8>, # Advanced Coil
+});

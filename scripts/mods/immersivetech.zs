@@ -67,8 +67,8 @@ mods.immersivetechnology.Boiler.removeFuel(<liquid:gasoline>);  # 7
 // mods.immersivetechnology.Boiler.addFuel(ILiquidStack input, int time, double heat);
 # Default heat is 0.25
 mods.immersivetechnology.Boiler.addFuel(<liquid:biodiesel> * 10, 1, 100);
-mods.immersivetechnology.Boiler.addFuel(<liquid:biodiesel> * 50, 1, 100);
-mods.immersivetechnology.Boiler.addFuel(<liquid:biodiesel> *  7, 1, 100);
+mods.immersivetechnology.Boiler.addFuel(<liquid:diesel>    * 50, 1, 100);
+mods.immersivetechnology.Boiler.addFuel(<liquid:gasoline>  *  7, 1, 100);
 
 //mods.immersivetechnology.Boiler.removeRecipe(ILiquidStack input);
 mods.immersivetechnology.Boiler.removeRecipe(<liquid:water>);
@@ -116,15 +116,25 @@ mods.immersivetechnology.Radiator.addRecipe(<liquid:exhauststeam> * 500, <liquid
 # --------------
 # Heat Exchanger x5
 # --------------
-mods.immersivetechnology.HeatExchanger.removeRecipe(<liquid:fluegas>                , <liquid:water>);
-mods.immersivetechnology.HeatExchanger.removeRecipe(<liquid:fluegas>                , <liquid:distwater>);
-mods.immersivetechnology.HeatExchanger.removeRecipe(<liquid:superheatedmoltensodium>, <liquid:water>);
-mods.immersivetechnology.HeatExchanger.removeRecipe(<liquid:superheatedmoltensodium>, <liquid:distwater>);
-mods.immersivetechnology.HeatExchanger.removeRecipe(<liquid:water>                  , <liquid:exhauststeam>);
+mods.immersivetechnology.HeatExchanger.removeRecipe(<liquid:water>       , <liquid:fluegas>);
+mods.immersivetechnology.HeatExchanger.removeRecipe(<liquid:distwater>   , <liquid:fluegas>);
+mods.immersivetechnology.HeatExchanger.removeRecipe(<liquid:water>       , <liquid:superheatedmoltensodium>);
+mods.immersivetechnology.HeatExchanger.removeRecipe(<liquid:distwater>   , <liquid:superheatedmoltensodium>);
+mods.immersivetechnology.HeatExchanger.removeRecipe(<liquid:exhauststeam>, <liquid:water>);
 mods.immersivetechnology.HeatExchanger.addRecipe(<liquid:steam>     * 2250, null                            , <liquid:fluegas>                 * 1000, <liquid:water>        * 1250, 64, 4);
 mods.immersivetechnology.HeatExchanger.addRecipe(<liquid:steam>     * 2500, null                            , <liquid:fluegas>                 * 1000, <liquid:distwater>    * 1250, 64, 4);
 mods.immersivetechnology.HeatExchanger.addRecipe(<liquid:steam>     * 2250, <liquid:moltensodium>     *   80, <liquid:superheatedmoltensodium> *   80, <liquid:water>        * 1250, 64, 4);
 mods.immersivetechnology.HeatExchanger.addRecipe(<liquid:steam>     * 2500, <liquid:moltensodium>     *   80, <liquid:superheatedmoltensodium> *   80, <liquid:distwater>    * 1250, 64, 4);
 mods.immersivetechnology.HeatExchanger.addRecipe(<liquid:distwater> * 1250, <liquid:hot_spring_water> * 4500, <liquid:water>                   * 4500, <liquid:exhauststeam> * 2500, 32, 4);
+
+# --------------
+# Gas Turbine x5
+# --------------
+mods.immersivetechnology.GasTurbine.removeFuel(<liquid:biodiesel>);
+mods.immersivetechnology.GasTurbine.removeFuel(<liquid:gasoline>);
+mods.immersivetechnology.GasTurbine.removeFuel(<liquid:diesel>);
+mods.immersivetechnology.GasTurbine.addFuel(<liquid:fluegas> * 5000, <liquid:biodiesel> * 160, 10);
+mods.immersivetechnology.GasTurbine.addFuel(<liquid:fluegas> * 5000, <liquid:gasoline>  * 800, 10);
+mods.immersivetechnology.GasTurbine.addFuel(<liquid:fluegas> * 5000, <liquid:diesel>    * 114, 10);
 
 #------------------------------------------------------------------------

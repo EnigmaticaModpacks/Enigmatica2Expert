@@ -17,7 +17,7 @@ craft.remake(<vaultopic:view_small>, ["pretty",
 });
 
 recipes.remove(<vaultopic:view_big>);
-scripts.process.fill(<vaultopic:view_small>, <fluid:menrilresin> * 500, <vaultopic:view_big>, "no exceptions");
+scripts.process.fill(<vaultopic:view_small>, <fluid:menrilresin> * 500, <vaultopic:view_big>, "except: Casting");
 
 
 recipes.remove(<vaultopic:vice>);

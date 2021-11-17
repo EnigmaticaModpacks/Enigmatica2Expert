@@ -142,7 +142,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_hardened_machine"
 	.addEnergyPerTickInput(50000)
 	.addItemOutput(<forestry:hardened_machine>)
 	.addItemInput(<forestry:sturdy_machine>)
-	.addItemInput(<ore:gemDiamond>, 4)
+	.addItemInput(<ore:gemDiamondRat>, 4)
 	.addFluidInput(<liquid:water> * 5000)
 	.build();
 

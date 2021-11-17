@@ -36,6 +36,19 @@ scripts.wrap.forestry.Carpenter.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as
 	[<ore:ingotBronze>, null, <ore:ingotBronze>], 
 	[<ore:gearBronze>, <ore:ingotBronze>, <ore:gearBronze>]]);
 
+
+# [Hardened Casing] from [Sturdy Casing][+1]
+mods.forestry.Carpenter.removeRecipe(<forestry:hardened_machine>);
+scripts.wrap.forestry.Carpenter.addRecipe(<forestry:hardened_machine>, 
+  scripts.craft.grid.Grid(["pretty",
+  "◊   ◊",
+  "  ⌂  ",
+  "◊   ◊"], {
+  "◊": <ore:gemDiamondRat>,       # Rat Diamond
+  "⌂": <forestry:sturdy_machine>, # Sturdy Casing
+}).shaped(), 40, <liquid:water> * 5000);
+
+
 # Bee house
 	recipes.remove(<forestry:bee_house>);
 	

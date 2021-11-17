@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded immersiveengineering
-// Uses of this mod: 51
+// Uses of this mod: 53
 
 
 //####################################################
@@ -57,6 +57,20 @@ zenClass Class_ArcFurnace { zenConstructor() {}
 
 }
 static ArcFurnace as Class_ArcFurnace = Class_ArcFurnace();
+
+//####################################################
+// Uses of this class: 2
+zenClass Class_CokeOven { zenConstructor() {}
+
+	// Uses of this method: 2
+	function addRecipe(output as IItemStack, fuelOutput as int, input as IIngredient, time as int) as void {
+		if(utils.DEBUG) print('Recipe wrapped: mods.immersiveengineering.CokeOven.addRecipe'~
+			serialize.args([serialize.IItemStack(output), fuelOutput, serialize.IIngredient(input), time]));
+		mods.immersiveengineering.CokeOven.addRecipe(output, fuelOutput, input, time);
+	}
+
+}
+static CokeOven as Class_CokeOven = Class_CokeOven();
 
 //####################################################
 // Uses of this class: 27

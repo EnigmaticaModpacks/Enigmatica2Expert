@@ -184,6 +184,7 @@ add(<ore:blockMarble>, <chisel:marble2:7>);
 
 # Fertilizer
 addItems(<ore:fertilizer>, [
+	<ic2:crop_res:2>,
 	<actuallyadditions:item_fertilizer>,
 	<minecraft:dye:15>,
 	<industrialforegoing:fertilizer>,

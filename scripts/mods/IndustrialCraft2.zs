@@ -366,3 +366,13 @@ craft.make(<immersiveengineering:treated_wood> * 8, ["pretty",
   "#": <ore:plankWood>, # Oak Wood Planks
   "~": <fluid:ic2creosote> * 1000, # Creosote Bucket
 });
+
+# Alternative without scrap
+# [Fertilizer]*2 from [Fertilizer][+1]
+craft.shapeless(<ic2:crop_res:2> * 3, "eFFF", {
+  "e": <ic2:crop_res:2>,     # Fertilizer
+  "F": <ore:fertilizer>, # Fertilizer
+});
+
+# Scrap making from seed bags
+scripts.process.crush(<ic2:crop_seed_bag>, <ic2:crafting:23>, "only: Macerator", null, null);
