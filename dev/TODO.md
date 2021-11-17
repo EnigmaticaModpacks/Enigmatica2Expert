@@ -95,32 +95,24 @@ Liquids that should have more uses:
 - [ ] ✏️ Add EEPROM with `user`, `attacker`, `trader`
 - [ ] ✏️ Add Mob Trophies recipes
 - [ ] ✏️ Add Curiosity crafts. Probably from Twilight Forest Trees
-- [x] ✏️ [Basic Tank] not from concrete to make it avaliable early
-- [x] ✏️ [Compressed Cobblestone] melting in smeltery
-- [x] ✏️ [Endervoir] high-tech recipe
-- [x] ✏️ [Mechanical Crafter] add recipe
-- [x] ✏️ [Endorium Nugget] backwards conversion
 - [ ] ✏️ [Lormyte Stone] change ingredient from Evil tear
-- [x] ✏️ [Rat Nugget] -> rare seed
 - [ ] ✏️ [Pharos Beacon] harder
-- [x] ✏️ [Slime Essense] add more slimes to craft
-- [x] ✏️ Remove Basalz and other mob dusts from Botania Runes
 - [ ] ✏️ Add default arguments to process
-- [x] ✏️ Add [Wood Pile] from [Wood Essence]
-- [x] ✏️ [Magic Infuser] fix craft (empty secondary)
-- [x] ✏️ Random Things Plates cheaper
-- [x] ✏️ Water Essence give uses
-- [x] ✏️ [Logic Cable] harder, [mono-directional] harder
-- [x] ✏️ [Cheese] (harvestcraft) harder
+- [ ] ✏️ MA crafting seeds add table -> runic -> alchemy table recipe
+- [x] ✏️ Add conduit binder fast recipe
+- [ ] ✏️ Add Endermite rare drop, add Nethernite too
+- [x] ✏️ Add cheap Scrap source (from "unknown seed" for example)
+- [x] ✏️ Add [Hardened Casing] with Rat Diamond
+- [x] ✏️ [Shock absorber] cheaper
+- [x] ✏️ [Compressed Wood] in Coke oven add recipe
+- [ ] ✏️ [Antler] add usage
+- [x] ✏️ Buff Mekanism's Bins
+- [x] ✏️ Fluix plated iron ingot doesnt consume top and bottom ingredient
+- [x] ✏️ Immersive Technology gas turbine also needs to be tweaked to increase either flue gas output, or steam output from flue gas
 - [ ] 🔨 Grinding rework
-- [ ] 📖 Add CC/OC gate, add neural interface searching
+- [ ] 📖 Add CC/OC gate
 - [ ] 📖 Change sound of quest complete to another
-- [x] 📖 Utilities change main and other quests from Check Box
-- [x] 📖 Typesetting Table fix plate
-- [x] 📖 Osgloglas Sharp kit add another reward
-- [x] 📖 Morphing Tool better reward
-- [x] 📖 Chunky Cheese Token Better reward
-- [ ] 🔄 Install https://www.curseforge.com/minecraft/mc-mods/moddirector, load default options with it.
+- [x] 📖 Dank Null better reward
 - [ ] 🔄 Integrate https://github.com/release-it/release-it
 - [ ] 🚧 Add skyblock client/server changes
 
@@ -130,6 +122,7 @@ Liquids that should have more uses:
 
 # Long-Term
 
+- [ ] 🔄 Add neural interface searching: with neural interface and special program find special blocks
 - [ ] 🔄 ![](https://git.io/J3p8B "Infinity Furnace") front texture empty on client
 - [ ] ✏️ Rats as alt for some machine recipes
 - [ ] ✏️ ![](https://git.io/JCt00 "Creative Harvest") add more crafts
