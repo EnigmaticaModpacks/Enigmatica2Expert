@@ -68,16 +68,25 @@
     },
     "rewards:9": {
       "0:10": {
-        "rewardID:8": "bq_standard:item",
+        "rewardID:8": "bq_standard:choice",
         "index:3": 0,
-        "rewards:9": {
+        "choices:9": {
           "0:10": {
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
-            "id:8": "bq_standard:loot_chest",
-            "Count:3": 1,
-            "Damage:2": 75,
+            "id:8": "netherendingores:ore_nether_modded_1",
+            "Count:3": 2,
+            "Damage:2": 6,
+            "OreDict:8": ""
+          },
+          "1:10": {
+            "id:8": "environmentalmaterials:alabaster",
+            "Count:3": 256,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "2:10": {
+            "id:8": "sonarcore:reinforcedstonebrick",
+            "Count:3": 640,
+            "Damage:2": 0,
             "OreDict:8": ""
           }
         }

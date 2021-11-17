@@ -118,10 +118,7 @@
                 "Size:3": 1,
                 "Items:9": {}
               },
-              "astralsorcery:cap_item_amulet_holder:10": {
-                "AS_Amulet_HolderLeast:4": -8469918875462925000,
-                "AS_Amulet_HolderMost:4": -5260415147165142000
-              },
+              "astralsorcery:cap_item_amulet_holder:10": {},
               "plustic:fruitsalad_cap:10": {
                 "Size:3": 5,
                 "Items:9": {}
