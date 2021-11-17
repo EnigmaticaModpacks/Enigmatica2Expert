@@ -1,0 +1,8 @@
+{
+    "url": "https://optifine.net/adloadx?f=OptiFine_1.12.2_HD_U_G5.jar",
+    "follows": ["OptiFine 1.12.2 HD U G5"],
+    "fileName": "OptiFine_1.12.2_HD_U_G5.jar",
+    "options": {
+        "launchwrapperTweakerForceNext": true
+    }
+}
