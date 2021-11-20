@@ -250,3 +250,8 @@ craft.remake(<forestry:raintank>, ["pretty",
 
 # Pipete clearing
 recipes.addShapeless("Pipete clearing", <forestry:pipette>, [<forestry:pipette>]);
+
+# Alt for players who hate bees
+val RJ = <harvestcraft:royaljellyitem>; # Royal Jelly
+scripts.wrap.actuallyadditions.Empowerer.addRecipe(<forestry:royal_jelly>, <actuallyadditions:item_worm>, RJ, RJ, RJ, RJ, 250000, 200, [1.0, 1.0, 0.0]);
+scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<forestry:royal_jelly>, 1000000, 1000000, <actuallyadditions:item_worm>, [RJ, RJ, RJ, RJ]);

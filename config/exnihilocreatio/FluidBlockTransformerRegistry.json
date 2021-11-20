@@ -152,7 +152,7 @@
   },
   {
     "fluidName": "crystal",
-    "input": "randomthings:ingredient:1",
+    "input": "nuclearcraft:gem_dust:11",
     "output": "endreborn:block_lormyte_crystal"
   }
 ]

@@ -33,8 +33,6 @@ import scripts.processUtils.enderioXmlRecipe;
 #
 # ######################################################################
 
-static recipeCount as int = 0 as int;
-
 static staticOpts as IData = {} as IData;
 
 function getOption(options as IData, field as string) as IData {
@@ -631,7 +629,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
 
     if (machineName == "hydroponics") {
       val builder = mods.modularmachinery.RecipeBuilder
-        .newBuilder("hydroponics_" ~ getItemName(outputItem0) ~"-"~recipeCount, "hydroponics", 40)
+        .newBuilder(craft.uniqueRecipeName(outputItem0), "hydroponics", 40)
         .addEnergyPerTickInput(200000);
 
       for ins in inputItems { builder.addItemInput(ins.itemArray[0]); }
@@ -648,7 +646,6 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       }
 
       builder.build();
-      recipeCount += 1;
       return machineName;
     }
 

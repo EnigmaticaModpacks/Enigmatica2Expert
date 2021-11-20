@@ -206,11 +206,13 @@ tooltips.lang.trophy.squid=§eВода для возрождения
 tooltips.lang.trophy.witch=§eСлепой игрок
 tooltips.lang.kill.slime.by.zombie=§aПадает когда Зомби убивает Слайма
 tooltips.lang.kill.slime.by.enderman=§aПадает когда §nЭндермен§r убивает §nСлайма§r
+tooltips.lang.kill.slime.by.marbled_cheese_golem=§2Падает когда §nРатландский Автоматон§2 убивает §nСлайма
+tooltips.lang.kill.slime.by.cockatrice=§2Падает когда §nКокатрикс§2 убивает §nСлайма
 
 tooltips.dim_stages.healthy=§4Вам нужно иметь хотя бы §640 HP§4 (две полоски сердец) что бы посетить §cНезер
 tooltips.dim_stages.healthy_grant=Вы набрали §640 HP§r (две полоски сердец)!§r Теперь вы можете посетить §cНезер
 tooltips.dim_stages.restricted=§cВ мире §bСкайблока §c. Вы не можете посетить другие измерения §8(кроме личных и Космоса)§r.
-tooltips.dim_stages.enter_skyblock=§eВы запустили мир-§bСкайблок §e. Вы не можете посетить другие измерения §8(кроме личных и Космоса)§r.
+tooltips.dim_stages.enter_skyblock=§eВы запустили мир-§bСкайблок §e. Вы не можете посетить другие измерения §8(кроме личных и Космоса). А еще тебе дали Хасту на 3 часа.§r
 tooltips.dim_stages.remind_skyblock=§eВы снова запустили мир-§bСкайблок §e. Помните: вы не можете посетить другие измерения §8(кроме личных и Космоса)§r.
 
 requious.jei.recipe.infernal_furnace=Инфернальная Печь

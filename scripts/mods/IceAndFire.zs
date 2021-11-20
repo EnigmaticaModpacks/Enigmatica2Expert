@@ -596,3 +596,28 @@ scripts.wrap.iceandfire.recipes.addFireDragonForgeRecipe(<minecraft:iron_ingot>,
 scripts.wrap.iceandfire.recipes.addIceDragonForgeRecipe(<minecraft:iron_ingot>, <darkutils:material>, <extrautils2:ingredients:17>);
 scripts.wrap.iceandfire.recipes.addFireDragonForgeRecipe(<minecraft:iron_block>, <darkutils:wither_block>, <extrautils2:simpledecorative:2>); 
 scripts.wrap.iceandfire.recipes.addIceDragonForgeRecipe(<minecraft:iron_block>, <darkutils:wither_block>, <extrautils2:simpledecorative:2>);
+
+# Skyblock alt for dragon scales
+scripts.category.tooltip_utils.desc.both(<mysticalagradditions:stuff:3>, "kill.slime.by.cockatrice");
+scripts.loot.entity_kill_entity.add("minecraft:slime", "iceandfire:if_cockatrice", <mysticalagradditions:stuff:3>);
+
+# Dragon Scales
+var listConversionScales as IItemStack[] = [
+    <ic2:plate:10>,  <iceandfire:dragonscales_red>,
+    <ic2:plate:14>,  <iceandfire:dragonscales_green>,
+    <ic2:plate:9>,   <iceandfire:dragonscales_bronze>,
+    <ic2:plate:15>,  <iceandfire:dragonscales_gray>,
+    <ic2:plate:16>,  <iceandfire:dragonscales_blue>,
+    <ic2:plate:17>,  <iceandfire:dragonscales_white>,
+    <ic2:plate:13>,  <iceandfire:dragonscales_sapphire>,
+    <ic2:plate:12>,  <iceandfire:dragonscales_silver>
+];
+
+for i, input in listConversionScales {
+	if(i%2!=0) continue;
+	val output = listConversionScales[i+1];
+	mods.rats.recipes.addArcheologistRatRecipe(input, output);
+
+	# [Dragon Scales] from [Dragon Scale]
+	recipes.addShapeless(output, [<mysticalagradditions:stuff:3>, input]);
+}

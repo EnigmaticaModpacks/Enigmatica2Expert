@@ -428,3 +428,23 @@ craft.make(<extrautils2:crafter>, ["pretty",
   "░": <ore:cobblestone>,               # Cobblestone
   "♥": <ore:gearRedstone>,              # Redstone Gear
 });
+
+# [Mechanical Miner] from [Redstone Gear][+3]
+craft.remake(<extrautils2:miner>, ["pretty",
+  "# ▲ #",
+  "░ ♥ ░",
+  "░ ░ ░"], {
+  "#": <extrautils2:ironwood_planks:1>, # Raw Ferrous-Juniper Planks
+  "▲": <ore:dustCoke>,                  # Coke Dust
+  "░": <ore:cobblestone>,               # Cobblestone
+  "♥": <ore:gearRedstone>,              # Redstone Gear
+});
+craft.make(<extrautils2:miner>, ["pretty",
+  "# ▲ #",
+  "░ ♥ ░",
+  "░ ░ ░"], {
+  "#": <extrautils2:ironwood_planks>, # Ferrous-Juniper Planks
+  "▲": <ore:dustCoke>,                # Coke Dust
+  "░": <ore:cobblestone>,             # Cobblestone
+  "♥": <ore:gearRedstone>,            # Redstone Gear
+});

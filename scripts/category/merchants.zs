@@ -248,6 +248,9 @@ val merchData = {
       6: [
         [<industrialforegoing:animal_stock_increaser>, E*40],
       ],
+      7: [
+        [E*24, <mysticalagradditions:stuff:3>],
+      ],
     },
     "butcher": {
       3: [

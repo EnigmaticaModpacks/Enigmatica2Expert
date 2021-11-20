@@ -541,7 +541,7 @@ craft.make(<contenttweaker:conglomerate_of_coal>, ["pretty",
 mods.tconstruct.Casting.removeBasinRecipe(<minecraft:sand:1>);
 scripts.wrap.tconstruct.Casting.addBasinRecipe(<minecraft:sand:1>, <exnihilocreatio:block_granite_crushed>, <liquid:blood>, 10, true);
 
-
+/* 
 # Knowledge absorber craft
 # [Golden eye] from [Ender Orb Translocator][+3]
 craft.make(<contenttweaker:knowledge_absorber>, ["pretty",
@@ -603,3 +603,4 @@ for mobName, arr in {
 		input, input, input,
 	]);
 }
+ */

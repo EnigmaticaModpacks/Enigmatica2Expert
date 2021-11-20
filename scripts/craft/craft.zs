@@ -142,13 +142,15 @@ zenClass Craft {
     return itemSerialize(output) ~ " from "~itemSerialize(mainInput) ~ ads;
   }
 
-  function uniqueRecipeName(output as IItemStack, grid as Grid) as string {
-    var name = recipeName(output, grid);
+  function uniqueRecipeName(output as IItemStack, grid as Grid = null) as string {
+    var name = isNull(grid)
+      ? itemSerialize(output)
+      : recipeName(output, grid);
 
     if (!isNull(registeredNames[name])) {
-      var count = registeredNames[name];
+      val count = registeredNames[name];
       registeredNames[name] = count + 1;
-      name ~= " #"~count;
+      name ~= " _"~count;
     } else {
       registeredNames[name] = 1;
     }

@@ -405,13 +405,13 @@ craft.remake(<randomthings:pitcherplant>, [
 });
 
 # [Stable Ender Pearl] from [Ender Pearl][+2]
-craft.remake(<randomthings:stableenderpearl>, ["pretty",
+craft.remake(<randomthings:stableenderpearl> * 4, ["pretty",
   "  F  ",
   "F e F",
   "  o  "], {
   "F": <randomthings:ingredient:7>, # Floo Powder
   "e": <ore:enderpearl>,            # Ender Pearl
-  "o": <ore:obsidian>,              # Obsidian
+  "o": <fluxnetworks:flux>,
 });
 
 # [Item Collector] from [Bottle o' Enchanting][+2]

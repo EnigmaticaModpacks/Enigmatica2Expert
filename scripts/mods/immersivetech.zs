@@ -11,6 +11,15 @@ utils.rh(<immersivetech:material>);
 mods.immersivetechnology.Distiller.removeRecipe(<liquid:water>);
 mods.immersivetechnology.Distiller.addRecipe(<liquid:distwater> * 500, <liquid:water> * 1000, <mekanism:salt>, 2000, 20, 1.0f);
 
+# Cheaper because only for decoration
+# [Reinforced Coke Brick]*8 from [Steel Item Casing][+1]
+recipes.removeByRecipeName("immersivetech:stone_decoration/reinforced_cokebrick");
+craft.shapeless(<immersivetech:stone_decoration> * 8, "CCCC⌂CCCC", {
+  "C": <immersiveengineering:stone_decoration>, # Coke Brick
+  "⌂": <ic2:casing:5>,                          # Steel Item Casing
+});
+
+
 #------------------------------------------------------------------------
 # Harder Electolyze
 mods.nuclearcraft.electrolyser.removeRecipeWithInput([<fluid:water> * 1000]);

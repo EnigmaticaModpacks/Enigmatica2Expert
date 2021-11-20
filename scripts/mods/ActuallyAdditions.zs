@@ -613,3 +613,17 @@ craft.remake(<actuallyadditions:block_shock_suppressor>, ["pretty",
   "*": <ore:crystalVoid>,               # Void Crystal
   "A": <actuallyadditions:item_misc:8>, # Advanced Coil
 });
+
+###################################################
+# Buff knife - add more durability recipes
+<actuallyadditions:item_knife>.maxDamage = 2000;
+recipes.remove(<actuallyadditions:item_knife>);
+val knife_ingrs = {
+  "S": <tconstruct:knife_blade>.withTag({Material: "steel"}), # Steel Knife Blade
+  "R": <tconstruct:knife_blade>.withTag({Material: "refined_obsidian"}), # Refined Obsidian Knife Blade
+  "K": <actuallyadditions:item_misc:3>, # Knife Handle
+  "n": <actuallyadditions:item_misc:2>, # Knife Blade
+} as IIngredient[string];
+craft.make(<actuallyadditions:item_knife:1900>, [" n", "K "], knife_ingrs); # [Knife] from [Knife Blade][+1]
+craft.make(<actuallyadditions:item_knife:1600>, [" S", "K "], knife_ingrs); # [Knife] from [Steel Knife Blade][+1]
+craft.make(<actuallyadditions:item_knife>, [" R", "K "], knife_ingrs); # [Knife] from [Refined Obsidian Knife Blade][+1]

@@ -1,5 +1,11 @@
 #modloaded additionalcompression
 
+# [Single Compressed Fish] from [Raw Fish]
+recipes.removeByRecipeName("additionalcompression:recipe_compressedmeatfish1");
+craft.shapeless(<additionalcompression:meatfish_compressed>, "fffffffff", {
+  "f": <ore:listAllfishfresh>, # Raw Fish
+});
+
 
 # Each level of compression multiply this much
 val rate = 4;

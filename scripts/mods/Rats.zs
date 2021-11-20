@@ -237,23 +237,6 @@ mods.rats.recipes.addArcheologistRatRecipe(<harvestcraft:hardenedleatheritem>, <
 
 
 ##################
-# Dragon Scales
-var listConversionScales as IItemStack[] = [
-    <ic2:plate:10>,  <iceandfire:dragonscales_red>,
-    <ic2:plate:14>,  <iceandfire:dragonscales_green>,
-    <ic2:plate:9>,   <iceandfire:dragonscales_bronze>,
-    <ic2:plate:15>,  <iceandfire:dragonscales_gray>,
-    <ic2:plate:16>,  <iceandfire:dragonscales_blue>,
-    <ic2:plate:17>,  <iceandfire:dragonscales_white>,
-    <ic2:plate:13>,  <iceandfire:dragonscales_sapphire>,
-    <ic2:plate:12>,  <iceandfire:dragonscales_silver>
-];
-
-var j as int = 0;
-while (j < listConversionScales.length) {
-    mods.rats.recipes.addArcheologistRatRecipe(listConversionScales[j], listConversionScales[j+1]);
-    j += 2;
-}
 
 # Casting sawblade
 scripts.wrap.tconstruct.Casting.addTableRecipe(<rats:ancient_sawblade>, <ic2:block_cutting_blade:2>, <fluid:knightmetal>, (144*12), true, (30*20));
@@ -333,6 +316,8 @@ recipes.addShapeless("Garbage_placeholder", <rats:garbage_pile> * 6, [<rats:cont
 # Maze Stone - 100 = 0.9
 function getValue_hardness    (a as IItemStack) as double { return max(0.0d, (sqrt(a.hardness as double + 1.0d) - 1.0d) / 3.0d); }
 
+function getValue_harvestLevel(a as IItemStack) as double { return !isNull(a.asBlock()) && !isNull(a.asBlock().definition) ? a.asBlock().definition.harvestLevel as double / 10.0d : 0.0d; }
+
 # Wood Log     - 300    = 0.26807
 # Coal Block   - 16000  = 1.064912
 # Blasted Coal - 120000 = 1.89327
@@ -351,6 +336,7 @@ function getItemMults(a as IItemStack) as double {
   var v = 1.0d;
 
   v += getValue_hardness(a);
+  v += getValue_harvestLevel(a);
   v += getValue_burnTime(a);
   v += getValue_enchantments(a);
   v += getValue_toolClasses(a);
@@ -467,3 +453,7 @@ craft.shapeless(<actuallyadditions:item_misc:23>, "PPPPCPPPP", {
   "P": <ore:ratPoop>,    # Rat "Nugget"
   "C": <ore:seedCanola>, # Canola Seeds
 });
+
+# Make alt recipe for tokens
+scripts.category.tooltip_utils.desc.both(<rats:token_piece>, "kill.slime.by.marbled_cheese_golem");
+scripts.loot.entity_kill_entity.add("minecraft:slime", "rats:marbled_cheese_golem", <rats:token_piece>);

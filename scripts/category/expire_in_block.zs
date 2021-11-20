@@ -4,7 +4,7 @@ import crafttweaker.world.IWorld;
 import crafttweaker.entity.IEntityItem;
 
 #priority 10
-#loader crafttweaker reloadableevents
+// #loader crafttweaker reloadableevents
 
 static list as IItemStack[string][IIngredient] = {} as IItemStack[string][IIngredient];
 

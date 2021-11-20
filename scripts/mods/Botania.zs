@@ -274,7 +274,7 @@ function remakeRune(rune as IItemStack, ingrList as IIngredient[], mana as int) 
 
 /* Water */   remakeRune(<botania:rune:0>*2, [<ore:dustBlizz>, <ore:fish>, <ore:gemAquamarine>, <ore:ingotManasteel>, <ore:powderMana>], 5000);
 /* Fire */    remakeRune(<botania:rune:1>*2, [<ore:dustBlaze>, <ore:slimeballMagma>, <ore:gemAmber>, <ore:ingotManasteel>, <ore:powderMana>], 5000);
-/* Earth */   remakeRune(<botania:rune:2>*2, [<ore:dustBasalz>, <thaumcraft:nugget:10>, <ore:podzol>, <ore:ingotManasteel>, <ore:powderMana>], 5000);
+/* Earth */   remakeRune(<botania:rune:2>*2, [<ore:dustBasalz>, <ore:brickPeat>, <ore:podzol>, <ore:ingotManasteel>, <ore:powderMana>], 5000);
 /* Air */     remakeRune(<botania:rune:3>*2, [<ore:dustBlitz>, <ore:boneDragon>, <ore:peacockFeathers>, <ore:ingotManasteel>, <ore:powderMana>], 5000);
 /* Spring */  remakeRune(<botania:rune:4>,   [<ore:runeWaterB>, <ore:runeFireB>, <astralsorcery:blockinfusedwood:*>, <ore:flower>, <ore:nitor>], 10000);
 /* Summer */  remakeRune(<botania:rune:5>,   [<ore:runeEarthB>, <ore:runeAirB>, <ore:treeSapling>, <thaumcraft:crystal_essence:*>, <ore:livingwood>], 10000);

@@ -207,11 +207,13 @@ tooltips.lang.trophy.squid=§eSpawn water
 tooltips.lang.trophy.witch=§eBlind player
 tooltips.lang.kill.slime.by.zombie=§2Drops when §nSlime§2 killed by §nZombie
 tooltips.lang.kill.slime.by.enderman=§2Drops when §nSlime§2 killed by §nEnderman
+tooltips.lang.kill.slime.by.marbled_cheese_golem=§2Drops when §nSlime§2 killed by §nRatlanean Automaton
+tooltips.lang.kill.slime.by.cockatrice=§2Drops when §nSlime§2 killed by §nCockatrice
 
 tooltips.dim_stages.healthy=§4You need to have at least §640 HP§4 (two rows of hearts) to visit §cNether
 tooltips.dim_stages.healthy_grant=You reached §640 HP§r (two rows of hearts)!§r Now you can to visit §cNether
 tooltips.dim_stages.restricted=§cIn §bSkyblock §cworlds, you cannot visit any other dimension §8(except Space and personal ones)§r.
-tooltips.dim_stages.enter_skyblock=§eYou started a §bSkyblock §eworld. You cannot visit any other dimension §8(except Space and personal ones)§r.
+tooltips.dim_stages.enter_skyblock=§eYou started a §bSkyblock §eworld. You cannot visit any other dimension §8(except Space and personal ones). Also you get Haste VI for 3 hours.§r
 tooltips.dim_stages.remind_skyblock=§eYou have entered a §bSkyblock §eworld again. Remember: you cannot visit any other dimension §8(except Space and personal ones)§r.
 
 requious.jei.recipe.infernal_furnace=Infernal Furnace

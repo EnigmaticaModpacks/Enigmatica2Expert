@@ -527,3 +527,34 @@ craft.make(<immersiveengineering:powerpack>, ["pretty",
 # Add compressed variations
 scripts.wrap.immersiveengineering.CokeOven.addRecipe(<thermalfoundation:storage_resource>, 250 *  9, <additionalcompression:logwood_compressed>, 900 * 9);
 scripts.wrap.immersiveengineering.CokeOven.addRecipe(<additionalcompression:charcoal_compressed>, 12000, <additionalcompression:logwood_compressed:1>, 900 * 81);
+
+# [Lantern]*3 from [Glowstone Dust][+2]
+craft.remake(<immersiveengineering:metal_decoration2:4> * 3, ["pretty",
+  "  □  ",
+  "G ▲ G",
+  "  □  "], {
+  "□": <ore:plateIron>, # Iron Plate
+  "G": <ore:paneGlass>, # Glass Pane
+  "▲": <ore:dustGlowstone>, # Glowstone Dust
+});
+
+# [Powered Lantern]*3 from [Iron Mechanical Component][+2]
+craft.remake(<immersiveengineering:metal_device1:4> * 3, ["pretty",
+  "  □  ",
+  "G I G",
+  "  □  "], {
+  "□": <ore:plateIron>, # Iron Plate
+  "G": <ore:paneGlass>, # Glass Pane
+  "I": <immersiveengineering:material:8>, # Iron Mechanical Component
+});
+
+# [Floodlight]*3 from [Iron Mechanical Component][+3]
+craft.remake(<immersiveengineering:metal_device1:9> * 3, ["pretty",
+  "  H  ",
+  "G I G",
+  "  L  "], {
+  "H": <ore:fabricHemp>, # Tough Fabric
+  "G": <ore:paneGlass>, # Glass Pane
+  "I": <immersiveengineering:material:8>, # Iron Mechanical Component
+  "L": <immersiveengineering:wirecoil>, # LV Wire Coil
+});
