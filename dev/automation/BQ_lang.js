@@ -71,7 +71,7 @@ function getLangPath(langCode) {
 /**
  * @param {Object} jsonObj
  */
-function save_DefaultQuests_json(jsonObj) {
+export function save_DefaultQuests_json(jsonObj) {
   const str = JSON.stringify(jsonObj, null, 2)
     .replace(/^(\s*"[^:]+:6": -?\d+\.\d+)e\+(\d+,?)$/gm, '$1E$2') // Restore e+ values
     .replace(/^(\s*"[^:]+:6": )1(0{7,})(,?)$/gm, (m, p1, p2, p3) => p1 + '1.0E' + p2.length + p3) // Add e+ values for round numbers

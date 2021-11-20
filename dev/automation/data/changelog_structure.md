@@ -81,6 +81,7 @@
   🎒 Traveler's Backpack
 
 🔄 Misc Changes | Misc
+  ⚡ Performance
   🧩 Configs
   🌍 World Generation | Worldgen
   📖 Quest Book | Better Questing

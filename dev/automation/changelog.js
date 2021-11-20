@@ -160,9 +160,12 @@ export async function init(h=defaultHelper) {
   }
 
   // Iterate fields not mentioned in "annotations"
-  let skipped = 0
+  let unknown = 0
   for (const [key, arr] of Object.entries(commitMap)) {
-    if(/\w+.*/.test(key)) {skipped++; continue }// Skip commits started with words
+    if(/\w+.*/.test(key)) {
+      unknown++
+      // continue // Skip commits started with words
+    }
     arr.forEach(() => {
       commitLogChanges.push(...stringifySubcat({symbol: key, aliases:['❓❓']}))
     })  
@@ -186,7 +189,7 @@ export async function init(h=defaultHelper) {
   
   h.result(
     `New changelog entries: ${categoriesCount}, `+
-    `Skipped: ${skipped}, `+
+    `Unknown: ${unknown}, `+
     `Blacklisted: ${blacklistedCategories}`)
 }
 
@@ -537,10 +540,10 @@ function isItemCaptue(s) { return /^\[[^\]]+\](\s\([^)]+\))?$/.test(s) }
 
 /**
  * @param {string} command
- * @param {(chunk: any) => void} cb
+ * @param {(chunk: any) => void} onStdOut
  */
-function runProcess(command, cb) {
+function runProcess(command, onStdOut) {
   const promise = exec(command)
-  promise.child.stdout.on('data', cb)
+  promise.child.stdout.on('data', onStdOut)
   return promise
 }

@@ -11,9 +11,8 @@
 import { mkdirSync, writeFileSync, rmdirSync } from 'fs'
 import { dirname } from 'path'
 import glob from 'glob'
-import { defaultHelper, isPathHasChanged, loadJson, loadText } from '../lib/utils.js'
-import replace_in_file from 'replace-in-file'
-
+import { defaultHelper, isPathHasChanged, loadJson, loadText, naturalSort } from '../lib/utils.js'
+import { save_DefaultQuests_json } from './BQ_lang.js'
 import { URL, fileURLToPath  } from 'url' // @ts-ignore
 function relative(relPath='./') { return fileURLToPath(new URL(relPath, import.meta.url)) }
 
@@ -22,23 +21,21 @@ const bq_quests_path = 'config/betterquesting/DefaultQuests.json'
 export async function init(h=defaultHelper) {
 
   await h.begin('Disabling edit mode')
-  replace_in_file.sync({
-    files: bq_quests_path,
-    from: /^(\s+"editmode:1": )1,/gm,
-    to: '$10,',
-  })
-
-  await h.begin('Checking requirments')
-  if(isPathHasChanged('dev/automation/betterquesting')) {
-    return h.error(' ❌📖 EvenBetterQuesting error: splitted folder have changes!')
-  }
+  const bq_raw = sortObjectKeys(loadJson(bq_quests_path))
+  bq_raw["questSettings:10"]["betterquesting:10"]["editmode:1"] = 0
+  save_DefaultQuests_json(bq_raw)
 
   // @ts-ignore
   if(process.argv.unparse) {
     await h.begin('Join quests into DefaultQuests.json')
     unparse()
   } else {
-    h.result('.json files created: ' + await parse(h))
+    await h.begin('Checking requirments')
+    if(isPathHasChanged('dev/automation/betterquesting')) {
+      return h.error(' ❌📖 EvenBetterQuesting error: splitted folder have changes!')
+    }
+
+    h.result('.json files created: ' + await parse(bq_raw, h))
   }
 }
 
@@ -50,7 +47,7 @@ if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
   Split one huge file into many
 
 */
-async function parse(h=defaultHelper) {
+async function parse(bq_raw, h=defaultHelper) {
   let totalFilesCreated = 0
 
   // Saving files functions
@@ -98,7 +95,6 @@ async function parse(h=defaultHelper) {
 
   // Open big file
   await h.begin('Mapping DefaultQuests.json')
-  const bq_raw = loadJson(bq_quests_path)
   const questMap = new Map()
   Object.entries(bq_raw['questDatabase:9']).forEach(([i,q])=>{
     questMap.set(q['questID:3'], {_index:i,_pos:null,_data:q})
@@ -197,3 +193,19 @@ function unparse() {
   )
 }
 
+
+/**
+ * Recursively sort object keys
+ *
+ * @param {any} obj
+ * @return {{}} 
+ */
+function sortObjectKeys(obj) {
+  if(typeof obj !== 'object' || Array.isArray(obj)) return obj
+  return Object.keys(obj).sort(naturalSort).reduce(
+    (newObj, k) => {
+      newObj[k] = sortObjectKeys(obj[k])
+      return newObj
+    }
+  , {})
+}

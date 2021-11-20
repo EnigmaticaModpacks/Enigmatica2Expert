@@ -121,20 +121,23 @@ rsinfinitewireless-
 RSLargePatterns-
 `)
 
-addReduceLevel('Server Safe', 'Remove client-only mods, still multiplayer safe. Could save ~20 seconds on load time and some FPS.', `
+addReduceLevel('Soft', 'Remove client-only mods, that has impact on performance. Could save ~20 seconds on load time and some FPS.', `
 betteranimals-
+DynamicSurroundings
+Sound-Physics-
+`)
+
+addReduceLevel('Server Safe', 'Remove all client-only mods, still multiplayer safe.', `
 Biome Border Viewer
 blockdrops-
 ChunkAnimator
 DiscordSuite
-DynamicSurroundings
 ears-forge-
 grid-
 IconExporter
 InvMove
 OreLib
 potiondescriptions-
-Sound-Physics-
 NetherPortalFix_
 LagGoggles-
 tellme-

@@ -1,6 +1,10 @@
 /**
  * @file Make necessary preparations to turn dev version of pack
- * into distributable one
+ * into distributable one.
+ * Actually its:
+ *  1. Clear temporary folders and files from previous script lunch
+ *  2. Creating and replacing .zip files of latest tag
+ *  3. Replacing files in dedicated server folder
  * 
  * @author Krutoy242
  * @link https://github.com/Krutoy242
@@ -9,93 +13,153 @@
 //@ts-check
 import { execSync } from 'child_process'
 import fs_extra from 'fs-extra'
-const { existsSync, lstatSync, statSync, rmdirSync, mkdir, copySync } = fs_extra
-import { join, basename, relative, dirname } from 'path'
-import AdmZip from 'adm-zip'
-import { write, end, globs } from './lib/utils.js'
-import { sync } from 'del'
-import replace_in_file from 'replace-in-file'
+const { statSync, rmdirSync, mkdir, copySync, existsSync } = fs_extra
+import { join, relative as _relative } from 'path'
+import { write, end, globs, saveText } from './lib/utils.js'
+import { init as rusificate } from './lang/rusificate.js'
+import { sync as delSync } from 'del'
+import chalk from 'chalk'
+import yargs from 'yargs'
 
-const dot=()=>write('.')
-const getFileName = (s) => s.replace(/^.*[\\/]/, '')
-const isDirectory = (f) => existsSync(f) && lstatSync(f).isDirectory()
+const argv = yargs(process.argv.slice(2))
+  .alias('f', 'forced')
+  .describe('f', 'Ignore all checks')
+
+  .alias('d', 'dryRun')
+  .describe('d', 'Not create .zip files')
+
+  .alias('l', 'localSkip')
+  .describe('l', 'Do not change local server files')
+
+  .help('h')
+  .alias('h', 'help')
+  .argv
+
+/**
+ * @param {string} from
+ * @param {string} [to]
+ */
+function relative(from, to) {
+  return _relative(to ? from : process.cwd(), to ?? from)
+}
+
+const doTask = (/** @type {string} */ s, /** @type {() => void} */ fn) => {
+  write(chalk.green(s))
+  end(fn())
+}
+
+function copyFileSync(src, dest, options) {
+  if(argv['dryRun']) return write(`\ncopy ${chalk.rgb(60,75,60)(src)} ${chalk.rgb(0,150,210)('=>')} ${chalk.rgb(90,60,60)(dest)}`)
+  return copySync(src, dest, options)
+}
+
+function globsRelative(relativePath, globsList) {
+  const oldCWD = process.cwd()
+  process.chdir(relativePath)
+  const result = globs(globsList)
+  process.chdir(oldCWD)
+  return result
+}
 
 const mcClientPath    = process.cwd()
-const ruOverrides     = join(mcClientPath, 'dev/lang/ru_ru/')
+const sZPath          = 'D:/Program Files/7-Zip/7z.exe'
 const distrDir        = 'D:/MEGA_LD-LocksTO/Enigmatica/Distributable/'
 const serverPath      = 'D:/mc_server/E2E-Extended-Server/'
 const serverOverrides = 'D:/MEGA_LD-LocksTO/Enigmatica/server-overrides/'
 const tmpDir          = 'D:/mc_tmp/'
-const zipPath         = `${tmpDir}tmp.zip`
-const unzipDir        = `${tmpDir}unzip/`
 
-write('Version: ')
-const version = execSync('git describe --tags --abbrev=0').toString().trim()
-end(version)
+/*
+ ██████╗██╗  ██╗███████╗ ██████╗██╗  ██╗███████╗
+██╔════╝██║  ██║██╔════╝██╔════╝██║ ██╔╝██╔════╝
+██║     ███████║█████╗  ██║     █████╔╝ ███████╗
+██║     ██╔══██║██╔══╝  ██║     ██╔═██╗ ╚════██║
+╚██████╗██║  ██║███████╗╚██████╗██║  ██╗███████║
+ ╚═════╝╚═╝  ╚═╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚══════╝
+*/
 
-const hoursReadmeUpdated = (Date.now() - statSync('CHANGELOG.md').mtime.getTime()) / (1000*60*60)
-if(hoursReadmeUpdated > 1) {
-  end('❌ You probably forget update CHANGELOG.md')
-  process.exit(1)
+function gitExec(/** @type {string} */strCommand) {
+  return execSync('git '+strCommand).toString().trim()
 }
-const comittsAfterTag = 
-  parseInt(execSync('git rev-list --count HEAD'    ).toString().trim()) -
-  parseInt(execSync('git rev-list --count '+version).toString().trim())
-if(comittsAfterTag > 1) {
-  end('❌ There is commits after tag. You probably forget add tag')
-  process.exit(1)
+
+write(`\n${chalk.gray('-'.repeat(10))}\nVersion: `)
+const version = gitExec('describe --tags --abbrev=0')
+end(chalk.bold.yellow(version))
+
+const zipPath_base    = `${distrDir}E2E-Extended_${version}`
+const zipPath_EN      = `${zipPath_base}.zip`
+const zipPath_server  = `${zipPath_base}_server.zip`
+const zipPath_RU      = `${zipPath_base}_RU.zip`
+
+function check(condition, message) {
+  if(!condition) return
+  if(argv['forced'])
+    end(chalk.gray('SKIPPING ' + message))
+  else {
+    end(message)
+    process.exit(1)
+  }
 }
-const lastTagDate = execSync('git show -s --format=%cd '+version).toString().trim().split('\n').pop()
+
+check(
+  (Date.now() - statSync('CHANGELOG.md').mtime.getTime()) / (1000*60*60) > 1,
+  '❌ You probably forget update CHANGELOG.md'
+)
+
+check(
+  parseInt(gitExec('rev-list --count HEAD'    )) - parseInt(gitExec('rev-list --count '+version)) > 1,
+  '❌ There is commits after tag. You probably forget add tag'
+)
+
+const lastTagDate = gitExec('show -s --format=%cd '+version).split('\n').pop()
 const lastTagHoursPassed = (Date.now() - Date.parse(lastTagDate)) / (1000*60*60)
-if(lastTagHoursPassed > 10) {
-  end('❌ More than 10 hours from last tag passed. You probably forget add tag')
-  process.exit(1)
-}
+check(
+  lastTagHoursPassed > 10,
+  '❌ More than 10 hours from last tag passed. You probably forget add tag'
+)
+
+check(
+  !argv['dryRun'] && [zipPath_EN, zipPath_server, zipPath_RU].some(f=>existsSync(f)),
+  '❌ One of resulted ZIP files already exist'
+)
 
 
-// Mods that would be copied to all packages
-const modsToCopy = globs([
-  'mods/*.jar',
-  '!mods/Extended Item Information*.jar',
-  '!mods/Satako*.jar',
-  '!mods/probe-*.jar',
-  '!mods/advancementscreenshot_*.jar',
-  '!mods/sampler-*.jar',
-  '!mods/IconExporter-*.jar',
-])
+/*
+██████╗ ██████╗ ███████╗██████╗ ███████╗██████╗  █████╗ ████████╗██╗ ██████╗ ███╗   ██╗███████╗
+██╔══██╗██╔══██╗██╔════╝██╔══██╗██╔════╝██╔══██╗██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║██╔════╝
+██████╔╝██████╔╝█████╗  ██████╔╝█████╗  ██████╔╝███████║   ██║   ██║██║   ██║██╔██╗ ██║███████╗
+██╔═══╝ ██╔══██╗██╔══╝  ██╔═══╝ ██╔══╝  ██╔══██╗██╔══██║   ██║   ██║██║   ██║██║╚██╗██║╚════██║
+██║     ██║  ██║███████╗██║     ███████╗██║  ██║██║  ██║   ██║   ██║╚██████╔╝██║ ╚████║███████║
+╚═╝     ╚═╝  ╚═╝╚══════╝╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+*/
 
-// Server only files
-const serverOnlyFiles = globs([
-  'mods/sampler-*.jar',
-  'config/sampler.ini',
-])
+doTask(`🪓 Clearing tmp folder ${tmpDir} ... `, ()=>{
+  rmdirSync(tmpDir, { recursive: true })
+  mkdir(tmpDir, { recursive: true }, (err) => {if (err) throw err})
+})
 
-
-// Remove old tmp folder
-write(`Clearing ${tmpDir} ... `)
-rmdirSync(tmpDir, { recursive: true })
-mkdir(tmpDir, { recursive: true }, (err) => {if (err) throw err})
-end()
-
-// Get all files from latest Git commit (current branch)
-write(`git archive ${zipPath} ... `)
-// execSync(`git archive --output=${zipPath} head`)
-execSync(`git archive --output=${zipPath} tags/${version}`)
-end()
-
-// Extract to folder
-write(`extractAllTo ${unzipDir} ... `)
-new AdmZip(zipPath).extractAllTo(unzipDir, true)
-end()
+doTask(`🪓 Removing old zip files ... `, ()=>
+  delSync([zipPath_EN, zipPath_server, zipPath_RU], { force: true }).length
+)
 
 //! ///////////////////////////////////////////////////////////////
 // Change Working Directory
-process.chdir(unzipDir)
+process.chdir(tmpDir)
 //! ///////////////////////////////////////////////////////////////
+
+doTask(`👬 Cloning latest tag to ${tmpDir} ... \n`, ()=>{
+  execSync(`git clone --depth 1 --branch ${version} "${mcClientPath}" .`)
+})
+
+const ruOnlyList = globs([
+  'resourcepacks/*',
+  '!resourcepacks/Better+Gendustry*.zip',
+  '!resourcepacks/bq_lootchests',
+]).map(f=>relative(f))
 
 // Files to remove from all distributable packages
 const removeGlob = [
   '*',
+  '.git',
   '.gitignore',
   '.gitattributes',
   'scripts/debug.zs',
@@ -112,6 +176,9 @@ const removeGlob = [
   '!scripts',
   '!structures',
 
+  // Remove files that would be added after to RU zip
+  ...ruOnlyList,
+
   // Remove Mod-depended files
   'config/Extended item information.cfg',
   'config/satako.cfg',
@@ -120,66 +187,94 @@ const removeGlob = [
   'config/sampler.ini',
 ]
 
-write(`removing files&folders ${unzipDir} ... `)
-end('removed:', sync(removeGlob, {dryRun: false}).length)
+doTask(`🧹 Removing non-release files and folders ... `, ()=>
+  'removed: ' + delSync(removeGlob, {dryRun: false}).length
+)
 
-/**
- * @param {string} fPath
- */
-function addToPack(fPath, dirPath = './') {
-  copySync(fPath, join(dirPath, basename(fPath)))
+/*
+███████╗██╗██████╗ 
+╚══███╔╝██║██╔══██╗
+  ███╔╝ ██║██████╔╝
+ ███╔╝  ██║██╔═══╝ 
+███████╗██║██║     
+╚══════╝╚═╝╚═╝     
+*/
+
+function withZip(zipPath) {
+  return (params, comand='a') => {
+    if(argv['dryRun']) {
+      write(`\n${comand==='d'?'➖':'➕'} ${chalk.bgRgb(10,10,10).rgb(30,30,30)(zipPath)+ ' ' + chalk.gray(params)}`)
+    } else {
+      const exec7z = (p) => execSync(`"${sZPath}" ${comand} -bso0 "${zipPath}" ${p}`, {stdio: 'inherit'})
+      if(Array.isArray(params)) {
+        const tmpPath = '_tmp_7zip.txt'
+        saveText(params.join('\n'), tmpPath)
+        exec7z(`@${tmpPath}`)
+        delSync(tmpPath)
+      } else {
+        exec7z(params)
+      }
+    }
+  }
 }
 
-write('Copy mods ')
-modsToCopy.forEach((fPath, i) => {
-  if(i%50==0) write('.')
-  addToPack(fPath, 'mods')
+/********************************************************
+
+███████╗███╗   ██╗
+██╔════╝████╗  ██║
+█████╗  ██╔██╗ ██║
+██╔══╝  ██║╚██╗██║
+███████╗██║ ╚████║
+╚══════╝╚═╝  ╚═══╝
+
+********************************************************/
+
+let modsExcludedFromAllPackages = [
+  '!mods/Extended Item Information*.jar',
+  '!mods/Satako*.jar',
+  '!mods/probe-*.jar',
+  '!mods/advancementscreenshot_*.jar',
+  '!mods/sampler-*.jar',
+  '!mods/IconExporter-*.jar',
+  '!mods/clientfixer-*.jar',
+]
+doTask(`🏴󠁧󠁢󠁥󠁮󠁧󠁿 Create EN .zip ... `, ()=>{
+  // Mods that would be copied to all packages
+  process.chdir(mcClientPath)
+  const zip = withZip(zipPath_EN)
+  const fileList = globs(['mods/*.jar', ...modsExcludedFromAllPackages])
+    .map(f=>relative(f))
+  write('\n Adding mods files\n')
+  zip(fileList)
+  process.chdir(tmpDir)
+  
+  write('\n Adding all other files\n')
+  zip('.')
 })
-end()
-
-/**
- * @param {string} zipPath
- */
-function makeZip(zipPath) {
-  write('📥 Create zip ... ')
-  const zip = new AdmZip()
-  zip.addLocalFolder('./')
-  write(' writing zip ... ')
-  zip.writeZip(zipPath)
-  end()
-}
 
 /********************************************************
 
-  EN client
+███████╗███████╗██████╗ ██╗   ██╗███████╗██████╗ 
+██╔════╝██╔════╝██╔══██╗██║   ██║██╔════╝██╔══██╗
+███████╗█████╗  ██████╔╝██║   ██║█████╗  ██████╔╝
+╚════██║██╔══╝  ██╔══██╗╚██╗ ██╔╝██╔══╝  ██╔══██╗
+███████║███████╗██║  ██║ ╚████╔╝ ███████╗██║  ██║
+╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝
 
 ********************************************************/
 
-makeZip(`${distrDir}E2E-Extended_${version}.zip`)
-
-/********************************************************
-
-  Server
-
-********************************************************/
-
-write('Installing server. Removing old folders ')
-rmdirSync(`${serverPath}/mods/`   , { recursive: true }); dot()
-rmdirSync(`${serverPath}/config/` , { recursive: true }); dot()
-rmdirSync(`${serverPath}/scripts/`, { recursive: true }); end()
-
-
-write('copying files ')
 const serverFilesList = globs([
   '*',
   '!minemenu',
   '!resourcepacks',
-  '!patchouli_books',
-  '!resources',
-  'resources/**/*.lang',
+  // '!resources',
+  // 'resources/**/*.lang',
+])
+
+const serverModsList = globsRelative(mcClientPath, [
   'mods/*',
-  '!mods',
-  
+  ...modsExcludedFromAllPackages,
+
   // List of client side mods only
   // Get from debug.log by "client side only." search
   '!mods/BetterAdvancements*.jar',
@@ -249,113 +344,88 @@ const serverFilesList = globs([
   '!mods/mekanismfluxified*.jar',
 */
 ])
-serverFilesList.forEach(copyToServer(process.cwd()))
-serverOnlyFiles.forEach(copyToServer(mcClientPath))
+
+/********************************************************
+  LOCAL MACHINE
+********************************************************/
+doTask('💻 Installing local server ... ', ()=>{
+  if(argv['localSkip']) return 'localSkip - skip local server install'
+  if(!argv['dryRun']) {
+    rmdirSync(`${serverPath}/mods/`   , { recursive: true }); write('.')
+    rmdirSync(`${serverPath}/config/` , { recursive: true }); write('.')
+    rmdirSync(`${serverPath}/scripts/`, { recursive: true }); write('.')
+  }
+
+  serverFilesList.forEach(copyToServer(process.cwd()))
+  serverModsList.forEach(copyToServer(mcClientPath))
+
+  copyFileSync(serverOverrides, serverPath, {overwrite: true})
+})
 
 /**
  * @param {string} relativeSource
  */
 function copyToServer(relativeSource) { 
   return (/** @type {string} */ fPath, /** @type {number} */ i)=>{
-    if(i%50==0) dot()
-    copySync(
+    if(i%50==0) write('.')
+    copyFileSync(
       fPath,
       join(serverPath, relative(relativeSource, fPath)), 
       {overwrite: true}
     )
   }
 }
-write(' copying overrides ... ')
-copySync(serverOverrides, serverPath, {overwrite: true})
-end()
 
+/********************************************************
+  DISTRIBUTABLE
+********************************************************/
+doTask('📥 Create server zip ... ', ()=>{
+  copyFileSync(zipPath_EN, zipPath_server, {overwrite: true})
+  const zip = withZip(zipPath_server)
+  const serverFilesDelete = [
+    ...globs(['*', ...serverFilesList.map(f => '!'+relative(f))])     .map(f => relative(f)),
+    ...globsRelative(mcClientPath, ['mods/*']).filter(f=>!serverModsList.includes(f)).map(f => relative(mcClientPath, f)),
+  ]
 
-// Server only files moved to root
-const serverOnlyToRut = globs([
-  'server/*',
-])
-
-write('📥 Create server zip ... ')
-const serverZip = new AdmZip()
-addToServerZip(serverFilesList, f=>relative(process.cwd(), f))
-addToServerZip(serverOnlyFiles, f=>relative(mcClientPath, f))
-addToServerZip(serverOnlyToRut, f=>getFileName(f))
-write(' writing zip ... ')
-serverZip.writeZip(`${distrDir}E2E-Extended_${version}_server.zip`)
-end()
-
-/**
- * 
- * @param {string[]} filesAndFolders Absolute pathes of folder and files that should be added to zip
- * @param {(f:string) => string} zipPath_cb Callback to change path inside zip archive
- */
-function addToServerZip(filesAndFolders, zipPath_cb) {
-  filesAndFolders.forEach(f=>{
-    const zipPath = zipPath_cb(f)
-    const dirName = dirname(zipPath)
-    isDirectory(f)
-      ? serverZip.addLocalFolder(f, zipPath)
-      : serverZip.addLocalFile(f, dirName==='.' ? undefined : dirName)
-  })
-}
-
+  // Delete
+  write('\n Deleting server files\n')
+  zip(serverFilesDelete, 'd')
+  
+  // Add default Server overrites
+  process.chdir(join(mcClientPath, 'server/'))
+  write('\n Add server root files\n')
+  zip('.')
+  process.chdir(tmpDir)
+})
 
 /********************************************************
 
-  RU client
+██████╗ ██╗   ██╗
+██╔══██╗██║   ██║
+██████╔╝██║   ██║
+██╔══██╗██║   ██║
+██║  ██║╚██████╔╝
+╚═╝  ╚═╝ ╚═════╝ 
 
 ********************************************************/
 
-// Add TL.exe
-addToPack(`${distrDir}TL.exe`)
+doTask('📥 Create RU zip ... ', () => {
+  copyFileSync(zipPath_EN, zipPath_RU, {overwrite: true})
+  const zip = withZip(zipPath_RU)
+  
+  // Add TL.exe
+  write('\n Russian files in archive\n')
+  zip(`"${distrDir}TL.exe"`)
+  
+  process.chdir(mcClientPath)
+  zip([
+    ...ruOnlyList,
+    globs([
+      'mods/clientfixer-*.jar'
+    ]).map(f=>relative(f))
+  ])
+  process.chdir(tmpDir)
 
-// Set Russian Language in default options
-replace_in_file.sync({
-  files: 'config/defaultoptions/options.txt',
-  from: /^lang:\w+$/,
-  to: 'lang:ru_ru',
+  write('\n')
+  zip(rusificate())
 })
-
-// Replace world names
-const planetNames = {
-  'Overworld'       : 'Надмир',
-  'Nether'          : 'Ад',
-  'The End'         : 'Энд',
-  'Twilight Forest' : 'Сумеречный Лес',
-  'Ratlantis'       : 'Ратландия',
-  'Deep Dark'       : 'Глубокая Тьма',
-  'Luna'            : 'Луна',
-  'Mercury'         : 'Меркурий',
-  'Venus'           : 'Венера',
-  'Mars'            : 'Марс',
-  'Io'              : 'Ио',
-  'Europa'          : 'Европа',
-  'Titan'           : 'Титан',
-  'Uranus'          : 'Уран',
-  'Neptune'         : 'Нептун',
-  'Proxima B'       : 'Проксима Б',
-  'Terra Nova'      : 'Терра Нова',
-  'Novus'           : 'Новус',
-  'Stella'          : 'Стелла',
-  // 'KELT-2ab'        : 'КЕЛЬТ-2ab',
-  // 'KELT-3'          : 'КЕЛЬТ-3',
-  // 'KELT-4ab'        : 'КЕЛЬТ-4ab',
-  // 'KELT-6a'         : 'КЕЛЬТ-6a',
-  'Kepler 0118'     : 'Кеплер 0118',
-  'Kepler 0119'     : 'Кеплер 0119',
-}
-replace_in_file.sync({
-  files: 'config/jeresources/world-gen.json',
-  from: /^\s+"dim": "(?<name>.*)(?<id> \(-?\d+\))"$/,
-  to: (/** @type {*[]} */ ...args)=>{
-    /** @type {Object<string, string>} */
-    const groups = args[args.length - 2]
-    return '    "dim": "' + (planetNames[groups.name] ?? groups.name) + groups.id + '"'
-  },
-})
-
-// Override files
-try{copySync(ruOverrides, './', {overwrite: true})}
-catch(e){} // eslint-disable-line no-empty
-
-makeZip(`${distrDir}E2E-Extended_${version}_RU.zip`)

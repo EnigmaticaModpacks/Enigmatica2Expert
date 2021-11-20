@@ -11,9 +11,13 @@ import replace_in_file from 'replace-in-file'
 import { injectInFile, loadText, setBlockDropsList, defaultHelper } from '../lib/utils.js'
 import del from 'del'
 
+import yargs from 'yargs'
+const argv = yargs(process.argv.slice(2))
+  .alias('k', 'keep-cache').describe('k', 'Not delete cached files')
+  .argv
 
 
-export async function init(h=defaultHelper) {
+export async function init(h=defaultHelper, options = argv) {
 
   await h.begin('Replacing Optifine item IDs')
   const debug_log = loadText('logs/debug.log')
@@ -110,12 +114,15 @@ export async function init(h=defaultHelper) {
   //###############################################################################
   //###############################################################################
 
-  await h.begin('Removing cached files')
-  const countCachedRemoved = del.sync([
-    'config/thaumicjei_itemstack_aspects.json',
-    'config/thaumicspeedup/cache.lock',
-    'config/tinker_ore_dict_melting_cache.dat',
-  ], {dryRun: false}).length
+  let countCachedRemoved
+  if(!options['keep-cache']) {
+    await h.begin('Removing cached files')
+    countCachedRemoved = del.sync([
+      'config/thaumicjei_itemstack_aspects.json',
+      'config/thaumicspeedup/cache.lock',
+      'config/tinker_ore_dict_melting_cache.dat',
+    ], {dryRun: false}).length
+  }
 
   //###############################################################################
   //###############################################################################
@@ -145,7 +152,7 @@ export async function init(h=defaultHelper) {
   //###############################################################################
   //###############################################################################
   //###############################################################################
-  h.result(`Replaced Optifine: ${countReplacedIDs}, Saved fakeIron recipes: ${resultArr.length}, Removed cached: ${countCachedRemoved}`)
+  h.result(`Replaced Optifine: ${countReplacedIDs}, Saved fakeIron recipes: ${resultArr.length}` + (countCachedRemoved ? `, Removed cached: ${countCachedRemoved}` : ''))
 }
 
 // @ts-ignore

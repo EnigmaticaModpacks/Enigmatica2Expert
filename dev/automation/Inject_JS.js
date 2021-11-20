@@ -129,10 +129,10 @@ export async function init(h=defaultHelper) {
 if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()
 
 // Test section:
-;(async()=>console.log(formatOutput(
-(()=>{
+// ;(async()=>console.log(formatOutput(
+// (()=>{
 
 
 
-})()
-)))()
+// })()
+// )))()

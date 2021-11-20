@@ -6,12 +6,12 @@
 <p align="center" style="font-size:160%;">
 MC total load time:<br>
 <!--TOTAL_LOAD_TIME-->
-584.40 sec
+568.06 sec
 <!---->
 <br>
 <sup><sub>(
 <!--TOTAL_LOAD_TIME_MINUTES-->
-9.74 min
+9.47 min
 <!---->
 )</sub></sup>
 </p>
@@ -32,10 +32,10 @@ Note for image scripts:
   data: {
     datasets: [
       {label: 'MODS:', data: [/*TOTAL_MODS_TIME*/
-        375.59
+        344.09
       /**/]},
       {label: 'FML stuff:',data: [/*TOTAL_STUF_TIME*/
-        208.80
+        223.97
       /**/]}
     ]
   },
@@ -73,32 +73,32 @@ Note for image scripts:
   data: {...
 /*mods_loading_time*/
 `
-3C639D  18.81s Just Enough Items;
-36598D  30.01s Just Enough Items (Plugins);
-36598D  27.95s Just Enough Items (Ingredient Filter);
-733C9D  22.20s Immersive Engineering;
-9D5E3C   7.48s CraftTweaker2;
-8D5536   9.58s CraftTweaker2 (Script Loading);
-979D3C  16.60s Minecraft Forge;
-3C9D59  12.44s Ender IO;
-8D9D3C  12.32s Forge Mod Loader;
-9D3C8F  11.01s IndustrialCraft 2;
-599D3C   8.15s OpenComputers;
-3C9A9D   7.69s Animania;
-3C9D86   7.51s Astral Sorcery;
-9D3C66   5.57s Tinkers' Construct;
-4F9D3C   5.40s Dynamic Surroundings;
-9D3C3C   5.13s Forestry;
-4C9D3C   4.25s Recurrent Complex;
-633C9D   4.11s Village Names;
-923C9D   3.94s Integrated Dynamics;
-3C9D3C   3.69s Extra Utilities 2;
-3C939D   3.56s Quark;
-3F3C9D   3.42s Thermal Expansion;
-3C9D66   3.38s Applied Energistics 2 Trousers Edition;
-444444  77.68s 41 Other mods;
-333333  56.59s 154 'Fast' mods (load 1.0s - 0.1s);
-222222   7.16s 213 'Instant' mods (load %3C 0.1s)
+3C639D  17.68s Just Enough Items;
+36598D  27.02s Just Enough Items (Plugins);
+36598D  27.07s Just Enough Items (Ingredient Filter);
+733C9D  16.26s Immersive Engineering;
+979D3C  14.22s Minecraft Forge;
+9D5E3C   6.53s CraftTweaker2;
+8D5536   6.74s CraftTweaker2 (Script Loading);
+8D9D3C  11.66s Forge Mod Loader;
+3C9D59  11.46s Ender IO;
+9D3C8F  11.10s IndustrialCraft 2;
+599D3C   8.21s OpenComputers;
+3C9D86   7.34s Astral Sorcery;
+3C9A9D   6.60s Animania;
+9D3C66   5.19s Tinkers' Construct;
+4F9D3C   5.11s Dynamic Surroundings;
+9D3C3C   4.68s Forestry;
+4C9D3C   4.18s Recurrent Complex;
+923C9D   3.93s Integrated Dynamics;
+633C9D   3.70s Village Names;
+3C9D3C   3.49s Extra Utilities 2;
+9D6B3C   3.44s Cyclic;
+3C939D   3.40s Quark;
+3F3C9D   3.23s Thermal Expansion;
+444444  73.26s 41 Other mods;
+333333  51.74s 151 'Fast' mods (load 1.0s - 0.1s);
+222222   6.88s 217 'Instant' mods (load %3C 0.1s)
 `
 /**/
     .split(';').reduce((a, l) => {
@@ -171,18 +171,18 @@ let a={labels:[],datasets:[]};
 /*FML_STEPS_DETAILS*/
 `
                           1      2      3      4      5      6      7      8  ;
-Immersive Engineering |  0.94|  0.01|  1.13|  1.09|  0.00| 19.03|  0.00|  0.00;
-CraftTweaker2         |  0.58|  0.00|  3.83|  0.01|  0.00| 12.58|  0.06|  0.00;
-Ender IO              |  2.09|  0.01|  4.75|  0.54|  3.85|  0.15|  0.00|  1.05;
-IndustrialCraft 2     |  0.98|  0.01|  7.58|  0.84|  0.00|  1.61|  0.00|  0.00;
-OpenComputers         |  0.18|  0.01|  4.86|  2.91|  0.19|  0.00|  0.00|  0.00;
-Animania              |  0.27|  0.00|  3.07|  0.09|  0.00|  4.25|  0.00|  0.00;
-Astral Sorcery        |  0.23|  0.00|  4.82|  1.36|  0.00|  1.10|  0.00|  0.00;
-Tinkers' Construct    |  1.17|  0.01|  0.17|  0.05|  0.01|  4.18|  0.00|  0.00;
-Dynamic Surroundings  |  0.18|  0.00|  0.18|  0.12|  0.00|  0.06|  4.85|  0.00;
-Forestry              |  0.41|  0.01|  2.98|  1.51|  0.00|  0.23|  0.00|  0.00;
-Recurrent Complex     |  0.26|  0.00|  0.67|  0.82|  0.00|  2.49|  0.00|  0.00;
-Village Names         |  0.15|  0.00|  3.74|  0.22|  0.00|  0.00|  0.00|  0.00
+Immersive Engineering |  0.99|  0.01|  1.12|  0.81|  0.00| 13.33|  0.00|  0.00;
+CraftTweaker2         |  0.58|  0.00|  3.47|  0.01|  0.00|  9.20|  0.01|  0.00;
+Ender IO              |  1.80|  0.01|  4.16|  0.47|  3.66|  0.16|  0.00|  1.20;
+IndustrialCraft 2     |  0.92|  0.01|  7.90|  1.00|  0.00|  1.28|  0.00|  0.00;
+OpenComputers         |  0.17|  0.01|  5.08|  2.72|  0.22|  0.00|  0.00|  0.00;
+Astral Sorcery        |  0.24|  0.00|  4.62|  1.58|  0.00|  0.90|  0.00|  0.00;
+Animania              |  0.31|  0.00|  3.09|  0.09|  0.00|  3.11|  0.00|  0.00;
+Tinkers' Construct    |  1.05|  0.01|  0.17|  0.05|  0.00|  3.91|  0.00|  0.00;
+Dynamic Surroundings  |  0.18|  0.00|  0.19|  0.10|  0.00|  0.06|  4.57|  0.00;
+Forestry              |  0.44|  0.01|  2.99|  0.85|  0.00|  0.40|  0.00|  0.00;
+Recurrent Complex     |  0.29|  0.00|  0.61|  0.80|  0.00|  2.47|  0.00|  0.00;
+Integrated Dynamics   |  0.25|  0.00|  3.64|  0.05|  0.00|  0.00|  0.00|  0.00
 `
 /**/
 .split(';').slice(1)
@@ -211,22 +211,22 @@ let a={labels:[],datasets:[{
 }]};
 /*JEI_PLUGINS*/
 `
-  4.91: crazypants.enderio.machines.integration.jei.MachinesPlugin;
-  3.76: com.rwtema.extrautils2.crafting.jei.XUJEIPlugin;
-  3.02: li.cil.oc.integration.jei.ModPluginOpenComputers;
-  2.36: mezz.jei.plugins.vanilla.VanillaPlugin;
-  2.18: cofh.thermalexpansion.plugins.jei.JEIPluginTE;
-  1.66: com.buuz135.industrial.jei.JEICustomPlugin;
-  1.37: com.github.sokyranthedragon.mia.integrations.jer.JeiJerIntegration$1;
-  1.28: jeresources.jei.JEIConfig;
-  1.10: ic2.jeiIntegration.SubModule;
-  1.07: forestry.factory.recipes.jei.FactoryJeiPlugin;
-  0.83: mctmods.smelteryio.library.util.jei.JEI;
+  3.59: crazypants.enderio.machines.integration.jei.MachinesPlugin;
+  3.07: com.rwtema.extrautils2.crafting.jei.XUJEIPlugin;
+  2.88: li.cil.oc.integration.jei.ModPluginOpenComputers;
+  2.67: cofh.thermalexpansion.plugins.jei.JEIPluginTE;
+  1.92: mezz.jei.plugins.vanilla.VanillaPlugin;
+  1.46: com.github.sokyranthedragon.mia.integrations.jer.JeiJerIntegration$1;
+  1.29: com.buuz135.industrial.jei.JEICustomPlugin;
+  1.21: jeresources.jei.JEIConfig;
+  1.01: forestry.factory.recipes.jei.FactoryJeiPlugin;
+  0.93: ic2.jeiIntegration.SubModule;
   0.75: com.buuz135.thaumicjei.ThaumcraftJEIPlugin;
-  0.65: nc.integration.jei.NCJEI;
-  0.62: knightminer.tcomplement.plugin.jei.JEIPlugin;
-  0.39: crazypants.enderio.base.integration.jei.JeiPlugin;
-  4.05: Other 118 Plugins
+  0.64: mctmods.smelteryio.library.util.jei.JEI;
+  0.59: knightminer.tcomplement.plugin.jei.JEIPlugin;
+  0.49: nc.integration.jei.NCJEI;
+  0.34: crazypants.enderio.base.integration.jei.JeiPlugin;
+  4.18: Other 118 Plugins
 `
 /**/
 .split(';')
@@ -264,7 +264,7 @@ let a={labels:[],datasets:[{
           },
           {
             text: `${/*TOTAL_STUF_TIME*/
-              208.80
+              223.97
             /**/}s`,
             color: 'rgba(128, 128, 128, 1)',
             font: {size: 22}
@@ -286,8 +286,8 @@ let a = {
 };
 /*FML_STUFF_TABLE*/
 `
-993A00   2.06s Loading sounds;
-444444 206.74s Other
+993A00   1.84s Loading sounds;
+444444 222.13s Other
 `
 /**/
 .split(';')

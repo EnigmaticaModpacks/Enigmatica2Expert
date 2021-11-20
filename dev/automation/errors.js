@@ -244,6 +244,13 @@ const ignore = [
   /\[jetif\]: Couldn't load config field for Flux Networks, report this issue on JETIF's GitHub/, // actually not affecting game, https://github.com/Lykrast/JETIF/issues/20
   /Mod requious is missing the required element 'version'/, // Reported: https://github.com/DaedalusGame/RequiousFrakto/issues/19
   /Patcher expecting empty class data file for net\.minecraft\.block\.state\.BlockStateContainer\$Builder, but received non-empty/,
+  /\[soundphysicsinjector\]: What the hell, DS's version is not properly formatted \?/, // reported: https://github.com/OreCruncher/DynamicSurroundings/issues/775
+  /\[dsurround\]: Invalid fingerprint detected!/, // reported: https://github.com/OreCruncher/DynamicSurroundings/issues/775
+  /\[mixin\]: MixinEnvironment::addConfiguration is deprecated/, // caused by IntegratedProxy, ignore
+  /\[Client thread\/WARN\] \[mixin\]: Error loading class: /, // Mixins for absent mods
+  /\[Client thread\/WARN\] \[org\.dimdev\.utils\.ModIdentifier\]: Failed to identify sun\.reflect\.GeneratedMethodAccessor13/, // VanillaFix warn
+  /\[Finalizer\/WARN\] \[LoliASM\]: Clearing LoliStringPool 1/, // Known https://github.com/LoliKingdom/LoliASM/issues/51
+  /\[main\/WARN\] \[ModDirector\/ForgeLateLoader\[Launchwrapper\]\]: Failed to find deobf tweaker/, // Reported: https://github.com/Janrupf/mod-director/issues/22
 ]
 
 

@@ -15,6 +15,11 @@ const { Format, MultiBar } = cli_progress
 const { gray, green, dim } = chalk
 const {ValueFormat} = Format
 
+import yargs from 'yargs'
+const argv = yargs(process.argv.slice(2))
+  .alias('k', 'keep-cache').describe('k', 'Not delete cached files').default("k", true)
+  .argv
+
 const getFileName = (/** @type {string} */ s) => s.replace(/^.*[\\/]/, '')
 const write = (s) => process.stdout.write(s)
 
@@ -57,12 +62,12 @@ const multibar = new MultiBar({
 
 let starttime = 0
 const timings = []
-async function init() {
+export async function init(options = argv) {
   const promises = automationOrder
   .filter(f=>automationList.includes(f))
   .concat(automationOrder
     .filter(f=>!automationList.includes(f))
-  ).map(startTask)
+  ).map((filePath, i) => startTask(filePath, i, options))
 
   // promises.forEach((p,i)=>p.then(() =>
   //   timings[i] = [automationList[i], new Date().getTime() - starttime - i*10]
@@ -84,12 +89,14 @@ if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
 
 /**
  * @param {string} filePath
+ * @param {number} i
+ * @param {typeof argv} options
  */
-async function startTask(filePath, i) {
+async function startTask(filePath, i, options) {
   const fileName = getFileName(filePath)
 
   /**
-   * @type {import ("./TCon/tweakerconstruct")}
+   * @type {import ("./automation/misc")}
    */
   const jsmodule = await import('../' + filePath)
   if(!jsmodule) return
@@ -100,7 +107,7 @@ async function startTask(filePath, i) {
     ms: '     '
   })
 
-  let hasResult = false
+  let taskResult = ''
 
   /** @type {typeof defaultHelper} */
   const h = progressBar ? {
@@ -117,18 +124,19 @@ async function startTask(filePath, i) {
       progressBar.increment()
     },
     result : (s) => {
-      progressBar.update({task: `✔️  ${s.replace(/\b(\d+)\b/g, dim.yellow('$1'))}`})
-      hasResult = true
+      progressBar.update({task: taskResult += `✔️  ${s.replace(/\b(\d+)\b/g, dim.yellow('$1'))}`})
     },
-    warn : (s='?') =>  progressBar.update({task: `⚠️ ${chalk.dim.yellow(`${s}`)}`}),
-    error: (s='!') => (progressBar.update({task: `🛑 ${chalk.dim.red   (`${s}`)}`}), hasResult = true),
+    warn : (s='?') => {
+      progressBar.update({task: taskResult += `⚠️ ${chalk.dim.yellow(`${s}`)}`})
+    },
+    error: (s='!') => progressBar.update({task: taskResult += `🛑 ${chalk.dim.red   (`${s}`)}`}),
   } : defaultHelper
 
   // const result = jsmodule.init ? jsmodule.init(h) : runSimpleFile(fileName)
   const result = jsmodule.init 
     ? (async () => {
       await new Promise(r => setTimeout(r, i*10))
-      return jsmodule.init(h)
+      return jsmodule.init(h, options)
     })()
     : runSimpleFile(/* fileName */)
 
@@ -139,7 +147,7 @@ async function startTask(filePath, i) {
     if(!progressBar) return
     progressBar.update({ms: `${timeTook}`.padStart(5)})
     progressBar.update(progressBar.getTotal())
-    if(!hasResult) progressBar.update({task: '✔️'})
+    if(!taskResult) progressBar.update({task: '✔️'})
     progressBar.stop()
   })
 
