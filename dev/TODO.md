@@ -79,6 +79,7 @@ Liquids that should have more uses:
 ![](https://git.io/Jst3B "Crystal Memory")
 ![](https://git.io/J3hVE "Wooden Barrel MILKING")
 ![](https://git.io/JtDnO "Chemical Thrower")
+[Blue Fire Jar]
 
 ---
 
@@ -88,33 +89,61 @@ Liquids that should have more uses:
 
 - [ ] ✏️ Add [Uncrafting Table] as Endgame item, and [Uncrafting Grinder] right before creative upgrade
 - [ ] ✏️ Add non-magic way to finish modpack
-- [ ] ✏️ Add *Blue Fire Jar* crafts
 - [ ] ✏️ [Tungsten ingot] add to JAOPCA
 - [ ] ✏️ [Bee nest] make not in basing but in world
 - [ ] ✏️ [Cobalt Dust] Replace with EnderIO variant (its beautiful)
 - [ ] ✏️ Add EEPROM with `user`, `attacker`, `trader`
 - [ ] ✏️ Add Mob Trophies recipes
 - [ ] ✏️ Add Curiosity crafts. Probably from Twilight Forest Trees
-- [ ] ✏️ [Lormyte Stone] change ingredient from Evil tear
 - [ ] ✏️ [Pharos Beacon] harder
 - [ ] ✏️ Add default arguments to process
 - [ ] ✏️ MA crafting seeds add table -> runic -> alchemy table recipe
-- [x] ✏️ Add conduit binder fast recipe
 - [ ] ✏️ Add Endermite rare drop, add Nethernite too
-- [x] ✏️ Add cheap Scrap source (from "unknown seed" for example)
-- [x] ✏️ Add [Hardened Casing] with Rat Diamond
-- [x] ✏️ [Shock absorber] cheaper
-- [x] ✏️ [Compressed Wood] in Coke oven add recipe
 - [ ] ✏️ [Antler] add usage
-- [x] ✏️ Buff Mekanism's Bins
-- [x] ✏️ Fluix plated iron ingot doesnt consume top and bottom ingredient
-- [x] ✏️ Immersive Technology gas turbine also needs to be tweaked to increase either flue gas output, or steam output from flue gas
-- [ ] 🔨 Grinding rework
-- [ ] 📖 Add CC/OC gate
+- [ ] ✏️ [Terra Wart] add usage
+- [ ] ✏️ Akashic Tome fix Enigmatica book
+- [x] ✏️ [Lormyte Stone] change ingredient from Evil tear
+- [x] ✏️ [Rune of Earth] cheaper, no [Rare Earth]
+- [x] ✏️ [Fertilized Essence] harder
+- [x] ✏️ [Knife] (AA) buff
+- [x] ✏️ [Royal Jelly] (Forestry) add empowering recipe
+- [x] ✏️ Immersive Lights cheaper
+- [x] ✏️ [Dragon Scales] add to merchants
+- [x] ✏️ [Chunky Cheese token] alt recipe
+- [x] ✏️ [Mechanical Miner] harder
+- [x] ✏️ [Compressed fish] from any fish
+- [x] ✏️ [Stable Pearl] cheaper
+- [ ] ✏️ Slime killed by wolf craft, by rat, by cokatrix
+- [ ] ✏️ [Flint Mesh] cheaper, but less output
+- [ ] ✏️ Get water from a barrel with a bowl
 - [ ] 📖 Change sound of quest complete to another
-- [x] 📖 Dank Null better reward
-- [ ] 🔄 Integrate https://github.com/release-it/release-it
+- [ ] 📖 Add CC/OC gate
+- [x] 📖 Little Chisel better reward
+- [x] 📖 Might be worth removing advanced coke bricks from JEI just so people don't waste their steel (like I did)?
+- [x] 📖 Less peacock feathers, peacock eggs
+- [x] 📖 Add AS command when gaining quest
+- [x] 📖 Add IC2 crop breeding plugin
+- [x] 📖 Add Inventory Rerouter
+- [x] 📖 Add Stable Ender Pearl
+- [x] 🔄 Fix JAOPCA_Custom wont work on server
+- [x] 🔄 Give player Haste Potion Effect when joining new world
+- [x] 🔄 Add default options to Mod Director
+- [ ] 🔄 Add https://www.curseforge.com/minecraft/mc-mods/versioner
+- [ ] 🔄 Schematica: Missing/outdated Immersive Technology schematics, Fixes #17
+- [ ] 🔄 Fix `tooltips.dim_stages.enter_skyblock` not shows on server
+- [x] 🔄 Disable Baked Quads for LoliASM
+- [x] 🔄 Make Optifine Optionable
+- [ ] 🏪 Add *X kill X*
+- [ ] 🔨 Grinding rework
 - [ ] 🚧 Add skyblock client/server changes
+- [ ] 🚧 Add modpack automation:
+    1. `automate.js` without `changelog.js`
+    2. Check git status
+    3. Pick next version
+    4. `changelog.js`
+    5. Fix changelog, add tag
+    6. `make_pack.js`
+    7. `release-it`
 
 ---
 
@@ -157,6 +186,7 @@ Liquids that should have more uses:
 - [ ] 🔨 Ironwood Add material. Drop Armor from mobs on hit
 - [ ] 🧮 Craft.zs: In recipe name `A from B*2` remove amount if its control amount
 - [ ] 🧮 Craft.zs: Add Forestry extensions
+- [ ] 🧮 Craft.zs: Iron nugget wont get recipes for different amount of items
 - [ ] 🧮 Craft.zs: Ability to use vanilla crafting methods
 - [ ] 🧮 Craft.zs: ![](https://git.io/Jz9qH "Gold Nugget") to make vanilla prefixes
 - [ ] 🟢 Add [Bansoko](https://www.curseforge.com/minecraft/mc-mods/bansoko) to rename Dank/null `.jar` so it could work with Thaumic Speedup
