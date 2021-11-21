@@ -4,5 +4,11 @@
     "fileName": "OptiFine_1.12.2_HD_U_G5.jar",
     "options": {
         "launchwrapperTweakerForceNext": true
+    },
+    "installationPolicy": {
+        "continueOnFailedDownload": true,
+        "optionalKey": "$",
+        "name": "OptiFine",
+        "description": "OptiFine is an optional mod in this modpack. Sometimes improve FPS. Sometimes not. But you can use shaders only with it."
     }
 }
