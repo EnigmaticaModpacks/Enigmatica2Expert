@@ -22,9 +22,6 @@
         "icon:10": {
           "Count:3": 1,
           "Damage:2": 4,
-          "ForgeCaps:10": {
-            "astralsorcery:cap_item_amulet_holder:10": {}
-          },
           "id:8": "mekanism:machineblock",
           "OreDict:8": ""
         },
@@ -52,9 +49,6 @@
           "0:10": {
             "Count:3": 1,
             "Damage:2": 25,
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
             "id:8": "bq_standard:loot_chest",
             "OreDict:8": ""
           }
@@ -73,9 +67,6 @@
           "0:10": {
             "Count:3": 1,
             "Damage:2": 4,
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
             "id:8": "mekanism:machineblock",
             "OreDict:8": ""
           }

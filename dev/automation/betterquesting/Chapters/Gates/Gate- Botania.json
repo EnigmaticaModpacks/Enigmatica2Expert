@@ -51,7 +51,6 @@
             "Count:3": 1,
             "Damage:2": 0,
             "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {},
               "Parent:9": {}
             },
             "id:8": "botania:flowerbag",
