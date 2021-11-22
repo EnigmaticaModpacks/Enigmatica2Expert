@@ -78,3 +78,7 @@ This is unofficial addon and not supperted with **Enigmatica** dev team. But [Ni
 Addon would be posted on CurseForge after it advance from beta.
 
 Right now im looking for testers and ideas feedback.
+
+## Links
+
+-   [Discord](https://discord.gg/P2MTyxHZtw)

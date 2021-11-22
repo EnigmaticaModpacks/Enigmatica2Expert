@@ -143,7 +143,7 @@
             }
         },
 		"discord": {
-            "text": "Discord (E2:E)",
+            "text": "Discord",
             "posX": 44,
             "posY":50,
             "width": 100,
@@ -155,7 +155,7 @@
             "action" : 
             {
                 "type" : "openLink",
-                "link" : "https://discord.gg/HnWNd7X"
+                "link" : "https://discord.gg/P2MTyxHZtw"
             }
         },
         "quit": {
