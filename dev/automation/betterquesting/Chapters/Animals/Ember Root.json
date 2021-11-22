@@ -3,108 +3,108 @@
   "_pos": {
     "_index": "1:10",
     "_data": {
-      "sizeX:3": 24,
-      "x:3": 100,
-      "y:3": -68,
       "id:3": 462,
-      "sizeY:3": 24
+      "sizeX:3": 24,
+      "sizeY:3": 24,
+      "x:3": 100,
+      "y:3": -68
     }
   },
   "_data": {
-    "questID:3": 462,
     "preRequisites:11": [
       718
     ],
     "properties:10": {
       "betterquesting:10": {
-        "issilent:1": 0,
-        "snd_complete:8": "minecraft:entity.player.levelup",
-        "lockedprogress:1": 1,
-        "tasklogic:8": "AND",
-        "repeattime:3": -1,
-        "visibility:8": "ALWAYS",
-        "simultaneous:1": 0,
+        "autoclaim:1": 0,
+        "desc:8": "bq.quest462.desc",
+        "globalshare:1": 0,
         "icon:10": {
-          "id:8": "draconicevolution:mob_soul",
           "Count:3": 1,
+          "Damage:2": 0,
+          "id:8": "draconicevolution:mob_soul",
+          "OreDict:8": "",
           "tag:10": {
             "EntityName:8": "emberroot:rootsonespriteboss"
-          },
-          "Damage:2": 0,
-          "OreDict:8": ""
+          }
         },
-        "globalshare:1": 0,
-        "questlogic:8": "OR",
-        "snd_update:8": "minecraft:entity.player.levelup",
-        "autoclaim:1": 0,
-        "repeat_relative:1": 1,
         "ismain:1": 0,
+        "issilent:1": 0,
+        "lockedprogress:1": 1,
         "name:8": "bq.quest462.name",
-        "desc:8": "bq.quest462.desc"
+        "questlogic:8": "OR",
+        "repeat_relative:1": 1,
+        "repeattime:3": -1,
+        "simultaneous:1": 0,
+        "snd_complete:8": "minecraft:entity.player.levelup",
+        "snd_update:8": "minecraft:entity.player.levelup",
+        "tasklogic:8": "AND",
+        "visibility:8": "ALWAYS"
+      }
+    },
+    "questID:3": 462,
+    "rewards:9": {
+      "0:10": {
+        "choices:9": {
+          "0:10": {
+            "Count:3": 256,
+            "Damage:2": 0,
+            "id:8": "mysticalagriculture:nature_essence",
+            "OreDict:8": ""
+          },
+          "1:10": {
+            "Count:3": 64,
+            "Damage:2": 0,
+            "id:8": "mysticalagriculture:dye_essence",
+            "OreDict:8": ""
+          },
+          "2:10": {
+            "Count:3": 15,
+            "Damage:2": 0,
+            "id:8": "mysticalagriculture:platinum_essence",
+            "OreDict:8": ""
+          },
+          "3:10": {
+            "Count:3": 7,
+            "Damage:2": 0,
+            "id:8": "mysticalagriculture:ender_amethyst_essence",
+            "OreDict:8": ""
+          }
+        },
+        "index:3": 0,
+        "rewardID:8": "bq_standard:choice"
       }
     },
     "tasks:9": {
       "0:10": {
+        "damageType:8": "",
         "ignoreNBT:1": 1,
         "index:3": 0,
-        "targetNBT:10": {},
-        "damageType:8": "",
         "required:3": 0,
-        "taskID:8": "bq_standard:hunt",
+        "subtypes:1": 1,
         "target:8": "emberroot:rootsonespriteboss",
-        "subtypes:1": 1
+        "targetNBT:10": {},
+        "taskID:8": "bq_standard:hunt"
       },
       "1:10": {
-        "partialMatch:1": 1,
         "autoConsume:1": 0,
+        "consume:1": 0,
         "groupDetect:1": 0,
         "ignoreNBT:1": 1,
         "index:3": 1,
-        "consume:1": 0,
+        "partialMatch:1": 1,
         "requiredItems:9": {
           "0:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
             "ForgeCaps:10": {
               "astralsorcery:cap_item_amulet_holder:10": {}
             },
             "id:8": "minecraft:totem_of_undying",
-            "Count:3": 1,
-            "Damage:2": 0,
             "OreDict:8": ""
           }
         },
         "taskID:8": "bq_standard:retrieval"
-      }
-    },
-    "rewards:9": {
-      "0:10": {
-        "rewardID:8": "bq_standard:choice",
-        "index:3": 0,
-        "choices:9": {
-          "0:10": {
-            "id:8": "mysticalagriculture:nature_essence",
-            "Count:3": 256,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "1:10": {
-            "id:8": "mysticalagriculture:dye_essence",
-            "Count:3": 64,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "2:10": {
-            "id:8": "mysticalagriculture:platinum_essence",
-            "Count:3": 15,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "3:10": {
-            "id:8": "mysticalagriculture:ender_amethyst_essence",
-            "Count:3": 7,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          }
-        }
       }
     }
   }

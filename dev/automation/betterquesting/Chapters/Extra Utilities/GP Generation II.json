@@ -3,112 +3,112 @@
   "_pos": {
     "_index": "2:10",
     "_data": {
-      "sizeX:3": 24,
-      "x:3": 148,
-      "y:3": 80,
       "id:3": 112,
-      "sizeY:3": 24
+      "sizeX:3": 24,
+      "sizeY:3": 24,
+      "x:3": 148,
+      "y:3": 80
     }
   },
   "_data": {
-    "questID:3": 112,
     "preRequisites:11": [
       881
     ],
     "properties:10": {
       "betterquesting:10": {
-        "issilent:1": 0,
-        "snd_complete:8": "minecraft:entity.player.levelup",
-        "lockedprogress:1": 1,
-        "tasklogic:8": "OR",
-        "repeattime:3": -1,
-        "visibility:8": "ALWAYS",
-        "simultaneous:1": 0,
+        "autoclaim:1": 0,
+        "desc:8": "bq.quest112.desc",
+        "globalshare:1": 0,
         "icon:10": {
-          "id:8": "extrautils2:passivegenerator",
           "Count:3": 1,
           "Damage:2": 3,
+          "id:8": "extrautils2:passivegenerator",
           "OreDict:8": ""
         },
-        "globalshare:1": 0,
-        "questlogic:8": "AND",
-        "partysinglereward:1": 0,
-        "snd_update:8": "minecraft:entity.player.levelup",
-        "autoclaim:1": 0,
         "ismain:1": 0,
-        "repeat_relative:1": 1,
+        "issilent:1": 0,
+        "lockedprogress:1": 1,
         "name:8": "bq.quest112.name",
-        "desc:8": "bq.quest112.desc"
+        "partysinglereward:1": 0,
+        "questlogic:8": "AND",
+        "repeat_relative:1": 1,
+        "repeattime:3": -1,
+        "simultaneous:1": 0,
+        "snd_complete:8": "minecraft:entity.player.levelup",
+        "snd_update:8": "minecraft:entity.player.levelup",
+        "tasklogic:8": "OR",
+        "visibility:8": "ALWAYS"
+      }
+    },
+    "questID:3": 112,
+    "rewards:9": {
+      "0:10": {
+        "index:3": 0,
+        "rewardID:8": "bq_standard:item",
+        "rewards:9": {
+          "0:10": {
+            "Count:3": 1,
+            "Damage:2": 101,
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "bq_standard:loot_chest",
+            "OreDict:8": ""
+          }
+        }
       }
     },
     "tasks:9": {
       "0:10": {
-        "partialMatch:1": 1,
         "autoConsume:1": 0,
+        "consume:1": 0,
         "groupDetect:1": 0,
         "ignoreNBT:1": 0,
         "index:3": 0,
-        "consume:1": 0,
+        "partialMatch:1": 1,
         "requiredItems:9": {
           "0:10": {
-            "id:8": "extrautils2:passivegenerator",
             "Count:3": 1,
             "Damage:2": 2,
+            "id:8": "extrautils2:passivegenerator",
             "OreDict:8": ""
           }
         },
         "taskID:8": "bq_standard:retrieval"
       },
       "1:10": {
-        "partialMatch:1": 1,
         "autoConsume:1": 0,
+        "consume:1": 0,
         "groupDetect:1": 0,
         "ignoreNBT:1": 0,
         "index:3": 1,
-        "consume:1": 0,
+        "partialMatch:1": 1,
         "requiredItems:9": {
           "0:10": {
-            "id:8": "extrautils2:passivegenerator",
             "Count:3": 1,
             "Damage:2": 3,
+            "id:8": "extrautils2:passivegenerator",
             "OreDict:8": ""
           }
         },
         "taskID:8": "bq_standard:retrieval"
       },
       "2:10": {
-        "partialMatch:1": 1,
         "autoConsume:1": 0,
+        "consume:1": 0,
         "groupDetect:1": 0,
         "ignoreNBT:1": 0,
         "index:3": 2,
-        "consume:1": 0,
+        "partialMatch:1": 1,
         "requiredItems:9": {
           "0:10": {
-            "id:8": "extrautils2:passivegenerator",
             "Count:3": 1,
             "Damage:2": 5,
+            "id:8": "extrautils2:passivegenerator",
             "OreDict:8": ""
           }
         },
         "taskID:8": "bq_standard:retrieval"
-      }
-    },
-    "rewards:9": {
-      "0:10": {
-        "rewardID:8": "bq_standard:item",
-        "index:3": 0,
-        "rewards:9": {
-          "0:10": {
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
-            "id:8": "bq_standard:loot_chest",
-            "Count:3": 1,
-            "Damage:2": 101,
-            "OreDict:8": ""
-          }
-        }
       }
     }
   }

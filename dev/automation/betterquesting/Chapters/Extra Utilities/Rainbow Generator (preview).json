@@ -3,53 +3,53 @@
   "_pos": {
     "_index": "52:10",
     "_data": {
-      "sizeX:3": 16,
-      "x:3": 339,
-      "y:3": 14,
       "id:3": 909,
-      "sizeY:3": 16
+      "sizeX:3": 16,
+      "sizeY:3": 16,
+      "x:3": 339,
+      "y:3": 14
     }
   },
   "_data": {
-    "questID:3": 909,
     "preRequisites:11": [
       884,
       885
     ],
     "properties:10": {
       "betterquesting:10": {
-        "issilent:1": 1,
-        "snd_complete:8": "minecraft:entity.player.levelup",
-        "lockedprogress:1": 1,
-        "tasklogic:8": "AND",
-        "repeattime:3": -1,
-        "visibility:8": "ALWAYS",
-        "simultaneous:1": 0,
+        "autoclaim:1": 1,
+        "desc:8": "bq.quest909.desc",
+        "globalshare:1": 0,
         "icon:10": {
-          "id:8": "extrautils2:rainbowgenerator",
           "Count:3": 1,
           "Damage:2": 0,
+          "id:8": "extrautils2:rainbowgenerator",
           "OreDict:8": ""
         },
-        "globalshare:1": 0,
-        "questlogic:8": "AND",
-        "partysinglereward:1": 0,
-        "snd_update:8": "minecraft:entity.player.levelup",
-        "autoclaim:1": 1,
         "ismain:1": 0,
-        "repeat_relative:1": 1,
+        "issilent:1": 1,
+        "lockedprogress:1": 1,
         "name:8": "bq.quest909.name",
-        "desc:8": "bq.quest909.desc"
+        "partysinglereward:1": 0,
+        "questlogic:8": "AND",
+        "repeat_relative:1": 1,
+        "repeattime:3": -1,
+        "simultaneous:1": 0,
+        "snd_complete:8": "minecraft:entity.player.levelup",
+        "snd_update:8": "minecraft:entity.player.levelup",
+        "tasklogic:8": "AND",
+        "visibility:8": "ALWAYS"
       }
     },
-    "tasks:9": {},
+    "questID:3": 909,
     "rewards:9": {
       "0:10": {
         "amount:3": 10,
-        "rewardID:8": "bq_standard:xp",
+        "index:3": 0,
         "isLevels:1": 1,
-        "index:3": 0
+        "rewardID:8": "bq_standard:xp"
       }
-    }
+    },
+    "tasks:9": {}
   }
 }

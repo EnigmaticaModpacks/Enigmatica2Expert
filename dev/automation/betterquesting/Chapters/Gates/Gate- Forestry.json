@@ -3,82 +3,63 @@
   "_pos": {
     "_index": "1:10",
     "_data": {
-      "sizeX:3": 24,
-      "x:3": 72,
-      "y:3": 0,
       "id:3": 5,
-      "sizeY:3": 24
+      "sizeX:3": 24,
+      "sizeY:3": 24,
+      "x:3": 72,
+      "y:3": 0
     }
   },
   "_data": {
-    "questID:3": 5,
     "preRequisites:11": [
       48
     ],
     "properties:10": {
       "betterquesting:10": {
-        "issilent:1": 0,
-        "snd_complete:8": "minecraft:entity.player.levelup",
-        "lockedprogress:1": 1,
-        "partySingleReward:8": "false",
-        "tasklogic:8": "AND",
-        "repeattime:3": -1,
-        "visibility:8": "ALWAYS",
-        "simultaneous:1": 0,
+        "autoclaim:1": 0,
+        "desc:8": "bq.quest5.desc",
+        "globalshare:1": 0,
         "icon:10": {
-          "id:8": "forestry:sturdy_machine",
           "Count:3": 1,
           "Damage:2": 0,
+          "id:8": "forestry:sturdy_machine",
           "OreDict:8": ""
         },
-        "globalshare:1": 0,
-        "questlogic:8": "AND",
-        "partysinglereward:1": 0,
-        "snd_update:8": "minecraft:entity.player.levelup",
-        "autoclaim:1": 0,
         "ismain:1": 1,
-        "repeat_relative:1": 1,
+        "issilent:1": 0,
+        "lockedprogress:1": 1,
         "name:8": "bq.quest5.name",
-        "desc:8": "bq.quest5.desc"
+        "partysinglereward:1": 0,
+        "partySingleReward:8": "false",
+        "questlogic:8": "AND",
+        "repeat_relative:1": 1,
+        "repeattime:3": -1,
+        "simultaneous:1": 0,
+        "snd_complete:8": "minecraft:entity.player.levelup",
+        "snd_update:8": "minecraft:entity.player.levelup",
+        "tasklogic:8": "AND",
+        "visibility:8": "ALWAYS"
       }
     },
-    "tasks:9": {
-      "0:10": {
-        "partialMatch:1": 1,
-        "autoConsume:1": 0,
-        "groupDetect:1": 0,
-        "ignoreNBT:1": 0,
-        "index:3": 0,
-        "consume:1": 0,
-        "requiredItems:9": {
-          "0:10": {
-            "id:8": "forestry:sturdy_machine",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          }
-        },
-        "taskID:8": "bq_standard:retrieval"
-      }
-    },
+    "questID:3": 5,
     "rewards:9": {
       "0:10": {
-        "rewardID:8": "bq_standard:choice",
-        "index:3": 0,
         "choices:9": {
           "0:10": {
-            "id:8": "thermalfoundation:material",
             "Count:3": 32,
             "Damage:2": 163,
+            "id:8": "thermalfoundation:material",
             "OreDict:8": "ingotBronze"
           },
           "1:10": {
-            "id:8": "thermalexpansion:device",
             "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "thermalexpansion:device",
+            "OreDict:8": "",
             "tag:10": {
-              "RSControl:1": 0,
-              "Facing:1": 3,
               "Energy:3": 0,
+              "Facing:1": 3,
+              "RSControl:1": 0,
               "SideCache:7": [
                 0,
                 1,
@@ -87,17 +68,36 @@
                 0,
                 0
               ]
-            },
-            "Damage:2": 0,
-            "OreDict:8": ""
+            }
           },
           "2:10": {
-            "id:8": "forestry:sturdy_machine",
             "Count:3": 4,
             "Damage:2": 0,
+            "id:8": "forestry:sturdy_machine",
             "OreDict:8": ""
           }
-        }
+        },
+        "index:3": 0,
+        "rewardID:8": "bq_standard:choice"
+      }
+    },
+    "tasks:9": {
+      "0:10": {
+        "autoConsume:1": 0,
+        "consume:1": 0,
+        "groupDetect:1": 0,
+        "ignoreNBT:1": 0,
+        "index:3": 0,
+        "partialMatch:1": 1,
+        "requiredItems:9": {
+          "0:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "forestry:sturdy_machine",
+            "OreDict:8": ""
+          }
+        },
+        "taskID:8": "bq_standard:retrieval"
       }
     }
   }

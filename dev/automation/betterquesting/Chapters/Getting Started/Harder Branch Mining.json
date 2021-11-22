@@ -3,63 +3,61 @@
   "_pos": {
     "_index": "45:10",
     "_data": {
-      "sizeX:3": 24,
-      "x:3": 75,
-      "y:3": 12,
       "id:3": 897,
-      "sizeY:3": 24
+      "sizeX:3": 24,
+      "sizeY:3": 24,
+      "x:3": 75,
+      "y:3": 12
     }
   },
   "_data": {
-    "questID:3": 897,
     "preRequisites:11": [
       51
     ],
     "properties:10": {
       "betterquesting:10": {
-        "issilent:1": 0,
-        "snd_complete:8": "minecraft:entity.player.levelup",
-        "lockedprogress:1": 1,
-        "partySingleReward:8": "false",
-        "tasklogic:8": "OR",
-        "repeattime:3": -1,
-        "visibility:8": "ALWAYS",
-        "simultaneous:1": 0,
+        "autoclaim:1": 0,
+        "desc:8": "bq.quest897.desc",
+        "globalshare:1": 0,
         "icon:10": {
+          "Count:3": 1,
+          "Damage:2": 1,
           "ForgeCaps:10": {
-            "plustic::10": {
-              "Size:3": 1,
-              "Items:9": {}
-            },
             "astralsorcery:cap_item_amulet_holder:10": {},
+            "plustic::10": {
+              "Items:9": {},
+              "Size:3": 1
+            },
             "plustic:fruitsalad_cap:10": {
-              "Size:3": 5,
-              "Items:9": {}
+              "Items:9": {},
+              "Size:3": 5
             },
             "plustic:musicofthespheres_cap:10": {
-              "Size:3": 1,
-              "Items:9": {}
+              "Items:9": {},
+              "Size:3": 1
             }
           },
           "id:8": "tconstruct:pickaxe",
-          "Count:3": 1,
+          "OreDict:8": "",
           "tag:10": {
-            "StatsOriginal:10": {
-              "AttackSpeedMultiplier:5": 1,
-              "MiningSpeed:5": 1.5,
-              "FreeModifiers:3": 3,
-              "Durability:3": 1,
-              "HarvestLevel:3": 0,
-              "Attack:5": 2.25
-            },
-            "Stats:10": {
-              "AttackSpeedMultiplier:5": 1,
-              "MiningSpeed:5": 1.5,
-              "FreeModifiers:3": 2,
-              "Durability:3": 1,
-              "HarvestLevel:3": 0,
-              "Attack:5": 2.25,
-              "Broken:1": 1
+            "Modifiers:9": {
+              "0:10": {
+                "color:3": -6710887,
+                "identifier:8": "cheap",
+                "level:3": 1
+              },
+              "1:10": {
+                "color:3": -6710887,
+                "identifier:8": "cheapskate",
+                "level:3": 1
+              },
+              "2:10": {
+                "bonus_modifiers:3": 0,
+                "color:3": 16777215,
+                "identifier:8": "toolleveling",
+                "level:3": 1,
+                "xp:3": 1
+              }
             },
             "Special:10": {
               "Categories:9": {
@@ -67,6 +65,23 @@
                 "1:8": "tool",
                 "2:8": "harvest"
               }
+            },
+            "Stats:10": {
+              "Attack:5": 2.25,
+              "AttackSpeedMultiplier:5": 1,
+              "Broken:1": 1,
+              "Durability:3": 1,
+              "FreeModifiers:3": 2,
+              "HarvestLevel:3": 0,
+              "MiningSpeed:5": 1.5
+            },
+            "StatsOriginal:10": {
+              "Attack:5": 2.25,
+              "AttackSpeedMultiplier:5": 1,
+              "Durability:3": 1,
+              "FreeModifiers:3": 3,
+              "HarvestLevel:3": 0,
+              "MiningSpeed:5": 1.5
             },
             "TinkerData:10": {
               "Materials:9": {
@@ -78,57 +93,42 @@
                 "0:8": "toolleveling"
               }
             },
-            "Modifiers:9": {
-              "0:10": {
-                "identifier:8": "cheap",
-                "color:3": -6710887,
-                "level:3": 1
-              },
-              "1:10": {
-                "identifier:8": "cheapskate",
-                "color:3": -6710887,
-                "level:3": 1
-              },
-              "2:10": {
-                "identifier:8": "toolleveling",
-                "color:3": 16777215,
-                "level:3": 1,
-                "xp:3": 1,
-                "bonus_modifiers:3": 0
-              }
-            },
             "Traits:9": {
               "0:8": "cheap",
               "1:8": "cheapskate",
               "2:8": "toolleveling"
             }
-          },
-          "Damage:2": 1,
-          "OreDict:8": ""
+          }
         },
-        "globalshare:1": 0,
-        "questlogic:8": "AND",
-        "partysinglereward:1": 0,
-        "snd_update:8": "minecraft:entity.player.levelup",
-        "autoclaim:1": 0,
         "ismain:1": 0,
-        "repeat_relative:1": 1,
+        "issilent:1": 0,
+        "lockedprogress:1": 1,
         "name:8": "bq.quest897.name",
-        "desc:8": "bq.quest897.desc"
+        "partysinglereward:1": 0,
+        "partySingleReward:8": "false",
+        "questlogic:8": "AND",
+        "repeat_relative:1": 1,
+        "repeattime:3": -1,
+        "simultaneous:1": 0,
+        "snd_complete:8": "minecraft:entity.player.levelup",
+        "snd_update:8": "minecraft:entity.player.levelup",
+        "tasklogic:8": "OR",
+        "visibility:8": "ALWAYS"
+      }
+    },
+    "questID:3": 897,
+    "rewards:9": {
+      "0:10": {
+        "amount:3": 3,
+        "index:3": 0,
+        "isLevels:1": 1,
+        "rewardID:8": "bq_standard:xp"
       }
     },
     "tasks:9": {
       "0:10": {
         "index:3": 0,
         "taskID:8": "bq_standard:checkbox"
-      }
-    },
-    "rewards:9": {
-      "0:10": {
-        "amount:3": 3,
-        "rewardID:8": "bq_standard:xp",
-        "isLevels:1": 1,
-        "index:3": 0
       }
     }
   }

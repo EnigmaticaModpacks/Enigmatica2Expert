@@ -3,85 +3,85 @@
   "_pos": {
     "_index": "4:10",
     "_data": {
-      "sizeX:3": 24,
-      "x:3": 0,
-      "y:3": 0,
       "id:3": 861,
-      "sizeY:3": 24
+      "sizeX:3": 24,
+      "sizeY:3": 24,
+      "x:3": 0,
+      "y:3": 0
     }
   },
   "_data": {
-    "questID:3": 861,
     "preRequisites:11": [
       49
     ],
     "properties:10": {
       "betterquesting:10": {
-        "issilent:1": 0,
-        "snd_complete:8": "minecraft:entity.player.levelup",
-        "lockedprogress:1": 1,
-        "tasklogic:8": "AND",
-        "repeattime:3": -1,
-        "visibility:8": "ALWAYS",
-        "simultaneous:1": 0,
+        "autoclaim:1": 0,
+        "desc:8": "bq.quest861.desc",
+        "globalshare:1": 0,
         "icon:10": {
-          "id:8": "twilightforest:miniature_structure",
           "Count:3": 1,
           "Damage:2": 6,
+          "id:8": "twilightforest:miniature_structure",
           "OreDict:8": ""
         },
-        "globalshare:1": 0,
-        "questlogic:8": "AND",
-        "partysinglereward:1": 0,
-        "snd_update:8": "minecraft:entity.player.levelup",
-        "autoclaim:1": 0,
         "ismain:1": 0,
-        "repeat_relative:1": 1,
+        "issilent:1": 0,
+        "lockedprogress:1": 1,
         "name:8": "bq.quest861.name",
-        "desc:8": "bq.quest861.desc"
+        "partysinglereward:1": 0,
+        "questlogic:8": "AND",
+        "repeat_relative:1": 1,
+        "repeattime:3": -1,
+        "simultaneous:1": 0,
+        "snd_complete:8": "minecraft:entity.player.levelup",
+        "snd_update:8": "minecraft:entity.player.levelup",
+        "tasklogic:8": "AND",
+        "visibility:8": "ALWAYS"
       }
     },
-    "tasks:9": {
-      "0:10": {
-        "partialMatch:1": 1,
-        "autoConsume:1": 0,
-        "groupDetect:1": 0,
-        "ignoreNBT:1": 1,
-        "index:3": 0,
-        "consume:1": 0,
-        "requiredItems:9": {
-          "0:10": {
-            "id:8": "twilightforest:magic_map_empty",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          }
-        },
-        "taskID:8": "bq_standard:retrieval"
-      }
-    },
+    "questID:3": 861,
     "rewards:9": {
       "0:10": {
-        "rewardID:8": "bq_standard:item",
         "index:3": 0,
+        "rewardID:8": "bq_standard:item",
         "rewards:9": {
           "0:10": {
-            "id:8": "twilightforest:twilight_sapling",
             "Count:3": 1,
             "Damage:2": 6,
+            "id:8": "twilightforest:twilight_sapling",
             "OreDict:8": ""
           }
         }
       },
       "1:10": {
-        "hideBlockIcon:1": 1,
-        "rewardID:8": "bq_standard:command",
         "asScript:1": 1,
+        "command:8": "/advancement grant VAR_NAME only twilightforest:magic_map",
         "description:8": "Grant Twilight Forest progress",
-        "viaPlayer:1": 0,
+        "hideBlockIcon:1": 1,
         "index:3": 1,
+        "rewardID:8": "bq_standard:command",
         "title:8": "bq_standard.reward.command",
-        "command:8": "/advancement grant VAR_NAME only twilightforest:magic_map"
+        "viaPlayer:1": 0
+      }
+    },
+    "tasks:9": {
+      "0:10": {
+        "autoConsume:1": 0,
+        "consume:1": 0,
+        "groupDetect:1": 0,
+        "ignoreNBT:1": 1,
+        "index:3": 0,
+        "partialMatch:1": 1,
+        "requiredItems:9": {
+          "0:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "twilightforest:magic_map_empty",
+            "OreDict:8": ""
+          }
+        },
+        "taskID:8": "bq_standard:retrieval"
       }
     }
   }

@@ -3,169 +3,125 @@
   "_pos": {
     "_index": "38:10",
     "_data": {
-      "sizeX:3": 24,
-      "x:3": 240,
-      "y:3": 200,
       "id:3": 781,
-      "sizeY:3": 24
+      "sizeX:3": 24,
+      "sizeY:3": 24,
+      "x:3": 240,
+      "y:3": 200
     }
   },
   "_data": {
-    "questID:3": 781,
     "preRequisites:11": [
       425
     ],
     "properties:10": {
       "betterquesting:10": {
-        "issilent:1": 0,
-        "snd_complete:8": "minecraft:entity.player.levelup",
-        "lockedprogress:1": 1,
-        "tasklogic:8": "AND",
-        "repeattime:3": -1,
-        "visibility:8": "ALWAYS",
-        "simultaneous:1": 0,
+        "autoclaim:1": 0,
+        "desc:8": "bq.quest781.desc",
+        "globalshare:1": 0,
         "icon:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
           "ForgeCaps:10": {
             "astralsorcery:cap_item_amulet_holder:10": {}
           },
           "id:8": "ic2:quantum_chestplate",
-          "Count:3": 1,
+          "OreDict:8": "",
           "tag:10": {
             "charge:6": 10000000
-          },
-          "Damage:2": 0,
-          "OreDict:8": ""
-        },
-        "globalshare:1": 0,
-        "questlogic:8": "AND",
-        "snd_update:8": "minecraft:entity.player.levelup",
-        "autoclaim:1": 0,
-        "repeat_relative:1": 1,
-        "ismain:1": 0,
-        "name:8": "bq.quest781.name",
-        "desc:8": "bq.quest781.desc"
-      }
-    },
-    "tasks:9": {
-      "0:10": {
-        "partialMatch:1": 1,
-        "autoConsume:1": 0,
-        "groupDetect:1": 0,
-        "ignoreNBT:1": 1,
-        "index:3": 0,
-        "consume:1": 0,
-        "requiredItems:9": {
-          "0:10": {
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
-            "id:8": "ic2:quantum_helmet",
-            "Count:3": 1,
-            "tag:10": {
-              "charge:6": 10000000
-            },
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "1:10": {
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
-            "id:8": "ic2:quantum_chestplate",
-            "Count:3": 1,
-            "tag:10": {
-              "charge:6": 10000000
-            },
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "2:10": {
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
-            "id:8": "ic2:quantum_leggings",
-            "Count:3": 1,
-            "tag:10": {
-              "charge:6": 10000000
-            },
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "3:10": {
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
-            "id:8": "ic2:quantum_boots",
-            "Count:3": 1,
-            "tag:10": {
-              "charge:6": 10000000
-            },
-            "Damage:2": 0,
-            "OreDict:8": ""
           }
         },
-        "taskID:8": "bq_standard:retrieval"
+        "ismain:1": 0,
+        "issilent:1": 0,
+        "lockedprogress:1": 1,
+        "name:8": "bq.quest781.name",
+        "questlogic:8": "AND",
+        "repeat_relative:1": 1,
+        "repeattime:3": -1,
+        "simultaneous:1": 0,
+        "snd_complete:8": "minecraft:entity.player.levelup",
+        "snd_update:8": "minecraft:entity.player.levelup",
+        "tasklogic:8": "AND",
+        "visibility:8": "ALWAYS"
       }
     },
+    "questID:3": 781,
     "rewards:9": {
       "0:10": {
-        "rewardID:8": "bq_standard:choice",
-        "index:3": 0,
         "choices:9": {
           "0:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
             "ForgeCaps:10": {
-              "plustic::10": {
-                "Size:3": 1,
-                "Items:9": {}
-              },
               "astralsorcery:cap_item_amulet_holder:10": {},
+              "plustic::10": {
+                "Items:9": {},
+                "Size:3": 1
+              },
               "plustic:fruitsalad_cap:10": {
-                "Size:3": 5,
-                "Items:9": {}
+                "Items:9": {},
+                "Size:3": 5
               },
               "plustic:musicofthespheres_cap:10": {
-                "Size:3": 1,
-                "Items:9": {}
+                "Items:9": {},
+                "Size:3": 1
               }
             },
             "id:8": "tconstruct:broadsword",
-            "Count:3": 1,
+            "OreDict:8": "",
             "tag:10": {
-              "StatsOriginal:10": {
-                "AttackSpeedMultiplier:5": 1,
-                "MiningSpeed:5": 6,
-                "FreeModifiers:3": 3,
-                "Durability:3": 711,
-                "HarvestLevel:3": 10,
-                "Attack:5": 6.8
-              },
-              "Stats:10": {
-                "AttackSpeedMultiplier:5": 1,
-                "MiningSpeed:5": 6.1609993,
-                "FreeModifiers:3": 2,
-                "Durability:3": 733,
-                "HarvestLevel:3": 10,
-                "Attack:5": 6.915003
+              "Modifiers:9": {
+                "0:10": {
+                  "color:3": -5592406,
+                  "identifier:8": "dense",
+                  "level:3": 1
+                },
+                "1:10": {
+                  "color:3": -5592406,
+                  "identifier:8": "alien",
+                  "level:3": 1
+                },
+                "2:10": {
+                  "color:3": 16777215,
+                  "identifier:8": "toolleveling",
+                  "level:3": 1
+                }
               },
               "Special:10": {
-                "Categories:9": {
-                  "0:8": "tool",
-                  "1:8": "weapon"
-                },
                 "alienStatBonus:10": {
-                  "identifier:8": "",
-                  "color:3": 0,
                   "attack:5": 0.11500002,
+                  "color:3": 0,
                   "durability:3": 22,
+                  "identifier:8": "",
                   "speed:5": 0.161
                 },
                 "alienStatPool:10": {
-                  "identifier:8": "",
-                  "color:3": 16777215,
                   "attack:5": 1.314999,
+                  "color:3": 16777215,
                   "durability:3": 265,
+                  "identifier:8": "",
                   "speed:5": 1.9039981
+                },
+                "Categories:9": {
+                  "0:8": "tool",
+                  "1:8": "weapon"
                 }
+              },
+              "Stats:10": {
+                "Attack:5": 6.915003,
+                "AttackSpeedMultiplier:5": 1,
+                "Durability:3": 733,
+                "FreeModifiers:3": 2,
+                "HarvestLevel:3": 10,
+                "MiningSpeed:5": 6.1609993
+              },
+              "StatsOriginal:10": {
+                "Attack:5": 6.8,
+                "AttackSpeedMultiplier:5": 1,
+                "Durability:3": 711,
+                "FreeModifiers:3": 3,
+                "HarvestLevel:3": 10,
+                "MiningSpeed:5": 6
               },
               "TinkerData:10": {
                 "Materials:9": {
@@ -177,61 +133,105 @@
                   "0:8": "toolleveling"
                 }
               },
-              "Modifiers:9": {
-                "0:10": {
-                  "identifier:8": "dense",
-                  "color:3": -5592406,
-                  "level:3": 1
-                },
-                "1:10": {
-                  "identifier:8": "alien",
-                  "color:3": -5592406,
-                  "level:3": 1
-                },
-                "2:10": {
-                  "identifier:8": "toolleveling",
-                  "color:3": 16777215,
-                  "level:3": 1
-                }
-              },
               "Traits:9": {
                 "0:8": "dense",
                 "1:8": "alien",
                 "2:8": "toolleveling"
               }
-            },
-            "Damage:2": 0,
-            "OreDict:8": ""
+            }
           },
           "1:10": {
-            "id:8": "thermalfoundation:storage",
             "Count:3": 1,
             "Damage:2": 7,
+            "id:8": "thermalfoundation:storage",
             "OreDict:8": ""
           },
           "2:10": {
+            "Count:3": 1,
+            "Damage:2": 50,
             "ForgeCaps:10": {
               "astralsorcery:cap_item_amulet_holder:10": {}
             },
             "id:8": "bq_standard:loot_chest",
-            "Count:3": 1,
+            "OreDict:8": "",
             "tag:10": {
               "hideLootInfo:1": 1
-            },
-            "Damage:2": 50,
-            "OreDict:8": ""
+            }
           }
-        }
+        },
+        "index:3": 0,
+        "rewardID:8": "bq_standard:choice"
       },
       "1:10": {
-        "hideBlockIcon:1": 1,
-        "rewardID:8": "bq_standard:command",
         "asScript:1": 1,
+        "command:8": "gamestage silentadd VAR_NAME armor_quantum",
         "description:8": "Allow mobs spawn with this armor set",
-        "viaPlayer:1": 0,
+        "hideBlockIcon:1": 1,
         "index:3": 1,
+        "rewardID:8": "bq_standard:command",
         "title:8": "bq_standard.reward.command",
-        "command:8": "gamestage silentadd VAR_NAME armor_quantum"
+        "viaPlayer:1": 0
+      }
+    },
+    "tasks:9": {
+      "0:10": {
+        "autoConsume:1": 0,
+        "consume:1": 0,
+        "groupDetect:1": 0,
+        "ignoreNBT:1": 1,
+        "index:3": 0,
+        "partialMatch:1": 1,
+        "requiredItems:9": {
+          "0:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "ic2:quantum_helmet",
+            "OreDict:8": "",
+            "tag:10": {
+              "charge:6": 10000000
+            }
+          },
+          "1:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "ic2:quantum_chestplate",
+            "OreDict:8": "",
+            "tag:10": {
+              "charge:6": 10000000
+            }
+          },
+          "2:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "ic2:quantum_leggings",
+            "OreDict:8": "",
+            "tag:10": {
+              "charge:6": 10000000
+            }
+          },
+          "3:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "ic2:quantum_boots",
+            "OreDict:8": "",
+            "tag:10": {
+              "charge:6": 10000000
+            }
+          }
+        },
+        "taskID:8": "bq_standard:retrieval"
       }
     }
   }

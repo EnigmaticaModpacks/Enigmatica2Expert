@@ -2,21 +2,21 @@
   "_index": "10:10",
   "_data": {
     "lineID:3": 10,
+    "order:3": 5,
     "properties:10": {
       "betterquesting:10": {
-        "visibility:8": "ALWAYS",
-        "name:8": "bq.chapter10.name",
-        "icon:10": {
-          "id:8": "ic2:te",
-          "Count:3": 1,
-          "Damage:2": 3,
-          "OreDict:8": ""
-        },
         "bg_image:8": "",
         "bg_size:3": 256,
-        "desc:8": "bq.chapter10.desc"
+        "desc:8": "bq.chapter10.desc",
+        "icon:10": {
+          "Count:3": 1,
+          "Damage:2": 3,
+          "id:8": "ic2:te",
+          "OreDict:8": ""
+        },
+        "name:8": "bq.chapter10.name",
+        "visibility:8": "ALWAYS"
       }
-    },
-    "order:3": 5
+    }
   }
 }

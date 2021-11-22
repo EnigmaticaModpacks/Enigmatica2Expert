@@ -3,60 +3,94 @@
   "_pos": {
     "_index": "35:10",
     "_data": {
-      "sizeX:3": 24,
-      "x:3": -60,
-      "y:3": 108,
       "id:3": 771,
-      "sizeY:3": 24
+      "sizeX:3": 24,
+      "sizeY:3": 24,
+      "x:3": -60,
+      "y:3": 108
     }
   },
   "_data": {
-    "questID:3": 771,
     "preRequisites:11": [
       726
     ],
     "properties:10": {
       "betterquesting:10": {
-        "issilent:1": 0,
-        "snd_complete:8": "minecraft:entity.player.levelup",
-        "lockedprogress:1": 1,
-        "tasklogic:8": "AND",
-        "repeattime:3": -1,
-        "visibility:8": "ALWAYS",
-        "simultaneous:1": 0,
+        "autoclaim:1": 0,
+        "desc:8": "bq.quest771.desc",
+        "globalshare:1": 0,
         "icon:10": {
-          "id:8": "draconicevolution:mob_soul",
           "Count:3": 1,
+          "Damage:2": 0,
+          "id:8": "draconicevolution:mob_soul",
+          "OreDict:8": "",
           "tag:10": {
             "EntityName:8": "rats:black_death"
-          },
-          "Damage:2": 0,
-          "OreDict:8": ""
+          }
         },
-        "globalshare:1": 0,
-        "questlogic:8": "OR",
-        "snd_update:8": "minecraft:entity.player.levelup",
-        "autoclaim:1": 0,
-        "repeat_relative:1": 1,
         "ismain:1": 0,
+        "issilent:1": 0,
+        "lockedprogress:1": 1,
         "name:8": "bq.quest771.name",
-        "desc:8": "bq.quest771.desc"
+        "questlogic:8": "OR",
+        "repeat_relative:1": 1,
+        "repeattime:3": -1,
+        "simultaneous:1": 0,
+        "snd_complete:8": "minecraft:entity.player.levelup",
+        "snd_update:8": "minecraft:entity.player.levelup",
+        "tasklogic:8": "AND",
+        "visibility:8": "ALWAYS"
+      }
+    },
+    "questID:3": 771,
+    "rewards:9": {
+      "0:10": {
+        "choices:9": {
+          "0:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "rats:rat_upgrade_aristocrat",
+            "OreDict:8": ""
+          },
+          "1:10": {
+            "Count:3": 3,
+            "Damage:2": 0,
+            "id:8": "eyeofdragons:eye_of_icedragon",
+            "OreDict:8": ""
+          },
+          "2:10": {
+            "Count:3": 3,
+            "Damage:2": 0,
+            "id:8": "eyeofdragons:eye_of_firedragon",
+            "OreDict:8": ""
+          }
+        },
+        "index:3": 0,
+        "rewardID:8": "bq_standard:choice"
       }
     },
     "tasks:9": {
       "0:10": {
+        "damageType:8": "",
         "ignoreNBT:1": 1,
         "index:3": 0,
+        "required:3": 1,
+        "subtypes:1": 1,
+        "target:8": "rats:black_death",
         "targetNBT:10": {
-          "HurtByTimestamp:3": 0,
-          "ForgeData:10": {},
-          "RelativeAABB:9": {
-            "0:6": -0.30000001192092896,
-            "1:6": 0,
-            "2:6": -0.30000001192092896,
-            "3:6": 0.30000001192092896,
-            "4:6": 1.9500000476837158,
-            "5:6": 0.30000001192092896
+          "AbsorptionAmount:5": 0,
+          "Air:2": 300,
+          "ArmorDropChances:9": {
+            "0:5": 0.085,
+            "1:5": 0.085,
+            "2:5": 0.085,
+            "3:5": 0.085
+          },
+          "ArmorItems:9": {
+            "0:10": {},
+            "1:10": {},
+            "2:10": {},
+            "3:10": {}
           },
           "Attributes:9": {
             "0:10": {
@@ -132,130 +166,123 @@
               "Name:8": "generic.attackDamage"
             }
           },
-          "Invulnerable:1": 0,
-          "FallFlying:1": 0,
-          "PortalCooldown:3": 0,
-          "AbsorptionAmount:5": 0,
-          "FallDistance:5": 0,
+          "BeastsSummoned:3": 0,
+          "CanPickUpLoot:1": 0,
+          "CloudsSummoned:3": 0,
           "DeathTime:2": 0,
+          "Dimension:3": 0,
+          "FallDistance:5": 0,
+          "FallFlying:1": 0,
+          "Fire:2": -1,
           "ForgeCaps:10": {
-            "plethora:disableai:10": {},
             "betterhurttimer:hurt:10": {
-              "ticksToShieldDamage:3": 0,
-              "ticksToArmorDamage:3": 0
+              "ticksToArmorDamage:3": 0,
+              "ticksToShieldDamage:3": 0
             },
-            "nuclearcraft:capability_entity_rads:10": {
-              "consumed:1": 0,
-              "radawayBuffer:6": 0,
-              "shouldWarn:1": 0,
-              "radXUsed:1": 0,
-              "poisonBuffer:6": 0,
-              "radXCooldown:6": 0,
-              "radXWoreOff:1": 0,
-              "radawayCooldown:6": 0,
-              "recentRadawayAddition:6": 0,
-              "maxRads:6": 20000,
-              "radawayBufferSlow:6": 0,
-              "externalRadiationResistance:6": 0,
-              "totalRads:6": 0,
-              "setFromMaxHealth:1": 1,
-              "radiationLevel:6": 0,
-              "recentPoisonAddition:6": 0,
-              "recentRadXAddition:6": 0,
-              "radiationImmunityStage:1": 0,
-              "internalRadiationResistance:6": 0,
-              "radiationImmunityTime:6": 0
-            },
-            "tinkertoolleveling:entityxp:9": {},
             "dsurround:data:10": {
               "a:1": 0,
               "f:1": 0
             },
+            "dsurround:entityfx:10": {},
+            "dsurround:speech:10": {},
             "llibrary:extendedentitydatacapability:10": {
-              "Ice And Fire - Siren Property Tracker:10": {
-                "CharmedBySiren:1": 0,
-                "SirenID:3": 0
+              "Ice And Fire - Chain Property Tracker:10": {
+                "ConnectedEntities:9": {}
               },
               "Ice And Fire - Frozen Property Tracker:10": {
-                "TicksUntilUnfrozen:3": 0,
-                "IsFrozen:1": 0
+                "IsFrozen:1": 0,
+                "TicksUntilUnfrozen:3": 0
               },
               "Ice and Fire - Player Property Tracker:10": {
                 "DismountedDragon:1": 0,
-                "GauntletDamage:3": 0,
-                "DreadPortalZ:3": 0,
+                "DreadPortalX:3": 0,
                 "DreadPortalY:3": 0,
-                "DreadPortalX:3": 0
+                "DreadPortalZ:3": 0,
+                "GauntletDamage:3": 0
               },
-              "Ice And Fire - Chain Property Tracker:10": {
-                "ConnectedEntities:9": {}
+              "Ice And Fire - Siren Property Tracker:10": {
+                "CharmedBySiren:1": 0,
+                "SirenID:3": 0
               },
               "Ice And Fire - Stone Property Tracker:10": {
                 "StoneBreakLvl:3": 0,
                 "TurnedToStone:1": 0
               }
             },
-            "dsurround:entityfx:10": {},
-            "twilightforest:cap_shield:10": {
-              "permshields:3": 0,
-              "tempshields:3": 0
+            "nuclearcraft:capability_entity_rads:10": {
+              "consumed:1": 0,
+              "externalRadiationResistance:6": 0,
+              "internalRadiationResistance:6": 0,
+              "maxRads:6": 20000,
+              "poisonBuffer:6": 0,
+              "radawayBuffer:6": 0,
+              "radawayBufferSlow:6": 0,
+              "radawayCooldown:6": 0,
+              "radiationImmunityStage:1": 0,
+              "radiationImmunityTime:6": 0,
+              "radiationLevel:6": 0,
+              "radXCooldown:6": 0,
+              "radXUsed:1": 0,
+              "radXWoreOff:1": 0,
+              "recentPoisonAddition:6": 0,
+              "recentRadawayAddition:6": 0,
+              "recentRadXAddition:6": 0,
+              "setFromMaxHealth:1": 1,
+              "shouldWarn:1": 0,
+              "totalRads:6": 0
             },
+            "plethora:disableai:10": {},
             "thaumicaugmentation:portal_state:10": {
               "inPortal:1": 0
             },
-            "dsurround:speech:10": {}
+            "tinkertoolleveling:entityxp:9": {},
+            "twilightforest:cap_shield:10": {
+              "permshields:3": 0,
+              "tempshields:3": 0
+            }
           },
+          "ForgeData:10": {},
           "HandDropChances:9": {
             "0:5": 0.085,
             "1:5": 0.085
           },
-          "PersistenceRequired:1": 0,
+          "HandItems:9": {
+            "0:10": {},
+            "1:10": {}
+          },
+          "Health:5": 400,
+          "HurtByTimestamp:3": 0,
+          "HurtTime:2": 0,
           "id:8": "rats:black_death",
+          "Invulnerable:1": 0,
+          "Leashed:1": 0,
+          "LeftHanded:1": 0,
           "Motion:9": {
             "0:6": 0,
             "1:6": 0,
             "2:6": 0
           },
-          "Leashed:1": 0,
-          "UUIDLeast:4": -7629121435670479000,
-          "Health:5": 400,
-          "CloudsSummoned:3": 0,
-          "LeftHanded:1": 0,
-          "Air:2": 300,
           "OnGround:1": 0,
-          "Dimension:3": 0,
-          "BeastsSummoned:3": 0,
-          "RatsSummoned:3": 0,
-          "Rotation:9": {
-            "0:5": 3.1356926,
-            "1:5": 0
-          },
-          "UpdateBlocked:1": 0,
-          "HandItems:9": {
-            "0:10": {},
-            "1:10": {}
-          },
-          "ArmorDropChances:9": {
-            "0:5": 0.085,
-            "1:5": 0.085,
-            "2:5": 0.085,
-            "3:5": 0.085
-          },
-          "UUIDMost:4": 5830572876798709000,
+          "PersistenceRequired:1": 0,
+          "PortalCooldown:3": 0,
           "Pos:9": {
             "0:6": 0,
             "1:6": 0,
             "2:6": 0
           },
-          "Fire:2": -1,
-          "ArmorItems:9": {
-            "0:10": {},
-            "1:10": {},
-            "2:10": {},
-            "3:10": {}
+          "RatsSummoned:3": 0,
+          "RelativeAABB:9": {
+            "0:6": -0.30000001192092896,
+            "1:6": 0,
+            "2:6": -0.30000001192092896,
+            "3:6": 0.30000001192092896,
+            "4:6": 1.9500000476837158,
+            "5:6": 0.30000001192092896
           },
-          "CanPickUpLoot:1": 0,
-          "HurtTime:2": 0,
+          "Rotation:9": {
+            "0:5": 3.1356926,
+            "1:5": 0
+          },
           "SurgeAABB:9": {
             "0:6": -0.30000001192092896,
             "1:6": 0,
@@ -263,39 +290,12 @@
             "3:6": 0.30000001192092896,
             "4:6": 1.9500000476837158,
             "5:6": 0.30000001192092896
-          }
+          },
+          "UpdateBlocked:1": 0,
+          "UUIDLeast:4": -7629121435670479000,
+          "UUIDMost:4": 5830572876798709000
         },
-        "damageType:8": "",
-        "required:3": 1,
-        "taskID:8": "bq_standard:hunt",
-        "target:8": "rats:black_death",
-        "subtypes:1": 1
-      }
-    },
-    "rewards:9": {
-      "0:10": {
-        "rewardID:8": "bq_standard:choice",
-        "index:3": 0,
-        "choices:9": {
-          "0:10": {
-            "id:8": "rats:rat_upgrade_aristocrat",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "1:10": {
-            "id:8": "eyeofdragons:eye_of_icedragon",
-            "Count:3": 3,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "2:10": {
-            "id:8": "eyeofdragons:eye_of_firedragon",
-            "Count:3": 3,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          }
-        }
+        "taskID:8": "bq_standard:hunt"
       }
     }
   }

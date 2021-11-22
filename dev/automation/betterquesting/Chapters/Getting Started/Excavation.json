@@ -3,65 +3,73 @@
   "_pos": {
     "_index": "22:10",
     "_data": {
-      "sizeX:3": 24,
-      "x:3": -108,
-      "y:3": 36,
       "id:3": 434,
-      "sizeY:3": 24
+      "sizeX:3": 24,
+      "sizeY:3": 24,
+      "x:3": -108,
+      "y:3": 36
     }
   },
   "_data": {
-    "questID:3": 434,
     "preRequisites:11": [
       605
     ],
     "properties:10": {
       "betterquesting:10": {
-        "issilent:1": 0,
-        "snd_complete:8": "minecraft:entity.player.levelup",
-        "lockedprogress:1": 1,
-        "tasklogic:8": "AND",
-        "repeattime:3": -1,
-        "visibility:8": "ALWAYS",
-        "simultaneous:1": 0,
+        "autoclaim:1": 0,
+        "desc:8": "bq.quest434.desc",
+        "globalshare:1": 0,
         "icon:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
           "ForgeCaps:10": {
-            "plustic::10": {
-              "Size:3": 1,
-              "Items:9": {}
-            },
             "astralsorcery:cap_item_amulet_holder:10": {},
+            "plustic::10": {
+              "Items:9": {},
+              "Size:3": 1
+            },
             "plustic:fruitsalad_cap:10": {
-              "Size:3": 5,
-              "Items:9": {}
+              "Items:9": {},
+              "Size:3": 5
             },
             "plustic:musicofthespheres_cap:10": {
-              "Size:3": 1,
-              "Items:9": {}
+              "Items:9": {},
+              "Size:3": 1
             }
           },
           "id:8": "tconstruct:pickaxe",
-          "Count:3": 1,
+          "OreDict:8": "",
           "tag:10": {
-            "StatsOriginal:10": {
-              "AttackSpeedMultiplier:5": 1,
-              "MiningSpeed:5": 12,
-              "FreeModifiers:3": 3,
-              "Durability:3": 861,
-              "HarvestLevel:3": 7,
-              "Attack:5": 4.1
-            },
             "display:10": {
-              "NoRename:1": 1,
-              "Name:8": "InfiHarvester"
+              "Name:8": "InfiHarvester",
+              "NoRename:1": 1
             },
-            "Stats:10": {
-              "AttackSpeedMultiplier:5": 1,
-              "MiningSpeed:5": 999999,
-              "FreeModifiers:3": 0,
-              "Durability:3": 999999,
-              "HarvestLevel:3": 7,
-              "Attack:5": 999999
+            "Modifiers:9": {
+              "0:10": {
+                "color:3": -8206221,
+                "identifier:8": "slimey_green",
+                "level:3": 1
+              },
+              "1:10": {
+                "color:3": -14122284,
+                "identifier:8": "momentum",
+                "level:3": 1
+              },
+              "2:10": {
+                "color:3": -3063280,
+                "identifier:8": "petramor",
+                "level:3": 1
+              },
+              "3:10": {
+                "color:3": 16777215,
+                "identifier:8": "toolleveling",
+                "level:3": 1
+              },
+              "4:10": {
+                "color:3": 16777215,
+                "identifier:8": "infitool",
+                "level:3": 1
+              }
             },
             "Special:10": {
               "Categories:9": {
@@ -69,6 +77,22 @@
                 "1:8": "tool",
                 "2:8": "harvest"
               }
+            },
+            "Stats:10": {
+              "Attack:5": 999999,
+              "AttackSpeedMultiplier:5": 1,
+              "Durability:3": 999999,
+              "FreeModifiers:3": 0,
+              "HarvestLevel:3": 7,
+              "MiningSpeed:5": 999999
+            },
+            "StatsOriginal:10": {
+              "Attack:5": 4.1,
+              "AttackSpeedMultiplier:5": 1,
+              "Durability:3": 861,
+              "FreeModifiers:3": 3,
+              "HarvestLevel:3": 7,
+              "MiningSpeed:5": 12
             },
             "TinkerData:10": {
               "Materials:9": {
@@ -81,33 +105,6 @@
                 "1:8": "infitool"
               }
             },
-            "Modifiers:9": {
-              "0:10": {
-                "identifier:8": "slimey_green",
-                "color:3": -8206221,
-                "level:3": 1
-              },
-              "1:10": {
-                "identifier:8": "momentum",
-                "color:3": -14122284,
-                "level:3": 1
-              },
-              "2:10": {
-                "identifier:8": "petramor",
-                "color:3": -3063280,
-                "level:3": 1
-              },
-              "3:10": {
-                "identifier:8": "toolleveling",
-                "color:3": 16777215,
-                "level:3": 1
-              },
-              "4:10": {
-                "identifier:8": "infitool",
-                "color:3": 16777215,
-                "level:3": 1
-              }
-            },
             "Traits:9": {
               "0:8": "slimey_green",
               "1:8": "momentum",
@@ -115,64 +112,85 @@
               "3:8": "toolleveling",
               "4:8": "infitool"
             }
-          },
-          "Damage:2": 0,
-          "OreDict:8": ""
+          }
         },
-        "globalshare:1": 0,
-        "questlogic:8": "AND",
-        "partysinglereward:1": 0,
-        "snd_update:8": "minecraft:entity.player.levelup",
-        "autoclaim:1": 0,
         "ismain:1": 0,
-        "repeat_relative:1": 1,
+        "issilent:1": 0,
+        "lockedprogress:1": 1,
         "name:8": "bq.quest434.name",
-        "desc:8": "bq.quest434.desc"
+        "partysinglereward:1": 0,
+        "questlogic:8": "AND",
+        "repeat_relative:1": 1,
+        "repeattime:3": -1,
+        "simultaneous:1": 0,
+        "snd_complete:8": "minecraft:entity.player.levelup",
+        "snd_update:8": "minecraft:entity.player.levelup",
+        "tasklogic:8": "AND",
+        "visibility:8": "ALWAYS"
+      }
+    },
+    "questID:3": 434,
+    "rewards:9": {
+      "0:10": {
+        "index:3": 0,
+        "rewardID:8": "bq_standard:item",
+        "rewards:9": {
+          "0:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "oeintegration:excavatemodifier",
+            "OreDict:8": ""
+          }
+        }
       }
     },
     "tasks:9": {
       "0:10": {
-        "partialMatch:1": 1,
         "autoConsume:1": 0,
+        "consume:1": 0,
         "groupDetect:1": 0,
         "ignoreNBT:1": 1,
         "index:3": 0,
-        "consume:1": 0,
+        "partialMatch:1": 1,
         "requiredItems:9": {
           "0:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
             "ForgeCaps:10": {
-              "plustic::10": {
-                "Size:3": 1,
-                "Items:9": {}
-              },
               "astralsorcery:cap_item_amulet_holder:10": {},
+              "plustic::10": {
+                "Items:9": {},
+                "Size:3": 1
+              },
               "plustic:fruitsalad_cap:10": {
-                "Size:3": 5,
-                "Items:9": {}
+                "Items:9": {},
+                "Size:3": 5
               },
               "plustic:musicofthespheres_cap:10": {
-                "Size:3": 1,
-                "Items:9": {}
+                "Items:9": {},
+                "Size:3": 1
               }
             },
             "id:8": "tconstruct:pickaxe",
-            "Count:3": 1,
+            "OreDict:8": "",
             "tag:10": {
-              "StatsOriginal:10": {
-                "AttackSpeedMultiplier:5": 1,
-                "MiningSpeed:5": 3.75,
-                "FreeModifiers:3": 3,
-                "Durability:3": 143,
-                "HarvestLevel:3": 0,
-                "Attack:5": 2.175
-              },
-              "Stats:10": {
-                "AttackSpeedMultiplier:5": 1,
-                "MiningSpeed:5": 3.75,
-                "FreeModifiers:3": 2,
-                "Durability:3": 143,
-                "HarvestLevel:3": 0,
-                "Attack:5": 2.175
+              "Modifiers:9": {
+                "0:10": {
+                  "color:3": -7444965,
+                  "identifier:8": "ecological",
+                  "level:3": 1
+                },
+                "1:10": {
+                  "color:3": -9868951,
+                  "crude2:1": 1,
+                  "identifier:8": "crude",
+                  "level:3": 2
+                },
+                "2:10": {
+                  "color:3": 16777215,
+                  "identifier:8": "toolleveling",
+                  "level:3": 1
+                }
               },
               "Special:10": {
                 "Categories:9": {
@@ -180,6 +198,22 @@
                   "1:8": "tool",
                   "2:8": "aoe"
                 }
+              },
+              "Stats:10": {
+                "Attack:5": 2.175,
+                "AttackSpeedMultiplier:5": 1,
+                "Durability:3": 143,
+                "FreeModifiers:3": 2,
+                "HarvestLevel:3": 0,
+                "MiningSpeed:5": 3.75
+              },
+              "StatsOriginal:10": {
+                "Attack:5": 2.175,
+                "AttackSpeedMultiplier:5": 1,
+                "Durability:3": 143,
+                "FreeModifiers:3": 3,
+                "HarvestLevel:3": 0,
+                "MiningSpeed:5": 3.75
               },
               "TinkerData:10": {
                 "Materials:9": {
@@ -191,49 +225,15 @@
                   "0:8": "toolleveling"
                 }
               },
-              "Modifiers:9": {
-                "0:10": {
-                  "identifier:8": "ecological",
-                  "color:3": -7444965,
-                  "level:3": 1
-                },
-                "1:10": {
-                  "identifier:8": "crude",
-                  "color:3": -9868951,
-                  "level:3": 2,
-                  "crude2:1": 1
-                },
-                "2:10": {
-                  "identifier:8": "toolleveling",
-                  "color:3": 16777215,
-                  "level:3": 1
-                }
-              },
               "Traits:9": {
                 "0:8": "ecological",
                 "1:8": "crude2",
                 "2:8": "toolleveling"
               }
-            },
-            "Damage:2": 0,
-            "OreDict:8": ""
+            }
           }
         },
         "taskID:8": "bq_standard:retrieval"
-      }
-    },
-    "rewards:9": {
-      "0:10": {
-        "rewardID:8": "bq_standard:item",
-        "index:3": 0,
-        "rewards:9": {
-          "0:10": {
-            "id:8": "oeintegration:excavatemodifier",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          }
-        }
       }
     }
   }
