@@ -53,6 +53,16 @@
             "OreDict:8": ""
           }
         }
+      },
+      "1:10": {
+        "asScript:1": 1,
+        "command:8": "/astralsorcery research VAR_NAME CONSTELLATION",
+        "description:8": "Grant Astral Sorcery Progression",
+        "hideBlockIcon:1": 1,
+        "index:3": 1,
+        "rewardID:8": "bq_standard:command",
+        "title:8": "bq_standard.reward.command",
+        "viaPlayer:1": 0
       }
     },
     "tasks:9": {

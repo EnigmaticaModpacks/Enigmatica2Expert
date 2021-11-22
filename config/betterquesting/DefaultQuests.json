@@ -11556,6 +11556,16 @@
               "OreDict:8": ""
             }
           }
+        },
+        "1:10": {
+          "asScript:1": 1,
+          "command:8": "/astralsorcery research VAR_NAME BASIC_CRAFT",
+          "description:8": "Grant Astral Sorcery Progression",
+          "hideBlockIcon:1": 1,
+          "index:3": 1,
+          "rewardID:8": "bq_standard:command",
+          "title:8": "bq_standard.reward.command",
+          "viaPlayer:1": 0
         }
       },
       "tasks:9": {
@@ -12244,6 +12254,16 @@
               "OreDict:8": ""
             }
           }
+        },
+        "1:10": {
+          "asScript:1": 1,
+          "command:8": "/astralsorcery research VAR_NAME CONSTELLATION",
+          "description:8": "Grant Astral Sorcery Progression",
+          "hideBlockIcon:1": 1,
+          "index:3": 1,
+          "rewardID:8": "bq_standard:command",
+          "title:8": "bq_standard.reward.command",
+          "viaPlayer:1": 0
         }
       },
       "tasks:9": {
@@ -12378,6 +12398,16 @@
               }
             }
           }
+        },
+        "1:10": {
+          "asScript:1": 1,
+          "command:8": "/astralsorcery research VAR_NAME RADIANCE",
+          "description:8": "Grant Astral Sorcery Progression",
+          "hideBlockIcon:1": 1,
+          "index:3": 1,
+          "rewardID:8": "bq_standard:command",
+          "title:8": "bq_standard.reward.command",
+          "viaPlayer:1": 0
         }
       },
       "tasks:9": {
@@ -12640,6 +12670,16 @@
               "OreDict:8": ""
             }
           }
+        },
+        "1:10": {
+          "asScript:1": 1,
+          "command:8": "/astralsorcery research VAR_NAME ATTUNEMENT",
+          "description:8": "Grant Astral Sorcery Progression",
+          "hideBlockIcon:1": 1,
+          "index:3": 1,
+          "rewardID:8": "bq_standard:command",
+          "title:8": "bq_standard.reward.command",
+          "viaPlayer:1": 0
         }
       },
       "tasks:9": {
@@ -52845,7 +52885,7 @@
           "partialMatch:1": 1,
           "requiredItems:9": {
             "0:10": {
-              "Count:3": 16,
+              "Count:3": 1,
               "Damage:2": 0,
               "id:8": "animania:peacock_egg_blue",
               "OreDict:8": "animaniaEggs"
@@ -52904,12 +52944,12 @@
           "autoConsume:1": 0,
           "consume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "partialMatch:1": 1,
           "requiredItems:9": {
             "0:10": {
-              "Count:3": 16,
+              "Count:3": 1,
               "Damage:2": 0,
               "id:8": "animania:blue_peacock_feather",
               "OreDict:8": "peacockFeathers"
@@ -54152,12 +54192,12 @@
           "autoConsume:1": 0,
           "consume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "partialMatch:1": 1,
           "requiredItems:9": {
             "0:10": {
-              "Count:3": 16,
+              "Count:3": 1,
               "Damage:2": 0,
               "id:8": "animania:cooked_prime_beef",
               "OreDict:8": "primeMeatCooked"
@@ -59319,13 +59359,13 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "Count:3": 64,
+              "Count:3": 6400,
               "Damage:2": 3,
               "id:8": "environmentalmaterials:alabaster",
               "OreDict:8": ""
             },
             "2:10": {
-              "Count:3": 64,
+              "Count:3": 640,
               "Damage:2": 5,
               "id:8": "chisel:concrete_lightblue1",
               "OreDict:8": ""
@@ -77239,6 +77279,299 @@
           "taskID:8": "bq_standard:retrieval"
         }
       }
+    },
+    "1057:10": {
+      "preRequisites:11": [
+        762
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "bq.quest1057.desc",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "randomthings:inventoryrerouter",
+            "OreDict:8": ""
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 1,
+          "name:8": "bq.quest1057.name",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "OR",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 1057,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 101,
+              "id:8": "bq_standard:loot_chest",
+              "OreDict:8": ""
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "id:8": "randomthings:inventoryrerouter",
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "1058:10": {
+      "preRequisites:11": [
+        762
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "bq.quest1058.desc",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "randomthings:stableenderpearl",
+            "OreDict:8": ""
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 1,
+          "name:8": "bq.quest1058.name",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "OR",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 1058,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 101,
+              "id:8": "bq_standard:loot_chest",
+              "OreDict:8": ""
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "id:8": "randomthings:stableenderpearl",
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "1059:10": {
+      "preRequisites:11": [
+        46
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "bq.quest1059.desc",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 64,
+            "Damage:2": 0,
+            "id:8": "ic2:crop_stick",
+            "OreDict:8": ""
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 1,
+          "name:8": "bq.quest1059.name",
+          "partysinglereward:1": 0,
+          "partySingleReward:8": "false",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 1059,
+      "rewards:9": {
+        "0:10": {
+          "choices:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "id:8": "ic2:weeding_trowel",
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "id:8": "ic2:crop_seed_bag",
+              "OreDict:8": "",
+              "tag:10": {
+                "gain:1": 1,
+                "growth:1": 1,
+                "id:8": "meat_rose",
+                "owner:8": "ic2",
+                "resistance:1": 1,
+                "scan:1": 4
+              }
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "id:8": "ic2:crop_seed_bag",
+              "OreDict:8": "",
+              "tag:10": {
+                "gain:1": 4,
+                "growth:1": 4,
+                "id:8": "flax",
+                "owner:8": "ic2",
+                "resistance:1": 4,
+                "scan:1": 4
+              }
+            }
+          },
+          "index:3": 0,
+          "rewardID:8": "bq_standard:choice"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 10,
+              "Damage:2": 0,
+              "id:8": "ic2:crop_stick",
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "1060:10": {
+      "preRequisites:11": [
+        67
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "bq.quest1060.desc",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "ic2:cropnalyzer",
+            "OreDict:8": "",
+            "tag:10": {
+              "charge:6": 100000.0
+            }
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 1,
+          "name:8": "bq.quest1060.name",
+          "partysinglereward:1": 0,
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 1060,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 75,
+              "id:8": "bq_standard:loot_chest",
+              "OreDict:8": ""
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "id:8": "ic2:cropnalyzer",
+              "OreDict:8": "",
+              "tag:10": {
+                "charge:6": 100000.0
+              }
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -77587,8 +77920,8 @@
           "id:3": 912,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -72,
-          "y:3": 108
+          "x:3": -108,
+          "y:3": 132
         },
         "47:10": {
           "id:3": 932,
@@ -77598,17 +77931,17 @@
           "y:3": 108
         },
         "48:10": {
-          "id:3": 935,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -108,
-          "y:3": 131
-        },
-        "49:10": {
           "id:3": 942,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 219,
+          "y:3": 108
+        },
+        "49:10": {
+          "id:3": 1059,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -69,
           "y:3": 108
         }
       }
@@ -80666,6 +80999,13 @@
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -24,
+          "y:3": 8
+        },
+        "41:10": {
+          "id:3": 1060,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -56,
           "y:3": 8
         }
       }
@@ -84560,8 +84900,8 @@
           "id:3": 987,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -368,
-          "y:3": 160
+          "x:3": -364,
+          "y:3": 176
         },
         "35:10": {
           "id:3": 988,
@@ -84616,8 +84956,8 @@
           "id:3": 998,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -368,
-          "y:3": 188
+          "x:3": -388,
+          "y:3": 176
         },
         "43:10": {
           "id:3": 999,
@@ -84919,6 +85259,20 @@
           "sizeY:3": 24,
           "x:3": -204,
           "y:3": 480
+        },
+        "86:10": {
+          "id:3": 1057,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -364,
+          "y:3": 200
+        },
+        "87:10": {
+          "id:3": 1058,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -388,
+          "y:3": 200
         }
       }
     }

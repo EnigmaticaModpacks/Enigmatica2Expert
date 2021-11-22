@@ -68,13 +68,13 @@
             "OreDict:8": ""
           },
           "1:10": {
-            "Count:3": 64,
+            "Count:3": 6400,
             "Damage:2": 3,
             "id:8": "environmentalmaterials:alabaster",
             "OreDict:8": ""
           },
           "2:10": {
-            "Count:3": 64,
+            "Count:3": 640,
             "Damage:2": 5,
             "id:8": "chisel:concrete_lightblue1",
             "OreDict:8": ""
