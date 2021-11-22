@@ -57,12 +57,11 @@ Beta Test exists to find critical bugs. CurseForge release will be out for a whi
 Download [latest release](https://github.com/Krutoy242/Enigmatica2Expert-Extended/releases). Then:
 
 ### Fresh Installation
-1. Init vanilla MC `1.12.2 ForgeOptifine`. Lunch it to make your luncher create all required files.
+1. Init vanilla MC `1.12.2 Forge`. Lunch it to make your luncher create all required files.
 2. Overwrite MC folder with content from archive `E2E-Extended_{version}.zip`
 
 - Loading time ~8 minutes. [More info](https://i.imgur.com/JFARuTf.png)
-- Recommended RAM: `8Gb`.
-- Optifine optionable.
+- Recommended RAM: `6Gb`.
 
 ### Update from older version
 1. Remove folders `mods`, `scripts`

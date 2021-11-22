@@ -21,6 +21,8 @@
 !patchouli_books/
 !structures/
 structures/inactive
+!options.txt
+!optionsof.txt
 
 # Files created by luncher
 config/splash.properties
