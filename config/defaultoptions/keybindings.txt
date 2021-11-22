@@ -35,11 +35,18 @@ key_of.key.zoom:-97:NONE
 key_ALT Key:0:NONE
 key_Boost Key:0:NONE
 key_Mode Switch Key:47:NONE
-key_Side Inventory Key:0:NONE
+key_Side Inventory Key:77:NONE
 key_Hub Expand Key:0:NONE
 key_Change Caster Focus:34:NONE
 key_Misc Caster Toggle:0:NONE
 key_keybind.baublesinventory:0:NONE
+key_quark.keybind.toggleAutojump:0:NONE
+key_quark.keybind.dropoff:0:NONE
+key_quark.keybind.chestSort:0:NONE
+key_quark.keybind.chestDropoff:0:NONE
+key_quark.keybind.chestMerge:0:NONE
+key_quark.keybind.chestRestock:0:NONE
+key_quark.keybind.chestExtract:0:NONE
 key_quark.emote.no:0:NONE
 key_quark.emote.yes:0:NONE
 key_quark.emote.wave:0:NONE
@@ -58,14 +65,7 @@ key_quark.emote.dab:0:NONE
 key_quark.emote.jet:0:NONE
 key_quark.emote.exorcist:0:NONE
 key_quark.emote.zombie:0:NONE
-key_quark.keybind.toggleAutojump:0:NONE
 key_quark.keybind.lockBuilding:33:SHIFT
-key_quark.keybind.dropoff:0:NONE
-key_quark.keybind.chestSort:0:NONE
-key_quark.keybind.chestDropoff:0:NONE
-key_quark.keybind.chestMerge:0:NONE
-key_quark.keybind.chestRestock:0:NONE
-key_quark.keybind.chestExtract:0:NONE
 key_key.toggle_shaders:0:NONE
 key_bloodmagic.keybind.open_holding:53:CONTROL
 key_bloodmagic.keybind.cycle_holding_pos:0:NONE
@@ -96,7 +96,7 @@ key_openblocks.keybind.vario_vol_down:0:NONE
 key_key.ping:62:NONE
 key_ping.key.alert:75:NONE
 key_ping.key.mine:76:NONE
-key_ping.key.look:77:NONE
+key_ping.key.look:0:NONE
 key_ping.key.goto:72:NONE
 key_key.toggleFoVChanges:51:SHIFT
 key_key.reloadSoundSystem:66:SHIFT
@@ -123,7 +123,7 @@ key_key.next_item.desc:0:NONE
 key_key.previous_item.desc:0:NONE
 key_key.open_danknull.desc:0:NONE
 key_key.togglehud.desc:0:NONE
-key_key.narrator:48:CONTROL
+key_key.narrator:53:CONTROL
 key_key.jei.toggleOverlay:24:CONTROL
 key_key.jei.focusSearch:33:CONTROL
 key_key.jei.toggleCheatMode:0:NONE
@@ -232,7 +232,7 @@ key_pi.key.open_pi:23:NONE
 key_pi.key.et_gui:23:NONE
 key_pi.key.et_world:23:CONTROL
 key_key.travelersbackpack.inventory:48:NONE
-key_key.travelersbackpack.toggle_tank:49:NONE
+key_key.travelersbackpack.toggle_tank:45:CONTROL
 key_key.travelersbackpack.cycle_tool:44:NONE
 key_key.vaultopic.view:33:CONTROL
 key_key.vaultopic.vice:18:SHIFT
@@ -241,7 +241,7 @@ key_Open Rocket GUI:46:NONE
 key_Toggle RCS:0:NONE
 key_Rotate Vehicle Right:32:NONE
 key_Rotate Vehicle Left:30:NONE
-key_Move Vehicle Up:44:NONE
+key_Move Vehicle Up:0:NONE
 key_Move Vehicle Down:45:NONE
 key_key.journeymap.zoom_in:13:NONE
 key_key.journeymap.zoom_out:12:NONE

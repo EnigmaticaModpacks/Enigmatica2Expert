@@ -27,8 +27,8 @@ ofDrippingWaterLava:true
 ofAnimatedTerrain:true
 ofAnimatedTextures:true
 ofRainSplash:true
-ofLagometer:false
-ofShowFps:false
+ofLagometer:true
+ofShowFps:true
 ofAutoSaveTicks:7200
 ofBetterGrass:3
 ofConnectedTextures:2
@@ -58,7 +58,7 @@ ofEmissiveTextures:true
 ofLazyChunkLoading:true
 ofRenderRegions:false
 ofSmartAnimations:false
-ofDynamicFov:false
+ofDynamicFov:true
 ofAlternateBlocks:true
 ofDynamicLights:3
 ofScreenshotSize:1
