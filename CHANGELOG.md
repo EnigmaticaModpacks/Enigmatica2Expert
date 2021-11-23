@@ -1,6 +1,72 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
 
+# v0.40.1
+
+
+## 🟡 Updated Mods
+
+- **CraftTweaker**
+
+
+## [> Mods updates detailed.](changelogs/CHANGELOG_MODS_v0.40.1.md)
+
+
+## ✏️ **Recipes**
+  - ![](https://git.io/JcNYb "Blizz Rod") and ![](https://git.io/JXrMl "Basalz Rod") test recipes, related to #18
+    > Some players experience that they cant put ![](https://git.io/Jz0Vt "Empty Rod") onto casting table.  
+    > Try to craft all three rods on your instance and report which one is craftable
+  - ### ✐ **Cheaper**
+    - ![](https://git.io/J1xK3 "Lantern")
+      ![](https://git.io/JtJMC "Powered Lantern")
+      ![](https://git.io/J1xKL "Floodlight")
+      ![](https://git.io/J1xKq "Reinforced Coke Brick")
+      ![](https://git.io/J6y7T "Stable Ender Pearl")
+
+  - ### ✎ **Harder**
+    - ![](https://git.io/JP6gc "Lormyte Stone")
+      ![](https://git.io/JcbbK "Fertilized Essence")
+      [Mechanical Miner]
+
+  - ### ✏ **Misc Changes**
+    - ![](https://git.io/J1HzN "Fluix-Plated Iron Ingot") fix ingredients wasnt consumed
+    - ![](https://git.io/JzVqO "Garbage Pile") add HarvestLevel accounting
+    - ![](https://git.io/JcNYX "Plutonium-238") in ![](https://git.io/J1Hzb "Mutagen Producer") output less ![](https://git.io/J1HzA "Mutagen")
+    - ![](https://git.io/J1xKm "Dragon Scale") can be purchased or dropped from Slime vs Cockatrice
+    - ![](https://git.io/J1xKY "Knife") can be made with more durability
+    - [Single Compressed Fish] can be made from any fish
+    - ![](https://git.io/JZYf2 "Rune of Earth") replace ![](https://git.io/JcbNJ "Rare Earths") to ![](https://git.io/J1xKI "Peat")
+    - ![](https://git.io/Jgexr "Mysterious Token Chunk") now drops from slimes
+    - Dragon Scales from Ice & Fire now have more crafts
+    - Remove Knowledge Absorber usage
+
+
+## 🔄 **Misc Changes**
+  - ![](https://git.io/J1xKt "Bowl") can now filled into ![](https://git.io/J1xKO "Bowl of Water") from ![](https://git.io/J3hVE "Wooden Barrel")
+  - Now Nultrition could be lower up to 20 after death to prevent "die to eat" exploit
+  - Add `options.txt` and `optionsof.txt` to repo to use it as defaults
+  - Lower RAM requirments in README
+  - Add **Haste** effect for newly joined players in Skyblock
+  - ### ⚡ **Performance**: set `vertexDataCanonicalization=false`
+      > From config description:
+      > > EXPERIMENTAL: Deduplicate BakedQuad's Vertex Data array.
+      > > If you see any artifacting in-game, turn this off and report it on github
+
+  - ### 🧩 **Configs**
+    - Add Discord link to main menu and Github's README
+    - Enable chunk claiming, enable explosions in them
+      > Also, disable logging of afk in console.
+
+  - ### 📖 **Quest Book**: Quests updates
+      > - Less requirment amount for Eggs, Feathers and Meat
+      > - Grant Astral Sorcery progression when completing altairs quest - this would help for multiplayer
+      > - Some new quests
+
+
+
+
+
+
 # v0.40
 
 
