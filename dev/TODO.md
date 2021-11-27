@@ -64,7 +64,6 @@ Liquids that should have more uses:
 ![](https://git.io/J3p4b "Amber Tank")
 ![](https://git.io/J3p4H "Hot Spring Water Tank")
 ![](https://git.io/J3p49 "Latex Tank")
-![](https://git.io/J3p4y "Crystallized Obsidian Tank")
 ![](https://git.io/J3p4S "Pahoehoe Lava Tank")
 ![](https://git.io/J3p45 "Menril Resin Tank")
 ![](https://git.io/J3p4n "Flux Goo Tank")
@@ -77,7 +76,6 @@ Liquids that should have more uses:
 ![](https://git.io/Jsw4m "Miniaturization Field Projector")
 ![](https://git.io/JG5U9 "Decay Generator")
 ![](https://git.io/Jst3B "Crystal Memory")
-![](https://git.io/J3hVE "Wooden Barrel MILKING")
 ![](https://git.io/JtDnO "Chemical Thrower")
 [Blue Fire Jar]
 
@@ -100,39 +98,41 @@ Liquids that should have more uses:
 - [ ] ✏️ MA crafting seeds add table -> runic -> alchemy table recipe
 - [ ] ✏️ Add Endermite rare drop, add Nethernite too
 - [ ] ✏️ [Antler] add usage
-- [ ] ✏️ [Terra Wart] add usage
-- [ ] ✏️ Akashic Tome fix Enigmatica book
-- [x] ✏️ [Lormyte Stone] change ingredient from Evil tear
-- [x] ✏️ [Rune of Earth] cheaper, no [Rare Earth]
-- [x] ✏️ [Fertilized Essence] harder
-- [x] ✏️ [Knife] (AA) buff
-- [x] ✏️ [Royal Jelly] (Forestry) add empowering recipe
-- [x] ✏️ Immersive Lights cheaper
-- [x] ✏️ [Dragon Scales] add to merchants
-- [x] ✏️ [Chunky Cheese token] alt recipe
-- [x] ✏️ [Mechanical Miner] harder
-- [x] ✏️ [Compressed fish] from any fish
-- [x] ✏️ [Stable Pearl] cheaper
 - [ ] ✏️ Slime killed by wolf craft, by rat, by cokatrix
 - [ ] ✏️ [Flint Mesh] cheaper, but less output
-- [ ] ✏️ Get water from a barrel with a bowl
+- [x] ✏️ Add Witchwater+Water => Dirt to JEI
+- [ ] ✏️ Unify cables crafts, make it from pulverized coal, not lapis plates
+- [ ] ✏️ Enable AIOTs, Paxels
+- [x] ✏️ Heart of Diamond add uses
+- [x] ✏️ [Carving Knife] add more durab. alts
+- [x] ✏️ Buff prime wool -> dusts
+- [x] ✏️ Pebbles fix craft
+- [x] ✏️ Assorted Vegetables add nutrition
+- [x] ✏️ Fix appropriate tool for compressed sand and gravel
+- [x] ✏️ Buff Hover boots
+- [x] ✏️ Pitiful fuel gen buff
+- [x] ✏️ Ferrous - less, Ironberries - more
+- [x] ✏️ Add rat in market recipe
+- [x] ✏️ Add Fast cheese wheels
+- [ ] ✏️ Add [Electronics] casting
+- [ ] ✏️ Buff crops. Needed: Osmium, Black Quartz, Platinum, Celestial Crystal. Add usage for Weed
+- [x] ✏️ `Uranium`, `Apatite`, `Copper`, `Tin` get other ways in skyblock
 - [ ] 📖 Change sound of quest complete to another
 - [ ] 📖 Add CC/OC gate
-- [x] 📖 Little Chisel better reward
-- [x] 📖 Might be worth removing advanced coke bricks from JEI just so people don't waste their steel (like I did)?
-- [x] 📖 Less peacock feathers, peacock eggs
-- [x] 📖 Add AS command when gaining quest
-- [x] 📖 Add IC2 crop breeding plugin
-- [x] 📖 Add Inventory Rerouter
-- [x] 📖 Add Stable Ender Pearl
-- [x] 🔄 Fix JAOPCA_Custom wont work on server
-- [x] 🔄 Give player Haste Potion Effect when joining new world
-- [x] 🔄 Add default options to Mod Director
+- [x] 📖 Wrench in IC2 quest change to old (add durability)
+- [x] 📖 Add Two hand trick to Excavator
+- [x] 📖 Remove all coins from loot
+- [x] 📖 Alchemical Condenser need only 2 towers
+- [x] 📖 Rat on arrow fix connections
+- [x] 📖 Manyulin quest better reward
+- [ ] 📖 Add new mob spawning rules defined in `spawn.json` settings
+- [ ] 🔄 Forbid traveling to deep dark
+- [x] 🔄 Infested leaves set break speed to instant
+- [x] 🔄 Spawn stonelings rarer
 - [ ] 🔄 Add https://www.curseforge.com/minecraft/mc-mods/versioner
 - [ ] 🔄 Schematica: Missing/outdated Immersive Technology schematics, Fixes #17
 - [ ] 🔄 Fix `tooltips.dim_stages.enter_skyblock` not shows on server
-- [x] 🔄 Disable Baked Quads for LoliASM
-- [x] 🔄 Make Optifine Optionable
+- [x] 🔄 Disable Dragon corps spawn on skyblock
 - [ ] 🏪 Add *X kill X*
 - [ ] 🔨 Grinding rework
 - [ ] 🚧 Add skyblock client/server changes
