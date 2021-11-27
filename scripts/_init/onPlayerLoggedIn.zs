@@ -37,12 +37,12 @@ events.onPlayerLoggedIn(function(e as crafttweaker.event.PlayerLoggedInEvent){
 });
 
 function onFirstLogin(e as crafttweaker.event.PlayerLoggedInEvent) as void {
-  if(e.player.world.getWorldType() == "voidworld") {
+  if(e.player.world.getWorldType() == "voidworld" && !e.player.hasGameStage("skyblock")) {
     e.player.addGameStage("skyblock");
     showWithDelay(e.player, "tooltips.dim_stages.enter_skyblock");
 
     // Add Haste when player join Skyblock world for the first time
-    e.player.addPotionEffect(<potion:minecraft:haste>.makePotionEffect(20*60*60*3, 5));
+    e.player.addPotionEffect(<potion:minecraft:haste>.makePotionEffect(20*60*60*3, 3));
   } else {
     // e.player.addGameStage("normal_world");
   }
