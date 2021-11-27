@@ -4,6 +4,7 @@ fluid.cheese=Сыр
 fluid.seed=Семя
 fluid.spectre=Спектр
 fluid.perfect_fuel=Идеальное Топливо
+fluid.electronics=Плавленная Электроника
 
 item.contenttweaker.compressed_glowstone.name=Сжатая Светопыль
 item.contenttweaker.compressed_ender.name=Сжатый Эндер Жемчуг
@@ -21,7 +22,6 @@ tile.contenttweaker.conglomerate_of_coal.name=Конгломерат Угля
 tile.contenttweaker.conglomerate_of_sun.name=Конгломерат Солнца
 tile.contenttweaker.silicon_block.name=Силиконовый блок
 item.contenttweaker.knowledge_absorber.name=Поглотитель Знаний
-item.contenttweaker.electronics.name=Плавленная Электроника
 
 item.contenttweaker.supremium_boots_base.name=Основание Ядра Супремиумных Ботинок
 item.contenttweaker.supremium_chest_base.name=Основание Ядра Супремиумного Нагрудника

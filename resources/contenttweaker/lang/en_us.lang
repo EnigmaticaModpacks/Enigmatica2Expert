@@ -4,6 +4,7 @@ fluid.cheese=Cheese
 fluid.seed=Seed
 fluid.spectre=Spectre
 fluid.perfect_fuel=Perfect Fuel
+fluid.electronics=Molten Electronics
 
 item.contenttweaker.compressed_glowstone.name=Compressed Glowstone
 item.contenttweaker.compressed_ender.name=Compressed Ender
@@ -21,7 +22,6 @@ tile.contenttweaker.conglomerate_of_coal.name=Conglomerate Of Coal
 tile.contenttweaker.conglomerate_of_sun.name=Conglomerate Of Sun
 tile.contenttweaker.silicon_block.name=Silicon Block
 item.contenttweaker.knowledge_absorber.name=Knowledge Absorber
-item.contenttweaker.electronics.name=Molten Electronics
 
 item.contenttweaker.supremium_boots_base.name=Supremium Boots Core Base
 item.contenttweaker.supremium_chest_base.name=Supremium Chestplate Core Base
