@@ -73,6 +73,7 @@
     { "meshLevel": 1, "drop": {"name": "minecraft:chorus_fruit"        , "meta": 0}  , "chance": 0.25},
     { "meshLevel": 1, "drop": {"name": "nuclearcraft:compound"         , "meta": 8}  , "chance": 0.05},
     { "meshLevel": 1, "drop": {"name": "endreborn:item_lormyte_crystal", "meta": 0}  , "chance": 0.1 },
+    { "meshLevel": 2, "drop": {"name": "jaopca:item_pieceuranium"      , "meta": 0}  , "chance": 0.1 },
 
     { "meshLevel": 2, "drop": {"name": "minecraft:chorus_fruit"       , "meta": 0}  , "chance": 0.5},
     { "meshLevel": 2, "drop": {"name": "nuclearcraft:compound"        , "meta": 8}  , "chance": 0.1},
@@ -216,17 +217,20 @@
   "biomesoplenty:dried_sand:0": [
     {"meshLevel": 1, "drop": {"name": "biomesoplenty:mudball"                , "meta": 0}    , "chance": 0.45} ,
     {"meshLevel": 1, "drop": {"name": "ic2:misc_resource"                    , "meta": 5}    , "chance": 0.2} ,
+    {"meshLevel": 1, "drop": {"name": "mekanism:dirtydust"                   , "meta": 3}    , "chance": 0.2} ,
 
     {"meshLevel": 2, "drop": {"name": "biomesoplenty:mudball"                , "meta": 0}    , "chance": 0.45} ,
     {"meshLevel": 2, "drop": {"name": "ic2:misc_resource"                    , "meta": 5}    , "chance": 0.25} ,
     {"meshLevel": 2, "drop": {"name": "thermalfoundation:material"           , "meta": 892}  , "chance": 0.1} ,
     {"meshLevel": 2, "drop": {"name": "exnihilocreatio:item_ore_copper"      , "meta": 0}    , "chance": 0.15} ,
+    {"meshLevel": 2, "drop": {"name": "mekanism:dirtydust"                   , "meta": 3}    , "chance": 0.3} ,
 
     {"meshLevel": 3, "drop": {"name": "biomesoplenty:mudball"                , "meta": 0}    , "chance": 0.45} ,
     {"meshLevel": 3, "drop": {"name": "ic2:misc_resource"                    , "meta": 5}    , "chance": 0.3} ,
     {"meshLevel": 3, "drop": {"name": "thermalfoundation:material"           , "meta": 892}  , "chance": 0.1} ,
     {"meshLevel": 3, "drop": {"name": "exnihilocreatio:item_ore_copper"      , "meta": 0}    , "chance": 0.2} ,
     {"meshLevel": 3, "drop": {"name": "exnihilocreatio:item_ore_lead"        , "meta": 0}    , "chance": 0.1} ,
+    {"meshLevel": 3, "drop": {"name": "mekanism:dirtydust"                   , "meta": 3}    , "chance": 0.4} ,
 
     {"meshLevel": 4, "drop": {"name": "biomesoplenty:mudball"                , "meta": 0}    , "chance": 0.45} ,
     {"meshLevel": 4, "drop": {"name": "ic2:misc_resource"                    , "meta": 5}    , "chance": 0.35} ,
@@ -245,19 +249,20 @@
     {"meshLevel": 2, "drop": {"name": "jaopca:item_nuggetcertusquartz"       , "meta": 0}    , "chance": 0.7} ,
     {"meshLevel": 2, "drop": {"name": "jaopca:item_nuggetchargedcertusquartz", "meta": 0}    , "chance": 0.14} ,
     {"meshLevel": 2, "drop": {"name": "thaumcraft:nugget"                    , "meta": 5}    , "chance": 0.2} ,
-    {"meshLevel": 2, "drop": {"name": "mysticalagriculture:crafting"         , "meta": 5}    , "chance": 0.1} ,
+    {"meshLevel": 2, "drop": {"name": "tconstruct:shard"                     , "meta": 0, "nbt": "{Material:\"ma.prosperity\"}"}, "chance": 0.1},
+  
     {"meshLevel": 2, "drop": {"name": "exnihilocreatio:item_ore_tin"         , "meta": 0}    , "chance": 0.15} ,
 
     {"meshLevel": 3, "drop": {"name": "jaopca:item_nuggetcertusquartz"       , "meta": 0}    , "chance": 1.0} ,
     {"meshLevel": 3, "drop": {"name": "jaopca:item_nuggetchargedcertusquartz", "meta": 0}    , "chance": 0.2} ,
     {"meshLevel": 3, "drop": {"name": "thaumcraft:nugget"                    , "meta": 5}    , "chance": 0.25} ,
-    {"meshLevel": 3, "drop": {"name": "mysticalagriculture:crafting"         , "meta": 5}    , "chance": 0.15} ,
+    {"meshLevel": 3, "drop": {"name": "tconstruct:shard"                     , "meta": 0, "nbt": "{Material:\"ma.prosperity\"}"}, "chance": 0.15},
     {"meshLevel": 3, "drop": {"name": "exnihilocreatio:item_ore_tin"         , "meta": 0}    , "chance": 0.2} ,
     {"meshLevel": 3, "drop": {"name": "exnihilocreatio:item_ore_aluminium"   , "meta": 0}    , "chance": 0.2} ,
     {"meshLevel": 3, "drop": {"name": "thermalfoundation:material"           , "meta": 772}  , "chance": 0.2} ,
 
     {"meshLevel": 4, "drop": {"name": "thaumcraft:nugget"                    , "meta": 5}    , "chance": 0.3} ,
-    {"meshLevel": 4, "drop": {"name": "mysticalagriculture:crafting"         , "meta": 5}    , "chance": 0.2} ,
+    {"meshLevel": 4, "drop": {"name": "tconstruct:shard"                     , "meta": 0, "nbt": "{Material:\"ma.prosperity\"}"}, "chance": 0.2},
     {"meshLevel": 4, "drop": {"name": "exnihilocreatio:item_ore_tin"         , "meta": 0}    , "chance": 0.25} ,
     {"meshLevel": 4, "drop": {"name": "exnihilocreatio:item_ore_aluminium"   , "meta": 0}    , "chance": 0.25} ,
     {"meshLevel": 4, "drop": {"name": "thermalfoundation:material"           , "meta": 772}  , "chance": 0.25} ,
@@ -285,9 +290,13 @@
   ],
 
   "exnihilocreatio:block_andesite_crushed:0": [
+    {"meshLevel": 1, "drop": {"name": "mekanism:dirtydust"                   , "meta": 4   } , "chance": 0.20 } ,
+
+    {"meshLevel": 2, "drop": {"name": "mekanism:dirtydust"                   , "meta": 4   } , "chance": 0.30 } ,
     {"meshLevel": 2, "drop": {"name": "appliedenergistics2:crystal_seed"     , "meta": 0   } , "chance": 0.15 } ,
     {"meshLevel": 2, "drop": {"name": "thermalfoundation:material"           , "meta": 770 } , "chance": 0.08 } ,
 
+    {"meshLevel": 3, "drop": {"name": "mekanism:dirtydust"                   , "meta": 4   } , "chance": 0.40 } ,
     {"meshLevel": 3, "drop": {"name": "appliedenergistics2:crystal_seed"     , "meta": 0   } , "chance": 0.15 } ,
     {"meshLevel": 3, "drop": {"name": "thermalfoundation:material"           , "meta": 770 } , "chance": 0.08 } ,
     {"meshLevel": 3, "drop": {"name": "ic2:dust"                             , "meta": 5   } , "chance": 0.08 } ,
@@ -304,20 +313,27 @@
   ],
 
   "exnihilocreatio:block_diorite_crushed:0": [
-    {"meshLevel": 2, "drop": {"name": "forestry:apatite"                     , "meta": 0   } , "chance": 0.34} ,
+    {"meshLevel": 1, "drop": {"name": "jaopca:item_dustapatite"              , "meta": 0   } , "chance": 0.5} ,
+    {"meshLevel": 1, "drop": {"name": "mekanism:salt"                        , "meta": 0   } , "chance": 0.19} ,
+
+    {"meshLevel": 2, "drop": {"name": "jaopca:item_dustapatite"              , "meta": 0   } , "chance": 1.0} ,
+    {"meshLevel": 2, "drop": {"name": "jaopca:item_dustapatite"              , "meta": 0   } , "chance": 0.5} ,
     {"meshLevel": 2, "drop": {"name": "appliedenergistics2:crystal_seed"     , "meta": 600 } , "chance": 0.08 } ,
     {"meshLevel": 2, "drop": {"name": "mekanism:salt"                        , "meta": 0   } , "chance": 0.19} ,
 
+    {"meshLevel": 3, "drop": {"name": "jaopca:item_dustapatite"              , "meta": 0   } , "chance": 1.0} ,
+    {"meshLevel": 3, "drop": {"name": "jaopca:item_dustapatite"              , "meta": 0   } , "chance": 1.0} ,
+    {"meshLevel": 3, "drop": {"name": "jaopca:item_dustapatite"              , "meta": 0   } , "chance": 0.5} ,
     {"meshLevel": 3, "drop": {"name": "appliedenergistics2:crystal_seed"     , "meta": 600 } , "chance": 0.08 } ,
-    {"meshLevel": 3, "drop": {"name": "forestry:apatite"                     , "meta": 0   } , "chance": 0.34} ,
-    {"meshLevel": 3, "drop": {"name": "mekanism:salt"                        , "meta": 0   } , "chance": 0.19} ,
     {"meshLevel": 3, "drop": {"name": "ic2:dust"                             , "meta": 9   } , "chance": 0.3 } ,
     {"meshLevel": 3, "drop": {"name": "exnihilocreatio:item_ore_aluminium"   , "meta": 0   } , "chance": 0.19} ,
     {"meshLevel": 3, "drop": {"name": "jaopca:item_piecelithium"             , "meta": 0   } , "chance": 0.11} ,
 
+    {"meshLevel": 4, "drop": {"name": "jaopca:item_dustapatite"              , "meta": 0   } , "chance": 1.0} ,
+    {"meshLevel": 4, "drop": {"name": "jaopca:item_dustapatite"              , "meta": 0   } , "chance": 1.0} ,
+    {"meshLevel": 4, "drop": {"name": "jaopca:item_dustapatite"              , "meta": 0   } , "chance": 1.0} ,
+    {"meshLevel": 4, "drop": {"name": "jaopca:item_dustapatite"              , "meta": 0   } , "chance": 0.5} ,
     {"meshLevel": 4, "drop": {"name": "appliedenergistics2:crystal_seed"     , "meta": 600 } , "chance": 0.15 } ,
-    {"meshLevel": 4, "drop": {"name": "forestry:apatite"                     , "meta": 0   } , "chance": 0.38 } ,
-    {"meshLevel": 4, "drop": {"name": "mekanism:salt"                        , "meta": 0   } , "chance": 0.34} ,
     {"meshLevel": 4, "drop": {"name": "ic2:dust"                             , "meta": 9   } , "chance": 0.34} ,
     {"meshLevel": 4, "drop": {"name": "exnihilocreatio:item_ore_aluminium"   , "meta": 0   } , "chance": 0.34} ,
     {"meshLevel": 4, "drop": {"name": "jaopca:item_piecelithium"             , "meta": 0   } , "chance": 0.23 }

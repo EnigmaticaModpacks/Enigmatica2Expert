@@ -240,3 +240,7 @@ craft.remake(<twilightforest:boss_spawner:5>, ["pretty",
 });
 
 #-------------------------------------------------------------------------
+
+# Alt from chicken
+scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:fierymetal> * 144, [<liquid:fiery_essence> * 250, <liquid:end_steel> * 144]);
+scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:lava> * 288,       [<liquid:fiery_essence> * 50,  <liquid:stone> * 288]);

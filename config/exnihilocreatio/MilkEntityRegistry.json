@@ -1,8 +1,14 @@
 [
-  {
-    "entityOnTop": "minecraft:cow",
-    "result": "milk",
-    "amount": 10,
-    "coolDown": 20
-  }
+  {"entityOnTop": "minecraft:cow", "result": "milk", "amount": 10, "coolDown": 20}
+  ,{"entityOnTop": "betteranimalsplus:jellyfish",    "result": "distwater",          "amount": 1000, "coolDown": 20}
+  ,{"entityOnTop": "emberroot:timberwolf",           "result": "tree_oil",           "amount":   10, "coolDown": 20}
+  ,{"entityOnTop": "emberroot:rainbow_golem",        "result": "construction_alloy", "amount":   10, "coolDown": 20}
+  ,{"entityOnTop": "excompressum:angry_chicken",     "result": "fiery_essence",      "amount":   10, "coolDown": 20}
+  ,{"entityOnTop": "emberroot:skeleton_frozen",      "result": "ice",                "amount":   10, "coolDown": 20}
+  ,{"entityOnTop": "betteranimalsplus:walrus",       "result": "lubricant",          "amount":   10, "coolDown": 20}
+  ,{"entityOnTop": "mekanism:robit",                 "result": "electronics",        "amount":   10, "coolDown": 20}
+  ,{"entityOnTop": "endreborn:watcher",              "result": "obsidian",           "amount":   40, "coolDown": 20}
+  ,{"entityOnTop": "betteranimalsplus:hirschgeist",  "result": "platinum",           "amount":   10, "coolDown": 20}
+  ,{"entityOnTop": "industrialforegoing:pink_slime", "result": "if.pink_slime",      "amount":   10, "coolDown": 20}
+  ,{"entityOnTop": "rats:neo_ratlantean",            "result": "crystal_matrix",     "amount":    1, "coolDown": 20}
 ]

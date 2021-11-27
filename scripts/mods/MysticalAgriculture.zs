@@ -200,6 +200,7 @@ function addTieredRecipe(
 # *======= Seeds Tier 1 =======*
 curr_tier = 1;
 addTieredRecipe(<mysticalagriculture:nature_seeds>,         [<mysticalagriculture:crafting:6>, <ore:ingotInferium>], null);
+addTieredRecipe(itemUtils.getItem("mysticalcreations:creosolite_seeds"), [utils.tryCatch(utils.get("openblocks:tank", 0, 1, {tank: {FluidName: "creosote", Amount: 24000}}), Bucket("creosote")),<ore:runeEarthB>], null);
 
 
 # *======= Seeds Tier 2 =======*
@@ -210,10 +211,10 @@ addTieredRecipe(<mysticalagriculture:copper_seeds>,         [<ore:blockCopper>,<
 addTieredRecipe(<mysticalagriculture:mystical_flower_seeds>,[<ore:manaDiamond>, <ore:manaPearl>, <mysticalagriculture:crafting:10>], null);
 addTieredRecipe(<mysticalagriculture:apatite_seeds>,        [<ore:blockApatite>,<ore:runeWaterB>], null);
 addTieredRecipe(<mysticalagriculture:coal_seeds>,           [<ore:blockCoal>,<ore:runeEarthB>], null);
-addTieredRecipe(itemUtils.getItem("mysticalcreations:creosolite_seeds"), [utils.tryCatch(utils.get("openblocks:tank", 0, 1, {tank: {FluidName: "creosote", Amount: 24000}}), Bucket("creosote")),<ore:runeEarthB>], null);
 addTieredRecipe(<mysticalagriculture:tin_seeds> ,           [<ore:blockTin> ,<ore:runeSummerB> ], null);
-addTieredRecipe(<mysticalagriculture:sky_stone_seeds> ,     [<appliedenergistics2:material:45>, <ore:runeSpringB>] , null);
+addTieredRecipe(<mysticalagriculture:sky_stone_seeds> ,     [<appliedenergistics2:material:45>, <ore:runeSummerB>] , null);
 addTieredRecipe(<mysticalagriculture:nether_seeds> ,        [<ore:blockNetherWart> ,<ore:runeAutumnB>], null);
+addTieredRecipe(itemUtils.getItem("mysticalcreations:cheese_seeds"), [<ore:cheeseWheels> ,<ore:runeSummerB>], null);
 
 
 # *======= Seeds Tier 3 =======*
@@ -233,7 +234,6 @@ addTieredRecipe(<mysticalagriculture:knightslime_seeds> ,   [<ore:blockKnightsli
 addTieredRecipe(<mysticalagriculture:steeleaf_seeds> ,      [<ore:blockSteel>, <ore:runeSpringB>] , null);
 addTieredRecipe(<mysticalagriculture:ironwood_seeds> ,      [<twilightforest:block_storage>, <ore:runeSummerB>] , null);
 addTieredRecipe(<mysticalagriculture:black_quartz_seeds> ,  [<ore:blockQuartzBlack> , <ore:runeAutumnB>], null);
-addTieredRecipe(itemUtils.getItem("mysticalcreations:cheese_seeds"), [<ore:cheeseWheels> ,<ore:runeSpringB>], null);
 addTieredRecipe(<mysticalagriculture:end_seeds>,            [<excompressum:compressed_block:10> ,<ore:runeWinterB>], null);
 
 # *======= Seeds Tier 4 =======*
@@ -646,3 +646,6 @@ craft.make(<quark:slime_bucket>, ["pretty",
   "T": <mysticalagriculture:slime_essence>, # Slime Essence
   "~": <minecraft:bucket>,                  # Bucket
 });
+
+# "Purification" or [Prosperity Shard Shard] into pure shards
+scripts.category.expire_in_block.set(<tconstruct:shard>.withTag({Material: "ma.prosperity"}),  {"biomesoplenty:blue_fire": <mysticalagriculture:crafting:5>});

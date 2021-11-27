@@ -92,10 +92,10 @@ ${filtered.join('\n')}`
 
 }*/
 
-# Total Furnace recipes registered: 925
+# Total Furnace recipes registered: 927
 # Filtered by JEI blacklist: 77
 # Filtered manuallly (antidupe): 14
-# Filtered by oredict: 200
+# Filtered by oredict: 201
 infinFurnace(utils.get("actuallyadditions:block_misc", 3), utils.get("actuallyadditions:item_misc", 5));
 ##infinFurnace(utils.get("actuallyadditions:item_dust", 3), utils.get("minecraft:emerald"));
 ##infinFurnace(utils.get("actuallyadditions:item_dust", 7), utils.get("actuallyadditions:item_misc", 5));
@@ -128,6 +128,7 @@ infinFurnace(utils.get("betteranimalsplus:pheasantraw"), utils.get("betteranimal
 infinFurnace(utils.get("betteranimalsplus:turkey_egg"), utils.get("betteranimalsplus:fried_egg"));
 infinFurnace(utils.get("betteranimalsplus:turkey_leg_raw"), utils.get("betteranimalsplus:turkey_leg_cooked"));
 infinFurnace(utils.get("betteranimalsplus:turkey_raw"), utils.get("betteranimalsplus:turkey_cooked"));
+infinFurnace(utils.get("betteranimalsplus:venisonraw"), utils.get("betteranimalsplus:venisoncooked"));
 ##infinFurnace(utils.get("bigreactors:dustblutonium"), utils.get("bigreactors:ingotblutonium"));
 ##infinFurnace(utils.get("bigreactors:dustcyanite"), utils.get("bigreactors:ingotcyanite"));
 ##infinFurnace(utils.get("bigreactors:dustludicrite"), utils.get("bigreactors:ingotludicrite"));
@@ -540,6 +541,7 @@ infinFurnace(utils.get("jaopca:item_dustalchtin"), utils.get("jaopca:item_dirtyg
 infinFurnace(utils.get("jaopca:item_dustalchtopaz"), utils.get("jaopca:item_dirtygemtopaz", 0, 48));
 infinFurnace(utils.get("jaopca:item_dustalchuranium"), utils.get("jaopca:item_dirtygemuranium", 0, 48));
 infinFurnace(utils.get("jaopca:item_dustalchyellorium"), utils.get("jaopca:item_dirtygemyellorium", 0, 48));
+##infinFurnace(utils.get("jaopca:item_dustapatite"), utils.get("forestry:apatite"));
 infinFurnace(utils.get("jaopca:item_rockychunkaluminium"), utils.get("jaopca:item_dirtygemaluminium", 0, 4));
 infinFurnace(utils.get("jaopca:item_rockychunkamber"), utils.get("jaopca:item_dirtygemamber", 0, 4));
 infinFurnace(utils.get("jaopca:item_rockychunkamethyst"), utils.get("jaopca:item_dirtygemamethyst", 0, 4));

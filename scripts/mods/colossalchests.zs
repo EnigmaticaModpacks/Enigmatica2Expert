@@ -41,12 +41,14 @@ for i, arr in chestIngrs {
   val prevWall = (i==0) ? <colossalchests:uncolossal_chest> : <colossalchests:chest_wall>.definition.makeStack(i - 1);
 
   # [Colossal Chest Core] from [Blasted Coal][+1]
-  recipes.addShapeless(<colossalchests:colossal_chest>.definition.makeStack(i), [
+  val core = <colossalchests:colossal_chest>.definition.makeStack(i);
+  recipes.remove(core);
+  recipes.addShapeless(core, [
     currWall, <contenttweaker:blasted_coal>, # Blasted Coal
   ]);
 
   if (i>0) {
-    recipes.addShapeless(<colossalchests:colossal_chest>.definition.makeStack(i), [
+    recipes.addShapeless(core, [
       <colossalchests:colossal_chest>.definition.makeStack(i - 1), primary
     ]);
   }

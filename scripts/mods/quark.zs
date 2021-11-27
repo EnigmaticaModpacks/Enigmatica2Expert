@@ -62,3 +62,6 @@ craft.make(<quark:backpack>, ["pretty",
 
 # Alt usage
 scripts.process.extract(<quark:glowcelium>, <thermalfoundation:material:2049>, "No Exceptions");
+
+# Turn Heart of diamond into Empowered Diamond with rat
+mods.rats.recipes.addGemcutterRatRecipe(<quark:diamond_heart>, <actuallyadditions:item_crystal_empowered:2>);

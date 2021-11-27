@@ -172,7 +172,7 @@ molten_spectre.register();
 val perfect_fuel = VanillaFactory.createFluid("perfect_fuel", 0xffcc00);
 // perfect_fuel.fillSound = <soundevent:block.note.snare>;
 perfect_fuel.material = <blockmaterial:lava>;
-perfect_fuel.luminosity = 20;
+perfect_fuel.luminosity = 15;
 perfect_fuel.viscosity = 8000;
 perfect_fuel.temperature= 10000;
 // perfect_fuel.stillLocation = "contenttweaker:fluids/perfect_fuel";
@@ -190,3 +190,14 @@ x.rarity = "rare";
 x.maxDamage = 9;
 x.glowing = true;
 x.register();
+
+# -------------------------------
+# electronics
+# -------------------------------
+val electronics = VanillaFactory.createFluid("electronics", 0x043015);
+electronics.material = <blockmaterial:lava>;
+electronics.viscosity = 8000;
+electronics.temperature= 3000;
+electronics.stillLocation = "contenttweaker:fluids/fluid";
+electronics.flowingLocation = "contenttweaker:fluids/fluid_flowing";
+electronics.register();

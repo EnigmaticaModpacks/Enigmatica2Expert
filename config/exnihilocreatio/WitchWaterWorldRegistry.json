@@ -5,9 +5,20 @@
     "minecraft:stone:1": 1,
     "minecraft:stone:3": 1
   },
-  "water": {
+  "petrotheum": {
     "minecraft:dirt": 1,
     "minecraft:dirt:2": 1,
     "minecraft:dirt:1": 1
+  },
+  "water": {
+    "minecraft:dirt:1": 1,
+    "biomesoplenty:dirt:8": 1,
+    "biomesoplenty:dirt:9": 1,
+    "biomesoplenty:dirt:10": 1
+  },
+  "fiery_essence": {
+    "exnihilocreatio:block_netherrack_crushed": 64,
+    "minecraft:netherrack": 10,
+    "netherendingores:block_nether_netherfish": 1
   }
 }

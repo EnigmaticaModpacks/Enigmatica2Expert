@@ -370,9 +370,11 @@ for item in [
 # Make Ferrous Trees better integrated
 furnace.remove(<*>, <extrautils2:ironwood_planks>);
 furnace.remove(<*>, <extrautils2:ironwood_planks:1>);
-scripts.process.melt(<extrautils2:ironwood_log:0>   , <liquid:iron> *  32, "No Exceptions");
+# Unburnt
+scripts.process.melt(<extrautils2:ironwood_log:0>   , <liquid:iron> *  16, "No Exceptions");
+scripts.process.melt(<extrautils2:ironwood_planks:0>, <liquid:iron> *  8, "No Exceptions");
+# Burnt
 scripts.process.melt(<extrautils2:ironwood_log:1>   , <liquid:iron> * 144, "No Exceptions");
-scripts.process.melt(<extrautils2:ironwood_planks:0>, <liquid:iron> *  16, "No Exceptions");
 scripts.process.melt(<extrautils2:ironwood_planks:1>, <liquid:iron> *  80, "No Exceptions");
 scripts.wrap.tconstruct.Casting.addTableRecipe(<extrautils2:ironwood_sapling>, <ore:treeSapling>, <liquid:iron>, 576, true);
 

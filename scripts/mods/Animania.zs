@@ -14,6 +14,9 @@ import mods.jaopca.OreEntry;
 #
 # ######################################################################
 
+# Buff from 100
+<animania:carving_knife>.maxDamage = 1000;
+
 #CheeseArray (yes, hashtag)
 for cheese in [
 	<animania:friesian_cheese_wheel>,
@@ -199,3 +202,10 @@ for output, ingrs in {
 } as IIngredient[][IItemStack] {
   mods.rustic.Condenser.addRecipe(output, ingrs, <scalinghealth:heartdust>, <tconstruct:edible:33>, <fluid:wine> * 1000, 40);
 }
+
+# Advanced cheese recipe
+scripts.processUtils.avdRockXmlRecipe("Crystallizer", [<ore:itemSalt>], [<fluid:milk_sheep>    * 500], [<animania:sheep_cheese_wheel>], null);
+scripts.processUtils.avdRockXmlRecipe("Crystallizer", [<ore:itemSalt>], [<fluid:milk_goat>     * 500], [<animania:goat_cheese_wheel>], null);
+scripts.processUtils.avdRockXmlRecipe("Crystallizer", [<ore:itemSalt>], [<fluid:milk_jersey>   * 500], [<animania:jersey_cheese_wheel>], null);
+scripts.processUtils.avdRockXmlRecipe("Crystallizer", [<ore:itemSalt>], [<fluid:milk_holstein> * 500], [<animania:holstein_cheese_wheel>], null);
+scripts.processUtils.avdRockXmlRecipe("Crystallizer", [<ore:itemSalt>], [<fluid:milk_friesian> * 500], [<animania:friesian_cheese_wheel>], null);

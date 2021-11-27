@@ -678,6 +678,6 @@ scripts.wrap.tconstruct.Casting.addBasinRecipe(<thermalfoundation:ore_fluid:1>, 
 
 # Early game alt
 /* [Blizz Rod]  */ scripts.wrap.tconstruct.Casting.addTableRecipe(<thermalfoundation:material:2048>, <mechanics:empty_rod:*>, <liquid:ice>, 2000, true);
-/* [Blitz Rod]  */ scripts.wrap.tconstruct.Casting.addTableRecipe(<thermalfoundation:material:2050>, <mechanics:empty_rod>, <liquid:ic2steam>, 2000, true);
-/* [Blitz Rod]  */ scripts.wrap.tconstruct.Casting.addTableRecipe(<thermalfoundation:material:2050>, <mechanics:empty_rod>, <liquid:steam>, 2000, true);
-/* [Basalz Rod] */ scripts.wrap.tconstruct.Casting.addTableRecipe(<thermalfoundation:material:2052>, <mechanics:empty_rod>.withTag({}), <liquid:sand>, 2000, true);
+/* [Blitz Rod]  */ scripts.wrap.tconstruct.Casting.addTableRecipe(<thermalfoundation:material:2050>, <mechanics:empty_rod:*>, <liquid:ic2steam>, 2000, true);
+/* [Blitz Rod]  */ scripts.wrap.tconstruct.Casting.addTableRecipe(<thermalfoundation:material:2050>, <mechanics:empty_rod:*>, <liquid:steam>, 2000, true);
+/* [Basalz Rod] */ scripts.wrap.tconstruct.Casting.addTableRecipe(<thermalfoundation:material:2052>, <mechanics:empty_rod:*>, <liquid:sand>, 2000, true);

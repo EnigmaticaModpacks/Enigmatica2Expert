@@ -220,6 +220,5 @@ val pebbleList = [
 for i, item in pebbleList {
 	if(i%2==0) continue;
 	val peb = pebbleList[i - 1];
-	recipes.addShapeless("Pebble x1 "~i, item    , [peb, peb, <ore:pebble>, <ore:pebble>]);
-	recipes.addShapeless("Pebble x2 "~i, item * 2, [peb, peb, peb, peb, <ore:pebble>, <ore:pebble>, <ore:pebble>, <ore:pebble>]);
+	recipes.addShaped("Pebble x1 "~i, item    , [[peb, peb], [<ore:pebble>, <ore:pebble>]]);
 }

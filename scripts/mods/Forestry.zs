@@ -255,3 +255,17 @@ recipes.addShapeless("Pipete clearing", <forestry:pipette>, [<forestry:pipette>]
 val RJ = <harvestcraft:royaljellyitem>; # Royal Jelly
 scripts.wrap.actuallyadditions.Empowerer.addRecipe(<forestry:royal_jelly>, <actuallyadditions:item_worm>, RJ, RJ, RJ, RJ, 250000, 200, [1.0, 1.0, 0.0]);
 scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<forestry:royal_jelly>, 1000000, 1000000, <actuallyadditions:item_worm>, [RJ, RJ, RJ, RJ]);
+
+# Dust -> Gem conversion
+furnace.addRecipe(<forestry:apatite>, <jaopca:item_dustapatite>);
+
+# [Portable Analyzer] from [Redstone][+2]
+mods.forestry.Carpenter.removeRecipe(<forestry:portable_alyzer>);
+craft.make(<forestry:portable_alyzer>, ["pretty",
+  "⌂ G ⌂",
+  "⌂ G ⌂",
+  "⌂ ♥ ⌂"], {
+  "⌂": <ic2:casing:3>,     # Iron Item Casing
+  "G": <ore:paneGlass>,    # Glass Pane
+  "♥": <ore:dustRedstone>, # Redstone
+});

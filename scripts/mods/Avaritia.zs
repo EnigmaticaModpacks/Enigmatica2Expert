@@ -150,7 +150,7 @@ scripts.wrap.extendedcrafting.TableCrafting.addShapeless(
     <betteranimalsplus:pheasantraw>,
     <betteranimalsplus:turkey_leg_raw>,
     <betteranimalsplus:turkey_raw>,
-    #<betteranimalsplus:venisonraw>,
+    <betteranimalsplus:venisonraw>,
     <harvestcraft:duckrawitem>,
     <harvestcraft:groundbeefitem>,
     <harvestcraft:groundchickenitem>,

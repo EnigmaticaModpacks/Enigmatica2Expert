@@ -3,6 +3,8 @@ import crafttweaker.item.IIngredient;
 import mods.ic2.ScrapBox;
 #modloaded ic2
 
+# Buff from 100
+<ic2:wrench>.maxDamage = 5000;
 
 # Hydrated Coal Dust recipe consumes containers that can store 1000mB + liquid, this fixes that
 	recipes.remove(<ic2:dust:3>);

@@ -604,3 +604,12 @@ for mobName, arr in {
 	]);
 }
  */
+
+# Molten Electronics casts
+scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:6> , <tconstruct:cast_custom:1>                                     , <liquid:electronics>, 16 * 1);
+scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:7> , <tconstruct:cast>.withTag({PartType: "tconstruct:shard"})      , <liquid:electronics>, 16 * 0.5);
+scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:8> , <tconstruct:cast_custom>                                       , <liquid:electronics>, 16 * 9);
+scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:9> , <tconstruct:cast>.withTag({PartType: "tconstruct:sign_head"})  , <liquid:electronics>, 16 * 27);
+scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:10>, <tconstruct:cast_custom:3>                                     , <liquid:electronics>, 16 * 9);
+scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:11>, <tconstruct:cast>.withTag({PartType: "tconstruct:hammer_head"}), <liquid:electronics>, 16 * 72);
+scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:5> , <tconstruct:cast_custom:4>                                     , <liquid:electronics>, 16 * 36);

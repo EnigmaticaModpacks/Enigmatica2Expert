@@ -433,9 +433,9 @@ for i, input in gemcutterList {
 
 # Add Rat on Arrow
 mods.rustic.Condenser.addRecipe(<rats:rat_arrow>,[
-  <scalinghealth:heartdust>,
-  <rats:rat_pelt>,
-], null, <minecraft:arrow>, <fluid:water> * 50, 40);
+  <ore:foodCheese>,
+  <ore:leather>,
+], null, <minecraft:arrow>, <fluid:water> * 500, 40);
 
 #---------------------------------
 # Rat Alts
