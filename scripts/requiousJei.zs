@@ -99,6 +99,33 @@ add_liquid_interaction(Bucket("petrotheum"), <minecraft:cobblestone:*>, <minecra
 add_liquid_interaction(Bucket("petrotheum"), <minecraft:stonebrick:*>, <minecraft:gravel>);
 add_liquid_interaction(Bucket("petrotheum"), <minecraft:mossy_cobblestone:*>, <minecraft:gravel>);
 
+
+/*Inject_js(
+_(loadJson("config/exnihilocreatio/WitchWaterWorldRegistry.json"))
+.map((t,liquid)=>Object.entries(t).map(([block,weight])=>
+  `add_liquid_interaction(Bucket("witchwater"), `+
+  `Bucket("${liquid}"), <${block.replace(':-1','')}>`+
+  `${weight<=1?'':' * '+Math.min(64,parseInt(weight))});`
+))
+.flatten()
+.value()
+)*/
+add_liquid_interaction(Bucket("witchwater"), Bucket("lava"), <minecraft:cobblestone>);
+add_liquid_interaction(Bucket("witchwater"), Bucket("lava"), <minecraft:stone:5>);
+add_liquid_interaction(Bucket("witchwater"), Bucket("lava"), <minecraft:stone:1>);
+add_liquid_interaction(Bucket("witchwater"), Bucket("lava"), <minecraft:stone:3>);
+add_liquid_interaction(Bucket("witchwater"), Bucket("petrotheum"), <minecraft:dirt>);
+add_liquid_interaction(Bucket("witchwater"), Bucket("petrotheum"), <minecraft:dirt:2>);
+add_liquid_interaction(Bucket("witchwater"), Bucket("petrotheum"), <minecraft:dirt:1>);
+add_liquid_interaction(Bucket("witchwater"), Bucket("water"), <minecraft:dirt:1>);
+add_liquid_interaction(Bucket("witchwater"), Bucket("water"), <biomesoplenty:dirt:8>);
+add_liquid_interaction(Bucket("witchwater"), Bucket("water"), <biomesoplenty:dirt:9>);
+add_liquid_interaction(Bucket("witchwater"), Bucket("water"), <biomesoplenty:dirt:10>);
+add_liquid_interaction(Bucket("witchwater"), Bucket("fiery_essence"), <exnihilocreatio:block_netherrack_crushed> * 64);
+add_liquid_interaction(Bucket("witchwater"), Bucket("fiery_essence"), <minecraft:netherrack> * 10);
+add_liquid_interaction(Bucket("witchwater"), Bucket("fiery_essence"), <netherendingores:block_nether_netherfish>);
+/**/
+
 // -----------------------------------------------------------------------
 // -----------------------------------------------------------------------
 x = <assembly:everflow_chalice>;
@@ -947,10 +974,10 @@ addChemthrower(<fluid:concrete>, null, <immersiveengineering:stone_decoration:9>
 // -----------------------------------------------------------------------
 // -----------------------------------------------------------------------
 x = <assembly:expire_in_block>;
+x.addJEICatalyst(<biomesoplenty:blue_fire>);
 x.addJEICatalyst(<cyclicmagic:fire_frost>);
 x.addJEICatalyst(<cyclicmagic:fire_dark>);
 x.addJEICatalyst(<enderio:item_cold_fire_igniter>.withTag({"enderio:famount": 1000}));
-x.addJEICatalyst(<biomesoplenty:jar_filled:1>);
 x.addJEICatalyst(<cyclicmagic:fire_starter>);
 x.addJEICatalyst(<cyclicmagic:ender_blaze>);
 x.setJEIDurationSlot(2,0,"duration", getVisSlots(5,1));
@@ -965,3 +992,46 @@ function add_expire_in_block(input as IIngredient, block as IItemStack, output a
     .requireDuration("duration", 20*60*5)
   );
 }
+
+
+// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+x = <assembly:barrel_milking>;
+x.addJEICatalyst(<exnihilocreatio:block_barrel0>);
+x.addJEICatalyst(<exnihilocreatio:block_barrel1>);
+x.setJEIItemSlot(0, 0, 'input0');
+x.setJEIFluidSlot(2, 0, 'fluid_out');
+x.setJEIDurationSlot(1,0,"duration", SlotVisual.arrowRight());
+
+function add_barrel_milking(input as IIngredient, output as ILiquidStack, duration as int) as void {
+  <assembly:barrel_milking>.addJEIRecipe(AssemblyRecipe.create(function(c) {
+      c.addFluidOutput('fluid_out', output);
+    })
+    .requireItem("input0", input)
+    .requireDuration("duration", max(1, duration))
+  );
+}
+
+
+/*Inject_js(
+loadJson("config/exnihilocreatio/MilkEntityRegistry.json")
+.map(o=>[
+  `add_barrel_milking(Soul("${o.entityOnTop}")`,
+  `, <liquid:${o.result}>`, ` * ${o.amount}`,
+  `, ${o.coolDown});`
+])
+)*/
+add_barrel_milking(Soul("minecraft:cow")                 , <liquid:milk>               * 10  , 20);
+add_barrel_milking(Soul("betteranimalsplus:jellyfish")   , <liquid:distwater>          * 1000, 20);
+add_barrel_milking(Soul("emberroot:timberwolf")          , <liquid:tree_oil>           * 10  , 20);
+add_barrel_milking(Soul("emberroot:rainbow_golem")       , <liquid:construction_alloy> * 10  , 20);
+add_barrel_milking(Soul("excompressum:angry_chicken")    , <liquid:fiery_essence>      * 10  , 20);
+add_barrel_milking(Soul("emberroot:skeleton_frozen")     , <liquid:ice>                * 10  , 20);
+add_barrel_milking(Soul("betteranimalsplus:walrus")      , <liquid:lubricant>          * 10  , 20);
+add_barrel_milking(Soul("mekanism:robit")                , <liquid:electronics>        * 10  , 20);
+add_barrel_milking(Soul("endreborn:watcher")             , <liquid:obsidian>           * 40  , 20);
+add_barrel_milking(Soul("betteranimalsplus:hirschgeist") , <liquid:platinum>           * 10  , 20);
+add_barrel_milking(Soul("industrialforegoing:pink_slime"), <liquid:if.pink_slime>      * 10  , 20);
+add_barrel_milking(Soul("rats:neo_ratlantean")           , <liquid:crystal_matrix>     * 1   , 20);
+
+/**/
