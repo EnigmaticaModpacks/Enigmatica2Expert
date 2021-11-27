@@ -24,6 +24,22 @@
 		],
 		"result": "deny"
 	},
+  {
+    "mob": "minecraft:enderman",
+		"dimension": 0,
+    "helditem": [
+			"20=excompressum:compressed_block@10",
+			"9=endreborn:block_wolframium_ore",
+			"8=netherendingores:ore_end_modded_1@1",
+			"7=netherendingores:ore_end_modded_1@3",
+			"6=netherendingores:ore_end_modded_1@8",
+			"5=endreborn:dragon_essence",
+			"4=netherendingores:ore_end_modded_1@5",
+			"3=netherendingores:ore_end_modded_1@11",
+			"2=netherendingores:ore_end_modded_1@6"
+		],
+    "random": 0.1
+  },
 	{
     "mob": "quark:frog",
     "mincount":"20",
@@ -33,5 +49,33 @@
     "mob": "quark:foxhound",
     "mincount":"20",
     "result": "deny"
-	}
+	},
+	{
+			"mob": "emberroot:dire_wolf",
+			"minlight": 7,
+			"result": "deny"
+	},
+
+	{"mob": "quark:stoneling","mincount": {"amount": 3},"result": "deny"},
+  {"mob": "quark:stoneling","block": "minecraft:stone","result": "allow"},
+  {"mob": "quark:stoneling","result": "deny"},
+
+	{"mob": "rats:rat","mincount": {"amount": 15},"result": "deny"},
+  {"mob": "rats:rat","block": "rats:garbage_pile","result": "allow"},
+
+	
+	{"dimension": 0, "mob": "endreborn:watcher","mincount": {"amount": 15},"result": "deny"},
+  {"dimension": 0, "mob": "endreborn:watcher", "maxlight": 7, "block": "ore:endstone","result": "allow"},
+  {"dimension": 0, "mob": "endreborn:watcher", "result": "deny"},
+
+	{"mob": "endreborn:endguard","mincount": {"amount": 5},"result": "deny"},
+  {"mob": "endreborn:endguard", "maxlight": 7, "block": [
+		"minecraft:purpur_block",
+		"minecraft:purpur_pillar",
+		"chisel:purpur",
+		"chisel:purpur2",
+		"endreborn:block_purpur_lamp",
+		"endreborn:block_rune"
+	],"result": "allow"},
+  {"mob": "endreborn:endguard", "result": "deny"}
 ]

@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "mobs": [
+      {
+        "mob": "rats:rat",
+        "weight": 5,
+        "groupcountmin": 1,
+        "groupcountmax": 3
+      }
+    ]
+  },
+  {
+    "dimension": 0,
+    "mobs": [
+      {
+        "mob": "endreborn:watcher",
+        "weight": 3,
+        "groupcountmin": 1,
+        "groupcountmax": 2
+      }
+    ]
+  },
+  {
+    "dimension": 0,
+    "mobs": [
+      {
+        "mob": "endreborn:endguard",
+        "weight": 3,
+        "groupcountmin": 1,
+        "groupcountmax": 2
+      }
+    ]
+  }
+]
