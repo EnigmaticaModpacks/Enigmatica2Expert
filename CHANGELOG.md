@@ -1,6 +1,16 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
 
+# v0.41.1
+
+
+
+## ✏️ **Recipes**
+  - Fix Molten Electronics name and fix JEI crash
+
+
+
+
 # v0.41.0
 
 
