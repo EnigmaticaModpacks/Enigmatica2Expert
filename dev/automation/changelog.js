@@ -25,7 +25,12 @@ import _ from 'lodash'
 import replace_in_file from 'replace-in-file'
 import { execSync, exec as _exec } from 'child_process'
 const exec = promisify(_exec)
+import yargs from 'yargs'
 
+const argv = yargs(process.argv.slice(2))
+  .alias('n', 'next')
+  .describe('n', 'Next version')
+  .argv
 
 import { URL, fileURLToPath  } from 'url' // @ts-ignore
 function relative(relPath) { return fileURLToPath(new URL(relPath, import.meta.url)) }
@@ -64,7 +69,7 @@ export async function init(h=defaultHelper) {
   const version = execSync('git describe --tags --abbrev=0').toString().trim()
 
   // Try to bump version
-  const nextVersion = bumpVersion(version)
+  const nextVersion = argv['next'] ?? bumpVersion(version)
   await h.begin('Version ' + version + ' -> ' + nextVersion + ' ')
 
   /** @type {string[]} */

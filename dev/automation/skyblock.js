@@ -25,6 +25,9 @@ export async function init(h=defaultHelper) {
     ],
     'config/tconstruct.cfg': [
       {from: /(B:generateSlimeIslands=)\w+/g, to:'$1false'},
+    ],
+    'config/ice_and_fire.cfg': [
+      {from: /(B:"Generate Dragon Skeletons"=)\w+/g, to:'$1false'},
     ]
   }
 
