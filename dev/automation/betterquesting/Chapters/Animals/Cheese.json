@@ -6,12 +6,14 @@
       "id:3": 949,
       "sizeX:3": 24,
       "sizeY:3": 24,
-      "x:3": -168,
-      "y:3": -34
+      "x:3": -132,
+      "y:3": -8
     }
   },
   "_data": {
-    "preRequisites:11": [],
+    "preRequisites:11": [
+      718
+    ],
     "properties:10": {
       "betterquesting:10": {
         "autoclaim:1": 0,

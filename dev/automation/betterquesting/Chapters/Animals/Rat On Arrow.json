@@ -11,7 +11,9 @@
     }
   },
   "_data": {
-    "preRequisites:11": [],
+    "preRequisites:11": [
+      949
+    ],
     "properties:10": {
       "betterquesting:10": {
         "autoclaim:1": 0,

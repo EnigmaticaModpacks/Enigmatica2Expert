@@ -63,7 +63,7 @@
             "id:8": "tconstruct:excavator_head",
             "OreDict:8": "",
             "tag:10": {
-              "Material:8": "emerald_plustic"
+              "Material:8": "nagascale"
             }
           },
           "2:10": {
@@ -72,7 +72,7 @@
             "id:8": "tconstruct:excavator_head",
             "OreDict:8": "",
             "tag:10": {
-              "Material:8": "litherite"
+              "Material:8": "boron_nitride"
             }
           }
         },
