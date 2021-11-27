@@ -114,6 +114,7 @@ Liquids that should have more uses:
 - [x] ✏️ Ferrous - less, Ironberries - more
 - [x] ✏️ Add rat in market recipe
 - [x] ✏️ Add Fast cheese wheels
+- [ ] ✏️ [Robit] Cheaper
 - [ ] ✏️ Add [Electronics] casting
 - [ ] ✏️ Buff crops. Needed: Osmium, Black Quartz, Platinum, Celestial Crystal. Add usage for Weed
 - [x] ✏️ `Uranium`, `Apatite`, `Copper`, `Tin` get other ways in skyblock
