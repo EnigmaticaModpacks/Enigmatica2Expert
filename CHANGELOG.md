@@ -1,6 +1,102 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
 
+# v0.41.0
+
+
+
+## 🟡 Updated Mods
+
+- **Zen Utils**
+- **Minor Integrations and Additions (MIA)**
+- **SneedASM**
+- **Athenaeum**
+- **Collective (Forge)**
+- **Immersive Technology**
+- **CreativeCore**
+- **LittleTiles**
+- **Thaumic Augmentation**
+
+
+## [> Mods updates detailed.](changelogs/CHANGELOG_MODS_v0.41.0.md)
+
+
+## ✏️ **Recipes**
+  - ### 🖉 **New Recipes**
+    - Every **Dirty dust** -> **Dust** in ![](https://git.io/JmVeA "Fluid Tank")
+    - ![](https://git.io/JcbbH "Cheese Wheel (Goat)")![](https://git.io/JcbbX "Cheese Wheel (Holstein)")![](https://git.io/Jcbbd "Cheese Wheel (Jersey)")![](https://git.io/JcbbA "Cheese Wheel (Sheep)")![](https://git.io/Jcbb6 "Cheese Wheel (Friesian)") in ![](https://git.io/JGGjS "Crystallizer")
+    - ![](https://git.io/JMnWJ "Heart of Diamond") -> ![](https://git.io/JmVuJ "Empowered Diamatine Crystal")
+    - This Fluids now can be "milked" from different mobs:
+      > ![](https://git.io/JMnWO "Distilled Water")
+      > ![](https://git.io/JMnWs "Tree Oil")
+      > ![](https://git.io/JMnWC "Molten Iron Alloy")
+      > ![](https://git.io/JMnWI "Fiery Essence")
+      > ![](https://git.io/JXrMC "Crushed Ice")
+      > ![](https://git.io/JMnWf "Lubricant")
+      > ![](https://git.io/JMnWU "Electronics Assembler")
+      > ![](https://git.io/JMnWG "Molten Obsidian")
+      > ![](https://git.io/JMnWq "Molten Platinum")
+      > ![](https://git.io/JMnWZ "Pink Slime")
+      > ![](https://git.io/JMnCh "Amorphous Crystal Matrix")
+    - ![](https://git.io/JMnCj "Uranium Ore Piece")
+      ![](https://git.io/JMnWk "Dirty Copper Dust")
+      ![](https://git.io/JMnWe "Dirty Tin Dust")
+      ![](https://git.io/JMnWY "Apatite Dust")
+      ![](https://git.io/JMnWL "Spawn Rat")
+      ![](https://git.io/JXrXU "Molten Fiery")
+      ![](https://git.io/Jz0VY "Lava")
+
+  - ### ✐ **Cheaper**
+    - ![](https://git.io/JMnWT "Tiny Pile of Osmium Dust") and ![](https://git.io/JMnWl "Tiny Pile of Black Quartz Dust") from Prime wool x4 more
+    - ![](https://git.io/JMnWm "Portable Analyzer")
+      ![](https://git.io/JznPk "Rat on Arrow")
+
+  - ### ✏ **Misc Changes**
+    - ![](https://git.io/JMnW3 "Witchwater") changed interactions. No more cheap dirt. See JEI.
+    - ![](https://git.io/JMnWt "Carving Knife") buff durability x10
+    - ![](https://git.io/JMnWv "Raw Venison") Return to JEI and as drop to be able spawn **Hirschgeist**
+    - Fix Pebbles to blocks craftings (was wrong output with different types)
+    - Nerf ![](https://git.io/JgeGF "Ferrous-Juniper Log") but buff ![](https://git.io/J3p88 "Ironberries")
+    - ![](https://git.io/JMnWn "Wrench") buff durability to 5000
+    - Right ingredients for ![](https://git.io/JcNYb "Blizz Rod") and others, Fix #18
+    - [Molten Electronics] New liquid and its casts
+    - Remove Shulker Boxes from **Chest** oredict
+
+
+
+## 🔵 **Mods**
+  - updates
+  - ### 🏪 **Requious Fracto**: JEI for **Barrel Milking** and more ![](https://git.io/JMnW3 "Witchwater")
+
+
+
+## 🔄 **Misc Changes**
+  - Disable Analytics and Update check
+  - Add RF usage for **Integrated Terminals** and **Integrated Crafting**
+  - Player would not be buffed with Haste each time enter Skyblock (only first)
+  - Add Nutritions not ![](https://git.io/JMnWW "Assorted Vegetables")
+  - Reduce Skull dropping from players
+  - Some Compressed Blocks mining level higher
+  - Buff ![](https://git.io/JXrMB "Pitiful Fuel Generator") x2
+  - Buff ![](https://git.io/JMnWc "Hover Boots") stats
+  - ### 🧩 **Configs**: Rat, Watcher, End Guard and other new spawning rules
+      > - **Enderman** now 10% of time carry some End Stone or End Ores blocks
+      > - **Dire Wolfs** now spawning only at 7 and less light level
+      > - **Stonelings** x10 times less spawn
+      > - **Rats** now can spawn on ![](https://git.io/JzVqO "Garbage Pile")
+      > - **Watcher** now can spawn in Overworld, but only on ![](https://git.io/JLhh0 "End Stone")
+      > - **End Guard** can spawn in any dimension but only on ![](https://git.io/JMnBq "Purpur Block")
+      > - **Golems** not shoot hostile mobs anymore
+
+  - ### 📖 **Quest Book**: Quests updates:
+      > - Remove all Coins from Loot Chests
+      > - Other quest changes
+
+
+
+
+
+
 # v0.40.1
 
 
