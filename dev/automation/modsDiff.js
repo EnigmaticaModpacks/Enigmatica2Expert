@@ -10,7 +10,7 @@
 import { getMod } from 'mc-curseforge-api'
 import { injectInFile, loadJson, defaultHelper } from '../lib/utils.js'
 import _ from 'lodash'
-import { getModLoadTimeTyples } from './benchmark.js'
+import { getModLoadTimeTuples } from './benchmark.js'
 
 export function getModsIds(json_Path_A, json_Path_B) {
 
@@ -63,14 +63,21 @@ const exceptionsList = [
   'CraftTweaker'
 ]
 
-function getSquare(modName) {
+/**
+ * @param {string} modName
+ * @param {string} fileName
+ */
+function getSquare(modName, fileName) {
   if(exceptionsList.includes(modName)) return '🟪'
   
-  const loadTime = getModLoadTimeTyples().find(([m])=>m===modName)?.[1]
+  const loadTime = 
+    getModLoadTimeTuples().find(  ([m])=>m===modName)?.[1] ??
+    getModLoadTimeTuples().find(([,,m])=>m===fileName)?.[1] ??
+    getModLoadTimeTuples().find(  ([m])=>m.startsWith(modName))?.[1]
 
   if (isNaN(loadTime)) return '🟫'
 
-  const rate = loadTime / _.sumBy(getModLoadTimeTyples(), '1')
+  const rate = loadTime / _.sumBy(getModLoadTimeTuples(), '1')
 
   if(rate < 0.0001) return '🟩'
   if(rate < 0.001 ) return '🟨'
@@ -78,12 +85,18 @@ function getSquare(modName) {
   if(rate >=0.01  ) return '🟥'
 }
 
+/**
+ * @param {InstalledAddon} mcAddon
+ * @param {Mod} curseAddon
+ */
 export function formatRow(mcAddon, curseAddon, options={}) {
   const name = curseAddon.name.trim()
+  const fileName = mcAddon?.installedFile?.FileNameOnDisk
+  const logo = getLogo(curseAddon.logo) ?? ''
   return (options.asList?'- ':'') + 
-  (options.noIcon?'':`<img src="${getLogo(curseAddon.logo)}" width="50"> | ${getSquare(name)} `)+
-  `[**${name}**](${curseAddon.url}) `+
-  `<sup>${options.isUpdated?' 🟡 ':''}<sub>${mcAddon?.installedFile?.FileNameOnDisk}</sub></sup>`+
+  (options.noIcon?'':`<img src="${logo}"${' '.repeat(Math.max(1, 93 - logo.length))}width="50"> | ${getSquare(name, fileName)} `)+
+  `${' '.repeat(Math.max(0, 38 - name.length))}[**${name}**](${curseAddon.url})${' '.repeat(Math.max(1, 75 - curseAddon.url.length))}`+
+  `<sup>${options.isUpdated?' 🟡 ':''}<sub>${fileName}</sub></sup>`+
   (options.noSummary?'':` <br> ${curseAddon.summary}`)+' | '
 }
 

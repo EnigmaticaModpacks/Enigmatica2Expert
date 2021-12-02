@@ -8,10 +8,11 @@
 //@ts-check
 
 import replace_in_file from 'replace-in-file'
-import { injectInFile, loadText, setBlockDropsList, defaultHelper } from '../lib/utils.js'
+import { injectInFile, loadText, setBlockDropsList, defaultHelper, loadJson, saveObjAsJson } from '../lib/utils.js'
 import del from 'del'
 
 import yargs from 'yargs'
+import _ from 'lodash'
 const argv = yargs(process.argv.slice(2))
   .alias('k', 'keep-cache').describe('k', 'Not delete cached files')
   .argv
@@ -148,6 +149,60 @@ export async function init(h=defaultHelper, options = argv) {
       {stack:'actuallyadditions:item_misc:20', luck: [1,3]},
     ]}
   ])
+
+  //###############################################################################
+  //###############################################################################
+  //###############################################################################
+
+  /*
+
+    Heavy Sieve automatically recipes
+
+  */
+  const blocksToCopy = [
+    ['exnihilocreatio:block_andesite_crushed', 'contenttweaker:compressed_crushed_andesite'],
+    ['exnihilocreatio:block_diorite_crushed' , 'contenttweaker:compressed_crushed_diorite'],
+    ['exnihilocreatio:block_granite_crushed' , 'contenttweaker:compressed_crushed_granite'],
+    ['exnihilocreatio:block_skystone_crushed', 'contenttweaker:compressed_crushed_skystone'],
+    ['enderio:block_infinity', 'enderio:block_infinity:1'],
+    ['ore:blockGunpowder', 'additionalcompression:dustgunpowder_compressed:1'],
+  ]
+  const sieveRegistry = loadJson('config/exnihilocreatio/SieveRegistry.json')
+  const heavySievePath = 'config/ExCompressum/HeavySieve.json'
+  const heavySieve = loadJson(heavySievePath)
+  blocksToCopy.forEach(([normal, compressed]) => {
+    const normEntry = sieveRegistry[normal] ?? sieveRegistry[normal+':0']
+    if(!normEntry) {
+      h.warn('Cant add Heavy Sieve recipe: Cant find normal entry: '+ normal)
+      return;
+    }
+    const entries = heavySieve.custom.entries
+    const [source, id, _meta] = compressed.split(':')
+    const shortand = source+':'+id
+    const meta = parseInt(_meta || '0')
+    const index = entries.findIndex(o=>o.name == shortand && o.metadata == meta)
+    const found = entries[index]
+
+    const entry = {...(found ?? {}), ...{
+      name: shortand,
+      metadata: meta,
+      type: "list",
+      rewards: normEntry.map(o=>({
+        meshLevel: o.meshLevel,
+        name: o.drop.name,
+        metadata: o.drop.meta,
+        tag: o.drop.tag,
+        count: 1,
+        luck: 0.0,
+        chance: o.chance,
+        rolls: 1,
+      }))
+    }}
+
+    if(index != -1) entries[index] = entry
+    else entries.push(entry)
+  })
+  saveObjAsJson(heavySieve, heavySievePath)
 
   //###############################################################################
   //###############################################################################

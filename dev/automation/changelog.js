@@ -16,11 +16,12 @@
 ╚═╝╚═╝     ╚═╝╚═╝      ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝
 */
 
-import { writeFileSync } from 'fs'
+import fs_extra from 'fs-extra'
+const { unlink, writeFileSync } = fs_extra
 import { promisify } from 'util'
 import { getModsIds, formatRow } from './modsDiff.js'
 import { getMod } from 'mc-curseforge-api'
-import { loadText, escapeRegex, loadJson, saveObjAsJson, defaultHelper } from '../lib/utils.js'
+import { loadText, escapeRegex, loadJson, saveObjAsJson, defaultHelper, saveText } from '../lib/utils.js'
 import _ from 'lodash'
 import replace_in_file from 'replace-in-file'
 import { execSync, exec as _exec } from 'child_process'
@@ -66,23 +67,39 @@ export async function init(h=defaultHelper) {
   await h.begin('Determine version')
 
   // Get last tagged version
-  const version = execSync('git describe --tags --abbrev=0').toString().trim()
+  const old_version = execSync('git describe --tags --abbrev=0').toString().trim()
+
+  /** @type {number} */
+  let old_versionCode
+  try {
+    old_versionCode = JSON.parse(
+      execSync(`git show tags/${old_version}:dev/version.json`).toString().trim()
+    )?.versionCode
+  } catch (error) {
+    old_versionCode = 100
+  }
+  
 
   // Try to bump version
-  const nextVersion = argv['next'] ?? bumpVersion(version)
-  await h.begin('Version ' + version + ' -> ' + nextVersion + ' ')
+  /** @type {string} */
+  const nextVersion = argv['next'] ?? bumpVersion(old_version)
+  await h.begin('Version ' + old_version + ' -> ' + nextVersion + ' ')
+
+  // Change version in files
+  bumpVersionInFiles(nextVersion, old_versionCode + 1)
+
 
   /** @type {string[]} */
   const changelogLines = []
 
   // Extract old minecraftinstance.json (from latest assigned tag)
-  execSync(`git show tags/${version}:minecraftinstance.json > ${minecraftinstance_old}`)
+  execSync(`git show tags/${old_version}:minecraftinstance.json > ${minecraftinstance_old}`)
 
 
-  const modChangesTxt = await getModChanges(version, nextVersion, h)
+  const modChangesTxt = await getModChanges(old_version, nextVersion, h)
   changelogLines.push(...modChangesTxt.split('\n'))
   
-  const commitMap = getCommitMap(version)
+  const commitMap = getCommitMap(old_version)
 
   const changelogStructure = parseChangelogStructure(
     loadText(relative('data/changelog_structure.md'))
@@ -182,7 +199,7 @@ export async function init(h=defaultHelper) {
 
   await h.begin('Writing in file')
   changelogLines.push(...commitLogChanges, '\n\n')
-  const fullChLogPath = relative('data/~CHANGELOG_LATEST.md')
+  const fullChLogPath = 'changelogs/CHANGELOG_LATEST.md'
   writeFileSync(fullChLogPath, [`# ${nextVersion}\n\n`, ...changelogLines].join('\n'))
 
   // Automatically assign icons
@@ -271,25 +288,38 @@ async function getModChanges(version, nextVersion, h=defaultHelper) {
   
   await runProcess(chgenCommand, data => {
     const projectID = data.match(/^.*projectID=(\d+)/)?.[1]
-    h.begin(`Retrieving changelogs ${projectID} ${curseResult.updated.find(m=>m.id==projectID)?.name ?? '[unknown mod]'}`)
+    h.begin(`Retrieving changelogs ${curseResult.updated.find(m=>m.id==projectID)?.name ?? '[unknown mod]'}`)
   })
 
-  // Make changelogs even better
-  replace_in_file.sync({
-    files: nextModsChangelogs,
-    from: /(?<prefix>^####.*$)(?<body>([\s\S\n](?!\n##)){1,})/gmi,
-    to: (/** @type {any[]} */ ...args)=>{
-      /** @type {{[key:string]:string}} */
-      const groups = args[args.length - 2]
-      return `${groups.prefix}${groups.body.replace(/\n/g, '\n  > ')}`
-    },
-  })
-
-  result += `\n## [> Mods updates detailed.](${nextModsChangelogs})\n\n`
+  // Remove file if there is no changes at all
+  if(loadText(nextModsChangelogs).split('\n').length <= 4) {
+    unlink(nextModsChangelogs)
+  } else {
+    result += makeModsChangelogBetter(nextModsChangelogs)
+  }
 
   return result
 }
 
+/**
+ * @param {string} nextModsChangelogs
+ */
+function makeModsChangelogBetter(nextModsChangelogs) {
+  const newChangelogText = loadText(nextModsChangelogs)
+  .replace(/(?<prefix>^####.*$)(?<body>([\s\S\n](?!\n##)){1,})/gmi,
+  (/** @type {any[]} */ ...args)=>{
+    /** @type {{[key:string]:string}} */
+    const groups = args.pop()
+    return `${groups.prefix}${groups.body.replace(/\n/g, '\n  > ')}`
+  })
+  .replace(/^## (Added|Removed)[\s\n]+(\*\s[^\n]+\n)+/gmi, '')
+
+  saveText(newChangelogText, nextModsChangelogs)
+  
+  return `\n## [> Mods updates detailed.](${nextModsChangelogs})\n\n`
+}
+
+let forgeVersion
 function generateManifest(mcinstancePath, version, manifestPostfix='') {
   /** @type {import('./modsDiff.js').InstalledAddon[]} */
   const installedAddons = loadJson(mcinstancePath).installedAddons
@@ -298,7 +328,7 @@ function generateManifest(mcinstancePath, version, manifestPostfix='') {
     minecraft: {
       version: '1.12.2',
       modLoaders: [{
-          id: 'forge-14.23.5.2847',
+          id: forgeVersion ??= `forge-${loadText('logs/debug.log').match(/Forge Mod Loader version ([^\s]+) for Minecraft 1.12.2 loading/)[1]}`,
           primary: true
       }]
     },
@@ -312,7 +342,7 @@ function generateManifest(mcinstancePath, version, manifestPostfix='') {
       projectID: a.addonID,
       fileID: a.installedFile?.id,
       required: true,
-    }))
+    })).sort((a,b)=>a.projectID-b.projectID)
   }
 
   saveObjAsJson(
@@ -551,4 +581,22 @@ function runProcess(command, onStdOut) {
   const promise = exec(command)
   promise.child.stdout.on('data', onStdOut)
   return promise
+}
+
+/**
+ * @param {string} nextVersion
+ * @param {number} nextVersionCode
+ */
+function bumpVersionInFiles(nextVersion, nextVersionCode) {
+  replace_in_file.sync({
+    files: 'config/versioner.cfg',
+    from: [/(:versionName=).+/, /(:versionCode=).+/],
+    to: ['$1'+nextVersion, '$1'+nextVersionCode]
+  })
+  
+  const version_json_path = 'dev/version.json'
+  const version_json = loadJson(version_json_path)
+  version_json.versionName = nextVersion
+  version_json.versionCode = nextVersionCode
+  saveObjAsJson(version_json, version_json_path)
 }

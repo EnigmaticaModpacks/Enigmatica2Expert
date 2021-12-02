@@ -45,7 +45,6 @@ const automationOrder = [
   'dev/automation/misc.js',               // 5304
   'dev/Patchouli/Patchouli.js',           // 5321
   'dev/automation/EvenBetterQuesting.js', // 5892
-  'dev/automation/changelog.js',          // 5936
   'dev/automation/benchmark.js',          // 5956
   'dev/TCon/tweakerconstruct.js',         // 6883
   'dev/automation/modsDiff.js',           // 16091

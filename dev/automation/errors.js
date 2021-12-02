@@ -251,6 +251,7 @@ const ignore = [
   /\[Client thread\/WARN\] \[org\.dimdev\.utils\.ModIdentifier\]: Failed to identify sun\.reflect\.GeneratedMethodAccessor13/, // VanillaFix warn
   /\[Finalizer\/WARN\] \[LoliASM\]: Clearing LoliStringPool 1/, // Known https://github.com/LoliKingdom/LoliASM/issues/51
   /\[main\/WARN\] \[ModDirector\/ForgeLateLoader\[Launchwrapper\]\]: Failed to find deobf tweaker/, // Reported: https://github.com/Janrupf/mod-director/issues/22
+  /\[Client thread\/WARN\] \[FML\]: \[Ping!\] Highlight color is invalid\. Please fix your config\./, // Reported https://github.com/elifoster/Ping/issues/30
 ]
 
 

@@ -105,7 +105,7 @@ export async function init(h=defaultHelper) {
         const evalStr = `(async()=>{return ${cmd.command}})()`
         injectValue ||= await eval(evalStr)
       } catch (error) {
-        return h.error('\nComment block Error.\nFile: '+cmd.filePath+':'+cmd.line, '\nCapture:', cmd.capture, error)
+        return h.error('\nComment block Error.\nFile: '+cmd.filePath+':'+cmd.line, '\nCapture:', cmd.capture, '\n\n', error)
       }
     }
 

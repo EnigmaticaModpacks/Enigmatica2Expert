@@ -1,2 +1,29 @@
 [main/ERROR] [mixin]: Mixin config mixins.mixincompat.json does not specify "minVersion" property
 [main/WARN] [mixin]: Reference map 'mixins.mixincompat.refmap.json' for mixins.mixincompat.json could not be read. If this is a development environment you can ignore this message
+[Client thread/ERROR] [FML]: There was a problem reading the entry META-INF/versions/9/module-info.class in the jar D:\mc_client\Instances\Enigmatica2Expert - Extended\mods\spark-forge.jar - probably a corrupt zip
+[Client thread/WARN] [FML]: Zip file spark-forge.jar failed to read properly, it will be ignored
+[Client thread/WARN] [CustomLoadingScreen]: [debug]   - Failed to open stream as class java.io.FileNotFoundException:missingno
+[Client thread/WARN] [CustomLoadingScreen]: [debug]   - Failed to open stream as class java.io.FileNotFoundException:minecraft:missingno
+[Client thread/WARN] [CustomLoadingScreen]: [debug]   - Failed to open stream as class java.io.FileNotFoundException:missingno
+[Client thread/WARN] [CustomLoadingScreen]: [debug]   - Failed to open stream as class java.io.FileNotFoundException:minecraft:missingno
+[Client thread/WARN] [CustomLoadingScreen]: [debug]   - Failed to open stream as class java.io.FileNotFoundException:missingno
+[Client thread/WARN] [CustomLoadingScreen]: [debug]   - Failed to open stream as class java.io.FileNotFoundException:minecraft:missingno
+[Client thread/WARN] [CustomLoadingScreen]: [debug]   - Failed to open stream as class java.io.FileNotFoundException:missingno
+[Client thread/WARN] [CustomLoadingScreen]: [debug]   - Failed to open stream as class java.io.FileNotFoundException:minecraft:missingno
+[Client thread/WARN] [CustomLoadingScreen]: [debug]   - Failed to open stream as class java.io.FileNotFoundException:missingno
+[Client thread/WARN] [CustomLoadingScreen]: [debug]   - Failed to open stream as class java.io.FileNotFoundException:minecraft:missingno
+[Placebo Patreon Loader/ERROR] [placebo]: Exception loading patreon data!
+[ThaumicSpeedup/AspectThread-0/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.dirt@32767 in void beacon registration; this can result in invalid result blocks
+[ThaumicSpeedup/AspectThread-0/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.hellrock@32767 in void beacon registration; this can result in invalid result blocks
+[ThaumicSpeedup/AspectThread-0/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.obsidian@32767 in void beacon registration; this can result in invalid result blocks
+[ThaumicSpeedup/AspectThread-0/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.vine@32767 in void beacon registration; this can result in invalid result blocks
+[ThaumicSpeedup/AspectThread-0/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.tconstruct.slime_vine_blue@32767 in void beacon registration; this can result in invalid result blocks
+[ThaumicSpeedup/AspectThread-0/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.tconstruct.slime_vine_blue_mid@32767 in void beacon registration; this can result in invalid result blocks
+[ThaumicSpeedup/AspectThread-0/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.tconstruct.slime_vine_blue_end@32767 in void beacon registration; this can result in invalid result blocks
+[ThaumicSpeedup/AspectThread-0/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.tconstruct.slime_vine_purple@32767 in void beacon registration; this can result in invalid result blocks
+[ThaumicSpeedup/AspectThread-0/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.tconstruct.slime_vine_purple_mid@32767 in void beacon registration; this can result in invalid result blocks
+[ThaumicSpeedup/AspectThread-0/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.tconstruct.slime_vine_purple_end@32767 in void beacon registration; this can result in invalid result blocks
+[ThaumicSpeedup/AspectThread-0/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.cactus@32767 in void beacon registration; this can result in invalid result blocks
+[Client thread/ERROR] [net.minecraft.client.Minecraft]: ########## GL ERROR ##########
+[Client thread/ERROR] [net.minecraft.client.Minecraft]: @ Post startup
+[Client thread/ERROR] [net.minecraft.client.Minecraft]: 1280: Invalid enum

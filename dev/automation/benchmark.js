@@ -40,18 +40,17 @@ ModIdMapping - `
 const chart_obj = {}
 
 /**
- * @type {Array<[string, number]>}
+ * @type {Array<[modName: string, loadTime: number, fileName: string]>}
  */
 let mod_loadTime_typles
-function getModLoadTimeTyples() {
+export function getModLoadTimeTuples() {
   if(mod_loadTime_typles) return mod_loadTime_typles
 
   const debug_log = loadText('logs/debug.log')
 
   const fml_steps_rgx = `(${fml_steps.map(l=>escapeRegex(l)).join('|')})`
   const fullSearchRgx = new RegExp(
-    escapeRegex('[Client thread/DEBUG] [FML]: Bar Step: ') + fml_steps_rgx + '(.+) took (\\d+.\\d+)s'
-    , 'gmi'
+    escapeRegex('[Client thread/DEBUG] [FML]: Bar Step: ') + fml_steps_rgx + '(.+) took (\\d+.\\d+)s', 'gmi'
   )
   for (const match of debug_log.matchAll(fullSearchRgx)) {
     const [, step, mod, time] = match
@@ -62,10 +61,18 @@ function getModLoadTimeTyples() {
   const chart_arr = Object.entries(chart_obj)
   chart_arr.sort(([,a],[,b])=>_.sum(b)-_.sum(a))
 
-  return mod_loadTime_typles = chart_arr.map(([modName, steps])=>[modName, _.sum(steps)])
+  // [Client thread/DEBUG] [FML]: 	ironchest(Iron Chest:1.12.2-7.0.67.844): ironchest-1.12.2-7.0.72.847.jar (required-after:forge@[14.21.0.2359,))
+  // Get file for every mod
+  /** @type {{[modName: string]: string}} */
+  const mod_fileNames = {}
+  for (const {groups} of debug_log.matchAll(
+    /\[Client thread\/DEBUG\] \[FML\]: 	[^(]+\((?<modName>.+):[^)]+\): (?<fileName>.+?\.jar) \(.*\)/gmi)
+  ) {
+    mod_fileNames[groups.modName] = groups.fileName
+  }
+
+  return mod_loadTime_typles = chart_arr.map(([modName, steps])=>[modName, _.sum(steps), mod_fileNames[modName]])
 }
-const _getModLoadTimeTyples = getModLoadTimeTyples
-export { _getModLoadTimeTyples as getModLoadTimeTyples }
 
 
 /** @param {string} s */
@@ -112,7 +119,7 @@ export async function init(h=defaultHelper) {
 
   await h.begin('Parsing debug.log')
   const debug_log = loadText('logs/debug.log')
-  const time_arr = getModLoadTimeTyples()
+  const time_arr = getModLoadTimeTuples()
 
   function getTotalLoadTime() {
     return Math.max(0,...[

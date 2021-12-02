@@ -457,8 +457,8 @@ export const defaultHelper = {
     this.done()
     process.stdout.write(`✔️ ${chalk.dim.green(`${s}`)}\n`)
   },
-  warn : function (s='') { process.stdout.write(`⚠️ ${chalk.dim.yellow(`${s}`)}`) },
-  error: function (s='') { process.stdout.write(`🛑 ${chalk.dim.red   (`${s}`)}`) },
+  warn : function (...s) { process.stdout.write(`⚠️ ${chalk.dim.yellow(`${s.join('\t')}`)}`) },
+  error: function (...s) { process.stdout.write(`🛑 ${chalk.dim.red   (`${s.join('\t')}`)}`) },
 
   isUnfinishedTask: false,
 }

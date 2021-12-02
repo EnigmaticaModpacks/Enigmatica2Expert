@@ -164,6 +164,7 @@ const removeGlob = [
   '.gitattributes',
   'scripts/debug.zs',
   'config/tellme',
+  'mods/OptiFine_*.jar',
 
   // Folders to keep
   '!config',
@@ -331,7 +332,7 @@ const serverModsList = globsRelative(mcClientPath, [
   '!mods/torohealth*.jar',
   '!mods/toughnessbar*.jar',
   '!mods/WailaHarvestability-mc*.jar',
-  '!mods/justenoughdrags-*.jar',
+  // '!mods/justenoughdrags-*.jar', would not working if not installed on server
 
   '!mods/gamestagesviewer-*.jar',
 
