@@ -1,0 +1,40 @@
+{
+  "guiScale": 3,
+  "hudScale": 3,
+  "tooltipScale": 3,
+  "customIndividualGuiScales": {},
+  "customGroupGuiScales": {},
+  "loggedGuiClassNames": [
+    "net.minecraft.client.gui.GuiWorldSelection",
+    "net.minecraftforge.fml.client.GuiConfirmation",
+    "lumien.custommainmenu.gui.GuiCustom",
+    "net.minecraft.client.gui.GuiScreenWorking",
+    "net.minecraft.client.gui.inventory.GuiChest",
+    "com.verdantartifice.thaumicwonders.client.gui.GuiMeatyOrb",
+    "mezz.jei.gui.recipes.RecipesGui",
+    "net.minecraft.client.gui.GuiChat",
+    "net.optifine.gui.GuiChatOF",
+    "net.minecraft.client.gui.inventory.GuiInventory",
+    "net.minecraft.client.gui.inventory.GuiContainerCreative",
+    "com.github.alexthe666.rats.client.gui.GuiRat",
+    "com.github.terminatornl.laggoggles.client.gui.GuiProfile",
+    "com.github.terminatornl.laggoggles.client.gui.GuiScanResultsWorld",
+    "betterquesting.client.gui2.GuiHome",
+    "net.minecraftforge.fml.client.config.GuiConfig",
+    "net.minecraftforge.fml.client.GuiModList",
+    "net.minecraft.client.gui.GuiIngameMenu",
+    "net.minecraft.client.gui.GuiOptions",
+    "net.minecraft.client.gui.GuiVideoSettings",
+    "spazley.scalingguis.gui.guiconfig.GuiConfigSG"
+  ],
+  "blacklistGuiClassNames": [
+    "slimeknights.tconstruct.smeltery.client.module.GuiSearedFurnaceSideInventory",
+    "slimeknights.tconstruct.smeltery.client.module.GuiSmelterySideInventory",
+    "slimeknights.tconstruct.tools.common.client.module.GuiButtonsStencilTable",
+    "slimeknights.tconstruct.tools.common.client.module.GuiButtonsToolStation",
+    "slimeknights.tconstruct.tools.common.client.module.GuiInfoPanel",
+    "slimeknights.tconstruct.tools.common.client.module.GuiSideInventory",
+    "slimeknights.tconstruct.tools.common.client.module.GuiTinkerTabs"
+  ],
+  "dynamicGuiScales": []
+}
