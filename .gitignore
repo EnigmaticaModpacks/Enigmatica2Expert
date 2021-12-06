@@ -23,6 +23,7 @@
 structures/inactive
 !options.txt
 !optionsof.txt
+!manifest.json
 
 # Files created by luncher
 config/splash.properties
