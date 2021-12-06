@@ -73,7 +73,6 @@ Liquids that should have more uses:
 ![](https://git.io/J3hVP "Bursting Powder")
 ![](https://git.io/J3hV0 "Crushing Block")
 ![](https://git.io/J3hVR "TNT")
-![](https://git.io/Jsw4m "Miniaturization Field Projector")
 ![](https://git.io/JG5U9 "Decay Generator")
 ![](https://git.io/Jst3B "Crystal Memory")
 ![](https://git.io/JtDnO "Chemical Thrower")
@@ -85,58 +84,31 @@ Liquids that should have more uses:
 
 # TODO
 
-- [ ] ✏️ Add [Uncrafting Table] as Endgame item, and [Uncrafting Grinder] right before creative upgrade
-- [ ] ✏️ Add non-magic way to finish modpack
-- [ ] ✏️ [Tungsten ingot] add to JAOPCA
+- [ ] ✏️ [Antler] add usage
 - [ ] ✏️ [Bee nest] make not in basing but in world
 - [ ] ✏️ [Cobalt Dust] Replace with EnderIO variant (its beautiful)
-- [ ] ✏️ Add EEPROM with `user`, `attacker`, `trader`
-- [ ] ✏️ Add Mob Trophies recipes
-- [ ] ✏️ Add Curiosity crafts. Probably from Twilight Forest Trees
+- [x] ✏️ [Flint Mesh] cheaper, but less output
 - [ ] ✏️ [Pharos Beacon] harder
-- [ ] ✏️ Add default arguments to process
-- [ ] ✏️ MA crafting seeds add table -> runic -> alchemy table recipe
+- [ ] ✏️ [Tungsten ingot] add to JAOPCA
+- [ ] ✏️ Add [Uncrafting Table] as Endgame item, and [Uncrafting Grinder] right before creative upgrade
+- [ ] ✏️ Add Curiosity crafts. Probably from Twilight Forest Trees
+- [ ] ✏️ Add EEPROM with `user`, `attacker`, `trader`, add Patchouli and Quest Book Entry
 - [ ] ✏️ Add Endermite rare drop, add Nethernite too
-- [ ] ✏️ [Antler] add usage
-- [ ] ✏️ Slime killed by wolf craft, by rat, by cokatrix
-- [ ] ✏️ [Flint Mesh] cheaper, but less output
-- [x] ✏️ Add Witchwater+Water => Dirt to JEI
-- [ ] ✏️ Unify cables crafts, make it from pulverized coal, not lapis plates
+- [ ] ✏️ Add Mob Trophies recipes
+- [x] ✏️ Add [Thorium] [Boron] [Magnesium] [Lithium]
+- [ ] ✏️ Add non-magic way to finish modpack
+- [ ] ✏️ Add Skyblock recipe for Terraformer
+- [ ] ✏️ Add usage to rainbow faries
+- [ ] ✏️ Buff crops. Needed: Osmium, Black Quartz, Platinum, Celestial Crystal, Glowstone. Add usage for Weed
 - [ ] ✏️ Enable AIOTs, Paxels
-- [x] ✏️ Heart of Diamond add uses
-- [x] ✏️ [Carving Knife] add more durab. alts
-- [x] ✏️ Buff prime wool -> dusts
-- [x] ✏️ Pebbles fix craft
-- [x] ✏️ Assorted Vegetables add nutrition
-- [x] ✏️ Fix appropriate tool for compressed sand and gravel
-- [x] ✏️ Buff Hover boots
-- [x] ✏️ Pitiful fuel gen buff
-- [x] ✏️ Ferrous - less, Ironberries - more
-- [x] ✏️ Add rat in market recipe
-- [x] ✏️ Add Fast cheese wheels
-- [ ] ✏️ [Robit] Cheaper
-- [ ] ✏️ Add [Electronics] casting
-- [ ] ✏️ Buff crops. Needed: Osmium, Black Quartz, Platinum, Celestial Crystal. Add usage for Weed
-- [x] ✏️ `Uranium`, `Apatite`, `Copper`, `Tin` get other ways in skyblock
+- [ ] ✏️ MA crafting seeds add table -> runic -> alchemy table recipe
+- [ ] ✏️ Rethink small plate presser
+- [ ] ✏️ Cyclics machines harder
+- [ ] 📖 Quantum Compressor: got it to work by breaking and replacing and putting in the items in the right order. Also i think the mining level shouldn't be that high due to this bug
 - [ ] 📖 Change sound of quest complete to another
 - [ ] 📖 Add CC/OC gate
-- [x] 📖 Wrench in IC2 quest change to old (add durability)
-- [x] 📖 Add Two hand trick to Excavator
-- [x] 📖 Remove all coins from loot
-- [x] 📖 Alchemical Condenser need only 2 towers
-- [x] 📖 Rat on arrow fix connections
-- [x] 📖 Manyulin quest better reward
-- [ ] 📖 Add new mob spawning rules defined in `spawn.json` settings
-- [ ] 🔄 Forbid traveling to deep dark
-- [x] 🔄 Infested leaves set break speed to instant
-- [x] 🔄 Spawn stonelings rarer
-- [ ] 🔄 Add https://www.curseforge.com/minecraft/mc-mods/versioner
-- [ ] 🔄 Schematica: Missing/outdated Immersive Technology schematics, Fixes #17
-- [ ] 🔄 Fix `tooltips.dim_stages.enter_skyblock` not shows on server
-- [x] 🔄 Disable Dragon corps spawn on skyblock
-- [ ] 🏪 Add *X kill X*
+- [ ] 🔄 Add new mods to `make_pack` server exclusions
 - [ ] 🔨 Grinding rework
-- [ ] 🚧 Add skyblock client/server changes
 - [ ] 🚧 Add modpack automation:
     1. `automate.js` without `changelog.js`
     2. Check git status
@@ -152,6 +124,7 @@ Liquids that should have more uses:
 
 # Long-Term
 
+- [ ] 🔄 Schematica: Missing/outdated Immersive Technology schematics, Fixes #17
 - [ ] 🔄 Add neural interface searching: with neural interface and special program find special blocks
 - [ ] 🔄 ![](https://git.io/J3p8B "Infinity Furnace") front texture empty on client
 - [ ] ✏️ Rats as alt for some machine recipes
