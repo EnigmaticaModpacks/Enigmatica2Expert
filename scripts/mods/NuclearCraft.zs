@@ -200,7 +200,7 @@ scripts.process.alloy([<ore:ingotIron> * 15, <ore:dustCarbonManganese>], <ore:in
 scripts.process.extract(<minecraft:porkchop>, <nuclearcraft:gelatin> * 8, "except: manufactory");
 scripts.process.extract(<ore:fish>,           <nuclearcraft:gelatin> * 4, "except: manufactory");
 
-scripts.process.crushEx(<nuclearcraft:roasted_cocoa_beans>, <nuclearcraft:ground_cocoa_nibs>, "except: manufactory", null, null, {bonusType: "MULTIPLY_OUTPUT"});
+scripts.process.crush(<nuclearcraft:roasted_cocoa_beans>, <nuclearcraft:ground_cocoa_nibs>, "except: manufactory", null, null, {bonusType: "MULTIPLY_OUTPUT"});
 recipes.addShapeless("Crush Cocoa", <nuclearcraft:ground_cocoa_nibs>, [<ore:pestleAndMortar>, <nuclearcraft:roasted_cocoa_beans>]);
 
 scripts.process.squeeze([<nuclearcraft:ground_cocoa_nibs>], <liquid:cocoa_butter> * 144, "except: FluidExtractor", <nuclearcraft:cocoa_solids>);

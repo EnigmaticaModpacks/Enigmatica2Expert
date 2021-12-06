@@ -94,6 +94,12 @@ recipes.addShapeless("Spectre Ingot Harder", <randomthings:ingredient:3>, [
 	<thermalfoundation:material:134>,
 	<forestry:phosphor>,
 ]);
+recipes.addShapeless("Spectre Ingot Harder alt", <randomthings:ingredient:3>, [
+	<ore:ingotUnstable>,
+	<randomthings:ingredient:2>,
+	<thermalfoundation:material:134>,
+	<ore:dustCyanite>,
+]);
 
 
 # Spectre Charger Tier 1

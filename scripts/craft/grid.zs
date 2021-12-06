@@ -47,6 +47,7 @@ zenClass Grid {
   # Hashed data
   var shapedList as IIngredient[][];
   var shapelessList as IIngredient[];
+  var shapelessList_wNulls as IIngredient[];
   var mainIngredient as IIngredient;
 
   #------------------------------------------------------------------
@@ -141,22 +142,23 @@ zenClass Grid {
 
 
   # Return flatten list of ingredients to use in shapeless recipe
-  function shapeless() as IIngredient[] {
-    if (!isNull(shapelessList)) return shapelessList;
+  function shapeless(includeNulls as bool = false) as IIngredient[] {
+    var cached = includeNulls ? shapelessList_wNulls : shapelessList;
+    if (!isNull(cached)) return cached;
 
     # Make ingredients list from string grid
-    shapelessList = [];
+    if(includeNulls) shapelessList_wNulls = []; else shapelessList = [];
     for y, row in map {
       if(row.length==0) continue;
       for x in 0 to row.length {
         # Add ingredient in list
         var ingr = opts[row[x]];
-        if (!isNull(ingr)) {
-          shapelessList += ingr;
+        if (includeNulls || !isNull(ingr)) {
+          if(includeNulls) shapelessList_wNulls += ingr; else shapelessList += ingr;
         }
       }
     }
-    return shapelessList;
+    return includeNulls ? shapelessList_wNulls : shapelessList;
   }
 
 

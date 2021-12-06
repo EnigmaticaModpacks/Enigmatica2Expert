@@ -318,7 +318,7 @@ mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft
 mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft:clock>);
 
 # Process Geodes
-scripts.process.crushEx(<thermalfoundation:geode>, <mysticalagradditions:insanium:5>, "No exceptions", 
+scripts.process.crush(<thermalfoundation:geode>, <mysticalagradditions:insanium:5>, "No exceptions", 
   [<mysticalagradditions:insanium:5>], [0.25], {bonusType: "MULTIPLY_OUTPUT"});
 
 #####################################
@@ -426,8 +426,8 @@ for i, mat in materials {
 			"i ♥ i",
 			"  ▬  "], {
 			"♥": <thermalexpansion:strongbox>.withTag(lvl_im).marked("marked"),
-			"▬": oreDict["ingot" ~ mat],
-			"i": oreDict["ingot" ~ materials[i - 1]],
+			"▬": oreDict["nugget" ~ mat],
+			"i": oreDict["nugget" ~ materials[i - 1]],
 		}, upgradeFnc);
 	}
 
@@ -463,8 +463,8 @@ craft.remake(<thermalexpansion:strongbox>.withTag({/* Facing: 3 as byte,  */Leve
 	"i ♥ i",
 	"  ▬  "], {
 	"♥": <ore:chest>,
-	"▬": <ore:ingotTin>,
-	"i": <ore:ingotCopper>,
+	"▬": <ore:nuggetTin>,
+	"i": <ore:nuggetCopper>,
 });
 
 mods.jei.JEI.hide(<thermalexpansion:cell>.withTag({Recv: 10000, RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [2, 1, 1, 1, 1, 1] as byte[] as byte[], Level: 0 as byte, Send: 10000}));

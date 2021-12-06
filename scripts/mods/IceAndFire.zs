@@ -473,7 +473,6 @@ scripts.wrap.inworldcrafting.FluidToItem.transform(<iceandfire:iceandfire.deathw
 
 ##################
 # MYRMEX
-<ore:myrmexEgg>.add(<iceandfire:myrmex_desert_egg:4>, <iceandfire:myrmex_jungle_egg:4>);
 var desertIng = <minecraft:stained_hardened_clay:1>;
 recipes.addShaped("myrmexDesertEgg", <iceandfire:myrmex_desert_egg:4>, [
 	[desertIng, <twilightforest:cicada>, desertIng], 
@@ -621,3 +620,18 @@ for i, input in listConversionScales {
 	# [Dragon Scales] from [Dragon Scale]
 	recipes.addShapeless(output, [<mysticalagradditions:stuff:3>, input]);
 }
+
+# Add crafts before Rat's coins
+# [Jungle Myrmex Egg] from [Cicada][+1]
+craft.remake(<iceandfire:myrmex_jungle_egg>, [
+  "WC"], {
+  "W": <randomthings:weatheregg:1>, # Weather Egg <Rain>
+  "C": <twilightforest:cicada>,     # Cicada
+});
+
+# [Desert Myrmex Egg] from [Cicada][+1]
+craft.remake(<iceandfire:myrmex_desert_egg>, [
+  "WC"], {
+  "W": <randomthings:weatheregg>, # Weather Egg <Sun>
+  "C": <twilightforest:cicada>,   # Cicada
+});

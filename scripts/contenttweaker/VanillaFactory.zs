@@ -147,6 +147,8 @@ buildItem("blasted_coal");
 # Other
 # -------------------------------
 buildItem("any_different_item");
+buildItem("ore_phosphor");
+buildItem("nugget_phosphor");
 
 var x = VanillaFactory.createItem("bee_diversity");
 x.setCreativeTab(<creativetab:other>);
@@ -162,6 +164,7 @@ molten_spectre.density = 6500;
 molten_spectre.temperature = 400;
 molten_spectre.luminosity = 10;
 molten_spectre.color = 0x9CC1CE;
+molten_spectre.colorize = true;
 // molten_spectre.stillLocation = "base:fluids/molten";
 // molten_spectre.flowingLocation = "base:fluids/molten_flowing";
 molten_spectre.register();
@@ -170,13 +173,10 @@ molten_spectre.register();
 # perfect_fuel
 # -------------------------------
 val perfect_fuel = VanillaFactory.createFluid("perfect_fuel", 0xffcc00);
-// perfect_fuel.fillSound = <soundevent:block.note.snare>;
 perfect_fuel.material = <blockmaterial:lava>;
 perfect_fuel.luminosity = 15;
 perfect_fuel.viscosity = 8000;
 perfect_fuel.temperature= 10000;
-// perfect_fuel.stillLocation = "contenttweaker:fluids/perfect_fuel";
-// perfect_fuel.flowingLocation = "contenttweaker:fluids/perfect_fuel_flow";
 perfect_fuel.stillLocation = "contenttweaker:fluids/fluid";
 perfect_fuel.flowingLocation = "contenttweaker:fluids/fluid_flowing";
 perfect_fuel.register();
@@ -194,10 +194,11 @@ x.register();
 # -------------------------------
 # electronics
 # -------------------------------
-val electronics = VanillaFactory.createFluid("electronics", 0x043015);
+val electronics = VanillaFactory.createFluid("electronics", 0x0a1410);
 electronics.material = <blockmaterial:lava>;
 electronics.viscosity = 8000;
 electronics.temperature= 3000;
-electronics.stillLocation = "contenttweaker:fluids/fluid";
-electronics.flowingLocation = "contenttweaker:fluids/fluid_flowing";
+electronics.colorize = true;
+electronics.stillLocation = "base:fluids/molten";
+electronics.flowingLocation = "base:fluids/molten_flowing";
 electronics.register();

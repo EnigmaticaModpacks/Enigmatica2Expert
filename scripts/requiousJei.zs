@@ -122,7 +122,7 @@ add_liquid_interaction(Bucket("witchwater"), Bucket("water"), <biomesoplenty:dir
 add_liquid_interaction(Bucket("witchwater"), Bucket("water"), <biomesoplenty:dirt:9>);
 add_liquid_interaction(Bucket("witchwater"), Bucket("water"), <biomesoplenty:dirt:10>);
 add_liquid_interaction(Bucket("witchwater"), Bucket("fiery_essence"), <exnihilocreatio:block_netherrack_crushed> * 64);
-add_liquid_interaction(Bucket("witchwater"), Bucket("fiery_essence"), <minecraft:netherrack> * 10);
+add_liquid_interaction(Bucket("witchwater"), Bucket("fiery_essence"), <minecraft:netherrack> * 20);
 add_liquid_interaction(Bucket("witchwater"), Bucket("fiery_essence"), <netherendingores:block_nether_netherfish>);
 /**/
 

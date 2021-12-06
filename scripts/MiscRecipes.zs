@@ -606,10 +606,15 @@ for mobName, arr in {
  */
 
 # Molten Electronics casts
-scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:6> , <tconstruct:cast_custom:1>                                     , <liquid:electronics>, 16 * 1);
-scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:7> , <tconstruct:cast>.withTag({PartType: "tconstruct:shard"})      , <liquid:electronics>, 16 / 2);
-scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:8> , <tconstruct:cast_custom>                                       , <liquid:electronics>, 16 * 9);
-scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:9> , <tconstruct:cast>.withTag({PartType: "tconstruct:sign_head"})  , <liquid:electronics>, 16 * 27);
-scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:10>, <tconstruct:cast_custom:3>                                     , <liquid:electronics>, 16 * 9);
-scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:11>, <tconstruct:cast>.withTag({PartType: "tconstruct:hammer_head"}), <liquid:electronics>, 16 * 72);
-scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:5> , <tconstruct:cast_custom:4>                                     , <liquid:electronics>, 16 * 36);
+scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:7> , <tconstruct:cast>.withTag({PartType: "tconstruct:shard"})      , <liquid:electronics>, 8);
+scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:6> , <tconstruct:cast_custom:1>                                     , <liquid:electronics>, 16);
+scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:storage>    , null                                                           , <liquid:electronics>, 144);
+scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:8> , <tconstruct:cast_custom>                                       , <liquid:electronics>, 144);
+scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:10>, <tconstruct:cast_custom:3>                                     , <liquid:electronics>, 144);
+scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:9> , <tconstruct:cast>.withTag({PartType: "tconstruct:sign_head"})  , <liquid:electronics>, 144 * 3);
+scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:5> , <tconstruct:cast_custom:4>                                     , <liquid:electronics>, 144 * 4);
+scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:11>, <tconstruct:cast>.withTag({PartType: "tconstruct:hammer_head"}), <liquid:electronics>, 144 * 8);
+scripts.wrap.tconstruct.Casting.addBasinRecipe(<opencomputers:case1>      , null                                                           , <liquid:electronics>, 144 * 9);
+
+# Additional bonus
+scripts.loot.entity_kill_entity.add("minecraft:slime", "minecraft:wolf", <enderio:item_alloy_nugget:5>);

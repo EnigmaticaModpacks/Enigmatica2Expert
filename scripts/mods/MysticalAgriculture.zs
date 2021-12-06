@@ -214,7 +214,7 @@ addTieredRecipe(<mysticalagriculture:coal_seeds>,           [<ore:blockCoal>,<or
 addTieredRecipe(<mysticalagriculture:tin_seeds> ,           [<ore:blockTin> ,<ore:runeSummerB> ], null);
 addTieredRecipe(<mysticalagriculture:sky_stone_seeds> ,     [<appliedenergistics2:material:45>, <ore:runeSummerB>] , null);
 addTieredRecipe(<mysticalagriculture:nether_seeds> ,        [<ore:blockNetherWart> ,<ore:runeAutumnB>], null);
-addTieredRecipe(itemUtils.getItem("mysticalcreations:cheese_seeds"), [<ore:cheeseWheels> ,<ore:runeSummerB>], null);
+addTieredRecipe(itemUtils.getItem("mysticalcreations:cheese_seeds"), [<ore:cheeseWheels>,<ore:runeSummerB>], null);
 
 
 # *======= Seeds Tier 3 =======*
@@ -235,6 +235,7 @@ addTieredRecipe(<mysticalagriculture:steeleaf_seeds> ,      [<ore:blockSteel>, <
 addTieredRecipe(<mysticalagriculture:ironwood_seeds> ,      [<twilightforest:block_storage>, <ore:runeSummerB>] , null);
 addTieredRecipe(<mysticalagriculture:black_quartz_seeds> ,  [<ore:blockQuartzBlack> , <ore:runeAutumnB>], null);
 addTieredRecipe(<mysticalagriculture:end_seeds>,            [<excompressum:compressed_block:10> ,<ore:runeWinterB>], null);
+addTieredRecipe(itemUtils.getItem("mysticalcreations:astral_starmetal_seeds"), [<ore:blockAstralStarmetal> ,<ore:runeAutumnB>], null);
 
 # *======= Seeds Tier 4 =======*
 curr_tier = 4;
@@ -649,3 +650,15 @@ craft.make(<quark:slime_bucket>, ["pretty",
 
 # "Purification" or [Prosperity Shard Shard] into pure shards
 scripts.category.expire_in_block.set(<tconstruct:shard>.withTag({Material: "ma.prosperity"}),  {"biomesoplenty:blue_fire": <mysticalagriculture:crafting:5>});
+
+function remakeInAltair(oldRecipeName as string, output as IItemStack, gridStr as string[], ingrsMap as IIngredient[string]) as void {
+	recipes.removeByRecipeName(oldRecipeName);
+	scripts.wrap.astralsorcery.Altar.addDiscoveryAltarRecipe(craft.uniqueRecipeName(output), output, 200, 800, Grid(gridStr, ingrsMap).shapeless(true));
+}
+
+# Remake some essence in other machines rather then in crafting table
+remakeInAltair("mysticalagriculture:blockcustomore", <astralsorcery:blockcustomore>, [
+	"xxx",
+	"x x",
+	"xxx"], {x: <mysticalagriculture:rock_crystal_essence>}
+);

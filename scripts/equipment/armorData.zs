@@ -15,6 +15,7 @@ static armorStaged as IData[string] =
     tier: 0,
     material: "minecraft:leather",
     recycle:  "minecraft:leather",
+    recipe: {manual: true},
     list: [
       {id:"minecraft:leather_helmet"},
       {id:"minecraft:leather_chestplate"},

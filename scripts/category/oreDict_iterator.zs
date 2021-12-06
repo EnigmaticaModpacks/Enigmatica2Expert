@@ -29,7 +29,7 @@ for ore_entry in oreDict {
 	if (!isNull(ore_name)) {
     if(ore_name == 'Aluminum') continue;
 		val oreBlock = oreDict.get("ore" ~ ore_name);
-		if(isNull(oreBlock)) continue;
+		if(isNull(oreBlock) || oreBlock.empty) continue;
 
 		val p = ore_entry;
 		recipes.addShaped("Ex Nihilo " ~ name ~ " x8", oreBlock.firstItem * 2, [[p, p, p], [p, p, p], [p, p, p]]);

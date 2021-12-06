@@ -2,65 +2,67 @@
 
 # *======= Recipes =======*
 
+val PL = <ore:plateCarbon>;
+
 # Blue Network Cable
 	recipes.remove(<xnet:netcable>);
 	recipes.addShapedMirrored("XNet Network Cable", 
 	<xnet:netcable> * 32, 
-	[[<ore:plateLapis>, <ore:dustRedstone>, <ore:plateLapis>],
+	[[PL, <ore:dustRedstone>, PL],
 	[<ore:dustRedstone>, <ore:plateGold>, <ore:dustRedstone>], 
-	[<ore:plateLapis>, <ore:dustRedstone>, <ore:plateLapis>]]);
+	[PL, <ore:dustRedstone>, PL]]);
 
 # Routing Network Cable
 	recipes.remove(<xnet:netcable:4>);
 	recipes.addShapedMirrored("XNet Routing Cable", 
 	<xnet:netcable:4> * 32, 
-	[[<ore:plateLapis>, <ore:blockRedstone>, <ore:plateLapis>],
+	[[PL, <ore:blockRedstone>, PL],
 	[<ore:blockRedstone>, <ore:plateGold>, <ore:blockRedstone>], 
-	[<ore:plateLapis>, <ore:blockRedstone>, <ore:plateLapis>]]);
+	[PL, <ore:blockRedstone>, PL]]);
 	
 # Blue Connector
 	recipes.remove(<xnet:connector>);
 	recipes.addShapedMirrored("XNet Connector1", 
 	<xnet:connector> * 2, 
-	[[<ore:plateLapis>, <ore:chest>, <ore:plateLapis>],
+	[[PL, <ore:chest>, PL],
 	[<ore:dustRedstone>, <ore:plateDenseGold>, <ore:dustRedstone>], 
-	[<ore:plateLapis>, <ore:dustRedstone>, <ore:plateLapis>]]);
+	[PL, <ore:dustRedstone>, PL]]);
 	
 	recipes.addShapedMirrored("XNet Connector2", 
 	<xnet:connector> * 2, 
-	[[<ore:plateLapis>, <ore:chest>, <ore:plateLapis>],
+	[[PL, <ore:chest>, PL],
 	[<ore:dustRedstone>, <ore:plateDenseBronze>, <ore:dustRedstone>], 
-	[<ore:plateLapis>, <ore:dustRedstone>, <ore:plateLapis>]]);
+	[PL, <ore:dustRedstone>, PL]]);
 	
 	recipes.addShapedMirrored("XNet Connector3", 
 	<xnet:connector>, 
-	[[<ore:plateLapis>, <ore:chest>, <ore:plateLapis>],
+	[[PL, <ore:chest>, PL],
 	[<ore:dustRedstone>, <ore:plateDenseCopper>, <ore:dustRedstone>], 
-	[<ore:plateLapis>, <ore:dustRedstone>, <ore:plateLapis>]]);
+	[PL, <ore:dustRedstone>, PL]]);
 	
 	recipes.addShapedMirrored("XNet Connector4", 
 	<xnet:connector>, 
-	[[<ore:plateLapis>, <ore:chest>, <ore:plateLapis>],
+	[[PL, <ore:chest>, PL],
 	[<ore:dustRedstone>, <ore:plateDenseIron>, <ore:dustRedstone>], 
-	[<ore:plateLapis>, <ore:dustRedstone>, <ore:plateLapis>]]);
+	[PL, <ore:dustRedstone>, PL]]);
 	
 	recipes.addShapedMirrored("XNet Connector5", 
 	<xnet:connector>, 
-	[[<ore:plateLapis>, <ore:chest>, <ore:plateLapis>],
+	[[PL, <ore:chest>, PL],
 	[<ore:dustRedstone>, <ore:plateDenseTin>, <ore:dustRedstone>], 
-	[<ore:plateLapis>, <ore:dustRedstone>, <ore:plateLapis>]]);
+	[PL, <ore:dustRedstone>, PL]]);
 	
 	recipes.addShapedMirrored("XNet Connector6", 
 	<xnet:connector>, 
-	[[<ore:plateLapis>, <ore:chest>, <ore:plateLapis>],
+	[[PL, <ore:chest>, PL],
 	[<ore:dustRedstone>, <ore:plateDenseLead>, <ore:dustRedstone>], 
-	[<ore:plateLapis>, <ore:dustRedstone>, <ore:plateLapis>]]);
+	[PL, <ore:dustRedstone>, PL]]);
 	
 	recipes.addShapedMirrored("XNet Connector7", 
 	<xnet:connector> * 3, 
-	[[<ore:plateLapis>, <ore:chest>, <ore:plateLapis>],
+	[[PL, <ore:chest>, PL],
 	[<ore:dustRedstone>, <ore:plateDenseSteel>, <ore:dustRedstone>], 
-	[<ore:plateLapis>, <ore:dustRedstone>, <ore:plateLapis>]]);
+	[PL, <ore:dustRedstone>, PL]]);
 	
 # Colouring blue
 	recipes.addShapeless("XNet Blue Connector", <xnet:connector>, [<xnet:connector:*>, <ore:dyeBlue>]);

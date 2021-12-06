@@ -112,7 +112,7 @@ craft.remake(<rats:rat_upgrade_chef>, ["pretty",
   "e C e",
   "A R A",
   "L H L"], {
-  "A": <cyclicmagic:food_step>,         # Apple of Lofty Stature
+  "A": <cyclicmagic:apple_emerald>,
   "R": <rats:rat_upgrade_basic>,        # Rat Upgrade: Basic
   "C": <rats:chef_toque>.anyDamage(),   # Chef Toque
   "e": <ore:foodCake>,
@@ -457,3 +457,6 @@ craft.shapeless(<actuallyadditions:item_misc:23>, "PPPPCPPPP", {
 # Make alt recipe for tokens
 scripts.category.tooltip_utils.desc.both(<rats:token_piece>, "kill.slime.by.marbled_cheese_golem");
 scripts.loot.entity_kill_entity.add("minecraft:slime", "rats:marbled_cheese_golem", <rats:token_piece>);
+
+# Bonus loot
+scripts.loot.entity_kill_entity.add("minecraft:slime", "rats:rat", <mysticalagriculture:coal>);

@@ -15,11 +15,11 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded astralsorcery
-// Uses of this mod: 22
+// Uses of this mod: 24
 
 
 //####################################################
-// Uses of this class: 18
+// Uses of this class: 19
 zenClass Class_Altar { zenConstructor() {}
 
 	// Uses of this method: 4
@@ -103,3 +103,17 @@ zenClass Class_LightTransmutation { zenConstructor() {}
 
 }
 static LightTransmutation as Class_LightTransmutation = Class_LightTransmutation();
+
+//####################################################
+// Uses of this class: 1
+zenClass Class_Lightwell { zenConstructor() {}
+
+	// Uses of this method: 1
+	function addLiquefaction(input as IItemStack, output as ILiquidStack, productionMultiplier as float, shatterMultiplier as float, colorhex as int) as void {
+		if(utils.DEBUG) print('Recipe wrapped: mods.astralsorcery.Lightwell.addLiquefaction'~
+			serialize.args([serialize.IItemStack(input), serialize.ILiquidStack(output), productionMultiplier, shatterMultiplier, colorhex]));
+		mods.astralsorcery.Lightwell.addLiquefaction(input, output, productionMultiplier, shatterMultiplier, colorhex);
+	}
+
+}
+static Lightwell as Class_Lightwell = Class_Lightwell();

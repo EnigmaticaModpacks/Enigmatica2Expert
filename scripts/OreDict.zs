@@ -435,7 +435,8 @@ for item in loadedMods["jaopca"].items {
     removeHunkOre(item);
 }
 
-# Any Myrmex Resin
+# Myrmex
+addItems(<ore:myrmexEgg>, [<iceandfire:myrmex_desert_egg:*>, <iceandfire:myrmex_jungle_egg:*>]);
 addItems(<ore:blockMyrmexResin>, [<iceandfire:myrmex_desert_resin_block>, <iceandfire:myrmex_jungle_resin_block>]);
 
 # Milk powder as milk
@@ -446,7 +447,7 @@ addItems(<ore:bitumen>, [<thermalfoundation:material:892>, <immersivepetroleum:m
 
 # Additional essence added with mysticalcreations
 add(<ore:essenceTier2>, <mysticalcreations:creosolite_essence>);
-add(<ore:essenceTier3>, <mysticalcreations:cheese_essence>);
+addItems(<ore:essenceTier3>, [<mysticalcreations:cheese_essence>, <mysticalcreations:astral_starmetal_essence>]);
 add(<ore:essenceTier6>, <mysticalcreations:ultimate_essence>);
 
 # IC2 ashes to the dustAsh
@@ -616,3 +617,7 @@ addItems(<ore:pebble>, [
 	<exnihilocreatio:item_pebble:2>,
 	<exnihilocreatio:item_pebble:3>,
 ]);
+
+add(<ore:orePhosphor>, <contenttweaker:ore_phosphor>);
+add(<ore:nuggetPhosphor>, <contenttweaker:nugget_phosphor>);
+add(<ore:listAllwater>, <littletiles:lttransparentcoloredblock:5>);

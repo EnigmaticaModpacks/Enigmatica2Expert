@@ -49,7 +49,7 @@ for recipeName in [
   recipes.removeByRecipeName(recipeName);
 }
 
-mods.rustic.EvaporatingBasin.addRecipe(<endreborn:catalyst>, <liquid:crystal> * 1000);
+scripts.process.fill(<ore:dustDimensional>, <liquid:crystal> * 1000, <endreborn:catalyst>);
 
 # Add dust because materializer can work only with this one
 mods.jei.JEI.addItem(<endreborn:catalyst>);
@@ -239,3 +239,6 @@ recipes.removeByRecipeName("endreborn:items/item_ingot_endorium_2");
 craft.shapeless(<endreborn:item_ingot_endorium>, "‚‚‚‚‚‚‚‚‚", {
   "‚": <endreborn:item_raw_endorium>, # Endorium Nugget
 });
+
+# "Purification" of shards into nuggets
+scripts.category.expire_in_block.set(<tconstruct:shard>.withTag({Material: "wolframium"}),  {"biomesoplenty:blue_fire": <endreborn:wolframium_nugget>});

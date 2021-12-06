@@ -116,6 +116,8 @@ for out,inp in pressPlates {
 	scripts.wrap.immersiveengineering.MetalPress.addRecipe(<tconstruct:large_plate>.withTag({Material: out}), inp, <immersiveengineering:mold>, 16000, inp.amount);
 }
 
+scripts.process.compress(<ore:blockQuartzBlack>, <tconstruct:large_plate>.withTag({Material: "black_quartz"}), "only: Compactor");
+
 	scripts.wrap.immersiveengineering.MetalPress.addRecipe(<tconstruct:tool_rod>.withTag({Material: "ardite"}), <tconstruct:ingots:1>, <immersiveengineering:mold:2>, 4000, 1);
 
 # EFLN

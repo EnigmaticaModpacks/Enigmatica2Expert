@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 import scripts.craft.grid.Grid;
 #modloaded forestry
@@ -269,3 +270,50 @@ craft.make(<forestry:portable_alyzer>, ["pretty",
   "G": <ore:paneGlass>,    # Glass Pane
   "♥": <ore:dustRedstone>, # Redstone
 });
+
+# Phosphor line
+val PH = <forestry:phosphor>;
+val Po = <contenttweaker:ore_phosphor>;
+val Pn = <contenttweaker:nugget_phosphor>;
+recipes.addShapeless('ingot phosphor', PH, [Pn, Pn, Pn, Pn, Pn, Pn, Pn, Pn, Pn]);
+recipes.addShapeless('nuggets phosphor', Pn * 9, [PH]);
+scripts.process.crush(<ore:blockApatite>, Po, "only: AACrusher MekEnrichment", [Pn], [0.05]);
+scripts.process.crush(<ore:blockApatite> * 9, Po, "only: ThermalCentrifuge", [Pn], [1.0]);
+
+# Phosphor Benefication
+furnace.addRecipe(Pn, Po);
+scripts.processWork.workEx("infernalfurnace", null, [Po], null, null, null, [Pn * 2], [0.5], null);
+scripts.requiousJei.add_infernal_furnace(Po, (Pn * 3) % 50);
+scripts.process.crush(Po, Pn, "only: eu2Crusher IECrusher Pulverizer", [Pn], [0.5]);
+scripts.process.magic([Po], [Pn*3]);
+
+# Remove automatic TE recipes
+mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:866>, Po);
+mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:865>, Po);
+mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, Po);
+
+# Cheaper farm blocks
+val farmBlocks = [
+  <minecraft:stonebrick>,
+  <minecraft:stonebrick:1>,
+  <minecraft:stonebrick:2>,
+  <minecraft:brick_block>,
+  <minecraft:sandstone:2>,
+  <minecraft:sandstone:1>,
+  <minecraft:nether_brick>,
+  <minecraft:stonebrick:3>,
+  <minecraft:quartz_block>,
+  <minecraft:quartz_block:1>,
+  <minecraft:quartz_block:2>,
+] as IIngredient[];
+for i, input in farmBlocks {
+  # [Farm Block] from [Tin Electron Tube][+3]
+  craft.remake(<forestry:ffarm>.withTag({FarmBlock: i}) * 12, ["pretty",
+    "▬ ⌃ ▬",
+    "# T #"], {
+    "⌃": input,
+    "▬": <ore:ingotCopper>,             # Copper Ingot
+    "#": <ore:slabWood>,                # Wood Slab
+    "T": <forestry:thermionic_tubes:1>, # Tin Electron Tube
+  });
+}

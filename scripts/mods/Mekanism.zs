@@ -566,3 +566,24 @@ scripts.wrap.extendedcrafting.CompressionCrafting.addRecipe(
 	<mekanism:basicblock:6>.withTag({tier: 4, mekData: {storedItem: {id: "mekanism:salt", Count: 1 as byte, Damage: 0 as short}, itemCount: 2147483647}}), 
 	<mekanism:salt>, 2000, <mekanism:basicblock:6>.withTag({tier: 3}), 2000000, 100000
 );
+
+# Cheaper by steel to compete with other double chests
+# [Personal Chest] from [Glass][+2]
+craft.remake(<mekanism:machineblock:13>, ["pretty",
+  "‚ ■ ‚",
+  "c   c",
+  "‚ ‚ ‚"], {
+  "‚": <ore:nuggetSteel>,# Steel Nugget
+  "■": <ore:blockGlass>, # Glass
+  "c": <ore:chest>,      # Oak Chest
+});
+
+# Cheaper, because basically its Anvill, Chest, Furnace in one place, consuming RF
+# [Robit] from [Personal Chest][+2]
+craft.remake(<mekanism:robit>, ["pretty",
+  "  b  ",
+  "W P W"], {
+  "b": <ore:battery>,              # Energy Tablet
+  "W": <animania:wheel>,           # Wheel
+  "P": <mekanism:machineblock:13>, # Personal Chest
+});

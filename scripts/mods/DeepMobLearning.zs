@@ -70,3 +70,17 @@ craft.remake(<deepmoblearning:data_model_blank>, ["pretty",
 # Redstone from Sool-covered version
 mods.harvestcrafttweaker.HarvestCraftTweaker.addWaterFilter(<deepmoblearning:soot_covered_redstone>, <actuallyadditions:item_misc:10>, <jaopca:item_dusttinyredstone> * 8);
 scripts.wrap.thermalexpansion.Transposer.addFillRecipe(<minecraft:redstone>, <deepmoblearning:soot_covered_redstone>, <fluid:water> * 10, 1000);
+
+# [Ender Air Bottle] from [End Stone][+2]
+craft.shapeless(<botania:manaresource:15>, "EeG", {
+  "E": <deepmoblearning:living_matter_extraterrestrial>, # Extraterrestrial Matter
+  "e": <ore:endstone> | <ore:oc:stoneEndstone>, # End Stone
+  "G": <minecraft:glass_bottle>,                # Glass Bottle
+});
+
+# [Dragon's Breath] from [Dragon Scale][+2]
+craft.shapeless(<minecraft:dragon_breath>, "EDG", {
+  "E": <deepmoblearning:living_matter_extraterrestrial>, # Extraterrestrial Matter
+  "D": <mysticalagradditions:stuff:3>, # Dragon Scale
+  "G": <minecraft:glass_bottle>,       # Glass Bottle
+});

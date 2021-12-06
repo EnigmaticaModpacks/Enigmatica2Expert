@@ -34,7 +34,7 @@ zenClass GridRecipe {
     for tag in gridBuilder.localStyle { if(!(style has tag)) style += tag; }
 
     val removedRecipeNames = style has "removeByRecipeName" ? toString_outputRecipesNames(style) : "";
-    if(removedRecipeNames.length > 0) style += "noRemake";
+    if(style has "removeByRecipeName" || removedRecipeNames.length > 0) style += "noRemake";
     
     # Determine called method
     var calledMethod = styler.get(style, {

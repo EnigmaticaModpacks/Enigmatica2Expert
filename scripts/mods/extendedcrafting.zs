@@ -146,3 +146,24 @@ craft.make(<extendedcrafting:storage:3>, ["pretty",
   "▬": <ore:ingotMithril>,                     # Mana Infused Ingot
   "-": <ore:ingotEvilMetal>,                   # Evil Infused Iron Ingot
 });
+
+
+# [Basic Component] from [Black Quartz Large Plate][+3]
+craft.remake(<extendedcrafting:material:14>, ["pretty",
+  "▬ _ ▬",
+  "- ⌃ -",
+  "▬ _ ▬"], {
+  "▬": <ore:ingotOsmium>,   # Osmium Ingot
+  "_": <ore:ingotHeavy>,    # Heavy Ingot
+  "-": <ore:ingotEndSteel>, # End Steel Ingot
+  "⌃": <tconstruct:large_plate>.withTag({Material: "black_quartz"}), # Black Quartz Large Plate
+});
+
+# [Basic Catalyst] from [Cobweb][+1]
+craft.remake(<extendedcrafting:material:8>, ["pretty",
+  "  B  ",
+  "B C B",
+  "  B  "], {
+  "B": <extendedcrafting:material:14>, # Basic Component
+  "C": <minecraft:web>,                # Cobweb
+});

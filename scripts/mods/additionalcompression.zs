@@ -42,12 +42,12 @@ scripts.wrap.tconstruct.Melting.addRecipe(<liquid:glass> * (1000 * pow(rate, 2))
 scripts.wrap.tconstruct.Melting.addRecipe(<liquid:glass> * (1000 * pow(rate, 3)), <additionalcompression:blocksand_compressed:2>);
 scripts.wrap.tconstruct.Melting.addRecipe(<liquid:glass> * (1000 * pow(rate, 4)), <additionalcompression:blocksand_compressed:3>);
 
-scripts.wrap.tconstruct.Melting.addRecipe(<liquid:glass> * (144 * pow(rate, 1)), <additionalcompression:clay_compressed>);
-scripts.wrap.tconstruct.Melting.addRecipe(<liquid:glass> * (144 * pow(rate, 2)), <additionalcompression:clay_compressed:1>);
-scripts.wrap.tconstruct.Melting.addRecipe(<liquid:glass> * (144 * pow(rate, 3)), <additionalcompression:clay_compressed:2>);
-scripts.wrap.tconstruct.Melting.addRecipe(<liquid:glass> * (144 * pow(rate, 4)), <additionalcompression:clay_compressed:3>);
+scripts.wrap.tconstruct.Melting.addRecipe(<liquid:clay> * (144 * pow(rate, 1)), <additionalcompression:clay_compressed>);
+scripts.wrap.tconstruct.Melting.addRecipe(<liquid:clay> * (144 * pow(rate, 2)), <additionalcompression:clay_compressed:1>);
+scripts.wrap.tconstruct.Melting.addRecipe(<liquid:clay> * (144 * pow(rate, 3)), <additionalcompression:clay_compressed:2>);
+scripts.wrap.tconstruct.Melting.addRecipe(<liquid:clay> * (144 * pow(rate, 4)), <additionalcompression:clay_compressed:3>);
 
-scripts.wrap.tconstruct.Melting.addRecipe(<liquid:glass> * (144 * pow(rate, 1)), <extrautils2:compresseddirt>);
-scripts.wrap.tconstruct.Melting.addRecipe(<liquid:glass> * (144 * pow(rate, 1)), <extrautils2:compresseddirt:1>);
-scripts.wrap.tconstruct.Melting.addRecipe(<liquid:glass> * (144 * pow(rate, 1)), <extrautils2:compresseddirt:2>);
-scripts.wrap.tconstruct.Melting.addRecipe(<liquid:glass> * (144 * pow(rate, 1)), <extrautils2:compresseddirt:3>);
+scripts.wrap.tconstruct.Melting.addRecipe(<liquid:dirt> * (144 * pow(rate, 1)), <extrautils2:compresseddirt>);
+scripts.wrap.tconstruct.Melting.addRecipe(<liquid:dirt> * (144 * pow(rate, 1)), <extrautils2:compresseddirt:1>);
+scripts.wrap.tconstruct.Melting.addRecipe(<liquid:dirt> * (144 * pow(rate, 1)), <extrautils2:compresseddirt:2>);
+scripts.wrap.tconstruct.Melting.addRecipe(<liquid:dirt> * (144 * pow(rate, 1)), <extrautils2:compresseddirt:3>);

@@ -611,7 +611,7 @@ craft.remake(<actuallyadditions:block_shock_suppressor>, ["pretty",
   "■ * ■"], {
   "■": <ore:blockSkyStone>,             # Sky Stone
   "*": <ore:crystalVoid>,               # Void Crystal
-  "A": <actuallyadditions:item_misc:8>, # Advanced Coil
+  "A": <ore:crystalEnori>,
 });
 
 ###################################################
@@ -627,3 +627,19 @@ val knife_ingrs = {
 craft.make(<actuallyadditions:item_knife:1900>, [" n", "K "], knife_ingrs); # [Knife] from [Knife Blade][+1]
 craft.make(<actuallyadditions:item_knife:1600>, [" S", "K "], knife_ingrs); # [Knife] from [Steel Knife Blade][+1]
 craft.make(<actuallyadditions:item_knife>, [" R", "K "], knife_ingrs); # [Knife] from [Refined Obsidian Knife Blade][+1]
+
+###################################################
+
+# Cheaper to use more in building
+# [White Lamp]*32 from [Black Quartz][+3]
+for i, dye in scripts.category.dye.oreDye {
+	craft.remake(<actuallyadditions:block_colored_lamp>.definition.makeStack(i) * 32, ["pretty",
+		"g * g",
+		"d ⌃ d",
+		"g * g"], {
+		"d": dye,
+		"g": <ore:glowstone>,      # Glowstone
+		"*": <ore:crystalPalis>,   # Palis Crystal
+		"⌃": <ore:gemQuartzBlack>, # Black Quartz
+	});
+}

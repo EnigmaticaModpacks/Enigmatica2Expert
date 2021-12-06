@@ -116,7 +116,7 @@ function sawWood(input as IIngredient, output as IItemStack, exceptions as strin
 
 # Crush (grind) item to get it dusts and byproducts
 # 📦 → 📦 + [📦]?
-function crushEx(input as IIngredient, output as IItemStack, exceptions as string, extra as IItemStack[], extraChance as float[], opts as IData) {
+function crush(input as IIngredient, output as IItemStack, exceptions as string = null, extra as IItemStack[] = null, extraChance as float[] = null, opts as IData = null) {
   for machine in [
     "manufactory"  , "Macerator"  , "eu2Crusher"        ,
     "AACrusher"    , "IECrusher"  , "SagMill"           ,
@@ -126,9 +126,6 @@ function crushEx(input as IIngredient, output as IItemStack, exceptions as strin
   ] as string[] {
     workEx(machine, exceptions, [input], null, [output], null, extra, extraChance, opts);
   }
-}
-function crush(input as IIngredient, output as IItemStack, exceptions as string, extra as IItemStack[], extraChance as float[]) {
-  crushEx(input, output, exceptions, extra, extraChance, null);
 }
 
 # Compress item to another
@@ -248,7 +245,7 @@ function recycleMetal(input as IIngredient, output as IItemStack, liquid as ILiq
 
 # Melts item in liquid form
 # 📦 → 💧
-function melt(input as IIngredient, output as ILiquidStack, exceptions as string) {
+function melt(input as IIngredient, output as ILiquidStack, exceptions as string = null) {
   
   work(["smeltery", "melter", "crucible"],   exceptions, [input], null, null, [output], null, null);
 }
@@ -257,7 +254,7 @@ function melt(input as IIngredient, output as ILiquidStack, exceptions as string
 # 📦 ⤵
 #     📦
 # 💧  ⤴
-function fill(itemInput as IIngredient, fluidInput as ILiquidStack, output as IItemStack, exceptions as string) {
+function fill(itemInput as IIngredient, fluidInput as ILiquidStack, output as IItemStack, exceptions as string = null) {
   
   val newAmount1 = min(1000, lF(fluidInput, 1.6d).amount);
   val newAmount2 = min(1000, lF(fluidInput, 1.4d).amount);
@@ -270,7 +267,7 @@ function fill(itemInput as IIngredient, fluidInput as ILiquidStack, output as II
 
 # Perfor some magic over item(s) to create new item(s)
 # [📦+] → [📦+]
-function magic(input as IIngredient[], output as IItemStack[], exceptions as string) {
+function magic(input as IIngredient[], output as IItemStack[], exceptions as string = null) {
   
   work(["starlightInfuser"], exceptions, input, null, output, null, null, null);
 }
@@ -281,7 +278,7 @@ function beneficiate(
   _input as IIngredient, # Raw item (mostly ore) that would be processed (amount account)
   _oreName as string,    # Ore name of this material, for example "Gold"
   _amount as double,     # Amount of default simple output (like smelting ore in furnace)
-  opts as IData          # Special options
+  opts as IData = null   # Special options
 ) {
 
   val calc = wholesCalc(_input.amount, _amount);
@@ -322,7 +319,7 @@ function beneficiate(
       cx = utils.getSomething(JA.secondExtraName, ["dust", "gem"]); if (!isNull(cx)) extraList += cx;
       cx = utils.getSomething(JA.thirdExtraName,  ["dust", "gem"]); if (!isNull(cx)) extraList += cx;
     }
-    crushEx(input, dustOrGem, exceptions ~ "macerator thermalCentrifuge crushingBlock", extraList, extraChances, {bonusType: "MULTIPLY_OUTPUT"});
+    crush(input, dustOrGem, exceptions ~ "macerator thermalCentrifuge crushingBlock", extraList, extraChances, {bonusType: "MULTIPLY_OUTPUT"});
   }
 
   # Crush IC2

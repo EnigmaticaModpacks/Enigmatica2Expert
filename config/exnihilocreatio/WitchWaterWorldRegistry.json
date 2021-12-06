@@ -17,8 +17,8 @@
     "biomesoplenty:dirt:10": 1
   },
   "fiery_essence": {
-    "exnihilocreatio:block_netherrack_crushed": 64,
-    "minecraft:netherrack": 10,
+    "exnihilocreatio:block_netherrack_crushed": 120,
+    "minecraft:netherrack": 20,
     "netherendingores:block_nether_netherfish": 1
   }
 }
