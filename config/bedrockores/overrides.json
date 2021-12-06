@@ -39,6 +39,8 @@
     "countMax": 8,
     "yieldMin": 20,
     "yieldMax": 250,
+    "heightMin": 1,
+    "heightMax": 2,
     "group": "osmium",
     "groupOrder": "mekanism"
   },
@@ -55,9 +57,12 @@
     "countMax": 12,
     "yieldMin": 5,
     "yieldMax": 10,
+    "heightMin": 1,
+    "heightMax": 2,
     "group": "draconium",
     "groupOrder": "draconicevolution",
-    "dimension": "Deep Dark",
+    "dimensionSelector": "id",
+    "dimension": -11325,
     "extractionCooldownScale": 2
   }
 ]
