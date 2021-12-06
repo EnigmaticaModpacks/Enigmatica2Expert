@@ -10,7 +10,7 @@ function checkAndGrant(player as IPlayer) as void {
     (player.maxHealth >= 40.0f || player.health >= 40.0f)
   ) {
     player.addGameStage("healthy");
-    player.sendMessage(game.localize("tooltips.dim_stages.healthy_grant"));
+    player.sendRichTextMessage(crafttweaker.text.ITextComponent.fromTranslation("tooltips.dim_stages.healthy_grant"));
   }
 }
 
@@ -21,26 +21,47 @@ events.onPlayerTick(function(e as crafttweaker.event.PlayerTickEvent){
   checkAndGrant(e.player);
 });
 
-events.onEntityTravelToDimension(function(e as crafttweaker.event.EntityTravelToDimensionEvent){
-  if(e.entity.world.isRemote()) return;
-  if(!e.entity instanceof IPlayer) return;
-  val player as IPlayer = e.entity;
+
+function isForbidTravel(player as IPlayer, dimension as int) as bool {
   checkAndGrant(player);
 
-  val isNether = e.dimension == -1;
+  val isNether = dimension == -1;
   if(player.hasGameStage("skyblock")) {
     # Show message that player playing skyblock and cant visit any dims
-    if(isNether || restrictedDims has e.dimension) {
-      player.sendMessage(game.localize("tooltips.dim_stages.restricted"));
-      e.cancel();
+    if(isNether || restrictedDims has dimension) {
+      mods.zenutils.DelayManager.addDelayWork(function() {
+        player.sendRichTextMessage(crafttweaker.text.ITextComponent.fromTranslation("tooltips.dim_stages.restricted"));
+      }, 1);
+      return true;
     }
   }
   else {
     if(isNether && !player.hasGameStage("healthy")) {
       # Show message that player not healthy anough
-      player.sendMessage(game.localize("tooltips.dim_stages.healthy"));
-      e.cancel();
+      mods.zenutils.DelayManager.addDelayWork(function() {
+        player.sendRichTextMessage(crafttweaker.text.ITextComponent.fromTranslation("tooltips.dim_stages.healthy"));
+      }, 1);
+      return true;
     }
+  }
+
+  return false;
+}
+
+events.onEntityTravelToDimension(function(e as crafttweaker.event.EntityTravelToDimensionEvent){
+  if(e.entity.world.isRemote()) return;
+  if(!e.entity instanceof IPlayer) return;
+  val player as IPlayer = e.entity;
+  if(isForbidTravel(player, e.dimension)) e.cancel();
+});
+
+// Additional level of protection against unsanctioned traveling methods (like deep dark portal)
+events.onPlayerChangedDimension(function(e as crafttweaker.event.PlayerChangedDimensionEvent){
+  if(e.entity.world.isRemote()) return;
+  if(!e.player.creative && isForbidTravel(e.player, e.to)) {
+    mods.zenutils.DelayManager.addDelayWork(function() {
+      server.commandManager.executeCommand(server, '/cofh tpx '~e.player.name~' 0');
+    }, 20);
   }
 });
 

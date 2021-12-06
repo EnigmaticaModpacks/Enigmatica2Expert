@@ -72,3 +72,4 @@ dev/automation/**/~*
 dev/default_configs/default_config_outdated
 config/JustEnoughCalculation/data/groups.json
 config/activity.json
+config/customloadingscreen_timings.nbt

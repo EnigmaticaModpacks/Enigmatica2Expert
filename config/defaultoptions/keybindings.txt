@@ -40,13 +40,6 @@ key_Hub Expand Key:0:NONE
 key_Change Caster Focus:34:NONE
 key_Misc Caster Toggle:0:NONE
 key_keybind.baublesinventory:0:NONE
-key_quark.keybind.toggleAutojump:0:NONE
-key_quark.keybind.dropoff:0:NONE
-key_quark.keybind.chestSort:0:NONE
-key_quark.keybind.chestDropoff:0:NONE
-key_quark.keybind.chestMerge:0:NONE
-key_quark.keybind.chestRestock:0:NONE
-key_quark.keybind.chestExtract:0:NONE
 key_quark.emote.no:0:NONE
 key_quark.emote.yes:0:NONE
 key_quark.emote.wave:0:NONE
@@ -66,6 +59,13 @@ key_quark.emote.jet:0:NONE
 key_quark.emote.exorcist:0:NONE
 key_quark.emote.zombie:0:NONE
 key_quark.keybind.lockBuilding:33:SHIFT
+key_quark.keybind.dropoff:0:NONE
+key_quark.keybind.chestSort:0:NONE
+key_quark.keybind.chestDropoff:0:NONE
+key_quark.keybind.chestMerge:0:NONE
+key_quark.keybind.chestRestock:0:NONE
+key_quark.keybind.chestExtract:0:NONE
+key_quark.keybind.toggleAutojump:0:NONE
 key_key.toggle_shaders:0:NONE
 key_bloodmagic.keybind.open_holding:53:CONTROL
 key_bloodmagic.keybind.cycle_holding_pos:0:NONE
@@ -77,7 +77,7 @@ key_keybind.hammercorerenderstack:77:NONE
 key_key.betterquesting.quests:41:NONE
 key_cos.key.opencosarmorinventory:0:NONE
 key_Toggle:15:NONE
-key_Extra information:211:NONE
+key_Extra information:211:CONTROL
 key_Add info to original tooltip:199:NONE
 key_key.xu2.searchforitems:21:NONE
 key_key.findme.search:21:NONE
@@ -205,7 +205,7 @@ key_key.debugDumpNBTBlock:0:NONE
 key_invtweaks.key.sort:0:NONE
 key_jecalculation.key.gui_craft:0:NONE
 key_jecalculation.key.gui_math:0:NONE
-key_keywizard.keybind.openKeyboardWizard:0:NONE
+key_Open Key Wizard:65:NONE
 key_key.rotateup:200:NONE
 key_key.rotatedown:208:NONE
 key_key.rotateright:205:NONE
@@ -231,6 +231,8 @@ key_key.nutrition:49:NONE
 key_pi.key.open_pi:23:NONE
 key_pi.key.et_gui:23:NONE
 key_pi.key.et_world:23:CONTROL
+key_key.carpet_forward:17:NONE
+key_key.carpet_backward:31:NONE
 key_key.travelersbackpack.inventory:48:NONE
 key_key.travelersbackpack.toggle_tank:45:CONTROL
 key_key.travelersbackpack.cycle_tool:44:NONE

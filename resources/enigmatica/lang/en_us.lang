@@ -34,6 +34,7 @@ item.battery.0.name=Single Battery
 item.battery.1.name=Quadruple Battery
 tile.rftdimtweak.dimension_builder.name=Dimension Builder
 tile.rftdimtweak.dimension_editor.name=Dimension Editor
+entity.AngryChicken.name=Angry Chicken
 
 tooltips.lang.tag.generator=§6#Generator
 tooltips.lang.tag.solar=§f#Solar

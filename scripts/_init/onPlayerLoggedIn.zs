@@ -62,6 +62,6 @@ function onEachLogin(e as crafttweaker.event.PlayerLoggedInEvent, logCount as in
 
 function showWithDelay(player as IPlayer, lang as string) {
   mods.zenutils.DelayManager.addDelayWork(function() {
-    player.sendMessage(game.localize(lang));
+    player.sendRichTextMessage(crafttweaker.text.ITextComponent.fromTranslation(lang));
   }, 20 * 10);
 }
