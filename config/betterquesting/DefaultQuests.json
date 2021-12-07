@@ -409,23 +409,10 @@
               "OreDict:8": "ingotBronze"
             },
             "1:10": {
-              "Count:3": 1,
+              "Count:3": 2,
               "Damage:2": 0,
-              "id:8": "thermalexpansion:device",
-              "OreDict:8": "",
-              "tag:10": {
-                "Energy:3": 0,
-                "Facing:1": 3,
-                "RSControl:1": 0,
-                "SideCache:7": [
-                  0,
-                  1,
-                  0,
-                  0,
-                  0,
-                  0
-                ]
-              }
+              "id:8": "actuallyadditions:block_shock_suppressor",
+              "OreDict:8": ""
             },
             "2:10": {
               "Count:3": 4,
@@ -3352,12 +3339,12 @@
             "0:10": {
               "Count:3": 1,
               "Damage:2": 0,
-              "id:8": "rftools:powercell",
+              "id:8": "rftools:powercell_simple",
               "OreDict:8": ""
             },
             "1:10": {
               "Count:3": 1,
-              "Damage:2": 74,
+              "Damage:2": 75,
               "id:8": "ic2:te",
               "OreDict:8": "",
               "tag:10": {}
@@ -3904,6 +3891,16 @@
               "OreDict:8": "",
               "tag:10": {
                 "Material:8": "steel"
+              }
+            },
+            "3:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "id:8": "thermalexpansion:strongbox",
+              "OreDict:8": "",
+              "tag:10": {
+                "Facing:1": 3,
+                "Level:1": 0
               }
             }
           },
@@ -43502,11 +43499,9 @@
       "questID:3": 605,
       "rewards:9": {
         "0:10": {
-          "index:3": 0,
-          "rewardID:8": "bq_standard:item",
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
-              "Count:3": 6,
+              "Count:3": 25,
               "Damage:2": 0,
               "id:8": "tconstruct:shard",
               "OreDict:8": "",
@@ -43515,7 +43510,7 @@
               }
             },
             "1:10": {
-              "Count:3": 3,
+              "Count:3": 20,
               "Damage:2": 0,
               "id:8": "tconstruct:pattern",
               "OreDict:8": ""
@@ -43526,7 +43521,9 @@
               "id:8": "tconstruct:book",
               "OreDict:8": ""
             }
-          }
+          },
+          "index:3": 0,
+          "rewardID:8": "bq_standard:choice"
         }
       },
       "tasks:9": {
@@ -45894,7 +45891,7 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "Count:3": 3,
+              "Count:3": 60,
               "Damage:2": 1,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
@@ -46516,7 +46513,7 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "Count:3": 3,
+              "Count:3": 60,
               "Damage:2": 1,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
@@ -46602,13 +46599,13 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 0,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
             },
             "2:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 2,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
@@ -46688,13 +46685,13 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 0,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
             },
             "2:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 2,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
@@ -46774,7 +46771,7 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "Count:3": 3,
+              "Count:3": 60,
               "Damage:2": 1,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
@@ -46854,7 +46851,7 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "Count:3": 3,
+              "Count:3": 60,
               "Damage:2": 1,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
@@ -46940,13 +46937,13 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 0,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
             },
             "2:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 2,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
@@ -47026,7 +47023,7 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "Count:3": 3,
+              "Count:3": 60,
               "Damage:2": 1,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
@@ -47106,13 +47103,13 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 0,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
             },
             "2:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 2,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
@@ -47192,13 +47189,13 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 4,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
             },
             "2:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 3,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
@@ -47352,7 +47349,7 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "Count:3": 3,
+              "Count:3": 60,
               "Damage:2": 1,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
@@ -47734,7 +47731,7 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "Count:3": 3,
+              "Count:3": 60,
               "Damage:2": 1,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
@@ -48036,7 +48033,7 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "Count:3": 3,
+              "Count:3": 60,
               "Damage:2": 1,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
@@ -48116,13 +48113,13 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 0,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
             },
             "2:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 2,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
@@ -48202,7 +48199,7 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "Count:3": 3,
+              "Count:3": 60,
               "Damage:2": 1,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
@@ -48446,13 +48443,13 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 0,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
             },
             "2:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 2,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
@@ -48743,13 +48740,13 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 4,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
             },
             "2:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 3,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
@@ -48844,13 +48841,13 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 4,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
             },
             "2:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 3,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
@@ -48930,13 +48927,13 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 4,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
             },
             "2:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 3,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
@@ -49016,13 +49013,13 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 0,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
             },
             "2:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 2,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
@@ -49102,13 +49099,13 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 0,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
             },
             "2:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 2,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
@@ -49188,13 +49185,13 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 0,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
             },
             "2:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 2,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
@@ -49302,13 +49299,13 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 4,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
             },
             "2:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 3,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
@@ -49416,13 +49413,13 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 4,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
             },
             "2:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 3,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
@@ -49524,13 +49521,13 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 0,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
             },
             "2:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 2,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
@@ -56034,13 +56031,13 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "Count:3": 8,
+              "Count:3": 16,
               "Damage:2": 0,
               "id:8": "minecraft:ice",
               "OreDict:8": ""
             },
             "2:10": {
-              "Count:3": 8,
+              "Count:3": 16,
               "Damage:2": 0,
               "id:8": "biomesoplenty:hard_ice",
               "OreDict:8": ""
@@ -60430,13 +60427,13 @@
               }
             },
             "1:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 4,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
             },
             "2:10": {
-              "Count:3": 1,
+              "Count:3": 20,
               "Damage:2": 3,
               "id:8": "thaumcraft:curio",
               "OreDict:8": ""
@@ -77576,6 +77573,154 @@
           "taskID:8": "bq_standard:retrieval"
         }
       }
+    },
+    "1061:10": {
+      "preRequisites:11": [
+        48
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "bq.quest1061.desc",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "draconicevolution:mob_soul",
+            "OreDict:8": "",
+            "tag:10": {
+              "EntityName:8": "minecraft:enderman"
+            }
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 1,
+          "name:8": "bq.quest1061.name",
+          "partysinglereward:1": 0,
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 1061,
+      "rewards:9": {
+        "0:10": {
+          "choices:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "id:8": "quark:diamond_heart",
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "Count:3": 10,
+              "Damage:2": 0,
+              "id:8": "endreborn:food_ender_flesh",
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 1,
+              "id:8": "thaumcraft:loot_bag",
+              "OreDict:8": ""
+            }
+          },
+          "index:3": 0,
+          "rewardID:8": "bq_standard:choice"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "allowMainHand:1": 1,
+          "allowOffHand:1": 1,
+          "ignoreItemNBT:1": 0,
+          "ignoreTargetNBT:1": 1,
+          "index:3": 0,
+          "item:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "minecraft:air",
+            "OreDict:8": ""
+          },
+          "onHit:1": 1,
+          "onInteract:1": 1,
+          "partialItemMatch:1": 1,
+          "requiredUses:3": 1,
+          "targetID:8": "minecraft:enderman",
+          "targetNBT:10": {},
+          "targetSubtypes:1": 1,
+          "taskID:8": "bq_standard:interact_entity"
+        }
+      }
+    },
+    "1062:10": {
+      "preRequisites:11": [
+        723
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "bq.quest1062.desc",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "rats:rat_upgrade_shears",
+            "OreDict:8": ""
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 1,
+          "name:8": "bq.quest1062.name",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 1062,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 101,
+              "id:8": "bq_standard:loot_chest",
+              "OreDict:8": ""
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "id:8": "rats:rat_upgrade_shears",
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -77939,6 +78084,13 @@
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -69,
+          "y:3": 108
+        },
+        "49:10": {
+          "id:3": 1061,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 3,
           "y:3": 108
         }
       }
@@ -82855,6 +83007,13 @@
           "sizeY:3": 24,
           "x:3": -132,
           "y:3": -8
+        },
+        "43:10": {
+          "id:3": 1062,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -168,
+          "y:3": 114
         }
       }
     },

@@ -13,17 +13,7 @@
 [Client thread/WARN] [CustomLoadingScreen]: [debug]   - Failed to open stream as class java.io.FileNotFoundException:missingno
 [Client thread/WARN] [CustomLoadingScreen]: [debug]   - Failed to open stream as class java.io.FileNotFoundException:minecraft:missingno
 [Placebo Patreon Loader/ERROR] [placebo]: Exception loading patreon data!
-[ThaumicSpeedup/AspectThread-0/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.dirt@32767 in void beacon registration; this can result in invalid result blocks
-[ThaumicSpeedup/AspectThread-0/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.hellrock@32767 in void beacon registration; this can result in invalid result blocks
-[ThaumicSpeedup/AspectThread-0/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.obsidian@32767 in void beacon registration; this can result in invalid result blocks
-[ThaumicSpeedup/AspectThread-0/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.vine@32767 in void beacon registration; this can result in invalid result blocks
-[ThaumicSpeedup/AspectThread-0/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.tconstruct.slime_vine_blue@32767 in void beacon registration; this can result in invalid result blocks
-[ThaumicSpeedup/AspectThread-0/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.tconstruct.slime_vine_blue_mid@32767 in void beacon registration; this can result in invalid result blocks
-[ThaumicSpeedup/AspectThread-0/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.tconstruct.slime_vine_blue_end@32767 in void beacon registration; this can result in invalid result blocks
-[ThaumicSpeedup/AspectThread-0/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.tconstruct.slime_vine_purple@32767 in void beacon registration; this can result in invalid result blocks
-[ThaumicSpeedup/AspectThread-0/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.tconstruct.slime_vine_purple_mid@32767 in void beacon registration; this can result in invalid result blocks
-[ThaumicSpeedup/AspectThread-0/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.tconstruct.slime_vine_purple_end@32767 in void beacon registration; this can result in invalid result blocks
-[ThaumicSpeedup/AspectThread-0/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.cactus@32767 in void beacon registration; this can result in invalid result blocks
+[AE2 CSV Export/WARN] [AE2:C]: Could not export subtypes of: tile.architecturecraft.shape
 [Client thread/ERROR] [net.minecraft.client.Minecraft]: ########## GL ERROR ##########
 [Client thread/ERROR] [net.minecraft.client.Minecraft]: @ Post startup
 [Client thread/ERROR] [net.minecraft.client.Minecraft]: 1280: Invalid enum

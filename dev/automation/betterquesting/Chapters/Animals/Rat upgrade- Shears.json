@@ -1,73 +1,57 @@
 {
-  "_index": "650:10",
+  "_index": "1062:10",
   "_pos": {
-    "_index": "15:10",
+    "_index": "43:10",
     "_data": {
-      "id:3": 650,
-      "sizeX:3": 32,
-      "sizeY:3": 32,
-      "x:3": 0,
-      "y:3": 172
+      "id:3": 1062,
+      "sizeX:3": 24,
+      "sizeY:3": 24,
+      "x:3": -168,
+      "y:3": 114
     }
   },
   "_data": {
     "preRequisites:11": [
-      635
+      723
     ],
     "properties:10": {
       "betterquesting:10": {
         "autoclaim:1": 0,
-        "autoClaim:8": "false",
-        "desc:8": "bq.quest650.desc",
+        "desc:8": "bq.quest1062.desc",
         "globalshare:1": 0,
-        "globalShare:8": "false",
         "icon:10": {
           "Count:3": 1,
           "Damage:2": 0,
-          "id:8": "thaumcraft:smelter_basic",
+          "id:8": "rats:rat_upgrade_shears",
           "OreDict:8": ""
         },
         "ismain:1": 0,
-        "isMain:8": "false",
         "issilent:1": 0,
-        "isSilent:8": "true",
         "lockedprogress:1": 1,
-        "lockedProgress:8": "true",
-        "name:8": "bq.quest650.name",
-        "partysinglereward:1": 0,
-        "partySingleReward:8": "false",
-        "questLogic:8": "AND",
+        "name:8": "bq.quest1062.name",
         "questlogic:8": "AND",
         "repeat_relative:1": 1,
         "repeattime:3": -1,
-        "repeatTime:4": -1,
         "simultaneous:1": 0,
         "snd_complete:8": "minecraft:entity.player.levelup",
         "snd_update:8": "minecraft:entity.player.levelup",
         "tasklogic:8": "AND",
-        "taskLogic:8": "AND",
         "visibility:8": "ALWAYS"
       }
     },
-    "questID:3": 650,
+    "questID:3": 1062,
     "rewards:9": {
       "0:10": {
-        "choices:9": {
+        "index:3": 0,
+        "rewardID:8": "bq_standard:item",
+        "rewards:9": {
           "0:10": {
             "Count:3": 1,
-            "Damage:2": 75,
+            "Damage:2": 101,
             "id:8": "bq_standard:loot_chest",
             "OreDict:8": ""
-          },
-          "1:10": {
-            "Count:3": 60,
-            "Damage:2": 1,
-            "id:8": "thaumcraft:curio",
-            "OreDict:8": ""
           }
-        },
-        "index:3": 0,
-        "rewardID:8": "bq_standard:choice"
+        }
       }
     },
     "tasks:9": {
@@ -76,19 +60,13 @@
         "consume:1": 0,
         "groupDetect:1": 0,
         "ignoreNBT:1": 1,
-        "index:3": 0,
+        "index:3": 1,
         "partialMatch:1": 1,
         "requiredItems:9": {
           "0:10": {
             "Count:3": 1,
             "Damage:2": 0,
-            "id:8": "thaumcraft:smelter_basic",
-            "OreDict:8": ""
-          },
-          "1:10": {
-            "Count:3": 1,
-            "Damage:2": 0,
-            "id:8": "thaumcraft:alembic",
+            "id:8": "rats:rat_upgrade_shears",
             "OreDict:8": ""
           }
         },

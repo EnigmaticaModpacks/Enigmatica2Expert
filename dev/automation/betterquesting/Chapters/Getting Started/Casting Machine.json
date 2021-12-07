@@ -52,13 +52,13 @@
             "OreDict:8": ""
           },
           "1:10": {
-            "Count:3": 8,
+            "Count:3": 16,
             "Damage:2": 0,
             "id:8": "minecraft:ice",
             "OreDict:8": ""
           },
           "2:10": {
-            "Count:3": 8,
+            "Count:3": 16,
             "Damage:2": 0,
             "id:8": "biomesoplenty:hard_ice",
             "OreDict:8": ""

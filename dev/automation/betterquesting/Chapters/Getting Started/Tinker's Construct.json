@@ -51,11 +51,9 @@
     "questID:3": 605,
     "rewards:9": {
       "0:10": {
-        "index:3": 0,
-        "rewardID:8": "bq_standard:item",
-        "rewards:9": {
+        "choices:9": {
           "0:10": {
-            "Count:3": 6,
+            "Count:3": 25,
             "Damage:2": 0,
             "id:8": "tconstruct:shard",
             "OreDict:8": "",
@@ -64,7 +62,7 @@
             }
           },
           "1:10": {
-            "Count:3": 3,
+            "Count:3": 20,
             "Damage:2": 0,
             "id:8": "tconstruct:pattern",
             "OreDict:8": ""
@@ -75,7 +73,9 @@
             "id:8": "tconstruct:book",
             "OreDict:8": ""
           }
-        }
+        },
+        "index:3": 0,
+        "rewardID:8": "bq_standard:choice"
       }
     },
     "tasks:9": {

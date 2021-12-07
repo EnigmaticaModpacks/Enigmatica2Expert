@@ -48,12 +48,12 @@
           "0:10": {
             "Count:3": 1,
             "Damage:2": 0,
-            "id:8": "rftools:powercell",
+            "id:8": "rftools:powercell_simple",
             "OreDict:8": ""
           },
           "1:10": {
             "Count:3": 1,
-            "Damage:2": 74,
+            "Damage:2": 75,
             "id:8": "ic2:te",
             "OreDict:8": "",
             "tag:10": {}
