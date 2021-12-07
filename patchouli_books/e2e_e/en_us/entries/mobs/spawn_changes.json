@@ -1,0 +1,44 @@
+{
+  "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
+  "name": "Spawn Changes",
+  "icon": "draconicevolution:mob_soul{EntityName:\"minecraft:enderman\"}",
+  "category": "Mobs",
+  "pages": [
+    {
+      "item": "draconicevolution:mob_soul{EntityName:\"minecraft:enderman\"}",
+      "title": "Enderman",
+      "text": "When spawn in $(n)Overworld/$, 10% of times carry $(n)Compressed End Stone/$, or $(n)End Ore/$ with lower probabilities.",
+      "type": "spotlight"
+    },
+    {
+      "item": "draconicevolution:mob_soul{EntityName:\"emberroot:dire_wolf\"}",
+      "title": "Dire Wolf",
+      "text": "Spawns only in the dark.",
+      "type": "spotlight"
+    },
+    {
+      "item": "draconicevolution:mob_soul{EntityName:\"quark:stoneling\"}",
+      "title": "Stoneling",
+      "text": "Spawns $(n)only on Stone blocks/$ and not more than 3.",
+      "type": "spotlight"
+    },
+    {
+      "item": "draconicevolution:mob_soul{EntityName:\"rats:rat\"}",
+      "title": "Rat",
+      "text": "Spawns only on $(n)Garbage Piles/$.",
+      "type": "spotlight"
+    },
+    {
+      "item": "draconicevolution:mob_soul{EntityName:\"endreborn:watcher\"}",
+      "title": "Watcher",
+      "text": "Spawns in Overworld, only on $(n)any Endstone/$.",
+      "type": "spotlight"
+    },
+    {
+      "item": "draconicevolution:mob_soul{EntityName:\"endreborn:endguard\"}",
+      "title": "Purpur Guard",
+      "text": "Spawns anywhere, but only on $(n)Purpur blocks/$.",
+      "type": "spotlight"
+    }
+  ]
+}

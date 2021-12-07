@@ -100,4 +100,41 @@ export function init(Patchouli_js, helpers) {
       $(li)Output amount based on material cost
       $(li)Also sum more math`,
   }])
+
+
+  // ----------------------------------------------------
+  // Mob spawn changes
+  // ----------------------------------------------------
+  Patchouli_js('Mobs/Spawn Changes', [
+    {
+      item: `draconicevolution:mob_soul{EntityName:"minecraft:enderman"}`,
+      title: "Enderman",
+      _text: `When spawn in $(n)Overworld/$, 10% of times carry $(n)Compressed End Stone/$, or $(n)End Ore/$ with lower probabilities.`
+    },
+    {
+      item: `draconicevolution:mob_soul{EntityName:"emberroot:dire_wolf"}`,
+      title: "Dire Wolf",
+      _text: `Spawns only in the dark.`
+    },
+    {
+      item: `draconicevolution:mob_soul{EntityName:"quark:stoneling"}`,
+      title: "Stoneling",
+      _text: `Spawns $(n)only on Stone blocks/$ and not more than 3.`
+    },
+    {
+      item: `draconicevolution:mob_soul{EntityName:"rats:rat"}`,
+      title: "Rat",
+      _text: `Spawns only on $(n)Garbage Piles/$.`
+    },
+    {
+      item: `draconicevolution:mob_soul{EntityName:"endreborn:watcher"}`,
+      title: "Watcher",
+      _text: `Spawns in Overworld, only on $(n)any Endstone/$.`
+    },
+    {
+      item: `draconicevolution:mob_soul{EntityName:"endreborn:endguard"}`,
+      title: "Purpur Guard",
+      _text: `Spawns anywhere, but only on $(n)Purpur blocks/$.`
+    },
+  ])
 }
