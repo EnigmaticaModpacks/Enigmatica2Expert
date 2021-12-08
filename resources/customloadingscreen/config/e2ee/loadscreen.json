@@ -1,0 +1,218 @@
+{
+  "renders": [
+    {
+      "image": {
+        "parent": "builtin/image",
+        "image": "customloadingscreen:image/background.png",
+        "position": {
+          "width": "screen_width + 1",
+          "height": "screen_height + 1"
+        }
+      }
+    },
+    {
+      "image": {
+        "parent": "builtin/image",
+        "image": "customloadingscreen:image/load_bg.png",
+        "position_type": "BOTTOM_LEFT",
+        "offset_pos": "CENTER_LEFT",
+        "position": {
+          "x": "(screen_width - load_bg_w) / 2",
+          "y": "bottom_bar",
+          "width": "load_bg_w",
+          "height": "32.0 / mult"
+        }
+      }
+    },
+    {
+      "image": {
+        "parent": "builtin/image",
+        "image": "customloadingscreen:image/load_bar.png",
+        "position_type": "BOTTOM_LEFT",
+        "offset_pos": "CENTER_LEFT",
+        "position": {
+          "x": "(screen_width - load_bar_w) / 2",
+          "y": "bottom_bar",
+          "width": "load_bar_w * percentage",
+          "height": "120.0 / mult"
+        },
+        "texture": {
+          "x": "0",
+          "y": "0",
+          "width": "percentage",
+          "height": "1"
+        }
+      }
+    },
+    {
+      "image": {
+        "parent": "builtin/text",
+        "position_type": "BOTTOM_CENTER",
+        "text": "(floor(percentage * 100)) + '.' + (floor(percentage * 1000) % 10) + '%'",
+        "position": {
+          "x": "0",
+          "y": "bottom_bar + (50 / mult)"
+        }
+      }
+    },
+    {
+      "image": {
+        "parent": "builtin/text",
+        "position_type": "BOTTOM_CENTER",
+        "text": "tip_text",
+        "position": {
+          "x": "0",
+          "y": "-24"
+        }
+      }
+    },
+    {
+      "image": {
+        "parent": "builtin/image",
+        "image": "customloadingscreen:image/mojang_logo.png",
+        "position_type": "BOTTOM_RIGHT",
+        "offset_pos": "BOTTOM_RIGHT",
+        "position": {
+          "x": "-5",
+          "y": "-5",
+          "width": "231 / mult",
+          "height": "36 / mult"
+        }
+      }
+    },
+    {
+      "image": {
+        "parent": "builtin/text",
+        "position_type": "TOP_LEFT",
+        "offset_pos": "TOP_LEFT",
+        "text": "' Loading Time: ' + floor(time / 60) + 'm ' + floor((time % 60) / 10) + floor(time % 60 % 10) + 's'",
+        "position": {
+          "x": "0",
+          "y": "25"
+        }
+      }
+    },
+    {
+      "image": {
+        "parent": "builtin/text",
+        "position_type": "TOP_LEFT",
+        "offset_pos": "TOP_LEFT",
+        "text": "' RAM: ' + memory_used() + 'MB / ' + memory_max() + 'MB'",
+        "position": {
+          "x": "0",
+          "y": "15"
+        }
+      }
+    },
+    {
+      "image": {
+        "parent": "builtin/text",
+        "position_type": "TOP_RIGHT",
+        "offset_pos": "TOP_RIGHT",
+        "text": "'(' + floor(mem_percent * 100) + '% Used) '",
+        "position": {
+          "x": "0",
+          "y": "15"
+        },
+        "colour": "mem_color"
+      }
+    },
+    {
+      "image": {
+        "parent": "builtin/image",
+        "image": "customloadingscreen:image/ram_bg.png",
+        "position_type": "TOP_LEFT",
+        "offset_pos": "TOP_LEFT",
+        "position": {
+          "x": "ram_margin",
+          "y": "ram_margin",
+          "width": "screen_width - ram_margin * 2",
+          "height": "18 / mult"
+        }
+      }
+    },
+    {
+      "image": {
+        "parent": "builtin/image",
+        "image": "customloadingscreen:image/ram_bar.png",
+        "position_type": "TOP_LEFT",
+        "offset_pos": "TOP_LEFT",
+        "position": {
+          "x": "ram_margin + 1",
+          "y": "ram_margin + 1",
+          "width": "(screen_width - (ram_margin + 1) * 2) * mem_bars",
+          "height": "10 / mult"
+        },
+        "texture": {
+          "width": "mem_bars",
+          "height": "1"
+        }
+      }
+    },
+    {
+      "image": {
+        "parent": "builtin/image",
+        "image": "customloadingscreen:image/banner.png",
+        "position_type": "TOP_CENTER",
+        "offset_pos": "TOP_CENTER",
+        "position": {
+          "x": "0",
+          "y": "floor(screen_height * 0.125)",
+          "width": "(1193.0 / mult)",
+          "height": "( 395.0 / mult)"
+        }
+      }
+    }
+  ],
+  "variables": {
+    "mem_percent": "((floor(memory_used() * 100) + 0.0) / (floor(memory_max() * 100) + 0.0))",
+    "mem_bars": "floor(mem_percent * 100.0) / 100.0",
+    "mem_color": "(mem_percent < 0.7) ? 0x25c200 : ((mem_percent < 0.8) ? 0xfb9f0f : ((mem_percent < 0.9) ? 0xfe5825 : 0xff2e2d))",
+    "w_mult": "pow(2, floor(1.0 / (( screen_width+200.0) / 1850.0)))",
+    "h_mult": "pow(2, floor(1.0 / ((screen_height+200.0) / 1060.0)))",
+    "mult": "max(w_mult, h_mult)",
+    "load_bg_w": "1502.0 / mult",
+    "load_bar_w": "1578.0 / mult",
+    "bottom_bar": "-50",
+    "ram_margin": "4.0",
+    "max_scroll_count": "screen_height / (5 * 6)",
+    "sub_status_ex": "(sub_status == 'zerocore:debugtool') ? 'GreedyCraft Tip: It is gonna be stuck here for a while...' : sub_status",
+    "scroll_text": "status + (is_reloading ? '' : (' - ' + sub_status_ex))",
+    "tip_text": "(has_tips() & tip_interval > 0) ? tip(random_int(tip_seed, floor(time / tip_interval), tip_count())) : ''"
+  },
+  "constants": {
+      "tip_interval": 10.0,
+      "tip_seed": "generate_seed()"
+  },
+  "functions": {
+    "log2(int n)": "log(n) / log(2)"
+  },
+  "factories": [
+    {
+      "parent": "builtin/change",
+      "change": "scroll_text",
+      "variables": {
+        "factory_age": "factory_count - factory_index"
+      },
+      "kept_variables": {
+        "factory_status": "scroll_text"
+      },
+      "to_create": {
+        "should_render": "factory_age < max_scroll_count",
+        "image": {
+          "parent": "builtin/text",
+          "image": "textures/font/ascii.png",
+          "position_type": "BOTTOM_LEFT",
+          "offset_pos": "BOTTOM_LEFT",
+          "text": "factory_status + (factory_age == 1 ? ( is_reloading ? ' - ' + sub_status_ex : '') : '')",
+          "position": {
+            "x": "25",
+            "y": "(factory_index - factory_count) * 10 - 55"
+          },
+          "colour": "0xFFFFFF | (0x01_00_00_00 * (0xFF - 0xFF * factory_age / max_scroll_count).max(0x20))"
+        }
+      }
+    }
+  ],
+  "actions": []
+}

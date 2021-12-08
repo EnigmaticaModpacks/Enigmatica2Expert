@@ -1,0 +1,69 @@
+Can see through some of the blocks? Disable VBOs in video settings.
+Enabling VSync lower FPS.
+Armor damage reductions are reworked in this modpack. 
+Many vanilla tools have durability 1. Easy to repair and melt them.
+Harder Branch Mining starts from Y level 45.
+If you load faster then 3 minutes - report to modpack author.
+Modpack load 10 minutes average. 3 min - last known record.
+You have 4 extra bauble ring slots.
+If your game crashes without a warning, Your game most probably ran out of memory.
+FTB Utilities chunk loading disabled.
+FTB Utilities chunk claiming not preventing explosions.
+Using Lag Goggles and Spark is part of gaming process.
+AE2 alternatives: EnderIO, Integrated Dynamics, Thermal Logistics.
+AE2 controller avaliable only in late game.
+You should craft Ore Excavation modifier or get one from early quests.
+options.txt loads automatically if you havn't one already.
+Place your Quest Book into Crafting Grid to turn imto Modpack Guide.
+To start Skyblock mode, just create new Void World.
+Getting lag when you have just joined a world is normal.
+"Extended" addon have over +190 mods comparing to original E2E.
+Despite "Extended" +190 mods, its loads only 30% slower than E2E.
+"Extended" addon developing starts from 2019.
+First "Extended" addon change was nerfing Slime Boots + Slime Sling combo.
+Each new recipe develop took about 10-30 minutes.
+During developing process E2E-E uses JavaScript code to automate modpack.
+Forestry's Bees have proper integration, but you can finish modpack without them.
+Suggest mod you want to add - `E2E-E` open for new stuff.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
