@@ -75,109 +75,32 @@
       "y2": 1.0,
       "z2": 1.0
     }
-  },
-  {
-    "resourceName": "infernal_furnace",
-    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
-  },
-  {
-    "resourceName": "liquid_interaction",
-    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
-  },
-  {
-    "resourceName": "everflow_chalice",
-    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
-  },
-  {
-    "resourceName": "liquid_heat_exchanger",
-    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
-  },
-  {
-    "resourceName": "neromantic_prime",
-    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
-  },
-  {
-    "resourceName": "scented_hive",
-    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
-  },
-  {
-    "resourceName": "oc_printer3d",
-    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
-  },
-  {
-    "resourceName": "electronics_assembler",
-    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
-  },
-  {
-    "resourceName": "cc_printer",
-    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
-  },
-  {
-    "resourceName": "witch_water",
-    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
-  },
-  {
-    "resourceName": "meteor",
-    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
-  },
-  {
-    "resourceName": "turbine",
-    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
-  },
-  {
-    "resourceName": "heat_exchanger",
-    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
-  },
-  {
-    "resourceName": "forestry_farm",
-    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
-  },
-  {
-    "resourceName": "xp_bottler",
-    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
-  },
-  {
-    "resourceName": "nether_portal_spread",
-    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
-  },
-  {
-    "resourceName": "lens_of_the_miner",
-    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
-  },
-  {
-    "resourceName": "petro_petunia",
-    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
-  },
-  {
-    "resourceName": "syngas_producer",
-    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
-  },
-  {
-    "resourceName": "garden_cloche",
-    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
-  },
-  {
-    "resourceName": "typewriter",
-    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
-  },
-  {
-    "resourceName": "excavator",
-    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
-  },
-  {
-    "resourceName": "mineralis",
-    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
-  },
-  {
-    "resourceName": "chemthrower",
-    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
-  },
-  {
-    "resourceName": "expire_in_block",
-    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
-  },
-  {
-    "resourceName": "barrel_milking",
-    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
   }
+  ,{"resourceName": "infernal_furnace"     , "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}}
+  ,{"resourceName": "liquid_interaction"   , "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}}
+  ,{"resourceName": "everflow_chalice"     , "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}}
+  ,{"resourceName": "liquid_heat_exchanger", "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}}
+  ,{"resourceName": "neromantic_prime"     , "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}}
+  ,{"resourceName": "scented_hive"         , "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}}
+  ,{"resourceName": "oc_printer3d"         , "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}}
+  ,{"resourceName": "electronics_assembler", "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}}
+  ,{"resourceName": "cc_printer"           , "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}}
+  ,{"resourceName": "witch_water"          , "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}}
+  ,{"resourceName": "meteor"               , "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}}
+  ,{"resourceName": "turbine"              , "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}}
+  ,{"resourceName": "heat_exchanger"       , "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}}
+  ,{"resourceName": "forestry_farm"        , "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}}
+  ,{"resourceName": "xp_bottler"           , "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}}
+  ,{"resourceName": "nether_portal_spread" , "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}}
+  ,{"resourceName": "lens_of_the_miner"    , "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}}
+  ,{"resourceName": "petro_petunia"        , "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}}
+  ,{"resourceName": "syngas_producer"      , "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}}
+  ,{"resourceName": "garden_cloche"        , "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}}
+  ,{"resourceName": "typewriter"           , "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}}
+  ,{"resourceName": "excavator"            , "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}}
+  ,{"resourceName": "mineralis"            , "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}}
+  ,{"resourceName": "chemthrower"          , "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}}
+  ,{"resourceName": "expire_in_block"      , "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}}
+  ,{"resourceName": "barrel_milking"       , "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}}
+  ,{"resourceName": "entity_kill_entity"   , "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}}
 ]

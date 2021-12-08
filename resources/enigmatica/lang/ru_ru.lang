@@ -244,6 +244,7 @@ requious.jei.recipe.typewriter=Печатная машинка
 requious.jei.recipe.chemthrower=Химический распылитель
 requious.jei.recipe.expire_in_block=Пропадает в блоке
 requious.jei.recipe.barrel_milking=Доение Бочкой
+requious.jei.recipe.entity_kill_entity=Существо убивает Существо
 
 tile.adv_bee_analyzer.name=Расширенный Анализатор
 tile.infinity_furnace.name=Печь Бесконечности

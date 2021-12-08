@@ -1035,3 +1035,16 @@ add_barrel_milking(Soul("industrialforegoing:pink_slime"), <liquid:if.pink_slime
 add_barrel_milking(Soul("rats:neo_ratlantean")           , <liquid:crystal_matrix>     * 1   , 20);
 
 /**/
+
+
+// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+x = <assembly:entity_kill_entity>;
+x.addJEICatalyst(<randomthings:slimecube>);
+addInsOuts(x, [[0,0],[2,0]], [[4,0]]);
+x.setJEIDurationSlot(1,0,"duration0", getVisGauge(3,6));
+x.setJEIDurationSlot(3,0,"duration1", SlotVisual.arrowRight());
+
+function add_entity_kill_entity(entity1 as IIngredient, entity2 as IIngredient, output as IItemStack) as void {
+  add(<assembly:entity_kill_entity>, {[entity1, entity2] as IIngredient[] : [output]});
+}
