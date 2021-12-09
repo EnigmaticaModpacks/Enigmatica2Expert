@@ -19,9 +19,9 @@
 import fs_extra from 'fs-extra'
 const { unlink, writeFileSync } = fs_extra
 import { promisify } from 'util'
-import { getModsIds, formatRow } from './modsDiff.js'
+import { getModsIds, formatRow } from './automation/modsDiff.js'
 import { getMod } from 'mc-curseforge-api'
-import { loadText, escapeRegex, loadJson, saveObjAsJson, defaultHelper, saveText } from '../lib/utils.js'
+import { loadText, escapeRegex, loadJson, saveObjAsJson, defaultHelper, saveText } from './lib/utils.js'
 import _ from 'lodash'
 import replace_in_file from 'replace-in-file'
 import { execSync, exec as _exec } from 'child_process'
@@ -102,7 +102,7 @@ export async function init(h=defaultHelper) {
   const commitMap = getCommitMap(old_version)
 
   const changelogStructure = parseChangelogStructure(
-    loadText(relative('data/changelog_structure.md'))
+    loadText(relative('automation/data/changelog_structure.md'))
   )
 
   const blacklistedCategories = filterCommitMap(commitMap, changelogStructure)
@@ -233,7 +233,7 @@ async function getModChanges(version, nextVersion, h=defaultHelper) {
   const promises = ['added','removed','updated'].map(
     group=>Promise.all(
       modsDiff[group].map(
-        (/** @type {import('./modsDiff.js').InstalledAddon} */ m) =>{
+        (/** @type {import('./automation/modsDiff.js').InstalledAddon} */ m) =>{
           const p = getMod(m.addonID)
           p.then(()=>h.step())
           counstGets++
@@ -321,7 +321,7 @@ function makeModsChangelogBetter(nextModsChangelogs) {
 
 let forgeVersion
 function generateManifest(mcinstancePath, version, manifestPostfix='') {
-  /** @type {import('./modsDiff.js').InstalledAddon[]} */
+  /** @type {import('./automation/modsDiff.js').InstalledAddon[]} */
   const installedAddons = loadJson(mcinstancePath).installedAddons
 
   const manifestTemplate = {
