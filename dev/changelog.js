@@ -26,12 +26,11 @@ import _ from 'lodash'
 import replace_in_file from 'replace-in-file'
 import { execSync, exec as _exec } from 'child_process'
 const exec = promisify(_exec)
-import yargs from 'yargs'
+import { generateManifest } from './lib/manifest.js'
 
-const argv = yargs(process.argv.slice(2))
-  .alias('n', 'next')
-  .describe('n', 'Next version')
-  .argv
+import yargs from 'yargs'
+const {argv} = yargs(process.argv.slice(2))
+  .alias('n', 'next').describe('n', 'Next version')
 
 import { URL, fileURLToPath  } from 'url' // @ts-ignore
 function relative(relPath) { return fileURLToPath(new URL(relPath, import.meta.url)) }
@@ -274,17 +273,18 @@ async function getModChanges(version, nextVersion, h=defaultHelper) {
   }
 
   // Generate manifests for later use in changelog generator
-  generateManifest(minecraftinstance_old, version, '_old')
-  generateManifest('minecraftinstance.json', nextVersion)
+  generateManifest(version, minecraftinstance_old, '_old')
+  generateManifest(nextVersion)
 
   h.begin('Retrieving mod detailed changelogs', 10)
-  const nextModsChangelogs = `changelogs/CHANGELOG_MODS_${nextVersion}.md`
+  const nextModsChangelogsFile = `CHANGELOG_MODS_${nextVersion}.md`
+  const nextModsChangelogsFull = `changelogs/${nextModsChangelogsFile}`
   const chgenCommand = 'java -jar ./ChangelogGenerator-2.0.0-pre10.jar -m'+
     ' --old="manifest_old.json"'+
     ' --new="manifest.json"'+
     ' --entries=5'+
     ' --lines=60'+
-    ` --output=${nextModsChangelogs}`
+    ` --output=${nextModsChangelogsFull}`
   
   await runProcess(chgenCommand, data => {
     const projectID = data.match(/^.*projectID=(\d+)/)?.[1]
@@ -292,20 +292,21 @@ async function getModChanges(version, nextVersion, h=defaultHelper) {
   })
 
   // Remove file if there is no changes at all
-  if(loadText(nextModsChangelogs).split('\n').length <= 4) {
-    unlink(nextModsChangelogs)
+  if(loadText(nextModsChangelogsFull).split('\n').length <= 4) {
+    unlink(nextModsChangelogsFull)
   } else {
-    result += makeModsChangelogBetter(nextModsChangelogs)
+    makeModsChangelogBetter(nextModsChangelogsFull)
+    result += `\n## [> Mods updates detailed.](${nextModsChangelogsFile})\n\n`
   }
 
   return result
 }
 
 /**
- * @param {string} nextModsChangelogs
+ * @param {string} nextModsChangelogsFull
  */
-function makeModsChangelogBetter(nextModsChangelogs) {
-  const newChangelogText = loadText(nextModsChangelogs)
+function makeModsChangelogBetter(nextModsChangelogsFull) {
+  const newChangelogText = loadText(nextModsChangelogsFull)
   .replace(/(?<prefix>^####.*$)(?<body>([\s\S\n](?!\n##)){1,})/gmi,
   (/** @type {any[]} */ ...args)=>{
     /** @type {{[key:string]:string}} */
@@ -314,42 +315,9 @@ function makeModsChangelogBetter(nextModsChangelogs) {
   })
   .replace(/^## (Added|Removed)[\s\n]+(\*\s[^\n]+\n)+/gmi, '')
 
-  saveText(newChangelogText, nextModsChangelogs)
-  
-  return `\n## [> Mods updates detailed.](${nextModsChangelogs})\n\n`
+  saveText(newChangelogText, nextModsChangelogsFull)
 }
 
-let forgeVersion
-function generateManifest(mcinstancePath, version, manifestPostfix='') {
-  /** @type {import('./automation/modsDiff.js').InstalledAddon[]} */
-  const installedAddons = loadJson(mcinstancePath).installedAddons
-
-  const manifestTemplate = {
-    minecraft: {
-      version: '1.12.2',
-      modLoaders: [{
-          id: forgeVersion ??= `forge-${loadText('logs/debug.log').match(/Forge Mod Loader version ([^\s]+) for Minecraft 1.12.2 loading/)[1]}`,
-          primary: true
-      }]
-    },
-    manifestType: 'minecraftModpack',
-    manifestVersion: 1,
-    name: 'Enigmatica2Expert-Extended',
-    version: version,
-    author: 'Krutoy242',
-    overrides: 'overrides',
-    files: installedAddons.map(a=>({
-      projectID: a.addonID,
-      fileID: a.installedFile?.id,
-      required: true,
-    })).sort((a,b)=>a.projectID-b.projectID)
-  }
-
-  saveObjAsJson(
-    manifestTemplate
-    ,`manifest${manifestPostfix}.json`
-  )
-}
 
 /*
 ██╗   ██╗████████╗██╗██╗     ███████╗

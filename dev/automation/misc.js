@@ -159,13 +159,14 @@ export async function init(h=defaultHelper, options = argv) {
     Heavy Sieve automatically recipes
 
   */
+  await h.begin('Heavy Sieve automatically recipes')
   const blocksToCopy = [
     ['exnihilocreatio:block_andesite_crushed', 'contenttweaker:compressed_crushed_andesite'],
     ['exnihilocreatio:block_diorite_crushed' , 'contenttweaker:compressed_crushed_diorite'],
     ['exnihilocreatio:block_granite_crushed' , 'contenttweaker:compressed_crushed_granite'],
     ['exnihilocreatio:block_skystone_crushed', 'contenttweaker:compressed_crushed_skystone'],
     ['enderio:block_infinity', 'enderio:block_infinity:1'],
-    ['ore:blockGunpowder', 'additionalcompression:dustgunpowder_compressed:1'],
+    ['additionalcompression:dustgunpowder_compressed', 'additionalcompression:dustgunpowder_compressed:1'],
   ]
   const sieveRegistry = loadJson('config/exnihilocreatio/SieveRegistry.json')
   const heavySievePath = 'config/ExCompressum/HeavySieve.json'

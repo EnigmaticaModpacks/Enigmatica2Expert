@@ -30,21 +30,24 @@ const allEnabledMods = globs('mods/*.jar')
 const totalModsLength = allEnabledMods.length + alreadyDisabled.length
 
 
+/** @type {Array<string>} */
+const registeredMods = []
 const reduceLevel = []
 function addReduceLevel(name, description, modListText) {
+  const         files = getMods(modListText)
+  const disabledFiles = getMods(modListText, true)
+  registeredMods.push(...files)
+  registeredMods.push(...disabledFiles)
   reduceLevel.push({
     name,
     description, 
-    files: getMods(modListText),
-    disabledFiles: getMods(modListText, true),
+    files, disabledFiles,
   })
 }
 
 const getLevelText = (i)=> chalk.rgb(244, 255 - (255/reduceLevel.length*i)|0, 59)(reduceLevel[i].name)
 const getFileName = (s) => s.replace(/^.*[\\/]/, '')
 
-// console.log('allEnabledMods :>> ', allEnabledMods.map(getFileName).slice(20))
-// process.exit()
 
 function exit() {
   // term`\nDone!`
@@ -125,6 +128,7 @@ addReduceLevel('Soft', 'Remove client-only mods, that has impact on performance.
 betteranimals-
 DynamicSurroundings
 Sound-Physics-
+CustomLoadingScreen-
 `)
 
 addReduceLevel('Server Safe', 'Remove all client-only mods, still multiplayer safe.', `
@@ -142,9 +146,23 @@ NetherPortalFix_
 LagGoggles-
 tellme-
 TickCentral-
+versioner-
+scalingguis-
+smooth-scrolling-everywhere-
+Fakename
+DefaultWorldGenerator-port-
+bookdisplay-
 `)
 
 addReduceLevel('Maximum Speedup', 'Items and blocks would be removed\nQuest Rewards and Requirments would be replaced to placeholders\nLoot Boxes would output placeholders', `
+TS2K16-
+thaumicwonders-
+ping-
+LetMeSleep-
+GamblingStyle-
+betterp2p-
+AquaAcrobatics-
+VillageNames-
 ThermalInnovation-
 PotionCore-
 BiomeTweaker-
@@ -289,6 +307,13 @@ ModularController-
 `)
 
 addReduceLevel('CraftTweaker test', 'Main mods disabled. Most stuff erroring. Unplayable.', `
+VanillaFix-
+TinkersOreDictCache-
+mod-director-launchwrapper-
+persistency-
+loliasm-
+AIReducer-
+oauth-
 journeymap-
 Mantle-
 StorageDrawers-
@@ -539,6 +564,7 @@ TinkerToolLeveling-
 `)
 
 addReduceLevel('Remove Everything', 'Every single mod disabled. But what for?', `
+OptiFine_
 GameStages-
 BetterFps-
 ContentTweaker-
@@ -562,5 +588,12 @@ Wawla-
 zenutils-
 base-
 `)
+
+
+console.log('unregistered mods :>> ', 
+  _.difference(allEnabledMods, _.uniq(registeredMods))
+  .map(getFileName)
+)
+process.exit()
 
 init()

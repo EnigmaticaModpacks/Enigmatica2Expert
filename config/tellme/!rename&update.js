@@ -18,7 +18,7 @@ export async function init(h=defaultHelper) {
   _(readdirSync(relative()).filter(f => f.match(/^.*\.(csv|txt)$/)))
   .groupBy(o=>o.replace(/^([\w-]+?)_.*\.(csv|txt)$/, '$1.$2'))
   .forEach((list, key) => {
-    list.shift()
+    if(list.length > 1) list.shift()
     if(list.length <= 0) return
     rename(relative(list.pop()), relative(key))
     list.forEach(f => unlink(relative(f)))

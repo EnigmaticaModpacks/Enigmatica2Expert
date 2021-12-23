@@ -18,7 +18,7 @@
 // NodeJS dependencies
 process.env.NODE_PATH+=':/dev/lib' // eslint-disable-line no-undef
 
-import { readdirSync, rmdirSync, mkdir, renameSync } from 'fs'
+import { readdirSync, rmSync, mkdir, renameSync } from 'fs'
 import { relative as _relative, resolve } from 'path'
 import { snakeCase } from 'snake-case'
 import glob from 'glob'
@@ -394,7 +394,7 @@ async function writeResult(stat, book, h=defaultHelper) {
 
   // Remove old trash can contents
   const garbagePath = relative('./garbage')
-  rmdirSync(garbagePath, { recursive: true })
+  rmSync(garbagePath, { recursive: true })
 
   // Move old patchouli files
   mkdir(garbagePath, { recursive: true }, (err) => {

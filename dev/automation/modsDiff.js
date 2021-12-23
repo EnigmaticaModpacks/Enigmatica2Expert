@@ -8,9 +8,9 @@
 //@ts-check
 
 import { getMod } from 'mc-curseforge-api'
-import { injectInFile, loadJson, defaultHelper } from '../lib/utils.js'
+import { injectInFile, loadJson, defaultHelper, loadText } from '../lib/utils.js'
 import _ from 'lodash'
-import { getModLoadTimeTuples } from './benchmark.js'
+import { getModLoadTimeTuples } from 'mc-benchmark'
 
 export function getModsIds(json_Path_A, json_Path_B) {
 
@@ -69,15 +69,17 @@ const exceptionsList = [
  */
 function getSquare(modName, fileName) {
   if(exceptionsList.includes(modName)) return '🟪'
+
+  const tuples = getModLoadTimeTuples(loadText('logs/debug.log'))
   
   const loadTime = 
-    getModLoadTimeTuples().find(  ([m])=>m===modName)?.[1] ??
-    getModLoadTimeTuples().find(([,,m])=>m===fileName)?.[1] ??
-    getModLoadTimeTuples().find(  ([m])=>m.startsWith(modName))?.[1]
+    tuples.find(  ([m])=>m===modName)?.[1] ??
+    tuples.find(([,,m])=>m===fileName)?.[1] ??
+    tuples.find(  ([m])=>m.startsWith(modName))?.[1]
 
   if (isNaN(loadTime)) return '🟫'
 
-  const rate = loadTime / _.sumBy(getModLoadTimeTuples(), '1')
+  const rate = loadTime / _.sumBy(tuples, '1')
 
   if(rate < 0.0001) return '🟩'
   if(rate < 0.001 ) return '🟨'

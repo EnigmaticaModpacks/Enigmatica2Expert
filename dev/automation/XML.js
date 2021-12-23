@@ -17,59 +17,30 @@ import { getExtra } from '../lib/jaopca.js'
 import { getByOreKind, getByOreBase, getOreBases_byKinds } from '../lib/tellme.js'
 import { naturalSort, globs, loadText, defaultHelper } from '../lib/utils.js'
 
+/** @typedef {import("xml-js").Element} XMLElement*/
+
+import yargs from 'yargs'
+const argv = yargs(process.argv.slice(2))
+  .alias('d', 'dryrun').describe('d', 'Do not add/remove recipes, just format files')
+  .argv
+
 export async function init(h=defaultHelper) {
-
-  await h.begin('Reading crafttweaker.log')
-
-  /** @type {{[filePath: string]: string[]}} */
-  const changesText = {}
-  let total = 0
-
-  for (const {groups} of loadText('crafttweaker.log').matchAll(
-      /^\[INITIALIZATION\]\[CLIENT\]\[INFO\] Put this recipe in file \[(\.\/)?(?<filename>[^\]]*?)\] manually.\n\r?(?<recipe>(\s*<!--(.*)-->\n\r?)?([\s\S\n\r]*?<\/[rR]ecipe>))/gm
-  )) {
-    (changesText[groups.filename] ??= []).push(groups.recipe)
-    total++
-  }
-
-  _(getCustomRecipes()).forEach((arr, filePath)=>
-    (changesText[filePath] ??= []).push(...arr)
-  )
-
-
-  function countInputs(a) {
-    const recipe = a.elements.find(o => o.name?.toLowerCase() === 'recipe').elements
-    const inputs = 
-      recipe.find(o => o.name?.toLowerCase() === 'input')?.elements
-      ??
-      recipe.find(o => o.type === 'element')?.elements.filter(e=>e.type==='element' && e.name.includes('input'))
-
-    return inputs.length
-  }
-
-  // Sort recipes inside changes to prevent object shuffling
-  const changes = _(changesText).mapValues(arr=>arr
-    .map(recipe => xml2js(recipe, {compact: false}))
-    .sort((a, b) => countInputs(b) - countInputs(a) || naturalSort(JSON.stringify(a), JSON.stringify(b)))
-  ).value()
-
-  await h.begin('Injecting in files', Object.keys(changes).length)
-
-  function mutateXml(filePath, fnc) {
-    const xml = loadText(filePath)
-    const obj = xml2js(xml, {compact: false})
-    if(fnc) fnc(obj)
-    const XML = js2xml(obj, {spaces: detectIndent(xml).indent || '	'})
-    writeFileSync(filePath, XML)
-  }
-
-  const automaticComment = ' Recipe below generated automatically. Do not make changes or they gonna be rewritten. '
 
   // List of curated files and folders
   const curatedFiles = globs([
     'config/advRocketry/*.xml',
     'config/enderio/recipes/user/user_recipes.xml'
   ]).map(p=>relative(process.cwd(),p).replace(/\\/g,'/'))
+
+  await h.begin('Curating XML files', curatedFiles.length)
+
+  const automaticComment = ' Recipe below generated automatically. Do not make changes or they gonna be rewritten. '
+
+  const changes = !argv['dryrun']
+    ? (await h.begin('Reading crafttweaker.log'), getChanges())
+    : {}
+
+  let totalNewRecipes = 0
 
   for (const filePath of curatedFiles) {
     mutateXml(filePath, xml_obj => {
@@ -95,17 +66,68 @@ export async function init(h=defaultHelper) {
         recipeXml.elements.forEach(e => {
           recipeList.push(e)
         })
-        // h.step()
+        totalNewRecipes++
       }
     })
     h.step()
   }
   
-  h.result(`Total XML recipes: ${total}`)
+  h.result(`Total automatic XML recipes: ${totalNewRecipes}`)
 }
 
 // @ts-ignore
 if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()
+
+/** @param {string} xmlString */
+function xml_to_js(xmlString) {
+  return /** @type {XMLElement} */(xml2js(xmlString, {compact: false}))
+}
+
+/** @return {{[filePath: string]: XMLElement[]}} */
+function getChanges(h=defaultHelper) {
+  /** @type {{[filePath: string]: string[]}} */
+  const changesText = {}
+
+  for (const {groups} of loadText('crafttweaker.log').matchAll(
+      /^\[INITIALIZATION\]\[CLIENT\]\[INFO\] Put this recipe in file \[(\.\/)?(?<filename>[^\]]*?)\] manually.\n\r?(?<recipe>(\s*<!--(.*)-->\n\r?)?([\s\S\n\r]*?<\/[rR]ecipe>))/gm
+  )) {
+    (changesText[groups.filename] ??= []).push(groups.recipe)
+  }
+
+  _(getCustomRecipes()).forEach((arr, filePath)=>
+    (changesText[filePath] ??= []).push(...arr)
+  )
+
+
+  /** @param {XMLElement} a */
+  function countInputs(a) {
+    const recipe = a.elements.find(o => o.name?.toLowerCase() === 'recipe').elements
+    const inputs = 
+      recipe.find(o => o.name?.toLowerCase() === 'input')?.elements
+      ??
+      recipe.find(o => o.type === 'element')?.elements.filter(e=>e.type==='element' && e.name.includes('input'))
+
+    return inputs.length
+  }
+
+  // Sort recipes inside changes to prevent object shuffling
+  return _(changesText).mapValues(arr=>arr
+    .map(xml_to_js)
+    .sort((a, b) => countInputs(b) - countInputs(a) || naturalSort(JSON.stringify(a), JSON.stringify(b)))
+  ).value()
+}
+
+/**
+ * @param {string} filePath
+ * @param {{ (xml_obj: XMLElement): void }} xmlObjectMutationCB
+ */
+function mutateXml(filePath, xmlObjectMutationCB) {
+  const xml = loadText(filePath)
+  const obj = xml_to_js(xml)
+  if(xmlObjectMutationCB) xmlObjectMutationCB(obj)
+  const XML = js2xml(obj, {spaces: detectIndent(xml).indent || '	'})
+  writeFileSync(filePath, XML)
+}
 
 /**
  * @param {string} input

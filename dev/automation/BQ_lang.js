@@ -11,6 +11,11 @@
 import { writeFileSync } from 'fs'
 import { isPathHasChanged, naturalSort, loadText, loadJson, defaultHelper } from '../lib/utils.js'
 
+import yargs from 'yargs'
+const argv = yargs(process.argv.slice(2))
+  .alias('f', 'forced').describe('f', 'Force rewrite existen changed files')
+  .argv
+
 const validCodes = [
   'en_us',
   'ru_ru',
@@ -21,12 +26,17 @@ const defaultQuests_path = 'config/betterquesting/DefaultQuests.json'
 /** @type {Object<string, string>[]} */
 let langFiles
 
+/** @type {Set<string>} */
+let usedLangCodes = new Set()
+
 let totalChanges = 0
 
 export async function init(h=defaultHelper) {
-  await h.begin('Checking requirments')
-  if(isPathHasChanged(defaultQuests_path) || validCodes.map(getLangPath).some(isPathHasChanged)) {
-    return h.error('\nQuests or Langs have changes!')
+  if(!argv['forced']) {
+    await h.begin('Checking requirments')
+    if(isPathHasChanged(defaultQuests_path) || validCodes.map(getLangPath).some(isPathHasChanged)) {
+      return h.error('\nQuests or Langs have changes!')
+    }
   }
 
   langFiles = validCodes.map(getLangFile)
@@ -35,18 +45,18 @@ export async function init(h=defaultHelper) {
   const bq_raw = loadJson(defaultQuests_path)
 
   // Quests
-  Object.entries(bq_raw['questDatabase:9']).forEach(([_,q])=>{
+  Object.entries(bq_raw['questDatabase:9']).forEach(([,q])=>{
     checkAndAdd(q, 'quest'+q['questID:3'], 'name')
     checkAndAdd(q, 'quest'+q['questID:3'], 'desc')
   })
 
   // Chapters
-  Object.entries(bq_raw['questLines:9']).forEach(([_,q])=>{
+  Object.entries(bq_raw['questLines:9']).forEach(([,q])=>{
     checkAndAdd(q, 'chapter'+q['lineID:3'], 'name')
     checkAndAdd(q, 'chapter'+q['lineID:3'], 'desc')
   })
 
-  if(totalChanges) save_DefaultQuests_json(bq_raw)
+  if(totalChanges > 0) save_DefaultQuests_json(bq_raw)
 
   // Save lang files
   validCodes.forEach((code, i) => saveLang(code, langFiles[i]))
@@ -107,12 +117,16 @@ function checkAndAdd(json_obj, lang_root, fieldName) {
 
   if(isLangCode(text)) {
     if(langFiles[0][text] === undefined) undefinedLangCode(text)
+    usedLangCodes.add(text)
     return
   }
 
   const langCode = 'bq.'+lang_id
   langFiles.forEach(l=>l[langCode] = text)
-  if(bq_props[bq_key] !== langCode) totalChanges++
+  if(bq_props[bq_key] !== langCode) {
+    totalChanges++
+    usedLangCodes.add(langCode)
+  }
   bq_props[bq_key] = langCode
 }
 
@@ -131,17 +145,17 @@ function undefinedLangCode(langCode) {
 
 /**
  * @param {string} langCode
- * @param {Object<string, string>} langFile
+ * @param {{[langCode: string]: string}} langFile
  */
 function saveLang(langCode, langFile) {
   const lFile = Object.entries(langFile)
-  
-  lFile.sort(([a_key],[b_key])=>{
+  .filter(([langCode]) => usedLangCodes.has(langCode))
+  .sort(([a_key],[b_key])=>{
     const [,a1,a2] = a_key.split('.')
     const [,b1,b2] = b_key.split('.')
     //@ts-ignore
     return naturalSort(a1, b1) || b2 - a2
-  })
+  })  
 
   writeFileSync(getLangPath(langCode), 
     lFile.map(([k,v]) =>

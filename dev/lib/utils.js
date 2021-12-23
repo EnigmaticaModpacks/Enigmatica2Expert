@@ -15,7 +15,7 @@ import { statSync, readFileSync, writeFileSync, mkdirSync } from 'fs'
 import { basename, resolve, dirname } from 'path'
 import replace_in_file from 'replace-in-file'
 import del from 'del'
-import csvParseSync from 'csv-parse/lib/sync.js'
+import { parse as csvParseSync } from 'csv-parse/sync'
 import { execSync } from 'child_process'
 import pdf from 'pdf-parse/lib/pdf-parse.js'
 import chalk from 'chalk'
@@ -428,6 +428,7 @@ export function least_common_multiplier(...arr) {
  * @property {typeof console.log} warn
  * @property {typeof console.error} error
  * @property {boolean} [isUnfinishedTask]
+ * @property {string} [taskResult]
  */
 
 /**
@@ -461,5 +462,6 @@ export const defaultHelper = {
   error: function (...s) { process.stdout.write(`🛑 ${chalk.dim.red   (`${s.join('\t')}`)}`) },
 
   isUnfinishedTask: false,
+  taskResult: ''
 }
 

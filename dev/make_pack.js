@@ -13,27 +13,35 @@
 //@ts-check
 import { execSync } from 'child_process'
 import fs_extra from 'fs-extra'
-const { statSync, rmdirSync, mkdir, copySync, existsSync } = fs_extra
-import { join, relative as _relative } from 'path'
-import { write, end, globs, saveText } from './lib/utils.js'
+const { statSync, rmSync, mkdirSync, copySync, existsSync, renameSync } = fs_extra
+
+import { join, relative as _relative, resolve } from 'path'
+import { write, end, saveText, loadText } from './lib/utils.js'
 import { init as rusificate } from './lang/rusificate.js'
 import { sync as delSync } from 'del'
+import parseGitignore from 'parse-gitignore'
+import _ from 'lodash'
+import fast_glob from 'fast-glob'
+const { sync: globs } = fast_glob
+
 import chalk from 'chalk'
+
+import simpleGit from 'simple-git'
+const git = simpleGit()
+
+import git_describe from 'git-describe'
+const { gitDescribeSync } = git_describe
+
 import yargs from 'yargs'
-
 const argv = yargs(process.argv.slice(2))
-  .alias('f', 'forced')
-  .describe('f', 'Ignore all checks')
-
-  .alias('d', 'dryRun')
-  .describe('d', 'Not create .zip files')
-
-  .alias('l', 'localSkip')
-  .describe('l', 'Do not change local server files')
-
-  .help('h')
+  .alias('f', 'forced')   .describe('f', 'Ignore all checks')
+  .alias('d', 'dryRun')   .describe('d', 'Not create .zip files')
+  .alias('l', 'localSkip').describe('l', 'Do not change local server files')
+  .alias('o', 'old').describe('o', 'Do not clear previous files in TMP folder, and not clone')
   .alias('h', 'help')
   .argv
+
+;(async ()=>{
 
 /**
  * @param {string} from
@@ -43,9 +51,12 @@ function relative(from, to) {
   return _relative(to ? from : process.cwd(), to ?? from)
 }
 
-const doTask = (/** @type {string} */ s, /** @type {() => void} */ fn) => {
+const doTask = (/** @type {string} */ s, /** @type {() => void} */ fn, /** @type {string} */ relative) => {
+  const oldCwd = process.cwd()
+  if(relative) process.chdir(relative)
   write(chalk.green(s))
   end(fn())
+  if(relative) process.chdir(oldCwd)
 }
 
 function copyFileSync(src, dest, options) {
@@ -53,20 +64,14 @@ function copyFileSync(src, dest, options) {
   return copySync(src, dest, options)
 }
 
-function globsRelative(relativePath, globsList) {
-  const oldCWD = process.cwd()
-  process.chdir(relativePath)
-  const result = globs(globsList)
-  process.chdir(oldCWD)
-  return result
-}
-
 const mcClientPath    = process.cwd()
 const sZPath          = 'D:/Program Files/7-Zip/7z.exe'
 const distrDir        = 'D:/MEGA_LD-LocksTO/Enigmatica/Distributable/'
-const serverPath      = 'D:/mc_server/E2E-Extended-Server/'
+const localServerPath = 'D:/mc_server/Primary E2E-E server Skyblock/'
 const serverOverrides = 'D:/MEGA_LD-LocksTO/Enigmatica/server-overrides/'
+const serverRoot      = resolve(mcClientPath, 'server/')
 const tmpDir          = 'D:/mc_tmp/'
+const tmpOverrides    = resolve(tmpDir, 'overrides/')
 
 /*
  ██████╗██╗  ██╗███████╗ ██████╗██╗  ██╗███████╗
@@ -77,12 +82,13 @@ const tmpDir          = 'D:/mc_tmp/'
  ╚═════╝╚═╝  ╚═╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚══════╝
 */
 
-function gitExec(/** @type {string} */strCommand) {
-  return execSync('git '+strCommand).toString().trim()
-}
+// function gitExec(/** @type {string} */strCommand) {
+//   return execSync('git '+strCommand).toString().trim()
+// }
 
 write(`\n${chalk.gray('-'.repeat(10))}\nVersion: `)
-const version = gitExec('describe --tags --abbrev=0')
+// const version = gitExec('describe --tags --abbrev=0')
+const version = gitDescribeSync().tag
 end(chalk.bold.yellow(version))
 
 const zipPath_base    = `${distrDir}E2E-Extended_${version}`
@@ -106,11 +112,11 @@ check(
 )
 
 check(
-  parseInt(gitExec('rev-list --count HEAD'    )) - parseInt(gitExec('rev-list --count '+version)) > 1,
+  (await git.log({from:version, to:'HEAD'})).total > 1,
   '❌ There is commits after tag. You probably forget add tag'
 )
 
-const lastTagDate = gitExec('show -s --format=%cd '+version).split('\n').pop()
+const lastTagDate = await git.show(['-s', '--format=%cd', version])
 const lastTagHoursPassed = (Date.now() - Date.parse(lastTagDate)) / (1000*60*60)
 check(
   lastTagHoursPassed > 10,
@@ -132,65 +138,32 @@ check(
 ╚═╝     ╚═╝  ╚═╝╚══════╝╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
 */
 
-doTask(`🪓 Clearing tmp folder ${tmpDir} ... `, ()=>{
-  rmdirSync(tmpDir, { recursive: true })
-  mkdir(tmpDir, { recursive: true }, (err) => {if (err) throw err})
-})
-
 doTask(`🪓 Removing old zip files ... `, ()=>
   delSync([zipPath_EN, zipPath_server, zipPath_RU], { force: true }).length
 )
 
-//! ///////////////////////////////////////////////////////////////
-// Change Working Directory
-process.chdir(tmpDir)
-//! ///////////////////////////////////////////////////////////////
+if(!argv['old']) {
+  doTask(`🪓 Clearing tmp folder ${tmpDir} ... `, ()=>{
+    try { rmSync(tmpDir, { recursive: true }) } catch(err) {}
+    mkdirSync(tmpOverrides, { recursive: true })
+  })
 
-doTask(`👬 Cloning latest tag to ${tmpDir} ... \n`, ()=>{
-  execSync(`git clone --depth 1 --branch ${version} "${mcClientPath}" .`)
-})
+  doTask(`👬 Cloning latest tag to ${tmpOverrides} ... \n`, ()=>{
+    execSync(`git clone --depth 1 "file://${mcClientPath}" .`, {stdio: 'inherit'})
+  }, tmpOverrides)
+}
 
-const ruOnlyList = globs([
-  'resourcepacks/*',
-  '!resourcepacks/Better+Gendustry*.zip',
-  '!resourcepacks/bq_lootchests',
-]).map(f=>relative(f))
+const devonlyIgnore = parseGitignore(loadText('dev/.devonly.ignore'))
+doTask(`🧹 Removing non-release files and folders ... `, ()=>{
+  const removeFromEveryPackage = globs(devonlyIgnore, {dot: true, onlyFiles: false})
+  return 'removed: ' + delSync(removeFromEveryPackage, {dryRun: false}).length
+}, tmpOverrides)
 
-// Files to remove from all distributable packages
-const removeGlob = [
-  '*',
-  '.git',
-  '.gitignore',
-  '.gitattributes',
-  'scripts/debug.zs',
-  'config/tellme',
-  'mods/OptiFine_*.jar',
-
-  // Folders to keep
-  '!config',
-  '!minemenu',
-  '!patchouli_books',
-  '!resourcepacks',
-  '!shaderpacks',
-  '!resources',
-  '!schematics',
-  '!scripts',
-  '!structures',
-
-  // Remove files that would be added after to RU zip
-  ...ruOnlyList,
-
-  // Remove Mod-depended files
-  'config/Extended item information.cfg',
-  'config/satako.cfg',
-  'config/Probe.cfg',
-  'config/advancementscreenshot.cfg',
-  'config/sampler.ini',
-]
-
-doTask(`🧹 Removing non-release files and folders ... `, ()=>
-  'removed: ' + delSync(removeGlob, {dryRun: false}).length
-)
+if(!argv['old']) {
+  doTask(`⬅️ Move manifest.json ... `, ()=>
+    renameSync('manifest.json', resolve(tmpDir, 'manifest.json'))
+  , tmpOverrides)
+}
 
 /*
 ███████╗██╗██████╗ 
@@ -201,8 +174,11 @@ doTask(`🧹 Removing non-release files and folders ... `, ()=>
 ╚══════╝╚═╝╚═╝     
 */
 
+/**
+ * @param {string} zipPath
+ */
 function withZip(zipPath) {
-  return (params, comand='a') => {
+  return (/** @type {string | string[]} */ params, comand='a') => {
     if(argv['dryRun']) {
       write(`\n${comand==='d'?'➖':'➕'} ${chalk.bgRgb(10,10,10).rgb(30,30,30)(zipPath)+ ' ' + chalk.gray(params)}`)
     } else {
@@ -230,28 +206,10 @@ function withZip(zipPath) {
 
 ********************************************************/
 
-let modsExcludedFromAllPackages = [
-  '!mods/Extended Item Information*.jar',
-  '!mods/Satako*.jar',
-  '!mods/probe-*.jar',
-  '!mods/advancementscreenshot_*.jar',
-  '!mods/sampler-*.jar',
-  '!mods/IconExporter-*.jar',
-  '!mods/clientfixer-*.jar',
-]
-doTask(`🏴󠁧󠁢󠁥󠁮󠁧󠁿 Create EN .zip ... `, ()=>{
-  // Mods that would be copied to all packages
-  process.chdir(mcClientPath)
+doTask(`🏴󠁧󠁢󠁥󠁮󠁧󠁿 Create EN .zip ... \n`, ()=>{
   const zip = withZip(zipPath_EN)
-  const fileList = globs(['mods/*.jar', ...modsExcludedFromAllPackages])
-    .map(f=>relative(f))
-  write('\n Adding mods files\n')
-  zip(fileList)
-  process.chdir(tmpDir)
-  
-  write('\n Adding all other files\n')
   zip('.')
-})
+}, tmpDir)
 
 /********************************************************
 
@@ -264,87 +222,9 @@ doTask(`🏴󠁧󠁢󠁥󠁮󠁧󠁿 Create EN .zip ... `, ()=>{
 
 ********************************************************/
 
-const serverFilesList = globs([
-  '*',
-  '!minemenu',
-  '!resourcepacks',
-  // '!resources',
-  // 'resources/**/*.lang',
-])
-
-const serverModsList = globsRelative(mcClientPath, [
-  'mods/*',
-  ...modsExcludedFromAllPackages,
-
-  // List of client side mods only
-  // Get from debug.log by "client side only." search
-  '!mods/BetterAdvancements*.jar',
-  '!mods/betteranimals-*.jar',
-  '!mods/BetterFps*.jar',
-  '!mods/bilingualname*.jar',
-  '!mods/Biome Border Viewer*.jar',
-  '!mods/blockdrops-*.jar',
-  '!mods/BQTweaker*.jar',
-  '!mods/ChatTweaks_*.jar',
-  '!mods/ChunkAnimator*.jar',
-  '!mods/Controlling-*.jar',
-  '!mods/CTM-MC1*.jar',
-  '!mods/CustomBackgrounds-*.jar',
-  '!mods/CustomMainMenu*.jar',
-  '!mods/DamageTilt*.jar',
-  '!mods/DefaultOptions*.jar',
-  '!mods/Ding-*.jar',
-  '!mods/DiscordSuite*.jar',
-  '!mods/DynamicSurroundings*.jar',
-  '!mods/dynamistics-*.jar',
-  '!mods/ears-forge-*.jar',
-  '!mods/FpsReducer*.jar',
-  '!mods/grid-*.jar',
-  '!mods/IconExporter*.jar',
-  '!mods/InvMove*.jar',
-  '!mods/jetif-*.jar',
-  '!mods/just-enough-harvestcraft-*.jar',
-  '!mods/JustEnoughPetroleum-*.jar',
-  '!mods/JustEnoughResources-*.jar',
-  '!mods/justthetips*.jar',
-  '!mods/keywizard*.jar',
-  '!mods/lootcapacitortooltips-*.jar',
-  '!mods/MemoryTester*.jar',
-  '!mods/MineMenu*.jar',
-  '!mods/moreoverlays-*.jar',
-  '!mods/MouseTweaks*.jar',
-  '!mods/Neat*.jar',
-  '!mods/NoNVFlash*.jar',
-  '!mods/notifymeonstart*.jar',
-  '!mods/OldJavaWarning-*.jar',
-  '!mods/OreLib*.jar', // Dynamic Surroundings lib
-  '!mods/overloadedarmorbar-*.jar',
-  '!mods/ping-*.jar',
-  '!mods/potiondescriptions-*.jar',
-  '!mods/ReAuth*.jar',
-  '!mods/ReBind*.jar',
-  '!mods/ShoulderSurfing*.jar',
-  '!mods/Sound-Physics-*.jar',
-  '!mods/ThaumicJEI-*.jar',
-  '!mods/Tips-*.jar',
-  '!mods/TipTheScales-*.jar',
-  '!mods/Toast Control-*.jar',
-  '!mods/torohealth*.jar',
-  '!mods/toughnessbar*.jar',
-  '!mods/WailaHarvestability-mc*.jar',
-  // '!mods/justenoughdrags-*.jar', would not working if not installed on server
-
-  '!mods/gamestagesviewer-*.jar',
-
-  // Not sure
-/* 
-  '!mods/gendustryjei*.jar',
-  '!mods/jeibees*.jar',
-  '!mods/jeivillagers*.jar',
-  '!mods/JustEnoughReactors*.jar',
-  '!mods/mekanismfluxified*.jar',
-*/
-])
+const serveronlyIgnore = parseGitignore(loadText('dev/.serveronly.ignore'))
+const serverFilesList = globs(serveronlyIgnore, { cwd: tmpOverrides, dot: true, onlyFiles: false })
+const serverModsList = globs(serveronlyIgnore, { ignore: devonlyIgnore, dot: true, onlyFiles: false }).filter(f=>f.startsWith('mods/'))
 
 /********************************************************
   LOCAL MACHINE
@@ -352,52 +232,61 @@ const serverModsList = globsRelative(mcClientPath, [
 doTask('💻 Installing local server ... ', ()=>{
   if(argv['localSkip']) return 'localSkip - skip local server install'
   if(!argv['dryRun']) {
-    rmdirSync(`${serverPath}/mods/`   , { recursive: true }); write('.')
-    rmdirSync(`${serverPath}/config/` , { recursive: true }); write('.')
-    rmdirSync(`${serverPath}/scripts/`, { recursive: true }); write('.')
+    write('\n Deleting old server directories: '+chalk.gray([...serverFilesList, 'mods']))
+    delSync(serverFilesList, { cwd: localServerPath })
+    delSync(['mods'], { cwd: localServerPath })
   }
 
-  serverFilesList.forEach(copyToServer(process.cwd()))
-  serverModsList.forEach(copyToServer(mcClientPath))
+  write('\n Copying new files and mods ')
+  serverFilesList.forEach(copyToServerFrom(tmpOverrides))
+  serverModsList.forEach(copyToServerFrom(mcClientPath))
 
-  copyFileSync(serverOverrides, serverPath, {overwrite: true})
+  // Copy secrets overrides like Discord Integration configs
+  copyFileSync(serverOverrides, localServerPath, {overwrite: true})
+
+  // Automatically override files if server set to voidworld
+  if(loadText(join(localServerPath, 'server.properties')).match(/level-type\s*=\s*voidworld/gmi)) {
+    write('\n Copying skyblock overrides ')
+    copyFileSync('dev/skyblock_overrides', localServerPath, {overwrite: true})
+  }
 })
 
 /**
  * @param {string} relativeSource
  */
-function copyToServer(relativeSource) { 
+function copyToServerFrom(relativeSource='./') { 
   return (/** @type {string} */ fPath, /** @type {number} */ i)=>{
     if(i%50==0) write('.')
-    copyFileSync(
-      fPath,
-      join(serverPath, relative(relativeSource, fPath)), 
-      {overwrite: true}
-    )
+    const from = join(relativeSource, fPath)
+    const to   = join(localServerPath, fPath)
+    copyFileSync(from,to,{overwrite: true})
   }
 }
 
 /********************************************************
   DISTRIBUTABLE
 ********************************************************/
-doTask('📥 Create server zip ... ', ()=>{
-  copyFileSync(zipPath_EN, zipPath_server, {overwrite: true})
+
+
+doTask('📥 Create server zip ... \n', ()=>{
   const zip = withZip(zipPath_server)
-  const serverFilesDelete = [
-    ...globs(['*', ...serverFilesList.map(f => '!'+relative(f))])     .map(f => relative(f)),
-    ...globsRelative(mcClientPath, ['mods/*']).filter(f=>!serverModsList.includes(f)).map(f => relative(mcClientPath, f)),
-  ]
+  zip('.')
 
   // Delete
-  write('\n Deleting server files\n')
-  zip(serverFilesDelete, 'd')
-  
+  write('\n Deleting excess server files\n')
+  const serverRemoveList = globs('*', { ignore: serverFilesList, cwd: tmpOverrides, dot: true, onlyFiles: false })
+  zip(serverRemoveList, 'd')
+
   // Add default Server overrites
-  process.chdir(join(mcClientPath, 'server/'))
   write('\n Add server root files\n')
+  process.chdir(serverRoot)
   zip('.')
-  process.chdir(tmpDir)
-})
+
+  // Add mods
+  write('\n Add server mods\n')
+  process.chdir(mcClientPath)
+  zip(serverModsList)
+}, tmpOverrides)
 
 /********************************************************
 
@@ -409,7 +298,7 @@ doTask('📥 Create server zip ... ', ()=>{
 ╚═╝  ╚═╝ ╚═════╝ 
 
 ********************************************************/
-
+/* 
 doTask('📥 Create RU zip ... ', () => {
   copyFileSync(zipPath_EN, zipPath_RU, {overwrite: true})
   const zip = withZip(zipPath_RU)
@@ -430,3 +319,5 @@ doTask('📥 Create RU zip ... ', () => {
   write('\n')
   zip(rusificate())
 })
+ */
+})()

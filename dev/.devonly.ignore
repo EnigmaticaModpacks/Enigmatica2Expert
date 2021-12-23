@@ -1,0 +1,41 @@
+# .gitignore-alike list of files and derictories
+# that should be ignored when exporting package
+*
+scripts/debug.zs
+config/tellme
+
+# Remove Mod-depended files
+config/Extended item information.cfg
+config/satako.cfg
+config/Probe.cfg
+config/advancementscreenshot.cfg
+config/sampler.ini
+
+# Files and Folders to keep
+!manifest.json
+!config
+!minemenu
+!patchouli_books
+!resourcepacks
+!shaderpacks
+!resources
+!schematics
+!scripts
+!structures
+
+# Ru-only files
+resourcepacks/*
+!resourcepacks/Better+Gendustry*.zip
+!resourcepacks/bq_lootchests
+
+# Mods to ignore
+mods/Extended Item Information*
+mods/Satako*
+mods/probe-*
+mods/advancementscreenshot_*
+mods/sampler-*
+mods/IconExporter-*
+mods/clientfixer-*
+mods/dcintegration-*
+mods/DiscordIntegration-*
+mods/OptiFine_*
