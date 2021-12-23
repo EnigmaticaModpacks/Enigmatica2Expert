@@ -26,8 +26,6 @@ structures/inactive
 !manifest.json
 
 # Files created by luncher
-config/splash.properties
-
 config/creativecore-client.json
 config/InvTweaks.cfg
 config/MouseTweaks.cfg
