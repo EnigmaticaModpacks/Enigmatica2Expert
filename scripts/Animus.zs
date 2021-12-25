@@ -31,3 +31,8 @@ recipes.addShaped("animus_kama_diamond", <animus:kama_diamond>, [
 	[<ore:gemDiamond>, null, <ore:blockDiamond>], 
 	[null, null, <forestry:oak_stick>]
 ]);
+
+# Fix bucket of dirt
+recipes.removeByRecipeName("animus:dirtbucket");
+recipes.addShapeless("animus_dirtbucket", Bucket("blockfluiddirt"), [
+	<minecraft:redstone_torch>, <animus:sigil_consumption>.reuse(), <minecraft:bucket>]);
