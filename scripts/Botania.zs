@@ -208,17 +208,31 @@ mods.botania.Orechid.addOre("oreProsperity", 900);
 //mods.botania.ManaInfusion.addConjuration(IItemStack output, IIngredient input, int mana);
 #mods.botania.ManaInfusion.addConjuration(<minecraft:stone>, <minecraft:stone>, 1000);
 
-## *======= Botanical Brewing =======*
-	//InputArray, BrewString
-	//mods.botania.Brew.addRecipe([<minecraft:nether_wart>, <minecraft:reeds>, <minecraft:redstone>], "speed");
-	//BrewString
-	//mods.botania.Brew.removeRecipe("absorption"); 
 
-## *======= Elven Trade =======*
-	//OutputArray, InputArray
-	//mods.botania.ElvenTrade.addRecipe([<botania:flower:4>], [<minecraft:yellow_flower>]);
-	//OutputArray
-	//mods.botania.ElvenTrade.removeRecipe([<botania:dreamwood>]);
+#----- Sapling Cycling -----#
+
+# Remove vanilla loop
+mods.botania.ManaInfusion.removeRecipe(<minecraft:sapling>);
+
+# Add modded in loop
+var saplings = [
+	<minecraft:sapling:5>,
+	<ic2:sapling>,
+	<integrateddynamics:menril_sapling>,
+	<quark:variant_sapling>,
+	<quark:variant_sapling:1>,
+	<rustic:sapling>,
+	<rustic:sapling:1>,
+	<rustic:sapling_apple>,
+	<thaumcraft:sapling_greatwood>,
+	<thaumcraft:sapling_silverwood>,
+	<minecraft:sapling>,
+] as IItemStack[];
+for i, sapling in saplings {
+	if (i != 0) {
+		mods.botania.ManaInfusion.addAlchemy(saplings[i], saplings[i - 1], 120);
+	}
+}
 
 ## *======= Orechid =======*
 	//InputOredict, Weight
