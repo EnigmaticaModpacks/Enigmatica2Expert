@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 #modloaded mysticalagriculture
 
 # Enderman Chunks -> Ender Pearls
@@ -690,3 +691,23 @@ scripts.process.recycleMetal(<mysticalagriculture:watering_can:1>, <mysticalagri
 scripts.process.recycleMetal(<mysticalagriculture:watering_can:2>, <mysticalagriculture:crafting:35> * 4, <liquid:intermedium> * (144*4), null);
 scripts.process.recycleMetal(<mysticalagriculture:watering_can:3>, <mysticalagriculture:crafting:36> * 4, <liquid:superium> * (144*4), null);
 scripts.process.recycleMetal(<mysticalagriculture:watering_can:4>, <mysticalagriculture:crafting:37> * 4, <liquid:supremium> * (144*4), null);
+
+
+# Missed 4 types of dyes from [Dye Essence]
+val dyeEssence = {x: <mysticalagriculture:dye_essence>} as IIngredient[string];
+craft.make(<biomesoplenty:green_dye> * 4, ["pretty",
+	"x    ",
+	"  x  ",
+	"x    "], dyeEssence);
+craft.make(<biomesoplenty:brown_dye> * 4, ["pretty",
+	"  x  ",
+	"    x",
+	"  x  "], dyeEssence);
+craft.make(<biomesoplenty:blue_dye> * 4, ["pretty",
+	"    x",
+	"  x  ",
+	"    x"], dyeEssence);
+craft.make(<biomesoplenty:white_dye> * 4, ["pretty",
+	"  x  ",
+	"x    ",
+	"  x  "], dyeEssence);
