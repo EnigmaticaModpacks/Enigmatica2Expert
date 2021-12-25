@@ -118,4 +118,8 @@ craft.make(<thaumcraft:salis_mundus>, ["DEFCAB"], {
   }, true /* True for shapeless */);
 
 
+# Add/Override aspects
+<forestry:candle>.setAspects(<aspect:lux>*20, <aspect:herba>*5, <aspect:aer>*5);
+<forestry:stump>.setAspects(<aspect:lux>*20, <aspect:herba>*5, <aspect:aer>*5);
+<forestry:beeswax>.setAspects(<aspect:lux>*5, <aspect:aer>*2);
 	
