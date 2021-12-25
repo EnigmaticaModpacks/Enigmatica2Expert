@@ -234,6 +234,9 @@ var listCatFur as string[] = [
 "iceandfire:dragonbone"               ,"0"   , "8"  , # Dragon Bone
 "iceandfire:myrmex_desert_chitin"     ,"0"   , "8"  , # Desert Myrmex Chitin
 "iceandfire:myrmex_jungle_chitin"     ,"0"   , "8"  , # Jungle Myrmex Chitin
+"iceandfire:deathworm_chitin"         ,"0"   , "5"  , # Tan Death Worm Chitin
+"iceandfire:deathworm_chitin"         ,"1"   , "5"  , # White Death Worm Chitin
+"iceandfire:deathworm_chitin"         ,"2"   , "5"  , # Red Death Worm Chitin
 "iceandfire:stymphalian_bird_feather" ,"0"   , "40" , # Stymphalian Bird Feather
 "iceandfire:witherbone"               ,"0"   , "8"  , # Witherbone
 "immersiveengineering:bullet"         ,"0"   , "15" , # Empty Casing
