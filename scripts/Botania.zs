@@ -192,10 +192,15 @@ import crafttweaker.item.IIngredient as IIngredient;
 	recipes.addShapeless("Petal Duplication14", <botania:petal:14> * 4, [<botania:petal:14>, <ore:fertilizer>, <ore:fertilizer>, <ore:fertilizer>, <ore:fertilizer>]);
 	recipes.addShapeless("Petal Duplication15", <botania:petal:15> * 4, [<botania:petal:15>, <ore:fertilizer>, <ore:fertilizer>, <ore:fertilizer>, <ore:fertilizer>]);
 
-	
-## *======= Mana Infusion =======*
-//mods.botania.ManaInfusion.addInfusion(IItemStack output, IIngredient input, int mana);
-#mods.botania.ManaInfusion.addInfusion(<minecraft:grass>, <ore:stone>, 1000);
+# Remove unused ORE
+mods.botania.Orechid.removeOre("oreYellorite");
+
+# Add missed ORE
+mods.botania.Orechid.addOre("oreThorium", 1285);
+mods.botania.Orechid.addOre("oreMagnesium", 1285);
+mods.botania.Orechid.addOre("oreLithium", 1285);
+mods.botania.Orechid.addOre("oreBoron", 1285);
+mods.botania.Orechid.addOre("oreProsperity", 900);
 
 //mods.botania.ManaInfusion.addAlchemy(IItemStack output, IIngredient input, int mana);
 #mods.botania.ManaInfusion.addAlchemy(<minecraft:gold_ore>, <ore:stone>, 5000);
@@ -203,23 +208,43 @@ import crafttweaker.item.IIngredient as IIngredient;
 //mods.botania.ManaInfusion.addConjuration(IItemStack output, IIngredient input, int mana);
 #mods.botania.ManaInfusion.addConjuration(<minecraft:stone>, <minecraft:stone>, 1000);
 
-## *======= Botanical Brewing =======*
-	//InputArray, BrewString
-	//mods.botania.Brew.addRecipe([<minecraft:nether_wart>, <minecraft:reeds>, <minecraft:redstone>], "speed");
-	//BrewString
-	//mods.botania.Brew.removeRecipe("absorption"); 
 
-## *======= Elven Trade =======*
-	//OutputArray, InputArray
-	//mods.botania.ElvenTrade.addRecipe([<botania:flower:4>], [<minecraft:yellow_flower>]);
-	//OutputArray
-	//mods.botania.ElvenTrade.removeRecipe([<botania:dreamwood>]);
+#----- Sapling Cycling -----#
 
-## *======= Orechid =======*
-	//InputOredict, Weight
-	//mods.botania.Orechid.addOre(<ore:logWood>, 5000);
-	//InputOredict
-	//mods.botania.Orechid.removeOre(<ore:oreIron>);
+# Remove vanilla loop
+mods.botania.ManaInfusion.removeRecipe(<minecraft:sapling>);
+
+# Add modded in loop
+var saplings = [
+	<minecraft:sapling:5>,
+	<ic2:sapling>,
+	<integrateddynamics:menril_sapling>,
+	<quark:variant_sapling>,
+	<quark:variant_sapling:1>,
+	<rustic:sapling>,
+	<rustic:sapling:1>,
+	<rustic:sapling_apple>,
+	<thaumcraft:sapling_greatwood>,
+	<thaumcraft:sapling_silverwood>,
+	<minecraft:sapling>,
+] as IItemStack[];
+for i, sapling in saplings {
+	if (i != 0) {
+		mods.botania.ManaInfusion.addAlchemy(saplings[i], saplings[i - 1], 120);
+	}
+}
+
+
+# Colored Glass -> Quark Cave Crystals
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassWhite>,  <quark:crystal>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassRed>,    <quark:crystal:1>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassOrange>, <quark:crystal:2>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassYellow>, <quark:crystal:3>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassLime>,   <quark:crystal:4>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassCyan>,   <quark:crystal:5>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassBlue>,   <quark:crystal:6>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassPurple>, <quark:crystal:7>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassBlack>,  <quark:crystal:8>);
 
 ## *======= Petal Apothecary =======*
 	//OutputStack, InputArray

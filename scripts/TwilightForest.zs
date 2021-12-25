@@ -43,7 +43,7 @@ val rockRecycleTable as IItemStack[][IIngredient] = {
 };
 
 for input, output in rockRecycleTable{
-  scripts.process.crushRock(input, output, "No exceptions");
+  scripts.process.crushRock(input, output, [0.8, 0.3, 0.1], "No exceptions");
 }
 
 # Gold minotaur axe
@@ -52,3 +52,7 @@ scripts.process.recycleMetal(<twilightforest:minotaur_axe_gold>, <minecraft:gold
 # Diamond minotaur axe
 scripts.process.crush(<twilightforest:minotaur_axe>, <minecraft:diamond> * 11,
   "No Exceptions", [<ic2:dust:5> * 5] as IItemStack[], [0.25f] as float[]);
+
+# Increasing the durability of Twilight Forest rare items
+<twilightforest:crumble_horn>.maxDamage = 4096; # Orig: 1024
+<twilightforest:ore_magnet>.maxDamage = 128; # Orig: 16

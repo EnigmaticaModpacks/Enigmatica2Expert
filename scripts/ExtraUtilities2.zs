@@ -179,6 +179,10 @@
 	[<extrautils2:drum:2>, <extrautils2:drum:2>, <extrautils2:drum:2>], 
 	[<tconstruct:large_plate>.withTag({Material: "xu_demonic_metal"}), <extrautils2:klein>, <tconstruct:large_plate>.withTag({Material: "xu_demonic_metal"})]]);
 
+
+# More efficient cut enderpearl into pieces
+scripts.process.mash(<minecraft:ender_pearl> , <extrautils2:endershard> * 16, null);
+
 # Klein Flask
 	recipes.remove(<extrautils2:klein>);
 	recipes.addShapedMirrored("Klein Flask", 

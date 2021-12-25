@@ -130,7 +130,7 @@ scripts.process.extract(<ore:fish>,           <nuclearcraft:gelatin> * 4, "excep
 scripts.process.crush(<nuclearcraft:roasted_cocoa_beans>, <nuclearcraft:ground_cocoa_nibs>, "except: manufactory", null, null);
 recipes.addShapeless("Crush Cocoa", <nuclearcraft:ground_cocoa_nibs>, [<ore:pestleAndMortar>, <nuclearcraft:roasted_cocoa_beans>]);
 
-scripts.process.squeeze(<nuclearcraft:ground_cocoa_nibs>, <liquid:cocoa_butter> * 144, "except: FluidExtractor", <nuclearcraft:cocoa_solids>);
+scripts.process.squeeze([<nuclearcraft:ground_cocoa_nibs>], <liquid:cocoa_butter> * 144, "except: FluidExtractor", <nuclearcraft:cocoa_solids>);
 
 scripts.process.compress(<harvestcraft:flouritem> * 2, <nuclearcraft:graham_cracker>, "except: Pressurizer");
 
@@ -141,3 +141,73 @@ scripts.process.electrolyze(<fluid:koh>                *666,  [<fluid:potassium>
 scripts.process.electrolyze(<fluid:alumina>            *144,  [<fluid:aluminum>   *288, <fluid:oxygen>    *3000], "except: NCElectrolyzer");
 scripts.process.electrolyze(<fluid:heavywater>         *1000, [<fluid:deuterium>  *1000, <fluid:tritium>  *50, <fluid:oxygen>*500], "except: NCElectrolyzer");
 scripts.process.electrolyze(<fluid:ic2heavy_water>     *1000, [<fluid:deuterium>  *1000, <fluid:tritium>  *50, <fluid:oxygen>*500], "except: NCElectrolyzer");
+
+# Quartz -> [Quarts dust] (nuclearcraft) wrong output fix
+val qwrong = <nuclearcraft:gem_dust:2>;
+val qdust = <appliedenergistics2:material:3>;
+recipes.removeByRecipeName("thermalfoundation:gem_dust");
+mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:quartz_ore>, <bloodmagic:cutting_fluid>]);
+mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:quartz_ore>);
+mods.immersiveengineering.Crusher.removeRecipesForInput(<minecraft:quartz>);
+mods.mekanism.crusher.removeRecipe(qwrong);
+mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:quartz>);
+scripts.process.crush(<ore:gemQuartz>, qdust, "only: iecrusher aegrinder mekcrusher", null, null);
+
+# Bioplastic process
+scripts.process.extract(<ore:sugarcane> * 2, <ore:bioplastic>.firstItem, "except: manufactory extractor");
+
+
+# Supercooled Ice compat
+scripts.process.fill(<ore:ice>, <fluid:liquidhelium> * 50, <nuclearcraft:block_ice>, "only: Transposer");
+
+# ----------------------------------
+# Remove worthless recipes
+for fluid in [
+   "hea_242", "heb_248","hecf_249","hecf_251","hecm_243",
+  "hecm_245","hecm_247", "hen_236", "hep_239", "hep_241",
+   "heu_233", "heu_235", "lea_242", "leb_248","lecf_249",
+  "lecf_251","lecm_243","lecm_245","lecm_247", "len_236",
+   "lep_239", "lep_241", "leu_233", "leu_235",     "tbu"
+] as string[] {
+	mods.nuclearcraft.salt_mixer.removeRecipeWithOutput([
+		game.getLiquid("depleted_fuel_"~fluid~"_fluoride_flibe")*288
+	]);
+
+	mods.nuclearcraft.chemical_reactor.removeRecipeWithOutput([
+		game.getLiquid("depleted_fuel_"~fluid~"_fluoride")*144,  null
+	]);
+
+	mods.nuclearcraft.electrolyser.removeRecipeWithInput([
+		game.getLiquid("fuel_"~fluid~"_fluoride")*144
+	]);
+
+	mods.nuclearcraft.centrifuge.removeRecipeWithInput([
+		game.getLiquid("fuel_"~fluid~"_fluoride_flibe")*288
+	]);
+
+	if(fluid != "tbu")
+		mods.nuclearcraft.centrifuge.removeRecipeWithInput([
+			game.getLiquid("fuel_"~fluid)*144
+		]);
+}
+
+for fluid in [
+  "californium_249","californium_250","californium_251",
+  "californium_252",  "americium_241",  "americium_242",
+    "americium_243",  "berkelium_247",  "berkelium_248",
+    "neptunium_236",  "neptunium_237",  "plutonium_238",
+    "plutonium_239",  "plutonium_241",  "plutonium_242",
+      "thorium_230",    "uranium_233",    "uranium_235",
+      "uranium_238",     "curium_243",     "curium_245",
+       "curium_246",     "curium_247",      "plutonium",
+          "thorium",        "uranium"
+] as string[] {
+	mods.nuclearcraft.electrolyser.removeRecipeWithInput([
+		game.getLiquid(fluid~"_fluoride")*144
+	]);
+
+	mods.nuclearcraft.centrifuge.removeRecipeWithInput([
+		game.getLiquid(fluid~"_fluoride_flibe")*288
+	]);
+}
+# ----------------------------------

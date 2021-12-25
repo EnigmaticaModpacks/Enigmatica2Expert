@@ -31,5 +31,4 @@
 	
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
-<Recipes useDefault="true">
-</Recipes>
+<Recipes useDefault="true"/>

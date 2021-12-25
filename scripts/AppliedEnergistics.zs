@@ -233,3 +233,69 @@ mods.actuallyadditions.Crusher.removeRecipe(<appliedenergistics2:material>);
 	
 # Sky stone Dust
 scripts.process.crush(<appliedenergistics2:sky_stone_block>, <appliedenergistics2:material:45>, "Except: AEGrinder Pulverizer", null, null);
+# Matter cannon more matter
+val itemMass as double[IItemStack] = {
+	<nuclearcraft:thorium:2>      : 230.0d,
+	<nuclearcraft:thorium:3>      : 230.0d,
+	<nuclearcraft:thorium:6>      : 232.0d,
+	<nuclearcraft:thorium:7>      : 232.0d,
+	<nuclearcraft:uranium:2>      : 233.0d,
+	<nuclearcraft:uranium:3>      : 234.0d,
+	<nuclearcraft:uranium:6>      : 235.0d,
+	<nuclearcraft:uranium:7>      : 235.0d,
+	<nuclearcraft:uranium:10>     : 238.0d,
+	<nuclearcraft:uranium:11>     : 238.0d,
+	<nuclearcraft:neptunium:2>    : 236.0d,
+	<nuclearcraft:neptunium:3>    : 236.0d,
+	<nuclearcraft:neptunium:6>    : 237.0d,
+	<nuclearcraft:neptunium:7>    : 237.0d,
+	<nuclearcraft:plutonium:2>    : 238.0d,
+	<nuclearcraft:plutonium:3>    : 238.0d,
+	<nuclearcraft:plutonium:6>    : 239.0d,
+	<nuclearcraft:plutonium:7>    : 239.0d,
+	<nuclearcraft:plutonium:10>   : 241.0d,
+	<nuclearcraft:plutonium:11>   : 241.0d,
+	<nuclearcraft:plutonium:14>   : 242.0d,
+	<nuclearcraft:plutonium:15>   : 242.0d,
+	<nuclearcraft:americium:2>    : 241.0d,
+	<nuclearcraft:americium:3>    : 241.0d,
+	<nuclearcraft:americium:6>    : 242.0d,
+	<nuclearcraft:americium:7>    : 242.0d,
+	<nuclearcraft:americium:10>   : 243.0d,
+	<nuclearcraft:americium:11>   : 244.0d,
+	<nuclearcraft:curium:2>       : 243.0d,
+	<nuclearcraft:curium:3>       : 243.0d,
+	<nuclearcraft:curium:6>       : 245.0d,
+	<nuclearcraft:curium:7>       : 245.0d,
+	<nuclearcraft:curium:10>      : 246.0d,
+	<nuclearcraft:curium:11>      : 246.0d,
+	<nuclearcraft:curium:14>      : 247.0d,
+	<nuclearcraft:curium:15>      : 247.0d,
+	<nuclearcraft:berkelium:2>    : 247.0d,
+	<nuclearcraft:berkelium:3>    : 247.0d,
+	<nuclearcraft:berkelium:6>    : 248.0d,
+	<nuclearcraft:berkelium:7>    : 248.0d,
+	<nuclearcraft:californium:2>  : 249.0d,
+	<nuclearcraft:californium:3>  : 249.0d,
+	<nuclearcraft:californium:6>  : 250.0d,
+	<nuclearcraft:californium:7>  : 250.0d,
+	<nuclearcraft:californium:10> : 251.0d,
+	<nuclearcraft:californium:11> : 251.0d,
+	<nuclearcraft:californium:14> : 252.0d,
+	<nuclearcraft:californium:15> : 252.0d,
+	<nuclearcraft:boron:1>        : 10.0d,
+	<nuclearcraft:boron:3>        : 11.0d,
+	<nuclearcraft:lithium:1>      : 6.0d,
+	<nuclearcraft:lithium:3>      : 7.0d,
+} as double[IItemStack];
+
+for item, mass in itemMass {
+	if (!isNull(item)) {
+		mods.appliedenergistics2.Cannon.registerAmmo(item, mass);
+	}
+}
+
+# [Printed (Every) Circuit] shortcut in [Cutting Machine]
+scripts.process.saw(<ore:blockGold>, <appliedenergistics2:material:18> *  9, "only: AdvRockCutter");
+scripts.process.saw(<ore:blockDiamond>, <appliedenergistics2:material:17> *  9, "only: AdvRockCutter");
+scripts.process.saw(<ore:crystalPureCertusQuartz> * 9, <appliedenergistics2:material:16> *  9, "only: AdvRockCutter");

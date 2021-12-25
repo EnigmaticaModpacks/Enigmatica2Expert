@@ -116,6 +116,21 @@
     "output": "minecraft:concrete:15"
   },
   {
+    "fluidName": "animania_honey",
+    "input": "exnihilocreatio:hive:0",
+    "output": "exnihilocreatio:hive:1"
+  },
+  {
+    "fluidName": "for.honey",
+    "input": "exnihilocreatio:hive:0",
+    "output": "exnihilocreatio:hive:1"
+  },
+  {
+    "fluidName": "honey",
+    "input": "exnihilocreatio:hive:0",
+    "output": "exnihilocreatio:hive:1"
+  },
+  {
     "fluidName": "lava",
     "input": "appliedenergistics2:material:45",
     "output": "appliedenergistics2:sky_stone_block:0"
