@@ -28,7 +28,162 @@ static g as IItemStack[string] = {
 	'⚪' : <thaumcraft:quicksilver>,
 } as IItemStack[string];
 
+# ----------------------------------------------
+# Bees rework
+# ----------------------------------------------
 
+# Phosphor as melting mechannics
+for input,output in {
+	<ore:dustPyrotheum>      : <fluid:pyrotheum> * 250,
+	<ore:dustCryotheum>      : <fluid:cryotheum> * 250,
+	<ore:dustAerotheum>      : <fluid:aerotheum> * 250,
+	<ore:dustPetrotheum>     : <fluid:petrotheum> * 250,
+	<ore:blockRedstone>      : <fluid:redstone> * 900,
+	<ore:glowstone>          : <fluid:glowstone> * 1000,
+	<ore:materialEnderPearl> : <fluid:ender> * 250,
+
+	<ore:blockCoal>
+	|<ore:blockGraphite>     : <fluid:coal> * 900,
+} as ILiquidStack[IIngredient]  {
+	scripts.processWork.work(["ForestrySqueezer"], null, [g['🔷'], input], null, null,  [output], null, null);
+}
+
+# Buff silk
+recipes.removeByRecipeName("forestry:silk_to_string");
+recipes.addShapeless("silk to string", <minecraft:string> * 32, [<forestry:crafting_material:2>]);
+
+# [Cobweb]*16 from [Silk Wisp]
+recipes.removeByRecipeName("forestry:silk_wisp_to_web");
+craft.make(<minecraft:web> * 16, ["pretty",
+  "S   S",
+  "  S  ",
+  "S   S"], {
+  "S": <forestry:crafting_material:2>, # Silk Wisp
+});
+
+# Buff Pulsating mesh output
+mods.forestry.Carpenter.removeRecipe(<minecraft:ender_pearl>);
+mods.forestry.Carpenter.addRecipe(<actuallyadditions:block_misc:6> * 4,
+	Grid(["AA","AA"], {A:<forestry:crafting_material:1>}).shaped(), 60);
+
+# Simplify Alviery because its feels too grindy for so low value
+# [Alveary*14] from [Impregnated Casing][+1]
+craft.remake(<forestry:alveary.plain> * 14, ["pretty",
+  "S S S",
+  "S I S",
+  "S S S"], {
+  "S": <forestry:crafting_material:6>, # Scented Paneling
+  "I": <forestry:impregnated_casing>,  # Impregnated Casing
+});
+
+# Way cheaper instead using Royal Jelly and Pollen Cluster to descrease grind
+# [Scented Paneling] from [Honeydew][+2]
+val scentPanelGrid = Grid(["pretty",
+	"  H  ",
+	"# # #",
+	"B   B"], {
+	"B": <ore:itemBeeswax>,  # Beeswax
+	"#": <ore:plankWood>,    # Oak Wood Planks
+	"H": <ore:dropHoneydew>, # Honeydew
+}).shaped();
+mods.forestry.Carpenter.removeRecipe(<forestry:crafting_material:6>);
+mods.forestry.Carpenter.addRecipe(<forestry:crafting_material:6>, scentPanelGrid, 40, <liquid:for.honey> * 500);
+mods.forestry.Carpenter.addRecipe(<forestry:crafting_material:6>, scentPanelGrid, 40, <liquid:honey>     * 500);
+
+
+# ---------------------------
+# Remake old combs
+function reprocessComb(comb as IItemStack, outputs as WeightedItemStack[]) as void {
+	mods.forestry.Centrifuge.removeRecipe(comb);
+	mods.forestry.Centrifuge.addRecipe(outputs, comb, 60);
+
+	if(!comb.matches(<forestry:bee_combs:9>))
+		mods.thermalexpansion.Centrifuge.removeRecipe(comb);
+	mods.thermalexpansion.Centrifuge.addRecipe(outputs, comb, null, 2000);
+}
+
+# [Cocoa_Comb]
+reprocessComb(<forestry:bee_combs:1>, [
+  g['🟡'] % 80, # Beeswax
+  <minecraft:dye:3> % 50, # Cocoa
+  <nuclearcraft:milk_chocolate> % 20,
+]);
+
+# [Stringy_Comb]
+reprocessComb(<forestry:bee_combs:3>, [
+	g['🟠'],
+	g['💛'] % 40,  # Honey Drop
+]);
+
+# [Frozen_Comb]
+reprocessComb(<forestry:bee_combs:4>, [
+	g['🟡'] % 80,     # Beeswax
+	g['💛'] % 70,  # Honey Drop
+	<forestry:pollen:1> % 20,     # Crystalline Pollen Cluster
+	<thermalfoundation:material:2048> % 20,
+]);
+
+# [Dripping_Comb]
+reprocessComb(<forestry:bee_combs:5>, [
+	g['🤎'] % 100, # Honeydew
+	g['💛'] % 40, # Honey Drop
+	<thermalfoundation:material:1> % 20, # Gold Dust
+]);
+
+# [Parched_Comb]
+reprocessComb(<forestry:bee_combs:7>, [
+	(<minecraft:blaze_powder> * 2) % 45, # Blaze Powder
+	g['🟡'] % 100,  # Beeswax
+	g['💛'] % 90, # Honey Drop
+]);
+
+# [Powdery_Comb]
+reprocessComb(<forestry:bee_combs:10>, [
+	g['🟡'] % 20,     # Beeswaxer
+	g['💛'] % 20,  # Honey Drop
+	(<minecraft:gunpowder> * 4) % 100, # Gunpowder
+	<nuclearcraft:marshmallow> % 30,
+]);
+
+# [Mossy_Comb]
+reprocessComb(<forestry:bee_combs:15>, [
+	g['🟡'] % 100, # Beeswax
+	g['💛'] % 90, # Honey Drop
+	<tconstruct:materials:18> % 100,
+]);
+
+# [Irradiated_Comb]
+reprocessComb(<forestry:bee_combs:9>, [
+  g['🟡'] % 50, # Beeswax
+  <ic2:nuclear> % 60,   # Enriched Uranium Nuclear Fuel
+  <ic2:nuclear:4> % 20, # MOX Nuclear Fuel
+]);
+
+# [Wheaten_Comb]
+reprocessComb(<forestry:bee_combs:14>, [
+  g['🟡'] % 80, # Beeswax
+  (<harvestcraft:flouritem> * 3) % 100,
+  <nuclearcraft:graham_cracker> % 80, # Graham Cracker
+]);
+
+# [Mellow_Comb]
+reprocessComb(<forestry:bee_combs:16>, [
+	g['🟡'] % 20, # Beeswax
+	g['🤎'] % 60, # Honeydew
+	<ore:dustSoularium>.firstItem % 40,
+]);
+
+# Add missed beecombs to JEI (Why they even missed??)
+val bee_comb_def = <forestry:bee_combs>.definition;
+for i in [1, 8, 9 ,10] as int[] {
+  mods.jei.JEI.addItem(bee_comb_def.makeStack(i));
+}
+mods.jei.JEI.addItem(<forestry:propolis:2>); # Pulsating Propolis
+
+# Missed propolis recycle recipe
+scripts.process.squeeze([<forestry:propolis>], null, "only: TECentrifuge", <ic2:misc_resource:4>);
+
+# ---------------------------
 
 
 /*
