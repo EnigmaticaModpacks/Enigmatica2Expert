@@ -801,3 +801,12 @@ function addSaplingsRecipe(sap as IItemStack, group as int[][IIngredient]) {
 }
 
 # ----------------------------
+
+# [Fertilized Essence] from [Phyto-Gro]*2[+4]
+craft.reshapeless(<mysticalagriculture:fertilized_essence>, "rF*ef", {
+  "*": <mysticalagriculture:infusion_crystal>.anyDamage() | <mysticalagriculture:master_infusion_crystal>, # Infusion Crystal
+  "r": <actuallyadditions:item_fertilizer>, # Fertilizer
+  "F": <ic2:crop_res:2>,                    # Fertilizer
+  "e": <forestry:fertilizer_compound>,      # Fertilizer
+  "f": <thermalfoundation:fertilizer>,      # Phyto-Gro
+});
