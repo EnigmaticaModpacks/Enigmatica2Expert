@@ -155,3 +155,7 @@ scripts.process.crush(<ore:gemQuartz>, qdust, "only: iecrusher aegrinder mekcrus
 
 # Bioplastic process
 scripts.process.extract(<ore:sugarcane> * 2, <ore:bioplastic>.firstItem, "except: manufactory extractor");
+
+
+# Supercooled Ice compat
+scripts.process.fill(<ore:ice>, <fluid:liquidhelium> * 50, <nuclearcraft:block_ice>, "only: Transposer");
