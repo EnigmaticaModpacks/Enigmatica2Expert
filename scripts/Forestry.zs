@@ -78,6 +78,12 @@ for tomato in <ore:cropTomato>.items {
 #mods.forestry.Carpenter.addRecipe(<minecraft:gold_ingot>, [[<minecraft:gold_block>]], 30, <liquid:for.honey> * 100);
 #mods.forestry.Carpenter.addRecipe(<minecraft:redstone_block>, [[<minecraft:redstone>,<minecraft:redstone>,<minecraft:redstone>],[<minecraft:redstone>,<minecraft:redstone>,<minecraft:redstone>],[<minecraft:redstone>,<minecraft:redstone>,<minecraft:redstone>]], 60, <liquid:water> * 200, <minecraft:stone>);
 
+// Allow any log to be used in stead of just oak
+mods.forestry.Carpenter.removeRecipe(<forestry:oak_stick>, <liquid:seed.oil>);
+mods.forestry.Carpenter.removeRecipe(<forestry:oak_stick>, <liquid:oliveoil>);
+mods.forestry.Carpenter.addRecipe(<forestry:oak_stick> * 2, [[<ore:logWood>], [<ore:logWood>]], 40, <liquid:seed.oil> * 100);
+mods.forestry.Carpenter.addRecipe(<forestry:oak_stick> * 2, [[<ore:logWood>], [<ore:logWood>]], 40, <liquid:oliveoil> * 100);
+
 //mods.forestry.Carpenter.removeRecipe(IItemStack output, @Optional ILiquidStack fluidInput);
 #mods.forestry.Carpenter.removeRecipe(<forestry:portable_alyzer>);
 #mods.forestry.Carpenter.removeRecipe(<forestry:wood_pulp>, <liquid:water>);
