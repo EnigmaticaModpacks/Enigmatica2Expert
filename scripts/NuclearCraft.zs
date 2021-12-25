@@ -141,3 +141,15 @@ scripts.process.electrolyze(<fluid:koh>                *666,  [<fluid:potassium>
 scripts.process.electrolyze(<fluid:alumina>            *144,  [<fluid:aluminum>   *288, <fluid:oxygen>    *3000], "except: NCElectrolyzer");
 scripts.process.electrolyze(<fluid:heavywater>         *1000, [<fluid:deuterium>  *1000, <fluid:tritium>  *50, <fluid:oxygen>*500], "except: NCElectrolyzer");
 scripts.process.electrolyze(<fluid:ic2heavy_water>     *1000, [<fluid:deuterium>  *1000, <fluid:tritium>  *50, <fluid:oxygen>*500], "except: NCElectrolyzer");
+
+# Quartz -> [Quarts dust] (nuclearcraft) wrong output fix
+val qwrong = <nuclearcraft:gem_dust:2>;
+val qdust = <appliedenergistics2:material:3>;
+recipes.removeByRecipeName("thermalfoundation:gem_dust");
+mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:quartz_ore>, <bloodmagic:cutting_fluid>]);
+mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:quartz_ore>);
+mods.immersiveengineering.Crusher.removeRecipesForInput(<minecraft:quartz>);
+mods.mekanism.crusher.removeRecipe(qwrong);
+mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:quartz>);
+scripts.process.crush(<ore:gemQuartz>, qdust, "only: iecrusher aegrinder mekcrusher", null, null);
+
