@@ -20,9 +20,9 @@ for tomato in <ore:cropTomato>.items {
 # Refined Circuit Board
 	mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:3>);
 	mods.forestry.Carpenter.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}), 
-	[[<appliedenergistics2:material:17>, <forestry:chipsets>.withTag({}), <appliedenergistics2:material:17>],
-	[<ore:circuitUltimate>, <forestry:chipsets:1>.withTag({}), <ore:circuitUltimate>],
-	[<appliedenergistics2:material:17>, <forestry:chipsets:2>.withTag({}), <appliedenergistics2:material:17>]], 
+	[[<appliedenergistics2:material:17>, <forestry:chipsets>.withTag({T:0 as short}, false), <appliedenergistics2:material:17>],
+	[<ore:circuitUltimate>, <forestry:chipsets:1>.withTag({T:1 as short}, false), <ore:circuitUltimate>],
+	[<appliedenergistics2:material:17>, <forestry:chipsets:2>.withTag({T:2 as short}, false), <appliedenergistics2:material:17>]], 
 	40, <liquid:water> * 1000);
 
 # Sturdy Casing

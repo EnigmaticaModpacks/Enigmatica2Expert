@@ -177,7 +177,7 @@ for input, output in itemsToUnify {
 	recipes.remove(<mekanism:machineblock3>);
 	recipes.addShaped("Quantum Entangloporter", <mekanism:machineblock3>, 
 	[[<mekanism:basicblock:7>, <ore:heartDragon>, <mekanism:basicblock:7>],
-	[<forestry:chipsets:3>.withTag({T: 3 as short}), <mekanism:machineblock:11>|<mekanism:machineblock:11>.withTag({}), <forestry:chipsets:3>.withTag({T: 3 as short})], 
+	[<forestry:chipsets:3>.withTag({T:3 as short}, false), <mekanism:machineblock:11>|<mekanism:machineblock:11>.withTag({}), <forestry:chipsets:3>.withTag({T:3 as short}, false)], 
 	[<mekanism:basicblock:7>, <rftools:matter_beamer>, <mekanism:basicblock:7>]]);
 
 # Turbine Casing
