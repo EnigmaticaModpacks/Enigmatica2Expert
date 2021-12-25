@@ -139,3 +139,6 @@ scripts.process.squeeze([<iceandfire:myrmex_resin_sticky>   ], <liquid:resin>*18
 scripts.process.squeeze([<iceandfire:myrmex_resin_sticky:1> ], <liquid:resin>*180, null, <iceandfire:myrmex_jungle_resin> * 2);
 scripts.process.squeeze([<iceandfire:desert_myrmex_cocoon>  ], <liquid:resin>*480, null, <iceandfire:myrmex_desert_resin> * 8);
 scripts.process.squeeze([<iceandfire:jungle_myrmex_cocoon>  ], <liquid:resin>*480, null, <iceandfire:myrmex_jungle_resin> * 8);
+
+# StackSize was 1
+<iceandfire:ambrosia>.maxStackSize = 64;
