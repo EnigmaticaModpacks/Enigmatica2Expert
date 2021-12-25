@@ -177,3 +177,24 @@ for block, slab in {
 } as IItemStack[IIngredient] {
 	craft.remake(slab * 6, ["AAA"], {A: block});
 }
+
+
+# [Conveyor Belt]*32 from [Redstone][+2]
+craft.remake(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 32, ["pretty",
+  "l l l",
+  "▬ ♥ ▬"], {
+  "♥": <ore:dustRedstone>, # Redstone
+  "l": <ore:leather>,      # Leather
+  "▬": <ore:ingotIron>, # Iron Alloy Ingot
+  remove: <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 8, # Conveyor Belt
+});
+
+# [Conveyor Belt]*32 from [Redstone][+2]
+craft.remake(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 32, ["pretty",
+  "R R R",
+  "▬ ♥ ▬"], {
+  "R": <ore:itemRubber>, # Plastic
+  "♥": <ore:dustRedstone>, # Redstone
+  "▬": <ore:ingotIron>, # Iron Alloy Ingot
+  remove: <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 8, # Conveyor Belt
+});
