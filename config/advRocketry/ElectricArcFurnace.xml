@@ -64,19 +64,23 @@
 			<itemStack>libvulpes:productingot 4 7</itemStack>
 		</output>
 	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Clay-Coated Glowstone Dust] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
-			<itemStack>minecraft:glowstone_dust 1 0</itemStack>
-			<itemStack>minecraft:clay_ball 1 0</itemStack>
+			<itemStack>minecraft:glowstone_dust 1</itemStack>
+			<itemStack>minecraft:clay_ball 1</itemStack>
 		</input>
 		<output>
 			<itemStack>enderio:item_material 2 76</itemStack>
 		</output>
 	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [HSLA Steel Ingot] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
-			<itemStack>minecraft:iron_ingot 15 0</itemStack>
-			<itemStack>nuclearcraft:compound 1 9</itemStack>
+			<oreDict>ingotIron 15</oreDict>
+			<oreDict>dustCarbonManganese 1</oreDict>
 		</input>
 		<output>
 			<itemStack>nuclearcraft:alloy 16 15</itemStack>
