@@ -153,3 +153,5 @@ mods.mekanism.crusher.removeRecipe(qwrong);
 mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:quartz>);
 scripts.process.crush(<ore:gemQuartz>, qdust, "only: iecrusher aegrinder mekcrusher", null, null);
 
+# Bioplastic process
+scripts.process.extract(<ore:sugarcane> * 2, <ore:bioplastic>.firstItem, "except: manufactory extractor");
