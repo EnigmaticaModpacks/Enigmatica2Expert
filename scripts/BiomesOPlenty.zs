@@ -55,5 +55,6 @@ import mods.jei.JEI.removeAndHide as rh;
 	recipes.addShapeless("Overgrown Stone3", <biomesoplenty:grass:1>, [<minecraft:stone:*>, <ore:vine>]);
 	
 # Amber Block
-	rh(<biomesoplenty:gem_block:7>);
-	rh(<biomesoplenty:gem:7>);
+
+# To easy manage in inventory
+<biomesoplenty:jar_filled:1>.maxStackSize = 64;
