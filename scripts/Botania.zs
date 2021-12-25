@@ -234,11 +234,17 @@ for i, sapling in saplings {
 	}
 }
 
-## *======= Orechid =======*
-	//InputOredict, Weight
-	//mods.botania.Orechid.addOre(<ore:logWood>, 5000);
-	//InputOredict
-	//mods.botania.Orechid.removeOre(<ore:oreIron>);
+
+# Colored Glass -> Quark Cave Crystals
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassWhite>,  <quark:crystal>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassRed>,    <quark:crystal:1>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassOrange>, <quark:crystal:2>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassYellow>, <quark:crystal:3>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassLime>,   <quark:crystal:4>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassCyan>,   <quark:crystal:5>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassBlue>,   <quark:crystal:6>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassPurple>, <quark:crystal:7>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassBlack>,  <quark:crystal:8>);
 
 ## *======= Petal Apothecary =======*
 	//OutputStack, InputArray
