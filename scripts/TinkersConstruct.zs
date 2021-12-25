@@ -276,3 +276,7 @@ mods.tconstruct.Casting.addTableRecipe(<tconstruct:edible:1>, null, <liquid:blue
 # Slime blocks
 mods.tconstruct.Casting.addBasinRecipe(<tconstruct:slime_congealed:2>, null, <liquid:purpleslime>, 1000);
 mods.tconstruct.Casting.addBasinRecipe(<tconstruct:slime_congealed:1>, null, <liquid:blueslime>  , 1000);
+
+# Molten Quartz and Lapis to blocks
+mods.tconstruct.Casting.addBasinRecipe(<minecraft:quartz_block>, null, <liquid:quartz>, 2664);
+mods.tconstruct.Casting.addBasinRecipe(<minecraft:lapis_block> , null, <liquid:lapis> , 5994);
