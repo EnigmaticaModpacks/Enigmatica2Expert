@@ -280,3 +280,8 @@ mods.tconstruct.Casting.addBasinRecipe(<tconstruct:slime_congealed:1>, null, <li
 # Molten Quartz and Lapis to blocks
 mods.tconstruct.Casting.addBasinRecipe(<minecraft:quartz_block>, null, <liquid:quartz>, 2664);
 mods.tconstruct.Casting.addBasinRecipe(<minecraft:lapis_block> , null, <liquid:lapis> , 5994);
+
+
+# Clearing
+utils.clearFluid(<tconstruct:seared_tank:0>);
+utils.clearFluid(<tconstruct:seared_tank:1>);
