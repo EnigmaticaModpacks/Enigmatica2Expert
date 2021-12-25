@@ -142,3 +142,14 @@ scripts.process.squeeze([<iceandfire:jungle_myrmex_cocoon>  ], <liquid:resin>*48
 
 # StackSize was 1
 <iceandfire:ambrosia>.maxStackSize = 64;
+
+# Add recipe because snow villages is disabled
+# [Fishing Spear] from [Steel Arrow Head][+2]
+craft.remake(<iceandfire:fishing_spear>, ["pretty",
+  "S w  ",
+  "w M  ",
+  "    M"], {
+  "S": <tconstruct:arrow_head>.withTag({Material: "steel"}), # Steel Arrow Head
+  "w": <ore:wool>, # Wool
+  "M": <extrautils2:decorativesolidwood>, # Magical Planks
+});
