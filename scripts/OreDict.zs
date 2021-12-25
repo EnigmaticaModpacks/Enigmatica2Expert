@@ -686,3 +686,8 @@ for item in pressurePlates {
     <animania:purple_peacock_feather>,
     <animania:taupe_peacock_feather>
 ]);
+
+# Rearrange items in Dye Oredict to better integration
+# with AA [Lens Of Color]
+<ore:dyeBrown>.remove([<enderio:item_material:49>, <industrialforegoing:fertilizer>]);
+<ore:dyeGreen>.remove(<enderio:item_material:48>);
