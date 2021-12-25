@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<enderio:recipes xmlns:enderio="http://enderio.com/recipes"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
   <recipe name="Skeletal Contractor">
     <slicing energy="20000">
       <input name="ingotSoularium"/>
@@ -26,196 +25,186 @@
   <recipe name="Stirling Generator, Upgrade" disabled="true">
     <crafting upgrade="true">
       <grid size="3x3">
-        <item />
-        <item name="enderio:block_simple_stirling_generator" />
-        <item />
-        <item />
-        <item name="CHASSIS" />
-        <item />
-        <item name="GEAR_ENERGIZED" />
-        <item />
-        <item name="GEAR_ENERGIZED" />
+        <item/>
+        <item name="enderio:block_simple_stirling_generator"/>
+        <item/>
+        <item/>
+        <item name="CHASSIS"/>
+        <item/>
+        <item name="GEAR_ENERGIZED"/>
+        <item/>
+        <item name="GEAR_ENERGIZED"/>
       </grid>
-      <output name="enderio:block_stirling_generator" />
+      <output name="enderio:block_stirling_generator"/>
     </crafting>
   </recipe>
-
   <recipe name="Enhanced Combustion Generator, Upgrade" disabled="true">
     <crafting upgrade="true">
       <grid size="3x2">
-        <item name="EnderIO:block_tank:1" />
-        <item name="enderio:block_combustion_generator" />
-        <item name="EnderIO:block_tank:1" />
-        <item name="GEAR_VIBRANT" />
-        <item />
-        <item name="GEAR_VIBRANT" />
+        <item name="EnderIO:block_tank:1"/>
+        <item name="enderio:block_combustion_generator"/>
+        <item name="EnderIO:block_tank:1"/>
+        <item name="GEAR_VIBRANT"/>
+        <item/>
+        <item name="GEAR_VIBRANT"/>
       </grid>
-      <output name="enderio:block_enhanced_combustion_generator" />
+      <output name="enderio:block_enhanced_combustion_generator"/>
     </crafting>
   </recipe>
-
   <recipe name="Alloy Smelter, Upgrade" disabled="true">
     <crafting upgrade="true">
       <grid size="3x3">
-        <item />
-        <item name="enderio:block_simple_alloy_smelter" />
-        <item />
-        <item />
-        <item name="CHASSIS" />
-        <item />
-        <item name="GEAR_ENERGIZED" />
-        <item name="item:minecraft:cauldron" />
-        <item name="GEAR_ENERGIZED" />
+        <item/>
+        <item name="enderio:block_simple_alloy_smelter"/>
+        <item/>
+        <item/>
+        <item name="CHASSIS"/>
+        <item/>
+        <item name="GEAR_ENERGIZED"/>
+        <item name="item:minecraft:cauldron"/>
+        <item name="GEAR_ENERGIZED"/>
       </grid>
-      <output name="enderio:block_alloy_smelter" />
+      <output name="enderio:block_alloy_smelter"/>
     </crafting>
   </recipe>
-
   <recipe name="Solar Panel 2, Upgrade" disabled="true">
     <crafting>
       <grid size="3x3">
-        <item name="ENERGETIC_ALLOY" />
-        <item name="FUSED_QUARTZ" />
-        <item name="ENERGETIC_ALLOY" />
-        <item />
-        <item name="SOLAR_1" />
-        <item />
-        <item name="CAPACITOR1" />
-        <item name="minecraft:daylight_detector" />
-        <item name="CAPACITOR1" />
+        <item name="ENERGETIC_ALLOY"/>
+        <item name="FUSED_QUARTZ"/>
+        <item name="ENERGETIC_ALLOY"/>
+        <item/>
+        <item name="SOLAR_1"/>
+        <item/>
+        <item name="CAPACITOR1"/>
+        <item name="minecraft:daylight_detector"/>
+        <item name="CAPACITOR1"/>
       </grid>
-      <output name="SOLAR_2" />
+      <output name="SOLAR_2"/>
     </crafting>
   </recipe>
-
   <recipe name="Solar Panel 3, Upgrade" disabled="true">
     <crafting>
       <grid size="3x3">
-        <item name="PULSATING_IRON" />
-        <item name="ENLIGHTED_QUARTZ" />
-        <item name="PULSATING_IRON" />
-        <item name="ENERGETIC_ALLOY" />
-        <item name="dustCoal" />
-        <item name="ENERGETIC_ALLOY" />
-        <item name="CAPACITOR1" />
-        <item name="SOLAR_2" />
-        <item name="CAPACITOR1" />
+        <item name="PULSATING_IRON"/>
+        <item name="ENLIGHTED_QUARTZ"/>
+        <item name="PULSATING_IRON"/>
+        <item name="ENERGETIC_ALLOY"/>
+        <item name="dustCoal"/>
+        <item name="ENERGETIC_ALLOY"/>
+        <item name="CAPACITOR1"/>
+        <item name="SOLAR_2"/>
+        <item name="CAPACITOR1"/>
       </grid>
-      <output name="SOLAR_3" />
+      <output name="SOLAR_3"/>
     </crafting>
   </recipe>
-
   <recipe name="Solar Panel 4, Upgrade" disabled="true">
     <crafting>
       <grid size="3x3">
-        <item name="VIBRANT_ALLOY" />
-        <item name="DARK_QUARTZ" />
-        <item name="VIBRANT_ALLOY" />
-        <item name="VIBRANT_ALLOY" />
-        <item name="oredict:glowstone" />
-        <item name="VIBRANT_ALLOY" />
-        <item name="CAPACITOR2" />
-        <item name="SOLAR_3" />
-        <item name="CAPACITOR2" />
+        <item name="VIBRANT_ALLOY"/>
+        <item name="DARK_QUARTZ"/>
+        <item name="VIBRANT_ALLOY"/>
+        <item name="VIBRANT_ALLOY"/>
+        <item name="oredict:glowstone"/>
+        <item name="VIBRANT_ALLOY"/>
+        <item name="CAPACITOR2"/>
+        <item name="SOLAR_3"/>
+        <item name="CAPACITOR2"/>
       </grid>
-      <output name="SOLAR_4" />
+      <output name="SOLAR_4"/>
     </crafting>
   </recipe>
-
   <recipe name="Crafter, Upgrade" disabled="true">
     <crafting>
       <grid size="3x3">
-        <item />
-        <item name="enderio:block_simple_crafter" />
-        <item />
-        <item />
-        <item name="CHASSIS" />
-        <item />
-        <item name="GEAR_IRON" />
-        <item name="oredict:workbench" />
-        <item name="GEAR_IRON" />
+        <item/>
+        <item name="enderio:block_simple_crafter"/>
+        <item/>
+        <item/>
+        <item name="CHASSIS"/>
+        <item/>
+        <item name="GEAR_IRON"/>
+        <item name="oredict:workbench"/>
+        <item name="GEAR_IRON"/>
       </grid>
-      <output name="enderio:block_crafter" />
+      <output name="enderio:block_crafter"/>
     </crafting>
   </recipe>
   <recipe name="SAG Mill, Upgrade" disabled="true">
     <crafting upgrade="true">
       <grid size="3x3">
-        <item />
-        <item name="enderio:block_simple_sag_mill" />
-        <item />
-        <item />
-        <item name="CHASSIS" />
-        <item />
-        <item name="GEAR_ENERGIZED" />
-        <item />
-        <item name="GEAR_ENERGIZED" />
+        <item/>
+        <item name="enderio:block_simple_sag_mill"/>
+        <item/>
+        <item/>
+        <item name="CHASSIS"/>
+        <item/>
+        <item name="GEAR_ENERGIZED"/>
+        <item/>
+        <item name="GEAR_ENERGIZED"/>
       </grid>
-      <output name="enderio:block_sag_mill" />
+      <output name="enderio:block_sag_mill"/>
     </crafting>
   </recipe>
   <recipe name="Gear, Wood" disabled="true">
     <crafting>
       <grid>
-        <item />
+        <item/>
         <item name="stickWood"/>
-        <item />
+        <item/>
         <item name="stickWood"/>
-        <item />
+        <item/>
         <item name="stickWood"/>
-        <item />
+        <item/>
         <item name="stickWood"/>
-        <item />
+        <item/>
       </grid>
       <output name="GEAR_WOOD"/>
     </crafting>
   </recipe>
-
   <recipe name="Gear, ae2 messes things up" disabled="true">
     <crafting>
       <grid>
         <item name="stickWood"/>
-        <item />
+        <item/>
         <item name="stickWood"/>
-        <item />
-        <item />
-        <item />
+        <item/>
+        <item/>
+        <item/>
         <item name="stickWood"/>
-        <item />
+        <item/>
         <item name="stickWood"/>
       </grid>
       <output name="GEAR_WOOD"/>
     </crafting>
   </recipe>
-
   <recipe name="Gear, just to be sure" disabled="true">
     <crafting>
       <grid size="3x2">
         <item name="stickWood"/>
-        <item />
+        <item/>
         <item name="stickWood"/>
         <item name="stickWood"/>
-        <item />
+        <item/>
         <item name="stickWood"/>
       </grid>
       <output name="GEAR_WOOD"/>
     </crafting>
   </recipe>
-
   <recipe name="Gear, better save than sorry" disabled="true">
     <crafting>
       <grid size="2x3">
         <item name="stickWood"/>
         <item name="stickWood"/>
-        <item />
-        <item />
+        <item/>
+        <item/>
         <item name="stickWood"/>
         <item name="stickWood"/>
       </grid>
       <output name="GEAR_WOOD"/>
     </crafting>
   </recipe>
-
   <recipe name="Gear, Stone" disabled="true">
     <crafting>
       <grid>
@@ -223,7 +212,7 @@
         <item name="oredict:cobblestone"/>
         <item name="stickWood"/>
         <item name="oredict:cobblestone"/>
-        <item />
+        <item/>
         <item name="oredict:cobblestone"/>
         <item name="stickWood"/>
         <item name="oredict:cobblestone"/>
@@ -232,19 +221,18 @@
       <output name="GEAR_STONE"/>
     </crafting>
   </recipe>
-
   <recipe name="Gear, Stone, Upgrade" disabled="true">
     <crafting>
       <grid>
-        <item />
+        <item/>
         <item name="oredict:cobblestone"/>
-        <item />
+        <item/>
         <item name="oredict:cobblestone"/>
         <item name="GEAR_WOOD"/>
         <item name="oredict:cobblestone"/>
-        <item />
+        <item/>
         <item name="oredict:cobblestone"/>
-        <item />
+        <item/>
       </grid>
       <output name="GEAR_STONE"/>
     </crafting>
@@ -252,248 +240,235 @@
   <recipe name="Enhanced Combustion Generator" disabled="true">
     <crafting>
       <grid size="3x3">
-        <item name="ELECTRICAL_STEEL" />
-        <item name="ELECTRICAL_STEEL" />
-        <item name="ELECTRICAL_STEEL" />
-        <item name="EnderIO:block_tank:1" />
-        <item name="ENHANCED_CHASSIS" />
-        <item name="EnderIO:block_tank:1" />
-        <item name="GEAR_VIBRANT" />
-        <item name="minecraft:piston" />
-        <item name="GEAR_VIBRANT" />
+        <item name="ELECTRICAL_STEEL"/>
+        <item name="ELECTRICAL_STEEL"/>
+        <item name="ELECTRICAL_STEEL"/>
+        <item name="EnderIO:block_tank:1"/>
+        <item name="ENHANCED_CHASSIS"/>
+        <item name="EnderIO:block_tank:1"/>
+        <item name="GEAR_VIBRANT"/>
+        <item name="minecraft:piston"/>
+        <item name="GEAR_VIBRANT"/>
       </grid>
-      <output name="enderio:block_enhanced_combustion_generator" />
+      <output name="enderio:block_enhanced_combustion_generator"/>
     </crafting>
   </recipe>
   <recipe name="Enhanced Wired Charger" disabled="true">
     <crafting>
       <grid size="3x3">
-        <item name="ELECTRICAL_STEEL" />
-        <item name="END_STEEL" />
-        <item name="ELECTRICAL_STEEL" />
-        <item name="ELECTRICAL_STEEL" />
-        <item name="ENHANCED_CHASSIS" />
-        <item name="ELECTRICAL_STEEL" />
-        <item name="GEAR_VIBRANT" />
-        <item name="ELECTRICAL_STEEL" />
-        <item name="GEAR_VIBRANT" />
+        <item name="ELECTRICAL_STEEL"/>
+        <item name="END_STEEL"/>
+        <item name="ELECTRICAL_STEEL"/>
+        <item name="ELECTRICAL_STEEL"/>
+        <item name="ENHANCED_CHASSIS"/>
+        <item name="ELECTRICAL_STEEL"/>
+        <item name="GEAR_VIBRANT"/>
+        <item name="ELECTRICAL_STEEL"/>
+        <item name="GEAR_VIBRANT"/>
       </grid>
-      <output name="enderio:block_enhanced_wired_charger" />
+      <output name="enderio:block_enhanced_wired_charger"/>
     </crafting>
   </recipe>
-
   <recipe name="Enhanced Wired Charger, Upgrade" disabled="true">
     <crafting>
       <grid size="3x3">
-        <item />
-        <item name="END_STEEL" />
-        <item />
-        <item />
-        <item name="ENHANCED_CHASSIS" />
-        <item />
-        <item name="GEAR_VIBRANT" />
-        <item name="enderio:block_wired_charger" />
-        <item name="GEAR_VIBRANT" />
+        <item/>
+        <item name="END_STEEL"/>
+        <item/>
+        <item/>
+        <item name="ENHANCED_CHASSIS"/>
+        <item/>
+        <item name="GEAR_VIBRANT"/>
+        <item name="enderio:block_wired_charger"/>
+        <item name="GEAR_VIBRANT"/>
       </grid>
-      <output name="enderio:block_enhanced_wired_charger" />
+      <output name="enderio:block_enhanced_wired_charger"/>
     </crafting>
   </recipe>
   <recipe name="Wireless Charger (Antenna, enhanced)" disabled="true">
     <crafting>
       <grid size="3x3">
-        <item name="itemWirelessDish" />
-        <item name="ENDER_RESONATOR" />
-        <item name="itemWirelessDish" />
-        <item name="itemWirelessDish" />
-        <item name="ENHANCED_CHASSIS" />
-        <item name="itemWirelessDish" />
-        <item />
-        <item name="CAPACITOR3" />
-        <item />
+        <item name="itemWirelessDish"/>
+        <item name="ENDER_RESONATOR"/>
+        <item name="itemWirelessDish"/>
+        <item name="itemWirelessDish"/>
+        <item name="ENHANCED_CHASSIS"/>
+        <item name="itemWirelessDish"/>
+        <item/>
+        <item name="CAPACITOR3"/>
+        <item/>
       </grid>
-      <output name="enderio:block_enhanced_wireless_charger" />
+      <output name="enderio:block_enhanced_wireless_charger"/>
     </crafting>
   </recipe>
-
   <recipe name="Wireless Charger (Antenna, enhanced), Upgrade 1" disabled="true">
     <crafting>
       <grid size="3x3">
-        <item name="itemWirelessDish" />
-        <item name="enderio:block_wireless_charger" />
-        <item name="itemWirelessDish" />
-        <item name="itemWirelessDish" />
-        <item name="ENHANCED_CHASSIS" />
-        <item name="itemWirelessDish" />
-        <item />
-        <item name="CAPACITOR3" />
-        <item />
+        <item name="itemWirelessDish"/>
+        <item name="enderio:block_wireless_charger"/>
+        <item name="itemWirelessDish"/>
+        <item name="itemWirelessDish"/>
+        <item name="ENHANCED_CHASSIS"/>
+        <item name="itemWirelessDish"/>
+        <item/>
+        <item name="CAPACITOR3"/>
+        <item/>
       </grid>
-      <output name="enderio:block_enhanced_wireless_charger" />
+      <output name="enderio:block_enhanced_wireless_charger"/>
     </crafting>
   </recipe>
-
   <recipe name="Wireless Charger (Antenna, enhanced), Upgrade 2" disabled="true">
     <crafting>
       <grid size="3x3">
-        <item />
-        <item name="enderio:block_normal_wireless_charger" />
-        <item />
-        <item />
-        <item name="ENHANCED_CHASSIS" />
-        <item />
-        <item />
-        <item name="CAPACITOR3" />
-        <item />
+        <item/>
+        <item name="enderio:block_normal_wireless_charger"/>
+        <item/>
+        <item/>
+        <item name="ENHANCED_CHASSIS"/>
+        <item/>
+        <item/>
+        <item name="CAPACITOR3"/>
+        <item/>
       </grid>
-      <output name="enderio:block_enhanced_wireless_charger" />
+      <output name="enderio:block_enhanced_wireless_charger"/>
     </crafting>
   </recipe>
   <recipe name="Enhanced Alloy Smelter" disabled="true">
     <crafting>
       <grid size="3x3">
-        <item name="ingotIron" />
-        <item name="minecraft:furnace" />
-        <item name="ingotIron" />
-        <item name="minecraft:furnace" />
-        <item name="ENHANCED_CHASSIS" />
-        <item name="minecraft:furnace" />
-        <item name="GEAR_VIBRANT" />
-        <item name="item:minecraft:cauldron" />
-        <item name="GEAR_VIBRANT" />
+        <item name="ingotIron"/>
+        <item name="minecraft:furnace"/>
+        <item name="ingotIron"/>
+        <item name="minecraft:furnace"/>
+        <item name="ENHANCED_CHASSIS"/>
+        <item name="minecraft:furnace"/>
+        <item name="GEAR_VIBRANT"/>
+        <item name="item:minecraft:cauldron"/>
+        <item name="GEAR_VIBRANT"/>
       </grid>
-      <output name="enderio:block_enhanced_alloy_smelter" />
+      <output name="enderio:block_enhanced_alloy_smelter"/>
     </crafting>
   </recipe>
-
   <recipe name="Enhanced Alloy Smelter, Upgrade" disabled="true">
     <crafting upgrade="true">
       <grid size="3x3">
-        <item />
-        <item name="enderio:block_alloy_smelter" />
-        <item />
-        <item />
-        <item name="ENHANCED_CHASSIS" />
-        <item />
-        <item name="GEAR_VIBRANT" />
-        <item name="item:minecraft:cauldron" />
-        <item name="GEAR_VIBRANT" />
+        <item/>
+        <item name="enderio:block_alloy_smelter"/>
+        <item/>
+        <item/>
+        <item name="ENHANCED_CHASSIS"/>
+        <item/>
+        <item name="GEAR_VIBRANT"/>
+        <item name="item:minecraft:cauldron"/>
+        <item name="GEAR_VIBRANT"/>
       </grid>
-      <output name="enderio:block_enhanced_alloy_smelter" />
+      <output name="enderio:block_enhanced_alloy_smelter"/>
     </crafting>
   </recipe>
   <recipe name="The Enhanced Vat" disabled="true">
     <crafting>
       <grid size="3x3">
-        <item name="ELECTRICAL_STEEL" />
-        <item name="item:minecraft:cauldron" />
-        <item name="ELECTRICAL_STEEL" />
-        <item name="enderio:block_tank:0" />
-        <item name="ENHANCED_CHASSIS" />
-        <item name="enderio:block_tank:0" />
-        <item name="ELECTRICAL_STEEL" />
-        <item name="minecraft:furnace" />
-        <item name="ELECTRICAL_STEEL" />
+        <item name="ELECTRICAL_STEEL"/>
+        <item name="item:minecraft:cauldron"/>
+        <item name="ELECTRICAL_STEEL"/>
+        <item name="enderio:block_tank:0"/>
+        <item name="ENHANCED_CHASSIS"/>
+        <item name="enderio:block_tank:0"/>
+        <item name="ELECTRICAL_STEEL"/>
+        <item name="minecraft:furnace"/>
+        <item name="ELECTRICAL_STEEL"/>
       </grid>
-      <output name="enderio:block_enhanced_vat" />
+      <output name="enderio:block_enhanced_vat"/>
     </crafting>
   </recipe>
-
   <recipe name="The Enhanced Vat, Upgrade" disabled="true">
     <crafting upgrade="true">
       <grid size="3x3">
-        <item />
-        <item name="enderio:block_vat" />
-        <item />
-        <item />
-        <item name="ENHANCED_CHASSIS" />
-        <item />
-        <item name="enderio:block_tank:0" />
-        <item name="minecraft:furnace" />
-        <item name="enderio:block_tank:0" />
+        <item/>
+        <item name="enderio:block_vat"/>
+        <item/>
+        <item/>
+        <item name="ENHANCED_CHASSIS"/>
+        <item/>
+        <item name="enderio:block_tank:0"/>
+        <item name="minecraft:furnace"/>
+        <item name="enderio:block_tank:0"/>
       </grid>
-      <output name="enderio:block_enhanced_vat" />
+      <output name="enderio:block_enhanced_vat"/>
     </crafting>
   </recipe>
   <recipe name="Enhanced SAG Mill" disabled="true">
     <crafting>
       <grid size="3x3">
-        <item name="itemFlint" />
-        <item name="itemFlint" />
-        <item name="itemFlint" />
-        <item name="ingotIron" />
-        <item name="ENHANCED_CHASSIS" />
-        <item name="ingotIron" />
-        <item name="GEAR_VIBRANT" />
-        <item name="minecraft:piston" />
-        <item name="GEAR_VIBRANT" />
+        <item name="itemFlint"/>
+        <item name="itemFlint"/>
+        <item name="itemFlint"/>
+        <item name="ingotIron"/>
+        <item name="ENHANCED_CHASSIS"/>
+        <item name="ingotIron"/>
+        <item name="GEAR_VIBRANT"/>
+        <item name="minecraft:piston"/>
+        <item name="GEAR_VIBRANT"/>
       </grid>
-      <output name="enderio:block_enhanced_sag_mill" />
+      <output name="enderio:block_enhanced_sag_mill"/>
     </crafting>
   </recipe>
-
   <recipe name="Enhanced SAG Mill, Upgrade" disabled="true">
     <crafting upgrade="true">
       <grid size="3x3">
-        <item />
-        <item name="enderio:block_sag_mill" />
-        <item />
-        <item />
-        <item name="ENHANCED_CHASSIS" />
-        <item />
-        <item name="GEAR_VIBRANT" />
-        <item />
-        <item name="GEAR_VIBRANT" />
+        <item/>
+        <item name="enderio:block_sag_mill"/>
+        <item/>
+        <item/>
+        <item name="ENHANCED_CHASSIS"/>
+        <item/>
+        <item name="GEAR_VIBRANT"/>
+        <item/>
+        <item name="GEAR_VIBRANT"/>
       </grid>
-      <output name="enderio:block_enhanced_sag_mill" />
+      <output name="enderio:block_enhanced_sag_mill"/>
     </crafting>
   </recipe>
-
   <recipe name="Sagmill: Flux Core" required="true">
     <sagmilling energy="1000000">
       <input name="enderio:block_transceiver"/>
-      <output name="fluxnetworks:fluxcore" amount="32" />
+      <output name="fluxnetworks:fluxcore" amount="32"/>
     </sagmilling>
   </recipe>
-
   <recipe name="Sagmill: Coal" required="true">
     <sagmilling energy="2400">
       <input name="minecraft:coal:0"/>
-      <output name="dustCoal" />
-      <output name="dustSulfur" chance="0.1" required="false" />
+      <output name="dustCoal"/>
+      <output name="dustSulfur" chance="0.1" required="false"/>
     </sagmilling>
   </recipe>
-
   <recipe name="Quartz Dust">
     <sagmilling bonus="chance_only" energy="2400">
       <input name="gemQuartz"/>
       <output name="POWDER_QUARTZ"/>
     </sagmilling>
   </recipe>
-
   <recipe name="Sagmill: Coke Dust" required="true">
     <sagmilling energy="4000">
       <input name="immersiveengineering:material:6"/>
-      <output name="immersiveengineering:material:17" />
+      <output name="immersiveengineering:material:17"/>
     </sagmilling>
   </recipe>
-
   <recipe name="Sagmill: Black Quartz Block" disabled="true">
     <sagmilling energy="4000">
       <input name="blockBlackQuartz"/>
       <output name="actuallyadditions:item_dust:7" amount="9"/>
     </sagmilling>
   </recipe>
-
   <recipe name="Tweak: Stick from Wood" disabled="true">
     <crafting>
       <grid size="1x2">
         <item name="logWood"/>
         <item name="logWood"/>
       </grid>
-      <output name="minecraft:stick, stickWood" amount="16" />
+      <output name="minecraft:stick, stickWood" amount="16"/>
     </crafting>
   </recipe>
-
   <recipe name="Tweak: Chest from Wood" disabled="true">
     <crafting>
       <grid>
@@ -507,10 +482,9 @@
         <item name="logWood"/>
         <item name="logWood"/>
       </grid>
-      <output name="minecraft:chest, chestWood" amount="4" />
+      <output name="minecraft:chest, chestWood" amount="4"/>
     </crafting>
   </recipe>
-
   <recipe name="Tweak: Wood Hopper" disabled="true">
     <crafting>
       <grid>
@@ -524,9 +498,7 @@
         <item name="IRON"/>
         <item/>
       </grid>
-      <output name="minecraft:hopper, blockHopper" />
+      <output name="minecraft:hopper, blockHopper"/>
     </crafting>
   </recipe>
-
 </enderio:recipes>
-
