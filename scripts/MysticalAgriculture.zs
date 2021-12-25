@@ -810,3 +810,7 @@ craft.reshapeless(<mysticalagriculture:fertilized_essence>, "rF*ef", {
   "e": <forestry:fertilizer_compound>,      # Fertilizer
   "f": <thermalfoundation:fertilizer>,      # Phyto-Gro
 });
+
+# Better enderpearl recipe
+recipes.removeByRecipeName("mysticalagriculture:ender_pearl");
+craft.shapeless(<minecraft:ender_pearl> * 6, "AAA", {A: <mysticalagriculture:enderman_essence>});
