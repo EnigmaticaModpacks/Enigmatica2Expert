@@ -1,3 +1,10 @@
+/**
+ * @file Bunch of handy utilities for zenscript
+ * 
+ * @author Krutoy242
+ * @link https://github.com/Krutoy242
+ */
+
 #priority 4000
 
 import crafttweaker.data.IData;

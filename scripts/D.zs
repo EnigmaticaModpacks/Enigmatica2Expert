@@ -4,7 +4,7 @@ Safe working with IData.
 
 Use global function D(data) to wrap IData and get values from it.
 
-Author: https://github.com/Krutoy242
+Source: https://github.com/Krutoy242/D.zs
 
 
 Example
@@ -24,7 +24,7 @@ Example
 
 
 import crafttweaker.data.IData;
-#priority 4000
+#priority 4010
 
 #loader crafttweaker reloadableevents
 

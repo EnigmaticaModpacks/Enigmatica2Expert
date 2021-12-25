@@ -250,22 +250,6 @@ add(<ore:stoneBasalt>, <quark:world_stone_bricks:3>);
 add(<ore:stoneLimestone>, <quark:limestone:1>);
 add(<ore:stoneLimestone>, <quark:world_stone_bricks:5>);
 
-#====== Variables ======
-
-	var Chest = <ore:chest>;
-	var ChestWood = <ore:chestWood>;
-	var ChestTrapped = <ore:chestTrapped>;
-	var Trapdoor = <ore:trapdoorWood>;
-	var Door = <ore:doorWood>;
-	var Bed = <ore:bed>;
-	var Log = <ore:logWood>;
-	var Plank = <ore:plankWood>;
-	var WoodSlab = <ore:slabWood>;
-	var WoodStair = <ore:stairWood>;
-	var Stick = <ore:stickWood>;
-	var Fence = <ore:fenceWood>;
-	var Gate = <ore:fenceGateWood>;
-
 
 # *======= Planks =======*
 addItems(<ore:plankWood>, [
@@ -395,9 +379,9 @@ removeItems(<ore:chest>, [
 
 # *======= Conversion Recipes =======*
 
-recipes.addShapeless("trapdoororedict1", <minecraft:trapdoor>, [Trapdoor]);
+recipes.addShapeless("trapdoororedict1", <minecraft:trapdoor>, [<ore:trapdoorWood>]);
 recipes.addShapeless("bedoredict1", <minecraft:bed>, [<ore:bed>]);
-recipes.addShapeless("wooddoororedict1", <minecraft:wooden_door>, [Door]);
+recipes.addShapeless("wooddoororedict1", <minecraft:wooden_door>, [<ore:doorWood>]);
 
 # Rats
 addItems(<ore:hatArcheologist>, [<quark:archaeologist_hat>, <rats:archeologist_hat>]);

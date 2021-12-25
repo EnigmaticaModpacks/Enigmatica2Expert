@@ -14,8 +14,6 @@ As much species are stored, as much time added, exponentially.
 import crafttweaker.data.IData;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
-import mods.ctutils.utils.Math.sqrt;
-import mods.ctutils.utils.Math.round;
 import crafttweaker.recipes.IRecipeFunction;
 
 //-------------------------------------------------------------------------------
@@ -78,9 +76,9 @@ function rewardCalculator(
   penalty as double, 
   multiplier as double
 ) as int {
-  val pow1 = sqrt((total - 12.0d) * 8.0d);
+  val pow1 = pow((total - 12.0d) * 8.0d, 0.5d);
   val pow2 = (points / 13.0d + 2.0d) / (penalty + 1.0d) + 1.0d;
-  return max(20, round(pow(pow1, pow2) * multiplier));
+  return max(20, (pow(pow1, pow2) * multiplier + 0.5d) as int);
 }
 
 val diversityStoreOutput = <contenttweaker:bee_diversity>.withTag({
