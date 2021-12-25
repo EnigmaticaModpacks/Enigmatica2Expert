@@ -192,10 +192,15 @@ import crafttweaker.item.IIngredient as IIngredient;
 	recipes.addShapeless("Petal Duplication14", <botania:petal:14> * 4, [<botania:petal:14>, <ore:fertilizer>, <ore:fertilizer>, <ore:fertilizer>, <ore:fertilizer>]);
 	recipes.addShapeless("Petal Duplication15", <botania:petal:15> * 4, [<botania:petal:15>, <ore:fertilizer>, <ore:fertilizer>, <ore:fertilizer>, <ore:fertilizer>]);
 
-	
-## *======= Mana Infusion =======*
-//mods.botania.ManaInfusion.addInfusion(IItemStack output, IIngredient input, int mana);
-#mods.botania.ManaInfusion.addInfusion(<minecraft:grass>, <ore:stone>, 1000);
+# Remove unused ORE
+mods.botania.Orechid.removeOre("oreYellorite");
+
+# Add missed ORE
+mods.botania.Orechid.addOre("oreThorium", 1285);
+mods.botania.Orechid.addOre("oreMagnesium", 1285);
+mods.botania.Orechid.addOre("oreLithium", 1285);
+mods.botania.Orechid.addOre("oreBoron", 1285);
+mods.botania.Orechid.addOre("oreProsperity", 900);
 
 //mods.botania.ManaInfusion.addAlchemy(IItemStack output, IIngredient input, int mana);
 #mods.botania.ManaInfusion.addAlchemy(<minecraft:gold_ore>, <ore:stone>, 5000);
