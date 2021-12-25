@@ -218,5 +218,29 @@
       "actuallyadditions:block_giant_chest_large",
       "draconicevolution:draconium_block"
     ]
+  },
+  {
+    "mode": "REMOVE",
+    "result": "draconicevolution:ender_energy_manipulator",
+    "catalyst": "minecraft:skull,1,1"
+  },
+  {
+    "mode": "ADD",
+    "result": "draconicevolution:ender_energy_manipulator",
+    "catalyst": "randomthings:obsidianskull",
+    "energy": 12000000,
+    "tier": 0,
+    "ingredients": [
+      "draconicevolution:draconic_core",
+      "draconicevolution:draconic_core",
+      "draconicevolution:dislocator",
+      "rftools:infused_enderpearl",
+      "rftools:infused_enderpearl",
+      "rftools:infused_enderpearl",
+      "rftools:infused_enderpearl",
+      "rftools:infused_enderpearl",
+      "rftools:infused_enderpearl",
+      "rftools:infused_enderpearl"
+    ]
   }
 ]

@@ -97,4 +97,15 @@ var ingrds as IItemStack[] = [
 ] as IItemStack[];
 mods.extendedcrafting.CombinationCrafting.addRecipe(dchest, 20000000, 2000000, <minecraft:chest>, ingrds as IIngredient[]);
 mods.actuallyadditions.Empowerer.addRecipe(dchest, <minecraft:chest>, ingrds[0], ingrds[1], ingrds[2], ingrds[3], 20000000/4, 400, [8.0, 0.1, 0.9]);
-		
+
+
+# Combination Crafting Alternative for Ender Energy Manipulator
+val pearl = <rftools:infused_enderpearl>;
+mods.extendedcrafting.CombinationCrafting.addRecipe(
+	<draconicevolution:ender_energy_manipulator>, 12000000, 1200000, 
+	<randomthings:obsidianskull>, [
+		<draconicevolution:draconic_core>,
+		<draconicevolution:draconic_core>,
+		<draconicevolution:dislocator>,
+		pearl, pearl, pearl, pearl, pearl, pearl, pearl
+	]);
