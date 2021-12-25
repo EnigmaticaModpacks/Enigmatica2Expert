@@ -271,3 +271,6 @@ reworkClathrate(<thermalfoundation:ore_fluid:3>, <thermalfoundation:material:894
 reworkClathrate(<thermalfoundation:ore_fluid:4>, <thermalfoundation:material:895>, <thermalfoundation:material:103>, <liquid:ender> * 2500);
 
 #####################################
+
+# Stone Gear [Compactor] recipe
+mods.thermalexpansion.Compactor.addGearRecipe(<thermalfoundation:material:23>, <ore:cobblestone>.firstItem * 4, 16000);
