@@ -306,3 +306,18 @@ for i, it in mekTankIngrs {
 		"o": i==1 ? null : <mekanism:machineblock2:11>.withTag({tier: i - 2}, false)
 	});
 }
+
+# Cardboard Box spawner entity
+<mekanism:cardboardbox:1>.addAdvancedTooltip(function(item) {
+	val tag = item.tag;
+	if(
+		isNull(tag.mekData) ||
+		isNull(tag.mekData.blockData) ||
+		isNull(tag.mekData.blockData.tileTag) ||
+		isNull(tag.mekData.blockData.tileTag.id) ||
+		tag.mekData.blockData.tileTag.id != "minecraft:mob_spawner" ||
+		isNull(tag.mekData.blockData.tileTag.SpawnData) ||
+		isNull(tag.mekData.blockData.tileTag.SpawnData.id)
+	) return '';
+  return "§2Spawner with §a" ~ tag.mekData.blockData.tileTag.SpawnData.id.asString() ~ '§r';
+});
