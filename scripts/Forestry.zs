@@ -1,6 +1,6 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
-
+import scripts.craft.grid.Grid;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded forestry
 
@@ -153,8 +153,12 @@ for thing in thingsToferment {
 //mods.forestry.Moistener.addRecipe(IItemStack output, IItemStack input, int packagingTime); 
 #mods.forestry.Moistener.addRecipe(<minecraft:mycelium>, <minecraft:grass>, 60); 
 
-//mods.forestry.Moistener.removeRecipe(IIngredient output);
-#mods.forestry.Moistener.removeRecipe(<minecraft:stonebrick:1>);
+# Remove pulp recipe
+mods.forestry.Carpenter.removeRecipe(<forestry:wood_pulp>);
+mods.forestry.Carpenter.addRecipe(<thermalfoundation:material:800>, [[<ore:logWood>]], 40, <liquid:water> * 250);
+
+mods.forestry.Carpenter.removeRecipe(<forestry:letters>);
+mods.forestry.Carpenter.addRecipe(<forestry:letters>, Grid(["AAA","AAA"], {A: <thermalfoundation:material:800>}).shaped(), 40, <liquid:water> * 250);
 
 # *======= Squeezer =======*
 
