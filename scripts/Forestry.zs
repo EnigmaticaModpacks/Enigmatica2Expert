@@ -166,14 +166,27 @@ mods.forestry.Carpenter.addRecipe(<forestry:letters>, Grid(["AAA","AAA"], {A: <t
 //mods.forestry.Squeezer.addRecipe(<liquid:lava>, <minecraft:redstone>, 120);
 #mods.forestry.Squeezer.addRecipe(<liquid:lava>, <minecraft:obsidian>, 120, <minecraft:redstone> % 20);
 
-//mods.forestry.Squeezer.removeRecipe(ILiquidStack liquid, @Optional IIngredient[] ingredients);
-#mods.forestry.Squeezer.removeRecipe(<liquid:juice>);
-#mods.forestry.Squeezer.removeRecipe(<liquid:seed.oil>, [<minecraft:wheat_seeds>]);
+# Simplify andvanced bags
+val bagNames = [
+	"miner",
+	"digger",
+	"forester",
+	"hunter",
+	"adventurer",
+	"builder",
+] as string[];
 
-#Make melons give fruit juice
-mods.forestry.Squeezer.addRecipe(<liquid:juice> * 15, [<minecraft:melon>], 8);
+for name in bagNames {
+	val splBag = itemUtils.getItem("forestry:"~name~"_bag");
+	val advBag = itemUtils.getItem("forestry:"~name~"_bag_t2");
+	mods.forestry.Carpenter.removeRecipe(advBag);
 
-# *======= Still =======*
+	mods.forestry.Carpenter.addRecipe(advBag, [
+		[<quark:gold_button>], # Gold Button
+		[splBag],
+		[<forestry:crafting_material:2>] # Silk Wisp
+	], 40, <liquid:water> * 250);
+}
 
 //mods.forestry.Still.addRecipe(ILiquidStack fluidOutput, ILiquidStack fluidInput, int timePerUnit);
 #mods.forestry.Still.addRecipe(<liquid:lava>, <liquid:water>, 200);
