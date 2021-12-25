@@ -63,4 +63,20 @@ craft.remake(<storagedrawers:upgrade_creative>, ["pretty",
   "S": <storagedrawers:upgrade_storage:3>,    # Storage Upgrade (IV)
   "U": <storagedrawers:upgrade_template>      # Upgrade Template
 });
-		
+
+
+# Upgrades
+function remakeDrawerUpgrade(item as IItemStack, primary as IIngredient){
+	recipes.remove(item);
+	recipes.addShaped(item, [
+		[primary, <ore:stickWood>, primary],
+		[<ore:stickWood>, <storagedrawers:upgrade_template>, <ore:stickWood>],
+		[primary, <ore:stickWood>, primary]]);
+}
+
+remakeDrawerUpgrade(<storagedrawers:upgrade_storage:0>, <ore:nuggetLead>);
+remakeDrawerUpgrade(<storagedrawers:upgrade_storage:1>, <ore:nuggetDarkSteel>);
+remakeDrawerUpgrade(<storagedrawers:upgrade_storage:2>, <ore:nuggetCrystaltine>);
+remakeDrawerUpgrade(<storagedrawers:upgrade_storage:3>, <actuallyadditions:item_crystal_empowered:4>);
+remakeDrawerUpgrade(<storagedrawers:upgrade_storage:4>, <ore:crystalLitherite>);
+
