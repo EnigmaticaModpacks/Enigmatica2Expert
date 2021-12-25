@@ -53,4 +53,14 @@
 	[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
 	[<ore:stickWood>, <ore:plankWood>, <ore:stickWood>]]);
 
+# [Creative Storage Upgrade] from [Black Hole Unit][+3]
+craft.remake(<storagedrawers:upgrade_creative>, ["pretty",
+  "# S #",
+  "U B U",
+  "# S #"], {
+  "B": <industrialforegoing:black_hole_unit>, # Black Hole Unit
+  "#": <ore:stickWood>,                       # Stick
+  "S": <storagedrawers:upgrade_storage:3>,    # Storage Upgrade (IV)
+  "U": <storagedrawers:upgrade_template>      # Upgrade Template
+});
 		
