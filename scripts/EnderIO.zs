@@ -269,3 +269,8 @@ scripts.process.crush(<enderio:item_material:76>, <enderio:block_holy_fog>, "exc
 
 # Compunent for nano-glowstone compat
 scripts.process.alloy([<minecraft:glowstone_dust>, <minecraft:clay_ball>], <enderio:item_material:76> * 2, "except: alloySmelter");
+
+# Remove [Ender Pearl Powder] grinding recipes
+mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:ender_pearl>);
+mods.appliedenergistics2.Grinder.removeRecipe(<thermalfoundation:material:895>);
+scripts.process.crush(<ore:enderpearl>, <appliedenergistics2:material:46>, "Except: Pulverizer PulseCentrifuge", null, null);
