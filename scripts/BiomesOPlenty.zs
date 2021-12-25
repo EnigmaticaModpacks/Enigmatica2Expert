@@ -58,3 +58,12 @@ import mods.jei.JEI.removeAndHide as rh;
 
 # To easy manage in inventory
 <biomesoplenty:jar_filled:1>.maxStackSize = 64;
+
+# Squeeze harming potion from Bramble
+scripts.process.squeeze(
+	[<biomesoplenty:bramble_plant>],
+	<fluid:potion>.withTag({Potion: "minecraft:harming"}) * 150,
+	"except: CrushingTub Squeezer MechanicalSqueezer TECentrifuge",
+	null
+);
+
