@@ -262,6 +262,13 @@ scripts.process.squeeze([<tconstruct:slime_vine_purple_end>], <liquid:purpleslim
 scripts.process.squeeze([<tconstruct:slime_vine_purple_mid>], <liquid:purpleslime>*200,  null,  <tconstruct:slime_vine_purple_end>);
 scripts.process.squeeze([<tconstruct:slime_vine_purple>],     <liquid:purpleslime>*200,  null,  <tconstruct:slime_vine_purple_mid>);
 
+# Clay bucket use for casts
+val bkt = <claybucket:unfiredclaybucket:*>;
+mods.tconstruct.Casting.addTableRecipe(<tcomplement:cast_clay>, bkt, <liquid:clay>, 288, true);
+mods.tconstruct.Casting.addTableRecipe(<tcomplement:cast>, bkt, <liquid:gold>, 288, true);
+mods.tconstruct.Casting.addTableRecipe(<tcomplement:cast>, bkt, <liquid:alubrass>, 144, true);
+mods.tconstruct.Casting.addTableRecipe(<tcomplement:cast>, bkt, <liquid:brass>, 144, true);
+
 # Cast slimes from liquids (only blood have recipe now)
 mods.tconstruct.Casting.addTableRecipe(<tconstruct:edible:2>, null, <liquid:purpleslime>, 250);
 mods.tconstruct.Casting.addTableRecipe(<tconstruct:edible:1>, null, <liquid:blueslime>  , 250);
