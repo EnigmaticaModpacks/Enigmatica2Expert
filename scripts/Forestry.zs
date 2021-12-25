@@ -78,6 +78,12 @@ for tomato in <ore:cropTomato>.items {
 #mods.forestry.Carpenter.addRecipe(<minecraft:gold_ingot>, [[<minecraft:gold_block>]], 30, <liquid:for.honey> * 100);
 #mods.forestry.Carpenter.addRecipe(<minecraft:redstone_block>, [[<minecraft:redstone>,<minecraft:redstone>,<minecraft:redstone>],[<minecraft:redstone>,<minecraft:redstone>,<minecraft:redstone>],[<minecraft:redstone>,<minecraft:redstone>,<minecraft:redstone>]], 60, <liquid:water> * 200, <minecraft:stone>);
 
+# Use OreDict recipe for Impregnated Casing
+val imprCasingGrid = Grid(["AAA","A A","AAA"], {A:<ore:logWood>}).shaped();
+mods.forestry.Carpenter.removeRecipe(<forestry:impregnated_casing>);
+mods.forestry.Carpenter.addRecipe(<forestry:impregnated_casing>, imprCasingGrid, 40, <liquid:oliveoil> * 250);
+mods.forestry.Carpenter.addRecipe(<forestry:impregnated_casing>, imprCasingGrid, 40, <liquid:seed.oil> * 250);
+
 //mods.forestry.Carpenter.removeRecipe(IItemStack output, @Optional ILiquidStack fluidInput);
 #mods.forestry.Carpenter.removeRecipe(<forestry:portable_alyzer>);
 #mods.forestry.Carpenter.removeRecipe(<forestry:wood_pulp>, <liquid:water>);
@@ -187,13 +193,6 @@ for name in bagNames {
 		[<forestry:crafting_material:2>] # Silk Wisp
 	], 40, <liquid:water> * 250);
 }
-
-//mods.forestry.Still.addRecipe(ILiquidStack fluidOutput, ILiquidStack fluidInput, int timePerUnit);
-#mods.forestry.Still.addRecipe(<liquid:lava>, <liquid:water>, 200);
-
-//mods.forestry.Still.removeRecipe(ILiquidStack output, @Optional ILiquidStack fluidInput);
-#mods.forestry.Still.removeRecipe(<liquid:bio.ethanol>);
-#mods.forestry.Still.removeRecipe(<liquid:refinedcanolaoil>,<liquid:canolaoil>);
 
 # *======= Thermionic Fabricator =======*
 
