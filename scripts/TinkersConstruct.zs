@@ -150,6 +150,9 @@ for item in coals {
 
 # Remove Ender Pearl Melting (to remove the ability to alloy Enderium)
 	mods.tconstruct.Melting.removeRecipe(<liquid:ender>);
+
+# Missed melt recipe for Block Of Ender Pearls
+	scripts.process.melt(<actuallyadditions:block_misc:6>, <liquid:ender> * 1000, "Except: Smeltery");
 	
 # Gear Cast
 	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <exnihilocreatio:item_material:7>, <liquid:gold>, 288, true);
