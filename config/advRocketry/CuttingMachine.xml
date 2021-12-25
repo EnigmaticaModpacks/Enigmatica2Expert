@@ -613,4 +613,34 @@
 			<itemStack>extrautils2:ironwood_planks 10 1</itemStack>
 		</output>
 	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Printed Calculation Circuit] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>crystalPureCertusQuartz 9</oreDict>
+		</input>
+		<output>
+			<itemStack>appliedenergistics2:material 9 16</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Printed Engineering Circuit] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>blockDiamond 1</oreDict>
+		</input>
+		<output>
+			<itemStack>appliedenergistics2:material 9 17</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Printed Logic Circuit] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>blockGold 1</oreDict>
+		</input>
+		<output>
+			<itemStack>appliedenergistics2:material 9 18</itemStack>
+		</output>
+	</Recipe>
 </Recipes>
