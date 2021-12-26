@@ -49,16 +49,22 @@
       "0:10": {
         "choices:9": {
           "0:10": {
-            "Count:3": 4,
-            "Damage:2": 0,
-            "id:8": "minecraft:ender_pearl",
-            "OreDict:8": "enderpearl"
+            "Count:3": 1,
+            "Damage:2": 7,
+            "id:8": "extendedcrafting:storage",
+            "OreDict:8": ""
           },
           "1:10": {
-            "Count:3": 4,
-            "Damage:2": 6,
-            "id:8": "thermalfoundation:ore",
-            "OreDict:8": "orePlatinum"
+            "Count:3": 8,
+            "Damage:2": 0,
+            "id:8": "biomesoplenty:biome_block",
+            "OreDict:8": ""
+          },
+          "2:10": {
+            "Count:3": 16,
+            "Damage:2": 0,
+            "id:8": "extrautils2:enderlilly",
+            "OreDict:8": ""
           }
         },
         "index:3": 0,
