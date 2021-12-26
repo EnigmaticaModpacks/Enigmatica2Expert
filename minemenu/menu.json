@@ -103,6 +103,19 @@
           "toggle": false
         }
       }
+    },
+    "9": {
+      "title": "Display Book (from offhand)",
+      "icon": {
+        "name": "akashictome:tome",
+        "damage": 0
+      },
+      "action": {
+        "key": {
+          "key": "key.bookdisplay.display",
+          "toggle": false
+        }
+      }
     }
   }
 }

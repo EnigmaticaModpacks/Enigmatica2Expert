@@ -62,6 +62,7 @@
 
 	{"mob": "rats:rat","mincount": 15,"result": "deny"},
   {"mob": "rats:rat","block": "rats:garbage_pile","result": "allow"},
+  {"mob": "rats:rat","result": "deny"},
 	
 	{"dimension": 0, "mob": "endreborn:watcher","mincount": 15,"result": "deny"},
   {"dimension": 0, "mob": "endreborn:watcher", "maxlight": 7, "block": "ore:endstone","result": "allow"},

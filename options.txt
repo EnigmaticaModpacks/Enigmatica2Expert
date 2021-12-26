@@ -226,7 +226,7 @@ key_key.dragon_change_view:0
 key_bbw.key.mode:78
 key_bbw.key.fluidmode:0
 key_Show Biome Borders:48:CONTROL
-key_key.bookdisplay.display:19
+key_key.bookdisplay.display:21
 key_key.bookdisplay.left:203
 key_key.bookdisplay.right:205
 key_key.settings_menu:34
