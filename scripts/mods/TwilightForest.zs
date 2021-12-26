@@ -145,7 +145,7 @@ recipes.addShaped("twilightforest_moonworm", <twilightforest:moonworm>, [
 ]);
 
 # [Glowstone Dust] from [Firefly][+1]
-scripts.process.crush(<twilightforest:firefly>, <minecraft:glowstone_dust> * 2, "only: crushingBlock",null,null);
+scripts.process.crush(<twilightforest:firefly>, <minecraft:glowstone_dust> * 20, "only: crushingBlock",null,null);
 
 #-------------------------------------------------------------------------
 # SPAWNERS

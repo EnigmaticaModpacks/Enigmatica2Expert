@@ -470,7 +470,7 @@
     {"meshLevel": 1, "drop": {"name": "tconstruct:slime_sapling"  , "meta": 1} , "chance": 0.4}
   ],
 
-  "enderio:block_infinity": [
+  "enderio:block_infinity:0": [
     {"meshLevel": 1, "drop": {"name": "fluxnetworks:flux"               , "meta": 0} , "chance": 1.0},
     {"meshLevel": 1, "drop": {"name": "fluxnetworks:flux"               , "meta": 0} , "chance": 0.8},
 
@@ -496,7 +496,7 @@
     {"meshLevel": 4, "drop": {"name": "exnihilocreatio:item_ore_silver" , "meta": 0} , "chance": 0.3}
   ],
 
-  "ore:blockGunpowder": [
+  "additionalcompression:dustgunpowder_compressed:0": [
     {"meshLevel": 1, "drop": {"name": "jaopca:item_dustdirtyaluminium", "meta": 0} , "chance": 0.2},
 
     {"meshLevel": 2, "drop": {"name": "jaopca:item_dustdirtyaluminium", "meta": 0} , "chance": 0.2},

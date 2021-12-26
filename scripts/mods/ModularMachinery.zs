@@ -48,10 +48,9 @@ for name, grid in modIngrs {
   val blueprint = <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:"~name});
 	recipes.addShapedMirrored("modularmachinery " ~ name, blueprint, grid);
 
-	recipes.addShapeless("modularcontroller " ~ name, 
-    itemUtils.getItem("modularcontroller:"~name~"_controller"), 
-    [<modularmachinery:blockcontroller>, blueprint]
-  );
+    val controller = itemUtils.getItem("modularcontroller:"~name~"_controller");
+    if(isNull(controller)) continue;
+	recipes.addShapeless("modularcontroller " ~ name, controller, [<modularmachinery:blockcontroller>, blueprint]);
 }
 
 # [Machine Vent] from [Machine Casing][+1]

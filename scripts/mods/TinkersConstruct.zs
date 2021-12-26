@@ -246,7 +246,7 @@ mods.tcomplement.highoven.HighOven.removeMixRecipe(<liquid:steel>);
 scripts.wrap.immersiveengineering.ArcFurnace.addRecipe(<tcomplement:materials:1>, <minecraft:brick>, <immersiveengineering:material:7>, 10, 512);
 
 # Clay bucket use for casts
-val bkt = <claybucket:claybucket>;
+val bkt = <claybucket:unfiredclaybucket:*>;
 scripts.wrap.tconstruct.Casting.addTableRecipe(<tcomplement:cast_clay>, bkt, <liquid:clay>, 288, true);
 scripts.wrap.tconstruct.Casting.addTableRecipe(<tcomplement:cast>, bkt, <liquid:gold>, 288, true);
 scripts.wrap.tconstruct.Casting.addTableRecipe(<tcomplement:cast>, bkt, <liquid:alubrass>, 144, true);

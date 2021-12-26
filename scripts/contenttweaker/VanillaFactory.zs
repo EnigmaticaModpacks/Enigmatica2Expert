@@ -156,7 +156,7 @@ x.rarity = "rare";
 x.register();
 
 
-val molten_spectre = VanillaFactory.createFluid("spectre", 0x9CC1CE);
+val molten_spectre = VanillaFactory.createFluid("spectre", 0xff9CC1CE);
 molten_spectre.material = <blockmaterial:water>;
 molten_spectre.viscosity = 3000;
 molten_spectre.density = 6500;
@@ -172,7 +172,7 @@ molten_spectre.register();
 # -------------------------------
 # perfect_fuel
 # -------------------------------
-val perfect_fuel = VanillaFactory.createFluid("perfect_fuel", 0xffcc00);
+val perfect_fuel = VanillaFactory.createFluid("perfect_fuel", 0xffffcc00);
 perfect_fuel.material = <blockmaterial:lava>;
 perfect_fuel.luminosity = 15;
 perfect_fuel.viscosity = 8000;
@@ -194,10 +194,10 @@ x.register();
 # -------------------------------
 # electronics
 # -------------------------------
-val electronics = VanillaFactory.createFluid("electronics", 0x0a1410);
+val electronics = VanillaFactory.createFluid("electronics", 0xff0a1410);
 electronics.material = <blockmaterial:lava>;
 electronics.viscosity = 8000;
-electronics.temperature= 3000;
+electronics.temperature= 2000;
 electronics.colorize = true;
 electronics.stillLocation = "base:fluids/molten";
 electronics.flowingLocation = "base:fluids/molten_flowing";

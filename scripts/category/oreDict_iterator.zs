@@ -75,7 +75,7 @@ for ore_entry in oreDict {
 	if (!isNull(ore_name)) {
     if(ore_name == 'Aluminum') continue;
 		val inpOre = (ore_name == "Obsidian")
-			? (<minecraft:obsidian> * 4) as IIngredient
+			? (<minecraft:obsidian> * 3) as IIngredient
 			: oreDict["block"~ore_name];
 		if(inpOre.items.length <= 0) continue;
 		scripts.process.compress(inpOre, ore_entry.firstItem, "only: Compactor");

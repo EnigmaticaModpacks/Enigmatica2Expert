@@ -669,7 +669,7 @@ mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(<nuclearcraft:alloy:7> * 
 scripts.process.alloy([<ore:ingotSilver> * 3, <ore:ingotCopper>], <nuclearcraft:alloy:7> * 4, "only: alloyFurnace induction");
 
 # Stone Gear recipe
-scripts.wrap.thermalexpansion.Compactor.addGearRecipe(<thermalfoundation:material:23>, <minecraft:cobblestone:*> * 4, 16000);
+scripts.wrap.thermalexpansion.Compactor.addGearRecipe(<thermalfoundation:material:23>, <minecraft:cobblestone> * 4, 16000);
 
 # Way to craft Oil Ore (alternative way to get Tar)
 scripts.wrap.tconstruct.Casting.addBasinRecipe(<thermalfoundation:ore_fluid>, <minecraft:sand>, <liquid:oil>, 2000);
