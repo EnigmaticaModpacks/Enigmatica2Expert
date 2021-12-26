@@ -84,10 +84,26 @@ Liquids that should have more uses:
 
 # TODO
 
+- [ ] ✏️ Add cheaper EnderIO capacitor
+- [ ] ✏️ Zotspire add better drop
+- [ ] ✏️ Endorium alt high-tech recipe
+- [ ] ✏️ Turtle add Fake Iron alt
+- [ ] ✏️ Add Excavation Enchantment on quest book
+- [ ] ✏️ Pure Dicy obsidian cheaper
+- [ ] ✏️ [Spectre Coil] alt from not bees
+- [ ] ✏️ Fix Omega Potion have weird ingredients
+- [ ] ✏️ Phosphor Ore in thermal Centrifuge should add additional output
+- [ ] ✏️ Add Compressed Garbage Pile
+- [ ] ✏️ [Royal Jelly] (harvest) Add alt craft with more output
+- [ ] ✏️ [Fluxomagnet] recipe should save tags
+- [ ] ✏️ Cinderpearl -> Blaze powder harder
+- [ ] ✏️ [Xorcite] more uses
+- [ ] ✏️ [Biome Essence Ore] add skyblock craft
+- [ ] ✏️ [Enchanter] Harder
+- [ ] ✏️ Convert Uranium -> Ardite in portal spread
 - [ ] ✏️ [Antler] add usage
 - [ ] ✏️ [Bee nest] make not in basing but in world
 - [ ] ✏️ [Cobalt Dust] Replace with EnderIO variant (its beautiful)
-- [x] ✏️ [Flint Mesh] cheaper, but less output
 - [ ] ✏️ [Pharos Beacon] harder
 - [ ] ✏️ [Tungsten ingot] add to JAOPCA
 - [ ] ✏️ Add [Uncrafting Table] as Endgame item, and [Uncrafting Grinder] right before creative upgrade
@@ -95,7 +111,6 @@ Liquids that should have more uses:
 - [ ] ✏️ Add EEPROM with `user`, `attacker`, `trader`, add Patchouli and Quest Book Entry
 - [ ] ✏️ Add Endermite rare drop, add Nethernite too
 - [ ] ✏️ Add Mob Trophies recipes
-- [x] ✏️ Add [Thorium] [Boron] [Magnesium] [Lithium]
 - [ ] ✏️ Add non-magic way to finish modpack
 - [ ] ✏️ Add Skyblock recipe for Terraformer
 - [ ] ✏️ Add usage to rainbow faries
@@ -103,20 +118,17 @@ Liquids that should have more uses:
 - [ ] ✏️ Enable AIOTs, Paxels
 - [ ] ✏️ MA crafting seeds add table -> runic -> alchemy table recipe
 - [ ] ✏️ Rethink small plate presser
-- [ ] ✏️ Cyclics machines harder
-- [ ] 📖 Quantum Compressor: got it to work by breaking and replacing and putting in the items in the right order. Also i think the mining level shouldn't be that high due to this bug
-- [ ] 📖 Change sound of quest complete to another
+- [ ] ✏️ Cyclics powered machines harder
 - [ ] 📖 Add CC/OC gate
-- [ ] 🔄 Add new mods to `make_pack` server exclusions
+- [ ] 🔄 If Default options work with predefined keys, automate it
 - [ ] 🔨 Grinding rework
 - [ ] 🚧 Add modpack automation:
-    1. `automate.js` without `changelog.js`
-    2. Check git status
-    3. Pick next version
-    4. `changelog.js`
-    5. Fix changelog, add tag
-    6. `make_pack.js`
-    7. `release-it`
+    1. `automate.js`
+    2. Clear working tree
+    3. `changelog.js` with next version arg
+    4. Fix changelog, add tag
+    5. `make_pack.js`
+    6. `release-it`
 
 ---
 
@@ -146,6 +158,7 @@ Liquids that should have more uses:
 - [ ] 📖 ![](https://git.io/JRthK "Angel Ring") add to Conflux
 - [ ] 📖 LootBoxes can be achieved with RecurrentComplex commands by spawning inventories
 - [ ] 📖 Trophy for each chapter
+- [ ] 📖 Change sound of quest complete to another
 - [ ] 🔄 **Perfect Fuel** Fix texture. Now it uses default one.
 - [ ] 🔄 Fix Custom Animals drops non-cooked meat
 - [ ] 🔄 Remove Automatically Achievment When logged in, there is 2-3 achievments. [Probably solution](https://github.com/TCreopargh/CraftTweakerIntegration/wiki/Advancements)
