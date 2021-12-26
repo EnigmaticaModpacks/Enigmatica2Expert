@@ -74775,7 +74775,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Garbage piles can be crafted with:\nContainment Food + 8 other non-repeating items.\n\nThe value of each item is multiplied with each other.\nGarbage output depends on many properties of items.\nSome props add value, some reduce.\n\n+ Hardness\n+ Harvest Level\n+ Burn Time\n+ Enchantment Count\n+ Tool Classes\n+ Unstackable / Low Stack Max\n+ Has NBT Tag\n+ Is Damageble\n- From \"Minecraft\"\n- Is Block",
+          "desc:8": "bq.quest1063.desc",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 4,
@@ -74786,7 +74786,7 @@
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
-          "name:8": "Garbage Pile",
+          "name:8": "bq.quest1063.name",
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
