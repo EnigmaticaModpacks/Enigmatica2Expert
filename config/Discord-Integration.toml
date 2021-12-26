@@ -1,0 +1,480 @@
+# General options for the bot
+[general]
+  # Insert your Bot Token here!
+  # DO NOT SHARE IT WITH ANYONE!
+  botToken = ""
+  # The channel ID where the bot will be working in
+  botChannel = ""
+  # The bot's status message
+  # 
+  # PLACEHOLDERS:
+  # %online% - Online Players
+  # %max% - Maximum Player Amount
+  botStatusName = "%online% players Online"
+  # Type of the bot's status
+  # Allowed Values: DISABLED,PLAYING,WATCHING,LISTENING,STREAMING,COMPETING
+  botStatusType = "PLAYING"
+  # URL of the bot's stream when using the status type 'STREAMING'
+  # Has to start with https://twitch.tv/ or https://www.youtube.com/watch?v=
+  streamingURL = ""
+  # Enable checking for updates?
+  # Notification will be shown after every server start in log when update is available
+  enableUpdateChecker = false
+  # The minimum release type for the update checker to notify
+  # Allowed values: release, beta, alpha
+  updateCheckerMinimumReleaseType = "beta"
+  # Set to false to disable config migration from other mods/plugins to this one
+  # This does not prevent updating of this config after mod updates
+  allowConfigMigration = true
+  # Attempt to parse id-based mentions to names in in-game chat
+  parseMentionsIngame = true
+# Configuration options for commands
+[commands]
+  # The Role IDs of your Admin Roles
+  # Now supports multiple roles which can access admin commands
+adminRoleIDs = [  ""  ]
+  # Add your custom commands here
+  # You can also generate some on https://erdbeerbaerlp.de/dcintegration-commands/
+  # You must op this UUID in the ops.txt or some custom commands won't work!
+  senderUUID = "8d8982a5-8cf9-4604-8feb-3dd5ee1f83a3"
+  # Enable help command?
+  # Disabling also removes response when you entered an invalid command
+  # Requires server restart
+  helpCmdEnabled = true
+  # Enable the list command in discord
+  # Requires server restart
+  listCmdEnabled = true
+  # Enable the uptime command in discord
+  # Requires server restart
+  uptimeCmdEnabled = true
+  # Set to false to completely disable the "Unknown Command" message
+  showUnknownCommandMessage = true
+  # Set to true to enable the "Unknown Command" message in all channels
+  showUnknownCommandEverywhere = false
+
+    [[commands.customCommands]]
+      name = "kick"
+      description = "Kicks an player from the Server"
+      mcCommand = "kick %player% %reason%"
+      adminOnly = true
+      hidden = false
+
+        [[commands.customCommands.args]]
+          name = "player"
+          description = "The player to be kicked"
+          optional = false
+
+        [[commands.customCommands.args]]
+          name = "reason"
+          description = "Reason for the kick"
+          optional = true
+
+    [[commands.customCommands]]
+      name = "stop"
+      description = "Stops the server"
+      mcCommand = "stop"
+      adminOnly = true
+      hidden = false
+args = [    ]
+
+    [[commands.customCommands]]
+      name = "kill"
+      description = "Kills an Player or Entity"
+      mcCommand = "kill %target%"
+      adminOnly = true
+      hidden = false
+
+        [[commands.customCommands.args]]
+          name = "target"
+          description = "The target(s) for the kill command."
+          optional = false
+# Toggle some message related features
+[messages]
+  # Enable formatting conversion (Markdown <==> Minecraft)
+  convertCodes = true
+  # Send formatting codes from mc chat to discord
+  # Has no effect when markdown <==> Minecraft is enabled
+  formattingCodesToDiscord = false
+  # Should /say output be sent to discord?
+  sendOnSayCommand = true
+  # Should /me output be sent to discord?
+  sendOnMeCommand = true
+  # When an /say command's message starts with this prefix, it will not be sent to discord
+  sayCommandIgnoredPrefix = "§4§6§k§r"
+  # Should tamed entity death be visible in discord?
+  sendDeathMessagesForTamedAnimals = true
+# Advanced options
+[advanced]
+  # Custom channel ID for server specific messages (like Join/leave)
+  # Leave 'default' to use default channel
+  serverChannelID = "default"
+  # Custom channel ID for death messages
+  # Leave 'default' to use default channel
+  deathsChannelID = "default"
+  # Custom channel for for ingame messages
+  # Leave 'default' to use default channel
+  chatOutputChannelID = "default"
+  # Custom channel where messages get sent to minecraft
+  # Leave 'default' to use default channel
+  chatInputChannelID = "default"
+# Config options which only have an effect when using forge
+[forgeSpecific]
+  # A list of blacklisted modids
+  # Adding one will prevent the mod to send messages to discord using forges IMC system
+IMC_modIdBlacklist = [  "examplemod"  ]
+  # Show item information, which is visible on hover ingame, as embed in discord?
+  sendItemInfo = true
+# Configuration for linking
+[linking]
+  # Unlink players when they leave the discord server for whatever reason (ex. leave,kick,ban)?
+  unlinkOnLeave = true
+  # Should discord linking be enabled?
+  # If whitelist is on, this can NOT be disabled
+  # DOES NOT WORK IN OFFLINE MODE!
+  enableLinking = true
+  # Role ID of an role an player should get when he links his discord account
+  # Leave as 0 to disable
+  linkedRoleID = "0"
+  # Enable discord based whitelist?
+  # This will override the link config!
+  # To whitelist use the whitelist command in the bot DMs
+  whitelistMode = false
+  # Adding Role IDs here will require the players to have at least ONE of these roles to link account
+requiredRoles = [    ]
+settingsBlacklist = [    ]
+
+    # Allows you to configure the default values of some personal settings
+    [linking.personalSettingsDefaults]
+      default_useDiscordNameInChannel = true
+      default_ignoreReactions = false
+      default_pingSound = true
+# Webhook configuration
+[webhook]
+  # Whether or not the bot should use a webhook (it will create one)
+  enable = false
+  # The avatar to be used for server messages
+  serverAvatarURL = "https://raw.githubusercontent.com/ErdbeerbaerLP/Discord-Chat-Integration/master/images/srv.png"
+  # The name to be used for server messages
+  serverName = "Minecraft Server"
+  # The URL where the player avatar gets fetched from
+  # 
+  # PLACEHOLDERS:
+  # %uuid% - Returns the player's UUID with dashes
+  # %uuid_dashless% - Returns the player's UUID without dashes
+  # %name% - Returns the player's name
+  # %randomUUID% - Returns an random UUID which can be used to prevent discord cache
+  playerAvatarURL = "https://minotar.net/avatar/%uuid%?randomuuid=%randomUUID%"
+# Allows you to modify and translate most of the messages this bot will send
+[localization]
+  # This is what will be displayed ingame when someone types into the bot's channel
+  # PLACEHOLDERS:
+  # %user% - The username
+  # %id% - The user ID
+  # %msg% - The message
+  ingame_discordMessage = "§7[Discord] §2%user%§r %msg%"
+  # This is what will be displayed ingame when someone sends an reply into the bot's channel
+  # PLACEHOLDERS:
+  # %user% - The username
+  # %id% - The user ID
+  # %msg% - The reply message
+  # %ruser% - The username of the message that got the reply
+  # %rmsg% - The replied message
+  ingame_discordReplyMessage = "§6[Discord]§r §a%user%§r in reply to §3%ruser%§r: %msg%"
+  # Message shown when hovering over the username of an discord message
+  # PLACEHOLDERS:
+  # %user% - The username/nickname (Someone123)
+  # %user#tag% - The username with tag (someone#0001)
+  # %id% - The user ID
+  # 
+  # NOTE: using an @ here can cause ping sounds ingame
+  discordUserHover = "§3Discord User %user#tag%\n§aClick to mention"
+  # This message will edited in / sent when the server finished starting
+  serverStarted = "```diff\n+ Server Started! +\n```"
+  # Message to show while the server is starting
+  # This will be edited to SERVER_STARTED_MSG when webhook is false
+  serverStarting = "```yaml\nServer Starting...\n```"
+  # This message will be sent when the server was stopped
+  serverStopped = "```fix\nServer Stopped!\n```"
+  # The message to print to discord when it was possible to detect a server crash
+  serverCrash = "```diff\n- Server Crash Detected -\n```"
+  # Gets sent when an player joins
+  # 
+  # PLACEHOLDERS:
+  # %player% - The player's name
+  playerJoin = "`%player%` joined"
+  # Gets sent when an player leaves
+  # 
+  # PLACEHOLDERS:
+  # %player% - The player's name
+  playerLeave = "`%player%` left"
+  # Gets sent when an player dies
+  # 
+  # PLACEHOLDERS:
+  # %player% - The player's name
+  # %msg% - The death message
+  playerDeath = "`%player%` %msg%"
+  # Message sent instead of playerLeave, when the player times out
+  # 
+  # PLACEHOLDERS:
+  # %player% - The player's name
+  playerTimeout = "`%player%` timed out!"
+  # Gets sent when an player finishes an advancement
+  # Supports MulitLined messages using \n
+  # 
+  # PLACEHOLDERS:
+  # %player% - The player's name
+  # %name% - The advancement name
+  # %desc% - The advancement description
+  advancementMessage = "`%player%` just made the advancement **%name%**\n_%desc%_"
+  # The chat message in discord, sent from an player in-game
+  # 
+  # PLACEHOLDERS:
+  # %player% - The player's name
+  # %msg% - The chat message
+  discordChatMessage = "%player%: %msg%"
+  # Sent to a player when someone reacts to his messages
+  # PLACEHOLDERS:
+  # %name% - (Nick-)Name of the user who reacted (format: 'SomeNickName')
+  # %name2% - Name of the user who reacted with discord discriminator (format: 'SomeName#0123')
+  # %msg% - Content of the message which got the reaction
+  # %emote% - The reacted emote
+  reactionMessage = "§6[Discord]§r§7 %name% reacted to your message \"§9%msg%§7\" with '%emote%'"
+  # Message shown for attachments
+  attachment = "Attachment"
+  # Message shown for stickers
+  sticker = "Sticker"
+  # Header for Embeds
+  embed = "Embed"
+  # Message shown for embed images
+  embedImage = "Image"
+  # Message shown for embed messages
+  embedMessage = "Message"
+  # Hover message for the bot tag ingame
+  bot = "This user is an bot"
+
+    # Strings about the discord commands
+    [localization.commands]
+      # Shown in console when trying to use the discord command
+      ingameOnly = "This command can only be executed ingame"
+      # Shown when successfully reloading the config file
+      configReloaded = "Config reloaded!"
+      # Shown when an subcommand is disabled
+      subcommandDisabled = "This subcommand is disabled!"
+      # Message sent when user does not have permission to run a command
+      noPermission = "You don't have permission to execute this command!"
+      # Message sent when an invalid command was typed
+      # 
+      # PLACEHOLDERS:
+      unknownCommand = "Unknown command, try `%prefix%help` for a list of commands"
+      # Message if a player provides less arguments than required
+      notEnoughArguments = "Not enough arguments"
+      # Message if a player provides too many arguments
+      tooManyArguments = "Too many arguments"
+      # Message if a player can not be found
+      # 
+      # PLACEHOLDERS:
+      # %player% - The player's name
+      playerNotFound = "Can not find player \"%player%\""
+      # The message for 'list' when no player is online
+      cmdList_empty = "There is no player online..."
+      # The header for 'list' when one player is online
+      cmdList_one = "There is 1 player online:"
+      # The header for 'list'
+      # PLACEHOLDERS:
+      # %amount% - The amount of players online
+      cmdList_header = "There are %amount% players online:"
+      # Header of the help command
+      cmdHelp_header = "Your available commands in this channel:"
+      # Message sent when ignoring Discord messages
+      commandIgnore_ignore = "You are now ignoring Discord messages!"
+      # Message sent when unignoring Discord messages
+      commandIgnore_unignore = "You are no longer ignoring Discord messages!"
+      # Message sent when using the uptime command
+      # 
+      # PLACEHOLDERS:
+      # %uptime% - Uptime in uptime format, see uptimeFormat
+      cmdUptime_message = "The server is running for %uptime%"
+      # The format of the uptime command
+      # For more help with the formatting visit https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/time/DurationFormatUtils.html
+      uptimeFormat = "dd 'days' HH 'hours' mm 'minutes'"
+      # Shows when running slash commands as command response
+      executing = "Executing..."
+      # Command argument description for the linkcheck command's Discord user parameter
+      cmdLinkcheck_userargDesc = "The discord user to check"
+      # Command argument description for the linkcheck command's minecraft player parameter
+      cmdLinkcheck_mcargDesc = "The minecraft player's UUID or Name to check"
+      # Sent when checked user is not linked
+      cmdLinkcheck_notlinked = "This account is not linked!"
+      # 
+      cmdLinkcheck_discordAcc = "Discord-Account: "
+      cmdLinkcheck_minecraftAcc = "Minecraft Account: "
+      cmdLinkcheck_cannotGetPlayer = "Error getting player information! Maybe you used an invalid name / UUID"
+      cmdSett_key = "Destination settings key"
+      cmdSett_val = "Settings value"
+      cmdSett_set = "Change an setting"
+      cmdSett_get = "Retrieve an setting value"
+
+        # Command descriptions
+        [localization.commands.descriptions]
+          settings = "Allows you to edit your personal settings"
+          uptime = "Displays the server uptime"
+          help = "Displays a list of all commands"
+          list = "Lists all players currently online"
+          link = "Links your Discord account with your Minecraft account"
+          whitelist = "Whitelists you on the server by linking with Discord"
+          linkcheck = "Shows info about an linked discord user or an ingame player"
+
+    # Strings about the account linking feature
+    [localization.linking]
+      # Sent to the user when he linked his discord successfully
+      # PLACEHOLDERS:
+      # %player% - The in-game player name
+      linkSuccessful = "Your account is now linked with %player%.\nUse %prefix%settings here to view and set some user-specific settings"
+      # Sent to the user when linking fails
+      linkFailed = "Account link failed"
+      # Sent when an already linked user attempts to link an account
+      # PLACEHOLDERS:
+      # %player% - The in-game player name
+      alreadyLinked = "Your account is already linked with %player%"
+      # Sent when attempting to use personal commands while not linked
+      # PLACEHOLDERS:
+      # %method% - The currently enabled method for linking
+      notLinked = "Your account is not linked! Link it first using %method%"
+      # Message of the link method in whitelist mode
+      # Used by %method% placeholder
+      linkMethodWhitelistCode = "joining the server and then using `/link <whitelist-code>` here"
+      # Message of the link method in normal mode
+      # Used by %method% placeholder
+      linkMethodIngame = "`/discord link` ingame"
+      # Sent when attempting to whitelist-link with an non uuid string
+      # PLACEHOLDERS:
+      # %arg% - The provided argument
+      link_argumentNotUUID = "Argument \"%arg%\" is not an valid UUID or Name. Use `%prefix%whitelist <Name-or-UUID>`"
+      # Sent when attempting to link with an unknown number
+      invalidLinkNumber = "Invalid link number! Use `/discord link` ingame to get your link number"
+      # Sent when attempting to link with an invalid number
+      linkNumberNAN = "This is not a number. Use `/discord link` ingame to get your link number"
+      # Message shown to players who are not whitelisted using discord
+      # No effect if discord whitelist is off
+      notWhitelistedCode = "§cYou are not whitelisted.\nJoin the discord server for more information\nhttps://discord.gg/someserver\nYour Whitelist-Code is: §6%code%"
+      # Sent when trying to link without an required role
+      link_requiredRole = "You need to have an role to use this"
+      # Sent when trying to link as an non-member
+      link_notMember = "You are not member of the Discord-Server this bot is operating in!"
+      # Sent to the user when he linked his discord successfully
+      # PLACEHOLDERS:
+      # %name% - The linked discord name
+      # %name#tag% - The linked discord name with tag
+      linkSuccessfulIngame = "Your account is now linked with discord-user %name#tag%"
+      # Message shown to players who want to link their discord account ingame
+      # 
+      # PLACEHOLDERS:
+      # %num% - The link number
+      linkMsgIngame = "Send this command as a direct message to the bot to link your account: %prefix%link %num%\nThis number will expire after 10 minutes"
+      # Shown when hovering over the link message
+      hoverMsg_copyClipboard = "Click to copy command to clipboard"
+
+    # Strings about the personal settings feature
+    [localization.personalSettings]
+      # Message for getting an setting's value
+      personalSettingGet = "This settings value is `%bool%`"
+      # Sent when user sucessfully updates an prersonal setting
+      settingUpdateSuccessful = "Successfully updated setting!"
+      # Header of the personal settings list
+      personalSettingsHeader = "Personal Settings list:"
+      # Error message when providing an invalid personal setting name
+      invalidPersonalSettingKey = "`%key%` is not an valid setting!"
+      settingsCommandUsage = "Usages:\n\n%prefix%settings - lists all available keys\n%prefix%settings get <key> - Gets the current settings value\n%prefix%settings set <key> <value> - Sets an Settings value"
+      # Sent when setting an personal setting fails
+      settingUpdateFailed = "Failed to set value :/"
+      # Sent when attempting to change an blacklisted setting
+      settingUpdateBlocked = "The server owner disabled changing of this setting"
+
+        # Descriptions of the settings
+        [localization.personalSettings.descriptons]
+          ignoreDiscordChatIngame = "Configure if you want to ignore discord chat ingame"
+          useDiscordNameInChannel = "Should the bot send messages using your discord name and avatar instead of your in-game name and skin?"
+          ignoreReactions = "Configure if you want to ignore discord reactions ingame"
+          pingSound = "Toggle the ingame ping sound"
+          hideFromDiscord = "Setting this to true will hide all of your minecraft messages from discord"
+# Configuration for the in-game command '/discord'
+[ingameCommand]
+  # Enable the /discord command to show an custom message with invite URL?
+  enabled = true
+  # The message displayed when typing /discord in the server chat
+  message = "Join our discord! http://discord.gg/myserver"
+  # The message shown when hovering the /discord command message
+  hoverMessage = "Click to open the invite url"
+  # The url to open when clicking the /discord command text
+  inviteURL = "http://discord.gg/myserver"
+# The command log channel is an channel where every command execution gets logged
+[commandLog]
+  # Channel ID for the command log channel
+  # Leave 0 to disable
+  channelID = "0"
+  # The format of the log messages
+  # 
+  # PLACEHOLDERS:
+  # %sender% - The name of the Command Source
+  # %cmd% - executed command (e.g. "say Hello World"
+  # %cmd-no-args% - Command without arguments (e.g. "say"
+  message = "%sender% executed command `%cmd%`"
+  # A list of commands that should NOT be logged
+ignoredCommands = [  "list", "help", "?"  ]
+# Configure votifier integration here
+# (Spigot only)
+[votifier]
+  # Should votifier messages be sent to discord?
+  enabled = true
+  # Custom channel ID for Votifier messages
+  # Leave 'default' to use default channel
+  votifierChannelID = "default"
+  # The message format of the votifier message
+  # 
+  # PLACEHOLDERS:
+  # %player% - The player´s name
+  # %site% - The name of the vote site
+  # %addr% - (IP) Address of the site
+  message = ":ballot_box: %player% just voted on %site%"
+  # Name of the webhook title
+  name = "Votifier"
+  # URL of the webhook avatar image
+  avatarURL = "https://www.cubecraft.net/attachments/bkjvmqn-png.126824/"
+# Configure Dynmap integration here
+[dynmap]
+  # The message format of the message forwarded to discord
+  # 
+  # PLACEHOLDERS:
+  # %sender% - The sender´s name
+  # %msg% - The Message
+  dcMessage = "<%sender%> %msg%"
+  # Custom channel ID for dynmap chat
+  # Leave 'default' to use default channel
+  dynmapChannelID = "default"
+  # Name of the webhook title
+  name = "Dynmap Web-Chat"
+  # URL of the webhook avatar image
+  avatarURL = "https://styles.redditmedia.com/t5_2kl3ct/styles/communityIcon_am5zopqnjhs41.png"
+  # The name format of the message forwarded to the dynmap webchat
+  # 
+  # PLACEHOLDERS:
+  # %name% - The discord name of the sender (including nickname)
+  # %name#tag% - The discord name with tag of the sender (without nickname)
+  webName = "%name% (discord)"
+  # Name shown in discord when no name was specified on the website
+  unnamed = "Unnamed"
+# Configure some plugin-specific BStats settings here
+# Everything can be seen here: https://bstats.org/plugin/bukkit/DiscordIntegration/9765
+# 
+# Does not apply to fabric yet, as there is no bstats for it
+[bstats]
+  # Allow sending of installed addon stats (Name and version of installed addons)
+  sendAddonStats = true
+# Settings for servers running as Bungeecord-suberver
+[bungee]
+  # Set this to true if the server is running as an subserver of an bungeecord network and therefore needs to be in offline mode
+  # Setting this will force account linking in offline mode
+  # Do NOT use for actual offline mode servers, as this will break the linking feature because of the UUIDs!
+  # 
+  # Currently no support for floodgate running on bungee
+  isBehindBungee = false
