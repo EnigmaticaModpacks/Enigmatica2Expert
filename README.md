@@ -50,34 +50,29 @@ See full list in [MODS.md](MODS.md)
 
 ## Installation
 
-<sub><sup>
-Beta Test exists to find critical bugs. CurseForge release will be out for a while and the modpack will only be distributed through GutHub.
-</sup></sub>
+1. Download `E2E-Extended_{version}.zip` from Assets of [latest release](https://github.com/Krutoy242/Enigmatica2Expert-Extended/releases).
+2. Use *Import* feature in your luncher.
 
-Download [latest release](https://github.com/Krutoy242/Enigmatica2Expert-Extended/releases). Then:
 
-### Fresh Installation
-1. Init vanilla MC `1.12.2 Forge`. Lunch it to make your luncher create all required files.
-2. Overwrite MC folder with content from archive `E2E-Extended_{version}.zip`
+### Manual installation
+
+There is no guide for manual installation yet.
+
+### Info
 
 - Loading time ~8 minutes. [More info](https://i.imgur.com/JFARuTf.png)
 - Recommended RAM: `6Gb`.
-
-### Update from older version
-1. Remove folders `mods`, `scripts`
-2. Same as `2.` above
-
 
 -----------------
 
 ## Developing strategy
 
-This is unofficial addon and not supperted with **Enigmatica** dev team. But [NillerMedDild](https://github.com/NillerMedDild) (owner of E2) gave me some permissions, including posting on CurseForge (but with restrictions).
+This is unofficial addon and not supported with **Enigmatica** dev team.
 
-Addon would be posted on CurseForge after it advance from beta.
-
-Right now im looking for testers and ideas feedback.
+[Permission to develop and publish from **Enigmatica** owner.
+](https://github.com/NillerMedDild/Enigmatica2Expert/blob/d80cc094a7fa1dc750071f8848a96e154c2d40f2/LICENSE.md "E2E License")
 
 ## Links
 
 -   [Discord](https://discord.gg/P2MTyxHZtw)
+-   [CurseForge](https://www.curseforge.com/minecraft/modpacks/enigmatica-2-expert-extended)
