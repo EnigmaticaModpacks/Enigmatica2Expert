@@ -1,4 +1,7 @@
 {
     "url": "https://raw.githubusercontent.com/Krutoy242/Enigmatica2Expert-Extended/master/options.txt",
-    "fileName": "../options.txt"
+    "fileName": "../options.txt",
+    "metadata": {
+        "side": "CLIENT"
+    }
 }
