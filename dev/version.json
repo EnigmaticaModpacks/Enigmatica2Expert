@@ -1,6 +1,6 @@
 {
-  "versionName": "v0.42.0",
-  "versionCode": 101,
+  "versionName": "v0.43.0",
+  "versionCode": 102,
   "versionFormat": "v%versionName%.%versionCode%.%versionGroup%",
   "changelogs": {}
 }
