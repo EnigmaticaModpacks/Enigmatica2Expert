@@ -8,28 +8,23 @@
 //@ts-check
 
 import { getMod } from 'mc-curseforge-api'
-import { injectInFile, loadJson, defaultHelper, loadText } from '../lib/utils.js'
+import { injectInFile, defaultHelper, loadText } from '../lib/utils.js'
 import _ from 'lodash'
 import { getModLoadTimeTuples } from 'mc-benchmark'
+import { loadMCInstanceFiltered } from '../lib/manifest.js'
+
+/** @typedef {import('../lib/minecraftinstance').InstalledAddon} InstalledAddon */
 
 export function getModsIds(json_Path_A, json_Path_B) {
 
-  /** @type {InstalledAddon[]} */ 
-  const A = loadJson(json_Path_A).installedAddons
+  const A = loadMCInstanceFiltered(json_Path_A).installedAddons
+  const B = loadMCInstanceFiltered(json_Path_B).installedAddons
 
-  /** @type {InstalledAddon[]} */ 
-  const B = loadJson(json_Path_B).installedAddons
-
-  const union = _.uniqBy([...B, ...A], 'addonID')
-
-  /** @type {Object<number, InstalledAddon>} */
-  const map_A = {}; A.forEach(e=>map_A[e.addonID] = e)
-
-  /** @type {Object<number, InstalledAddon>} */
-  const map_B = {}; B.forEach(e=>map_B[e.addonID] = e)
+  const map_A = _.keyBy(A, 'addonID')
+  const map_B = _.keyBy(B, 'addonID')
   
-  /** @type {Object<number, InstalledAddon>} */
-  const map_union = {}; union.forEach(e=>map_union[e.addonID] = e)
+  const union = _.uniqBy([...B, ...A], 'addonID')
+  const map_union = _.keyBy(union, 'addonID')
 
   const result = {
     map_A,
@@ -39,11 +34,8 @@ export function getModsIds(json_Path_A, json_Path_B) {
     both:    B.filter(o => map_A[o.addonID]),
     added:   B.filter(o =>!map_A[o.addonID]),
     removed: A.filter(o =>!map_B[o.addonID]),
-
-    /** @type {InstalledAddon[]} */ 
-    updated: null,
+    updated: B.filter(o => map_A[o.addonID] && map_A[o.addonID].installedFile?.id !== o.installedFile?.id),
   }
-  result.updated = B.filter(o => map_A[o.addonID] && map_A[o.addonID].installedFile?.id !== o.installedFile?.id)
   return result
 }
 
@@ -162,81 +154,3 @@ export async function init(h=defaultHelper) {
 
 // @ts-ignore
 if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()
-
-/**
- * @typedef {Object} InstalledAddon
- * @property {number} addonID
- * @property {string} gameInstanceID
- * @property {InstalledFile} installedFile
- * @property {string} dateInstalled
- * @property {string} dateUpdated
- * @property {string} dateLastUpdateAttempted
- * @property {number} status
- * @property {boolean} [preferenceAutoInstallUpdates]
- * @property {boolean} preferenceAlternateFile
- * @property {boolean} preferenceIsIgnored
- * @property {boolean} isModified
- * @property {boolean} isWorkingCopy
- * @property {boolean} isFuzzyMatch
- * @property {any} [preferenceReleaseType]
- * @property {any} [manifestName]
- * @property {any} [installedTargets]
- */
-
-/**
- * @typedef {Object} InstalledFile
- * @property {number} id
- * @property {string} displayName
- * @property {string} fileName
- * @property {string} fileDate
- * @property {number} fileLength
- * @property {number} releaseType
- * @property {number} fileStatus
- * @property {string} downloadUrl
- * @property {boolean} isAlternate
- * @property {number} alternateFileId
- * @property {Dependency[]} dependencies
- * @property {boolean} isAvailable
- * @property {Module[]} modules
- * @property {number} packageFingerprint
- * @property {string[]} gameVersion
- * @property {boolean} hasInstallScript
- * @property {boolean} isCompatibleWithClient
- * @property {number} categorySectionPackageType
- * @property {number} restrictProjectFileAccess
- * @property {number} projectStatus
- * @property {number} projectId
- * @property {string} gameVersionDateReleased
- * @property {number} gameId
- * @property {boolean} isServerPack
- * @property {string} FileNameOnDisk
- * @property {SortableGameVersion[]} [sortableGameVersion]
- * @property {number} [renderCacheId]
- * @property {number} [packageFingerprintId]
- * @property {number} [gameVersionMappingId]
- * @property {number} [gameVersionId]
- */
-
-/**
- * @typedef {Object} SortableGameVersion
- * @property {string} gameVersionPadded
- * @property {string} gameVersion
- * @property {string} gameVersionReleaseDate
- * @property {string} gameVersionName
- */
-
-/**
- * @typedef {Object} Module
- * @property {string} foldername
- * @property {number} fingerprint
- * @property {number} type
- * @property {boolean} invalidFingerprint
- */
-
-/**
- * @typedef {Object} Dependency
- * @property {number} id
- * @property {number} addonId
- * @property {number} type
- * @property {number} fileId
- */

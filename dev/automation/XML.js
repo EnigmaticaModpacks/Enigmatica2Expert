@@ -168,23 +168,12 @@ function makeXMLRecipe(name, inputs, outputs, timeRequired = 0, power = 0) {
 function getCustomRecipes() { return {
 
 'config/advRocketry/SmallPlatePress.xml': [
-  ..._(getByOreKind('ore'))
-    .mapValues(/** @return {[string, import('../lib/tellme.js').TMStack, string]} */
-      (tm,oreBase)=>[oreBase, tm, getExtra(oreBase, 2)]
-    )
-    .filter(([,,outputOreBase]) => !!getByOreBase(outputOreBase)['dustTiny'])
-    .map(([oreBase, tm, outputOreBase])=>makeXMLRecipe(
-      tm.display,
-      `ore${oreBase}`,
-      `dustTiny${outputOreBase}`
-    ))
-    .value()
-  ,
   ...[
       ['3', 'blockSheetmetal','stick'],
       ['6', 'block','plate']
     ].map(kinds=>
       getOreBases_byKinds(kinds.slice(1))
+      .filter(b=>b!=='Aluminum')
       .map(oreBase=>[oreBase, kinds[1], kinds[2], kinds[0]])
     )
     .flat()
@@ -204,7 +193,7 @@ function getCustomRecipes() { return {
 
 'config/advRocketry/Centrifuge.xml': [
   makeXMLRecipe('Magic centrifuge','<fluidStack>enrichedlava 1000</fluidStack>',[
-    'flux_goo '    + 80,
+    'flux_goo '    + 180,
     'thaumium '    + 60,
     'livingrock '  + 50,
     'manasteel '   + 45,
@@ -212,12 +201,22 @@ function getCustomRecipes() { return {
     'terrasteel '  + 2,
     'elementium '  + 1,
   ].map(s=>`<fluidStack>${s}</fluidStack>`),
-  20, 100000
-  )
+  20, 100000),
+  makeXMLRecipe('Curio centrifuge','<fluidStack>flux_goo 100</fluidStack>',[
+    'thaumcraft:curio:0 2',
+    // 'thaumcraft:curio:1 2',
+    'thaumcraft:curio:2 2',
+    // 'thaumcraft:curio:3 2',
+    'thaumcraft:curio:4 2',
+    'thaumcraft:curio:5 1',
+  ],
+  20, 100000)
 ],
 
 'config/enderio/recipes/user/user_recipes.xml': 
-  getOreBases_byKinds(['dustDirty', 'dust']).map(oreBase =>
+  getOreBases_byKinds(['dustDirty', 'dust'])
+  .filter(b=>b!=='Aluminum')
+  .map(oreBase =>
   `<recipe name="${oreBase} Clearing">
     <tanking type="FILL" logic="NONE">
       <input name="dustDirty${oreBase}"/>

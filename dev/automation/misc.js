@@ -161,12 +161,13 @@ export async function init(h=defaultHelper, options = argv) {
   */
   await h.begin('Heavy Sieve automatically recipes')
   const blocksToCopy = [
-    ['exnihilocreatio:block_andesite_crushed', 'contenttweaker:compressed_crushed_andesite'],
-    ['exnihilocreatio:block_diorite_crushed' , 'contenttweaker:compressed_crushed_diorite'],
-    ['exnihilocreatio:block_granite_crushed' , 'contenttweaker:compressed_crushed_granite'],
-    ['exnihilocreatio:block_skystone_crushed', 'contenttweaker:compressed_crushed_skystone'],
-    ['enderio:block_infinity', 'enderio:block_infinity:1'],
-    ['additionalcompression:dustgunpowder_compressed', 'additionalcompression:dustgunpowder_compressed:1'],
+    ['exnihilocreatio:block_andesite_crushed'        ,  'contenttweaker:compressed_crushed_andesite'      ],
+    ['exnihilocreatio:block_diorite_crushed'         ,  'contenttweaker:compressed_crushed_diorite'       ],
+    ['exnihilocreatio:block_granite_crushed'         ,  'contenttweaker:compressed_crushed_granite'       ],
+    ['exnihilocreatio:block_skystone_crushed'        ,  'contenttweaker:compressed_crushed_skystone'      ],
+    ['rats:garbage_pile'                             ,  'contenttweaker:compressed_garbage_pile'          ],
+    ['enderio:block_infinity'                        ,  'enderio:block_infinity:1'                        ],
+    ['additionalcompression:dustgunpowder_compressed',  'additionalcompression:dustgunpowder_compressed:1'],
   ]
   const sieveRegistry = loadJson('config/exnihilocreatio/SieveRegistry.json')
   const heavySievePath = 'config/ExCompressum/HeavySieve.json'
@@ -188,11 +189,13 @@ export async function init(h=defaultHelper, options = argv) {
       name: shortand,
       metadata: meta,
       type: "list",
-      rewards: normEntry.map(o=>({
+      rewards: normEntry
+        .filter(o=>!o.drop.nbt)
+        .map(o=>({
         meshLevel: o.meshLevel,
         name: o.drop.name,
         metadata: o.drop.meta,
-        tag: o.drop.tag,
+        tag: o.drop.nbt,
         count: 1,
         luck: 0.0,
         chance: o.chance,

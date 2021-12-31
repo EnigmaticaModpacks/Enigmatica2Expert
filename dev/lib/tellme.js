@@ -2,7 +2,8 @@
 //@ts-check
 
 import _ from 'lodash'
-import { getCSV, config } from './utils.js'
+import memoize from 'memoizee'
+import { getCSV, config, loadText, naturalSort } from './utils.js'
 
 /** @type {Set<string>} */
 let isBlocks
@@ -37,7 +38,7 @@ export function isJEIBlacklisted(def,meta) { return (
 
 let itemsTree
 
-const initItemsTree = ()=> itemsTree ??= 
+export const getItemsTree = ()=> itemsTree ??= 
   getCSV('config/tellme/items-csv.csv').reduce(
   (result, o) => (
     // @ts-ignore
@@ -45,9 +46,9 @@ const initItemsTree = ()=> itemsTree ??=
   , result), {})
 
 /** @type {function(string,string=):Set<string>} */
-export function getItemOredictSet(id,meta='0') { return (initItemsTree()[id] ??= {})[meta=='*' ? 0 : meta] ??= new Set()}
+export function getItemOredictSet(id,meta='0') { return (getItemsTree()[id] ??= {})[meta=='*' ? 0 : meta] ??= new Set()}
 
-export function getSubMetas(definition) { return Object.keys(initItemsTree()[definition] ??= {}).map(s=>parseInt(s))}
+export function getSubMetas(definition) { return Object.keys(getItemsTree()[definition] ??= {}).map(s=>parseInt(s))}
 
 
 /**
@@ -60,7 +61,8 @@ export function getSubMetas(definition) { return Object.keys(initItemsTree()[def
  * @property {string} display 'Celestial Altar'
  * @property {string[]} ores 'stoneGranite,stoneGranitePolished'
  * @property {string} owner 'astralsorcery'
- * @property {string} commandString '<astralsorcery:blockaltar:2>'
+ * @property {string} commandString '\<astralsorcery:blockaltar:2\>'
+ * @property {(multiplier: number)=>string} withAmount '\<astralsorcery:blockaltar:2\> * 2'
  */
 
 /**
@@ -112,12 +114,13 @@ export function getOreBases_byKinds(kindKeys) {
 function getByOreRgx(rgx) {
   /** @type {Object<string, TMStack[]>} */
   const result = {}
-  getOresByRegex(rgx)
-  .forEach(tm => {
-    const oreKind = tm.ores
-      .find(s=>rgx.test(s))
-      .replace(rgx, '$1')
-    ;(result[oreKind] ??= []).push(tm)
+  getOresByRegex(rgx).forEach(tm => {
+    const oreKinds = tm.ores
+      .filter(s=>rgx.test(s))
+      .map(s=>s.replace(rgx, '$1'))
+    for (const oreKind of oreKinds) {
+      (result[oreKind] ??= []).push(tm)
+    }
   })
 
   return _(result).mapValues(o => o.sort(prefferedModSort)[0]).value()
@@ -128,8 +131,7 @@ function getByOreRgx(rgx) {
  */
 function getOresByRegex(rgx) {
   return getCSV('config/tellme/items-csv.csv')
-  .filter(o=>o['Ore Dict keys'])
-  .filter(o=>o['Ore Dict keys'].split(',').some(ore=>rgx.test(ore)))
+  .filter(o=>o['Ore Dict keys']?.split(',').some(ore=>rgx.test(ore)))
   .map(tellmeToObj)
 }
 
@@ -148,7 +150,8 @@ function tellmeToObj(o) {
     hasSubtypes: o['Subtypes']==='true',
     display: o['Display name'],
     ores: o['Ore Dict keys'].split(','),
-    commandString: `<${o['Registry name']}${o['Meta/dmg']=='0'?'':':'+o['Meta/dmg']}>`
+    commandString: `<${o['Registry name']}${o['Meta/dmg']=='0'?'':':'+o['Meta/dmg']}>`,
+    withAmount: function (amount) {return this.commandString + (amount>1 ? ' * '+amount : '')}
   }
 }
 
@@ -190,4 +193,156 @@ const modWeights = `
 export const prefferedModSort = (a,b) => {
   const va = modWeights[b.owner]??0, vb = modWeights[a.owner]??0
   return va > vb ? 1 : (va < vb ? -1 : 0)
+}
+
+/**
+ * @typedef {Object} FurnaceRecipe
+ * @property {string} output
+ * @property {string} out_id
+ * @property {string} out_meta
+ * @property {string} out_tail
+ * @property {string} out_tag
+ * @property {string} out_amount
+ * @property {string} input
+ * @property {string} in_id
+ * @property {string} in_meta
+ * @property {string} in_tail
+ * @property {string} in_tag
+ * @property {string} in_amount
+ */
+
+function matchFurnaceRecipes(text) {
+  if(!text) return undefined
+  return /** @type {FurnaceRecipe[]} */([...text
+    .matchAll(/^furnace\.addRecipe\((?<output><(?<out_id>[^>]+?)(?::(?<out_meta>\*|\d+))?>(?<out_tail>(\.withTag\((?<out_tag>\{.*?\})\))?( \* (?<out_amount>\d+))?)?), (?<input><(?<in_id>[^>]+?)(?::(?<in_meta>\*|\d+))?>(?<in_tail>(\.withTag\((?<in_tag>\{.*?\})\))?( \* (?<in_amount>\d+))?)?), .+\)$/gm)
+  ].map(m=>m.groups).sort((a,b)=>naturalSort(a.input,b.input)))
+}
+
+/**
+ * @param {string} from
+ * @param {string} to
+ */
+export function getCrtLogBlock(from, to) {
+  const text = loadText('crafttweaker.log')
+  const startIndex = text.indexOf(from)
+  if(startIndex == -1) return undefined
+
+  const sub = text.substring(startIndex + from.length)
+  const endIndex = sub.indexOf(to)
+  
+  return endIndex == -1 ? sub : sub.substring(0, endIndex)
+}
+
+/**
+ * @type {FurnaceRecipe[]}
+ */
+let furnaceRecipesHashed = undefined
+export function getFurnaceRecipes(){
+  if(furnaceRecipesHashed) return furnaceRecipesHashed
+  return furnaceRecipesHashed = matchFurnaceRecipes(getCrtLogBlock('\nFurnace Recipes:\n', '\nRecipes:\n'))
+}
+
+/**
+ * @type {FurnaceRecipe[]}
+ */
+let furnaceRecipesUnchangedHashed = undefined
+export function getUnchangedFurnaceRecipes(){
+  if(furnaceRecipesUnchangedHashed) return furnaceRecipesUnchangedHashed
+
+  const subSub = getCrtLogBlock(
+    '#         Unchanged furnace recipes dump         #',
+    '##################################################'
+  )
+  if(!subSub) return undefined
+
+  return furnaceRecipesUnchangedHashed = matchFurnaceRecipes(
+    subSub
+      .split('\n')
+      .map(s=>s.match(/\[INITIALIZATION\]\[CLIENT\]\[INFO\] (furnace\.addRecipe\(.+)/)?.[1])
+      .filter(s=>s)
+      .join('\n')
+  )
+}
+
+/**
+ * @param {TMStack} tm
+ * @returns {TMStack}
+ */
+export function smelt(tm) {
+  const r = getFurnaceRecipes().find(r => r.input.replace(':*','') === tm.commandString)
+  if (!r) return undefined
+  
+  return tellmeToObj(_(getCSV('config/tellme/items-csv.csv'))
+  .filter(o=>o["Registry name"] == r.out_id)
+  .filter(o=>o["Meta/dmg"] == (r.out_meta??'0'))
+  .first())
+}
+
+/**
+ * @param {string} ore
+ * @returns {TMStack}
+ */
+export function smeltOre(ore) {
+  for (const tm of getByOredict(ore)) {
+    const smelted = smelt(tm)
+    if(smelted) return smelted
+  }
+}
+
+const baseMultiplier = {
+  Amber              : 2,
+  Amethyst           : 2,
+  Apatite            : 10,
+  Aquamarine         : 4,
+  CertusQuartz       : 3,
+  ChargedCertusQuartz: 2,
+  Coal               : 5,
+  Diamond            : 2,
+  DimensionalShard   : 3,
+  Emerald            : 2,
+  Glowstone          : 4,
+  Lapis              : 10,
+  Malachite          : 2,
+  Peridot            : 2,
+  Quartz             : 3,
+  QuartzBlack        : 2,
+  quicksilver        : 2,
+  Redstone           : 10,
+  Ruby               : 2,
+  Sapphire           : 2,
+  Tanzanite          : 2,
+  Topaz              : 2,
+}
+
+/**
+ * @param {string} oreBase Ore we looking for. Example: 'Copper'
+ * @param {number} multiplier
+ */
+export function countBaseOutput(oreBase, multiplier) {
+  const d = baseMultiplier[oreBase]
+  if(d) return Math.min(64, d * multiplier)
+
+  return multiplier
+}
+
+
+/**
+ * @param {string} ore_base Ore we looking for. Example: 'Copper'
+ * @param {string[]} kindKeys Kinds of ores, Example: ['gem', 'dust', 'any']
+ * @param {string[]} blacklist Kinds of ores, Example: ['cluster']
+ * @returns {TMStack}
+ */
+export function getSomething(ore_base, kindKeys, blacklist=[]) {
+  const dict = getByOreBase(ore_base)
+  blacklist.forEach(key=>delete dict[key])
+  for (const kind of kindKeys) {
+    if(dict[kind]) return dict[kind]
+  }
+
+  for (const kind of ["ore", "ingot", "dust"]) {
+    const smelted = smeltOre(kind+ore_base)
+    if(smelted) return smelted
+  }
+
+  if(kindKeys.includes('any')) return Object.values(dict)[0]
 }

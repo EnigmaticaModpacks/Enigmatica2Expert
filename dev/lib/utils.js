@@ -393,32 +393,6 @@ export function isPathHasChanged(pPath){
   }
 }
 
-let furnaceRecipesHashed = undefined
-export function getFurnaceRecipes(){
-  if(furnaceRecipesHashed) return furnaceRecipesHashed
-
-  const text = loadText('crafttweaker.log')
-  const lookup = '\nFurnace Recipes:\n'
-  const startIndex = text.indexOf(lookup)
-  if(startIndex == -1) return undefined
-
-  const sub = text.substring(startIndex + lookup.length)
-  const endIndex = sub.indexOf('\nRecipes:\n')
-  
-  const subSub = endIndex == -1 ? sub : sub.substring(0, endIndex)
-
-  return furnaceRecipesHashed = [...subSub
-    .matchAll(/^furnace\.addRecipe\((?<output><(?<out_id>[^>]+?)(?::(?<out_meta>\*|\d+))?>(?<out_tail>(\.withTag\((?<out_tag>\{.*?\})\))?( \* (?<out_amount>\d+))?)?), (?<input><(?<in_id>[^>]+?)(?::(?<in_meta>\*|\d+))?>(?<in_tail>(\.withTag\((?<in_tag>\{.*?\})\))?( \* (?<in_amount>\d+))?)?), .+\)$/gm)
-  ].map(m=>m.groups).sort((a,b)=>naturalSort(a.input,b.input))
-}
-
-export function least_common_multiplier(...arr) {
-  const gcd = (x, y) => (!y ? x : gcd(y, x % y))
-  const _lcm = (x, y) => (x * y) / gcd(x, y)
-  return [...arr].reduce((a, b) => _lcm(a, b))
-}
-
-
 /**
  * @typedef {Object} Helper
  * @property {(startItem: string, steps?: number)=>void} begin

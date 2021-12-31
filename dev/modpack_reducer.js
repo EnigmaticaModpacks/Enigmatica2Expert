@@ -132,10 +132,12 @@ CustomLoadingScreen-
 `)
 
 addReduceLevel('Server Safe', 'Remove all client-only mods, still multiplayer safe.', `
+Nimble-
 Biome Border Viewer
 blockdrops-
 ChunkAnimator
 DiscordSuite
+DiscordIntegration-
 ears-forge-
 grid-
 IconExporter
@@ -280,7 +282,6 @@ solcarrot-
 architecturecraft-
 Scannable-
 Pregenerator-
-DiscordSuite-
 capabilityadapter-
 
 environmentalmaterials-
@@ -307,6 +308,8 @@ ModularController-
 `)
 
 addReduceLevel('CraftTweaker test', 'Main mods disabled. Most stuff erroring. Unplayable.', `
+ConsoleFilter-
+maleksinfinitygauntlet
 VanillaFix-
 TinkersOreDictCache-
 mod-director-launchwrapper-
@@ -525,7 +528,7 @@ questbook-
 QuickLeafDecay-MC1.12.1-
 randompatches-
 RandomThings-MC1.12.2-
-Requious_Frakto-
+Requious Frakto-
 ResourceLoader-MC1.12.1-
 rttweaker-
 rustic-
@@ -589,11 +592,12 @@ zenutils-
 base-
 `)
 
-
-console.log('unregistered mods :>> ', 
-  _.difference(allEnabledMods, _.uniq(registeredMods))
+const unregMods = _.difference(allEnabledMods, _.uniq(registeredMods))
   .map(getFileName)
-)
-process.exit()
+
+if(unregMods.length) {
+  console.log('This mods unregistered in lists :>> ', unregMods)
+  exit()
+}
 
 init()

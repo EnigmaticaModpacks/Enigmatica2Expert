@@ -20,8 +20,6 @@ import { injectInFile,
   config,
   naturalSort,
   getCSV,
-  getFurnaceRecipes,
-  least_common_multiplier,
   loadText,
   saveText,
   getPDF,
@@ -36,8 +34,16 @@ import { isODExist,
   getItemOredictSet,
   getSubMetas,
   getByOredict,
+  getByOreKind,
   getByOredict_first,
   prefferedModSort,
+  getFurnaceRecipes,
+  getUnchangedFurnaceRecipes,
+  smelt,
+  smeltOre,
+  getSomething,
+  countBaseOutput,
+  getCrtLogBlock,
 } from '../lib/tellme.js'
 
 function saveObjAsJson(obj, filename) {
@@ -57,7 +63,7 @@ const flatTable = (arr) => table(arr, {
   border: getBorderCharacters('void'),
   columnDefault: { paddingLeft: 0,paddingRight: 0 },
   drawHorizontalLine: () => false
-})
+}).replace(/[ \t]+$|\n$/gm, '')
 
 /**
  * @param {any} injectValue
@@ -129,7 +135,7 @@ export async function init(h=defaultHelper) {
 if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()
 
 // Test section:
-// ;(async()=>console.log(formatOutput(
+// ;(async()=>console.log('\n',formatOutput(
 // (()=>{
 
 

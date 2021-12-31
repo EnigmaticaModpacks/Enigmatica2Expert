@@ -44,6 +44,8 @@ function relative(relPath) { return fileURLToPath(new URL(relPath, import.meta.u
   ╚═══╝  ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚══════╝╚══════╝
 */
 const minecraftinstance_old = 'minecraftinstance_old.json'
+const fullChLogPath = 'changelogs/LATEST.md'
+const githubNotesPath = 'changelogs/~GH_notes.md'
 
 /**
  * @typedef {Object} Subcategory
@@ -68,16 +70,6 @@ export async function init(h=defaultHelper) {
   // Get last tagged version
   const old_version = execSync('git describe --tags --abbrev=0').toString().trim()
 
-  /** @type {number} */
-  let old_versionCode
-  try {
-    old_versionCode = JSON.parse(
-      execSync(`git show tags/${old_version}:dev/version.json`).toString().trim()
-    )?.versionCode
-  } catch (error) {
-    old_versionCode = 100
-  }
-  
 
   // Try to bump version
   /** @type {string} */
@@ -85,7 +77,7 @@ export async function init(h=defaultHelper) {
   await h.begin('Version ' + old_version + ' -> ' + nextVersion + ' ')
 
   // Change version in files
-  bumpVersionInFiles(nextVersion, old_versionCode + 1)
+  bumpVersionInFiles(nextVersion)
 
 
   /** @type {string[]} */
@@ -198,7 +190,6 @@ export async function init(h=defaultHelper) {
 
   await h.begin('Writing in file')
   changelogLines.push(...commitLogChanges, '\n\n')
-  const fullChLogPath = 'changelogs/CHANGELOG_LATEST.md'
   writeFileSync(fullChLogPath, [`# ${nextVersion}\n\n`, ...changelogLines].join('\n'))
 
   // Automatically assign icons
@@ -207,6 +198,16 @@ export async function init(h=defaultHelper) {
   await runProcess(`node "${e2eeiconsPath}" --silent --treshold=2 --filename="${fullChLogPath}"`,
     () => h.step()
   )
+
+  // TODO: Manual fixing here
+  //
+  //
+  //
+
+  saveText(loadText(fullChLogPath).replace(/^# .+(\n[\s\n]*)/m,
+    '[📥 How to install](https://github.com/Krutoy242/Enigmatica2Expert-Extended#installation)$1'
+  ), githubNotesPath)
+
   
   h.result(
     `New changelog entries: ${categoriesCount}, `+
@@ -232,7 +233,7 @@ async function getModChanges(version, nextVersion, h=defaultHelper) {
   const promises = ['added','removed','updated'].map(
     group=>Promise.all(
       modsDiff[group].map(
-        (/** @type {import('./automation/modsDiff.js').InstalledAddon} */ m) =>{
+        (/** @type {import('./lib/minecraftinstance').InstalledAddon} */ m) =>{
           const p = getMod(m.addonID)
           p.then(()=>h.step())
           counstGets++
@@ -277,7 +278,7 @@ async function getModChanges(version, nextVersion, h=defaultHelper) {
   generateManifest(nextVersion)
 
   h.begin('Retrieving mod detailed changelogs', 10)
-  const nextModsChangelogsFile = `CHANGELOG_MODS_${nextVersion}.md`
+  const nextModsChangelogsFile = `MODS_${nextVersion}.md`
   const nextModsChangelogsFull = `changelogs/${nextModsChangelogsFile}`
   const chgenCommand = 'java -jar ./ChangelogGenerator-2.0.0-pre10.jar -m'+
     ' --old="manifest_old.json"'+
@@ -296,7 +297,7 @@ async function getModChanges(version, nextVersion, h=defaultHelper) {
     unlink(nextModsChangelogsFull)
   } else {
     makeModsChangelogBetter(nextModsChangelogsFull)
-    result += `\n## [> Mods updates detailed.](${nextModsChangelogsFile})\n\n`
+    result += `\n## [> Mods updates detailed.](changelogs/${nextModsChangelogsFile})\n\n`
   }
 
   return result
@@ -553,18 +554,13 @@ function runProcess(command, onStdOut) {
 
 /**
  * @param {string} nextVersion
- * @param {number} nextVersionCode
  */
-function bumpVersionInFiles(nextVersion, nextVersionCode) {
+function bumpVersionInFiles(nextVersion) {  
   replace_in_file.sync({
-    files: 'config/versioner.cfg',
-    from: [/(:versionName=).+/, /(:versionCode=).+/],
-    to: ['$1'+nextVersion, '$1'+nextVersionCode]
+    files: 'config/CustomMainMenu/mainmenu.json',
+    from: /("version_num"\s*:[\s\n]*\{[\s\n]*"text"\s*:\s*")[^"]+?(")/m,
+    to: `$1${nextVersion}$2`
   })
-  
-  const version_json_path = 'dev/version.json'
-  const version_json = loadJson(version_json_path)
-  version_json.versionName = nextVersion
-  version_json.versionCode = nextVersionCode
-  saveObjAsJson(version_json, version_json_path)
+
+  saveText(nextVersion, 'dev/version.txt')
 }

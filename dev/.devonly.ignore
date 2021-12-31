@@ -25,7 +25,6 @@ config/sampler.ini
 
 # Ru-only files
 resourcepacks/*
-!resourcepacks/Better+Gendustry*.zip
 !resourcepacks/bq_lootchests
 
 # Mods to ignore

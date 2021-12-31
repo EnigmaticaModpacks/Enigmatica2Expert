@@ -35,7 +35,7 @@ export async function init(h=defaultHelper) {
   if(!argv['forced']) {
     await h.begin('Checking requirments')
     if(isPathHasChanged(defaultQuests_path) || validCodes.map(getLangPath).some(isPathHasChanged)) {
-      return h.error('\nQuests or Langs have changes!')
+      return h.error('Quests or Langs have changes!')
     }
   }
 

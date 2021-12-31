@@ -20,6 +20,7 @@ import mc_benchmark from 'mc-benchmark'
 import yargs from 'yargs'
 const argv = yargs(process.argv.slice(2))
   .alias('k', 'keep-cache').describe('k', 'Not delete cached files').default("k", true)
+  .alias('h', 'hardfail').describe('h', 'Exit script on any error')
   .argv
 
 const getFileName  = (/** @type {string} */ s) => s.replace(/^.*[\\/]/, '')
@@ -39,6 +40,7 @@ const automationList = [
   'dev/TCon/tweakerconstruct.js',
   'dev/Patchouli/Patchouli.js',
   'scripts/wrap/_wrapper.js',
+  
   (h, opts) => mc_benchmark({
     readFileSync: loadText,
     defaultLogger: h,
@@ -55,13 +57,19 @@ const multibar = new MultiBar({
 })
 
 let starttime = 0
+let errorCount = 0
 export async function init(options = argv) {
   starttime = new Date().getTime()
   await Promise.all(automationList.map((f, i) => startTask(f, i, options)))
   await new Promise(r => setTimeout(r, 100))
 
-  write('\nSucces!\n')
-  process.exit(0)
+  if(errorCount <= 0) {
+    write('\nSucces!\n')
+    process.exit(0)
+  } else {
+    write('\nFail!\n')
+    process.exit(1)
+  }
 }
 
 // @ts-ignore
@@ -129,7 +137,9 @@ function createHelper(progressBar) {
       progressBar.update({task: this.taskResult += `⚠️ ${chalk.dim.yellow(`${s}`)}`})
     },
     error: function (s='!') {
+      errorCount++
       progressBar.update({task: this.taskResult += `🛑 ${chalk.dim.red   (`${s}`)}`})
+      if(argv['hardfailt']) { console.error(`\n\n🛑 Fatal Error:\n${s}`); throw new Error(`Fatal Error:\n${s}`)}
     },
   }
 }

@@ -14,6 +14,15 @@
 import { writeFileSync } from 'fs'
 import { defaultHelper, loadText } from '../lib/utils.js'
 
+import yargs from 'yargs'
+const {argv} = yargs(process.argv.slice(2))
+  .option("i", {
+    alias: "input",
+    type: "string",
+    describe: "Debug.log path",
+    default: 'logs/debug.log',
+  })
+
 import { URL, fileURLToPath  } from 'url' // @ts-ignore
 function relative(relPath='./') { return fileURLToPath(new URL(relPath, import.meta.url)) }
 
@@ -132,6 +141,10 @@ const ignore = [
 
   /\[Client thread\/ERROR\] \[reborncore\]: Invalid fingerprint detected for RebornCore!/, // Reported: https://github.com/TechReborn/RebornCore/issues/180
 
+  // Spark normal behaviour
+  /There was a problem reading the entry .*spark-forge.jar - probably a corrupt zip/,
+  /Zip file spark-forge.jar failed to read properly, it will be ignored/,
+
   /*=============================================
   =               Ignoring Warnings             =
   =============================================*/
@@ -181,6 +194,7 @@ const ignore = [
   /Unable to read property: material with value: iron for blockstate/,
   /Mod advancedrocketrycore has been disabled through configuration/,
   /Sending runtime to plugin: .+ took .* ms/,
+  /\[placebo\]: Exception loading patreon data!/,
 
   /*=============================================
   =        Already inspected warnings           =
@@ -271,7 +285,7 @@ const known = [
 export async function init(h=defaultHelper) {
 
   await h.begin('Loading & parsing debug.log')
-  let log = loadText('logs/debug.log')
+  let log = loadText(argv['input'] ?? 'logs/debug.log')
   const serverThreadStart = log.indexOf('[Server thread/')
   if(serverThreadStart!==-1) log = log.substring(0, serverThreadStart)
   var newLog = ''
