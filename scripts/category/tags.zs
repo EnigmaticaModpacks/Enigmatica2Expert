@@ -12,6 +12,8 @@ for lang, items in {
     <actuallyadditions:block_leaf_generator>,
     <actuallyadditions:block_oil_generator>,
     <advancedrocketry:blackholegenerator>,
+    <advgenerators:steam_turbine_controller>,
+    <advgenerators:turbine_controller>,
     <animania:block_hamster_wheel>,
     <draconicevolution:generator>,
     <enderio:block_combustion_generator>,
@@ -72,6 +74,12 @@ for lang, items in {
     <randomthings:spectrecoil_number>,
     <rftools:coalgenerator>,
     <rftools:endergenic>,
+    <thermalexpansion:dynamo:0>,
+    <thermalexpansion:dynamo:1>,
+    <thermalexpansion:dynamo:2>,
+    <thermalexpansion:dynamo:3>,
+    <thermalexpansion:dynamo:4>,
+    <thermalexpansion:dynamo:5>,
   ],
 
   "tag.solar" : [
