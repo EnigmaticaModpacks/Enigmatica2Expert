@@ -71,3 +71,7 @@ dev/default_configs/default_config_outdated
 config/JustEnoughCalculation/data/groups.json
 config/activity.json
 config/customloadingscreen_timings.nbt
+
+config/enderio/recipes/*.pdf
+config/enderio/recipes/**/*.xsd
+config/enderio/recipes/examples/*
