@@ -1,7 +1,7 @@
 {
   "images": {
     "enigmatica2logo": {
-      "image": "modpack:textures/gui/E2EE_logo.png",
+      "image": "modpack:textures/gui/e2ee_logo.png",
       "posX": -70,
       "posY": 15,
       "width": 313,

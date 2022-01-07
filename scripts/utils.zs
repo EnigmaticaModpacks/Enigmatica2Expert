@@ -104,8 +104,7 @@ zenClass Utils {
   # ########################
   # Removing item everywhere
   # ########################
-  function rh(ingr as IIngredient) as void { rh(ingr, true); }
-  function rh(ingr as IIngredient, removeOredict as bool) as void {
+  function rh(ingr as IIngredient, removeOredict as bool = true) as void {
     if (isNull(ingr)) return;
 
     for item in ingr.items {

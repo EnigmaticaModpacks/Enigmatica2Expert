@@ -26,8 +26,7 @@ structures/inactive
 !.release-it.json
 !caches/
 
-# Files created by luncher
-config/creativecore-client.json
+# Files created by client
 config/InvTweaks.cfg
 config/MouseTweaks.cfg
 
@@ -51,7 +50,6 @@ config/armoryexpansion/traits.txt
 
 config/cd4017be/compiled.dat
 config/brandon3055/contributors.json
-config/thaumicjei_itemstack_aspects.json
 config/brandon3055/ProjectIntelligence/
 config/tool_progression/blocks.cfg
 config/tool_progression/materials.cfg
@@ -60,7 +58,7 @@ scripts/.zsrc
 config/BiomeTweaker/output/
 */Patchouli/garbage
 
-config/tellme/*
+config/tellme/*.csv
 
 resources/mechanics/blockstates
 resources/mechanics/models
@@ -76,3 +74,4 @@ config/customloadingscreen_timings.nbt
 config/enderio/recipes/*.pdf
 config/enderio/recipes/**/*.xsd
 config/enderio/recipes/examples/*
+config/biomesoplenty/biomes/*
