@@ -1,230 +1,216 @@
 {
-    "images":
-    {
-        "enigmatica2":
-        {
-            "image" : "modpack:textures/gui/enigmatica2.png",
-            "posX" : -90,
-            "posY" : 15,
-            "width" : 288,
-            "height" : 54,
-            "alignment" : "top_center"
-        },
-		"expert":
-        {
-            "image" : "modpack:textures/gui/expert.png",
-            "posX" : 15,
-            "posY" : 75,
-            "width" : 144,
-            "height" : 29,
-            "alignment" : "top_center"
-        },
-		"extended":
-        {
-            "image" : "modpack:textures/gui/extended.png",
-            "posX" : 13,
-            "posY" : 110,
-            "width" : 144,
-            "height" : 23,
-            "alignment" : "top_center"
-        },
-		"2":
-        {
-            "image" : "modpack:textures/gui/2.png",
-            "posX" : 200,
-            "posY" : 28,
-            "width" : 36,
-            "height" : 36,
-            "alignment" : "top_center"
-        },
-		
-		"transparentBox":
-        {
-            "image" : "modpack:textures/gui/image1.png",
-            "posX" : 25,
-            "posY" : -140,
-            "width" : 140,
-            "height" : 250,
-            "alignment" : "left_center"
-        }
+  "images": {
+    "enigmatica2logo": {
+      "image": "modpack:textures/gui/E2EE_logo.png",
+      "posX": -70,
+      "posY": 15,
+      "width": 313,
+      "height": 101,
+      "alignment": "top_center"
     },
-    
-    "buttons":
-    {
-		"singleplayer": {
-            "text": "menu.singleplayer",
-            "posX": 44,
-            "posY": -130,
-            "width": 100,
-            "height": 20,
-            "normalTextColor": 16777215,
-            "hoverTextColor": 4286414205,
-            "texture": "modpack:textures/gui/button2.png",
-            "alignment": "left_center",
-            "action": {
-                "type": "openGui",
-                "gui": "singleplayer"
-            }
-        },
-        "multiplayer": {
-            "text": "menu.multiplayer",
-            "posX": 44,
-            "posY": -100,
-            "width": 100,
-            "height": 20,
-            "normalTextColor": 16777215,
-            "hoverTextColor": 4286414205,
-            "texture": "modpack:textures/gui/button2.png",
-            "alignment": "left_center",
-            "action": {
-                "type": "openGui",
-                "gui": "multiplayer"
-            }
-        },
-        "mods": {
-            "text": "fml.menu.mods",
-            "posX": 44,
-            "posY": -70,
-            "width": 100,
-            "height": 20,
-            "normalTextColor": 16777215,
-            "hoverTextColor": 4286414205,
-            "texture": "modpack:textures/gui/button2.png",
-            "alignment": "left_center",
-            "action": {
-                "type": "openGui",
-                "gui": "mods"
-            }
-        },
-        "options": {
-            "text": "menu.options",
-            "posX": 44,
-            "posY": -40,
-            "width": 100,
-            "height": 20,
-            "normalTextColor": 16777215,
-            "hoverTextColor": 4286414205,
-            "texture": "modpack:textures/gui/button2.png",
-            "alignment": "left_center",
-            "action": {
-                "type": "openGui",
-                "gui": "options"
-            }
-        },
-        
-        "languages": {
-            "text": "Languages",
-            "posX": 44,
-            "posY":-10,
-            "width": 100,
-            "height": 20,
-            "normalTextColor": 16777215,
-            "hoverTextColor": 4286414205,
-            "texture": "modpack:textures/gui/button2.png",
-            "alignment": "left_center",
-            "action": {
-                "type": "openGui",
-                "gui": "languages"
-            }
-        },
-        "bug reports": {
-            "text": "Bug Reports",
-            "posX": 44,
-            "posY":20,
-            "width": 100,
-            "height": 20,
-            "normalTextColor": 16777215,
-            "hoverTextColor": 4286414205,
-            "texture": "modpack:textures/gui/button2.png",
-            "alignment": "left_center",
-            "action": {
-                "type": "openLink",
-                "link": "https://github.com/Krutoy242/Enigmatica2Expert-Extended/issues"
-            }
-        },
-		"discord": {
-            "text": "Discord",
-            "posX": 44,
-            "posY":50,
-            "width": 100,
-            "height": 20,
-            "normalTextColor": 16777215,
-            "hoverTextColor": 4286414205,
-            "texture": "modpack:textures/gui/button2.png",
-            "alignment": "left_center",
-            "action" : 
-            {
-                "type" : "openLink",
-                "link" : "https://discord.gg/P2MTyxHZtw"
-            }
-        },
-        "quit": {
-            "text": "menu.quit",
-            "posX": 44,
-            "posY":80,
-            "width": 100,
-            "height": 20,
-            "normalTextColor": 16777215,
-            "hoverTextColor": 4286414205,
-            "texture": "modpack:textures/gui/button2.png",
-            "alignment": "left_center",
-            "action": {
-                "type": "quit"
-            }
-        }		
-	},
-    
-    "labels":
-    {
-        "mojang":
-        {
-            "text" : "Copyright Mojang AB. Do not distribute!",
-            "posX" : 8,
-            "posY" : -15,
-            "color" : -1,
-            "alignment" : "bottom_left"
-        }
-	},
-    
-    "other" : { 
-	
-		"background" : 
-        {
-            "image" : "",
-            "slideshow" :
-            {
-                "images" : 
-				[
-                "modpack:textures/gui/slideshow_01.jpg",
-                "modpack:textures/gui/slideshow_02.jpg",
-                "modpack:textures/gui/slideshow_03.jpg",
-                "modpack:textures/gui/slideshow_04.jpg",
-                "modpack:textures/gui/slideshow_05.jpg",
-                "modpack:textures/gui/slideshow_06.jpg",
-                "modpack:textures/gui/slideshow_07.jpg",
-                "modpack:textures/gui/slideshow_08.jpg",
-                "modpack:textures/gui/slideshow_09.jpg",
-                "modpack:textures/gui/slideshow_10.jpg",
-                "modpack:textures/gui/slideshow_11.jpg",
-                "modpack:textures/gui/slideshow_12.jpg",
-                "modpack:textures/gui/slideshow_13.jpg",
-                "modpack:textures/gui/slideshow_14.jpg",
-                "modpack:textures/gui/slideshow_15.jpg",
-                "modpack:textures/gui/slideshow_16.jpg",
-                "modpack:textures/gui/slideshow_17.jpg",
-                "modpack:textures/gui/slideshow_18.jpg",
-                "modpack:textures/gui/slideshow_19.jpg",
-                "modpack:textures/gui/slideshow_20.jpg",
-                "modpack:textures/gui/slideshow_21.jpg",
-                "modpack:textures/gui/slideshow_22.jpg",
-                "modpack:textures/gui/slideshow_23.jpg",
-                "modpack:textures/gui/slideshow_24.jpg"
-				],
-                "displayDuration" : 100,
-                "fadeDuration" : 30,
-				"shuffle" : true
-            }
-		}
-		
-	}
+    "transparentBox": {
+      "image": "modpack:textures/gui/image1.png",
+      "posX": 25,
+      "posY": -140,
+      "width": 140,
+      "height": 250,
+      "alignment": "left_center"
+    }
+  },
+  "buttons": {
+    "singleplayer": {
+      "text": "menu.singleplayer",
+      "posX": 44,
+      "posY": -130,
+      "width": 100,
+      "height": 20,
+      "normalTextColor": 16777215,
+      "hoverTextColor": 4286414205,
+      "texture": "modpack:textures/gui/button2.png",
+      "alignment": "left_center",
+      "action": {
+        "type": "openGui",
+        "gui": "singleplayer"
+      }
+    },
+    "multiplayer": {
+      "text": "menu.multiplayer",
+      "posX": 44,
+      "posY": -100,
+      "width": 100,
+      "height": 20,
+      "normalTextColor": 16777215,
+      "hoverTextColor": 4286414205,
+      "texture": "modpack:textures/gui/button2.png",
+      "alignment": "left_center",
+      "action": {
+        "type": "openGui",
+        "gui": "multiplayer"
+      }
+    },
+    "mods": {
+      "text": "fml.menu.mods",
+      "posX": 44,
+      "posY": -70,
+      "width": 100,
+      "height": 20,
+      "normalTextColor": 16777215,
+      "hoverTextColor": 4286414205,
+      "texture": "modpack:textures/gui/button2.png",
+      "alignment": "left_center",
+      "action": {
+        "type": "openGui",
+        "gui": "mods"
+      }
+    },
+    "options": {
+      "text": "menu.options",
+      "posX": 44,
+      "posY": -40,
+      "width": 100,
+      "height": 20,
+      "normalTextColor": 16777215,
+      "hoverTextColor": 4286414205,
+      "texture": "modpack:textures/gui/button2.png",
+      "alignment": "left_center",
+      "action": {
+        "type": "openGui",
+        "gui": "options"
+      }
+    },
+    "languages": {
+      "text": "Languages",
+      "posX": 44,
+      "posY": -10,
+      "width": 100,
+      "height": 20,
+      "normalTextColor": 16777215,
+      "hoverTextColor": 4286414205,
+      "texture": "modpack:textures/gui/button2.png",
+      "alignment": "left_center",
+      "action": {
+        "type": "openGui",
+        "gui": "languages"
+      }
+    },
+    "bug reports": {
+      "text": "Bug Reports",
+      "posX": 44,
+      "posY": 20,
+      "width": 100,
+      "height": 20,
+      "normalTextColor": 16777215,
+      "hoverTextColor": 4286414205,
+      "texture": "modpack:textures/gui/button2.png",
+      "alignment": "left_center",
+      "action": {
+        "type": "openLink",
+        "link": "https://github.com/Krutoy242/Enigmatica2Expert-Extended/issues"
+      }
+    },
+    "discord": {
+      "text": "Discord",
+      "posX": 44,
+      "posY": 50,
+      "width": 100,
+      "height": 20,
+      "normalTextColor": 16777215,
+      "hoverTextColor": 4286414205,
+      "texture": "modpack:textures/gui/button2.png",
+      "alignment": "left_center",
+      "action": {
+        "type": "openLink",
+        "link": "https://discord.gg/P2MTyxHZtw"
+      }
+    },
+    "quit": {
+      "text": "menu.quit",
+      "posX": 44,
+      "posY": 80,
+      "width": 100,
+      "height": 20,
+      "normalTextColor": 16777215,
+      "hoverTextColor": 4286414205,
+      "texture": "modpack:textures/gui/button2.png",
+      "alignment": "left_center",
+      "action": {
+        "type": "quit"
+      }
+    }
+  },
+  "labels": {
+    "mojang": {
+      "text": "Copyright Mojang AB. Do not distribute!",
+      "posX": 8,
+      "posY": -15,
+      "color": -1,
+      "alignment": "bottom_left"
+    },
+    "version_text": {
+      "text": "Modpack version:",
+      "posX": -70,
+      "posY": -25,
+      "color": 11251888,
+      "anchor": "end",
+      "alignment": "bottom_right"
+    },
+    "version_num": {
+      "text": "v0.43.0",
+      "posX": -65,
+      "posY": -25,
+      "color": 4956595,
+      "alignment": "bottom_right"
+    },
+    "version_web_text": {
+      "text": "Released version:",
+      "posX": -70,
+      "posY": -12,
+      "color": 6975085,
+      "anchor": "end",
+      "alignment": "bottom_right"
+    },
+    "version_web_num": {
+      "text": "web:https://raw.githubusercontent.com/Krutoy242/Enigmatica2Expert-Extended/master/dev/version.txt",
+      "posX": -65,
+      "posY": -12,
+      "color": 1279287,
+      "alignment": "bottom_right"
+    }
+  },
+  "other": {
+    "background": {
+      "image": "",
+      "slideshow": {
+        "images": [
+          "modpack:textures/gui/slideshow_01.jpg",
+          "modpack:textures/gui/slideshow_02.jpg",
+          "modpack:textures/gui/slideshow_03.jpg",
+          "modpack:textures/gui/slideshow_04.jpg",
+          "modpack:textures/gui/slideshow_05.jpg",
+          "modpack:textures/gui/slideshow_06.jpg",
+          "modpack:textures/gui/slideshow_07.jpg",
+          "modpack:textures/gui/slideshow_08.jpg",
+          "modpack:textures/gui/slideshow_09.jpg",
+          "modpack:textures/gui/slideshow_10.jpg",
+          "modpack:textures/gui/slideshow_11.jpg",
+          "modpack:textures/gui/slideshow_12.jpg",
+          "modpack:textures/gui/slideshow_13.jpg",
+          "modpack:textures/gui/slideshow_14.jpg",
+          "modpack:textures/gui/slideshow_15.jpg",
+          "modpack:textures/gui/slideshow_16.jpg",
+          "modpack:textures/gui/slideshow_17.jpg",
+          "modpack:textures/gui/slideshow_18.jpg",
+          "modpack:textures/gui/slideshow_19.jpg",
+          "modpack:textures/gui/slideshow_20.jpg",
+          "modpack:textures/gui/slideshow_21.jpg",
+          "modpack:textures/gui/slideshow_22.jpg",
+          "modpack:textures/gui/slideshow_23.jpg",
+          "modpack:textures/gui/slideshow_24.jpg"
+        ],
+        "displayDuration": 100,
+        "fadeDuration": 30,
+        "shuffle": true
+      }
+    }
+  }
 }
