@@ -10,8 +10,6 @@
 !resourcepacks/
 !dev/
 !server/
-![!]Relese.bat
-!TODO.md
 !README.md
 !MODS.md
 !CHANGELOG.md
@@ -24,6 +22,9 @@ structures/inactive
 !options.txt
 !optionsof.txt
 !manifest.json
+!.gitignore
+!.release-it.json
+!caches/
 
 # Files created by luncher
 config/creativecore-client.json

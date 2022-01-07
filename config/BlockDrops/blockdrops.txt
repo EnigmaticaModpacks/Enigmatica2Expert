@@ -90,21 +90,6 @@
     "3pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}"
   },
   {
-    "name": "advancedrocketry:alienleaves",
-    "meta": 0,
-    "length": 1,
-    "name0": "advancedrocketry:aliensapling",
-    "meta0": 0,
-    "0chance0": 5.075,
-    "1chance0": 6.225,
-    "2chance0": 8.25,
-    "3chance0": 9.575,
-    "0pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
-    "1pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
-    "2pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
-    "3pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}"
-  },
-  {
     "name": "twilightforest:twilight_leaves",
     "meta": 0,
     "length": 1,
@@ -1833,21 +1818,6 @@
     "1pair1": "{\n  \"left\": 1,\n  \"right\": 1\n}",
     "2pair1": "{\n  \"left\": 1,\n  \"right\": 1\n}",
     "3pair1": "{\n  \"left\": 1,\n  \"right\": 1\n}"
-  },
-  {
-    "name": "advancedrocketry:charcoallog",
-    "meta": 0,
-    "length": 1,
-    "name0": "minecraft:coal",
-    "meta0": 1,
-    "0chance0": 100.0,
-    "1chance0": 100.0,
-    "2chance0": 150.325,
-    "3chance0": 200.85,
-    "0pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
-    "1pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
-    "2pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
-    "3pair0": "{\n  \"left\": 1,\n  \"right\": 3\n}"
   },
   {
     "name": "ic2:scaffold",
@@ -4665,21 +4635,6 @@
     "3pair9": "{\n  \"left\": 4,\n  \"right\": 8\n}"
   },
   {
-    "name": "advancedrocketry:geode",
-    "meta": 0,
-    "length": 1,
-    "name0": "thermalfoundation:geode",
-    "meta0": 0,
-    "0chance0": 100.0,
-    "1chance0": 100.0,
-    "2chance0": 100.0,
-    "3chance0": 100.0,
-    "0pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
-    "1pair0": "{\n  \"left\": 2,\n  \"right\": 4\n}",
-    "2pair0": "{\n  \"left\": 5,\n  \"right\": 11\n}",
-    "3pair0": "{\n  \"left\": 10,\n  \"right\": 20\n}"
-  },
-  {
     "name": "biomesoplenty:plant_0",
     "meta": 0,
     "length": 4,
@@ -4828,5 +4783,50 @@
     "1pair0": "{\n  \"left\": 4,\n  \"right\": 4\n}",
     "2pair0": "{\n  \"left\": 4,\n  \"right\": 4\n}",
     "3pair0": "{\n  \"left\": 4,\n  \"right\": 4\n}"
+  },
+  {
+    "name": "advancedrocketry:alienleaves",
+    "meta": 0,
+    "length": 1,
+    "name0": "advancedrocketry:aliensapling",
+    "meta0": 0,
+    "0chance0": 4.8500004,
+    "1chance0": 6.125,
+    "2chance0": 7.2999997,
+    "3chance0": 9.725,
+    "0pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
+    "1pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
+    "2pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
+    "3pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}"
+  },
+  {
+    "name": "advancedrocketry:charcoallog",
+    "meta": 0,
+    "length": 1,
+    "name0": "minecraft:coal",
+    "meta0": 1,
+    "0chance0": 100.0,
+    "1chance0": 100.0,
+    "2chance0": 150.325,
+    "3chance0": 200.85,
+    "0pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
+    "1pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
+    "2pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
+    "3pair0": "{\n  \"left\": 1,\n  \"right\": 3\n}"
+  },
+  {
+    "name": "advancedrocketry:geode",
+    "meta": 0,
+    "length": 1,
+    "name0": "thermalfoundation:geode",
+    "meta0": 0,
+    "0chance0": 100.0,
+    "1chance0": 100.0,
+    "2chance0": 100.0,
+    "3chance0": 100.0,
+    "0pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
+    "1pair0": "{\n  \"left\": 2,\n  \"right\": 4\n}",
+    "2pair0": "{\n  \"left\": 5,\n  \"right\": 11\n}",
+    "3pair0": "{\n  \"left\": 10,\n  \"right\": 20\n}"
   }
 ]

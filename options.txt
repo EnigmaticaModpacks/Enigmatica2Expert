@@ -177,6 +177,7 @@ key_key.next_item.desc:0
 key_key.previous_item.desc:0
 key_key.open_danknull.desc:0
 key_key.togglehud.desc:0
+key_nimble.keybind.frontView:62
 key_key.narrator:53:CONTROL
 key_key.jei.toggleOverlay:24:CONTROL
 key_key.jei.focusSearch:33:CONTROL
@@ -240,6 +241,12 @@ key_key.material_list:50
 key_key.carry.desc:42
 key_Options Gui:207
 key_key.colytra.toggle.desc:0
+key_key.refinedstorage.focusSearchBar:15
+key_key.refinedstorage.clearGridCraftingMatrix:45:CONTROL
+key_key.refinedstorage.openWirelessGrid:0
+key_key.refinedstorage.openWirelessFluidGrid:0
+key_key.refinedstorage.openPortableGrid:0
+key_key.refinedstorage.openWirelessCraftingMonitor:0
 key_dsurround.cfg.keybind.AnimaniaBadges:0
 key_key.clipboardPaste:0
 key_FpsReducer.key.guiOpen:0
@@ -262,7 +269,7 @@ key_key.debugDumpNBTBlock:0
 key_invtweaks.key.sort:0
 key_jecalculation.key.gui_craft:0
 key_jecalculation.key.gui_math:0
-key_Open Key Wizard:65
+key_keywizard.keybind.openKeyboardWizard:65
 key_key.rotateup:200
 key_key.rotatedown:208
 key_key.rotateright:205
@@ -288,6 +295,7 @@ key_key.nutrition:49
 key_pi.key.open_pi:23
 key_pi.key.et_gui:23
 key_pi.key.et_world:23:CONTROL
+key_key.refinedstorageaddons.openWirelessCraftingGrid:34:CONTROL
 key_key.carpet_forward:17
 key_key.carpet_backward:31
 key_key.travelersbackpack.inventory:48
