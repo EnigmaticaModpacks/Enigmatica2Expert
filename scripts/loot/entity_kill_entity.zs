@@ -2,7 +2,6 @@ import crafttweaker.entity.IEntityLivingBase;
 import crafttweaker.item.IItemStack;
 
 #priority 10
-#loader crafttweaker reloadableevents
 
 static dropList as IItemStack[string][string] = {} as IItemStack[string][string];
 

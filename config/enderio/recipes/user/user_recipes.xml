@@ -140,6 +140,14 @@
   <recipe name="Alloy: Endergy Stellar Alloy">
     <disabled/>
   </recipe>
+  <!-- Remove Too hard totemic capacitor -->
+  <recipe name="Totemic Capacitor">
+    <disabled/>
+  </recipe>
+  <!-- Remove Purged Capacitor -->
+  <recipe name="Capacitor Grainy">
+    <disabled/>
+  </recipe>
   <!-- Disable Recipes that Ender Tweaker was disabled before -->
   <recipe name="The Enhanced Vat">
     <disabled/>

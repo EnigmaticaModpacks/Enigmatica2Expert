@@ -15,14 +15,14 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded forestry
-// Uses of this mod: 40
+// Uses of this mod: 39
 
 
 //####################################################
-// Uses of this class: 22
+// Uses of this class: 21
 zenClass Class_Carpenter { zenConstructor() {}
 
-	// Uses of this method: 22
+	// Uses of this method: 21
 	function addRecipe(output as IItemStack, ingredients as IIngredient[][], packagingTime as int) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.forestry.Carpenter.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IIngredient____(ingredients), packagingTime]));

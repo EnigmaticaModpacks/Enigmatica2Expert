@@ -177,7 +177,7 @@ craft.remake(<appliedenergistics2:molecular_assembler>, ["pretty",
 	recipes.addShaped("Energy Acceptor", 
 	<appliedenergistics2:energy_acceptor>, 
 	[[<immersiveengineering:material:26>, <immersiveengineering:metal_decoration0:3>, <immersiveengineering:material:26>],
-	[<appliedenergistics2:part:16>, <appliedenergistics2:quartz_fixture>, <appliedenergistics2:part:16>], 
+	[<appliedenergistics2:part:16>, <ore:gemChargedCertusQuartz>, <appliedenergistics2:part:16>], 
 	[<appliedenergistics2:fluix_block>, <appliedenergistics2:material:24>, <appliedenergistics2:fluix_block>]]);
 
 # Inscriber

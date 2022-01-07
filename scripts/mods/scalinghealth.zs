@@ -31,3 +31,9 @@ for mobId, ingr in {
     <thermalexpansion:morb>.withTag({id: mobId}),
     [h,h,h], ingr, <thermalexpansion:morb>, <fluid:water> * 50, 40);
 }
+
+# Special case for Questing Ram
+mods.rustic.Condenser.addRecipe(
+  <thermalexpansion:morb>.withTag({id: "twilightforest:quest_ram"}),
+  [h,<ore:dustMithril>,<twilightforest:cicada>], <twilightforest:magic_map_focus>, <thermalexpansion:morb>, <fluid:water> * 50, 40
+);

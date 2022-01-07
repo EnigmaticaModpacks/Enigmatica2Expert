@@ -26,8 +26,9 @@ function remakeMagnet(meta as int, i1 as IIngredient, i2 as IIngredient){
 	var prev = itemUtils.getItem("thermalinnovation:magnet", meta - 1);
 	recipes.addShaped("TE Magnet  " ~ meta, item, [
 		[null, i2, null],
-		[i1, prev, i1],
-		[i2, null, i2]]);
+		[i1, prev.marked("marked"), i1],
+		[i2, null, i2]],
+	utils.upgradeFnc, null);
 }
 
 remakeMagnet(1, <thermalfoundation:material:162>, <enderio:item_alloy_nugget:0>);

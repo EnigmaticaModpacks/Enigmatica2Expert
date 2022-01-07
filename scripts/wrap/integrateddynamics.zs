@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded integrateddynamics
-// Uses of this mod: 10
+// Uses of this mod: 11
 
 
 //####################################################
@@ -115,10 +115,10 @@ zenClass Class_MechanicalSqueezer { zenConstructor() {}
 static MechanicalSqueezer as Class_MechanicalSqueezer = Class_MechanicalSqueezer();
 
 //####################################################
-// Uses of this class: 3
+// Uses of this class: 4
 zenClass Class_Squeezer { zenConstructor() {}
 
-	// Uses of this method: 3
+	// Uses of this method: 4
 	function addRecipe(arg0 as IItemStack, arg1 as IItemStack, arg2 as float, arg3 as IItemStack, arg4 as float, arg5 as ILiquidStack) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.integrateddynamics.Squeezer.addRecipe'~
 			serialize.args([serialize.IItemStack(arg0), serialize.IItemStack(arg1), arg2, serialize.IItemStack(arg3), arg4, serialize.ILiquidStack(arg5)]));

@@ -129,33 +129,6 @@ import mods.ic2.ScrapBox;
 	[[<minecraft:stone:*>, <tconstruct:soil>, <minecraft:stone:*>],
 	[<tconstruct:soil>, <ore:dustClay>, <tconstruct:soil>], 
 	[<minecraft:stone:*>, <tconstruct:soil>, <minecraft:stone:*>]]);
-	
-# MFE -> MFSU Upgrade Kit removal
-	utils.rh(<ic2:upgrade_kit>);
-	
-# Industrial Diamond (Replaced with regular diamond)
-	utils.rh(<ic2:crafting:19>);
-	utils.rh(<ic2:ingot:8>);
-
-# Unused dusts
-utils.rh(<ic2:dust:4>);
-utils.rh(<ic2:dust:7>);
-utils.rh(<ic2:dust:10>);
-utils.rh(<ic2:dust:12>);
-utils.rh(<ic2:dust:14>);
-utils.rh(<ic2:dust:16>);
-utils.rh(<ic2:dust:17>);
-utils.rh(<ic2:dust:23>);
-utils.rh(<ic2:dust:25>);
-utils.rh(<ic2:dust:36>);
-utils.rh(<ic2:nuclear:6>);
-utils.rh(<ic2:nuclear:8>);
-utils.rh(<ic2:nuclear:9>);
-utils.rh(<ic2:resource:8>); # Steel blocks
-utils.rh(<ic2:resource:6>); # Copper blocks
-utils.rh(<ic2:resource:9>); # Tin blocks
-utils.rh(<ic2:resource:15>); # Silver blocks
-utils.rh(<ic2:resource:7>); # Lead blocks
 
 # Iridium TiC Compat
 	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:iridium> * 144, <ic2:misc_resource:1>, 500);

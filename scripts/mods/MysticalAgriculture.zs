@@ -8,16 +8,16 @@ import scripts.craft.grid.Grid;
 mods.nuclearcraft.pressurizer.addRecipe(<mysticalagriculture:chunk:19> * 2, <minecraft:ender_pearl>);
 
 # Wither Proof Blocks
-recipes.addShapedMirrored("Wither Proof Block", 
-<mysticalagriculture:witherproof_block> * 16, 
+recipes.addShapedMirrored("Wither Proof Block",
+<mysticalagriculture:witherproof_block> * 16,
 [[<enderio:block_reinforced_obsidian>, <enderio:block_reinforced_obsidian>, <enderio:block_reinforced_obsidian>],
-[<enderio:block_reinforced_obsidian>, <ore:dyeBlack>, <enderio:block_reinforced_obsidian>], 
+[<enderio:block_reinforced_obsidian>, <ore:dyeBlack>, <enderio:block_reinforced_obsidian>],
 [<enderio:block_reinforced_obsidian>, <enderio:block_reinforced_obsidian>, <enderio:block_reinforced_obsidian>]]);
 
-recipes.addShapedMirrored("Wither Proof Glass", 
-<mysticalagriculture:witherproof_glass> * 16, 
+recipes.addShapedMirrored("Wither Proof Glass",
+<mysticalagriculture:witherproof_glass> * 16,
 [[<enderio:block_reinforced_obsidian>, <extrautils2:decorativeglass:3>, <enderio:block_reinforced_obsidian>],
-[<extrautils2:decorativeglass:3>, <ore:dyeBlack>, <extrautils2:decorativeglass:3>], 
+[<extrautils2:decorativeglass:3>, <ore:dyeBlack>, <extrautils2:decorativeglass:3>],
 [<enderio:block_reinforced_obsidian>, <extrautils2:decorativeglass:3>, <enderio:block_reinforced_obsidian>]]);
 
 # Readding Essence to Ingot recipes because of an unidentified bug - 20-12-2018
@@ -28,32 +28,32 @@ recipes.addShapedMirrored("Wither Proof Glass",
 
 # Disabling Obsidian recipe, readding Essence recipe
 	recipes.remove(<minecraft:obsidian>);
-	recipes.addShaped("Obsidian From Essence", 
-	<minecraft:obsidian> * 8, 
+	recipes.addShaped("Obsidian From Essence",
+	<minecraft:obsidian> * 8,
 	[[<mysticalagriculture:obsidian_essence>, <mysticalagriculture:obsidian_essence>, <mysticalagriculture:obsidian_essence>],
-	[<mysticalagriculture:obsidian_essence>, null, <mysticalagriculture:obsidian_essence>], 
+	[<mysticalagriculture:obsidian_essence>, null, <mysticalagriculture:obsidian_essence>],
 	[<mysticalagriculture:obsidian_essence>, <mysticalagriculture:obsidian_essence>, <mysticalagriculture:obsidian_essence>]]);
 
 # Ultimate Furnace
 	recipes.remove(<mysticalagriculture:ultimate_furnace>);
-	recipes.addShapedMirrored("Ultimate Furnace", 
-	<mysticalagriculture:ultimate_furnace>, 
+	recipes.addShapedMirrored("Ultimate Furnace",
+	<mysticalagriculture:ultimate_furnace>,
 	[[<ore:blockInsaniumEssence>, <extrautils2:machine>.withTag({Type: "extrautils2:generator_netherstar"}), <ore:blockInsaniumEssence>],
-	[<mysticalagriculture:supremium_furnace>, <extendedcrafting:storage:3>, <mysticalagriculture:supremium_furnace>], 
+	[<mysticalagriculture:supremium_furnace>, <extendedcrafting:storage:3>, <mysticalagriculture:supremium_furnace>],
 	[<quark:black_ash>, <mysticalagradditions:stuff:1>, <quark:black_ash>]]);
 
 # Growth Accelerator
 	recipes.remove(<mysticalagriculture:growth_accelerator>);
-	recipes.addShapedMirrored("Growth Accelerator", 
-	<mysticalagriculture:growth_accelerator> * 2, 
+	recipes.addShapedMirrored("Growth Accelerator",
+	<mysticalagriculture:growth_accelerator> * 2,
 	[[<ore:blockInferiumEssence>, <ore:blockPrudentiumEssence>, <ore:blockInferiumEssence>],
-	[<ore:manaDiamond>, <appliedenergistics2:quartz_growth_accelerator>, <ore:manaDiamond>], 
+	[<ore:manaDiamond>, <appliedenergistics2:quartz_growth_accelerator>, <ore:manaDiamond>],
 	[<ore:blockInferiumEssence>, <ore:blockPrudentiumEssence>, <ore:blockInferiumEssence>]]);
 
 # Master Infusion Crystal
 	recipes.remove(<mysticalagriculture:master_infusion_crystal>);
 	scripts.wrap.astralsorcery.Altar.addConstellationAltarRecipe("enigmatica2expert:shaped/internal/altar/master_infusion_crystal",
-		<mysticalagriculture:master_infusion_crystal>, 3000, 600, 
+		<mysticalagriculture:master_infusion_crystal>, 3000, 600,
 	[<botania:rune:12>, <botania:storage:3>, <botania:rune:15>,
 	<botania:storage:2>, <matc:supremiumcrystal>.anyDamage(), <botania:storage>,
 	<botania:rune:11>, <botania:storage:1>, <botania:rune:10>,
@@ -61,13 +61,42 @@ recipes.addShapedMirrored("Wither Proof Glass",
 	<astralsorcery:itemcraftingcomponent:4>, <astralsorcery:itemcraftingcomponent:4>, <botania:manaresource:1>, <botania:manaresource:1>,
 	<botania:manaresource:1>, <botania:manaresource:1>, <astralsorcery:itemcraftingcomponent:4>, <astralsorcery:itemcraftingcomponent:4>]);
 
-# Tier 6 Crafting Seeds 
-	recipes.remove(<mysticalagradditions:insanium:1>);
-	scripts.wrap.forestry.Carpenter.addRecipe(<mysticalagradditions:insanium:1>, 
-	[[<ore:listAllseed>,<mysticalagradditions:insanium>,<ore:listAllseed>],
-	[<mysticalagradditions:insanium>,<mysticalagriculture:crafting:21>,<mysticalagradditions:insanium>],
-	[<ore:listAllseed>,<mysticalagradditions:insanium>,<ore:listAllseed>]], 40, <liquid:sewage> * 1000);
-	
+# *======= Crafting Seeds =======*
+val essenceByTier = [
+	<ore:essenceInferium>,
+	<ore:essencePrudentium>,
+	<ore:essenceIntermedium>,
+	<ore:essenceSuperium>,
+	<ore:essenceSupremium>,
+	<ore:essenceInsanium>,
+] as IIngredient[];
+
+val seedIngrByTier = [
+  <ic2:crop_res:5>,                  # Weed
+  <biomesoplenty:coral:*>,           # Glowing Coral
+  <ore:gemXorcite>,                  # Xorcite Shard
+  <bloodmagic:component:28>,         # Simple Lengthening Catalyst
+  <ore:carminite>,                   # Carminite
+  <actuallyadditions:item_misc:24>,  # Empowered Canola Seed
+] as IIngredient[];
+
+for i in 0 .. 6 {
+	val shape = scripts.craft.grid.Grid(["pretty",
+		"o w o",
+		"w ! w",
+		"o w o"], {
+		"!": <mysticalagriculture:crafting>.definition.makeStack(i + 16),
+		"w": essenceByTier[i],
+		"o": seedIngrByTier[i],
+	}).shaped();
+	val output = i==5
+		? <mysticalagradditions:insanium:1>
+		: <mysticalagriculture:crafting>.definition.makeStack(i + 17);
+	recipes.remove(output);
+	if(i==5) scripts.wrap.forestry.Carpenter.addRecipe(output, shape, 40, <liquid:sewage> * 1000);
+	else recipes.addShaped(output, shape);
+}
+
 # *======= Universal Recipe =======*
 
 /*
@@ -91,20 +120,20 @@ static L as IIngredient[string] = {
   "⁴": <mysticalagriculture:crafting:20>,
   "⁵": <mysticalagriculture:crafting:21>,
   "⁶": <mysticalagradditions:insanium:1>,
-  
+
   "₁": <ore:essenceTier1>,
   "₂": <ore:essenceTier2>,
   "₃": <ore:essenceTier3>,
   "₄": <ore:essenceTier4>,
   "₅": <ore:essenceTier5>,
-  
+
   "1": <ore:blockInferiumEssence>,
   "2": <ore:blockPrudentiumEssence>,
   "3": <ore:blockIntermediumEssence>,
   "4": <ore:blockSuperiumEssence>,
   "5": <ore:blockSupremiumEssence>,
   "6": <ore:blockInsaniumEssence>,
-  
+
   "▪": <ore:ingotSuperium>,
   "▬": <ore:ingotSupremium>,
   "‗": <ore:ingotInsanium>,
@@ -114,8 +143,8 @@ static L as IIngredient[string] = {
 static curr_tier as int = 1 as int;
 
 function addTieredRecipe(
-	output as IItemStack, 
-	ingrs as IIngredient[], 
+	output as IItemStack,
+	ingrs as IIngredient[],
 	constelation as string
 ) as void {
 	if(isNull(output)) return;
@@ -133,7 +162,7 @@ function addTieredRecipe(
 			"□¹□",
 			"╳1╳"], L).shaped());
 	} else
-	
+
 	if(tier == 2) {
 		var grid = Grid([
 			"╳2╳"+
@@ -290,7 +319,7 @@ addTieredRecipe(itemUtils.getItem("mysticalcreations:ultimate_seeds") , [<ore:bl
 
 
 # *======= Remove & Hide =======*
-	
+
 var itemsToRemoveAndHide as IItemStack[] = [
 	<mysticalagriculture:chunk>,
 	<mysticalagriculture:chunk:1>,
@@ -313,7 +342,7 @@ for item in itemsToRemoveAndHide {
 # Uranium Essence to Ingot
   recipes.removeByRecipeName("mysticalagriculture:ingoturanium");
   recipes.addShaped("Mystical Agriculture Uranium", <immersiveengineering:metal:5> * 3, [[<mysticalagriculture:uranium_essence>,<mysticalagriculture:uranium_essence>,<mysticalagriculture:uranium_essence>],[<mysticalagriculture:uranium_essence>,null,<mysticalagriculture:uranium_essence>],[<mysticalagriculture:uranium_essence>,<mysticalagriculture:uranium_essence>,<mysticalagriculture:uranium_essence>]]);
-	
+
 # Changed Amber Essence to the more sensible amber
   recipes.removeByRecipeName("mysticalagriculture:gemamber");
   recipes.addShaped("Mystical Agriculture Amber", <thaumcraft:amber> * 6, [[<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>],[<mysticalagriculture:amber_essence>,null,<mysticalagriculture:amber_essence>],[<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>]]);
@@ -346,9 +375,9 @@ var crystals = [
 var prospetry = <mysticalagriculture:crafting:5>;
 for i in 0 .. 5 {
 	craft.remake(crystals[i+1], ["ABA","BCB","ABA"], {
-		A: prospetry, 
-		B: itemUtils.getItem("mysticalagriculture:crafting", i), 
-		C: crystals[i].anyDamage().noReturn().marked("marked")}, 
+		A: prospetry,
+		B: itemUtils.getItem("mysticalagriculture:crafting", i),
+		C: crystals[i].anyDamage().noReturn().marked("marked")},
 		function(out, ins, cInfo) {
 			if(ins has "marked" && !isNull(ins.marked) && ins.marked.isDamageable && out.isDamageable) {
 				return out.withDamage(ins.marked.damage);
@@ -359,7 +388,7 @@ for i in 0 .. 5 {
 
 # ######################################################################
 #
-# Harder Supremium armor 
+# Harder Supremium armor
 #
 # ######################################################################
 
@@ -449,7 +478,7 @@ getByOredict('treeSapling')
 )
 .filter(o=>o.commandString != '<biomesoplenty:sapling_1:7>')
 .map((o,i)=>[
-  `recipes.addShaped("sap #${i}", `, 
+  `recipes.addShaped("sap #${i}", `,
   o.commandString,
   '* ', o.owner==='biomesoplenty'?10:6,
   `, uniq_${
@@ -480,20 +509,19 @@ recipes.addShaped("sap #19", <biomesoplenty:sapling_2:4>     * 10, uniq_biomesop
 recipes.addShaped("sap #20", <biomesoplenty:sapling_2:5>     * 10, uniq_biomesoplenty.next());
 recipes.addShaped("sap #21", <biomesoplenty:sapling_2:6>     * 10, uniq_biomesoplenty.next());
 recipes.addShaped("sap #22", <biomesoplenty:sapling_2:7>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #23", <extrautils2:ironwood_sapling>  * 6 , uniq_other.next());        
-recipes.addShaped("sap #24", <extrautils2:ironwood_sapling:1>* 6 , uniq_other.next());        
-recipes.addShaped("sap #25", <ic2:sapling>                   * 6 , uniq_other.next());        
-recipes.addShaped("sap #26", <quark:variant_sapling>         * 6 , uniq_other.next());        
-recipes.addShaped("sap #27", <quark:variant_sapling:1>       * 6 , uniq_other.next());        
-recipes.addShaped("sap #28", <rustic:sapling>                * 6 , uniq_other.next());        
-recipes.addShaped("sap #29", <rustic:sapling:1>              * 6 , uniq_other.next());        
-recipes.addShaped("sap #30", <rustic:sapling_apple>          * 6 , uniq_other.next());        
-recipes.addShaped("sap #31", <thaumcraft:sapling_greatwood>  * 6 , uniq_other.next());        
-recipes.addShaped("sap #32", <thaumcraft:sapling_silverwood> * 6 , uniq_other.next());        
-recipes.addShaped("sap #33", <tconstruct:slime_sapling>      * 6 , uniq_tconstruct.next());   
-recipes.addShaped("sap #34", <tconstruct:slime_sapling:1>    * 6 , uniq_tconstruct.next());   
-recipes.addShaped("sap #35", <tconstruct:slime_sapling:2>    * 6 , uniq_tconstruct.next());   
-
+recipes.addShaped("sap #23", <extrautils2:ironwood_sapling>  * 6 , uniq_other.next());
+recipes.addShaped("sap #24", <extrautils2:ironwood_sapling:1>* 6 , uniq_other.next());
+recipes.addShaped("sap #25", <ic2:sapling>                   * 6 , uniq_other.next());
+recipes.addShaped("sap #26", <quark:variant_sapling>         * 6 , uniq_other.next());
+recipes.addShaped("sap #27", <quark:variant_sapling:1>       * 6 , uniq_other.next());
+recipes.addShaped("sap #28", <rustic:sapling>                * 6 , uniq_other.next());
+recipes.addShaped("sap #29", <rustic:sapling:1>              * 6 , uniq_other.next());
+recipes.addShaped("sap #30", <rustic:sapling_apple>          * 6 , uniq_other.next());
+recipes.addShaped("sap #31", <thaumcraft:sapling_greatwood>  * 6 , uniq_other.next());
+recipes.addShaped("sap #32", <thaumcraft:sapling_silverwood> * 6 , uniq_other.next());
+recipes.addShaped("sap #33", <tconstruct:slime_sapling>      * 6 , uniq_tconstruct.next());
+recipes.addShaped("sap #34", <tconstruct:slime_sapling:1>    * 6 , uniq_tconstruct.next());
+recipes.addShaped("sap #35", <tconstruct:slime_sapling:2>    * 6 , uniq_tconstruct.next());
 /**/
 
 # ----------------------------

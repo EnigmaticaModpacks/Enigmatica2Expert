@@ -147,7 +147,7 @@ craft.remake(<thermalfoundation:material:1028> * 2, ["pretty",
 
 # Redstone Reception Coil
 	recipes.remove(<thermalfoundation:material:513>);
-	scripts.wrap.actuallyadditions.AtomicReconstructor.addRecipe(<thermalfoundation:material:513> * 1, <immersiveengineering:metal_decoration0>, 25000);
+	scripts.wrap.actuallyadditions.AtomicReconstructor.addRecipe(<thermalfoundation:material:513>, <immersiveengineering:metal_decoration0>, 25000);
 	scripts.wrap.mekanism.infuser.addRecipe("REDSTONE", 160, <minecraft:gold_ingot>, <thermalfoundation:material:513>);
 
 # Redstone Transmission Coil
@@ -157,7 +157,7 @@ craft.remake(<thermalfoundation:material:1028> * 2, ["pretty",
 	
 # Redstone Conductance Coil
 	recipes.remove(<thermalfoundation:material:515>);
-	scripts.wrap.actuallyadditions.AtomicReconstructor.addRecipe(<thermalfoundation:material:515> * 1, <immersiveengineering:metal_decoration0:1>, 25000);
+	scripts.wrap.actuallyadditions.AtomicReconstructor.addRecipe(<thermalfoundation:material:515>, <immersivecables:wire_coil>, 25000);
 	scripts.wrap.mekanism.infuser.addRecipe("REDSTONE", 160, <thermalfoundation:material:161>, <thermalfoundation:material:515>);
 
 # Removing Netherrack -> Gravel Pulverizer recipes

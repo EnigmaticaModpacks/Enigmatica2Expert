@@ -214,6 +214,11 @@ remake("Mob Crusher",   <industrialforegoing:mob_relocator>, [
 	[<randomthings:imbue:2>, <teslacorelib:machine_case>, <randomthings:imbue:2>],
 	[<ore:gearGold>, <extrautils2:user>, <ore:gearGold>]]);
 
+remake("Mob Crusher 2",   <industrialforegoing:mob_relocator>, [
+	[<ore:itemRubber>, <redstonearsenal:tool.sword_flux>.anyDamage(), <ore:itemRubber>],
+	[<randomthings:imbue:2>, <teslacorelib:machine_case>, <randomthings:imbue:2>],
+	[<ore:gearGold>, <opencomputers:robot>, <ore:gearGold>]]);
+
 # More sludge outputs
 scripts.wrap.industrialforegoing.SludgeRefiner.add(<rustic:fertile_soil>, 10);
 scripts.wrap.industrialforegoing.SludgeRefiner.add(<thermalfoundation:material:816>, 10);

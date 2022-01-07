@@ -32,8 +32,7 @@ zenClass Utils {
 
 	zenConstructor() { }
 
-  function getSomething(oreName as string, entryNames as string[]) as IItemStack { return getSomething(oreName, entryNames, 1); }
-  function getSomething(oreName as string, entryNames as string[], amount as int) as IItemStack {
+  function getSomething(oreName as string, entryNames as string[], amount as int = 1) as IItemStack {
     if (isNull(oreName)) return null;
 
     // Find with JAOPCA

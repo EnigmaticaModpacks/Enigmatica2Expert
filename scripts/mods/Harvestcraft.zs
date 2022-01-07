@@ -32,29 +32,19 @@ for item in [<minecraft:potato>] as IItemStack[] {
     mods.immersiveengineering.Fermenter.removeByInput(item);
 }
 
-for item in [<minecraft:wheat_seeds>,
-    <minecraft:pumpkin_seeds>,
-    <minecraft:beetroot_seeds>,
-    <minecraft:melon_seeds>
+for item in [
+  <minecraft:wheat_seeds>,
+  <minecraft:pumpkin_seeds>,
+  <minecraft:beetroot_seeds>,
+  <minecraft:melon_seeds>
 ] as IItemStack[] {
-    mods.immersiveengineering.Squeezer.removeByInput(item);
+  mods.immersiveengineering.Squeezer.removeByInput(item);
 }
 
-for item in <ore:listAllveggie>.items {
-    scripts.wrap.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 80, item, 500);
-}
-
-for item in <ore:listAllfruit>.items {
-    scripts.wrap.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 120, item, 500);
-}
-
-for item in <ore:listAllberry>.items {
-    scripts.wrap.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 100, item, 500);
-}
-
-for item in <ore:listAllseed>.items {
-    scripts.wrap.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 80, item, 500);
-}
+scripts.wrap.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 80, <ore:listAllveggie>, 500);
+scripts.wrap.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 120, <ore:listAllfruit>, 500);
+scripts.wrap.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 100, <ore:listAllberry>, 500);
+scripts.wrap.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 80, <ore:listAllseed>, 500);
 
 
 for i, dye in scripts.category.dye.oreDye {
@@ -123,6 +113,10 @@ craft.reshapeless(<harvestcraft:cheeseitem> * 2, "PACSS", {
   "S": <ore:itemSalt>,    # Salt
 });
 
+# [Royal Jelly] from [Queen Bee]
+recipes.remove(<harvestcraft:royaljellyitem>);
+scripts.wrap.integrateddynamics.Squeezer.addRecipe(<harvestcraft:queenbeeitem>, <harvestcraft:royaljellyitem>, 1.0f, <harvestcraft:royaljellyitem>, 1.0f, null, 0, null);
+scripts.process.squeeze([<harvestcraft:queenbeeitem>], null, "only: TECentrifuge", <harvestcraft:royaljellyitem> * 4);
 
 
 # *=======  =======*

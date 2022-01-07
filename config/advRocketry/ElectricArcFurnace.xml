@@ -207,6 +207,17 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Celestial Crystal Shard] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>crystalPureFluix 1</oreDict>
+			<itemStack>tconstruct:shard 1</itemStack>
+		</input>
+		<output>
+			<itemStack>biomesoplenty:crystal_shard 4 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Clay-Coated Glowstone Dust] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>

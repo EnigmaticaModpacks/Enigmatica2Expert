@@ -247,6 +247,7 @@ requious.jei.recipe.chemthrower=Chemical Thrower
 requious.jei.recipe.expire_in_block=Expire In Block
 requious.jei.recipe.barrel_milking=Barrel Milking
 requious.jei.recipe.entity_kill_entity=Entity Kill Entity
+requious.jei.recipe.special_craft=Special Craft
 
 tile.adv_bee_analyzer.name=Advanced Analyzer
 tile.infinity_furnace.name=Infinity Furnace

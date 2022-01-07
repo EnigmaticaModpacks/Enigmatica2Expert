@@ -72,7 +72,7 @@ mods.harvestcrafttweaker.HarvestCraftTweaker.addWaterFilter(<deepmoblearning:soo
 scripts.wrap.thermalexpansion.Transposer.addFillRecipe(<minecraft:redstone>, <deepmoblearning:soot_covered_redstone>, <fluid:water> * 10, 1000);
 
 # [Ender Air Bottle] from [End Stone][+2]
-craft.shapeless(<botania:manaresource:15>, "EeG", {
+craft.shapeless(<botania:manaresource:15> * 16, "EeG", {
   "E": <deepmoblearning:living_matter_extraterrestrial>, # Extraterrestrial Matter
   "e": <ore:endstone> | <ore:oc:stoneEndstone>, # End Stone
   "G": <minecraft:glass_bottle>,                # Glass Bottle

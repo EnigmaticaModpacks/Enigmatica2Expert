@@ -33,13 +33,26 @@
 <!-->
 <Recipes useDefault="false">
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Curio centrifuge] -->
+	<Recipe timeRequired="20" power="100000">
+		<input>
+			<fluidStack>flux_goo 100</fluidStack>
+		</input>
+		<output>
+			<itemStack>thaumcraft:curio 2 0</itemStack>
+			<itemStack>thaumcraft:curio 2 2</itemStack>
+			<itemStack>thaumcraft:curio 2 4</itemStack>
+			<itemStack>thaumcraft:curio 1 5</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Magic centrifuge] -->
 	<Recipe timeRequired="20" power="100000">
 		<input>
 			<fluidStack>enrichedlava 1000</fluidStack>
 		</input>
 		<output>
-			<fluidStack>flux_goo 80</fluidStack>
+			<fluidStack>flux_goo 180</fluidStack>
 			<fluidStack>thaumium 60</fluidStack>
 			<fluidStack>livingrock 50</fluidStack>
 			<fluidStack>manasteel 45</fluidStack>

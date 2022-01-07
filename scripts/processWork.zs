@@ -50,8 +50,8 @@ function getOption(options as IData, field as string) as IData {
 # Returns name of machine if recipe was added. If not, returns empty string
 function workEx(machineNameAnyCase as string, exceptions as string, 
   inputItems as IIngredient[], inputLiquids as ILiquidStack[],
-  outputItems as IItemStack[], outputLiquids as ILiquidStack[],
-  extra as IItemStack[], extraChance as float[], options as IData) as string {
+  outputItems as IItemStack[], outputLiquids as ILiquidStack[] = null,
+  extra as IItemStack[] = null, extraChance as float[] = null, options as IData = null) as string {
 
   # Prepare machine name
   val machineName = machineNameAnyCase.toLowerCase();
@@ -286,9 +286,10 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       for ii in inputIngr0.itemArray {
         if (strict) { mods.appliedenergistics2.Grinder.removeRecipe(ii); }
         if (haveExtra) {
-          # Grindstone has bug - first extra always omitted, only outputting second one
-          if (extra.length >= 1) {
-            scripts.wrap.appliedenergistics2.Grinder.addRecipe(outputItem0, ii, 2, extra[0], extraChance[0], extra[0], extraChance[0]);
+          if (extra.length == 1) {
+            scripts.wrap.appliedenergistics2.Grinder.addRecipe(outputItem0, ii, 2, extra[0], extraChance[0]);
+          }else if (extra.length >= 2) {
+            scripts.wrap.appliedenergistics2.Grinder.addRecipe(outputItem0, ii, 2, extra[0], extraChance[0], extra[1], extraChance[1]);
           }
         } else {
           scripts.wrap.appliedenergistics2.Grinder.addRecipe(outputItem0, ii, 2);

@@ -390,6 +390,27 @@ craft.remake(<extrautils2:terraformer:9>, ["pretty",
   "■": <extrautils2:machine>,# Machine Block
 });
 
+# Skyblock alt
+# [Climograph Base Unit] from [Iron Sheetmetal][+2]
+scripts.skyblock.addSkyblockRecipe(<extrautils2:terraformer:9>, ["pretty",
+  "▬ S ▬",
+  "S ■ S",
+  "▬ S ▬"], {
+  "▬": <ore:ingotFakeIron>,       # Iron Alloy Ingot
+  "S": <ore:treeSapling>,         # Oak Sapling
+  "■": <ore:blockSheetmetalIron>, # Iron Sheetmetal
+});
+
+# [Antenna]*8 from [Antenna Base][+2]
+craft.remake(<extrautils2:terraformer:1> * 16, ["pretty",
+  "/   /",
+  "/ A /",
+  "/ C /"], {
+  "/": <minecraft:end_rod>,         # End Rod
+  "A": <xnet:antenna_base>,         # Antenna Base
+  "C": <extrautils2:terraformer:9>, # Climograph Base Unit
+});
+
 #-----------------------------------------------------------------------------------------------
 #- Biome Markers
 #-----------------------------------------------------------------------------------------------

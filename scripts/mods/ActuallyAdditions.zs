@@ -643,3 +643,14 @@ for i, dye in scripts.category.dye.oreDye {
 		"⌃": <ore:gemQuartzBlack>, # Black Quartz
 	});
 }
+
+# Cheaper, because Void Stone ingredient too pricy
+# [Traveler's Sack] from [Oak Chest][+2]
+craft.remake(<actuallyadditions:item_bag>, ["pretty",
+  "  s  ",
+  "H c H",
+  "  H  "], {
+  "s": <ore:string>, # String
+  "H": <ore:fabricHemp>, # Tough Fabric
+  "c": <ore:chest>, # Oak Chest
+});

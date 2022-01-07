@@ -15,14 +15,14 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded thaumcraft
-// Uses of this mod: 12
+// Uses of this mod: 10
 
 
 //####################################################
-// Uses of this class: 3
+// Uses of this class: 4
 zenClass Class_Crucible { zenConstructor() {}
 
-	// Uses of this method: 3
+	// Uses of this method: 4
 	function registerRecipe(name as string, researchKey as string, output as IItemStack, input as IIngredient, aspects as CTAspectStack[]) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.thaumcraft.Crucible.registerRecipe'~
 			serialize.args([serialize._string(name), serialize._string(researchKey), serialize.IItemStack(output), serialize.IIngredient(input), serialize.CTAspectStack__(aspects)]));
@@ -47,10 +47,10 @@ zenClass Class_Infusion { zenConstructor() {}
 static Infusion as Class_Infusion = Class_Infusion();
 
 //####################################################
-// Uses of this class: 5
+// Uses of this class: 2
 zenClass Class_SmeltingBonus { zenConstructor() {}
 
-	// Uses of this method: 5
+	// Uses of this method: 2
 	function addSmeltingBonus(input as IIngredient, stack as WeightedItemStack) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.thaumcraft.SmeltingBonus.addSmeltingBonus'~
 			serialize.args([serialize.IIngredient(input), serialize.WeightedItemStack(stack)]));

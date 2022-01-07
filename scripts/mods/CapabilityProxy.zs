@@ -26,6 +26,6 @@ craft.remake(<capabilityproxy:item_capability_proxy>, ["pretty",
   "C C C",
   "G ▬ G"], {
   "C": <capabilityproxy:capability_proxy>, # Capability Proxy
-  "G": <enderio:block_holy_fog>,           # Glowstone Nano-Particles
+  "G": <enderio:block_holier_fog>,         # Glowstone Nano-Particles
   "▬": <ore:ingotSupremium>,               # Supremium Ingot
 });

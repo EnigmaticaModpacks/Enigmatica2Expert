@@ -253,12 +253,21 @@ var spectreIngrs = {
   "l": <contenttweaker:conglomerate_of_life>,
   "t": <contenttweaker:conglomerate_of_sun>,
   "C": <cyclicmagic:crystallized_obsidian>, # Crystallized Obsidian
+  "N": <ore:ingotEndorium>,
 } as IIngredient[string];
 
 # [Spectre_Coil] from [Ice_Bomb][+4]
 craft.remake(<randomthings:spectrecoil_normal>, ["pretty",
   "S ▬ S",
   "P I P",
+  "S i S"], spectreIngrs
+);
+
+# Other alt
+# [Spectre Coil] from [Ice_Bomb][+4]
+craft.remake(<randomthings:spectrecoil_normal>, ["pretty",
+  "S ▬ S",
+  "N I N",
   "S i S"], spectreIngrs
 );
 

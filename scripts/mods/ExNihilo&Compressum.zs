@@ -28,21 +28,25 @@ val crushingInMachines = [
 	[<minecraft:stone:3>                  , <exnihilocreatio:block_diorite_crushed> , <contenttweaker:compressed_diorite>,  <contenttweaker:compressed_crushed_diorite> , <biomesoplenty:white_sand>],
 	[<minecraft:stone:1>                  , <exnihilocreatio:block_granite_crushed> , <contenttweaker:compressed_granite>,  <contenttweaker:compressed_crushed_granite>],
 	[<appliedenergistics2:sky_stone_block>, <exnihilocreatio:block_skystone_crushed>, <contenttweaker:compressed_skystone>, <contenttweaker:compressed_crushed_skystone>],
+	[<rats:garbage_pile>                  , null                                    , <contenttweaker:compressed_garbage_pile>],
 ] as IItemStack[][];
 for i, inputArr in crushingInMachines {
 	val normal     = inputArr[0];
 	val crushed    = inputArr[1];
-	scripts.wrap.thermalexpansion.Pulverizer.addRecipe(crushed, normal, 2000);
+	if(!isNull(normal) && !isNull(crushed)) scripts.wrap.thermalexpansion.Pulverizer.addRecipe(crushed, normal, 2000);
 
-	if(inputArr.length > 3) {
+	if(inputArr.length >= 3) {
 		val compressed = inputArr[2];
-		val crushComps = inputArr[3];
 		utils.compact(normal, compressed);
-		utils.compact(crushed, crushComps);
-		scripts.process.crush(compressed, crushed * 9, "only: SagMill", null, null);
 
-		if(inputArr.length > 4) {
-			scripts.process.crush(crushComps, inputArr[4] * 9, "only: SagMill Pulverizer", null, null);
+		if(inputArr.length >= 4) {
+			val crushComps = inputArr[3];
+			utils.compact(crushed, crushComps);
+			scripts.process.crush(compressed, crushed * 9, "only: SagMill", null, null);
+
+			if(inputArr.length >= 5) {
+				scripts.process.crush(crushComps, inputArr[4] * 9, "only: SagMill Pulverizer", null, null);
+			}
 		}
 	}
 }
@@ -83,8 +87,6 @@ for i, inputArr in crushingInMachines {
 	utils.rh(<exnihilocreatio:item_ore_lead:2>);
 	utils.rh(<exnihilocreatio:item_ore_silver:2>);
 	utils.rh(<exnihilocreatio:item_ore_nickel:2>);
-	utils.rh(<exnihilocreatio:item_ore_ardite:2>, false);
-	utils.rh(<exnihilocreatio:item_ore_cobalt:2>, false);
 
 # Manually remake some
 var x = <exnihilocreatio:item_ore_aluminium:2>;

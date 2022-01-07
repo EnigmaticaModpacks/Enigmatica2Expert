@@ -88,3 +88,12 @@ return '# Done!'
 # Done!
 /**/
 tweak("randomthings:beanpod", "Diamond", "minecraft:diamond", null, [<biomesoplenty:gem:1>, <biomesoplenty:gem:2>, <biomesoplenty:gem:3>, <biomesoplenty:gem:4>, <biomesoplenty:gem:5>, <biomesoplenty:gem:6>], [0,1]);
+
+
+# Add drops
+<entity:betteranimalsplus:zotzpyre>.addDrop(<harvestcraft:hardenedleatheritem> % 70, 1, 3);
+<entity:betteranimalsplus:zotzpyre>.addPlayerOnlyDrop(<harvestcraft:netherwingsitem>, 1, 3);
+<entity:minecraft:endermite>.addDrop(<appliedenergistics2:material:46>, 1, 3);
+<entity:minecraft:endermite>.addPlayerOnlyDrop(<endreborn:wolframium_nugget>, 1, 6);
+<entity:netherendingores:netherfish>.addPlayerOnlyDrop(<forestry:ash>, 3, 12);
+<entity:emberroot:fairies>.addPlayerOnlyDrop(<astralsorcery:itemusabledust>, 1, 6);

@@ -147,12 +147,16 @@ mods.botania.Apothecary.addRecipe("orechidVacuam", [
 	}
 
 # Livingrock
-	scripts.wrap.botania.PureDaisy.addRecipe(<thaumcraft:stone_arcane>, <botania:livingrock>);
 	mods.botania.PureDaisy.removeRecipe(<botania:livingrock>);
+	scripts.wrap.botania.PureDaisy.addRecipe(<thaumcraft:stone_arcane>, <botania:livingrock>);
 
 # Livingwood
-	scripts.wrap.botania.PureDaisy.addRecipe(<astralsorcery:blockinfusedwood>, <botania:livingwood>);
 	mods.botania.PureDaisy.removeRecipe(<botania:livingwood>);
+	scripts.wrap.botania.PureDaisy.addRecipe(<astralsorcery:blockinfusedwood>, <botania:livingwood>);
+
+# Obsidian cheaper
+	mods.botania.PureDaisy.removeRecipe(<minecraft:obsidian>);
+	scripts.wrap.botania.PureDaisy.addRecipe(<tconstruct:firewood>, <minecraft:obsidian>);
 
 # Gaia Ingot
 	recipes.remove(<botania:manaresource:14>);

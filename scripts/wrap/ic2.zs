@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded ic2
-// Uses of this mod: 7
+// Uses of this mod: 8
 
 
 //####################################################
@@ -109,10 +109,10 @@ zenClass Class_MetalFormer { zenConstructor() {}
 static MetalFormer as Class_MetalFormer = Class_MetalFormer();
 
 //####################################################
-// Uses of this class: 1
+// Uses of this class: 2
 zenClass Class_ThermalCentrifuge { zenConstructor() {}
 
-	// Uses of this method: 1
+	// Uses of this method: 2
 	function addRecipe(outputs as IItemStack[], input as IIngredient) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.ic2.ThermalCentrifuge.addRecipe'~
 			serialize.args([serialize.IItemStack__(outputs), serialize.IIngredient(input)]));

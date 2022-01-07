@@ -1,16 +1,6 @@
 
 # *======= Adding Smeltables =======*
 
-# Lithium Dust -> Ingots
-	furnace.addRecipe(<nuclearcraft:ingot:6>, <ic2:dust:11>);
-
-# Steel Blend
-	furnace.addRecipe(<thermalfoundation:material:160>, <thermalfoundation:material:96>);
-
-# Nether Aluminum Ore to Bauxite
-	furnace.remove(<thermalfoundation:ore:4>);
-	furnace.addRecipe(<immersiveengineering:ore:1> * 2, <netherendingores:ore_nether_modded_1>);
-
 # Removing End Ores
 	furnace.remove(<netherendingores:ore_end_vanilla:*>);
 	furnace.remove(<netherendingores:ore_end_modded_1:*>);

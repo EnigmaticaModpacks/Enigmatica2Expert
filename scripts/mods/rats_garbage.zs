@@ -81,5 +81,7 @@ recipes.addHiddenShapeless("Garbage_function", <rats:garbage_pile>, [
     amount *= getItemMults(item);
   }
 
-  return out * max(1, min(64, amount as int));
+  return amount > 64
+    ? <contenttweaker:compressed_garbage_pile> * min(64, (amount as double / 64.0d + 1.0d) as int)
+    : out * max(1, min(64, amount as int));
 }, null);

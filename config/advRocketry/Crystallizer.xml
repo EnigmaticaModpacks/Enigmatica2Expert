@@ -156,4 +156,15 @@
 			<itemStack>nuclearcraft:gem 10 1</itemStack>
 		</output>
 	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Endorium Nugget] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>extrautils2:enderlilly 1</itemStack>
+			<fluidStack>ice 1000</fluidStack>
+		</input>
+		<output>
+			<itemStack>endreborn:item_raw_endorium 10 0</itemStack>
+		</output>
+	</Recipe>
 </Recipes>

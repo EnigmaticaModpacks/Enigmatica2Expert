@@ -202,9 +202,9 @@ val packagerList = [
     <forestry:ash>,                    # Ash
   ],
   [<cyclicmagic:battery>]         , [
-    <rats:charged_creeper_chunk>, # Charged Creeper Chunk
-    <minecraft:redstone_block>,   # Block of Redstone
-    <ore:dustAsh>.firstItem * 4,  # Ash
+    <rats:charged_creeper_chunk> * 2, # Charged Creeper Chunk
+    <minecraft:redstone_block> * 4,   # Block of Redstone
+    <ore:dustAsh>.firstItem * 4,      # Ash
   ],
   [<cyclicmagic:block_storeempty>], [
     <thermalfoundation:material:324>,   # Aluminum Plate
@@ -566,15 +566,14 @@ craft.remake(<cyclicmagic:tool_elevate>, ["pretty",
   "T": <cyclicmagic:glass_strong>, # Tempered Glass
 });
 
-# [Enchanter] from [Tank][+4]
+# [Enchanter] from [Tank][+3]
 craft.remake(<cyclicmagic:block_enchanter>, ["pretty",
   "  L  ",
   "S T S",
-  "■ E ■"], {
+  "E E E"], {
   "L": <openblocks:luggage>.withTag({size: 54}), # Luggage
-  "S": <cyclicmagic:ender_eye_orb>,              # Solid Ender Eye
+  "S": <cyclicmagic:ender_eye_orb>.anyDamage(),  # Solid Ender Eye
   "T": <openblocks:tank>,                        # Tank
-  "■": <endreborn:block_decorative_lormyte>,     # Lormyte Block
   "E": <minecraft:enchanting_table>,             # Enchantment Table
 });
 
@@ -671,15 +670,17 @@ craft.remake(<cyclicmagic:auto_crafter>, ["pretty",
   "ͼ": <cyclicmagic:corrupted_chorus>, # Corrupted Chorus Fruit
 });
 
-# [Sprinkler] from [Mending Moss][+3]
+# [Sprinkler] from [Slime Cube][+3]
 craft.remake(<cyclicmagic:sprinkler>, ["pretty",
   "F ͼ F",
-  "e M e"], {
+  "D § D",
+  "D D D"], {
   "F": <thermalexpansion:florb>.withTag({Fluid: "water"}), # Florb (Water)
   "ͼ": <cyclicmagic:corrupted_chorus>, # Corrupted Chorus Fruit
-  "e": <randomthings:fertilizeddirt>,  # Fertilized Dirt
-  "M": <tconstruct:materials:19>,      # Mending Moss
+  "D": <ore:boneDragon>,               # Dragon Bone
+  "§": <randomthings:slimecube>,       # Slime Cube
 });
+
 
 # [Packager] from [Crafting Table][+2]
 craft.remake(<cyclicmagic:auto_packager>, ["pretty",
@@ -709,7 +710,7 @@ craft.remake(<cyclicmagic:builder_block>, ["pretty",
   "░ B ░",
   "L L L"], {
   "♥": <ore:blockRedstone>,           # Block of Redstone
-  "░": <ore:compressed1xCobblestone>, # Compressed Cobblestone
+  "░": <appliedenergistics2:smooth_sky_stone_block>,
   "B": <cyclicmagic:battery>,         # Battery
   "L": <tconstruct:firewood>,         # Lavawood
 });
@@ -720,7 +721,7 @@ craft.remake(<cyclicmagic:block_miner_smart>, ["pretty",
   "░ B ░",
   "L L L"], {
   "■": <ore:blockLapis>,              # Lapis Lazuli Block
-  "░": <ore:compressed1xCobblestone>, # Compressed Cobblestone
+  "░": <appliedenergistics2:smooth_sky_stone_block>,
   "B": <cyclicmagic:battery>,         # Battery
   "L": <tconstruct:firewood>,         # Lavawood
 });

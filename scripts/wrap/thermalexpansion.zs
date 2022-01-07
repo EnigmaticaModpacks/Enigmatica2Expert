@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded thermalexpansion
-// Uses of this mod: 68
+// Uses of this mod: 67
 
 
 //####################################################
@@ -153,10 +153,10 @@ zenClass Class_Insolator { zenConstructor() {}
 static Insolator as Class_Insolator = Class_Insolator();
 
 //####################################################
-// Uses of this class: 10
+// Uses of this class: 9
 zenClass Class_Pulverizer { zenConstructor() {}
 
-	// Uses of this method: 10
+	// Uses of this method: 9
 	function addRecipe(output as IItemStack, input as IItemStack, energy as int) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.thermalexpansion.Pulverizer.addRecipe'~
 			serialize.args([serialize.IItemStack(output), serialize.IItemStack(input), energy]));

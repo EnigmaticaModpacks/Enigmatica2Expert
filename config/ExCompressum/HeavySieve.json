@@ -947,6 +947,76 @@
             "rolls": 1
           }
         ]
+      },
+      {
+        "name": "contenttweaker:compressed_garbage_pile",
+        "metadata": 0,
+        "type": "list",
+        "rewards": [
+          {
+            "meshLevel": 1,
+            "name": "exnihilocreatio:item_ore_tin",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0,
+            "chance": 0.15,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 1,
+            "name": "exnihilocreatio:item_ore_lead",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0,
+            "chance": 0.1,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 1,
+            "name": "exnihilocreatio:item_ore_ardite",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0,
+            "chance": 0.25,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 1,
+            "name": "jaopca:item_nuggetlapis",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0,
+            "chance": 1,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 1,
+            "name": "jaopca:item_nuggetlapis",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0,
+            "chance": 0.8,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 1,
+            "name": "jaopca:item_nuggetamber",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0,
+            "chance": 0.9,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 1,
+            "name": "mysticalagriculture:rock_crystal_essence",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0,
+            "chance": 0.015,
+            "rolls": 1
+          }
+        ]
       }
     ],
     "example_generate": {

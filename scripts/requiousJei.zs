@@ -1,6 +1,5 @@
 #priority 1000
 #modloaded requious
-#ignoreBracketErrors
 
 import mods.requious.Assembly;
 import mods.requious.AssemblyRecipe;
@@ -49,11 +48,222 @@ x = <assembly:infernal_furnace>;
 x.addJEICatalyst(<thaumcraft:infernal_furnace>);
 x.setJEIDurationSlot(1,0,"duration", SlotVisual.arrowRight());
 x.setJEIDurationSlot(2,0,"duration", getVisGauge(1,13));
-addInsOuts(x, [[0,0]], [[3,0]]);
+addInsOuts(x, [[0,0]], [[3,0],[4,0],[5,0],[6,0]]);
 
-function add_infernal_furnace(input as IIngredient, out as WeightedItemStack) {
-  add(<assembly:infernal_furnace>, {[input] as IIngredient[]: [out.stack.withLore(["§d§l" ~ out.percent as int ~ "%"])]});
+val RE = <thaumcraft:nugget:10>;
+
+function infFurLore(outs as WeightedItemStack[], i as int) as IItemStack {
+  if(i >= outs.length) return null;
+  return outs[i].stack.withLore(["§d§l" ~ outs[i].percent as int ~ "%"]);
 }
+
+function addInfFur(input as IIngredient, outs as WeightedItemStack[]) {
+  add(<assembly:infernal_furnace>, {[input] as IIngredient[]: [
+    infFurLore(outs, 0),
+    infFurLore(outs, 1),
+    infFurLore(outs, 2),
+    infFurLore(outs, 3),
+  ]});
+}
+
+/*Inject_js(
+_(getCrtLogBlock('Thaumcraft dump:\n-Smelting Bonus:\n', '\n-Warp')
+.split('\n')
+.filter(s=>!s.match(/yellorium/i)))
+.map(s=>s.match(/--in: (.*?), out: (.*?), change: (.*)/)?.splice(1))
+.filter(s=>s)
+.groupBy('0')
+.map((arr, inp)=>`addInfFur(${inp.padEnd(41)}, [${
+  arr.map(([,out, chance])=>
+    out.replace('<thaumcraft:nugget:10>', 'RE')+' % '+((parseFloat(chance)*100)|0)
+  ).sort((a,b)=>a.length-b.length).join(', ')
+}]);`)
+.sort(naturalSort)
+.value()
+)*/
+addInfFur(<contenttweaker:ore_phosphor>            , [<contenttweaker:nugget_phosphor> * 2 % 50]);
+addInfFur(<jaopca:item_clusteraluminium>           , [RE % 2, <thermalfoundation:material:196> % 33, <jaopca:item_nuggetaquamarine> * 64 % 50]);
+addInfFur(<jaopca:item_clusteramber>               , [RE % 2, <jaopca:item_nuggetamber> % 33, <thermalfoundation:material:16> * 41 % 50]);
+addInfFur(<jaopca:item_clusteramethyst>            , [RE % 2, <jaopca:item_nuggetamethyst> % 33, <jaopca:item_nuggetchargedcertusquartz> * 41 % 50]);
+addInfFur(<jaopca:item_clusterapatite>             , [RE % 2, <jaopca:item_nuggetapatite> % 33, <jaopca:item_nuggetmagnesium> * 27 % 50]);
+addInfFur(<jaopca:item_clusteraquamarine>          , [RE % 2, <jaopca:item_nuggetaquamarine> % 33, <thermalfoundation:material:17> * 41 % 50]);
+addInfFur(<jaopca:item_clusterardite>              , [RE % 2, <tconstruct:nuggets:1> % 33, <minecraft:gold_nugget> * 27 % 50]);
+addInfFur(<jaopca:item_clusterastralstarmetal>     , [RE % 2, <jaopca:item_nuggetastralstarmetal> % 33, <thermalfoundation:material:16> * 41 % 50]);
+addInfFur(<jaopca:item_clusterboron>               , [RE % 2, <jaopca:item_nuggetboron> % 33, <thaumcraft:nugget:9> * 61 % 50]);
+addInfFur(<jaopca:item_clustercertusquartz>        , [RE % 2, <jaopca:item_nuggetcertusquartz> % 33, <thermalfoundation:material:16> * 41 % 50]);
+addInfFur(<jaopca:item_clusterchargedcertusquartz> , [RE % 2, <jaopca:item_nuggetlapis> * 64 % 50, <jaopca:item_nuggetchargedcertusquartz> % 33]);
+addInfFur(<jaopca:item_clustercoal>                , [RE % 2, <thaumcraft:nugget:9> * 61 % 50]);
+addInfFur(<jaopca:item_clustercobalt>              , [RE % 2, <tconstruct:nuggets> % 33, <thermalfoundation:material:197> * 27 % 50]);
+addInfFur(<jaopca:item_clusterdiamond>             , [RE % 2, <thermalfoundation:material:16> % 33, <jaopca:item_nuggetmalachite> * 41 % 50]);
+addInfFur(<jaopca:item_clusterdilithium>           , [RE % 2, <jaopca:item_nuggetdilithium> % 33, <jaopca:item_nuggetdimensionalshard> * 61 % 50]);
+addInfFur(<jaopca:item_clusterdimensionalshard>    , [RE % 2, <jaopca:item_nuggetperidot> * 41 % 50, <jaopca:item_nuggetdimensionalshard> % 33]);
+addInfFur(<jaopca:item_clusterdraconium>           , [RE % 2, <draconicevolution:nugget> % 33, <jaopca:item_nuggetastralstarmetal> * 27 % 50]);
+addInfFur(<jaopca:item_clusteremerald>             , [RE % 2, <thermalfoundation:material:17> % 33, <jaopca:item_nuggetmalachite> * 41 % 50]);
+addInfFur(<jaopca:item_clusteriridium>             , [RE % 2, <mekanism:nugget:1> * 27 % 50, <thermalfoundation:material:199> % 33]);
+addInfFur(<jaopca:item_clusterlapis>               , [RE % 2, <jaopca:item_nuggetlapis> % 33, <jaopca:item_nuggetsapphire> * 41 % 50]);
+addInfFur(<jaopca:item_clusterlithium>             , [RE % 2, <jaopca:item_nuggetlithium> % 33, <jaopca:item_nuggetapatite> * 64 % 50]);
+addInfFur(<jaopca:item_clustermagnesium>           , [RE % 2, <jaopca:item_nuggetmagnesium> % 33, <thermalfoundation:material:192> * 27 % 50]);
+addInfFur(<jaopca:item_clustermalachite>           , [RE % 2, <jaopca:item_nuggetmalachite> % 33, <thermalfoundation:material:192> * 27 % 50]);
+addInfFur(<jaopca:item_clustermithril>             , [RE % 2, <thermalfoundation:material:200> % 33, <jaopca:item_nuggetastralstarmetal> * 27 % 50]);
+addInfFur(<jaopca:item_clusternickel>              , [RE % 2, <mekanism:nugget:1> * 27 % 50, <thermalfoundation:material:197> % 33]);
+addInfFur(<jaopca:item_clusterosmium>              , [RE % 2, <mekanism:nugget:1> % 33, <thermalfoundation:material:198> * 27 % 50]);
+addInfFur(<jaopca:item_clusterperidot>             , [RE % 2, <jaopca:item_nuggetperidot> % 33, <thermalfoundation:material:16> * 41 % 50]);
+addInfFur(<jaopca:item_clusterplatinum>            , [RE % 2, <thermalfoundation:material:198> % 33, <thermalfoundation:material:199> * 27 % 50]);
+addInfFur(<jaopca:item_clusterquartzblack>         , [RE % 2, <jaopca:item_nuggetquartzblack> % 33, <jaopca:item_nuggetaquamarine> * 64 % 50]);
+addInfFur(<jaopca:item_clusterredstone>            , [RE % 2, <jaopca:item_nuggetquartzblack> * 41 % 50]);
+addInfFur(<jaopca:item_clusterruby>                , [RE % 2, <jaopca:item_nuggetruby> % 33, <jaopca:item_nuggetmagnesium> * 27 % 50]);
+addInfFur(<jaopca:item_clustersapphire>            , [RE % 2, <jaopca:item_nuggetsapphire> % 33, <draconicevolution:nugget> * 27 % 50]);
+addInfFur(<jaopca:item_clustertanzanite>           , [RE % 2, <jaopca:item_nuggettanzanite> % 33, <thermalfoundation:material:16> * 41 % 50]);
+addInfFur(<jaopca:item_clusterthorium>             , [RE % 2, <jaopca:item_nuggetthorium> % 33, <jaopca:item_nuggetboron> * 27 % 50]);
+addInfFur(<jaopca:item_clustertitanium>            , [RE % 2, <libvulpes:productnugget:7> % 33, <jaopca:item_nuggetmagnesium> * 27 % 50]);
+addInfFur(<jaopca:item_clustertopaz>               , [RE % 2, <jaopca:item_nuggettopaz> % 33, <thaumcraft:nugget:9> * 61 % 50]);
+addInfFur(<jaopca:item_clusteruranium>             , [RE % 2, <immersiveengineering:metal:25> % 33, <jaopca:item_nuggetlithium> * 27 % 50]);
+addInfFur(<jaopca:item_dirtygemaluminium>          , [<jaopca:item_nuggetaquamarine> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemamber>              , [<thermalfoundation:material:16> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemamethyst>           , [<jaopca:item_nuggetchargedcertusquartz> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemapatite>            , [<jaopca:item_nuggetmagnesium> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemaquamarine>         , [<thermalfoundation:material:17> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemardite>             , [<minecraft:gold_nugget> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemastralstarmetal>    , [<thermalfoundation:material:16> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemboron>              , [<thaumcraft:nugget:9> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemcertusquartz>       , [<thermalfoundation:material:16> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemchargedcertusquartz>, [<jaopca:item_nuggetlapis> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemcoal>               , [<thaumcraft:nugget:9> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemcobalt>             , [<thermalfoundation:material:197> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemcopper>             , [<minecraft:gold_nugget> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemdiamond>            , [<jaopca:item_nuggetmalachite> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemdilithium>          , [<jaopca:item_nuggetdimensionalshard> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemdimensionalshard>   , [<jaopca:item_nuggetperidot> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemdraconium>          , [<jaopca:item_nuggetastralstarmetal> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygememerald>            , [<jaopca:item_nuggetmalachite> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemgold>               , [<thermalfoundation:material:196> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemiridium>            , [<mekanism:nugget:1> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemiron>               , [<minecraft:gold_nugget> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemlapis>              , [<jaopca:item_nuggetsapphire> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemlead>               , [<thermalfoundation:material:194> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemlithium>            , [<jaopca:item_nuggetapatite> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemmagnesium>          , [<thermalfoundation:material:192> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemmalachite>          , [<thermalfoundation:material:192> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemmithril>            , [<jaopca:item_nuggetastralstarmetal> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemnickel>             , [<mekanism:nugget:1> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemosmium>             , [<thermalfoundation:material:198> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemperidot>            , [<thermalfoundation:material:16> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemplatinum>           , [<thermalfoundation:material:199> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemquartz>             , [<thermalfoundation:material:16> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemquartzblack>        , [<jaopca:item_nuggetaquamarine> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemredstone>           , [<jaopca:item_nuggetquartzblack> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemruby>               , [<jaopca:item_nuggetmagnesium> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemsapphire>           , [<draconicevolution:nugget> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemsilver>             , [<minecraft:gold_nugget> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemtanzanite>          , [<thermalfoundation:material:16> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemthorium>            , [<jaopca:item_nuggetboron> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemtin>                , [<thermalfoundation:material:195> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemtitanium>           , [<jaopca:item_nuggetmagnesium> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemtopaz>              , [<thaumcraft:nugget:9> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemuranium>            , [<jaopca:item_nuggetlithium> * 64 % 100]);
+addInfFur(<minecraft:beef>                         , [<thaumcraft:chunk> % 33]);
+addInfFur(<minecraft:chicken>                      , [<thaumcraft:chunk:1> % 33]);
+addInfFur(<minecraft:fish:*>                       , [<thaumcraft:chunk:3> % 33]);
+addInfFur(<minecraft:mutton>                       , [<thaumcraft:chunk:5> % 33]);
+addInfFur(<minecraft:porkchop>                     , [<thaumcraft:chunk:2> % 33]);
+addInfFur(<minecraft:rabbit>                       , [<thaumcraft:chunk:4> % 33]);
+addInfFur(<ore:oreAluminium>                       , [RE % 1, <thermalfoundation:material:196> % 33]);
+addInfFur(<ore:oreAmber>                           , [RE % 1, <jaopca:item_nuggetamber> % 33]);
+addInfFur(<ore:oreAmethyst>                        , [RE % 1, <jaopca:item_nuggetamethyst> % 33]);
+addInfFur(<ore:oreApatite>                         , [RE % 1, <jaopca:item_nuggetapatite> % 33]);
+addInfFur(<ore:oreAquamarine>                      , [RE % 1, <jaopca:item_nuggetaquamarine> % 33]);
+addInfFur(<ore:oreArdite>                          , [RE % 1, <tconstruct:nuggets:1> % 33]);
+addInfFur(<ore:oreAstralStarmetal>                 , [RE % 1, <jaopca:item_nuggetastralstarmetal> % 33]);
+addInfFur(<ore:oreBoron>                           , [RE % 1, <jaopca:item_nuggetboron> % 33]);
+addInfFur(<ore:oreCertusQuartz>                    , [RE % 1, <jaopca:item_nuggetcertusquartz> % 33]);
+addInfFur(<ore:oreChargedCertusQuartz>             , [RE % 1, <jaopca:item_nuggetchargedcertusquartz> % 33]);
+addInfFur(<ore:oreCinnabar>                        , [RE % 2, <thaumcraft:nugget:5> % 33]);
+addInfFur(<ore:oreCoal>                            , [RE % 1]);
+addInfFur(<ore:oreCobalt>                          , [RE % 1, <tconstruct:nuggets> % 33]);
+addInfFur(<ore:oreCopper>                          , [RE % 1, <thermalfoundation:material:192> % 32]);
+addInfFur(<ore:oreDiamond>                         , [RE % 2]);
+addInfFur(<ore:oreDilithium>                       , [RE % 1, <jaopca:item_nuggetdilithium> % 33]);
+addInfFur(<ore:oreDimensionalShard>                , [RE % 1, <jaopca:item_nuggetdimensionalshard> % 33]);
+addInfFur(<ore:oreDraconium>                       , [RE % 1, <draconicevolution:nugget> % 33]);
+addInfFur(<ore:oreEmerald>                         , [RE % 2]);
+addInfFur(<ore:oreGold>                            , [RE % 2, <minecraft:gold_nugget> % 33]);
+addInfFur(<ore:oreIridium>                         , [RE % 1, <thermalfoundation:material:199> % 33]);
+addInfFur(<ore:oreIron>                            , [RE % 1, <minecraft:iron_nugget> % 33]);
+addInfFur(<ore:oreLapis>                           , [RE % 1]);
+addInfFur(<ore:oreLead>                            , [RE % 1, <thermalfoundation:material:195> % 32]);
+addInfFur(<ore:oreLithium>                         , [RE % 1, <jaopca:item_nuggetlithium> % 33]);
+addInfFur(<ore:oreMagnesium>                       , [RE % 1, <jaopca:item_nuggetmagnesium> % 33]);
+addInfFur(<ore:oreMalachite>                       , [RE % 1, <jaopca:item_nuggetmalachite> % 33]);
+addInfFur(<ore:oreMithril>                         , [RE % 1, <thermalfoundation:material:200> % 33]);
+addInfFur(<ore:oreNickel>                          , [RE % 1, <thermalfoundation:material:197> % 33]);
+addInfFur(<ore:oreOsmium>                          , [RE % 1, <mekanism:nugget:1> % 33]);
+addInfFur(<ore:orePeridot>                         , [RE % 1, <jaopca:item_nuggetperidot> % 33]);
+addInfFur(<ore:orePlatinum>                        , [RE % 1, <thermalfoundation:material:198> % 33]);
+addInfFur(<ore:oreQuartz>                          , [RE % 1, <thaumcraft:nugget:9> % 33]);
+addInfFur(<ore:oreQuartzBlack>                     , [RE % 1, <jaopca:item_nuggetquartzblack> % 33]);
+addInfFur(<ore:oreRedstone>                        , [RE % 1]);
+addInfFur(<ore:oreRuby>                            , [RE % 1, <jaopca:item_nuggetruby> % 33]);
+addInfFur(<ore:oreSapphire>                        , [RE % 1, <jaopca:item_nuggetsapphire> % 33]);
+addInfFur(<ore:oreSilver>                          , [RE % 2, <thermalfoundation:material:194> % 32]);
+addInfFur(<ore:oreTanzanite>                       , [RE % 1, <jaopca:item_nuggettanzanite> % 33]);
+addInfFur(<ore:oreThorium>                         , [RE % 1, <jaopca:item_nuggetthorium> % 33]);
+addInfFur(<ore:oreTin>                             , [RE % 1, <thermalfoundation:material:193> % 32]);
+addInfFur(<ore:oreTitanium>                        , [RE % 1, <libvulpes:productnugget:7> % 33]);
+addInfFur(<ore:oreTopaz>                           , [RE % 1, <jaopca:item_nuggettopaz> % 33]);
+addInfFur(<ore:oreUranium>                         , [RE % 1, <immersiveengineering:metal:25> % 33]);
+addInfFur(<rats:rat_nugget_ore:1>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 7 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 7 as short}}), [<thermalfoundation:material:16> * 20 % 50]);
+addInfFur(<rats:rat_nugget_ore:2>.withTag({OreItem: {id: "forestry:resources", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "forestry:apatite", Count: 1 as byte, Damage: 0 as short}}), [<jaopca:item_nuggetmagnesium> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:3>.withTag({OreItem: {id: "astralsorcery:blockcustomsandore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "astralsorcery:itemcraftingcomponent", Count: 3 as byte, Damage: 0 as short}}), [<thermalfoundation:material:17> * 20 % 50]);
+addInfFur(<rats:rat_nugget_ore:4>.withTag({OreItem: {id: "tconstruct:ore", Count: 1 as byte, Damage: 1 as short}, IngotItem: {id: "tconstruct:ingots", Count: 1 as byte, Damage: 1 as short}}), [<minecraft:gold_nugget> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:6>.withTag({OreItem: {id: "actuallyadditions:block_misc", Count: 1 as byte, Damage: 3 as short}, IngotItem: {id: "actuallyadditions:item_misc", Count: 1 as byte, Damage: 5 as short}}), [<jaopca:item_nuggetaquamarine> * 40 % 50]);
+addInfFur(<rats:rat_nugget_ore:7>.withTag({OreItem: {id: "nuclearcraft:ore", Count: 1 as byte, Damage: 5 as short}, IngotItem: {id: "nuclearcraft:ingot", Count: 1 as byte, Damage: 5 as short}}), [<thaumcraft:nugget:9> * 30 % 50]);
+addInfFur(<rats:rat_nugget_ore:9>.withTag({OreItem: {id: "minecraft:coal_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "minecraft:coal", Count: 1 as byte, Damage: 0 as short}}), [<thaumcraft:nugget:9> * 30 % 50]);
+addInfFur(<rats:rat_nugget_ore:10>.withTag({OreItem: {id: "tconstruct:ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "tconstruct:ingots", Count: 1 as byte, Damage: 0 as short}}), [<thermalfoundation:material:197> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:12>.withTag({OreItem: {id: "minecraft:diamond_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "minecraft:diamond", Count: 1 as byte, Damage: 0 as short}}), [<jaopca:item_nuggetmalachite> * 20 % 50]);
+addInfFur(<rats:rat_nugget_ore:13>.withTag({OreItem: {id: "draconicevolution:draconium_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "draconicevolution:draconium_ingot", Count: 1 as byte, Damage: 0 as short}}), [<jaopca:item_nuggetastralstarmetal> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:14>.withTag({OreItem: {id: "minecraft:emerald_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "minecraft:emerald", Count: 1 as byte, Damage: 0 as short}}), [<jaopca:item_nuggetmalachite> * 20 % 50]);
+addInfFur(<rats:rat_nugget_ore:45>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 0 as short}}), [<jaopca:item_nuggetchargedcertusquartz> * 20 % 50]);
+addInfFur(<rats:rat_nugget_ore:46>.withTag({OreItem: {id: "minecraft:gold_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "minecraft:gold_ingot", Count: 1 as byte, Damage: 0 as short}}), [<thermalfoundation:material:196> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:47>.withTag({OreItem: {id: "thermalfoundation:ore", Count: 1 as byte, Damage: 7 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1 as byte, Damage: 135 as short}}), [<mekanism:nugget:1> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:48>.withTag({OreItem: {id: "minecraft:iron_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "minecraft:iron_ingot", Count: 1 as byte, Damage: 0 as short}}), [<minecraft:gold_nugget> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:49>.withTag({OreItem: {id: "minecraft:lapis_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "minecraft:dye", Count: 1 as byte, Damage: 4 as short}}), [<jaopca:item_nuggetsapphire> * 20 % 50]);
+addInfFur(<rats:rat_nugget_ore:51>.withTag({OreItem: {id: "nuclearcraft:ore", Count: 1 as byte, Damage: 6 as short}, IngotItem: {id: "nuclearcraft:ingot", Count: 1 as byte, Damage: 6 as short}}), [<jaopca:item_nuggetapatite> * 64 % 50]);
+addInfFur(<rats:rat_nugget_ore:52>.withTag({OreItem: {id: "nuclearcraft:ore", Count: 1 as byte, Damage: 7 as short}, IngotItem: {id: "nuclearcraft:ingot", Count: 1 as byte, Damage: 7 as short}}), [<thermalfoundation:material:192> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:53>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 5 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 5 as short}}), [<thermalfoundation:material:192> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:54>.withTag({OreItem: {id: "thermalfoundation:ore", Count: 1 as byte, Damage: 8 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1 as byte, Damage: 136 as short}}), [<jaopca:item_nuggetastralstarmetal> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:77>.withTag({OreItem: {id: "minecraft:quartz_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "minecraft:quartz", Count: 1 as byte, Damage: 0 as short}}), [<thermalfoundation:material:16> * 20 % 50]);
+addInfFur(<rats:rat_nugget_ore:86>.withTag({OreItem: {id: "thermalfoundation:ore", Count: 1 as byte, Damage: 5 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1 as byte, Damage: 133 as short}}), [<mekanism:nugget:1> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:87>.withTag({OreItem: {id: "mekanism:oreblock", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "mekanism:ingot", Count: 1 as byte, Damage: 1 as short}}), [<thermalfoundation:material:198> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:88>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 2 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 2 as short}}), [<thermalfoundation:material:16> * 20 % 50]);
+addInfFur(<rats:rat_nugget_ore:90>.withTag({OreItem: {id: "thermalfoundation:ore", Count: 1 as byte, Damage: 6 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1 as byte, Damage: 134 as short}}), [<thermalfoundation:material:199> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:92>.withTag({OreItem: {id: "minecraft:redstone_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "minecraft:redstone", Count: 1 as byte, Damage: 0 as short}}), [<jaopca:item_nuggetquartzblack> * 20 % 50]);
+addInfFur(<rats:rat_nugget_ore:93>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 1 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 1 as short}}), [<jaopca:item_nuggetmagnesium> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:94>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 6 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 6 as short}}), [<draconicevolution:nugget> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:96>.withTag({OreItem: {id: "astralsorcery:blockcustomore", Count: 1 as byte, Damage: 1 as short}, IngotItem: {id: "astralsorcery:itemcraftingcomponent", Count: 1 as byte, Damage: 1 as short}}), [<thermalfoundation:material:16> * 20 % 50]);
+addInfFur(<rats:rat_nugget_ore:97>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 4 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 4 as short}}), [<thermalfoundation:material:16> * 20 % 50]);
+addInfFur(<rats:rat_nugget_ore:98>.withTag({OreItem: {id: "nuclearcraft:ore", Count: 1 as byte, Damage: 3 as short}, IngotItem: {id: "nuclearcraft:ingot", Count: 1 as byte, Damage: 3 as short}}), [<jaopca:item_nuggetboron> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:100>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 3 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 3 as short}}), [<thaumcraft:nugget:9> * 30 % 50]);
+addInfFur(<rats:rat_nugget_ore:102>.withTag({OreItem: {id: "immersiveengineering:ore", Count: 1 as byte, Damage: 5 as short}, IngotItem: {id: "immersiveengineering:metal", Count: 1 as byte, Damage: 5 as short}}), [<jaopca:item_nuggetlithium> * 13 % 50]);
+addInfFur(<thaumcraft:cluster:*>                   , [RE % 2]);
+addInfFur(<thaumcraft:cluster:1>                   , [<minecraft:gold_nugget> % 33, <thermalfoundation:material:196> * 27 % 50]);
+addInfFur(<thaumcraft:cluster:2>                   , [<thaumcraft:nugget:1> % 33, <minecraft:gold_nugget> * 27 % 50, <thermalfoundation:material:192> * 2 % 32]);
+addInfFur(<thaumcraft:cluster:3>                   , [<thaumcraft:nugget:2> % 33, <thermalfoundation:material:193> * 2 % 32, <thermalfoundation:material:195> * 27 % 50]);
+addInfFur(<thaumcraft:cluster:4>                   , [<thaumcraft:nugget:3> % 33, <minecraft:gold_nugget> * 27 % 50, <thermalfoundation:material:194> * 2 % 32]);
+addInfFur(<thaumcraft:cluster:5>                   , [<thaumcraft:nugget:4> % 33, <thermalfoundation:material:195> * 2 % 32, <thermalfoundation:material:194> * 27 % 50]);
+addInfFur(<thaumcraft:cluster:6>                   , [<thaumcraft:nugget:5> % 33]);
+addInfFur(<thaumcraft:cluster:7>                   , [<thaumcraft:nugget:9> % 33, <thermalfoundation:material:16> * 41 % 50]);
+addInfFur(<thaumcraft:cluster>                     , [<minecraft:iron_nugget> % 33, <minecraft:gold_nugget> * 27 % 50]);
+addInfFur(<thaumicwonders:eldritch_cluster:*>      , [RE % 2, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) % 10]);
+addInfFur(<thaumicwonders:eldritch_cluster:1>      , [<minecraft:gold_nugget> % 33]);
+addInfFur(<thaumicwonders:eldritch_cluster:2>      , [<thaumcraft:nugget:1> % 33, <thermalfoundation:material:192> * 4 % 32]);
+addInfFur(<thaumicwonders:eldritch_cluster:3>      , [<thaumcraft:nugget:2> % 33, <thermalfoundation:material:193> * 4 % 32]);
+addInfFur(<thaumicwonders:eldritch_cluster:4>      , [<thaumcraft:nugget:3> % 33, <thermalfoundation:material:194> * 4 % 32]);
+addInfFur(<thaumicwonders:eldritch_cluster:5>      , [<thaumcraft:nugget:4> % 33, <thermalfoundation:material:195> * 4 % 32]);
+addInfFur(<thaumicwonders:eldritch_cluster:6>      , [<thaumcraft:nugget:5> % 33]);
+addInfFur(<thaumicwonders:eldritch_cluster:7>      , [<thaumcraft:nugget:9> % 33]);
+addInfFur(<thaumicwonders:eldritch_cluster:8>      , [<thaumcraft:nugget:7> % 33]);
+addInfFur(<thaumicwonders:eldritch_cluster>        , [<minecraft:iron_nugget> % 33]);
+/**/
 
 // -----------------------------------------------------------------------
 // -----------------------------------------------------------------------
@@ -251,7 +461,7 @@ x = <assembly:cc_printer>;
 x.addJEICatalyst(<computercraft:peripheral:3>);
 x.setJEIDurationSlot(2,0,"duration", getVisGauge(1,8));
 addInsOuts(x, [[0,0],[1,0]], [[3,0]]);
-add(x, {[<minecraft:paper>, <ore:dye>] : [<computercraft:printout>]});
+add(x, {[<minecraft:paper>, <minecraft:dye:*>] : [<computercraft:printout>]});
 
 // -----------------------------------------------------------------------
 // -----------------------------------------------------------------------
@@ -400,8 +610,7 @@ function addHeatExch(fluid_in as ILiquidStack, heat_in as int, fluid_out as ILiq
   <assembly:heat_exchanger>.addJEIRecipe(r);
 }
 
-/*Inject_js(
-(()=>{
+/*Inject_js{
 const cfg = [...
   loadText('config/AdvGenerators/overrides/exchanger.cfg')
   .matchAll(/^\s*exchanger\s*:\s*(.*)$/gm)
@@ -409,11 +618,12 @@ const cfg = [...
 const bl = (id)=>{const s=id.split(':'); return s.length>=2?id.replace(/@(\d+)/,':$1'):'minecraft:'+s[0]}
 const B = (block,amount)=>`<${bl(block)}>${parseFloat(amount)>1?' * ' + amount : ''}`
 const H = (h)=>Math.round(h)
-return cfg
+return _(cfg
 .map(g=>g.match(
   /fluid:(\w+) (\d+) mB(?: \+ (\d+) HU)? =>(?: fluid:(\w+) (\d+) ?mB)?(?: [BI]:(\w+(?::\w+)?(?:@\d+)?) (\d+\.\d+))?(?: \+ (\d+) HU)?/
 )?.slice(1))
-.filter(m=>m)
+.filter(m=>m))
+.sortBy(o=>parseInt(o[7]) * 1000 + parseInt(o[4])).value()
 .map(([
   fluid_in, fluid_in_amount, heat_in, 
   fluid_out, fluid_out_amount, item_out, item_out_amount, heat_out
@@ -424,8 +634,8 @@ return cfg
   `${item_out ? B(item_out, item_out_amount) : 'null'}, ` +
   `${H(heat_out ?? 0)});`
 )
-})()
-)*/
+}*/
+addHeatExch(<fluid:ic2hot_coolant>, 0, <fluid:ic2coolant>, null, 40);
 addHeatExch(<fluid:lava>, 0, null, <minecraft:obsidian>, 30);
 addHeatExch(<fluid:ic2pahoehoe_lava>, 0, null, <advancedrocketry:basalt>, 40);
 addHeatExch(<fluid:pyrotheum>, 0, null, <chisel:basalt2:7>, 60);
@@ -435,7 +645,6 @@ addHeatExch(<fluid:water> * 5, 3, <fluid:steam> * 15, null, 0);
 addHeatExch(<fluid:distwater>, 200, <fluid:steam> * 300, null, 0);
 addHeatExch(<fluid:ic2hot_water>, 120, <fluid:steam> * 300, null, 0);
 addHeatExch(<fluid:ic2distilled_water>, 160, <fluid:steam> * 400, null, 0);
-addHeatExch(<fluid:ic2hot_coolant>, 0, <fluid:ic2coolant>, null, 40);
 /**/
 
 
@@ -849,41 +1058,43 @@ const result = [...oreSet]
   .filter(([ore])=>isODExist(ore))
   .sort(([,a],[,b])=>b-a)
 
-return result.map(([ore,weight])=>
-    `  ${$('ore', ore, 0, weight / result[0][1] * 64, null, '.firstItem')},`
-  )
+return result.map(([ore,weight])=>{
+  const tm = getByOredict_first(ore)
+  const amount = (weight / result[0][1] * 64 + 1) | 0
+  return `  ${tm.commandString}${amount > 1 ? ' * '+amount : ''},`
+})
 
 }*/
-  <ore:oreIron>.firstItem * 64,
-  <ore:oreTin>.firstItem * 63,
-  <ore:oreCoal>.firstItem * 52,
-  <ore:oreSilver>.firstItem * 30,
-  <ore:oreNickel>.firstItem * 30,
-  <ore:oreCopper>.firstItem * 28,
-  <ore:oreGold>.firstItem * 27,
-  <ore:oreOsmium>.firstItem * 23,
-  <ore:oreLead>.firstItem * 22,
-  <ore:oreAluminum>.firstItem * 21,
-  <ore:blockClay>.firstItem * 17,
-  <ore:oreRedstone>.firstItem * 15,
-  <ore:dustSulfur>.firstItem * 14,
-  <ore:sand>.firstItem * 10,
-  <ore:oreLapis>.firstItem * 7,
-  <ore:oreThorium>.firstItem * 7,
-  <ore:oreBoron>.firstItem * 7,
-  <ore:oreLithium>.firstItem * 7,
-  <ore:oreMagnesium>.firstItem * 7,
-  <ore:oreQuartzBlack>.firstItem * 7,
-  <ore:gravel>.firstItem * 7,
-  <ore:oreUranium>.firstItem * 5,
-  <ore:oreQuartz>.firstItem * 3,
-  <ore:orePlatinum>.firstItem * 3,
-  <ore:oreCertusQuartz>.firstItem * 2,
-  <ore:oreCinnabar>.firstItem * 2,
-  <ore:oreTitanium>.firstItem,
-  <ore:oreRuby>.firstItem,
-  <ore:oreDiamond>.firstItem,
-  <ore:oreEmerald>.firstItem,
+  <minecraft:iron_ore> * 65,
+  <thermalfoundation:ore:1> * 64,
+  <minecraft:coal_ore> * 53,
+  <thermalfoundation:ore:2> * 31,
+  <thermalfoundation:ore:5> * 31,
+  <thermalfoundation:ore> * 29,
+  <minecraft:gold_ore> * 28,
+  <mekanism:oreblock> * 24,
+  <thermalfoundation:ore:3> * 23,
+  <thermalfoundation:ore:4> * 22,
+  <minecraft:clay> * 18,
+  <minecraft:redstone_ore> * 16,
+  <thermalfoundation:material:771> * 15,
+  <minecraft:sand> * 11,
+  <minecraft:lapis_ore> * 8,
+  <nuclearcraft:ore:3> * 8,
+  <nuclearcraft:ore:5> * 8,
+  <nuclearcraft:ore:6> * 8,
+  <nuclearcraft:ore:7> * 8,
+  <actuallyadditions:block_misc:3> * 8,
+  <minecraft:gravel> * 8,
+  <immersiveengineering:ore:5> * 6,
+  <minecraft:quartz_ore> * 4,
+  <thermalfoundation:ore:6> * 4,
+  <appliedenergistics2:charged_quartz_ore> * 3,
+  <thaumcraft:ore_cinnabar> * 3,
+  <libvulpes:ore0:8> * 2,
+  <biomesoplenty:gem_ore:1> * 2,
+  <minecraft:diamond_ore>,
+  <minecraft:emerald_ore>,
 /**/
 ] as IItemStack[];
 
@@ -1033,7 +1244,6 @@ add_barrel_milking(Soul("endreborn:watcher")             , <liquid:obsidian>    
 add_barrel_milking(Soul("betteranimalsplus:hirschgeist") , <liquid:platinum>           * 10  , 20);
 add_barrel_milking(Soul("industrialforegoing:pink_slime"), <liquid:if.pink_slime>      * 10  , 20);
 add_barrel_milking(Soul("rats:neo_ratlantean")           , <liquid:crystal_matrix>     * 1   , 20);
-
 /**/
 
 
@@ -1047,4 +1257,30 @@ x.setJEIDurationSlot(3,0,"duration1", SlotVisual.arrowRight());
 
 function add_entity_kill_entity(entity1 as IIngredient, entity2 as IIngredient, output as IItemStack) as void {
   add(<assembly:entity_kill_entity>, {[entity1, entity2] as IIngredient[] : [output]});
+}
+
+
+// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+x = <assembly:special_craft>;
+x.addJEICatalyst(<minecraft:crafting_table>);
+x.setJEIDurationSlot(3,1,"duration", SlotVisual.arrowRight());
+addInsOuts(x, [
+  [0,0],[1,0],[2,0],
+  [0,1],[1,1],[2,1],
+  [0,2],[1,2],[2,2],
+], [[4,1],[5,1]]);
+
+function add_special_craft(output as IItemStack, input2d as IIngredient[][], condition as string) as void {
+  val assRec = AssemblyRecipe.create(function(container) {
+    container.addItemOutput("output0", output);
+    container.addItemOutput("output1", <betterquesting:placeholder>.withDisplayName("§e§lCondition").withLore(["§e" ~ condition]));
+  });
+  for y, input1d in input2d {
+    for x, ingr in input1d {
+      if(isNull(ingr)) continue;
+      assRec.requireItem("input"~(y*3+x), ingr);
+    }
+  }
+  <assembly:special_craft>.addJEIRecipe(assRec);
 }

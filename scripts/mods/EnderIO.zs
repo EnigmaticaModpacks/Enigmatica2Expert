@@ -242,8 +242,8 @@ recipes.addShaped(<enderio:block_niard>, [
 	[<ore:ingotFakeIron>, <ore:barsIron>, <ore:ingotFakeIron>]]);
 
 # Compat of nano glowstone
-scripts.process.crush(<enderio:item_material:76>, <enderio:block_holy_fog>, "except: sagMill", 
-	[<enderio:block_holy_fog>, <minecraft:clay_ball>, <minecraft:glowstone_dust>], [0.6f, 0.1f, 0.1f]);
+scripts.process.crush(<enderio:item_material:76>, <enderio:block_holier_fog> * 2, "only: Macerator AACrusher AEGrinder crushingBlock",
+	[<enderio:block_holier_fog> * 2, <minecraft:clay_ball>, <minecraft:glowstone_dust>], [0.6f, 0.1f, 0.1f]);
 
 # Compunent for nano-glowstone compat
 scripts.process.alloy([<minecraft:glowstone_dust>, <minecraft:clay_ball>], <enderio:item_material:76> * 2, "except: alloySmelter");
@@ -286,6 +286,8 @@ solution([<ore:dustBedrock>, fake_iron_variations      			        ], [<liquid:ir
 solution([<ore:dustBedrock>, <ore:dustEndstone>,<ore:nuggetTungsten>], [<liquid:dark_steel>*144], [<liquid:end_steel>         *144], [0.5, 1, 1, 5500], "only: highoven");
 solution([<ore:dustBedrock>, <ore:dustRedstone>                     ], [<liquid:iron>      *144], [<liquid:conductive_iron>   *144], [0.5, 1,    4200], "only: highoven");
 
+# Fake iron -> Steel
+scripts.wrap.mekanism.infuser.addRecipe("CARBON", 10, <enderio:item_alloy_ingot:9>, <mekanism:enrichediron>);
 
 # Oxidiser
 val ox as IIngredient = <ore:itemInfinityGoop>; # Infinity reagent
@@ -458,6 +460,10 @@ craft.remake(<enderio:item_material:14>, ["pretty",
 utils.rh(<enderio:item_material:81>, false);
 utils.rh(<enderio:block_death_pouch>, false);
 
+# Remove unused Cobalt and Ardite dust
+utils.rh(<enderio:item_material:30>);
+utils.rh(<enderio:item_material:31>);
+
 # [Experience Rod] from [Pulsating Crystal][+1]
 craft.remake(<enderio:item_xp_transfer>, ["pretty",
   "    *",
@@ -518,7 +524,7 @@ mods.appliedenergistics2.Grinder.removeRecipe(<thermalfoundation:material:895>);
 scripts.process.crush(<ore:enderpearl>, <appliedenergistics2:material:46>, "Except: Pulverizer PulseCentrifuge", null, null);
 
 # [block_fused_quartz] from [Block_of_Quartz][+2]
-craft.shapeless(<enderio:block_fused_quartz>, "AB", {
+craft.shapeless(<enderio:block_fused_quartz> * 9, "ABBBBBBBB", {
   A: <contenttweaker:empowered_phosphor>,
   B: <ore:blockQuartz>,
 });
@@ -621,3 +627,14 @@ scripts.processUtils.avdRockXmlRecipe("Crystallizer", [
 	<enderio:item_material:4> * 64,
 	<enderio:item_material:4> * 56,
 ], null);
+
+# Cheaper to let players use it earlier
+# [Totemic Capacitor] from [MV Capacitor][+2]
+craft.remake(<enderio:item_capacitor_totemic>, ["pretty",
+  "  T  ",
+  "▲ M ▲",
+  "  ▲  "], {
+  "T": <minecraft:totem_of_undying>,           # Totem of Undying
+  "▲": <ore:dustBedrock>,                      # Grains of Infinity
+  "M": <immersiveengineering:metal_device0:1>, # MV Capacitor
+});

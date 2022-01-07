@@ -67,6 +67,7 @@ createBlockStone("compressed_skystone", 6, <blockmaterial:rock>);
 createBlockStone("compressed_andesite", 4, <blockmaterial:rock>);
 createBlockStone("compressed_diorite" , 4, <blockmaterial:rock>);
 createBlockStone("compressed_granite" , 4, <blockmaterial:rock>);
+createBlockStone("compressed_garbage_pile" , 4, <blockmaterial:rock>);
 
 createBlockStone("compressed_crushed_skystone", 5, <blockmaterial:rock>);
 createBlockStone("compressed_crushed_andesite", 3, <blockmaterial:rock>);

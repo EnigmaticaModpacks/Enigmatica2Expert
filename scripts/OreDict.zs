@@ -605,3 +605,4 @@ addItems(<ore:pebble>, [
 add(<ore:orePhosphor>, <contenttweaker:ore_phosphor>);
 add(<ore:nuggetPhosphor>, <contenttweaker:nugget_phosphor>);
 add(<ore:listAllwater>, <littletiles:lttransparentcoloredblock:5>);
+add(<ore:oreEnderBiomeEssence>, <biomesoplenty:biome_block>);

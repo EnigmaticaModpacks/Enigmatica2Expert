@@ -503,7 +503,7 @@ craft.make(<contenttweaker:conglomerate_of_life> * 4, ["pretty",
   "D C D"], {
   "▲": <iceandfire:pixie_dust>,             # Pixie Dust
   "B": <randomthings:rezstone>,             # Blood Stone
-  "S": anyLambIngredient, # Soul Vial
+  "S": anyLambIngredient.giveBack(<enderio:item_soul_vial>), # Soul Vial
   "C": <cyclicmagic:crystallized_obsidian>, # Crystallized Obsidian
   "D": <iceandfire:dragon_meal>             # Dragon Meal
 });
@@ -618,3 +618,7 @@ scripts.wrap.tconstruct.Casting.addBasinRecipe(<opencomputers:case1>      , null
 
 # Additional bonus
 scripts.loot.entity_kill_entity.add("minecraft:slime", "minecraft:wolf", <enderio:item_alloy_nugget:5>);
+
+# Other silver occurances
+mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:gold_ore>);
+scripts.process.crush(<minecraft:gold_ore>, <thermalfoundation:material:1>, "only: AEGrinder", [<contenttweaker:dust_tiny_silver>], [0.9f]);

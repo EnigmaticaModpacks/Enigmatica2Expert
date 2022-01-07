@@ -15,14 +15,14 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded botania
-// Uses of this mod: 11
+// Uses of this mod: 12
 
 
 //####################################################
-// Uses of this class: 11
+// Uses of this class: 12
 zenClass Class_PureDaisy { zenConstructor() {}
 
-	// Uses of this method: 11
+	// Uses of this method: 12
 	function addRecipe(blockInput as IIngredient, blockOutput as IItemStack) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.botania.PureDaisy.addRecipe'~
 			serialize.args([serialize.IIngredient(blockInput), serialize.IItemStack(blockOutput)]));

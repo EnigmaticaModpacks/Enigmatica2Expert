@@ -138,7 +138,7 @@ craft.remake(<twilightforest:twilight_sapling:4>, ["pretty",
 });
 
 # Twilight worm
-recipes.addShaped("twilightforest_moonworm", <twilightforest:moonworm>, [
+recipes.addShaped("twilightforest_moonworm", <twilightforest:moonworm> * 10, [
 	[<ore:egg>, <tconstruct:slime_channel>, <ore:egg>], 
 	[<tconstruct:slime_channel>, null, null], 
 	[<ore:egg>, <tconstruct:slime_channel>, <exnihilocreatio:item_material:2>]

@@ -189,8 +189,8 @@ function AR_inputLiquids(inputLiquids as ILiquidStack[]) as string {
 
 function avdRockXmlRecipeEx(filename as string, 
   inputItems as IIngredient[], inputLiquids as ILiquidStack[],
-  outputItems as IItemStack[], outputLiquids as ILiquidStack[],
-  options as IData) as void {
+  outputItems as IItemStack[], outputLiquids as ILiquidStack[] = null,
+  options as IData = null) as void {
   if(!utils.DEBUG) return;
   val dOpt = D(options);
   

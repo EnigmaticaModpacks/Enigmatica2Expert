@@ -441,3 +441,10 @@ craft.remake(<tconstruct:brownstone:1> * 64, ["pretty",
   "s": <ore:sandstone>,    # Sandstone
   "♥": <ore:dustRedstone>, # Redstone
 });
+
+
+# [Enchanted Book] from [Excavate Modifier]
+recipes.addShapeless(<minecraft:enchanted_book>.withTag({StoredEnchantments:
+	<enchantment:oeintegration:oreexcavation>.makeEnchantment(1).makeTag().ench}),
+	[<oeintegration:excavatemodifier>]
+);

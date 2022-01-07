@@ -8,6 +8,7 @@ It should not exist in release version.
 #priority 3999
 #loader crafttweaker reloadableevents
 
+import crafttweaker.item.IItemStack;
 import mods.ctintegration.data.DataUtil;
 import mods.ctintegration.util.RawLogger.logRaw as logRaw;
 import crafttweaker.data.IData;
@@ -114,8 +115,41 @@ events.onPlayerLoggedIn(function(e as crafttweaker.event.PlayerLoggedInEvent){
 });
 
 
+function giveChest(player as IPlayer, items as IItemStack[]) as void {
+  var tag = {
+    BCTileData: {
+      Items: []
+    },
+  } as IData;
+  for i, item in items {
+    tag = tag + {BCTileData: {Items: [item as IData + {Slot: i as short} as IData]}} as IData;
+  }
+  player.give(<draconicevolution:draconium_chest>.withTag(tag));
+}
 
-events.onPlayerInteractBlock(function(e as crafttweaker.event.PlayerInteractBlockEvent){
-  if(e.player.world.isRemote()) return;
-  // if(!isNull(e.player.currentItem)) return;
-});
+// events.onPlayerInteractBlock(function(e as crafttweaker.event.PlayerInteractBlockEvent){
+//   if(e.player.world.isRemote()) return;
+//   if(isNull(e.player.currentItem) || !(<minecraft:stick> has e.player.currentItem)) return;
+
+  // var items = [] as IItemStack[];
+  // for i,block in game.blocks {
+  //   val ll = block.lightLevel;
+  //   if(ll <= 0) continue;
+  //   utils.log(ll, block.id);
+
+  //   if(ll == 13) {
+  //     val item = itemUtils.getItem(block.id);
+  //     if(!isNull(item)) items += item;
+  //   }
+  // }
+  // giveChest(e.player, items);
+// });
+
+
+// Every Furnace recipe before any changes
+print('##################################################');
+print('#         Unchanged furnace recipes dump         #');
+for r in furnace.all {
+  print(r.commandString);
+}
+print('##################################################');

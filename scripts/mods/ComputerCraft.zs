@@ -1,5 +1,7 @@
 #modloaded computercraft
 
+<computercraft:printout>.maxStackSize = 64;
+
 	utils.rh(<computercraft:turtle:1>);
 	utils.rh(<computercraft:turtle_advanced>.withTag({leftUpgrade: 5 as short}));
 
@@ -45,3 +47,14 @@ remakeEx(<plethora:module:1>, [
 mods.jei.JEI.addItem(<opencomputers:print>);
 mods.jei.JEI.addItem(<opencomputers:misc>);
 mods.jei.JEI.addItem(<opencomputers:robot>);
+
+# Use Fake Iron recipe
+# [Turtle] from [Computer][+2]
+craft.remake(<computercraft:turtle_expanded>, ["pretty",
+  "▬ ▬ ▬",
+  "▬ C ▬",
+  "▬ c ▬"], {
+  "▬": <ore:ingotFakeIron>,      # Iron Alloy Ingot
+  "C": <computercraft:computer>, # Computer
+  "c": <ore:chest>,              # Oak Chest
+});

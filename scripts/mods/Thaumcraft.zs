@@ -1,6 +1,10 @@
-import crafttweaker.item.IItemStack as IItemStack;
-import crafttweaker.item.IIngredient as IIngredient;
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.WeightedItemStack;
 #modloaded thaumcraft
+
+# Missed Cinnabar Cluster -> Quicksilver furnace recipe
+furnace.addRecipe(<thaumcraft:quicksilver> * 2, <thaumcraft:cluster:6>);
 
 # Crimson Rites
 scripts.wrap.thaumcraft.Infusion.registerRecipe("crimson_rites", "INFUSION", 
@@ -18,21 +22,20 @@ utils.tryCatch("openblocks:golden_egg", <minecraft:golden_apple:1>),
 
 # Unification for the Smelting Bonus
 // IIngredient input, IItemStack stack
-mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:oreCopper>, <thaumcraft:nugget:1>);
-mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:oreTin>, <thaumcraft:nugget:2>);
-mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:oreSilver>, <thaumcraft:nugget:3>);
-mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:oreLead>, <thaumcraft:nugget:4>);
+function swapBonus(input as IIngredient, wrong as IItemStack, right as WeightedItemStack) as void {
+	utils.log(["~~ removing", input.commandString, wrong.commandString, right.stack.commandString]);
+	mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(input, wrong);
+	scripts.wrap.thaumcraft.SmeltingBonus.addSmeltingBonus(input, right);
+}
 
-mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:clusterCopper>, <thaumcraft:nugget:1>);
-mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:clusterTin>, <thaumcraft:nugget:2>);
-mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:clusterSilver>, <thaumcraft:nugget:3>);
-mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:clusterLead>, <thaumcraft:nugget:4>);
+for i, oreBase in "Copper Tin Silver Lead".split(' ') {
+	val wrong = <thaumcraft:nugget>.definition.makeStack(i+1);
+	val nugget = oreDict["nugget"~oreBase].firstItem;
+	swapBonus(oreDict["ore"~oreBase], wrong, nugget % 33);
+	swapBonus(<thaumcraft:cluster>.definition.makeStack(i+2), wrong, nugget * 2 % 33);
+	swapBonus(<thaumicwonders:eldritch_cluster>.definition.makeStack(i+2), wrong, nugget * 4 % 33);
+}
 
-// IIngredient input, WeightedItemStack stack
-scripts.wrap.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreCopper>, <thermalfoundation:material:192> % 33);
-scripts.wrap.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreTin>, <thermalfoundation:material:193> % 33);
-scripts.wrap.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreSilver>, <thermalfoundation:material:194> % 33);
-scripts.wrap.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreLead>, <thermalfoundation:material:195> % 33);
 
 # Removing wrong aspects from stuff
 	<ic2:dust:21>.setAspects(<aspect:metallum> * 1);
@@ -156,8 +159,9 @@ scripts.wrap.thaumcraft.Crucible.registerRecipe("Tallow from rotten flesh", "HED
 scripts.wrap.thaumcraft.Crucible.registerRecipe("Tallow from tallow",       "HEDGEALCHEMY@1", <thaumcraft:tallow>*2, <quark:tallow>, [<aspect:ignis>*2]);
 scripts.wrap.thaumcraft.Crucible.registerRecipe("Tallow from blubber",      "HEDGEALCHEMY@1", <thaumcraft:tallow>*8, utils.tryCatch('betteranimalsplus:blubber', <animania:raw_prime_pork>), [<aspect:ignis>*4]);
 
-# Conflicts
-utils.rh(<thaumcraft:nugget:1>);
+# Nitor cheaper
+mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:nitor_yellow>);
+scripts.wrap.thaumcraft.Crucible.registerRecipe("Cheap nitor", "BASEALCHEMY", <thaumcraft:nitor_yellow> * 10, <minecraft:glowstone_dust>, [<aspect:potentia> * 10, <aspect:ignis> * 10, <aspect:lux> * 10]);
 
 # Primordial Pearl alt (for some people who dont want to close rifts)
 scripts.wrap.astralsorcery.Altar.addConstellationAltarRecipe(

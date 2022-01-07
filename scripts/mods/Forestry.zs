@@ -278,12 +278,11 @@ val Pn = <contenttweaker:nugget_phosphor>;
 recipes.addShapeless('ingot phosphor', PH, [Pn, Pn, Pn, Pn, Pn, Pn, Pn, Pn, Pn]);
 recipes.addShapeless('nuggets phosphor', Pn * 9, [PH]);
 scripts.process.crush(<ore:blockApatite>, Po, "only: AACrusher MekEnrichment", [Pn], [0.05]);
-scripts.process.crush(<ore:blockApatite> * 9, Po, "only: ThermalCentrifuge", [Pn], [1.0]);
+scripts.wrap.ic2.ThermalCentrifuge.addRecipe([Po * 9, Pn * 4], <forestry:resource_storage> * 9);
 
 # Phosphor Benefication
 furnace.addRecipe(Pn, Po);
 scripts.processWork.workEx("infernalfurnace", null, [Po], null, null, null, [Pn * 2], [0.5], null);
-scripts.requiousJei.add_infernal_furnace(Po, (Pn * 3) % 50);
 scripts.process.crush(Po, Pn, "only: eu2Crusher IECrusher Pulverizer", [Pn], [0.5]);
 scripts.process.magic([Po], [Pn*3]);
 

@@ -80,7 +80,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_random_animania_s
 mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_tier_6_crafting_seed", machineName, 20)
 	.addEnergyPerTickInput(25000)
 	.addItemOutput(<mysticalagradditions:insanium:1>)
-	.addItemInput(<ore:listAllseed>, 4)
+	.addItemInput(<actuallyadditions:item_misc:24> * 2)
 	.addItemInput(<mysticalagradditions:insanium> * 2)
 	.addItemInput(<mysticalagriculture:crafting:21>)
 	.addFluidInput(<liquid:sewage> * 500)

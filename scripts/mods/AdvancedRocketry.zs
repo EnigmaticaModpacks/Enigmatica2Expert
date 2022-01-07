@@ -373,3 +373,6 @@ scripts.processUtils.avdRockXmlRecipe("Crystallizer", [<ore:dustFluorite> * 6], 
 
 # Remove carbon (defined in ExNihilio configs)
 recipes.remove(<advancedrocketry:misc:1>);
+
+# Endorum
+scripts.processUtils.avdRockXmlRecipeEx("Crystallizer", [<extrautils2:enderlilly>], [<fluid:ice> * 1000], [<endreborn:item_raw_endorium> * 10]);
