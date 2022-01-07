@@ -41,8 +41,11 @@
           "0:10": {
             "Count:3": 1,
             "Damage:2": 0,
-            "id:8": "botania:elementiumsword",
-            "OreDict:8": ""
+            "id:8": "tconstruct:large_sword_blade",
+            "OreDict:8": "",
+            "tag:10": {
+              "Material:8": "elementium"
+            }
           },
           "1:10": {
             "Count:3": 1,

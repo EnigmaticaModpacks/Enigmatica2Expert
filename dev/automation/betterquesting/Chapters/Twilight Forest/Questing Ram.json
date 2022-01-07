@@ -2,28 +2,28 @@
   "_pos": {
     "sizeX:3": 24,
     "sizeY:3": 24,
-    "x:3": 0,
-    "y:3": 0
+    "x:3": 32,
+    "y:3": -32
   },
   "_data": {
     "preRequisites:11": [
-      49
+      861
     ],
     "properties:10": {
       "betterquesting:10": {
         "autoclaim:1": 0,
-        "desc:8": "bq.quest861.desc",
+        "desc:8": "bq.quest95.desc",
         "globalshare:1": 0,
         "icon:10": {
           "Count:3": 1,
-          "Damage:2": 6,
-          "id:8": "twilightforest:miniature_structure",
+          "Damage:2": 8,
+          "id:8": "twilightforest:trophy",
           "OreDict:8": ""
         },
         "ismain:1": 0,
         "issilent:1": 0,
         "lockedprogress:1": 1,
-        "name:8": "bq.quest861.name",
+        "name:8": "bq.quest95.name",
         "partysinglereward:1": 0,
         "questlogic:8": "AND",
         "repeat_relative:1": 1,
@@ -35,30 +35,24 @@
         "visibility:8": "ALWAYS"
       }
     },
-    "questID:3": 861,
+    "questID:3": 95,
     "rewards:9": {
       "0:10": {
         "index:3": 0,
         "rewardID:8": "bq_standard:item",
         "rewards:9": {
           "0:10": {
-            "Count:3": 1,
-            "Damage:2": 6,
-            "id:8": "twilightforest:twilight_sapling",
-            "OreDict:8": ""
-          },
-          "1:10": {
-            "Count:3": 1,
+            "Count:3": 20,
             "Damage:2": 0,
-            "id:8": "actuallyadditions:item_bag",
+            "id:8": "deepmoblearning:living_matter_twilight",
             "OreDict:8": ""
           }
         }
       },
       "1:10": {
         "asScript:1": 1,
-        "command:8": "/advancement grant VAR_NAME only twilightforest:magic_map",
-        "description:8": "Grant Twilight Forest progress",
+        "command:8": "/say Baa-a-a-a",
+        "description:8": "Say Baaa to chat",
         "hideBlockIcon:1": 1,
         "index:3": 1,
         "rewardID:8": "bq_standard:command",
@@ -77,8 +71,8 @@
         "requiredItems:9": {
           "0:10": {
             "Count:3": 1,
-            "Damage:2": 0,
-            "id:8": "twilightforest:magic_map_empty",
+            "Damage:2": 8,
+            "id:8": "twilightforest:trophy",
             "OreDict:8": ""
           }
         },
