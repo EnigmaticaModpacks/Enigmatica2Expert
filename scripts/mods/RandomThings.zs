@@ -297,15 +297,6 @@ craft.remake(<randomthings:spectreenergyinjector>, ["pretty",
 });
 
 # ----------------------------
-# Tools
-# ----------------------------
-utils.rh(<randomthings:spectrepickaxe>);
-utils.rh(<randomthings:spectreaxe>);
-utils.rh(<randomthings:spectreshovel>);
-utils.rh(<randomthings:spectresword>);
-
-
-# ----------------------------
 
 # [Nature Core] from [Experience Pylon][+2]
 craft.remake(<randomthings:naturecore>, ["pretty",

@@ -5,6 +5,12 @@ import crafttweaker.item.IItemStack as IItemStack;
 	val toolsToRemove = [
 	<botania:glasspick>,
 	<forestry:bronze_pickaxe>,
+	<ic2:bronze_pickaxe>,
+	<ic2:bronze_sword>,
+	<ic2:bronze_chestplate>,
+	<ic2:bronze_helmet>,
+	<ic2:bronze_leggings>,
+	<ic2:bronze_boots>,
 	
 	<immersiveengineering:pickaxe_steel>,
 	<immersiveengineering:shovel_steel>,
@@ -42,7 +48,6 @@ import crafttweaker.item.IItemStack as IItemStack;
 	<exnihilocreatio:crook_purpur>,
 	<exnihilocreatio:crook_blaze>,
 
-
 	<exnihilocreatio:hammer_wood>,
 	<exnihilocreatio:hammer_stone>,
 	<exnihilocreatio:hammer_iron>,
@@ -54,6 +59,11 @@ import crafttweaker.item.IItemStack as IItemStack;
 	<excompressum:compressed_hammer_iron>,
 	<excompressum:compressed_hammer_gold>,
 	<excompressum:hammer_mana>,
+
+	<randomthings:spectrepickaxe>,
+	<randomthings:spectreaxe>,
+	<randomthings:spectreshovel>,
+	<randomthings:spectresword>,
 ] as IItemStack[];
 		
 	for tool in toolsToRemove {
