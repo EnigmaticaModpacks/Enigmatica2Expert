@@ -654,3 +654,47 @@ craft.remake(<actuallyadditions:item_bag>, ["pretty",
   "H": <ore:fabricHemp>, # Tough Fabric
   "c": <ore:chest>, # Oak Chest
 });
+
+# [Black Quartz AIOT] from [Basic Catalyst][+2]
+<actuallyadditions:quartz_paxel>.maxDamage = 100;
+craft.remake(<actuallyadditions:quartz_paxel>, ["pretty",
+  "  ⌃ B",
+  "  # ⌃",
+  "#    "], {
+  "⌃": <ore:blockQuartzBlack>,        # Block of Black Quartz
+  "B": <extendedcrafting:material:8>, # Basic Catalyst
+  "#": <iceandfire:dreadwood_planks>, # Dreadwood Planks
+});
+
+# [Golden AIOT] from [Advanced Catalyst][+2]
+<actuallyadditions:gold_paxel>.maxDamage = 1600;
+craft.remake(<actuallyadditions:gold_paxel>, ["pretty",
+  "  □ A",
+  "  # □",
+  "#    "], {
+  "□": <ore:plateDenseGold>,          # Dense Gold Plate
+  "A": <extendedcrafting:material:9>, # Advanced Catalyst
+  "#": <iceandfire:dreadwood_planks>, # Dreadwood Planks
+});
+
+# [Diamond AIOT] from [Ultimate Catalyst][+2]
+<actuallyadditions:diamond_paxel>.maxDamage = 8100;
+craft.remake(<actuallyadditions:diamond_paxel>, ["pretty",
+  "  I U",
+  "  # I",
+  "#    "], {
+  "I": <rftools:infused_diamond>,      # Infused Diamond
+  "U": <extendedcrafting:material:10>, # Elite Catalyst
+  "#": <iceandfire:dreadwood_planks>,  # Dreadwood Planks
+});
+
+# [Emerald AIOT] from [Ultimate Catalyst][+2]
+<actuallyadditions:emerald_paxel>.maxDamage = 25600;
+craft.remake(<actuallyadditions:emerald_paxel>, ["pretty",
+  "  * U",
+  "  # *",
+  "#    "], {
+  "*": <actuallyadditions:block_crystal_empowered:4>, # Empowered Emeradic Crystal Block
+  "U": <extendedcrafting:material:11>, # Ultimate Catalyst
+  "#": <iceandfire:dreadwood_planks>,  # Dreadwood Planks
+});
