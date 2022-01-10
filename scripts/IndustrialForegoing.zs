@@ -35,8 +35,15 @@ function fluidDict(ins as string[]) {
 		"honey"
 	] as string[];
 
+	var oxygen = [
+		"oxygen",
+		"liquidoxygen",
+		"ic2oxygen"
+	] as string[];
+
 	fluidDict(hydrogen);
 	fluidDict(honey);
+	fluidDict(oxygen);
 
 # Protein Reactor, additional entires
 	for item in <ore:listAllmeatraw>.items {
