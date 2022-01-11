@@ -8,10 +8,6 @@ import mods.zenutils.I18n;
 
 #priority 3000
 
-# Importand preprocessor!
-# Significantly speedup CR load time (about 20s in 9m load time)
-#no_fix_recipe_book
-
 static meltingExceptions as IData = ['Amber','Redstone','Coal','Diamond'] as IData;
 
 
