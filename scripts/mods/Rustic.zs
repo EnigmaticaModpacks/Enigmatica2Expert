@@ -47,7 +47,6 @@ mods.rustic.CrushingTub.addRecipe(<liquid:water> * 100, <minecraft:dye:2>, <mine
 # Remove tiny pile and replace it with Ore Piece
 mods.forestry.Squeezer.removeRecipe(<liquid:ironberryjuice>);
 mods.rustic.EvaporatingBasin.removeRecipe(<rustic:dust_tiny_iron>);
-utils.rh(<rustic:dust_tiny_iron>);
 mods.rustic.EvaporatingBasin.addRecipe(<exnihilocreatio:item_ore_iron>, <liquid:ironberryjuice> * 1000, 30*20);
 
 # [Liquid Barrel] from [Oak Wood Slab][+2]

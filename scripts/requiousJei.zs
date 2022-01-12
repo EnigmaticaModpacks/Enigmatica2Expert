@@ -1284,3 +1284,30 @@ function add_special_craft(output as IItemStack, input2d as IIngredient[][], con
   }
   <assembly:special_craft>.addJEIRecipe(assRec);
 }
+
+// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+x = <assembly:ic2_crops>;
+x.addJEICatalyst(<ic2:crop_stick>);
+x.addJEICatalyst(<ic2:te:58>);
+x.addJEICatalyst(<ic2:crop_seed_bag>);
+x.setJEIDurationSlot(2,0,"duration", getVisSlots(11,1));
+x.setJEIItemSlot(1, 0, 'input1', getVisSlots(0,2));
+addInsOuts(x, [[0,0]], [[3,0],[4,0],[5,0],[6,0]]);
+
+static glyphs as IItemStack[] = [
+  <openblocks:glyph:48>, <openblocks:glyph:49>, <openblocks:glyph:50>,
+  <openblocks:glyph:51>, <openblocks:glyph:52>, <openblocks:glyph:53>,
+  <openblocks:glyph:54>, <openblocks:glyph:55>, <openblocks:glyph:56>,
+  <openblocks:glyph:57>, <openblocks:glyph:65>, <openblocks:glyph:66>,
+  <openblocks:glyph:67>, <openblocks:glyph:68>, <openblocks:glyph:69>,
+  <openblocks:glyph:70>,
+] as IItemStack[];
+
+function add_ic2_crops(id as string, drops as IItemStack[], tier as int, attributes as string, requirments as string = null) as void {
+  val seed = <ic2:crop_seed_bag>.withTag({owner: "ic2", scan: 1 as byte, growth: 1 as byte, id: id, resistance: 1 as byte, gain: 1 as byte});
+  add(<assembly:ic2_crops>, {[
+    isNull(requirments) ? seed : seed.withLore(["§6§lRequirments: ", requirments]),
+    glyphs[tier].withDisplayName("§bTier: "~tier).withLore(["§e§lAttributes: ", "§e" ~ attributes])
+  ] : drops});
+}

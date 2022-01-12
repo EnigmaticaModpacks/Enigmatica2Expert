@@ -38,7 +38,6 @@ for i, oreBase in "Copper Tin Silver Lead".split(' ') {
 
 
 # Removing wrong aspects from stuff
-	<ic2:dust:21>.setAspects(<aspect:metallum> * 1);
 	<conarm:armor_trim:*>.setAspects(<aspect:terra>);
 	<harvestcraft:freshwateritem>.removeAspects(<aspect:metallum>);
 

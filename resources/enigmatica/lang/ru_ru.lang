@@ -246,6 +246,7 @@ requious.jei.recipe.expire_in_block=Пропадает в блоке
 requious.jei.recipe.barrel_milking=Доение Бочкой
 requious.jei.recipe.entity_kill_entity=Существо убивает Существо
 requious.jei.recipe.special_craft=Замысловатый Крафт
+requious.jei.recipe.ic2_crops=IC2 Травка
 
 tile.adv_bee_analyzer.name=Расширенный Анализатор
 tile.infinity_furnace.name=Печь Бесконечности

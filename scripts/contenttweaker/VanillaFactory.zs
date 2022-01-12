@@ -150,6 +150,8 @@ buildItem("blasted_coal");
 buildItem("any_different_item");
 buildItem("ore_phosphor");
 buildItem("nugget_phosphor");
+buildItem("dust_tiny_gold");
+buildItem("dust_tiny_silver");
 
 var x = VanillaFactory.createItem("bee_diversity");
 x.setCreativeTab(<creativetab:other>);

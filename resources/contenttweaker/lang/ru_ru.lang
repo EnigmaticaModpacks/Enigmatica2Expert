@@ -34,6 +34,8 @@ item.contenttweaker.blasted_coal.name=Взорванный Уголь
 item.contenttweaker.any_different_item.name=§k--§r Любые §eРАЗНЫЕ§r предметы §k--§r
 item.contenttweaker.ore_phosphor.name=Фосфорная Руда
 item.contenttweaker.nugget_phosphor.name=Фосфорный Самородок
+item.contenttweaker.dust_tiny_gold.name=Кучка золотой пыли
+item.contenttweaker.dust_tiny_silver.name=Кучка серебряной пыли
 
 tile.contenttweaker.terrestrial_artifact_block.name=Блок Артефакта Земли
 

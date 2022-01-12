@@ -604,5 +604,8 @@ addItems(<ore:pebble>, [
 
 add(<ore:orePhosphor>, <contenttweaker:ore_phosphor>);
 add(<ore:nuggetPhosphor>, <contenttweaker:nugget_phosphor>);
+add(<ore:dustTinyGold>, <contenttweaker:dust_tiny_gold>);
+add(<ore:dustTinyIron>, <rustic:dust_tiny_iron>);
+add(<ore:dustTinySilver>, <contenttweaker:dust_tiny_silver>);
 add(<ore:listAllwater>, <littletiles:lttransparentcoloredblock:5>);
 add(<ore:oreEnderBiomeEssence>, <biomesoplenty:biome_block>);
