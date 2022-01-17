@@ -1,0 +1,31 @@
+{
+  "hooks": {
+    "before:init": [
+      "echo \"node ./dev/automate.js --keep-cache --hardfail\"",
+      "echo \"Clear working tree before advance next step\""
+    ],
+    "after:bump": [
+      "echo \"Generate changelog...\"",
+      "node ./dev/changelog.js --next=${version}",
+      "echo \"Fix changelog and press ENTER\"",
+      "pause"
+    ]
+  },
+  "git": {
+    "requireBranch": "master"
+  },
+  "npm": {
+    "publish": false
+  },
+  "github": {
+    "release": true,
+    "releaseName": "Release ${version}",
+    "releaseNotes": "type ./changelogs/~GH_notes.md",
+    "draft": true,
+    "tokenRef": "GITHUB_TOKEN",
+    "assets": [
+      "D:/MEGA_LD-LocksTO/Enigmatica/Distributable/E2E-Extended_${version}.zip",
+      "D:/MEGA_LD-LocksTO/Enigmatica/Distributable/E2E-Extended_${version}_server.zip"
+    ]
+  }
+}
