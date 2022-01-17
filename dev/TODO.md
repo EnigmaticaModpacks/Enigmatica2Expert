@@ -1,3 +1,5 @@
+# TODO list
+
 ## 📦 Items of Interest
 
 Items that should have more uses:
@@ -10,6 +12,7 @@ Items that should have more uses:
 ![](https://git.io/Jz9q1 "Bacon")
 ![](https://git.io/Jz9qX "Bottle of Wine")
 ![](https://git.io/JuAPt "Mysical Flesh")
+[Antler]
 
 ### Tier 2
 
@@ -32,6 +35,7 @@ Items that should have more uses:
 ![](https://git.io/JoUaU "Quicksilver")
 [Quickdry Concrete]
 [Cow Written Book]
+[Xorcite]
 
 ### Tier 3
 
@@ -64,9 +68,6 @@ Liquids that should have more uses:
 ![](https://git.io/J3p4b "Amber Tank")
 ![](https://git.io/J3p4H "Hot Spring Water Tank")
 ![](https://git.io/J3p49 "Latex Tank")
-![](https://git.io/J3p4S "Pahoehoe Lava Tank")
-![](https://git.io/J3p45 "Menril Resin Tank")
-![](https://git.io/J3p4n "Flux Goo Tank")
 
 ## 🔧 Crafting Methods
 
@@ -82,46 +83,32 @@ Liquids that should have more uses:
 
 ---
 
-# TODO
+## TODO
 
-- [ ] ✏️ Add cheaper EnderIO capacitor
-- [ ] ✏️ Zotspire add better drop
-- [ ] ✏️ Endorium alt high-tech recipe
-- [ ] ✏️ Turtle add Fake Iron alt
-- [ ] ✏️ Add Excavation Enchantment on quest book
-- [ ] ✏️ Pure Dicy obsidian cheaper
-- [ ] ✏️ [Spectre Coil] alt from not bees
-- [ ] ✏️ Fix Omega Potion have weird ingredients
-- [ ] ✏️ Phosphor Ore in thermal Centrifuge should add additional output
-- [ ] ✏️ Add Compressed Garbage Pile
-- [ ] ✏️ [Royal Jelly] (harvest) Add alt craft with more output
-- [ ] ✏️ [Fluxomagnet] recipe should save tags
-- [ ] ✏️ Cinderpearl -> Blaze powder harder
-- [ ] ✏️ [Xorcite] more uses
-- [ ] ✏️ [Biome Essence Ore] add skyblock craft
-- [ ] ✏️ [Enchanter] Harder
-- [ ] ✏️ Convert Uranium -> Ardite in portal spread
-- [ ] ✏️ [Antler] add usage
-- [ ] ✏️ [Bee nest] make not in basing but in world
-- [ ] ✏️ [Cobalt Dust] Replace with EnderIO variant (its beautiful)
-- [ ] ✏️ [Pharos Beacon] harder
+- [ ] ✏️ [Bee nest] make not in basin but in world
 - [ ] ✏️ [Tungsten ingot] add to JAOPCA
-- [ ] ✏️ Add [Uncrafting Table] as Endgame item, and [Uncrafting Grinder] right before creative upgrade
-- [ ] ✏️ Add Curiosity crafts. Probably from Twilight Forest Trees
+- [ ] ✏️ Add [Creative Dank Null][Uncrafting Table][Uncrafting Grinder][Creative Bin] as Endgame item, right before creative upgrade
 - [ ] ✏️ Add EEPROM with `user`, `attacker`, `trader`, add Patchouli and Quest Book Entry
-- [ ] ✏️ Add Endermite rare drop, add Nethernite too
-- [ ] ✏️ Add Mob Trophies recipes
-- [ ] ✏️ Add non-magic way to finish modpack
-- [ ] ✏️ Add Skyblock recipe for Terraformer
-- [ ] ✏️ Add usage to rainbow faries
-- [ ] ✏️ Buff crops. Needed: Osmium, Black Quartz, Platinum, Celestial Crystal, Glowstone. Add usage for Weed
-- [ ] ✏️ Enable AIOTs, Paxels
-- [ ] ✏️ MA crafting seeds add table -> runic -> alchemy table recipe
-- [ ] ✏️ Rethink small plate presser
-- [ ] ✏️ Cyclics powered machines harder
+- [ ] ✏️ Add Mob Trophies recipes (Right-Click with morb over Basalt Slab)
+- [ ] ✏️ Make Dread Lich spawnable
+- [ ] ✏️ Remove Machine Blueprints
+- [ ] ✏️ Remove Purged items from furnace
+- [ ] ✏️ Remove wrong nuggets from Infernal Furnace
+- [ ] ✏️ Cheaper light sources
+- [ ] ✏️ Openblock crane cheaper
+- [ ] ✏️ [Energy Acceptor] make less steps in recipe
+- [ ] ✏️ Remove vanilla tools from loot chests
+- [ ] ✏️ Treated planks -> Sticks fix recipe x4 -> x2
+- [ ] ✏️ Add bedrock turning into ore mechanic
+- [ ] 📖 Add Torches Entry
 - [ ] 📖 Add CC/OC gate
-- [ ] 🔄 If Default options work with predefined keys, automate it
+- [ ] 📖 Add TF custom recipes in book
+- [ ] 📖 Add Difficulty mechanic description
+- [ ] 📖 Add Clay casts hint after copper entry
+- [ ] 🔄 Add "Looter" backpack
+- [ ] 🔄 Change Nether restriction to reward
 - [ ] 🔨 Grinding rework
+- [x] 🚧 **Server Tab Info** incompatible with **Fakename**
 - [ ] 🚧 Add modpack automation:
     1. `automate.js`
     2. Clear working tree
@@ -134,8 +121,11 @@ Liquids that should have more uses:
 
 ---
 
-# Long-Term
+## Long-Term
 
+- [ ] ✏️ Rethink small plate presser Ore => ?? recipes
+- [ ] ✏️ Add non-magic way to finish modpack
+- [ ] ✏️ Fix Omega Potion Elixir ingredient have weird scrolling
 - [ ] 🔄 Schematica: Missing/outdated Immersive Technology schematics, Fixes #17
 - [ ] 🔄 Add neural interface searching: with neural interface and special program find special blocks
 - [ ] 🔄 ![](https://git.io/J3p8B "Infinity Furnace") front texture empty on client
@@ -188,14 +178,10 @@ Liquids that should have more uses:
 
 ---
 
-# Unable to
+## Unable to
 
 - 🔄 Blacklist Bedrock Ore for ![](https://git.io/Jz9q9 "Mining Laser")
 - Buff Giant Sword
   > Giant sword somehow cant be buffed with MaterialChanger mod
-- ![](https://git.io/JtUEY "Heart Crystal Shard") should used to craft Morbs with mobs
-  > Right now only few entities avaliable, need more
-  > Edit: Actually, its not "needed" because modpack already has a lot of spawning methods
 - `<gendustry:gene_sample>.maxStackSize = 64;` **Transposer** dupe Samples when stackable
 - **Dynamic Surroundings** cause **Better Questing** book not play sounds when getting quests
-
