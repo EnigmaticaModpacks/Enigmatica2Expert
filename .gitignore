@@ -1,5 +1,6 @@
 # Exclude files and directories in top directory
 /*
+~*
 
 # Whitelist
 !scripts/

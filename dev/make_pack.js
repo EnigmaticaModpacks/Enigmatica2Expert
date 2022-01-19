@@ -240,6 +240,12 @@ doTask('💻 Installing local server ... ', ()=>{
   write('\n Copying new files and mods ')
   serverFilesList.forEach(copyToServerFrom(tmpOverrides))
   serverModsList.forEach(copyToServerFrom(mcClientPath))
+  
+  // TODO: handle server override files
+  // Add default Server overrites
+  // write('\n Add server root files\n')
+  // process.chdir(serverRoot)
+  // zip('.')
 
   // Copy secrets overrides like Discord Integration configs
   copyFileSync(serverOverrides, localServerPath, {overwrite: true})

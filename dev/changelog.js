@@ -20,17 +20,22 @@ import fs_extra from 'fs-extra'
 const { unlink, writeFileSync } = fs_extra
 import { promisify } from 'util'
 import { getModsIds, formatRow } from './automation/modsDiff.js'
-import { getMod } from 'mc-curseforge-api'
 import { loadText, escapeRegex, loadJson, saveObjAsJson, defaultHelper, saveText } from './lib/utils.js'
 import _ from 'lodash'
 import replace_in_file from 'replace-in-file'
 import { execSync, exec as _exec } from 'child_process'
 const exec = promisify(_exec)
 import { generateManifest } from './lib/manifest.js'
+import fetchMod from './lib/curseforge.js'
 
 import yargs from 'yargs'
 const {argv} = yargs(process.argv.slice(2))
-  .alias('n', 'next').describe('n', 'Next version')
+  .option("n", {
+    alias: "next",
+    type: "string",
+    describe: "Next version",
+    demandOption: true
+  })
 
 import { URL, fileURLToPath  } from 'url' // @ts-ignore
 function relative(relPath) { return fileURLToPath(new URL(relPath, import.meta.url)) }
@@ -70,25 +75,17 @@ export async function init(h=defaultHelper) {
   // Get last tagged version
   const old_version = execSync('git describe --tags --abbrev=0').toString().trim()
 
-
-  // Try to bump version
   /** @type {string} */
-  const nextVersion = argv['next'] ?? bumpVersion(old_version)
+  const nextVersion = argv['next']
   await h.begin('Version ' + old_version + ' -> ' + nextVersion + ' ')
 
   // Change version in files
   bumpVersionInFiles(nextVersion)
 
-
   /** @type {string[]} */
   const changelogLines = []
 
-  // Extract old minecraftinstance.json (from latest assigned tag)
-  execSync(`git show tags/${old_version}:minecraftinstance.json > ${minecraftinstance_old}`)
-
-
-  const modChangesTxt = await getModChanges(old_version, nextVersion, h)
-  changelogLines.push(...modChangesTxt.split('\n'))
+  changelogLines.push(...(await getModChanges(old_version, nextVersion, h)).split('\n'))
   
   const commitMap = getCommitMap(old_version)
 
@@ -98,94 +95,7 @@ export async function init(h=defaultHelper) {
 
   const blacklistedCategories = filterCommitMap(commitMap, changelogStructure)
 
-  /** @type {string[]} */
-  const commitLogChanges = []
-
-  // Iterate over defined list
-  let categoriesCount = 0
-  await h.begin('Annotating changes', Object.keys(commitMap).length)
-  commitLogChanges.push(...stringifySubcatList(changelogStructure))
-
-  /**
-   * 
-   * @param {Subcategory[]} subCatList
-   * @returns {string[]}
-   */
-  function stringifySubcatList(subCatList=[], level=0) {
-    const result = subCatList
-      .map(arr=>stringifySubcat(arr, level))
-      .flat()
-
-    if(result.length) return [...result,'']
-    else return []
-  }
-
-  /**
-   * Add information into resulting file text
-   * @param {Subcategory} subCat
-   * @returns {string[]} Lines of text
-   */
-  function stringifySubcat(subCat, level=0) {
-    // Add own Entries
-    let result = commitMap[subCat.symbol]
-      ?.map(subject=>
-        stringifyCommit(subject, subCat.aliases)
-          .map(s=>`  ${s.replace(/\n/g, '\n  ')}`)
-        )
-      .flat() ?? []
-    delete commitMap[subCat.symbol]
-
-    // Add sub entries
-    const subList = stringifySubcatList(subCat.subcategory, level+1)
-      .map(s => s
-        .replace(/^((- )?#+)/, '$1#') // Add paragraph level
-        .replace(/(.+)/g, '  $1') // Lift all content on +1 tab
-      )
-    result.push(...subList)
-
-    // No content for category
-    if(!result.length) return []
-
-    // Lift subcategory up if there only one
-    let mergedSingleMessage = ''
-    if(level!=0 && _(result).sumBy(s=>/^  - .*$/.test(s) ? 1 : 0) === 1) {
-      mergedSingleMessage = result[0].replace(/^  - /, ': ')
-      result.splice(0,1)
-    }
-
-    // Make item list in one line
-    let lastLineIsItem = true
-    _(result).forEachRight((line, i)=>{
-      lastLineIsItem &&= isItemCaptue(line.replace(/^\s*- /,''))
-      if(i!==result.length-1 && lastLineIsItem)
-        result[i+1] = result[i+1].replace(/^(\s*)- /,'$1  ')
-    })
-
-    result = [
-      `- ## ${subCat.symbol} **${subCat.aliases[0]}**${mergedSingleMessage}`,
-      ...result,
-      '',
-    ]
-
-    h.step(subCat.symbol)
-    categoriesCount++
-    return result
-  }
-
-  // Iterate fields not mentioned in "annotations"
-  let unknown = 0
-  for (const [key, arr] of Object.entries(commitMap)) {
-    if(/\w+.*/.test(key)) {
-      unknown++
-      // continue // Skip commits started with words
-    }
-    arr.forEach(() => {
-      commitLogChanges.push(...stringifySubcat({symbol: key, aliases:['❓❓']}))
-    })  
-  }
-
-  // Remove top-level lists
-  commitLogChanges.forEach((l,i)=>commitLogChanges[i]=commitLogChanges[i].replace(/^- /, ''))
+  const { commitLogChanges, categoriesCount, unknownCommits } = await getCommitChangeLines(h, commitMap, changelogStructure)
 
 
   await h.begin('Writing in file')
@@ -194,8 +104,8 @@ export async function init(h=defaultHelper) {
 
   // Automatically assign icons
   await h.begin('Automatic iconisation')
-  const e2eeiconsPath = 'D:/CODING/E2E-E-icons/main.js'
-  await runProcess(`node "${e2eeiconsPath}" --silent --treshold=2 --filename="${fullChLogPath}"`,
+  const e2eeiconsPath = 'D:/CODING/mc-icons/build/main/index.js'
+  await runProcess(`node "${e2eeiconsPath}" --silent --treshold=2 --input="${fullChLogPath}"`,
     () => h.step()
   )
 
@@ -211,12 +121,111 @@ export async function init(h=defaultHelper) {
   
   h.result(
     `New changelog entries: ${categoriesCount}, `+
-    `Unknown: ${unknown}, `+
+    `Unknown: ${unknownCommits}, `+
     `Blacklisted: ${blacklistedCategories}`)
 }
 
 // @ts-ignore
 if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()
+
+/**
+ * @param {typeof defaultHelper} h
+ * @param {{[keySymbol: string]: string[]}} commitMap
+ * @param {Subcategory[]} changelogStructure
+ */
+async function getCommitChangeLines(h, commitMap, changelogStructure) {
+  /** @type {string[]} */
+  const commitLogChanges = []
+
+  // Iterate over defined list
+  let categoriesCount = 0
+  await h.begin('Annotating changes', Object.keys(commitMap).length)
+  commitLogChanges.push(...stringifySubcatList(changelogStructure))
+
+  /**
+   *
+   * @param {Subcategory[]} subCatList
+   * @returns {string[]}
+   */
+  function stringifySubcatList(subCatList = [], level = 0) {
+    const result = subCatList
+      .map(arr => stringifySubcat(arr, level))
+      .flat()
+
+    if (result.length)
+      return [...result, '']
+    else
+      return []
+  }
+
+  /**
+   * Add information into resulting file text
+   * @param {Subcategory} subCat
+   * @returns {string[]} Lines of text
+   */
+  function stringifySubcat(subCat, level = 0) {
+    // Add own Entries
+    let result = commitMap[subCat.symbol]
+      ?.map(subject => stringifyCommit(subject, subCat.aliases)
+        .map(s => `  ${s.replace(/\n/g, '\n  ')}`)
+      )
+      .flat() ?? []
+    delete commitMap[subCat.symbol]
+
+    // Add sub entries
+    const subList = stringifySubcatList(subCat.subcategory, level + 1)
+      .map(s => s
+        .replace(/^((- )?#+)/, '$1#') // Add paragraph level
+        .replace(/(.+)/g, '  $1') // Lift all content on +1 tab
+      )
+    result.push(...subList)
+
+    // No content for category
+    if (!result.length)
+      return []
+
+    // Lift subcategory up if there only one
+    let mergedSingleMessage = ''
+    if (level != 0 && _(result).sumBy(s => /^  - .*$/.test(s) ? 1 : 0) === 1) {
+      mergedSingleMessage = result[0].replace(/^  - /, ': ')
+      result.splice(0, 1)
+    }
+
+    // Make item list in one line
+    let lastLineIsItem = true
+    _(result).forEachRight((line, i) => {
+      lastLineIsItem &&= isItemCaptue(line.replace(/^\s*- /, ''))
+      if (i !== result.length - 1 && lastLineIsItem)
+        result[i + 1] = result[i + 1].replace(/^(\s*)- /, '$1  ')
+    })
+
+    result = [
+      `- ## ${subCat.symbol} **${subCat.aliases[0]}**${mergedSingleMessage}`,
+      ...result,
+      '',
+    ]
+
+    h.step(subCat.symbol)
+    categoriesCount++
+    return result
+  }
+
+  // Iterate fields not mentioned in "annotations"
+  let unknownCommits = 0
+  for (const [key, arr] of Object.entries(commitMap)) {
+    if (/\w+.*/.test(key)) {
+      unknownCommits++
+      // continue // Skip commits started with words
+    }
+    arr.forEach(() => {
+      commitLogChanges.push(...stringifySubcat({ symbol: key, aliases: ['❓❓'] }))
+    })
+  }
+
+  // Remove top-level lists
+  commitLogChanges.forEach((l, i) => commitLogChanges[i] = commitLogChanges[i].replace(/^- /, ''))
+  return { commitLogChanges, categoriesCount, unknownCommits }
+}
 
 /*
 ███╗   ███╗ ██████╗ ██████╗ ███████╗
@@ -227,6 +236,9 @@ if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
 ╚═╝     ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝
 */
 async function getModChanges(version, nextVersion, h=defaultHelper) {
+  // Extract old minecraftinstance.json (from latest assigned tag)
+  execSync(`git show tags/${version}:minecraftinstance.json > ${minecraftinstance_old}`)
+
   const modsDiff = getModsIds(minecraftinstance_old, 'minecraftinstance.json')
 
   let counstGets = 0
@@ -234,7 +246,7 @@ async function getModChanges(version, nextVersion, h=defaultHelper) {
     group=>Promise.all(
       modsDiff[group].map(
         (/** @type {import('./lib/minecraftinstance').InstalledAddon} */ m) =>{
-          const p = getMod(m.addonID)
+          const p = fetchMod(m.addonID)
           p.then(()=>h.step())
           counstGets++
           return p
@@ -284,7 +296,7 @@ async function getModChanges(version, nextVersion, h=defaultHelper) {
     ' --old="manifest_old.json"'+
     ' --new="manifest.json"'+
     ' --entries=5'+
-    ' --lines=60'+
+    ' --lines=40'+
     ` --output=${nextModsChangelogsFull}`
   
   await runProcess(chgenCommand, data => {
@@ -362,19 +374,6 @@ function trimAliases(s, aliases) {
   const aliasesJoined = aliases.map(s=>escapeRegex(s).replace(/\s+/, '\\s*')).join('|')
   const aliasRgx = new RegExp(`^(?:${aliasesJoined})(?:\\s*:)?\\s*([\\s\\S]*)$`, 'i')
   return s.replace(aliasRgx, '$1')
-}
-
-
-/**
- * Guess next version
- * @param {string} version tagged version in form `12.34`
- * @example bumpVersion('0.12') // => '0.13'
- */
-const bumpVersion = (version) => {
-  const splittedVersion = version.split('.')
-  const lastVersion = parseInt(splittedVersion.slice(-1)[0]) + 1
-  const nextVersion = [...splittedVersion.slice(0, -1), lastVersion].join('.')
-  return nextVersion
 }
 
 /**

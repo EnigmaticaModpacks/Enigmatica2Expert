@@ -120,8 +120,6 @@ export async function init(h=defaultHelper, options = argv) {
     await h.begin('Removing cached files')
     countCachedRemoved = del.sync([
       'config/thaumicjei_itemstack_aspects.json',
-      'config/thaumicspeedup/cache.lock',
-      'config/tinker_ore_dict_melting_cache.dat',
     ], {dryRun: false}).length
   }
 

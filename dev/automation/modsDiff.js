@@ -7,11 +7,11 @@
 
 //@ts-check
 
-import { getMod } from 'mc-curseforge-api'
 import { injectInFile, defaultHelper, loadText } from '../lib/utils.js'
 import _ from 'lodash'
 import { getModLoadTimeTuples } from 'mc-benchmark'
 import { loadMCInstanceFiltered } from '../lib/manifest.js'
+import fetchMod from '../lib/curseforge.js'
 
 /** @typedef {import('../lib/minecraftinstance').InstalledAddon} InstalledAddon */
 
@@ -116,7 +116,7 @@ export async function init(h=defaultHelper) {
   await h.begin('Asking Curseforge API for mods', diff.union.length)
 
   const cursedUnion = await Promise.all(diff.union.map(mcAddon=>{
-    const p = getMod(mcAddon.addonID)
+    const p = fetchMod(mcAddon.addonID)
     p.then(()=>h.step())
     return p
   }))
