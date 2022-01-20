@@ -61,3 +61,11 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_magnesium_diborid
 	.addItemInput(<ore:ingotMagnesium>, 3)
 	.addItemInput(<ore:ingotBoron>, 6)
 	.build();
+	
+mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_alumite_ingot", machineName, 10)
+	.addEnergyPerTickInput(100000)
+	.addItemOutput(<ore:ingotAlumite>, 6)
+	.addItemInput(<ore:ingotAluminium>, 5)
+	.addItemInput(<ore:ingotIron>, 2)
+	.addItemInput(<ore:obsidian>, 2)
+	.build();
