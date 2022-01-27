@@ -46,6 +46,7 @@ tooltips.lang.tag.miner=§1#Шахтер
 tooltips.lang.tag.voidminer=§3#ПустотныйШахтер
 tooltips.lang.tag.flight=§b#Полет
 tooltips.lang.tag.repairer=§4#Чинитель
+tooltips.lang.tag.charger=§a#Заряжатель
 
 tooltips.lang.crescent_hammer=Щелкните правой кнопкой мыши, используя молоток полумесяца, чтобы поднять. \n Кэш сохраняет свои обновления и инвентарь. \n Не ломай киркой!
 tooltips.lang.gauge_dropper=Может использоваться для очистки машин Mekanism от газов. Просто удерживайте капельницу с манометром и нажимайте левую кнопку мыши на газе изнутри машины.

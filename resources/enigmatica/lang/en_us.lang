@@ -47,6 +47,7 @@ tooltips.lang.tag.miner=§1#Miner
 tooltips.lang.tag.voidminer=§3#VoidMiner
 tooltips.lang.tag.flight=§b#Flight
 tooltips.lang.tag.repairer=§4#Repairer
+tooltips.lang.tag.charger=§a#Charger
 
 tooltips.lang.crescent_hammer=Shift right click with a Crescent Hammer to pick up.\nThe Cache retains its upgrades and inventory.\nDo not break with Pickaxe!
 tooltips.lang.gauge_dropper=Can be used to clear Mekanism machines of their gases. Simply hold the Gauge Dropper and Shift Left Click the Gas from inside the Machine.
