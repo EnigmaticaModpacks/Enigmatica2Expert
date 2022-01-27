@@ -1,0 +1,90 @@
+{
+  "_pos": {
+    "sizeX:3": 36,
+    "sizeY:3": 36,
+    "x:3": 244,
+    "y:3": 4
+  },
+  "_data": {
+    "preRequisites:11": [
+      984
+    ],
+    "properties:10": {
+      "betterquesting:10": {
+        "autoclaim:1": 1,
+        "desc:8": "bq.quest989.desc",
+        "globalshare:1": 0,
+        "icon:10": {
+          "Count:3": 1,
+          "Damage:2": 0,
+          "id:8": "simple_trophies:trophy",
+          "OreDict:8": "",
+          "tag:10": {
+            "TrophyColorBlue:3": 44,
+            "TrophyColorGreen:3": 49,
+            "TrophyColorRed:3": 179,
+            "TrophyItem:10": {
+              "Count:1": 1,
+              "Damage:2": 0,
+              "id:8": "bloodmagic:altar"
+            },
+            "TrophyName:8": "§4Blood Master Trophy§r",
+            "TrophyShowsTooltip:1": 1,
+            "TrophyVariant:8": "gold"
+          }
+        },
+        "ismain:1": 0,
+        "issilent:1": 0,
+        "lockedprogress:1": 1,
+        "name:8": "bq.quest989.name",
+        "questlogic:8": "AND",
+        "repeat_relative:1": 1,
+        "repeattime:3": -1,
+        "simultaneous:1": 0,
+        "snd_complete:8": "minecraft:entity.player.levelup",
+        "snd_update:8": "minecraft:entity.player.levelup",
+        "tasklogic:8": "AND",
+        "visibility:8": "ALWAYS"
+      }
+    },
+    "questID:3": 989,
+    "rewards:9": {
+      "0:10": {
+        "index:3": 0,
+        "rewardID:8": "bq_standard:item",
+        "rewards:9": {
+          "0:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "simple_trophies:trophy",
+            "OreDict:8": "",
+            "tag:10": {
+              "TrophyColorBlue:3": 44,
+              "TrophyColorGreen:3": 49,
+              "TrophyColorRed:3": 179,
+              "TrophyItem:10": {
+                "Count:1": 1,
+                "Damage:2": 0,
+                "id:8": "bloodmagic:altar"
+              },
+              "TrophyName:8": "§4Blood Master Trophy§r",
+              "TrophyShowsTooltip:1": 1,
+              "TrophyVariant:8": "gold"
+            }
+          }
+        }
+      },
+      "1:10": {
+        "asScript:1": 1,
+        "command:8": "/say §lVAR_NAME§r§6 has fully completed the §n§4Blood Magic§r§6 chapter!§r ```Congrats!```",
+        "description:8": "Tell everyone about chapter completion.",
+        "hideBlockIcon:1": 1,
+        "index:3": 1,
+        "rewardID:8": "bq_standard:command",
+        "title:8": "bq_standard.reward.command",
+        "viaPlayer:1": 0
+      }
+    },
+    "tasks:9": {}
+  }
+}

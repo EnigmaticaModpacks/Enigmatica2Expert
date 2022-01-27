@@ -17,7 +17,7 @@
         "icon:10": {
           "Count:3": 1,
           "Damage:2": 0,
-          "id:8": "endreborn:death_essence",
+          "id:8": "biomesoplenty:biome_finder",
           "OreDict:8": ""
         },
         "ismain:1": 1,
@@ -48,7 +48,10 @@
             "id:8": "bq_standard:loot_chest",
             "OreDict:8": "",
             "tag:10": {
-              "hideLootInfo:1": 1
+              "display:10": {
+                "Name:8": "§3Common Loot Chest"
+              },
+              "lock:1": 1
             }
           }
         }
@@ -66,8 +69,26 @@
           "0:10": {
             "Count:3": 1,
             "Damage:2": 0,
-            "id:8": "endreborn:death_essence",
+            "id:8": "biomesoplenty:biome_finder",
             "OreDict:8": ""
+          }
+        },
+        "taskID:8": "bq_standard:retrieval"
+      },
+      "1:10": {
+        "autoConsume:1": 0,
+        "consume:1": 0,
+        "groupDetect:1": 0,
+        "ignoreNBT:1": 1,
+        "index:3": 1,
+        "partialMatch:1": 1,
+        "requiredItems:9": {
+          "0:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "naturescompass:naturescompass",
+            "OreDict:8": "",
+            "tag:10": {}
           }
         },
         "taskID:8": "bq_standard:retrieval"

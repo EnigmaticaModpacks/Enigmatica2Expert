@@ -1,0 +1,54 @@
+{
+  "_pos": {
+    "sizeX:3": 12,
+    "sizeY:3": 12,
+    "x:3": 300,
+    "y:3": 48
+  },
+  "_data": {
+    "preRequisites:11": [
+      528,
+      530,
+      544,
+      546,
+      547,
+      548,
+      549,
+      553,
+      554,
+      561,
+      563,
+      931,
+      937
+    ],
+    "properties:10": {
+      "betterquesting:10": {
+        "autoclaim:1": 1,
+        "desc:8": "bq.quest1067.desc",
+        "globalshare:1": 0,
+        "icon:10": {
+          "Count:3": 0,
+          "Damage:2": 0,
+          "id:8": "minecraft:air",
+          "OreDict:8": ""
+        },
+        "ismain:1": 0,
+        "issilent:1": 1,
+        "lockedprogress:1": 1,
+        "name:8": "bq.quest1067.name",
+        "partysinglereward:1": 0,
+        "questlogic:8": "AND",
+        "repeat_relative:1": 1,
+        "repeattime:3": -1,
+        "simultaneous:1": 0,
+        "snd_complete:8": "minecraft:entity.player.levelup",
+        "snd_update:8": "minecraft:entity.player.levelup",
+        "tasklogic:8": "AND",
+        "visibility:8": "HIDDEN"
+      }
+    },
+    "questID:3": 1067,
+    "rewards:9": {},
+    "tasks:9": {}
+  }
+}

@@ -45,7 +45,10 @@
             "id:8": "bq_standard:loot_chest",
             "OreDict:8": "",
             "tag:10": {
-              "hideLootInfo:1": 1
+              "display:10": {
+                "Name:8": "§3Common Loot Chest"
+              },
+              "lock:1": 1
             }
           },
           "1:10": {

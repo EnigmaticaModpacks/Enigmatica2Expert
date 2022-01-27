@@ -1,0 +1,64 @@
+{
+  "_pos": {
+    "sizeX:3": 12,
+    "sizeY:3": 12,
+    "x:3": 340,
+    "y:3": 96
+  },
+  "_data": {
+    "preRequisites:11": [
+      112,
+      113,
+      116,
+      117,
+      312,
+      318,
+      319,
+      325,
+      326,
+      327,
+      329,
+      331,
+      332,
+      333,
+      334,
+      339,
+      355,
+      356,
+      595,
+      704,
+      859,
+      904,
+      909
+    ],
+    "properties:10": {
+      "betterquesting:10": {
+        "autoclaim:1": 1,
+        "desc:8": "bq.quest919.desc",
+        "globalshare:1": 0,
+        "icon:10": {
+          "Count:3": 0,
+          "Damage:2": 0,
+          "id:8": "minecraft:air",
+          "OreDict:8": ""
+        },
+        "ismain:1": 0,
+        "issilent:1": 1,
+        "lockedprogress:1": 1,
+        "name:8": "bq.quest919.name",
+        "partysinglereward:1": 0,
+        "questlogic:8": "AND",
+        "repeat_relative:1": 1,
+        "repeattime:3": -1,
+        "simultaneous:1": 0,
+        "snd_complete:8": "minecraft:entity.player.levelup",
+        "snd_update:8": "minecraft:entity.player.levelup",
+        "tasklogic:8": "AND",
+        "visibility:8": "HIDDEN"
+      }
+    },
+    "questID:3": 919,
+    "rewards:9": {},
+    "tasks:9": {}
+  }
+}

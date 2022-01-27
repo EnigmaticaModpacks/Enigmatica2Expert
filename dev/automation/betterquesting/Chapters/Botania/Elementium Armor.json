@@ -57,7 +57,13 @@
             "Count:3": 1,
             "Damage:2": 25,
             "id:8": "bq_standard:loot_chest",
-            "OreDict:8": ""
+            "OreDict:8": "",
+            "tag:10": {
+              "display:10": {
+                "Name:8": "§6Epic Loot Chest"
+              },
+              "lock:1": 1
+            }
           }
         },
         "index:3": 0,

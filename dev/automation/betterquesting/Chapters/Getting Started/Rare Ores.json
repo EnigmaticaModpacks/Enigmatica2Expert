@@ -17,7 +17,7 @@
         "icon:10": {
           "Count:3": 1,
           "Damage:2": 7,
-          "id:8": "thermalfoundation:ore",
+          "id:8": "nuclearcraft:ore",
           "OreDict:8": ""
         },
         "ismain:1": 0,
