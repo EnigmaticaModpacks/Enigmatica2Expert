@@ -6,7 +6,7 @@
 !scripts/
 !config/
 !resources/
-!schematics/
+!schematics/**/
 !minemenu/
 !resourcepacks/bq_lootchests/
 !dev/
