@@ -15,7 +15,7 @@ difficulty:2
 fancyGraphics:false
 ao:2
 renderClouds:fast
-resourcePacks:["bq_lootchests","minevost_translation-1.8.zip","Better+Gendustry+v1.0.zip","minecraftfont.zip"]
+resourcePacks:["bq_lootchests","Better Gendustry v1.0.zip"]
 incompatibleResourcePacks:[]
 lastServer:192.168.193.234:55650
 lang:en_us
@@ -125,7 +125,7 @@ key_bloodmagic.keybind.open_holding:53:CONTROL
 key_bloodmagic.keybind.cycle_holding_pos:0
 key_bloodmagic.keybind.cycle_holding_neg:0
 key_key.conarm.toggle_helm.desc:39
-key_key.conarm.toggle_chest.desc:35
+key_key.conarm.toggle_chest.desc:58:SHIFT
 key_key.conarm.toggle_leg.desc:58:CONTROL
 key_keybind.hammercorerenderstack:77
 key_key.betterquesting.quests:41
@@ -135,7 +135,7 @@ key_Extra information:211:CONTROL
 key_Add info to original tooltip:199
 key_key.xu2.searchforitems:21
 key_key.findme.search:21
-key_key.ftbutilities.nbt:0
+key_key.ftbutilities.nbt:83
 key_key.ftbutilities.trash:211
 key_key.open_menu:19
 key_key.moreoverlays.lightoverlay.desc:65
@@ -167,7 +167,7 @@ key_schematica.key.layerToggle:0
 key_schematica.key.renderToggle:0
 key_schematica.key.printerToggle:0
 key_schematica.key.moveHere:0
-key_schematica.key.pickBlock:0
+key_schematica.key.pickBlock:71
 key_keys.servertabinfo.show:29
 key_keys.servertabinfo.show2:157
 key_key.toastcontrol.clear:0
@@ -269,7 +269,7 @@ key_key.debugDumpNBTBlock:0
 key_invtweaks.key.sort:0
 key_jecalculation.key.gui_craft:0
 key_jecalculation.key.gui_math:0
-key_keywizard.keybind.openKeyboardWizard:65
+key_keywizard.keybind.openKeyboardWizard:65:CONTROL
 key_key.rotateup:200
 key_key.rotatedown:208
 key_key.rotateright:205
