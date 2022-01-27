@@ -16,15 +16,11 @@ config/sampler.ini
 !config
 !minemenu
 !patchouli_books
-!resourcepacks
 !shaderpacks
 !resources
 !schematics
 !scripts
 !structures
-
-# Ru-only files
-resourcepacks/*
 !resourcepacks/bq_lootchests
 
 # Mods to ignore

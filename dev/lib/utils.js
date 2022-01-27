@@ -264,7 +264,12 @@ export function setBlockDrops(block_stack, dropList, isSkipSaving=false) {
   }
 
   /** @type {BlockDrop[]} */
-  const arr = loadJson('config/BlockDrops/blockdrops.txt')
+  let arr
+  try {
+    arr = loadJson('config/BlockDrops/blockdrops.txt')
+  } catch (error) {
+    return []
+  }
   const entryIndex = arr.findIndex(o=>o.name===block_id && o.meta===block_meta)
 
   if(newObj)
@@ -296,7 +301,7 @@ export function setBlockDropsList(blockDropList) {
  */
 function saveBlockDrops(arr) {
   saveText(
-    JSON.stringify(arr, null, 2)
+    JSON.stringify(arr.sort(({name:a, meta:am},{name:b, meta:bm})=>naturalSort(a+am,b+bm)), null, 2)
       .replace(/^(\s+"\d+chance\d+": \d+)(,?)$/gm, '$1.0$2')
     , 'config/BlockDrops/blockdrops.txt'
   )

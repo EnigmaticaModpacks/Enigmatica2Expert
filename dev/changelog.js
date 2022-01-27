@@ -286,8 +286,8 @@ async function getModChanges(version, nextVersion, h=defaultHelper) {
   }
 
   // Generate manifests for later use in changelog generator
-  generateManifest(version, minecraftinstance_old, '_old')
-  generateManifest(nextVersion)
+  await generateManifest(version, minecraftinstance_old, '_old')
+  await generateManifest(nextVersion)
 
   h.begin('Retrieving mod detailed changelogs', 10)
   const nextModsChangelogsFile = `MODS_${nextVersion}.md`
@@ -309,7 +309,7 @@ async function getModChanges(version, nextVersion, h=defaultHelper) {
     unlink(nextModsChangelogsFull)
   } else {
     makeModsChangelogBetter(nextModsChangelogsFull)
-    result += `\n## [> Mods updates detailed.](changelogs/${nextModsChangelogsFile})\n\n`
+    result += `\n## [> Mods updates detailed.](https://github.com/Krutoy242/Enigmatica2Expert-Extended/blob/master/changelogs/${nextModsChangelogsFile})\n\n`
   }
 
   return result

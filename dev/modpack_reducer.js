@@ -127,6 +127,7 @@ RSLargePatterns-
 addReduceLevel('Soft', 'Remove client-only mods, that has impact on performance. Could save ~20 seconds on load time and some FPS.', `
 betteranimals-
 DynamicSurroundings
+OreLib
 Sound-Physics-
 CustomLoadingScreen-
 `)
@@ -142,7 +143,6 @@ ears-forge-
 grid-
 IconExporter
 InvMove
-OreLib
 potiondescriptions-
 NetherPortalFix_
 LagGoggles-

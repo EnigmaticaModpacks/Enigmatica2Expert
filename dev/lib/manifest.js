@@ -11,6 +11,7 @@ import parseGitignore from 'parse-gitignore'
 import memoize from 'memoizee'
 import fast_glob from 'fast-glob'
 import { resolve } from 'path'
+import fetchMod from './curseforge.js'
 const { sync: globs } = fast_glob
 
 
@@ -59,9 +60,9 @@ let forgeVersion
  * @param {string} version 
  * @param {string} mcinstancePath 
  * @param {string} [manifestPostfix]
- * @returns {{[key:string]: any}}
+ * @returns {Promise<{[key:string]: any}>}
  */
-export function generateManifest(version, mcinstancePath='minecraftinstance.json', manifestPostfix='') {
+export async function generateManifest(version, mcinstancePath='minecraftinstance.json', manifestPostfix='') {
   const result = filterManifest({
     minecraft: {
       version: '1.12.2',
@@ -76,11 +77,12 @@ export function generateManifest(version, mcinstancePath='minecraftinstance.json
     version: version,
     author: 'krutoy242',
     overrides: 'overrides',
-    files: loadMCInstanceFiltered(mcinstancePath).installedAddons.map(a=>({
+    files: (await Promise.all(loadMCInstanceFiltered(mcinstancePath).installedAddons.map(async a=>({
       projectID: a.addonID,
       fileID: a.installedFile?.id,
       required: !a.installedFile?.FileNameOnDisk.endsWith('.disabled'),
-    })).sort((a,b)=>a.projectID-b.projectID)
+      __meta: { name: (await fetchMod(a.addonID, 128)).name }
+    })))).sort((a,b)=>a.projectID-b.projectID)
   })
 
   saveObjAsJson(result, `manifest${manifestPostfix}.json`)

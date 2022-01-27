@@ -16,6 +16,10 @@ import { save_DefaultQuests_json } from './BQ_lang.js'
 import { URL, fileURLToPath  } from 'url' // @ts-ignore
 function relative(relPath='./') { return fileURLToPath(new URL(relPath, import.meta.url)) }
 
+/**
+ * @typedef {import('./EvenBetterQuesting.js').RootObject} RootObject
+ */
+
 import yargs from 'yargs'
 const argv = yargs(process.argv.slice(2))
   .alias('u', 'unparse').describe('u', 'Merge splitted files into DefaultQuests.json')
@@ -27,7 +31,7 @@ const bq_quests_path = 'config/betterquesting/DefaultQuests.json'
 export async function init(h=defaultHelper) {
 
   await h.begin('Disabling edit mode')
-  const bq_raw = sortObjectKeys(loadJson(bq_quests_path))
+  const bq_raw = beautifyBQRaw(loadJson(bq_quests_path))
   bq_raw["questSettings:10"]["betterquesting:10"]["editmode:1"] = 0
   save_DefaultQuests_json(bq_raw)
 
@@ -49,10 +53,78 @@ export async function init(h=defaultHelper) {
 
 
 /**
+ * Automate some actions
+ *
+ * @param {RootObject} bq_raw
+ * @return {RootObject} 
+ */
+function beautifyBQRaw(bq_raw) {
+  // Connect all tail quests to one
+  const quests = Object.values(bq_raw['questDatabase:9'])
+  quests.forEach(completeThisQuest=>{
+    const complID = completeThisQuest['questID:3']
+    const qName = completeThisQuest['properties:10']['betterquesting:10']['name:8']
+    if(findRealQuestname(qName) !== '[Complete This Chapter]') return
+
+    completeThisQuest['preRequisites:11'] = []
+
+    // Quest line completeThisQuest is in
+    const questLine = Object.values(bq_raw['questLines:9'])
+      .find(questLine => Object.values(questLine['quests:9'])
+        .find(entry => entry['id:3'] === complID)
+      )
+    if (!questLine) return
+
+    // Change size of technical quest
+    const completeThisQuestLine = Object.values(questLine['quests:9'])
+      .find(ql=>ql['id:3']===complID)
+    completeThisQuestLine['sizeX:3'] = 12
+    completeThisQuestLine['sizeY:3'] = 12
+
+    const questsInChapter = Object.values(questLine['quests:9'])
+      .map(o => quests.find(q => q['questID:3'] === o['id:3']))
+    
+    // Quest that gives you a trophy
+    const thisIsCompleteQuest = questsInChapter
+      .find(q => findRealQuestname(q['properties:10']['betterquesting:10']['name:8']) === 'The chapter is complete!')
+    thisIsCompleteQuest['preRequisites:11'] = [complID]
+    thisIsCompleteQuest['properties:10']['betterquesting:10']['autoclaim:1'] = 1
+    
+    // Set Reward same as icon
+    const trophyReward = Object.values(thisIsCompleteQuest['rewards:9'])
+      .find(r => r['rewardID:8'] === 'bq_standard:item')
+    trophyReward['rewards:9'] = {"0:10": thisIsCompleteQuest['properties:10']['betterquesting:10']['icon:10']}
+    
+    // Set Command reward with proper text
+    const trophyColorPrefix = trophyReward['rewards:9']['0:10']['tag:10']['TrophyName:8'].substring(0,2)
+    const questChapterName = findRealQuestname(questLine['properties:10']['betterquesting:10']['name:8']).replace(/§./g, '')
+    Object.values(thisIsCompleteQuest['rewards:9'])
+      .find(r => r['rewardID:8'] === 'bq_standard:command')
+      ['command:8'] = `/say §lVAR_NAME§r§6 has fully completed the §n${trophyColorPrefix}${questChapterName}§r§6 chapter!§r \`\`\`Congrats!\`\`\``
+
+    // Change size of Trophy quest
+    // const thisIsCompleteQuestLine = Object.values(questLine['quests:9'])
+    //   .find(ql=>ql['id:3']===thisIsCompleteQuest['questID:3'])
+    // thisIsCompleteQuestLine['sizeX:3'] = 36
+    // thisIsCompleteQuestLine['sizeY:3'] = 36
+      
+
+    // Keep only quests that have no other child quests
+    const noChild = questsInChapter.filter(q =>
+      !quests.some(q1 => q1['preRequisites:11'].includes(q['questID:3']))
+    ).filter(q => q !== thisIsCompleteQuest)
+
+    completeThisQuest['preRequisites:11'] = noChild.map(q=>q['questID:3'])
+  })
+
+  return sortObjectKeys(bq_raw)
+}
+
+/**
  * Recursively sort object keys
  *
  * @param {any} obj
- * @return {{}} 
+ * @return {any} 
  */
 function sortObjectKeys(obj) {
   if(typeof obj !== 'object' || Array.isArray(obj)) return obj
@@ -70,6 +142,7 @@ if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
 /**
  * Split one huge file into many
  * @return {Promise<number>} Total created files
+ * @param {RootObject} bq_raw
  */
 async function parse(bq_raw, h=defaultHelper) {
   let totalFilesCreated = 0
@@ -94,14 +167,14 @@ async function parse(bq_raw, h=defaultHelper) {
   await h.begin('Mapping DefaultQuests.json')
 
   // Extrct all quests
-  /** @type {Map<number, object>} */
+  /** @type {Map<number, {_pos:import('./EvenBetterQuesting.js').QuestLineEntry,_data:import('./EvenBetterQuesting.js').Quest}>} */
   const questMap = new Map()
 
   const bq_chapterEntries = Object.entries(bq_raw['questDatabase:9'])
   /** @type {Array<number|null>} */
   const questsIDs = []
   bq_chapterEntries.forEach(([i,q])=>{
-    const id = parseInt(q['questID:3'])
+    const id = q['questID:3']
     questMap.set(id, {_pos:null,_data:q})
     questsIDs[parseInt(i.split(':')[0])] = id
   })

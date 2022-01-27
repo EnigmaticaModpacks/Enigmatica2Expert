@@ -44,6 +44,8 @@ import { isODExist,
   getSomething,
   countBaseOutput,
   getCrtLogBlock,
+  isPurged,
+  getOreBases_byKinds
 } from '../lib/tellme.js'
 
 function saveObjAsJson(obj, filename) {
@@ -59,7 +61,9 @@ const $ = (source, id, meta, count, nbt, modifiers) => {
 }
 
 
-const flatTable = (arr) => table(arr, {
+const flatTable = (arr) => (arr.length <= 0)
+? undefined
+: table(arr, {
   border: getBorderCharacters('void'),
   columnDefault: { paddingLeft: 0,paddingRight: 0 },
   drawHorizontalLine: () => false
