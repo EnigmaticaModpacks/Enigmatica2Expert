@@ -10,6 +10,8 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 3000
 
+#loader crafttweaker reloadableevents
+
 
 zenClass Serialize {
 	zenConstructor() { }

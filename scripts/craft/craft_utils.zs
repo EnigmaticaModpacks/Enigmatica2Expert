@@ -1,5 +1,7 @@
 #priority 4000
 
+#loader crafttweaker reloadableevents
+
 import crafttweaker.item.IItemStack;
 
 function sortInt(list as int[]) as int[] {

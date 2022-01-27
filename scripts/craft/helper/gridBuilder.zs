@@ -4,6 +4,8 @@ import scripts.craft.grid.Grid;
 import scripts.craft.helper.characterManager.CharacterManager;
 #priority 3
 
+#loader crafttweaker reloadableevents
+
 
 zenClass GridBuilder {
 

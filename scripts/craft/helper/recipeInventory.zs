@@ -3,6 +3,8 @@ import crafttweaker.data.IData;
 import scripts.craft.helper.gridRecipe.GridRecipe;
 #priority 1
 
+#loader crafttweaker reloadableevents
+
 
 zenClass RecipeInventory {
   # Two values in array means recipes should be

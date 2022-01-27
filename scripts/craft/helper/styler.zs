@@ -9,6 +9,8 @@ using string styles
 
 #priority 5
 
+#loader crafttweaker reloadableevents
+
 zenClass Styler {
   zenConstructor() {}
 

@@ -1,6 +1,8 @@
 import crafttweaker.item.IIngredient;
 #priority 4
 
+#loader crafttweaker reloadableevents
+
 /* 
 
 List of character that has barely same width for most monospace fonts
