@@ -127,7 +127,7 @@ craft.remake(<rftools:crafter3>, ["pretty",
 	recipes.remove(<rftools:storage_module:1>);
 	recipes.addShaped("rftools_storage_module_1", <rftools:storage_module:1>, [
 		[<storagedrawers:upgrade_storage:0>, null, <storagedrawers:upgrade_storage:0>],
-		[<ore:circuitBasic>, <rftools:storage_module>.marked("module"), <ore:circuitBasic>], 
+		[<ore:circuitAdvanced>, <rftools:storage_module>.marked("module"), <ore:circuitAdvanced>], 
 		[<storagedrawers:upgrade_storage:0>, null, <storagedrawers:upgrade_storage:0>]
 	], function(out, ins, cInfo) {
 		if(ins has "module" && !isNull(ins.module) && ins.module.hasTag) {

@@ -227,6 +227,15 @@ craft.remake(<endreborn:block_end_stone_smooth> * 8, ["pretty",
   "e": <ore:endstone>, # End Stone
 });
 
+# [Purpur Lamp]*8 from [Magma Block][+1]
+craft.remake(<endreborn:block_purpur_lamp> * 8, ["pretty",
+  "■ ■ ■",
+  "■ ▄ ■",
+  "■ ■ ■"], {
+  "■": <minecraft:purpur_block>, # Purpur Block
+  "▄": <ore:blockMagma>,         # Magma Block
+});
+
 # Purpur guards are disables, so make Purpur Shards craftable
 mods.rustic.EvaporatingBasin.addRecipe(<endreborn:item_end_shard>, <liquid:liquidchorus> * 1000, 20*20);
 

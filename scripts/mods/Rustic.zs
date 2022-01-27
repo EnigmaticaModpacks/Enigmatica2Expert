@@ -61,3 +61,36 @@ craft.remake(<rustic:liquid_barrel>, ["pretty",
 
 # Crushed ice pricy alt
 mods.rustic.CrushingTub.addRecipe(<liquid:ice> * 100, null, <mctsmelteryio:iceball>);
+
+# [Wooden Lantern]*2 from [Charcoal]*3[+1]
+craft.remake(<rustic:lantern_wood> * 2, [
+  "#",
+  "c",
+  "#"], {
+  "#": <ore:plankWood>,    # Oak Wood Planks
+  "c": <minecraft:coal:*>, # Charcoal
+});
+
+# [Golden Lantern]*2 from [Gold Item Casing][+1]
+craft.remake(<rustic:golden_lantern> * 2, [
+  "c",
+  "⌂"], {
+  "c": <minecraft:coal:*>, # Charcoal
+  "⌂": <ic2:casing:2>,     # Gold Item Casing
+});
+
+# [Iron Lantern]*2 from [Iron Item Casing][+1]
+craft.remake(<rustic:iron_lantern> * 2, [
+  "c",
+  "⌂"], {
+  "c": <minecraft:coal:*>, # Charcoal
+  "⌂": <ic2:casing:3>,     # Iron Item Casing
+});
+
+# [Silver Lantern]*2 from [Silver Plate][+1]
+craft.remake(<rustic:silver_lantern> * 2, [
+  "c",
+  "□"], {
+  "c": <minecraft:coal:*>, # Charcoal
+  "□": <ore:plateSilver>,  # Silver Plate
+});

@@ -32,20 +32,76 @@ utils.rh(<ic2:resource:9>); # Tin blocks
 utils.rh(<ic2:resource:15>); # Silver blocks
 utils.rh(<ic2:resource:7>); # Lead blocks
 utils.rh(<ic2:misc_resource:5>); # Slag
+utils.rh(<openblocks:generic:1>); # Crane ingredient
+utils.rh(<openblocks:generic:2>);
+utils.rh(<openblocks:generic:3>);
+utils.rh(<openblocks:generic:4>);
+utils.rh(<openblocks:generic:5>);
 
 # TC nuggets
 for i in 0 .. 5 {
 	utils.rh(<thaumcraft:nugget>.definition.makeStack(i));
 }
 
-/*
 
-_.uniq(
-getFurnaceRecipes()
-.map(r=>[[r.in_id, r.in_meta], [r.out_id, r.out_meta]])
-.flat(1)
-.filter(([id,meta])=>isJEIBlacklisted(id,meta))
-.map(([id,meta])=>itemize(id,meta??0))
-).sort(naturalSort)
+					
+# *======= Metal Nuggets =======*
 
-*/
+utils.rh(<immersiveengineering:metal:29>);
+utils.rh(<immersiveengineering:metal:20>);
+utils.rh(<immersiveengineering:metal:21>);
+utils.rh(<immersiveengineering:metal:22>);
+utils.rh(<immersiveengineering:metal:23>);
+utils.rh(<immersiveengineering:metal:24>);
+utils.rh(<immersiveengineering:metal:26>);
+utils.rh(<immersiveengineering:metal:27>);
+utils.rh(<immersiveengineering:metal:28>);
+utils.rh(<extendedcrafting:material:128>);
+utils.rh(<extendedcrafting:material:129>);
+utils.rh(<opencomputers:material:29>); // Diamond nugget
+utils.rh(<opencomputers:material>);
+
+# Remove Refined storage cables
+if(isNull(loadedMods["refinedstorage"])) {
+	utils.rh(<immersivecables:coil_block:3>);
+	utils.rh(<immersivecables:wire_coil:3>);
+}
+
+/*Inject_js(
+getUnchangedFurnaceRecipes()
+.filter((r) => isJEIBlacklisted(r.in_id, r.in_meta) && !isPurged(r.input))
+.map(({input})=>[`furnace.remove(<*>, ${input});`])
+)*/
+furnace.remove(<*>, <actuallyadditions:item_dust:5>);
+furnace.remove(<*>, <bigreactors:dustgraphite>);
+furnace.remove(<*>, <bigreactors:oreyellorite>);
+furnace.remove(<*>, <biomesoplenty:gem_ore:7>);
+furnace.remove(<*>, <enderio:item_material:33>);
+furnace.remove(<*>, <forestry:resources:1>);
+furnace.remove(<*>, <forestry:resources:2>);
+furnace.remove(<*>, <ic2:dust:8>);
+furnace.remove(<*>, <ic2:dust>);
+furnace.remove(<*>, <ic2:resource:1>);
+furnace.remove(<*>, <ic2:resource:2>);
+furnace.remove(<*>, <ic2:resource:3>);
+furnace.remove(<*>, <ic2:resource:4>);
+furnace.remove(<*>, <iceandfire:sapphire_ore:*>);
+furnace.remove(<*>, <iceandfire:silver_ore:*>);
+furnace.remove(<*>, <immersiveengineering:metal:9>);
+furnace.remove(<*>, <immersiveengineering:metal:10>);
+furnace.remove(<*>, <immersiveengineering:metal:11>);
+furnace.remove(<*>, <immersiveengineering:metal:12>);
+furnace.remove(<*>, <immersiveengineering:metal:13>);
+furnace.remove(<*>, <immersiveengineering:metal:14>);
+furnace.remove(<*>, <immersiveengineering:metal:15>);
+furnace.remove(<*>, <immersiveengineering:metal:16>);
+furnace.remove(<*>, <immersiveengineering:metal:17>);
+furnace.remove(<*>, <immersiveengineering:metal:18>);
+furnace.remove(<*>, <immersiveengineering:metal:19>);
+furnace.remove(<*>, <immersiveengineering:ore:1>);
+furnace.remove(<*>, <immersiveengineering:ore:2>);
+furnace.remove(<*>, <immersiveengineering:ore:3>);
+furnace.remove(<*>, <immersiveengineering:ore:4>);
+furnace.remove(<*>, <immersiveengineering:ore>);
+furnace.remove(<*>, <twilightforest:raw_venison:*>);
+/**/

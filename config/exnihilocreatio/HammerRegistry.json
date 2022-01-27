@@ -251,15 +251,6 @@
       "fortuneChance": 0.0
     }
   ],
-  "endreborn:block_lormyte_crystal": [
-    {
-      "item": "endreborn:item_lormyte_crystal:0",
-      "amount": 2,
-      "miningLevel": 2,
-      "chance": 1.0,
-      "fortuneChance": 0.0
-    }
-  ],
   "harvestcraft:waxcomb": [
     {
       "item": "forestry:beeswax:0",

@@ -196,3 +196,37 @@ for aspect, ingr in {
 		[<thaumcraft:nugget:9>, ingr], null, null
 	);
 }
+
+
+// ---------------------------
+// Remake colored candles
+val candleColors = [
+	<thaumcraft:candle_white>,
+	<thaumcraft:candle_orange>,
+	<thaumcraft:candle_magenta>,
+	<thaumcraft:candle_lightblue>,
+	<thaumcraft:candle_yellow>,
+	<thaumcraft:candle_lime>,
+	<thaumcraft:candle_pink>,
+	<thaumcraft:candle_gray>,
+	<thaumcraft:candle_silver>,
+	<thaumcraft:candle_cyan>,
+	<thaumcraft:candle_purple>,
+	<thaumcraft:candle_blue>,
+	<thaumcraft:candle_brown>,
+	<thaumcraft:candle_green>,
+	<thaumcraft:candle_red>,
+	<thaumcraft:candle_black>,
+] as IItemStack[];
+for i, candle in candleColors {
+	recipes.remove(candle);
+
+	# [White Tallow Candle]*16 from [String][+1]
+	craft.make(candle * 16, [
+		"s",
+		"M",
+		"M"], {
+		"s": scripts.category.dye.oreDye[i],
+		"M": <thaumcraft:tallow>, # Magic Tallow
+	});
+}

@@ -1,4 +1,5 @@
 import mods.dropt.Dropt;
+import crafttweaker.item.IItemStack;
 
 /*
 
@@ -11,32 +12,42 @@ Manually add block drops info.
 
 
 
-/*Inject_js{
-
-setBlockDrops('advancedrocketry:geode', [{
-  stack: 'thermalfoundation:geode',
-  luck: [0,1,2,3].map(i=>[Math.max(1, Math.min(64, i**1.5*2)) | 0,Math.max(2, Math.min(64, i**1.5*4)) | 0])
-}])
-
-return '# Done!'
-}*/
+/*Inject_js(
+[...loadText('crafttweaker.log')
+  .matchAll(/Modify drop; Block: (?<block>.+) Drop: (?<stack>.+) (?<luck>\[.*\])/gm)
+].forEach(({groups: {block, stack, luck}}) =>
+  setBlockDrops(block, [{
+    stack: stack,
+    luck: eval(luck).slice(0, 4)
+  }])
+),
+'# Done!'
+)*/
 # Done!
 /**/
 
-val geode_rule = Dropt.rule()
-  .matchBlocks(["advancedrocketry:geode"])	
-  .addDrop(Dropt.drop()
-    .selector(Dropt.weight(1), "REQUIRED")
-    .items([<advancedrocketry:geode>])
-  );
+function addDrop(block as IItemStack, drop as IItemStack) as void {
+  val rule = Dropt.rule()
+    .matchBlocks([block.definition.id])
+    .addDrop(Dropt.drop()
+      .selector(Dropt.weight(1), "REQUIRED")
+      .items([block])
+    );
 
-for i in 0 to 8 {
-  geode_rule.addDrop(Dropt.drop()
-    .selector(Dropt.weight(pow(10, i)), "EXCLUDED", i)
-    .items([<thermalfoundation:geode>], Dropt.range(
-      max(1, min(64, (pow((i as double), 1.5d) * 2.0d) as int)),
-      max(2, min(64, (pow((i as double), 1.5d) * 4.0d) as int))
-    ))
-  );
+  var logStr = "Modify drop; Block: "~block.definition.id ~" Drop: "~drop.definition.id~" [";
+  for i in 0 to 8 {
+    val a = max(1, min(64, (pow((i as double), 1.5d) * 2.0d) as int));
+    val b = max(2, min(64, (pow((i as double), 1.5d) * 4.0d) as int));
+    rule.addDrop(Dropt.drop()
+      .selector(Dropt.weight(pow(10, i)), "EXCLUDED", i)
+      .items([drop], Dropt.range(a, b))
+    );
+    logStr += "["~ a ~", "~b~"],";
+  }
+  logStr += "]";
+  Dropt.list(block.definition.id.replaceAll(':','_')).add(rule);
+  utils.log(logStr);
 }
-Dropt.list("advrock_geode").add(geode_rule);
+
+addDrop(<advancedrocketry:geode>, <thermalfoundation:geode>);
+addDrop(<endreborn:block_lormyte_crystal>, <endreborn:item_lormyte_crystal>);

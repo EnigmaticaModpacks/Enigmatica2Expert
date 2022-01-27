@@ -207,7 +207,7 @@ tooltips.lang.trophy.snowman=§eSpawn snow
 tooltips.lang.trophy.squid=§eSpawn water
 tooltips.lang.trophy.witch=§eBlind player
 tooltips.lang.kill.slime.by.zombie=§2Drops when §nSlime§2 killed by §nZombie
-tooltips.lang.kill.slime.by.enderman=§2Drops when §nSlime§2 killed by §nEnderman
+tooltips.lang.kill.slime.by.enderman=§2Drops when §nSlime§2 killed by §nEnderman§2.§r\nUse §nChaos Reaper§r.
 tooltips.lang.kill.slime.by.marbled_cheese_golem=§2Drops when §nSlime§2 killed by §nRatlanean Automaton
 tooltips.lang.kill.slime.by.cockatrice=§2Drops when §nSlime§2 killed by §nCockatrice
 

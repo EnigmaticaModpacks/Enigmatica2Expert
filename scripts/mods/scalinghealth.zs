@@ -26,6 +26,7 @@ for mobId, ingr in {
   "quark:crab"                 : <ore:foodCrabraw>,                        #  Raw Crab
   "rats:illager_piper"         : <ore:foodCheese>,
   "iceandfire:stymphalianbird" : <ore:peacockFeathers>,
+  "iceandfire:dread_lich"      : <twilightforest:ice_bomb>,
 } as IIngredient[string] {
   mods.rustic.Condenser.addRecipe(
     <thermalexpansion:morb>.withTag({id: mobId}),

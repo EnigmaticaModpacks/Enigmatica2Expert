@@ -1,4 +1,5 @@
-import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
 #modloaded ironchest
 
 # *======= Recipes =======*
@@ -27,70 +28,34 @@ import crafttweaker.item.IItemStack as IItemStack;
 	[<ore:gemDiamondRat>, <ironchest:iron_chest:1>, <ore:gemDiamondRat>], 
 	[<ore:blockGlass>, <ore:gearDiamond>, <ore:blockGlass>]]);
 
-# Wood -> Iron
-	recipes.remove(<ironchest:wood_iron_chest_upgrade>);
-	recipes.addShaped("WoodToIron", 
-	<ironchest:wood_iron_chest_upgrade>, 
-	[[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>],
-	[<ore:plateIron>, <ore:plankWood>, <ore:plateIron>], 
-	[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]]);
+# Remove unused chests recipes
+recipes.removeByRecipeName("ironchest:shulker/purple/iron/copper_iron_shulker_box");
+recipes.removeByRecipeName("ironchest:shulker/purple/gold/silver_gold_shulker_box");
+recipes.removeByRecipeName("ironchest:shulker/purple/diamond/silver_diamond_shulker_box");
 
-# Iron -> Gold
-	recipes.remove(<ironchest:iron_gold_chest_upgrade>);
-	recipes.addShaped("IronToGold", 
-	<ironchest:iron_gold_chest_upgrade>, 
-	[[<ore:plateGold>, <ore:plateGold>, <ore:plateGold>],
-	[<ore:plateGold>, <ore:plateIron>, <ore:plateGold>], 
-	[<ore:plateGold>, <ore:plateGold>, <ore:plateGold>]]);
+for output, ingrs in {
+	<ironchest:wood_iron_chest_upgrade>          : [<ore:plateIron>],
+	<ironchest:iron_gold_chest_upgrade>          : [<ore:plateGold>],
+	<ironchest:gold_diamond_chest_upgrade>       : [<ore:gemDiamondRat>, <ore:gearDiamond>, <ore:blockGlass>],
+	<ironchest:diamond_crystal_chest_upgrade>    : [<ore:blockGlass>],
+	<ironchest:diamond_obsidian_chest_upgrade>   : [<ore:obsidian>],
 
-# Gold -> Diamond
-	recipes.remove(<ironchest:gold_diamond_chest_upgrade>);
-	recipes.addShaped("GoldToDiamond", 
-	<ironchest:gold_diamond_chest_upgrade>, 
-	[[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>],
-	[<ore:gemDiamondRat>, <ore:plateGold>, <ore:gemDiamondRat>], 
-	[<ore:blockGlass>, <ore:gearDiamond>, <ore:blockGlass>]]);
-
-# Shulker Wood -> Iron
-	recipes.remove(<ironchest:vanilla_iron_shulker_upgrade>);
-	recipes.addShaped("ShulkerWoodToIron",
-	<ironchest:vanilla_iron_shulker_upgrade>, 
-	[[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>],
-	[<ore:plateIron>, <ore:shulkerShell>, <ore:plateIron>],
-	[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]]);
-
-# Shulker Iron -> Gold
-	recipes.remove(<ironchest:iron_gold_shulker_upgrade>);
-	recipes.addShaped("ShulkerIronToGold", 
-	<ironchest:iron_gold_shulker_upgrade>, 
-	[[<ore:plateGold>, <ore:plateGold>, <ore:plateGold>],
-	[<ore:plateGold>, <ore:plateDenseIron>, <ore:plateGold>], 
-	[<ore:plateGold>, <ore:plateGold>, <ore:plateGold>]]);
-
-# Shulker Gold -> Diamond
-	recipes.remove(<ironchest:gold_diamond_shulker_upgrade>);
-	recipes.addShaped("ShulkerGoldToDiamond", 
-	<ironchest:gold_diamond_shulker_upgrade>, 
-	[[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>],
-	[<ore:gemDiamondRat>, <ore:plateDenseGold>, <ore:gemDiamondRat>], 
-	[<ore:blockGlass>, <ore:gearDiamond>, <ore:blockGlass>]]);
-
-# Shulker Diamond -> Crystal
-	recipes.remove(<ironchest:diamond_crystal_shulker_upgrade>);
-	recipes.addShaped("Shulker Diamond -> Crystal", 
-	<ironchest:diamond_crystal_shulker_upgrade>, 
-	[[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>],
-	[<ore:blockGlass>, <ore:gemQuartz>, <ore:blockGlass>], 
-	[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>]]);
-
-# Shulker Diamond -> Obsidian
-	recipes.remove(<ironchest:diamond_obsidian_shulker_upgrade>);
-	recipes.addShaped("Shulker Diamond -> Obsidian", 
-	<ironchest:diamond_obsidian_shulker_upgrade>, 
-	[[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>],
-	[<ore:blockGlass>, <ore:plateObsidian>, <ore:blockGlass>], 
-	[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>]]);
-
+	<ironchest:vanilla_iron_shulker_upgrade>     : [<ic2:casing:3>/* Iron Item Casing */],
+	<ironchest:iron_gold_shulker_upgrade>        : [<ic2:casing:2>/* Gold Item Casing */],
+	<ironchest:gold_diamond_shulker_upgrade>     : [<ore:gemDiamondRat>, <ore:gemDiamondRat>, <ore:paneGlass>],
+	<ironchest:diamond_crystal_shulker_upgrade>  : [<ore:paneGlass>],
+	<ironchest:diamond_obsidian_shulker_upgrade> : [<ore:obsidian>, null],
+} as IIngredient[][IItemStack] {
+	craft.remake(output, ["pretty",
+		"  ■  ",
+		"◊ ‚ ◊",
+		"■ ¤ ■"], {
+		"¤": ingrs.length > 1 ? ingrs[1] : ingrs[0],
+		"■": ingrs.length > 2 ? ingrs[2] : ingrs[0],
+		"◊": ingrs[0],
+		"‚": <ore:nuggetFakeIron>, # Iron Alloy Nugget
+	});
+}
 	
 # *======= Remove & Hide =======*
 

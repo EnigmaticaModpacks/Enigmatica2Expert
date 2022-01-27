@@ -43,11 +43,11 @@ import crafttweaker.item.WeightedItemStack;
 	[<ore:ingotElvenElementium>, <ore:ingotElvenElementium>, <ore:ingotElvenElementium>]]);
 
 # [Terrestrial Artifact] from [Empowered Palis Crystal][+6]
-craft.remake(<biomesoplenty:terrestrial_artifact>, ["pretty",
+craft.remake(<biomesoplenty:terrestrial_artifact> * 3, ["pretty",
   "S S S",
   "p * o",
   "E ☼ m"], {
-  "S": <actuallyadditions:item_solidified_experience>, # Solidified Experience
+  "S": <ore:itemXP>,																   # Solidified Experience
   "p": <actuallyadditions:item_crystal_empowered>,     # Empowered Restonia Crystal
   "E": <actuallyadditions:item_crystal_empowered:3>,   # Empowered Void Crystal
   "*": <actuallyadditions:item_crystal_empowered:1>,   # Empowered Palis Crystal
@@ -57,11 +57,11 @@ craft.remake(<biomesoplenty:terrestrial_artifact>, ["pretty",
 });
 
 # [Terrestrial Artifact Block] from [Empowered Palis Crystal Block][+6]
-craft.remake(<contenttweaker:terrestrial_artifact_block>, ["pretty",
+craft.remake(<contenttweaker:terrestrial_artifact_block> * 3, ["pretty",
   "S S S",
   "◘ ◙ *",
   "■ □ ☼"], {
-  "S": <actuallyadditions:item_solidified_experience>, # Solidified Experience
+  "S": <ore:itemXP>,																   # Solidified Experience
   "■": <actuallyadditions:block_crystal_empowered:3>,  # Empowered Void Crystal Block
   "□": <actuallyadditions:block_crystal_empowered:4>,  # Empowered Emeradic Crystal Block
   "◘": <actuallyadditions:block_crystal_empowered>,    # Empowered Restonia Crystal Block
@@ -118,3 +118,23 @@ scripts.process.squeeze([<biomesoplenty:leaves_3:8>], <liquid:lava> * 240, "only
 # [Celestial Crystal Shard] from [Obsidian Shard][+1]
 scripts.process.alloy([<ore:crystalPureFluix>, <tconstruct:shard>.withTag({Material: "obsidian"})], <biomesoplenty:crystal_shard>, "only: Kiln");
 scripts.process.alloy([<ore:crystalPureFluix>, <tconstruct:shard>.withTag({Material: "obsidian"})], <biomesoplenty:crystal_shard> * 4, "only: AdvRockArc");
+
+# [Biome Finder] from [Cobweb][+2]
+craft.remake(<biomesoplenty:biome_finder>, ["pretty",
+  "d G d",
+  "G C G",
+  "d G d"], {
+  "d": <ore:dyePurple>, # Purple Dye
+  "G": <biomesoplenty:coral:*>,     # Glowing Coral
+  "C": <minecraft:web>,             # Cobweb
+});
+
+# [Nature's Compass] from [Biome Finder][+2]
+craft.remake(<naturescompass:naturescompass>, ["pretty",
+  "M a M",
+  "a B a",
+  "M a M"], {
+  "M": <tconstruct:materials:19>,         # Mending Moss
+  "a": <extrautils2:decorativesolidwood>, # Magical Planks
+  "B": <biomesoplenty:biome_finder>,      # Biome Finder
+});

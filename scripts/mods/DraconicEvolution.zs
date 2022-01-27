@@ -202,3 +202,22 @@ craft.remake(<draconicevolution:particle_generator:2>, ["pretty",
   "¤": <ore:gearMithril>,                 # Mana Infused Gear
   "D": <draconicevolution:draconic_core>, # Draconic Core
 });
+
+# [Energy Infuser] from [Steel Casing][+2]
+craft.remake(<draconicevolution:energy_infuser>, ["pretty",
+  "  ◘  ",
+  "¤ ⌂ ¤"], {
+  "◘": <nuclearcraft:lithium_ion_cell>.withTag({}), # Lithium Ion Cell
+  "¤": <ore:gearDraconium>,                         # Draconium Gear
+  "⌂": <mekanism:basicblock:8>,                     # Steel Casing
+});
+
+# [Disenchanter] from [Enchantment Table][+3]
+craft.remake(<draconicevolution:diss_enchanter>, ["pretty",
+  "▬ ■ ▬",
+  "E n E"], {
+  "▬": <ore:ingotDraconium>,         # Draconium Ingot
+  "■": <ore:blockAlubrass>,          # Block of Aluminum Brass
+  "E": <minecraft:enchanted_book:*>, # Enchanted Book
+  "n": <minecraft:enchanting_table>, # Enchantment Table
+});

@@ -227,12 +227,12 @@ function getShards(
 
   // Calculate material amount for each parts
   val deconstructed = Toolforge.deconstructTool(input);
-  var listCost = [] as double[];
-  for dec in deconstructed {
+  var listCost = [1.0d, 1.0d, 1.0d, 1.0d] as double[];
+  for i, dec in deconstructed {
     if(isNull(dec.tag.Material)) continue;
     val partCost = partsCosts[dec.definition.id];
     val cost = !isNull(partCost) ? partCost as double : 1.0d;
-    listCost += cost * quantity * 2.0d;
+    listCost[i] = cost * quantity * 2.0d;
   }
 
   // Return if only one mat avaliable

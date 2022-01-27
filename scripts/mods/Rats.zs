@@ -380,3 +380,13 @@ scripts.loot.entity_kill_entity.add("minecraft:slime", "rats:marbled_cheese_gole
 
 # Bonus loot
 scripts.loot.entity_kill_entity.add("minecraft:slime", "rats:rat", <mysticalagriculture:coal>);
+
+# [Rat Lantern] from [Raw Rat][+2]
+craft.remake(<rats:rat_lantern> * 8, [
+  "‚",
+  "A",
+  "C"], {
+  "‚": <ore:nuggetGold>, # Gold Nugget
+  "A": <ore:foodRatraw>, # Raw Rat
+  "C": <forestry:carton>,# Carton
+});

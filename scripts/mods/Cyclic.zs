@@ -72,14 +72,14 @@ craft.remake(<cyclicmagic:tool_launcher>, ["pretty",
   "S": <tconstruct:slimesling:*>.anyDamage() # Slimesling
 });
 
-# [Storage_Bag] from [Crystallized_Amber][+2]
+# [Storage Bag] from [Cobweb][+2]
 craft.remake(<cyclicmagic:storage_bag>, ["pretty",
-  "  B  ",
-  "M C M",
+  "  C  ",
+  "U C U",
   "B B B"], {
+  "C": <minecraft:web>,                     # Cobweb
+  "U": <colossalchests:uncolossal_chest>,   # Uncolossal Chest
   "B": <actuallyadditions:item_hairy_ball>, # Ball of Fur
-  "C": <cyclicmagic:crystallized_amber>,    # Crystallized Amber
-  "M": <extrautils2:decorativesolidwood>    # Magical Planks
 });
 
 

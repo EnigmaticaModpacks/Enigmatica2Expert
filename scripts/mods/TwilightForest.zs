@@ -239,6 +239,49 @@ craft.remake(<twilightforest:boss_spawner:5>, ["pretty",
   "G": <botania_tweaks:compressed_tiny_potato_8>, # Galactic Potato
 });
 
+# [Lamp of Cinders] from [Twilit Shader_ Snow Queen][+4]
+craft.make(<twilightforest:lamp_of_cinders>, ["pretty",
+  "▲    ",
+  "i w T",
+  "■ ■ ■"], {
+  "▲": <ore:dustGelidEnderium>, # Gelid Enderium Dust
+  "i": <twilightforest:shader>.withTag({shader_type: "Alpha Yeti"}), # Twilit Shader: Alpha Yeti
+  "w": <twilightforest:shader>.withTag({shader_type: "Snow Queen"}), # Twilit Shader: Snow Queen
+  "T": <twilightforest:shader>.withTag({shader_type: "Ur-Ghast"}), # Twilit Shader: Ur-Ghast
+  "■": <ore:blockAlubrass>,     # Block of Aluminum Brass
+});
+
+# [Castle Brick] from [Lamp of Cinders][+2]
+craft.make(<twilightforest:castle_brick>, ["pretty",
+  "■ ▲ ■",
+  "■ L ■",
+  "■ ■ ■"], {
+  "■": <ore:blockSalt>,  # Salt Block
+  "▲": <ore:dustNickel>, # Pulverized Nickel
+  "L": <twilightforest:lamp_of_cinders>.anyDamage().transformDamage(1), # Lamp of Cinders
+});
+
+val castleIngrs = {
+  "C": <twilightforest:castle_brick:*>, # Castle Brick
+  "▲": <ore:dustCalciumSulfate>,        # Calcium Sulfate
+  "P": <randomthings:runedust:6>,       # Pink Runic Dust
+  "∆": <randomthings:runedust:11>,      # Blue Runic Dust
+  "♣": <randomthings:runedust:4>,       # Yellow Runic Dust
+  "♠": <randomthings:runedust:10>,      # Purple Runic Dust
+} as IIngredient[string];
+
+# [Pink Castle Rune Brick] from [Pink Runic Dust][+2]
+craft.shapeless(<twilightforest:castle_rune_brick>, "CC▲P", castleIngrs);
+
+# [Blue Castle Rune Brick] from [Blue Runic Dust][+2]
+craft.shapeless(<twilightforest:castle_rune_brick:1>, "CC▲∆", castleIngrs);
+
+# [Yellow Castle Rune Brick] from [Yellow Runic Dust][+2]
+craft.shapeless(<twilightforest:castle_rune_brick:2>, "CC▲♣", castleIngrs);
+
+# [Violet Castle Rune Brick] from [Purple Runic Dust][+2]
+craft.shapeless(<twilightforest:castle_rune_brick:3>, "CC▲♠", castleIngrs);
+
 #-------------------------------------------------------------------------
 
 # Alt from chicken

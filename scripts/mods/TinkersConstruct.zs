@@ -357,7 +357,7 @@ craft.make(<tconstruct:tooltables:4>.withTag({
   "p": <ore:pattern>,        # Blank Pattern
   "a": <tconstruct:book>,    # Materials and You
   "#": <forestry:wood_pile>, # Wood Pile
-  "c": <ore:chest>,          # Oak Chest
+  "c": <ore:chest> | <tconstruct:tooltables:4>, # Oak Chest
   "M": <conarm:book>         # Materials and You - Armory Addendum
 });
 ########################################################################################

@@ -55,15 +55,20 @@ import crafttweaker.item.IItemStack;
 	[<extendedcrafting:pedestal>, <extendedcrafting:pedestal>, <extendedcrafting:pedestal>]], 
 	40, <liquid:coal> * 5000);
 	
-# Compression
-	recipes.remove(<extendedcrafting:compressor>);
-	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:compressor>, 
-	[[piston, piston, piston, piston, piston], 
-	[piston, <ic2:te:43>, <excompressum:auto_compressor>, <ic2:te:43>, piston], 
-	[piston, <extendedcrafting:storage>, <mekanism:machineblock:7>.withTag({recipeType: 3}), <extendedcrafting:storage>, piston], 
-	[piston, <ic2:te:43>, <excompressum:auto_compressor>, <ic2:te:43>, piston], 
-	[piston, piston, piston, piston, piston]]);  
-	
+# [Quantum Compressor] from [Elite Compressing Factory][+4]
+	craft.remake(<extendedcrafting:compressor>, ["pretty",
+		"P P P P P",
+		"P C A C P",
+		"P ■ E ■ P",
+		"P C A C P",
+		"P P P P P"], {
+		"P": <ore:craftingPiston>,           # Piston
+		"C": <ic2:te:43>,                    # Compressor
+		"A": <excompressum:auto_compressor>, # Auto Compressor
+		"■": <ore:blockBlackIron>,           # Block of Black Iron
+		"E": <mekanism:tierinstaller:2>,
+	});
+
 # Advanced Crafting
 	recipes.remove(<extendedcrafting:table_advanced>);
 	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, 
@@ -166,4 +171,13 @@ craft.remake(<extendedcrafting:material:8>, ["pretty",
   "  B  "], {
   "B": <extendedcrafting:material:14>, # Basic Component
   "C": <minecraft:web>,                # Cobweb
+});
+
+# [Black Iron Frame]*8 from [Quartz Glass][+1]
+craft.remake(<extendedcrafting:frame> * 8, ["pretty",
+  "‚ ⌃ ‚",
+  "⌃   ⌃",
+  "‚ ⌃ ‚"], {
+  "‚": <ore:nuggetBlackIron>,              # Black Iron Nugget
+  "⌃": <appliedenergistics2:quartz_glass>, # Quartz Glass
 });

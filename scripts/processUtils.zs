@@ -28,7 +28,7 @@ function isNotException(exceptions as string, machineName as string) as bool  {
 
     val isHaveWord    = exc.matches(".*\b" ~ name ~ "\b.*");
     val isAfterStrict = exc.matches(".*strict:.*" ~ name ~ "\b.*");
-    val isOnly        = exc.matches("^only:.*");
+    val isOnly        = exc.matches("^(only|strict):.*");
 
     return isAfterStrict || !(isHaveWord ^ isOnly);
   }
@@ -94,6 +94,15 @@ function wholesCalc(inputAmount as int, outputAmount as double) as double[string
   val ins = 1.0d / residue;
   val outs = outputAmount * ins;
   return {"ins": ins, "outs": outs, "out1": out1};
+}
+
+# Summ of chances should be equal 1
+function normalizeChances(combinedChances as float[]) as float[]  {
+  var chancesSumm = 0.0f;
+  var normalizedChances = [] as float[];
+  for ch in combinedChances { chancesSumm += ch; }
+  for ch in combinedChances { normalizedChances += ch / chancesSumm; }
+  return normalizedChances;
 }
 
 # ######################################################################

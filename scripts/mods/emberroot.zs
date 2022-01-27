@@ -10,4 +10,3 @@ scripts.loot.animal_drops.tweak("emberroot:entity/skeleton_frozen","main","minec
 scripts.loot.animal_drops.tweak("emberroot:entity/sprite_mini","main","minecraft:rotten_flesh", null, [<mysticalagriculture:nature_essence>], [1,3]);
 scripts.loot.animal_drops.tweak("emberroot:entity/sprite_normal","main","minecraft:rotten_flesh", null, [<mysticalagriculture:dye_essence>], [2,7]);
 scripts.loot.animal_drops.tweak("emberroot:entity/sprite_greater","main",null, null, [<mysticalagriculture:platinum_essence>], [1,3]);
-scripts.loot.animal_drops.tweak("emberroot:entity/sprite_boss","main",null, null, [<mysticalagriculture:ender_amethyst_essence>], [6,12]);

@@ -211,39 +211,38 @@ addInfFur(<ore:oreTin>                             , [RE % 1, <thermalfoundation
 addInfFur(<ore:oreTitanium>                        , [RE % 1, <libvulpes:productnugget:7> % 33]);
 addInfFur(<ore:oreTopaz>                           , [RE % 1, <jaopca:item_nuggettopaz> % 33]);
 addInfFur(<ore:oreUranium>                         , [RE % 1, <immersiveengineering:metal:25> % 33]);
-addInfFur(<rats:rat_nugget_ore:1>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 7 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 7 as short}}), [<thermalfoundation:material:16> * 20 % 50]);
-addInfFur(<rats:rat_nugget_ore:2>.withTag({OreItem: {id: "forestry:resources", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "forestry:apatite", Count: 1 as byte, Damage: 0 as short}}), [<jaopca:item_nuggetmagnesium> * 13 % 50]);
-addInfFur(<rats:rat_nugget_ore:3>.withTag({OreItem: {id: "astralsorcery:blockcustomsandore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "astralsorcery:itemcraftingcomponent", Count: 3 as byte, Damage: 0 as short}}), [<thermalfoundation:material:17> * 20 % 50]);
-addInfFur(<rats:rat_nugget_ore:4>.withTag({OreItem: {id: "tconstruct:ore", Count: 1 as byte, Damage: 1 as short}, IngotItem: {id: "tconstruct:ingots", Count: 1 as byte, Damage: 1 as short}}), [<minecraft:gold_nugget> * 13 % 50]);
-addInfFur(<rats:rat_nugget_ore:6>.withTag({OreItem: {id: "actuallyadditions:block_misc", Count: 1 as byte, Damage: 3 as short}, IngotItem: {id: "actuallyadditions:item_misc", Count: 1 as byte, Damage: 5 as short}}), [<jaopca:item_nuggetaquamarine> * 40 % 50]);
-addInfFur(<rats:rat_nugget_ore:7>.withTag({OreItem: {id: "nuclearcraft:ore", Count: 1 as byte, Damage: 5 as short}, IngotItem: {id: "nuclearcraft:ingot", Count: 1 as byte, Damage: 5 as short}}), [<thaumcraft:nugget:9> * 30 % 50]);
-addInfFur(<rats:rat_nugget_ore:9>.withTag({OreItem: {id: "minecraft:coal_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "minecraft:coal", Count: 1 as byte, Damage: 0 as short}}), [<thaumcraft:nugget:9> * 30 % 50]);
-addInfFur(<rats:rat_nugget_ore:10>.withTag({OreItem: {id: "tconstruct:ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "tconstruct:ingots", Count: 1 as byte, Damage: 0 as short}}), [<thermalfoundation:material:197> * 13 % 50]);
-addInfFur(<rats:rat_nugget_ore:12>.withTag({OreItem: {id: "minecraft:diamond_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "minecraft:diamond", Count: 1 as byte, Damage: 0 as short}}), [<jaopca:item_nuggetmalachite> * 20 % 50]);
-addInfFur(<rats:rat_nugget_ore:13>.withTag({OreItem: {id: "draconicevolution:draconium_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "draconicevolution:draconium_ingot", Count: 1 as byte, Damage: 0 as short}}), [<jaopca:item_nuggetastralstarmetal> * 13 % 50]);
-addInfFur(<rats:rat_nugget_ore:14>.withTag({OreItem: {id: "minecraft:emerald_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "minecraft:emerald", Count: 1 as byte, Damage: 0 as short}}), [<jaopca:item_nuggetmalachite> * 20 % 50]);
-addInfFur(<rats:rat_nugget_ore:45>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 0 as short}}), [<jaopca:item_nuggetchargedcertusquartz> * 20 % 50]);
-addInfFur(<rats:rat_nugget_ore:46>.withTag({OreItem: {id: "minecraft:gold_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "minecraft:gold_ingot", Count: 1 as byte, Damage: 0 as short}}), [<thermalfoundation:material:196> * 13 % 50]);
-addInfFur(<rats:rat_nugget_ore:47>.withTag({OreItem: {id: "thermalfoundation:ore", Count: 1 as byte, Damage: 7 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1 as byte, Damage: 135 as short}}), [<mekanism:nugget:1> * 13 % 50]);
-addInfFur(<rats:rat_nugget_ore:48>.withTag({OreItem: {id: "minecraft:iron_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "minecraft:iron_ingot", Count: 1 as byte, Damage: 0 as short}}), [<minecraft:gold_nugget> * 13 % 50]);
-addInfFur(<rats:rat_nugget_ore:49>.withTag({OreItem: {id: "minecraft:lapis_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "minecraft:dye", Count: 1 as byte, Damage: 4 as short}}), [<jaopca:item_nuggetsapphire> * 20 % 50]);
-addInfFur(<rats:rat_nugget_ore:51>.withTag({OreItem: {id: "nuclearcraft:ore", Count: 1 as byte, Damage: 6 as short}, IngotItem: {id: "nuclearcraft:ingot", Count: 1 as byte, Damage: 6 as short}}), [<jaopca:item_nuggetapatite> * 64 % 50]);
-addInfFur(<rats:rat_nugget_ore:52>.withTag({OreItem: {id: "nuclearcraft:ore", Count: 1 as byte, Damage: 7 as short}, IngotItem: {id: "nuclearcraft:ingot", Count: 1 as byte, Damage: 7 as short}}), [<thermalfoundation:material:192> * 13 % 50]);
-addInfFur(<rats:rat_nugget_ore:53>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 5 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 5 as short}}), [<thermalfoundation:material:192> * 13 % 50]);
-addInfFur(<rats:rat_nugget_ore:54>.withTag({OreItem: {id: "thermalfoundation:ore", Count: 1 as byte, Damage: 8 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1 as byte, Damage: 136 as short}}), [<jaopca:item_nuggetastralstarmetal> * 13 % 50]);
-addInfFur(<rats:rat_nugget_ore:77>.withTag({OreItem: {id: "minecraft:quartz_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "minecraft:quartz", Count: 1 as byte, Damage: 0 as short}}), [<thermalfoundation:material:16> * 20 % 50]);
-addInfFur(<rats:rat_nugget_ore:86>.withTag({OreItem: {id: "thermalfoundation:ore", Count: 1 as byte, Damage: 5 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1 as byte, Damage: 133 as short}}), [<mekanism:nugget:1> * 13 % 50]);
-addInfFur(<rats:rat_nugget_ore:87>.withTag({OreItem: {id: "mekanism:oreblock", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "mekanism:ingot", Count: 1 as byte, Damage: 1 as short}}), [<thermalfoundation:material:198> * 13 % 50]);
-addInfFur(<rats:rat_nugget_ore:88>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 2 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 2 as short}}), [<thermalfoundation:material:16> * 20 % 50]);
-addInfFur(<rats:rat_nugget_ore:90>.withTag({OreItem: {id: "thermalfoundation:ore", Count: 1 as byte, Damage: 6 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1 as byte, Damage: 134 as short}}), [<thermalfoundation:material:199> * 13 % 50]);
-addInfFur(<rats:rat_nugget_ore:92>.withTag({OreItem: {id: "minecraft:redstone_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "minecraft:redstone", Count: 1 as byte, Damage: 0 as short}}), [<jaopca:item_nuggetquartzblack> * 20 % 50]);
-addInfFur(<rats:rat_nugget_ore:93>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 1 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 1 as short}}), [<jaopca:item_nuggetmagnesium> * 13 % 50]);
-addInfFur(<rats:rat_nugget_ore:94>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 6 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 6 as short}}), [<draconicevolution:nugget> * 13 % 50]);
-addInfFur(<rats:rat_nugget_ore:96>.withTag({OreItem: {id: "astralsorcery:blockcustomore", Count: 1 as byte, Damage: 1 as short}, IngotItem: {id: "astralsorcery:itemcraftingcomponent", Count: 1 as byte, Damage: 1 as short}}), [<thermalfoundation:material:16> * 20 % 50]);
-addInfFur(<rats:rat_nugget_ore:97>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 4 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 4 as short}}), [<thermalfoundation:material:16> * 20 % 50]);
-addInfFur(<rats:rat_nugget_ore:98>.withTag({OreItem: {id: "nuclearcraft:ore", Count: 1 as byte, Damage: 3 as short}, IngotItem: {id: "nuclearcraft:ingot", Count: 1 as byte, Damage: 3 as short}}), [<jaopca:item_nuggetboron> * 13 % 50]);
-addInfFur(<rats:rat_nugget_ore:100>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 3 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 3 as short}}), [<thaumcraft:nugget:9> * 30 % 50]);
-addInfFur(<rats:rat_nugget_ore:102>.withTag({OreItem: {id: "immersiveengineering:ore", Count: 1 as byte, Damage: 5 as short}, IngotItem: {id: "immersiveengineering:metal", Count: 1 as byte, Damage: 5 as short}}), [<jaopca:item_nuggetlithium> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:1>.withTag({OreItem: {id: "forestry:resources", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "forestry:apatite", Count: 1 as byte, Damage: 0 as short}}), [<jaopca:item_nuggetmagnesium> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:2>.withTag({OreItem: {id: "astralsorcery:blockcustomsandore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "astralsorcery:itemcraftingcomponent", Count: 3 as byte, Damage: 0 as short}}), [<thermalfoundation:material:17> * 20 % 50]);
+addInfFur(<rats:rat_nugget_ore:3>.withTag({OreItem: {id: "tconstruct:ore", Count: 1 as byte, Damage: 1 as short}, IngotItem: {id: "tconstruct:ingots", Count: 1 as byte, Damage: 1 as short}}), [<minecraft:gold_nugget> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:5>.withTag({OreItem: {id: "actuallyadditions:block_misc", Count: 1 as byte, Damage: 3 as short}, IngotItem: {id: "actuallyadditions:item_misc", Count: 1 as byte, Damage: 5 as short}}), [<jaopca:item_nuggetaquamarine> * 40 % 50]);
+addInfFur(<rats:rat_nugget_ore:6>.withTag({OreItem: {id: "nuclearcraft:ore", Count: 1 as byte, Damage: 5 as short}, IngotItem: {id: "nuclearcraft:ingot", Count: 1 as byte, Damage: 5 as short}}), [<thaumcraft:nugget:9> * 30 % 50]);
+addInfFur(<rats:rat_nugget_ore:8>.withTag({OreItem: {id: "minecraft:coal_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "minecraft:coal", Count: 1 as byte, Damage: 0 as short}}), [<thaumcraft:nugget:9> * 30 % 50]);
+addInfFur(<rats:rat_nugget_ore:9>.withTag({OreItem: {id: "tconstruct:ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "tconstruct:ingots", Count: 1 as byte, Damage: 0 as short}}), [<thermalfoundation:material:197> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:11>.withTag({OreItem: {id: "minecraft:diamond_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "minecraft:diamond", Count: 1 as byte, Damage: 0 as short}}), [<jaopca:item_nuggetmalachite> * 20 % 50]);
+addInfFur(<rats:rat_nugget_ore:12>.withTag({OreItem: {id: "draconicevolution:draconium_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "draconicevolution:draconium_ingot", Count: 1 as byte, Damage: 0 as short}}), [<jaopca:item_nuggetastralstarmetal> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:13>.withTag({OreItem: {id: "minecraft:emerald_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "minecraft:emerald", Count: 1 as byte, Damage: 0 as short}}), [<jaopca:item_nuggetmalachite> * 20 % 50]);
+addInfFur(<rats:rat_nugget_ore:44>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 0 as short}}), [<jaopca:item_nuggetchargedcertusquartz> * 20 % 50]);
+addInfFur(<rats:rat_nugget_ore:45>.withTag({OreItem: {id: "minecraft:gold_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "minecraft:gold_ingot", Count: 1 as byte, Damage: 0 as short}}), [<thermalfoundation:material:196> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:46>.withTag({OreItem: {id: "thermalfoundation:ore", Count: 1 as byte, Damage: 7 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1 as byte, Damage: 135 as short}}), [<mekanism:nugget:1> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:47>.withTag({OreItem: {id: "minecraft:iron_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "minecraft:iron_ingot", Count: 1 as byte, Damage: 0 as short}}), [<minecraft:gold_nugget> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:48>.withTag({OreItem: {id: "minecraft:lapis_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "minecraft:dye", Count: 1 as byte, Damage: 4 as short}}), [<jaopca:item_nuggetsapphire> * 20 % 50]);
+addInfFur(<rats:rat_nugget_ore:50>.withTag({OreItem: {id: "nuclearcraft:ore", Count: 1 as byte, Damage: 6 as short}, IngotItem: {id: "nuclearcraft:ingot", Count: 1 as byte, Damage: 6 as short}}), [<jaopca:item_nuggetapatite> * 64 % 50]);
+addInfFur(<rats:rat_nugget_ore:51>.withTag({OreItem: {id: "nuclearcraft:ore", Count: 1 as byte, Damage: 7 as short}, IngotItem: {id: "nuclearcraft:ingot", Count: 1 as byte, Damage: 7 as short}}), [<thermalfoundation:material:192> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:52>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 5 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 5 as short}}), [<thermalfoundation:material:192> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:53>.withTag({OreItem: {id: "thermalfoundation:ore", Count: 1 as byte, Damage: 8 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1 as byte, Damage: 136 as short}}), [<jaopca:item_nuggetastralstarmetal> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:76>.withTag({OreItem: {id: "minecraft:quartz_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "minecraft:quartz", Count: 1 as byte, Damage: 0 as short}}), [<thermalfoundation:material:16> * 20 % 50]);
+addInfFur(<rats:rat_nugget_ore:85>.withTag({OreItem: {id: "thermalfoundation:ore", Count: 1 as byte, Damage: 5 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1 as byte, Damage: 133 as short}}), [<mekanism:nugget:1> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:86>.withTag({OreItem: {id: "mekanism:oreblock", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "mekanism:ingot", Count: 1 as byte, Damage: 1 as short}}), [<thermalfoundation:material:198> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:87>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 2 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 2 as short}}), [<thermalfoundation:material:16> * 20 % 50]);
+addInfFur(<rats:rat_nugget_ore:89>.withTag({OreItem: {id: "thermalfoundation:ore", Count: 1 as byte, Damage: 6 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1 as byte, Damage: 134 as short}}), [<thermalfoundation:material:199> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:91>.withTag({OreItem: {id: "minecraft:redstone_ore", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "minecraft:redstone", Count: 1 as byte, Damage: 0 as short}}), [<jaopca:item_nuggetquartzblack> * 20 % 50]);
+addInfFur(<rats:rat_nugget_ore:92>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 1 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 1 as short}}), [<jaopca:item_nuggetmagnesium> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:93>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 6 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 6 as short}}), [<draconicevolution:nugget> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:95>.withTag({OreItem: {id: "astralsorcery:blockcustomore", Count: 1 as byte, Damage: 1 as short}, IngotItem: {id: "astralsorcery:itemcraftingcomponent", Count: 1 as byte, Damage: 1 as short}}), [<thermalfoundation:material:16> * 20 % 50]);
+addInfFur(<rats:rat_nugget_ore:96>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 4 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 4 as short}}), [<thermalfoundation:material:16> * 20 % 50]);
+addInfFur(<rats:rat_nugget_ore:97>.withTag({OreItem: {id: "nuclearcraft:ore", Count: 1 as byte, Damage: 3 as short}, IngotItem: {id: "nuclearcraft:ingot", Count: 1 as byte, Damage: 3 as short}}), [<jaopca:item_nuggetboron> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:99>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 3 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 3 as short}}), [<thaumcraft:nugget:9> * 30 % 50]);
+addInfFur(<rats:rat_nugget_ore:101>.withTag({OreItem: {id: "immersiveengineering:ore", Count: 1 as byte, Damage: 5 as short}, IngotItem: {id: "immersiveengineering:metal", Count: 1 as byte, Damage: 5 as short}}), [<jaopca:item_nuggetlithium> * 13 % 50]);
 addInfFur(<thaumcraft:cluster:*>                   , [RE % 2]);
 addInfFur(<thaumcraft:cluster:1>                   , [<minecraft:gold_nugget> % 33, <thermalfoundation:material:196> * 27 % 50]);
 addInfFur(<thaumcraft:cluster:2>                   , [<thaumcraft:nugget:1> % 33, <minecraft:gold_nugget> * 27 % 50, <thermalfoundation:material:192> * 2 % 32]);
@@ -553,13 +552,15 @@ static turbineFuel as int[string][] = [
   {ic2biogas       : 50},
   {diesel          : 70},
   {ethene          : 80},
+  {liquidethene    : 80},
+  {"bio.ethanol"   : 90},
   {biofuel         : 90},
   {refined_oil     : 95},
   {rocket_fuel     : 95},
   {syngas          : 100},
   {refined_fuel    : 105},
-  {fire_water      : 120},
   {empoweredoil    : 120},
+  {fire_water      : 120},
   {rocketfuel      : 410},
   {perfect_fuel    : 32800},
 /**/

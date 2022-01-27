@@ -203,8 +203,6 @@ removeItems(<ore:dustWood>, [<mekanism:sawdust>, <excompressum:wood_chippings>])
 # Diamond Chip
 add(<ore:nuggetDiamond>, <opencomputers:material:29>);
 add(<ore:chipDiamond>, <thermalfoundation:material:16>);
-utils.rh(<opencomputers:material:29>);
-utils.rh(<opencomputers:material>);
 
 # Dragon hearts
 add(<ore:heartDragon>, <draconicevolution:dragon_heart>);
@@ -397,6 +395,9 @@ removeItems(<ore:dustNetherQuartz>, [<actuallyadditions:item_dust:5>, <enderio:i
 addItems(<ore:listAllicecream>, itemUtils.getItemsByRegexRegistryName("harvestcraft:.*icecreamitem"));
 remove(<ore:listAllicecream>, <harvestcraft:silkentofuitem>);
 
+# Modular controllers
+addItems(<ore:controllerModular>, itemUtils.getItemsByRegexRegistryName("modularcontroller:.*_controller"));
+
 # Clear "ore" entry from hunks
 # And remove hunks from JEI
 function removeHunkOre(item as IItemStack) {
@@ -407,7 +408,10 @@ function removeHunkOre(item as IItemStack) {
 			isRh = true;
     }
   }
-	if(isRh) utils.rh(item);
+	if(isRh) {
+		utils.rh(item);
+		mods.appliedenergistics2.Grinder.removeRecipe(item);
+	}
 }
 
 for item in loadedMods["exnihilocreatio"].items {

@@ -96,3 +96,6 @@ craft.remake(<plustic:battery_cell>.withTag({Material: "endrod"}), ["pretty",
   "B": <endreborn:sword_shard>, # Broken Sword Part
   "/": <minecraft:end_rod>,     # End Rod
 });
+
+# [Osmiridium Ingot] from [Iridium Ingot][+1]
+scripts.process.alloy([<ore:nuggetOsmium>, <ore:nuggetIridium>], <plustic:osmiridiumnugget> * 2, "Only: Kiln");

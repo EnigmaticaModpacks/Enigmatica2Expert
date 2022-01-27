@@ -34,13 +34,16 @@ recipes.addShapedMirrored("Wither Proof Glass",
 	[<mysticalagriculture:obsidian_essence>, null, <mysticalagriculture:obsidian_essence>],
 	[<mysticalagriculture:obsidian_essence>, <mysticalagriculture:obsidian_essence>, <mysticalagriculture:obsidian_essence>]]);
 
-# Ultimate Furnace
-	recipes.remove(<mysticalagriculture:ultimate_furnace>);
-	recipes.addShapedMirrored("Ultimate Furnace",
-	<mysticalagriculture:ultimate_furnace>,
-	[[<ore:blockInsaniumEssence>, <extrautils2:machine>.withTag({Type: "extrautils2:generator_netherstar"}), <ore:blockInsaniumEssence>],
-	[<mysticalagriculture:supremium_furnace>, <extendedcrafting:storage:3>, <mysticalagriculture:supremium_furnace>],
-	[<quark:black_ash>, <mysticalagradditions:stuff:1>, <quark:black_ash>]]);
+# [Ultimate Furnace] from [Supremium Furnace][+3]
+craft.remake(<mysticalagriculture:ultimate_furnace>, ["pretty",
+  "▲ W ▲",
+  "W § W",
+  "▲ B ▲"], {
+  "▲": <ore:dustWither>,                        # Wither Ash
+  "W": <mysticalagradditions:stuff:1>,          # Withering Soul
+  "§": <mysticalagriculture:supremium_furnace>, # Supremium Furnace
+  "B": <endreborn:sword_shard>,                 # Broken Sword Part
+});
 
 # Growth Accelerator
 	recipes.remove(<mysticalagriculture:growth_accelerator>);
@@ -80,6 +83,15 @@ val seedIngrByTier = [
   <actuallyadditions:item_misc:24>,  # Empowered Canola Seed
 ] as IIngredient[];
 
+val furnaceByTier = [
+	<mysticalagriculture:inferium_furnace>,
+	<mysticalagriculture:prudentium_furnace>,
+	<mysticalagriculture:intermedium_furnace>,
+	<mysticalagriculture:superium_furnace>,
+	<mysticalagriculture:supremium_furnace>,
+	<mysticalagriculture:ultimate_furnace>,
+] as IItemStack[];
+
 for i in 0 .. 6 {
 	val shape = scripts.craft.grid.Grid(["pretty",
 		"o w o",
@@ -95,6 +107,16 @@ for i in 0 .. 6 {
 	recipes.remove(output);
 	if(i==5) scripts.wrap.forestry.Carpenter.addRecipe(output, shape, 40, <liquid:sewage> * 1000);
 	else recipes.addShaped(output, shape);
+
+	# Furnaces
+	if (i < 5)
+		craft.remake(furnaceByTier[i], ["pretty",
+			"  $  ",
+			"$ o $",
+			"  $  "], {
+			"$": essenceByTier[i],
+			"o": i==0 ? <minecraft:furnace> : furnaceByTier[i - 1],
+		});
 }
 
 # *======= Universal Recipe =======*
@@ -690,3 +712,6 @@ remakeInAltair("mysticalagriculture:blockcustomore", <astralsorcery:blockcustomo
 	"x x",
 	"xxx"], {x: <mysticalagriculture:rock_crystal_essence>}
 );
+
+# Adventure way to obtain Prudentium Essence
+scripts.loot.entity_kill_entity.add("minecraft:slime", "betteranimalsplus:feralwolf", <mysticalagriculture:crafting:2>);

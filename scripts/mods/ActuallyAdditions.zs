@@ -698,3 +698,40 @@ craft.remake(<actuallyadditions:emerald_paxel>, ["pretty",
   "U": <extendedcrafting:material:11>, # Ultimate Catalyst
   "#": <iceandfire:dreadwood_planks>,  # Dreadwood Planks
 });
+
+# [Energizer] from [Restonia Crystal Block][+2]
+craft.remake(<actuallyadditions:block_energizer>, ["pretty",
+  "  A  ",
+  "A * A",
+  "⌃ ⌃ ⌃"], {
+  "A": <ore:wireAluminium>, # Aluminium Wire
+  "*": <actuallyadditions:block_crystal>,        # Restonia Crystal Block
+  "⌃": <actuallyadditions:block_quartz_slab>,    # Black Quartz Slab
+});
+
+# [Enervator] from [Restonia Crystal Block][+2]
+craft.remake(<actuallyadditions:block_enervator>, ["pretty",
+  "  C  ",
+  "C * C",
+  "⌃ ⌃ ⌃"], {
+  "C": <ore:wireCopper>,                      # Copper Wire
+  "*": <actuallyadditions:block_crystal>,     # Restonia Crystal Block
+  "⌃": <actuallyadditions:block_quartz_slab>, # Black Quartz Slab
+});
+
+# [Battery Box] from [Black Quartz Slab][+1]
+craft.remake(<actuallyadditions:block_battery_box>, [
+  "*",
+  "⌃"], {
+  "*": <ore:crystalRestonia>,                 # Restonia Crystal
+  "⌃": <actuallyadditions:block_quartz_slab>, # Black Quartz Slab
+});
+
+# [Compost] from [Wood Pile][+1]
+craft.remake(<actuallyadditions:block_compost>, ["pretty",
+  "#   #",
+  "#   #",
+  "# ≢ #"], {
+  "#": <ore:plankTreatedWood>, # Treated Wood Planks
+  "≢": <forestry:wood_pile>,   # Wood Pile
+});

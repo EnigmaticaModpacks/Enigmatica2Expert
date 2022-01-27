@@ -113,11 +113,21 @@ scripts.wrap.forestry.Carpenter.addRecipe(<forestry:crafting_material:6>, scentP
 # Remake old combs
 function reprocessComb(comb as IItemStack, outputs as WeightedItemStack[]) as void {
 	mods.forestry.Centrifuge.removeRecipe(comb);
-	scripts.wrap.forestry.Centrifuge.addRecipe(outputs, comb, 60);
+	scripts.wrap.forestry.Centrifuge.addRecipe(outputs, comb, 40);
 
 	if(!comb.matches(<forestry:bee_combs:9>))
 		mods.thermalexpansion.Centrifuge.removeRecipe(comb);
 	scripts.wrap.thermalexpansion.Centrifuge.addRecipe(outputs, comb, null, 2000);
+
+	// Crushing block as shortcut for non-forestry way
+  var chances = [] as float[];
+	var summ = 0;
+	var outputsStacks = [] as IItemStack[];
+  for wOut in outputs { chances += wOut.percent as float; summ += wOut.percent; outputsStacks += wOut.stack; }
+	mods.mechanics.addCrushingBlockRecipe(
+		comb, outputsStacks + <rustic:honeycomb>,
+		scripts.processUtils.normalizeChances(chances + (summ / 2) as float)
+	);
 }
 
 # [Cocoa_Comb]
@@ -135,7 +145,7 @@ reprocessComb(<forestry:bee_combs:3>, [
 
 # [Frozen_Comb]
 reprocessComb(<forestry:bee_combs:4>, [
-	g['🟡'] % 80,     # Beeswax
+	g['🟡'] % 80,  # Beeswax
 	g['💛'] % 70,  # Honey Drop
 	<forestry:pollen:1> % 20,     # Crystalline Pollen Cluster
 	<mctsmelteryio:iceball> % 80, # Iceball
@@ -148,16 +158,24 @@ reprocessComb(<forestry:bee_combs:5>, [
 	<thermalfoundation:material:1> % 20, # Gold Dust
 ]);
 
+# [Silky_Comb]
+reprocessComb(<forestry:bee_combs:6>, [
+	g['💛'], # Honey Drop
+	<forestry:propolis:3> % 80, # Silky propolis
+	<thermalfoundation:material:817> % 40, # Rich Biomass
+	<mysticalagriculture:xp_droplet> % 20, # XP Drop
+]);
+
 # [Parched_Comb]
 reprocessComb(<forestry:bee_combs:7>, [
 	(<minecraft:blaze_powder> * 2) % 45, # Blaze Powder
-	g['🟡'] % 100,  # Beeswax
+	g['🟡'] % 100,# Beeswax
 	g['💛'] % 90, # Honey Drop
 ]);
 
 # [Powdery_Comb]
 reprocessComb(<forestry:bee_combs:10>, [
-	g['🟡'] % 20,     # Beeswaxer
+	g['🟡'] % 20,  # Beeswaxer
 	g['💛'] % 20,  # Honey Drop
 	(<minecraft:gunpowder> * 4) % 100, # Gunpowder
 	<nuclearcraft:marshmallow> % 30,

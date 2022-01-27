@@ -25,24 +25,28 @@ remake("Travel Belt Base", <conarm:travel_belt_base>, [
 	[null, <ore:string>, null]]);
 
 
-# Night goggles
-recipes.remove(<conarm:travel_night>);
-recipes.addShapeless(<conarm:travel_night>, [<conarm:travel_goggles_base>, <ic2:nightvision_goggles:26>.anyDamage()]);
-recipes.addShapeless(<conarm:travel_night>, [<conarm:travel_goggles_base>, <enderio:item_dark_steel_upgrade:1>.withTag({"enderio:enabled": 1 as byte})]);
+# [Traveller's Goggles (Base)] from [Raw Plastic][+2]
+craft.remake(<conarm:travel_goggles_base>, ["pretty",
+  "H O H",
+  "⌃ H ⌃"], {
+  "H": <harvestcraft:hardenedleatheritem>, # Hardened Leather
+  "O": <ore:plastic>, # Raw Plastic
+  "⌃": <appliedenergistics2:quartz_glass>, # Quartz Glass
+});
 
-# Soul goggles
-remakeEx(<conarm:travel_soul>, [
-	[null, <rats:ratlantean_flame>, null], 
-	[<ore:ingotRefinedGlowstone>, <conarm:travel_goggles_base>, <ore:ingotRefinedGlowstone>], 
-	[null, <rats:ratlantean_flame>, null]
-]);
+# [Traveller's Goggles (Night Vision)] from [Traveller's Goggles (Base)][+1]
+craft.remake(<conarm:travel_night>, [
+  "PTP"], {
+  "P": <endreborn:item_end_shard>,   # Purpur Shards
+  "T": <conarm:travel_goggles_base>, # Traveller's Goggles (Base)
+});
 
-# Goggles base
-remakeEx(<conarm:travel_goggles_base>, [
-	[<ore:string>, <rats:rat_toga>, <ore:string>], 
-	[<ore:blockGlassColorless>, <ore:string>, <ore:blockGlassColorless>], 
-	[null, null, null]
-]);
+# [Traveller's Goggles (Soul Sight)] from [Traveller's Goggles (Base)][+1]
+craft.remake(<conarm:travel_soul>, [
+  "RTR"], {
+  "R": <rats:ratlantean_flame>,      # Ratlantean Spirit Flame
+  "T": <conarm:travel_goggles_base>, # Traveller's Goggles (Base)
+});
 
 # gauntlet base
 remakeEx(<conarm:gauntlet_mat>, [
@@ -57,10 +61,16 @@ craft.remake(<conarm:travel_sack>, ["pretty",
   "R U R",
   "R R R"], {
   "p": <ore:pelt>,                        # Snowy Wolf Pelt
-  "R": <minecraft:rabbit_hide>,           # Rabbit Hide
+  "R": <ore:leather>,
   "U": <colossalchests:uncolossal_chest>, # Uncolossal Chest
 });
 
+# [Traveller's Cloak (Slow Fall)] from [Traveller's Cloak (Base)][+1]
+craft.remake(<conarm:travel_slowfall>, [
+  "fTf"], {
+  "f": <twilightforest:raven_feather>, # Raven Feather
+  "T": <conarm:travel_cloak>,          # Traveller's Cloak (Base)
+});
 
 # [Gauntlet of Far Reach] from [Gauntlet (Base)][+2]
 craft.remake(<conarm:gauntlet_mat_reach>, ["pretty",

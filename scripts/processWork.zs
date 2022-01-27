@@ -18,6 +18,7 @@ import scripts.processUtils.defaultItem0;
 import scripts.processUtils.defaultChance0;
 import scripts.processUtils.defaultChance0_int;
 import scripts.processUtils.defaultChanceN;
+import scripts.processUtils.normalizeChances;
 import scripts.processUtils.warning;
 import scripts.processUtils.info;
 import scripts.processUtils.avdRockXmlRecipe;
@@ -389,13 +390,8 @@ function workEx(machineNameAnyCase as string, exceptions as string,
         "received work, but this machine can only work with 1 item as input");
       }
 
-      # Summ of chances should be equal 1, so we compute it
-      var chancesSumm = 0.0f;
-      var normalizedChances = [] as float[];
-      for ch in combinedChances { chancesSumm += ch; }
-      for ch in combinedChances { normalizedChances = normalizedChances + (ch / chancesSumm); }
       for ii in inputIngr0.itemArray {
-        mods.mechanics.addCrushingBlockRecipe(ii, combinedOutput, normalizedChances);
+        mods.mechanics.addCrushingBlockRecipe(ii, combinedOutput, normalizeChances(combinedChances));
       }
       return machineName;
     }

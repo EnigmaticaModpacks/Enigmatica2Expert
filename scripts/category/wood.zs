@@ -133,3 +133,22 @@ mods.mekanism.sawmill.removeRecipe(<ore:slabWood>);
 scripts.wrap.mekanism.sawmill.addRecipe(<ore:stickWood>, <thermalfoundation:material:800>);
 scripts.wrap.mekanism.sawmill.addRecipe(<ore:plankWood>, <minecraft:stick> * 6, <thermalfoundation:material:800>, 0.25d);
 scripts.wrap.mekanism.sawmill.addRecipe(<ore:slabWood> , <minecraft:stick> * 3, <thermalfoundation:material:800>, 0.25d / 2.0d);
+
+# Sticks
+recipes.remove(<minecraft:stick>);
+recipes.addShapedMirrored("Sticks", 
+<minecraft:stick> * 2, 
+[[<ore:plankWood>], 
+[<ore:plankWood>]]);
+
+recipes.addShapedMirrored("Sticks from logs", 
+<minecraft:stick> * 4, 
+[[<ore:logWood>],
+[<ore:logWood>]]);
+
+# Treated Wood sticks
+recipes.remove(<immersiveengineering:material>);
+recipes.addShapedMirrored("Teated sticks", 
+<immersiveengineering:material> * 2, 
+[[<ore:plankTreatedWood>], 
+[<ore:plankTreatedWood>]]);

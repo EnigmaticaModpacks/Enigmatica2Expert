@@ -65,3 +65,16 @@ scripts.process.extract(<quark:glowcelium>, <thermalfoundation:material:2049>, "
 
 # Turn Heart of diamond into Empowered Diamond with rat
 mods.rats.recipes.addGemcutterRatRecipe(<quark:diamond_heart>, <actuallyadditions:item_crystal_empowered:2>);
+
+# [White Candle] from [String][+1]
+recipes.removeByRecipeName("quark:candle");
+craft.make(<quark:candle> * 8, ["s","t","t"], {
+  "s": <ore:string>, # String
+  "t": <ore:tallow>, # Tallow
+});
+
+# [Paper Lamp] from [White Candle][+1]
+craft.reshapeless(<quark:paper_lantern> * 4, "C■", {
+  "C": <forestry:carton>, # Carton
+  "■": <ore:blockCandle>, # White Candle
+});

@@ -561,15 +561,13 @@ craft.remake(<enderio:block_inventory_panel_sensor>, ["pretty",
   "▼": <minecraft:comparator>,           # Redstone Comparator
 });
 
-# [Tiny Inventory System Storage] from [Electrical Steel Ingot][+3]
+# [Tiny Inventory System Storage] from [Oak Chest][+2]
 craft.remake(<enderio:block_inventory_chest_tiny>, ["pretty",
-  "I R",
-  "I ▬",
-  "I □"], {
-  "□": <ore:plateSilicon>,               # Silicon Plate
+  "  R  ",
+  "S c S"], {
   "R": <ore:itemRemoteAwarenessUpgrade>, # Remote Awareness Upgrade
-  "I": <ironchest:iron_chest>,           # Iron Chest
-  "▬": <ore:ingotElectricalSteel>,       # Electrical Steel Ingot
+  "S": <ore:itemSimpleChassiParts>,      # Simple Machine Parts
+  "c": <ore:chest>,                      # Oak Chest
 });
 
 # [Inventory Panel] from [Grains of Vibrancy][+3]
@@ -637,4 +635,52 @@ craft.remake(<enderio:item_capacitor_totemic>, ["pretty",
   "T": <minecraft:totem_of_undying>,           # Totem of Undying
   "▲": <ore:dustBedrock>,                      # Grains of Infinity
   "M": <immersiveengineering:metal_device0:1>, # MV Capacitor
+});
+
+# [Simple Wired Charger] from [Charged Creeper Chunk][+2]
+craft.remake(<enderio:block_simple_wired_charger>, ["pretty",
+  "⌂ ░ ⌂",
+  "░ ∩ ░",
+  "⌂ ░ ⌂"], {
+  "⌂": <ic2:casing:4>,               # Lead Item Casing
+  "░": <ore:cobblestone>,            # Cobblestone
+  "∩": <rats:charged_creeper_chunk>, # Charged Creeper Chunk
+});
+
+# [Wired Charger] from [Simple Wired Charger][+1]
+craft.remake(<enderio:block_wired_charger>, ["pretty",
+  "  S  ",
+  "S i S",
+  "  S  "], {
+  "S": <ore:itemSimpleChassiParts>,          # Simple Machine Parts
+  "i": <enderio:block_simple_wired_charger>, # Simple Wired Charger
+});
+
+# [Wired Charger] from [Charged Creeper Chunk][+2]
+craft.remake(<enderio:block_wired_charger>, ["pretty",
+  "⌂ S ⌂",
+  "S ∩ S",
+  "⌂ S ⌂"], {
+  "⌂": <ic2:casing:4>,               # Lead Item Casing
+  "S": <ore:itemSimpleChassiParts>,  # Simple Machine Parts
+  "∩": <rats:charged_creeper_chunk>, # Charged Creeper Chunk
+});
+
+# [Enhanced Wired Charger] from [Wired Charger][+1]
+craft.remake(<enderio:block_enhanced_wired_charger>, ["pretty",
+  "  C  ",
+  "C W C",
+  "  C  "], {
+  "C": <ore:itemChassiParts>,         # Machine Parts
+  "W": <enderio:block_wired_charger>, # Wired Charger
+});
+
+# [Enhanced Wired Charger] from [Charged Creeper Chunk][+2]
+craft.remake(<enderio:block_enhanced_wired_charger>, ["pretty",
+  "S C S",
+  "C ∩ C",
+  "S C S"], {
+  "S": <ore:sheetSteel>,             # Steel Sheet
+  "C": <ore:itemChassiParts>,        # Machine Parts
+  "∩": <rats:charged_creeper_chunk>, # Charged Creeper Chunk
 });

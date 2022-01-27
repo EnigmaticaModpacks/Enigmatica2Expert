@@ -326,18 +326,6 @@ craft.remake(<enderstorage:ender_pouch>, ["pretty",
 	[[<ore:plateIron>, null, <ore:plateIron>],
 	[<ore:plateIron>, <ore:chest>, <ore:plateIron>], 
 	[null, <ore:plateIron>, null]]);
-
-# Sticks
-	recipes.remove(<minecraft:stick>);
-	recipes.addShapedMirrored("Sticks", 
-	<minecraft:stick> * 2, 
-	[[<ore:plankWood>], 
-	[<ore:plankWood>]]);
-	
-	recipes.addShapedMirrored("Sticks from logs", 
-	<minecraft:stick> * 4, 
-	[[<ore:logWood>],
-	[<ore:logWood>]]);
 	
 # Bucket
 	recipes.remove(<minecraft:bucket>);
@@ -345,20 +333,6 @@ craft.remake(<enderstorage:ender_pouch>, ["pretty",
 	<minecraft:bucket>, 
 	[[<ore:plateIron>, null, <ore:plateIron>], 
 	[null, <ore:plateIron>, null]]);
-					
-# *======= Metal Nuggets =======*
-
-	utils.rh(<immersiveengineering:metal:29>);
-	utils.rh(<immersiveengineering:metal:20>);
-	utils.rh(<immersiveengineering:metal:21>);
-	utils.rh(<immersiveengineering:metal:22>);
-	utils.rh(<immersiveengineering:metal:23>);
-	utils.rh(<immersiveengineering:metal:24>);
-	utils.rh(<immersiveengineering:metal:26>);
-	utils.rh(<immersiveengineering:metal:27>);
-	utils.rh(<immersiveengineering:metal:28>);
-	utils.rh(<extendedcrafting:material:128>);
-	utils.rh(<extendedcrafting:material:129>);
 	
 
 # *======= Recycles =======*
@@ -378,12 +352,6 @@ craft.remake(<oeintegration:excavatemodifier>, ["pretty",
 	D: <tconstruct:excavator_head>.withTag({Material: "bronze"}),
 	E: <tconstruct:sharpening_kit>.withTag({Material: "stone"}),
 });
-
-# Remove Refined storage cables
-if(isNull(loadedMods["refinedstorage"])) {
-	utils.rh(<immersivecables:coil_block:3>);
-	utils.rh(<immersivecables:wire_coil:3>);
-}
 
 # Make Quicksand
 scripts.wrap.inworldcrafting.FluidToFluid.transform(<liquid:sand>, <liquid:blueslime>, [<ore:soulSand>]);
@@ -617,7 +585,7 @@ scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:11>, <tco
 scripts.wrap.tconstruct.Casting.addBasinRecipe(<opencomputers:case1>      , null                                                           , <liquid:electronics>, 144 * 9);
 
 # Additional bonus
-scripts.loot.entity_kill_entity.add("minecraft:slime", "minecraft:wolf", <enderio:item_alloy_nugget:5>);
+scripts.loot.entity_kill_entity.add("minecraft:slime", "minecraft:wolf", <ore:essencePrudentium>.firstItem);
 
 # Other silver occurances
 mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:gold_ore>);

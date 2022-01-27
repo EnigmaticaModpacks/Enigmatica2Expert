@@ -195,11 +195,11 @@ for name in bagNames {
 	val advBag = itemUtils.getItem("forestry:"~name~"_bag_t2");
 	mods.forestry.Carpenter.removeRecipe(advBag);
 
-	scripts.wrap.forestry.Carpenter.addRecipe(advBag, [
+	recipes.addShaped("adv "~name, advBag, [
 		[<quark:gold_button>], # Gold Button
 		[splBag],
 		[<forestry:crafting_material:2>] # Silk Wisp
-	], 40, <liquid:water> * 250);
+	]);
 }
 
 # Use OreDict recipe for impregnated stick
@@ -316,3 +316,6 @@ for i, input in farmBlocks {
     "T": <forestry:thermionic_tubes:1>, # Tin Electron Tube
   });
 }
+
+# [Carton]*2 from [Compressed Sawdust]
+scripts.process.crush(<thermalfoundation:material:801> /* Compressed Sawdust */, <forestry:carton> * 2, "only: CrushingBlock");

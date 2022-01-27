@@ -87,3 +87,13 @@ craft.remake(<openblocks:xp_shower>, ["pretty",
   "▬": <ore:ingotFakeIron>, # Iron Alloy Ingot
   "T": <cyclicmagic:glass_strong>, # Tempered Glass
 });
+
+# [Crane Backpack] from [Hemp Rope Coil][+2]
+craft.remake(<openblocks:crane_backpack>, [
+  "▄",
+  "H",
+  "■"], {
+  "▄": <chisel:factory:6>,                # Factory Block
+  "H": <immersiveengineering:wirecoil:3>, # Hemp Rope Coil
+  "■": <ore:blockFakeIron>, # Iron Alloy Block
+});

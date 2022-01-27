@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded extendedcrafting
-// Uses of this mod: 64
+// Uses of this mod: 63
 
 
 //####################################################
@@ -61,10 +61,10 @@ zenClass Class_EnderCrafting { zenConstructor() {}
 static EnderCrafting as Class_EnderCrafting = Class_EnderCrafting();
 
 //####################################################
-// Uses of this class: 31
+// Uses of this class: 30
 zenClass Class_TableCrafting { zenConstructor() {}
 
-	// Uses of this method: 26
+	// Uses of this method: 25
 	function addShaped(level as int, output as IItemStack, inputs as IIngredient[][]) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.extendedcrafting.TableCrafting.addShaped'~
 			serialize.args([level, serialize.IItemStack(output), serialize.IIngredient____(inputs)]));

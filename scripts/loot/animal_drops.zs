@@ -11,14 +11,14 @@ import crafttweaker.data.IData;
 #priority 10
 
 # Remove old drop and add new
-function tweakEx(
+function tweak(
   table as string,
   poolStr as string,
   entryToRemove as string,
   itemToRemove as IItemStack,
   itemsToAdd as IItemStack[],
   minMax as int[],
-  isByPlayer as bool
+  isByPlayer as bool = false
 ) {
   
   # Current pool
@@ -60,13 +60,9 @@ function tweakEx(
   }
 }
 
-function tweak(table as string, poolStr as string, entryToRemove as string, itemToRemove as IItemStack, itemsToAdd as IItemStack[], minMax as int[]) {
-  tweakEx(table, poolStr, entryToRemove, itemToRemove, itemsToAdd, minMax, false);
-}
-
-tweak("quark:entities/crab"                , "legs"     , "quark:crab_leg", <quark:crab_leg>, [<harvestcraft:crabrawitem>], [1,3]);
-tweak("twilightforest:entities/helmet_crab", "fish"     , "minecraft:fish", null, [<harvestcraft:crabrawitem>], [1,3]);
-tweak("twilightforest:entities/deer"       , "meat"     , "twilightforest:raw_venison", <twilightforest:raw_venison>, [<harvestcraft:venisonrawitem>], [1,3]);
+tweak("quark:entities/crab"                , "legs", "quark:crab_leg", <quark:crab_leg>, [<harvestcraft:crabrawitem>], [1,3]);
+tweak("twilightforest:entities/helmet_crab", "fish", "minecraft:fish", null, [<harvestcraft:crabrawitem>], [1,3]);
+tweak("twilightforest:entities/deer"       , "meat", "twilightforest:raw_venison", <twilightforest:raw_venison>, [<harvestcraft:venisonrawitem>], [1,3]);
 
 
 /*Inject_js{

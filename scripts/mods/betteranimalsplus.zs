@@ -27,8 +27,8 @@ recipes.addShapeless("Venison conversion 1", <betteranimalsplus:venisonraw>, [<h
 recipes.addShapeless("Venison conversion 2", <harvestcraft:venisonrawitem>, [<betteranimalsplus:venisonraw>]);
 
 scripts.loot.animal_drops.tweak("betteranimalsplus:nautilus","nautilus","minecraft:fish", null, [<harvestcraft:oysterrawitem>], [1,3]);
-scripts.loot.animal_drops.tweak("betteranimalsplus:hirschgeist","hirschgeist", null, null, [<randomthings:ingredient:2>], [5,15]);
 scripts.loot.animal_drops.tweak("betteranimalsplus:crab","crab","betteranimalsplus:crab_meat_raw", <betteranimalsplus:crab_meat_raw>, [<harvestcraft:crabrawitem>], [1,3]);
+scripts.loot.animal_drops.tweak("betteranimalsplus:hirschgeist","hirschgeist", null, null, [<randomthings:ingredient:2>, <mysticalagriculture:crafting:2>], [16,64], false, 200);
 
 # [Raw Turkey] from [Raw Turkey]
 craft.make(<betteranimalsplus:turkey_raw>, ["pretty",

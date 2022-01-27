@@ -12,6 +12,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.recipes.IRecipeFunction;
+import crafttweaker.world.IWorld;
 
 #loader crafttweaker reloadableevents
 
@@ -337,6 +338,39 @@ zenClass Utils {
     return sorted;
   }
 
+
+  # Spawn bunch of items like from gayser
+  function geyser(
+    world as IWorld,                    # World where everything happen
+    output as IItemStack,               # Item that would be spawned
+    x as float, y as float, z as float, # Position where new items spawned
+    desiredAmount as int = 1,           # Number of new items spawned
+    mx as double = 0.0d, my as double = 0.0d, mz as double = 0.0d, # Motion of spawned items
+    delay as int = 3                    # Delay between spawning
+  ) as void {
+    val rnd = world.getRandom();
+    val f = desiredAmount as float / 8.0f;
+    var total = 0;
+    var i = 0;
+    val pos = crafttweaker.util.Position3f.create(x, y, z);
+    while (total < desiredAmount) {
+      val count = max(1, (f * (i + 1) + 0.5f) as int - total);
+      total += count;
+      mods.zenutils.DelayManager.addDelayWork(function() {
+        if(isNull(world)) return;
+        val itemEntity = (output * count).createEntityItem(world, x, y, z);
+        itemEntity.motionY = my + 0.4d;
+        itemEntity.motionX = mx + rnd.nextDouble(-0.1d, 0.1d);
+        itemEntity.motionZ = mz + rnd.nextDouble(-0.1d, 0.1d);
+        world.spawnEntity(itemEntity);
+
+        world.playSound("thaumcraft:poof", "ambient", pos, 0.5f, 1.5f);
+        server.commandManager.executeCommandSilent(server, "/particle fireworksSpark "~x as float~" "~y as float~" "~z as float~" 0 0.1 0 0.1 5");
+      }, i * delay + 1);
+
+      i += 1;
+    }
+  }
 }
 global utils as Utils = Utils();
 

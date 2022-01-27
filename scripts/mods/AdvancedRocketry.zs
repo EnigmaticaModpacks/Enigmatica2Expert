@@ -376,3 +376,20 @@ recipes.remove(<advancedrocketry:misc:1>);
 
 # Endorum
 scripts.processUtils.avdRockXmlRecipeEx("Crystallizer", [<extrautils2:enderlilly>], [<fluid:ice> * 1000], [<endreborn:item_raw_endorium> * 10]);
+
+# [Station Light]*12 from [Glowstone][+1]
+craft.remake(<advancedrocketry:circlelight> * 12, ["pretty",
+  "  A  ",
+  "A g A",
+  "  A  "], {
+  "A": <ore:sheetAluminum> | <ore:sheetAluminium>, # Aluminum Sheet
+  "g": <ore:glowstone> | <ore:blockGlowstone>,     # Glowstone
+});
+
+# [Thermite Torch]*8 from [Stick][+1]
+craft.remake(<advancedrocketry:thermitetorch> * 8, [
+  "▲",
+  "#"], {
+  "▲": <ore:dustThermite>, # Thermite
+  "#": <ore:stickWood>,    # Stick
+});
