@@ -9,7 +9,7 @@
   "general": {
     "allowFlowingWater": true,
     "allowFlowingLava": true,
-    "storagePerPixel": 2.0,
+    "storagePerPixel": 4.0,
     "enableBed": true,
     "enableAnimationCollision": true,
     "enableCollisionMotion": true,
