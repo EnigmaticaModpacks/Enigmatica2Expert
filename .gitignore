@@ -48,7 +48,7 @@ config/AppliedEnergistics2/CustomRecipes.cfg
 
 config/brandon3055/ResourceCache/
 
-config/armoryexpansion/traits.txt
+config/armoryexpansion/*
 
 config/cd4017be/compiled.dat
 config/brandon3055/contributors.json
