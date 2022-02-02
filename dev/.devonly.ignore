@@ -14,7 +14,6 @@ config/sampler.ini
 # Files and Folders to keep
 !manifest.json
 !config
-!minemenu
 !patchouli_books
 !shaderpacks
 !resources
