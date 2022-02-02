@@ -18,7 +18,8 @@ function tweak(
   itemToRemove as IItemStack,
   itemsToAdd as IItemStack[],
   minMax as int[],
-  isByPlayer as bool = false
+  isByPlayer as bool = false,
+  poolWeight as int = 1
 ) {
   
   # Current pool
@@ -34,13 +35,13 @@ function tweak(
       val smelted = utils.smelt(itemToAdd);
       if (!isNull(smelted)) {
         # Add with smelting function (if smelted item exist)
-        pool.addItemEntryHelper(smelted, 1, 0, [
+        pool.addItemEntryHelper(smelted, poolWeight, 0, [
           Functions.setCount(minMax[0], minMax[1]), 
           Functions.lootingEnchantBonus(0, 1, 0)
         ], isByPlayer ? [Conditions.killedByPlayer(), {condition: "entity_properties", entity: "this", properties: {"on_fire": true}}] : [{condition: "entity_properties", entity: "this", properties: {"on_fire": true}}]);
       } else {
         # Add non-smelt function
-        pool.addItemEntryHelper(itemToAdd, 1, 0, [
+        pool.addItemEntryHelper(itemToAdd, poolWeight, 0, [
           Functions.setCount(minMax[0], minMax[1]), 
           Functions.lootingEnchantBonus(0, 1, 0)
         ], isByPlayer ? [Conditions.killedByPlayer()] : []);

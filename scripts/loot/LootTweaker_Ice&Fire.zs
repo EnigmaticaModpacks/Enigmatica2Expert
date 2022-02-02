@@ -6,7 +6,6 @@ import crafttweaker.item.IItemStack as IItemStack;
 #ignoreBracketErrors
 
 # *======= Variables =======*
-val cyclops_cave_pool            = loottweaker.LootTweaker.getTable("iceandfire:cyclops_cave").getPool("cyclops_cave");
 val fire_dragon_female_cave_pool = loottweaker.LootTweaker.getTable("iceandfire:fire_dragon_female_cave").getPool("fire_dragon_cave");
 val fire_dragon_male_cave_pool   = loottweaker.LootTweaker.getTable("iceandfire:fire_dragon_male_cave").getPool("fire_dragon_cave");
 val ice_dragon_female_cave_pool  = loottweaker.LootTweaker.getTable("iceandfire:ice_dragon_female_cave").getPool("ice_dragon_cave");
@@ -50,10 +49,10 @@ val caveloot = [
 	<botania:brewvial>.withTag({brewKey: "clear"}),
 	<botania:brewflask>.withTag({brewKey: "strength"}),
 	<biomesoplenty:gem:6>,
+	<thermalfoundation:storage_alloy>,
 ] as IItemStack[];
 
 for item in caveloot {
-	cyclops_cave_pool.addItemEntry(item, 3);
 	fire_dragon_female_cave_pool.addItemEntry(item, 3);
 	fire_dragon_male_cave_pool.addItemEntry(item, 3);
 	ice_dragon_female_cave_pool.addItemEntry(item, 3);
@@ -121,37 +120,82 @@ addLootList(
 addLootList(
 	"iceandfire:myrmex_desert_food_chest",
 	"myrmex_desert_food_chest", {
-	<animania:raw_prime_rabbit> : 10,
-	<animania:raw_prime_peacock> : 10,
-	<animania:raw_prime_beef> : 10,
-	<animania:raw_prime_steak> : 10,
-	<scalingfeast:heartyshank> : 20,
-	<scalingfeast:ironapple> : 10,
-	<scalingfeast:enchantedironapple> : 2,
-	<additionalcompression:cropwheat_compressed:1> : 6,
-	<additionalcompression:croppotato_compressed> : 6,
-	<additionalcompression:cropcarrot_compressed> : 6,
-	<additionalcompression:cropmelon_compressed:1> : 6,
-	<additionalcompression:cropapple_compressed> : 6,
+	<animania:raw_prime_rabbit>                      : 10,
+	<animania:raw_prime_peacock>                     : 10,
+	<animania:raw_prime_beef>                        : 10,
+	<animania:raw_prime_steak>                       : 10,
+	<scalingfeast:heartyshank>                       : 20,
+	<scalingfeast:ironapple>                         : 10,
+	<scalingfeast:enchantedironapple>                : 2,
+	<additionalcompression:cropwheat_compressed:1>   : 6,
+	<additionalcompression:croppotato_compressed>    : 6,
+	<additionalcompression:cropcarrot_compressed>    : 6,
+	<additionalcompression:cropmelon_compressed:1>   : 6,
+	<additionalcompression:cropapple_compressed>     : 6,
 	<additionalcompression:cropsugarcane_compressed> : 6,
 });
 
 addLootList(
 	"iceandfire:myrmex_jungle_food_chest",
 	"myrmex_jungle_food_chest", {
-	<animania:raw_prime_pork> : 10,
-	<animania:raw_prime_bacon> : 10,
-	<animania:raw_prime_chicken> : 10,
-	<animania:raw_prime_mutton> : 10,
-	<animania:raw_prime_chevon> : 10,
-	<scalingfeast:heartyshank> : 20,
-	<scalingfeast:ironapple> : 10,
-	<scalingfeast:enchantedironapple> : 2,
+	<animania:raw_prime_pork>                       : 10,
+	<animania:raw_prime_bacon>                      : 10,
+	<animania:raw_prime_chicken>                    : 10,
+	<animania:raw_prime_mutton>                     : 10,
+	<animania:raw_prime_chevon>                     : 10,
+	<scalingfeast:heartyshank>                      : 20,
+	<scalingfeast:ironapple>                        : 10,
+	<scalingfeast:enchantedironapple>               : 2,
 	<additionalcompression:meatporkchop_compressed> : 2,
-	<additionalcompression:meatbeef_compressed> : 2,
-	<additionalcompression:meatchicken_compressed> : 2,
-	<additionalcompression:meatfish_compressed> : 2,
-	<additionalcompression:meatrotten_compressed> : 2,
-	<additionalcompression:spidereye_compressed> : 2,
-	<additionalcompression:egg_compressed> : 2,
+	<additionalcompression:meatbeef_compressed>     : 2,
+	<additionalcompression:meatchicken_compressed>  : 2,
+	<additionalcompression:meatfish_compressed>     : 2,
+	<additionalcompression:meatrotten_compressed>   : 2,
+	<additionalcompression:spidereye_compressed>    : 2,
+	<additionalcompression:egg_compressed>          : 2,
+});
+
+addLootList(
+	"iceandfire:cyclops_cave",
+	"cyclops_cave", {
+	<enderio:item_material:35> : 30,
+	<enderio:item_material:2> : 70,
+	<rftools:storage_module:1> : 3,
+	<rftools:storage_module:2> : 1,
+	<enderio:item_inventory_charger_basic>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 0, energy: 1000000}}) : 10,
+	<enderio:item_inventory_charger>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 1, energy: 7500000}}) : 3,
+	<enderio:item_inventory_charger_vibrant>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 3, energy: 125000000}}) : 1,
+	FluidCell("nutrient_distillation") : 10,
+	FluidCell("ender_distillation") : 5,
+});
+
+addLootList(
+	"iceandfire:hydra_cave",
+	"hydra_cave", {
+	FluidCell("liquid_sunshine") : 1,
+	<contenttweaker:empowered_phosphor> : 10,
+	<thermalfoundation:material:229> : 50,
+	<ic2:dust:2>  : 20,
+	<ic2:dust:16> : 18,
+	<ic2:dust:19> : 16,
+	<ic2:dust:20> : 14,
+	<ic2:dust:21> : 12,
+	<ic2:dust:23> : 10,
+	<ic2:dust:26> : 8,
+	<ic2:dust:31> : 2,
+	<ic2:dust:36> : 2,
+});
+
+addLootList(
+	"iceandfire:mausoleum_chest",
+	"mausoleum_chest", {
+	<conarm:resist_mat>           : 3,
+	<conarm:resist_mat_fire> * 5  : 3,
+	<conarm:resist_mat_proj> * 5  : 3,
+	<conarm:resist_mat_blast> * 5 : 3,
+	<botania:autocraftinghalo>    : 2,
+	<forestry:carton> * 4         : 60,
+	<danknull:dank_null_panel_2>  : 20,
+	<danknull:dank_null_panel_3>  : 10,
+	<danknull:dank_null_panel_4>  : 3,
 });
