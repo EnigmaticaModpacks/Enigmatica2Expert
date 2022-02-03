@@ -1,0 +1,14 @@
+{
+  "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
+  "name": "Rules",
+  "icon": "minecraft:torch",
+  "category": "World",
+  "pages": [
+    {
+      "item": "minecraft:torch",
+      "title": "Important Nerfs",
+      "text": "Significant changes from E2E:$(br)$(li) Vanilla and Stone $(l)Torches/$ light level nerfed. Use modded.$(br)$(li) FTB chunk claiming $(l)not preventing/$ explosions.",
+      "type": "spotlight"
+    }
+  ]
+}

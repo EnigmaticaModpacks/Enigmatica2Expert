@@ -41,10 +41,10 @@ var defaultFileContent = {
     icon: 'minecraft:book'
   },
 
-  worldgen: {
-    name: 'World Gen',
+  world: {
+    name: 'World',
     icon: 'biomesoplenty:earth',
-    description: 'Tweaks and changes about world gereneration and mining:'
+    description: 'Tweaks and changes about $(l)basic rules/$, world $(l)gereneration/$ and $(l)mining/$:'
   },
 
   energy: {

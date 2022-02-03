@@ -11,7 +11,21 @@ import { renameDeep, loadJson } from '../lib/utils.js'
 
 export function init(Patchouli_js, helpers) {
 
+  // ----------------------------------------------------
+  // World
+  // ----------------------------------------------------
+  Patchouli_js('World/Rules', [{
+    item:	'minecraft:torch',
+    title: 'Important Nerfs',
+    _text: `Significant changes from E2E:
+      $(li) Vanilla and Stone $(l)Torches/$ light level nerfed. Use modded.
+      $(li) FTB chunk claiming $(l)not preventing/$ explosions.`,
+  }])
+
+
+  // ----------------------------------------------------
   // Extract item list from loot data
+  // ----------------------------------------------------
   const defaultLoot_json = loadJson('./config/betterquesting/DefaultLoot.json')
   const lootboxes = {}
   const bareLoot = {}
@@ -136,5 +150,14 @@ export function init(Patchouli_js, helpers) {
       title: "Purpur Guard",
       _text: `Spawns anywhere, but only on $(n)Purpur blocks/$.`
     },
+  ])
+
+  Patchouli_js('Mobs/Additional Drop', [
+    {
+      item: `draconicevolution:mob_soul{EntityName:"emberroot:rootsonespriteboss"}`,
+      title: "Guardian of Sprites",
+      _text: `Hitting this mob would spawn $(#2af)Supermium Essence/$
+        Essence amount depends on damage dealt.`
+    }
   ])
 }

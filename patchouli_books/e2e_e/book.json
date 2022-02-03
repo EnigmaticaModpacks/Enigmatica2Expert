@@ -1,7 +1,7 @@
 {
 	"name": "Enigmatica2:Expert",
   "subtitle": "EXTENDED",
-	"landing_text": "This book contain $(l)patch changes/$ and $(l)useful knowledges/$.",
+	"landing_text": "This book contain $(l)useful knowledges/$ about modpack.",
 	"version": 0,
   "creative_tab": "tools",
   "pause_game": true,

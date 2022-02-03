@@ -1,0 +1,14 @@
+{
+  "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
+  "name": "Additional Drop",
+  "icon": "draconicevolution:mob_soul{EntityName:\"emberroot:rootsonespriteboss\"}",
+  "category": "Mobs",
+  "pages": [
+    {
+      "item": "draconicevolution:mob_soul{EntityName:\"emberroot:rootsonespriteboss\"}",
+      "title": "Guardian of Sprites",
+      "text": "Hitting this mob would spawn $(#2af)Supermium Essence/$$(br)Essence amount depends on damage dealt.",
+      "type": "spotlight"
+    }
+  ]
+}
