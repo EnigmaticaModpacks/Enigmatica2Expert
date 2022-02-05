@@ -77,3 +77,5 @@ config/enderio/recipes/*.pdf
 config/enderio/recipes/**/*.xsd
 config/enderio/recipes/examples/*
 config/biomesoplenty/biomes/*
+
+config/triumph/documentation/*

@@ -79,6 +79,7 @@
   🍯 Potion Core
   🏝️ Void Island Control
   🎒 Traveler's Backpack
+  🛂 Triumph | Achievments
 
 🔄 Misc Changes | Misc
   ⚡ Performance
