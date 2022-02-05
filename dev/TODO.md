@@ -12,30 +12,23 @@ Items that should have more uses:
 ![](https://git.io/Jz9q1 "Bacon")
 ![](https://git.io/Jz9qX "Bottle of Wine")
 ![](https://git.io/JuAPt "Mysical Flesh")
-[Antler]
+![](https://is.gd/9ro3hx "Antler")
+[Trillium]
 
 ### Tier 2
 
-![](https://git.io/JOijc "Tanzanite")
 ![](https://git.io/JLhj4 "Topaz")
-![](https://git.io/JOXGv "Demon Ingot")
-![](https://git.io/JO5J8 "Lavawood")
-![](https://git.io/JLhhk "Emeradic Crystal")
-![](https://git.io/JLhhq "Crushed Emerald")
 ![](https://git.io/JLhhL "Infinity Reagent")
 ![](https://git.io/JGGh7 "Mana Infused Ingot")
 ![](https://git.io/JnN1t "Sun Crystal")
 ![](https://git.io/JLhhI "Compressed Ender")
-![](https://git.io/JOGgk "Propolis")
 ![](https://git.io/JRLSJ "Ice Shard")
 ![](https://git.io/JRnDa "Tar")
-![](https://git.io/JznPT "Lormyte Block")
-![](https://git.io/JVBLv "Exhausting Ingot")
 ![](https://git.io/JVBL3 "Charged Creeper Chunk")
 ![](https://git.io/JoUaU "Quicksilver")
+![](https://is.gd/NZ5zqq "Xorcite Shard")
 [Quickdry Concrete]
 [Cow Written Book]
-[Xorcite]
 
 ### Tier 3
 
@@ -72,12 +65,11 @@ Liquids that should have more uses:
 ## 🔧 Crafting Methods
 
 ![](https://git.io/J3hVP "Bursting Powder")
-![](https://git.io/J3hV0 "Crushing Block")
 ![](https://git.io/J3hVR "TNT")
 ![](https://git.io/JG5U9 "Decay Generator")
 ![](https://git.io/Jst3B "Crystal Memory")
 ![](https://git.io/JtDnO "Chemical Thrower")
-[Blue Fire Jar]
+![](https://is.gd/rneFnc "Blue Fire Jar")
 
 ---
 
@@ -85,30 +77,19 @@ Liquids that should have more uses:
 
 ## TODO
 
-- [ ] ✏️ [Bee nest] make not in basin but in world
-- [ ] ✏️ [Tungsten ingot] add to JAOPCA
-- [ ] ✏️ Add [Creative Dank Null][Uncrafting Table][Uncrafting Grinder][Creative Bin] as Endgame item, right before creative upgrade
-- [ ] ✏️ Add EEPROM with `user`, `attacker`, `trader`, add Patchouli and Quest Book Entry
-- [ ] ✏️ Add Mob Trophies recipes (Right-Click with morb over Basalt Slab)
-- [ ] ✏️ Make Dread Lich spawnable
-- [ ] ✏️ Remove Machine Blueprints
-- [ ] ✏️ Remove Purged items from furnace
-- [ ] ✏️ Remove wrong nuggets from Infernal Furnace
-- [ ] ✏️ Cheaper light sources
-- [ ] ✏️ Openblock crane cheaper
-- [ ] ✏️ [Energy Acceptor] make less steps in recipe
-- [ ] ✏️ Remove vanilla tools from loot chests
-- [ ] ✏️ Treated planks -> Sticks fix recipe x4 -> x2
-- [ ] ✏️ Add bedrock turning into ore mechanic
-- [ ] 📖 Add Torches Entry
-- [ ] 📖 Add CC/OC gate
-- [ ] 📖 Add TF custom recipes in book
-- [ ] 📖 Add Difficulty mechanic description
-- [ ] 📖 Add Clay casts hint after copper entry
-- [ ] 🔄 Add "Looter" backpack
-- [ ] 🔄 Change Nether restriction to reward
+- [x] ✏️ Add little tiles dyeable blocks craft
+- [ ] ✏️ Add new loot drops for `Pirate ship`
+- [ ] ✏️ IC2 Basalt turn to something else
+- [ ] ✏️ Twilight forest master Trophy should be used in craft
+- [ ] ✏️ Change `Expire in block` craft to be faster
+- [ ] ✏️ Add command to show all registered Floo Fireplaces
+- [ ] ✏️ Fix Easer Egg
+- [ ] 📖 Add CC/OC gate, Add EEPROM with `trader`, add Patchouli and Quest Book Entry
+- [ ] 📖 Change Nether restriction to reward
+- [ ] 🏪 Add More Mobs drops
+- [ ] 🔄 Fix HEI not filtering with prefixes
 - [ ] 🔨 Grinding rework
-- [x] 🚧 **Server Tab Info** incompatible with **Fakename**
+- [ ] 🚧 Add `inline-block` styles for images publishing on CF
 - [ ] 🚧 Add modpack automation:
     1. `automate.js`
     2. Clear working tree
@@ -123,6 +104,13 @@ Liquids that should have more uses:
 
 ## Long-Term
 
+- [ ] ✏️ ![](https://is.gd/0IeIml "Ash") add to liquid interaction
+- [ ] ✏️ Add bedrock turning into ore mechanic. Dont know how to get ID number of block OR how to execute command `/bedrockores wrap` from non-op player.
+- [ ] ✏️ Remove wrong nuggets from Infernal Furnace
+- [ ] ✏️ Add Mob Trophies recipes (Right-Click with morb over Basalt Slab)
+- [ ] ✏️ Add [Uncrafting Table][Uncrafting Grinder][Creative Bin] as Endgame item, right before creative upgrade
+- [ ] ✏️ ![](https://is.gd/Kda0A6 "Tungsten Ingot") add to JAOPCA. How to add new material to JAOPCA?
+- [ ] ✏️ ![](https://is.gd/EEUU7D "Bee Nest") make not in basin but in world. How to transform blocks in world?
 - [ ] ✏️ Rethink small plate presser Ore => ?? recipes
 - [ ] ✏️ Add non-magic way to finish modpack
 - [ ] ✏️ Fix Omega Potion Elixir ingredient have weird scrolling
