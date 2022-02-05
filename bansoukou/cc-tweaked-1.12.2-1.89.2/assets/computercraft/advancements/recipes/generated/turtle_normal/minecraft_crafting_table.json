@@ -1,0 +1,19 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_items": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "computercraft:turtle_expanded",
+            "data": 0
+          },
+          {
+            "item": "minecraft:crafting_table"
+          }
+        ]
+      }
+    }
+  }
+}

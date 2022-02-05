@@ -1,0 +1,29 @@
+{
+  "display": {
+    "title": {
+      "text": "Better Animals Plus",
+      "color": "gold",
+      "bold": true,
+      "italic": false
+    },
+    "description": {
+      "text": "Start the game with Better Animals Plus installed",
+      "color": "yellow",
+      "bold": false,
+      "italic": true
+    },
+    "icon": {
+      "item": "betteranimalsplus:antler"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "minecraft:textures/blocks/planks_big_oak.png"
+  },
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

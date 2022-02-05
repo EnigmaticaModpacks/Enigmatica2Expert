@@ -1,0 +1,14 @@
+{
+  "criteria": {
+    "has_log": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomesoplenty:mud_brick"
+          }
+        ]
+      }
+    }
+  }
+}

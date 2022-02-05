@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "integrateddynamics:variable"
+    },
+    "title": {
+      "translate": "advancement.integrateddynamics.variables"
+    },
+    "description": {
+      "translate": "advancement.integrateddynamics.variables.desc"
+    }
+  },
+  "parent": "integrateddynamics:meneglin_basics/menril_production",
+  "criteria": {
+    "criteria_0": {
+      "trigger": "cyclopscore:item_crafted",
+      "conditions": {
+        "items": [
+          {
+            "item": "integrateddynamics:variable"
+          }
+        ]
+      }
+    }
+  }
+}

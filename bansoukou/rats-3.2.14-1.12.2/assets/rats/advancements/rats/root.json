@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "item": "rats:ratglove_petals"
+    },
+    "title": {
+      "translate": "advancements.rats.root.title"
+    },
+    "description": {
+      "translate": "advancements.rats.root.description"
+    },
+    "background": "rats:textures/blocks/cheese.png",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

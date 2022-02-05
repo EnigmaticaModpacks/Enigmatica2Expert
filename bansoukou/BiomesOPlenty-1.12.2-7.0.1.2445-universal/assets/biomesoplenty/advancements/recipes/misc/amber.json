@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "has_gem_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomesoplenty:gem_block",
+            "data": 7
+          }
+        ]
+      }
+    }
+  }
+}

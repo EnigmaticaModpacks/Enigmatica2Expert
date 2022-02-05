@@ -1,0 +1,14 @@
+{
+  "criteria": {
+    "has_artifact": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomesoplenty:terrestrial_artifact"
+          }
+        ]
+      }
+    }
+  }
+}

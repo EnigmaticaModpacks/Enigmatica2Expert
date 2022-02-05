@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "colossalchests:colossal_chest"
+    },
+    "title": {
+      "translate": "itemGroup.colossalchests"
+    },
+    "description": {
+      "translate": "general.colossalchests.description"
+    },
+    "background": "textures/gui/advancements/backgrounds/adventure.png",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "criteria_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:chest"
+          }
+        ]
+      }
+    }
+  }
+}

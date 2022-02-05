@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "integrateddynamics:menril_log_filled"
+    },
+    "title": {
+      "translate": "advancement.integrateddynamics.meneglin_discovery"
+    },
+    "description": {
+      "translate": "advancement.integrateddynamics.meneglin_discovery.desc"
+    }
+  },
+  "parent": "integrateddynamics:root",
+  "criteria": {
+    "criteria_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "integrateddynamics:menril_log"
+          }
+        ]
+      }
+    }
+  }
+}

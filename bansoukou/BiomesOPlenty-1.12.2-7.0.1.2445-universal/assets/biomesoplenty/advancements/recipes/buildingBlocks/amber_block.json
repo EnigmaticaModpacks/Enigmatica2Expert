@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "has_at_least_9_gems": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomesoplenty:gem",
+            "data": 7,
+            "count": {
+              "min": 9
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "integratedterminals:part_terminal_storage_item"
+    },
+    "title": {
+      "translate": "itemGroup.integratedterminals"
+    },
+    "description": {
+      "translate": "general.integratedterminals.description"
+    },
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "parent": "integrateddynamics:basic_network_components/value_displaying",
+  "criteria": {
+    "criteria_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "integrateddynamics:part_display_panel_item"
+          }
+        ]
+      }
+    }
+  }
+}

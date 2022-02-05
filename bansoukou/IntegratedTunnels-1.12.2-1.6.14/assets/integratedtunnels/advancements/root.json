@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "integratedtunnels:part_interface_item_item"
+    },
+    "title": {
+      "translate": "itemGroup.integratedtunnels"
+    },
+    "description": {
+      "translate": "general.integratedtunnels.description"
+    },
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "parent": "integrateddynamics:network_foundations/variables",
+  "criteria": {
+    "criteria_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "integrateddynamics:variable"
+          }
+        ]
+      }
+    }
+  }
+}

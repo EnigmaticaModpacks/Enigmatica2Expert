@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_manipulator": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "plethora:manipulator"
+          }
+        ]
+      }
+    }
+  }
+}

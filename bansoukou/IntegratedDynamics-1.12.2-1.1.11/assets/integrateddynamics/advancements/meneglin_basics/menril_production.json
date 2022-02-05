@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "integrateddynamics:crystalized_menril_block"
+    },
+    "title": {
+      "translate": "advancement.integrateddynamics.menril_production"
+    },
+    "description": {
+      "translate": "advancement.integrateddynamics.menril_production.desc"
+    }
+  },
+  "parent": "integrateddynamics:meneglin_basics/squeezing",
+  "criteria": {
+    "criteria_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "integrateddynamics:crystalized_menril_block"
+          }
+        ]
+      }
+    }
+  }
+}

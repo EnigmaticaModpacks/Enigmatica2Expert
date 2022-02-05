@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "has_log": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "biomesoplenty:log_1",
+            "data": 7
+          }
+        ]
+      }
+    }
+  }
+}

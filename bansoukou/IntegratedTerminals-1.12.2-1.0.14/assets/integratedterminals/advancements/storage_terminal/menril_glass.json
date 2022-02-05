@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "integratedterminals:menril_glass"
+    },
+    "title": {
+      "translate": "advancement.integratedterminals.menril_glass"
+    },
+    "description": {
+      "translate": "advancement.integratedterminals.menril_glass.desc"
+    }
+  },
+  "parent": "integratedterminals:root",
+  "criteria": {
+    "criteria_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "integratedterminals:menril_glass"
+          }
+        ]
+      }
+    }
+  }
+}
