@@ -357,15 +357,15 @@ craft.remake(<oeintegration:excavatemodifier>, ["pretty",
 scripts.wrap.inworldcrafting.FluidToFluid.transform(<liquid:sand>, <liquid:blueslime>, [<ore:soulSand>]);
 scripts.process.solution([<ore:soulSand>], [<liquid:blueslime>*1000], [<liquid:sand>*1000], null, "except: highoven");
 
-# Bedrock Ore Miner
-craft.remake(<bedrockores:bedrock_miner>, [
-	"ABA", 
-	"CDC", 
-	"ADA"], {
-	A: <ore:dustBedrock>,
-	B: <immersiveengineering:metal_decoration0:5>,
-	C: <ore:blockRedstone>,
-	D: <immersiveengineering:metal_device1:7>});
+# [Bedrock Miner] from [Grains of Infinity][+2]
+craft.remake(<bedrockores:bedrock_miner>, ["pretty",
+  "⌂ ⌃ ⌂",
+  "⌃ ▲ ⌃",
+  "⌂ ⌃ ⌂"], {
+  "⌂": <ic2:casing:4>,       # Lead Item Casing
+  "⌃": <ore:gemQuartzBlack>, # Black Quartz
+  "▲": <ore:dustBedrock>,    # Grains of Infinity
+});
 
 # [Sandwich_Station] from [Cooking_Table][+3]
 recipes.remove(<culinaryconstruct:sandwich_station>);
