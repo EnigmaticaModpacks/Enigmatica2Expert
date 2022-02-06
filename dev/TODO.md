@@ -78,6 +78,7 @@ Liquids that should have more uses:
 ## TODO
 
 - [x] ✏️ Add little tiles dyeable blocks craft
+- [x] ✏️ bedrock miner cheaper
 - [ ] ✏️ Add new loot drops for `Pirate ship`
 - [ ] ✏️ IC2 Basalt turn to something else
 - [ ] ✏️ Twilight forest master Trophy should be used in craft
