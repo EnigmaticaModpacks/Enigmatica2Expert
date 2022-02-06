@@ -211,7 +211,6 @@
   "bloodsmeltery": "1.1.2",
   "morphtool": "1.2-21",
   "littletiles": "1.5.0",
-  "ClientFixer": "1.12.2-1.9",
   "examplemod": "1.0",
   "blockdrops": "1.4.0",
   "redstonerepository": "1.3.2",

@@ -488,6 +488,14 @@
       }
     },
     {
+      "projectID": 229587,
+      "fileID": 2698688,
+      "required": true,
+      "__meta": {
+        "name": "BNBGamingLib"
+      }
+    },
+    {
       "projectID": 229664,
       "fileID": 3496560,
       "required": true,
@@ -600,6 +608,14 @@
       }
     },
     {
+      "projectID": 235492,
+      "fileID": 2825547,
+      "required": true,
+      "__meta": {
+        "name": "Triumph"
+      }
+    },
+    {
       "projectID": 236307,
       "fileID": 3159505,
       "required": true,
@@ -672,14 +688,6 @@
       }
     },
     {
-      "projectID": 237804,
-      "fileID": 2531154,
-      "required": true,
-      "__meta": {
-        "name": "(Chat) Ping!"
-      }
-    },
-    {
       "projectID": 237875,
       "fileID": 2718588,
       "required": true,
@@ -693,14 +701,6 @@
       "required": true,
       "__meta": {
         "name": "Thaumic Inventory Scanning (Thaumcraft Addon)"
-      }
-    },
-    {
-      "projectID": 238222,
-      "fileID": 3043174,
-      "required": true,
-      "__meta": {
-        "name": "Just Enough Items (JEI)"
       }
     },
     {
@@ -1208,14 +1208,6 @@
       }
     },
     {
-      "projectID": 253792,
-      "fileID": 2573588,
-      "required": true,
-      "__meta": {
-        "name": "Minecraft Font (PC)"
-      }
-    },
-    {
       "projectID": 254602,
       "fileID": 3438487,
       "required": true,
@@ -1305,7 +1297,7 @@
     },
     {
       "projectID": 257814,
-      "fileID": 3537907,
+      "fileID": 3626833,
       "required": true,
       "__meta": {
         "name": "CreativeCore"
@@ -1661,6 +1653,14 @@
       "required": true,
       "__meta": {
         "name": "Carry On"
+      }
+    },
+    {
+      "projectID": 274341,
+      "fileID": 2991671,
+      "required": true,
+      "__meta": {
+        "name": "BnBGamingCore"
       }
     },
     {
@@ -2269,14 +2269,6 @@
       "required": true,
       "__meta": {
         "name": "CraftTweaker Utils"
-      }
-    },
-    {
-      "projectID": 303557,
-      "fileID": 2933382,
-      "required": true,
-      "__meta": {
-        "name": "Better Animals Plus"
       }
     },
     {
@@ -3001,7 +2993,7 @@
     },
     {
       "projectID": 401178,
-      "fileID": 3598337,
+      "fileID": 3627721,
       "required": true,
       "__meta": {
         "name": "Zen Utils"
@@ -3080,6 +3072,14 @@
       }
     },
     {
+      "projectID": 415684,
+      "fileID": 3093664,
+      "required": true,
+      "__meta": {
+        "name": "Better Gendustry"
+      }
+    },
+    {
       "projectID": 416599,
       "fileID": 3097230,
       "required": true,
@@ -3112,6 +3112,14 @@
       }
     },
     {
+      "projectID": 423758,
+      "fileID": 3626196,
+      "required": true,
+      "__meta": {
+        "name": "Better Questing Tweaker (BQTweaker)"
+      }
+    },
+    {
       "projectID": 429642,
       "fileID": 3526794,
       "required": true,
@@ -3133,6 +3141,14 @@
       "required": true,
       "__meta": {
         "name": "Eye of Dragons"
+      }
+    },
+    {
+      "projectID": 434344,
+      "fileID": 3626352,
+      "required": true,
+      "__meta": {
+        "name": "Bansōkō [絆創膏] - Mod Patcher"
       }
     },
     {
@@ -3193,7 +3209,7 @@
     },
     {
       "projectID": 460609,
-      "fileID": 3551623,
+      "fileID": 3630148,
       "required": true,
       "__meta": {
         "name": "CensoredASM"
@@ -3272,6 +3288,14 @@
       }
     },
     {
+      "projectID": 541068,
+      "fileID": 3627836,
+      "required": true,
+      "__meta": {
+        "name": "Better Animals Plus Plus"
+      }
+    },
+    {
       "projectID": 545353,
       "fileID": 3519479,
       "required": true,
@@ -3293,6 +3317,22 @@
       "required": true,
       "__meta": {
         "name": "Modular Assembly"
+      }
+    },
+    {
+      "projectID": 557549,
+      "fileID": 3568778,
+      "required": true,
+      "__meta": {
+        "name": "Had Enough Items"
+      }
+    },
+    {
+      "projectID": 570458,
+      "fileID": 3632074,
+      "required": true,
+      "__meta": {
+        "name": "AE2 Unofficial Extended Life"
       }
     }
   ]
