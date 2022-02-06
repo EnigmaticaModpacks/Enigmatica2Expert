@@ -24,8 +24,8 @@
     "draft": true,
     "tokenRef": "GITHUB_TOKEN",
     "assets": [
-      "D:/MEGA_LD-LocksTO/Enigmatica/Distributable/E2E-Extended_${version}.zip",
-      "D:/MEGA_LD-LocksTO/Enigmatica/Distributable/E2E-Extended_${version}_server.zip"
+      "E:/YandexDisk/DEVELOPING/Enigmatica/Distributable/E2E-Extended_${version}.zip",
+      "E:/YandexDisk/DEVELOPING/Enigmatica/Distributable/E2E-Extended_${version}_server.zip"
     ]
   }
 }
