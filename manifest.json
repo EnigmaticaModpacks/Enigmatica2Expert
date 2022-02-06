@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Enigmatica2Expert-Extended",
-  "version": "v0.43.1",
+  "version": "v0.44.0",
   "author": "krutoy242",
   "overrides": "overrides",
   "files": [
@@ -480,14 +480,6 @@
       }
     },
     {
-      "projectID": 229302,
-      "fileID": 3486258,
-      "required": false,
-      "__meta": {
-        "name": "Custom Loading Screen"
-      }
-    },
-    {
       "projectID": 229587,
       "fileID": 2698688,
       "required": true,
@@ -893,14 +885,6 @@
       "required": true,
       "__meta": {
         "name": "Silent Lib (silentlib)"
-      }
-    },
-    {
-      "projectID": 243076,
-      "fileID": 2940914,
-      "required": false,
-      "__meta": {
-        "name": "Refined Storage"
       }
     },
     {
@@ -1581,14 +1565,6 @@
       "required": true,
       "__meta": {
         "name": "Toast Control"
-      }
-    },
-    {
-      "projectID": 272302,
-      "fileID": 2941010,
-      "required": false,
-      "__meta": {
-        "name": "Refined Storage Addons"
       }
     },
     {
@@ -2328,14 +2304,6 @@
       }
     },
     {
-      "projectID": 307788,
-      "fileID": 2696433,
-      "required": false,
-      "__meta": {
-        "name": "Refined Storage: Requestify"
-      }
-    },
-    {
       "projectID": 307806,
       "fileID": 2820815,
       "required": true,
@@ -2501,14 +2469,6 @@
       "required": true,
       "__meta": {
         "name": "ID Squeezer Tweak"
-      }
-    },
-    {
-      "projectID": 318823,
-      "fileID": 2695806,
-      "required": false,
-      "__meta": {
-        "name": "RSInfiniteWireless"
       }
     },
     {
@@ -2813,14 +2773,6 @@
       "required": true,
       "__meta": {
         "name": "Super Sound Muffler: Revived"
-      }
-    },
-    {
-      "projectID": 364852,
-      "fileID": 2893262,
-      "required": false,
-      "__meta": {
-        "name": "Refined Storage Large Patterns"
       }
     },
     {
