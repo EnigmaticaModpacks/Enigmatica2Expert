@@ -374,3 +374,19 @@ remakeChest("Any Chest", <minecraft:chest>, logsFiltered);
 
 # Arrows recycle
 scripts.process.crush(<minecraft:arrow>, <minecraft:flint>, "no exceptions", [<ore:dustWood>.firstItem], [0.2f]);
+
+# Fix for Quark chiseled brick recipes
+	recipes.remove(<quark:world_stone_carved>);
+	recipes.remove(<quark:world_stone_carved:1>);
+	recipes.remove(<quark:world_stone_carved:2>);
+	recipes.remove(<quark:world_stone_carved:4>);
+	recipes.remove(<quark:world_stone_carved:5>);
+	recipes.remove(<quark:world_stone_carved:6>);
+	recipes.remove(<quark:world_stone_carved:7>);
+	recipes.addShaped("Chiseled Granite Bricks", <quark:world_stone_carved> * 8, [[<quark:world_stone_bricks>, <quark:world_stone_bricks>, <quark:world_stone_bricks>],[<quark:world_stone_bricks>, null, <quark:world_stone_bricks>], [<quark:world_stone_bricks>, <quark:world_stone_bricks>, <quark:world_stone_bricks>]]);
+	recipes.addShaped("Chiseled Diorite Bricks", <quark:world_stone_carved:1> * 8, [[<quark:world_stone_bricks:1>, <quark:world_stone_bricks:1>, <quark:world_stone_bricks:1>],[<quark:world_stone_bricks:1>, null, <quark:world_stone_bricks:1>], [<quark:world_stone_bricks:1>, <quark:world_stone_bricks:1>, <quark:world_stone_bricks:1>]]);
+	recipes.addShaped("Chiseled Andesite Bricks", <quark:world_stone_carved:2> * 8, [[<quark:world_stone_bricks:2>, <quark:world_stone_bricks:2>, <quark:world_stone_bricks:2>],[<quark:world_stone_bricks:2>, null, <quark:world_stone_bricks:2>], [<quark:world_stone_bricks:2>, <quark:world_stone_bricks:2>, <quark:world_stone_bricks:2>]]);	
+	recipes.addShaped("Chiseled Marble Bricks", <quark:world_stone_carved:4> * 8, [[<quark:world_stone_bricks:4>, <quark:world_stone_bricks:4>, <quark:world_stone_bricks:4>],[<quark:world_stone_bricks:4>, null, <quark:world_stone_bricks:4>], [<quark:world_stone_bricks:4>, <quark:world_stone_bricks:4>, <quark:world_stone_bricks:4>]]);
+	recipes.addShaped("Chiseled Limestone Bricks", <quark:world_stone_carved:5> * 8, [[<quark:world_stone_bricks:5>, <quark:world_stone_bricks:5>, <quark:world_stone_bricks:5>],[<quark:world_stone_bricks:5>, null, <quark:world_stone_bricks:5>], [<quark:world_stone_bricks:5>, <quark:world_stone_bricks:5>, <quark:world_stone_bricks:5>]]);
+	recipes.addShaped("Chiseled Jasper Bricks", <quark:world_stone_carved:6> * 8, [[<quark:world_stone_bricks:6>, <quark:world_stone_bricks:6>, <quark:world_stone_bricks:6>],[<quark:world_stone_bricks:6>, null, <quark:world_stone_bricks:6>], [<quark:world_stone_bricks:6>, <quark:world_stone_bricks:6>, <quark:world_stone_bricks:6>]]);
+	recipes.addShaped("Chiseled Slate Bricks", <quark:world_stone_carved:7> * 8, [[<quark:world_stone_bricks:7>, <quark:world_stone_bricks:7>, <quark:world_stone_bricks:7>],[<quark:world_stone_bricks:7>, null, <quark:world_stone_bricks:7>], [<quark:world_stone_bricks:7>, <quark:world_stone_bricks:7>, <quark:world_stone_bricks:7>]]);
