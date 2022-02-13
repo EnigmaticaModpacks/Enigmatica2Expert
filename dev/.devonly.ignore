@@ -13,6 +13,7 @@ config/sampler.ini
 
 # Files and Folders to keep
 !manifest.json
+!bansoukou
 !config
 !patchouli_books
 !shaderpacks

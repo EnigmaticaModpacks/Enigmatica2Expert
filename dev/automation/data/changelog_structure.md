@@ -13,7 +13,7 @@
   ✎ Harder
   ✏ Misc Changes
 
-🔵 Mods
+🔵 Mods updates | Mods
   🟢 New Mods
   🔴 Removed Mods
   🟡 Mods Changes
@@ -41,6 +41,7 @@
   🐉 Ice and Fire
   🐝 Forestry
   🐮 Animania
+  🐻 Better Animals Plus
   👨‍🏭 Mekanism
   👿 Extra Utilities 2
   💍 Baubles

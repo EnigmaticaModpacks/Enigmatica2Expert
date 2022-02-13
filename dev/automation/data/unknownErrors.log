@@ -1,3 +1,6 @@
+[main/ERROR] [Bansoukou]: Throwing
 [main/ERROR] [mixin]: Mixin config mixins.mixincompat.json does not specify "minVersion" property
 [main/WARN] [mixin]: Reference map 'mixins.mixincompat.refmap.json' for mixins.mixincompat.json could not be read. If this is a development environment you can ignore this message
+[Client thread/WARN] [mixin]: Mixin apply failed mixins.thaumtweaks.json:blocks.SiphonMixin -> thaumcraft.common.tiles.crafting.TileVoidSiphon: org.spongepowered.asm.mixin.transformer.throwables.InvalidMixinException @Shadow method getStackInSlot in mixins.thaumtweaks.json:blocks.SiphonMixin was not located in the target class thaumcraft.common.tiles.crafting.TileVoidSiphon. Using refmap mixins.thaumtweaks.refmap.json
 [Client thread/WARN] [org.dimdev.utils.ModIdentifier]: Failed to identify sun.reflect.GeneratedMethodAccessor14 (untransformed name: sun.reflect.GeneratedMethodAccessor14)
+[Client thread/WARN] [jei]: Recipe registry plugin is slow, took 80.48 ms. class eutros.dynamistics.jei.plugins.PatternPlugin

@@ -74,6 +74,7 @@ mods/*.jar
 !mods/oauth-*
 !mods/bookdisplay-*
 !mods/Nimble-*
+!mods/noRecipeBook_*
 
 #Not sure
 # !mods/gendustryjei*

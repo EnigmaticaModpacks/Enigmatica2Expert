@@ -13,6 +13,7 @@ Items that should have more uses:
 ![](https://git.io/Jz9qX "Bottle of Wine")
 ![](https://git.io/JuAPt "Mysical Flesh")
 ![](https://is.gd/9ro3hx "Antler")
+[Wasteland Earth]
 [Trillium]
 
 ### Tier 2
@@ -70,6 +71,7 @@ Liquids that should have more uses:
 ![](https://git.io/Jst3B "Crystal Memory")
 ![](https://git.io/JtDnO "Chemical Thrower")
 ![](https://is.gd/rneFnc "Blue Fire Jar")
+[Radiator] (Immersive)
 
 ---
 
@@ -77,27 +79,34 @@ Liquids that should have more uses:
 
 ## TODO
 
-- [x] ✏️ Add little tiles dyeable blocks craft
-- [x] ✏️ bedrock miner cheaper
-- [ ] ✏️ Add new loot drops for `Pirate ship`
-- [ ] ✏️ IC2 Basalt turn to something else
-- [ ] ✏️ Twilight forest master Trophy should be used in craft
-- [ ] ✏️ Change `Expire in block` craft to be faster
-- [ ] ✏️ Add command to show all registered Floo Fireplaces
-- [ ] ✏️ Fix Easer Egg
+- [ ] ✏️ Gorgon Head add usage
+- [ ] ✏️ Water Chest (Random Things) get uses
+- [ ] ✏️ Feral Ghoul add drop
+- [ ] ✏️ Use Cyclopus Eye
 - [ ] 📖 Add CC/OC gate, Add EEPROM with `trader`, add Patchouli and Quest Book Entry
-- [ ] 📖 Change Nether restriction to reward
+- [ ] 📖 Change Nether restriction to reward (probably Decuple Compressed Netherrack)
 - [ ] 🏪 Add More Mobs drops
 - [ ] 🔄 Fix HEI not filtering with prefixes
 - [ ] 🔨 Grinding rework
+- [ ] 🚧 Change Manifest.json creating to other file (not changelog.js)
+- [ ] 🚧 Fix `bansoukou/` not added to server files
 - [ ] 🚧 Add `inline-block` styles for images publishing on CF
+- [ ] 🚧 Write Server update guide
 - [ ] 🚧 Add modpack automation:
     1. `automate.js`
     2. Clear working tree
     3. `changelog.js` with next version arg
-    4. Fix changelog, add tag
+    4. Fix LATEST.md, add to CHANGELOG.md, add tag
     5. `make_pack.js`
-    6. `release-it`
+    6. Push branch/tag on github
+    7. Create GitHub release
+    8. Create CF release with fixed description
+- [ ] 🚧 Server automation:
+    1. SFTP Upload `_server.zip`
+    2. Remove all folders presented in `.zip`
+    3. Unarchive `_server.zip` on remote
+    4. Unarchive `.overrides_after_update.zip`
+  
 
 ---
 
@@ -105,6 +114,8 @@ Liquids that should have more uses:
 
 ## Long-Term
 
+- [ ] ✏️ Change `Expire in block` craft to be faster
+- [ ] ✏️ Add command to show all registered Floo Fireplaces. Probably impossible, files stored in dimension data
 - [ ] ✏️ ![](https://is.gd/0IeIml "Ash") add to liquid interaction
 - [ ] ✏️ Add bedrock turning into ore mechanic. Dont know how to get ID number of block OR how to execute command `/bedrockores wrap` from non-op player.
 - [ ] ✏️ Remove wrong nuggets from Infernal Furnace
@@ -155,6 +166,7 @@ Liquids that should have more uses:
 - [ ] 🧮 Craft.zs: Iron nugget wont get recipes for different amount of items
 - [ ] 🧮 Craft.zs: Ability to use vanilla crafting methods
 - [ ] 🧮 Craft.zs: ![](https://git.io/Jz9qH "Gold Nugget") to make vanilla prefixes
+- [ ] 🟢 Return Custom Loading Screen when fixed [this](https://github.com/AlexIIL/CustomLoadingScreen/issues/74).
 - [ ] 🟢 Add [Bansoko](https://www.curseforge.com/minecraft/mc-mods/bansoko) to rename Dank/null `.jar` so it could work with Thaumic Speedup
 - [ ] 🟢 Add [Heat And Climate](https://www.curseforge.com/minecraft/mc-mods/heat-and-climate)
 - [ ] ⛏️ Mining levels rework. There is too much mining levels.

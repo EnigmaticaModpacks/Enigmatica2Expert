@@ -1,7 +1,7 @@
 /**
  * @file Helper script to prepare several files for fast acces
  * Lunch with NodeJS
- * 
+ *
  * @author Krutoy242
  * @link https://github.com/Krutoy242
  */
@@ -20,9 +20,11 @@ import { execSync } from 'child_process'
 import pdf from 'pdf-parse/lib/pdf-parse.js'
 import chalk from 'chalk'
 
-import { URL, fileURLToPath  } from 'url' // @ts-ignore
-function relative(relPath='./') { return fileURLToPath(new URL(relPath, import.meta.url)) }
-
+import { URL, fileURLToPath } from 'url'
+function relative(relPath = './') {
+  // @ts-ignore
+  return fileURLToPath(new URL(relPath, import.meta.url))
+}
 
 /*=============================================
 =            Internal Helpers                 =
@@ -48,12 +50,12 @@ function createHashedFunction(fn) {
     const hashFunction = hashMap.get(fn) ?? {}
     const oldResult = hashFunction[filename]
     const mtime = statSync(filename).mtime.getTime()
-    if(oldResult && oldResult.mtime === mtime) {
+    if (oldResult && oldResult.mtime === mtime) {
       return oldResult.result
     }
 
     const result = fn(filename)
-    hashFunction[filename] = {result, mtime}
+    hashFunction[filename] = { result, mtime }
     hashMap.set(fn, hashFunction)
     return result
   }
@@ -68,16 +70,17 @@ function createHashedFunction(fn) {
 /**
  * Extract file name without extension
  * @param {string} filePath Full or relative path to file
- * 
+ *
  * @example subFileName('C:/main.js') // 'main'
  */
-export const subFileName = filePath => basename(filePath).split('.').slice(0, -1).join('.')
+export const subFileName = (filePath) =>
+  basename(filePath).split('.').slice(0, -1).join('.')
 
 /**
  * Load file from disk or from hash
  * @returns {string}
  */
-export const loadText = createHashedFunction(filename => 
+export const loadText = createHashedFunction((filename) =>
   readFileSync(filename, 'utf8')
 )
 
@@ -85,47 +88,53 @@ export const loadText = createHashedFunction(filename =>
  * Load JSON file from disk or from hash
  * @param {string} filename
  */
-export const loadJson = createHashedFunction(filename => JSON.parse(loadText(filename)))
-
-/**
- * Load CSV file from disk or from hash
- * @param {string} filename
- */
-export const getCSV = createHashedFunction(/** @return {Object<string, string>[]} */filename => 
-  csvParseSync(readFileSync(filename,'utf8'), {columns: true})
+export const loadJson = createHashedFunction((filename) =>
+  JSON.parse(loadText(filename))
 )
 
 /**
  * Load CSV file from disk or from hash
  * @param {string} filename
  */
-export const getPDF = createHashedFunction(async filename => 
-  (await pdf(readFileSync(filename))).text
+export const getCSV = createHashedFunction(
+  /** @return {Object<string, string>[]} */ (filename) =>
+    csvParseSync(readFileSync(filename, 'utf8'), { columns: true })
 )
 
+/**
+ * Load CSV file from disk or from hash
+ * @param {string} filename
+ */
+export const getPDF = createHashedFunction(
+  async (filename) => (await pdf(readFileSync(filename))).text
+)
 
-
-export const config = createHashedFunction(filename => {
-  let cfg = loadText(filename)
+export const config = createHashedFunction((filename) => {
+  const cfg = loadText(filename)
     .replace(/^ *#.*$/gm, '') // Remove comments
     .replace(/^~.*$/gm, '') // config version
     .replace(/^ *(\w+|"[^"]+") *{ *$/gm, '$1:{') // class name
     .replace(/^ *} *$/gm, '},') // end of block
-    .replace(/^ *\w:(?:([\w.]+)|"([^"]+)") *= *(.*)$/gm, (match, p1, p2, p3)=>{
-      return (isNaN(p3) && !(p3 === 'true' || p3 === 'false')) || p3===''
-      ? `"${p1||p2}":"${p3.replace(/"/g, '\\"')}",`
-      : `"${p1||p2}":${ p3.replace(/"/g, '\\"')},`
-    }) // simple values  
-    .replace(/^ *\w:(?:([\w.]+)|"([^"]+)") *< *[\s\S\n\r]*?> *$/gm, (match, p1, p2)=>{
-      const lines = match.split('\n')
-      const content = lines.slice(1, lines.length-1)
-      return [
-        `"${p1||p2}"` + ': [',
-        ...content.map(l=>`"${l.trim()}",`),
-        '],'
-      ].join('\n')
-    })// Replace lists
-
+    .replace(
+      /^ *\w:(?:([\w.]+)|"([^"]+)") *= *(.*)$/gm,
+      (match, p1, p2, p3) => {
+        return (isNaN(p3) && !(p3 === 'true' || p3 === 'false')) || p3 === ''
+          ? `"${p1 || p2}":"${p3.replace(/"/g, '\\"')}",`
+          : `"${p1 || p2}":${p3.replace(/"/g, '\\"')},`
+      }
+    ) // simple values
+    .replace(
+      /^ *\w:(?:([\w.]+)|"([^"]+)") *< *[\s\S\n\r]*?> *$/gm,
+      (match, p1, p2) => {
+        const lines = match.split('\n')
+        const content = lines.slice(1, lines.length - 1)
+        return [
+          `"${p1 || p2}"` + ': [',
+          ...content.map((l) => `"${l.trim()}",`),
+          '],',
+        ].join('\n')
+      }
+    ) // Replace lists
 
   /**
    * @type {Object}
@@ -137,10 +146,8 @@ export const config = createHashedFunction(filename => {
     console.log('Parsing config error. File: ', filename)
     console.error(error)
     writeFileSync(
-      relative('_error_'+subFileName(filename)+'.js'),
-      'return{'+
-      cfg.replace(/\n\n+/gm, '\n')
-      +'}'
+      relative('_error_' + subFileName(filename) + '.js'),
+      'return{' + cfg.replace(/\n\n+/gm, '\n') + '}'
     )
   }
 
@@ -173,31 +180,33 @@ export function escapeRegex(string) {
 export function matchBetween(str, begin, end, regex) {
   let sub = str
   if (begin) sub = str.substr(str.indexOf(begin) + begin.length)
-  if (end)   sub = sub.substr(0, sub.indexOf(end))
+  if (end) sub = sub.substr(0, sub.indexOf(end))
   return [...sub.matchAll(regex)]
 }
 
 export function transpose(a) {
-  return Object.keys(a[0]).map(function(c) {
-      return a.map(function(r) { return r[c] })
+  return Object.keys(a[0]).map(function (c) {
+    return a.map(function (r) {
+      return r[c]
+    })
   })
 }
-
 
 export function injectInFile(filename, keyStart, keyFinish, text) {
   try {
     return replace_in_file.sync({
       files: filename,
-      from: new RegExp(escapeRegex(keyStart) + '[\\s\\S\n\r]*?' + escapeRegex(keyFinish), 'm'),
-      to: keyStart+text+keyFinish,
-      countMatches: true
+      from: new RegExp(
+        escapeRegex(keyStart) + '[\\s\\S\n\r]*?' + escapeRegex(keyFinish),
+        'm'
+      ),
+      to: keyStart + text + keyFinish,
+      countMatches: true,
     })
-  }
-  catch (error) {
+  } catch (error) {
     console.error('Inject Error occurred:', error)
   }
 }
-
 
 export function write(...args) {
   process.stdout.write(args.join('\t'))
@@ -238,26 +247,27 @@ export const done = end
  * @param {DropEntry[]} [dropList]
  * @param {boolean} [isSkipSaving]
  */
-export function setBlockDrops(block_stack, dropList, isSkipSaving=false) {
+export function setBlockDrops(block_stack, dropList, isSkipSaving = false) {
   const [source, id, _block_meta] = block_stack.split(':')
-  const block_meta = parseInt(_block_meta||'0')
+  const block_meta = parseInt(_block_meta || '0')
   const block_id = `${source}:${id}`
 
   let newObj
-  
-  if(dropList?.length) {
+
+  if (dropList?.length) {
     newObj = {
       name: block_id,
       meta: block_meta,
-      length: dropList.length
+      length: dropList.length,
     }
 
-    dropList.forEach((o,i)=>{
+    dropList.forEach((o, i) => {
       const [drop_source, drop_id, drop_meta] = o.stack.split(':')
-      newObj['name'+i] = `${drop_source}:${drop_id}`
-      newObj['meta'+i] = parseInt(drop_meta||'0')
-      for (let j=0;j<4;j++) newObj[j+'chance'+i] = o.chance||100.0
-      for (let j=0;j<4;j++) newObj[j+  'pair'+i] = `{
+      newObj['name' + i] = `${drop_source}:${drop_id}`
+      newObj['meta' + i] = parseInt(drop_meta || '0')
+      for (let j = 0; j < 4; j++) newObj[j + 'chance' + i] = o.chance || 100.0
+      for (let j = 0; j < 4; j++)
+        newObj[j + 'pair' + i] = `{
   "left": ${o.luck?.[j]?.[0] ?? o.luck?.[0] ?? 1},
   "right": ${o.luck?.[j]?.[1] ?? o.luck?.[1] ?? 1}\n}`
     })
@@ -270,29 +280,31 @@ export function setBlockDrops(block_stack, dropList, isSkipSaving=false) {
   } catch (error) {
     return []
   }
-  const entryIndex = arr.findIndex(o=>o.name===block_id && o.meta===block_meta)
+  const entryIndex = arr.findIndex(
+    (o) => o.name === block_id && o.meta === block_meta
+  )
 
-  if(newObj)
-    if(entryIndex !== -1) Object.assign(arr[entryIndex], newObj)
-    else(arr.push(newObj))
-  else
-    if(entryIndex !== -1) arr.splice(entryIndex, 1)
-  
-  if(!isSkipSaving) {
+  if (newObj)
+    if (entryIndex !== -1) Object.assign(arr[entryIndex], newObj)
+    else arr.push(newObj)
+  else if (entryIndex !== -1) arr.splice(entryIndex, 1)
+
+  if (!isSkipSaving) {
     saveBlockDrops(arr)
   }
 
   return arr
 }
 
-
 /**
- * 
+ *
  * @param {{block_stack:string, dropList:DropEntry[]}[]} [blockDropList]
  */
 export function setBlockDropsList(blockDropList) {
   let arr
-  blockDropList.forEach(o => arr=setBlockDrops(o.block_stack, o.dropList, true))
+  blockDropList.forEach(
+    (o) => (arr = setBlockDrops(o.block_stack, o.dropList, true))
+  )
   return saveBlockDrops(arr)
 }
 
@@ -301,9 +313,14 @@ export function setBlockDropsList(blockDropList) {
  */
 function saveBlockDrops(arr) {
   saveText(
-    JSON.stringify(arr.sort(({name:a, meta:am},{name:b, meta:bm})=>naturalSort(a+am,b+bm)), null, 2)
-      .replace(/^(\s+"\d+chance\d+": \d+)(,?)$/gm, '$1.0$2')
-    , 'config/BlockDrops/blockdrops.txt'
+    JSON.stringify(
+      arr.sort(({ name: a, meta: am }, { name: b, meta: bm }) =>
+        naturalSort(a + am, b + bm)
+      ),
+      null,
+      2
+    ).replace(/^(\s+"\d+chance\d+": \d+)(,?)$/gm, '$1.0$2'),
+    'config/BlockDrops/blockdrops.txt'
   )
   return arr
 }
@@ -312,7 +329,7 @@ function saveBlockDrops(arr) {
  * @param {string | readonly string[]} globs
  */
 export function globs(globs) {
-  return del.sync(globs, {dryRun: true, force: true})
+  return del.sync(globs, { dryRun: true, force: true })
 }
 
 /**
@@ -328,9 +345,9 @@ export function globs(globs) {
  *
  * @param {{}} obj
  * @param {renameKeysCallback} cb Rename Key callback
- * @return {{}} 
+ * @return {{}}
  */
-function renameKeys(obj, cb) {  
+function renameKeys(obj, cb) {
   if (typeof cb !== 'function') return obj
 
   const keys = Object.keys(obj)
@@ -338,7 +355,9 @@ function renameKeys(obj, cb) {
 
   for (let i = 0; i < keys.length; i++) {
     let key = keys[i]
-    if (key == '__'){ continue }
+    if (key == '__') {
+      continue
+    }
 
     const val = obj[key]
     const str = cb(key, val)
@@ -356,10 +375,10 @@ function renameKeys(obj, cb) {
  *
  * @param {*} obj
  * @param {renameKeysCallback} cb
- * @return {*} 
+ * @return {*}
  */
 export function renameDeep(obj, cb) {
-  const type = typeof(obj)
+  const type = typeof obj
 
   if (type !== 'object' && !Array.isArray(obj)) {
     throw new Error('expected an object')
@@ -368,12 +387,14 @@ export function renameDeep(obj, cb) {
   if (type === 'object') obj = renameKeys(obj, cb)
 
   /** @type {{}|[]} */
-  let res = Array.isArray(obj) ? [] : {}
+  const res = Array.isArray(obj) ? [] : {}
 
   for (const key in obj) {
-    if (key == '__'){ continue }
+    if (key == '__') {
+      continue
+    }
     const val = obj[key]
-    if (typeof(val) === 'object' || Array.isArray(val)) {
+    if (typeof val === 'object' || Array.isArray(val)) {
       res[key] = renameDeep(val, cb)
     } else {
       res[key] = val
@@ -383,16 +404,18 @@ export function renameDeep(obj, cb) {
 }
 
 /**
- * 
+ *
  * @param {string} a
  * @param {string} b
  */
-export const naturalSort = (a,b) => a.localeCompare(b, undefined, {numeric: true, sensitivity: 'base'})
+export const naturalSort = (a, b) =>
+  a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' })
 
-
-export function isPathHasChanged(pPath){
+export function isPathHasChanged(pPath) {
   try {
-    return !!execSync('git diff HEAD '+pPath).toString().trim()
+    return !!execSync('git diff HEAD ' + pPath)
+      .toString()
+      .trim()
   } catch (error) {
     return true
   }
@@ -418,29 +441,32 @@ export const defaultHelper = {
   begin: function (s, steps) {
     this.done()
     // @ts-ignore
-    if(steps) (this.steps = steps, this.stepSize = steps / 30)
-    process.stdout.write(`🔹 ${s.trim()}` + (steps?` [${steps}] `:''))
+    if (steps) (this.steps = steps), (this.stepSize = steps / 30)
+    process.stdout.write(`◽ ${s.trim()}` + (steps ? ` [${steps}] ` : ''))
     this.isUnfinishedTask = true
   },
-  done: function (s='') {
-    if(!this.isUnfinishedTask) return
+  done: function (s = '') {
+    if (!this.isUnfinishedTask) return
     process.stdout.write(` ${chalk.gray(`${s} ✔`)}\n`)
     this.isUnfinishedTask = false
   },
-  step: function (s='.') {
+  step: function (s = '.') {
     // @ts-ignore
-    if(this.steps <= 30 || (this.steps-- % this.stepSize === 0)) {
+    if (this.steps <= 30 || this.steps-- % this.stepSize === 0) {
       process.stdout.write(s)
     }
   },
-  result: function (s='') {
+  result: function (s = '') {
     this.done()
     process.stdout.write(`✔️ ${chalk.dim.green(`${s}`)}\n`)
   },
-  warn : function (...s) { process.stdout.write(`⚠️ ${chalk.dim.yellow(`${s.join('\t')}`)}`) },
-  error: function (...s) { process.stdout.write(`🛑 ${chalk.dim.red   (`${s.join('\t')}`)}`) },
+  warn: function (...s) {
+    process.stdout.write(`⚠️ ${chalk.dim.yellow(`${s.join('\t')}`)}`)
+  },
+  error: function (...s) {
+    process.stdout.write(`🛑 ${chalk.dim.red(`${s.join('\t')}`)}`)
+  },
 
   isUnfinishedTask: false,
-  taskResult: ''
+  taskResult: '',
 }
-

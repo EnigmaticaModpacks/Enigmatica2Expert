@@ -1,26 +1,23 @@
 {
   "hooks": {
-    "before:init": [
-      "echo \"node ./dev/automate.js --keep-cache --hardfail\"",
-      "echo \"Clear working tree before advance next step\""
-    ],
-    "after:bump": [
-      "echo \"Generate changelog...\"",
-      "node ./dev/changelog.js --next=${version}",
-      "echo \"Fix changelog and press ENTER\"",
-      "pause"
-    ]
   },
   "git": {
-    "requireBranch": "master"
+    "requireBranch": "master",
+    "requireCleanWorkingDir": false,
+    "commit": false,
+    "tag": false,
+    "changelog": false
   },
   "npm": {
-    "publish": false
+    "publish": false,
+    "ignoreVersion": true,
+    "skipChecks": true
   },
   "github": {
     "release": true,
+    "update": true,
     "releaseName": "Release ${version}",
-    "releaseNotes": "type ./changelogs/~GH_notes.md",
+    "releaseNotes": "type \"./dev/release/~GitHub_notes.md\"",
     "draft": true,
     "tokenRef": "GITHUB_TOKEN",
     "assets": [
