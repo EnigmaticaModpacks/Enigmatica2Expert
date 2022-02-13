@@ -1,6 +1,6 @@
 # Enigmatica 2: Expert - Extended
 
-[![Curse Forge](https://cf.way2muchnoise.eu/full_561105_downloads.svg)](https://minecraft.curseforge.com/projects/enigmatica-2-expert-extended)
+[![Curse Forge](https://cf.way2muchnoise.eu/full_561105_downloads.svg)](https://minecraft.curseforge.com/projects/enigmatica-2-expert-extended) <a title="Join us on Discord!" href="https://discord.gg/VcmyHdNNQP"><img src="https://img.shields.io/discord/911676461050642432?label=E2E-E%20Discord&amp;logo=Discord&amp;style=?flat" alt="Discord"/></a>
 
 ![](https://i.imgur.com/afnpdXm.png)
 
@@ -55,18 +55,25 @@ See full list in [MODS.md](MODS.md)
 
 ## Installation
 
-1. Download `E2E-Extended_{version}.zip` from Assets of [latest release](https://github.com/Krutoy242/Enigmatica2Expert-Extended/releases).
-2. Use *Import* feature in your luncher.
+### From Curse Forge
+
+Just use *New Instance* feature of your launcher. [GDLauncher example](https://i.imgur.com/1KV7r6T.png).
 
 ### Manual installation
 
-There is no guide for manual installation yet.
+1. Download `E2E-Extended_{version}.zip` from Assets of [latest release](https://github.com/Krutoy242/Enigmatica2Expert-Extended/releases) *OR* from [CurseForge page](https://www.curseforge.com/minecraft/modpacks/enigmatica-2-expert-extended).
+2. Use *Import* feature in your luncher.
 
-### Info
+## Info
 
 - Loading time ~8 minutes. [More info](https://i.imgur.com/JFARuTf.png)
+- First load could take 10+ minutes to create chaches.
 - Recommended RAM: `6Gb`.
-- **Refined Storage** (with addons) disabled by default. You can install them manually, recipes would change automatically.
+
+<details><summary>Refined Storage info</summary>
+<p>
+
+**Refined Storage** (with addons) not included by default. You can install them manually, recipes would change automatically.
   > Integrated and tested RS mods:
   >
   > - [**Refined Storage**](https://www.curseforge.com/minecraft/mc-mods/refined-storage)
@@ -74,6 +81,11 @@ There is no guide for manual installation yet.
   > - [**Refined Storage: Requestify**](https://www.curseforge.com/minecraft/mc-mods/rs-requestify)
   > - [**Refined Storage Large Patterns**](https://www.curseforge.com/minecraft/mc-mods/rslargepatterns)
   > - [**RSInfiniteWireless**](https://www.curseforge.com/minecraft/mc-mods/rsinfinitewireless)
+
+</p>
+</details>
+
+
 
 -----------------
 
@@ -86,5 +98,5 @@ This is unofficial addon and not supported with **Enigmatica** dev team.
 
 ## Links
 
-- [Discord](https://discord.gg/P2MTyxHZtw)
 - [CurseForge](https://www.curseforge.com/minecraft/modpacks/enigmatica-2-expert-extended)
+- [Discord](https://discord.gg/P2MTyxHZtw)
