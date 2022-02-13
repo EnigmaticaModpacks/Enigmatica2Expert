@@ -1,6 +1,8 @@
 import loottweaker.vanilla.loot.LootTable;
 import loottweaker.vanilla.loot.LootPool;
 import crafttweaker.item.IItemStack as IItemStack;
+import loottweaker.vanilla.loot.Functions;
+
 #modloaded loottweaker
 
 #ignoreBracketErrors
@@ -35,19 +37,12 @@ val caveloot = [
 	<actuallyadditions:item_crystal_empowered:3>,
 	<actuallyadditions:item_crystal_empowered:4>,
 	<actuallyadditions:item_crystal_empowered:5>,
-	<botania:manaring>,
+	<botania:manaring>.withTag({mana: 500000}),
 	<botania:auraring>,
 	<botania:magnetring>,
 	<mysticalagriculture:prudentium_apple>,
 	<mysticalagriculture:intermedium_apple>,
 	<mysticalagriculture:superium_apple>,
-	<botania:brewvial>.withTag({brewKey: "bloodthirst"}),
-	<botania:brewvial>.withTag({brewKey: "overload"}),
-	<botania:brewvial>.withTag({brewKey: "invisibility"}),
-	<botania:brewvial>.withTag({brewKey: "regen"}),
-	<botania:brewvial>.withTag({brewKey: "speed"}),
-	<botania:brewvial>.withTag({brewKey: "clear"}),
-	<botania:brewflask>.withTag({brewKey: "strength"}),
 	<biomesoplenty:gem:6>,
 	<thermalfoundation:storage_alloy>,
 ] as IItemStack[];
@@ -59,13 +54,14 @@ for item in caveloot {
 	ice_dragon_male_cave_pool.addItemEntry(item, 3);
 }
 
-# *======= Myrmex =======*
-
-function addLootList(table as string, pool as string, map as int[IItemStack]) {
+function addLootList(table as string, pool as string, map as int[IItemStack], countMin as int = 0, countMax as int = 0) {
 	val loot_pool = loottweaker.LootTweaker.getTable(table).getPool(pool);
 	for item, weight in map {
 		if(isNull(item)) continue;
-		loot_pool.addItemEntry(item, weight);
+		if(countMin <= 0 || countMax <= 0)
+			loot_pool.addItemEntry(item, weight);
+		else
+			loot_pool.addItemEntryHelper(item, weight, 0, [Functions.setCount(countMin, max(countMin, countMax))], []);
 	}
 }
 
@@ -158,15 +154,20 @@ addLootList(
 addLootList(
 	"iceandfire:cyclops_cave",
 	"cyclops_cave", {
-	<enderio:item_material:35> : 30,
-	<enderio:item_material:2> : 70,
-	<rftools:storage_module:1> : 3,
-	<rftools:storage_module:2> : 1,
-	<enderio:item_inventory_charger_basic>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 0, energy: 1000000}}) : 10,
-	<enderio:item_inventory_charger>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 1, energy: 7500000}}) : 3,
-	<enderio:item_inventory_charger_vibrant>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 3, energy: 125000000}}) : 1,
-	FluidCell("nutrient_distillation") : 10,
-	FluidCell("ender_distillation") : 5,
+	<enderio:item_material:2>          : 70,
+	<enderio:item_material:35>         : 30,
+	<enderio:item_material:68>         : 10,
+	<rftools:storage_module:1>         : 6,
+	<rftools:storage_module:2>         : 2,
+	FluidCell("nutrient_distillation") : 20,
+	FluidCell("ender_distillation")    : 10,
+}, 1, 4);
+addLootList(
+	"iceandfire:cyclops_cave",
+	"cyclops_cave", {
+	<enderio:item_inventory_charger_basic>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 0, energy: 1000000}}) : 20,
+	<enderio:item_inventory_charger>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 1, energy: 7500000}}) : 6,
+	<enderio:item_inventory_charger_vibrant>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 3, energy: 125000000}}) : 2,
 });
 
 addLootList(
@@ -184,18 +185,31 @@ addLootList(
 	<ic2:dust:26> : 8,
 	<ic2:dust:31> : 2,
 	<ic2:dust:36> : 2,
-});
+}, 1, 10);
 
 addLootList(
 	"iceandfire:mausoleum_chest",
 	"mausoleum_chest", {
-	<conarm:resist_mat>           : 3,
-	<conarm:resist_mat_fire> * 5  : 3,
-	<conarm:resist_mat_proj> * 5  : 3,
-	<conarm:resist_mat_blast> * 5 : 3,
+	<conarm:resist_mat> * 4       : 3,
+	<conarm:resist_mat_fire> * 10 : 3,
+	<conarm:resist_mat_proj> * 10 : 3,
+	<conarm:resist_mat_blast> * 10: 3,
 	<botania:autocraftinghalo>    : 2,
 	<forestry:carton> * 4         : 60,
 	<danknull:dank_null_panel_2>  : 20,
 	<danknull:dank_null_panel_3>  : 10,
 	<danknull:dank_null_panel_4>  : 3,
 });
+
+addLootList(
+	"quark:chests/pirate_chest",
+	"quark:pirate_ship", {
+	<cyclicmagic:dynamite_safe>   : 30,
+	<cyclicmagic:dynamite_mining> : 10,
+	<cyclicmagic:ender_tnt_6>     : 20,
+	<ic2:dynamite>                : 60,
+	<ic2:dynamite_sticky>         : 50,
+	<quark:arrow_explosive>       : 80,
+	<tconstruct:throwball:1>      : 5,
+	<mekanism:obsidiantnt>        : 5,
+}, 5, 64);
