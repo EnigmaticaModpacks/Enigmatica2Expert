@@ -230,6 +230,7 @@ key_Show Biome Borders:48:CONTROL
 key_key.bookdisplay.display:21
 key_key.bookdisplay.left:203
 key_key.bookdisplay.right:205
+key_bqtweaker.key.pageback:14
 key_key.settings_menu:34
 key_key.range:19
 key_key.undo:22

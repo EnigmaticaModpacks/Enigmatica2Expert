@@ -1,4 +1,4 @@
-ofFogType:2
+ofFogType:3
 ofFogStart:0.8
 ofMipmapType:0
 ofOcclusionFancy:false
