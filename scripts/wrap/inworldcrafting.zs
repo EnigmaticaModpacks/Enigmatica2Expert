@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded inworldcrafting
-// Uses of this mod: 14
+// Uses of this mod: 13
 
 
 //####################################################
@@ -37,26 +37,6 @@ zenClass Class_FluidToItem { zenConstructor() {}
 
 }
 static FluidToItem as Class_FluidToItem = Class_FluidToItem();
-
-//####################################################
-// Uses of this class: 1
-zenClass Class_FluidToFluid { zenConstructor() {}
-
-	// Uses of this method: 1
-	function transform(output as ILiquidStack, inputFluid as ILiquidStack, inputItems as IIngredient[]) as void {
-		if(utils.DEBUG) print('Recipe wrapped: mods.inworldcrafting.FluidToFluid.transform'~
-			serialize.args([serialize.ILiquidStack(output), serialize.ILiquidStack(inputFluid), serialize.IIngredient__(inputItems)]));
-		mods.inworldcrafting.FluidToFluid.transform(output, inputFluid, inputItems);
-	}
-
-	function transform(output as ILiquidStack, inputFluid as ILiquidStack, inputItems as IIngredient[], consume as bool) as void {
-		if(utils.DEBUG) print('Recipe wrapped: mods.inworldcrafting.FluidToFluid.transform'~
-			serialize.args([serialize.ILiquidStack(output), serialize.ILiquidStack(inputFluid), serialize.IIngredient__(inputItems), consume]));
-		mods.inworldcrafting.FluidToFluid.transform(output, inputFluid, inputItems, consume);
-	}
-
-}
-static FluidToFluid as Class_FluidToFluid = Class_FluidToFluid();
 
 //####################################################
 // Uses of this class: 2

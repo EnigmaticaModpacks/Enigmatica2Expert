@@ -230,3 +230,7 @@ for i, candle in candleColors {
 		"M": <thaumcraft:tallow>, # Magic Tallow
 	});
 }
+
+# Shapeless Totem of Undying
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:charm_undying>);
+recipes.addShapeless('Totem conversion', <thaumcraft:charm_undying>, [<minecraft:totem_of_undying>]);

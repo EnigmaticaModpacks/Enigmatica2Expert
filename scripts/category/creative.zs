@@ -118,25 +118,6 @@ var list = {
 	"♠": Bucket("ic2uu_matter"),
 } as IIngredient[string];
 
-
-
-var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
-  TrophyItem:{id:"twilightforest:miniature_structure",Count:1 as byte, Damage:0 as short},
-  TrophyName:"Twilight Forest Master Trophy",
-  TrophyVariant:"gold",
-	TrophyColorRed: 31,
-	TrophyColorGreen: 209,
-	TrophyColorBlue: 0,
-});
-
-# Twilight Forest Master Trophy
-	recipes.addShapeless("Twilight Forest Master Trophy", twilightForestMasterTrophy, 
-	[<twilightforest:trophy>, <twilightforest:trophy:1>, <twilightforest:trophy:2>,
-	<twilightforest:trophy:5>, <ore:blockCrystalMatrix>, <twilightforest:trophy:3>, 
-	<twilightforest:trophy:4>, <twilightforest:trophy:8>, <twilightforest:trophy:6>]);
-
-# Master Trophy
-	mods.jei.JEI.addItem(twilightForestMasterTrophy);
 	
 # *======= Recipes =======*
 
@@ -610,7 +591,7 @@ recipes.addShapeless("Creative Wireless Crafting Terminal",
 list["χ"] = <ore:blockCrystalMatrix>;
 list["◳"] = <ore:blockAethium>;
 list["⌧"] = <ore:ingotInfinity>;
-list["⇭"] = twilightForestMasterTrophy;
+list["⇭"] = <twilightforest:lamp_of_cinders>;
 list["◯"] = <draconicevolution:reactor_core>;
 list["⇯"] = creativeCube;
 list["⇫"] = <mekanism:machineblock2:11>.withTag({tier: 4});

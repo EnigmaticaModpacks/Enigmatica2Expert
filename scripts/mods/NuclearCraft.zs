@@ -369,7 +369,7 @@ scripts.wrap.enderio.AlloySmelter.addRecipe(<nuclearcraft:ingot_block:8>, [<ore:
 
 # [Dimensional Blend] from [Biome Essence]
 recipes.remove(<nuclearcraft:compound:8>);
-scripts.process.crush(<biomesoplenty:biome_essence>, <nuclearcraft:compound:8>, "only: eu2Crusher AACrusher IECrusher", [<thermalfoundation:material:66>], [0.1]);
+scripts.process.crush(<biomesoplenty:biome_essence>, <nuclearcraft:compound:8>, "only: eu2Crusher AACrusher IECrusher", [<thermalfoundation:material:66>], [0.25]);
 
 # Quartz -> [Quarts dust] (nuclearcraft) wrong output fix
 val qwrong = <nuclearcraft:gem_dust:2>;

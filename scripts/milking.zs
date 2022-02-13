@@ -14,6 +14,9 @@ import crafttweaker.entity.IEntityAnimal;
 import crafttweaker.block.IBlockState;
 
 
+#loader crafttweaker reloadableevents
+
+
 # List of Regex animals that can be milked
 static animals as float[string] = {
   ".*buck.*"    : 100.0f,
@@ -105,10 +108,11 @@ function milk(e as crafttweaker.event.PlayerInteractEntityEvent) as bool {
   ) milkAmount *= 10.0;
 
   # Return if container accept only with bug portions
-  if(milkAmount < D(holdData).getFloat("portion", 1.0f)) return false;
+  val dholdData = D(holdData);
+  if(milkAmount < dholdData.getFloat("portion", 1.0f)) return false;
 
   # Determine maximum tank size
-  var maxTankSize = D(holdData.tag).getInt("Fluid.Amount", holdData.tag.Amount);
+  var maxTankSize = dholdData.getInt("tag.Fluid.Amount", dholdData.getInt("tag.Amount", 1000));
 
   #Spawn liquid on ground if overwhelming amount
   var spilled = max(0.0f, milkAmount - maxTankSize as float) as int;
@@ -125,7 +129,7 @@ function milk(e as crafttweaker.event.PlayerInteractEntityEvent) as bool {
       var blockPos = crafttweaker.util.Position3f.create(tx, ty, tz).asBlockPos();
 
       if (e.target.world.getBlockState(blockPos) == <blockstate:minecraft:air>) {
-        e.target.world.setBlockState(<blockstate:contenttweaker:seed_fluid:level=7>, blockPos);
+        e.target.world.setBlockState(<blockstate:contenttweaker:seed:level=7>, blockPos);
         totalSpilled +=1;
       }
 
@@ -140,9 +144,9 @@ function milk(e as crafttweaker.event.PlayerInteractEntityEvent) as bool {
   var updatedTag as IData = itemInHand.tag;
   var clippedAmount = min(maxTankSize, max(1, milkAmount as int)) as int;
   if (isNull(holdData.tag.Fluid)) {
-    updatedTag += {FluidName: "seed_fluid", Amount: clippedAmount};
+    updatedTag += {FluidName: "seed", Amount: clippedAmount};
   } else {
-    updatedTag += {Fluid: {FluidName: "seed_fluid", Amount: clippedAmount}};
+    updatedTag += {Fluid: {FluidName: "seed", Amount: clippedAmount}};
   }
 
   # Mutate item if needed

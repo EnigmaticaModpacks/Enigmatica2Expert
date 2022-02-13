@@ -5,8 +5,10 @@ import mods.ic2.ScrapBox;
 import scripts.requiousJei.add_ic2_crops as crop;
 #modloaded ic2
 
-# Buff from 100
-<ic2:wrench>.maxDamage = 5000;
+
+<ic2:wrench>.maxDamage = 5000; # Buff from 100
+<ic2:dynamite>.maxStackSize = 64;
+<ic2:dynamite_sticky>.maxStackSize = 64;
 
 # Hydrated Coal Dust recipe consumes containers that can store 1000mB + liquid, this fixes that
 	recipes.remove(<ic2:dust:3>);
@@ -508,3 +510,45 @@ craft.remake(<extrautils2:decorativesolid:7>, ["pretty",
   "O": <ic2:crop_res:7>,      # Oil Berry
   "⌃": <ore:blockQuartzBlack>, # Black Quartz
 });
+
+#-----------------------------------------------------
+# Basalt remake for Basalt Sediment Alt
+#-----------------------------------------------------
+<ic2:resource>.displayName = game.localize('e2ee.tile.unsalted_basalt');
+mods.chisel.Carving.removeVariation("basalt", <ic2:resource>);
+val saltConversion = {
+	{<blockstate:ic2:resource>                       : <ic2:resource>}       : {<blockstate:advancedrocketry:basalt>                       : <advancedrocketry:basalt>},
+	{<blockstate:minecraft:grass>                    : <minecraft:grass>}    : {<blockstate:biomesoplenty:grass:variant=silty>             : <biomesoplenty:grass:4>},
+	{<blockstate:minecraft:dirt:variant=dirt>        : <minecraft:dirt>}     : {<blockstate:biomesoplenty:dirt:coarse=false,variant=silty> : <biomesoplenty:dirt:10>},
+	{<blockstate:minecraft:dirt:variant=coarse_dirt> : <minecraft:dirt:1>}   : {<blockstate:biomesoplenty:dirt:coarse=true,variant=silty>  : <biomesoplenty:dirt:2>},
+	{<blockstate:minecraft:farmland>                 : <minecraft:farmland>} : {<blockstate:biomesoplenty:farmland_1>                      : <biomesoplenty:farmland_1>},
+} as IItemStack[crafttweaker.block.IBlockState][IItemStack[crafttweaker.block.IBlockState]];
+
+for inputs, outputs in saltConversion {
+	for inB, inS in inputs {
+		for outB, outS in outputs {
+			scripts.requiousJei.addChemthrower(<liquid:moltensalt>, inS, outS);
+		}
+	}
+}
+
+mods.alfinivia.ImmersiveEngineering.addChemthrowerEffect(<liquid:moltensalt>, false, false, 
+	# IChemEntityEffect
+	function(target,shooter,throwerstack,fluid) {},
+
+	# IChemBlockEffect
+	function(world,pos,side,shooter,throwerstack,fluid) {
+		if(world.remote) return;
+		val blockState = world.getBlockState(pos);
+		for inputs, outputs in saltConversion {
+			for inB, inS in inputs {
+				for outB, outS in outputs {
+					if(inB.matches(blockState)) {
+						world.destroyBlock(pos, false);
+						world.setBlockState(outB, pos);
+					}
+				}
+			}
+		}
+	}
+);

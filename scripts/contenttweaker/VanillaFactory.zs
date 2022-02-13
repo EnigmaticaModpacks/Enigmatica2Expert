@@ -113,21 +113,14 @@ molten.addDataValue("viscosity", "30000");
 # -------------------------------
 # Seed
 # -------------------------------
-# Liquid part
-var pFluidBuilder = MaterialSystem.getPartBuilder().setName("fluid");
-pFluidBuilder.setPartType(MaterialSystem.getPartType("fluid"));
-var pfluid = pFluidBuilder.build();
-
-var seedIssue = MaterialSystem
-	.getMaterialBuilder()
-	.setName("Seed")
-	.setColor(0xE3D7C8)
-	.build()
-	.registerPart(pfluid)
-	.getData();
-seedIssue.addDataValue("temperature", "290");
-seedIssue.addDataValue("density", "2009");
-seedIssue.addDataValue("viscosity", "1000");
+val seed_fluid = VanillaFactory.createFluid("seed", 0xffe3d7c8);
+seed_fluid.material = <blockmaterial:water>;
+seed_fluid.density= 2009;
+seed_fluid.viscosity = 3000;
+seed_fluid.temperature = 290;
+seed_fluid.stillLocation = "contenttweaker:fluids/fluid";
+seed_fluid.flowingLocation = "contenttweaker:fluids/fluid_flowing";
+seed_fluid.register();
 
 
 # -------------------------------

@@ -92,7 +92,7 @@ ${filtered.join('\n')}`
 
 }*/
 
-# Total Furnace recipes registered: 908
+# Total Furnace recipes registered: 909
 # Filtered by JEI blacklist: 49
 # Filtered manuallly (antidupe): 14
 # Filtered by oredict: 201
@@ -126,6 +126,7 @@ infinFurnace(utils.get("betteranimalsplus:goose_egg"), utils.get("betteranimalsp
 infinFurnace(utils.get("betteranimalsplus:pheasant_egg"), utils.get("betteranimalsplus:fried_egg"));
 infinFurnace(utils.get("betteranimalsplus:pheasantraw"), utils.get("betteranimalsplus:pheasantcooked"));
 infinFurnace(utils.get("betteranimalsplus:turkey_egg"), utils.get("betteranimalsplus:fried_egg"));
+infinFurnace(utils.get("betteranimalsplus:turkey_leg_raw"), utils.get("betteranimalsplus:turkey_leg_cooked"));
 infinFurnace(utils.get("betteranimalsplus:turkey_raw"), utils.get("betteranimalsplus:turkey_cooked"));
 infinFurnace(utils.get("betteranimalsplus:venisonraw"), utils.get("betteranimalsplus:venisoncooked"));
 ##infinFurnace(utils.get("bigreactors:dustblutonium"), utils.get("bigreactors:ingotblutonium"));

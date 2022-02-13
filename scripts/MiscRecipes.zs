@@ -354,7 +354,6 @@ craft.remake(<oeintegration:excavatemodifier>, ["pretty",
 });
 
 # Make Quicksand
-scripts.wrap.inworldcrafting.FluidToFluid.transform(<liquid:sand>, <liquid:blueslime>, [<ore:soulSand>]);
 scripts.process.solution([<ore:soulSand>], [<liquid:blueslime>*1000], [<liquid:sand>*1000], null, "except: highoven");
 
 # [Bedrock Miner] from [Grains of Infinity][+2]

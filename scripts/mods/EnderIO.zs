@@ -524,7 +524,7 @@ mods.appliedenergistics2.Grinder.removeRecipe(<thermalfoundation:material:895>);
 scripts.process.crush(<ore:enderpearl>, <appliedenergistics2:material:46>, "Except: Pulverizer PulseCentrifuge", null, null);
 
 # [block_fused_quartz] from [Block_of_Quartz][+2]
-craft.shapeless(<enderio:block_fused_quartz> * 9, "ABBBBBBBB", {
+craft.shapeless(<enderio:block_fused_quartz> * 8, "ABBBBBBBB", {
   A: <contenttweaker:empowered_phosphor>,
   B: <ore:blockQuartz>,
 });

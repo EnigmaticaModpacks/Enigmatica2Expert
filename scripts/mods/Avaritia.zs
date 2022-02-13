@@ -148,6 +148,7 @@ scripts.wrap.extendedcrafting.TableCrafting.addShapeless(
     <animania:raw_prime_rabbit>,
     <animania:raw_prime_steak>,
     <betteranimalsplus:pheasantraw>,
+    <betteranimalsplus:turkey_leg_raw>,
     <betteranimalsplus:turkey_raw>,
     <betteranimalsplus:venisonraw>,
     <harvestcraft:duckrawitem>,

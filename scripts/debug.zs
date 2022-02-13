@@ -8,11 +8,17 @@ It should not exist in release version.
 #priority 3999
 #loader crafttweaker reloadableevents
 
+import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
+import crafttweaker.player.IPlayer;
 import mods.ctintegration.data.DataUtil;
 import mods.ctintegration.util.RawLogger.logRaw as logRaw;
-import crafttweaker.data.IData;
-import crafttweaker.player.IPlayer;
+import mods.zenutils.command.CommandUtils;
+import mods.zenutils.command.IGetTabCompletion;
+import mods.zenutils.command.ZenCommand;
+import mods.zenutils.I18n;
+import mods.zenutils.StringList;
+import mods.zenutils.ZenUtils;
 
 utils.DEBUG = true;
 
@@ -90,6 +96,11 @@ static debugUtils as DebugUtils = DebugUtils();
 events.onPlayerLoggedIn(function(e as crafttweaker.event.PlayerLoggedInEvent){
   if(e.player.world.isRemote()) return;
   if(!debugUtils.firstTime(e.player.world.time)) return;
+
+  mods.zenutils.DelayManager.addDelayWork(function() {
+    e.player.sendMessage('§cDebug environment activated!');
+    e.player.sendMessage('§8If you want to disable DEBUG mode, remove §7scripts/debug.zs§8 file');
+  }, 20);
 
   # Delayed call to not overload joining world
   mods.zenutils.DelayManager.addDelayWork(function() {
@@ -237,3 +248,57 @@ for r in furnace.all {
   print(r.commandString);
 }
 print('##################################################');
+
+
+
+######################################################
+# Helper commands for localization
+######################################################
+
+val lang as ZenCommand = ZenCommand.create("lang");
+lang.getCommandUsage = function(sender) {
+  return "commands.lang.usage"; // return localization key
+};
+
+val tabCompletion as IGetTabCompletion = function(server, sender, pos) {
+  return StringList.create([
+    "hand"
+  ]);
+};
+
+lang.requiredPermissionLevel = 0; // require no permission, everyone can execute the command.
+lang.tabCompletionGetters = [tabCompletion];
+lang.execute = function(command, server, sender, args) {
+  val pl = CommandUtils.getCommandSenderAsPlayer(sender);
+
+  if (args.length == 0) {
+    val invLength = pl.inventorySize;
+    var s = "Lang keys and translations:";
+    var s_len = 0;
+    for i in 0 to invLength {
+      val it = pl.getInventoryStack(i);
+      if (!isNull(it)) {
+        s += "\n" ~ it.name ~ "=" ~ it.displayName;
+        s_len += 1;
+      }
+    }
+    if(s_len>0) {
+      print(s);
+      pl.sendChat(I18n.format(game.localize("commands.lang.output"), s_len~""));
+    } else {
+      pl.sendChat(game.localize("commands.lang.empty"));
+    }
+  } else if (args[0] == "hand") {
+    val it = pl.currentItem;
+    if (!isNull(it)) {
+      print(
+        "Lang key and translation:" ~ "\n" ~ 
+        it.name ~ "=" ~ game.localize(it.name)
+      );
+      pl.sendChat(game.localize("commands.lang.hand"));
+    }
+  } else {
+    CommandUtils.notifyWrongUsage(command, sender);
+  }
+};
+lang.register();
