@@ -274,6 +274,7 @@ for item in [
 	<quark:grate>,
 	<quark:horse_whistle>,
 	<quark:slime_bucket>,
+	<quark:archaeologist_hat>,
 ] as IItemStack[] {
 	desc.tooltip(item);
 }
@@ -429,3 +430,12 @@ for lang, items in {
 		desc.jei(item, lang);
 	}
 }
+
+val handOfFatelocalized = mods.zenutils.I18n.format(desc.local(<betteranimalsplus:handoffate>), 
+<minecraft:flint_and_steel>.displayName,
+<minecraft:nether_wart>.displayName,
+<betteranimalsplus:antler>.displayName,
+<betteranimalsplus:venisonraw>.displayName
+);
+<betteranimalsplus:handoffate>.addTooltip(handOfFatelocalized);
+mods.jei.JEI.addDescription(<betteranimalsplus:handoffate>, handOfFatelocalized);

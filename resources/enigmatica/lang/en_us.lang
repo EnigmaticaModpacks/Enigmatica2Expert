@@ -3,6 +3,7 @@ item.excompressum:bait_unknown.name=Any Bait
 item.catalyst.name=§dObsidian Catalyst
 tile.block_decorative_lormyte.name=Lormyte Block
 e2ee.tile.basalt_sediment=Basalt Sediment
+e2ee.tile.unsalted_basalt=Unsalted Basalt
 
 # Manual langs
 e2ee.garbage.affect_output_amount=§6Affect output amount§r
@@ -122,6 +123,7 @@ tooltips.lang.quark:gravisand=Falls only when a redstone signal is given.\nFloat
 tooltips.lang.quark:grate=Players can walk on top of the grate just fine\nbut animals will be too scared to walk over it.\nItems will drop straight through it
 tooltips.lang.quark:horse_whistle=Teleports your horse to you if you're within a medium-sized radius.
 tooltips.lang.quark:slime_bucket=Animates in your inventory/hotbar when you're in a slime chunk.
+tooltips.lang.quark:archaeologist_hat=Increases Gems drop when mining by 100%
 tooltips.lang.thaum.progress=Progress
 tooltips.lang.thaum.auromancy=Auromancy
 tooltips.lang.thaum.alchemy=Alchemy
@@ -190,6 +192,7 @@ tooltips.lang.backpack.Wolf=§aChecks around for any wolves that may lurk around
 tooltips.lang.worldgen.disabled_use_sub=§6World generation §cdisabled§r.
 tooltips.lang.twilightforest:transformation_powder=§3Sheep§r -> §2Bighorn Sheep\n§3Pig§r -> §2Wild Boar\n§3Cow§r -> §2Wild Deer\n§3Wolf§r -> §2Hostile Wolf\n§3Chicken§r -> §2Penguin\n§3Witch§r -> §2Skeleton Druid\n§3Bat§r -> §2Forest Raven\n§3Blaze§r -> §2Twilight Wraith\n§3Cave Spider§r -> §2Swarm Spider\n§3Zombie Pigman§r -> §2Minotaur\n§3Spider§r -> §2Hedge Spider
 tooltips.lang.syringe_craftable=§nSyringe§r is craftable but hidden in JEI
+tooltips.lang.betteranimalsplus:handoffate=§aRight-click with:§r §n%s§r, §n%s§r, §n%s§r, §n%s§r
 tooltips.lang.tcon.fusewood=§nFusewood§r crafts from §nShimmerwood§r
 tooltips.lang.tcon.darkwood=§nDarkwood§r crafts from §nLightwood§r
 tooltips.lang.tcon.bloodwood=§nBloodwood§r crafts from §nBlood Wood§r
@@ -321,6 +324,9 @@ e2ee.tips.62=Game stages actually not prohibiting anything.
 e2ee.tips.63=§nTraveler's Backpack§r would gone if you fall into the Void
 e2ee.tips.64=Full §nBackpacks§r in AE2 system cause lags, or even §5cant be taken out§r.
 e2ee.tips.65=§nIndustrial Wires§r - cheapest way to convert between RF and EU.
+e2ee.tips.66=§nCtrl+Delete§r thrashes item from inventory.
+e2ee.tips.67=§nInventory System Storage§r can't be accessed directly, but work with hoppers and VAULTOPIC
+e2ee.tips.68=Right-Click §nOpenblock's Tank§r with Liquid XP to receive experience.
 
 
 e2ee.tconstruct.material.spectre.name=Spectre
