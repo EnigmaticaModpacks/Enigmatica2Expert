@@ -353,7 +353,7 @@
     },
     {
       "projectID": 226254,
-      "fileID": 3328174,
+      "fileID": 3643158,
       "required": true,
       "__meta": {
         "name": "NuclearCraft"
@@ -409,7 +409,7 @@
     },
     {
       "projectID": 228027,
-      "fileID": 2574880,
+      "fileID": 3647708,
       "required": true,
       "__meta": {
         "name": "BiblioCraft"
@@ -737,7 +737,7 @@
     },
     {
       "projectID": 239197,
-      "fileID": 3587830,
+      "fileID": 3642364,
       "required": true,
       "__meta": {
         "name": "CraftTweaker"
@@ -1849,7 +1849,7 @@
     },
     {
       "projectID": 284973,
-      "fileID": 3421902,
+      "fileID": 3641275,
       "required": true,
       "__meta": {
         "name": "Dropt"
@@ -2245,6 +2245,14 @@
       "required": true,
       "__meta": {
         "name": "CraftTweaker Utils"
+      }
+    },
+    {
+      "projectID": 303557,
+      "fileID": 2933382,
+      "required": true,
+      "__meta": {
+        "name": "Better Animals Plus"
       }
     },
     {
@@ -2969,7 +2977,7 @@
     },
     {
       "projectID": 403676,
-      "fileID": 3613137,
+      "fileID": 3636119,
       "required": true,
       "__meta": {
         "name": "ThaumTweaks"
@@ -3049,7 +3057,7 @@
     },
     {
       "projectID": 419286,
-      "fileID": 3575119,
+      "fileID": 3642000,
       "required": true,
       "__meta": {
         "name": "MixinBooter"
@@ -3240,14 +3248,6 @@
       }
     },
     {
-      "projectID": 541068,
-      "fileID": 3627836,
-      "required": true,
-      "__meta": {
-        "name": "Better Animals Plus Plus"
-      }
-    },
-    {
       "projectID": 545353,
       "fileID": 3519479,
       "required": true,
@@ -3281,7 +3281,7 @@
     },
     {
       "projectID": 570458,
-      "fileID": 3632074,
+      "fileID": 3644382,
       "required": true,
       "__meta": {
         "name": "AE2 Unofficial Extended Life"
