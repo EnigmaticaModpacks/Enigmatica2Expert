@@ -1,6 +1,6 @@
 /**
  * @file Disable mods by givn lists
- * 
+ *
  * @author Krutoy242
  * @link https://github.com/Krutoy242
  */
@@ -12,42 +12,49 @@ import { renameSync } from 'fs'
 import _ from 'lodash'
 import escapeGlob from 'glob-escape'
 import chalk from 'chalk'
+import terminal_kit from 'terminal-kit'
+const { terminal: term } = terminal_kit
 
-import { createRequire } from 'module'
-const require = createRequire(import.meta.url)
-const termkit = require("terminal-kit")
-const term = termkit.createTerminal();
-
-const getMods = (s, isDisabled=false)=>globs(_.uniq(
-  s.trim()
-  .split('\n')
-  .filter(s=>s.trim())
-  .map(v=>`mods/${escapeGlob(v)}*.jar`+(isDisabled?'.disabled':''))
-))
+const getMods = (s, isDisabled = false) =>
+  globs(
+    _.uniq(
+      s
+        .trim()
+        .split('\n')
+        .filter((s) => s.trim())
+        .map(
+          (v) => `mods/${escapeGlob(v)}*.jar` + (isDisabled ? '.disabled' : '')
+        )
+    )
+  )
 
 const alreadyDisabled = globs('mods/*.jar.disabled')
 const allEnabledMods = globs('mods/*.jar')
 const totalModsLength = allEnabledMods.length + alreadyDisabled.length
 
-
 /** @type {Array<string>} */
 const registeredMods = []
 const reduceLevel = []
 function addReduceLevel(name, description, modListText) {
-  const         files = getMods(modListText)
+  const files = getMods(modListText)
   const disabledFiles = getMods(modListText, true)
   registeredMods.push(...files)
   registeredMods.push(...disabledFiles)
   reduceLevel.push({
     name,
-    description, 
-    files, disabledFiles,
+    description,
+    files,
+    disabledFiles,
   })
 }
 
-const getLevelText = (i)=> chalk.rgb(244, 255 - (255/reduceLevel.length*i)|0, 59)(reduceLevel[i].name)
+const getLevelText = (i) =>
+  chalk.rgb(
+    244,
+    (255 - (255 / reduceLevel.length) * i) | 0,
+    59
+  )(reduceLevel[i].name)
 const getFileName = (s) => s.replace(/^.*[\\/]/, '')
-
 
 function exit() {
   // term`\nDone!`
@@ -56,23 +63,34 @@ function exit() {
 
 async function init() {
   term.clear()
-  term`\nSelect `.brightYellow`Reduce Level`
-    .styleReset()` for `.green(totalModsLength)` mods`
-    .styleReset()`\n`
-  
-  let cumulativeReduction=0
-  const reduceIndex = (await term.singleColumnMenu(
-    reduceLevel.map((l,i)=>
-      `${i+1}: `+
-      `${getLevelText(i)} `+
-      `(${chalk.red.dim('-'+(cumulativeReduction += l.files.length + l.disabledFiles.length))}) `+
-      `${chalk.rgb(100,100,100)(l.description)}`
-    )
-  ).promise).selectedIndex
+  term`\nSelect `.brightYellow`Reduce Level`.styleReset()` for `.green(
+    totalModsLength
+  )` mods`.styleReset()`\n`
+
+  let cumulativeReduction = 0
+  const reduceIndex = (
+    await term.singleColumnMenu(
+      reduceLevel.map(
+        (l, i) =>
+          `${i + 1}: ` +
+          `${getLevelText(i)} ` +
+          `(${chalk.red.dim(
+            '-' +
+              (cumulativeReduction += l.files.length + l.disabledFiles.length)
+          )}) ` +
+          `${chalk.rgb(100, 100, 100)(l.description)}`
+      )
+    ).promise
+  ).selectedIndex
 
   term('\n')
 
-  const enableBlacklist = _.uniq(reduceLevel.slice(0, reduceIndex+1).map(r=>r.disabledFiles).flat())
+  const enableBlacklist = _.uniq(
+    reduceLevel
+      .slice(0, reduceIndex + 1)
+      .map((r) => r.disabledFiles)
+      .flat()
+  )
   await renameMods(
     'Enabling Mods',
     _.difference(alreadyDisabled, enableBlacklist),
@@ -80,7 +98,12 @@ async function init() {
   )
   await renameMods(
     'Disabling Mods',
-    _.uniq(reduceLevel.slice(0, reduceIndex+1).map(r=>r.files).flat()),
+    _.uniq(
+      reduceLevel
+        .slice(0, reduceIndex + 1)
+        .map((r) => r.files)
+        .flat()
+    ),
     true
   )
 
@@ -88,27 +111,29 @@ async function init() {
 }
 
 async function renameMods(actionName, list, toDisable) {
-  if(!list.length) return
+  if (!list.length) return
 
   const progressBar = term.progressBar({
     title: actionName.padEnd(15),
-    width: 80 ,
+    width: 80,
     syncMode: true,
-    items: list.length
+    items: list.length,
   })
 
-  const updateBit = 1/list.length
+  const updateBit = 1 / list.length
   let progress = -updateBit
   for (const oldPath of list) {
     const fileName = getFileName(oldPath)
     progressBar.startItem(fileName)
 
-    const newPath = toDisable ? oldPath+'.disabled' : oldPath.replace(/\.disabled$/, '')
+    const newPath = toDisable
+      ? oldPath + '.disabled'
+      : oldPath.replace(/\.disabled$/, '')
     renameSync(oldPath, newPath)
     // console.log('old, new :>> ', chalk.yellow(getFileName(oldPath)), chalk.green(getFileName(newPath)))
 
-    progressBar.update(progress += updateBit)
-    await new Promise(r => setTimeout(r, 500/list.length))
+    progressBar.update((progress += updateBit))
+    await new Promise((r) => setTimeout(r, 500 / list.length))
   }
   progressBar.update(1)
   term('\n\n')
@@ -116,23 +141,38 @@ async function renameMods(actionName, list, toDisable) {
 
 addReduceLevel('Everything', 'All Mods included', '')
 
-addReduceLevel('No Refined Storage', 'Mods related to Refined Storage are removed', `
+addReduceLevel(
+  'No Refined Storage',
+  'Mods related to Refined Storage are removed',
+  `
 refinedstorage-
 refinedstorageaddons-
 refinedstoragerequestify-
 rsinfinitewireless-
 RSLargePatterns-
-`)
+`
+)
 
-addReduceLevel('Soft', 'Remove client-only mods, that has impact on performance. Could save ~20 seconds on load time and some FPS.', `
+addReduceLevel(
+  'Soft',
+  'Remove client-only mods, that has impact on performance. Could save ~20 seconds on load time and some FPS.',
+  `
 betteranimals-
 DynamicSurroundings
 OreLib
 Sound-Physics-
 CustomLoadingScreen-
-`)
+`
+)
 
-addReduceLevel('Server Safe', 'Remove all client-only mods, still multiplayer safe.', `
+addReduceLevel(
+  'Server Safe',
+  'Remove all client-only mods, still multiplayer safe.',
+  `
+BNBGamingCore-
+BNBGamingLib-
+Triumph-
+BQTweaker-
 Nimble-
 Biome Border Viewer
 blockdrops-
@@ -154,9 +194,15 @@ smooth-scrolling-everywhere-
 Fakename
 DefaultWorldGenerator-port-
 bookdisplay-
-`)
+`
+)
 
-addReduceLevel('Maximum Speedup', 'Items and blocks would be removed\nQuest Rewards and Requirments would be replaced to placeholders\nLoot Boxes would output placeholders', `
+addReduceLevel(
+  'Maximum Speedup',
+  'Items and blocks would be removed\nQuest Rewards and Requirments would be replaced to placeholders\nLoot Boxes would output placeholders',
+  `
+thaumtweaks-
+_bansoukou-
 TS2K16-
 thaumicwonders-
 ping-
@@ -258,10 +304,9 @@ CoTRO-
 gamestagesviewer-
 Nutrition-
 EmberRootZoo-
-clientfixer-`
-+
-// Non-extended mods:
-`
+clientfixer-` +
+    // Non-extended mods:
+    `
 BetterBuildersWands-
 OpenBlocks-
 NaturesCompass-
@@ -305,9 +350,14 @@ angermanagement-
 JustSleep-
 supersoundmuffler-revived_
 ModularController-
-`)
+`
+)
 
-addReduceLevel('CraftTweaker test', 'Main mods disabled. Most stuff erroring. Unplayable.', `
+addReduceLevel(
+  'CraftTweaker test',
+  'Main mods disabled. Most stuff erroring. Unplayable.',
+  `
+ModularAssembly-
 ConsoleFilter-
 maleksinfinitygauntlet
 VanillaFix-
@@ -357,7 +407,6 @@ CyclopsCore-
 industrialforegoing-
 ActuallyAdditions-
 AppleCore-
-Bookshelf-
 DarkUtils-
 Draconic-Evolution-
 BrandonsCore-
@@ -564,11 +613,16 @@ plustic-
 tconevo-
 TinkersComplement-
 TinkerToolLeveling-
-`)
+`
+)
 
-addReduceLevel('Remove Everything', 'Every single mod disabled. But what for?', `
+addReduceLevel(
+  'Remove Everything',
+  'Every single mod disabled. But what for?',
+  `
 OptiFine_
 GameStages-
+Bookshelf-
 BetterFps-
 ContentTweaker-
 CraftTweaker2-
@@ -580,6 +634,7 @@ foamfix-
 incontrol-
 InventoryTweaks-
 jei_1.12.2-
+HadEnoughItems_
 JustEnoughIDs-
 modtweaker-
 MouseTweaks-
@@ -590,12 +645,14 @@ unloader-
 Wawla-
 zenutils-
 base-
-`)
+`
+)
 
-const unregMods = _.difference(allEnabledMods, _.uniq(registeredMods))
-  .map(getFileName)
+const unregMods = _.difference(allEnabledMods, _.uniq(registeredMods)).map(
+  getFileName
+)
 
-if(unregMods.length) {
+if (unregMods.length) {
   console.log('This mods unregistered in lists :>> ', unregMods)
   exit()
 }

@@ -6,15 +6,24 @@
  */
 //@ts-check
 
-import { defaultHelper, loadJson, loadText, saveObjAsJson } from './utils.js'
+import {
+  defaultHelper,
+  loadJson,
+  loadText,
+  saveObjAsJson,
+  saveText,
+} from './utils.js'
 import parseGitignore from 'parse-gitignore'
 import memoize from 'memoizee'
 import fast_glob from 'fast-glob'
 import { resolve } from 'path'
 import fetchMod from './curseforge.js'
+import { table, getBorderCharacters } from 'table'
 const { sync: globs } = fast_glob
 
-export async function init(h = defaultHelper) {}
+export async function init(h = defaultHelper) {
+  generateManifest()
+}
 
 const getIgnoredModIDs = memoize(() => {
   const ignoredMods = globs(parseGitignore(loadText('dev/.devonly.ignore')), {
@@ -59,6 +68,24 @@ export const loadMCInstanceFiltered = memoize(
   }
 )
 
+/**
+ * @param {any[]} modsList
+ */
+function formatModList(modsList) {
+  const orderedList = modsList
+    .map((m) => JSON.stringify(m).replace(/(":)("|\d+)/g, '$1____$2'))
+    .join(',\n')
+    .split('\n')
+    .map((s) => ('    ' + s).split('____'))
+
+  return table(orderedList, {
+    border: getBorderCharacters('void'),
+    columnDefault: { paddingLeft: 0, paddingRight: 0 },
+    drawHorizontalLine: () => false,
+    columns: new Array(3).fill({ alignment: 'right' }),
+  }).replace(/[ \t]+$|\n$/gm, '')
+}
+
 let forgeVersion
 
 /**
@@ -69,7 +96,7 @@ let forgeVersion
  * @returns {Promise<{[key:string]: any}>}
  */
 export async function generateManifest(
-  version,
+  version = loadJson('manifest.json').version,
   mcinstancePath = 'minecraftinstance.json',
   manifestPostfix = ''
 ) {
@@ -82,12 +109,7 @@ export async function generateManifest(
     }))
   )
 
-  const modList = modListUnfiltered
-    .filter((m) => !getIgnoredModIDs().has(m.projectID))
-    .filter((m) => m.required)
-    .sort((a, b) => a.projectID - b.projectID)
-
-  const result = {
+  const resultObj = {
     minecraft: {
       version: '1.12.2',
       modLoaders: [
@@ -107,12 +129,25 @@ export async function generateManifest(
     version: version,
     author: 'krutoy242',
     overrides: 'overrides',
-    files: modList,
+    files: [],
   }
 
-  saveObjAsJson(result, `manifest${manifestPostfix}.json`)
+  const modList = modListUnfiltered
+    .filter((m) => !getIgnoredModIDs().has(m.projectID))
+    .filter((m) => m.required)
+    .sort((a, b) => a.projectID - b.projectID)
 
-  return result
+  // Format beautifully
+  const resultStr = JSON.stringify(resultObj, null, 2).replace(
+    '  "files": []',
+    `  "files": [
+${formatModList(modList)}
+  ]`
+  )
+  saveText(resultStr, `manifest${manifestPostfix}.json`)
+
+  resultObj.files = modList
+  return resultObj
 }
 
 if (

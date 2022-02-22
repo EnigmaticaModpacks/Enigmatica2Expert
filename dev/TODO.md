@@ -79,17 +79,25 @@ Liquids that should have more uses:
 
 ## TODO
 
+- [x] ✏️ Fix Molten Sulfur in NC Melter
 - [ ] ✏️ Gorgon Head add usage
-- [ ] ✏️ Water Chest (Random Things) get uses
-- [ ] ✏️ Feral Ghoul add drop
 - [ ] ✏️ Use Cyclopus Eye
+- [ ] ✏️ Feral Ghoul add drop
+- [x] ✏️ Water Chest (Random Things) get uses
+- [ ] ✏️ Fix Cobweb and String recipes in Crucible. (try to remove Thaumci Tweaks)
+- [x] ✏️ Essentia Centrifuge Recipes 10 times cheaper
+- [x] ✏️ Milking of Chaos Dragon
+- [x] ✏️ Steelleaf more drop
+- [x] ✏️ Guardian Diode drop from guardians
+- [x] ✏️ Fix Hardened Glass
+- [x] ✏️ Fix Chemical Reactor Luminiscence recipe
 - [ ] 📖 Add CC/OC gate, Add EEPROM with `trader`, add Patchouli and Quest Book Entry
-- [ ] 📖 Change Nether restriction to reward (probably Decuple Compressed Netherrack)
-- [ ] 🏪 Add More Mobs drops
+- [x] 📖 Add Solar tower tip that `structure needs to be placed at the right height, which is actually one level lower than the reflectors`
+- [x] 🔄 Remove caches (they still recalculates when mods changes)
+- [x] 🔄 Change `path/to/` to static path in 3d print
 - [ ] 🔄 Fix HEI not filtering with prefixes
-- [ ] 🔨 Grinding rework
+- [x] 🔨 Grinding rework
 - [ ] 🚧 Change Manifest.json creating to other file (not changelog.js)
-- [ ] 🚧 Fix `bansoukou/` not added to server files
 - [ ] 🚧 Add `inline-block` styles for images publishing on CF
 - [ ] 🚧 Write Server update guide
 - [ ] 🚧 Add modpack automation:
@@ -101,6 +109,8 @@ Liquids that should have more uses:
     6. Push branch/tag on github
     7. Create GitHub release
     8. Create CF release with fixed description
+      > https://support.curseforge.com/en/support/solutions/articles/9000197321-curseforge-upload-api
+      > https://github.com/EnigmaticaModpacks/ModpackUploader/blob/master/tools/ModpackUploader.ps1#L363
 - [ ] 🚧 Server automation:
     1. SFTP Upload `_server.zip`
     2. Remove all folders presented in `.zip`
@@ -114,6 +124,12 @@ Liquids that should have more uses:
 
 ## Long-Term
 
+- [ ] ✏️ Dragon Ice better craft result
+- [ ] ✏️ Remake Inworld Crafting
+- [ ] ✏️ Draconic Evolution infusion can use trillions RF
+- [ ] 📖 Change Nether restriction to reward (probably Decuple Compressed Netherrack, or something more team-playable)
+- [ ] 🏪 Add mob drops in JEI that not listed by JER.
+- [ ] ✏️ Spray Pyrotheum or other liquids to turn blocks into charcoal or other stuff.
 - [ ] ✏️ Change `Expire in block` craft to be faster
 - [ ] ✏️ Add command to show all registered Floo Fireplaces. Probably impossible, files stored in dimension data
 - [ ] ✏️ ![](https://is.gd/0IeIml "Ash") add to liquid interaction
@@ -132,7 +148,7 @@ Liquids that should have more uses:
 - [ ] ✏️ Rats as alt for some machine recipes
 - [ ] ✏️ ![](https://git.io/JCt00 "Creative Harvest") add more crafts
 - [ ] ✏️ ![](https://git.io/JOv90 "Sieve") Siften materials should be harder
-- [ ] ✏️ **4x** ![Coal Singularity](https://git.io/JtJfM) (or other) => ![Creative Bin](https://git.io/JtJvo) (or other ways to craft creative bins with one unchangable item)
+- [ ] ✏️ **4x** Coal Singularity (or other) => Creative Bin (or other ways to craft creative bins with one unchangable item)
 - [ ] ✏️ Add non-linear progression for End Tech (DE, Avaritia)
 - [ ] 🌍 118_KELT-2ab: Return Kelps
 - [ ] 🌍 Add generation of structures in **Ratlantis**
@@ -151,7 +167,6 @@ Liquids that should have more uses:
 - [ ] 📖 Change sound of quest complete to another
 - [ ] 🔄 **Perfect Fuel** Fix texture. Now it uses default one.
 - [ ] 🔄 Fix Custom Animals drops non-cooked meat
-- [ ] 🔄 Remove Automatically Achievment When logged in, there is 2-3 achievments. [Probably solution](https://github.com/TCreopargh/CraftTweakerIntegration/wiki/Advancements)
 - [ ] 🔄 Spectre fluid has no texture (invisible in world)
 - [ ] 🔄 UU requirement for a lot of things seems to be lower than what the tooltip says
 - [ ] 🔄 Remap all **#VoidMiners** to produce not all types of ore each
@@ -166,8 +181,7 @@ Liquids that should have more uses:
 - [ ] 🧮 Craft.zs: Iron nugget wont get recipes for different amount of items
 - [ ] 🧮 Craft.zs: Ability to use vanilla crafting methods
 - [ ] 🧮 Craft.zs: ![](https://git.io/Jz9qH "Gold Nugget") to make vanilla prefixes
-- [ ] 🟢 Return Custom Loading Screen when fixed [this](https://github.com/AlexIIL/CustomLoadingScreen/issues/74).
-- [ ] 🟢 Add [Bansoko](https://www.curseforge.com/minecraft/mc-mods/bansoko) to rename Dank/null `.jar` so it could work with Thaumic Speedup
+- [ ] 🟢 Return Custom Loading Screen when fixed [this](https://github.com/AlexIIL/CustomLoadingScreen/issues/74)
 - [ ] 🟢 Add [Heat And Climate](https://www.curseforge.com/minecraft/mc-mods/heat-and-climate)
 - [ ] ⛏️ Mining levels rework. There is too much mining levels.
   > * [ ] Higher Mining level Ore should spawn lower

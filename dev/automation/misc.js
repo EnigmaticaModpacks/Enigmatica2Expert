@@ -1,6 +1,6 @@
 /**
  * @file Misc automation of modpack
- * 
+ *
  * @author Krutoy242
  * @link https://github.com/Krutoy242
  */
@@ -8,30 +8,43 @@
 //@ts-check
 
 import replace_in_file from 'replace-in-file'
-import { injectInFile, loadText, setBlockDropsList, defaultHelper, loadJson, saveObjAsJson } from '../lib/utils.js'
+import {
+  injectInFile,
+  loadText,
+  setBlockDropsList,
+  defaultHelper,
+  loadJson,
+  saveObjAsJson,
+} from '../lib/utils.js'
 import del from 'del'
+import { execSync, exec as _exec } from 'child_process'
 
 import yargs from 'yargs'
 import _ from 'lodash'
+import fs_extra from 'fs-extra'
+import { join } from 'path'
+const { copySync } = fs_extra
 const argv = yargs(process.argv.slice(2))
-  .alias('k', 'keep-cache').describe('k', 'Not delete cached files')
-  .argv
+  .alias('k', 'keep-cache')
+  .describe('k', 'Not delete cached files').argv
 
-
-export async function init(h=defaultHelper, options = argv) {
-
+export async function init(h = defaultHelper, options = argv) {
   await h.begin('Replacing Optifine item IDs')
   const debug_log = loadText('logs/debug.log')
-  const lootChestID = debug_log.match(/Registry: (\d+) bq_standard:loot_chest bq_standard.items.ItemLootChest/)?.[1]
+  const lootChestID = debug_log.match(
+    /Registry: (\d+) bq_standard:loot_chest bq_standard.items.ItemLootChest/
+  )?.[1]
   let countReplacedIDs = 0
-  if(lootChestID) {
-    replace_in_file.sync({
-      files: 'resourcepacks/bq_lootchests/assets/minecraft/mcpatcher/cit/loot_chest_*.properties',
-      from: /(items=)\d+/gm,
-      to: '$1'+lootChestID,
-      countMatches: true
-    })
-    .forEach(r=>countReplacedIDs += r.numReplacements??0)
+  if (lootChestID) {
+    replace_in_file
+      .sync({
+        files:
+          'resourcepacks/bq_lootchests/assets/minecraft/mcpatcher/cit/loot_chest_*.properties',
+        from: /(items=)\d+/gm,
+        to: '$1' + lootChestID,
+        countMatches: true,
+      })
+      .forEach((r) => (countReplacedIDs += r.numReplacements ?? 0))
   }
 
   //###############################################################################
@@ -54,7 +67,7 @@ export async function init(h=defaultHelper, options = argv) {
   const globMatch = crafttweaker_log.match(/^Recipes:$.*/ms)
 
   const resultArr = []
-  if(globMatch) {
+  if (globMatch) {
     const recipes = globMatch[0]
     const whitelist = [
       '<extrautils2:opinium>',
@@ -80,29 +93,39 @@ export async function init(h=defaultHelper, options = argv) {
 
     // Add already exist remakes
     const fakeIron_zs = loadText('scripts/category/fakeIron.zs')
-    const remakes = fakeIron_zs.match(/^# Start of automatically generated recipes:$.*/ms)[0]
-    for (const match of remakes.matchAll(/^remakeShape.{1,4}\("[^"]+", (?<output><[^>]+>).*$/gm)) {
-      if(whitelist.includes(match.groups.output))
-        resultArr.push(match[0])
+    const remakes = fakeIron_zs.match(
+      /^# Start of automatically generated recipes:$.*/ms
+    )[0]
+    for (const match of remakes.matchAll(
+      /^remakeShape.{1,4}\("[^"]+", (?<output><[^>]+>).*$/gm
+    )) {
+      if (whitelist.includes(match.groups.output)) resultArr.push(match[0])
     }
 
     // Add new
-    for (const match of recipes.matchAll(/^(?<function>recipes\.addShape(?<postfix>d|less))\((?<name>".*?") *, *(?<output>[^, ]*?)(?<count> \* \d+)?, (?<grid>.*)\);$/gm)) {
+    for (const match of recipes.matchAll(
+      /^(?<function>recipes\.addShape(?<postfix>d|less))\((?<name>".*?") *, *(?<output>[^, ]*?)(?<count> \* \d+)?, (?<grid>.*)\);$/gm
+    )) {
       const g = match.groups
 
       const regex = /<(minecraft:iron_|ore:)(ingot|block|nugget)(?:Iron)?>/gi
-      if(
+      if (
         !whitelist.includes(g.output) ||
         !g.grid.match(new RegExp('.*' + regex.source + '.*'))
-      ) continue
+      )
+        continue
 
-      const replacedGrid = g.grid.replaceAll(regex, (...args) => args[2].substring(0,1).toUpperCase())
-      const line = `remakeShape${g.postfix}(${g.name}, ${g.output}${g.count??''}, ${replacedGrid});`
+      const replacedGrid = g.grid.replaceAll(regex, (...args) =>
+        args[2].substring(0, 1).toUpperCase()
+      )
+      const line = `remakeShape${g.postfix}(${g.name}, ${g.output}${
+        g.count ?? ''
+      }, ${replacedGrid});`
       resultArr.push(line)
     }
 
-
-    injectInFile('scripts/category/fakeIron.zs', 
+    injectInFile(
+      'scripts/category/fakeIron.zs',
       '# Start of automatically generated recipes:\n',
       '\n# End of automatically generated recipes',
       resultArr.sort().join('\n')
@@ -116,11 +139,12 @@ export async function init(h=defaultHelper, options = argv) {
   //###############################################################################
 
   let countCachedRemoved
-  if(!options['keep-cache']) {
+  if (!options['keep-cache']) {
     await h.begin('Removing cached files')
-    countCachedRemoved = del.sync([
-      'config/thaumicjei_itemstack_aspects.json',
-    ], {dryRun: false}).length
+    countCachedRemoved = del.sync(
+      ['config/thaumicjei_itemstack_aspects.json'],
+      { dryRun: false }
+    ).length
   }
 
   //###############################################################################
@@ -135,18 +159,42 @@ export async function init(h=defaultHelper, options = argv) {
   await h.begin('Handling blockdrops.txt')
   // Remove noisy urns
   setBlockDropsList([
-    {block_stack: 'thaumcraft:loot_crate_common',   dropList: undefined},
-    {block_stack: 'thaumcraft:loot_urn_common',     dropList: undefined},
-    {block_stack: 'thaumcraft:loot_crate_uncommon', dropList: undefined},
-    {block_stack: 'thaumcraft:loot_urn_uncommon',   dropList: undefined},
-    {block_stack: 'thaumcraft:loot_crate_rare',     dropList: undefined},
-    {block_stack: 'thaumcraft:loot_urn_rare',       dropList: undefined},
-    
-    {block_stack: 'minecraft:mob_spawner',          dropList: [
-      {stack:'enderio:item_broken_spawner'},
-      {stack:'actuallyadditions:item_misc:20', luck: [1,3]},
-    ]}
+    { block_stack: 'thaumcraft:loot_crate_common', dropList: undefined },
+    { block_stack: 'thaumcraft:loot_urn_common', dropList: undefined },
+    { block_stack: 'thaumcraft:loot_crate_uncommon', dropList: undefined },
+    { block_stack: 'thaumcraft:loot_urn_uncommon', dropList: undefined },
+    { block_stack: 'thaumcraft:loot_crate_rare', dropList: undefined },
+    { block_stack: 'thaumcraft:loot_urn_rare', dropList: undefined },
+
+    {
+      block_stack: 'minecraft:mob_spawner',
+      dropList: [
+        { stack: 'enderio:item_broken_spawner' },
+        { stack: 'actuallyadditions:item_misc:20', luck: [1, 3] },
+      ],
+    },
   ])
+
+  //###############################################################################
+  //###############################################################################
+  //###############################################################################
+
+  /*
+
+    Save default options
+
+  */
+  await h.begin('Saving default options')
+  const moreDefOptsPath = 'config/MoreDefaultOptions/'
+  execSync(`git show HEAD:options.txt > ${moreDefOptsPath}options.txt`)
+
+  const mdoExceptions = ['options.txt']
+  const mdoJson = loadJson('config/MoreDefaultOptions.json')
+  mdoJson.forEach((o) => {
+    if (mdoExceptions.includes(o.sourceFilePath)) return
+
+    copySync(o.destinationFilePath, join(moreDefOptsPath, o.sourceFilePath))
+  })
 
   //###############################################################################
   //###############################################################################
@@ -159,49 +207,69 @@ export async function init(h=defaultHelper, options = argv) {
   */
   await h.begin('Heavy Sieve automatically recipes')
   const blocksToCopy = [
-    ['exnihilocreatio:block_andesite_crushed'        ,  'contenttweaker:compressed_crushed_andesite'      ],
-    ['exnihilocreatio:block_diorite_crushed'         ,  'contenttweaker:compressed_crushed_diorite'       ],
-    ['exnihilocreatio:block_granite_crushed'         ,  'contenttweaker:compressed_crushed_granite'       ],
-    ['exnihilocreatio:block_skystone_crushed'        ,  'contenttweaker:compressed_crushed_skystone'      ],
-    ['rats:garbage_pile'                             ,  'contenttweaker:compressed_garbage_pile'          ],
-    ['enderio:block_infinity'                        ,  'enderio:block_infinity:1'                        ],
-    ['additionalcompression:dustgunpowder_compressed',  'additionalcompression:dustgunpowder_compressed:1'],
+    [
+      'exnihilocreatio:block_andesite_crushed',
+      'contenttweaker:compressed_crushed_andesite',
+    ],
+    [
+      'exnihilocreatio:block_diorite_crushed',
+      'contenttweaker:compressed_crushed_diorite',
+    ],
+    [
+      'exnihilocreatio:block_granite_crushed',
+      'contenttweaker:compressed_crushed_granite',
+    ],
+    [
+      'exnihilocreatio:block_skystone_crushed',
+      'contenttweaker:compressed_crushed_skystone',
+    ],
+    ['rats:garbage_pile', 'contenttweaker:compressed_garbage_pile'],
+    ['enderio:block_infinity', 'enderio:block_infinity:1'],
+    [
+      'additionalcompression:dustgunpowder_compressed',
+      'additionalcompression:dustgunpowder_compressed:1',
+    ],
   ]
   const sieveRegistry = loadJson('config/exnihilocreatio/SieveRegistry.json')
   const heavySievePath = 'config/ExCompressum/HeavySieve.json'
   const heavySieve = loadJson(heavySievePath)
   blocksToCopy.forEach(([normal, compressed]) => {
-    const normEntry = sieveRegistry[normal] ?? sieveRegistry[normal+':0']
-    if(!normEntry) {
-      h.warn('Cant add Heavy Sieve recipe: Cant find normal entry: '+ normal)
-      return;
+    const normEntry = sieveRegistry[normal] ?? sieveRegistry[normal + ':0']
+    if (!normEntry) {
+      h.warn('Cant add Heavy Sieve recipe: Cant find normal entry: ' + normal)
+      return
     }
     const entries = heavySieve.custom.entries
     const [source, id, _meta] = compressed.split(':')
-    const shortand = source+':'+id
+    const shortand = source + ':' + id
     const meta = parseInt(_meta || '0')
-    const index = entries.findIndex(o=>o.name == shortand && o.metadata == meta)
+    const index = entries.findIndex(
+      (o) => o.name == shortand && o.metadata == meta
+    )
     const found = entries[index]
 
-    const entry = {...(found ?? {}), ...{
-      name: shortand,
-      metadata: meta,
-      type: "list",
-      rewards: normEntry
-        .filter(o=>!o.drop.nbt)
-        .map(o=>({
-        meshLevel: o.meshLevel,
-        name: o.drop.name,
-        metadata: o.drop.meta,
-        tag: o.drop.nbt,
-        count: 1,
-        luck: 0.0,
-        chance: o.chance,
-        rolls: 1,
-      }))
-    }}
+    const entry = {
+      ...(found ?? {}),
+      ...{
+        name: shortand,
+        metadata: meta,
+        type: 'list',
+        rewards: normEntry
+          .filter((o) => !o.drop.nbt)
+          .map((o) => ({
+            meshLevel: o.meshLevel,
+            name: o.drop.name,
+            metadata: o.drop.meta,
+            tag: o.drop.nbt,
+            count: 1,
+            luck: 0.0,
+            chance: o.chance,
+            rolls: 1,
+          })),
+      },
+    }
 
-    if(index != -1) entries[index] = entry
+    if (index != -1) entries[index] = entry
     else entries.push(entry)
   })
   saveObjAsJson(heavySieve, heavySievePath)
@@ -209,8 +277,14 @@ export async function init(h=defaultHelper, options = argv) {
   //###############################################################################
   //###############################################################################
   //###############################################################################
-  h.result(`Replaced Optifine: ${countReplacedIDs}, Saved fakeIron recipes: ${resultArr.length}` + (countCachedRemoved ? `, Removed cached: ${countCachedRemoved}` : ''))
+  h.result(
+    `Replaced Optifine: ${countReplacedIDs}, Saved fakeIron recipes: ${resultArr.length}` +
+      (countCachedRemoved ? `, Removed cached: ${countCachedRemoved}` : '')
+  )
 }
 
-// @ts-ignore
-if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()
+if (
+  // @ts-ignore
+  import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
+)
+  init()

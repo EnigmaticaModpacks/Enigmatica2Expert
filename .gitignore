@@ -7,7 +7,6 @@
 !config/
 !resources/
 !schematics/**/
-!minemenu/
 !resourcepacks/bq_lootchests/
 !dev/
 !server/
@@ -26,7 +25,6 @@ structures/inactive
 !manifest.json
 !.gitignore
 !.release-it.json
-!caches/
 
 # Files created by client
 config/InvTweaks.cfg

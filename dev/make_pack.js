@@ -174,7 +174,8 @@ const { argv } = yargs(process.argv.slice(2))
   )
 
   if (await pressEnterOrEsc(`[${STEP++}] Add tag? ENTER / ESC.`)) {
-    await git.addAnnotatedTag(nextVersion, 'Next automating release')
+    execSyncInherit(`git tag -a -f -m "Next automating release" ${nextVersion}`)
+    // await git.addAnnotatedTag(nextVersion, 'Next automating release')
   }
 
   /*
