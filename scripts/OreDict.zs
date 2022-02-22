@@ -613,3 +613,14 @@ add(<ore:dustTinyIron>, <rustic:dust_tiny_iron>);
 add(<ore:dustTinySilver>, <contenttweaker:dust_tiny_silver>);
 add(<ore:listAllwater>, <littletiles:lttransparentcoloredblock:5>);
 add(<ore:oreEnderBiomeEssence>, <biomesoplenty:biome_block>);
+
+addItems(<ore:stoneMetamorphic>, [
+	<botania:biomestonea>,
+	<botania:biomestonea:1>,
+	<botania:biomestonea:2>,
+	<botania:biomestonea:3>,
+	<botania:biomestonea:4>,
+	<botania:biomestonea:5>,
+	<botania:biomestonea:6>,
+	<botania:biomestonea:7>,
+]);

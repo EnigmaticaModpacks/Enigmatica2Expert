@@ -67,6 +67,10 @@ var itemsToRemove as string[] = [
 	"enderio:item_travel_staff",
 	"enderio:item_material:9",
 	"cyclicmagic:book_ender",
+	"twilightforest:steeleaf_helmet",
+	"twilightforest:steeleaf_chestplate",
+	"twilightforest:steeleaf_leggings",
+	"twilightforest:steeleaf_boots",
 
 	"minecraft:golden_hoe",
 	"minecraft:diamond_hoe",

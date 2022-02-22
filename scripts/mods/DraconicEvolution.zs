@@ -8,17 +8,17 @@ if(utils.DEBUG) mods.jei.JEI.addItem(<draconicevolution:draconium_chest>.withTag
   ench:[{lvl:1,id:0}], // Add enchant glow
   enchantmentColor:16711680, // Random Things can change color with this tag
   display:{Name:"Draconic Chest with Markings"},
-	
+
 	BCTileData: {BCManagedData: {autoSmeltMode: 0 as byte, smeltEnergyPerTick: 256, colour: -16777216, furnaceOutputBlocked: 0 as byte, burnRate: 0.0, smeltProgress: 0.0, smeltTime: 100 as byte, isSmelting: 0 as byte}, ChestColour: -16777216, RegionData: {SR_6_nsweIO: -1 as byte, SR_4_xSize: 4 as byte, SR_5_nsweIO: -1 as byte, SR_0_ySize: 10 as byte, SR_2_xPos: 16 as byte, SR_1_xSize: 4 as byte, SR_3_xPos: 24 as byte, SR_3_dufIO: -1 as byte, SR_4_ySize: 3 as byte, SR_1_yPos: 0 as byte, SR_6_dufIO: -1 as byte, SR_3_Enabled: 1 as byte, SR_1_Invalid: 0 as byte, SR_4_xPos: 4 as byte, SR_3_xSize: 2 as byte, SR_5_Enabled: 1 as byte, SR_0_yPos: 0 as byte, SR_5_Invalid: 0 as byte, SR_1_Enabled: 1 as byte, SR_2_dufIO: -1 as byte, SR_5_dufIO: -1 as byte, SR_1_xPos: 8 as byte, SR_1_nsweIO: -1 as byte, SR_3_ySize: 10 as byte, SR_3_nsweIO: -1 as byte, SR_3_yPos: 0 as byte, SR_0_xSize: 4 as byte, SR_3_Invalid: 0 as byte, SR_2_ySize: 10 as byte, SR_5_xPos: 12 as byte, SR_4_yPos: 3 as byte, SR_2_xSize: 4 as byte, SR_0_xPos: 0 as byte, SR_5_ySize: 3 as byte, SR_4_dufIO: -1 as byte, SR_1_dufIO: -1 as byte, SR_5_yPos: 3 as byte, SR_2_Enabled: 1 as byte, SR_1_ySize: 10 as byte, SR_0_dufIO: -1 as byte, SR_2_yPos: 0 as byte, SR_0_Invalid: 0 as byte, SR_4_Enabled: 1 as byte, SR_0_nsweIO: -1 as byte, SR_0_Enabled: 1 as byte, SR_4_Invalid: 0 as byte, SR_2_Invalid: 0 as byte, SR_2_nsweIO: -1 as byte, SR_4_nsweIO: -1 as byte, SR_5_xSize: 4 as byte}}}));
 
 # *======= Recipes =======*
 
 # Mob Grinder - by request of Vyraal1
 	recipes.remove(<draconicevolution:grinder>);
-	recipes.addShapedMirrored("Mob Grinder", 
-	<draconicevolution:grinder>, 
+	recipes.addShapedMirrored("Mob Grinder",
+	<draconicevolution:grinder>,
 	[[<ore:ingotElectricalSteel>, <draconicevolution:draconium_block:1>, <ore:ingotElectricalSteel>],
-	[<astralsorcery:itemcrystalsword>.anyDamage(), <draconicevolution:draconic_core>, <astralsorcery:itemcrystalsword>.anyDamage()], 
+	[<astralsorcery:itemcrystalsword>.anyDamage(), <draconicevolution:draconic_core>, <astralsorcery:itemcrystalsword>.anyDamage()],
 	[<ore:ingotElectricalSteel>, <industrialforegoing:mob_relocator>, <ore:ingotElectricalSteel>]]);
 
 # Charged Draconium
@@ -26,10 +26,10 @@ if(utils.DEBUG) mods.jei.JEI.addItem(<draconicevolution:draconium_chest>.withTag
 
 # Crystal Binder
 	recipes.remove(<draconicevolution:crystal_binder>);
-	recipes.addShapedMirrored("DE Crystal Binder", 
-	<draconicevolution:crystal_binder>, 
+	recipes.addShapedMirrored("DE Crystal Binder",
+	<draconicevolution:crystal_binder>,
 	[[null, <ore:gemDiamondRat>, <ore:ingotCobalt>],
-	[null, <ore:rodBlaze>, <ore:gemDiamondRat>], 
+	[null, <ore:rodBlaze>, <ore:gemDiamondRat>],
 	[<actuallyadditions:item_laser_wrench>, null, null]]);
 
 # Wyvern Tools
@@ -38,7 +38,7 @@ if(utils.DEBUG) mods.jei.JEI.addItem(<draconicevolution:draconium_chest>.withTag
 	recipes.remove(<draconicevolution:wyvern_pick>);
 	recipes.remove(<draconicevolution:wyvern_bow>);
 	recipes.remove(<draconicevolution:wyvern_axe>);
-	
+
 	recipes.addShaped("Wyvern Sword", <draconicevolution:wyvern_sword>, [[<draconicevolution:infused_obsidian>, <draconicevolution:wyvern_core>, <draconicevolution:infused_obsidian>],[<ore:blockDraconium>, <thaumcraft:elemental_sword>.anyDamage(), <ore:blockDraconium>], [<draconicevolution:infused_obsidian>, <draconicevolution:wyvern_energy_core>, <draconicevolution:infused_obsidian>]]);
 	recipes.addShaped("Wyvern Shovel", <draconicevolution:wyvern_shovel>, [[<draconicevolution:infused_obsidian>, <draconicevolution:wyvern_core>, <draconicevolution:infused_obsidian>],[<ore:blockDraconium>, <thaumcraft:elemental_shovel>.anyDamage(), <ore:blockDraconium>], [<draconicevolution:infused_obsidian>, <draconicevolution:wyvern_energy_core>, <draconicevolution:infused_obsidian>]]);
 	recipes.addShaped("Wyvern Pickaxe", <draconicevolution:wyvern_pick>, [[<draconicevolution:infused_obsidian>, <draconicevolution:wyvern_core>, <draconicevolution:infused_obsidian>],[<ore:blockDraconium>, <thaumcraft:elemental_pick>.anyDamage(), <ore:blockDraconium>], [<draconicevolution:infused_obsidian>, <draconicevolution:wyvern_energy_core>, <draconicevolution:infused_obsidian>]]);
@@ -47,32 +47,32 @@ if(utils.DEBUG) mods.jei.JEI.addItem(<draconicevolution:draconium_chest>.withTag
 
 # Draconic Core
 	recipes.remove(<draconicevolution:draconic_core>);
-	recipes.addShapedMirrored("Draconic Core", 
-	<draconicevolution:draconic_core>, 
+	recipes.addShapedMirrored("Draconic Core",
+	<draconicevolution:draconic_core>,
 	[[<ore:gearDraconium>, <ore:ingotBlutonium>, <ore:gearDraconium>],
-	[<ore:crystalLitherite>, <gendustry:genetics_processor>, <ore:crystalLitherite>], 
+	[<ore:crystalLitherite>, <gendustry:genetics_processor>, <ore:crystalLitherite>],
 	[<ore:plateElite>, <draconicevolution:energy_crystal>, <ore:plateElite>]]);
 
 # Wyvern Core
 	recipes.remove(<draconicevolution:wyvern_core>);
-	scripts.wrap.forestry.Carpenter.addRecipe(<draconicevolution:wyvern_core>, 
+	scripts.wrap.forestry.Carpenter.addRecipe(<draconicevolution:wyvern_core>,
 	[[<ore:shulkerShell>, <draconicevolution:draconic_core>, <ore:shulkerShell>],
-	[<draconicevolution:draconic_core>, <minecraft:sponge>, <draconicevolution:draconic_core>], 
-	[<ore:ingotLudicrite>, <environmentaltech:pladium>, <ore:ingotLudicrite>]], 
+	[<draconicevolution:draconic_core>, <minecraft:sponge>, <draconicevolution:draconic_core>],
+	[<ore:ingotLudicrite>, <environmentaltech:pladium>, <ore:ingotLudicrite>]],
 	40, <liquid:ic2hot_coolant> * 2000);
 
 # Draconic Energy Core
 	recipes.remove(<draconicevolution:draconic_energy_core>);
-	scripts.wrap.forestry.Carpenter.addRecipe(<draconicevolution:draconic_energy_core>, 
+	scripts.wrap.forestry.Carpenter.addRecipe(<draconicevolution:draconic_energy_core>,
 	[[<ore:ingotDraconiumAwakened>, <draconicevolution:wyvern_energy_core>, <ore:ingotDraconiumAwakened>],
-	[<draconicevolution:wyvern_energy_core>, <draconicevolution:wyvern_core>, <draconicevolution:wyvern_energy_core>], 
-	[<ore:ingotDraconiumAwakened>, <draconicevolution:wyvern_energy_core>, <ore:ingotDraconiumAwakened>]], 
+	[<draconicevolution:wyvern_energy_core>, <draconicevolution:wyvern_core>, <draconicevolution:wyvern_energy_core>],
+	[<ore:ingotDraconiumAwakened>, <draconicevolution:wyvern_energy_core>, <ore:ingotDraconiumAwakened>]],
 	40, <liquid:ic2hot_coolant> * 2000);
-	
+
 # Fusion Crafting Core
 	recipes.remove(<draconicevolution:fusion_crafting_core>);
 	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe
-	(<draconicevolution:fusion_crafting_core>, 1000000000, 1000000, 
+	(<draconicevolution:fusion_crafting_core>, 1000000000, 1000000,
 	<extendedcrafting:crafting_core>, [
 		<draconicevolution:draconic_core>,
 		<draconicevolution:wyvern_energy_core>,
@@ -94,8 +94,8 @@ if(utils.DEBUG) mods.jei.JEI.addItem(<draconicevolution:draconium_chest>.withTag
 # Wyvern Energy Core
 	recipes.remove(<draconicevolution:wyvern_energy_core>);
 	scripts.wrap.thermalexpansion.Transposer.addFillRecipe
-	(<draconicevolution:wyvern_energy_core>, 
-	<draconicevolution:draconic_core>, 
+	(<draconicevolution:wyvern_energy_core>,
+	<draconicevolution:draconic_core>,
 	<liquid:redstone> * 10000, 250000);
 
 # Potentiometer
@@ -104,7 +104,7 @@ if(utils.DEBUG) mods.jei.JEI.addItem(<draconicevolution:draconium_chest>.withTag
 	[[null,<ore:plankWood>,null],
 	[<ore:dustRedstone>,<randomthings:advancedredstonetorch_on>,<ore:dustRedstone>],
 	[<minecraft:stone_slab>,<minecraft:stone_slab>,<minecraft:stone_slab>]]);
-	
+
 # [Basic Energy Relay Crystal] from [Fluix Steel Ingot][+3]
 recipes.removeShaped(<draconicevolution:energy_crystal>);
 scripts.wrap.bloodmagic.AlchemyTable.addRecipe(<draconicevolution:energy_crystal> * 4, [
@@ -134,9 +134,24 @@ var ingrds as IItemStack[] = [
 scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(dchest, 20000000, 2000000, <minecraft:chest>, ingrds as IIngredient[]);
 scripts.wrap.actuallyadditions.Empowerer.addRecipe(dchest, <minecraft:chest>, ingrds[0], ingrds[1], ingrds[2], ingrds[3], 20000000/4, 400, [8.0, 0.1, 0.9]);
 
+mods.rt.RandomThingsTweaker.addImbuingRecipe(
+	<randomthings:specialchest>,
+	<iceandfire:desert_myrmex_cocoon>,
+	<randomthings:specialchest:1>,
+	<draconicevolution:draconium_block>,
+	<draconicevolution:draconium_chest>
+);
+mods.rt.RandomThingsTweaker.addImbuingRecipe(
+	<randomthings:specialchest>,
+	<iceandfire:jungle_myrmex_cocoon>,
+	<randomthings:specialchest:1>,
+	<draconicevolution:draconium_block>,
+	<draconicevolution:draconium_chest>
+);
+
 # Combination Crafting Alternative for Ender Energy Manipulator
 scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(
-	<draconicevolution:ender_energy_manipulator>, 12000000, 1200000, 
+	<draconicevolution:ender_energy_manipulator>, 12000000, 1200000,
 	<randomthings:obsidianskull>, Grid(["AABCCCCCCC"], {
 		A: <draconicevolution:draconic_core>,
 		B: <draconicevolution:dislocator>,

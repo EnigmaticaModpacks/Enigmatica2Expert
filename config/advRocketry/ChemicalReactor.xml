@@ -21,33 +21,6 @@
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
 <Recipes useDefault="false">
-	<Recipe timeRequired="40" power="100000">
-		<input>
-			<itemStack>advancedrocketry:carbonscrubbercartridge 1 32767</itemStack>
-		</input>
-		<output>
-			<itemStack>advancedrocketry:carbonscrubbercartridge</itemStack>
-			<itemStack>minecraft:coal 1 1</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="100" power="5000">
-		<input>
-			<itemStack>minecraft:bone</itemStack>
-			<fluidStack>nitrogen 10</fluidStack>
-		</input>
-		<output>
-			<itemStack>minecraft:dye 5 15</itemStack>
-		</output>
-	</Recipe>
-	<!-- Custon recipes -->
-	<Recipe timeRequired="80" power="50000">
-		<input>
-			<fluidStack>liquid_sunshine 1000</fluidStack>
-		</input>
-		<output>
-			<itemStack>extendedcrafting:material 10 7</itemStack>
-		</output>
-	</Recipe>
 	<!-- EnderIO Liquids (Nutrient Distillation line) -->
 	<Recipe timeRequired="100" power="30000">
 		<input>

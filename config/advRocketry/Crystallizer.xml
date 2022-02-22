@@ -21,6 +21,14 @@
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
 <Recipes useDefault="false">
+	<Recipe timeRequired="80" power="50000">
+		<input>
+			<fluidStack>liquid_sunshine 1000</fluidStack>
+		</input>
+		<output>
+			<itemStack>extendedcrafting:material 10 7</itemStack>
+		</output>
+	</Recipe>
 	<Recipe timeRequired="100" power="100000">
 		<input>
 			<oreDict>ingotCarbon</oreDict>

@@ -19,6 +19,7 @@ import mods.zenutils.command.ZenCommand;
 import mods.zenutils.I18n;
 import mods.zenutils.StringList;
 import mods.zenutils.ZenUtils;
+import crafttweaker.block.IBlock;
 
 utils.DEBUG = true;
 
@@ -35,7 +36,7 @@ function logDebugData() {
 
     if(j!=0) logRaw("  ],");
     logRaw('  "'~mod.name~'": [');
-    
+
     val last = mod.items.length - 1;
     for i, item in mod.items {
       val sNbt = isNull(item.tag) ? "" : DataUtil.toNBTString(item.tag);
@@ -50,7 +51,7 @@ function logDebugData() {
   }
   logRaw("  ]");
   logRaw("}");
-  
+
   logRaw("}");
 }
 
@@ -145,10 +146,32 @@ function giveChest(player as IPlayer, items as IItemStack[]) as void {
   }
   player.give(<draconicevolution:draconium_chest>.withTag(tag));
 }
-	
+
 events.onPlayerLeftClickBlock(function(e as crafttweaker.event.PlayerLeftClickBlockEvent){
   if(e.player.world.isRemote()) return;
   if(isNull(e.player.currentItem) || !(<minecraft:stick> has e.player.currentItem)) return;
+
+  // val ingrs = <ore:dirt> | <ore:grass>;
+  // var blockIngr as IBlock = null;
+  // for item in ingrs.items {
+  //   val b = item.asBlock();
+  //   if(isNull(b)) continue;
+
+  //   if(isNull(blockIngr)) blockIngr = b;
+  //   else blockIngr = blockIngr | b;
+  // }
+  // e.player.sendMessage('dirt|grass:§a '~(blockIngr has e.block));
+
+  // val world = e.player.world;
+  // val pPos = e.player.position3f.asBlockPos();
+  // e.player.sendMessage('getVis:§a '~world.getVis(pPos));
+  // e.player.sendMessage('getFlux:§a '~world.getFlux(pPos));
+  // e.player.sendMessage('getAuraBase:§a '~world.getAuraBase(pPos));
+  // e.player.sendMessage('getTotalAura:§a '~world.getTotalAura(pPos));
+
+  // if (world.getVis(pPos) == 0) {
+  //   world.addVis(pPos, 222.0f);
+  // }
 
   // print(e.player.world.getCustomWorldData() as string);
 
@@ -292,7 +315,7 @@ lang.execute = function(command, server, sender, args) {
     val it = pl.currentItem;
     if (!isNull(it)) {
       print(
-        "Lang key and translation:" ~ "\n" ~ 
+        "Lang key and translation:" ~ "\n" ~
         it.name ~ "=" ~ game.localize(it.name)
       );
       pl.sendChat(game.localize("commands.lang.hand"));

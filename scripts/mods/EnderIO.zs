@@ -119,12 +119,13 @@ craft.remake(<enderio:block_impulse_hopper>, ["pretty",
 	scripts.wrap.thermalexpansion.Compactor.addGearRecipe(<enderio:item_material:73>, <enderio:item_alloy_ingot:6> * 4, 16000);
 
 # Machine Chassis
-	recipes.remove(<enderio:item_material:1>);
-	recipes.addShapedMirrored("Machine Chassis", 
-	<enderio:item_material:1>, 
-	[[<enderio:block_reinforced_obsidian>, <ore:dyeMachine>, <enderio:block_reinforced_obsidian>],
-	[<ore:dyeMachine>, <enderio:item_material>, <ore:dyeMachine>], 
-	[<enderio:block_reinforced_obsidian>, <ore:dyeMachine>, <enderio:block_reinforced_obsidian>]]);
+mods.thermalexpansion.InductionSmelter.removeRecipe(<enderio:item_material>, <enderio:item_material:51>);
+recipes.remove(<enderio:item_material:1>);
+recipes.addShapedMirrored("Machine Chassis", 
+<enderio:item_material:1>, 
+[[<enderio:block_reinforced_obsidian>, <ore:dyeMachine>, <enderio:block_reinforced_obsidian>],
+[<ore:dyeMachine>, <enderio:item_material>, <ore:dyeMachine>], 
+[<enderio:block_reinforced_obsidian>, <ore:dyeMachine>, <enderio:block_reinforced_obsidian>]]);
 
 # [Basic Capacitor] from [Redstone Conductance Coil][+3]
 craft.remake(<enderio:item_basic_capacitor>, ["pretty",

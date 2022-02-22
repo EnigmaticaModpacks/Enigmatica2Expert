@@ -681,3 +681,35 @@ scripts.wrap.tconstruct.Casting.addBasinRecipe(<thermalfoundation:ore_fluid:1>, 
 /* [Blitz Rod]  */ scripts.wrap.tconstruct.Casting.addTableRecipe(<thermalfoundation:material:2050>, <mechanics:empty_rod:*>, <liquid:ic2steam>, 2000, true);
 /* [Blitz Rod]  */ scripts.wrap.tconstruct.Casting.addTableRecipe(<thermalfoundation:material:2050>, <mechanics:empty_rod:*>, <liquid:steam>, 2000, true);
 /* [Basalz Rod] */ scripts.wrap.tconstruct.Casting.addTableRecipe(<thermalfoundation:material:2052>, <mechanics:empty_rod:*>, <liquid:sand>, 2000, true);
+
+# Remake Hardened Glass recipes
+val glassFromDust = {
+	<thermalfoundation:glass>         : <thermalfoundation:material:64>,
+	<thermalfoundation:glass:1>       : <thermalfoundation:material:65>,
+	<thermalfoundation:glass:2>       : <thermalfoundation:material:66>,
+	<thermalfoundation:glass:3>       : <thermalfoundation:material:67>,
+	<thermalfoundation:glass:4>       : <thermalfoundation:material:68>,
+	<thermalfoundation:glass:5>       : <thermalfoundation:material:69>,
+	<thermalfoundation:glass:6>       : <thermalfoundation:material:70>,
+	<thermalfoundation:glass:7>       : <thermalfoundation:material:71>,
+	<thermalfoundation:glass:8>       : null/* <thermalfoundation:material:72> */, // Somehow this recipe missed
+	<thermalfoundation:glass_alloy>   : <thermalfoundation:material:96>,
+	<thermalfoundation:glass_alloy:1> : <thermalfoundation:material:97>,
+	<thermalfoundation:glass_alloy:2> : <thermalfoundation:material:98>,
+	<thermalfoundation:glass_alloy:3> : <thermalfoundation:material:99>,
+	<thermalfoundation:glass_alloy:4> : <thermalfoundation:material:100>,
+	<thermalfoundation:glass_alloy:5> : <thermalfoundation:material:101>,
+	<thermalfoundation:glass_alloy:6> : <thermalfoundation:material:102>,
+	<thermalfoundation:glass_alloy:7> : <thermalfoundation:material:103>,
+} as IItemStack[IItemStack];
+
+for glass, dust in glassFromDust {
+	if(!isNull(dust)) mods.thermalexpansion.InductionSmelter.removeRecipe(<ore:blockGlassHardened>.firstItem, dust);
+	scripts.wrap.thermalexpansion.InductionSmelter.addRecipe(
+		glass, // Output
+		<enderio:block_fused_quartz>,
+		dust,
+		6000,
+		<thermalfoundation:material:865>, // Rich Slag
+		15);
+}

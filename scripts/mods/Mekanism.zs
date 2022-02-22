@@ -420,6 +420,12 @@ mods.mekanism.enrichment.removeRecipe(<appliedenergistics2:material:7>, <applied
 mods.mekanism.enrichment.removeRecipe(<appliedenergistics2:material:2>, <appliedenergistics2:material:10>);
 mods.mekanism.enrichment.removeRecipe(<appliedenergistics2:material>, <appliedenergistics2:material:10>);
 
+// Fix Some dusts
+mods.mekanism.enrichment.removeRecipe(<*>, <nuclearcraft:dust:4>);
+scripts.wrap.mekanism.enrichment.addRecipe(<ore:oreUranium>, <immersiveengineering:metal:14> * 2);
+mods.mekanism.crusher.removeRecipe(<nuclearcraft:dust:4>);
+scripts.wrap.mekanism.crusher.addRecipe(<ore:ingotUranium>, <immersiveengineering:metal:14>);
+
 # Remove unused obsidian dust recipes
 mods.mekanism.infuser.removeRecipe(<mekanism:otherdust:5>, <ic2:dust:12>);
 mods.mekanism.infuser.removeRecipe(<mekanism:otherdust:5>, <nuclearcraft:gem_dust:3>);

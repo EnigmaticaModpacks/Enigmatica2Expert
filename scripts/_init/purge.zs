@@ -38,6 +38,10 @@ utils.rh(<openblocks:generic:3>);
 utils.rh(<openblocks:generic:4>);
 utils.rh(<openblocks:generic:5>);
 
+# Purge saltpeter and sulfur
+utils.rh(<bloodmagic:component:24>);
+utils.rh(<bloodmagic:component:23>);
+
 # TC nuggets
 for i in 0 .. 5 {
 	utils.rh(<thaumcraft:nugget>.definition.makeStack(i));

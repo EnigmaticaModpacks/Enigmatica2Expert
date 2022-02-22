@@ -213,3 +213,9 @@ addLootList(
 	<tconstruct:throwball:1>      : 5,
 	<mekanism:obsidiantnt>        : 5,
 }, 5, 64);
+
+addLootList(
+	"twilightforest:structures/hill_3/uncommon",
+	"main", {
+	<twilightforest:steeleaf_ingot> : 5,
+}, 2, 8);

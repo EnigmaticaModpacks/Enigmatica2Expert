@@ -11,4 +11,5 @@
   ,{"entityOnTop": "betteranimalsplus:hirschgeist",  "result": "platinum",           "amount":   10, "coolDown": 20}
   ,{"entityOnTop": "industrialforegoing:pink_slime", "result": "if.pink_slime",      "amount":   10, "coolDown": 20}
   ,{"entityOnTop": "rats:neo_ratlantean",            "result": "crystal_matrix",     "amount":    1, "coolDown": 20}
+  ,{"entityOnTop": "draconicevolution:chaosguardian","result": "chaotic_metal",      "amount":   10, "coolDown": 20}
 ]

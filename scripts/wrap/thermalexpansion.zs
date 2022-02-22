@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded thermalexpansion
-// Uses of this mod: 67
+// Uses of this mod: 68
 
 
 //####################################################
@@ -101,10 +101,10 @@ zenClass Class_Transposer { zenConstructor() {}
 static Transposer as Class_Transposer = Class_Transposer();
 
 //####################################################
-// Uses of this class: 15
+// Uses of this class: 16
 zenClass Class_InductionSmelter { zenConstructor() {}
 
-	// Uses of this method: 15
+	// Uses of this method: 16
 	function addRecipe(primaryOutput as IItemStack, primaryInput as IItemStack, secondaryInput as IItemStack, energy as int) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.thermalexpansion.InductionSmelter.addRecipe'~
 			serialize.args([serialize.IItemStack(primaryOutput), serialize.IItemStack(primaryInput), serialize.IItemStack(secondaryInput), energy]));

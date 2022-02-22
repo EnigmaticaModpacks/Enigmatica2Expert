@@ -197,10 +197,6 @@ scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, crDgr, [
 # Remove weak saltpater recipe
 mods.bloodmagic.AlchemyTable.removeRecipe([<bloodmagic:component:22>, <bloodmagic:component:22>, <thermalfoundation:material:768>]);
 
-# Purge saltpeter and sulfur
-utils.rh(<bloodmagic:component:24>);
-utils.rh(<bloodmagic:component:23>);
-
 # Remove unused recipes
 val alcTableOres = [
 	<actuallyadditions:block_misc:3>,

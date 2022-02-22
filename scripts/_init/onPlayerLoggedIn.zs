@@ -18,22 +18,6 @@ events.onPlayerLoggedIn(function(e as crafttweaker.event.PlayerLoggedInEvent){
   # Other logins
   e.player.update({enigmatica: {logCount: logCount}});
   onEachLogin(e, logCount);
-  
-  // # Methods called always:
-  // print("~~~ Player logged in event");
-  // for adv_id in [
-  //   "iceandfire:iceandfire/root",
-  //   "rats:rats/root",
-  //   "betteranimalsplus:root",
-  // ] as string[] {
-  //   val adv = AdvancementHelper.getAdvancementById(server, adv_id);
-  //   if(isNull(adv)) continue;
-    
-  //   val adv_progress = e.player.getAdvancementProgress(adv);
-  //   if(isNull(adv_progress)) continue;
-  //   adv_progress.setCompleted();
-  //   utils.log(["Advancement forcedly completed:", adv_id]);
-  // }
 });
 
 function onFirstLogin(e as crafttweaker.event.PlayerLoggedInEvent) as void {

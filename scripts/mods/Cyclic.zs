@@ -291,6 +291,9 @@ Hydrator.removeShapedRecipe(<minecraft:wool>);
 # Bug: Dehydrator always output only 100mb of water
 // Dehydrator.addRecipe(<ae2fc:fluid_drop>.withTag({Fluid: "water"}), <mysticalagriculture:water_essence>, 250);
 
+// Terracotta
+Dehydrator.removeShapedRecipe(<minecraft:hardened_clay>);
+
 # Remove default useless concrete recipes
 for i in 0 .. 16 {
   Dehydrator.removeShapedRecipe(<minecraft:concrete_powder>.definition.makeStack(i));
