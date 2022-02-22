@@ -1,0 +1,32 @@
+[
+  {
+    "sourceFilePath": "options.txt",
+    "destinationFilePath": "options.txt",
+    "clientSide": true,
+    "serverSide": false
+  },
+  {
+    "sourceFilePath": "optionsof.txt",
+    "destinationFilePath": "optionsof.txt",
+    "clientSide": true,
+    "serverSide": false
+  },
+  {
+    "sourceFilePath": "menu.json",
+    "destinationFilePath": "minemenu/menu.json",
+    "clientSide": true,
+    "serverSide": false
+  },
+  {
+    "sourceFilePath": "journeymap.core.config",
+    "destinationFilePath": "journeymap/config/5.7/journeymap.core.config",
+    "clientSide": true,
+    "serverSide": true
+  },
+  {
+    "sourceFilePath": "journeymap.minimap.config",
+    "destinationFilePath": "journeymap/config/5.7/journeymap.minimap.config",
+    "clientSide": true,
+    "serverSide": false
+  }
+]

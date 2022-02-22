@@ -1,0 +1,121 @@
+{
+  "main": {
+    "0": {
+      "title": "Hang Item",
+      "icon": {
+        "name": "quark:glass_item_frame",
+        "damage": 0
+      },
+      "action": {
+        "key": {
+          "key": "key.draconicevolution.placeItem",
+          "toggle": false
+        }
+      }
+    },
+    "1": {
+      "title": "Tool Belt",
+      "icon": {
+        "name": "conarm:travel_potion",
+        "damage": 0
+      },
+      "action": {
+        "key": {
+          "key": "key.conarm.toggle_leg.desc",
+          "toggle": false
+        }
+      }
+    },
+    "2": {
+      "title": "Night Vision",
+      "icon": {
+        "name": "conarm:travel_soul",
+        "damage": 0
+      },
+      "action": {
+        "key": {
+          "key": "key.conarm.toggle_helm.desc",
+          "toggle": false
+        }
+      }
+    },
+    "4": {
+      "title": "Item Mode Switch",
+      "icon": {
+        "name": "draconicevolution:crystal_binder",
+        "damage": 0
+      },
+      "action": {
+        "key": {
+          "key": "mekanism.key.mode",
+          "toggle": false
+        }
+      }
+    },
+    "5": {
+      "title": "Portal",
+      "icon": {
+        "name": "plustic:osgloglasingot",
+        "damage": 0
+      },
+      "action": {
+        "key": {
+          "key": "key.plustic_brown_magic.desc",
+          "toggle": false
+        }
+      }
+    },
+    "6": {
+      "title": "Set Portal Osgloglas",
+      "icon": {
+        "name": "plustic:osgloglasnugget",
+        "damage": 0
+      },
+      "action": {
+        "key": {
+          "key": "key.plustic_set_portal.desc",
+          "toggle": false
+        }
+      }
+    },
+    "7": {
+      "title": "Load Shematic",
+      "icon": {
+        "name": "modularmachinery:itemblueprint",
+        "damage": 0
+      },
+      "action": {
+        "key": {
+          "key": "schematica.key.load",
+          "toggle": false
+        }
+      }
+    },
+    "8": {
+      "title": "Manipulate Schematic",
+      "icon": {
+        "name": "modularmachinery:itemblueprint",
+        "damage": 0
+      },
+      "action": {
+        "key": {
+          "key": "schematica.key.control",
+          "toggle": false
+        }
+      }
+    },
+    "9": {
+      "title": "Display Book (from offhand)",
+      "icon": {
+        "name": "akashictome:tome",
+        "damage": 0
+      },
+      "action": {
+        "key": {
+          "key": "key.bookdisplay.display",
+          "toggle": false
+        }
+      }
+    }
+  }
+}
