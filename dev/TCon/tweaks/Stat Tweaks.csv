@@ -56,6 +56,7 @@ energetic_metal,,,,6,,,,,,
 enori_crystal,*2,*1.5,*1.5,4,,,,,,
 erodium,*3,*3,*3,8,*3,*3,*3,*3,*3,*3
 essence_metal,,,,,,,,,,
+exhaustium,,,,,,,,,,
 fierymetal,,,+3,9,,,,*1.5,*1.5,+2
 firewood,,,,2,,,,,,
 flint,,,,0,,,,,,
@@ -91,7 +92,7 @@ ma.prosperity,,,,4,1.4,,,,,+2
 ma.prudentium,,,*2,6,,,,,,
 ma.soulium,*2,,,4,,,*1.3,*1.3,,
 ma.superium,,,*2,8,,,,,,
-ma.supremium,,,*2,10,,,,,,
+ma.supremium,,,*2,12,,,,,,
 magmaslime,,,,5,,,,,,
 magnesium,,,,8,,,,,,
 malachite_gem,,,,,,,,,,
