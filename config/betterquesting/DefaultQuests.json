@@ -17857,7 +17857,31 @@
           }
         }
       },
-      "tasks:9": {}
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "id:8": "thermalexpansion:dynamo",
+              "OreDict:8": "",
+              "tag:10": {
+                "Energy:3": 0,
+                "Facing:1": 1,
+                "Level:1": 0,
+                "RSControl:1": 0
+              }
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     },
     "223:10": {
       "preRequisites:11": [
@@ -26566,7 +26590,8 @@
         917,
         938,
         1051,
-        1054
+        1054,
+        1070
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -83451,6 +83476,77 @@
           "taskID:8": "bq_standard:checkbox"
         }
       }
+    },
+    "1070:10": {
+      "preRequisites:11": [
+        301
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "bq.quest1070.desc",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 2,
+            "Damage:2": 3,
+            "id:8": "immersiveengineering:sheetmetal",
+            "OreDict:8": ""
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 1,
+          "name:8": "bq.quest1070.name",
+          "partysinglereward:1": 0,
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 1070,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 75,
+              "id:8": "bq_standard:loot_chest",
+              "OreDict:8": "",
+              "tag:10": {
+                "display:10": {
+                  "Name:8": "§2Uncommon Loot Chest"
+                },
+                "lock:1": 1
+              }
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 9,
+              "Damage:2": 3,
+              "id:8": "immersiveengineering:sheetmetal",
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -84556,14 +84652,14 @@
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 96,
-          "y:3": 72
+          "y:3": 40
         },
         "26:10": {
           "id:3": 558,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 96,
-          "y:3": 40
+          "y:3": 72
         },
         "27:10": {
           "id:3": 560,
@@ -84612,7 +84708,7 @@
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 132,
-          "y:3": 40
+          "y:3": 72
         },
         "34:10": {
           "id:3": 938,
@@ -84625,8 +84721,8 @@
           "id:3": 1051,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 96,
-          "y:3": 8
+          "x:3": 24,
+          "y:3": -24
         },
         "36:10": {
           "id:3": 1054,
@@ -84634,6 +84730,13 @@
           "sizeY:3": 24,
           "x:3": -56,
           "y:3": -24
+        },
+        "37:10": {
+          "id:3": 1070,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 96,
+          "y:3": 8
         }
       }
     },

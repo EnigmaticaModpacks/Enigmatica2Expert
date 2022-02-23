@@ -2188,3 +2188,5 @@ bq.quest1068.name=The chapter is complete!
 bq.quest1068.desc=Complete all the quests in this chapter to receive a trophy.
 bq.quest1069.name=Difficulty
 bq.quest1069.desc=The §4Difficulty§r is sometimes highlighted in the bottom corner of the screen.%n%nIt increases slowly over time, by about §n1.8 per hour§r of play.
+bq.quest1070.name=Solar Tower
+bq.quest1070.desc=Boiling water and other liquids.%n%n§4Tip:%n§r§6Tower needs to be placed at the right height, which is actually one level lower than the reflectors.

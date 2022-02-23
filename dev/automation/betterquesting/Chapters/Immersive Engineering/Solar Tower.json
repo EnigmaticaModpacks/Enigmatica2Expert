@@ -2,37 +2,28 @@
   "_pos": {
     "sizeX:3": 24,
     "sizeY:3": 24,
-    "x:3": 132,
-    "y:3": 72
+    "x:3": 96,
+    "y:3": 8
   },
   "_data": {
     "preRequisites:11": [
-      558
+      301
     ],
     "properties:10": {
       "betterquesting:10": {
         "autoclaim:1": 0,
-        "desc:8": "bq.quest917.desc",
+        "desc:8": "bq.quest1070.desc",
         "globalshare:1": 0,
         "icon:10": {
-          "Count:3": 1,
-          "Damage:2": 0,
-          "id:8": "immersiveengineering:graphite_electrode",
-          "OreDict:8": "",
-          "tag:10": {
-            "display:10": {
-              "Lore:9": {
-                "0:8": "Reinforced with Titanium Iridium Alloy"
-              },
-              "Name:8": "Unbreakable Graphite Electrode"
-            },
-            "Unbreakable:3": 1
-          }
+          "Count:3": 2,
+          "Damage:2": 3,
+          "id:8": "immersiveengineering:sheetmetal",
+          "OreDict:8": ""
         },
         "ismain:1": 0,
         "issilent:1": 0,
         "lockedprogress:1": 1,
-        "name:8": "bq.quest917.name",
+        "name:8": "bq.quest1070.name",
         "partysinglereward:1": 0,
         "questlogic:8": "AND",
         "repeat_relative:1": 1,
@@ -44,7 +35,7 @@
         "visibility:8": "ALWAYS"
       }
     },
-    "questID:3": 917,
+    "questID:3": 1070,
     "rewards:9": {
       "0:10": {
         "index:3": 0,
@@ -52,12 +43,12 @@
         "rewards:9": {
           "0:10": {
             "Count:3": 1,
-            "Damage:2": 25,
+            "Damage:2": 75,
             "id:8": "bq_standard:loot_chest",
             "OreDict:8": "",
             "tag:10": {
               "display:10": {
-                "Name:8": "§6Epic Loot Chest"
+                "Name:8": "§2Uncommon Loot Chest"
               },
               "lock:1": 1
             }
@@ -75,19 +66,10 @@
         "partialMatch:1": 1,
         "requiredItems:9": {
           "0:10": {
-            "Count:3": 1,
-            "Damage:2": 0,
-            "id:8": "immersiveengineering:graphite_electrode",
-            "OreDict:8": "",
-            "tag:10": {
-              "display:10": {
-                "Lore:9": {
-                  "0:8": "Reinforced with Titanium Iridium Alloy"
-                },
-                "Name:8": "Unbreakable Graphite Electrode"
-              },
-              "Unbreakable:3": 1
-            }
+            "Count:3": 9,
+            "Damage:2": 3,
+            "id:8": "immersiveengineering:sheetmetal",
+            "OreDict:8": ""
           }
         },
         "taskID:8": "bq_standard:retrieval"
