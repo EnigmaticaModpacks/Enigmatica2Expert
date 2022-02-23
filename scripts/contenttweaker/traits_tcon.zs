@@ -16,38 +16,9 @@ import mods.ctutils.utils.Math.min;
 import mods.ctutils.utils.Math.sqrt;
 import mods.ctutils.utils.Math.ceil;
 import crafttweaker.world.IWorld;
-import crafttweaker.entity.IEntityEquipmentSlot as entEqSlot;
 
-function getDrawSpeed(inversed as float) as float {
-    return (1.0 as float / inversed as float) as float;
-}
-
-function getItemMatAmount(item as IItemStack, lookup as string) as int {
-  if(
-    isNull(item) || 
-    isNull(item.tag) || 
-    isNull(item.tag.TinkerData) || 
-    isNull(item.tag.TinkerData.Materials) || 
-    isNull(item.tag.TinkerData.Materials.asList())
-  ) return 0;
-  var level = 0;
-  for i,name in item.tag.TinkerData.Materials.asList() {
-    if(name == lookup) level += 1;
-  }
-  return level;
-}
-
-static armSlots as entEqSlot[] = [
-	entEqSlot.head(), entEqSlot.chest(), entEqSlot.legs(), entEqSlot.feet()
-] as entEqSlot[];
-
-function getArmorMatsAmount(player as IPlayer, lookup as string) as int {
-  var level = 0;
-  for slot in armSlots {
-    level += getItemMatAmount(player.getItemInSlot(slot), lookup);
-  }
-  return level;
-}
+import scripts.contenttweaker.utils_tcon_cot.getItemMatAmount;
+import scripts.contenttweaker.utils_tcon_cot.getArmorMatsAmount;
 
 /* 
 Some taken from: wilderness-minecraft
@@ -237,7 +208,7 @@ spectre.localizedName = game.localize("e2ee.tconstruct.material.spectre.name");
 spectre.addHeadMaterialStats(400, 4.2, 6.0, 7);
 spectre.addHandleMaterialStats(1.4, -50);
 spectre.addExtraMaterialStats(64);
-spectre.addBowMaterialStats(getDrawSpeed(1.5), 1.0, 2.5);
+spectre.addBowMaterialStats(1.0f / 1.5f, 1.0, 2.5);
 spectre.addProjectileMaterialStats();
 spectre.addCoreMaterialStats(200, 23.3);
 spectre.addPlatesMaterialStats(1.6, 100, 2);
@@ -349,13 +320,13 @@ val grindingTrait = ArmorTraitBuilder.create("grinding");
 grindingTrait.color = 0x444450;
 grindingTrait.localizedName = game.localize("e2ee.tconstruct.material.grinding.name");
 grindingTrait.localizedDescription = game.localize("e2ee.tconstruct.material.grinding.description");
-
-# -------------------------------
-# Hook on events
-# -------------------------------
 grindingTrait.onFalling = function(trait, armor, player, event) {
   if(event.entityLivingBase.world.isRemote()) return;
-  scripts.contenttweaker.trait_grinding.onFalling(trait, armor, player, event);
+  scripts.contenttweaker.trait_grinding.onFalling(armor, player);
+};
+grindingTrait.onAbility = function(trait, level, world, player) {
+  if(world.isRemote()) return;
+  scripts.contenttweaker.trait_grinding.onAbility(trait, level, world, player);
 };
 grindingTrait.register();
 
