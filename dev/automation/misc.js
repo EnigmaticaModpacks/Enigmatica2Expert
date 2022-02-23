@@ -186,13 +186,9 @@ export async function init(h = defaultHelper, options = argv) {
   */
   await h.begin('Saving default options')
   const moreDefOptsPath = 'config/MoreDefaultOptions/'
-  execSync(`git show HEAD:options.txt > ${moreDefOptsPath}options.txt`)
 
-  const mdoExceptions = ['options.txt']
   const mdoJson = loadJson('config/MoreDefaultOptions.json')
   mdoJson.forEach((o) => {
-    if (mdoExceptions.includes(o.sourceFilePath)) return
-
     copySync(o.destinationFilePath, join(moreDefOptsPath, o.sourceFilePath))
   })
 

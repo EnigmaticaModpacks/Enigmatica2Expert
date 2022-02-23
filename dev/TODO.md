@@ -79,36 +79,20 @@ Liquids that should have more uses:
 
 ## TODO
 
-- [x] ✏️ Fix Molten Sulfur in NC Melter
 - [ ] ✏️ Gorgon Head add usage
 - [ ] ✏️ Use Cyclopus Eye
 - [ ] ✏️ Feral Ghoul add drop
-- [x] ✏️ Water Chest (Random Things) get uses
 - [ ] ✏️ Fix Cobweb and String recipes in Crucible. (try to remove Thaumci Tweaks)
-- [x] ✏️ Essentia Centrifuge Recipes 10 times cheaper
-- [x] ✏️ Milking of Chaos Dragon
-- [x] ✏️ Steelleaf more drop
 - [x] ✏️ Guardian Diode drop from guardians
-- [x] ✏️ Fix Hardened Glass
-- [x] ✏️ Fix Chemical Reactor Luminiscence recipe
 - [ ] 📖 Add CC/OC gate, Add EEPROM with `trader`, add Patchouli and Quest Book Entry
-- [x] 📖 Add Solar tower tip that `structure needs to be placed at the right height, which is actually one level lower than the reflectors`
-- [x] 🔄 Remove caches (they still recalculates when mods changes)
-- [x] 🔄 Change `path/to/` to static path in 3d print
 - [ ] 🔄 Fix HEI not filtering with prefixes
-- [x] 🔨 Grinding rework
+- [ ] 🔨 Grinding: Break only on shift
 - [ ] 🚧 Change Manifest.json creating to other file (not changelog.js)
 - [ ] 🚧 Add `inline-block` styles for images publishing on CF
 - [ ] 🚧 Write Server update guide
 - [ ] 🚧 Add modpack automation:
-    1. `automate.js`
-    2. Clear working tree
-    3. `changelog.js` with next version arg
-    4. Fix LATEST.md, add to CHANGELOG.md, add tag
-    5. `make_pack.js`
-    6. Push branch/tag on github
-    7. Create GitHub release
-    8. Create CF release with fixed description
+    1. `make_pack.js`
+    2. Create CF release with fixed description
       > https://support.curseforge.com/en/support/solutions/articles/9000197321-curseforge-upload-api
       > https://github.com/EnigmaticaModpacks/ModpackUploader/blob/master/tools/ModpackUploader.ps1#L363
 - [ ] 🚧 Server automation:

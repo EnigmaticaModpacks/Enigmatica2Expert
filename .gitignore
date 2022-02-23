@@ -20,8 +20,6 @@
 !structures/
 !bansoukou/
 structures/inactive
-!options.txt
-!optionsof.txt
 !manifest.json
 !.gitignore
 !.release-it.json
