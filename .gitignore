@@ -75,3 +75,4 @@ config/enderio/recipes/examples/*
 config/biomesoplenty/biomes/*
 
 config/triumph/documentation/*
+config/tinker_ore_dict_melting_cache.dat
