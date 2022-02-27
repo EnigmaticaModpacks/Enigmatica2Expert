@@ -17,7 +17,7 @@ import parseGitignore from 'parse-gitignore'
 import memoize from 'memoizee'
 import fast_glob from 'fast-glob'
 import { resolve } from 'path'
-import fetchMod from './curseforge.js'
+import { fetchMod } from './curseforge.js'
 import { table, getBorderCharacters } from 'table'
 const { sync: globs } = fast_glob
 

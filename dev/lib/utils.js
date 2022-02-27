@@ -12,7 +12,7 @@
 =                Variables                    =
 =============================================*/
 import { statSync, readFileSync, writeFileSync, mkdirSync } from 'fs'
-import { basename, resolve, dirname } from 'path'
+import { basename, dirname } from 'path'
 import replace_in_file from 'replace-in-file'
 import del from 'del'
 import { parse as csvParseSync } from 'csv-parse/sync'
@@ -470,3 +470,9 @@ export const defaultHelper = {
   isUnfinishedTask: false,
   taskResult: '',
 }
+
+/**
+ * @param {string} command
+ */
+export const execSyncInherit = (command) =>
+  execSync(command, { stdio: 'inherit' })

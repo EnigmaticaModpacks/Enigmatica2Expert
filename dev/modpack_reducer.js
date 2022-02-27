@@ -169,6 +169,9 @@ addReduceLevel(
   'Server Safe',
   'Remove all client-only mods, still multiplayer safe.',
   `
+EntityCulling-
+particleculling-
+moredefaultoptions-
 BNBGamingCore-
 BNBGamingLib-
 Triumph-
@@ -201,6 +204,9 @@ addReduceLevel(
   'Maximum Speedup',
   'Items and blocks would be removed\nQuest Rewards and Requirments would be replaced to placeholders\nLoot Boxes would output placeholders',
   `
+cloche-profit-peripheral-
+Xtones-
+NotEnoughEnergistics-
 thaumtweaks-
 _bansoukou-
 TS2K16-
@@ -397,6 +403,7 @@ Placebo-
 FTBUtilities-
 ThermalDynamics-
 Pam's HarvestCraft
+QuarkRotN-
 Quark-
 RebornCore-
 JustEnoughResources-
@@ -493,8 +500,6 @@ compactmachines3-
 #######################################
 
 
-_MixinBootstrap-
-[___MixinCompat-
 Additional-Compression-
 Atlas-Lib-
 bedpatch-
@@ -554,7 +559,6 @@ Mekanism-
 MekanismGenerators-
 mekatweaker-
 mia-
-mixinbooter-
 modularmachinery-
 moreoverlays-
 Neat
@@ -620,6 +624,9 @@ addReduceLevel(
   'Remove Everything',
   'Every single mod disabled. But what for?',
   `
+[___MixinCompat-
+*mixinbooter-
+_MixinBootstrap-
 OptiFine_
 GameStages-
 Bookshelf-
@@ -653,7 +660,7 @@ const unregMods = _.difference(allEnabledMods, _.uniq(registeredMods)).map(
 )
 
 if (unregMods.length) {
-  console.log('This mods unregistered in lists :>> ', unregMods)
+  console.log('This mods unregistered in lists. Add them first :>> ', unregMods)
   exit()
 }
 

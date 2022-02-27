@@ -12,7 +12,6 @@
 
 //@ts-check
 import chalk from 'chalk'
-import { execSync } from 'child_process'
 import { sync as delSync } from 'del'
 import fast_glob from 'fast-glob'
 import fs_extra from 'fs-extra'
@@ -22,7 +21,8 @@ import { resolve } from 'path'
 import simpleGit from 'simple-git'
 import yargs from 'yargs'
 import terminal_kit from 'terminal-kit'
-import { end, loadText, saveText, write } from './lib/utils.js'
+import { end, execSyncInherit, loadText, saveText, write } from './lib/utils.js'
+import { curseMarkdown } from './lib/curseforge.js'
 
 const { gitDescribeSync } = git_describe
 const { terminal: term } = terminal_kit
@@ -38,11 +38,6 @@ const { sync: _globs } = fast_glob
  */
 const globs = (source, options) =>
   _globs(source, { dot: true, onlyFiles: false, ...options })
-
-/**
- * @param {string} command
- */
-const execSyncInherit = (command) => execSync(command, { stdio: 'inherit' })
 
 const { argv } = yargs(process.argv.slice(2))
   .alias('h', 'help')
@@ -166,6 +161,7 @@ const { argv } = yargs(process.argv.slice(2))
     execSyncInherit('node ./dev/changelog.js --next=' + nextVersion)
     await pressEnterOrEsc(`[${STEP++}] Manually fix LATEST.md and press ENTER.`)
     execSyncInherit('node ./dev/changelog.js --append')
+    curseMarkdown('changelogs/LATEST.md')
   }
 
   await pressEnterOrEsc(

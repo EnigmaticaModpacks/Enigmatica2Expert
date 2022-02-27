@@ -34,7 +34,7 @@ import replace_in_file from 'replace-in-file'
 import { execSync, exec as _exec } from 'child_process'
 const exec = promisify(_exec)
 import { generateManifest } from './lib/manifest.js'
-import fetchMod from './lib/curseforge.js'
+import { fetchMod } from './lib/curseforge.js'
 
 import yargs from 'yargs'
 const { argv } = yargs(process.argv.slice(2))

@@ -28,6 +28,8 @@ Items that should have more uses:
 ![](https://git.io/JVBL3 "Charged Creeper Chunk")
 ![](https://git.io/JoUaU "Quicksilver")
 ![](https://is.gd/NZ5zqq "Xorcite Shard")
+[Gorgon Head]
+[Cyclopus Eye]
 [Quickdry Concrete]
 [Cow Written Book]
 
@@ -79,20 +81,19 @@ Liquids that should have more uses:
 
 ## TODO
 
-- [ ] ✏️ Gorgon Head add usage
-- [ ] ✏️ Use Cyclopus Eye
 - [ ] ✏️ Feral Ghoul add drop
 - [ ] ✏️ Fix Cobweb and String recipes in Crucible. (try to remove Thaumci Tweaks)
-- [x] ✏️ Guardian Diode drop from guardians
+- [ ] ✏️ Guardian Diode drop from guardians
 - [ ] 📖 Add CC/OC gate, Add EEPROM with `trader`, add Patchouli and Quest Book Entry
+- [ ] 📖 Add Heavy Metal entry
 - [ ] 🔄 Fix HEI not filtering with prefixes
-- [ ] 🔨 Grinding: Break only on shift
-- [ ] 🚧 Change Manifest.json creating to other file (not changelog.js)
-- [ ] 🚧 Add `inline-block` styles for images publishing on CF
+- [ ] 🔄 Tweak Engineer's Decor
+- [ ] 🔄 Probably remove `CapabilityProxy`
+- [ ] 🔄 Fix boat glitch when leaving in first person
 - [ ] 🚧 Write Server update guide
 - [ ] 🚧 Add modpack automation:
     1. `make_pack.js`
-    2. Create CF release with fixed description
+    2. Create CF release with fixed description, Add `inline-block` styles for images publishing on CF
       > https://support.curseforge.com/en/support/solutions/articles/9000197321-curseforge-upload-api
       > https://github.com/EnigmaticaModpacks/ModpackUploader/blob/master/tools/ModpackUploader.ps1#L363
 - [ ] 🚧 Server automation:
@@ -100,7 +101,6 @@ Liquids that should have more uses:
     2. Remove all folders presented in `.zip`
     3. Unarchive `_server.zip` on remote
     4. Unarchive `.overrides_after_update.zip`
-  
 
 ---
 

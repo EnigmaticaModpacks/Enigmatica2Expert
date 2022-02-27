@@ -75,6 +75,8 @@ mods/*.jar
 !mods/bookdisplay-*
 !mods/Nimble-*
 !mods/noRecipeBook_*
+!mods/EntityCulling-*
+!mods/particleculling-*
 
 #Not sure
 # !mods/gendustryjei*
