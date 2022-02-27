@@ -314,6 +314,7 @@ function getPrevTickMotionY(player as IPlayer) as double {
 
 function onFalling(armor as IItemStack, player as IPlayer) as void {
   val world = player.world;
+  if(!player.isSneaking) return;
 
   var isVerbose = !isNull(player.currentItem)
     && <item:tconstruct:tool_rod>.withTag({Material: "wood"}) has player.currentItem;
