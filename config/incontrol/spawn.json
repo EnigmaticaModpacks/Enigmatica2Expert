@@ -40,35 +40,23 @@
 		],
     "random": 0.1
   },
-	{
-    "mob": "quark:frog",
-    "mincount": 20,
-    "result": "deny"
-	},
-	{
-    "mob": "quark:foxhound",
-    "mincount": 20,
-    "result": "deny"
-	},
-	{
-			"mob": "emberroot:dire_wolf",
-			"minlight": 7,
-			"result": "deny"
-	},
+	{"mob": "quark:frog","mod": "quark","mincount": 20,"result": "deny"},
+	{"mob": "quark:foxhound","mod": "quark","mincount": 20,"result": "deny"},
+	{"mob": "emberroot:dire_wolf","minlight": 7,"result": "deny"},
 
-	{"mob": "quark:stoneling","mincount": 3,"result": "deny"},
+	{"mob": "quark:stoneling","mod": "quark","mincount": {"amount": 3,"perchunk": true},"result": "deny"},
   {"mob": "quark:stoneling","block": "minecraft:stone", "maxlight": 6,"result": "allow"},
   {"mob": "quark:stoneling","result": "deny"},
 
-	{"mob": "rats:rat","mincount": 15,"result": "deny"},
+	{"mob": "rats:rat","mod": "rats","mincount": 15,"result": "deny"},
   {"mob": "rats:rat","block": "rats:garbage_pile","result": "allow"},
   {"mob": "rats:rat","result": "deny"},
 	
-	{"dimension": 0, "mob": "endreborn:watcher","mincount": 15,"result": "deny"},
+	{"dimension": 0, "mob": "endreborn:watcher","mod": "endreborn","mincount": 15,"result": "deny"},
   {"dimension": 0, "mob": "endreborn:watcher", "maxlight": 7, "block": "ore:endstone","result": "allow"},
   {"dimension": 0, "mob": "endreborn:watcher", "result": "deny"},
 
-	{"mob": "endreborn:endguard","mincount": 5,"result": "deny"},
+	{"mob": "endreborn:endguard","endreborn": "endreborn","mincount": 5,"result": "deny"},
   {"mob": "endreborn:endguard", "maxlight": 7, "block": [
 		"minecraft:purpur_block",
 		"minecraft:purpur_pillar",
