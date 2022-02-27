@@ -266,7 +266,6 @@ function tinyDustFix(a as IItemStack, b as IItemStack) as void {
 
 tinyDustFix(<ic2:dust:22>, <ic2:dust:9>);
 tinyDustFix(<ic2:dust:25>, <thermalfoundation:material:770>);
-tinyDustFix(<ic2:dust:28>, <thermalfoundation:material:65>);
 tinyDustFix(<ic2:dust:35>, <actuallyadditions:item_dust:3>);
 tinyDustFix(<ic2:dust:18>, <thermalfoundation:material:99>);
 tinyDustFix(<ic2:dust:24>, <ic2:dust:11>);
@@ -388,6 +387,7 @@ crop("terra_wart"    , [<ic2:terra_wart>]                                       
 crop("aurelia"       , [<ic2:dust:20>]                                                 , 6 , "Gold Leaves Metal"                           , "§6Only matures if there is a §nGold Ore§r§6 or §nBlock of Gold§r§6 below it");
 crop("blazereed"     , [<ic2:dust:16>, <minecraft:blaze_rod>, <minecraft:blaze_powder>], 6 , "Fire Blaze Reed Sulfur"                      );
 crop("corium"        , [<minecraft:leather>]                                           , 6 , "Cow Silk Vine"                               );
+crop("stagnium"      , [<ic2:dust:28>]                                                 , 6 , "Shiny Leaves Metal"                          , "§6Only matures if there is an §nTin Ore§r§6 or §nTin Block§r§6 below it");
 crop("cyprium"       , [<ic2:dust:19>]                                                 , 6 , "Copper Leaves Metal"                         , "§6Only matures if there is an §nCopper Ore§r§6 or §nCopper Block§r§6 below it");
 crop("eatingplant"   , [<minecraft:cactus>]                                            , 6 , "Bad Food"                                    , "§6Light level of at least 10; Only matures if §nLava§r§6 is below it; Will attack the player if not wearing metal armor and drop §nRotten Flesh");
 crop("egg_plant"     , [<minecraft:egg>,<minecraft:chicken>,<minecraft:feather>]       , 6 , "Chicken Egg Edible Feather Flower Addictive" );
@@ -428,6 +428,7 @@ function morphDust(fruit as IItemStack, liquid as ILiquidStack, extra as IItemSt
 
 morphDust(<ic2:dust:20>, <liquid:gold>              * 500 , <minecraft:glowstone_dust>     , [<aspect:metallum>*40, <aspect:desiderium>*50  ]); # Tiny Pile of Gold Dust
 morphDust(<ic2:dust:16>, <liquid:ic2pahoehoe_lava>  *1000 , <enderio:item_material:22>     , [<aspect:metallum>*40, <aspect:desiderium>*50  ]); # Sulfur Dust
+morphDust(<ic2:dust:28>, <liquid:tin>               * 500 , <thermalfoundation:material:99>, [<aspect:metallum>*120                         ]); # Tiny Pile of Tin Dust
 morphDust(<ic2:dust:19>, <liquid:copper>            * 500 , <thermalfoundation:material:99>, [<aspect:metallum>*120                         ]); # Tiny Pile of Copper Dust
 morphDust(<ic2:dust:21>, <liquid:iron>              * 500 , <thermalfoundation:material:98>, [<aspect:metallum>*40, <aspect:instrumentum>*95]); # Tiny Pile of Iron Dust
 morphDust(<ic2:dust:23>, <liquid:lead>              * 500 , <thermalfoundation:material:67>, [<aspect:metallum>*40, <aspect:fabrico>*90     ]); # Tiny Pile of Lead Dust

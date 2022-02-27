@@ -4,6 +4,7 @@ val localizationMap as string[string][string] = {
   en_us: {
     'ic2.dust.coal'            : 'Blackened Fruit',
     'ic2.dust.ender_pearl'     : 'Spectral Fruit',
+    'ic2.dust.small_tin'       : 'Tiny Fruit',
     'ic2.dust.small_copper'    : 'Coppery Fruit',
     'ic2.dust.small_diamond'   : 'Gelided Fruit',
     'ic2.dust.small_gold'      : 'Golden Fruit',
@@ -17,6 +18,7 @@ val localizationMap as string[string][string] = {
   ru_ru: {
     'ic2.dust.coal'            : 'Почерневший фрукт',
     'ic2.dust.ender_pearl'     : 'Спектральный фрукт',
+    'ic2.dust.small_tin'       : 'Оловяный фрукт',
     'ic2.dust.small_copper'    : 'Медный фрукт',
     'ic2.dust.small_diamond'   : 'Желированный фрукт',
     'ic2.dust.small_gold'      : 'Золотой фрукт',

@@ -176,6 +176,7 @@ addLootList(
 	FluidCell("liquid_sunshine") : 1,
 	<contenttweaker:empowered_phosphor> : 10,
 	<thermalfoundation:material:229> : 50,
+	<ic2:dust:28> : 22,
 	<ic2:dust:2>  : 20,
 	<ic2:dust:16> : 18,
 	<ic2:dust:19> : 16,
