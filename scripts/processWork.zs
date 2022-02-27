@@ -324,48 +324,6 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       scripts.wrap.ic2.ThermalCentrifuge.addRecipe(outputItems, inputIngr0);
       return machineName;
     }
-  
-    if (machineName == "pampresser") {
-      # mods.harvestcrafttweaker.HarvestCraftTweaker.addPressing(IIngredient input, IItemStack leftOutput, IItemStack rightOutput);
-      if (outputItems.length == 1 && outputItems[0].amount >= 2) {
-        val left = outputItems[0].amount / 2;
-        val right= outputItems[0].amount - left;
-        mods.harvestcrafttweaker.HarvestCraftTweaker.addPressing(inputIngr0, outputItems[0] * left, outputItems[0] * right);
-      } else if (outputItems.length == 2) {
-        mods.harvestcrafttweaker.HarvestCraftTweaker.addPressing(inputIngr0, outputItems[0], outputItems[1]);
-      } else {
-        return info(machineNameAnyCase, getItemName(inputIngr0.itemArray[0]), "received work, but this output items cant be separated for two slots");
-      }
-      return machineName;
-    }
-  
-    if (machineName == "pamgrinder") {
-      # mods.harvestcrafttweaker.HarvestCraftTweaker.addGrinding(IIngredient input, IItemStack leftOutput, IItemStack rightOutput);
-      if (outputItems.length == 1 && outputItems[0].amount >= 2) {
-        val left = outputItems[0].amount / 2;
-        val right= outputItems[0].amount - left;
-        mods.harvestcrafttweaker.HarvestCraftTweaker.addGrinding(inputIngr0, outputItems[0] * left, outputItems[0] * right);
-      } else if (outputItems.length == 2) {
-        mods.harvestcrafttweaker.HarvestCraftTweaker.addGrinding(inputIngr0, outputItems[0], outputItems[1]);
-      } else {
-        return info(machineNameAnyCase, getItemName(inputIngr0.itemArray[0]), "received work, but this output items cant be separated for two slots");
-      }
-      return machineName;
-    }
-  
-    if (machineName == "pamfilter") {
-      # mods.harvestcrafttweaker.HarvestCraftTweaker.addWaterFilter(IIngredient input, IItemStack leftOutput, IItemStack rightOutput);
-      if (outputItems.length == 1 && outputItems[0].amount >= 2) {
-        val left = outputItems[0].amount / 2;
-        val right= outputItems[0].amount - left;
-        mods.harvestcrafttweaker.HarvestCraftTweaker.addWaterFilter(inputIngr0, outputItems[0] * left, outputItems[0] * right);
-      } else if (outputItems.length == 2) {
-        mods.harvestcrafttweaker.HarvestCraftTweaker.addWaterFilter(inputIngr0, outputItems[0], outputItems[1]);
-      } else {
-        return info(machineNameAnyCase, getItemName(inputIngr0.itemArray[0]), "received work, but this output items cant be separated for two slots");
-      }
-      return machineName;
-    }
   }
   
   # Machines with ONE item INPUT and unknown output

@@ -501,7 +501,7 @@ mods.thermalexpansion.Crucible.removeRecipe(<immersiveengineering:metal_decorati
 craft.remake(<engineersdoors:trapdoor_concrete> * 2, ["pretty",
   "c c c",
   "c c c"], {
-  "c": <ore:concrete>, # Concrete
+  "c": <immersiveengineering:stone_decoration_slab:5>, # Concrete Slab
 });
 
 # Way cheaper cause cool looking and need pumping out to function

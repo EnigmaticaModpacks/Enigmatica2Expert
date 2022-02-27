@@ -133,12 +133,21 @@ craft.remake(<thermalfoundation:material:1028> * 2, ["pretty",
 	recipes.remove(<thermalexpansion:frame:128>);
 	scripts.wrap.mekanism.infuser.addRecipe("GLOWSTONE", 400, <thermalexpansion:frame>, <thermalexpansion:frame:128>);
 
-# Machine Frame
+# [Machine Frame]*2 from [Device Frame][+6]
 	recipes.remove(<thermalexpansion:frame>);
 	scripts.wrap.forestry.ThermionicFabricator.addCast(<thermalexpansion:frame> * 2, 
-	[[<actuallyadditions:item_crystal:5>, <rftools:machine_frame>, <actuallyadditions:item_crystal:5>],
-	[<immersiveengineering:metal_decoration0:5>, <thermalexpansion:frame:64>, <actuallyadditions:block_misc:9>], 
-	[<actuallyadditions:item_crystal:5>, <advancedrocketry:basalt>, <actuallyadditions:item_crystal:5>]], 
+		scripts.craft.grid.Grid(["pretty",
+			"■ B ■",
+			"M ◙ ⌂",
+			"* ▄ *"], {
+			"■": <ore:blockOsmium>,                          # Osmium Block
+			"B": <advancedrocketry:basalt>,                  # Basalt Sediment
+			"M": <rftools:machine_frame>,                    # Machine Frame
+			"◙": <thermalexpansion:frame:64>,                # Device Frame
+			"⌂": <actuallyadditions:block_misc:9>,           # Iron Casing
+			"*": <actuallyadditions:block_crystal:3>,        # Void Crystal Block
+			"▄": <immersiveengineering:metal_decoration0:5>, # Heavy Engineering Block
+		}).shaped(), 
 	<liquid:glass> * 6000);
 	
 # Removing craftable Bronze 

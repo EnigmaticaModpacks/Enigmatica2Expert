@@ -967,7 +967,6 @@ var uumatterTooltips = [
 	"mekanism:teleportationcore", "0",                      "11454",
 	"environmentaltech:interconnect", "0",                  "11522",
 	"minecraft:elytra", "0",                                "11556",
-	"thermalexpansion:frame", "0",                          "11648",
 	"bloodmagic:blood_rune", "0",                           "11674",
 	"nuclearcraft:ingot_block", "7",                        "11700",
 	"thermalexpansion:frame", "128",                        "11756",

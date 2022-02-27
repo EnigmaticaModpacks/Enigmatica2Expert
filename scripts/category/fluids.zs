@@ -228,6 +228,7 @@ for pos, names in utils.graph([
 		var temp = pos.x as int;
 		var time = pos.y as int;
 		var liquid = game.getLiquid(name);
+		if(isNull(liquid)) continue;
 		
 		liquid.definition.temperature = temp;
 

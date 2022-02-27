@@ -117,34 +117,3 @@ craft.reshapeless(<harvestcraft:cheeseitem> * 2, "PACSS", {
 recipes.remove(<harvestcraft:royaljellyitem>);
 scripts.wrap.integrateddynamics.Squeezer.addRecipe(<harvestcraft:queenbeeitem>, <harvestcraft:royaljellyitem>, 1.0f, <harvestcraft:royaljellyitem>, 1.0f, null, 0, null);
 scripts.process.squeeze([<harvestcraft:queenbeeitem>], null, "only: TECentrifuge", <harvestcraft:royaljellyitem> * 4);
-
-
-# *=======  =======*
-
-# Not Working untill this issue fixed:
-# https://github.com/Tfarcenim/HarvestCraftTweaker2/issues/3
-
-// # More meats from traps
-// mods.harvestcrafttweaker.HarvestCraftTweaker.addGroundTrap(<ore:foodCheese>, [<rats:raw_rat>, <rats:rat_pelt>]);
-// mods.harvestcrafttweaker.HarvestCraftTweaker.addGroundTrap(<animania:block_straw>, [
-// 	<twilightforest:raw_venison>,
-// 	<betteranimalsplus:venisonraw>,
-// 	<betteranimalsplus:pheasantraw>,
-// 	<betteranimalsplus:pheasant_egg>,
-// 	<betteranimalsplus:turkey_egg>,
-// 	<betteranimalsplus:goose_egg>,
-// 	<betteranimalsplus:turkey_leg_raw>,
-// ]);
-
-// # More traps
-// mods.harvestcrafttweaker.HarvestCraftTweaker.addWaterTrap(<thermalfoundation:bait>,   [<betteranimalsplus:crab_meat_raw>, <betteranimalsplus:eel_meat_raw>]);
-// mods.harvestcrafttweaker.HarvestCraftTweaker.addWaterTrap(<thermalfoundation:bait:1>, [<iceandfire:shiny_scales>, <betteranimalsplus:blubber>]);
-// mods.harvestcrafttweaker.HarvestCraftTweaker.addWaterTrap(<thermalfoundation:bait:2>, [
-// 	<iceandfire:sea_serpent_scales_blue>,
-// 	<iceandfire:sea_serpent_scales_bronze>,
-// 	<iceandfire:sea_serpent_scales_deepblue>,
-// 	<iceandfire:sea_serpent_scales_purple>,
-// 	<iceandfire:sea_serpent_scales_red>,
-// 	<iceandfire:sea_serpent_scales_teal>,
-// 	<iceandfire:sea_serpent_scales_green>,
-// ]);

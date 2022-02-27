@@ -68,7 +68,7 @@ craft.remake(<deepmoblearning:data_model_blank>, ["pretty",
 });
 
 # Redstone from Sool-covered version
-mods.harvestcrafttweaker.HarvestCraftTweaker.addWaterFilter(<deepmoblearning:soot_covered_redstone>, <actuallyadditions:item_misc:10>, <jaopca:item_dusttinyredstone> * 8);
+scripts.wrap.tconstruct.Drying.addRecipe(<minecraft:redstone>, <deepmoblearning:soot_covered_redstone>, 100);
 scripts.wrap.thermalexpansion.Transposer.addFillRecipe(<minecraft:redstone>, <deepmoblearning:soot_covered_redstone>, <fluid:water> * 10, 1000);
 
 # [Ender Air Bottle] from [End Stone][+2]

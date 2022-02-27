@@ -158,13 +158,3 @@ craft.remake(<integrateddynamics:logic_director> * 4, ["pretty",
   "∩": <integrateddynamics:crystalized_chorus_chunk>, # Crystalized Chorus Chunk
   "◊": <ore:gemTanzanite>, # Tanzanite
 });
-
-# [Access Proxy] from [Block of Cobalt][+2]
-craft.remake(<integrated_proxy:access_proxy>, ["pretty",
-  "X L X",
-  "L ■ L",
-  "X L X"], {
-  "■": <ore:blockCobalt>,                   # Block of Cobalt
-  "X": <endreborn:death_essence>,           # Xorcite Shard
-  "L": <integrateddynamics:logic_director>, # Logic Director
-});

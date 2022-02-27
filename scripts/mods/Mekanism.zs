@@ -179,15 +179,18 @@ craft.remake(<mekanism:machineblock2:8>, ["pretty",
 	[[<mekanism:basicblock:7>, <ore:heartDragon>, <mekanism:basicblock:7>],
 	[<modularmachinery:blockcasing:5>, <mekanism:machineblock:11>|<mekanism:machineblock:11>.withTag({}), <modularmachinery:blockcasing:5>], 
 	[<mekanism:basicblock:7>, <rftools:matter_beamer>, <mekanism:basicblock:7>]]);
-	
-# Steel Casing
-	recipes.remove(<mekanism:basicblock:8>);
-	recipes.addShaped("Steel Casing", 
-	<mekanism:basicblock:8> * 2, 
-	[[<ore:ingotOsmium>, <ore:blockOsmium>, <ore:ingotOsmium>],
-	[<immersiveengineering:material:9>, <immersiveengineering:stone_decoration:2>, <immersiveengineering:material:9>], 
-	[<ore:ingotOsmium>, <ore:blockOsmium>, <ore:ingotOsmium>]]);
-	
+
+# [Steel Casing]*2 from [Blast Brick][+3]
+craft.remake(<mekanism:basicblock:8> * 2, ["pretty",
+  "▬ - ▬",
+  "S B S",
+  "▬ - ▬"], {
+  "▬": <ore:ingotOsmium>,                         # Osmium Ingot
+  "-": <ore:ingotAlubrass>,                       # Aluminum Brass Ingot
+  "S": <immersiveengineering:material:9>,         # Steel Mechanical Component
+  "B": <immersiveengineering:stone_decoration:1>, # Blast Brick
+});
+
 # Metallurgic Infuser
 	recipes.remove(<mekanism:machineblock:8>);
 	recipes.addShaped("Metallurgic Infuser", 

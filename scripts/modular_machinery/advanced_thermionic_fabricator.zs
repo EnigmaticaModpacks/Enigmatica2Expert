@@ -146,10 +146,11 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_machine_frame", m
 	.addItemOutput(<thermalexpansion:frame> * 2)
 	.addEnergyPerTickInput(50000)
 	.addFluidInput(<liquid:glass> * 12000)
-	.addItemInput(<rftools:machine_frame>)
-	.addItemInput(<immersiveengineering:metal_decoration0:5>)
-	.addItemInput(<actuallyadditions:block_misc:9>)
-	.addItemInput(<advancedrocketry:basalt>)
-	.addItemInput(<actuallyadditions:item_crystal:5> * 4)
+	.addItemInput(<rftools:machine_frame>)                     # Machine Frame
+	.addItemInput(<immersiveengineering:metal_decoration0:5>)  # Heavy Engineering Block
+	.addItemInput(<actuallyadditions:block_misc:9>)            # Iron Casing
+	.addItemInput(<advancedrocketry:basalt>)                   # Basalt Sediment
+	.addItemInput(<ore:blockOsmium>, 2)                        # Osmium Block
+	.addItemInput(<actuallyadditions:block_crystal:3> * 2)     # Void Crystal Block
 	.build();
 	

@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded tconstruct
-// Uses of this mod: 111
+// Uses of this mod: 112
 
 
 //####################################################
@@ -75,6 +75,20 @@ zenClass Class_Casting { zenConstructor() {}
 
 }
 static Casting as Class_Casting = Class_Casting();
+
+//####################################################
+// Uses of this class: 1
+zenClass Class_Drying { zenConstructor() {}
+
+	// Uses of this method: 1
+	function addRecipe(output as IItemStack, input as IIngredient, time as int) as void {
+		if(utils.DEBUG) print('Recipe wrapped: mods.tconstruct.Drying.addRecipe'~
+			serialize.args([serialize.IItemStack(output), serialize.IIngredient(input), time]));
+		mods.tconstruct.Drying.addRecipe(output, input, time);
+	}
+
+}
+static Drying as Class_Drying = Class_Drying();
 
 //####################################################
 // Uses of this class: 32

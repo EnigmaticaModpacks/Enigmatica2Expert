@@ -100,11 +100,6 @@ scripts.process.melt(<ore:ingotRefinedGlowstone>, <liquid:refined_glowstone> *  
 scripts.process.melt(<ore:blockRefinedObsidian>,  <liquid:refined_obsidian>  * 1296, "only: Crucible");
 scripts.process.melt(<ore:blockRefinedGlowstone>, <liquid:refined_glowstone> * 1296, "only: Crucible");
 
-# Also recipe added in ChemicalReactor.xml
-# Add Tube recipes
-mods.mechanics.addTubeRecipe([<mekanism:basicblock:2>] as IItemStack[], <liquid:refined_obsidian> * 1000);
-mods.mechanics.addTubeRecipe([<mekanism:basicblock:4>] as IItemStack[], <liquid:refined_glowstone> * 1000);
-
 # Add advanced liquid recipes
 scripts.process.solution([<thermalfoundation:material:770>], [<liquid:diamond> * 66], [<liquid:refined_obsidian> * 144], null, "except: vat");
 scripts.process.solution([<mekanism:dust:2>], [<liquid:glowstone> * 250], [<liquid:refined_glowstone> * 144], null, "except: vat");
