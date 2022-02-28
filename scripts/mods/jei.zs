@@ -10,7 +10,6 @@ var categoriesToHide as string[] = [
 	"thermalexpansion.furnace",
 	"thermalexpansion.factorizer_combine",
 	"thermalexpansion.factorizer_split",
-	"Painter",
 	"forestry.bottler",
 	"ic2.scrapbox",
 	"xu2_machine_extrautils2:furnace",
@@ -19,7 +18,9 @@ var categoriesToHide as string[] = [
   "mctsmelteryio:casting_machine",
   "mctsmelteryio:fuel_controller",
 	"tcomplement:high_oven_melting",
-	"mekanism.energizedsmelter"
+	"mekanism.energizedsmelter",
+	"jeresources.enchantment",
+	"oc.manual"
 ];
 
 for category in categoriesToHide {
