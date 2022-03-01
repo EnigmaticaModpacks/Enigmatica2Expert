@@ -119,6 +119,7 @@
 			<rotationalPeriod>12000</rotationalPeriod>
 		</planet>
 		<planet name="Terra Nova" DIMID="112" temp="287" customIcon="earthlike">
+			<biomeIds>biomesoplenty:crag</biomeIds>
 			<skyColor>1,0,1</skyColor>
 			<fogColor>1,0,0.5</fogColor>
 			<atmosphereDensity>100</atmosphereDensity>
@@ -136,6 +137,7 @@
 			<rotationalPeriod>12000</rotationalPeriod>
 		</planet>
 		<planet name="Stella" DIMID="114" temp="287" customIcon="earthlike">
+			<biomeIds>biomesoplenty:sacred_springs, biomesoplenty:mystic_grove</biomeIds>
 			<skyColor>1,0,1</skyColor>
 			<fogColor>1,0,0.5</fogColor>
 			<atmosphereDensity>100</atmosphereDensity>
