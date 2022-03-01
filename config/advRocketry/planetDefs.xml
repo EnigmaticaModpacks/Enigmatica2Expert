@@ -124,7 +124,7 @@
 			<fogColor>1,0,0.5</fogColor>
 			<atmosphereDensity>100</atmosphereDensity>
 			<gravitationalMultiplier>70</gravitationalMultiplier>
-			<orbitalDistance>70</orbitalDistance>
+			<orbitalDistance>200</orbitalDistance>
 			<rotationalPeriod>24000</rotationalPeriod>
 		</planet>
 		<planet name="Novus" DIMID="113" temp="1000" customIcon="lava">
@@ -142,7 +142,7 @@
 			<fogColor>1,0,0.5</fogColor>
 			<atmosphereDensity>100</atmosphereDensity>
 			<gravitationalMultiplier>75</gravitationalMultiplier>
-			<orbitalDistance>90</orbitalDistance>
+			<orbitalDistance>200</orbitalDistance>
 			<rotationalPeriod>12000</rotationalPeriod>
 		</planet>
 		<planet name="Philucka" DIMID="115" temp="150" customIcon="marslike">
