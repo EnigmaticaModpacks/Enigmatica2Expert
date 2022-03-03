@@ -139,3 +139,7 @@ scripts.process.squeeze(<iceandfire:myrmex_resin_sticky>   , <liquid:resin>*180,
 scripts.process.squeeze(<iceandfire:myrmex_resin_sticky:1> , <liquid:resin>*180, null, <iceandfire:myrmex_jungle_resin> * 2);
 scripts.process.squeeze(<iceandfire:desert_myrmex_cocoon>  , <liquid:resin>*480, null, <iceandfire:myrmex_desert_resin> * 8);
 scripts.process.squeeze(<iceandfire:jungle_myrmex_cocoon>  , <liquid:resin>*480, null, <iceandfire:myrmex_jungle_resin> * 8);
+
+# Dragons Breath from Dragon Forges
+	mods.iceandfire.recipes.addFireDragonForgeRecipe(<integrateddynamics:crystalized_chorus_chunk>, <botania:manaresource:15>, <minecraft:dragon_breath>); 
+	mods.iceandfire.recipes.addIceDragonForgeRecipe(<integrateddynamics:crystalized_chorus_chunk>, <botania:manaresource:15>, <minecraft:dragon_breath>);
