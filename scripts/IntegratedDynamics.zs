@@ -59,3 +59,12 @@ recipes.addShaped("part_connector_omni_directional_item", connector * 2, [
 	[null, part, null]]);
 	
 recipes.addShapeless("part_connector_omni_directional_item_12", connector * 2, [connector, connector]); 
+
+# Logic Cable
+	recipes.remove(<integrateddynamics:cable>);
+//	recipes.remove(<integrateddynamics:cable_11>);
+	recipes.addShapedMirrored("IntegratedDynamics Cable", 
+	<integrateddynamics:cable> * 3,
+	[[<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>],
+	[<ore:dustRedstone>,<xnet:netcable>,<ore:dustRedstone>],
+	[<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>]]);
