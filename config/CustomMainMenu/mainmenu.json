@@ -4,28 +4,28 @@
         "enigmatica2":
         {
             "image" : "modpack:textures/gui/enigmatica2.png",
-            "posX" : -130,
+            "posX" : -90,
             "posY" : 15,
-            "width" : 400,
-            "height" : 75,
+            "width" : 288,
+            "height" : 54,
             "alignment" : "top_center"
         },
 		"expert":
         {
             "image" : "modpack:textures/gui/expert.png",
-            "posX" : -15,
-            "posY" : 90,
-            "width" : 200,
-            "height" : 40,
+            "posX" : 15,
+            "posY" : 75,
+            "width" : 144,
+            "height" : 29,
             "alignment" : "top_center"
         },
 		"2":
         {
             "image" : "modpack:textures/gui/2.png",
-            "posX" : 265,
-            "posY" : 35,
-            "width" : 50,
-            "height" : 50,
+            "posX" : 200,
+            "posY" : 28,
+            "width" : 36,
+            "height" : 36,
             "alignment" : "top_center"
         },
 		

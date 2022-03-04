@@ -234,6 +234,9 @@ var listCatFur as string[] = [
 "iceandfire:dragonbone"               ,"0"   , "8"  , # Dragon Bone
 "iceandfire:myrmex_desert_chitin"     ,"0"   , "8"  , # Desert Myrmex Chitin
 "iceandfire:myrmex_jungle_chitin"     ,"0"   , "8"  , # Jungle Myrmex Chitin
+"iceandfire:deathworm_chitin"         ,"0"   , "5"  , # Tan Death Worm Chitin
+"iceandfire:deathworm_chitin"         ,"1"   , "5"  , # White Death Worm Chitin
+"iceandfire:deathworm_chitin"         ,"2"   , "5"  , # Red Death Worm Chitin
 "iceandfire:stymphalian_bird_feather" ,"0"   , "40" , # Stymphalian Bird Feather
 "iceandfire:witherbone"               ,"0"   , "8"  , # Witherbone
 "immersiveengineering:bullet"         ,"0"   , "15" , # Empty Casing
@@ -305,9 +308,19 @@ scripts.process.crush(<ore:gemQuartzBlack>, <actuallyadditions:item_dust:7>, cru
 scripts.process.crush(<ore:blockBlackQuartz>, <actuallyadditions:item_dust:7> * 4, crushExceptions ~ " Manufactory", null, null);
 
 # Recycle Quark crystals
-scripts.process.crush(<quark:crystal:1>, <actuallyadditions:item_crystal_shard>   * 3, "no exceptions", null, null);
-scripts.process.crush(<quark:crystal:6>, <actuallyadditions:item_crystal_shard:1> * 3, "no exceptions", null, null);
-scripts.process.crush(<quark:crystal:5>, <actuallyadditions:item_crystal_shard:2> * 3, "no exceptions", null, null);
-scripts.process.crush(<quark:crystal:8>, <actuallyadditions:item_crystal_shard:3> * 3, "no exceptions", null, null);
-scripts.process.crush(<quark:crystal:4>, <actuallyadditions:item_crystal_shard:4> * 3, "no exceptions", null, null);
-scripts.process.crush(<quark:crystal>  , <actuallyadditions:item_crystal_shard:5> * 3, "no exceptions", null, null);
+var crystalCrushExcept = "Macerator Grindstone AEGrinder ThermalCentrifuge mekCrusher MekEnrichment";
+scripts.process.crush(<quark:crystal:1>, <actuallyadditions:item_crystal_shard>   * 3, crystalCrushExcept, null, null);
+scripts.process.crush(<quark:crystal:6>, <actuallyadditions:item_crystal_shard:1> * 3, crystalCrushExcept, null, null);
+scripts.process.crush(<quark:crystal:5>, <actuallyadditions:item_crystal_shard:2> * 3, crystalCrushExcept, null, null);
+scripts.process.crush(<quark:crystal:8>, <actuallyadditions:item_crystal_shard:3> * 3, crystalCrushExcept, null, null);
+scripts.process.crush(<quark:crystal:4>, <actuallyadditions:item_crystal_shard:4> * 3, crystalCrushExcept, null, null);
+scripts.process.crush(<quark:crystal>  , <actuallyadditions:item_crystal_shard:5> * 3, crystalCrushExcept, null, null);
+
+# Other better ways to make Bio-mash and other food
+scripts.process.mash(<ore:listAllseed>*4,   <actuallyadditions:item_misc:1>*4, "no exceptions");
+scripts.process.mash(<ore:listAllveggie>*4, <actuallyadditions:item_misc:1>*4, "no exceptions");
+scripts.process.mash(<ore:listAllfruit>*4,  <actuallyadditions:item_misc:1>*5, "no exceptions");
+scripts.process.mash(<ore:listAllberry>*4,  <actuallyadditions:item_misc:1>*4, "no exceptions");
+scripts.process.mash(<minecraft:baked_potato>,  <actuallyadditions:item_food:5>*4, "no exceptions");
+scripts.process.mash(<minecraft:cooked_porkchop>,  <actuallyadditions:item_food:20>*5, "no exceptions");
+

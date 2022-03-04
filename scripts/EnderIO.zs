@@ -14,7 +14,6 @@ recipes.addShaped("Cheaper Chassis Parts",
 [constructionAlloyOrIron, casing, constructionAlloyOrIron], 
 [constructionAlloyOrIron, constructionAlloyOrIron, constructionAlloyOrIron]]);
 
-
 # Electrical Steel
 mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:96>, <nuclearcraft:gem:6>);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:160>, <nuclearcraft:gem:6>);
@@ -28,13 +27,18 @@ for silicon in <ore:itemSilicon>.items {
 	}
 }
 
-# Impulse Hopper
-	recipes.remove(<enderio:block_impulse_hopper>);
-	recipes.addShaped("enderio_impulse_hopper_custom", 
-	<enderio:block_impulse_hopper>, 
-	[[<ore:ingotElectricalSteel>, <minecraft:hopper>, <ore:ingotElectricalSteel>], 
-	[<ore:gearEnergized>, <ic2:resource:12>, <ore:gearEnergized>], 
-	[<ore:ingotElectricalSteel>, <ore:ingotRedstoneAlloy>, <ore:ingotElectricalSteel>]]);
+# This is basically quantity filter with auto input/output
+# [Impulse Hopper] from [Basic Machine Casing][+4]
+craft.remake(<enderio:block_impulse_hopper>, ["pretty",
+  "▬ ◘ ▬",
+  "I □ I",
+  "▬ ♥ ▬"], {
+  "□": <ic2:resource:12>,      # Basic Machine Casing
+  "♥": <ore:blockRedstone>,    # Block of Redstone
+  "◘": <ore:blockHopper>,      # Hopper
+  "I": <ore:gearIronInfinity>, # Infinity Bimetal Gear
+  "▬": <ore:ingotDarkSteel>    # Dark Steel Ingot
+});
 
 # Advanced Item Filter
 	recipes.remove(<enderio:item_advanced_item_filter>);
@@ -271,3 +275,9 @@ scripts.process.alloy([<minecraft:glowstone_dust>, <minecraft:clay_ball>], <ende
 
 # Dark Steel Upgrade Expensive, Thermal
 	mods.thermalexpansion.InductionSmelter.addRecipe(<enderio:item_dark_steel_upgrade>, <enderio:block_alloy:6>, <minecraft:clay>, 25000);
+
+# Remove [Ender Pearl Powder] grinding recipes
+mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:ender_pearl>);
+mods.appliedenergistics2.Grinder.removeRecipe(<thermalfoundation:material:895>);
+scripts.process.crush(<ore:enderpearl>, <appliedenergistics2:material:46>, "Except: Pulverizer PulseCentrifuge", null, null);
+

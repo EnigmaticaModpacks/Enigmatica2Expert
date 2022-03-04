@@ -10,6 +10,7 @@ _[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/ch
   Going forward worldgen should be more interesting and diverse.
   As a side-effect ugly chunk borders will generate between old and new chunks.
 - Please run the command `/bq_admin default load` to get the latest quest  updates.
+- This update has registry changes. You may be prompted when joining an old world, that the `integrateddynamics:meneglin` biome and several Advanced Rocketry buckets have been removed - It's fine, you can safely continue.
 
 **Improvements/Changes**
 

@@ -222,3 +222,16 @@ ScrapBox.addDrop(<rftools:syringe>, 1.7F);                        			# Syringe
 ScrapBox.addDrop(<rftoolsdim:dimlet_parcel>, 0.03F);              			# Dimlet Parcel
 ScrapBox.addDrop(<thermalexpansion:frame:64>, 0.05F);             			# Device Frame
 ScrapBox.addDrop(<thermalfoundation:diagram_redprint>, 3.1F);     			# Redprint
+
+# Dense plates in Thermal Expansion Compactor
+for ore_entry in oreDict {
+	val name = ore_entry.name;
+	if (name.matches("plateDense[A-Z]\\w+")) {
+    val ore_name = name.substring(10);
+		val inpOre = (ore_name == "Obsidian")
+			? (<minecraft:obsidian> * 3) as IIngredient
+			: oreDict["block"~ore_name];
+		if(inpOre.items.length <= 0) continue;
+		scripts.process.compress(inpOre, ore_entry.firstItem, "only: Compactor");
+	}
+}

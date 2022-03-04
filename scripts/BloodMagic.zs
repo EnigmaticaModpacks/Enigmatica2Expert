@@ -93,11 +93,6 @@ import mods.jei.JEI.removeAndHide as rh;
 	[<ore:ingotManasteel>, <ore:redstoneRoot>, <ore:ingotManasteel>], 
 	[<thaumcraft:fabric>, <ore:ingotManasteel>, <thaumcraft:fabric>]]);
 
-# Awakended Activation Crystal
-	recipes.remove(<bloodmagic:activation_crystal:1>);
-	mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:activation_crystal:1>, [<ore:gaiaIngot>, <astralsorcery:iteminfusedglass>.anyDamage(), <actuallyadditions:item_misc:19>, <thaumcraft:metal_void>], 2000, 500);
-	
-// output, input, altar tier, mb life essence, blood consumed per tick, blood drained per tick
 # Blank Slate
 	mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:stone>);
 	mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:slate>, <botania:livingrock>, 0, 1000, 10, 10);
@@ -156,6 +151,14 @@ import mods.jei.JEI.removeAndHide as rh;
 	<ore:orbTier6>.add(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"}));
 	
 # Remake recipe of blood tanks
+
+# [Blood Tank Tier 1] from [Glass][+2]
+craft.remake(<bloodmagic:blood_tank>, ["B","■","A"], {
+  "B": <bloodmagic:slate>,        # Blank Slate
+  "■": <ore:blockGlass>, # Glass
+  "A": <thaumcraft:stone_arcane>, # Arcane Stone
+});
+
 recipes.addShapeless("Clearing Blood Tank 0", <bloodmagic:blood_tank>, [<bloodmagic:blood_tank>]);
 for i in 1 to 16 {
 	val tank = itemUtils.getItem("bloodmagic:blood_tank", i);

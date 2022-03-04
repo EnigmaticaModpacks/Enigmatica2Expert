@@ -1,6 +1,6 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
-
+import scripts.craft.grid.Grid;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded forestry
 
@@ -20,9 +20,9 @@ for tomato in <ore:cropTomato>.items {
 # Refined Circuit Board
 	mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:3>);
 	mods.forestry.Carpenter.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}), 
-	[[<appliedenergistics2:material:17>, <forestry:chipsets>.withTag({}), <appliedenergistics2:material:17>],
-	[<ore:circuitUltimate>, <forestry:chipsets:1>.withTag({}), <ore:circuitUltimate>],
-	[<appliedenergistics2:material:17>, <forestry:chipsets:2>.withTag({}), <appliedenergistics2:material:17>]], 
+	[[<appliedenergistics2:material:17>, <forestry:chipsets>.withTag({T:0 as short}, false), <appliedenergistics2:material:17>],
+	[<ore:circuitUltimate>, <forestry:chipsets:1>.withTag({T:1 as short}, false), <ore:circuitUltimate>],
+	[<appliedenergistics2:material:17>, <forestry:chipsets:2>.withTag({T:2 as short}, false), <appliedenergistics2:material:17>]], 
 	40, <liquid:water> * 1000);
 
 # Sturdy Casing
@@ -78,11 +78,12 @@ for tomato in <ore:cropTomato>.items {
 #mods.forestry.Carpenter.addRecipe(<minecraft:gold_ingot>, [[<minecraft:gold_block>]], 30, <liquid:for.honey> * 100);
 #mods.forestry.Carpenter.addRecipe(<minecraft:redstone_block>, [[<minecraft:redstone>,<minecraft:redstone>,<minecraft:redstone>],[<minecraft:redstone>,<minecraft:redstone>,<minecraft:redstone>],[<minecraft:redstone>,<minecraft:redstone>,<minecraft:redstone>]], 60, <liquid:water> * 200, <minecraft:stone>);
 
-// Allow any log to be used in stead of just oak
-mods.forestry.Carpenter.removeRecipe(<forestry:oak_stick>, <liquid:seed.oil>);
-mods.forestry.Carpenter.removeRecipe(<forestry:oak_stick>, <liquid:oliveoil>);
-mods.forestry.Carpenter.addRecipe(<forestry:oak_stick> * 2, [[<ore:logWood>], [<ore:logWood>]], 40, <liquid:seed.oil> * 100);
-mods.forestry.Carpenter.addRecipe(<forestry:oak_stick> * 2, [[<ore:logWood>], [<ore:logWood>]], 40, <liquid:oliveoil> * 100);
+
+# Use OreDict recipe for Impregnated Casing
+val imprCasingGrid = Grid(["AAA","A A","AAA"], {A:<ore:logWood>}).shaped();
+mods.forestry.Carpenter.removeRecipe(<forestry:impregnated_casing>);
+mods.forestry.Carpenter.addRecipe(<forestry:impregnated_casing>, imprCasingGrid, 40, <liquid:oliveoil> * 250);
+mods.forestry.Carpenter.addRecipe(<forestry:impregnated_casing>, imprCasingGrid, 40, <liquid:seed.oil> * 250);
 
 //mods.forestry.Carpenter.removeRecipe(IItemStack output, @Optional ILiquidStack fluidInput);
 #mods.forestry.Carpenter.removeRecipe(<forestry:portable_alyzer>);
@@ -159,8 +160,12 @@ for thing in thingsToferment {
 //mods.forestry.Moistener.addRecipe(IItemStack output, IItemStack input, int packagingTime); 
 #mods.forestry.Moistener.addRecipe(<minecraft:mycelium>, <minecraft:grass>, 60); 
 
-//mods.forestry.Moistener.removeRecipe(IIngredient output);
-#mods.forestry.Moistener.removeRecipe(<minecraft:stonebrick:1>);
+# Remove pulp recipe
+mods.forestry.Carpenter.removeRecipe(<forestry:wood_pulp>);
+mods.forestry.Carpenter.addRecipe(<thermalfoundation:material:800>, [[<ore:logWood>]], 40, <liquid:water> * 250);
+
+mods.forestry.Carpenter.removeRecipe(<forestry:letters>);
+mods.forestry.Carpenter.addRecipe(<forestry:letters>, Grid(["AAA","AAA"], {A: <thermalfoundation:material:800>}).shaped(), 40, <liquid:water> * 250);
 
 # *======= Squeezer =======*
 
@@ -168,21 +173,27 @@ for thing in thingsToferment {
 //mods.forestry.Squeezer.addRecipe(<liquid:lava>, <minecraft:redstone>, 120);
 #mods.forestry.Squeezer.addRecipe(<liquid:lava>, <minecraft:obsidian>, 120, <minecraft:redstone> % 20);
 
-//mods.forestry.Squeezer.removeRecipe(ILiquidStack liquid, @Optional IIngredient[] ingredients);
-#mods.forestry.Squeezer.removeRecipe(<liquid:juice>);
-#mods.forestry.Squeezer.removeRecipe(<liquid:seed.oil>, [<minecraft:wheat_seeds>]);
+# Simplify andvanced bags
+val bagNames = [
+	"miner",
+	"digger",
+	"forester",
+	"hunter",
+	"adventurer",
+	"builder",
+] as string[];
 
-#Make melons give fruit juice
-mods.forestry.Squeezer.addRecipe(<liquid:juice> * 15, [<minecraft:melon>], 8);
+for name in bagNames {
+	val splBag = itemUtils.getItem("forestry:"~name~"_bag");
+	val advBag = itemUtils.getItem("forestry:"~name~"_bag_t2");
+	mods.forestry.Carpenter.removeRecipe(advBag);
 
-# *======= Still =======*
-
-//mods.forestry.Still.addRecipe(ILiquidStack fluidOutput, ILiquidStack fluidInput, int timePerUnit);
-#mods.forestry.Still.addRecipe(<liquid:lava>, <liquid:water>, 200);
-
-//mods.forestry.Still.removeRecipe(ILiquidStack output, @Optional ILiquidStack fluidInput);
-#mods.forestry.Still.removeRecipe(<liquid:bio.ethanol>);
-#mods.forestry.Still.removeRecipe(<liquid:refinedcanolaoil>,<liquid:canolaoil>);
+	mods.forestry.Carpenter.addRecipe(advBag, [
+		[<quark:gold_button>], # Gold Button
+		[splBag],
+		[<forestry:crafting_material:2>] # Silk Wisp
+	], 40, <liquid:water> * 250);
+}
 
 # *======= Thermionic Fabricator =======*
 

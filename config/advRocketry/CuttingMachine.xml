@@ -21,7 +21,7 @@
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
 <Recipes useDefault="false">
-	<Recipe timeRequired="40" power ="100000">
+	<Recipe timeRequired="40" power="100000">
 		<input>
 			<itemStack>advancedrocketry:itemcircuitplate</itemStack>
 		</input>
@@ -29,7 +29,7 @@
 			<itemStack>advancedrocketry:ic 4</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="50" power ="100000">
+	<Recipe timeRequired="50" power="100000">
 		<input>
 			<itemStack>advancedrocketry:itemcircuitplate 1 1</itemStack>
 		</input>
@@ -37,7 +37,7 @@
 			<itemStack>advancedrocketry:ic 4 2</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="50" power ="100000">
+	<Recipe timeRequired="50" power="100000">
 		<input>
 			<oreDict>bouleSilicon</oreDict>
 		</input>
@@ -45,7 +45,7 @@
 			<itemStack>advancedrocketry:wafer 4</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="40" power ="50000">
+	<Recipe timeRequired="40" power="50000">
 		<input>
 			<itemStack>advancedrocketry:alienwood</itemStack>
 		</input>
@@ -53,285 +53,594 @@
 			<itemStack>advancedrocketry:planks 10</itemStack>
 		</output>
 	</Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>minecraft:log 1 2</itemStack></input>
-		<output><itemStack>minecraft:planks 10 2</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>minecraft:log 1 0</itemStack></input>
-		<output><itemStack>minecraft:planks 10 0</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>minecraft:log 1 1</itemStack></input>
-		<output><itemStack>minecraft:planks 10 1</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>minecraft:log 1 3</itemStack></input>
-		<output><itemStack>minecraft:planks 10 3</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>minecraft:log2 1 0</itemStack></input>
-		<output><itemStack>minecraft:planks 10 4</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>minecraft:log2 1 1</itemStack></input>
-		<output><itemStack>minecraft:planks 10 5</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>twilightforest:magic_log 1 0</itemStack></input>
-		<output><itemStack>twilightforest:time_planks 10 0</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>twilightforest:twilight_log 1 2</itemStack></input>
-		<output><itemStack>twilightforest:mangrove_planks 10 0</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>twilightforest:magic_log 1 2</itemStack></input>
-		<output><itemStack>twilightforest:mine_planks 10 0</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>twilightforest:magic_log 1 1</itemStack></input>
-		<output><itemStack>twilightforest:trans_planks 10 0</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>twilightforest:twilight_log 1 1</itemStack></input>
-		<output><itemStack>twilightforest:canopy_planks 10 0</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>twilightforest:twilight_log 1 0</itemStack></input>
-		<output><itemStack>twilightforest:twilight_oak_planks 10 0</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>twilightforest:magic_log 1 3</itemStack></input>
-		<output><itemStack>twilightforest:sort_planks 10 0</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>twilightforest:twilight_log 1 3</itemStack></input>
-		<output><itemStack>twilightforest:dark_planks 10 0</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>harvestcraft:pampaperbark 1 0</itemStack></input>
-		<output><itemStack>minecraft:planks 10 3</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>harvestcraft:pammaple 1 0</itemStack></input>
-		<output><itemStack>minecraft:planks 10 1</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>harvestcraft:pamcinnamon 1 0</itemStack></input>
-		<output><itemStack>minecraft:planks 10 3</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>biomesoplenty:log_1 1 4</itemStack></input>
-		<output><itemStack>biomesoplenty:planks_0 10 4</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>biomesoplenty:log_2 1 6</itemStack></input>
-		<output><itemStack>biomesoplenty:planks_0 10 10</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>biomesoplenty:log_3 1 4</itemStack></input>
-		<output><itemStack>biomesoplenty:planks_0 10 12</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>biomesoplenty:log_1 1 7</itemStack></input>
-		<output><itemStack>biomesoplenty:planks_0 10 7</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>biomesoplenty:log_0 1 5</itemStack></input>
-		<output><itemStack>biomesoplenty:planks_0 10 1</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>biomesoplenty:log_0 1 4</itemStack></input>
-		<output><itemStack>biomesoplenty:planks_0 10 0</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>biomesoplenty:log_1 1 6</itemStack></input>
-		<output><itemStack>biomesoplenty:planks_0 10 6</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>biomesoplenty:log_3 1 5</itemStack></input>
-		<output><itemStack>biomesoplenty:planks_0 10 13</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>biomesoplenty:log_2 1 5</itemStack></input>
-		<output><itemStack>biomesoplenty:planks_0 10 9</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>biomesoplenty:log_3 1 6</itemStack></input>
-		<output><itemStack>biomesoplenty:planks_0 10 14</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>biomesoplenty:log_1 1 5</itemStack></input>
-		<output><itemStack>biomesoplenty:planks_0 10 5</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>biomesoplenty:log_2 1 7</itemStack></input>
-		<output><itemStack>biomesoplenty:planks_0 10 11</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>biomesoplenty:log_0 1 6</itemStack></input>
-		<output><itemStack>biomesoplenty:planks_0 10 2</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>biomesoplenty:log_2 1 4</itemStack></input>
-		<output><itemStack>biomesoplenty:planks_0 10 8</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>biomesoplenty:log_3 1 7</itemStack></input>
-		<output><itemStack>biomesoplenty:planks_0 10 15</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>biomesoplenty:log_0 1 7</itemStack></input>
-		<output><itemStack>biomesoplenty:planks_0 10 3</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.2 1 0</itemStack></input>
-		<output><itemStack>forestry:planks.0 10 8</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.5 1 3</itemStack></input>
-		<output><itemStack>forestry:planks.1 10 7</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.1 1 3</itemStack></input>
-		<output><itemStack>forestry:planks.0 10 7</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.0 1 1</itemStack></input>
-		<output><itemStack>forestry:planks.0 10 1</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.0 1 0</itemStack></input>
-		<output><itemStack>forestry:planks.0 10 0</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.1 1 2</itemStack></input>
-		<output><itemStack>forestry:planks.0 10 6</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.1 1 0</itemStack></input>
-		<output><itemStack>forestry:planks.0 10 4</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.0 1 2</itemStack></input>
-		<output><itemStack>forestry:planks.0 10 2</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.1 1 1</itemStack></input>
-		<output><itemStack>forestry:planks.0 10 5</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.5 1 2</itemStack></input>
-		<output><itemStack>forestry:planks.1 10 6</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.3 1 0</itemStack></input>
-		<output><itemStack>forestry:planks.0 10 12</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.0 1 3</itemStack></input>
-		<output><itemStack>forestry:planks.0 10 3</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.6 1 2</itemStack></input>
-		<output><itemStack>forestry:planks.1 10 10</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.4 1 2</itemStack></input>
-		<output><itemStack>forestry:planks.1 10 2</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.5 1 0</itemStack></input>
-		<output><itemStack>forestry:planks.1 10 4</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.2 1 3</itemStack></input>
-		<output><itemStack>forestry:planks.0 10 11</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.3 1 1</itemStack></input>
-		<output><itemStack>forestry:planks.0 10 13</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.7 1 0</itemStack></input>
-		<output><itemStack>forestry:planks.1 10 12</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.4 1 3</itemStack></input>
-		<output><itemStack>forestry:planks.1 10 3</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.3 1 2</itemStack></input>
-		<output><itemStack>forestry:planks.0 10 14</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.5 1 1</itemStack></input>
-		<output><itemStack>forestry:planks.1 10 5</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.6 1 3</itemStack></input>
-		<output><itemStack>forestry:planks.1 10 11</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.6 1 0</itemStack></input>
-		<output><itemStack>forestry:planks.1 10 8</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.3 1 3</itemStack></input>
-		<output><itemStack>forestry:planks.0 10 15</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.2 1 2</itemStack></input>
-		<output><itemStack>forestry:planks.0 10 10</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.2 1 1</itemStack></input>
-		<output><itemStack>forestry:planks.0 10 9</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.6 1 1</itemStack></input>
-		<output><itemStack>forestry:planks.1 10 9</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.4 1 0</itemStack></input>
-		<output><itemStack>forestry:planks.1 10 0</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>forestry:logs.4 1 1</itemStack></input>
-		<output><itemStack>forestry:planks.1 10 1</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>rustic:log 1 0</itemStack></input>
-		<output><itemStack>rustic:planks 10 0</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>rustic:log 1 1</itemStack></input>
-		<output><itemStack>rustic:planks 10 1</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>thaumcraft:log_greatwood 1 0</itemStack></input>
-		<output><itemStack>thaumcraft:plank_greatwood 10 0</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>thaumcraft:log_silverwood 1 0</itemStack></input>
-		<output><itemStack>thaumcraft:plank_silverwood 10 0</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>integrateddynamics:menril_log 1 0</itemStack></input>
-		<output><itemStack>integrateddynamics:menril_planks 10 0</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>advancedrocketry:alienwood 1 0</itemStack></input>
-		<output><itemStack>advancedrocketry:planks 10 0</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>extrautils2:ironwood_log 1 0</itemStack></input>
-		<output><itemStack>extrautils2:ironwood_planks 10 0</itemStack></output></Recipe>
-
-	<Recipe timeRequired="5" power ="40000">
-		<input><itemStack>extrautils2:ironwood_log 1 1</itemStack></input>
-		<output><itemStack>extrautils2:ironwood_planks 10 1</itemStack></output></Recipe>
-
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>minecraft:log 1 2</itemStack>
+		</input>
+		<output>
+			<itemStack>minecraft:planks 10 2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>minecraft:log 1 0</itemStack>
+		</input>
+		<output>
+			<itemStack>minecraft:planks 10 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>minecraft:log 1 1</itemStack>
+		</input>
+		<output>
+			<itemStack>minecraft:planks 10 1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>minecraft:log 1 3</itemStack>
+		</input>
+		<output>
+			<itemStack>minecraft:planks 10 3</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>minecraft:log2 1 0</itemStack>
+		</input>
+		<output>
+			<itemStack>minecraft:planks 10 4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>minecraft:log2 1 1</itemStack>
+		</input>
+		<output>
+			<itemStack>minecraft:planks 10 5</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>twilightforest:magic_log 1 0</itemStack>
+		</input>
+		<output>
+			<itemStack>twilightforest:time_planks 10 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>twilightforest:twilight_log 1 2</itemStack>
+		</input>
+		<output>
+			<itemStack>twilightforest:mangrove_planks 10 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>twilightforest:magic_log 1 2</itemStack>
+		</input>
+		<output>
+			<itemStack>twilightforest:mine_planks 10 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>twilightforest:magic_log 1 1</itemStack>
+		</input>
+		<output>
+			<itemStack>twilightforest:trans_planks 10 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>twilightforest:twilight_log 1 1</itemStack>
+		</input>
+		<output>
+			<itemStack>twilightforest:canopy_planks 10 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>twilightforest:twilight_log 1 0</itemStack>
+		</input>
+		<output>
+			<itemStack>twilightforest:twilight_oak_planks 10 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>twilightforest:magic_log 1 3</itemStack>
+		</input>
+		<output>
+			<itemStack>twilightforest:sort_planks 10 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>twilightforest:twilight_log 1 3</itemStack>
+		</input>
+		<output>
+			<itemStack>twilightforest:dark_planks 10 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>harvestcraft:pampaperbark 1 0</itemStack>
+		</input>
+		<output>
+			<itemStack>minecraft:planks 10 3</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>harvestcraft:pammaple 1 0</itemStack>
+		</input>
+		<output>
+			<itemStack>minecraft:planks 10 1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>harvestcraft:pamcinnamon 1 0</itemStack>
+		</input>
+		<output>
+			<itemStack>minecraft:planks 10 3</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>biomesoplenty:log_1 1 4</itemStack>
+		</input>
+		<output>
+			<itemStack>biomesoplenty:planks_0 10 4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>biomesoplenty:log_2 1 6</itemStack>
+		</input>
+		<output>
+			<itemStack>biomesoplenty:planks_0 10 10</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>biomesoplenty:log_3 1 4</itemStack>
+		</input>
+		<output>
+			<itemStack>biomesoplenty:planks_0 10 12</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>biomesoplenty:log_1 1 7</itemStack>
+		</input>
+		<output>
+			<itemStack>biomesoplenty:planks_0 10 7</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>biomesoplenty:log_0 1 5</itemStack>
+		</input>
+		<output>
+			<itemStack>biomesoplenty:planks_0 10 1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>biomesoplenty:log_0 1 4</itemStack>
+		</input>
+		<output>
+			<itemStack>biomesoplenty:planks_0 10 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>biomesoplenty:log_1 1 6</itemStack>
+		</input>
+		<output>
+			<itemStack>biomesoplenty:planks_0 10 6</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>biomesoplenty:log_3 1 5</itemStack>
+		</input>
+		<output>
+			<itemStack>biomesoplenty:planks_0 10 13</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>biomesoplenty:log_2 1 5</itemStack>
+		</input>
+		<output>
+			<itemStack>biomesoplenty:planks_0 10 9</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>biomesoplenty:log_3 1 6</itemStack>
+		</input>
+		<output>
+			<itemStack>biomesoplenty:planks_0 10 14</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>biomesoplenty:log_1 1 5</itemStack>
+		</input>
+		<output>
+			<itemStack>biomesoplenty:planks_0 10 5</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>biomesoplenty:log_2 1 7</itemStack>
+		</input>
+		<output>
+			<itemStack>biomesoplenty:planks_0 10 11</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>biomesoplenty:log_0 1 6</itemStack>
+		</input>
+		<output>
+			<itemStack>biomesoplenty:planks_0 10 2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>biomesoplenty:log_2 1 4</itemStack>
+		</input>
+		<output>
+			<itemStack>biomesoplenty:planks_0 10 8</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>biomesoplenty:log_3 1 7</itemStack>
+		</input>
+		<output>
+			<itemStack>biomesoplenty:planks_0 10 15</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>biomesoplenty:log_0 1 7</itemStack>
+		</input>
+		<output>
+			<itemStack>biomesoplenty:planks_0 10 3</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.2 1 0</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.0 10 8</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.5 1 3</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.1 10 7</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.1 1 3</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.0 10 7</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.0 1 1</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.0 10 1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.0 1 0</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.0 10 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.1 1 2</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.0 10 6</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.1 1 0</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.0 10 4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.0 1 2</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.0 10 2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.1 1 1</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.0 10 5</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.5 1 2</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.1 10 6</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.3 1 0</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.0 10 12</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.0 1 3</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.0 10 3</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.6 1 2</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.1 10 10</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.4 1 2</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.1 10 2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.5 1 0</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.1 10 4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.2 1 3</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.0 10 11</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.3 1 1</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.0 10 13</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.7 1 0</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.1 10 12</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.4 1 3</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.1 10 3</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.3 1 2</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.0 10 14</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.5 1 1</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.1 10 5</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.6 1 3</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.1 10 11</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.6 1 0</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.1 10 8</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.3 1 3</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.0 10 15</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.2 1 2</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.0 10 10</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.2 1 1</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.0 10 9</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.6 1 1</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.1 10 9</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.4 1 0</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.1 10 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>forestry:logs.4 1 1</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.1 10 1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>rustic:log 1 0</itemStack>
+		</input>
+		<output>
+			<itemStack>rustic:planks 10 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>rustic:log 1 1</itemStack>
+		</input>
+		<output>
+			<itemStack>rustic:planks 10 1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>thaumcraft:log_greatwood 1 0</itemStack>
+		</input>
+		<output>
+			<itemStack>thaumcraft:plank_greatwood 10 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>thaumcraft:log_silverwood 1 0</itemStack>
+		</input>
+		<output>
+			<itemStack>thaumcraft:plank_silverwood 10 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>integrateddynamics:menril_log 1 0</itemStack>
+		</input>
+		<output>
+			<itemStack>integrateddynamics:menril_planks 10 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>advancedrocketry:alienwood 1 0</itemStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:planks 10 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>extrautils2:ironwood_log 1 0</itemStack>
+		</input>
+		<output>
+			<itemStack>extrautils2:ironwood_planks 10 0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="5" power="40000">
+		<input>
+			<itemStack>extrautils2:ironwood_log 1 1</itemStack>
+		</input>
+		<output>
+			<itemStack>extrautils2:ironwood_planks 10 1</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Printed Calculation Circuit] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>crystalPureCertusQuartz 9</oreDict>
+		</input>
+		<output>
+			<itemStack>appliedenergistics2:material 9 16</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Printed Engineering Circuit] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>blockDiamond 1</oreDict>
+		</input>
+		<output>
+			<itemStack>appliedenergistics2:material 9 17</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Printed Logic Circuit] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>blockGold 1</oreDict>
+		</input>
+		<output>
+			<itemStack>appliedenergistics2:material 9 18</itemStack>
+		</output>
+	</Recipe>
 </Recipes>

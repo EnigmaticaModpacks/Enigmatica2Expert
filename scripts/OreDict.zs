@@ -3,6 +3,8 @@ import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.oredict.IOreDict as IOreDict;
 import crafttweaker.oredict.IOreDictEntry as IOreDictEntry;
 import mods.jei.JEI.removeAndHide as rh;
+	
+#priority 1000
 
 <ore:blockYellorium>.add(<immersiveengineering:storage:5>);	
 
@@ -220,11 +222,12 @@ for item in pressurePlates {
 	fertilizer.add(<minecraft:dye:15>);
 	fertilizer.add(<industrialforegoing:fertilizer>);
 	fertilizer.add(<forestry:fertilizer_compound>);
+	fertilizer.add(<mysticalagriculture:fertilized_essence>);
 	
 # Sawdust compat
-	<ore:pulpWood>.add(<excompressum:wood_chippings>);
 	<ore:pulpWood>.add(<thermalfoundation:material:800>);
-	<ore:dustWood>.add(<forestry:wood_pulp>);
+	<ore:pulpWood>.remove([<mekanism:sawdust>, <forestry:wood_pulp>]);
+	<ore:dustWood>.remove([<mekanism:sawdust>, <excompressum:wood_chippings>]);
 	
 # Diamond Chip
 	<ore:nuggetDiamond>.add(<opencomputers:material:29>);
@@ -683,3 +686,8 @@ for item in pressurePlates {
     <animania:purple_peacock_feather>,
     <animania:taupe_peacock_feather>
 ]);
+
+# Rearrange items in Dye Oredict to better integration
+# with AA [Lens Of Color]
+<ore:dyeBrown>.remove([<enderio:item_material:49>, <industrialforegoing:fertilizer>]);
+<ore:dyeGreen>.remove(<enderio:item_material:48>);

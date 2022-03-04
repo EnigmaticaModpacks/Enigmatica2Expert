@@ -21,7 +21,7 @@
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
 <Recipes useDefault="false">
-	<Recipe timeRequired="15" power ="50000">
+	<Recipe timeRequired="15" power="50000">
 		<input>
 			<oreDict>ingotIron 1</oreDict>
 			<fluidStack>lubricant 100</fluidStack>
@@ -30,7 +30,7 @@
 			<itemStack>thermalfoundation:material 1 32</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="15" power ="50000">
+	<Recipe timeRequired="15" power="50000">
 		<input>
 			<oreDict>plateIron 1</oreDict>
 			<fluidStack>lubricant 100</fluidStack>
@@ -39,7 +39,7 @@
 			<itemStack>libvulpes:productsheet 4 1</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="15" power ="50000">
+	<Recipe timeRequired="15" power="50000">
 		<input>
 			<oreDict>ingotGold 1</oreDict>
 			<fluidStack>lubricant 100</fluidStack>
@@ -48,7 +48,7 @@
 			<itemStack>thermalfoundation:material 1 33</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="15" power ="50000">
+	<Recipe timeRequired="15" power="50000">
 		<input>
 			<oreDict>ingotSilicon 1</oreDict>
 			<fluidStack>lubricant 100</fluidStack>
@@ -57,7 +57,7 @@
 			<itemStack>libvulpes:productplate 1 3</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="15" power ="50000">
+	<Recipe timeRequired="15" power="50000">
 		<input>
 			<oreDict>ingotCopper 1</oreDict>
 			<fluidStack>lubricant 100</fluidStack>
@@ -66,7 +66,7 @@
 			<itemStack>thermalfoundation:material 1 320</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="15" power ="50000">
+	<Recipe timeRequired="15" power="50000">
 		<input>
 			<oreDict>plateCopper 1</oreDict>
 			<fluidStack>lubricant 100</fluidStack>
@@ -75,7 +75,7 @@
 			<itemStack>libvulpes:productsheet 4 4</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="15" power ="50000">
+	<Recipe timeRequired="15" power="50000">
 		<input>
 			<oreDict>ingotTin 1</oreDict>
 			<fluidStack>lubricant 100</fluidStack>
@@ -84,7 +84,7 @@
 			<itemStack>thermalfoundation:material 1 321</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="15" power ="50000">
+	<Recipe timeRequired="15" power="50000">
 		<input>
 			<oreDict>ingotSteel 1</oreDict>
 			<fluidStack>lubricant 100</fluidStack>
@@ -93,7 +93,7 @@
 			<itemStack>thermalfoundation:material 1 352</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="15" power ="50000">
+	<Recipe timeRequired="15" power="50000">
 		<input>
 			<oreDict>plateSteel 1</oreDict>
 			<fluidStack>lubricant 100</fluidStack>
@@ -102,7 +102,7 @@
 			<itemStack>libvulpes:productsheet 4 6</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="15" power ="50000">
+	<Recipe timeRequired="15" power="50000">
 		<input>
 			<oreDict>ingotTitanium 1</oreDict>
 			<fluidStack>lubricant 100</fluidStack>
@@ -111,7 +111,7 @@
 			<itemStack>libvulpes:productplate 1 7</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="15" power ="50000">
+	<Recipe timeRequired="15" power="50000">
 		<input>
 			<oreDict>plateTitanium 1</oreDict>
 			<fluidStack>lubricant 100</fluidStack>
@@ -120,7 +120,7 @@
 			<itemStack>libvulpes:productsheet 4 7</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="15" power ="50000">
+	<Recipe timeRequired="15" power="50000">
 		<input>
 			<oreDict>ingotAluminum 1</oreDict>
 			<fluidStack>lubricant 100</fluidStack>
@@ -129,7 +129,7 @@
 			<itemStack>thermalfoundation:material 1 324</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="15" power ="50000">
+	<Recipe timeRequired="15" power="50000">
 		<input>
 			<oreDict>plateAluminum 1</oreDict>
 			<fluidStack>lubricant 100</fluidStack>
@@ -138,7 +138,7 @@
 			<itemStack>libvulpes:productsheet 4 9</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="15" power ="50000">
+	<Recipe timeRequired="15" power="50000">
 		<input>
 			<oreDict>ingotIridium 1</oreDict>
 			<fluidStack>lubricant 100</fluidStack>
@@ -147,7 +147,7 @@
 			<itemStack>thermalfoundation:material 1 327</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="15" power ="50000">
+	<Recipe timeRequired="15" power="50000">
 		<input>
 			<oreDict>ingotTitaniumAluminide 1</oreDict>
 			<fluidStack>lubricant 100</fluidStack>
@@ -156,7 +156,7 @@
 			<itemStack>advancedrocketry:productplate 1 0</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="15" power ="50000">
+	<Recipe timeRequired="15" power="50000">
 		<input>
 			<oreDict>plateTitaniumAluminide 1</oreDict>
 			<fluidStack>lubricant 100</fluidStack>
@@ -165,7 +165,7 @@
 			<itemStack>advancedrocketry:productsheet 4 0</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="15" power ="50000">
+	<Recipe timeRequired="15" power="50000">
 		<input>
 			<oreDict>ingotTitaniumIridium 1</oreDict>
 			<fluidStack>lubricant 100</fluidStack>
@@ -174,7 +174,7 @@
 			<itemStack>advancedrocketry:productplate 1 1</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="15" power ="50000">
+	<Recipe timeRequired="15" power="50000">
 		<input>
 			<oreDict>plateTitaniumIridium 1</oreDict>
 			<fluidStack>lubricant 100</fluidStack>
@@ -183,7 +183,7 @@
 			<itemStack>advancedrocketry:productsheet 4 1</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="10" power ="50000">
+	<Recipe timeRequired="10" power="50000">
 		<input>
 			<oreDict>sheetIron 2</oreDict>
 			<fluidStack>lubricant 100</fluidStack>
@@ -192,7 +192,7 @@
 			<itemStack>advancedrocketry:pressuretank</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="20" power ="50000">
+	<Recipe timeRequired="20" power="50000">
 		<input>
 			<oreDict>sheetSteel 2</oreDict>
 			<fluidStack>lubricant 100</fluidStack>
@@ -201,7 +201,7 @@
 			<itemStack>advancedrocketry:pressuretank 1 1</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="30" power ="50000">
+	<Recipe timeRequired="30" power="50000">
 		<input>
 			<oreDict>sheetAluminum 2</oreDict>
 			<fluidStack>lubricant 100</fluidStack>
@@ -210,7 +210,7 @@
 			<itemStack>advancedrocketry:pressuretank 1 2</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="60" power ="50000">
+	<Recipe timeRequired="60" power="50000">
 		<input>
 			<oreDict>sheetTitanium 2</oreDict>
 			<fluidStack>lubricant 100</fluidStack>

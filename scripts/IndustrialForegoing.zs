@@ -191,3 +191,15 @@ function fluidDict(ins as string[]) {
 		[<ore:ingotIron>, <ore:itemRubber>, <ore:ingotIron>], 
 		[<ore:ingotIron>, <minecraft:hopper>, <ore:ingotIron>], 
 		[<ore:ingotIron>, <industrialforegoing:conveyor:*>, <ore:ingotIron>]]);
+
+# More sludge outputs
+mods.industrialforegoing.SludgeRefiner.add(<rustic:fertile_soil>, 10);
+mods.industrialforegoing.SludgeRefiner.add(<thermalfoundation:material:816>, 10);
+mods.industrialforegoing.SludgeRefiner.add(<forestry:fertilizer_bio>, 10);
+mods.industrialforegoing.SludgeRefiner.add(<forestry:mulch>, 10);
+mods.industrialforegoing.SludgeRefiner.add(<thaumcraft:nugget:10>, 10);
+
+
+# Stackable black hole tanks
+<industrialforegoing:black_hole_unit>.maxStackSize = 64;
+<industrialforegoing:black_hole_tank>.maxStackSize = 64;
