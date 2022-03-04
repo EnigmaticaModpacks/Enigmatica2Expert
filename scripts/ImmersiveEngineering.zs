@@ -161,3 +161,7 @@ import crafttweaker.item.IItemStack as IItemStack;
 # Excavator new veins
 mods.immersiveengineering.Excavator.addMineral("Osmium", 50, 0.005, ["oreTin", "oreOsmium", "oreSilver"], [0.01, 0.006, 0.003]);
 mods.immersiveengineering.Excavator.addMineral("Nuclear", 20, 0.005, ["oreThorium", "oreBoron", "oreLithium", "oreMagnesium"], [0.01, 0.01, 0.01, 0.01]);
+
+# Unbreakable Graphite Electrodes
+    mods.thermalexpansion.InductionSmelter.addRecipe(<immersiveengineering:graphite_electrode>.withTag({Unbreakable: 1, display: {Lore: ["Reinforced with Titanium Iridium Alloy"], Name: "Unbreakable Graphite Electrode"}}), <immersiveengineering:graphite_electrode>, <advancedrocketry:productingot:1> * 4, 25000);
+    mods.jei.JEI.addItem(<immersiveengineering:graphite_electrode>.withTag({Unbreakable: 1, display: {Lore: ["Reinforced with Titanium Iridium Alloy"], Name: "Unbreakable Graphite Electrode"}}));
