@@ -69,6 +69,6 @@ recipes.addShapeless("part_connector_omni_directional_item_12", connector * 2, [
 	[<ore:dustRedstone>,<xnet:netcable>,<ore:dustRedstone>],
 	[<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>]]);
 
-# Menril Sapling / Melt Blue Slime
-	mods.tconstruct.Melting.addRecipe(<liquid:blueslime> * 250,<tconstruct:edible:1>);
+# Menril Sapling
+//mods.tconstruct.Casting.addTableRecipe(IItemStack output, IIngredient cast, ILiquidStack fluid, int amount, @Optional boolean consumeCast, @Optional int time);
 	mods.tconstruct.Casting.addTableRecipe(<integrateddynamics:menril_sapling>, <minecraft:sapling>, <liquid:blueslime>, 250, true);
