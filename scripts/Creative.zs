@@ -133,8 +133,8 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 	<extrautils2:screen>, <opencomputers:screen3>, 
 	<opencomputers:screen2>, <opencomputers:screen1>]);
 
-# RFTools Creative Powercell
-	mods.extendedcrafting.TableCrafting.addShaped(4, <rftools:powercell_creative>,	
+# EnderIO Creative Capacitor Bank
+	mods.extendedcrafting.TableCrafting.addShaped(4, <enderio:block_cap_bank>.withTag({"enderio:energy": 1000000000}),
 	[[rtgFuel, resonantFrame, ingotUltimate, ingotUltimate, ingotUltimate, ingotUltimate, ingotUltimate, resonantFrame, rtgFuel], 
 	[resonantFrame, <nuclearcraft:rtg_californium>, elitePlating, anglesite, dilithium, anglesite, elitePlating, <nuclearcraft:rtg_californium>, resonantFrame], 
 	[ingotUltimate, elitePlating, ultProvider, resonantCube, <environmentaltech:solar_cont_5>, resonantCube, ultProvider, elitePlating, ingotUltimate], 
@@ -189,7 +189,7 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 	[[<ore:blockCrystalMatrix>, blackHoleUnit, ultCatalyst, ultCatalyst, <bigreactors:minerals>, ultCatalyst, ultCatalyst, blackHoleUnit, <ore:blockCrystalMatrix>], 
 	[blackHoleUnit, resonantFrame, resonantFrame, draconicChest, <extracells:storage.component:3>, draconicChest, resonantFrame, resonantFrame, blackHoleUnit], 
 	[ultCatalyst, resonantFrame, <ore:blockAethium>, <draconicevolution:chaotic_core>, benitoite, <draconicevolution:chaotic_core>, <ore:blockAethium>, resonantFrame, ultCatalyst], 
-	[ultCatalyst, draconicChest, creativeEssence, <rftools:powercell_creative>, <ore:ingotInfinity>, <ic2:te:86>, creativeEssence, draconicChest, ultCatalyst], 
+	[ultCatalyst, draconicChest, creativeEssence, <enderio:block_cap_bank>.withTag({"enderio:energy": 1000000000}), <ore:ingotInfinity>, <ic2:te:86>, creativeEssence, draconicChest, ultCatalyst], 
 	[<bigreactors:minerals>, <extracells:storage.component:3>, benitoite, <environmentaltech:solar_cont_6>, twilightForestMasterTrophy, <environmentaltech:solar_cont_6>, benitoite, <extracells:storage.component:3>, <bigreactors:minerals>], 
 	[ultCatalyst, draconicChest, creativeEssence, creativeTank, <ore:ingotInfinity>, creativeGasTank, creativeEssence, draconicChest, ultCatalyst], 
 	[ultCatalyst, resonantFrame, <ore:blockAethium>, <draconicevolution:chaotic_core>, benitoite, <draconicevolution:chaotic_core>, <ore:blockAethium>, resonantFrame, ultCatalyst], 
