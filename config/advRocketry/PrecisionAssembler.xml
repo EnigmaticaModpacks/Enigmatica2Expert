@@ -209,4 +209,34 @@
 			<itemStack>advancedrocketry:beaconfinder</itemStack>
 		</output>
 	</Recipe>
+		<Recipe timeRequired="10" power ="4000">
+		<input>
+			<itemStack>appliedenergistics2:material 1 18</itemStack>
+			<oreDict>dustRedstone</oreDict>
+			<oreDict>itemSilicon</oreDict>
+		</input>
+		<output>
+			<itemStack>appliedenergistics2:material 1 22</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="10" power ="4000">
+		<input>
+			<itemStack>appliedenergistics2:material 1 17</itemStack>
+			<oreDict>dustRedstone</oreDict>
+			<oreDict>itemSilicon</oreDict>
+		</input>
+		<output>
+			<itemStack>appliedenergistics2:material 1 24</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="10" power ="4000">
+		<input>
+			<itemStack>appliedenergistics2:material 1 16</itemStack>
+			<oreDict>dustRedstone</oreDict>
+			<oreDict>itemSilicon</oreDict>
+		</input>
+		<output>
+			<itemStack>appliedenergistics2:material 1 23</itemStack>
+		</output>
+	</Recipe>
 </Recipes>
