@@ -109,3 +109,24 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(
 		<draconicevolution:dislocator>,
 		pearl, pearl, pearl, pearl, pearl, pearl, pearl
 	]);
+
+# Potentiometer
+	recipes.remove(<draconicevolution:potentiometer>);
+	recipes.addShapedMirrored("Potentiometer", <draconicevolution:potentiometer>,
+	[[null,<ore:plankWood>,null],
+	[<ore:dustRedstone>,<randomthings:advancedredstonetorch_on>,<ore:dustRedstone>],
+	[<minecraft:stone_slab>,<minecraft:stone_slab>,<minecraft:stone_slab>]]);
+	
+# Basic Energy Relay Crystal
+	recipes.remove(<draconicevolution:energy_crystal>);
+	recipes.addShapedMirrored("Basic Energy Relay Crystal", <draconicevolution:energy_crystal>*4,
+	[[<industrialforegoing:laser_lens:11>,<actuallyadditions:block_laser_relay_extreme>,<industrialforegoing:laser_lens:11>],
+	[<enderio:item_alloy_ingot>,<ore:crystalAstralAny>,<enderio:item_alloy_ingot>],
+	[<industrialforegoing:laser_lens:11>,<actuallyadditions:block_laser_relay_extreme>,<industrialforegoing:laser_lens:11>]]);
+	
+# Basic Wireless Energy Crystal
+	recipes.remove(<draconicevolution:energy_crystal:6>);
+	recipes.addShapedMirrored("Basic Wireless Enegy Crystal", <draconicevolution:energy_crystal:6>,
+	[[<ore:dustAstralStarmetal>,<extrautils2:powertransmitter>,<ore:dustAstralStarmetal>],
+	[<appliedenergistics2:material:41>,<draconicevolution:energy_crystal:0>,<appliedenergistics2:material:41>],
+	[<ore:dustAstralStarmetal>,<extrautils2:powertransmitter>,<ore:dustAstralStarmetal>]]);

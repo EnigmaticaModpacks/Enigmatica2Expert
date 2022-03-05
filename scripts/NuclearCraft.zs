@@ -211,3 +211,17 @@ for fluid in [
 	]);
 }
 # ----------------------------------
+
+# Add Animania/Immersive Tech Salt to Melter
+// mods.nuclearcraft.melter.removeRecipeWithInput([itemInput]);
+// mods.nuclearcraft.melter.removeRecipeWithOutput([fluidOutput]);
+// mods.nuclearcraft.melter.removeAllRecipes();
+// mods.nuclearcraft.melter.addRecipe([itemInput, fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
+
+mods.nuclearcraft.melter.removeRecipeWithInput(<mekanism:salt>);
+mods.nuclearcraft.melter.removeRecipeWithInput(<harvestcraft:saltitem>);
+
+var allSalts = <immersivetech:material> | <animania:salt> | <mekanism:salt> | <harvestcraft:saltitem>;
+
+//mods.nuclearcraft.melter.addRecipe([<ore:dustSalt>,<liquid:brine> * 15, 0.25, 0.5]);
+mods.nuclearcraft.melter.addRecipe([allSalts,<liquid:brine> * 15, 0.25, 0.5]);

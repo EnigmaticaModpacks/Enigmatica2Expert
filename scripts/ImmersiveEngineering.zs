@@ -198,3 +198,7 @@ craft.remake(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveen
   "▬": <ore:ingotIron>, # Iron Alloy Ingot
   remove: <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 8, # Conveyor Belt
 });
+
+# Unbreakable Graphite Electrodes
+    mods.thermalexpansion.InductionSmelter.addRecipe(<immersiveengineering:graphite_electrode>.withTag({Unbreakable: 1, display: {Lore: ["Reinforced with Titanium Iridium Alloy"], Name: "Unbreakable Graphite Electrode"}}), <immersiveengineering:graphite_electrode>, <advancedrocketry:productingot:1> * 4, 25000);
+    mods.jei.JEI.addItem(<immersiveengineering:graphite_electrode>.withTag({Unbreakable: 1, display: {Lore: ["Reinforced with Titanium Iridium Alloy"], Name: "Unbreakable Graphite Electrode"}}));

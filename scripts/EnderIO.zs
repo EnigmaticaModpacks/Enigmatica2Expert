@@ -270,7 +270,14 @@ scripts.process.crush(<enderio:item_material:76>, <enderio:block_holy_fog>, "exc
 # Compunent for nano-glowstone compat
 scripts.process.alloy([<minecraft:glowstone_dust>, <minecraft:clay_ball>], <enderio:item_material:76> * 2, "except: alloySmelter");
 
+# Dark Steel Upgrade Recycling
+	mods.nuclearcraft.decay_hastener.addRecipe([<enderio:item_dark_steel_upgrade:1>.anyDamage(), <enderio:item_dark_steel_upgrade>, 2.0, 2.0]);
+
+# Dark Steel Upgrade Expensive, Thermal
+	mods.thermalexpansion.InductionSmelter.addRecipe(<enderio:item_dark_steel_upgrade>, <enderio:block_alloy:6>, <minecraft:clay>, 25000);
+
 # Remove [Ender Pearl Powder] grinding recipes
 mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:ender_pearl>);
 mods.appliedenergistics2.Grinder.removeRecipe(<thermalfoundation:material:895>);
 scripts.process.crush(<ore:enderpearl>, <appliedenergistics2:material:46>, "Except: Pulverizer PulseCentrifuge", null, null);
+

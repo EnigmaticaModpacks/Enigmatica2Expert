@@ -1,0 +1,32 @@
+{
+    "catalystStack": {
+      "registryName": {
+        "domain": "thermalfoundation",
+        "path": "material"
+      },
+      "meta": 893
+    },
+    "components": [
+      {
+        "weight": 200,
+        "oreName": "oreRedstone"
+      },
+      {
+        "weight": 100,
+        "oreName": "oreClathrateRedstone"
+      },
+      {
+        "weight": 100,
+        "oreName": "oreClathrateGlowstone"
+      },
+      {
+        "weight": 100,
+        "oreName": "oreClathrateEnder"
+      }
+    ],
+    "explosionStrength": 5.0,
+    "radius": 3,
+    "maxWeight": 500,
+    "version": 4,
+    "cost": 1000000
+  }

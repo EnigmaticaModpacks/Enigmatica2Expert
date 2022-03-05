@@ -325,3 +325,7 @@ craft.make(<tconstruct:tooltables:4>.withTag({
   "c": <ore:chest>,          # Oak Chest
 });
 ########################################################################################
+
+# Add meltables
+//mods.tconstruct.Melting.addRecipe(ILiquidStack output, IIngredient input, @Optional int temp);
+	mods.tconstruct.Melting.addRecipe(<liquid:blueslime> * 250,<tconstruct:edible:1>);

@@ -59,3 +59,16 @@ recipes.addShaped("part_connector_omni_directional_item", connector * 2, [
 	[null, part, null]]);
 	
 recipes.addShapeless("part_connector_omni_directional_item_12", connector * 2, [connector, connector]); 
+
+# Logic Cable
+	recipes.remove(<integrateddynamics:cable>);
+//	recipes.remove(<integrateddynamics:cable_11>);
+	recipes.addShapedMirrored("IntegratedDynamics Cable", 
+	<integrateddynamics:cable> * 3,
+	[[<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>],
+	[<ore:dustRedstone>,<xnet:netcable>,<ore:dustRedstone>],
+	[<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>]]);
+
+# Menril Sapling
+//mods.tconstruct.Casting.addTableRecipe(IItemStack output, IIngredient cast, ILiquidStack fluid, int amount, @Optional boolean consumeCast, @Optional int time);
+	mods.tconstruct.Casting.addTableRecipe(<integrateddynamics:menril_sapling>, <minecraft:sapling>, <liquid:blueslime>, 250, true);

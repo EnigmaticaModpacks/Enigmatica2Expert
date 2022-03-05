@@ -153,3 +153,7 @@ craft.remake(<iceandfire:fishing_spear>, ["pretty",
   "w": <ore:wool>, # Wool
   "M": <extrautils2:decorativesolidwood>, # Magical Planks
 });
+
+# Dragons Breath from Dragon Forges
+	mods.iceandfire.recipes.addFireDragonForgeRecipe(<integrateddynamics:crystalized_chorus_chunk>, <botania:manaresource:15>, <minecraft:dragon_breath>); 
+	mods.iceandfire.recipes.addIceDragonForgeRecipe(<integrateddynamics:crystalized_chorus_chunk>, <botania:manaresource:15>, <minecraft:dragon_breath>);
