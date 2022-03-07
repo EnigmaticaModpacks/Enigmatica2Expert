@@ -2,7 +2,7 @@ version:1343
 invertYMouse:false
 mouseSensitivity:0.5
 fov:0.0
-gamma:0.0
+gamma:1.0
 saturation:0.0
 renderDistance:7
 guiScale:3
@@ -178,6 +178,7 @@ key_key.previous_item.desc:0
 key_key.open_danknull.desc:0
 key_key.togglehud.desc:0
 key_nimble.keybind.frontView:62
+key_key.xtones.scroll:42
 key_key.narrator:53:CONTROL
 key_key.jei.toggleOverlay:24:CONTROL
 key_key.jei.focusSearch:33:CONTROL
@@ -292,6 +293,10 @@ key_key.plustic_brown_magic.desc:22:CONTROL
 key_key.plustic_toggle_tool.desc:51:ALT
 key_key.plustic_fruit_salad.desc:12:ALT
 key_key.plustic_mots.desc:13:ALT
+key_key.neenergistics.recipe.ingredient.change:42
+key_key.neenergistics.stack.count.change:29
+key_key.neenergistics.crafting.helper.preview:29
+key_key.neenergistics.crafting.helper.noPreview:56
 key_key.nutrition:49
 key_pi.key.open_pi:23
 key_pi.key.et_gui:23

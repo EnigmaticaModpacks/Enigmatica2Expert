@@ -2,13 +2,13 @@
   "guiScale": 3,
   "hudScale": 3,
   "tooltipScale": 2,
-  "customIndividualGuiScales": {},
   "customIndividualGuiScales": {
     "us.getfluxed.controlsearch.client.gui.GuiNewControls": {
       "scale": 3,
       "name": "us.getfluxed.controlsearch.client.gui.GuiNewControls"
     }
   },
+  "customGroupGuiScales": {},
   "loggedGuiClassNames": [
     "com.verdantartifice.thaumicwonders.client.gui.GuiMeatyOrb",
     "com.github.alexthe666.rats.client.gui.GuiRat",
