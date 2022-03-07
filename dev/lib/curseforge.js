@@ -72,10 +72,37 @@ export function curseMarkdown(mdFilePath) {
 
   const $ = cheerio.load(htmlText)
 
-  $('img').css('display', 'inline').css('float', 'left')
+  // $('img').not('img[width=50]').css('display', 'inline-block') /* .css('float', 'left') */
+
+  $('img')
+    .not('img[width=50]')
+    .each(function () {
+      $(this).replaceWith(
+        `<strong><span style="font-family: terminal, monaco, monospace;">[${$(this).attr('title')}]</span></strong>`
+      )
+    })
+
+  $('img[width=50]').attr('width', '25')
+
+  // <strong><span style="font-family: terminal, monaco, monospace;">[Osmium Block]</span></strong>
+
+  $('h1').before('<br/>').after('<br/>')
+  $('h2').before('<br/><hr/>').after('<br/>')
+  // $('h3').before('<br/>').after('<br/>')
+  $('h3').wrap('<span style="text-decoration: underline;">').contents().unwrap()
+  // $('sub').contents().unwrap()
+  $('sup').remove()
 
   saveText($.html(), htmlPath)
-  execSync('npx prettier --write ' + htmlPath)
+  // execSync('npx prettier --write ' + htmlPath)
 }
 
-// curseMarkdown('changelogs/LATEST.md')
+export async function init() {
+  curseMarkdown('changelogs/LATEST.md')
+}
+
+if (
+  // @ts-ignore
+  import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
+)
+  init()

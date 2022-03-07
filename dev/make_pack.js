@@ -36,8 +36,7 @@ const { sync: _globs } = fast_glob
  * @param {string | string[]} source
  * @param {import('../node_modules/fast-glob/out/settings').Options} [options]
  */
-const globs = (source, options) =>
-  _globs(source, { dot: true, onlyFiles: false, ...options })
+const globs = (source, options) => _globs(source, { dot: true, onlyFiles: false, ...options })
 
 const { argv } = yargs(process.argv.slice(2))
   .alias('h', 'help')
@@ -129,14 +128,8 @@ const { argv } = yargs(process.argv.slice(2))
 
   let STEP = 1
 
-  if (
-    await pressEnterOrEsc(
-      `[${STEP++}] Press ENTER to perform Automation. Press ESC to skip.`
-    )
-  ) {
-    doTask(`🪓 Doing automation ...\n\n`, () =>
-      execSyncInherit('node ./dev/automate.js')
-    )
+  if (await pressEnterOrEsc(`[${STEP++}] Press ENTER to perform Automation. Press ESC to skip.`)) {
+    doTask(`🪓 Doing automation ...\n\n`, () => execSyncInherit('node ./dev/automate.js'))
   }
 
   /*
@@ -164,9 +157,8 @@ const { argv } = yargs(process.argv.slice(2))
     curseMarkdown('changelogs/LATEST.md')
   }
 
-  await pressEnterOrEsc(
-    `[${STEP++}] Clear your working tree, rebase, and press ENTER. Press ESC to skip.`,
-    async () => (await git.status()).isClean()
+  await pressEnterOrEsc(`[${STEP++}] Clear your working tree, rebase, and press ENTER. Press ESC to skip.`, async () =>
+    (await git.status()).isClean()
   )
 
   if (await pressEnterOrEsc(`[${STEP++}] Add tag? ENTER / ESC.`)) {
@@ -212,10 +204,7 @@ const { argv } = yargs(process.argv.slice(2))
       `🧹 Removing non-release files and folders ... `,
       () => {
         const removeFromEveryPackage = globs(devonlyIgnore)
-        return (
-          'removed: ' +
-          delSync(removeFromEveryPackage, { dryRun: false }).length
-        )
+        return 'removed: ' + delSync(removeFromEveryPackage, { dryRun: false }).length
       },
       tmpOverrides
     )
@@ -244,14 +233,11 @@ const { argv } = yargs(process.argv.slice(2))
       if (argv['dryRun'])
         return write(
           `\n${command === 'd' ? '➖' : '➕'} ${
-            chalk.bgRgb(10, 10, 10).rgb(30, 30, 30)(zipPath) +
-            ' ' +
-            chalk.gray(params)
+            chalk.bgRgb(10, 10, 10).rgb(30, 30, 30)(zipPath) + ' ' + chalk.gray(params)
           }`
         )
 
-      const exec7z = (p) =>
-        execSyncInherit(`"${sZPath}" ${command} -bso0 "${zipPath}" ${p}`)
+      const exec7z = (p) => execSyncInherit(`"${sZPath}" ${command} -bso0 "${zipPath}" ${p}`)
 
       if (!Array.isArray(params)) return exec7z(params)
 
@@ -279,27 +265,19 @@ const { argv } = yargs(process.argv.slice(2))
   const zipPath_server = `${zipPath_base}_server.zip`
   const zipPath_RU = `${zipPath_base}_RU.zip`
 
-  const isZipsExist =
-    !argv['dryRun'] &&
-    [zipPath_EN, zipPath_server, zipPath_RU].some((f) => existsSync(f))
+  const isZipsExist = !argv['dryRun'] && [zipPath_EN, zipPath_server, zipPath_RU].some((f) => existsSync(f))
 
   let rewriteOldZipFiles = false
-  if (
-    isZipsExist &&
-    (await pressEnterOrEsc(`[${STEP++}] Rewrite old .zip files? ENTER / ESC`))
-  ) {
+  if (isZipsExist && (await pressEnterOrEsc(`[${STEP++}] Rewrite old .zip files? ENTER / ESC`))) {
     rewriteOldZipFiles = true
     doTask(
       `🪓 Removing old zip files ... `,
-      () =>
-        delSync([zipPath_EN, zipPath_server, zipPath_RU], { force: true })
-          .length
+      () => delSync([zipPath_EN, zipPath_server, zipPath_RU], { force: true }).length
     )
   }
 
   const makeZips = !isZipsExist || rewriteOldZipFiles
-  makeZips &&
-    doTask(`🏴󠁧󠁢󠁥󠁮󠁧󠁿 Create EN .zip ... \n`, () => withZip(zipPath_EN)('.'), tmpDir)
+  makeZips && doTask(`🏴󠁧󠁢󠁥󠁮󠁧󠁿 Create EN .zip ... \n`, () => withZip(zipPath_EN)('.'), tmpDir)
 
   /********************************************************
 
@@ -321,9 +299,7 @@ const { argv } = yargs(process.argv.slice(2))
     ],
   }).filter((f) => f.startsWith('mods/'))
 
-  const unpatchedList = globs('mods/*-patched.jar').map((f) =>
-    f.replace('-patched.jar', '')
-  )
+  const unpatchedList = globs('mods/*-patched.jar').map((f) => f.replace('-patched.jar', ''))
 
   makeZips &&
     doTask(
@@ -353,10 +329,7 @@ const { argv } = yargs(process.argv.slice(2))
         // Add Unpatched by Bansoukou mods
         write('\n Add & Rename Bansoukou-unpatched mods\n')
         const disabledList = unpatchedList.map((f) => f + '.disabled')
-        const renameList = unpatchedList.flatMap((f) => [
-          f + '.disabled',
-          f + '.jar',
-        ])
+        const renameList = unpatchedList.flatMap((f) => [f + '.disabled', f + '.jar'])
         process.chdir(mcClientPath)
         zip(disabledList)
         zip(renameList, 'rn')
@@ -378,9 +351,7 @@ const { argv } = yargs(process.argv.slice(2))
     await git.pushTags(['--force'])
   }
 
-  const inputTitle = await enterString(
-    `[${STEP++}] Enter release title and press ENTER. Press ESC to skip release: `
-  )
+  const inputTitle = await enterString(`[${STEP++}] Enter release title and press ENTER. Press ESC to skip release: `)
 
   if (inputTitle !== undefined)
     doTask(`🌍 Releasing on Github ... \n`, () =>

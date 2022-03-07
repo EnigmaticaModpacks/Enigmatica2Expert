@@ -13,8 +13,8 @@ Items that should have more uses:
 ![](https://git.io/Jz9qX "Bottle of Wine")
 ![](https://git.io/JuAPt "Mysical Flesh")
 ![](https://is.gd/9ro3hx "Antler")
-[Wasteland Earth]
-[Trillium]
+![](https://is.gd/rMpCFk "Wasteland Earth")
+![](https://is.gd/ooCy9P "Trillium")
 
 ### Tier 2
 
@@ -28,7 +28,7 @@ Items that should have more uses:
 ![](https://git.io/JVBL3 "Charged Creeper Chunk")
 ![](https://git.io/JoUaU "Quicksilver")
 ![](https://is.gd/NZ5zqq "Xorcite Shard")
-[Gorgon Head]
+![](https://is.gd/ZmKHJr "Gorgon Head")
 [Cyclopus Eye]
 [Quickdry Concrete]
 [Cow Written Book]
@@ -81,16 +81,12 @@ Liquids that should have more uses:
 
 ## TODO
 
-- [ ] ✏️ Feral Ghoul add drop
-- [ ] ✏️ Fix Cobweb and String recipes in Crucible. (try to remove Thaumci Tweaks)
-- [ ] ✏️ Guardian Diode drop from guardians
+- [x] ✏️ Feral Ghoul add drop
+- [ ] ✏️ Fix Green fertilizer output additional crop even if not grown (carrots)
 - [ ] 📖 Add CC/OC gate, Add EEPROM with `trader`, add Patchouli and Quest Book Entry
-- [ ] 📖 Add Heavy Metal entry
-- [ ] 🔄 Fix HEI not filtering with prefixes
-- [ ] 🔄 Tweak Engineer's Decor
-- [ ] 🔄 Probably remove `CapabilityProxy`
+- [ ] 🔄 Report HEI not working with liquid blacklists
 - [ ] 🔄 Fix boat glitch when leaving in first person
-- [ ] 🚧 Write Server update guide
+- [ ] 🔄 Add server restart voting
 - [ ] 🚧 Add modpack automation:
     1. `make_pack.js`
     2. Create CF release with fixed description, Add `inline-block` styles for images publishing on CF
@@ -108,6 +104,8 @@ Liquids that should have more uses:
 
 ## Long-Term
 
+- [ ] 🔄 Tweak Engineer's Decor
+- [ ] ✏️ Fix Cobweb and String recipes in Crucible. https://github.com/LoliKingdom/Thaumic-Speedup/issues/3
 - [ ] ✏️ Dragon Ice better craft result
 - [ ] ✏️ Remake Inworld Crafting
 - [ ] ✏️ Draconic Evolution infusion can use trillions RF
@@ -120,7 +118,7 @@ Liquids that should have more uses:
 - [ ] ✏️ Add bedrock turning into ore mechanic. Dont know how to get ID number of block OR how to execute command `/bedrockores wrap` from non-op player.
 - [ ] ✏️ Remove wrong nuggets from Infernal Furnace
 - [ ] ✏️ Add Mob Trophies recipes (Right-Click with morb over Basalt Slab)
-- [ ] ✏️ Add [Uncrafting Table][Uncrafting Grinder][Creative Bin] as Endgame item, right before creative upgrade
+- [ ] ✏️ Add ![](https://is.gd/enLvDu "Uncrafting Table")[Uncrafting Grinder]![](https://is.gd/Qdrz8o "Creative Bin") as Endgame item, right before creative upgrade
 - [ ] ✏️ ![](https://is.gd/Kda0A6 "Tungsten Ingot") add to JAOPCA. How to add new material to JAOPCA?
 - [ ] ✏️ ![](https://is.gd/EEUU7D "Bee Nest") make not in basin but in world. How to transform blocks in world?
 - [ ] ✏️ Rethink small plate presser Ore => ?? recipes
@@ -179,8 +177,16 @@ Liquids that should have more uses:
 
 ## Unable to
 
+- ✏️ Fix JEI flux drop in lava tab. This JEI page added with JETIF, that has no configs.
 - 🔄 Blacklist Bedrock Ore for ![](https://git.io/Jz9q9 "Mining Laser")
 - Buff Giant Sword
   > Giant sword somehow cant be buffed with MaterialChanger mod
 - `<gendustry:gene_sample>.maxStackSize = 64;` **Transposer** dupe Samples when stackable
 - **Dynamic Surroundings** cause **Better Questing** book not play sounds when getting quests
+
+-a{not <a>}
+│││    │╰╴`a` Get value of Variable
+│││    ╰╴`<>` run LostUser program inside <>
+││╰╴`{}` Run Lua code inside {}
+│╰╴`a` Name of variable to add
+╰╴`-` Add variable function

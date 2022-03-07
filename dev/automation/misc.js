@@ -8,14 +8,7 @@
 //@ts-check
 
 import replace_in_file from 'replace-in-file'
-import {
-  injectInFile,
-  loadText,
-  setBlockDropsList,
-  defaultHelper,
-  loadJson,
-  saveObjAsJson,
-} from '../lib/utils.js'
+import { injectInFile, loadText, setBlockDropsList, defaultHelper, loadJson, saveObjAsJson } from '../lib/utils.js'
 import del from 'del'
 import { execSync, exec as _exec } from 'child_process'
 
@@ -24,29 +17,9 @@ import _ from 'lodash'
 import fs_extra from 'fs-extra'
 import { join } from 'path'
 const { copySync } = fs_extra
-const argv = yargs(process.argv.slice(2))
-  .alias('k', 'keep-cache')
-  .describe('k', 'Not delete cached files').argv
+const argv = yargs(process.argv.slice(2)).alias('k', 'keep-cache').describe('k', 'Not delete cached files').argv
 
 export async function init(h = defaultHelper, options = argv) {
-  await h.begin('Replacing Optifine item IDs')
-  const debug_log = loadText('logs/debug.log')
-  const lootChestID = debug_log.match(
-    /Registry: (\d+) bq_standard:loot_chest bq_standard.items.ItemLootChest/
-  )?.[1]
-  let countReplacedIDs = 0
-  if (lootChestID) {
-    replace_in_file
-      .sync({
-        files:
-          'resourcepacks/bq_lootchests/assets/minecraft/mcpatcher/cit/loot_chest_*.properties',
-        from: /(items=)\d+/gm,
-        to: '$1' + lootChestID,
-        countMatches: true,
-      })
-      .forEach((r) => (countReplacedIDs += r.numReplacements ?? 0))
-  }
-
   //###############################################################################
   //###############################################################################
   //###############################################################################
@@ -93,12 +66,8 @@ export async function init(h = defaultHelper, options = argv) {
 
     // Add already exist remakes
     const fakeIron_zs = loadText('scripts/category/fakeIron.zs')
-    const remakes = fakeIron_zs.match(
-      /^# Start of automatically generated recipes:$.*/ms
-    )[0]
-    for (const match of remakes.matchAll(
-      /^remakeShape.{1,4}\("[^"]+", (?<output><[^>]+>).*$/gm
-    )) {
+    const remakes = fakeIron_zs.match(/^# Start of automatically generated recipes:$.*/ms)[0]
+    for (const match of remakes.matchAll(/^remakeShape.{1,4}\("[^"]+", (?<output><[^>]+>).*$/gm)) {
       if (whitelist.includes(match.groups.output)) resultArr.push(match[0])
     }
 
@@ -109,18 +78,10 @@ export async function init(h = defaultHelper, options = argv) {
       const g = match.groups
 
       const regex = /<(minecraft:iron_|ore:)(ingot|block|nugget)(?:Iron)?>/gi
-      if (
-        !whitelist.includes(g.output) ||
-        !g.grid.match(new RegExp('.*' + regex.source + '.*'))
-      )
-        continue
+      if (!whitelist.includes(g.output) || !g.grid.match(new RegExp('.*' + regex.source + '.*'))) continue
 
-      const replacedGrid = g.grid.replaceAll(regex, (...args) =>
-        args[2].substring(0, 1).toUpperCase()
-      )
-      const line = `remakeShape${g.postfix}(${g.name}, ${g.output}${
-        g.count ?? ''
-      }, ${replacedGrid});`
+      const replacedGrid = g.grid.replaceAll(regex, (...args) => args[2].substring(0, 1).toUpperCase())
+      const line = `remakeShape${g.postfix}(${g.name}, ${g.output}${g.count ?? ''}, ${replacedGrid});`
       resultArr.push(line)
     }
 
@@ -141,10 +102,7 @@ export async function init(h = defaultHelper, options = argv) {
   let countCachedRemoved
   if (!options['keep-cache']) {
     await h.begin('Removing cached files')
-    countCachedRemoved = del.sync(
-      ['config/thaumicjei_itemstack_aspects.json'],
-      { dryRun: false }
-    ).length
+    countCachedRemoved = del.sync(['config/thaumicjei_itemstack_aspects.json'], { dryRun: false }).length
   }
 
   //###############################################################################
@@ -168,10 +126,7 @@ export async function init(h = defaultHelper, options = argv) {
 
     {
       block_stack: 'minecraft:mob_spawner',
-      dropList: [
-        { stack: 'enderio:item_broken_spawner' },
-        { stack: 'actuallyadditions:item_misc:20', luck: [1, 3] },
-      ],
+      dropList: [{ stack: 'enderio:item_broken_spawner' }, { stack: 'actuallyadditions:item_misc:20', luck: [1, 3] }],
     },
   ])
 
@@ -203,28 +158,13 @@ export async function init(h = defaultHelper, options = argv) {
   */
   await h.begin('Heavy Sieve automatically recipes')
   const blocksToCopy = [
-    [
-      'exnihilocreatio:block_andesite_crushed',
-      'contenttweaker:compressed_crushed_andesite',
-    ],
-    [
-      'exnihilocreatio:block_diorite_crushed',
-      'contenttweaker:compressed_crushed_diorite',
-    ],
-    [
-      'exnihilocreatio:block_granite_crushed',
-      'contenttweaker:compressed_crushed_granite',
-    ],
-    [
-      'exnihilocreatio:block_skystone_crushed',
-      'contenttweaker:compressed_crushed_skystone',
-    ],
+    ['exnihilocreatio:block_andesite_crushed', 'contenttweaker:compressed_crushed_andesite'],
+    ['exnihilocreatio:block_diorite_crushed', 'contenttweaker:compressed_crushed_diorite'],
+    ['exnihilocreatio:block_granite_crushed', 'contenttweaker:compressed_crushed_granite'],
+    ['exnihilocreatio:block_skystone_crushed', 'contenttweaker:compressed_crushed_skystone'],
     ['rats:garbage_pile', 'contenttweaker:compressed_garbage_pile'],
     ['enderio:block_infinity', 'enderio:block_infinity:1'],
-    [
-      'additionalcompression:dustgunpowder_compressed',
-      'additionalcompression:dustgunpowder_compressed:1',
-    ],
+    ['additionalcompression:dustgunpowder_compressed', 'additionalcompression:dustgunpowder_compressed:1'],
   ]
   const sieveRegistry = loadJson('config/exnihilocreatio/SieveRegistry.json')
   const heavySievePath = 'config/ExCompressum/HeavySieve.json'
@@ -239,9 +179,7 @@ export async function init(h = defaultHelper, options = argv) {
     const [source, id, _meta] = compressed.split(':')
     const shortand = source + ':' + id
     const meta = parseInt(_meta || '0')
-    const index = entries.findIndex(
-      (o) => o.name == shortand && o.metadata == meta
-    )
+    const index = entries.findIndex((o) => o.name == shortand && o.metadata == meta)
     const found = entries[index]
 
     const entry = {
@@ -274,7 +212,7 @@ export async function init(h = defaultHelper, options = argv) {
   //###############################################################################
   //###############################################################################
   h.result(
-    `Replaced Optifine: ${countReplacedIDs}, Saved fakeIron recipes: ${resultArr.length}` +
+    `Saved fakeIron recipes: ${resultArr.length}` +
       (countCachedRemoved ? `, Removed cached: ${countCachedRemoved}` : '')
   )
 }
