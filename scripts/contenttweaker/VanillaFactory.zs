@@ -145,6 +145,7 @@ buildItem("ore_phosphor");
 buildItem("nugget_phosphor");
 buildItem("dust_tiny_gold");
 buildItem("dust_tiny_silver");
+buildItem("compressed_tallow");
 
 var x = VanillaFactory.createItem("bee_diversity");
 x.setCreativeTab(<creativetab:other>);

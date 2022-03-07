@@ -9,6 +9,7 @@ fluid.electronics=Molten Electronics
 item.contenttweaker.compressed_glowstone.name=Compressed Glowstone
 item.contenttweaker.compressed_ender.name=Compressed Ender
 
+item.contenttweaker.compressed_tallow.name=Compressed Tallow
 tile.contenttweaker.compressed_andesite.name=Compressed Andesite
 tile.contenttweaker.compressed_diorite.name=Compressed Diorite
 tile.contenttweaker.compressed_granite.name=Compressed Granite

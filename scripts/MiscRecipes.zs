@@ -412,16 +412,18 @@ furnace.addRecipe(trueSilicon, <ore:dustNetherQuartz>, 4.0d);
 scripts.wrap.thermalexpansion.Compactor.addMintRecipe(trueSilicon * 2, <minecraft:sand>, 4000);
 
 # Tallow into biomass
-scripts.process.melt(<ore:tallow>, <liquid:biomass> * 10, "No Exceptions");
+scripts.process.compress(<ore:tallow> * 64, <contenttweaker:compressed_tallow>, "except: compressor");
+scripts.process.melt(<ore:tallow>, <liquid:biomass> * 20);
+scripts.process.melt(<contenttweaker:compressed_tallow>, <liquid:biomass> * 1280);
 
 # Molten Cheese
-scripts.process.melt(<ore:cheeseWheels>|<ore:blockCheese>, <liquid:cheese> * 1000, "No Exceptions");
-scripts.process.melt(<ore:foodCheese>, <liquid:cheese> * 250, "No Exceptions");
+scripts.process.melt(<ore:cheeseWheels>|<ore:blockCheese>, <liquid:cheese> * 1000);
+scripts.process.melt(<ore:foodCheese>, <liquid:cheese> * 250);
 scripts.wrap.tconstruct.Casting.addBasinRecipe(<rats:block_of_cheese>, null, <liquid:cheese>, 1000);
 
 # Hardened Ice Unification
 craft.make(<biomesoplenty:hard_ice> * 8, ["AAA","A A","AAA"], {A: <mysticalagriculture:ice_essence>});
-scripts.process.compress(<minecraft:packed_ice> * 2, <biomesoplenty:hard_ice>, "No Exceptions");
+scripts.process.compress(<minecraft:packed_ice> * 2, <biomesoplenty:hard_ice>);
 
 # Remove Glass pane non-oredict recipe
 recipes.removeByRecipeName("minecraft:glass_pane");
@@ -589,3 +591,4 @@ scripts.loot.entity_kill_entity.add("minecraft:slime", "minecraft:wolf", <ore:es
 # Other silver occurances
 mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:gold_ore>);
 scripts.process.crush(<minecraft:gold_ore>, <thermalfoundation:material:1>, "only: AEGrinder", [<contenttweaker:dust_tiny_silver>], [0.9f]);
+

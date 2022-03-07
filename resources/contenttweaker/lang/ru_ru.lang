@@ -9,6 +9,7 @@ fluid.electronics=Плавленная Электроника
 item.contenttweaker.compressed_glowstone.name=Сжатая Светопыль
 item.contenttweaker.compressed_ender.name=Сжатый Эндер Жемчуг
 
+item.contenttweaker.compressed_tallow.name=Сжатый Жир
 tile.contenttweaker.compressed_andesite.name=Сжатый Андезит
 tile.contenttweaker.compressed_diorite.name=Сжатый Диорит
 tile.contenttweaker.compressed_granite.name=Сжатый Гранит
