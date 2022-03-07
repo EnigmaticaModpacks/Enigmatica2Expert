@@ -1,0 +1,14 @@
+{
+  "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
+  "name": "Grinding Trait",
+  "icon": "mechanics:heavy_ingot",
+  "category": "Items",
+  "pages": [
+    {
+      "item": "mechanics:heavy_ingot",
+      "title": "Grinding Trait",
+      "text": "When wearing armor:$(br)$(li)$(l)Jump on ore/$ to crush it into dust.$(br)$(li)$(l)Must sneak/$ to work.$(br)$(li)$(l)More armor parts/$ output more dust. Max is 12.$(br)$(li)$(l)Height/$ of fall increase chance.$(br)$(li)$(l)Durability/$ of armor consumed depends on hardness.$(br)$(li)$(l)Wooden Tool Rod/$ in main hand would show trait info.",
+      "type": "spotlight"
+    }
+  ]
+}

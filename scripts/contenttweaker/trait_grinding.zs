@@ -15,6 +15,20 @@ There is synergy with:
 
 */
 
+/* Patchouli_js('Items/Grinding Trait', {
+  item: 'mechanics:heavy_ingot',
+  title: 'Grinding Trait',
+  _text: `
+    When wearing armor:
+    $(li)$(l)Jump on ore/$ to crush it into dust.
+    $(li)$(l)Must sneak/$ to work.
+    $(li)$(l)More armor parts/$ output more dust. Max is 12.
+    $(li)$(l)Height/$ of fall increase chance.
+    $(li)$(l)Durability/$ of armor consumed depends on hardness.
+    $(li)$(l)Wooden Tool Rod/$ in main hand would show trait info.
+  `,
+})*/
+
 #loader contenttweaker
 
 import crafttweaker.block.IBlock;

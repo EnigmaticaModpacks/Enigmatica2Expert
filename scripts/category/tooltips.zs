@@ -54,7 +54,6 @@ desc.jei(<thaumcraft:arcane_workbench>, "click.crafting"); # Arcane Workbench
 desc.jei(<thaumcraft:crucible>, "click.cauldron"); # Crucible
 desc.jei(<avaritia:resource:2>, "obtained.neutron"); # Neutronium
 desc.jei(Bucket("xpjuice"), "obtained.fluid_transposer"); # XP Bucket
-desc.jei(<bibliocraft:biblioclipboard>, "removed.instability"); # Bibliocraft Clipboard
 desc.jei(<bigreactors:ingotludicrite>, "craftable.ludictite"); # Uncraftable ingots
 desc.jei(<thermalfoundation:material:136>, "obtained.mithril"); # Mana Infused Ingot
 desc.jei(<thermalexpansion:frame:129>, "requires.rf", "10.000.000"); # Thermal Expansion Casings
@@ -367,6 +366,7 @@ desc.both(<tconstruct:shard>.withTag({Material: "fusewood"}), 'tcon.fusewood');
 desc.both(<tconstruct:shard>.withTag({Material: "darkwood"}), 'tcon.darkwood');
 desc.both(<tconstruct:shard>.withTag({Material: "bloodwood"}), 'tcon.bloodwood');
 desc.both(<tconstruct:shard>.withTag({Material: "ghostwood"}), 'tcon.ghostwood');
+desc.both(<farmingforblockheads:feeding_trough>);
 
 /*Inject_js(
 [...loadText('config/enderio/recipes/user/capacitor_machines.xml')
