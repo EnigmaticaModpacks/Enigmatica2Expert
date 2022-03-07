@@ -16126,7 +16126,6 @@
     },
     "202:10": {
       "preRequisites:11": [
-        193,
         212
       ],
       "properties:10": {
@@ -26587,6 +26586,7 @@
         562,
         761,
         772,
+        785,
         917,
         938,
         1051,
@@ -62342,7 +62342,7 @@
     },
     "785:10": {
       "preRequisites:11": [
-        59
+        100
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -62352,7 +62352,7 @@
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
-            "id:8": "capabilityproxy:item_capability_proxy",
+            "id:8": "immersiveengineering:wirecoil",
             "OreDict:8": ""
           },
           "ismain:1": 0,
@@ -62366,7 +62366,7 @@
           "simultaneous:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "snd_update:8": "minecraft:entity.player.levelup",
-          "tasklogic:8": "AND",
+          "tasklogic:8": "OR",
           "visibility:8": "ALWAYS"
         }
       },
@@ -62378,12 +62378,12 @@
           "rewards:9": {
             "0:10": {
               "Count:3": 1,
-              "Damage:2": 50,
+              "Damage:2": 101,
               "id:8": "bq_standard:loot_chest",
               "OreDict:8": "",
               "tag:10": {
                 "display:10": {
-                  "Name:8": "§aRare Loot Chest"
+                  "Name:8": "§3Common Loot Chest"
                 },
                 "lock:1": 1
               }
@@ -62403,7 +62403,7 @@
             "0:10": {
               "Count:3": 1,
               "Damage:2": 0,
-              "id:8": "capabilityproxy:item_capability_proxy",
+              "id:8": "immersiveengineering:wirecoil",
               "OreDict:8": ""
             }
           },
@@ -72021,6 +72021,7 @@
       "preRequisites:11": [
         185,
         188,
+        193,
         199,
         201,
         204,
@@ -83547,6 +83548,77 @@
           "taskID:8": "bq_standard:retrieval"
         }
       }
+    },
+    "1071:10": {
+      "preRequisites:11": [
+        51
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "bq.quest1071.desc",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "mechanics:heavy_ingot",
+            "OreDict:8": ""
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 1,
+          "name:8": "bq.quest1071.name",
+          "partysinglereward:1": 0,
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 1071,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 101,
+              "id:8": "bq_standard:loot_chest",
+              "OreDict:8": "",
+              "tag:10": {
+                "display:10": {
+                  "Name:8": "§3Common Loot Chest"
+                },
+                "lock:1": 1
+              }
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "id:8": "mechanics:heavy_ingot",
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -83815,130 +83887,130 @@
           "y:3": 36
         },
         "35:10": {
-          "id:3": 785,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": 363,
-          "y:3": 109
-        },
-        "36:10": {
           "id:3": 797,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 75,
           "y:3": 133
         },
-        "37:10": {
+        "36:10": {
           "id:3": 799,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 255,
           "y:3": 133
         },
-        "38:10": {
+        "37:10": {
           "id:3": 800,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 75,
           "y:3": 109
         },
-        "39:10": {
+        "38:10": {
           "id:3": 801,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 255,
           "y:3": 109
         },
-        "40:10": {
+        "39:10": {
           "id:3": 802,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 327,
           "y:3": 109
         },
-        "41:10": {
+        "40:10": {
           "id:3": 809,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 147,
           "y:3": 109
         },
-        "42:10": {
+        "41:10": {
           "id:3": 873,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 75,
           "y:3": 36
         },
-        "43:10": {
+        "42:10": {
           "id:3": 874,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 3,
           "y:3": 0
         },
-        "44:10": {
+        "43:10": {
           "id:3": 889,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 399,
           "y:3": 109
         },
-        "45:10": {
+        "44:10": {
           "id:3": 892,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 363,
-          "y:3": 133
+          "y:3": 109
         },
-        "46:10": {
+        "45:10": {
           "id:3": 896,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 291,
           "y:3": 133
         },
-        "47:10": {
+        "46:10": {
           "id:3": 897,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 75,
           "y:3": 12
         },
-        "48:10": {
+        "47:10": {
           "id:3": 932,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -33,
           "y:3": 108
         },
-        "49:10": {
+        "48:10": {
           "id:3": 942,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 219,
           "y:3": 108
         },
-        "50:10": {
+        "49:10": {
           "id:3": 1059,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -69,
           "y:3": 108
         },
-        "51:10": {
+        "50:10": {
           "id:3": 1061,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 3,
           "y:3": 108
         },
-        "52:10": {
+        "51:10": {
           "id:3": 1069,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 3,
           "y:3": 132
+        },
+        "52:10": {
+          "id:3": 1071,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 111,
+          "y:3": 12
         }
       }
     },
@@ -84704,34 +84776,41 @@
           "y:3": 8
         },
         "33:10": {
+          "id:3": 785,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -136,
+          "y:3": -24
+        },
+        "34:10": {
           "id:3": 917,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 132,
           "y:3": 72
         },
-        "34:10": {
+        "35:10": {
           "id:3": 938,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -96,
           "y:3": -24
         },
-        "35:10": {
+        "36:10": {
           "id:3": 1051,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 24,
           "y:3": -24
         },
-        "36:10": {
+        "37:10": {
           "id:3": 1054,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -56,
           "y:3": -24
         },
-        "37:10": {
+        "38:10": {
           "id:3": 1070,
           "sizeX:3": 24,
           "sizeY:3": 24,

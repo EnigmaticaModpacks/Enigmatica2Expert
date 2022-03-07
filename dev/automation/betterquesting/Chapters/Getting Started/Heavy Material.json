@@ -2,28 +2,28 @@
   "_pos": {
     "sizeX:3": 24,
     "sizeY:3": 24,
-    "x:3": 136,
-    "y:3": 8
+    "x:3": 111,
+    "y:3": 12
   },
   "_data": {
     "preRequisites:11": [
-      212
+      51
     ],
     "properties:10": {
       "betterquesting:10": {
         "autoclaim:1": 0,
-        "desc:8": "bq.quest202.desc",
+        "desc:8": "bq.quest1071.desc",
         "globalshare:1": 0,
         "icon:10": {
           "Count:3": 1,
-          "Damage:2": 4,
-          "id:8": "mekanismgenerators:generator",
+          "Damage:2": 0,
+          "id:8": "mechanics:heavy_ingot",
           "OreDict:8": ""
         },
         "ismain:1": 0,
         "issilent:1": 0,
         "lockedprogress:1": 1,
-        "name:8": "bq.quest202.name",
+        "name:8": "bq.quest1071.name",
         "partysinglereward:1": 0,
         "questlogic:8": "AND",
         "repeat_relative:1": 1,
@@ -35,7 +35,7 @@
         "visibility:8": "ALWAYS"
       }
     },
-    "questID:3": 202,
+    "questID:3": 1071,
     "rewards:9": {
       "0:10": {
         "index:3": 0,
@@ -67,8 +67,8 @@
         "requiredItems:9": {
           "0:10": {
             "Count:3": 1,
-            "Damage:2": 4,
-            "id:8": "mekanismgenerators:generator",
+            "Damage:2": 0,
+            "id:8": "mechanics:heavy_ingot",
             "OreDict:8": ""
           }
         },
