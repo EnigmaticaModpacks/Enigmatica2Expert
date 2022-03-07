@@ -1,30 +1,35 @@
 ## Installing
 
-1) Download the zipfile.
-2) Extract it to an empty folder.
-3) If you want to change RAM usage, Java arguments etc, see the "settings" file.
-4) Double click "ServerStart" or "ServerStartLinux", whichever is appropriate.
+1) **Download** the zipfile.
+2) **Extract** it to an empty folder.
+3) If you want to **change RAM** usage, Java arguments etc, see the "settings" file.
+4) If you want to play **Skyblock** 🌌, in file `./server.properties` set `level-type=voidworld`. Then overwrite [this configs](https://github.com/Krutoy242/Enigmatica2Expert-Extended/tree/master/dev/skyblock_overrides) on your server (they would disable some generation in void world, like Slime Islands).
+5) Double click "**ServerStart**" or "ServerStartLinux", whichever is appropriate.
 	On Linux you cannot run the script via sh directly
-5) Set EULA=true
-6) Pregenerate the world - See below for instructions.
+5) **Set** EULA=true
+6) **Pregenerate** the world - See below for instructions.
 
 
 
 ## Updating
 
-1) Backup your world, including config, mods, schematics and scripts folders.
-2) Delete the config, mods, schematics and scripts folders from the server.
-3) Download server files, note the Forge version at the top of the changelog.
-4) Extract into an empty folder.
-5) Move the config, mods, schematics and scripts from the extracted zip into the server folder.
-6) Make sure the Forge version set in settings.cfg is the same as the one stated in the changelog. 
-	The settings.cfg file from the server files will always have the correct version.
-7) Reapply all changes you have made to the server. I recommend that you keep all changes in a seperate
-	folder, so you can just move them over after updating.
+1) **Backup** your world.
+2) **Backup** your custom configs. This is usually `./server.properties` file and some configs, like *Discord Integration* options.
+3) **Delete** all the folders from the server that are in the archive.
+4) **Extract** `.zip` into server folder with overwrite.
+7) **Reapply** your custom configs. I recommend that you keep all changes in a seperate archive, so you can just **unarchive** them over after updating.
 	
 	
 	
 ## Pregeneration
+
+
+> ⚠️ Warning!
+> 
+> From version `v0.43.0` and higher, there is a bug that messed up chunks when using pregenerator.  
+> This leads to a possible ocean biome in the Nether and a Lich Tower in the Hydra Swamp in the Twilight Forest.   
+> Do not use pregen until this bug fixed.
+
 
 Run these commands:
 

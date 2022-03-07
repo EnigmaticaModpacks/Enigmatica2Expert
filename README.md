@@ -64,10 +64,19 @@ Just use *New Instance* feature of your launcher. [GDLauncher example](https://i
 1. Download `E2E-Extended_{version}.zip` from Assets of [latest release](https://github.com/Krutoy242/Enigmatica2Expert-Extended/releases) *OR* from [CurseForge page](https://www.curseforge.com/minecraft/modpacks/enigmatica-2-expert-extended).
 2. Use *Import* feature in your luncher.
 
+### Skyblock 🌌
+
+When you creating new world, there is Skyblock option. You can play it without preparation, but with standard settings, structures will be generated in an void world. It is desirable (but not necessary) to turn them off.
+
+Download and overwrite [this configs](https://github.com/Krutoy242/Enigmatica2Expert-Extended/tree/master/dev/skyblock_overrides) over your installed instance.  
+New configs would disable some generation in void world, like Slime Islands or Dragon corpses.
+
+-----------------
+
 ## Info
 
 - Loading time ~8 minutes. [More info](https://i.imgur.com/JFARuTf.png)
-- First load could take 10+ minutes to create chaches.
+- First load could take 10+ minutes to create caches.
 - Recommended RAM: `6Gb`.
 
 <details><summary>Refined Storage info</summary>
