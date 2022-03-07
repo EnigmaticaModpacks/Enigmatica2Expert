@@ -596,3 +596,48 @@ craft.remake(<mekanism:robit>, ["pretty",
   "W": <animania:wheel>,           # Wheel
   "P": <mekanism:machineblock:13>, # Personal Chest
 });
+
+# ----------------------------------------------------------------
+# Biofuel rework
+# ----------------------------------------------------------------
+
+val BF = <mekanism:biofuel>;
+mods.mekanism.crusher.removeRecipe(<ore:itemBioFuel>);
+
+val bioFuelList = {
+	<minecraft:melon>                        : 1,  # Melon
+	<actuallyadditions:item_misc:1>          : 2,  # Bio-Mash
+	<actuallyadditions:item_misc:21>         : 2,  # Biomass
+	<harvestcraft:fruitbaititem>             : 2,  # Bait
+	<harvestcraft:grainbaititem>             : 2,  # Bait
+	<harvestcraft:veggiebaititem>            : 2,  # Bait
+	<minecraft:baked_potato>                 : 3,  # Baked Potato
+	<exnihilocreatio:item_material:2>        : 5,  # Silkworm
+	<minecraft:tallgrass>                    : 6,  # Shrub
+	<minecraft:poisonous_potato>             : 6,  # Poisonous Potato
+	<ore:cropPumpkin>                        : 6,  # Pumpkin
+	<exnihilocreatio:item_cooked_silkworm>   : 6,  # Cooked Silkworm
+	<ore:cropMelon>                          : 8,  # Melon
+	<twilightforest:raw_meef>                : 8,  # Raw Meef
+	<iceandfire:myrmex_desert_biolight>      : 10, # Desert Myrmex Bioluminescence
+	<iceandfire:myrmex_jungle_biolight>      : 10, # Jungle Myrmex Bioluminescence
+	<ic2:crafting:20>                        : 10, # Plantball
+	<actuallyadditions:item_worm>            : 16, # Worm
+	<twilightforest:cooked_meef>             : 10, # Meef Steak
+	<ic2:crafting:21>                        : 12, # Bio Chaff
+	<ore:itemBiomass>                        : 16, # Pulped Biomass
+	<ore:itemBioblend>                       : 16, # Pulped Bioblend
+	<ore:itemBiomassRich>                    : 24, # Rich Biomass
+	<ore:itemBioblendRich>                   : 24, # Rich Bioblend
+	<additionalcompression:bread_compressed> : 32, # Bread
+} as int[IIngredient];
+
+for input, count in bioFuelList {
+	scripts.wrap.mekanism.crusher.addRecipe(input, BF * count);
+}
+
+// mods.mekanism.crusher.removeRecipe(IIngredient outputStack, @Optional IIngredient inputStack);
+// mods.mekanism.crusher.addRecipe(IIngredient inputStack, IItemStack outputStack);
+
+# ----------------------------------------------------------------
+# ----------------------------------------------------------------

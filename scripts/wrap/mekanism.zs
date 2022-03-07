@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded mekanism
-// Uses of this mod: 54
+// Uses of this mod: 55
 
 
 //####################################################
@@ -61,10 +61,10 @@ zenClass Class_combiner { zenConstructor() {}
 static combiner as Class_combiner = Class_combiner();
 
 //####################################################
-// Uses of this class: 5
+// Uses of this class: 6
 zenClass Class_crusher { zenConstructor() {}
 
-	// Uses of this method: 5
+	// Uses of this method: 6
 	function addRecipe(inputStack as IIngredient, outputStack as IItemStack) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.mekanism.crusher.addRecipe'~
 			serialize.args([serialize.IIngredient(inputStack), serialize.IItemStack(outputStack)]));

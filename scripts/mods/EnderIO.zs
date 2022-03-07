@@ -127,6 +127,16 @@ recipes.addShapedMirrored("Machine Chassis",
 [<ore:dyeMachine>, <enderio:item_material>, <ore:dyeMachine>], 
 [<enderio:block_reinforced_obsidian>, <ore:dyeMachine>, <enderio:block_reinforced_obsidian>]]);
 
+# [End Steel Chassis] from [Quartzburnt][+2]
+craft.remake(<enderio:item_material:66>, ["pretty",
+  "E ◊ E",
+  "◊ Q ◊",
+  "E ◊ E"], {
+  "E": <enderio:block_end_iron_bars>,   # End Steel Bars
+  "◊": <ore:gemXorcite>,                # Xorcite Shard
+  "Q": <extrautils2:decorativesolid:7>, # Quartzburnt
+});
+
 # [Basic Capacitor] from [Redstone Conductance Coil][+3]
 craft.remake(<enderio:item_basic_capacitor>, ["pretty",
   "  H  ",

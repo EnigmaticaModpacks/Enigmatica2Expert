@@ -290,11 +290,16 @@ for i in 0 to listCatFur.length {
 	}
 }
 
-# Harder Phantom Face
-remake("actuallyadditions Phantomface", <actuallyadditions:block_phantomface>, [
-	[null, <ore:chestWood>, null], 
-	[<actuallyadditions:item_crystal_empowered:2>, <capabilityproxy:capability_proxy>, <actuallyadditions:item_crystal_empowered:2>], 
-	[null, <actuallyadditions:item_misc:8>, null]]);
+# [Phantomface] from [End Steel Chassis][+3]
+craft.remake(<actuallyadditions:block_phantomface>, ["pretty",
+  "  I  ",
+  "* E *",
+  "  A  "], {
+  "I": <randomthings:inventoryrerouter>, # Inventory Rerouter
+  "*": <actuallyadditions:item_crystal_empowered:1>, # Empowered Palis Crystal
+  "E": <ore:itemEndSteelMachineChassi>,  # End Steel Chassis
+  "A": <actuallyadditions:item_misc:8>,  # Advanced Coil
+});
 
 # Harder greenhouse glass
 recipes.remove(<actuallyadditions:block_greenhouse_glass> * 2);

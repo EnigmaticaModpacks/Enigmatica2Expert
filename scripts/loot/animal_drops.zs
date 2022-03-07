@@ -65,7 +65,11 @@ function tweak(
 tweak("quark:entities/crab"                , "legs", "quark:crab_leg", <quark:crab_leg>, [<harvestcraft:crabrawitem>], [1,3]);
 tweak("twilightforest:entities/helmet_crab", "fish", "minecraft:fish", null, [<harvestcraft:crabrawitem>], [1,3]);
 tweak("twilightforest:entities/deer"       , "meat", "twilightforest:raw_venison", <twilightforest:raw_venison>, [<harvestcraft:venisonrawitem>], [1,3]);
-tweak("minecraft:entities/elder_guardian"  , "pool3", "minecraft:gameplay/fishing/fish", null, [<enderio:item_material:56>], [1,2]);
+
+# Tweak guardian
+val guardTbl = loottweaker.LootTweaker.getTable("minecraft:entities/elder_guardian");
+guardTbl.getPool("pool3").removeEntry("minecraft:gameplay/fishing/fish");
+guardTbl.addPool("diode", 1, 1, 1, 1).addItemEntryHelper(<enderio:item_material:56>, 1, 0, [Functions.lootingEnchantBonus(0, 1, 0)], [Conditions.killedByPlayer()]);
 
 /*Inject_js{
 setBlockDrops('randomthings:beanpod', [...

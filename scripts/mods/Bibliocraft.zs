@@ -2,9 +2,6 @@
 
 # *======= Recipes =======*
 	
-# Bibliocraft Clipboard
-	recipes.remove(<bibliocraft:biblioclipboard>);
-	
 # Creative Bookcase
 	recipes.addShaped("Creative Bookcase Main", 
 	<bibliocraft:bookcasecreative>, 

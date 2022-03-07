@@ -15,14 +15,14 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded thaumcraft
-// Uses of this mod: 10
+// Uses of this mod: 12
 
 
 //####################################################
-// Uses of this class: 4
+// Uses of this class: 6
 zenClass Class_Crucible { zenConstructor() {}
 
-	// Uses of this method: 4
+	// Uses of this method: 6
 	function registerRecipe(name as string, researchKey as string, output as IItemStack, input as IIngredient, aspects as CTAspectStack[]) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.thaumcraft.Crucible.registerRecipe'~
 			serialize.args([serialize._string(name), serialize._string(researchKey), serialize.IItemStack(output), serialize.IIngredient(input), serialize.CTAspectStack__(aspects)]));

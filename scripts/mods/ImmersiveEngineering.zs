@@ -558,3 +558,6 @@ craft.remake(<immersiveengineering:metal_device1:9> * 3, ["pretty",
   "I": <immersiveengineering:material:8>, # Iron Mechanical Component
   "L": <immersiveengineering:wirecoil>, # LV Wire Coil
 });
+
+# Ethanol alt
+scripts.wrap.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 800, <ore:itemBioFuel>, 800);

@@ -234,3 +234,7 @@ for i, candle in candleColors {
 # Shapeless Totem of Undying
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:charm_undying>);
 recipes.addShapeless('Totem conversion', <thaumcraft:charm_undying>, [<minecraft:totem_of_undying>]);
+
+# TODO: Remove this temporary recipe when resolved: https://github.com/LoliKingdom/Thaumic-Speedup/issues/3
+scripts.wrap.thaumcraft.Crucible.registerRecipe("Temporary web", "HEDGEALCHEMY", <minecraft:web>, <minecraft:string>, [<aspect:vinculum>*2]);
+scripts.wrap.thaumcraft.Crucible.registerRecipe("Temporary string", "HEDGEALCHEMY", <minecraft:string>, <minecraft:wheat>, [<aspect:bestia>*2]);
