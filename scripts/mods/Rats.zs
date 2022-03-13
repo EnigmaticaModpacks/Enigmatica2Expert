@@ -390,3 +390,14 @@ craft.remake(<rats:rat_lantern> * 8, [
   "A": <ore:foodRatraw>, # Raw Rat
   "C": <forestry:carton>,# Carton
 });
+
+# Skyblock alt
+# [Plague Essence] from [Antler][+2]
+craft.make(<rats:plague_essence>, ["pretty",
+  "B C B",
+  "C A C",
+  "B C B"], {
+  "B": <ore:paperBlack>,                         # Black Paper
+  "C": <contenttweaker:compressed_garbage_pile>, # Compressed Garbage Pile
+  "A": <betteranimalsplus:antler>,               # Antler
+});

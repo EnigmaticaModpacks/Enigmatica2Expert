@@ -88,11 +88,6 @@ for i, inputArr in crushingInMachines {
 	utils.rh(<exnihilocreatio:item_ore_silver:2>);
 	utils.rh(<exnihilocreatio:item_ore_nickel:2>);
 
-# Manually remake some
-var x = <exnihilocreatio:item_ore_aluminium:2>;
-mods.appliedenergistics2.Grinder.removeRecipe(<thermalfoundation:ore:4>);
-scripts.wrap.appliedenergistics2.Grinder.addRecipe(x, <thermalfoundation:ore:4>, 2, x, 0.40f, x, 0.80f);
-
 # Remove excess mesh
 	utils.rh(<excompressum:iron_mesh>);
 	
