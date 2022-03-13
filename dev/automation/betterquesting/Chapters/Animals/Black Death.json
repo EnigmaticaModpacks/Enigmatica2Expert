@@ -2,12 +2,12 @@
   "_pos": {
     "sizeX:3": 24,
     "sizeY:3": 24,
-    "x:3": -60,
-    "y:3": 108
+    "x:3": -24,
+    "y:3": 48
   },
   "_data": {
     "preRequisites:11": [
-      726
+      1072
     ],
     "properties:10": {
       "betterquesting:10": {

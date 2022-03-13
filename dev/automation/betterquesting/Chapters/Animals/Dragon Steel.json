@@ -18,7 +18,7 @@
         "icon:10": {
           "Count:3": 1,
           "Damage:2": 0,
-          "id:8": "scalinghealth:heartcontainer",
+          "id:8": "iceandfire:dragonsteel_fire_ingot",
           "OreDict:8": ""
         },
         "ismain:1": 1,
@@ -61,15 +61,15 @@
         "autoConsume:1": 0,
         "consume:1": 0,
         "groupDetect:1": 0,
-        "ignoreNBT:1": 0,
+        "ignoreNBT:1": 1,
         "index:3": 1,
         "partialMatch:1": 1,
         "requiredItems:9": {
           "0:10": {
             "Count:3": 1,
             "Damage:2": 0,
-            "id:8": "scalinghealth:heartcontainer",
-            "OreDict:8": ""
+            "id:8": "iceandfire:dragonsteel_fire_ingot",
+            "OreDict:8": "dragonsteelIngot"
           }
         },
         "taskID:8": "bq_standard:retrieval"

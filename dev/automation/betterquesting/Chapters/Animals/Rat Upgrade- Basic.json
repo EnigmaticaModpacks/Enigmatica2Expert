@@ -1,9 +1,9 @@
 {
   "_pos": {
-    "sizeX:3": 24,
-    "sizeY:3": 24,
-    "x:3": -132,
-    "y:3": 92
+    "sizeX:3": 36,
+    "sizeY:3": 34,
+    "x:3": -138,
+    "y:3": 84
   },
   "_data": {
     "preRequisites:11": [
@@ -20,7 +20,7 @@
           "id:8": "rats:rat_upgrade_basic",
           "OreDict:8": ""
         },
-        "ismain:1": 0,
+        "ismain:1": 1,
         "issilent:1": 0,
         "lockedprogress:1": 1,
         "name:8": "bq.quest723.name",
