@@ -175,6 +175,7 @@ tooltips.lang.botania:thorring=§aIncreases area of Terra Shatterer
 tooltips.lang.botania:odinring=§aExtra hearts, protects from drowning, suffocation, fire or starvation damage
 tooltips.lang.botania:lokiring=§aBuilding tool
 tooltips.lang.farmingforblockheads:feeding_trough=§eDoesn't work if there are more than 8 animals
+tooltips.lang.randomthings:peacecandle=§cDoesn't work. Generation is disabled.
 tooltips.lang.store_x_stacks=§bStore up to %s stacks
 tooltips.lang.backpack.Bat=§aProvides seeing in the dark!\n§aBatman Batman Batman
 tooltips.lang.backpack.Bookshelf=§aPlace around enchanting table\n§ajust like the bookshelf to get higher-level enchantments!

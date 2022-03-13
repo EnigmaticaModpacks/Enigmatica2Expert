@@ -367,6 +367,7 @@ desc.both(<tconstruct:shard>.withTag({Material: "darkwood"}), 'tcon.darkwood');
 desc.both(<tconstruct:shard>.withTag({Material: "bloodwood"}), 'tcon.bloodwood');
 desc.both(<tconstruct:shard>.withTag({Material: "ghostwood"}), 'tcon.ghostwood');
 desc.both(<farmingforblockheads:feeding_trough>);
+desc.both(<randomthings:peacecandle>);
 
 /*Inject_js(
 [...loadText('config/enderio/recipes/user/capacitor_machines.xml')
