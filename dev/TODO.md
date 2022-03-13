@@ -81,12 +81,15 @@ Liquids that should have more uses:
 
 ## TODO
 
-- [x] ✏️ Feral Ghoul add drop
+- [x] ✏️ Peaceful Candle disable completely or point it
+- [x] ✏️ Plague Doctorate cheaper
+- [ ] ✏️ Feral Ghoul add drop
 - [ ] ✏️ Fix Green fertilizer output additional crop even if not grown (carrots)
 - [ ] 📖 Add CC/OC gate, Add EEPROM with `trader`, add Patchouli and Quest Book Entry
-- [ ] 🔄 Report HEI not working with liquid blacklists
+- [x] 🔄 Say that "Industrial Wires can transfer 4x more RF power than EU power"
 - [ ] 🔄 Fix boat glitch when leaving in first person
 - [ ] 🔄 Add server restart voting
+- [ ] 🔄 Remve `Capability Proxy`
 - [ ] 🚧 Add modpack automation:
     1. `make_pack.js`
     2. Create CF release with fixed description, Add `inline-block` styles for images publishing on CF
