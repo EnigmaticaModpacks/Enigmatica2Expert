@@ -185,7 +185,6 @@
     {"projectID":264231,"fileID":2939529,"required":true,"__meta":{"name":"Ice and Fire: Dragons"}},
     {"projectID":264353,"fileID":2508268,"required":true,"__meta":{"name":"SwingThroughGrass"}},
     {"projectID":265461,"fileID":3591441,"required":true,"__meta":{"name":"Rocky Tweaks"}},
-    {"projectID":266479,"fileID":2689266,"required":true,"__meta":{"name":"CapabilityProxy"}},
     {"projectID":266515,"fileID":2745321,"required":true,"__meta":{"name":"Industrial Foregoing"}},
     {"projectID":266550,"fileID":3270468,"required":true,"__meta":{"name":"Tool Progression"}},
     {"projectID":266784,"fileID":3146549,"required":true,"__meta":{"name":"Scannable"}},
@@ -390,7 +389,7 @@
     {"projectID":416599,"fileID":3097230,"required":true,"__meta":{"name":"Avaritia Furnace"}},
     {"projectID":417392,"fileID":3650595,"required":true,"__meta":{"name":"Quark: RotN Edition"}},
     {"projectID":417557,"fileID":3131226,"required":true,"__meta":{"name":"BilingualName"}},
-    {"projectID":419286,"fileID":3642000,"required":true,"__meta":{"name":"MixinBooter"}},
+    {"projectID":419286,"fileID":3687785,"required":true,"__meta":{"name":"MixinBooter"}},
     {"projectID":423743,"fileID":3272319,"required":true,"__meta":{"name":"NuclearCraft Reactor Builder"}},
     {"projectID":423758,"fileID":3626196,"required":true,"__meta":{"name":"Better Questing Tweaker (BQTweaker)"}},
     {"projectID":429642,"fileID":3526794,"required":true,"__meta":{"name":"Kiro's Basic Blocks"}},
@@ -404,7 +403,7 @@
     {"projectID":450270,"fileID":3233170,"required":true,"__meta":{"name":"Hand Over Your Items (Forge)"}},
     {"projectID":454215,"fileID":3549266,"required":true,"__meta":{"name":"Just Enough Drags"}},
     {"projectID":456402,"fileID":3415104,"required":true,"__meta":{"name":"IC2 Patcher"}},
-    {"projectID":460609,"fileID":3650472,"required":true,"__meta":{"name":"CensoredASM"}},
+    {"projectID":460609,"fileID":3687835,"required":true,"__meta":{"name":"CensoredASM"}},
     {"projectID":463826,"fileID":3509479,"required":true,"__meta":{"name":"Atlas Lib"}},
     {"projectID":473325,"fileID":3407210,"required":true,"__meta":{"name":"Uber Conduit Probe"}},
     {"projectID":476863,"fileID":3461109,"required":true,"__meta":{"name":"Blood Smeltery"}},
@@ -418,7 +417,7 @@
     {"projectID":545353,"fileID":3519479,"required":true,"__meta":{"name":"Tinkers OreDict Cache"}},
     {"projectID":554387,"fileID":3556105,"required":true,"__meta":{"name":"Persistency"}},
     {"projectID":554478,"fileID":3566316,"required":true,"__meta":{"name":"Modular Assembly"}},
-    {"projectID":557549,"fileID":3671148,"required":true,"__meta":{"name":"Had Enough Items"}},
-    {"projectID":570458,"fileID":3676375,"required":true,"__meta":{"name":"AE2 Unofficial Extended Life"}}
+    {"projectID":557549,"fileID":3687729,"required":true,"__meta":{"name":"Had Enough Items"}},
+    {"projectID":570458,"fileID":3687535,"required":true,"__meta":{"name":"AE2 Unofficial Extended Life"}}
   ]
 }
