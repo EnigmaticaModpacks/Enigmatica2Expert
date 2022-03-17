@@ -182,7 +182,7 @@ val packagerList = [
   [<environmentalmaterials:alabaster> * 16], [<minecraft:cobblestone> * 4, <industrialforegoing:artificial_dye> * 5],
   [<environmentalmaterials:alabaster> * 16], [<minecraft:cobblestone> * 4, <quark:root_dye:2>                   * 5],
 
-  [<nuclearcraft:part:1>], [<ore:plateLead>.firstItem, <ic2:casing:4>, <ore:ingotGraphite>.firstItem * 2, <ore:ingotTough>.firstItem * 4, <minecraft:redstone> * 4],
+  [<nuclearcraft:part:1>], [<ore:plateLead>.firstItem, <ic2:casing:4>, <ore:ingotTough>.firstItem * 4, <minecraft:redstone> * 4],
   [<nuclearcraft:part>], [<ore:plateLead>.firstItem, <ic2:casing:4>, <ore:ingotGraphite>.firstItem * 2],
 
 

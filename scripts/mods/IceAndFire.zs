@@ -591,10 +591,10 @@ craft.make(<iceandfire:dreadwood_log> * 8, ["pretty",
 });
 
 # Alternative instead using machines
-scripts.wrap.iceandfire.recipes.addFireDragonForgeRecipe(<minecraft:iron_ingot>, <darkutils:material>, <extrautils2:ingredients:17>); 
-scripts.wrap.iceandfire.recipes.addIceDragonForgeRecipe(<minecraft:iron_ingot>, <darkutils:material>, <extrautils2:ingredients:17>);
-scripts.wrap.iceandfire.recipes.addFireDragonForgeRecipe(<minecraft:iron_block>, <darkutils:wither_block>, <extrautils2:simpledecorative:2>); 
-scripts.wrap.iceandfire.recipes.addIceDragonForgeRecipe(<minecraft:iron_block>, <darkutils:wither_block>, <extrautils2:simpledecorative:2>);
+scripts.wrap.iceandfire.recipes.addFireDragonForgeRecipe(<ore:ingotPigiron>.firstItem, <darkutils:material>, <extrautils2:ingredients:17>); 
+scripts.wrap.iceandfire.recipes.addIceDragonForgeRecipe(<ore:ingotPigiron>.firstItem, <darkutils:material>, <extrautils2:ingredients:17>);
+scripts.wrap.iceandfire.recipes.addFireDragonForgeRecipe(<ore:blockPigiron>.firstItem, <darkutils:wither_block>, <extrautils2:simpledecorative:2>); 
+scripts.wrap.iceandfire.recipes.addIceDragonForgeRecipe(<ore:blockPigiron>.firstItem, <darkutils:wither_block>, <extrautils2:simpledecorative:2>);
 
 # Skyblock alt for dragon scales
 scripts.category.tooltip_utils.desc.both(<mysticalagradditions:stuff:3>, "kill.slime.by.cockatrice");

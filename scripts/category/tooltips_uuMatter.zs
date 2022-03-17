@@ -467,7 +467,6 @@ var uumatterTooltips = [
 	"avaritia:compressed_crafting_table", "0",              "90",
 	"tcomplement:high_oven_controller", "0",                "90",
 	"thermalfoundation:material", "512",                    "90",
-	"nuclearcraft:part", "0",                               "92",
 	"immersiveengineering:material", "3",                   "95",
 	"gendustry:labware", "0",                               "96",
 	"bloodmagic:component", "25",                           "100",
