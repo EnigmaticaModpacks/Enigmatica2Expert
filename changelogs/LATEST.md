@@ -1,43 +1,52 @@
-# v0.50.0
+# v0.51.0
 
 
-## 🔴 Removed Mods
-
-Icon | Summary | Reason
-----:|:--------| ------
-<img src="https://media.forgecdn.net/avatars/thumbnails/97/340/256/256/636291270964038751.png"          width="50"> | 🟫                        [**CapabilityProxy**](https://www.curseforge.com/minecraft/mc-mods/capabilityproxy)               <sup><sub>CapabilityProxy-1.12.2-2.1.3.jar</sub></sup> <br> Access block capabilities from multiple sides | This mod was unnecessary. Low-level proxies are completely replaced through ![](https://is.gd/nEHqwr "Inventory Rerouter"), and the use of Entity Proxy and other proxies was not obvious.
 
 ## 🟡 Updated Mods
 
 - **AE2 Unofficial Extended Life**
-- **Had Enough Items**
-- **MixinBooter**
-- **CensoredASM**
+- **OAuth**
 
 
-## [> Mods updates detailed.](https://github.com/Krutoy242/Enigmatica2Expert-Extended/blob/master/changelogs/MODS_v0.50.0.md)
+## [> Mods updates detailed.](https://github.com/Krutoy242/Enigmatica2Expert-Extended/blob/master/changelogs/MODS_v0.51.0.md)
 
 
 ## ✏️ **Recipes**
-  - ### 🖉 **New Recipes**: ![](https://is.gd/TsTB8l "Plague Essence") add skyblock alt
+  - ### ✏ **Misc Changes**
+    - Remove ![](https://is.gd/9Vzhf0 "Silicon") from ![](https://is.gd/szoVea "Magic Bean")
+    - ![](https://is.gd/gqwQxo "Basic Plating") remove UU replication
+    - ![](https://is.gd/Y7Prd8 "Advanced Plating") fix craft in ![](https://is.gd/DnxfYT "Packager") fixes #32
+    - ![](https://is.gd/1ykON7 "Evil Infused Iron Ingot") fix craft in ![](https://is.gd/I2dCLV "Dragonforge Fire Core")
+    - Remove excess ![](https://is.gd/qokKtZ "Wool") dyeing recipes (already added by Quark)
 
-  - ### ✏ **Misc Changes**: ![](https://is.gd/fZJj6E "Aluminum Ore") fix grinding in ![](https://is.gd/1ZpXCt "Quartz Grindstone")
 
 
+## 🔵 **Mods updates**
+  - ### 📑 **Tips**: Tooltip for ![](https://is.gd/RUa5vi "Vis Salt")
 
-## 🔵 **Mods**
-  - HEI update fixes #29
-  - ### 🎲 **Random Things**: ![](https://is.gd/ZGrpzg "Peace Candle") add non-working tooltip
+  - ### 🦯 **Thaumcraft**: restore to default almost all block's mining levels
+      > ![](https://is.gd/6wtCfL "Arcane Alembic") and blocks other than Ore or Metal mining level was unreasonable high.
 
-  - ### 🛢️ **Immersive Engineering**: Revert wires buff
-      > x4 connector transfer buff from last patch not actually working, so i need to revert this change.
+  - ### 🙋‍♀️ **Quark**: Restore some default configs
+      > - Enabled a lot of Walls, stairs and other blocks
+      > - Remove Stained Tiles Terracotta
+      > - Enable Shulker box tooltip https://i.imgur.com/IlxBOJj.png
+      > - Enable Pickarang
+      > - Enable Automatic tool restock
+      > - Disable + button for shulker boxes (right-click to add, not working anyway)
+      > - Enable trash button in inventories
+      > - Enable ![](https://is.gd/7zyYKH "Stone Pickaxe") and other stone tools from Flint and any stone
+      > - Enable Glass Shards
+      > - Enable Guardians spawn in oceans
+      > - Foxhound x2 increase spawn rate
+      > - Increase Ashen, Dweller and Crabs spawn rate
+      > - Other minor changes
 
 
 
 ## 🔄 **Misc Changes**
-  - ### 📖 **Quest Book**: Quests updates
-      > - ![](https://is.gd/dzTuwm "Heart Container") quest replaced with ![](https://is.gd/MY4WZ5 "Fire Dragonsteel Ingot")
-      > - Add ![](https://is.gd/o4cPFf "Plague Doctorate") quest
+  - Tweak Entity Culling to better display Ice and Fire Dragons
+  - Fixed BQ splash image
 
 
 
