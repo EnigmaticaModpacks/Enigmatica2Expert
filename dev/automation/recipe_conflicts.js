@@ -57,6 +57,7 @@ const fineConflicts = [
   (r1, r2) => r2.name === 'quark:trapdoor',
   (r1, r2) => r1.item === '<minecraft:slime:0> * 1',
   (r1, r2) => r2.name === 'enderio:compatibility_glass_pane',
+  (r1, r2) => r1.name === 'quark:stone_marble_bricks_wall',
   (r1, r2) => r1.name.startsWith('storagedrawers:trim_') && r2.name.startsWith('crafttweaker:trim'),
   (r1, r2) => r1.name.startsWith('storagedrawers:basicdrawers_') && r2.name.match(/^crafttweaker:.*drawer.*/),
 ]

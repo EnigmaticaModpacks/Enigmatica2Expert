@@ -10,17 +10,6 @@
 [main/ERROR] [mixin]: Classloader restrictions [PACKAGE_TRANSFORMER_EXCLUSION] encountered loading mixins.entityculling.json:MixinTileEntity, name: meldexun.entityculling.mixin.MixinTileEntity
 [main/ERROR] [mixin]: Classloader restrictions [PACKAGE_TRANSFORMER_EXCLUSION] encountered loading mixins.entityculling.json:MixinTileEntityRendererDispatcher, name: meldexun.entityculling.mixin.MixinTileEntityRendererDispatcher
 [Client thread/WARN] [mixin]: Mixin apply failed mixins.thaumtweaks.json:blocks.SiphonMixin -> thaumcraft.common.tiles.crafting.TileVoidSiphon: org.spongepowered.asm.mixin.transformer.throwables.InvalidMixinException @Shadow method getStackInSlot in mixins.thaumtweaks.json:blocks.SiphonMixin was not located in the target class thaumcraft.common.tiles.crafting.TileVoidSiphon. Using refmap mixins.thaumtweaks.refmap.json
-[AE2 CSV Export/WARN] [AE2:C]: Could not export subtypes of: tile.architecturecraft.shape
-[ThaumicSpeedup/AspectThread/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.dirt@32767 in void beacon registration; this can result in invalid result blocks
-[ThaumicSpeedup/AspectThread/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.hellrock@32767 in void beacon registration; this can result in invalid result blocks
-[ThaumicSpeedup/AspectThread/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.obsidian@32767 in void beacon registration; this can result in invalid result blocks
-[ThaumicSpeedup/AspectThread/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.vine@32767 in void beacon registration; this can result in invalid result blocks
-[ThaumicSpeedup/AspectThread/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.tconstruct.slime_vine_blue@32767 in void beacon registration; this can result in invalid result blocks
-[ThaumicSpeedup/AspectThread/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.tconstruct.slime_vine_blue_mid@32767 in void beacon registration; this can result in invalid result blocks
-[ThaumicSpeedup/AspectThread/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.tconstruct.slime_vine_blue_end@32767 in void beacon registration; this can result in invalid result blocks
-[ThaumicSpeedup/AspectThread/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.tconstruct.slime_vine_purple@32767 in void beacon registration; this can result in invalid result blocks
-[ThaumicSpeedup/AspectThread/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.tconstruct.slime_vine_purple_mid@32767 in void beacon registration; this can result in invalid result blocks
-[ThaumicSpeedup/AspectThread/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.tconstruct.slime_vine_purple_end@32767 in void beacon registration; this can result in invalid result blocks
-[ThaumicSpeedup/AspectThread/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.cactus@32767 in void beacon registration; this can result in invalid result blocks
+[Client thread/WARN] [jei]: Failed to load bookmarked ItemStack from json string, the item no longer exists:
 [Client thread/WARN] [particleculling]: Could not find particle class com.TominoCZ.FBP.particle.FBPParticleBlock. If the mod is not installed, this can be ignored.
 [Client thread/WARN] [particleculling]: Could not find particle class xzeroair.trinkets.client.particles.ParticleGreed. If the mod is not installed, this can be ignored.

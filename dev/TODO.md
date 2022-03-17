@@ -81,15 +81,19 @@ Liquids that should have more uses:
 
 ## TODO
 
-- [x] ✏️ Peaceful Candle disable completely or point it
-- [x] ✏️ Plague Doctorate cheaper
 - [ ] ✏️ Feral Ghoul add drop
+- [ ] ✏️ Add 3d print alt recipe
+- [ ] ✏️ Fix #30
 - [ ] ✏️ Fix Green fertilizer output additional crop even if not grown (carrots)
+- [ ] ✏️ Transfer liquid interaction to witch water
+- [ ] ✏️ Add Glass Shards usage
 - [ ] 📖 Add CC/OC gate, Add EEPROM with `trader`, add Patchouli and Quest Book Entry
-- [x] 🔄 Say that "Industrial Wires can transfer 4x more RF power than EU power"
+- [ ] 📖 Add Pickarang
+- [ ] 🔄 Fix quark build under feature
 - [ ] 🔄 Fix boat glitch when leaving in first person
 - [ ] 🔄 Add server restart voting
-- [ ] 🔄 Remve `Capability Proxy`
+- [ ] 🔄 Check render distance on server
+- [ ] 🔄 Remake Splash Screen
 - [ ] 🚧 Add modpack automation:
     1. `make_pack.js`
     2. Create CF release with fixed description, Add `inline-block` styles for images publishing on CF
@@ -107,6 +111,7 @@ Liquids that should have more uses:
 
 ## Long-Term
 
+- [ ] 🔄 Add `Cow Hacker` feature. Buff cow with 2-3 special poions based on their UUID to turn it into drop generator.
 - [ ] 🔄 Tweak Engineer's Decor
 - [ ] ✏️ Fix Cobweb and String recipes in Crucible. https://github.com/LoliKingdom/Thaumic-Speedup/issues/3
 - [ ] ✏️ Dragon Ice better craft result
