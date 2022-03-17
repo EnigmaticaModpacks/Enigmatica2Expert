@@ -403,7 +403,7 @@
   "gamblingstyle": "1.1.2",
   "wawla": "2.6.275",
   "journeymap": "1.12.2-5.7.1",
-  "appliedenergistics2": "rv6-stable-7-extended_life-v51d",
+  "appliedenergistics2": "rv6-stable-7-extended_life-v51e",
   "nuclearcraft": "2.18zz",
   "custombackgrounds": "1.0",
   "nimble": "0.0.2",
