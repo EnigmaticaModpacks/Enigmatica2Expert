@@ -322,7 +322,7 @@
     {"projectID":320254,"fileID":2703755,"required":true,"__meta":{"name":"PlaneFix"}},
     {"projectID":321092,"fileID":3225614,"required":true,"__meta":{"name":"Gambling Style"}},
     {"projectID":321117,"fileID":3150850,"required":true,"__meta":{"name":"Traveler's Backpack"}},
-    {"projectID":321792,"fileID":3198382,"required":true,"__meta":{"name":"Aqua Acrobatics"}},
+    {"projectID":321792,"fileID":3198382,"required":true,"__meta":{"name":"Aqua Acrobatics [Forge]"}},
     {"projectID":322344,"fileID":3509087,"required":true,"__meta":{"name":"LibNine"}},
     {"projectID":322347,"fileID":3254160,"required":true,"__meta":{"name":"Lazy AE2"}},
     {"projectID":322730,"fileID":2858289,"required":true,"__meta":{"name":"Vaultopic - Early Inventory Management"}},
@@ -410,7 +410,7 @@
     {"projectID":487858,"fileID":3361954,"required":true,"__meta":{"name":"Integrated Proxy"}},
     {"projectID":488116,"fileID":3330925,"required":true,"__meta":{"name":"ContentTweaker Registry Orderer"}},
     {"projectID":493962,"fileID":3577829,"required":true,"__meta":{"name":"AE Additions - ExtraCells2 Fork"}},
-    {"projectID":513857,"fileID":3539591,"required":true,"__meta":{"name":"OAuth"}},
+    {"projectID":513857,"fileID":3694373,"required":true,"__meta":{"name":"OAuth"}},
     {"projectID":515565,"fileID":3662261,"required":true,"__meta":{"name":"Not Enough Energistics"}},
     {"projectID":525389,"fileID":3672149,"required":true,"__meta":{"name":"Modular Controller"}},
     {"projectID":538092,"fileID":3498867,"required":true,"__meta":{"name":"Better P2P"}},
@@ -418,6 +418,6 @@
     {"projectID":554387,"fileID":3556105,"required":true,"__meta":{"name":"Persistency"}},
     {"projectID":554478,"fileID":3566316,"required":true,"__meta":{"name":"Modular Assembly"}},
     {"projectID":557549,"fileID":3687729,"required":true,"__meta":{"name":"Had Enough Items"}},
-    {"projectID":570458,"fileID":3687535,"required":true,"__meta":{"name":"AE2 Unofficial Extended Life"}}
+    {"projectID":570458,"fileID":3695079,"required":true,"__meta":{"name":"AE2 Unofficial Extended Life"}}
   ]
 }
