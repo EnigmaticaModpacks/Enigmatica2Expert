@@ -1,12 +1,11 @@
 /**
  * @file Research debug.log file to find unknown errors
- * 
+ *
  * @author Krutoy242
  * @link https://github.com/Krutoy242
  */
 
 //@ts-check
-
 
 /*=============================================
 =                Variables                    =
@@ -15,16 +14,17 @@ import { writeFileSync } from 'fs'
 import { defaultHelper, loadText } from '../lib/utils.js'
 
 import yargs from 'yargs'
-const {argv} = yargs(process.argv.slice(2))
-  .option("i", {
-    alias: "input",
-    type: "string",
-    describe: "Debug.log path",
-    default: 'logs/debug.log',
-  })
+const { argv } = yargs(process.argv.slice(2)).option('i', {
+  alias: 'input',
+  type: 'string',
+  describe: 'Debug.log path',
+  default: 'logs/debug.log',
+})
 
-import { URL, fileURLToPath  } from 'url' // @ts-ignore
-function relative(relPath='./') { return fileURLToPath(new URL(relPath, import.meta.url)) }
+import { URL, fileURLToPath } from 'url' // @ts-ignore
+function relative(relPath = './') {
+  return fileURLToPath(new URL(relPath, import.meta.url))
+}
 
 /*=============================================
 =               Ignoring errors               =
@@ -124,7 +124,7 @@ const ignore = [
   /\[excompressum\]: Duplicate entry for .* in WoodenCrucible, overwriting.../,
 
   // Some other mod changes pistons, so it cant be changed
-  // cfg says: Fixes MC-54026, which causes blocks attached to slime blocks in some circumstances to create ghost blocks if a piston pushes the slime block. 
+  // cfg says: Fixes MC-54026, which causes blocks attached to slime blocks in some circumstances to create ghost blocks if a piston pushes the slime block.
   /\[randompatches\]: Failed to transform class: net.minecraft.tileentity.TileEntityPiston/,
 
   /\[immersiveengineering\]: Recipe has invalid inputs and will be ignored/,
@@ -266,28 +266,28 @@ const ignore = [
   /\[Finalizer\/WARN\] \[LoliASM\]: Clearing LoliStringPool 1/, // Known https://github.com/LoliKingdom/LoliASM/issues/51
   /\[main\/WARN\] \[ModDirector\/ForgeLateLoader\[Launchwrapper\]\]: Failed to find deobf tweaker/, // Reported: https://github.com/Janrupf/mod-director/issues/22
   /\[Client thread\/WARN\] \[FML\]: \[Ping!\] Highlight color is invalid\. Please fix your config\./, // Reported https://github.com/elifoster/Ping/issues/30
+
+  /\[main\/WARN\] \[Bansoukou\]: .* was found in the mods folder\. Copying to modify the copied cache\./,
+  /\[main\/WARN\] \[Bansoukou\]: Marking .* to fool Forge's mod discovering mechanism./,
+  /\[main\/WARN\] \[Bansoukou\]: Patching /,
+  /\[ThaumicSpeedup\/AspectThread\/WARN\] \[thaumicwonders\]: Wildcard meta detected for .+ in void beacon registration; this can result in invalid result blocks/,
 ]
-
-
 
 /*=============================================
 =               Ignoring known                =
 =============================================*/
 // Known errors that should be fixed but not listed
-const known = [
-
-]
+const known = []
 
 /*=============================================
 =           Working                           =
 =============================================*/
 
-export async function init(h=defaultHelper) {
-
+export async function init(h = defaultHelper) {
   await h.begin('Loading & parsing debug.log')
   let log = loadText(argv['input'] ?? 'logs/debug.log')
   const serverThreadStart = log.indexOf('[Server thread/')
-  if(serverThreadStart!==-1) log = log.substring(0, serverThreadStart)
+  if (serverThreadStart !== -1) log = log.substring(0, serverThreadStart)
   var newLog = ''
 
   var stat = {
@@ -297,7 +297,7 @@ export async function init(h=defaultHelper) {
     viewed: 0,
   }
 
-  const allErrors = [...log.matchAll(/^.*\W(error|WARN)\W.*$/gmi)]
+  const allErrors = [...log.matchAll(/^.*\W(error|WARN)\W.*$/gim)]
   await h.begin(`Found ${allErrors.length} errors`)
 
   for (const match of allErrors) {
@@ -309,7 +309,7 @@ export async function init(h=defaultHelper) {
         break
       }
     }
-    
+
     if (!isIgnore) {
       for (let i = 0; i < known.length; i++) {
         if (match[0].match(known[i])) {
@@ -321,7 +321,7 @@ export async function init(h=defaultHelper) {
     }
 
     if (!isIgnore) {
-      var line = match[0].replace(/^\[[\d:]+\] /,'')  // Remove timestamp
+      var line = match[0].replace(/^\[[\d:]+\] /, '') // Remove timestamp
       newLog += line + '\n'
 
       if (stat.viewed < 100) {
@@ -335,8 +335,8 @@ export async function init(h=defaultHelper) {
 
   h.result(
     `Errors Total: ${stat.total}, Untreaten: ${stat.unknown}` +
-    (stat.resolved ? `, Resolved: ${stat.resolved}/${known.length}` : '')
+      (stat.resolved ? `, Resolved: ${stat.resolved}/${known.length}` : '')
   )
 }
 // @ts-ignore
-if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()
+if (import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()

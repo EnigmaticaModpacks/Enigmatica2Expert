@@ -10,6 +10,6 @@
 [main/ERROR] [mixin]: Classloader restrictions [PACKAGE_TRANSFORMER_EXCLUSION] encountered loading mixins.entityculling.json:MixinTileEntity, name: meldexun.entityculling.mixin.MixinTileEntity
 [main/ERROR] [mixin]: Classloader restrictions [PACKAGE_TRANSFORMER_EXCLUSION] encountered loading mixins.entityculling.json:MixinTileEntityRendererDispatcher, name: meldexun.entityculling.mixin.MixinTileEntityRendererDispatcher
 [Client thread/WARN] [mixin]: Mixin apply failed mixins.thaumtweaks.json:blocks.SiphonMixin -> thaumcraft.common.tiles.crafting.TileVoidSiphon: org.spongepowered.asm.mixin.transformer.throwables.InvalidMixinException @Shadow method getStackInSlot in mixins.thaumtweaks.json:blocks.SiphonMixin was not located in the target class thaumcraft.common.tiles.crafting.TileVoidSiphon. Using refmap mixins.thaumtweaks.refmap.json
-[Client thread/WARN] [jei]: Failed to load bookmarked ItemStack from json string, the item no longer exists:
+[AE2 CSV Export/WARN] [AE2:C]: Could not export subtypes of: tile.architecturecraft.shape
 [Client thread/WARN] [particleculling]: Could not find particle class com.TominoCZ.FBP.particle.FBPParticleBlock. If the mod is not installed, this can be ignored.
 [Client thread/WARN] [particleculling]: Could not find particle class xzeroair.trinkets.client.particles.ParticleGreed. If the mod is not installed, this can be ignored.

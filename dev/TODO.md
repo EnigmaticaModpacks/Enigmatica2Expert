@@ -81,16 +81,14 @@ Liquids that should have more uses:
 
 ## TODO
 
-- [ ] ✏️ Feral Ghoul add drop
-- [ ] ✏️ Add 3d print alt recipe
-- [ ] ✏️ Fix #30
-- [ ] ✏️ Fix Green fertilizer output additional crop even if not grown (carrots)
-- [ ] ✏️ Transfer liquid interaction to witch water
-- [ ] ✏️ Add Glass Shards usage
-- [ ] 📖 Add CC/OC gate, Add EEPROM with `trader`, add Patchouli and Quest Book Entry
-- [ ] 📖 Add Pickarang
-- [ ] 🔄 Fix quark build under feature
-- [ ] 🔄 Fix boat glitch when leaving in first person
+- [ ] ✏️ Add Creative Essentia Jar recipe
+- [ ] ✏️ Add Mob heads recipes for peaceful (probably Botania's runic altair)
+- [ ] ✏️ Add DML data models in Space or Ratlantis
+- [ ] ✏️ Combining broken spawners with data models upgrades them. Create spawners on Thaumcraft Infusion with mob essences
+- [ ] ✏️ Transfer liquid interaction to Witch Water
+- [ ] ✏️ Clean up Tungsten
+- [ ] 🔄 Add Quark's `Beacon Replacements`
+- [ ] 🔄 Add Quark's `A whitelist of items that are allowed to reacharound`, fix reacharound
 - [ ] 🔄 Add server restart voting
 - [ ] 🔄 Check render distance on server
 - [ ] 🔄 Remake Splash Screen
@@ -111,6 +109,10 @@ Liquids that should have more uses:
 
 ## Long-Term
 
+- [ ] 🔄 Fix boat glitch when leaving in first person
+- [ ] 📖 Add CC/OC gate, Add EEPROM with `trader`, add Patchouli and Quest Book Entry
+- [ ] ✏️ Fix Green fertilizer output additional crop even if not grown (carrots)
+- [ ] ✏️ Peaceful: Angry chicken
 - [ ] 🔄 Add `Cow Hacker` feature. Buff cow with 2-3 special poions based on their UUID to turn it into drop generator.
 - [ ] 🔄 Tweak Engineer's Decor
 - [ ] ✏️ Fix Cobweb and String recipes in Crucible. https://github.com/LoliKingdom/Thaumic-Speedup/issues/3
@@ -127,7 +129,6 @@ Liquids that should have more uses:
 - [ ] ✏️ Remove wrong nuggets from Infernal Furnace
 - [ ] ✏️ Add Mob Trophies recipes (Right-Click with morb over Basalt Slab)
 - [ ] ✏️ Add ![](https://is.gd/enLvDu "Uncrafting Table")[Uncrafting Grinder]![](https://is.gd/Qdrz8o "Creative Bin") as Endgame item, right before creative upgrade
-- [ ] ✏️ ![](https://is.gd/Kda0A6 "Tungsten Ingot") add to JAOPCA. How to add new material to JAOPCA?
 - [ ] ✏️ ![](https://is.gd/EEUU7D "Bee Nest") make not in basin but in world. How to transform blocks in world?
 - [ ] ✏️ Rethink small plate presser Ore => ?? recipes
 - [ ] ✏️ Add non-magic way to finish modpack
@@ -147,7 +148,6 @@ Liquids that should have more uses:
 - [ ] 🌍 Add water animals at dim 118
 - [ ] 🌍 Advanced Rocketry 121 KELT-6a have no leaves on trees
 - [ ] 🌿 Patchouli: Change **texture** of book
-- [ ] 🏪 Add separated tab for complicated crafting table crafts
 - [ ] 🏪 ![](https://git.io/J3p8B "Infinity Furnace") add speed upgrades
 - [ ] 🏪 **RequiousFracto** Causing items to trashing with **Energy Slot**. [Reported](https://github.com/DaedalusGame/RequiousFrakto/issues/21)
 - [ ] 🏪 Add Matter Replicator that **increase cost** of replication each operation
@@ -157,14 +157,12 @@ Liquids that should have more uses:
 - [ ] 📖 Change sound of quest complete to another
 - [ ] 🔄 **Perfect Fuel** Fix texture. Now it uses default one.
 - [ ] 🔄 Fix Custom Animals drops non-cooked meat
-- [ ] 🔄 Spectre fluid has no texture (invisible in world)
 - [ ] 🔄 UU requirement for a lot of things seems to be lower than what the tooltip says
 - [ ] 🔄 Remap all **#VoidMiners** to produce not all types of ore each
 - [ ] 🔄 Move to **NUclearCraft:Overhauled**
 - [ ] 🔨 ![](https://git.io/JnzzI "Glitch Infused Ingot") add material. Ability: drom matter from mobs
 - [ ] 🔨 Add armor trait that speed up gain for `Time In Bottle`
 - [ ] 🔨 Add teleportation trait. 1. Set point, 2. Break special glass-like block to teleport
-- [ ] 🔨 Integrate Plustic laser: https://github.com/Landmaster/PlusTiC/wiki/CraftTweaker-integration
 - [ ] 🔨 Ironwood Add material. Drop Armor from mobs on hit
 - [ ] 🧮 Craft.zs: In recipe name `A from B*2` remove amount if its control amount
 - [ ] 🧮 Craft.zs: Add Forestry extensions
