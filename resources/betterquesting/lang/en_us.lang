@@ -2194,3 +2194,7 @@ bq.quest1071.name=Heavy Material
 bq.quest1071.desc=Heavy - material for TCon. It have custom armor trait - §6Grinding§r.%n%n§6Jump on ore§r to crush it into dust.%n§6Must sneak§r to work.%n§6More armor parts§r output more dust. Max is 12.%n§6Height§r of fall increase chance.%n§6Durability§r of armor consumed depends on hardness.%n§6Wooden Tool Rod§r in main hand would show trait info.
 bq.quest1072.name=Plague Doctorate
 bq.quest1072.desc=Turn any villager into plague doctor.%n%n§3Tip:§r%nPlague Doctors can heal Zombie Villagers.%nStrike it with lightning to turn into Black Death.
+bq.quest1073.name=Tome of Sharing
+bq.quest1073.desc=Could be used to share your research between players.%n%nHave alternative recipe with §6EVERY knowledge§r.
+bq.quest1074.name=Gate: Computers
+bq.quest1074.desc=OpenComputers and Computercraft mods give acces for some cheapest quarry Turtles and Robots as users.
