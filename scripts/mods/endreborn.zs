@@ -156,17 +156,6 @@ craft.remake(<appliedenergistics2:material:25> * 2, ["pretty",
   "-": <ore:ingotGold>, # Gold Ingot
 });
 
-# [ME Interface] from [Annihilation Core][+3]
-craft.remake(<appliedenergistics2:interface>, ["pretty",
-  "▬ ■ ▬",
-  "A   F",
-  "▬ ■ ▬"], {
-  "A": <appliedenergistics2:material:44>, # Annihilation Core
-  "F": <appliedenergistics2:material:43>, # Formation Core
-  "■": <ore:blockGlass>, # Glass
-  "▬": <ore:ingotTungsten>, # Tungsten Ingot
-});
-
 # [ME Fluid Interface] from [Annihilation Core][+3]
 craft.remake(<appliedenergistics2:fluid_interface>, ["pretty",
   "▬ d ▬",

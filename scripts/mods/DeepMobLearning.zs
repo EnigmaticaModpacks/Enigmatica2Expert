@@ -84,3 +84,14 @@ craft.shapeless(<minecraft:dragon_breath>, "EDG", {
   "D": <mysticalagradditions:stuff:3>, # Dragon Scale
   "G": <minecraft:glass_bottle>,       # Glass Bottle
 });
+
+# [Unstable Glitch Fragment] from [Gelid Enderium Dust][+3]
+craft.remake(<deepmoblearning:glitch_fragment>, ["pretty",
+  "◊ P ◊",
+  "e ▲ e",
+  "◊ P ◊"], {
+  "◊": <ore:gemXorcite>,           # Xorcite Shard
+  "P": <endreborn:item_end_shard>, # Purpur Shards
+  "e": <ore:essence>,              # Essence
+  "▲": <ore:dustGelidEnderium>,    # Gelid Enderium Dust
+});

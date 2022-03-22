@@ -641,3 +641,13 @@ for input, count in bioFuelList {
 
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
+
+# [Superheating Element] from [Steel Casing][+2]
+craft.remake(<mekanism:basicblock2:5>, ["pretty",
+  "c □ c",
+  "□ ⌂ □",
+  "c □ c"], {
+  "c": <ore:concrete>,          # Concrete
+  "□": <ore:plateCopper>,       # Copper Plate
+  "⌂": <mekanism:basicblock:8>, # Steel Casing
+});

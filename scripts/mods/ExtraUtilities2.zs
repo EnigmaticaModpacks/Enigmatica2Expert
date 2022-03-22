@@ -471,3 +471,9 @@ craft.make(<extrautils2:miner>, ["pretty",
   "░": <ore:cobblestone>,             # Cobblestone
   "♥": <ore:gearRedstone>,            # Redstone Gear
 });
+
+# [Sandy Glass] from [Sand][+1]
+craft.reshapeless(<extrautils2:decorativesolid:4> * 6, "sGGG", {
+  "s": <ore:sand>, # Sand
+  "G": <quark:glass_shards:*>, # Glass Shard
+});

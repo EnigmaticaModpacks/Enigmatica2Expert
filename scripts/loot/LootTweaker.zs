@@ -122,11 +122,3 @@ LootTweaker.getTable("minecraft:entities/vex").getPool("main")
 
 # Chronologist
 <entity:endreborn:chronologist>.addPlayerOnlyDrop(<deepmoblearning:living_matter_extraterrestrial>, 1, 2);
-
-# Add feral ghoul drop
-LootTweaker.getTable("nuclearcraft:entities/feral_ghoul")
-.addPool("main", 1, 5, 1, 5)
-.addItemEntryHelper(<ic2:nuclear:5>, 1, 0, [
-	Functions.lootingEnchantBonus(0, 1, 0),
-	Functions.setCount(1, 8)
-], [Conditions.killedByPlayer()]);

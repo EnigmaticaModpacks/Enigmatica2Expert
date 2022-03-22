@@ -466,6 +466,7 @@ add(x, {[<minecraft:paper>, <minecraft:dye:*>] : [<computercraft:printout>]});
 // -----------------------------------------------------------------------
 x = <assembly:witch_water>;
 x.addJEICatalyst(Bucket('witchwater'));
+x.addJEICatalyst(<exnihilocreatio:witchwater>);
 x.setJEIDurationSlot(1,0,"duration", getVisGauge(1,8));
 addInsOuts(x, [[0,0]], [[2,0]]);
 add(x, {[Soul('minecraft:skeleton')] : [Soul('minecraft:wither_skeleton')]});

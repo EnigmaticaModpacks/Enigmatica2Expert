@@ -110,6 +110,26 @@ function clearDrawer(inputs as IItemStack[]) as void  {
 // clearDrawer(<ore:drawerBasic>.items); # Somehow it still give oredict
 clearDrawer([<storagedrawers:compdrawers>]);
 
+# [Basic Tank] from [Block of Black Quartz][+2]
+craft.remake(<fluiddrawers:tank>, ["pretty",
+  "Q ⌃ Q",
+  "F   F",
+  "Q ⌃ Q"], {
+  "Q": <immersiveengineering:stone_decoration:9>, # Quickdry Concrete
+  "⌃": <ore:blockQuartzBlack>,                    # Block of Black Quartz
+  "F": <flopper:flopper>,                         # Flopper
+});
+craft.make(<fluiddrawers:tank>, ["pretty",
+  "Q ⌃ Q",
+  "F   F",
+  "Q ⌃ Q"], {
+  "Q": <forestry:propolis:*>,
+  "⌃": <ore:blockQuartzBlack>,                    # Block of Black Quartz
+  "F": <flopper:flopper>,                         # Flopper
+});
+
+#---------------------------------------------------------------------------
+#---------------------------------------------------------------------------
 static empty as string = '§8Empty§r';
 
 # Drawer sealed content
@@ -160,21 +180,4 @@ val fluidDrawerTooltip as ITooltipFunction = function(item) {
 };
 <fluiddrawers:tank_custom>.addAdvancedTooltip(fluidDrawerTooltip);
 <fluiddrawers:tank>.addAdvancedTooltip(fluidDrawerTooltip);
-
-# [Basic Tank] from [Block of Black Quartz][+2]
-craft.remake(<fluiddrawers:tank>, ["pretty",
-  "Q ⌃ Q",
-  "F   F",
-  "Q ⌃ Q"], {
-  "Q": <immersiveengineering:stone_decoration:9>, # Quickdry Concrete
-  "⌃": <ore:blockQuartzBlack>,                    # Block of Black Quartz
-  "F": <flopper:flopper>,                         # Flopper
-});
-craft.make(<fluiddrawers:tank>, ["pretty",
-  "Q ⌃ Q",
-  "F   F",
-  "Q ⌃ Q"], {
-  "Q": <forestry:propolis:*>,
-  "⌃": <ore:blockQuartzBlack>,                    # Block of Black Quartz
-  "F": <flopper:flopper>,                         # Flopper
-});
+#---------------------------------------------------------------------------

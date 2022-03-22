@@ -348,9 +348,8 @@ for item in loadedMods["tconstruct"].items {
 # [Pattern_Chest] from [Oak_Chest][+4]
 recipes.removeByRecipeName("tconstruct:tools/table/chest/pattern");
 craft.make(<tconstruct:tooltables:4>.withTag({
-		inventory: {Items: dataList_allPatterns},
-		enchantmentColor:10057489,CustomPotionColor:10057489 // Colored shimmer
-	} + <enchantment:enderio:shimmer>.makeEnchantment(1).makeTag()), ["pretty",
+		inventory: {Items: dataList_allPatterns}
+	} as IData + utils.shinigTag(10057489)), ["pretty",
   "# a #",
   "p c p",
   "# M #"], {

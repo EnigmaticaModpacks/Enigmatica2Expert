@@ -415,6 +415,18 @@ craft.remake(<appliedenergistics2:crafting_unit>, ["pretty",
   "M": <appliedenergistics2:part:76>,     # ME Dense Smart Cable - Fluix
 });
 
+# [ME Interface] from [Annihilation Core][+3]
+recipes.removeByRecipeName("appliedenergistics2:network/blocks/interfaces_interface");
+craft.make(<appliedenergistics2:interface>, ["pretty",
+  "▬ ■ ▬",
+  "A   F",
+  "▬ ■ ▬"], {
+  "A": <appliedenergistics2:material:44>, # Annihilation Core
+  "F": <appliedenergistics2:material:43>, # Formation Core
+  "■": <ore:blockGlass>, # Glass
+  "▬": <ore:ingotTungsten>, # Tungsten Ingot
+});
+
 # [ME Storage Bus] from [Resonant Requester][+2]
 recipes.remove(<appliedenergistics2:part:220>);
 recipes.addShaped("ME Storage Bus", <appliedenergistics2:part:220>, [

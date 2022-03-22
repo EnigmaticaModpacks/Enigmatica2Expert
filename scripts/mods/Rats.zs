@@ -252,6 +252,9 @@ recipes.addShaped("Ratlanean Flame 2", <rats:ratlantean_flame>, [
 	[null, <ore:ingotEndorium>, null]
 ]);
 
+# Peaceful alt
+scripts.wrap.thermalexpansion.Infuser.addRecipe(<rats:charged_creeper_chunk>, <harvestcraft:creeperwingsitem>, 100000);
+
 # Psionic rat brain
 scripts.wrap.thaumcraft.Infusion.registerRecipe("psionic_rat_brain", "INFUSION", <rats:psionic_rat_brain>, 40, 
 	[<aspect:cognitio> * 150, <aspect:alienis> * 40, <aspect:rattus> * 80], <thaumcraft:brain>, 

@@ -1,0 +1,130 @@
+{
+  "name": "compactmachines3:companion_cube",
+
+  "target-block": "opencomputers:print",
+  "target-count": 1,
+  "target-meta": 0,
+  "target-nbt": "{label:\"Companion Cube\",isButtonMode:0b,redstoneLevel:0,pressurePlate:0b,stateOff:[{bounds:[B;2B,2B,2B,14B,14B,14B],texture:\"wool_colored_gray\"},{bounds:[B;1B,1B,6B,3B,3B,10B],texture:\"wool_colored_silver\"},{bounds:[B;13B,6B,13B,15B,10B,15B],texture:\"wool_colored_silver\"},{bounds:[B;6B,13B,1B,10B,15B,3B],texture:\"wool_colored_silver\"},{bounds:[B;6B,1B,1B,10B,3B,3B],texture:\"wool_colored_silver\"},{bounds:[B;0B,0B,11B,5B,5B,16B],texture:\"wool_colored_silver\"},{bounds:[B;1B,6B,13B,3B,10B,15B],texture:\"wool_colored_silver\"},{bounds:[B;13B,13B,6B,15B,15B,10B],texture:\"wool_colored_silver\"},{bounds:[B;11B,0B,11B,16B,5B,16B],texture:\"wool_colored_silver\"},{bounds:[B;11B,11B,0B,16B,16B,5B],texture:\"wool_colored_silver\"},{bounds:[B;6B,6B,1B,10B,10B,15B],texture:\"wool_colored_magenta\"},{bounds:[B;1B,13B,6B,3B,15B,10B],texture:\"wool_colored_silver\"},{bounds:[B;13B,1B,6B,15B,3B,10B],texture:\"wool_colored_silver\"},{bounds:[B;0B,0B,0B,5B,5B,5B],texture:\"wool_colored_silver\"},{bounds:[B;0B,11B,11B,5B,16B,16B],texture:\"wool_colored_silver\"},{bounds:[B;11B,0B,0B,16B,5B,5B],texture:\"wool_colored_silver\"},{bounds:[B;6B,1B,13B,10B,3B,15B],texture:\"wool_colored_silver\"},{bounds:[B;0B,11B,0B,5B,16B,5B],texture:\"wool_colored_silver\"},{bounds:[B;6B,1B,6B,10B,15B,10B],texture:\"wool_colored_magenta\"},{bounds:[B;6B,13B,13B,10B,15B,15B],texture:\"wool_colored_silver\"},{bounds:[B;1B,6B,1B,3B,10B,3B],texture:\"wool_colored_silver\"},{bounds:[B;13B,6B,1B,15B,10B,3B],texture:\"wool_colored_silver\"},{bounds:[B;11B,11B,11B,16B,16B,16B],texture:\"wool_colored_silver\"},{bounds:[B;1B,6B,6B,15B,10B,10B],texture:\"wool_colored_magenta\"}],stateOn:[],isBeaconBase:0b,lightLevel:0b,noclipOff:0b,noclipOn:0b}",
+
+  "duration": 100,
+  "symmetrical": true,
+
+  "catalyst": "opencomputers:material",
+  "catalyst-meta": 28,
+
+  "input-types": {
+    "a": {
+      "id": "mekanism:basicblock",
+      "meta": 0
+    },
+    "b": {
+      "id": "plustic:alumiteblock",
+      "meta": 0
+    },
+    "c": {
+      "id": "actuallyadditions:block_misc",
+      "meta": 2
+    }
+  },
+  "shape": [
+    [
+      ["a","a","_","a","a","a","_","a","a"],
+      ["a","a","_","a","a","a","_","a","a"],
+      ["_","_","_","_","_","_","_","_","_"],
+      ["a","a","_","b","b","b","_","a","a"],
+      ["a","a","_","b","b","b","_","a","a"],
+      ["a","a","_","b","b","b","_","a","a"],
+      ["_","_","_","_","_","_","_","_","_"],
+      ["a","a","_","a","a","a","_","a","a"],
+      ["a","a","_","a","a","a","_","a","a"]
+    ],
+    [
+      ["a","a","_","a","a","a","_","a","a"],
+      ["a","a","c","a","a","a","c","a","a"],
+      ["_","c","c","c","c","c","c","c","_"],
+      ["a","a","c","c","c","c","c","a","a"],
+      ["a","a","c","c","c","c","c","a","a"],
+      ["a","a","c","c","c","c","c","a","a"],
+      ["_","c","c","c","c","c","c","c","_"],
+      ["a","a","c","a","a","a","c","a","a"],
+      ["a","a","_","a","a","a","_","a","a"]
+    ],
+    [
+      ["_","_","_","_","_","_","_","_","_"],
+      ["_","c","c","c","c","c","c","c","_"],
+      ["_","c","c","c","c","c","c","c","_"],
+      ["_","c","c","c","c","c","c","c","_"],
+      ["_","c","c","c","c","c","c","c","_"],
+      ["_","c","c","c","c","c","c","c","_"],
+      ["_","c","c","c","c","c","c","c","_"],
+      ["_","c","c","c","c","c","c","c","_"],
+      ["_","_","_","_","_","_","_","_","_"]
+    ],
+    [
+      ["a","a","_","b","b","b","_","a","a"],
+      ["a","a","c","c","c","c","c","a","a"],
+      ["_","c","c","c","c","c","c","c","_"],
+      ["b","c","c","c","c","c","c","c","b"],
+      ["b","c","c","c","c","c","c","c","b"],
+      ["b","c","c","c","c","c","c","c","b"],
+      ["_","c","c","c","c","c","c","c","_"],
+      ["a","a","c","c","c","c","c","a","a"],
+      ["a","a","_","b","b","b","_","a","a"]
+    ],
+    [
+      ["a","a","_","b","b","b","_","a","a"],
+      ["a","a","c","c","c","c","c","a","a"],
+      ["_","c","c","c","c","c","c","c","_"],
+      ["b","c","c","c","c","c","c","c","b"],
+      ["b","c","c","c","c","c","c","c","b"],
+      ["b","c","c","c","c","c","c","c","b"],
+      ["_","c","c","c","c","c","c","c","_"],
+      ["a","a","c","c","c","c","c","a","a"],
+      ["a","a","_","b","b","b","_","a","a"]
+    ],
+    [
+      ["a","a","_","b","b","b","_","a","a"],
+      ["a","a","c","c","c","c","c","a","a"],
+      ["_","c","c","c","c","c","c","c","_"],
+      ["b","c","c","c","c","c","c","c","b"],
+      ["b","c","c","c","c","c","c","c","b"],
+      ["b","c","c","c","c","c","c","c","b"],
+      ["_","c","c","c","c","c","c","c","_"],
+      ["a","a","c","c","c","c","c","a","a"],
+      ["a","a","_","b","b","b","_","a","a"]
+    ],
+    [
+      ["_","_","_","_","_","_","_","_","_"],
+      ["_","c","c","c","c","c","c","c","_"],
+      ["_","c","c","c","c","c","c","c","_"],
+      ["_","c","c","c","c","c","c","c","_"],
+      ["_","c","c","c","c","c","c","c","_"],
+      ["_","c","c","c","c","c","c","c","_"],
+      ["_","c","c","c","c","c","c","c","_"],
+      ["_","c","c","c","c","c","c","c","_"],
+      ["_","_","_","_","_","_","_","_","_"]
+    ],
+    [
+      ["a","a","_","a","a","a","_","a","a"],
+      ["a","a","c","a","a","a","c","a","a"],
+      ["_","c","c","c","c","c","c","c","_"],
+      ["a","a","c","c","c","c","c","a","a"],
+      ["a","a","c","c","c","c","c","a","a"],
+      ["a","a","c","c","c","c","c","a","a"],
+      ["_","c","c","c","c","c","c","c","_"],
+      ["a","a","c","a","a","a","c","a","a"],
+      ["a","a","_","a","a","a","_","a","a"]
+    ],
+    [
+      ["a","a","_","a","a","a","_","a","a"],
+      ["a","a","_","a","a","a","_","a","a"],
+      ["_","_","_","_","_","_","_","_","_"],
+      ["a","a","_","b","b","b","_","a","a"],
+      ["a","a","_","b","b","b","_","a","a"],
+      ["a","a","_","b","b","b","_","a","a"],
+      ["_","_","_","_","_","_","_","_","_"],
+      ["a","a","_","a","a","a","_","a","a"],
+      ["a","a","_","a","a","a","_","a","a"]
+    ]
+  ]
+}

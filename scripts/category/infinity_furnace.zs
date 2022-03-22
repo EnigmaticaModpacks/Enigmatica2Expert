@@ -92,7 +92,7 @@ ${filtered.join('\n')}`
 
 }*/
 
-# Total Furnace recipes registered: 909
+# Total Furnace recipes registered: 915
 # Filtered by JEI blacklist: 49
 # Filtered manuallly (antidupe): 14
 # Filtered by oredict: 201
@@ -357,6 +357,7 @@ infinFurnace(utils.get("jaopca:item_clustertanzanite"), utils.get("biomesoplenty
 infinFurnace(utils.get("jaopca:item_clusterthorium"), utils.get("nuclearcraft:dust", 3, 2));
 infinFurnace(utils.get("jaopca:item_clustertitanium"), utils.get("libvulpes:productdust", 7, 2));
 infinFurnace(utils.get("jaopca:item_clustertopaz"), utils.get("biomesoplenty:gem", 3, 3));
+infinFurnace(utils.get("jaopca:item_clustertungsten"), utils.get("contenttweaker:item_ore_tungsten", 2, 2));
 #infinFurnace(utils.get("jaopca:item_clusteruranium"), utils.get("immersiveengineering:metal", 14, 2));
 #infinFurnace(utils.get("jaopca:item_clusteryellorium"), utils.get("immersiveengineering:metal", 14, 2));
 infinFurnace(utils.get("jaopca:item_crushedaluminium"), utils.get("thermalfoundation:material", 132));
@@ -386,7 +387,9 @@ infinFurnace(utils.get("jaopca:item_crushedpurifiednickel"), utils.get("thermalf
 infinFurnace(utils.get("jaopca:item_crushedpurifiedosmium"), utils.get("mekanism:ingot", 1));
 infinFurnace(utils.get("jaopca:item_crushedpurifiedplatinum"), utils.get("thermalfoundation:material", 134));
 infinFurnace(utils.get("jaopca:item_crushedpurifiedthorium"), utils.get("nuclearcraft:ingot", 3));
+infinFurnace(utils.get("jaopca:item_crushedpurifiedtungsten"), utils.get("endreborn:item_ingot_wolframium"));
 infinFurnace(utils.get("jaopca:item_crushedthorium"), utils.get("nuclearcraft:ingot", 3));
+infinFurnace(utils.get("jaopca:item_crushedtungsten"), utils.get("endreborn:item_ingot_wolframium"));
 infinFurnace(utils.get("jaopca:item_crystalabyssaluminium"), utils.get("jaopca:item_dirtygemaluminium"));
 infinFurnace(utils.get("jaopca:item_crystalabyssamber"), utils.get("jaopca:item_dirtygemamber"));
 infinFurnace(utils.get("jaopca:item_crystalabyssamethyst"), utils.get("jaopca:item_dirtygemamethyst"));
@@ -429,6 +432,7 @@ infinFurnace(utils.get("jaopca:item_crystalabyssthorium"), utils.get("jaopca:ite
 infinFurnace(utils.get("jaopca:item_crystalabysstin"), utils.get("jaopca:item_dirtygemtin"));
 infinFurnace(utils.get("jaopca:item_crystalabysstitanium"), utils.get("jaopca:item_dirtygemtitanium"));
 infinFurnace(utils.get("jaopca:item_crystalabysstopaz"), utils.get("jaopca:item_dirtygemtopaz"));
+infinFurnace(utils.get("jaopca:item_crystalabysstungsten"), utils.get("jaopca:item_dirtygemtungsten"));
 infinFurnace(utils.get("jaopca:item_crystalabyssuranium"), utils.get("jaopca:item_dirtygemuranium"));
 infinFurnace(utils.get("jaopca:item_crystalabyssyellorium"), utils.get("jaopca:item_dirtygemyellorium"));
 infinFurnace(utils.get("jaopca:item_dirtygemaluminium"), utils.get("thermalfoundation:material", 132, 12));
@@ -473,6 +477,7 @@ infinFurnace(utils.get("jaopca:item_dirtygemthorium"), utils.get("nuclearcraft:i
 infinFurnace(utils.get("jaopca:item_dirtygemtin"), utils.get("thermalfoundation:material", 129, 12));
 infinFurnace(utils.get("jaopca:item_dirtygemtitanium"), utils.get("libvulpes:productingot", 7, 12));
 infinFurnace(utils.get("jaopca:item_dirtygemtopaz"), utils.get("biomesoplenty:gem", 3, 18));
+infinFurnace(utils.get("jaopca:item_dirtygemtungsten"), utils.get("contenttweaker:item_ore_tungsten", 2, 12));
 infinFurnace(utils.get("jaopca:item_dirtygemuranium"), utils.get("immersiveengineering:metal", 5, 12));
 infinFurnace(utils.get("jaopca:item_dirtygemyellorium"), utils.get("immersiveengineering:metal", 5, 12));
 infinFurnace(utils.get("jaopca:item_dustalchaluminium"), utils.get("jaopca:item_dirtygemaluminium", 0, 48));
@@ -555,6 +560,7 @@ infinFurnace(utils.get("jaopca:item_rockychunkthorium"), utils.get("jaopca:item_
 infinFurnace(utils.get("jaopca:item_rockychunktin"), utils.get("jaopca:item_dirtygemtin", 0, 4));
 infinFurnace(utils.get("jaopca:item_rockychunktitanium"), utils.get("jaopca:item_dirtygemtitanium", 0, 4));
 infinFurnace(utils.get("jaopca:item_rockychunktopaz"), utils.get("jaopca:item_dirtygemtopaz", 0, 4));
+infinFurnace(utils.get("jaopca:item_rockychunktungsten"), utils.get("jaopca:item_dirtygemtungsten", 0, 4));
 infinFurnace(utils.get("jaopca:item_rockychunkuranium"), utils.get("jaopca:item_dirtygemuranium", 0, 4));
 infinFurnace(utils.get("jaopca:item_rockychunkyellorium"), utils.get("jaopca:item_dirtygemyellorium", 0, 4));
 ##infinFurnace(utils.get("libvulpes:productdust", 7), utils.get("libvulpes:productingot", 7));

@@ -15,7 +15,7 @@ import thaumcraft.aspect.CTAspectStack;
 
 #priority 2900
 #modloaded mekanism
-// Uses of this mod: 55
+// Uses of this mod: 56
 
 
 //####################################################
@@ -47,10 +47,10 @@ zenClass Class_chemical_injection { zenConstructor() {}
 static chemical_injection as Class_chemical_injection = Class_chemical_injection();
 
 //####################################################
-// Uses of this class: 22
+// Uses of this class: 23
 zenClass Class_combiner { zenConstructor() {}
 
-	// Uses of this method: 22
+	// Uses of this method: 23
 	function addRecipe(itemInput as IIngredient, itemOutput as IItemStack) as void {
 		if(utils.DEBUG) print('Recipe wrapped: mods.mekanism.combiner.addRecipe'~
 			serialize.args([serialize.IIngredient(itemInput), serialize.IItemStack(itemOutput)]));

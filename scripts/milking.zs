@@ -91,8 +91,7 @@ function milk(e as crafttweaker.event.PlayerInteractEntityEvent) as bool {
   if (!isNull(entNbt.Gender) && entNbt.Gender != 1 as byte) return false; # Dragon is not male
 
   # Check player position (should be under entity)
-  if (e.player.y >= e.target.y) return false;
-
+  if (e.player.y >= e.target.y - 1) return false;
 
   # Apply animal size modifier
   var animal as IEntityLiving = e.target;
