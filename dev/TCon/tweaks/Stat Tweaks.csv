@@ -32,7 +32,7 @@ construction_alloy,,,,,,,,,,
 copper,,,,,,,,,,
 crystal_matrix,,,,11,,,,,,
 dark_matter,,,,,,,,,,
-dark_steel,,,*1.44,,,,,,,
+dark_steel,,,*1.44,7,,,,,,
 darkwood,*4,*4,*4,,*4,*4,*4,*4,*4,*4
 desert_myrmex,,,+8,,,,,,,
 diamantine_crystal,,,,5,,,,,,

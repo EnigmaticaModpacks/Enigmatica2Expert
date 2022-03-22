@@ -294,7 +294,6 @@ val defaultWeaponMats as IData = [
   "bound_metal"            , # 144
   "diamantine_crystal"     , # 145
   "energetic_metal"        , # 147
-  "dark_steel"             , # 147
   "weezer"                 , # 149
   "knightmetal"            , # 149
   "amethyst"               , # 152
@@ -305,6 +304,7 @@ val defaultWeaponMats as IData = [
   "elementium"             , # 160
   "fluxed_electrum"        , # 162
   "osmiridium"             , # 162
+  "dark_steel"             , # 162
   "ma.prudentium"          , # 163
   "electrum"               , # 163
   "boron"                  , # 165
