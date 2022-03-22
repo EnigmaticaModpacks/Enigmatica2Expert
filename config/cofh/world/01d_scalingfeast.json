@@ -5,7 +5,7 @@
       "distribution": "uniform",
       "generator": {
         "block": "scalingfeast:exhaustingore",
-        "cluster-size": 2
+        "cluster-size": 1
       },
       "cluster-count": 12,
       "chunk-chance": 8,
@@ -37,7 +37,7 @@
 					"properties": {
 						"type": "netherrack"
 					}},
-        "cluster-size": 3
+        "cluster-size": 1
       },
       "cluster-count": 24,
       "chunk-chance": 8,
