@@ -133,28 +133,38 @@ craft.make(<fluiddrawers:tank>, ["pretty",
 static empty as string = '§8Empty§r';
 
 # Drawer sealed content
-function sealed(name as string) as string {
+function sealed(name as string, amount as int = 0) as string {
 	if(isNull(name)) return empty;
-	return "§2Sealed: §a" ~ name ~ '§r';
+	return amount > 0
+		? "§2Sealed: §a" ~ name ~ ' §2(§ax' ~ amount ~ '§2)'
+		: "§2Sealed: §a" ~ name;
+}
+function sealedItem(item as IItemStack) as string {
+	if(isNull(item)) return empty;
+	return sealed(item.displayName, item.amount);
 }
 
-function firstItemInList(data as IData) as string {
-	if(isNull(data) || isNull(data.asList())) return empty;
+function firstItemInList(data as IData, amount as int = 0) as IItemStack {
+	if(isNull(data) || isNull(data.asList())) return null;
 
 	for itemStorage in data.asList() {
 		val itemData = itemStorage.Item;
-		if(isNull(itemData) || isNull(itemData.id)) continue;
-		val id = itemData.id.asString();
-		val meta = isNull(itemData.Damage) ? 0 : itemData.Damage.asInt();
-		val item = itemUtils.getItem(id, meta);
-		if(!isNull(item)) return item.displayName;
+		if(isNull(itemData)) continue;
+		val item = IItemStack.fromData(itemData);
+		if(!isNull(item)) {
+			return item * (
+				amount != 0
+				? amount / D(itemStorage).getInt("Conv", 1)
+				: D(itemStorage).getInt("Count", 1)
+			);
+		}
 	}
-	return empty;
+	return null;
 }
 
 // Basic Drawers
 val basicDrawerTooltip as ITooltipFunction = function(item) {
-	return sealed(firstItemInList(D(item.tag).get("tile.Drawers")));
+	return sealedItem(firstItemInList(D(item.tag).get("tile.Drawers")));
 };
 <storagedrawers:basicdrawers:*>.addAdvancedTooltip(basicDrawerTooltip);
 <storagedrawers:customdrawers:*>.addAdvancedTooltip(basicDrawerTooltip);
@@ -162,22 +172,28 @@ val basicDrawerTooltip as ITooltipFunction = function(item) {
 
 // Compact Drawers
 val compactDrawerTooltip as ITooltipFunction = function(item) {
-	return sealed(firstItemInList(D(item.tag).get("tile.Drawers.Items")));
+	val d = D(item.tag);
+	return sealedItem(firstItemInList(d.get("tile.Drawers.Items"), d.getInt('tile.Drawers.Count')));
 };
 <storagedrawers:compdrawers>.addAdvancedTooltip(compactDrawerTooltip);
 
+// Framed Drawers
 if(!isNull(loadedMods["framedcompactdrawers"])) {
 	itemUtils.getItem("framedcompactdrawers:framed_compact_drawer").addAdvancedTooltip(compactDrawerTooltip);
 }
 
 // Fluid Drawers
-val fluidDrawerTooltip as ITooltipFunction = function(item) {
-	val d = D(item.tag).getString("Tile.Drawer.Fluid.FluidName");
-	if(isNull(d)) return empty;
-	val fluid = game.getLiquid(d);
-	if(isNull(fluid)) return empty;
-	return sealed(fluid.displayName);
-};
-<fluiddrawers:tank_custom>.addAdvancedTooltip(fluidDrawerTooltip);
-<fluiddrawers:tank>.addAdvancedTooltip(fluidDrawerTooltip);
+if(!isNull(loadedMods["fluiddrawers"])) {
+	val fluidDrawerTooltip as ITooltipFunction = function(item) {
+		val dTag = D(item.tag);
+		val fluidName = dTag.getString("Tile.Drawer.Fluid.FluidName");
+		if(isNull(fluidName)) return empty;
+		val fluid = game.getLiquid(fluidName);
+		if(isNull(fluid)) return empty;
+		val fluidAmount = dTag.getInt("Tile.Drawer.Fluid.Amount");
+		return sealed(fluid.displayName, fluidAmount);
+	};
+	<fluiddrawers:tank_custom>.addAdvancedTooltip(fluidDrawerTooltip);
+	<fluiddrawers:tank>.addAdvancedTooltip(fluidDrawerTooltip);
+}
 #---------------------------------------------------------------------------
