@@ -529,6 +529,7 @@ regrind(<biomesoplenty:gem_ore:6>               , <jaopca:item_dustsapphire>, tr
 regrind(<biomesoplenty:gem_ore:7>               , <jaopca:item_dustamber>, true);
 regrind(<biomesoplenty:gem_ore>                 , <jaopca:item_dustamethyst>, true);
 regrind(<draconicevolution:draconium_ore>       , <draconicevolution:draconium_dust>, true);
+regrind(<endreborn:block_wolframium_ore>        , <contenttweaker:item_ore_tungsten:2>, true);
 regrind(<forestry:resources>                    , <jaopca:item_dustapatite>, true);
 regrind(<immersiveengineering:ore:5>            , <immersiveengineering:metal:14>, true);
 regrind(<libvulpes:ore0:8>                      , <libvulpes:productdust:7>, true);
@@ -567,6 +568,7 @@ regrind(<bigreactors:ingotludicrite>            , <bigreactors:dustludicrite>);
 regrind(<bigreactors:ingotyellorium>            , <bigreactors:dustyellorium>);
 regrind(<draconicevolution:draconium_ingot>     , <draconicevolution:draconium_dust>);
 regrind(<enderio:item_alloy_ingot:7>            , <enderio:item_material:74>);
+regrind(<endreborn:item_ingot_wolframium>       , <contenttweaker:item_ore_tungsten:2>);
 regrind(<immersiveengineering:material:19>      , <immersiveengineering:material:18>);
 regrind(<immersiveengineering:metal:5>          , <immersiveengineering:metal:14>);
 regrind(<libvulpes:productingot:7>              , <libvulpes:productdust:7>);

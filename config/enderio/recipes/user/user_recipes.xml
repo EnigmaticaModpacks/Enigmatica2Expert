@@ -727,6 +727,14 @@
     </tanking>
   </recipe>
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+  <recipe name="Tungsten Clearing">
+    <tanking type="FILL" logic="NONE">
+      <input name="dustDirtyTungsten"/>
+      <fluid name="steam" amount="1000"/>
+      <output name="dustTungsten"/>
+    </tanking>
+  </recipe>
+  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Uranium Clearing">
     <tanking type="FILL" logic="NONE">
       <input name="dustDirtyUranium"/>

@@ -109,3 +109,7 @@ furnace.remove(<*>, <immersiveengineering:ore:4>);
 furnace.remove(<*>, <immersiveengineering:ore>);
 furnace.remove(<*>, <twilightforest:raw_venison:*>);
 /**/
+
+utils.rh(<contenttweaker:item_ore_tungsten:3>);
+utils.rh(<jaopca:block_blocktungsten>);
+utils.rh(<jaopca:item_nuggettungsten>);

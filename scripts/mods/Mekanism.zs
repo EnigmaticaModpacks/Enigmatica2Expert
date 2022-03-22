@@ -22,6 +22,7 @@ getCSV('config/tellme/items-csv.csv')
   `scripts.wrap.mekanism.combiner.addRecipe(<ore:block${(mat+'>,').padEnd(17)} ${$(...item.split(':'))});`
 )
 )*/
+scripts.wrap.mekanism.combiner.addRecipe(<ore:blockTungsten>,        <contenttweaker:item_ore_tungsten>);
 scripts.wrap.mekanism.combiner.addRecipe(<ore:blockAluminium>,       <exnihilocreatio:item_ore_aluminium>);
 scripts.wrap.mekanism.combiner.addRecipe(<ore:blockArdite>,          <exnihilocreatio:item_ore_ardite>);
 scripts.wrap.mekanism.combiner.addRecipe(<ore:blockCobalt>,          <exnihilocreatio:item_ore_cobalt>);
