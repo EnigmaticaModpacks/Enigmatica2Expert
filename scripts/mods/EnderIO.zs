@@ -105,18 +105,18 @@ craft.remake(<enderio:block_impulse_hopper>, ["pretty",
 
 # Energized Bimetal gear
 	recipes.remove(<enderio:item_material:12>);
-	scripts.wrap.immersiveengineering.MetalPress.addRecipe(<enderio:item_material:12>, <enderio:item_alloy_ingot:1>, <immersiveengineering:mold:1>, 16000, 4);
-	scripts.wrap.thermalexpansion.Compactor.addGearRecipe(<enderio:item_material:12>, <enderio:item_alloy_ingot:1> * 4, 16000);
+	mods.immersiveengineering.MetalPress.addRecipe(<enderio:item_material:12>, <enderio:item_alloy_ingot:1>, <immersiveengineering:mold:1>, 16000, 4);
+	mods.thermalexpansion.Compactor.addGearRecipe(<enderio:item_material:12>, <enderio:item_alloy_ingot:1> * 4, 16000);
 
 # Vibrant Bimetal gear
 	recipes.remove(<enderio:item_material:13>);
-	scripts.wrap.immersiveengineering.MetalPress.addRecipe(<enderio:item_material:13>, <enderio:item_alloy_ingot:2>, <immersiveengineering:mold:1>, 16000, 4);
-	scripts.wrap.thermalexpansion.Compactor.addGearRecipe(<enderio:item_material:13>, <enderio:item_alloy_ingot:2> * 4, 16000);
+	mods.immersiveengineering.MetalPress.addRecipe(<enderio:item_material:13>, <enderio:item_alloy_ingot:2>, <immersiveengineering:mold:1>, 16000, 4);
+	mods.thermalexpansion.Compactor.addGearRecipe(<enderio:item_material:13>, <enderio:item_alloy_ingot:2> * 4, 16000);
 
 # Dark Bimetel gear
 	recipes.remove(<enderio:item_material:73>);
-	scripts.wrap.immersiveengineering.MetalPress.addRecipe(<enderio:item_material:73>, <enderio:item_alloy_ingot:6>, <immersiveengineering:mold:1>, 16000, 4);
-	scripts.wrap.thermalexpansion.Compactor.addGearRecipe(<enderio:item_material:73>, <enderio:item_alloy_ingot:6> * 4, 16000);
+	mods.immersiveengineering.MetalPress.addRecipe(<enderio:item_material:73>, <enderio:item_alloy_ingot:6>, <immersiveengineering:mold:1>, 16000, 4);
+	mods.thermalexpansion.Compactor.addGearRecipe(<enderio:item_material:73>, <enderio:item_alloy_ingot:6> * 4, 16000);
 
 # Machine Chassis
 mods.thermalexpansion.InductionSmelter.removeRecipe(<enderio:item_material>, <enderio:item_material:51>);
@@ -218,7 +218,7 @@ craft.remake(<enderio:item_basic_capacitor>, ["pretty",
 	mods.nuclearcraft.decay_hastener.addRecipe([<enderio:item_dark_steel_upgrade:1>.anyDamage(), <enderio:item_dark_steel_upgrade>, 2.0, 2.0]);
 
 # Dark Steel Upgrade Expensive, Thermal
-	scripts.wrap.thermalexpansion.InductionSmelter.addRecipe(<enderio:item_dark_steel_upgrade>, <enderio:block_alloy:6>, <minecraft:clay>, 25000);
+	mods.thermalexpansion.InductionSmelter.addRecipe(<enderio:item_dark_steel_upgrade>, <enderio:block_alloy:6>, <minecraft:clay>, 25000);
 
 
 	
@@ -231,7 +231,7 @@ recipes.addShaped(<enderio:block_lava_generator>, [
 	[<ore:ingotBrickNetherGlazed>, <enderio:block_tank>, <ore:ingotBrickNetherGlazed>]]);
 
 # Nethercotta
-scripts.wrap.immersiveengineering.ArcFurnace.addRecipe(<enderio:item_material:72>, <ore:ingotBrickNether>,
+mods.immersiveengineering.ArcFurnace.addRecipe(<enderio:item_material:72>, <ore:ingotBrickNether>,
 	<immersiveengineering:material:7>, 20*4, 2560, [<ore:cropNetherWart>*4, <ore:clay>*6], "Alloying");
 
 # Remake binder
@@ -243,7 +243,7 @@ makeEx(<enderio:item_material:22> * 24, [
 
 # And remake binder as compost
 furnace.remove(<enderio:item_material:4>);
-scripts.wrap.actuallyadditions.Compost.addRecipe(<enderio:item_material:4>, <quark:quilted_wool:8>, <enderio:item_material:22>, <biomesoplenty:dirt:2>);
+mods.actuallyadditions.Compost.addRecipe(<enderio:item_material:4>, <quark:quilted_wool:8>, <enderio:item_material:22>, <biomesoplenty:dirt:2>);
 
 # Simplifi Niard
 recipes.remove(<enderio:block_niard>);
@@ -298,7 +298,7 @@ solution([<ore:dustBedrock>, <ore:dustEndstone>,<ore:nuggetTungsten>], [<liquid:
 solution([<ore:dustBedrock>, <ore:dustRedstone>                     ], [<liquid:iron>      *144], [<liquid:conductive_iron>   *144], [0.5, 1,    4200], "only: highoven");
 
 # Fake iron -> Steel
-scripts.wrap.mekanism.infuser.addRecipe("CARBON", 10, <enderio:item_alloy_ingot:9>, <mekanism:enrichediron>);
+mods.mekanism.infuser.addRecipe("CARBON", 10, <enderio:item_alloy_ingot:9>, <mekanism:enrichediron>);
 
 # Oxidiser
 val ox as IIngredient = <ore:itemInfinityGoop>; # Infinity reagent
@@ -392,7 +392,7 @@ craft.remake(<enderio:block_gauge>, ["pretty",
 
 # [Endervoir] from [Molten Lapis]
 recipes.remove(<enderio:block_reservoir>);
-scripts.wrap.tconstruct.Casting.addBasinRecipe(<enderio:block_reservoir>, <enderio:block_omni_reservoir>, <liquid:lapis>, 666 * 9);
+mods.tconstruct.Casting.addBasinRecipe(<enderio:block_reservoir>, <enderio:block_omni_reservoir>, <liquid:lapis>, 666 * 9);
 scripts.process.fill(<enderio:block_omni_reservoir>,  <liquid:lapis> * (666 * 9),  <enderio:block_reservoir>,  "only: NCInfuser Transposer");
 
 # [Black Paper]*8 from [Ink Sac][+1]
@@ -434,7 +434,7 @@ val compressedBlocks = [
 
 for i, input in compressedBlocks {
 	if(i%2==1) continue;
-	scripts.wrap.enderio.AlloySmelter.addRecipe(compressedBlocks[i + 1], [input], pow(4, i/2+1) * 1000, (i + 1) * 200);
+	mods.enderio.AlloySmelter.addRecipe(compressedBlocks[i + 1], [input], pow(4, i/2+1) * 1000, (i + 1) * 200);
 }
 
 # Cheaper cause vanilla recipe require Vibrant Alloy
@@ -515,7 +515,7 @@ craft.reshapeless(<enderio:item_material:38>, "▲▲▲©S©▲▲▲", {
 
 # Low-level machines (original in Alloy Smelter)
 scripts.process.compress(<ore:itemPowderPhotovoltaic> * 4, <enderio:item_material:3>, "Except: Compressor");
-scripts.wrap.immersiveengineering.MetalPress.addRecipe(<enderio:item_material:3>, <ore:itemPowderPhotovoltaic> * 4, <immersiveengineering:mold:0>, 2000);
+mods.immersiveengineering.MetalPress.addRecipe(<enderio:item_material:3>, <ore:itemPowderPhotovoltaic> * 4, <immersiveengineering:mold:0>, 2000);
 
 # Cheaper to match other solar panels
 # [Simple Photovoltaic Cell] from [Infinity Bimetal Gear][+3]
@@ -617,7 +617,7 @@ for block, result in {
 	<appliedenergistics2:controller> : {<enderio:item_material:68> : 16},
 } as int[IItemStack][IItemStack] {
 	for output, amount in result {
-		scripts.wrap.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(output * amount, block);
+		mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(output * amount, block);
 	}
 }
 

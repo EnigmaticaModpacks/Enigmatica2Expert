@@ -21,10 +21,10 @@ recipes.addShapeless(<harvestcraft:schnitzelitem>, [<ore:toolSkillet>, <ore:list
 recipes.addShapeless(<harvestcraft:bratwurstitem>, [<ore:toolCuttingboard>, <ore:foodPorksausage>, <ore:foodPickles>, <ore:cropOnion>, <minecraft:bread>]);
 
 # Raw Meat -> Ground Meat
-scripts.wrap.thermalexpansion.Pulverizer.addRecipe(<harvestcraft:groundduckitem>, <harvestcraft:duckrawitem>, 2000);
-scripts.wrap.thermalexpansion.Pulverizer.addRecipe(<harvestcraft:groundmuttonitem>, <minecraft:mutton>, 2000);
-scripts.wrap.thermalexpansion.Pulverizer.addRecipe(<harvestcraft:groundturkeyitem>, <harvestcraft:turkeyrawitem>, 2000);
-scripts.wrap.thermalexpansion.Pulverizer.addRecipe(<harvestcraft:groundvenisonitem>, <harvestcraft:venisonrawitem>, 2000);
+mods.thermalexpansion.Pulverizer.addRecipe(<harvestcraft:groundduckitem>, <harvestcraft:duckrawitem>, 2000);
+mods.thermalexpansion.Pulverizer.addRecipe(<harvestcraft:groundmuttonitem>, <minecraft:mutton>, 2000);
+mods.thermalexpansion.Pulverizer.addRecipe(<harvestcraft:groundturkeyitem>, <harvestcraft:turkeyrawitem>, 2000);
+mods.thermalexpansion.Pulverizer.addRecipe(<harvestcraft:groundvenisonitem>, <harvestcraft:venisonrawitem>, 2000);
 
 
 # Seeds/Crops that already have recipe added by IE and oredicted, will be removed and re-added from oredict
@@ -41,10 +41,10 @@ for item in [
   mods.immersiveengineering.Squeezer.removeByInput(item);
 }
 
-scripts.wrap.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 80, <ore:listAllveggie>, 500);
-scripts.wrap.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 120, <ore:listAllfruit>, 500);
-scripts.wrap.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 100, <ore:listAllberry>, 500);
-scripts.wrap.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 80, <ore:listAllseed>, 500);
+mods.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 80, <ore:listAllveggie>, 500);
+mods.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 120, <ore:listAllfruit>, 500);
+mods.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 100, <ore:listAllberry>, 500);
+mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 80, <ore:listAllseed>, 500);
 
 
 for i, dye in scripts.category.dye.oreDye {
@@ -115,5 +115,5 @@ craft.reshapeless(<harvestcraft:cheeseitem> * 2, "PACSS", {
 
 # [Royal Jelly] from [Queen Bee]
 recipes.remove(<harvestcraft:royaljellyitem>);
-scripts.wrap.integrateddynamics.Squeezer.addRecipe(<harvestcraft:queenbeeitem>, <harvestcraft:royaljellyitem>, 1.0f, <harvestcraft:royaljellyitem>, 1.0f, null, 0, null);
+mods.integrateddynamics.Squeezer.addRecipe(<harvestcraft:queenbeeitem>, <harvestcraft:royaljellyitem>, 1.0f, <harvestcraft:royaljellyitem>, 1.0f, null, 0, null);
 scripts.process.squeeze([<harvestcraft:queenbeeitem>], null, "only: TECentrifuge", <harvestcraft:royaljellyitem> * 4);

@@ -13,10 +13,10 @@ mods.nuclearcraft.melter.removeRecipeWithInput(<nuclearcraft:dust:8>);
 mods.nuclearcraft.melter.removeRecipeWithInput(<bigreactors:blockgraphite>);
 
 # Rhodochrosite
-	scripts.wrap.actuallyadditions.AtomicReconstructor.addRecipe(<nuclearcraft:gem>, <biomesoplenty:gem:1>, 15000);
+	mods.actuallyadditions.AtomicReconstructor.addRecipe(<nuclearcraft:gem>, <biomesoplenty:gem:1>, 15000);
 
 # Fluorite
-	scripts.wrap.actuallyadditions.AtomicReconstructor.addRecipe(<nuclearcraft:gem:2>, <biomesoplenty:gem:2>, 15000);
+	mods.actuallyadditions.AtomicReconstructor.addRecipe(<nuclearcraft:gem:2>, <biomesoplenty:gem:2>, 15000);
 
 # Rock Crusher
 	recipes.remove(<nuclearcraft:rock_crusher_idle>);
@@ -188,7 +188,7 @@ scripts.process.solution([<ic2:nuclear:7>, <actuallyadditions:item_crystal_empow
 
 # Boron arsenid simplify recipe
 scripts.process.solution([<ore:dustArsenic>], [<liquid:boron>*144], [<liquid:bas> * 666], [1, 6000], "only: highoven");
-scripts.wrap.tconstruct.Casting.addTableRecipe(<ore:gemBoronArsenide>.firstItem, <tconstruct:cast_custom:2>, <liquid:bas>, 666, false);
+mods.tconstruct.Casting.addTableRecipe(<ore:gemBoronArsenide>.firstItem, <tconstruct:cast_custom:2>, <liquid:bas>, 666, false);
 
 # End stone dust compat
 scripts.process.crush(<minecraft:end_stone>, <nuclearcraft:gem_dust:11>, "except: manufactory", null, null);
@@ -364,8 +364,8 @@ craft.remake(<nuclearcraft:bin>, ["pretty",
 
 # Late game alternatives
 # [Graphite Block] from [Block of Charcoal][+1]
-scripts.wrap.enderio.AlloySmelter.addRecipe(<nuclearcraft:ingot_block:8>, [<ore:blockCoal>], 4000);
-scripts.wrap.enderio.AlloySmelter.addRecipe(<nuclearcraft:ingot_block:8>, [<ore:blockCharcoal>], 4000);
+mods.enderio.AlloySmelter.addRecipe(<nuclearcraft:ingot_block:8>, [<ore:blockCoal>], 4000);
+mods.enderio.AlloySmelter.addRecipe(<nuclearcraft:ingot_block:8>, [<ore:blockCharcoal>], 4000);
 
 # [Dimensional Blend] from [Biome Essence]
 recipes.remove(<nuclearcraft:compound:8>);

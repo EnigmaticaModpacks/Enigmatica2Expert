@@ -34,7 +34,7 @@ for item in loadedMods["volumetricflask"].items {
 
       val flaskSize = id.substring(33) as double;
       recipes.remove(item);
-      scripts.wrap.forestry.ThermionicFabricator.addCast(item * 
+      mods.forestry.ThermionicFabricator.addCast(item * 
         max(1, min(64, ceil(sqrt(64000.0d / flaskSize))) as int), 
         recipeArray, <liquid:glass> * 4000);
     }

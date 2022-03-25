@@ -19,32 +19,32 @@ getCSV('config/tellme/items-csv.csv')
 ]})
 .filter(o=>o)
 .map(([item, mat], i, arr)=>
-  `scripts.wrap.mekanism.combiner.addRecipe(<ore:block${(mat+'>,').padEnd(17)} ${$(...item.split(':'))});`
+  `mods.mekanism.combiner.addRecipe(<ore:block${(mat+'>,').padEnd(17)} ${$(...item.split(':'))});`
 )
 )*/
-scripts.wrap.mekanism.combiner.addRecipe(<ore:blockTungsten>,        <contenttweaker:item_ore_tungsten>);
-scripts.wrap.mekanism.combiner.addRecipe(<ore:blockAluminium>,       <exnihilocreatio:item_ore_aluminium>);
-scripts.wrap.mekanism.combiner.addRecipe(<ore:blockArdite>,          <exnihilocreatio:item_ore_ardite>);
-scripts.wrap.mekanism.combiner.addRecipe(<ore:blockCobalt>,          <exnihilocreatio:item_ore_cobalt>);
-scripts.wrap.mekanism.combiner.addRecipe(<ore:blockCopper>,          <exnihilocreatio:item_ore_copper>);
-scripts.wrap.mekanism.combiner.addRecipe(<ore:blockGold>,            <exnihilocreatio:item_ore_gold>);
-scripts.wrap.mekanism.combiner.addRecipe(<ore:blockIron>,            <exnihilocreatio:item_ore_iron>);
-scripts.wrap.mekanism.combiner.addRecipe(<ore:blockLead>,            <exnihilocreatio:item_ore_lead>);
-scripts.wrap.mekanism.combiner.addRecipe(<ore:blockNickel>,          <exnihilocreatio:item_ore_nickel>);
-scripts.wrap.mekanism.combiner.addRecipe(<ore:blockSilver>,          <exnihilocreatio:item_ore_silver>);
-scripts.wrap.mekanism.combiner.addRecipe(<ore:blockTin>,             <exnihilocreatio:item_ore_tin>);
-scripts.wrap.mekanism.combiner.addRecipe(<ore:blockAstralStarmetal>, <jaopca:item_pieceastralstarmetal>);
-scripts.wrap.mekanism.combiner.addRecipe(<ore:blockBoron>,           <jaopca:item_pieceboron>);
-scripts.wrap.mekanism.combiner.addRecipe(<ore:blockDraconium>,       <jaopca:item_piecedraconium>);
-scripts.wrap.mekanism.combiner.addRecipe(<ore:blockIridium>,         <jaopca:item_pieceiridium>);
-scripts.wrap.mekanism.combiner.addRecipe(<ore:blockLithium>,         <jaopca:item_piecelithium>);
-scripts.wrap.mekanism.combiner.addRecipe(<ore:blockMagnesium>,       <jaopca:item_piecemagnesium>);
-scripts.wrap.mekanism.combiner.addRecipe(<ore:blockMithril>,         <jaopca:item_piecemithril>);
-scripts.wrap.mekanism.combiner.addRecipe(<ore:blockOsmium>,          <jaopca:item_pieceosmium>);
-scripts.wrap.mekanism.combiner.addRecipe(<ore:blockPlatinum>,        <jaopca:item_pieceplatinum>);
-scripts.wrap.mekanism.combiner.addRecipe(<ore:blockThorium>,         <jaopca:item_piecethorium>);
-scripts.wrap.mekanism.combiner.addRecipe(<ore:blockTitanium>,        <jaopca:item_piecetitanium>);
-scripts.wrap.mekanism.combiner.addRecipe(<ore:blockUranium>,         <jaopca:item_pieceuranium>);
+mods.mekanism.combiner.addRecipe(<ore:blockTungsten>,        <contenttweaker:item_ore_tungsten>);
+mods.mekanism.combiner.addRecipe(<ore:blockAluminium>,       <exnihilocreatio:item_ore_aluminium>);
+mods.mekanism.combiner.addRecipe(<ore:blockArdite>,          <exnihilocreatio:item_ore_ardite>);
+mods.mekanism.combiner.addRecipe(<ore:blockCobalt>,          <exnihilocreatio:item_ore_cobalt>);
+mods.mekanism.combiner.addRecipe(<ore:blockCopper>,          <exnihilocreatio:item_ore_copper>);
+mods.mekanism.combiner.addRecipe(<ore:blockGold>,            <exnihilocreatio:item_ore_gold>);
+mods.mekanism.combiner.addRecipe(<ore:blockIron>,            <exnihilocreatio:item_ore_iron>);
+mods.mekanism.combiner.addRecipe(<ore:blockLead>,            <exnihilocreatio:item_ore_lead>);
+mods.mekanism.combiner.addRecipe(<ore:blockNickel>,          <exnihilocreatio:item_ore_nickel>);
+mods.mekanism.combiner.addRecipe(<ore:blockSilver>,          <exnihilocreatio:item_ore_silver>);
+mods.mekanism.combiner.addRecipe(<ore:blockTin>,             <exnihilocreatio:item_ore_tin>);
+mods.mekanism.combiner.addRecipe(<ore:blockAstralStarmetal>, <jaopca:item_pieceastralstarmetal>);
+mods.mekanism.combiner.addRecipe(<ore:blockBoron>,           <jaopca:item_pieceboron>);
+mods.mekanism.combiner.addRecipe(<ore:blockDraconium>,       <jaopca:item_piecedraconium>);
+mods.mekanism.combiner.addRecipe(<ore:blockIridium>,         <jaopca:item_pieceiridium>);
+mods.mekanism.combiner.addRecipe(<ore:blockLithium>,         <jaopca:item_piecelithium>);
+mods.mekanism.combiner.addRecipe(<ore:blockMagnesium>,       <jaopca:item_piecemagnesium>);
+mods.mekanism.combiner.addRecipe(<ore:blockMithril>,         <jaopca:item_piecemithril>);
+mods.mekanism.combiner.addRecipe(<ore:blockOsmium>,          <jaopca:item_pieceosmium>);
+mods.mekanism.combiner.addRecipe(<ore:blockPlatinum>,        <jaopca:item_pieceplatinum>);
+mods.mekanism.combiner.addRecipe(<ore:blockThorium>,         <jaopca:item_piecethorium>);
+mods.mekanism.combiner.addRecipe(<ore:blockTitanium>,        <jaopca:item_piecetitanium>);
+mods.mekanism.combiner.addRecipe(<ore:blockUranium>,         <jaopca:item_pieceuranium>);
 /**/
 
 
@@ -52,7 +52,7 @@ scripts.wrap.mekanism.combiner.addRecipe(<ore:blockUranium>,         <jaopca:ite
 mods.mekanism.crusher.removeRecipe(<bigreactors:dustgraphite>, <bigreactors:ingotgraphite>);
 
 for ingot in <ore:ingotGraphite>.items {
-	scripts.wrap.mekanism.crusher.addRecipe(ingot, <nuclearcraft:dust:8>);
+	mods.mekanism.crusher.addRecipe(ingot, <nuclearcraft:dust:8>);
 }
 	
 # Increasing Stacksize
@@ -247,7 +247,7 @@ craft.remake(<mekanismgenerators:generator:5>, ["pretty",
 
 # Basic circuit
 	mods.mekanism.infuser.removeRecipe(<mekanism:controlcircuit>);
-	scripts.wrap.mekanism.compressor.addRecipe(<opencomputers:material:4>, <mekanism:controlcircuit>);
+	mods.mekanism.compressor.addRecipe(<opencomputers:material:4>, <mekanism:controlcircuit>);
 
 # Advanced Circuit
 	recipes.remove(<mekanism:controlcircuit:1>);
@@ -267,7 +267,7 @@ craft.remake(<mekanismgenerators:generator:5>, ["pretty",
 
 # Ultimate Circuit
 	recipes.remove(<mekanism:controlcircuit:3>);
-	scripts.wrap.actuallyadditions.Empowerer.addRecipe(<mekanism:controlcircuit:3>, <mekanism:controlcircuit:2>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, 500000, 100, [0.5, 0.3, 0.2]);
+	mods.actuallyadditions.Empowerer.addRecipe(<mekanism:controlcircuit:3>, <mekanism:controlcircuit:2>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, 500000, 100, [0.5, 0.3, 0.2]);
 
 # Removing unused ores & Walkietalkie
 	utils.rh(<mekanism:oreblock:1>);
@@ -375,7 +375,7 @@ for i,list in mekTiers {
 
 # Mekanism Fusion Reactor
 recipes.remove(<mekanismgenerators:reactor>);
-scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <mekanismgenerators:reactor>, [
+mods.extendedcrafting.TableCrafting.addShaped(0, <mekanismgenerators:reactor>, [
 	[<ore:plateElite>, <advancedrocketry:blocklens>, <advancedrocketry:blocklens>, <advancedrocketry:blocklens>, <ore:plateElite>], 
 	[<mekanismgenerators:reactor:2>, <ic2:iridium_reflector>, <mekanism:gastank>.withTag({tier: 3}), <ic2:iridium_reflector>, <mekanismgenerators:reactor:2>], 
 	[<nuclearcraft:electromagnet_supercooler_idle>, <advancedrocketry:intake>, <nuclearcraft:fusion_core>, <advancedrocketry:intake>, <nuclearcraft:electromagnet_supercooler_idle>], 
@@ -426,9 +426,9 @@ mods.mekanism.enrichment.removeRecipe(<appliedenergistics2:material>, <applieden
 
 // Fix Some dusts
 mods.mekanism.enrichment.removeRecipe(<*>, <nuclearcraft:dust:4>);
-scripts.wrap.mekanism.enrichment.addRecipe(<ore:oreUranium>, <immersiveengineering:metal:14> * 2);
+mods.mekanism.enrichment.addRecipe(<ore:oreUranium>, <immersiveengineering:metal:14> * 2);
 mods.mekanism.crusher.removeRecipe(<nuclearcraft:dust:4>);
-scripts.wrap.mekanism.crusher.addRecipe(<ore:ingotUranium>, <immersiveengineering:metal:14>);
+mods.mekanism.crusher.addRecipe(<ore:ingotUranium>, <immersiveengineering:metal:14>);
 
 # Remove unused obsidian dust recipes
 mods.mekanism.infuser.removeRecipe(<mekanism:otherdust:5>, <ic2:dust:12>);
@@ -455,8 +455,8 @@ craft.remake(<mekanism:teleportationcore>, ["pretty",
 remakeEx(<mekanism:cardboardbox>, [[<forestry:carton>, <forestry:carton>, <forestry:carton>],[<forestry:carton>, null, <forestry:carton>], [<forestry:carton>, <forestry:carton>, <forestry:carton>]]);
 
 # New compressed items
-scripts.wrap.mekanism.enrichment.addRecipe(<ore:dustGlowstone>,  <contenttweaker:compressed_glowstone>);
-scripts.wrap.mekanism.enrichment.addRecipe(<ore:dustEnderPearl>, <contenttweaker:compressed_ender>);
+mods.mekanism.enrichment.addRecipe(<ore:dustGlowstone>,  <contenttweaker:compressed_glowstone>);
+mods.mekanism.enrichment.addRecipe(<ore:dustEnderPearl>, <contenttweaker:compressed_ender>);
 
 # Remake Universal cables for more efficient transfering of EU
 for i, it in [
@@ -566,13 +566,13 @@ recipes.addShapeless("salt block", <mekanism:saltblock>, [<ore:itemSalt>,<ore:it
 
 # More infuser recipes
 recipes.remove(<nuclearcraft:glowing_mushroom>);
-scripts.wrap.mekanism.infuser.addRecipe("CARBON",  50, <industrialforegoing:pink_slime>, <enderio:item_material:50>);
-scripts.wrap.mekanism.infuser.addRecipe("CARBON",  50, <ore:animaniaEggs>, <enderio:item_material:50>);
-scripts.wrap.mekanism.infuser.addRecipe("FUNGI" ,  20, <ore:dustGlowstone>, <nuclearcraft:glowing_mushroom>);
-scripts.wrap.mekanism.infuser.addRecipe("BIO"   , 100, <ore:eternalLifeEssence> * 4, <botania:overgrowthseed>);
+mods.mekanism.infuser.addRecipe("CARBON",  50, <industrialforegoing:pink_slime>, <enderio:item_material:50>);
+mods.mekanism.infuser.addRecipe("CARBON",  50, <ore:animaniaEggs>, <enderio:item_material:50>);
+mods.mekanism.infuser.addRecipe("FUNGI" ,  20, <ore:dustGlowstone>, <nuclearcraft:glowing_mushroom>);
+mods.mekanism.infuser.addRecipe("BIO"   , 100, <ore:eternalLifeEssence> * 4, <botania:overgrowthseed>);
 
 # Infinite Salt source
-scripts.wrap.extendedcrafting.CompressionCrafting.addRecipe(
+mods.extendedcrafting.CompressionCrafting.addRecipe(
 	<mekanism:basicblock:6>.withTag({tier: 4, mekData: {storedItem: {id: "mekanism:salt", Count: 1 as byte, Damage: 0 as short}, itemCount: 2147483647}}), 
 	<mekanism:salt>, 2000, <mekanism:basicblock:6>.withTag({tier: 3}), 2000000, 100000
 );
@@ -634,7 +634,7 @@ val bioFuelList = {
 } as int[IIngredient];
 
 for input, count in bioFuelList {
-	scripts.wrap.mekanism.crusher.addRecipe(input, BF * count);
+	mods.mekanism.crusher.addRecipe(input, BF * count);
 }
 
 // mods.mekanism.crusher.removeRecipe(IIngredient outputStack, @Optional IIngredient inputStack);

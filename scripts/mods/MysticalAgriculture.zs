@@ -55,7 +55,7 @@ craft.remake(<mysticalagriculture:ultimate_furnace>, ["pretty",
 
 # Master Infusion Crystal
 	recipes.remove(<mysticalagriculture:master_infusion_crystal>);
-	scripts.wrap.astralsorcery.Altar.addConstellationAltarRecipe("enigmatica2expert:shaped/internal/altar/master_infusion_crystal",
+	mods.astralsorcery.Altar.addConstellationAltarRecipe("enigmatica2expert:shaped/internal/altar/master_infusion_crystal",
 		<mysticalagriculture:master_infusion_crystal>, 3000, 600,
 	[<botania:rune:12>, <botania:storage:3>, <botania:rune:15>,
 	<botania:storage:2>, <matc:supremiumcrystal>.anyDamage(), <botania:storage>,
@@ -105,7 +105,7 @@ for i in 0 .. 6 {
 		? <mysticalagradditions:insanium:1>
 		: <mysticalagriculture:crafting>.definition.makeStack(i + 17);
 	recipes.remove(output);
-	if(i==5) scripts.wrap.forestry.Carpenter.addRecipe(output, shape, 40, <liquid:sewage> * 1000);
+	if(i==5) mods.forestry.Carpenter.addRecipe(output, shape, 40, <liquid:sewage> * 1000);
 	else recipes.addShaped(output, shape);
 
 	# Furnaces
@@ -191,7 +191,7 @@ function addTieredRecipe(
 			"2²2"+
 			"╳2╳"+
 			"○○□□"], L);
-		scripts.wrap.astralsorcery.Altar.addAttunementAltarRecipe(
+		mods.astralsorcery.Altar.addAttunementAltarRecipe(
 			craft.uniqueRecipeName(output, grid),	output, 500, 200, grid.shapeless());
 	} else
 
@@ -201,7 +201,7 @@ function addTieredRecipe(
 			"3³3"+
 			"╳3╳"+
 			"○○□□"], L);
-		scripts.wrap.astralsorcery.Altar.addAttunementAltarRecipe(
+		mods.astralsorcery.Altar.addAttunementAltarRecipe(
 			craft.uniqueRecipeName(output, grid),	output, 500, 200, grid.shapeless());
 	} else
 
@@ -212,7 +212,7 @@ function addTieredRecipe(
 			"╳4╳"+
 			"○○□□"+
 			"▪▪▪▪▪▪▪▪"], L);
-		scripts.wrap.astralsorcery.Altar.addConstellationAltarRecipe(
+		mods.astralsorcery.Altar.addConstellationAltarRecipe(
 			craft.uniqueRecipeName(output, grid),	output, 1500, 250, grid.shapeless());
 	} else
 
@@ -225,7 +225,7 @@ function addTieredRecipe(
 			"▬▬▬▬▬▬▬▬"+
 			"○○□□"+
 			"☼"], L);
-		scripts.wrap.astralsorcery.Altar.addTraitAltarRecipe(
+		mods.astralsorcery.Altar.addTraitAltarRecipe(
 			craft.uniqueRecipeName(output, grid),	output, 3500, 300,
 			grid.shapeless(), "astralsorcery.constellation." ~ constelation
 		);
@@ -241,7 +241,7 @@ function addTieredRecipe(
 			"○○□□▲▲○○"+
 			"‗‗‗‗"+
 			"☼"], L);
-		scripts.wrap.astralsorcery.Altar.addTraitAltarRecipe(
+		mods.astralsorcery.Altar.addTraitAltarRecipe(
 			craft.uniqueRecipeName(output, grid),	output, 5500, 600,
 			grid.shapeless(), "astralsorcery.constellation." ~ constelation
 		);
@@ -440,11 +440,11 @@ for i in 0 .. 4 {
 
 	# Replace casting of cores to Base ones
 	mods.tconstruct.Casting.removeTableRecipe(cores[i]);
-	scripts.wrap.tconstruct.Casting.addTableRecipe(bases[i], <tconstruct:cast>     .withTag({PartType: castNames[i]}), <liquid:supremium>, l, false);
-	scripts.wrap.tconstruct.Casting.addTableRecipe(bases[i], <tconstruct:clay_cast>.withTag({PartType: castNames[i]}), <liquid:supremium>, l, true);
+	mods.tconstruct.Casting.addTableRecipe(bases[i], <tconstruct:cast>     .withTag({PartType: castNames[i]}), <liquid:supremium>, l, false);
+	mods.tconstruct.Casting.addTableRecipe(bases[i], <tconstruct:clay_cast>.withTag({PartType: castNames[i]}), <liquid:supremium>, l, true);
 
 	# Add core base melting
-	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:supremium> * l, bases[i]);
+	mods.tconstruct.Melting.addRecipe(<liquid:supremium> * l, bases[i]);
 
 	# Add recipe of making core from base
 	# mods.rt.RandomThingsTweaker.addAnvilRecipe(IItemStack input1, IItemStack input2, IItemStack result, int levelcost);
@@ -703,7 +703,7 @@ scripts.category.expire_in_block.set(<tconstruct:shard>.withTag({Material: "ma.p
 
 function remakeInAltair(oldRecipeName as string, output as IItemStack, gridStr as string[], ingrsMap as IIngredient[string]) as void {
 	recipes.removeByRecipeName(oldRecipeName);
-	scripts.wrap.astralsorcery.Altar.addDiscoveryAltarRecipe(craft.uniqueRecipeName(output), output, 200, 800, Grid(gridStr, ingrsMap).shapeless(true));
+	mods.astralsorcery.Altar.addDiscoveryAltarRecipe(craft.uniqueRecipeName(output), output, 200, 800, Grid(gridStr, ingrsMap).shapeless(true));
 }
 
 # Remake some essence in other machines rather then in crafting table

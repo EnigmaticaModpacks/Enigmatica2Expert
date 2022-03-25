@@ -70,8 +70,6 @@ function logAdditionalDebugData(player as IPlayer) {
     "/ct recipes furnace",
     "/ct recipes",
     // "/ct names burntime",
-    "/defaultoptions saveKeys",
-    "/defaultoptions saveOptions",
   ] as string[];
 
   for cmd in commandsToRun {

@@ -136,7 +136,7 @@ var list = {
 	"α β α β α"], list);
 
 # Ultimate Ingot
-	scripts.wrap.extendedcrafting.TableCrafting.addShapeless(0, <extendedcrafting:material:32>, 
+	mods.extendedcrafting.TableCrafting.addShapeless(0, <extendedcrafting:material:32>, 
 	[
 		<ore:ingotIridium>,
 		<ore:ingotTitaniumIridium>,
@@ -223,7 +223,7 @@ var list = {
 	
 
 # Ultimate Block
-	scripts.wrap.extendedcrafting.TableCrafting.addShapeless(0, <extendedcrafting:storage:4>, 
+	mods.extendedcrafting.TableCrafting.addShapeless(0, <extendedcrafting:storage:4>, 
 	[
 		<ore:blockIridium>,
 		<ore:blockTitaniumIridium>,
@@ -309,13 +309,13 @@ var list = {
 	]);
 
 # Creative Builder's Wand
-	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <extrautils2:itemcreativebuilderswand>, 
+	mods.extendedcrafting.TableCrafting.addShaped(0, <extrautils2:itemcreativebuilderswand>, 
 	[[<extrautils2:itembuilderswand>, <extrautils2:itembuilderswand>, <extrautils2:itembuilderswand>], 
 	[<extrautils2:itembuilderswand>, <extrautils2:itembuilderswand>, <extrautils2:itembuilderswand>], 
 	[<extrautils2:itembuilderswand>, <extrautils2:itembuilderswand>, <extrautils2:itembuilderswand>]]);  
 
 # Creative RFTools Screen
-	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<rftools:creative_screen>, 
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<rftools:creative_screen>, 
 	100000000, 1000000, <rftools:screen_controller>, 
 	[<rftools:screen>, <rftools:screen>, <rftools:screen>, 
 	<rftools:screen>, <rftools:screen>, <rftools:screen>, 

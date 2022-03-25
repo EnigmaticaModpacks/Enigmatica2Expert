@@ -124,7 +124,7 @@ mods.botania.Apothecary.addRecipe("orechidVacuam", [
 	[<botania:bifrostperm>, <botania:bifrostperm>, <botania:bifrostperm>]]);
 
 # Gaia Spirit Duplication
-	scripts.wrap.bloodmagic.AlchemyTable.addRecipe(<botania:manaresource:5> * 4, 
+	mods.bloodmagic.AlchemyTable.addRecipe(<botania:manaresource:5> * 4, 
 	[<botania:manaresource:5>, <bloodmagic:item_demon_crystal:1>, <bloodmagic:item_demon_crystal:2>, 
 	<bloodmagic:item_demon_crystal:3>, <bloodmagic:item_demon_crystal:4>, <bloodmagic:points_upgrade>], 100000, 300, 4);
 
@@ -148,15 +148,15 @@ mods.botania.Apothecary.addRecipe("orechidVacuam", [
 
 # Livingrock
 	mods.botania.PureDaisy.removeRecipe(<botania:livingrock>);
-	scripts.wrap.botania.PureDaisy.addRecipe(<thaumcraft:stone_arcane>, <botania:livingrock>);
+	mods.botania.PureDaisy.addRecipe(<thaumcraft:stone_arcane>, <botania:livingrock>);
 
 # Livingwood
 	mods.botania.PureDaisy.removeRecipe(<botania:livingwood>);
-	scripts.wrap.botania.PureDaisy.addRecipe(<astralsorcery:blockinfusedwood>, <botania:livingwood>);
+	mods.botania.PureDaisy.addRecipe(<astralsorcery:blockinfusedwood>, <botania:livingwood>);
 
 # Obsidian cheaper
 	mods.botania.PureDaisy.removeRecipe(<minecraft:obsidian>);
-	scripts.wrap.botania.PureDaisy.addRecipe(<tconstruct:firewood>, <minecraft:obsidian>);
+	mods.botania.PureDaisy.addRecipe(<tconstruct:firewood>, <minecraft:obsidian>);
 
 # Gaia Ingot
 	recipes.remove(<botania:manaresource:14>);
@@ -176,7 +176,7 @@ mods.botania.Apothecary.addRecipe("orechidVacuam", [
 
 # Elven Gateway Core
 	recipes.remove(<botania:alfheimportal>);
-	scripts.wrap.astralsorcery.Altar.addConstellationAltarRecipe("enigmatica2expert:shaped/internal/altar/elven_gateway_core",
+	mods.astralsorcery.Altar.addConstellationAltarRecipe("enigmatica2expert:shaped/internal/altar/elven_gateway_core",
 		<botania:alfheimportal>, 2800, 300, [
             <ore:livingwood>, <botania:livingwood:5>, <ore:livingwood>,
             <botania:livingwood:5>, <botania:petalblock:5>, <botania:livingwood:5>,
@@ -189,7 +189,7 @@ mods.botania.Apothecary.addRecipe("orechidVacuam", [
 
 # Petal Apothecary
 	recipes.remove(<botania:altar>);
-	scripts.wrap.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/petal_apothecary",
+	mods.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/petal_apothecary",
 	<botania:altar>, 200, 450, 
 	[<minecraft:stone_slab:3>, <botania:petal>, <minecraft:stone_slab:3>,
     null, <ore:cobblestone>, null,
@@ -197,13 +197,13 @@ mods.botania.Apothecary.addRecipe("orechidVacuam", [
 	
 # Runic Altar
 	recipes.remove(<botania:runealtar>);
-	scripts.wrap.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/runic_altar1",
+	mods.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/runic_altar1",
 	<botania:runealtar>, 200, 800, 
 	[null, <astralsorcery:itemrockcrystalsimple>.anyDamage(), null,
     <botania:livingrock>, <botania:manaresource:1>, <botania:livingrock>,
     <botania:livingrock>, <botania:livingrock>, <botania:livingrock>]);
 	
-	scripts.wrap.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/runic_altar2",
+	mods.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/runic_altar2",
 	<botania:runealtar>, 200, 800, 
 	[null, <astralsorcery:itemrockcrystalsimple>.anyDamage(), null,
     <botania:livingrock>, <botania:manaresource:2>, <botania:livingrock>,
@@ -327,15 +327,15 @@ mods.botania.ManaInfusion.addAlchemy(<iceandfire:myrmex_desert_resin>, <iceandfi
 mods.botania.ManaInfusion.addAlchemy(<iceandfire:myrmex_jungle_resin>, <iceandfire:myrmex_desert_resin>, 120);
 
 # Colored Glass -> Quark Cave Crystals
-scripts.wrap.botania.PureDaisy.addRecipe(<ore:blockGlassWhite>,  <quark:crystal>);
-scripts.wrap.botania.PureDaisy.addRecipe(<ore:blockGlassRed>,    <quark:crystal:1>);
-scripts.wrap.botania.PureDaisy.addRecipe(<ore:blockGlassOrange>, <quark:crystal:2>);
-scripts.wrap.botania.PureDaisy.addRecipe(<ore:blockGlassYellow>, <quark:crystal:3>);
-scripts.wrap.botania.PureDaisy.addRecipe(<ore:blockGlassLime>,   <quark:crystal:4>);
-scripts.wrap.botania.PureDaisy.addRecipe(<ore:blockGlassCyan>,   <quark:crystal:5>);
-scripts.wrap.botania.PureDaisy.addRecipe(<ore:blockGlassBlue>,   <quark:crystal:6>);
-scripts.wrap.botania.PureDaisy.addRecipe(<ore:blockGlassPurple>, <quark:crystal:7>);
-scripts.wrap.botania.PureDaisy.addRecipe(<ore:blockGlassBlack>,  <quark:crystal:8>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassWhite>,  <quark:crystal>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassRed>,    <quark:crystal:1>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassOrange>, <quark:crystal:2>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassYellow>, <quark:crystal:3>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassLime>,   <quark:crystal:4>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassCyan>,   <quark:crystal:5>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassBlue>,   <quark:crystal:6>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassPurple>, <quark:crystal:7>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassBlack>,  <quark:crystal:8>);
 
 # --------------------------
 # Mana diamond from Rat Diamond recipe

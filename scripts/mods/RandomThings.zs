@@ -34,7 +34,7 @@ recipes.addShaped("ender_bucket2",
 utils.clearFluid(<randomthings:reinforcedenderbucket>);
 
 # Add recipe
-scripts.wrap.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(<randomthings:ingredient:9> * 9, <minecraft:emerald_block>);
+mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(<randomthings:ingredient:9> * 9, <minecraft:emerald_block>);
 
 # Floo dust
 recipes.remove(<randomthings:ingredient:7>);
@@ -127,7 +127,7 @@ recipes.addShaped("Spectre Saplings", <randomthings:spectresapling> * 10, [
 	[null, <mysticalagriculture:nature_essence>, null]]);
 
 # Oxygen bottle
-scripts.wrap.thermalexpansion.Transposer.addFillRecipe(<randomthings:bottleofair>, <minecraft:glass_bottle>, <liquid:oxygen> * 1000, 25000);
+mods.thermalexpansion.Transposer.addFillRecipe(<randomthings:bottleofair>, <minecraft:glass_bottle>, <liquid:oxygen> * 1000, 25000);
 
 # Lesser Magic Bean
 craft.remake(<randomthings:beans:1>, ["pretty",
@@ -162,7 +162,7 @@ craft.remake(<randomthings:imbuingstation>, ["pretty",
 
 
 # Blood stone from moon stone
-scripts.wrap.inworldcrafting.FluidToItem.transform(<randomthings:rezstone>, <fluid:blood>, [<extrautils2:ingredients:5>]);
+mods.inworldcrafting.FluidToItem.transform(<randomthings:rezstone>, <fluid:blood>, [<extrautils2:ingredients:5>]);
 <randomthings:rezstone>.maxStackSize = 64;
 
 # [Blackout_Powder*4] from [Bio_Coal][+2]
@@ -232,7 +232,7 @@ craft.remake(<randomthings:weatheregg:2> * 4, ["pretty",
 
 # Spectre String harder
 recipes.remove(<randomthings:ingredient:12>);
-scripts.wrap.inworldcrafting.FluidToItem.transform(<randomthings:ingredient:12> * 4, <fluid:liquid_sunshine>, [
+mods.inworldcrafting.FluidToItem.transform(<randomthings:ingredient:12> * 4, <fluid:liquid_sunshine>, [
 	<randomthings:ingredient:2>,
 	<mysticalagriculture:crafting:23>,
 ]);

@@ -105,7 +105,7 @@ recipes.removeByRecipeName("animania:straw");
 # Prime meat recipes
 for i, meat in primeMeatCooked { 
 	furnace.remove(meat);
-	scripts.wrap.inworldcrafting.FireCrafting.addRecipe(meat, primeMeatRaw[i], 20);
+	mods.inworldcrafting.FireCrafting.addRecipe(meat, primeMeatRaw[i], 20);
     mods.rats.recipes.addChefRatRecipe(primeMeatRaw[i], meat);
 }
 
@@ -136,10 +136,10 @@ craft.remake(<animania:block_hamster_wheel>, ["pretty",
 
 # Skyblock Alt
 var sphere = <architecturecraft:shape>.withTag({Shape: 33, BaseName: "minecraft:planks", BaseData: 0});
-scripts.wrap.tconstruct.Casting.addBasinRecipe(<animania:wild_hive>, sphere, <liquid:oliveoil>, 1000, true, 100);
-scripts.wrap.tconstruct.Casting.addBasinRecipe(<animania:wild_hive>, sphere, <liquid:animania_honey>, 1000, true, 100);
-scripts.wrap.tconstruct.Casting.addBasinRecipe(<animania:wild_hive>, sphere, <liquid:for.honey>, 1000, true, 100);
-scripts.wrap.tconstruct.Casting.addBasinRecipe(<animania:wild_hive>, sphere, <liquid:honey>, 1000, true, 100);
+mods.tconstruct.Casting.addBasinRecipe(<animania:wild_hive>, sphere, <liquid:oliveoil>, 1000, true, 100);
+mods.tconstruct.Casting.addBasinRecipe(<animania:wild_hive>, sphere, <liquid:animania_honey>, 1000, true, 100);
+mods.tconstruct.Casting.addBasinRecipe(<animania:wild_hive>, sphere, <liquid:for.honey>, 1000, true, 100);
+mods.tconstruct.Casting.addBasinRecipe(<animania:wild_hive>, sphere, <liquid:honey>, 1000, true, 100);
 
 # Spawn random animals
 // ---------------------------

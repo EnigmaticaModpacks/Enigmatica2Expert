@@ -38,11 +38,11 @@ function (
   if (isShapeless) {
     var ingrs = grid.shapeless();
     if (ingrs.length <= 9) return false;
-    scripts.wrap.extendedcrafting.TableCrafting.addShapeless(output, ingrs);
+    mods.extendedcrafting.TableCrafting.addShapeless(output, ingrs);
   } else {
     var grd = grid.shaped();
     if (max(grid.X, grid.Y) <= 3) return false;
-    scripts.wrap.extendedcrafting.TableCrafting.addShaped(output, grd);
+    mods.extendedcrafting.TableCrafting.addShaped(output, grd);
   }
 
   if (!isNull(recipeFunction) || !isNull(recipeAction)) {

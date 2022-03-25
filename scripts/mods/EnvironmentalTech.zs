@@ -240,7 +240,7 @@ for i in 0 .. 6 {
 
 		if (i==3) {
 			recipes.remove(void_miner);
-			scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, void_miner, Grid(["𝓹",
+			mods.extendedcrafting.TableCrafting.addShaped(0, void_miner, Grid(["𝓹",
 				"B C B",
 				"R P R",
 				"I H I"], evtIngrs).shaped()); }

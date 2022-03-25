@@ -23,7 +23,7 @@ import crafttweaker.item.IIngredient;
 	[<appliedenergistics2:smooth_sky_stone_block>, <randomthings:advancedredstonetorch_on>, <appliedenergistics2:smooth_sky_stone_block>]]);
 
 # Melting Ender Lilies
-	scripts.wrap.thermalexpansion.Crucible.addRecipe(<liquid:ender> * 2000, <extrautils2:enderlilly>, 100000);
+	mods.thermalexpansion.Crucible.addRecipe(<liquid:ender> * 2000, <extrautils2:enderlilly>, 100000);
 
 # Removing Easy Moon Stone recipe
 	recipes.remove(<extrautils2:ingredients:5>);
@@ -142,15 +142,15 @@ scripts.process.mash(<minecraft:ender_pearl> , <extrautils2:endershard> * 16, nu
 
 # Blue quartz as ultimate grid user
 //mods.extrautils2.Resonator.add(IItemStack output, IItemStack input, int energy, @Optional boolean addOwnerTag);
-scripts.wrap.extrautils2.Resonator.add(<extrautils2:decorativesolid:6>, <botania:quartztypemana>, 600 * 100);
+mods.extrautils2.Resonator.add(<extrautils2:decorativesolid:6>, <botania:quartztypemana>, 600 * 100);
 
 # Make quartzburnt harder (was 8 GP)
 mods.extrautils2.Resonator.remove(<extrautils2:decorativesolid:7>);
-scripts.wrap.extrautils2.Resonator.add(<extrautils2:decorativesolid:7>, <minecraft:quartz_block>, 80 * 100);
+mods.extrautils2.Resonator.add(<extrautils2:decorativesolid:7>, <minecraft:quartz_block>, 80 * 100);
 
 # Upgrade base from demonic ingot
 mods.extrautils2.Resonator.remove(<extrautils2:ingredients:9>);
-scripts.wrap.extrautils2.Resonator.add(<extrautils2:ingredients:9>, <extrautils2:ingredients:11> * 2, 8 * 100);
+mods.extrautils2.Resonator.add(<extrautils2:ingredients:9>, <extrautils2:ingredients:11> * 2, 8 * 100);
 
 # Harder Player Chest (was most easy player interface)
 craft.remake(<extrautils2:playerchest>, ["pretty",
@@ -350,13 +350,13 @@ function getCreativeHarvest(item as IItemStack) as IItemStack{
 
 # Infinity item sources
 val BQ = <extrautils2:decorativesolid:6>; # Blue Quartz
-scripts.wrap.extrautils2.Resonator.add(getCreativeHarvest(BQ), BQ, 1300 * 100);
+mods.extrautils2.Resonator.add(getCreativeHarvest(BQ), BQ, 1300 * 100);
 
 for item in [
 	<minecraft:dirt>,
 	<minecraft:concrete:7>,
 ] as IItemStack[] {
-	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0,
+	mods.extendedcrafting.TableCrafting.addShaped(0,
 		getCreativeHarvest(item),
 		scripts.craft.grid.Grid(["pretty",
 		"d d d",
@@ -376,7 +376,7 @@ scripts.process.melt(<extrautils2:ironwood_planks:0>, <liquid:iron> *  8, "No Ex
 # Burnt
 scripts.process.melt(<extrautils2:ironwood_log:1>   , <liquid:iron> * 144, "No Exceptions");
 scripts.process.melt(<extrautils2:ironwood_planks:1>, <liquid:iron> *  80, "No Exceptions");
-scripts.wrap.tconstruct.Casting.addTableRecipe(<extrautils2:ironwood_sapling>, <ore:treeSapling>, <liquid:iron>, 576, true);
+mods.tconstruct.Casting.addTableRecipe(<extrautils2:ironwood_sapling>, <ore:treeSapling>, <liquid:iron>, 576, true);
 
 # Rat diamond alt
 # [Climograph Base Unit] from [Machine Block][+3]

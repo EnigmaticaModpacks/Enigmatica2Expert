@@ -149,7 +149,7 @@ craft.remake(<appliedenergistics2:drive>, ["pretty",
 
 # Matter Condenser
 	recipes.remove(<appliedenergistics2:condenser>);	
-	scripts.wrap.extendedcrafting.CompressionCrafting.addRecipe(<appliedenergistics2:condenser>, 
+	mods.extendedcrafting.CompressionCrafting.addRecipe(<appliedenergistics2:condenser>, 
 	<minecraft:piston>, 10000, <excompressum:double_compressed_diamond_hammer>, 1000000000, 1000000);
 	
 # [Molecular Assembler] from [Augment_ Pattern Validation][+4]
@@ -193,16 +193,16 @@ craft.remake(<appliedenergistics2:energy_acceptor>, ["pretty",
 	[<ic2:resource:11>, <minecraft:sticky_piston>, <ic2:resource:11>]]);
 
 # Presses with TE Compactor, press mode
-	scripts.wrap.thermalexpansion.Compactor.addPressRecipe(<appliedenergistics2:material:13>, <appliedenergistics2:quartz_block>, 50000);
-	scripts.wrap.thermalexpansion.Compactor.addPressRecipe(<appliedenergistics2:material:14>, <minecraft:diamond_block>, 50000);
-	scripts.wrap.thermalexpansion.Compactor.addPressRecipe(<appliedenergistics2:material:15>, <ic2:plate:11>, 50000);
-	scripts.wrap.thermalexpansion.Compactor.addPressRecipe(<appliedenergistics2:material:19>, <extrautils2:compressedsand:1>, 50000);
+	mods.thermalexpansion.Compactor.addPressRecipe(<appliedenergistics2:material:13>, <appliedenergistics2:quartz_block>, 50000);
+	mods.thermalexpansion.Compactor.addPressRecipe(<appliedenergistics2:material:14>, <minecraft:diamond_block>, 50000);
+	mods.thermalexpansion.Compactor.addPressRecipe(<appliedenergistics2:material:15>, <ic2:plate:11>, 50000);
+	mods.thermalexpansion.Compactor.addPressRecipe(<appliedenergistics2:material:19>, <extrautils2:compressedsand:1>, 50000);
 
 # Charged Certus Quartz -> Certus Dust
-	scripts.wrap.thermalexpansion.Pulverizer.addRecipe(<appliedenergistics2:material:2>, <appliedenergistics2:material:1>, 2000, <appliedenergistics2:material:2>, 20);
+	mods.thermalexpansion.Pulverizer.addRecipe(<appliedenergistics2:material:2>, <appliedenergistics2:material:1>, 2000, <appliedenergistics2:material:2>, 20);
 		
 # Lapis -> Dust
-	scripts.wrap.appliedenergistics2.Grinder.addRecipe(<ic2:dust:9>, <minecraft:dye:4>, 4);
+	mods.appliedenergistics2.Grinder.addRecipe(<ic2:dust:9>, <minecraft:dye:4>, 4);
 
 
 
@@ -395,10 +395,10 @@ val qglass_grid = ["pretty",
   "• • •",
   "•   •",
   "• • •"] as string[];
-scripts.wrap.forestry.ThermionicFabricator.addCast(<appliedenergistics2:quartz_glass> * 10, Grid(qglass_grid, {
+mods.forestry.ThermionicFabricator.addCast(<appliedenergistics2:quartz_glass> * 10, Grid(qglass_grid, {
   "•": <ore:dustQuartz>,
 }).shaped(), <liquid: glass> * 1000, <forestry:wax_cast:*>);
-scripts.wrap.forestry.ThermionicFabricator.addCast(<appliedenergistics2:quartz_glass> * 10, Grid(qglass_grid, {
+mods.forestry.ThermionicFabricator.addCast(<appliedenergistics2:quartz_glass> * 10, Grid(qglass_grid, {
   "•": <ore:dustCertusQuartz>,
 }).shaped(), <liquid: glass> * 1000, <forestry:wax_cast:*>);
 

@@ -70,7 +70,7 @@ craft.make(<minecraft:web> * 16, ["pretty",
 
 # Buff Pulsating mesh output
 mods.forestry.Carpenter.removeRecipe(<minecraft:ender_pearl>);
-scripts.wrap.forestry.Carpenter.addRecipe(<actuallyadditions:block_misc:6> * 4,
+mods.forestry.Carpenter.addRecipe(<actuallyadditions:block_misc:6> * 4,
 	Grid(["AA","AA"], {A:<forestry:crafting_material:1>}).shaped(), 60);
 
 # Buff propolis to slime (was 1 poor slime ball)
@@ -105,19 +105,19 @@ val scentPanelGrid = Grid(["pretty",
 	"H": <ore:dropHoneydew>, # Honeydew
 }).shaped();
 mods.forestry.Carpenter.removeRecipe(<forestry:crafting_material:6>);
-scripts.wrap.forestry.Carpenter.addRecipe(<forestry:crafting_material:6>, scentPanelGrid, 40, <liquid:for.honey> * 500);
-scripts.wrap.forestry.Carpenter.addRecipe(<forestry:crafting_material:6>, scentPanelGrid, 40, <liquid:honey>     * 500);
+mods.forestry.Carpenter.addRecipe(<forestry:crafting_material:6>, scentPanelGrid, 40, <liquid:for.honey> * 500);
+mods.forestry.Carpenter.addRecipe(<forestry:crafting_material:6>, scentPanelGrid, 40, <liquid:honey>     * 500);
 
 
 # ---------------------------
 # Remake old combs
 function reprocessComb(comb as IItemStack, outputs as WeightedItemStack[]) as void {
 	mods.forestry.Centrifuge.removeRecipe(comb);
-	scripts.wrap.forestry.Centrifuge.addRecipe(outputs, comb, 40);
+	mods.forestry.Centrifuge.addRecipe(outputs, comb, 40);
 
 	if(!comb.matches(<forestry:bee_combs:9>))
 		mods.thermalexpansion.Centrifuge.removeRecipe(comb);
-	scripts.wrap.thermalexpansion.Centrifuge.addRecipe(outputs, comb, null, 2000);
+	mods.thermalexpansion.Centrifuge.addRecipe(outputs, comb, null, 2000);
 
 	// Crushing block as shortcut for non-forestry way
   var chances = [] as float[];
@@ -315,7 +315,7 @@ zenClass BeeHelper {
 			next("Potter"  ); addTinkersCentrifuges();
 			next("Tinsmith"); addTinkersCentrifuges();
 			next("Рaughty" ); mods.botania.ManaInfusion.addInfusion(currOutList()[2], c['💧'], 100); mods.botania.ManaInfusion.addAlchemy(currOutList()[3], c['💧'], 200); mods.botania.ManaInfusion.addConjuration(currOutList()[4], c['💧'], 500); 
-			next("Egoistic"); scripts.wrap.actuallyadditions.AtomicReconstructor.addRecipe(c['🍯'], c['💧'], 10000);
+			next("Egoistic"); mods.actuallyadditions.AtomicReconstructor.addRecipe(c['🍯'], c['💧'], 10000);
 			next("Vain"    ); scripts.process.fill(c['💧'],  <liquid:base_essence>,  c['🍯'],  "Except: Casting DryingBasin MechanicalDryingBasin");
 			next("Tinker"  ); mods.thermalexpansion.Centrifuge.removeRecipe(c['⚙️']); addTinkersCentrifuges();
 			next("Artisan" ); mods.thermalexpansion.Centrifuge.removeRecipe(c['⚙️']); addTinkersCentrifuges();

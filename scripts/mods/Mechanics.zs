@@ -20,9 +20,9 @@ scripts.process.melt(<mechanics:heavy_ingot>,  <liquid:heavy_metal> * 144,  "No 
 scripts.process.melt(<mechanics:heavy_block>,  <liquid:heavy_metal> * 1296, "No Exceptions");
 
 # Casting
-scripts.wrap.tconstruct.Casting.addBasinRecipe(<mechanics:heavy_block> , null, <liquid:heavy_metal>, 1296);
-scripts.wrap.tconstruct.Casting.addTableRecipe(<mechanics:heavy_ingot> , <tconstruct:cast_custom:0>, <liquid:heavy_metal>, 144);
-scripts.wrap.tconstruct.Casting.addTableRecipe(<mechanics:heavy_nugget>, <tconstruct:cast_custom:1>, <liquid:heavy_metal>, 16);
+mods.tconstruct.Casting.addBasinRecipe(<mechanics:heavy_block> , null, <liquid:heavy_metal>, 1296);
+mods.tconstruct.Casting.addTableRecipe(<mechanics:heavy_ingot> , <tconstruct:cast_custom:0>, <liquid:heavy_metal>, 144);
+mods.tconstruct.Casting.addTableRecipe(<mechanics:heavy_nugget>, <tconstruct:cast_custom:1>, <liquid:heavy_metal>, 16);
 
 # Heavy Crushing block
 val compressed1 = <mechanics:heavy_block>;

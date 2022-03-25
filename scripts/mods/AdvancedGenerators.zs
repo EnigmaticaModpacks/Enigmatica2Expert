@@ -11,10 +11,10 @@ import crafttweaker.item.IItemStack;
 	[<ore:ingotSilver>, <ore:ingotTin>, <ore:ingotSilver>]]);
 
 # Iron Tubing
-scripts.wrap.actuallyadditions.AtomicReconstructor.addRecipe(<advgenerators:iron_tubing>, <actuallyadditions:item_misc:7>, 10000);
+mods.actuallyadditions.AtomicReconstructor.addRecipe(<advgenerators:iron_tubing>, <actuallyadditions:item_misc:7>, 10000);
 
 # Redstone-Iron Tubing
-scripts.wrap.extrautils2.Resonator.add(<advgenerators:iron_wiring>, <advgenerators:iron_tubing>, 20 * 100);
+mods.extrautils2.Resonator.add(<advgenerators:iron_wiring>, <advgenerators:iron_tubing>, 20 * 100);
 
 # [Iron Frame*2] from [Iron Mechanical Component][+1]
 craft.remake(<advgenerators:iron_frame> * 2, ["pretty",

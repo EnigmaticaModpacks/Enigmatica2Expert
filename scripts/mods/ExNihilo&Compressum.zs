@@ -33,7 +33,7 @@ val crushingInMachines = [
 for i, inputArr in crushingInMachines {
 	val normal     = inputArr[0];
 	val crushed    = inputArr[1];
-	if(!isNull(normal) && !isNull(crushed)) scripts.wrap.thermalexpansion.Pulverizer.addRecipe(crushed, normal, 2000);
+	if(!isNull(normal) && !isNull(crushed)) mods.thermalexpansion.Pulverizer.addRecipe(crushed, normal, 2000);
 
 	if(inputArr.length >= 3) {
 		val compressed = inputArr[2];

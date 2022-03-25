@@ -38,4 +38,4 @@ remakeShaped("rustic:condenser_advanced", <rustic:condenser_advanced>, [[null, <
 
 # Manual recipes
 mods.mekanism.infuser.removeRecipe(<mekanism:enrichedalloy>);
-scripts.wrap.mekanism.infuser.addRecipe("REDSTONE", 10, <ore:ingotFakeIron>, <mekanism:enrichedalloy>);
+mods.mekanism.infuser.addRecipe("REDSTONE", 10, <ore:ingotFakeIron>, <mekanism:enrichedalloy>);

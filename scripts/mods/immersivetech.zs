@@ -24,7 +24,7 @@ craft.shapeless(<immersivetech:stone_decoration> * 8, "CCCC⌂CCCC", {
 # Harder Electolyze
 mods.nuclearcraft.electrolyser.removeRecipeWithInput([<fluid:water> * 1000]);
 mods.mekanism.separator.removeRecipe(<liquid:water>);
-scripts.wrap.mekanism.separator.addRecipe(<liquid:water> * 10, 800, <gas:hydrogen> * 2, <gas:oxygen>);
+mods.mekanism.separator.addRecipe(<liquid:water> * 10, 800, <gas:hydrogen> * 2, <gas:oxygen>);
 mods.immersivetechnology.ElectrolyticCrucibleBattery.removeRecipe(<fluid:water> * 500);
 mods.immersivetechnology.ElectrolyticCrucibleBattery.addRecipe(
   <liquid:hydrogen> * 1000, <liquid:oxygen> * 500, <liquid:deuterium> * 50,

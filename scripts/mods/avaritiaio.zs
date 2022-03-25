@@ -27,4 +27,4 @@ val grindingBalls = [
 <enderio:item_alloy_endergy_ball:4>,
 ] as IItemStack[];
 
-scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<avaritiaio:grindingballinfinity>, 2000000000, 20000000, <avaritiaio:grindingballneutronium>, grindingBalls);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<avaritiaio:grindingballinfinity>, 2000000000, 20000000, <avaritiaio:grindingballneutronium>, grindingBalls);

@@ -7,7 +7,7 @@ import scripts.craft.grid.Grid;
 # Fixing fruit juice amount from tomatos
 for tomato in <ore:cropTomato>.items {
 	mods.forestry.Squeezer.removeRecipe(<liquid:juice>, [tomato]);	
-	scripts.wrap.forestry.Squeezer.addRecipe(<liquid:juice> * 100, [tomato], 100);
+	mods.forestry.Squeezer.addRecipe(<liquid:juice> * 100, [tomato], 100);
 }
 
 # Forester's Manual
@@ -18,7 +18,7 @@ for tomato in <ore:cropTomato>.items {
 
 # Intricate Circuit Board
 mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:3>);
-scripts.wrap.forestry.Carpenter.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}), 
+mods.forestry.Carpenter.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}), 
   scripts.craft.grid.Grid(["pretty",
 	"◊ B ◊",
   "◊ E ◊",
@@ -40,7 +40,7 @@ scripts.wrap.forestry.Carpenter.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as
 
 # [Hardened Casing] from [Sturdy Casing][+1]
 mods.forestry.Carpenter.removeRecipe(<forestry:hardened_machine>);
-scripts.wrap.forestry.Carpenter.addRecipe(<forestry:hardened_machine>, 
+mods.forestry.Carpenter.addRecipe(<forestry:hardened_machine>, 
   scripts.craft.grid.Grid(["pretty",
   "◊   ◊",
   "  ⌂  ",
@@ -132,22 +132,22 @@ val thingsToferment = [
 
 for thing in thingsToferment {
     for liquid, ratio in FermenterFluid {
-        scripts.wrap.forestry.Fermenter.addRecipe(<liquid:biomass>, thing, liquid, 50, ratio);
+        mods.forestry.Fermenter.addRecipe(<liquid:biomass>, thing, liquid, 50, ratio);
     }
 }
 
 #Make melons give fruit juice
-scripts.wrap.forestry.Squeezer.addRecipe(<liquid:juice> * 15, [<minecraft:melon>], 8);
+mods.forestry.Squeezer.addRecipe(<liquid:juice> * 15, [<minecraft:melon>], 8);
 
 # Remove and hide charcoal block
 utils.rh(<forestry:charcoal>);
 
 # Remove pulp recipe
 mods.forestry.Carpenter.removeRecipe(<forestry:wood_pulp>);
-scripts.wrap.forestry.Carpenter.addRecipe(<thermalfoundation:material:800>, [[<ore:logWood>]], 40, <liquid:water> * 250);
+mods.forestry.Carpenter.addRecipe(<thermalfoundation:material:800>, [[<ore:logWood>]], 40, <liquid:water> * 250);
 
 mods.forestry.Carpenter.removeRecipe(<forestry:letters>);
-scripts.wrap.forestry.Carpenter.addRecipe(<forestry:letters>, Grid(["AAA","AAA"], {A: <thermalfoundation:material:800>}).shaped(), 40, <liquid:water> * 250);
+mods.forestry.Carpenter.addRecipe(<forestry:letters>, Grid(["AAA","AAA"], {A: <thermalfoundation:material:800>}).shaped(), 40, <liquid:water> * 250);
 
 # Fertilizer ask less sand but more Apatite
 # [Fertilizer*8] from [Sand][+1]
@@ -204,14 +204,14 @@ for name in bagNames {
 
 # Use OreDict recipe for impregnated stick
 mods.forestry.Carpenter.removeRecipe(<forestry:oak_stick>);
-scripts.wrap.forestry.Carpenter.addRecipe(<forestry:oak_stick> * 2, [[<ore:logWood>],[<ore:logWood>]], 40, <liquid:oliveoil> * 100);
-scripts.wrap.forestry.Carpenter.addRecipe(<forestry:oak_stick> * 2, [[<ore:logWood>],[<ore:logWood>]], 40, <liquid:seed.oil> * 100);
+mods.forestry.Carpenter.addRecipe(<forestry:oak_stick> * 2, [[<ore:logWood>],[<ore:logWood>]], 40, <liquid:oliveoil> * 100);
+mods.forestry.Carpenter.addRecipe(<forestry:oak_stick> * 2, [[<ore:logWood>],[<ore:logWood>]], 40, <liquid:seed.oil> * 100);
 
 # Use OreDict recipe for Impregnated Casing
 val imprCasingGrid = Grid(["AAA","A A","AAA"], {A:<ore:logWood>}).shaped();
 mods.forestry.Carpenter.removeRecipe(<forestry:impregnated_casing>);
-scripts.wrap.forestry.Carpenter.addRecipe(<forestry:impregnated_casing>, imprCasingGrid, 40, <liquid:oliveoil> * 250);
-scripts.wrap.forestry.Carpenter.addRecipe(<forestry:impregnated_casing>, imprCasingGrid, 40, <liquid:seed.oil> * 250);
+mods.forestry.Carpenter.addRecipe(<forestry:impregnated_casing>, imprCasingGrid, 40, <liquid:oliveoil> * 250);
+mods.forestry.Carpenter.addRecipe(<forestry:impregnated_casing>, imprCasingGrid, 40, <liquid:seed.oil> * 250);
 
 <forestry:wax_cast>.maxDamage = 32;
 
@@ -254,8 +254,8 @@ recipes.addShapeless("Pipete clearing", <forestry:pipette>, [<forestry:pipette>]
 
 # Alt for players who hate bees
 val RJ = <harvestcraft:royaljellyitem>; # Royal Jelly
-scripts.wrap.actuallyadditions.Empowerer.addRecipe(<forestry:royal_jelly>, <actuallyadditions:item_worm>, RJ, RJ, RJ, RJ, 250000, 200, [1.0, 1.0, 0.0]);
-scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<forestry:royal_jelly>, 1000000, 1000000, <actuallyadditions:item_worm>, [RJ, RJ, RJ, RJ]);
+mods.actuallyadditions.Empowerer.addRecipe(<forestry:royal_jelly>, <actuallyadditions:item_worm>, RJ, RJ, RJ, RJ, 250000, 200, [1.0, 1.0, 0.0]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<forestry:royal_jelly>, 1000000, 1000000, <actuallyadditions:item_worm>, [RJ, RJ, RJ, RJ]);
 
 # Dust -> Gem conversion
 furnace.addRecipe(<forestry:apatite>, <jaopca:item_dustapatite>);
@@ -278,7 +278,7 @@ val Pn = <contenttweaker:nugget_phosphor>;
 recipes.addShapeless('ingot phosphor', PH, [Pn, Pn, Pn, Pn, Pn, Pn, Pn, Pn, Pn]);
 recipes.addShapeless('nuggets phosphor', Pn * 9, [PH]);
 scripts.process.crush(<ore:blockApatite>, Po, "only: AACrusher MekEnrichment", [Pn], [0.05]);
-scripts.wrap.ic2.ThermalCentrifuge.addRecipe([Po * 9, Pn * 4], <forestry:resource_storage> * 9);
+mods.ic2.ThermalCentrifuge.addRecipe([Po * 9, Pn * 4], <forestry:resource_storage> * 9);
 
 # Phosphor Benefication
 furnace.addRecipe(Pn, Po);

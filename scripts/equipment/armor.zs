@@ -90,10 +90,10 @@ mods.bloodmagic.AlchemyArray.removeRecipe(BRT, <minecraft:iron_leggings>);
 mods.bloodmagic.AlchemyArray.removeRecipe(BRT, <minecraft:iron_boots>);
 
 //mods.bloodmagic.AlchemyArray.addRecipe(IItemStack output, IItemStack input, IItemStack catalyst, @Optional string textureLocation);
-scripts.wrap.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:living_armour_helmet>,  BRT, <conarm:helmet_core>.withTag({Material: "iron"}),  "bloodmagic:textures/models/AlchemyArrays/bindingarray.png");
-scripts.wrap.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:living_armour_chest>,   BRT, <conarm:chest_core>.withTag({Material: "iron"}),   "bloodmagic:textures/models/AlchemyArrays/bindingarray.png");
-scripts.wrap.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:living_armour_leggings>,BRT, <conarm:leggings_core>.withTag({Material: "iron"}),"bloodmagic:textures/models/AlchemyArrays/bindingarray.png");
-scripts.wrap.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:living_armour_boots>,   BRT, <conarm:boots_core>.withTag({Material: "iron"}),   "bloodmagic:textures/models/AlchemyArrays/bindingarray.png");
+mods.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:living_armour_helmet>,  BRT, <conarm:helmet_core>.withTag({Material: "iron"}),  "bloodmagic:textures/models/AlchemyArrays/bindingarray.png");
+mods.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:living_armour_chest>,   BRT, <conarm:chest_core>.withTag({Material: "iron"}),   "bloodmagic:textures/models/AlchemyArrays/bindingarray.png");
+mods.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:living_armour_leggings>,BRT, <conarm:leggings_core>.withTag({Material: "iron"}),"bloodmagic:textures/models/AlchemyArrays/bindingarray.png");
+mods.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:living_armour_boots>,   BRT, <conarm:boots_core>.withTag({Material: "iron"}),   "bloodmagic:textures/models/AlchemyArrays/bindingarray.png");
 
 #------------
 # Iron
@@ -122,7 +122,7 @@ remakeEx(<draconicevolution:tool_upgrade:8>, [[<minecraft:dye:4>, <draconicevolu
 remakeEx(<environmentaltech:modifier_jump_boost>, [[dimBootsCore, <environmentaltech:litherite_crystal>, dimBootsCore], [<environmentaltech:mica>, <environmentaltech:modifier_null>, <environmentaltech:mica>], [dimBootsCore, <environmentaltech:lonsdaleite_crystal>, dimBootsCore]]);
 
 mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:diamond_chestplate:*>,<bloodmagic:soul_gem:1>,<minecraft:iron_block>,<minecraft:obsidian>]);
-scripts.wrap.bloodmagic.TartaricForge.addRecipe(<bloodmagic:sentient_armour_gem>, [<conarm:chest_core>.withTag({Material: "diamantine_crystal"}), <bloodmagic:soul_gem:1>, <minecraft:iron_block>, <minecraft:obsidian>], 250, 150);
+mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:sentient_armour_gem>, [<conarm:chest_core>.withTag({Material: "diamantine_crystal"}), <bloodmagic:soul_gem:1>, <minecraft:iron_block>, <minecraft:obsidian>], 250, 150);
 
 
 # ######################################################################
@@ -245,7 +245,7 @@ remakeEx(<ic2:quantum_helmet:26>, [[<ic2:crafting:3>, null, <ic2:crafting:3>],[<
 	recipes.remove(<draconicevolution:wyvern_chest>);
 
 # Wyvern
-	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_helm>,
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_helm>,
 	1000000000, 1000000, <draconicevolution:wyvern_energy_core>, [
 		<draconicevolution:draconium_block:1>,
 		<ic2:quantum_helmet>.anyDamage(),
@@ -260,7 +260,7 @@ remakeEx(<ic2:quantum_helmet:26>, [[<ic2:crafting:3>, null, <ic2:crafting:3>],[<
 		<deepmoblearning:glitch_infused_helmet>.anyDamage(),
 		<draconicevolution:draconium_block:1>,
 	]);
-	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_chest>,
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_chest>,
 	1000000000, 1000000, <draconicevolution:wyvern_energy_core>, [
 		<draconicevolution:draconium_block:1>,
 		<ic2:quantum_chestplate>.anyDamage(),
@@ -275,7 +275,7 @@ remakeEx(<ic2:quantum_helmet:26>, [[<ic2:crafting:3>, null, <ic2:crafting:3>],[<
 		<deepmoblearning:glitch_infused_chestplate>.anyDamage(),
 		<draconicevolution:draconium_block:1>,
 	]);
-	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_legs>,
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_legs>,
 	1000000000, 1000000, <draconicevolution:wyvern_energy_core>, [
 		<draconicevolution:draconium_block:1>,
 		<ic2:quantum_leggings>.anyDamage(),
@@ -290,7 +290,7 @@ remakeEx(<ic2:quantum_helmet:26>, [[<ic2:crafting:3>, null, <ic2:crafting:3>],[<
 		<deepmoblearning:glitch_infused_leggings>.anyDamage(),
 		<draconicevolution:draconium_block:1>,
 	]);
-	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_boots>,
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_boots>,
 	1000000000, 1000000, <draconicevolution:wyvern_energy_core>, [
 		<draconicevolution:draconium_block:1>,
 		<ic2:quantum_boots>.anyDamage(),
@@ -307,7 +307,7 @@ remakeEx(<ic2:quantum_helmet:26>, [[<ic2:crafting:3>, null, <ic2:crafting:3>],[<
 	]);
 
 # Draconic
-	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_helm>,
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_helm>,
 	2147483647, 1000000, <avaritia:block_resource:2>, [
 		<extrautils2:angelring>.anyDamage(),
 		<draconicevolution:wyvern_helm>.anyDamage(),
@@ -320,7 +320,7 @@ remakeEx(<ic2:quantum_helmet:26>, [[<ic2:crafting:3>, null, <ic2:crafting:3>],[<
 		<thermalexpansion:frame:148>,
 		<extendedcrafting:material:32>,
 		<astralsorcery:itemcape>.anyDamage()]);
-	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_chest>,
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_chest>,
 	2147483647, 1000000, <avaritia:block_resource:2>, [
 		<extrautils2:angelring>.anyDamage(),
 		<draconicevolution:wyvern_chest>.anyDamage(),
@@ -333,7 +333,7 @@ remakeEx(<ic2:quantum_helmet:26>, [[<ic2:crafting:3>, null, <ic2:crafting:3>],[<
 		<thermalexpansion:frame:148>,
 		<extendedcrafting:material:32>,
 		<astralsorcery:itemcape>.anyDamage()]);
-	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_legs>,
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_legs>,
 	2147483647, 1000000, <avaritia:block_resource:2>, [
 		<extrautils2:angelring>.anyDamage(),
 		<draconicevolution:wyvern_legs>.anyDamage(),
@@ -346,7 +346,7 @@ remakeEx(<ic2:quantum_helmet:26>, [[<ic2:crafting:3>, null, <ic2:crafting:3>],[<
 		<thermalexpansion:frame:148>,
 		<extendedcrafting:material:32>,
 		<astralsorcery:itemcape>.anyDamage()]);
-	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_boots>,
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_boots>,
 	2147483647, 1000000, <avaritia:block_resource:2>, [
 		<extrautils2:angelring>.anyDamage(),
 		<draconicevolution:wyvern_boots>.anyDamage(),
@@ -496,11 +496,11 @@ for i in 0 to itemsToRecycle.length {
 
 # Extract binding reagent from armor and Khopesh
 # mods.bloodmagic.AlchemyTable.addRecipe(IItemStack output, IItemStack[] inputs, int syphon, int ticks, int minTier);
-scripts.wrap.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:component:8> , [<bloodmagic:living_armour_helmet>]   , 300 , 40 , 3);
-scripts.wrap.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:component:8> , [<bloodmagic:living_armour_chest>]    , 300 , 40 , 3);
-scripts.wrap.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:component:8> , [<bloodmagic:living_armour_leggings>] , 300 , 40 , 3);
-scripts.wrap.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:component:8> , [<bloodmagic:living_armour_boots>]    , 300 , 40 , 3);
-scripts.wrap.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:component:8> , [<animus:kama_bound>]                 , 300 , 40 , 3);
+mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:component:8> , [<bloodmagic:living_armour_helmet>]   , 300 , 40 , 3);
+mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:component:8> , [<bloodmagic:living_armour_chest>]    , 300 , 40 , 3);
+mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:component:8> , [<bloodmagic:living_armour_leggings>] , 300 , 40 , 3);
+mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:component:8> , [<bloodmagic:living_armour_boots>]    , 300 , 40 , 3);
+mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:component:8> , [<animus:kama_bound>]                 , 300 , 40 , 3);
 
 
 # Some troll items can be disassembled on crafting table

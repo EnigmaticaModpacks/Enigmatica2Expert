@@ -27,13 +27,13 @@ import crafttweaker.item.WeightedItemStack;
 		<harvestcraft:duckrawitem> % 5,
 		<rats:raw_rat> % 5,
 	] as WeightedItemStack[];
-	scripts.wrap.forestry.Centrifuge.addRecipe(rawMeat, <biomesoplenty:flesh>, 100);
-	scripts.wrap.thermalexpansion.Centrifuge.addRecipe([rawMeat[0], rawMeat[1], rawMeat[2], rawMeat[3]
+	mods.forestry.Centrifuge.addRecipe(rawMeat, <biomesoplenty:flesh>, 100);
+	mods.thermalexpansion.Centrifuge.addRecipe([rawMeat[0], rawMeat[1], rawMeat[2], rawMeat[3]
 		] as WeightedItemStack[],<biomesoplenty:flesh>, null, 2000);
 
 # Honey Block -> Honey Drop
-	scripts.wrap.forestry.Centrifuge.addRecipe([(<forestry:honey_drop> * 5) % 80, (<thermalfoundation:material:99> % 25), (<thermalfoundation:material:100> % 25)], <biomesoplenty:honey_block>, 100);
-	scripts.wrap.thermalexpansion.Centrifuge.addRecipe([(<forestry:honey_drop>) * 5 % 80, <thermalfoundation:material:99> % 25, <thermalfoundation:material:100> % 25], <biomesoplenty:honey_block>, null, 2000);
+	mods.forestry.Centrifuge.addRecipe([(<forestry:honey_drop> * 5) % 80, (<thermalfoundation:material:99> % 25), (<thermalfoundation:material:100> % 25)], <biomesoplenty:honey_block>, 100);
+	mods.thermalexpansion.Centrifuge.addRecipe([(<forestry:honey_drop>) * 5 % 80, <thermalfoundation:material:99> % 25, <thermalfoundation:material:100> % 25], <biomesoplenty:honey_block>, null, 2000);
 
 # Ender Amethyst
 	recipes.addShaped("Ender Amethyst", 
@@ -110,7 +110,7 @@ scripts.process.squeeze(
 <biomesoplenty:crystal>.hardness = 50;
 
 # Skyblock alts Hellbark Sapling and lava squeezing
-scripts.wrap.inworldcrafting.FireCrafting.addRecipe(<biomesoplenty:leaves_3:8> * 2, <ic2:crafting:20>, 30);
+mods.inworldcrafting.FireCrafting.addRecipe(<biomesoplenty:leaves_3:8> * 2, <ic2:crafting:20>, 30);
 scripts.process.squeeze([<biomesoplenty:log_2:7>], <liquid:lava> * 480, "only: Squeezer MechanicalSqueezer", null);
 scripts.process.squeeze([<biomesoplenty:planks_0:11>], <liquid:lava> * 240, "only: Squeezer MechanicalSqueezer", null);
 scripts.process.squeeze([<biomesoplenty:leaves_3:8>], <liquid:lava> * 240, "only: Squeezer MechanicalSqueezer", null);

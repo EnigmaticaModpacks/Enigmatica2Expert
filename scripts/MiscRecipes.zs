@@ -65,13 +65,13 @@ import scripts.craft.grid.Grid;
 	[<minecraft:book>,<bloodmagic:soul_snare>]);
 	
 # Animania Random Animal Spawn Egg
-	scripts.wrap.forestry.Carpenter.addRecipe(<animania:entity_egg_random>, 
+	mods.forestry.Carpenter.addRecipe(<animania:entity_egg_random>, 
 	[[null , <cyclicmagic:sprout_seed>, null],
 	[<ore:egg>,<ore:egg>,<ore:egg>],
 	[null, <cyclicmagic:sprout_seed>, null]], 
 	40, <liquid:meat> * 500);
 	
-	scripts.wrap.forestry.Carpenter.addRecipe(<animania:entity_egg_random>, 
+	mods.forestry.Carpenter.addRecipe(<animania:entity_egg_random>, 
 	[[null , <cyclicmagic:sprout_seed>, null],
 	[<ore:egg>,<ore:egg>,<ore:egg>],
 	[null, <cyclicmagic:sprout_seed>, null]], 
@@ -350,7 +350,7 @@ craft.remake(<bedrockores:bedrock_miner>, ["pretty",
 
 # [Sandwich_Station] from [Cooking_Table][+3]
 recipes.remove(<culinaryconstruct:sandwich_station>);
-scripts.wrap.extendedcrafting.TableCrafting.addShaped(0,
+mods.extendedcrafting.TableCrafting.addShaped(0,
 <culinaryconstruct:sandwich_station>, Grid(["pretty",
   "  T  ",
   "F C F",
@@ -391,7 +391,7 @@ mods.mekanism.crusher.removeRecipe(<nuclearcraft:gem:6>); # Sand -> silicon
 # Addition
 furnace.addRecipe(trueSilicon, <ore:dustCertusQuartz>, 4.0d);
 furnace.addRecipe(trueSilicon, <ore:dustNetherQuartz>, 4.0d);
-scripts.wrap.thermalexpansion.Compactor.addMintRecipe(trueSilicon * 2, <minecraft:sand>, 4000);
+mods.thermalexpansion.Compactor.addMintRecipe(trueSilicon * 2, <minecraft:sand>, 4000);
 
 # Tallow into biomass
 scripts.process.compress(<ore:tallow> * 64, <contenttweaker:compressed_tallow>, "except: compressor");
@@ -401,7 +401,7 @@ scripts.process.melt(<contenttweaker:compressed_tallow>, <liquid:biomass> * 1280
 # Molten Cheese
 scripts.process.melt(<ore:cheeseWheels>|<ore:blockCheese>, <liquid:cheese> * 1000);
 scripts.process.melt(<ore:foodCheese>, <liquid:cheese> * 250);
-scripts.wrap.tconstruct.Casting.addBasinRecipe(<rats:block_of_cheese>, null, <liquid:cheese>, 1000);
+mods.tconstruct.Casting.addBasinRecipe(<rats:block_of_cheese>, null, <liquid:cheese>, 1000);
 
 # Hardened Ice Unification
 craft.make(<biomesoplenty:hard_ice> * 8, ["AAA","A A","AAA"], {A: <mysticalagriculture:ice_essence>});
@@ -477,7 +477,7 @@ scripts.process.fill(<contenttweaker:empowered_phosphor>, <fluid:syngas> * 1000,
 scripts.process.alloy([<contenttweaker:blasted_coal>, <forestry:phosphor>], <contenttweaker:empowered_phosphor>, "Only: Kiln Induction");
 
 
-scripts.wrap.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(<contenttweaker:blasted_coal> * 2, <contenttweaker:conglomerate_of_coal>);
+mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(<contenttweaker:blasted_coal> * 2, <contenttweaker:conglomerate_of_coal>);
 craft.make(<contenttweaker:conglomerate_of_coal>, ["pretty",
   "L B L",
   "▲ i ▲",
@@ -490,7 +490,7 @@ craft.make(<contenttweaker:conglomerate_of_coal>, ["pretty",
 
 # Red sand harder (for sieves)
 mods.tconstruct.Casting.removeBasinRecipe(<minecraft:sand:1>);
-scripts.wrap.tconstruct.Casting.addBasinRecipe(<minecraft:sand:1>, <exnihilocreatio:block_granite_crushed>, <liquid:blood>, 10, true);
+mods.tconstruct.Casting.addBasinRecipe(<minecraft:sand:1>, <exnihilocreatio:block_granite_crushed>, <liquid:blood>, 10, true);
 
 /* 
 # Knowledge absorber craft
@@ -557,15 +557,15 @@ for mobName, arr in {
  */
 
 # Molten Electronics casts
-scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:7> , <tconstruct:cast>.withTag({PartType: "tconstruct:shard"})      , <liquid:electronics>, 8);
-scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:6> , <tconstruct:cast_custom:1>                                     , <liquid:electronics>, 16);
-scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:storage>    , null                                                           , <liquid:electronics>, 144);
-scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:8> , <tconstruct:cast_custom>                                       , <liquid:electronics>, 144);
-scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:10>, <tconstruct:cast_custom:3>                                     , <liquid:electronics>, 144);
-scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:9> , <tconstruct:cast>.withTag({PartType: "tconstruct:sign_head"})  , <liquid:electronics>, 144 * 3);
-scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:5> , <tconstruct:cast_custom:4>                                     , <liquid:electronics>, 144 * 4);
-scripts.wrap.tconstruct.Casting.addTableRecipe(<opencomputers:material:11>, <tconstruct:cast>.withTag({PartType: "tconstruct:hammer_head"}), <liquid:electronics>, 144 * 8);
-scripts.wrap.tconstruct.Casting.addBasinRecipe(<opencomputers:case1>      , null                                                           , <liquid:electronics>, 144 * 9);
+mods.tconstruct.Casting.addTableRecipe(<opencomputers:material:7> , <tconstruct:cast>.withTag({PartType: "tconstruct:shard"})      , <liquid:electronics>, 8);
+mods.tconstruct.Casting.addTableRecipe(<opencomputers:material:6> , <tconstruct:cast_custom:1>                                     , <liquid:electronics>, 16);
+mods.tconstruct.Casting.addTableRecipe(<opencomputers:storage>    , null                                                           , <liquid:electronics>, 144);
+mods.tconstruct.Casting.addTableRecipe(<opencomputers:material:8> , <tconstruct:cast_custom>                                       , <liquid:electronics>, 144);
+mods.tconstruct.Casting.addTableRecipe(<opencomputers:material:10>, <tconstruct:cast_custom:3>                                     , <liquid:electronics>, 144);
+mods.tconstruct.Casting.addTableRecipe(<opencomputers:material:9> , <tconstruct:cast>.withTag({PartType: "tconstruct:sign_head"})  , <liquid:electronics>, 144 * 3);
+mods.tconstruct.Casting.addTableRecipe(<opencomputers:material:5> , <tconstruct:cast_custom:4>                                     , <liquid:electronics>, 144 * 4);
+mods.tconstruct.Casting.addTableRecipe(<opencomputers:material:11>, <tconstruct:cast>.withTag({PartType: "tconstruct:hammer_head"}), <liquid:electronics>, 144 * 8);
+mods.tconstruct.Casting.addBasinRecipe(<opencomputers:case1>      , null                                                           , <liquid:electronics>, 144 * 9);
 
 # Additional bonus
 scripts.loot.entity_kill_entity.add("minecraft:slime", "minecraft:wolf", <ore:essencePrudentium>.firstItem);

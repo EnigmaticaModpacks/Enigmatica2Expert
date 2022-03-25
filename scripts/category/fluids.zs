@@ -69,18 +69,18 @@ import mods.nuclearcraft.melter;
 	
 #Make Rustic Honeycomb produce forestry honey
 	mods.thermalexpansion.Centrifuge.removeRecipe(<rustic:honeycomb>);
-	scripts.wrap.thermalexpansion.Centrifuge.addRecipe([<rustic:beeswax> % 100], <rustic:honeycomb>, <liquid:for.honey> * 250, 2000);
+	mods.thermalexpansion.Centrifuge.addRecipe([<rustic:beeswax> % 100], <rustic:honeycomb>, <liquid:for.honey> * 250, 2000);
 
 	mods.forestry.Squeezer.removeRecipe(<liquid:honey>, [<rustic:honeycomb>]);
-	scripts.wrap.forestry.Squeezer.addRecipe(<liquid:for.honey> * 250, [<rustic:honeycomb>], 8);
+	mods.forestry.Squeezer.addRecipe(<liquid:for.honey> * 250, [<rustic:honeycomb>], 8);
 
 	mods.rustic.CrushingTub.removeRecipe(<liquid:honey>, <rustic:honeycomb>);
 	mods.rustic.CrushingTub.addRecipe(<liquid:for.honey> * 250, null, <rustic:honeycomb>);
 
 # Make sure Botania molten metals can be casted
-	scripts.wrap.tconstruct.Casting.addBasinRecipe(<botania:storage:0>, null, <liquid:manasteel>, 1296);
-	scripts.wrap.tconstruct.Casting.addBasinRecipe(<botania:storage:1>, null, <liquid:terrasteel>, 1296);
-	scripts.wrap.tconstruct.Casting.addBasinRecipe(<botania:storage:2>, null, <liquid:elementium>, 1296);
+	mods.tconstruct.Casting.addBasinRecipe(<botania:storage:0>, null, <liquid:manasteel>, 1296);
+	mods.tconstruct.Casting.addBasinRecipe(<botania:storage:1>, null, <liquid:terrasteel>, 1296);
+	mods.tconstruct.Casting.addBasinRecipe(<botania:storage:2>, null, <liquid:elementium>, 1296);
 
 
 
@@ -292,7 +292,7 @@ val combustionGenerator_fuels = {
 
 
 # Way harder [Rocket Fuel] recipe
-scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:rocketfuel> * 1000, [
+mods.tconstruct.Alloy.addRecipe(<liquid:rocketfuel> * 1000, [
   <liquid:gasoline> * 1000,
   <liquid:syngas> * 1000,
   <liquid:liquidfusionfuel> * 200,
@@ -302,7 +302,7 @@ scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:rocketfuel> * 1000, [
 
 # Craft for Enriched Lava as exploration alt
 # [Enriched Lava Bucket] from [Molten Demon Metal Bucket][+3]
-scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:enrichedlava> * 1000, [
+mods.tconstruct.Alloy.addRecipe(<liquid:enrichedlava> * 1000, [
   <liquid:ic2pahoehoe_lava>   * 2000, # Pahoehoe Lava
   <liquid:xu_demonic_metal>   * 1000, # Molten Demon Metal
   <liquid:xu_enchanted_metal> * 288,  # Enchanted Metal
@@ -310,7 +310,7 @@ scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:enrichedlava> * 1000, [
 ]);
 
 # Perfect Fuel is best fluid fuel in game
-scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:perfect_fuel>, [
+mods.tconstruct.Alloy.addRecipe(<liquid:perfect_fuel>, [
   <liquid:rocketfuel>   * 40,
   <liquid:enrichedlava> * 40,
   <liquid:sunnarium>    * 10,

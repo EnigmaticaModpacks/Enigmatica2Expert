@@ -32,7 +32,7 @@ for i in 0 to 16 {
 
 # Tank recipe
 recipes.removeShaped(<openblocks:tank>);
-scripts.wrap.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(<openblocks:tank>, <enderio:block_omni_reservoir>);
+mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(<openblocks:tank>, <enderio:block_omni_reservoir>);
 
 # Clear tanks
 utils.clearFluid(<openblocks:tank>);

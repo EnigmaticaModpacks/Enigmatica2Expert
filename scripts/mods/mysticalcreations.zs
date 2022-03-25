@@ -7,7 +7,7 @@ recipes.addShaped(<animania:goat_cheese_wheel>, [[null, <mysticalcreations:chees
 recipes.addShaped(<animania:jersey_cheese_wheel>, [[null, null, null],[<mysticalcreations:cheese_essence>, <mysticalcreations:cheese_essence>, <mysticalcreations:cheese_essence>], [null, null, null]]);
 recipes.addShaped(<animania:holstein_cheese_wheel>, [[null, null, <mysticalcreations:cheese_essence>],[null, <mysticalcreations:cheese_essence>, null], [<mysticalcreations:cheese_essence>, null, null]]);
 recipes.addShaped(<animania:friesian_cheese_wheel>, [[<mysticalcreations:cheese_essence>, null, null],[null, <mysticalcreations:cheese_essence>, null], [null, null, <mysticalcreations:cheese_essence>]]);
-scripts.wrap.astralsorcery.Lightwell.addLiquefaction(<mysticalcreations:astral_starmetal_essence>, <liquid:starmetal>, 0.5, 0.2, 0x040D67);
+mods.astralsorcery.Lightwell.addLiquefaction(<mysticalcreations:astral_starmetal_essence>, <liquid:starmetal>, 0.5, 0.2, 0x040D67);
 recipes.addShaped(Bucket("creosote"), [[null, <mysticalcreations:creosolite_essence>, null],[<mysticalcreations:creosolite_essence>, <minecraft:bucket>.noReturn(), <mysticalcreations:creosolite_essence>], [null, <mysticalcreations:creosolite_essence>, null]]);
 
 # Add Mystical Creations processing in Insolator

@@ -36,8 +36,8 @@ var slimeDirts as IItemStack[][IItemStack] = {
 
 for slime, dirts in slimeDirts {
 	for dirt in dirts {
-		scripts.wrap.thermalexpansion.Centrifuge.addRecipe([slime % 50, <minecraft:dirt>], dirt, null, 4000);
-		scripts.wrap.forestry.Centrifuge.addRecipe([slime % 25, <minecraft:dirt>], dirt, 100);
+		mods.thermalexpansion.Centrifuge.addRecipe([slime % 50, <minecraft:dirt>], dirt, null, 4000);
+		mods.forestry.Centrifuge.addRecipe([slime % 25, <minecraft:dirt>], dirt, 100);
 	}
 }
 
@@ -51,7 +51,7 @@ utils.rh(<tconstruct:slime_congealed:5>);
 
 # Cobalt Block Unification
 	mods.tconstruct.Casting.removeBasinRecipe(<chisel:blockcobalt>);
-	scripts.wrap.tconstruct.Casting.addBasinRecipe(<tconstruct:metal>, null, <liquid:cobalt>, 1296);
+	mods.tconstruct.Casting.addBasinRecipe(<tconstruct:metal>, null, <liquid:cobalt>, 1296);
 	
 # Item Rack
 	utils.rh(<tconstruct:rack>);
@@ -60,7 +60,7 @@ utils.rh(<tconstruct:slime_congealed:5>);
 	utils.rh(<tconstruct:stone_stick>);
 	
 # Blank Cast Resmelting
-	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:alubrass> * 144, <tconstruct:cast>);
+	mods.tconstruct.Melting.addRecipe(<liquid:alubrass> * 144, <tconstruct:cast>);
 
 # Reinforcement Modifier
 	recipes.remove(<tconstruct:materials:14>);
@@ -72,25 +72,25 @@ utils.rh(<tconstruct:slime_congealed:5>);
 
 # Faster Alumite Alloying
 	// mods.tconstruct.Alloy.removeRecipe(<liquid:alumite>); // Removing PlusTic's alloys wouldn't have effect
-	scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:alumite> * 432, [<liquid:aluminum> * 720, <liquid:iron> * 288,  <liquid:obsidian> * 288]);
-	scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:alumite> * 864, [<liquid:aluminum> * 1440, <liquid:iron> * 576,  <liquid:obsidian> * 576]);
+	mods.tconstruct.Alloy.addRecipe(<liquid:alumite> * 432, [<liquid:aluminum> * 720, <liquid:iron> * 288,  <liquid:obsidian> * 288]);
+	mods.tconstruct.Alloy.addRecipe(<liquid:alumite> * 864, [<liquid:aluminum> * 1440, <liquid:iron> * 576,  <liquid:obsidian> * 576]);
 
 # Faster Osmiridium Alloying
 	// mods.tconstruct.Alloy.removeRecipe(<liquid:osmiridium>); // Removing PlusTic's alloys wouldn't have effect
-	scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:osmiridium> * 144, [<liquid:osmium> * 72, <liquid:iridium> * 72]);
+	mods.tconstruct.Alloy.addRecipe(<liquid:osmiridium> * 144, [<liquid:osmium> * 72, <liquid:iridium> * 72]);
 
 # Osgloglas recipe after moving to tconevo
 	// mods.tconstruct.Alloy.removeRecipe(<liquid:osgloglas>); // Removing PlusTic's alloys wouldn't have effect
-	scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:osgloglas> * 144, [<liquid:osmium> * 144, <liquid:refined_obsidian> * 144,  <liquid:refined_glowstone> * 144]);
+	mods.tconstruct.Alloy.addRecipe(<liquid:osgloglas> * 144, [<liquid:osmium> * 144, <liquid:refined_obsidian> * 144,  <liquid:refined_glowstone> * 144]);
 
 # Faster Bronze Alloying
 	mods.tconstruct.Alloy.removeRecipe(<liquid:bronze>);
-	scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:bronze> * 288, [<liquid:tin> * 72, <liquid:copper> * 216]);
-	scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:bronze> * 576, [<liquid:tin> * 144, <liquid:copper> * 432]);
+	mods.tconstruct.Alloy.addRecipe(<liquid:bronze> * 288, [<liquid:tin> * 72, <liquid:copper> * 216]);
+	mods.tconstruct.Alloy.addRecipe(<liquid:bronze> * 576, [<liquid:tin> * 144, <liquid:copper> * 432]);
 
 	mods.tconstruct.Alloy.removeRecipe(<liquid:alubrass>);
-	scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:alubrass> * 288, [<liquid:copper> * 72, <liquid:aluminum> * 216]);
-	scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:alubrass> * 576, [<liquid:copper> * 144, <liquid:aluminum> * 432]);
+	mods.tconstruct.Alloy.addRecipe(<liquid:alubrass> * 288, [<liquid:copper> * 72, <liquid:aluminum> * 216]);
+	mods.tconstruct.Alloy.addRecipe(<liquid:alubrass> * 576, [<liquid:copper> * 144, <liquid:aluminum> * 432]);
 
 # Tinkers' Complement Melter
 	recipes.remove(<tcomplement:melter>);
@@ -113,12 +113,12 @@ val pressPlates = {
 	constantan       : <ore:blockConstantan>,
 } as IIngredient[string];
 for out,inp in pressPlates {
-	scripts.wrap.immersiveengineering.MetalPress.addRecipe(<tconstruct:large_plate>.withTag({Material: out}), inp, <immersiveengineering:mold>, 16000, inp.amount);
+	mods.immersiveengineering.MetalPress.addRecipe(<tconstruct:large_plate>.withTag({Material: out}), inp, <immersiveengineering:mold>, 16000, inp.amount);
 }
 
 scripts.process.compress(<ore:blockQuartzBlack>, <tconstruct:large_plate>.withTag({Material: "black_quartz"}), "only: Compactor");
 
-	scripts.wrap.immersiveengineering.MetalPress.addRecipe(<tconstruct:tool_rod>.withTag({Material: "ardite"}), <tconstruct:ingots:1>, <immersiveengineering:mold:2>, 4000, 1);
+	mods.immersiveengineering.MetalPress.addRecipe(<tconstruct:tool_rod>.withTag({Material: "ardite"}), <tconstruct:ingots:1>, <immersiveengineering:mold:2>, 4000, 1);
 
 # EFLN
 	recipes.remove(<tconstruct:throwball:1>);
@@ -165,25 +165,25 @@ for item in coals {
 scripts.process.melt(<actuallyadditions:block_misc:6>, <liquid:ender> * 1000, "Except: Smeltery");
 	
 # Gear Cast
-	scripts.wrap.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <exnihilocreatio:item_material:7>, <liquid:gold>, 288, true);
-	scripts.wrap.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <exnihilocreatio:item_material:7>, <liquid:alubrass>, 144, true);
-	scripts.wrap.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <exnihilocreatio:item_material:7>, <liquid:brass>, 144, true);
-	scripts.wrap.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <thermalfoundation:material:22>, <liquid:gold>, 288, true);
-	scripts.wrap.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <thermalfoundation:material:22>, <liquid:alubrass>, 144, true);
-	scripts.wrap.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <thermalfoundation:material:22>, <liquid:brass>, 144, true);
-	scripts.wrap.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <thermalfoundation:material:23>, <liquid:gold>, 288, true);
-	scripts.wrap.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <thermalfoundation:material:23>, <liquid:alubrass>, 144, true);
-	scripts.wrap.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <thermalfoundation:material:23>, <liquid:brass>, 144, true);
+	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <exnihilocreatio:item_material:7>, <liquid:gold>, 288, true);
+	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <exnihilocreatio:item_material:7>, <liquid:alubrass>, 144, true);
+	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <exnihilocreatio:item_material:7>, <liquid:brass>, 144, true);
+	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <thermalfoundation:material:22>, <liquid:gold>, 288, true);
+	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <thermalfoundation:material:22>, <liquid:alubrass>, 144, true);
+	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <thermalfoundation:material:22>, <liquid:brass>, 144, true);
+	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <thermalfoundation:material:23>, <liquid:gold>, 288, true);
+	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <thermalfoundation:material:23>, <liquid:alubrass>, 144, true);
+	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <thermalfoundation:material:23>, <liquid:brass>, 144, true);
 
 # Add Cyanite melting recipe
-	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:cyanite> * (144*9), <ore:blockCyanite>, 700);
-	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:cyanite> * 144, <ore:ingotCyanite> | <ore:dustCyanite>, 450);
+	mods.tconstruct.Melting.addRecipe(<liquid:cyanite> * (144*9), <ore:blockCyanite>, 700);
+	mods.tconstruct.Melting.addRecipe(<liquid:cyanite> * 144, <ore:ingotCyanite> | <ore:dustCyanite>, 450);
 
 # Add recipes from liquids
-	scripts.wrap.tconstruct.Casting.addTableRecipe(<bigreactors:ingotblutonium>, <tconstruct:cast_custom>, <liquid:plutonium>, 144, false);
-	scripts.wrap.tconstruct.Casting.addBasinRecipe(<bigreactors:blockblutonium>, null, <liquid:plutonium>, 1296);
-	scripts.wrap.tconstruct.Casting.addBasinRecipe(<bigreactors:blockcyanite>, null, <liquid:cyanite>, 1296);
-	scripts.wrap.tconstruct.Casting.addTableRecipe(<bigreactors:ingotcyanite>, <tconstruct:cast_custom>, <liquid:cyanite>, 144, false);
+	mods.tconstruct.Casting.addTableRecipe(<bigreactors:ingotblutonium>, <tconstruct:cast_custom>, <liquid:plutonium>, 144, false);
+	mods.tconstruct.Casting.addBasinRecipe(<bigreactors:blockblutonium>, null, <liquid:plutonium>, 1296);
+	mods.tconstruct.Casting.addBasinRecipe(<bigreactors:blockcyanite>, null, <liquid:cyanite>, 1296);
+	mods.tconstruct.Casting.addTableRecipe(<bigreactors:ingotcyanite>, <tconstruct:cast_custom>, <liquid:cyanite>, 144, false);
 
 
 # Slime Boots remove and hide (replaced by Conarm)
@@ -243,22 +243,22 @@ scripts.process.squeeze([<tconstruct:slime_vine_purple>],     <liquid:purpleslim
 mods.tcomplement.highoven.HighOven.removeMixRecipe(<liquid:steel>);
 
 # More Scorched bricks recipes
-scripts.wrap.immersiveengineering.ArcFurnace.addRecipe(<tcomplement:materials:1>, <minecraft:brick>, <immersiveengineering:material:7>, 10, 512);
+mods.immersiveengineering.ArcFurnace.addRecipe(<tcomplement:materials:1>, <minecraft:brick>, <immersiveengineering:material:7>, 10, 512);
 
 # Clay bucket use for casts
 val bkt = <claybucket:unfiredclaybucket:*>;
-scripts.wrap.tconstruct.Casting.addTableRecipe(<tcomplement:cast_clay>, bkt, <liquid:clay>, 288, true);
-scripts.wrap.tconstruct.Casting.addTableRecipe(<tcomplement:cast>, bkt, <liquid:gold>, 288, true);
-scripts.wrap.tconstruct.Casting.addTableRecipe(<tcomplement:cast>, bkt, <liquid:alubrass>, 144, true);
-scripts.wrap.tconstruct.Casting.addTableRecipe(<tcomplement:cast>, bkt, <liquid:brass>, 144, true);
+mods.tconstruct.Casting.addTableRecipe(<tcomplement:cast_clay>, bkt, <liquid:clay>, 288, true);
+mods.tconstruct.Casting.addTableRecipe(<tcomplement:cast>, bkt, <liquid:gold>, 288, true);
+mods.tconstruct.Casting.addTableRecipe(<tcomplement:cast>, bkt, <liquid:alubrass>, 144, true);
+mods.tconstruct.Casting.addTableRecipe(<tcomplement:cast>, bkt, <liquid:brass>, 144, true);
 
 # Cast slimes from liquids (only blood have recipe now)
-scripts.wrap.tconstruct.Casting.addTableRecipe(<tconstruct:edible:2>, null, <liquid:purpleslime>, 250);
-scripts.wrap.tconstruct.Casting.addTableRecipe(<tconstruct:edible:1>, null, <liquid:blueslime>  , 250);
+mods.tconstruct.Casting.addTableRecipe(<tconstruct:edible:2>, null, <liquid:purpleslime>, 250);
+mods.tconstruct.Casting.addTableRecipe(<tconstruct:edible:1>, null, <liquid:blueslime>  , 250);
 
 # Slime blocks
-scripts.wrap.tconstruct.Casting.addBasinRecipe(<tconstruct:slime_congealed:2>, null, <liquid:purpleslime>, 1000);
-scripts.wrap.tconstruct.Casting.addBasinRecipe(<tconstruct:slime_congealed:1>, null, <liquid:blueslime>  , 1000);
+mods.tconstruct.Casting.addBasinRecipe(<tconstruct:slime_congealed:2>, null, <liquid:purpleslime>, 1000);
+mods.tconstruct.Casting.addBasinRecipe(<tconstruct:slime_congealed:1>, null, <liquid:blueslime>  , 1000);
 
 # Slime mud
 craft.reshapeless(<tconstruct:soil:2>, "■sd", {
@@ -311,8 +311,8 @@ recipes.addShaped(<biomesoplenty:mud_brick_block> * 2, [
 ]);
 
 # Molten Quartz and Lapis to blocks
-scripts.wrap.tconstruct.Casting.addBasinRecipe(<minecraft:quartz_block>, null, <liquid:quartz>, 2664);
-scripts.wrap.tconstruct.Casting.addBasinRecipe(<minecraft:lapis_block> , null, <liquid:lapis> , 5994);
+mods.tconstruct.Casting.addBasinRecipe(<minecraft:quartz_block>, null, <liquid:quartz>, 2664);
+mods.tconstruct.Casting.addBasinRecipe(<minecraft:lapis_block> , null, <liquid:lapis> , 5994);
 
 # Replace Plustick's Infinity -> TConEvo
 mods.nuclearcraft.melter.removeRecipeWithOutput([<fluid:infinity> * 144]);
@@ -391,7 +391,7 @@ craft.remake(<tconstruct:materials:18>, ["pretty",
 
 # Molten Spectre
 scripts.process.melt(<ore:ingotSpectre>, <liquid:spectre> * 144, "No Exceptions");
-scripts.wrap.tconstruct.Casting.addTableRecipe(<randomthings:ingredient:3>, <tconstruct:cast_custom>, <liquid:spectre>, 144, false);
+mods.tconstruct.Casting.addTableRecipe(<randomthings:ingredient:3>, <tconstruct:cast_custom>, <liquid:spectre>, 144, false);
 
 
 # [Aethium Armor Trim] from [Mica][+2]
@@ -424,9 +424,9 @@ craft.remake(<tconevo:material:2>, ["pretty",
 #-------------------------------------------------------------------------------
 
 # New liquids
-scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:sunnarium> * 144, [<liquid:liquid_sunshine> * 500, <liquid:flux_goo> * 100, <liquid:mirion> * 72]);
-scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:dark_matter> * 144, [<liquid:neutronium> * 144, <liquid:primal_metal> * 144,  <liquid:mana> * 250]);
-scripts.wrap.tconstruct.Alloy.addRecipe(<liquid:red_matter> * 144, [<liquid:supremium> * 432,  <liquid:blockfluidantimatter> * 1000, <liquid:dark_matter> * 144]);
+mods.tconstruct.Alloy.addRecipe(<liquid:sunnarium> * 144, [<liquid:liquid_sunshine> * 500, <liquid:flux_goo> * 100, <liquid:mirion> * 72]);
+mods.tconstruct.Alloy.addRecipe(<liquid:dark_matter> * 144, [<liquid:neutronium> * 144, <liquid:primal_metal> * 144,  <liquid:mana> * 250]);
+mods.tconstruct.Alloy.addRecipe(<liquid:red_matter> * 144, [<liquid:supremium> * 432,  <liquid:blockfluidantimatter> * 1000, <liquid:dark_matter> * 144]);
 
 # Melt Block of flesh
 scripts.process.melt(<ore:blockFlesh>, <liquid:blood> * 360, "No Exceptions");

@@ -60,7 +60,7 @@ recipes.addShapedMirrored("Machine Gearbox",
 
 # Machine Circuitry
 recipes.remove(<modularmachinery:blockcasing:5>);
-scripts.wrap.forestry.Carpenter.addRecipe(<modularmachinery:blockcasing:5>,
+mods.forestry.Carpenter.addRecipe(<modularmachinery:blockcasing:5>,
   scripts.craft.grid.Grid(["pretty",
   "P ▬ P",
   "U I U",

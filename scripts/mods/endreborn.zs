@@ -56,7 +56,7 @@ mods.jei.JEI.addItem(<endreborn:catalyst>);
 
 # Remake [Fluix-Plated Iron Ingot]
 mods.appliedenergistics2.Inscriber.removeRecipe(<threng:material:2>);
-scripts.wrap.appliedenergistics2.Inscriber.addRecipe(<threng:material:2>, <endreborn:item_ingot_wolframium>, false, <threng:material:1>, <appliedenergistics2:material:45>);
+mods.appliedenergistics2.Inscriber.addRecipe(<threng:material:2>, <endreborn:item_ingot_wolframium>, false, <threng:material:1>, <appliedenergistics2:material:45>);
 mods.threng.Aggregator.removeRecipe(<threng:material>);
 mods.threng.Aggregator.addRecipe(<threng:material>, <endreborn:item_ingot_wolframium>, <threng:material:1>, <ore:dustSkyStone>);
 
@@ -72,7 +72,7 @@ mods.actuallyadditions.Crusher.removeRecipe(<endreborn:death_essence>);
 
 # Skyblock Alternative
 # [Essence Ore] from [Molten Obsidian Bucket][+1]
-scripts.wrap.tconstruct.Casting.addBasinRecipe(<endreborn:block_essence_ore>, <endreborn:block_decorative_lormyte>, <liquid:obsidian>, 144, true);
+mods.tconstruct.Casting.addBasinRecipe(<endreborn:block_essence_ore>, <endreborn:block_decorative_lormyte>, <liquid:obsidian>, 144, true);
 
 # [Simple Machine Chassis] from [Hardened Cell Frame][+3]
 craft.remake(<enderio:item_material>, ["pretty",

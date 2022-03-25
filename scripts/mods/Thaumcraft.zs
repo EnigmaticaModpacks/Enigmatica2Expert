@@ -7,14 +7,14 @@ import crafttweaker.item.WeightedItemStack;
 furnace.addRecipe(<thaumcraft:quicksilver> * 2, <thaumcraft:cluster:6>);
 
 # Crimson Rites
-scripts.wrap.thaumcraft.Infusion.registerRecipe("crimson_rites", "INFUSION", 
+mods.thaumcraft.Infusion.registerRecipe("crimson_rites", "INFUSION", 
 <thaumcraft:curio:6>, 15, 
 [<aspect:vitium> * 30, <aspect:mortuus> * 15, <aspect:praecantatio> * 30, <aspect:auram> * 10], 
 <thaumcraft:thaumonomicon>, 
 [<thaumcraft:ingot>, <thaumcraft:void_seed>, <thaumcraft:salis_mundus>, <thaumcraft:void_seed>, <thaumcraft:salis_mundus>, <thaumcraft:void_seed>, <thaumcraft:ingot>, <thaumcraft:void_seed>]);
 
 # Cultist Portal
-scripts.wrap.thaumcraft.Infusion.registerRecipe("spawn_lesser_crimson_portal", "INFUSION", 
+mods.thaumcraft.Infusion.registerRecipe("spawn_lesser_crimson_portal", "INFUSION", 
 <minecraft:spawn_egg>.withTag({EntityTag: {id: "thaumcraft:cultistportallesser"}}), 15, 
 [<aspect:vitium> * 90, <aspect:mortuus> * 45, <aspect:praecantatio> * 90, <aspect:auram> * 30], 
 utils.tryCatch("openblocks:golden_egg", <minecraft:golden_apple:1>), 
@@ -25,7 +25,7 @@ utils.tryCatch("openblocks:golden_egg", <minecraft:golden_apple:1>),
 function swapBonus(input as IIngredient, wrong as IItemStack, right as WeightedItemStack) as void {
 	utils.log(["~~ removing", input.commandString, wrong.commandString, right.stack.commandString]);
 	mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(input, wrong);
-	scripts.wrap.thaumcraft.SmeltingBonus.addSmeltingBonus(input, right);
+	mods.thaumcraft.SmeltingBonus.addSmeltingBonus(input, right);
 }
 
 for i, oreBase in "Copper Tin Silver Lead".split(' ') {
@@ -154,16 +154,16 @@ craft.make(<thaumcraft:salis_mundus>, ["DEFCAB"], {
 
 # Tallow harder
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:tallow>);
-scripts.wrap.thaumcraft.Crucible.registerRecipe("Tallow from rotten flesh", "HEDGEALCHEMY@1", <thaumcraft:tallow>,   <minecraft:rotten_flesh>, [<aspect:ignis>]);
-scripts.wrap.thaumcraft.Crucible.registerRecipe("Tallow from tallow",       "HEDGEALCHEMY@1", <thaumcraft:tallow>*2, <quark:tallow>, [<aspect:ignis>*2]);
-scripts.wrap.thaumcraft.Crucible.registerRecipe("Tallow from blubber",      "HEDGEALCHEMY@1", <thaumcraft:tallow>*8, utils.tryCatch('betteranimalsplus:blubber', <animania:raw_prime_pork>), [<aspect:ignis>*4]);
+mods.thaumcraft.Crucible.registerRecipe("Tallow from rotten flesh", "HEDGEALCHEMY@1", <thaumcraft:tallow>,   <minecraft:rotten_flesh>, [<aspect:ignis>]);
+mods.thaumcraft.Crucible.registerRecipe("Tallow from tallow",       "HEDGEALCHEMY@1", <thaumcraft:tallow>*2, <quark:tallow>, [<aspect:ignis>*2]);
+mods.thaumcraft.Crucible.registerRecipe("Tallow from blubber",      "HEDGEALCHEMY@1", <thaumcraft:tallow>*8, utils.tryCatch('betteranimalsplus:blubber', <animania:raw_prime_pork>), [<aspect:ignis>*4]);
 
 # Nitor cheaper
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:nitor_yellow>);
-scripts.wrap.thaumcraft.Crucible.registerRecipe("Cheap nitor", "BASEALCHEMY", <thaumcraft:nitor_yellow> * 10, <minecraft:glowstone_dust>, [<aspect:potentia> * 10, <aspect:ignis> * 10, <aspect:lux> * 10]);
+mods.thaumcraft.Crucible.registerRecipe("Cheap nitor", "BASEALCHEMY", <thaumcraft:nitor_yellow> * 10, <minecraft:glowstone_dust>, [<aspect:potentia> * 10, <aspect:ignis> * 10, <aspect:lux> * 10]);
 
 # Primordial Pearl alt (for some people who dont want to close rifts)
-scripts.wrap.astralsorcery.Altar.addConstellationAltarRecipe(
+mods.astralsorcery.Altar.addConstellationAltarRecipe(
 	'Primordial Pearl alt',	<thaumcraft:primordial_pearl:7>, 1500, 250, scripts.craft.grid.Grid([
 	"TVT"+
 	"CSC"+
@@ -236,5 +236,5 @@ mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:charm_undying>);
 recipes.addShapeless('Totem conversion', <thaumcraft:charm_undying>, [<minecraft:totem_of_undying>]);
 
 # TODO: Remove this temporary recipe when resolved: https://github.com/LoliKingdom/Thaumic-Speedup/issues/3
-scripts.wrap.thaumcraft.Crucible.registerRecipe("Temporary web", "HEDGEALCHEMY", <minecraft:web>, <minecraft:string>, [<aspect:vinculum>*2]);
-scripts.wrap.thaumcraft.Crucible.registerRecipe("Temporary string", "HEDGEALCHEMY", <minecraft:string>, <minecraft:wheat>, [<aspect:bestia>*2]);
+mods.thaumcraft.Crucible.registerRecipe("Temporary web", "HEDGEALCHEMY", <minecraft:web>, <minecraft:string>, [<aspect:vinculum>*2]);
+mods.thaumcraft.Crucible.registerRecipe("Temporary string", "HEDGEALCHEMY", <minecraft:string>, <minecraft:wheat>, [<aspect:bestia>*2]);

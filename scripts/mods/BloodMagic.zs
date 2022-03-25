@@ -94,31 +94,31 @@ import crafttweaker.item.IItemStack as IItemStack;
 
 # Blank Slate
 	mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:stone>);
-	scripts.wrap.bloodmagic.BloodAltar.addRecipe(<bloodmagic:slate>, <botania:livingrock>, 0, 1000, 10, 10);
+	mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:slate>, <botania:livingrock>, 0, 1000, 10, 10);
 
 # Orb tier 1
 	mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:diamond>);
-	scripts.wrap.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), 
+	mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), 
 	<botania:manaresource:2>, 0, 2000, 12, 12);
 
 # Orb tier 2
 	mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:redstone_block>);
-	scripts.wrap.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}), 
+	mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}), 
 	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "victus"}]}), 1, 5000, 25, 25);
 
 # Orb tier 3
 	mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:gold_block>);
-	scripts.wrap.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}), 
+	mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}), 
 	<thaumcraft:metal_thaumium>, 2, 25000, 50, 50);
 
 # Orb tier 5
 	mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:nether_star>);
-	scripts.wrap.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"}), 
+	mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"}), 
 	<botania:manaresource:5>, 4, 80000, 200, 200);
 
 # Dagger of Sacrifice
 	mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:iron_sword>);
-	scripts.wrap.bloodmagic.BloodAltar.addRecipe(<bloodmagic:dagger_of_sacrifice>, 
+	mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:dagger_of_sacrifice>, 
 	<thaumcraft:thaumium_sword>, 1, 3000, 12, 12);
 
 # Blood Orb Oredicts
@@ -172,7 +172,7 @@ for i in 1 to 16 {
 	val cost = (((pow(1.5d, i as double) * t16mult) as int - t1resde) / 500) * 500;
 
 	recipes.remove(tank);
-	scripts.wrap.bloodmagic.BloodAltar.addRecipe(tank, prevTank, max(0, min(4, i / 2)), cost, 10 + 10 * i, 10 + 10 * i);
+	mods.bloodmagic.BloodAltar.addRecipe(tank, prevTank, max(0, min(4, i / 2)), cost, 10 + 10 * i, 10 + 10 * i);
 	recipes.addShapeless("Clearing Blood Tank " ~ i, tank, [tank]);
 }
 
@@ -184,7 +184,7 @@ val capRune = <bloodmagic:blood_rune:7>;
 val sprIng = <randomthings:ingredient:3>;
 val bldTnk = <bloodmagic:blood_tank:7>.withTag({Fluid: {FluidName: "lifeessence", Amount: 2048000}});
 val antBck = Bucket("blockfluidantimatter");
-scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, crDgr, [
+mods.extendedcrafting.TableCrafting.addShaped(0, crDgr, [
 	[null, null, null, null, null, <ore:nuggetDraconicMetal>, sprIng], 
 	[null, null, null, null, <ore:nuggetDraconicMetal>, sprIng, <ore:nuggetDraconicMetal>], 
 	[null, capRune, null, <ore:nuggetDraconicMetal>, sprIng, <ore:nuggetDraconicMetal>, null], 
@@ -248,4 +248,4 @@ for item in alcTableOres {
 }
 
 # [Blood Wood] from [Spectre Wood]*2
-scripts.wrap.bloodmagic.BloodAltar.addRecipe(<animus:blockbloodwood>, <randomthings:spectrelog>, 0, 2000, 12, 12);
+mods.bloodmagic.BloodAltar.addRecipe(<animus:blockbloodwood>, <randomthings:spectrelog>, 0, 2000, 12, 12);

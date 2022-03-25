@@ -187,7 +187,7 @@ scripts.processUtils.avdRockXmlRecipeEx("PrecisionAssembler",	[
 
 # Press recipe instead crafting table
 recipes.remove(<advancedrocketry:misc>);
-scripts.wrap.immersiveengineering.MetalPress.addRecipe(<advancedrocketry:misc>, <ore:oc:screen3>, <immersiveengineering:mold:0>, 2000);
+mods.immersiveengineering.MetalPress.addRecipe(<advancedrocketry:misc>, <ore:oc:screen3>, <immersiveengineering:mold:0>, 2000);
 
 # Advanced Alloys
 scripts.process.alloy([<ore:ingotElectricalSteel> * 2, <ore:ingotPlatinum>, <actuallyadditions:item_crystal_empowered:1>], <ore:ingotModularium>.firstItem * 2,        "only: AdvRockArc");

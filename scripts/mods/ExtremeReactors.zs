@@ -7,7 +7,7 @@
 
 # Reactor Controller
 	recipes.remove(<bigreactors:reactorcontroller>);
-	scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, 
+	mods.extendedcrafting.TableCrafting.addShaped(0, 
 	<bigreactors:reactorcontroller>, 
 	[[<nuclearcraft:fission_block>, <tconstruct:large_plate>.withTag({Material: "lead"}), <nuclearcraft:fission_block>],
 	[<opencomputers:print>, <ic2:te:22>, <opencomputers:print>], 
@@ -76,7 +76,7 @@ craft.remake(<bigreactors:reactorfuelrod>, ["pretty",
 
 # Ludicrite Block
 	recipes.remove(<bigreactors:blockludicrite>);
-	scripts.wrap.forestry.Carpenter.addRecipe(<bigreactors:blockludicrite>, 
+	mods.forestry.Carpenter.addRecipe(<bigreactors:blockludicrite>, 
 	[[<ore:gemAmethyst>, <ore:blockBlaze>, <ore:gemAmethyst>],
 	[<ore:ingotAlumite>, <ore:blockBlutonium>, <ore:ingotAlumite>], 
 	[<ore:blockEnderium>, <botania:storage:2>, <ore:blockEnderium>]], 
@@ -92,7 +92,7 @@ craft.remake(<bigreactors:reactorfuelrod>, ["pretty",
 	recipes.remove(<bigreactors:blockyellorium>);
 	
 # Anglesite - Highest tier of Tech mods crystals
-scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<bigreactors:oreanglesite>, 100000000, 1000000, 
+mods.extendedcrafting.CombinationCrafting.addRecipe(<bigreactors:oreanglesite>, 100000000, 1000000, 
 <additionalcompression:gravelend_compressed:2>, [
 	<appliedenergistics2:material:48>,
 	<biomesoplenty:terrestrial_artifact>,
@@ -118,7 +118,7 @@ scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<bigreactors:oreangl
 
 
 # Benitoite - Highest tier of non-Tech mods crystals
-scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<bigreactors:orebenitoite>, 100000000, 1000000,
+mods.extendedcrafting.CombinationCrafting.addRecipe(<bigreactors:orebenitoite>, 100000000, 1000000,
 <additionalcompression:gravelnether_compressed:2>, [
 	<ore:eternalLifeEssence>,
 	<thaumcraft:mechanism_complex>,

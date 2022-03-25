@@ -179,7 +179,7 @@ scripts.process.grow(<rats:ratglove_flower>, <rats:ratglove_flower> * 9, "No exc
 
 var csandwich = <culinaryconstruct:sandwich>.withTag({Size: 5, Saturation: 1.1549999 as float, Ingredients: {Items: [{Slot: 0 as byte, id: "animania:sheep_cheese_wedge", Count: 1 as byte, Damage: 0 as short}, {Slot: 1 as byte, id: "animania:goat_cheese_wedge", Count: 1 as byte, Damage: 0 as short}, {Slot: 2 as byte, id: "animania:friesian_cheese_wedge", Count: 1 as byte, Damage: 0 as short}, {Slot: 3 as byte, id: "animania:holstein_cheese_wedge", Count: 1 as byte, Damage: 0 as short}, {Slot: 4 as byte, id: "animania:jersey_cheese_wedge", Count: 1 as byte, Damage: 0 as short}, {Slot: 5 as byte, id: "minecraft:bread", Count: 1 as byte, Damage: 0 as short}]}, Bonus: 2, Depth: 0, Food: 10});
 var cplate = <tconstruct:large_plate>.withTag({Material: "cheese"});
-scripts.wrap.extendedcrafting.TableCrafting.addShaped(0, <rats:creative_cheese>, [
+mods.extendedcrafting.TableCrafting.addShaped(0, <rats:creative_cheese>, [
 	[cplate, cplate, csandwich, csandwich, csandwich, cplate, cplate], 
 	[cplate, <harvestcraft:cheesesteakitem>, <harvestcraft:cheesesteakitem>, <actuallyadditions:item_food>, <harvestcraft:cheesesteakitem>, <harvestcraft:cheesesteakitem>, cplate], 
 	[csandwich, <harvestcraft:cheesesteakitem>, <ore:blockLuminessence>, <mekanism:tierinstaller:3>, <ore:blockLuminessence>, <harvestcraft:cheesesteakitem>, csandwich], 
@@ -209,17 +209,17 @@ furnace.remove(<rats:raw_plastic>);
 scripts.process.squeeze([<rats:plastic_waste>], <liquid:dirt> * 100, null, <rats:raw_plastic>);
 
 # Polyethene from rat plastic
-scripts.wrap.mekanism.enrichment.addRecipe(<rats:raw_plastic>*16, <mekanism:polyethene>);
+mods.mekanism.enrichment.addRecipe(<rats:raw_plastic>*16, <mekanism:polyethene>);
 
 # Rat tube from HDPE
 recipes.remove(<rats:rat_tube_white>);
-scripts.wrap.immersiveengineering.MetalPress.addRecipe(<mekanism:polyethene:1>, <mekanism:polyethene>*2, <immersiveengineering:mold:2>, 4000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<mekanism:polyethene:1>, <mekanism:polyethene>*2, <immersiveengineering:mold:2>, 4000, 1);
 furnace.addRecipe(<rats:rat_tube_white>, <mekanism:polyethene:1>);
 
 
 # Alternative rat diamond uses
 val compressed_D = <mekanism:compresseddiamond>;
-scripts.wrap.mekanism.enrichment.addRecipe(<rats:rat_diamond>, compressed_D);
+mods.mekanism.enrichment.addRecipe(<rats:rat_diamond>, compressed_D);
 
 # Magic bean
 mods.rats.recipes.addChefRatRecipe(<randomthings:beans:1>, <randomthings:beans:2>);
@@ -238,7 +238,7 @@ mods.rats.recipes.addArcheologistRatRecipe(<harvestcraft:hardenedleatheritem>, <
 ##################
 
 # Casting sawblade
-scripts.wrap.tconstruct.Casting.addTableRecipe(<rats:ancient_sawblade>, <ic2:block_cutting_blade:2>, <fluid:knightmetal>, (144*12), true, (30*20));
+mods.tconstruct.Casting.addTableRecipe(<rats:ancient_sawblade>, <ic2:block_cutting_blade:2>, <fluid:knightmetal>, (144*12), true, (30*20));
 
 # Ratlanean spirit flame
 recipes.addShaped("Ratlanean Flame", <rats:ratlantean_flame>, [
@@ -253,10 +253,10 @@ recipes.addShaped("Ratlanean Flame 2", <rats:ratlantean_flame>, [
 ]);
 
 # Peaceful alt
-scripts.wrap.thermalexpansion.Infuser.addRecipe(<rats:charged_creeper_chunk>, <harvestcraft:creeperwingsitem>, 100000);
+mods.thermalexpansion.Infuser.addRecipe(<rats:charged_creeper_chunk>, <harvestcraft:creeperwingsitem>, 100000);
 
 # Psionic rat brain
-scripts.wrap.thaumcraft.Infusion.registerRecipe("psionic_rat_brain", "INFUSION", <rats:psionic_rat_brain>, 40, 
+mods.thaumcraft.Infusion.registerRecipe("psionic_rat_brain", "INFUSION", <rats:psionic_rat_brain>, 40, 
 	[<aspect:cognitio> * 150, <aspect:alienis> * 40, <aspect:rattus> * 80], <thaumcraft:brain>, 
 	[<rats:charged_creeper_chunk>, <rats:chunky_cheese_token>, <rats:charged_creeper_chunk>, <ore:dustDimensional>, 
 	 <rats:charged_creeper_chunk>, <ore:dustDimensional>, <draconicevolution:draconium_block:1>, <rats:charged_creeper_chunk>]
@@ -277,11 +277,11 @@ remake("rats idol_of_ratlantis", <rats:idol_of_ratlantis>, [
 # Rat diamond usages
 scripts.process.melt(<rats:rat_diamond>, <liquid:diamond> * 165, "Except: Melter");
 scripts.process.alloy([<ore:ingotGraphite> * 2, <rats:rat_diamond>], <nuclearcraft:alloy:2> * 2, "only: Kiln AlloySmelter");
-scripts.wrap.appliedenergistics2.Inscriber.addRecipe(<appliedenergistics2:material:17>, <rats:rat_diamond>, true, <appliedenergistics2:material:14>);
-scripts.wrap.thermalexpansion.Compactor.addGearRecipe(<thermalfoundation:material:26>, <rats:rat_diamond> * 4, 36000);
-scripts.wrap.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:26>, <rats:rat_diamond>, <immersiveengineering:mold:1>, 16000, 4);
+mods.appliedenergistics2.Inscriber.addRecipe(<appliedenergistics2:material:17>, <rats:rat_diamond>, true, <appliedenergistics2:material:14>);
+mods.thermalexpansion.Compactor.addGearRecipe(<thermalfoundation:material:26>, <rats:rat_diamond> * 4, 36000);
+mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:26>, <rats:rat_diamond>, <immersiveengineering:mold:1>, 16000, 4);
 recipes.addShapeless("gem_crystal_flux from rat", <redstonearsenal:material:160> * 2, [<rats:rat_diamond>, <rats:rat_diamond>, Bucket('redstone')]);
-scripts.wrap.thermalexpansion.Transposer.addFillRecipe(<redstonearsenal:material:160>, <rats:rat_diamond>, <fluid:redstone> * 500, 2000);
+mods.thermalexpansion.Transposer.addFillRecipe(<redstonearsenal:material:160>, <rats:rat_diamond>, <fluid:redstone> * 500, 2000);
 # ################################################################################
 
 # Harder little balls recipe (was from coal)

@@ -22,7 +22,7 @@ if(utils.DEBUG) mods.jei.JEI.addItem(<draconicevolution:draconium_chest>.withTag
 	[<ore:ingotElectricalSteel>, <industrialforegoing:mob_relocator>, <ore:ingotElectricalSteel>]]);
 
 # Charged Draconium
-	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconium_block:1> * 2, 2000000000, 50000000, <draconicevolution:draconium_block>, [<draconicevolution:draconium_block>]);
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconium_block:1> * 2, 2000000000, 50000000, <draconicevolution:draconium_block>, [<draconicevolution:draconium_block>]);
 
 # Crystal Binder
 	recipes.remove(<draconicevolution:crystal_binder>);
@@ -55,7 +55,7 @@ if(utils.DEBUG) mods.jei.JEI.addItem(<draconicevolution:draconium_chest>.withTag
 
 # Wyvern Core
 	recipes.remove(<draconicevolution:wyvern_core>);
-	scripts.wrap.forestry.Carpenter.addRecipe(<draconicevolution:wyvern_core>,
+	mods.forestry.Carpenter.addRecipe(<draconicevolution:wyvern_core>,
 	[[<ore:shulkerShell>, <draconicevolution:draconic_core>, <ore:shulkerShell>],
 	[<draconicevolution:draconic_core>, <minecraft:sponge>, <draconicevolution:draconic_core>],
 	[<ore:ingotLudicrite>, <environmentaltech:pladium>, <ore:ingotLudicrite>]],
@@ -63,7 +63,7 @@ if(utils.DEBUG) mods.jei.JEI.addItem(<draconicevolution:draconium_chest>.withTag
 
 # Draconic Energy Core
 	recipes.remove(<draconicevolution:draconic_energy_core>);
-	scripts.wrap.forestry.Carpenter.addRecipe(<draconicevolution:draconic_energy_core>,
+	mods.forestry.Carpenter.addRecipe(<draconicevolution:draconic_energy_core>,
 	[[<ore:ingotDraconiumAwakened>, <draconicevolution:wyvern_energy_core>, <ore:ingotDraconiumAwakened>],
 	[<draconicevolution:wyvern_energy_core>, <draconicevolution:wyvern_core>, <draconicevolution:wyvern_energy_core>],
 	[<ore:ingotDraconiumAwakened>, <draconicevolution:wyvern_energy_core>, <ore:ingotDraconiumAwakened>]],
@@ -71,7 +71,7 @@ if(utils.DEBUG) mods.jei.JEI.addItem(<draconicevolution:draconium_chest>.withTag
 
 # Fusion Crafting Core
 	recipes.remove(<draconicevolution:fusion_crafting_core>);
-	scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe
+	mods.extendedcrafting.CombinationCrafting.addRecipe
 	(<draconicevolution:fusion_crafting_core>, 1000000000, 1000000,
 	<extendedcrafting:crafting_core>, [
 		<draconicevolution:draconic_core>,
@@ -93,7 +93,7 @@ if(utils.DEBUG) mods.jei.JEI.addItem(<draconicevolution:draconium_chest>.withTag
 
 # Wyvern Energy Core
 	recipes.remove(<draconicevolution:wyvern_energy_core>);
-	scripts.wrap.thermalexpansion.Transposer.addFillRecipe
+	mods.thermalexpansion.Transposer.addFillRecipe
 	(<draconicevolution:wyvern_energy_core>,
 	<draconicevolution:draconic_core>,
 	<liquid:redstone> * 10000, 250000);
@@ -107,7 +107,7 @@ if(utils.DEBUG) mods.jei.JEI.addItem(<draconicevolution:draconium_chest>.withTag
 
 # [Basic Energy Relay Crystal] from [Fluix Steel Ingot][+3]
 recipes.removeShaped(<draconicevolution:energy_crystal>);
-scripts.wrap.bloodmagic.AlchemyTable.addRecipe(<draconicevolution:energy_crystal> * 4, [
+mods.bloodmagic.AlchemyTable.addRecipe(<draconicevolution:energy_crystal> * 4, [
 	<astralsorcery:blocklens>, <thermalfoundation:material:136>, <bigreactors:ingotcyanite>, utils.tryCatch("threng:material", <nuclearcraft:alloy:15>),
 ], 2000, 200, 2);
 
@@ -131,8 +131,8 @@ var ingrds as IItemStack[] = [
 	<actuallyadditions:block_giant_chest>,
 	<draconicevolution:draconium_block>
 ] as IItemStack[];
-scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(dchest, 20000000, 2000000, <minecraft:chest>, ingrds as IIngredient[]);
-scripts.wrap.actuallyadditions.Empowerer.addRecipe(dchest, <minecraft:chest>, ingrds[0], ingrds[1], ingrds[2], ingrds[3], 20000000/4, 400, [8.0, 0.1, 0.9]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(dchest, 20000000, 2000000, <minecraft:chest>, ingrds as IIngredient[]);
+mods.actuallyadditions.Empowerer.addRecipe(dchest, <minecraft:chest>, ingrds[0], ingrds[1], ingrds[2], ingrds[3], 20000000/4, 400, [8.0, 0.1, 0.9]);
 
 mods.rt.RandomThingsTweaker.addImbuingRecipe(
 	<randomthings:specialchest>,
@@ -150,7 +150,7 @@ mods.rt.RandomThingsTweaker.addImbuingRecipe(
 );
 
 # Combination Crafting Alternative for Ender Energy Manipulator
-scripts.wrap.extendedcrafting.CombinationCrafting.addRecipe(
+mods.extendedcrafting.CombinationCrafting.addRecipe(
 	<draconicevolution:ender_energy_manipulator>, 12000000, 1200000,
 	<randomthings:obsidianskull>, Grid(["AABCCCCCCC"], {
 		A: <draconicevolution:draconic_core>,

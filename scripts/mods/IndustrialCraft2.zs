@@ -85,7 +85,7 @@ import scripts.requiousJei.add_ic2_crops as crop;
 	
 #  Overclocker Upgrade
 	recipes.remove(<ic2:upgrade>);
-	scripts.wrap.forestry.Carpenter.addRecipe(<ic2:upgrade> * 2, 
+	mods.forestry.Carpenter.addRecipe(<ic2:upgrade> * 2, 
 	[[<ore:plateTin>, <ore:plateTin>, <ore:plateTin>],
 	[<ic2:cable>, <ore:circuitBasic>, <ic2:cable>],
 	[<ore:plateTin>, <ore:plateTin>, <ore:plateTin>]], 40, <liquid:ic2coolant> * 3000);
@@ -134,8 +134,8 @@ import scripts.requiousJei.add_ic2_crops as crop;
 	[<minecraft:stone:*>, <tconstruct:soil>, <minecraft:stone:*>]]);
 
 # Iridium TiC Compat
-	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:iridium> * 144, <ic2:misc_resource:1>, 500);
-	scripts.wrap.tconstruct.Melting.addRecipe(<liquid:iridium> * 16, <ic2:misc_resource:2>, 200);
+	mods.tconstruct.Melting.addRecipe(<liquid:iridium> * 144, <ic2:misc_resource:1>, 500);
+	mods.tconstruct.Melting.addRecipe(<liquid:iridium> * 16, <ic2:misc_resource:2>, 200);
 
 # Lapis Dust
 	recipes.remove(<ic2:dust:9>);
@@ -256,7 +256,7 @@ for out, inp in {
 	<thermalfoundation:material:358> : <ore:ingotLumium>,
 	<thermalfoundation:material:359> : <ore:ingotEnderium>,
 } as IIngredient[IItemStack] {
-	scripts.wrap.ic2.MetalFormer.addRollingRecipe(out, inp);
+	mods.ic2.MetalFormer.addRollingRecipe(out, inp);
 }
 
 # Remake Dust compession recipes
@@ -471,7 +471,7 @@ mods.nuclearcraft.melter.addRecipe(<ore:dustSulfur>, <liquid:sulfur> * 100);
 <ic2:crop_res:1>.setAspects(<aspect:cognitio>*50); # Coffee Powder
 
 # [Green Fertilizer] from [Weed]
-scripts.wrap.actuallyadditions.Compost.addRecipe(<farmingforblockheads:fertilizer:1>, <quark:quilted_wool:5>, <ic2:crop_res:5>, <biomesoplenty:log_4:4>);
+mods.actuallyadditions.Compost.addRecipe(<farmingforblockheads:fertilizer:1>, <quark:quilted_wool:5>, <ic2:crop_res:5>, <biomesoplenty:log_4:4>);
 
 # [Biogas Bucket] from [Hops]
 scripts.process.squeeze([<ic2:crop_res:4>], <fluid:ic2biogas> * 200, "only: IndustrialSqueezer FluidExtractor");
