@@ -316,7 +316,7 @@ lang.execute = function(command, server, sender, args) {
     if (!isNull(it)) {
       print(
         "Lang key and translation:" ~ "\n" ~
-        it.name ~ "=" ~ game.localize(it.name)
+        it.name ~ "=" ~ it.displayName
       );
       pl.sendChat(game.localize("commands.lang.hand"));
     }

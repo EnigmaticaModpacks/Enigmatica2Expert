@@ -151,13 +151,12 @@ function firstItemInList(data as IData, amount as int = 0) as IItemStack {
 		val itemData = itemStorage.Item;
 		if(isNull(itemData)) continue;
 		val item = IItemStack.fromData(itemData);
-		if(!isNull(item)) {
-			return item * (
-				amount != 0
-				? amount / D(itemStorage).getInt("Conv", 1)
-				: D(itemStorage).getInt("Count", 1)
-			);
-		}
+		if(isNull(item) || item.isEmpty) continue;
+		return item * max(1, 
+			amount != 0
+			? amount / D(itemStorage).getInt("Conv", 1)
+			: D(itemStorage).getInt("Count", 1)
+		);
 	}
 	return null;
 }

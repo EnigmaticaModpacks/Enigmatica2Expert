@@ -42,6 +42,7 @@
   },
 	{"mob": "quark:frog","mod": "quark","mincount": 20,"result": "deny"},
 	{"mob": "quark:foxhound","mod": "quark","mincount": 20,"result": "deny"},
+	{"mob": "betteranimalsplus:eel_freshwater","mod": "betteranimalsplus","mincount": 20,"result": "deny"},
 	{"mob": "emberroot:dire_wolf","minlight": 7,"result": "deny"},
 
 	{"mob": "quark:stoneling","mod": "quark","mincount": {"amount": 3,"perchunk": true},"result": "deny"},
@@ -56,7 +57,7 @@
   {"dimension": 0, "mob": "endreborn:watcher", "maxlight": 7, "block": "ore:endstone","result": "allow"},
   {"dimension": 0, "mob": "endreborn:watcher", "result": "deny"},
 
-	{"mob": "endreborn:endguard","endreborn": "endreborn","mincount": 5,"result": "deny"},
+	{"mob": "endreborn:endguard","mod": "endreborn","mincount": 5,"result": "deny"},
   {"mob": "endreborn:endguard", "maxlight": 7, "block": [
 		"minecraft:purpur_block",
 		"minecraft:purpur_pillar",

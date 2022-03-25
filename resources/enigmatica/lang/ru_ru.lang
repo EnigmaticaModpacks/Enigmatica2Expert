@@ -329,6 +329,8 @@ e2ee.tips.65=§NПромышленные провода§r - самый деше
 e2ee.tips.66=§nCtrl+Delete§r удаляет предмет из инвентаря.
 e2ee.tips.67=§nСклад инвентаря§r не может быть доступен напрямую, но работает с бункерами и VAULTOPIC.
 e2ee.tips.68=Щелкните правой кнопкой мыши §nОткрыть резервуар блока§r с жидкостью XP, чтобы получить опыт.
+e2ee.tips.69=Хотите команду §8/дома§r? Создайте §nStable Ender Pearl§r + §nChat Detector§r!
+e2ee.tips.70=Почти каждый игрок E2E-E хотя бы раз взрывал §nMatter Fabricator§r.
 
 e2ee.tconstruct.material.spectre.name=Призрачный
 e2ee.tconstruct.material.spectre.description=§bПризрачный\nКаждая деталь удлиняет руки

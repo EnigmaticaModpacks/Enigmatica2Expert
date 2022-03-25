@@ -1,6 +1,6 @@
 # Enigmatica 2: Expert - Extended
 
-[![Curse Forge](https://cf.way2muchnoise.eu/full_561105_downloads.svg)](https://minecraft.curseforge.com/projects/enigmatica-2-expert-extended) <a title="Join us on Discord!" href="https://discord.gg/VcmyHdNNQP"><img src="https://img.shields.io/discord/911676461050642432?label=E2E-E%20Discord&amp;logo=Discord&amp;style=?flat" alt="Discord"/></a>
+[![Curse Forge](https://cf.way2muchnoise.eu/full_561105_downloads.svg)](https://www.curseforge.com/minecraft/modpacks/enigmatica-2-expert-extended) <a title="Join us on Discord!" href="https://discord.gg/VcmyHdNNQP"><img src="https://img.shields.io/discord/911676461050642432?label=E2E-E%20Discord&amp;logo=Discord&amp;style=?flat" alt="Discord"/></a>
 
 ![](https://i.imgur.com/afnpdXm.png)
 
