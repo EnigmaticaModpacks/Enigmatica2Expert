@@ -1,4 +1,10 @@
-commands.lang.usage="/land" or "/lang hand" to dump inventory or held item into crafttweaker.log file
+commands.lang.usage="/lang" or "/lang hand" to dump inventory or held item into crafttweaker.log file
 commands.lang.output=Output %s items into crafttweaker.log file
 commands.lang.empty=Your inventory is empty. Put untranslated item in
 commands.lang.hand=Output held item into crafttweaker.log file
+
+commands.addtooltip.usage="§e/addtooltip §6[Item Description]§r" to describe item into crafttweaker.log file
+commands.addtooltip.needtext=§e/addtooltip§r command need tooltip string. Try §e/addtooltip §6Hello world!
+commands.addtooltip.needitem=§e/addtooltip§r command need item to be hold. Take something in hand.
+commands.addtooltip.succes=§7Tooltip exported to §n§fcrafttweaker.log
+commands.addtooltip.notag=§8Be aware that §7/addtooltip§8 not account nbt tags
