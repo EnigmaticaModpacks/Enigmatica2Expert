@@ -78,7 +78,7 @@
       }
     }
   },
-  "~~~Thaumcraft-*": {
+  "Thaumcraft-*": {
     "assets/thaumcraft/research/alchemy.json": {
       "entries": [
         {
