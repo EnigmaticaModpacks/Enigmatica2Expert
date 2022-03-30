@@ -5,6 +5,9 @@
 !resourcepacks
 !manifest.json
 
+# Clientside configs
+!config/thaumicjei_itemstack_aspects.json
+
 # List of client side mods only
 # Get from debug.log by "client side only." search
 # Or add manually

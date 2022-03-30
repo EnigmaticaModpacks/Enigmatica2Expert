@@ -44,6 +44,7 @@ Items that should have more uses:
 ![](https://git.io/JGGhx "Overworldian Matter")
 ![](https://git.io/JRLSU "Huge Stalk")
 ![](https://git.io/JnzzI "Glitch Infused Ingot")
+[Osgloglas Ingot]
 
 ### Tier 4
 
@@ -82,16 +83,18 @@ Liquids that should have more uses:
 ## TODO
 
 - [ ] ✏️ Add Creative Essentia Jar recipe
-- [ ] ✏️ Add Mob heads recipes for peaceful (probably Botania's runic altair)
+- [ ] ✏️ Combining broken spawners with data models upgrades them
 - [ ] ✏️ Add DML data models in Space or Ratlantis
-- [ ] ✏️ Combining broken spawners with data models upgrades them. Create spawners on Thaumcraft Infusion with mob essences
 - [ ] ✏️ Transfer liquid interaction to Witch Water
-- [ ] ✏️ Clean up Tungsten
+- [ ] ✏️ Add casts of tungsten instead of making in Part Builder
+- [ ] ✏️ Fix compressing wood drawer dupe
+- [ ] ✏️ Buff immersive silo https://github.com/BluSunrize/ImmersiveEngineering/blob/720bf6f551d6f524e222b27e423b1e1e6e52873f/src/main/java/blusunrize/immersiveengineering/common/blocks/metal/SiloTileEntity.java#L52
+- [ ] 📖 Add quest for Pattern Expansion Card
+- [ ] 🔄 Check why mobs are not spawned anough (less then 70 for whole server)
 - [ ] 🔄 Add Quark's `Beacon Replacements`
 - [ ] 🔄 Add Quark's `A whitelist of items that are allowed to reacharound`, fix reacharound
-- [ ] 🔄 Add server restart voting
 - [ ] 🔄 Check render distance on server
-- [ ] 🔄 Remake Splash Screen
+- [ ] 🔄 Remake BQ Splash Screen
 - [ ] 🚧 Add modpack automation:
     1. `make_pack.js`
     2. Create CF release with fixed description, Add `inline-block` styles for images publishing on CF
