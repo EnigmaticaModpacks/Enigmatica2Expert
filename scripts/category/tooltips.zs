@@ -3,6 +3,66 @@ import crafttweaker.oredict.IOreDictEntry;
 
 val desc = scripts.category.tooltip_utils.desc;
 
+// Some Quark tooltips from https://github.com/Level-5-Pidgey/FantasTek/tree/master/mods
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+//Add Tooltips for various blocks to explain their uses
+for item in [
+/*Inject_js(
+[...loadText('resources/autotooltips/lang/en_us.lang')
+.matchAll(/^tooltips\.lang\.(?<id>[^=]+)=.*$/gm)]
+.map(([, id]) => `  <${id}>,`)
+.sort(naturalSort)
+)*/
+  <advgenerators:gas_input>,
+  <betteranimalsplus:handoffate>,
+  <bloodmagic:blood_rune:1>,
+  <bloodmagic:blood_rune:3>,
+  <bloodmagic:blood_rune:4>,
+  <bloodmagic:blood_rune:5>,
+  <bloodmagic:blood_rune:6>,
+  <bloodmagic:blood_rune:7>,
+  <bloodmagic:blood_rune:8>,
+  <bloodmagic:blood_rune:9>,
+  <bloodmagic:blood_rune:10>,
+  <botania:flugeleye>,
+  <botania:infinitefruit>,
+  <botania:kingkey>,
+  <botania:lokiring>,
+  <botania:odinring>,
+  <botania:thorring>,
+  <computercraft:printout>,
+  <farmingforblockheads:feeding_trough>,
+  <ic2:quantum_chestplate>,
+  <ic2:te:48>,
+  <minecraft:torch>,
+  <openblocks:tank>,
+  <opencomputers:print>,
+  <quark:archaeologist_hat>,
+  <quark:chain>,
+  <quark:chute>,
+  <quark:grate>,
+  <quark:gravisand>,
+  <quark:horse_whistle>,
+  <quark:iron_rod>,
+  <quark:redstone_inductor>,
+  <quark:rope>,
+  <quark:slime_bucket>,
+  <quark:trowel>,
+  <randomthings:peacecandle>,
+  <thaumadditions:salt_essence>,
+  <thaumcraft:research_table>,
+  <thaumcraft:table_wood>,
+  <thermalfoundation:upgrade:1>,
+  <thermalfoundation:upgrade:2>,
+  <thermalfoundation:upgrade:3>,
+  <twilightforest:transformation_powder>,
+/**/
+] as IItemStack[] {
+	desc.both(item);
+}
+
 ////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////
 
@@ -257,26 +317,6 @@ for gems, tip in {
 	for gem in gems { gem.firstItem.addTooltip(desc.local(tip)); }
 }
 
-//Add Tooltips for various blocks to explain their uses
-/*
-Taken from: FantasTek
-https://github.com/Level-5-Pidgey/FantasTek/tree/master/mods
-*/
-for item in [
-	<quark:chain>,
-	<quark:trowel>,
-	<quark:rope>,
-	<quark:iron_rod>,
-	<quark:chute>,
-	<quark:redstone_inductor>,
-	<quark:gravisand>,
-	<quark:grate>,
-	<quark:horse_whistle>,
-	<quark:slime_bucket>,
-	<quark:archaeologist_hat>,
-] as IItemStack[] {
-	desc.tooltip(item);
-}
 
 # Thaumcraft Curiocity
 val lp = desc.local("thaum.progress").toLowerCase();
@@ -287,31 +327,7 @@ val lp = desc.local("thaum.progress").toLowerCase();
 <thaumcraft:curio:4>.addTooltip("§f+ §5"~desc.local("thaum.arcane")~"§f " ~ lp);
 <thaumcraft:curio:5>.addTooltip("§f+ §5"~desc.local("thaum.artifice")~"§f " ~ lp);
 
-# 3d print tooltips
-desc.jei(<opencomputers:print>);
-
-# Blood runes helpers
-desc.tooltip(<bloodmagic:blood_rune:1>);
-desc.tooltip(<bloodmagic:blood_rune:3>);
-desc.tooltip(<bloodmagic:blood_rune:4>);
-desc.tooltip(<bloodmagic:blood_rune:5>);
-desc.tooltip(<bloodmagic:blood_rune:6>);
-desc.tooltip(<bloodmagic:blood_rune:7>);
-desc.tooltip(<bloodmagic:blood_rune:8>);
-desc.tooltip(<bloodmagic:blood_rune:9>);
-desc.tooltip(<bloodmagic:blood_rune:10>);
-
-desc.tooltip(<computercraft:printout>);
-desc.tooltip(<thermalfoundation:upgrade:1>);
-desc.tooltip(<thermalfoundation:upgrade:2>);
-desc.tooltip(<thermalfoundation:upgrade:3>);
-desc.tooltip(<ic2:te:48>); # Recycler disabled
-desc.tooltip(<ic2:quantum_chestplate>);
-desc.tooltip(<advgenerators:gas_input>); # Gas Intake disabled
 desc.tooltip(Bucket("corium"), "fluid.corium");
-desc.tooltip(<minecraft:torch>);
-desc.tooltip(<thaumcraft:table_wood>);
-desc.tooltip(<thaumcraft:research_table>);
 desc.tooltip(<actuallyadditions:item_crystal_empowered:2>, 'tcon.diamond');
 desc.tooltip(<scalinghealth:heartdust>, 'tcon.speedy');
 desc.tooltip(<botania:specialflower>.withTag({type: "endoflame"}), 'botania.decay1hour');
@@ -319,12 +335,6 @@ desc.tooltip(<conarm:resist_mat>, 'tcon.slot_each');
 desc.tooltip(<conarm:resist_mat_fire>, 'tcon.slot_first');
 desc.tooltip(<conarm:resist_mat_proj>, 'tcon.slot_first');
 desc.tooltip(<conarm:resist_mat_blast>, 'tcon.slot_first');
-desc.tooltip(<botania:infinitefruit>);
-desc.tooltip(<botania:kingkey>);
-desc.tooltip(<botania:flugeleye>);
-desc.tooltip(<botania:thorring>);
-desc.tooltip(<botania:odinring>);
-desc.tooltip(<botania:lokiring>);
 desc.tooltip(<travelersbackpack:travelers_backpack:2>,  'backpack.Bat');
 desc.tooltip(<travelersbackpack:travelers_backpack:15>, 'backpack.Bookshelf');
 desc.tooltip(<travelersbackpack:travelers_backpack:17>, 'backpack.Cactus');
@@ -359,16 +369,12 @@ desc.tooltip(<openblocks:trophy>.withTag({entity_id: "minecraft:witch"})        
 desc.both(<netherendingores:ore_nether_modded_1:7>, 'worldgen.disabled_use_sub');
 desc.both(<netherendingores:ore_end_modded_1:7>, 'worldgen.disabled_use_sub');
 desc.both(<thermalfoundation:ore:2>, 'worldgen.disabled_use_sub');
-desc.both(<twilightforest:transformation_powder>);
 desc.both(<rftools:syringe>, 'syringe_craftable');
 desc.both(<rftools:spawner>, 'syringe_craftable');
 desc.both(<tconstruct:shard>.withTag({Material: "fusewood"}), 'tcon.fusewood');
 desc.both(<tconstruct:shard>.withTag({Material: "darkwood"}), 'tcon.darkwood');
 desc.both(<tconstruct:shard>.withTag({Material: "bloodwood"}), 'tcon.bloodwood');
 desc.both(<tconstruct:shard>.withTag({Material: "ghostwood"}), 'tcon.ghostwood');
-desc.both(<farmingforblockheads:feeding_trough>);
-desc.both(<randomthings:peacecandle>);
-desc.both(<thaumadditions:salt_essence>);
 
 /*Inject_js(
 [...loadText('config/enderio/recipes/user/capacitor_machines.xml')
