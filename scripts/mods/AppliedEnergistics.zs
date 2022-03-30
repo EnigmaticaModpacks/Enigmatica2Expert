@@ -85,7 +85,7 @@ import scripts.craft.grid.Grid;
 
 # ---=== Gas Cells ===---
   for i in 0 .. 7 {
-    newGasCellRecipe(<aeadditions:storage.component>.definition.makeStack(i+11), <aeadditions:storage.gas>.definition.makeStack(i));
+    newGasCellRecipe(<aeadditions:storage.component>.definition.makeStack(i+7), <aeadditions:storage.gas>.definition.makeStack(i));
   }
 
 # ---=== High Tier Storage Components ===---

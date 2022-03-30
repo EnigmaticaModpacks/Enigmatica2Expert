@@ -715,3 +715,32 @@ remakeInAltair("mysticalagriculture:blockcustomore", <astralsorcery:blockcustomo
 
 # Adventure way to obtain Prudentium Essence
 scripts.loot.entity_kill_entity.add("minecraft:slime", "betteranimalsplus:feralwolf", <mysticalagriculture:crafting:2>);
+
+val mobChunks = {
+	"minecraft:zombie": 6,
+	"minecraft:pig": 7,
+	"minecraft:chicken": 8,
+	"minecraft:cow": 9,
+	"minecraft:sheep": 10,
+	"minecraft:slime": 11,
+	"minecraft:skeleton": 12,
+	"minecraft:creeper": 13,
+	"minecraft:spider": 14,
+	"minecraft:rabbit": 15,
+	"minecraft:guardian": 16,
+	"minecraft:blaze": 17,
+	"minecraft:ghast": 18,
+	"minecraft:enderman": 19,
+	"minecraft:wither_skeleton": 20,
+	"thermalfoundation:blizz": 21,
+	"thermalfoundation:blitz": 22,
+	"thermalfoundation:basalz": 23,
+} as int[string];
+for id, meta in mobChunks {
+  scripts.process.crush(
+		<enderio:item_broken_spawner>.withTag({entityId: id}),
+		<mysticalagriculture:chunk>.definition.makeStack(meta) * 4,
+		"only: eu2Crusher AACrusher SagMill",
+		[<mysticalagriculture:chunk:5> * 16], [0.5f]
+	);
+}

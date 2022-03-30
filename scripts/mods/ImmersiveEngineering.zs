@@ -51,6 +51,10 @@ import scripts.craft.grid.Grid;
   mods.immersiveengineering.Crusher.removeRecipe(<minecraft:blaze_powder>);
   mods.immersiveengineering.Crusher.addRecipe(<minecraft:blaze_powder> * 4, <ore:rodBlaze>, 2048, <thermalfoundation:material:771>, 0.5);
 
+# Nitrate dust fix
+  mods.immersiveengineering.Crusher.removeRecipesForInput(<minecraft:sandstone>);
+  mods.immersiveengineering.Crusher.addRecipe(<minecraft:sand> * 2, <ore:sandstone>, 2048, <thermalfoundation:material:772>, 0.5);
+
 # Aluminum Scaffolding
 	recipes.remove(<immersiveengineering:metal_decoration2:8>);
 	recipes.addShapedMirrored("Aluminum Scaffolding", 

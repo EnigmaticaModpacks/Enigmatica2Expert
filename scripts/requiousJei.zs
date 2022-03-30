@@ -67,19 +67,36 @@ function addInfFur(input as IIngredient, outs as WeightedItemStack[]) {
 }
 
 /*Inject_js(
-_(getCrtLogBlock('Thaumcraft dump:\n-Smelting Bonus:\n', '\n-Warp')
-.split('\n')
-.filter(s=>!s.match(/yellorium/i)))
-.map(s=>s.match(/--in: (.*?), out: (.*?), change: (.*)/)?.splice(1))
-.filter(s=>s)
-.groupBy('0')
-.map((arr, inp)=>`addInfFur(${inp.padEnd(41)}, [${
-  arr.map(([,out, chance])=>
-    out.replace('<thaumcraft:nugget:10>', 'RE')+' % '+((parseFloat(chance)*100)|0)
-  ).sort((a,b)=>a.length-b.length).join(', ')
-}]);`)
-.sort(naturalSort)
-.value()
+Object.entries(
+  _.groupBy(
+    getCrtLogBlock('Thaumcraft dump:\n-Smelting Bonus:\n', '\n-Warp')
+      .split('\n')
+      .filter((s) => !s.match(/yellorium/i))
+      .map((s) => s.match(/--in: (.*?), out: (.*?), change: (.*)/)?.splice(1))
+      .filter((s) => s),
+    '0'
+  )
+)
+  .filter(([inp]) => {
+    const oreName = inp.match(/<ore:([^>]+)>/)?.[1]
+    if (!oreName) return true
+    return getByOredict(oreName).some((tm) =>
+      getFurnaceRecipes().some(
+        (fr) => fr.in_id == tm.id && (fr.in_meta == '*' || Number(fr.in_meta ?? 0) == tm.damage)
+      )
+    )
+  })
+  .map(
+    ([inp, arr]) =>
+      `addInfFur(${inp.padEnd(41)}, [${arr
+        .map(
+          ([, out, chance]) =>
+            out.replace('<thaumcraft:nugget:10>', 'RE') + ' % ' + ((parseFloat(chance) * 100) | 0)
+        )
+        .sort((a, b) => a.length - b.length)
+        .join(', ')}]);`
+  )
+  .sort(naturalSort)
 )*/
 addInfFur(<contenttweaker:ore_phosphor>            , [<contenttweaker:nugget_phosphor> * 2 % 50]);
 addInfFur(<jaopca:item_clusteraluminium>           , [RE % 2, <thermalfoundation:material:196> % 33, <jaopca:item_nuggetaquamarine> * 64 % 50]);
@@ -177,15 +194,11 @@ addInfFur(<ore:oreAquamarine>                      , [RE % 1, <jaopca:item_nugge
 addInfFur(<ore:oreArdite>                          , [RE % 1, <tconstruct:nuggets:1> % 33]);
 addInfFur(<ore:oreAstralStarmetal>                 , [RE % 1, <jaopca:item_nuggetastralstarmetal> % 33]);
 addInfFur(<ore:oreBoron>                           , [RE % 1, <jaopca:item_nuggetboron> % 33]);
-addInfFur(<ore:oreCertusQuartz>                    , [RE % 1, <jaopca:item_nuggetcertusquartz> % 33]);
-addInfFur(<ore:oreChargedCertusQuartz>             , [RE % 1, <jaopca:item_nuggetchargedcertusquartz> % 33]);
 addInfFur(<ore:oreCinnabar>                        , [RE % 2, <thaumcraft:nugget:5> % 33]);
 addInfFur(<ore:oreCoal>                            , [RE % 1]);
 addInfFur(<ore:oreCobalt>                          , [RE % 1, <tconstruct:nuggets> % 33]);
 addInfFur(<ore:oreCopper>                          , [RE % 1, <thermalfoundation:material:192> % 32]);
 addInfFur(<ore:oreDiamond>                         , [RE % 2]);
-addInfFur(<ore:oreDilithium>                       , [RE % 1, <jaopca:item_nuggetdilithium> % 33]);
-addInfFur(<ore:oreDimensionalShard>                , [RE % 1, <jaopca:item_nuggetdimensionalshard> % 33]);
 addInfFur(<ore:oreDraconium>                       , [RE % 1, <draconicevolution:nugget> % 33]);
 addInfFur(<ore:oreEmerald>                         , [RE % 2]);
 addInfFur(<ore:oreGold>                            , [RE % 2, <minecraft:gold_nugget> % 33]);
@@ -210,7 +223,6 @@ addInfFur(<ore:oreSilver>                          , [RE % 2, <thermalfoundation
 addInfFur(<ore:oreTanzanite>                       , [RE % 1, <jaopca:item_nuggettanzanite> % 33]);
 addInfFur(<ore:oreThorium>                         , [RE % 1, <jaopca:item_nuggetthorium> % 33]);
 addInfFur(<ore:oreTin>                             , [RE % 1, <thermalfoundation:material:193> % 32]);
-addInfFur(<ore:oreTitanium>                        , [RE % 1, <libvulpes:productnugget:7> % 33]);
 addInfFur(<ore:oreTopaz>                           , [RE % 1, <jaopca:item_nuggettopaz> % 33]);
 addInfFur(<ore:oreTungsten>                        , [RE % 1, <jaopca:item_nuggettungsten> % 33]);
 addInfFur(<ore:oreUranium>                         , [RE % 1, <immersiveengineering:metal:25> % 33]);
@@ -246,6 +258,7 @@ addInfFur(<rats:rat_nugget_ore:96>.withTag({OreItem: {id: "biomesoplenty:gem_ore
 addInfFur(<rats:rat_nugget_ore:97>.withTag({OreItem: {id: "nuclearcraft:ore", Count: 1 as byte, Damage: 3 as short}, IngotItem: {id: "nuclearcraft:ingot", Count: 1 as byte, Damage: 3 as short}}), [<jaopca:item_nuggetboron> * 13 % 50]);
 addInfFur(<rats:rat_nugget_ore:99>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 3 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 3 as short}}), [<thaumcraft:nugget:9> * 30 % 50]);
 addInfFur(<rats:rat_nugget_ore:101>.withTag({OreItem: {id: "immersiveengineering:ore", Count: 1 as byte, Damage: 5 as short}, IngotItem: {id: "immersiveengineering:metal", Count: 1 as byte, Damage: 5 as short}}), [<jaopca:item_nuggetlithium> * 13 % 50]);
+addInfFur(<rats:rat_nugget_ore:102>.withTag({OreItem: {id: "libvulpes:ore0", Count: 1 as byte, Damage: 0 as short}, IngotItem: {id: "libvulpes:productdust", Count: 1 as byte, Damage: 0 as short}}), [<jaopca:item_nuggetdimensionalshard> * 30 % 50]);
 addInfFur(<thaumcraft:cluster:*>                   , [RE % 2]);
 addInfFur(<thaumcraft:cluster:1>                   , [<minecraft:gold_nugget> % 33, <thermalfoundation:material:196> * 27 % 50]);
 addInfFur(<thaumcraft:cluster:2>                   , [<thaumcraft:nugget:1> % 33, <minecraft:gold_nugget> * 27 % 50, <thermalfoundation:material:192> * 2 % 32]);
@@ -647,9 +660,9 @@ addHeatExch(<fluid:pyrotheum>, 0, null, <chisel:basalt2:7>, 60);
 addHeatExch(<fluid:fire_water>, 0, null, <botania:blazeblock>, 200);
 addHeatExch(<fluid:enrichedlava>, 0, null, <draconicevolution:infused_obsidian>, 500);
 addHeatExch(<fluid:water> * 5, 3, <fluid:steam> * 15, null, 0);
-addHeatExch(<fluid:distwater>, 200, <fluid:steam> * 300, null, 0);
-addHeatExch(<fluid:ic2hot_water>, 120, <fluid:steam> * 300, null, 0);
-addHeatExch(<fluid:ic2distilled_water>, 160, <fluid:steam> * 400, null, 0);
+addHeatExch(<fluid:distwater>, 20, <fluid:steam> * 300, null, 0);
+addHeatExch(<fluid:ic2hot_water>, 12, <fluid:steam> * 300, null, 0);
+addHeatExch(<fluid:ic2distilled_water>, 16, <fluid:steam> * 400, null, 0);
 /**/
 
 

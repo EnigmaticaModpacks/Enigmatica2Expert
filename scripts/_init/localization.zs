@@ -13,6 +13,7 @@ val localizationMap as string[string][string] = {
     'ic2.dust.small_silver'    : 'Silvery Fruit',
     'ic2.dust.sulfur'          : 'Fiery Fruit',
     'ic2.crop_res.coffee_beans': 'Arabica',
+    'item.singularity.silver.name'  : '§eFur Singularity',
   },
 
   ru_ru: {
@@ -27,6 +28,7 @@ val localizationMap as string[string][string] = {
     'ic2.dust.small_silver'    : 'Серебристый фрукт',
     'ic2.dust.sulfur'          : 'Огневой фрукт',
     'ic2.crop_res.coffee_beans': 'Арабика',
+    'item.singularity.silver.name'  : '§eМеховая сингулярность',
   }
 };
 

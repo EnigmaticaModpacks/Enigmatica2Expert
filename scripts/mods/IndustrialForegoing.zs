@@ -373,3 +373,6 @@ function cleanupBenification(item as IItemStack, ingot as IItemStack, dust as II
 
 mods.thaumcraft.Crucible.removeRecipe(<jaopca:item_clustertitanium>);
 cleanupBenification(<libvulpes:ore0:8>, <libvulpes:productingot:7>, <libvulpes:productdust:7>, <fluid:titanium>);
+
+# Peaceful alt
+mods.rustic.EvaporatingBasin.addRecipe(<industrialforegoing:pink_slime>, <liquid:if.pink_slime> * 1000, 30*20);

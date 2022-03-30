@@ -138,6 +138,11 @@ craft.remake(<integratedtunnels:part_interface_fluid_item>, ["pretty",
 mods.integrateddynamics.Squeezer.removeRecipesWithOutput(<forestry:propolis>, <fluid:for.honey> * 180);
 mods.integrateddynamics.MechanicalSqueezer.removeRecipesWithOutput(<forestry:propolis>, <fluid:for.honey> * 180);
 
+# Fix Aluminum not squeezed
+val AD = <thermalfoundation:material:68>; # Aluminum Dust
+scripts.processWork.work(["Squeezer"]          , null, [<thermalfoundation:ore:4>], null, [AD, AD], null, null, [1.0f, 0.75f]);
+scripts.processWork.work(["MechanicalSqueezer"], null, [<thermalfoundation:ore:4>], null, [AD*2, AD], null, null, [1.0f, 0.5f]);
+
 # [Player Simulator] from [Turtle][+3]
 craft.remake(<integratedtunnels:part_player_simulator_item>, ["pretty",
   "L ▬ L",

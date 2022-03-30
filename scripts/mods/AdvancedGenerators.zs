@@ -49,7 +49,7 @@ recipes.remove(<advgenerators:advanced_pressure_valve>);
 scripts.process.fill(<advgenerators:pressure_valve>, <fluid:syngas> * 1000, <advgenerators:advanced_pressure_valve>, "only: MechanicalDryingBasin NCInfuser Transposer");
 
 val turbineTypes = {
-	iron      : {"▬": <ore:plateIron>         , "/": <tconstruct:large_plate>.withTag({Material: "iron"}) | <tconstruct:large_plate>.withTag({Material: "construction_alloy"}), "o": <advgenerators:iron_tubing>},
+	iron      : {"▬": <ore:plateIron>         , "/": <tconstruct:large_plate>.withTag({Material: "construction_alloy"}) | <tconstruct:large_plate>.withTag({Material: "iron"}), "o": <advgenerators:iron_tubing>},
 	bronze    : {"▬": <ore:plateBronze>       , "/": <tconstruct:large_plate>.withTag({Material: "bronze"}),         "o": <forestry:sturdy_machine>},
 	gold      : {"▬": <ore:plateGold>         , "/": <tconstruct:large_plate>.withTag({Material: "electrum"}),       "o": <actuallyadditions:item_crystal_empowered:4>},
 	steel     : {"▬": <ore:plateSteel>        , "/": <tconstruct:large_plate>.withTag({Material: "steel"}),          "o": <enderio:item_basic_capacitor>},
@@ -109,4 +109,14 @@ for name, ingrs in turbineTypes {
 		"U": <advgenerators:upgrade_kit>,
 		"o": ingrs["o"],
 	});
+
+	# Fluid recycle
+	val fluidName = D(ingrs["/"].items[0].tag).getString("Material");
+	val fluid = !isNull(fluidName) ? game.getLiquid(fluidName) : null;
+	if (!isNull(fluid)) {
+		mods.tconstruct.Melting.addRecipe(name=="iron" ? fluid*(648) : fluid*(2592), rotor);
+	} else {
+		val item = ingrs["▬"].items[0];
+		recipes.addShapeless(name=="iron" ? item*4 : item*18, [rotor]);
+	}
 }

@@ -362,11 +362,6 @@ craft.remake(<nuclearcraft:bin>, ["pretty",
   "▬": <ore:ingotBoron>, # Boron Ingot
 });
 
-# Late game alternatives
-# [Graphite Block] from [Block of Charcoal][+1]
-mods.enderio.AlloySmelter.addRecipe(<nuclearcraft:ingot_block:8>, [<ore:blockCoal>], 4000);
-mods.enderio.AlloySmelter.addRecipe(<nuclearcraft:ingot_block:8>, [<ore:blockCharcoal>], 4000);
-
 # [Dimensional Blend] from [Biome Essence]
 recipes.remove(<nuclearcraft:compound:8>);
 scripts.process.crush(<biomesoplenty:biome_essence>, <nuclearcraft:compound:8>, "only: eu2Crusher AACrusher IECrusher", [<thermalfoundation:material:66>], [0.25]);

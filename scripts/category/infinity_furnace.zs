@@ -92,7 +92,7 @@ ${filtered.join('\n')}`
 
 }*/
 
-# Total Furnace recipes registered: 915
+# Total Furnace recipes registered: 919
 # Filtered by JEI blacklist: 49
 # Filtered manuallly (antidupe): 14
 # Filtered by oredict: 201
@@ -296,6 +296,7 @@ infinFurnace(utils.get("jaopca:item_chunkcoal"), utils.get("jaopca:item_dirtygem
 infinFurnace(utils.get("jaopca:item_chunkcobalt"), utils.get("jaopca:item_dirtygemcobalt", 0, 10));
 infinFurnace(utils.get("jaopca:item_chunkcopper"), utils.get("jaopca:item_dirtygemcopper", 0, 10));
 infinFurnace(utils.get("jaopca:item_chunkdiamond"), utils.get("jaopca:item_dirtygemdiamond", 0, 10));
+infinFurnace(utils.get("jaopca:item_chunkdilithium"), utils.get("jaopca:item_dirtygemdilithium", 0, 10));
 infinFurnace(utils.get("jaopca:item_chunkdraconium"), utils.get("jaopca:item_dirtygemdraconium", 0, 10));
 infinFurnace(utils.get("jaopca:item_chunkemerald"), utils.get("jaopca:item_dirtygememerald", 0, 10));
 infinFurnace(utils.get("jaopca:item_chunkgold"), utils.get("jaopca:item_dirtygemgold", 0, 10));
@@ -321,6 +322,7 @@ infinFurnace(utils.get("jaopca:item_chunktanzanite"), utils.get("jaopca:item_dir
 infinFurnace(utils.get("jaopca:item_chunkthorium"), utils.get("jaopca:item_dirtygemthorium", 0, 10));
 infinFurnace(utils.get("jaopca:item_chunktin"), utils.get("jaopca:item_dirtygemtin", 0, 10));
 infinFurnace(utils.get("jaopca:item_chunktopaz"), utils.get("jaopca:item_dirtygemtopaz", 0, 10));
+infinFurnace(utils.get("jaopca:item_chunktungsten"), utils.get("jaopca:item_dirtygemtungsten", 0, 10));
 infinFurnace(utils.get("jaopca:item_chunkuranium"), utils.get("jaopca:item_dirtygemuranium", 0, 10));
 infinFurnace(utils.get("jaopca:item_clusteraluminium"), utils.get("thermalfoundation:material", 68, 2));
 infinFurnace(utils.get("jaopca:item_clusteramber"), utils.get("thaumcraft:amber", 0, 3));
@@ -491,6 +493,7 @@ infinFurnace(utils.get("jaopca:item_dustalchcoal"), utils.get("jaopca:item_dirty
 infinFurnace(utils.get("jaopca:item_dustalchcobalt"), utils.get("jaopca:item_dirtygemcobalt", 0, 48));
 infinFurnace(utils.get("jaopca:item_dustalchcopper"), utils.get("jaopca:item_dirtygemcopper", 0, 48));
 infinFurnace(utils.get("jaopca:item_dustalchdiamond"), utils.get("jaopca:item_dirtygemdiamond", 0, 48));
+infinFurnace(utils.get("jaopca:item_dustalchdilithium"), utils.get("jaopca:item_dirtygemdilithium", 0, 48));
 infinFurnace(utils.get("jaopca:item_dustalchdraconium"), utils.get("jaopca:item_dirtygemdraconium", 0, 48));
 infinFurnace(utils.get("jaopca:item_dustalchemerald"), utils.get("jaopca:item_dirtygememerald", 0, 48));
 infinFurnace(utils.get("jaopca:item_dustalchgold"), utils.get("jaopca:item_dirtygemgold", 0, 48));
@@ -516,6 +519,7 @@ infinFurnace(utils.get("jaopca:item_dustalchtanzanite"), utils.get("jaopca:item_
 infinFurnace(utils.get("jaopca:item_dustalchthorium"), utils.get("jaopca:item_dirtygemthorium", 0, 48));
 infinFurnace(utils.get("jaopca:item_dustalchtin"), utils.get("jaopca:item_dirtygemtin", 0, 48));
 infinFurnace(utils.get("jaopca:item_dustalchtopaz"), utils.get("jaopca:item_dirtygemtopaz", 0, 48));
+infinFurnace(utils.get("jaopca:item_dustalchtungsten"), utils.get("jaopca:item_dirtygemtungsten", 0, 48));
 infinFurnace(utils.get("jaopca:item_dustalchuranium"), utils.get("jaopca:item_dirtygemuranium", 0, 48));
 ##infinFurnace(utils.get("jaopca:item_dustapatite"), utils.get("forestry:apatite"));
 infinFurnace(utils.get("jaopca:item_rockychunkaluminium"), utils.get("jaopca:item_dirtygemaluminium", 0, 4));

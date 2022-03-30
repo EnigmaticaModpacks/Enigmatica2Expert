@@ -78,3 +78,9 @@ craft.reshapeless(<quark:paper_lantern> * 4, "C■", {
   "C": <forestry:carton>, # Carton
   "■": <ore:blockCandle>, # White Candle
 });
+
+# [Slime in a Bucket] from [Bucket][+1]
+craft.shapeless(<quark:slime_bucket>, "§~", {
+  "§": <randomthings:slimecube>, # Slime Cube
+  "~": <minecraft:bucket>,       # Bucket
+});

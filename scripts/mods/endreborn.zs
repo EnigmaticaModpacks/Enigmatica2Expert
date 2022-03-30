@@ -244,7 +244,11 @@ scripts.category.expire_in_block.set(<tconstruct:shard>.withTag({Material: "wolf
 #----------------------------------------------------------------------------
 # Tungsten
 #----------------------------------------------------------------------------
-
+// Fix Tungsten Nugget output from Infernal Furnace
+recipes.addShapeless(<endreborn:wolframium_nugget>, [<jaopca:item_nuggettungsten>]);
+craft.shapeless(<endreborn:item_ingot_wolframium>, "‚‚‚‚‚‚‚‚‚", {
+  "‚": <jaopca:item_nuggettungsten>,
+});
 
 
 #----------------------------------------------------------------------------

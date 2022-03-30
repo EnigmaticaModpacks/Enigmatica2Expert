@@ -290,6 +290,11 @@ for i in 0 to listCatFur.length {
 	}
 }
 
+# Cat singularity
+mods.extendedcrafting.CompressionCrafting.addRecipe(<avaritia:singularity:8>, 
+  <actuallyadditions:item_hairy_ball>, 1000, <twilightforest:alpha_fur>, 2000000, 100000);
+
+
 # [Phantomface] from [End Steel Chassis][+3]
 craft.remake(<actuallyadditions:block_phantomface>, ["pretty",
   "  I  ",

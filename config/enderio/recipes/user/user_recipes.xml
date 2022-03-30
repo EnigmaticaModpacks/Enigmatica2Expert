@@ -99,6 +99,19 @@
   <recipe name="Alloy: Vibrant Alloy">
     <disabled/>
   </recipe>
+  <!-- Late game Graphite Block alternatives -->
+  <recipe name="Graphite Shortcut">
+    <alloying energy="320000" exp="0">
+      <input name="blockCoal"/>
+      <output name="nuclearcraft:ingot_block:8"/>
+    </alloying>
+  </recipe>
+  <recipe name="Graphite Shortcut 2">
+    <alloying energy="320000" exp="0">
+      <input name="blockCharcoal"/>
+      <output name="nuclearcraft:ingot_block:8"/>
+    </alloying>
+  </recipe>
   <!-- End: Reborn integration -->
   <recipe name="Alloy: End Steel">
     <alloying energy="20000" exp="0.5">
@@ -184,6 +197,15 @@
     <sagmilling energy="4000">
       <input name="immersiveengineering:material:6"/>
       <output name="immersiveengineering:material:17"/>
+    </sagmilling>
+  </recipe>
+  <recipe name="Fur Singularity">
+    <sagmilling bonus="chance_only" energy="24000">
+      <input name="avaritia:singularity:8"/>
+      <output name="avaritia:singularity:8"/>
+      <output name="actuallyadditions:item_hairy_ball" chance="0.5"/>
+      <output name="twilightforest:alpha_fur" chance="0.1"/>
+      <output name="thaumadditions:zeith_fur" chance="0.01"/>
     </sagmilling>
   </recipe>
   <recipe name="Sagmill: Black Quartz Block">
