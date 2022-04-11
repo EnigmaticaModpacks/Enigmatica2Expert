@@ -116,6 +116,7 @@ for lang, items in {
     <mekanism:anchorupgrade>,
     <opencomputers:upgrade:4>,
     <randomthings:enderanchor>,
+    <fluxnetworks:fluxpoint>,
   ],
 
   "tag.repairer" : [
