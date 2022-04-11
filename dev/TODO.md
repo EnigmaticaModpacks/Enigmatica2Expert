@@ -82,17 +82,8 @@ Liquids that should have more uses:
 
 ## TODO
 
-- [ ] ✏️ Add Creative Essentia Jar recipe
-- [ ] ✏️ Combining broken spawners with data models upgrades them
-- [ ] ✏️ Add DML data models in Space or Ratlantis
 - [ ] ✏️ Transfer liquid interaction to Witch Water
-- [ ] ✏️ Add casts of tungsten instead of making in Part Builder
-- [ ] ✏️ Fix compressing wood drawer dupe
-- [ ] ✏️ Buff immersive silo https://github.com/BluSunrize/ImmersiveEngineering/blob/720bf6f551d6f524e222b27e423b1e1e6e52873f/src/main/java/blusunrize/immersiveengineering/common/blocks/metal/SiloTileEntity.java#L52
-- [ ] 📖 Add quest for Pattern Expansion Card
 - [ ] 🔄 Check why mobs are not spawned anough (less then 70 for whole server)
-- [ ] 🔄 Add Quark's `Beacon Replacements`
-- [ ] 🔄 Add Quark's `A whitelist of items that are allowed to reacharound`, fix reacharound
 - [ ] 🔄 Check render distance on server
 - [ ] 🔄 Remake BQ Splash Screen
 - [ ] 🚧 Add modpack automation:
@@ -112,6 +103,12 @@ Liquids that should have more uses:
 
 ## Long-Term
 
+- [ ] 🔄 Add Quark's `Beacon Replacements`
+- [ ] 🔄 Fix Quark's reacharound not working after update to ROTN edition
+- [ ] ✏️ Add casts of tungsten instead of making in Part Builder
+- [ ] ✏️ Add DML data models in Space or Ratlantis
+- [ ] ✏️ Add Creative Essentia Jar recipe
+- [ ] ✏️ ? Quark Crystals: orange -> topaz nuggets, violet -> tanzanite nuggets, yellow -> brass nuggets
 - [ ] 🔄 Fix boat glitch when leaving in first person
 - [ ] 📖 Add CC/OC gate, Add EEPROM with `trader`, add Patchouli and Quest Book Entry
 - [ ] ✏️ Fix Green fertilizer output additional crop even if not grown (carrots)
