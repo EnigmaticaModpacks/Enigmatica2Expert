@@ -1,0 +1,19 @@
+// For more info visit https://faq.ftb.world/books/ftb-utilities/page/ranks
+
+[player]
+power: 1
+default_player_rank: true
+ftbutilities.chunkloader.load_offline: false
+ftbutilities.chunkloader.max_chunks: 3
+
+[conflux_1]
+power: 20
+parent: player
+ftbutilities.chat.name_format: <&b{name}&r>
+ftbutilities.chunkloader.max_chunks: 30
+
+[admin]
+power: 100
+parent: vip
+default_op_rank: true
+ftbutilities.chat.name_format: <&2{name}&r>
