@@ -262,7 +262,6 @@
               ],
               "required_craft": [
                 "minecraft:gunpowder",
-                "minecraft:slime_ball",
                 "minecraft:dye",
                 "minecraft:glowstone_dust"
               ],
