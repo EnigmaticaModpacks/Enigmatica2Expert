@@ -681,9 +681,9 @@ scripts.process.alloy([<ore:ingotSilver> * 3, <ore:ingotCopper>], <nuclearcraft:
 mods.thermalexpansion.Compactor.addGearRecipe(<thermalfoundation:material:23>, <minecraft:cobblestone> * 4, 16000);
 
 # Way to craft Oil Ore (alternative way to get Tar)
-mods.tconstruct.Casting.addBasinRecipe(<thermalfoundation:ore_fluid>, <minecraft:sand>, <liquid:oil>, 2000);
-mods.tconstruct.Casting.addBasinRecipe(<thermalfoundation:ore_fluid:5>, <minecraft:sand:1>, <liquid:oil>, 2000);
-mods.tconstruct.Casting.addBasinRecipe(<thermalfoundation:ore_fluid:1>, <minecraft:gravel>, <liquid:oil>, 2000);
+mods.tconstruct.Casting.addBasinRecipe(<thermalfoundation:ore_fluid>, <minecraft:sand>, <liquid:oil>, 2000, true);
+mods.tconstruct.Casting.addBasinRecipe(<thermalfoundation:ore_fluid:5>, <minecraft:sand:1>, <liquid:oil>, 2000, true);
+mods.tconstruct.Casting.addBasinRecipe(<thermalfoundation:ore_fluid:1>, <minecraft:gravel>, <liquid:oil>, 2000, true);
 
 # Early game alt
 /* [Blizz Rod]  */ mods.tconstruct.Casting.addTableRecipe(<thermalfoundation:material:2048>, <mechanics:empty_rod:*>, <liquid:ice>, 2000, true);

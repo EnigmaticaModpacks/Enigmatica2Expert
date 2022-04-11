@@ -6,6 +6,12 @@ craft.shapeless(<additionalcompression:meatfish_compressed>, "fffffffff", {
   "f": <ore:listAllfishfresh>, # Raw Fish
 });
 
+# [Single Compressed Wood] from [Oak Wood]*3
+recipes.removeByRecipeName("additionalcompression:recipe_compressedlogwood1");
+craft.shapeless(<additionalcompression:logwood_compressed>, "#########", {
+  "#": <minecraft:log:*>, # Oak Wood
+});
+
 
 # Each level of compression multiply this much
 val rate = 4;

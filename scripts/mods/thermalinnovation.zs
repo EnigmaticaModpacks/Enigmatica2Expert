@@ -23,8 +23,8 @@ recipes.addShaped(<thermalinnovation:magnet>, [
 
 function remakeMagnet(meta as int, i1 as IIngredient, i2 as IIngredient){
 	var item = itemUtils.getItem("thermalinnovation:magnet", meta);
-	var prev = itemUtils.getItem("thermalinnovation:magnet", meta - 1);
-	recipes.addShaped("TE Magnet  " ~ meta, item, [
+	var prev = itemUtils.getItem("thermalinnovation:magnet", meta - 1).withTag({});
+	recipes.addShaped("TE Magnet " ~ meta, item, [
 		[null, i2, null],
 		[i1, prev.marked("marked"), i1],
 		[i2, null, i2]],

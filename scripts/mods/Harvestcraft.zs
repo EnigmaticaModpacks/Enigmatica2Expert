@@ -113,6 +113,18 @@ craft.reshapeless(<harvestcraft:cheeseitem> * 2, "PACSS", {
   "S": <ore:itemSalt>,    # Salt
 });
 
+# [Ground Trap] from [Oak Chest][+3]
+craft.remake(<harvestcraft:groundtrap>, ["pretty",
+  "# ≢ #",
+  "s c s",
+  "# s #"], {
+  "#": <ore:stickWood>,    # Stick
+  "≢": <ore:trapdoorWood>, # Oak Trapdoor
+  "s": <ore:string>,       # String
+  "c": <ore:chest>, # Oak Chest
+});
+
+
 # [Royal Jelly] from [Queen Bee]
 recipes.remove(<harvestcraft:royaljellyitem>);
 mods.integrateddynamics.Squeezer.addRecipe(<harvestcraft:queenbeeitem>, <harvestcraft:royaljellyitem>, 1.0f, <harvestcraft:royaljellyitem>, 1.0f, null, 0, null);

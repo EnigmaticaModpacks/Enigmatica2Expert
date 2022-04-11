@@ -497,7 +497,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
 
     if (machineName == "alloysmelter") {
       if (strict) { mods.enderio.AlloySmelter.removeRecipe(outputItem0); }
-      mods.enderio.AlloySmelter.addRecipe(outputItem0, inputItems, 2000);
+      enderioXmlRecipe('alloying', inputItems, inputLiquids, outputItems, outputLiquids, extraChance);
       return machineName;
     }
 

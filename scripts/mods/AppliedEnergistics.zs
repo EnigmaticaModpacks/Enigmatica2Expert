@@ -622,3 +622,23 @@ regrind(<thermalfoundation:material:167>        , <thermalfoundation:material:10
 /**/
 
 regrind(<minecraft:obsidian>, <thermalfoundation:material:770>);
+
+# [Pattern Expansion Card] from [ME Interface][+2]
+craft.remake(<appliedenergistics2:material:58>, ["pretty",
+  "  A  ",
+  "d M A",
+  "  A  "], {
+  "A": <ore:sheetAluminium>, # Aluminum Sheet
+  "d": <appliedenergistics2:material:28>, # Advanced Card
+  "M": <appliedenergistics2:interface>,   # ME Interface
+});
+
+# [Pattern Expansion Card] from [ME Interface][+2]
+craft.make(<appliedenergistics2:material:58>, ["pretty",
+  "  A  ",
+  "d M A",
+  "  A  "], {
+  "A": <ore:sheetAluminium>, # Aluminum Sheet
+  "d": <appliedenergistics2:material:28>, # Advanced Card
+  "M": <appliedenergistics2:part:440>,    # ME Interface
+});

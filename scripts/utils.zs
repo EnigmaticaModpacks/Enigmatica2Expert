@@ -256,7 +256,7 @@ zenClass Utils {
 
   # Turn one item into another but keep all tags
   var upgradeFnc as IRecipeFunction = function(out, ins, cInfo){
-    if(ins has "marked" && !isNull(ins.marked) && ins.marked.hasTag) {
+    if(ins has "marked" && !isNull(ins.marked) && !isNull(ins.marked.tag)) {
       var tag = ins.marked.tag;
       return out.withTag(tag);
     }

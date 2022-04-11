@@ -3,7 +3,28 @@ import crafttweaker.item.IItemStack;
 import scripts.craft.grid.Grid;
 
 #modloaded environmentaltech
-	
+
+# commit #a0a88bb
+# Personal Nano Beacon tier 5 + 6 harder recipes, to limit access to Resistance 5 (100% damage reduction)
+recipes.remove(<environmentaltech:nano_cont_personal_6>);
+recipes.addShapedMirrored("enigmatica_nano_cont_personal_6", <environmentaltech:nano_cont_personal_6>, 
+[[<ore:blockCosmicNeutronium>, <ore:blockDraconiumAwakened>, <ore:blockCosmicNeutronium>],
+[<ore:blockAethium>, <environmentaltech:nano_cont_personal_5>, <ore:blockAethium>], 
+[<environmentaltech:mica>, <environmentaltech:modifier_null>, <environmentaltech:mica>]]);
+
+recipes.remove(<environmentaltech:nano_cont_personal_5>);
+recipes.addShapedMirrored("enigmatica_nano_cont_personal_5", <environmentaltech:nano_cont_personal_5>, 
+[[<ore:blockCrystaltine>, <draconicevolution:draconium_block:1>, <ore:blockCrystaltine>],
+[<ore:blockIonite>, <environmentaltech:nano_cont_personal_4>, <ore:blockIonite>], 
+[<environmentaltech:mica>, <environmentaltech:modifier_null>, <environmentaltech:mica>]]);
+
+# Resistance Modifier harder recipe
+recipes.remove(<environmentaltech:modifier_resistance>);
+recipes.addShapedMirrored("enigmatica_modifier_resistance", 
+<environmentaltech:modifier_resistance>, 
+[[<ore:blockPladium>, <thaumcraft:charm_undying>, <ore:blockPladium>],
+[<environmentaltech:mica>, <environmentaltech:modifier_null>, <environmentaltech:mica>], 
+[<minecraft:potion>.withTag({Potion: "cofhcore:resistance"}), <ore:crystalLonsdaleite>, <minecraft:potion>.withTag({Potion: "cofhcore:resistance"})]]);
 	
 
 	var cell4 = <environmentaltech:solar_cell_pladium>;

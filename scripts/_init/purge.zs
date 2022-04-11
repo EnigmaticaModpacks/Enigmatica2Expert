@@ -16,6 +16,7 @@ utils.rh(<ic2:crafting:19>);
 utils.rh(<ic2:ingot:8>);
 
 # Unused dusts
+utils.rh(<ic2:ingot:3>);
 utils.rh(<ic2:dust:4>);
 utils.rh(<ic2:dust:7>);
 utils.rh(<ic2:dust:10>);

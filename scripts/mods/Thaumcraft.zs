@@ -25,7 +25,6 @@ utils.tryCatch("openblocks:golden_egg", <minecraft:golden_apple:1>),
 # Unification for the Smelting Bonus
 // IIngredient input, IItemStack stack
 function swapBonus(input as IIngredient, wrong as IItemStack, right as WeightedItemStack) as void {
-	utils.log(["~~ removing", input.commandString, wrong.commandString, right.stack.commandString]);
 	mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(input, wrong);
 	mods.thaumcraft.SmeltingBonus.addSmeltingBonus(input, right);
 }
@@ -251,10 +250,10 @@ function soulRecipe(entityId as string, aspects as CTAspectStack[]) as void {
 	);
 }
 
-soulRecipe("minecraft:zombie"             , [<aspect:exanimis> * 500, <aspect:perditio>     * 500]);
+soulRecipe("minecraft:zombie"             , [<aspect:exanimis> * 200, <aspect:perditio>     * 200]);
+soulRecipe("minecraft:skeleton"           , [<aspect:exanimis> * 200, <aspect:ordo>         * 200]);
 soulRecipe("minecraft:husk"               , [<aspect:exanimis> * 500, <aspect:spiritus>     * 500]);
 soulRecipe("minecraft:giant"              , [<aspect:exanimis> * 500, <aspect:praemunio>    * 500]);
-soulRecipe("minecraft:skeleton"           , [<aspect:exanimis> * 500, <aspect:ordo>         * 500]);
 soulRecipe("minecraft:wither_skeleton"    , [<aspect:exanimis> * 500, <aspect:tenebrae>     * 500]);
 soulRecipe("minecraft:skeleton_horse"     , [<aspect:exanimis> * 500, <aspect:mortuus>      * 500]);
 soulRecipe("minecraft:zombie_horse"       , [<aspect:exanimis> * 500, <aspect:herba>        * 500]);
@@ -291,6 +290,13 @@ soulRecipe("minecraft:rabbit"             , [<aspect:bestia> * 100, <aspect:fluc
 soulRecipe("minecraft:polar_bear"         , [<aspect:bestia> * 100, <aspect:gelum>    * 100]);
 soulRecipe("minecraft:llama"              , [<aspect:bestia> * 100, <aspect:fabrico>  * 100]);
 soulRecipe("minecraft:parrot"             , [<aspect:bestia> * 100, <aspect:volatus>  * 100]);
+
+soulRecipe("thermalfoundation:blizz"     , [<aspect:caeles> * 100, <aspect:gelum>      * 100]);
+soulRecipe("tconstruct:blueslime"        , [<aspect:caeles> * 100, <aspect:alkimia>    * 100]);
+soulRecipe("twilightforest:kobold"       , [<aspect:caeles> * 100, <aspect:praemunio>  * 100]);
+soulRecipe("twilightforest:swarm_spider" , [<aspect:caeles> * 100, <aspect:tenebrae>   * 100]);
+soulRecipe("twilightforest:penguin"      , [<aspect:caeles> * 100, <aspect:sensus>     * 100]);
+soulRecipe("twilightforest:minotaur"     , [<aspect:caeles> * 100, <aspect:mythus>     * 100]);
 
 soulRecipe("minecraft:villager"           , [<aspect:humanus> * 500, <aspect:rattus> * 500, <aspect:imperium> * 500]);
 soulRecipe("minecraft:villager_golem"     , [<aspect:humanus> * 500, <aspect:rattus> * 500, <aspect:caeles> * 500]);

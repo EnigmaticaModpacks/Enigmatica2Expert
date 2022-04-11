@@ -452,16 +452,6 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [TreatedWood Block] -->
-	<Recipe timeRequired="0" power="0">
-		<input>
-			<oreDict>plankTreatedWood</oreDict>
-		</input>
-		<output>
-			<oreDict>stickTreatedWood 6</oreDict>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Uranium Block] -->
 	<Recipe timeRequired="0" power="0">
 		<input>
@@ -489,16 +479,6 @@
 		</input>
 		<output>
 			<oreDict>plateVoid 6</oreDict>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Wood Block] -->
-	<Recipe timeRequired="0" power="0">
-		<input>
-			<oreDict>plankWood</oreDict>
-		</input>
-		<output>
-			<oreDict>stickWood 6</oreDict>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->

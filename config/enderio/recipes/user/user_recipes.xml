@@ -551,6 +551,42 @@
     <disabled/>
   </recipe>
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+  <recipe name="Crystalline Alloy Ingot">
+    <alloying energy="10000">
+        <input name="enderio:item_material:36"/>
+        <input name="enderio:item_alloy_ingot:2"/>
+        <input name="tconevo:metal:30"/>
+      <output name="enderio:item_alloy_endergy_ingot:1" amount="1"/>
+    </alloying>
+  </recipe>
+  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+  <recipe name="Crystalline Pink Slime Ingot">
+    <alloying energy="10000">
+        <input name="enderio:item_material:37"/>
+        <input name="enderio:item_alloy_endergy_ingot:1"/>
+        <input name="industrialforegoing:pink_slime_ingot"/>
+      <output name="enderio:item_alloy_endergy_ingot:4" amount="1"/>
+    </alloying>
+  </recipe>
+  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+  <recipe name="Melodic Alloy Ingot">
+    <alloying energy="10000">
+        <input name="enderio:item_material:35"/>
+        <input name="enderio:item_alloy_endergy_ingot:4"/>
+        <input name="tconevo:metal:40"/>
+      <output name="enderio:item_alloy_endergy_ingot:2" amount="1"/>
+    </alloying>
+  </recipe>
+  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+  <recipe name="Stellar Alloy Ingot">
+    <alloying energy="10000">
+        <input name="enderio:item_material:34"/>
+        <input name="enderio:item_alloy_endergy_ingot:2"/>
+        <input name="tconevo:metal"/>
+      <output name="enderio:item_alloy_endergy_ingot:3" amount="1"/>
+    </alloying>
+  </recipe>
+  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Construction Foam">
     <fermenting energy="10000">
       <inputgroup>
@@ -559,6 +595,30 @@
       <inputfluid name="water" multiplier="1.0"/>
       <outputfluid name="ic2construction_foam"/>
     </fermenting>
+  </recipe>
+  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+  <recipe name="Enderium Base">
+    <alloying energy="10000">
+        <input name="enderio:item_alloy_ingot:5"/>
+        <input name="extendedcrafting:material:36" amount="2"/>
+      <output name="enderio:item_material:39" amount="1"/>
+    </alloying>
+  </recipe>
+  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+  <recipe name="Hard Carbon Alloy">
+    <alloying energy="10000">
+        <input name="nuclearcraft:ingot:8" amount="2"/>
+        <input name="rats:rat_diamond"/>
+      <output name="nuclearcraft:alloy:2" amount="2"/>
+    </alloying>
+  </recipe>
+  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+  <recipe name="HSLA Steel Ingot">
+    <alloying energy="10000">
+        <input name="minecraft:iron_ingot" amount="15"/>
+        <input name="nuclearcraft:compound:9"/>
+      <output name="nuclearcraft:alloy:15" amount="16"/>
+    </alloying>
   </recipe>
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Milk">
@@ -571,6 +631,14 @@
     </fermenting>
   </recipe>
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+  <recipe name="Pulsating Iron Ingot">
+    <alloying energy="10000">
+        <input name="minecraft:iron_ingot"/>
+        <input name="ic2:dust:32"/>
+      <output name="enderio:item_alloy_ingot:5" amount="1"/>
+    </alloying>
+  </recipe>
+  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Quicksand">
     <fermenting energy="10000">
       <inputgroup>
@@ -579,6 +647,14 @@
       <inputfluid name="blueslime" multiplier="1.0"/>
       <outputfluid name="sand"/>
     </fermenting>
+  </recipe>
+  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+  <recipe name="Vibrant Alloy Ingot">
+    <alloying energy="10000">
+        <input name="enderio:item_alloy_ingot:1"/>
+        <input name="extendedcrafting:material:49"/>
+      <output name="enderio:item_alloy_ingot:2" amount="2"/>
+    </alloying>
   </recipe>
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Aluminium Clearing">
@@ -699,6 +775,13 @@
       <fluid name="steam" amount="1000"/>
       <output name="dustNickel"/>
     </tanking>
+  </recipe>
+  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+  <recipe name="Omnivoir">
+    <alloying energy="10000">
+        <input name="actuallyadditions:item_misc:5" amount="2"/>
+      <output name="enderio:block_omni_reservoir:0" amount="1"/>
+    </alloying>
   </recipe>
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Osmium Clearing">

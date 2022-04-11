@@ -77,6 +77,34 @@ function logAdditionalDebugData(player as IPlayer) {
   }
 }
 
+function exportAllBlocks() as void {
+  print('##################################################');
+  print('#          Harvest tool and level                #');
+  for item in game.items {
+    if(
+      item.id.startsWith("avaritiafurnace:")
+      || item.id == "avaritiafurnace:doublecompessedfurnace"
+      || item.id == "avaritiafurnace:fuelcompressor"
+    ) continue;
+    
+    var lastMeta = -1 as int;
+    for sub in item.subItems {
+      if (lastMeta == sub.damage) continue;
+      lastMeta = sub.damage;
+      val block = sub.asBlock();
+      if(isNull(block)) continue;
+
+      val def = block.definition;
+      val state = def.getStateFromMeta(block.meta);
+      val tool = def.getHarvestTool(state);
+      val harvLevel = def.getHarvestLevel(state);
+      if(tool=="" && harvLevel == -1 as int) continue;
+      print("<"~def.id~":"~block.meta~"> = "~def.hardness~":"~tool~":"~harvLevel);
+    }
+  }
+  print('##################################################');
+}
+
 zenClass DebugUtils {
   var once as bool = false;
   var second as bool = false;
@@ -128,8 +156,13 @@ events.onPlayerLoggedIn(function(e as crafttweaker.event.PlayerLoggedInEvent){
   }, 20 * 100);
 
   mods.zenutils.DelayManager.addDelayWork(function() {
+    e.player.sendMessage('Developing: Starting §cexportAllBlocks');
+    exportAllBlocks();
+  }, 20 * 120);
+
+  mods.zenutils.DelayManager.addDelayWork(function() {
     e.player.sendMessage('Developing: §aFinished!');
-  }, 20 * 110);
+  }, 20 * 130);
 });
 
 
@@ -148,6 +181,10 @@ function giveChest(player as IPlayer, items as IItemStack[]) as void {
 events.onPlayerLeftClickBlock(function(e as crafttweaker.event.PlayerLeftClickBlockEvent){
   if(e.player.world.isRemote()) return;
   if(isNull(e.player.currentItem) || !(<minecraft:stick> has e.player.currentItem)) return;
+
+  e.player.sendMessage("§eLeft Clicked§r");
+  e.player.sendMessage("§8Done!§r");
+
 
   // val ingrs = <ore:dirt> | <ore:grass>;
   // var blockIngr as IBlock = null;

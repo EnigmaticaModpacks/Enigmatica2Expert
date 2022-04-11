@@ -383,6 +383,115 @@ for seed, count in inferCount {
 	scripts.process.grow(seed, <mysticalagriculture:crafting> * count, "only: Hydroponics", seed, 1.0f);
 }
 
+for output, input in {
+/*Inject_js(
+Object.entries(
+	Object.fromEntries(
+		loadJson('exports/recipes/thermalexpansion__insolator.json')
+			.recipes.filter((rec) => rec.output.items[1]?.stacks[0]?.name.startsWith('mysticalagriculture:'))
+			.map((rec) => {
+				const seed = rec.output.items[1].stacks[0].name
+				return [
+					(seed.endsWith('_inferium_seeds:0')?'# ':'')+`<${seed}>`,
+					`: <${rec.output.items[0].stacks[0].name}>,`
+				]
+			})
+			.sort((a, b) => naturalSort(a[0], b[0]))
+	)
+)
+)*/
+# <mysticalagriculture:tier1_inferium_seeds:0>: <mysticalagriculture:crafting:0>,
+# <mysticalagriculture:tier2_inferium_seeds:0>: <mysticalagriculture:crafting:0>,
+# <mysticalagriculture:tier3_inferium_seeds:0>: <mysticalagriculture:crafting:0>,
+# <mysticalagriculture:tier4_inferium_seeds:0>: <mysticalagriculture:crafting:0>,
+# <mysticalagriculture:tier5_inferium_seeds:0>: <mysticalagriculture:crafting:0>,
+<mysticalagriculture:aluminum_seeds:0>        : <mysticalagriculture:aluminum_essence:0>,
+<mysticalagriculture:amber_seeds:0>           : <mysticalagriculture:amber_essence:0>,
+<mysticalagriculture:apatite_seeds:0>         : <mysticalagriculture:apatite_essence:0>,
+<mysticalagriculture:aquamarine_seeds:0>      : <mysticalagriculture:aquamarine_essence:0>,
+<mysticalagriculture:ardite_seeds:0>          : <mysticalagriculture:ardite_essence:0>,
+<mysticalagriculture:basalt_seeds:0>          : <mysticalagriculture:basalt_essence:0>,
+<mysticalagriculture:black_quartz_seeds:0>    : <mysticalagriculture:black_quartz_essence:0>,
+<mysticalagriculture:blaze_seeds:0>           : <mysticalagriculture:blaze_essence:0>,
+<mysticalagriculture:certus_quartz_seeds:0>   : <mysticalagriculture:certus_quartz_essence:0>,
+<mysticalagriculture:chicken_seeds:0>         : <mysticalagriculture:chicken_essence:0>,
+<mysticalagriculture:coal_seeds:0>            : <mysticalagriculture:coal_essence:0>,
+<mysticalagriculture:cobalt_seeds:0>          : <mysticalagriculture:cobalt_essence:0>,
+<mysticalagriculture:copper_seeds:0>          : <mysticalagriculture:copper_essence:0>,
+<mysticalagriculture:cow_seeds:0>             : <mysticalagriculture:cow_essence:0>,
+<mysticalagriculture:creeper_seeds:0>         : <mysticalagriculture:creeper_essence:0>,
+<mysticalagriculture:diamond_seeds:0>         : <mysticalagriculture:diamond_essence:0>,
+<mysticalagriculture:dirt_seeds:0>            : <mysticalagriculture:dirt_essence:0>,
+<mysticalagriculture:draconium_seeds:0>       : <mysticalagriculture:draconium_essence:0>,
+<mysticalagriculture:dye_seeds:0>             : <mysticalagriculture:dye_essence:0>,
+<mysticalagriculture:emerald_seeds:0>         : <mysticalagriculture:emerald_essence:0>,
+<mysticalagriculture:end_seeds:0>             : <mysticalagriculture:end_essence:0>,
+<mysticalagriculture:ender_amethyst_seeds:0>  : <mysticalagriculture:ender_amethyst_essence:0>,
+<mysticalagriculture:enderium_seeds:0>        : <mysticalagriculture:enderium_essence:0>,
+<mysticalagriculture:enderman_seeds:0>        : <mysticalagriculture:enderman_essence:0>,
+<mysticalagriculture:experience_seeds:0>      : <mysticalagriculture:experience_essence:0>,
+<mysticalagriculture:fiery_ingot_seeds:0>     : <mysticalagriculture:fiery_ingot_essence:0>,
+<mysticalagriculture:fire_seeds:0>            : <mysticalagriculture:fire_essence:0>,
+<mysticalagriculture:fluix_seeds:0>           : <mysticalagriculture:fluix_essence:0>,
+<mysticalagriculture:fluxed_electrum_seeds:0> : <mysticalagriculture:fluxed_electrum_essence:0>,
+<mysticalagriculture:ghast_seeds:0>           : <mysticalagriculture:ghast_essence:0>,
+<mysticalagriculture:glowstone_seeds:0>       : <mysticalagriculture:glowstone_essence:0>,
+<mysticalagriculture:gold_seeds:0>            : <mysticalagriculture:gold_essence:0>,
+<mysticalagriculture:guardian_seeds:0>        : <mysticalagriculture:guardian_essence:0>,
+<mysticalagriculture:ice_seeds:0>             : <mysticalagriculture:ice_essence:0>,
+<mysticalagriculture:iridium_seeds:0>         : <mysticalagriculture:iridium_essence:0>,
+<mysticalagriculture:iron_seeds:0>            : <mysticalagriculture:iron_essence:0>,
+<mysticalagriculture:ironwood_seeds:0>        : <mysticalagriculture:ironwood_essence:0>,
+<mysticalagriculture:knightmetal_seeds:0>     : <mysticalagriculture:knightmetal_essence:0>,
+<mysticalagriculture:knightslime_seeds:0>     : <mysticalagriculture:knightslime_essence:0>,
+<mysticalagriculture:lapis_lazuli_seeds:0>    : <mysticalagriculture:lapis_lazuli_essence:0>,
+<mysticalagriculture:lead_seeds:0>            : <mysticalagriculture:lead_essence:0>,
+<mysticalagriculture:limestone_seeds:0>       : <mysticalagriculture:limestone_essence:0>,
+<mysticalagriculture:malachite_seeds:0>       : <mysticalagriculture:malachite_essence:0>,
+<mysticalagriculture:marble_seeds:0>          : <mysticalagriculture:marble_essence:0>,
+<mysticalagriculture:menril_seeds:0>          : <mysticalagriculture:menril_essence:0>,
+<mysticalagriculture:mystical_flower_seeds:0> : <mysticalagriculture:mystical_flower_essence:0>,
+<mysticalagriculture:nature_seeds:0>          : <mysticalagriculture:nature_essence:0>,
+<mysticalagriculture:nether_quartz_seeds:0>   : <mysticalagriculture:nether_quartz_essence:0>,
+<mysticalagriculture:nether_seeds:0>          : <mysticalagriculture:nether_essence:0>,
+<mysticalagriculture:nickel_seeds:0>          : <mysticalagriculture:nickel_essence:0>,
+<mysticalagriculture:obsidian_seeds:0>        : <mysticalagriculture:obsidian_essence:0>,
+<mysticalagriculture:osmium_seeds:0>          : <mysticalagriculture:osmium_essence:0>,
+<mysticalagriculture:peridot_seeds:0>         : <mysticalagriculture:peridot_essence:0>,
+<mysticalagriculture:pig_seeds:0>             : <mysticalagriculture:pig_essence:0>,
+<mysticalagriculture:platinum_seeds:0>        : <mysticalagriculture:platinum_essence:0>,
+<mysticalagriculture:quicksilver_seeds:0>     : <mysticalagriculture:quicksilver_essence:0>,
+<mysticalagriculture:rabbit_seeds:0>          : <mysticalagriculture:rabbit_essence:0>,
+<mysticalagriculture:redstone_seeds:0>        : <mysticalagriculture:redstone_essence:0>,
+<mysticalagriculture:rock_crystal_seeds:0>    : <mysticalagriculture:rock_crystal_essence:0>,
+<mysticalagriculture:ruby_seeds:0>            : <mysticalagriculture:ruby_essence:0>,
+<mysticalagriculture:saltpeter_seeds:0>       : <mysticalagriculture:saltpeter_essence:0>,
+<mysticalagriculture:sapphire_seeds:0>        : <mysticalagriculture:sapphire_essence:0>,
+<mysticalagriculture:sheep_seeds:0>           : <mysticalagriculture:sheep_essence:0>,
+<mysticalagriculture:silver_seeds:0>          : <mysticalagriculture:silver_essence:0>,
+<mysticalagriculture:skeleton_seeds:0>        : <mysticalagriculture:skeleton_essence:0>,
+<mysticalagriculture:sky_stone_seeds:0>       : <mysticalagriculture:sky_stone_essence:0>,
+<mysticalagriculture:slate_seeds:0>           : <mysticalagriculture:slate_essence:0>,
+<mysticalagriculture:slime_seeds:0>           : <mysticalagriculture:slime_essence:0>,
+<mysticalagriculture:spider_seeds:0>          : <mysticalagriculture:spider_essence:0>,
+<mysticalagriculture:steeleaf_seeds:0>        : <mysticalagriculture:steeleaf_essence:0>,
+<mysticalagriculture:stone_seeds:0>           : <mysticalagriculture:stone_essence:0>,
+<mysticalagriculture:sulfur_seeds:0>          : <mysticalagriculture:sulfur_essence:0>,
+<mysticalagriculture:tanzanite_seeds:0>       : <mysticalagriculture:tanzanite_essence:0>,
+<mysticalagriculture:terrasteel_seeds:0>      : <mysticalagriculture:terrasteel_essence:0>,
+<mysticalagriculture:thaumium_seeds:0>        : <mysticalagriculture:thaumium_essence:0>,
+<mysticalagriculture:tin_seeds:0>             : <mysticalagriculture:tin_essence:0>,
+<mysticalagriculture:topaz_seeds:0>           : <mysticalagriculture:topaz_essence:0>,
+<mysticalagriculture:uranium_seeds:0>         : <mysticalagriculture:uranium_essence:0>,
+<mysticalagriculture:void_metal_seeds:0>      : <mysticalagriculture:void_metal_essence:0>,
+<mysticalagriculture:water_seeds:0>           : <mysticalagriculture:water_essence:0>,
+<mysticalagriculture:wood_seeds:0>            : <mysticalagriculture:wood_essence:0>,
+<mysticalagriculture:zombie_seeds:0>          : <mysticalagriculture:zombie_essence:0>,
+/**/
+} as IItemStack[IItemStack] {
+	scripts.process.grow(input, output * 9, "only: Hydroponics", input);
+}
+
 # Remake crystals to consume previous level
 var crystals = [
 	<mysticalagriculture:infusion_crystal>,

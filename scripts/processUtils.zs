@@ -44,22 +44,22 @@ function isStrict(exceptions as string, machineName as string) as bool  {
 }
 
 # Safe get for item array
-function arrN_item(arr as IItemStack[], n as int) as IItemStack {
+function arrN_item(arr as IItemStack[], n as int = 0) as IItemStack {
   return !isNull(arr) ? (arr.length > n ? arr[n] : null) : null;
 }
 
 # Safe get for IIngredient array
-function arrN_ingr(arr as IIngredient[], n as int) as IIngredient {
+function arrN_ingr(arr as IIngredient[], n as int = 0) as IIngredient {
   return !isNull(arr) ? (arr.length > n ? arr[n] : null) : null;
 }
 
 # Safe get for IIngredient array
-function arrN_liq(arr as ILiquidStack[], n as int) as ILiquidStack {
+function arrN_liq(arr as ILiquidStack[], n as int = 0) as ILiquidStack {
   return !isNull(arr) ? (arr.length > n ? arr[n] : null) : null;
 }
 
 # Safe get for float array
-function arrN_float(arr as float[], n as int) as float {
+function arrN_float(arr as float[], n as int = 0) as float {
   return !isNull(arr) ? (arr.length > n ? arr[n] : 0) : 0;
 }
 
@@ -137,23 +137,61 @@ function xmlRecipe(filename as string, recipeContent as string) {
 # EnderIO
 # ######################################################################
 
+function firstDisplayLiq(arr as ILiquidStack[]) as string {
+  val it = arrN_liq(arr);
+  return isNull(it) ? '' : it.displayName;
+}
+function firstDisplayItm(arr as IItemStack[]) as string {
+  val it = arrN_item(arr);
+  return isNull(it) ? '' : it.displayName;
+}
+
 function enderioXmlRecipe(processName as string,
   inputItems as IIngredient[], inputLiquids as ILiquidStack[],
   outputItems as IItemStack[], outputLiquids as ILiquidStack[],
-  chances as float[]) as void {
+  chances as float[]
+) as void {
   if(!utils.DEBUG) return;
-  var s = '<recipe name="' ~ outputLiquids[0].displayName ~ '"><'~processName~' energy="10000">\n';
-  val in_f = (inputLiquids[0].amount as float) / 1000;
-  val out_f = (outputLiquids[0].amount as float) / 1000;
-  for inIngr in inputItems {
-    s = s ~ '  <inputgroup>\n';
-    for ii in inIngr.itemArray {
-      s = s ~ '    <input name="' ~ ii.commandString.replaceAll("[<>]", "") ~ '" multiplier="' ~ in_f / inputItems.length ~ '" />\n';
+
+  val display = (firstDisplayLiq(outputLiquids) ~ firstDisplayItm(outputItems)).replaceAll('"', "");
+
+  var s = '<recipe name="' ~ display ~ '"><'~processName~' energy="10000">\n';
+
+  var fl_multiplier = '';
+  var it_multiplier = '';
+
+  if(!isNull(arrN_liq(inputLiquids)) && !isNull(arrN_liq(outputLiquids))) {
+    val in_f = (arrN_liq(inputLiquids).amount as float) / 1000;
+    val out_f = (outputLiquids[0].amount as float) / 1000;
+    if (processName=='fermenting') {
+      fl_multiplier = ' multiplier="' ~ in_f / out_f ~ '"';
+      it_multiplier = ' multiplier="' ~ in_f / inputItems.length ~ '"';
     }
-    s = s ~ '  </inputgroup>\n';
   }
-  s = s ~ '    <inputfluid name="' ~ inputLiquids[0].name ~ '" multiplier="' ~ in_f / out_f ~ '" />\n';
-  s = s ~ '    <outputfluid name="' ~ outputLiquids[0].name ~ '" /></'~processName~'></recipe>';
+
+  if(!isNull(inputItems)) {
+    for inIngr in inputItems {
+      if(processName=='fermenting') s ~= '  <inputgroup>\n';
+      for ii in inIngr.itemArray {
+        val eioName = ii.anyAmount().commandString.replaceAll("[<>]", "").replaceAll("^ore:", "");
+        val amount = (processName=='fermenting' && ii.amount>1) ? '' : 'amount="'~ ii.amount ~'" ';
+        s ~= '    <input name="' ~ eioName ~ '" '~amount~it_multiplier~' />\n';
+      }
+      if(processName=='fermenting') s ~= '  </inputgroup>\n';
+    }
+  }
+
+  if(!isNull(outputItems)) { for ii in outputItems { if(ii.items.length > 0) {
+      val out_it = ii.items[0];
+      s ~= '  <output name="' ~ out_it.definition.id ~ ':' ~ out_it.damage ~ '" amount="' ~ ii.amount ~ '" ' ~ '/>\n';
+  }}}
+
+  if(!isNull(arrN_liq(inputLiquids)) && !isNull(arrN_liq(outputLiquids))) {
+    s ~= '  <inputfluid name="' ~ inputLiquids[0].name ~ '"'~fl_multiplier~' />\n';
+    s ~= '  <outputfluid name="' ~ outputLiquids[0].name ~ '" />';
+  }
+
+  s ~= '</'~processName~'></recipe>';
 
   xmlRecipe("./config/enderio/recipes/user/user_recipes.xml", s);
 }
@@ -183,10 +221,11 @@ function AR_inputItems(inputItems as IIngredient[]) as string {
       id = in_it.definition.id;
       meta = in_it.damage;
     }
-    s = s ~ '    <'+type+'>' ~ id ~" "~ ii.amount ~ ((meta != 0) ? " "~meta : '') ~ '</'+type+'>\n';
+    s = s ~ '    <'~type~'>' ~ id ~" "~ ii.amount ~ ((meta != 0) ? " "~meta : '') ~ '</'~type~'>\n';
   }
   return s;
 }
+
 function AR_inputLiquids(inputLiquids as ILiquidStack[]) as string {
   if(isNull(inputLiquids)) return "";
   var s = "";
@@ -199,7 +238,8 @@ function AR_inputLiquids(inputLiquids as ILiquidStack[]) as string {
 function avdRockXmlRecipeEx(filename as string, 
   inputItems as IIngredient[], inputLiquids as ILiquidStack[],
   outputItems as IItemStack[], outputLiquids as ILiquidStack[] = null,
-  options as IData = null) as void {
+  options as IData = null
+) as void {
   if(!utils.DEBUG) return;
   val dOpt = D(options);
   
@@ -223,7 +263,7 @@ function avdRockXmlRecipeEx(filename as string,
   }}
   s = s ~ '    </output></Recipe>';
 
-  # Add prefix (reverse order)
+  # Add prefix
   s = '  <!-- [' ~ out_name ~ '] -->\n' ~
       '  <Recipe timeRequired="'~dOpt.getInt('timeRequired', 10)~'" power="'~dOpt.getInt('power', 40000)~'"><input>\n' ~ s;
 

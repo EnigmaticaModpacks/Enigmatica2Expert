@@ -92,10 +92,10 @@ ${filtered.join('\n')}`
 
 }*/
 
-# Total Furnace recipes registered: 919
+# Total Furnace recipes registered: 912
 # Filtered by JEI blacklist: 49
 # Filtered manuallly (antidupe): 14
-# Filtered by oredict: 201
+# Filtered by oredict: 200
 infinFurnace(utils.get("actuallyadditions:block_misc", 3), utils.get("actuallyadditions:item_misc", 5));
 ##infinFurnace(utils.get("actuallyadditions:item_dust", 3), utils.get("minecraft:emerald"));
 ##infinFurnace(utils.get("actuallyadditions:item_dust", 7), utils.get("actuallyadditions:item_misc", 5));
@@ -249,7 +249,6 @@ infinFurnace(utils.get("harvestcraft:walleyerawitem", W), utils.get("minecraft:c
 infinFurnace(utils.get("ic2:crafting", 27), utils.get("ic2:crystal_memory"));
 infinFurnace(utils.get("ic2:crushed", 1), utils.get("minecraft:gold_ingot"));
 infinFurnace(utils.get("ic2:crushed", 2), utils.get("minecraft:iron_ingot"));
-infinFurnace(utils.get("ic2:crushed", 3), utils.get("thermalfoundation:material", 131));
 infinFurnace(utils.get("ic2:crushed", 4), utils.get("thermalfoundation:material", 130));
 infinFurnace(utils.get("ic2:crushed", 5), utils.get("thermalfoundation:material", 129));
 infinFurnace(utils.get("ic2:crushed"), utils.get("thermalfoundation:material", 128));
@@ -260,7 +259,6 @@ infinFurnace(utils.get("ic2:misc_resource", 4), utils.get("ic2:crafting"));
 infinFurnace(utils.get("ic2:mug", 1), utils.get("ic2:mug", 2));
 infinFurnace(utils.get("ic2:purified", 1), utils.get("minecraft:gold_ingot"));
 infinFurnace(utils.get("ic2:purified", 2), utils.get("minecraft:iron_ingot"));
-infinFurnace(utils.get("ic2:purified", 3), utils.get("thermalfoundation:material", 131));
 infinFurnace(utils.get("ic2:purified", 4), utils.get("thermalfoundation:material", 130));
 infinFurnace(utils.get("ic2:purified", 5), utils.get("thermalfoundation:material", 129));
 infinFurnace(utils.get("ic2:purified"), utils.get("thermalfoundation:material", 128));
@@ -296,7 +294,6 @@ infinFurnace(utils.get("jaopca:item_chunkcoal"), utils.get("jaopca:item_dirtygem
 infinFurnace(utils.get("jaopca:item_chunkcobalt"), utils.get("jaopca:item_dirtygemcobalt", 0, 10));
 infinFurnace(utils.get("jaopca:item_chunkcopper"), utils.get("jaopca:item_dirtygemcopper", 0, 10));
 infinFurnace(utils.get("jaopca:item_chunkdiamond"), utils.get("jaopca:item_dirtygemdiamond", 0, 10));
-infinFurnace(utils.get("jaopca:item_chunkdilithium"), utils.get("jaopca:item_dirtygemdilithium", 0, 10));
 infinFurnace(utils.get("jaopca:item_chunkdraconium"), utils.get("jaopca:item_dirtygemdraconium", 0, 10));
 infinFurnace(utils.get("jaopca:item_chunkemerald"), utils.get("jaopca:item_dirtygememerald", 0, 10));
 infinFurnace(utils.get("jaopca:item_chunkgold"), utils.get("jaopca:item_dirtygemgold", 0, 10));
@@ -493,7 +490,6 @@ infinFurnace(utils.get("jaopca:item_dustalchcoal"), utils.get("jaopca:item_dirty
 infinFurnace(utils.get("jaopca:item_dustalchcobalt"), utils.get("jaopca:item_dirtygemcobalt", 0, 48));
 infinFurnace(utils.get("jaopca:item_dustalchcopper"), utils.get("jaopca:item_dirtygemcopper", 0, 48));
 infinFurnace(utils.get("jaopca:item_dustalchdiamond"), utils.get("jaopca:item_dirtygemdiamond", 0, 48));
-infinFurnace(utils.get("jaopca:item_dustalchdilithium"), utils.get("jaopca:item_dirtygemdilithium", 0, 48));
 infinFurnace(utils.get("jaopca:item_dustalchdraconium"), utils.get("jaopca:item_dirtygemdraconium", 0, 48));
 infinFurnace(utils.get("jaopca:item_dustalchemerald"), utils.get("jaopca:item_dirtygememerald", 0, 48));
 infinFurnace(utils.get("jaopca:item_dustalchgold"), utils.get("jaopca:item_dirtygemgold", 0, 48));
@@ -574,7 +570,6 @@ infinFurnace(utils.get("mechanics:heavy_mesh", W), utils.get("mechanics:heavy_in
 ##infinFurnace(utils.get("mekanism:dust", 3), utils.get("thermalfoundation:material", 128));
 ##infinFurnace(utils.get("mekanism:dust", 4), utils.get("thermalfoundation:material", 129));
 ##infinFurnace(utils.get("mekanism:dust", 5), utils.get("thermalfoundation:material", 130));
-##infinFurnace(utils.get("mekanism:dust", 6), utils.get("thermalfoundation:material", 131));
 ##infinFurnace(utils.get("mekanism:dust"), utils.get("minecraft:iron_ingot"));
 infinFurnace(utils.get("mekanism:oreblock"), utils.get("mekanism:ingot", 1));
 ##infinFurnace(utils.get("mekanism:otherdust", 1), utils.get("thermalfoundation:material", 160));
@@ -964,7 +959,6 @@ infinFurnace(utils.get("thaumcraft:cluster", 1), utils.get("thermalfoundation:ma
 infinFurnace(utils.get("thaumcraft:cluster", 2), utils.get("thermalfoundation:material", 128, 2));
 infinFurnace(utils.get("thaumcraft:cluster", 3), utils.get("thermalfoundation:material", 129, 2));
 infinFurnace(utils.get("thaumcraft:cluster", 4), utils.get("thermalfoundation:material", 130, 2));
-infinFurnace(utils.get("thaumcraft:cluster", 5), utils.get("thermalfoundation:material", 131, 2));
 infinFurnace(utils.get("thaumcraft:cluster", 6), utils.get("thaumcraft:quicksilver", 0, 2));
 infinFurnace(utils.get("thaumcraft:cluster", 7), utils.get("minecraft:quartz", 0, 5));
 infinFurnace(utils.get("thaumcraft:cluster"), utils.get("thermalfoundation:material", 0, 2));
@@ -977,7 +971,6 @@ infinFurnace(utils.get("thaumicwonders:eldritch_cluster", 1), utils.get("minecra
 infinFurnace(utils.get("thaumicwonders:eldritch_cluster", 2), utils.get("thermalfoundation:material", 128, 3));
 infinFurnace(utils.get("thaumicwonders:eldritch_cluster", 3), utils.get("thermalfoundation:material", 129, 3));
 infinFurnace(utils.get("thaumicwonders:eldritch_cluster", 4), utils.get("thermalfoundation:material", 130, 3));
-infinFurnace(utils.get("thaumicwonders:eldritch_cluster", 5), utils.get("thermalfoundation:material", 131, 3));
 infinFurnace(utils.get("thaumicwonders:eldritch_cluster", 6), utils.get("thaumcraft:quicksilver", 0, 3));
 infinFurnace(utils.get("thaumicwonders:eldritch_cluster", 7), utils.get("minecraft:quartz", 0, 3));
 infinFurnace(utils.get("thaumicwonders:eldritch_cluster", 8), utils.get("thaumcraft:ingot", 1, 2));

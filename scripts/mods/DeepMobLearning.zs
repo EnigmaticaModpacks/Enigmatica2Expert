@@ -95,3 +95,41 @@ craft.remake(<deepmoblearning:glitch_fragment>, ["pretty",
   "e": <ore:essence>,              # Essence
   "▲": <ore:dustGelidEnderium>,    # Gelid Enderium Dust
 });
+
+val dataModels = {
+  blaze            : 'minecraft:blaze',
+  creeper          : 'minecraft:creeper',
+  // dragon           : 'minecraft:ender_dragon',
+  enderman         : 'minecraft:enderman',
+  ghast            : 'minecraft:ghast',
+  guardian         : 'minecraft:elder_guardian',
+  shulker          : 'minecraft:shulker',
+  skeleton         : 'minecraft:stray',
+  slime            : 'minecraft:slime',
+  spider           : 'minecraft:spider',
+  thermal_elemental: 'thermalfoundation:blizz',
+  tinker_slime     : 'tconstruct:blueslime',
+  twilight_darkwood: 'twilightforest:kobold',
+  twilight_forest  : 'twilightforest:swarm_spider',
+  twilight_glacier : 'twilightforest:penguin',
+  twilight_swamp   : 'twilightforest:minotaur',
+  witch            : 'minecraft:witch',
+  // wither           : 'minecraft:wither',
+  wither_skeleton  : 'minecraft:wither_skeleton',
+  zombie           : 'minecraft:husk',
+} as string[string];
+
+
+for model, mob in dataModels {
+  val data_model = itemUtils.getItem('deepmoblearning:data_model_'~model);
+  if(isNull(data_model)) {
+    print("ERROR: no data model for "~model);
+    continue;
+  }
+  recipes.addShapeless('Data upgrade '~model,
+    data_model.withTag({tier: 1}), [
+      <enderio:item_broken_spawner>.withTag({entityId: mob}), 
+      data_model
+    ]
+  );
+}
