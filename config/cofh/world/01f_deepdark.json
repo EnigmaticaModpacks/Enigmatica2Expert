@@ -1,0 +1,27 @@
+{
+  "populate": {
+    
+    "lake_darksteel_deepdark": {
+      "distribution": "uniform",
+      "generator": {
+        "type": "lake",
+        "block": "enderio:block_fluid_dark_steel",
+        "outline-block": {"name":"extrautils2:decorativebedrock","metadata": 2},
+        "use-material": true,
+				"material": [
+          "stone",
+          "sand",
+          "sandstone",
+          "dirt",
+          "gravel",
+          "cobblestone"
+        ]
+      },
+      "cluster-count": 3,
+      "min-height": 10,
+      "max-height": 70,
+      "follow-terrain": false,
+      "dimension": {"restriction": "whitelist","value": [-11325]}
+    }
+  }
+}

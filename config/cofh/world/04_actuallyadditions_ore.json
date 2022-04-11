@@ -14,11 +14,29 @@
 			"cluster-count": 6,
 			"min-height": 18,
 			"max-height": 55,
-			"retrogen": "false",
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [-1,1,111,112,119,123]
+			}
+		},
+		
+		"blackquartz_deepdark": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "actuallyadditions:block_misc",
+					"metadata": 3
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 6
+			},
+			"cluster-count": 30,
+			"min-height": 18,
+			"max-height": 55,
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [-11325]
 			}
 		}
 	}
