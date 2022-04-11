@@ -88,9 +88,15 @@
             "OreDict:8": ""
           },
           "1:10": {
-            "Count:3": 23,
+            "Count:3": 24,
             "Damage:2": 3,
             "id:8": "tcomplement:scorched_block",
+            "OreDict:8": ""
+          },
+          "2:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "id:8": "tcomplement:high_oven_io",
             "OreDict:8": ""
           }
         },
