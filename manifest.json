@@ -258,6 +258,7 @@
     {"projectID":291218,"fileID":2696995,"required":true,"__meta":{"name":"Horse Tweaks"}},
     {"projectID":291727,"fileID":2549332,"required":true,"__meta":{"name":"Just Enough Petroleum"}},
     {"projectID":291737,"fileID":2920441,"required":true,"__meta":{"name":"Thermal Innovation"}},
+    {"projectID":291786,"fileID":2701203,"required":true,"__meta":{"name":"Tinker's JEI"}},
     {"projectID":291788,"fileID":2798112,"required":true,"__meta":{"name":"Server Tab Info"}},
     {"projectID":292785,"fileID":2915154,"required":true,"__meta":{"name":"VanillaFix"}},
     {"projectID":292952,"fileID":2671784,"required":true,"__meta":{"name":"Just Enough Reactors"}},
@@ -320,7 +321,7 @@
     {"projectID":319656,"fileID":2716334,"required":true,"__meta":{"name":"ScalingGUIs"}},
     {"projectID":319740,"fileID":2702148,"required":true,"__meta":{"name":"Random Things Tweaker"}},
     {"projectID":320254,"fileID":2703755,"required":true,"__meta":{"name":"PlaneFix"}},
-    {"projectID":321092,"fileID":3225614,"required":true,"__meta":{"name":"Gambling Style"}},
+    {"projectID":321092,"fileID":3736251,"required":true,"__meta":{"name":"Gambling Style"}},
     {"projectID":321117,"fileID":3150850,"required":true,"__meta":{"name":"Traveler's Backpack"}},
     {"projectID":321792,"fileID":3717467,"required":true,"__meta":{"name":"Aqua Acrobatics [Forge]"}},
     {"projectID":322344,"fileID":3509087,"required":true,"__meta":{"name":"LibNine"}},
@@ -410,7 +411,7 @@
     {"projectID":487858,"fileID":3361954,"required":true,"__meta":{"name":"Integrated Proxy"}},
     {"projectID":488116,"fileID":3330925,"required":true,"__meta":{"name":"ContentTweaker Registry Orderer"}},
     {"projectID":493962,"fileID":3577829,"required":true,"__meta":{"name":"AE Additions - ExtraCells2 Fork"}},
-    {"projectID":513857,"fileID":3694373,"required":true,"__meta":{"name":"OAuth"}},
+    {"projectID":513857,"fileID":3739783,"required":true,"__meta":{"name":"OAuth"}},
     {"projectID":515565,"fileID":3662261,"required":true,"__meta":{"name":"Not Enough Energistics"}},
     {"projectID":525389,"fileID":3672149,"required":true,"__meta":{"name":"Modular Controller"}},
     {"projectID":538092,"fileID":3498867,"required":true,"__meta":{"name":"Better P2P"}},
@@ -418,6 +419,6 @@
     {"projectID":554387,"fileID":3556105,"required":true,"__meta":{"name":"Persistency"}},
     {"projectID":554478,"fileID":3566316,"required":true,"__meta":{"name":"Modular Assembly"}},
     {"projectID":557549,"fileID":3687729,"required":true,"__meta":{"name":"Had Enough Items"}},
-    {"projectID":570458,"fileID":3649419,"required":true,"__meta":{"name":"AE2 Unofficial Extended Life"}}
+    {"projectID":570458,"fileID":3737319,"required":true,"__meta":{"name":"AE2 Unofficial Extended Life"}}
   ]
 }
