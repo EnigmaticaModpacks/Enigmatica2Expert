@@ -1,7 +1,7 @@
 # .gitignore-alike list of files and derictories
 # that should be ignored when exporting package
 *
-scripts/debug.zs
+scripts/debug/**/*
 config/tellme
 
 # Remove Mod-depended files
@@ -21,6 +21,7 @@ config/sampler.ini
 !schematics
 !scripts
 !structures
+!local
 !resourcepacks/bq_lootchests
 
 # Mods to ignore
