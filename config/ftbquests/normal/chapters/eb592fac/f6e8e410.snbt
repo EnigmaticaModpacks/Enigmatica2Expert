@@ -1,0 +1,24 @@
+{
+	title: "{bq.quest34.name}",
+	icon: "rftools:machine_frame",
+	x: 0.0d,
+	y: -2.4583333333333335d,
+	text: [
+		"{bq.quest34.desc}"
+	],
+	dependencies: [
+		"cabe63d2"
+	],
+	size: 1.5d,
+	rewards: [{
+		uid: "9bf7322f",
+		type: "item",
+		item: "rftools:smartwrench"
+	},
+	{
+		uid: "8a0d4c09",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has begun the RFTools questline!"
+	}]
+}

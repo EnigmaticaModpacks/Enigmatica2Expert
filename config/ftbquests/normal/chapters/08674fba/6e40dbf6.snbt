@@ -1,0 +1,70 @@
+{
+	title: "{bq.quest433.name}",
+	icon: "advancedrocketry:electrolyser",
+	x: 10.166666666666666d,
+	y: 1.8333333333333333d,
+	text: [
+		"{bq.quest433.desc}"
+	],
+	dependencies: [
+		"5ab2270f"
+	],
+	tasks: [{
+		uid: "69e55fb7",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:electrolyser"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "2b85d7d3",
+		type: "item",
+		items: [{
+			item: "libvulpes:structuremachine 2"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "e2e0055d",
+		type: "item",
+		items: [{
+			item: "libvulpes:coil0 1 4"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "17cbf601",
+		type: "item",
+		items: [{
+			item: "libvulpes:forgepowerinput 2"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "60e56931",
+		type: "item",
+		items: [{
+			item: "libvulpes:hatch 1 2"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "30d545f2",
+		type: "item",
+		items: [{
+			item: "libvulpes:hatch 2 3"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "66edf746",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

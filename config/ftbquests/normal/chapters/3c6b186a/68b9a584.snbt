@@ -1,0 +1,42 @@
+{
+	title: "{bq.quest71.name}",
+	icon: "ic2:te 1 63",
+	x: 10.5d,
+	y: 6.166666666666667d,
+	text: [
+		"{bq.quest71.desc}"
+	],
+	dependencies: [
+		"658445bd"
+	],
+	tasks: [{
+		uid: "a81edfb4",
+		type: "item",
+		items: [{
+			item: "ic2:te 1 63"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "712136c4",
+		type: "item",
+		items: [{
+			id: "ic2:te",
+			Damage: 62s,
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "83b67f79",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

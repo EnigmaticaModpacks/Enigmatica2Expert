@@ -1,0 +1,33 @@
+{
+	title: "{bq.quest1045.name}",
+	icon: "cyclicmagic:cyclic_wand_build",
+	x: -10.0d,
+	y: 20.5d,
+	text: [
+		"{bq.quest1045.desc}"
+	],
+	dependencies: [
+		"33b238ff"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "7a860ff6",
+		type: "item",
+		items: [{
+			id: "cyclicmagic:cyclic_wand_build",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "39cc5dbf",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

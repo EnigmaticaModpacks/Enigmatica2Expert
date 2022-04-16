@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest41.name}",
+	icon: "draconicevolution:draconic_core",
+	x: -0.5d,
+	y: 5.5d,
+	text: [
+		"{bq.quest41.desc}"
+	],
+	dependencies: [
+		"4af44027",
+		"0bf36970",
+		"48f0d63f"
+	],
+	tasks: [{
+		uid: "78fb5a20",
+		type: "item",
+		items: [{
+			item: "draconicevolution:draconic_core"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "78f575bc",
+		type: "item",
+		item: "draconicevolution:draconic_core",
+		count: 2
+	},
+	{
+		uid: "bd833e7d",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "legendary"
+			}
+		}
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest157.name}",
+	icon: "astralsorcery:blockworldilluminator",
+	x: -1.1666666666666667d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest157.desc}"
+	],
+	dependencies: [
+		"580bb684"
+	],
+	tasks: [{
+		uid: "4f4e9422",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockworldilluminator"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "055b2afa",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest503.name}",
+	icon: "nuclearcraft:fuel_reprocessor_idle",
+	x: 1.1666666666666665d,
+	y: 8.833333333333334d,
+	text: [
+		"{bq.quest503.desc}"
+	],
+	dependencies: [
+		"626f1235",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "fe9a2a72",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:fuel_reprocessor_idle"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "6eb8e4b2",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

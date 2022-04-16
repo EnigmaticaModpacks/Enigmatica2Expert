@@ -1,0 +1,28 @@
+{
+	title: "{bq.quest762.name}",
+	icon: "randomthings:ingredient 1 7",
+	x: -12.666666666666668d,
+	y: 8.333333333333334d,
+	text: [
+		"{bq.quest762.desc}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"37406152"
+	],
+	size: 1.3333333333333333d,
+	tasks: [{
+		uid: "5438baeb",
+		type: "item",
+		items: [{
+			item: "randomthings:ingredient 1 7"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c4dcbf01",
+		type: "choice",
+		table: 84
+	}]
+}

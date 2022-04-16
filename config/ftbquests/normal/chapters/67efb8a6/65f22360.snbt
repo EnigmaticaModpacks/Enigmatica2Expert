@@ -1,0 +1,33 @@
+{
+	title: "{bq.quest526.name}",
+	icon: "draconicevolution:draconic_energy_core",
+	x: 4.5d,
+	y: 3.75d,
+	text: [
+		"{bq.quest526.desc}"
+	],
+	dependencies: [
+		"b22a849a",
+		"5dae2dc0",
+		"64f8083b"
+	],
+	tasks: [{
+		uid: "db137fa5",
+		type: "item",
+		items: [{
+			item: "draconicevolution:draconic_energy_core"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "47e3a978",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

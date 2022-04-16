@@ -1,0 +1,46 @@
+{
+	title: "{bq.quest960.name}",
+	icon: "rustic:condenser",
+	x: -19.166666666666668d,
+	y: 21.333333333333332d,
+	text: [
+		"{bq.quest960.desc}"
+	],
+	dependencies: [
+		"3ecc3fbe"
+	],
+	tasks: [{
+		uid: "fc2c6159",
+		type: "item",
+		items: [{
+			item: "rustic:condenser"
+		},
+		{
+			item: "rustic:condenser_advanced"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "c3e96429",
+		type: "item",
+		items: [{
+			item: "rustic:retort"
+		},
+		{
+			item: "rustic:retort_advanced"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "504d3a7c",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

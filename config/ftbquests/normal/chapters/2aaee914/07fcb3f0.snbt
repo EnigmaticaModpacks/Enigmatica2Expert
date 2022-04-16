@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest212.name}",
+	icon: "mekanism:biofuel",
+	x: 6.166666666666667d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest212.desc}"
+	],
+	dependencies: [
+		"702f421e"
+	],
+	tasks: [{
+		uid: "9b270102",
+		type: "item",
+		items: [{
+			item: "mekanism:biofuel"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "d57cb71e",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,16 @@
+{
+	title: "{bq.quest978.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "openblocks:beartrap",
+		count: 4
+	},
+	{
+		item: "openblocks:fan",
+		count: 3
+	},
+	{
+		item: "openblocks:sprinkler",
+		count: 2
+	}]
+}

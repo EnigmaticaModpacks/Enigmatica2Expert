@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest721.name}",
+	icon: "animania:friesian_cheese_wheel",
+	x: -5.0d,
+	y: 1.5d,
+	text: [
+		"{bq.quest721.desc}"
+	],
+	dependencies: [
+		"46340f69"
+	],
+	size: 1.25d,
+	tasks: [{
+		uid: "4e3a7ab9",
+		type: "item",
+		items: [{
+			item: "animania:friesian_cheese_wheel"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "3aebcb1c",
+		type: "item",
+		item: "animania:carving_knife"
+	},
+	{
+		uid: "16e41ea1",
+		type: "item",
+		item: "minecraft:wheat",
+		count: 64
+	},
+	{
+		uid: "bf4993db",
+		type: "item",
+		item: "rats:garbage_pile",
+		count: 6
+	}]
+}

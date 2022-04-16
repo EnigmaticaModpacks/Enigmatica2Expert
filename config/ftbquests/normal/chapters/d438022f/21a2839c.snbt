@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest1016.name}",
+	icon: "cyclicmagic:block_user",
+	x: -4.666666666666667d,
+	y: 20.5d,
+	text: [
+		"{bq.quest1016.desc}"
+	],
+	dependencies: [
+		"a6a64aad"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "3a792b92",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:block_user"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "cb59d3ec",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

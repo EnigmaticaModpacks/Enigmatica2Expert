@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest334.name}",
+	icon: "extrautils2:flattransfernode",
+	x: 2.2916666666666665d,
+	y: 0.125d,
+	text: [
+		"{bq.quest334.desc}"
+	],
+	dependencies: [
+		"a1b2fa88"
+	],
+	size: 0.8333333333333334d,
+	tasks: [{
+		uid: "2607762b",
+		type: "item",
+		items: [{
+			item: "extrautils2:flattransfernode"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a3b11c3f",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

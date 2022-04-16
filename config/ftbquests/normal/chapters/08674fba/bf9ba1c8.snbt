@@ -1,0 +1,63 @@
+{
+	title: "{bq.quest446.name}",
+	icon: "advancedrocketry:warpcore",
+	x: 8.166666666666668d,
+	y: 9.833333333333334d,
+	text: [
+		"{bq.quest446.desc}"
+	],
+	dependencies: [
+		"e7f8d37c",
+		"8b514522"
+	],
+	tasks: [{
+		uid: "e771547a",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:warpcore"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "2b136082",
+		type: "item",
+		items: [{
+			item: "libvulpes:metal0 15 7"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "ad790545",
+		type: "item",
+		items: [{
+			item: "minecraft:gold_block 2"
+		}],
+		count: 2L
+	},
+	{
+		uid: "9469a89d",
+		type: "item",
+		items: [{
+			item: "libvulpes:structuremachine 4"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "2dc95b40",
+		type: "item",
+		items: [{
+			item: "libvulpes:hatch"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "044452a6",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

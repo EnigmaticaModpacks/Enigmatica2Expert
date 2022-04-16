@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest901.name}",
+	icon: "rftools:rf_monitor",
+	x: -2.125d,
+	y: 1.8541666666666665d,
+	text: [
+		"{bq.quest901.desc}"
+	],
+	dependencies: [
+		"f6e8e410"
+	],
+	size: 1.2083333333333333d,
+	tasks: [{
+		uid: "68ca2f69",
+		type: "item",
+		items: [{
+			item: "rftools:rf_monitor"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7ffd96a3",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

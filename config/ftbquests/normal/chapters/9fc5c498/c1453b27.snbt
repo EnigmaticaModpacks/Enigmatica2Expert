@@ -1,0 +1,59 @@
+{
+	title: "{bq.quest759.name}",
+	icon: "enderio:item_end_steel_chestplate",
+	x: 10.166666666666666d,
+	y: 5.166666666666667d,
+	text: [
+		"{bq.quest759.desc}"
+	],
+	dependencies: [
+		"a1061823"
+	],
+	tasks: [{
+		uid: "08e8f42d",
+		type: "item",
+		items: [{
+			item: "enderio:item_end_steel_helmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9eb02a23",
+		type: "item",
+		items: [{
+			item: "enderio:item_end_steel_chestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "bf71902e",
+		type: "item",
+		items: [{
+			item: "enderio:item_end_steel_leggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "f434c0be",
+		type: "item",
+		items: [{
+			item: "enderio:item_end_steel_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0aa1f488",
+		type: "choice",
+		table: 83
+	},
+	{
+		uid: "2eeb4c78",
+		type: "command",
+		auto: "invisible",
+		command: "gamestage silentadd @p armor_end_steel"
+	}]
+}

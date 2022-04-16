@@ -1,0 +1,72 @@
+{
+	title: "{bq.quest916.name}",
+	icon: {
+		id: "mekanism:basicblock2",
+		Damage: 3s,
+		tag: {
+			tier: 0
+		}
+	},
+	x: 10.166666666666666d,
+	y: 6.5d,
+	text: [
+		"{bq.quest916.desc}"
+	],
+	dependencies: [
+		"54c54cc4"
+	],
+	tasks: [{
+		uid: "7bed3976",
+		type: "item",
+		items: [{
+			id: "mekanism:basicblock2",
+			Damage: 3s,
+			tag: {
+				tier: 0
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "bb2e7a8d",
+		type: "item",
+		items: [{
+			id: "mekanism:basicblock2",
+			Damage: 4s,
+			tag: {
+				tier: 0
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "b1289ed2",
+		type: "item",
+		items: [{
+			item: "mekanism:basicblock2 41 1"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "3cc6ecba",
+		type: "item",
+		items: [{
+			item: "mekanism:basicblock2 2 2"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "335ba3fc",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

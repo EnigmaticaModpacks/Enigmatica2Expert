@@ -1,0 +1,81 @@
+{
+	title: "{bq.quest715.name}",
+	icon: "nuclearcraft:turbine_controller",
+	x: 3.6666666666666665d,
+	y: 2.333333333333333d,
+	text: [
+		"{bq.quest715.desc}"
+	],
+	dependencies: [
+		"76c7f13f",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "0958bf63",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:turbine_controller"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "3ae9d2e6",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:turbine_frame 52"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "eabf1143",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:turbine_wall 6"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "bb40500b",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:turbine_rotor_bearing 2"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "c6d6a61e",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:turbine_rotor_shaft"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "f9816f12",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:turbine_inlet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "17498a48",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:turbine_outlet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8d38866d",
+		type: "choice",
+		table: 68
+	}]
+}

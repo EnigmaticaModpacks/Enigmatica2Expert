@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest175.name}",
+	icon: "mekanism:enrichedalloy",
+	x: 3.5d,
+	y: 5.166666666666667d,
+	text: [
+		"{bq.quest175.desc}"
+	],
+	dependencies: [
+		"6d298370"
+	],
+	tasks: [{
+		uid: "84bb1149",
+		type: "item",
+		items: [{
+			item: "mekanism:enrichedalloy"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "59406abe",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

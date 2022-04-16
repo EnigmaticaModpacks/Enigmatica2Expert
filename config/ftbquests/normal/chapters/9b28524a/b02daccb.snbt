@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest612.name}",
+	icon: {
+		id: "bloodmagic:blood_orb",
+		tag: {
+			orb: "bloodmagic:weak"
+		}
+	},
+	x: 5.166666666666667d,
+	y: 4.5d,
+	text: [
+		"{bq.quest612.desc}"
+	],
+	dependencies: [
+		"6a6dc36e"
+	],
+	tasks: [{
+		uid: "d49b136c",
+		type: "item",
+		items: [{
+			id: "bloodmagic:blood_orb",
+			tag: {
+				orb: "bloodmagic:weak"
+			}
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "857964e3",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

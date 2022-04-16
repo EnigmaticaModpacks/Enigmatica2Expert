@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest421.name}",
+	icon: "ic2:nuclear 1 7",
+	x: 4.166666666666666d,
+	y: 8.833333333333334d,
+	text: [
+		"{bq.quest421.desc}"
+	],
+	dependencies: [
+		"533c2a59"
+	],
+	tasks: [{
+		uid: "a9b840ef",
+		type: "item",
+		items: [{
+			item: "ic2:nuclear 1 7"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "8d561d42",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

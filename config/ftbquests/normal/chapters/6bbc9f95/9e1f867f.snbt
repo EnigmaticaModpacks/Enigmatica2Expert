@@ -1,0 +1,26 @@
+{
+	title: "{bq.quest667.name}",
+	icon: "thaumcraft:matrix_speed",
+	x: 3.3333333333333335d,
+	y: 11.833333333333334d,
+	text: [
+		"{bq.quest667.desc}"
+	],
+	dependencies: [
+		"f0a632f4"
+	],
+	tasks: [{
+		uid: "10f6adf9",
+		type: "item",
+		items: [{
+			item: "thaumcraft:matrix_speed"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "afda7d88",
+		type: "choice",
+		table: 56
+	}]
+}

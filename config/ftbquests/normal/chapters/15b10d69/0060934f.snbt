@@ -1,0 +1,46 @@
+{
+	title: "{bq.quest139.name}",
+	icon: "industrialforegoing:dryrubber",
+	x: 1.0d,
+	y: 1.0d,
+	text: [
+		"{bq.quest139.desc}"
+	],
+	dependencies: [
+		"4a526e74"
+	],
+	tasks: [{
+		uid: "ba905272",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:tinydryrubber"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "5abc477e",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:dryrubber"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "9aadce5f",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:plastic"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "7a564b5c",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

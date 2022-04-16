@@ -1,0 +1,22 @@
+{
+	title: "{bq.quest799.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "mekanism:glowplasticblock 1 6",
+		count: 64
+	},
+	{
+		item: {
+			id: "environmentalmaterials:alabaster",
+			Count: 6400,
+			Damage: 3s
+		}
+	},
+	{
+		item: {
+			id: "chisel:concrete_lightblue1",
+			Count: 640,
+			Damage: 5s
+		}
+	}]
+}

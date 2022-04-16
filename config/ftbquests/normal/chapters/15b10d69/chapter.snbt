@@ -1,0 +1,10 @@
+{
+	title: "{bq.chapter12.name}",
+	icon: "industrialforegoing:mob_duplicator",
+	description: [
+		"{bq.chapter12.desc}"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

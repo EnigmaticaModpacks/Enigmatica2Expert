@@ -1,0 +1,40 @@
+{
+	title: "{bq.quest933.name}",
+	icon: {
+		id: "botania:specialflower",
+		tag: {
+			type: "orechidVacuam"
+		}
+	},
+	x: 6.166666666666667d,
+	y: 11.666666666666666d,
+	text: [
+		"{bq.quest933.desc}"
+	],
+	dependencies: [
+		"5672d99b",
+		"4aa39f8e"
+	],
+	tasks: [{
+		uid: "9fbc7b5f",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "orechidVacuam"
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "bde3cf46",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

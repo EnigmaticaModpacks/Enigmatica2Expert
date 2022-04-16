@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest1072.name}",
+	icon: "rats:plague_doctorate",
+	x: -0.5d,
+	y: 1.25d,
+	text: [
+		"{bq.quest1072.desc}"
+	],
+	dependencies: [
+		"a65a3f5b"
+	],
+	tasks: [{
+		uid: "0d818737",
+		type: "item",
+		items: [{
+			item: "rats:plague_doctorate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b6cdd152",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

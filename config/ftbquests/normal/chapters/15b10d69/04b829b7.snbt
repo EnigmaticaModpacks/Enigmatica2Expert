@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest143.name}",
+	icon: "industrialforegoing:mob_relocator",
+	x: 4.833333333333333d,
+	y: 4.0d,
+	text: [
+		"{bq.quest143.desc}"
+	],
+	dependencies: [
+		"0060934f"
+	],
+	tasks: [{
+		uid: "3486c104",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:mob_relocator"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "47c8b57a",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,33 @@
+{
+	title: "{bq.quest57.name}",
+	icon: {
+		id: "tconstruct:sharpening_kit",
+		tag: {
+			Material: "enderium"
+		}
+	},
+	x: 12.625d,
+	y: 3.5d,
+	text: [
+		"{bq.quest57.desc}"
+	],
+	dependencies: [
+		"857a6a1a"
+	],
+	tasks: [{
+		uid: "6f9dfb7c",
+		type: "item",
+		items: [{
+			id: "tconstruct:sharpening_kit",
+			tag: {
+				Material: "enderium"
+			}
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "3253d541",
+		type: "choice",
+		table: 28
+	}]
+}

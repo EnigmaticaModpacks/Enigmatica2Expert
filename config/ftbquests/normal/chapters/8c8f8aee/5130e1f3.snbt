@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest124.name}",
+	icon: "actuallyadditions:block_grinder",
+	x: -6.833333333333333d,
+	y: 5.333333333333333d,
+	text: [
+		"{bq.quest124.desc}"
+	],
+	dependencies: [
+		"03d4419e"
+	],
+	tasks: [{
+		uid: "787bbd26",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_grinder"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "eee665ec",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

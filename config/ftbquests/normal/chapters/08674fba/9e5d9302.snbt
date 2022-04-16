@@ -1,0 +1,70 @@
+{
+	title: "{bq.quest448.name}",
+	icon: "advancedrocketry:planetanalyser",
+	x: 12.833333333333334d,
+	y: 5.833333333333333d,
+	text: [
+		"{bq.quest448.desc}"
+	],
+	dependencies: [
+		"218dde60"
+	],
+	tasks: [{
+		uid: "bf6dfa44",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:planetanalyser"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "d336a7fe",
+		type: "item",
+		items: [{
+			item: "minecraft:stone_slab 5"
+		}],
+		count: 5L
+	},
+	{
+		uid: "be029395",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:loader 3"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "11daa217",
+		type: "item",
+		items: [{
+			item: "libvulpes:hatch"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "933f0122",
+		type: "item",
+		items: [{
+			item: "libvulpes:hatch 1 1"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "f4394e63",
+		type: "item",
+		items: [{
+			item: "libvulpes:forgepowerinput"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "2475071e",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

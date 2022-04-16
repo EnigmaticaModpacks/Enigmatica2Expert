@@ -1,0 +1,39 @@
+{
+	title: "{bq.quest155.name}",
+	icon: {
+		id: "astralsorcery:itemwand",
+		tag: {
+			astralsorcery: {}
+		}
+	},
+	x: -2.8333333333333335d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest155.desc}"
+	],
+	dependencies: [
+		"8a6186a6"
+	],
+	tasks: [{
+		uid: "a5a9c7f8",
+		type: "item",
+		items: [{
+			id: "astralsorcery:itemwand",
+			tag: {
+				astralsorcery: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d42e9101",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

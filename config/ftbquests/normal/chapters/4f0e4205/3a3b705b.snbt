@@ -1,0 +1,60 @@
+{
+	title: "{bq.quest787.name}",
+	icon: "twilightforest:ironwood_chestplate",
+	x: 1.8333333333333333d,
+	y: 1.1666666666666667d,
+	text: [
+		"{bq.quest787.desc}"
+	],
+	dependencies: [
+		"95b739d8"
+	],
+	size: 0.6666666666666666d,
+	tasks: [{
+		uid: "80f1e821",
+		type: "item",
+		items: [{
+			item: "twilightforest:ironwood_helmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "2fe6720c",
+		type: "item",
+		items: [{
+			item: "twilightforest:ironwood_chestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "b2ff8d07",
+		type: "item",
+		items: [{
+			item: "twilightforest:ironwood_leggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "1238be7e",
+		type: "item",
+		items: [{
+			item: "twilightforest:ironwood_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f5ffd819",
+		type: "choice",
+		table: 97
+	},
+	{
+		uid: "94f05ed4",
+		type: "command",
+		auto: "invisible",
+		command: "gamestage silentadd @p armor_ironwood"
+	}]
+}

@@ -1,0 +1,39 @@
+{
+	title: "{bq.quest306.name}",
+	icon: {
+		id: "immersiveengineering:blueprint",
+		tag: {
+			blueprint: "components"
+		}
+	},
+	x: -0.16666666666666663d,
+	y: 4.833333333333333d,
+	text: [
+		"{bq.quest306.desc}"
+	],
+	dependencies: [
+		"ec158bbd"
+	],
+	tasks: [{
+		uid: "3374b420",
+		type: "item",
+		items: [{
+			id: "immersiveengineering:blueprint",
+			tag: {
+				blueprint: "components"
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3f7ab7ee",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

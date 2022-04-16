@@ -1,0 +1,36 @@
+{
+	title: "{bq.quest407.name}",
+	icon: {
+		id: "botania:manaring",
+		tag: {}
+	},
+	x: 0.5d,
+	y: 5.166666666666667d,
+	text: [
+		"{bq.quest407.desc}"
+	],
+	dependencies: [
+		"5672d99b",
+		"e93a1011"
+	],
+	tasks: [{
+		uid: "7413374e",
+		type: "item",
+		items: [{
+			id: "botania:manaring",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "93d14bd8",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

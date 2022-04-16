@@ -1,0 +1,39 @@
+{
+	title: "{bq.quest1060.name}",
+	icon: {
+		id: "ic2:cropnalyzer",
+		tag: {
+			charge: 100000.0d
+		}
+	},
+	x: -1.8333333333333335d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest1060.desc}"
+	],
+	dependencies: [
+		"b522c8b8"
+	],
+	tasks: [{
+		uid: "99ed5d4c",
+		type: "item",
+		items: [{
+			id: "ic2:cropnalyzer",
+			tag: {
+				charge: 100000.0d
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "cf617dc2",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

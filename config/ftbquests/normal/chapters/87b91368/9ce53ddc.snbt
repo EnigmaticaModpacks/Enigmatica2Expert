@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest728.name}",
+	icon: "rats:rat_diamond",
+	x: -2.0d,
+	y: 0.0d,
+	text: [
+		"{bq.quest728.desc}"
+	],
+	dependencies: [
+		"06c349a7"
+	],
+	tasks: [{
+		uid: "a338359c",
+		type: "item",
+		items: [{
+			item: "rats:rat_diamond"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "1d458786",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

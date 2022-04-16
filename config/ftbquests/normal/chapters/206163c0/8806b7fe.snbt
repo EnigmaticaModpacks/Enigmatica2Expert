@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest97.name}",
+	icon: "forestry:carpenter",
+	x: -4.833333333333333d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest97.desc}"
+	],
+	dependencies: [
+		"383eccde"
+	],
+	tasks: [{
+		uid: "6f31ca78",
+		type: "item",
+		items: [{
+			item: "forestry:carpenter"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "a461a2ad",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

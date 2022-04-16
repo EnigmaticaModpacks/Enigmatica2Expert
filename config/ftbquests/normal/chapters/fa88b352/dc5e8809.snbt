@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest500.name}",
+	icon: "nuclearcraft:part 1 2",
+	x: 10.5d,
+	y: 13.5d,
+	text: [
+		"{bq.quest500.desc}"
+	],
+	dependencies: [
+		"3814ab8c",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "f6b4cf4e",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:part 1 2"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "6b3036d0",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

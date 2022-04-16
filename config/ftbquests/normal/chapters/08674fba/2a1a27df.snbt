@@ -1,0 +1,70 @@
+{
+	title: "{bq.quest427.name}",
+	icon: "advancedrocketry:cuttingmachine",
+	x: 6.166666666666667d,
+	y: 1.8333333333333333d,
+	text: [
+		"{bq.quest427.desc}"
+	],
+	dependencies: [
+		"e8c6a755"
+	],
+	tasks: [{
+		uid: "58a2ca6f",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:cuttingmachine"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "2c3e7451",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:sawblade"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "7582387a",
+		type: "item",
+		items: [{
+			item: "libvulpes:motor"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "c9939e55",
+		type: "item",
+		items: [{
+			item: "libvulpes:forgepowerinput"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "4ec2c341",
+		type: "item",
+		items: [{
+			item: "libvulpes:hatch"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "60491ffa",
+		type: "item",
+		items: [{
+			item: "libvulpes:hatch 1 1"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "17559d22",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

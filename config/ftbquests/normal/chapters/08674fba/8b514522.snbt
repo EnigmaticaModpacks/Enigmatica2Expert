@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest440.name}",
+	icon: "advancedrocketry:stationbuilder",
+	x: 8.166666666666668d,
+	y: 5.833333333333333d,
+	text: [
+		"{bq.quest440.desc}"
+	],
+	dependencies: [
+		"c405cbe7",
+		"e9fa52b4"
+	],
+	tasks: [{
+		uid: "a2ad992b",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:stationbuilder"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "b0b449fa",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

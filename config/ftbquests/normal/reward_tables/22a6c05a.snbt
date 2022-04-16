@@ -1,0 +1,16 @@
+{
+	title: "{bq.quest9.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "actuallyadditions:block_misc 1 9",
+		count: 2
+	},
+	{
+		item: "ic2:resource 1 13",
+		count: 2
+	},
+	{
+		item: "immersiveengineering:metal_decoration0 1 5",
+		count: 2
+	}]
+}

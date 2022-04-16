@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest613.name}",
+	icon: "bloodmagic:slate 1 1",
+	x: 7.833333333333333d,
+	y: 5.833333333333333d,
+	text: [
+		"{bq.quest613.desc}"
+	],
+	dependencies: [
+		"c359a62a"
+	],
+	tasks: [{
+		uid: "42d37c5e",
+		type: "item",
+		items: [{
+			item: "bloodmagic:slate 1 1"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "79e93981",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,39 @@
+{
+	title: "{bq.quest51.name}",
+	icon: {
+		id: "tconstruct:sharpening_kit",
+		tag: {
+			Material: "lead"
+		}
+	},
+	x: 3.625d,
+	y: 3.5d,
+	text: [
+		"{bq.quest51.desc}"
+	],
+	dependencies: [
+		"9eaa496f"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "7cd9daaf",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:ore 1 3"
+		}],
+		count: 2L,
+		ignore_damage: true
+	},
+	{
+		uid: "26780eb0",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_misc 1 3"
+		}]
+	}],
+	rewards: [{
+		uid: "a8230545",
+		type: "choice",
+		table: 23
+	}]
+}

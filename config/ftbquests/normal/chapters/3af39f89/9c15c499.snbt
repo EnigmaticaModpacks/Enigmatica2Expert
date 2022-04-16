@@ -1,0 +1,24 @@
+{
+	title: "{bq.quest213.name}",
+	icon: "thermalfoundation:wrench",
+	x: 7.166666666666667d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest213.desc}"
+	],
+	dependencies: [
+		"bd7fc30c"
+	],
+	size: 1.3333333333333333d,
+	rewards: [{
+		uid: "77c53124",
+		type: "choice",
+		table: 34
+	},
+	{
+		uid: "a39c0160",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has begun the Thermal Expansion questline!"
+	}]
+}

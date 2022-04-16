@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest436.name}",
+	icon: "advancedrocketry:gravitycontroller",
+	x: 10.166666666666666d,
+	y: 8.5d,
+	text: [
+		"{bq.quest436.desc}"
+	],
+	dependencies: [
+		"8b514522"
+	],
+	tasks: [{
+		uid: "c9d6ca5a",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:gravitycontroller"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "aad17bad",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

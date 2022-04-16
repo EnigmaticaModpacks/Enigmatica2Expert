@@ -1,0 +1,33 @@
+{
+	title: "{bq.quest1009.name}",
+	icon: "cyclicmagic:auto_packager",
+	x: -16.666666666666668d,
+	y: 19.166666666666668d,
+	text: [
+		"{bq.quest1009.desc}"
+	],
+	dependencies: [
+		"37406152",
+		"a4548a67"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "43522071",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:auto_packager"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "bd636371",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

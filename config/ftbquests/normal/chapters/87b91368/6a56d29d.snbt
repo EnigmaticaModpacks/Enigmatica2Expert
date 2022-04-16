@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest755.name}",
+	icon: "randomthings:ingredient 1 11",
+	x: -2.0d,
+	y: 2.5d,
+	text: [
+		"{bq.quest755.desc}"
+	],
+	dependencies: [
+		"1fa3be0b"
+	],
+	tasks: [{
+		uid: "7fbdaab3",
+		type: "item",
+		items: [{
+			item: "randomthings:ingredient 1 11"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "f6e5ed81",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

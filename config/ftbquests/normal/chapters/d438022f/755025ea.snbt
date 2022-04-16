@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest1056.name}",
+	icon: "cyclicmagic:inventory_food",
+	x: -8.0d,
+	y: 20.5d,
+	text: [
+		"{bq.quest1056.desc}"
+	],
+	dependencies: [
+		"33b238ff"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "dbe50058",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:inventory_food"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "1f437db1",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,37 @@
+{
+	title: "{bq.quest736.name}",
+	icon: "rats:raw_plastic",
+	x: -6.5d,
+	y: 1.5d,
+	text: [
+		"{bq.quest736.desc}"
+	],
+	dependencies: [
+		"67de8e53"
+	],
+	tasks: [{
+		uid: "ba4c99ba",
+		type: "item",
+		items: [{
+			item: "rats:raw_plastic"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "adf6b824",
+		type: "item",
+		item: "rats:rat_tube_white",
+		count: 16
+	},
+	{
+		uid: "5cb41dab",
+		type: "item",
+		item: "rats:treacle"
+	},
+	{
+		uid: "282e0bbb",
+		type: "item",
+		item: "rats:rat_burger",
+		count: 3
+	}]
+}

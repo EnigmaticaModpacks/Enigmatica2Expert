@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest290.name}",
+	icon: "forestry:engine_biogas",
+	x: -6.166666666666667d,
+	y: 3.5d,
+	text: [
+		"{bq.quest290.desc}"
+	],
+	dependencies: [
+		"90654ce3"
+	],
+	tasks: [{
+		uid: "ec8f7b6d",
+		type: "item",
+		items: [{
+			item: "forestry:engine_biogas"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "d9121836",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

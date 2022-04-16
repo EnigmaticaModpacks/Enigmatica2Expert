@@ -1,0 +1,26 @@
+{
+	title: "{bq.quest20.name}",
+	icon: "extrautils2:passivegenerator 1 6",
+	x: 6.458333333333333d,
+	y: 1.541666666666667d,
+	text: [
+		"{bq.quest20.desc}"
+	],
+	dependencies: [
+		"a1377b51"
+	],
+	tasks: [{
+		uid: "198d6d94",
+		type: "item",
+		items: [{
+			item: "extrautils2:passivegenerator 1 6"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "45a9ef9c",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has obtained the Creative Mill!"
+	}]
+}

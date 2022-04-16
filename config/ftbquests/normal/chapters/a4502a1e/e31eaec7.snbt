@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest324.name}",
+	icon: "extrautils2:screen",
+	x: 6.666666666666667d,
+	y: 7.333333333333333d,
+	text: [
+		"{bq.quest324.desc}"
+	],
+	dependencies: [
+		"0e08c73f"
+	],
+	tasks: [{
+		uid: "43c74743",
+		type: "item",
+		items: [{
+			item: "extrautils2:screen"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "d7c01bf2",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

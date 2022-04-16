@@ -1,0 +1,85 @@
+{
+	title: "{bq.quest1063.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "rats:plastic_waste",
+		count: 10
+	},
+	{
+		item: "extrautils2:trashchest",
+		count: 2
+	},
+	{
+		item: {
+			id: "tconstruct:rapier",
+			tag: {
+				StatsOriginal: {
+					AttackSpeedMultiplier: 1.0f,
+					MiningSpeed: 3.0f,
+					FreeModifiers: 3,
+					Durability: 429,
+					HarvestLevel: 1,
+					Attack: 1.5f
+				},
+				Special: {
+					Categories: [
+						"weapon",
+						"tool"
+					]
+				},
+				Stats: {
+					AttackSpeedMultiplier: 1.0f,
+					MiningSpeed: 3.0f,
+					FreeModifiers: 2,
+					Durability: 429,
+					HarvestLevel: 1,
+					Attack: 1.5f
+				},
+				Modifiers: [{
+					identifier: "ratty",
+					color: -868046,
+					level: 1
+				},
+				{
+					identifier: "tasty",
+					color: -868046,
+					level: 1
+				},
+				{
+					identifier: "toolleveling",
+					color: 16777215,
+					level: 1
+				}],
+				TinkerData: {
+					Materials: [
+						"cheese",
+						"cheese",
+						"cheese"
+					],
+					Modifiers: [
+						"toolleveling"
+					]
+				},
+				Traits: [
+					"ratty",
+					"tasty",
+					"toolleveling"
+				]
+			},
+			ForgeCaps: {
+				"plustic:fruitsalad_cap": {
+					Items: [],
+					Size: 5
+				},
+				"plustic:": {
+					Items: [],
+					Size: 1
+				},
+				"plustic:musicofthespheres_cap": {
+					Items: [],
+					Size: 1
+				}
+			}
+		}
+	}]
+}

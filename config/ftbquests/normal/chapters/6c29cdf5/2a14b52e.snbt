@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest362.name}",
+	icon: "botania:livingwood",
+	x: 1.75d,
+	y: 2.5d,
+	text: [
+		"{bq.quest362.desc}"
+	],
+	dependencies: [
+		"5672d99b",
+		"4fa70ec1"
+	],
+	tasks: [{
+		uid: "a3bc448a",
+		type: "item",
+		items: [{
+			item: "botania:livingwood"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "5adee103",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

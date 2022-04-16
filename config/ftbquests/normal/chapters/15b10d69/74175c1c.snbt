@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest140.name}",
+	icon: "industrialforegoing:pink_slime",
+	x: 8.0d,
+	y: 1.0d,
+	text: [
+		"{bq.quest140.desc}"
+	],
+	dependencies: [
+		"0060934f"
+	],
+	tasks: [{
+		uid: "9cb4bd3f",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:mob_slaughter_factory"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "66bfbbcb",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:pink_slime"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "fe742686",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

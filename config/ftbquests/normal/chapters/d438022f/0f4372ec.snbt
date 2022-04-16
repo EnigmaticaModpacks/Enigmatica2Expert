@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest1025.name}",
+	icon: "cyclicmagic:block_storeempty",
+	x: -16.666666666666668d,
+	y: 20.5d,
+	text: [
+		"{bq.quest1025.desc}"
+	],
+	dependencies: [
+		"113883dc"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "e3eed06a",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:block_storeempty"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "05ac556d",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

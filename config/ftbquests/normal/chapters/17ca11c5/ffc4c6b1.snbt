@@ -1,0 +1,26 @@
+{
+	title: "{bq.quest23.name}",
+	icon: "draconicevolution:creative_exchanger",
+	x: 3.8333333333333335d,
+	y: 11.333333333333332d,
+	text: [
+		"{bq.quest23.desc}"
+	],
+	dependencies: [
+		"af1b2362"
+	],
+	tasks: [{
+		uid: "49d8f14a",
+		type: "item",
+		items: [{
+			item: "draconicevolution:creative_exchanger"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "3484dc75",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has obtained the Creative Block Exchanger!"
+	}]
+}

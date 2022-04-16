@@ -1,0 +1,61 @@
+{
+	title: "{bq.quest765.name}",
+	icon: "botania:manaweavechest",
+	x: 1.8333333333333333d,
+	y: 6.5d,
+	text: [
+		"{bq.quest765.desc}"
+	],
+	dependencies: [
+		"2bc0a8f1"
+	],
+	tasks: [{
+		uid: "bfe3dcd4",
+		type: "item",
+		items: [{
+			item: "botania:manaweavehelm"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "05256478",
+		type: "item",
+		items: [{
+			item: "botania:manaweavechest"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "508b5fa9",
+		type: "item",
+		items: [{
+			id: "botania:manaweavelegs",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "f7654683",
+		type: "item",
+		items: [{
+			id: "botania:manaweaveboots",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "34715601",
+		type: "choice",
+		table: 86
+	},
+	{
+		uid: "73407419",
+		type: "command",
+		auto: "invisible",
+		command: "gamestage silentadd @p armor_manaweave"
+	}]
+}

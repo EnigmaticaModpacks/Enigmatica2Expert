@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest305.name}",
+	icon: "immersiveengineering:metal_device1 1 1",
+	x: -3.5d,
+	y: 4.833333333333333d,
+	text: [
+		"{bq.quest305.desc}"
+	],
+	dependencies: [
+		"ee5087c9"
+	],
+	tasks: [{
+		uid: "ea2e2bd4",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_device1 1 1"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "b7bf9561",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

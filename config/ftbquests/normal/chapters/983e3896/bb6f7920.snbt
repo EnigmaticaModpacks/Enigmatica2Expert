@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest804.name}",
+	icon: "astralsorcery:blockcelestialgateway",
+	x: 4.166666666666666d,
+	y: 4.833333333333333d,
+	text: [
+		"{bq.quest804.desc}"
+	],
+	dependencies: [
+		"d051b719"
+	],
+	tasks: [{
+		uid: "8565e10f",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockcelestialgateway"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4cc5320f",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

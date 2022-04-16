@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest48.name}",
+	icon: {
+		id: "tconstruct:sharpening_kit",
+		tag: {
+			Material: "certus_quartz"
+		}
+	},
+	x: 0.625d,
+	y: 3.5d,
+	text: [
+		"{bq.quest48.desc}"
+	],
+	dependencies: [
+		"90536e42"
+	],
+	tasks: [{
+		uid: "8d18f8b8",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 2"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "a89d9ddc",
+		type: "choice",
+		table: 20
+	}]
+}

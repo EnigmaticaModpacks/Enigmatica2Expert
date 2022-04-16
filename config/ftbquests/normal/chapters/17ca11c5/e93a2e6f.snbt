@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest21.name}",
+	icon: "extendedcrafting:compressor",
+	x: 5.208333333333333d,
+	y: -0.625d,
+	text: [
+		"{bq.quest21.desc}"
+	],
+	dependencies: [
+		"fbbabf40"
+	],
+	tasks: [{
+		uid: "f5205bb8",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:compressor"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b3ffa307",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

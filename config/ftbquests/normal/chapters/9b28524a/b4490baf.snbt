@@ -1,0 +1,63 @@
+{
+	title: "{bq.quest769.name}",
+	icon: {
+		id: "bloodmagic:living_armour_chest",
+		tag: {}
+	},
+	x: 2.5d,
+	y: 6.833333333333333d,
+	text: [
+		"{bq.quest769.desc}"
+	],
+	dependencies: [
+		"3088e482"
+	],
+	tasks: [{
+		uid: "f630098b",
+		type: "item",
+		items: [{
+			item: "bloodmagic:living_armour_helmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "6e792140",
+		type: "item",
+		items: [{
+			id: "bloodmagic:living_armour_chest",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "b9046b56",
+		type: "item",
+		items: [{
+			item: "bloodmagic:living_armour_leggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "538d0905",
+		type: "item",
+		items: [{
+			item: "bloodmagic:living_armour_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a2585b1e",
+		type: "choice",
+		table: 90
+	},
+	{
+		uid: "6f24f2be",
+		type: "command",
+		auto: "invisible",
+		command: "gamestage silentadd @p armor_living_armour"
+	}]
+}

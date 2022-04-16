@@ -1,0 +1,51 @@
+{
+	title: "{bq.quest539.name}",
+	icon: {
+		id: "draconicevolution:wyvern_pick",
+		tag: {
+			Energy: 2000000
+		},
+		ForgeCaps: {
+			Parent: {
+				Items: [],
+				Size: 9
+			}
+		}
+	},
+	x: 5.0d,
+	y: 10.0d,
+	text: [
+		"{bq.quest539.desc}"
+	],
+	dependencies: [
+		"64f8083b"
+	],
+	tasks: [{
+		uid: "a60a11ff",
+		type: "item",
+		items: [{
+			id: "draconicevolution:wyvern_pick",
+			tag: {
+				Energy: 2000000
+			},
+			ForgeCaps: {
+				Parent: {
+					Items: [],
+					Size: 9
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8c5b37f8",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

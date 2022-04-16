@@ -1,0 +1,33 @@
+{
+	title: "{bq.quest951.name}",
+	icon: "bibliocraft:framingsaw",
+	x: -12.666666666666668d,
+	y: 23.666666666666668d,
+	text: [
+		"{bq.quest951.desc}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"37406152"
+	],
+	size: 1.3333333333333333d,
+	or_tasks: true,
+	tasks: [{
+		uid: "a45d31a1",
+		type: "item",
+		items: [{
+			item: "bibliocraft:framingsaw"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "0932ce59",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "091540f4",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

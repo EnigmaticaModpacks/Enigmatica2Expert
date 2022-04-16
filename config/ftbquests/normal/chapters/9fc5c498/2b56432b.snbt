@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest583.name}",
+	icon: "enderio:block_power_monitor",
+	x: 7.5d,
+	y: 5.166666666666667d,
+	text: [
+		"{bq.quest583.desc}"
+	],
+	dependencies: [
+		"0cce2fa6"
+	],
+	tasks: [{
+		uid: "d2f38874",
+		type: "item",
+		items: [{
+			item: "enderio:block_power_monitor"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7c12bcfd",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

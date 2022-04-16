@@ -1,0 +1,33 @@
+{
+	title: "{bq.quest1044.name}",
+	icon: "cyclicmagic:tool_swap",
+	x: -10.0d,
+	y: 14.166666666666666d,
+	text: [
+		"{bq.quest1044.desc}"
+	],
+	dependencies: [
+		"5966422c"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "e65c8f07",
+		type: "item",
+		items: [{
+			id: "cyclicmagic:tool_swap",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "421398d5",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

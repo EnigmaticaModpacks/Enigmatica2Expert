@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest979.name}",
+	icon: "openblocks:xp_shower",
+	x: -2.3333333333333335d,
+	y: 12.166666666666666d,
+	text: [
+		"{bq.quest979.desc}"
+	],
+	dependencies: [
+		"6c286b64"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "85ce8d1f",
+		type: "item",
+		items: [{
+			item: "openblocks:xp_shower"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f44b2313",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

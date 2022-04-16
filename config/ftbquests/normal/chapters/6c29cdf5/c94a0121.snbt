@@ -1,0 +1,33 @@
+{
+	title: "{bq.quest948.name}",
+	icon: "botania:shimmerwoodplanks",
+	x: 7.833333333333333d,
+	y: 10.541666666666666d,
+	text: [
+		"{bq.quest948.desc}"
+	],
+	dependencies: [
+		"5672d99b",
+		"4aa39f8e"
+	],
+	tasks: [{
+		uid: "94c40f8f",
+		type: "item",
+		items: [{
+			item: "botania:shimmerwoodplanks"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3ad02639",
+		type: "item",
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "fusewood"
+			}
+		},
+		count: 16
+	}]
+}

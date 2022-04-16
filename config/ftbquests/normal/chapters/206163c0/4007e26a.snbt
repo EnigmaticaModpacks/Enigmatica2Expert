@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest274.name}",
+	icon: "forestry:impregnated_casing",
+	x: -0.8333333333333333d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest274.desc}"
+	],
+	dependencies: [
+		"d7a49014"
+	],
+	tasks: [{
+		uid: "752e72b7",
+		type: "item",
+		items: [{
+			item: "forestry:impregnated_casing"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "6162d78d",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,27 @@
+{
+	title: "{bq.quest798.name}",
+	icon: "culinaryconstruct:sandwich_station",
+	x: 2.4583333333333335d,
+	y: -3.083333333333333d,
+	text: [
+		"{bq.quest798.desc}"
+	],
+	dependencies: [
+		"b4b83088",
+		"e3acd250"
+	],
+	tasks: [{
+		uid: "2f6ecd7d",
+		type: "item",
+		items: [{
+			item: "culinaryconstruct:sandwich_station"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b9a1222c",
+		type: "choice",
+		table: 102
+	}]
+}

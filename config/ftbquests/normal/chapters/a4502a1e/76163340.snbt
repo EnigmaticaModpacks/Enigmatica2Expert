@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest331.name}",
+	icon: {
+		id: "extrautils2:machine",
+		tag: {
+			Type: "extrautils2:furnace"
+		}
+	},
+	x: 3.8333333333333335d,
+	y: 2.333333333333333d,
+	text: [
+		"{bq.quest331.desc}"
+	],
+	dependencies: [
+		"29946b47"
+	],
+	tasks: [{
+		uid: "ff3d6687",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:furnace"
+			}
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "2020c905",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

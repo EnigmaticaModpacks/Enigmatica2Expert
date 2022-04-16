@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest159.name}",
+	icon: "astralsorcery:itemlinkingtool",
+	x: 2.8333333333333335d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest159.desc}"
+	],
+	dependencies: [
+		"d051b719"
+	],
+	tasks: [{
+		uid: "864c96f6",
+		type: "item",
+		items: [{
+			item: "astralsorcery:itemlinkingtool"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "afee3d40",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

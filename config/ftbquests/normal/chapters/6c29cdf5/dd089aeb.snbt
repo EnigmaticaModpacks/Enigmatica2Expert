@@ -1,0 +1,125 @@
+{
+	title: "{bq.quest983.name}",
+	icon: {
+		id: "simple_trophies:trophy",
+		tag: {
+			TrophyColorGreen: 127,
+			TrophyShowsTooltip: 1b,
+			TrophyVariant: "gold",
+			TrophyItem: {
+				Count: 1b,
+				id: "botania:pool",
+				tag: {
+					RenderFull: 1b
+				},
+				Damage: 0s
+			},
+			TrophyColorBlue: 181,
+			TrophyColorRed: 71,
+			TrophyName: "§bBotania Master Trophy§r"
+		}
+	},
+	x: 16.5d,
+	y: 8.25d,
+	text: [
+		"{bq.quest983.desc}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"39907113",
+		"811e301d",
+		"88d4b657",
+		"e8b306b0",
+		"38e08b65",
+		"45e6e8e3",
+		"aadd1edb",
+		"ebb7b7b1",
+		"1c7263f8",
+		"aca34b29",
+		"e56c2366",
+		"f94ec042",
+		"ff3c4730",
+		"8f6bf6fa",
+		"47bdb52f",
+		"c8d050c2",
+		"de7a5468",
+		"0db73424",
+		"33f630e1",
+		"8597748f",
+		"41e1327b",
+		"eccc3a53",
+		"febb001d",
+		"e93a1011",
+		"0736b79a",
+		"4aa39f8e",
+		"c61b37b5",
+		"b045426a",
+		"13a7e117",
+		"269414a5",
+		"2bc0a8f1",
+		"4b1f8cac",
+		"7fa70a93",
+		"69effa5a",
+		"c9296d9f",
+		"2af28ccb",
+		"2a14b52e",
+		"fe4056fa",
+		"f74662f8",
+		"88cb7974",
+		"521f2ddb",
+		"95ce8a09",
+		"dc0ff5c4",
+		"df7a11b1",
+		"81cef483",
+		"b4e2c4b1",
+		"7d6c413b",
+		"64be75e6",
+		"779733cd",
+		"f13b2be6",
+		"3338b7e6",
+		"7f3da6e3",
+		"cc984e46",
+		"8b51b830",
+		"9169f28b",
+		"4fa70ec1",
+		"abc4adae",
+		"c94a0121",
+		"c17a1d97",
+		"5fe4c911",
+		"a67fbc87",
+		"778a9371",
+		"8fd96e22",
+		"feb987c2"
+	],
+	size: 1.5d,
+	rewards: [{
+		uid: "f5839ef4",
+		type: "item",
+		auto: "enabled",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 127,
+				TrophyShowsTooltip: 1b,
+				TrophyVariant: "gold",
+				TrophyItem: {
+					Count: 1b,
+					id: "botania:pool",
+					tag: {
+						RenderFull: 1b
+					},
+					Damage: 0s
+				},
+				TrophyColorBlue: 181,
+				TrophyColorRed: 71,
+				TrophyName: "§bBotania Master Trophy§r"
+			}
+		}
+	},
+	{
+		uid: "0babed52",
+		type: "command",
+		auto: "invisible",
+		command: "/say §l@p§r has fully completed the §n§bBotania§r chapter!§r ```Congrats!```"
+	}]
+}

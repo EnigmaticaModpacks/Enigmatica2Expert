@@ -1,0 +1,27 @@
+{
+	title: "{bq.quest915.name}",
+	icon: "libvulpes:productingot 1 7",
+	x: 6.0d,
+	y: 0.0d,
+	text: [
+		"{bq.quest915.desc}"
+	],
+	dependencies: [
+		"00f29513"
+	],
+	size: 0.6666666666666666d,
+	tasks: [{
+		uid: "7b1b203f",
+		type: "item",
+		items: [{
+			item: "libvulpes:productingot 1 7"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7b295b49",
+		type: "choice",
+		table: 113
+	}]
+}

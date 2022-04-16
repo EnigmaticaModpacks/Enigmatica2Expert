@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest178.name}",
+	icon: "mekanism:controlcircuit",
+	x: 2.166666666666667d,
+	y: 5.166666666666667d,
+	text: [
+		"{bq.quest178.desc}"
+	],
+	dependencies: [
+		"6d298370"
+	],
+	tasks: [{
+		uid: "9bbcf725",
+		type: "item",
+		items: [{
+			item: "mekanism:controlcircuit"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "dadf8477",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,34 @@
+{
+	title: "{bq.quest697.name}",
+	icon: "cookingforblockheads:cow_jar",
+	x: 2.125d,
+	y: 6.041666666666667d,
+	text: [
+		"{bq.quest697.desc}"
+	],
+	dependencies: [
+		"e3acd250"
+	],
+	tasks: [{
+		uid: "0e558906",
+		type: "item",
+		items: [{
+			item: "cookingforblockheads:milk_jar"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "c03d781b",
+		type: "item",
+		items: [{
+			item: "minecraft:anvil"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8e7634ac",
+		type: "choice",
+		table: 67
+	}]
+}

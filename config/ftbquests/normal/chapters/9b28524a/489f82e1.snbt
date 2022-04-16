@@ -1,0 +1,37 @@
+{
+	title: "{bq.quest609.name}",
+	icon: {
+		id: "bloodmagic:soul_gem",
+		Damage: 3s,
+		tag: {}
+	},
+	x: 0.8333333333333333d,
+	y: 8.166666666666668d,
+	text: [
+		"{bq.quest609.desc}"
+	],
+	dependencies: [
+		"7e040bad"
+	],
+	tasks: [{
+		uid: "baf93e09",
+		type: "item",
+		items: [{
+			id: "bloodmagic:soul_gem",
+			Damage: 3s,
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "05b62459",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

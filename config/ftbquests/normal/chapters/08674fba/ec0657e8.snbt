@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest449.name}",
+	icon: "advancedrocketry:spacestationchip",
+	x: 10.166666666666666d,
+	y: 5.833333333333333d,
+	text: [
+		"{bq.quest449.desc}"
+	],
+	dependencies: [
+		"8b514522"
+	],
+	tasks: [{
+		uid: "0e2109ab",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:spacestationchip"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "963215fe",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

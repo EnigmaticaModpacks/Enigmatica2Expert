@@ -1,0 +1,26 @@
+{
+	title: "{bq.quest1063.name}",
+	icon: "rats:garbage_pile 4",
+	x: -6.5d,
+	y: -1.0d,
+	text: [
+		"{bq.quest1063.desc}"
+	],
+	dependencies: [
+		"46340f69"
+	],
+	tasks: [{
+		uid: "92b41f38",
+		type: "item",
+		items: [{
+			item: "rats:garbage_pile 10"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ba8e9ae3",
+		type: "choice",
+		table: 129
+	}]
+}

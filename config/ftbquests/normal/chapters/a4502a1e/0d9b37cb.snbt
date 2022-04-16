@@ -1,0 +1,18 @@
+{
+	title: "{bq.quest888.name}",
+	icon: {
+		id: "minecraft:air",
+		Count: 0,
+		Damage: 0s
+	},
+	disable_toast: true,
+	x: 10.416666666666666d,
+	y: 0.9166666666666666d,
+	text: [
+		"{bq.quest888.desc}"
+	],
+	dependencies: [
+		"dff12c7a"
+	],
+	size: 0.5d
+}

@@ -1,0 +1,39 @@
+{
+	title: "{bq.quest1054.name}",
+	icon: "immersiveengineering:metal_decoration2 1 7",
+	x: -1.8333333333333335d,
+	y: -0.5d,
+	text: [
+		"{bq.quest1054.desc}"
+	],
+	dependencies: [
+		"1c4deb33"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "cafb5e90",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration2 1 8"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "de58470d",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration2 1 7"
+		}]
+	}],
+	rewards: [{
+		uid: "54cad5aa",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest892.name}",
+	icon: "conditionoverload:wicked_jewel",
+	x: 15.625d,
+	y: 5.041666666666667d,
+	text: [
+		"{bq.quest892.desc}"
+	],
+	dependencies: [
+		"5c870b2e"
+	],
+	tasks: [{
+		uid: "9c65bda0",
+		type: "item",
+		items: [{
+			item: "conditionoverload:wicked_jewel"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e285486a",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

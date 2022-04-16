@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest430.name}",
+	icon: "advancedrocketry:ic",
+	x: 8.166666666666668d,
+	y: 1.8333333333333333d,
+	text: [
+		"{bq.quest430.desc}"
+	],
+	dependencies: [
+		"2a1a27df",
+		"bfd49d26",
+		"e898f997"
+	],
+	tasks: [{
+		uid: "4f504dcf",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:ic"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "ac8ac95f",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

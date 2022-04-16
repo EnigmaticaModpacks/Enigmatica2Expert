@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest704.name}",
+	icon: "extrautils2:lawsword",
+	x: 9.0d,
+	y: 5.0d,
+	text: [
+		"{bq.quest704.desc}"
+	],
+	dependencies: [
+		"fceeb055"
+	],
+	tasks: [{
+		uid: "6aec1d92",
+		type: "item",
+		items: [{
+			item: "extrautils2:lawsword"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "705eb052",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

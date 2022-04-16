@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest146.name}",
+	icon: "industrialforegoing:fluid_crafter",
+	x: -3.0d,
+	y: 2.8333333333333335d,
+	text: [
+		"{bq.quest146.desc}"
+	],
+	dependencies: [
+		"0060934f"
+	],
+	tasks: [{
+		uid: "461e6d59",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:fluid_crafter"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "746c8dde",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

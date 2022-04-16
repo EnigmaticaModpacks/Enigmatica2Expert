@@ -1,0 +1,33 @@
+{
+	title: "{bq.quest868.name}",
+	icon: "twilightforest:trophy 1 6",
+	x: 4.5d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest868.desc}"
+	],
+	dependencies: [
+		"da09753d"
+	],
+	tasks: [{
+		uid: "d328b5f6",
+		type: "item",
+		items: [{
+			item: "twilightforest:trophy 1 6"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d57b2420",
+		type: "item",
+		item: "twilightforest:twilight_sapling 1 7",
+		count: 4
+	},
+	{
+		uid: "d330b5b1",
+		type: "command",
+		auto: "invisible",
+		command: "/advancement grant @p only twilightforest:progress_labyrinth"
+	}]
+}

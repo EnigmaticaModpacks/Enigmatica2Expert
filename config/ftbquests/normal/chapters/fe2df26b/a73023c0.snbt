@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest853.name}",
+	icon: "aeadditions:fluidfiller",
+	x: -3.5d,
+	y: 2.5d,
+	text: [
+		"{bq.quest853.desc}"
+	],
+	dependencies: [
+		"228e865e"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "3bc9ef90",
+		type: "item",
+		items: [{
+			item: "aeadditions:fluidfiller"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "abd6d1ae",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

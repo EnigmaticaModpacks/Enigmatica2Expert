@@ -1,0 +1,50 @@
+{
+	title: "{bq.quest680.name}",
+	icon: "thaumcraft:fortress_helm",
+	x: 13.833333333333334d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest680.desc}"
+	],
+	dependencies: [
+		"8535b078"
+	],
+	tasks: [{
+		uid: "80be42bd",
+		type: "item",
+		items: [{
+			item: "thaumcraft:fortress_helm"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "59364a4c",
+		type: "item",
+		items: [{
+			item: "thaumcraft:fortress_chest"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "e1ed71a0",
+		type: "item",
+		items: [{
+			item: "thaumcraft:fortress_legs"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "5b2d5aee",
+		type: "choice",
+		table: 65
+	},
+	{
+		uid: "4bf78ddd",
+		type: "command",
+		auto: "invisible",
+		command: "gamestage silentadd @p armor_thaumium_fortress"
+	}]
+}

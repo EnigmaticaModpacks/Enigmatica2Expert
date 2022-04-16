@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest977.name}",
+	icon: "openblocks:xp_drain",
+	x: -3.3333333333333335d,
+	y: 10.833333333333334d,
+	text: [
+		"{bq.quest977.desc}"
+	],
+	dependencies: [
+		"9f41b8d8"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "8520ba19",
+		type: "item",
+		items: [{
+			item: "openblocks:xp_drain"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "632969c8",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

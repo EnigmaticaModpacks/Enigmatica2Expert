@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest988.name}",
+	icon: "randomthings:pitcherplant",
+	x: -9.666666666666666d,
+	y: 8.0d,
+	text: [
+		"{bq.quest988.desc}"
+	],
+	dependencies: [
+		"e9290458"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "e0679354",
+		type: "item",
+		items: [{
+			item: "randomthings:pitcherplant"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "53c5178e",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

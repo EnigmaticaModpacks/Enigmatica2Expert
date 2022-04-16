@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest196.name}",
+	icon: "mekanism:otherdust 1 5",
+	x: 6.166666666666667d,
+	y: 7.833333333333333d,
+	text: [
+		"{bq.quest196.desc}"
+	],
+	dependencies: [
+		"d0c5b8a8"
+	],
+	tasks: [{
+		uid: "b097e4cf",
+		type: "item",
+		items: [{
+			item: "mekanism:otherdust 1 5"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "15a67af4",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

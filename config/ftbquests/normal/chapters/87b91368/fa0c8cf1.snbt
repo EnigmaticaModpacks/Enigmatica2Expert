@@ -1,0 +1,37 @@
+{
+	title: "{bq.quest741.name}",
+	icon: "iceandfire:jar_pixie",
+	x: 2.0d,
+	y: 1.25d,
+	text: [
+		"{bq.quest741.desc}"
+	],
+	dependencies: [
+		"9df40b6e"
+	],
+	tasks: [{
+		uid: "5294b25a",
+		type: "item",
+		items: [{
+			item: "iceandfire:jar_pixie"
+		},
+		{
+			item: "iceandfire:jar_pixie 1 2"
+		},
+		{
+			item: "iceandfire:jar_pixie 1 1"
+		},
+		{
+			item: "iceandfire:jar_pixie 1 3"
+		},
+		{
+			item: "iceandfire:jar_pixie 1 4"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "50b7e11a",
+		type: "choice",
+		table: 78
+	}]
+}

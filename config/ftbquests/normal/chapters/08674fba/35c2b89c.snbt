@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest401.name}",
+	icon: "advancedrocketry:suitworkstation",
+	x: 0.5d,
+	y: 5.333333333333333d,
+	text: [
+		"{bq.quest401.desc}"
+	],
+	dependencies: [
+		"c2c58124"
+	],
+	tasks: [{
+		uid: "e880d83b",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:suitworkstation"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "201a6162",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

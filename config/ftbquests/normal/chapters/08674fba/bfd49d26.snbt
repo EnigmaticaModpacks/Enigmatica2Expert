@@ -1,0 +1,70 @@
+{
+	title: "{bq.quest429.name}",
+	icon: "advancedrocketry:crystallizer",
+	x: 6.166666666666667d,
+	y: 2.8333333333333335d,
+	text: [
+		"{bq.quest429.desc}"
+	],
+	dependencies: [
+		"e8c6a755"
+	],
+	tasks: [{
+		uid: "4b3daf8d",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:crystallizer"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "98a10a41",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:iquartzcrucible 6"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "2e0dc436",
+		type: "item",
+		items: [{
+			item: "libvulpes:coil0 2 4"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "2bb14f9b",
+		type: "item",
+		items: [{
+			item: "libvulpes:forgepowerinput"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "987d86db",
+		type: "item",
+		items: [{
+			item: "libvulpes:hatch"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "653953a0",
+		type: "item",
+		items: [{
+			item: "libvulpes:hatch 1 1"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "6c7d2775",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

@@ -1,0 +1,34 @@
+{
+	title: "{bq.quest795.name}",
+	icon: {
+		id: "randomthings:timeinabottle",
+		tag: {
+			timeData: {}
+		}
+	},
+	x: -11.166666666666666d,
+	y: 5.833333333333333d,
+	text: [
+		"{bq.quest795.desc}"
+	],
+	dependencies: [
+		"dc869094"
+	],
+	tasks: [{
+		uid: "6458c4d9",
+		type: "item",
+		items: [{
+			id: "randomthings:timeinabottle",
+			tag: {
+				timeData: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "6c3c7f0d",
+		type: "item",
+		item: "randomthings:spectreilluminator"
+	}]
+}

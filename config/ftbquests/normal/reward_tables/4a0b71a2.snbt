@@ -1,0 +1,157 @@
+{
+	title: "{bq.quest48.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "tconstruct:shortbow",
+			tag: {
+				StatsOriginal: {
+					AttackSpeedMultiplier: 1.0f,
+					DrawSpeed: 1.0f,
+					MiningSpeed: 2.0f,
+					FreeModifiers: 3,
+					ProjectileBonusDamage: 0.0f,
+					Durability: 35,
+					HarvestLevel: 3,
+					Attack: 2.0f,
+					Range: 1.0f
+				},
+				Special: {
+					Categories: [
+						"tool",
+						"launcher"
+					]
+				},
+				Stats: {
+					AttackSpeedMultiplier: 1.0f,
+					DrawSpeed: 1.0f,
+					MiningSpeed: 2.0f,
+					FreeModifiers: 5,
+					ProjectileBonusDamage: 0.0f,
+					Durability: 35,
+					HarvestLevel: 3,
+					Attack: 2.0f,
+					Range: 1.0f
+				},
+				Modifiers: [{
+					identifier: "magical_modifier",
+					color: -131160,
+					level: 1,
+					magical_modifier: 1b
+				},
+				{
+					identifier: "brittle",
+					color: -131160,
+					level: 1
+				},
+				{
+					identifier: "toolleveling",
+					color: 16777215,
+					level: 1
+				}],
+				TinkerData: {
+					Materials: [
+						"xu_magical_wood",
+						"xu_magical_wood",
+						"string"
+					],
+					Modifiers: [
+						"toolleveling"
+					]
+				},
+				Traits: [
+					"magical_modifier",
+					"brittle",
+					"toolleveling"
+				]
+			},
+			ForgeCaps: {
+				"plustic:fruitsalad_cap": {
+					Items: [],
+					Size: 5
+				},
+				"plustic:": {
+					Items: [],
+					Size: 1
+				},
+				"plustic:musicofthespheres_cap": {
+					Items: [],
+					Size: 1
+				}
+			}
+		}
+	},
+	{
+		item: {
+			id: "tcomplement:sledge_hammer",
+			tag: {
+				StatsOriginal: {
+					AttackSpeedMultiplier: 1.0f,
+					MiningSpeed: 6.8f,
+					FreeModifiers: 3,
+					Durability: 631,
+					HarvestLevel: 3,
+					Attack: 3.5f
+				},
+				Special: {
+					Categories: [
+						"tool",
+						"weapon",
+						"harvest",
+						"aoe"
+					]
+				},
+				Stats: {
+					AttackSpeedMultiplier: 1.0f,
+					MiningSpeed: 6.8f,
+					FreeModifiers: 2,
+					Durability: 631,
+					HarvestLevel: 3,
+					Attack: 3.5f
+				},
+				Modifiers: [{
+					identifier: "dense",
+					color: -1852056,
+					level: 1
+				},
+				{
+					identifier: "toolleveling",
+					color: 16777215,
+					level: 1
+				}],
+				TinkerData: {
+					Materials: [
+						"bronze",
+						"bronze",
+						"bronze"
+					],
+					Modifiers: [
+						"toolleveling"
+					]
+				},
+				Traits: [
+					"dense",
+					"toolleveling"
+				]
+			},
+			ForgeCaps: {
+				"plustic:fruitsalad_cap": {
+					Items: [],
+					Size: 5
+				},
+				"plustic:": {
+					Items: [],
+					Size: 1
+				},
+				"plustic:musicofthespheres_cap": {
+					Items: [],
+					Size: 1
+				}
+			}
+		}
+	},
+	{
+		item: "minecraft:torch",
+		count: 32
+	}]
+}

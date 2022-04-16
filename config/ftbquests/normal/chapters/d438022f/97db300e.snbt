@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest1021.name}",
+	icon: "cyclicmagic:block_anvil",
+	x: -3.666666666666667d,
+	y: 16.833333333333332d,
+	text: [
+		"{bq.quest1021.desc}"
+	],
+	dependencies: [
+		"d5c22de0"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "723d498e",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:block_anvil"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "df33482c",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

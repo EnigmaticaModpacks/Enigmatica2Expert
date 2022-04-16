@@ -1,0 +1,21 @@
+{
+	title: "{bq.quest605.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "ma.prosperity"
+			}
+		},
+		count: 25
+	},
+	{
+		icon: "tconstruct:pattern 20",
+		item: "tconstruct:pattern",
+		count: 20
+	},
+	{
+		item: "tconstruct:book"
+	}]
+}

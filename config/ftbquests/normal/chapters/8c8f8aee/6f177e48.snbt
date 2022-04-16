@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest913.name}",
+	icon: "actuallyadditions:block_inputter",
+	x: -4.166666666666667d,
+	y: 5.333333333333333d,
+	text: [
+		"{bq.quest913.desc}"
+	],
+	dependencies: [
+		"03d4419e"
+	],
+	tasks: [{
+		uid: "95f57b4c",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_inputter"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "72f4daa3",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	title: "{bq.quest1061.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "quark:diamond_heart"
+	},
+	{
+		item: "endreborn:food_ender_flesh",
+		count: 10
+	},
+	{
+		item: "thaumcraft:loot_bag 1 1"
+	}]
+}

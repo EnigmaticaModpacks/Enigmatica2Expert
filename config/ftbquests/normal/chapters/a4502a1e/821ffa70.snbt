@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest333.name}",
+	icon: {
+		id: "extrautils2:machine",
+		tag: {
+			Type: "extrautils2:enchanter"
+		}
+	},
+	x: 3.8333333333333335d,
+	y: 5.0d,
+	text: [
+		"{bq.quest333.desc}"
+	],
+	dependencies: [
+		"29946b47"
+	],
+	tasks: [{
+		uid: "c57e1c34",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:enchanter"
+			}
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "ef3456ee",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

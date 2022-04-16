@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest137.name}",
+	icon: "industrialforegoing:tree_fluid_extractor",
+	x: -2.5d,
+	y: 1.0d,
+	text: [
+		"{bq.quest137.desc}"
+	],
+	dependencies: [
+		"da9eef13"
+	],
+	tasks: [{
+		uid: "8f97b273",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:tree_fluid_extractor"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "6935ba36",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

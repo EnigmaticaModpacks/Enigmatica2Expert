@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest788.name}",
+	icon: "actuallyadditions:item_tele_staff",
+	x: 5.0d,
+	y: 6.5d,
+	text: [
+		"{bq.quest788.desc}"
+	],
+	dependencies: [
+		"98a9cb2b"
+	],
+	tasks: [{
+		uid: "7398991b",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_tele_staff"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e39ac98b",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

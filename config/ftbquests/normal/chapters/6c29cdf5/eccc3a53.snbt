@@ -1,0 +1,36 @@
+{
+	title: "{bq.quest423.name}",
+	icon: {
+		id: "botania:goddesscharm",
+		tag: {}
+	},
+	x: 7.833333333333333d,
+	y: 3.8333333333333335d,
+	text: [
+		"{bq.quest423.desc}"
+	],
+	dependencies: [
+		"5672d99b",
+		"1c7263f8"
+	],
+	tasks: [{
+		uid: "62bc111e",
+		type: "item",
+		items: [{
+			id: "botania:goddesscharm",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3a8b3e04",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

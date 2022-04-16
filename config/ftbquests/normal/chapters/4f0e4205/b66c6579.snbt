@@ -1,0 +1,72 @@
+{
+	title: "{bq.quest261.name}",
+	icon: {
+		id: "simple_trophies:trophy",
+		tag: {
+			TrophyColorGreen: 209,
+			TrophyShowsTooltip: 1b,
+			TrophyVariant: "gold",
+			TrophyItem: {
+				Count: 1b,
+				id: "twilightforest:miniature_structure",
+				Damage: 0s
+			},
+			TrophyColorBlue: 0,
+			TrophyColorRed: 31,
+			TrophyName: "Twilight Forest Master Trophy§r"
+		}
+	},
+	x: 9.75d,
+	y: 2.25d,
+	text: [
+		"{bq.quest261.desc}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"3a3b705b",
+		"d658e2ba",
+		"6be282e4",
+		"f5163b70",
+		"9fe9e32e",
+		"14296664",
+		"95b739d8",
+		"1ae426b4",
+		"ea1707c5",
+		"d0bdab2e",
+		"38b0f204",
+		"7a3595e1",
+		"da09753d",
+		"9329a551",
+		"5956532f",
+		"b42dc050",
+		"dab92267"
+	],
+	size: 1.5d,
+	rewards: [{
+		uid: "e82ce946",
+		type: "item",
+		auto: "enabled",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 209,
+				TrophyShowsTooltip: 1b,
+				TrophyVariant: "gold",
+				TrophyItem: {
+					Count: 1b,
+					id: "twilightforest:miniature_structure",
+					Damage: 0s
+				},
+				TrophyColorBlue: 0,
+				TrophyColorRed: 31,
+				TrophyName: "Twilight Forest Master Trophy§r"
+			}
+		}
+	},
+	{
+		uid: "3b9db4d4",
+		type: "command",
+		auto: "invisible",
+		command: "/say §l@p§r has fully completed the §nTwilight Forest§r chapter!§r ```Congrats!```"
+	}]
+}

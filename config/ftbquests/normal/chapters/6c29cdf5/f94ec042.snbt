@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest375.name}",
+	icon: "botania:manaresource 1 5",
+	x: 9.166666666666666d,
+	y: 6.5d,
+	text: [
+		"{bq.quest375.desc}"
+	],
+	dependencies: [
+		"5672d99b",
+		"779733cd"
+	],
+	tasks: [{
+		uid: "59fc2f91",
+		type: "item",
+		items: [{
+			item: "botania:manaresource 1 5"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "d7e99ee4",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

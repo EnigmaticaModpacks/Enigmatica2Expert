@@ -1,0 +1,28 @@
+{
+	title: "{bq.quest55.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "tconstruct:excavator_head",
+			tag: {
+				Material: "ma.prudentium"
+			}
+		}
+	},
+	{
+		item: {
+			id: "tconstruct:excavator_head",
+			tag: {
+				Material: "nagascale"
+			}
+		}
+	},
+	{
+		item: {
+			id: "tconstruct:excavator_head",
+			tag: {
+				Material: "boron_nitride"
+			}
+		}
+	}]
+}

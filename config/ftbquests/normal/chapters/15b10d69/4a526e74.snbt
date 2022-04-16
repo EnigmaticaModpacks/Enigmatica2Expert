@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest138.name}",
+	icon: "industrialforegoing:latex_processing_unit",
+	x: -1.0d,
+	y: 1.0d,
+	text: [
+		"{bq.quest138.desc}"
+	],
+	dependencies: [
+		"5f555127"
+	],
+	tasks: [{
+		uid: "c68ba023",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:latex_processing_unit"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "ea7bfdb6",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

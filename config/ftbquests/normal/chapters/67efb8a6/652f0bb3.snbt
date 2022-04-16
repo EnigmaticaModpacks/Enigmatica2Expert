@@ -1,0 +1,44 @@
+{
+	title: "{bq.quest535.name}",
+	icon: {
+		id: "draconicevolution:wyvern_sword",
+		tag: {
+			DEUpgrades: {
+				attackDmg: 2b,
+				attackAOE: 2b,
+				rfCap: 2b
+			},
+			Energy: 16000000
+		}
+	},
+	x: 4.0d,
+	y: 12.0d,
+	text: [
+		"{bq.quest535.desc}"
+	],
+	dependencies: [
+		"64f8083b"
+	],
+	tasks: [{
+		uid: "eb45edd4",
+		type: "item",
+		items: [{
+			id: "draconicevolution:wyvern_sword",
+			tag: {
+				Energy: 2000000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "69e38d29",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest990.name}",
+	icon: "randomthings:igniter",
+	x: -9.5d,
+	y: 9.166666666666666d,
+	text: [
+		"{bq.quest990.desc}"
+	],
+	dependencies: [
+		"1e3231e9"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "ab745fca",
+		type: "item",
+		items: [{
+			item: "randomthings:igniter"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "2b28dc51",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

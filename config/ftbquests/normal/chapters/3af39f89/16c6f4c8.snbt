@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest878.name}",
+	icon: "thermallogistics:terminal_item",
+	x: 6.833333333333333d,
+	y: 2.6666666666666665d,
+	text: [
+		"{bq.quest878.desc}"
+	],
+	dependencies: [
+		"9c15c499"
+	],
+	tasks: [{
+		uid: "42091822",
+		type: "item",
+		items: [{
+			item: "thermallogistics:terminal_item"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ae29bf11",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

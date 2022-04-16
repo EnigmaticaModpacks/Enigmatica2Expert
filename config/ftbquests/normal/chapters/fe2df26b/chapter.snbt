@@ -1,0 +1,10 @@
+{
+	title: "{bq.chapter22.name}",
+	icon: "chisel:futura 1 2",
+	description: [
+		"{bq.chapter22.desc}"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

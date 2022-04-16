@@ -1,0 +1,26 @@
+{
+	title: "{bq.quest647.name}",
+	icon: "thaumcraft:smelter_thaumium",
+	x: 0.6666666666666666d,
+	y: 10.5d,
+	text: [
+		"{bq.quest647.desc}"
+	],
+	dependencies: [
+		"f85506a2"
+	],
+	tasks: [{
+		uid: "f15f93a7",
+		type: "item",
+		items: [{
+			item: "thaumcraft:smelter_thaumium"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d74174d5",
+		type: "choice",
+		table: 44
+	}]
+}

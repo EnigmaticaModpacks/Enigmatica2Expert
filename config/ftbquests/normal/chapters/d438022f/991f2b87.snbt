@@ -1,0 +1,43 @@
+{
+	title: "{bq.quest955.name}",
+	icon: "bibliocraft:paintingpress",
+	x: -11.166666666666666d,
+	y: 23.0d,
+	text: [
+		"{bq.quest955.desc}"
+	],
+	dependencies: [
+		"6eea845e"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "f28b0db2",
+		type: "item",
+		items: [{
+			item: "bibliocraft:paintingpress"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "bb78c6bf",
+		type: "item",
+		items: [{
+			id: "bibliocraft:paintingcanvas",
+			tag: {
+				blank: 1b
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "60bb7247",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "e34912b4",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

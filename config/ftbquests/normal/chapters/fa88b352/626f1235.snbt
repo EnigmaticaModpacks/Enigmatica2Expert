@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest502.name}",
+	icon: "nuclearcraft:alloy_furnace_idle",
+	x: 5.166666666666667d,
+	y: 7.5d,
+	text: [
+		"{bq.quest502.desc}"
+	],
+	dependencies: [
+		"a741066c",
+		"0bf36970",
+		"da8740b4"
+	],
+	tasks: [{
+		uid: "173fc17c",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:alloy_furnace_idle"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "53ca1ac3",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

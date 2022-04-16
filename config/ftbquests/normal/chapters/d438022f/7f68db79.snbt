@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest1057.name}",
+	icon: "randomthings:inventoryrerouter",
+	x: -14.666666666666666d,
+	y: 8.833333333333334d,
+	text: [
+		"{bq.quest1057.desc}"
+	],
+	dependencies: [
+		"dc869094"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "6fccf8a3",
+		type: "item",
+		items: [{
+			item: "randomthings:inventoryrerouter"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9a80ee8b",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

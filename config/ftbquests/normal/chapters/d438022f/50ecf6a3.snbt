@@ -1,0 +1,34 @@
+{
+	title: "{bq.quest963.name}",
+	icon: "darkutils:material",
+	x: -6.333333333333333d,
+	y: 23.5d,
+	text: [
+		"{bq.quest963.desc}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"37406152"
+	],
+	size: 1.3333333333333333d,
+	or_tasks: true,
+	tasks: [{
+		uid: "5cf2e684",
+		type: "item",
+		items: [{
+			item: "darkutils:material"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "bd39ed5c",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

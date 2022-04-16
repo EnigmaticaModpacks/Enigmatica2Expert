@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest971.name}",
+	icon: "darkutils:focus_sash",
+	x: -8.0d,
+	y: 23.333333333333332d,
+	text: [
+		"{bq.quest971.desc}"
+	],
+	dependencies: [
+		"50ecf6a3"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "7246104f",
+		type: "item",
+		items: [{
+			item: "darkutils:focus_sash"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a07ad49c",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

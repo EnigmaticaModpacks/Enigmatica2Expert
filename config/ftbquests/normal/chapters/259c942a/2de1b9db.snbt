@@ -1,0 +1,34 @@
+{
+	title: "{bq.quest301.name}",
+	icon: "immersivepetroleum:schematic",
+	x: 3.1666666666666665d,
+	y: 3.5d,
+	text: [
+		"{bq.quest301.desc}"
+	],
+	dependencies: [
+		"8c8d1535",
+		"b34aca62",
+		"862cd6dd",
+		"959882ea",
+		"4baae0d8"
+	],
+	tasks: [{
+		uid: "14de90c3",
+		type: "item",
+		items: [{
+			item: "immersivepetroleum:schematic"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "a5b8eac4",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "epic"
+			}
+		}
+	}]
+}

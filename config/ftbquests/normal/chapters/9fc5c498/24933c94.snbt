@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest584.name}",
+	icon: "enderio:block_vat",
+	x: 6.166666666666667d,
+	y: 5.166666666666667d,
+	text: [
+		"{bq.quest584.desc}"
+	],
+	dependencies: [
+		"0cce2fa6"
+	],
+	tasks: [{
+		uid: "26894147",
+		type: "item",
+		items: [{
+			item: "enderio:block_vat"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "1e7b01c7",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,28 @@
+{
+	title: "{bq.quest31.name}",
+	icon: "avaritia:infinity_bow",
+	x: 7.208333333333333d,
+	y: 9.708333333333332d,
+	text: [
+		"{bq.quest31.desc}"
+	],
+	dependencies: [
+		"51f94a83"
+	],
+	size: 1.25d,
+	tasks: [{
+		uid: "97101879",
+		type: "item",
+		items: [{
+			item: "avaritia:infinity_bow"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e2ae7f0e",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has obtained the Longbow of the Heavens!"
+	}]
+}

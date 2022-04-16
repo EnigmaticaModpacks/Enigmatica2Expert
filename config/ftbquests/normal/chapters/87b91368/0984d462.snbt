@@ -1,0 +1,36 @@
+{
+	title: "{bq.quest733.name}",
+	icon: "rats:rat_breeding_lantern",
+	x: -6.5d,
+	y: 4.0d,
+	text: [
+		"{bq.quest733.desc}"
+	],
+	dependencies: [
+		"47580ca1"
+	],
+	tasks: [{
+		uid: "f8ecc659",
+		type: "item",
+		items: [{
+			item: "rats:rat_breeding_lantern"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "fd2f3f7a",
+		type: "item",
+		item: "rats:rat_flute"
+	},
+	{
+		uid: "7710dc7a",
+		type: "item",
+		item: "rats:rat_sack"
+	},
+	{
+		uid: "5bd77efc",
+		type: "item",
+		item: "rats:block_of_cheese",
+		count: 10
+	}]
+}

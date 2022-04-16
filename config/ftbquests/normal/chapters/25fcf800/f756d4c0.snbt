@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest481.name}",
+	icon: "environmentaltech:void_ore_miner_cont_6",
+	x: 5.25d,
+	y: 11.0d,
+	text: [
+		"{bq.quest481.desc}"
+	],
+	dependencies: [
+		"07cc749e",
+		"79f2ded4"
+	],
+	tasks: [{
+		uid: "ee6eca9c",
+		type: "item",
+		items: [{
+			item: "environmentaltech:void_ore_miner_cont_6"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "3e5cdffd",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "epic"
+			}
+		}
+	}]
+}

@@ -1,0 +1,91 @@
+{
+	title: "{bq.quest285.name}",
+	icon: {
+		id: "forestry:ffarm",
+		tag: {
+			FarmBlock: 0
+		}
+	},
+	x: -0.8333333333333333d,
+	y: 3.5d,
+	text: [
+		"{bq.quest285.desc}"
+	],
+	dependencies: [
+		"d1b19bf0"
+	],
+	tasks: [{
+		uid: "ee885f21",
+		type: "item",
+		items: [{
+			id: "forestry:ffarm",
+			tag: {
+				FarmBlock: 0
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "7407a7f0",
+		type: "item",
+		items: [{
+			id: "forestry:ffarm",
+			Damage: 3s,
+			tag: {
+				FarmBlock: 0
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "d236388d",
+		type: "item",
+		items: [{
+			id: "forestry:ffarm",
+			Damage: 4s,
+			tag: {
+				FarmBlock: 0
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "f5b09944",
+		type: "item",
+		items: [{
+			id: "forestry:ffarm",
+			Damage: 5s,
+			tag: {
+				FarmBlock: 0
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "58ebe38c",
+		type: "item",
+		items: [{
+			id: "forestry:ffarm",
+			Damage: 2s,
+			tag: {
+				FarmBlock: 0
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "2e195515",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

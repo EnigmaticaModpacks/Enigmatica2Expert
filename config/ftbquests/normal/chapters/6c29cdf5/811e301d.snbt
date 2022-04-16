@@ -1,0 +1,39 @@
+{
+	title: "{bq.quest391.name}",
+	icon: {
+		id: "botania:specialflower",
+		tag: {
+			type: "munchdew"
+		}
+	},
+	x: 13.333333333333334d,
+	y: 3.6666666666666665d,
+	text: [
+		"{bq.quest391.desc}"
+	],
+	dependencies: [
+		"5672d99b",
+		"95ce8a09"
+	],
+	tasks: [{
+		uid: "72505b7c",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "munchdew"
+			}
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "95bbc2c5",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

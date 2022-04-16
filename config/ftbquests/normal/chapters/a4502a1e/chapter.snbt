@@ -1,0 +1,10 @@
+{
+	title: "{bq.chapter14.name}",
+	icon: "extrautils2:user",
+	description: [
+		"{bq.chapter14.desc}"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

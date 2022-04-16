@@ -1,0 +1,40 @@
+{
+	title: "{bq.quest72.name}",
+	icon: "ic2:te 1 50",
+	x: 5.833333333333333d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest72.desc}"
+	],
+	dependencies: [
+		"059b39c7"
+	],
+	tasks: [{
+		uid: "dc5c05d4",
+		type: "item",
+		items: [{
+			item: "ic2:te 1 50"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "4b210244",
+		type: "item",
+		items: [{
+			item: "ic2:fluid_cell"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4b3f794c",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

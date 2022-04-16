@@ -1,0 +1,21 @@
+{
+	title: "{bq.quest257.name}",
+	icon: "minecraft:torch",
+	x: -5.5d,
+	y: 5.0d,
+	text: [
+		"{bq.quest257.desc}"
+	],
+	dependencies: [
+		"f968d750"
+	],
+	tasks: [{
+		uid: "674e242b",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "884f3c82",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

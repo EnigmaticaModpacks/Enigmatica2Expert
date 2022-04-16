@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest278.name}",
+	icon: "forestry:squeezer",
+	x: -3.5d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest278.desc}"
+	],
+	dependencies: [
+		"8806b7fe"
+	],
+	tasks: [{
+		uid: "c573be64",
+		type: "item",
+		items: [{
+			item: "forestry:squeezer"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "2ff480ad",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

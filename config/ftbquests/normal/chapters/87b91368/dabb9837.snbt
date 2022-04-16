@@ -1,0 +1,25 @@
+{
+	title: "{bq.quest742.name}",
+	icon: "iceandfire:iceandfire.deathworm_egg 1 1",
+	x: 0.75d,
+	y: 1.25d,
+	text: [
+		"{bq.quest742.desc}"
+	],
+	dependencies: [
+		"e4f22972"
+	],
+	tasks: [{
+		uid: "efc8cea3",
+		type: "item",
+		items: [{
+			item: "iceandfire:iceandfire.deathworm_egg 1 1"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "84aef371",
+		type: "choice",
+		table: 79
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest663.name}",
+	icon: "thaumcraft:everfull_urn",
+	x: 7.0d,
+	y: 6.166666666666667d,
+	text: [
+		"{bq.quest663.desc}"
+	],
+	dependencies: [
+		"4510505c"
+	],
+	tasks: [{
+		uid: "eda85445",
+		type: "item",
+		items: [{
+			item: "thaumcraft:everfull_urn"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8da8e0ee",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

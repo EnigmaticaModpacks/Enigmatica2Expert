@@ -1,0 +1,10 @@
+{
+	title: "{bq.chapter21.name}",
+	icon: "minecraft:crafting_table",
+	description: [
+		"{bq.chapter21.desc}"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

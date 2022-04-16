@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest618.name}",
+	icon: {
+		id: "bloodmagic:blood_orb",
+		tag: {
+			orb: "bloodmagic:master"
+		}
+	},
+	x: 10.166666666666666d,
+	y: 4.5d,
+	text: [
+		"{bq.quest618.desc}"
+	],
+	dependencies: [
+		"4c883699"
+	],
+	tasks: [{
+		uid: "afad14da",
+		type: "item",
+		items: [{
+			id: "bloodmagic:blood_orb",
+			tag: {
+				orb: "bloodmagic:master"
+			}
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "1a463dc3",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,55 @@
+{
+	title: "{bq.quest420.name}",
+	icon: "botania:sparkupgrade",
+	x: 0.5d,
+	y: 9.166666666666666d,
+	text: [
+		"{bq.quest420.desc}"
+	],
+	dependencies: [
+		"5672d99b",
+		"dc0ff5c4"
+	],
+	tasks: [{
+		uid: "456ae640",
+		type: "item",
+		items: [{
+			item: "botania:sparkupgrade"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "6114953c",
+		type: "item",
+		items: [{
+			item: "botania:sparkupgrade 1 1"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "6d7aa522",
+		type: "item",
+		items: [{
+			item: "botania:sparkupgrade 1 2"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "34cc0a4c",
+		type: "item",
+		items: [{
+			item: "botania:sparkupgrade 1 3"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "517d2437",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,27 @@
+{
+	title: "{bq.quest708.name}",
+	icon: "rats:creative_cheese",
+	x: 1.1666666666666667d,
+	y: 2.833333333333334d,
+	text: [
+		"{bq.quest708.desc}"
+	],
+	dependencies: [
+		"a1377b51"
+	],
+	tasks: [{
+		uid: "e698abec",
+		type: "item",
+		items: [{
+			item: "rats:creative_cheese"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "790a4060",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has obtained the Creative Cheese!"
+	}]
+}

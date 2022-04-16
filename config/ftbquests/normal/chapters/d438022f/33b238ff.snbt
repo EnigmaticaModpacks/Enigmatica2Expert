@@ -1,0 +1,33 @@
+{
+	title: "{bq.quest1017.name}",
+	icon: "cyclicmagic:fire_starter",
+	x: -9.5d,
+	y: 19.166666666666668d,
+	text: [
+		"{bq.quest1017.desc}"
+	],
+	dependencies: [
+		"332e5e9e",
+		"113883dc"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "57990abc",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:fire_starter"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0806f8e0",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,49 @@
+{
+	title: "{bq.quest461.name}",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "creosote",
+			Amount: 1000
+		}
+	},
+	x: 3.625d,
+	y: 7.041666666666667d,
+	text: [
+		"{bq.quest461.desc}"
+	],
+	dependencies: [
+		"dabc815c"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "d6e09611",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "creosote",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "85b95b67",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "ic2creosote",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "49a59e22",
+		type: "choice",
+		table: 37
+	}]
+}

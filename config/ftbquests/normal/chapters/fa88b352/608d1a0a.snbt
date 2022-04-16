@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest521.name}",
+	icon: "nuclearcraft:fission_controller_new_fixed",
+	x: 7.833333333333333d,
+	y: 14.5d,
+	text: [
+		"{bq.quest521.desc}"
+	],
+	dependencies: [
+		"acab81f7",
+		"0bf36970",
+		"dc5e8809"
+	],
+	tasks: [{
+		uid: "0ca51628",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:fission_controller_new_fixed"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "263dd45a",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

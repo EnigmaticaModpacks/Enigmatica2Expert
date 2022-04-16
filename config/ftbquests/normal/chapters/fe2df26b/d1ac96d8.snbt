@@ -1,0 +1,50 @@
+{
+	title: "{bq.quest852.name}",
+	icon: "packagedauto:packager",
+	x: 5.5d,
+	y: 1.0d,
+	text: [
+		"{bq.quest852.desc}"
+	],
+	dependencies: [
+		"4bfcd69f"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "2f0e422c",
+		type: "item",
+		items: [{
+			item: "packagedauto:packager"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "67f53099",
+		type: "item",
+		items: [{
+			item: "packagedauto:encoder"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "e7ad9ac8",
+		type: "item",
+		items: [{
+			item: "packagedauto:unpackager"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "398c8a5b",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

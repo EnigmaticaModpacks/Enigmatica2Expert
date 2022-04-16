@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest624.name}",
+	icon: "bloodmagic:arcane_ashes",
+	x: 2.5d,
+	y: 5.5d,
+	text: [
+		"{bq.quest624.desc}"
+	],
+	dependencies: [
+		"54d286c4"
+	],
+	tasks: [{
+		uid: "a0982f17",
+		type: "item",
+		items: [{
+			item: "bloodmagic:arcane_ashes"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "2d723d62",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

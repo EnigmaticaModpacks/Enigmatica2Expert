@@ -1,0 +1,56 @@
+{
+	title: "{bq.quest18.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "rustic:cabinet",
+			tag: {
+				material: {
+					Count: 1b,
+					id: "forestry:planks.1",
+					Damage: 7s
+				}
+			}
+		},
+		count: 4
+	},
+	{
+		item: {
+			id: "rustic:cabinet",
+			tag: {
+				material: {
+					Count: 1b,
+					id: "extrautils2:ironwood_planks",
+					Damage: 0s
+				}
+			}
+		},
+		count: 4
+	},
+	{
+		item: {
+			id: "rustic:cabinet",
+			tag: {
+				material: {
+					Count: 1b,
+					id: "chisel:planks-dark-oak",
+					Damage: 5s
+				}
+			}
+		},
+		count: 4
+	},
+	{
+		item: {
+			id: "rustic:cabinet",
+			tag: {
+				material: {
+					Count: 1b,
+					id: "forestry:planks.fireproof.1",
+					Damage: 8s
+				}
+			}
+		},
+		count: 4
+	}]
+}

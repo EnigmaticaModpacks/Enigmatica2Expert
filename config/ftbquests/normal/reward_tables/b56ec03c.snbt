@@ -1,0 +1,25 @@
+{
+	title: "{bq.quest49.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "claybucket:claybucket 1 2"
+	},
+	{
+		item: {
+			id: "thermalexpansion:florb",
+			Damage: 1s,
+			tag: {
+				Fluid: "lava"
+			}
+		},
+		count: 5
+	},
+	{
+		item: {
+			id: "randomthings:soundpattern",
+			tag: {
+				sound: "nuclearcraft:player.geiger_tick"
+			}
+		}
+	}]
+}

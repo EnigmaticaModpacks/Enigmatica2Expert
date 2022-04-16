@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest571.name}",
+	icon: "enderio:block_combustion_generator",
+	x: 0.8333333333333333d,
+	y: 3.8333333333333335d,
+	text: [
+		"{bq.quest571.desc}"
+	],
+	dependencies: [
+		"8764db1e"
+	],
+	tasks: [{
+		uid: "ac5a6f3a",
+		type: "item",
+		items: [{
+			item: "enderio:block_combustion_generator"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8886a14d",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

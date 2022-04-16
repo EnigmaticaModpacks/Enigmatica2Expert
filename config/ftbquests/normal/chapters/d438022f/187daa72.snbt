@@ -1,0 +1,33 @@
+{
+	title: "{bq.quest1030.name}",
+	icon: "cyclicmagic:book_ender",
+	x: -2.6666666666666665d,
+	y: 20.5d,
+	text: [
+		"{bq.quest1030.desc}"
+	],
+	dependencies: [
+		"a6a64aad"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "54c7f312",
+		type: "item",
+		items: [{
+			id: "cyclicmagic:book_ender",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e118de93",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

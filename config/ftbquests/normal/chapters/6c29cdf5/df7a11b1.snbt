@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest424.name}",
+	icon: "botania:diviningrod",
+	x: 10.5d,
+	y: 3.8333333333333335d,
+	text: [
+		"{bq.quest424.desc}"
+	],
+	dependencies: [
+		"5672d99b",
+		"ebb7b7b1"
+	],
+	tasks: [{
+		uid: "1f23c389",
+		type: "item",
+		items: [{
+			item: "botania:diviningrod"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "5781cc5e",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

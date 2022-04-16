@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest44.name}",
+	icon: "rftools:creative_screen",
+	x: 8.291666666666666d,
+	y: 3.333333333333334d,
+	text: [
+		"{bq.quest44.desc}"
+	],
+	dependencies: [
+		"29812a25"
+	],
+	tasks: [{
+		uid: "e6b26eaa",
+		type: "item",
+		items: [{
+			item: "rftools:creative_screen"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "2e4f18fe",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has begun the Bragging Rights questline!"
+	},
+	{
+		uid: "af924976",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has obtained the Creative Screen!"
+	}]
+}

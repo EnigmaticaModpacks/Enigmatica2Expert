@@ -1,0 +1,35 @@
+{
+	title: "{bq.quest687.name}",
+	icon: "biomesoplenty:terrestrial_artifact",
+	x: 2.5d,
+	y: 7.0d,
+	text: [
+		"{bq.quest687.desc}"
+	],
+	dependencies: [
+		"b4bba5bb",
+		"a4305fb1",
+		"bebab91b",
+		"0ebc3d1d",
+		"98a9cb2b",
+		"5ef52760"
+	],
+	tasks: [{
+		uid: "1377fd81",
+		type: "item",
+		items: [{
+			item: "biomesoplenty:terrestrial_artifact"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "7a8dc41a",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "epic"
+			}
+		}
+	}]
+}

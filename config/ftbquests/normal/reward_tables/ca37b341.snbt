@@ -1,0 +1,14 @@
+{
+	title: "{bq.quest762.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "randomthings:floopouch"
+	},
+	{
+		item: "randomthings:floosign"
+	},
+	{
+		item: "minecraft:brick_block",
+		count: 32
+	}]
+}

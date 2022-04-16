@@ -1,0 +1,47 @@
+{
+	title: "{bq.quest383.name}",
+	icon: "botania:alfheimportal",
+	x: 7.833333333333333d,
+	y: 5.166666666666667d,
+	text: [
+		"{bq.quest383.desc}"
+	],
+	dependencies: [
+		"5672d99b",
+		"7d6c413b"
+	],
+	tasks: [{
+		uid: "aff6602f",
+		type: "item",
+		items: [{
+			item: "botania:alfheimportal"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "0b968996",
+		type: "item",
+		items: [{
+			item: "botania:livingwood 8"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "241cafae",
+		type: "item",
+		items: [{
+			item: "botania:livingwood 3 5"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "379498a7",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

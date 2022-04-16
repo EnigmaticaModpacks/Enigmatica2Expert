@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest826.name}",
+	icon: "bloodmagic:blood_rune 1 5",
+	x: 8.5d,
+	y: 7.166666666666667d,
+	text: [
+		"{bq.quest826.desc}"
+	],
+	dependencies: [
+		"ef0195ea"
+	],
+	tasks: [{
+		uid: "4e0d326f",
+		type: "item",
+		items: [{
+			item: "bloodmagic:blood_rune 1 5"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d832e733",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

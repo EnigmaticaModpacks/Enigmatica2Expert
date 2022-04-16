@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest659.name}",
+	icon: "thaumcraft:candle_white",
+	x: 3.3333333333333335d,
+	y: 9.166666666666666d,
+	text: [
+		"{bq.quest659.desc}"
+	],
+	dependencies: [
+		"38a388cd"
+	],
+	tasks: [{
+		uid: "33a6b741",
+		type: "item",
+		items: [{
+			item: "thaumcraft:candle_white"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d54c8496",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

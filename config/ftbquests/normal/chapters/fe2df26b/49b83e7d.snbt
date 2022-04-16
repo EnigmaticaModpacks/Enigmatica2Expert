@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest850.name}",
+	icon: "threng:machine 1 4",
+	x: -0.5d,
+	y: 4.0d,
+	text: [
+		"{bq.quest850.desc}"
+	],
+	dependencies: [
+		"b6524265"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "b03d53ce",
+		type: "item",
+		items: [{
+			item: "threng:machine 1 4"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "70d3a07c",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

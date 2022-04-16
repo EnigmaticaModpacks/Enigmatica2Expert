@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest586.name}",
+	icon: "enderio:block_alloy_smelter",
+	x: 6.166666666666667d,
+	y: 3.8333333333333335d,
+	text: [
+		"{bq.quest586.desc}"
+	],
+	dependencies: [
+		"0cce2fa6"
+	],
+	tasks: [{
+		uid: "5118782b",
+		type: "item",
+		items: [{
+			item: "enderio:block_alloy_smelter"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "82433f7a",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "epic"
+			}
+		}
+	}]
+}

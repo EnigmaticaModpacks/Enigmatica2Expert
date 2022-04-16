@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest737.name}",
+	icon: "animania:cooked_prime_beef",
+	x: 2.0d,
+	y: -1.25d,
+	text: [
+		"{bq.quest737.desc}"
+	],
+	dependencies: [
+		"dcb947b4"
+	],
+	tasks: [{
+		uid: "7406acf6",
+		type: "item",
+		items: [{
+			item: "animania:cooked_prime_beef"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0c67e91d",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

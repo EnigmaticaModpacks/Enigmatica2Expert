@@ -1,0 +1,33 @@
+{
+	title: "{bq.quest1035.name}",
+	icon: "cyclicmagic:glove_climb",
+	x: -2.6666666666666665d,
+	y: 16.833333333333332d,
+	text: [
+		"{bq.quest1035.desc}"
+	],
+	dependencies: [
+		"d5c22de0"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "066fd2c7",
+		type: "item",
+		items: [{
+			id: "cyclicmagic:glove_climb",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8aadedf5",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

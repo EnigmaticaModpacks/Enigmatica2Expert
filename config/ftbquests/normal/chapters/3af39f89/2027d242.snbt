@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest237.name}",
+	icon: "thermalfoundation:material 1 866",
+	x: 13.333333333333334d,
+	y: 5.666666666666667d,
+	text: [
+		"{bq.quest237.desc}"
+	],
+	dependencies: [
+		"7d9c6e00"
+	],
+	tasks: [{
+		uid: "8f43d17b",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 866"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "254f6f33",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

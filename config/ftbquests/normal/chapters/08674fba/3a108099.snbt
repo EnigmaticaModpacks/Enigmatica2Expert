@@ -1,0 +1,90 @@
+{
+	title: "{bq.quest1043.name}",
+	icon: {
+		id: "simple_trophies:trophy",
+		tag: {
+			TrophyColorGreen: 222,
+			TrophyShowsTooltip: 1b,
+			TrophyVariant: "gold",
+			TrophyItem: {
+				Count: 1b,
+				id: "libvulpes:elitemotor",
+				Damage: 0s
+			},
+			TrophyColorBlue: 146,
+			TrophyColorRed: 152,
+			TrophyName: "§bRocketry Master Trophy§r"
+		}
+	},
+	x: 0.44999999999999996d,
+	y: 7.949999999999999d,
+	text: [
+		"{bq.quest1043.desc}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"331bec9a",
+		"e7f8d37c",
+		"2a1a27df",
+		"dc1e6896",
+		"39e02dec",
+		"e9fa52b4",
+		"e898f997",
+		"1f580d88",
+		"bf9ba1c8",
+		"d25f75cc",
+		"e8c6a755",
+		"b045c5d0",
+		"5ea60ffb",
+		"35c2b89c",
+		"37b78ee9",
+		"234a1395",
+		"9e5d9302",
+		"c2c58124",
+		"c405cbe7",
+		"3db2611b",
+		"218dde60",
+		"bf2b9206",
+		"ec0657e8",
+		"502a1c5a",
+		"e41ecb2e",
+		"bfd49d26",
+		"8b514522",
+		"7df7e302",
+		"6e40dbf6",
+		"b8d658ac",
+		"091109aa",
+		"0fa026dc",
+		"5ab2270f",
+		"424fce30",
+		"b302e7bd"
+	],
+	size: 1.5d,
+	rewards: [{
+		uid: "5aac5526",
+		type: "item",
+		auto: "enabled",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 222,
+				TrophyShowsTooltip: 1b,
+				TrophyVariant: "gold",
+				TrophyItem: {
+					Count: 1b,
+					id: "libvulpes:elitemotor",
+					Damage: 0s
+				},
+				TrophyColorBlue: 146,
+				TrophyColorRed: 152,
+				TrophyName: "§bRocketry Master Trophy§r"
+			}
+		}
+	},
+	{
+		uid: "4a3dc345",
+		type: "command",
+		auto: "invisible",
+		command: "/say §l@p§r has fully completed the §n§bAdvanced Rocketry§r chapter!§r ```Congrats!```"
+	}]
+}

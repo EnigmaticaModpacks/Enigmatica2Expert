@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest131.name}",
+	icon: "actuallyadditions:item_misc 1 23",
+	x: -0.5d,
+	y: 3.5d,
+	text: [
+		"{bq.quest131.desc}"
+	],
+	dependencies: [
+		"f72762fb"
+	],
+	tasks: [{
+		uid: "4e608608",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_misc 1 23"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "93ada445",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

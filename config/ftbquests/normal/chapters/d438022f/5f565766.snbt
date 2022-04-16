@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest961.name}",
+	icon: "rustic:honeycomb",
+	x: -19.333333333333332d,
+	y: 22.166666666666668d,
+	text: [
+		"{bq.quest961.desc}"
+	],
+	dependencies: [
+		"3ecc3fbe"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "c612ca9c",
+		type: "item",
+		items: [{
+			item: "rustic:honeycomb"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "df912f16",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

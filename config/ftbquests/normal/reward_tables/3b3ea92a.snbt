@@ -1,0 +1,16 @@
+{
+	title: "{bq.quest726.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "storagedrawers:upgrade_storage 1 1",
+		count: 4
+	},
+	{
+		item: "ironchest:iron_chest 1 1",
+		count: 4
+	},
+	{
+		item: "tconstruct:fancy_frame 1 5",
+		count: 32
+	}]
+}

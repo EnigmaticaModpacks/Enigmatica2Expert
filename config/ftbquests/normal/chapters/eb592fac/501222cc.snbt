@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest903.name}",
+	icon: "rftoolsdim:empty_dimension_tab",
+	x: 5.833333333333333d,
+	y: -0.6666666666666667d,
+	text: [
+		"{bq.quest903.desc}"
+	],
+	dependencies: [
+		"a1377b51"
+	],
+	tasks: [{
+		uid: "5ec4e091",
+		type: "item",
+		items: [{
+			item: "rftoolsdim:empty_dimension_tab"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "887c896b",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

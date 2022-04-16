@@ -1,0 +1,62 @@
+{
+	title: "{bq.quest814.name}",
+	icon: "thaumcraft:void_robe_helm",
+	x: 16.458333333333336d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest814.desc}"
+	],
+	dependencies: [
+		"537d4079"
+	],
+	tasks: [{
+		uid: "de5144af",
+		type: "item",
+		items: [{
+			item: "thaumcraft:void_robe_helm"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "4ebd46f3",
+		type: "item",
+		items: [{
+			item: "thaumcraft:void_robe_chest"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "67113af2",
+		type: "item",
+		items: [{
+			item: "thaumcraft:void_robe_legs"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "5f89c684",
+		type: "item",
+		items: [{
+			id: "thaumicaugmentation:void_boots",
+			tag: {
+				color: 6961280
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b484780d",
+		type: "choice",
+		table: 106
+	},
+	{
+		uid: "e5060bfd",
+		type: "command",
+		auto: "invisible",
+		command: "gamestage silentadd @p armor_void_robe"
+	}]
+}

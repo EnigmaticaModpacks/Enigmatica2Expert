@@ -1,0 +1,51 @@
+{
+	title: "{bq.quest917.name}",
+	icon: {
+		id: "immersiveengineering:graphite_electrode",
+		tag: {
+			Unbreakable: 1,
+			display: {
+				Lore: [
+					"Reinforced with Titanium Iridium Alloy"
+				],
+				Name: "Unbreakable Graphite Electrode"
+			}
+		}
+	},
+	x: 6.0d,
+	y: 3.5d,
+	text: [
+		"{bq.quest917.desc}"
+	],
+	dependencies: [
+		"8e2ee44a"
+	],
+	tasks: [{
+		uid: "24ef8b38",
+		type: "item",
+		items: [{
+			id: "immersiveengineering:graphite_electrode",
+			tag: {
+				Unbreakable: 1,
+				display: {
+					Lore: [
+						"Reinforced with Titanium Iridium Alloy"
+					],
+					Name: "Unbreakable Graphite Electrode"
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0f4c08c2",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "epic"
+			}
+		}
+	}]
+}

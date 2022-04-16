@@ -1,0 +1,73 @@
+{
+	title: "{bq.quest18.name}",
+	icon: "tconstruct:smeltery_controller",
+	x: -0.875d,
+	y: 2.0d,
+	text: [
+		"{bq.quest18.desc}"
+	],
+	dependencies: [
+		"d866b24e"
+	],
+	tasks: [{
+		uid: "89d15fde",
+		type: "item",
+		items: [{
+			item: "tconstruct:smeltery_controller"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "d8b14d14",
+		type: "item",
+		items: [{
+			item: "tconstruct:seared_tank"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "390ea917",
+		type: "item",
+		items: [{
+			item: "tconstruct:seared 2 3"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "d0ed978c",
+		type: "item",
+		items: [{
+			item: "tconstruct:smeltery_io"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "0c8abda3",
+		type: "item",
+		items: [{
+			item: "tconstruct:faucet"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "cf5bc2a4",
+		type: "item",
+		items: [{
+			item: "tconstruct:casting"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "dc8b53b4",
+		type: "item",
+		items: [{
+			item: "minecraft:clay_ball 2"
+		}],
+		count: 2L
+	}],
+	rewards: [{
+		uid: "ef07995b",
+		type: "choice",
+		table: 12
+	}]
+}

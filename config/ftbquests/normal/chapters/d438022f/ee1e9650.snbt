@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest1019.name}",
+	icon: "cyclicmagic:block_miner_smart",
+	x: -15.666666666666668d,
+	y: 21.833333333333332d,
+	text: [
+		"{bq.quest1019.desc}"
+	],
+	dependencies: [
+		"727feb19"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "fb013900",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:block_miner_smart"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "355bf480",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

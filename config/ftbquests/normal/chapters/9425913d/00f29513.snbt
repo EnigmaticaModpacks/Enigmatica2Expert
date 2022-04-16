@@ -1,0 +1,42 @@
+{
+	title: "{bq.quest6.name}",
+	icon: "immersiveengineering:stone_decoration",
+	x: 5.5d,
+	y: 0.5d,
+	text: [
+		"{bq.quest6.desc}"
+	],
+	dependencies: [
+		"90536e42"
+	],
+	tasks: [{
+		uid: "8755d5a4",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:stone_decoration"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "e5ec1c33",
+		type: "item",
+		item: {
+			id: "thermalexpansion:tank",
+			tag: {
+				RSControl: 0b,
+				Level: 0b
+			}
+		}
+	},
+	{
+		uid: "f445171e",
+		type: "item",
+		item: "immersiveengineering:metal_device0 1 5"
+	},
+	{
+		uid: "576b21e4",
+		type: "item",
+		item: "thermalfoundation:material 1 32",
+		count: 32
+	}]
+}

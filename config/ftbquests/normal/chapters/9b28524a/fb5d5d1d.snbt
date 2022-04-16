@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest632.name}",
+	icon: "bloodmagic:ritual_reader",
+	x: 5.0d,
+	y: 0.5d,
+	text: [
+		"{bq.quest632.desc}"
+	],
+	dependencies: [
+		"5eb2c3ea"
+	],
+	tasks: [{
+		uid: "5d7b964c",
+		type: "item",
+		items: [{
+			item: "bloodmagic:ritual_reader"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8de943aa",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

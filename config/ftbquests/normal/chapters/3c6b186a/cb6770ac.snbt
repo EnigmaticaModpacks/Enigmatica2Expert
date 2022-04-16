@@ -1,0 +1,76 @@
+{
+	title: "{bq.quest779.name}",
+	icon: {
+		id: "ic2:nano_chestplate",
+		tag: {
+			charge: 1000000.0d
+		}
+	},
+	x: 5.833333333333333d,
+	y: 4.833333333333333d,
+	text: [
+		"{bq.quest779.desc}"
+	],
+	dependencies: [
+		"d1c08d01"
+	],
+	tasks: [{
+		uid: "3055fbb0",
+		type: "item",
+		items: [{
+			id: "ic2:nano_helmet",
+			tag: {
+				charge: 1000000.0d
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "72e331b1",
+		type: "item",
+		items: [{
+			id: "ic2:nano_chestplate",
+			tag: {
+				charge: 1000000.0d
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "aa8cfea1",
+		type: "item",
+		items: [{
+			id: "ic2:nano_leggings",
+			tag: {
+				charge: 1000000.0d
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "cb1b2993",
+		type: "item",
+		items: [{
+			id: "ic2:nano_boots",
+			tag: {
+				charge: 1000000.0d
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0cb012bf",
+		type: "choice",
+		table: 92
+	},
+	{
+		uid: "c8675d76",
+		type: "command",
+		auto: "invisible",
+		command: "gamestage silentadd @p armor_nano"
+	}]
+}

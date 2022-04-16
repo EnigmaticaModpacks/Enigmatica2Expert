@@ -1,0 +1,59 @@
+{
+	title: "{bq.quest454.name}",
+	icon: "enderio:item_stellar_alloy_chestplate",
+	x: 10.166666666666666d,
+	y: 6.5d,
+	text: [
+		"{bq.quest454.desc}"
+	],
+	dependencies: [
+		"c1453b27"
+	],
+	tasks: [{
+		uid: "bc7af1ec",
+		type: "item",
+		items: [{
+			item: "enderio:item_stellar_alloy_helmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "b72b5e0c",
+		type: "item",
+		items: [{
+			item: "enderio:item_stellar_alloy_chestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "8d787e46",
+		type: "item",
+		items: [{
+			item: "enderio:item_stellar_alloy_leggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "42091b51",
+		type: "item",
+		items: [{
+			item: "enderio:item_stellar_alloy_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "771b779e",
+		type: "choice",
+		table: 36
+	},
+	{
+		uid: "488650f6",
+		type: "command",
+		auto: "invisible",
+		command: "gamestage silentadd @p armor_stellar"
+	}]
+}

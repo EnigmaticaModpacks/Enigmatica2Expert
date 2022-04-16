@@ -1,0 +1,33 @@
+{
+	title: "{bq.quest61.name}",
+	icon: {
+		id: "tconstruct:sharpening_kit",
+		tag: {
+			Material: "chaotic_metal"
+		}
+	},
+	x: 18.625d,
+	y: 3.5d,
+	text: [
+		"{bq.quest61.desc}"
+	],
+	dependencies: [
+		"14611430"
+	],
+	tasks: [{
+		uid: "e95d989e",
+		type: "item",
+		items: [{
+			id: "tconstruct:sharpening_kit",
+			tag: {
+				Material: "chaotic_metal"
+			}
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "2be8b4de",
+		type: "choice",
+		table: 30
+	}]
+}

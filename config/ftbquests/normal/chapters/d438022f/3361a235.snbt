@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest1011.name}",
+	icon: "cyclicmagic:block_fishing",
+	x: -14.666666666666666d,
+	y: 14.166666666666666d,
+	text: [
+		"{bq.quest1011.desc}"
+	],
+	dependencies: [
+		"d8284260"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "730189d6",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:block_fishing"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "70ff7c0c",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

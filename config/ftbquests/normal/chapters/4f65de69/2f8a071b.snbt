@@ -1,0 +1,26 @@
+{
+	title: "{bq.quest119.name}",
+	icon: "thermalfoundation:material 1 130",
+	x: 5.125d,
+	y: 2.0d,
+	text: [
+		"{bq.quest119.desc}"
+	],
+	dependencies: [
+		"dabc815c"
+	],
+	tasks: [{
+		uid: "6a1c92e7",
+		type: "item",
+		items: [{
+			item: "iceandfire:silver_ingot"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9c1c96ab",
+		type: "choice",
+		table: 31
+	}]
+}

@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest620.name}",
+	icon: {
+		id: "bloodmagic:blood_orb",
+		tag: {
+			orb: "bloodmagic:archmage"
+		}
+	},
+	x: 11.833333333333334d,
+	y: 4.5d,
+	text: [
+		"{bq.quest620.desc}"
+	],
+	dependencies: [
+		"3331d611"
+	],
+	tasks: [{
+		uid: "81a8f233",
+		type: "item",
+		items: [{
+			id: "bloodmagic:blood_orb",
+			tag: {
+				orb: "bloodmagic:archmage"
+			}
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "e6210afd",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

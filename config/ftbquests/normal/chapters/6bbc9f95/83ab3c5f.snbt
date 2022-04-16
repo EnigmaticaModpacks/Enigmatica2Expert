@@ -1,0 +1,26 @@
+{
+	title: "{bq.quest675.name}",
+	icon: "thaumcraft:ingot 1 1",
+	x: 13.833333333333334d,
+	y: 2.5d,
+	text: [
+		"{bq.quest675.desc}"
+	],
+	dependencies: [
+		"baa9431f"
+	],
+	tasks: [{
+		uid: "280bf15c",
+		type: "item",
+		items: [{
+			item: "thaumcraft:ingot 1 1"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "2e474658",
+		type: "choice",
+		table: 60
+	}]
+}

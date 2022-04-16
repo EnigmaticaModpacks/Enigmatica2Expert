@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest936.name}",
+	icon: "rats:purifying_liquid",
+	x: -0.5d,
+	y: 3.75d,
+	text: [
+		"{bq.quest936.desc}"
+	],
+	dependencies: [
+		"27ad9d1e"
+	],
+	tasks: [{
+		uid: "e7678a77",
+		type: "item",
+		items: [{
+			item: "rats:purifying_liquid"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "972e4894",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

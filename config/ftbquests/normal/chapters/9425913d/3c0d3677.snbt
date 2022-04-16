@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest66.name}",
+	icon: "deepmoblearning:soot_covered_plate",
+	x: 11.5d,
+	y: 5.5d,
+	text: [
+		"{bq.quest66.desc}"
+	],
+	dependencies: [
+		"5672d99b"
+	],
+	tasks: [{
+		uid: "f66967d0",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:soot_covered_plate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "1657b90e",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

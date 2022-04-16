@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest895.name}",
+	icon: "industrialforegoing:straw",
+	x: 1.0d,
+	y: -0.04166666666666663d,
+	text: [
+		"{bq.quest895.desc}"
+	],
+	dependencies: [
+		"0060934f"
+	],
+	size: 0.8333333333333334d,
+	tasks: [{
+		uid: "20bc42cd",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:straw"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "1c17dff0",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

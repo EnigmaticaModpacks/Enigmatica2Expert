@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest657.name}",
+	icon: "thaumcraft:fabric",
+	x: 3.3333333333333335d,
+	y: 6.166666666666667d,
+	text: [
+		"{bq.quest657.desc}"
+	],
+	dependencies: [
+		"4510505c"
+	],
+	tasks: [{
+		uid: "05a7354e",
+		type: "item",
+		items: [{
+			item: "thaumcraft:fabric"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "593fdad0",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,28 @@
+{
+	title: "{bq.quest879.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "thermalexpansion:satchel",
+			Damage: 2s,
+			tag: {
+				Accessible: 1b
+			}
+		}
+	},
+	{
+		item: {
+			id: "thermalexpansion:reservoir",
+			Damage: 3s,
+			tag: {}
+		}
+	},
+	{
+		item: {
+			id: "thermalexpansion:cache",
+			tag: {
+				Level: 4b
+			}
+		}
+	}]
+}

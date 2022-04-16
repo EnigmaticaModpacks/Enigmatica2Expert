@@ -1,0 +1,35 @@
+{
+	title: "{bq.quest50.name}",
+	icon: "minecraft:log",
+	x: -5.5d,
+	y: 3.5d,
+	text: [
+		"{bq.quest50.desc}"
+	],
+	dependencies: [
+		"fc892a79"
+	],
+	tasks: [{
+		uid: "bf70fb6a",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any logWood"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "logWood"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "53e948ba",
+		type: "choice",
+		table: 22
+	}]
+}

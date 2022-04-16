@@ -1,0 +1,45 @@
+{
+	title: "{bq.quest763.name}",
+	icon: "mctsmelteryio:machine 1 1",
+	x: -0.875d,
+	y: 0.5d,
+	text: [
+		"{bq.quest763.desc}"
+	],
+	dependencies: [
+		"65ffe0b8"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "dce89b2c",
+		type: "item",
+		items: [{
+			item: "mctsmelteryio:machine 1 1"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "ac31c9f0",
+		type: "item",
+		items: [{
+			item: "mctsmelteryio:upgrade 1 1"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "56be870d",
+		type: "item",
+		items: [{
+			item: "minecraft:snowball 8"
+		}],
+		count: 8L,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "6bac4165",
+		type: "choice",
+		table: 85
+	}]
+}

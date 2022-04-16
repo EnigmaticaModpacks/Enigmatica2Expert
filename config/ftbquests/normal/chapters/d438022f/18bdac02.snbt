@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest976.name}",
+	icon: "cyclicmagic:block_enchanter",
+	x: -8.0d,
+	y: 14.166666666666666d,
+	text: [
+		"{bq.quest976.desc}"
+	],
+	dependencies: [
+		"5966422c"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "df73cda4",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:block_enchanter"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9004f141",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

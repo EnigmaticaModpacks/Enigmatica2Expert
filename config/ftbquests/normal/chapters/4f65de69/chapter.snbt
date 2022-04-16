@@ -1,0 +1,10 @@
+{
+	title: "{bq.chapter0.name}",
+	icon: "thermalexpansion:satchel",
+	description: [
+		"{bq.chapter0.desc}"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

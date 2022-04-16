@@ -1,0 +1,28 @@
+{
+	title: "{bq.quest621.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "conarm:chest_core",
+			tag: {
+				Material: "flint"
+			}
+		}
+	},
+	{
+		item: {
+			id: "conarm:armor_plate",
+			tag: {
+				Material: "bone"
+			}
+		}
+	},
+	{
+		item: {
+			id: "conarm:armor_trim",
+			tag: {
+				Material: "palis_crystal"
+			}
+		}
+	}]
+}

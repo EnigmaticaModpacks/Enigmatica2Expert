@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest1032.name}",
+	icon: "cyclicmagic:tool_warp_spawn",
+	x: -4.666666666666667d,
+	y: 16.833333333333332d,
+	text: [
+		"{bq.quest1032.desc}"
+	],
+	dependencies: [
+		"d5c22de0"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "769b6504",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:tool_warp_spawn"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3325c192",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

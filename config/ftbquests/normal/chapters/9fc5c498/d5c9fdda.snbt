@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest569.name}",
+	icon: "enderio:item_basic_capacitor 1 1",
+	x: 2.166666666666667d,
+	y: 3.8333333333333335d,
+	text: [
+		"{bq.quest569.desc}"
+	],
+	dependencies: [
+		"3712b4f9"
+	],
+	tasks: [{
+		uid: "f7900e83",
+		type: "item",
+		items: [{
+			item: "enderio:item_basic_capacitor 1 1"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "55a1949e",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

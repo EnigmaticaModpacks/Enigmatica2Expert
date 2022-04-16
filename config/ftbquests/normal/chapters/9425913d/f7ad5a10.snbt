@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest564.name}",
+	icon: "enderio:item_material",
+	x: 5.5d,
+	y: 5.5d,
+	text: [
+		"{bq.quest564.desc}"
+	],
+	dependencies: [
+		"bd7fc30c"
+	],
+	tasks: [{
+		uid: "f143dd88",
+		type: "item",
+		items: [{
+			item: "enderio:item_material"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "b6a4f3d5",
+		type: "item",
+		item: "enderio:item_material"
+	},
+	{
+		uid: "7044d8a4",
+		type: "item",
+		item: "minecraft:flint_and_steel"
+	}]
+}

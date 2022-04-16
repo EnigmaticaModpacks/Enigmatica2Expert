@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest297.name}",
+	icon: "immersiveengineering:metal_decoration0 1 5",
+	x: 1.5d,
+	y: 3.5d,
+	text: [
+		"{bq.quest297.desc}"
+	],
+	dependencies: [
+		"8c8d1535"
+	],
+	tasks: [{
+		uid: "3dc7a18c",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 5"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "4fffc809",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

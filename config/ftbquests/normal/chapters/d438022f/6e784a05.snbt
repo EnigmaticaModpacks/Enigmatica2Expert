@@ -1,0 +1,40 @@
+{
+	title: "{bq.quest972.name}",
+	icon: {
+		id: "darkutils:charm_null",
+		tag: {
+			ItemInventory: []
+		}
+	},
+	x: -7.833333333333334d,
+	y: 24.166666666666668d,
+	text: [
+		"{bq.quest972.desc}"
+	],
+	dependencies: [
+		"50ecf6a3"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "43e76d0d",
+		type: "item",
+		items: [{
+			id: "darkutils:charm_null",
+			tag: {
+				ItemInventory: []
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b272dfe3",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,21 @@
+{
+	title: "{bq.quest1051.name}",
+	icon: "immersivepetroleum:upgrades 1 2",
+	x: 1.5d,
+	y: -0.5d,
+	text: [
+		"{bq.quest1051.desc}"
+	],
+	dependencies: [
+		"862cd6dd"
+	],
+	tasks: [{
+		uid: "6b0f78e5",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "a6146c96",
+		type: "xp_levels",
+		xp_levels: 4
+	}]
+}

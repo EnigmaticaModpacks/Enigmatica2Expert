@@ -1,0 +1,12 @@
+{
+	title: "{bq.quest11.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "mekanism:speedupgrade",
+		count: 8
+	},
+	{
+		item: "mekanism:energyupgrade",
+		count: 8
+	}]
+}

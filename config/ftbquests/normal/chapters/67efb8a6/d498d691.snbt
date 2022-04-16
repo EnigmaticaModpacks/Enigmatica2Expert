@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest527.name}",
+	icon: "draconicevolution:dragon_heart",
+	x: 4.5d,
+	y: 0.75d,
+	text: [
+		"{bq.quest527.desc}"
+	],
+	dependencies: [
+		"91dd82e5"
+	],
+	tasks: [{
+		uid: "c4a7afe2",
+		type: "item",
+		items: [{
+			item: "draconicevolution:dragon_heart"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "e5b52192",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

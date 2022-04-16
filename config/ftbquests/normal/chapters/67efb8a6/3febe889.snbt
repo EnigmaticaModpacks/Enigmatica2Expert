@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest530.name}",
+	icon: "draconicevolution:ender_energy_manipulator",
+	x: 2.5d,
+	y: 7.5d,
+	text: [
+		"{bq.quest530.desc}"
+	],
+	dependencies: [
+		"a9d391e5"
+	],
+	tasks: [{
+		uid: "a93d5813",
+		type: "item",
+		items: [{
+			item: "draconicevolution:ender_energy_manipulator"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f99c2c63",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

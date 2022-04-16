@@ -1,0 +1,76 @@
+{
+	title: "{bq.quest780.name}",
+	icon: {
+		id: "redstonearsenal:armor.plate_flux",
+		tag: {
+			Energy: 0
+		}
+	},
+	x: 4.5d,
+	y: 2.6666666666666665d,
+	text: [
+		"{bq.quest780.desc}"
+	],
+	dependencies: [
+		"9c15c499"
+	],
+	tasks: [{
+		uid: "4f0fb7b9",
+		type: "item",
+		items: [{
+			id: "redstonearsenal:armor.helmet_flux",
+			tag: {
+				Energy: 800000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "b7899bf0",
+		type: "item",
+		items: [{
+			id: "redstonearsenal:armor.plate_flux",
+			tag: {
+				Energy: 800000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "86617cc3",
+		type: "item",
+		items: [{
+			id: "redstonearsenal:armor.legs_flux",
+			tag: {
+				Energy: 800000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "1b5c7026",
+		type: "item",
+		items: [{
+			id: "redstonearsenal:armor.boots_flux",
+			tag: {
+				Energy: 800000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "6cf0f056",
+		type: "choice",
+		table: 93
+	},
+	{
+		uid: "6fcaa727",
+		type: "command",
+		auto: "invisible",
+		command: "gamestage silentadd @p armor_flux"
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest70.name}",
+	icon: "ic2:resource 1 13",
+	x: 9.833333333333334d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest70.desc}"
+	],
+	dependencies: [
+		"c26c77d4",
+		"059b39c7"
+	],
+	tasks: [{
+		uid: "fac5191d",
+		type: "item",
+		items: [{
+			item: "ic2:resource 1 13"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "c72c5c17",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

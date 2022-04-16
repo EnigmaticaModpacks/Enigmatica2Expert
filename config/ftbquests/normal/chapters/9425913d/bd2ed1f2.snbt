@@ -1,0 +1,45 @@
+{
+	title: "{bq.quest11.name}",
+	icon: "mekanism:basicblock 1 8",
+	x: 5.5d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest11.desc}"
+	],
+	dependencies: [
+		"00f29513"
+	],
+	tasks: [{
+		uid: "41584a1f",
+		type: "item",
+		items: [{
+			item: "mekanism:basicblock 1 8"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "e1221540",
+		type: "choice",
+		table: 9
+	},
+	{
+		uid: "fd39c163",
+		type: "item",
+		item: "mekanism:basicblock 1 8"
+	},
+	{
+		uid: "a8cd1fd8",
+		type: "item",
+		item: {
+			id: "mekanism:robit",
+			tag: {
+				mekData: {}
+			}
+		}
+	},
+	{
+		uid: "78fe6a15",
+		type: "item",
+		item: "mekanism:tierinstaller"
+	}]
+}

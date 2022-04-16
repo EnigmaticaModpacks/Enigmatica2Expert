@@ -1,0 +1,50 @@
+{
+	title: "{bq.quest268.name}",
+	icon: "rftools:screen",
+	x: -3.958333333333333d,
+	y: 0.6666666666666666d,
+	text: [
+		"{bq.quest268.desc}"
+	],
+	dependencies: [
+		"094a95d2",
+		"3ea508f7"
+	],
+	tasks: [{
+		uid: "28a565f9",
+		type: "item",
+		items: [{
+			item: "rftools:screen"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "21336786",
+		type: "item",
+		items: [{
+			item: "rftools:screen_controller"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "db88dd91",
+		type: "item",
+		items: [{
+			item: "rftools:button_module"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "fd987a61",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

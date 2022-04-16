@@ -1,0 +1,94 @@
+{
+	title: "{bq.quest1068.name}",
+	icon: {
+		id: "simple_trophies:trophy",
+		tag: {
+			TrophyColorGreen: 128,
+			TrophyShowsTooltip: 1b,
+			TrophyVariant: "gold",
+			TrophyItem: {
+				Count: 1b,
+				id: "draconicevolution:reactor_core",
+				Damage: 0s
+			},
+			TrophyColorBlue: 43,
+			TrophyColorRed: 200,
+			TrophyName: "Draconic Evolution Trophy§r"
+		}
+	},
+	x: 12.75d,
+	y: 2.25d,
+	text: [
+		"{bq.quest1068.desc}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"d62d89ef",
+		"0ae32b60",
+		"64f8083b",
+		"bfbcdbf9",
+		"72c18686",
+		"eac08347",
+		"d498d691",
+		"84b5dffe",
+		"ca069fca",
+		"8c1583d8",
+		"1cb25522",
+		"65f22360",
+		"25182501",
+		"b4a123fb",
+		"652f0bb3",
+		"965611ca",
+		"af16df8a",
+		"b5098494",
+		"ffa34abd",
+		"6ec50a24",
+		"3febe889",
+		"ffc09ba6",
+		"138203e5",
+		"5dae2dc0",
+		"e41f2331",
+		"0f75481a",
+		"71081527",
+		"b22a849a",
+		"eb59a16d",
+		"77457833",
+		"a9d391e5",
+		"6cd0c127",
+		"30fedcc6",
+		"822b1c53",
+		"0fa6089d",
+		"2f519eef",
+		"3d660158",
+		"8aec2f93",
+		"9043cbbc"
+	],
+	size: 1.5d,
+	rewards: [{
+		uid: "1411306e",
+		type: "item",
+		auto: "enabled",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 128,
+				TrophyShowsTooltip: 1b,
+				TrophyVariant: "gold",
+				TrophyItem: {
+					Count: 1b,
+					id: "draconicevolution:reactor_core",
+					Damage: 0s
+				},
+				TrophyColorBlue: 43,
+				TrophyColorRed: 200,
+				TrophyName: "Draconic Evolution Trophy§r"
+			}
+		}
+	},
+	{
+		uid: "0db5a0ee",
+		type: "command",
+		auto: "invisible",
+		command: "/say §l@p§r has fully completed the §nDraconic Evolution§r chapter!§r ```Congrats!```"
+	}]
+}

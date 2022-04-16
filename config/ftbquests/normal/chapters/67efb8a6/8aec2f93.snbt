@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest531.name}",
+	icon: "draconicevolution:crafting_injector 1 1",
+	x: 8.5d,
+	y: 2.25d,
+	text: [
+		"{bq.quest531.desc}"
+	],
+	dependencies: [
+		"6cd0c127"
+	],
+	tasks: [{
+		uid: "7cd67366",
+		type: "item",
+		items: [{
+			item: "draconicevolution:crafting_injector 1 1"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0387e581",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest810.name}",
+	icon: "industrialforegoing:enchantment_extractor",
+	x: -2.5d,
+	y: 6.333333333333333d,
+	text: [
+		"{bq.quest810.desc}"
+	],
+	dependencies: [
+		"69cbbacb"
+	],
+	tasks: [{
+		uid: "ec1fc3a7",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:enchantment_extractor"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "a0808f06",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

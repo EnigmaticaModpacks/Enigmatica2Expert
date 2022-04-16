@@ -1,0 +1,184 @@
+{
+	title: "{bq.quest434.name}",
+	icon: {
+		id: "tconstruct:pickaxe",
+		tag: {
+			StatsOriginal: {
+				AttackSpeedMultiplier: 1.0f,
+				MiningSpeed: 12.0f,
+				FreeModifiers: 3,
+				Durability: 861,
+				HarvestLevel: 7,
+				Attack: 4.1f
+			},
+			display: {
+				NoRename: 1b,
+				Name: "InfiHarvester"
+			},
+			Special: {
+				Categories: [
+					"aoe",
+					"tool",
+					"harvest"
+				]
+			},
+			Stats: {
+				AttackSpeedMultiplier: 1.0f,
+				MiningSpeed: 999999.0f,
+				FreeModifiers: 0,
+				Durability: 999999,
+				HarvestLevel: 7,
+				Attack: 999999.0f
+			},
+			Modifiers: [{
+				identifier: "slimey_green",
+				color: -8206221,
+				level: 1
+			},
+			{
+				identifier: "momentum",
+				color: -14122284,
+				level: 1
+			},
+			{
+				identifier: "petramor",
+				color: -3063280,
+				level: 1
+			},
+			{
+				identifier: "toolleveling",
+				color: 16777215,
+				level: 1
+			},
+			{
+				identifier: "infitool",
+				color: 16777215,
+				level: 1
+			}],
+			TinkerData: {
+				Materials: [
+					"slime",
+					"cobalt",
+					"ardite"
+				],
+				Modifiers: [
+					"toolleveling",
+					"infitool"
+				]
+			},
+			Traits: [
+				"slimey_green",
+				"momentum",
+				"petramor",
+				"toolleveling",
+				"infitool"
+			]
+		},
+		ForgeCaps: {
+			"plustic:fruitsalad_cap": {
+				Items: [],
+				Size: 5
+			},
+			"plustic:": {
+				Items: [],
+				Size: 1
+			},
+			"plustic:musicofthespheres_cap": {
+				Items: [],
+				Size: 1
+			}
+		}
+	},
+	x: -4.0d,
+	y: 2.0d,
+	text: [
+		"{bq.quest434.desc}"
+	],
+	dependencies: [
+		"c35399e6"
+	],
+	tasks: [{
+		uid: "0b71378b",
+		type: "item",
+		items: [{
+			id: "tconstruct:pickaxe",
+			tag: {
+				StatsOriginal: {
+					AttackSpeedMultiplier: 1.0f,
+					MiningSpeed: 3.75f,
+					FreeModifiers: 3,
+					Durability: 143,
+					HarvestLevel: 0,
+					Attack: 2.175f
+				},
+				Special: {
+					Categories: [
+						"harvest",
+						"tool",
+						"aoe"
+					]
+				},
+				Stats: {
+					AttackSpeedMultiplier: 1.0f,
+					MiningSpeed: 3.75f,
+					FreeModifiers: 2,
+					Durability: 143,
+					HarvestLevel: 0,
+					Attack: 2.175f
+				},
+				Modifiers: [{
+					identifier: "ecological",
+					color: -7444965,
+					level: 1
+				},
+				{
+					identifier: "crude",
+					color: -9868951,
+					level: 2,
+					crude2: 1b
+				},
+				{
+					identifier: "toolleveling",
+					color: 16777215,
+					level: 1
+				}],
+				TinkerData: {
+					Materials: [
+						"wood",
+						"flint",
+						"wood"
+					],
+					Modifiers: [
+						"toolleveling"
+					]
+				},
+				Traits: [
+					"ecological",
+					"crude2",
+					"toolleveling"
+				]
+			},
+			ForgeCaps: {
+				"plustic:fruitsalad_cap": {
+					Items: [],
+					Size: 5
+				},
+				"plustic:": {
+					Items: [],
+					Size: 1
+				},
+				"plustic:musicofthespheres_cap": {
+					Items: [],
+					Size: 1
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f0dda096",
+		type: "item",
+		item: "oeintegration:excavatemodifier"
+	}]
+}

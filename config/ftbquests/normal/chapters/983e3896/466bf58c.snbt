@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest165.name}",
+	icon: "astralsorcery:blockmachine 1 1",
+	x: -1.1666666666666667d,
+	y: 3.5d,
+	text: [
+		"{bq.quest165.desc}"
+	],
+	dependencies: [
+		"e02d38ab"
+	],
+	tasks: [{
+		uid: "b3aa3d34",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockmachine 1 1"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "e0b5d46b",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,36 @@
+{
+	title: "{bq.quest370.name}",
+	icon: {
+		id: "botania:manatablet",
+		tag: {}
+	},
+	x: 1.8333333333333333d,
+	y: 5.166666666666667d,
+	text: [
+		"{bq.quest370.desc}"
+	],
+	dependencies: [
+		"2bc0a8f1",
+		"5672d99b"
+	],
+	tasks: [{
+		uid: "ee9e2586",
+		type: "item",
+		items: [{
+			id: "botania:manatablet",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e905af04",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

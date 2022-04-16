@@ -1,0 +1,56 @@
+{
+	title: "{bq.quest757.name}",
+	icon: "iceandfire:dragonforge_ice_core",
+	x: 4.75d,
+	y: 2.75d,
+	text: [
+		"{bq.quest757.desc}"
+	],
+	dependencies: [
+		"7d4799a3",
+		"3e7b8b7a"
+	],
+	tasks: [{
+		uid: "4ee218fd",
+		type: "item",
+		items: [{
+			item: "iceandfire:dragon_bone_block 8"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "d2fbeb91",
+		type: "item",
+		items: [{
+			item: "iceandfire:dragonforge_ice_brick 17"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "97d03bae",
+		type: "item",
+		items: [{
+			item: "iceandfire:dragonforge_ice_input"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "f8b19004",
+		type: "item",
+		items: [{
+			item: "iceandfire:dragonforge_ice_core_disabled"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "6aef11e6",
+		type: "item",
+		item: "iceandfire:ice_dragon_blood",
+		count: 64
+	},
+	{
+		uid: "590167eb",
+		type: "item",
+		item: "iceandfire:ice_dragon_heart"
+	}]
+}

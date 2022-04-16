@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest7.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "xnet:controller",
+		count: 2
+	},
+	{
+		item: {
+			id: "xnet:netcable",
+			tag: {
+				display: {
+					LocName: "tile.xnet.netcable_blue.name}"
+				}
+			}
+		},
+		count: 64
+	},
+	{
+		item: {
+			id: "xnet:connector",
+			tag: {
+				display: {
+					LocName: "tile.xnet.connector_blue.name}"
+				}
+			}
+		},
+		count: 4
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest286.name}",
+	icon: "forestry:apiary",
+	x: 0.5d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest286.desc}"
+	],
+	dependencies: [
+		"4007e26a"
+	],
+	tasks: [{
+		uid: "f7a35637",
+		type: "item",
+		items: [{
+			item: "forestry:apiary"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "2d87f272",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

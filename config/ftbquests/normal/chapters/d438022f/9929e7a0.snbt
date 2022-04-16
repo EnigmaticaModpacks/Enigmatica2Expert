@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest995.name}",
+	icon: "randomthings:naturecore",
+	x: -9.833333333333334d,
+	y: 6.666666666666667d,
+	text: [
+		"{bq.quest995.desc}"
+	],
+	dependencies: [
+		"4b000aa3"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "83cd80fd",
+		type: "item",
+		items: [{
+			item: "randomthings:naturecore"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "1299f64d",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

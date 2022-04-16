@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest1070.name}",
+	icon: "immersiveengineering:sheetmetal 2 3",
+	x: 4.5d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest1070.desc}"
+	],
+	dependencies: [
+		"2de1b9db"
+	],
+	tasks: [{
+		uid: "54d81314",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:sheetmetal 9 3"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d1471e72",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

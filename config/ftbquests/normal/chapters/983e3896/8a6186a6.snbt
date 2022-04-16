@@ -1,0 +1,24 @@
+{
+	title: "{bq.quest150.name}",
+	icon: "astralsorcery:itemjournal",
+	x: -2.8333333333333335d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest150.desc}"
+	],
+	dependencies: [
+		"8a9f0c33"
+	],
+	rewards: [{
+		uid: "b32252a0",
+		type: "item",
+		item: "astralsorcery:blockmarble",
+		count: 32
+	},
+	{
+		uid: "bd9706e8",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has begun the Astral Sorcery questline!"
+	}]
+}

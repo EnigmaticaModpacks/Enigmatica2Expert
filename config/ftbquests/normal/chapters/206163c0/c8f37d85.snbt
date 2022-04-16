@@ -1,0 +1,72 @@
+{
+	title: "{bq.quest291.name}",
+	icon: {
+		id: "forestry:chipsets",
+		tag: {
+			T: 0s
+		}
+	},
+	x: -3.5d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest291.desc}"
+	],
+	dependencies: [
+		"8806b7fe"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "effc7eb7",
+		type: "item",
+		items: [{
+			id: "forestry:chipsets",
+			tag: {
+				T: 0s
+			}
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "f97bf076",
+		type: "item",
+		items: [{
+			id: "forestry:chipsets",
+			Damage: 1s,
+			tag: {
+				T: 1s
+			}
+		}]
+	},
+	{
+		uid: "655245d9",
+		type: "item",
+		items: [{
+			id: "forestry:chipsets",
+			Damage: 2s,
+			tag: {
+				T: 2s
+			}
+		}]
+	},
+	{
+		uid: "8c06b6c3",
+		type: "item",
+		items: [{
+			id: "forestry:chipsets",
+			Damage: 3s,
+			tag: {
+				T: 3s
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "42732c45",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

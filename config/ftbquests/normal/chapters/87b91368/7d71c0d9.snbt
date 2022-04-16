@@ -1,0 +1,35 @@
+{
+	title: "{bq.quest711.name}",
+	icon: {
+		id: "dwmh:ocarina",
+		tag: {}
+	},
+	x: 4.666666666666667d,
+	y: -3.5d,
+	text: [
+		"{bq.quest711.desc}"
+	],
+	dependencies: [
+		"dcb947b4"
+	],
+	tasks: [{
+		uid: "ceafca4a",
+		type: "item",
+		items: [{
+			id: "dwmh:ocarina",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "5df09072",
+		type: "item",
+		item: {
+			id: "openblocks:trophy",
+			tag: {
+				entity_id: "minecraft:zombie_horse"
+			}
+		}
+	}]
+}

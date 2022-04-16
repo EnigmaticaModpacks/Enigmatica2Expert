@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest872.name}",
+	icon: "requious:adv_bee_analyzer",
+	x: 1.8333333333333333d,
+	y: -0.5d,
+	text: [
+		"{bq.quest872.desc}"
+	],
+	dependencies: [
+		"29f2b63c"
+	],
+	tasks: [{
+		uid: "2a7d13f2",
+		type: "item",
+		items: [{
+			item: "requious:adv_bee_analyzer"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0056e778",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

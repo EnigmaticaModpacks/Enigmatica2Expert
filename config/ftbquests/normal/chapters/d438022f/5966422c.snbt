@@ -1,0 +1,33 @@
+{
+	title: "{bq.quest1006.name}",
+	icon: "cyclicmagic:block_hydrator",
+	x: -9.5d,
+	y: 15.5d,
+	text: [
+		"{bq.quest1006.desc}"
+	],
+	dependencies: [
+		"d8284260",
+		"c2e489aa"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "4f1b59ff",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:block_hydrator"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "45e9e45b",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

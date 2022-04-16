@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest353.name}",
+	icon: {
+		id: "extrautils2:machine",
+		tag: {
+			Type: "extrautils2:generator_death"
+		}
+	},
+	x: 13.0d,
+	y: -1.1666666666666667d,
+	text: [
+		"{bq.quest353.desc}"
+	],
+	dependencies: [
+		"42b1f141"
+	],
+	tasks: [{
+		uid: "0daeb1c5",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:generator_death"
+			}
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "ea1f8569",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

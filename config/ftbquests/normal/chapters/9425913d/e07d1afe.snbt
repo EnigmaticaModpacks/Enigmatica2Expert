@@ -1,0 +1,25 @@
+{
+	title: "{bq.quest4.name}",
+	icon: "ic2:resource 1 12",
+	x: 1.5d,
+	y: 0.5d,
+	text: [
+		"{bq.quest4.desc}"
+	],
+	dependencies: [
+		"9eaa496f"
+	],
+	tasks: [{
+		uid: "ab581b2c",
+		type: "item",
+		items: [{
+			item: "ic2:resource 1 12"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "bc5968f8",
+		type: "choice",
+		table: 5
+	}]
+}

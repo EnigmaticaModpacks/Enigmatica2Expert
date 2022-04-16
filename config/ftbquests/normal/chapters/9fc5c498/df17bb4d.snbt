@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest594.name}",
+	icon: "enderio:block_painter",
+	x: 7.5d,
+	y: 2.5d,
+	text: [
+		"{bq.quest594.desc}"
+	],
+	dependencies: [
+		"0cce2fa6"
+	],
+	tasks: [{
+		uid: "cc71dadb",
+		type: "item",
+		items: [{
+			item: "enderio:block_painter"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "43a44434",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

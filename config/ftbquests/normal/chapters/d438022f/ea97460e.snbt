@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest1058.name}",
+	icon: "randomthings:stableenderpearl",
+	x: -15.666666666666668d,
+	y: 8.833333333333334d,
+	text: [
+		"{bq.quest1058.desc}"
+	],
+	dependencies: [
+		"dc869094"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "cfb1a435",
+		type: "item",
+		items: [{
+			item: "randomthings:stableenderpearl"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "371ea2ce",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest158.name}",
+	icon: "astralsorcery:blockcustomore 1 1",
+	x: 2.8333333333333335d,
+	y: 3.5d,
+	text: [
+		"{bq.quest158.desc}"
+	],
+	dependencies: [
+		"5e313583"
+	],
+	tasks: [{
+		uid: "9f11756d",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockcustomore 1 1"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "ddb89497",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest575.name}",
+	icon: "enderio:block_weather_obelisk",
+	x: 4.833333333333333d,
+	y: 5.166666666666667d,
+	text: [
+		"{bq.quest575.desc}"
+	],
+	dependencies: [
+		"cf12b353"
+	],
+	tasks: [{
+		uid: "cc06722e",
+		type: "item",
+		items: [{
+			item: "enderio:block_weather_obelisk"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d5a5e8c1",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

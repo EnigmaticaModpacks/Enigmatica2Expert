@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest789.name}",
+	icon: "actuallyadditions:item_growth_ring",
+	x: -6.833333333333333d,
+	y: 2.5833333333333335d,
+	text: [
+		"{bq.quest789.desc}"
+	],
+	dependencies: [
+		"03d4419e"
+	],
+	tasks: [{
+		uid: "c2006618",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_growth_ring"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "1473b2ec",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

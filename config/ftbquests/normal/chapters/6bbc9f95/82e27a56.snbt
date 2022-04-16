@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest639.name}",
+	icon: "thaumcraft:thaumometer",
+	x: 5.0d,
+	y: 3.5d,
+	text: [
+		"{bq.quest639.desc}"
+	],
+	dependencies: [
+		"4f409b3c"
+	],
+	tasks: [{
+		uid: "dd4144d9",
+		type: "item",
+		items: [{
+			item: "thaumcraft:thaumometer"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f6494672",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest579.name}",
+	icon: "enderio:block_farm_station",
+	x: 11.5d,
+	y: 2.5d,
+	text: [
+		"{bq.quest579.desc}"
+	],
+	dependencies: [
+		"e3ba78e0"
+	],
+	tasks: [{
+		uid: "b16afaf8",
+		type: "item",
+		items: [{
+			item: "enderio:block_farm_station"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9e56cc57",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

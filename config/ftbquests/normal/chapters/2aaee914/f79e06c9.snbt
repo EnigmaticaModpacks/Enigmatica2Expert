@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest197.name}",
+	icon: "mekanism:ingot",
+	x: 8.833333333333334d,
+	y: 7.833333333333333d,
+	text: [
+		"{bq.quest197.desc}"
+	],
+	dependencies: [
+		"9eb5e63d"
+	],
+	tasks: [{
+		uid: "c4933eac",
+		type: "item",
+		items: [{
+			item: "mekanism:ingot"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "1893e632",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

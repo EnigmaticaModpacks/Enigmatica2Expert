@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest986.name}",
+	icon: "randomthings:fertilizeddirt",
+	x: -10.833333333333334d,
+	y: 8.166666666666668d,
+	text: [
+		"{bq.quest986.desc}"
+	],
+	dependencies: [
+		"dc869094"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "e10cdd54",
+		type: "item",
+		items: [{
+			item: "randomthings:fertilizeddirt"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "06ff75c1",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

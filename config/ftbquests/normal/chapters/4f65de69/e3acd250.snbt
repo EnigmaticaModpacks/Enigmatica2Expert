@@ -1,0 +1,62 @@
+{
+	title: "{bq.quest696.name}",
+	icon: "cookingforblockheads:cooking_table",
+	x: 2.125d,
+	y: 5.041666666666667d,
+	text: [
+		"{bq.quest696.desc}"
+	],
+	dependencies: [
+		"9eaa496f"
+	],
+	tasks: [{
+		uid: "1a2ab2e7",
+		type: "item",
+		items: [{
+			item: "cookingforblockheads:cooking_table"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "1e5e5a73",
+		type: "item",
+		items: [{
+			item: "cookingforblockheads:oven"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "673df88c",
+		type: "item",
+		items: [{
+			item: "cookingforblockheads:fridge 2"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "937fe237",
+		type: "item",
+		items: [{
+			item: "cookingforblockheads:counter"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "19ede6b7",
+		type: "item",
+		items: [{
+			item: "cookingforblockheads:tool_rack"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e8a43e26",
+		type: "item",
+		item: "jecalculation:item_calculator"
+	}]
+}

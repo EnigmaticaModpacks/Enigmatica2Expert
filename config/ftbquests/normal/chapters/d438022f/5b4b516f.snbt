@@ -1,0 +1,27 @@
+{
+	title: "{bq.quest978.name}",
+	icon: "openblocks:elevator",
+	x: -4.166666666666667d,
+	y: 10.666666666666666d,
+	text: [
+		"{bq.quest978.desc}"
+	],
+	dependencies: [
+		"9f41b8d8"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "867653d1",
+		type: "item",
+		items: [{
+			item: "openblocks:elevator"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c96d2a12",
+		type: "choice",
+		table: 122
+	}]
+}

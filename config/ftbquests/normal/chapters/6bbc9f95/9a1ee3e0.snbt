@@ -1,0 +1,26 @@
+{
+	title: "{bq.quest676.name}",
+	icon: "thaumcraft:brain_box",
+	x: 8.166666666666668d,
+	y: 5.833333333333333d,
+	text: [
+		"{bq.quest676.desc}"
+	],
+	dependencies: [
+		"c3ea0baf"
+	],
+	tasks: [{
+		uid: "227b10e3",
+		type: "item",
+		items: [{
+			item: "thaumcraft:brain_box"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e05e4e3a",
+		type: "choice",
+		table: 61
+	}]
+}

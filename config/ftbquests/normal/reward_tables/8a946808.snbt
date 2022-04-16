@@ -1,0 +1,26 @@
+{
+	title: "{bq.quest697.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	},
+	{
+		item: "excompressum:bait 1 2",
+		count: 4
+	},
+	{
+		item: {
+			id: "minecraft:spawn_egg",
+			tag: {
+				EntityTag: {
+					id: "minecraft:cow"
+				}
+			}
+		}
+	}]
+}

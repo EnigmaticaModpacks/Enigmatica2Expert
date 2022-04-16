@@ -1,0 +1,68 @@
+{
+	title: "{bq.quest718.name}",
+	icon: {
+		id: "draconicevolution:mob_soul",
+		tag: {
+			EntityName: "animania:bull_jersey"
+		}
+	},
+	x: 1.625d,
+	y: -2.875d,
+	text: [
+		"{bq.quest718.desc}"
+	],
+	dependencies: [
+		"fc892a79"
+	],
+	size: 1.25d,
+	tasks: [{
+		uid: "bb2c4429",
+		type: "item",
+		items: [{
+			item: "excompressum:bait"
+		},
+		{
+			item: "excompressum:bait 1 1"
+		},
+		{
+			item: "excompressum:bait 1 2"
+		},
+		{
+			item: "excompressum:bait 1 3"
+		},
+		{
+			item: "excompressum:bait 1 4"
+		},
+		{
+			item: "excompressum:bait 1 5"
+		},
+		{
+			item: "excompressum:bait 1 6"
+		},
+		{
+			item: "excompressum:bait 1 7"
+		},
+		{
+			item: "excompressum:bait 1 8"
+		},
+		{
+			item: "excompressum:bait 1 9"
+		},
+		{
+			item: "excompressum:bait 1 10"
+		},
+		{
+			item: "excompressum:bait 1 11"
+		},
+		{
+			item: "excompressum:bait 1 12"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f9708ac0",
+		type: "choice",
+		table: 70
+	}]
+}

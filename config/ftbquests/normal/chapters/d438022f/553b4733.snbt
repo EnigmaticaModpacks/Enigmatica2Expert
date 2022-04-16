@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest998.name}",
+	icon: "randomthings:reinforcedenderbucket",
+	x: -15.666666666666668d,
+	y: 7.833333333333333d,
+	text: [
+		"{bq.quest998.desc}"
+	],
+	dependencies: [
+		"dc869094"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "d307b783",
+		type: "item",
+		items: [{
+			item: "randomthings:reinforcedenderbucket"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7b7d3eac",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

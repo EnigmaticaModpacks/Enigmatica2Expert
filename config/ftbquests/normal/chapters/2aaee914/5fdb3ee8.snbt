@@ -1,0 +1,41 @@
+{
+	title: "{bq.quest908.name}",
+	icon: {
+		id: "mekanism:machineblock2",
+		Damage: 12s,
+		tag: {
+			mekData: {}
+		}
+	},
+	x: 0.8333333333333333d,
+	y: 5.166666666666667d,
+	text: [
+		"{bq.quest908.desc}"
+	],
+	dependencies: [
+		"ae2d378c"
+	],
+	tasks: [{
+		uid: "be17b480",
+		type: "item",
+		items: [{
+			id: "mekanism:machineblock2",
+			Damage: 12s,
+			tag: {
+				mekData: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "05ed2063",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

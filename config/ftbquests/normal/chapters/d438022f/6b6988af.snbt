@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest969.name}",
+	icon: "darkutils:monolith 1 1",
+	x: -3.666666666666667d,
+	y: 24.333333333333332d,
+	text: [
+		"{bq.quest969.desc}"
+	],
+	dependencies: [
+		"a8abebe1"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "994276f4",
+		type: "item",
+		items: [{
+			item: "darkutils:monolith 1 1"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e9ebc0a7",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

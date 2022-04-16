@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest1026.name}",
+	icon: "cyclicmagic:water_candle",
+	x: -11.0d,
+	y: 20.5d,
+	text: [
+		"{bq.quest1026.desc}"
+	],
+	dependencies: [
+		"33b238ff"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "d84270a8",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:water_candle"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "efaa8fdb",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

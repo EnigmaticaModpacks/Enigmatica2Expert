@@ -1,0 +1,44 @@
+{
+	title: "{bq.quest56.name}",
+	icon: {
+		id: "tconstruct:sharpening_kit",
+		tag: {
+			Material: "osgloglas"
+		}
+	},
+	x: 11.125d,
+	y: 3.5d,
+	text: [
+		"{bq.quest56.desc}"
+	],
+	dependencies: [
+		"558597eb"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "49965a09",
+		type: "item",
+		items: [{
+			id: "tconstruct:sharpening_kit",
+			tag: {
+				Material: "osgloglas"
+			}
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "1dcbbcb0",
+		type: "item",
+		items: [{
+			id: "tconstruct:sharpening_kit",
+			tag: {
+				Material: "fierymetal"
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "dd92b5ad",
+		type: "choice",
+		table: 27
+	}]
+}

@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest445.name}",
+	icon: "advancedrocketry:carbonscrubbercartridge",
+	x: 12.166666666666666d,
+	y: 7.166666666666667d,
+	text: [
+		"{bq.quest445.desc}"
+	],
+	dependencies: [
+		"39e02dec"
+	],
+	tasks: [{
+		uid: "2497ff8b",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:carbonscrubbercartridge"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "237c6753",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:oxygenscrubber"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "1588a76b",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,27 @@
+{
+	title: "{bq.quest600.name}",
+	icon: "bloodmagic:altar",
+	x: 4.0d,
+	y: 3.1666666666666665d,
+	text: [
+		"{bq.quest600.desc}"
+	],
+	dependencies: [
+		"6e05cd97"
+	],
+	size: 1.3333333333333333d,
+	tasks: [{
+		uid: "fe117c4d",
+		type: "item",
+		items: [{
+			item: "bloodmagic:altar"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4992cf88",
+		type: "xp_levels",
+		xp_levels: 10
+	}]
+}

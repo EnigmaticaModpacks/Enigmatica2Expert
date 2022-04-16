@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest626.name}",
+	icon: "bloodmagic:ritual_diviner",
+	x: 7.0d,
+	y: 1.8333333333333333d,
+	text: [
+		"{bq.quest626.desc}"
+	],
+	dependencies: [
+		"170439ef"
+	],
+	tasks: [{
+		uid: "b3ed96f9",
+		type: "item",
+		items: [{
+			item: "bloodmagic:ritual_diviner"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "20630dbb",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

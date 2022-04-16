@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest992.name}",
+	icon: "randomthings:rainshield",
+	x: -10.666666666666666d,
+	y: 9.333333333333334d,
+	text: [
+		"{bq.quest992.desc}"
+	],
+	dependencies: [
+		"dc869094"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "14b887a4",
+		type: "item",
+		items: [{
+			item: "randomthings:rainshield"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "6e542a18",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

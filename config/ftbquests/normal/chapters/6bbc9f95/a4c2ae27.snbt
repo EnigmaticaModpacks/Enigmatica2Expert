@@ -1,0 +1,35 @@
+{
+	title: "{bq.quest681.name}",
+	icon: "thaumcraft:essentia_output",
+	x: 2.0d,
+	y: 13.166666666666666d,
+	text: [
+		"{bq.quest681.desc}"
+	],
+	dependencies: [
+		"64586ee7"
+	],
+	tasks: [{
+		uid: "9926175f",
+		type: "item",
+		items: [{
+			item: "thaumcraft:essentia_output"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "07be582b",
+		type: "item",
+		items: [{
+			item: "thaumcraft:essentia_input"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "aafdb86e",
+		type: "choice",
+		table: 66
+	}]
+}

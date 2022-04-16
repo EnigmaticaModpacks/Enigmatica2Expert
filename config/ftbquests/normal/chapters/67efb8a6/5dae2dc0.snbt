@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest525.name}",
+	icon: "draconicevolution:wyvern_energy_core",
+	x: 4.5d,
+	y: 5.25d,
+	text: [
+		"{bq.quest525.desc}"
+	],
+	dependencies: [
+		"a9d391e5"
+	],
+	tasks: [{
+		uid: "db3ce017",
+		type: "item",
+		items: [{
+			item: "draconicevolution:wyvern_energy_core"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "a5443778",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

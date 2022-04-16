@@ -1,0 +1,19 @@
+{
+	title: "{bq.quest987.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	},
+	{
+		item: "randomthings:blockdestabilizer"
+	},
+	{
+		item: "randomthings:grassseeds 1 6",
+		count: 64
+	}]
+}

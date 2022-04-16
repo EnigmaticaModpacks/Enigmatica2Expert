@@ -1,0 +1,16 @@
+{
+	title: "{bq.quest891.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "forestry:digger_bag_t2"
+	},
+	{
+		item: "forestry:forester_bag_t2"
+	},
+	{
+		item: "forestry:hunter_bag_t2"
+	},
+	{
+		item: "forestry:builder_bag_t2"
+	}]
+}

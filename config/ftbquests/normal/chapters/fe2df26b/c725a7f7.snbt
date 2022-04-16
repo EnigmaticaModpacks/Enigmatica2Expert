@@ -1,0 +1,40 @@
+{
+	title: "{bq.quest746.name}",
+	icon: {
+		id: "appliedenergistics2:matter_cannon",
+		tag: {
+			internalMaxPower: 200000.0d,
+			internalCurrentPower: 200000.0d
+		}
+	},
+	x: 2.5d,
+	y: 0.5d,
+	text: [
+		"{bq.quest746.desc}"
+	],
+	dependencies: [
+		"48f0d63f"
+	],
+	size: 0.6666666666666666d,
+	or_tasks: true,
+	tasks: [{
+		uid: "931e5fe5",
+		type: "item",
+		items: [{
+			id: "appliedenergistics2:matter_cannon",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9c0764c0",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

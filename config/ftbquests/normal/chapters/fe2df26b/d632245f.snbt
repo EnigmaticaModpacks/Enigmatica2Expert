@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest835.name}",
+	icon: "appliedenergistics2:drive",
+	x: 1.0d,
+	y: -2.0d,
+	text: [
+		"{bq.quest835.desc}"
+	],
+	dependencies: [
+		"bd8b6cc0"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "2a8d1a37",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:drive"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b89ae1b3",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

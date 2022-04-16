@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest435.name}",
+	icon: "advancedrocketry:oxygencharger",
+	x: 14.166666666666666d,
+	y: 1.8333333333333333d,
+	text: [
+		"{bq.quest435.desc}"
+	],
+	dependencies: [
+		"6e40dbf6"
+	],
+	tasks: [{
+		uid: "fe67db82",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:oxygencharger"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "f49473d5",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

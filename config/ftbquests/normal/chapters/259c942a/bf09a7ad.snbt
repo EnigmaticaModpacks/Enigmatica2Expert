@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest101.name}",
+	icon: "immersiveengineering:stone_decoration",
+	x: -3.5d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest101.desc}"
+	],
+	dependencies: [
+		"1c4deb33"
+	],
+	tasks: [{
+		uid: "ca248966",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:stone_decoration 27"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "7bff7491",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

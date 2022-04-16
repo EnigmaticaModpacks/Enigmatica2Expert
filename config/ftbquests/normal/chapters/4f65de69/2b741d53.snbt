@@ -1,0 +1,26 @@
+{
+	title: "{bq.quest874.name}",
+	icon: "tinkersaddons:modifier_item 1 1",
+	x: 0.625d,
+	y: 0.5d,
+	text: [
+		"{bq.quest874.desc}"
+	],
+	dependencies: [
+		"65ffe0b8"
+	],
+	tasks: [{
+		uid: "f1300a2e",
+		type: "item",
+		items: [{
+			item: "tinkersaddons:modifier_item 1 1"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "2a390603",
+		type: "item",
+		item: "tconevo:material 1 2"
+	}]
+}

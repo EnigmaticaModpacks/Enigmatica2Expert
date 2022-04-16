@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest194.name}",
+	icon: "mekanismgenerators:generator 1 5",
+	x: 2.8333333333333335d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest194.desc}"
+	],
+	dependencies: [
+		"76b824a9"
+	],
+	tasks: [{
+		uid: "f5c1539b",
+		type: "item",
+		items: [{
+			item: "mekanismgenerators:generator 1 5"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "522da8e8",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

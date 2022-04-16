@@ -1,0 +1,317 @@
+{
+	title: "{bq.quest37.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "thermalexpansion:satchel",
+			tag: {
+				display: {
+					Name: "Travel Kit"
+				},
+				Color1: 8349260,
+				Color0: 15905331,
+				Inventory: {
+					Slot2: {
+						Count: 50b,
+						id: "cyclicmagic:horse_upgrade_speed",
+						Damage: 0s
+					},
+					Slot3: {
+						Count: 1b,
+						id: "minecraft:saddle",
+						tag: {
+							HorseTweaksUpgrades: {
+								FIRE_RESISTANCE: 1b,
+								LEAF_WALKER: 1b,
+								FEATHER_FALL: 1b,
+								EASY_JUMP: 1b,
+								THORNS: 1b,
+								FROST_WALKER: 1b,
+								SWIMMING: 1b
+							}
+						},
+						Damage: 0s
+					},
+					Slot4: {
+						Count: 1b,
+						id: "astralsorcery:itemgrapplewand",
+						Damage: 0s
+					},
+					Slot5: {
+						Count: 1b,
+						id: "tconstruct:slimesling",
+						Damage: 2s
+					},
+					Slot0: {
+						Count: 1b,
+						id: "excompressum:bait",
+						Damage: 8s
+					},
+					Slot1: {
+						Count: 32b,
+						id: "minecraft:apple",
+						Damage: 0s
+					},
+					Slot6: {
+						Count: 1b,
+						id: "randomthings:superlubricentboots",
+						Damage: 0s
+					},
+					Slot7: {
+						Count: 1b,
+						id: "cyclicmagic:charm_void",
+						tag: {},
+						Damage: 0s
+					},
+					Slot8: {
+						Count: 1b,
+						id: "cyclicmagic:charm_boat",
+						tag: {},
+						Damage: 0s
+					}
+				},
+				Accessible: 1b
+			}
+		}
+	},
+	{
+		item: {
+			id: "thermalexpansion:satchel",
+			tag: {
+				display: {
+					Name: "Builder Kit"
+				},
+				Color1: 10072818,
+				Color0: 16777215,
+				Inventory: {
+					Slot2: {
+						Count: 64b,
+						id: "environmentalmaterials:alabaster",
+						Damage: 8s
+					},
+					Slot3: {
+						Count: 64b,
+						id: "environmentalmaterials:alabaster",
+						Damage: 8s
+					},
+					Slot4: {
+						Count: 64b,
+						id: "environmentalmaterials:alabaster",
+						Damage: 8s
+					},
+					Slot5: {
+						Count: 64b,
+						id: "environmentalmaterials:alabaster",
+						Damage: 8s
+					},
+					Slot0: {
+						ForgeCaps: {
+							"astralsorcery:cap_item_amulet_holder": {}
+						},
+						Count: 1b,
+						id: "chisel:chisel_iron",
+						Damage: 0s
+					},
+					Slot1: {
+						Count: 64b,
+						id: "mysticalagriculture:dye_essence",
+						Damage: 0s
+					},
+					Slot6: {
+						Count: 64b,
+						id: "environmentalmaterials:alabaster",
+						Damage: 8s
+					},
+					Slot7: {
+						Count: 64b,
+						id: "environmentalmaterials:alabaster",
+						Damage: 8s
+					},
+					Slot8: {
+						Count: 64b,
+						id: "environmentalmaterials:alabaster",
+						Damage: 8s
+					}
+				},
+				Accessible: 1b
+			}
+		}
+	},
+	{
+		item: {
+			id: "thermalexpansion:satchel",
+			tag: {
+				display: {
+					Name: "Battle Kit"
+				},
+				Color1: 1644825,
+				Color0: 13388876,
+				Inventory: {
+					Slot2: {
+						ForgeCaps: {
+							"astralsorcery:cap_item_amulet_holder": {}
+						},
+						Count: 1b,
+						id: "cyclicmagic:boomerang",
+						tag: {},
+						Damage: 0s
+					},
+					Slot5: {
+						Count: 4b,
+						id: "rustic:elixir",
+						tag: {
+							ench: [{
+								lvl: 1s,
+								id: 36s
+							}],
+							enchantmentColor: 11743532,
+							display: {
+								Name: "Longest Elixir of Regeneration"
+							},
+							ElixirEffects: [{
+								Duration: 1800000,
+								Effect: "minecraft:regeneration",
+								Amplifier: 1
+							}]
+						},
+						Damage: 0s
+					},
+					Slot0: {
+						ForgeCaps: {
+							"plustic:": {
+								Size: 1,
+								Items: []
+							},
+							"astralsorcery:cap_item_amulet_holder": {},
+							"plustic:fruitsalad_cap": {
+								Size: 5,
+								Items: []
+							},
+							"plustic:musicofthespheres_cap": {
+								Size: 1,
+								Items: []
+							}
+						},
+						Count: 1b,
+						id: "tconstruct:broadsword",
+						tag: {
+							StatsOriginal: {
+								AttackSpeedMultiplier: 1.0f,
+								MiningSpeed: 1.5f,
+								FreeModifiers: 3,
+								Durability: 61,
+								HarvestLevel: 0,
+								Attack: 2.5f
+							},
+							Special: {
+								Categories: [
+									"weapon",
+									"tool"
+								]
+							},
+							Stats: {
+								AttackSpeedMultiplier: 1.0f,
+								MiningSpeed: 1.5f,
+								FreeModifiers: 2,
+								Durability: 61,
+								HarvestLevel: 0,
+								Attack: 2.5f
+							},
+							Modifiers: [{
+								identifier: "ecological",
+								color: -7444965,
+								level: 1
+							},
+							{
+								identifier: "toolleveling",
+								color: 16777215,
+								level: 1
+							},
+							{
+								identifier: "bane_of_arthopods",
+								current: 24,
+								color: 6404681,
+								level: 1,
+								max: 24,
+								extraInfo: "23 / 24"
+							},
+							{
+								identifier: "smite",
+								current: 24,
+								color: 15258880,
+								level: 1,
+								max: 24,
+								extraInfo: "23 / 24"
+							},
+							{
+								identifier: "creative",
+								color: 0,
+								level: 2
+							}],
+							TinkerData: {
+								UsedModifiers: 2,
+								Materials: [
+									"wood",
+									"wood",
+									"wood"
+								],
+								Modifiers: [
+									"toolleveling",
+									"bane_of_arthopods",
+									"smite",
+									"creative"
+								]
+							},
+							Traits: [
+								"ecological",
+								"toolleveling",
+								"bane_of_arthopods",
+								"smite"
+							]
+						},
+						Damage: 0s
+					},
+					Slot1: {
+						ForgeCaps: {
+							"astralsorcery:cap_item_amulet_holder": {}
+						},
+						Count: 1b,
+						id: "immersiveengineering:shield",
+						Damage: 0s
+					},
+					Slot6: {
+						Count: 10b,
+						id: "rustic:fluid_bottle",
+						tag: {
+							Fluid: {
+								FluidName: "cider",
+								Amount: 1000,
+								Tag: {
+									Quality: 1.0f
+								}
+							}
+						},
+						Damage: 0s
+					},
+					Slot7: {
+						Count: 10b,
+						id: "randomthings:imbue",
+						Damage: 2s
+					},
+					Slot8: {
+						ForgeCaps: {
+							"astralsorcery:cap_item_amulet_holder": {}
+						},
+						Count: 1b,
+						id: "botania:brewflask",
+						tag: {
+							brewKey: "bloodthirst"
+						},
+						Damage: 0s
+					}
+				},
+				Accessible: 1b
+			}
+		}
+	}]
+}

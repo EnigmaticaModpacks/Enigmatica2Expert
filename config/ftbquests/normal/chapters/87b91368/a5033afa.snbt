@@ -1,0 +1,45 @@
+{
+	title: "{bq.quest734.name}",
+	icon: {
+		id: "rats:rat_nugget_ore",
+		tag: {
+			OreItem: {
+				Count: 1b,
+				id: "thermalfoundation:ore",
+				Damage: 4s
+			},
+			IngotItem: {
+				Count: 1b,
+				id: "thermalfoundation:material",
+				Damage: 132s
+			}
+		}
+	},
+	x: -2.0d,
+	y: 3.75d,
+	text: [
+		"{bq.quest734.desc}"
+	],
+	dependencies: [
+		"95b518e0"
+	],
+	tasks: [{
+		uid: "c678ca62",
+		type: "item",
+		items: [{
+			item: "rats:rat_nugget_ore 1 47"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b4fe2d49",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

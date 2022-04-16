@@ -1,0 +1,39 @@
+{
+	title: "{bq.quest395.name}",
+	icon: {
+		id: "botania:specialflower",
+		tag: {
+			type: "orechid"
+		}
+	},
+	x: 3.5d,
+	y: 11.666666666666666d,
+	text: [
+		"{bq.quest395.desc}"
+	],
+	dependencies: [
+		"5672d99b",
+		"aca34b29"
+	],
+	tasks: [{
+		uid: "be46eb44",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "orechid"
+			}
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "0682d7bd",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

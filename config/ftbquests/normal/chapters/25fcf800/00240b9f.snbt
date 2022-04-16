@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest497.name}",
+	icon: "environmentaltech:modifier_piezo",
+	x: 9.75d,
+	y: 0.5d,
+	text: [
+		"{bq.quest497.desc}"
+	],
+	dependencies: [
+		"829d92ae"
+	],
+	tasks: [{
+		uid: "9bb0ecb9",
+		type: "item",
+		items: [{
+			item: "environmentaltech:modifier_piezo"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "6ad24e68",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

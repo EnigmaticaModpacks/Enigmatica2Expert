@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest738.name}",
+	icon: "rats:gem_of_ratlantis",
+	x: -1.75d,
+	y: 7.75d,
+	text: [
+		"{bq.quest738.desc}"
+	],
+	dependencies: [
+		"83168172"
+	],
+	tasks: [{
+		uid: "d487e365",
+		type: "item",
+		items: [{
+			item: "rats:gem_of_ratlantis"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "67756d8a",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

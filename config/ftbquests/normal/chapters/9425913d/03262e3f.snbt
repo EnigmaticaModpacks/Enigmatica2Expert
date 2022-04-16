@@ -1,0 +1,60 @@
+{
+	title: "{bq.quest572.name}",
+	icon: "deepmoblearning:glitch_infused_chestplate",
+	x: 12.0d,
+	y: 5.0d,
+	text: [
+		"{bq.quest572.desc}"
+	],
+	dependencies: [
+		"3c0d3677"
+	],
+	size: 0.6666666666666666d,
+	tasks: [{
+		uid: "a28e0273",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:glitch_infused_helmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "43bd169c",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:glitch_infused_chestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "5f3ce873",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:glitch_infused_leggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "ebf89b54",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:glitch_infused_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f9950317",
+		type: "choice",
+		table: 39
+	},
+	{
+		uid: "2c06ba2a",
+		type: "command",
+		auto: "invisible",
+		command: "gamestage silentadd @p armor_glitch_infused"
+	}]
+}

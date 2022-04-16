@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest975.name}",
+	icon: "openblocks:auto_anvil",
+	x: -4.333333333333333d,
+	y: 12.166666666666666d,
+	text: [
+		"{bq.quest975.desc}"
+	],
+	dependencies: [
+		"6c286b64"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "09fe09a3",
+		type: "item",
+		items: [{
+			item: "openblocks:auto_anvil"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "256e9adb",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

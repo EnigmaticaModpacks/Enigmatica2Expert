@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest422.name}",
+	icon: "ic2:foam_sprayer",
+	x: 7.5d,
+	y: 6.166666666666667d,
+	text: [
+		"{bq.quest422.desc}"
+	],
+	dependencies: [
+		"2231f97b"
+	],
+	tasks: [{
+		uid: "e915d192",
+		type: "item",
+		items: [{
+			item: "ic2:foam_sprayer"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "32527eff",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest512.name}",
+	icon: "nuclearcraft:pressurizer_idle",
+	x: 1.1666666666666665d,
+	y: 6.166666666666667d,
+	text: [
+		"{bq.quest512.desc}"
+	],
+	dependencies: [
+		"626f1235",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "00258425",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:pressurizer_idle"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "437f14c7",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest593.name}",
+	icon: "enderio:block_powered_spawner",
+	x: 8.833333333333334d,
+	y: 3.8333333333333335d,
+	text: [
+		"{bq.quest593.desc}"
+	],
+	dependencies: [
+		"65e9e105",
+		"a1061823"
+	],
+	tasks: [{
+		uid: "904bff41",
+		type: "item",
+		items: [{
+			item: "enderio:block_powered_spawner"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9e46d551",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

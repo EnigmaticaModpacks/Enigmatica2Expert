@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest288.name}",
+	icon: "mekanism:atomicdisassembler",
+	x: 13.166666666666666d,
+	y: 6.5d,
+	text: [
+		"{bq.quest288.desc}"
+	],
+	dependencies: [
+		"e7b47fb4"
+	],
+	tasks: [{
+		uid: "fed97239",
+		type: "item",
+		items: [{
+			item: "mekanism:atomicdisassembler"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0dd62504",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

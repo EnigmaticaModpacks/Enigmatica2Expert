@@ -1,0 +1,56 @@
+{
+	title: "{bq.quest671.name}",
+	icon: "thaumcraft:infernal_furnace",
+	x: 5.5d,
+	y: 8.166666666666668d,
+	text: [
+		"{bq.quest671.desc}"
+	],
+	dependencies: [
+		"4510505c"
+	],
+	tasks: [{
+		uid: "2ed358ee",
+		type: "item",
+		items: [{
+			item: "minecraft:nether_brick"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "432758a2",
+		type: "item",
+		items: [{
+			item: "minecraft:obsidian 12"
+		}],
+		count: 12L,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "f57a41bd",
+		type: "item",
+		items: [{
+			item: "minecraft:iron_bars"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "32f17a07",
+		type: "item",
+		items: [{
+			item: "minecraft:lava_bucket"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b96e2518",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

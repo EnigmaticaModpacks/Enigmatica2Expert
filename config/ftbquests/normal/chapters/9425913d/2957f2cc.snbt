@@ -1,0 +1,39 @@
+{
+	title: "{bq.quest596.name}",
+	icon: "thaumcraft:goggles",
+	x: 9.5d,
+	y: 0.5d,
+	text: [
+		"{bq.quest596.desc}"
+	],
+	dependencies: [
+		"90536e42"
+	],
+	tasks: [{
+		uid: "e5afc695",
+		type: "item",
+		items: [{
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "aer"
+				}]
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "caaee80f",
+		type: "item",
+		item: "minecraft:paper",
+		count: 16
+	},
+	{
+		uid: "9d6caf1e",
+		type: "item",
+		item: "harvestcraft:redvelvetcakeitem",
+		count: 4
+	}]
+}

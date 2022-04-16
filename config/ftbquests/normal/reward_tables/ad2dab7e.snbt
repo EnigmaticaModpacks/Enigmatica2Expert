@@ -1,0 +1,18 @@
+{
+	title: "{bq.quest797.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "libvulpes:coalgenerator"
+	},
+	{
+		item: {
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:generator"
+			}
+		}
+	},
+	{
+		item: "industrialforegoing:pitiful_fuel_generator"
+	}]
+}

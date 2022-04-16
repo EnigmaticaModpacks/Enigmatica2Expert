@@ -1,0 +1,33 @@
+{
+	title: "{bq.quest862.name}",
+	icon: "twilightforest:trophy",
+	x: 1.8333333333333333d,
+	y: 0.5d,
+	text: [
+		"{bq.quest862.desc}"
+	],
+	dependencies: [
+		"b42dc050"
+	],
+	tasks: [{
+		uid: "a8868756",
+		type: "item",
+		items: [{
+			item: "twilightforest:trophy"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ca63fecf",
+		type: "item",
+		item: "twilightforest:transformation_powder",
+		count: 64
+	},
+	{
+		uid: "abcf2609",
+		type: "command",
+		auto: "invisible",
+		command: "/advancement grant @p only twilightforest:progress_naga"
+	}]
+}

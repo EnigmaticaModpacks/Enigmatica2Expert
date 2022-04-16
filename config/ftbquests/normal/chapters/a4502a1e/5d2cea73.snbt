@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest345.name}",
+	icon: {
+		id: "extrautils2:machine",
+		tag: {
+			Type: "extrautils2:generator_potion"
+		}
+	},
+	x: 16.0d,
+	y: 3.0d,
+	text: [
+		"{bq.quest345.desc}"
+	],
+	dependencies: [
+		"f31c5840"
+	],
+	tasks: [{
+		uid: "b42ffca0",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:generator_potion"
+			}
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "8ea88905",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

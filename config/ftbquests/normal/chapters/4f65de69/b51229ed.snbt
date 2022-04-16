@@ -1,0 +1,28 @@
+{
+	title: "{bq.quest784.name}",
+	icon: "requious:tinkers_disassembler",
+	x: 2.125d,
+	y: 2.0d,
+	text: [
+		"{bq.quest784.desc}"
+	],
+	dependencies: [
+		"a9ddec35",
+		"9eaa496f"
+	],
+	tasks: [{
+		uid: "cd6bbb92",
+		type: "item",
+		items: [{
+			item: "requious:tinkers_disassembler"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "15d189f0",
+		type: "item",
+		item: "enderio:block_alloy 1 9",
+		count: 5
+	}]
+}

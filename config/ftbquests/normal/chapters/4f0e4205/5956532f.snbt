@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest867.name}",
+	icon: "twilightforest:trophy 1 5",
+	x: 5.833333333333333d,
+	y: 0.5d,
+	text: [
+		"{bq.quest867.desc}"
+	],
+	dependencies: [
+		"6be282e4"
+	],
+	tasks: [{
+		uid: "9d45ec6d",
+		type: "item",
+		items: [{
+			item: "twilightforest:trophy 1 5"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0bd2c9ec",
+		type: "command",
+		auto: "invisible",
+		command: "/advancement grant @p only twilightforest:progress_glacier"
+	},
+	{
+		uid: "93f36f4f",
+		type: "choice",
+		table: 109
+	}]
+}

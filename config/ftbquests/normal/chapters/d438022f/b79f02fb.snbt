@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest996.name}",
+	icon: "randomthings:playerinterface",
+	x: -14.833333333333334d,
+	y: 11.666666666666666d,
+	text: [
+		"{bq.quest996.desc}"
+	],
+	dependencies: [
+		"9092f6f7"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "f642a684",
+		type: "item",
+		items: [{
+			item: "randomthings:playerinterface"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "1a9ec3c6",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

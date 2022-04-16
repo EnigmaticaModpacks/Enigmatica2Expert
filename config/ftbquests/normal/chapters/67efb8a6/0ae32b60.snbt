@@ -1,0 +1,39 @@
+{
+	title: "{bq.quest550.name}",
+	icon: {
+		id: "draconicevolution:draconic_sword",
+		tag: {
+			Energy: 16000000
+		}
+	},
+	x: 2.5d,
+	y: 11.5d,
+	text: [
+		"{bq.quest550.desc}"
+	],
+	dependencies: [
+		"652f0bb3"
+	],
+	tasks: [{
+		uid: "3eea3c9d",
+		type: "item",
+		items: [{
+			id: "draconicevolution:draconic_sword",
+			tag: {
+				Energy: 16000000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a4106980",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

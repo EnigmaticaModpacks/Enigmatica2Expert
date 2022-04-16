@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest568.name}",
+	icon: "enderio:item_material 1 1",
+	x: 6.833333333333333d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest568.desc}"
+	],
+	dependencies: [
+		"2265d20b"
+	],
+	tasks: [{
+		uid: "fba8ef0c",
+		type: "item",
+		items: [{
+			item: "enderio:item_material 1 1"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9df069c3",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

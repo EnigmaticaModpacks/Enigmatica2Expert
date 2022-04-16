@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest811.name}",
+	icon: "industrialforegoing:enchantment_aplicator",
+	x: -1.3333333333333333d,
+	y: 6.833333333333333d,
+	text: [
+		"{bq.quest811.desc}"
+	],
+	dependencies: [
+		"69cbbacb"
+	],
+	tasks: [{
+		uid: "952fe6de",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:enchantment_aplicator"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a0d09388",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest452.name}",
+	icon: {
+		id: "astralsorcery:itemknowledgeshare",
+		tag: {
+			astralsorcery: {
+				creativeKnowledge: 1b
+			}
+		}
+	},
+	x: 2.375d,
+	y: 3.541666666666667d,
+	text: [
+		"{bq.quest452.desc}"
+	],
+	dependencies: [
+		"a1377b51"
+	],
+	tasks: [{
+		uid: "b7e2da32",
+		type: "item",
+		items: [{
+			id: "astralsorcery:itemknowledgeshare",
+			tag: {
+				astralsorcery: {
+					creativeKnowledge: 1b
+				}
+			}
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "86c23788",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has obtained the Scroll Of Massive Knowledge!"
+	}]
+}

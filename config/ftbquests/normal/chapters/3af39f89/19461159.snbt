@@ -1,0 +1,52 @@
+{
+	title: "{bq.quest232.name}",
+	icon: {
+		id: "thermalexpansion:cell",
+		tag: {
+			Recv: 5000,
+			RSControl: 0b,
+			Facing: 3b,
+			Energy: 0,
+			Level: 0b,
+			SideCache: [B;
+				2b,
+				1b,
+				1b,
+				1b,
+				1b,
+				1b
+			],
+			Send: 5000
+		}
+	},
+	x: 5.666666666666667d,
+	y: 2.6666666666666665d,
+	text: [
+		"{bq.quest232.desc}"
+	],
+	dependencies: [
+		"9c15c499"
+	],
+	tasks: [{
+		uid: "5b1d1093",
+		type: "item",
+		items: [{
+			id: "thermalexpansion:cell",
+			tag: {
+				Level: 0b
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d7538a6a",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

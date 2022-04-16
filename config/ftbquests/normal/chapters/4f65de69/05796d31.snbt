@@ -1,0 +1,58 @@
+{
+	title: "{bq.quest799.name}",
+	icon: {
+		id: "littletiles:chisel",
+		tag: {
+			preview: {
+				bBox: [I;
+					0,
+					0,
+					0,
+					1,
+					1,
+					1
+				],
+				tile: {
+					block: "minecraft:stone"
+				}
+			}
+		}
+	},
+	x: 11.125d,
+	y: 6.041666666666667d,
+	text: [
+		"{bq.quest799.desc}"
+	],
+	dependencies: [
+		"857a6a1a"
+	],
+	tasks: [{
+		uid: "11b64541",
+		type: "item",
+		items: [{
+			id: "littletiles:chisel",
+			tag: {
+				preview: {
+					bBox: [I;
+						0,
+						0,
+						0,
+						1,
+						1,
+						1
+					],
+					tile: {
+						block: "minecraft:stone"
+					}
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7667b28d",
+		type: "choice",
+		table: 103
+	}]
+}

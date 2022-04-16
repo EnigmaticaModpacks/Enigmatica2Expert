@@ -1,0 +1,534 @@
+{
+	title: "Uncommon",
+	loot_size: 1,
+	rewards: [{
+		item: "minecraft:tnt",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "advancedrocketry:fueltank",
+		count: 4,
+		weight: 10
+	},
+	{
+		item: "minecraft:piston",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "minecraft:observer",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "minecraft:brewing_stand",
+		weight: 10
+	},
+	{
+		item: "minecraft:ender_eye",
+		count: 4,
+		weight: 10
+	},
+	{
+		item: "minecraft:writable_book",
+		weight: 10
+	},
+	{
+		item: "animania:block_hamster_wheel",
+		weight: 10
+	},
+	{
+		item: "minecraft:record_mall",
+		weight: 10
+	},
+	{
+		item: "minecraft:record_ward",
+		weight: 10
+	},
+	{
+		item: "advancedrocketry:launchpad",
+		count: 49,
+		weight: 10
+	},
+	{
+		item: "actuallyadditions:item_coffee",
+		weight: 10
+	},
+	{
+		item: "appliedenergistics2:quartz_fixture",
+		count: 16,
+		weight: 10
+	},
+	{
+		item: "astralsorcery:itemcraftingcomponent 1 4",
+		count: 4,
+		weight: 10
+	},
+	{
+		item: "architecturecraft:sawbench",
+		weight: 10
+	},
+	{
+		item: "mekanism:obsidiantnt",
+		count: 16,
+		weight: 10
+	},
+	{
+		item: "mekanismgenerators:generator 1 5",
+		weight: 10
+	},
+	{
+		item: "nuclearcraft:helium_collector",
+		weight: 10
+	},
+	{
+		item: "openblocks:builder_guide",
+		weight: 10
+	},
+	{
+		item: "openblocks:hang_glider",
+		weight: 10
+	},
+	{
+		item: "harvestcraft:bltitem",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "botania:manaresource",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "botania:grasshorn",
+		weight: 10
+	},
+	{
+		item: "animania:entity_egg_random",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "astralsorcery:itemskyresonator",
+		weight: 10
+	},
+	{
+		item: "astralsorcery:blockworldilluminator",
+		count: 2,
+		weight: 10
+	},
+	{
+		item: "botania:goddesscharm",
+		weight: 10
+	},
+	{
+		item: "botania:monocle",
+		weight: 10
+	},
+	{
+		item: "cookingforblockheads:cooking_table",
+		weight: 10
+	},
+	{
+		item: "cookingforblockheads:cow_jar",
+		weight: 10
+	},
+	{
+		item: "cyclicmagic:inventory_food",
+		weight: 10
+	},
+	{
+		item: "cyclicmagic:ender_dungeon",
+		weight: 10
+	},
+	{
+		item: "extrautils2:angelblock",
+		count: 16,
+		weight: 10
+	},
+	{
+		item: "extrautils2:passivegenerator 1 5",
+		count: 10,
+		weight: 10
+	},
+	{
+		item: "extrautils2:boomerang",
+		weight: 10
+	},
+	{
+		item: "forestry:flexible_casing",
+		count: 2,
+		weight: 10
+	},
+	{
+		item: "forestry:sturdy_machine",
+		count: 4,
+		weight: 10
+	},
+	{
+		item: "forestry:hardened_machine",
+		count: 2,
+		weight: 10
+	},
+	{
+		item: "forestry:impregnated_casing",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "ic2:upgrade",
+		count: 12,
+		weight: 10
+	},
+	{
+		item: "ic2:upgrade 1 1",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "ironchest:iron_shulker_box_purple 1 5",
+		weight: 10
+	},
+	{
+		item: "immersiveengineering:metal_decoration2 1 5",
+		count: 64,
+		weight: 10
+	},
+	{
+		item: "immersiveengineering:metal_device1 1 8",
+		count: 2,
+		weight: 10
+	},
+	{
+		item: {
+			id: "immersiveengineering:shield",
+			ForgeCaps: {
+				Parent: {
+					Items: [],
+					Size: 1
+				}
+			}
+		},
+		weight: 10
+	},
+	{
+		item: "mekanism:robit",
+		weight: 10
+	},
+	{
+		item: "mekanism:speedupgrade",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "thermalexpansion:augment 1 128",
+		count: 4,
+		weight: 10
+	},
+	{
+		item: "thermalexpansion:augment 1 512",
+		count: 4,
+		weight: 10
+	},
+	{
+		item: "thermalfoundation:glass 1 7",
+		count: 16,
+		weight: 10
+	},
+	{
+		item: "mctsmelteryio:machine 1 1",
+		weight: 10
+	},
+	{
+		item: "tconstruct:materials 1 16",
+		weight: 10
+	},
+	{
+		item: "tconstruct:materials 1 14",
+		count: 3,
+		weight: 10
+	},
+	{
+		item: "tconstruct:materials 1 19",
+		count: 2,
+		weight: 10
+	},
+	{
+		item: "tconstruct:slime_congealed 1 2",
+		count: 2,
+		weight: 10
+	},
+	{
+		item: "harvestcraft:tacoitem",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "harvestcraft:blueberrypancakesitem",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "harvestcraft:fishdinneritem",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "harvestcraft:chickencurryitem",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "harvestcraft:coconutshrimpitem",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "harvestcraft:sweetpotatopieitem",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "harvestcraft:frosteddonutitem",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "harvestcraft:cinnamonsugardonutitem",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "harvestcraft:sausageinbreaditem",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "harvestcraft:beefwellingtonitem",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "harvestcraft:generaltsochickenitem",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "harvestcraft:sundayroastitem",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "harvestcraft:bbqpulledporkitem",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "harvestcraft:onionhamburgeritem",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "harvestcraft:grilledcheeseitem",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "harvestcraft:fishandchipsitem",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "harvestcraft:pekingduckitem",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "harvestcraft:chilidogitem",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "harvestcraft:poutineitem",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "storagedrawers:controller",
+		weight: 10
+	},
+	{
+		item: "storagedrawers:upgrade_void",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "scannable:scanner",
+		weight: 10
+	},
+	{
+		item: "storagedrawers:upgrade_status 1 1",
+		count: 16,
+		weight: 10
+	},
+	{
+		item: "rftools:crafter3",
+		count: 2,
+		weight: 10
+	},
+	{
+		item: "villagermarket:villager_market",
+		weight: 10
+	},
+	{
+		item: "libvulpes:holoprojector",
+		weight: 10
+	},
+	{
+		item: "chisel:emerald 1 11",
+		weight: 10
+	},
+	{
+		item: "chisel:lapis 1 7",
+		count: 4,
+		weight: 10
+	},
+	{
+		item: "oeintegration:excavatemodifier",
+		weight: 10
+	},
+	{
+		item: {
+			id: "appliedenergistics2:storage_cell_1k",
+			tag: {
+				"@0": 2304,
+				"@1": 2304,
+				"@2": 2304,
+				ic: 6912,
+				it: 3s,
+				"#0": {
+					Craft: 0b,
+					Cnt: 2304L,
+					id: "minecraft:gravel",
+					Count: 1b,
+					Damage: 0s,
+					Req: 0L
+				},
+				"#1": {
+					Craft: 0b,
+					Cnt: 2304L,
+					id: "minecraft:netherrack",
+					Count: 1b,
+					Damage: 0s,
+					Req: 0L
+				},
+				"#2": {
+					Craft: 0b,
+					Cnt: 2304L,
+					id: "minecraft:soul_sand",
+					Count: 1b,
+					Damage: 0s,
+					Req: 0L
+				}
+			}
+		},
+		weight: 4
+	},
+	{
+		item: "mctsmelteryio:upgrade 1 4",
+		count: 2,
+		weight: 10
+	},
+	{
+		item: "mctsmelteryio:upgrade 1 6",
+		count: 4,
+		weight: 10
+	},
+	{
+		item: {
+			id: "rats:rat_nugget_ore",
+			Damage: 25s,
+			tag: {
+				OreItem: {
+					id: "netherendingores:ore_end_vanilla",
+					Count: 1b,
+					Damage: 4s
+				},
+				IngotItem: {
+					id: "minecraft:iron_ore",
+					Count: 2b,
+					Damage: 0s
+				}
+			}
+		},
+		count: 64,
+		weight: 10
+	},
+	{
+		item: "thaumcraft:loot_bag 1 1",
+		count: 5,
+		weight: 30
+	},
+	{
+		item: "rats:little_black_squash_balls",
+		count: 4,
+		weight: 10
+	},
+	{
+		item: "rats:rat_diamond",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: {
+			id: "minecraft:enchanted_book",
+			tag: {
+				StoredEnchantments: [{
+					lvl: 4s,
+					id: 45s
+				}]
+			}
+		},
+		weight: 10
+	},
+	{
+		item: {
+			id: "minecraft:enchanted_book",
+			tag: {
+				StoredEnchantments: [{
+					lvl: 3s,
+					id: 74s
+				}]
+			}
+		},
+		weight: 10
+	},
+	{
+		item: {
+			id: "minecraft:enchanted_book",
+			tag: {
+				StoredEnchantments: [{
+					lvl: 5s,
+					id: 11s
+				}]
+			}
+		},
+		weight: 10
+	},
+	{
+		item: "flopper:flopper",
+		count: 3,
+		weight: 10
+	}],
+	loot_crate: {
+		string_id: "uncommon",
+		item_name: "Uncommon",
+		color: 16777215,
+		drops: {
+			passive: 0,
+			monster: 0,
+			boss: 0
+		}
+	}
+}

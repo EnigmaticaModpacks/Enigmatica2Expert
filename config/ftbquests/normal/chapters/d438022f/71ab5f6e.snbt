@@ -1,0 +1,34 @@
+{
+	title: "{bq.quest1029.name}",
+	icon: "cyclicmagic:beacon_potion",
+	x: 5.0d,
+	y: 19.166666666666668d,
+	text: [
+		"{bq.quest1029.desc}"
+	],
+	dependencies: [
+		"9e222e1c",
+		"a6a64aad"
+	],
+	size: 2.0d,
+	or_tasks: true,
+	tasks: [{
+		uid: "b7301c8d",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:beacon_potion"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a4d525ce",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "legendary"
+			}
+		}
+	}]
+}

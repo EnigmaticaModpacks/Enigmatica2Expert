@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest841.name}",
+	icon: "appliedenergistics2:material 1 42",
+	x: 5.5d,
+	y: -0.5d,
+	text: [
+		"{bq.quest841.desc}"
+	],
+	dependencies: [
+		"6690bc40"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "eb7ce218",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 10 42"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "16bb2cee",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

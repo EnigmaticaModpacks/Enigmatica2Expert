@@ -1,0 +1,15 @@
+{
+	title: "{bq.quest741.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "iceandfire:pixie_dust",
+		count: 16
+	},
+	{
+		item: "mia:pixie_dust_extractor"
+	},
+	{
+		item: "extrautils2:decorativesolidwood 1 1",
+		count: 10
+	}]
+}

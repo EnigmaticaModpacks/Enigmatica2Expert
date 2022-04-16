@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest125.name}",
+	icon: "actuallyadditions:block_furnace_double",
+	x: -6.833333333333333d,
+	y: 6.666666666666667d,
+	text: [
+		"{bq.quest125.desc}"
+	],
+	dependencies: [
+		"5130e1f3"
+	],
+	tasks: [{
+		uid: "c74ba114",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_furnace_double"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "f22af381",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

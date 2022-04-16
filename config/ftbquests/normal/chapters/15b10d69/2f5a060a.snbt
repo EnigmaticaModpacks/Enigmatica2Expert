@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest812.name}",
+	icon: "industrialforegoing:animal_byproduct_recolector",
+	x: -4.166666666666667d,
+	y: 4.5d,
+	text: [
+		"{bq.quest812.desc}"
+	],
+	dependencies: [
+		"6ad20599"
+	],
+	tasks: [{
+		uid: "69a97144",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:animal_byproduct_recolector"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "daf4a53a",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,35 @@
+{
+	title: "{bq.quest15.name}",
+	icon: "teslacorelib:machine_case",
+	x: 1.5d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest15.desc}"
+	],
+	dependencies: [
+		"e07d1afe"
+	],
+	tasks: [{
+		uid: "510ebdde",
+		type: "item",
+		items: [{
+			item: "teslacorelib:machine_case"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "3e7b6f5f",
+		type: "item",
+		item: "nuclearcraft:water_source"
+	},
+	{
+		uid: "2329557d",
+		type: "item",
+		item: "industrialforegoing:tree_fluid_extractor"
+	},
+	{
+		uid: "583ab4aa",
+		type: "item",
+		item: "teslacorelib:machine_case"
+	}]
+}

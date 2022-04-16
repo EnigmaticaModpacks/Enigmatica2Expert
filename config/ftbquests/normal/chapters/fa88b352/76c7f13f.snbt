@@ -1,0 +1,55 @@
+{
+	title: "{bq.quest714.name}",
+	icon: "nuclearcraft:heat_exchanger_controller",
+	x: 4.666666666666667d,
+	y: 1.5d,
+	text: [
+		"{bq.quest714.desc}"
+	],
+	dependencies: [
+		"7a6e05d3",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "9d627048",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:heat_exchanger_controller"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "18a06078",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:heat_exchanger_frame 40"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "e67a98e4",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:heat_exchanger_wall 7"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "f5bd3a3c",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:heat_exchanger_vent 2"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f35622de",
+		type: "item",
+		item: "extrautils2:drum 1 3",
+		count: 4
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest702.name}",
+	icon: "industrialforegoing:crop_enrich_material_injector",
+	x: 0.0d,
+	y: 7.166666666666667d,
+	text: [
+		"{bq.quest702.desc}"
+	],
+	dependencies: [
+		"66102e1b"
+	],
+	tasks: [{
+		uid: "1c85709e",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:crop_enrich_material_injector"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "e879387a",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

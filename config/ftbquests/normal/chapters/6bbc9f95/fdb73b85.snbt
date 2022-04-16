@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest642.name}",
+	icon: "thaumcraft:nugget 1 9",
+	x: 9.5d,
+	y: 0.16666666666666669d,
+	text: [
+		"{bq.quest642.desc}"
+	],
+	dependencies: [
+		"a54068bb"
+	],
+	tasks: [{
+		uid: "aab49f57",
+		type: "item",
+		items: [{
+			item: "thaumcraft:nugget 9 9"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "bc160a3f",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

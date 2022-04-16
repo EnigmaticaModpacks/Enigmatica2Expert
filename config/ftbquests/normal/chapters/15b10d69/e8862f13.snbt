@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest815.name}",
+	icon: "industrialforegoing:froster",
+	x: -4.166666666666667d,
+	y: 3.3333333333333335d,
+	text: [
+		"{bq.quest815.desc}"
+	],
+	dependencies: [
+		"cab63320"
+	],
+	tasks: [{
+		uid: "362cc25b",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:froster"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "074f0530",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

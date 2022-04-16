@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest476.name}",
+	icon: "environmentaltech:solar_cont_1",
+	x: 9.75d,
+	y: 2.0d,
+	text: [
+		"{bq.quest476.desc}"
+	],
+	dependencies: [
+		"b2bc3ad7"
+	],
+	tasks: [{
+		uid: "a8c7b049",
+		type: "item",
+		items: [{
+			item: "environmentaltech:solar_cont_1"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "f13a8522",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

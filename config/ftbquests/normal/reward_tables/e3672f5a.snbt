@@ -1,0 +1,22 @@
+{
+	title: "{bq.quest800.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "netherendingores:ore_nether_modded_1 1 6",
+		count: 2
+	},
+	{
+		item: {
+			id: "environmentalmaterials:alabaster",
+			Count: 256,
+			Damage: 0s
+		}
+	},
+	{
+		item: {
+			id: "sonarcore:reinforcedstonebrick",
+			Count: 640,
+			Damage: 0s
+		}
+	}]
+}

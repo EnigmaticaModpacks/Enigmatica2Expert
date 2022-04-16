@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest931.name}",
+	icon: "draconicevolution:grinder",
+	x: 1.8333333333333333d,
+	y: 8.666666666666666d,
+	text: [
+		"{bq.quest931.desc}"
+	],
+	dependencies: [
+		"a9d391e5"
+	],
+	tasks: [{
+		uid: "5dd4ce90",
+		type: "item",
+		items: [{
+			item: "draconicevolution:grinder"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e703c56f",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

@@ -1,0 +1,27 @@
+{
+	title: "{bq.quest14.name}",
+	icon: "botania:pool 1 1",
+	x: 0.45833333333333337d,
+	y: 6.125d,
+	text: [
+		"{bq.quest14.desc}"
+	],
+	dependencies: [
+		"7e987598",
+		"3bcf46b6"
+	],
+	tasks: [{
+		uid: "95989a6d",
+		type: "item",
+		items: [{
+			item: "botania:pool 1 1"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "d1013e6f",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has obtained the (non-guilty) Creative Mana Pool!"
+	}]
+}

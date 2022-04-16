@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest184.name}",
+	icon: "actuallyadditions:block_leaf_generator",
+	x: 3.6666666666666665d,
+	y: 7.5d,
+	text: [
+		"{bq.quest184.desc}"
+	],
+	dependencies: [
+		"a4305fb1"
+	],
+	tasks: [{
+		uid: "1857e3f9",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_leaf_generator"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "45362712",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest720.name}",
+	icon: "animania:blue_peacock_feather",
+	x: 2.0d,
+	y: 0.0d,
+	text: [
+		"{bq.quest720.desc}"
+	],
+	dependencies: [
+		"dcb947b4"
+	],
+	tasks: [{
+		uid: "207903ea",
+		type: "item",
+		items: [{
+			item: "animania:blue_peacock_feather"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e1a46a37",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

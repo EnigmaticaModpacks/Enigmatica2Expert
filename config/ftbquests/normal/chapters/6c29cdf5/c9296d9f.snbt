@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest409.name}",
+	icon: "botania:grasshorn",
+	x: -0.9166666666666667d,
+	y: 2.5d,
+	text: [
+		"{bq.quest409.desc}"
+	],
+	dependencies: [
+		"8b51b830",
+		"5672d99b"
+	],
+	tasks: [{
+		uid: "ee6f4534",
+		type: "item",
+		items: [{
+			item: "botania:grasshorn"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "efb732d5",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

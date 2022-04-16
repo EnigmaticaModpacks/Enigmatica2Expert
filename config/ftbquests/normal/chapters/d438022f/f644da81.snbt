@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest1018.name}",
+	icon: "cyclicmagic:builder_block",
+	x: -16.666666666666668d,
+	y: 21.833333333333332d,
+	text: [
+		"{bq.quest1018.desc}"
+	],
+	dependencies: [
+		"727feb19"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "8def31cd",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:builder_block"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "775eeb36",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

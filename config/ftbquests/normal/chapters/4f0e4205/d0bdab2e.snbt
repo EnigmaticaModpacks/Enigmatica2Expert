@@ -1,0 +1,33 @@
+{
+	title: "{bq.quest869.name}",
+	icon: "twilightforest:trophy 1 2",
+	x: 5.833333333333333d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest869.desc}"
+	],
+	dependencies: [
+		"9329a551"
+	],
+	tasks: [{
+		uid: "2b8fdc41",
+		type: "item",
+		items: [{
+			item: "twilightforest:trophy 1 2"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "bfcabfda",
+		type: "item",
+		item: "twilightforest:twilight_sapling 1 5",
+		count: 5
+	},
+	{
+		uid: "90b6e9d7",
+		type: "command",
+		auto: "invisible",
+		command: "/advancement grant @p only twilightforest:progress_hydra"
+	}]
+}

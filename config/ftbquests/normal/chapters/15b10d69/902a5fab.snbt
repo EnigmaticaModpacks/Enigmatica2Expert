@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest813.name}",
+	icon: "industrialforegoing:sewage_composter_solidifier",
+	x: -4.833333333333333d,
+	y: 5.666666666666667d,
+	text: [
+		"{bq.quest813.desc}"
+	],
+	dependencies: [
+		"2f5a060a"
+	],
+	tasks: [{
+		uid: "49f38154",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:sewage_composter_solidifier"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c8079a49",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

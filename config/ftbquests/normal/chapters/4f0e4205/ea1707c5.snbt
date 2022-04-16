@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest871.name}",
+	icon: "twilightforest:castle_rune_brick",
+	x: 8.5d,
+	y: 0.5d,
+	text: [
+		"{bq.quest871.desc}"
+	],
+	dependencies: [
+		"38b0f204"
+	],
+	tasks: [{
+		uid: "7ae0df4a",
+		type: "item",
+		items: [{
+			item: "twilightforest:castle_rune_brick 1 32767"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "35a8a473",
+		type: "item",
+		item: "twilightforest:cube_of_annihilation"
+	},
+	{
+		uid: "a9a41fa2",
+		type: "command",
+		auto: "invisible",
+		command: "/advancement grant @p only twilightforest:progress_castle"
+	}]
+}

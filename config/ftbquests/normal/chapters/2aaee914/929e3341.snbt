@@ -1,0 +1,49 @@
+{
+	title: "{bq.quest206.name}",
+	icon: "mekanism:basicblock 64 14",
+	x: 0.8333333333333333d,
+	y: 9.166666666666666d,
+	text: [
+		"{bq.quest206.desc}"
+	],
+	dependencies: [
+		"b149be6c"
+	],
+	tasks: [{
+		uid: "b2a5eb6d",
+		type: "item",
+		items: [{
+			item: "mekanism:basicblock 1 14"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "70978d12",
+		type: "item",
+		items: [{
+			item: "mekanism:basicblock 2 15"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "acc329dd",
+		type: "item",
+		items: [{
+			item: "mekanism:basicblock2 37"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "57894b02",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

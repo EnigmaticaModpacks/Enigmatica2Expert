@@ -1,0 +1,49 @@
+{
+	title: "{bq.quest636.name}",
+	icon: "thaumcraft:crucible",
+	x: 6.833333333333334d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest636.desc}"
+	],
+	dependencies: [
+		"4f409b3c"
+	],
+	size: 1.3333333333333333d,
+	tasks: [{
+		uid: "b45fa7c1",
+		type: "item",
+		items: [{
+			item: "thaumcraft:crucible"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "4b302d79",
+		type: "item",
+		items: [{
+			item: "minecraft:cauldron"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "69b33a88",
+		type: "item",
+		items: [{
+			item: "thaumcraft:salis_mundus"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c432195e",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

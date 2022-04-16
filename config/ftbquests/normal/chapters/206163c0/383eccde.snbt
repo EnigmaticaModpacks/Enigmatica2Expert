@@ -1,0 +1,28 @@
+{
+	title: "{bq.quest92.name}",
+	icon: "forestry:sturdy_machine",
+	x: -7.166666666666667d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest92.desc}"
+	],
+	dependencies: [
+		"009a4c27"
+	],
+	rewards: [{
+		uid: "c3b3d5ea",
+		type: "item",
+		item: "forestry:smoker"
+	},
+	{
+		uid: "247a7876",
+		type: "item",
+		item: "forestry:scoop"
+	},
+	{
+		uid: "4755c7dc",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has begun the Forestry questline!"
+	}]
+}

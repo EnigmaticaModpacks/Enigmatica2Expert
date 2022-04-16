@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest327.name}",
+	icon: "extrautils2:powerbattery",
+	x: 6.666666666666667d,
+	y: 6.166666666666667d,
+	text: [
+		"{bq.quest327.desc}"
+	],
+	dependencies: [
+		"0e08c73f"
+	],
+	tasks: [{
+		uid: "74cdf132",
+		type: "item",
+		items: [{
+			item: "extrautils2:powerbattery"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "d9f14b57",
+		type: "item",
+		items: [{
+			item: "extrautils2:powertransmitter"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "f6f05002",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

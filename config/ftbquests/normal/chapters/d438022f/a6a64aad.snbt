@@ -1,0 +1,33 @@
+{
+	title: "{bq.quest1008.name}",
+	icon: "cyclicmagic:solidifier",
+	x: -3.666666666666667d,
+	y: 19.166666666666668d,
+	text: [
+		"{bq.quest1008.desc}"
+	],
+	dependencies: [
+		"33b238ff",
+		"acabd0e8"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "e4df0ede",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:solidifier"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "32436374",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

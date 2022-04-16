@@ -1,0 +1,26 @@
+{
+	title: "{bq.quest649.name}",
+	icon: "thaumcraft:jar_normal",
+	x: 3.3333333333333335d,
+	y: 10.5d,
+	text: [
+		"{bq.quest649.desc}"
+	],
+	dependencies: [
+		"f85506a2"
+	],
+	tasks: [{
+		uid: "4ce86e85",
+		type: "item",
+		items: [{
+			item: "thaumcraft:jar_normal"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0ea5bb9a",
+		type: "choice",
+		table: 46
+	}]
+}

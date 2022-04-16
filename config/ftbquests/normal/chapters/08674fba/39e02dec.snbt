@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest441.name}",
+	icon: "advancedrocketry:oxygenvent",
+	x: 10.166666666666666d,
+	y: 7.166666666666667d,
+	text: [
+		"{bq.quest441.desc}"
+	],
+	dependencies: [
+		"8b514522"
+	],
+	tasks: [{
+		uid: "3e856e47",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:oxygenvent"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "a36b53bf",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

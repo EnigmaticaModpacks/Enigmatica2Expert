@@ -1,0 +1,53 @@
+{
+	title: "{bq.quest553.name}",
+	icon: {
+		id: "draconicevolution:draconic_staff_of_power",
+		tag: {
+			Energy: 48000000
+		},
+		ForgeCaps: {
+			Parent: {
+				Items: [],
+				Size: 27
+			}
+		}
+	},
+	x: 1.5d,
+	y: 10.0d,
+	text: [
+		"{bq.quest553.desc}"
+	],
+	dependencies: [
+		"965611ca",
+		"3d660158",
+		"0ae32b60"
+	],
+	tasks: [{
+		uid: "eda3e3f2",
+		type: "item",
+		items: [{
+			id: "draconicevolution:draconic_staff_of_power",
+			tag: {
+				Energy: 48000000
+			},
+			ForgeCaps: {
+				Parent: {
+					Items: [],
+					Size: 27
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9a1f2c4d",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "legendary"
+			}
+		}
+	}]
+}

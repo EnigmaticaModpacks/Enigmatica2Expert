@@ -1,0 +1,42 @@
+{
+	title: "{bq.quest130.name}",
+	icon: "tcomplement:high_oven_controller",
+	x: 0.625d,
+	y: 2.0d,
+	text: [
+		"{bq.quest130.desc}"
+	],
+	dependencies: [
+		"65ffe0b8"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "1e81eb5d",
+		type: "item",
+		items: [{
+			item: "tcomplement:high_oven_controller"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "01cb16c3",
+		type: "item",
+		items: [{
+			item: "tcomplement:scorched_block 24 3"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "38165d14",
+		type: "item",
+		items: [{
+			item: "tcomplement:high_oven_io"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "ddd16503",
+		type: "choice",
+		table: 32
+	}]
+}

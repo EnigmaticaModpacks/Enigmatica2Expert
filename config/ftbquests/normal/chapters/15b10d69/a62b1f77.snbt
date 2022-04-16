@@ -1,0 +1,40 @@
+{
+	title: "{bq.quest149.name}",
+	icon: "industrialforegoing:mob_duplicator",
+	x: 8.0d,
+	y: 4.75d,
+	text: [
+		"{bq.quest149.desc}"
+	],
+	dependencies: [
+		"74175c1c",
+		"04b829b7"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "ff01b2a5",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:mob_duplicator"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "df3ace41",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:mob_imprisonment_tool"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "f5f7818a",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "epic"
+			}
+		}
+	}]
+}

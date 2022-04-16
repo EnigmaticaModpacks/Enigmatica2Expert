@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest147.name}",
+	icon: "industrialforegoing:wither_builder",
+	x: 4.5d,
+	y: 5.166666666666667d,
+	text: [
+		"{bq.quest147.desc}"
+	],
+	dependencies: [
+		"0060934f"
+	],
+	tasks: [{
+		uid: "a15153c4",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:wither_builder"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "213efd0a",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

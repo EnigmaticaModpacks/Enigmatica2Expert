@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest208.name}",
+	icon: "mekanism:tierinstaller 1 1",
+	x: 10.166666666666666d,
+	y: 5.166666666666667d,
+	text: [
+		"{bq.quest208.desc}"
+	],
+	dependencies: [
+		"54c54cc4"
+	],
+	tasks: [{
+		uid: "8a920872",
+		type: "item",
+		items: [{
+			item: "mekanism:tierinstaller 1 1"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "50e31874",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,90 @@
+{
+	title: "{bq.quest1039.name}",
+	icon: {
+		id: "simple_trophies:trophy",
+		tag: {
+			TrophyColorGreen: 38,
+			TrophyShowsTooltip: 1b,
+			TrophyVariant: "gold",
+			TrophyItem: {
+				Count: 1b,
+				id: "enderio:block_enhanced_sag_mill",
+				Damage: 0s
+			},
+			TrophyColorBlue: 86,
+			TrophyColorRed: 33,
+			TrophyName: "§0EnderIO Master Trophy§r"
+		}
+	},
+	x: 12.0d,
+	y: 5.25d,
+	text: [
+		"{bq.quest1039.desc}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"1dcb614b",
+		"cf12b353",
+		"ff5a849e",
+		"24933c94",
+		"480b1742",
+		"cb5a4414",
+		"94086687",
+		"1ad53407",
+		"7a342e67",
+		"ce461315",
+		"d5c9fdda",
+		"e06ee7fb",
+		"5d6354b5",
+		"df17bb4d",
+		"e3ba78e0",
+		"ae82af5e",
+		"f1da7744",
+		"e1771256",
+		"c1453b27",
+		"f91632f4",
+		"a1061823",
+		"0cce2fa6",
+		"b36082c8",
+		"8c690e80",
+		"3712b4f9",
+		"65e9e105",
+		"8a6bd606",
+		"2265d20b",
+		"91920722",
+		"01295a5f",
+		"0b28de91",
+		"8764db1e",
+		"df96f36a",
+		"0c16a92b",
+		"2b56432b"
+	],
+	size: 1.5d,
+	rewards: [{
+		uid: "5d9d8dd8",
+		type: "item",
+		auto: "enabled",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 38,
+				TrophyShowsTooltip: 1b,
+				TrophyVariant: "gold",
+				TrophyItem: {
+					Count: 1b,
+					id: "enderio:block_enhanced_sag_mill",
+					Damage: 0s
+				},
+				TrophyColorBlue: 86,
+				TrophyColorRed: 33,
+				TrophyName: "§0EnderIO Master Trophy§r"
+			}
+		}
+	},
+	{
+		uid: "af4740ca",
+		type: "command",
+		auto: "invisible",
+		command: "/say §l@p§r has fully completed the §n§0Ender IO§r chapter!§r ```Congrats!```"
+	}]
+}

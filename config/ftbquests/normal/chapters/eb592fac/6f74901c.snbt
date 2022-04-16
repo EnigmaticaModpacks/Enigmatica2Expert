@@ -1,0 +1,50 @@
+{
+	title: "{bq.quest717.name}",
+	icon: "rftools:spawner",
+	x: 1.875d,
+	y: 3.1041666666666665d,
+	text: [
+		"{bq.quest717.desc}"
+	],
+	dependencies: [
+		"f6e8e410"
+	],
+	size: 1.2083333333333333d,
+	tasks: [{
+		uid: "7dbb8e11",
+		type: "item",
+		items: [{
+			item: "rftools:spawner"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "03a75d5d",
+		type: "item",
+		items: [{
+			item: "rftools:matter_beamer 3"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "5492d6bc",
+		type: "item",
+		items: [{
+			item: "rftools:syringe"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8bc05fec",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

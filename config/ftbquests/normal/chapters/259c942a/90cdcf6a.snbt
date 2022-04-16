@@ -1,0 +1,124 @@
+{
+	title: "{bq.quest692.name}",
+	icon: {
+		id: "simple_trophies:trophy",
+		tag: {
+			TrophyColorGreen: 48,
+			TrophyShowsTooltip: 1b,
+			TrophyVariant: "gold",
+			TrophyItem: {
+				ForgeCaps: {
+					Parent: {
+						Size: 3,
+						Items: []
+					}
+				},
+				Count: 1b,
+				id: "immersiveengineering:railgun",
+				tag: {
+					"IE:Shader": {
+						Count: 1b,
+						id: "immersiveengineering:shader",
+						tag: {
+							shader_name: "The Kindled"
+						},
+						Damage: 0s
+					}
+				},
+				Damage: 0s
+			},
+			TrophyColorBlue: 35,
+			TrophyColorRed: 130,
+			TrophyName: "§cImmersive Engineering Trophy§r"
+		}
+	},
+	x: 6.0d,
+	y: 6.0d,
+	text: [
+		"{bq.quest692.desc}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"f39d66de",
+		"afa99b2d",
+		"d2502995",
+		"31226025",
+		"54fa3132",
+		"6df9b7b0",
+		"01b7ebbb",
+		"55b49e24",
+		"f8802190",
+		"7f71a023",
+		"ba179fc3",
+		"6766877f",
+		"ee5087c9",
+		"1bb449e8",
+		"3e86795a",
+		"f1332f6f",
+		"a6cab614",
+		"d1a1d740",
+		"30fb1498",
+		"8e2ee44a",
+		"bf09a7ad",
+		"b34aca62",
+		"ec158bbd",
+		"84558dfe",
+		"0f21498d",
+		"75ccfbe1",
+		"79fa7257",
+		"ba6f9ec1",
+		"862cd6dd",
+		"33d1d4a3",
+		"4baae0d8",
+		"959882ea",
+		"876a8652",
+		"8c8d1535",
+		"2a9878a2",
+		"2de1b9db",
+		"1c4deb33"
+	],
+	size: 1.5d,
+	rewards: [{
+		uid: "8eed96d7",
+		type: "item",
+		auto: "enabled",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 48,
+				TrophyShowsTooltip: 1b,
+				TrophyVariant: "gold",
+				TrophyItem: {
+					ForgeCaps: {
+						Parent: {
+							Size: 3,
+							Items: []
+						}
+					},
+					Count: 1b,
+					id: "immersiveengineering:railgun",
+					tag: {
+						"IE:Shader": {
+							Count: 1b,
+							id: "immersiveengineering:shader",
+							tag: {
+								shader_name: "The Kindled"
+							},
+							Damage: 0s
+						}
+					},
+					Damage: 0s
+				},
+				TrophyColorBlue: 35,
+				TrophyColorRed: 130,
+				TrophyName: "§cImmersive Engineering Trophy§r"
+			}
+		}
+	},
+	{
+		uid: "9638a488",
+		type: "command",
+		auto: "invisible",
+		command: "/say §l@p§r has fully completed the §n§cImmersive Engineering§r chapter!§r ```Congrats!```"
+	}]
+}

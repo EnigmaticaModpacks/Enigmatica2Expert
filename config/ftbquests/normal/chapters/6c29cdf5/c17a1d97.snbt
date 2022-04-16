@@ -1,0 +1,39 @@
+{
+	title: "{bq.quest376.name}",
+	icon: {
+		id: "botania:specialflower",
+		tag: {
+			type: "thermalily"
+		}
+	},
+	x: 12.833333333333334d,
+	y: 7.666666666666667d,
+	text: [
+		"{bq.quest376.desc}"
+	],
+	dependencies: [
+		"5672d99b",
+		"95ce8a09"
+	],
+	tasks: [{
+		uid: "cdd27011",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "thermalily"
+			}
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "82351235",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

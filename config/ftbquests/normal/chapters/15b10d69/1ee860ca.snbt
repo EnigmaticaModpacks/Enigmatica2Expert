@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest135.name}",
+	icon: "industrialforegoing:laser_drill",
+	x: 9.5d,
+	y: 4.0d,
+	text: [
+		"{bq.quest135.desc}"
+	],
+	dependencies: [
+		"d36b9a80"
+	],
+	tasks: [{
+		uid: "5ef68395",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:laser_drill"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "a37ba219",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

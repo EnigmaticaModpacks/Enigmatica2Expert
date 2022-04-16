@@ -1,0 +1,40 @@
+{
+	title: "{bq.quest744.name}",
+	icon: "iceandfire:dragonegg_red",
+	x: 3.5d,
+	y: 1.25d,
+	text: [
+		"{bq.quest744.desc}"
+	],
+	dependencies: [
+		"dcb947b4"
+	],
+	tasks: [{
+		uid: "36cab091",
+		type: "item",
+		items: [{
+			item: "iceandfire:dragonegg_red"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "b5fe7435",
+		type: "item",
+		item: "iceandfire:dragonarmor_iron"
+	},
+	{
+		uid: "32351de7",
+		type: "item",
+		item: "iceandfire:dragonarmor_iron 1 1"
+	},
+	{
+		uid: "c55f01c5",
+		type: "item",
+		item: "iceandfire:dragonarmor_iron 1 2"
+	},
+	{
+		uid: "d64bd4f7",
+		type: "item",
+		item: "iceandfire:dragonarmor_iron 1 3"
+	}]
+}

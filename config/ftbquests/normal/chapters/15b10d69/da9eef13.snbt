@@ -1,0 +1,24 @@
+{
+	title: "{bq.quest133.name}",
+	icon: "industrialforegoing:book_manual",
+	x: -4.0d,
+	y: 1.0d,
+	text: [
+		"{bq.quest133.desc}"
+	],
+	dependencies: [
+		"09abfe41"
+	],
+	rewards: [{
+		uid: "40b9f989",
+		type: "item",
+		item: "industrialforegoing:conveyor",
+		count: 32
+	},
+	{
+		uid: "d35f8584",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has begun the Industrial Foregoing questline!"
+	}]
+}

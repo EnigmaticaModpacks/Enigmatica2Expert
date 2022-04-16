@@ -1,0 +1,27 @@
+{
+	title: "{bq.quest999.name}",
+	icon: "randomthings:ingredient 1 2",
+	x: -12.666666666666666d,
+	y: 11.166666666666666d,
+	text: [
+		"{bq.quest999.desc}"
+	],
+	dependencies: [
+		"dc869094"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "df2e3456",
+		type: "item",
+		items: [{
+			item: "randomthings:ingredient 1 2"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "68924c89",
+		type: "choice",
+		table: 125
+	}]
+}

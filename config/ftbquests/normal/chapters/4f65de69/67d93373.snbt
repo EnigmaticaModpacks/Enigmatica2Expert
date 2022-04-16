@@ -1,0 +1,27 @@
+{
+	title: "{bq.quest764.name}",
+	icon: "compactmachines3:machine 1 5",
+	x: 12.625d,
+	y: 5.041666666666667d,
+	text: [
+		"{bq.quest764.desc}"
+	],
+	dependencies: [
+		"3e4d0f4b"
+	],
+	tasks: [{
+		uid: "d296a875",
+		type: "item",
+		items: [{
+			item: "compactmachines3:machine 1 5"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "94b0d677",
+		type: "item",
+		item: "compactmachines3:tunneltool",
+		count: 6
+	}]
+}

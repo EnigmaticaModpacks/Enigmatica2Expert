@@ -1,0 +1,63 @@
+{
+	title: "{bq.quest875.name}",
+	icon: {
+		id: "thermalexpansion:machine",
+		Damage: 4s,
+		tag: {
+			RSControl: 0b,
+			Facing: 3b,
+			Energy: 0,
+			Level: 0b,
+			SideCache: [B;
+				3b,
+				1b,
+				2b,
+				2b,
+				2b,
+				2b
+			]
+		}
+	},
+	x: 15.333333333333334d,
+	y: 4.333333333333333d,
+	text: [
+		"{bq.quest875.desc}"
+	],
+	dependencies: [
+		"e2d39ad3"
+	],
+	tasks: [{
+		uid: "3141d38e",
+		type: "item",
+		items: [{
+			id: "thermalexpansion:machine",
+			Damage: 4s,
+			tag: {
+				RSControl: 0b,
+				Facing: 3b,
+				Energy: 0,
+				Level: 0b,
+				SideCache: [B;
+					3b,
+					1b,
+					2b,
+					2b,
+					2b,
+					2b
+				]
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "adc1676b",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

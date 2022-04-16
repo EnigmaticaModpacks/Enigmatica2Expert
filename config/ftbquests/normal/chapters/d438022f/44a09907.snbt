@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest1027.name}",
+	icon: "cyclicmagic:fan",
+	x: -9.0d,
+	y: 14.166666666666666d,
+	text: [
+		"{bq.quest1027.desc}"
+	],
+	dependencies: [
+		"5966422c"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "24aace88",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:fan"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "1798eb81",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

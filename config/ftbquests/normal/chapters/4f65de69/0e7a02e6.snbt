@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest621.name}",
+	icon: "conarm:armorstation",
+	x: -4.0d,
+	y: 5.0d,
+	text: [
+		"{bq.quest621.desc}"
+	],
+	dependencies: [
+		"c35399e6"
+	],
+	tasks: [{
+		uid: "15918b2e",
+		type: "item",
+		items: [{
+			item: "conarm:armorstation"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "854abc70",
+		type: "choice",
+		table: 41
+	},
+	{
+		uid: "cf1db0a3",
+		type: "item",
+		item: "conarm:book"
+	}]
+}

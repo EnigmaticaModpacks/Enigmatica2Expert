@@ -1,0 +1,28 @@
+{
+	title: "{bq.quest374.name}",
+	icon: "botania:pool",
+	x: 3.5416666666666665d,
+	y: 5.166666666666667d,
+	text: [
+		"{bq.quest374.desc}"
+	],
+	dependencies: [
+		"64be75e6",
+		"5672d99b"
+	],
+	size: 1.3333333333333333d,
+	tasks: [{
+		uid: "f062a3a6",
+		type: "item",
+		items: [{
+			item: "botania:pool"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "82b06a24",
+		type: "item",
+		item: "botania:blacklotus",
+		count: 10
+	}]
+}

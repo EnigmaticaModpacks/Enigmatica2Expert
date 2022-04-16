@@ -1,0 +1,39 @@
+{
+	title: "{bq.quest361.name}",
+	icon: {
+		id: "botania:specialflower",
+		tag: {
+			type: "puredaisy"
+		}
+	},
+	x: 3.5d,
+	y: 2.5d,
+	text: [
+		"{bq.quest361.desc}"
+	],
+	dependencies: [
+		"5672d99b",
+		"c8d050c2"
+	],
+	tasks: [{
+		uid: "9182c99f",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "puredaisy"
+			}
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "659ffa7f",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

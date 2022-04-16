@@ -1,0 +1,41 @@
+{
+	title: "{bq.quest603.name}",
+	icon: "bloodmagic:decorative_brick",
+	x: 9.166666666666666d,
+	y: 3.1666666666666665d,
+	text: [
+		"{bq.quest603.desc}"
+	],
+	dependencies: [
+		"32822e6b",
+		"170439ef"
+	],
+	tasks: [{
+		uid: "7f98fc0a",
+		type: "item",
+		items: [{
+			item: "bloodmagic:blood_rune 28"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "f0479341",
+		type: "item",
+		items: [{
+			item: "bloodmagic:decorative_brick 1 1"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "cb5810a6",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

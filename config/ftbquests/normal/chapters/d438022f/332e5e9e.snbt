@@ -1,0 +1,49 @@
+{
+	title: "{bq.quest952.name}",
+	icon: "bibliocraft:typesettingtable",
+	x: -12.666666666666666d,
+	y: 19.333333333333332d,
+	text: [
+		"{bq.quest952.desc}"
+	],
+	dependencies: [
+		"6eea845e"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "799d86be",
+		type: "item",
+		items: [{
+			item: "bibliocraft:typesettingtable"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "8970181f",
+		type: "item",
+		items: [{
+			item: "bibliocraft:printingpress"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "35b36cc9",
+		type: "item",
+		items: [{
+			item: "bibliocraft:enchantedplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "1fe81549",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "e15afee4",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

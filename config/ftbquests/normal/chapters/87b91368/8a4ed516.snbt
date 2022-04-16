@@ -1,0 +1,26 @@
+{
+	title: "{bq.quest945.name}",
+	icon: "iceandfire:dreadwood_log",
+	x: 4.75d,
+	y: 0.0d,
+	text: [
+		"{bq.quest945.desc}"
+	],
+	dependencies: [
+		"dcb947b4"
+	],
+	tasks: [{
+		uid: "899bb137",
+		type: "item",
+		items: [{
+			item: "iceandfire:dreadwood_planks"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "292effa1",
+		type: "choice",
+		table: 119
+	}]
+}

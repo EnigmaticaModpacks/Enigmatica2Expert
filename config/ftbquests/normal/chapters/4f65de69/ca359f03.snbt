@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest46.name}",
+	icon: {
+		id: "tconstruct:sharpening_kit",
+		tag: {
+			Material: "flint"
+		}
+	},
+	x: -2.375d,
+	y: 3.5d,
+	text: [
+		"{bq.quest46.desc}"
+	],
+	dependencies: [
+		"c35399e6"
+	],
+	tasks: [{
+		uid: "7442e924",
+		type: "item",
+		items: [{
+			item: "minecraft:flint 2"
+		}],
+		count: 2L
+	}],
+	rewards: [{
+		uid: "ed33f993",
+		type: "choice",
+		table: 18
+	}]
+}

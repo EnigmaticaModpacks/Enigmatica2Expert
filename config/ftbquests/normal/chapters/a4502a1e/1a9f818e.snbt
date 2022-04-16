@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest335.name}",
+	icon: {
+		id: "extrautils2:machine",
+		tag: {
+			Type: "extrautils2:generator_survival"
+		}
+	},
+	x: 11.0d,
+	y: 3.0d,
+	text: [
+		"{bq.quest335.desc}"
+	],
+	dependencies: [
+		"f31c5840"
+	],
+	tasks: [{
+		uid: "83d9e859",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:generator_survival"
+			}
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "baf785ef",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

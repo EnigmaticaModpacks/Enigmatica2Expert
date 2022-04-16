@@ -1,0 +1,59 @@
+{
+	title: "{bq.quest670.name}",
+	icon: "thaumcraft:golem_builder",
+	x: 9.833333333333332d,
+	y: 4.166666666666667d,
+	text: [
+		"{bq.quest670.desc}"
+	],
+	dependencies: [
+		"69992959"
+	],
+	size: 1.3333333333333333d,
+	tasks: [{
+		uid: "1e7a70f9",
+		type: "item",
+		items: [{
+			item: "minecraft:piston"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "7893c941",
+		type: "item",
+		items: [{
+			item: "minecraft:iron_bars"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "0c82486f",
+		type: "item",
+		items: [{
+			item: "minecraft:cauldron"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "bad0023e",
+		type: "item",
+		items: [{
+			item: "minecraft:anvil"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "59ff7fbd",
+		type: "item",
+		items: [{
+			item: "thaumcraft:table_stone"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9d9131c4",
+		type: "choice",
+		table: 57
+	}]
+}

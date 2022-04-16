@@ -1,0 +1,25 @@
+{
+	title: "{bq.quest743.name}",
+	icon: "iceandfire:myrmex_desert_egg 1 4",
+	x: 4.75d,
+	y: 1.25d,
+	text: [
+		"{bq.quest743.desc}"
+	],
+	dependencies: [
+		"f5163b70"
+	],
+	tasks: [{
+		uid: "dc1dda9a",
+		type: "item",
+		items: [{
+			item: "iceandfire:myrmex_desert_egg 1 4"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "b79b294f",
+		type: "choice",
+		table: 80
+	}]
+}

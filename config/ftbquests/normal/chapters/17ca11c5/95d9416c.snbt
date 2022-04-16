@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest928.name}",
+	icon: "buildinggadgets:constructionpastecontainercreative",
+	x: 2.375d,
+	y: 0.541666666666667d,
+	text: [
+		"{bq.quest928.desc}"
+	],
+	dependencies: [
+		"fbbabf40"
+	],
+	tasks: [{
+		uid: "8c5d0fd1",
+		type: "item",
+		items: [{
+			item: "buildinggadgets:constructionpastecontainercreative"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "784f0f94",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "legendary"
+			}
+		}
+	}]
+}

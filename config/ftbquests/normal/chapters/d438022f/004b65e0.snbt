@@ -1,0 +1,27 @@
+{
+	title: "{bq.quest987.name}",
+	icon: "randomthings:itemcollector",
+	x: -14.666666666666666d,
+	y: 7.833333333333333d,
+	text: [
+		"{bq.quest987.desc}"
+	],
+	dependencies: [
+		"dc869094"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "2425d98f",
+		type: "item",
+		items: [{
+			item: "randomthings:itemcollector"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "29049bfe",
+		type: "choice",
+		table: 123
+	}]
+}

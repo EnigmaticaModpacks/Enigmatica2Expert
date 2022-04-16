@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest326.name}",
+	icon: "extrautils2:decorativeglass 1 3",
+	x: 0.08333333333333337d,
+	y: 0.125d,
+	text: [
+		"{bq.quest326.desc}"
+	],
+	dependencies: [
+		"a1b2fa88"
+	],
+	size: 0.8333333333333334d,
+	tasks: [{
+		uid: "beda91c9",
+		type: "item",
+		items: [{
+			item: "extrautils2:decorativeglass 1 3"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "b71f8696",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

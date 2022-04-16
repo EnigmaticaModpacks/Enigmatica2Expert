@@ -1,0 +1,40 @@
+{
+	title: "{bq.quest320.name}",
+	icon: {
+		id: "actuallyadditions:item_battery_triple",
+		tag: {
+			Energy: 600000
+		}
+	},
+	x: -5.5d,
+	y: 8.5d,
+	text: [
+		"{bq.quest320.desc}"
+	],
+	dependencies: [
+		"e0be5c9a",
+		"0ebc3d1d"
+	],
+	tasks: [{
+		uid: "6996be59",
+		type: "item",
+		items: [{
+			id: "actuallyadditions:item_battery_triple",
+			tag: {
+				Energy: 600000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "91b0454d",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest517.name}",
+	icon: "nuclearcraft:crystallizer_idle",
+	x: 10.5d,
+	y: 4.833333333333333d,
+	text: [
+		"{bq.quest517.desc}"
+	],
+	dependencies: [
+		"3814ab8c",
+		"0bf36970",
+		"22336480"
+	],
+	tasks: [{
+		uid: "aacc2fc0",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:crystallizer_idle"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "e85b9366",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

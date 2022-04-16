@@ -1,0 +1,21 @@
+{
+	title: "{bq.quest909.name}",
+	icon: "extrautils2:rainbowgenerator",
+	disable_toast: true,
+	x: 14.458333333333334d,
+	y: 0.9166666666666667d,
+	text: [
+		"{bq.quest909.desc}"
+	],
+	dependencies: [
+		"a9db8bf5",
+		"1b03d73c"
+	],
+	size: 0.6666666666666666d,
+	rewards: [{
+		uid: "29561b04",
+		type: "xp_levels",
+		auto: "enabled",
+		xp_levels: 10
+	}]
+}

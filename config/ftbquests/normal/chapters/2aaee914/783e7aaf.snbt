@@ -1,0 +1,39 @@
+{
+	title: "{bq.quest188.name}",
+	icon: {
+		id: "mekanism:machineblock3",
+		tag: {
+			mekData: {}
+		}
+	},
+	x: 10.166666666666666d,
+	y: 7.833333333333333d,
+	text: [
+		"{bq.quest188.desc}"
+	],
+	dependencies: [
+		"f79e06c9"
+	],
+	tasks: [{
+		uid: "104c5f8b",
+		type: "item",
+		items: [{
+			id: "mekanism:machineblock3",
+			tag: {
+				mekData: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a9de11fe",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "epic"
+			}
+		}
+	}]
+}

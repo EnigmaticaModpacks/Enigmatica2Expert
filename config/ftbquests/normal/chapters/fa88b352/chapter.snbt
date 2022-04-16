@@ -1,0 +1,10 @@
+{
+	title: "{bq.chapter17.name}",
+	icon: "nuclearcraft:fission_controller_new_active",
+	description: [
+		"{bq.chapter17.desc}"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

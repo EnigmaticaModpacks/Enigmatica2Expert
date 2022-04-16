@@ -1,0 +1,41 @@
+{
+	title: "{bq.quest774.name}",
+	icon: "rftools:endergenic",
+	x: -1.875d,
+	y: -0.6458333333333334d,
+	text: [
+		"{bq.quest774.desc}"
+	],
+	dependencies: [
+		"f6e8e410"
+	],
+	size: 1.2083333333333333d,
+	tasks: [{
+		uid: "a34dff4a",
+		type: "item",
+		items: [{
+			item: "rftools:pearl_injector"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "7d317de7",
+		type: "item",
+		items: [{
+			item: "rftools:endergenic 4"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9c7fa959",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

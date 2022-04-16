@@ -1,0 +1,39 @@
+{
+	title: "{bq.quest394.name}",
+	icon: {
+		id: "botania:specialflower",
+		tag: {
+			type: "narslimmus"
+		}
+	},
+	x: 13.166666666666666d,
+	y: 6.666666666666667d,
+	text: [
+		"{bq.quest394.desc}"
+	],
+	dependencies: [
+		"5672d99b",
+		"95ce8a09"
+	],
+	tasks: [{
+		uid: "140104b4",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "narslimmus"
+			}
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "34b41c22",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

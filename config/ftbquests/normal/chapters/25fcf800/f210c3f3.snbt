@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest484.name}",
+	icon: "environmentaltech:ionite_crystal",
+	x: 5.25d,
+	y: 8.0d,
+	text: [
+		"{bq.quest484.desc}"
+	],
+	dependencies: [
+		"ebbfcb77"
+	],
+	tasks: [{
+		uid: "4063e4b2",
+		type: "item",
+		items: [{
+			item: "environmentaltech:ionite_crystal"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "85b65405",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

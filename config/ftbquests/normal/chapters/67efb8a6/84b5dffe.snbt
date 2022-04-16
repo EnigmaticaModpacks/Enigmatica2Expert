@@ -1,0 +1,51 @@
+{
+	title: "{bq.quest536.name}",
+	icon: {
+		id: "draconicevolution:wyvern_shovel",
+		tag: {
+			Energy: 2000000
+		},
+		ForgeCaps: {
+			Parent: {
+				Items: [],
+				Size: 9
+			}
+		}
+	},
+	x: 4.5d,
+	y: 11.0d,
+	text: [
+		"{bq.quest536.desc}"
+	],
+	dependencies: [
+		"64f8083b"
+	],
+	tasks: [{
+		uid: "630fbd31",
+		type: "item",
+		items: [{
+			id: "draconicevolution:wyvern_shovel",
+			tag: {
+				Energy: 2000000
+			},
+			ForgeCaps: {
+				Parent: {
+					Items: [],
+					Size: 9
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "5230d06b",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

@@ -1,0 +1,26 @@
+{
+	title: "{bq.quest674.name}",
+	icon: "thaumcraft:void_seed",
+	x: 12.5d,
+	y: 2.5d,
+	text: [
+		"{bq.quest674.desc}"
+	],
+	dependencies: [
+		"644b9777"
+	],
+	tasks: [{
+		uid: "a14dea7a",
+		type: "item",
+		items: [{
+			item: "thaumcraft:void_seed"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d2984387",
+		type: "choice",
+		table: 59
+	}]
+}

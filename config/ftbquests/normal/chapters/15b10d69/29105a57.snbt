@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest141.name}",
+	icon: "industrialforegoing:range_addon 1 9",
+	x: 10.0d,
+	y: 1.0d,
+	text: [
+		"{bq.quest141.desc}"
+	],
+	dependencies: [
+		"74175c1c"
+	],
+	tasks: [{
+		uid: "57d81738",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:range_addon"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "2e104a76",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}
