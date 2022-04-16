@@ -15,7 +15,7 @@
 		items: [{
 			item: "twilightforest:magic_map_empty"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

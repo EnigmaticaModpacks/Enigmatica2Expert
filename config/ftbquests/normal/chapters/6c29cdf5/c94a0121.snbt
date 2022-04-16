@@ -16,7 +16,7 @@
 		items: [{
 			item: "botania:shimmerwoodplanks"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

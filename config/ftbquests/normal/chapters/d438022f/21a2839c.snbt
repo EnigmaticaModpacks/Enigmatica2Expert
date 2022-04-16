@@ -16,7 +16,7 @@
 		items: [{
 			item: "cyclicmagic:block_user"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

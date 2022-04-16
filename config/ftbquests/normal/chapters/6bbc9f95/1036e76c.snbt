@@ -48,7 +48,7 @@
 		items: [{
 			item: "thaumcraft:table_stone"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -15,7 +15,7 @@
 		items: [{
 			item: "thaumcraft:jar_void"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

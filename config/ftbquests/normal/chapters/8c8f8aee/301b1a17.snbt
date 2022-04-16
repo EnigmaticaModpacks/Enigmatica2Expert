@@ -15,7 +15,7 @@
 		items: [{
 			item: "actuallyadditions:block_shock_suppressor"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

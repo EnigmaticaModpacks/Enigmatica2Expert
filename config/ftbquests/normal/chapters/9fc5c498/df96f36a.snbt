@@ -15,7 +15,7 @@
 		items: [{
 			item: "enderio:block_cap_bank 1 1"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

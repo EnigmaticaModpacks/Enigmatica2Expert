@@ -15,7 +15,7 @@
 		items: [{
 			item: "bloodmagic:sigil_divination"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

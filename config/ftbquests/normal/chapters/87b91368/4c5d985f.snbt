@@ -15,7 +15,7 @@
 		items: [{
 			item: "rats:rat_upgrade_shears"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

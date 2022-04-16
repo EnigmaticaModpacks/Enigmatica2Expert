@@ -15,7 +15,7 @@
 		items: [{
 			item: "thaumcraft:stone_porous"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

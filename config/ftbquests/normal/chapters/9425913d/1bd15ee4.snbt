@@ -15,7 +15,7 @@
 		items: [{
 			item: "psi:cad_assembler"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	},
 	{
@@ -24,7 +24,7 @@
 		items: [{
 			item: "psi:programmer"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

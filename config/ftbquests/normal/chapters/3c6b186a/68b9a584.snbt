@@ -15,7 +15,7 @@
 		items: [{
 			item: "ic2:te 1 63"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	},
 	{
@@ -26,7 +26,7 @@
 			Damage: 62s,
 			tag: {}
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

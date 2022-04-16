@@ -29,7 +29,7 @@
 		items: [{
 			item: "rats:rat_nugget_ore 1 47"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

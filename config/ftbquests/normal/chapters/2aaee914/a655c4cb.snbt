@@ -15,7 +15,7 @@
 		items: [{
 			item: "mekanismgenerators:generator 1 4"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

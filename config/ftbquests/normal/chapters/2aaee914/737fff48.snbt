@@ -15,7 +15,7 @@
 		items: [{
 			item: "mekanism:machineblock2 1 5"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

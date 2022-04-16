@@ -15,7 +15,7 @@
 		items: [{
 			item: "enderio:block_attractor_obelisk"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -16,7 +16,7 @@
 		items: [{
 			item: "bibliocraft:paintingpress"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	},
 	{
@@ -28,7 +28,7 @@
 				blank: 1b
 			}
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	},
 	{

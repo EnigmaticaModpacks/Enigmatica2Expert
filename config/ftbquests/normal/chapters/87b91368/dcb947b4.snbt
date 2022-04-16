@@ -57,7 +57,7 @@
 		{
 			item: "excompressum:bait 1 12"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

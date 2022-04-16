@@ -22,8 +22,7 @@
 			tag: {
 				orb: "bloodmagic:archmage"
 			}
-		}],
-		ignore_damage: true
+		}]
 	}],
 	rewards: [{
 		uid: "e6210afd",

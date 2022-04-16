@@ -16,7 +16,7 @@
 		items: [{
 			item: "appliedenergistics2:part 1 360"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

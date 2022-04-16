@@ -15,7 +15,7 @@
 		items: [{
 			item: "enderio:block_combustion_generator"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

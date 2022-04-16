@@ -15,7 +15,7 @@
 		items: [{
 			item: "rats:purifying_liquid"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

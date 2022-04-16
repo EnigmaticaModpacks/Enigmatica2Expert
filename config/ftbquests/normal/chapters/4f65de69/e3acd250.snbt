@@ -15,7 +15,7 @@
 		items: [{
 			item: "cookingforblockheads:cooking_table"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	},
 	{
@@ -24,7 +24,7 @@
 		items: [{
 			item: "cookingforblockheads:oven"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	},
 	{
@@ -33,7 +33,7 @@
 		items: [{
 			item: "cookingforblockheads:fridge 2"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	},
 	{
@@ -42,7 +42,7 @@
 		items: [{
 			item: "cookingforblockheads:counter"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	},
 	{
@@ -51,7 +51,7 @@
 		items: [{
 			item: "cookingforblockheads:tool_rack"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

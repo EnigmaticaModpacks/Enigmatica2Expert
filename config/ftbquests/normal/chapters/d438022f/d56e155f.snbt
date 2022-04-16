@@ -16,7 +16,7 @@
 		items: [{
 			item: "cyclicmagic:builder_pattern"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

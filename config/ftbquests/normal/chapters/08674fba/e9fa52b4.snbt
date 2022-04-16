@@ -16,7 +16,7 @@
 		items: [{
 			item: "advancedrocketry:guidancecomputer"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	},
 	{
@@ -25,7 +25,7 @@
 		items: [{
 			item: "advancedrocketry:planetidchip"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	},
 	{
@@ -34,7 +34,7 @@
 		items: [{
 			item: "advancedrocketry:seat"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	},
 	{
@@ -43,7 +43,7 @@
 		items: [{
 			item: "advancedrocketry:fueltank"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	},
 	{
@@ -52,7 +52,7 @@
 		items: [{
 			item: "advancedrocketry:rocketmotor"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

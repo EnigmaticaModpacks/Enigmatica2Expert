@@ -15,7 +15,7 @@
 		items: [{
 			item: "enderio:item_stellar_alloy_helmet"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	},
 	{
@@ -24,7 +24,7 @@
 		items: [{
 			item: "enderio:item_stellar_alloy_chestplate"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	},
 	{
@@ -33,7 +33,7 @@
 		items: [{
 			item: "enderio:item_stellar_alloy_leggings"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	},
 	{
@@ -42,7 +42,7 @@
 		items: [{
 			item: "enderio:item_stellar_alloy_boots"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

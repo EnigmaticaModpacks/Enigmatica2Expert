@@ -15,7 +15,7 @@
 		items: [{
 			item: "draconicevolution:fusion_crafting_core"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -23,7 +23,7 @@
 				charge: 1.0E7d
 			}
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	},
 	{
@@ -35,7 +35,7 @@
 				charge: 1.0E7d
 			}
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	},
 	{
@@ -47,7 +47,7 @@
 				charge: 1.0E7d
 			}
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	},
 	{
@@ -59,7 +59,7 @@
 				charge: 1.0E7d
 			}
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

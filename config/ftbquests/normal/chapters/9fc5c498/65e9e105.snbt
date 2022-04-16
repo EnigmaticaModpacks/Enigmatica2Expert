@@ -15,7 +15,7 @@
 		items: [{
 			item: "enderio:block_slice_and_splice"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

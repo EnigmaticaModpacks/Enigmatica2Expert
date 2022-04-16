@@ -16,7 +16,7 @@
 		items: [{
 			item: "avaritia:infinity_bow"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

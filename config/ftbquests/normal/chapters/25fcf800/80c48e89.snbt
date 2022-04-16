@@ -15,7 +15,7 @@
 		items: [{
 			item: "environmentaltech:nano_cont_personal_1 1 32767"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -16,7 +16,7 @@
 		items: [{
 			item: "appliedenergistics2:wireless_access_point"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

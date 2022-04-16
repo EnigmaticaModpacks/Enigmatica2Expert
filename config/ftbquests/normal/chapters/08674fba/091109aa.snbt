@@ -16,7 +16,7 @@
 		items: [{
 			item: "libvulpes:forgepowerinput 2"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

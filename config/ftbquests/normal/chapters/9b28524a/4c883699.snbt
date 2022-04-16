@@ -16,7 +16,7 @@
 		items: [{
 			item: "bloodmagic:blood_rune 28"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	},
 	{
@@ -25,7 +25,7 @@
 		items: [{
 			item: "bloodmagic:decorative_brick 1 1"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

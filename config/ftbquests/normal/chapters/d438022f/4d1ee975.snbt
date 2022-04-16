@@ -18,7 +18,7 @@
 		items: [{
 			item: "quark:slime_bucket"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

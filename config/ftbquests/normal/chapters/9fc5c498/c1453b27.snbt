@@ -15,7 +15,7 @@
 		items: [{
 			item: "enderio:item_end_steel_helmet"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	},
 	{
@@ -24,7 +24,7 @@
 		items: [{
 			item: "enderio:item_end_steel_chestplate"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	},
 	{
@@ -33,7 +33,7 @@
 		items: [{
 			item: "enderio:item_end_steel_leggings"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	},
 	{
@@ -42,7 +42,7 @@
 		items: [{
 			item: "enderio:item_end_steel_boots"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

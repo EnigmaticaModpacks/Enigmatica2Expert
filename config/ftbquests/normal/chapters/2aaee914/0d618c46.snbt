@@ -15,7 +15,7 @@
 		items: [{
 			item: "mekanism:roadplasticblock 1 15"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

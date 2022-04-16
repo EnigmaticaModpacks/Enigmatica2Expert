@@ -17,7 +17,7 @@
 		items: [{
 			item: "cyclicmagic:block_hydrator"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -17,7 +17,7 @@
 			id: "cyclicmagic:cyclic_wand_build",
 			tag: {}
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

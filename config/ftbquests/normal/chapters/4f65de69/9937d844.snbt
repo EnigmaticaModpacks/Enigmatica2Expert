@@ -15,7 +15,7 @@
 		items: [{
 			item: "conditionoverload:wicked_jewel"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

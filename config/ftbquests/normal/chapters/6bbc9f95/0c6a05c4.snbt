@@ -40,7 +40,7 @@
 		items: [{
 			item: "minecraft:lava_bucket"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

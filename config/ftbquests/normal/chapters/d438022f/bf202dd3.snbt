@@ -22,7 +22,7 @@
 		items: [{
 			item: "rustic:liquid_barrel"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -15,7 +15,7 @@
 		items: [{
 			item: "eyeofdragons:eye_of_firedragon"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

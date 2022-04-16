@@ -16,7 +16,7 @@
 		items: [{
 			item: "thaumcraft:goggles"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

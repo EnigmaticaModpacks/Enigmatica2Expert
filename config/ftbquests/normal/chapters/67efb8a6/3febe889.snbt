@@ -15,7 +15,7 @@
 		items: [{
 			item: "draconicevolution:ender_energy_manipulator"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

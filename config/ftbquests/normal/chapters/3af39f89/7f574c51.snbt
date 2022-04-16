@@ -15,7 +15,7 @@
 		items: [{
 			item: "thermalexpansion:augment 1 323"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

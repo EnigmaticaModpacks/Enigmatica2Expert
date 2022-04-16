@@ -16,7 +16,7 @@
 		items: [{
 			item: "extrautils2:chickenring 1 1"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -15,7 +15,7 @@
 		items: [{
 			item: "enderio:block_aversion_obelisk"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -16,7 +16,7 @@
 		items: [{
 			item: "appliedenergistics2:crafting_accelerator"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	},
 	{
@@ -25,7 +25,7 @@
 		items: [{
 			item: "appliedenergistics2:crafting_storage_1k"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

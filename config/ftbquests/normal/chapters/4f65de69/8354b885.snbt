@@ -19,7 +19,7 @@
 			id: "cyclicmagic:book_ender",
 			tag: {}
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

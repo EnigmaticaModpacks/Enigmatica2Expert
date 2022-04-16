@@ -15,7 +15,7 @@
 		items: [{
 			item: "thaumcraft:research_table"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	},
 	{
@@ -24,7 +24,7 @@
 		items: [{
 			item: "thaumcraft:scribing_tools"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	},
 	{

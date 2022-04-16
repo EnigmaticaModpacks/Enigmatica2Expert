@@ -15,7 +15,6 @@
 		items: [{
 			item: "bloodmagic:blood_rune 1 5"
 		}],
-		ignore_damage: true,
 		ignore_nbt: 1b
 	}],
 	rewards: [{

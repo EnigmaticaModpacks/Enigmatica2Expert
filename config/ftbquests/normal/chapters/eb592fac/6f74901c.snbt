@@ -16,7 +16,7 @@
 		items: [{
 			item: "rftools:spawner"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	},
 	{
@@ -25,7 +25,7 @@
 		items: [{
 			item: "rftools:matter_beamer 3"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	},
 	{
@@ -34,7 +34,7 @@
 		items: [{
 			item: "rftools:syringe"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -15,7 +15,7 @@
 		items: [{
 			item: "ic2:crop_stick 10"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

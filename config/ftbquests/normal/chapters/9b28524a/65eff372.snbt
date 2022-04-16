@@ -15,7 +15,7 @@
 		items: [{
 			item: "bloodmagic:blood_tank"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -22,8 +22,7 @@
 			tag: {
 				orb: "bloodmagic:magician"
 			}
-		}],
-		ignore_damage: true
+		}]
 	}],
 	rewards: [{
 		uid: "0ff5bef8",

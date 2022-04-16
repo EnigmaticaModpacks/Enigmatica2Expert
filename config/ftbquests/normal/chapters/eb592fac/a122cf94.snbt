@@ -16,7 +16,7 @@
 		items: [{
 			item: "rftools:storage_module_tablet"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

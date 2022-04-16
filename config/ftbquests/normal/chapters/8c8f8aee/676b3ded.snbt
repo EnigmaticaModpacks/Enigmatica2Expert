@@ -15,7 +15,7 @@
 		items: [{
 			item: "actuallyadditions:block_lava_factory_controller"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

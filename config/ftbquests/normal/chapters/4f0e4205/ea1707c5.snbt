@@ -15,7 +15,7 @@
 		items: [{
 			item: "twilightforest:castle_rune_brick 1 32767"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

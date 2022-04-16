@@ -16,7 +16,7 @@
 		items: [{
 			item: "enderio:block_powered_spawner"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

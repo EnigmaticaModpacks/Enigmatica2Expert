@@ -15,7 +15,7 @@
 		items: [{
 			item: "industrialforegoing:infinity_drill"
 		}],
-		ignore_damage: true,
+		
 		ignore_nbt: 1b
 	}],
 	rewards: [{
