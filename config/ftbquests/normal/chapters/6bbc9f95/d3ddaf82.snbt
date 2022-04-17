@@ -15,7 +15,6 @@
 		items: [{
 			item: "thaumcraft:smelter_thaumium"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

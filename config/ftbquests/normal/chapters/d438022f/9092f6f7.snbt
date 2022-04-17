@@ -16,7 +16,6 @@
 		items: [{
 			item: "randomthings:ingredient 1 2"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

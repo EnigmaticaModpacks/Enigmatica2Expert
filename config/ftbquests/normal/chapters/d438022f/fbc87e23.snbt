@@ -16,7 +16,6 @@
 		items: [{
 			item: "darkutils:focus_sash"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

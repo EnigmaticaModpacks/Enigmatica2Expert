@@ -16,7 +16,7 @@
 		items: [{
 			item: "extrautils2:angelblock"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "6cf23f18",

@@ -16,7 +16,6 @@
 		items: [{
 			item: "cyclicmagic:block_forester"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

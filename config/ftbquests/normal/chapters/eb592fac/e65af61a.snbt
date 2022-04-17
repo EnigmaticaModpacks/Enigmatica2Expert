@@ -16,7 +16,6 @@
 		items: [{
 			item: "rftools:rf_monitor"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

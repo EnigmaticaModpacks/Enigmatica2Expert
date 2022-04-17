@@ -16,7 +16,7 @@
 		items: [{
 			item: "astralsorcery:blockritualpedestal"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "cc874c6e",

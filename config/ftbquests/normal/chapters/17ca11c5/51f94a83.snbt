@@ -19,7 +19,6 @@
 		items: [{
 			item: "avaritia:infinity_sword"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

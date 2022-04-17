@@ -15,7 +15,6 @@
 		items: [{
 			item: "advancedrocketry:alienwood"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

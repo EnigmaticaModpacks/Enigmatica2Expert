@@ -16,7 +16,6 @@
 		items: [{
 			item: "requious:tinkers_disassembler"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

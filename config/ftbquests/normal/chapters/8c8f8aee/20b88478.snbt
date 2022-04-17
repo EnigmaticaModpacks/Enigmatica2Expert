@@ -15,7 +15,6 @@
 		items: [{
 			item: "actuallyadditions:item_tele_staff"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

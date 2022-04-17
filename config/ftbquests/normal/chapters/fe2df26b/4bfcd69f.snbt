@@ -16,7 +16,6 @@
 		items: [{
 			item: "appliedenergistics2:controller"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

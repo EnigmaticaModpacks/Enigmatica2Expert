@@ -40,7 +40,6 @@
 		items: [{
 			item: "minecraft:lava_bucket"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -15,7 +15,6 @@
 		items: [{
 			item: "biomesoplenty:biome_finder"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -25,7 +24,6 @@
 			id: "naturescompass:naturescompass",
 			tag: {}
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

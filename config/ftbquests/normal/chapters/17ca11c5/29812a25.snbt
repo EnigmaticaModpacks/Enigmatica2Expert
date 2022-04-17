@@ -15,7 +15,6 @@
 		items: [{
 			item: "extendedcrafting:crafting_core"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -24,7 +23,6 @@
 		items: [{
 			item: "extendedcrafting:pedestal 20"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -23,7 +23,7 @@
 				Type: "extrautils2:generator"
 			}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "603f4b15",

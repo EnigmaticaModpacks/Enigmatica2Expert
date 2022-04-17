@@ -15,7 +15,7 @@
 		items: [{
 			item: "advancedrocketry:cuttingmachine"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "2c3e7451",
@@ -23,7 +23,7 @@
 		items: [{
 			item: "advancedrocketry:sawblade"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "7582387a",
@@ -31,7 +31,7 @@
 		items: [{
 			item: "libvulpes:motor"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "c9939e55",
@@ -39,7 +39,7 @@
 		items: [{
 			item: "libvulpes:forgepowerinput"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "4ec2c341",
@@ -47,7 +47,7 @@
 		items: [{
 			item: "libvulpes:hatch"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "60491ffa",
@@ -55,7 +55,7 @@
 		items: [{
 			item: "libvulpes:hatch 1 1"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "17559d22",

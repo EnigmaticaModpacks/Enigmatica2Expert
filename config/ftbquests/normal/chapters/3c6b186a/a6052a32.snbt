@@ -15,7 +15,6 @@
 		items: [{
 			item: "ic2:fluid_cell"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

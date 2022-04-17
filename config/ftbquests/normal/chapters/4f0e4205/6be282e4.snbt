@@ -15,7 +15,6 @@
 		items: [{
 			item: "twilightforest:alpha_fur"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

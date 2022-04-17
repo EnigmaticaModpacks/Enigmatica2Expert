@@ -15,7 +15,6 @@
 		items: [{
 			item: "usefulrailroads:rail_teleport"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

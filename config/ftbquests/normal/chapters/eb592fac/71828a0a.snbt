@@ -16,7 +16,6 @@
 		items: [{
 			item: "rftools:pearl_injector"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -25,7 +24,6 @@
 		items: [{
 			item: "rftools:endergenic 4"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

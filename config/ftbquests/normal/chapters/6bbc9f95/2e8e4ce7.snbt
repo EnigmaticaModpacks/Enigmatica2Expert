@@ -15,7 +15,6 @@
 		items: [{
 			item: "thaumcraft:arcane_workbench"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -32,7 +31,6 @@
 		items: [{
 			item: "thaumcraft:salis_mundus"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

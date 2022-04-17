@@ -15,7 +15,7 @@
 		items: [{
 			item: "mekanism:ingot 1 3"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "815ab32b",

@@ -16,7 +16,6 @@
 		items: [{
 			item: "cyclicmagic:glass_strong"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

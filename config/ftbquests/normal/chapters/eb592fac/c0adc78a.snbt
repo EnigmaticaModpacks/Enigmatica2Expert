@@ -15,7 +15,6 @@
 		items: [{
 			item: "rftoolsdim:phased_field_generator"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

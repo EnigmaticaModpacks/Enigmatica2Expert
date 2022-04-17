@@ -17,7 +17,7 @@
 		items: [{
 			item: "nuclearcraft:fission_controller_new_fixed"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "263dd45a",

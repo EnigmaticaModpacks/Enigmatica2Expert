@@ -16,7 +16,7 @@
 		items: [{
 			item: "mekanism:controlcircuit 1 1"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "0a5e8039",

@@ -21,7 +21,6 @@
 			Damage: 1s,
 			tag: {}
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

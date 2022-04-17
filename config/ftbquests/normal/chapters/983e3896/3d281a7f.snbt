@@ -15,7 +15,7 @@
 		items: [{
 			item: "astralsorcery:itemhandtelescope"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "22c2062d",

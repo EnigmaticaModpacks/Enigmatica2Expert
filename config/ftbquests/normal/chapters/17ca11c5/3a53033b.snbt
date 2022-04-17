@@ -15,7 +15,6 @@
 		items: [{
 			item: "rats:creative_cheese"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

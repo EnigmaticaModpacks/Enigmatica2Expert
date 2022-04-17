@@ -15,7 +15,6 @@
 		items: [{
 			item: "deepmoblearning:soot_covered_plate"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

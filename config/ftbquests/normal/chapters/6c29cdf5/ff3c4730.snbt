@@ -24,7 +24,7 @@
 				type: "solegnolia"
 			}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "313c9339",

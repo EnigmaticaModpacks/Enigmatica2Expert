@@ -22,7 +22,7 @@
 			item: "mekanism:oreblock"
 		}],
 		count: 2L,
-		ignore_damage: true
+		
 	},
 	{
 		uid: "59d716f9",

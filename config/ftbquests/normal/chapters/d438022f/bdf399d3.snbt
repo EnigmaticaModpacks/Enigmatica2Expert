@@ -16,7 +16,6 @@
 		items: [{
 			item: "cyclicmagic:auto_crafter"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

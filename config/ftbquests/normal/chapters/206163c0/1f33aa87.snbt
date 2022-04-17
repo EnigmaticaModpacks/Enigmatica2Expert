@@ -15,7 +15,7 @@
 		items: [{
 			item: "forestry:rainmaker"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "8c0b6a07",

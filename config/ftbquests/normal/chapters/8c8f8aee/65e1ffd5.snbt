@@ -16,7 +16,7 @@
 		items: [{
 			item: "actuallyadditions:item_misc 1 24"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "5cffa3c1",

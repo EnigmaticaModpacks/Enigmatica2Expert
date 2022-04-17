@@ -16,7 +16,7 @@
 		items: [{
 			item: "botania:manaresource 1 5"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "d7e99ee4",

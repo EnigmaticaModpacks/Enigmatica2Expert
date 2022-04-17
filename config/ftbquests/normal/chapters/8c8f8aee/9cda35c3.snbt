@@ -20,7 +20,7 @@
 		items: [{
 			item: "biomesoplenty:terrestrial_artifact"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "7a8dc41a",

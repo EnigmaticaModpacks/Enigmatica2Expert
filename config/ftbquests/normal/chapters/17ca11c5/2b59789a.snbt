@@ -20,7 +20,7 @@
 				Energy: 1073741823
 			}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "6ed8266e",

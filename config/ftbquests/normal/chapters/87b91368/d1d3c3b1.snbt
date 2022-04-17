@@ -33,7 +33,7 @@
 		{
 			item: "animania:wool 1 6"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "63c225c1",

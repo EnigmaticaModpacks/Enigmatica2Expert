@@ -16,7 +16,7 @@
 		items: [{
 			item: "astralsorcery:blockmachine"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "75a72f14",

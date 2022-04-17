@@ -16,7 +16,7 @@
 		items: [{
 			item: "nuclearcraft:part 1 3"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "44ff3899",

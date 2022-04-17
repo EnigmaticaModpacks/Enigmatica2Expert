@@ -15,7 +15,6 @@
 		items: [{
 			item: "immersivepetroleum:metal_device"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

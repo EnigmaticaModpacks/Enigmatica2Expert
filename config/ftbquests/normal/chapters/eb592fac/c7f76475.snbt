@@ -16,7 +16,7 @@
 		items: [{
 			item: "rftoolsdim:dimension_builder"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "a934ff24",

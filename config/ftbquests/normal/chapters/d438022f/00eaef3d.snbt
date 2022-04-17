@@ -16,7 +16,6 @@
 		items: [{
 			item: "openblocks:auto_anvil"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

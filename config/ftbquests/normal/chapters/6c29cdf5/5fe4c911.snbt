@@ -24,7 +24,7 @@
 				type: "hopperhock"
 			}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "6aa1c820",

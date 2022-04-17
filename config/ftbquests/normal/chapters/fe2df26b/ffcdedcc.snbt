@@ -16,7 +16,6 @@
 		items: [{
 			item: "appliedenergistics2:material 1 58"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

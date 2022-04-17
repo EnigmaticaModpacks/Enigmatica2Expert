@@ -16,7 +16,7 @@
 		items: [{
 			item: "advancedrocketry:rocketbuilder"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "df6a2f0b",
@@ -24,7 +24,7 @@
 		items: [{
 			item: "advancedrocketry:launchpad 9"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "9f75c953",
@@ -32,7 +32,7 @@
 		items: [{
 			item: "advancedrocketry:structuretower 4"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "4b46745f",
@@ -40,7 +40,7 @@
 		items: [{
 			item: "advancedrocketry:fuelingstation"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "a1eff8ec",

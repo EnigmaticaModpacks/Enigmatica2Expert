@@ -15,7 +15,7 @@
 		items: [{
 			item: "thermalexpansion:augment 1 337"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "9294ac6a",

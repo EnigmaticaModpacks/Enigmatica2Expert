@@ -19,7 +19,6 @@
 			id: "dwmh:ocarina",
 			tag: {}
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -15,7 +15,6 @@
 		items: [{
 			item: "thaumcraft:everfull_urn"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

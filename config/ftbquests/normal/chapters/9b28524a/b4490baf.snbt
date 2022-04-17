@@ -18,7 +18,6 @@
 		items: [{
 			item: "bloodmagic:living_armour_helmet"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -28,7 +27,6 @@
 			id: "bloodmagic:living_armour_chest",
 			tag: {}
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -37,7 +35,6 @@
 		items: [{
 			item: "bloodmagic:living_armour_leggings"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -46,7 +43,6 @@
 		items: [{
 			item: "bloodmagic:living_armour_boots"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

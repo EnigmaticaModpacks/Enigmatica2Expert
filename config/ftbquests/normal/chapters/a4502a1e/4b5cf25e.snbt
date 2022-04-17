@@ -23,7 +23,7 @@
 				Type: "extrautils2:generator_redstone"
 			}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "287f2354",

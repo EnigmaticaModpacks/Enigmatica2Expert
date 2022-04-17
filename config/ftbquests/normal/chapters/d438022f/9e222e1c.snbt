@@ -16,7 +16,6 @@
 		items: [{
 			item: "cyclicmagic:wand_hypno"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

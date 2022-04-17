@@ -15,7 +15,6 @@
 		items: [{
 			item: "mekanismgenerators:reactor"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -24,7 +23,6 @@
 		items: [{
 			item: "mekanismgenerators:reactor 56 1"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -33,7 +31,6 @@
 		items: [{
 			item: "mekanismgenerators:reactor 2 2"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -42,7 +39,6 @@
 		items: [{
 			item: "mekanismgenerators:reactorglass 1 1"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

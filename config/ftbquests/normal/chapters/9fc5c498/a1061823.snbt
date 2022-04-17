@@ -15,7 +15,6 @@
 		items: [{
 			item: "enderio:item_soul_vial"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

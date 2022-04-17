@@ -15,7 +15,7 @@
 		items: [{
 			item: "forestry:engine_generator"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "0461482e",

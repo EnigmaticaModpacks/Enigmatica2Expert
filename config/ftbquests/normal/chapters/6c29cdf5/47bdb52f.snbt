@@ -16,7 +16,7 @@
 		items: [{
 			item: "botania:terraformrod"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "87d91e42",

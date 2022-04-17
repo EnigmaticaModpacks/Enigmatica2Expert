@@ -17,7 +17,6 @@
 		items: [{
 			item: "cyclicmagic:block_anvil_magma"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

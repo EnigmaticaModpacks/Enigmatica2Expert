@@ -16,7 +16,7 @@
 		items: [{
 			item: "botania:alfheimportal"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "0b968996",
@@ -24,7 +24,7 @@
 		items: [{
 			item: "botania:livingwood 8"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "241cafae",
@@ -32,7 +32,7 @@
 		items: [{
 			item: "botania:livingwood 3 5"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "379498a7",

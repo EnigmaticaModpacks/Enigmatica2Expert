@@ -15,7 +15,6 @@
 		items: [{
 			item: "thaumcraft:research_table"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -24,7 +23,6 @@
 		items: [{
 			item: "thaumcraft:scribing_tools"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{

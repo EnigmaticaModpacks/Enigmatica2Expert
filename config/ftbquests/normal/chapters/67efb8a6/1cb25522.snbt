@@ -16,7 +16,6 @@
 		items: [{
 			item: "draconicevolution:reactor_core"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

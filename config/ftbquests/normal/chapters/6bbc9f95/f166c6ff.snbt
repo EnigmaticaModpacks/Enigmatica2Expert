@@ -15,7 +15,6 @@
 		items: [{
 			item: "thaumcraft:void_robe_helm"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -24,7 +23,6 @@
 		items: [{
 			item: "thaumcraft:void_robe_chest"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -33,7 +31,6 @@
 		items: [{
 			item: "thaumcraft:void_robe_legs"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -45,7 +42,6 @@
 				color: 6961280
 			}
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

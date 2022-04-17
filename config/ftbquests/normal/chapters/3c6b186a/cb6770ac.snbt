@@ -23,7 +23,6 @@
 				charge: 1000000.0d
 			}
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -35,7 +34,6 @@
 				charge: 1000000.0d
 			}
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -47,7 +45,6 @@
 				charge: 1000000.0d
 			}
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -59,7 +56,6 @@
 				charge: 1000000.0d
 			}
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

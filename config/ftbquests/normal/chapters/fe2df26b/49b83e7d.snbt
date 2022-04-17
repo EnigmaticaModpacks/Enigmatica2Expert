@@ -16,7 +16,6 @@
 		items: [{
 			item: "threng:machine 1 4"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

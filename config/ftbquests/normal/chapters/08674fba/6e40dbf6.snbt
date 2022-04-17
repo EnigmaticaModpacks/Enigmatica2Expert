@@ -15,7 +15,7 @@
 		items: [{
 			item: "advancedrocketry:electrolyser"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "2b85d7d3",
@@ -23,7 +23,7 @@
 		items: [{
 			item: "libvulpes:structuremachine 2"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "e2e0055d",
@@ -31,7 +31,7 @@
 		items: [{
 			item: "libvulpes:coil0 1 4"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "17cbf601",
@@ -39,7 +39,7 @@
 		items: [{
 			item: "libvulpes:forgepowerinput 2"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "60e56931",
@@ -47,7 +47,7 @@
 		items: [{
 			item: "libvulpes:hatch 1 2"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "30d545f2",
@@ -55,7 +55,7 @@
 		items: [{
 			item: "libvulpes:hatch 2 3"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "66edf746",

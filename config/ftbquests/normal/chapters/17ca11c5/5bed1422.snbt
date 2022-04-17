@@ -30,7 +30,7 @@
 				mekData: {}
 			}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "b9164859",

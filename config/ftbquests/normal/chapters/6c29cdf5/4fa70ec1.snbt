@@ -24,7 +24,7 @@
 				type: "puredaisy"
 			}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "659ffa7f",

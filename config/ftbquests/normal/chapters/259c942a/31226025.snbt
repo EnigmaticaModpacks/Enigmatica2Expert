@@ -15,7 +15,7 @@
 		items: [{
 			item: "immersiveengineering:stone_decoration 27 2"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "77e984ee",
@@ -23,7 +23,7 @@
 		items: [{
 			item: "immersiveengineering:metal_device1 2"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "5641e469",

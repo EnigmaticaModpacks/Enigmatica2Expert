@@ -16,7 +16,6 @@
 		items: [{
 			item: "rftools:modular_storage"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -25,7 +24,6 @@
 		items: [{
 			item: "rftools:storage_module"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

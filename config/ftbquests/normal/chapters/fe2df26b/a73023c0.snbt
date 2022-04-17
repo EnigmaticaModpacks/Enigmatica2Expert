@@ -16,7 +16,6 @@
 		items: [{
 			item: "aeadditions:fluidfiller"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

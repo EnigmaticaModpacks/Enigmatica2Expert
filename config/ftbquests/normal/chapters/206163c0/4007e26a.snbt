@@ -15,7 +15,7 @@
 		items: [{
 			item: "forestry:impregnated_casing"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "6162d78d",

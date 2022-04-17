@@ -15,7 +15,7 @@
 		items: [{
 			item: "astralsorcery:itemlinkingtool"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "afee3d40",

@@ -16,7 +16,7 @@
 		items: [{
 			item: "mekanism:compressedobsidian"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "464c4274",

@@ -15,7 +15,6 @@
 		items: [{
 			item: "thaumcraft:jar_normal"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -16,7 +16,6 @@
 		items: [{
 			item: "twilightforest:arctic_helmet"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -25,7 +24,6 @@
 		items: [{
 			item: "twilightforest:arctic_chestplate"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -34,7 +32,6 @@
 		items: [{
 			item: "twilightforest:arctic_leggings"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -43,7 +40,6 @@
 		items: [{
 			item: "twilightforest:arctic_boots"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

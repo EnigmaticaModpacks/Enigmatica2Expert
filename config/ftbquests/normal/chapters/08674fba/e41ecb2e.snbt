@@ -15,7 +15,7 @@
 		items: [{
 			item: "advancedrocketry:gravitycontroller"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "aad17bad",

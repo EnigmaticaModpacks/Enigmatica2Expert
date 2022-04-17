@@ -16,7 +16,7 @@
 		items: [{
 			item: "nuclearcraft:infuser_idle"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "b444bddd",

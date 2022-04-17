@@ -16,7 +16,7 @@
 		items: [{
 			item: "plustic:osgloglasingot"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "b992ac42",

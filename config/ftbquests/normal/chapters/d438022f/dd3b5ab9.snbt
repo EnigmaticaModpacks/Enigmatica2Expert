@@ -17,7 +17,6 @@
 			id: "cyclicmagic:cyclic_wand_build",
 			tag: {}
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

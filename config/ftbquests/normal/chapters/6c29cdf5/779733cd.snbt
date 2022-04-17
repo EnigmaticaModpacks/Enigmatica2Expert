@@ -14,9 +14,8 @@
 		uid: "570fdcd9",
 		type: "item",
 		items: [{
-			item: "botania:pylon 4 2"
-		}],
-		ignore_damage: true
+			item: "botania:pylon 1 2"
+		}]
 	}],
 	rewards: [{
 		uid: "4c6f57ca",

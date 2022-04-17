@@ -15,7 +15,6 @@
 		items: [{
 			item: "actuallyadditions:block_item_viewer"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -24,7 +23,6 @@
 		items: [{
 			item: "actuallyadditions:block_laser_relay_item 2"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

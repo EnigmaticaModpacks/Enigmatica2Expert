@@ -15,7 +15,7 @@
 		items: [{
 			item: "rats:rat_upgrade_aristocrat"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "6168e864",

@@ -15,7 +15,7 @@
 		items: [{
 			item: "mekanism:tierinstaller"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "09dca7d6",

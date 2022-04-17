@@ -15,7 +15,7 @@
 		items: [{
 			item: "ic2:te 1 3"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "7eb6cd55",

@@ -16,7 +16,6 @@
 		items: [{
 			item: "darkutils:ender_tether"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

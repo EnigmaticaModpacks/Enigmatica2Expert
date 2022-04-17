@@ -20,7 +20,7 @@
 			id: "botania:exchangerod",
 			tag: {}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "284b3e05",

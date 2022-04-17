@@ -15,7 +15,7 @@
 		items: [{
 			item: "actuallyadditions:item_crystal_empowered 1 2"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "a9f8be15",

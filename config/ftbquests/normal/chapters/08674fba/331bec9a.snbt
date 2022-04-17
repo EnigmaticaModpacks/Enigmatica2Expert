@@ -15,7 +15,7 @@
 		items: [{
 			item: "advancedrocketry:arcfurnace"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "f2634a63",
@@ -23,7 +23,7 @@
 		items: [{
 			item: "advancedrocketry:blastbrick 81"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "ca0e0fc6",
@@ -31,7 +31,7 @@
 		items: [{
 			item: "libvulpes:coil0 3 4"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "71ccf6ea",
@@ -39,7 +39,7 @@
 		items: [{
 			item: "libvulpes:forgepowerinput 3"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "fb363ef4",
@@ -47,7 +47,7 @@
 		items: [{
 			item: "libvulpes:hatch"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "a2d8949a",
@@ -55,7 +55,7 @@
 		items: [{
 			item: "libvulpes:hatch 1 1"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "b95e5e66",

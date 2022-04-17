@@ -24,7 +24,7 @@
 				type: "gourmaryllis"
 			}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "a1ec72e5",

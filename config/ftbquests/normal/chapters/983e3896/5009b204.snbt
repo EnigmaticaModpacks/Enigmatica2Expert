@@ -15,7 +15,6 @@
 		items: [{
 			item: "astralsorcery:blockmapdrawingtable"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

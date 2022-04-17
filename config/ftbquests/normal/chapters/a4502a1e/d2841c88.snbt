@@ -16,7 +16,6 @@
 		items: [{
 			item: "extrautils2:flattransfernode"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

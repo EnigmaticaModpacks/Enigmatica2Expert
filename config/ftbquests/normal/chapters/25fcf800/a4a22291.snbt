@@ -15,7 +15,7 @@
 		items: [{
 			item: "environmentaltech:void_ore_miner_cont_1"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "0cb9e83e",

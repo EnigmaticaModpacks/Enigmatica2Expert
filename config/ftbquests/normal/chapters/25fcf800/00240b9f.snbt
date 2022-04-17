@@ -15,7 +15,7 @@
 		items: [{
 			item: "environmentaltech:modifier_piezo"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "6ad24e68",

@@ -15,7 +15,6 @@
 		items: [{
 			item: "bloodmagic:slate"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

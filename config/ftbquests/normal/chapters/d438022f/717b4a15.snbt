@@ -15,7 +15,6 @@
 		items: [{
 			item: "randomthings:eclipsedclock"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

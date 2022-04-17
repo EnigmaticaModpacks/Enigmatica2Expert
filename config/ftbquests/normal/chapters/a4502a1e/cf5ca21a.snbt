@@ -23,7 +23,7 @@
 				Type: "extrautils2:generator_netherstar"
 			}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "b49bb99e",

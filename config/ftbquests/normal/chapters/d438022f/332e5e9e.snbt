@@ -16,7 +16,6 @@
 		items: [{
 			item: "bibliocraft:typesettingtable"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -25,7 +24,6 @@
 		items: [{
 			item: "bibliocraft:printingpress"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -34,7 +32,6 @@
 		items: [{
 			item: "bibliocraft:enchantedplate"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{

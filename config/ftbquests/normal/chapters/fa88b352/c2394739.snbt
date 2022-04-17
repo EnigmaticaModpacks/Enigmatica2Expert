@@ -16,7 +16,7 @@
 		items: [{
 			item: "nuclearcraft:fuel_reprocessor_idle"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "6eb8e4b2",

@@ -15,7 +15,6 @@
 		items: [{
 			item: "thaumcraft:smelter_vent"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -24,7 +23,6 @@
 		items: [{
 			item: "thaumcraft:smelter_aux"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

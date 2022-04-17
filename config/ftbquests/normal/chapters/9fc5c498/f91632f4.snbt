@@ -15,7 +15,6 @@
 		items: [{
 			item: "enderio:block_soul_binder"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -16,7 +16,7 @@
 		items: [{
 			item: "botania:spark"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "db536ef1",

@@ -16,7 +16,7 @@
 		items: [{
 			item: "nuclearcraft:ingot_former_idle"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "15a875d7",

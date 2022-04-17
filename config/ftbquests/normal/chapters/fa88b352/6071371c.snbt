@@ -17,7 +17,7 @@
 		items: [{
 			item: "nuclearcraft:crystallizer_idle"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "e85b9366",

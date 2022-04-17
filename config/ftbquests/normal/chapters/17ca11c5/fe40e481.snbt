@@ -16,7 +16,7 @@
 		items: [{
 			item: "avaritia:infinity_helmet"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "51c80a2e",

@@ -16,7 +16,7 @@
 		items: [{
 			item: "nuclearcraft:fuel_thorium"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "524b3fa3",

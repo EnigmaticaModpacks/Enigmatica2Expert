@@ -16,7 +16,7 @@
 		items: [{
 			item: "environmentaltech:structure_frame_4"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "0a628f70",

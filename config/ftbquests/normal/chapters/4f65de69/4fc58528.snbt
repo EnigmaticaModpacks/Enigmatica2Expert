@@ -24,7 +24,7 @@
 				Material: "obsidian"
 			}
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "3d267969",

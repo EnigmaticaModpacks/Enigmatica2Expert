@@ -15,7 +15,6 @@
 		items: [{
 			item: "rats:rat_upgrade_creative"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

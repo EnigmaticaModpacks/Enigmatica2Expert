@@ -15,7 +15,7 @@
 		items: [{
 			item: "extrautils2:indexer"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "c6ff1b40",
@@ -23,7 +23,7 @@
 		items: [{
 			item: "extrautils2:indexerremote"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "764429d6",

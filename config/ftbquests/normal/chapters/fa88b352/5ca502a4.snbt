@@ -16,7 +16,7 @@
 		items: [{
 			item: "nuclearcraft:dissolver_idle"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "07ff6703",

@@ -15,7 +15,6 @@
 		items: [{
 			item: "thaumcraft:nugget 9 9"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

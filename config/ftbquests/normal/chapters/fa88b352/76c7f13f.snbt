@@ -16,7 +16,6 @@
 		items: [{
 			item: "nuclearcraft:heat_exchanger_controller"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -25,7 +24,6 @@
 		items: [{
 			item: "nuclearcraft:heat_exchanger_frame 40"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -34,7 +32,6 @@
 		items: [{
 			item: "nuclearcraft:heat_exchanger_wall 7"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -43,7 +40,6 @@
 		items: [{
 			item: "nuclearcraft:heat_exchanger_vent 2"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

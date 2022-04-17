@@ -15,7 +15,7 @@
 		items: [{
 			item: "advancedrocketry:spacestationchip"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "963215fe",

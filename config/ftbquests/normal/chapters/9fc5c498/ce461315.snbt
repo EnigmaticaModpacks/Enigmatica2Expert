@@ -15,7 +15,6 @@
 		items: [{
 			item: "enderio:block_farm_station"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

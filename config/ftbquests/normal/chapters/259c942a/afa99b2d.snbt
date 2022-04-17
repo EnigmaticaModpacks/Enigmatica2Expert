@@ -15,7 +15,7 @@
 		items: [{
 			item: "immersiveengineering:metal_device0 1 2"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "4bebc58a",
@@ -23,7 +23,7 @@
 		items: [{
 			item: "immersiveengineering:wirecoil 1 2"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "49830bd9",
@@ -31,7 +31,7 @@
 		items: [{
 			item: "immersiveengineering:connector 1 4"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "002a9121",
@@ -39,7 +39,7 @@
 		items: [{
 			item: "immersiveengineering:connector 1 5"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "5cb1e7d3",

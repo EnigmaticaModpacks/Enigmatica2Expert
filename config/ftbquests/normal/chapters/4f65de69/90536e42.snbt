@@ -20,7 +20,7 @@
 		items: [{
 			item: "thermalfoundation:ore 2"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "9e3ab801",

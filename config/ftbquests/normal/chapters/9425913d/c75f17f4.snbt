@@ -16,7 +16,7 @@
 		items: [{
 			item: "mysticalagriculture:infusion_crystal"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "4e2d178b",

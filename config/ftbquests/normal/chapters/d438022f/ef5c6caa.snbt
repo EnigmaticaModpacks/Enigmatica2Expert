@@ -16,7 +16,6 @@
 		items: [{
 			item: "randomthings:spectrelens"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

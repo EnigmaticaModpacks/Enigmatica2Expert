@@ -16,7 +16,7 @@
 		items: [{
 			item: "rftools:environmental_controller"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "eded6670",

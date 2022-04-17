@@ -15,7 +15,7 @@
 		items: [{
 			item: "astralsorcery:blockstarlightinfuser"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "41624c12",

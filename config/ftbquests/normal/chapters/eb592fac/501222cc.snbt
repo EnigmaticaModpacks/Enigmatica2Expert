@@ -15,7 +15,6 @@
 		items: [{
 			item: "rftoolsdim:empty_dimension_tab"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

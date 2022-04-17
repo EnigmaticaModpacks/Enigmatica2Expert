@@ -32,7 +32,6 @@
 				boundTileY: -1
 			}
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

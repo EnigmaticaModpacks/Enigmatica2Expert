@@ -15,7 +15,6 @@
 		items: [{
 			item: "exnihilocreatio:hive 1 1"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

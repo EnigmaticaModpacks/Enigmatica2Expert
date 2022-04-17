@@ -16,7 +16,7 @@
 		items: [{
 			item: "botania:spreader 1 3"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "4ffa311b",

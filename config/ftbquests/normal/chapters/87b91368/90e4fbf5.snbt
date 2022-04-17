@@ -15,7 +15,6 @@
 		items: [{
 			item: "animania:block_hamster_wheel"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

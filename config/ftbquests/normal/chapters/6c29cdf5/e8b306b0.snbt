@@ -16,7 +16,7 @@
 		items: [{
 			item: "botania:runealtar"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "744a57bf",

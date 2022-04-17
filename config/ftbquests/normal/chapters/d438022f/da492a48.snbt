@@ -18,7 +18,6 @@
 		{
 			item: "rustic:condenser_advanced"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -30,7 +29,6 @@
 		{
 			item: "rustic:retort_advanced"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -16,7 +16,7 @@
 		items: [{
 			item: "rftools:builder"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "43e0c4e4",

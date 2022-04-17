@@ -16,7 +16,7 @@
 		items: [{
 			item: "tcomplement:high_oven_controller"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "01cb16c3",
@@ -24,7 +24,7 @@
 		items: [{
 			item: "tcomplement:scorched_block 24 3"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "38165d14",
@@ -32,7 +32,7 @@
 		items: [{
 			item: "tcomplement:high_oven_io"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "ddd16503",

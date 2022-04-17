@@ -16,7 +16,7 @@
 		items: [{
 			item: "nuclearcraft:isotope_separator_idle"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "05bff2fd",

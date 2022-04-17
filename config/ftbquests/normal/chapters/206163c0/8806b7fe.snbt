@@ -15,7 +15,7 @@
 		items: [{
 			item: "forestry:carpenter"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "a461a2ad",

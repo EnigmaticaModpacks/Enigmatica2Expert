@@ -16,7 +16,6 @@
 		items: [{
 			item: "cyclicmagic:tool_warp_spawn"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

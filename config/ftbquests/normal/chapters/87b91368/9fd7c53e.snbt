@@ -15,7 +15,6 @@
 		items: [{
 			item: "eyeofdragons:eye_of_firedragon"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

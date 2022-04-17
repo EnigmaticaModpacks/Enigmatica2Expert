@@ -16,7 +16,7 @@
 		items: [{
 			item: "extrautils2:passivegenerator 9"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "88580a73",

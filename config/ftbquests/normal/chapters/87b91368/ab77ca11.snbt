@@ -15,7 +15,6 @@
 		items: [{
 			item: "rats:plague_doctorate"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

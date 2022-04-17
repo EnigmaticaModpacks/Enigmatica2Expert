@@ -15,7 +15,6 @@
 		items: [{
 			item: "thaumcraft:infusion_matrix"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -24,7 +23,6 @@
 		items: [{
 			item: "thaumcraft:stone_arcane 8"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -33,7 +31,6 @@
 		items: [{
 			item: "thaumcraft:pedestal_arcane 4"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

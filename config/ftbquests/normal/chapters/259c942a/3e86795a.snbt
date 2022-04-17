@@ -15,7 +15,7 @@
 		items: [{
 			item: "immersiveengineering:treated_wood 8"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "2413351d",

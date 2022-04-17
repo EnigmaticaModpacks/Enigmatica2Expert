@@ -16,7 +16,7 @@
 		items: [{
 			item: "botania:grasshorn"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "efb732d5",

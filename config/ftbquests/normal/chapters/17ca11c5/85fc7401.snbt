@@ -16,7 +16,6 @@
 		items: [{
 			item: "culinaryconstruct:sandwich_station"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

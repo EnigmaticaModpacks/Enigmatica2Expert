@@ -15,7 +15,6 @@
 		items: [{
 			item: "extendedcrafting:table_basic"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -15,7 +15,7 @@
 		items: [{
 			item: "rftools:creative_screen"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "2e4f18fe",

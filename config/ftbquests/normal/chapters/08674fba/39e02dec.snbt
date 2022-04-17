@@ -15,7 +15,7 @@
 		items: [{
 			item: "advancedrocketry:oxygenvent"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "a36b53bf",

@@ -22,7 +22,7 @@
 		items: [{
 			item: "extendedcrafting:table_ultimate"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "4fe4d865",

@@ -16,7 +16,6 @@
 		items: [{
 			item: "opencomputers:case1"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

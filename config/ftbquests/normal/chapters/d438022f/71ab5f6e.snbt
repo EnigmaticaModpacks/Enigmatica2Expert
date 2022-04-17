@@ -18,7 +18,6 @@
 		items: [{
 			item: "cyclicmagic:beacon_potion"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

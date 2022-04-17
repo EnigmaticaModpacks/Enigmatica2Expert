@@ -24,7 +24,7 @@
 				type: "endoflame"
 			}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "3c6eb728",

@@ -23,7 +23,7 @@
 				Type: "extrautils2:enchanter"
 			}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "ef3456ee",

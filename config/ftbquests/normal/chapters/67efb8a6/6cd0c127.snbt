@@ -15,7 +15,6 @@
 		items: [{
 			item: "draconicevolution:crafting_injector"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

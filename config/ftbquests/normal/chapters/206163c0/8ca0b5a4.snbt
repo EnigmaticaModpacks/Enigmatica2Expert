@@ -15,7 +15,6 @@
 		items: [{
 			item: "requious:adv_bee_analyzer"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -15,7 +15,7 @@
 		items: [{
 			item: "forestry:still"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "72b4b221",

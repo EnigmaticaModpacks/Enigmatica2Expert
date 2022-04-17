@@ -15,7 +15,7 @@
 		items: [{
 			item: "astralsorcery:blockattunementaltar"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "2972449c",

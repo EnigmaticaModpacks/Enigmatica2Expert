@@ -17,7 +17,6 @@
 		items: [{
 			item: "cyclicmagic:auto_packager"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

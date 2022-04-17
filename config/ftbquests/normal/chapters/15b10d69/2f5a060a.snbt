@@ -15,7 +15,6 @@
 		items: [{
 			item: "industrialforegoing:animal_byproduct_recolector"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

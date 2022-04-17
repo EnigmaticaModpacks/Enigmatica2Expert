@@ -16,7 +16,6 @@
 		items: [{
 			item: "randomthings:fertilizeddirt"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -15,7 +15,6 @@
 		items: [{
 			item: "bloodmagic:soul_snare"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -24,7 +23,6 @@
 		items: [{
 			item: "bloodmagic:monster_soul"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

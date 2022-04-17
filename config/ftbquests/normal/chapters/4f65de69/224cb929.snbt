@@ -24,7 +24,7 @@
 				Material: "crystal_matrix"
 			}
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "d173b8fd",

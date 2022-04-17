@@ -16,7 +16,6 @@
 		items: [{
 			item: "twilightforest:torchberries"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

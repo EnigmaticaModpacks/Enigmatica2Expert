@@ -23,7 +23,6 @@
 				FarmBlock: 0
 			}
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -36,7 +35,6 @@
 				FarmBlock: 0
 			}
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -49,7 +47,6 @@
 				FarmBlock: 0
 			}
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -62,7 +59,6 @@
 				FarmBlock: 0
 			}
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -75,7 +71,6 @@
 				FarmBlock: 0
 			}
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

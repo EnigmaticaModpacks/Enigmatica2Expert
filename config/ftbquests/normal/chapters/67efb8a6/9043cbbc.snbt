@@ -23,7 +23,6 @@
 				Energy: 2000000
 			}
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -35,7 +34,6 @@
 				Energy: 2000000
 			}
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -47,7 +45,6 @@
 				Energy: 2000000
 			}
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -59,7 +56,6 @@
 				Energy: 2000000
 			}
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -15,7 +15,7 @@
 		items: [{
 			item: "forestry:centrifuge"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "e7cda36d",

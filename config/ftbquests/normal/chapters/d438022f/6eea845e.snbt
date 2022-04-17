@@ -18,7 +18,6 @@
 		items: [{
 			item: "bibliocraft:framingsaw"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{

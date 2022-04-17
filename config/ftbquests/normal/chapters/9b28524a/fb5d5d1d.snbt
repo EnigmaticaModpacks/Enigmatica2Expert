@@ -15,7 +15,6 @@
 		items: [{
 			item: "bloodmagic:ritual_reader"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

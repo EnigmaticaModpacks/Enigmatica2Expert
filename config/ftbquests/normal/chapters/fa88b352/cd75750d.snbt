@@ -16,7 +16,7 @@
 		items: [{
 			item: "nuclearcraft:upgrade"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "3680027e",

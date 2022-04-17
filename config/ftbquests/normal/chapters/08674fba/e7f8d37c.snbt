@@ -15,7 +15,7 @@
 		items: [{
 			item: "libvulpes:ore0"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "ff50e0a6",

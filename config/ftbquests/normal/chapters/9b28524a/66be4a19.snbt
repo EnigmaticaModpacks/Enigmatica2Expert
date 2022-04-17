@@ -15,7 +15,6 @@
 		items: [{
 			item: "animus:blockbloodwood"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

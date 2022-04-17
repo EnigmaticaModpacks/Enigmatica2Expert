@@ -16,7 +16,7 @@
 		items: [{
 			item: "botania:monocle"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "ed0c108d",

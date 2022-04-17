@@ -15,7 +15,6 @@
 		items: [{
 			item: "extendedcrafting:interface"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

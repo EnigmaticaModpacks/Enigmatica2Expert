@@ -15,7 +15,6 @@
 		items: [{
 			item: "thaumcraft:focus_1"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

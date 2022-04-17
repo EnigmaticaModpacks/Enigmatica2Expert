@@ -19,7 +19,6 @@
 			id: "rats:rat_arrow",
 			tag: {}
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

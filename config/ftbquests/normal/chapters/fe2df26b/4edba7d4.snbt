@@ -16,7 +16,6 @@
 		items: [{
 			item: "ae2stuff:visualiser"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

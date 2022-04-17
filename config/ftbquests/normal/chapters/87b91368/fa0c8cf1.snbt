@@ -27,7 +27,7 @@
 		{
 			item: "iceandfire:jar_pixie 1 4"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "50b7e11a",

@@ -15,7 +15,6 @@
 		items: [{
 			item: "thaumcraft:alumentum"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

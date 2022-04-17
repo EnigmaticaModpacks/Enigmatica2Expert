@@ -27,7 +27,7 @@
 				Amount: 1000
 			}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "f6a9c436",

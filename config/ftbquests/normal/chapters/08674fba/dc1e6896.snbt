@@ -15,7 +15,7 @@
 		items: [{
 			item: "advancedrocketry:oxygencharger"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "f49473d5",

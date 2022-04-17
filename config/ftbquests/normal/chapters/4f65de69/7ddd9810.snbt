@@ -15,7 +15,6 @@
 		items: [{
 			item: "danknull:dank_null_0"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

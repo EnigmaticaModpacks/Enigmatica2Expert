@@ -15,7 +15,7 @@
 		items: [{
 			item: "mekanism:compressedredstone"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "51f298e0",

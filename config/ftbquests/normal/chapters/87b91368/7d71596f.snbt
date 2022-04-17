@@ -15,7 +15,7 @@
 		items: [{
 			item: "rats:marbled_cheese_raw 16"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "22c3995a",

@@ -15,7 +15,7 @@
 		items: [{
 			item: "exnihilocreatio:block_sieve"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "719a0291",

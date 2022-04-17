@@ -15,7 +15,7 @@
 		items: [{
 			item: "astralsorcery:blockaltar 1 2"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "81bdef9b",

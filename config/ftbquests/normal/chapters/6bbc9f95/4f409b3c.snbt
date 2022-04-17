@@ -15,7 +15,6 @@
 		items: [{
 			item: "thaumcraft:thaumonomicon"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -24,7 +23,6 @@
 		items: [{
 			item: "thaumcraft:salis_mundus"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{

@@ -15,7 +15,6 @@
 		items: [{
 			item: "thaumcraft:void_helm"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -24,7 +23,6 @@
 		items: [{
 			item: "thaumcraft:void_chest"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -33,7 +31,6 @@
 		items: [{
 			item: "thaumcraft:void_legs"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -42,7 +39,6 @@
 		items: [{
 			item: "thaumcraft:void_boots"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

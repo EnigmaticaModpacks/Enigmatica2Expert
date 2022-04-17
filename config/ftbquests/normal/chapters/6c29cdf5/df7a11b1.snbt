@@ -16,7 +16,7 @@
 		items: [{
 			item: "botania:diviningrod"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "5781cc5e",

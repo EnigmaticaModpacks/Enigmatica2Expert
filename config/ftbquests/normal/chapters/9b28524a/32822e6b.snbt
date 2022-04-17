@@ -29,7 +29,6 @@
 				activated: 0b
 			}
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -38,7 +37,6 @@
 		items: [{
 			item: "bloodmagic:component 1 8"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -47,7 +45,6 @@
 		items: [{
 			item: "bloodmagic:blood_shard"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -15,7 +15,6 @@
 		items: [{
 			item: "thaumcraft:ingot"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

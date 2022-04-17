@@ -15,7 +15,6 @@
 		items: [{
 			item: "psicosts:creative_cell"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

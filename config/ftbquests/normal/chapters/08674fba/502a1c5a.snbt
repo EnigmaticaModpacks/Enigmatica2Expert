@@ -15,7 +15,7 @@
 		items: [{
 			item: "advancedrocketry:carbonscrubbercartridge"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "237c6753",
@@ -23,7 +23,7 @@
 		items: [{
 			item: "advancedrocketry:oxygenscrubber"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "1588a76b",

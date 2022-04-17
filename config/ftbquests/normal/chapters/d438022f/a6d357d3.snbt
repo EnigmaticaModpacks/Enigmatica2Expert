@@ -16,7 +16,6 @@
 		items: [{
 			item: "quark:iron_rod"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

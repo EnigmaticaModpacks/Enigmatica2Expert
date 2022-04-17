@@ -15,7 +15,6 @@
 		items: [{
 			item: "botania:elementiumhelm"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -25,7 +24,6 @@
 			id: "botania:elementiumchest",
 			tag: {}
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -34,7 +32,6 @@
 		items: [{
 			item: "botania:elementiumlegs"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -43,7 +40,6 @@
 		items: [{
 			item: "botania:elementiumboots"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

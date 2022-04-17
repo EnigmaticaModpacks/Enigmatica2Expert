@@ -16,7 +16,6 @@
 		items: [{
 			item: "botania:reachring"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -15,7 +15,6 @@
 		items: [{
 			item: "farmingforblockheads:market"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

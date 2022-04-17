@@ -15,7 +15,7 @@
 		items: [{
 			item: "rats:rat_breeding_lantern"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "fd2f3f7a",

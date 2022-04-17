@@ -16,7 +16,6 @@
 		items: [{
 			item: "rustic:honeycomb"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

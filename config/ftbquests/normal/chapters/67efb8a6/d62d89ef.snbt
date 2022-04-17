@@ -15,7 +15,6 @@
 		items: [{
 			item: "draconicevolution:grinder"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

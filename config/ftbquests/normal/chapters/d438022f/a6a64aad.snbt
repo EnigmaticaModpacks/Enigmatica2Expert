@@ -17,7 +17,6 @@
 		items: [{
 			item: "cyclicmagic:solidifier"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

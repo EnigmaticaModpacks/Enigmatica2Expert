@@ -16,7 +16,7 @@
 		items: [{
 			item: "rats:rat_upgrade_chef"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "f8b55113",

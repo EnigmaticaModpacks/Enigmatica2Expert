@@ -15,7 +15,6 @@
 		items: [{
 			item: "iceandfire:dreadwood_planks"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

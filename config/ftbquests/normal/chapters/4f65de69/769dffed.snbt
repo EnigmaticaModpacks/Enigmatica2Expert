@@ -15,7 +15,6 @@
 		items: [{
 			item: "cookingforblockheads:milk_jar"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{

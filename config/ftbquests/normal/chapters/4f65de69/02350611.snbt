@@ -26,7 +26,7 @@
 				Amount: 1000
 			}
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "85b95b67",
@@ -38,7 +38,6 @@
 				Amount: 1000
 			}
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

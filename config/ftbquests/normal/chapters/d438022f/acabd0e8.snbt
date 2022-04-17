@@ -16,7 +16,6 @@
 		items: [{
 			item: "darkutils:ender_hopper"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

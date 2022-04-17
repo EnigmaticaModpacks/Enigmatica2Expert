@@ -15,7 +15,7 @@
 		items: [{
 			item: "industrialforegoing:wither_builder"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "213efd0a",

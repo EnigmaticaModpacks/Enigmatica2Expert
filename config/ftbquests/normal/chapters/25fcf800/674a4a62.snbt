@@ -15,7 +15,7 @@
 		items: [{
 			item: "environmentaltech:modifier_accuracy"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "d0828aaf",

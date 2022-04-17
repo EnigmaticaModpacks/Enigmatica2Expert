@@ -16,7 +16,6 @@
 		items: [{
 			item: "appliedenergistics2:part 1 460"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -26,7 +25,6 @@
 			id: "appliedenergistics2:memory_card",
 			tag: {}
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

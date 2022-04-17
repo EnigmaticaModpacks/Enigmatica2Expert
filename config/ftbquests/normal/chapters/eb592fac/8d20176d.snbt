@@ -15,7 +15,7 @@
 		items: [{
 			item: "rftools:shape_card 1 1"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "0ad124e4",

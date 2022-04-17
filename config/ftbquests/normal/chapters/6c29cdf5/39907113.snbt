@@ -24,7 +24,7 @@
 				type: "clayconia"
 			}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "0eb8cd63",

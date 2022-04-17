@@ -15,7 +15,7 @@
 		items: [{
 			item: "rftools:elevator"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "7e86bb4c",
@@ -23,7 +23,7 @@
 		items: [{
 			item: "rftools:elevator_button_module"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "1192ba6b",

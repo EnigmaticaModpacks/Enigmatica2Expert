@@ -15,7 +15,7 @@
 		items: [{
 			item: "environmentaltech:modifier_speed"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "53400ffa",

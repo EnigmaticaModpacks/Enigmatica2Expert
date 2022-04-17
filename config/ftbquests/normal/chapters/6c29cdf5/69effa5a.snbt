@@ -15,7 +15,6 @@
 		items: [{
 			item: "botania:terrasteelhelm"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -24,7 +23,6 @@
 		items: [{
 			item: "botania:terrasteelchest"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -33,7 +31,6 @@
 		items: [{
 			item: "botania:terrasteellegs"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -42,7 +39,6 @@
 		items: [{
 			item: "botania:terrasteelboots"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

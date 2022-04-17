@@ -16,7 +16,7 @@
 		items: [{
 			item: "draconicevolution:crafting_injector 1 3"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "cb054cb2",

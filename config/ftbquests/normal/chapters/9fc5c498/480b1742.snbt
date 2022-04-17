@@ -15,7 +15,6 @@
 		items: [{
 			item: "enderio:block_enchanter"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

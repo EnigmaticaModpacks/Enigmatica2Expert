@@ -16,7 +16,6 @@
 		items: [{
 			item: "immersiveengineering:metal_decoration2 1 8"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{

@@ -15,7 +15,7 @@
 		items: [{
 			item: "extrautils2:screen"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "d7c01bf2",

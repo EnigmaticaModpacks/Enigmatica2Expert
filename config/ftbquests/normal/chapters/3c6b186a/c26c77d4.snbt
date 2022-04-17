@@ -15,7 +15,7 @@
 		items: [{
 			item: "ic2:crafting 1 3"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "fcd365be",

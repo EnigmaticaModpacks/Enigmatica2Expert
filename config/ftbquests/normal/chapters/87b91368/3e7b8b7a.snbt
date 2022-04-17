@@ -15,7 +15,7 @@
 		items: [{
 			item: "iceandfire:myrmex_desert_egg 1 4"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "b79b294f",

@@ -15,7 +15,7 @@
 		items: [{
 			item: "thermalfoundation:material 1 895"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "e041c5e0",

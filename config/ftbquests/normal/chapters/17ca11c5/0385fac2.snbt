@@ -15,7 +15,7 @@
 		items: [{
 			item: "tconstruct:materials 1 50"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "b204007b",

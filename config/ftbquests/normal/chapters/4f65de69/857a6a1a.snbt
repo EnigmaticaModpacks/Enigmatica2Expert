@@ -24,7 +24,7 @@
 				Material: "osgloglas"
 			}
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "1dcbbcb0",

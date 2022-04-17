@@ -15,7 +15,6 @@
 		items: [{
 			item: "rats:garbage_pile 10"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

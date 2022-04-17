@@ -28,7 +28,7 @@
 				insulation: 0b
 			}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "617ff5a4",

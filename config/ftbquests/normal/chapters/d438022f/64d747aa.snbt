@@ -16,7 +16,6 @@
 		items: [{
 			item: "cyclicmagic:block_vacuum"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

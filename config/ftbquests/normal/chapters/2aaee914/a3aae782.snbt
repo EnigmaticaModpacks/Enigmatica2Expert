@@ -15,7 +15,7 @@
 		items: [{
 			item: "mekanism:compresseddiamond"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "1db889dd",

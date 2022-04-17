@@ -15,7 +15,7 @@
 		items: [{
 			item: "astralsorcery:blockwell"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "e532b697",

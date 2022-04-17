@@ -15,7 +15,6 @@
 		items: [{
 			item: "actuallyadditions:block_inputter"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -23,7 +23,7 @@
 				Material: "enderium"
 			}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "3253d541",

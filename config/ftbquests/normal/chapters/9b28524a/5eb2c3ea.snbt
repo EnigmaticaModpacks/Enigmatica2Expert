@@ -15,7 +15,6 @@
 		items: [{
 			item: "bloodmagic:ritual_controller"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -24,7 +23,6 @@
 		items: [{
 			item: "bloodmagic:ritual_stone 8"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

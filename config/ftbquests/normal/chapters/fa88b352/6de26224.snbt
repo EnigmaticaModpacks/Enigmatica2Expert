@@ -16,7 +16,7 @@
 		items: [{
 			item: "nuclearcraft:electrolyser_idle"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "ab69b0e2",

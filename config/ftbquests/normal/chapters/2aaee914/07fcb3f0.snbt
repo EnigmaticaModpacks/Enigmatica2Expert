@@ -15,7 +15,7 @@
 		items: [{
 			item: "mekanism:biofuel"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "d57cb71e",

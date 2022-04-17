@@ -16,7 +16,6 @@
 		items: [{
 			item: "nuclearcraft:salt_fission_controller"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -25,7 +24,6 @@
 		items: [{
 			item: "nuclearcraft:salt_fission_frame 40"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -34,7 +32,6 @@
 		items: [{
 			item: "nuclearcraft:salt_fission_wall 7"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -43,7 +40,6 @@
 		items: [{
 			item: "nuclearcraft:salt_fission_vent 2"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -52,7 +48,6 @@
 		items: [{
 			item: "nuclearcraft:salt_fission_heater"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -61,7 +56,6 @@
 		items: [{
 			item: "nuclearcraft:salt_fission_moderator"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

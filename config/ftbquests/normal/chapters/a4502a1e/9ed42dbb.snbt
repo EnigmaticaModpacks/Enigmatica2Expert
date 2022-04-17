@@ -23,7 +23,7 @@
 				Type: "extrautils2:generator_slime"
 			}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "24fb272a",

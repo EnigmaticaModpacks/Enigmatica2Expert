@@ -15,7 +15,6 @@
 		items: [{
 			item: "enderio:item_material 1 53"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

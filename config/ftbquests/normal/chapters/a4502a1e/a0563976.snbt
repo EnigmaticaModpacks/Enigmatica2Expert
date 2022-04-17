@@ -16,7 +16,7 @@
 		items: [{
 			item: "extrautils2:decorativeglass 1 3"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "b71f8696",

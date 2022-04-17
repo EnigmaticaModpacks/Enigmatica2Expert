@@ -24,7 +24,7 @@
 				type: "orechid"
 			}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "0682d7bd",

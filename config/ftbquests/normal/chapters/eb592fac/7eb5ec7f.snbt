@@ -15,7 +15,7 @@
 		items: [{
 			item: "rftoolsdim:dimlet_workbench"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "b190e947",

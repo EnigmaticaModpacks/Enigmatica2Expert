@@ -15,7 +15,6 @@
 		items: [{
 			item: "bloodmagic:arcane_ashes"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -18,7 +18,6 @@
 		items: [{
 			item: "rustic:cabinet"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -16,7 +16,6 @@
 		items: [{
 			item: "rftools:machine_base"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

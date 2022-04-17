@@ -23,7 +23,6 @@
 		items: [{
 			item: "extrautils2:rainbowgenerator 1 1"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

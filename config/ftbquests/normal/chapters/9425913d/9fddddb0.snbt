@@ -15,7 +15,7 @@
 		items: [{
 			item: "libvulpes:structuremachine"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "53f772fb",

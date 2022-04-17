@@ -23,7 +23,7 @@
 				Type: "extrautils2:generator_enchant"
 			}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "de50dad2",

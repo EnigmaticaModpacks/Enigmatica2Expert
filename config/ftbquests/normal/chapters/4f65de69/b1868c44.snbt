@@ -22,7 +22,7 @@
 			item: "tconstruct:ore"
 		}],
 		count: 2L,
-		ignore_damage: true
+		
 	},
 	{
 		uid: "e4daa64c",

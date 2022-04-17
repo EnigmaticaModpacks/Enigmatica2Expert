@@ -16,7 +16,7 @@
 		items: [{
 			item: "environmentaltech:solar_cont_3"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "57ad589d",

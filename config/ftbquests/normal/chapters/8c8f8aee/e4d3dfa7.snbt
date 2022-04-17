@@ -15,7 +15,7 @@
 		items: [{
 			item: "actuallyadditions:block_phantomface"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "20b9599e",
@@ -23,7 +23,7 @@
 		items: [{
 			item: "actuallyadditions:item_phantom_connector"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "0e3cbf36",

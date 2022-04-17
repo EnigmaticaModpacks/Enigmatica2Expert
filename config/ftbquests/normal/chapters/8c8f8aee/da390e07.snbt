@@ -15,7 +15,7 @@
 		items: [{
 			item: "actuallyadditions:item_worm"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "afcefd1f",

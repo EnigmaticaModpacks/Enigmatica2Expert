@@ -15,7 +15,6 @@
 		items: [{
 			item: "industrialforegoing:enchantment_aplicator"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

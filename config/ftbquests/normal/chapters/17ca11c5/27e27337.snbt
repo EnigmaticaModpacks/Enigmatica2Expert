@@ -16,7 +16,6 @@
 		items: [{
 			item: "psi:cad_assembly 1 5"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

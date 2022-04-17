@@ -15,7 +15,6 @@
 		items: [{
 			item: "thermalfoundation:material 1 817"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

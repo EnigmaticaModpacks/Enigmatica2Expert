@@ -15,7 +15,7 @@
 		items: [{
 			item: "immersiveengineering:metal_decoration0 1 4"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "c849f1f0",

@@ -16,7 +16,7 @@
 		items: [{
 			item: "rats:rat_upgrade_archeologist"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "364127a8",

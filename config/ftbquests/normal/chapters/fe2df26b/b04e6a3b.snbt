@@ -16,7 +16,6 @@
 		items: [{
 			item: "rf-capability-adapter:aecapabilityadapter"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

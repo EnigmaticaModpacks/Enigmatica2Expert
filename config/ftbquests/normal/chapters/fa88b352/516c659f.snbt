@@ -16,7 +16,6 @@
 		items: [{
 			item: "nuclearcraft:turbine_controller"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -25,7 +24,6 @@
 		items: [{
 			item: "nuclearcraft:turbine_frame 52"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -34,7 +32,6 @@
 		items: [{
 			item: "nuclearcraft:turbine_wall 6"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -43,7 +40,6 @@
 		items: [{
 			item: "nuclearcraft:turbine_rotor_bearing 2"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -52,7 +48,6 @@
 		items: [{
 			item: "nuclearcraft:turbine_rotor_shaft"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -61,7 +56,6 @@
 		items: [{
 			item: "nuclearcraft:turbine_inlet"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -70,7 +64,6 @@
 		items: [{
 			item: "nuclearcraft:turbine_outlet"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

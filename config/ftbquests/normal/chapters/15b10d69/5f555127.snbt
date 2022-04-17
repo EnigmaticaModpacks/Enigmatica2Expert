@@ -15,7 +15,7 @@
 		items: [{
 			item: "industrialforegoing:tree_fluid_extractor"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "6935ba36",

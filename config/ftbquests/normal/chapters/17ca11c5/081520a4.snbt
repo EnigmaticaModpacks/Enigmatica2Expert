@@ -15,7 +15,6 @@
 		items: [{
 			item: "extrautils2:decorativesolid 1 8"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

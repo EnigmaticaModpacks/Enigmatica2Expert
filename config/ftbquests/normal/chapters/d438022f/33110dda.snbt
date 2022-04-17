@@ -16,7 +16,6 @@
 		items: [{
 			item: "bibliocraft:typewriter"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{

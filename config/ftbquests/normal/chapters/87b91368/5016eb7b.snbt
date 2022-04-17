@@ -15,7 +15,7 @@
 		items: [{
 			item: "rats:raw_plastic"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "adf6b824",

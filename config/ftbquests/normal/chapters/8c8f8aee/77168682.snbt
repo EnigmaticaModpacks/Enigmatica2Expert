@@ -15,7 +15,6 @@
 		items: [{
 			item: "actuallyadditions:block_bio_reactor"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

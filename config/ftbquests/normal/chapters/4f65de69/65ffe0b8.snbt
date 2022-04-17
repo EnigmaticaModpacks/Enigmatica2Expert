@@ -15,7 +15,7 @@
 		items: [{
 			item: "tconstruct:smeltery_controller"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "d8b14d14",
@@ -23,7 +23,7 @@
 		items: [{
 			item: "tconstruct:seared_tank"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "390ea917",
@@ -31,7 +31,7 @@
 		items: [{
 			item: "tconstruct:seared 2 3"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "d0ed978c",
@@ -39,7 +39,7 @@
 		items: [{
 			item: "tconstruct:smeltery_io"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "0c8abda3",
@@ -47,7 +47,7 @@
 		items: [{
 			item: "tconstruct:faucet"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "cf5bc2a4",
@@ -55,7 +55,7 @@
 		items: [{
 			item: "tconstruct:casting"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "dc8b53b4",

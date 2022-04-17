@@ -16,7 +16,6 @@
 		items: [{
 			item: "openblocks:xp_drain"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

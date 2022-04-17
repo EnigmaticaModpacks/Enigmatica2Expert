@@ -15,7 +15,6 @@
 		items: [{
 			item: "hole_filler_mod:throwable_hole_filler"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

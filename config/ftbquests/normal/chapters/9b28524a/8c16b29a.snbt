@@ -15,7 +15,6 @@
 		items: [{
 			item: "bloodmagic:dagger_of_sacrifice"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

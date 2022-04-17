@@ -23,7 +23,7 @@
 				Type: "extrautils2:generator_potion"
 			}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "8ea88905",

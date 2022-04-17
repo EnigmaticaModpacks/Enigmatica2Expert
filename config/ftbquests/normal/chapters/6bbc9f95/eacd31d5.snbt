@@ -15,7 +15,6 @@
 		items: [{
 			item: "thaumcraft:matrix_cost"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

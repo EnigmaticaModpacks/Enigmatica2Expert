@@ -15,7 +15,7 @@
 		items: [{
 			item: "extrautils2:passivegenerator 1 6"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "45a9ef9c",

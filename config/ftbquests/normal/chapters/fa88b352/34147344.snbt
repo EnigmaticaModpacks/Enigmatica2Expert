@@ -16,7 +16,7 @@
 		items: [{
 			item: "nuclearcraft:irradiator_idle"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "3a1d8ada",

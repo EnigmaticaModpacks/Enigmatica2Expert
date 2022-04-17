@@ -26,7 +26,7 @@
 				creative: 1b
 			}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "4b6063cd",

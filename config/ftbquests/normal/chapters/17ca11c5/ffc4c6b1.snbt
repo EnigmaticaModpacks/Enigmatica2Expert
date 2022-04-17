@@ -15,7 +15,7 @@
 		items: [{
 			item: "draconicevolution:creative_exchanger"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "3484dc75",

@@ -15,7 +15,7 @@
 		items: [{
 			item: "rats:little_black_squash_balls"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "23380ad1",

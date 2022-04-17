@@ -15,7 +15,6 @@
 		items: [{
 			item: "gendustry:industrial_apiary"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

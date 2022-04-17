@@ -24,7 +24,7 @@
 				type: "narslimmus"
 			}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "34b41c22",

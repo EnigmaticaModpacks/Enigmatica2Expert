@@ -16,7 +16,6 @@
 		items: [{
 			item: "cyclicmagic:sprout_seed"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

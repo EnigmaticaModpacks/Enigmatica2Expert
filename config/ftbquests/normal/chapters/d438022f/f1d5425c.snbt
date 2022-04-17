@@ -16,7 +16,6 @@
 		items: [{
 			item: "randomthings:spectrecoil_number"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

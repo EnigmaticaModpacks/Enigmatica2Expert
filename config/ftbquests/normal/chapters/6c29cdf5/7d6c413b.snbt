@@ -16,7 +16,7 @@
 		items: [{
 			item: "botania:pylon 2 1"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "a72707ca",
@@ -24,7 +24,7 @@
 		items: [{
 			item: "botania:pool 2"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "ea2b2094",

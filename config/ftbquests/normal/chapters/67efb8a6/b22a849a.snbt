@@ -16,7 +16,7 @@
 		items: [{
 			item: "draconicevolution:draconic_ingot"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "ca838645",

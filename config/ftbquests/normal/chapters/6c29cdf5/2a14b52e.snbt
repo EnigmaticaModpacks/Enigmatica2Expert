@@ -16,7 +16,7 @@
 		items: [{
 			item: "botania:livingwood"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "5adee103",

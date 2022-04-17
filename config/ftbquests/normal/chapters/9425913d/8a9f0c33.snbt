@@ -15,7 +15,7 @@
 		items: [{
 			item: "astralsorcery:itemcraftingcomponent"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "a24019a1",

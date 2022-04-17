@@ -15,7 +15,7 @@
 		items: [{
 			item: "mekanism:enrichediron"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "8ab57093",
@@ -23,7 +23,7 @@
 		items: [{
 			item: "thermalfoundation:material 1 96"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "1f758ac7",
@@ -31,7 +31,7 @@
 		items: [{
 			item: "thermalfoundation:material 1 160"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "016b7813",

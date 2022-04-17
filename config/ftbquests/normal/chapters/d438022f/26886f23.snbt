@@ -16,7 +16,6 @@
 		items: [{
 			item: "openblocks:hang_glider"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

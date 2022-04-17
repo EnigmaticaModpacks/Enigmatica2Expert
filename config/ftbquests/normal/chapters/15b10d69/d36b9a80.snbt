@@ -15,7 +15,7 @@
 		items: [{
 			item: "industrialforegoing:laser_base"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "47194003",

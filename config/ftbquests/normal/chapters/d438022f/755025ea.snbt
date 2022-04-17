@@ -16,7 +16,6 @@
 		items: [{
 			item: "cyclicmagic:inventory_food"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

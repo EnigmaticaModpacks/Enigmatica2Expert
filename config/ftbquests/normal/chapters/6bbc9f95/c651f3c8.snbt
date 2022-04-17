@@ -15,7 +15,6 @@
 		items: [{
 			item: "thaumcraft:stone_arcane 8"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

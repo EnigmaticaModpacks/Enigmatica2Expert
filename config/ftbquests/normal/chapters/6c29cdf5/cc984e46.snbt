@@ -16,7 +16,7 @@
 		items: [{
 			item: "botania:altar"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "e2983e71",

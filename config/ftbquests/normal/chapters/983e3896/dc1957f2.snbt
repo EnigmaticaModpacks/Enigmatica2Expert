@@ -15,7 +15,7 @@
 		items: [{
 			item: "astralsorcery:blockcustomore 1 1"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "ddb89497",

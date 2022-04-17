@@ -15,7 +15,6 @@
 		items: [{
 			item: "thaumcraft:log_greatwood"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

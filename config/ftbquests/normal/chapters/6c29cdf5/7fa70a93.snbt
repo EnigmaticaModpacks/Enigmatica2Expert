@@ -15,7 +15,6 @@
 		items: [{
 			item: "botania:manasteelhelm"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -25,7 +24,6 @@
 			id: "botania:manasteelchest",
 			tag: {}
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -34,7 +32,6 @@
 		items: [{
 			item: "botania:manasteellegs"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -43,7 +40,6 @@
 		items: [{
 			item: "botania:manasteelboots"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

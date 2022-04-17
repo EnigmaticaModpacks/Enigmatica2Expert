@@ -15,7 +15,6 @@
 		items: [{
 			item: "requious:infinity_furnace"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

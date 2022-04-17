@@ -16,7 +16,6 @@
 		items: [{
 			item: "ae2wtlib:infinity_booster_card"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

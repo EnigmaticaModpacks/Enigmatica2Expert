@@ -23,7 +23,6 @@
 				Energy: 200000
 			}
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

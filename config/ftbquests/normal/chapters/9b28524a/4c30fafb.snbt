@@ -15,7 +15,6 @@
 		items: [{
 			item: "bloodmagic:ritual_diviner 1 1"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -15,7 +15,7 @@
 		items: [{
 			item: "extrautils2:powerbattery"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "d9f14b57",
@@ -23,7 +23,7 @@
 		items: [{
 			item: "extrautils2:powertransmitter"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "f6f05002",

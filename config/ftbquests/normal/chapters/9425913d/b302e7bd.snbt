@@ -16,7 +16,6 @@
 		items: [{
 			item: "libvulpes:productingot 1 7"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

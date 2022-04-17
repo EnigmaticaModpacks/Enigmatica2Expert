@@ -16,7 +16,7 @@
 		items: [{
 			item: "nuclearcraft:part"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "dfeed335",

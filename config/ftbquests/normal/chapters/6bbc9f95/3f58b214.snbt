@@ -15,7 +15,6 @@
 		items: [{
 			item: "thaumcraft:fortress_helm"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -24,7 +23,6 @@
 		items: [{
 			item: "thaumcraft:fortress_chest"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -33,7 +31,6 @@
 		items: [{
 			item: "thaumcraft:fortress_legs"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

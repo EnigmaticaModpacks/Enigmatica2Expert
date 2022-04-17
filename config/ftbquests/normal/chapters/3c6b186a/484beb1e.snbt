@@ -15,7 +15,7 @@
 		items: [{
 			item: "ic2:foam_sprayer"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "32527eff",

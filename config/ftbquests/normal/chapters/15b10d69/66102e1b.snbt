@@ -15,7 +15,7 @@
 		items: [{
 			item: "industrialforegoing:crop_sower"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "408852a7",

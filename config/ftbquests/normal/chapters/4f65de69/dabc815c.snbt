@@ -22,7 +22,7 @@
 			item: "thermalfoundation:ore 1 3"
 		}],
 		count: 2L,
-		ignore_damage: true
+		
 	},
 	{
 		uid: "26780eb0",

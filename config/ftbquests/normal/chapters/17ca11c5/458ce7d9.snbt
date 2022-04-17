@@ -16,7 +16,7 @@
 		items: [{
 			item: "scalinghealth:difficultychanger"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "cf94db39",

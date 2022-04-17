@@ -15,7 +15,7 @@
 		items: [{
 			item: "thermalfoundation:upgrade"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "7bf45fde",

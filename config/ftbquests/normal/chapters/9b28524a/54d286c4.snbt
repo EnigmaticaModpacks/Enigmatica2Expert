@@ -15,7 +15,6 @@
 		items: [{
 			item: "bloodmagic:soul_forge"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -15,7 +15,6 @@
 		items: [{
 			item: "enderio:block_sag_mill"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

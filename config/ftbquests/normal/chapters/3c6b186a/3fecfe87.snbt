@@ -23,7 +23,6 @@
 				charge: 100000.0d
 			}
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

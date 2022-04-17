@@ -16,7 +16,6 @@
 		items: [{
 			item: "darkutils:trap_tile 1 6"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

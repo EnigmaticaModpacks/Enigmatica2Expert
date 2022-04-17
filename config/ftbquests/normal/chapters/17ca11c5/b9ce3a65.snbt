@@ -15,7 +15,6 @@
 		items: [{
 			item: "extrautils2:creativeharvest"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

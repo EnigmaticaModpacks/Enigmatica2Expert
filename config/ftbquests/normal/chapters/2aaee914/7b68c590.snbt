@@ -16,7 +16,7 @@
 		items: [{
 			item: "mekanism:atomicalloy"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "18a8211d",

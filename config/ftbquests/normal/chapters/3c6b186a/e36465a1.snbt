@@ -21,7 +21,6 @@
 			Damage: 73s,
 			tag: {}
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -35,7 +34,6 @@
 				insulation: 1b
 			}
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

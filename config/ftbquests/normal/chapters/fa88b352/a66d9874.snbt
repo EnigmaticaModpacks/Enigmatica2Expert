@@ -16,7 +16,7 @@
 		items: [{
 			item: "nuclearcraft:melter_idle"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "b01a7978",

@@ -16,7 +16,6 @@
 		items: [{
 			item: "cyclicmagic:battery"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -15,7 +15,6 @@
 		items: [{
 			item: "industrialforegoing:villager_trade_exchanger"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

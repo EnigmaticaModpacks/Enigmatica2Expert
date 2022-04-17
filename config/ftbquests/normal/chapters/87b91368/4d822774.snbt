@@ -15,7 +15,6 @@
 		items: [{
 			item: "animania:cooked_prime_beef"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

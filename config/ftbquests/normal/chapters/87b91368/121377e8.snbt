@@ -17,7 +17,6 @@
 		items: [{
 			item: "iceandfire:dragonsteel_fire_ingot"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

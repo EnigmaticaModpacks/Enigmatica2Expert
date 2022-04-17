@@ -16,7 +16,7 @@
 		items: [{
 			item: "nuclearcraft:chemical_reactor_idle"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "ce525de3",

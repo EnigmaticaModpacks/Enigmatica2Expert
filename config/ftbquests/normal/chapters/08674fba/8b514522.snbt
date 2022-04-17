@@ -16,7 +16,7 @@
 		items: [{
 			item: "advancedrocketry:stationbuilder"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "b0b449fa",

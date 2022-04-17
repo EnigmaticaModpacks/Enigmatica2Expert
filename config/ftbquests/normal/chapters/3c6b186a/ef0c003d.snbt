@@ -15,7 +15,6 @@
 		items: [{
 			item: "ic2:te 1 57"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -16,7 +16,6 @@
 		items: [{
 			item: "rftools:powercell_simple"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -25,7 +24,6 @@
 		items: [{
 			item: "rftools:powercell_card"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

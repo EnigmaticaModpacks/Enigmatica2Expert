@@ -16,7 +16,6 @@
 		items: [{
 			item: "appliedenergistics2:inscriber"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

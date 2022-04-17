@@ -22,7 +22,6 @@
 			id: "openblocks:dev_null",
 			tag: {}
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

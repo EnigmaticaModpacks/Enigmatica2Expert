@@ -16,7 +16,7 @@
 		items: [{
 			item: "rftools:matter_receiver"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "2700ca29",

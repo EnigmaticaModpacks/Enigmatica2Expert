@@ -23,7 +23,7 @@
 				orb: "bloodmagic:weak"
 			}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "857964e3",

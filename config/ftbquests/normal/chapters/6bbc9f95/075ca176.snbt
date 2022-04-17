@@ -15,7 +15,6 @@
 		items: [{
 			item: "thaumcraft:bellows"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

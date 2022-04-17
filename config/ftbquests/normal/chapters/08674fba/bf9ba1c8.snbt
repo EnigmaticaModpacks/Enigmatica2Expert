@@ -16,7 +16,7 @@
 		items: [{
 			item: "advancedrocketry:warpcore"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "2b136082",
@@ -24,7 +24,7 @@
 		items: [{
 			item: "libvulpes:metal0 15 7"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "ad790545",
@@ -40,7 +40,7 @@
 		items: [{
 			item: "libvulpes:structuremachine 4"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "2dc95b40",
@@ -48,7 +48,7 @@
 		items: [{
 			item: "libvulpes:hatch"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "044452a6",

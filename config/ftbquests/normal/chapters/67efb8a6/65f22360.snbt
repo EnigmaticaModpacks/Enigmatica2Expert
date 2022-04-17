@@ -17,7 +17,6 @@
 		items: [{
 			item: "draconicevolution:draconic_energy_core"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

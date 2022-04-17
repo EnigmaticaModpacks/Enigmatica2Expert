@@ -16,7 +16,6 @@
 		items: [{
 			item: "rftools:screen"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -25,7 +24,6 @@
 		items: [{
 			item: "rftools:screen_controller"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -34,7 +32,6 @@
 		items: [{
 			item: "rftools:button_module"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

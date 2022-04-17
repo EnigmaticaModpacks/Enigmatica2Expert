@@ -15,7 +15,6 @@
 		items: [{
 			item: "rftools:charged_porter"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -23,7 +23,6 @@
 			id: "wct:wct",
 			tag: {}
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -23,7 +23,7 @@
 				Type: "extrautils2:crusher"
 			}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "21a84903",

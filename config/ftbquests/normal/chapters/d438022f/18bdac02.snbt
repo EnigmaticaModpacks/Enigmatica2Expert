@@ -16,7 +16,6 @@
 		items: [{
 			item: "cyclicmagic:block_enchanter"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -15,7 +15,6 @@
 		items: [{
 			item: "thaumcraft:goggles"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -24,7 +23,6 @@
 		items: [{
 			item: "thaumcraft:cloth_chest"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -33,7 +31,6 @@
 		items: [{
 			item: "thaumcraft:cloth_legs"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -42,7 +39,6 @@
 		items: [{
 			item: "thaumcraft:cloth_boots"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

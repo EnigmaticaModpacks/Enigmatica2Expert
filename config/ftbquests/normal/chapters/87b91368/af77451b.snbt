@@ -15,7 +15,6 @@
 		items: [{
 			item: "rats:rat_upgrade_jury_rigged"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

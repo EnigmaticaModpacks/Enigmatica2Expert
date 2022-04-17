@@ -16,7 +16,6 @@
 		items: [{
 			item: "advancedrocketry:liquidtank"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

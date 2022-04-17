@@ -15,7 +15,7 @@
 		items: [{
 			item: "immersiveengineering:mold"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "f8bdb561",
@@ -23,7 +23,7 @@
 		items: [{
 			item: "immersiveengineering:mold 1 1"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "c3b83ee2",
@@ -31,7 +31,7 @@
 		items: [{
 			item: "immersiveengineering:mold 1 2"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "ed3b141e",
@@ -39,7 +39,7 @@
 		items: [{
 			item: "immersiveengineering:mold 1 4"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "05887747",

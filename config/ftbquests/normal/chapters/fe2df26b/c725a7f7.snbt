@@ -24,7 +24,6 @@
 			id: "appliedenergistics2:matter_cannon",
 			tag: {}
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

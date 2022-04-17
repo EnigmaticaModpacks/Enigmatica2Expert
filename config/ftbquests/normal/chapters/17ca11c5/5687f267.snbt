@@ -27,7 +27,7 @@
 				}
 			}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "86c23788",

@@ -16,7 +16,6 @@
 		items: [{
 			item: "mctsmelteryio:machine 1 1"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -25,7 +24,6 @@
 		items: [{
 			item: "mctsmelteryio:upgrade 1 1"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{

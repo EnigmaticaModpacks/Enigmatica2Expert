@@ -15,7 +15,6 @@
 		items: [{
 			item: "forestry:alveary.plain"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

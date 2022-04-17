@@ -15,7 +15,7 @@
 		items: [{
 			item: "extrautils2:drum"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "995ea392",

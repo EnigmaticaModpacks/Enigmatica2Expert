@@ -16,7 +16,7 @@
 		items: [{
 			item: "iceandfire:dragon_bone_block 8"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "d2fbeb91",
@@ -24,7 +24,7 @@
 		items: [{
 			item: "iceandfire:dragonforge_ice_brick 17"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "97d03bae",
@@ -32,7 +32,7 @@
 		items: [{
 			item: "iceandfire:dragonforge_ice_input"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "f8b19004",
@@ -40,7 +40,7 @@
 		items: [{
 			item: "iceandfire:dragonforge_ice_core_disabled"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "6aef11e6",

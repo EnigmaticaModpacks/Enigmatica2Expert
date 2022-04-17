@@ -26,7 +26,6 @@
 				Items: []
 			}
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -15,7 +15,6 @@
 		items: [{
 			item: "enderio:block_power_monitor"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

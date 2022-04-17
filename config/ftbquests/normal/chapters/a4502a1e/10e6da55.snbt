@@ -16,7 +16,7 @@
 		items: [{
 			item: "extrautils2:scanner"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "357d1ffb",

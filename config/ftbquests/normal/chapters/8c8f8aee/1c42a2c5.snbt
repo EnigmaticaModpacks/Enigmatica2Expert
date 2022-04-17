@@ -16,7 +16,6 @@
 		items: [{
 			item: "actuallyadditions:item_mining_lens"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

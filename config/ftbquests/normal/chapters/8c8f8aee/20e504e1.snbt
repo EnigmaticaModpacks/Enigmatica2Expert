@@ -16,7 +16,7 @@
 		items: [{
 			item: "actuallyadditions:block_empowerer"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "75325dbe",
@@ -24,7 +24,7 @@
 		items: [{
 			item: "actuallyadditions:block_display_stand 4"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "6f28af27",

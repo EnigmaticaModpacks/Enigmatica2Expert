@@ -16,7 +16,7 @@
 		items: [{
 			item: "botania:terraplate"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "ac8c1d46",
@@ -24,7 +24,7 @@
 		items: [{
 			item: "botania:livingrock 5"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "43fb74c2",

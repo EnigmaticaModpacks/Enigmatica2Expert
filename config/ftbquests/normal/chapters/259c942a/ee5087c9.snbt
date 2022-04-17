@@ -15,7 +15,7 @@
 		items: [{
 			item: "immersiveengineering:metal_device1 1 3"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "18272563",
@@ -23,7 +23,7 @@
 		items: [{
 			item: "minecraft:lava_bucket"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "f600bd6d",

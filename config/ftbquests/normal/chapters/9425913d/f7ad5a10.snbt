@@ -15,7 +15,7 @@
 		items: [{
 			item: "enderio:item_material"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "b6a4f3d5",

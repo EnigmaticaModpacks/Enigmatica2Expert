@@ -15,7 +15,7 @@
 		items: [{
 			item: "industrialforegoing:mob_slaughter_factory"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "66bfbbcb",
@@ -23,7 +23,7 @@
 		items: [{
 			item: "industrialforegoing:pink_slime"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "fe742686",

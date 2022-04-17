@@ -15,7 +15,6 @@
 		items: [{
 			item: "ic2:hazmat_helmet"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -24,7 +23,6 @@
 		items: [{
 			item: "ic2:hazmat_chestplate"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -33,7 +31,6 @@
 		items: [{
 			item: "ic2:hazmat_leggings"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -42,7 +39,6 @@
 		items: [{
 			item: "ic2:rubber_boots"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

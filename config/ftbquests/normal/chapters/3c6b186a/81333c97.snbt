@@ -15,7 +15,6 @@
 		items: [{
 			item: "industrialwires:ic2_connector 2"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -27,7 +26,6 @@
 				wireLength: 1024
 			}
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

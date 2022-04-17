@@ -15,7 +15,6 @@
 		items: [{
 			item: "cookingforblockheads:cooking_table"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -24,7 +23,6 @@
 		items: [{
 			item: "cookingforblockheads:oven"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -33,7 +31,6 @@
 		items: [{
 			item: "cookingforblockheads:fridge 2"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -42,7 +39,6 @@
 		items: [{
 			item: "cookingforblockheads:counter"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -51,7 +47,6 @@
 		items: [{
 			item: "cookingforblockheads:tool_rack"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

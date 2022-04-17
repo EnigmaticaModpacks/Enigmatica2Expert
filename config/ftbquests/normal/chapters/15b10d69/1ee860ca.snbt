@@ -15,7 +15,7 @@
 		items: [{
 			item: "industrialforegoing:laser_drill"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "a37ba219",

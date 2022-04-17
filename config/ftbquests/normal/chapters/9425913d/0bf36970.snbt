@@ -15,7 +15,7 @@
 		items: [{
 			item: "nuclearcraft:manufactory_idle"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "227b7338",

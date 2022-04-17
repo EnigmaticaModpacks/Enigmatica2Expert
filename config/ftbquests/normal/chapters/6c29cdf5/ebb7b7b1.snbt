@@ -16,7 +16,7 @@
 		items: [{
 			item: "botania:waterrod"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "e02d88a9",

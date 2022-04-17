@@ -15,7 +15,6 @@
 		items: [{
 			item: "botania:manaweavehelm"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -24,7 +23,6 @@
 		items: [{
 			item: "botania:manaweavechest"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -34,7 +32,6 @@
 			id: "botania:manaweavelegs",
 			tag: {}
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -44,7 +41,6 @@
 			id: "botania:manaweaveboots",
 			tag: {}
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

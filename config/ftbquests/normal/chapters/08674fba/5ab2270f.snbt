@@ -17,7 +17,7 @@
 		items: [{
 			item: "advancedrocketry:ic"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "ac8ac95f",

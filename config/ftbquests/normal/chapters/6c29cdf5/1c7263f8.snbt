@@ -16,7 +16,7 @@
 		items: [{
 			item: "botania:travelbelt"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "bce7cc9a",

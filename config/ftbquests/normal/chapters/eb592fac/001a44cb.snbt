@@ -16,7 +16,7 @@
 		items: [{
 			item: "rftools:machine_infuser"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "3a436162",

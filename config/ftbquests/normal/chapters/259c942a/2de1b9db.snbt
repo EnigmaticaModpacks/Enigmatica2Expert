@@ -19,7 +19,7 @@
 		items: [{
 			item: "immersivepetroleum:schematic"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "a5b8eac4",

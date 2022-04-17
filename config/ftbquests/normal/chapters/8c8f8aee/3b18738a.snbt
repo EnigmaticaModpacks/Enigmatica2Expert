@@ -15,7 +15,6 @@
 		items: [{
 			item: "actuallyadditions:item_growth_ring"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

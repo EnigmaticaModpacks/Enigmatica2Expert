@@ -24,7 +24,7 @@
 				type: "kekimurus"
 			}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "fb485b1d",

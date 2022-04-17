@@ -16,7 +16,6 @@
 		items: [{
 			item: "thaumcraft:smelter_basic"
 		}],
-		
 		ignore_nbt: 1b
 	},
 	{
@@ -25,7 +24,6 @@
 		items: [{
 			item: "thaumcraft:alembic"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

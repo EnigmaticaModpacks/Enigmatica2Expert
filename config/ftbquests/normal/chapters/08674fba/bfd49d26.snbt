@@ -15,7 +15,7 @@
 		items: [{
 			item: "advancedrocketry:crystallizer"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "98a10a41",
@@ -23,7 +23,7 @@
 		items: [{
 			item: "advancedrocketry:iquartzcrucible 6"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "2e0dc436",
@@ -31,7 +31,7 @@
 		items: [{
 			item: "libvulpes:coil0 2 4"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "2bb14f9b",
@@ -39,7 +39,7 @@
 		items: [{
 			item: "libvulpes:forgepowerinput"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "987d86db",
@@ -47,7 +47,7 @@
 		items: [{
 			item: "libvulpes:hatch"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "653953a0",
@@ -55,7 +55,7 @@
 		items: [{
 			item: "libvulpes:hatch 1 1"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "6c7d2775",

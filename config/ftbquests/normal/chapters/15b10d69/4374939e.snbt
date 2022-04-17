@@ -15,7 +15,7 @@
 		items: [{
 			item: "industrialforegoing:enchantment_extractor"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "a0808f06",

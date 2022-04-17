@@ -15,7 +15,7 @@
 		items: [{
 			item: "rats:rat_diamond"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "1d458786",

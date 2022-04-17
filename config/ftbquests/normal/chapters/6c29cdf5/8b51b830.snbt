@@ -16,7 +16,7 @@
 		items: [{
 			item: "botania:opencrate"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "39455b0e",

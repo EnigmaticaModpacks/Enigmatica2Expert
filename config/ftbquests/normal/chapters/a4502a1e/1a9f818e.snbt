@@ -23,7 +23,7 @@
 				Type: "extrautils2:generator_survival"
 			}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "baf785ef",

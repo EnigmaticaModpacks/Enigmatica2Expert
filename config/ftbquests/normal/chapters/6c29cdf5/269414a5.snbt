@@ -16,7 +16,7 @@
 		items: [{
 			item: "botania:conjurationcatalyst"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "9e6555f7",

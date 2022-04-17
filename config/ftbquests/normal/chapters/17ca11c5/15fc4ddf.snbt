@@ -16,7 +16,7 @@
 		items: [{
 			item: "avaritia:infinity_pants"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "510234b4",

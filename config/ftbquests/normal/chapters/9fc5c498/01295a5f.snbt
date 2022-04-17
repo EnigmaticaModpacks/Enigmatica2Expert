@@ -15,7 +15,6 @@
 		items: [{
 			item: "enderio:block_killer_joe"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

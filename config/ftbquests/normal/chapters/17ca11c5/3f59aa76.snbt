@@ -15,7 +15,7 @@
 		items: [{
 			item: "industrialforegoing:black_hole_controller_reworked"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "ca3fd4ed",
@@ -23,7 +23,7 @@
 		items: [{
 			item: "industrialforegoing:black_hole_unit"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "017ec299",
@@ -31,7 +31,7 @@
 		items: [{
 			item: "industrialforegoing:black_hole_tank"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "cd28ae85",

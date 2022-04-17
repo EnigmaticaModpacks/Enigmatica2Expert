@@ -15,7 +15,7 @@
 		items: [{
 			item: "industrialforegoing:animal_resource_harvester"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "5d88e0fb",

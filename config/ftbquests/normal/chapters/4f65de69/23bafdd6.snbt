@@ -15,7 +15,6 @@
 		items: [{
 			item: "mechanics:heavy_ingot"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

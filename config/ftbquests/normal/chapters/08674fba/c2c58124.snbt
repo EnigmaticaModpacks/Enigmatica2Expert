@@ -16,7 +16,7 @@
 		items: [{
 			item: "advancedrocketry:spacehelmet"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "28530495",
@@ -24,7 +24,7 @@
 		items: [{
 			item: "advancedrocketry:spacechestplate"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "477a006d",
@@ -32,7 +32,7 @@
 		items: [{
 			item: "advancedrocketry:spaceleggings"
 		}],
-		ignore_damage: true
+		
 	},
 	{
 		uid: "6e122170",
@@ -40,7 +40,7 @@
 		items: [{
 			item: "advancedrocketry:spaceboots"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "22b70713",

@@ -15,7 +15,7 @@
 		items: [{
 			item: "immersiveengineering:wooden_device1 1 1"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "a3c06a77",

@@ -16,7 +16,6 @@
 		items: [{
 			item: "thermalexpansion:frame 1 64"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

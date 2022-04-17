@@ -31,7 +31,7 @@
 				}
 			}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "9188bef7",

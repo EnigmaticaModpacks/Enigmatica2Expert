@@ -16,7 +16,6 @@
 		items: [{
 			item: "rftools:crafter1"
 		}],
-		
 		ignore_nbt: 1b
 	}],
 	rewards: [{

@@ -15,7 +15,7 @@
 		items: [{
 			item: "claybucket:unfiredclaybucket"
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "39db7808",

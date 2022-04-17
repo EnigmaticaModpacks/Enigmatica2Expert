@@ -23,7 +23,7 @@
 				Type: "extrautils2:furnace"
 			}
 		}],
-		ignore_damage: true
+		
 	}],
 	rewards: [{
 		uid: "2020c905",
