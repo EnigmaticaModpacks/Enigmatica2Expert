@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "extrautils2:angelblock"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "6cf23f18",

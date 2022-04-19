@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "botania:grasshorn"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "efb732d5",

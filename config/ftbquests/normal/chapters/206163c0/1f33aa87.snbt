@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "forestry:rainmaker"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "8c0b6a07",

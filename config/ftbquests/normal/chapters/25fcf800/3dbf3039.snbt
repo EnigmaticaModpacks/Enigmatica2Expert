@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "environmentaltech:void_res_miner_cont_1"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "cd55d018",

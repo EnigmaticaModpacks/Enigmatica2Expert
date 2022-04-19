@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "astralsorcery:blockwell"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "e532b697",

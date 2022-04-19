@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "environmentaltech:pladium_crystal"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "63112d80",

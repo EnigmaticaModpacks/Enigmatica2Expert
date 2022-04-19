@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "draconicevolution:wyvern_energy_core"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "a5443778",

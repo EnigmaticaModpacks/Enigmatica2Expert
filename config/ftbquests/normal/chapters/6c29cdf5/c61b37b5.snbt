@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "botania:alchemycatalyst"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "4a37748d",

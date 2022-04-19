@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "astralsorcery:blockaltar 1 2"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "81bdef9b",

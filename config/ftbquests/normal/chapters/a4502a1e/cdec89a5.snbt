@@ -14,16 +14,14 @@
 		type: "item",
 		items: [{
 			item: "extrautils2:powerbattery"
-		}],
-		
+		}]
 	},
 	{
 		uid: "d9f14b57",
 		type: "item",
 		items: [{
 			item: "extrautils2:powertransmitter"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "f6f05002",

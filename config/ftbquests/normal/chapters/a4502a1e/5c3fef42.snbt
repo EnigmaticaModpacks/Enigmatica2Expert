@@ -22,8 +22,7 @@
 			tag: {
 				Type: "extrautils2:generator_enchant"
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "de50dad2",

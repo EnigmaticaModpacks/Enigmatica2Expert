@@ -22,8 +22,7 @@
 			tag: {
 				Material: "chaotic_metal"
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "2be8b4de",

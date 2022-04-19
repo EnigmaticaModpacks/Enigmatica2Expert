@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "mekanism:reinforcedalloy"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "a4a88db0",

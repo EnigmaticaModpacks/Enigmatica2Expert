@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "extrautils2:goldenlasso 1 1"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "075453ae",

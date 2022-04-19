@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "rftools:machine_frame"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "eae3261b",

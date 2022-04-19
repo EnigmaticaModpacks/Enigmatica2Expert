@@ -23,8 +23,7 @@
 			tag: {
 				type: "thermalily"
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "82351235",

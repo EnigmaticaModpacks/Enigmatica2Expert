@@ -23,8 +23,7 @@
 			tag: {
 				type: "entropinnyum"
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "1c4fdc07",

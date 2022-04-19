@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "advancedrocketry:spacestationchip"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "963215fe",

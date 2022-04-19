@@ -14,16 +14,14 @@
 		type: "item",
 		items: [{
 			item: "immersiveengineering:metal_device1 1 3"
-		}],
-		
+		}]
 	},
 	{
 		uid: "18272563",
 		type: "item",
 		items: [{
 			item: "minecraft:lava_bucket"
-		}],
-		
+		}]
 	},
 	{
 		uid: "f600bd6d",

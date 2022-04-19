@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "forestry:fermenter"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "822e2524",

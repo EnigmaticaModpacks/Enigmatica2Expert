@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "mekanism:tierinstaller 1 1"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "50e31874",

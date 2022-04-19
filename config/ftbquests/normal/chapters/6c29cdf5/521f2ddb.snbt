@@ -23,8 +23,7 @@
 			tag: {
 				type: "narslimmus"
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "34b41c22",

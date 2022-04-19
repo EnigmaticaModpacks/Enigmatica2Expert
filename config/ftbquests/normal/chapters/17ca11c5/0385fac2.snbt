@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "tconstruct:materials 1 50"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "b204007b",

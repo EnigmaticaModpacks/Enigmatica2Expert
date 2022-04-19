@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "industrialforegoing:sludge_refiner"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "a6bcaeef",

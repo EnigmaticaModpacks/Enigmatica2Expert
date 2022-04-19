@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "draconicevolution:awakened_core"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "57ce5510",

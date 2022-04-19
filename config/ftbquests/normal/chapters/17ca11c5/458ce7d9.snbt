@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "scalinghealth:difficultychanger"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "cf94db39",

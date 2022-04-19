@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "industrialforegoing:crop_recolector"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "f6be8f1e",

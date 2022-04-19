@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "advancedrocketry:suitworkstation"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "201a6162",

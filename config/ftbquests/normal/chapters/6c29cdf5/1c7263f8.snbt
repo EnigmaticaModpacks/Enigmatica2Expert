@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "botania:travelbelt"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "bce7cc9a",

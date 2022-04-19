@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "advancedrocketry:warpmonitor"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "ba2f0dbc",

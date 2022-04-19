@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "actuallyadditions:item_crystal_empowered 1 1"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "5a60edca",

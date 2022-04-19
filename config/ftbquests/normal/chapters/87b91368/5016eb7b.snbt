@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "rats:raw_plastic"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "adf6b824",

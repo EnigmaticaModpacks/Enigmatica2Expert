@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "rftoolsdim:dimension_builder"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "a934ff24",

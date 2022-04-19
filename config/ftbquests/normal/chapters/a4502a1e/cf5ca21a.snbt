@@ -22,8 +22,7 @@
 			tag: {
 				Type: "extrautils2:generator_netherstar"
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "b49bb99e",

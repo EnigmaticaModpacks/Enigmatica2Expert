@@ -23,8 +23,7 @@
 			tag: {
 				type: "orechidIgnem"
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "cc560953",

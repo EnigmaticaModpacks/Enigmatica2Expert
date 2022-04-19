@@ -14,24 +14,21 @@
 		type: "item",
 		items: [{
 			item: "industrialforegoing:tinydryrubber"
-		}],
-		
+		}]
 	},
 	{
 		uid: "5abc477e",
 		type: "item",
 		items: [{
 			item: "industrialforegoing:dryrubber"
-		}],
-		
+		}]
 	},
 	{
 		uid: "9aadce5f",
 		type: "item",
 		items: [{
 			item: "industrialforegoing:plastic"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "7a564b5c",

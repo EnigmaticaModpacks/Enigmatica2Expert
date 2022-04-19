@@ -172,49 +172,22 @@
 	{
 		item: {
 			id: "immersiveengineering:revolver",
-			ForgeCaps: {
-				Parent: {
-					Items: [],
-					Size: 21
-				}
+			tag: {
+				bullets: []
 			}
 		},
 		weight: 10
 	},
 	{
-		item: {
-			id: "immersiveengineering:chemthrower",
-			ForgeCaps: {
-				Parent: {
-					Items: [],
-					Size: 1
-				}
-			}
-		},
+		item: "immersiveengineering:chemthrower",
 		weight: 10
 	},
 	{
-		item: {
-			id: "immersiveengineering:railgun",
-			ForgeCaps: {
-				Parent: {
-					Items: [],
-					Size: 1
-				}
-			}
-		},
+		item: "immersiveengineering:railgun",
 		weight: 10
 	},
 	{
-		item: {
-			id: "immersiveengineering:skyhook",
-			ForgeCaps: {
-				Parent: {
-					Items: [],
-					Size: 1
-				}
-			}
-		},
+		item: "immersiveengineering:skyhook",
 		weight: 10
 	},
 	{
@@ -269,7 +242,10 @@
 		weight: 10
 	},
 	{
-		item: "botania:exchangerod",
+		item: {
+			id: "botania:exchangerod",
+			tag: {}
+		},
 		weight: 10
 	},
 	{
@@ -462,7 +438,7 @@
 	{
 		item: {
 			id: "rats:rat_nugget_ore",
-			Damage: 14s,
+			Damage: 12s,
 			tag: {
 				OreItem: {
 					id: "draconicevolution:draconium_ore",
@@ -482,7 +458,7 @@
 	{
 		item: {
 			id: "rats:rat_nugget_ore",
-			Damage: 10s,
+			Damage: 9s,
 			tag: {
 				OreItem: {
 					id: "tconstruct:ore",
@@ -737,7 +713,7 @@
 	loot_crate: {
 		string_id: "rare",
 		item_name: "Rare",
-		color: 16777215,
+		color: 8631617,
 		drops: {
 			passive: 0,
 			monster: 0,

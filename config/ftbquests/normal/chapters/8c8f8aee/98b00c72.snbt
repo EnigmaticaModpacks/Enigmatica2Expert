@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "actuallyadditions:block_atomic_reconstructor"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "2fb4de1f",

@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "mekanism:enrichedalloy"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "59406abe",

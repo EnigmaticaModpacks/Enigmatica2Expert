@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "forestry:sturdy_machine"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "9dbd8d6d",

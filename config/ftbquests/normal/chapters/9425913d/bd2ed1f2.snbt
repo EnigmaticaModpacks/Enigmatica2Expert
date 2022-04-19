@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "mekanism:basicblock 1 8"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "e1221540",

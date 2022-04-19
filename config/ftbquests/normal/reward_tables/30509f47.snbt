@@ -120,13 +120,7 @@
 		weight: 10
 	},
 	{
-		item: {
-			id: "minecraft:banner",
-			Damage: 6s,
-			ForgeCaps: {
-				"thaumicaugmentation:elytra_harness_augment": {}
-			}
-		},
+		item: "minecraft:banner 1 6",
 		count: 16,
 		weight: 10
 	},
@@ -881,7 +875,7 @@
 	loot_crate: {
 		string_id: "common",
 		item_name: "Common",
-		color: 16777215,
+		color: 4936279,
 		drops: {
 			passive: 0,
 			monster: 0,

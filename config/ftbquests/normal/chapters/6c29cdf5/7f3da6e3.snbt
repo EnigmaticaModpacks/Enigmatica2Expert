@@ -23,8 +23,7 @@
 			tag: {
 				type: "gourmaryllis"
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "a1ec72e5",

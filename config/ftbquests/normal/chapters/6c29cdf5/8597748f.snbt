@@ -19,8 +19,7 @@
 		items: [{
 			id: "botania:exchangerod",
 			tag: {}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "284b3e05",

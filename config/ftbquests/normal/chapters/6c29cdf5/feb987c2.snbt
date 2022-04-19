@@ -15,16 +15,14 @@
 		type: "item",
 		items: [{
 			item: "botania:terraplate"
-		}],
-		
+		}]
 	},
 	{
 		uid: "ac8c1d46",
 		type: "item",
 		items: [{
 			item: "botania:livingrock 5"
-		}],
-		
+		}]
 	},
 	{
 		uid: "43fb74c2",

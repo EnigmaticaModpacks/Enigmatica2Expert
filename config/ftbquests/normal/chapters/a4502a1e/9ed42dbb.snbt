@@ -22,8 +22,7 @@
 			tag: {
 				Type: "extrautils2:generator_slime"
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "24fb272a",

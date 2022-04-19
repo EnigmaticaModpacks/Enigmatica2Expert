@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "forestry:thermionic_tubes 1 7"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "a4678a12",

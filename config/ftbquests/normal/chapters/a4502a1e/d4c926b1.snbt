@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "extrautils2:ineffableglass"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "21081c44",

@@ -23,8 +23,7 @@
 			tag: {
 				type: "clayconia"
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "0eb8cd63",

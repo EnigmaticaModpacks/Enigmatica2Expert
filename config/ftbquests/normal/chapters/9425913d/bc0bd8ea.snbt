@@ -22,8 +22,7 @@
 		type: "item",
 		items: [{
 			item: "xnet:netcable 32"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "71e5d9d3",

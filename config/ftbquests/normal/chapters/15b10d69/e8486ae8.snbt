@@ -14,16 +14,14 @@
 		type: "item",
 		items: [{
 			item: "industrialforegoing:protein_reactor"
-		}],
-		
+		}]
 	},
 	{
 		uid: "89a08ddf",
 		type: "item",
 		items: [{
 			item: "industrialforegoing:protein_generator"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "52b660db",

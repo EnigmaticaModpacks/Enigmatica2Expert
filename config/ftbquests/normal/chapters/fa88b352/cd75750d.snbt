@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "nuclearcraft:upgrade"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "3680027e",

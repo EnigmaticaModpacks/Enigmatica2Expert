@@ -19,8 +19,7 @@
 		type: "item",
 		items: [{
 			item: "thermalfoundation:ore 2"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "9e3ab801",

@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "industrialforegoing:animal_stock_increaser"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "17718c89",

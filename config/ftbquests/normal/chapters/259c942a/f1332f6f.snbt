@@ -14,32 +14,28 @@
 		type: "item",
 		items: [{
 			item: "immersiveengineering:mold"
-		}],
-		
+		}]
 	},
 	{
 		uid: "f8bdb561",
 		type: "item",
 		items: [{
 			item: "immersiveengineering:mold 1 1"
-		}],
-		
+		}]
 	},
 	{
 		uid: "c3b83ee2",
 		type: "item",
 		items: [{
 			item: "immersiveengineering:mold 1 2"
-		}],
-		
+		}]
 	},
 	{
 		uid: "ed3b141e",
 		type: "item",
 		items: [{
 			item: "immersiveengineering:mold 1 4"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "05887747",

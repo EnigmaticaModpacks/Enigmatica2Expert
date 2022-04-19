@@ -14,24 +14,21 @@
 		type: "item",
 		items: [{
 			item: "industrialforegoing:black_hole_controller_reworked"
-		}],
-		
+		}]
 	},
 	{
 		uid: "ca3fd4ed",
 		type: "item",
 		items: [{
 			item: "industrialforegoing:black_hole_unit"
-		}],
-		
+		}]
 	},
 	{
 		uid: "017ec299",
 		type: "item",
 		items: [{
 			item: "industrialforegoing:black_hole_tank"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "cd28ae85",

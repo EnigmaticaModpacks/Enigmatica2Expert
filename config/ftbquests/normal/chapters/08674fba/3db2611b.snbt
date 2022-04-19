@@ -15,32 +15,28 @@
 		type: "item",
 		items: [{
 			item: "advancedrocketry:rocketbuilder"
-		}],
-		
+		}]
 	},
 	{
 		uid: "df6a2f0b",
 		type: "item",
 		items: [{
 			item: "advancedrocketry:launchpad 9"
-		}],
-		
+		}]
 	},
 	{
 		uid: "9f75c953",
 		type: "item",
 		items: [{
 			item: "advancedrocketry:structuretower 4"
-		}],
-		
+		}]
 	},
 	{
 		uid: "4b46745f",
 		type: "item",
 		items: [{
 			item: "advancedrocketry:fuelingstation"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "a1eff8ec",

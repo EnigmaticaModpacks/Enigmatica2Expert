@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "claybucket:unfiredclaybucket"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "39db7808",

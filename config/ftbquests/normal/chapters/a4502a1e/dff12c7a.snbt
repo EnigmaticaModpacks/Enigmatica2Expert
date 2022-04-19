@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "extrautils2:passivegenerator 9"
-		}],
-		
+		}]
 	},
 	{
 		uid: "88580a73",

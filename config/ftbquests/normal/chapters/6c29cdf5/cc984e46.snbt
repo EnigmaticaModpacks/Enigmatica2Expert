@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "botania:altar"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "e2983e71",

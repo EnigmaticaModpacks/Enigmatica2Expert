@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "nuclearcraft:supercooler_idle"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "8f545eca",

@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "rftools:matter_booster"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "85ef96de",

@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "rftools:creative_screen"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "2e4f18fe",

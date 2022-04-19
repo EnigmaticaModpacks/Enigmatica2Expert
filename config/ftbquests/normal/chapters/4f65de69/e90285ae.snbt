@@ -21,8 +21,7 @@
 		items: [{
 			item: "mekanism:oreblock"
 		}],
-		count: 2L,
-		
+		count: 2L
 	},
 	{
 		uid: "59d716f9",

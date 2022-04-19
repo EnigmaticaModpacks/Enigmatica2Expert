@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "extrautils2:resonator"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "07618a04",

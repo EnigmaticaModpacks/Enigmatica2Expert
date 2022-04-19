@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "astralsorcery:blockworldilluminator"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "055b2afa",

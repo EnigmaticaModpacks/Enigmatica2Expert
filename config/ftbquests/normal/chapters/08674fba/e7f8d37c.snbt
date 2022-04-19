@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "libvulpes:ore0"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "ff50e0a6",

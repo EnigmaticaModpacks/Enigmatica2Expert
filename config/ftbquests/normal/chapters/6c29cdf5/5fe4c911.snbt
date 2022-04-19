@@ -23,8 +23,7 @@
 			tag: {
 				type: "hopperhock"
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "6aa1c820",

@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "environmentaltech:solar_cont_3"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "57ad589d",

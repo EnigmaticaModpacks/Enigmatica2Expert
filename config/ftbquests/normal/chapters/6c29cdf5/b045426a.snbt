@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "botania:spreader"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "52e97291",

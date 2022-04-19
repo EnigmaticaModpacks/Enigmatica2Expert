@@ -22,8 +22,7 @@
 			tag: {
 				orb: "bloodmagic:apprentice"
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "acf5e8a8",

@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "forestry:still"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "72b4b221",

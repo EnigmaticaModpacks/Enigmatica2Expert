@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "forestry:squeezer"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "2ff480ad",

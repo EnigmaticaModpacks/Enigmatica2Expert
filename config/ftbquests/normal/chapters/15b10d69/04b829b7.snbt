@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "industrialforegoing:mob_relocator"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "47c8b57a",

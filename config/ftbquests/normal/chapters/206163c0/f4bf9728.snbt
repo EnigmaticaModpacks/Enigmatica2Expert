@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "forestry:fabricator"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "6adc491f",

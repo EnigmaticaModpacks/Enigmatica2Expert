@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "industrialforegoing:water_resources_collector"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "85b4458d",

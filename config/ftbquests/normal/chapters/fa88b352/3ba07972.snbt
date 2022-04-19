@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "nuclearcraft:salt_mixer_idle"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "9aeb6b1a",

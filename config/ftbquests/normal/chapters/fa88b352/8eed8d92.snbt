@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "nuclearcraft:part 1 3"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "44ff3899",

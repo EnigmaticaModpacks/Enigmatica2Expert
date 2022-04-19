@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "nuclearcraft:machine_interface"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "7cbf51bd",

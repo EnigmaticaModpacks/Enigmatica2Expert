@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "astralsorcery:itemhandtelescope"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "22c2062d",

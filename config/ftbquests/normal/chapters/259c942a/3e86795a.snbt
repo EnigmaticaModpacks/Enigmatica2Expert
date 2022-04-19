@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "immersiveengineering:treated_wood 8"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "2413351d",

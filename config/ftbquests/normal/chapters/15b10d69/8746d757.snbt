@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "industrialforegoing:wither_builder"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "213efd0a",

@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "extrautils2:drum"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "995ea392",

@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "industrialforegoing:fluid_crafter"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "746c8dde",

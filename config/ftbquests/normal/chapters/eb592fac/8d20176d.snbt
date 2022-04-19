@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "rftools:shape_card 1 1"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "0ad124e4",

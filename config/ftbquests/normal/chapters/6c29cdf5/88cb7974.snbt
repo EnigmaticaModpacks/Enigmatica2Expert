@@ -23,8 +23,7 @@
 			tag: {
 				type: "kekimurus"
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "fb485b1d",

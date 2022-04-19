@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "forestry:engine_biogas"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "d9121836",

@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "rats:rat_upgrade_gemcutter"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "4c56e7ef",

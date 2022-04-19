@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "thermalfoundation:upgrade"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "7bf45fde",

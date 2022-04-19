@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "extrautils2:ingredients 1 10"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "77ce5ea8",

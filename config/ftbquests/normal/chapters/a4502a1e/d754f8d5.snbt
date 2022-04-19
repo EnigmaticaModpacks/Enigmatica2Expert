@@ -22,8 +22,7 @@
 			tag: {
 				Type: "extrautils2:crusher"
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "21a84903",

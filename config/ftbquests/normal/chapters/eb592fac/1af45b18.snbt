@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "rftoolsdim:dimlet_parcel"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "ad59314f",

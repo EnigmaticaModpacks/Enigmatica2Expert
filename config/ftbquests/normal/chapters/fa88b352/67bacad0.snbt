@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "nuclearcraft:decay_hastener_idle"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "b5ff9cf1",

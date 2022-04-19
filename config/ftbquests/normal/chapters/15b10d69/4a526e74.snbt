@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "industrialforegoing:latex_processing_unit"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "ea7bfdb6",

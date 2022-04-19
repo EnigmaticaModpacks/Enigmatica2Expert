@@ -27,8 +27,7 @@
 				type: 1b,
 				insulation: 0b
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "617ff5a4",

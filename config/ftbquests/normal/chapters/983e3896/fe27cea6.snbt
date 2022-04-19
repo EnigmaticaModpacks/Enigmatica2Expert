@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "astralsorcery:blockstarlightinfuser"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "41624c12",

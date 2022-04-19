@@ -14,48 +14,42 @@
 		type: "item",
 		items: [{
 			item: "advancedrocketry:crystallizer"
-		}],
-		
+		}]
 	},
 	{
 		uid: "98a10a41",
 		type: "item",
 		items: [{
 			item: "advancedrocketry:iquartzcrucible 6"
-		}],
-		
+		}]
 	},
 	{
 		uid: "2e0dc436",
 		type: "item",
 		items: [{
 			item: "libvulpes:coil0 2 4"
-		}],
-		
+		}]
 	},
 	{
 		uid: "2bb14f9b",
 		type: "item",
 		items: [{
 			item: "libvulpes:forgepowerinput"
-		}],
-		
+		}]
 	},
 	{
 		uid: "987d86db",
 		type: "item",
 		items: [{
 			item: "libvulpes:hatch"
-		}],
-		
+		}]
 	},
 	{
 		uid: "653953a0",
 		type: "item",
 		items: [{
 			item: "libvulpes:hatch 1 1"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "6c7d2775",

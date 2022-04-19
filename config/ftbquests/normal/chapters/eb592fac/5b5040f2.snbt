@@ -14,16 +14,14 @@
 		type: "item",
 		items: [{
 			item: "rftools:elevator"
-		}],
-		
+		}]
 	},
 	{
 		uid: "7e86bb4c",
 		type: "item",
 		items: [{
 			item: "rftools:elevator_button_module"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "1192ba6b",

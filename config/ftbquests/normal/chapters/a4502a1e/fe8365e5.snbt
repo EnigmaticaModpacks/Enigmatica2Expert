@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "extrautils2:lawsword"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "705eb052",

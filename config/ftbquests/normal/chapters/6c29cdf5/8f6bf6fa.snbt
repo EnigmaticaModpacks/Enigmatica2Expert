@@ -23,8 +23,7 @@
 			tag: {
 				type: "bellethorn"
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "e127109e",

@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "iceandfire:dragonegg_red"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "b5fe7435",

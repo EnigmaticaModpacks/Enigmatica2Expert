@@ -29,8 +29,7 @@
 				tier: 4,
 				mekData: {}
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "b9164859",

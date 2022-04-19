@@ -15,24 +15,21 @@
 		type: "item",
 		items: [{
 			item: "botania:sparkupgrade"
-		}],
-		
+		}]
 	},
 	{
 		uid: "6114953c",
 		type: "item",
 		items: [{
 			item: "botania:sparkupgrade 1 1"
-		}],
-		
+		}]
 	},
 	{
 		uid: "6d7aa522",
 		type: "item",
 		items: [{
 			item: "botania:sparkupgrade 1 2"
-		}],
-		
+		}]
 	},
 	{
 		uid: "34cc0a4c",

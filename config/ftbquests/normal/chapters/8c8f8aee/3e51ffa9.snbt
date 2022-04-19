@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "actuallyadditions:item_misc 1 23"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "93ada445",

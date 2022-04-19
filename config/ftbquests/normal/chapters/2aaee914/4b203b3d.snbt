@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "mekanism:compressedcarbon"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "4051fe17",

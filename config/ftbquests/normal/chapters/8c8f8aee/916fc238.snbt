@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "actuallyadditions:block_furnace_double"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "f22af381",

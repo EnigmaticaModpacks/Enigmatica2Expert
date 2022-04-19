@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "mekanism:compressedredstone"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "51f298e0",

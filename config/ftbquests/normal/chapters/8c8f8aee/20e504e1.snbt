@@ -15,16 +15,14 @@
 		type: "item",
 		items: [{
 			item: "actuallyadditions:block_empowerer"
-		}],
-		
+		}]
 	},
 	{
 		uid: "75325dbe",
 		type: "item",
 		items: [{
 			item: "actuallyadditions:block_display_stand 4"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "6f28af27",

@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "rats:rat_cage"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "8cf1362b",

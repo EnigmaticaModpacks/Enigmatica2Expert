@@ -14,16 +14,14 @@
 		type: "item",
 		items: [{
 			item: "industrialforegoing:mob_slaughter_factory"
-		}],
-		
+		}]
 	},
 	{
 		uid: "66bfbbcb",
 		type: "item",
 		items: [{
 			item: "industrialforegoing:pink_slime"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "fe742686",

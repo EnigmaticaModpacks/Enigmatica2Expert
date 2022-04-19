@@ -14,24 +14,21 @@
 		type: "item",
 		items: [{
 			item: "mekanism:enrichediron"
-		}],
-		
+		}]
 	},
 	{
 		uid: "8ab57093",
 		type: "item",
 		items: [{
 			item: "thermalfoundation:material 1 96"
-		}],
-		
+		}]
 	},
 	{
 		uid: "1f758ac7",
 		type: "item",
 		items: [{
 			item: "thermalfoundation:material 1 160"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "016b7813",

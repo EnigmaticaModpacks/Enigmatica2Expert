@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "animania:peacock_egg_blue"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "a0f918d5",

@@ -16,16 +16,14 @@
 		type: "item",
 		items: [{
 			item: "industrialforegoing:mob_duplicator"
-		}],
-		
+		}]
 	},
 	{
 		uid: "df3ace41",
 		type: "item",
 		items: [{
 			item: "industrialforegoing:mob_imprisonment_tool"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "f5f7818a",

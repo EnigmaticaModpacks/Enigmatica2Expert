@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "botania:livingwood"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "5adee103",

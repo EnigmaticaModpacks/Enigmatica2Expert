@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "draconicevolution:draconium_ingot"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "10ee9dc0",

@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "draconicevolution:chaos_shard"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "59d4976e",

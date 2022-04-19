@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "advancedrocketry:planetanalyser"
-		}],
-		
+		}]
 	},
 	{
 		uid: "d336a7fe",
@@ -30,32 +29,28 @@
 		type: "item",
 		items: [{
 			item: "advancedrocketry:loader 3"
-		}],
-		
+		}]
 	},
 	{
 		uid: "11daa217",
 		type: "item",
 		items: [{
 			item: "libvulpes:hatch"
-		}],
-		
+		}]
 	},
 	{
 		uid: "933f0122",
 		type: "item",
 		items: [{
 			item: "libvulpes:hatch 1 1"
-		}],
-		
+		}]
 	},
 	{
 		uid: "f4394e63",
 		type: "item",
 		items: [{
 			item: "libvulpes:forgepowerinput"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "2475071e",

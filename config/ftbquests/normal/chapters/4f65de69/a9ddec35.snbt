@@ -15,24 +15,21 @@
 		type: "item",
 		items: [{
 			item: "tcomplement:high_oven_controller"
-		}],
-		
+		}]
 	},
 	{
 		uid: "01cb16c3",
 		type: "item",
 		items: [{
 			item: "tcomplement:scorched_block 24 3"
-		}],
-		
+		}]
 	},
 	{
 		uid: "38165d14",
 		type: "item",
 		items: [{
 			item: "tcomplement:high_oven_io"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "ddd16503",

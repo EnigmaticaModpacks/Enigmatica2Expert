@@ -21,8 +21,7 @@
 		type: "item",
 		items: [{
 			item: "extendedcrafting:table_ultimate"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "4fe4d865",

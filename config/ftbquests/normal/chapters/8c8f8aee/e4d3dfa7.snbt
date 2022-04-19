@@ -14,16 +14,14 @@
 		type: "item",
 		items: [{
 			item: "actuallyadditions:block_phantomface"
-		}],
-		
+		}]
 	},
 	{
 		uid: "20b9599e",
 		type: "item",
 		items: [{
 			item: "actuallyadditions:item_phantom_connector"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "0e3cbf36",

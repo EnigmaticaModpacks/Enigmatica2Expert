@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "environmentaltech:modifier_speed"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "53400ffa",

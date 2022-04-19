@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "environmentaltech:erodium_crystal"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "188547c5",

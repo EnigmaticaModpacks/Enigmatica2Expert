@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "astralsorcery:blockcustomore 1 1"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "ddb89497",

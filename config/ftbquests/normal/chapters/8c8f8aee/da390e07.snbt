@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "actuallyadditions:item_worm"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "afcefd1f",

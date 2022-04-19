@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "extrautils2:spike_diamond"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "a37561c7",

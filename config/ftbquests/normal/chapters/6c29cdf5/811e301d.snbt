@@ -23,8 +23,7 @@
 			tag: {
 				type: "munchdew"
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "95bbc2c5",

@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "forestry:carpenter"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "a461a2ad",

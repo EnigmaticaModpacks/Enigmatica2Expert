@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "rats:gem_of_ratlantis"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "67756d8a",

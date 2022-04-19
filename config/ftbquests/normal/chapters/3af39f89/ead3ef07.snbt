@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "thermalfoundation:material 1 832"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "b485b777",

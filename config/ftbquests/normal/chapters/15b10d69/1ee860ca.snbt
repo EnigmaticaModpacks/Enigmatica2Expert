@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "industrialforegoing:laser_drill"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "a37ba219",

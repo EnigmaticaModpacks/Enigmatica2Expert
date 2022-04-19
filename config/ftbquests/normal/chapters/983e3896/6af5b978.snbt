@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "astralsorcery:blockattunementaltar"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "2972449c",

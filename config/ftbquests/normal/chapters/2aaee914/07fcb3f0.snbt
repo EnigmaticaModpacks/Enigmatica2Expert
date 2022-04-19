@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "mekanism:biofuel"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "d57cb71e",

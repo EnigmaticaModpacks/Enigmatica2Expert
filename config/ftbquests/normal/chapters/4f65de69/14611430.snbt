@@ -22,8 +22,7 @@
 			tag: {
 				Material: "draconic_metal"
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "88896799",

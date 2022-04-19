@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "environmentaltech:kyronite_crystal"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "44bb8b58",

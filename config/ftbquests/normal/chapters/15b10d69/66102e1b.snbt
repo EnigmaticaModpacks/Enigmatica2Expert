@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "industrialforegoing:crop_sower"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "408852a7",

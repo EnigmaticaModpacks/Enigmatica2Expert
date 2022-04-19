@@ -86,12 +86,7 @@
 		weight: 10
 	},
 	{
-		item: {
-			id: "botania:flowerbag",
-			ForgeCaps: {
-				Parent: []
-			}
-		},
+		item: "botania:flowerbag",
 		weight: 10
 	},
 	{
@@ -644,7 +639,7 @@
 	loot_crate: {
 		string_id: "epic",
 		item_name: "Epic",
-		color: 16777215,
+		color: 15260730,
 		drops: {
 			passive: 0,
 			monster: 0,

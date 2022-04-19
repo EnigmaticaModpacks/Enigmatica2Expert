@@ -23,8 +23,7 @@
 			tag: {
 				type: "solegnolia"
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "313c9339",

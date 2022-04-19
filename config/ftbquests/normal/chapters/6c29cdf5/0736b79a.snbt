@@ -23,8 +23,7 @@
 			tag: {
 				type: "jadedAmaranthus"
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "cb100aee",

@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "environmentaltech:modifier_accuracy"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "d0828aaf",

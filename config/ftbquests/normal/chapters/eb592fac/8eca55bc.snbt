@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "rftools:builder"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "43e0c4e4",

@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "forestry:apiary"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "2d87f272",

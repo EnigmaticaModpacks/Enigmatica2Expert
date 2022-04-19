@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "thermalexpansion:augment 1 673"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "e1866ace",

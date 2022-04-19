@@ -15,24 +15,21 @@
 		type: "item",
 		items: [{
 			item: "botania:alfheimportal"
-		}],
-		
+		}]
 	},
 	{
 		uid: "0b968996",
 		type: "item",
 		items: [{
 			item: "botania:livingwood 8"
-		}],
-		
+		}]
 	},
 	{
 		uid: "241cafae",
 		type: "item",
 		items: [{
 			item: "botania:livingwood 3 5"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "379498a7",

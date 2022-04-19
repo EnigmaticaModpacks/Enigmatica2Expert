@@ -22,8 +22,7 @@
 			tag: {
 				Type: "extrautils2:enchanter"
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "ef3456ee",

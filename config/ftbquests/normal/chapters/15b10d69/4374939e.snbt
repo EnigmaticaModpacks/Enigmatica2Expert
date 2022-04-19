@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "industrialforegoing:enchantment_extractor"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "a0808f06",

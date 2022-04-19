@@ -22,8 +22,7 @@
 			tag: {
 				Type: "extrautils2:generator_culinary"
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "7440f016",

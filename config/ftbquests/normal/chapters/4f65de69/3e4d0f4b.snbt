@@ -22,8 +22,7 @@
 			tag: {
 				Material: "enderium"
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "3253d541",

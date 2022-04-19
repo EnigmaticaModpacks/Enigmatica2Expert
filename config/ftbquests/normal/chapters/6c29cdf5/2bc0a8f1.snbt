@@ -16,8 +16,7 @@
 		type: "item",
 		items: [{
 			item: "botania:pool"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "82b06a24",

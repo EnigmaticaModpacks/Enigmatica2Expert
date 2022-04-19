@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "mekanism:atomicalloy"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "18a8211d",

@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "rats:rat_diamond"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "1d458786",

@@ -14,17 +14,11 @@
 		type: "item",
 		items: [{
 			item: "botania:altar"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "f746998c",
 		type: "item",
-		item: {
-			id: "botania:flowerbag",
-			ForgeCaps: {
-				Parent: []
-			}
-		}
+		item: "botania:flowerbag"
 	}]
 }

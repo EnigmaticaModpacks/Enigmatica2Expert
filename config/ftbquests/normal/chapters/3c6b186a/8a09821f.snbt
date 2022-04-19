@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "ic2:misc_resource 1 1"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "33c50359",

@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "ic2:nuclear 1 7"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "8d561d42",

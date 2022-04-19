@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "botania:monocle"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "ed0c108d",

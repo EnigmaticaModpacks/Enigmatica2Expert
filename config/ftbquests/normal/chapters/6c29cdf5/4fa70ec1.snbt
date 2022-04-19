@@ -23,8 +23,7 @@
 			tag: {
 				type: "puredaisy"
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "659ffa7f",

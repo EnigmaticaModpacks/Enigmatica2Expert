@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "teslacorelib:machine_case"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "3e7b6f5f",

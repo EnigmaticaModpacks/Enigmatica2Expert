@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "extrautils2:teleporter 1 1"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "91a68442",

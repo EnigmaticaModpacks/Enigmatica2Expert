@@ -15,32 +15,28 @@
 		type: "item",
 		items: [{
 			item: "advancedrocketry:spacehelmet"
-		}],
-		
+		}]
 	},
 	{
 		uid: "28530495",
 		type: "item",
 		items: [{
 			item: "advancedrocketry:spacechestplate"
-		}],
-		
+		}]
 	},
 	{
 		uid: "477a006d",
 		type: "item",
 		items: [{
 			item: "advancedrocketry:spaceleggings"
-		}],
-		
+		}]
 	},
 	{
 		uid: "6e122170",
 		type: "item",
 		items: [{
 			item: "advancedrocketry:spaceboots"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "22b70713",

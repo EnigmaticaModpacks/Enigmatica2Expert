@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "rats:rat_breeding_lantern"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "fd2f3f7a",

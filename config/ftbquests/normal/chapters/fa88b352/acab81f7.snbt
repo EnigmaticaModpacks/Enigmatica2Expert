@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "nuclearcraft:nuclear_furnace_idle"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "7f149657",

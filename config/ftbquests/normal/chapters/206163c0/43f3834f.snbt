@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "forestry:flexible_casing"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "fa6991a9",

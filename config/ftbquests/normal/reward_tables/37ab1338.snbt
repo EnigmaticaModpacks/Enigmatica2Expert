@@ -204,15 +204,7 @@
 		weight: 10
 	},
 	{
-		item: {
-			id: "draconicevolution:wyvern_axe",
-			ForgeCaps: {
-				Parent: {
-					Items: [],
-					Size: 9
-				}
-			}
-		},
+		item: "draconicevolution:wyvern_axe",
 		weight: 10
 	},
 	{
@@ -317,7 +309,8 @@
 	loot_crate: {
 		string_id: "legendary",
 		item_name: "Legendary",
-		color: 16777215,
+		color: 16758528,
+		glow: true,
 		drops: {
 			passive: 0,
 			monster: 0,

@@ -14,48 +14,42 @@
 		type: "item",
 		items: [{
 			item: "advancedrocketry:arcfurnace"
-		}],
-		
+		}]
 	},
 	{
 		uid: "f2634a63",
 		type: "item",
 		items: [{
 			item: "advancedrocketry:blastbrick 81"
-		}],
-		
+		}]
 	},
 	{
 		uid: "ca0e0fc6",
 		type: "item",
 		items: [{
 			item: "libvulpes:coil0 3 4"
-		}],
-		
+		}]
 	},
 	{
 		uid: "71ccf6ea",
 		type: "item",
 		items: [{
 			item: "libvulpes:forgepowerinput 3"
-		}],
-		
+		}]
 	},
 	{
 		uid: "fb363ef4",
 		type: "item",
 		items: [{
 			item: "libvulpes:hatch"
-		}],
-		
+		}]
 	},
 	{
 		uid: "a2d8949a",
 		type: "item",
 		items: [{
 			item: "libvulpes:hatch 1 1"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "b95e5e66",

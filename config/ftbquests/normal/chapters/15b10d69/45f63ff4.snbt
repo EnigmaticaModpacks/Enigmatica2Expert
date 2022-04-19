@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "industrialforegoing:animal_independence_selector"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "7b1885ac",

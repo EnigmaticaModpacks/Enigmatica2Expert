@@ -22,8 +22,7 @@
 			tag: {
 				Type: "extrautils2:generator_redstone"
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "287f2354",

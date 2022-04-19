@@ -14,48 +14,42 @@
 		type: "item",
 		items: [{
 			item: "tconstruct:smeltery_controller"
-		}],
-		
+		}]
 	},
 	{
 		uid: "d8b14d14",
 		type: "item",
 		items: [{
 			item: "tconstruct:seared_tank"
-		}],
-		
+		}]
 	},
 	{
 		uid: "390ea917",
 		type: "item",
 		items: [{
 			item: "tconstruct:seared 2 3"
-		}],
-		
+		}]
 	},
 	{
 		uid: "d0ed978c",
 		type: "item",
 		items: [{
 			item: "tconstruct:smeltery_io"
-		}],
-		
+		}]
 	},
 	{
 		uid: "0c8abda3",
 		type: "item",
 		items: [{
 			item: "tconstruct:faucet"
-		}],
-		
+		}]
 	},
 	{
 		uid: "cf5bc2a4",
 		type: "item",
 		items: [{
 			item: "tconstruct:casting"
-		}],
-		
+		}]
 	},
 	{
 		uid: "dc8b53b4",

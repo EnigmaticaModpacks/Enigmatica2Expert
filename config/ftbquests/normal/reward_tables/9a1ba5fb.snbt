@@ -65,20 +65,6 @@
 					"tasty",
 					"toolleveling"
 				]
-			},
-			ForgeCaps: {
-				"plustic:fruitsalad_cap": {
-					Items: [],
-					Size: 5
-				},
-				"plustic:": {
-					Items: [],
-					Size: 1
-				},
-				"plustic:musicofthespheres_cap": {
-					Items: [],
-					Size: 1
-				}
 			}
 		}
 	}]

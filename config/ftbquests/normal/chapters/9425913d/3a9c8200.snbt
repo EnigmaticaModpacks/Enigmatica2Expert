@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "exnihilocreatio:block_sieve"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "719a0291",

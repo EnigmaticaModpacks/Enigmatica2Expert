@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "extrautils2:machine"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "34547147",

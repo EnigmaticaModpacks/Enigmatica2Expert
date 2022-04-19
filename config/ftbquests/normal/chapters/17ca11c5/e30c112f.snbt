@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "extrautils2:itemcreativebuilderswand"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "9b8b3d0c",

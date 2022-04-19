@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "mekanism:ingot"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "1893e632",

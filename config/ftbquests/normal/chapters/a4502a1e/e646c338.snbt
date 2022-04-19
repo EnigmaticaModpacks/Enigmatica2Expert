@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "extrautils2:passivegenerator 1 8"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "622daa08",

@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "draconicevolution:chaotic_core"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "15b7a9f1",

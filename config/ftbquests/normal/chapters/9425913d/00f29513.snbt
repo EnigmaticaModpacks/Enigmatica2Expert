@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "immersiveengineering:stone_decoration"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "e5ec1c33",

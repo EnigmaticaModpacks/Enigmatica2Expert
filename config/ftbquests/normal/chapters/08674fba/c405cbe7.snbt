@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "advancedrocketry:ic 1 2"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "f3f4a9b5",

@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "enderio:item_material"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "b6a4f3d5",

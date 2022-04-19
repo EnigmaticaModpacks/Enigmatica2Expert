@@ -14,32 +14,28 @@
 		type: "item",
 		items: [{
 			item: "immersiveengineering:metal_device0"
-		}],
-		
+		}]
 	},
 	{
 		uid: "fd24e0d5",
 		type: "item",
 		items: [{
 			item: "immersiveengineering:wirecoil"
-		}],
-		
+		}]
 	},
 	{
 		uid: "f68869fa",
 		type: "item",
 		items: [{
 			item: "immersiveengineering:connector"
-		}],
-		
+		}]
 	},
 	{
 		uid: "237b5b4f",
 		type: "item",
 		items: [{
 			item: "immersiveengineering:connector 1 1"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "7a0e5584",

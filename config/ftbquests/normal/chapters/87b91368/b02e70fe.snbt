@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "rats:idol_of_ratlantis"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "e0c9b8fb",

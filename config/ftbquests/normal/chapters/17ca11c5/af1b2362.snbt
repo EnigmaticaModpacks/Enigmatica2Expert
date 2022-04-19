@@ -17,8 +17,7 @@
 		type: "item",
 		items: [{
 			item: "storagedrawers:upgrade_creative 1 1"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "821225aa",

@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "ic2:te 1 44"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "c6356b08",

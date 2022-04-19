@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "environmentaltech:ionite_crystal"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "85b65405",

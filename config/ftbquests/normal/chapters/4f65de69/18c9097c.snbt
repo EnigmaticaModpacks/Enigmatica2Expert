@@ -19,8 +19,7 @@
 		type: "item",
 		items: [{
 			item: "appliedenergistics2:material 2"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "a89d9ddc",

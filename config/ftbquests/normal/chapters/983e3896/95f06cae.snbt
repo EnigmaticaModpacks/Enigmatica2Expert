@@ -24,8 +24,7 @@
 				FluidName: "astralsorcery.liquidstarlight",
 				Amount: 1000
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "187f13a7",

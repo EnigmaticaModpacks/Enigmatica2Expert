@@ -18,8 +18,7 @@
 		type: "item",
 		items: [{
 			item: "immersivepetroleum:schematic"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "a5b8eac4",

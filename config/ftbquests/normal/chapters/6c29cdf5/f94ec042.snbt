@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "botania:manaresource 1 5"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "d7e99ee4",

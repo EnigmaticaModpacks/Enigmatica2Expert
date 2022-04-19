@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "astralsorcery:blockmachine 1 1"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "e0b5d46b",

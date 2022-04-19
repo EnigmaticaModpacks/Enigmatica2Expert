@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "actuallyadditions:block_feeder"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "4fca8261",

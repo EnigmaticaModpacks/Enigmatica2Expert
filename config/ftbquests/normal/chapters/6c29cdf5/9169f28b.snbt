@@ -23,8 +23,7 @@
 			tag: {
 				type: "loonium"
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "9f8f79dc",

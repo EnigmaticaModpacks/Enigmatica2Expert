@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "animania:friesian_cheese_wheel"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "3aebcb1c",

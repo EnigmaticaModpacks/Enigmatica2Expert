@@ -21,8 +21,7 @@
 		items: [{
 			item: "tconstruct:ore"
 		}],
-		count: 2L,
-		
+		count: 2L
 	},
 	{
 		uid: "e4daa64c",

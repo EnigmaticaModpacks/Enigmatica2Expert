@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "rats:chunky_cheese_token"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "1235db64",

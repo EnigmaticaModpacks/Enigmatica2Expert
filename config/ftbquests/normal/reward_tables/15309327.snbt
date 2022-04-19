@@ -110,7 +110,12 @@
 		weight: 10
 	},
 	{
-		item: "astralsorcery:itemskyresonator",
+		item: {
+			id: "astralsorcery:itemskyresonator",
+			tag: {
+				astralsorcery: {}
+			}
+		},
 		weight: 10
 	},
 	{
@@ -201,15 +206,7 @@
 		weight: 10
 	},
 	{
-		item: {
-			id: "immersiveengineering:shield",
-			ForgeCaps: {
-				Parent: {
-					Items: [],
-					Size: 1
-				}
-			}
-		},
+		item: "immersiveengineering:shield",
 		weight: 10
 	},
 	{
@@ -448,7 +445,7 @@
 	{
 		item: {
 			id: "rats:rat_nugget_ore",
-			Damage: 25s,
+			Damage: 28s,
 			tag: {
 				OreItem: {
 					id: "netherendingores:ore_end_vanilla",
@@ -524,7 +521,7 @@
 	loot_crate: {
 		string_id: "uncommon",
 		item_name: "Uncommon",
-		color: 16777215,
+		color: 4554878,
 		drops: {
 			passive: 0,
 			monster: 0,

@@ -14,48 +14,42 @@
 		type: "item",
 		items: [{
 			item: "advancedrocketry:electrolyser"
-		}],
-		
+		}]
 	},
 	{
 		uid: "2b85d7d3",
 		type: "item",
 		items: [{
 			item: "libvulpes:structuremachine 2"
-		}],
-		
+		}]
 	},
 	{
 		uid: "e2e0055d",
 		type: "item",
 		items: [{
 			item: "libvulpes:coil0 1 4"
-		}],
-		
+		}]
 	},
 	{
 		uid: "17cbf601",
 		type: "item",
 		items: [{
 			item: "libvulpes:forgepowerinput 2"
-		}],
-		
+		}]
 	},
 	{
 		uid: "60e56931",
 		type: "item",
 		items: [{
 			item: "libvulpes:hatch 1 2"
-		}],
-		
+		}]
 	},
 	{
 		uid: "30d545f2",
 		type: "item",
 		items: [{
 			item: "libvulpes:hatch 2 3"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "66edf746",

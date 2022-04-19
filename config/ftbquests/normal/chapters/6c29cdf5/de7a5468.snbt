@@ -23,8 +23,7 @@
 			tag: {
 				type: "orechid"
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "0682d7bd",

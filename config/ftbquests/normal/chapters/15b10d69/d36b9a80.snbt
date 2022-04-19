@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "industrialforegoing:laser_base"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "47194003",

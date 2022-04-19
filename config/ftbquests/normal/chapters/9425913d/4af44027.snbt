@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "environmentaltech:litherite_crystal"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "b37ecb96",

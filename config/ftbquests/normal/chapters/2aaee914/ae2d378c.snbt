@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "mekanism:controlcircuit"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "dadf8477",

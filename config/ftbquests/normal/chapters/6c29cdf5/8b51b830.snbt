@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "botania:opencrate"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "39455b0e",

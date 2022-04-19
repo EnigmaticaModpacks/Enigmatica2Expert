@@ -23,8 +23,7 @@
 			tag: {
 				type: "endoflame"
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "3c6eb728",

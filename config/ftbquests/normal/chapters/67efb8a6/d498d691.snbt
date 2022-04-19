@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "draconicevolution:dragon_heart"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "e5b52192",

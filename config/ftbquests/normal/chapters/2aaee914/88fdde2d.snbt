@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "mekanism:otherdust 1 5"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "15a67af4",

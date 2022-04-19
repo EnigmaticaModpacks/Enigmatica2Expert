@@ -14,16 +14,14 @@
 		type: "item",
 		items: [{
 			item: "advancedrocketry:precisionassemblingmachine"
-		}],
-		
+		}]
 	},
 	{
 		uid: "342ecb2d",
 		type: "item",
 		items: [{
 			item: "libvulpes:structuremachine 24"
-		}],
-		
+		}]
 	},
 	{
 		uid: "dbcd2b0a",
@@ -38,40 +36,35 @@
 		type: "item",
 		items: [{
 			item: "libvulpes:coil0 2 4"
-		}],
-		
+		}]
 	},
 	{
 		uid: "dda301cf",
 		type: "item",
 		items: [{
 			item: "libvulpes:motor 2"
-		}],
-		
+		}]
 	},
 	{
 		uid: "17b73a8a",
 		type: "item",
 		items: [{
 			item: "libvulpes:forgepowerinput"
-		}],
-		
+		}]
 	},
 	{
 		uid: "747cde8c",
 		type: "item",
 		items: [{
 			item: "libvulpes:hatch"
-		}],
-		
+		}]
 	},
 	{
 		uid: "68981a61",
 		type: "item",
 		items: [{
 			item: "libvulpes:hatch 1 1"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "4b833b11",

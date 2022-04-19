@@ -26,8 +26,7 @@
 				FluidName: "high_pressure_steam",
 				Amount: 1000
 			}
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "f6a9c436",

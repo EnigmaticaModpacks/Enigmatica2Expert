@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "environmentaltech:aethium_crystal"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "4c5d18b9",

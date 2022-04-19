@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "extrautils2:screen"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "d7c01bf2",

@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "forestry:engine_peat"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "25ef8b37",

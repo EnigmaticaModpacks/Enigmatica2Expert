@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "forestry:engine_clockwork"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "69f27be8",

@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "industrialforegoing:crop_enrich_material_injector"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "e879387a",

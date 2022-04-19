@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "botania:livingrock"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "466f97a1",

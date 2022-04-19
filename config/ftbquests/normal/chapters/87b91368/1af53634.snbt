@@ -15,32 +15,28 @@
 		type: "item",
 		items: [{
 			item: "iceandfire:dragon_bone_block 8"
-		}],
-		
+		}]
 	},
 	{
 		uid: "d2fbeb91",
 		type: "item",
 		items: [{
 			item: "iceandfire:dragonforge_ice_brick 17"
-		}],
-		
+		}]
 	},
 	{
 		uid: "97d03bae",
 		type: "item",
 		items: [{
 			item: "iceandfire:dragonforge_ice_input"
-		}],
-		
+		}]
 	},
 	{
 		uid: "f8b19004",
 		type: "item",
 		items: [{
 			item: "iceandfire:dragonforge_ice_core_disabled"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "6aef11e6",

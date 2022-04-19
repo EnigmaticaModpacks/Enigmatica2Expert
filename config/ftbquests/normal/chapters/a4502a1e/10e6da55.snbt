@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "extrautils2:scanner"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "357d1ffb",

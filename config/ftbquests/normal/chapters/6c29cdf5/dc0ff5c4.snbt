@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "botania:spark"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "db536ef1",

@@ -14,16 +14,14 @@
 		type: "item",
 		items: [{
 			item: "advancedrocketry:carbonscrubbercartridge"
-		}],
-		
+		}]
 	},
 	{
 		uid: "237c6753",
 		type: "item",
 		items: [{
 			item: "advancedrocketry:oxygenscrubber"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "1588a76b",

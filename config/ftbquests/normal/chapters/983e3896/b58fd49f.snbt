@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "astralsorcery:itemcraftingcomponent 1 4"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "f9d5ca88",

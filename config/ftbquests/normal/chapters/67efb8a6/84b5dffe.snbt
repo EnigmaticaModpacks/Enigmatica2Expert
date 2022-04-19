@@ -4,12 +4,6 @@
 		id: "draconicevolution:wyvern_shovel",
 		tag: {
 			Energy: 2000000
-		},
-		ForgeCaps: {
-			Parent: {
-				Items: [],
-				Size: 9
-			}
 		}
 	},
 	x: 4.5d,
@@ -27,12 +21,6 @@
 			id: "draconicevolution:wyvern_shovel",
 			tag: {
 				Energy: 2000000
-			},
-			ForgeCaps: {
-				Parent: {
-					Items: [],
-					Size: 9
-				}
 			}
 		}],
 		ignore_nbt: 1b

@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "immersiveengineering:wooden_device1 1 1"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "a3c06a77",

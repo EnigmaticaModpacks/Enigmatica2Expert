@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "libvulpes:structuremachine"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "53f772fb",

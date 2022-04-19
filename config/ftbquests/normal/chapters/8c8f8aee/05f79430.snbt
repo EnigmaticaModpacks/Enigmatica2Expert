@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "actuallyadditions:item_spawner_changer"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "c253e971",

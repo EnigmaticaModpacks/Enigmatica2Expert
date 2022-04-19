@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "rftools:dialing_device"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "d8c66ba3",

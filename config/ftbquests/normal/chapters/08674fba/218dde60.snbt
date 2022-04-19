@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "advancedrocketry:satellitebuilder"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "412830d9",

@@ -15,8 +15,7 @@
 		type: "item",
 		items: [{
 			item: "avaritia:infinity_boots"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "676c1bb3",

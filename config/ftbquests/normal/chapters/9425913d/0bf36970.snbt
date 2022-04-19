@@ -14,8 +14,7 @@
 		type: "item",
 		items: [{
 			item: "nuclearcraft:manufactory_idle"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "227b7338",

@@ -16,8 +16,7 @@
 		type: "item",
 		items: [{
 			item: "extrautils2:rainbowgenerator"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "093c5b77",

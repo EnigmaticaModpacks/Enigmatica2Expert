@@ -14,16 +14,14 @@
 		type: "item",
 		items: [{
 			item: "extrautils2:indexer"
-		}],
-		
+		}]
 	},
 	{
 		uid: "c6ff1b40",
 		type: "item",
 		items: [{
 			item: "extrautils2:indexerremote"
-		}],
-		
+		}]
 	}],
 	rewards: [{
 		uid: "764429d6",
