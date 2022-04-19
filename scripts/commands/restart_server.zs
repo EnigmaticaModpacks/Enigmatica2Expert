@@ -15,8 +15,8 @@ cmd.getCommandUsage = function(sender) {return "commands.restart_server.usage";}
 
 function sendSingle(player as IPlayer, key as string, substr as string = null) as void {
   val line = game.localize("commands.restart_server."~key);
-  if (isNull(substr)) return player.sendChat(line);
-  player.sendChat(I18n.format(line, substr));
+  if (isNull(substr)) return player.sendRichTextMessage(crafttweaker.text.ITextComponent.fromTranslation(line));
+  player.sendRichTextMessage(crafttweaker.text.ITextComponent.fromTranslation(line, substr));
 }
 
 function send(key as string, mode as string = 'everyone', substr as string = null) as void {

@@ -13,18 +13,18 @@ addtooltip.execute = function(command, server, sender, args) {
   val player = CommandUtils.getCommandSenderAsPlayer(sender);
 
   if (isNull(player.currentItem) || player.currentItem.isEmpty)
-    return player.sendChat(game.localize("commands.addtooltip.needitem"));
+    return player.sendRichTextMessage(crafttweaker.text.ITextComponent.fromTranslation("commands.addtooltip.needitem"));
 
   if (args.length == 0 || args[0].matches('^\\s*$'))
-    return player.sendChat(game.localize("commands.addtooltip.needtext"));
+    return player.sendRichTextMessage(crafttweaker.text.ITextComponent.fromTranslation("commands.addtooltip.needtext"));
   
   val item = player.currentItem;
   val meta = item.isDamageable ? 0 : item.damage;
   val str = serialize.join(args, ' ');
   print("tooltips.lang."~item.definition.id~":"~meta~"="~str);
 
-  if (item.hasTag) player.sendChat(game.localize("commands.addtooltip.notag"));
+  if (item.hasTag) player.sendRichTextMessage(crafttweaker.text.ITextComponent.fromTranslation("commands.addtooltip.notag"));
   
-  player.sendChat(game.localize("commands.addtooltip.succes"));
+  player.sendRichTextMessage(crafttweaker.text.ITextComponent.fromTranslation("commands.addtooltip.succes"));
 };
 addtooltip.register();
