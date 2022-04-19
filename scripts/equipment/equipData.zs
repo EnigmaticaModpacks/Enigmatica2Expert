@@ -338,17 +338,17 @@ val defaultWeaponMats as IData = [
   "primal_metal"           , # 282
   "wyvern_metal"           , # 284
   "heavy"                  , # 297
-  "dark_matter"            , # 299
   "darkwood"               , # 305
   "dragonsteel_fire"       , # 335
   "dragonsteel_ice"        , # 335
+  "dark_matter"            , # 339
   "litherite"              , # 402
   "gelid_gem"              , # 432
   "erodium"                , # 453
   "mirion"                 , # 464
   "gelid_enderium"         , # 481
   "kyronite"               , # 508
-  "red_matter"             , # 512
+  "red_matter"             , # 532
   "pladium"                , # 567
   "ionite"                 , # 636
 ] as IData;

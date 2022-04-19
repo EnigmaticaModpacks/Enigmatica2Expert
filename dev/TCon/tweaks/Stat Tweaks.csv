@@ -31,7 +31,7 @@ constantan,,,,6,,,,,,
 construction_alloy,,,,,,,,,,
 copper,,,,,,,,,,
 crystal_matrix,,,,11,,,,,,
-dark_matter,,,,,,,,,,
+dark_matter,,,,13,,,,,,
 dark_steel,,,*1.44,7,,,,,,
 darkwood,*4,*4,*4,,*4,*4,*4,*4,*4,*4
 desert_myrmex,,,+8,,,,,,,
@@ -124,7 +124,7 @@ prismarine,,,,3,,,,,,
 psigem,*0.5,*0.5,*0.5,7,,-170,-270,,,
 psimetal,*0.5,*0.5,*0.5,7,,-170,-270,,,
 pulsating_iron,,*2,*2,7,,,,,,+2
-red_matter,,,,,,,,,,
+red_matter,,,,14,,,,,,
 redstone_alloy,*3,*3,*3,5,*3,*3,*3,*2,*2,*2
 refined_glowstone,,,,6,,,,,,
 refined_obsidian,,,,8,,,,,,
