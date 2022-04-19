@@ -550,6 +550,19 @@
   <recipe name="Alloy: Black Dye, Variant">
     <disabled/>
   </recipe>
+  <grindingball name="Fur Ball" grinding="1.0" chance="1.0" power="0.25" durability="8000">
+    <item name="actuallyadditions:item_hairy_ball"/>
+  </grindingball>
+  <!-- Endergy Grinding Balls -->
+  <grindingball name="Crude Steel Ball" grinding="1.2" chance="1.25" power="0.85" disabled="true" durability="24000">
+    <item name="ballCrudeSteel"/>
+  </grindingball>
+  <grindingball name="Energetic Sliver Ball" grinding="1.6" chance="1.1" power="1.1" disabled="true" durability="80000">
+    <item name="ballEnergeticSilver"/>
+  </grindingball>
+  <grindingball name="Vivid Alloy Ball" grinding="1.75" chance="1.35" power="1.35" disabled="true" durability="80000">
+    <item name="ballVividAlloy"/>
+  </grindingball>
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Crystalline Alloy Ingot">
     <alloying energy="10000">

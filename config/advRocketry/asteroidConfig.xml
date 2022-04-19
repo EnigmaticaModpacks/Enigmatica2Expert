@@ -27,6 +27,9 @@
 	<asteroid name="Resonant End Stone asteroid" distance="75" mass="64" massVariability="1" probability="5" richness="0.7" richnessVariability="0.5">
 		<ore itemStack="thermalfoundation:ore_fluid 4" chance="100"/>
 	</asteroid>
+	<asteroid name="Dilithium asteroid" distance="75" mass="64" massVariability="1" probability="5" richness="0.7" richnessVariability="0.5">
+		<ore itemStack="netherendingores:ore_end_modded_1 14" chance="100"/>
+	</asteroid>
 	<asteroid name="Titanium asteroid" distance="75" mass="64" massVariability="1" probability="5" richness="0.7" richnessVariability="0.5">
 		<ore itemStack="libvulpes:ore0 8" chance="100"/>
 	</asteroid>

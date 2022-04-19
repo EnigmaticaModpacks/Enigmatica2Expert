@@ -189,7 +189,7 @@ craft.remake(<randomthings:fertilizeddirt> * 8, ["pretty",
   "F f F"], {
   "F": <randomthings:ingredient:7>, # Floo Powder
   "f": <ore:fertilizer>,            # Fertilizer
-  "~": <fluid:slop> * 1000,         # Slop Bucket
+  "~": Bucket('slop'),              # Slop Bucket
 });
 
 

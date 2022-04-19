@@ -368,7 +368,7 @@ craft.shapeless(<advancedrocketry:atmanalyser>,
 });
 
 # Some Alts with advanced machines
-scripts.processUtils.avdRockXmlRecipeEx("ChemicalReactor", [<ore:dustSulfur> * 60], [<fluid:oxygen> * 3000], null, [<fluid:sulfuric_acid> * 6000], {power: 140000, timeRequired: 30});
+scripts.processUtils.avdRockXmlRecipeEx("ChemicalReactor", [<ore:dustSulfur> * 30], [<fluid:oxygen> * 1500], null, [<fluid:sulfuric_acid> * 3000], {power: 140000, timeRequired: 15});
 scripts.processUtils.avdRockXmlRecipe("Crystallizer", [<ore:dustFluorite> * 6], [<fluid:sulfuric_acid> * 6000], [<nuclearcraft:compound> * 6], null);
 
 # Remove carbon (defined in ExNihilio configs)

@@ -231,9 +231,8 @@ mods.rats.recipes.addArcheologistRatRecipe(<iceandfire:dragonbone>, <iceandfire:
 mods.rats.recipes.addArcheologistRatRecipe(<twilightforest:raven_feather>, <iceandfire:stymphalian_bird_feather>);
 mods.rats.recipes.addArcheologistRatRecipe(<rats:rat_pelt>, <iceandfire:troll_leather_forest>);
 mods.rats.recipes.addArcheologistRatRecipe(<harvestcraft:hardenedleatheritem>, <iceandfire:troll_leather_frost>);
-
-
-
+mods.rats.recipes.addArcheologistRatRecipe(<redstonerepository:tool.sword_gelid>, <endreborn:sword_shard>);
+mods.rats.recipes.addArcheologistRatRecipe(<mysticalagradditions:stuff:1>, <iceandfire:dread_shard> * 3);
 
 ##################
 

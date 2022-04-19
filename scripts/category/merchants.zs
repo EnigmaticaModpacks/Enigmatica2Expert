@@ -287,7 +287,7 @@ val merchData = {
         [E*2, <randomthings:sounddampener>],
       ],
       5: [
-        [<cyclicmagic:block_soundproofing>, E*7],
+        [<cyclicmagic:block_soundproofing>, E],
         [E*4, <enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:sounddetector"})],
         [E*30, <computercraft:turtle_expanded>.withTag({rightUpgrade: "computercraft:speaker"})],
       ],

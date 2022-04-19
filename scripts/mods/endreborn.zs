@@ -225,6 +225,23 @@ craft.remake(<endreborn:block_purpur_lamp> * 8, ["pretty",
   "▄": <ore:blockMagma>,         # Magma Block
 });
 
+# [Xorcite Cluster]*8 from [Ender Pearl][+2]
+craft.reshapeless(<endreborn:dragon_essence> * 8, "Ee11", {
+  "E": <deepmoblearning:living_matter_extraterrestrial>, # Extraterrestrial Matter
+  "e": <ore:enderpearl>, # Ender Pearl
+  "1": <ore:compressed1xEndStone>, # Compressed End Stone
+});
+
+# [Xorcite Cluster]*8 from [Guardian Essence]*2[+1]
+craft.remake(<endreborn:dragon_essence> * 8, ["pretty",
+  "T i T",
+  "i   i",
+  "T i T"], {
+  "T": <mysticalagriculture:end_essence>,      # End Essence
+  "i": <mysticalagriculture:guardian_essence>, # Guardian Essence
+});
+
+
 # Purpur guards are disables, so make Purpur Shards craftable
 mods.rustic.EvaporatingBasin.addRecipe(<endreborn:item_end_shard>, <liquid:liquidchorus> * 1000, 20*20);
 

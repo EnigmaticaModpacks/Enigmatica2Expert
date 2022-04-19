@@ -28,7 +28,7 @@ remakeEx(<deepmoblearning:machine_casing>, [
   [<deepmoblearning:soot_covered_plate>, <deepmoblearning:soot_covered_redstone>, <deepmoblearning:soot_covered_plate>]]);
 
 recipes.remove(<deepmoblearning:polymer_clay> * 16);
-recipes.addShapeless(<deepmoblearning:polymer_clay> * 16, [<liquid:concrete> * 1000, <ore:dustClay>, <ore:dustClay>, <ore:dustClay>, <ore:dustGold>, <ore:dustLapis>]);
+recipes.addShapeless(<deepmoblearning:polymer_clay> * 16, [Bucket('concrete'), <ore:dustClay>, <ore:dustClay>, <ore:dustClay>, <ore:dustGold>, <ore:dustLapis>]);
 
 # Remove level-to-level conversions
 recipes.removeByRecipeName("deepmoblearning:living_matter_exchange/metadata2_extraterrestrial_living_matter");

@@ -142,12 +142,15 @@ import scripts.requiousJei.add_ic2_crops as crop;
 
 # Diamond Dust
 	recipes.remove(<ic2:dust:5>);
-	
+
 # IC2 Block Cutting blades
 val envelop = ["aaa","aBa","aaa"] as string[];
 craft.remake(<ic2:block_cutting_blade>,   envelop, {B:<ore:stone>,         a:<tconstruct:large_sword_blade>.withTag({Material: "iron"})});
 craft.remake(<ic2:block_cutting_blade:1>, envelop, {B:<ore:blockFakeIron>, a:<tconstruct:large_sword_blade>.withTag({Material: "steel"})});
 craft.remake(<ic2:block_cutting_blade:2>, envelop, {B:<ore:blockDiamond>,  a:<tconstruct:large_sword_blade>.withTag({Material: "alumite"})});
+mods.tconstruct.Melting.addRecipe(<liquid:iron>    * 9216, <ic2:block_cutting_blade>);
+mods.tconstruct.Melting.addRecipe(<liquid:steel>   * 9216, <ic2:block_cutting_blade:1>);
+mods.tconstruct.Melting.addRecipe(<liquid:alumite> * 9216, <ic2:block_cutting_blade:2>);
 
 # New Scraps
 ScrapBox.addDrop(<appliedenergistics2:material:6>, 4.0F);
@@ -342,7 +345,7 @@ craft.make(<immersiveengineering:treated_wood> * 8, ["pretty",
   "# ~ #",
   "# # #"], {
   "#": <ore:plankWood>, # Oak Wood Planks
-  "~": <fluid:ic2creosote> * 1000, # Creosote Bucket
+  "~": Bucket('ic2creosote'), # Creosote Bucket
 });
 
 # Alternative without scrap

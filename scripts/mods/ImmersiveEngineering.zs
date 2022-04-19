@@ -530,7 +530,7 @@ craft.make(<immersiveengineering:powerpack>, ["pretty",
 
 # Add compressed variations
 mods.immersiveengineering.CokeOven.addRecipe(<thermalfoundation:storage_resource>, 250 *  9, <additionalcompression:logwood_compressed>, 900 * 9);
-mods.immersiveengineering.CokeOven.addRecipe(<additionalcompression:charcoal_compressed>, 12000, <additionalcompression:logwood_compressed:1>, 900 * 81);
+mods.immersiveengineering.CokeOven.addRecipe(<additionalcompression:charcoal_compressed:1>, 12000, <additionalcompression:logwood_compressed:1>, 900 * 81);
 
 # [Lantern]*3 from [Glowstone Dust][+2]
 craft.remake(<immersiveengineering:metal_decoration2:4> * 3, ["pretty",

@@ -666,7 +666,7 @@ craft.remake(<actuallyadditions:item_bag>, ["pretty",
 });
 
 # [Black Quartz AIOT] from [Basic Catalyst][+2]
-<actuallyadditions:quartz_paxel>.maxDamage = 100;
+<actuallyadditions:quartz_paxel>.maxDamage = 400;
 craft.remake(<actuallyadditions:quartz_paxel>, ["pretty",
   "  ⌃ B",
   "  # ⌃",
@@ -687,7 +687,7 @@ craft.remake(<actuallyadditions:gold_paxel>, ["pretty",
   "#": <iceandfire:dreadwood_planks>, # Dreadwood Planks
 });
 
-# [Diamond AIOT] from [Ultimate Catalyst][+2]
+# [Diamond AIOT] from [Elite Catalyst][+2]
 <actuallyadditions:diamond_paxel>.maxDamage = 8100;
 craft.remake(<actuallyadditions:diamond_paxel>, ["pretty",
   "  I U",

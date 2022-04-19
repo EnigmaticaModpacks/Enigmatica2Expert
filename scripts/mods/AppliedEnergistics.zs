@@ -628,7 +628,7 @@ craft.remake(<appliedenergistics2:material:58>, ["pretty",
   "  A  ",
   "d M A",
   "  A  "], {
-  "A": <ore:sheetAluminium>, # Aluminum Sheet
+  "A": <ore:plateTitanium>,
   "d": <appliedenergistics2:material:28>, # Advanced Card
   "M": <appliedenergistics2:interface>,   # ME Interface
 });
@@ -638,7 +638,7 @@ craft.make(<appliedenergistics2:material:58>, ["pretty",
   "  A  ",
   "d M A",
   "  A  "], {
-  "A": <ore:sheetAluminium>, # Aluminum Sheet
+  "A": <ore:plateTitanium>,
   "d": <appliedenergistics2:material:28>, # Advanced Card
   "M": <appliedenergistics2:part:440>,    # ME Interface
 });

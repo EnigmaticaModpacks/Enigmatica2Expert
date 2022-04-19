@@ -92,10 +92,10 @@ ${filtered.join('\n')}`
 
 }*/
 
-# Total Furnace recipes registered: 912
+# Total Furnace recipes registered: 911
 # Filtered by JEI blacklist: 49
 # Filtered manuallly (antidupe): 14
-# Filtered by oredict: 200
+# Filtered by oredict: 199
 infinFurnace(utils.get("actuallyadditions:block_misc", 3), utils.get("actuallyadditions:item_misc", 5));
 ##infinFurnace(utils.get("actuallyadditions:item_dust", 3), utils.get("minecraft:emerald"));
 ##infinFurnace(utils.get("actuallyadditions:item_dust", 7), utils.get("actuallyadditions:item_misc", 5));
@@ -145,7 +145,6 @@ infinFurnace(utils.get("biomesoplenty:gem_ore"), utils.get("biomesoplenty:gem"))
 ##infinFurnace(utils.get("biomesoplenty:log_0", 5), utils.get("minecraft:coal", 1));
 ##infinFurnace(utils.get("biomesoplenty:log_0", 6), utils.get("minecraft:coal", 1));
 ##infinFurnace(utils.get("biomesoplenty:log_0", 7), utils.get("minecraft:coal", 1));
-##infinFurnace(utils.get("biomesoplenty:log_1", 4), utils.get("minecraft:coal", 1));
 ##infinFurnace(utils.get("biomesoplenty:log_1", 5), utils.get("minecraft:coal", 1));
 ##infinFurnace(utils.get("biomesoplenty:log_1", 6), utils.get("minecraft:coal", 1));
 ##infinFurnace(utils.get("biomesoplenty:log_1", 7), utils.get("minecraft:coal", 1));

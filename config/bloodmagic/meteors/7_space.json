@@ -1,0 +1,20 @@
+{
+  "catalystStack": {
+    "registryName": {
+      "domain": "jaopca",
+      "path": "block_blockdilithium"
+    },
+    "meta": 0
+  },
+  "components": [
+    { "weight":150,"oreName": "oreEndDilithium"}
+    ,{"weight": 60,"oreName" : "oreClathrateRedstone"}
+    ,{"weight": 60,"oreName" : "oreClathrateEnder"}
+    ,{"weight": 60,"oreName" : "oreClathrateGlowstone"}
+  ],
+  "explosionStrength": 12.0,
+  "radius": 3,
+  "maxWeight": 400,
+  "version": 4,
+  "cost": 2000000
+}

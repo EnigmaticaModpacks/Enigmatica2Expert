@@ -442,6 +442,10 @@ add(<ore:essenceTier2>, <mysticalcreations:creosolite_essence>);
 addItems(<ore:essenceTier3>, [<mysticalcreations:cheese_essence>, <mysticalcreations:astral_starmetal_essence>]);
 add(<ore:essenceTier6>, <mysticalcreations:ultimate_essence>);
 
+add(<ore:seedsTier2>, <mysticalcreations:creosolite_seeds>);
+addItems(<ore:seedsTier3>, [<mysticalcreations:cheese_seeds>, <mysticalcreations:astral_starmetal_seeds>]);
+add(<ore:seedsTier6>, <mysticalcreations:ultimate_seeds>);
+
 # IC2 ashes to the dustAsh
 for item in <ore:dustAshes>.items {
 	add(<ore:dustAsh>, item);

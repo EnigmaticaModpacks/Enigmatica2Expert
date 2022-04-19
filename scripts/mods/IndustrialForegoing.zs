@@ -17,7 +17,7 @@ function fluidDict(ins as string[]) {
 	}
 }
 
-# FluidDictionary Recipes
+# FluidDictionary Recipes	
 	FluidDictionary.add("seed.oil", "seed_oil", 1);
 	FluidDictionary.add("seed_oil", "seed.oil", 1);
 
@@ -35,6 +35,7 @@ function fluidDict(ins as string[]) {
 	fluidDict(["ic2milk", "milk"]);
 	fluidDict(["if.protein", "protein"]);
 	fluidDict(["ic2creosote", "creosote"]);
+	fluidDict(["liquiddeuterium", "deuterium"]);
 
 # Protein Reactor, additional entires
 	for item in <ore:listAllmeatraw>.items {

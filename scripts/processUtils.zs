@@ -174,7 +174,7 @@ function enderioXmlRecipe(processName as string,
       if(processName=='fermenting') s ~= '  <inputgroup>\n';
       for ii in inIngr.itemArray {
         val eioName = ii.anyAmount().commandString.replaceAll("[<>]", "").replaceAll("^ore:", "");
-        val amount = (processName=='fermenting' && ii.amount>1) ? '' : 'amount="'~ ii.amount ~'" ';
+        val amount = (processName=='fermenting' && ii.amount > 1) ? 'amount="'~ ii.amount ~'" ': '';
         s ~= '    <input name="' ~ eioName ~ '" '~amount~it_multiplier~' />\n';
       }
       if(processName=='fermenting') s ~= '  </inputgroup>\n';
@@ -183,7 +183,8 @@ function enderioXmlRecipe(processName as string,
 
   if(!isNull(outputItems)) { for ii in outputItems { if(ii.items.length > 0) {
       val out_it = ii.items[0];
-      s ~= '  <output name="' ~ out_it.definition.id ~ ':' ~ out_it.damage ~ '" amount="' ~ ii.amount ~ '" ' ~ '/>\n';
+      val amount = (ii.amount > 1) ? 'amount="'~ ii.amount ~'" ' : '';
+      s ~= '  <output name="' ~ out_it.definition.id ~ ':' ~ out_it.damage ~ '" ' ~ amount ~ '/>\n';
   }}}
 
   if(!isNull(arrN_liq(inputLiquids)) && !isNull(arrN_liq(outputLiquids))) {

@@ -722,3 +722,6 @@ for glass, dust in glassFromDust {
 		<thermalfoundation:material:865>, // Rich Slag
 		15);
 }
+
+// Steel from IE fix
+mods.thermalexpansion.InductionSmelter.addRecipe(<thermalfoundation:material:160>,<immersiveengineering:material:6>,<minecraft:iron_ingot>, 6000);

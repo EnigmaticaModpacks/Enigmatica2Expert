@@ -32,12 +32,26 @@ utils.rh(<ic2:resource:6>); # Copper blocks
 utils.rh(<ic2:resource:9>); # Tin blocks
 utils.rh(<ic2:resource:15>); # Silver blocks
 utils.rh(<ic2:resource:7>); # Lead blocks
+utils.rh(<ic2:misc_resource>); # Ashes
 utils.rh(<ic2:misc_resource:5>); # Slag
 utils.rh(<openblocks:generic:1>); # Crane ingredient
 utils.rh(<openblocks:generic:2>);
 utils.rh(<openblocks:generic:3>);
 utils.rh(<openblocks:generic:4>);
 utils.rh(<openblocks:generic:5>);
+utils.rh(<actuallyadditions:item_misc:17>);
+
+// BoP Ethereal wood (unobtainable)
+utils.rh(<biomesoplenty:log_1:4>);
+utils.rh(<biomesoplenty:leaves_1:11>);
+utils.rh(<biomesoplenty:planks_0:4>);
+utils.rh(<biomesoplenty:ethereal_stairs>);
+utils.rh(<biomesoplenty:wood_slab_0:4>);
+utils.rh(<biomesoplenty:ethereal_fence>);
+utils.rh(<biomesoplenty:ethereal_fence_gate>);
+utils.rh(<biomesoplenty:ethereal_door>);
+utils.rh(<biomesoplenty:sapling_0:7>);
+utils.rh(<biomesoplenty:boat_ethereal>);
 
 # Purge saltpeter and sulfur
 utils.rh(<bloodmagic:component:24>);

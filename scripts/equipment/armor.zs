@@ -297,7 +297,7 @@ remakeEx(<ic2:quantum_helmet:26>, [[<ic2:crafting:3>, null, <ic2:crafting:3>],[<
 		<draconicevolution:draconium_block:1>,
 		<draconicevolution:draconium_block:1>,
 		<twilightforest:yeti_boots>.anyDamage(),
-		<thaumcraft:void_boots>.anyDamage(),
+		<thaumicaugmentation:void_boots>.anyDamage(),
 		<bloodmagic:living_armour_boots>.anyDamage(),
 		<draconicevolution:wyvern_core>,
 		<botania:terrasteelboots>.anyDamage(),

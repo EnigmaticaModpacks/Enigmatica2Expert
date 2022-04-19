@@ -521,7 +521,8 @@ glob.sync('config/bloodmagic/meteors/*.json')
 ["thermalfoundation:storage", "7", "1000000", "Iron", "Gold", "Lapis", "Emerald", "Redstone", "Diamond", "Iridium", "Mithril"],
 ["nuclearcraft:ingot_block", "3", "1100000", "Thorium", "Boron", "Lithium", "Magnesium"],
 ["minecraft:emerald_block", "0", "1400000", "Lapis", "Diamond", "Emerald", "Coal", "Ruby", "Peridot", "Topaz", "Tanzanite", "Malachite", "Sapphire", "Amber", "Apatite", "CertusQuartz", "Cinnabar", "Prosperity", "QuartzBlack"],
-["tconstruct:metal", "1", "1700000", "Quartz", "NetherAluminum", "NetherCopper", "NetherLead", "NetherNickel", "NetherRedstone", "NetherLapis", "NetherIron", "NetherGold", "NetherEmerald", "NetherDiamond", "NetherCoal", "NetherPlatinum", "NetherSilver", "NetherTin", "NetherCertusQuartz", "NetherChargedCertusQuartz", "NetherOsmium", "NetherUranium", "Cobalt", "Ardite"]
+["tconstruct:metal", "1", "1700000", "Quartz", "NetherAluminum", "NetherCopper", "NetherLead", "NetherNickel", "NetherRedstone", "NetherLapis", "NetherIron", "NetherGold", "NetherEmerald", "NetherDiamond", "NetherCoal", "NetherPlatinum", "NetherSilver", "NetherTin", "NetherCertusQuartz", "NetherChargedCertusQuartz", "NetherOsmium", "NetherUranium", "Cobalt", "Ardite"],
+["jaopca:block_blockdilithium", "0", "2000000", "EndDilithium", "ClathrateRedstone", "ClathrateEnder", "ClathrateGlowstone"]
 /**/
 ];
 
@@ -919,7 +920,7 @@ function getOreDictBurnTime(oreName as string) as int {
 function addSyngas(input as IIngredient, carbon as int) as void {
   if(carbon<=0) return;
   <assembly:syngas_producer>.addJEIRecipe(AssemblyRecipe.create(function(container) {
-    container.addFluidOutput('fluid_out', <fluid:coal> * carbon);
+    container.addFluidOutput('fluid_out', <fluid:syngas> * (carbon / 50));
   })
   .requireItem("input0", input)
   );

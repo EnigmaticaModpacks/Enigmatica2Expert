@@ -196,13 +196,13 @@
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Sulfuric Acid] -->
-	<Recipe timeRequired="30" power="140000">
+	<Recipe timeRequired="15" power="140000">
 		<input>
-			<oreDict>dustSulfur 60</oreDict>
-			<fluidStack>oxygen 3000</fluidStack>
+			<oreDict>dustSulfur 30</oreDict>
+			<fluidStack>oxygen 1500</fluidStack>
 		</input>
 		<output>
-			<fluidStack>sulfuric_acid 6000</fluidStack>
+			<fluidStack>sulfuric_acid 3000</fluidStack>
 		</output>
 	</Recipe>
 </Recipes>

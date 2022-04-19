@@ -7,6 +7,15 @@ import scripts.craft.grid.Grid;
 # Enderman Chunks -> Ender Pearls
 mods.nuclearcraft.pressurizer.addRecipe(<mysticalagriculture:chunk:19> * 2, <minecraft:ender_pearl>);
 
+# [Inferium Seeds] from [Seeds][+1]
+craft.remake(<mysticalagriculture:tier1_inferium_seeds>, ["pretty",
+  "W W W",
+  "W h W",
+  "W W W"], {
+  "W": <ic2:crop_res:5>, # Weed
+  "h": <ore:seed>, # Seeds
+});
+
 # Wither Proof Blocks
 recipes.addShapedMirrored("Wither Proof Block",
 <mysticalagriculture:witherproof_block> * 16,
@@ -293,7 +302,7 @@ curr_tier = 4;
 addTieredRecipe(<mysticalagriculture:tier4_inferium_seeds>, [<ore:blockIntermediumEssence>], null);
 addTieredRecipe(<mysticalagriculture:thaumium_seeds>,       [<ore:blockThaumium> ,<ore:runeWrathB>], null);
 addTieredRecipe(<mysticalagriculture:ruby_seeds>,           [<biomesoplenty:gem_block:1> ,<ore:runeEnvyB>], null);
-addTieredRecipe(<mysticalagriculture:fiery_ingot_seeds>,    [<twilightforest:block_storage:1>, <ore:runeManaB>], null);
+addTieredRecipe(<mysticalagriculture:fiery_ingot_seeds>,    [<thaumcraft:jar_normal>.withTag({Aspects: [{amount: 250, key: "infernum"}]}), <ore:runeManaB>], null);
 addTieredRecipe(<mysticalagriculture:knightmetal_seeds>,    [<twilightforest:knightmetal_block>, <ore:runeManaB>], null);
 addTieredRecipe(<mysticalagriculture:fluix_seeds>,          [<appliedenergistics2:fluix_block> ,<ore:runeManaB>], null);
 addTieredRecipe(<mysticalagriculture:ardite_seeds>,         [<ore:blockArdite> ,<ore:runeWrathB>], null);
@@ -383,7 +392,7 @@ for seed, count in inferCount {
 	scripts.process.grow(seed, <mysticalagriculture:crafting> * count, "only: Hydroponics", seed, 1.0f);
 }
 
-for output, input in {
+for input, output in {
 /*Inject_js(
 Object.entries(
 	Object.fromEntries(
@@ -624,35 +633,34 @@ recipes.addShaped("sap #3",  <biomesoplenty:sapling_0:3>     * 10, uniq_biomesop
 recipes.addShaped("sap #4",  <biomesoplenty:sapling_0:4>     * 10, uniq_biomesoplenty.next());
 recipes.addShaped("sap #5",  <biomesoplenty:sapling_0:5>     * 10, uniq_biomesoplenty.next());
 recipes.addShaped("sap #6",  <biomesoplenty:sapling_0:6>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #7",  <biomesoplenty:sapling_0:7>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #8",  <biomesoplenty:sapling_1>       * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #9",  <biomesoplenty:sapling_1:1>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #10", <biomesoplenty:sapling_1:2>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #11", <biomesoplenty:sapling_1:3>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #12", <biomesoplenty:sapling_1:4>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #13", <biomesoplenty:sapling_1:5>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #14", <biomesoplenty:sapling_1:6>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #15", <biomesoplenty:sapling_2>       * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #16", <biomesoplenty:sapling_2:1>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #17", <biomesoplenty:sapling_2:2>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #18", <biomesoplenty:sapling_2:3>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #19", <biomesoplenty:sapling_2:4>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #20", <biomesoplenty:sapling_2:5>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #21", <biomesoplenty:sapling_2:6>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #22", <biomesoplenty:sapling_2:7>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #23", <extrautils2:ironwood_sapling>  * 6 , uniq_other.next());
-recipes.addShaped("sap #24", <extrautils2:ironwood_sapling:1>* 6 , uniq_other.next());
-recipes.addShaped("sap #25", <ic2:sapling>                   * 6 , uniq_other.next());
-recipes.addShaped("sap #26", <quark:variant_sapling>         * 6 , uniq_other.next());
-recipes.addShaped("sap #27", <quark:variant_sapling:1>       * 6 , uniq_other.next());
-recipes.addShaped("sap #28", <rustic:sapling>                * 6 , uniq_other.next());
-recipes.addShaped("sap #29", <rustic:sapling:1>              * 6 , uniq_other.next());
-recipes.addShaped("sap #30", <rustic:sapling_apple>          * 6 , uniq_other.next());
-recipes.addShaped("sap #31", <thaumcraft:sapling_greatwood>  * 6 , uniq_other.next());
-recipes.addShaped("sap #32", <thaumcraft:sapling_silverwood> * 6 , uniq_other.next());
-recipes.addShaped("sap #33", <tconstruct:slime_sapling>      * 6 , uniq_tconstruct.next());
-recipes.addShaped("sap #34", <tconstruct:slime_sapling:1>    * 6 , uniq_tconstruct.next());
-recipes.addShaped("sap #35", <tconstruct:slime_sapling:2>    * 6 , uniq_tconstruct.next());
+recipes.addShaped("sap #7",  <biomesoplenty:sapling_1>       * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #8",  <biomesoplenty:sapling_1:1>     * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #9",  <biomesoplenty:sapling_1:2>     * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #10", <biomesoplenty:sapling_1:3>     * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #11", <biomesoplenty:sapling_1:4>     * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #12", <biomesoplenty:sapling_1:5>     * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #13", <biomesoplenty:sapling_1:6>     * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #14", <biomesoplenty:sapling_2>       * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #15", <biomesoplenty:sapling_2:1>     * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #16", <biomesoplenty:sapling_2:2>     * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #17", <biomesoplenty:sapling_2:3>     * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #18", <biomesoplenty:sapling_2:4>     * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #19", <biomesoplenty:sapling_2:5>     * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #20", <biomesoplenty:sapling_2:6>     * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #21", <biomesoplenty:sapling_2:7>     * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #22", <extrautils2:ironwood_sapling>  * 6 , uniq_other.next());
+recipes.addShaped("sap #23", <extrautils2:ironwood_sapling:1>* 6 , uniq_other.next());
+recipes.addShaped("sap #24", <ic2:sapling>                   * 6 , uniq_other.next());
+recipes.addShaped("sap #25", <quark:variant_sapling>         * 6 , uniq_other.next());
+recipes.addShaped("sap #26", <quark:variant_sapling:1>       * 6 , uniq_other.next());
+recipes.addShaped("sap #27", <rustic:sapling>                * 6 , uniq_other.next());
+recipes.addShaped("sap #28", <rustic:sapling:1>              * 6 , uniq_other.next());
+recipes.addShaped("sap #29", <rustic:sapling_apple>          * 6 , uniq_other.next());
+recipes.addShaped("sap #30", <thaumcraft:sapling_greatwood>  * 6 , uniq_other.next());
+recipes.addShaped("sap #31", <thaumcraft:sapling_silverwood> * 6 , uniq_other.next());
+recipes.addShaped("sap #32", <tconstruct:slime_sapling>      * 6 , uniq_tconstruct.next());
+recipes.addShaped("sap #33", <tconstruct:slime_sapling:1>    * 6 , uniq_tconstruct.next());
+recipes.addShaped("sap #34", <tconstruct:slime_sapling:2>    * 6 , uniq_tconstruct.next());
 /**/
 
 # ----------------------------
@@ -846,10 +854,14 @@ val mobChunks = {
 	"thermalfoundation:basalz": 23,
 } as int[string];
 for id, meta in mobChunks {
-  scripts.process.crush(
-		<enderio:item_broken_spawner>.withTag({entityId: id}),
-		<mysticalagriculture:chunk>.definition.makeStack(meta) * 4,
-		"only: eu2Crusher AACrusher SagMill",
-		[<mysticalagriculture:chunk:5> * 16], [0.5f]
-	);
+	recipes.addShapeless(<mysticalagriculture:chunk>.definition.makeStack(meta) * 4, [
+		<ore:craftingToolForgeHammer>,
+		<enderio:item_broken_spawner>.withTag({entityId: id})
+	]);
 }
+
+// Other spawners
+recipes.addShapeless(<mysticalagriculture:chunk:5> * 12, [
+	<ore:craftingToolForgeHammer>,
+	<enderio:item_broken_spawner>,
+]);
