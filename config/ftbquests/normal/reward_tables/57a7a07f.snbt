@@ -1,0 +1,19 @@
+{
+	title: "{bq.quest765.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "botania:manaresource 1 3"
+	},
+	{
+		item: "botania:manaresource 1 22",
+		count: 16
+	},
+	{
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

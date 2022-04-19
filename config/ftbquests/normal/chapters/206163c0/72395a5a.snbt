@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest283.name}",
+	icon: "forestry:fermenter",
+	x: -7.458333333333333d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest283.desc}"
+	],
+	dependencies: [
+		"383eccde"
+	],
+	tasks: [{
+		uid: "e8ef190c",
+		type: "item",
+		items: [{
+			item: "forestry:fermenter"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "822e2524",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

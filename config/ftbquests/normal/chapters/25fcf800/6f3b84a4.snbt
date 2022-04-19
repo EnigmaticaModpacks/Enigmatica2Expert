@@ -1,0 +1,89 @@
+{
+	title: "{bq.quest1066.name}",
+	icon: {
+		id: "simple_trophies:trophy",
+		tag: {
+			TrophyColorGreen: 127,
+			TrophyShowsTooltip: 1b,
+			TrophyVariant: "gold",
+			TrophyItem: {
+				Count: 1b,
+				id: "environmentaltech:void_res_miner_cont_5",
+				Damage: 0s
+			},
+			TrophyColorBlue: 181,
+			TrophyColorRed: 71,
+			TrophyName: "EnvirTech Master Trophy§r"
+		}
+	},
+	x: 6.75d,
+	y: 11.25d,
+	text: [
+		"{bq.quest1066.desc}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"3ff4e736",
+		"3dbf3039",
+		"a8dc599a",
+		"40fdf0ba",
+		"f479ca7e",
+		"ebbfcb77",
+		"80c48e89",
+		"ab0046ce",
+		"682b9564",
+		"07cc749e",
+		"f756d4c0",
+		"fbb266a9",
+		"8cf2752e",
+		"39ba44e7",
+		"d2bbd45a",
+		"1808a9ea",
+		"79d9c6bb",
+		"63b35b50",
+		"f210c3f3",
+		"8a7a171e",
+		"79f2ded4",
+		"674a4a62",
+		"ee32d75b",
+		"b2bc3ad7",
+		"6da4e048",
+		"a315fab8",
+		"db27724a",
+		"281b6528",
+		"829d92ae",
+		"a4a22291",
+		"4d91ea66",
+		"2a56572f",
+		"00240b9f",
+		"525a40e1"
+	],
+	size: 1.5d,
+	rewards: [{
+		uid: "bfee80d1",
+		type: "item",
+		auto: "enabled",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 127,
+				TrophyShowsTooltip: 1b,
+				TrophyVariant: "gold",
+				TrophyItem: {
+					Count: 1b,
+					id: "environmentaltech:void_res_miner_cont_5",
+					Damage: 0s
+				},
+				TrophyColorBlue: 181,
+				TrophyColorRed: 71,
+				TrophyName: "EnvirTech Master Trophy§r"
+			}
+		}
+	},
+	{
+		uid: "e07348ea",
+		type: "command",
+		auto: "invisible",
+		command: "/say §l@p§r has fully completed the §nEnvironmental Tech§r chapter!§r ```Congrats!```"
+	}]
+}

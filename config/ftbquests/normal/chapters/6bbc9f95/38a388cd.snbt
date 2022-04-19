@@ -1,0 +1,46 @@
+{
+	title: "{bq.quest637.name}",
+	icon: "thaumcraft:infusion_matrix",
+	x: 2.0d,
+	y: 8.5d,
+	text: [
+		"{bq.quest637.desc}"
+	],
+	dependencies: [
+		"f85506a2"
+	],
+	tasks: [{
+		uid: "86d70970",
+		type: "item",
+		items: [{
+			item: "thaumcraft:infusion_matrix"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9951e37d",
+		type: "item",
+		items: [{
+			item: "thaumcraft:stone_arcane 8"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "0862b660",
+		type: "item",
+		items: [{
+			item: "thaumcraft:pedestal_arcane 4"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ccda64d6",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

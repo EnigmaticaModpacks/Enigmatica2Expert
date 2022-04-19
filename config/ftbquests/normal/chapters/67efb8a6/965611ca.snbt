@@ -1,0 +1,50 @@
+{
+	title: "{bq.quest551.name}",
+	icon: {
+		id: "draconicevolution:draconic_shovel",
+		tag: {
+			Energy: 16000000
+		},
+		ForgeCaps: {
+			Parent: {
+				Items: [],
+				Size: 18
+			}
+		}
+	},
+	x: 3.0d,
+	y: 10.5d,
+	text: [
+		"{bq.quest551.desc}"
+	],
+	dependencies: [
+		"84b5dffe"
+	],
+	tasks: [{
+		uid: "6c38ef3c",
+		type: "item",
+		items: [{
+			id: "draconicevolution:draconic_shovel",
+			tag: {
+				Energy: 16000000
+			},
+			ForgeCaps: {
+				Parent: {
+					Items: [],
+					Size: 18
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d44fc84b",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

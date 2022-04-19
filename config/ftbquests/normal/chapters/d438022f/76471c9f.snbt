@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest968.name}",
+	icon: "darkutils:trap_tile 1 6",
+	x: -3.666666666666667d,
+	y: 23.166666666666668d,
+	text: [
+		"{bq.quest968.desc}"
+	],
+	dependencies: [
+		"a8abebe1"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "5c2b6ede",
+		type: "item",
+		items: [{
+			item: "darkutils:trap_tile 1 6"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "5df1a69c",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

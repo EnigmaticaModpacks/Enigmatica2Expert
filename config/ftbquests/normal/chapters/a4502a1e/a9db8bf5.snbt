@@ -1,0 +1,33 @@
+{
+	title: "{bq.quest884.name}",
+	icon: "extrautils2:rainbowgenerator 1 2",
+	x: 14.458333333333334d,
+	y: -0.5833333333333333d,
+	text: [
+		"{bq.quest884.desc}"
+	],
+	dependencies: [
+		"e12a959a",
+		"7bfcfcaa",
+		"3bfb14e3",
+		"c4908819",
+		"98a7844c",
+		"1414056f",
+		"45d1b85a",
+		"5c3fef42"
+	],
+	size: 0.8333333333333334d,
+	tasks: [{
+		uid: "5d843199",
+		type: "item",
+		items: [{
+			item: "extrautils2:rainbowgenerator 1 2"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "6559d970",
+		type: "xp_levels",
+		xp_levels: 20
+	}]
+}

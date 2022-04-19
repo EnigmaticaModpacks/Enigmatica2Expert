@@ -1,0 +1,23 @@
+{
+	title: "{bq.quest715.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "nuclearcraft:lithium_ion_battery_elite",
+			tag: {
+				maxTransfer: 102400000,
+				capacity: 2048000000,
+				energy: 0
+			}
+		},
+		count: 2
+	},
+	{
+		item: "nuclearcraft:turbine_rotor_blade_extreme",
+		count: 4
+	},
+	{
+		item: "nuclearcraft:turbine_glass",
+		count: 64
+	}]
+}

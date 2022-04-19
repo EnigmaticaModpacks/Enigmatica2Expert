@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest1002.name}",
+	icon: "randomthings:spectrelens",
+	x: -13.833333333333334d,
+	y: 12.166666666666666d,
+	text: [
+		"{bq.quest1002.desc}"
+	],
+	dependencies: [
+		"9092f6f7"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "3dc57e08",
+		type: "item",
+		items: [{
+			item: "randomthings:spectrelens"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "cbfb6a12",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest169.name}",
+	icon: "astralsorcery:itemcraftingcomponent 1 4",
+	x: 9.0d,
+	y: 3.5d,
+	text: [
+		"{bq.quest169.desc}"
+	],
+	dependencies: [
+		"fe27cea6"
+	],
+	tasks: [{
+		uid: "6c0cebab",
+		type: "item",
+		items: [{
+			item: "astralsorcery:itemcraftingcomponent 1 4"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "f9d5ca88",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

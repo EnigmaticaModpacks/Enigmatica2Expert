@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest505.name}",
+	icon: "nuclearcraft:machine_interface",
+	x: 9.166666666666666d,
+	y: 3.5d,
+	text: [
+		"{bq.quest505.desc}"
+	],
+	dependencies: [
+		"0bf36970",
+		"da8740b4"
+	],
+	tasks: [{
+		uid: "4734edf4",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:machine_interface"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "7cbf51bd",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

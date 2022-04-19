@@ -1,0 +1,18 @@
+{
+	title: "{bq.quest999.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	},
+	{
+		item: "randomthings:spectreanchor"
+	},
+	{
+		item: "randomthings:beans 1 1"
+	}]
+}

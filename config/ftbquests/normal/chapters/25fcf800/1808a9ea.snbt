@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest483.name}",
+	icon: "environmentaltech:pladium_crystal",
+	x: 5.25d,
+	y: 6.5d,
+	text: [
+		"{bq.quest483.desc}"
+	],
+	dependencies: [
+		"ee32d75b"
+	],
+	tasks: [{
+		uid: "e4439966",
+		type: "item",
+		items: [{
+			item: "environmentaltech:pladium_crystal"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "63112d80",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

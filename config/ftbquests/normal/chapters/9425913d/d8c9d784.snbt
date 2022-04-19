@@ -1,0 +1,39 @@
+{
+	title: "{bq.quest940.name}",
+	icon: "biomesoplenty:biome_finder",
+	x: 11.5d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest940.desc}"
+	],
+	dependencies: [
+		"4fc58528"
+	],
+	tasks: [{
+		uid: "cf92e3ef",
+		type: "item",
+		items: [{
+			item: "biomesoplenty:biome_finder"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "da8932af",
+		type: "item",
+		items: [{
+			id: "naturescompass:naturescompass",
+			tag: {}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a496d3ef",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

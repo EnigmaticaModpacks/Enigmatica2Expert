@@ -1,0 +1,50 @@
+{
+	title: "{bq.quest542.name}",
+	icon: {
+		id: "draconicevolution:wyvern_axe",
+		tag: {
+			Energy: 2000000
+		},
+		ForgeCaps: {
+			Parent: {
+				Items: [],
+				Size: 9
+			}
+		}
+	},
+	x: 5.5d,
+	y: 9.0d,
+	text: [
+		"{bq.quest542.desc}"
+	],
+	dependencies: [
+		"64f8083b"
+	],
+	tasks: [{
+		uid: "53571e6c",
+		type: "item",
+		items: [{
+			id: "draconicevolution:wyvern_axe",
+			tag: {
+				Energy: 2000000
+			},
+			ForgeCaps: {
+				Parent: {
+					Items: [],
+					Size: 9
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a235f8fe",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

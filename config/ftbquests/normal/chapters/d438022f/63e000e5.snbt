@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest965.name}",
+	icon: "darkutils:ender_tether",
+	x: -7.5d,
+	y: 24.833333333333332d,
+	text: [
+		"{bq.quest965.desc}"
+	],
+	dependencies: [
+		"50ecf6a3"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "55c19603",
+		type: "item",
+		items: [{
+			item: "darkutils:ender_tether"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "51ea8457",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

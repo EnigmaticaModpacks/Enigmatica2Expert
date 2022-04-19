@@ -1,0 +1,10 @@
+{
+	title: "{bq.chapter8.name}",
+	icon: "bloodmagic:altar",
+	description: [
+		"{bq.chapter8.desc}"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

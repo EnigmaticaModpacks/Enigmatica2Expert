@@ -1,0 +1,72 @@
+{
+	title: "{bq.quest781.name}",
+	icon: {
+		id: "ic2:quantum_chestplate",
+		tag: {
+			charge: 1.0E7d
+		}
+	},
+	x: 10.5d,
+	y: 8.833333333333334d,
+	text: [
+		"{bq.quest781.desc}"
+	],
+	dependencies: [
+		"8a09821f"
+	],
+	tasks: [{
+		uid: "b611100f",
+		type: "item",
+		items: [{
+			id: "ic2:quantum_helmet",
+			tag: {
+				charge: 1.0E7d
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "bcf0b6e4",
+		type: "item",
+		items: [{
+			id: "ic2:quantum_chestplate",
+			tag: {
+				charge: 1.0E7d
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "02344195",
+		type: "item",
+		items: [{
+			id: "ic2:quantum_leggings",
+			tag: {
+				charge: 1.0E7d
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "cf1bf857",
+		type: "item",
+		items: [{
+			id: "ic2:quantum_boots",
+			tag: {
+				charge: 1.0E7d
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "bcc23d1b",
+		type: "choice",
+		table: 94
+	},
+	{
+		uid: "5dc201bf",
+		type: "command",
+		auto: "invisible",
+		command: "gamestage silentadd @p armor_quantum"
+	}]
+}

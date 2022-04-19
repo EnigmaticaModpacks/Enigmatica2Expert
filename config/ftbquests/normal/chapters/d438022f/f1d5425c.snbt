@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest1005.name}",
+	icon: "randomthings:spectrecoil_number",
+	x: -13.833333333333334d,
+	y: 10.166666666666666d,
+	text: [
+		"{bq.quest1005.desc}"
+	],
+	dependencies: [
+		"9092f6f7"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "8778b257",
+		type: "item",
+		items: [{
+			item: "randomthings:spectrecoil_number"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a1712c00",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

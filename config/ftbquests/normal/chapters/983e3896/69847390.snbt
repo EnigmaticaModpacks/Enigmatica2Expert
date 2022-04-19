@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest807.name}",
+	icon: "astralsorcery:blockchalice",
+	x: 9.833333333333334d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest807.desc}"
+	],
+	dependencies: [
+		"4aabb15e"
+	],
+	tasks: [{
+		uid: "0ccd04eb",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockchalice"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b0a965b4",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

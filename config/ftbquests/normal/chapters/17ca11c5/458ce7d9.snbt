@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest749.name}",
+	icon: "scalinghealth:difficultychanger",
+	x: 7.208333333333333d,
+	y: 6.041666666666668d,
+	text: [
+		"{bq.quest749.desc}"
+	],
+	dependencies: [
+		"7e987598",
+		"3bcf46b6"
+	],
+	tasks: [{
+		uid: "f7b1d0fd",
+		type: "item",
+		items: [{
+			item: "scalinghealth:difficultychanger"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "cf94db39",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	title: "{bq.quest769.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "animus:kama_bound"
+	},
+	{
+		item: "bloodmagic:component 1 8",
+		count: 2
+	},
+	{
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

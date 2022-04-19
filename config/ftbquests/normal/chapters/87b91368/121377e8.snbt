@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest747.name}",
+	icon: "iceandfire:dragonsteel_fire_ingot",
+	x: 4.125d,
+	y: 4.208333333333334d,
+	text: [
+		"{bq.quest747.desc}"
+	],
+	dependencies: [
+		"0336805a",
+		"1af53634"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "2bd3538c",
+		type: "item",
+		items: [{
+			item: "iceandfire:dragonsteel_fire_ingot"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4612aed0",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "epic"
+			}
+		}
+	}]
+}

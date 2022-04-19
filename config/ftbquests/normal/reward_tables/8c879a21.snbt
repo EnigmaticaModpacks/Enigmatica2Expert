@@ -1,0 +1,16 @@
+{
+	title: "{bq.quest5.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "thermalfoundation:material 1 163",
+		count: 32
+	},
+	{
+		item: "actuallyadditions:block_shock_suppressor",
+		count: 2
+	},
+	{
+		item: "forestry:sturdy_machine",
+		count: 4
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest398.name}",
+	icon: "botania:spreader 1 1",
+	x: 0.33333333333333337d,
+	y: 1.1666666666666665d,
+	text: [
+		"{bq.quest398.desc}"
+	],
+	dependencies: [
+		"5672d99b",
+		"b045426a"
+	],
+	tasks: [{
+		uid: "8e63cbee",
+		type: "item",
+		items: [{
+			item: "botania:spreader 1 1"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "5a410bbc",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

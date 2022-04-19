@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest145.name}",
+	icon: "industrialforegoing:animal_stock_increaser",
+	x: -3.666666666666667d,
+	y: 5.666666666666667d,
+	text: [
+		"{bq.quest145.desc}"
+	],
+	dependencies: [
+		"6ad20599"
+	],
+	tasks: [{
+		uid: "a3e7b7ef",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:animal_stock_increaser"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "17718c89",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

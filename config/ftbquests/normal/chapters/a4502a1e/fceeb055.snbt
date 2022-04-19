@@ -1,0 +1,25 @@
+{
+	title: "{bq.quest883.name}",
+	icon: "extrautils2:decorativesolid 1 6",
+	x: 9.0d,
+	y: 2.333333333333333d,
+	text: [
+		"{bq.quest883.desc}"
+	],
+	dependencies: [
+		"6ec3f2d7"
+	],
+	tasks: [{
+		uid: "69ee930b",
+		type: "item",
+		items: [{
+			item: "extrautils2:decorativesolid 1 6"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "76c8f12b",
+		type: "xp_levels",
+		xp_levels: 5
+	}]
+}

@@ -1,0 +1,56 @@
+{
+	title: "{bq.quest766.name}",
+	icon: "botania:manasteelchest",
+	x: 3.5d,
+	y: 9.166666666666666d,
+	text: [
+		"{bq.quest766.desc}"
+	],
+	dependencies: [
+		"aca34b29"
+	],
+	tasks: [{
+		uid: "79cfca69",
+		type: "item",
+		items: [{
+			item: "botania:manasteelhelm"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "fff7e935",
+		type: "item",
+		items: [{
+			id: "botania:manasteelchest",
+			tag: {}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "59d88586",
+		type: "item",
+		items: [{
+			item: "botania:manasteellegs"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "7b493641",
+		type: "item",
+		items: [{
+			item: "botania:manasteelboots"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f18d223e",
+		type: "choice",
+		table: 87
+	},
+	{
+		uid: "a24ec920",
+		type: "command",
+		auto: "invisible",
+		command: "gamestage silentadd @p armor_manasteel"
+	}]
+}

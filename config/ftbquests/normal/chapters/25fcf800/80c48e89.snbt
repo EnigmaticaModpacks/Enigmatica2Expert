@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest832.name}",
+	icon: "environmentaltech:nano_cont_personal_1",
+	x: 6.75d,
+	y: 0.5d,
+	text: [
+		"{bq.quest832.desc}"
+	],
+	dependencies: [
+		"b2bc3ad7"
+	],
+	tasks: [{
+		uid: "e89d623b",
+		type: "item",
+		items: [{
+			item: "environmentaltech:nano_cont_personal_1 1 32767"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "12669aea",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "epic"
+			}
+		}
+	}]
+}

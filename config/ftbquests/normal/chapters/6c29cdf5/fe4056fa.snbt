@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest934.name}",
+	icon: "botania:reachring",
+	x: 7.833333333333333d,
+	y: 9.166666666666666d,
+	text: [
+		"{bq.quest934.desc}"
+	],
+	dependencies: [
+		"5672d99b",
+		"4aa39f8e"
+	],
+	tasks: [{
+		uid: "c06108ad",
+		type: "item",
+		items: [{
+			item: "botania:reachring"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d971f265",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

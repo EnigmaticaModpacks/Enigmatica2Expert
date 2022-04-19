@@ -1,0 +1,25 @@
+{
+	title: "{bq.quest949.name}",
+	icon: "rats:cheese",
+	x: -5.0d,
+	y: 0.16666666666666669d,
+	text: [
+		"{bq.quest949.desc}"
+	],
+	dependencies: [
+		"dcb947b4"
+	],
+	tasks: [{
+		uid: "4071cfeb",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_food"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "970d8554",
+		type: "choice",
+		table: 121
+	}]
+}

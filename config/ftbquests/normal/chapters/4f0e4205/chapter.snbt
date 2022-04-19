@@ -1,0 +1,10 @@
+{
+	title: "{bq.chapter23.name}",
+	icon: "twilightforest:miniature_structure 1 6",
+	description: [
+		"{bq.chapter23.desc}"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

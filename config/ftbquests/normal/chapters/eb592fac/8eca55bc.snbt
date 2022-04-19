@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest267.name}",
+	icon: "rftools:builder",
+	x: 0.0d,
+	y: 3.5d,
+	text: [
+		"{bq.quest267.desc}"
+	],
+	dependencies: [
+		"f6e8e410"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "61bd868a",
+		type: "item",
+		items: [{
+			item: "rftools:builder"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "43e0c4e4",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

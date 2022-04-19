@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest805.name}",
+	icon: "astralsorcery:blockmapdrawingtable",
+	x: 6.833333333333333d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest805.desc}"
+	],
+	dependencies: [
+		"770ef5aa"
+	],
+	tasks: [{
+		uid: "4374279d",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockmapdrawingtable"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "89991025",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

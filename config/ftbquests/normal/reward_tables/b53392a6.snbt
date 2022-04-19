@@ -1,0 +1,28 @@
+{
+	title: "{bq.quest52.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "tconstruct:shovel_head",
+			tag: {
+				Material: "alumite"
+			}
+		}
+	},
+	{
+		item: {
+			id: "tconstruct:shovel_head",
+			tag: {
+				Material: "electrum"
+			}
+		}
+	},
+	{
+		item: {
+			id: "tconstruct:shovel_head",
+			tag: {
+				Material: "knightslime"
+			}
+		}
+	}]
+}

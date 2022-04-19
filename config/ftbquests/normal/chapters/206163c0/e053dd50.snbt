@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest284.name}",
+	icon: "forestry:centrifuge",
+	x: 0.5d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest284.desc}"
+	],
+	dependencies: [
+		"2c5eefd7"
+	],
+	tasks: [{
+		uid: "2e1f0060",
+		type: "item",
+		items: [{
+			item: "forestry:centrifuge"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "e7cda36d",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

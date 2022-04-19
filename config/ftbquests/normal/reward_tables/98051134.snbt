@@ -1,0 +1,18 @@
+{
+	title: "{bq.quest786.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "twilightforest:ice_sword"
+	},
+	{
+		item: "thermalfoundation:tool.shield_diamond"
+	},
+	{
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

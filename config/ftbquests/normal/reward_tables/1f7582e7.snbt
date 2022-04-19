@@ -1,0 +1,23 @@
+{
+	title: "{bq.quest39.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "rftools:powercell_simple"
+	},
+	{
+		item: {
+			id: "ic2:te",
+			Damage: 75s,
+			tag: {}
+		}
+	},
+	{
+		item: {
+			id: "mekanism:energycube",
+			tag: {
+				tier: 1,
+				mekData: {}
+			}
+		}
+	}]
+}

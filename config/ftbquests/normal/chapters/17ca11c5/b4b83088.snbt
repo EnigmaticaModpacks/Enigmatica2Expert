@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest16.name}",
+	icon: "extendedcrafting:table_basic",
+	x: 3.791666666666667d,
+	y: -2.1666666666666665d,
+	text: [
+		"{bq.quest16.desc}"
+	],
+	dependencies: [
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "bace1686",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:table_basic"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "6def2b2b",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

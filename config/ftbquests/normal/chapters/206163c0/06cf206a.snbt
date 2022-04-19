@@ -1,0 +1,25 @@
+{
+	title: "{bq.quest794.name}",
+	icon: "exnihilocreatio:hive 1 1",
+	x: -3.5d,
+	y: -0.5d,
+	text: [
+		"{bq.quest794.desc}"
+	],
+	dependencies: [
+		"d7a49014"
+	],
+	tasks: [{
+		uid: "c379d7b8",
+		type: "item",
+		items: [{
+			item: "exnihilocreatio:hive 1 1"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "27b6028a",
+		type: "choice",
+		table: 100
+	}]
+}

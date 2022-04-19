@@ -1,0 +1,25 @@
+{
+	title: "{bq.quest932.name}",
+	icon: "farmingforblockheads:market",
+	x: -0.875d,
+	y: 5.0d,
+	text: [
+		"{bq.quest932.desc}"
+	],
+	dependencies: [
+		"90536e42"
+	],
+	tasks: [{
+		uid: "19c7dc6d",
+		type: "item",
+		items: [{
+			item: "farmingforblockheads:market"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3b451728",
+		type: "choice",
+		table: 114
+	}]
+}

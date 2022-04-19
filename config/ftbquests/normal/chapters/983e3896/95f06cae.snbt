@@ -1,0 +1,40 @@
+{
+	title: "{bq.quest153.name}",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "astralsorcery.liquidstarlight",
+			Amount: 1000
+		}
+	},
+	x: -0.16666666666666663d,
+	y: 3.5d,
+	text: [
+		"{bq.quest153.desc}"
+	],
+	dependencies: [
+		"f0c1c4b1"
+	],
+	tasks: [{
+		uid: "4a32b4e2",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "astralsorcery.liquidstarlight",
+				Amount: 1000
+			}
+		}],
+		
+	}],
+	rewards: [{
+		uid: "187f13a7",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

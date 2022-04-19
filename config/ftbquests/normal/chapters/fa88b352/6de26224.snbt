@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest509.name}",
+	icon: "nuclearcraft:electrolyser_idle",
+	x: 9.0d,
+	y: 0.5d,
+	text: [
+		"{bq.quest509.desc}"
+	],
+	dependencies: [
+		"3ba07972",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "6dcae1c4",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:electrolyser_idle"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "ab69b0e2",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

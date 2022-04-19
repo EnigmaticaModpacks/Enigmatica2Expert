@@ -1,0 +1,10 @@
+{
+	title: "{bq.chapter18.name}",
+	icon: "environmentaltech:void_ore_miner_cont_1",
+	description: [
+		"{bq.chapter18.desc}"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

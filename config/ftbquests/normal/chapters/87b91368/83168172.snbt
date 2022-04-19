@@ -1,0 +1,26 @@
+{
+	title: "{bq.quest730.name}",
+	icon: "rats:chunky_cheese_token",
+	x: -1.25d,
+	y: 6.25d,
+	text: [
+		"{bq.quest730.desc}"
+	],
+	dependencies: [
+		"eaad67ab"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "823798d8",
+		type: "item",
+		items: [{
+			item: "rats:chunky_cheese_token"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "1235db64",
+		type: "choice",
+		table: 77
+	}]
+}

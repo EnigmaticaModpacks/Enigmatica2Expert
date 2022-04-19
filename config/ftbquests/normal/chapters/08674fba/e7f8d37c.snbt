@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest456.name}",
+	icon: "libvulpes:ore0",
+	x: 14.166666666666666d,
+	y: 9.833333333333334d,
+	text: [
+		"{bq.quest456.desc}"
+	],
+	dependencies: [
+		"e9fa52b4"
+	],
+	tasks: [{
+		uid: "19796e83",
+		type: "item",
+		items: [{
+			item: "libvulpes:ore0"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "ff50e0a6",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

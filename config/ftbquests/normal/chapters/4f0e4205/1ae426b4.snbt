@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest864.name}",
+	icon: "twilightforest:trophy 1 4",
+	x: 4.5d,
+	y: -1.1666666666666667d,
+	text: [
+		"{bq.quest864.desc}"
+	],
+	dependencies: [
+		"da09753d"
+	],
+	tasks: [{
+		uid: "eb9131f3",
+		type: "item",
+		items: [{
+			item: "twilightforest:trophy 1 4"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c5b1a895",
+		type: "item",
+		item: "twilightforest:block_and_chain"
+	},
+	{
+		uid: "de820d56",
+		type: "command",
+		auto: "invisible",
+		command: "/advancement grant @p only twilightforest:progress_knights"
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest162.name}",
+	icon: "astralsorcery:blockstarlightinfuser",
+	x: 8.166666666666668d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest162.desc}"
+	],
+	dependencies: [
+		"770ef5aa"
+	],
+	tasks: [{
+		uid: "06c056ab",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockstarlightinfuser"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "41624c12",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest32.name}",
+	icon: {
+		id: "avaritia:infinity_axe",
+		tag: {}
+	},
+	x: 7.208333333333333d,
+	y: 10.958333333333332d,
+	text: [
+		"{bq.quest32.desc}"
+	],
+	dependencies: [
+		"5d0d9b75"
+	],
+	size: 1.25d,
+	tasks: [{
+		uid: "23a2d0d1",
+		type: "item",
+		items: [{
+			id: "avaritia:infinity_axe",
+			tag: {}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4e47ce7e",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has obtained the Nature's Ruin!"
+	}]
+}

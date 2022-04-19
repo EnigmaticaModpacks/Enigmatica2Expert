@@ -1,0 +1,35 @@
+{
+	title: "{bq.quest405.name}",
+	icon: {
+		id: "botania:laputashard",
+		tag: {}
+	},
+	x: 10.5d,
+	y: 6.5d,
+	text: [
+		"{bq.quest405.desc}"
+	],
+	dependencies: [
+		"f94ec042",
+		"5672d99b"
+	],
+	tasks: [{
+		uid: "b5a6ba1e",
+		type: "item",
+		items: [{
+			id: "botania:laputashard",
+			tag: {}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "64e7431b",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

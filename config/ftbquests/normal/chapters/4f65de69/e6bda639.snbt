@@ -1,0 +1,26 @@
+{
+	title: "{bq.quest778.name}",
+	icon: "hole_filler_mod:throwable_hole_filler",
+	x: 8.125d,
+	y: 5.041666666666667d,
+	text: [
+		"{bq.quest778.desc}"
+	],
+	dependencies: [
+		"b1868c44"
+	],
+	tasks: [{
+		uid: "78e20615",
+		type: "item",
+		items: [{
+			item: "hole_filler_mod:throwable_hole_filler"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f9efe854",
+		type: "item",
+		item: "hole_filler_mod:throwable_hole_filler",
+		count: 10
+	}]
+}

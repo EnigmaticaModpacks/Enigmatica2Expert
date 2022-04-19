@@ -1,0 +1,46 @@
+{
+	title: "{bq.quest223.name}",
+	icon: {
+		id: "thermalexpansion:dynamo",
+		Damage: 1s,
+		tag: {
+			RSControl: 0b,
+			Facing: 1b,
+			Energy: 0,
+			Level: 0b
+		}
+	},
+	x: 3.1666666666666665d,
+	y: 4.5d,
+	text: [
+		"{bq.quest223.desc}"
+	],
+	dependencies: [
+		"dfa7ef0d"
+	],
+	tasks: [{
+		uid: "5f062afe",
+		type: "item",
+		items: [{
+			id: "thermalexpansion:dynamo",
+			Damage: 1s,
+			tag: {
+				RSControl: 0b,
+				Facing: 1b,
+				Energy: 0,
+				Level: 0b
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "03ce68c7",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

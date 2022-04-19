@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest134.name}",
+	icon: "industrialforegoing:material_stonework_factory",
+	x: 7.0d,
+	y: 3.0d,
+	text: [
+		"{bq.quest134.desc}"
+	],
+	dependencies: [
+		"74175c1c"
+	],
+	tasks: [{
+		uid: "58105556",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:material_stonework_factory"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "7f2c385c",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

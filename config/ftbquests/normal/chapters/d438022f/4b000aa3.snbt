@@ -1,0 +1,26 @@
+{
+	title: "{bq.quest994.name}",
+	icon: "randomthings:slimecube",
+	x: -11.0d,
+	y: 7.0d,
+	text: [
+		"{bq.quest994.desc}"
+	],
+	dependencies: [
+		"dc869094"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "e42bb099",
+		type: "item",
+		items: [{
+			item: "randomthings:slimecube"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0215b6a4",
+		type: "choice",
+		table: 124
+	}]
+}

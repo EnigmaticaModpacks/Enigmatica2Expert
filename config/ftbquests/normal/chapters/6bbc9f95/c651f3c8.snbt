@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest643.name}",
+	icon: "thaumcraft:stone_arcane",
+	x: 2.166666666666667d,
+	y: 5.5d,
+	text: [
+		"{bq.quest643.desc}"
+	],
+	dependencies: [
+		"4f409b3c"
+	],
+	tasks: [{
+		uid: "321aea23",
+		type: "item",
+		items: [{
+			item: "thaumcraft:stone_arcane 8"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c7f241ec",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest128.name}",
+	icon: "actuallyadditions:block_fermenting_barrel",
+	x: -2.1666666666666665d,
+	y: 3.5d,
+	text: [
+		"{bq.quest128.desc}"
+	],
+	dependencies: [
+		"9b71600a"
+	],
+	tasks: [{
+		uid: "99c4c9e6",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_fermenting_barrel"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "865d8c8a",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

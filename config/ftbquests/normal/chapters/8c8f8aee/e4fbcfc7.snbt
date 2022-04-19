@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest304.name}",
+	icon: "actuallyadditions:block_feeder",
+	x: -0.5d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest304.desc}"
+	],
+	dependencies: [
+		"dae9f45f"
+	],
+	tasks: [{
+		uid: "3fe7dbfa",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_feeder"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "4fca8261",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

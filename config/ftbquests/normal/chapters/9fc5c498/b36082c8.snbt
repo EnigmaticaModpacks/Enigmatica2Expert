@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest578.name}",
+	icon: "enderio:block_relocator_obelisk",
+	x: 3.5d,
+	y: 6.5d,
+	text: [
+		"{bq.quest578.desc}"
+	],
+	dependencies: [
+		"ff5a849e"
+	],
+	tasks: [{
+		uid: "e0edc4d0",
+		type: "item",
+		items: [{
+			item: "enderio:block_relocator_obelisk"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "430fc1f2",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

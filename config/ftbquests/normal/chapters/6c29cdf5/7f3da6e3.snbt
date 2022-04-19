@@ -1,0 +1,39 @@
+{
+	title: "{bq.quest389.name}",
+	icon: {
+		id: "botania:specialflower",
+		tag: {
+			type: "gourmaryllis"
+		}
+	},
+	x: 13.333333333333334d,
+	y: 5.666666666666667d,
+	text: [
+		"{bq.quest389.desc}"
+	],
+	dependencies: [
+		"5672d99b",
+		"95ce8a09"
+	],
+	tasks: [{
+		uid: "dca46838",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "gourmaryllis"
+			}
+		}],
+		
+	}],
+	rewards: [{
+		uid: "a1ec72e5",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

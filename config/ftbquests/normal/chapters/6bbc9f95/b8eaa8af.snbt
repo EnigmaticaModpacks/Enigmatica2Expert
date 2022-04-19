@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest658.name}",
+	icon: "thaumcraft:alumentum",
+	x: 6.833333333333333d,
+	y: 3.8333333333333335d,
+	text: [
+		"{bq.quest658.desc}"
+	],
+	dependencies: [
+		"05d8ef32"
+	],
+	tasks: [{
+		uid: "df017b34",
+		type: "item",
+		items: [{
+			item: "thaumcraft:alumentum"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "de6cf04e",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest581.name}",
+	icon: "enderio:block_slice_and_splice",
+	x: 8.833333333333334d,
+	y: 2.5d,
+	text: [
+		"{bq.quest581.desc}"
+	],
+	dependencies: [
+		"e3ba78e0"
+	],
+	tasks: [{
+		uid: "35682e0d",
+		type: "item",
+		items: [{
+			item: "enderio:block_slice_and_splice"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e3e709bd",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

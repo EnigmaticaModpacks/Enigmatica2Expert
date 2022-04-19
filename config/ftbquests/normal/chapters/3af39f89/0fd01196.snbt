@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest249.name}",
+	icon: "thermalexpansion:augment 1 640",
+	x: 2.166666666666667d,
+	y: 5.666666666666667d,
+	text: [
+		"{bq.quest249.desc}"
+	],
+	dependencies: [
+		"dfa7ef0d"
+	],
+	tasks: [{
+		uid: "1d86657d",
+		type: "item",
+		items: [{
+			item: "thermalexpansion:augment 1 640"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "5fbfcfaa",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

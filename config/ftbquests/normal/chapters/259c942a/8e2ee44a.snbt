@@ -1,0 +1,28 @@
+{
+	title: "{bq.quest558.name}",
+	icon: "immersiveengineering:metal_multiblock 1 13",
+	x: 4.5d,
+	y: 3.5d,
+	text: [
+		"{bq.quest558.desc}"
+	],
+	dependencies: [
+		"2de1b9db"
+	],
+	tasks: [{
+		uid: "84243316",
+		type: "advancement",
+		advancement: "immersiveengineering:main/multiblock_arcfurnace",
+		criterion: ""
+	}],
+	rewards: [{
+		uid: "507f24c1",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

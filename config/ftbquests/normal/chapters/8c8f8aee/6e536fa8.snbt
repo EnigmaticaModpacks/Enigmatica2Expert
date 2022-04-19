@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest309.name}",
+	icon: "actuallyadditions:block_ranged_collector",
+	x: -2.1666666666666665d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest309.desc}"
+	],
+	dependencies: [
+		"dae9f45f"
+	],
+	tasks: [{
+		uid: "4136bbae",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_ranged_collector"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "af9c147f",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

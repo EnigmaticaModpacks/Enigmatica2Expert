@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest776.name}",
+	icon: "bloodmagic:blood_tank",
+	x: 4.0d,
+	y: 4.5d,
+	text: [
+		"{bq.quest776.desc}"
+	],
+	dependencies: [
+		"6a6dc36e"
+	],
+	tasks: [{
+		uid: "a54505e5",
+		type: "item",
+		items: [{
+			item: "bloodmagic:blood_tank"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8e305ae2",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

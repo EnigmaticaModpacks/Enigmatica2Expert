@@ -1,0 +1,15 @@
+{
+	title: "{bq.quest915.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "libvulpes:motor"
+	},
+	{
+		item: "advancedrocketry:thermite",
+		count: 64
+	},
+	{
+		item: "advancedrocketry:circlelight",
+		count: 20
+	}]
+}

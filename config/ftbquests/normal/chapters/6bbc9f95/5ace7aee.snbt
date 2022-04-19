@@ -1,0 +1,25 @@
+{
+	title: "{bq.quest653.name}",
+	icon: "thaumcraft:focus_2",
+	x: 9.833333333333334d,
+	y: 7.5d,
+	text: [
+		"{bq.quest653.desc}"
+	],
+	dependencies: [
+		"a2857370"
+	],
+	tasks: [{
+		uid: "f99ab0f9",
+		type: "item",
+		items: [{
+			item: "thaumcraft:focus_2"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "118b7251",
+		type: "choice",
+		table: 50
+	}]
+}

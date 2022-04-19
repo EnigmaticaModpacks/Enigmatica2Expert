@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest142.name}",
+	icon: "industrialforegoing:laser_base",
+	x: 9.0d,
+	y: 3.0d,
+	text: [
+		"{bq.quest142.desc}"
+	],
+	dependencies: [
+		"74175c1c"
+	],
+	tasks: [{
+		uid: "aa68682c",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:laser_base"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "47194003",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

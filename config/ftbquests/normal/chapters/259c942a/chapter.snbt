@@ -1,0 +1,10 @@
+{
+	title: "{bq.chapter3.name}",
+	icon: "immersiveengineering:tool",
+	description: [
+		"{bq.chapter3.desc}"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

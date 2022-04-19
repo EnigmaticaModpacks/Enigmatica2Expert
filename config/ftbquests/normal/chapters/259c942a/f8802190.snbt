@@ -1,0 +1,28 @@
+{
+	title: "{bq.quest562.name}",
+	icon: "immersiveengineering:metal_multiblock 1 1",
+	x: 4.5d,
+	y: 4.833333333333333d,
+	text: [
+		"{bq.quest562.desc}"
+	],
+	dependencies: [
+		"2de1b9db"
+	],
+	tasks: [{
+		uid: "d40d562e",
+		type: "advancement",
+		advancement: "immersiveengineering:main/multiblock_crusher",
+		criterion: ""
+	}],
+	rewards: [{
+		uid: "5beffd1a",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

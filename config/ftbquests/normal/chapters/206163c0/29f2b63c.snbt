@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest280.name}",
+	icon: "forestry:portable_alyzer",
+	x: 1.8333333333333333d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest280.desc}"
+	],
+	dependencies: [
+		"2c5eefd7"
+	],
+	tasks: [{
+		uid: "81ea7992",
+		type: "item",
+		items: [{
+			item: "forestry:portable_alyzer"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "a69b7f5d",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest1000.name}",
+	icon: "randomthings:spectrekey",
+	x: -12.666666666666666d,
+	y: 15.333333333333334d,
+	text: [
+		"{bq.quest1000.desc}"
+	],
+	dependencies: [
+		"9092f6f7"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "540f6f28",
+		type: "item",
+		items: [{
+			item: "randomthings:spectrekey"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "16ae81e6",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

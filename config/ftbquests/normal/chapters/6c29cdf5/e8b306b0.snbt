@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest371.name}",
+	icon: "botania:runealtar",
+	x: 4.833333333333333d,
+	y: 3.8333333333333335d,
+	text: [
+		"{bq.quest371.desc}"
+	],
+	dependencies: [
+		"2bc0a8f1",
+		"5672d99b"
+	],
+	tasks: [{
+		uid: "444932b3",
+		type: "item",
+		items: [{
+			item: "botania:runealtar"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "744a57bf",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

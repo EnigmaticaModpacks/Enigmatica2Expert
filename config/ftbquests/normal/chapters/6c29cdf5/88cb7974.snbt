@@ -1,0 +1,39 @@
+{
+	title: "{bq.quest388.name}",
+	icon: {
+		id: "botania:specialflower",
+		tag: {
+			type: "kekimurus"
+		}
+	},
+	x: 13.5d,
+	y: 4.666666666666667d,
+	text: [
+		"{bq.quest388.desc}"
+	],
+	dependencies: [
+		"5672d99b",
+		"95ce8a09"
+	],
+	tasks: [{
+		uid: "ca30433b",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "kekimurus"
+			}
+		}],
+		
+	}],
+	rewards: [{
+		uid: "fb485b1d",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

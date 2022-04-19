@@ -1,0 +1,10 @@
+{
+	title: "{bq.chapter1.name}",
+	icon: "advancedrocketry:planetidchip",
+	description: [
+		"{bq.chapter1.desc}"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

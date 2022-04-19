@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest563.name}",
+	icon: "draconicevolution:reactor_core",
+	x: 12.75d,
+	y: 0.75d,
+	text: [
+		"{bq.quest563.desc}"
+	],
+	dependencies: [
+		"af16df8a"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "e1b45098",
+		type: "item",
+		items: [{
+			item: "draconicevolution:reactor_core"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "5d26d907",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "legendary"
+			}
+		}
+	}]
+}

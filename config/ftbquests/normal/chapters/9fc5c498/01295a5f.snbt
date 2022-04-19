@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest585.name}",
+	icon: "enderio:block_killer_joe",
+	x: 11.5d,
+	y: 3.8333333333333335d,
+	text: [
+		"{bq.quest585.desc}"
+	],
+	dependencies: [
+		"f91632f4"
+	],
+	tasks: [{
+		uid: "3b6f92a4",
+		type: "item",
+		items: [{
+			item: "enderio:block_killer_joe"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a565098f",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

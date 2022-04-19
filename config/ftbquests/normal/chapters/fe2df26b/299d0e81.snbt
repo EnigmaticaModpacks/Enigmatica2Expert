@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest857.name}",
+	icon: {
+		id: "wct:wct",
+		tag: {
+			InfinityEnergy: 2147483647,
+			internalCurrentPower: 1600000.0d
+		}
+	},
+	x: 4.0d,
+	y: -2.0d,
+	text: [
+		"{bq.quest857.desc}"
+	],
+	dependencies: [
+		"6690bc40"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "55db32bc",
+		type: "item",
+		items: [{
+			id: "wct:wct",
+			tag: {}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "40b8725b",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

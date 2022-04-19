@@ -1,0 +1,25 @@
+{
+	title: "{bq.quest716.name}",
+	icon: "industrialforegoing:infinity_drill",
+	x: 6.375d,
+	y: -2.2916666666666665d,
+	text: [
+		"{bq.quest716.desc}"
+	],
+	dependencies: [
+		"3f59aa76"
+	],
+	tasks: [{
+		uid: "0795d982",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:infinity_drill"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7bee12a0",
+		type: "choice",
+		table: 69
+	}]
+}

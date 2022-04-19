@@ -1,0 +1,24 @@
+{
+	title: "{bq.quest766.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "botania:floatingspecialflower",
+			tag: {
+				type: "manastar"
+			}
+		},
+		count: 10
+	},
+	{
+		item: "botania:storage"
+	},
+	{
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

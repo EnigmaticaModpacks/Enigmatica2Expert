@@ -1,0 +1,54 @@
+{
+	title: "{bq.quest54.name}",
+	icon: {
+		id: "tconstruct:sharpening_kit",
+		tag: {
+			Material: "cobalt"
+		}
+	},
+	x: 8.125d,
+	y: 3.5d,
+	text: [
+		"{bq.quest54.desc}"
+	],
+	dependencies: [
+		"4fc58528"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "da33fe3f",
+		type: "item",
+		items: [{
+			item: "tconstruct:ore"
+		}],
+		count: 2L,
+		
+	},
+	{
+		uid: "e4daa64c",
+		type: "item",
+		items: [{
+			item: "tconstruct:ore 1 1"
+		}],
+		count: 2L
+	},
+	{
+		uid: "4df97c03",
+		type: "item",
+		items: [{
+			item: "tconstruct:ingots"
+		}]
+	},
+	{
+		uid: "02c2c6ca",
+		type: "item",
+		items: [{
+			item: "tconstruct:ingots 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "17f8410d",
+		type: "choice",
+		table: 25
+	}]
+}

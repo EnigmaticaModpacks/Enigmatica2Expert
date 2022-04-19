@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest279.name}",
+	icon: "forestry:still",
+	x: -7.458333333333333d,
+	y: 3.5d,
+	text: [
+		"{bq.quest279.desc}"
+	],
+	dependencies: [
+		"72395a5a"
+	],
+	tasks: [{
+		uid: "f966aff2",
+		type: "item",
+		items: [{
+			item: "forestry:still"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "72b4b221",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

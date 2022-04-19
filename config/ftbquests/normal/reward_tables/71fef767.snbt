@@ -1,0 +1,22 @@
+{
+	title: "{bq.quest119.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "immersiveengineering:bullet",
+			Damage: 2s,
+			tag: {
+				bullet: "silver"
+			}
+		},
+		count: 64
+	},
+	{
+		item: "rustic:candle_silver",
+		count: 16
+	},
+	{
+		item: "thermalfoundation:material 1 97",
+		count: 2
+	}]
+}

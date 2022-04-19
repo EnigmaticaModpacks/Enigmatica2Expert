@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest508.name}",
+	icon: "nuclearcraft:supercooler_idle",
+	x: 7.333333333333333d,
+	y: 0.5d,
+	text: [
+		"{bq.quest508.desc}"
+	],
+	dependencies: [
+		"3ba07972",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "8732c69b",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:supercooler_idle"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "8f545eca",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

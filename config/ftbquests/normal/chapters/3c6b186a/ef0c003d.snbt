@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest713.name}",
+	icon: "ic2:te 1 57",
+	x: 11.166666666666666d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest713.desc}"
+	],
+	dependencies: [
+		"4d36c8e9"
+	],
+	tasks: [{
+		uid: "071629aa",
+		type: "item",
+		items: [{
+			item: "ic2:te 1 57"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9b8e2281",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

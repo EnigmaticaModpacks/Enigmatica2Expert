@@ -1,0 +1,40 @@
+{
+	title: "{bq.quest844.name}",
+	icon: "appliedenergistics2:part 1 460",
+	x: -0.5d,
+	y: -0.5d,
+	text: [
+		"{bq.quest844.desc}"
+	],
+	dependencies: [
+		"bd8b6cc0"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "a9680e2a",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 460"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "5ae2ecd9",
+		type: "item",
+		items: [{
+			id: "appliedenergistics2:memory_card",
+			tag: {}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4bc56943",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

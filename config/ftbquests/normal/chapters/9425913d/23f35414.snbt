@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest597.name}",
+	icon: "bloodmagic:soul_snare",
+	x: 9.5d,
+	y: 5.5d,
+	text: [
+		"{bq.quest597.desc}"
+	],
+	dependencies: [
+		"5672d99b"
+	],
+	tasks: [{
+		uid: "36754840",
+		type: "item",
+		items: [{
+			item: "bloodmagic:soul_snare"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "1f145620",
+		type: "item",
+		item: "bloodmagic:slate",
+		count: 2
+	},
+	{
+		uid: "4e724409",
+		type: "item",
+		item: "botania:livingrock",
+		count: 32
+	}]
+}

@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest354.name}",
+	icon: {
+		id: "extrautils2:machine",
+		tag: {
+			Type: "extrautils2:generator_netherstar"
+		}
+	},
+	x: 18.0d,
+	y: 3.0d,
+	text: [
+		"{bq.quest354.desc}"
+	],
+	dependencies: [
+		"f31c5840"
+	],
+	tasks: [{
+		uid: "781d7d39",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:generator_netherstar"
+			}
+		}],
+		
+	}],
+	rewards: [{
+		uid: "b49bb99e",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

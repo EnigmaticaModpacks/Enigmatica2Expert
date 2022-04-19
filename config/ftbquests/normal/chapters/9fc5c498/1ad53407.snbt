@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest457.name}",
+	icon: "enderio:item_capacitor_stellar",
+	x: 2.166666666666667d,
+	y: 6.5d,
+	text: [
+		"{bq.quest457.desc}"
+	],
+	dependencies: [
+		"1dcb614b"
+	],
+	tasks: [{
+		uid: "5375c70a",
+		type: "item",
+		items: [{
+			item: "enderio:item_capacitor_stellar"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "607d818f",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "epic"
+			}
+		}
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest192.name}",
+	icon: "mekanism:compressedobsidian",
+	x: 4.833333333333333d,
+	y: 7.833333333333333d,
+	text: [
+		"{bq.quest192.desc}"
+	],
+	dependencies: [
+		"88fdde2d",
+		"a3aae782"
+	],
+	tasks: [{
+		uid: "dc61f67c",
+		type: "item",
+		items: [{
+			item: "mekanism:compressedobsidian"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "464c4274",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

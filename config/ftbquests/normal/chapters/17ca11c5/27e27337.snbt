@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest927.name}",
+	icon: "psi:cad_assembly 1 5",
+	x: 7.208333333333333d,
+	y: 5.041666666666668d,
+	text: [
+		"{bq.quest927.desc}"
+	],
+	dependencies: [
+		"7e987598",
+		"3bcf46b6"
+	],
+	tasks: [{
+		uid: "a6b6bcab",
+		type: "item",
+		items: [{
+			item: "psi:cad_assembly 1 5"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b50bba7f",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "epic"
+			}
+		}
+	}]
+}

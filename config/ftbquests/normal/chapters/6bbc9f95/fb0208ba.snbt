@@ -1,0 +1,113 @@
+{
+	title: "{bq.quest957.name}",
+	icon: {
+		id: "simple_trophies:trophy",
+		tag: {
+			TrophyColorGreen: 47,
+			TrophyShowsTooltip: 1b,
+			TrophyVariant: "gold",
+			TrophyItem: {
+				Count: 1b,
+				id: "thaumicaugmentation:rift_jar",
+				tag: {
+					seed: 0,
+					size: 100
+				},
+				Damage: 0s
+			},
+			TrophyColorBlue: 190,
+			TrophyColorRed: 123,
+			TrophyName: "§5Thaumcraft Master Trophy§r"
+		}
+	},
+	x: 11.25d,
+	y: 9.0d,
+	text: [
+		"{bq.quest957.desc}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"537d4079",
+		"80097f8c",
+		"815b20de",
+		"85d9a049",
+		"b1e42bf7",
+		"318b5393",
+		"eacd31d5",
+		"c651f3c8",
+		"f166c6ff",
+		"57594779",
+		"5ace7aee",
+		"10aa9202",
+		"075ca176",
+		"743f1493",
+		"0c6a05c4",
+		"f942336d",
+		"fdb73b85",
+		"82e27a56",
+		"baa9431f",
+		"644b9777",
+		"64586ee7",
+		"69992959",
+		"adef62af",
+		"b8eaa8af",
+		"c3ea0baf",
+		"8510d156",
+		"459963de",
+		"3f58b214",
+		"4510505c",
+		"8535b078",
+		"f0a632f4",
+		"bb955ac0",
+		"1036e76c",
+		"461ba345",
+		"d3ddaf82",
+		"9e1f867f",
+		"a4c2ae27",
+		"2e8e4ce7",
+		"05d8ef32",
+		"38a388cd",
+		"83ab3c5f",
+		"a2857370",
+		"f85506a2",
+		"b5115b69",
+		"03e96313",
+		"086db797",
+		"36c08bbb",
+		"a54068bb",
+		"4f409b3c",
+		"9a1ee3e0"
+	],
+	size: 1.5d,
+	rewards: [{
+		uid: "c2ad1156",
+		type: "item",
+		auto: "enabled",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 47,
+				TrophyShowsTooltip: 1b,
+				TrophyVariant: "gold",
+				TrophyItem: {
+					Count: 1b,
+					id: "thaumicaugmentation:rift_jar",
+					tag: {
+						seed: 0,
+						size: 100
+					},
+					Damage: 0s
+				},
+				TrophyColorBlue: 190,
+				TrophyColorRed: 123,
+				TrophyName: "§5Thaumcraft Master Trophy§r"
+			}
+		}
+	},
+	{
+		uid: "984586a0",
+		type: "command",
+		auto: "invisible",
+		command: "/say §l@p§r has fully completed the §n§5Thaumcraft§r chapter!§r ```Congrats!```"
+	}]
+}

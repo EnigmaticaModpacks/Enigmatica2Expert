@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest980.name}",
+	icon: "openblocks:hang_glider",
+	x: -5.833333333333333d,
+	y: 10.333333333333334d,
+	text: [
+		"{bq.quest980.desc}"
+	],
+	dependencies: [
+		"9f41b8d8"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "5b4d9aa5",
+		type: "item",
+		items: [{
+			item: "openblocks:hang_glider"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ee91c3c4",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

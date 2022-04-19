@@ -1,0 +1,20 @@
+{
+	title: "{bq.quest56.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "mekanism:atomicalloy",
+		count: 8
+	},
+	{
+		item: "twilightforest:steeleaf_ingot",
+		count: 8
+	},
+	{
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

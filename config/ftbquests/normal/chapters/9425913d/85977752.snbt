@@ -1,0 +1,26 @@
+{
+	title: "{bq.quest879.name}",
+	icon: "thermalexpansion:frame 1 64",
+	x: 4.0d,
+	y: 0.0d,
+	text: [
+		"{bq.quest879.desc}"
+	],
+	dependencies: [
+		"009a4c27"
+	],
+	size: 0.66d,
+	tasks: [{
+		uid: "41d012f7",
+		type: "item",
+		items: [{
+			item: "thermalexpansion:frame 1 64"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c5bde602",
+		type: "choice",
+		table: 110
+	}]
+}

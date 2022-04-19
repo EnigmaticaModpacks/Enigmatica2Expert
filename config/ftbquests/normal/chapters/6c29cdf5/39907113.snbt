@@ -1,0 +1,39 @@
+{
+	title: "{bq.quest397.name}",
+	icon: {
+		id: "botania:specialflower",
+		tag: {
+			type: "clayconia"
+		}
+	},
+	x: 18.5d,
+	y: 1.8333333333333333d,
+	text: [
+		"{bq.quest397.desc}"
+	],
+	dependencies: [
+		"5fe4c911",
+		"5672d99b"
+	],
+	tasks: [{
+		uid: "d14808b6",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "clayconia"
+			}
+		}],
+		
+	}],
+	rewards: [{
+		uid: "0eb8cd63",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

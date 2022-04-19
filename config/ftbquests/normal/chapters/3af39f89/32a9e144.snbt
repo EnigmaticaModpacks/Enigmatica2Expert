@@ -1,0 +1,35 @@
+{
+	title: "{bq.quest906.name}",
+	icon: {
+		id: "thermalinnovation:injector",
+		tag: {}
+	},
+	x: 11.333333333333334d,
+	y: 4.166666666666667d,
+	text: [
+		"{bq.quest906.desc}"
+	],
+	dependencies: [
+		"85977752"
+	],
+	size: 0.6666666666666666d,
+	tasks: [{
+		uid: "d9fba7f7",
+		type: "item",
+		items: [{
+			id: "thermalinnovation:injector",
+			tag: {}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "24af2abe",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

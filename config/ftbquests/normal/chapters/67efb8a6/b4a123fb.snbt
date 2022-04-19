@@ -1,0 +1,56 @@
+{
+	title: "{bq.quest548.name}",
+	icon: {
+		id: "draconicevolution:draconic_bow",
+		tag: {
+			Energy: 16000000,
+			Profile_0: {
+				bowFireArrow: 0b,
+				bowZoomModifier: 0,
+				bowArrowSpeedModifier: 0,
+				bowShockPower: 0.0d,
+				bowAutoFire: 0b,
+				bowExplosionPower: 0.0d,
+				bowArrowDamage: 2.0d
+			}
+		}
+	},
+	x: 2.0d,
+	y: 12.5d,
+	text: [
+		"{bq.quest548.desc}"
+	],
+	dependencies: [
+		"72c18686"
+	],
+	tasks: [{
+		uid: "c581c3ac",
+		type: "item",
+		items: [{
+			id: "draconicevolution:draconic_bow",
+			tag: {
+				Energy: 16000000,
+				Profile_0: {
+					bowFireArrow: 0b,
+					bowZoomModifier: 0,
+					bowArrowSpeedModifier: 0,
+					bowShockPower: 0.0d,
+					bowAutoFire: 0b,
+					bowExplosionPower: 0.0d,
+					bowArrowDamage: 2.0d
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c8fe3f32",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

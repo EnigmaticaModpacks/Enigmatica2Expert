@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest694.name}",
+	icon: "rftoolsdim:phased_field_generator",
+	x: 5.166666666666667d,
+	y: 4.125d,
+	text: [
+		"{bq.quest694.desc}"
+	],
+	dependencies: [
+		"c7f76475"
+	],
+	tasks: [{
+		uid: "48b20f83",
+		type: "item",
+		items: [{
+			item: "rftoolsdim:phased_field_generator"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8f6b1ada",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

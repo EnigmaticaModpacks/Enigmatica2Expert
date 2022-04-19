@@ -1,0 +1,22 @@
+{
+	title: "{bq.quest722.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "mekanism:basicblock2",
+			Damage: 4s,
+			tag: {
+				tier: 3
+			}
+		}
+	},
+	{
+		item: {
+			id: "mekanism:basicblock2",
+			Damage: 3s,
+			tag: {
+				tier: 2
+			}
+		}
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest655.name}",
+	icon: "thaumcraft:caster_basic",
+	x: 8.5d,
+	y: 9.0d,
+	text: [
+		"{bq.quest655.desc}"
+	],
+	dependencies: [
+		"b1e42bf7"
+	],
+	tasks: [{
+		uid: "3eb0a243",
+		type: "item",
+		items: [{
+			item: "thaumcraft:caster_basic"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b27461a6",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

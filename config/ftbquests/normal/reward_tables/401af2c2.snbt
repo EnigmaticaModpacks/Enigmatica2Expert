@@ -1,0 +1,21 @@
+{
+	title: "{bq.quest893.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "industrialwires:ic2_connector 1 1",
+		count: 10
+	},
+	{
+		item: {
+			id: "industrialwires:ic2_wire_coil",
+			Damage: 5s,
+			tag: {
+				wireLength: 128
+			}
+		}
+	},
+	{
+		item: "industrialwires:ic2_connector",
+		count: 4
+	}]
+}

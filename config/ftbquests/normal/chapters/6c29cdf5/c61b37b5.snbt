@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest373.name}",
+	icon: "botania:alchemycatalyst",
+	x: 0.5d,
+	y: 6.5d,
+	text: [
+		"{bq.quest373.desc}"
+	],
+	dependencies: [
+		"5672d99b",
+		"e93a1011"
+	],
+	tasks: [{
+		uid: "96d42605",
+		type: "item",
+		items: [{
+			item: "botania:alchemycatalyst"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "4a37748d",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

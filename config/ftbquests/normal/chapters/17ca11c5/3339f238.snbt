@@ -1,0 +1,37 @@
+{
+	title: "{bq.quest3.name}",
+	icon: {
+		id: "botania:manatablet",
+		tag: {
+			mana: 500000,
+			creative: 1b
+		}
+	},
+	x: 0.45833333333333337d,
+	y: 7.125d,
+	text: [
+		"{bq.quest3.desc}"
+	],
+	dependencies: [
+		"7e987598",
+		"3bcf46b6"
+	],
+	tasks: [{
+		uid: "44a0298b",
+		type: "item",
+		items: [{
+			id: "botania:manatablet",
+			tag: {
+				mana: 500000,
+				creative: 1b
+			}
+		}],
+		
+	}],
+	rewards: [{
+		uid: "4b6063cd",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has obtained the Creative Mana Tablet!"
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest507.name}",
+	icon: "nuclearcraft:melter_idle",
+	x: 0.8333333333333333d,
+	y: 7.5d,
+	text: [
+		"{bq.quest507.desc}"
+	],
+	dependencies: [
+		"626f1235",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "39a6fb65",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:melter_idle"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "b01a7978",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

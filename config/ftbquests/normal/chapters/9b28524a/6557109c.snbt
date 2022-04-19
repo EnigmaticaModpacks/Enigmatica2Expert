@@ -1,0 +1,37 @@
+{
+	title: "{bq.quest616.name}",
+	icon: {
+		id: "bloodmagic:blood_orb",
+		tag: {
+			orb: "bloodmagic:magician"
+		}
+	},
+	x: 8.5d,
+	y: 4.5d,
+	text: [
+		"{bq.quest616.desc}"
+	],
+	dependencies: [
+		"170439ef"
+	],
+	tasks: [{
+		uid: "d141c047",
+		type: "item",
+		items: [{
+			id: "bloodmagic:blood_orb",
+			tag: {
+				orb: "bloodmagic:magician"
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "0ff5bef8",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest349.name}",
+	icon: {
+		id: "extrautils2:machine",
+		tag: {
+			Type: "extrautils2:generator_tnt"
+		}
+	},
+	x: 15.0d,
+	y: 3.0d,
+	text: [
+		"{bq.quest349.desc}"
+	],
+	dependencies: [
+		"f31c5840"
+	],
+	tasks: [{
+		uid: "3aa98f3b",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:generator_tnt"
+			}
+		}],
+		
+	}],
+	rewards: [{
+		uid: "fa283cfa",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

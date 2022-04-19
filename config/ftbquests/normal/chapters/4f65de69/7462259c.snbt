@@ -1,0 +1,25 @@
+{
+	title: "{bq.quest896.name}",
+	icon: "enderio:item_item_conduit",
+	x: 12.625d,
+	y: 6.041666666666667d,
+	text: [
+		"{bq.quest896.desc}"
+	],
+	dependencies: [
+		"3e4d0f4b"
+	],
+	tasks: [{
+		uid: "c987fd21",
+		type: "item",
+		items: [{
+			item: "enderio:item_item_conduit"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7f99aa92",
+		type: "item",
+		item: "uberconduitprobe:uber_conduit_probe_item"
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest179.name}",
+	icon: "mekanism:controlcircuit 1 1",
+	x: 2.166666666666667d,
+	y: 6.5d,
+	text: [
+		"{bq.quest179.desc}"
+	],
+	dependencies: [
+		"ae2d378c",
+		"48923a31"
+	],
+	tasks: [{
+		uid: "51020e33",
+		type: "item",
+		items: [{
+			item: "mekanism:controlcircuit 1 1"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "0a5e8039",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

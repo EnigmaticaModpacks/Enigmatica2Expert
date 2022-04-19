@@ -1,0 +1,10 @@
+{
+	title: "{bq.chapter11.name}",
+	icon: "actuallyadditions:block_empowerer",
+	description: [
+		"{bq.chapter11.desc}"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

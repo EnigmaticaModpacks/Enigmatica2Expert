@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest468.name}",
+	icon: "draconicevolution:wyvern_core",
+	x: 6.5d,
+	y: 6.75d,
+	text: [
+		"{bq.quest468.desc}"
+	],
+	dependencies: [
+		"a9d391e5"
+	],
+	tasks: [{
+		uid: "27ed39d2",
+		type: "item",
+		items: [{
+			item: "draconicevolution:wyvern_core"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "8a668448",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

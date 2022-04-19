@@ -1,0 +1,16 @@
+{
+	title: "{bq.quest932.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "farmingforblockheads:fertilizer",
+		count: 64
+	},
+	{
+		item: "farmingforblockheads:fertilizer 1 1",
+		count: 64
+	},
+	{
+		item: "farmingforblockheads:fertilizer 1 2",
+		count: 64
+	}]
+}

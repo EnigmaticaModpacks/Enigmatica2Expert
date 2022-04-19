@@ -1,0 +1,28 @@
+{
+	title: "{bq.quest360.name}",
+	icon: {
+		id: "botania:lexicon",
+		tag: {}
+	},
+	x: 5.5d,
+	y: 1.8333333333333335d,
+	text: [
+		"{bq.quest360.desc}"
+	],
+	dependencies: [
+		"5672d99b"
+	],
+	size: 1.6666666666666667d,
+	rewards: [{
+		uid: "9fe26a19",
+		type: "item",
+		item: "botania:fertilizer",
+		count: 16
+	},
+	{
+		uid: "3b4bc1fa",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has begun the Botania questline!"
+	}]
+}

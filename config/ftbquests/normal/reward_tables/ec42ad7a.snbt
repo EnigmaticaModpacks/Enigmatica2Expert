@@ -1,0 +1,16 @@
+{
+	title: "{bq.quest4.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "ic2:upgrade",
+		count: 8
+	},
+	{
+		item: "minecraft:iron_ore",
+		count: 32
+	},
+	{
+		item: "ic2:crafting",
+		count: 64
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest88.name}",
+	icon: "ic2:te 1 51",
+	x: 5.833333333333333d,
+	y: 7.5d,
+	text: [
+		"{bq.quest88.desc}"
+	],
+	dependencies: [
+		"2231f97b"
+	],
+	tasks: [{
+		uid: "63122684",
+		type: "item",
+		items: [{
+			item: "ic2:te 1 51"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "8e282a33",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

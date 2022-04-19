@@ -1,0 +1,13 @@
+{
+	title: "{bq.quest944.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "rats:rat_fez"
+	},
+	{
+		item: "rats:top_hat"
+	},
+	{
+		item: "rats:fisherman_hat"
+	}]
+}

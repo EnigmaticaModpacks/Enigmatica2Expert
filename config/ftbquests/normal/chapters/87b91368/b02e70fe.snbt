@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest735.name}",
+	icon: "rats:idol_of_ratlantis",
+	x: -1.75d,
+	y: 9.0d,
+	text: [
+		"{bq.quest735.desc}"
+	],
+	dependencies: [
+		"ac45cb5a"
+	],
+	tasks: [{
+		uid: "95d6b775",
+		type: "item",
+		items: [{
+			item: "rats:idol_of_ratlantis"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "e0c9b8fb",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "epic"
+			}
+		}
+	}]
+}

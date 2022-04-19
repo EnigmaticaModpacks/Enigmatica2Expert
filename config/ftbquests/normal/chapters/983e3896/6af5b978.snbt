@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest172.name}",
+	icon: "astralsorcery:blockattunementaltar",
+	x: 4.166666666666666d,
+	y: 3.5d,
+	text: [
+		"{bq.quest172.desc}"
+	],
+	dependencies: [
+		"d051b719"
+	],
+	tasks: [{
+		uid: "312980ac",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockattunementaltar"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "2972449c",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

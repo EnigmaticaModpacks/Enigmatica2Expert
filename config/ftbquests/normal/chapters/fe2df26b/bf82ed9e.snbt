@@ -1,0 +1,82 @@
+{
+	title: "{bq.quest1064.name}",
+	icon: {
+		id: "simple_trophies:trophy",
+		tag: {
+			TrophyColorGreen: 89,
+			TrophyShowsTooltip: 1b,
+			TrophyVariant: "gold",
+			TrophyItem: {
+				Count: 1b,
+				id: "chisel:futura",
+				Damage: 2s
+			},
+			TrophyColorBlue: 149,
+			TrophyColorRed: 126,
+			TrophyName: "§3Applied Energetics Trophy§r"
+		}
+	},
+	x: 6.0d,
+	y: 3.0d,
+	text: [
+		"{bq.quest1064.desc}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"c3751d75",
+		"ffcdedcc",
+		"49b83e7d",
+		"766a14ec",
+		"bd8b6cc0",
+		"4edba7d4",
+		"228e865e",
+		"6690bc40",
+		"a0769da6",
+		"ff8470d4",
+		"c725a7f7",
+		"882dc2b8",
+		"75e96e73",
+		"299d0e81",
+		"79e34cff",
+		"fb831b5c",
+		"1756df36",
+		"4bfcd69f",
+		"db39b491",
+		"ff8d2f21",
+		"d632245f",
+		"a73023c0",
+		"3e9738a4",
+		"7c59adad",
+		"d1ac96d8",
+		"b04e6a3b",
+		"b6524265"
+	],
+	size: 1.5d,
+	rewards: [{
+		uid: "05c5f8e0",
+		type: "item",
+		auto: "enabled",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 89,
+				TrophyShowsTooltip: 1b,
+				TrophyVariant: "gold",
+				TrophyItem: {
+					Count: 1b,
+					id: "chisel:futura",
+					Damage: 2s
+				},
+				TrophyColorBlue: 149,
+				TrophyColorRed: 126,
+				TrophyName: "§3Applied Energetics Trophy§r"
+			}
+		}
+	},
+	{
+		uid: "506fefc1",
+		type: "command",
+		auto: "invisible",
+		command: "/say §l@p§r has fully completed the §n§3Applied Energetics§r chapter!§r ```Congrats!```"
+	}]
+}

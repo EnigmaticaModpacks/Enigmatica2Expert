@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest576.name}",
+	icon: "enderio:block_aversion_obelisk",
+	x: 4.833333333333333d,
+	y: 6.5d,
+	text: [
+		"{bq.quest576.desc}"
+	],
+	dependencies: [
+		"ae82af5e"
+	],
+	tasks: [{
+		uid: "10dd0588",
+		type: "item",
+		items: [{
+			item: "enderio:block_aversion_obelisk"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "090e995d",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

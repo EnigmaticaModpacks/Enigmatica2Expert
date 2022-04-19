@@ -1,0 +1,36 @@
+{
+	title: "{bq.quest419.name}",
+	icon: {
+		id: "ic2:mining_laser",
+		Damage: 26s,
+		tag: {}
+	},
+	x: 7.5d,
+	y: 3.5d,
+	text: [
+		"{bq.quest419.desc}"
+	],
+	dependencies: [
+		"c26c77d4"
+	],
+	tasks: [{
+		uid: "86c50a57",
+		type: "item",
+		items: [{
+			id: "ic2:mining_laser",
+			Damage: 26s,
+			tag: {}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c78e8792",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest113.name}",
+	icon: "extrautils2:passivegenerator 1 8",
+	x: 7.833333333333333d,
+	y: 5.0d,
+	text: [
+		"{bq.quest113.desc}"
+	],
+	dependencies: [
+		"f991b9da"
+	],
+	tasks: [{
+		uid: "3b0e4c3f",
+		type: "item",
+		items: [{
+			item: "extrautils2:passivegenerator 1 8"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "622daa08",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

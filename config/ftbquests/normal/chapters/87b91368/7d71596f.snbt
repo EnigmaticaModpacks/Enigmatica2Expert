@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest751.name}",
+	icon: "rats:marbled_cheese_raw",
+	x: -0.75d,
+	y: 7.75d,
+	text: [
+		"{bq.quest751.desc}"
+	],
+	dependencies: [
+		"83168172"
+	],
+	tasks: [{
+		uid: "2d24dcdb",
+		type: "item",
+		items: [{
+			item: "rats:marbled_cheese_raw 16"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "22c3995a",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

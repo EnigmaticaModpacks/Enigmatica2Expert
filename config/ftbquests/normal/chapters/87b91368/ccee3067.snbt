@@ -1,0 +1,29 @@
+{
+	title: "{bq.quest944.name}",
+	icon: {
+		id: "rats:rat_arrow",
+		tag: {}
+	},
+	x: -6.5d,
+	y: 0.16666666666666669d,
+	text: [
+		"{bq.quest944.desc}"
+	],
+	dependencies: [
+		"46340f69"
+	],
+	tasks: [{
+		uid: "929fe0c6",
+		type: "item",
+		items: [{
+			id: "rats:rat_arrow",
+			tag: {}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7d8172bd",
+		type: "choice",
+		table: 118
+	}]
+}

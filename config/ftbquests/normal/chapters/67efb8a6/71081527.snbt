@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest533.name}",
+	icon: "draconicevolution:fusion_crafting_core",
+	x: 8.5d,
+	y: 5.25d,
+	text: [
+		"{bq.quest533.desc}"
+	],
+	dependencies: [
+		"64f8083b"
+	],
+	tasks: [{
+		uid: "e68dcffe",
+		type: "item",
+		items: [{
+			item: "draconicevolution:fusion_crafting_core"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b6cb6aa8",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

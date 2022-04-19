@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest625.name}",
+	icon: "bloodmagic:sigil_divination",
+	x: 4.0d,
+	y: 1.8333333333333333d,
+	text: [
+		"{bq.quest625.desc}"
+	],
+	dependencies: [
+		"6a6dc36e"
+	],
+	tasks: [{
+		uid: "88a9ae53",
+		type: "item",
+		items: [{
+			item: "bloodmagic:sigil_divination"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "11a0432c",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

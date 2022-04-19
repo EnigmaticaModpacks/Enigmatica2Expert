@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest731.name}",
+	icon: "rats:little_black_squash_balls",
+	x: -2.0d,
+	y: 1.25d,
+	text: [
+		"{bq.quest731.desc}"
+	],
+	dependencies: [
+		"06c349a7"
+	],
+	tasks: [{
+		uid: "2f7c8f9b",
+		type: "item",
+		items: [{
+			item: "rats:little_black_squash_balls"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "23380ad1",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

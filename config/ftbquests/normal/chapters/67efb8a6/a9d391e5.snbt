@@ -1,0 +1,24 @@
+{
+	title: "{bq.quest467.name}",
+	icon: "draconicevolution:draconic_core",
+	x: 4.5d,
+	y: 6.75d,
+	text: [
+		"{bq.quest467.desc}"
+	],
+	dependencies: [
+		"91dd82e5"
+	],
+	size: 1.5d,
+	rewards: [{
+		uid: "23c3cea5",
+		type: "xp_levels",
+		xp_levels: 50
+	},
+	{
+		uid: "bf3536ad",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has begun the Draconic Evolution questline!"
+	}]
+}

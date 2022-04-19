@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest122.name}",
+	icon: "actuallyadditions:block_atomic_reconstructor",
+	x: -5.5d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest122.desc}"
+	],
+	dependencies: [
+		"dae9f45f"
+	],
+	tasks: [{
+		uid: "ed0fe064",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_atomic_reconstructor"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "2fb4de1f",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

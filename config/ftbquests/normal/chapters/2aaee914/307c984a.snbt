@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest190.name}",
+	icon: "mekanism:compressedredstone",
+	x: 4.833333333333333d,
+	y: 5.166666666666667d,
+	text: [
+		"{bq.quest190.desc}"
+	],
+	dependencies: [
+		"d0c5b8a8"
+	],
+	tasks: [{
+		uid: "f5096cbd",
+		type: "item",
+		items: [{
+			item: "mekanism:compressedredstone"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "51f298e0",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,42 @@
+{
+	title: "{bq.quest801.name}",
+	icon: {
+		id: "buildinggadgets:buildingtool",
+		tag: {
+			blockstate: {
+				Name: "minecraft:air"
+			}
+		}
+	},
+	x: 11.125d,
+	y: 5.041666666666667d,
+	text: [
+		"{bq.quest801.desc}"
+	],
+	dependencies: [
+		"857a6a1a"
+	],
+	tasks: [{
+		uid: "672bbbaa",
+		type: "item",
+		items: [{
+			id: "buildinggadgets:buildingtool",
+			tag: {
+				blockstate: {
+					Name: "minecraft:air"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "89e1db8f",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

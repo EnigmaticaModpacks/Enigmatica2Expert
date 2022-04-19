@@ -1,0 +1,54 @@
+{
+	title: "{bq.quest205.name}",
+	icon: "mekanismgenerators:reactor",
+	x: 2.375d,
+	y: -1.7916666666666665d,
+	text: [
+		"{bq.quest205.desc}"
+	],
+	dependencies: [
+		"fbbabf40"
+	],
+	tasks: [{
+		uid: "d240e4ce",
+		type: "item",
+		items: [{
+			item: "mekanismgenerators:reactor"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "c6ad97f3",
+		type: "item",
+		items: [{
+			item: "mekanismgenerators:reactor 56 1"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a7233876",
+		type: "item",
+		items: [{
+			item: "mekanismgenerators:reactor 2 2"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "df9a3ebd",
+		type: "item",
+		items: [{
+			item: "mekanismgenerators:reactorglass 1 1"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8d75ed1d",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "legendary"
+			}
+		}
+	}]
+}

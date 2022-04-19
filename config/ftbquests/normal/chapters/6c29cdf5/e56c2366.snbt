@@ -1,0 +1,39 @@
+{
+	title: "{bq.quest396.name}",
+	icon: {
+		id: "botania:dice",
+		tag: {
+			soulbindUUID: "e5356349-070f-4c91-935a-2c8bf2374a08"
+		}
+	},
+	x: 10.5d,
+	y: 7.833333333333333d,
+	text: [
+		"{bq.quest396.desc}"
+	],
+	dependencies: [
+		"5672d99b",
+		"8fd96e22"
+	],
+	tasks: [{
+		uid: "f060b378",
+		type: "item",
+		items: [{
+			id: "botania:dice",
+			tag: {
+				soulbindUUID: "e5356349-070f-4c91-935a-2c8bf2374a08"
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "581b6c49",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

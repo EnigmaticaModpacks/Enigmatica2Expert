@@ -1,0 +1,20 @@
+{
+	title: "{bq.quest462.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "mysticalagriculture:nature_essence",
+		count: 256
+	},
+	{
+		item: "mysticalagriculture:dye_essence",
+		count: 64
+	},
+	{
+		item: "mysticalagriculture:platinum_essence",
+		count: 15
+	},
+	{
+		item: "mysticalagriculture:ender_amethyst_essence",
+		count: 7
+	}]
+}

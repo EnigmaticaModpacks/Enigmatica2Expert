@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest311.name}",
+	icon: {
+		id: "actuallyadditions:item_battery_double",
+		tag: {
+			Energy: 350000
+		}
+	},
+	x: -5.5d,
+	y: 7.333333333333333d,
+	text: [
+		"{bq.quest311.desc}"
+	],
+	dependencies: [
+		"96718e63"
+	],
+	tasks: [{
+		uid: "00cfe112",
+		type: "item",
+		items: [{
+			id: "actuallyadditions:item_battery_double",
+			tag: {
+				Energy: 350000
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0e6be357",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

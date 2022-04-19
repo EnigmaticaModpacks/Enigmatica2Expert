@@ -1,0 +1,83 @@
+{
+	title: "{bq.quest337.name}",
+	icon: {
+		id: "simple_trophies:trophy",
+		tag: {
+			TrophyColorGreen: 143,
+			TrophyShowsTooltip: 1b,
+			TrophyVariant: "gold",
+			TrophyItem: {
+				Count: 1b,
+				id: "forestry:bee_queen_ge",
+				Damage: 0s
+			},
+			TrophyColorBlue: 39,
+			TrophyColorRed: 62,
+			TrophyName: "Forestry Master Trophy§r"
+		}
+	},
+	x: 3.0d,
+	y: 2.25d,
+	text: [
+		"{bq.quest337.desc}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"d1b19bf0",
+		"e053dd50",
+		"8ca0b5a4",
+		"90654ce3",
+		"c21699d1",
+		"2c5eefd7",
+		"36bb30f2",
+		"7c95a05f",
+		"7f56695a",
+		"960d6601",
+		"29f2b63c",
+		"f4bf9728",
+		"0f64e5b9",
+		"383eccde",
+		"72395a5a",
+		"06cf206a",
+		"461ba87d",
+		"f2f1e559",
+		"ec1061ba",
+		"4007e26a",
+		"b9da4db4",
+		"d7a49014",
+		"1f33aa87",
+		"c8f37d85",
+		"8806b7fe",
+		"43f3834f",
+		"96c9be35",
+		"6dcd9bb3"
+	],
+	size: 1.5d,
+	rewards: [{
+		uid: "bdb044d3",
+		type: "item",
+		auto: "enabled",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 143,
+				TrophyShowsTooltip: 1b,
+				TrophyVariant: "gold",
+				TrophyItem: {
+					Count: 1b,
+					id: "forestry:bee_queen_ge",
+					Damage: 0s
+				},
+				TrophyColorBlue: 39,
+				TrophyColorRed: 62,
+				TrophyName: "Forestry Master Trophy§r"
+			}
+		}
+	},
+	{
+		uid: "d35b3530",
+		type: "command",
+		auto: "invisible",
+		command: "/say §l@p§r has fully completed the §nForestry§r chapter!§r ```Congrats!```"
+	}]
+}

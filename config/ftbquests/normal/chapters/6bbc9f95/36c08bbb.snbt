@@ -1,0 +1,25 @@
+{
+	title: "{bq.quest677.name}",
+	icon: "thaumcraft:label",
+	x: 4.666666666666667d,
+	y: 11.833333333333334d,
+	text: [
+		"{bq.quest677.desc}"
+	],
+	dependencies: [
+		"f0a632f4"
+	],
+	tasks: [{
+		uid: "70fcdba5",
+		type: "item",
+		items: [{
+			item: "thaumcraft:label"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "1133835f",
+		type: "choice",
+		table: 62
+	}]
+}

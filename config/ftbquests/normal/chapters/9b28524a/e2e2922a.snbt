@@ -1,0 +1,101 @@
+{
+	title: "{bq.quest989.name}",
+	icon: {
+		id: "simple_trophies:trophy",
+		tag: {
+			TrophyColorGreen: 49,
+			TrophyShowsTooltip: 1b,
+			TrophyVariant: "gold",
+			TrophyItem: {
+				Count: 1b,
+				id: "bloodmagic:altar",
+				Damage: 0s
+			},
+			TrophyColorBlue: 44,
+			TrophyColorRed: 179,
+			TrophyName: "§4Blood Master Trophy§r"
+		}
+	},
+	x: 10.5d,
+	y: 0.75d,
+	text: [
+		"{bq.quest989.desc}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"fb5d5d1d",
+		"3e852406",
+		"6a6dc36e",
+		"3088e482",
+		"4c30fafb",
+		"6557109c",
+		"1002494e",
+		"8c16b29a",
+		"24823213",
+		"4c883699",
+		"3bf12c63",
+		"6e05cd97",
+		"f45af488",
+		"07a9dd3a",
+		"bb70fde3",
+		"eea7f934",
+		"f1f052a5",
+		"516459b2",
+		"54d286c4",
+		"4829e3be",
+		"5eb2c3ea",
+		"6a44d25c",
+		"3e08b4d3",
+		"65eff372",
+		"3331d611",
+		"6c4cc72d",
+		"c46bf64f",
+		"b02daccb",
+		"b4490baf",
+		"66be4a19",
+		"32822e6b",
+		"7e040bad",
+		"170439ef",
+		"d73a1891",
+		"ef0195ea",
+		"1b9ee0ad",
+		"c359a62a",
+		"6e845af1",
+		"f16763d0",
+		"fa5e86e9",
+		"78c89030",
+		"8227019b",
+		"d7fe43c2",
+		"250bc4f6",
+		"489f82e1",
+		"ebced4f1"
+	],
+	size: 1.5d,
+	rewards: [{
+		uid: "9bb0e4ef",
+		type: "item",
+		auto: "enabled",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 49,
+				TrophyShowsTooltip: 1b,
+				TrophyVariant: "gold",
+				TrophyItem: {
+					Count: 1b,
+					id: "bloodmagic:altar",
+					Damage: 0s
+				},
+				TrophyColorBlue: 44,
+				TrophyColorRed: 179,
+				TrophyName: "§4Blood Master Trophy§r"
+			}
+		}
+	},
+	{
+		uid: "93889d7c",
+		type: "command",
+		auto: "invisible",
+		command: "/say §l@p§r has fully completed the §n§4Blood Magic§r chapter!§r ```Congrats!```"
+	}]
+}

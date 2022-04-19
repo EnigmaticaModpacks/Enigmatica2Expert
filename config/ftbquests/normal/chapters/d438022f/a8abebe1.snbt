@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest1048.name}",
+	icon: "darkutils:shulker_pearl",
+	x: -4.833333333333333d,
+	y: 23.5d,
+	text: [
+		"{bq.quest1048.desc}"
+	],
+	dependencies: [
+		"50ecf6a3"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "e9fa6fb7",
+		type: "item",
+		items: [{
+			item: "darkutils:shulker_pearl"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d17c76d7",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

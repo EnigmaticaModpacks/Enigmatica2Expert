@@ -1,0 +1,41 @@
+{
+	title: "{bq.quest880.name}",
+	icon: {
+		id: "thermalexpansion:dynamo",
+		tag: {
+			RSControl: 0b,
+			Facing: 1b,
+			Energy: 0,
+			Level: 0b
+		}
+	},
+	x: 4.0d,
+	y: 1.6666666666666665d,
+	text: [
+		"{bq.quest880.desc}"
+	],
+	dependencies: [
+		"a626e5ea"
+	],
+	size: 0.6666666666666666d,
+	tasks: [{
+		uid: "0958dc9d",
+		type: "item",
+		items: [{
+			id: "thermalexpansion:dynamo",
+			tag: {
+				RSControl: 0b,
+				Facing: 1b,
+				Energy: 0,
+				Level: 0b
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f5f6d8c1",
+		type: "item",
+		item: "thermalexpansion:augment 1 512",
+		count: 3
+	}]
+}

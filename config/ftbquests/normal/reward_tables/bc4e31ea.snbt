@@ -1,0 +1,28 @@
+{
+	title: "{bq.quest130.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "tconevo:part_arcane_focus",
+			tag: {
+				Material: "litherite"
+			}
+		}
+	},
+	{
+		item: {
+			id: "tconevo:part_arcane_focus",
+			tag: {
+				Material: "enori_crystal"
+			}
+		}
+	},
+	{
+		item: {
+			id: "tconevo:part_arcane_focus",
+			tag: {
+				Material: "aquamarine"
+			}
+		}
+	}]
+}

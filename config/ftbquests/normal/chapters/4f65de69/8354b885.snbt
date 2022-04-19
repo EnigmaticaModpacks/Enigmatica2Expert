@@ -1,0 +1,34 @@
+{
+	title: "{bq.quest802.name}",
+	icon: {
+		id: "cyclicmagic:book_ender",
+		tag: {}
+	},
+	x: 14.125d,
+	y: 5.041666666666667d,
+	text: [
+		"{bq.quest802.desc}"
+	],
+	dependencies: [
+		"224cb929"
+	],
+	tasks: [{
+		uid: "2e9f1e1d",
+		type: "item",
+		items: [{
+			id: "cyclicmagic:book_ender",
+			tag: {}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "bf1a126d",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

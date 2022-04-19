@@ -1,0 +1,42 @@
+{
+	title: "{bq.quest602.name}",
+	icon: "minecraft:glowstone",
+	x: 7.5d,
+	y: 3.1666666666666665d,
+	text: [
+		"{bq.quest602.desc}"
+	],
+	dependencies: [
+		"f1f052a5"
+	],
+	tasks: [{
+		uid: "5df3f9cc",
+		type: "item",
+		items: [{
+			item: "bloodmagic:blood_rune 20"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "439489f7",
+		type: "item",
+		items: [{
+			item: "minecraft:sea_lantern"
+		},
+		{
+			item: "minecraft:glowstone"
+		}],
+		count: 4L,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0602285f",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

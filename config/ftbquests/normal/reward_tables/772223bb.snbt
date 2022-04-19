@@ -1,0 +1,21 @@
+{
+	title: "{bq.quest51.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "thermalfoundation:material 1 163",
+		count: 16
+	},
+	{
+		item: "extrautils2:ironwood_sapling",
+		count: 4
+	},
+	{
+		item: {
+			id: "scannable:module_block",
+			tag: {
+				meta: 0,
+				block: "mekanism:oreblock"
+			}
+		}
+	}]
+}

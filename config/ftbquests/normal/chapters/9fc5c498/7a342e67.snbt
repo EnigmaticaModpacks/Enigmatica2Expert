@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest582.name}",
+	icon: "enderio:block_sag_mill",
+	x: 7.5d,
+	y: 3.8333333333333335d,
+	text: [
+		"{bq.quest582.desc}"
+	],
+	dependencies: [
+		"0cce2fa6"
+	],
+	tasks: [{
+		uid: "74533c25",
+		type: "item",
+		items: [{
+			item: "enderio:block_sag_mill"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "60f3b8fc",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "epic"
+			}
+		}
+	}]
+}

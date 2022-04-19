@@ -1,0 +1,28 @@
+{
+	title: "{bq.quest557.name}",
+	icon: "immersiveengineering:metal_multiblock",
+	x: 4.5d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest557.desc}"
+	],
+	dependencies: [
+		"2de1b9db"
+	],
+	tasks: [{
+		uid: "4dd5a86e",
+		type: "advancement",
+		advancement: "immersiveengineering:main/multiblock_metalpress",
+		criterion: ""
+	}],
+	rewards: [{
+		uid: "5a30e4ab",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

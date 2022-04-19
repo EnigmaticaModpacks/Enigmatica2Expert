@@ -1,0 +1,15 @@
+{
+	title: "{bq.quest57.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "extendedcrafting:storage 1 7"
+	},
+	{
+		item: "biomesoplenty:biome_block",
+		count: 8
+	},
+	{
+		item: "extrautils2:enderlilly",
+		count: 16
+	}]
+}

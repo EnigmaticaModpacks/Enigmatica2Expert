@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest177.name}",
+	icon: "mekanism:atomicalloy",
+	x: 3.5d,
+	y: 7.833333333333333d,
+	text: [
+		"{bq.quest177.desc}"
+	],
+	dependencies: [
+		"6856159e",
+		"d905a47e"
+	],
+	tasks: [{
+		uid: "a9c72a15",
+		type: "item",
+		items: [{
+			item: "mekanism:atomicalloy"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "18a8211d",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

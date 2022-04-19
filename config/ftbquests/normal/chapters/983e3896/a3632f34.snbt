@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest154.name}",
+	icon: {
+		id: "astralsorcery:itemskyresonator",
+		tag: {
+			astralsorcery: {}
+		}
+	},
+	x: -1.1666666666666667d,
+	y: 6.166666666666667d,
+	text: [
+		"{bq.quest154.desc}"
+	],
+	dependencies: [
+		"95f06cae"
+	],
+	tasks: [{
+		uid: "a12d00eb",
+		type: "item",
+		items: [{
+			id: "astralsorcery:itemskyresonator",
+			tag: {
+				astralsorcery: {}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "608e4d5c",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,26 @@
+{
+	title: "{bq.quest12.name}",
+	icon: "mysticalagriculture:infusion_crystal",
+	x: 7.5d,
+	y: 5.5d,
+	text: [
+		"{bq.quest12.desc}"
+	],
+	dependencies: [
+		"5672d99b"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "6719851a",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:infusion_crystal"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "4e2d178b",
+		type: "choice",
+		table: 10
+	}]
+}

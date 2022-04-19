@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest929.name}",
+	icon: "enderio:block_inventory_chest_tiny",
+	x: 0.8333333333333333d,
+	y: 5.166666666666667d,
+	text: [
+		"{bq.quest929.desc}"
+	],
+	dependencies: [
+		"2265d20b"
+	],
+	tasks: [{
+		uid: "1fc9b860",
+		type: "item",
+		items: [{
+			item: "enderio:block_inventory_chest_tiny"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3d0ab1eb",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

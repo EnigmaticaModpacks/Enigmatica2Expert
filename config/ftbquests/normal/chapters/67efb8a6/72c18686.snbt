@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest543.name}",
+	icon: {
+		id: "draconicevolution:wyvern_bow",
+		tag: {
+			Energy: 2000000
+		}
+	},
+	x: 3.5d,
+	y: 13.0d,
+	text: [
+		"{bq.quest543.desc}"
+	],
+	dependencies: [
+		"64f8083b"
+	],
+	tasks: [{
+		uid: "31b31230",
+		type: "item",
+		items: [{
+			id: "draconicevolution:wyvern_bow",
+			tag: {
+				Energy: 2000000
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9f8f022d",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

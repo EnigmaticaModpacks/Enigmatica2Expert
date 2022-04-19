@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest191.name}",
+	icon: "mekanism:compresseddiamond",
+	x: 4.833333333333333d,
+	y: 6.5d,
+	text: [
+		"{bq.quest191.desc}"
+	],
+	dependencies: [
+		"307c984a"
+	],
+	tasks: [{
+		uid: "88a1fa9e",
+		type: "item",
+		items: [{
+			item: "mekanism:compresseddiamond"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "1db889dd",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

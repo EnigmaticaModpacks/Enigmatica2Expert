@@ -1,0 +1,36 @@
+{
+	title: "{bq.quest161.name}",
+	icon: "astralsorcery:blockaltar 1 2",
+	x: 6.166666666666667d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest161.desc}"
+	],
+	dependencies: [
+		"d051b719"
+	],
+	tasks: [{
+		uid: "c41ed4b8",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockaltar 1 2"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "81bdef9b",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	},
+	{
+		uid: "aa6c0c3a",
+		type: "command",
+		auto: "invisible",
+		command: "/astralsorcery research @p CONSTELLATION"
+	}]
+}

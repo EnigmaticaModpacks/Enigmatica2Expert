@@ -1,0 +1,29 @@
+{
+	title: "{bq.quest37.name}",
+	icon: "thermalexpansion:satchel",
+	x: -7.5d,
+	y: 3.5d,
+	text: [
+		"{bq.quest37.desc}"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "1206bb3a",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "fbd4842f",
+		type: "choice",
+		table: 14
+	},
+	{
+		uid: "47f7a7ec",
+		type: "item",
+		item: {
+			id: "patchouli:guide_book",
+			tag: {
+				"patchouli:book": "patchouli:e2e_e"
+			}
+		}
+	}]
+}

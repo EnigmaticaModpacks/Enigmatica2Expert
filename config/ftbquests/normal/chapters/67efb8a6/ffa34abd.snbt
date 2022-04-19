@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest541.name}",
+	icon: {
+		id: "draconicevolution:draconium_capacitor",
+		tag: {
+			Energy: 64000000
+		}
+	},
+	x: 6.5d,
+	y: 5.25d,
+	text: [
+		"{bq.quest541.desc}"
+	],
+	dependencies: [
+		"64f8083b"
+	],
+	tasks: [{
+		uid: "3a913d7e",
+		type: "item",
+		items: [{
+			id: "draconicevolution:draconium_capacitor",
+			tag: {
+				Energy: 64000000
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0626db6a",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

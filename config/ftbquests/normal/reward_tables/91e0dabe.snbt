@@ -1,0 +1,26 @@
+{
+	title: "{bq.quest787.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "twilightforest:ironwood_sword",
+			tag: {
+				ench: [{
+					lvl: 1s,
+					id: 19s
+				}]
+			}
+		}
+	},
+	{
+		item: "twilightforest:block_storage"
+	},
+	{
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

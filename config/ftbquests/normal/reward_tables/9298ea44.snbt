@@ -1,0 +1,33 @@
+{
+	title: "{bq.quest1059.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "ic2:weeding_trowel"
+	},
+	{
+		item: {
+			id: "ic2:crop_seed_bag",
+			tag: {
+				owner: "ic2",
+				scan: 4b,
+				growth: 1b,
+				id: "meat_rose",
+				resistance: 1b,
+				gain: 1b
+			}
+		}
+	},
+	{
+		item: {
+			id: "ic2:crop_seed_bag",
+			tag: {
+				owner: "ic2",
+				scan: 4b,
+				growth: 4b,
+				id: "flax",
+				resistance: 4b,
+				gain: 4b
+			}
+		}
+	}]
+}

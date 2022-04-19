@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest660.name}",
+	icon: "thaumcraft:bellows",
+	x: 2.0d,
+	y: 10.5d,
+	text: [
+		"{bq.quest660.desc}"
+	],
+	dependencies: [
+		"f85506a2"
+	],
+	tasks: [{
+		uid: "e7ec5d0c",
+		type: "item",
+		items: [{
+			item: "thaumcraft:bellows"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "54164bcf",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

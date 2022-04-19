@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest183.name}",
+	icon: "mekanism:machineblock 1 3",
+	x: 6.166666666666667d,
+	y: 3.5d,
+	text: [
+		"{bq.quest183.desc}"
+	],
+	dependencies: [
+		"d0c5b8a8"
+	],
+	tasks: [{
+		uid: "45ed7160",
+		type: "item",
+		items: [{
+			item: "mekanism:machineblock 1 3"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "cc571f18",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

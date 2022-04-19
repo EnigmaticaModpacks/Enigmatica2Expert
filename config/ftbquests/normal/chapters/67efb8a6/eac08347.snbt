@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest528.name}",
+	icon: "draconicevolution:draconium_ingot",
+	x: 2.5d,
+	y: 6.0d,
+	text: [
+		"{bq.quest528.desc}"
+	],
+	dependencies: [
+		"a9d391e5"
+	],
+	tasks: [{
+		uid: "0947da2d",
+		type: "item",
+		items: [{
+			item: "draconicevolution:draconium_ingot"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "10ee9dc0",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

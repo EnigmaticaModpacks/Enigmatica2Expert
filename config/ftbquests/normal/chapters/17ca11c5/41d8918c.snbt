@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest823.name}",
+	icon: "extendedcrafting:interface",
+	x: 3.791666666666667d,
+	y: -3.4166666666666665d,
+	text: [
+		"{bq.quest823.desc}"
+	],
+	dependencies: [
+		"b4b83088"
+	],
+	tasks: [{
+		uid: "ab944ca2",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:interface"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "08f16ac0",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

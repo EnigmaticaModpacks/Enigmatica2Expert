@@ -1,0 +1,25 @@
+{
+	title: "{bq.quest943.name}",
+	icon: "tconstruct:piggybackpack",
+	x: -1.4583333333333333d,
+	y: -2.875d,
+	text: [
+		"{bq.quest943.desc}"
+	],
+	dependencies: [
+		"dcb947b4"
+	],
+	tasks: [{
+		uid: "b8304476",
+		type: "item",
+		items: [{
+			item: "tconstruct:piggybackpack"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a42b1958",
+		type: "choice",
+		table: 117
+	}]
+}

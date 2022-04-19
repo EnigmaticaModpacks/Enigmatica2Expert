@@ -1,0 +1,50 @@
+{
+	title: "{bq.quest156.name}",
+	icon: {
+		id: "astralsorcery:itemrockcrystalsimple",
+		tag: {
+			astralsorcery: {
+				crystalProperties: {
+					collectiveCapability: 100,
+					size: 400,
+					purity: 100
+				}
+			}
+		}
+	},
+	x: -2.8333333333333335d,
+	y: 3.5d,
+	text: [
+		"{bq.quest156.desc}"
+	],
+	dependencies: [
+		"032c3854"
+	],
+	tasks: [{
+		uid: "5ed48a00",
+		type: "item",
+		items: [{
+			id: "astralsorcery:itemrockcrystalsimple",
+			tag: {
+				astralsorcery: {
+					crystalProperties: {
+						collectiveCapability: 100,
+						size: 400,
+						purity: 100
+					}
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d30a47fc",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

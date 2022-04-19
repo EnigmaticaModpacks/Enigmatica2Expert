@@ -1,0 +1,61 @@
+{
+	title: "{bq.quest238.name}",
+	icon: {
+		id: "thermalexpansion:device",
+		Damage: 3s,
+		tag: {
+			RSControl: 0b,
+			Facing: 3b,
+			Energy: 0,
+			SideCache: [B;
+				1b,
+				1b,
+				2b,
+				2b,
+				2b,
+				2b
+			]
+		}
+	},
+	x: 10.833333333333334d,
+	y: 6.333333333333333d,
+	text: [
+		"{bq.quest238.desc}"
+	],
+	dependencies: [
+		"85977752",
+		"aa982aad"
+	],
+	tasks: [{
+		uid: "58eb4ec4",
+		type: "item",
+		items: [{
+			id: "thermalexpansion:device",
+			Damage: 3s,
+			tag: {
+				RSControl: 0b,
+				Facing: 3b,
+				Energy: 0,
+				SideCache: [B;
+					1b,
+					1b,
+					2b,
+					2b,
+					2b,
+					2b
+				]
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "42bd5938",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

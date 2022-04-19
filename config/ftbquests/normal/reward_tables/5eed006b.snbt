@@ -1,0 +1,646 @@
+{
+	title: "{bq.quest718.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "littletiles:multitiles",
+			tag: {
+				tiles: [{
+					boxes: [
+						[I;
+							2,
+							0,
+							0,
+							14,
+							2,
+							2
+						],
+						[I;
+							2,
+							0,
+							14,
+							14,
+							2,
+							16
+						],
+						[I;
+							2,
+							6,
+							0,
+							14,
+							8,
+							2
+						],
+						[I;
+							2,
+							6,
+							14,
+							14,
+							8,
+							16
+						],
+						[I;
+							2,
+							2,
+							0,
+							4,
+							6,
+							2
+						],
+						[I;
+							12,
+							2,
+							0,
+							14,
+							6,
+							2
+						],
+						[I;
+							12,
+							2,
+							14,
+							14,
+							6,
+							16
+						],
+						[I;
+							2,
+							2,
+							14,
+							4,
+							6,
+							16
+						],
+						[I;
+							0,
+							0,
+							2,
+							2,
+							2,
+							14
+						],
+						[I;
+							14,
+							0,
+							2,
+							16,
+							2,
+							14
+						],
+						[I;
+							0,
+							2,
+							2,
+							4,
+							4,
+							4
+						],
+						[I;
+							0,
+							2,
+							12,
+							4,
+							4,
+							14
+						],
+						[I;
+							12,
+							2,
+							12,
+							16,
+							4,
+							14
+						],
+						[I;
+							12,
+							2,
+							2,
+							16,
+							4,
+							4
+						]
+					],
+					tile: {
+						block: "quark:vertical_planks:3"
+					}
+				},
+				{
+					bBox: [I;
+						2,
+						0,
+						2,
+						14,
+						2,
+						14
+					],
+					tile: {
+						block: "minecraft:hay_block"
+					}
+				},
+				{
+					boxes: [
+						[I;
+							6,
+							8,
+							14,
+							10,
+							12,
+							16
+						],
+						[I;
+							6,
+							8,
+							0,
+							10,
+							12,
+							2
+						]
+					],
+					tile: {
+						invisible: 1b,
+						block: "littletiles:ltstorageblocktile"
+					}
+				},
+				{
+					boxes: [
+						[I;
+							10,
+							8,
+							6,
+							12,
+							10,
+							8
+						],
+						[I;
+							4,
+							8,
+							8,
+							6,
+							10,
+							10
+						],
+						[I;
+							3,
+							2,
+							6,
+							7,
+							5,
+							7
+						],
+						[I;
+							7,
+							4,
+							7,
+							8,
+							5,
+							11
+						],
+						[I;
+							9,
+							2,
+							4,
+							13,
+							5,
+							5
+						],
+						[I;
+							9,
+							4,
+							5,
+							13,
+							8,
+							9
+						],
+						[I;
+							13,
+							4,
+							5,
+							14,
+							5,
+							9
+						],
+						[I;
+							8,
+							2,
+							5,
+							14,
+							4,
+							9
+						],
+						[I;
+							9,
+							2,
+							9,
+							13,
+							5,
+							10
+						],
+						[I;
+							8,
+							4,
+							5,
+							9,
+							5,
+							9
+						],
+						[I;
+							2,
+							2,
+							7,
+							8,
+							4,
+							11
+						],
+						[I;
+							2,
+							4,
+							7,
+							3,
+							5,
+							11
+						],
+						[I;
+							3,
+							2,
+							11,
+							7,
+							5,
+							12
+						],
+						[I;
+							3,
+							4,
+							7,
+							7,
+							8,
+							11
+						]
+					],
+					tile: {
+						color: -8823979,
+						block: "minecraft:bone_block"
+					}
+				}],
+				min: [I;
+					0,
+					0,
+					0
+				],
+				size: [I;
+					16,
+					12,
+					16
+				],
+				display: {
+					Name: "Pair of Friesian Eggs"
+				},
+				count: 31,
+				structure: {
+					stackSizeLimit: 64,
+					invisibleStorage: 1b,
+					lastSlot: 0,
+					name: "Pair of Friesian Eggs",
+					filled: 0,
+					numberOfSlots: 2,
+					id: "storage",
+					accessed: 0,
+					inventory: {
+						size: 2,
+						slot1: {
+							Count: 1b,
+							id: "animania:entity_egg_bull_friesian",
+							Damage: 0s
+						},
+						slot0: {
+							Count: 1b,
+							id: "animania:entity_egg_cow_friesian",
+							Damage: 0s
+						}
+					},
+					inventorySize: 128
+				}
+			}
+		}
+	},
+	{
+		item: {
+			id: "littletiles:multitiles",
+			tag: {
+				tiles: [{
+					boxes: [
+						[I;
+							2,
+							0,
+							0,
+							14,
+							2,
+							2
+						],
+						[I;
+							2,
+							0,
+							14,
+							14,
+							2,
+							16
+						],
+						[I;
+							2,
+							6,
+							0,
+							14,
+							8,
+							2
+						],
+						[I;
+							2,
+							6,
+							14,
+							14,
+							8,
+							16
+						],
+						[I;
+							2,
+							2,
+							0,
+							4,
+							6,
+							2
+						],
+						[I;
+							12,
+							2,
+							0,
+							14,
+							6,
+							2
+						],
+						[I;
+							12,
+							2,
+							14,
+							14,
+							6,
+							16
+						],
+						[I;
+							2,
+							2,
+							14,
+							4,
+							6,
+							16
+						],
+						[I;
+							0,
+							0,
+							2,
+							2,
+							2,
+							14
+						],
+						[I;
+							14,
+							0,
+							2,
+							16,
+							2,
+							14
+						],
+						[I;
+							0,
+							2,
+							2,
+							4,
+							4,
+							4
+						],
+						[I;
+							0,
+							2,
+							12,
+							4,
+							4,
+							14
+						],
+						[I;
+							12,
+							2,
+							12,
+							16,
+							4,
+							14
+						],
+						[I;
+							12,
+							2,
+							2,
+							16,
+							4,
+							4
+						]
+					],
+					tile: {
+						block: "quark:vertical_planks:3"
+					}
+				},
+				{
+					bBox: [I;
+						2,
+						0,
+						2,
+						14,
+						2,
+						14
+					],
+					tile: {
+						block: "minecraft:hay_block"
+					}
+				},
+				{
+					boxes: [
+						[I;
+							6,
+							8,
+							14,
+							10,
+							12,
+							16
+						],
+						[I;
+							6,
+							8,
+							0,
+							10,
+							12,
+							2
+						]
+					],
+					tile: {
+						invisible: 1b,
+						block: "littletiles:ltstorageblocktile"
+					}
+				},
+				{
+					boxes: [
+						[I;
+							2,
+							2,
+							7,
+							8,
+							4,
+							11
+						],
+						[I;
+							2,
+							4,
+							7,
+							3,
+							5,
+							11
+						],
+						[I;
+							3,
+							4,
+							7,
+							7,
+							8,
+							11
+						],
+						[I;
+							4,
+							8,
+							8,
+							6,
+							10,
+							10
+						],
+						[I;
+							3,
+							2,
+							6,
+							7,
+							5,
+							7
+						],
+						[I;
+							3,
+							2,
+							11,
+							7,
+							5,
+							12
+						],
+						[I;
+							7,
+							4,
+							7,
+							8,
+							5,
+							11
+						],
+						[I;
+							9,
+							2,
+							9,
+							13,
+							5,
+							10
+						],
+						[I;
+							8,
+							2,
+							5,
+							14,
+							4,
+							9
+						],
+						[I;
+							8,
+							4,
+							5,
+							9,
+							5,
+							9
+						],
+						[I;
+							9,
+							4,
+							5,
+							13,
+							8,
+							9
+						],
+						[I;
+							13,
+							4,
+							5,
+							14,
+							5,
+							9
+						],
+						[I;
+							10,
+							8,
+							6,
+							12,
+							10,
+							8
+						],
+						[I;
+							9,
+							2,
+							4,
+							13,
+							5,
+							5
+						]
+					],
+					tile: {
+						color: -13616815,
+						block: "minecraft:bone_block"
+					}
+				}],
+				min: [I;
+					0,
+					0,
+					0
+				],
+				size: [I;
+					16,
+					12,
+					16
+				],
+				display: {
+					Name: "Pair of Holstein Eggs"
+				},
+				count: 31,
+				structure: {
+					stackSizeLimit: 64,
+					invisibleStorage: 1b,
+					lastSlot: 0,
+					name: "Pair of Holstein Eggs",
+					filled: 0,
+					numberOfSlots: 2,
+					id: "storage",
+					accessed: 0,
+					inventory: {
+						size: 2,
+						slot1: {
+							Count: 1b,
+							id: "animania:entity_egg_bull_holstein",
+							Damage: 0s
+						},
+						slot0: {
+							Count: 1b,
+							id: "animania:entity_egg_cow_holstein",
+							Damage: 0s
+						}
+					},
+					inventorySize: 128
+				}
+			}
+		}
+	}]
+}

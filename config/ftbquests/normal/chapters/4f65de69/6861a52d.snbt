@@ -1,0 +1,21 @@
+{
+	title: "{bq.quest1069.name}",
+	icon: "scalinghealth:difficultychanger 1 1",
+	x: 0.625d,
+	y: 6.0d,
+	text: [
+		"{bq.quest1069.desc}"
+	],
+	dependencies: [
+		"649bcf3e"
+	],
+	tasks: [{
+		uid: "1563774a",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "59625379",
+		type: "xp_levels",
+		xp_levels: 3
+	}]
+}

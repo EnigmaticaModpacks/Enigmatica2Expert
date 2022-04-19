@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest160.name}",
+	icon: "astralsorcery:itemhandtelescope",
+	x: 0.8333333333333333d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest160.desc}"
+	],
+	dependencies: [
+		"580bb684"
+	],
+	tasks: [{
+		uid: "3285a3d4",
+		type: "item",
+		items: [{
+			item: "astralsorcery:itemhandtelescope"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "22c2062d",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,18 @@
+{
+	title: "{bq.quest572.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "deepmoblearning:glitch_infused_sword"
+	},
+	{
+		item: "deepmoblearning:infused_ingot_block"
+	},
+	{
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "epic"
+			}
+		}
+	}]
+}

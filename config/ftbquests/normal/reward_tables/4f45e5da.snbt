@@ -1,0 +1,10 @@
+{
+	title: "{bq.quest756.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "iceandfire:fire_dragon_heart"
+	},
+	{
+		item: "iceandfire:ice_dragon_heart"
+	}]
+}

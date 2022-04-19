@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest287.name}",
+	icon: "forestry:engine_clockwork",
+	x: -6.166666666666667d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest287.desc}"
+	],
+	dependencies: [
+		"383eccde"
+	],
+	tasks: [{
+		uid: "86d91ea1",
+		type: "item",
+		items: [{
+			item: "forestry:engine_clockwork"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "69f27be8",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

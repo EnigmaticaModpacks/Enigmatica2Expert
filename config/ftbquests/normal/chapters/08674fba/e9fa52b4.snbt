@@ -1,0 +1,63 @@
+{
+	title: "{bq.quest438.name}",
+	icon: "advancedrocketry:guidancecomputer",
+	x: 14.166666666666666d,
+	y: 3.8333333333333335d,
+	text: [
+		"{bq.quest438.desc}"
+	],
+	dependencies: [
+		"dc1e6896",
+		"3db2611b"
+	],
+	tasks: [{
+		uid: "cf1aa704",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:guidancecomputer"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "2b345853",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:planetidchip"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "4885c630",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:seat"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "4ea0dbc6",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:fueltank"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "8b440713",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:rocketmotor"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "2321b287",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

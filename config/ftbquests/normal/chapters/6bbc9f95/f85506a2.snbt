@@ -1,0 +1,34 @@
+{
+	title: "{bq.quest650.name}",
+	icon: "thaumcraft:smelter_basic",
+	x: 0.6666666666666666d,
+	y: 8.5d,
+	text: [
+		"{bq.quest650.desc}"
+	],
+	dependencies: [
+		"4f409b3c"
+	],
+	size: 1.3333333333333333d,
+	tasks: [{
+		uid: "71d672d3",
+		type: "item",
+		items: [{
+			item: "thaumcraft:smelter_basic"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "7e88751b",
+		type: "item",
+		items: [{
+			item: "thaumcraft:alembic"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "42e38547",
+		type: "choice",
+		table: 47
+	}]
+}

@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest259.name}",
+	icon: "rftools:elevator",
+	x: -3.958333333333333d,
+	y: 1.6666666666666667d,
+	text: [
+		"{bq.quest259.desc}"
+	],
+	dependencies: [
+		"1ffbfc54"
+	],
+	tasks: [{
+		uid: "f4f95271",
+		type: "item",
+		items: [{
+			item: "rftools:elevator"
+		}],
+		
+	},
+	{
+		uid: "7e86bb4c",
+		type: "item",
+		items: [{
+			item: "rftools:elevator_button_module"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "1192ba6b",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,34 @@
+{
+	title: "{bq.quest312.name}",
+	icon: "extrautils2:indexerremote",
+	x: 6.666666666666667d,
+	y: 8.5d,
+	text: [
+		"{bq.quest312.desc}"
+	],
+	dependencies: [
+		"e31eaec7"
+	],
+	tasks: [{
+		uid: "957cf430",
+		type: "item",
+		items: [{
+			item: "extrautils2:indexer"
+		}],
+		
+	},
+	{
+		uid: "c6ff1b40",
+		type: "item",
+		items: [{
+			item: "extrautils2:indexerremote"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "764429d6",
+		type: "item",
+		item: "actuallyadditions:block_giant_chest",
+		count: 3
+	}]
+}

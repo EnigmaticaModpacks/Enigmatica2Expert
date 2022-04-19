@@ -1,0 +1,29 @@
+{
+	title: "{bq.quest1.name}",
+	icon: "storagedrawers:upgrade_creative 1 1",
+	x: 3.8333333333333335d,
+	y: 9.583333333333332d,
+	text: [
+		"{bq.quest1.desc}"
+	],
+	dependencies: [
+		"b3f8d4d0",
+		"b3f18be6",
+		"5bed1422"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "b0ae1371",
+		type: "item",
+		items: [{
+			item: "storagedrawers:upgrade_creative 1 1"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "821225aa",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has completed Enigmatica 2: Expert - Extended, congratulations!"
+	}]
+}

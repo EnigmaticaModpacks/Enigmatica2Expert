@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest1049.name}",
+	icon: "cyclicmagic:wand_hypno",
+	x: 0.16666666666666669d,
+	y: 15.5d,
+	text: [
+		"{bq.quest1049.desc}"
+	],
+	dependencies: [
+		"d5c22de0"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "67d3db76",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:wand_hypno"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e5b49543",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

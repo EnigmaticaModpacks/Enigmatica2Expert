@@ -1,0 +1,26 @@
+{
+	title: "{bq.quest359.name}",
+	icon: "tconstruct:materials 1 50",
+	x: 6.416666666666666d,
+	y: -0.37499999999999956d,
+	text: [
+		"{bq.quest359.desc}"
+	],
+	dependencies: [
+		"e93a2e6f"
+	],
+	tasks: [{
+		uid: "f51c5019",
+		type: "item",
+		items: [{
+			item: "tconstruct:materials 1 50"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "b204007b",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has obtained the Creative Modifier!"
+	}]
+}

@@ -1,0 +1,108 @@
+{
+	title: "{bq.quest920.name}",
+	icon: {
+		id: "simple_trophies:trophy",
+		tag: {
+			TrophyColorGreen: 171,
+			TrophyShowsTooltip: 1b,
+			TrophyVariant: "gold",
+			TrophyItem: {
+				Count: 1b,
+				id: "extrautils2:suncrystal",
+				Damage: 0s
+			},
+			TrophyColorBlue: 55,
+			TrophyColorRed: 228,
+			TrophyName: "§eExtraUtils Master Trophy§r"
+		}
+	},
+	x: 10.5d,
+	y: 5.25d,
+	text: [
+		"{bq.quest920.desc}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"fc937313",
+		"d754f8d5",
+		"4b5cf25e",
+		"c4908819",
+		"45d1b85a",
+		"dff12c7a",
+		"d2841c88",
+		"1a9f818e",
+		"eefe526c",
+		"6ec3f2d7",
+		"4f2c09bb",
+		"3bfb14e3",
+		"9bdf45c4",
+		"a0563976",
+		"a9db8bf5",
+		"e12a959a",
+		"10e6da55",
+		"7e7c04c8",
+		"0e08c73f",
+		"a1b2fa88",
+		"fceeb055",
+		"1b03d73c",
+		"8a6fa850",
+		"cb78833d",
+		"cf5ca21a",
+		"f03c33fb",
+		"cdec89a5",
+		"e255519c",
+		"ae7156bb",
+		"f991b9da",
+		"f988aa47",
+		"0d9b37cb",
+		"27190249",
+		"29946b47",
+		"c7fa44ae",
+		"76163340",
+		"7bfcfcaa",
+		"e31eaec7",
+		"f31c5840",
+		"5d2cea73",
+		"c173b312",
+		"83a16544",
+		"fe8365e5",
+		"462331c9",
+		"98a7844c",
+		"802f76c1",
+		"821ffa70",
+		"9ed42dbb",
+		"42b1f141",
+		"d4c926b1",
+		"1414056f",
+		"5c3fef42",
+		"e646c338"
+	],
+	size: 1.5d,
+	rewards: [{
+		uid: "99c45182",
+		type: "item",
+		auto: "enabled",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 171,
+				TrophyShowsTooltip: 1b,
+				TrophyVariant: "gold",
+				TrophyItem: {
+					Count: 1b,
+					id: "extrautils2:suncrystal",
+					Damage: 0s
+				},
+				TrophyColorBlue: 55,
+				TrophyColorRed: 228,
+				TrophyName: "§eExtraUtils Master Trophy§r"
+			}
+		}
+	},
+	{
+		uid: "8fda17ec",
+		type: "command",
+		auto: "invisible",
+		command: "/say §l@p§r has fully completed the §n§eExtra Utilities§r chapter!§r ```Congrats!```"
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest176.name}",
+	icon: "mekanism:reinforcedalloy",
+	x: 3.5d,
+	y: 6.5d,
+	text: [
+		"{bq.quest176.desc}"
+	],
+	dependencies: [
+		"48923a31"
+	],
+	tasks: [{
+		uid: "3fedbdd3",
+		type: "item",
+		items: [{
+			item: "mekanism:reinforcedalloy"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "a4a88db0",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

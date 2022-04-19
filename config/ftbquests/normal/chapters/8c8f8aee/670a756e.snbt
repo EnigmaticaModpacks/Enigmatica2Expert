@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest314.name}",
+	icon: "actuallyadditions:block_greenhouse_glass",
+	x: 3.6666666666666665d,
+	y: 3.5d,
+	text: [
+		"{bq.quest314.desc}"
+	],
+	dependencies: [
+		"bebab91b"
+	],
+	tasks: [{
+		uid: "a8f94558",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_greenhouse_glass"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "9e7fca30",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

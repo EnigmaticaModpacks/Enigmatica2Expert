@@ -1,0 +1,33 @@
+{
+	title: "{bq.quest55.name}",
+	icon: {
+		id: "tconstruct:sharpening_kit",
+		tag: {
+			Material: "manyullyn"
+		}
+	},
+	x: 9.625d,
+	y: 3.5d,
+	text: [
+		"{bq.quest55.desc}"
+	],
+	dependencies: [
+		"b1868c44"
+	],
+	tasks: [{
+		uid: "24f98b9c",
+		type: "item",
+		items: [{
+			id: "tconstruct:sharpening_kit",
+			tag: {
+				Material: "manyullyn"
+			}
+		}],
+		
+	}],
+	rewards: [{
+		uid: "ad7e39ec",
+		type: "choice",
+		table: 26
+	}]
+}

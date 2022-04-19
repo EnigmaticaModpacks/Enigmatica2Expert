@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest701.name}",
+	icon: "industrialforegoing:animal_independence_selector",
+	x: -2.5d,
+	y: 5.166666666666667d,
+	text: [
+		"{bq.quest701.desc}"
+	],
+	dependencies: [
+		"6ad20599"
+	],
+	tasks: [{
+		uid: "a104ea43",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:animal_independence_selector"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "7b1885ac",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

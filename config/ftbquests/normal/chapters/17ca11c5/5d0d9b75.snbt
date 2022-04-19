@@ -1,0 +1,41 @@
+{
+	title: "{bq.quest29.name}",
+	icon: {
+		id: "avaritia:infinity_pickaxe",
+		tag: {
+			ench: [{
+				lvl: 10s,
+				id: 35s
+			}]
+		}
+	},
+	x: 5.958333333333333d,
+	y: 10.958333333333332d,
+	text: [
+		"{bq.quest29.desc}"
+	],
+	dependencies: [
+		"5b1cc401"
+	],
+	size: 1.25d,
+	tasks: [{
+		uid: "0e5497d6",
+		type: "item",
+		items: [{
+			id: "avaritia:infinity_pickaxe",
+			tag: {
+				ench: [{
+					lvl: 10s,
+					id: 35s
+				}]
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "81cd1349",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has obtained the World Breaker!"
+	}]
+}

@@ -1,0 +1,50 @@
+{
+	title: "{bq.quest552.name}",
+	icon: {
+		id: "draconicevolution:draconic_pick",
+		tag: {
+			Energy: 16000000
+		},
+		ForgeCaps: {
+			Parent: {
+				Items: [],
+				Size: 18
+			}
+		}
+	},
+	x: 3.5d,
+	y: 9.5d,
+	text: [
+		"{bq.quest552.desc}"
+	],
+	dependencies: [
+		"ffc09ba6"
+	],
+	tasks: [{
+		uid: "2564ba91",
+		type: "item",
+		items: [{
+			id: "draconicevolution:draconic_pick",
+			tag: {
+				Energy: 16000000
+			},
+			ForgeCaps: {
+				Parent: {
+					Items: [],
+					Size: 18
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9b1f5137",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

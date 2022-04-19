@@ -1,0 +1,16 @@
+{
+	title: "{bq.quest763.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "minecraft:snowball",
+		count: 64
+	},
+	{
+		item: "minecraft:ice",
+		count: 16
+	},
+	{
+		item: "biomesoplenty:hard_ice",
+		count: 16
+	}]
+}

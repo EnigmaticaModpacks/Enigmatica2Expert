@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest816.name}",
+	icon: "industrialforegoing:villager_trade_exchanger",
+	x: 5.0d,
+	y: 2.8333333333333335d,
+	text: [
+		"{bq.quest816.desc}"
+	],
+	dependencies: [
+		"0060934f"
+	],
+	tasks: [{
+		uid: "6d71f1eb",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:villager_trade_exchanger"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4d1bbace",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

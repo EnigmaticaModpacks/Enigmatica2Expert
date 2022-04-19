@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest173.name}",
+	icon: "mekanism:basicblock 1 8",
+	x: 0.8333333333333333d,
+	y: 3.5d,
+	text: [
+		"{bq.quest173.desc}"
+	],
+	dependencies: [
+		"bd2ed1f2"
+	],
+	rewards: [{
+		uid: "1d2a33c5",
+		type: "item",
+		item: {
+			id: "mekanism:configurator",
+			tag: {
+				mekData: {
+					energyStored: 60000.0d
+				}
+			}
+		}
+	},
+	{
+		uid: "92c80612",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has begun the Mekanism questline!"
+	}]
+}

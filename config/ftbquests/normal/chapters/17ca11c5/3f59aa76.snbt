@@ -1,0 +1,46 @@
+{
+	title: "{bq.quest700.name}",
+	icon: "industrialforegoing:black_hole_controller_reworked",
+	x: 5.125d,
+	y: -1.9999999999999996d,
+	text: [
+		"{bq.quest700.desc}"
+	],
+	dependencies: [
+		"b4b83088"
+	],
+	tasks: [{
+		uid: "43f6fe0c",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:black_hole_controller_reworked"
+		}],
+		
+	},
+	{
+		uid: "ca3fd4ed",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:black_hole_unit"
+		}],
+		
+	},
+	{
+		uid: "017ec299",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:black_hole_tank"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "cd28ae85",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

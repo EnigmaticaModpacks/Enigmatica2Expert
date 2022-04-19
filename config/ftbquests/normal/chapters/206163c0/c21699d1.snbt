@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest793.name}",
+	icon: "forestry:alveary.plain",
+	x: -0.8333333333333333d,
+	y: -0.5d,
+	text: [
+		"{bq.quest793.desc}"
+	],
+	dependencies: [
+		"4007e26a"
+	],
+	tasks: [{
+		uid: "4d55ede7",
+		type: "item",
+		items: [{
+			item: "forestry:alveary.plain"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "29a3d824",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

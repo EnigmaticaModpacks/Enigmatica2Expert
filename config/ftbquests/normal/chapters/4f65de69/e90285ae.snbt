@@ -1,0 +1,42 @@
+{
+	title: "{bq.quest52.name}",
+	icon: {
+		id: "tconstruct:sharpening_kit",
+		tag: {
+			Material: "osmium"
+		}
+	},
+	x: 5.125d,
+	y: 3.5d,
+	text: [
+		"{bq.quest52.desc}"
+	],
+	dependencies: [
+		"dabc815c"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "565035ed",
+		type: "item",
+		items: [{
+			item: "mekanism:oreblock"
+		}],
+		count: 2L,
+		
+	},
+	{
+		uid: "59d716f9",
+		type: "item",
+		items: [{
+			id: "tconstruct:sharpening_kit",
+			tag: {
+				Material: "pigiron"
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "172e062a",
+		type: "choice",
+		table: 24
+	}]
+}

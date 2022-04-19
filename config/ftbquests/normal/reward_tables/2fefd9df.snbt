@@ -1,0 +1,18 @@
+{
+	title: "{bq.quest994.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	},
+	{
+		item: "randomthings:chunkanalyzer"
+	},
+	{
+		item: "randomthings:potionvaporizer"
+	}]
+}

@@ -1,0 +1,97 @@
+{
+	title: "{bq.quest328.name}",
+	icon: {
+		id: "simple_trophies:trophy",
+		tag: {
+			TrophyColorGreen: 110,
+			TrophyShowsTooltip: 1b,
+			TrophyVariant: "gold",
+			TrophyItem: {
+				Count: 1b,
+				id: "ic2:te",
+				Damage: 2s
+			},
+			TrophyColorBlue: 107,
+			TrophyColorRed: 175,
+			TrophyName: "§fIC2 Master Trophy§r"
+		}
+	},
+	x: 8.25d,
+	y: 7.5d,
+	text: [
+		"{bq.quest328.desc}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"d1c08d01",
+		"b3a71de4",
+		"2293a6d7",
+		"e36465a1",
+		"0d64a022",
+		"27ed5f6b",
+		"b67067b9",
+		"2231f97b",
+		"83987f93",
+		"cb6770ac",
+		"83c7fb15",
+		"484beb1e",
+		"8a09821f",
+		"26132304",
+		"3a2acebd",
+		"cae88f3f",
+		"b522c8b8",
+		"059b39c7",
+		"3c0659d8",
+		"4d36c8e9",
+		"81333c97",
+		"533c2a59",
+		"3fecfe87",
+		"96a7cd4a",
+		"ebffced2",
+		"a1d7ecb9",
+		"f671bf9e",
+		"20506ca0",
+		"77721ec3",
+		"e9d7d5e6",
+		"ef0c003d",
+		"b2f25a00",
+		"f77e75cc",
+		"94ee86d9",
+		"a6052a32",
+		"c26c77d4",
+		"658445bd",
+		"50cc8231",
+		"68b9a584",
+		"69fc0a81",
+		"ad46477b",
+		"80c99c37"
+	],
+	size: 1.5d,
+	rewards: [{
+		uid: "72cfcdfd",
+		type: "item",
+		auto: "enabled",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 110,
+				TrophyShowsTooltip: 1b,
+				TrophyVariant: "gold",
+				TrophyItem: {
+					Count: 1b,
+					id: "ic2:te",
+					Damage: 2s
+				},
+				TrophyColorBlue: 107,
+				TrophyColorRed: 175,
+				TrophyName: "§fIC2 Master Trophy§r"
+			}
+		}
+	},
+	{
+		uid: "c8ad188e",
+		type: "command",
+		auto: "invisible",
+		command: "/say §l@p§r has fully completed the §n§fIndustrialCraft§r chapter!§r ```Congrats!```"
+	}]
+}

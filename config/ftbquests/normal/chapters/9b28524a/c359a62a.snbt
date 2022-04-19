@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest614.name}",
+	icon: {
+		id: "bloodmagic:blood_orb",
+		tag: {
+			orb: "bloodmagic:apprentice"
+		}
+	},
+	x: 6.833333333333333d,
+	y: 4.5d,
+	text: [
+		"{bq.quest614.desc}"
+	],
+	dependencies: [
+		"f1f052a5"
+	],
+	tasks: [{
+		uid: "2b93e45d",
+		type: "item",
+		items: [{
+			id: "bloodmagic:blood_orb",
+			tag: {
+				orb: "bloodmagic:apprentice"
+			}
+		}],
+		
+	}],
+	rewards: [{
+		uid: "acf5e8a8",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

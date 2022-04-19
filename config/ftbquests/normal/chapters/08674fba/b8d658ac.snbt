@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest458.name}",
+	icon: "advancedrocketry:hovercraft",
+	x: 15.666666666666666d,
+	y: 9.833333333333334d,
+	text: [
+		"{bq.quest458.desc}"
+	],
+	dependencies: [
+		"e7f8d37c"
+	],
+	tasks: [{
+		uid: "ee17975c",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:hovercraft"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "07b23f6a",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

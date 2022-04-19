@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest127.name}",
+	icon: "actuallyadditions:item_worm",
+	x: -2.1666666666666665d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest127.desc}"
+	],
+	dependencies: [
+		"dae9f45f"
+	],
+	tasks: [{
+		uid: "b9e0b106",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_worm"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "afcefd1f",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

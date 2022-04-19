@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest627.name}",
+	icon: "bloodmagic:ritual_controller",
+	x: 5.0d,
+	y: 1.8333333333333333d,
+	text: [
+		"{bq.quest627.desc}"
+	],
+	dependencies: [
+		"f1f052a5"
+	],
+	tasks: [{
+		uid: "f33081ef",
+		type: "item",
+		items: [{
+			item: "bloodmagic:ritual_controller"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "2fc88fd5",
+		type: "item",
+		items: [{
+			item: "bloodmagic:ritual_stone 8"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "217a4bb5",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

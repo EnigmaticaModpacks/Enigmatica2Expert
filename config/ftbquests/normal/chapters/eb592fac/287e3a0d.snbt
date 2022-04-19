@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest900.name}",
+	icon: "rftools:crafter1",
+	x: -3.958333333333333d,
+	y: 2.8333333333333335d,
+	text: [
+		"{bq.quest900.desc}"
+	],
+	dependencies: [
+		"094a95d2",
+		"3ea508f7"
+	],
+	tasks: [{
+		uid: "7651f2b6",
+		type: "item",
+		items: [{
+			item: "rftools:crafter1"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3c64d34e",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

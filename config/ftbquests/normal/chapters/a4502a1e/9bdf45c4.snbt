@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest115.name}",
+	icon: "extrautils2:goldenlasso",
+	x: 1.9375d,
+	y: 1.7916666666666667d,
+	text: [
+		"{bq.quest115.desc}"
+	],
+	dependencies: [
+		"a1b2fa88"
+	],
+	size: 0.8333333333333334d,
+	tasks: [{
+		uid: "cdf16c72",
+		type: "item",
+		items: [{
+			item: "extrautils2:goldenlasso"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "f6ac256c",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

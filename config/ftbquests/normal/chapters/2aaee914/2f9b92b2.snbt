@@ -1,0 +1,34 @@
+{
+	title: "{bq.quest211.name}",
+	icon: "mekanism:machineblock2 1 4",
+	x: 4.833333333333333d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest211.desc}"
+	],
+	dependencies: [
+		"d0c5b8a8"
+	],
+	tasks: [{
+		uid: "425ff0a4",
+		type: "item",
+		items: [{
+			id: "mekanism:machineblock2",
+			Damage: 4s,
+			tag: {
+				mekData: {}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "431473a1",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

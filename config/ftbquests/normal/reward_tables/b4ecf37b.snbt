@@ -1,0 +1,19 @@
+{
+	title: "{bq.quest941.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "endreborn:dragon_scales",
+		count: 16
+	},
+	{
+		item: "endreborn:catalyst"
+	},
+	{
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "epic"
+			}
+		}
+	}]
+}

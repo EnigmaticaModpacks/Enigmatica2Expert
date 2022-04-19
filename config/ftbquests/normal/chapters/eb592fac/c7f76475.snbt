@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest691.name}",
+	icon: "rftoolsdim:dimension_builder",
+	x: 5.166666666666667d,
+	y: 2.5d,
+	text: [
+		"{bq.quest691.desc}"
+	],
+	dependencies: [
+		"7c3fd1d6"
+	],
+	size: 1.3333333333333333d,
+	tasks: [{
+		uid: "63e37927",
+		type: "item",
+		items: [{
+			item: "rftoolsdim:dimension_builder"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "a934ff24",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "legendary"
+			}
+		}
+	}]
+}

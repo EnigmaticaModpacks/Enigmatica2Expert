@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest899.name}",
+	icon: "rftools:booster",
+	x: -4.958333333333333d,
+	y: 3.8333333333333335d,
+	text: [
+		"{bq.quest899.desc}"
+	],
+	dependencies: [
+		"094a95d2",
+		"3ea508f7"
+	],
+	tasks: [{
+		uid: "dcbc8e44",
+		type: "item",
+		items: [{
+			item: "rftools:booster"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "5de92f10",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

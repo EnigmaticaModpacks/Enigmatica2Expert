@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest753.name}",
+	icon: "actuallyadditions:block_lava_factory_controller",
+	x: 3.6666666666666665d,
+	y: 8.5d,
+	text: [
+		"{bq.quest753.desc}"
+	],
+	dependencies: [
+		"0ebc3d1d"
+	],
+	tasks: [{
+		uid: "839e6ffb",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_lava_factory_controller"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c836f581",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

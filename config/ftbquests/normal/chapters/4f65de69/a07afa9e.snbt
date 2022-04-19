@@ -1,0 +1,97 @@
+{
+	title: "{bq.quest897.name}",
+	icon: {
+		id: "tconstruct:pickaxe",
+		Damage: 1s,
+		tag: {
+			StatsOriginal: {
+				AttackSpeedMultiplier: 1.0f,
+				MiningSpeed: 1.5f,
+				FreeModifiers: 3,
+				Durability: 1,
+				HarvestLevel: 0,
+				Attack: 2.25f
+			},
+			Special: {
+				Categories: [
+					"aoe",
+					"tool",
+					"harvest"
+				]
+			},
+			Stats: {
+				AttackSpeedMultiplier: 1.0f,
+				MiningSpeed: 1.5f,
+				FreeModifiers: 2,
+				Durability: 1,
+				HarvestLevel: 0,
+				Attack: 2.25f,
+				Broken: 1b
+			},
+			Modifiers: [{
+				identifier: "cheap",
+				color: -6710887,
+				level: 1
+			},
+			{
+				identifier: "cheapskate",
+				color: -6710887,
+				level: 1
+			},
+			{
+				identifier: "toolleveling",
+				color: 16777215,
+				level: 1,
+				bonus_modifiers: 0,
+				xp: 1
+			}],
+			TinkerData: {
+				Materials: [
+					"stone",
+					"stone",
+					"stone"
+				],
+				Modifiers: [
+					"toolleveling"
+				]
+			},
+			Traits: [
+				"cheap",
+				"cheapskate",
+				"toolleveling"
+			]
+		},
+		ForgeCaps: {
+			"plustic:fruitsalad_cap": {
+				Items: [],
+				Size: 5
+			},
+			"plustic:": {
+				Items: [],
+				Size: 1
+			},
+			"plustic:musicofthespheres_cap": {
+				Items: [],
+				Size: 1
+			}
+		}
+	},
+	x: 3.625d,
+	y: 1.0d,
+	text: [
+		"{bq.quest897.desc}"
+	],
+	dependencies: [
+		"dabc815c"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "b207ac19",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "0efb6374",
+		type: "xp_levels",
+		xp_levels: 3
+	}]
+}

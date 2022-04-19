@@ -1,0 +1,39 @@
+{
+	title: "{bq.quest369.name}",
+	icon: {
+		id: "botania:specialflower",
+		tag: {
+			type: "jadedAmaranthus"
+		}
+	},
+	x: 18.166666666666668d,
+	y: 2.8333333333333335d,
+	text: [
+		"{bq.quest369.desc}"
+	],
+	dependencies: [
+		"5fe4c911",
+		"5672d99b"
+	],
+	tasks: [{
+		uid: "1be12e49",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "jadedAmaranthus"
+			}
+		}],
+		
+	}],
+	rewards: [{
+		uid: "cb100aee",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

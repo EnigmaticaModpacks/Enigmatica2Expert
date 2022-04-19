@@ -1,0 +1,33 @@
+{
+	title: "{bq.quest646.name}",
+	icon: "thaumcraft:smelter_vent",
+	x: 2.0d,
+	y: 11.833333333333334d,
+	text: [
+		"{bq.quest646.desc}"
+	],
+	dependencies: [
+		"075ca176"
+	],
+	tasks: [{
+		uid: "a0c41864",
+		type: "item",
+		items: [{
+			item: "thaumcraft:smelter_vent"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "93d7782e",
+		type: "item",
+		items: [{
+			item: "thaumcraft:smelter_aux"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "967d5a36",
+		type: "choice",
+		table: 43
+	}]
+}

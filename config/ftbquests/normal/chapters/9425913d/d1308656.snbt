@@ -1,0 +1,25 @@
+{
+	title: "{bq.quest839.name}",
+	icon: "advgenerators:turbine_controller",
+	x: 7.5d,
+	y: 3.8333333333333335d,
+	text: [
+		"{bq.quest839.desc}"
+	],
+	dependencies: [
+		"e5622496"
+	],
+	tasks: [{
+		uid: "603ffbad",
+		type: "item",
+		items: [{
+			item: "advgenerators:turbine_controller"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "97b12a21",
+		type: "choice",
+		table: 108
+	}]
+}

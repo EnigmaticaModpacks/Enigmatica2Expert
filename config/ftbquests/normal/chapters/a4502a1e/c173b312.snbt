@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest346.name}",
+	icon: {
+		id: "extrautils2:machine",
+		tag: {
+			Type: "extrautils2:generator_pink"
+		}
+	},
+	x: 13.0d,
+	y: 3.0d,
+	text: [
+		"{bq.quest346.desc}"
+	],
+	dependencies: [
+		"f31c5840"
+	],
+	tasks: [{
+		uid: "ab88d152",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:generator_pink"
+			}
+		}],
+		
+	}],
+	rewards: [{
+		uid: "279d9127",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

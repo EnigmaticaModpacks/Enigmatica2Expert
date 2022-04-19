@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest695.name}",
+	icon: "rftoolsdim:dimlet_parcel",
+	x: 6.666666666666667d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest695.desc}"
+	],
+	dependencies: [
+		"501222cc"
+	],
+	tasks: [{
+		uid: "e14bd05a",
+		type: "item",
+		items: [{
+			item: "rftoolsdim:dimlet_parcel"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "ad59314f",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

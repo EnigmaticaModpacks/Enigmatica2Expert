@@ -1,0 +1,28 @@
+{
+	title: "{bq.quest771.name}",
+	icon: {
+		id: "draconicevolution:mob_soul",
+		tag: {
+			EntityName: "rats:black_death"
+		}
+	},
+	x: -0.5d,
+	y: 2.5d,
+	text: [
+		"{bq.quest771.desc}"
+	],
+	dependencies: [
+		"ab77ca11"
+	],
+	tasks: [{
+		uid: "bebc070a",
+		type: "kill",
+		entity: "rats:black_death",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "bde01118",
+		type: "choice",
+		table: 91
+	}]
+}

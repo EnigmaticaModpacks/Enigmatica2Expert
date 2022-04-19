@@ -1,0 +1,41 @@
+{
+	title: "{bq.quest2.name}",
+	icon: {
+		id: "mekanism:machineblock2",
+		Damage: 11s,
+		tag: {
+			tier: 4,
+			mekData: {}
+		}
+	},
+	x: 3.791666666666667d,
+	y: 7.541666666666668d,
+	text: [
+		"{bq.quest2.desc}"
+	],
+	dependencies: [
+		"7e987598",
+		"b3f8d4d0",
+		"3bcf46b6"
+	],
+	size: 1.1666666666666667d,
+	tasks: [{
+		uid: "4f624d71",
+		type: "item",
+		items: [{
+			id: "mekanism:machineblock2",
+			Damage: 11s,
+			tag: {
+				tier: 4,
+				mekData: {}
+			}
+		}],
+		
+	}],
+	rewards: [{
+		uid: "b9164859",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has obtained the Creative Tank!"
+	}]
+}

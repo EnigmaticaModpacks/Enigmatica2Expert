@@ -1,0 +1,37 @@
+{
+	title: "{bq.quest254.name}",
+	icon: "libvulpes:structuremachine",
+	x: 3.5d,
+	y: 5.5d,
+	text: [
+		"{bq.quest254.desc}"
+	],
+	dependencies: [
+		"bd7fc30c"
+	],
+	tasks: [{
+		uid: "3a1acdad",
+		type: "item",
+		items: [{
+			item: "libvulpes:structuremachine"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "53f772fb",
+		type: "item",
+		item: "advancedrocketry:fueltank",
+		count: 4
+	},
+	{
+		uid: "83929730",
+		type: "item",
+		item: "advancedrocketry:seat"
+	},
+	{
+		uid: "41ec3302",
+		type: "item",
+		item: "libvulpes:productingot 1 7",
+		count: 16
+	}]
+}

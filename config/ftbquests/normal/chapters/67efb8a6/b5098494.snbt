@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest523.name}",
+	icon: "draconicevolution:awakened_core",
+	x: 8.5d,
+	y: 6.75d,
+	text: [
+		"{bq.quest523.desc}"
+	],
+	dependencies: [
+		"64f8083b"
+	],
+	tasks: [{
+		uid: "8f1f89a8",
+		type: "item",
+		items: [{
+			item: "draconicevolution:awakened_core"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "57ce5510",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

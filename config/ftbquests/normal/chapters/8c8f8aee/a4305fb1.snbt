@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest308.name}",
+	icon: "actuallyadditions:item_crystal_empowered",
+	x: 1.1666666666666665d,
+	y: 7.5d,
+	text: [
+		"{bq.quest308.desc}"
+	],
+	dependencies: [
+		"20e504e1"
+	],
+	tasks: [{
+		uid: "f13098d7",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_crystal_empowered"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "46fd390a",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

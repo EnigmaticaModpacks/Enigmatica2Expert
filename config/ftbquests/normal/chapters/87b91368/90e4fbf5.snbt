@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest559.name}",
+	icon: "animania:block_hamster_wheel",
+	x: 3.4583333333333335d,
+	y: -1.25d,
+	text: [
+		"{bq.quest559.desc}"
+	],
+	dependencies: [
+		"dcb947b4"
+	],
+	tasks: [{
+		uid: "96dabb3b",
+		type: "item",
+		items: [{
+			item: "animania:block_hamster_wheel"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b983c229",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

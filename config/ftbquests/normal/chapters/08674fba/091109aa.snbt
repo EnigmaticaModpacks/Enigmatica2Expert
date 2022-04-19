@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest118.name}",
+	icon: "libvulpes:forgepowerinput",
+	x: 4.166666666666667d,
+	y: 1.875d,
+	text: [
+		"{bq.quest118.desc}"
+	],
+	dependencies: [
+		"e8c6a755"
+	],
+	size: 0.6666666666666666d,
+	tasks: [{
+		uid: "34523919",
+		type: "item",
+		items: [{
+			item: "libvulpes:forgepowerinput 2"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "5402ee2d",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

@@ -1,0 +1,26 @@
+{
+	title: "{bq.quest417.name}",
+	icon: "libvulpes:elitemotor",
+	x: 4.166666666666666d,
+	y: 2.5d,
+	text: [
+		"{bq.quest417.desc}"
+	],
+	dependencies: [
+		"1f580d88"
+	],
+	tasks: [{
+		uid: "b91eae8e",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "e0f2be64",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

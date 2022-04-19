@@ -1,0 +1,15 @@
+{
+	title: "{bq.quest745.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "minecraft:rabbit_foot",
+		count: 15
+	},
+	{
+		item: "iceandfire:diamond_hippogryph_armor"
+	},
+	{
+		item: "minecraft:rabbit_stew",
+		count: 5
+	}]
+}

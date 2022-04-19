@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest1036.name}",
+	icon: "cyclicmagic:charm_air",
+	x: -3.666666666666667d,
+	y: 20.5d,
+	text: [
+		"{bq.quest1036.desc}"
+	],
+	dependencies: [
+		"a6a64aad"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "a0d9672c",
+		type: "item",
+		items: [{
+			id: "cyclicmagic:charm_air",
+			tag: {}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "10e7b2e8",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest408.name}",
+	icon: "botania:terraformrod",
+	x: 9.166666666666666d,
+	y: 5.166666666666667d,
+	text: [
+		"{bq.quest408.desc}"
+	],
+	dependencies: [
+		"8597748f",
+		"5672d99b"
+	],
+	tasks: [{
+		uid: "b995d444",
+		type: "item",
+		items: [{
+			item: "botania:terraformrod"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "87d91e42",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

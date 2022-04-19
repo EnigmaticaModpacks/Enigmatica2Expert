@@ -1,0 +1,42 @@
+{
+	title: "{bq.quest0.name}",
+	icon: {
+		id: "mekanism:energycube",
+		tag: {
+			tier: 4,
+			mekData: {
+				energyStored: 1.7976931348623157E308d
+			}
+		}
+	},
+	x: 5.249999999999999d,
+	y: 7.541666666666668d,
+	text: [
+		"{bq.quest0.desc}"
+	],
+	dependencies: [
+		"7e987598",
+		"5bed1422"
+	],
+	size: 1.1666666666666667d,
+	tasks: [{
+		uid: "62c96351",
+		type: "item",
+		items: [{
+			id: "mekanism:energycube",
+			tag: {
+				tier: 4,
+				mekData: {
+					energyStored: 1.7976931348623157E308d
+				}
+			}
+		}],
+		
+	}],
+	rewards: [{
+		uid: "9188bef7",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has obtained the Creative Energy Cube!"
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest17.name}",
+	icon: "claybucket:unfiredclaybucket",
+	x: -2.375d,
+	y: 2.0d,
+	text: [
+		"{bq.quest17.desc}"
+	],
+	dependencies: [
+		"628df521"
+	],
+	tasks: [{
+		uid: "de353646",
+		type: "item",
+		items: [{
+			item: "claybucket:unfiredclaybucket"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "39db7808",
+		type: "choice",
+		table: 11
+	},
+	{
+		uid: "6dd35f09",
+		type: "item",
+		item: "bibliocraft:handdrill"
+	}]
+}

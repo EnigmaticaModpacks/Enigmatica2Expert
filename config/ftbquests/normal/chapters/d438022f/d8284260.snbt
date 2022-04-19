@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest1007.name}",
+	icon: "cyclicmagic:dehydrator",
+	x: -16.666666666666668d,
+	y: 15.5d,
+	text: [
+		"{bq.quest1007.desc}"
+	],
+	dependencies: [
+		"a6d357d3",
+		"37406152"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "21e6fd58",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:dehydrator"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f437ecf1",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

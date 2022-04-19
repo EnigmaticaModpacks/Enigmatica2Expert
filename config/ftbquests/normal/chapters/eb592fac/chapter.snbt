@@ -1,0 +1,10 @@
+{
+	title: "{bq.chapter15.name}",
+	icon: "rftools:builder",
+	description: [
+		"{bq.chapter15.desc}"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest628.name}",
+	icon: "bloodmagic:soul_forge",
+	x: 2.5d,
+	y: 4.166666666666666d,
+	text: [
+		"{bq.quest628.desc}"
+	],
+	dependencies: [
+		"6e05cd97"
+	],
+	tasks: [{
+		uid: "ae8d72d3",
+		type: "item",
+		items: [{
+			item: "bloodmagic:soul_forge"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3d591647",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}
