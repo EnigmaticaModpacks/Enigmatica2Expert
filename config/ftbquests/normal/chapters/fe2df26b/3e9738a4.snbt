@@ -1,0 +1,55 @@
+{
+	title: "{bq.quest847.name}",
+	icon: "threng:big_assembler 1 4",
+	x: 4.0d,
+	y: 4.0d,
+	text: [
+		"{bq.quest847.desc}"
+	],
+	dependencies: [
+		"75e96e73"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "91d6bf5b",
+		type: "item",
+		items: [{
+			item: "threng:big_assembler 1 4"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "26a53a09",
+		type: "item",
+		items: [{
+			item: "threng:big_assembler 1 3"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a6c95217",
+		type: "item",
+		items: [{
+			item: "threng:big_assembler 20"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "d4d198ae",
+		type: "item",
+		items: [{
+			item: "threng:big_assembler 6 1"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "595d5554",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

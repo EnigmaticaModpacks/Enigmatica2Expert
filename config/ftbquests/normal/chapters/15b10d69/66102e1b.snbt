@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest144.name}",
+	icon: "industrialforegoing:crop_sower",
+	x: 1.0d,
+	y: 6.0d,
+	text: [
+		"{bq.quest144.desc}"
+	],
+	dependencies: [
+		"0060934f"
+	],
+	tasks: [{
+		uid: "1815502c",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:crop_sower"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "408852a7",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

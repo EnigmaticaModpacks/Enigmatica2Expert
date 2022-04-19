@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest555.name}",
+	icon: {
+		id: "portabledrill:portable_drill",
+		ForgeCaps: {
+			"portabledrill:energy": 0
+		}
+	},
+	x: 4.5d,
+	y: 6.166666666666667d,
+	text: [
+		"{bq.quest555.desc}"
+	],
+	dependencies: [
+		"54fa3132"
+	],
+	tasks: [{
+		uid: "0ee3aa34",
+		type: "item",
+		items: [{
+			id: "portabledrill:portable_drill",
+			ForgeCaps: {
+				"portabledrill:energy": 0
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "47791776",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "epic"
+			}
+		}
+	}]
+}

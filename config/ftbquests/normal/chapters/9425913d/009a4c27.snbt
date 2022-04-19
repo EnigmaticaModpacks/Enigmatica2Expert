@@ -1,0 +1,25 @@
+{
+	title: "{bq.quest5.name}",
+	icon: "forestry:sturdy_machine",
+	x: 3.5d,
+	y: 0.5d,
+	text: [
+		"{bq.quest5.desc}"
+	],
+	dependencies: [
+		"18c9097c"
+	],
+	tasks: [{
+		uid: "af9f886d",
+		type: "item",
+		items: [{
+			item: "forestry:sturdy_machine"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "9dbd8d6d",
+		type: "choice",
+		table: 6
+	}]
+}

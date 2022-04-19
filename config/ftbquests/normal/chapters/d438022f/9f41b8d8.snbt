@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest973.name}",
+	icon: {
+		id: "openblocks:dev_null",
+		tag: {}
+	},
+	x: -6.333333333333333d,
+	y: 11.833333333333332d,
+	text: [
+		"{bq.quest973.desc}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"37406152"
+	],
+	size: 1.3333333333333333d,
+	or_tasks: true,
+	tasks: [{
+		uid: "849a351d",
+		type: "item",
+		items: [{
+			id: "openblocks:dev_null",
+			tag: {}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8d49d9ec",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

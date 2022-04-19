@@ -1,0 +1,41 @@
+{
+	title: "{bq.quest544.name}",
+	icon: {
+		id: "draconicevolution:draconium_capacitor",
+		Damage: 1s,
+		tag: {
+			Energy: 256000000
+		}
+	},
+	x: 6.5d,
+	y: 3.75d,
+	text: [
+		"{bq.quest544.desc}"
+	],
+	dependencies: [
+		"65f22360",
+		"ffa34abd"
+	],
+	tasks: [{
+		uid: "18432a92",
+		type: "item",
+		items: [{
+			id: "draconicevolution:draconium_capacitor",
+			Damage: 1s,
+			tag: {
+				Energy: 256000000
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9ba9a4c7",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "epic"
+			}
+		}
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest588.name}",
+	icon: "enderio:block_cap_bank 1 1",
+	x: 3.5d,
+	y: 2.5d,
+	text: [
+		"{bq.quest588.desc}"
+	],
+	dependencies: [
+		"3712b4f9"
+	],
+	tasks: [{
+		uid: "f60733ad",
+		type: "item",
+		items: [{
+			item: "enderio:block_cap_bank 1 1"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "860d3d65",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

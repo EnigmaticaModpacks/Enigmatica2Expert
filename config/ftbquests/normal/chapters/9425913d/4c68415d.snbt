@@ -1,0 +1,26 @@
+{
+	title: "{bq.quest1074.name}",
+	icon: "opencomputers:case1",
+	x: -0.5d,
+	y: 0.5d,
+	text: [
+		"{bq.quest1074.desc}"
+	],
+	dependencies: [
+		"ca359f03",
+		"e07d1afe"
+	],
+	tasks: [{
+		uid: "25898764",
+		type: "item",
+		items: [{
+			item: "opencomputers:case1"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "aee1fb76",
+		type: "choice",
+		table: 130
+	}]
+}

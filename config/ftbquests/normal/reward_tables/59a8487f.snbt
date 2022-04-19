@@ -1,0 +1,14 @@
+{
+	title: "{bq.quest809.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "colossalchests:chest_wall",
+		count: 9
+	},
+	{
+		item: "colossalchests:colossal_chest"
+	},
+	{
+		item: "actuallyadditions:block_giant_chest"
+	}]
+}

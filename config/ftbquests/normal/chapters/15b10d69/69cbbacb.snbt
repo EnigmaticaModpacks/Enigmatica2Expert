@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest698.name}",
+	icon: "industrialforegoing:enchantment_invoker",
+	x: -1.3333333333333333d,
+	y: 5.666666666666667d,
+	text: [
+		"{bq.quest698.desc}"
+	],
+	dependencies: [
+		"0060934f"
+	],
+	tasks: [{
+		uid: "fe625d00",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:enchantment_invoker"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ae652bd7",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

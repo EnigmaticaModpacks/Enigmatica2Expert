@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest911.name}",
+	icon: "actuallyadditions:block_laser_relay_item",
+	x: -3.833333333333333d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest911.desc}"
+	],
+	dependencies: [
+		"98b00c72"
+	],
+	tasks: [{
+		uid: "42ba5b98",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_item_viewer"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "82e7f325",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_laser_relay_item 2"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f41fee43",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

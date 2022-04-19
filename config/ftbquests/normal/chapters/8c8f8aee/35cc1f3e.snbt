@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest706.name}",
+	icon: "actuallyadditions:block_miner",
+	x: 3.6666666666666665d,
+	y: 9.5d,
+	text: [
+		"{bq.quest706.desc}"
+	],
+	dependencies: [
+		"b4bba5bb"
+	],
+	tasks: [{
+		uid: "f10a5f4d",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_miner"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "562b806c",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

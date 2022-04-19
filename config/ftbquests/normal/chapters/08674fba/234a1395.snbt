@@ -1,0 +1,86 @@
+{
+	title: "{bq.quest432.name}",
+	icon: "advancedrocketry:rollingmachine",
+	x: 4.166666666666666d,
+	y: 4.833333333333333d,
+	text: [
+		"{bq.quest432.desc}"
+	],
+	dependencies: [
+		"e8c6a755"
+	],
+	tasks: [{
+		uid: "5d6db8c7",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:rollingmachine"
+		}],
+		
+	},
+	{
+		uid: "5c1c908a",
+		type: "item",
+		items: [{
+			item: "libvulpes:structuremachine 6"
+		}],
+		
+	},
+	{
+		uid: "2b25c2a7",
+		type: "item",
+		items: [{
+			item: "libvulpes:coil0 2 4"
+		}],
+		
+	},
+	{
+		uid: "d2ce94c0",
+		type: "item",
+		items: [{
+			item: "libvulpes:motor"
+		}],
+		
+	},
+	{
+		uid: "68d1eacf",
+		type: "item",
+		items: [{
+			item: "libvulpes:forgepowerinput"
+		}],
+		
+	},
+	{
+		uid: "8bc16533",
+		type: "item",
+		items: [{
+			item: "libvulpes:hatch 1 2"
+		}],
+		
+	},
+	{
+		uid: "1bda7e1d",
+		type: "item",
+		items: [{
+			item: "libvulpes:hatch 2"
+		}],
+		
+	},
+	{
+		uid: "ab32fb46",
+		type: "item",
+		items: [{
+			item: "libvulpes:hatch 2 1"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "c02e62bd",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

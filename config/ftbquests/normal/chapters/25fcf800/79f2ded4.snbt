@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest485.name}",
+	icon: "environmentaltech:aethium_crystal",
+	x: 5.25d,
+	y: 9.5d,
+	text: [
+		"{bq.quest485.desc}"
+	],
+	dependencies: [
+		"07cc749e"
+	],
+	tasks: [{
+		uid: "52fdcea3",
+		type: "item",
+		items: [{
+			item: "environmentaltech:aethium_crystal"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "4c5d18b9",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

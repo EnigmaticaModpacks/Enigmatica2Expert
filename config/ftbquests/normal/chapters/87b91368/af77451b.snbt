@@ -1,0 +1,25 @@
+{
+	title: "{bq.quest819.name}",
+	icon: "rats:rat_upgrade_jury_rigged",
+	x: -3.5d,
+	y: 5.0d,
+	text: [
+		"{bq.quest819.desc}"
+	],
+	dependencies: [
+		"f99929a2"
+	],
+	tasks: [{
+		uid: "13a8d0aa",
+		type: "item",
+		items: [{
+			item: "rats:rat_upgrade_jury_rigged"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0973479a",
+		type: "choice",
+		table: 107
+	}]
+}

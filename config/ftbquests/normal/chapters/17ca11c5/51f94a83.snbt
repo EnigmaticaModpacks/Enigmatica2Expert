@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest28.name}",
+	icon: {
+		id: "avaritia:infinity_sword",
+		tag: {}
+	},
+	x: 5.958333333333333d,
+	y: 9.708333333333332d,
+	text: [
+		"{bq.quest28.desc}"
+	],
+	dependencies: [
+		"af1b2362"
+	],
+	size: 1.25d,
+	tasks: [{
+		uid: "1f508870",
+		type: "item",
+		items: [{
+			item: "avaritia:infinity_sword"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9e9242b8",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has obtained the Sword of the Cosmos!"
+	}]
+}

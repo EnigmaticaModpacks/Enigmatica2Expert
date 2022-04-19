@@ -1,0 +1,54 @@
+{
+	title: "{bq.quest300.name}",
+	icon: "immersiveengineering:mold",
+	x: -0.16666666666666663d,
+	y: 6.166666666666667d,
+	text: [
+		"{bq.quest300.desc}"
+	],
+	dependencies: [
+		"6766877f"
+	],
+	tasks: [{
+		uid: "6df6a51d",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:mold"
+		}],
+		
+	},
+	{
+		uid: "f8bdb561",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:mold 1 1"
+		}],
+		
+	},
+	{
+		uid: "c3b83ee2",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:mold 1 2"
+		}],
+		
+	},
+	{
+		uid: "ed3b141e",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:mold 1 4"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "05887747",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

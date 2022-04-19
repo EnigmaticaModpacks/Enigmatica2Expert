@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest705.name}",
+	icon: "industrialforegoing:protein_reactor",
+	x: 2.166666666666667d,
+	y: 5.833333333333333d,
+	text: [
+		"{bq.quest705.desc}"
+	],
+	dependencies: [
+		"66102e1b"
+	],
+	tasks: [{
+		uid: "04468752",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:protein_reactor"
+		}],
+		
+	},
+	{
+		uid: "89a08ddf",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:protein_generator"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "52b660db",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

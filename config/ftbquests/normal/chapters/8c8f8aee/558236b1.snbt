@@ -1,0 +1,96 @@
+{
+	title: "{bq.quest922.name}",
+	icon: {
+		id: "simple_trophies:trophy",
+		tag: {
+			TrophyColorGreen: 57,
+			TrophyShowsTooltip: 1b,
+			TrophyVariant: "gold",
+			TrophyItem: {
+				Count: 1b,
+				id: "actuallyadditions:block_giant_chest_large",
+				Damage: 0s
+			},
+			TrophyColorBlue: 46,
+			TrophyColorRed: 74,
+			TrophyName: "§9Actually Additions Trophy§r"
+		}
+	},
+	x: 5.25d,
+	y: 8.25d,
+	text: [
+		"{bq.quest922.desc}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"20b88478",
+		"b4bba5bb",
+		"a4305fb1",
+		"98a9cb2b",
+		"98b00c72",
+		"5130e1f3",
+		"20e504e1",
+		"480b0e0e",
+		"676b3ded",
+		"05f79430",
+		"1c42a2c5",
+		"03d4419e",
+		"301b1a17",
+		"3b18738a",
+		"96718e63",
+		"44f47ba7",
+		"77168682",
+		"5ef52760",
+		"916fc238",
+		"2697ad8e",
+		"9cda35c3",
+		"f72762fb",
+		"6f177e48",
+		"0ebc3d1d",
+		"bebab91b",
+		"670a756e",
+		"e0be5c9a",
+		"67ea3f4d",
+		"1c821fe9",
+		"0e3f4ad2",
+		"6e864c28",
+		"e3af4980",
+		"35cc1f3e",
+		"65e1ffd5",
+		"e4d3dfa7",
+		"dae9f45f",
+		"3e51ffa9",
+		"6e536fa8",
+		"9b71600a",
+		"e4fbcfc7",
+		"da390e07"
+	],
+	size: 1.5d,
+	rewards: [{
+		uid: "5435fe2d",
+		type: "item",
+		auto: "enabled",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 57,
+				TrophyShowsTooltip: 1b,
+				TrophyVariant: "gold",
+				TrophyItem: {
+					Count: 1b,
+					id: "actuallyadditions:block_giant_chest_large",
+					Damage: 0s
+				},
+				TrophyColorBlue: 46,
+				TrophyColorRed: 74,
+				TrophyName: "§9Actually Additions Trophy§r"
+			}
+		}
+	},
+	{
+		uid: "cf345fc7",
+		type: "command",
+		auto: "invisible",
+		command: "/say §l@p§r has fully completed the §n§9Actually Additions§r chapter!§r ```Congrats!```"
+	}]
+}

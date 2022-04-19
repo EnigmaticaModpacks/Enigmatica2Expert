@@ -1,0 +1,36 @@
+{
+	title: "{bq.quest19.name}",
+	icon: {
+		id: "mekanism:gastank",
+		tag: {
+			tier: 4,
+			mekData: {}
+		}
+	},
+	x: 2.3333333333333335d,
+	y: 7.541666666666668d,
+	text: [
+		"{bq.quest19.desc}"
+	],
+	dependencies: [
+		"7e987598"
+	],
+	size: 1.1666666666666667d,
+	tasks: [{
+		uid: "d323cbb4",
+		type: "item",
+		items: [{
+			id: "mekanism:gastank",
+			tag: {
+				tier: 4
+			}
+		}],
+		
+	}],
+	rewards: [{
+		uid: "df6501f4",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has obtained the Creative Gas Tank!"
+	}]
+}

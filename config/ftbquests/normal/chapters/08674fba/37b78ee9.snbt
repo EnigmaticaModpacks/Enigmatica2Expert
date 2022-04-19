@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest890.name}",
+	icon: "advancedrocketry:liquidtank",
+	x: 13.083333333333334d,
+	y: 8.583333333333334d,
+	text: [
+		"{bq.quest890.desc}"
+	],
+	dependencies: [
+		"e7f8d37c"
+	],
+	size: 1.1666666666666667d,
+	tasks: [{
+		uid: "68de1298",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:liquidtank"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7f78ac63",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

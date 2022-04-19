@@ -1,0 +1,46 @@
+{
+	title: "{bq.quest418.name}",
+	icon: "ic2:crafting",
+	x: 2.5d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest418.desc}"
+	],
+	dependencies: [
+		"b522c8b8"
+	],
+	tasks: [{
+		uid: "9a843e68",
+		type: "item",
+		items: [{
+			item: "ic2:crafting"
+		}],
+		
+	},
+	{
+		uid: "cb5ac7d4",
+		type: "item",
+		items: [{
+			item: "ic2:treetap"
+		}],
+		
+	},
+	{
+		uid: "7bfc8da4",
+		type: "item",
+		items: [{
+			item: "ic2:misc_resource 1 4"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "e5c0e138",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

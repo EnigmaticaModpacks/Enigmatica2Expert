@@ -1,0 +1,18 @@
+{
+	title: "{bq.quest443.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "epic"
+			}
+		}
+	},
+	{
+		item: "advancedrocketry:jackhammer"
+	},
+	{
+		item: "advancedrocketry:orescanner"
+	}]
+}

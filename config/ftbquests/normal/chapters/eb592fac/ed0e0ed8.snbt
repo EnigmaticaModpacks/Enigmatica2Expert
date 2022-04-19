@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest276.name}",
+	icon: "rftools:shape_card 1 2",
+	x: 0.0d,
+	y: 5.0d,
+	text: [
+		"{bq.quest276.desc}"
+	],
+	dependencies: [
+		"8eca55bc"
+	],
+	tasks: [{
+		uid: "32240ca5",
+		type: "item",
+		items: [{
+			item: "rftools:shape_card 1 2"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "edcca8dd",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "epic"
+			}
+		}
+	}]
+}

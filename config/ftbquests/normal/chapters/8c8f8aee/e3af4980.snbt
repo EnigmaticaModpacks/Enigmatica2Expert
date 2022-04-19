@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest307.name}",
+	icon: "actuallyadditions:block_farmer",
+	x: -3.916666666666667d,
+	y: 0.0d,
+	text: [
+		"{bq.quest307.desc}"
+	],
+	dependencies: [
+		"dae9f45f"
+	],
+	tasks: [{
+		uid: "23afdf8a",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_farmer"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "a0694c52",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

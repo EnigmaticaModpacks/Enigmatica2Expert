@@ -1,0 +1,70 @@
+{
+	title: "{bq.quest431.name}",
+	icon: "advancedrocketry:lathe",
+	x: 5.166666666666667d,
+	y: 4.833333333333333d,
+	text: [
+		"{bq.quest431.desc}"
+	],
+	dependencies: [
+		"e8c6a755"
+	],
+	tasks: [{
+		uid: "8c23f11d",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:lathe"
+		}],
+		
+	},
+	{
+		uid: "de9698b8",
+		type: "item",
+		items: [{
+			item: "libvulpes:structuremachine 2"
+		}],
+		
+	},
+	{
+		uid: "040e9606",
+		type: "item",
+		items: [{
+			item: "libvulpes:motor"
+		}],
+		
+	},
+	{
+		uid: "c1f1a35d",
+		type: "item",
+		items: [{
+			item: "libvulpes:forgepowerinput"
+		}],
+		
+	},
+	{
+		uid: "26ef55ae",
+		type: "item",
+		items: [{
+			item: "libvulpes:hatch"
+		}],
+		
+	},
+	{
+		uid: "f92a68b2",
+		type: "item",
+		items: [{
+			item: "libvulpes:hatch 1 1"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "de585bb1",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

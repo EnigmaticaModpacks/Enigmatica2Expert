@@ -1,0 +1,71 @@
+{
+	title: "{bq.quest712.name}",
+	icon: "nuclearcraft:salt_fission_controller",
+	x: 5.833333333333333d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest712.desc}"
+	],
+	dependencies: [
+		"3ba07972",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "845cc931",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:salt_fission_controller"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a5d93954",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:salt_fission_frame 40"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "db572e41",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:salt_fission_wall 7"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "5247f57d",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:salt_fission_vent 2"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "6029a03d",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:salt_fission_heater"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "57917091",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:salt_fission_moderator"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "18a0846b",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

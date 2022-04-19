@@ -1,0 +1,28 @@
+{
+	title: "{bq.quest1061.name}",
+	icon: {
+		id: "draconicevolution:mob_soul",
+		tag: {
+			EntityName: "minecraft:enderman"
+		}
+	},
+	x: 0.625d,
+	y: 5.0d,
+	text: [
+		"{bq.quest1061.desc}"
+	],
+	dependencies: [
+		"18c9097c"
+	],
+	tasks: [{
+		uid: "42ca6c61",
+		type: "kill",
+		entity: "minecraft:enderman",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "b5c7af3f",
+		type: "choice",
+		table: 128
+	}]
+}

@@ -1,0 +1,83 @@
+{
+	title: "{bq.quest605.name}",
+	icon: {
+		id: "tconstruct:tooltables",
+		Damage: 2s,
+		tag: {
+			textureBlock: {
+				Count: 1b,
+				id: "minecraft:log",
+				Damage: 0s
+			}
+		}
+	},
+	x: -4.0d,
+	y: 3.5d,
+	text: [
+		"{bq.quest605.desc}"
+	],
+	dependencies: [
+		"f968d750"
+	],
+	tasks: [{
+		uid: "3ef2f3f2",
+		type: "item",
+		items: [{
+			id: "tconstruct:tooltables",
+			Damage: 1s,
+			tag: {
+				textureBlock: {
+					Count: 1b,
+					id: "minecraft:planks",
+					Damage: 0s
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "f286b653",
+		type: "item",
+		items: [{
+			item: "tconstruct:tooltables 1 4"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "8a466e3e",
+		type: "item",
+		items: [{
+			id: "tconstruct:tooltables",
+			Damage: 2s,
+			tag: {
+				textureBlock: {
+					Count: 1b,
+					id: "minecraft:log",
+					Damage: 0s
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "6375a12f",
+		type: "item",
+		items: [{
+			item: "tconstruct:tooltables 1 3"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "ca018d1f",
+		type: "item",
+		items: [{
+			item: "tconstruct:tooltables"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c5173bba",
+		type: "choice",
+		table: 40
+	}]
+}

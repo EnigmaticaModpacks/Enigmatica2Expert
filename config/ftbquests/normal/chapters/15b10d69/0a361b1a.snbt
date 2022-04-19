@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest136.name}",
+	icon: "industrialforegoing:crop_recolector",
+	x: -0.16666666666666663d,
+	y: 5.833333333333333d,
+	text: [
+		"{bq.quest136.desc}"
+	],
+	dependencies: [
+		"66102e1b"
+	],
+	tasks: [{
+		uid: "77c498de",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:crop_recolector"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "f6be8f1e",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

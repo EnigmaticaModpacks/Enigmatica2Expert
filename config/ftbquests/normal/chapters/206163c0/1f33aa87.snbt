@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest281.name}",
+	icon: "forestry:rainmaker",
+	x: -4.833333333333333d,
+	y: 3.5d,
+	text: [
+		"{bq.quest281.desc}"
+	],
+	dependencies: [
+		"8806b7fe"
+	],
+	tasks: [{
+		uid: "cef2cf44",
+		type: "item",
+		items: [{
+			item: "forestry:rainmaker"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "8c0b6a07",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

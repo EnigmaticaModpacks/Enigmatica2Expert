@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest707.name}",
+	icon: "industrialforegoing:animal_resource_harvester",
+	x: -2.8333333333333335d,
+	y: 4.0d,
+	text: [
+		"{bq.quest707.desc}"
+	],
+	dependencies: [
+		"0060934f"
+	],
+	tasks: [{
+		uid: "1bda6ca7",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:animal_resource_harvester"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "5d88e0fb",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

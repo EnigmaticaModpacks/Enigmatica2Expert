@@ -1,0 +1,92 @@
+{
+	title: "{bq.quest966.name}",
+	icon: {
+		id: "simple_trophies:trophy",
+		tag: {
+			TrophyColorGreen: 240,
+			TrophyShowsTooltip: 1b,
+			TrophyVariant: "gold",
+			TrophyItem: {
+				Count: 1b,
+				id: "astralsorcery:blockcelestialcollectorcrystal",
+				tag: {
+					astralsorcery: {
+						collectorType: 1
+					}
+				},
+				Damage: 0s
+			},
+			TrophyColorBlue: 240,
+			TrophyColorRed: 240,
+			TrophyName: "§1Astralsorcery Master Trophy§r"
+		}
+	},
+	x: 6.75d,
+	y: 5.25d,
+	text: [
+		"{bq.quest966.desc}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"fe27cea6",
+		"e02d38ab",
+		"04232ee4",
+		"8a6186a6",
+		"d051b719",
+		"5009b204",
+		"6af5b978",
+		"580bb684",
+		"bb6f7920",
+		"b58fd49f",
+		"69847390",
+		"3d281a7f",
+		"a3632f34",
+		"85db7cc5",
+		"95f06cae",
+		"0d03e9a0",
+		"770ef5aa",
+		"466bf58c",
+		"62d5217f",
+		"dc1957f2",
+		"f0c1c4b1",
+		"5e313583",
+		"4aabb15e",
+		"12430d34",
+		"032c3854",
+		"72378bce",
+		"9c84c17e"
+	],
+	size: 1.5d,
+	rewards: [{
+		uid: "acbedb69",
+		type: "item",
+		auto: "enabled",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 240,
+				TrophyShowsTooltip: 1b,
+				TrophyVariant: "gold",
+				TrophyItem: {
+					Count: 1b,
+					id: "astralsorcery:blockcelestialcollectorcrystal",
+					tag: {
+						astralsorcery: {
+							collectorType: 1
+						}
+					},
+					Damage: 0s
+				},
+				TrophyColorBlue: 240,
+				TrophyColorRed: 240,
+				TrophyName: "§1Astralsorcery Master Trophy§r"
+			}
+		}
+	},
+	{
+		uid: "e360be64",
+		type: "command",
+		auto: "invisible",
+		command: "/say §l@p§r has fully completed the §n§1Astral Sorcery§r chapter!§r ```Congrats!```"
+	}]
+}

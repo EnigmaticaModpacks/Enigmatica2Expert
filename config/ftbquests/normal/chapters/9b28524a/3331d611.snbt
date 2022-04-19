@@ -1,0 +1,39 @@
+{
+	title: "{bq.quest604.name}",
+	icon: "minecraft:beacon",
+	x: 10.833333333333334d,
+	y: 3.1666666666666665d,
+	text: [
+		"{bq.quest604.desc}"
+	],
+	dependencies: [
+		"4c883699"
+	],
+	tasks: [{
+		uid: "bf95641a",
+		type: "item",
+		items: [{
+			item: "bloodmagic:blood_rune 52"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "c0ee965c",
+		type: "item",
+		items: [{
+			item: "minecraft:beacon 4"
+		}],
+		count: 4L,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0123edc0",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

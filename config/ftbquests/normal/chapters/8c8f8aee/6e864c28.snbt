@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest313.name}",
+	icon: "actuallyadditions:block_fishing_net",
+	x: 3.6666666666666665d,
+	y: 5.5d,
+	text: [
+		"{bq.quest313.desc}"
+	],
+	dependencies: [
+		"5ef52760"
+	],
+	tasks: [{
+		uid: "18b9dbde",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_fishing_net"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "4751aac0",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

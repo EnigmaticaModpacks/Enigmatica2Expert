@@ -1,0 +1,14 @@
+{
+	x: 0.5d,
+	y: 2.5d,
+	dependencies: [
+		"b302e7bd"
+	],
+	tasks: [{
+		uid: "bc4b7430",
+		type: "custom",
+		title: "{bq.quest915.name}",
+		icon: "libvulpes:productingot 1 7",
+		disable_toast: true
+	}]
+}

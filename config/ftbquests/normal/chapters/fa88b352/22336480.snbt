@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest511.name}",
+	icon: "nuclearcraft:ingot_former_idle",
+	x: 9.166666666666666d,
+	y: 4.833333333333333d,
+	text: [
+		"{bq.quest511.desc}"
+	],
+	dependencies: [
+		"0bf36970",
+		"da8740b4"
+	],
+	tasks: [{
+		uid: "e308dc15",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:ingot_former_idle"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "15a875d7",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

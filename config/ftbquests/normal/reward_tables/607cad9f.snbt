@@ -1,0 +1,23 @@
+{
+	title: "{bq.quest767.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "tconstruct:large_sword_blade",
+			tag: {
+				Material: "elementium"
+			}
+		}
+	},
+	{
+		item: "botania:storage 1 2"
+	},
+	{
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "epic"
+			}
+		}
+	}]
+}

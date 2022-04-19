@@ -1,0 +1,39 @@
+{
+	title: "{bq.quest123.name}",
+	icon: "actuallyadditions:block_empowerer",
+	x: -0.4999999999999999d,
+	y: 7.0d,
+	text: [
+		"{bq.quest123.desc}"
+	],
+	dependencies: [
+		"03d4419e"
+	],
+	size: 1.6666666666666667d,
+	tasks: [{
+		uid: "bf93ccdc",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_empowerer"
+		}],
+		
+	},
+	{
+		uid: "75325dbe",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_display_stand 4"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "6f28af27",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

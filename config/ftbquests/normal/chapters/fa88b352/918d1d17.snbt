@@ -1,0 +1,41 @@
+{
+	title: "{bq.quest688.name}",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "deuterium",
+			Amount: 1000
+		}
+	},
+	x: 12.5d,
+	y: 7.5d,
+	text: [
+		"{bq.quest688.desc}"
+	],
+	dependencies: [
+		"0bf36970",
+		"b3997862"
+	],
+	tasks: [{
+		uid: "4ceae788",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "deuterium",
+				Amount: 1000
+			}
+		}],
+		
+	}],
+	rewards: [{
+		uid: "b3caf81e",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	title: "{bq.quest800.name}",
+	icon: "danknull:dank_null_0",
+	x: 3.625d,
+	y: 5.041666666666667d,
+	text: [
+		"{bq.quest800.desc}"
+	],
+	dependencies: [
+		"dabc815c"
+	],
+	tasks: [{
+		uid: "65bc76a7",
+		type: "item",
+		items: [{
+			item: "danknull:dank_null_0"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e0744a81",
+		type: "choice",
+		table: 104
+	}]
+}

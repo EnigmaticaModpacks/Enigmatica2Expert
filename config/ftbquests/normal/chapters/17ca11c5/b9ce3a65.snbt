@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest925.name}",
+	icon: "extrautils2:creativeharvest",
+	x: 6.375d,
+	y: -4.0d,
+	text: [
+		"{bq.quest925.desc}"
+	],
+	dependencies: [
+		"b4b83088"
+	],
+	tasks: [{
+		uid: "6a1bed7c",
+		type: "item",
+		items: [{
+			item: "extrautils2:creativeharvest"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "6f392773",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "epic"
+			}
+		}
+	}]
+}

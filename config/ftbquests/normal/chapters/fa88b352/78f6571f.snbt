@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest760.name}",
+	icon: "reactorbuilder:reactorbuilder",
+	x: 6.916666666666667d,
+	y: 12.583333333333334d,
+	text: [
+		"{bq.quest760.desc}"
+	],
+	dependencies: [
+		"0bf36970",
+		"608d1a0a"
+	],
+	tasks: [{
+		uid: "1570be40",
+		type: "item",
+		items: [{
+			item: "reactorbuilder:reactorbuilder"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ae726580",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

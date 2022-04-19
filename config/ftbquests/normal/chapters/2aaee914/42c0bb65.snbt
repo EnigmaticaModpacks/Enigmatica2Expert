@@ -1,0 +1,46 @@
+{
+	title: "{bq.quest200.name}",
+	icon: "thermalfoundation:material 1 160",
+	x: 7.5d,
+	y: 5.166666666666667d,
+	text: [
+		"{bq.quest200.desc}"
+	],
+	dependencies: [
+		"4b203b3d"
+	],
+	tasks: [{
+		uid: "039416ed",
+		type: "item",
+		items: [{
+			item: "mekanism:enrichediron"
+		}],
+		
+	},
+	{
+		uid: "8ab57093",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 96"
+		}],
+		
+	},
+	{
+		uid: "1f758ac7",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 160"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "016b7813",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,27 @@
+{
+	title: "{bq.quest27.name}",
+	icon: "avaritia:infinity_boots",
+	x: 1.7083333333333335d,
+	y: 13.208333333333332d,
+	text: [
+		"{bq.quest27.desc}"
+	],
+	dependencies: [
+		"15fc4ddf"
+	],
+	size: 1.25d,
+	tasks: [{
+		uid: "59b8bae9",
+		type: "item",
+		items: [{
+			item: "avaritia:infinity_boots"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "676c1bb3",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has obtained the Infinity Boots!"
+	}]
+}

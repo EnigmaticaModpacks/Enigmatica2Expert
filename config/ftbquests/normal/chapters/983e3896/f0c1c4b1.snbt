@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest152.name}",
+	icon: "astralsorcery:blockwell",
+	x: -0.16666666666666663d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest152.desc}"
+	],
+	dependencies: [
+		"580bb684"
+	],
+	tasks: [{
+		uid: "5a3cf857",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockwell"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "e532b697",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest740.name}",
+	icon: "requious:infinity_furnace",
+	x: 2.375d,
+	y: -0.625d,
+	text: [
+		"{bq.quest740.desc}"
+	],
+	dependencies: [
+		"fbbabf40"
+	],
+	tasks: [{
+		uid: "6694bd2a",
+		type: "item",
+		items: [{
+			item: "requious:infinity_furnace"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "133ea303",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "legendary"
+			}
+		}
+	}]
+}

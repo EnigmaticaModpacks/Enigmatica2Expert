@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest775.name}",
+	icon: "forestry:bottler",
+	x: -8.75d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest775.desc}"
+	],
+	dependencies: [
+		"383eccde"
+	],
+	tasks: [{
+		uid: "05b4b512",
+		type: "item",
+		items: [{
+			item: "forestry:bottler"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "2551264e",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

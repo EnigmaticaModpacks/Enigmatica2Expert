@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest554.name}",
+	icon: {
+		id: "draconicevolution:draconic_hoe",
+		tag: {
+			Energy: 16000000
+		}
+	},
+	x: 2.5d,
+	y: 3.75d,
+	text: [
+		"{bq.quest554.desc}"
+	],
+	dependencies: [
+		"65f22360"
+	],
+	tasks: [{
+		uid: "146e5de6",
+		type: "item",
+		items: [{
+			id: "draconicevolution:draconic_hoe",
+			tag: {
+				Energy: 16000000
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7244a456",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

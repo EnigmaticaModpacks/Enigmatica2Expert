@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest662.name}",
+	icon: "thaumcraft:dioptra",
+	x: 4.333333333333334d,
+	y: 7.5d,
+	text: [
+		"{bq.quest662.desc}"
+	],
+	dependencies: [
+		"4510505c"
+	],
+	tasks: [{
+		uid: "c7202d23",
+		type: "item",
+		items: [{
+			item: "thaumcraft:dioptra"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "35bf612d",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

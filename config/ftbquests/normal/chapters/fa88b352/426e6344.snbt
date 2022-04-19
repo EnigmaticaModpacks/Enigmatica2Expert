@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest515.name}",
+	icon: "nuclearcraft:chemical_reactor_idle",
+	x: 12.833333333333334d,
+	y: 3.0d,
+	text: [
+		"{bq.quest515.desc}"
+	],
+	dependencies: [
+		"3ba07972",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "e0f7ed9e",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:chemical_reactor_idle"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "ce525de3",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

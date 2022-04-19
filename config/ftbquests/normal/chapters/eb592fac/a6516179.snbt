@@ -1,0 +1,39 @@
+{
+	title: "{bq.quest269.name}",
+	icon: "rftools:powercell_simple",
+	x: 2.125d,
+	y: 0.6041666666666666d,
+	text: [
+		"{bq.quest269.desc}"
+	],
+	dependencies: [
+		"f6e8e410"
+	],
+	size: 1.2083333333333333d,
+	tasks: [{
+		uid: "035bf2ad",
+		type: "item",
+		items: [{
+			item: "rftools:powercell_simple"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "bccfb2a6",
+		type: "item",
+		items: [{
+			item: "rftools:powercell_card"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d563512d",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

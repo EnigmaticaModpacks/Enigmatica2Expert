@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest860.name}",
+	icon: "forestry:habitat_former",
+	x: -2.1666666666666665d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest860.desc}"
+	],
+	dependencies: [
+		"c8f37d85"
+	],
+	tasks: [{
+		uid: "15f54081",
+		type: "item",
+		items: [{
+			item: "forestry:habitat_former"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9abce5ae",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

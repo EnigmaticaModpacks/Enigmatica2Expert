@@ -1,0 +1,25 @@
+{
+	title: "{bq.quest756.name}",
+	icon: "eyeofdragons:eye_of_firedragon",
+	x: 3.5d,
+	y: 0.0d,
+	text: [
+		"{bq.quest756.desc}"
+	],
+	dependencies: [
+		"dcb947b4"
+	],
+	tasks: [{
+		uid: "0cc3f30c",
+		type: "item",
+		items: [{
+			item: "eyeofdragons:eye_of_firedragon"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a6c143af",
+		type: "choice",
+		table: 82
+	}]
+}

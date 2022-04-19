@@ -1,0 +1,16 @@
+{
+	title: "{bq.quest61.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "draconicevolution:chaotic_core",
+		count: 2
+	},
+	{
+		item: {
+			id: "tconstruct:sword_blade",
+			tag: {
+				Material: "chaotic_metal"
+			}
+		}
+	}]
+}

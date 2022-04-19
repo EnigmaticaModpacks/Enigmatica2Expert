@@ -1,0 +1,15 @@
+{
+	title: "{bq.quest12.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "mysticalagriculture:storage 1 5",
+		count: 4
+	},
+	{
+		item: "mysticalagriculture:tier2_inferium_seeds",
+		count: 4
+	},
+	{
+		item: "mysticalagriculture:infusion_crystal"
+	}]
+}

@@ -1,0 +1,36 @@
+{
+	title: "{bq.quest861.name}",
+	icon: "twilightforest:miniature_structure 1 6",
+	x: 0.5d,
+	y: 0.5d,
+	text: [
+		"{bq.quest861.desc}"
+	],
+	dependencies: [
+		"7c48f7e5"
+	],
+	tasks: [{
+		uid: "002c9afb",
+		type: "item",
+		items: [{
+			item: "twilightforest:magic_map_empty"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "83a7ff98",
+		type: "item",
+		item: "twilightforest:twilight_sapling 1 6"
+	},
+	{
+		uid: "1e51f770",
+		type: "item",
+		item: "actuallyadditions:item_bag"
+	},
+	{
+		uid: "9310d0ef",
+		type: "command",
+		auto: "invisible",
+		command: "/advancement grant @p only twilightforest:magic_map"
+	}]
+}

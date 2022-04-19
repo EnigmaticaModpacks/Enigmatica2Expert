@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest95.name}",
+	icon: "twilightforest:trophy 1 8",
+	x: 1.8333333333333333d,
+	y: -0.8333333333333333d,
+	text: [
+		"{bq.quest95.desc}"
+	],
+	dependencies: [
+		"b42dc050"
+	],
+	tasks: [{
+		uid: "1da20ffe",
+		type: "item",
+		items: [{
+			item: "twilightforest:trophy 1 8"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a4735016",
+		type: "item",
+		item: "deepmoblearning:living_matter_twilight",
+		count: 20
+	},
+	{
+		uid: "9714efcf",
+		type: "command",
+		auto: "invisible",
+		command: "/say Baa-a-a-a"
+	}]
+}

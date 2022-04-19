@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest490.name}",
+	icon: "environmentaltech:void_res_miner_cont_6",
+	x: 8.25d,
+	y: 9.5d,
+	text: [
+		"{bq.quest490.desc}"
+	],
+	dependencies: [
+		"8cf2752e",
+		"79f2ded4"
+	],
+	tasks: [{
+		uid: "4e603b6d",
+		type: "item",
+		items: [{
+			item: "environmentaltech:void_res_miner_cont_6"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "607109b5",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "epic"
+			}
+		}
+	}]
+}

@@ -1,0 +1,23 @@
+{
+	title: "{bq.quest67.name}",
+	icon: "ic2:resource 1 12",
+	x: 0.8333333333333333d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest67.desc}"
+	],
+	dependencies: [
+		"e07d1afe"
+	],
+	rewards: [{
+		uid: "974b137b",
+		type: "item",
+		item: "ic2:wrench_new"
+	},
+	{
+		uid: "ba82e7ba",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has begun the IndustrialCraft questline!"
+	}]
+}

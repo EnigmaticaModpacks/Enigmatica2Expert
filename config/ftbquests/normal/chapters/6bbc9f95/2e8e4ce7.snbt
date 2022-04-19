@@ -1,0 +1,46 @@
+{
+	title: "{bq.quest641.name}",
+	icon: "thaumcraft:arcane_workbench",
+	x: 4.166666666666666d,
+	y: 5.0d,
+	text: [
+		"{bq.quest641.desc}"
+	],
+	dependencies: [
+		"4f409b3c"
+	],
+	tasks: [{
+		uid: "4b6f15bd",
+		type: "item",
+		items: [{
+			item: "thaumcraft:arcane_workbench"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "8e10c2a3",
+		type: "item",
+		items: [{
+			item: "minecraft:crafting_table"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "ae59987a",
+		type: "item",
+		items: [{
+			item: "thaumcraft:salis_mundus"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8ec3c08e",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

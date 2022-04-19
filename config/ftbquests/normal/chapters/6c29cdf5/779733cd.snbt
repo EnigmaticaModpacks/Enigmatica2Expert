@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest385.name}",
+	icon: "botania:pylon 1 2",
+	x: 7.833333333333333d,
+	y: 7.833333333333333d,
+	text: [
+		"{bq.quest385.desc}"
+	],
+	dependencies: [
+		"5672d99b",
+		"4aa39f8e"
+	],
+	tasks: [{
+		uid: "570fdcd9",
+		type: "item",
+		items: [{
+			item: "botania:pylon 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "4c6f57ca",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

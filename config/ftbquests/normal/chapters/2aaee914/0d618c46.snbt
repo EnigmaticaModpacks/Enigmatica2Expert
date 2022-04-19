@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest450.name}",
+	icon: "mekanism:roadplasticblock 1 15",
+	x: 3.5d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest450.desc}"
+	],
+	dependencies: [
+		"2f9b92b2"
+	],
+	tasks: [{
+		uid: "56c0f52e",
+		type: "item",
+		items: [{
+			item: "mekanism:roadplasticblock 1 15"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9921473b",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

@@ -1,0 +1,26 @@
+{
+	title: "{bq.quest258.name}",
+	icon: "twilightforest:torchberries",
+	x: 0.5d,
+	y: -0.16666666666666669d,
+	text: [
+		"{bq.quest258.desc}"
+	],
+	dependencies: [
+		"b42dc050"
+	],
+	size: 0.6666666666666666d,
+	tasks: [{
+		uid: "422be793",
+		type: "item",
+		items: [{
+			item: "twilightforest:torchberries"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3dc82c5c",
+		type: "xp_levels",
+		xp_levels: 5
+	}]
+}

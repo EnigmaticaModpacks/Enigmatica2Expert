@@ -1,0 +1,49 @@
+{
+	title: "{bq.quest673.name}",
+	icon: {
+		id: "thaumcraft:golem",
+		tag: {
+			props: 0L
+		}
+	},
+	x: 11.5d,
+	y: 4.166666666666666d,
+	text: [
+		"{bq.quest673.desc}"
+	],
+	dependencies: [
+		"1036e76c"
+	],
+	tasks: [{
+		uid: "4e34e6e6",
+		type: "item",
+		items: [{
+			id: "thaumcraft:golem",
+			tag: {
+				props: 0L
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "067051cc",
+		type: "item",
+		items: [{
+			item: "thaumcraft:seal"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "330ac46d",
+		type: "item",
+		items: [{
+			item: "thaumcraft:golem_bell"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "1e441fcb",
+		type: "choice",
+		table: 58
+	}]
+}

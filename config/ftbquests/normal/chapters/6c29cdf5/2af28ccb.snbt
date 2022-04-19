@@ -1,0 +1,47 @@
+{
+	title: "{bq.quest363.name}",
+	icon: {
+		id: "botania:twigwand",
+		tag: {
+			color1: 0,
+			color2: 0,
+			boundTileZ: 0,
+			boundTileX: 0,
+			boundTileY: -1
+		}
+	},
+	x: 3.5d,
+	y: 1.1666666666666665d,
+	text: [
+		"{bq.quest363.desc}"
+	],
+	dependencies: [
+		"5672d99b",
+		"b045426a"
+	],
+	tasks: [{
+		uid: "a0a62db4",
+		type: "item",
+		items: [{
+			id: "botania:twigwand",
+			tag: {
+				color1: 0,
+				color2: 0,
+				boundTileZ: 0,
+				boundTileX: 0,
+				boundTileY: -1
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d196e5d1",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

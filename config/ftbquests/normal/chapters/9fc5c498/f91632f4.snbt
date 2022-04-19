@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest580.name}",
+	icon: "enderio:block_soul_binder",
+	x: 10.166666666666666d,
+	y: 2.5d,
+	text: [
+		"{bq.quest580.desc}"
+	],
+	dependencies: [
+		"e3ba78e0"
+	],
+	tasks: [{
+		uid: "227447d7",
+		type: "item",
+		items: [{
+			item: "enderio:block_soul_binder"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "387b9d01",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

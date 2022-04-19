@@ -1,0 +1,35 @@
+{
+	title: "{bq.quest404.name}",
+	icon: {
+		id: "botania:exchangerod",
+		tag: {}
+	},
+	x: 10.5d,
+	y: 5.166666666666667d,
+	text: [
+		"{bq.quest404.desc}"
+	],
+	dependencies: [
+		"5672d99b",
+		"df7a11b1"
+	],
+	tasks: [{
+		uid: "e012f8d4",
+		type: "item",
+		items: [{
+			id: "botania:exchangerod",
+			tag: {}
+		}],
+		
+	}],
+	rewards: [{
+		uid: "284b3e05",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

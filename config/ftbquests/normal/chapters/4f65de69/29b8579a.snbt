@@ -1,0 +1,25 @@
+{
+	title: "{bq.quest809.name}",
+	icon: "vaultopic:vice",
+	x: 6.625d,
+	y: 5.041666666666667d,
+	text: [
+		"{bq.quest809.desc}"
+	],
+	dependencies: [
+		"4fc58528"
+	],
+	tasks: [{
+		uid: "8e8c980f",
+		type: "item",
+		items: [{
+			item: "vaultopic:vice"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a9cdf400",
+		type: "choice",
+		table: 105
+	}]
+}

@@ -1,0 +1,13 @@
+{
+	title: "{bq.quest839.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "advgenerators:exchanger_controller"
+	},
+	{
+		item: "advgenerators:steam_turbine_controller"
+	},
+	{
+		item: "advgenerators:syngas_controller"
+	}]
+}

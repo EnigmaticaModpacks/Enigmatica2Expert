@@ -1,0 +1,10 @@
+{
+	title: "{bq.chapter7.name}",
+	icon: "mekanism:machineblock 1 8",
+	description: [
+		"{bq.chapter7.desc}"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

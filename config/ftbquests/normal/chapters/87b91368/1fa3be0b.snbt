@@ -1,0 +1,26 @@
+{
+	title: "{bq.quest725.name}",
+	icon: "rats:rat_upgrade_chef",
+	x: -3.5d,
+	y: 2.5d,
+	text: [
+		"{bq.quest725.desc}"
+	],
+	dependencies: [
+		"a65a3f5b",
+		"f99929a2"
+	],
+	tasks: [{
+		uid: "115c4409",
+		type: "item",
+		items: [{
+			item: "rats:rat_upgrade_chef"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "f8b55113",
+		type: "choice",
+		table: 74
+	}]
+}

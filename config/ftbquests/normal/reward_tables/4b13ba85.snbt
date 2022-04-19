@@ -1,0 +1,28 @@
+{
+	title: "{bq.quest54.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "tconstruct:broad_axe_head",
+			tag: {
+				Material: "firewood"
+			}
+		}
+	},
+	{
+		item: {
+			id: "tconstruct:broad_axe_head",
+			tag: {
+				Material: "fusewood"
+			}
+		}
+	},
+	{
+		item: {
+			id: "tconstruct:broad_axe_head",
+			tag: {
+				Material: "xu_evil_metal"
+			}
+		}
+	}]
+}

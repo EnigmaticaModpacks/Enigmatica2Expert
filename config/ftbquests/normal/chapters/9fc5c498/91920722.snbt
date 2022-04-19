@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest587.name}",
+	icon: "enderio:block_transceiver",
+	x: 6.166666666666667d,
+	y: 2.5d,
+	text: [
+		"{bq.quest587.desc}"
+	],
+	dependencies: [
+		"0cce2fa6"
+	],
+	tasks: [{
+		uid: "60b488d5",
+		type: "item",
+		items: [{
+			item: "enderio:block_transceiver"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9dd36edc",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

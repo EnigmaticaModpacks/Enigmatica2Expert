@@ -1,0 +1,39 @@
+{
+	title: "{bq.quest364.name}",
+	icon: {
+		id: "botania:specialflower",
+		tag: {
+			type: "endoflame"
+		}
+	},
+	x: 11.833333333333334d,
+	y: 4.833333333333333d,
+	text: [
+		"{bq.quest364.desc}"
+	],
+	dependencies: [
+		"5672d99b",
+		"cc984e46"
+	],
+	tasks: [{
+		uid: "a1367de7",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "endoflame"
+			}
+		}],
+		
+	}],
+	rewards: [{
+		uid: "3c6eb728",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

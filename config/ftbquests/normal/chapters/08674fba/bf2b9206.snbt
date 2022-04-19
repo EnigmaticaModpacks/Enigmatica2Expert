@@ -1,0 +1,25 @@
+{
+	title: "{bq.quest947.name}",
+	icon: "advancedrocketry:alienwood",
+	x: 6.166666666666667d,
+	y: 11.25d,
+	text: [
+		"{bq.quest947.desc}"
+	],
+	dependencies: [
+		"d25f75cc"
+	],
+	tasks: [{
+		uid: "004be157",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:alienwood"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "6f19adac",
+		type: "choice",
+		table: 120
+	}]
+}

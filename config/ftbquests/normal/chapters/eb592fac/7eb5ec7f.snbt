@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest693.name}",
+	icon: "rftoolsdim:dimlet_workbench",
+	x: 6.666666666666667d,
+	y: 2.5d,
+	text: [
+		"{bq.quest693.desc}"
+	],
+	dependencies: [
+		"1af45b18"
+	],
+	tasks: [{
+		uid: "9e86d89a",
+		type: "item",
+		items: [{
+			item: "rftoolsdim:dimlet_workbench"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "b190e947",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

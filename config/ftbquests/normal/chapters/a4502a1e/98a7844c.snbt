@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest348.name}",
+	icon: {
+		id: "extrautils2:machine",
+		tag: {
+			Type: "extrautils2:generator_ice"
+		}
+	},
+	x: 16.0d,
+	y: -1.1666666666666667d,
+	text: [
+		"{bq.quest348.desc}"
+	],
+	dependencies: [
+		"42b1f141"
+	],
+	tasks: [{
+		uid: "2641b921",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:generator_ice"
+			}
+		}],
+		
+	}],
+	rewards: [{
+		uid: "4ef24009",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

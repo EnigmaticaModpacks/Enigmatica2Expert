@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest265.name}",
+	icon: "rftools:machine_infuser",
+	x: 2.125d,
+	y: 1.8541666666666665d,
+	text: [
+		"{bq.quest265.desc}"
+	],
+	dependencies: [
+		"f6e8e410"
+	],
+	size: 1.2083333333333333d,
+	tasks: [{
+		uid: "8820b6a5",
+		type: "item",
+		items: [{
+			item: "rftools:machine_infuser"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "3a436162",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

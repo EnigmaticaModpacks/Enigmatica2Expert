@@ -1,0 +1,14 @@
+{
+	x: -5.5d,
+	y: -0.5d,
+	dependencies: [
+		"3ea508f7"
+	],
+	tasks: [{
+		uid: "7fe8eef4",
+		type: "custom",
+		title: "{bq.quest898.name}",
+		icon: "rftools:machine_base",
+		disable_toast: true
+	}]
+}

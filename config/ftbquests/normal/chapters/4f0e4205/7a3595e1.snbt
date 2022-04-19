@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest865.name}",
+	icon: "twilightforest:trophy 1 3",
+	x: 5.833333333333333d,
+	y: -1.1666666666666667d,
+	text: [
+		"{bq.quest865.desc}"
+	],
+	dependencies: [
+		"1ae426b4"
+	],
+	tasks: [{
+		uid: "d61f7d98",
+		type: "item",
+		items: [{
+			item: "twilightforest:trophy 1 3"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f389f726",
+		type: "item",
+		item: "twilightforest:charm_of_keeping_3",
+		count: 8
+	},
+	{
+		uid: "96b4007c",
+		type: "command",
+		auto: "invisible",
+		command: "/advancement grant @p only twilightforest:progress_ur_ghast"
+	}]
+}

@@ -1,0 +1,37 @@
+{
+	title: "{bq.quest46.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "tconstruct:pan_head",
+			tag: {
+				Material: "netherrack"
+			}
+		}
+	},
+	{
+		item: {
+			id: "tconstruct:sword_blade",
+			tag: {
+				Material: "cactus"
+			}
+		}
+	},
+	{
+		item: {
+			id: "tconstruct:knife_blade",
+			tag: {
+				Material: "steel"
+			}
+		}
+	},
+	{
+		item: {
+			id: "thermalexpansion:strongbox",
+			tag: {
+				Facing: 3b,
+				Level: 0b
+			}
+		}
+	}]
+}

@@ -1,0 +1,70 @@
+{
+	title: "{bq.quest426.name}",
+	icon: "advancedrocketry:arcfurnace",
+	x: 6.166666666666667d,
+	y: 3.8333333333333335d,
+	text: [
+		"{bq.quest426.desc}"
+	],
+	dependencies: [
+		"e8c6a755"
+	],
+	tasks: [{
+		uid: "e1f8f434",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:arcfurnace"
+		}],
+		
+	},
+	{
+		uid: "f2634a63",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:blastbrick 81"
+		}],
+		
+	},
+	{
+		uid: "ca0e0fc6",
+		type: "item",
+		items: [{
+			item: "libvulpes:coil0 3 4"
+		}],
+		
+	},
+	{
+		uid: "71ccf6ea",
+		type: "item",
+		items: [{
+			item: "libvulpes:forgepowerinput 3"
+		}],
+		
+	},
+	{
+		uid: "fb363ef4",
+		type: "item",
+		items: [{
+			item: "libvulpes:hatch"
+		}],
+		
+	},
+	{
+		uid: "a2d8949a",
+		type: "item",
+		items: [{
+			item: "libvulpes:hatch 1 1"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "b95e5e66",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

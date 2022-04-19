@@ -1,0 +1,36 @@
+{
+	title: "{bq.quest893.name}",
+	icon: "industrialwires:ic2_connector",
+	x: 4.166666666666666d,
+	y: -0.5416666666666667d,
+	text: [
+		"{bq.quest893.desc}"
+	],
+	dependencies: [
+		"cae88f3f"
+	],
+	tasks: [{
+		uid: "72f01dd3",
+		type: "item",
+		items: [{
+			item: "industrialwires:ic2_connector 2"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "0ce336f9",
+		type: "item",
+		items: [{
+			id: "industrialwires:ic2_wire_coil",
+			tag: {
+				wireLength: 1024
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b9b92e9c",
+		type: "choice",
+		table: 112
+	}]
+}

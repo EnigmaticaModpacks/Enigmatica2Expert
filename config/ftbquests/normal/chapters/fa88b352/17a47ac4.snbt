@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest506.name}",
+	icon: "nuclearcraft:infuser_idle",
+	x: 1.8333333333333333d,
+	y: 10.166666666666666d,
+	text: [
+		"{bq.quest506.desc}"
+	],
+	dependencies: [
+		"626f1235",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "7d5a558c",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:infuser_idle"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "b444bddd",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

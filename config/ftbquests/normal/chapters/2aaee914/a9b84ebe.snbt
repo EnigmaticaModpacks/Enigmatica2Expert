@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest754.name}",
+	icon: "mekanism:machineblock2 1 7",
+	x: 2.166666666666667d,
+	y: 10.5d,
+	text: [
+		"{bq.quest754.desc}"
+	],
+	dependencies: [
+		"b149be6c"
+	],
+	tasks: [{
+		uid: "75a445ef",
+		type: "item",
+		items: [{
+			item: "mekanism:machineblock2 1 7"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4e88173b",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

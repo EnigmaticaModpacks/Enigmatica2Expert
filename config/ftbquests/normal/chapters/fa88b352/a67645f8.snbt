@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest504.name}",
+	icon: "nuclearcraft:extractor_idle",
+	x: 2.8333333333333335d,
+	y: 11.5d,
+	text: [
+		"{bq.quest504.desc}"
+	],
+	dependencies: [
+		"17a47ac4",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "91cbc746",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:extractor_idle"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "e74d70a7",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

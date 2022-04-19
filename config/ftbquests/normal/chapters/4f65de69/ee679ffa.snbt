@@ -1,0 +1,25 @@
+{
+	title: "{bq.quest782.name}",
+	icon: "storagedrawers:compdrawers",
+	x: 2.125d,
+	y: 7.041666666666667d,
+	text: [
+		"{bq.quest782.desc}"
+	],
+	dependencies: [
+		"9eaa496f"
+	],
+	tasks: [{
+		uid: "95c5ae70",
+		type: "item",
+		items: [{
+			item: "storagedrawers:compdrawers"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "69707904",
+		type: "choice",
+		table: 95
+	}]
+}

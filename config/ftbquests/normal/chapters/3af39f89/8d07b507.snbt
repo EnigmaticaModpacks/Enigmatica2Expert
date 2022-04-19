@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest243.name}",
+	icon: "thermalfoundation:upgrade",
+	x: 8.0d,
+	y: 2.6666666666666665d,
+	text: [
+		"{bq.quest243.desc}"
+	],
+	dependencies: [
+		"9c15c499"
+	],
+	tasks: [{
+		uid: "b6278f9b",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:upgrade"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "7bf45fde",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest834.name}",
+	icon: "appliedenergistics2:controller",
+	x: 4.0d,
+	y: 1.0d,
+	text: [
+		"{bq.quest834.desc}"
+	],
+	dependencies: [
+		"48f0d63f"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "811353fe",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:controller"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "808054db",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

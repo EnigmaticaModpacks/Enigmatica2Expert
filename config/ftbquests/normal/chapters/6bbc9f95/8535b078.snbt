@@ -1,0 +1,55 @@
+{
+	title: "{bq.quest678.name}",
+	icon: "thaumcraft:thaumium_helm",
+	x: 12.5d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest678.desc}"
+	],
+	dependencies: [
+		"644b9777"
+	],
+	tasks: [{
+		uid: "40b77703",
+		type: "item",
+		items: [{
+			item: "thaumcraft:thaumium_helm"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "5f284d38",
+		type: "item",
+		items: [{
+			item: "thaumcraft:thaumium_chest"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9f233d4a",
+		type: "item",
+		items: [{
+			item: "thaumcraft:thaumium_legs"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "6b5b3d69",
+		type: "item",
+		items: [{
+			item: "thaumcraft:thaumium_boots"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "24584383",
+		type: "choice",
+		table: 63
+	},
+	{
+		uid: "15b76898",
+		type: "command",
+		auto: "invisible",
+		command: "gamestage silentadd @p armor_thaumium"
+	}]
+}

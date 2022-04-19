@@ -1,0 +1,36 @@
+{
+	title: "{bq.quest151.name}",
+	icon: "astralsorcery:blockaltar",
+	x: -0.16666666666666663d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest151.desc}"
+	],
+	dependencies: [
+		"8a6186a6"
+	],
+	tasks: [{
+		uid: "444cd0ae",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockaltar"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "d60c0384",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	},
+	{
+		uid: "fe21d9fb",
+		type: "command",
+		auto: "invisible",
+		command: "/astralsorcery research @p BASIC_CRAFT"
+	}]
+}

@@ -1,0 +1,44 @@
+{
+	title: "{bq.quest669.name}",
+	icon: {
+		id: "thaumcraft:crystal_essence",
+		tag: {
+			Aspects: [{
+				amount: 1,
+				key: "aer"
+			}]
+		}
+	},
+	x: 10.833333333333334d,
+	y: 0.16666666666666669d,
+	text: [
+		"{bq.quest669.desc}"
+	],
+	dependencies: [
+		"fdb73b85"
+	],
+	tasks: [{
+		uid: "22f37f07",
+		type: "item",
+		items: [{
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "aer"
+				}]
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "1ab2c592",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

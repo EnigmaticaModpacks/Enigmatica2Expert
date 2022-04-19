@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest106.name}",
+	icon: "immersiveengineering:wooden_device0 1 2",
+	x: -0.16666666666666663d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest106.desc}"
+	],
+	dependencies: [
+		"3e86795a"
+	],
+	tasks: [{
+		uid: "ccf1a752",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:wooden_device0 1 2"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "04608320",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

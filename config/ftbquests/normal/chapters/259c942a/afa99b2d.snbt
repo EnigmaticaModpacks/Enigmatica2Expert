@@ -1,0 +1,54 @@
+{
+	title: "{bq.quest317.name}",
+	icon: "immersiveengineering:metal_device0 1 2",
+	x: -5.166666666666667d,
+	y: 4.833333333333333d,
+	text: [
+		"{bq.quest317.desc}"
+	],
+	dependencies: [
+		"30fb1498"
+	],
+	tasks: [{
+		uid: "2bb89852",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_device0 1 2"
+		}],
+		
+	},
+	{
+		uid: "4bebc58a",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:wirecoil 1 2"
+		}],
+		
+	},
+	{
+		uid: "49830bd9",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:connector 1 4"
+		}],
+		
+	},
+	{
+		uid: "002a9121",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:connector 1 5"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "5cb1e7d3",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

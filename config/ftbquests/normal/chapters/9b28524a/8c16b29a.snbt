@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest634.name}",
+	icon: "bloodmagic:dagger_of_sacrifice",
+	x: 3.0d,
+	y: 0.5d,
+	text: [
+		"{bq.quest634.desc}"
+	],
+	dependencies: [
+		"8227019b"
+	],
+	tasks: [{
+		uid: "09f8f014",
+		type: "item",
+		items: [{
+			item: "bloodmagic:dagger_of_sacrifice"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "48ad27e7",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

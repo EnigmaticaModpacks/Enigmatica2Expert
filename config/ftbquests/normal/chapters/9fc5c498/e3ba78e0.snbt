@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest710.name}",
+	icon: "enderio:item_material 1 53",
+	x: 10.166666666666666d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest710.desc}"
+	],
+	dependencies: [
+		"0cce2fa6"
+	],
+	tasks: [{
+		uid: "a068c5b4",
+		type: "item",
+		items: [{
+			item: "enderio:item_material 1 53"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8177facc",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

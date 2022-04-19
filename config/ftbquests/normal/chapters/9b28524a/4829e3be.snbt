@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest633.name}",
+	icon: "bloodmagic:sigil_seer",
+	x: 4.0d,
+	y: 0.5d,
+	text: [
+		"{bq.quest633.desc}"
+	],
+	dependencies: [
+		"1b9ee0ad"
+	],
+	tasks: [{
+		uid: "7dcf5f9f",
+		type: "item",
+		items: [{
+			item: "bloodmagic:sigil_seer"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "da00fc4f",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

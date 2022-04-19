@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest1037.name}",
+	icon: "cyclicmagic:charm_speed",
+	x: -0.8333333333333333d,
+	y: 14.166666666666666d,
+	text: [
+		"{bq.quest1037.desc}"
+	],
+	dependencies: [
+		"9e222e1c"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "3a38d912",
+		type: "item",
+		items: [{
+			id: "cyclicmagic:charm_speed",
+			tag: {}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "247684e0",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

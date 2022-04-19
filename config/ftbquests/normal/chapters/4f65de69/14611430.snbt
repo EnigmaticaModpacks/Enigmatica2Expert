@@ -1,0 +1,33 @@
+{
+	title: "{bq.quest60.name}",
+	icon: {
+		id: "tconstruct:sharpening_kit",
+		tag: {
+			Material: "draconic_metal"
+		}
+	},
+	x: 17.125d,
+	y: 3.5d,
+	text: [
+		"{bq.quest60.desc}"
+	],
+	dependencies: [
+		"5c870b2e"
+	],
+	tasks: [{
+		uid: "5d242b8c",
+		type: "item",
+		items: [{
+			id: "tconstruct:sharpening_kit",
+			tag: {
+				Material: "draconic_metal"
+			}
+		}],
+		
+	}],
+	rewards: [{
+		uid: "88896799",
+		type: "choice",
+		table: 29
+	}]
+}

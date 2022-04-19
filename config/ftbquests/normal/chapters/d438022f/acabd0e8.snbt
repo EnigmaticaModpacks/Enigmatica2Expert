@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest964.name}",
+	icon: "darkutils:ender_hopper",
+	x: -6.333333333333333d,
+	y: 19.333333333333332d,
+	text: [
+		"{bq.quest964.desc}"
+	],
+	dependencies: [
+		"50ecf6a3"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "1d7cd050",
+		type: "item",
+		items: [{
+			item: "darkutils:ender_hopper"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "86f2762a",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

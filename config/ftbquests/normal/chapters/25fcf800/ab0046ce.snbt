@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest477.name}",
+	icon: "environmentaltech:void_ore_miner_cont_2",
+	x: 3.75d,
+	y: 5.0d,
+	text: [
+		"{bq.quest477.desc}"
+	],
+	dependencies: [
+		"d2bbd45a",
+		"a4a22291"
+	],
+	tasks: [{
+		uid: "dac4c702",
+		type: "item",
+		items: [{
+			item: "environmentaltech:void_ore_miner_cont_2"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "73fe81bf",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest1003.name}",
+	icon: "randomthings:spectreenergyinjector",
+	x: -11.166666666666666d,
+	y: 10.666666666666666d,
+	text: [
+		"{bq.quest1003.desc}"
+	],
+	dependencies: [
+		"9092f6f7"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "66105011",
+		type: "item",
+		items: [{
+			item: "randomthings:spectreenergyinjector"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "6453cc64",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

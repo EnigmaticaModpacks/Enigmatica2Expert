@@ -1,0 +1,16 @@
+{
+	title: "{bq.quest725.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "animania:raw_prime_beef",
+		count: 32
+	},
+	{
+		item: "animania:raw_prime_pork",
+		count: 32
+	},
+	{
+		item: "animania:raw_prime_rabbit",
+		count: 32
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest644.name}",
+	icon: "thaumcraft:log_silverwood",
+	x: 5.166666666666667d,
+	y: 2.5d,
+	text: [
+		"{bq.quest644.desc}"
+	],
+	dependencies: [
+		"4f409b3c"
+	],
+	tasks: [{
+		uid: "3b2e32ae",
+		type: "item",
+		items: [{
+			item: "thaumcraft:log_silverwood"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "5c532f61",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

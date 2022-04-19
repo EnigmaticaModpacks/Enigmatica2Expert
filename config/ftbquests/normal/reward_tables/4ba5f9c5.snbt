@@ -1,0 +1,24 @@
+{
+	title: "{bq.quest779.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "ic2:nano_saber",
+			tag: {
+				charge: 160000.0d
+			}
+		}
+	},
+	{
+		item: "ic2:crafting 1 15",
+		count: 8
+	},
+	{
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

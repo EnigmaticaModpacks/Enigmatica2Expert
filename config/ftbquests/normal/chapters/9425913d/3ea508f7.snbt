@@ -1,0 +1,26 @@
+{
+	title: "{bq.quest898.name}",
+	icon: "rftools:machine_base",
+	x: 2.0d,
+	y: 0.0d,
+	text: [
+		"{bq.quest898.desc}"
+	],
+	dependencies: [
+		"e07d1afe"
+	],
+	size: 0.66d,
+	tasks: [{
+		uid: "0156741d",
+		type: "item",
+		items: [{
+			item: "rftools:machine_base"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "753d57bf",
+		type: "item",
+		item: "rftools:timer_block"
+	}]
+}

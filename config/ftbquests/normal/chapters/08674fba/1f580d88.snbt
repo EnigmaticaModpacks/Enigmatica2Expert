@@ -1,0 +1,23 @@
+{
+	title: "{bq.quest402.name}",
+	icon: "libvulpes:holoprojector",
+	x: 2.5d,
+	y: 2.5d,
+	text: [
+		"{bq.quest402.desc}"
+	],
+	dependencies: [
+		"9fddddb0"
+	],
+	rewards: [{
+		uid: "1eee5b5d",
+		type: "xp_levels",
+		xp_levels: 10
+	},
+	{
+		uid: "9c3d89f9",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has begun the Advanced Rocketry questline!"
+	}]
+}

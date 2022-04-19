@@ -1,0 +1,77 @@
+{
+	title: "{bq.quest556.name}",
+	icon: {
+		id: "draconicevolution:wyvern_chest",
+		tag: {
+			Energy: 2000000
+		}
+	},
+	x: 7.333333333333333d,
+	y: 8.666666666666666d,
+	text: [
+		"{bq.quest556.desc}"
+	],
+	dependencies: [
+		"64f8083b"
+	],
+	tasks: [{
+		uid: "4b54eadc",
+		type: "item",
+		items: [{
+			id: "draconicevolution:wyvern_helm",
+			tag: {
+				Energy: 2000000
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "87ad0424",
+		type: "item",
+		items: [{
+			id: "draconicevolution:wyvern_chest",
+			tag: {
+				Energy: 2000000
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "675bc794",
+		type: "item",
+		items: [{
+			id: "draconicevolution:wyvern_legs",
+			tag: {
+				Energy: 2000000
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "7805dd56",
+		type: "item",
+		items: [{
+			id: "draconicevolution:wyvern_boots",
+			tag: {
+				Energy: 2000000
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e4e15c8b",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "legendary"
+			}
+		}
+	},
+	{
+		uid: "d82fcf0c",
+		type: "command",
+		auto: "invisible",
+		command: "gamestage silentadd @p armor_wyvern"
+	}]
+}

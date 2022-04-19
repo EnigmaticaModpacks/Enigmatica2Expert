@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest310.name}",
+	icon: "actuallyadditions:block_phantomface",
+	x: 3.6666666666666665d,
+	y: 4.5d,
+	text: [
+		"{bq.quest310.desc}"
+	],
+	dependencies: [
+		"bebab91b"
+	],
+	tasks: [{
+		uid: "f2656b9f",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_phantomface"
+		}],
+		
+	},
+	{
+		uid: "20b9599e",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_phantom_connector"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "0e3cbf36",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

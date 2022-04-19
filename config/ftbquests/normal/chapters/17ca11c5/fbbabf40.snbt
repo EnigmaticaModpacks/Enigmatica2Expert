@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest820.name}",
+	icon: "extendedcrafting:table_advanced",
+	x: 3.791666666666667d,
+	y: -0.6249999999999996d,
+	text: [
+		"{bq.quest820.desc}"
+	],
+	dependencies: [
+		"b4b83088"
+	],
+	size: 1.1666666666666667d,
+	tasks: [{
+		uid: "00ca32b1",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:table_advanced"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "374a32d8",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

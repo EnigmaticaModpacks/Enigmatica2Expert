@@ -1,0 +1,107 @@
+{
+	title: "{bq.quest247.name}",
+	icon: {
+		id: "simple_trophies:trophy",
+		tag: {
+			TrophyColorGreen: 151,
+			TrophyShowsTooltip: 1b,
+			TrophyVariant: "gold",
+			TrophyItem: {
+				Count: 1b,
+				id: "draconicevolution:mob_soul",
+				tag: {
+					EntityName: "minecraft:cow"
+				},
+				Damage: 0s
+			},
+			TrophyColorBlue: 140,
+			TrophyColorRed: 168,
+			TrophyName: "§cAnimals Master Trophy§r"
+		}
+	},
+	x: 4.5d,
+	y: 6.75d,
+	text: [
+		"{bq.quest247.desc}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"e4f22972",
+		"1af53634",
+		"3e7b8b7a",
+		"a65a3f5b",
+		"4c5d985f",
+		"eaad67ab",
+		"ccee3067",
+		"6a56d29d",
+		"dabb9837",
+		"13baba37",
+		"67de8e53",
+		"dcb947b4",
+		"b02e70fe",
+		"90e4fbf5",
+		"95b518e0",
+		"8a4ed516",
+		"9df40b6e",
+		"46340f69",
+		"7d71596f",
+		"ac45cb5a",
+		"d1d3c3b1",
+		"06c349a7",
+		"7d4799a3",
+		"83168172",
+		"0984d462",
+		"ab77ca11",
+		"1fa3be0b",
+		"7d71c0d9",
+		"eae0ca88",
+		"9fd7c53e",
+		"0336805a",
+		"af77451b",
+		"5016eb7b",
+		"bba29d8c",
+		"235e1eb1",
+		"8d526720",
+		"27ad9d1e",
+		"4d822774",
+		"47580ca1",
+		"9ce53ddc",
+		"a5033afa",
+		"121377e8",
+		"61cc4477",
+		"f99929a2",
+		"fa0c8cf1",
+		"137208cc"
+	],
+	size: 1.5d,
+	rewards: [{
+		uid: "217003b1",
+		type: "item",
+		auto: "enabled",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 151,
+				TrophyShowsTooltip: 1b,
+				TrophyVariant: "gold",
+				TrophyItem: {
+					Count: 1b,
+					id: "draconicevolution:mob_soul",
+					tag: {
+						EntityName: "minecraft:cow"
+					},
+					Damage: 0s
+				},
+				TrophyColorBlue: 140,
+				TrophyColorRed: 168,
+				TrophyName: "§cAnimals Master Trophy§r"
+			}
+		}
+	},
+	{
+		uid: "28f095d0",
+		type: "command",
+		auto: "invisible",
+		command: "/say §l@p§r has fully completed the §n§cAnimals§r chapter!§r ```Congrats!```"
+	}]
+}

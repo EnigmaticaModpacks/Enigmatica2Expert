@@ -1,0 +1,15 @@
+{
+	title: "{bq.quest771.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "rats:rat_upgrade_aristocrat"
+	},
+	{
+		item: "eyeofdragons:eye_of_icedragon",
+		count: 3
+	},
+	{
+		item: "eyeofdragons:eye_of_firedragon",
+		count: 3
+	}]
+}

@@ -1,0 +1,78 @@
+{
+	title: "{bq.quest561.name}",
+	icon: {
+		id: "draconicevolution:draconic_chest",
+		tag: {
+			Energy: 16000000
+		}
+	},
+	x: 8.5d,
+	y: 8.666666666666666d,
+	text: [
+		"{bq.quest561.desc}"
+	],
+	dependencies: [
+		"b5098494",
+		"9043cbbc"
+	],
+	tasks: [{
+		uid: "67446d22",
+		type: "item",
+		items: [{
+			id: "draconicevolution:draconic_helm",
+			tag: {
+				Energy: 16000000
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "3351bb7d",
+		type: "item",
+		items: [{
+			id: "draconicevolution:draconic_chest",
+			tag: {
+				Energy: 16000000
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "53817c7e",
+		type: "item",
+		items: [{
+			id: "draconicevolution:draconic_legs",
+			tag: {
+				Energy: 16000000
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a118c677",
+		type: "item",
+		items: [{
+			id: "draconicevolution:draconic_boots",
+			tag: {
+				Energy: 16000000
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d3f6dbd4",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "legendary"
+			}
+		}
+	},
+	{
+		uid: "bc69f68f",
+		type: "command",
+		auto: "invisible",
+		command: "gamestage silentadd @p armor_draconic"
+	}]
+}

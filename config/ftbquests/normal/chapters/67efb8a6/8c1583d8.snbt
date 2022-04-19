@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest547.name}",
+	icon: "draconicevolution:crystal_binder",
+	x: 0.375d,
+	y: 8.25d,
+	text: [
+		"{bq.quest547.desc}"
+	],
+	dependencies: [
+		"0f75481a"
+	],
+	tasks: [{
+		uid: "80420ae7",
+		type: "item",
+		items: [{
+			item: "draconicevolution:crystal_binder"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "5f970098",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest343.name}",
+	icon: {
+		id: "extrautils2:machine",
+		tag: {
+			Type: "extrautils2:generator_redstone"
+		}
+	},
+	x: 14.0d,
+	y: 3.0d,
+	text: [
+		"{bq.quest343.desc}"
+	],
+	dependencies: [
+		"f31c5840"
+	],
+	tasks: [{
+		uid: "70ab956c",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:generator_redstone"
+			}
+		}],
+		
+	}],
+	rewards: [{
+		uid: "287f2354",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

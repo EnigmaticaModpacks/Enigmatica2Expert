@@ -1,0 +1,10 @@
+{
+	title: "{bq.chapter9.name}",
+	icon: "thaumcraft:goggles",
+	description: [
+		"{bq.chapter9.desc}"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

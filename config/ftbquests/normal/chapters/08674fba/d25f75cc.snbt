@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest439.name}",
+	icon: "advancedrocketry:warpmonitor",
+	x: 6.166666666666667d,
+	y: 9.833333333333334d,
+	text: [
+		"{bq.quest439.desc}"
+	],
+	dependencies: [
+		"bf9ba1c8"
+	],
+	tasks: [{
+		uid: "98fe000d",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:warpmonitor"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "ba2f0dbc",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

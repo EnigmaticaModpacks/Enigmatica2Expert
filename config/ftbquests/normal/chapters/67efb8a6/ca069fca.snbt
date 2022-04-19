@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest524.name}",
+	icon: "draconicevolution:chaotic_core",
+	x: 10.5d,
+	y: 6.75d,
+	text: [
+		"{bq.quest524.desc}"
+	],
+	dependencies: [
+		"b5098494",
+		"e41f2331"
+	],
+	tasks: [{
+		uid: "89e7bb55",
+		type: "item",
+		items: [{
+			item: "draconicevolution:chaotic_core"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "15b7a9f1",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

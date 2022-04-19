@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest270.name}",
+	icon: "rftools:shape_card",
+	x: 1.0d,
+	y: 5.0d,
+	text: [
+		"{bq.quest270.desc}"
+	],
+	dependencies: [
+		"8eca55bc"
+	],
+	tasks: [{
+		uid: "172c6a87",
+		type: "item",
+		items: [{
+			item: "rftools:shape_card"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "78fa9e71",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

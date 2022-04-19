@@ -1,0 +1,16 @@
+{
+	title: "{bq.quest727.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "netherendingores:ore_nether_vanilla 1 3",
+		count: 12
+	},
+	{
+		item: "netherendingores:ore_nether_vanilla 1 1",
+		count: 6
+	},
+	{
+		item: "netherendingores:ore_nether_modded_1 1 6",
+		count: 2
+	}]
+}

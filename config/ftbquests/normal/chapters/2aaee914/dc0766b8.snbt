@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest201.name}",
+	icon: "mekanism:machineblock 1 4",
+	x: 8.833333333333334d,
+	y: 6.5d,
+	text: [
+		"{bq.quest201.desc}"
+	],
+	dependencies: [
+		"f79e06c9"
+	],
+	tasks: [{
+		uid: "344bb748",
+		type: "item",
+		items: [{
+			item: "mekanism:machineblock 1 4"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "07184478",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "epic"
+			}
+		}
+	}]
+}

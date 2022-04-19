@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest108.name}",
+	icon: "immersiveengineering:stone_decoration 1 2",
+	x: -0.16666666666666663d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest108.desc}"
+	],
+	dependencies: [
+		"876a8652"
+	],
+	tasks: [{
+		uid: "f377d193",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:stone_decoration 27 2"
+		}],
+		
+	},
+	{
+		uid: "77e984ee",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_device1 2"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "5641e469",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

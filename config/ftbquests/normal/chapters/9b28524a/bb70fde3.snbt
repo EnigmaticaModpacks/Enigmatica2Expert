@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest631.name}",
+	icon: "bloodmagic:activation_crystal 1 1",
+	x: 6.0d,
+	y: 0.5d,
+	text: [
+		"{bq.quest631.desc}"
+	],
+	dependencies: [
+		"f45af488"
+	],
+	tasks: [{
+		uid: "8f58f691",
+		type: "item",
+		items: [{
+			item: "bloodmagic:activation_crystal 1 1"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "96ed7726",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

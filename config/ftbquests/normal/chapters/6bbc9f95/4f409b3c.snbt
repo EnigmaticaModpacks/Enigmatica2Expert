@@ -1,0 +1,47 @@
+{
+	title: "{bq.quest635.name}",
+	icon: "thaumcraft:thaumonomicon",
+	x: 0.6666666666666666d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest635.desc}"
+	],
+	dependencies: [
+		"2957f2cc"
+	],
+	tasks: [{
+		uid: "bf28bebf",
+		type: "item",
+		items: [{
+			item: "thaumcraft:thaumonomicon"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "4ca4f95e",
+		type: "item",
+		items: [{
+			item: "thaumcraft:salis_mundus"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "579847ba",
+		type: "item",
+		items: [{
+			item: "minecraft:bookshelf"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "106cb215",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has begun the Thaumcraft questline!"
+	},
+	{
+		uid: "4c0fff02",
+		type: "xp_levels",
+		xp_levels: 15
+	}]
+}

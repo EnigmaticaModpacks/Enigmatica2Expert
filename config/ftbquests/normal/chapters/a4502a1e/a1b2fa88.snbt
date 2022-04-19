@@ -1,0 +1,21 @@
+{
+	title: "{bq.quest330.name}",
+	icon: "extrautils2:ingredients 1 11",
+	x: 1.1666666666666665d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest330.desc}"
+	],
+	dependencies: [
+		"29946b47"
+	],
+	tasks: [{
+		uid: "050094e7",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "aba42e22",
+		type: "xp_levels",
+		xp_levels: 5
+	}]
+}

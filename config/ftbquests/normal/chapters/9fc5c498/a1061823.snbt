@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest592.name}",
+	icon: "enderio:item_soul_vial",
+	x: 10.166666666666666d,
+	y: 3.8333333333333335d,
+	text: [
+		"{bq.quest592.desc}"
+	],
+	dependencies: [
+		"f91632f4"
+	],
+	tasks: [{
+		uid: "d76569f2",
+		type: "item",
+		items: [{
+			item: "enderio:item_soul_vial"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "656a9b13",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

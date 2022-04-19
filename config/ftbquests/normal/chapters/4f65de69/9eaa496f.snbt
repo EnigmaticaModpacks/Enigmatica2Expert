@@ -1,0 +1,49 @@
+{
+	title: "{bq.quest49.name}",
+	icon: {
+		id: "tconstruct:sharpening_kit",
+		tag: {
+			Material: "iron"
+		}
+	},
+	x: 2.125d,
+	y: 3.5d,
+	text: [
+		"{bq.quest49.desc}"
+	],
+	dependencies: [
+		"18c9097c"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "fe310866",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any oreIron"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "oreIron"
+				}
+			}
+		}],
+		count: 2L
+	},
+	{
+		uid: "78fd66a6",
+		type: "item",
+		items: [{
+			item: "minecraft:iron_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "0f03ee6a",
+		type: "choice",
+		table: 21
+	}]
+}

@@ -1,0 +1,28 @@
+{
+	title: "{bq.quest739.name}",
+	icon: "immersiveengineering:metal_multiblock 1 11",
+	x: 3.1666666666666665d,
+	y: 6.166666666666667d,
+	text: [
+		"{bq.quest739.desc}"
+	],
+	dependencies: [
+		"2de1b9db"
+	],
+	tasks: [{
+		uid: "5b5c794d",
+		type: "advancement",
+		advancement: "immersiveengineering:main/multiblock_excavator",
+		criterion: ""
+	}],
+	rewards: [{
+		uid: "e89d5304",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

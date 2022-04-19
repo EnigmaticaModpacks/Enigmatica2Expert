@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest416.name}",
+	icon: "botania:spreader 1 3",
+	x: 9.166666666666666d,
+	y: 9.166666666666666d,
+	text: [
+		"{bq.quest416.desc}"
+	],
+	dependencies: [
+		"5672d99b",
+		"8fd96e22"
+	],
+	tasks: [{
+		uid: "8af85118",
+		type: "item",
+		items: [{
+			item: "botania:spreader 1 3"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "4ffa311b",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

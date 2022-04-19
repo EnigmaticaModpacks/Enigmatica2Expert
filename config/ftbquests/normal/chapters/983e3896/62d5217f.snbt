@@ -1,0 +1,52 @@
+{
+	title: "{bq.quest168.name}",
+	icon: {
+		id: "astralsorcery:itemcelestialcrystal",
+		tag: {
+			astralsorcery: {
+				crystalProperties: {
+					collectiveCapability: 100,
+					size: 900,
+					purity: 100
+				}
+			}
+		}
+	},
+	x: -0.16666666666666663d,
+	y: 6.166666666666667d,
+	text: [
+		"{bq.quest168.desc}"
+	],
+	dependencies: [
+		"e02d38ab",
+		"95f06cae",
+		"0d03e9a0"
+	],
+	tasks: [{
+		uid: "b650d8ba",
+		type: "item",
+		items: [{
+			id: "astralsorcery:itemcelestialcrystal",
+			tag: {
+				astralsorcery: {
+					crystalProperties: {
+						collectiveCapability: 100,
+						size: 900,
+						purity: 100
+					}
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "2c59bed2",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

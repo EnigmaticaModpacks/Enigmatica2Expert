@@ -1,0 +1,23 @@
+{
+	title: "{bq.quest121.name}",
+	icon: "actuallyadditions:item_booklet",
+	x: -5.5d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest121.desc}"
+	],
+	dependencies: [
+		"a626e5ea"
+	],
+	rewards: [{
+		uid: "9b9ade97",
+		type: "item",
+		item: "actuallyadditions:item_laser_wrench"
+	},
+	{
+		uid: "54f7af60",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has begun the Actually Additions questline!"
+	}]
+}

@@ -1,0 +1,16 @@
+{
+	title: "{bq.quest649.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	},
+	{
+		item: "thaumcraft:curio 1 1",
+		count: 60
+	}]
+}

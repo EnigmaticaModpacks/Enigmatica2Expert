@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest475.name}",
+	icon: "environmentaltech:void_res_miner_cont_2",
+	x: 8.25d,
+	y: 2.0d,
+	text: [
+		"{bq.quest475.desc}"
+	],
+	dependencies: [
+		"b2bc3ad7"
+	],
+	tasks: [{
+		uid: "f086387a",
+		type: "item",
+		items: [{
+			item: "environmentaltech:void_res_miner_cont_1"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "cd55d018",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

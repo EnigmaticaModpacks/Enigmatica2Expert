@@ -1,0 +1,18 @@
+{
+	title: "{bq.quest148.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "ic2:wrench_new"
+	},
+	{
+		item: "thermalfoundation:tool.shield_copper"
+	},
+	{
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest645.name}",
+	icon: "thaumcraft:log_greatwood",
+	x: 3.1666666666666665d,
+	y: 5.166666666666667d,
+	text: [
+		"{bq.quest645.desc}"
+	],
+	dependencies: [
+		"4f409b3c"
+	],
+	tasks: [{
+		uid: "55023cf2",
+		type: "item",
+		items: [{
+			item: "thaumcraft:log_greatwood"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "2f7e8781",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

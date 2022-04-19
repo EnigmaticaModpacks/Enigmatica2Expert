@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest953.name}",
+	icon: "bibliocraft:typewriter",
+	x: -11.166666666666666d,
+	y: 24.166666666666668d,
+	text: [
+		"{bq.quest953.desc}"
+	],
+	dependencies: [
+		"6eea845e"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "d3d13d41",
+		type: "item",
+		items: [{
+			item: "bibliocraft:typewriter"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "e5e574a4",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "75910ce9",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

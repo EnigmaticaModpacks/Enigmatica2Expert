@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest98.name}",
+	icon: "forestry:engine_generator",
+	x: -7.5d,
+	y: 4.791666666666667d,
+	text: [
+		"{bq.quest98.desc}"
+	],
+	dependencies: [
+		"72395a5a"
+	],
+	tasks: [{
+		uid: "6f934b85",
+		type: "item",
+		items: [{
+			item: "forestry:engine_generator"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "0461482e",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

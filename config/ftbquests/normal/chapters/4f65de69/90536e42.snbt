@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest47.name}",
+	icon: {
+		id: "tconstruct:sharpening_kit",
+		tag: {
+			Material: "copper"
+		}
+	},
+	x: -0.875d,
+	y: 3.5d,
+	text: [
+		"{bq.quest47.desc}"
+	],
+	dependencies: [
+		"ca359f03"
+	],
+	tasks: [{
+		uid: "fbca1185",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:ore 2"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "9e3ab801",
+		type: "choice",
+		table: 19
+	}]
+}

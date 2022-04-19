@@ -1,0 +1,14 @@
+{
+	title: "{bq.quest782.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "storagedrawers:quantify_key"
+	},
+	{
+		item: "fluiddrawers:tank"
+	},
+	{
+		item: "storagedrawers:upgrade_template",
+		count: 4
+	}]
+}

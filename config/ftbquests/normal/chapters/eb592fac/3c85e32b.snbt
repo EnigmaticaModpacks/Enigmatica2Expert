@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest275.name}",
+	icon: "rftools:matter_booster",
+	x: -1.875d,
+	y: 3.125d,
+	text: [
+		"{bq.quest275.desc}"
+	],
+	dependencies: [
+		"f6e8e410"
+	],
+	size: 1.25d,
+	tasks: [{
+		uid: "6db880ee",
+		type: "item",
+		items: [{
+			item: "rftools:matter_booster"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "85ef96de",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

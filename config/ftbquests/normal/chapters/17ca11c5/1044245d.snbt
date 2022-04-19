@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest894.name}",
+	icon: "storagedrawers:upgrade_creative",
+	x: 5.208333333333333d,
+	y: 3.5d,
+	text: [
+		"{bq.quest894.desc}"
+	],
+	dependencies: [
+		"a1377b51"
+	],
+	tasks: [{
+		uid: "bf80a009",
+		type: "item",
+		items: [{
+			item: "storagedrawers:upgrade_creative"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "509bf596",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

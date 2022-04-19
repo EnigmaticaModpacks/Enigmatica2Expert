@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest699.name}",
+	icon: "industrialforegoing:sludge_refiner",
+	x: 1.0d,
+	y: 7.5d,
+	text: [
+		"{bq.quest699.desc}"
+	],
+	dependencies: [
+		"66102e1b"
+	],
+	tasks: [{
+		uid: "72c2d822",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:sludge_refiner"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "a6bcaeef",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

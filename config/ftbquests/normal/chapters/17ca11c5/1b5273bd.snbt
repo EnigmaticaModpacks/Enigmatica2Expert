@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest926.name}",
+	icon: "psicosts:creative_cell",
+	x: 1.125d,
+	y: -0.625d,
+	text: [
+		"{bq.quest926.desc}"
+	],
+	dependencies: [
+		"fbbabf40"
+	],
+	tasks: [{
+		uid: "0d64eeee",
+		type: "item",
+		items: [{
+			item: "psicosts:creative_cell"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "6f566d11",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "legendary"
+			}
+		}
+	}]
+}

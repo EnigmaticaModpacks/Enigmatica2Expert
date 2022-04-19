@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest513.name}",
+	icon: "nuclearcraft:isotope_separator_idle",
+	x: 2.8333333333333335d,
+	y: 3.5d,
+	text: [
+		"{bq.quest513.desc}"
+	],
+	dependencies: [
+		"626f1235",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "df55c651",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:isotope_separator_idle"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "05bff2fd",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

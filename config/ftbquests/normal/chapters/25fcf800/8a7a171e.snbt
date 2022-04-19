@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest471.name}",
+	icon: "environmentaltech:structure_frame_5",
+	x: 6.75d,
+	y: 8.0d,
+	text: [
+		"{bq.quest471.desc}"
+	],
+	dependencies: [
+		"39ba44e7",
+		"f210c3f3"
+	],
+	tasks: [{
+		uid: "1447b916",
+		type: "item",
+		items: [{
+			item: "environmentaltech:structure_frame_5"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "db77acd0",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

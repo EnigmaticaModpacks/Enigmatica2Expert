@@ -1,0 +1,41 @@
+{
+	title: "{bq.quest937.name}",
+	icon: "draconicevolution:energy_storage_core",
+	x: 2.5d,
+	y: 5.0d,
+	text: [
+		"{bq.quest937.desc}"
+	],
+	dependencies: [
+		"a9d391e5"
+	],
+	tasks: [{
+		uid: "3ca6666d",
+		type: "item",
+		items: [{
+			item: "draconicevolution:energy_storage_core"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "161d3862",
+		type: "item",
+		items: [{
+			item: "draconicevolution:energy_pylon 2"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "386813db",
+		type: "item",
+		items: [{
+			item: "draconicevolution:particle_generator 4 2"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "cf6189d7",
+		type: "item",
+		item: "draconicevolution:magnet"
+	}]
+}

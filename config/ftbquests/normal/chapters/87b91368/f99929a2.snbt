@@ -1,0 +1,26 @@
+{
+	title: "{bq.quest723.name}",
+	icon: "rats:rat_upgrade_basic",
+	x: -5.0d,
+	y: 4.208333333333333d,
+	text: [
+		"{bq.quest723.desc}"
+	],
+	dependencies: [
+		"67de8e53"
+	],
+	size: 1.4166666666666667d,
+	tasks: [{
+		uid: "152b581c",
+		type: "item",
+		items: [{
+			item: "rats:rat_upgrade_basic"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "53e1ee2e",
+		type: "choice",
+		table: 72
+	}]
+}

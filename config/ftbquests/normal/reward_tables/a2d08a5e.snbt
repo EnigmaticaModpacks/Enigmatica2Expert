@@ -1,0 +1,27 @@
+{
+	title: "{bq.quest716.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "danknull:dank_null_4"
+	},
+	{
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	},
+	{
+		item: {
+			id: "extrautils2:drum",
+			Damage: 2s,
+			tag: {
+				Fluid: {
+					FluidName: "biofuel",
+					Amount: 4096000
+				}
+			}
+		}
+	}]
+}

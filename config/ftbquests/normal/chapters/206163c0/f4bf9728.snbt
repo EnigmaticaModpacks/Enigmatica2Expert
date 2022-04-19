@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest99.name}",
+	icon: "forestry:fabricator",
+	x: -0.8333333333333333d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest99.desc}"
+	],
+	dependencies: [
+		"4007e26a"
+	],
+	tasks: [{
+		uid: "55e8baf0",
+		type: "item",
+		items: [{
+			item: "forestry:fabricator"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "6adc491f",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

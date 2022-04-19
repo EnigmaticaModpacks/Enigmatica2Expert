@@ -1,0 +1,25 @@
+{
+	title: "{bq.quest797.name}",
+	icon: "morphtool:tool",
+	x: 3.625d,
+	y: 6.041666666666667d,
+	text: [
+		"{bq.quest797.desc}"
+	],
+	dependencies: [
+		"dabc815c"
+	],
+	tasks: [{
+		uid: "d2fe4d9d",
+		type: "item",
+		items: [{
+			item: "morphtool:tool"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "510467a7",
+		type: "choice",
+		table: 101
+	}]
+}

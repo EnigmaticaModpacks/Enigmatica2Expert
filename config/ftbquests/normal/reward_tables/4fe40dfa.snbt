@@ -1,0 +1,16 @@
+{
+	title: "{bq.quest36.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "extrautils2:passivegenerator 1 3",
+		count: 2
+	},
+	{
+		item: "extrautils2:ingredients 1 6",
+		count: 8
+	},
+	{
+		item: "extrautils2:ineffableglass 1 3",
+		count: 32
+	}]
+}

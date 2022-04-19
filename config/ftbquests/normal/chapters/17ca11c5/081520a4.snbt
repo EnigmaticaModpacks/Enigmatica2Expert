@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest43.name}",
+	icon: "extrautils2:decorativesolid 1 8",
+	x: 9.5d,
+	y: 2.208333333333334d,
+	text: [
+		"{bq.quest43.desc}"
+	],
+	dependencies: [
+		"0c8a0b69"
+	],
+	tasks: [{
+		uid: "50365d42",
+		type: "item",
+		items: [{
+			item: "extrautils2:decorativesolid 1 8"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ee3e7f74",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "epic"
+			}
+		}
+	}]
+}

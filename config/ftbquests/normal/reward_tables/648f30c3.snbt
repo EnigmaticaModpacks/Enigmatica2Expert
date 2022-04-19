@@ -1,0 +1,16 @@
+{
+	title: "{bq.quest867.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "twilightforest:ender_bow"
+	},
+	{
+		item: "twilightforest:ice_bow"
+	},
+	{
+		item: "twilightforest:triple_bow"
+	},
+	{
+		item: "twilightforest:seeker_bow"
+	}]
+}

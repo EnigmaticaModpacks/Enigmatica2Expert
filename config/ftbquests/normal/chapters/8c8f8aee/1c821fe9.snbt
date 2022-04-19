@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest322.name}",
+	icon: {
+		id: "actuallyadditions:item_battery_quintuple",
+		tag: {
+			Energy: 2000000
+		}
+	},
+	x: -5.5d,
+	y: 10.833333333333334d,
+	text: [
+		"{bq.quest322.desc}"
+	],
+	dependencies: [
+		"0e3f4ad2"
+	],
+	tasks: [{
+		uid: "2bbe6b98",
+		type: "item",
+		items: [{
+			id: "actuallyadditions:item_battery_quintuple",
+			tag: {
+				Energy: 2000000
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "da6868dd",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "epic"
+			}
+		}
+	}]
+}

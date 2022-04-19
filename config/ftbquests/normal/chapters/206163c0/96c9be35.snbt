@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest289.name}",
+	icon: "forestry:engine_peat",
+	x: -6.166666666666667d,
+	y: 4.833333333333333d,
+	text: [
+		"{bq.quest289.desc}"
+	],
+	dependencies: [
+		"b9da4db4"
+	],
+	tasks: [{
+		uid: "7941524e",
+		type: "item",
+		items: [{
+			item: "forestry:engine_peat"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "25ef8b37",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

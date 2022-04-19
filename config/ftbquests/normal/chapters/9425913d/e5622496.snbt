@@ -1,0 +1,25 @@
+{
+	title: "{bq.quest36.name}",
+	icon: "extrautils2:machine",
+	x: 7.5d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest36.desc}"
+	],
+	dependencies: [
+		"00f29513"
+	],
+	tasks: [{
+		uid: "0fdc7b29",
+		type: "item",
+		items: [{
+			item: "extrautils2:machine"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "34547147",
+		type: "choice",
+		table: 13
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest377.name}",
+	icon: "botania:travelbelt",
+	x: 6.166666666666667d,
+	y: 3.8333333333333335d,
+	text: [
+		"{bq.quest377.desc}"
+	],
+	dependencies: [
+		"5672d99b",
+		"e8b306b0"
+	],
+	tasks: [{
+		uid: "7361821b",
+		type: "item",
+		items: [{
+			item: "botania:travelbelt"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "bce7cc9a",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

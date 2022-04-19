@@ -1,0 +1,39 @@
+{
+	title: "{bq.quest403.name}",
+	icon: {
+		id: "botania:specialflower",
+		tag: {
+			type: "orechidIgnem"
+		}
+	},
+	x: 4.833333333333333d,
+	y: 11.666666666666666d,
+	text: [
+		"{bq.quest403.desc}"
+	],
+	dependencies: [
+		"5672d99b",
+		"33f630e1"
+	],
+	tasks: [{
+		uid: "bd5de07c",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "orechidIgnem"
+			}
+		}],
+		
+	}],
+	rewards: [{
+		uid: "cc560953",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

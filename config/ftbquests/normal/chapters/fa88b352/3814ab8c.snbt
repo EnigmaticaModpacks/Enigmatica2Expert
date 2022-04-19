@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest499.name}",
+	icon: "nuclearcraft:part 1 1",
+	x: 10.5d,
+	y: 7.5d,
+	text: [
+		"{bq.quest499.desc}"
+	],
+	dependencies: [
+		"a741066c",
+		"0bf36970",
+		"da8740b4"
+	],
+	tasks: [{
+		uid: "4b658256",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:part 1 1"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "fb86b390",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

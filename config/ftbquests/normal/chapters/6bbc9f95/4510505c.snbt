@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest664.name}",
+	icon: "thaumcraft:goggles",
+	x: 5.5d,
+	y: 6.166666666666667d,
+	text: [
+		"{bq.quest664.desc}"
+	],
+	dependencies: [
+		"2e8e4ce7"
+	],
+	size: 1.3333333333333333d,
+	tasks: [{
+		uid: "faa4990e",
+		type: "item",
+		items: [{
+			item: "thaumcraft:goggles"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "50d74e9f",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

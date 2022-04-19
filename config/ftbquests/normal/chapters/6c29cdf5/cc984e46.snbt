@@ -1,0 +1,26 @@
+{
+	title: "{bq.quest366.name}",
+	icon: "botania:altar",
+	x: 11.833333333333334d,
+	y: 1.8333333333333333d,
+	text: [
+		"{bq.quest366.desc}"
+	],
+	dependencies: [
+		"5672d99b",
+		"c8d050c2"
+	],
+	tasks: [{
+		uid: "2f2a7f68",
+		type: "item",
+		items: [{
+			item: "botania:altar"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "e2983e71",
+		type: "xp_levels",
+		xp_levels: 5
+	}]
+}

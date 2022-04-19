@@ -1,0 +1,41 @@
+{
+	title: "{bq.quest773.name}",
+	icon: {
+		id: "botania:autocraftinghalo",
+		tag: {
+			equipped: 0b,
+			rotationBase: 449.93347f
+		}
+	},
+	x: 1.8333333333333333d,
+	y: 7.833333333333333d,
+	text: [
+		"{bq.quest773.desc}"
+	],
+	dependencies: [
+		"2bc0a8f1",
+		"5672d99b"
+	],
+	tasks: [{
+		uid: "a2946035",
+		type: "item",
+		items: [{
+			id: "botania:autocraftinghalo",
+			tag: {
+				equipped: 0b,
+				rotationBase: 449.93347f
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b7dc16dd",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

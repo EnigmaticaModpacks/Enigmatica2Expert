@@ -1,0 +1,15 @@
+{
+	title: "{bq.chapter16.name}",
+	icon: {
+		id: "openblocks:trophy",
+		tag: {
+			entity_id: "minecraft:cow"
+		}
+	},
+	description: [
+		"{bq.chapter16.desc}"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

@@ -1,0 +1,10 @@
+{
+	title: "{bq.chapter19.name}",
+	icon: "draconicevolution:awakened_core",
+	description: [
+		"{bq.chapter19.desc}"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

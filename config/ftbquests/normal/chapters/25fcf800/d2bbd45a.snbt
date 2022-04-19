@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest473.name}",
+	icon: "environmentaltech:erodium_crystal",
+	x: 5.25d,
+	y: 3.5d,
+	text: [
+		"{bq.quest473.desc}"
+	],
+	dependencies: [
+		"a4a22291"
+	],
+	tasks: [{
+		uid: "b624554f",
+		type: "item",
+		items: [{
+			item: "environmentaltech:erodium_crystal"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "188547c5",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,27 @@
+{
+	title: "{bq.quest30.name}",
+	icon: "avaritia:infinity_shovel",
+	x: 5.958333333333333d,
+	y: 12.208333333333332d,
+	text: [
+		"{bq.quest30.desc}"
+	],
+	dependencies: [
+		"3c5b09e0"
+	],
+	size: 1.25d,
+	tasks: [{
+		uid: "0f8c9634",
+		type: "item",
+		items: [{
+			item: "avaritia:infinity_shovel"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "603a7b71",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has obtained the Planet Eater!"
+	}]
+}

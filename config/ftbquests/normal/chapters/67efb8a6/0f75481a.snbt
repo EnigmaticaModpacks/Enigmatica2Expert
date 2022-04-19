@@ -1,0 +1,46 @@
+{
+	title: "{bq.quest540.name}",
+	icon: "draconicevolution:energy_crystal 1 6",
+	x: 0.375d,
+	y: 6.75d,
+	text: [
+		"{bq.quest540.desc}"
+	],
+	dependencies: [
+		"a9d391e5"
+	],
+	tasks: [{
+		uid: "0dcf084f",
+		type: "item",
+		items: [{
+			item: "draconicevolution:energy_crystal"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "8a7e105a",
+		type: "item",
+		items: [{
+			item: "draconicevolution:energy_crystal 1 6"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "8e2593ea",
+		type: "item",
+		items: [{
+			item: "draconicevolution:energy_crystal 1 3"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f0db80c7",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

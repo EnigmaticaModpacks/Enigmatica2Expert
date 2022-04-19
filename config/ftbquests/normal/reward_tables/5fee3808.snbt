@@ -1,0 +1,19 @@
+{
+	title: "{bq.quest790.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "cyclicmagic:sword_slowness"
+	},
+	{
+		item: "twilightforest:alpha_fur",
+		count: 16
+	},
+	{
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "epic"
+			}
+		}
+	}]
+}

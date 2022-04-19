@@ -1,0 +1,23 @@
+{
+	title: "{bq.quest780.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "redstonearsenal:tool.sword_flux",
+			tag: {
+				Energy: 320000
+			}
+		}
+	},
+	{
+		item: "redstonearsenal:storage"
+	},
+	{
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

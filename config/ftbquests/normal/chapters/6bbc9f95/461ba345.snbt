@@ -1,0 +1,54 @@
+{
+	title: "{bq.quest672.name}",
+	icon: "thaumcraft:cloth_chest",
+	x: 3.3333333333333335d,
+	y: 7.5d,
+	text: [
+		"{bq.quest672.desc}"
+	],
+	dependencies: [
+		"03e96313"
+	],
+	tasks: [{
+		uid: "dc2a6ae3",
+		type: "item",
+		items: [{
+			item: "thaumcraft:goggles"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "d480fa76",
+		type: "item",
+		items: [{
+			item: "thaumcraft:cloth_chest"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a25c9d8c",
+		type: "item",
+		items: [{
+			item: "thaumcraft:cloth_legs"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "fbb1dd49",
+		type: "item",
+		items: [{
+			item: "thaumcraft:cloth_boots"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f05f7891",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

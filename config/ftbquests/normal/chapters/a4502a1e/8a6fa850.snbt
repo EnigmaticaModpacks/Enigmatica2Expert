@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest319.name}",
+	icon: "extrautils2:itembuilderswand",
+	x: 0.25d,
+	y: 1.7916666666666667d,
+	text: [
+		"{bq.quest319.desc}"
+	],
+	dependencies: [
+		"a1b2fa88"
+	],
+	size: 0.8333333333333334d,
+	tasks: [{
+		uid: "2d1d0e03",
+		type: "item",
+		items: [{
+			item: "extrautils2:itembuilderswand"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "8f5a043f",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

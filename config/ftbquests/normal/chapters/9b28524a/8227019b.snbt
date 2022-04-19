@@ -1,0 +1,38 @@
+{
+	title: "{bq.quest623.name}",
+	icon: {
+		id: "bloodmagic:sacrificial_dagger",
+		tag: {
+			sacrifice: 0b
+		}
+	},
+	x: 3.0d,
+	y: 1.8333333333333333d,
+	text: [
+		"{bq.quest623.desc}"
+	],
+	dependencies: [
+		"6a6dc36e"
+	],
+	tasks: [{
+		uid: "1232e287",
+		type: "item",
+		items: [{
+			id: "bloodmagic:sacrificial_dagger",
+			tag: {
+				sacrifice: 0b
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "26d9ed00",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

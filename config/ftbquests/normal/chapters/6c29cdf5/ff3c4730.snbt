@@ -1,0 +1,39 @@
+{
+	title: "{bq.quest393.name}",
+	icon: {
+		id: "botania:specialflower",
+		tag: {
+			type: "solegnolia"
+		}
+	},
+	x: 17.833333333333332d,
+	y: 3.8333333333333335d,
+	text: [
+		"{bq.quest393.desc}"
+	],
+	dependencies: [
+		"5fe4c911",
+		"5672d99b"
+	],
+	tasks: [{
+		uid: "31c3c42e",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "solegnolia"
+			}
+		}],
+		
+	}],
+	rewards: [{
+		uid: "313c9339",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

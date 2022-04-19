@@ -1,0 +1,56 @@
+{
+	title: "{bq.quest767.name}",
+	icon: "botania:elementiumchest",
+	x: 6.166666666666667d,
+	y: 9.166666666666666d,
+	text: [
+		"{bq.quest767.desc}"
+	],
+	dependencies: [
+		"4aa39f8e"
+	],
+	tasks: [{
+		uid: "6eae0864",
+		type: "item",
+		items: [{
+			item: "botania:elementiumhelm"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "2a87f7ff",
+		type: "item",
+		items: [{
+			id: "botania:elementiumchest",
+			tag: {}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "4fcdb54b",
+		type: "item",
+		items: [{
+			item: "botania:elementiumlegs"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "ca1d0c5f",
+		type: "item",
+		items: [{
+			item: "botania:elementiumboots"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3584af88",
+		type: "choice",
+		table: 88
+	},
+	{
+		uid: "dd9541aa",
+		type: "command",
+		auto: "invisible",
+		command: "gamestage silentadd @p armor_elementium"
+	}]
+}

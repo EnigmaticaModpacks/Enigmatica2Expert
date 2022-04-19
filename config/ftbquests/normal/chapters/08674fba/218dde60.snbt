@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest444.name}",
+	icon: "advancedrocketry:satellitebuilder",
+	x: 11.5d,
+	y: 5.833333333333333d,
+	text: [
+		"{bq.quest444.desc}"
+	],
+	dependencies: [
+		"ec0657e8"
+	],
+	tasks: [{
+		uid: "822bb5a7",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:satellitebuilder"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "412830d9",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

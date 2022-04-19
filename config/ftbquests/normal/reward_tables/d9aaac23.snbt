@@ -1,0 +1,16 @@
+{
+	title: "{bq.quest730.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "rats:marbled_cheese_raw",
+		count: 64
+	},
+	{
+		item: "rats:block_of_cheese",
+		count: 32
+	},
+	{
+		item: "rats:contaminated_food",
+		count: 64
+	}]
+}

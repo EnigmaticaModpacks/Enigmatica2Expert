@@ -1,0 +1,16 @@
+{
+	title: "{bq.chapter6.name}",
+	icon: {
+		id: "botania:twigwand",
+		tag: {
+			color1: 3,
+			color2: 3
+		}
+	},
+	description: [
+		"{bq.chapter6.desc}"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

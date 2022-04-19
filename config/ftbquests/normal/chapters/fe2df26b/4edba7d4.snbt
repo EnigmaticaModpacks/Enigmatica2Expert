@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest851.name}",
+	icon: "ae2stuff:visualiser",
+	x: 4.0d,
+	y: 2.5d,
+	text: [
+		"{bq.quest851.desc}"
+	],
+	dependencies: [
+		"4bfcd69f"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "b6ffe4bb",
+		type: "item",
+		items: [{
+			item: "ae2stuff:visualiser"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "245cb712",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

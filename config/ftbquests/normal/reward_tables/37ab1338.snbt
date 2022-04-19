@@ -1,0 +1,327 @@
+{
+	title: "Legendary",
+	loot_size: 1,
+	rewards: [{
+		item: "minecraft:nether_star",
+		weight: 10
+	},
+	{
+		item: "avaritia:cosmic_meatballs",
+		weight: 10
+	},
+	{
+		item: "plustic:osmiridiumblock",
+		weight: 10
+	},
+	{
+		item: "plustic:mirionblock",
+		weight: 10
+	},
+	{
+		item: "avaritia:ultimate_stew",
+		weight: 10
+	},
+	{
+		item: "minecraft:dragon_egg",
+		weight: 10
+	},
+	{
+		item: "actuallyadditions:item_spawner_changer",
+		weight: 10
+	},
+	{
+		item: "advancedrocketry:rocketbuilder",
+		weight: 10
+	},
+	{
+		item: "draconicevolution:dragon_heart",
+		weight: 10
+	},
+	{
+		item: "draconicevolution:dislocator_advanced",
+		weight: 2
+	},
+	{
+		item: "botania:laputashard 1 9",
+		weight: 10
+	},
+	{
+		item: "avaritiaio:infinitecapacitor"
+	},
+	{
+		item: {
+			id: "appliedenergistics2:storage_cell_64k",
+			tag: {
+				"#10": {
+					Craft: 0b,
+					Cnt: 64L,
+					id: "biomesoplenty:mud",
+					Count: 1b,
+					Damage: 0s,
+					Req: 0L
+				},
+				"#11": {
+					Craft: 0b,
+					Cnt: 64L,
+					id: "biomesoplenty:flesh",
+					Count: 1b,
+					Damage: 0s,
+					Req: 0L
+				},
+				ic: 768,
+				"@10": 64,
+				"@11": 64,
+				it: 12s,
+				"#0": {
+					Craft: 0b,
+					Cnt: 64L,
+					id: "minecraft:stone",
+					Count: 1b,
+					Damage: 1s,
+					Req: 0L
+				},
+				"#1": {
+					Craft: 0b,
+					Cnt: 64L,
+					id: "minecraft:stone",
+					Count: 1b,
+					Damage: 3s,
+					Req: 0L
+				},
+				"#2": {
+					Craft: 0b,
+					Cnt: 64L,
+					id: "minecraft:stone",
+					Count: 1b,
+					Damage: 5s,
+					Req: 0L
+				},
+				"@0": 64,
+				"#3": {
+					Craft: 0b,
+					Cnt: 64L,
+					id: "biomesoplenty:dirt",
+					Count: 1b,
+					Damage: 8s,
+					Req: 0L
+				},
+				"@1": 64,
+				"#4": {
+					Craft: 0b,
+					Cnt: 64L,
+					id: "biomesoplenty:dirt",
+					Count: 1b,
+					Damage: 9s,
+					Req: 0L
+				},
+				"@2": 64,
+				"#5": {
+					Craft: 0b,
+					Cnt: 64L,
+					id: "biomesoplenty:dirt",
+					Count: 1b,
+					Damage: 10s,
+					Req: 0L
+				},
+				"@3": 64,
+				"#6": {
+					Craft: 0b,
+					Cnt: 64L,
+					id: "biomesoplenty:white_sand",
+					Count: 1b,
+					Damage: 0s,
+					Req: 0L
+				},
+				"@4": 64,
+				"#7": {
+					Craft: 0b,
+					Cnt: 64L,
+					id: "biomesoplenty:dried_sand",
+					Count: 1b,
+					Damage: 0s,
+					Req: 0L
+				},
+				"@5": 64,
+				"#8": {
+					Craft: 0b,
+					Cnt: 64L,
+					id: "biomesoplenty:hard_ice",
+					Count: 1b,
+					Damage: 0s,
+					Req: 0L
+				},
+				"@6": 64,
+				"#9": {
+					Craft: 0b,
+					Cnt: 64L,
+					id: "biomesoplenty:ash_block",
+					Count: 1b,
+					Damage: 0s,
+					Req: 0L
+				},
+				"@7": 64,
+				"@8": 64,
+				"@9": 64
+			}
+		},
+		weight: 15
+	},
+	{
+		item: "ic2:nuclear 1 10",
+		count: 2,
+		weight: 10
+	},
+	{
+		item: "thermalexpansion:frame 1 148",
+		weight: 10
+	},
+	{
+		item: "mysticalagradditions:stuff 1 69",
+		weight: 10
+	},
+	{
+		item: "nuclearcraft:rtg_californium",
+		weight: 10
+	},
+	{
+		item: "mysticalagriculture:ultimate_furnace",
+		weight: 2
+	},
+	{
+		item: "rftools:peace_essence",
+		weight: 10
+	},
+	{
+		item: "extrautils2:angelring 1 2",
+		weight: 2
+	},
+	{
+		item: "draconicevolution:wyvern_bow",
+		weight: 10
+	},
+	{
+		item: "draconicevolution:wyvern_energy_core",
+		weight: 10
+	},
+	{
+		item: {
+			id: "draconicevolution:wyvern_axe",
+			ForgeCaps: {
+				Parent: {
+					Items: [],
+					Size: 9
+				}
+			}
+		},
+		weight: 10
+	},
+	{
+		item: "appliedenergistics2:controller",
+		weight: 10
+	},
+	{
+		item: "appliedenergistics2:material 1 47",
+		weight: 10
+	},
+	{
+		item: "extrautils2:passivegenerator 1 8",
+		weight: 10
+	},
+	{
+		item: "draconicevolution:ender_energy_manipulator",
+		weight: 10
+	},
+	{
+		item: "iceandfire:dragonegg_green",
+		weight: 10
+	},
+	{
+		item: "avaritia:resource 1 4",
+		count: 4,
+		weight: 2
+	},
+	{
+		item: "rats:rat_upgrade_nonbeliever",
+		weight: 2
+	},
+	{
+		item: {
+			id: "openblocks:tank",
+			tag: {
+				tank: {
+					FluidName: "ic2uu_matter",
+					Amount: 24000
+				}
+			}
+		},
+		weight: 2
+	},
+	{
+		item: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "blockfluidantimatter"
+			}
+		},
+		weight: 10
+	},
+	{
+		item: {
+			id: "minecraft:enchanted_book",
+			tag: {
+				StoredEnchantments: [{
+					lvl: 6s,
+					id: 35s
+				}]
+			}
+		},
+		weight: 10
+	},
+	{
+		item: {
+			id: "minecraft:enchanted_book",
+			tag: {
+				StoredEnchantments: [{
+					lvl: 10s,
+					id: 32s
+				}]
+			}
+		},
+		weight: 10
+	},
+	{
+		item: {
+			id: "minecraft:enchanted_book",
+			tag: {
+				StoredEnchantments: [{
+					lvl: 6s,
+					id: 34s
+				}]
+			}
+		},
+		weight: 10
+	},
+	{
+		item: "scalinghealth:difficultychanger",
+		weight: 15
+	},
+	{
+		item: {
+			id: "actuallyadditions:item_tele_staff",
+			tag: {
+				Energy: 250000
+			}
+		},
+		weight: 15
+	}],
+	loot_crate: {
+		string_id: "legendary",
+		item_name: "Legendary",
+		color: 16777215,
+		drops: {
+			passive: 0,
+			monster: 0,
+			boss: 0
+		}
+	}
+}

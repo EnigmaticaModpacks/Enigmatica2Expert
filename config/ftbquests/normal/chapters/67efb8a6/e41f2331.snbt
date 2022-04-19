@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest537.name}",
+	icon: "draconicevolution:chaos_shard",
+	x: 12.666666666666666d,
+	y: 6.75d,
+	text: [
+		"{bq.quest537.desc}"
+	],
+	dependencies: [
+		"b5098494"
+	],
+	tasks: [{
+		uid: "5da3a9d3",
+		type: "item",
+		items: [{
+			item: "draconicevolution:chaos_shard"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "59d4976e",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "epic"
+			}
+		}
+	}]
+}

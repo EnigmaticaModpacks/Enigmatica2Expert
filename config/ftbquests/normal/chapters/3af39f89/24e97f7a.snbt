@@ -1,0 +1,103 @@
+{
+	title: "{bq.quest1041.name}",
+	icon: {
+		id: "simple_trophies:trophy",
+		tag: {
+			TrophyColorGreen: 99,
+			TrophyShowsTooltip: 1b,
+			TrophyVariant: "gold",
+			TrophyItem: {
+				Count: 2b,
+				id: "thermalexpansion:frame",
+				Damage: 148s
+			},
+			TrophyColorBlue: 88,
+			TrophyColorRed: 49,
+			TrophyName: "Thermal Expansion Trophy§r"
+		}
+	},
+	x: 15.0d,
+	y: 7.5d,
+	text: [
+		"{bq.quest1041.desc}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"8d07b507",
+		"e2d39ad3",
+		"2658c19a",
+		"03ece3e8",
+		"85977752",
+		"ebea4a2f",
+		"0fd01196",
+		"7f574c51",
+		"e399c55e",
+		"056478ad",
+		"bc6a0323",
+		"1d970b9d",
+		"a60bd941",
+		"a784088f",
+		"e4cdac46",
+		"9c15c499",
+		"a23e3ff2",
+		"16c6f4c8",
+		"338fdf41",
+		"201e5351",
+		"45169485",
+		"ead3ef07",
+		"5b3d8b6b",
+		"277d36ea",
+		"dc8f41d8",
+		"7d9c6e00",
+		"8be951f5",
+		"f7355729",
+		"b7d0da8d",
+		"f5f57028",
+		"19461159",
+		"44c19b1e",
+		"fd000b60",
+		"37ed5409",
+		"2027d242",
+		"4621b684",
+		"dad6cfb3",
+		"2b74c653",
+		"a23e7319",
+		"dfa7ef0d",
+		"32a9e144",
+		"3385dfab",
+		"57712d9e",
+		"85fb72cb",
+		"e4048270",
+		"3770b7c7",
+		"39590220",
+		"95a39bdf"
+	],
+	size: 1.5d,
+	rewards: [{
+		uid: "c4e34db7",
+		type: "item",
+		auto: "enabled",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 99,
+				TrophyShowsTooltip: 1b,
+				TrophyVariant: "gold",
+				TrophyItem: {
+					Count: 2b,
+					id: "thermalexpansion:frame",
+					Damage: 148s
+				},
+				TrophyColorBlue: 88,
+				TrophyColorRed: 49,
+				TrophyName: "Thermal Expansion Trophy§r"
+			}
+		}
+	},
+	{
+		uid: "04628d24",
+		type: "command",
+		auto: "invisible",
+		command: "/say §l@p§r has fully completed the §nThermal Expansion§r chapter!§r ```Congrats!```"
+	}]
+}

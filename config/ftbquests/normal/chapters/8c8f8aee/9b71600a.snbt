@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest129.name}",
+	icon: "actuallyadditions:block_canola_press",
+	x: -3.833333333333333d,
+	y: 3.5d,
+	text: [
+		"{bq.quest129.desc}"
+	],
+	dependencies: [
+		"98b00c72"
+	],
+	tasks: [{
+		uid: "87a27352",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_canola_press"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "3a730580",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

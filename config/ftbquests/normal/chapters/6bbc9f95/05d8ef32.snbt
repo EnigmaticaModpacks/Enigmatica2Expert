@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest668.name}",
+	icon: "thaumcraft:nitor_yellow",
+	x: 6.833333333333333d,
+	y: 2.5d,
+	text: [
+		"{bq.quest668.desc}"
+	],
+	dependencies: [
+		"a54068bb"
+	],
+	tasks: [{
+		uid: "a407f537",
+		type: "item",
+		items: [{
+			item: "thaumcraft:nitor_yellow"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8779c862",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

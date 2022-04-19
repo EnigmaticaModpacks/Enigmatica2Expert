@@ -1,0 +1,43 @@
+{
+	title: "{bq.quest924.name}",
+	icon: {
+		id: "nuclearcraft:lithium_ion_battery_basic",
+		tag: {
+			maxTransfer: 1600000,
+			capacity: 32000000,
+			energy: 0
+		}
+	},
+	x: 6.333333333333333d,
+	y: 10.166666666666666d,
+	text: [
+		"{bq.quest924.desc}"
+	],
+	dependencies: [
+		"a741066c",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "4b5f3495",
+		type: "item",
+		items: [{
+			id: "nuclearcraft:lithium_ion_battery_basic",
+			tag: {
+				maxTransfer: 1600000,
+				capacity: 32000000,
+				energy: 0
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ea50a8d8",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

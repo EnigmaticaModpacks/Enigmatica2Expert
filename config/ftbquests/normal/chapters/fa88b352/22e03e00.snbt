@@ -1,0 +1,24 @@
+{
+	title: "{bq.quest451.name}",
+	icon: "nuclearcraft:manufactory_idle",
+	x: 7.833333333333333d,
+	y: 7.5d,
+	text: [
+		"{bq.quest451.desc}"
+	],
+	dependencies: [
+		"0bf36970"
+	],
+	rewards: [{
+		uid: "b710d7ac",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has begun the NuclearCraft questline!"
+	},
+	{
+		uid: "1c77adcc",
+		type: "item",
+		item: "nuclearcraft:radaway",
+		count: 3
+	}]
+}

@@ -1,0 +1,18 @@
+{
+	title: "{bq.quest794.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	},
+	{
+		item: "forestry:apiarist_bag"
+	},
+	{
+		item: "forestry:database"
+	}]
+}

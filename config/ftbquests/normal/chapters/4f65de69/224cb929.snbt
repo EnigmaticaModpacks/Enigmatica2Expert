@@ -1,0 +1,45 @@
+{
+	title: "{bq.quest58.name}",
+	icon: {
+		id: "tconstruct:sharpening_kit",
+		tag: {
+			Material: "crystal_matrix"
+		}
+	},
+	x: 14.125d,
+	y: 3.5d,
+	text: [
+		"{bq.quest58.desc}"
+	],
+	dependencies: [
+		"3e4d0f4b"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "c36d64d6",
+		type: "item",
+		items: [{
+			id: "tconstruct:sharpening_kit",
+			tag: {
+				Material: "crystal_matrix"
+			}
+		}],
+		
+	},
+	{
+		uid: "d173b8fd",
+		type: "item",
+		items: [{
+			id: "tconstruct:sharpening_kit",
+			tag: {
+				Material: "terrasteel"
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "2bd87621",
+		type: "item",
+		item: "mysticalagriculture:infusion_crystal",
+		count: 4
+	}]
+}

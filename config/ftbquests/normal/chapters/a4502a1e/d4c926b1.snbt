@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest325.name}",
+	icon: "extrautils2:ineffableglass",
+	x: 6.666666666666667d,
+	y: 5.0d,
+	text: [
+		"{bq.quest325.desc}"
+	],
+	dependencies: [
+		"0e08c73f"
+	],
+	tasks: [{
+		uid: "aa847bde",
+		type: "item",
+		items: [{
+			item: "extrautils2:ineffableglass"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "21081c44",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

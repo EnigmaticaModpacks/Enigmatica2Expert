@@ -1,0 +1,50 @@
+{
+	title: "{bq.quest549.name}",
+	icon: {
+		id: "draconicevolution:draconic_axe",
+		tag: {
+			Energy: 16000000
+		},
+		ForgeCaps: {
+			Parent: {
+				Items: [],
+				Size: 18
+			}
+		}
+	},
+	x: 4.0d,
+	y: 8.5d,
+	text: [
+		"{bq.quest549.desc}"
+	],
+	dependencies: [
+		"0fa6089d"
+	],
+	tasks: [{
+		uid: "88715f37",
+		type: "item",
+		items: [{
+			id: "draconicevolution:draconic_axe",
+			tag: {
+				Energy: 16000000
+			},
+			ForgeCaps: {
+				Parent: {
+					Items: [],
+					Size: 18
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "1780f48d",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

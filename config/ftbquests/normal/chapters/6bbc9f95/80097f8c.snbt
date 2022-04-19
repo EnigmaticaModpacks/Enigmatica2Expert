@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest1052.name}",
+	icon: "thaumcraft:stone_porous",
+	x: 8.5d,
+	y: 1.1666666666666665d,
+	text: [
+		"{bq.quest1052.desc}"
+	],
+	dependencies: [
+		"a54068bb"
+	],
+	tasks: [{
+		uid: "633fafb2",
+		type: "item",
+		items: [{
+			item: "thaumcraft:stone_porous"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f8d9b620",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

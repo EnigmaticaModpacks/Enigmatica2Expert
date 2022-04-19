@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest910.name}",
+	icon: "actuallyadditions:block_shock_suppressor",
+	x: -6.833333333333333d,
+	y: 1.3333333333333335d,
+	text: [
+		"{bq.quest910.desc}"
+	],
+	dependencies: [
+		"98b00c72"
+	],
+	tasks: [{
+		uid: "add1802d",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_shock_suppressor"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f1c1b360",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,32 @@
+{
+	title: "{bq.quest8.name}",
+	icon: "astralsorcery:itemcraftingcomponent",
+	x: 9.5d,
+	y: 2.166666666666667d,
+	text: [
+		"{bq.quest8.desc}"
+	],
+	dependencies: [
+		"2957f2cc"
+	],
+	tasks: [{
+		uid: "9601a2d5",
+		type: "item",
+		items: [{
+			item: "astralsorcery:itemcraftingcomponent"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "a24019a1",
+		type: "item",
+		item: "astralsorcery:itemcraftingcomponent",
+		count: 16
+	},
+	{
+		uid: "aaddf92d",
+		type: "item",
+		item: "astralsorcery:blockmarble",
+		count: 64
+	}]
+}

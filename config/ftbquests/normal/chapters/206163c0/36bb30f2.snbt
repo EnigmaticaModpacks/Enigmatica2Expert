@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest293.name}",
+	icon: "forestry:thermionic_tubes 1 7",
+	x: -2.1666666666666665d,
+	y: 4.833333333333333d,
+	text: [
+		"{bq.quest293.desc}"
+	],
+	dependencies: [
+		"d1b19bf0"
+	],
+	tasks: [{
+		uid: "4e008c01",
+		type: "item",
+		items: [{
+			item: "forestry:thermionic_tubes 1 7"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "a4678a12",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

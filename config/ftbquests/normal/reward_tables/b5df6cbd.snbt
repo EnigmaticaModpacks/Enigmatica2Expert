@@ -1,0 +1,102 @@
+{
+	title: "{bq.quest781.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "tconstruct:broadsword",
+			tag: {
+				StatsOriginal: {
+					AttackSpeedMultiplier: 1.0f,
+					MiningSpeed: 6.0f,
+					FreeModifiers: 3,
+					Durability: 711,
+					HarvestLevel: 10,
+					Attack: 6.8f
+				},
+				Special: {
+					Categories: [
+						"tool",
+						"weapon"
+					],
+					alienStatBonus: {
+						identifier: "",
+						color: 0,
+						attack: 0.11500002f,
+						durability: 22,
+						speed: 0.161f
+					},
+					alienStatPool: {
+						identifier: "",
+						color: 16777215,
+						attack: 1.314999f,
+						durability: 265,
+						speed: 1.9039981f
+					}
+				},
+				Stats: {
+					AttackSpeedMultiplier: 1.0f,
+					MiningSpeed: 6.1609993f,
+					FreeModifiers: 2,
+					Durability: 733,
+					HarvestLevel: 10,
+					Attack: 6.915003f
+				},
+				Modifiers: [{
+					identifier: "dense",
+					color: -5592406,
+					level: 1
+				},
+				{
+					identifier: "alien",
+					color: -5592406,
+					level: 1
+				},
+				{
+					identifier: "toolleveling",
+					color: 16777215,
+					level: 1
+				}],
+				TinkerData: {
+					Materials: [
+						"iridium",
+						"iridium",
+						"iridium"
+					],
+					Modifiers: [
+						"toolleveling"
+					]
+				},
+				Traits: [
+					"dense",
+					"alien",
+					"toolleveling"
+				]
+			},
+			ForgeCaps: {
+				"plustic:fruitsalad_cap": {
+					Items: [],
+					Size: 5
+				},
+				"plustic:": {
+					Items: [],
+					Size: 1
+				},
+				"plustic:musicofthespheres_cap": {
+					Items: [],
+					Size: 1
+				}
+			}
+		}
+	},
+	{
+		item: "thermalfoundation:storage 1 7"
+	},
+	{
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest1062.name}",
+	icon: "rats:rat_upgrade_shears",
+	x: -3.5d,
+	y: 0.0d,
+	text: [
+		"{bq.quest1062.desc}"
+	],
+	dependencies: [
+		"f99929a2"
+	],
+	tasks: [{
+		uid: "d04bb8de",
+		type: "item",
+		items: [{
+			item: "rats:rat_upgrade_shears"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ef29d238",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

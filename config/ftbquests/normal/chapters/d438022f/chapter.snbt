@@ -1,0 +1,10 @@
+{
+	title: "{bq.chapter24.name}",
+	icon: "minecraft:apple",
+	description: [
+		"{bq.chapter24.desc}"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

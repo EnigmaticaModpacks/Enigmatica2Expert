@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest380.name}",
+	icon: "botania:spark",
+	x: 1.8333333333333333d,
+	y: 9.166666666666666d,
+	text: [
+		"{bq.quest380.desc}"
+	],
+	dependencies: [
+		"2bc0a8f1",
+		"5672d99b"
+	],
+	tasks: [{
+		uid: "16a1e740",
+		type: "item",
+		items: [{
+			item: "botania:spark"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "db536ef1",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

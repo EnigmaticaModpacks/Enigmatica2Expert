@@ -1,0 +1,654 @@
+{
+	title: "Epic",
+	loot_size: 1,
+	rewards: [{
+		item: "minecraft:skull 1 5",
+		weight: 10
+	},
+	{
+		item: "cyclicmagic:soulstone",
+		weight: 10
+	},
+	{
+		item: {
+			id: "botania:manaresource",
+			Damage: 4s,
+			tag: {
+				orig_meta: 0,
+				orig_id: "botania:manaresource"
+			}
+		},
+		weight: 10
+	},
+	{
+		item: "thermalfoundation:upgrade 1 35",
+		weight: 10
+	},
+	{
+		item: "minecraft:end_crystal",
+		weight: 10
+	},
+	{
+		item: "actuallyadditions:block_atomic_reconstructor",
+		weight: 10
+	},
+	{
+		item: "actuallyadditions:block_misc 1 9",
+		weight: 10
+	},
+	{
+		item: "appliedenergistics2:quartz_growth_accelerator",
+		count: 5,
+		weight: 10
+	},
+	{
+		item: "betterbuilderswands:wandunbreakable",
+		weight: 10
+	},
+	{
+		item: "appliedenergistics2:part 1 70",
+		count: 32,
+		weight: 10
+	},
+	{
+		item: "appliedenergistics2:charger",
+		weight: 10
+	},
+	{
+		item: "appliedenergistics2:material 1 47",
+		weight: 10
+	},
+	{
+		item: "libvulpes:elitemotor",
+		count: 2,
+		weight: 10
+	},
+	{
+		item: "extrautils2:teleporter 1 1",
+		weight: 10
+	},
+	{
+		item: "extrautils2:compressedcobblestone 1 7",
+		weight: 10
+	},
+	{
+		item: "twilightforest:twilight_sapling 1 4",
+		count: 16,
+		weight: 10
+	},
+	{
+		item: "botania:terraformrod",
+		weight: 10
+	},
+	{
+		item: "botania:blacklotus 1 1",
+		count: 16,
+		weight: 10
+	},
+	{
+		item: {
+			id: "botania:flowerbag",
+			ForgeCaps: {
+				Parent: []
+			}
+		},
+		weight: 10
+	},
+	{
+		item: "advgenerators:turbine_enderium",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "advancedrocketry:rocketmotor",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "advancedrocketry:railgun",
+		weight: 10
+	},
+	{
+		item: "appliedenergistics2:energy_acceptor",
+		weight: 10
+	},
+	{
+		item: "biomesoplenty:terrestrial_artifact",
+		count: 16,
+		weight: 10
+	},
+	{
+		item: "draconicevolution:energy_infuser",
+		weight: 10
+	},
+	{
+		item: "environmentaltech:litherite_crystal",
+		count: 9,
+		weight: 10
+	},
+	{
+		item: "extrautils2:drum 1 3",
+		weight: 10
+	},
+	{
+		item: "industrialforegoing:wither_builder",
+		weight: 10
+	},
+	{
+		item: "mekanism:atomicdisassembler",
+		weight: 10
+	},
+	{
+		item: "appliedenergistics2:storage_cell_64k",
+		count: 2,
+		weight: 10
+	},
+	{
+		item: "appliedenergistics2:molecular_assembler",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "mysticalagriculture:supremium_apple",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "mysticalagradditions:tinkering_table",
+		weight: 10
+	},
+	{
+		item: "nuclearcraft:part 1 3",
+		count: 32,
+		weight: 10
+	},
+	{
+		item: "rftools:advanced_charged_porter",
+		weight: 10
+	},
+	{
+		item: "thermaldynamics:duct_0 1 5",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "thermalfoundation:upgrade 1 35",
+		count: 2,
+		weight: 10
+	},
+	{
+		item: {
+			id: "littletiles:chisel",
+			tag: {
+				preview: {
+					bBox: [I;
+						0,
+						0,
+						0,
+						1,
+						1,
+						1
+					],
+					tile: {
+						block: "minecraft:stone"
+					}
+				}
+			}
+		},
+		weight: 10
+	},
+	{
+		item: "conarm:gauntlet_mat_speed",
+		weight: 10
+	},
+	{
+		item: "conarm:gauntlet_mat_attack",
+		weight: 10
+	},
+	{
+		item: "conarm:gauntlet_mat_reach",
+		weight: 10
+	},
+	{
+		item: "conarm:travel_soul",
+		weight: 10
+	},
+	{
+		item: "conarm:travel_slowfall",
+		weight: 10
+	},
+	{
+		item: "conarm:travel_night",
+		weight: 10
+	},
+	{
+		item: "conarm:travel_goggles",
+		weight: 10
+	},
+	{
+		item: "conarm:travel_potion",
+		weight: 10
+	},
+	{
+		item: "conarm:frosty_soles",
+		weight: 10
+	},
+	{
+		item: "scalinghealth:difficultychanger",
+		weight: 10
+	},
+	{
+		item: "scalinghealth:heartcontainer",
+		weight: 10
+	},
+	{
+		item: "rats:upgrade_combiner",
+		weight: 10
+	},
+	{
+		item: "matc:superiumcrystal",
+		weight: 10
+	},
+	{
+		item: "matc:supremiumcrystal",
+		weight: 10
+	},
+	{
+		item: "botania:reachring",
+		weight: 10
+	},
+	{
+		item: "conarm:travel_belt",
+		weight: 10
+	},
+	{
+		item: "conarm:resist_mat",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: {
+			id: "thermalexpansion:strongbox",
+			tag: {
+				RSControl: 0b,
+				ench: [{
+					lvl: 4s,
+					id: 45s
+				}],
+				RepairCost: 1,
+				Creative: 0b,
+				Level: 4b
+			}
+		},
+		weight: 10
+	},
+	{
+		item: {
+			id: "minecraft:enchanted_book",
+			tag: {
+				StoredEnchantments: [{
+					lvl: 5s,
+					id: 75s
+				}]
+			}
+		},
+		weight: 10
+	},
+	{
+		item: {
+			id: "minecraft:enchanted_book",
+			tag: {
+				StoredEnchantments: [{
+					lvl: 6s,
+					id: 21s
+				}]
+			}
+		},
+		weight: 10
+	},
+	{
+		item: {
+			id: "minecraft:enchanted_book",
+			tag: {
+				StoredEnchantments: [{
+					lvl: 10s,
+					id: 48s
+				}]
+			}
+		},
+		weight: 10
+	},
+	{
+		item: {
+			id: "minecraft:enchanted_book",
+			tag: {
+				StoredEnchantments: [{
+					lvl: 10s,
+					id: 18s
+				}]
+			}
+		},
+		weight: 10
+	},
+	{
+		item: {
+			id: "minecraft:enchanted_book",
+			tag: {
+				StoredEnchantments: [{
+					lvl: 10s,
+					id: 17s
+				}]
+			}
+		},
+		weight: 10
+	},
+	{
+		item: {
+			id: "minecraft:enchanted_book",
+			tag: {
+				StoredEnchantments: [{
+					lvl: 10s,
+					id: 16s
+				}]
+			}
+		},
+		weight: 10
+	},
+	{
+		item: {
+			id: "minecraft:enchanted_book",
+			tag: {
+				StoredEnchantments: [{
+					lvl: 8s,
+					id: 0s
+				}]
+			}
+		},
+		weight: 10
+	},
+	{
+		item: {
+			id: "extrautils2:drum",
+			Damage: 1s,
+			tag: {
+				Fluid: {
+					FluidName: "empoweredoil",
+					Amount: 256000
+				}
+			}
+		},
+		weight: 10
+	},
+	{
+		item: {
+			id: "extrautils2:drum",
+			Damage: 1s,
+			tag: {
+				Fluid: {
+					FluidName: "crystaloil",
+					Amount: 256000
+				}
+			}
+		},
+		weight: 10
+	},
+	{
+		item: {
+			id: "openblocks:tank",
+			tag: {
+				tank: {
+					FluidName: "redstone",
+					Amount: 24000
+				}
+			}
+		},
+		weight: 10
+	},
+	{
+		item: {
+			id: "openblocks:tank",
+			tag: {
+				tank: {
+					FluidName: "glowstone",
+					Amount: 24000
+				}
+			}
+		},
+		weight: 10
+	},
+	{
+		item: {
+			id: "openblocks:tank",
+			tag: {
+				tank: {
+					FluidName: "ender",
+					Amount: 24000
+				}
+			}
+		},
+		weight: 10
+	},
+	{
+		item: {
+			id: "openblocks:tank",
+			tag: {
+				tank: {
+					FluidName: "pyrotheum",
+					Amount: 24000
+				}
+			}
+		},
+		weight: 10
+	},
+	{
+		item: {
+			id: "openblocks:tank",
+			tag: {
+				tank: {
+					FluidName: "cryotheum",
+					Amount: 24000
+				}
+			}
+		},
+		weight: 10
+	},
+	{
+		item: {
+			id: "extrautils2:drum",
+			Damage: 1s,
+			tag: {
+				Fluid: {
+					FluidName: "astralsorcery.liquidstarlight",
+					Amount: 256000
+				}
+			}
+		},
+		weight: 10
+	},
+	{
+		item: "mysticalagradditions:insanium",
+		weight: 10
+	},
+	{
+		item: {
+			id: "appliedenergistics2:storage_cell_16k",
+			tag: {
+				"#10": {
+					Craft: 0b,
+					Cnt: 64L,
+					id: "minecraft:concrete_powder",
+					Count: 1b,
+					Damage: 8s,
+					Req: 0L
+				},
+				"#11": {
+					Craft: 0b,
+					Cnt: 64L,
+					id: "minecraft:concrete_powder",
+					Count: 1b,
+					Damage: 9s,
+					Req: 0L
+				},
+				"#12": {
+					Craft: 0b,
+					Cnt: 64L,
+					id: "minecraft:concrete_powder",
+					Count: 1b,
+					Damage: 10s,
+					Req: 0L
+				},
+				"#13": {
+					Craft: 0b,
+					Cnt: 64L,
+					id: "minecraft:concrete_powder",
+					Count: 1b,
+					Damage: 11s,
+					Req: 0L
+				},
+				"#14": {
+					Craft: 0b,
+					Cnt: 64L,
+					id: "minecraft:concrete_powder",
+					Count: 1b,
+					Damage: 12s,
+					Req: 0L
+				},
+				"#15": {
+					Craft: 0b,
+					Cnt: 64L,
+					id: "minecraft:concrete_powder",
+					Count: 1b,
+					Damage: 13s,
+					Req: 0L
+				},
+				"#16": {
+					Craft: 0b,
+					Cnt: 64L,
+					id: "minecraft:concrete_powder",
+					Count: 1b,
+					Damage: 14s,
+					Req: 0L
+				},
+				"#17": {
+					Craft: 0b,
+					Cnt: 64L,
+					id: "minecraft:concrete_powder",
+					Count: 1b,
+					Damage: 15s,
+					Req: 0L
+				},
+				ic: 1600,
+				"@10": 64,
+				"@11": 64,
+				"@12": 64,
+				"@13": 64,
+				"@14": 64,
+				"@15": 64,
+				"@16": 64,
+				"@17": 64,
+				it: 18s,
+				"#0": {
+					Craft: 0b,
+					Cnt: 256L,
+					id: "minecraft:stained_hardened_clay",
+					Count: 1b,
+					Damage: 1s,
+					Req: 0L
+				},
+				"#1": {
+					Craft: 0b,
+					Cnt: 320L,
+					id: "minecraft:prismarine",
+					Count: 1b,
+					Damage: 0s,
+					Req: 0L
+				},
+				"#2": {
+					Craft: 0b,
+					Cnt: 64L,
+					id: "minecraft:concrete_powder",
+					Count: 1b,
+					Damage: 0s,
+					Req: 0L
+				},
+				"@0": 256,
+				"#3": {
+					Craft: 0b,
+					Cnt: 64L,
+					id: "minecraft:concrete_powder",
+					Count: 1b,
+					Damage: 1s,
+					Req: 0L
+				},
+				"@1": 320,
+				"#4": {
+					Craft: 0b,
+					Cnt: 64L,
+					id: "minecraft:concrete_powder",
+					Count: 1b,
+					Damage: 2s,
+					Req: 0L
+				},
+				"@2": 64,
+				"#5": {
+					Craft: 0b,
+					Cnt: 64L,
+					id: "minecraft:concrete_powder",
+					Count: 1b,
+					Damage: 3s,
+					Req: 0L
+				},
+				"@3": 64,
+				"#6": {
+					Craft: 0b,
+					Cnt: 64L,
+					id: "minecraft:concrete_powder",
+					Count: 1b,
+					Damage: 4s,
+					Req: 0L
+				},
+				"@4": 64,
+				"#7": {
+					Craft: 0b,
+					Cnt: 64L,
+					id: "minecraft:concrete_powder",
+					Count: 1b,
+					Damage: 5s,
+					Req: 0L
+				},
+				"@5": 64,
+				"#8": {
+					Craft: 0b,
+					Cnt: 64L,
+					id: "minecraft:concrete_powder",
+					Count: 1b,
+					Damage: 6s,
+					Req: 0L
+				},
+				"@6": 64,
+				"#9": {
+					Craft: 0b,
+					Cnt: 64L,
+					id: "minecraft:concrete_powder",
+					Count: 1b,
+					Damage: 7s,
+					Req: 0L
+				},
+				"@7": 64,
+				"@8": 64,
+				"@9": 64
+			}
+		},
+		weight: 10
+	}],
+	loot_crate: {
+		string_id: "epic",
+		item_name: "Epic",
+		color: 16777215,
+		drops: {
+			passive: 0,
+			monster: 0,
+			boss: 0
+		}
+	}
+}

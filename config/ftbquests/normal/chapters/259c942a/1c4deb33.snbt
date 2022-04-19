@@ -1,0 +1,23 @@
+{
+	title: "{bq.quest100.name}",
+	icon: "immersiveengineering:tool",
+	x: -5.166666666666667d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest100.desc}"
+	],
+	dependencies: [
+		"00f29513"
+	],
+	rewards: [{
+		uid: "b609a3ec",
+		type: "item",
+		item: "immersiveengineering:tool"
+	},
+	{
+		uid: "4f2bb80e",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has begun the Immersive Engineering questline!"
+	}]
+}

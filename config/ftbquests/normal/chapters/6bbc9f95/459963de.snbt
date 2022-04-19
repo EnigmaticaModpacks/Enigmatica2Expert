@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest1073.name}",
+	icon: "thaumadditions:knowledge_tome",
+	x: 5.5d,
+	y: 4.833333333333333d,
+	text: [
+		"{bq.quest1073.desc}"
+	],
+	dependencies: [
+		"2e8e4ce7"
+	],
+	tasks: [{
+		uid: "ed61d591",
+		type: "item",
+		items: [{
+			item: "thaumadditions:knowledge_tome"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "2f5fd555",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

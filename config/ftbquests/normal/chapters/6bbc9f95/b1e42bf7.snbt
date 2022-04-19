@@ -1,0 +1,26 @@
+{
+	title: "{bq.quest638.name}",
+	icon: "thaumcraft:wand_workbench",
+	x: 7.0d,
+	y: 7.5d,
+	text: [
+		"{bq.quest638.desc}"
+	],
+	dependencies: [
+		"4510505c"
+	],
+	size: 1.3333333333333333d,
+	tasks: [{
+		uid: "bb8f603f",
+		type: "item",
+		items: [{
+			item: "thaumcraft:wand_workbench"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "16fbf0f9",
+		type: "choice",
+		table: 42
+	}]
+}

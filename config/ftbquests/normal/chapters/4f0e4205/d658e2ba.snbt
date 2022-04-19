@@ -1,0 +1,56 @@
+{
+	title: "{bq.quest790.name}",
+	icon: "twilightforest:yeti_chestplate",
+	x: 4.5d,
+	y: 1.1666666666666667d,
+	text: [
+		"{bq.quest790.desc}"
+	],
+	dependencies: [
+		"6be282e4"
+	],
+	size: 0.6666666666666666d,
+	tasks: [{
+		uid: "236a2c27",
+		type: "item",
+		items: [{
+			item: "twilightforest:yeti_helmet"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "e499053c",
+		type: "item",
+		items: [{
+			item: "twilightforest:yeti_chestplate"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "c3048917",
+		type: "item",
+		items: [{
+			item: "twilightforest:yeti_leggings"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "e3ae2fda",
+		type: "item",
+		items: [{
+			item: "twilightforest:yeti_boots"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "2cccd0d8",
+		type: "choice",
+		table: 98
+	},
+	{
+		uid: "6a30a717",
+		type: "command",
+		auto: "invisible",
+		command: "gamestage silentadd @p armor_yeti"
+	}]
+}

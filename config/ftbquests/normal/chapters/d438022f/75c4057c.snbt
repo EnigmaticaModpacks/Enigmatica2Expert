@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest1028.name}",
+	icon: "cyclicmagic:sprinkler",
+	x: 1.1666666666666665d,
+	y: 14.166666666666666d,
+	text: [
+		"{bq.quest1028.desc}"
+	],
+	dependencies: [
+		"9e222e1c"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "c57e382d",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:sprinkler"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "783dd52d",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

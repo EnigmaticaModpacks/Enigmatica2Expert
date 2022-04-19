@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest356.name}",
+	icon: "extrautils2:scanner",
+	x: 1.0833333333333333d,
+	y: 1.9583333333333335d,
+	text: [
+		"{bq.quest356.desc}"
+	],
+	dependencies: [
+		"a1b2fa88"
+	],
+	size: 0.8333333333333334d,
+	tasks: [{
+		uid: "3e3874b2",
+		type: "item",
+		items: [{
+			item: "extrautils2:scanner"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "357d1ffb",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

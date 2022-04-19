@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest413.name}",
+	icon: "ic2:crafting 1 3",
+	x: 5.833333333333333d,
+	y: 3.5d,
+	text: [
+		"{bq.quest413.desc}"
+	],
+	dependencies: [
+		"d1c08d01"
+	],
+	tasks: [{
+		uid: "a40c1a45",
+		type: "item",
+		items: [{
+			item: "ic2:crafting 1 3"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "fcd365be",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

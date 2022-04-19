@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest496.name}",
+	icon: "environmentaltech:modifier_speed",
+	x: 4.25d,
+	y: 2.0d,
+	text: [
+		"{bq.quest496.desc}"
+	],
+	dependencies: [
+		"a4a22291"
+	],
+	tasks: [{
+		uid: "4d9748af",
+		type: "item",
+		items: [{
+			item: "environmentaltech:modifier_speed"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "53400ffa",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest946.name}",
+	icon: "animus:blockbloodwood",
+	x: 4.0d,
+	y: 5.5d,
+	text: [
+		"{bq.quest946.desc}"
+	],
+	dependencies: [
+		"6a6dc36e"
+	],
+	tasks: [{
+		uid: "551828ff",
+		type: "item",
+		items: [{
+			item: "animus:blockbloodwood"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "2fc171fb",
+		type: "item",
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "bloodwood"
+			}
+		},
+		count: 20
+	}]
+}

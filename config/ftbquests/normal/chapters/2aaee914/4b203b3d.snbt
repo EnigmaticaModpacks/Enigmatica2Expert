@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest186.name}",
+	icon: "mekanism:compressedcarbon",
+	x: 6.166666666666667d,
+	y: 5.166666666666667d,
+	text: [
+		"{bq.quest186.desc}"
+	],
+	dependencies: [
+		"d0c5b8a8"
+	],
+	tasks: [{
+		uid: "4db56c1a",
+		type: "item",
+		items: [{
+			item: "mekanism:compressedcarbon"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "4051fe17",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

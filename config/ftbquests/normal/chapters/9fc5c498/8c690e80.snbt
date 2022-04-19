@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest577.name}",
+	icon: "enderio:block_inhibitor_obelisk",
+	x: 6.166666666666667d,
+	y: 6.5d,
+	text: [
+		"{bq.quest577.desc}"
+	],
+	dependencies: [
+		"ff5a849e"
+	],
+	tasks: [{
+		uid: "95fc090a",
+		type: "item",
+		items: [{
+			item: "enderio:block_inhibitor_obelisk"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "538496db",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

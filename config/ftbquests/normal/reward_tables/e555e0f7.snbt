@@ -1,0 +1,34 @@
+{
+	title: "{bq.quest942.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "enderio:item_rod_of_return",
+			tag: {
+				"enderio:energy": 2000000,
+				"enderio:famount": 200
+			}
+		}
+	},
+	{
+		item: {
+			id: "enderio:item_staff_of_levity",
+			tag: {
+				enderio.darksteel.upgrade.energyUpgrade: {
+					level: 3,
+					energy: 1000000
+				},
+				"enderio:famount": 8000
+			}
+		}
+	},
+	{
+		item: {
+			id: "appliedenergistics2:charged_staff",
+			tag: {
+				internalMaxPower: 8000.0d,
+				internalCurrentPower: 8000.0d
+			}
+		}
+	}]
+}

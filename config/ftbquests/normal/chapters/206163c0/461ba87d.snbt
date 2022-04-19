@@ -1,0 +1,25 @@
+{
+	title: "{bq.quest891.name}",
+	icon: "forestry:miner_bag",
+	x: -4.833333333333333d,
+	y: -0.5d,
+	text: [
+		"{bq.quest891.desc}"
+	],
+	dependencies: [
+		"8806b7fe"
+	],
+	tasks: [{
+		uid: "e08b103c",
+		type: "item",
+		items: [{
+			item: "forestry:miner_bag"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9411d7c3",
+		type: "choice",
+		table: 111
+	}]
+}

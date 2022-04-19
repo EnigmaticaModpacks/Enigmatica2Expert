@@ -1,0 +1,25 @@
+{
+	title: "{bq.quest651.name}",
+	icon: "thaumcraft:focus_pouch",
+	x: 7.0d,
+	y: 9.0d,
+	text: [
+		"{bq.quest651.desc}"
+	],
+	dependencies: [
+		"b1e42bf7"
+	],
+	tasks: [{
+		uid: "1cba96ae",
+		type: "item",
+		items: [{
+			item: "thaumcraft:focus_pouch"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "6459daaf",
+		type: "choice",
+		table: 48
+	}]
+}

@@ -1,0 +1,10 @@
+{
+	title: "{bq.chapter20.name}",
+	icon: "avaritia:infinity_sword",
+	description: [
+		"{bq.chapter20.desc}"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

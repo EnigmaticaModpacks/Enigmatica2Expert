@@ -1,0 +1,49 @@
+{
+	title: "{bq.quest74.name}",
+	icon: {
+		id: "ic2:te",
+		Damage: 73s,
+		tag: {}
+	},
+	x: 0.8333333333333333d,
+	y: 3.5d,
+	text: [
+		"{bq.quest74.desc}"
+	],
+	dependencies: [
+		"83c7fb15"
+	],
+	tasks: [{
+		uid: "1ea13327",
+		type: "item",
+		items: [{
+			id: "ic2:te",
+			Damage: 73s,
+			tag: {}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "55b051be",
+		type: "item",
+		items: [{
+			id: "ic2:cable",
+			Count: 6b,
+			tag: {
+				type: 0b,
+				insulation: 1b
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f155b836",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

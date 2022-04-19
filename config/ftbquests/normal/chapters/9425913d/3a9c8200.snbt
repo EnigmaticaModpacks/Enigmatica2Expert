@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest10.name}",
+	icon: "exnihilocreatio:block_sieve",
+	x: 7.5d,
+	y: 0.5d,
+	text: [
+		"{bq.quest10.desc}"
+	],
+	dependencies: [
+		"ca359f03"
+	],
+	tasks: [{
+		uid: "69390c0f",
+		type: "item",
+		items: [{
+			item: "exnihilocreatio:block_sieve"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "719a0291",
+		type: "item",
+		item: "exnihilocreatio:item_mesh 1 1"
+	},
+	{
+		uid: "65d056d8",
+		type: "item",
+		item: "excompressum:double_compressed_diamond_hammer"
+	}]
+}

@@ -1,0 +1,55 @@
+{
+	title: "{bq.quest679.name}",
+	icon: "thaumcraft:void_helm",
+	x: 15.166666666666666d,
+	y: 0.8333333333333333d,
+	text: [
+		"{bq.quest679.desc}"
+	],
+	dependencies: [
+		"83ab3c5f"
+	],
+	tasks: [{
+		uid: "c519b956",
+		type: "item",
+		items: [{
+			item: "thaumcraft:void_helm"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "b07a9b98",
+		type: "item",
+		items: [{
+			item: "thaumcraft:void_chest"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "67bf7c30",
+		type: "item",
+		items: [{
+			item: "thaumcraft:void_legs"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "e01a326b",
+		type: "item",
+		items: [{
+			item: "thaumcraft:void_boots"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b6077bcd",
+		type: "choice",
+		table: 64
+	},
+	{
+		uid: "990f811d",
+		type: "command",
+		auto: "invisible",
+		command: "gamestage silentadd @p armor_void"
+	}]
+}

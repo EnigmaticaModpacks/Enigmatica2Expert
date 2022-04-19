@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest378.name}",
+	icon: "botania:monocle",
+	x: 1.8333333333333333d,
+	y: 3.8333333333333335d,
+	text: [
+		"{bq.quest378.desc}"
+	],
+	dependencies: [
+		"2bc0a8f1",
+		"5672d99b"
+	],
+	tasks: [{
+		uid: "2eac30ae",
+		type: "item",
+		items: [{
+			item: "botania:monocle"
+		}],
+		
+	}],
+	rewards: [{
+		uid: "ed0c108d",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

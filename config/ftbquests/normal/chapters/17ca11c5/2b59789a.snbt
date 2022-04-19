@@ -1,0 +1,31 @@
+{
+	title: "{bq.quest22.name}",
+	icon: "draconicevolution:draconium_capacitor 1 2",
+	x: 0.45833333333333337d,
+	y: 5.125d,
+	text: [
+		"{bq.quest22.desc}"
+	],
+	dependencies: [
+		"7e987598",
+		"3bcf46b6"
+	],
+	tasks: [{
+		uid: "2bd0f2a5",
+		type: "item",
+		items: [{
+			id: "draconicevolution:draconium_capacitor",
+			Damage: 2s,
+			tag: {
+				Energy: 1073741823
+			}
+		}],
+		
+	}],
+	rewards: [{
+		uid: "6ed8266e",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has obtained the Creative Flux Capacitor!"
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	title: "{bq.quest724.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "minecraft:diamond_ore",
+		count: 8
+	},
+	{
+		item: "minecraft:emerald_ore",
+		count: 4
+	},
+	{
+		item: {
+			id: "tconstruct:binding",
+			tag: {
+				Material: "psigem"
+			}
+		}
+	}]
+}

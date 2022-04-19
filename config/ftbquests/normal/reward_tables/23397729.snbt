@@ -1,0 +1,13 @@
+{
+	title: "{bq.quest723.name}",
+	loot_size: 1,
+	rewards: [{
+		item: "rats:rat_upgrade_warrior"
+	},
+	{
+		item: "rats:rat_upgrade_platter"
+	},
+	{
+		item: "rats:rat_upgrade_lumberjack"
+	}]
+}

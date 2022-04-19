@@ -1,0 +1,10 @@
+{
+	title: "{bq.chapter5.name}",
+	icon: "astralsorcery:blockaltar",
+	description: [
+		"{bq.chapter5.desc}"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

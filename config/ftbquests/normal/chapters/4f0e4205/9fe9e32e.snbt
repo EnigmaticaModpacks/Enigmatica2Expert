@@ -1,0 +1,56 @@
+{
+	title: "{bq.quest786.name}",
+	icon: "twilightforest:arctic_chestplate",
+	x: 4.5d,
+	y: -0.16666666666666669d,
+	text: [
+		"{bq.quest786.desc}"
+	],
+	dependencies: [
+		"6be282e4"
+	],
+	size: 0.6666666666666666d,
+	tasks: [{
+		uid: "fcd510bb",
+		type: "item",
+		items: [{
+			item: "twilightforest:arctic_helmet"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "aecbab9d",
+		type: "item",
+		items: [{
+			item: "twilightforest:arctic_chestplate"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "f6741eef",
+		type: "item",
+		items: [{
+			item: "twilightforest:arctic_leggings"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "99c3809e",
+		type: "item",
+		items: [{
+			item: "twilightforest:arctic_boots"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c26a87c8",
+		type: "choice",
+		table: 96
+	},
+	{
+		uid: "c41c6482",
+		type: "command",
+		auto: "invisible",
+		command: "gamestage silentadd @p armor_arctic"
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	title: "{bq.quest566.name}",
+	icon: "enderio:block_stirling_generator",
+	x: 0.8333333333333333d,
+	y: 2.5d,
+	text: [
+		"{bq.quest566.desc}"
+	],
+	dependencies: [
+		"2265d20b"
+	],
+	tasks: [{
+		uid: "d6df1dae",
+		type: "item",
+		items: [{
+			item: "enderio:block_stirling_generator"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c40e8eaf",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

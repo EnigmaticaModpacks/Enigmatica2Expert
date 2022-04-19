@@ -1,0 +1,28 @@
+{
+	title: "{bq.quest947.name}",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "conarm:chest_core",
+			tag: {
+				Material: "darkwood"
+			}
+		}
+	},
+	{
+		item: {
+			id: "conarm:leggings_core",
+			tag: {
+				Material: "darkwood"
+			}
+		}
+	},
+	{
+		item: {
+			id: "conarm:helmet_core",
+			tag: {
+				Material: "darkwood"
+			}
+		}
+	}]
+}
