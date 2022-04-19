@@ -128,6 +128,10 @@ export async function init(h = defaultHelper, options = argv) {
       block_stack: 'minecraft:mob_spawner',
       dropList: [{ stack: 'enderio:item_broken_spawner' }, { stack: 'actuallyadditions:item_misc:20', luck: [1, 3] }],
     },
+
+    { block_stack: 'astralsorcery:blockgemcrystals:3', dropList: [{ stack: 'astralsorcery:itemperkgem:1' }] },
+    { block_stack: 'astralsorcery:blockgemcrystals:1', dropList: [{ stack: 'astralsorcery:itemperkgem:2' }] },
+    { block_stack: 'astralsorcery:blockgemcrystals:2', dropList: [{ stack: 'astralsorcery:itemperkgem' }] },
   ])
 
   //###############################################################################

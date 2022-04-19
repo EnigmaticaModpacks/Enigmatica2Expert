@@ -11,9 +11,11 @@
 //@ts-check
 /* eslint-disable no-unused-vars */
 
+import { xml2js, js2xml } from 'xml-js'
 import glob from 'glob'
 import _ from 'lodash'
 import { table, getBorderCharacters } from 'table'
+import humanizeString from 'humanize-string'
 
 import {
   injectInFile,
@@ -51,6 +53,12 @@ import {
 
 function saveObjAsJson(obj, filename) {
   saveText(JSON.stringify(obj, null, 2), filename)
+}
+
+/** @typedef {import("xml-js").Element} XMLElement*/
+/** @param {string} xmlString */
+function xml_to_js(xmlString) {
+  return /** @type {XMLElement} */ (xml2js(xmlString, { compact: false }))
 }
 
 const reverseStr = (s) => [...s].reverse().join('')

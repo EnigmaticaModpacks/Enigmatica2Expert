@@ -82,10 +82,13 @@ Liquids that should have more uses:
 
 ## TODO
 
-- [ ] ✏️ Transfer liquid interaction to Witch Water
+- [ ] ✏️ Add New conglomerate to explode with nuke and get Chaos Shards
+- [ ] ✏️ Make Gaia fight non-mandatory
+- [ ] ✏️ Fix turtle uncraftable
+- [ ] ✏️ Fix potion of bad luck uncraftable
 - [ ] 🔄 Check why mobs are not spawned anough (less then 70 for whole server)
 - [ ] 🔄 Check render distance on server
-- [ ] 🔄 Remake BQ Splash Screen
+- [ ] 📖 Add hopper in Improved Furnace quest
 - [ ] 🚧 Add modpack automation:
     1. `make_pack.js`
     2. Create CF release with fixed description, Add `inline-block` styles for images publishing on CF
@@ -103,6 +106,9 @@ Liquids that should have more uses:
 
 ## Long-Term
 
+- [ ] ✏️ x10 Speed up rats
+- [ ] ✏️ Drop items onto garbage piles to make pile bigger
+- [ ] ✏️ Transfer liquid interaction to Witch Water
 - [ ] 🔄 Add Quark's `Beacon Replacements`
 - [ ] 🔄 Fix Quark's reacharound not working after update to ROTN edition
 - [ ] ✏️ Add casts of tungsten instead of making in Part Builder
