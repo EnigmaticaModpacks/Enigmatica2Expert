@@ -1,0 +1,175 @@
+MINER:
+	1:
+	thaumcraft:cluster:0 //iron
+	thaumcraft:cluster:1 //gold
+	thaumcraft:cluster:2 //copper
+	thaumcraft:cluster:3 //tin
+	thaumcraft:cluster:4 //silver
+	thaumcraft:cluster:5 //lead
+	thaumcraft:cluster:6 //cinnabar
+	thaumcraft:cluster:7 //quartz
+	2:
+	thaumcraft:sapling_greatwood
+	thaumcraft:thaumium_pick
+	thaumcraft:thaumium_axe
+	thaumcraft:thaumium_hoe
+	minecraft:compass
+	3:
+	minecraft:blaze_rod
+	4:
+	thaumcraft:sapling_silverwood
+	5:
+	minecraft:totem_of_undying
+MAGE:
+	1:
+	thaumcraft:crystal_essence {Aspects:[{amount:1,key:"aer"}]}
+	thaumcraft:crystal_essence {Aspects:[{amount:1,key:"terra"}]}
+	thaumcraft:crystal_essence {Aspects:[{amount:1,key:"ignis"}]}
+	thaumcraft:crystal_essence {Aspects:[{amount:1,key:"aqua"}]}
+	thaumcraft:crystal_essence {Aspects:[{amount:1,key:"perditio"}]}
+	thaumcraft:crystal_essence {Aspects:[{amount:1,key:"ordo"}]}
+	2:
+	minecraft:potion {Potion:"minecraft:regeneration"} //vanilla TC uses 1.8 metadata numbers, resulting in "uncraftable potions"
+	minecraft:potion {Potion:"minecraft:healing"}
+	thaumcraft:crystal_essence {Aspects:[{amount:1,key:"vitium"}]}
+	thaumcraft:crystal_essence {Aspects:[{amount:1,key:"auram"}]}
+	thaumcraft:cloth_chest
+	thaumcraft:cloth_legs
+	thaumcraft:cloth_boots
+	3:
+	4:
+	thaumcraft:amulet_vis:0
+	5:
+	thaumcraft:pech_wand
+ARCHER:
+	1:
+	thaumcraft:candle_white
+	thaumcraft:candle_orange
+	thaumcraft:candle_magenta
+	thaumcraft:candle_lightblue
+	thaumcraft:candle_yellow
+	thaumcraft:candle_lime
+	thaumcraft:candle_pink
+	thaumcraft:candle_gray
+	thaumcraft:candle_silver
+	thaumcraft:candle_cyan
+	thaumcraft:candle_purple
+	thaumcraft:candle_blue
+	thaumcraft:candle_brown
+	thaumcraft:candle_green
+	thaumcraft:candle_red
+	thaumcraft:candle_black
+	2:
+	minecraft:enchanted_book {StoredEnchantments:[{lvl: 1s, id: 50s}]} //Flame
+	minecraft:enchanted_book {StoredEnchantments:[{lvl: 3s, id: 48s}]} //Powers
+	3:
+	minecraft:dragon_breath
+	4:
+	minecraft:ghast_tear
+	thaumcraft:baubles:3 //Apprentice Ring
+	5:
+	minecraft:enchanted_book {StoredEnchantments:[{lvl: 1s, id: 51s}]} //Infinity
+	minecraft:enchanted_book {StoredEnchantments:[{lvl: 5s, id: 48s}]} //Power
+COMMON:
+	3:
+	minecraft:experience_bottle 5
+	minecraft:golden_apple:0 2
+	thaumcraft:curio:4
+	4:
+	thaumcraft:curio:4 3
+	5:
+	minecraft:golden_apple:1
+	thaumcraft:curio:4 5
+
+#parsing ends with a line starting with #, everything below is a comment. 
+The format of this file is quite obvious, <item> [tag] [weight]. I just want to specify that 
+1) its not recommended to make weight too high as it just multiplies the same entry several times
+2) rarity can be from 1 to 5 and nothing else.
+I have placed vanilla TC pech trades here, for the reference.
+
+
+
+
+MINER:
+	1:
+	thaumcraft:cluster:0 //iron
+	thaumcraft:cluster:1 //gold
+	thaumcraft:cluster:2 //copper
+	thaumcraft:cluster:3 //tin
+	thaumcraft:cluster:4 //silver
+	thaumcraft:cluster:5 //lead
+	thaumcraft:cluster:6 //cinnabar
+	thaumcraft:cluster:7 //quartz
+	2:
+	minecraft:blaze_rod
+	minecraft:dragon_breath
+	minecraft:compass
+	thaumcraft:sapling_greatwood	
+	3:
+	minecraft:experience_bottle 2
+	minecraft:golden_apple:0
+	4:
+	minecraft:spectral_arrow
+	thaumcraft:thaumium_pick
+	thaumcraft:thaumium_axe
+	thaumcraft:thaumium_hoe
+	5:
+	minecraft:golden_apple:1
+	thaumcraft:curio:4	
+	minecraft:totem_of_undying
+MAGE:
+	1:
+	thaumcraft:crystal_essence {Aspects:[{amount:1,key:"aer"}]}
+	thaumcraft:crystal_essence {Aspects:[{amount:1,key:"terra"}]}
+	thaumcraft:crystal_essence {Aspects:[{amount:1,key:"ignis"}]}
+	thaumcraft:crystal_essence {Aspects:[{amount:1,key:"aqua"}]}
+	thaumcraft:crystal_essence {Aspects:[{amount:1,key:"perditio"}]}
+	thaumcraft:crystal_essence {Aspects:[{amount:1,key:"ordo"}]}
+	2:
+	minecraft:potion {Potion:"minecraft:regeneration"} //vanilla TC uses 1.8 metadata numbers, resulting in "uncraftable potions"
+	minecraft:potion {Potion:"minecraft:healing"}
+	thaumcraft:crystal_essence {Aspects:[{amount:1,key:"vitium"}]}
+	3:
+	minecraft:experience_bottle 2
+	minecraft:golden_apple:0
+	thaumcraft:crystal_essence {Aspects:[{amount:1,key:"auram"}]}
+	4:
+	thaumcraft:cloth_chest
+	thaumcraft:cloth_legs
+	thaumcraft:cloth_boots
+	5:
+	minecraft:golden_apple:1
+	thaumcraft:curio:4
+	thaumcraft:pech_wand
+	thaumcraft:amulet_vis:0
+ARCHER:
+	1:
+	thaumcraft:candle_white
+	thaumcraft:candle_orange
+	thaumcraft:candle_magenta
+	thaumcraft:candle_lightblue
+	thaumcraft:candle_yellow
+	thaumcraft:candle_lime
+	thaumcraft:candle_ping
+	thaumcraft:candle_gray
+	thaumcraft:candle_silver
+	thaumcraft:candle_cyan
+	thaumcraft:candle_purple
+	thaumcraft:candle_blue
+	thaumcraft:candle_brown
+	thaumcraft:candle_green
+	thaumcraft:candle_red
+	thaumcraft:candle_black
+	2:
+	minecraft:ghast_tear
+	minecraft:enchanted_book {StoredEnchantments:[{lvl: 1s, id: 48s}]} //Power
+	3:
+	minecraft:experience_bottle 2
+	minecraft:golden_apple:0
+	4:
+	thaumcraft:golden_apple:1
+	5:
+	thaumcraft:curio:4
+	thaumcraft:baubles:3 //Apprentice Ring
+	minecraft:enchanted_book {StoredEnchantments:[{lvl: 1s, id: 50s}]} //Flame
+	minecraft:enchanted_book {StoredEnchantments:[{lvl: 1s, id: 51s}]} //Infinity
