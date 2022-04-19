@@ -213,6 +213,7 @@ requious.jei.recipe.barrel_milking=Barrel Milking
 requious.jei.recipe.entity_kill_entity=Entity Kill Entity
 requious.jei.recipe.special_craft=Special Craft
 requious.jei.recipe.ic2_crops=IC2 Crops
+requious.jei.recipe.asteroids=Asteroids
 
 tile.adv_bee_analyzer.name=Advanced Analyzer
 tile.infinity_furnace.name=Infinity Furnace
