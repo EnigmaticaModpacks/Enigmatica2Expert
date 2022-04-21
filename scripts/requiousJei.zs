@@ -1295,7 +1295,7 @@ addInsOuts(x, [
 function add_special_craft(output as IItemStack, input2d as IIngredient[][], condition as string) as void {
   val assRec = AssemblyRecipe.create(function(container) {
     container.addItemOutput("output0", output);
-    container.addItemOutput("output1", <betterquesting:placeholder>.withDisplayName("§e§lCondition").withLore(["§e" ~ condition]));
+    container.addItemOutput("output1", <engineersdecor:sign_caution>.withDisplayName("§e§lCondition").withLore(["§e" ~ condition]));
   });
   for y, input1d in input2d {
     for x, ingr in input1d {

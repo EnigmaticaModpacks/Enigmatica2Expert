@@ -15,7 +15,7 @@ difficulty:2
 fancyGraphics:false
 ao:2
 renderClouds:fast
-resourcePacks:["bq_lootchests","Better Gendustry v1.0.zip"]
+resourcePacks:["Better Gendustry v1.0.zip"]
 incompatibleResourcePacks:[]
 lastServer:192.168.193.234:55650
 lang:en_us
