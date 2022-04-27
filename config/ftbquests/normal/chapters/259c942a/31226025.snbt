@@ -13,15 +13,17 @@
 		uid: "f377d193",
 		type: "item",
 		items: [{
-			item: "immersiveengineering:stone_decoration 27 2"
-		}]
+			item: "immersiveengineering:stone_decoration 1 2"
+		}],
+		count: 27L
 	},
 	{
 		uid: "77e984ee",
 		type: "item",
 		items: [{
-			item: "immersiveengineering:metal_device1 2"
-		}]
+			item: "immersiveengineering:metal_device1"
+		}],
+		count: 2L
 	}],
 	rewards: [{
 		uid: "5641e469",

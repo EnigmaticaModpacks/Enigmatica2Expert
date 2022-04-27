@@ -1,6 +1,6 @@
 {
 	title: "{bq.quest1070.name}",
-	icon: "immersiveengineering:sheetmetal 2 3",
+	icon: "immersiveengineering:sheetmetal 1 3",
 	x: 4.5d,
 	y: 0.8333333333333333d,
 	text: [

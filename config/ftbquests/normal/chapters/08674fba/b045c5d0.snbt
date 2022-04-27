@@ -1,10 +1,11 @@
 {
 	title: "{bq.quest442.name}",
 	icon: {
-		id: "advancedrocketry:bucketrocketfuel",
-		Count: 1,
-		tag: 0,
-		Damage: 0
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "rocketfuel",
+			Amount: 1000
+		}
 	},
 	x: 12.166666666666666d,
 	y: 2.8333333333333335d,
