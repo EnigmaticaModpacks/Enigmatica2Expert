@@ -45,10 +45,10 @@ mods.nuclearcraft.melter.removeRecipeWithInput(<bigreactors:blockgraphite>);
 	[<ore:plateLead>, <ic2:casing:4>, <ore:plateLead>]]);
 
 # Platings Laser Alternatives
-scripts.processUtils.avdRockXmlRecipeEx("PrecisionLaserEtcher", [<ore:plateLead> * 12, <ore:dustCrystalBinder> * 32, <ore:ingotUranium238> * 32, <ore:ingotTough> * 32], null, [<nuclearcraft:part:3> * 8], null, {power: 70000, timeRequired: 20});
-scripts.processUtils.avdRockXmlRecipeEx("PrecisionLaserEtcher", [<ore:plateLead> * 12, <ore:ingotUranium238> * 32, <ore:ingotTough> * 32], null, [<nuclearcraft:part:2> * 8], null, {power: 100000, timeRequired: 40});
-scripts.processUtils.avdRockXmlRecipeEx("PrecisionLaserEtcher", [<ore:plateLead> * 12, <ore:ingotTough> * 32], null, [<nuclearcraft:part:1> * 8], null, {power: 130000, timeRequired: 60});
-scripts.processUtils.avdRockXmlRecipeEx("PrecisionLaserEtcher", [<ore:plateLead> * 12, <ore:ingotGraphite> * 16], null, [<nuclearcraft:part> * 8], null, {power: 160000, timeRequired: 80});
+scripts.processUtils.avdRockXmlRecipeEx("PrecisionLaserEtcher", [<ore:plateLead> * 12, <ore:dustCrystalBinder> * 32, <ore:ingotUranium238> * 32, <ore:ingotTough> * 32], null, [<nuclearcraft:part:3> * 8], null, {power: 160000, timeRequired: 20});
+scripts.processUtils.avdRockXmlRecipeEx("PrecisionLaserEtcher", [<ore:plateLead> * 12, <ore:ingotUranium238> * 32, <ore:ingotTough> * 32], null, [<nuclearcraft:part:2> * 8], null, {power: 130000, timeRequired: 40});
+scripts.processUtils.avdRockXmlRecipeEx("PrecisionLaserEtcher", [<ore:plateLead> * 12, <ore:ingotTough> * 32], null, [<nuclearcraft:part:1> * 8], null, {power: 100000, timeRequired: 60});
+scripts.processUtils.avdRockXmlRecipeEx("PrecisionLaserEtcher", [<ore:plateLead> * 12, <ore:ingotGraphite> * 16], null, [<nuclearcraft:part> * 8], null, {power: 70000, timeRequired: 80});
 
 # Boron Nitride shortcut with AdvRock machines
 scripts.processUtils.avdRockXmlRecipeEx("ChemicalReactor", null, [<fluid:nitrogen> * 800, <fluid:hydrogen> * 2400], null, [<fluid:ammonia> * 16000], {power: 120000, timeRequired: 80});
@@ -247,8 +247,8 @@ for i, output in compressed {
 
 
 # Decay generator as crafting method
-addDecayRecipe([<contenttweaker:terrestrial_artifact_block>, <environmentaltech:litherite>  , 24000.0d, 36000.0d]);
-addDecayRecipe([<environmentaltech:litherite>             , <actuallyadditions:block_misc:6>, 12000.0d, 18000.0d]);
+addDecayRecipe([<contenttweaker:terrestrial_artifact_block>, <environmentaltech:litherite>  , 400.0d, 2000000.0d]);
+addDecayRecipe([<environmentaltech:litherite>             , <actuallyadditions:block_misc:6>, 200.0d, 100000.0d]);
 
 # Radiation mutations
 # Sadly, radiation mutations works really laggy and cant 

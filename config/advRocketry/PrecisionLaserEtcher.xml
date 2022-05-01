@@ -56,7 +56,7 @@
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Elite Plating] -->
-	<Recipe timeRequired="20" power="70000">
+	<Recipe timeRequired="20" power="160000">
 		<input>
 			<oreDict>plateLead 12</oreDict>
 			<oreDict>dustCrystalBinder 32</oreDict>
@@ -69,7 +69,7 @@
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [DU Plating] -->
-	<Recipe timeRequired="40" power="100000">
+	<Recipe timeRequired="40" power="130000">
 		<input>
 			<oreDict>plateLead 12</oreDict>
 			<oreDict>ingotUranium238 32</oreDict>
@@ -81,7 +81,7 @@
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Advanced Plating] -->
-	<Recipe timeRequired="60" power="130000">
+	<Recipe timeRequired="60" power="100000">
 		<input>
 			<oreDict>plateLead 12</oreDict>
 			<oreDict>ingotTough 32</oreDict>
@@ -92,7 +92,7 @@
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Basic Plating] -->
-	<Recipe timeRequired="80" power="160000">
+	<Recipe timeRequired="80" power="70000">
 		<input>
 			<oreDict>plateLead 12</oreDict>
 			<oreDict>ingotGraphite 16</oreDict>
