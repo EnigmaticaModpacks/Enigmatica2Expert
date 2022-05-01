@@ -715,6 +715,10 @@
 		item: "actuallyadditions:item_medium_to_large_crate_upgrade",
 		count: 2,
 		weight: 10
+	},
+	{
+		item: "bhc:green_heart",
+		weight: 60
 	}],
 	loot_crate: {
 		string_id: "rare",

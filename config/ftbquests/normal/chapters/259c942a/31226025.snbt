@@ -24,6 +24,13 @@
 			item: "immersiveengineering:metal_device1"
 		}],
 		count: 2L
+	},
+	{
+		uid: "a8d1b88f",
+		type: "item",
+		items: [{
+			item: "minecraft:hopper"
+		}]
 	}],
 	rewards: [{
 		uid: "5641e469",

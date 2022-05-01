@@ -559,132 +559,6 @@
 		weight: 10
 	},
 	{
-		item: {
-			id: "minecraft:splash_potion",
-			tag: {
-				Potion: "potioncore:teleport_surface"
-			}
-		},
-		weight: 10
-	},
-	{
-		item: {
-			id: "minecraft:splash_potion",
-			tag: {
-				Potion: "potioncore:strong_diamond_skin"
-			}
-		},
-		weight: 10
-	},
-	{
-		item: {
-			id: "minecraft:splash_potion",
-			tag: {
-				Potion: "potioncore:strong_reach"
-			}
-		},
-		weight: 10
-	},
-	{
-		item: {
-			id: "minecraft:splash_potion",
-			tag: {
-				Potion: "potioncore:long_purity"
-			}
-		},
-		weight: 10
-	},
-	{
-		item: {
-			id: "minecraft:splash_potion",
-			tag: {
-				Potion: "potioncore:strong_iron_skin"
-			}
-		},
-		weight: 10
-	},
-	{
-		item: {
-			id: "minecraft:splash_potion",
-			tag: {
-				Potion: "potioncore:strong_recoil"
-			}
-		},
-		weight: 10
-	},
-	{
-		item: {
-			id: "minecraft:splash_potion",
-			tag: {
-				Potion: "potioncore:strong_bless"
-			}
-		},
-		weight: 10
-	},
-	{
-		item: {
-			id: "minecraft:splash_potion",
-			tag: {
-				Potion: "potioncore:strong_revival"
-			}
-		},
-		weight: 10
-	},
-	{
-		item: {
-			id: "minecraft:splash_potion",
-			tag: {
-				Potion: "potioncore:strong_chance"
-			}
-		},
-		weight: 10
-	},
-	{
-		item: {
-			id: "minecraft:splash_potion",
-			tag: {
-				Potion: "potioncore:long_solid_core"
-			}
-		},
-		weight: 10
-	},
-	{
-		item: {
-			id: "minecraft:splash_potion",
-			tag: {
-				Potion: "potioncore:teleport_spawn"
-			}
-		},
-		weight: 10
-	},
-	{
-		item: {
-			id: "minecraft:splash_potion",
-			tag: {
-				Potion: "potioncore:long_climb"
-			}
-		},
-		weight: 10
-	},
-	{
-		item: {
-			id: "minecraft:splash_potion",
-			tag: {
-				Potion: "potioncore:strong_step_up"
-			}
-		},
-		weight: 10
-	},
-	{
-		item: {
-			id: "minecraft:splash_potion",
-			tag: {
-				Potion: "potioncore:cure"
-			}
-		},
-		weight: 10
-	},
-	{
 		item: "rats:cheese",
 		count: 8,
 		weight: 10
@@ -749,7 +623,7 @@
 				Fluid: "water"
 			}
 		},
-		count: 16,
+		count: 64,
 		weight: 10
 	},
 	{
@@ -871,6 +745,10 @@
 		item: "thaumcraft:loot_bag",
 		count: 5,
 		weight: 40
+	},
+	{
+		item: "bhc:red_heart",
+		weight: 80
 	}],
 	loot_crate: {
 		string_id: "common",
