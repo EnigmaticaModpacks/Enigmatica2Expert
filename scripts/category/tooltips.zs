@@ -197,6 +197,12 @@ desc.both(<libvulpes:productingot:7>, "obtained.fabricator_or_excavator"); # Tit
 desc.both(<mekanism:tierinstaller:3>, "mekanism_t_ultimate");
 desc.both(<contenttweaker:conglomerate_of_life>, "any_lamb");
 
+desc.tooltip(<industrialforegoing:mob_relocator>, "industrialforegoing:mob_relocator", 
+/*Inject_js(config('config/industrialforegoing.cfg').machines.mob_relocator.damage)*/
+100
+/**/
+);
+
 # Mystical Agriculture Seeds Tier 6
 <mysticalagriculture:enderium_seeds>.addTooltip(desc.local("tier")~": §56§r");
 <mysticalagriculture:iridium_seeds>.addTooltip(desc.local("tier")~": §56§r");
