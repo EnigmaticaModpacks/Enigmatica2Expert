@@ -33,12 +33,6 @@ function onFirstLogin(e as crafttweaker.event.PlayerLoggedInEvent) as void {
 }
 
 function onEachLogin(e as crafttweaker.event.PlayerLoggedInEvent, logCount as int) as void {
-  # This methods wont be called in debug invironment:
-  if(!utils.DEBUG) {
-    server.commandManager.executeCommand(server, "/bq_admin default load");
-    server.commandManager.executeCommand(server, "/bqs_loot default load");
-  }
-
   if(logCount == 2 && e.player.hasGameStage("skyblock")) {
     showWithDelay(e.player, "tooltips.dim_stages.remind_skyblock");
   }

@@ -1,7 +1,7 @@
 # .gitignore-alike list of files and derictories
 # that should be ignored when exporting package
 *
-scripts/debug/**/*
+scripts/debug
 config/tellme
 
 # Remove Mod-depended files

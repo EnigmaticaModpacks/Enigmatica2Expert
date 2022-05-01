@@ -86,9 +86,20 @@ Liquids that should have more uses:
 - [ ] ✏️ Make Gaia fight non-mandatory
 - [ ] ✏️ Fix turtle uncraftable
 - [ ] ✏️ Fix potion of bad luck uncraftable
+- [x] ✏️ Enderman Head add aspects
+- [ ] ✏️ Add Greater Crimson Portal craft
+- [ ] 🔄 Add damage for Liquid Death
 - [ ] 🔄 Check why mobs are not spawned anough (less then 70 for whole server)
 - [ ] 🔄 Check render distance on server
-- [ ] 📖 Add hopper in Improved Furnace quest
+- [ ] 🔄 Remind about BQ migrate command
+- [ ] 🔄 Remove Triumph achievment
+- [ ] 🔄 Colossal Chests bigger interface
+- [ ] 🔄 Add to readme: 1. Mention im E2E contributor 2. Tell that E2EE is less strict than E2E
+- [ ] 🔄 Forbid exploding in chunks, but claim only few chunks
+- [ ] 🔄 Add new Pech trades and add them in JEI
+- [ ] 🔄 Warn about power tier in tooltip
+- [ ] 📖 Target Dummy add to loot
+- [ ] 📖 **AE2 Network Visualiser** add to book
 - [ ] 🚧 Add modpack automation:
     1. `make_pack.js`
     2. Create CF release with fixed description, Add `inline-block` styles for images publishing on CF
