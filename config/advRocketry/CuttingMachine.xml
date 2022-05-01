@@ -206,16 +206,6 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Ethereal Wood Planks] -->
-	<Recipe timeRequired="10" power="40000">
-		<input>
-			<itemStack>biomesoplenty:log_1 1 4</itemStack>
-		</input>
-		<output>
-			<itemStack>biomesoplenty:planks_0 10 4</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Eucalyptus Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>

@@ -14,9 +14,9 @@ val cmd as ZenCommand = ZenCommand.create("restart_server");
 cmd.getCommandUsage = function(sender) {return "commands.restart_server.usage";};
 
 function sendSingle(player as IPlayer, key as string, substr as string = null) as void {
-  val line = game.localize("commands.restart_server."~key);
-  if (isNull(substr)) return player.sendRichTextMessage(crafttweaker.text.ITextComponent.fromTranslation(line));
-  player.sendRichTextMessage(crafttweaker.text.ITextComponent.fromTranslation(line, substr));
+  val langKey = game.localize("commands.restart_server."~key);
+  if (isNull(substr)) return player.sendRichTextMessage(crafttweaker.text.ITextComponent.fromTranslation(langKey));
+  player.sendRichTextMessage(crafttweaker.text.ITextComponent.fromTranslation(langKey, substr));
 }
 
 function send(key as string, mode as string = 'everyone', substr as string = null) as void {
@@ -32,7 +32,8 @@ function stopWithDelay() as void {
   send('delay');
 
   addDelayWork(function() {
-    send('stopping');
+    // send('stopping');
+    server.commandManager.executeCommand(server, '/say '~game.localize("commands.restart_server.stopping"));
     server.commandManager.executeCommand(server, '/stop');
   }, 60);
 }

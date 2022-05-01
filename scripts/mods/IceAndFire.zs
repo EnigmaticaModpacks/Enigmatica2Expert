@@ -267,6 +267,10 @@ for item in [
 	<iceandfire:dragonsteel_fire_ingot>, 
 	<iceandfire:dragonsteel_ice_ingot>]);
 
+<ore:blockDragonsteel>.add([
+	<iceandfire:dragonsteel_fire_block>, 
+	<iceandfire:dragonsteel_ice_block>]);
+
 # Ore 
 <ore:chitinMyrmex>.add([
 	<iceandfire:myrmex_desert_chitin>,

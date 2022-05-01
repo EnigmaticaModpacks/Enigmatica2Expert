@@ -138,3 +138,5 @@ craft.remake(<naturescompass:naturescompass>, ["pretty",
   "a": <extrautils2:decorativesolidwood>, # Magical Planks
   "B": <biomesoplenty:biome_finder>,      # Biome Finder
 });
+
+recipes.addShapeless("Biome Essence clear tag", <biomesoplenty:biome_essence>, [<biomesoplenty:biome_essence>]);

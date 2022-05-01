@@ -11,12 +11,12 @@ val desc = scripts.category.tooltip_utils.desc;
 for item in [
 /*Inject_js(
 [...loadText('resources/autotooltips/lang/en_us.lang')
-.matchAll(/^tooltips\.lang\.(?<id>[^=]+)=.*$/gm)]
+.matchAll(/^tooltips\.lang\.(?<id>[^=]+)=(.*)$/gm)]
+.filter(([,,text])=>!text.includes('%s'))
 .map(([, id]) => `  <${id}>,`)
 .sort(naturalSort)
 )*/
   <advgenerators:gas_input>,
-  <betteranimalsplus:handoffate>,
   <bloodmagic:blood_rune:1>,
   <bloodmagic:blood_rune:3>,
   <bloodmagic:blood_rune:4>,

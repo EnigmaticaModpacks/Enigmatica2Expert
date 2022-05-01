@@ -574,3 +574,8 @@ scripts.loot.entity_kill_entity.add("minecraft:slime", "minecraft:wolf", <ore:es
 mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:gold_ore>);
 scripts.process.crush(<minecraft:gold_ore>, <thermalfoundation:material:1>, "only: AEGrinder", [<contenttweaker:dust_tiny_silver>], [0.9f]);
 
+# Compressed Sticks
+recipes.remove(<openblocks:scaffolding>);
+recipes.remove(<storagedrawers:customtrim>);
+utils.compact(<ore:stickWood>, <openblocks:scaffolding>);
+utils.compact(<openblocks:scaffolding>, <storagedrawers:customtrim>);

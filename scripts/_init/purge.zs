@@ -40,6 +40,7 @@ utils.rh(<openblocks:generic:3>);
 utils.rh(<openblocks:generic:4>);
 utils.rh(<openblocks:generic:5>);
 utils.rh(<actuallyadditions:item_misc:17>);
+utils.rh(<bhc:wither_bone>);
 
 // BoP Ethereal wood (unobtainable)
 utils.rh(<biomesoplenty:log_1:4>);
@@ -49,9 +50,9 @@ utils.rh(<biomesoplenty:ethereal_stairs>);
 utils.rh(<biomesoplenty:wood_slab_0:4>);
 utils.rh(<biomesoplenty:ethereal_fence>);
 utils.rh(<biomesoplenty:ethereal_fence_gate>);
-utils.rh(<biomesoplenty:ethereal_door>);
+utils.rh(<biomesoplenty:ethereal_door:*>);
 utils.rh(<biomesoplenty:sapling_0:7>);
-utils.rh(<biomesoplenty:boat_ethereal>);
+utils.rh(<biomesoplenty:boat_ethereal:*>);
 
 # Purge saltpeter and sulfur
 utils.rh(<bloodmagic:component:24>);
@@ -128,3 +129,4 @@ furnace.remove(<*>, <twilightforest:raw_venison:*>);
 utils.rh(<contenttweaker:item_ore_tungsten:3>);
 utils.rh(<jaopca:block_blocktungsten>);
 utils.rh(<jaopca:item_nuggettungsten>);
+utils.rh(<enderio:item_owl_egg>, false);

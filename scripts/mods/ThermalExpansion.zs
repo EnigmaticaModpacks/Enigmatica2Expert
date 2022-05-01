@@ -519,6 +519,13 @@ mods.forestry.ThermionicFabricator.addCast(<thermalexpansion:frame:64>, Grid(["p
   "C": <ore:gearCopper>, # Copper Gear
   "▬": <ore:ingotTin>,   # Tin Ingot
 }).shaped(), <liquid: glass> * 1000, <forestry:wax_cast:*>);
+mods.forestry.ThermionicFabricator.addCast(<thermalexpansion:frame:64>, Grid(["pretty",
+  "▬ ▬ ▬",
+  "▬ C ▬",
+  "▬ ▬ ▬"], {
+  "C": <ore:gearCopper>, # Copper Gear
+  "▬": <ore:ingotTin>,   # Tin Ingot
+}).shaped(), <liquid: glass> * 1000);
 
 # [Augment: Auxiliary Reception Coil] from [Redstone Servo][+2]
 craft.remake(<thermalexpansion:augment:128>, ["pretty",
