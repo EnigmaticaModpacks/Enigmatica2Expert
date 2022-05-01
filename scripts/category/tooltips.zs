@@ -75,31 +75,6 @@ for rod in [
 }
 
 
-for item in [
-	<thaumcraft:mechanism_complex>,
-	<thaumcraft:mechanism_simple>,
-	<thaumcraft:mirrored_glass>,
-	<thaumcraft:vis_resonator>,
-	<thaumcraft:fabric>,
-	<thaumcraft:seal>,
-	<thaumcraft:jar_normal>,
-	<thaumcraft:lamp_arcane>,
-	<thaumcraft:pedestal_arcane>,
-	<thaumcraft:alembic>,
-	<thaumcraft:metal_alchemical>,
-	<thaumcraft:mind>,
-	<thaumcraft:vis_battery>,
-	<thaumcraft:stabilizer>,
-	<thaumcraft:inlay>,
-	<thaumcraft:research_table>,
-	<thaumcraft:arcane_workbench>,
-	<thaumcraft:smelter_basic>,
-	<thaumcraft:alumentum>,
-	<thaumcraft:nitor_yellow>
-] as IItemStack[] {
-	desc.jei(item, "thaum_research");
-}
-
 <extrautils2:ingredients:13>.addTooltip(format.aqua(desc.local("not_consumed")));
 
 
