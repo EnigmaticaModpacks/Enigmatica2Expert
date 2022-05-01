@@ -18,20 +18,12 @@ function fluidDict(ins as string[]) {
 }
 
 # FluidDictionary Recipes	
-	FluidDictionary.add("seed.oil", "seed_oil", 1);
-	FluidDictionary.add("seed_oil", "seed.oil", 1);
-
-	FluidDictionary.add("mead", "short.mead", 1);
-	FluidDictionary.add("short.mead", "mead", 1);
-
-	FluidDictionary.add("sulfuric_acid", "sulfuricacid", 1);
-	FluidDictionary.add("sulfuricacid", "sulfuric_acid", 1);
-
-	FluidDictionary.add("ic2hydrogen", "hydrogen", 1);
-
+	fluidDict(["seed.oil", "seed_oil"]);
+	fluidDict(["mead", "short.mead"]);
+	fluidDict(["sulfuric_acid", "sulfuricacid"]);
 	fluidDict(["hydrogen", "liquidhydrogen", "ic2hydrogen"]);
+	fluidDict(["oxygen", "liquidoxygen", "ic2oxygen"]);
 	fluidDict(["animania_honey", "for.honey", "honey"]);
-
 	fluidDict(["ic2milk", "milk"]);
 	fluidDict(["if.protein", "protein"]);
 	fluidDict(["ic2creosote", "creosote"]);
