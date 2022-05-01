@@ -14,15 +14,17 @@
 		uid: "4ee218fd",
 		type: "item",
 		items: [{
-			item: "iceandfire:dragon_bone_block 8"
-		}]
+			item: "iceandfire:dragon_bone_block"
+		}],
+		count: 8L
 	},
 	{
 		uid: "d2fbeb91",
 		type: "item",
 		items: [{
-			item: "iceandfire:dragonforge_ice_brick 17"
-		}]
+			item: "iceandfire:dragonforge_ice_brick"
+		}],
+		count: 17L
 	},
 	{
 		uid: "97d03bae",

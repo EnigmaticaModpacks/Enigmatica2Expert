@@ -1,6 +1,6 @@
 {
 	title: "{bq.quest1063.name}",
-	icon: "rats:garbage_pile 4",
+	icon: "rats:garbage_pile",
 	x: -6.5d,
 	y: -1.0d,
 	text: [

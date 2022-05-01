@@ -1,6 +1,6 @@
 {
 	title: "{bq.quest206.name}",
-	icon: "mekanism:basicblock 64 14",
+	icon: "mekanism:basicblock 1 14",
 	x: 0.8333333333333333d,
 	y: 9.166666666666666d,
 	text: [

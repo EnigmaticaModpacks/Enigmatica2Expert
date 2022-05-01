@@ -1,6 +1,6 @@
 {
 	title: "{bq.quest859.name}",
-	icon: "extrautils2:terraformer 4 1",
+	icon: "extrautils2:terraformer 1 1",
 	x: 3.8333333333333335d,
 	y: 6.333333333333333d,
 	text: [
