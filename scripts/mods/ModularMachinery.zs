@@ -5,7 +5,6 @@ import crafttweaker.item.IIngredient;
 import scripts.craft.grid.Grid;
 
 val modIngrs = {
-  arcane_crafting_engine        : [<thaumcraft:mechanism_complex>                           , <thaumcraft:salis_mundus>],
   advanced_thermionic_fabricator: [<appliedenergistics2:molecular_assembler>                , <forestry:hardened_machine>],
   starlight_crafting_engine     : [<astralsorcery:itemshiftingstar>                         , <astralsorcery:itemcraftingcomponent:4>],
   advanced_carpenter            : [<thermaldynamics:duct_16:6> | <thermaldynamics:duct_16:7>, <forestry:carpenter>],

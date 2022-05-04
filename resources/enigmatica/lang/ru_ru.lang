@@ -121,11 +121,6 @@ tooltips.lang.thaum.arcane=Чародейское вливание
 tooltips.lang.thaum.artifice=Artifice
 
 tooltips.lang.fluid.corium=§a Можно получить путем плавления реактора деления
-tooltips.lang.mm.starlight_crafting_engine=Требуется §9 §l 1 §r элемент ввода, §9 §l 1 §r жидкий ввод, §9 §l 1 §r Вывод товара
-tooltips.lang.mm.advanced_thermionic_fabricator=Требуется §9 §l 1 §r элемент ввода, §9 §l 1 §r жидкий ввод, §9 §l 1 §r Вывод товара
-tooltips.lang.mm.advanced_carpenter=Требуется §9 §l 1 §r элемент ввода, §9 §l 1 §r жидкий ввод, §9 §l 1 §r Вывод товара
-tooltips.lang.mm.arcane_crafting_engine=Требуется §9 §l 1 §r элемент ввода, §9 §l 1 §r выход элемента
-tooltips.lang.mm.advanced_scrap_factory=Требуется §9 §l 1 §r вход жидкости, §9 §l 1 §r выход элемента
 tooltips.lang.vanilla_tools=§4Ванильные инструменты не работают. Используйте инструменты Tinkers' Construct
 tooltips.lang.ae_lag=§cНе помещайте это в систему хранения AE, иначе это вызовет лаги.
 tooltips.lang.dont_put_into_ae=§cНе помещайте это в систему хранения AE, иначе вы не сможете вынуть его и начнутся лаги.

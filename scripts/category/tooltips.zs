@@ -373,17 +373,6 @@ desc.tooltip(<enderio:block_inventory_chest_warehouse>, 'store_x_stacks', 1373);
 desc.tooltip(<enderio:block_inventory_chest_warehouse13>, 'store_x_stacks', 1944);
 /**/
 
-# Modular Machine descriptions
-for machineName, lang in {
-	"starlight_crafting_engine"       : "mm.starlight_crafting_engine",
-	"advanced_thermionic_fabricator"  : "mm.advanced_thermionic_fabricator",
-	"advanced_carpenter"              : "mm.advanced_carpenter",
-	"arcane_crafting_engine"          : "mm.arcane_crafting_engine",
-	"advanced_scrap_factory"          : "mm.advanced_scrap_factory",
-} as string[string] {
-	desc.jei(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:"~machineName}), lang);
-}
-
 for lang, items in {
 	ae_lag: [
 		<cyclicmagic:storage_bag>,

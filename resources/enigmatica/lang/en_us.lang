@@ -121,11 +121,6 @@ tooltips.lang.thaum.arcane=Arcane Infusion
 tooltips.lang.thaum.artifice=Artifice
 
 tooltips.lang.fluid.corium=§aObtainable by melting down a Fission Reactor
-tooltips.lang.mm.starlight_crafting_engine=Needs §9§l1§r Item Input, §9§l1§r Fluid Input, §9§l1§r Item Output
-tooltips.lang.mm.advanced_thermionic_fabricator=Needs §9§l1§r Item Input, §9§l1§r Fluid Input, §9§l1§r Item Output
-tooltips.lang.mm.advanced_carpenter=Needs §9§l1§r Item Input, §9§l1§r Fluid Input, §9§l1§r Item Output
-tooltips.lang.mm.arcane_crafting_engine=Needs §9§l1§r Item Input, §9§l1§r Item Output
-tooltips.lang.mm.advanced_scrap_factory=Needs §9§l1§r Fluid Input, §9§l1§r Item Output
 tooltips.lang.vanilla_tools=§4Vanilla tools don't work. Use Tinkers' Construct tools
 tooltips.lang.ae_lag=§cDo not put this into AE storage system or it will cause lag.
 tooltips.lang.dont_put_into_ae=§cDo not put this into AE storage system or you will not be able to take it out and lags will occur.
