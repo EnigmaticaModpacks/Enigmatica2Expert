@@ -1,120 +1,136 @@
-# v0.55.0
+# v0.56.0
 
-## ⚠️ Attention
+## ⚠️ Important: Reactor will explode!
+In this version, IC2 Nuclear Reactor ![](https://is.gd/BWrVEK "Nuclear Reactor") power tier changed from `4` to `5`.  
+This means, any connected IC2 cable ![](https://is.gd/zO3OVA "Glass Fibre Cable") would explode. Use ![](https://is.gd/hlgbTb "Glass Fiber Wire Coil") from **Industrial Wires** instead.
 
-This version <u>remove Better Questing</u> mod and all its addons.
-
-To migrate all quest progress, you should **enter this command** after loading world:
-
-```sh
-/ftbq_import progress
-```
-
-This should be done once by server operator or single-player. [More info](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-importer).
+> Since Reactor has buffed x8 output compared to vanilla IC2, power Tier 4 can't transfer MOX setup output (about 11900 eu/t).  
+> Tier 5 would fix that.
 
 
+### Updating from `v0.54.0` and earlier
+
+If you update from older versions (prior to `21 April 2022`) you need to follow **Better Questing** => **FTB Quests** [migrate guide](https://github.com/Krutoy242/Enigmatica2Expert-Extended/releases/tag/v0.55.0) (see under "⚠️ Attention" paragraph).
 
 ## 🟢 New Mods
 
 Icon | Summary | Reason
 ----:|:--------| ------
-<img src="https://media.forgecdn.net/avatars/thumbnails/275/363/256/256/637261948352026071.png"         width="50"> | 🟧                     [**FTB Quests (Forge)**](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-forge)              <sup><sub>FTBQuests-1202.9.0.15.jar</sub></sup> <br> Questing Mod by FTB | Moved from Better Questing
-<img src="https://media.forgecdn.net/avatars/thumbnails/183/63/256/256/636812486536100113.png"          width="50"> | 🟨                   [**Item Filters (Forge)**](https://www.curseforge.com/minecraft/mc-mods/item-filters-forge)            <sup><sub>ItemFilters-1.0.4.2.jar</sub></sup> <br> Item Filters is a library mod that is used by mods like FTB Quests. It adds several filter items that let you precisely select which items to match. | Dependency of FTBQuest
-<img src="https://media.forgecdn.net/avatars/thumbnails/235/398/256/256/637085039429483186.png"         width="50"> | 🟩                    [**FTB Quests Importer**](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-importer)           <sup><sub>FTBQImporter-forge-1.12.2-2.0.1.jar</sub></sup> <br> A small utility mod that lets you import Better Questing Quests and Loot Crates into FTB Quests | Tool to migrate from BQ. use `/ftbq_import progress` command
-<img src="https://media.forgecdn.net/avatars/thumbnails/433/782/256/256/637673397314695131.png"         width="50"> | 🟩                     [**Give Me Back My HP**](https://www.curseforge.com/minecraft/mc-mods/give-me-back-my-hp)            <sup><sub>give-me-back-my-hp-1.12.2-1.0.0.jar</sub></sup> <br> fixes the max-HP-on-login bug | Should fix common HP problem
-
-## 🔴 Removed Mods
-
-Icon | Summary | Reason
-----:|:--------| ------
-<img src="https://media.forgecdn.net/avatars/thumbnails/34/921/256/256/635916684056573464.png"          width="50"> | 🟫           [**Better Questing - Quest Book**](https://www.curseforge.com/minecraft/mc-mods/better-questing-quest-book)    <sup><sub>questbook-3.1.1-1.12.jar</sub></sup> <br> Adds a quest book to Funwayguy's Better Questing Mod | Moved to FTBQuests
-<img src="https://media.forgecdn.net/avatars/thumbnails/317/984/256/256/637423606351535331.png"         width="50"> | 🟫    [**Better Questing Tweaker (BQTweaker)**](https://www.curseforge.com/minecraft/mc-mods/bqtweaker)                     <sup><sub>BQTweaker-1.3.3.jar</sub></sup> <br> Tweaker mod to change some aspects of BetterQuesting | Moved to FTBQuests
-<img src="https://media.forgecdn.net/avatars/thumbnails/30/140/256/256/635857624698238672.png"          width="50"> | 🟫                        [**Better Questing**](https://www.curseforge.com/minecraft/mc-mods/better-questing)               <sup><sub>BetterQuesting-3.5.329.jar</sub></sup> <br> A new and improved questing mod for Minecraft pack creators | Moved to FTBQuests
-<img src="https://media.forgecdn.net/avatars/thumbnails/32/952/256/256/635888498231572475.png"          width="50"> | 🟫   [**Better Questing - Standard Expansion**](https://www.curseforge.com/minecraft/mc-mods/better-questing-standard-expansion) <sup><sub>StandardExpansion-3.4.173.jar</sub></sup> <br> Standard tasks, rewards, importers and themes for BetterQuesting | Moved to FTBQuests
-<img src="https://media.forgecdn.net/avatars/thumbnails/33/213/256/256/635892355993800985.png"          width="50"> | 🟫                   [**Dynamic Surroundings**](https://www.curseforge.com/minecraft/mc-mods/dynamic-surroundings)          <sup><sub>DynamicSurroundings-1.12.2-3.6.3.jar</sub></sup> <br> Adds a variety of sound and visual effects to improve your Minecraft experience | Moved to optional (prompt on first MC load)
-<img src="https://media.forgecdn.net/avatars/thumbnails/179/851/256/256/636789387601122352.png"         width="50"> | 🟫                                 [**OreLib**](https://www.curseforge.com/minecraft/mc-mods/orelib)                        <sup><sub>OreLib-1.12.2-3.6.0.1.jar</sub></sup> <br> Support library for OreCruncher's mods | Dynamic Surroundings lib
+<img src="https://media.forgecdn.net/avatars/thumbnails/101/150/256/256/636320791384304672.png"         width="50"> | 🟧                             [**OC Sensors**](https://www.curseforge.com/minecraft/mc-mods/oc-sensors)                    <sup><sub>ocsensors-1.0.4-b23.jar</sub></sup> <br> Sensor Addon for OpenComputers | Helps to automate NBT-dependent setups
+<img src="https://media.forgecdn.net/avatars/thumbnails/132/859/256/256/636478744657081536.png"         width="50"> | 🟨                [**Baubley Heart Canisters**](https://www.curseforge.com/minecraft/mc-mods/baubley-heart-canisters)       <sup><sub>baubley-heart-canisters-1.12.2-2.0.3.jar</sub></sup> <br> Bauble Heart Canisters  | Additional bonus for loot boxes and fight system
+<img src="https://media.forgecdn.net/avatars/thumbnails/203/831/256/256/636935134673300045.png"         width="50"> | 🟨                 [**AE2 Network Visualiser**](https://www.curseforge.com/minecraft/mc-mods/ae2-network-visualiser)        <sup><sub>AE-Net-Vis-Tool-1.12.2-1.0.3.0-universal.jar</sub></sup> <br> For all of your AE2 debugging needs! | Better Network debugging
+<img src="https://media.forgecdn.net/avatars/thumbnails/436/794/256/256/637679304966892368.png"         width="50"> | 🟨            [**MmmMmmMmmMmm (Target Dummy)**](https://www.curseforge.com/minecraft/mc-mods/mmmmmmmmmmmm)                  <sup><sub>MmmMmmMmmMmm-1.12-1.14.jar</sub></sup> <br> Target Dummy that show damage dealt and can be equipped with armor | Great tool to test weapons and armor
 
 ## 🟡 Updated Mods
 
 - **AE2 Unofficial Extended Life**
 - **Had Enough Items**
-- **U Team Core**
-- **Dropt**
-- **Chunk-Pregenerator**
 - **ThaumTweaks**
-- **AE Additions - ExtraCells2 Fork**
+- **Better P2P**
+- **spark**
+- **LibVulpes**
+- **Advanced Rocketry**
 - **Aqua Acrobatics [Forge]**
 - **Entity Culling**
 - **CensoredASM**
 
 
-## [> Mods updates detailed.](https://github.com/Krutoy242/Enigmatica2Expert-Extended/blob/master/changelogs/MODS_v0.55.0.md)
+## [> Mods updates detailed.](https://github.com/Krutoy242/Enigmatica2Expert-Extended/blob/master/changelogs/MODS_v0.56.0.md)
 
 
 ## ✏️ **Recipes**
-  - ### 🖉 **New Recipes**
-    - ![](https://is.gd/s2BmuR "End Dilithium Ore") add Asteroid
-    - ![](https://is.gd/GbxcOK "Resonant End Stone") add Blood Magic Metheor
-    - ![](https://is.gd/dRuQ5I "Ball of Fur") use as grinding ball in ![](https://is.gd/Z4WuM3 "SAG Mill")
-    - Add Conversion between two **Deuterium** types (from NC and Mek)
-    - ![](https://is.gd/seJa8N "Broken Sword Part") from [Gelid Enderium Sword]
-    - ![](https://is.gd/GuOKiP "Dread Shard") from ![](https://is.gd/GVIX8A "Withering Soul")
-    - ![](https://is.gd/ISYZ6b "Xorcite Cluster") from ![](https://is.gd/85GQrr "Extraterrestrial Matter"), ![](https://is.gd/k4pjZF "Guardian Essence") and ![](https://is.gd/5GY5FH "Pristine Ender Dragon Matter")
-    - ![](https://is.gd/LuQc8c "Double Compressed Cobblestone") and ![](https://is.gd/kHFAuH "Triple Compressed Cobblestone") add ![](https://is.gd/t0Rn0k "Heavy Hammer") recipes, but increase mining levels to `6` and `7`
 
   - ### ✐ **Cheaper**
-    - **Pattern Expansion Card** now from ![](https://is.gd/dIJgu3 "Titanium Plate")
-    - ![](https://is.gd/Wo9kCf "Fiery Ingot Seeds") not require ![](https://is.gd/BtOS3O "Block of Fiery Metal") anymore (for peaceful)
+    - ![](https://is.gd/KVi9dD "Spawn Lesser Crimson Portal")
+      ![](https://is.gd/FA3Opb "Crimson Rites")
+      ![](https://is.gd/k033wB "Device Frame")
+      ![](https://is.gd/jmPZEB "Terminal")
 
-  - ### ✎ **Harder**
-    - ![](https://is.gd/4Pf311 "Mutagen") x10 less from ![](https://is.gd/VKOeWe "Enriched Uranium Nuclear Fuel")
-    - ![](https://is.gd/WrQuIr "Soundproofing") now gives only 1 ![](https://is.gd/ytEWhd "Emerald") instead of 7 from Villager trade
-    - ![](https://is.gd/sBwv8t "Wyvern Boots") now require ![](https://is.gd/hk8rgW "Void Thaumaturge Boots")
+  - ### ✎ **Harder**: ![](https://is.gd/xT1POn "Ender Anchor")
 
   - ### ✏ **Misc Changes**
-    - ![](https://is.gd/lO8TOY "Sulfuric Acid Bucket") in ![](https://is.gd/ENnoOy "Chemical Reactor") x2 less rate
-    - ![](https://is.gd/MqGY91 "Crude Steel Grinding Ball")![](https://is.gd/OZkhZ5 "Energetic Silver Ingot")![](https://is.gd/wsHsxf "Vivid Alloy Grinding Ball") remove from usage (unused materials)
-    - [Shoes of Light] not spawn with ![](https://is.gd/QLwz9f "Aethium Armor Trim") anymore to prevent cheap creative flight
-    - [Black Quartz AIOT] buff durability `100` -> `400`
-    - ![](https://is.gd/AxdCT3 "Hydroponics Controller") fix input-output mess, fixes [#47](https://github.com/Krutoy242/Enigmatica2Expert-Extended/issues/47)
-    - ![](https://is.gd/J78CzO "Polymer Clay") and ![](https://is.gd/HBBDrk "Treated Wood Planks") now require any liquid tank (i hope)
-    - [Double Compressed Wood] => [Double Compressed Charcoal] fix in Oven
-    - ![](https://is.gd/Xc0bor "Zombie Chunk") Move Craftings of **Mob Chunks** to Crafting Table
-    - ![](https://is.gd/RpajR6 "Coal Coke") now can be used to craft ![](https://is.gd/3bQVQK "Steel Ingot") in ![](https://is.gd/2xc4gJ "Induction Smelter (Basic)")
-    - ![](https://is.gd/BVdGx6 "Inferium Essence") __NOT DROPPING__ from mobs anymore. Instead, ![](https://is.gd/sG9lKy "Inferium Seeds") can be crafted from ![](https://is.gd/oyLtxX "Weed")
-    - ![](https://is.gd/GgKIAh "Syngas") fix JEI output in ![](https://is.gd/1a8nLf "Syngas Producer Controller")
-    - ![](https://is.gd/0IxXkj "Block Cutting Blade (Iron)")![](https://is.gd/p9S9SI "Block Cutting Blade (Steel)")![](https://is.gd/jZf3Gl "Block Cutting Blade (Diamond)") add recycling
+    - ![](https://is.gd/aiXOcC "Creative Vending Upgrade") now output x1 instead of x2
+    - ![](https://is.gd/0bdatN "The Ultimate Ingot") and ![](https://is.gd/LsXNa9 "Block of The Ultimate") add oredict for Dragon Steel
+    - ![](https://is.gd/UON85V "Insanium Essence") in ![](https://is.gd/2GFGN0 "Quantum Compressor") now output x10 but require 10k (was 1k)
+    - ![](https://is.gd/nzk6MS "Pahoehoe Lava Bucket") fix output in Radiator (was 80 buckets from 1b of lava)
+    - Add **Compressed Sticks** recipe for storage sticks in compressed drawer
+    - ![](https://is.gd/W2J0tP "Crushed Uranium Ore")  and ![](https://is.gd/cE2n72 "Crushed Lead Ore") add ![](https://is.gd/Ht5DTr "Furnace") recipes
+    - **Golden Chicken** ![](https://is.gd/YQ1B21 "Golden Egg") now can eat ![](https://is.gd/jlpAVb "Native Gold Cluster") to lay x8 ![](https://is.gd/GgnboQ "Gold Ingot")
+    - Clear ![](https://is.gd/vhuRAX "Biome Essence") tag, fixes #54
+    - ![](https://is.gd/1QMnAC "Elite Plating") fix energy requirment in ![](https://is.gd/K4VAlu "Precision Laser Etcher")
+      > Fixes #51
+    - Add ![](https://is.gd/ekvrtP "Oxygen") conversion in ![](https://is.gd/YKECZz "Fluid Dictionary Converter")
+      > Fixes #50
+    - ### 🖉 **New Recipes**: ![](https://is.gd/O0nnGt "Native Titanium Cluster") in ![](https://is.gd/LDD9Qs "Crucible")
 
 
 
 ## 🔵 **Mods updates**
+  - ### 🏦 **Modular Machinery**: Remove ![](https://is.gd/6C167M "Arcane Crafting Engine Controller")
+      > **ThaumTweaks** mod have [Arcane Crafter] that totally remove necessity of Modular Machine.  
+      > With Arcane Crafter everything can be automateable.
 
-  - ### 🏦 **Modular Machinery**: Fix Hydroponics recognize, Fix [#45](https://github.com/Krutoy242/Enigmatica2Expert-Extended/issues/45)
+  - ### 🏪 **Requious Fracto**: JEI for **![](https://is.gd/9uNtB8 "Beacon") Effects** and **Crafting Hints**
 
-  - ### 🏪 **Requious Fracto**: Add JEI for **Asteroids**
+  - ### 🔌 **Industrial Craft 2**: ![](https://is.gd/BWrVEK "Nuclear Reactor") increase power tier to `5`
+      > ⚠️ Warning: Your IC2 wires will explode from new power tier.
+      > Use ![](https://is.gd/hlgbTb "Glass Fiber Wire Coil") from Industrial Wires instead.
 
-  - ### 📑 **Tips**: `/restart_server` Fix command text on server
-
-  - ### 🔨 **Tinker's Construct**: [Dark Matter] [Red Matter] buff mining level
+  - ### 🦯 **Thaumcraft**: Remove useless tooltip on items
+      > Remove this:  
+      > `Most Thaumcraft items need to be unlocked through research in the Thaumonomicon.`
 
   - ### 🧻 **JEI**
+    - Add tag **#User** to ![](https://is.gd/Q50DvG "Dynamism Tablet")
     - blacklist updates
-    - Manually add more entries to JER tab
-      > New blocks output:
-      > - ![](https://is.gd/G9b9Wa "Rock Crystal Ore")
-      > - ![](https://is.gd/ISYZ6b "Xorcite Cluster")
+
+  - ### 🙋‍♀️ **Quark**: Add custom ![](https://is.gd/9uNtB8 "Beacon") effects
+      > Place special list of blocks near beacon to change its list of possible effects.
+      > Screenshots:
+      > 1. https://i.imgur.com/qAPj7Aq.png
+      > 2. https://i.imgur.com/2YL0kMr.png  
+      > See JEI for more effect descriptions.
+
+  - ### 🍯 **Potion Core**: x2-x6 Buff of most potions
+      > - *Archery bonus* 3 => 6
+      > - *Broken armor* -0.25 => -0.5
+      > - *Broken Magic Shield* -0.25 => =-0.5
+      > - *Burst* 2.0 => 5.0
+      > - *Diamond Skin* 4.0 => 12.0
+      > - *Explode* 2.0 => 6.0
+      > - *Iron Skin* 2.0 => 10.0
+      > - *Klutz* -4.0 => -8.0
+      > - *Launch* 1.0 => 3.0
+      > - *Magic Focus* 0.75 => 1.5
+      > - *Magic Inhibition* -0.3 => -0.6
+      > - *Magic Shield* 4.0 => 12.0
+      > - *Recoil* 0.1 => 0.3
+      > - *Vulnerable* -0.5 => -0.75
+
+  - ### 💙 BaubleyHeartCanisters: Disable heart drops and add crafts
 
 
 
 ## 🔄 **Misc Changes**
-  - ### 🧩 **Configs**
-    - Restore **Forge Chunk Loading** configs to defaults
-      > For example, set `dormantChunkCacheSize=128` => `0`
-      > Dont really know what this would change, but same settings persist in many modern 1.12.2 modpacks
-    - Mod Director: Make `Dynamic Surroundings` and `Ore Lib` optional
-    - Mod Director: Make Sound Physics not freeze game
-      > in case it cant be loaded from Web
-
+  - Enable `reuseBucketQuads` in Loliasm, since issue was fixed
+  - Set `fixMobsWallGlitching=true` from Surge mod (MC-2025)
+  - List All TCon ![](https://is.gd/7y8O8a "Tool Forge"), since many people ask how to craft some
+  - Rewert Thaumcraft `regenKey=DEFAULT` option since it wont fix 0 vis in chunks issue
+  - Disable Random Tweak's `auto-third person`, since it controlled by other mod
+  - [Primal Destroyer] buff damage to `38`
+  - Buff **Fire Dragon** Breath damage `2` => `4`
+  - **Carryon** blacklist carry Rats and Dragons
+  - ### 📖 **Quest Book**
+    - Quests: Misc changes
+      > - Remove splash potions from common loot
+      > - Add Hearts to loot chests
+      > - Add ![](https://is.gd/QKfqGF "Hopper") to Improved Blast Furnace quest
+      > - Add power buffs info to ic2 **Nuclear Reactor**
+    - Quests: add more info about Mob Crusher and explosions
+      > - Add tooltip about 100 damage
+      > - Fixes #49
+  - 🏗️ Merge pull request #52 from XeramHosting:master
+    > Fixed known quest bugs
 
 
 
