@@ -16,8 +16,8 @@
 [AE2 CSV Export/WARN] [AE2:C]: Could not export subtypes of: tile.architecturecraft.shape
 [Client thread/WARN] [ocsensors]: Could not find field 'careerId' in class 'net.minecraft.entity.passive.EntityVillager'! Exception=net.minecraftforge.fml.relauncher.ReflectionHelper$UnableToFindFieldException: java.lang.NoSuchFieldException: careerId
 [Client thread/WARN] [ocsensors]: Could not find field 'buyingList' in class 'net.minecraft.entity.passive.EntityVillager'! Exception=net.minecraftforge.fml.relauncher.ReflectionHelper$UnableToFindFieldException: java.lang.NoSuchFieldException: buyingList
-[Client thread/ERROR] [HadEnoughItems]: An interpreter is already registered for this item: exnihilocreatio.modules.tconstruct.tools.SledgeHammer@54a2008f
-[Client thread/ERROR] [HadEnoughItems]: An interpreter is already registered for this item: exnihilocreatio.modules.tconstruct.tools.TiCrook@651b6c23
+[Client thread/ERROR] [HadEnoughItems]: An interpreter is already registered for this item: exnihilocreatio.modules.tconstruct.tools.SledgeHammer@633a4b01
+[Client thread/ERROR] [HadEnoughItems]: An interpreter is already registered for this item: exnihilocreatio.modules.tconstruct.tools.TiCrook@7258c783
 [Client thread/ERROR] [HadEnoughItems]: Recipe has no output. Extra Utilities 2 extrautils2:shortcut_hopper class com.rwtema.extrautils2.crafting.AlwaysLast$XUShapedRecipeAlwaysLast
 [Client thread/ERROR] [HadEnoughItems]: Failed to register mod plugin: class com.blakebr0.mysticalagriculture.compat.jei.CompatJEI
 [Client thread/ERROR] [HadEnoughItems]: A Recipe Handler has already been registered for 'jeresources.plant': jeresources.entry.PlantEntry

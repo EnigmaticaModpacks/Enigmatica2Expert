@@ -10,23 +10,29 @@
  * @link https://github.com/Krutoy242
  */
 
-//@ts-check
+// @ts-check
+import { join, parse, resolve } from 'path'
+
+import boxen from 'boxen'
 import chalk from 'chalk'
 import { sync as delSync } from 'del'
 import fast_glob from 'fast-glob'
 import fs_extra from 'fs-extra'
 import git_describe from 'git-describe'
+import logUpdate from 'log-update'
+import numeral from 'numeral'
 import parseGitignore from 'parse-gitignore'
-import { resolve } from 'path'
 import simpleGit from 'simple-git'
-import yargs from 'yargs'
+import Client from 'ssh2-sftp-client'
 import terminal_kit from 'terminal-kit'
-import { end, execSyncInherit, loadText, saveText, write } from './lib/utils.js'
+import yargs from 'yargs'
+
 import { curseMarkdown } from './lib/curseforge.js'
+import { end, execSyncInherit, loadJson, loadText, saveText, write } from './lib/utils.js'
 
 const { gitDescribeSync } = git_describe
 const { terminal: term } = terminal_kit
-const { rmSync, mkdirSync, existsSync, renameSync } = fs_extra
+const { rmSync, mkdirSync, existsSync, renameSync, copySync, lstatSync } = fs_extra
 const git = simpleGit()
 
 const { sync: _globs } = fast_glob
@@ -38,28 +44,31 @@ const { sync: _globs } = fast_glob
  */
 const globs = (source, options) => _globs(source, { dot: true, onlyFiles: false, ...options })
 
-const { argv } = yargs(process.argv.slice(2))
+const argv = yargs(process.argv.slice(2))
   .alias('h', 'help')
-  .option('forced', {
-    alias: 'f',
-    type: 'boolean',
-    describe: 'Ignore all checks',
-  })
   .option('dryRun', {
     alias: 'd',
     type: 'boolean',
     describe: 'Not create .zip files',
-  })
-  .option('localSkip', {
-    alias: 'l',
-    type: 'boolean',
-    describe: 'Do not change local server files',
   })
   .option('old', {
     alias: 'o',
     type: 'boolean',
     describe: 'Do not clear previous files in TMP folder, and not clone',
   })
+  .parseSync()
+
+const style = {
+  trace: chalk.hex('#7b4618'),
+  info: chalk.hex('#915c27'),
+  log: chalk.hex('#ad8042'),
+  label: chalk.hex('#bfab67'),
+  string: chalk.hex('#bfc882'),
+  number: chalk.hex('#a4b75c'),
+  status: chalk.hex('#647332'),
+  chose: chalk.hex('#3e4c22'),
+  end: chalk.hex('#2e401c'),
+}
 
 ;(async () => {
   const mcClientPath = process.cwd()
@@ -78,7 +87,7 @@ const { argv } = yargs(process.argv.slice(2))
   const doTask = (s, fn, cwd) => {
     const oldCwd = process.cwd()
     if (cwd) process.chdir(cwd)
-    write(chalk.green(s))
+    write(style.label(s))
     end(fn())
     if (cwd) process.chdir(oldCwd)
   }
@@ -93,9 +102,6 @@ const { argv } = yargs(process.argv.slice(2))
 */
   write(`${chalk.gray('-'.repeat(20))}\n`)
 
-  const ckey = chalk.rgb(179, 95, 16)
-  const cpress = chalk.rgb(186, 126, 89)
-
   /**
    * Prompt user to write something and press ENTER or ESC
    * @param {string} message message to show
@@ -103,7 +109,7 @@ const { argv } = yargs(process.argv.slice(2))
    * @returns {Promise<string|undefined>} inputted string or undefined
    */
   async function enterString(message, options) {
-    term(cpress(message.replace(/(ENTER|ESC)/g, ckey('$1'))))
+    term(style.trace(message.replace(/(ENTER|ESC)/g, style.info('$1'))))
     const result = await term.inputField({
       cancelable: true,
       ...(options ?? {}),
@@ -177,11 +183,10 @@ const { argv } = yargs(process.argv.slice(2))
 
   const devonlyIgnore = parseGitignore(loadText('dev/.devonly.ignore'))
 
-  if (!argv['old']) {
+  if (!argv.old) {
     doTask(`🪓 Clearing tmp folder ${tmpDir} ... `, () => {
       try {
         rmSync(tmpDir, { recursive: true })
-        // eslint-disable-next-line no-empty
       } catch (err) {}
       mkdirSync(tmpOverrides, { recursive: true })
     })
@@ -202,10 +207,7 @@ const { argv } = yargs(process.argv.slice(2))
 
     doTask(
       `🧹 Removing non-release files and folders ... `,
-      () => {
-        const removeFromEveryPackage = globs(devonlyIgnore)
-        return 'removed: ' + delSync(removeFromEveryPackage, { dryRun: false }).length
-      },
+      () => 'removed: ' + delSync(globs(devonlyIgnore), { dryRun: false }).length,
       tmpOverrides
     )
   }
@@ -230,7 +232,7 @@ const { argv } = yargs(process.argv.slice(2))
      * @param {string} [command] Optional 7Zip command. Default 'a' - Add
      */
     const zipHandler = (params, command = 'a') => {
-      if (argv['dryRun'])
+      if (argv.dryRun)
         return write(
           `\n${command === 'd' ? '➖' : '➕'} ${
             chalk.bgRgb(10, 10, 10).rgb(30, 30, 30)(zipPath) + ' ' + chalk.gray(params)
@@ -265,7 +267,7 @@ const { argv } = yargs(process.argv.slice(2))
   const zipPath_server = `${zipPath_base}_server.zip`
   const zipPath_RU = `${zipPath_base}_RU.zip`
 
-  const isZipsExist = !argv['dryRun'] && [zipPath_EN, zipPath_server, zipPath_RU].some((f) => existsSync(f))
+  const isZipsExist = !argv.dryRun && [zipPath_EN, zipPath_server, zipPath_RU].some((f) => existsSync(f))
 
   let rewriteOldZipFiles = false
   if (isZipsExist && (await pressEnterOrEsc(`[${STEP++}] Rewrite old .zip files? ENTER / ESC`))) {
@@ -292,33 +294,31 @@ const { argv } = yargs(process.argv.slice(2))
 
   const serveronlyIgnore = parseGitignore(loadText('dev/.serveronly.ignore'))
   const serverFilesList = globs(serveronlyIgnore, { cwd: tmpOverrides })
-  const serverModsList = globs(serveronlyIgnore, {
-    ignore: [
-      ...devonlyIgnore,
-      'mods/*-patched.jar', // Bansoukou-patched files should be handled separately
-    ],
-  }).filter((f) => f.startsWith('mods/'))
+  const serverModsListEvery = globs(serveronlyIgnore, { ignore: devonlyIgnore }).filter((f) => f.startsWith('mods/'))
+  const serverModsList = serverModsListEvery.filter((f) => !f.endsWith('-patched.jar')) // Bansoukou-patched files should be handled separately
 
+  // List of mods, patched with Bansoukou, but without extension
+  // mods/betteranimalsplus-1.12.2-9.0.1
+  // mods/NuclearCraft-2.18zz-1.12.2
   const unpatchedList = globs('mods/*-patched.jar').map((f) => f.replace('-patched.jar', ''))
+
+  const serverRemoveList = globs('*', { ignore: serverFilesList, cwd: tmpOverrides })
+  doTask(
+    `🪑 Removing client-only files and folders ... `,
+    () => 'removed: ' + delSync(serverRemoveList).length,
+    tmpOverrides
+  )
+  doTask(`🪑 Add server root files ... `, () => {
+    globs('*', { cwd: serverRoot }).forEach((f) => copySync(join(serverRoot, f), join(tmpOverrides, f)))
+    return `added: ${serverFilesList.length}`
+  })
 
   makeZips &&
     doTask(
       '📥 Create server zip ... \n',
       () => {
+        // Add everything in overrides dir
         const zip = withZip(zipPath_server)
-        zip('.')
-
-        // Delete
-        write('\n Deleting excess server files\n')
-        const serverRemoveList = globs('*', {
-          ignore: serverFilesList,
-          cwd: tmpOverrides,
-        })
-        zip(serverRemoveList, 'd')
-
-        // Add default Server overrites
-        write('\n Add server root files\n')
-        process.chdir(serverRoot)
         zip('.')
 
         // Add mods
@@ -338,13 +338,122 @@ const { argv } = yargs(process.argv.slice(2))
     )
 
   /*
-██████╗ ███████╗██╗     ███████╗ █████╗ ███████╗███████╗
-██╔══██╗██╔════╝██║     ██╔════╝██╔══██╗██╔════╝██╔════╝
-██████╔╝█████╗  ██║     █████╗  ███████║███████╗█████╗  
-██╔══██╗██╔══╝  ██║     ██╔══╝  ██╔══██║╚════██║██╔══╝  
-██║  ██║███████╗███████╗███████╗██║  ██║███████║███████╗
-╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝
-*/
+███████╗███████╗████████╗██████╗ 
+██╔════╝██╔════╝╚══██╔══╝██╔══██╗
+███████╗█████╗     ██║   ██████╔╝
+╚════██║██╔══╝     ██║   ██╔═══╝ 
+███████║██║        ██║   ██║     
+╚══════╝╚═╝        ╚═╝   ╚═╝     
+  */
+
+  /**
+   * @type {{ dir:string, label:string, config: {[key:string]:string} }[]}
+   */
+  const sftpConfigs = globs('secrets/sftp_servers/*/sftp.json').map((filename) => {
+    const dir = parse(filename).dir
+    return {
+      dir,
+      label: dir.split('/').pop(),
+      config: loadJson(filename),
+    }
+  })
+
+  // Relative to overrides
+  const serverAllOverrides = globs('./*', { cwd: tmpOverrides })
+
+  // Relative paths of dirs like
+  // - bansoukou
+  // - config
+  const serverRemoveDirs = serverAllOverrides.filter((f) => lstatSync(join(tmpOverrides, f)).isDirectory())
+  const defBoxStyle = { borderStyle: 'round', borderColor: '#22577a', width: 50, padding: { left: 1, right: 1 } }
+
+  for (const conf of sftpConfigs) {
+    logUpdate.done()
+
+    if (
+      !(await pressEnterOrEsc(`[${STEP++}] To upload SFTP ${style.string(conf.label)} press ENTER. Press ESC to skip.`))
+    )
+      continue
+
+    const sftp = new Client()
+
+    const updateBox = (/** @type {...any[]} */ ...args) =>
+      logUpdate(
+        // @ts-ignore
+        boxen(args.map((v, i) => Object.values(style)[i](String(v))).join(' '), {
+          ...defBoxStyle,
+          title: style.info(conf.label),
+        })
+      )
+
+    updateBox('Establishing connection')
+    await sftp.connect(conf.config)
+
+    updateBox('Removing folders')
+    await Promise.all(
+      serverRemoveDirs.map(async (dir) => {
+        if (!(await sftp.stat(dir)).isDirectory) return
+        try {
+          await sftp.rmdir(dir, true)
+          updateBox('Removed folder:', dir)
+        } catch (error) {}
+      })
+    )
+
+    updateBox('Copy server pack')
+    const bytes = (v) => numeral(v).format('0.0b')
+    const zipName = parse(zipPath_server).base
+    let step = 0
+    await sftp.fastPut(zipPath_server, zipName, {
+      step: (total_transferred, chunk, total) => {
+        if (step++ % 10 === 0) updateBox('Copy server pack', bytes(total_transferred), '/', bytes(total))
+      },
+    })
+
+    await pressEnterOrEsc(`- Go to SFTP server\n- Unpack ${style.log(zipName)}\n- _overrides.zip\n- press ENTER`)
+
+    // /**
+    //  *
+    //  * @param {string[]} list
+    //  * @param {string | {(f:string):string}} from
+    //  * @param {{(f:string):string}} [to]
+    //  * @returns
+    //  */
+    // const copyList = async (list, from, to) =>
+    //   Promise.all(
+    //     list.map(async (f) => {
+    //       const fromPath = typeof from === 'function' ? from(f) : resolve(from, f)
+    //       const toPath = typeof to === 'function' ? to(f) : f
+    //       await sftp.fastPut(fromPath, toPath)
+    //     })
+    //   )
+
+    // updateBox('Copy modpack overrides')
+    // await copyList(serverAllOverrides, tmpOverrides)
+
+    // updateBox('Copy mods')
+    // await copyList(serverModsList, './')
+
+    // // Add Unpatched by Bansoukou mods
+    // updateBox('Copy & Rename Bansoukou-unpatched mods')
+
+    // await copyList(
+    //   unpatchedList,
+    //   (f) => `${f}.disabled`,
+    //   (f) => `${f}.jar`
+    // )
+
+    await sftp.end()
+  }
+
+  /*
+  ██████╗ ███████╗██╗     ███████╗ █████╗ ███████╗███████╗
+  ██╔══██╗██╔════╝██║     ██╔════╝██╔══██╗██╔════╝██╔════╝
+  ██████╔╝█████╗  ██║     █████╗  ███████║███████╗█████╗  
+  ██╔══██╗██╔══╝  ██║     ██╔══╝  ██╔══██║╚════██║██╔══╝  
+  ██║  ██║███████╗███████╗███████╗██║  ██║███████║███████╗
+  ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝
+  */
 
   if (await pressEnterOrEsc(`[${STEP++}] FORCE Push tag? ENTER / ESC`)) {
     await git.push(['--force'])

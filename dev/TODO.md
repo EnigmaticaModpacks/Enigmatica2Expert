@@ -86,8 +86,8 @@ Liquids that should have more uses:
 - [ ] ✏️ Make Gaia fight non-mandatory
 - [ ] ✏️ Fix turtle uncraftable
 - [ ] ✏️ Fix potion of bad luck uncraftable
-- [x] ✏️ Enderman Head add aspects
 - [ ] ✏️ Add Greater Crimson Portal craft
+- [ ] ✏️ Scribing tools add durab
 - [ ] 🔄 Add damage for Liquid Death
 - [ ] 🔄 Check why mobs are not spawned anough (less then 70 for whole server)
 - [ ] 🔄 Check render distance on server
@@ -98,13 +98,14 @@ Liquids that should have more uses:
 - [ ] 🔄 Forbid exploding in chunks, but claim only few chunks
 - [ ] 🔄 Add new Pech trades and add them in JEI
 - [ ] 🔄 Warn about power tier in tooltip
+- [ ] 📖 Move Ball Of Fur to Animals
 - [ ] 📖 Target Dummy add to loot
 - [ ] 📖 **AE2 Network Visualiser** add to book
 - [ ] 🚧 Add modpack automation:
     1. `make_pack.js`
-    2. Create CF release with fixed description, Add `inline-block` styles for images publishing on CF
+    2. Create CF release
       > https://support.curseforge.com/en/support/solutions/articles/9000197321-curseforge-upload-api
-      > https://github.com/EnigmaticaModpacks/ModpackUploader/blob/master/tools/ModpackUploader.ps1#L363
+      > https://github.com/EnigmaticaModpacks/ModpackUploader/blob/b32a50e6b19653ac1648916cd3c18e24db1026d0/modpack-uploader.ps1#L238-L246
 - [ ] 🚧 Server automation:
     1. SFTP Upload `_server.zip`
     2. Remove all folders presented in `.zip`
@@ -120,7 +121,7 @@ Liquids that should have more uses:
 - [ ] ✏️ x10 Speed up rats
 - [ ] ✏️ Drop items onto garbage piles to make pile bigger
 - [ ] ✏️ Transfer liquid interaction to Witch Water
-- [ ] 🔄 Add Quark's `Beacon Replacements`
+- [ ] 🔄 Return Aqua Acrobatics new water when color fixed
 - [ ] 🔄 Fix Quark's reacharound not working after update to ROTN edition
 - [ ] ✏️ Add casts of tungsten instead of making in Part Builder
 - [ ] ✏️ Add DML data models in Space or Ratlantis

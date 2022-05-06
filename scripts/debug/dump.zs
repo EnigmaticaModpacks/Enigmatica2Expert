@@ -49,18 +49,11 @@ function logDebugData() {
 
 function logAdditionalDebugData(player as IPlayer) {
   val commandsToRun = [
-    "/ct botania apothecary",
-    "/ct botania brews",
-    "/ct botania trades",
-    "/ct botania infusions",
-    "/ct botania daisy",
-    "/ct botania altar",
     "/ct thaumcraftDump",
     "/ct loottables all",
     "/ct oredict",
     "/ct recipes furnace",
     "/ct recipes",
-    // "/ct names burntime",
   ] as string[];
 
   for cmd in commandsToRun {
@@ -133,11 +126,6 @@ events.onPlayerLoggedIn(function(e as crafttweaker.event.PlayerLoggedInEvent){
   addDelayWork(function() {
     e.player.sendMessage('§cDebug environment activated!');
     e.player.sendMessage('§8If you want to disable DEBUG mode, remove §7scripts/debug§8 directory');
-  }, 20);
-
-  addDelayWork(function() {
-    e.player.sendMessage('Developing: §cCreating crafttweaker_raw.log');
-    logDebugData();
   }, 20 * 10);
 
   addDelayWork(function() {
@@ -154,11 +142,6 @@ events.onPlayerLoggedIn(function(e as crafttweaker.event.PlayerLoggedInEvent){
     e.player.sendMessage('Developing: Starting §c/tellme dump-csv all');
     server.commandManager.executeCommand(server, '/tellme dump-csv all');
   }, 20 * 80);
-
-  addDelayWork(function() {
-    e.player.sendMessage('Developing: Starting §c/ct loottables all');
-    server.commandManager.executeCommand(server, '/ct loottables all');
-  }, 20 * 100);
 
   addDelayWork(function() {
     e.player.sendMessage('Developing: Starting §cexport to crafttweaker.log');
