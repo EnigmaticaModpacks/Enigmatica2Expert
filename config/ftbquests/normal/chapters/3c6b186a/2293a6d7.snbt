@@ -22,9 +22,12 @@
 		items: [{
 			id: "ic2:jetpack_electric",
 			Damage: 26s,
+			tag: {}
+		},
+		{
+			id: "ic2:jetpack_electric",
 			tag: {
-				ENABLED: 1b,
-				RARITY: 1
+				charge: 30000.0d
 			}
 		}],
 		ignore_nbt: 1b

@@ -21,8 +21,9 @@
 		uid: "2b136082",
 		type: "item",
 		items: [{
-			item: "libvulpes:metal0 15 7"
-		}]
+			item: "libvulpes:metal0 1 7"
+		}],
+		count: 15L
 	},
 	{
 		uid: "ad790545",
@@ -36,8 +37,9 @@
 		uid: "9469a89d",
 		type: "item",
 		items: [{
-			item: "libvulpes:structuremachine 4"
-		}]
+			item: "libvulpes:structuremachine"
+		}],
+		count: 4L
 	},
 	{
 		uid: "2dc95b40",

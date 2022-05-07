@@ -25,7 +25,8 @@
 					data: "logWood"
 				}
 			}
-		}]
+		}],
+		count: 16L
 	}],
 	rewards: [{
 		uid: "53e948ba",

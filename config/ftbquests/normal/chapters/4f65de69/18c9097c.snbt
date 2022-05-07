@@ -18,8 +18,9 @@
 		uid: "8d18f8b8",
 		type: "item",
 		items: [{
-			item: "appliedenergistics2:material 2"
-		}]
+			item: "appliedenergistics2:material"
+		}],
+		count: 2L
 	}],
 	rewards: [{
 		uid: "a89d9ddc",

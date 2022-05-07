@@ -1,0 +1,22 @@
+{
+	title: "Explosions",
+	icon: "minecraft:skull 1 4",
+	x: -4.0d,
+	y: 0.5d,
+	text: [
+		"- FTB chunk claiming §6not save§r from explosions",
+		"- Some mobs §6fight each other§r what cause creepers to explode",
+		"- Use §6blast-resistant§r materials to protect spawners"
+	],
+	dependencies: [
+		"628df521"
+	],
+	tasks: [{
+		uid: "049517d0",
+		type: "item",
+		items: [{
+			item: "sonarcore:reinforcedstonebrick"
+		}],
+		count: 12L
+	}]
+}

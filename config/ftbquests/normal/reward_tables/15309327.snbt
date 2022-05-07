@@ -517,6 +517,20 @@
 		item: "flopper:flopper",
 		count: 3,
 		weight: 10
+	},
+	{
+		item: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "blockfluiddirt"
+			}
+		},
+		count: 4,
+		weight: 10
+	},
+	{
+		item: "bhc:yellow_heart",
+		weight: 80
 	}],
 	loot_crate: {
 		string_id: "uncommon",
