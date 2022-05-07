@@ -183,7 +183,7 @@ var list = {
 		<ore:ingotKnightslime>,
 		<ore:ingotUUMatter>,
 		<ore:ingotAlumite>,
-		<ore:ingotIceDragonsteel>,
+		<ore:dragonsteelIngot>,
 		<ore:ingotSilver>,
 		<ore:ingotAluminium>,
 		<ore:ingotTungsten>,
@@ -270,7 +270,7 @@ var list = {
 		<ore:blockKnightslime>,
 		<ore:blockUUMatter>,
 		<ore:blockAlumite>,
-		<ore:blockIceDragonsteel>,
+		<ore:blockDragonsteel>,
 		<ore:blockSilver>,
 		<ore:blockAluminium>,
 		<endreborn:block_wolframium>,
@@ -597,7 +597,7 @@ list["⇯"] = creativeCube;
 list["⇫"] = <mekanism:machineblock2:11>.withTag({tier: 4});
 
 /*  •◎♪♫♱✓⸕₇₈₉⇮⩈ζλ  */
-craft.make(<storagedrawers:upgrade_creative:1> * 2, ["pretty",
+craft.make(<storagedrawers:upgrade_creative:1>, ["pretty",
 	"χ ▣ ☠ ☠ ◊ ☠ ☠ ▣ χ",
 	"▣ ◽ ◽ ☑ ⱋ ☑ ◽ ◽ ▣",
 	"☠ ◽ ◳ ✝ ♦ ✝ ◳ ◽ ☠",

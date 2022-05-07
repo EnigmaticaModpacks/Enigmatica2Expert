@@ -165,6 +165,7 @@ for lang, items in {
     <integratedtunnels:part_player_simulator_item>,
     <opencomputers:misc:1>,
     <opencomputers:robot>,
+    <thaumictinkerer:animation_tablet>, // Dynamism Tablet
   ],
 
   "tag.crafter" : [

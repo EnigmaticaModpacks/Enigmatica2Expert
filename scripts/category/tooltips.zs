@@ -11,12 +11,12 @@ val desc = scripts.category.tooltip_utils.desc;
 for item in [
 /*Inject_js(
 [...loadText('resources/autotooltips/lang/en_us.lang')
-.matchAll(/^tooltips\.lang\.(?<id>[^=]+)=.*$/gm)]
+.matchAll(/^tooltips\.lang\.(?<id>[^=]+)=(.*)$/gm)]
+.filter(([,,text])=>!text.includes('%s'))
 .map(([, id]) => `  <${id}>,`)
 .sort(naturalSort)
 )*/
   <advgenerators:gas_input>,
-  <betteranimalsplus:handoffate>,
   <bloodmagic:blood_rune:1>,
   <bloodmagic:blood_rune:3>,
   <bloodmagic:blood_rune:4>,
@@ -74,31 +74,6 @@ for rod in [
 	desc.jei(rod, "small_plate_presser");
 }
 
-
-for item in [
-	<thaumcraft:mechanism_complex>,
-	<thaumcraft:mechanism_simple>,
-	<thaumcraft:mirrored_glass>,
-	<thaumcraft:vis_resonator>,
-	<thaumcraft:fabric>,
-	<thaumcraft:seal>,
-	<thaumcraft:jar_normal>,
-	<thaumcraft:lamp_arcane>,
-	<thaumcraft:pedestal_arcane>,
-	<thaumcraft:alembic>,
-	<thaumcraft:metal_alchemical>,
-	<thaumcraft:mind>,
-	<thaumcraft:vis_battery>,
-	<thaumcraft:stabilizer>,
-	<thaumcraft:inlay>,
-	<thaumcraft:research_table>,
-	<thaumcraft:arcane_workbench>,
-	<thaumcraft:smelter_basic>,
-	<thaumcraft:alumentum>,
-	<thaumcraft:nitor_yellow>
-] as IItemStack[] {
-	desc.jei(item, "thaum_research");
-}
 
 <extrautils2:ingredients:13>.addTooltip(format.aqua(desc.local("not_consumed")));
 
@@ -196,6 +171,12 @@ desc.both(<mekanism:machineblock:7>, "mekanism_factories");
 desc.both(<libvulpes:productingot:7>, "obtained.fabricator_or_excavator"); # Titanium Ingot
 desc.both(<mekanism:tierinstaller:3>, "mekanism_t_ultimate");
 desc.both(<contenttweaker:conglomerate_of_life>, "any_lamb");
+
+desc.tooltip(<industrialforegoing:mob_relocator>, "industrialforegoing:mob_relocator", 
+/*Inject_js(config('config/industrialforegoing.cfg').machines.mob_relocator.damage)*/
+100
+/**/
+);
 
 # Mystical Agriculture Seeds Tier 6
 <mysticalagriculture:enderium_seeds>.addTooltip(desc.local("tier")~": §56§r");
@@ -391,17 +372,6 @@ desc.tooltip(<enderio:block_inventory_chest_enormous>, 'store_x_stacks', 973);
 desc.tooltip(<enderio:block_inventory_chest_warehouse>, 'store_x_stacks', 1373);
 desc.tooltip(<enderio:block_inventory_chest_warehouse13>, 'store_x_stacks', 1944);
 /**/
-
-# Modular Machine descriptions
-for machineName, lang in {
-	"starlight_crafting_engine"       : "mm.starlight_crafting_engine",
-	"advanced_thermionic_fabricator"  : "mm.advanced_thermionic_fabricator",
-	"advanced_carpenter"              : "mm.advanced_carpenter",
-	"arcane_crafting_engine"          : "mm.arcane_crafting_engine",
-	"advanced_scrap_factory"          : "mm.advanced_scrap_factory",
-} as string[string] {
-	desc.jei(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:"~machineName}), lang);
-}
 
 for lang, items in {
 	ae_lag: [

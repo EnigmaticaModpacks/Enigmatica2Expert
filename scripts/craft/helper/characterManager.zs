@@ -14,7 +14,7 @@ List of character that has barely same width for most monospace fonts
 zenClass CharacterManager { zenConstructor() {}
   # Symbols that would be used in case first letters cant be used
   static symbols as string = 
-    "○●⌀☻♀♂∞ͻ♪♫†‡§®£¥+⌆⌅" ~
+    "○●⌀☻♀♂∞ͻ♪♫†‡®£¥+⌆⌅" ~
     "Ͳαβγζξ¢!$%:;<>@«₠€₮₯₸₹₺₽ℓ№ℙ™‖¦∏" ~
     "↑←→↔↕∊∍∫≤≥►◄“”…▪▫•°"
   as string;

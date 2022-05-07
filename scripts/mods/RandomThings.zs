@@ -6,14 +6,6 @@ import crafttweaker.item.IIngredient;
 # Nerf from 300
 furnace.setFuel(<randomthings:blockofsticks>, 80);
 
-# OpenBlocks Scaffolding / Random Things Block of Sticks
-	recipes.remove(<randomthings:blockofsticks>);
-	recipes.addShaped("Random Things Block of Sticks", 
-	<randomthings:blockofsticks> * 8, 
-	[[<ore:stickWood>, <ore:stickWood>, <ore:stickWood>],
-	[<ore:stickWood>, <ore:stickWood>, <ore:stickWood>], 
-	[<ore:stickWood>, <ore:stickWood>, <ore:stickWood>]]);
-
 recipes.remove(<randomthings:idcard>);
 recipes.addShapeless("idcard",
 	<randomthings:idcard>,
@@ -487,4 +479,23 @@ craft.remake(<randomthings:plate_extraction> * 2, ["pretty",
   "□": <randomthings:ingredient:8>, # Plate Base
   "‚": <ore:nuggetFakeIron>,        # Iron Alloy Nugget
   "W": <tconstruct:wooden_hopper>,  # Wooden Hopper
+});
+
+# [Ender Anchor] from [Reinforced Obsidian][+2]
+craft.remake(<randomthings:enderanchor>, ["pretty",
+  "S E S",
+  "S R S",
+  "S S S"], {
+  "S": <randomthings:stableenderpearl>,     # Stable Ender Pearl
+  "E": <randomthings:ingredient:2>,         # Ectoplasm
+  "R": <enderio:block_reinforced_obsidian>, # Reinforced Obsidian
+});
+
+# Conflict with Compressed Sticks
+# [Block of Sticks] from [Stick]
+craft.remake(<randomthings:blockofsticks> * 8, ["pretty",
+  "# # #",
+  "#   #",
+  "# # #"], {
+  "#": <ore:stickWood>, # Stick
 });

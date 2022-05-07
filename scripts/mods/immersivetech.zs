@@ -150,4 +150,4 @@ mods.immersivetechnology.GasTurbine.addFuel(<liquid:fluegas> * 5000, <liquid:die
 #------------------------------------------------------------------------
 
 # Alt recipe for Pahoehoe
-mods.immersivetechnology.Radiator.addRecipe(<liquid:ic2pahoehoe_lava> * 1000, <liquid:lava> * 1000, 5);
+mods.immersivetechnology.Radiator.addRecipe(<liquid:ic2pahoehoe_lava> * 1, <liquid:lava> * 1000, 5);

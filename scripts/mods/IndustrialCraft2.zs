@@ -16,11 +16,12 @@ import scripts.requiousJei.add_ic2_crops as crop;
   furnace.remove(<ic2:dust:2>);
   furnace.addRecipe(<thermalfoundation:material:768>, <ic2:dust:3>);
 
+# Missed ingot smeltings
+furnace.addRecipe(<thermalfoundation:material:131>, <ic2:crushed:3>);
+furnace.addRecipe(<immersiveengineering:metal:5>, <ic2:crushed:6>);
+
 # Removing IC2 coal coke
 	recipes.remove(<ic2:coke>);
-	
-# Batch Crafter, unintended behaviour
-	recipes.remove(<ic2:te:89>);
 
 # Jetpacks	
 	recipes.remove(<ic2:jetpack_electric>.anyDamage());
@@ -77,11 +78,11 @@ import scripts.requiousJei.add_ic2_crops as crop;
 
 # Jetpack Attachment Plate, recipe needs oredict
 	recipes.remove(<ic2:crafting:37>);
-	recipes.addShapedMirrored("Jetpack Attachment Plate", 
+	recipes.addShaped("Jetpack Attachment Plate", 
 	<ic2:crafting:37>, 
-	[[<ore:nuggetIridium>, <ic2:crafting:3>, <ore:nuggetIridium>],
+	[[null, <ic2:crafting:3>, null],
 	[<ic2:crafting:15>, <ore:plateSteel>, <ic2:crafting:15>], 
-	[<ore:nuggetIridium>, <ic2:crafting:3>, <ore:nuggetIridium>]]);
+	[null, <ic2:crafting:3>, null]]);
 	
 #  Overclocker Upgrade
 	recipes.remove(<ic2:upgrade>);

@@ -13,14 +13,19 @@ mods.thaumcraft.Infusion.registerRecipe("crimson_rites", "INFUSION",
 <thaumcraft:curio:6>, 15, 
 [<aspect:vitium> * 30, <aspect:mortuus> * 15, <aspect:praecantatio> * 30, <aspect:auram> * 10], 
 <thaumcraft:thaumonomicon>, 
-[<thaumcraft:ingot>, <thaumcraft:void_seed>, <thaumcraft:salis_mundus>, <thaumcraft:void_seed>, <thaumcraft:salis_mundus>, <thaumcraft:void_seed>, <thaumcraft:ingot>, <thaumcraft:void_seed>]);
+[<thaumcraft:ingot>, <thaumictinkerer:energetic_nitor>, <thaumcraft:salis_mundus>, <thaumictinkerer:energetic_nitor>, <thaumcraft:salis_mundus>, <thaumictinkerer:energetic_nitor>, <thaumcraft:ingot>, <thaumictinkerer:energetic_nitor>]);
 
-# Cultist Portal
+# [Spawn Lesser Crimson Portal] from [Golden Egg][+3]
 mods.thaumcraft.Infusion.registerRecipe("spawn_lesser_crimson_portal", "INFUSION", 
 <minecraft:spawn_egg>.withTag({EntityTag: {id: "thaumcraft:cultistportallesser"}}), 15, 
 [<aspect:vitium> * 90, <aspect:mortuus> * 45, <aspect:praecantatio> * 90, <aspect:auram> * 30], 
-utils.tryCatch("openblocks:golden_egg", <minecraft:golden_apple:1>), 
-[<thaumcraft:metal_thaumium>, <thaumcraft:void_seed>, <thaumcraft:salis_mundus>, <thaumcraft:void_seed>, <minecraft:skull:1>, <thaumcraft:void_seed>, <extrautils2:teleporter:1>, <thaumcraft:void_seed>]);
+<randomthings:ingredient:11>,      # Golden Egg
+scripts.craft.grid.Grid(["-K-T-K-T"], {
+  "-": <thaumictinkerer:energetic_nitor>, # Energetic Nitor
+  "K": <extrautils2:klein>,               # Klein Bottle
+  "T": <thaumcraft:taint_log>,            # Taintwood Log
+}).shapeless());
+
 
 # Unification for the Smelting Bonus
 // IIngredient input, IItemStack stack
@@ -123,6 +128,11 @@ craft.remake(<thaumcraft:void_seed> * 4, ["pretty",
 	[null, <astralsorcery:itemrockcrystalsimple>.anyDamage(), <astralsorcery:itemrockcrystalsimple>.anyDamage()], 
 	[<ore:stickTreatedWood>, null, null]]);
 
+# [Native Titanium Cluster] from [Rutile Ore]
+mods.thaumcraft.Crucible.registerRecipe("Rutile ore fix", "METALPURIFICATION", <jaopca:item_clustertitanium>, <ore:oreTitanium>, [<aspect:metallum>*5, <aspect:ordo>*5]);
+mods.thaumcraft.Crucible.registerRecipe("Quartz ore fix", "METALPURIFICATION", <thaumcraft:cluster:7>, <ore:oreQuartz>, [<aspect:metallum>*5, <aspect:ordo>*5]);
+
+
 # Salis Mundis visible recipe (original is hidden in JEI)
 craft.make(<thaumcraft:salis_mundus>, ["DEFCAB"], {
 	A: <ore:itemFlint>.reuse(),
@@ -152,6 +162,7 @@ craft.make(<thaumcraft:salis_mundus>, ["DEFCAB"], {
 <extrautils2:compressedcobblestone:1>.setAspects(<aspect:terra>*405, <aspect:perditio>*81);
 <extrautils2:compressedcobblestone:2>.setAspects(<aspect:terra>*500, <aspect:perditio>*500);
 <biomesoplenty:hard_ice>.setAspects(<aspect:gelum>*21);
+<enderio:block_enderman_skull>.setAspects(<aspect:mortuus>*40,<aspect:alienis>*50,<aspect:tenebrae>*60);
 
 # Tallow harder
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:tallow>);

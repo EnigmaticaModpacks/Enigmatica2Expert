@@ -12,6 +12,7 @@ import crafttweaker.player.IPlayer;
 import mods.ctintegration.data.DataUtil;
 import mods.ctintegration.util.RawLogger.logRaw as logRaw;
 import mods.zenutils.ZenUtils;
+import mods.zenutils.DelayManager.addDelayWork as addDelayWork;
 
 
 function serialize(str as string) as string {
@@ -48,18 +49,11 @@ function logDebugData() {
 
 function logAdditionalDebugData(player as IPlayer) {
   val commandsToRun = [
-    "/ct botania apothecary",
-    "/ct botania brews",
-    "/ct botania trades",
-    "/ct botania infusions",
-    "/ct botania daisy",
-    "/ct botania altar",
     "/ct thaumcraftDump",
     "/ct loottables all",
     "/ct oredict",
     "/ct recipes furnace",
     "/ct recipes",
-    // "/ct names burntime",
   ] as string[];
 
   for cmd in commandsToRun {
@@ -72,12 +66,10 @@ function exportAllBlocks() as void {
   print('#          Harvest tool and level                #');
   for item in game.items {
     if(
-      item.id.startsWith("avaritiafurnace:")
-      || item.id == "avaritiafurnace:doublecompessedfurnace"
-      || item.id == "avaritiafurnace:fuelcompressor"
+      item.id.startsWith("avaritiafurnace:") // Blacklist because crashing otherwise
     ) continue;
     
-    var lastMeta = -1 as int;
+    var lastMeta = -1 as int; // Remember, -1 is not integer by default
     for sub in item.subItems {
       if (lastMeta == sub.damage) continue;
       lastMeta = sub.damage;
@@ -90,6 +82,23 @@ function exportAllBlocks() as void {
       val harvLevel = def.getHarvestLevel(state);
       if(tool=="" && harvLevel == -1 as int) continue;
       print("<"~def.id~":"~block.meta~"> = "~def.hardness~":"~tool~":"~harvLevel);
+    }
+  }
+  print('##################################################');
+}
+
+function exportAllTools() as void {
+  print('##################################################');
+  print('#                   Tools                        #');
+  for def in game.items {
+    var lastDef = '';
+    for item in def.subItems {
+      if(!(item.isDamageable && item.maxStackSize==1 && item.maxDamage > 1)) continue;
+
+      if (lastDef == item.definition.id) continue;
+      lastDef = item.definition.id;
+      
+      print(item.maxDamage ~' '~ item.definition.id);
     }
   }
   print('##################################################');
@@ -114,43 +123,33 @@ events.onPlayerLoggedIn(function(e as crafttweaker.event.PlayerLoggedInEvent){
   if(e.player.world.isRemote()) return;
   if(!debugUtils.firstTime(e.player.world.time)) return;
 
-  mods.zenutils.DelayManager.addDelayWork(function() {
+  addDelayWork(function() {
     e.player.sendMessage('§cDebug environment activated!');
-    e.player.sendMessage('§8If you want to disable DEBUG mode, remove §7scripts/debug.zs§8 file');
-  }, 20);
-
-  # Delayed call to not overload joining world
-  mods.zenutils.DelayManager.addDelayWork(function() {
-    e.player.sendMessage('Developing: §cCreating crafttweaker_raw.log');
-    logDebugData();
+    e.player.sendMessage('§8If you want to disable DEBUG mode, remove §7scripts/debug§8 directory');
   }, 20 * 10);
 
-  mods.zenutils.DelayManager.addDelayWork(function() {
+  addDelayWork(function() {
     e.player.sendMessage('Developing: §c/logAdditionalDebugData()');
     logAdditionalDebugData(e.player);
   }, 20 * 20);
 
-  mods.zenutils.DelayManager.addDelayWork(function() {
+  addDelayWork(function() {
     e.player.sendMessage('Developing: Starting §c/ct conflict');
     server.commandManager.executeCommand(server, '/ct conflict');
   }, 20 * 40);
 
-  mods.zenutils.DelayManager.addDelayWork(function() {
+  addDelayWork(function() {
     e.player.sendMessage('Developing: Starting §c/tellme dump-csv all');
     server.commandManager.executeCommand(server, '/tellme dump-csv all');
   }, 20 * 80);
 
-  mods.zenutils.DelayManager.addDelayWork(function() {
-    e.player.sendMessage('Developing: Starting §c/ct loottables all');
-    server.commandManager.executeCommand(server, '/ct loottables all');
-  }, 20 * 100);
-
-  mods.zenutils.DelayManager.addDelayWork(function() {
-    e.player.sendMessage('Developing: Starting §cexportAllBlocks');
+  addDelayWork(function() {
+    e.player.sendMessage('Developing: Starting §cexport to crafttweaker.log');
     exportAllBlocks();
+    exportAllTools();
   }, 20 * 120);
 
-  mods.zenutils.DelayManager.addDelayWork(function() {
+  addDelayWork(function() {
     e.player.sendMessage('Developing: §aFinished!');
   }, 20 * 130);
 });

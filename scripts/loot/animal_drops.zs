@@ -72,7 +72,8 @@ guardTbl.getPool("pool3").removeEntry("minecraft:gameplay/fishing/fish");
 guardTbl.addPool("diode", 1, 1, 1, 1).addItemEntryHelper(<enderio:item_material:56>, 1, 0, [Functions.lootingEnchantBonus(0, 1, 0)], [Conditions.killedByPlayer()]);
 
 /*Inject_js{
-setBlockDrops('randomthings:beanpod', [...
+setBlockDrops('randomthings:beanpod', [
+{stack: 'randomthings:ingredient:11'},...
   cmd.below.match(/tweak.*randomthings:beanpod.*null,\s*\[(.*)\],\s*\[0,1\]\);/)[1]
   .split(/\s*,\s{0,}/)
   .map((cap,i,arr)=>({

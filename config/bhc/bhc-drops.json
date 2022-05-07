@@ -1,0 +1,14 @@
+{
+  "red": {
+    "hostile": 0.00
+  },
+  "yellow": {
+    "boss": 0.0
+  },
+  "green": {
+    "dragon": 0.0
+  },
+  "blue": {
+    "minecraft:evocation_illager": 0.0
+  }
+}

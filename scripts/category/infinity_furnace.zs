@@ -92,7 +92,7 @@ ${filtered.join('\n')}`
 
 }*/
 
-# Total Furnace recipes registered: 911
+# Total Furnace recipes registered: 913
 # Filtered by JEI blacklist: 49
 # Filtered manuallly (antidupe): 14
 # Filtered by oredict: 199
@@ -182,7 +182,6 @@ infinFurnace(utils.get("draconicevolution:draconium_ore", W), utils.get("draconi
 #infinFurnace(utils.get("enderio:item_material", 26), utils.get("thermalfoundation:material", 128));
 #infinFurnace(utils.get("enderio:item_material", 27), utils.get("thermalfoundation:material", 129));
 ##infinFurnace(utils.get("enderio:item_material", 74), utils.get("enderio:item_alloy_ingot", 7));
-infinFurnace(utils.get("enderio:item_owl_egg"), utils.get("betteranimalsplus:fried_egg"));
 infinFurnace(utils.get("endreborn:block_wolframium_ore", W), utils.get("endreborn:item_ingot_wolframium"));
 infinFurnace(utils.get("exnihilocreatio:item_material", 2), utils.get("exnihilocreatio:item_cooked_silkworm"));
 ##infinFurnace(utils.get("exnihilocreatio:item_ore_ardite", 2), utils.get("tconstruct:ingots", 1));
@@ -248,8 +247,10 @@ infinFurnace(utils.get("harvestcraft:walleyerawitem", W), utils.get("minecraft:c
 infinFurnace(utils.get("ic2:crafting", 27), utils.get("ic2:crystal_memory"));
 infinFurnace(utils.get("ic2:crushed", 1), utils.get("minecraft:gold_ingot"));
 infinFurnace(utils.get("ic2:crushed", 2), utils.get("minecraft:iron_ingot"));
+infinFurnace(utils.get("ic2:crushed", 3), utils.get("thermalfoundation:material", 131));
 infinFurnace(utils.get("ic2:crushed", 4), utils.get("thermalfoundation:material", 130));
 infinFurnace(utils.get("ic2:crushed", 5), utils.get("thermalfoundation:material", 129));
+infinFurnace(utils.get("ic2:crushed", 6), utils.get("immersiveengineering:metal", 5));
 infinFurnace(utils.get("ic2:crushed"), utils.get("thermalfoundation:material", 128));
 //infinFurnace(utils.get("ic2:dust", 3), utils.get("thermalfoundation:material", 768));
 ##infinFurnace(utils.get("ic2:dust", 11), utils.get("nuclearcraft:ingot", 6));
@@ -923,6 +924,7 @@ infinFurnace(utils.get("rustic:honeycomb"), utils.get("rustic:beeswax"));
 ##infinFurnace(utils.get("rustic:log"), utils.get("minecraft:coal", 1));
 infinFurnace(utils.get("scalingfeast:exhaustingore", 1), utils.get("scalingfeast:exhaustingingot"));
 infinFurnace(utils.get("scalingfeast:exhaustingore"), utils.get("scalingfeast:exhaustingingot"));
+infinFurnace(utils.get("scalinghealth:heartdust"), utils.get("bhc:red_heart"));
 infinFurnace(utils.get("tcomplement:scorched_block", 1), utils.get("tcomplement:scorched_block"));
 //infinFurnace(utils.get("tcomplement:scorched_block", 3), utils.get("tcomplement:scorched_block", 4));
 //infinFurnace(utils.get("tcomplement:scorched_slab", 3), utils.get("tcomplement:scorched_slab", 4));
