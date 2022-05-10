@@ -6,12 +6,12 @@
 		count: 2
 	},
 	{
-		title: "256 White Alabaster",
+		title: "256",
 		item: "environmentalmaterials:alabaster",
 		count: 256
 	},
 	{
-		title: "640 Reinforced Stone Brick",
+		title: "640",
 		item: "sonarcore:reinforcedstonebrick",
 		count: 640
 	}]
