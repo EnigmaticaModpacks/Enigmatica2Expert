@@ -21,7 +21,7 @@
 		uid: "432758a2",
 		type: "item",
 		items: [{
-			item: "minecraft:obsidian 12"
+			item: "minecraft:obsidian"
 		}],
 		count: 12L,
 		ignore_nbt: 1b

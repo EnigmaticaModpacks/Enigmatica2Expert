@@ -5,10 +5,12 @@
 		item: "extendedcrafting:storage 1 7"
 	},
 	{
+		icon: "biomesoplenty:biome_block 8",
 		item: "biomesoplenty:biome_block",
 		count: 8
 	},
 	{
+		icon: "extrautils2:enderlilly 16",
 		item: "extrautils2:enderlilly",
 		count: 16
 	}]

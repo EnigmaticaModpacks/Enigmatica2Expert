@@ -2,6 +2,13 @@
 	title: "{bq.quest605.name}",
 	loot_size: 1,
 	rewards: [{
+		icon: {
+			id: "tconstruct:shard",
+			Count: 25b,
+			tag: {
+				Material: "ma.prosperity"
+			}
+		},
 		item: {
 			id: "tconstruct:shard",
 			tag: {

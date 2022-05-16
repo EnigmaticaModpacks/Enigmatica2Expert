@@ -18,8 +18,9 @@
 		uid: "fbca1185",
 		type: "item",
 		items: [{
-			item: "thermalfoundation:ore 2"
-		}]
+			item: "thermalfoundation:ore"
+		}],
+		count: 2L
 	}],
 	rewards: [{
 		uid: "9e3ab801",

@@ -2,10 +2,12 @@
 	title: "{bq.quest51.name}",
 	loot_size: 1,
 	rewards: [{
+		icon: "thermalfoundation:material 16 163",
 		item: "thermalfoundation:material 1 163",
 		count: 16
 	},
 	{
+		icon: "extrautils2:ironwood_sapling 4",
 		item: "extrautils2:ironwood_sapling",
 		count: 4
 	},
