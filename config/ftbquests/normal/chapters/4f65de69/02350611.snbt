@@ -25,7 +25,8 @@
 				FluidName: "creosote",
 				Amount: 1000
 			}
-		}]
+		}],
+		ignore_nbt: 2b
 	},
 	{
 		uid: "85b95b67",
@@ -37,7 +38,7 @@
 				Amount: 1000
 			}
 		}],
-		ignore_nbt: 1b
+		ignore_nbt: 2b
 	}],
 	rewards: [{
 		uid: "49a59e22",
