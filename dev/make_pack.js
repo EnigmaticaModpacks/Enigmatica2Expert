@@ -28,7 +28,7 @@ import terminal_kit from 'terminal-kit'
 import yargs from 'yargs'
 
 import { curseMarkdown } from './lib/curseforge.js'
-import { end, execSyncInherit, loadJson, loadText, saveText, write } from './lib/utils.js'
+import { end, execSyncInherit, loadJson, loadText, saveObjAsJson, saveText, write } from './lib/utils.js'
 
 const { gitDescribeSync } = git_describe
 const { terminal: term } = terminal_kit
@@ -364,7 +364,12 @@ const style = {
   // Relative paths of dirs like
   // - bansoukou
   // - config
-  const serverRemoveDirs = serverAllOverrides.filter((f) => lstatSync(join(tmpOverrides, f)).isDirectory())
+  const serverRemoveDirs = serverAllOverrides
+    .filter((f) => lstatSync(join(tmpOverrides, f)).isDirectory())
+    .concat('mods')
+
+  /** @type {import('boxen').Options} */
+  // @ts-ignore
   const defBoxStyle = { borderStyle: 'round', borderColor: '#22577a', width: 50, padding: { left: 1, right: 1 } }
 
   for (const conf of sftpConfigs) {
@@ -379,7 +384,6 @@ const style = {
 
     const updateBox = (/** @type {...any[]} */ ...args) =>
       logUpdate(
-        // @ts-ignore
         boxen(args.map((v, i) => Object.values(style)[i](String(v))).join(' '), {
           ...defBoxStyle,
           title: style.info(conf.label),
@@ -410,7 +414,20 @@ const style = {
       },
     })
 
-    await pressEnterOrEsc(`- Go to SFTP server\n- Unpack ${style.log(zipName)}\n- _overrides.zip\n- press ENTER`)
+    await pressEnterOrEsc(`Go to SFTP server, Unpack ${style.log(zipName)} and press ENTER to override`)
+
+    updateBox('Change and copy server overrides')
+    const jsonPath = join(conf.dir, 'overrides/config/Chikachi/discordintegration.json')
+    const dc_configs = loadJson(jsonPath)
+    dc_configs.discord.minecraft.dimensions.generic.messages.serverStart = `\`\`\`diff
++ Server Started! +
+     ${nextVersion}
+\`\`\``
+    saveObjAsJson(dc_configs, jsonPath)
+    const allOverridesDir = join(conf.dir, 'overrides')
+    let j = 0
+    sftp.on('upload', () => updateBox('Copy overrides', j++))
+    await sftp.uploadDir(allOverridesDir, './')
 
     // /**
     //  *

@@ -88,6 +88,12 @@ Liquids that should have more uses:
 - [ ] ✏️ Fix potion of bad luck uncraftable
 - [ ] ✏️ Add Greater Crimson Portal craft
 - [ ] ✏️ Scribing tools add durab
+- [ ] ✏️ Mob slaughter remove change iridium plate
+- [ ] ✏️ Laser etcher fix cheap resources
+- [ ] ✏️ Flux Sponge add recipe
+- [ ] ✏️ Add Twilight progression for peaceful
+- [ ] ✏️ Add Aluminium brass in the alloy furnace
+- [ ] ✏️ Magical Snow Globe add usage
 - [ ] 🔄 Add damage for Liquid Death
 - [ ] 🔄 Check why mobs are not spawned anough (less then 70 for whole server)
 - [ ] 🔄 Check render distance on server
@@ -98,6 +104,9 @@ Liquids that should have more uses:
 - [ ] 🔄 Forbid exploding in chunks, but claim only few chunks
 - [ ] 🔄 Add new Pech trades and add them in JEI
 - [ ] 🔄 Warn about power tier in tooltip
+- [ ] 🚧 Update screenshots on CF
+- [ ] 📖 Add inventory 🎂 second consume info
+- [ ] 📖 Add Vanilla Beacon quest
 - [ ] 📖 Move Ball Of Fur to Animals
 - [ ] 📖 Target Dummy add to loot
 - [ ] 📖 **AE2 Network Visualiser** add to book
@@ -107,10 +116,7 @@ Liquids that should have more uses:
       > https://support.curseforge.com/en/support/solutions/articles/9000197321-curseforge-upload-api
       > https://github.com/EnigmaticaModpacks/ModpackUploader/blob/b32a50e6b19653ac1648916cd3c18e24db1026d0/modpack-uploader.ps1#L238-L246
 - [ ] 🚧 Server automation:
-    1. SFTP Upload `_server.zip`
-    2. Remove all folders presented in `.zip`
     3. Unarchive `_server.zip` on remote
-    4. Unarchive `.overrides_after_update.zip`
 
 ---
 
@@ -207,10 +213,3 @@ Liquids that should have more uses:
   > Giant sword somehow cant be buffed with MaterialChanger mod
 - `<gendustry:gene_sample>.maxStackSize = 64;` **Transposer** dupe Samples when stackable
 - **Dynamic Surroundings** cause **Better Questing** book not play sounds when getting quests
-
--a{not <a>}
-│││    │╰╴`a` Get value of Variable
-│││    ╰╴`<>` run LostUser program inside <>
-││╰╴`{}` Run Lua code inside {}
-│╰╴`a` Name of variable to add
-╰╴`-` Add variable function
