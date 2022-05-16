@@ -6,7 +6,7 @@
 			Material: "obsidian"
 		}
 	},
-	x: 6.625d,
+	x: 6.7d,
 	y: 3.5d,
 	text: [
 		"{bq.quest53.desc}"

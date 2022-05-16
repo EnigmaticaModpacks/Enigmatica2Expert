@@ -18,5 +18,11 @@
 			item: "sonarcore:reinforcedstonebrick"
 		}],
 		count: 12L
+	}],
+	rewards: [{
+		uid: "df0acc29",
+		type: "item",
+		item: "sonarcore:reinforcedstonebrick",
+		count: 128
 	}]
 }

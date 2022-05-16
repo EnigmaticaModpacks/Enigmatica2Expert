@@ -1,13 +1,13 @@
 {
 	title: "{bq.quest64.name}",
 	icon: "actuallyadditions:item_hairy_ball",
-	x: -0.5d,
-	y: 0.8333333333333333d,
+	x: 4.7d,
+	y: -4.5d,
 	text: [
 		"{bq.quest64.desc}"
 	],
 	dependencies: [
-		"da390e07"
+		"dcb947b4"
 	],
 	tasks: [{
 		uid: "34332f5c",

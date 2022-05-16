@@ -26,11 +26,16 @@
 				}
 			}
 		}],
-		count: 16L
+		count: 8L
 	}],
 	rewards: [{
 		uid: "53e948ba",
 		type: "choice",
 		table: 22
+	},
+	{
+		uid: "623693b7",
+		type: "item",
+		item: "additionalcompression:logwood_compressed 1 2"
 	}]
 }

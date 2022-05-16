@@ -36,14 +36,6 @@
 		ignore_nbt: 1b
 	},
 	{
-		uid: "f286b653",
-		type: "item",
-		items: [{
-			item: "tconstruct:tooltables 1 4"
-		}],
-		ignore_nbt: 1b
-	},
-	{
 		uid: "8a466e3e",
 		type: "item",
 		items: [{

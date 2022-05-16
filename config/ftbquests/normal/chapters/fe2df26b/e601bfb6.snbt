@@ -1,0 +1,49 @@
+{
+	x: 4.725d,
+	y: 1.7249999999999999d,
+	text: [
+		"Network Great tool for managing your channels."
+	],
+	dependencies: [
+		"4bfcd69f"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "a2b5edae",
+		type: "item",
+		items: [{
+			id: "aenetvistool:net_visualizer",
+			tag: {
+				uuid: "41010b68-445c-4dae-9686-364e093b56f1",
+				bound_pos: 274810798080L,
+				bound_dim: 0,
+				cable_node_colour_8: 255,
+				cable_node_colour_32: 65535,
+				machine_node_colour_8: 16776960,
+				machine_node_colour_32: 8388352,
+				p2p_colours: [I;
+					12500735,
+					4210752,
+					16711680,
+					65535,
+					16755200,
+					22527,
+					16777100
+				],
+				rand_p2p_colours: 0b,
+				rand_p2p_colour_offset: 0b,
+				render_no_depth: 1b,
+				render_p2p_no_depth: 1b,
+				enable_p2p: 1b,
+				enable_chanel_labels: 1b,
+				enable_cable_connections: 1b,
+				enable_cable_nodes: 1b,
+				enable_machine_nodes: 1b,
+				highlight_inactive_buses: 1b,
+				small_channel_labels: 0b
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

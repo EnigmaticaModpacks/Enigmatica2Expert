@@ -9,13 +9,48 @@
 	dependencies: [
 		"dabc815c"
 	],
+	or_tasks: true,
 	tasks: [{
-		uid: "6a1c92e7",
+		uid: "25b95556",
 		type: "item",
 		items: [{
-			item: "iceandfire:silver_ingot"
-		}],
-		ignore_nbt: 1b
+			item: "contenttweaker:dust_tiny_silver"
+		}]
+	},
+	{
+		uid: "e0c3afae",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 66"
+		}]
+	},
+	{
+		uid: "7c494be6",
+		type: "item",
+		items: [{
+			item: "thaumcraft:cluster 1 4"
+		}]
+	},
+	{
+		uid: "bc2091b1",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:compound 1 10"
+		}]
+	},
+	{
+		uid: "ea2d0e79",
+		type: "item",
+		items: [{
+			item: "iceandfire:silverpile"
+		}]
+	},
+	{
+		uid: "66053453",
+		type: "item",
+		items: [{
+			item: "ic2:dust 1 26"
+		}]
 	}],
 	rewards: [{
 		uid: "9c1c96ab",

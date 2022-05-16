@@ -4,7 +4,7 @@
 		id: "dwmh:ocarina",
 		tag: {}
 	},
-	x: 4.666666666666667d,
+	x: 4.7d,
 	y: -3.5d,
 	text: [
 		"{bq.quest711.desc}"

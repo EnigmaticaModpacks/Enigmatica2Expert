@@ -6,8 +6,8 @@
 			EntityName: "emberroot:rootsonespriteboss"
 		}
 	},
-	x: 4.666666666666667d,
-	y: -2.3333333333333335d,
+	x: 4.7d,
+	y: -2.4d,
 	text: [
 		"{bq.quest462.desc}"
 	],

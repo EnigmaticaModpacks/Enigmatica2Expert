@@ -1,0 +1,29 @@
+{
+	title: "Beacon",
+	x: 6.7d,
+	y: 6.1d,
+	description: "New Effects",
+	text: [
+		"Beacon have extended effects list.",
+		"Place special blocks near beacon to change its list of effects.",
+		"",
+		"See JEI for whole list of blocks and effects."
+	],
+	dependencies: [
+		"4fc58528"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "37fd494e",
+		type: "item",
+		items: [{
+			item: "minecraft:beacon"
+		}]
+	}],
+	rewards: [{
+		uid: "402059bd",
+		type: "item",
+		item: "endreborn:item_end_essence",
+		count: 8
+	}]
+}
