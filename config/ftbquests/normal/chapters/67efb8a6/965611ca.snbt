@@ -21,12 +21,6 @@
 			id: "draconicevolution:draconic_shovel",
 			tag: {
 				Energy: 16000000
-			},
-			ForgeCaps: {
-				Parent: {
-					Items: [],
-					Size: 18
-				}
 			}
 		}],
 		ignore_nbt: 1b

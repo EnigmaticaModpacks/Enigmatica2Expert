@@ -21,12 +21,6 @@
 			id: "draconicevolution:wyvern_pick",
 			tag: {
 				Energy: 2000000
-			},
-			ForgeCaps: {
-				Parent: {
-					Items: [],
-					Size: 9
-				}
 			}
 		}],
 		ignore_nbt: 1b
