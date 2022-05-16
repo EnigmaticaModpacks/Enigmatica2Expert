@@ -28,7 +28,8 @@
 		type: "item",
 		items: [{
 			item: "actuallyadditions:block_misc 1 3"
-		}]
+		}],
+		count: 2L
 	}],
 	rewards: [{
 		uid: "a8230545",
