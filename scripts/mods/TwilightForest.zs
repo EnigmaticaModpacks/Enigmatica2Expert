@@ -3,6 +3,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
+import crafttweaker.item.WeightedItemStack;
 
 # List of blocks and their respetive recycle materials
 # Note: despite Rock Crusher uses IIngredient as input, IOreDictEntry or
@@ -281,6 +282,69 @@ craft.shapeless(<twilightforest:castle_rune_brick:2>, "CC▲♣", castleIngrs);
 
 # [Violet Castle Rune Brick] from [Purple Runic Dust][+2]
 craft.shapeless(<twilightforest:castle_rune_brick:3>, "CC▲♠", castleIngrs);
+
+#-------------------------------------------------------------------------
+# Recycling of spawners
+
+val spawnerRecycle = {
+  <twilightforest:boss_spawner>   : [
+    <twilightforest:shader>.withTag({shader_type: "Naga"}) % 100,
+    <twilightforest:trophy> % 100,
+    <twilightforest:naga_scale> % 100,
+  ],
+  <twilightforest:boss_spawner:5> : [
+    <twilightforest:shader>.withTag({shader_type: "Snow Queen"}) % 100,
+    <twilightforest:trophy:5> % 100,
+    <minecraft:packed_ice> * 20 % 100,
+    <minecraft:snowball> * 64 % 100,
+    <twilightforest:triple_bow> % 20,
+    <twilightforest:seeker_bow> % 20,
+    <twilightforest:ice_bow> % 20,
+    <twilightforest:ender_bow> % 20,
+  ],
+  <twilightforest:boss_spawner:7> : [
+    <twilightforest:shader>.withTag({shader_type: "Alpha Yeti"}) % 100,
+    <twilightforest:alpha_fur> * 4 % 100,
+    <twilightforest:ice_bomb> * 10 % 100,
+  ],
+  <twilightforest:boss_spawner:1> : [
+    <twilightforest:shader>.withTag({shader_type: "Lich"}) % 100,
+    <twilightforest:trophy:1> % 100,
+    <twilightforest:twilight_scepter> % 20,
+    <twilightforest:lifedrain_scepter> % 20,
+    <twilightforest:zombie_scepter> % 20,
+    <twilightforest:shield_scepter> % 20,
+  ],
+  <twilightforest:boss_spawner:3> : [
+    <twilightforest:shader>.withTag({shader_type: "Ur-Ghast"}) % 100,
+    <twilightforest:trophy:3> % 100,
+    <twilightforest:fiery_tears> * 6 % 100,
+    <twilightforest:carminite> * 10 % 100,
+  ],
+  <twilightforest:boss_spawner:6> : [
+    <twilightforest:shader>.withTag({shader_type: "Minoshroom"}) % 100,
+    <twilightforest:trophy:6> % 100,
+    <twilightforest:meef_stroganoff> * 3 % 100,
+    <twilightforest:minotaur_axe> % 100,
+  ],
+  <twilightforest:boss_spawner:4> : [
+    <twilightforest:shader>.withTag({shader_type: "Knight Phantom"}) % 100,
+    <twilightforest:trophy:4> % 100,
+    <twilightforest:armor_shard> * 16 % 100,
+  ],
+  <twilightforest:boss_spawner:2> : [
+    <twilightforest:shader>.withTag({shader_type: "Hydra"}) % 100,
+    <twilightforest:trophy:2> % 100,
+    <twilightforest:hydra_chop> * 4 % 100,
+    <twilightforest:fiery_blood> * 6 % 100,
+  ],
+} as WeightedItemStack[][IItemStack];
+
+val defaultShader = <twilightforest:shader_bag>.withTag({shader_rarity: "Twilight"}) % 100;
+
+for spawner, rewards in spawnerRecycle {
+  mods.forestry.Centrifuge.addRecipe(rewards + defaultShader, spawner, 200);
+}
 
 #-------------------------------------------------------------------------
 

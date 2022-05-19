@@ -1,3 +1,5 @@
+import crafttweaker.item.IItemStack;
+
 #modloaded industrialwires
 
 # Remake all relays to x8 (from x4)
@@ -37,3 +39,19 @@ craft.remake(<industrialwires:ic2_connector:9> * 8, ["pretty",
   "I ⌃ I",
   "I ■ I"], wireIngrs
 );
+
+# JEI visible recipes
+val cables = {
+  <industrialwires:ic2_wire_coil>   : <ic2:cable:4>.withTag({type: 4 as byte, insulation: 0 as byte}), # Tin Cable
+  <industrialwires:ic2_wire_coil:1> : <ic2:cable>  .withTag({type: 0 as byte, insulation: 0 as byte}), # Copper Cable
+  <industrialwires:ic2_wire_coil:2> : <ic2:cable:2>.withTag({type: 2 as byte, insulation: 0 as byte}), # Gold Cable
+  <industrialwires:ic2_wire_coil:3> : <ic2:cable:3>.withTag({type: 3 as byte, insulation: 0 as byte}), # HV Cable
+  <industrialwires:ic2_wire_coil:4> : <ic2:cable:1>.withTag({type: 1 as byte, insulation: 0 as byte}), # Glass Fibre Cable
+  <industrialwires:ic2_wire_coil:5> : <ic2:cable:4>.withTag({type: 4 as byte, insulation: 1 as byte}), # Insulated Tin Cable
+  <industrialwires:ic2_wire_coil:6> : <ic2:cable>  .withTag({type: 0 as byte, insulation: 1 as byte}), # Insulated Copper Cable
+  <industrialwires:ic2_wire_coil:7> : <ic2:cable:2>.withTag({type: 2 as byte, insulation: 2 as byte}), # 2x Ins. Gold Cable
+} as IItemStack[IItemStack];
+
+for wire, c in cables {
+  recipes.addShapeless('cable to wire #' ~ wire.damage, wire.withTag({wireLength: 9}), [c,c,c,c,c,c,c,c,c]);
+}

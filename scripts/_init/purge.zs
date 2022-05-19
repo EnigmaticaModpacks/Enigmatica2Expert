@@ -112,7 +112,6 @@ furnace.remove(<*>, <immersiveengineering:metal:10>);
 furnace.remove(<*>, <immersiveengineering:metal:11>);
 furnace.remove(<*>, <immersiveengineering:metal:12>);
 furnace.remove(<*>, <immersiveengineering:metal:13>);
-furnace.remove(<*>, <immersiveengineering:metal:14>);
 furnace.remove(<*>, <immersiveengineering:metal:15>);
 furnace.remove(<*>, <immersiveengineering:metal:16>);
 furnace.remove(<*>, <immersiveengineering:metal:17>);

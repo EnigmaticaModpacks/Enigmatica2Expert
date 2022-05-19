@@ -74,6 +74,19 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Base Essence Ingot] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>ingotBrass 3</oreDict>
+			<oreDict>shardProsperity 10</oreDict>
+			<oreDict>powderMana 1</oreDict>
+			<oreDict>dustAstralStarmetal 1</oreDict>
+		</input>
+		<output>
+			<itemStack>mysticalagriculture:crafting 3 32</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Mirion Ingot] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>

@@ -40,7 +40,7 @@ addBrewWithUpgradesFromBase(
   "potioncore:strong_weight", "potioncore:long_weight"
 );
 addBrewWithUpgradesFromBase(
-  "minecraft:poison", fermentedSpiderEye, "potioncore:antidote",
+  "minecraft:poison", <minecraft:red_flower:8>, "potioncore:antidote",
   null, "potioncore:long_antidote",
   null, "minecraft:long_poison"
 );

@@ -708,7 +708,7 @@ val glassFromDust = {
 	<thermalfoundation:glass:5>       : <thermalfoundation:material:69>,
 	<thermalfoundation:glass:6>       : <thermalfoundation:material:70>,
 	<thermalfoundation:glass:7>       : <thermalfoundation:material:71>,
-	<thermalfoundation:glass:8>       : null/* <thermalfoundation:material:72> */, // Somehow this recipe missed
+	<thermalfoundation:glass:8>       : <thermalfoundation:material:72>,
 	<thermalfoundation:glass_alloy>   : <thermalfoundation:material:96>,
 	<thermalfoundation:glass_alloy:1> : <thermalfoundation:material:97>,
 	<thermalfoundation:glass_alloy:2> : <thermalfoundation:material:98>,
@@ -720,7 +720,7 @@ val glassFromDust = {
 } as IItemStack[IItemStack];
 
 for glass, dust in glassFromDust {
-	if(!isNull(dust)) mods.thermalexpansion.InductionSmelter.removeRecipe(<ore:blockGlassHardened>.firstItem, dust);
+	if(glass.damage != 8) mods.thermalexpansion.InductionSmelter.removeRecipe(<ore:blockGlassHardened>.firstItem, dust);
 	mods.thermalexpansion.InductionSmelter.addRecipe(
 		glass, // Output
 		<enderio:block_fused_quartz>,

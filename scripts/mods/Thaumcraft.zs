@@ -5,6 +5,9 @@ import thaumcraft.aspect.CTAspectStack;
 
 #modloaded thaumcraft
 
+# Add durability to scribbing tools
+<thaumcraft:scribing_tools>.maxDamage = 600;
+
 # Missed Cinnabar Cluster -> Quicksilver furnace recipe
 furnace.addRecipe(<thaumcraft:quicksilver> * 2, <thaumcraft:cluster:6>);
 
@@ -128,8 +131,6 @@ craft.remake(<thaumcraft:void_seed> * 4, ["pretty",
 	[null, <astralsorcery:itemrockcrystalsimple>.anyDamage(), <astralsorcery:itemrockcrystalsimple>.anyDamage()], 
 	[<ore:stickTreatedWood>, null, null]]);
 
-# [Native Titanium Cluster] from [Rutile Ore]
-mods.thaumcraft.Crucible.registerRecipe("Rutile ore fix", "METALPURIFICATION", <jaopca:item_clustertitanium>, <ore:oreTitanium>, [<aspect:metallum>*5, <aspect:ordo>*5]);
 mods.thaumcraft.Crucible.registerRecipe("Quartz ore fix", "METALPURIFICATION", <thaumcraft:cluster:7>, <ore:oreQuartz>, [<aspect:metallum>*5, <aspect:ordo>*5]);
 
 
@@ -214,7 +215,7 @@ for aspect, ingr in {
   perditio: <minecraft:gunpowder>,
 } as IItemStack[string] {
 	mods.rustic.Condenser.addRecipe(
-		<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: aspect}]}),
+		<thaumcraft:crystal_essence>.withTag({Aspects: [{key: aspect, amount: 1}]}),
 		[<thaumcraft:nugget:9>, ingr], null, null
 	);
 }

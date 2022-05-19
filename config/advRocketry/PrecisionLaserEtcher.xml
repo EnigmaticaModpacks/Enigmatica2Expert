@@ -31,7 +31,7 @@
 	
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
-<Recipes useDefault="true">
+<Recipes useDefault="false">
 	<Recipe timeRequired="1200" power="60000">
 		<input>
 			<itemStack>advancedrocketry:lens</itemStack>

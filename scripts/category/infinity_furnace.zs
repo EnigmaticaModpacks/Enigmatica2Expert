@@ -92,10 +92,10 @@ ${filtered.join('\n')}`
 
 }*/
 
-# Total Furnace recipes registered: 913
-# Filtered by JEI blacklist: 49
+# Total Furnace recipes registered: 914
+# Filtered by JEI blacklist: 47
 # Filtered manuallly (antidupe): 14
-# Filtered by oredict: 199
+# Filtered by oredict: 200
 infinFurnace(utils.get("actuallyadditions:block_misc", 3), utils.get("actuallyadditions:item_misc", 5));
 ##infinFurnace(utils.get("actuallyadditions:item_dust", 3), utils.get("minecraft:emerald"));
 ##infinFurnace(utils.get("actuallyadditions:item_dust", 7), utils.get("actuallyadditions:item_misc", 5));
@@ -279,6 +279,7 @@ infinFurnace(utils.get("iceandfire:myrmex_jungle_egg", W), utils.get("betteranim
 infinFurnace(utils.get("iceandfire:myrmex_jungle_resin_block", W), utils.get("iceandfire:myrmex_jungle_resin_glass"));
 infinFurnace(utils.get("iceandfire:stymphalian_bird_feather", W), utils.get("thermalfoundation:material", 227));
 ##infinFurnace(utils.get("immersiveengineering:material", 18), utils.get("immersiveengineering:material", 19));
+##infinFurnace(utils.get("immersiveengineering:metal", 14), utils.get("immersiveengineering:metal", 5));
 infinFurnace(utils.get("immersiveengineering:ore", 5), utils.get("immersiveengineering:metal", 5));
 infinFurnace(utils.get("industrialforegoing:dryrubber", W), utils.get("industrialforegoing:plastic"));
 ##infinFurnace(utils.get("integrateddynamics:menril_log_filled"), utils.get("minecraft:coal", 1));
@@ -357,8 +358,8 @@ infinFurnace(utils.get("jaopca:item_clusterthorium"), utils.get("nuclearcraft:du
 infinFurnace(utils.get("jaopca:item_clustertitanium"), utils.get("libvulpes:productdust", 7, 2));
 infinFurnace(utils.get("jaopca:item_clustertopaz"), utils.get("biomesoplenty:gem", 3, 3));
 infinFurnace(utils.get("jaopca:item_clustertungsten"), utils.get("contenttweaker:item_ore_tungsten", 2, 2));
-#infinFurnace(utils.get("jaopca:item_clusteruranium"), utils.get("immersiveengineering:metal", 14, 2));
-#infinFurnace(utils.get("jaopca:item_clusteryellorium"), utils.get("immersiveengineering:metal", 14, 2));
+infinFurnace(utils.get("jaopca:item_clusteruranium"), utils.get("immersiveengineering:metal", 14, 2));
+infinFurnace(utils.get("jaopca:item_clusteryellorium"), utils.get("immersiveengineering:metal", 14, 2));
 infinFurnace(utils.get("jaopca:item_crushedaluminium"), utils.get("thermalfoundation:material", 132));
 infinFurnace(utils.get("jaopca:item_crushedardite"), utils.get("tconstruct:ingots", 1));
 infinFurnace(utils.get("jaopca:item_crushedastralstarmetal"), utils.get("astralsorcery:itemcraftingcomponent", 1));

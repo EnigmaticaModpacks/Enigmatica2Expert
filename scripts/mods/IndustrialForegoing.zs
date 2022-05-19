@@ -195,8 +195,8 @@ craft.remake(<industrialforegoing:mob_slaughter_factory>, ["pretty",
   "R T R",
   "F M F",
   "R □ R"], {
-  "□": <ore:plateIridium>,
-  "R": <ore:itemRubber>,                       # Plastic
+  "□": <ore:plateSilver>,
+  "R": <industrialforegoing:plastic>,          # Plastic
   "T": <immersiveengineering:metal_device1:8>, # Tesla Coil
   "F": <redstonearsenal:material:224>,         # Fluxed Armor Plating
   "M": <teslacorelib:machine_case>,            # Machine Case

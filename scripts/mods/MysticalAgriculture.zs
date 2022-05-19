@@ -719,6 +719,14 @@ scripts.process.solution(
 	[0.5, 0.05, 0.05, 3300], "only: highoven"
 );
 
+# [Base Essence Ingot] from [Stardust][+3]
+scripts.processUtils.avdRockXmlRecipe("ElectricArcFurnace", [
+	<ore:ingotBrass> * 3,       # Alchemical Brass Ingot
+	<ore:shardProsperity> * 10, # Prosperity Shard
+	<ore:powderMana>,           # Mana Powder
+	<ore:dustAstralStarmetal>,  # Stardust
+], null, [<mysticalagriculture:crafting:32> * 3], null);
+
 # [Base Crafting Seed] Harder to encourage Villager Trades
 craft.remake(<mysticalagriculture:crafting:16>, ["pretty",
   "l l l",

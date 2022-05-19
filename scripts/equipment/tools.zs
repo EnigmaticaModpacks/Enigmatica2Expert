@@ -1,8 +1,9 @@
-import crafttweaker.item.IItemStack as IItemStack;
-	
+import crafttweaker.item.IItemStack;
+import mods.zentoolforge.Toolforge;
+
 # *======= Recipes =======*
 
-	val toolsToRemove = [
+val toolsToRemove = [
 	<botania:glasspick>,
 	<forestry:bronze_pickaxe>,
 	<ic2:bronze_pickaxe>,
@@ -11,13 +12,13 @@ import crafttweaker.item.IItemStack as IItemStack;
 	<ic2:bronze_helmet>,
 	<ic2:bronze_leggings>,
 	<ic2:bronze_boots>,
-	
+
 	<immersiveengineering:pickaxe_steel>,
 	<immersiveengineering:shovel_steel>,
 	<immersiveengineering:axe_steel>,
 	<immersiveengineering:sword_steel>,
 	<immersiveengineering:hoe_steel>,
-	
+
 	<twilightforest:fiery_pickaxe>,
 	<twilightforest:steeleaf_pickaxe>.withTag({ench: [{lvl: 2 as short, id: 35 as short}]}),
 	<twilightforest:ironwood_pickaxe>.withTag({ench: [{lvl: 1 as short, id: 32 as short}]}),
@@ -52,7 +53,7 @@ import crafttweaker.item.IItemStack as IItemStack;
 	<exnihilocreatio:hammer_stone>,
 	<exnihilocreatio:hammer_iron>,
 	<exnihilocreatio:hammer_gold>,
-	
+
 	<excompressum:compressed_crook>,
 	<excompressum:compressed_hammer_wood>,
 	<excompressum:compressed_hammer_stone>,
@@ -65,26 +66,26 @@ import crafttweaker.item.IItemStack as IItemStack;
 	<randomthings:spectreshovel>,
 	<randomthings:spectresword>,
 ] as IItemStack[];
-		
-	for tool in toolsToRemove {
-		utils.rh(tool);
-	}
 	
+for tool in toolsToRemove {
+	utils.rh(tool);
+}
+
 # Vanilla tool nerfs
 
-	val toolsToNerf = [
-	
+val toolsToNerf = [
+
 	<minecraft:golden_axe>,
 	<minecraft:golden_shovel>,
 	<minecraft:golden_hoe>,
 	<minecraft:golden_pickaxe>,
 	<minecraft:golden_sword>,
-	
+
 	<minecraft:diamond_shovel>,
 	<minecraft:diamond_axe>,
 	<minecraft:diamond_pickaxe>,
 	<minecraft:diamond_hoe>,
-	
+
 	<minecraft:iron_shovel>,
 	<minecraft:iron_axe>,
 	<minecraft:iron_pickaxe>,
@@ -95,22 +96,55 @@ import crafttweaker.item.IItemStack as IItemStack;
 	<minecraft:wooden_hoe>,
 	<minecraft:wooden_shovel>,
 	<minecraft:wooden_axe>,
-	
+
 	<minecraft:stone_pickaxe>,
 	<minecraft:stone_hoe>,
 	<minecraft:stone_axe>,
 	<minecraft:stone_shovel>,
 
 	<minecraft:shears>,
-	
-		] as IItemStack[];
 
-	for tool in toolsToNerf {
-		tool.maxDamage = 1;
-		scripts.category.tooltip_utils.desc.both(tool, "vanilla_tools");
-	}
-	
-	<minecraft:stone_sword>.maxDamage = 2;
-	<minecraft:iron_sword>.maxDamage = 10;
-	<minecraft:diamond_sword>.maxDamage = 20;
+] as IItemStack[];
+
+val matConversion = {
+	wooden: "wood",
+	stone : "stone",
+} as string[string];
+
+val defConversion = {
+	pickaxe: "pickaxe",
+	sword  : "broadsword",
+	hoe    : "mattock",
+	shovel : "shovel",
+	axe    : "hatchet",
+} as string[string];
+
+for tool in toolsToNerf {
+	tool.maxDamage = 1;
+	scripts.category.tooltip_utils.desc.both(tool, "vanilla_tools");
+
+	val splitted = tool.definition.id.split(":")[1].split("_");
+	if(splitted.length <= 1) continue;
+
+	val matTcon = matConversion[splitted[0]];
+	if(isNull(matTcon)) continue;
+
+	val tconID = defConversion[splitted[1]];
+	if(isNull(tconID)) continue;
+
+	val tconDef = itemUtils.getItem('tconstruct:'~tconID);
+	if(isNull(tconDef)) continue;
+
+	val woodMat = Toolforge.getMaterialFromID("wood");
+	if(isNull(woodMat)) continue;
+
+	val toolTcon = Toolforge.buildTool(tconDef.definition, [Toolforge.getMaterialFromID(matTcon), woodMat, woodMat]);
+	if(isNull(toolTcon)) continue;
+
+	recipes.addShapeless('convert_'~tool.definition.id, toolTcon, [tool]);
+}
+
+<minecraft:stone_sword>.maxDamage = 2;
+<minecraft:iron_sword>.maxDamage = 10;
+<minecraft:diamond_sword>.maxDamage = 20;
 

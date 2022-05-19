@@ -319,3 +319,10 @@ for i, input in farmBlocks {
 
 # [Carton]*2 from [Compressed Sawdust]
 scripts.process.crush(<thermalfoundation:material:801> /* Compressed Sawdust */, <forestry:carton> * 2, "only: CrushingBlock");
+
+# Fix wax capsule uncraftable
+# [Wax Capsule]*2 from [Pressed Wax]
+recipes.removeByRecipeName("forestry:pam_wax_capsule");
+craft.make(<forestry:capsule> * 2, ["PPP"], {
+  "P": <ore:materialPressedwax>, # Pressed Wax
+});

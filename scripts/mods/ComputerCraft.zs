@@ -50,11 +50,11 @@ mods.jei.JEI.addItem(<opencomputers:robot>);
 
 # Use Fake Iron recipe
 # [Turtle] from [Computer][+2]
-craft.remake(<computercraft:turtle_expanded>, ["pretty",
+craft.make(<computercraft:turtle_expanded>, ["pretty",
   "▬ ▬ ▬",
   "▬ C ▬",
   "▬ c ▬"], {
-  "▬": <ore:ingotFakeIron>,      # Iron Alloy Ingot
-  "C": <computercraft:computer>, # Computer
-  "c": <ore:chest>,              # Oak Chest
+  "▬": <enderio:item_alloy_ingot:9>, # Iron Alloy Ingot
+  "C": <computercraft:computer>,     # Computer
+  "c": <ore:chest>,                  # Oak Chest
 });

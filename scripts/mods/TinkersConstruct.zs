@@ -380,6 +380,15 @@ craft.reshapeless(<tconstruct:materials:15>, "S▲", {
   "S": <forestry:crafting_material:2>, # Silk Wisp
 });
 
+# [Silky Jewel] from [Flux Crystal][+1]
+craft.make(<tconstruct:materials:16>, ["pretty",
+  "  □  ",
+  "□ * □",
+  "  □  "], {
+  "□": <ore:plateDenseGold>, # Dense Gold Plate
+  "*": <ore:gemCrystalFlux>, # Flux Crystal
+});
+
 # Remake to avoid recipe conflict with Compressed Mossy Stone
 # [Ball of Moss] from [Moss Stone]
 craft.remake(<tconstruct:materials:18>, ["pretty",
@@ -447,3 +456,7 @@ recipes.addShapeless(<minecraft:enchanted_book>.withTag({StoredEnchantments:
 	<enchantment:oeintegration:oreexcavation>.makeEnchantment(1).makeTag().ench}),
 	[<oeintegration:excavatemodifier>]
 );
+
+# Alloy furnace missed Alum Brass recipe
+mods.nuclearcraft.alloy_furnace.addRecipe(<ore:ingotCopper>, <ore:ingotAluminum> * 3, <tconstruct:ingots:5> * 4);# [Aluminum Brass Ingot]
+mods.nuclearcraft.alloy_furnace.addRecipe(<ore:blockCopper>, <ore:blockAluminum> * 3, <tconstruct:metal:5> * 4); # [Block of Aluminum Brass]

@@ -652,3 +652,8 @@ craft.remake(<mekanism:basicblock2:5>, ["pretty",
   "□": <ore:plateCopper>,       # Copper Plate
   "⌂": <mekanism:basicblock:8>, # Steel Casing
 });
+
+# Fix squeezers have no recipe
+val OD = <mekanism:dust:2>;
+scripts.processWork.work(["Squeezer"],            null, [<ore:oreOsmium>], null, [OD  , OD], null, null, [0.75]);
+scripts.processWork.work(["MechanicalSqueezer"],  null, [<ore:oreOsmium>], null, [OD*2, OD], null, null, [0.5 ]);

@@ -362,9 +362,9 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       #   @Optional ILiquidStack outputFluid);
       for ii in inputIngr0.itemArray {
         mods.integrateddynamics.Squeezer.addRecipe(ii, 
-          arrN_item(outputItems, 0), arrN_float(extraChance, 0), 
-          arrN_item(outputItems, 1), arrN_float(extraChance, 1), 
-          arrN_item(outputItems, 2), arrN_float(extraChance, 2), 
+          arrN_item(outputItems, 0), arrN_float(combinedChances, 0), 
+          arrN_item(outputItems, 1), arrN_float(combinedChances, 1), 
+          arrN_item(outputItems, 2), arrN_float(combinedChances, 2), 
           outputLiquid0);
       }
       return machineName;
@@ -378,9 +378,9 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       #   @Optional ILiquidStack outputFluid, @Optional(10) int duration);
       for ii in inputIngr0.itemArray {
         mods.integrateddynamics.MechanicalSqueezer.addRecipe(ii, 
-          arrN_item(outputItems, 0), arrN_float(extraChance, 0), 
-          arrN_item(outputItems, 1), arrN_float(extraChance, 1), 
-          arrN_item(outputItems, 2), arrN_float(extraChance, 2), 
+          arrN_item(outputItems, 0), arrN_float(combinedChances, 0), 
+          arrN_item(outputItems, 1), arrN_float(combinedChances, 1), 
+          arrN_item(outputItems, 2), arrN_float(combinedChances, 2), 
           outputLiquid0);
       }
       return machineName;
@@ -394,7 +394,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       # Calculate chanced output from combined
       var chancedCombined = [] as WeightedItemStack[];
       for i, out in combinedOutput {
-        chancedCombined = chancedCombined + out % ((combinedChances[i] * 100) as int);
+        chancedCombined += out % ((combinedChances[i] * 100) as int);
       }
 
       for ii in inputIngr0.itemArray {
@@ -411,7 +411,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       # Calculate chanced output from combined
       var chancedCombined = [] as WeightedItemStack[];
       for i, out in combinedOutput {
-        chancedCombined = chancedCombined + out % ((combinedChances[i] * 100) as int);
+        chancedCombined += out % ((combinedChances[i] * 100) as int);
       }
 
       for ii in inputIngr0.itemArray {

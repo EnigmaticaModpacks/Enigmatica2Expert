@@ -109,13 +109,25 @@ import scripts.craft.grid.Grid;
 	recipes.addShapeless("MV - HV Connector", <immersiveengineering:connector:4>, [<immersiveengineering:connector:2>, <ore:ingotAluminium>]);
 	recipes.addShapeless("MV - HV Relay", <immersiveengineering:connector:5>, [<immersiveengineering:connector:3>, <ore:ingotAluminium>]);
 
-# Coke Bricks
-	recipes.remove(<immersiveengineering:stone_decoration>);
-	recipes.addShaped("Coke Brick", 
-	<immersiveengineering:stone_decoration> * 3, 
-	[[<ore:clayPorcelain>, <ore:ingotBrick>, <ore:clayPorcelain>],
-	[<ore:ingotBrick>, <ore:sandstone>, <ore:ingotBrick>], 
-	[<ore:clayPorcelain>, <ore:ingotBrick>, <ore:clayPorcelain>]]);
+# [Coke Brick]*3 from [Sandstone][+2]
+craft.remake(<immersiveengineering:stone_decoration> * 3, ["pretty",
+  "P ▬ P",
+  "▬ s ▬",
+  "P ▬ P"], {
+  "P": <ore:clayPorcelain>, # Porcelain Clay
+  "▬": <ore:ingotBrick>,    # Brick
+  "s": <ore:sandstone>,     # Sandstone
+});
+
+# [Coke Brick]*3 from [Sandstone][+2]
+craft.remake(<immersiveengineering:stone_decoration> * 3, ["pretty",
+  "■ ▬ ■",
+  "▬ s ▬",
+  "■ ▬ ■"], {
+  "■": <ore:blockClay>,  # Clay
+  "▬": <ore:ingotBrick>, # Brick
+  "s": <ore:sandstone>,  # Sandstone
+});
 	
 # Redstone Engineering Block
 	recipes.remove(<immersiveengineering:metal_decoration0:3>);
@@ -565,3 +577,7 @@ craft.remake(<immersiveengineering:metal_device1:9> * 3, ["pretty",
 
 # Ethanol alt
 mods.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 800, <ore:itemBioFuel>, 800);
+
+# Fix empty output recipe
+mods.immersiveengineering.Squeezer.removeByInput(<immersiveengineering:material:17> * 8);
+mods.immersiveengineering.Squeezer.addRecipe(<immersiveengineering:material:18>, <fluid:creosote> * 250, <ore:dustCoke> * 8, 3000);

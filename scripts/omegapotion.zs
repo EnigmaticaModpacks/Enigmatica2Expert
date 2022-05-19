@@ -201,7 +201,6 @@ static potNameTag as IData[string] = {
   "potioncore:strong_levitation"           : [ 25, 1,  300],
   "enderio:strong_floating"                : [ 25, 2,  140],
   "cofhcore:luck"                          : [ 26, 0, 3600],
-  "cyclicmagic:luck"                       : [ 26, 0, 3600],
   "minecraft:luck"                         : [ 26, 0, 6000],
   "cofhcore:luck+"                         : [ 26, 0, 9600],
   "cofhcore:luck2"                         : [ 26, 1, 1800],
