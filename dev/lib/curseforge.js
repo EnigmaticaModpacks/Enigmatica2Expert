@@ -5,16 +5,17 @@
  * @link https://github.com/Krutoy242
  */
 
-//@ts-check
+// @ts-check
 
-import { getMod } from 'mc-curseforge-api'
-import { loadJson, loadText, saveObjAsJson, saveText } from './utils.js'
-import MarkdownIt from 'markdown-it'
+import { existsSync } from 'fs'
+import { fileURLToPath, URL } from 'url'
 
 import * as cheerio from 'cheerio'
-import { URL, fileURLToPath } from 'url'
-import { existsSync } from 'fs'
-import { execSync } from 'child_process'
+import MarkdownIt from 'markdown-it'
+import { getMod } from 'mc-curseforge-api'
+
+import { loadJson, loadText, saveObjAsJson, saveText } from './utils.js'
+
 function relative(relPath = './') {
   // @ts-ignore
   return fileURLToPath(new URL(relPath, import.meta.url))
@@ -46,7 +47,10 @@ export function fetchMod(modID, timeout = 24) {
    * @type {ModCached}
    */
   const cached = loadJson(cachePath)[modID]
-  if (cached && (Date.now() - cached.__lastUpdated) / (1000 * 60 * 60) < timeout) {
+  if (
+    cached &&
+    (Date.now() - cached.__lastUpdated) / (1000 * 60 * 60) < timeout
+  ) {
     const result = { ...cached }
     delete result.__lastUpdated
     // @ts-ignore
@@ -77,14 +81,16 @@ export function curseMarkdown(mdFilePath) {
   $('img')
     .not('img[width=50]')
     .each(function () {
+      // eslint-disable-next-line no-invalid-this
       $(this).replaceWith(
-        `<strong><span style="font-family: terminal, monaco, monospace;">[${$(this).attr('title')}]</span></strong>`
+        `<strong><span style="font-family: terminal, monaco, monospace;">[${$(
+          // eslint-disable-next-line no-invalid-this
+          this
+        ).attr('title')}]</span></strong>`
       )
     })
 
   $('img[width=50]').attr('width', '25')
-
-  // <strong><span style="font-family: terminal, monaco, monospace;">[Osmium Block]</span></strong>
 
   $('h1').before('<br/>').after('<br/>')
   $('h2').before('<br/><hr/>').after('<br/>')
@@ -92,6 +98,15 @@ export function curseMarkdown(mdFilePath) {
   $('h3').wrap('<span style="text-decoration: underline;">').contents().unwrap()
   // $('sub').contents().unwrap()
   $('sup').remove()
+
+  // <p><a href="https://github.com/Krutoy242/Enigmatica2Expert-Extended/releases">&lt; Full Changelog with better formatting on GitHub &gt;</a></p>
+
+  const pathToReleases =
+    'https://github.com/Krutoy242/Enigmatica2Expert-Extended/releases'
+  const link = $('<a></a>')
+    .attr('href', pathToReleases)
+    .append('< Full Changelog with better formatting on GitHub >')
+  $('body').prepend($('<p></p>').append(link))
 
   saveText($.html(), htmlPath)
   // execSync('npx prettier --write ' + htmlPath)
