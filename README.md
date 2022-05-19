@@ -29,7 +29,7 @@ See full list in [MODS.md](MODS.md)
 
   No item should disable bunch of other items.  
   Work towards crafting the powerful items, or use less powerful alternatives.  
-  *![](https://git.io/JOv9z "Angel Ring") The Angel Ring is harder to give way to all other flight options.*
+  *![](https://git.io/JOv9z "Angel Ring") The Angel Ring is harder to give way to all other flight options.*  
   *![](https://git.io/JOv92 "Terrasteel") Сan no longer be easily cheesed through the mob stripping farm..*
 
 - ### Less miners -> more manual mining + processing  
@@ -50,6 +50,12 @@ See full list in [MODS.md](MODS.md)
 
   Quests and recipes reveal unpopular "hidden" mechanics  
   *![](https://git.io/JtJMc "Book") More Quest chapters describing "forgotten" items*
+
+- ### Less Strict  
+
+  Tedious recipes and whole branches of mods **can be skipped** with alternate recipes.  
+  **Exploration is optional** - you can finish the modpack without even going into Twilight Forest.  
+  *![](https://is.gd/tWaivc "Gaia Spirit") You don't want to sweat killing the Gaia Guardian? Just skip it.*
 
 -----------------
 
@@ -102,6 +108,8 @@ If you play on a server on which have already made these changes, the client doe
 ## Developing strategy
 
 This is unofficial addon and not supported with **Enigmatica** dev team.
+
+Some of the changes from the `-Extended` version [[1]](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/1926)[[2]](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/1773)[[3]](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/1577) were added to the main modpack as well, so I became a [contributor](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/graphs/contributors).
 
 [Permission to develop and publish from **Enigmatica** owner.
 ](https://github.com/NillerMedDild/Enigmatica2Expert/blob/d80cc094a7fa1dc750071f8848a96e154c2d40f2/LICENSE.md "E2E License")
