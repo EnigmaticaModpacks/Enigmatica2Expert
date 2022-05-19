@@ -1,3 +1,5 @@
+[pool-2-thread-4/ERROR] [ModDirector/InstallController[CORE]]: Failed to query information for 307806:2820815 from Curse
+[pool-2-thread-1/ERROR] [ModDirector/InstallController[CORE]]: Failed to query information for 238891:3497269 from Curse
 [main/ERROR] [mixin]: Mixin config mixins.mixincompat.json does not specify "minVersion" property
 [main/WARN] [mixin]: Reference map 'mixins.mixincompat.refmap.json' for mixins.mixincompat.json could not be read. If this is a development environment you can ignore this message
 [main/ERROR] [mixin]: Classloader restrictions [PACKAGE_TRANSFORMER_EXCLUSION] encountered loading mixins.entityculling.json:MixinChunk, name: meldexun.entityculling.mixin.MixinChunk
@@ -12,18 +14,15 @@
 [main/ERROR] [mixin]: Classloader restrictions [PACKAGE_TRANSFORMER_EXCLUSION] encountered loading mixins.entityculling.json:MixinTileEntity, name: meldexun.entityculling.mixin.MixinTileEntity
 [main/ERROR] [mixin]: Classloader restrictions [PACKAGE_TRANSFORMER_EXCLUSION] encountered loading mixins.entityculling.json:MixinTileEntityRendererDispatcher, name: meldexun.entityculling.mixin.MixinTileEntityRendererDispatcher
 [main/ERROR] [mixin]: Classloader restrictions [PACKAGE_TRANSFORMER_EXCLUSION] encountered loading mixins.entityculling.json:MixinWorld, name: meldexun.entityculling.mixin.MixinWorld
-[main/WARN] [mixin]: @Mixin target net/minecraft/client/renderer/RenderGlobal$ContainerLocalRenderInformation is public in mixins.ondemand_sprites.json:ContainerLocalRenderInformationAccessor and should be specified in value
 [Client thread/WARN] [mixin]: Mixin apply failed mixins.thaumtweaks.json:blocks.SiphonMixin -> thaumcraft.common.tiles.crafting.TileVoidSiphon: org.spongepowered.asm.mixin.transformer.throwables.InvalidMixinException @Shadow method getStackInSlot in mixins.thaumtweaks.json:blocks.SiphonMixin was not located in the target class thaumcraft.common.tiles.crafting.TileVoidSiphon. Using refmap mixins.thaumtweaks.refmap.json
-[Client thread/INFO] [STDERR]: [org.spongepowered.asm.util.Locals:generateLocalVariableTable:396]: org.objectweb.asm.tree.analysis.AnalyzerException: Error at instruction 880: null
-[AE2 CSV Export/WARN] [AE2:C]: Could not export subtypes of: tile.architecturecraft.shape
 [Client thread/WARN] [ocsensors]: Could not find field 'careerId' in class 'net.minecraft.entity.passive.EntityVillager'! Exception=net.minecraftforge.fml.relauncher.ReflectionHelper$UnableToFindFieldException: java.lang.NoSuchFieldException: careerId
 [Client thread/WARN] [ocsensors]: Could not find field 'buyingList' in class 'net.minecraft.entity.passive.EntityVillager'! Exception=net.minecraftforge.fml.relauncher.ReflectionHelper$UnableToFindFieldException: java.lang.NoSuchFieldException: buyingList
-[Client thread/ERROR] [HadEnoughItems]: An interpreter is already registered for this item: exnihilocreatio.modules.tconstruct.tools.SledgeHammer@2d0f31ce
-[Client thread/ERROR] [HadEnoughItems]: An interpreter is already registered for this item: exnihilocreatio.modules.tconstruct.tools.TiCrook@6d8c8f65
+[Client thread/ERROR] [HadEnoughItems]: An interpreter is already registered for this item: exnihilocreatio.modules.tconstruct.tools.SledgeHammer@1db05a3d
+[Client thread/ERROR] [HadEnoughItems]: An interpreter is already registered for this item: exnihilocreatio.modules.tconstruct.tools.TiCrook@748a2096
 [Client thread/ERROR] [HadEnoughItems]: Recipe has no output. Extra Utilities 2 extrautils2:shortcut_hopper class com.rwtema.extrautils2.crafting.AlwaysLast$XUShapedRecipeAlwaysLast
+[Client thread/ERROR] [HadEnoughItems]: Failed to register mod plugin: class com.blakebr0.mysticalagriculture.compat.jei.CompatJEI
 [Client thread/ERROR] [HadEnoughItems]: A Recipe Handler has already been registered for 'jeresources.plant': jeresources.entry.PlantEntry
 [Client thread/ERROR] [HadEnoughItems]: A Recipe Handler has already been registered for 'jeresources.villager': jeresources.entry.VillagerEntry
-[Client thread/ERROR] [HadEnoughItems]: Failed to register mod plugin: class com.blakebr0.mysticalagriculture.compat.jei.CompatJEI
 [Client thread/ERROR] [HadEnoughItems]: A Recipe Handler has already been registered for this recipe class: com.github.alexthe666.rats.server.recipes.SharedRecipe
 [Client thread/ERROR] [HadEnoughItems]: A Recipe Handler has already been registered for this recipe class: com.github.alexthe666.rats.server.recipes.SharedRecipe
 [Client thread/ERROR] [HadEnoughItems]: A Recipe Handler has already been registered for this recipe class: com.github.alexthe666.iceandfire.recipe.DragonForgeRecipe
@@ -31,4 +30,4 @@
 [Client thread/WARN] [particleculling]: Could not find particle class org.orecruncher.dsurround.client.fx.particle.mote.ParticleCollection. If the mod is not installed, this can be ignored.
 [Client thread/WARN] [particleculling]: Could not find particle class com.TominoCZ.FBP.particle.FBPParticleBlock. If the mod is not installed, this can be ignored.
 [Client thread/WARN] [particleculling]: Could not find particle class xzeroair.trinkets.client.particles.ParticleGreed. If the mod is not installed, this can be ignored.
-[pool-14-thread-1/ERROR] [base]: java.io.FileNotFoundException: biomesoplenty:textures/items/gem.png
+[pool-12-thread-1/ERROR] [base]: java.io.FileNotFoundException: biomesoplenty:textures/items/gem.png

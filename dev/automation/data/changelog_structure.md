@@ -11,7 +11,7 @@
   🖉 New Recipes
   ✐ Cheaper
   ✎ Harder
-  ✏ Misc Changes
+  ✏ Misc Changes | Fixes
 
 🔵 Mods updates | Mods
   🟢 New Mods

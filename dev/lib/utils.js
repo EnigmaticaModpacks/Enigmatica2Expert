@@ -6,29 +6,31 @@
  * @link https://github.com/Krutoy242
  */
 
-//@ts-check
+// @ts-check
 
-/*=============================================
+/* =============================================
 =                Variables                    =
-=============================================*/
-import { statSync, readFileSync, writeFileSync, mkdirSync } from 'fs'
-import { basename, dirname } from 'path'
-import replace_in_file from 'replace-in-file'
-import del from 'del'
-import { parse as csvParseSync } from 'csv-parse/sync'
+============================================= */
 import { execSync } from 'child_process'
-import pdf from 'pdf-parse/lib/pdf-parse.js'
-import chalk from 'chalk'
+import { mkdirSync, readFileSync, statSync, writeFileSync } from 'fs'
+import { basename, dirname } from 'path'
+import { fileURLToPath, URL } from 'url'
 
-import { URL, fileURLToPath } from 'url'
+import chalk from 'chalk'
+import { parse as csvParseSync } from 'csv-parse/sync'
+import del from 'del'
+import fast_glob from 'fast-glob'
+import pdf from 'pdf-parse/lib/pdf-parse.js'
+import replace_in_file from 'replace-in-file'
+
 function relative(relPath = './') {
   // @ts-ignore
   return fileURLToPath(new URL(relPath, import.meta.url))
 }
 
-/*=============================================
+/* =============================================
 =            Internal Helpers                 =
-=============================================*/
+============================================= */
 
 /**
  * A function that result would be hashed based on input string
@@ -63,9 +65,9 @@ function createHashedFunction(fn) {
   return inner
 }
 
-/*=============================================
+/* =============================================
 =                   Helpers                   =
-=============================================*/
+============================================= */
 
 /**
  * Extract file name without extension
@@ -73,24 +75,19 @@ function createHashedFunction(fn) {
  *
  * @example subFileName('C:/main.js') // 'main'
  */
-export const subFileName = (filePath) =>
-  basename(filePath).split('.').slice(0, -1).join('.')
+export const subFileName = (filePath) => basename(filePath).split('.').slice(0, -1).join('.')
 
 /**
  * Load file from disk or from hash
  * @returns {string}
  */
-export const loadText = createHashedFunction((filename) =>
-  readFileSync(filename, 'utf8')
-)
+export const loadText = createHashedFunction((filename) => readFileSync(filename, 'utf8'))
 
 /**
  * Load JSON file from disk or from hash
  * @param {string} filename
  */
-export const loadJson = createHashedFunction((filename) =>
-  JSON.parse(loadText(filename))
-)
+export const loadJson = createHashedFunction((filename) => JSON.parse(loadText(filename)))
 
 /**
  * Load CSV file from disk or from hash
@@ -105,9 +102,7 @@ export const getCSV = createHashedFunction(
  * Load CSV file from disk or from hash
  * @param {string} filename
  */
-export const getPDF = createHashedFunction(
-  async (filename) => (await pdf(readFileSync(filename))).text
-)
+export const getPDF = createHashedFunction(async (filename) => (await pdf(readFileSync(filename))).text)
 
 export const config = createHashedFunction((filename) => {
   const cfg = loadText(filename)
@@ -115,26 +110,16 @@ export const config = createHashedFunction((filename) => {
     .replace(/^~.*$/gm, '') // config version
     .replace(/^ *(\w+|"[^"]+") *{ *$/gm, '$1:{') // class name
     .replace(/^ *} *$/gm, '},') // end of block
-    .replace(
-      /^ *\w:(?:([\w.]+)|"([^"]+)") *= *(.*)$/gm,
-      (match, p1, p2, p3) => {
-        return (isNaN(p3) && !(p3 === 'true' || p3 === 'false')) || p3 === ''
-          ? `"${p1 || p2}":"${p3.replace(/"/g, '\\"')}",`
-          : `"${p1 || p2}":${p3.replace(/"/g, '\\"')},`
-      }
-    ) // simple values
-    .replace(
-      /^ *\w:(?:([\w.]+)|"([^"]+)") *< *[\s\S\n\r]*?> *$/gm,
-      (match, p1, p2) => {
-        const lines = match.split('\n')
-        const content = lines.slice(1, lines.length - 1)
-        return [
-          `"${p1 || p2}"` + ': [',
-          ...content.map((l) => `"${l.trim()}",`),
-          '],',
-        ].join('\n')
-      }
-    ) // Replace lists
+    .replace(/^ *\w:(?:([\w.]+)|"([^"]+)") *= *(.*)$/gm, (match, p1, p2, p3) => {
+      return (isNaN(p3) && !(p3 === 'true' || p3 === 'false')) || p3 === ''
+        ? `"${p1 || p2}":"${p3.replace(/"/g, '\\"')}",`
+        : `"${p1 || p2}":${p3.replace(/"/g, '\\"')},`
+    }) // simple values
+    .replace(/^ *\w:(?:([\w.]+)|"([^"]+)") *< *[\s\S\n\r]*?> *$/gm, (match, p1, p2) => {
+      const lines = match.split('\n')
+      const content = lines.slice(1, lines.length - 1)
+      return [`"${p1 || p2}": [`, ...content.map((l) => `"${l.trim()}",`), '],'].join('\n')
+    }) // Replace lists
 
   /**
    * @type {Object}
@@ -145,10 +130,7 @@ export const config = createHashedFunction((filename) => {
   } catch (error) {
     console.log('Parsing config error. File: ', filename)
     console.error(error)
-    writeFileSync(
-      relative('_error_' + subFileName(filename) + '.js'),
-      'return{' + cfg.replace(/\n\n+/gm, '\n') + '}'
-    )
+    writeFileSync(relative('_error_' + subFileName(filename) + '.js'), 'return{' + cfg.replace(/\n\n+/gm, '\n') + '}')
   }
 
   return result
@@ -185,8 +167,8 @@ export function matchBetween(str, begin, end, regex) {
 }
 
 export function transpose(a) {
-  return Object.keys(a[0]).map(function (c) {
-    return a.map(function (r) {
+  return Object.keys(a[0]).map((c) => {
+    return a.map((r) => {
       return r[c]
     })
   })
@@ -196,10 +178,7 @@ export function injectInFile(filename, keyStart, keyFinish, text) {
   try {
     return replace_in_file.sync({
       files: filename,
-      from: new RegExp(
-        escapeRegex(keyStart) + '[\\s\\S\n\r]*?' + escapeRegex(keyFinish),
-        'm'
-      ),
+      from: new RegExp(escapeRegex(keyStart) + '[\\s\\S\n\r]*?' + escapeRegex(keyFinish), 'm'),
       to: keyStart + text + keyFinish,
       countMatches: true,
     })
@@ -280,9 +259,7 @@ export function setBlockDrops(block_stack, dropList, isSkipSaving = false) {
   } catch (error) {
     return []
   }
-  const entryIndex = arr.findIndex(
-    (o) => o.name === block_id && o.meta === block_meta
-  )
+  const entryIndex = arr.findIndex((o) => o.name === block_id && o.meta === block_meta)
 
   if (newObj)
     if (entryIndex !== -1) Object.assign(arr[entryIndex], newObj)
@@ -302,9 +279,7 @@ export function setBlockDrops(block_stack, dropList, isSkipSaving = false) {
  */
 export function setBlockDropsList(blockDropList) {
   let arr
-  blockDropList.forEach(
-    (o) => (arr = setBlockDrops(o.block_stack, o.dropList, true))
-  )
+  blockDropList.forEach((o) => (arr = setBlockDrops(o.block_stack, o.dropList, true)))
   return saveBlockDrops(arr)
 }
 
@@ -314,9 +289,7 @@ export function setBlockDropsList(blockDropList) {
 function saveBlockDrops(arr) {
   saveText(
     JSON.stringify(
-      arr.sort(({ name: a, meta: am }, { name: b, meta: bm }) =>
-        naturalSort(a + am, b + bm)
-      ),
+      arr.sort(({ name: a, meta: am }, { name: b, meta: bm }) => naturalSort(a + am, b + bm)),
       null,
       2
     ).replace(/^(\s+"\d+chance\d+": \d+)(,?)$/gm, '$1.0$2'),
@@ -408,8 +381,7 @@ export function renameDeep(obj, cb) {
  * @param {string} a
  * @param {string} b
  */
-export const naturalSort = (a, b) =>
-  a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' })
+export const naturalSort = (a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' })
 
 export function isPathHasChanged(pPath) {
   try {
@@ -440,8 +412,12 @@ export const defaultHelper = {
   /** @this {Helper} */
   begin: function (s, steps) {
     this.done()
-    // @ts-ignore
-    if (steps) (this.steps = steps), (this.stepSize = steps / 30)
+    if (steps) {
+      // @ts-ignore
+      this.steps = steps
+      // @ts-ignore
+      this.stepSize = steps / 30
+    }
     process.stdout.write(`◽ ${s.trim()}` + (steps ? ` [${steps}] ` : ''))
     this.isUnfinishedTask = true
   },
@@ -474,5 +450,11 @@ export const defaultHelper = {
 /**
  * @param {string} command
  */
-export const execSyncInherit = (command) =>
-  execSync(command, { stdio: 'inherit' })
+export const execSyncInherit = (command) => execSync(command, { stdio: 'inherit' })
+
+export function getModsJars() {
+  return fast_glob.sync(['mods/*.jar', 'mods/*.disabled'], {
+    ignore: ['mods/*-patched.jar', 'mods/*.jar.disabled'],
+    dot: true,
+  })
+}

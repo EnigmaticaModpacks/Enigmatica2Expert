@@ -8,54 +8,53 @@
  * @link https://github.com/Krutoy242
  */
 
-//@ts-check
+// @ts-check
 /* eslint-disable no-unused-vars */
 
-import { xml2js, js2xml } from 'xml-js'
 import glob from 'glob'
-import _ from 'lodash'
-import { table, getBorderCharacters } from 'table'
 import humanizeString from 'humanize-string'
+import _ from 'lodash'
+import { getBorderCharacters, table } from 'table'
+import { js2xml, xml2js } from 'xml-js'
 
 import {
-  injectInFile,
-  config,
-  naturalSort,
-  getCSV,
-  loadText,
-  saveText,
-  getPDF,
-  loadJson,
-  setBlockDrops,
-  defaultHelper,
-} from '../lib/utils.js'
-
-import {
-  isODExist,
+  countBaseOutput,
+  getByOredict,
+  getByOredict_first,
+  getByOreKind,
+  getCrtLogBlock,
+  getFurnaceRecipes,
+  getItemOredictSet,
+  getOreBases_byKinds,
+  getSomething,
+  getSubMetas,
+  getUnchangedFurnaceRecipes,
   isItemExist,
   isJEIBlacklisted,
-  getItemOredictSet,
-  getSubMetas,
-  getByOredict,
-  getByOreKind,
-  getByOredict_first,
+  isODExist,
+  isPurged,
   prefferedModSort,
-  getFurnaceRecipes,
-  getUnchangedFurnaceRecipes,
   smelt,
   smeltOre,
-  getSomething,
-  countBaseOutput,
-  getCrtLogBlock,
-  isPurged,
-  getOreBases_byKinds,
 } from '../lib/tellme.js'
+import {
+  config,
+  defaultHelper,
+  getCSV,
+  getPDF,
+  injectInFile,
+  loadJson,
+  loadText,
+  naturalSort,
+  saveText,
+  setBlockDrops,
+} from '../lib/utils.js'
 
 function saveObjAsJson(obj, filename) {
   saveText(JSON.stringify(obj, null, 2), filename)
 }
 
-/** @typedef {import("xml-js").Element} XMLElement*/
+/** @typedef {import("xml-js").Element} XMLElement */
 /** @param {string} xmlString */
 function xml_to_js(xmlString) {
   return /** @type {XMLElement} */ (xml2js(xmlString, { compact: false }))
@@ -64,11 +63,15 @@ function xml_to_js(xmlString) {
 const reverseStr = (s) => [...s].reverse().join('')
 const reverseNaturalSort = (a, b) => naturalSort(reverseStr(a), reverseStr(b))
 
-const itemize = (id, meta) => id + (meta != 0 ? ':' + meta : '')
+/**
+ * @param {string} id
+ * @param {string} meta
+ */
+const itemize = (id, meta) => id + (meta !== '0' ? ':' + meta : '')
 const $ = (source, id, meta, count, nbt, modifiers) => {
-  return `<${source}:${id}${meta && meta != '0' ? ':' + meta : ''}>${nbt ? '.withTag(' + nbt + ')' : ''}${
+  return `<${source}:${id}${meta && meta !== '0' ? ':' + meta : ''}>${nbt ? '.withTag(' + nbt + ')' : ''}${
     modifiers || ''
-  }${parseInt(count) > 1 ? ' * ' + (count | 0) : ''}`
+  }${Number(count) > 1 ? ' * ' + (count | 0) : ''}`
 }
 
 const flatTable = (arr) =>
@@ -105,7 +108,7 @@ export async function init(h = defaultHelper) {
       occurences.push({
         filePath: filePath,
         capture: whole,
-        command: p1 == '{' && p2 == '}' ? '(()=>' + whole.trim() + ')()' : whole.trim(),
+        command: p1 === '{' && p2 === '}' ? '(()=>' + whole.trim() + ')()' : whole.trim(),
         line: lineNumber,
         below: zsfileContent.substring(match.index + match[0].length),
       })
@@ -123,6 +126,7 @@ export async function init(h = defaultHelper) {
     } else {
       try {
         const evalStr = `(async()=>{return ${cmd.command}})()`
+        // eslint-disable-next-line no-eval
         injectValue ||= await eval(evalStr)
       } catch (error) {
         return h.error(
@@ -137,7 +141,8 @@ export async function init(h = defaultHelper) {
 
     const injectString = formatOutput(injectValue)
 
-    if (injectString == null) {
+    // eslint-disable-next-line eqeqeq
+    if (injectString == undefined) {
       h.warn(cmd.filePath + ':' + cmd.line + ' Returned empty result!')
     } else {
       const replaceResults = injectInFile(cmd.filePath, cmd.capture, '/**/', '*/\n' + injectString + '\n')

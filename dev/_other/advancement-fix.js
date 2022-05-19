@@ -5,15 +5,17 @@
  * @link https://github.com/Krutoy242
  */
 
-//@ts-check
+// @ts-check
 
-import zipLocal from 'zip-local'
-import { defaultHelper, loadText, saveObjAsJson } from '../lib/utils.js'
-import fast_glob from 'fast-glob'
-import { join } from 'path'
-import { getRemovedRecipes } from '../lib/tellme.js'
-import yargs from 'yargs'
 import { rename, unlink } from 'fs/promises'
+import { join } from 'path'
+
+import fast_glob from 'fast-glob'
+import yargs from 'yargs'
+import zipLocal from 'zip-local'
+
+import { getRemovedRecipes } from '../lib/tellme.js'
+import { defaultHelper, getModsJars, loadText, saveObjAsJson } from '../lib/utils.js'
 
 const { argv } = yargs(process.argv.slice(2)).option('remove', {
   alias: 'r',
@@ -32,15 +34,16 @@ const { sync: globs } = fast_glob
  */
 
 export async function init(h = defaultHelper) {
-  if (argv['remove']) return await removePatchedFiles(), h.result('Patched files removed')
+  if (argv['remove']) {
+    await removePatchedFiles()
+    h.result('Patched files removed')
+    return
+  }
 
   await h.begin('Loading & parsing debug.log')
   const erroring = getErroring()
 
-  const jarsToInspect = globs(['mods/*.jar', 'mods/*.disabled'], {
-    ignore: ['mods/*-patched.jar', 'mods/*.jar.disabled'],
-    dot: true,
-  })
+  const jarsToInspect = getModsJars()
   await h.begin('Found .JARs', jarsToInspect.length)
 
   const store = await Promise.all(
@@ -130,7 +133,7 @@ function getErroring() {
  */
 function getJarAdvancements(jarPath) {
   return new Promise((resolve, reject) => {
-    zipLocal.unzip(jarPath, function (error, unzipped) {
+    zipLocal.unzip(jarPath, (error, unzipped) => {
       if (error) reject(error)
 
       const unzippedfs = unzipped.memory()
@@ -199,7 +202,7 @@ const mutateList = [
 
     // This advancement has only recipes as rewards
     // Remove rewards completely
-    if ((hasErroringRecipe && Object.keys(advcnmt.rewards).length == 1) || filtered.length <= 0) {
+    if ((hasErroringRecipe && Object.keys(advcnmt.rewards).length === 1) || filtered.length <= 0) {
       delete advcnmt.rewards
       return true
     }
@@ -216,7 +219,7 @@ const mutateList = [
       deleted = true
     }
 
-    if (Object.keys(advcnmt.criteria).length == 0) {
+    if (Object.keys(advcnmt.criteria).length === 0) {
       // No criteria left, warn
       console.log('no criteria for :>> ', advcnmt)
     }

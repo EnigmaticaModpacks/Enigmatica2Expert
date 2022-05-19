@@ -82,34 +82,14 @@ Liquids that should have more uses:
 
 ## TODO
 
-- [ ] ✏️ Add New conglomerate to explode with nuke and get Chaos Shards
-- [ ] ✏️ Make Gaia fight non-mandatory
-- [ ] ✏️ Fix turtle uncraftable
-- [ ] ✏️ Fix potion of bad luck uncraftable
-- [ ] ✏️ Add Greater Crimson Portal craft
-- [ ] ✏️ Scribing tools add durab
-- [ ] ✏️ Mob slaughter remove change iridium plate
-- [ ] ✏️ Laser etcher fix cheap resources
-- [ ] ✏️ Flux Sponge add recipe
-- [ ] ✏️ Add Twilight progression for peaceful
-- [ ] ✏️ Add Aluminium brass in the alloy furnace
-- [ ] ✏️ Magical Snow Globe add usage
-- [ ] 🔄 Add damage for Liquid Death
+- [ ] ✏️ Fix main Vis Crystals doubled in JEI
+- [ ] ✏️ Infinity reagent cheaper
+- [ ] 📀 AdvRocketry break 100k rf/t limit
+- [ ] 📀 Actually Additions increase consumption of piedestals
 - [ ] 🔄 Check why mobs are not spawned anough (less then 70 for whole server)
 - [ ] 🔄 Check render distance on server
-- [ ] 🔄 Remind about BQ migrate command
-- [ ] 🔄 Remove Triumph achievment
-- [ ] 🔄 Colossal Chests bigger interface
-- [ ] 🔄 Add to readme: 1. Mention im E2E contributor 2. Tell that E2EE is less strict than E2E
-- [ ] 🔄 Forbid exploding in chunks, but claim only few chunks
-- [ ] 🔄 Add new Pech trades and add them in JEI
-- [ ] 🔄 Warn about power tier in tooltip
 - [ ] 🚧 Update screenshots on CF
-- [ ] 📖 Add inventory 🎂 second consume info
-- [ ] 📖 Add Vanilla Beacon quest
-- [ ] 📖 Move Ball Of Fur to Animals
-- [ ] 📖 Target Dummy add to loot
-- [ ] 📖 **AE2 Network Visualiser** add to book
+- [ ] 📖 Add Rustic's Apple Trees
 - [ ] 🚧 Add modpack automation:
     1. `make_pack.js`
     2. Create CF release
@@ -124,6 +104,13 @@ Liquids that should have more uses:
 
 ## Long-Term
 
+- [ ] 🔄 Forbid exploding in chunks, but claim only few chunks
+- [ ] 🔄 Colossal Chests bigger interface via Bansoukou
+- [ ] ✏️ Magical Snow Globe add usage
+- [ ] ✏️ Add Flux Sponge recipe
+- [ ] ✏️ Add Greater Crimson Portal craft
+- [ ] ✏️ Add New conglomerate to explode with nuke and get Chaos Shards
+- [ ] ✏️ Make Gaia fight non-mandatory
 - [ ] ✏️ x10 Speed up rats
 - [ ] ✏️ Drop items onto garbage piles to make pile bigger
 - [ ] ✏️ Transfer liquid interaction to Witch Water
@@ -205,8 +192,23 @@ Liquids that should have more uses:
 
 ---
 
+## Challenges ideas
+
+- No AE2
+  > You cant use AE2 terminal or such
+  > But you get ???
+- No EnderIO Conduits
+  > Not using conduits
+  > But ???
+
+
+---
+
+---
+
 ## Unable to
 
+- ✏️ Add Rubber Wood in Resin Funnel - **Resin Funnel** recipes cant be changed
 - ✏️ Fix JEI flux drop in lava tab. This JEI page added with JETIF, that has no configs.
 - 🔄 Blacklist Bedrock Ore for ![](https://git.io/Jz9q9 "Mining Laser")
 - Buff Giant Sword
