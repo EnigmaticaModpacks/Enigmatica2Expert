@@ -12,7 +12,7 @@ anaglyph3d:false
 maxFps:260
 fboEnable:true
 difficulty:2
-fancyGraphics:false
+fancyGraphics:true
 ao:2
 renderClouds:fast
 resourcePacks:["Better Gendustry v1.0.zip"]

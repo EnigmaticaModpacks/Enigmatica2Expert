@@ -38,7 +38,7 @@ ofStars:true
 ofSunMoon:true
 ofVignette:2
 ofChunkUpdates:1
-ofChunkUpdatesDynamic:false
+ofChunkUpdatesDynamic:true
 ofTime:0
 ofClearWater:false
 ofAaLevel:0
@@ -57,7 +57,7 @@ ofNaturalTextures:false
 ofEmissiveTextures:true
 ofLazyChunkLoading:true
 ofRenderRegions:false
-ofSmartAnimations:false
+ofSmartAnimations:true
 ofDynamicFov:true
 ofAlternateBlocks:true
 ofDynamicLights:3
