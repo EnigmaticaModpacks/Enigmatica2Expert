@@ -1,85 +1,147 @@
 MINER:
 	1:
-	thaumcraft:cluster:0 //iron
-	thaumcraft:cluster:1 //gold
-	thaumcraft:cluster:2 //copper
-	thaumcraft:cluster:3 //tin
-	thaumcraft:cluster:4 //silver
-	thaumcraft:cluster:5 //lead
-	thaumcraft:cluster:6 //cinnabar
-	thaumcraft:cluster:7 //quartz
+	extrautils2:compressedcobblestone:2 // Triple Compressed Cobblestone
+	jaopca:item_clustertungsten // Native Tungsten Cluster
+	thaumcraft:cluster:4 // Native Silver Cluster
+	jaopca:item_clusterdraconium // Native Draconium Cluster
+	jaopca:item_clustertitanium // Native Titanium Cluster
+	jaopca:item_clusterruby // Native Ruby Cluster
 	2:
-	thaumcraft:sapling_greatwood
-	thaumcraft:thaumium_pick
-	thaumcraft:thaumium_axe
-	thaumcraft:thaumium_hoe
-	minecraft:compass
+	extrautils2:compresseddirt:2 // Triple Compressed Dirt
+	jaopca:item_clusteriridium // Native Iridium Cluster
+	jaopca:item_clusterastralstarmetal // Native Astral Starmetal Cluster
+	thaumcraft:thaumium_pick // Thaumium Pickaxe
+	thaumcraft:thaumium_shovel // Thaumium Shovel
+	thaumcraft:thaumium_axe // Thaumium Axe
 	3:
-	minecraft:blaze_rod
+	extrautils2:compressednetherrack:2 // Triple Compressed Netherrack
+	jaopca:item_clustermithril // Native Mithril Cluster
+	jaopca:item_clustertanzanite // Native Tanzanite Cluster
+	astralsorcery:blockcelestialcrystals:4 // Celestial Crystal Cluster
+	thaumcraft:turret:2 // Arcane Bore
+	twilightforest:ore_magnet // Ore Magnet
 	4:
-	thaumcraft:sapling_silverwood
+	astralsorcery:blockcustomore // Rock Crystal Ore
+	thaumicwonders:transmuter_stone // Transmuter's Stone
+	twilightforest:twilight_sapling:7 // Miner's Tree Sapling
+	cyclicmagic:storage_bag // Storage Bag
+	thaumcraft:elemental_pick {infench:[{lvl:1s,id:4s},{lvl:2s,id:3s}]} // Pickaxe of the Core
+	actuallyadditions:quartz_paxel // Black Quartz AIOT
 	5:
-	minecraft:totem_of_undying
+	bloodmagic:demon_crystal // Demon Will Crystal Cluster
+	thaumicwonders:eldritch_cluster:4 // Eldritch Silver Cluster
+	thaumicwonders:eldritch_cluster:6 // Eldritch Cinnabar Cluster
+	astralsorcery:blockgemcrystals:2 // Gem Crystal Cluster
+	astralsorcery:blockgemcrystals:3 // Gem Crystal Cluster
+	astralsorcery:blockgemcrystals:4 // Gem Crystal Cluster
 MAGE:
 	1:
-	thaumcraft:crystal_essence {Aspects:[{amount:1,key:"aer"}]}
-	thaumcraft:crystal_essence {Aspects:[{amount:1,key:"terra"}]}
-	thaumcraft:crystal_essence {Aspects:[{amount:1,key:"ignis"}]}
-	thaumcraft:crystal_essence {Aspects:[{amount:1,key:"aqua"}]}
-	thaumcraft:crystal_essence {Aspects:[{amount:1,key:"perditio"}]}
-	thaumcraft:crystal_essence {Aspects:[{amount:1,key:"ordo"}]}
+	thaumcraft:phial:1 {Aspects: [{amount: 10, key: "aer"}]} // Phial of Aer Essentia
+	thaumcraft:phial:1 {Aspects: [{amount: 10, key: "terra"}]} // Phial of Terra Essentia
+	thaumcraft:phial:1 {Aspects: [{amount: 10, key: "ignis"}]} // Phial of Ignis Essentia
+	thaumcraft:phial:1 {Aspects: [{amount: 10, key: "aqua"}]} // Phial of Aqua Essentia
+	thaumcraft:phial:1 {Aspects: [{amount: 10, key: "perditio"}]} // Phial of Perditio Essentia
+	thaumcraft:phial:1 {Aspects: [{amount: 10, key: "ordo"}]} // Phial of Ordo Essentia
 	2:
-	minecraft:potion {Potion:"minecraft:regeneration"} //vanilla TC uses 1.8 metadata numbers, resulting in "uncraftable potions"
-	minecraft:potion {Potion:"minecraft:healing"}
-	thaumcraft:crystal_essence {Aspects:[{amount:1,key:"vitium"}]}
-	thaumcraft:crystal_essence {Aspects:[{amount:1,key:"auram"}]}
-	thaumcraft:cloth_chest
-	thaumcraft:cloth_legs
-	thaumcraft:cloth_boots
+	thaumcraft:cloth_chest // Thaumaturge's Robe
+	thaumcraft:cloth_legs // Thaumaturge's Leggings
+	thaumcraft:cloth_boots // Thaumaturge's Boots
+	thaumcraft:thaumometer // Thaumometer
+	darkutils:charm_null // Null Charm
+	darkutils:charm_portal // Portal Charm
 	3:
+	thaumcraft:goggles // Goggles of Revealing
+	thaumcraft:baubles:3 // Apprentice's Ring
+	conarm:travel_soul // Traveller's Goggles (Soul Sight)
+	cyclicmagic:charm_antidote // Antidote Charm
+	cyclicmagic:charm_boat // Sailor Charm
+	cyclicmagic:charm_fire // Fire Charm
 	4:
-	thaumcraft:amulet_vis:0
+	thaumcraft:lamp_arcane // Arcane Lamp
+	twilightforest:charm_of_life_2 // Charm of Life II
+	twilightforest:charm_of_keeping_3 // Charm of Keeping III
+	iceandfire:pixie_dust // Pixie Dust
+	extrautils2:ingredients:12 // Enchanted Ingot
+	thaumicwonders:panacea:1 // Enchanted Panacea
 	5:
-	thaumcraft:pech_wand
+	thaumcraft:pech_wand // Pech Wand
+	thaumcraft:amulet_vis // Vis Stone
+	thaumcraft:charm_undying // Charm of Undying
+	botania:overgrowthseed // Overgrowth Seed
+	randomthings:beans:2 // Magic Bean
+	mysticalagriculture:growth_accelerator // Growth Accelerator
 ARCHER:
 	1:
-	thaumcraft:candle_white
-	thaumcraft:candle_orange
-	thaumcraft:candle_magenta
-	thaumcraft:candle_lightblue
-	thaumcraft:candle_yellow
-	thaumcraft:candle_lime
-	thaumcraft:candle_pink
-	thaumcraft:candle_gray
-	thaumcraft:candle_silver
-	thaumcraft:candle_cyan
-	thaumcraft:candle_purple
-	thaumcraft:candle_blue
-	thaumcraft:candle_brown
-	thaumcraft:candle_green
-	thaumcraft:candle_red
-	thaumcraft:candle_black
+	forestry:hunter_bag // Hunting Backpack
+	cyclicmagic:water_candle // Water Candle
+	rats:rat_arrow // Rat on Arrow
+	forestry:hunter_bag_t2 // Woven Hunting Backpack
+	thaumcraft:candle_white // White Tallow Candle
+	cyclicmagic:sleeping_mat // Sleeping Mat
 	2:
-	minecraft:enchanted_book {StoredEnchantments:[{lvl: 1s, id: 50s}]} //Flame
-	minecraft:enchanted_book {StoredEnchantments:[{lvl: 3s, id: 48s}]} //Powers
+	cyclicmagic:sack_ender // Ender Sack
+	rustic:silver_lantern // Silver Lantern
+	cyclicmagic:glove_climb // Climbing Gloves
+	cyclicmagic:wand_missile // Spirit Seeker
+	minecraft:enchanted_book {StoredEnchantments: [{lvl: 1s, id: 51}]} // Enchanted Book
+	minecraft:enchanted_book {StoredEnchantments: [{lvl: 1s, id: 78}]} // Enchanted Book
 	3:
-	minecraft:dragon_breath
+	tconstruct:bow_string {Material: "soularium"} // Souled Bowstring
+	tconstruct:bow_limb {Material: "ghostwood"} // Ghostwood Bowlimb
+	tconstruct:bow_limb {Material: "ionite"} // Ionite Bowlimb
+	cyclicmagic:ender_lightning // Engraved Thunder
+	tconstruct:bow_string {Material: "fluxed_string"} // Fluxed Bowstring
+	endreborn:item_ender_string // String of Life
 	4:
-	minecraft:ghast_tear
-	thaumcraft:baubles:3 //Apprentice Ring
+	conarm:travel_sack // Traveller's Knapsack
+	tconstruct:bow_string {Material: "spectre_string"} // Spectre String Bowstring
+	tconstruct:bow_limb {Material: "aethium"} // Aethium Bowlimb
+	tconstruct:bow_limb {Material: "gelid_gem"} // Gelid Gem Bowlimb
+	cyclicmagic:wand_hypno // Chaos Reaper
+	minecraft:enchanted_book {StoredEnchantments: [{lvl: 1s, id: 70}]} // Enchanted Book
 	5:
-	minecraft:enchanted_book {StoredEnchantments:[{lvl: 1s, id: 51s}]} //Infinity
-	minecraft:enchanted_book {StoredEnchantments:[{lvl: 5s, id: 48s}]} //Power
+	minecraft:dragon_breath // Dragon's Breath
+	cyclicmagic:storage_bag // Storage Bag
+	thaumicwonders:bone_bow // Bow of Bone
+	minecraft:enchanted_book {StoredEnchantments: [{lvl: 10s, id: 48}]} // Enchanted Book
+	minecraft:enchanted_book {StoredEnchantments: [{lvl: 4s, id: 49}]} // Enchanted Book
+	minecraft:enchanted_book {StoredEnchantments: [{lvl: 6s, id: 65}]} // Enchanted Book
 COMMON:
+	1:
+	mysticalagriculture:inferium_apple 2 // Inferium Apple
+	extrautils2:magicapple 4 // Magical Apple
+	thaumcraft:curio:1 4 // Preserved Curiosity
+	rustic:fluid_bottle {Fluid: {FluidName: "ironwine", Amount: 1000, Tag: {Quality: 1.0f}}} // Bottle of Iron Wine
+	rustic:fluid_bottle {Fluid: {FluidName: "wine", Amount: 1000, Tag: {Quality: 1.0f}}} // Bottle of Wine
+	rustic:fluid_bottle {Fluid: {FluidName: "mead", Amount: 1000, Tag: {Quality: 1.0f}}} // Bottle of Mead
+	2:
+	mysticalagriculture:prudentium_apple // Prudentium Apple
+	bhc:relic_apple 4 // Relic Apple
+	thaumcraft:curio:5 4 // Twisted Curiosity
+	scalingfeast:exhaustingapple 5 // Exhausting Apple
+	cyclicmagic:apple // Apple Sprout
+	thaumcraft:lamp_arcane // Arcane Lamp
 	3:
-	minecraft:experience_bottle 5
-	minecraft:golden_apple:0 2
-	thaumcraft:curio:4
+	mysticalagriculture:intermedium_apple // Intermedium Apple
+	minecraft:golden_apple 4 // Golden Apple
+	thaumcraft:curio 4 // Arcane Curiosity
+	thaumcraft:curio:2 4 // Ancient Curiosity
+	thaumadditions:dawn_totem // Totem of Dawn
+	thaumadditions:twilight_totem // Twilight Totem
 	4:
-	thaumcraft:curio:4 3
+	mysticalagriculture:superium_apple // Superium Apple
+	minecraft:golden_apple:1 // Golden Apple
+	thaumcraft:curio:4 5 // Illuminating Curiosity
+	thaumcraft:sanity_soap // Sanitizing Soap
+	thaumcraft:mechanism_complex // Complex Arcane Mechanism
+	bloodmagic:soul_snare // Rudimentary Snare
 	5:
-	minecraft:golden_apple:1
-	thaumcraft:curio:4 5
+	mysticalagriculture:supremium_apple // Supremium Apple
+	scalingfeast:enchantedironapple // Iron Apple
+	thaumcraft:curio:3 6 // Eldritch Curiosity
+	thaumadditions:zeith_fur 3 // Blue Wolf Fur
+	minecraft:totem_of_undying 3 // Totem of Undying
+	thaumadditions:jar_eldritch // Void Reinforced Jar
 
 #parsing ends with a line starting with #, everything below is a comment. 
 The format of this file is quite obvious, <item> [tag] [weight]. I just want to specify that 
