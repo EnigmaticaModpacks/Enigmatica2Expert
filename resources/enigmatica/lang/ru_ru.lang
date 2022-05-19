@@ -120,6 +120,7 @@ tooltips.lang.thaum.eldritch=Элдрич
 tooltips.lang.thaum.arcane=Чародейское вливание
 tooltips.lang.thaum.artifice=Artifice
 
+tooltips.lang.power_tier_5=§cУровень мощности 5, §4любой IC2 кабель взорвется
 tooltips.lang.fluid.corium=§a Можно получить путем плавления реактора деления
 tooltips.lang.vanilla_tools=§4Ванильные инструменты не работают. Используйте инструменты Tinkers' Construct
 tooltips.lang.ae_lag=§cНе помещайте это в систему хранения AE, иначе это вызовет лаги.
@@ -201,6 +202,7 @@ requious.jei.recipe.mineralis=Минералис Ритуал
 requious.jei.recipe.neromantic_prime=Неромантик Прайм
 requious.jei.recipe.nether_portal_spread=Распространение портала
 requious.jei.recipe.oc_printer3d=3Д Принтер
+requious.jei.recipe.pech_trades=Торговля ПеКа
 requious.jei.recipe.petro_petunia=Петро Петуния
 requious.jei.recipe.scented_hive=Ароматный улей
 requious.jei.recipe.special_craft=Замысловатый Крафт

@@ -120,6 +120,7 @@ tooltips.lang.thaum.eldritch=Eldritch
 tooltips.lang.thaum.arcane=Arcane Infusion
 tooltips.lang.thaum.artifice=Artifice
 
+tooltips.lang.power_tier_5=§cPower Tier 5, §4any IC2 cable explode
 tooltips.lang.fluid.corium=§aObtainable by melting down a Fission Reactor
 tooltips.lang.vanilla_tools=§4Vanilla tools don't work. Use Tinkers' Construct tools
 tooltips.lang.ae_lag=§cDo not put this into AE storage system or it will cause lag.
@@ -201,6 +202,7 @@ requious.jei.recipe.mineralis=Mineralis Ritual
 requious.jei.recipe.neromantic_prime=Neromantic Prime
 requious.jei.recipe.nether_portal_spread=Nether Portal Spread
 requious.jei.recipe.oc_printer3d=3D Printer
+requious.jei.recipe.pech_trades=Pech Trades
 requious.jei.recipe.petro_petunia=Petro Petunia
 requious.jei.recipe.scented_hive=Scented Hive
 requious.jei.recipe.special_craft=Special Craft

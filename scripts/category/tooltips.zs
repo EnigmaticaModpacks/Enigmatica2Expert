@@ -33,6 +33,7 @@ for item in [
   <botania:odinring>,
   <botania:thorring>,
   <computercraft:printout>,
+  <cyclicmagic:inventory_food>,
   <farmingforblockheads:feeding_trough>,
   <ic2:quantum_chestplate>,
   <ic2:te:48>,
@@ -402,7 +403,11 @@ for lang, items in {
 		<danknull:dank_null_4>,
 		<danknull:dank_null_5>,
 		<danknull:dank_null_6>,
-	], 
+	],
+	power_tier_5: [
+		<ic2:te:24>,
+		<ic2:te:22>,
+	]
 } as IItemStack[][string] {
 	for item in items {
 		desc.jei(item, lang);
