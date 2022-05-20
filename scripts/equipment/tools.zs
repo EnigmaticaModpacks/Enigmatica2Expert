@@ -138,7 +138,7 @@ for tool in toolsToNerf {
 	val woodMat = Toolforge.getMaterialFromID("wood");
 	if(isNull(woodMat)) continue;
 
-	val toolTcon = Toolforge.buildTool(tconDef.definition, [Toolforge.getMaterialFromID(matTcon), woodMat, woodMat]);
+	val toolTcon = Toolforge.buildTool(tconDef.definition, [woodMat, Toolforge.getMaterialFromID(matTcon), woodMat]);
 	if(isNull(toolTcon)) continue;
 
 	recipes.addShapeless('convert_'~tool.definition.id, toolTcon, [tool]);
