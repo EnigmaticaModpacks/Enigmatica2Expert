@@ -36,8 +36,8 @@ mods.immersivetechnology.ElectrolyticCrucibleBattery.addRecipe(
 mods.nuclearcraft.electrolyser.removeRecipeWithInput([<liquid:naoh> * 666]);
 mods.mekanism.separator.removeRecipe(<liquid:brine>);
 mods.immersivetechnology.ElectrolyticCrucibleBattery.addRecipe(
-  <liquid:liquidchlorine> * 100, <liquid:liquidsodium> * 100, null,
-  null, <liquid:brine> * 1000, 60000, 100
+  <liquid:liquidchlorine> * 500, <liquid:liquidsodium> * 500, null,
+  null, <liquid:brine> * 2000, 60000, 60
 );
 
 FluidDictionary.add("brine", "moltensalt", 6.6);
