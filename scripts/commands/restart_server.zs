@@ -33,7 +33,7 @@ function stopWithDelay() as void {
 
   addDelayWork(function() {
     // send('stopping');
-    server.commandManager.executeCommand(server, '/say '~game.localize("commands.restart_server.stopping"));
+    server.commandManager.executeCommand(server, '/say §8[§6ø§8]§r §4Server stopping by vote...');
     server.commandManager.executeCommand(server, '/stop');
   }, 60);
 }
