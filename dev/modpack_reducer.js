@@ -5,14 +5,16 @@
  * @link https://github.com/Krutoy242
  */
 
-//@ts-check
+// @ts-check
+
+import { renameSync } from 'fs'
+
+import chalk from 'chalk'
+import escapeGlob from 'glob-escape'
+import _ from 'lodash'
+import terminal_kit from 'terminal-kit'
 
 import { globs } from './lib/utils.js'
-import { renameSync } from 'fs'
-import _ from 'lodash'
-import escapeGlob from 'glob-escape'
-import chalk from 'chalk'
-import terminal_kit from 'terminal-kit'
 const { terminal: term } = terminal_kit
 
 const getMods = (s, isDisabled = false) =>
@@ -204,11 +206,11 @@ addReduceLevel(
   'Maximum Speedup',
   'Items and blocks would be removed\nQuest Rewards and Requirments would be replaced to placeholders\nLoot Boxes would output placeholders',
   `
+Fluid Craft for AE2-
 cloche-profit-peripheral-
 Xtones-
 NotEnoughEnergistics-
 thaumtweaks-
-_bansoukou-
 TS2K16-
 thaumicwonders-
 ping-
@@ -356,6 +358,9 @@ angermanagement-
 JustSleep-
 supersoundmuffler-revived_
 ModularController-
+engineersdecor-
+MmmMmmMmmMmm-
+ThaumcraftResearchPatcher-
 `
 )
 
@@ -374,8 +379,8 @@ loliasm-
 AIReducer-
 oauth-
 journeymap-
-Mantle-
 StorageDrawers-
+Mantle-
 TConstruct-
 Chisel-
 ironchest-
@@ -617,6 +622,15 @@ plustic-
 tconevo-
 TinkersComplement-
 TinkerToolLeveling-
+AE-Net-Vis-Tool-
+baubley-heart-canisters-
+FTBQuests-
+give-me-back-my-hp-
+ItemFilters-
+JEIExporter-
+ocsensors-
+tinkersjei-
+tmel-
 `
 )
 
@@ -624,7 +638,9 @@ addReduceLevel(
   'Remove Everything',
   'Every single mod disabled. But what for?',
   `
+_bansoukou-
 [___MixinCompat-
+!mixinbooter-
 *mixinbooter-
 _MixinBootstrap-
 OptiFine_
@@ -661,7 +677,7 @@ const unregMods = _.difference(allEnabledMods, _.uniq(registeredMods)).map(
 
 if (unregMods.length) {
   console.log('This mods unregistered in lists. Add them first :>> ', unregMods)
-  exit()
+  // exit()
 }
 
 init()

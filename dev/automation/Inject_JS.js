@@ -69,9 +69,9 @@ const reverseNaturalSort = (a, b) => naturalSort(reverseStr(a), reverseStr(b))
  */
 const itemize = (id, meta) => id + (meta !== '0' ? ':' + meta : '')
 const $ = (source, id, meta, count, nbt, modifiers) => {
-  return `<${source}:${id}${meta && meta !== '0' ? ':' + meta : ''}>${nbt ? '.withTag(' + nbt + ')' : ''}${
-    modifiers || ''
-  }${Number(count) > 1 ? ' * ' + (count | 0) : ''}`
+  return `<${source}:${id}${meta && meta !== '0' ? ':' + meta : ''}>${
+    nbt ? '.withTag(' + nbt + ')' : ''
+  }${modifiers || ''}${Number(count) > 1 ? ' * ' + (count | 0) : ''}`
 }
 
 const flatTable = (arr) =>
@@ -102,13 +102,20 @@ export async function init(h = defaultHelper) {
   await h.begin('Searching Inject_js blocks in .zs files')
   glob.sync('scripts/**/*.zs').forEach((filePath) => {
     const zsfileContent = loadText(filePath)
-    for (const match of zsfileContent.matchAll(/\/\*\s*Inject_js((\(|\{)[\s\S\n\r]*?(\)|\}))\*\//gm)) {
-      const lineNumber = zsfileContent.substring(0, match.index).split('\n').length
+    for (const match of zsfileContent.matchAll(
+      /\/\*\s*Inject_js((\(|\{)[\s\S\n\r]*?(\)|\}))\*\//gm
+    )) {
+      const lineNumber = zsfileContent
+        .substring(0, match.index)
+        .split('\n').length
       const [, whole, p1, p2] = match
       occurences.push({
         filePath: filePath,
         capture: whole,
-        command: p1 === '{' && p2 === '}' ? '(()=>' + whole.trim() + ')()' : whole.trim(),
+        command:
+          p1 === '{' && p2 === '}'
+            ? '(()=>' + whole.trim() + ')()'
+            : whole.trim(),
         line: lineNumber,
         below: zsfileContent.substring(match.index + match[0].length),
       })
@@ -145,7 +152,12 @@ export async function init(h = defaultHelper) {
     if (injectString == undefined) {
       h.warn(cmd.filePath + ':' + cmd.line + ' Returned empty result!')
     } else {
-      const replaceResults = injectInFile(cmd.filePath, cmd.capture, '/**/', '*/\n' + injectString + '\n')
+      const replaceResults = injectInFile(
+        cmd.filePath,
+        cmd.capture,
+        '/**/',
+        '*/\n' + injectString + '\n'
+      )
       replaceResults.forEach((o) => (countBlocks += o.numMatches ?? 0))
       replaceResults.forEach((o) => (countChanged += o.numReplacements ?? 0))
     }

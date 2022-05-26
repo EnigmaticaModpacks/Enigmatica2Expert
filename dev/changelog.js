@@ -130,10 +130,15 @@ export async function init(h = defaultHelper) {
 
   // Automatically assign icons
   await h.begin('Automatic iconisation')
-  await runProcess(
-    `npx mc-icons@latest --silent --treshold=2 --input="${changelogLatest}"`,
-    () => h.step()
-  )
+
+  try {
+    await runProcess(
+      `npx mc-icons@latest --silent --treshold=2 --input="${changelogLatest}"`,
+      () => h.step()
+    )
+  } catch (error) {
+    h.warn('Unable to mc-icons over file ' + changelogLatest)
+  }
 
   // Manual Changelog fixing
   // await h.begin('Manually fix LATEST.md and close it.')

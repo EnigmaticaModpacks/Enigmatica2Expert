@@ -82,14 +82,12 @@ Liquids that should have more uses:
 
 ## TODO
 
-- [ ] ✏️ Fix main Vis Crystals doubled in JEI
-- [ ] ✏️ Infinity reagent cheaper
 - [ ] 📀 AdvRocketry break 100k rf/t limit
-- [ ] 📀 Actually Additions increase consumption of piedestals
 - [ ] 🔄 Check why mobs are not spawned anough (less then 70 for whole server)
 - [ ] 🔄 Check render distance on server
+- [ ] 🔄 Golden Lasso not working
 - [ ] 🚧 Update screenshots on CF
-- [ ] 📖 Add Rustic's Apple Trees
+- [ ] 🚧 Rename Bansoukou folders to match mod names
 - [ ] 🚧 Add modpack automation:
     1. `make_pack.js`
     2. Create CF release
@@ -104,6 +102,8 @@ Liquids that should have more uses:
 
 ## Long-Term
 
+- [ ] ✏️ Fix main Vis Crystals doubled in JEI
+- [ ] 🟢 Add https://www.curseforge.com/minecraft/mc-mods/nothirium
 - [ ] 🔄 Forbid exploding in chunks, but claim only few chunks
 - [ ] 🔄 Colossal Chests bigger interface via Bansoukou
 - [ ] ✏️ Magical Snow Globe add usage

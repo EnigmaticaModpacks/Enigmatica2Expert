@@ -119,6 +119,34 @@ zenClass DebugUtils {
 }
 static debugUtils as DebugUtils = DebugUtils();
 
+static skipped as bool[] = [false] as bool[];
+function runAutomation(player as IPlayer) as void {
+  addDelayWork(function() {
+    player.sendMessage('Developing: §c/logAdditionalDebugData()');
+    logAdditionalDebugData(player);
+  }, 20 * 1);
+
+  addDelayWork(function() {
+    player.sendMessage('Developing: Starting §c/ct conflict');
+    server.commandManager.executeCommand(server, '/ct conflict');
+  }, 20 * 20);
+
+  addDelayWork(function() {
+    player.sendMessage('Developing: Starting §c/tellme dump-csv all');
+    server.commandManager.executeCommand(server, '/tellme dump-csv all');
+  }, 20 * 40);
+
+  addDelayWork(function() {
+    player.sendMessage('Developing: Starting §cexport to crafttweaker.log');
+    exportAllBlocks();
+    exportAllTools();
+  }, 20 * 80);
+
+  addDelayWork(function() {
+    player.sendMessage('Developing: §aFinished!');
+  }, 20 * 90);
+}
+
 events.onPlayerLoggedIn(function(e as crafttweaker.event.PlayerLoggedInEvent){
   if(e.player.world.isRemote()) return;
   if(!debugUtils.firstTime(e.player.world.time)) return;
@@ -126,35 +154,13 @@ events.onPlayerLoggedIn(function(e as crafttweaker.event.PlayerLoggedInEvent){
   addDelayWork(function() {
     e.player.sendMessage('§cDebug environment activated!');
     e.player.sendMessage('§8If you want to disable DEBUG mode, remove §7scripts/debug§8 directory');
-  }, 20 * 10);
+    e.player.sendMessage('§8Write §7/skip_automation§8 to skip automatic executions, write §7/run_automation§8 to run manually');
+  }, 20 * 5);
 
   addDelayWork(function() {
-    e.player.sendMessage('Developing: §c/logAdditionalDebugData()');
-    logAdditionalDebugData(e.player);
+    if(!skipped[0]) runAutomation(e.player);
   }, 20 * 20);
-
-  addDelayWork(function() {
-    e.player.sendMessage('Developing: Starting §c/ct conflict');
-    server.commandManager.executeCommand(server, '/ct conflict');
-  }, 20 * 40);
-
-  addDelayWork(function() {
-    e.player.sendMessage('Developing: Starting §c/tellme dump-csv all');
-    server.commandManager.executeCommand(server, '/tellme dump-csv all');
-  }, 20 * 80);
-
-  addDelayWork(function() {
-    e.player.sendMessage('Developing: Starting §cexport to crafttweaker.log');
-    exportAllBlocks();
-    exportAllTools();
-  }, 20 * 120);
-
-  addDelayWork(function() {
-    e.player.sendMessage('Developing: §aFinished!');
-  }, 20 * 130);
 });
-
-
 
 
 print('##################################################');
@@ -173,4 +179,15 @@ for r in furnace.all {
 }
 print('##################################################');
 
+# Command to cancel automation
+var cmd = mods.zenutils.command.ZenCommand.create("skip_automation");
+cmd.requiredPermissionLevel = 0;
+cmd.execute = function(command, server, sender, args) { skipped[0] = true; };
+cmd.register();
 
+cmd = mods.zenutils.command.ZenCommand.create("run_automation");
+cmd.requiredPermissionLevel = 0;
+cmd.execute = function(command, server, sender, args) {
+  runAutomation(mods.zenutils.command.CommandUtils.getCommandSenderAsPlayer(sender));
+};
+cmd.register();

@@ -462,18 +462,18 @@ const style = {
     )
 
     updateBox('Copy server pack')
-    const bytes = (v) => numeral(v).format('0.0b')
+    const bytes = (/** @type {number} */ v) => numeral(v).format('0.0b')
     const zipName = parse(zipPath_server).base
     let step = 0
     await sftp.fastPut(zipPath_server, zipName, {
       step: (total_transferred, chunk, total) => {
-        if (step++ % 10 === 0)
-          updateBox(
-            'Copy server pack',
-            bytes(total_transferred),
-            '/',
-            bytes(total)
-          )
+        if (step++ % 10 !== 0) return
+        updateBox(
+          'Copy server pack',
+          bytes(total_transferred),
+          '/',
+          bytes(total)
+        )
       },
     })
 
@@ -488,47 +488,19 @@ const style = {
       conf.dir,
       'overrides/config/Chikachi/discordintegration.json'
     )
-    const dc_configs = loadJson(jsonPath)
-    dc_configs.discord.minecraft.dimensions.generic.messages.serverStart = `\`\`\`diff
-+ Server Started! +
-     ${nextVersion}
-\`\`\``
-    saveObjAsJson(dc_configs, jsonPath)
+
+    saveText(
+      loadText(jsonPath).replace(
+        /("serverStart":\s*")[^"]+"/,
+        `$1"\`\`\`diff\n+ Server Started! +\n     ${nextVersion}\n\`\`\`"`
+      ),
+      jsonPath
+    )
+
     const allOverridesDir = join(conf.dir, 'overrides')
-    let j = 0
+    let j = 1
     sftp.on('upload', () => updateBox('Copy overrides', j++))
     await sftp.uploadDir(allOverridesDir, './')
-
-    // /**
-    //  *
-    //  * @param {string[]} list
-    //  * @param {string | {(f:string):string}} from
-    //  * @param {{(f:string):string}} [to]
-    //  * @returns
-    //  */
-    // const copyList = async (list, from, to) =>
-    //   Promise.all(
-    //     list.map(async (f) => {
-    //       const fromPath = typeof from === 'function' ? from(f) : resolve(from, f)
-    //       const toPath = typeof to === 'function' ? to(f) : f
-    //       await sftp.fastPut(fromPath, toPath)
-    //     })
-    //   )
-
-    // updateBox('Copy modpack overrides')
-    // await copyList(serverAllOverrides, tmpOverrides)
-
-    // updateBox('Copy mods')
-    // await copyList(serverModsList, './')
-
-    // // Add Unpatched by Bansoukou mods
-    // updateBox('Copy & Rename Bansoukou-unpatched mods')
-
-    // await copyList(
-    //   unpatchedList,
-    //   (f) => `${f}.disabled`,
-    //   (f) => `${f}.jar`
-    // )
 
     await sftp.end()
   }

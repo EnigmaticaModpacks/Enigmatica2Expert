@@ -1,7 +1,8 @@
-//@ts-check
+// @ts-check
 
 import _ from 'lodash'
-import { getCSV, config, loadText, naturalSort } from './utils.js'
+
+import { config, getCSV, loadText, naturalSort } from './utils.js'
 
 /** @type {Set<string>} */
 let isBlocks
@@ -76,13 +77,16 @@ export const getItemsTree = () =>
 
 /** @type {function(string,string=):Set<string>} */
 export function getItemOredictSet(id, meta = '0') {
-  return ((getItemsTree()[id] ??= {})[meta == '*' ? 0 : meta] ??= new Set())
+  return ((getItemsTree()[id] ??= {})[meta === '*' ? 0 : meta] ??= new Set())
 }
 
+/**
+ * Get all available meta variations
+ * @param {string} definition minecraft:stone
+ * @returns {number[]}
+ */
 export function getSubMetas(definition) {
-  return Object.keys((getItemsTree()[definition] ??= {})).map((s) =>
-    parseInt(s)
-  )
+  return Object.keys((getItemsTree()[definition] ??= {})).map((s) => Number(s))
 }
 
 /**
@@ -180,13 +184,13 @@ function tellmeToObj(o) {
     mod: o['Mod name'],
     owner: o['Registry name'].split(':')[0],
     id: o['Registry name'],
-    itemId: parseInt(o['Item ID']),
-    damage: parseInt(o['Meta/dmg']),
+    itemId: Number(o['Item ID']),
+    damage: Number(o['Meta/dmg']),
     hasSubtypes: o['Subtypes'] === 'true',
     display: o['Display name'],
     ores: o['Ore Dict keys'].split(','),
     commandString: `<${o['Registry name']}${
-      o['Meta/dmg'] == '0' ? '' : ':' + o['Meta/dmg']
+      o['Meta/dmg'] === '0' ? '' : ':' + o['Meta/dmg']
     }>`,
     withAmount: function (amount) {
       return this.commandString + (amount > 1 ? ' * ' + amount : '')
@@ -203,7 +207,7 @@ export function getByOredict_first(ore) {
   return getByOredict(ore).sort(prefferedModSort)[0]
 }
 
-/** @type {Object<string,number>}}*/
+/** @type {Object<string,number>}} */
 const modWeights = `
   minecraft
   thermalfoundation
@@ -237,8 +241,8 @@ const modWeights = `
  * @param {TMStack} b
  */
 export const prefferedModSort = (a, b) => {
-  const va = modWeights[b.owner] ?? 0,
-    vb = modWeights[a.owner] ?? 0
+  const va = modWeights[b.owner] ?? 0
+  const vb = modWeights[a.owner] ?? 0
   return va > vb ? 1 : va < vb ? -1 : 0
 }
 
@@ -278,18 +282,18 @@ function matchFurnaceRecipes(text) {
 export function getCrtLogBlock(from, to) {
   const text = loadText('crafttweaker.log')
   const startIndex = text.indexOf(from)
-  if (startIndex == -1) return ''
+  if (startIndex === -1) return ''
 
   const sub = text.substring(startIndex + from.length)
   const endIndex = sub.indexOf(to)
 
-  return endIndex == -1 ? sub : sub.substring(0, endIndex)
+  return endIndex === -1 ? sub : sub.substring(0, endIndex)
 }
 
 /**
  * @type {FurnaceRecipe[]}
  */
-let furnaceRecipesHashed = undefined
+let furnaceRecipesHashed
 export function getFurnaceRecipes() {
   if (furnaceRecipesHashed) return furnaceRecipesHashed
   return (furnaceRecipesHashed = matchFurnaceRecipes(
@@ -300,7 +304,7 @@ export function getFurnaceRecipes() {
 /**
  * @type {FurnaceRecipe[]}
  */
-let furnaceRecipesUnchangedHashed = undefined
+let furnaceRecipesUnchangedHashed
 export function getUnchangedFurnaceRecipes() {
   if (furnaceRecipesUnchangedHashed) return furnaceRecipesUnchangedHashed
 
@@ -441,7 +445,7 @@ function matchTableRecipes(text) {
 /**
  * @type {TableRecipe[]}
  */
-let tableRecipesCache = undefined
+let tableRecipesCache
 export function getTableRecipes() {
   return (tableRecipesCache ??= matchTableRecipes(
     getCrtLogBlock('\nRecipes:\n', '\n[SERVER_STARTED]')
@@ -451,7 +455,7 @@ export function getTableRecipes() {
 /**
  * @type {TableRecipe[]}
  */
-let tableUnchangedRecipes = undefined
+let tableUnchangedRecipes
 export function getUnchangedTableRecipes() {
   if (tableUnchangedRecipes) return tableUnchangedRecipes
 
@@ -474,7 +478,7 @@ export function getUnchangedTableRecipes() {
 /**
  * @type {TableRecipe[]}
  */
-let cachedRemovedRecipes = undefined
+let cachedRemovedRecipes
 export function getRemovedRecipes() {
   if (cachedRemovedRecipes) return cachedRemovedRecipes
 
