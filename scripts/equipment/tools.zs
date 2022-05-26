@@ -141,7 +141,7 @@ for tool in toolsToNerf {
 	val toolTcon = Toolforge.buildTool(tconDef.definition, [woodMat, Toolforge.getMaterialFromID(matTcon), woodMat]);
 	if(isNull(toolTcon)) continue;
 
-	recipes.addShapeless('convert_'~tool.definition.id, toolTcon, [tool]);
+	recipes.addShapeless('convert_'~tool.definition.id.replaceAll(":", "_"), toolTcon, [tool]);
 }
 
 <minecraft:stone_sword>.maxDamage = 2;
