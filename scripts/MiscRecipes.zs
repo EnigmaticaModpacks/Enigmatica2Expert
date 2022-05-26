@@ -435,28 +435,16 @@ mods.mechanics.addTubeRecipe([<contenttweaker:conglomerate_of_life>], <liquid:li
 craft.shapeless(<contenttweaker:silicon_block>, "AAAAAAAAA", {A: <ore:ingotSilicon>});
 craft.shapeless(<libvulpes:productingot:3> * 9,   "A", {A: <contenttweaker:silicon_block>});
 
-# [Conglomerate_Of_Life*4] from [Soul_Vial][+4]
-var lambNames as string[] = [
-  "animania:lamb_dorper",
-  "animania:lamb_dorset",
-  "animania:lamb_friesian",
-  "animania:lamb_jacob",
-  "animania:lamb_merino",
-  "animania:lamb_suffolk"
-];
-var anyLambIngredient = <enderio:item_soul_vial:1>.withTag({entityId: lambNames[0]});
-for i in 1 to lambNames.length {
-	anyLambIngredient = anyLambIngredient.or(<enderio:item_soul_vial:1>.withTag({entityId: lambNames[i]}));
-}
-craft.make(<contenttweaker:conglomerate_of_life> * 4, ["pretty",
-  "D B D",
-  "▲ S ▲",
-  "D C D"], {
-  "▲": <iceandfire:pixie_dust>,             # Pixie Dust
+# [Conglomerate Of Life]*2 from [Cheese Wheel][+4]
+craft.make(<contenttweaker:conglomerate_of_life> * 2, ["pretty",
+  "▲ B ▲",
+  "D W D",
+  "▲ C ▲"], {
+  "▲": <scalinghealth:heartdust>,           # Heart Dust
   "B": <randomthings:rezstone>,             # Blood Stone
-  "S": anyLambIngredient.giveBack(<enderio:item_soul_vial>), # Soul Vial
+  "D": <iceandfire:dragon_meal>,            # Dragon Meal
+  "W": <ore:cheeseWheels>,                  # Cheese Wheel
   "C": <cyclicmagic:crystallized_obsidian>, # Crystallized Obsidian
-  "D": <iceandfire:dragon_meal>             # Dragon Meal
 });
 
 # [Conglomerate_Of_Sun*8] from [Totem_of_Undying][+3]

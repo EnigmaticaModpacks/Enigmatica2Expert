@@ -403,3 +403,13 @@ craft.make(<rats:plague_essence>, ["pretty",
   "C": <contenttweaker:compressed_garbage_pile>, # Compressed Garbage Pile
   "A": <betteranimalsplus:antler>,               # Antler
 });
+
+# Peaceful alt
+# [Rat Toga] from [Marbled Cheese][+1]
+craft.make(<rats:rat_toga>, ["pretty",
+  "S   S",
+  "S M S",
+  "S S S"], {
+  "S": <thaumictinkerer:spellbinding_cloth>.noReturn(), # Spellbinding Cloth
+  "M": <rats:marbled_cheese>, # Marbled Cheese
+});

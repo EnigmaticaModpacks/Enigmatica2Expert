@@ -540,12 +540,12 @@ mods.iceandfire.recipes.addIceDragonForgeRecipe(
 
 # Cursed and Enchanced hearts recipes
 mods.iceandfire.recipes.addFireDragonForgeRecipe(
-    <extendedcrafting:material:32>, 
-    <scalinghealth:heartcontainer>, 
+    <plustic:osgloglasingot>,
+    <scalinghealth:heartcontainer>,
     <scalinghealth:difficultychanger:1>);
 mods.iceandfire.recipes.addIceDragonForgeRecipe(
-    <extendedcrafting:material:32>, 
-    <scalinghealth:heartcontainer>, 
+    <plustic:osgloglasingot>,
+    <scalinghealth:heartcontainer>,
     <scalinghealth:difficultychanger>);
 
 

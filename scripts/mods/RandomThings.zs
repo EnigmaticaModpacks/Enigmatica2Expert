@@ -499,3 +499,14 @@ craft.remake(<randomthings:blockofsticks> * 8, ["pretty",
   "# # #"], {
   "#": <ore:stickWood>, # Stick
 });
+
+# Cheaper but use more specific ingredients (basalt)
+# [Inventory Rerouter] from [Wooden Hopper][+2]
+craft.remake(<randomthings:inventoryrerouter>, ["pretty",
+  "B s B",
+  "s W s",
+  "B s B"], {
+  "B": <ore:stoneBasalt>, # Basalt
+  "s": <ore:stone>, # Stone
+  "W": <tconstruct:wooden_hopper>, # Wooden Hopper
+});

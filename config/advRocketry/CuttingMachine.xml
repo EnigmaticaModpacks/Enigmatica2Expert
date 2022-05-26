@@ -736,6 +736,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Treated Stick] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>plankTreatedWood 1</oreDict>
+		</input>
+		<output>
+			<itemStack>immersiveengineering:material 10 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Twilight Oak Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>

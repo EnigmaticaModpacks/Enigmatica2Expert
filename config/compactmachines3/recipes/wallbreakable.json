@@ -1,7 +1,7 @@
 {
   "name": "compactmachines3:wallbreakable",
   "target-block": "compactmachines3:wallbreakable",
-  "target-count": 16,
+  "target-count": 32,
 
   "input-types": {
     "i": { "id": "thermalfoundation:storage_alloy" },

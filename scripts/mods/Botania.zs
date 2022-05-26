@@ -128,23 +128,26 @@ mods.botania.Apothecary.addRecipe("orechidVacuam", [
 	[<botania:manaresource:5>, <bloodmagic:item_demon_crystal:1>, <bloodmagic:item_demon_crystal:2>, 
 	<bloodmagic:item_demon_crystal:3>, <bloodmagic:item_demon_crystal:4>, <bloodmagic:points_upgrade>], 100000, 300, 4);
 
-# Shh, intended for later
-	function runicAltarRecipeMaker(output as IItemStack, input as IIngredient[], tier as int) { 
-		# Tier 1 runes
-		var mana = 4000;
-		if (tier == 2) {
-		# Tier 2 runes
-			mana = 8000;
-		} else if (tier == 3) {
-		# Tier 3 runes
-			mana = 12000;
-		} else if (tier >= 5) {
-		# Turning tier into mana
-			mana = tier;
-		}
-		mods.botania.RuneAltar.removeRecipe(output);
-		mods.botania.RuneAltar.addRecipe(output, input, mana);
-	}
+# Peaceful alt
+# [Gaia Spirit] from [Avatar of Ratlantis][+10]
+mods.thaumcraft.Infusion.registerRecipe(
+  "GaiaSpirit", # Name
+  "INFUSION", # Research
+  <botania:manaresource:5>, # Output
+  10, # Instability
+  [<aspect:caeles> * 100, <aspect:draco> * 100, <aspect:rattus> * 100],
+  <rats:idol_of_ratlantis>, # Central Item
+  scripts.craft.grid.Grid(["pretty",
+  "S ◊ ╳",
+  "▬   ▬",
+  "* ◊ D"], {
+  "S": <bloodmagic:item_demon_crystal:4>, # Steadfast Will Crystal
+  "◊": <astralsorcery:itemperkgem:*>,     # Ourium Gem
+  "╳": <bloodmagic:item_demon_crystal:1>, # Corrosive Will Crystal
+  "▬": <ore:ingotMirion>,                 # Mirion Ingot
+  "*": <bloodmagic:item_demon_crystal:3>, # Vengeful Will Crystal
+  "D": <bloodmagic:item_demon_crystal:2>, # Destructive Will Crystal
+}).spiral());
 
 # Livingrock
 	mods.botania.PureDaisy.removeRecipe(<botania:livingrock>);

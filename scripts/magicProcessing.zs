@@ -102,7 +102,7 @@ function magicProcessing(nativeClusterOreEntry as IOreDictEntry, ore_name as str
 
 
   # mods.astralsorcery.StarlightInfusion.addInfusion(IItemStack input, IItemStack output, boolean consumeMultiple, float consumptionChance, int craftingTickTime);
-  mods.astralsorcery.StarlightInfusion.addInfusion(prevItem, crystalShard, true, 0.2, 20);
+  mods.astralsorcery.StarlightInfusion.addInfusion(prevItem, crystalShard, false, 0.1, 10);
   mods.inworldcrafting.FluidToItem.transform(currItem, <fluid:astralsorcery.liquidstarlight>, [prevItem*4], true);
   craft.shapeless(currItem,   "cccc",     {c: crystalShard});
   craft.shapeless(currItem*2, "cccccccc", {c: crystalShard});

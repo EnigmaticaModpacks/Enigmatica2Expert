@@ -147,6 +147,7 @@ recipes.addShapedMirrored("Sticks from logs",
 
 # Treated Wood sticks
 recipes.remove(<immersiveengineering:material>);
+scripts.process.sawWood(<ore:plankTreatedWood>, <immersiveengineering:material>, "except: Shapeless BlockCutter");
 recipes.addShapedMirrored("Teated sticks", 
 <immersiveengineering:material> * 2, 
 [[<ore:plankTreatedWood>], 

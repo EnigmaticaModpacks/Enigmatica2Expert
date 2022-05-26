@@ -92,7 +92,7 @@ ${filtered.join('\n')}`
 
 }*/
 
-# Total Furnace recipes registered: 914
+# Total Furnace recipes registered: 915
 # Filtered by JEI blacklist: 47
 # Filtered manuallly (antidupe): 14
 # Filtered by oredict: 200
@@ -961,6 +961,7 @@ infinFurnace(utils.get("thaumcraft:cluster", 1), utils.get("thermalfoundation:ma
 infinFurnace(utils.get("thaumcraft:cluster", 2), utils.get("thermalfoundation:material", 128, 2));
 infinFurnace(utils.get("thaumcraft:cluster", 3), utils.get("thermalfoundation:material", 129, 2));
 infinFurnace(utils.get("thaumcraft:cluster", 4), utils.get("thermalfoundation:material", 130, 2));
+infinFurnace(utils.get("thaumcraft:cluster", 5), utils.get("thermalfoundation:material", 131, 2));
 infinFurnace(utils.get("thaumcraft:cluster", 6), utils.get("thaumcraft:quicksilver", 0, 2));
 infinFurnace(utils.get("thaumcraft:cluster", 7), utils.get("minecraft:quartz", 0, 5));
 infinFurnace(utils.get("thaumcraft:cluster"), utils.get("thermalfoundation:material", 0, 2));

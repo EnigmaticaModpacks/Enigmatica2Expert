@@ -113,3 +113,7 @@ addVariation("chest", <quark:custom_chest:1>);
 addVariation("chest", <quark:custom_chest:2>);
 addVariation("chest", <quark:custom_chest:3>);
 addVariation("chest", <quark:custom_chest:4>);
+
+addVariation("endstone", <endreborn:block_end_stone_smooth>);
+addVariation("endstone", <endreborn:block_end_stone_pillar>);
+addVariation("endstone", <endreborn:chiseled_end_bricks>);
