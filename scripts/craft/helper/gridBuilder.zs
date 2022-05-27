@@ -10,10 +10,12 @@ import scripts.craft.helper.characterManager.CharacterManager;
 zenClass GridBuilder {
 
   # This items in catalyst slot would add this styles
-  val catalystsStyles as string[IIngredient] = {
-    <minecraft:glass_pane>  : "shapeless",
-    <minecraft:iron_nugget> : "removeByRecipeName",
-  } as string[IIngredient];
+  val catalystsStyles as string[string] = {
+    "minecraft:glass_pane"        : "shapeless",
+    "minecraft:iron_nugget"       : "removeByRecipeName",
+    "thaumcraft:infusion_matrix"  : "tcInfusion",
+    "thaumcraft:arcane_workbench" : "tcWorkbench",
+  } as string[string];
 
   var grid2d as IIngredient[][] = [];
   var haveData as bool = false;
@@ -67,10 +69,13 @@ zenClass GridBuilder {
   function insertCatalyst(ingr as IIngredient) as void {
     if(isNull(ingr)) return;
 
-    for catl, newStyle in catalystsStyles {
-      if(catl has ingr || ingr has catl) {
-        localStyle += newStyle;
-        return;
+    for item in ingr.items {
+      val id = item.commandString.replaceAll("<", "").replaceAll(">.*", "");
+      for catl, newStyle in catalystsStyles {
+        if(id.matches(catl)) {
+          localStyle += newStyle;
+          return;
+        }
       }
     }
   }

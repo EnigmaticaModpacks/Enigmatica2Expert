@@ -56,7 +56,7 @@ zenClass Grid {
   # Public Methods
   #------------------------------------------------------------------
 
-  /* 
+  /*
     Compute grid pamameters
 
     gridStr: array in form
@@ -114,12 +114,7 @@ zenClass Grid {
       for x in 0 to row.length {
         var c = getRaw(x,y);
         c = !isNull(c) ? c : " ";
-        map[y] = map[y] + c;
-
-        if (hasOpt(c)) {
-          if (isNull(usesMap[c])) uniqueIngredientsCount += 1;
-          usesMap[c] = isNull(usesMap[c]) ? 1 : usesMap[c] + 1;
-        }
+        push(y, c);
       }
     }
 
@@ -163,6 +158,76 @@ zenClass Grid {
     return includeNulls ? shapelessList_wNulls : shapelessList;
   }
 
+  # Return flatten list of ingredients but go for spiral from top ingredient
+  # ↗ 🠾 ↘
+  # ↑   ↓
+  # ↖ ← ↙
+  function spiral() as IIngredient[] {
+    var result = [] as IIngredient[];
+
+    # Start point
+    val sx = X / 2;
+    val sy = 0;
+
+    # End point
+    val ex = getCentralX();
+    val ey = getCentralY();
+
+    # One horisontal line
+    if(Y == 1 || X == 1) {
+      return shapeless();
+    }
+
+    var x = sx;
+    var y = sy;
+
+    # Direction of move
+    val vectors = [[1,0],[0,1],[-1,0],[0,-1]] as int[][];
+    var dir = 0;
+
+    # Level of circle. 0 - outer, 1 deeper inside and so on
+    var lvl = 0;
+
+    var i = 0;
+    while(true) {
+      # Error ward
+      i += 1;
+      if(i > 99) {
+        logger.logWarning('Grid.zs spiral() error!\n'~this.toString());
+        return null;
+      }
+
+      var ingr = opts[get(x,y)];
+      if(!isNull(ingr)) result += ingr;
+
+      # Test move
+      var v = vectors[dir];
+      var nx = x + v[0];
+      var ny = y + v[1];
+
+      # Turn if out of bounds
+      if(ny<lvl || nx<lvl || ny > Y - 1 - lvl || nx > X - 1 - lvl) {
+        dir = (dir + 1) % 4;
+        v = vectors[dir];
+        nx = x + v[0];
+        ny = y + v[1];
+      }
+
+      # Move if need to advance next level
+      if((nx == sx) && (ny == sy + lvl)) {
+        x = nx;
+        y = ny + 1;
+        lvl += 1;
+      } else {
+        x = nx;
+        y = ny;
+      }
+      # End of Cycle
+      if(x==ex && y==ey) return result;
+    }
+    return null;
+  }
+
 
   # Determine what ingredient is most important in this grid
   # Usually its a item in center of 2d grid
@@ -182,8 +247,8 @@ zenClass Grid {
 
     var x = 0;
     var y = 0;
-    var dx = 1 as int; # Cast, yes. Because -1 is not int 🤦‍♂️
-    var dy = 0 as int;
+    var dx = 1;
+    var dy = 0;
     for i in 0 .. pow(max(X, Y), 2) {
       if ((-X/2 <= x && x <= X/2) && (-Y/2 <= y && y <= Y/2)) {
         var c = get(X/2 + x, Y/2 + y);
@@ -237,9 +302,9 @@ zenClass Grid {
     else if(!isShapeless) s += ln;
 
     # 2d Grid
-    if(isNull(map)) 
+    if(isNull(map))
       s += "<no grid map>";
-    else if(isMapEmpty()) 
+    else if(isMapEmpty())
       s += "<no grid letters match options>";
     else
       for y, row in map {
@@ -259,13 +324,38 @@ zenClass Grid {
 
     # Add Ingredients Table
     if(!(style has "noMap")) {
-      val opts_s = isNull(opts) 
-        ? "<options is not provided>" 
+      val opts_s = isNull(opts)
+        ? "<options is not provided>"
         : serialize.IIngredient_string_(opts, style, getOrder());
       s += ", {"~ln~ opts_s ~ln~ "}";
     }
 
     return s;
+  }
+
+
+  # Cut pre and leading nulls in map
+  function trim() as Grid {
+    var top = 0;
+    var bottom = 0;
+    var left = X;
+    var right = X;
+    val last = Y - 1;
+    for y, row in map {
+      if(y == top    &&           row.trim() == '') top += 1;
+      if(y == bottom && map[last - y].trim() == '') bottom += 1;
+
+      left  = min( left, row.length - row.replaceAll('^ +', '').length);
+      right = min(right, row.length - row.replaceAll(' +$', '').length);
+    }
+
+    var newMap = [] as string[];
+    for y in top .. (Y - bottom) {
+      newMap += map[y].substring(left, X - right);
+    }
+    map = newMap;
+
+    return this;
   }
 
   #------------------------------------------------------------------
@@ -282,6 +372,50 @@ zenClass Grid {
       return map[y][x];
     }
     return null;
+  }
+
+  function getIngr(x as int, y as int) as IIngredient {
+    val c = get(x, y);
+    if(isNull(c)) return null;
+    return opts[c];
+  }
+
+  function getCentralX() as int { return X / 2;}
+  function getCentralY() as int { return ((Y as float - 0.5f) / 2.0f) as int;}
+
+  function getCentral() as IIngredient {
+    return getIngr(getCentralX(), getCentralY());
+  }
+
+  # Set normalized grid character at [x,y]
+  function set(x as int, y as int, c as string) as void {
+    while(map.length - 1 < y) map += "";
+    val row = map[y];
+    if(x >= row.length) {
+      while(map[y].length < x) map[y] = map[y] + " ";
+      push(y, c);
+      return;
+    }
+    map[y] =
+      map[y].substring(0, x) ~ c ~
+      map[y].substring(x + 1, map[y].length);
+  }
+
+  # Remove element (set to " ") and return it
+  function remove(x as int, y as int) as IIngredient {
+    val result = getIngr(x, y);
+    if(!isNull(result)) set(x, y, ' ');
+    return result;
+  }
+
+  # Push symbol at end of map in specified y
+  function push(y as int, c as string) as void {
+    map[y] = map[y] + c;
+
+    if (hasOpt(c)) {
+      if (isNull(usesMap[c])) uniqueIngredientsCount += 1;
+      usesMap[c] = isNull(usesMap[c]) ? 1 : usesMap[c] + 1;
+    }
   }
 
   # Get grid character at [x,y], recursively searching if command characters found

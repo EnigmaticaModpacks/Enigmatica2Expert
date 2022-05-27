@@ -30,6 +30,7 @@ zenClass RecipeInventory {
 
   var W as int = 3; # Width  of current recipe inventory
   var H as int = 0; # Height of current recipe inventory
+  var grSz as int = 3; # Size of grid in this inventory. Default is 3x3. Could be 5x5, 7x7, etc.
   var gridRecipes as GridRecipe[] = [];
 
   zenConstructor(id as string, itemsList as IData, style as string[]) {
@@ -42,11 +43,18 @@ zenClass RecipeInventory {
       }
     }
 
+    # Init complex inventory with multiple recipes
     if(!isNull(sizeWH)) {
       W = sizeWH[0];
       if(sizeWH.length > 1) {
-        # Init complex inventory with multiple recipes
         H = sizeWH[1];
+      }
+    }
+
+    for i in 4 .. 10 {
+      if(style has (i~'x'~i)) {
+        grSz = i;
+        break;
       }
     }
 
@@ -90,7 +98,7 @@ zenClass RecipeInventory {
     else if (!isNull(slotData.isCatalyst)) { gridRecipe.gridBuilder.insertCatalyst(itemStack); }
     else {
       val localSlot = isNull(slotData.slot) ? slot : slotData.slot.asInt();
-      gridRecipe.gridBuilder.insert(itemStack, localSlot, H>0?3:W);
+      gridRecipe.gridBuilder.insert(itemStack, localSlot, H > 0 ? grSz : W);
     }
   }
 
@@ -99,21 +107,21 @@ zenClass RecipeInventory {
     if(H==0) return {}; # This is unknown inventory
 
     val _x = slot % W;
-    if(_x >= W - (W%4)) return null; # Out of recipes space
+    if(_x >= W - (W%(grSz+1))) return null; # Out of recipes space
 
     val _y = (slot / W) as int;
-    val netX = (_x/4) as int;
-    val netY = (_y/3) as int;
-    val gridWidth = (W / 4) as int;
+    val netX = (_x/(grSz+1)) as int;
+    val netY = (_y/grSz) as int;
+    val gridWidth = (W / (grSz+1)) as int;
     val gridIndex = netY * gridWidth + netX;
 
-    val x = _x % 4;
-    val y = _y % 3;
-    if(x == 3) {
-      if(y == 1) return {gridIndex: gridIndex,   isOutput:true};
-      else       return {gridIndex: gridIndex, isCatalyst:true};
+    val x = _x % (grSz+1);
+    val y = _y % grSz;
+    if(x == grSz) {
+      if(y == grSz/2) return {gridIndex: gridIndex,   isOutput:true};
+      else            return {gridIndex: gridIndex, isCatalyst:true};
     }
-    return {gridIndex: gridIndex, slot: y*3+x};
+    return {gridIndex: gridIndex, slot: y*grSz+x};
   }
 
   function countActualRecipes() as int {
