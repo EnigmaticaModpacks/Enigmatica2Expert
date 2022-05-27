@@ -1,0 +1,26 @@
+{
+	x: -0.6d,
+	y: 7.3d,
+	text: [
+		"Low chance of dropping when Rift closed with Collapser.",
+		"Bigger rifts has better chance of drop."
+	],
+	dependencies: [
+		"593b08e5"
+	],
+	tasks: [{
+		uid: "19bbaf46",
+		type: "item",
+		items: [{
+			item: "thaumcraft:primordial_pearl"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "05d9aac4",
+		type: "item",
+		item: "thaumadditions:jar_eldritch",
+		count: 5
+	}]
+}

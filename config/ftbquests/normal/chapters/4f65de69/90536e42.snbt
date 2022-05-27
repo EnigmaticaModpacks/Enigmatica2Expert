@@ -23,8 +23,14 @@
 		count: 2L
 	}],
 	rewards: [{
-		uid: "9e3ab801",
-		type: "choice",
-		table: 19
+		uid: "5c69ce75",
+		type: "item",
+		item: "tconstruct:soil",
+		count: 64
+	},
+	{
+		uid: "8739a71e",
+		type: "item",
+		item: "forestry:pipette"
 	}]
 }

@@ -40,8 +40,13 @@
 		command: "/say @p has begun the Thaumcraft questline!"
 	},
 	{
-		uid: "4c0fff02",
-		type: "xp_levels",
-		xp_levels: 15
+		uid: "63b97aed",
+		type: "item",
+		item: {
+			id: "thaumcraft:grapple_gun",
+			tag: {
+				tc.charge: 100
+			}
+		}
 	}]
 }

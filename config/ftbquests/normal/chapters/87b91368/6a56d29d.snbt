@@ -17,13 +17,14 @@
 		}]
 	}],
 	rewards: [{
-		uid: "f6e5ed81",
+		uid: "daef69ed",
 		type: "item",
-		item: {
-			id: "ftbquests:lootcrate",
-			tag: {
-				type: "common"
-			}
-		}
+		item: "thaumcraft:cluster 1 1"
+	},
+	{
+		uid: "4e87e925",
+		type: "item",
+		item: "minecraft:gold_ingot",
+		count: 8
 	}]
 }

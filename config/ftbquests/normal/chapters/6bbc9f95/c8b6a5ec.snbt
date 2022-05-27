@@ -1,0 +1,22 @@
+{
+	x: -0.6d,
+	y: 5.3d,
+	text: [
+		"Battery that stores 10 vis and release it when chunk's Vis is low."
+	],
+	dependencies: [
+		"b33c744d"
+	],
+	tasks: [{
+		uid: "97ffc7d6",
+		type: "item",
+		items: [{
+			item: "thaumcraft:vis_battery"
+		}]
+	}],
+	rewards: [{
+		uid: "e9e1192f",
+		type: "loot",
+		table: 0
+	}]
+}

@@ -23,6 +23,7 @@
 				props: 0L
 			}
 		}],
+		ignore_damage: true,
 		ignore_nbt: 1b
 	},
 	{

@@ -10,19 +10,12 @@
 		"03e96313"
 	],
 	tasks: [{
-		uid: "dc2a6ae3",
-		type: "item",
-		items: [{
-			item: "thaumcraft:goggles"
-		}],
-		ignore_nbt: 1b
-	},
-	{
 		uid: "d480fa76",
 		type: "item",
 		items: [{
 			item: "thaumcraft:cloth_chest"
 		}],
+		ignore_damage: true,
 		ignore_nbt: 1b
 	},
 	{
@@ -31,6 +24,7 @@
 		items: [{
 			item: "thaumcraft:cloth_legs"
 		}],
+		ignore_damage: true,
 		ignore_nbt: 1b
 	},
 	{
@@ -39,6 +33,7 @@
 		items: [{
 			item: "thaumcraft:cloth_boots"
 		}],
+		ignore_damage: true,
 		ignore_nbt: 1b
 	}],
 	rewards: [{

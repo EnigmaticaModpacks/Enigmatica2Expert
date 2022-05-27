@@ -1,0 +1,36 @@
+{
+	title: "Infusion Enchantments",
+	x: 11.1d,
+	y: 1.2d,
+	text: [
+		"Infusion Enchantments can be applied to Tinker's Constructs tools.",
+		"",
+		"Refining enchantment changed:",
+		"- I 50% chance to drop Native Cluster instead of Ore",
+		"- II 100% chance",
+		"- III 100% of one ore +50% of second",
+		"- IV 1 + 75% of second"
+	],
+	dependencies: [
+		"644b9777"
+	],
+	tasks: [{
+		uid: "063a231a",
+		type: "item",
+		items: [{
+			id: "thaumcraft:elemental_pick",
+			tag: {
+				infench: [{
+					id: 4s,
+					lvl: 1s
+				},
+				{
+					id: 3s,
+					lvl: 2s
+				}]
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

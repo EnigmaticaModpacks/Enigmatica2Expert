@@ -1,0 +1,23 @@
+{
+	x: -20.2d,
+	y: 23.6d,
+	text: [
+		"Apple trees best early game apple source."
+	],
+	dependencies: [
+		"3ecc3fbe"
+	],
+	tasks: [{
+		uid: "7084ecbe",
+		type: "item",
+		items: [{
+			item: "rustic:apple_seeds"
+		}]
+	}],
+	rewards: [{
+		uid: "f66ec256",
+		type: "item",
+		item: "minecraft:apple",
+		count: 32
+	}]
+}

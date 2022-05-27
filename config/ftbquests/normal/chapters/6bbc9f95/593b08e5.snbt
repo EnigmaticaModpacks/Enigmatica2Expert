@@ -1,0 +1,23 @@
+{
+	x: -0.6d,
+	y: 6.3d,
+	text: [
+		"Scan Rift to open research"
+	],
+	dependencies: [
+		"c8b6a5ec"
+	],
+	tasks: [{
+		uid: "d6daa45d",
+		type: "item",
+		items: [{
+			item: "thaumcraft:causality_collapser"
+		}]
+	}],
+	rewards: [{
+		uid: "231623ea",
+		type: "item",
+		item: "thaumcraft:curio 1 3",
+		count: 10
+	}]
+}

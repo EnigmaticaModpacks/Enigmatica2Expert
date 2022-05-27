@@ -1,0 +1,28 @@
+{
+	x: 5.3d,
+	y: 3.6d,
+	text: [
+		"Scan Rites and Crimson Portal to advance researches."
+	],
+	dependencies: [
+		"67773d72"
+	],
+	tasks: [{
+		uid: "6f94de49",
+		type: "item",
+		items: [{
+			item: "thaumcraft:curio 1 6"
+		}]
+	}],
+	rewards: [{
+		uid: "1edac101",
+		type: "item",
+		item: "thaumcraft:curio 1 4",
+		count: 10
+	},
+	{
+		uid: "2bf7b175",
+		type: "command",
+		command: "/thaumcraft research @p UNLOCKELDRITCH"
+	}]
+}

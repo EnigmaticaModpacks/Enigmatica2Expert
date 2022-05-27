@@ -1,0 +1,21 @@
+{
+	title: "Naturally Generated Crystals",
+	icon: "thaumcraft:crystal_aer",
+	x: -0.6d,
+	y: 4.3d,
+	text: [
+		"Scan naturally generated Crystal cluster to unlock further researches"
+	],
+	dependencies: [
+		"82e27a56"
+	],
+	tasks: [{
+		uid: "86ba7f05",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "2226eb36",
+		type: "xp_levels",
+		xp_levels: 3
+	}]
+}
