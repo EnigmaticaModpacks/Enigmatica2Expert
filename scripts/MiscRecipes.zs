@@ -323,18 +323,6 @@ craft.remake(<enderstorage:ender_pouch>, ["pretty",
 scripts.process.crush(<minecraft:arrow>, <minecraft:flint>, "no exceptions", [<ore:dustWood>.firstItem], [0.2f]);
 
 
-# Ore Excavation
-craft.remake(<oeintegration:excavatemodifier>, ["pretty",
-	"D D D",
-	"A B C",
-	"E E E"], {
-	A: <ore:compressed3xDirt>,
-	B: <ore:compressed3xCobblestone>,
-	C: <ore:compressed3xNetherrack>,
-	D: <tconstruct:excavator_head>.withTag({Material: "bronze"}),
-	E: <tconstruct:sharpening_kit>.withTag({Material: "stone"}),
-});
-
 # Make Quicksand
 scripts.process.solution([<ore:soulSand>], [<liquid:blueslime>*1000], [<liquid:sand>*1000], null, "except: highoven");
 

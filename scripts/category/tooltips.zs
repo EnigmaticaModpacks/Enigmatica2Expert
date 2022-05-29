@@ -38,6 +38,7 @@ for item in [
   <ic2:quantum_chestplate>,
   <ic2:te:48>,
   <minecraft:torch>,
+  <oeintegration:excavatemodifier>,
   <openblocks:tank>,
   <opencomputers:print>,
   <quark:archaeologist_hat>,

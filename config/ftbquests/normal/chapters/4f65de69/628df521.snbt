@@ -150,6 +150,7 @@
 	rewards: [{
 		uid: "f0dda096",
 		type: "item",
-		item: "oeintegration:excavatemodifier"
+		item: "oeintegration:excavatemodifier",
+		count: 3
 	}]
 }

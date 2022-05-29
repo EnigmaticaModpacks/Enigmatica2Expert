@@ -450,13 +450,6 @@ craft.remake(<tconstruct:brownstone:1> * 64, ["pretty",
   "♥": <ore:dustRedstone>, # Redstone
 });
 
-
-# [Enchanted Book] from [Excavate Modifier]
-recipes.addShapeless(<minecraft:enchanted_book>.withTag({StoredEnchantments:
-	<enchantment:oeintegration:oreexcavation>.makeEnchantment(1).makeTag().ench}),
-	[<oeintegration:excavatemodifier>]
-);
-
 # Alloy furnace missed Alum Brass recipe
 mods.nuclearcraft.alloy_furnace.addRecipe(<ore:ingotCopper>, <ore:ingotAluminum> * 3, <tconstruct:ingots:5> * 4);# [Aluminum Brass Ingot]
 mods.nuclearcraft.alloy_furnace.addRecipe(<ore:blockCopper>, <ore:blockAluminum> * 3, <tconstruct:metal:5> * 4); # [Block of Aluminum Brass]
