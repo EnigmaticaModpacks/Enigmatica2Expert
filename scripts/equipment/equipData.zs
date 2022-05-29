@@ -323,13 +323,13 @@ val defaultWeaponMats as IData = [
   "cobalt"                 , # 204
   "hard_carbon"            , # 204
   "iridium"                , # 208
-  "sunnarium"              , # 220
   "xu_evil_metal"          , # 222
   "pulsating_iron"         , # 225
   "void_metal"             , # 230
   "pink_metal"             , # 233
   "conductive_iron"        , # 237
   "ma.intermedium"         , # 243
+  "sunnarium"              , # 245
   "titanium"               , # 245
   "boron_nitride"          , # 249
   "universal_metal"        , # 264
@@ -345,7 +345,7 @@ val defaultWeaponMats as IData = [
   "litherite"              , # 402
   "gelid_gem"              , # 432
   "erodium"                , # 453
-  "mirion"                 , # 464
+  "mirion"                 , # 479
   "gelid_enderium"         , # 481
   "kyronite"               , # 508
   "red_matter"             , # 532
