@@ -34,6 +34,7 @@ for item in [
   <botania:thorring>,
   <computercraft:printout>,
   <cyclicmagic:inventory_food>,
+  <extrautils2:goldenlasso>,
   <farmingforblockheads:feeding_trough>,
   <ic2:quantum_chestplate>,
   <ic2:te:48>,

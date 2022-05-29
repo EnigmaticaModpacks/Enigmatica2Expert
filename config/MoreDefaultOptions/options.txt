@@ -92,7 +92,7 @@ key_Mode Switch Key:47
 key_Side Inventory Key:77
 key_Hub Expand Key:0
 key_Change Caster Focus:34
-key_Misc Caster Toggle:0
+key_Misc Caster Toggle:35
 key_keybind.baublesinventory:0
 key_quark.emote.no:0
 key_quark.emote.yes:0
