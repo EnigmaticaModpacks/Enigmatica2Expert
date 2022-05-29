@@ -8,186 +8,14 @@ import thaumcraft.aspect.CTAspectStack;
 # Add durability to scribbing tools
 <thaumcraft:scribing_tools>.maxDamage = 600;
 
-# Missed Cinnabar Cluster -> Quicksilver furnace recipe
+# Missed Cluster furnace recipes
 furnace.addRecipe(<thaumcraft:quicksilver> * 2, <thaumcraft:cluster:6>);
+furnace.addRecipe(<thermalfoundation:material:131> * 2, <thaumcraft:cluster:5>);
 
-# Crimson Rites
-mods.thaumcraft.Infusion.registerRecipe("crimson_rites", "INFUSION", 
-<thaumcraft:curio:6>, 15, 
-[<aspect:vitium> * 30, <aspect:mortuus> * 15, <aspect:praecantatio> * 30, <aspect:auram> * 10], 
-<thaumcraft:thaumonomicon>, 
-[<thaumcraft:ingot>, <thaumictinkerer:energetic_nitor>, <thaumcraft:salis_mundus>, <thaumictinkerer:energetic_nitor>, <thaumcraft:salis_mundus>, <thaumictinkerer:energetic_nitor>, <thaumcraft:ingot>, <thaumictinkerer:energetic_nitor>]);
-
-# [Spawn Lesser Crimson Portal] from [Golden Egg][+3]
-mods.thaumcraft.Infusion.registerRecipe("spawn_lesser_crimson_portal", "INFUSION", 
-<minecraft:spawn_egg>.withTag({EntityTag: {id: "thaumcraft:cultistportallesser"}}), 15, 
-[<aspect:vitium> * 90, <aspect:mortuus> * 45, <aspect:praecantatio> * 90, <aspect:auram> * 30], 
-<randomthings:ingredient:11>,      # Golden Egg
-scripts.craft.grid.Grid(["-K-T-K-T"], {
-  "-": <thaumictinkerer:energetic_nitor>, # Energetic Nitor
-  "K": <extrautils2:klein>,               # Klein Bottle
-  "T": <thaumcraft:taint_log>,            # Taintwood Log
-}).shapeless());
-
-
-# Unification for the Smelting Bonus
-// IIngredient input, IItemStack stack
-function swapBonus(input as IIngredient, wrong as IItemStack, right as WeightedItemStack) as void {
-	mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(input, wrong);
-	mods.thaumcraft.SmeltingBonus.addSmeltingBonus(input, right);
-}
-
-for i, oreBase in "Copper Tin Silver Lead".split(' ') {
-	val wrong = <thaumcraft:nugget>.definition.makeStack(i+1);
-	val nugget = oreDict["nugget"~oreBase].firstItem;
-	swapBonus(oreDict["ore"~oreBase], wrong, nugget % 33);
-	swapBonus(<thaumcraft:cluster>.definition.makeStack(i+2), wrong, nugget * 2 % 33);
-	swapBonus(<thaumicwonders:eldritch_cluster>.definition.makeStack(i+2), wrong, nugget * 4 % 33);
-}
-
-
-# Removing wrong aspects from stuff
-	<conarm:armor_trim:*>.setAspects(<aspect:terra>);
-	<harvestcraft:freshwateritem>.removeAspects(<aspect:metallum>);
-
-# [Void Seed*4] from [Insanium Essence][+4]
-craft.remake(<thaumcraft:void_seed> * 4, ["pretty",
-  "A I A",
-  "© T ©",
-  "T E T"], {
-  "A": <exnihilocreatio:item_material:3>, # Ancient Spores
-  "E": <ore:runeEnvyB>,                   # Rune of Envy
-  "©": <contenttweaker:blasted_coal>,     # Blasted Coal
-  "I": <ore:essenceInsanium>,             # Insanium Essence
-  "T": <thaumcraft:taint_rock>|<thaumcraft:taint_soil>|<thaumcraft:taint_crust>, # Tainted Rock
-});
-
-# Wood Table
-	recipes.remove(<thaumcraft:table_wood>);
-	recipes.addShapedMirrored("Wood Table", 
-	<thaumcraft:table_wood>, 
-	[[null, null, null],
-	[<ore:slabTreatedWood>, <ore:slabTreatedWood>, <ore:slabTreatedWood>],
-	[<ore:plankTreatedWood>, null, <ore:plankTreatedWood>]]);
-
-# Amber Block
-	recipes.removeByRecipeName("thaumcraft:ambertoblock");
-	recipes.addShapeless("Thaumcraft Amber Block", 
-	<thaumcraft:amber_block>, [
-		<ore:gemAmber>,<ore:gemAmber>,<ore:gemAmber>,<ore:gemAmber>,<ore:gemAmber>,
-		<ore:gemAmber>,<ore:gemAmber>,<ore:gemAmber>,<ore:gemAmber>
-	]);
-
-# Amber Gem
-	recipes.removeByRecipeName("biomesoplenty:amber");
-	recipes.removeByRecipeName("thaumcraft:amberblocktoamber");
-	recipes.addShapeless("Amber Gem", <thaumcraft:amber> * 9, [<ore:blockAmber>]);
-
-# Amber Bricks
-	recipes.remove(<thaumcraft:amber_brick>);
-	recipes.addShapeless("Thaumcraft Amber Brick", 
-	<thaumcraft:amber_brick> * 4, 
-	[<thaumcraft:amber_block>,<thaumcraft:amber_block>,<thaumcraft:amber_block>,<thaumcraft:amber_block>]);
-
-# Mundane Amulet
-	recipes.remove(<thaumcraft:baubles>);
-	recipes.addShaped(<thaumcraft:baubles>, 
-	[[null, <ore:bRedString>, null], 
-	[<ore:bRedString>, null, <ore:bRedString>], 
-	[null, <ore:ingotBrass>, null]]);
-
-# Mundane Ring
-	recipes.remove(<thaumcraft:baubles:1>);
-	recipes.addShaped(<thaumcraft:baubles:1>, 
-	[[<ore:ingotGold>, <ore:ingotBrass>, <ore:ingotGold>], 
-	[<ore:ingotBrass>, <ore:clusterGold>, <ore:ingotBrass>], 
-	[<ore:ingotGold>, <ore:ingotBrass>, <ore:ingotGold>]]);
-
-# Fancy Amulet
-	recipes.remove(<thaumcraft:baubles:4>);
-	recipes.addShaped(<thaumcraft:baubles:4>, 
-	[[null, <botania:spellcloth>.anyDamage(), null], 
-	[<botania:spellcloth>.anyDamage(), <ore:clusterGold>, <botania:spellcloth>.anyDamage()], 
-	[<ore:gemEmerald>, <thaumcraft:baubles>, <ore:gemEmerald>]]);
-
-# Fancy Ring
-	recipes.remove(<thaumcraft:baubles:5>);
-	recipes.addShaped(<thaumcraft:baubles:5>, 
-	[[<ore:ingotGold>, <ore:gemEmerald>, <ore:ingotGold>], 
-	[<ore:ingotGold>, <thaumcraft:baubles:1>, <ore:ingotGold>], 
-	[<ore:ingotGold>, <ore:blockGold>, <ore:ingotGold>]]);
-
-# Fancy Belt
-	recipes.remove(<thaumcraft:baubles:6>);
-	recipes.addShaped(<thaumcraft:baubles:6>,
-	[[<ore:leather>, <ore:leather>, <ore:leather>], 
-	[<ore:leather>, <ore:clusterCopper>, <ore:leather>], 
-	[<ore:gemEmerald>, <thaumcraft:baubles:2>, <ore:gemEmerald>]]);
-	
-# Golemancer's Bell
-	recipes.remove(<thaumcraft:golem_bell>);
-	recipes.addShapedMirrored(<thaumcraft:golem_bell>, 
-	[[null, <astralsorcery:itemrockcrystalsimple>.anyDamage(), <astralsorcery:itemrockcrystalsimple>.anyDamage()],
-	[null, <astralsorcery:itemrockcrystalsimple>.anyDamage(), <astralsorcery:itemrockcrystalsimple>.anyDamage()], 
-	[<ore:stickTreatedWood>, null, null]]);
-
-mods.thaumcraft.Crucible.registerRecipe("Quartz ore fix", "METALPURIFICATION", <thaumcraft:cluster:7>, <ore:oreQuartz>, [<aspect:metallum>*5, <aspect:ordo>*5]);
-
-
-# Salis Mundis visible recipe (original is hidden in JEI)
-craft.make(<thaumcraft:salis_mundus>, ["DEFCAB"], {
-	A: <ore:itemFlint>.reuse(),
-	B: <minecraft:bowl>.reuse(),
-	C: <ore:dustRedstone>,
-	D: <thaumcraft:crystal_essence:*>.marked("g0"),
-	E: <thaumcraft:crystal_essence:*>.marked("g1"),
-	F: <thaumcraft:crystal_essence:*>.marked("g2"),
-	}, function(out, ins, cInfo) {
-    for i in 0 to 2 {
-      for j in (i+1) to 3 {
-        if (ins["g"~i] has ins["g"~j]) {
-          return null; # We found duplicate, return nothing
-        }
-      }
-    }
-    return out;
-  }, true /* True for shapeless */);
-
-
-# Override aspects
-<rats:rat_diamond>                             .setAspects(<aspect:desiderium>*4  , <aspect:vitreus>*4     , <aspect:rattus>*4);
-<enderio:block_enderman_skull>                 .setAspects(<aspect:mortuus>*40    ,<aspect:alienis>*50     ,<aspect:tenebrae>*60);
-<ic2:dust:5>                                   .setAspects(<aspect:desiderium>*20 ,<aspect:vitreus>*15);
-<additionalcompression:gemdiamond_compressed:1>.setAspects(<aspect:desiderium>*500,<aspect:vitreus>*500);
-<additionalcompression:gemdiamond_compressed:2>.setAspects(<aspect:desiderium>*500,<aspect:vitreus>*500    ,<aspect:caeles>*100);
-<mekanism:compresseddiamond>                   .setAspects(<aspect:desiderium>*20 ,<aspect:vitreus>*20);
-<avaritia:resource>                            .setAspects(<aspect:desiderium>*250,<aspect:vitreus>*250);
-<thermalfoundation:material:26>                .setAspects(<aspect:desiderium>*50 ,<aspect:machina>*40);
-<actuallyadditions:item_crystal:2>             .setAspects(<aspect:desiderium>*20 ,<aspect:vitreus>*20     , <aspect:potentia>*80);
-<actuallyadditions:block_crystal:2>            .setAspects(<aspect:desiderium>*140,<aspect:vitreus>*140    , <aspect:potentia>*80);
-<actuallyadditions:item_crystal_empowered:2>   .setAspects(<aspect:desiderium>*60 ,<aspect:vitreus>*60     , <aspect:potentia>*150);
-<actuallyadditions:block_crystal_empowered:2>  .setAspects(<aspect:desiderium>*400,<aspect:vitreus>*400    , <aspect:potentia>*400);
-<forestry:candle>                              .setAspects(<aspect:lux>*20        , <aspect:herba>*5       , <aspect:aer>*5);
-<forestry:stump>                               .setAspects(<aspect:lux>*20        , <aspect:herba>*5       , <aspect:aer>*5);
-<forestry:beeswax>                             .setAspects(<aspect:lux>*5         , <aspect:aer>*2);
-<extrautils2:compressedcobblestone:0>          .setAspects(<aspect:terra>*45      , <aspect:perditio>*9);
-<extrautils2:compressedcobblestone:1>          .setAspects(<aspect:terra>*405     , <aspect:perditio>*81);
-<extrautils2:compressedcobblestone:2>          .setAspects(<aspect:terra>*500     , <aspect:perditio>*500);
-<biomesoplenty:hard_ice>                       .setAspects(<aspect:gelum>*21);
-
-# Tallow harder
-mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:tallow>);
-mods.thaumcraft.Crucible.registerRecipe("Tallow from rotten flesh", "HEDGEALCHEMY@1", <thaumcraft:tallow>,   <minecraft:rotten_flesh>, [<aspect:ignis>]);
-mods.thaumcraft.Crucible.registerRecipe("Tallow from tallow",       "HEDGEALCHEMY@1", <thaumcraft:tallow>*2, <quark:tallow>, [<aspect:ignis>*2]);
-mods.thaumcraft.Crucible.registerRecipe("Tallow from blubber",      "HEDGEALCHEMY@1", <thaumcraft:tallow>*8, utils.tryCatch('betteranimalsplus:blubber', <animania:raw_prime_pork>), [<aspect:ignis>*4]);
-
-# Nitor cheaper
-mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:nitor_yellow>);
-mods.thaumcraft.Crucible.registerRecipe("Cheap nitor", "BASEALCHEMY", <thaumcraft:nitor_yellow> * 10, <minecraft:glowstone_dust>, [<aspect:potentia> * 10, <aspect:ignis> * 10, <aspect:lux> * 10]);
 
 # Primordial Pearl alt (for some people who dont want to close rifts)
 mods.astralsorcery.Altar.addConstellationAltarRecipe(
-	'Primordial Pearl alt',	<thaumcraft:primordial_pearl:7>, 1500, 250, scripts.craft.grid.Grid([
+	'Primordial Pearl alt',	<thaumcraft:primordial_pearl>, 1500, 250, scripts.craft.grid.Grid([
 	"TVT"+
 	"CSC"+
 	"TVT"+
@@ -220,6 +48,97 @@ for aspect, ingr in {
 	);
 }
 
+
+/*
+████████╗ █████╗ ██████╗ ██╗     ███████╗
+╚══██╔══╝██╔══██╗██╔══██╗██║     ██╔════╝
+   ██║   ███████║██████╔╝██║     █████╗
+   ██║   ██╔══██║██╔══██╗██║     ██╔══╝
+   ██║   ██║  ██║██████╔╝███████╗███████╗
+   ╚═╝   ╚═╝  ╚═╝╚═════╝ ╚══════╝╚══════╝
+*/
+
+# [Void Seed] from [Insanium Essence][+4]
+craft.remake(<thaumcraft:void_seed> * 4, ["pretty",
+  "A I A",
+  "© T ©",
+  "T E T"], {
+  "A": <exnihilocreatio:item_material:3>, # Ancient Spores
+  "E": <ore:runeEnvyB>,                   # Rune of Envy
+  "©": <contenttweaker:blasted_coal>,     # Blasted Coal
+  "I": <ore:essenceInsanium>,             # Insanium Essence
+  "T": <thaumcraft:taint_rock>|<thaumcraft:taint_soil>|<thaumcraft:taint_crust>, # Tainted Rock
+});
+
+# Amber Block
+recipes.removeByRecipeName("thaumcraft:ambertoblock");
+recipes.addShapeless("Thaumcraft Amber Block",
+<thaumcraft:amber_block>, [
+	<ore:gemAmber>,<ore:gemAmber>,<ore:gemAmber>,<ore:gemAmber>,<ore:gemAmber>,
+	<ore:gemAmber>,<ore:gemAmber>,<ore:gemAmber>,<ore:gemAmber>
+]);
+
+# Amber Gem
+recipes.removeByRecipeName("biomesoplenty:amber");
+recipes.removeByRecipeName("thaumcraft:amberblocktoamber");
+recipes.addShapeless("Amber Gem", <thaumcraft:amber> * 9, [<ore:blockAmber>]);
+
+# Amber Bricks
+recipes.remove(<thaumcraft:amber_brick>);
+recipes.addShapeless("Thaumcraft Amber Brick",
+<thaumcraft:amber_brick> * 4,
+[<thaumcraft:amber_block>,<thaumcraft:amber_block>,<thaumcraft:amber_block>,<thaumcraft:amber_block>]);
+
+# Mundane Ring
+recipes.remove(<thaumcraft:baubles:1>);
+recipes.addShaped(<thaumcraft:baubles:1>,
+[[<ore:ingotGold>, <ore:ingotBrass>, <ore:ingotGold>],
+[<ore:ingotBrass>, <ore:clusterGold>, <ore:ingotBrass>],
+[<ore:ingotGold>, <ore:ingotBrass>, <ore:ingotGold>]]);
+
+# Fancy Ring
+recipes.remove(<thaumcraft:baubles:5>);
+recipes.addShaped(<thaumcraft:baubles:5>,
+[[<ore:ingotGold>, <ore:gemEmerald>, <ore:ingotGold>],
+[<ore:ingotGold>, <thaumcraft:baubles:1>, <ore:ingotGold>],
+[<ore:ingotGold>, <ore:blockGold>, <ore:ingotGold>]]);
+
+# Fancy Belt
+recipes.remove(<thaumcraft:baubles:6>);
+recipes.addShaped(<thaumcraft:baubles:6>,
+[[<ore:leather>, <ore:leather>, <ore:leather>],
+[<ore:leather>, <ore:clusterCopper>, <ore:leather>],
+[<ore:gemEmerald>, <thaumcraft:baubles:2>, <ore:gemEmerald>]]);
+
+# Salis Mundus visible recipe (original is hidden in JEI)
+craft.make(<thaumcraft:salis_mundus>, ["DEFCAB"], {
+	A: <ore:itemFlint>.reuse(),
+	B: <minecraft:bowl>.reuse(),
+	C: <ore:dustRedstone>,
+	D: <thaumcraft:crystal_essence:*>.marked("g0"),
+	E: <thaumcraft:crystal_essence:*>.marked("g1"),
+	F: <thaumcraft:crystal_essence:*>.marked("g2"),
+	}, function(out, ins, cInfo) {
+    for i in 0 to 2 {
+      for j in (i+1) to 3 {
+        if (ins["g"~i] has ins["g"~j]) {
+          return null; # We found duplicate, return nothing
+        }
+      }
+    }
+    return out;
+  }, true /* True for shapeless */
+);
+
+# Fix conflict
+# [Black Quartz Block] from [Smokey Quartz]
+recipes.removeByRecipeName("thaumictinkerer:black_quartz_block");
+craft.make(<thaumictinkerer:black_quartz_block>, ["pretty",
+  "⌃   ⌃",
+  "     ",
+  "⌃   ⌃"], {
+  "⌃": <ore:quartzDark>, # Smokey Quartz
+});
 
 // ---------------------------
 // Remake colored candles
@@ -254,14 +173,307 @@ for i, candle in candleColors {
 	});
 }
 
+# [Zombie Brain]*8 from [Zombie Essence]*2
+craft.make(<thaumcraft:brain> * 8, ["pretty",
+  "T T",
+  "T T"], {
+  "T": <mysticalagriculture:zombie_essence>, # Zombie Essence
+});
+
+/*
+██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗██████╗ ███████╗███╗   ██╗ ██████╗██╗  ██╗
+██║    ██║██╔═══██╗██╔══██╗██║ ██╔╝██╔══██╗██╔════╝████╗  ██║██╔════╝██║  ██║
+██║ █╗ ██║██║   ██║██████╔╝█████╔╝ ██████╔╝█████╗  ██╔██╗ ██║██║     ███████║
+██║███╗██║██║   ██║██╔══██╗██╔═██╗ ██╔══██╗██╔══╝  ██║╚██╗██║██║     ██╔══██║
+╚███╔███╔╝╚██████╔╝██║  ██║██║  ██╗██████╔╝███████╗██║ ╚████║╚██████╗██║  ██║
+ ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═══╝ ╚═════╝╚═╝  ╚═╝
+*/
+
+function remakeWorkbench(
+	name as string,
+	research as string,
+	visCost as int,
+	aspects as CTAspectStack[],
+	output as IItemStack,
+	gridMap as string[],
+	ingrMap as IIngredient[string]
+) as void {
+	mods.thaumcraft.ArcaneWorkbench.removeRecipe(output.anyAmount());
+	mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(
+		name, research, visCost, aspects, output, scripts.craft.grid.Grid(gridMap, ingrMap).shaped()
+	);
+}
+
+# [Grappler Spool] from [Copper Plate][+2]
+remakeWorkbench("GrappleGunSpool", "GRAPPLEGUN", 25, [<aspect:aqua>],
+	<thaumcraft:grapple_gun_spool>, ["pretty",
+  "s T s",
+  "s □ s",
+  "s s s"], {
+  "s": <ore:string>,              # String
+  "T": <minecraft:tripwire_hook>, # Tripwire Hook
+  "□": <ore:plateCopper>,         # Copper Plate
+});
+
+# [Grappler Head] from [Rare Earths][+2]
+remakeWorkbench("GrappleGunTip", "GRAPPLEGUN", 25, [<aspect:terra>],
+	<thaumcraft:grapple_gun_tip>, ["pretty",
+  "‚ T ‚",
+  "‚ R ‚",
+  "‚ ‚ ‚"], {
+  "‚": <ore:nuggetBrass>,         # Alchemical Brass Nugget
+  "T": <minecraft:tripwire_hook>, # Tripwire Hook
+  "R": <thaumcraft:nugget:10>,    # Rare Earths
+});
+
+# [Arcane Grappler] from [Grappler Head][+3]
+remakeWorkbench("GrappleGun", "GRAPPLEGUN", 25, [<aspect:ignis>],
+	<thaumcraft:grapple_gun>, ["pretty",
+  "    r",
+  "G ‚ ‚",
+  "  # #"], {
+  "r": <thaumcraft:grapple_gun_spool>, # Grappler Spool
+  "G": <thaumcraft:grapple_gun_tip>,   # Grappler Head
+  "‚": <ore:nuggetFakeIron>, 					 # Iron Alloy Nugget
+  "#": <ore:plankWood>,                # Greatwood Planks
+});
+
+# Cheaper to help use more
+# [Paving Stone of Travel] from [Arcane Stone Brick]
+remakeWorkbench("PaveTravel", "PAVINGSTONES", 10,
+	[<aspect:terra>],
+	<thaumcraft:paving_stone_travel> * 4, ["pretty",
+  "A A",
+  "A A"], {
+  "A": <thaumcraft:stone_arcane_brick>, # Arcane Stone Brick
+});
+
+# [Simple Arcane Mechanism] from [Stick][+4]
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:mechanism_simple>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(
+  "mechanism_simple", # Name
+  "BASEARTIFICE", # Research
+  10, # Vis cost
+  [<aspect:ignis>, <aspect:aqua>],
+  <thaumcraft:mechanism_simple>, # Output
+  scripts.craft.grid.Grid(["pretty",
+  "‚ ‚ ‚",
+  "‚ # ‚",
+  "‚ ‚ ‚"], {
+  "‚": <ore:nuggetBrass>, # Alchemical Brass Nugget
+  "#": <ore:stickWood>,   # Stick
+}).shaped());
+
+# [Complex Arcane Mechanism] from [Nickel Plate][+5]
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:mechanism_complex>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(
+  "mechanism_complex", # Name
+  "BASEARTIFICE", # Research
+  30, # Vis cost
+  [<aspect:ignis>, <aspect:aqua>],
+  <thaumcraft:mechanism_complex>, # Output
+  scripts.craft.grid.Grid(["pretty",
+  "  S  ",
+  "‚ □ ‚",
+  "  S  "], {
+  "S": <thaumcraft:mechanism_simple>, # Simple Arcane Mechanism
+  "‚": <ore:nuggetThaumium>,          # Thaumium Nugget
+  "□": <ore:plateNickel>,             # Nickel Plate
+}).shaped());
+
+# [Arcane Pattern Crafter] from [Hopper][+5]
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:pattern_crafter>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(
+  "patterncrafter", # Name
+  "ARCANEPATTERNCRAFTER", # Research
+  50, # Vis cost
+  [<aspect:terra>, <aspect:aqua>],
+  <thaumcraft:pattern_crafter>, # Output
+  scripts.craft.grid.Grid(["pretty",
+  "  ■  ",
+  "S # S"], {
+  "■": <ore:hopper>, # Hopper
+  "S": <thaumcraft:mechanism_simple>, # Simple Arcane Mechanism
+  "#": <thaumcraft:plank_greatwood>,  # Greatwood Planks
+}).shaped());
+
+/*
+ █████╗ ███████╗██████╗ ███████╗ ██████╗████████╗███████╗
+██╔══██╗██╔════╝██╔══██╗██╔════╝██╔════╝╚══██╔══╝██╔════╝
+███████║███████╗██████╔╝█████╗  ██║        ██║   ███████╗
+██╔══██║╚════██║██╔═══╝ ██╔══╝  ██║        ██║   ╚════██║
+██║  ██║███████║██║     ███████╗╚██████╗   ██║   ███████║
+╚═╝  ╚═╝╚══════╝╚═╝     ╚══════╝ ╚═════╝   ╚═╝   ╚══════╝
+*/
+
+# Removing wrong aspects from stuff
+<conarm:armor_trim:*>.setAspects(<aspect:terra>);
+<harvestcraft:freshwateritem>.removeAspects(<aspect:metallum>);
+
+# Override aspects
+<rats:rat_diamond>                             .setAspects(<aspect:desiderium>*4  ,<aspect:vitreus>*4      , <aspect:rattus>*4);
+<enderio:block_enderman_skull>                 .setAspects(<aspect:mortuus>*40    ,<aspect:alienis>*50     ,<aspect:tenebrae>*60);
+<ic2:dust:5>                                   .setAspects(<aspect:desiderium>*20 ,<aspect:vitreus>*15);
+<additionalcompression:gemdiamond_compressed:1>.setAspects(<aspect:desiderium>*500,<aspect:vitreus>*500);
+<additionalcompression:gemdiamond_compressed:2>.setAspects(<aspect:desiderium>*500,<aspect:vitreus>*500    ,<aspect:caeles>*100);
+<mekanism:compresseddiamond>                   .setAspects(<aspect:desiderium>*20 ,<aspect:vitreus>*20);
+<avaritia:resource>                            .setAspects(<aspect:desiderium>*250,<aspect:vitreus>*250);
+<thermalfoundation:material:26>                .setAspects(<aspect:desiderium>*50 ,<aspect:machina>*40);
+<actuallyadditions:item_crystal:2>             .setAspects(<aspect:desiderium>*20 ,<aspect:vitreus>*20     , <aspect:potentia>*80);
+<actuallyadditions:block_crystal:2>            .setAspects(<aspect:desiderium>*140,<aspect:vitreus>*140    , <aspect:potentia>*80);
+<actuallyadditions:item_crystal_empowered:2>   .setAspects(<aspect:desiderium>*60 ,<aspect:vitreus>*60     , <aspect:potentia>*150);
+<actuallyadditions:block_crystal_empowered:2>  .setAspects(<aspect:desiderium>*400,<aspect:vitreus>*400    , <aspect:potentia>*400);
+<forestry:candle>                              .setAspects(<aspect:lux>*20        , <aspect:herba>*5       , <aspect:aer>*5);
+<forestry:stump>                               .setAspects(<aspect:lux>*20        , <aspect:herba>*5       , <aspect:aer>*5);
+<forestry:beeswax>                             .setAspects(<aspect:lux>*5         , <aspect:aer>*2);
+<extrautils2:compressedcobblestone:0>          .setAspects(<aspect:terra>*45      , <aspect:perditio>*9);
+<extrautils2:compressedcobblestone:1>          .setAspects(<aspect:terra>*405     , <aspect:perditio>*81);
+<extrautils2:compressedcobblestone:2>          .setAspects(<aspect:terra>*500     , <aspect:perditio>*500);
+<biomesoplenty:hard_ice>                       .setAspects(<aspect:gelum>*21);
+<appliedenergistics2:sky_stone_block>          .setAspects(<aspect:alienis>*2     , <aspect:tenebrae>*7);
+
+
+/*
+██╗███╗   ██╗███████╗███████╗██████╗ ███╗   ██╗ █████╗ ██╗
+██║████╗  ██║██╔════╝██╔════╝██╔══██╗████╗  ██║██╔══██╗██║
+██║██╔██╗ ██║█████╗  █████╗  ██████╔╝██╔██╗ ██║███████║██║
+██║██║╚██╗██║██╔══╝  ██╔══╝  ██╔══██╗██║╚██╗██║██╔══██║██║
+██║██║ ╚████║██║     ███████╗██║  ██║██║ ╚████║██║  ██║███████╗
+╚═╝╚═╝  ╚═══╝╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝
+*/
+
+
+# Unification for the Smelting Bonus
+// IIngredient input, IItemStack stack
+function swapBonus(input as IIngredient, wrong as IItemStack, right as WeightedItemStack) as void {
+	mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(input, wrong);
+	mods.thaumcraft.SmeltingBonus.addSmeltingBonus(input, right);
+}
+
+for i, oreBase in "Copper Tin Silver Lead".split(' ') {
+	val wrong = <thaumcraft:nugget>.definition.makeStack(i+1);
+	val nugget = oreDict["nugget"~oreBase].firstItem;
+	swapBonus(oreDict["ore"~oreBase], wrong, nugget % 33);
+	swapBonus(<thaumcraft:cluster>.definition.makeStack(i+2), wrong, nugget * 2 % 33);
+	swapBonus(<thaumicwonders:eldritch_cluster>.definition.makeStack(i+2), wrong, nugget * 4 % 33);
+}
+
+
+
+/*
+██╗███╗   ██╗███████╗██╗   ██╗███████╗██╗ ██████╗ ███╗   ██╗
+██║████╗  ██║██╔════╝██║   ██║██╔════╝██║██╔═══██╗████╗  ██║
+██║██╔██╗ ██║█████╗  ██║   ██║███████╗██║██║   ██║██╔██╗ ██║
+██║██║╚██╗██║██╔══╝  ██║   ██║╚════██║██║██║   ██║██║╚██╗██║
+██║██║ ╚████║██║     ╚██████╔╝███████║██║╚██████╔╝██║ ╚████║
+╚═╝╚═╝  ╚═══╝╚═╝      ╚═════╝ ╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+*/
+
 # Shapeless Totem of Undying
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:charm_undying>);
 recipes.addShapeless('Totem conversion', <thaumcraft:charm_undying>, [<minecraft:totem_of_undying>]);
 
-# TODO: Remove this temporary recipe when resolved: https://github.com/LoliKingdom/Thaumic-Speedup/issues/3
-mods.thaumcraft.Crucible.registerRecipe("Temporary web", "HEDGEALCHEMY", <minecraft:web>, <minecraft:string>, [<aspect:vinculum>*2]);
-mods.thaumcraft.Crucible.registerRecipe("Temporary string", "HEDGEALCHEMY", <minecraft:string>, <minecraft:wheat>, [<aspect:bestia>*2]);
+# Crimson Rites
+mods.thaumcraft.Infusion.registerRecipe("crimson_rites", "INFUSION",
+<thaumcraft:curio:6>, 15,
+[<aspect:vitium> * 30, <aspect:mortuus> * 15, <aspect:praecantatio> * 30, <aspect:auram> * 10],
+<thaumcraft:thaumonomicon>,
+[<thaumcraft:ingot>, <thaumictinkerer:energetic_nitor>, <thaumcraft:salis_mundus>, <thaumictinkerer:energetic_nitor>, <thaumcraft:salis_mundus>, <thaumictinkerer:energetic_nitor>, <thaumcraft:ingot>, <thaumictinkerer:energetic_nitor>]);
 
+# [Spawn Lesser Crimson Portal] from [Golden Egg][+3]
+mods.thaumcraft.Infusion.registerRecipe("spawn_lesser_crimson_portal", "INFUSION",
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "thaumcraft:cultistportallesser"}}), 15,
+[<aspect:vitium> * 90, <aspect:mortuus> * 45, <aspect:praecantatio> * 90, <aspect:auram> * 30],
+<randomthings:ingredient:11>,      # Golden Egg
+scripts.craft.grid.Grid(["-K-T-K-T"], {
+  "-": <thaumictinkerer:energetic_nitor>, # Energetic Nitor
+  "K": <extrautils2:klein>,               # Klein Bottle
+  "T": <thaumcraft:taint_log>,            # Taintwood Log
+}).shapeless());
+
+# [Blank Greater Focus] from [Blank Advanced Focus][+5]
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:focus_3>);
+mods.thaumcraft.Infusion.registerRecipe(
+  "focus_3", # Name
+  "INFUSION", # Research
+  <thaumcraft:focus_3>, # Output
+  3, # Instability
+  [<aspect:vacuos> * 100, <aspect:praecantatio> * 20],
+  <thaumcraft:focus_2>, # CentralItem
+  scripts.craft.grid.Grid(["pretty",
+  "  ˛  ",
+  "q   q",
+  "  ‚  "], {
+  "˛": <ore:nuggetNetherStar>, # Nether Star Nugget
+  "q": <ore:quicksilver>,      # Quicksilver
+  "‚": <ore:nuggetVoid>,       # Void Metal Nugget
+}).spiral());
+
+# [Control Seal_ Block Breaker] from [Blank Seal][+3]
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:seal:12>);
+mods.thaumcraft.Infusion.registerRecipe(
+  "SealBreak", # Name
+  "SEALBREAK", # Research
+  <thaumcraft:seal:12>, # Output
+  3, # Instability
+  [<aspect:perditio> * 10],
+  <thaumcraft:seal>, # Central Item
+  scripts.craft.grid.Grid(["oG"], {
+  "o": <minecraft:golden_pickaxe>.anyDamage(), # Golden Pickaxe
+  "G": <minecraft:golden_shovel>.anyDamage(),  # Golden Shovel
+}).spiral());
+
+# [Biothaumic Mind] from [Clockwork Mind][+2]
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:mind:1>);
+mods.thaumcraft.Infusion.registerRecipe(
+  "MindBiothaumic", # Name
+  "MINDBIOTHAUMIC", # Research
+  <thaumcraft:mind:1>, # Output
+  3, # Instability
+  [<aspect:cognitio> * 10],
+  <thaumcraft:mind>, # Central Item
+  scripts.craft.grid.Grid(["ZZ"], {
+  "Z": <thaumcraft:brain>, # Zombie Brain
+}).spiral());
+
+# [Causality Collapser]*4 from [TNT][+4]
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:causality_collapser>);
+mods.thaumcraft.Infusion.registerRecipe(
+  "CausalityCollapser", # Name
+  "RIFTCLOSER", # Research
+  <thaumcraft:causality_collapser> * 4, # Output
+  3, # Instability
+  [<aspect:alienis> * 40, <aspect:vitium> * 40],
+  <minecraft:tnt>, # Central Item
+  scripts.craft.grid.Grid(["pretty",
+  "  E  ",
+  "♥   ♥",
+  "  E  "], {
+  "E": <thaumictinkerer:energetic_nitor>, # Energetic Nitor
+  "♥": <ore:blockRedstone>,               # Block of Redstone
+}).spiral());
+
+/*
+ ██████╗██████╗ ██╗   ██╗ ██████╗██╗██████╗ ██╗     ███████╗
+██╔════╝██╔══██╗██║   ██║██╔════╝██║██╔══██╗██║     ██╔════╝
+██║     ██████╔╝██║   ██║██║     ██║██████╔╝██║     █████╗  
+██║     ██╔══██╗██║   ██║██║     ██║██╔══██╗██║     ██╔══╝  
+╚██████╗██║  ██║╚██████╔╝╚██████╗██║██████╔╝███████╗███████╗
+ ╚═════╝╚═╝  ╚═╝ ╚═════╝  ╚═════╝╚═╝╚═════╝ ╚══════╝╚══════╝
+*/
+
+function remakeCrucible(name as string, research as string, output as IItemStack, input as IIngredient, aspects as CTAspectStack[]) as void {
+	mods.thaumcraft.Crucible.removeRecipe(output.anyAmount());
+	mods.thaumcraft.Crucible.registerRecipe(name, research, output, input, aspects);
+}
+
+mods.thaumcraft.Crucible.registerRecipe("Quartz ore fix", "METALPURIFICATION", <thaumcraft:cluster:7>, <ore:oreQuartz>, [<aspect:metallum>*5, <aspect:ordo>*5]);
+
+# Tallow harder
+mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:tallow>);
+mods.thaumcraft.Crucible.registerRecipe("hedge_tallow"       , "HEDGEALCHEMY@1", <thaumcraft:tallow>,   <minecraft:rotten_flesh>, [<aspect:ignis>]);
+mods.thaumcraft.Crucible.registerRecipe("Tallow from tallow" , "HEDGEALCHEMY@1", <thaumcraft:tallow>*2, <quark:tallow>, [<aspect:ignis>*2]);
+mods.thaumcraft.Crucible.registerRecipe("Tallow from blubber", "HEDGEALCHEMY@1", <thaumcraft:tallow>*8, utils.tryCatch('betteranimalsplus:blubber', <animania:raw_prime_pork>), [<aspect:ignis>*4]);
 
 function soulRecipe(entityId as string, aspects as CTAspectStack[]) as void {
 	mods.thaumcraft.Crucible.registerRecipe(
@@ -327,3 +539,24 @@ soulRecipe("minecraft:vindication_illager", [<aspect:humanus> * 500, <aspect:rat
 soulRecipe("minecraft:illusion_illager"   , [<aspect:humanus> * 500, <aspect:rattus> * 500, <aspect:victus> * 500]);
 
 soulRecipe("minecraft:vex"                , [<aspect:alienis> * 500, <aspect:draco> * 500, <aspect:visum> * 500]);
+
+
+# Cheaper stuff
+remakeCrucible("nitor"      		,  "BASEALCHEMY", <thaumcraft:nitor_yellow> * 10, <minecraft:glowstone_dust>, [<aspect:potentia> * 10, <aspect:ignis> * 10, <aspect:lux> * 10]);
+remakeCrucible("hedge_dye"      , "HEDGEALCHEMY", <minecraft:dye> * 2, <minecraft:dye>, [<aspect:sensus>]);
+// remakeCrucible("hedge_glowstone", "HEDGEALCHEMY", <minecraft:glowstone_dust> * 2, <minecraft:glowstone_dust>, [<aspect:lux>*2, <aspect:sensus>]);
+remakeCrucible("hedge_slime"    , "HEDGEALCHEMY", <minecraft:slime_ball> * 2, <minecraft:slime_ball>, [<aspect:victus>]);
+// remakeCrucible("hedge_gunpowder", "HEDGEALCHEMY", <minecraft:gunpowder> * 2, <minecraft:gunpowder>, [<aspect:exitium>*5]);
+remakeCrucible("hedge_leather"  , "HEDGEALCHEMY", <minecraft:leather>, <minecraft:rotten_flesh>, [<aspect:bestia>*2]);
+
+# TODO: Remove this temporary recipe when resolved: https://github.com/LoliKingdom/Thaumic-Speedup/issues/3
+remakeCrucible("hedge_web"      , "HEDGEALCHEMY", <minecraft:web>, <minecraft:string>, [<aspect:vinculum>*2]);
+remakeCrucible("hedge_string"   , "HEDGEALCHEMY", <minecraft:string>, <minecraft:wheat>, [<aspect:bestia>*2]);
+
+# Cheaper Focus
+remakeCrucible("focus_1", "UNLOCKAUROMANCY", <thaumcraft:focus_1>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}), [<aspect:auram>*15]);
+
+# Cheaper metals
+remakeCrucible("brassingot"   , "METALLURGY", <thaumcraft:ingot:2> * 2, <ore:ingotAlubrass>, [<aspect:instrumentum> * 5]);
+remakeCrucible("thaumiumingot", "METALLURGY", <thaumcraft:ingot>, <ore:ingotLead>, [<aspect:praecantatio>*5, <aspect:terra>*5]);
+

@@ -106,7 +106,7 @@ static armorStaged as IData[string] =
       {id:"animus:bloodapple"}
   ]},
   armor_thaumium:{
-    prev: "armor_manasteel", 
+    prev: "armor_leather", 
     tier: 3,
     material: "ore:ingotThaumium",
     recycle:  "ore:ingotThaumium",

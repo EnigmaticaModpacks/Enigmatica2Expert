@@ -124,7 +124,6 @@ val defaultArmorMats as IData = [
   "emerald_plustic"        , # 48
   "endorium"               , # 49
   "advanced_alloy"         , # 50
-  "thaumium"               , # 50
   "manyullyn"              , # 50
   "ardite"                 , # 51
   "iridium"                , # 51
@@ -133,6 +132,7 @@ val defaultArmorMats as IData = [
   "ma.inferium"            , # 53
   "pink_metal"             , # 54
   "xu_evil_metal"          , # 54
+  "thaumium"               , # 54
   "pulsating_iron"         , # 55
   "osgloglas"              , # 56
   "emeraldic_crystal"      , # 56
@@ -285,7 +285,6 @@ val defaultWeaponMats as IData = [
   "ghostwood"              , # 134
   "energetic_alloy"        , # 135
   "osmium"                 , # 140
-  "thaumium"               , # 140
   "lumium"                 , # 141
   "enori_crystal"          , # 141
   "steel"                  , # 143
@@ -316,6 +315,7 @@ val defaultWeaponMats as IData = [
   "signalum"               , # 181
   "platinum"               , # 192
   "osgloglas"              , # 193
+  "thaumium"               , # 193
   "restonia_crystal"       , # 195
   "tough"                  , # 199
   "enderium"               , # 200
