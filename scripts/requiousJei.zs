@@ -72,18 +72,39 @@ Object.entries(
   _.groupBy(
     getCrtLogBlock('Thaumcraft dump:\n-Smelting Bonus:\n', '\n-Warp')
       .split('\n')
+
+      // Filter unwanted ores
       .filter((s) => !s.match(/yellorium/i))
-      .map((s) => s.match(/--in: (.*?), out: (.*?), change: (.*)/)?.splice(1))
-      .filter((s) => s),
+
+      // Split into [in, out, chance]
+      .map((s) =>
+        s.match(/--in: (.*?), out: (.*?), change: (.*)/)?.splice(1)
+      )
+      .filter(Boolean)
+
+      // Unwrap wildcarded
+      .flatMap(([inp, out, chance]) => {
+        const id = inp.match(/<([^:]+:[^:]+):\*>/)?.[1]
+        if (!id) return [[inp, out, chance]]
+        return getSubMetas(id).map((meta) => [
+          `<${id}:${meta}>`,
+          out,
+          chance,
+        ])
+      }),
     '0'
   )
 )
+  // Filter only items that actually present in furnace
   .filter(([inp]) => {
     const oreName = inp.match(/<ore:([^>]+)>/)?.[1]
     if (!oreName) return true
     return getByOredict(oreName).some((tm) =>
       getFurnaceRecipes().some(
-        (fr) => fr.in_id == tm.id && (fr.in_meta == '*' || Number(fr.in_meta ?? 0) == tm.damage)
+        (fr) =>
+          fr.in_id === tm.id &&
+          (fr.in_meta === '*' ||
+            Number(fr.in_meta ?? 0) === tm.damage)
       )
     )
   })
@@ -92,7 +113,9 @@ Object.entries(
       `addInfFur(${inp.padEnd(41)}, [${arr
         .map(
           ([, out, chance]) =>
-            out.replace('<thaumcraft:nugget:10>', 'RE') + ' % ' + ((parseFloat(chance) * 100) | 0)
+            out.replace('<thaumcraft:nugget:10>', 'RE') +
+            ' % ' +
+            ((parseFloat(chance) * 100) | 0)
         )
         .sort((a, b) => a.length - b.length)
         .join(', ')}]);`
@@ -183,7 +206,10 @@ addInfFur(<jaopca:item_dirtygemtungsten>           , [<thermalfoundation:materia
 addInfFur(<jaopca:item_dirtygemuranium>            , [<jaopca:item_nuggetlithium> * 64 % 100]);
 addInfFur(<minecraft:beef>                         , [<thaumcraft:chunk> % 33]);
 addInfFur(<minecraft:chicken>                      , [<thaumcraft:chunk:1> % 33]);
-addInfFur(<minecraft:fish:*>                       , [<thaumcraft:chunk:3> % 33]);
+addInfFur(<minecraft:fish:0>                       , [<thaumcraft:chunk:3> % 33]);
+addInfFur(<minecraft:fish:1>                       , [<thaumcraft:chunk:3> % 33]);
+addInfFur(<minecraft:fish:2>                       , [<thaumcraft:chunk:3> % 33]);
+addInfFur(<minecraft:fish:3>                       , [<thaumcraft:chunk:3> % 33]);
 addInfFur(<minecraft:mutton>                       , [<thaumcraft:chunk:5> % 33]);
 addInfFur(<minecraft:porkchop>                     , [<thaumcraft:chunk:2> % 33]);
 addInfFur(<minecraft:rabbit>                       , [<thaumcraft:chunk:4> % 33]);
@@ -260,24 +286,24 @@ addInfFur(<rats:rat_nugget_ore:96>.withTag({OreItem: {id: "biomesoplenty:gem_ore
 addInfFur(<rats:rat_nugget_ore:97>.withTag({OreItem: {id: "nuclearcraft:ore", Count: 1 as byte, Damage: 3 as short}, IngotItem: {id: "nuclearcraft:ingot", Count: 1 as byte, Damage: 3 as short}}), [<jaopca:item_nuggetboron> * 13 % 50]);
 addInfFur(<rats:rat_nugget_ore:99>.withTag({OreItem: {id: "biomesoplenty:gem_ore", Count: 1 as byte, Damage: 3 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1 as byte, Damage: 3 as short}}), [<thaumcraft:nugget:9> * 30 % 50]);
 addInfFur(<rats:rat_nugget_ore:101>.withTag({OreItem: {id: "immersiveengineering:ore", Count: 1 as byte, Damage: 5 as short}, IngotItem: {id: "immersiveengineering:metal", Count: 1 as byte, Damage: 5 as short}}), [<jaopca:item_nuggetlithium> * 13 % 50]);
-addInfFur(<thaumcraft:cluster:*>                   , [RE % 2]);
-addInfFur(<thaumcraft:cluster:1>                   , [<minecraft:gold_nugget> % 33, <thermalfoundation:material:196> * 27 % 50]);
-addInfFur(<thaumcraft:cluster:2>                   , [<thaumcraft:nugget:1> % 33, <minecraft:gold_nugget> * 27 % 50, <thermalfoundation:material:192> * 2 % 32]);
-addInfFur(<thaumcraft:cluster:3>                   , [<thaumcraft:nugget:2> % 33, <thermalfoundation:material:193> * 2 % 32, <thermalfoundation:material:195> * 27 % 50]);
-addInfFur(<thaumcraft:cluster:4>                   , [<thaumcraft:nugget:3> % 33, <minecraft:gold_nugget> * 27 % 50, <thermalfoundation:material:194> * 2 % 32]);
-addInfFur(<thaumcraft:cluster:5>                   , [<thaumcraft:nugget:4> % 33, <thermalfoundation:material:195> * 2 % 32, <thermalfoundation:material:194> * 27 % 50]);
-addInfFur(<thaumcraft:cluster:6>                   , [<thaumcraft:nugget:5> % 33]);
-addInfFur(<thaumcraft:cluster:7>                   , [<thaumcraft:nugget:9> % 33, <thermalfoundation:material:16> * 41 % 50]);
+addInfFur(<thaumcraft:cluster:0>                   , [RE % 2]);
+addInfFur(<thaumcraft:cluster:1>                   , [RE % 2, <minecraft:gold_nugget> % 33, <thermalfoundation:material:196> * 27 % 50]);
+addInfFur(<thaumcraft:cluster:2>                   , [RE % 2, <thaumcraft:nugget:1> % 33, <minecraft:gold_nugget> * 27 % 50, <thermalfoundation:material:192> * 2 % 32]);
+addInfFur(<thaumcraft:cluster:3>                   , [RE % 2, <thaumcraft:nugget:2> % 33, <thermalfoundation:material:193> * 2 % 32, <thermalfoundation:material:195> * 27 % 50]);
+addInfFur(<thaumcraft:cluster:4>                   , [RE % 2, <thaumcraft:nugget:3> % 33, <minecraft:gold_nugget> * 27 % 50, <thermalfoundation:material:194> * 2 % 32]);
+addInfFur(<thaumcraft:cluster:5>                   , [RE % 2, <thaumcraft:nugget:4> % 33, <thermalfoundation:material:195> * 2 % 32, <thermalfoundation:material:194> * 27 % 50]);
+addInfFur(<thaumcraft:cluster:6>                   , [RE % 2, <thaumcraft:nugget:5> % 33]);
+addInfFur(<thaumcraft:cluster:7>                   , [RE % 2, <thaumcraft:nugget:9> % 33, <thermalfoundation:material:16> * 41 % 50]);
 addInfFur(<thaumcraft:cluster>                     , [<minecraft:iron_nugget> % 33, <minecraft:gold_nugget> * 27 % 50]);
-addInfFur(<thaumicwonders:eldritch_cluster:*>      , [RE % 2, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) % 10]);
-addInfFur(<thaumicwonders:eldritch_cluster:1>      , [<minecraft:gold_nugget> % 33]);
-addInfFur(<thaumicwonders:eldritch_cluster:2>      , [<thaumcraft:nugget:1> % 33, <thermalfoundation:material:192> * 4 % 32]);
-addInfFur(<thaumicwonders:eldritch_cluster:3>      , [<thaumcraft:nugget:2> % 33, <thermalfoundation:material:193> * 4 % 32]);
-addInfFur(<thaumicwonders:eldritch_cluster:4>      , [<thaumcraft:nugget:3> % 33, <thermalfoundation:material:194> * 4 % 32]);
-addInfFur(<thaumicwonders:eldritch_cluster:5>      , [<thaumcraft:nugget:4> % 33, <thermalfoundation:material:195> * 4 % 32]);
-addInfFur(<thaumicwonders:eldritch_cluster:6>      , [<thaumcraft:nugget:5> % 33]);
-addInfFur(<thaumicwonders:eldritch_cluster:7>      , [<thaumcraft:nugget:9> % 33]);
-addInfFur(<thaumicwonders:eldritch_cluster:8>      , [<thaumcraft:nugget:7> % 33]);
+addInfFur(<thaumicwonders:eldritch_cluster:0>      , [RE % 2, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) % 10]);
+addInfFur(<thaumicwonders:eldritch_cluster:1>      , [RE % 2, <minecraft:gold_nugget> % 33, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) % 10]);
+addInfFur(<thaumicwonders:eldritch_cluster:2>      , [RE % 2, <thaumcraft:nugget:1> % 33, <thermalfoundation:material:192> * 4 % 32, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) % 10]);
+addInfFur(<thaumicwonders:eldritch_cluster:3>      , [RE % 2, <thaumcraft:nugget:2> % 33, <thermalfoundation:material:193> * 4 % 32, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) % 10]);
+addInfFur(<thaumicwonders:eldritch_cluster:4>      , [RE % 2, <thaumcraft:nugget:3> % 33, <thermalfoundation:material:194> * 4 % 32, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) % 10]);
+addInfFur(<thaumicwonders:eldritch_cluster:5>      , [RE % 2, <thaumcraft:nugget:4> % 33, <thermalfoundation:material:195> * 4 % 32, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) % 10]);
+addInfFur(<thaumicwonders:eldritch_cluster:6>      , [RE % 2, <thaumcraft:nugget:5> % 33, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) % 10]);
+addInfFur(<thaumicwonders:eldritch_cluster:7>      , [RE % 2, <thaumcraft:nugget:9> % 33, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) % 10]);
+addInfFur(<thaumicwonders:eldritch_cluster:8>      , [RE % 2, <thaumcraft:nugget:7> % 33, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) % 10]);
 addInfFur(<thaumicwonders:eldritch_cluster>        , [<minecraft:iron_nugget> % 33]);
 /**/
 
@@ -390,40 +416,38 @@ x = <assembly:neromantic_prime>;
 x.addJEICatalyst(<astralsorcery:blockbore>);
 x.addJEICatalyst(<astralsorcery:blockborehead>);
 x.addJEICatalyst(<astralsorcery:blockchalice>);
+x.setJEIFluidSlot(0, 0, 'fluid_out');
 
-static fluidOutputs as ILiquidStack[] = [
+static neromantic_prime_fluids as ILiquidStack[] = [
 /*Inject_js(
 config('config/astralsorcery/fluid_rarities.cfg').data.data
 .slice(0, 9*5)
 .map(l=>l.split(';'))
 .map(l=>[
   parseInt(l[3]),
-  `  <fluid:${(l[0]+'>').padEnd(24)} * ${l[3]},`
+  [`  <fluid:${(l[0]+'>')}`,` * ${l[3]},`]
 ])
 .sort(([a], [b]) => b - a)
-.map(([_,l])=>l)
-.join('\n')
+.map(([,l])=>l)
 )*/
-  <fluid:mana>                    * 1500,
-  <fluid:amber>                   * 800,
-  <fluid:xpjuice>                 * 500,
-  <fluid:pyrotheum>               * 200,
-  <fluid:cryotheum>               * 200,
-  <fluid:hydrofluoric_acid>       * 120,
-  <fluid:mutagen>                 * 100,
-  <fluid:vibrant_alloy>           * 40,
-  <fluid:ic2uu_matter>            * 1,
+  <fluid:mana>              * 1500,
+  <fluid:amber>             * 800,
+  <fluid:xpjuice>           * 500,
+  <fluid:pyrotheum>         * 200,
+  <fluid:cryotheum>         * 200,
+  <fluid:hydrofluoric_acid> * 120,
+  <fluid:mutagen>           * 100,
+  <fluid:vibrant_alloy>     * 40,
+  <fluid:ic2uu_matter>      * 1,
 /**/
 ];
 
-for i, fluid in fluidOutputs {
-  x.setJEIFluidSlot(i % 9, (i / 9) as int, 'f'~i);
+for i, output in neromantic_prime_fluids {
+  x.addJEIRecipe(AssemblyRecipe.create(function(container) {
+    container.addFluidOutput("fluid_out", output);
+  }));
 }
-x.addJEIRecipe(AssemblyRecipe.create(function(container) {
-  for i, output in fluidOutputs {
-    container.addFluidOutput("f"~i, output);
-  }
-}));
+
 
 // -----------------------------------------------------------------------
 // -----------------------------------------------------------------------
@@ -1444,8 +1468,34 @@ addInsOuts(x, [
 ], [
   [6,1],[7,1],[8,1],
 ]);
+x.setJEIItemSlot(4, 0, 'input0', getVisSlots(0,2));
+x.setJEIFluidSlot(1, 3, 'fluid_in');
+x.setJEIFluidSlot(7, 2, 'fluid_out');
 
-add(x, {[Soul('randomthings:goldenchicken'), null, null, null, null, <thaumcraft:cluster:1>] : [null, <minecraft:gold_ingot> * 8]});
+function addCraftingHint_single(input as IIngredient, output as IItemStack, catalyst as IIngredient = null) as void {
+  add(<assembly:crafting_hints>, {
+    [catalyst, null, null, null, null, input] : [null, output]
+  });
+}
+
+addCraftingHint_single(<thaumcraft:cluster:1>, <minecraft:gold_ingot> * 8, Soul('randomthings:goldenchicken'));
+addCraftingHint_single(Soul("minecraft:zombie"), <bloodmagic:blood_shard>, <bloodmagic:bound_sword>.withTag({Unbreakable: 1 as byte, activated: 1 as byte}));
+
+x.addJEIRecipe(AssemblyRecipe.create(function(c) {
+  c.addFluidOutput('fluid_out', <liquid:canolaoil> * 80);})
+  .requireItem("input0", <actuallyadditions:block_canola_press>)
+  .requireItem("input5", <actuallyadditions:item_misc:13>)
+);
+x.addJEIRecipe(AssemblyRecipe.create(function(c) {
+  c.addFluidOutput('fluid_out', <liquid:refinedcanolaoil> * 80);})
+  .requireFluid("fluid_in", <liquid:canolaoil> * 80)
+  .requireItem("input0", <actuallyadditions:block_fermenting_barrel>)
+);
+x.addJEIRecipe(AssemblyRecipe.create(function(c) {
+  c.addFluidOutput('fluid_out', <liquid:blockfluidantimatter> * 1000);})
+  .requireFluid("fluid_in", <liquid:lifeessence> * 1000)
+  .requireItem("input0", <cyclicmagic:ender_lightning>)
+);
 
 // -----------------------------------------------------------------------
 // -----------------------------------------------------------------------
