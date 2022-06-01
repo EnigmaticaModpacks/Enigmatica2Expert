@@ -293,7 +293,7 @@ function beneficiate(
 
   # Infernal Furnace
   if (!isNull(JA)) {
-    val outTriple = (amount as double * (calc.out1 as double * 3.0d)) as int;
+    val outTriple = (amount as double * calc.out1 as double) as int;
     val nuggetExtra = utils.getSomething(JA.secondExtraName, ["nugget"], outTriple);
     if (!isNull(nuggetExtra)) {
       val input1 = input.itemArray[0].anyAmount();
@@ -328,7 +328,7 @@ function beneficiate(
 
   # Melt
   val molten as ILiquidStack = !isNull(JA) ? JA.getLiquidStack("molten") : null;
-  val altLiquid as ILiquidStack = game.getLiquid(oreName.toLowerCase());
+  val altLiquid as ILiquidStack = game.getLiquid((oreName=='Aluminium'?'Aluminum':oreName).toLowerCase());
   val liquid = isNull(molten) ? altLiquid : molten;
   if (!isNull(liquid) && !isNull(JA)) {
     var meltingExceptions = D(opts).get('meltingExceptions',{d:[]}).asList();

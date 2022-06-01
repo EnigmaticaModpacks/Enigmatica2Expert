@@ -1,3 +1,6 @@
 [
-  {"key": "FOCUSBREAK","ops": [{"op": "replace","path": "stages/0/required_item","value": ["minecraft:enchanted_book"]}]}
+   {"key": "FOCUSBREAK","ops": [{"op": "replace","path": "stages/0/required_item","value": ["minecraft:enchanted_book"]}]}
+  ,{"key": "TT_ENCHANTER","ops": [{"op": "replace","path": "stages/1/recipes/0","value": "thaumcraft:osmotic_enchanter"}]}
+  ,{"key": "TWOND_FLUX_CAPACITOR","ops": [{"op": "replace","path": "stages/1/recipes/0","value": "thaumcraft:flux_capacitor"}]}
+  ,{"key": "TWOND_FLUX_DISTILLER","ops": [{"op": "replace","path": "stages/1/recipes/0","value": "thaumcraft:flux_distiller"}]}
 ]

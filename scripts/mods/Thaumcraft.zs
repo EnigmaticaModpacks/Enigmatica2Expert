@@ -130,16 +130,6 @@ craft.make(<thaumcraft:salis_mundus>, ["DEFCAB"], {
   }, true /* True for shapeless */
 );
 
-# Fix conflict
-# [Black Quartz Block] from [Smokey Quartz]
-recipes.removeByRecipeName("thaumictinkerer:black_quartz_block");
-craft.make(<thaumictinkerer:black_quartz_block>, ["pretty",
-  "⌃   ⌃",
-  "     ",
-  "⌃   ⌃"], {
-  "⌃": <ore:quartzDark>, # Smokey Quartz
-});
-
 // ---------------------------
 // Remake colored candles
 val candleColors = [
@@ -397,7 +387,7 @@ mods.thaumcraft.Infusion.registerRecipe(
   "focus_3", # Name
   "INFUSION", # Research
   <thaumcraft:focus_3>, # Output
-  3, # Instability
+  1, # Instability
   [<aspect:vacuos> * 100, <aspect:praecantatio> * 20],
   <thaumcraft:focus_2>, # CentralItem
   scripts.craft.grid.Grid(["pretty",
@@ -415,7 +405,7 @@ mods.thaumcraft.Infusion.registerRecipe(
   "SealBreak", # Name
   "SEALBREAK", # Research
   <thaumcraft:seal:12>, # Output
-  3, # Instability
+  1, # Instability
   [<aspect:perditio> * 10],
   <thaumcraft:seal>, # Central Item
   scripts.craft.grid.Grid(["oG"], {
@@ -429,7 +419,7 @@ mods.thaumcraft.Infusion.registerRecipe(
   "MindBiothaumic", # Name
   "MINDBIOTHAUMIC", # Research
   <thaumcraft:mind:1>, # Output
-  3, # Instability
+  1, # Instability
   [<aspect:cognitio> * 10],
   <thaumcraft:mind>, # Central Item
   scripts.craft.grid.Grid(["ZZ"], {
@@ -441,16 +431,16 @@ mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:causality_collapser>);
 mods.thaumcraft.Infusion.registerRecipe(
   "CausalityCollapser", # Name
   "RIFTCLOSER", # Research
-  <thaumcraft:causality_collapser> * 4, # Output
-  3, # Instability
-  [<aspect:alienis> * 40, <aspect:vitium> * 40],
-  <minecraft:tnt>, # Central Item
+  <thaumcraft:causality_collapser>, # Output
+  2, # Instability
+  [<aspect:alienis> * 20, <aspect:vitium> * 20],
+  <thaumictinkerer:energetic_nitor>, # Central Item
   scripts.craft.grid.Grid(["pretty",
-  "  E  ",
-  "♥   ♥",
-  "  E  "], {
-  "E": <thaumictinkerer:energetic_nitor>, # Energetic Nitor
-  "♥": <ore:blockRedstone>,               # Block of Redstone
+  "  ▲  ",
+  "D   D",
+  "  ▲  "], {
+  "▲": <ore:dustBedrock>,         # Grains of Infinity
+  "D": <cyclicmagic:ender_tnt_1>, # Dynamite I
 }).spiral());
 
 /*
@@ -543,20 +533,30 @@ soulRecipe("minecraft:vex"                , [<aspect:alienis> * 500, <aspect:dra
 
 # Cheaper stuff
 remakeCrucible("nitor"      		,  "BASEALCHEMY", <thaumcraft:nitor_yellow> * 10, <minecraft:glowstone_dust>, [<aspect:potentia> * 10, <aspect:ignis> * 10, <aspect:lux> * 10]);
-remakeCrucible("hedge_dye"      , "HEDGEALCHEMY", <minecraft:dye> * 2, <minecraft:dye>, [<aspect:sensus>]);
-// remakeCrucible("hedge_glowstone", "HEDGEALCHEMY", <minecraft:glowstone_dust> * 2, <minecraft:glowstone_dust>, [<aspect:lux>*2, <aspect:sensus>]);
-remakeCrucible("hedge_slime"    , "HEDGEALCHEMY", <minecraft:slime_ball> * 2, <minecraft:slime_ball>, [<aspect:victus>]);
-// remakeCrucible("hedge_gunpowder", "HEDGEALCHEMY", <minecraft:gunpowder> * 2, <minecraft:gunpowder>, [<aspect:exitium>*5]);
-remakeCrucible("hedge_leather"  , "HEDGEALCHEMY", <minecraft:leather>, <minecraft:rotten_flesh>, [<aspect:bestia>*2]);
+// remakeCrucible("hedge_dye"      , "HEDGEALCHEMY@2", <minecraft:dye> * 2, <minecraft:dye>, [<aspect:sensus>]);
+// remakeCrucible("hedge_slime"    , "HEDGEALCHEMY@2", <minecraft:slime_ball> * 2, <minecraft:slime_ball>, [<aspect:victus>]);
+// remakeCrucible("hedge_glowstone", "HEDGEALCHEMY@2", <minecraft:glowstone_dust> * 2, <minecraft:glowstone_dust>, [<aspect:lux>*2, <aspect:sensus>]);
+// remakeCrucible("hedge_gunpowder", "HEDGEALCHEMY@2", <minecraft:gunpowder> * 2, <minecraft:gunpowder>, [<aspect:exitium>*5]);
+remakeCrucible("hedge_leather"  , "HEDGEALCHEMY@2", <minecraft:leather>, <minecraft:rotten_flesh>, [<aspect:bestia>*2]);
 
 # TODO: Remove this temporary recipe when resolved: https://github.com/LoliKingdom/Thaumic-Speedup/issues/3
-remakeCrucible("hedge_web"      , "HEDGEALCHEMY", <minecraft:web>, <minecraft:string>, [<aspect:vinculum>*2]);
-remakeCrucible("hedge_string"   , "HEDGEALCHEMY", <minecraft:string>, <minecraft:wheat>, [<aspect:bestia>*2]);
+remakeCrucible("hedge_web"      , "HEDGEALCHEMY@3", <minecraft:web>, <minecraft:string>, [<aspect:vinculum>*2]);
+remakeCrucible("hedge_string"   , "HEDGEALCHEMY@3", <minecraft:string>, <minecraft:wheat>, [<aspect:bestia>*2]);
 
 # Cheaper Focus
 remakeCrucible("focus_1", "UNLOCKAUROMANCY", <thaumcraft:focus_1>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}), [<aspect:auram>*15]);
 
 # Cheaper metals
-remakeCrucible("brassingot"   , "METALLURGY", <thaumcraft:ingot:2> * 2, <ore:ingotAlubrass>, [<aspect:instrumentum> * 5]);
-remakeCrucible("thaumiumingot", "METALLURGY", <thaumcraft:ingot>, <ore:ingotLead>, [<aspect:praecantatio>*5, <aspect:terra>*5]);
+remakeCrucible("brassingot"   , "METALLURGY@1", <thaumcraft:ingot:2> * 2, <ore:ingotAlubrass>, [<aspect:instrumentum> * 5]);
+remakeCrucible("thaumiumingot", "METALLURGY@2", <thaumcraft:ingot>, <ore:ingotLead>, [<aspect:praecantatio>*5, <aspect:terra>*5]);
 
+# Cheaper to less microcraftings
+# [Sanitizing Soap] from [Phial of Cognitio Essentia]*6[+2]
+mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:sanity_soap>);
+mods.thaumcraft.Crucible.registerRecipe(
+  "SaneSoap", # Name
+  "SANESOAP", # Research
+  <thaumcraft:sanity_soap>, # Output
+  <ore:blockFlesh>, # Input
+  [<aspect:cognitio> * 60, <aspect:victus> * 60]
+);
