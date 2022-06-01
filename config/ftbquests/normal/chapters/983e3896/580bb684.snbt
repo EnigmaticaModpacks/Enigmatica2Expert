@@ -29,7 +29,6 @@
 	{
 		uid: "fe21d9fb",
 		type: "command",
-		auto: "invisible",
 		command: "/astralsorcery research @p BASIC_CRAFT"
 	}]
 }

@@ -1,5 +1,5 @@
 {
-	x: -0.6d,
+	x: -0.6000000000000001d,
 	y: 5.3d,
 	text: [
 		"Battery that stores 10 vis and release it when chunk's Vis is low."

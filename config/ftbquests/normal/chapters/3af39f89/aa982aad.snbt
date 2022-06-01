@@ -1,14 +1,9 @@
 {
+	title: "{bq.quest879.name}",
+	icon: "thermalexpansion:frame 1 64",
 	x: 10.0d,
 	y: 4.5d,
 	dependencies: [
 		"85977752"
-	],
-	tasks: [{
-		uid: "fe354f4a",
-		type: "custom",
-		title: "{bq.quest879.name}",
-		icon: "thermalexpansion:frame 1 64",
-		disable_toast: true
-	}]
+	]
 }

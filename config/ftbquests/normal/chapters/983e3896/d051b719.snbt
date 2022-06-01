@@ -29,7 +29,6 @@
 	{
 		uid: "9e64d2db",
 		type: "command",
-		auto: "invisible",
 		command: "/astralsorcery research @p ATTUNEMENT"
 	}]
 }

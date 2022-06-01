@@ -1,0 +1,24 @@
+{
+	x: 4.6000000000000005d,
+	y: 9.2d,
+	text: [
+		"Breed animals.",
+		"Consumption reduced to 1 / operation."
+	],
+	dependencies: [
+		"38a388cd"
+	],
+	tasks: [{
+		uid: "3f9fd9ba",
+		type: "item",
+		items: [{
+			item: "thaumcraft:lamp_fertility"
+		}]
+	}],
+	rewards: [{
+		uid: "70de2038",
+		type: "item",
+		item: "thaumcraft:curio 1 5",
+		count: 5
+	}]
+}

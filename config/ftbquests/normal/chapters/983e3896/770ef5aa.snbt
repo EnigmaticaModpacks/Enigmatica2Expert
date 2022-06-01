@@ -29,7 +29,6 @@
 	{
 		uid: "aa6c0c3a",
 		type: "command",
-		auto: "invisible",
 		command: "/astralsorcery research @p CONSTELLATION"
 	}]
 }

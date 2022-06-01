@@ -10,7 +10,7 @@
 		"{bq.quest906.desc}"
 	],
 	dependencies: [
-		"85977752"
+		"aa982aad"
 	],
 	size: 0.6666666666666666d,
 	tasks: [{

@@ -30,7 +30,6 @@
 	{
 		uid: "2327c528",
 		type: "command",
-		auto: "invisible",
 		command: "/astralsorcery research @p RADIANCE"
 	}]
 }

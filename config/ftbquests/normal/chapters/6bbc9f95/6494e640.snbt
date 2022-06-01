@@ -1,0 +1,27 @@
+{
+	icon: "thaumicwonders:flux_distiller",
+	x: -1.7d,
+	y: 5.3d,
+	text: [
+		"Flux Distiller installed on top of Flux Capacitor.",
+		"",
+		"Its clears chunk from flux and turn it into Vitium."
+	],
+	dependencies: [
+		"c8b6a5ec"
+	],
+	tasks: [{
+		uid: "30381c7b",
+		type: "item",
+		items: [{
+			item: "thaumicwonders:flux_capacitor"
+		}]
+	},
+	{
+		uid: "c2e86b1b",
+		type: "item",
+		items: [{
+			item: "thaumicwonders:flux_distiller"
+		}]
+	}]
+}
