@@ -43,5 +43,5 @@ tooltips.lang.thermalfoundation:upgrade:3=Increases Augment Slots to §69§r §8
 tooltips.lang.twilightforest:transformation_powder=§3Sheep§r -> §2Bighorn Sheep\n§3Pig§r -> §2Wild Boar\n§3Cow§r -> §2Wild Deer\n§3Wolf§r -> §2Hostile Wolf\n§3Chicken§r -> §2Penguin\n§3Witch§r -> §2Skeleton Druid\n§3Bat§r -> §2Forest Raven\n§3Blaze§r -> §2Twilight Wraith\n§3Cave Spider§r -> §2Swarm Spider\n§3Zombie Pigman§r -> §2Minotaur\n§3Spider§r -> §2Hedge Spider
 tooltips.lang.industrialforegoing:mob_relocator=§6Deals §c%s§r §6damage
 tooltips.lang.cyclicmagic:inventory_food=§6Consume second time to revert
-tooltips.lang.oeintegration:excavatemodifier=§6Require 12 levels to reach maximum
+tooltips.lang.oeintegration:excavatemodifier=§6Require 6 levels to reach maximum
 tooltips.lang.extrautils2:goldenlasso=§cTemporarily can not carry mobs because of a bug. I'll fix it soon.

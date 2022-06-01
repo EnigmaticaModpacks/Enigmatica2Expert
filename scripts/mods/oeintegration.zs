@@ -1,12 +1,12 @@
 #modloaded oeintegration
 
-# [Excavate Modifier] from [Double Compressed Cobblestone][+1]
+# [Excavate Modifier] from [Triple Compressed Cobblestone][+1]
 craft.remake(<oeintegration:excavatemodifier>, ["pretty",
-  "‚ ‚ ‚",
-  "‚ ░ ‚",
-  "‚ ‚ ‚"], {
-  "‚": <ore:nuggetBronze>,            # Bronze Nugget
-  "░": <ore:compressed2xCobblestone>, # Double Compressed Cobblestone
+  "  □  ",
+  "□ ░ □",
+  "  □  "], {
+  "□": <ore:plateBronze>,             # Bronze Plate
+  "░": <ore:compressed3xCobblestone>, # Triple Compressed Cobblestone
 });
 
 
