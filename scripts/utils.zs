@@ -83,6 +83,10 @@ zenClass Utils {
   }
 
   function compact(a as IIngredient, b as IIngredient) as void {
+    if(b.itemArray.length <= 0 ) {
+      logger.logWarning('Cannot compact '~a.commandString~' into '~b.commandString);
+      return;
+    }
     recipes.addShapeless(b.itemArray[0].anyAmount(), [a,a,a,a,a,a,a,a,a]);
     recipes.addShapeless(a.itemArray[0] * 9, [b]);
   }

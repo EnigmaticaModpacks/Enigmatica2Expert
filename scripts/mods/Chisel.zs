@@ -117,3 +117,17 @@ addVariation("chest", <quark:custom_chest:4>);
 addVariation("endstone", <endreborn:block_end_stone_smooth>);
 addVariation("endstone", <endreborn:block_end_stone_pillar>);
 addVariation("endstone", <endreborn:chiseled_end_bricks>);
+
+addVariation("engineers_sign", <engineersdecor:sign_hotwire>);
+addVariation("engineers_sign", <engineersdecor:sign_danger>);
+addVariation("engineers_sign", <engineersdecor:sign_defense>);
+addVariation("engineers_sign", <engineersdecor:sign_factoryarea>);
+addVariation("engineers_sign", <engineersdecor:sign_exit>);
+addVariation("engineers_sign", <engineersdecor:sign_radioactive>);
+addVariation("engineers_sign", <engineersdecor:sign_laser>);
+addVariation("engineers_sign", <engineersdecor:sign_caution>);
+addVariation("engineers_sign", <engineersdecor:sign_magichazard>);
+addVariation("engineers_sign", <engineersdecor:sign_firehazard>);
+addVariation("engineers_sign", <engineersdecor:sign_hotsurface>);
+addVariation("engineers_sign", <engineersdecor:sign_magneticfield>);
+addVariation("engineers_sign", <engineersdecor:sign_frost>);

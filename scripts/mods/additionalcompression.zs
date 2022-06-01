@@ -12,6 +12,10 @@ craft.shapeless(<additionalcompression:logwood_compressed>, "#########", {
   "#": <minecraft:log:*>, # Oak Wood
 });
 
+# [Single Compressed Clay] from [Clay]
+recipes.removeByRecipeName("additionalcompression:recipe_compressedclay1");
+recipes.removeByRecipeName("additionalcompression:backwards_compressedclay0");
+utils.compact(<ore:blockClay>, <additionalcompression:clay_compressed>);
 
 # Each level of compression multiply this much
 val rate = 4;
@@ -48,10 +52,10 @@ mods.tconstruct.Melting.addRecipe(<liquid:glass> * (1000 * pow(rate, 2)), <extra
 mods.tconstruct.Melting.addRecipe(<liquid:glass> * (1000 * pow(rate, 3)), <additionalcompression:blocksand_compressed:2>);
 mods.tconstruct.Melting.addRecipe(<liquid:glass> * (1000 * pow(rate, 4)), <additionalcompression:blocksand_compressed:3>);
 
-mods.tconstruct.Melting.addRecipe(<liquid:clay> * (144 * pow(rate, 1)), <additionalcompression:clay_compressed>);
-mods.tconstruct.Melting.addRecipe(<liquid:clay> * (144 * pow(rate, 2)), <additionalcompression:clay_compressed:1>);
-mods.tconstruct.Melting.addRecipe(<liquid:clay> * (144 * pow(rate, 3)), <additionalcompression:clay_compressed:2>);
-mods.tconstruct.Melting.addRecipe(<liquid:clay> * (144 * pow(rate, 4)), <additionalcompression:clay_compressed:3>);
+mods.tconstruct.Melting.addRecipe(<liquid:clay> * (576 * pow(rate, 1)), <additionalcompression:clay_compressed>);
+mods.tconstruct.Melting.addRecipe(<liquid:clay> * (576 * pow(rate, 2)), <additionalcompression:clay_compressed:1>);
+mods.tconstruct.Melting.addRecipe(<liquid:clay> * (576 * pow(rate, 3)), <additionalcompression:clay_compressed:2>);
+mods.tconstruct.Melting.addRecipe(<liquid:clay> * (576 * pow(rate, 4)), <additionalcompression:clay_compressed:3>);
 
 mods.tconstruct.Melting.addRecipe(<liquid:dirt> * (144 * pow(rate, 1)), <extrautils2:compresseddirt>);
 mods.tconstruct.Melting.addRecipe(<liquid:dirt> * (144 * pow(rate, 2)), <extrautils2:compresseddirt:1>);
