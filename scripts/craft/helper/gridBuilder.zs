@@ -15,6 +15,7 @@ zenClass GridBuilder {
     "minecraft:iron_nugget"       : "removeByRecipeName",
     "thaumcraft:infusion_matrix"  : "tcInfusion",
     "thaumcraft:arcane_workbench" : "tcWorkbench",
+    "thaumcraft:crucible"         : "tcCrucible",
   } as string[string];
 
   var grid2d as IIngredient[][] = [];

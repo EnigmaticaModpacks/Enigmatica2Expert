@@ -42,11 +42,13 @@ zenClass GridRecipe {
       removeByRecipeName: { 
           tcInfusion : 'mods.thaumcraft.Infusion.removeRecipe("insert_recipe_name_here");\n',
           tcWorkbench: 'mods.thaumcraft.ArcaneWorkbench.removeRecipe("insert_recipe_name_here");\n',
+          tcCrucible : 'mods.thaumcraft.Crucible.removeRecipe("insert_recipe_name_here");\n',
                     _: toString_outputRecipesNames(style)
         },
       _ : { 
           tcInfusion : "mods.thaumcraft.Infusion.removeRecipe("~output_s_anyAmount~");\n",
           tcWorkbench: "mods.thaumcraft.ArcaneWorkbench.removeRecipe("~output_s_anyAmount~");\n",
+          tcCrucible : "mods.thaumcraft.Crucible.removeRecipe("~output_s_anyAmount~");\n",
         }
       }
     );
@@ -64,6 +66,7 @@ zenClass GridRecipe {
         shapeless: "mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe",
                 _: "mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe",
       },
+      tcCrucible: { _: "mods.thaumcraft.Crucible.registerRecipe" },
       shapeless : {noRemake: "craft.shapeless", _: "craft.reshapeless"},
               _ : {noRemake: "craft.make",      _: "craft.remake"},
     });
@@ -77,8 +80,9 @@ zenClass GridRecipe {
 
     # Determine parser
     val block = 
-        (style has "tcInfusion" )? serializeTCInfusion(style, output_s)
-      : (style has "tcWorkbench")? serializeTCWorkbench(style, output_s)
+        (style has "tcInfusion" ) ? serializeTCInfusion(style, output_s)
+      : (style has "tcWorkbench") ? serializeTCWorkbench(style, output_s)
+      : (style has "tcCrucible" ) ? serializeTCCrucible(style, output_s)
       : serializeTableRecipe(style, output_s)
     ;
 
@@ -112,10 +116,10 @@ zenClass GridRecipe {
         '  "'~getThaumRecipeName(output_s)~'", # Name\n'~
         '  "INFUSION", # Research\n'~
         '  '~output_s~', # Output\n'~
-        '  3, # Instability\n'~
+        '  '~extractItem('thaumcraft:taint_fibre', 3)~', # Instability\n'~
         '  '~extractGridAspects()~',\n'~
         '  '~serialize.IIngredient(centralItem) ~ ', # Central Item\n'~
-        '  scripts.craft.grid.Grid('~gridBuilder.grid.trim().toString(style)~').spiral()';
+        '  scripts.craft.grid.Grid('~grid.trim().toString(style)~').spiral()';
   }
 
   function serializeTCWorkbench(style as string[], output_s as string) as string {
@@ -131,7 +135,7 @@ zenClass GridRecipe {
     }
     return  '\n'~
         '  "'~getThaumRecipeName(output_s)~'", # Name\n'~
-        '  "BASEALCHEMY", # Research\n'~
+        '  "TWOND_BASE", # Research\n'~
         '  '~visCost~', # Vis cost\n'~
         '  '~aspects~',\n'~
         '  '~output_s~', # Output\n'~
@@ -140,13 +144,23 @@ zenClass GridRecipe {
         ~'()';
   }
 
+  function serializeTCCrucible(style as string[], output_s as string) as string {
+    val list = gridBuilder.grid.trim().shapeless();
+    val input = (!isNull(list) && list.length > 0) ? list[0] : null;
+    return  '\n'~
+        '  "'~getThaumRecipeName(output_s)~'", # Name\n'~
+        '  "BASEALCHEMY", # Research\n'~
+        '  '~output_s~', # Output\n'~
+        '  '~serialize.IIngredient(input, style)~', # Input\n'~
+        '  '~extractGridAspects()~'\n';
+  }
+
   function getThaumRecipeName(output_s as string) as string {
     return output_s
       .replaceAll("^<", "").replaceAll("(:\\d+)?>.*", "") # Remove CraftTweaker's brackets
       .replaceAll("thaumcraft:", ""); # Remove mod it its Thaumcraft
   }
 
-  # Return typles [aspect_name, amount]
   function extractGridAspects() as string {
     var result = '';
     val grid = gridBuilder.grid;
@@ -158,16 +172,13 @@ zenClass GridRecipe {
         if(isNull(ingr)) continue;
 
         for item in ingr.itemArray {
-          val aspectMult =
-            item.definition.id == 'thaumcraft:crystal_essence' ? 1 :
-            item.definition.id == 'thaumcraft:phial' ? 10 :
-            0;
-          if(aspectMult == 0) continue;
+          val d = D(item.tag);
+          if(!d.check('Aspects[0].key')) continue;
 
-          val aspectName = D(item.tag).getString('Aspects[0].key', '');
+          val aspectName = d.getString('Aspects[0].key', '');
           if(aspectName.length == 0) continue;
 
-          val amount = ingr.amount * aspectMult;
+          val amount = ingr.amount * d.getInt('Aspects[0].amount', 1);
           result ~= (first ? '' : ', ') ~
             '<aspect:'~aspectName~'>'~
             (amount>1 ? " * " ~ amount : "");
@@ -179,5 +190,25 @@ zenClass GridRecipe {
     }
 
     return '['~result~']';
+  }
+
+  # Remove item from grid and count its amount
+  function extractItem(id as string, default as int = 0) as int {
+    var result = default;
+
+    for y in 0 .. gridBuilder.grid.Y {
+      for x in 0 .. gridBuilder.grid.X {
+        val ingr = gridBuilder.grid.getIngr(x, y);
+        if(isNull(ingr)) continue;
+
+        for item in ingr.itemArray {
+          if(item.definition.id != id) continue;
+          result += ingr.amount;
+          gridBuilder.grid.remove(x, y);
+        }
+      }
+    }
+
+    return result;
   }
 }
