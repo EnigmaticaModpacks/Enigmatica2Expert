@@ -33,7 +33,6 @@ import {
   execSyncInherit,
   loadJson,
   loadText,
-  saveObjAsJson,
   saveText,
   write,
 } from './lib/utils.js'
@@ -492,7 +491,7 @@ const style = {
     saveText(
       loadText(jsonPath).replace(
         /("serverStart":\s*")[^"]+"/,
-        `$1"\`\`\`diff\n+ Server Started! +\n     ${nextVersion}\n\`\`\`"`
+        `$1\`\`\`diff\\n+ Server Started! +\\n     ${nextVersion}\\n\`\`\`"`
       ),
       jsonPath
     )

@@ -80,6 +80,8 @@ mods/*.jar
 !mods/noRecipeBook_*
 !mods/EntityCulling-*
 !mods/particleculling-*
+!mods/RenderLib-*
+!mods/Nothirium-*
 
 #Not sure
 # !mods/gendustryjei*

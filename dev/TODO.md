@@ -82,7 +82,12 @@ Liquids that should have more uses:
 
 ## TODO
 
+- [ ] ✏️ Fix Rotation of ingredients in `.spiral()` function
+- [ ] ✏️ Rethink HedgeAlchemy
+- [ ] ✏️ When you have a full inventory and try to fill buckets from the "Extra Utilities 2" drum, the buckets just disappear instead of falling to the ground.
+- [ ] ✏️ Add Meat to Meaty orb https://github.com/daedalus4096/ThaumicWonders/blob/251829dee76d72368d0ed0af1f2104121b781e63/src/main/java/com/verdantartifice/thaumicwonders/common/tiles/devices/TileMeatyOrb.java#L49-L53
 - [ ] 📀 AdvRocketry break 100k rf/t limit
+- [ ] 📀 Magic Mirror less Flux
 - [ ] 🔄 Check why mobs are not spawned anough (less then 70 for whole server)
 - [ ] 🔄 Check render distance on server
 - [ ] 🔄 Golden Lasso not working
