@@ -148,7 +148,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112,119,123]
+				"value": [-1,1,102,111,112,119,123]
 			}
 		},
 		"redstone": {
@@ -234,7 +234,7 @@
 			},
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112,119,123]
+				"value": [-1,1,102,111,112,119,123]
 			}
 		},
 		"emerald": {

@@ -12,7 +12,20 @@
 			"min-height": 19,
 			"max-height": 21,
 			"dimension": {"restriction": "whitelist","value": [102]}
-		}
+		},
+		
+		"venus_gold": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "gold_ore",
+				"material": "minecraft:stone",
+				"cluster-size": 20
+			},
+			"cluster-count": 16,
+			"min-height": 12,
+			"max-height": 64,
+			"dimension": {"restriction": "whitelist","value": [102]}
+		},
 		
   }
 }
