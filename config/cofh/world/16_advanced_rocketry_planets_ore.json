@@ -418,6 +418,46 @@
 				"restriction": "whitelist",
 				"value": [103]
 			}
+		},
+		"tin_mercury": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "thermalfoundation:ore",
+					"metadata": 1
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 16
+			},
+			"cluster-count": 16,
+			"min-height": 20,
+			"max-height": 50,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [101]
+			}
+		},
+		"aluminum_mercury": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "thermalfoundation:ore",
+					"metadata": 4
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 13
+			},
+			"cluster-count": 40,
+			"min-height": 20,
+			"max-height": 65,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [101]
+			}
 		}
 	}
 }
