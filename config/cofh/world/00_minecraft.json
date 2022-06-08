@@ -114,7 +114,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112,119,123]
+				"value": [-1,1,111,112,113,119,123]
 			}
 		},
 		"iron": {
@@ -182,7 +182,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112,119,123]
+				"value": [-1,1,111,112,113,119,123]
 			}
 		},
 		"lapis": {

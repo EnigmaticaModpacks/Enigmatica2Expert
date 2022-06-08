@@ -367,6 +367,40 @@
 					108
 				]
 			}
+		},
+		"diamond_novus": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "diamond_ore",
+				"material": "minecraft:stone",
+				"cluster-size": 5
+			},
+			"cluster-count": 8,
+			"min-height": 3,
+			"max-height": 16,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [113]
+			}
+		},
+		"coal_novus": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "coal_ore",
+				"material": "minecraft:stone",
+				"cluster-size": 30
+			},
+			"cluster-count": 14,
+			"min-height": 18,
+			"max-height": 128,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [113]
+			}
 		}
 	}
 }
