@@ -458,6 +458,24 @@
 				"restriction": "whitelist",
 				"value": [101]
 			}
+		},
+		"lead_titan": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "thermalfoundation:ore",
+					"metadata": 3
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 14
+			},
+			"cluster-count": 11,
+			"min-height": 15,
+			"max-height": 35,
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [108]
+			}
 		}
 	}
 }
