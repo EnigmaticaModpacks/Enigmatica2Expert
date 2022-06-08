@@ -15,6 +15,20 @@
 			"min-height": 60,
 			"max-height": 100,
 			"dimension": {"restriction": "whitelist","value": [110]}
+		},
+		
+		"uranus_lapis": {
+			"distribution": "gaussian",
+			"generator": {
+				"block": "lapis_ore",
+				"material": "minecraft:stone",
+				"cluster-size": 20
+			},
+			"cluster-count": 10,
+			"center-height": 20,
+			"spread": 18,
+			"biome": "all",
+			"dimension": {"restriction": "whitelist","value": [110]}
 		}
 		
   }

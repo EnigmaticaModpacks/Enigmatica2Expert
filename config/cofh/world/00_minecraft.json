@@ -199,7 +199,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112,119,123]
+				"value": [-1,1,110,111,112,119,123]
 			}
 		},
 		"mesa_gold": {
