@@ -401,6 +401,23 @@
 				"restriction": "whitelist",
 				"value": [113]
 			}
+		},
+		"iron_mars": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "iron_ore",
+				"material": "minecraft:stone",
+				"cluster-size": 20
+			},
+			"cluster-count": 16,
+			"min-height": 5,
+			"max-height": 64,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [103]
+			}
 		}
 	}
 }
