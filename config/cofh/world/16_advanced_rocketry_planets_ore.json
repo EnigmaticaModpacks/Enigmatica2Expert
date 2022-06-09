@@ -467,9 +467,9 @@
 					"metadata": 3
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 14
+				"cluster-size": 18
 			},
-			"cluster-count": 11,
+			"cluster-count": 15,
 			"min-height": 15,
 			"max-height": 35,
 			"dimension": {
@@ -512,6 +512,43 @@
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [106]
+			}
+		},
+		"uranium_titan": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "immersiveengineering:ore",
+					"metadata": 5
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 25
+			},
+			"cluster-count": 18,
+			"min-height": 2,
+			"max-height": 64,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [108]
+			}
+		},
+		"redstone_philucka": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "redstone_ore",
+				"material": "minecraft:stone",
+				"cluster-size": 24
+			},
+			"cluster-count": 22,
+			"min-height": 4,
+			"max-height": 32,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [115]
 			}
 		}
 	}
