@@ -22,7 +22,7 @@
 			</planet>
 		</planet>
 		<planet name="Mercury" DIMID="101" customIcon="lava">
-			<biomeIds>biomesoplenty:volcanic_island</biomeIds>
+			<biomeIds>minecraft:extreme_hills</biomeIds>
 			<skyColor>0,0,0</skyColor>
 			<atmosphereDensity>120</atmosphereDensity>
 			<gravitationalMultiplier>38</gravitationalMultiplier>
@@ -58,6 +58,7 @@
 			<orbitalDistance>120</orbitalDistance>
 			<rotationalPeriod>9900</rotationalPeriod>
 			<planet name="Io" DIMID="105" customIcon="moon">
+				<biomeIds>advancedrocketry:volcanic</biomeIds>
 				<atmosphereDensity>0</atmosphereDensity>
 				<gravitationalMultiplier>30</gravitationalMultiplier>
 				<orbitalDistance>70</orbitalDistance>
