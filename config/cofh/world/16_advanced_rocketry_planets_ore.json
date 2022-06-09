@@ -476,6 +476,26 @@
 				"restriction": "whitelist",
 				"value": [108]
 			}
-		}
+		},
+		"nickel_uranus": {
+			"distribution": "uniform",
+			"generator": {
+				"block":{
+						"name": "thermalfoundation:ore",
+						"metadata": 5
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 20
+			},
+			"cluster-count": 8,
+			"min-height": 15,
+			"max-height": 36,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [109]
+			}
+		},
 	}
 }
