@@ -497,5 +497,22 @@
 				"value": [109]
 			}
 		},
+		"copper_europa": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "thermalfoundation:ore",
+				"material": "minecraft:stone",
+				"cluster-size": 20
+			},
+			"cluster-count": 20,
+			"min-height": 30,
+			"max-height": 55,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [106]
+			}
+		}
 	}
 }
