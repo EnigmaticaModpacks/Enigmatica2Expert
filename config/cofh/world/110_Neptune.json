@@ -2,11 +2,11 @@
   "dependencies": "advancedrocketry",
   "populate": {
 
-		"uranus_geodes": {
+		"neptune_geodes": {
 			"distribution": "uniform",
 			"generator": {
 				"type": "geode",
-				"block": "nuclearcraft:cryotheum_nak_hot",
+				"block": "nuclearcraft:fluid_cryotheum_nak_hot",
 				"crust": {"name": "twilightforest:aurora_block"},
 				"material": ["ice", "packed_ice"]
 			},
@@ -17,7 +17,7 @@
 			"dimension": {"restriction": "whitelist","value": [110]}
 		},
 		
-		"uranus_lapis": {
+		"neptune_lapis": {
 			"distribution": "gaussian",
 			"generator": {
 				"block": "lapis_ore",
