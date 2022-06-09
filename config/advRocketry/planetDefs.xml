@@ -83,6 +83,7 @@
 			<orbitalDistance>130</orbitalDistance>
 			<rotationalPeriod>10600</rotationalPeriod>
 			<planet name="Titan" DIMID="108" customIcon="moon">
+				<biomeIds>nuclearcraft:nuclear_wasteland,biomesoplenty:wasteland</biomeIds>
 				<atmosphereDensity>0</atmosphereDensity>
 				<gravitationalMultiplier>30</gravitationalMultiplier>
 				<orbitalDistance>100</orbitalDistance>
