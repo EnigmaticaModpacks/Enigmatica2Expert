@@ -114,7 +114,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112,119,123]
+				"value": [-1,1,111,112,113,119,123]
 			}
 		},
 		"iron": {
@@ -131,7 +131,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112,119,123]
+				"value": [-1,1,103,111,112,119,123]
 			}
 		},
 		"gold": {
@@ -148,7 +148,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112,119,123]
+				"value": [-1,1,102,111,112,119,123]
 			}
 		},
 		"redstone": {
@@ -182,7 +182,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112,119,123]
+				"value": [-1,1,111,112,113,119,123]
 			}
 		},
 		"lapis": {
@@ -199,7 +199,7 @@
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112,119,123]
+				"value": [-1,1,110,111,112,119,123]
 			}
 		},
 		"mesa_gold": {
@@ -234,7 +234,7 @@
 			},
 			"dimension": {
 				"restriction": "blacklist",
-				"value": [-1,1,111,112,119,123]
+				"value": [-1,1,102,111,112,119,123]
 			}
 		},
 		"emerald": {
