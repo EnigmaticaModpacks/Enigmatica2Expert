@@ -254,7 +254,7 @@ key_key.clipboardPaste:0
 key_FpsReducer.key.guiOpen:0
 key_FpsReducer.key.forceIdle:197
 key_key.showhide:0
-key_key.gridhere:35
+key_key.gridhere:0
 key_key.gridfixy:79
 key_key.gridspawns:38
 key_key.integrateddynamics.logic_programmer_focus_search:33:ALT
