@@ -4,15 +4,17 @@
  * @author Krutoy242
  * @link https://github.com/Krutoy242
  */
-//@ts-check
+// @ts-check
 
-import { defaultHelper, loadJson, loadText, saveObjAsJson, saveText } from './utils.js'
-import parseGitignore from 'parse-gitignore'
-import memoize from 'memoizee'
-import fast_glob from 'fast-glob'
 import { resolve } from 'path'
+
+import fast_glob from 'fast-glob'
+import memoize from 'memoizee'
+import parseGitignore from 'parse-gitignore'
+import { getBorderCharacters, table } from 'table'
+
 import { fetchMod } from './curseforge.js'
-import { table, getBorderCharacters } from 'table'
+import { defaultHelper, loadJson, loadText, saveText } from './utils.js'
 const { sync: globs } = fast_glob
 
 export async function init(h = defaultHelper) {
@@ -31,29 +33,37 @@ const getIgnoredModIDs = memoize(() => {
   const mcinstance = loadJson('minecraftinstance.json')
 
   const ignoredByDevonly = mcinstance.installedAddons.filter((addon) =>
-    ignoredMods.includes(resolve(`mods/${addon?.installedFile?.FileNameOnDisk}`))
+    ignoredMods.includes(
+      resolve(`mods/${addon?.installedFile?.FileNameOnDisk}`)
+    )
   )
 
   const ignoredByUnavaliable = mcinstance.installedAddons.filter(
     // Unavailable like Optifine or Nutrition
-    (addon) => !addon.installedFile.isAvailable
+    (addon) => !addon.installedFile?.isAvailable
   )
 
-  return new Set([...ignoredByDevonly, ...ignoredByUnavaliable].map((addon) => addon.addonID))
+  return new Set(
+    [...ignoredByDevonly, ...ignoredByUnavaliable].map((addon) => addon.addonID)
+  )
 })
 
 /**
  * Load minecraftinstance.json file from disk,
  * filter devonly mods and return typed
  */
-export const loadMCInstanceFiltered = memoize((/** @type {string} */ filePath) => {
-  /** @type {import('./minecraftinstance').RootObject} */
-  const mcinstance = loadJson(filePath)
+export const loadMCInstanceFiltered = memoize(
+  (/** @type {string} */ filePath) => {
+    /** @type {import('./minecraftinstance').RootObject} */
+    const mcinstance = loadJson(filePath)
 
-  mcinstance.installedAddons = mcinstance.installedAddons.filter((a) => !getIgnoredModIDs().has(a.addonID))
+    mcinstance.installedAddons = mcinstance.installedAddons.filter(
+      (a) => !getIgnoredModIDs().has(a.addonID)
+    )
 
-  return mcinstance
-})
+    return mcinstance
+  }
+)
 
 /**
  * @param {any[]} modsList
@@ -102,7 +112,9 @@ export async function generateManifest(
       modLoaders: [
         {
           id: (forgeVersion ??= `forge-${
-            loadText('logs/debug.log').match(/Forge Mod Loader version ([^\s]+) for Minecraft 1.12.2 loading/)[1]
+            loadText('logs/debug.log').match(
+              /Forge Mod Loader version ([^\s]+) for Minecraft 1.12.2 loading/
+            )[1]
           }`),
           primary: true,
         },

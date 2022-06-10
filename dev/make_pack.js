@@ -82,7 +82,7 @@ const style = {
 ;(async () => {
   const mcClientPath = process.cwd()
   const sZPath = 'D:/Program Files/7-Zip/7z.exe'
-  const distrDir = 'E:/YandexDisk/DEVELOPING/Enigmatica/Distributable/'
+  const distrDir = 'E:/YandexDisk/dev/mc/e2e-e/dist/'
   const serverRoot = resolve(mcClientPath, 'server/')
   const tmpDir = 'D:/mc_tmp/'
   const tmpOverrides = resolve(tmpDir, 'overrides/')
@@ -166,9 +166,9 @@ const style = {
 
   const inputVersion = (
     await enterString(`[${STEP++}] Enter next version and press ENTER: `, {
-      default: oldVersion,
+      default: oldVersion || undefined,
     })
-  ).trim()
+  )?.trim()
   const nextVersion = inputVersion || oldVersion
 
   if (await pressEnterOrEsc(`[${STEP++}] Generate Changelog? ENTER / ESC.`)) {
@@ -396,7 +396,7 @@ const style = {
       const dir = parse(filename).dir
       return {
         dir,
-        label: dir.split('/').pop(),
+        label: /** @type {string} */ (dir.split('/').pop()),
         config: loadJson(filename),
       }
     }
@@ -435,7 +435,7 @@ const style = {
 
     const sftp = new Client()
 
-    const updateBox = (/** @type {...any[]} */ ...args) =>
+    const updateBox = (/** @type {any[]} */ ...args) =>
       logUpdate(
         boxen(
           args.map((v, i) => Object.values(style)[i](String(v))).join(' '),
