@@ -64,6 +64,7 @@ for ingot in <ore:ingotGraphite>.items {
 	<mekanism:filterupgrade>.maxStackSize = 64;
 	<mekanism:energyupgrade>.maxStackSize = 64;
 	<mekanism:speedupgrade>.maxStackSize = 64;
+	<mekanism:gasupgrade>.maxStackSize = 64;
 	<mekanism:mufflingupgrade>.maxStackSize = 64;
 	
 # Basic Mekanism Pipe/Tube/Cables
@@ -389,6 +390,7 @@ val upgrIngrs = {
   "▲": <ore:dustLithium>,      # Lithium Dust
   "♣": <ore:dustArdite>,       # Ardite Ore Dust
   "♠": <ore:dustCobalt>,       # Cobalt Ore Dust
+  "s": <ore:dustSilver>,       # Pulverized Silver
 } as IIngredient[string];
 
 # [Energy Upgrade] from [Ardite Ore Dust][+3]
@@ -405,6 +407,12 @@ craft.remake(<mekanism:speedupgrade>, ["pretty",
   "A □ A"], upgrIngrs
 );
 
+# [Gas Upgrade] from [Pulverized Silver][+3]
+craft.remake(<mekanism:gasupgrade>, ["pretty",
+  "A □ A",
+  "▲ s ▲",
+  "A □ A"], upgrIngrs
+);
 
 # Atomic disassembler
 recipes.removeShaped(<mekanism:atomicdisassembler>);

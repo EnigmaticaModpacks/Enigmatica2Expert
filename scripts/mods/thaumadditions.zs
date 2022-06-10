@@ -1,3 +1,35 @@
+#modloaded thaumadditions
+
+# [Entity Cell] from [Simple Arcane Mechanism][+8]
+mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe(
+  "dna_sample", # Name
+  "TAR_MOB_SUMMONING@1", # Research
+  50, # Vis cost
+  [<aspect:aer>, <aspect:aqua>, <aspect:ordo>, <aspect:perditio>, <aspect:terra>, <aspect:ignis>],
+  <thaumadditions:dna_sample>, # Output
+  [
+  <animania:hamster_ball_clear:*> | <animania:hamster_ball_colored:*>, # Clear Hamster Ball
+  <thaumcraft:mechanism_simple>, # Simple Arcane Mechanism
+]);
+
+# [Adaminite Block] from [Mithrillium Block][+9]
+mods.thaumcraft.Infusion.removeRecipe(<thaumadditions:adaminite_ingot>);
+mods.thaumcraft.Infusion.registerRecipe(
+  "thaumadditions:adaminite_block", # Name
+  "TAR_ADAMINITE", # Research
+  <thaumadditions:adaminite_block>, # Output
+  15, # Instability
+  [<aspect:infernum> * 200, <aspect:draco> * 200, <aspect:visum> * 200, <aspect:spiritus> * 200],
+  <thaumadditions:mithrillium_block>, # Central Item
+  scripts.craft.grid.Grid(["pretty",
+  "▬ r ▬",
+  "c   c",
+  "▬ D ▬"], {
+  "▬": <ore:ingotMithril>,                        # Mana Infused Ingot
+  "r": <thaumcraft:primordial_pearl>.anyDamage(), # Primordial Pearl
+  "c": <ore:carminite>,                           # Carminite
+  "D": <thaumicwonders:disjunction_cloth>.anyDamage(), # Disjunction Cloth
+}).spiral());
 
 
 val bookWithAllKnowledge = <thaumadditions:knowledge_tome>.withTag({

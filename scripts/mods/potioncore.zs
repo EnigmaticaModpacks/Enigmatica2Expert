@@ -3,6 +3,9 @@ import crafttweaker.item.IIngredient;
 
 #modloaded potioncore
 
+# Remove erroring recipes
+brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "potioncore:extension"}), <minecraft:redstone>);
+
 # Potioncore gives ability to jump incredeble hight
 # by holding jump key after eating [Ironberries].
 # "Controllable Jump Boost" config option wont help,
@@ -252,7 +255,7 @@ addBrewWithUpgrades(
   "potioncore:strong_absorption", "potioncore:long_absorption"
 );
 addBrewWithUpgradesFromBase(
-  "potioncore:absorption", <minecraft:sugar>, "potioncore:health_boost",
+  "potioncore:absorption", <harvestcraft:honeyitem>, "potioncore:health_boost",
   "potioncore:strong_health_boost", "potioncore:long_health_boost",
   "potioncore:strong_absorption", "potioncore:long_absorption"
 );

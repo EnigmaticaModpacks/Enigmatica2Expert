@@ -377,6 +377,18 @@ recipes.remove(<advancedrocketry:misc:1>);
 # Endorum
 scripts.processUtils.avdRockXmlRecipeEx("Crystallizer", [<extrautils2:enderlilly>], [<fluid:ice> * 1000], [<endreborn:item_raw_endorium> * 10]);
 
+# [Basic Circuit Plate] from [Graphite Ingot][+2]
+scripts.processUtils.avdRockXmlRecipeEx("PrecisionLaserEtcher", [
+    <ore:plateGold>, <ore:ingotGraphite>, <ore:waferSilicon>
+  ], null, [<advancedrocketry:itemcircuitplate>], null, {power: 100000, timeRequired: 20}
+);
+
+# [Advanced Circuit Plate] from [Energetic Alloy Ingot][+2]
+scripts.processUtils.avdRockXmlRecipeEx("PrecisionLaserEtcher", [
+    <ore:circuitUltimate>, <ore:ingotEnergeticAlloy>, <ore:waferSilicon>
+  ], null, [<advancedrocketry:itemcircuitplate:1>], null, {power: 140000, timeRequired: 20}
+);
+
 # [Station Light]*12 from [Glowstone][+1]
 craft.remake(<advancedrocketry:circlelight> * 12, ["pretty",
   "  A  ",

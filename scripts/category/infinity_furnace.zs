@@ -92,10 +92,10 @@ ${filtered.join('\n')}`
 
 }*/
 
-# Total Furnace recipes registered: 915
+# Total Furnace recipes registered: 916
 # Filtered by JEI blacklist: 47
 # Filtered manuallly (antidupe): 14
-# Filtered by oredict: 200
+# Filtered by oredict: 201
 infinFurnace(utils.get("actuallyadditions:block_misc", 3), utils.get("actuallyadditions:item_misc", 5));
 ##infinFurnace(utils.get("actuallyadditions:item_dust", 3), utils.get("minecraft:emerald"));
 ##infinFurnace(utils.get("actuallyadditions:item_dust", 7), utils.get("actuallyadditions:item_misc", 5));
@@ -172,6 +172,7 @@ infinFurnace(utils.get("botania:biomestonea", 13), utils.get("botania:biomestone
 infinFurnace(utils.get("botania:biomestonea", 14), utils.get("botania:biomestonea", 6));
 infinFurnace(utils.get("botania:biomestonea", 15), utils.get("botania:biomestonea", 7));
 infinFurnace(utils.get("claybucket:unfiredclaybucket", W), utils.get("claybucket:claybucket"));
+##infinFurnace(utils.get("contenttweaker:item_ore_tungsten", 2), utils.get("endreborn:item_ingot_wolframium"));
 infinFurnace(utils.get("contenttweaker:ore_phosphor"), utils.get("contenttweaker:nugget_phosphor"));
 infinFurnace(utils.get("cookingforblockheads:recipe_book"), utils.get("cookingforblockheads:recipe_book", 1));
 ##infinFurnace(utils.get("draconicevolution:draconium_dust", W), utils.get("draconicevolution:draconium_ingot"));

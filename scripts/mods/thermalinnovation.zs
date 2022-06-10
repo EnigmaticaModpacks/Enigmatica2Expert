@@ -3,8 +3,6 @@ import crafttweaker.item.IIngredient;
 
 #modloaded thermalinnovation
 
-utils.rh(<immersiveengineering:drillhead>);
-
 # Remove and hide creative innovation items
 utils.rh(<thermalinnovation:quiver:32000>.withTag({}));
 utils.rh(<thermalinnovation:injector:32000>.withTag({}));
