@@ -19,6 +19,9 @@ e2ee.written_book.Sheep=Овцой
 e2ee.written_book.Creeper=Крипером
 e2ee.written_book.Zombie=Зомби
 
+# Misc
+e2ee.eu2_drum_error=§7Для этого у вас должен быть как минимум 1 пустой слот в инвентаре
+
 # Bugged langs that losed their names
 entity.Villager.shady_merchant=Тенистый торговец
 entity.Villager.red_mechanic=Красный механик
