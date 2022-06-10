@@ -34,13 +34,8 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "8ec3c08e",
+		uid: "cd67992d",
 		type: "item",
-		item: {
-			id: "ftbquests:lootcrate",
-			tag: {
-				type: "common"
-			}
-		}
+		item: "thaumcraft:thaumometer"
 	}]
 }

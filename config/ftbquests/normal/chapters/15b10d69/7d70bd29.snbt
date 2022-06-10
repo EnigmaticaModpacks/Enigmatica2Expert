@@ -1,0 +1,42 @@
+{
+	title: "IF Upgrades",
+	icon: "teslacorelib:speed_tier1",
+	x: -2.5d,
+	y: -0.2d,
+	text: [
+		"Upgrades for Industrial Foregoing is @TeslaCoreLib items.",
+		"",
+		"To craft them you need Matter Replicator and Crystal Memory discs."
+	],
+	dependencies: [
+		"da9eef13"
+	],
+	tasks: [{
+		uid: "bb7c929d",
+		type: "item",
+		items: [{
+			id: "ic2:crystal_memory",
+			tag: {
+				Pattern: {
+					id: "teslacorelib:base_addon",
+					Count: 1b,
+					Damage: 0s
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	},
+	{
+		uid: "aebff1e6",
+		type: "item",
+		items: [{
+			item: "teslacorelib:speed_tier1"
+		}]
+	}],
+	rewards: [{
+		uid: "7ef44930",
+		type: "loot",
+		table: 1
+	}]
+}
