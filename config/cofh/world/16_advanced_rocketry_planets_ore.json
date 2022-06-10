@@ -367,6 +367,189 @@
 					108
 				]
 			}
+		},
+		"diamond_novus": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "diamond_ore",
+				"material": "minecraft:stone",
+				"cluster-size": 5
+			},
+			"cluster-count": 18,
+			"min-height": 3,
+			"max-height": 16,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [113]
+			}
+		},
+		"coal_novus": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "coal_ore",
+				"material": "minecraft:stone",
+				"cluster-size": 30
+			},
+			"cluster-count": 30,
+			"min-height": 18,
+			"max-height": 128,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [113]
+			}
+		},
+		"iron_mars": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "iron_ore",
+				"material": "minecraft:stone",
+				"cluster-size": 20
+			},
+			"cluster-count": 35,
+			"min-height": 5,
+			"max-height": 64,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [103]
+			}
+		},
+		"tin_mercury": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "thermalfoundation:ore",
+					"metadata": 1
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 16
+			},
+			"cluster-count": 16,
+			"min-height": 20,
+			"max-height": 50,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [101]
+			}
+		},
+		"aluminum_mercury": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "thermalfoundation:ore",
+					"metadata": 4
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 13
+			},
+			"cluster-count": 40,
+			"min-height": 20,
+			"max-height": 65,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [101]
+			}
+		},
+		"lead_titan": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "thermalfoundation:ore",
+					"metadata": 3
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 18
+			},
+			"cluster-count": 15,
+			"min-height": 15,
+			"max-height": 35,
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [108]
+			}
+		},
+		"nickel_uranus": {
+			"distribution": "uniform",
+			"generator": {
+				"block":{
+						"name": "thermalfoundation:ore",
+						"metadata": 5
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 20
+			},
+			"cluster-count": 8,
+			"min-height": 15,
+			"max-height": 36,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [109]
+			}
+		},
+		"copper_europa": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "thermalfoundation:ore",
+				"material": "minecraft:stone",
+				"cluster-size": 20
+			},
+			"cluster-count": 20,
+			"min-height": 30,
+			"max-height": 55,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [106]
+			}
+		},
+		"uranium_titan": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "immersiveengineering:ore",
+					"metadata": 5
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 25
+			},
+			"cluster-count": 18,
+			"min-height": 2,
+			"max-height": 64,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [108]
+			}
+		},
+		"redstone_philucka": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "redstone_ore",
+				"material": "minecraft:stone",
+				"cluster-size": 24
+			},
+			"cluster-count": 22,
+			"min-height": 4,
+			"max-height": 32,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [115]
+			}
 		}
 	}
 }

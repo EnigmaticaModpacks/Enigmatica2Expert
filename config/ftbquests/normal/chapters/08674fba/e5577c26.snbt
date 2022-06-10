@@ -1,0 +1,41 @@
+{
+	title: "{bq.quest1076.name}",
+	icon: "advancedrocketry:jackhammer",
+	x: 4.6d,
+	y: 11.3d,
+	text: [
+		"{bq.quest1076.desc}"
+	],
+	dependencies: [
+		"d25f75cc"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "6faf3061",
+		type: "dimension",
+		icon: "thermalfoundation:ore 1 4",
+		dim: 101
+	},
+	{
+		uid: "45b63545",
+		type: "dimension",
+		icon: "minecraft:gold_ore",
+		dim: 102
+	},
+	{
+		uid: "eb20956a",
+		type: "dimension",
+		icon: "minecraft:iron_ore",
+		dim: 103
+	}],
+	rewards: [{
+		uid: "fdf8569e",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

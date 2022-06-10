@@ -1,0 +1,309 @@
+{
+  "dependencies": "advancedrocketry",
+  "populate": {
+		"io_electricsteel": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "enderio:block_alloy",
+					"metadata": 0
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 2
+			},
+			"cluster-count": 12,
+			"min-height": 3,
+			"max-height": 40,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [105]
+			}
+		},
+		"io_energeticalloy": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "enderio:block_alloy",
+					"metadata": 1
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 2
+			},
+			"cluster-count": 8,
+			"min-height": 3,
+			"max-height": 40,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [105]
+			}
+		},
+		"io_vibrantalloy": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "enderio:block_alloy",
+					"metadata": 2
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 2
+			},
+			"cluster-count": 5,
+			"min-height": 3,
+			"max-height": 40,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [105]
+			}
+		},
+		"io_redstonealloy": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "enderio:block_alloy",
+					"metadata": 3
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 2
+			},
+			"cluster-count": 12,
+			"min-height": 3,
+			"max-height": 40,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [105]
+			}
+		},
+		"io_conductiveiron": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "enderio:block_alloy",
+					"metadata": 4
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 2
+			},
+			"cluster-count": 10,
+			"min-height": 3,
+			"max-height": 40,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [105]
+			}
+		},
+		"io_pulsatingiron": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "enderio:block_alloy",
+					"metadata": 5
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 2
+			},
+			"cluster-count": 8,
+			"min-height": 3,
+			"max-height": 40,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [105]
+			}
+		},
+		"io_darksteel": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "enderio:block_alloy",
+					"metadata": 6
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 2
+			},
+			"cluster-count": 5,
+			"min-height": 3,
+			"max-height": 40,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [105]
+			}
+		},
+		"io_soularium": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "enderio:block_alloy",
+					"metadata": 7
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 2
+			},
+			"cluster-count": 8,
+			"min-height": 3,
+			"max-height": 40,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [105]
+			}
+		},
+		"io_endsteel": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "enderio:block_alloy",
+					"metadata": 8
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 2
+			},
+			"cluster-count": 7,
+			"min-height": 3,
+			"max-height": 40,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [105]
+			}
+		},
+		"io_ironalloy": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "enderio:block_alloy",
+					"metadata": 9
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 2
+			},
+			"cluster-count": 25,
+			"min-height": 3,
+			"max-height": 40,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [105]
+			}
+		},
+		"io_infinitydust": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "enderio:blockinfinity",
+					"metadata": 0
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 2
+			},
+			"cluster-count": 10,
+			"min-height": 3,
+			"max-height": 40,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [105]
+			}
+		},
+		"io_crystalline": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "enderio:block_alloy_endergy",
+					"metadata": 1
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 1
+			},
+			"chunk-chance": 2,
+			"cluster-count": 2,
+			"min-height": 3,
+			"max-height": 40,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [105]
+			}
+		},
+		"io_crystallinepinkslime": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "enderio:block_alloy_endergy",
+					"metadata": 4
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 1
+			},
+			"chunk-chance": 6,
+			"cluster-count": 1,
+			"min-height": 3,
+			"max-height": 40,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [105]
+			}
+		},
+		"io_melodicalloy": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "enderio:block_alloy_endergy",
+					"metadata": 2
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 1
+			},
+			"chunk-chance": 15,
+			"cluster-count": 1,
+			"min-height": 3,
+			"max-height": 40,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [105]
+			}
+		},
+		"io_stellaralloy": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "enderio:block_alloy_endergy",
+					"metadata": 3
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 1
+			},
+			"chunk-chance": 50,
+			"cluster-count": 1,
+			"min-height": 3,
+			"max-height": 40,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [105]
+			}
+		}
+  }
+}
