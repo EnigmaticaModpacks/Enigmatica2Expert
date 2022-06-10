@@ -82,15 +82,35 @@ Liquids that should have more uses:
 
 ## TODO
 
+- [ ] 🏪 Spores on dirt is mycelium
+- [ ] ✏️ Gas Upgrade harder
+- [ ] ✏️ [ThaumAugm buffs](https://github.com/Divine-Journey-2/Divine-Journey-2/issues/576)
+- [ ] ✏️ adding sugar to absorbtion potions made a completely different recipe for some reason
+- [ ] ✏️ Enabling Smart Animations and disabling Terrain Animated
+- [ ] ✏️ Entity Cell cheaper
+- [ ] ✏️ Laser Etcher gold plates uncraftable
+- [ ] ✏️ Rats Items have no Rattus aspect
+- [ ] ✏️ Bop Ash block add Thaum recipe
+- [ ] ✏️ Adaminite replace nether stars
+- [ ] ✏️ Factory hopper add to ##Hoppers
+- [ ] ✏️ Vis Battery cheaper
+- [ ] ✏️ Invironment Materials Basalt Unify
+- [ ] ✏️ Infusion cant craft many items at once
+- [ ] ✏️ Add Chest craft in Workbench
 - [ ] ✏️ Fix Rotation of ingredients in `.spiral()` function
 - [ ] ✏️ Rethink HedgeAlchemy
 - [ ] ✏️ When you have a full inventory and try to fill buckets from the "Extra Utilities 2" drum, the buckets just disappear instead of falling to the ground.
 - [ ] ✏️ Add Meat to Meaty orb https://github.com/daedalus4096/ThaumicWonders/blob/251829dee76d72368d0ed0af1f2104121b781e63/src/main/java/com/verdantartifice/thaumicwonders/common/tiles/devices/TileMeatyOrb.java#L49-L53
 - [ ] 📀 AdvRocketry break 100k rf/t limit
 - [ ] 📀 Magic Mirror less Flux
+- [ ] 📖 Trophyes for chapter finish should be for one man in group
 - [ ] 🔄 Check why mobs are not spawned anough (less then 70 for whole server)
 - [ ] 🔄 Check render distance on server
 - [ ] 🔄 Golden Lasso not working
+- [ ] 🔄 is it possible to make just enough resources show only... relevant info?
+- [ ] 🔴 Remove Scaling Feast?
+- [ ] 🔴 Remove Heart Canisters
+- [ ] 🚧 Update screenshots in main menu
 - [ ] 🚧 Update screenshots on CF
 - [ ] 🚧 Rename Bansoukou folders to match mod names
 - [ ] 🚧 Add modpack automation:
@@ -98,8 +118,6 @@ Liquids that should have more uses:
     2. Create CF release
       > https://support.curseforge.com/en/support/solutions/articles/9000197321-curseforge-upload-api
       > https://github.com/EnigmaticaModpacks/ModpackUploader/blob/b32a50e6b19653ac1648916cd3c18e24db1026d0/modpack-uploader.ps1#L238-L246
-- [ ] 🚧 Server automation:
-    3. Unarchive `_server.zip` on remote
 
 ---
 

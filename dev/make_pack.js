@@ -452,8 +452,8 @@ const style = {
     updateBox('Removing folders')
     await Promise.all(
       serverRemoveDirs.map(async (dir) => {
-        if (!(await sftp.stat(dir)).isDirectory) return
         try {
+          if (!(await sftp.stat(dir)).isDirectory) return
           await sftp.rmdir(dir, true)
           updateBox('Removed folder:', dir)
         } catch (error) {}
@@ -496,9 +496,9 @@ const style = {
       jsonPath
     )
 
+    let fileCounter = 0
+    sftp.on('upload', () => updateBox('Copy overrides', ++fileCounter))
     const allOverridesDir = join(conf.dir, 'overrides')
-    let j = 1
-    sftp.on('upload', () => updateBox('Copy overrides', j++))
     await sftp.uploadDir(allOverridesDir, './')
 
     await sftp.end()
