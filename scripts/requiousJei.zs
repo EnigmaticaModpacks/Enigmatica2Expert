@@ -1497,6 +1497,8 @@ x.addJEIRecipe(AssemblyRecipe.create(function(c) {
   .requireItem("input0", <cyclicmagic:ender_lightning>)
 );
 
+add(x, {[null, null, null, null, <exnihilocreatio:item_material:3>, <minecraft:dirt:*>] : [null, <minecraft:mycelium>]});
+
 // -----------------------------------------------------------------------
 // -----------------------------------------------------------------------
 x = <assembly:pech_trades>;
