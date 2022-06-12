@@ -24,7 +24,7 @@
 		<planet name="Mercury" DIMID="101" customIcon="lava">
 			<biomeIds>biometweaker:mercury_beach</biomeIds>
 			<skyColor>0,0,0</skyColor>
-			<atmosphereDensity>0</atmosphereDensity>
+			<atmosphereDensity>120</atmosphereDensity>
 			<gravitationalMultiplier>38</gravitationalMultiplier>
 			<orbitalDistance>40</orbitalDistance>
 			<rotationalPeriod>1400000</rotationalPeriod>
