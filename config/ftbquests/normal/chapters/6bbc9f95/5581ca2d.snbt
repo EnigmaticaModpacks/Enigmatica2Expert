@@ -1,0 +1,19 @@
+{
+	x: 15.1d,
+	y: 2.5d,
+	dependencies: [
+		"83ab3c5f"
+	],
+	tasks: [{
+		uid: "c395eaa2",
+		type: "item",
+		items: [{
+			item: "thaumadditions:mithrillium_block"
+		}]
+	}],
+	rewards: [{
+		uid: "d1dacbde",
+		type: "loot",
+		table: 2
+	}]
+}

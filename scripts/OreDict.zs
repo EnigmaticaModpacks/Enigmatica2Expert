@@ -354,6 +354,7 @@ addItems(<ore:doorWood>, [
 
 # *======= Remove ender chest =======*
 
+addItems(<ore:chest>, [<thaumcraft:hungry_chest>]);
 remove(<ore:chest>, <minecraft:ender_chest>);
 removeItems(<ore:chest>, [
 	<minecraft:ender_chest>,

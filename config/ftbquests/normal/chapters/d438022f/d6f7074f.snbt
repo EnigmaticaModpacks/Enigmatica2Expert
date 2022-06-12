@@ -115,6 +115,7 @@
 	rewards: [{
 		uid: "a0249986",
 		type: "item",
+		team_reward: true,
 		auto: "enabled",
 		item: {
 			id: "simple_trophies:trophy",

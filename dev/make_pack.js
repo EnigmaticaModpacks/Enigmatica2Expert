@@ -82,7 +82,7 @@ const style = {
 ;(async () => {
   const mcClientPath = process.cwd()
   const sZPath = 'D:/Program Files/7-Zip/7z.exe'
-  const distrDir = 'E:/YandexDisk/DEVELOPING/Enigmatica/Distributable/'
+  const distrDir = 'E:/YandexDisk/dev/mc/e2e-e/dist/'
   const serverRoot = resolve(mcClientPath, 'server/')
   const tmpDir = 'D:/mc_tmp/'
   const tmpOverrides = resolve(tmpDir, 'overrides/')
@@ -166,9 +166,9 @@ const style = {
 
   const inputVersion = (
     await enterString(`[${STEP++}] Enter next version and press ENTER: `, {
-      default: oldVersion,
+      default: oldVersion || undefined,
     })
-  ).trim()
+  )?.trim()
   const nextVersion = inputVersion || oldVersion
 
   if (await pressEnterOrEsc(`[${STEP++}] Generate Changelog? ENTER / ESC.`)) {
@@ -396,7 +396,7 @@ const style = {
       const dir = parse(filename).dir
       return {
         dir,
-        label: dir.split('/').pop(),
+        label: /** @type {string} */ (dir.split('/').pop()),
         config: loadJson(filename),
       }
     }
@@ -435,7 +435,7 @@ const style = {
 
     const sftp = new Client()
 
-    const updateBox = (/** @type {...any[]} */ ...args) =>
+    const updateBox = (/** @type {any[]} */ ...args) =>
       logUpdate(
         boxen(
           args.map((v, i) => Object.values(style)[i](String(v))).join(' '),
@@ -452,8 +452,8 @@ const style = {
     updateBox('Removing folders')
     await Promise.all(
       serverRemoveDirs.map(async (dir) => {
-        if (!(await sftp.stat(dir)).isDirectory) return
         try {
+          if (!(await sftp.stat(dir)).isDirectory) return
           await sftp.rmdir(dir, true)
           updateBox('Removed folder:', dir)
         } catch (error) {}
@@ -496,9 +496,9 @@ const style = {
       jsonPath
     )
 
+    let fileCounter = 0
+    sftp.on('upload', () => updateBox('Copy overrides', ++fileCounter))
     const allOverridesDir = join(conf.dir, 'overrides')
-    let j = 1
-    sftp.on('upload', () => updateBox('Copy overrides', j++))
     await sftp.uploadDir(allOverridesDir, './')
 
     await sftp.end()

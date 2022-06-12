@@ -10,11 +10,28 @@
 		"8eca55bc"
 	],
 	tasks: [{
-		uid: "172c6a87",
+		uid: "84fa8de0",
+		type: "item",
+		items: [{
+			id: "ic2:crystal_memory",
+			tag: {
+				Pattern: {
+					id: "rftools:shape_card",
+					Count: 1b,
+					Damage: 0s
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	},
+	{
+		uid: "f71840ef",
 		type: "item",
 		items: [{
 			item: "rftools:shape_card"
-		}]
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "78fa9e71",

@@ -18,6 +18,9 @@ e2ee.written_book.Sheep=Sheep
 e2ee.written_book.Creeper=Creeper
 e2ee.written_book.Zombie=Zombie
 
+# Misc
+e2ee.eu2_drum_error=§7You must have at least 1 empty inventory slot to do this
+
 # Bugged langs that losed their names
 entity.Villager.shady_merchant=Shady Merchant
 entity.Villager.red_mechanic=Red Mechanic

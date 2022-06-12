@@ -70,6 +70,7 @@
 	rewards: [{
 		uid: "72cfcdfd",
 		type: "item",
+		team_reward: true,
 		auto: "enabled",
 		item: {
 			id: "simple_trophies:trophy",

@@ -32,28 +32,6 @@
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
 <Recipes useDefault="false">
-	<Recipe timeRequired="1200" power="60000">
-		<input>
-			<itemStack>advancedrocketry:lens</itemStack>
-			<itemStack>ic2:plate;1;2</itemStack>
-			<itemStack>minecraft:redstone_block</itemStack>
-			<itemStack>advancedrocketry:wafer;4</itemStack>
-		</input>
-		<output>
-			<itemStack>advancedrocketry:itemcircuitplate;2;1</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="1200" power="40000">
-		<input>
-			<itemStack>advancedrocketry:lens</itemStack>
-			<itemStack>ic2:plate;1;2</itemStack>
-			<itemStack>minecraft:redstone</itemStack>
-			<itemStack>advancedrocketry:wafer;4</itemStack>
-		</input>
-		<output>
-			<itemStack>advancedrocketry:itemcircuitplate;2</itemStack>
-		</output>
-	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Elite Plating] -->
 	<Recipe timeRequired="20" power="160000">
@@ -65,6 +43,30 @@
 		</input>
 		<output>
 			<itemStack>nuclearcraft:part 8 3</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Advanced Circuit Plate] -->
+	<Recipe timeRequired="20" power="140000">
+		<input>
+			<oreDict>circuitUltimate 1</oreDict>
+			<oreDict>ingotEnergeticAlloy 1</oreDict>
+			<oreDict>waferSilicon 1</oreDict>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:itemcircuitplate 1 1</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Basic Circuit Plate] -->
+	<Recipe timeRequired="20" power="100000">
+		<input>
+			<oreDict>plateGold 1</oreDict>
+			<oreDict>ingotGraphite 1</oreDict>
+			<oreDict>waferSilicon 1</oreDict>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:itemcircuitplate 1 0</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->

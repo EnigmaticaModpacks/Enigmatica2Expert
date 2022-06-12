@@ -4,7 +4,10 @@ import crafttweaker.item.IItemStack as IItemStack;
 
 addVariation("basalt", <quark:basalt:1>);
 addVariation("basalt", <quark:basalt>);
-addVariation("basalt", <ic2:resource>);
+addVariation("basalt", <environmentalmaterials:basalt>);
+addVariation("basalt", <environmentalmaterials:basalt_paver>);
+addVariation("basalt", <environmentalmaterials:basalt_bricks>);
+addVariation("basalt", <environmentalmaterials:basalt_tiles>);
 
 addVariation("marble", <quark:marble>);
 

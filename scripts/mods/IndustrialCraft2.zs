@@ -521,7 +521,6 @@ craft.remake(<extrautils2:decorativesolid:7>, ["pretty",
 # Basalt remake for Basalt Sediment Alt
 #-----------------------------------------------------
 <ic2:resource>.displayName = game.localize('e2ee.tile.unsalted_basalt');
-mods.chisel.Carving.removeVariation("basalt", <ic2:resource>);
 val saltConversion = {
 	{<blockstate:ic2:resource>                       : <ic2:resource>}       : {<blockstate:advancedrocketry:basalt>                       : <advancedrocketry:basalt>},
 	{<blockstate:minecraft:grass>                    : <minecraft:grass>}    : {<blockstate:biomesoplenty:grass:variant=silty>             : <biomesoplenty:grass:4>},

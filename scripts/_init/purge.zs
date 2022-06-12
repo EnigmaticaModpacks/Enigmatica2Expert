@@ -129,3 +129,4 @@ utils.rh(<contenttweaker:item_ore_tungsten:3>);
 utils.rh(<jaopca:block_blocktungsten>);
 utils.rh(<jaopca:item_nuggettungsten>);
 utils.rh(<enderio:item_owl_egg>, false);
+utils.rh(<thermalfoundation:material:656>);

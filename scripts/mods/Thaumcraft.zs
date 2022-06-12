@@ -287,6 +287,22 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(
   "#": <thaumcraft:plank_greatwood>,  # Greatwood Planks
 }).shaped());
 
+# [Vis Battery]*8 from [Vis Resonator][+8]
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:vis_battery>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(
+  "VisBattery", # Name
+  "VISBATTERY@1", # Research
+  150, # Vis cost
+  [<aspect:aer>, <aspect:aqua>, <aspect:ordo>, <aspect:perditio>, <aspect:terra>, <aspect:ignis>],
+  <thaumcraft:vis_battery> * 8, # Output
+  scripts.craft.grid.Grid(["pretty",
+  "A A A",
+  "A V A",
+  "A A A"], {
+  "A": <thaumcraft:stone_arcane>,  # Arcane Stone
+  "V": <thaumcraft:vis_resonator>, # Vis Resonator
+}).shaped());
+
 /*
  █████╗ ███████╗██████╗ ███████╗ ██████╗████████╗███████╗
 ██╔══██╗██╔════╝██╔══██╗██╔════╝██╔════╝╚══██╔══╝██╔════╝
@@ -549,6 +565,9 @@ remakeCrucible("focus_1", "UNLOCKAUROMANCY", <thaumcraft:focus_1>, <thaumcraft:c
 # Cheaper metals
 remakeCrucible("brassingot"   , "METALLURGY@1", <thaumcraft:ingot:2> * 2, <ore:ingotAlubrass>, [<aspect:instrumentum> * 5]);
 remakeCrucible("thaumiumingot", "METALLURGY@2", <thaumcraft:ingot>, <ore:ingotLead>, [<aspect:praecantatio>*5, <aspect:terra>*5]);
+
+# [Ash Block] from [Compressed Dust][+1]
+remakeCrucible("ash_block", "HEDGEALCHEMY@3", <biomesoplenty:ash_block> * 9, <ore:compressed1xDust>, [<aspect:infernum>]);
 
 # Cheaper to less microcraftings
 # [Sanitizing Soap] from [Phial of Cognitio Essentia]*6[+2]

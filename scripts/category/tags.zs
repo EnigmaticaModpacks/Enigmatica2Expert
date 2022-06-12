@@ -275,6 +275,7 @@ for lang, items in {
     <cyclicmagic:block_vacuum>,
     <darkutils:ender_hopper>,
     <darkutils:ender_pearl_hopper>,
+    <engineersdecor:factory_hopper>,
     <integratedtunnels:part_importer_world_item_item>,
     <minecraft:hopper_minecart>,
     <minecraft:hopper>,

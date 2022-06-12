@@ -82,15 +82,26 @@ Liquids that should have more uses:
 
 ## TODO
 
+- [x] ✏️ Enabling Smart Animations and disabling Terrain Animated
+- [ ] ✏️ Rats Items have no Rattus aspect
+- [ ] ✏️ Infusion cant craft many items at once. Probably ThaumicTweaks
 - [ ] ✏️ Fix Rotation of ingredients in `.spiral()` function
 - [ ] ✏️ Rethink HedgeAlchemy
-- [ ] ✏️ When you have a full inventory and try to fill buckets from the "Extra Utilities 2" drum, the buckets just disappear instead of falling to the ground.
-- [ ] ✏️ Add Meat to Meaty orb https://github.com/daedalus4096/ThaumicWonders/blob/251829dee76d72368d0ed0af1f2104121b781e63/src/main/java/com/verdantartifice/thaumicwonders/common/tiles/devices/TileMeatyOrb.java#L49-L53
+- [ ] ✏️ Enable Dank null dock as endgame item
+- [ ] 📀 Add Meat to Meaty orb https://github.com/daedalus4096/ThaumicWonders/blob/251829dee76d72368d0ed0af1f2104121b781e63/src/main/java/com/verdantartifice/thaumicwonders/common/tiles/devices/TileMeatyOrb.java#L49-L53
 - [ ] 📀 AdvRocketry break 100k rf/t limit
-- [ ] 📀 Magic Mirror less Flux
+- [ ] 📀 Speed Up IC2 crops
+- [ ] 📖 Trophyes for chapter finish should be for one man in group. Is it possible?
 - [ ] 🔄 Check why mobs are not spawned anough (less then 70 for whole server)
 - [ ] 🔄 Check render distance on server
 - [ ] 🔄 Golden Lasso not working
+- [ ] 🔄 is it possible to make just enough resources show only... relevant info?
+- [ ] 🔄 Remove damage culdown for Impulse Cannon
+- [ ] 🔴 Remove Scaling Feast?
+- [ ] 🔴 Remove Heart Canisters
+- [x] 🔴 Remove game stage viewer
+- [ ] 🚧 Add "Animated Terrain" performance tip
+- [ ] 🚧 Update screenshots in main menu
 - [ ] 🚧 Update screenshots on CF
 - [ ] 🚧 Rename Bansoukou folders to match mod names
 - [ ] 🚧 Add modpack automation:
@@ -98,8 +109,6 @@ Liquids that should have more uses:
     2. Create CF release
       > https://support.curseforge.com/en/support/solutions/articles/9000197321-curseforge-upload-api
       > https://github.com/EnigmaticaModpacks/ModpackUploader/blob/b32a50e6b19653ac1648916cd3c18e24db1026d0/modpack-uploader.ps1#L238-L246
-- [ ] 🚧 Server automation:
-    3. Unarchive `_server.zip` on remote
 
 ---
 

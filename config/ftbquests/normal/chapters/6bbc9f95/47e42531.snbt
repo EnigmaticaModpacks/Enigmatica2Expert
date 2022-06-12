@@ -1,0 +1,19 @@
+{
+	x: 16.5d,
+	y: 2.5d,
+	dependencies: [
+		"5581ca2d"
+	],
+	tasks: [{
+		uid: "0c529795",
+		type: "item",
+		items: [{
+			item: "thaumadditions:adaminite_block"
+		}]
+	}],
+	rewards: [{
+		uid: "f8c86b08",
+		type: "loot",
+		table: 3
+	}]
+}

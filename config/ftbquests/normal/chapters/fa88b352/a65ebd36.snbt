@@ -64,6 +64,7 @@
 	rewards: [{
 		uid: "df22a8a6",
 		type: "item",
+		team_reward: true,
 		auto: "enabled",
 		item: {
 			id: "simple_trophies:trophy",
