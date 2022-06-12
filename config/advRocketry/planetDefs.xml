@@ -24,7 +24,7 @@
 		<planet name="Mercury" DIMID="101" customIcon="lava">
 			<biomeIds>minecraft:extreme_hills</biomeIds>
 			<skyColor>0,0,0</skyColor>
-			<atmosphereDensity>120</atmosphereDensity>
+			<atmosphereDensity>0</atmosphereDensity>
 			<gravitationalMultiplier>38</gravitationalMultiplier>
 			<orbitalDistance>40</orbitalDistance>
 			<rotationalPeriod>1400000</rotationalPeriod>
