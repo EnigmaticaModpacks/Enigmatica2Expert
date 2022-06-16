@@ -86,7 +86,6 @@
 				"dimension": {
 				"restriction": "whitelist",
 				"value": [
-					101,
 					102,
 					113,
 					122

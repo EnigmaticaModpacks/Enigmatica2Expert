@@ -22,7 +22,7 @@
 			</planet>
 		</planet>
 		<planet name="Mercury" DIMID="101" customIcon="lava">
-			<biomeIds>minecraft:extreme_hills</biomeIds>
+			<biomeIds>biometweaker:mercury_beach</biomeIds>
 			<skyColor>0,0,0</skyColor>
 			<atmosphereDensity>120</atmosphereDensity>
 			<gravitationalMultiplier>38</gravitationalMultiplier>
