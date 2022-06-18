@@ -26,4 +26,4 @@ mods.thaumcraft.Infusion.registerRecipe(
   "▬": <ore:ingotDraconium>,              # Draconium Ingot
   "S": <randomthings:spectreilluminator>, # Spectre Illuminator
   "p": <thaumictinkerer:spellbinding_cloth>.anyDamage(), # Spellbinding Cloth
-}).spiral());
+}).spiral(1));

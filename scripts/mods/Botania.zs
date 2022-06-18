@@ -147,7 +147,7 @@ mods.thaumcraft.Infusion.registerRecipe(
   "▬": <ore:ingotMirion>,                 # Mirion Ingot
   "*": <bloodmagic:item_demon_crystal:3>, # Vengeful Will Crystal
   "D": <bloodmagic:item_demon_crystal:2>, # Destructive Will Crystal
-}).spiral());
+}).spiral(1));
 
 # Livingrock
 	mods.botania.PureDaisy.removeRecipe(<botania:livingrock>);

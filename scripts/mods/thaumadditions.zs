@@ -29,7 +29,7 @@ mods.thaumcraft.Infusion.registerRecipe(
   "r": <thaumcraft:primordial_pearl>.anyDamage(), # Primordial Pearl
   "c": <ore:carminite>,                           # Carminite
   "D": <thaumicwonders:disjunction_cloth>.anyDamage(), # Disjunction Cloth
-}).spiral());
+}).spiral(1));
 
 
 val bookWithAllKnowledge = <thaumadditions:knowledge_tome>.withTag({

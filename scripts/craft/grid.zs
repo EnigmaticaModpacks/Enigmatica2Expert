@@ -162,7 +162,7 @@ zenClass Grid {
   # ↗ 🠾 ↘
   # ↑   ↓
   # ↖ ← ↙
-  function spiral() as IIngredient[] {
+  function spiral(rotateLeft as int = 0) as IIngredient[] {
     var result = [] as IIngredient[];
 
     # Start point
@@ -223,7 +223,18 @@ zenClass Grid {
         y = ny;
       }
       # End of Cycle
-      if(x==ex && y==ey) return result;
+      if(x==ex && y==ey) {
+        if(rotateLeft == 0) return result;
+
+        # Rotate output if needed
+        var newResult = [] as IIngredient[];
+        val len = result.length;
+        for i in 0 .. len {
+          var index = (i + rotateLeft) % len;
+          newResult += result[index >= 0 ? index : len + index];
+        }
+        return newResult;
+      }
     }
     return null;
   }

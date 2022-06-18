@@ -413,7 +413,7 @@ mods.thaumcraft.Infusion.registerRecipe(
   "˛": <ore:nuggetNetherStar>, # Nether Star Nugget
   "q": <ore:quicksilver>,      # Quicksilver
   "‚": <ore:nuggetVoid>,       # Void Metal Nugget
-}).spiral());
+}).spiral(1));
 
 # [Control Seal_ Block Breaker] from [Blank Seal][+3]
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:seal:12>);
@@ -427,7 +427,7 @@ mods.thaumcraft.Infusion.registerRecipe(
   scripts.craft.grid.Grid(["oG"], {
   "o": <minecraft:golden_pickaxe>.anyDamage(), # Golden Pickaxe
   "G": <minecraft:golden_shovel>.anyDamage(),  # Golden Shovel
-}).spiral());
+}).spiral(1));
 
 # [Biothaumic Mind] from [Clockwork Mind][+2]
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:mind:1>);
@@ -440,7 +440,7 @@ mods.thaumcraft.Infusion.registerRecipe(
   <thaumcraft:mind>, # Central Item
   scripts.craft.grid.Grid(["ZZ"], {
   "Z": <thaumcraft:brain>, # Zombie Brain
-}).spiral());
+}).spiral(1));
 
 # [Causality Collapser]*4 from [TNT][+4]
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:causality_collapser>);
@@ -457,7 +457,7 @@ mods.thaumcraft.Infusion.registerRecipe(
   "  ▲  "], {
   "▲": <ore:dustBedrock>,         # Grains of Infinity
   "D": <cyclicmagic:ender_tnt_1>, # Dynamite I
-}).spiral());
+}).spiral(1));
 
 /*
  ██████╗██████╗ ██╗   ██╗ ██████╗██╗██████╗ ██╗     ███████╗

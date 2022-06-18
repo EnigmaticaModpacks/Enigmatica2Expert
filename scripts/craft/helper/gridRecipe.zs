@@ -119,7 +119,7 @@ zenClass GridRecipe {
         '  '~extractItem('thaumcraft:taint_fibre', 3)~', # Instability\n'~
         '  '~extractGridAspects()~',\n'~
         '  '~serialize.IIngredient(centralItem) ~ ', # Central Item\n'~
-        '  scripts.craft.grid.Grid('~grid.trim().toString(style)~').spiral()';
+        '  scripts.craft.grid.Grid('~grid.trim().toString(style)~').spiral(1)';
   }
 
   function serializeTCWorkbench(style as string[], output_s as string) as string {
