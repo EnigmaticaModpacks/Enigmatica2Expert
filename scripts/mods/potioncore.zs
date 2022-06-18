@@ -38,7 +38,7 @@ addBrewWithUpgradesFromBase(
   "minecraft:strong_leaping", "minecraft:long_leaping"
 );
 addBrewWithUpgradesFromBase(
-  "minecraft:weight", fermentedSpiderEye, "potioncore:levitation",
+  mundane, <minecraft:feather>, "potioncore:levitation",
   "potioncore:strong_levitation", "potioncore:long_levitation",
   "potioncore:strong_weight", "potioncore:long_weight"
 );

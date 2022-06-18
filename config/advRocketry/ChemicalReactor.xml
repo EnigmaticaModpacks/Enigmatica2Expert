@@ -59,8 +59,6 @@
 		<input>
 			<fluidStack>milk 16000</fluidStack>
 			<itemStack>minecraft:poisonous_potato 1 0</itemStack>
-			<oreDict>dustRedstone 1</oreDict>
-			<oreDict>dustBlaze 1</oreDict>
 			<itemStack>minecraft:double_plant 1 0</itemStack>
 		</input>
 		<output>
@@ -71,7 +69,6 @@
 		<input>
 			<fluidStack>milk 16000</fluidStack>
 			<itemStack>minecraft:poisonous_potato 1 0</itemStack>
-			<oreDict>dustRedstone 1</oreDict>
 			<oreDict>dustBlaze 1</oreDict>
 		</input>
 		<output>
@@ -82,7 +79,6 @@
 		<input>
 			<fluidStack>milk 16000</fluidStack>
 			<itemStack>minecraft:poisonous_potato 1 0</itemStack>
-			<oreDict>dustRedstone 1</oreDict>
 			<oreDict>gunpowder 1</oreDict>
 		</input>
 		<output>
@@ -93,6 +89,7 @@
 		<input>
 			<fluidStack>milk 16000</fluidStack>
 			<itemStack>minecraft:poisonous_potato 1 0</itemStack>
+			<oreDict>cropPotato 1</oreDict>
 		</input>
 		<output>
 			<fluidStack>hootch 2000</fluidStack>
