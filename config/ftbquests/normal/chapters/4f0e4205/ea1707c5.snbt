@@ -10,11 +10,12 @@
 		"38b0f204"
 	],
 	tasks: [{
-		uid: "7ae0df4a",
+		uid: "822dd9d0",
 		type: "item",
 		items: [{
-			item: "twilightforest:castle_rune_brick 1 32767"
+			item: "twilightforest:castle_rune_brick"
 		}],
+		ignore_damage: true,
 		ignore_nbt: 1b
 	}],
 	rewards: [{
