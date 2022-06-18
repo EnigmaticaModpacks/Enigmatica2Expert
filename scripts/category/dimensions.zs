@@ -1,16 +1,23 @@
 
 import crafttweaker.player.IPlayer;
 
+static health_require as float = 30.0f;
 
 # Check health and add game stage allowing to enter nether
 function checkAndGrant(player as IPlayer) as void {
   if(
     !player.hasGameStage("skyblock") &&
     !player.hasGameStage("healthy") &&
-    (player.maxHealth >= 40.0f || player.health >= 40.0f)
+    (player.maxHealth >= health_require || player.health >= health_require)
   ) {
     player.addGameStage("healthy");
-    player.sendRichTextMessage(crafttweaker.text.ITextComponent.fromTranslation("tooltips.dim_stages.healthy_grant"));
+
+    val message = crafttweaker.text.ITextComponent.fromTranslation(
+      "tooltips.dim_stages.healthy_grant",
+      health_require as int,
+      (health_require / 2.0f + 0.5f) as int
+    );
+    player.sendRichTextMessage(message);
   }
 }
 
@@ -39,7 +46,11 @@ function isForbidTravel(player as IPlayer, dimension as int) as bool {
     if(isNether && !player.hasGameStage("healthy")) {
       # Show message that player not healthy anough
       mods.zenutils.DelayManager.addDelayWork(function() {
-        player.sendRichTextMessage(crafttweaker.text.ITextComponent.fromTranslation("tooltips.dim_stages.healthy"));
+        player.sendRichTextMessage(crafttweaker.text.ITextComponent.fromTranslation(
+          "tooltips.dim_stages.healthy",
+          health_require as int,
+          (health_require / 2.0f + 0.5f) as int
+        ));
       }, 1);
       return true;
     }
