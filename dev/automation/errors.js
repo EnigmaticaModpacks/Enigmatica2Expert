@@ -5,15 +5,17 @@
  * @link https://github.com/Krutoy242
  */
 
-//@ts-check
+// @ts-check
 
-/*=============================================
+/* =============================================
 =                Variables                    =
-=============================================*/
+============================================= */
 import { writeFileSync } from 'fs'
-import { defaultHelper, loadText } from '../lib/utils.js'
 
 import yargs from 'yargs'
+
+import { defaultHelper, loadText } from '../lib/utils.js'
+
 const { argv } = yargs(process.argv.slice(2)).option('i', {
   alias: 'input',
   type: 'string',
@@ -21,14 +23,14 @@ const { argv } = yargs(process.argv.slice(2)).option('i', {
   default: 'logs/debug.log',
 })
 
-import { URL, fileURLToPath } from 'url' // @ts-ignore
+import { fileURLToPath, URL } from 'url' // @ts-ignore
 function relative(relPath = './') {
   return fileURLToPath(new URL(relPath, import.meta.url))
 }
 
-/*=============================================
+/* =============================================
 =               Ignoring errors               =
-=============================================*/
+============================================= */
 const ignore = [
   /Parsing error loading built-in advancement/,
   / \[tconstruct-modifier\]: Cannot load modifier-model /,
@@ -145,9 +147,9 @@ const ignore = [
   /There was a problem reading the entry .*spark-forge.jar - probably a corrupt zip/,
   /Zip file spark-forge.jar failed to read properly, it will be ignored/,
 
-  /*=============================================
+  /* =============================================
   =               Ignoring Warnings             =
-  =============================================*/
+  ============================================= */
   /\[FML\]: Found FMLCorePluginContainsFMLMod marker in /,
   /\[FML\]: Mod .* is missing the required element 'version' and a version.properties file could not be found. Falling back to metadata version/,
   /\[FML\]: The coremod .* is not signed!/,
@@ -196,9 +198,9 @@ const ignore = [
   /Sending runtime to plugin: .+ took .* ms/,
   /\[placebo\]: Exception loading patreon data!/,
 
-  /*=============================================
+  /* =============================================
   =        Already inspected warnings           =
-  =============================================*/
+  ============================================= */
   /\[mixin\]: Static binding violation: PRIVATE @Overwrite method func_76615_h in mixins.phosphor.json:common.MixinChunk cannot reduce visibiliy of PUBLIC target method, visibility will be upgraded./,
   /\[LLibrary Core\]: Failed to fetch hierarchy node for .*. This may cause patch issues/, // Reported https://github.com/iLexiconn/LLibrary/issues/156
   /\[net.minecraft.client.settings.GameSettings\]: Skipping bad option: lastServer:/,
@@ -273,24 +275,24 @@ const ignore = [
   /\[ThaumicSpeedup\/AspectThread\/WARN\] \[thaumicwonders\]: Wildcard meta detected for .+ in void beacon registration; this can result in invalid result blocks/,
 ]
 
-/*=============================================
+/* =============================================
 =               Ignoring known                =
-=============================================*/
+============================================= */
 // Known errors that should be fixed but not listed
 const known = []
 
-/*=============================================
+/* =============================================
 =           Working                           =
-=============================================*/
+============================================= */
 
 export async function init(h = defaultHelper) {
   await h.begin('Loading & parsing debug.log')
   let log = loadText(argv['input'] ?? 'logs/debug.log')
   const serverThreadStart = log.indexOf('[Server thread/')
   if (serverThreadStart !== -1) log = log.substring(0, serverThreadStart)
-  var newLog = ''
+  let newLog = ''
 
-  var stat = {
+  let stat = {
     total: 0,
     unknown: 0,
     resolved: known.length,
@@ -301,7 +303,7 @@ export async function init(h = defaultHelper) {
   await h.begin(`Found ${allErrors.length} errors`)
 
   for (const match of allErrors) {
-    var isIgnore = false
+    let isIgnore = false
     stat.total++
     for (let i = 0; i < ignore.length; i++) {
       if (match[0].match(ignore[i])) {
@@ -321,7 +323,7 @@ export async function init(h = defaultHelper) {
     }
 
     if (!isIgnore) {
-      var line = match[0].replace(/^\[[\d:]+\] /, '') // Remove timestamp
+      let line = match[0].replace(/^\[[\d:]+\] /, '') // Remove timestamp
       newLog += line + '\n'
 
       if (stat.viewed < 100) {
@@ -339,4 +341,7 @@ export async function init(h = defaultHelper) {
   )
 }
 // @ts-ignore
-if (import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()
+if (
+  import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
+)
+  init()

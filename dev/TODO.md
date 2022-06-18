@@ -82,26 +82,31 @@ Liquids that should have more uses:
 
 ## TODO
 
-- [x] ✏️ Enabling Smart Animations and disabling Terrain Animated
-- [ ] ✏️ Rats Items have no Rattus aspect
+- [x] ✏️ Rats Items have no Rattus aspect
 - [ ] ✏️ Infusion cant craft many items at once. Probably ThaumicTweaks
-- [ ] ✏️ Fix Rotation of ingredients in `.spiral()` function
-- [ ] ✏️ Rethink HedgeAlchemy
-- [ ] ✏️ Enable Dank null dock as endgame item
+- [x] ✏️ Fix Rotation of ingredients in `.spiral()` function
+- [x] ✏️ Buff IE Steam Turbine x2
+- [x] ✏️ Levitation potion fix
+- [x] ✏️ Change Liquid Sunshine recipe
+- [ ] ✏️ Restrict Dank null dock by require item catalist for insertion
 - [ ] 📀 Add Meat to Meaty orb https://github.com/daedalus4096/ThaumicWonders/blob/251829dee76d72368d0ed0af1f2104121b781e63/src/main/java/com/verdantartifice/thaumicwonders/common/tiles/devices/TileMeatyOrb.java#L49-L53
 - [ ] 📀 AdvRocketry break 100k rf/t limit
-- [ ] 📀 Speed Up IC2 crops
-- [ ] 📖 Trophyes for chapter finish should be for one man in group. Is it possible?
+- [x] 📀 Speed Up IC2 crops
+- [ ] 📀 Buff Golem Stats
+- [x] 📀 Fix `java.lang.NullPointerException at thaumcraft.common.tiles.crafting.TileThaumatoriumTop.isEmpty(TileThaumatoriumTop.java:262)`
+- [ ] 📖 Call out Tinkers components that have unusual recipes in E2E-E
+- [x] 📖 Fix TF last quest
 - [ ] 🔄 Check why mobs are not spawned anough (less then 70 for whole server)
-- [ ] 🔄 Check render distance on server
+- [x] 🔄 Check render distance on server
 - [ ] 🔄 Golden Lasso not working
 - [ ] 🔄 is it possible to make just enough resources show only... relevant info?
-- [ ] 🔄 Remove damage culdown for Impulse Cannon
-- [ ] 🔴 Remove Scaling Feast?
+- [x] 🔄 Remove damage culdown for Impulse Cannon
+- [x] 🔄 Make 30 health instead of 40
+- [ ] 🔄 Why Golems cant break blocks in skyblock https://github.com/rwtema/Extra-Utilities-2-Source/issues/252 https://www.reddit.com/r/feedthebeast/comments/a9p9xu/captured_cows_with_golden_lasso_when_i_place_them/
 - [ ] 🔴 Remove Heart Canisters
-- [x] 🔴 Remove game stage viewer
+- [x] 🚧 Remove Mod names from manifest
 - [ ] 🚧 Add "Animated Terrain" performance tip
-- [ ] 🚧 Update screenshots in main menu
+- [x] 🚧 Update screenshots in main menu
 - [ ] 🚧 Update screenshots on CF
 - [ ] 🚧 Rename Bansoukou folders to match mod names
 - [ ] 🚧 Add modpack automation:
@@ -116,6 +121,7 @@ Liquids that should have more uses:
 
 ## Long-Term
 
+- [ ] ✏️ Rethink HedgeAlchemy, add recipes for essential tech-alike ingredients
 - [ ] ✏️ Fix main Vis Crystals doubled in JEI
 - [ ] 🟢 Add https://www.curseforge.com/minecraft/mc-mods/nothirium
 - [ ] 🔄 Forbid exploding in chunks, but claim only few chunks

@@ -69,11 +69,13 @@ export const loadMCInstanceFiltered = memoize(
  * @param {any[]} modsList
  */
 function formatModList(modsList) {
+  const columns = Object.keys(modsList[0]).length
   const orderedList = modsList
     .map((m) => JSON.stringify(m).replace(/(":)("|\d+)/g, '$1____$2'))
     .join(',\n')
     .split('\n')
-    .map((s) => ('    ' + s).split('____'))
+    .map((s) => `    ${s}`.split('____'))
+    .map((r) => new Array(columns).fill('').map((s, i) => r[i]))
 
   return table(orderedList, {
     border: getBorderCharacters('void'),
@@ -102,7 +104,7 @@ export async function generateManifest(
       projectID: a.addonID,
       fileID: a.installedFile?.id,
       required: !a.installedFile?.FileNameOnDisk.endsWith('.jar.disabled'),
-      __meta: { name: (await fetchMod(a.addonID, 128)).name },
+      ___name: (await fetchMod(a.addonID, 128)).name,
     }))
   )
 
@@ -114,7 +116,7 @@ export async function generateManifest(
           id: (forgeVersion ??= `forge-${
             loadText('logs/debug.log').match(
               /Forge Mod Loader version ([^\s]+) for Minecraft 1.12.2 loading/
-            )[1]
+            )?.[1]
           }`),
           primary: true,
         },
@@ -126,7 +128,7 @@ export async function generateManifest(
     version: version,
     author: 'krutoy242',
     overrides: 'overrides',
-    files: [],
+    files: /** @type {any[]} */ ([]),
   }
 
   const modList = modListUnfiltered

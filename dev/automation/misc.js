@@ -5,24 +5,33 @@
  * @link https://github.com/Krutoy242
  */
 
-//@ts-check
+// @ts-check
 
-import replace_in_file from 'replace-in-file'
-import { injectInFile, loadText, setBlockDropsList, defaultHelper, loadJson, saveObjAsJson } from '../lib/utils.js'
+import { join, parse } from 'path'
+
 import del from 'del'
-import { execSync, exec as _exec } from 'child_process'
-
-import yargs from 'yargs'
-import _ from 'lodash'
 import fs_extra from 'fs-extra'
-import { join } from 'path'
+import yargs from 'yargs'
+
+import {
+  defaultHelper,
+  globs,
+  injectInFile,
+  loadJson,
+  loadText,
+  saveObjAsJson,
+  setBlockDropsList,
+} from '../lib/utils.js'
+
 const { copySync } = fs_extra
-const argv = yargs(process.argv.slice(2)).alias('k', 'keep-cache').describe('k', 'Not delete cached files').argv
+const argv = yargs(process.argv.slice(2))
+  .alias('k', 'keep-cache')
+  .describe('k', 'Not delete cached files').argv
 
 export async function init(h = defaultHelper, options = argv) {
-  //###############################################################################
-  //###############################################################################
-  //###############################################################################
+  // ###############################################################################
+  // ###############################################################################
+  // ###############################################################################
 
   /*
 
@@ -39,8 +48,21 @@ export async function init(h = defaultHelper, options = argv) {
   const crafttweaker_log = loadText('crafttweaker.log')
   const globMatch = crafttweaker_log.match(/^Recipes:$.*/ms)
 
+  // Add already exist remakes
+  const fakeIron_zs = loadText('scripts/category/fakeIron.zs')
+  let remakes
+
+  if (!globMatch) h.warn('No /ct recipes found in crafttweaker.log')
+  else {
+    remakes = fakeIron_zs.match(
+      /^# Start of automatically generated recipes:$.*/ms
+    )?.[0]
+    if (!remakes)
+      h.warn('Can not find automatically generated recipes for Fake Iron')
+  }
+
   const resultArr = []
-  if (globMatch) {
+  if (globMatch && remakes) {
     const recipes = globMatch[0]
     const whitelist = [
       '<extrautils2:opinium>',
@@ -64,11 +86,11 @@ export async function init(h = defaultHelper, options = argv) {
       '<cyclicmagic:fluid_drain>',
     ]
 
-    // Add already exist remakes
-    const fakeIron_zs = loadText('scripts/category/fakeIron.zs')
-    const remakes = fakeIron_zs.match(/^# Start of automatically generated recipes:$.*/ms)[0]
-    for (const match of remakes.matchAll(/^remakeShape.{1,4}\("[^"]+", (?<output><[^>]+>).*$/gm)) {
-      if (whitelist.includes(match.groups.output)) resultArr.push(match[0])
+    for (const match of remakes.matchAll(
+      /^remakeShape.{1,4}\("[^"]+", (?<output><[^>]+>).*$/gm
+    )) {
+      if (match.groups && whitelist.includes(match.groups.output))
+        resultArr.push(match[0])
     }
 
     // Add new
@@ -78,10 +100,19 @@ export async function init(h = defaultHelper, options = argv) {
       const g = match.groups
 
       const regex = /<(minecraft:iron_|ore:)(ingot|block|nugget)(?:Iron)?>/gi
-      if (!whitelist.includes(g.output) || !g.grid.match(new RegExp('.*' + regex.source + '.*'))) continue
+      if (
+        !g ||
+        !whitelist.includes(g.output) ||
+        !g.grid.match(new RegExp('.*' + regex.source + '.*'))
+      )
+        continue
 
-      const replacedGrid = g.grid.replaceAll(regex, (...args) => args[2].substring(0, 1).toUpperCase())
-      const line = `remakeShape${g.postfix}(${g.name}, ${g.output}${g.count ?? ''}, ${replacedGrid});`
+      const replacedGrid = g.grid.replaceAll(regex, (...args) =>
+        args[2].substring(0, 1).toUpperCase()
+      )
+      const line = `remakeShape${g.postfix}(${g.name}, ${g.output}${
+        g.count ?? ''
+      }, ${replacedGrid});`
       resultArr.push(line)
     }
 
@@ -91,23 +122,24 @@ export async function init(h = defaultHelper, options = argv) {
       '\n# End of automatically generated recipes',
       resultArr.sort().join('\n')
     )
-  } else {
-    h.warn('No /ct recipes found in crafttweaker.log')
   }
 
-  //###############################################################################
-  //###############################################################################
-  //###############################################################################
+  // ###############################################################################
+  // ###############################################################################
+  // ###############################################################################
 
   let countCachedRemoved
   if (!options['keep-cache']) {
     await h.begin('Removing cached files')
-    countCachedRemoved = del.sync(['config/thaumicjei_itemstack_aspects.json'], { dryRun: false }).length
+    countCachedRemoved = del.sync(
+      ['config/thaumicjei_itemstack_aspects.json'],
+      { dryRun: false }
+    ).length
   }
 
-  //###############################################################################
-  //###############################################################################
-  //###############################################################################
+  // ###############################################################################
+  // ###############################################################################
+  // ###############################################################################
 
   /*
 
@@ -126,17 +158,29 @@ export async function init(h = defaultHelper, options = argv) {
 
     {
       block_stack: 'minecraft:mob_spawner',
-      dropList: [{ stack: 'enderio:item_broken_spawner' }, { stack: 'actuallyadditions:item_misc:20', luck: [1, 3] }],
+      dropList: [
+        { stack: 'enderio:item_broken_spawner' },
+        { stack: 'actuallyadditions:item_misc:20', luck: [1, 3] },
+      ],
     },
 
-    { block_stack: 'astralsorcery:blockgemcrystals:3', dropList: [{ stack: 'astralsorcery:itemperkgem:1' }] },
-    { block_stack: 'astralsorcery:blockgemcrystals:1', dropList: [{ stack: 'astralsorcery:itemperkgem:2' }] },
-    { block_stack: 'astralsorcery:blockgemcrystals:2', dropList: [{ stack: 'astralsorcery:itemperkgem' }] },
+    {
+      block_stack: 'astralsorcery:blockgemcrystals:3',
+      dropList: [{ stack: 'astralsorcery:itemperkgem:1' }],
+    },
+    {
+      block_stack: 'astralsorcery:blockgemcrystals:1',
+      dropList: [{ stack: 'astralsorcery:itemperkgem:2' }],
+    },
+    {
+      block_stack: 'astralsorcery:blockgemcrystals:2',
+      dropList: [{ stack: 'astralsorcery:itemperkgem' }],
+    },
   ])
 
-  //###############################################################################
-  //###############################################################################
-  //###############################################################################
+  // ###############################################################################
+  // ###############################################################################
+  // ###############################################################################
 
   /*
 
@@ -151,9 +195,9 @@ export async function init(h = defaultHelper, options = argv) {
     copySync(o.destinationFilePath, join(moreDefOptsPath, o.sourceFilePath))
   })
 
-  //###############################################################################
-  //###############################################################################
-  //###############################################################################
+  // ###############################################################################
+  // ###############################################################################
+  // ###############################################################################
 
   /*
 
@@ -162,13 +206,28 @@ export async function init(h = defaultHelper, options = argv) {
   */
   await h.begin('Heavy Sieve automatically recipes')
   const blocksToCopy = [
-    ['exnihilocreatio:block_andesite_crushed', 'contenttweaker:compressed_crushed_andesite'],
-    ['exnihilocreatio:block_diorite_crushed', 'contenttweaker:compressed_crushed_diorite'],
-    ['exnihilocreatio:block_granite_crushed', 'contenttweaker:compressed_crushed_granite'],
-    ['exnihilocreatio:block_skystone_crushed', 'contenttweaker:compressed_crushed_skystone'],
+    [
+      'exnihilocreatio:block_andesite_crushed',
+      'contenttweaker:compressed_crushed_andesite',
+    ],
+    [
+      'exnihilocreatio:block_diorite_crushed',
+      'contenttweaker:compressed_crushed_diorite',
+    ],
+    [
+      'exnihilocreatio:block_granite_crushed',
+      'contenttweaker:compressed_crushed_granite',
+    ],
+    [
+      'exnihilocreatio:block_skystone_crushed',
+      'contenttweaker:compressed_crushed_skystone',
+    ],
     ['rats:garbage_pile', 'contenttweaker:compressed_garbage_pile'],
     ['enderio:block_infinity', 'enderio:block_infinity:1'],
-    ['additionalcompression:dustgunpowder_compressed', 'additionalcompression:dustgunpowder_compressed:1'],
+    [
+      'additionalcompression:dustgunpowder_compressed',
+      'additionalcompression:dustgunpowder_compressed:1',
+    ],
   ]
   const sieveRegistry = loadJson('config/exnihilocreatio/SieveRegistry.json')
   const heavySievePath = 'config/ExCompressum/HeavySieve.json'
@@ -182,8 +241,10 @@ export async function init(h = defaultHelper, options = argv) {
     const entries = heavySieve.custom.entries
     const [source, id, _meta] = compressed.split(':')
     const shortand = source + ':' + id
-    const meta = parseInt(_meta || '0')
-    const index = entries.findIndex((o) => o.name == shortand && o.metadata == meta)
+    const meta = Number(_meta || '0')
+    const index = entries.findIndex(
+      (o) => o.name === shortand && o.metadata == meta
+    )
     const found = entries[index]
 
     const entry = {
@@ -207,14 +268,31 @@ export async function init(h = defaultHelper, options = argv) {
       },
     }
 
-    if (index != -1) entries[index] = entry
+    if (index !== -1) entries[index] = entry
     else entries.push(entry)
   })
   saveObjAsJson(heavySieve, heavySievePath)
 
-  //###############################################################################
-  //###############################################################################
-  //###############################################################################
+  // ###############################################################################
+  // ###############################################################################
+  // ###############################################################################
+
+  /*
+
+    Add all screenshots in folder to config
+
+  */
+
+  const menuFile = 'config/CustomMainMenu/mainmenu.json'
+  const menuJson = loadJson(menuFile)
+  menuJson.other.background.slideshow.images = globs(
+    'resources/enigmatica/textures/slideshow/*.jpg'
+  ).map((f) => `enigmatica:textures/slideshow/${parse(f).base}`)
+  saveObjAsJson(menuJson, menuFile)
+
+  // ###############################################################################
+  // ###############################################################################
+  // ###############################################################################
   h.result(
     `Saved fakeIron recipes: ${resultArr.length}` +
       (countCachedRemoved ? `, Removed cached: ${countCachedRemoved}` : '')

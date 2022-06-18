@@ -460,24 +460,24 @@ const style = {
       })
     )
 
-    updateBox('Copy server pack')
-    const bytes = (/** @type {number} */ v) => numeral(v).format('0.0b')
+    // updateBox('Copy server pack')
+    // const bytes = (/** @type {number} */ v) => numeral(v).format('0.0b')
     const zipName = parse(zipPath_server).base
-    let step = 0
-    await sftp.fastPut(zipPath_server, zipName, {
-      step: (total_transferred, chunk, total) => {
-        if (step++ % 10 !== 0) return
-        updateBox(
-          'Copy server pack',
-          bytes(total_transferred),
-          '/',
-          bytes(total)
-        )
-      },
-    })
+    // let step = 0
+    // await sftp.fastPut(zipPath_server, zipName, {
+    //   step: (total_transferred, chunk, total) => {
+    //     if (step++ % 10 !== 0) return
+    //     updateBox(
+    //       'Copy server pack',
+    //       bytes(total_transferred),
+    //       '/',
+    //       bytes(total)
+    //     )
+    //   },
+    // })
 
     await pressEnterOrEsc(
-      `Go to SFTP server, Unpack ${style.log(
+      `Go to SFTP server, Upload and Unpack ${style.log(
         zipName
       )} and press ENTER to override`
     )
