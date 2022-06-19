@@ -1,5 +1,6 @@
 {
   "bnbgamingcore": "0.12.0",
+  "thaumtweaks": "0.3.5",
   "bilingualname": "1.2",
   "integratedterminals": "1.0.14",
   "draconicevolution": "2.3.28",
