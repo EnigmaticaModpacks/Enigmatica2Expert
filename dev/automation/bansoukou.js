@@ -5,13 +5,17 @@
  * @link https://github.com/Krutoy242
  */
 
-import { loadJson, defaultHelper, saveObjAsJson } from '../lib/utils.js'
-import fast_glob from 'fast-glob'
+// @ts-check
+
 import { join } from 'path'
+import { fileURLToPath, URL } from 'url'
+
+import fast_glob from 'fast-glob'
+
+import { defaultHelper, loadJson, saveObjAsJson } from '../lib/utils.js'
 
 const { sync: globs } = fast_glob
 
-import { URL, fileURLToPath } from 'url'
 function relative(relPath = './') {
   // @ts-ignore
   return fileURLToPath(new URL(relPath, import.meta.url))
@@ -19,16 +23,20 @@ function relative(relPath = './') {
 
 export async function init(h = defaultHelper) {
   await h.begin('Fixing Bansoukou files')
+  const filesManaged = injectJsonAdvancementFixes()
 
+  return h.result(`Managed ${filesManaged} files`)
+}
+
+function injectJsonAdvancementFixes() {
   const json = loadJson(relative('bansoukou.json'))
-  for (const [gl, data] of Object.entries(json)) {
-    const filePaths = globs('mods/' + gl, { dot: true })
+  for (const [glob, data] of Object.entries(json)) {
+    const filePaths = globs('mods/' + glob, { dot: true })
     for (const [archievePath, advJson] of Object.entries(data)) {
-      saveFile(filePaths.pop(), archievePath, advJson)
+      saveFile(/** @type {string} */ (filePaths.pop()), archievePath, advJson)
     }
   }
-
-  return h.result(`Managed ${Object.entries(json).length} files`)
+  return Object.entries(json).length
 }
 
 /**
