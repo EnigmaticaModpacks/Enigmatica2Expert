@@ -82,33 +82,28 @@ Liquids that should have more uses:
 
 ## TODO
 
-- [x] ✏️ Rats Items have no Rattus aspect
-- [ ] ✏️ Infusion cant craft many items at once. Probably ThaumicTweaks
-- [x] ✏️ Fix Rotation of ingredients in `.spiral()` function
-- [x] ✏️ Buff IE Steam Turbine x2
-- [x] ✏️ Levitation potion fix
-- [x] ✏️ Change Liquid Sunshine recipe
-- [ ] ✏️ Restrict Dank null dock by require item catalist for insertion
+- [ ] ✏️ Fix excess hammer+plate crafts
+- [x] ✏️ crystal matrix ingot says it takes 4 diamond lattice but only consumes one
+- [x] ✏️ Make alternative automateble recipe for Drac Energy Crystals (to simplify them from AS Lens)
+- [ ] ✏️ Combine Trans Stones when on pickup
+- [ ] ✏️ Add molten terrestrial artifact that could be centrifuged
 - [ ] 📀 Add Meat to Meaty orb https://github.com/daedalus4096/ThaumicWonders/blob/251829dee76d72368d0ed0af1f2104121b781e63/src/main/java/com/verdantartifice/thaumicwonders/common/tiles/devices/TileMeatyOrb.java#L49-L53
-- [ ] 📀 AdvRocketry break 100k rf/t limit
-- [x] 📀 Speed Up IC2 crops
 - [ ] 📀 Buff Golem Stats
-- [x] 📀 Fix `java.lang.NullPointerException at thaumcraft.common.tiles.crafting.TileThaumatoriumTop.isEmpty(TileThaumatoriumTop.java:262)`
+- [ ] 📀 Change Quartz modifier to `(n + 1) * 1.05`
+- [ ] 📀 Fix NPE https://github.com/BluSunrize/ImmersiveEngineering/blob/master/src/main/java/blusunrize/immersiveengineering/common/EventHandler.java#L619
+- [ ] 📀 Fix BedrockOre cant go 1 height flat https://github.com/MightyPirates/BedrockOres/blob/master-MC1.12/src/main/java/li/cil/bedrockores/common/world/WorldGeneratorBedrockOre.java#L92
 - [ ] 📖 Call out Tinkers components that have unusual recipes in E2E-E
-- [x] 📖 Fix TF last quest
+- [ ] 📖 Add trans stones entry
+- [ ] 📖 Add packaged ex crafting quest
 - [ ] 🔄 Check why mobs are not spawned anough (less then 70 for whole server)
-- [x] 🔄 Check render distance on server
-- [ ] 🔄 Golden Lasso not working
 - [ ] 🔄 is it possible to make just enough resources show only... relevant info?
-- [x] 🔄 Remove damage culdown for Impulse Cannon
-- [x] 🔄 Make 30 health instead of 40
-- [ ] 🔄 Why Golems cant break blocks in skyblock https://github.com/rwtema/Extra-Utilities-2-Source/issues/252 https://www.reddit.com/r/feedthebeast/comments/a9p9xu/captured_cows_with_golden_lasso_when_i_place_them/
-- [ ] 🔴 Remove Heart Canisters
-- [x] 🚧 Remove Mod names from manifest
-- [ ] 🚧 Add "Animated Terrain" performance tip
-- [x] 🚧 Update screenshots in main menu
+- [ ] 🔄 Why Golems cant break blocks in skyblock
+- [ ] 🔄 After getting 40 hearts, player need to relog to enter nether
+- [ ] 🔄 Fix Travel Anchors must be seen to teleport
+- [ ] 🟢 Tweak RFTools Dimension Tweaker
+- [ ] 🟢 Install justenoughdimensions to fix mob cound issue
 - [ ] 🚧 Update screenshots on CF
-- [ ] 🚧 Rename Bansoukou folders to match mod names
+- [ ] 🚧 Create EntityCulling issue about chest lag
 - [ ] 🚧 Add modpack automation:
     1. `make_pack.js`
     2. Create CF release
@@ -121,9 +116,11 @@ Liquids that should have more uses:
 
 ## Long-Term
 
+- [ ] 💙 Better integrate Heart Canisters
+- [ ] ✏️ Creative Impetus add recipe
 - [ ] ✏️ Rethink HedgeAlchemy, add recipes for essential tech-alike ingredients
 - [ ] ✏️ Fix main Vis Crystals doubled in JEI
-- [ ] 🟢 Add https://www.curseforge.com/minecraft/mc-mods/nothirium
+- [ ] 🟢 Add Nothirium when fixed https://github.com/Meldexun/Nothirium/issues/9
 - [ ] 🔄 Forbid exploding in chunks, but claim only few chunks
 - [ ] 🔄 Colossal Chests bigger interface via Bansoukou
 - [ ] ✏️ Magical Snow Globe add usage
@@ -220,7 +217,8 @@ Liquids that should have more uses:
 - No EnderIO Conduits
   > Not using conduits
   > But ???
-
+- No Tech
+- No base
 
 ---
 
@@ -234,4 +232,3 @@ Liquids that should have more uses:
 - Buff Giant Sword
   > Giant sword somehow cant be buffed with MaterialChanger mod
 - `<gendustry:gene_sample>.maxStackSize = 64;` **Transposer** dupe Samples when stackable
-- **Dynamic Surroundings** cause **Better Questing** book not play sounds when getting quests
