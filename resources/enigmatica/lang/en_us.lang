@@ -215,6 +215,7 @@ requious.jei.recipe.turbine=Turbine
 requious.jei.recipe.typewriter=Typewriter
 requious.jei.recipe.witch_water=Witch Water
 requious.jei.recipe.xp_bottler=XP Bottler
+requious.jei.recipe.ic2_semifluid=Semifluid Generator
 
 tile.adv_bee_analyzer.name=Advanced Analyzer
 tile.infinity_furnace.name=Infinity Furnace

@@ -1716,3 +1716,25 @@ for i, kind in pechOrder {
   for j in 0 .. 5 { assRec.requireItem("input1"~j, pechDiamonds[j]); }
   x.addJEIRecipe(assRec);
 }
+
+
+// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+x = <assembly:ic2_semifluid>;
+x.addJEICatalyst(<ic2:te:7>);
+x.setJEIFluidSlot(0, 0, 'fluid_in');
+x.setJEIDurationSlot(1,0,"duration", SlotVisual.arrowRight());
+x.setJEIEnergySlot(2, 0, 'energy_out', "rf");
+
+function add_ic2_semifluid(input as ILiquidStack, power as int) as void {
+  <assembly:ic2_semifluid>.addJEIRecipe(AssemblyRecipe.create(function(c) {
+      c.addEnergyOutput('energy_out', power * 4, 0);
+    })
+    .requireFluid("fluid_in", input)
+  );
+}
+
+# Defaults
+add_ic2_semifluid(<fluid:biomass>    , 8000);
+add_ic2_semifluid(<fluid:ic2biogas>  , 16000);
+add_ic2_semifluid(<fluid:bio.ethanol>, 32000);

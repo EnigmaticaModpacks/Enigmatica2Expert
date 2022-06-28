@@ -557,3 +557,14 @@ mods.alfinivia.ImmersiveEngineering.addChemthrowerEffect(<liquid:moltensalt>, fa
 		}
 	}
 );
+
+# Semifluid generator usages
+function addSemifluidRecipe(fluid as ILiquidStack, power as int) as void {
+	scripts.requiousJei.add_ic2_semifluid(fluid, power);
+	mods.ic2.SemiFluidGenerator.addFluid(fluid, power as double);
+}
+
+addSemifluidRecipe(<fluid:biodiesel>, 40000);
+addSemifluidRecipe(<fluid:biofuel>, 80000);
+addSemifluidRecipe(<fluid:biocrude>, 256000);
+addSemifluidRecipe(<fluid:refined_biofuel>, 512000);

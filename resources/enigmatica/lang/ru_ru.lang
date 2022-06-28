@@ -215,6 +215,7 @@ requious.jei.recipe.turbine=Турбина
 requious.jei.recipe.typewriter=Печатная машинка
 requious.jei.recipe.witch_water=Ведьмина Вода
 requious.jei.recipe.xp_bottler=XP Разливщик
+requious.jei.recipe.ic2_semifluid=Полужидкий генератор
 
 tile.adv_bee_analyzer.name=Расширенный Анализатор
 tile.infinity_furnace.name=Печь Бесконечности
