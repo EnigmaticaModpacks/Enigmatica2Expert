@@ -57,7 +57,6 @@ tooltips.lang.crescent_hammer=Shift right click with a Crescent Hammer to pick u
 tooltips.lang.gauge_dropper=Can be used to clear Mekanism machines of their gases. Simply hold the Gauge Dropper and Shift Left Click the Gas from inside the Machine.
 tooltips.lang.miner_tier_6_specializes=Void Ore Miner Tier 6 specializes in generating rare ores from the void\nIt does not generate common ores.
 tooltips.lang.nitrogen_collectors=Obtainable with Nitrogen Collectors.
-tooltips.lang.creative_wct=The recipe is Wireless Crafting Terminal + Creative RF.
 tooltips.lang.not_consumed=Not consumed when used in crafting recipes.
 tooltips.lang.removed.instability=Removed due to instability.
 tooltips.lang.maximum_allowed_input=The FE/t specified in Crafting Core recipes is the maximum allowed input. Any amount of FE/t will work.
