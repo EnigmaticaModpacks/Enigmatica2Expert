@@ -108,7 +108,6 @@ desc.jei(<mekanism:controlcircuit:3>, "requires.rf", "2.000.000"); # Mekanism Ul
 desc.jei(<thermalexpansion:cache>, "crescent_hammer");
 desc.jei(<mekanism:gaugedropper>, "gauge_dropper");
 desc.jei(<environmentaltech:void_ore_miner_cont_6>, "miner_tier_6_specializes");
-desc.jei(<wct:wct_creative>, "creative_wct");
 desc.jei(<astralsorcery:blockaltar>, "astralsorcery.blockaltar");
 desc.jei(<extrautils2:ingredients:13>, "not_consumed");
 desc.jei(<liquid:nitrogen>, "nitrogen_collectors");
