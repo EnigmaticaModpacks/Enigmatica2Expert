@@ -82,7 +82,7 @@ function magicProcessing(nativeClusterOreEntry as IOreDictEntry, ore_name as str
   # ████╔╝██║
   # ╚██████╔╝
   #  ╚═════╝ 
-  scripts.process.beneficiate(dirtyGem, ore_name, 13, {meltingExceptions: scripts._init.variables.meltingExceptions});
+  scripts.process.beneficiate(dirtyGem, ore_name, 12, {meltingExceptions: scripts._init.variables.meltingExceptions}, 4);
 
   # manual furnance
   var ingotOrGem = utils.getSomething(ore_name, ["ingot", "gem", "dust", "any"], 12);

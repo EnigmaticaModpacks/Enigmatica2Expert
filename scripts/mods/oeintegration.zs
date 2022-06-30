@@ -1,5 +1,7 @@
 #modloaded oeintegration
 
+import crafttweaker.item.IIngredient;
+
 # [Excavate Modifier] from [Triple Compressed Cobblestone][+1]
 craft.remake(<oeintegration:excavatemodifier>, ["pretty",
   "  □  ",
@@ -11,7 +13,8 @@ craft.remake(<oeintegration:excavatemodifier>, ["pretty",
 
 
 # [Enchanted Book] from [Excavate Modifier]
-recipes.addShapeless(<minecraft:enchanted_book>.withTag({StoredEnchantments:
-	<enchantment:oeintegration:oreexcavation>.makeEnchantment(1).makeTag().ench}),
-	[<oeintegration:excavatemodifier>]
-);
+recipes.addShapeless('Excavator to book', Book(<enchantment:oeintegration:oreexcavation>),
+	[<oeintegration:excavatemodifier>] as IIngredient[]
+, function(out, ins, cInfo) {
+    return Book(<enchantment:oeintegration:oreexcavation>);
+}, null);

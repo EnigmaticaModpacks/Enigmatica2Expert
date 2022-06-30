@@ -128,3 +128,9 @@ mods.astralsorcery.Altar.addAttunementAltarRecipe("Const paper",	<astralsorcery:
 	null, <minecraft:golden_apple:1>, null,              # Golden Apple
 	pp, pp, pp, pp
 ]);
+
+# Make "Technical Crystals"
+val TC = <astralsorcery:itemrockcrystalsimple>.withTag({
+	astralsorcery: {crystalProperties: {collectiveCapability: 1, size: 1, fract: 0, purity: 1, sizeOverride: -1}}
+});
+scripts.process.crush(<ore:oreRockCrystal>, TC, "only: SagMill AEGrinder", [TC, TC, TC], [1.0f, 1.0f, 1.0f]);

@@ -353,12 +353,12 @@ function addDragonForgeRecipe(input1 as IItemStack, input2 as IItemStack, output
 }
 
 recipes.removeByRecipeName("avaritia:items/resource/crystal_matrix_ingot");
-addDragonForgeRecipe(<minecraft:nether_star>, <avaritia:resource> * 4, <avaritia:resource:1>);
+addDragonForgeRecipe(<minecraft:nether_star>, <avaritia:resource>, <avaritia:resource:1>);
 
 # Lattice
 var CD = <mekanism:compresseddiamond>;
 recipes.remove(<avaritia:resource>);
-mods.extendedcrafting.CombinationCrafting.addRecipe(<avaritia:resource> * 2, 100000000, 1000000, CD, [CD]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<avaritia:resource>, 200000000, 2000000, CD, [CD, CD]);
 # Somehow infuser craft item/tick after first item
 # mods.thermalexpansion.Infuser.addRecipe(<avaritia:resource>, CD, 50000000);
 

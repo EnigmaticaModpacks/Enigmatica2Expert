@@ -281,6 +281,7 @@ mods.thermalexpansion.Compactor.addGearRecipe(<thermalfoundation:material:26>, <
 mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:26>, <rats:rat_diamond>, <immersiveengineering:mold:1>, 16000, 4);
 recipes.addShapeless("gem_crystal_flux from rat", <redstonearsenal:material:160> * 2, [<rats:rat_diamond>, <rats:rat_diamond>, Bucket('redstone')]);
 mods.thermalexpansion.Transposer.addFillRecipe(<redstonearsenal:material:160>, <rats:rat_diamond>, <fluid:redstone> * 500, 2000);
+mods.nuclearcraft.infuser.addRecipe(<ore:gemDiamondRat>, <fluid:redstone> * 500, <redstonearsenal:material:160>);
 # ################################################################################
 
 # Harder little balls recipe (was from coal)
@@ -338,14 +339,14 @@ craft.remake(<rats:chunky_cheese_token>, ["pretty",
 # Add additional gemcutter recipes as alternatives
 
 val gemcutterList = [
-  <quark:jasper>                 , <scalingfeast:exhaustingnugget> * 2, # [Exhausting Nugget] from [Jasper]
+  <quark:jasper>                  , <scalingfeast:exhaustingnugget> * 2, # [Exhausting Nugget] from [Jasper]
   
-  <minecraft:redstone>           , <actuallyadditions:block_crystal_cluster_redstone>,
-  <minecraft:dye:4>              , <actuallyadditions:block_crystal_cluster_lapis>,
-  <minecraft:diamond>            , <actuallyadditions:block_crystal_cluster_diamond>,
-  <minecraft:emerald>            , <actuallyadditions:block_crystal_cluster_emerald>,
-  <minecraft:iron_ingot>         , <actuallyadditions:block_crystal_cluster_iron>,
-  <actuallyadditions:item_misc:5>, <actuallyadditions:block_crystal_cluster_coal>,
+  <minecraft:redstone_block>      , <actuallyadditions:block_crystal_cluster_redstone> * 9,
+  <minecraft:lapis_block>         , <actuallyadditions:block_crystal_cluster_lapis> * 9,
+  <minecraft:diamond_block>       , <actuallyadditions:block_crystal_cluster_diamond> * 9,
+  <minecraft:emerald_block>       , <actuallyadditions:block_crystal_cluster_emerald> * 9,
+  <minecraft:iron_block>          , <actuallyadditions:block_crystal_cluster_iron> * 9,
+  <actuallyadditions:block_misc:2>, <actuallyadditions:block_crystal_cluster_coal> * 9,
 ] as IItemStack[];
 
 for i, input in gemcutterList {

@@ -582,10 +582,18 @@ craft.make(creativeCube, ["pretty",
 
 # Recharging cube
 craft.shapeless(creativeCube, "A", {A: <mekanism:energycube>.withTag({tier:4,mekData:{}})});
-	
-# Creative Wireless Crafting Terminal
-recipes.addShapeless("Creative Wireless Crafting Terminal", 
-<wct:wct_creative>, [<wct:wct>.withTag({}), creativeCube.reuse()]);
+
+# [Creative Wireless Ultimate Terminal] from [Creative Energy Cube][+4]
+craft.make(<ae2wtlib:wut_creative>, ["pretty",
+  "  e  ",
+  "r Ϟ i",
+  "  W  "], {
+  "e": <wct:wct:*>.withTag({}), # Wireless Crafting Terminal
+  "r": <wpt:wpt:*>.withTag({}), # Wireless Pattern Terminal
+  "Ϟ": creativeCube.reuse(), # Creative Energy Cube
+  "i": <wft:wft:*>.withTag({}), # Wireless Fluid Terminal
+  "W": <wit:wit:*>.withTag({}), # Wireless Interface Terminal
+});
 
 # Storage Drawers Unlimited Withdrawel Upgrade
 list["χ"] = <ore:blockCrystalMatrix>;
