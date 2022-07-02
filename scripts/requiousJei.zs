@@ -9,6 +9,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.item.WeightedItemStack;
 import mods.ctintegration.data.DataUtil.parse as sNBT;
+import mods.immersivepetroleum.Reservoir;
 
 
 function add(ass as Assembly, chunk as IItemStack[][IIngredient[]]) {
@@ -1716,3 +1717,11 @@ for i, kind in pechOrder {
   for j in 0 .. 5 { assRec.requireItem("input1"~j, pechDiamonds[j]); }
   x.addJEIRecipe(assRec);
 }
+
+function registerPumpjackliquids(name as string, liqud as ILiquidStack, minSize as int, maxSize as int, replenishRate as int, pumpSpeed as int, weight as int,
+	  dimBlacklist as int[], dimWhitelist as int[], biomeBlacklist as string[], biomeWhitelist as string[]){
+
+
+        Reservoir.registerReservoir(name, liqud, minSize, maxSize, replenishRate, pumpSpeed, weight,
+    		 dimBlacklist, dimWhitelist, biomeBlacklist, biomeWhitelist);
+      }
