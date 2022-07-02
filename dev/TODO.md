@@ -86,7 +86,9 @@ Liquids that should have more uses:
 - [x] ✏️ crystal matrix ingot says it takes 4 diamond lattice but only consumes one
 - [x] ✏️ Make alternative automateble recipe for Drac Energy Crystals (to simplify them from AS Lens)
 - [ ] ✏️ Combine Trans Stones when on pickup
+- [ ] ✏️ high pressure steam from NC is incompatible with IT
 - [ ] ✏️ Add molten terrestrial artifact that could be centrifuged
+- [ ] ✏️ Add sic-sic recipe
 - [ ] 📀 Add Meat to Meaty orb https://github.com/daedalus4096/ThaumicWonders/blob/251829dee76d72368d0ed0af1f2104121b781e63/src/main/java/com/verdantartifice/thaumicwonders/common/tiles/devices/TileMeatyOrb.java#L49-L53
 - [ ] 📀 Buff Golem Stats
 - [ ] 📀 Change Quartz modifier to `(n + 1) * 1.05`
@@ -95,11 +97,14 @@ Liquids that should have more uses:
 - [ ] 📖 Call out Tinkers components that have unusual recipes in E2E-E
 - [ ] 📖 Add trans stones entry
 - [ ] 📖 Add packaged ex crafting quest
+- [ ] 🔄 Do not use ModDirector for CF files
+- [ ] 🔄 make jei.cfg as default file
 - [ ] 🔄 Check why mobs are not spawned anough (less then 70 for whole server)
 - [ ] 🔄 is it possible to make just enough resources show only... relevant info?
 - [ ] 🔄 Why Golems cant break blocks in skyblock
 - [ ] 🔄 After getting 40 hearts, player need to relog to enter nether
 - [ ] 🔄 Fix Travel Anchors must be seen to teleport
+- [ ] 🔄 Review https://github.com/Srdjan-V/Enigmatica2Expert-Extended/blob/master/scripts/mods/immersivepetroleum.zs
 - [ ] 🟢 Tweak RFTools Dimension Tweaker
 - [ ] 🟢 Install justenoughdimensions to fix mob cound issue
 - [ ] 🚧 Update screenshots on CF

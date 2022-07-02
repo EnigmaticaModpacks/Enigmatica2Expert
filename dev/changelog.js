@@ -27,9 +27,11 @@ import replace_in_file from 'replace-in-file'
 import yargs from 'yargs'
 
 import { formatRow, getModsIds } from './automation/modsDiff.js'
-import { fetchMod } from './lib/curseforge.js'
+import { fetchMods } from './lib/curseforge.js'
 import { generateManifest } from './lib/manifest.js'
 import { defaultHelper, escapeRegex, loadText, saveText } from './lib/utils.js'
+
+/** @typedef {import('./lib/minecraftinstance').InstalledAddon} InstalledAddon */
 
 const { unlink, writeFileSync } = fs_extra
 const exec = promisify(_exec)
@@ -281,14 +283,9 @@ async function getModChanges(version, nextVersion, h = defaultHelper) {
 
   let counstGets = 0
   const promises = ['added', 'removed', 'updated'].map((group) =>
-    Promise.all(
+    fetchMods(
       modsDiff[group].map(
-        (/** @type {import('./lib/minecraftinstance').InstalledAddon} */ m) => {
-          const p = fetchMod(m.addonID)
-          p.then(() => h.step())
-          counstGets++
-          return p
-        }
+        (/** @type {InstalledAddon} */ { addonID }) => addonID
       )
     )
   )
@@ -483,13 +480,13 @@ function getCommitMap(version) {
     const commitMatch = commitBlock.match(
       /^Author: .*?\nDate: .*?\n\n(?<message>.*)/ms
     )
-    if (!commitMatch) return
+    if (!commitMatch || !commitMatch.groups) return
 
     const [symbol, mesaage] = parseCommitMessage(
       commitMatch.groups.message.trim()
     )
     if (!symbol) return
-    ;(commitMap[symbol] ??= []).push(mesaage)
+    ;(commitMap[symbol] ??= []).push(mesaage ?? '')
   })
 
   return commitMap
@@ -631,7 +628,7 @@ function isItemCaptue(s) {
  */
 function runProcess(command, onStdOut) {
   const promise = exec(command)
-  promise.child.stdout.on('data', onStdOut)
+  promise.child.stdout?.on('data', onStdOut)
   return promise
 }
 
