@@ -268,10 +268,11 @@ function magic(input as IIngredient[], output as IItemStack[], exceptions as str
 # Takes raw material (like Ore block) and enrich (process, treat) it to get materials
 # 📦 → 📦|💧
 function beneficiate(
-  _input as IIngredient, # Raw item (mostly ore) that would be processed (amount account)
-  _oreName as string,    # Ore name of this material, for example "Gold"
-  _amount as double = 1.0d,     # Amount of default simple output (like smelting ore in furnace)
-  opts as IData = null   # Special options
+  _input as IIngredient,    # Raw item (mostly ore) that would be processed (amount account)
+  _oreName as string,       # Ore name of this material, for example "Gold"
+  _amount as double = 1.0d, # Amount of default simple output (like smelting ore in furnace)
+  opts as IData = null,     # Special options
+  step as int = 1           # Each next tier of machine add this amount to output
 ) {
 
   val calc = wholesCalc(_input.amount, _amount);
@@ -302,7 +303,7 @@ function beneficiate(
   }
 
   # Crush Dust or Gem
-  val dustOrGem = utils.getSomething(oreName, ["dust", "gem", "any"], amount);
+  val dustOrGem = utils.getSomething(oreName, ["dust", "gem", "any"], amount + step);
   if (!isNull(dustOrGem)) {
     var extraList = [] as IItemStack[];
     if (!isNull(JA)) {
@@ -315,13 +316,13 @@ function beneficiate(
   }
 
   # Crush IC2
-  val crushedOrDust = utils.getSomething(oreName, ["crushed", "dust", "any"], amount);
+  val crushedOrDust = utils.getSomething(oreName, ["crushed", "dust", "any"], amount + step);
   if (!isNull(crushedOrDust)) {
     crush(input, crushedOrDust, "only: macerator", null, null);
   }
 
   # Magic
-  val ingotOrGem = utils.getSomething(oreName, ["ingot", "gem", "any"], amount);
+  val ingotOrGem = utils.getSomething(oreName, ["ingot", "gem", "any"], amount + step * 2);
   if (!isNull(ingotOrGem)) {
     magic([input], [ingotOrGem], exceptions);
   }
@@ -335,8 +336,8 @@ function beneficiate(
     var meltAllowed = true;
     for meltExc in meltingExceptions { if(meltExc.asString() == oreName) meltAllowed=false; }
     if(meltAllowed) {
-      if (JA.oreType.toLowerCase() == "ingot") { melt(input * 1, liquid * (144*amount / input.amount), exceptions); }
-      if (JA.oreType.toLowerCase() == "gem")   { melt(input * 1, liquid * (666*amount / input.amount), exceptions); }
+      if (JA.oreType.toLowerCase() == "ingot") { melt(input * 1, liquid * (144*(amount + step) / input.amount), exceptions); }
+      if (JA.oreType.toLowerCase() == "gem")   { melt(input * 1, liquid * (666*(amount + step) / input.amount), exceptions); }
     }
   }
 
@@ -344,7 +345,7 @@ function beneficiate(
   # So check if we have NBT first
   if (!input.itemArray[0].hasTag) {
 
-    val clump = utils.getSomething(oreName, ["clump"], amount + 1);
+    val clump = utils.getSomething(oreName, ["clump"], amount + step * 2);
     if(!isNull(clump)) {
       workEx("mekpurification", exceptions, [input], null, [clump], null, null, null, null);
     }
@@ -352,11 +353,11 @@ function beneficiate(
     val slurryName = "slurry" ~ oreName;
     val slurry = mods.mekanism.MekanismHelper.getGas(slurryName);
     if(!isNull(slurry)) {
-      val gasAmount = (amount + 3) * 200;
+      val gasAmount = (amount + step * 4) * 200;
       workEx("mekdissolution", exceptions, [input], null, null, null, null, null, {gasOutput: slurryName, gasOutputAmount: gasAmount});
     }
 
-    val shard = utils.getSomething(oreName, ["shard"], amount + 2);
+    val shard = utils.getSomething(oreName, ["shard"], amount + step * 3);
     if(!isNull(shard)) {
       workEx("mekinjection", exceptions, [input], null, [shard], null, null, null, null);
     }

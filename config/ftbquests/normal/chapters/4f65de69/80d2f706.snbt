@@ -1,0 +1,22 @@
+{
+	x: 14.1d,
+	y: 6.1d,
+	text: [
+		"To install DankNull into dock, you need to have special item in offhang. Second item will be consumed."
+	],
+	dependencies: [
+		"224cb929"
+	],
+	tasks: [{
+		uid: "a51ba647",
+		type: "item",
+		items: [{
+			item: "danknull:danknull_dock"
+		}]
+	}],
+	rewards: [{
+		uid: "ffe9708a",
+		type: "loot",
+		table: 3
+	}]
+}

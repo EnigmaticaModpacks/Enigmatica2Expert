@@ -15,4 +15,8 @@
 
   ,{"key": "TWOND_FLUX_CAPACITOR","ops": [{"op": "replace","path": "stages/1/recipes/0","value": "thaumcraft:flux_capacitor"}]}
   ,{"key": "TWOND_FLUX_DISTILLER","ops": [{"op": "replace","path": "stages/1/recipes/0","value": "thaumcraft:flux_distiller"}]}
+  ,{"key": "TWOND_MYSTIC_GARDENING","ops": [{"op": "replace","path": "stages/1/recipes","value": ["thaumcraft:shimmerleaf_seed","thaumcraft:cinderpearl_seed","thaumcraft:vishroom_spore"]}]}
+  ,{"key": "TWOND_CATALYZATION_CHAMBER","ops": [{"op": "replace","path": "stages/2/recipes/2","value": "thaumcraft:alchemist_stone"}]}
+  ,{"key": "TWOND_TRANSMUTER_STONE","ops": [{"op": "replace","path": "stages/1/recipes/0","value": "thaumcraft:transmuter_stone"}]}
+  ,{"key": "TWOND_ALIENIST_STONE","ops": [{"op": "replace","path": "stages/1/recipes/0","value": "thaumcraft:alienist_stone"}]}
 ]

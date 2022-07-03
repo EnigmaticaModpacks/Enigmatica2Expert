@@ -5,15 +5,17 @@
  * @link https://github.com/Krutoy242
  */
 
-//@ts-check
+// @ts-check
 
-import { injectInFile, defaultHelper, loadText } from '../lib/utils.js'
 import _ from 'lodash'
 import { getModLoadTimeTuples } from 'mc-benchmark'
+
+import { fetchMods } from '../lib/curseforge.js'
 import { generateManifest, loadMCInstanceFiltered } from '../lib/manifest.js'
-import { fetchMod } from '../lib/curseforge.js'
+import { defaultHelper, injectInFile, loadText } from '../lib/utils.js'
 
 /** @typedef {import('../lib/minecraftinstance').InstalledAddon} InstalledAddon */
+/** @typedef {import('curseforge-v2').CF2Addon} CF2Addon */
 
 export function getModsIds(json_Path_A, json_Path_B) {
   const A = loadMCInstanceFiltered(json_Path_A).installedAddons
@@ -72,7 +74,7 @@ function getSquare(modName, fileName) {
     tuples.find(([, , m]) => m === fileName)?.[1] ??
     tuples.find(([m]) => m.startsWith(modName))?.[1]
 
-  if (isNaN(loadTime)) return '🟫'
+  if (!loadTime || isNaN(loadTime)) return '🟫'
 
   const rate = loadTime / _.sumBy(tuples, '1')
 
@@ -84,7 +86,7 @@ function getSquare(modName, fileName) {
 
 /**
  * @param {InstalledAddon} mcAddon
- * @param {Mod} curseAddon
+ * @param {CF2Addon} curseAddon
  */
 export function formatRow(mcAddon, curseAddon, options = {}) {
   const name = curseAddon.name.trim()
@@ -98,8 +100,8 @@ export function formatRow(mcAddon, curseAddon, options = {}) {
           Math.max(1, 93 - logo.length)
         )}width="50"> | ${getSquare(name, fileName)} `) +
     `${' '.repeat(Math.max(0, 38 - name.length))}[**${name}**](${
-      curseAddon.url
-    })${' '.repeat(Math.max(1, 75 - curseAddon.url.length))}` +
+      curseAddon.links.websiteUrl
+    })${' '.repeat(Math.max(1, 75 - curseAddon.links.websiteUrl.length))}` +
     `<sup>${options.isUpdated ? ' 🟡 ' : ''}<sub>${fileName}</sub></sup>` +
     (options.noSummary ? '' : ` <br> ${curseAddon.summary}`) +
     ' | '
@@ -128,15 +130,11 @@ export async function init(h = defaultHelper) {
 
   await h.begin('Asking Curseforge API for mods', diff.union.length)
 
-  const cursedUnion = await Promise.all(
-    diff.union.map((mcAddon) => {
-      const p = fetchMod(mcAddon.addonID)
-      p.then(() => h.step())
-      return p
-    })
-  )
+  /** @type {CF2Addon[]} */
+  let cursedUnion
 
-  cursedUnion.sort((a, b) => b.downloads - a.downloads)
+  cursedUnion = await fetchMods(diff.union.map((addon) => addon.addonID))
+  cursedUnion.sort((a, b) => b.downloadCount - a.downloadCount)
 
   // fs.writeFileSync(
   //   'CurseForge_example_return.json',

@@ -44,7 +44,7 @@ for ore_entry in oreDict {
   ore_name = getOreName(name, "cluster");
 	if (!isNull(ore_name)) {
     if(ore_name == 'Aluminum') continue;
-    beneficiate(ore_entry, ore_name, 3, benOpts);
+    beneficiate(ore_entry, ore_name, 2, benOpts);
 
     # Fix gems melting recipes
     # 	Standart JAOPCA's furnace recipes for Ores that outputs

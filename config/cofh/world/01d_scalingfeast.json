@@ -39,7 +39,7 @@
 					}},
         "cluster-size": 1
       },
-      "cluster-count": 24,
+      "cluster-count": 6,
       "chunk-chance": 8,
       "min-height": 1,
       "max-height": 45,

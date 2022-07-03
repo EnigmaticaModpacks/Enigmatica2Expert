@@ -13,7 +13,7 @@ import memoize from 'memoizee'
 import parseGitignore from 'parse-gitignore'
 import { getBorderCharacters, table } from 'table'
 
-import { fetchMod } from './curseforge.js'
+import { fetchMods } from './curseforge.js'
 import { defaultHelper, loadJson, loadText, saveText } from './utils.js'
 const { sync: globs } = fast_glob
 
@@ -99,14 +99,16 @@ export async function generateManifest(
   mcinstancePath = 'minecraftinstance.json',
   manifestPostfix = ''
 ) {
-  const modListUnfiltered = await Promise.all(
-    loadMCInstanceFiltered(mcinstancePath).installedAddons.map(async (a) => ({
-      projectID: a.addonID,
-      fileID: a.installedFile?.id,
-      required: !a.installedFile?.FileNameOnDisk.endsWith('.jar.disabled'),
-      ___name: (await fetchMod(a.addonID, 128)).name,
-    }))
-  )
+  const addonsListUnfiltered =
+    loadMCInstanceFiltered(mcinstancePath).installedAddons
+  const cfModsList = await fetchMods(addonsListUnfiltered.map((a) => a.addonID))
+
+  const modListUnfiltered = addonsListUnfiltered.map((a, i) => ({
+    projectID: a.addonID,
+    fileID: a.installedFile?.id,
+    required: !a.installedFile?.FileNameOnDisk.endsWith('.jar.disabled'),
+    ___name: cfModsList[i].name,
+  }))
 
   const resultObj = {
     minecraft: {

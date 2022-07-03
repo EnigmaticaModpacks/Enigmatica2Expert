@@ -49,6 +49,10 @@ utils.rh(<tconstruct:slime_congealed:5>);
 	mods.tconstruct.Melting.removeRecipe(<liquid:bronze>, <ic2:pipe>);
 	mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <ic2:pipe:1>);
 
+# Remove Iron -> Aluminium exploit
+mods.tconstruct.Melting.removeRecipe(<liquid:aluminum>, <minecraft:hopper>);
+mods.tconstruct.Melting.removeRecipe(<liquid:iron>, <minecraft:hopper>);
+
 # Cobalt Block Unification
 	mods.tconstruct.Casting.removeBasinRecipe(<chisel:blockcobalt>);
 	mods.tconstruct.Casting.addBasinRecipe(<tconstruct:metal>, null, <liquid:cobalt>, 1296);

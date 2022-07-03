@@ -9,11 +9,13 @@ import crafttweaker.data.IData;
 	mods.nuclearcraft.manufactory.removeRecipeWithOutput(<libvulpes:productdust:3>);
 	
 # Airtight Seal Enchant
-	recipes.addShapedMirrored("Airtight Seal Enchant", 
-	<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: (<enchantment:advancedrocketry:spacebreathing>.id) as short}]}), 
+	recipes.addShaped("Airtight Seal Enchant", 
+	Book(<enchantment:advancedrocketry:spacebreathing>), 
 	[[<ore:plateTitaniumAluminide>, <advancedrocketry:liquidtank>, <ore:plateTitaniumAluminide>],
 	[<ore:ingotCarbon>, <advancedrocketry:blocklens>, <ore:ingotCarbon>], 
-	[<ore:plateTitaniumAluminide>, <advancedrocketry:liquidtank>, <ore:plateTitaniumAluminide>]]);
+	[<ore:plateTitaniumAluminide>, <advancedrocketry:liquidtank>, <ore:plateTitaniumAluminide>]], function(out, ins, cInfo) {
+    return Book(<enchantment:advancedrocketry:spacebreathing>);
+  }, null);
 
 # HeatProof Brick
 	recipes.remove(<advancedrocketry:blastbrick>);

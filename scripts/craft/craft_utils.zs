@@ -36,6 +36,14 @@ global Bucket as function(string)IItemStack = function (name as string) as IItem
 	return <forge:bucketfilled>.withTag({FluidName: name, Amount: 1000});
 };
 
+# ########################
+# Gets a Book Item from a enchantment
+# ########################
+global Book as function(crafttweaker.enchantments.IEnchantmentDefinition)IItemStack =
+function (ench as crafttweaker.enchantments.IEnchantmentDefinition) as IItemStack {
+	return <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: ench.id as short}]});
+};
+
 # Apply tag to bucket (in case we use TE potions or such)
 global BucketTag as function(string,crafttweaker.data.IData)IItemStack = function (name as string, tag as crafttweaker.data.IData) as IItemStack {
 	val b = Bucket(name as string);

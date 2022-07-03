@@ -2,76 +2,124 @@
  * @file Add tips only into `resources/enigmatica/lang/en_us.lang`
  * And they would be automatically copied to localized files
  * and to `config/tips.cfg`
- * 
+ *
  * @author Krutoy242
  * @link https://github.com/Krutoy242
  */
 
-//@ts-check
+// @ts-check
 
 import { writeFileSync } from 'fs'
-import { injectInFile, loadText, defaultHelper } from '../lib/utils.js'
+import { parse } from 'path'
 
-export async function init(h=defaultHelper) {
+import FastGlob from 'fast-glob'
+import { getLangNameFromCode } from 'language-name-map'
+import memoize from 'memoizee'
 
+import {
+  defaultHelper,
+  injectInFile,
+  loadText,
+  saveText,
+} from '../lib/utils.js'
+
+const filePathes = FastGlob.sync('resources/tips/lang/*_*.lang')
+
+/**
+ * @typedef LangGroups
+ * @type {{match:string, id:string, text:string}}
+ */
+
+/**
+ * @param {string} lang
+ */
+function getTips(lang) {
+  return [
+    ...lang.matchAll(/^(?<match>e2ee\.tips\.(?<id>\d+)=(?<text>.*))$/gm),
+  ].map((m) => /** @type {LangGroups} */ (m.groups))
+}
+
+memoize(() => {})
+
+export async function init(h = defaultHelper) {
   await h.begin('Loading files')
-  function getTips(lang) {
-    return [...lang.matchAll(
-      /^(?<match>e2ee\.tips\.(?<id>\d+)=(?<text>.*))$/gm
-    )].map(m=>m.groups)
-  }
-
-  const filePathes = [
-    'resources/enigmatica/lang/en_us.lang',
-    'resources/enigmatica/lang/ru_ru.lang',
-  ]
-  const rawFiles = filePathes.map(fp => loadText(fp))
-  const rawTips  = rawFiles.map(getTips)
-  const mainTips = rawTips[0]
+  const rawFiles = filePathes.map(loadText)
+  const rawTips = rawFiles.map(getTips)
+  const rawLandCodes = filePathes.map((f) => parse(f).name)
+  const en_us_index = rawLandCodes.indexOf('en_us')
+  const en_us_Tips = rawTips[en_us_index]
 
   // cfg
-  injectInFile('config/tips.cfg', 
+  injectInFile(
+    'config/tips.cfg',
     '    S:customTips <\n',
     '\n     >',
-    mainTips.map((_g,i)=>`        e2ee.tips.${i}`).join('\n')
+    en_us_Tips.map((_, i) => `        e2ee.tips.${i}`).join('\n')
   )
 
   // English
-  replaceTips(0, mainTips)
+  replaceTips(en_us_index, en_us_Tips)
 
-  // Russian
-  const filtered_ru = []
-  let unlocalizedCount = 0
-  mainTips.forEach(en => 
-    filtered_ru.push(
-      rawTips[1].find(ru => en.id === ru.id) ??
-      (unlocalizedCount++, en)
+  // Other languages
+  /** @type {LangGroups[]} */
+  rawTips.forEach((tips, i) => {
+    if (i === en_us_index) return
+    const filtered_other = []
+    en_us_Tips.forEach((en) =>
+      filtered_other.push(tips.find((other) => en.id === other.id) ?? en)
     )
-  )
-  replaceTips(1, filtered_ru)
+    replaceTips(i, filtered_other)
+  })
 
+  /**
+   * @param {number} fileIndex
+   * @param {LangGroups[]} newGroups
+   */
   function replaceTips(fileIndex, newGroups) {
-    const oldTipsText = rawFiles[fileIndex]
-    let replaced = oldTipsText
-
-    // Get where tips started in file
-    const firstOccure = replaced.indexOf(rawTips[fileIndex][0].match)
-
-    // Remove all old tips lines
-    rawTips[fileIndex].forEach(g => replaced = replaced.replace('\n'+g.match, ''))
-
-    // Generate new text in place
-    replaced = 
-      replaced.substring(0, firstOccure) +
-      newGroups.map((g,i)=>`e2ee.tips.${i}=${g.text}`).join('\n') + '\n' +
-      replaced.substring(firstOccure)
-    
-    // Write
-    writeFileSync(filePathes[fileIndex], replaced)
+    writeFileSync(
+      filePathes[fileIndex],
+      newGroups.map(({ text }, i) => `e2ee.tips.${i}=${text}`).join('\n') + '\n'
+    )
   }
 
-  h.result(`Total tips: ${mainTips.length}, Unlocalized: ${unlocalizedCount}`)
+  // Minecraft To GH Markdown
+  rawFiles.forEach((langFileText, i) => {
+    const lines = [...langFileText.matchAll(/^e2ee.tips.[^=]+=(.*)$/gm)].map(
+      (s) => `- ${mcToMd(s[1])}`
+    )
+
+    const langCode = parse(filePathes[i]).name
+    const langName =
+      getLangNameFromCode(langCode.replace(/_.*/, ''))?.name ?? ''
+    saveText(
+      `${lines.join('\n')}
+`,
+      `Enigmatica2Expert-Extended.wiki/${langName}-Tips.md`
+    )
+  })
+
+  h.result(`Total tips: ${en_us_Tips.length}`)
+}
+
+/**
+ * @param {string} text
+ */
+function mcToMd(text) {
+  let result = text
+  let fresh = ''
+  while (true) {
+    fresh = result
+      .replace(/§[km](.*?)(§r|$)/im, '~~$1~~§r') // Obfuscated
+      .replace(/§[0-9a-f](.*?)(§r|$)/im, '**$1**§r') // Colored -> italic
+      .replace(/§[ln](.*?)(§r|$)/im, '`$1`§r') // Bold, underlined -> code
+      .replace(/§o(.*?)(§r|$)/im, '_$1_§r') // Italic
+    if (fresh === result) return result.replace(/§r/g, '')
+    result = fresh
+  }
 }
 
 // @ts-ignore
-if(import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()
+if (
+  import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
+)
+  init()

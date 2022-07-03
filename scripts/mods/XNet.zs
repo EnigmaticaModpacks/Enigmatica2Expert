@@ -102,5 +102,12 @@ val PL = <ore:plateCarbon>;
 	[<ore:plateNickel>, <xnet:connector:*>, <ore:plateNickel>], 
 	[<ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>]]);
 	
-	
+# [Redstone Proxy] from [Facade][+1]
+craft.remake(<xnet:redstone_proxy>, ["pretty",
+  "  ♥  ",
+  "♥ F ♥",
+  "  ♥  "], {
+  "♥": <deepmoblearning:soot_covered_redstone>, # Soot-covered Redstone
+  "F": <xnet:facade>,                           # Facade
+});
 	

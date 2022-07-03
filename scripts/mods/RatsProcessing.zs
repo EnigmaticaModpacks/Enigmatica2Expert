@@ -112,22 +112,22 @@ function jaopcaGetEntry(item as IItemStack) as OreEntry{
 }
 
 for poop in listRatPoop{
-  if (!isNull(poop.tag.OreItem) && !isNull(poop.tag.IngotItem)){      
-    # Get what resource we got after processing
-    var pooResult = itemUtils.getItem(
-      poop.tag.IngotItem.id.asString(),
-      poop.tag.IngotItem.Damage.asString() as int);
+  if (isNull(poop.tag.OreItem) || isNull(poop.tag.IngotItem)) continue;
+  # Get what resource we got after processing
+  var pooResult = itemUtils.getItem(
+    poop.tag.IngotItem.id.asString(),
+    poop.tag.IngotItem.Damage.asString() as int);
 
-    if(!isNull(pooResult)) {
-      # Dust output
-      var poopEntry = jaopcaGetEntry(pooResult);
-      
-      if(!isNull(poopEntry)) { # Check if listed item exist (can happen if mod was removed)
-        scripts.process.beneficiate(poop, poopEntry.oreName, 1.5d, {
-          exceptions: "manufactory melter pulverizer", // This machines somehow wont work
-          meltingExceptions: scripts._init.variables.meltingExceptions
-        });
-      }
-    }
-	}
+  if(isNull(pooResult)) continue;
+  # Dust output
+  var poopEntry = jaopcaGetEntry(pooResult);
+  
+  # Check if listed item exist (can happen if mod was removed)
+  if(isNull(poopEntry)) continue;
+
+  val outputOre = oreDict.get('crystalShard' ~ poopEntry.oreName);
+  if(isNull(outputOre) || outputOre.items.length <= 0) continue;
+
+  val outputItem = outputOre.items[0];
+  recipes.addShapeless('rat '~poopEntry.oreName, outputItem, [poop, poop, poop]);
 }

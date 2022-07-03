@@ -11,10 +11,12 @@ import { existsSync } from 'fs'
 import { fileURLToPath, URL } from 'url'
 
 import * as cheerio from 'cheerio'
+import CFV2 from 'curseforge-v2'
 import MarkdownIt from 'markdown-it'
-import { getMod } from 'mc-curseforge-api'
 
 import { loadJson, loadText, saveObjAsJson, saveText } from './utils.js'
+
+const { CFV2Client } = CFV2
 
 function relative(relPath = './') {
   // @ts-ignore
@@ -24,47 +26,89 @@ const md = new MarkdownIt({ html: true })
 
 const cachePath = relative('~cf_cache.json')
 
+const cf = new CFV2Client({
+  apiKey: loadText('secrets/~cf_api_key.txt').trim(),
+})
+
 /**
  * @typedef {Object} Cached
- * @property {number} __lastUpdated
+ * @property {number} [__lastUpdated]
  *
- * @typedef {Mod & Cached} ModCached
+ * @typedef {CFV2.CF2Addon & Cached} ModCached
  */
 
 /**
  * Get mod information from CurseForge
  * If file was already fetched last `timeout` hours
  * it would be loaded from cache file
- * @param {number} modID
- * @param {number} [timeout]
- * @returns {Promise<Mod>}
+ * @param {number[]} modIds
+ * @param {number} [timeout] hours of restoring from cache
+ * @returns {Promise<CFV2.CF2Addon[]>}
  */
-export function fetchMod(modID, timeout = 24) {
+export async function fetchMods(modIds, timeout = 96) {
   // Create file if not have one
   if (!existsSync(cachePath)) saveObjAsJson({}, cachePath)
-  // Return cached if have
-  /**
-   * @type {ModCached}
-   */
+
+  /** @type {CFV2.CF2Addon[]} */
+  const result = []
+
+  /** @type {number[]} */
+  const fromCFIds = []
+
+  modIds.forEach((modID) => {
+    const cached = cachedMod(modID, timeout)
+    if (cached) result.push(cached)
+    else fromCFIds.push(modID)
+  })
+
+  // return [...result, ...(await loadFromCF(fromCFIds))]
+  const cfLoaded = await loadFromCF(fromCFIds)
+
+  // @ts-ignore
+  return modIds.map(
+    (id) => result.find((a) => a.id === id) ?? cfLoaded.find((a) => a.id === id)
+  )
+}
+
+/**
+ * @param {number} modID
+ * @param {number} timeout
+ * @returns {CFV2.CF2Addon | undefined}
+ */
+function cachedMod(modID, timeout) {
+  /** @type {ModCached} */
   const cached = loadJson(cachePath)[modID]
-  if (
-    cached &&
-    (Date.now() - cached.__lastUpdated) / (1000 * 60 * 60) < timeout
-  ) {
-    const result = { ...cached }
-    delete result.__lastUpdated
-    // @ts-ignore
-    return (async () => result)()
-  }
+  if (!cached) return
+
+  const hoursPass =
+    (Date.now() - (cached.__lastUpdated ?? 0)) / (1000 * 60 * 60)
+  if (hoursPass > timeout) return
+
+  const result = { ...cached }
+  delete result.__lastUpdated
+  return result
+}
+
+/**
+ * @param {number[]} modIds
+ * @returns {Promise<CFV2.CF2Addon[]>}
+ */
+async function loadFromCF(modIds) {
+  if (!modIds.length) return []
 
   // Get from Web and update cache
-  const p = getMod(modID)
-  p.then((mod) => {
-    const json = loadJson(cachePath)
-    json[modID] = { __lastUpdated: Date.now(), ...mod }
-    saveObjAsJson(json, cachePath)
+  const mods = (await cf.getMods({ modIds: modIds })).data?.data
+
+  if (!mods || !mods.length)
+    throw new Error('Cant fetch mods for IDs: ' + modIds)
+
+  const json = loadJson(cachePath)
+  mods.forEach((mod) => {
+    json[mod.id] = { __lastUpdated: Date.now(), ...mod }
   })
-  return p
+  saveObjAsJson(json, cachePath)
+
+  return mods
 }
 
 /**
@@ -114,6 +158,9 @@ export function curseMarkdown(mdFilePath) {
 
 export async function init() {
   curseMarkdown('changelogs/LATEST.md')
+
+  // console.log(await fetchMods([32274, 59143, 59751]))
+  // console.log((await cf.getMods({ modIds: [32274, 59143, 59751] })).data?.data)
 }
 
 if (

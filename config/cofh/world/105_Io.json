@@ -8,7 +8,7 @@
 			"min-height": 1,
 			"max-height": 3,
 			"dimension": {"restriction": "whitelist","value": [105]},
-			"chunk-chance": 3,
+			"chunk-chance": 30,
 			"generator": {
 				"type": "sequential",
 				"generators": [
@@ -30,7 +30,7 @@
 			"min-height": 1,
 			"max-height": 3,
 			"dimension": {"restriction": "whitelist","value": [105]},
-			"chunk-chance": 5,
+			"chunk-chance": 50,
 			"generator": {
 				"type": "sequential",
 				"generators": [
@@ -49,7 +49,7 @@
 			"min-height": 1,
 			"max-height": 3,
 			"dimension": {"restriction": "whitelist","value": [105]},
-			"chunk-chance": 8,
+			"chunk-chance": 80,
 			"generator": {
 				"type": "sequential",
 				"generators": [

@@ -15,7 +15,7 @@ tooltips.lang.botania:kingkey=§aBuffed splash damage Mana weapon
 tooltips.lang.botania:lokiring=§aBuilding tool
 tooltips.lang.botania:odinring=§aExtra hearts, protects from drowning, suffocation, fire or starvation damage
 tooltips.lang.botania:thorring=§aIncreases area of Terra Shatterer
-tooltips.lang.computercraft:printout=§fPrint with §eComputer Craft§r's §bPrinter
+tooltips.lang.computercraft:printout=§51)§r Craft §eComputer Craft§r's §bPrinter and place on top of §eComputer§r\n§52)§r In computer enter §eLUA Interpreter§r (type lua)\n§53)§r Execute §np=peripheral.wrap"top"§r\n§54)§r To print blank page execute §np.newPage();p.endPage()§r
 tooltips.lang.farmingforblockheads:feeding_trough=§eDoesn't work if there are more than 8 animals
 tooltips.lang.ic2:quantum_chestplate=§bSpace+V§r to hover\n§bShift+V§r to disable
 tooltips.lang.ic2:te:48=Disabled. Use the Advanced Scrap Factory
