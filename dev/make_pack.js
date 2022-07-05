@@ -20,6 +20,7 @@ import fast_glob from 'fast-glob'
 import fs_extra from 'fs-extra'
 import git_describe from 'git-describe'
 import logUpdate from 'log-update'
+import numeral from 'numeral'
 import parseGitignore from 'parse-gitignore'
 import simpleGit from 'simple-git'
 import Client from 'ssh2-sftp-client'
@@ -32,6 +33,7 @@ import {
   execSyncInherit,
   loadJson,
   loadText,
+  saveObjAsJson,
   saveText,
   write,
 } from './lib/utils.js'
@@ -80,7 +82,6 @@ const style = {
 
 ;(async () => {
   const mcClientPath = process.cwd()
-  const sZPath = 'D:/Program Files/7-Zip/7z.exe'
   const distrDir = 'E:/YandexDisk/dev/mc/e2e-e/dist/'
   const serverRoot = resolve(mcClientPath, 'server/')
   const tmpDir = 'D:/mc_tmp/'
@@ -216,7 +217,12 @@ const style = {
 
     doTask(
       `⬅️ Move manifest.json ... `,
-      () => renameSync('manifest.json', resolve(tmpDir, 'manifest.json')),
+      () => {
+        const manifest = loadJson('manifest.json')
+        manifest.files.forEach((o) => delete o.___name)
+        saveObjAsJson(manifest, 'manifest.json')
+        renameSync('manifest.json', '../manifest.json')
+      },
       tmpOverrides
     )
 
@@ -236,6 +242,7 @@ const style = {
 ███████╗██║██║     
 ╚══════╝╚═╝╚═╝     
 */
+  const sZPath = 'C:/Program Files/WinRAR/Rar.exe'
 
   /**
    * Returns handler for working with Zip file of specified path
@@ -258,7 +265,7 @@ const style = {
         )
 
       const exec7z = (p) =>
-        execSyncInherit(`"${sZPath}" ${command} -bso0 "${zipPath}" ${p}`)
+        execSyncInherit(`"${sZPath}" ${command} "${zipPath}" ${p}`)
 
       if (!Array.isArray(params)) return exec7z(params)
 
@@ -459,24 +466,24 @@ const style = {
       })
     )
 
-    // updateBox('Copy server pack')
-    // const bytes = (/** @type {number} */ v) => numeral(v).format('0.0b')
     const zipName = parse(zipPath_server).base
-    // let step = 0
-    // await sftp.fastPut(zipPath_server, zipName, {
-    //   step: (total_transferred, chunk, total) => {
-    //     if (step++ % 10 !== 0) return
-    //     updateBox(
-    //       'Copy server pack',
-    //       bytes(total_transferred),
-    //       '/',
-    //       bytes(total)
-    //     )
-    //   },
-    // })
+    updateBox('Copy server pack')
+    const bytes = (/** @type {number} */ v) => numeral(v).format('0.0b')
+    let step = 0
+    await sftp.fastPut(zipPath_server, zipName, {
+      step: (total_transferred, chunk, total) => {
+        if (step++ % 10 !== 0) return
+        updateBox(
+          'Copy server pack',
+          bytes(total_transferred),
+          '/',
+          bytes(total)
+        )
+      },
+    })
 
     await pressEnterOrEsc(
-      `Go to SFTP server, Upload and Unpack ${style.log(
+      `Go to SFTP server, Unpack ${style.log(
         zipName
       )} and press ENTER to override`
     )
