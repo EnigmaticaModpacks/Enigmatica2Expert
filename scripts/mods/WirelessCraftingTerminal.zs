@@ -13,7 +13,7 @@ import crafttweaker.item.IIngredient;
 val wctIngrs = {
   "C": <appliedenergistics2:part:360>,     # ME Crafting Terminal
   "F": <ore:pearlFluix>,                   # Fluix Pearl
-  "W": <appliedenergistics2:wireless_terminal>.withTag({}).anyDamage(), # Wireless Terminal
+  "W": <ae2stuff:wireless>,
   "M": <appliedenergistics2:quantum_ring>, # ME Quantum Ring
   "○": <appliedenergistics2:part:520>,     # ME Fluid Terminal
   "E": <appliedenergistics2:part:480>,     # ME Interface Terminal

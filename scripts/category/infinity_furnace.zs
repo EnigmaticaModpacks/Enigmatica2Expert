@@ -37,7 +37,7 @@ biomesoplenty:mudball
 ic2:dust:3
 iceandfire:dread_stone_bricks
 minecraft:stonebrick
-minecraft:sponge
+minecraft:sponge:1
 mysticalagriculture:soulstone:1
 nuclearcraft:ingot_oxide:3
 rats:marbled_cheese_brick
@@ -94,7 +94,7 @@ ${filtered.join('\n')}`
 
 # Total Furnace recipes registered: 916
 # Filtered by JEI blacklist: 47
-# Filtered manuallly (antidupe): 14
+# Filtered manuallly (antidupe): 15
 # Filtered by oredict: 201
 infinFurnace(utils.get("actuallyadditions:block_misc", 3), utils.get("actuallyadditions:item_misc", 5));
 ##infinFurnace(utils.get("actuallyadditions:item_dust", 3), utils.get("minecraft:emerald"));
@@ -633,7 +633,7 @@ infinFurnace(utils.get("minecraft:redstone_ore", W), utils.get("minecraft:redsto
 infinFurnace(utils.get("minecraft:rotten_flesh"), utils.get("rustic:tallow"));
 infinFurnace(utils.get("minecraft:sand", W), utils.get("minecraft:glass"));
 infinFurnace(utils.get("minecraft:shears"), utils.get("minecraft:iron_nugget"));
-infinFurnace(utils.get("minecraft:sponge", 1), utils.get("minecraft:sponge"));
+//infinFurnace(utils.get("minecraft:sponge", 1), utils.get("minecraft:sponge"));
 infinFurnace(utils.get("minecraft:stained_hardened_clay", 1), utils.get("minecraft:orange_glazed_terracotta"));
 infinFurnace(utils.get("minecraft:stained_hardened_clay", 2), utils.get("minecraft:magenta_glazed_terracotta"));
 infinFurnace(utils.get("minecraft:stained_hardened_clay", 3), utils.get("minecraft:light_blue_glazed_terracotta"));
