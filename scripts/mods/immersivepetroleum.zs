@@ -49,7 +49,7 @@ var maxInt = 2147480000;
 		[], [-1], [], []);
 
 
-	requiousJei.registerPumpjackliquids("Molten Tungsten Reservoir (End)", <liquid:tungsten>, 12400000, 16400000, 0, 4, 10,
+	requiousJei.registerPumpjackliquids("Molten Tungsten Reservoir (End)", <liquid:tungsten>, 720000, 1440000, 0, 4, 10,
 		[], [1], [], []);
 
 
@@ -75,7 +75,7 @@ var maxInt = 2147480000;
 	
 	 */
 
-	    requiousJei.registerPumpjackliquids("Helium 3 Reservoir (Luna)", <liquid:helium3>, 25000, 2500000, 20, 35, 30,
+	    requiousJei.registerPumpjackliquids("Helium 3 Reservoir (Luna)", <liquid:helium3>, 2000000000, maxInt, 15, 40, 30,
 		    [], [100], [], []);
 
 	#Mercury ID=101
@@ -115,7 +115,8 @@ var maxInt = 2147480000;
 		ender draconium 7.4%
 		oxedized feric
 
-	*/
+	 */
+
 	#Jupiter ID=104
 		//Is not reachable with tpx command
 
@@ -240,7 +241,10 @@ var maxInt = 2147480000;
 	
 	 */
 
-		requiousJei.registerPumpjackliquids("Liquid Helium Reservoir (Proxima B)", <liquid:liquidhelium>, 150000, 250000, 0, 200, 30,
+		requiousJei.registerPumpjackliquids("Nitrogen Reservoir (Proxima B)", <liquid:nitrogen>, 1228800000, maxInt, 6400, 12800, 30,
+			[], [111], [], []);
+
+		requiousJei.registerPumpjackliquids("Helium Reservoir (Proxima B)", <liquid:helium>, 1228800000, maxInt, 6400, 12800, 30,
 			[], [111], [], []);
 
 		requiousJei.registerPumpjackliquids("Molten Terrestrial Artifact Reservoir (Proxima B)", <liquid:water>, 15000, 25000, 0, 200, 5,
@@ -264,13 +268,13 @@ var maxInt = 2147480000;
 
 	 */
 
-		requiousJei.registerPumpjackliquids("Low Pressure Steam Reservoir (Venus)", <liquid:low_pressure_steam>, 2000000000, maxInt, 0, 800, 30,
+		requiousJei.registerPumpjackliquids("Low Pressure Steam Reservoir (Novus)", <liquid:low_pressure_steam>, 2000000000, maxInt, 0, 800, 30,
 			[], [113], [], []);	
  
-		requiousJei.registerPumpjackliquids("IC2 Hot Coolant Reservoir (Neptune)", <liquid:ic2hot_coolant>, 15000000, 30000000, 25 , 50, 30,
+		requiousJei.registerPumpjackliquids("IC2 Hot Coolant Reservoir (Novus)", <liquid:ic2hot_coolant>, 15000000, 30000000, 25 , 50, 30,
 			[], [113], [], []);
 
-		requiousJei.registerPumpjackliquids("Enriched Lava Reservoir (Novus)", <liquid:enrichedlava>, 40000, maxInt, 0, 60, 10,
+		requiousJei.registerPumpjackliquids("Enriched Lava Reservoir (Novus)", <liquid:enrichedlava>, 40000, maxInt, 0, 20, 10,
 			[], [113], [], []);
 
 	#Stella ID=114
@@ -278,7 +282,7 @@ var maxInt = 2147480000;
 		Magic
 
 	 */
-		requiousJei.registerPumpjackliquids("Flux Goo Reservoir (Stella)", <liquid:flux_goo>, 750000, 750000, 10, 200, 30,
+		requiousJei.registerPumpjackliquids("Flux Goo Reservoir (Stella)", <liquid:flux_goo>, 750000, 1750000, 10, 200, 30,
 			[], [114], [], []);
 
 	#Philucka ID=115
@@ -338,13 +342,13 @@ var maxInt = 2147480000;
 		
 	 */
 
-		requiousJei.registerPumpjackliquids("Molten Tungsten Reservoir (KELT-6a)", <liquid:tungsten>, 1228800000, maxInt, 0, 4, 30,
-			[], [121], [], []);
+		requiousJei.registerPumpjackliquids("Protein Reservoir (KELT-6a)", <liquid:protein>, 265000, 530000, 0, 60, 30,
+			[], [121], [], []);	
 
-		requiousJei.registerPumpjackliquids("Liquid DNA Reservoir (KELT-6a)", <liquid:liquiddna>, 85000, 265000, 0, 60, 25,
+		requiousJei.registerPumpjackliquids("Liquid DNA Reservoir (KELT-6a)", <liquid:liquiddna>, 85000, 265000, 0, 60, 15,
 			[], [121], [], []);
 		
-		requiousJei.registerPumpjackliquids("Mutagen Reservoir (KELT-6a)", <liquid:mutagen>, 85000, 265000, 0, 60, 25,
+		requiousJei.registerPumpjackliquids("Mutagen Reservoir (KELT-6a)", <liquid:mutagen>, 85000, 265000, 0, 60, 15,
 			[], [121], [], []);
 
 
@@ -358,10 +362,10 @@ var maxInt = 2147480000;
 		requiousJei.registerPumpjackliquids("High Pressure Magma Chamber (Kepler 0118)", <liquid:lava>, 800000, 2500000, 500, 2500, 30,
 			[], [122], [], []);
 
-		requiousJei.registerPumpjackliquids("Enriched Lava Reservoir (Kepler 0118)", <liquid:enrichedlava>, 140000, maxInt, 0, 120, 10,
+		requiousJei.registerPumpjackliquids("High Pressure Steam Reservoir (Kepler 0118)", <liquid:high_pressure_steam>, 2000000000, maxInt, 0, 800, 20,
 			[], [122], [], []);
 
-		requiousJei.registerPumpjackliquids("High Pressure Steam Reservoir (Kepler 0118)", <liquid:high_pressure_steam>, 2000000000, maxInt, 0, 800, 20,
+		requiousJei.registerPumpjackliquids("Enriched Lava Reservoir (Kepler 0118)", <liquid:enrichedlava>, 140000, maxInt, 0, 40, 10,
 			[], [122], [], []);
 
 
