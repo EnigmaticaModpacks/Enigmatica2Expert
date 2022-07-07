@@ -82,6 +82,7 @@ const style = {
 
 ;(async () => {
   const mcClientPath = process.cwd()
+  const sZPath = 'D:/Program Files/7-Zip/7z.exe'
   const distrDir = 'E:/YandexDisk/dev/mc/e2e-e/dist/'
   const serverRoot = resolve(mcClientPath, 'server/')
   const tmpDir = 'D:/mc_tmp/'
@@ -242,7 +243,6 @@ const style = {
 ███████╗██║██║     
 ╚══════╝╚═╝╚═╝     
 */
-  const sZPath = 'C:/Program Files/WinRAR/Rar.exe'
 
   /**
    * Returns handler for working with Zip file of specified path
@@ -265,7 +265,7 @@ const style = {
         )
 
       const exec7z = (p) =>
-        execSyncInherit(`"${sZPath}" ${command} "${zipPath}" ${p}`)
+        execSyncInherit(`"${sZPath}" ${command} -bso0 "${zipPath}" ${p}`)
 
       if (!Array.isArray(params)) return exec7z(params)
 
