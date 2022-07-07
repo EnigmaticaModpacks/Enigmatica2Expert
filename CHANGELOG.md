@@ -1,6 +1,16 @@
 ### Enigmatica 2: Expert - Extended Changelog
 
 
+# v0.64.0
+
+
+## 🟠 Downgraded **Lootr**
+
+  > New version of Lootr causing old world to [stall and crash](https://github.com/noobanidus/Lootr/issues/123).
+
+
+
+
 # v0.63.0
 
 
