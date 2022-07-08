@@ -1706,11 +1706,20 @@ add_ic2_semifluid(<fluid:biomass>    , 8000);
 add_ic2_semifluid(<fluid:ic2biogas>  , 16000);
 add_ic2_semifluid(<fluid:bio.ethanol>, 32000);
 
+// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
 
-function registerPumpjackliquids(name as string, liqud as ILiquidStack, minSize as int, maxSize as int, replenishRate as int, pumpSpeed as int, weight as int,
+function registerPumpjackPowerUsage(tier as int, capacity as int, rft as int){
+
+
+  Reservoir.registerPowerUsage(tier, capacity, rft);
+}
+
+
+function registerPumpjackliquids(name as string, liqud as ILiquidStack, minSize as int, maxSize as int, replenishRate as int, pumpSpeed as int, weight as int, powerTier as int,
 	  dimBlacklist as int[], dimWhitelist as int[], biomeBlacklist as string[], biomeWhitelist as string[]){
 
 
-        Reservoir.registerReservoir(name, liqud, minSize, maxSize, replenishRate, pumpSpeed, weight,
-    		 dimBlacklist, dimWhitelist, biomeBlacklist, biomeWhitelist);
-      }
+  Reservoir.registerReservoir(name, liqud, minSize, maxSize, replenishRate, pumpSpeed, weight, powerTier,
+    dimBlacklist, dimWhitelist, biomeBlacklist, biomeWhitelist);
+}
