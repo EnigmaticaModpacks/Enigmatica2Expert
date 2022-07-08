@@ -418,11 +418,6 @@ craft.remake(<conarm:armor_trim>.withTag({Material: "aethium"}), ["pretty",
 	"p": <environmentaltech:modifier_piezo>,
 });
 
-
-# Remove Centrifuge (Causing dupes and looks weird)
-utils.rh(<plustic:centrifuge:1>);
-utils.rh(<plustic:centrifuge>);
-
 # Lock until endgame to lock mob dropped artifacts
 # [Plate of Unsealing] from [Silky Block of Jewel][+2]
 craft.remake(<tconevo:material:2>, ["pretty",

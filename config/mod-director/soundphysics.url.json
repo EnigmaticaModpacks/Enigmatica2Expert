@@ -5,8 +5,6 @@
     },
     "installationPolicy": {
         "continueOnFailedDownload": true,
-        "optionalKey": "$",
-        "name": "Sound-Physics",
-        "description": "Sound-Physics provides realistic sound attenuation. Optional, because on certain PCs it can cause a crash when using a tap on rubber tree."
+        "name": "Sound-Physics"
     }
 }

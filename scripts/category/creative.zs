@@ -5,17 +5,9 @@ import scripts.craft.grid.Grid;
 
 # *======= Gas Trophy Frame =======*
 
-var creativeGasTankFrame = <simple_trophies:trophy>.withTag({
-	TrophyItem:{id:"mekanism:gastank",Count:1 as byte, Damage:0 as short},
-	TrophyName:"Creative Gas Tank Frame",
-	TrophyVariant:"gold",
-	TrophyColorRed: 255,
-	TrophyColorGreen: 230,
-	TrophyColorBlue: 0,
-});
 
-# Add to JEI and apply Information
-mods.jei.JEI.addItem(creativeGasTankFrame);
+recipes.remove(<plustic:centrifuge>);
+var creativeGasTankFrame = <plustic:centrifuge>;
 mods.jei.JEI.addDescription(creativeGasTankFrame, "Craft with 9 DIFFERENT gases");
 
 # Gases to previwe. Not actual gases that used to craft
@@ -66,9 +58,9 @@ recipes.addShapeless("Creative Gas Tank Frame",
         }
       }
     }
-    return out;
+    return out.withTag(null);
   }, 
-  null);
+null);
 
 
 
@@ -420,21 +412,12 @@ recipes.addShapeless("Creative Gas Tank Clearing",
 
 # *======= Fluid Trophy Frame =======*
 
-var creativeFluidTankFrame = <simple_trophies:trophy>.withTag({
-	TrophyItem:{id:"mekanism:machineblock2",Count:1 as byte, Damage:11 as short},
-	TrophyName:"Creative Fluid Tank Frame",
-	TrophyVariant:"gold",
-	TrophyColorGreen: 118,
-	TrophyColorBlue: 151,
-	TrophyColorRed: 40,
-});
+recipes.remove(<plustic:centrifuge:1>);
+var creativeFluidTankFrame = <plustic:centrifuge:1>;
 
 function advTank(fluid as string) as IIngredient {
 	return <mekanism:machineblock2:11>.withTag({tier: 1, mekData: {fluidTank: {FluidName: fluid, Amount: 400000}}});
 }
-
-# Add to JEI and apply Information
-mods.jei.JEI.addItem(creativeFluidTankFrame);
 
 recipes.addShapeless("creative Fluid Tank Frame", creativeFluidTankFrame, [
 	advTank("cloud_seed_concentrated"), Bucket("corium")      , advTank("essence")    ,
