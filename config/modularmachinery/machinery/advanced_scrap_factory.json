@@ -3,404 +3,54 @@
     "localizedname": "Advanced Scrap Factory",
 	"color": "706764",
     "parts": [
-        {
-            "x": 1,
-            "y": 2,
-            "z": 1,
-            "elements": [
-                "casings"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 0,
-            "z": 2,
-            "elements": [
-                "casings"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 5,
-            "z": 0,
-            "elements": [
-                "modularmachinery:blockcasing@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 5,
-            "z": 0,
-            "elements": [
-                "modularmachinery:blockcasing@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 5,
-            "z": 0,
-            "elements": [
-                "modularmachinery:blockcasing@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 5,
-            "z": 2,
-            "elements": [
-                "modularmachinery:blockcasing@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": -1,
-            "z": 0,
-            "elements": [
-                "modularmachinery:blockcasing@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 3,
-            "z": 1,
-            "elements": [
-                "modularmachinery:blockcasing@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 5,
-            "z": 2,
-            "elements": [
-                "modularmachinery:blockcasing@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": -1,
-            "z": 0,
-            "elements": [
-                "modularmachinery:blockcasing@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 1,
-            "z": 0,
-            "elements": [
-                "modularmachinery:blockcasing@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 3,
-            "z": 1,
-            "elements": [
-                "minecraft:cobblestone@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 5,
-            "z": 2,
-            "elements": [
-                "modularmachinery:blockcasing@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": -1,
-            "z": 0,
-            "elements": [
-                "modularmachinery:blockcasing@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 1,
-            "z": 0,
-            "elements": [
-                "casings_modular"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 3,
-            "z": 1,
-            "elements": [
-                "modularmachinery:blockcasing@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 1,
-            "z": 2,
-            "elements": [
-                "modularmachinery:blockcasing@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 1,
-            "z": 0,
-            "elements": [
-                "modularmachinery:blockcasing@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": -1,
-            "z": 1,
-            "elements": [
-                "modularmachinery:blockcasing@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 1,
-            "z": 2,
-            "elements": [
-                "casings_modular"
-            ]
-        },
-        {
-            "x": 0,
-            "y": -1,
-            "z": 1,
-            "elements": [
-                "modularmachinery:blockcasing@3"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 1,
-            "z": 2,
-            "elements": [
-                "modularmachinery:blockcasing@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": -1,
-            "z": 1,
-            "elements": [
-                "modularmachinery:blockcasing@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 4,
-            "z": 1,
-            "elements": [
-                "casings"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 4,
-            "z": 1,
-            "elements": [
-                "minecraft:lava@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 2,
-            "z": 0,
-            "elements": [
-                "casings"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 4,
-            "z": 1,
-            "elements": [
-                "casings"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 0,
-            "z": 1,
-            "elements": [
-                "casings"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 2,
-            "z": 2,
-            "elements": [
-                "casings"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 0,
-            "z": 1,
-            "elements": [
-                "modularmachinery:blockcasing@3"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 0,
-            "z": 1,
-            "elements": [
-                "casings"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 5,
-            "z": 1,
-            "elements": [
-                "modularmachinery:blockcasing@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 3,
-            "z": 0,
-            "elements": [
-                "modularmachinery:blockcasing@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 5,
-            "z": 1,
-            "elements": [
-                "casings_energy_in"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 3,
-            "z": 0,
-            "elements": [
-                "modularmachinery:blockcasing@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 5,
-            "z": 1,
-            "elements": [
-                "modularmachinery:blockcasing@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 3,
-            "z": 0,
-            "elements": [
-                "modularmachinery:blockcasing@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 3,
-            "z": 2,
-            "elements": [
-                "modularmachinery:blockcasing@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 1,
-            "z": 1,
-            "elements": [
-                "casings_modular"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 3,
-            "z": 2,
-            "elements": [
-                "modularmachinery:blockcasing@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 1,
-            "z": 1,
-            "elements": [
-                "minecraft:hopper@4"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 3,
-            "z": 2,
-            "elements": [
-                "modularmachinery:blockcasing@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 1,
-            "z": 1,
-            "elements": [
-                "casings_modular"
-            ]
-        },
-        {
-            "x": -1,
-            "y": -1,
-            "z": 2,
-            "elements": [
-                "modularmachinery:blockcasing@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": -1,
-            "z": 2,
-            "elements": [
-                "modularmachinery:blockcasing@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": -1,
-            "z": 2,
-            "elements": [
-                "modularmachinery:blockcasing@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 4,
-            "z": 0,
-            "elements": [
-                "casings"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 2,
-            "z": 1,
-            "elements": [
-                "casings"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 4,
-            "z": 2,
-            "elements": [
-                "casings"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 2,
-            "z": 1,
-            "elements": [
-                "minecraft:water@0"
-            ]
-        }
+        { "x": -1, "y": -1, "z": 0, "elements": [ "modularmachinery:blockcasing@0" ] },
+        { "x": -1, "y": -1, "z": 1, "elements": [ "modularmachinery:blockcasing@0" ] },
+        { "x": -1, "y": -1, "z": 2, "elements": [ "modularmachinery:blockcasing@0" ] },
+        { "x": -1, "y": 0 , "z": 1, "elements": [ "casings" ] },
+        { "x": -1, "y": 1 , "z": 0, "elements": [ "modularmachinery:blockcasing@0" ] },
+        { "x": -1, "y": 1 , "z": 1, "elements": [ "casings_modular" ] },
+        { "x": -1, "y": 1 , "z": 2, "elements": [ "modularmachinery:blockcasing@0" ] },
+        { "x": -1, "y": 2 , "z": 1, "elements": [ "casings" ] },
+        { "x": -1, "y": 3 , "z": 0, "elements": [ "modularmachinery:blockcasing@0" ] },
+        { "x": -1, "y": 3 , "z": 1, "elements": [ "modularmachinery:blockcasing@0" ] },
+        { "x": -1, "y": 3 , "z": 2, "elements": [ "modularmachinery:blockcasing@0" ] },
+        { "x": -1, "y": 4 , "z": 1, "elements": [ "casings" ] },
+        { "x": -1, "y": 5 , "z": 0, "elements": [ "modularmachinery:blockcasing@0" ] },
+        { "x": -1, "y": 5 , "z": 1, "elements": [ "modularmachinery:blockcasing@0" ] },
+        { "x": -1, "y": 5 , "z": 2, "elements": [ "modularmachinery:blockcasing@0" ] },
+        { "x": 0 , "y": -1, "z": 0, "elements": [ "modularmachinery:blockcasing@0" ] },
+        { "x": 0 , "y": -1, "z": 1, "elements": [ "modularmachinery:blockcasing@3" ] },
+        { "x": 0 , "y": -1, "z": 2, "elements": [ "modularmachinery:blockcasing@0" ] },
+        { "x": 0 , "y": 0 , "z": 1, "elements": [ "modularmachinery:blockcasing@3" ] },
+        { "x": 0 , "y": 0 , "z": 2, "elements": [ "casings" ] },
+        { "x": 0 , "y": 1 , "z": 0, "elements": [ "casings_modular" ] },
+        { "x": 0 , "y": 1 , "z": 1, "elements": [ "minecraft:hopper" ] },
+        { "x": 0 , "y": 1 , "z": 2, "elements": [ "casings_modular" ] },
+        { "x": 0 , "y": 2 , "z": 0, "elements": [ "casings" ] },
+        { "x": 0 , "y": 2 , "z": 1, "elements": [ "minecraft:water@0" ] },
+        { "x": 0 , "y": 2 , "z": 2, "elements": [ "casings" ] },
+        { "x": 0 , "y": 3 , "z": 0, "elements": [ "modularmachinery:blockcasing@0" ] },
+        { "x": 0 , "y": 3 , "z": 1, "elements": [ "minecraft:cobblestone@0" ] },
+        { "x": 0 , "y": 3 , "z": 2, "elements": [ "modularmachinery:blockcasing@0" ] },
+        { "x": 0 , "y": 4 , "z": 0, "elements": [ "casings" ] },
+        { "x": 0 , "y": 4 , "z": 1, "elements": [ "minecraft:lava@0" ] },
+        { "x": 0 , "y": 4 , "z": 2, "elements": [ "casings" ] },
+        { "x": 0 , "y": 5 , "z": 0, "elements": [ "modularmachinery:blockcasing@0" ] },
+        { "x": 0 , "y": 5 , "z": 1, "elements": [ "casings_energy_in" ] },
+        { "x": 0 , "y": 5 , "z": 2, "elements": [ "modularmachinery:blockcasing@0" ] },
+        { "x": 1 , "y": -1, "z": 0, "elements": [ "modularmachinery:blockcasing@0" ] },
+        { "x": 1 , "y": -1, "z": 1, "elements": [ "modularmachinery:blockcasing@0" ] },
+        { "x": 1 , "y": -1, "z": 2, "elements": [ "modularmachinery:blockcasing@0" ] },
+        { "x": 1 , "y": 0 , "z": 1, "elements": [ "casings" ] },
+        { "x": 1 , "y": 1 , "z": 0, "elements": [ "modularmachinery:blockcasing@0" ] },
+        { "x": 1 , "y": 1 , "z": 1, "elements": [ "casings_modular" ] },
+        { "x": 1 , "y": 1 , "z": 2, "elements": [ "modularmachinery:blockcasing@0" ] },
+        { "x": 1 , "y": 2 , "z": 1, "elements": [ "casings" ] },
+        { "x": 1 , "y": 3 , "z": 0, "elements": [ "modularmachinery:blockcasing@0" ] },
+        { "x": 1 , "y": 3 , "z": 1, "elements": [ "modularmachinery:blockcasing@0" ] },
+        { "x": 1 , "y": 3 , "z": 2, "elements": [ "modularmachinery:blockcasing@0" ] },
+        { "x": 1 , "y": 4 , "z": 1, "elements": [ "casings" ] },
+        { "x": 1 , "y": 5 , "z": 0, "elements": [ "modularmachinery:blockcasing@0" ] },
+        { "x": 1 , "y": 5 , "z": 1, "elements": [ "modularmachinery:blockcasing@0" ] },
+        { "x": 1 , "y": 5 , "z": 2, "elements": [ "modularmachinery:blockcasing@0" ] }
     ]}
