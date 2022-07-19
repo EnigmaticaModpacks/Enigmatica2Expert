@@ -32,7 +32,8 @@
         ]
       }
     },
-    "bop_ruby": {
+    "bop_ruby_disabled": {
+			"enabled": false,
       "distribution": "uniform",
       "generator": {
         "block": {
@@ -63,7 +64,8 @@
         ]
       }
     },
-    "bop_peridot": {
+    "bop_peridot_disabled": {
+			"enabled": false,
       "distribution": "uniform",
       "generator": {
         "block": {
@@ -94,7 +96,8 @@
         ]
       }
     },
-    "bop_topaz": {
+    "bop_topaz_disabled": {
+			"enabled": false,
       "distribution": "uniform",
       "generator": {
         "block": {
@@ -125,7 +128,8 @@
         ]
       }
     },
-    "bop_tanzanite": {
+    "bop_tanzanite_disabled": {
+			"enabled": false,
       "distribution": "uniform",
       "generator": {
         "block": {
@@ -156,7 +160,8 @@
         ]
       }
     },
-    "bop_malachite": {
+    "bop_malachite_disabled": {
+			"enabled": false,
       "distribution": "uniform",
       "generator": {
         "block": {
@@ -187,7 +192,8 @@
         ]
       }
     },
-    "bop_sapphire": {
+    "bop_sapphire_disabled": {
+			"enabled": false,
       "distribution": "uniform",
       "generator": {
         "block": {
