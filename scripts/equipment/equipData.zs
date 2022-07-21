@@ -26,6 +26,7 @@ val defaultArmorMats as IData = [
   "rubber"                 , # 26
   "construction_alloy"     , # 26
   "palis_crystal"          , # 26
+  "psimetal"               , # 27
   "aluminium"              , # 27
   "enchanted_fabric"       , # 27
   "restonia_crystal"       , # 27
@@ -63,7 +64,6 @@ val defaultArmorMats as IData = [
   "treatedwood"            , # 34
   "osmium"                 , # 35
   "invar"                  , # 35
-  "psimetal"               , # 35
   "psigem"                 , # 35
   "meat_metal"             , # 35
   "electrical_steel"       , # 36
@@ -116,10 +116,10 @@ val defaultArmorMats as IData = [
   "peridot"                , # 45
   "lonsdaleite"            , # 45
   "exhaustium"             , # 46
+  "diamantine_crystal"     , # 46
   "pink_slime"             , # 46
   "refined_obsidian"       , # 46
   "lumium"                 , # 47
-  "diamantine_crystal"     , # 48
   "fluxed_electrum"        , # 48
   "emerald_plustic"        , # 48
   "endorium"               , # 49
@@ -130,12 +130,12 @@ val defaultArmorMats as IData = [
   "tough"                  , # 51
   "ionite"                 , # 52
   "ma.inferium"            , # 53
+  "emeraldic_crystal"      , # 54
   "pink_metal"             , # 54
   "xu_evil_metal"          , # 54
   "thaumium"               , # 54
   "pulsating_iron"         , # 55
   "osgloglas"              , # 56
-  "emeraldic_crystal"      , # 56
   "fusewood"               , # 56
   "enderium"               , # 56
   "fierymetal"             , # 57
@@ -241,9 +241,9 @@ val defaultWeaponMats as IData = [
   "xu_demonic_metal"       , # 98
   "sky_stone"              , # 98
   "obsidian"               , # 100
+  "psimetal"               , # 101
   "ruby"                   , # 103
   "mica"                   , # 104
-  "psimetal"               , # 105
   "psigem"                 , # 105
   "iron"                   , # 106
   "ardite"                 , # 107
@@ -284,6 +284,8 @@ val defaultWeaponMats as IData = [
   "uranium"                , # 133
   "ghostwood"              , # 134
   "energetic_alloy"        , # 135
+  "diamantine_crystal"     , # 136
+  "restonia_crystal"       , # 137
   "osmium"                 , # 140
   "lumium"                 , # 141
   "enori_crystal"          , # 141
@@ -291,14 +293,13 @@ val defaultWeaponMats as IData = [
   "exhaustium"             , # 143
   "redstone_alloy"         , # 144
   "bound_metal"            , # 144
-  "diamantine_crystal"     , # 145
   "energetic_metal"        , # 147
   "weezer"                 , # 149
   "knightmetal"            , # 149
+  "emeraldic_crystal"      , # 149
   "amethyst"               , # 152
   "manyullyn"              , # 154
   "thorium"                , # 154
-  "emeraldic_crystal"      , # 159
   "refined_glowstone"      , # 160
   "elementium"             , # 160
   "fluxed_electrum"        , # 162
@@ -316,7 +317,6 @@ val defaultWeaponMats as IData = [
   "platinum"               , # 192
   "osgloglas"              , # 193
   "thaumium"               , # 193
-  "restonia_crystal"       , # 195
   "tough"                  , # 199
   "enderium"               , # 200
   "terrasteel"             , # 203
