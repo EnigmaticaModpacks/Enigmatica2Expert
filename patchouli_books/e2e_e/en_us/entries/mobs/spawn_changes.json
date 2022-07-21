@@ -37,7 +37,7 @@
     {
       "item": "draconicevolution:mob_soul{EntityName:\"endreborn:endguard\"}",
       "title": "Purpur Guard",
-      "text": "Spawns anywhere, but only on $(n)Purpur blocks/$.",
+      "text": "Spawns anywhere, but only on $(n)Purpur blocks/$ or $(n)Cursed Earth/$.",
       "type": "spotlight"
     }
   ]
