@@ -20,8 +20,9 @@ Becomes:
 
 */
 
-const {escapeRegex} = require('../lib/utils.js')
 const fs = require('fs')
+
+const { escapeRegex } = require('../lib/utils.js')
 
 const cfgPath = 'config/tool_progression/block_overwrites.cfg'
 const cfg_full = fs.readFileSync(cfgPath, 'utf8')
@@ -32,26 +33,28 @@ let cfg = cfg_full.match(fullRgx)[2].split('\n')
 //    S:"appliedenergistics2:sky_stone_brick_stairs:0"=pickaxe=5
 
 for (let i = 0; i < cfg.length; i++) {
-  if(i>=cfg.length) continue
+  if (i >= cfg.length) continue
   const matcher = /^(?<pre>\s*S:"[^:]+:[^:]+)(?<meta>:?[^"]*)(?<post>"=.*)$/
   // console.log('cfg[i] :>> ', cfg[i]);
   const g = cfg[i].match(matcher)?.groups
   if (g?.meta !== ':0') continue
 
-  const sameItem = cfg.filter(l=>l.match(new RegExp(escapeRegex(g.pre) + ':\\d+.*')))
-  if(sameItem.length <= 1) continue // If there only one entry with such meta
-  if(sameItem.some(l=>l.match(matcher).groups.post !== g.post)) continue // If there not all metas have same level
+  const sameItem = cfg.filter((l) =>
+    l.match(new RegExp(escapeRegex(g.pre) + ':\\d+.*'))
+  )
+  if (sameItem.length <= 1) continue // If there only one entry with such meta
+  if (sameItem.some((l) => l.match(matcher).groups.post !== g.post)) continue // If there not all metas have same level
 
-  cfg = cfg.filter(l=>{
+  cfg = cfg.filter((l) => {
     const m = l.match(matcher)?.groups
     // console.log('m, i :>> ', m, i, l);
-    if(!m) return true
+    if (!m) return true
     return !(m.pre === g.pre && m.post === g.post && m.meta !== ':0')
   })
 
   cfg[i] = g.pre + ':*' + g.post
 }
 
-const newText = cfg_full.replace(fullRgx, '$1'+cfg.join('\n')+'$3')
+const newText = cfg_full.replace(fullRgx, '$1' + cfg.join('\n') + '$3')
 
 fs.writeFileSync(cfgPath, newText)

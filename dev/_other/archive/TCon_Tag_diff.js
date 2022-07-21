@@ -1,4 +1,4 @@
-var _ = require('lodash')
+let _ = require('lodash')
 
 /**
  * Deep diff between two object-likes
@@ -17,7 +17,7 @@ function deepDiff(fromObject, toObject) {
     // if (Array.isArray(toObject)) toObject.sort();
 
     if (Array.isArray(fromObject) && Array.isArray(toObject)) {
-      var duplicates = fromObject.filter((val) =>
+      let duplicates = fromObject.filter((val) =>
         toObject.find((o) => o != val)
       )
       // console.log('duplicates :>> ', duplicates);
@@ -63,19 +63,18 @@ function deepDiff(fromObject, toObject) {
 // mom I'm on lodash
 _.mixin({ deepDiff })
 
-var rootTag
+let rootTag
 function withTag(tag) {
   rootTag = rootTag || tag
 
-  var diff = deepDiff(rootTag, tag)
+  let diff = deepDiff(rootTag, tag)
 
   // console.log('diff :>> ', diff);
-  var modifier = ((diff['Modifiers.0'] || {}).to || {}).identifier
+  let modifier = ((diff['Modifiers.0'] || {}).to || {}).identifier
   console.log(`if (modifier == "${modifier}") {`)
   for (const [k, v] of _.entries(diff)) {
-
-    var s = ''
-    var keys = `tag.${k}`
+    let s = ''
+    let keys = `tag.${k}`
     if (v.from && v.to) {
       s = `(${keys}.asFloat() + ${v.to - v.from}f)`
     } else if (v.to && k.match(/^(.*?)\.\d+$/)) {
@@ -89,7 +88,7 @@ function withTag(tag) {
   console.log('}')
 }
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/// //////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // withTag({StatsOriginal: {Toughness: 0.0, FreeModifiers: 3, Durability: 64, Defense: 3.0}, Stats: {Toughness: 0.0, FreeModifiers: 3, Durability: 64, Defense: 3.0}, TinkerData: {Materials: ["wood", "wood", "wood"], Modifiers: []}, Modifiers: [{identifier: "ecological_armor", color: -7444965, level: 1}], Traits: ["ecological_armor"]})
 // withTag({ench: [{lvl: 4, id: 21}, {lvl: 4, id: 35}], StatsOriginal: {AttackSpeedMultiplier: 1.0, MiningSpeed: 2.255, FreeModifiers: 3, Durability: 2, HarvestLevel: 1, Attack: 4.9825}, Stats: {AttackSpeedMultiplier: 1.0, MiningSpeed: 2.255, FreeModifiers: 0, Durability: 1, HarvestLevel: 1, Attack: 16.9825}, Special: {Categories: ["tool", "weapon"]}, TinkerData: {UsedModifiers: 12, Materials: ["stone", "paper", "stone", "stone"], Modifiers: ["beheading_cleaver", "sharpness", "luck", "beheading"]}, Traits: ["cheap", "writable2", "cheapskate", "luck"], Modifiers: [{identifier: "cheap", color: -6710887, level: 1}, {identifier: "writable", color: -1, level: 1, writable2: 1}, {identifier: "cheapskate", color: -6710887, level: 1}, {identifier: "beheading_cleaver", color: 1070923, level: 2}, {identifier: "sharpness", current: 288, color: 16774902, level: 4, max: 72, extraInfo: "287 / 72"}, {identifier: "luck", current: 240, color: 2970082, level: 4, max: 60, modifierUsed: 1, extraInfo: "239 / 60"}, {identifier: "beheading", color: 1070923, level: 4}]})

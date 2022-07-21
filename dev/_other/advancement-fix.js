@@ -15,7 +15,12 @@ import yargs from 'yargs'
 import zipLocal from 'zip-local'
 
 import { getRemovedRecipes } from '../lib/tellme.js'
-import { defaultHelper, getModsJars, loadText, saveObjAsJson } from '../lib/utils.js'
+import {
+  defaultHelper,
+  getModsJars,
+  loadText,
+  saveObjAsJson,
+} from '../lib/utils.js'
 
 const { argv } = yargs(process.argv.slice(2)).option('remove', {
   alias: 'r',
@@ -75,7 +80,10 @@ function removePatchedFiles() {
     globs(['mods/*-patched.jar'], { dot: !0 }).map((fileName) => {
       const base = fileName.replace(/-patched\.jar$/g, '')
 
-      return Promise.all([rename(`${base}.disabled`, `${base}.jar`), unlink(fileName)])
+      return Promise.all([
+        rename(`${base}.disabled`, `${base}.jar`),
+        unlink(fileName),
+      ])
     })
   )
 }
@@ -91,7 +99,14 @@ function fixAdvancements(jarAdvancements, removedRecipeNames) {
   const result = []
   jarAdvancements.forEach((store) => {
     for (const [archievePath, advJson] of Object.entries(store.list)) {
-      if (handleAdvancement(store.jarPath, archievePath, advJson, removedRecipeNames)) {
+      if (
+        handleAdvancement(
+          store.jarPath,
+          archievePath,
+          advJson,
+          removedRecipeNames
+        )
+      ) {
         result.push(archievePath)
       }
     }
@@ -139,12 +154,19 @@ function getJarAdvancements(jarPath) {
       const unzippedfs = unzipped.memory()
 
       /** @type {string[]} */
-      const fileList = unzippedfs.contents().filter((archPath) => archPath.match(/^assets\/.+advancements\/.+\.json$/))
+      const fileList = unzippedfs
+        .contents()
+        .filter((archPath) =>
+          archPath.match(/^assets\/.+advancements\/.+\.json$/)
+        )
 
       resolve({
         jarPath,
         list: Object.fromEntries(
-          fileList.map((archievePath) => [archievePath, JSON.parse(unzippedfs.read(archievePath, 'text'))])
+          fileList.map((archievePath) => [
+            archievePath,
+            JSON.parse(unzippedfs.read(archievePath, 'text')),
+          ])
         ),
       })
     })
@@ -182,7 +204,9 @@ function getJarName(jarPath) {
 function getResourceName(filePath) {
   const {
     groups: { domain, path },
-  } = filePath.match(/^assets\/(?<domain>[^/]+)\/advancements\/(?<path>.+)\.json/)
+  } = filePath.match(
+    /^assets\/(?<domain>[^/]+)\/advancements\/(?<path>.+)\.json/
+  )
 
   return `${domain}:${path}`.toLocaleLowerCase()
 }
@@ -198,11 +222,15 @@ const mutateList = [
     const filtered = advcnmt.rewards?.recipes?.filter(isFineRecName)
     if (!filtered) return false
 
-    const hasErroringRecipe = filtered.length !== advcnmt.rewards?.recipes.length
+    const hasErroringRecipe =
+      filtered.length !== advcnmt.rewards?.recipes.length
 
     // This advancement has only recipes as rewards
     // Remove rewards completely
-    if ((hasErroringRecipe && Object.keys(advcnmt.rewards).length === 1) || filtered.length <= 0) {
+    if (
+      (hasErroringRecipe && Object.keys(advcnmt.rewards).length === 1) ||
+      filtered.length <= 0
+    ) {
       delete advcnmt.rewards
       return true
     }
@@ -213,7 +241,11 @@ const mutateList = [
     if (!advcnmt.criteria) return false
     let deleted = false
     for (const [key, criteria] of Object.entries(advcnmt.criteria)) {
-      if (criteria.trigger !== 'minecraft:recipe_unlocked' || isFineRecName(criteria.conditions.recipe)) continue
+      if (
+        criteria.trigger !== 'minecraft:recipe_unlocked' ||
+        isFineRecName(criteria.conditions.recipe)
+      )
+        continue
 
       delete advcnmt.criteria[key]
       deleted = true
@@ -236,7 +268,9 @@ function mutateAdvancement(erroringRecipeNames, advcnmt) {
   // Remove requirments field if its useless
   if (
     advcnmt.requirements &&
-    Object.keys(advcnmt.criteria).every((key) => advcnmt.requirements.some((arr) => arr.some((s) => s === key)))
+    Object.keys(advcnmt.criteria).every((key) =>
+      advcnmt.requirements.some((arr) => arr.some((s) => s === key))
+    )
   ) {
     delete advcnmt.requirements
   }

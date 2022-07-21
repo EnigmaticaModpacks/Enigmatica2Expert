@@ -44,7 +44,9 @@ export async function init(h = defaultHelper) {
           .filter(Boolean)
 
         h.step()
-        fileList.forEach(([folder, file, full]) => handleResearchJson(folder, file, unzippedfs, full))
+        fileList.forEach(([folder, file, full]) =>
+          handleResearchJson(folder, file, unzippedfs, full)
+        )
         resolve()
       })
     })
@@ -57,9 +59,12 @@ export async function init(h = defaultHelper) {
     obj?.entries?.forEach((o) => {
       if (!o.meta?.includes('HIDDEN')) return
       o.meta.splice(o.meta.indexOf('HIDDEN'), 1)
-      const value = o.meta.length === 1 ? `,"value":${JSON.stringify(o.meta)}` : ''
+      const value =
+        o.meta.length === 1 ? `,"value":${JSON.stringify(o.meta)}` : ''
       result.push(
-        `{"key":"${(o.key + '"').padEnd(35)},"ops":[{"path":"meta","op":"${value ? 'replace' : 'remove'}"${value}}]}`
+        `{"key":"${(o.key + '"').padEnd(35)},"ops":[{"path":"meta","op":"${
+          value ? 'replace' : 'remove'
+        }"${value}}]}`
       )
     })
   }

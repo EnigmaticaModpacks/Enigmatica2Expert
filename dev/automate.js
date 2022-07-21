@@ -6,17 +6,17 @@
  * @link https://github.com/Krutoy242
  */
 
-//@ts-check
-import glob from 'glob'
-import cli_progress from 'cli-progress'
+// @ts-check
 import { defaultHelper, loadText } from './lib/utils.js'
+
 import chalk from 'chalk'
+import cli_progress from 'cli-progress'
+import glob from 'glob'
 const { Format, MultiBar } = cli_progress
 const { gray, green, dim } = chalk
 const { ValueFormat } = Format
 
 import mc_benchmark from 'mc-benchmark'
-
 import yargs from 'yargs'
 const argv = yargs(process.argv.slice(2))
   .alias('k', 'keep-cache')
@@ -52,7 +52,8 @@ const automationList = [
 
 // create new container
 const multibar = new MultiBar({
-  format: '{fileName} ' + gray('[{bar}] | {value}/{total} | {ms} |') + ' {task}',
+  format:
+    '{fileName} ' + gray('[{bar}] | {value}/{total} | {ms} |') + ' {task}',
   hideCursor: true,
   formatValue: (...args) => `${ValueFormat(...args)}`.padStart(3),
 })
@@ -74,7 +75,10 @@ export async function init(options = argv) {
 }
 
 // @ts-ignore
-if (import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()
+if (
+  import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
+)
+  init()
 
 async function getModule(filePath) {
   return await import(`../${filePath}`)
@@ -134,14 +138,23 @@ function createHelper(progressBar) {
           progressBar.increment()
         },
         result: function (s) {
-          progressBar.update({ task: (this.taskResult += `✔️  ${s.replace(/\b(\d+)\b/g, dim.yellow('$1'))}`) })
+          progressBar.update({
+            task: (this.taskResult += `✔️  ${s.replace(
+              /\b(\d+)\b/g,
+              dim.yellow('$1')
+            )}`),
+          })
         },
         warn: function (s = '?') {
-          progressBar.update({ task: (this.taskResult += `⚠️ ${chalk.dim.yellow(`${s}`)}`) })
+          progressBar.update({
+            task: (this.taskResult += `⚠️ ${chalk.dim.yellow(`${s}`)}`),
+          })
         },
         error: function (s = '!') {
           errorCount++
-          progressBar.update({ task: (this.taskResult += `🛑 ${chalk.dim.red(`${s}`)}`) })
+          progressBar.update({
+            task: (this.taskResult += `🛑 ${chalk.dim.red(`${s}`)}`),
+          })
           if (argv['hardfailt']) {
             console.error(`\n\n🛑 Fatal Error:\n${s}`)
             throw new Error(`Fatal Error:\n${s}`)
