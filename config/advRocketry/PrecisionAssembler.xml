@@ -159,6 +159,96 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Energy Dimlet (Alpha)] -->
+	<Recipe timeRequired="100" power="700000">
+		<input>
+			<oreDict>blockDraconiumCharged 4</oreDict>
+			<itemStack>rftdimtweak:dimlet_control_circuit_seven 1</itemStack>
+			<itemStack>rftoolsdim:dimlet_memory_unit 1 2</itemStack>
+			<itemStack>rftoolsdim:dimlet_type_controller 1 11</itemStack>
+			<itemStack>rftdimtweak:dimlet_type_controller_energy 1</itemStack>
+			<itemStack>contenttweaker:terrestrial_artifact_block 1</itemStack>
+		</input>
+		<output>
+			<itemStack>rftdimtweak:known_dimletreplica 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Energy Dimlet (Beta)] -->
+	<Recipe timeRequired="100" power="700000">
+		<input>
+			<oreDict>blockDraconiumCharged 4</oreDict>
+			<itemStack>rftdimtweak:dimlet_control_circuit_seven 1</itemStack>
+			<itemStack>rftoolsdim:dimlet_memory_unit 1 2</itemStack>
+			<itemStack>rftoolsdim:dimlet_type_controller 1 11</itemStack>
+			<itemStack>rftdimtweak:dimlet_type_controller_energy 1</itemStack>
+			<itemStack>avaritia:block_resource 1</itemStack>
+		</input>
+		<output>
+			<itemStack>rftdimtweak:known_dimletreplica 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Energy Dimlet (Delta)] -->
+	<Recipe timeRequired="100" power="700000">
+		<input>
+			<oreDict>blockDraconiumCharged 4</oreDict>
+			<itemStack>rftdimtweak:dimlet_control_circuit_seven 1</itemStack>
+			<itemStack>rftoolsdim:dimlet_memory_unit 1 2</itemStack>
+			<itemStack>rftoolsdim:dimlet_type_controller 1 11</itemStack>
+			<itemStack>rftdimtweak:dimlet_type_controller_energy 1</itemStack>
+			<itemStack>avaritia:endest_pearl 1</itemStack>
+		</input>
+		<output>
+			<itemStack>rftdimtweak:known_dimletreplica 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Energy Dimlet (Epsilon)] -->
+	<Recipe timeRequired="100" power="700000">
+		<input>
+			<oreDict>blockDraconiumCharged 4</oreDict>
+			<itemStack>rftdimtweak:dimlet_control_circuit_seven 1</itemStack>
+			<itemStack>rftoolsdim:dimlet_memory_unit 1 2</itemStack>
+			<itemStack>rftoolsdim:dimlet_type_controller 1 11</itemStack>
+			<itemStack>rftdimtweak:dimlet_type_controller_energy 1</itemStack>
+			<itemStack>plustic:mirionblock 1</itemStack>
+		</input>
+		<output>
+			<itemStack>rftdimtweak:known_dimletreplica 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Energy Dimlet (Gamma)] -->
+	<Recipe timeRequired="100" power="700000">
+		<input>
+			<oreDict>blockDraconiumCharged 4</oreDict>
+			<itemStack>rftdimtweak:dimlet_control_circuit_seven 1</itemStack>
+			<itemStack>rftoolsdim:dimlet_memory_unit 1 2</itemStack>
+			<itemStack>rftoolsdim:dimlet_type_controller 1 11</itemStack>
+			<itemStack>rftdimtweak:dimlet_type_controller_energy 1</itemStack>
+			<itemStack>jaopca:item_dustalchemerald 1</itemStack>
+		</input>
+		<output>
+			<itemStack>rftdimtweak:known_dimletreplica 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Energy Dimlet (Zeta)] -->
+	<Recipe timeRequired="100" power="700000">
+		<input>
+			<oreDict>blockDraconiumCharged 4</oreDict>
+			<itemStack>rftdimtweak:dimlet_control_circuit_seven 1</itemStack>
+			<itemStack>rftoolsdim:dimlet_memory_unit 1 2</itemStack>
+			<itemStack>rftoolsdim:dimlet_type_controller 1 11</itemStack>
+			<itemStack>rftdimtweak:dimlet_type_controller_energy 1</itemStack>
+			<itemStack>rats:idol_of_ratlantis 1</itemStack>
+		</input>
+		<output>
+			<itemStack>rftdimtweak:known_dimletreplica 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Advanced Coil] -->
 	<Recipe timeRequired="40" power="140000">
 		<input>
@@ -256,6 +346,28 @@
 		</input>
 		<output>
 			<itemStack>appliedenergistics2:material 1 22</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Dimlet Control Circuit Rarity 7] -->
+	<Recipe timeRequired="100" power="100000">
+		<input>
+			<itemStack>advancedrocketry:ic 1 2</itemStack>
+			<itemStack>modularmachinery:blockcasing 1 5</itemStack>
+		</input>
+		<output>
+			<itemStack>rftdimtweak:dimlet_control_circuit_seven 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Dimlet Energy Type Controller] -->
+	<Recipe timeRequired="100" power="100000">
+		<input>
+			<itemStack>advancedrocketry:ic 1 2</itemStack>
+			<itemStack>draconicevolution:particle_generator 1</itemStack>
+		</input>
+		<output>
+			<itemStack>rftdimtweak:dimlet_type_controller_energy 1 0</itemStack>
 		</output>
 	</Recipe>
 </Recipes>

@@ -51,20 +51,23 @@ val transStones = [
   <thaumicwonders:alienist_stone>,
 ] as IItemStack[];
 
-function getBonused(durA as int, durB as int) as int {
+static getBonused as function(int,int)int = function (durA as int, durB as int) as int {
   val minDur = min(durA, durB);
   val durBonus = (minDur as double * 0.1d + 0.5d) as int;
   return durA + durB + durBonus;
-}
+};
 
-val stoneCombiningRecipeFunc as IRecipeFunction = function(out, ins, cInfo) {
+static getOutDurab as function(IItemStack,IItemStack)int = function (a as IItemStack, b as IItemStack) as int {
+  if(a.damage == 0 && b.damage == 0) return -1 as int;
+  val durA = a.maxDamage - a.damage;
+  val durB = b.maxDamage - b.damage;
+  return max(0, a.maxDamage - getBonused(durA, durB));
+};
+
+static stoneCombiningRecipeFunc as IRecipeFunction = function(out, ins, cInfo) {
   if(isNull(ins.a) || isNull(ins.b)) return null;
-  if(ins.a.damage == 0 && ins.b.damage == 0) return null;
-
-  val durA = ins.a.maxDamage - ins.a.damage;
-  val durB = ins.b.maxDamage - ins.b.damage;
-  val outDmg = max(0, ins.a.maxDamage - getBonused(durA, durB));
-  return out.withDamage(outDmg);
+  val newDur = getOutDurab(ins.a, ins.b);
+  return newDur < 0 ? null : out.withDamage(newDur);
 } as IRecipeFunction;
 
 for i, stone in transStones {
@@ -126,4 +129,28 @@ mods.thaumcraft.Crucible.registerRecipe(
   <ore:ingotElectrum>, # Input
   [<aspect:permutatio> * 20, <aspect:alkimia> * 20]
 );
+
+events.onPlayerPickupItem(function(e as crafttweaker.event.PlayerPickupItemEvent){
+  if(e.player.world.remote) return;
+  
+  val id = e.item.item.definition.id;
+  if(
+    id != 'thaumicwonders:alienist_stone' &&
+    id != 'thaumicwonders:alchemist_stone' &&
+    id != 'thaumicwonders:transmuter_stone'
+  ) return;
+
+  // e.player.sendMessage('Picked up');
+  for i in 0 .. e.player.inventorySize {
+    val item = e.player.getInventoryStack(i);
+    if(isNull(item) || item.definition.id != id) continue;
+    val newDur = getOutDurab(item, e.item.item);
+    if(newDur < 0) continue;
+    e.item.item.mutable().shrink(1);
+    item.mutable().withDamage(newDur);
+    e.cancel();
+    return;
+  }
+});
+
 # ---------------------------------------------------------

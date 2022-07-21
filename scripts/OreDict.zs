@@ -354,8 +354,9 @@ addItems(<ore:doorWood>, [
 
 # *======= Remove ender chest =======*
 
-addItems(<ore:chest>, [<thaumcraft:hungry_chest>]);
-remove(<ore:chest>, <minecraft:ender_chest>);
+addItems(<ore:chest>, [
+	<thaumcraft:hungry_chest>,
+]);
 removeItems(<ore:chest>, [
 	<minecraft:ender_chest>,
 	<minecraft:white_shulker_box>,
@@ -452,8 +453,72 @@ for item in <ore:dustAshes>.items {
 	add(<ore:dustAsh>, item);
 }
 
+##################
+# Animania
+##################
+
 # Animania wool
 add(<ore:woolPrime>, <animania:wool:*>);
+
+<ore:peacockFeathers>.add([
+	<animania:blue_peacock_feather>,
+	<animania:white_peacock_feather>,
+	<animania:charcoal_peacock_feather>,
+	<animania:opal_peacock_feather>,
+	<animania:peach_peacock_feather>,
+	<animania:purple_peacock_feather>,
+	<animania:taupe_peacock_feather>
+]);
+
+<ore:animaniaEggs>.add([
+	<animania:brown_egg>,
+	<animania:peacock_egg_blue>,
+	<animania:peacock_egg_white>
+]);
+
+<ore:cheeseWheels>.add([
+	<animania:friesian_cheese_wheel>,
+	<animania:holstein_cheese_wheel>,
+	<animania:jersey_cheese_wheel>,
+	<animania:goat_cheese_wheel>,
+	<animania:sheep_cheese_wheel>
+]);
+
+<ore:cheeseAnimania>.add([
+	<animania:friesian_cheese_wedge>,
+	<animania:holstein_cheese_wedge>,
+	<animania:jersey_cheese_wedge>,
+	<animania:goat_cheese_wedge>,
+	<animania:sheep_cheese_wedge>
+]);
+
+
+var primeMeatRaw = [
+  <tconstruct:edible>,
+  <animania:raw_prime_beef>,
+  <animania:raw_prime_steak>,
+  <animania:raw_prime_pork>,
+  <animania:raw_prime_bacon>,
+  <animania:raw_prime_chicken>,
+  <animania:raw_prime_mutton>,
+  <animania:raw_prime_rabbit>,
+  <animania:raw_prime_chevon>,
+  <animania:raw_prime_peacock>,
+] as IItemStack[];
+<ore:primeMeatRaw>.add(primeMeatRaw);
+
+var primeMeatCooked = [
+	<animania:cooked_prime_beef>,
+	<animania:cooked_prime_steak>,
+	<animania:cooked_prime_pork>,
+	<animania:cooked_prime_bacon>,
+	<animania:cooked_prime_chicken>,
+	<animania:cooked_prime_mutton>,
+	<animania:cooked_prime_rabbit>,
+	<animania:cooked_prime_chevon>,
+	<animania:cooked_prime_peacock>,
+] as IItemStack[];
+<ore:primeMeatCooked>.add(primeMeatCooked);
 
 # Its too hard to craft for being just obsidian
 remove(<ore:gemObsidian>, <cyclicmagic:crystallized_obsidian>);

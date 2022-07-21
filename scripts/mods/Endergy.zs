@@ -47,18 +47,34 @@ scripts.process.alloy([<ore:itemEnderCrystalPowder>, <ore:ingotCrystallineAlloy>
 scripts.process.alloy([<ore:itemVibrantPowder>     , <ore:ingotCrystallinePinkSlime>, <ore:ingotUUMatter>     ], <ore:ingotMelodicAlloy>.firstItem        , "no exceptions");
 scripts.process.alloy([<ore:itemPrecientPowder>    , <ore:ingotMelodicAlloy>        , <ore:ingotWyvernMetal>  ], <ore:ingotStellarAlloy>.firstItem        , "no exceptions");
 
+# [Stellar Energy Conduit]*8 from [Infinity Reagent][+2]
+craft.remake(<enderio:item_endergy_conduit:11> * 8, ["pretty",
+  "C I C",
+  "‚ ‚ ‚",
+  "C I C"], {
+  "C": <ore:itemConduitBinder>,  # Conduit Binder
+  "I": <ore:itemInfinityGoop>,   # Infinity Reagent
+  "‚": <ore:nuggetStellarAlloy>, # Stellar Alloy Nugget
+});
+
 # Stepped conduit recipes
 # Stellar alloy is exception - it have only 1 ingot in recipe
 val BDR = <ore:itemConduitBinder>;
-val eAlloys = [<ore:ingotCrystallineAlloy>, <ore:ingotCrystallinePinkSlime>, <ore:ingotMelodicAlloy>/* , <ore:ingotStellarAlloy> */] as IIngredient[];
+val GP = <ore:itemInfinityGoop>;
+val eAlloys = [
+  <ore:ingotCrystallineAlloy>, 
+  <ore:ingotCrystallinePinkSlime>, 
+  <ore:ingotMelodicAlloy>, 
+  <ore:nuggetStellarAlloy>,
+] as IIngredient[];
 val eCndts  = [
   <enderio:item_power_conduit:2>,
   <enderio:item_endergy_conduit:8>,
   <enderio:item_endergy_conduit:9>,
   <enderio:item_endergy_conduit:10>, 
-  // <enderio:item_endergy_conduit:11>, 
+  <enderio:item_endergy_conduit:11>, 
 ] as IItemStack[];
 
 for i in 0 to eAlloys.length {
-  recipes.addShaped("Cheaper " ~ getItemName(eCndts[i+1]), eCndts[i+1] * 8, [[BDR, BDR, BDR], [eAlloys[i], eCndts[i], eAlloys[i]], [BDR, BDR, BDR]]);
+  recipes.addShaped("Cheaper " ~ getItemName(eCndts[i+1]), eCndts[i+1] * 8, [[BDR, i==3?GP:BDR, BDR], [eAlloys[i], eCndts[i], eAlloys[i]], [BDR, i==3?GP:BDR, BDR]]);
 }

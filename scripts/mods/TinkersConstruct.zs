@@ -166,7 +166,7 @@ for item in coals {
 	mods.tconstruct.Melting.removeRecipe(<liquid:ender>);
 
 # Missed melt recipe for Block Of Ender Pearls
-scripts.process.melt(<actuallyadditions:block_misc:6>, <liquid:ender> * 1000, "Except: Smeltery");
+scripts.process.melt(<actuallyadditions:block_misc:6>, <liquid:ender> * 1000, "Except: Smeltery", {energy: 80000});
 	
 # Gear Cast
 	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <exnihilocreatio:item_material:7>, <liquid:gold>, 288, true);

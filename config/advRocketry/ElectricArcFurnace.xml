@@ -308,6 +308,17 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [SiC-SiC Ceramic Matrix Composite] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>bouleSilicon 1</oreDict>
+			<oreDict>fiberSiliconCarbide 1</oreDict>
+		</input>
+		<output>
+			<itemStack>nuclearcraft:alloy 1 14</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Vibrant Alloy Block] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>

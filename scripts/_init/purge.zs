@@ -39,6 +39,7 @@ utils.rh(<openblocks:generic:2>);
 utils.rh(<openblocks:generic:3>);
 utils.rh(<openblocks:generic:4>);
 utils.rh(<openblocks:generic:5>);
+utils.rh(<openblocks:cursor>);
 utils.rh(<actuallyadditions:item_misc:17>);
 utils.rh(<bhc:wither_bone>);
 

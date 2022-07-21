@@ -732,3 +732,7 @@ for glass, dust in glassFromDust {
 
 // Steel from IE fix
 mods.thermalexpansion.InductionSmelter.addRecipe(<thermalfoundation:material:160>,<immersiveengineering:material:6>,<minecraft:iron_ingot>, 6000);
+
+# x100 energy consumption
+mods.thermalexpansion.Infuser.removeRecipe(<thermalfoundation:fertilizer:1>);
+mods.thermalexpansion.Infuser.addRecipe(<thermalfoundation:fertilizer:2>, <thermalfoundation:fertilizer:1>, 400000);

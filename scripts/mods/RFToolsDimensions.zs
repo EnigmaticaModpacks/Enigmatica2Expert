@@ -27,12 +27,18 @@
 	[<avaritia:double_compressed_crafting_table>, utils.tryCatch(itemUtils.getItem("rftoolscontrol:workbench", 32767), <rftools:crafter3:*>), <avaritia:double_compressed_crafting_table>]]);
 
 # Dimension Enscriber
-	recipes.remove(<rftoolsdim:dimension_enscriber>);
-	recipes.addShapedMirrored("Dimension Enscriber", 
-	<rftoolsdim:dimension_enscriber>, 
-	[[<rftools:machine_base>, <rftoolsdim:empty_dimension_tab>, <rftools:machine_base>],
-	[utils.tryCatch("ae2stuff:inscriber", <appliedenergistics2:inscriber>), <thermalexpansion:frame:148>, utils.tryCatch("ae2stuff:inscriber", <appliedenergistics2:inscriber>)], 
-	[<rftools:machine_base>, <draconicevolution:draconic_core>, <rftools:machine_base>]]);
+if(isNull(loadedMods["rftdimtweak"])) {
+	craft.remake(<rftoolsdim:dimension_enscriber>, ["pretty",
+		"M E M",
+		"A ◘ A",
+		"M D M"], {
+		"A": utils.tryCatch("ae2stuff:inscriber", <appliedenergistics2:inscriber>), # Advanced Inscriber
+		"D": <draconicevolution:draconic_core>, # Draconic Core
+		"E": <rftoolsdim:empty_dimension_tab>,  # Empty Dimension Tab
+		"◘": <thermalexpansion:frame:148>,      # Resonant Cell Frame (Full)
+		"M": <rftools:machine_base>,            # Machine Base
+	});
+}
 
 # Phased Field Generator
 	recipes.remove(<rftoolsdim:phased_field_generator>);

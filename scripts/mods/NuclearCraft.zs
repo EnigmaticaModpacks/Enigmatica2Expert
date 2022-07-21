@@ -247,8 +247,8 @@ for i, output in compressed {
 
 
 # Decay generator as crafting method
-addDecayRecipe([<contenttweaker:terrestrial_artifact_block>, <environmentaltech:litherite>  , 400.0d, 2000000.0d]);
-addDecayRecipe([<environmentaltech:litherite>             , <actuallyadditions:block_misc:6>, 200.0d, 100000.0d]);
+addDecayRecipe([<contenttweaker:terrestrial_artifact_block>, <environmentaltech:litherite>  , 100.0d, 8000000.0d]);
+addDecayRecipe([<environmentaltech:litherite>             , <actuallyadditions:block_misc:6>,  50.0d, 400000.0d]);
 
 # Radiation mutations
 # Sadly, radiation mutations works really laggy and cant 
@@ -468,3 +468,7 @@ craft.remake(<nuclearcraft:rtg_uranium>, ["pretty",
   "□": <ore:plateAdvanced>,   # Advanced Plating
   "▬": <ore:ingotGraphite>,   # Graphite Ingot
 });
+
+# Sic-Sic ingots
+scripts.process.fill(<exnihilocreatio:item_mesh:2>, <fluid:sic_vapor> * 1000, <nuclearcraft:part:13>, "only: NCInfuser Transposer");
+scripts.process.alloy([<ore:bouleSilicon>, <ore:fiberSiliconCarbide>], <nuclearcraft:alloy:14>, "only: advrockarc");

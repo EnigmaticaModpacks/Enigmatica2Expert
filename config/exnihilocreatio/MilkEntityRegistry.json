@@ -1,6 +1,5 @@
 [
   {"entityOnTop": "minecraft:cow", "result": "milk", "amount": 10, "coolDown": 20}
-  ,{"entityOnTop": "betteranimalsplus:jellyfish",    "result": "distwater",          "amount": 1000, "coolDown": 20}
   ,{"entityOnTop": "emberroot:timberwolf",           "result": "tree_oil",           "amount":   10, "coolDown": 20}
   ,{"entityOnTop": "emberroot:rainbow_golem",        "result": "construction_alloy", "amount":   10, "coolDown": 20}
   ,{"entityOnTop": "excompressum:angry_chicken",     "result": "fiery_essence",      "amount":   10, "coolDown": 20}

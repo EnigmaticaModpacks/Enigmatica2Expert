@@ -375,35 +375,35 @@ craft.remake(<rats:rat_upgrade_creative>, ["pretty",
 	"∪ ▭ ▭ ▭ ∪ ▭ ▭ ▭ ∪"], list);
 
 
-# [Creative Gas Tank] from [Creative Gas Tank Frame][+17]
+# [Creative Gas Tank] from [Centrifuge Tank][+17]
 craft.remake(<mekanism:gastank>.withTag({tier: 4}), ["pretty",
-  "▬ ▬ ▬ ■ ~ ■ ▬ ▬ ▬",
-  "▬ R ▄ ♦ ~ ♦ ▄ R ▬",
-  "▬ ▀ H - E - ≈ ▀ ▬",
+  "▬ ▬ ▬ ■ ◘ ■ ▬ ▬ ▬",
+  "▬ R ▄ ♦ ◘ ♦ ▄ R ▬",
+  "▬ ▀ U - E - v ▀ ▬",
   "■ ◊ G A B A G ◊ ■",
-  "~ ~ E B ◙ B E ~ ~",
+  "◘ ◘ E B C B E ◘ ◘",
   "■ ◊ G A B A G ◊ ■",
-  "▬ ▀ ‰ - E - Z ▀ ▬",
-  "▬ R ▄ ♦ ~ ♦ ▄ R ▬",
-  "▬ ▬ ▬ ■ ~ ■ ▬ ▬ ▬"], {
-  "G": <advancedrocketry:oxygencharger>,  # Gas Charge Pad
-  "E": <advgenerators:turbine_enderium>,  # Enderium Turbine
-  "B": <bloodmagic:blood_tank:9>,         # Blood Tank Tier 10
-  "A": <draconicevolution:awakened_core>, # Awakened Core
-  "R": <extrautils2:drum:2>,              # Reinforced Large Drum
+  "▬ ▀ i - E - n ▀ ▬",
+  "▬ R ▄ ♦ ◘ ♦ ▄ R ▬",
+  "▬ ▬ ▬ ■ ◘ ■ ▬ ▬ ▬"], {
+  "▬": <ore:ingotUltimate>,               # The Ultimate Ingot
   "■": <ore:blockLudicrite>,              # Ludicrite Block
-  "▀": <ore:blockMirion>,                 # Mirion Block
+  "R": <extrautils2:drum:2>,              # Reinforced Large Drum
   "▄": <ore:blockOsgloglas>,              # Osgloglas Block
   "♦": <ore:gemAnglesite>,                # Anglesite
-  "◊": <ore:gemBenitoite>,                # Benitoite
+  "▀": <ore:blockMirion>,                 # Mirion Block
   "-": <ore:ingotCosmicNeutronium>,       # Neutronium Ingot
-  "▬": <ore:ingotUltimate>,               # The Ultimate Ingot
-  "◙": creativeGasTankFrame,              # Creative Gas Tank Frame
-  "Z": FluidCell("aerotheum"),            # Zephyrean Aerotheum
-  "‰": FluidCell("exhauststeam"),         # Exhau Ststeam
-  "H": FluidCell("helium3"),              # Helium-3
-  "≈": FluidCell("tritium"),              # Tritium
-  "~": FluidCell("vapor_of_levity"),      # Vapor of Levity
+  "E": <advgenerators:turbine_enderium>,  # Enderium Turbine
+  "◊": <ore:gemBenitoite>,                # Benitoite
+  "G": <advancedrocketry:oxygencharger>,  # Gas Charge Pad
+  "A": <draconicevolution:awakened_core>, # Awakened Core
+  "B": <bloodmagic:blood_tank:9>,         # Blood Tank Tier 10
+  "C": <plustic:centrifuge>,              # Centrifuge Tank
+  "n": FluidCell("aerotheum"),            # Universal Fluid Cell
+  "i": FluidCell("exhauststeam"),         # Universal Fluid Cell
+  "U": FluidCell("helium3"),              # Universal Fluid Cell
+  "v": FluidCell("tritium"),              # Universal Fluid Cell
+  "◘": FluidCell("vapor_of_levity"),      # Universal Fluid Cell
 });
 
 recipes.addShapeless("Creative Gas Tank Clearing", 
@@ -451,7 +451,7 @@ recipes.addShapeless("Creative Tank Reset",
 
 	list["π"] = <storagedrawers:upgrade_creative:1>;
 	list["ρ"] = <botania:exchangerod>;
-	list["ς"] = <buildinggadgets:exchangertool>.withTag({});
+	list["ς"] = <buildinggadgets:exchangertool>;
 
 # DE Creative Block Exchanger
 	craft.make(<draconicevolution:creative_exchanger>, ["pretty",
@@ -578,26 +578,36 @@ craft.make(<ae2wtlib:wut_creative>, ["pretty",
   "W": <wit:wit:*>.withTag({}), # Wireless Interface Terminal
 });
 
-# Storage Drawers Unlimited Withdrawel Upgrade
-list["χ"] = <ore:blockCrystalMatrix>;
-list["◳"] = <ore:blockAethium>;
-list["⌧"] = <ore:ingotInfinity>;
-list["⇭"] = <twilightforest:lamp_of_cinders>;
-list["◯"] = <draconicevolution:reactor_core>;
-list["⇯"] = creativeCube;
-list["⇫"] = <mekanism:machineblock2:11>.withTag({tier: 4});
-
-/*  •◎♪♫♱✓⸕₇₈₉⇮⩈ζλ  */
+# [Creative Vending Upgrade] from [Lamp of Cinders][+18]
 craft.make(<storagedrawers:upgrade_creative:1>, ["pretty",
-	"χ ▣ ☠ ☠ ◊ ☠ ☠ ▣ χ",
-	"▣ ◽ ◽ ☑ ⱋ ☑ ◽ ◽ ▣",
-	"☠ ◽ ◳ ✝ ♦ ✝ ◳ ◽ ☠",
-	"☠ ☑ ⰷ ⇫ ⌧ ⍤ ⰷ ☑ ☠",
-	"◊ ⱋ ♦ ◯ ⇭ ◯ ♦ ⱋ ◊",
-	"☠ ☑ ⰷ ⇯ ⌧ ⁶ ⰷ ☑ ☠",
-	"☠ ◽ ◳ ✝ ♦ ✝ ◳ ◽ ☠",
-	"▣ ◽ ◽ ☑ ⱋ ☑ ◽ ◽ ▣",
-	"χ ▣ ☠ ☠ ◊ ☠ ☠ ▣ χ"], list);
+  "* B T T ♦ T T B *",
+  "B ◘ ◘ S 1 S ◘ ◘ B",
+  "T ◘ ■ C ◊ C ■ ◘ T",
+  "T S r e ▬ a r S T",
+  "♦ 1 ◊ D L D ◊ 1 ♦",
+  "T S r Ϟ ▬ o r S T",
+  "T ◘ ■ C ◊ C ■ ◘ T",
+  "B ◘ ◘ S 1 S ◘ ◘ B",
+  "* B T T ♦ T T B *"], {
+  "*": <ore:blockCrystalMatrix>,              # Crystal Matrix
+  "B": <industrialforegoing:black_hole_unit>, # Black Hole Unit
+  "T": <extendedcrafting:material:13>,        # The Ultimate Catalyst
+  "♦": <ore:gemAnglesite>,                    # Anglesite
+  "◘": <thermalexpansion:frame:148>,          # Resonant Cell Frame (Full)
+  "S": <threng:material:14>,                  # Speculative Processor
+  "1": <aeadditions:storage.component:3>,     # 16384k ME Storage Component
+  "■": <ore:blockAethium>,                    # Aethium
+  "C": <draconicevolution:chaotic_core>,      # Chaotic Core
+  "◊": <ore:gemBenitoite>,                    # Benitoite
+  "r": <mysticalagradditions:stuff:69>,       # Creative Essence
+  "▬": <ore:ingotInfinity>,                   # Infinity Ingot
+  "D": <draconicevolution:reactor_core>,      # Draconic Reactor Core
+  "o": <environmentaltech:solar_cont_6>,      # Solar Array Controller Tier 6
+  "L": <twilightforest:lamp_of_cinders>.anyDamage(), # Lamp of Cinders
+  "e": <mekanism:machineblock2:11>.withTag({tier: 4}), # Creative Fluid Tank
+  "a": <mekanism:gastank>.withTag({tier: 4}), # Creative Gas Tank
+  "Ϟ": creativeCube, 													# Creative Energy Cube
+});
 
 recipes.addHiddenShapeless("Creative Storage Upgrade Duplication", 
 <storagedrawers:upgrade_creative:1> * 2, 

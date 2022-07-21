@@ -5,6 +5,7 @@ fluid.seed=Seed
 fluid.spectre=Spectre
 fluid.perfect_fuel=Perfect Fuel
 fluid.electronics=Molten Electronics
+fluid.terrestrial=Molten Terrestrial Artifact
 
 item.contenttweaker.compressed_glowstone.name=Compressed Glowstone
 item.contenttweaker.compressed_ender.name=Compressed Ender

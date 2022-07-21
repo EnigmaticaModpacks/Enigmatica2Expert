@@ -644,8 +644,9 @@ function workEx(machineNameAnyCase as string, exceptions as string,
 
     if (machineName == "crucible") {
       # mods.thermalexpansion.Crucible.addRecipe(ILiquidStack output, IItemStack input, int energy);
+      val energy = (!isNull(options) && !isNull(options.energy)) ? options.energy as int : 5600;
       for ii in inputIngr0.itemArray {
-        mods.thermalexpansion.Crucible.addRecipe(outputLiquid0, ii, 2800);
+        mods.thermalexpansion.Crucible.addRecipe(outputLiquid0, ii, energy);
       }
       return machineName;
     }
@@ -894,9 +895,9 @@ function workEx(machineNameAnyCase as string, exceptions as string,
 function work(machineNameAnyCase as string[], exceptions as string, 
     inputItems as IIngredient[], inputLiquids as ILiquidStack[],
     outputItems as IItemStack[], outputLiquids as ILiquidStack[],
-    extra as IItemStack[], extraChance as float[]) as string {
+    extra as IItemStack[], extraChance as float[], options as IData = null) as string {
 
   for machine in machineNameAnyCase {
-    workEx(machine, exceptions, inputItems, inputLiquids, outputItems, outputLiquids, extra, extraChance, null);
+    workEx(machine, exceptions, inputItems, inputLiquids, outputItems, outputLiquids, extra, extraChance, options);
   }
 }

@@ -191,11 +191,23 @@ x.register();
 # -------------------------------
 # electronics
 # -------------------------------
-val electronics = VanillaFactory.createFluid("electronics", 0xff0a1410);
-electronics.material = <blockmaterial:lava>;
-electronics.viscosity = 8000;
-electronics.temperature= 2000;
-electronics.colorize = true;
-electronics.stillLocation = "base:fluids/molten";
-electronics.flowingLocation = "base:fluids/molten_flowing";
-electronics.register();
+var f = VanillaFactory.createFluid("electronics", 0xff0a1410);
+f.material = <blockmaterial:lava>;
+f.viscosity = 8000;
+f.temperature= 2000;
+f.colorize = true;
+f.stillLocation = "base:fluids/molten";
+f.flowingLocation = "base:fluids/molten_flowing";
+f.register();
+
+# -------------------------------
+# terrestrial
+# -------------------------------
+f = VanillaFactory.createFluid("terrestrial", 0xffdb0f53);
+f.material = <blockmaterial:lava>;
+f.viscosity = 8000;
+f.temperature= 8000;
+f.colorize = true;
+f.stillLocation = "base:fluids/molten";
+f.flowingLocation = "base:fluids/molten_flowing";
+f.register();

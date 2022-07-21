@@ -238,9 +238,9 @@ function recycleMetal(input as IIngredient, output as IItemStack, liquid as ILiq
 
 # Melts item in liquid form
 # 📦 → 💧
-function melt(input as IIngredient, output as ILiquidStack, exceptions as string = null) {
+function melt(input as IIngredient, output as ILiquidStack, exceptions as string = null, options as IData = null) {
 
-  work(["smeltery", "melter", "crucible"],   exceptions, [input], null, null, [output], null, null);
+  work(["smeltery", "melter", "crucible"],   exceptions, [input], null, null, [output], null, null, options);
 }
 
 # Fill an item with liquid

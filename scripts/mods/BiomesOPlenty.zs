@@ -95,6 +95,13 @@ craft.remake(<contenttweaker:terrestrial_artifact_block> * 3, ["pretty",
 craft.shapeless(<contenttweaker:terrestrial_artifact_block>, "AAAAAAAAA", {A: <biomesoplenty:terrestrial_artifact>});
 craft.shapeless(<biomesoplenty:terrestrial_artifact> * 9,   "A", {A: <contenttweaker:terrestrial_artifact_block>});
 
+# Melt/cast
+scripts.process.melt(<biomesoplenty:terrestrial_artifact>, <liquid:terrestrial> * 144);
+scripts.process.melt(<contenttweaker:terrestrial_artifact_block>, <liquid:terrestrial> * 1296);
+mods.tconstruct.Casting.addBasinRecipe(<contenttweaker:terrestrial_artifact_block>, null, <liquid:terrestrial>, 1296);
+mods.tconstruct.Casting.addTableRecipe(<biomesoplenty:terrestrial_artifact>, <tconstruct:cast_custom:2>, <liquid:terrestrial>, 144, false);
+mods.nuclearcraft.ingot_former.addRecipe([<liquid:terrestrial>*144, <biomesoplenty:terrestrial_artifact>, 1.0, 1.0]);
+
 # To easy manage in inventory
 <biomesoplenty:jar_filled:1>.maxStackSize = 64;
 
