@@ -65,6 +65,19 @@ function exit() {
 
 async function init() {
   term.clear()
+
+  const unregMods = _.difference(allEnabledMods, _.uniq(registeredMods)).map(
+    getFileName
+  )
+
+  if (unregMods.length) {
+    console.log(
+      'This mods unregistered in lists. Add them first :>> ',
+      unregMods
+    )
+    // exit()
+  }
+
   term`\nSelect `.brightYellow`Reduce Level`.styleReset()` for `.green(
     totalModsLength
   )` mods`.styleReset()`\n`
@@ -199,6 +212,10 @@ smooth-scrolling-everywhere-
 Fakename
 DefaultWorldGenerator-port-
 bookdisplay-
+bogosorter-
+CraftingTweaks_
+modularui-
+RenderLib-
 `
 )
 
@@ -206,6 +223,13 @@ addReduceLevel(
   'Maximum Speedup',
   'Items and blocks would be removed\nQuest Rewards and Requirments would be replaced to placeholders\nLoot Boxes would output placeholders',
   `
+betterbiomeblend-
+Fluidlogged-API-
+lootr-
+spectral_edge-forge-
+WirelessFluidTerminal-
+WirelessInterfaceTerminal-
+WirelessPatternTerminal-
 Fluid Craft for AE2-
 cloche-profit-peripheral-
 Xtones-
@@ -670,14 +694,5 @@ zenutils-
 base-
 `
 )
-
-const unregMods = _.difference(allEnabledMods, _.uniq(registeredMods)).map(
-  getFileName
-)
-
-if (unregMods.length) {
-  console.log('This mods unregistered in lists. Add them first :>> ', unregMods)
-  // exit()
-}
 
 init()

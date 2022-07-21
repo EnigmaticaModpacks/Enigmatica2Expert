@@ -132,8 +132,51 @@ function runAutomation(player as IPlayer) as void {
   }, 20 * 20);
 
   addDelayWork(function() {
-    player.sendMessage('Developing: Starting §c/tellme dump-csv all');
-    server.commandManager.executeCommand(server, '/tellme dump-csv all');
+    player.sendMessage('Developing: Starting §c/tellme dump-csv');
+    val csvList = [
+    //'players',                          # 132
+      'musictypes',                       # 487
+      'worldtypes',                       # 721
+      'villagerprofessions',              # 993
+      'dimensions',                       # 3043
+      'biomes-id-to-name',                # 3500
+      'enchantments',                     # 6068
+      'mod-list',                         # 15616
+      'creativetabs',                     # 18904
+      'potions',                          # 19782
+      'villagertrades',                   # 19866
+      'biomes',                           # 22654
+      'biomes-with-colors',               # 36765
+      'items-plantable',                  # 39931
+      'spawneggs',                        # 40757
+      'soundevents',                      # 45314
+      'commands',                         # 48369
+      'entities',                         # 51703
+      'potiontypes',                      # 55441
+      'fluids',                           # 57399
+      'player-nbt',                       # 79889
+      'entities-with-class',              # 82107
+      'food-items',                       # 140805
+    //'advancements-simple',              # 176687
+      'tileentities',                     # 203766
+    //'blocks-id-to-registryname',        # 231595
+      'biomes-with-mob-spawns',           # 370535
+      'block-props',                      # 374464
+      'oredictionary-by-item',            # 586969
+      'oredictionary-by-key-individual',  # 703570
+    //'oredictionary-by-key',             # 753746
+    //'blockstates-by-block',             # 1198074
+      'blocks',                           # 1336943
+    //'blocks-with-nbt',                  # 1429923
+    //'items-craftable',                  # 2138773
+      'items',                            # 3569125
+    //'items-with-tool-classes',          # 3811572
+    //'items-with-nbt',                   # 5024895
+    //'blockstates-by-state',             # 32959606
+    ] as string[];
+    for csvcode in csvList {
+      server.commandManager.executeCommand(server, '/tellme dump-csv ' ~ csvcode);
+    }
   }, 20 * 40);
 
   addDelayWork(function() {

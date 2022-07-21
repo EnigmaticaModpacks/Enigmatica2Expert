@@ -1,13 +1,24 @@
 # TODO list
 
-- [ ] ✏️ Combine Trans Stones when on pickup
-- [ ] ✏️ high pressure steam from NC is incompatible with IT
-- [ ] ✏️ Add molten terrestrial artifact that could be centrifuged
-- [ ] ✏️ Add sic-sic recipe
-- [x] ✏️ Fix Sponge Dupe in Inf.Furnace
 - [x] ✏️ Fix Creative Gas not craftable
+- [x] ✏️ Creative vending uncraftable
+- [ ] ✏️ Make all chests as lootr chests
+- [x] ✏️ Lootr chest oredict
+- [x] 🔄 Lootr drop items after looting https://github.com/noobanidus/Lootr/issues/133
+- [x] 🌍 Remove generation of BOP gems
+- [x] ✏️ Steel on a IC2 compressor makes IC2 steel block
+- [x] ✏️ Make TCon beacon prime
+- [x] ✏️ Ender pearl block melting should be more RF
+- [x] ✏️ Combine Trans Stones on pickup
+- [x] ✏️ high pressure steam from NC is incompatible with IT
+- [x] ✏️ Add molten terrestrial artifact that could be centrifuged
+- [x] ✏️ Add sic-sic recipe
+- [x] ✏️ Fix Sponge Dupe in Inf.Furnace
 - [ ] ✏️ More Alien Crystal blocks + mica to get Crystaltine and ET gems
-- [ ] ✏️ upgrade melodic to stellar energy conduits
+- [x] ✏️ upgrade melodic to stellar energy conduits
+- [x] ✏️ RFToold Dim Tweaker: enable craft for tier 7 rarity part + energy dimlets, and disable the original dimension enscriber
+- [x] ✏️ Tweak Impetus Output https://i.imgur.com/74kCBib.png
+- [ ] 📀 **Dread Thrall** mobs crashing game when on server
 - [ ] 📀 Add Meat to Meaty orb https://github.com/daedalus4096/ThaumicWonders/blob/251829dee76d72368d0ed0af1f2104121b781e63/src/main/java/com/verdantartifice/thaumicwonders/common/tiles/devices/TileMeatyOrb.java#L49-L53
 - [ ] 📀 Buff Golem Stats
 - [ ] 📀 Make Essentia Seeds grows only on planet (Stella?)
@@ -15,22 +26,28 @@
 - [ ] 📀 Fix NPE https://github.com/BluSunrize/ImmersiveEngineering/blob/master/src/main/java/blusunrize/immersiveengineering/common/EventHandler.java#L619
 - [ ] 📀 Fix BedrockOre cant go 1 height flat https://github.com/MightyPirates/BedrockOres/blob/master-MC1.12/src/main/java/li/cil/bedrockores/common/world/WorldGeneratorBedrockOre.java#L92
 - [ ] 📀 Adv. Rock tank left 64 buckets when broken
+- [ ] 📀 `java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.Boolean` `at com.github.alexthe666.iceandfire.entity.EntityDreadThrall.hasCustomArmorFeet(EntityDreadThrall.java:209) ~[EntityDreadThrall.class:?]`
 - [ ] 📖 Call out Tinkers components that have unusual recipes in E2E-E
 - [ ] 📖 Add trans stones entry
 - [ ] 📖 Add packaged ex crafting quest
+- [ ] 📖 SH hearts move in book
+- [ ] 📖 Petro petunia quest fix
+- [ ] 🔄 Runic shieldint perk not working with ThaumTweaks
+- [x] 🔄 Nerf Restonia
 - [ ] 🔄 Do not use ModDirector for CF files
 - [ ] 🔄 make jei.cfg as default file
 - [ ] 🔄 Check why mobs are not spawned anough (less then 70 for whole server)
 - [ ] 🔄 Remove common blocks from JER planets if they appear in Overworld
 - [ ] 🔄 Why Golems cant break blocks in skyblock
-- [ ] 🔄 After getting 40 hearts, player need to relog to enter nether
+- [ ] 🔄 After getting 30 hearts, player need to relog to enter nether
 - [ ] 🔄 Fix Travel Anchors must be seen to teleport
 - [x] 🟢 Fix Thaum Tweaks makes TCon Infusion Enchs obsolete
 - [ ] 🟢 Tweak RFTools Dimension Tweaker
-- [ ] 🟢 Install justenoughdimensions to fix mob cound issue
+- [ ] 🟢 Install justenoughdimensions to fix mob count issue
 - [ ] 🟢 Install openglider
 - [ ] 🟢 Install https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap
 - [x] 🔴 Remove Integrated proxy or fix 📀 bug
+- [ ] 🚧 MODS.md should not consist disabled mods
 - [ ] 🚧 Update screenshots on CF
 - [ ] 🚧 Add modpack automation:
     1. `make_pack.js`

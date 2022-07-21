@@ -6,41 +6,53 @@
  * @link https://github.com/Krutoy242
  */
 
-//@ts-check
+// @ts-check
 
-import { xml2js, js2xml } from 'xml-js'
-import detectIndent from 'detect-indent'
 import { writeFileSync } from 'fs'
 import { relative } from 'path'
+
+import detectIndent from 'detect-indent'
 import _ from 'lodash'
-import { getExtra } from '../lib/jaopca.js'
-import { getByOreKind, getByOreBase, getOreBases_byKinds } from '../lib/tellme.js'
-import { naturalSort, globs, loadText, defaultHelper } from '../lib/utils.js'
-
-/** @typedef {import("xml-js").Element} XMLElement*/
-
+import { js2xml, xml2js } from 'xml-js'
 import yargs from 'yargs'
+
+import { getExtra } from '../lib/jaopca.js'
+import {
+  getByOreBase,
+  getByOreKind,
+  getOreBases_byKinds,
+} from '../lib/tellme.js'
+import { defaultHelper, globs, loadText, naturalSort } from '../lib/utils.js'
+
+/** @typedef {import("xml-js").Element} XMLElement */
+
 const argv = yargs(process.argv.slice(2))
   .alias('d', 'dryrun')
   .describe('d', 'Do not add/remove recipes, just format files').argv
 
 export async function init(h = defaultHelper) {
   // List of curated files and folders
-  const curatedFiles = globs(['config/advRocketry/*.xml', 'config/enderio/recipes/user/user_recipes.xml']).map((p) =>
-    relative(process.cwd(), p).replace(/\\/g, '/')
-  )
+  const curatedFiles = globs([
+    'config/advRocketry/*.xml',
+    'config/enderio/recipes/user/user_recipes.xml',
+  ]).map((p) => relative(process.cwd(), p).replace(/\\/g, '/'))
 
   await h.begin('Curating XML files', curatedFiles.length)
 
-  const automaticComment = ' Recipe below generated automatically. Do not make changes or they gonna be rewritten. '
+  const automaticComment =
+    ' Recipe below generated automatically. Do not make changes or they gonna be rewritten. '
 
-  const changes = !argv['dryrun'] ? (await h.begin('Reading crafttweaker.log'), getChanges()) : {}
+  const changes = !argv['dryrun']
+    ? (await h.begin('Reading crafttweaker.log'), getChanges())
+    : {}
 
   let totalNewRecipes = 0
 
   for (const filePath of curatedFiles) {
     mutateXml(filePath, (xml_obj) => {
-      const recipes = xml_obj.elements.find((o) => o.name === 'Recipes' || o.name === 'enderio:recipes')
+      const recipes = xml_obj.elements.find(
+        (o) => o.name === 'Recipes' || o.name === 'enderio:recipes'
+      )
       if (!recipes) return
 
       const recipeList = recipes.elements
@@ -49,8 +61,12 @@ export async function init(h = defaultHelper) {
       let j = recipeList.length
       while (j--) {
         const commentElement = recipeList[j]
-        if (commentElement.type === 'comment' && commentElement.comment === automaticComment) {
-          const elemsToRemove = recipeList[j + 1] && recipeList[j + 1].type === 'comment' ? 3 : 2
+        if (
+          commentElement.type === 'comment' &&
+          commentElement.comment === automaticComment
+        ) {
+          const elemsToRemove =
+            recipeList[j + 1] && recipeList[j + 1].type === 'comment' ? 3 : 2
           recipeList.splice(j, elemsToRemove)
         }
       }
@@ -72,7 +88,10 @@ export async function init(h = defaultHelper) {
 }
 
 // @ts-ignore
-if (import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()
+if (
+  import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
+)
+  init()
 
 /** @param {string} xmlString */
 function xml_to_js(xmlString) {
@@ -90,14 +109,22 @@ function getChanges(h = defaultHelper) {
     ;(changesText[groups.filename] ??= []).push(groups.recipe)
   }
 
-  _(getCustomRecipes()).forEach((arr, filePath) => (changesText[filePath] ??= []).push(...arr))
+  _(getCustomRecipes()).forEach((arr, filePath) =>
+    (changesText[filePath] ??= []).push(...arr)
+  )
 
   /** @param {XMLElement} a */
   function countInputs(a) {
-    const recipe = a.elements.find((o) => o.name?.toLowerCase() === 'recipe').elements
+    const recipe = a.elements.find(
+      (o) => o.name?.toLowerCase() === 'recipe'
+    ).elements
     const inputs =
       recipe.find((o) => o.name?.toLowerCase() === 'input')?.elements ??
-      recipe.find((o) => o.type === 'element')?.elements.filter((e) => e.type === 'element' && e.name.includes('input'))
+      recipe
+        .find((o) => o.type === 'element')
+        ?.elements.filter(
+          (e) => e.type === 'element' && e.name.includes('input')
+        )
 
     return inputs.length
   }
@@ -107,7 +134,11 @@ function getChanges(h = defaultHelper) {
     .mapValues((arr) =>
       arr
         .map(xml_to_js)
-        .sort((a, b) => countInputs(b) - countInputs(a) || naturalSort(JSON.stringify(a), JSON.stringify(b)))
+        .sort(
+          (a, b) =>
+            countInputs(b) - countInputs(a) ||
+            naturalSort(JSON.stringify(a), JSON.stringify(b))
+        )
     )
     .value()
 }
@@ -131,9 +162,9 @@ function mutateXml(filePath, xmlObjectMutationCB) {
 function xmlIngr(input, amount = 1) {
   const parts = input.split(':')
   return parts.length > 1
-    ? `<itemStack>${parts.slice(0, 2).join(':')}${amount != 1 || parts[2] ? ' ' + amount : ''}${
-        parts[2] ? ' ' + parts[2] : ''
-      }</itemStack>`
+    ? `<itemStack>${parts.slice(0, 2).join(':')}${
+        amount != 1 || parts[2] ? ' ' + amount : ''
+      }${parts[2] ? ' ' + parts[2] : ''}</itemStack>`
     : `<oreDict>${input}${amount != 1 ? ' ' + amount : ''}</oreDict>`
 }
 
@@ -144,7 +175,11 @@ function parseItems(input) {
   return (
     (Array.isArray(input) ? input : [input])
       // @ts-ignore
-      .map((s) => (s.startsWith('<') ? s : xmlIngr(...(s.includes(' ') ? s.split(' ') : [s]))))
+      .map((s) =>
+        s.startsWith('<')
+          ? s
+          : xmlIngr(...(s.includes(' ') ? s.split(' ') : [s]))
+      )
       .join('\n')
   )
 }
@@ -179,7 +214,11 @@ function getCustomRecipes() {
         )
         .flat()
         .map(([oreBase, kind1, kind2, amount]) =>
-          makeXMLRecipe(`${oreBase} Block`, `${kind1}${oreBase}`, `${kind2}${oreBase} ${amount}`)
+          makeXMLRecipe(
+            `${oreBase} Block`,
+            `${kind1}${oreBase}`,
+            `${kind2}${oreBase} ${amount}`
+          )
         ),
       makeXMLRecipe('Stone Sticks', 'cobblestone', 'stickStone 6'),
       makeXMLRecipe('HDPE Sticks', 'mekanism:plasticblock:15', 'stickHDPE 6'),
@@ -215,9 +254,27 @@ function getCustomRecipes() {
         20,
         100000
       ),
+      makeXMLRecipe(
+        'Terrestrial centrifuge',
+        '<fluidStack>terrestrial 432</fluidStack>',
+        [
+          'actuallyadditions:item_crystal_empowered:0 1',
+          'actuallyadditions:item_crystal_empowered:1 1',
+          'actuallyadditions:item_crystal_empowered:2 1',
+          'actuallyadditions:item_crystal_empowered:3 1',
+          'actuallyadditions:item_crystal_empowered:4 1',
+          'actuallyadditions:item_crystal_empowered:5 1',
+          'actuallyadditions:item_solidified_experience:0 3',
+        ],
+        10,
+        100000
+      ),
     ],
 
-    'config/enderio/recipes/user/user_recipes.xml': getOreBases_byKinds(['dustDirty', 'dust'])
+    'config/enderio/recipes/user/user_recipes.xml': getOreBases_byKinds([
+      'dustDirty',
+      'dust',
+    ])
       .filter((b) => b !== 'Aluminum')
       .map(
         (oreBase) =>

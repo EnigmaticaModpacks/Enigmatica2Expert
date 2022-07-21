@@ -5,9 +5,9 @@
  * @link https://github.com/Krutoy242
  */
 
-//@ts-check
+// @ts-check
 
-import { renameDeep, loadJson } from '../lib/utils.js'
+import { loadJson, renameDeep } from '../lib/utils.js'
 
 export function init(Patchouli_js, helpers) {
   // ----------------------------------------------------
@@ -36,7 +36,9 @@ export function init(Patchouli_js, helpers) {
       },
       helpers
         .config('config/cyclicmagic.cfg')
-        .cyclicmagic.blocks.magicbean.MagicBeanDropList.map((l) => l.replace(/\*(\d+)$/, ':$1'))
+        .cyclicmagic.blocks.magicbean.MagicBeanDropList.map((l) =>
+          l.replace(/\*(\d+)$/, ':$1')
+        )
     )
   )
 
@@ -87,7 +89,7 @@ export function init(Patchouli_js, helpers) {
     {
       item: `draconicevolution:mob_soul{EntityName:"endreborn:endguard"}`,
       title: 'Purpur Guard',
-      _text: `Spawns anywhere, but only on $(n)Purpur blocks/$.`,
+      _text: `Spawns anywhere, but only on $(n)Purpur blocks/$ or $(n)Cursed Earth/$.`,
     },
   ])
 
