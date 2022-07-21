@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest690.name}",
-	icon: "rftoolsdim:dimension_enscriber",
 	x: 5.166666666666667d,
 	y: 0.8333333333333333d,
 	text: [
@@ -10,12 +8,11 @@
 		"501222cc"
 	],
 	tasks: [{
-		uid: "32d212fd",
+		uid: "0e0a04fd",
 		type: "item",
 		items: [{
-			item: "rftoolsdim:dimension_enscriber"
-		}],
-		ignore_nbt: 1b
+			item: "rftdimtweak:dimension_enscriber"
+		}]
 	}],
 	rewards: [{
 		uid: "5021de8e",

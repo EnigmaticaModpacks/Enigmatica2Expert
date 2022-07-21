@@ -2,7 +2,7 @@
 	title: "{bq.quest648.name}",
 	icon: "thaumcraft:jar_void",
 	x: 4.666666666666667d,
-	y: 10.5d,
+	y: 12.0d,
 	text: [
 		"{bq.quest648.desc}"
 	],

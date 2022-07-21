@@ -17,6 +17,13 @@
 			item: "rustic:honeycomb"
 		}],
 		ignore_nbt: 1b
+	},
+	{
+		uid: "03384047",
+		type: "item",
+		items: [{
+			item: "rustic:apiary"
+		}]
 	}],
 	rewards: [{
 		uid: "df912f16",

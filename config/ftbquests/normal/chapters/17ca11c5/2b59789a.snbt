@@ -1,8 +1,8 @@
 {
 	title: "{bq.quest22.name}",
 	icon: "draconicevolution:draconium_capacitor 1 2",
-	x: 0.45833333333333337d,
-	y: 5.125d,
+	x: 7.1d,
+	y: 6.1d,
 	text: [
 		"{bq.quest22.desc}"
 	],

@@ -15,12 +15,10 @@
 		"18c9097c"
 	],
 	tasks: [{
-		uid: "980ce616",
-		type: "interaction",
-		title: "Interact with Enderman",
-		icon: "enderio:block_enderman_skull",
-		match_type: "entity_id",
-		match: "minecraft:enderman"
+		uid: "1f9b5d52",
+		type: "xp",
+		value: 30L,
+		points: false
 	}],
 	rewards: [{
 		uid: "b5c7af3f",

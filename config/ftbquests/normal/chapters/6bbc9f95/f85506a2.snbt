@@ -2,7 +2,7 @@
 	title: "{bq.quest650.name}",
 	icon: "thaumcraft:smelter_basic",
 	x: 0.6666666666666666d,
-	y: 8.5d,
+	y: 10.0d,
 	text: [
 		"{bq.quest650.desc}"
 	],

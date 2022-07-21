@@ -1,0 +1,29 @@
+{
+	x: 5.6d,
+	y: 9.3d,
+	text: [
+		"Turns Ore into Native Clusters"
+	],
+	dependencies: [
+		"0c6a05c4"
+	],
+	tasks: [{
+		uid: "15ae7133",
+		type: "item",
+		items: [{
+			item: "thaumicwonders:alchemist_stone"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4bf99c7a",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

@@ -2,7 +2,7 @@
 	title: "{bq.quest666.name}",
 	icon: "thaumcraft:matrix_cost",
 	x: 3.3333333333333335d,
-	y: 13.166666666666666d,
+	y: 14.666666666666666d,
 	text: [
 		"{bq.quest666.desc}"
 	],

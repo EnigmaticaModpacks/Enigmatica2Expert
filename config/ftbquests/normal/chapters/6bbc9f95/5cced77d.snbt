@@ -1,8 +1,8 @@
 {
 	x: 5.7d,
-	y: 9.2d,
+	y: 10.7d,
 	text: [
-		"Mirrors significantly buffed. Now they could transfer up to 4 items / second without pollution."
+		"Mirrors significantly buffed. Now they will transfer up to 4 items / second without pollution."
 	],
 	dependencies: [
 		"38a388cd"

@@ -2,7 +2,7 @@
 	title: "{bq.quest637.name}",
 	icon: "thaumcraft:infusion_matrix",
 	x: 2.0d,
-	y: 8.5d,
+	y: 10.0d,
 	text: [
 		"{bq.quest637.desc}"
 	],

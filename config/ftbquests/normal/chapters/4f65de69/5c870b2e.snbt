@@ -6,7 +6,7 @@
 			Material: "ma.supremium"
 		}
 	},
-	x: 15.625d,
+	x: 15.6d,
 	y: 3.5d,
 	text: [
 		"{bq.quest59.desc}"

@@ -2,7 +2,7 @@
 	title: "{bq.quest14.name}",
 	icon: "botania:pool 1 1",
 	x: 0.45833333333333337d,
-	y: 6.125d,
+	y: 5.125d,
 	text: [
 		"{bq.quest14.desc}"
 	],

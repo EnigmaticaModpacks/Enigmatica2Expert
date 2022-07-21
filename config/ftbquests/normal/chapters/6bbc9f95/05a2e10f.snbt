@@ -1,0 +1,29 @@
+{
+	x: 3.6d,
+	y: 9.3d,
+	text: [
+		"Turns ore into Eldrich Clusters."
+	],
+	dependencies: [
+		"1befcde7"
+	],
+	tasks: [{
+		uid: "591a7833",
+		type: "item",
+		items: [{
+			item: "thaumicwonders:alienist_stone"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3fd67ac4",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "epic"
+			}
+		}
+	}]
+}

@@ -2,7 +2,7 @@
 	title: "{bq.quest660.name}",
 	icon: "thaumcraft:bellows",
 	x: 2.0d,
-	y: 10.5d,
+	y: 12.0d,
 	text: [
 		"{bq.quest660.desc}"
 	],

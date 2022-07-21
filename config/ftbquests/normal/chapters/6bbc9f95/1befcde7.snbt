@@ -1,24 +1,23 @@
 {
-	title: "{bq.quest892.name}",
-	icon: "conditionoverload:wicked_jewel",
-	x: 15.6d,
-	y: 5.1d,
+	x: 4.6d,
+	y: 9.3d,
 	text: [
-		"{bq.quest892.desc}"
+		"Turns one ore into another."
 	],
 	dependencies: [
-		"5c870b2e"
+		"33706cbb"
 	],
 	tasks: [{
-		uid: "9c65bda0",
+		uid: "e55d039b",
 		type: "item",
 		items: [{
-			item: "conditionoverload:wicked_jewel"
+			item: "thaumicwonders:transmuter_stone"
 		}],
+		ignore_damage: true,
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "e285486a",
+		uid: "4338d46d",
 		type: "item",
 		item: {
 			id: "ftbquests:lootcrate",

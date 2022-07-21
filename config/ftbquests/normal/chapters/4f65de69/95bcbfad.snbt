@@ -1,0 +1,54 @@
+{
+	title: "Uncraftable TCon Parts",
+	icon: "contenttweaker:supremium_chest_base",
+	x: 15.6d,
+	y: 6.1d,
+	text: [
+		"Some TCon parts cannot be manufactured. Most often these are extremely strong parts.",
+		"",
+		"For example, it is any core from Supremium, Aethium Trim, Laser Mediums and Battery Cells."
+	],
+	dependencies: [
+		"5c870b2e"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "9c9ecd84",
+		type: "item",
+		items: [{
+			item: "contenttweaker:supremium_chest_base"
+		}]
+	},
+	{
+		uid: "f3f16baf",
+		type: "item",
+		items: [{
+			id: "conarm:armor_trim",
+			tag: {
+				Material: "aethium"
+			}
+		}]
+	},
+	{
+		uid: "295687f7",
+		type: "item",
+		items: [{
+			id: "plustic:battery_cell",
+			tag: {
+				Material: "copper"
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "8337ddb2",
+		type: "item",
+		items: [{
+			id: "plustic:laser_medium",
+			tag: {
+				Material: "prismarine"
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}
