@@ -39,3 +39,5 @@ mods/tellme-*
 mods/JEIExporter-*
 mods/DynamicSurroundings-*
 mods/OreLib-*
+mods/RenderLib-*
+mods/EntityCulling-*

@@ -82,6 +82,7 @@ mods/*.jar
 !mods/particleculling-*
 !mods/RenderLib-*
 !mods/Nothirium-*
+!mods/SmoothFont-*
 
 #Not sure
 # !mods/gendustryjei*

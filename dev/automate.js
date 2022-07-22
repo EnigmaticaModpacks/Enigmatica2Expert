@@ -7,23 +7,24 @@
  */
 
 // @ts-check
-import { defaultHelper, loadText } from './lib/utils.js'
 
 import chalk from 'chalk'
 import cli_progress from 'cli-progress'
 import glob from 'glob'
-const { Format, MultiBar } = cli_progress
-const { gray, green, dim } = chalk
-const { ValueFormat } = Format
-
 import mc_benchmark from 'mc-benchmark'
 import yargs from 'yargs'
+
+import { defaultHelper, loadText } from './lib/utils.js'
 const argv = yargs(process.argv.slice(2))
   .alias('k', 'keep-cache')
   .describe('k', 'Not delete cached files')
   .default('k', true)
   .alias('h', 'hardfail')
   .describe('h', 'Exit script on any error').argv
+
+const { Format, MultiBar } = cli_progress
+const { gray, green, dim } = chalk
+const { ValueFormat } = Format
 
 const getFileName = (/** @type {string} */ s) => s.replace(/^.*[\\/]/, '')
 const getExtension = (/** @type {string} */ s) => s.split('.').pop()

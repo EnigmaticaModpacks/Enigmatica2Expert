@@ -143,14 +143,27 @@ export function curseMarkdown(mdFilePath) {
   // $('sub').contents().unwrap()
   $('sup').remove()
 
-  // <p><a href="https://github.com/Krutoy242/Enigmatica2Expert-Extended/releases">&lt; Full Changelog with better formatting on GitHub &gt;</a></p>
+  $('body').prepend(
+    $('<p></p>').append(
+      $('<a></a>')
+        .attr(
+          'href',
+          'https://github.com/Krutoy242/Enigmatica2Expert-Extended/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3Abug'
+        )
+        .append('< Known bugs >')
+    )
+  )
 
-  const pathToReleases =
-    'https://github.com/Krutoy242/Enigmatica2Expert-Extended/releases'
-  const link = $('<a></a>')
-    .attr('href', pathToReleases)
-    .append('< Full Changelog with better formatting on GitHub >')
-  $('body').prepend($('<p></p>').append(link))
+  $('body').prepend(
+    $('<p></p>').append(
+      $('<a></a>')
+        .attr(
+          'href',
+          'https://github.com/Krutoy242/Enigmatica2Expert-Extended/releases'
+        )
+        .append('< Full Changelog with better formatting on GitHub >')
+    )
+  )
 
   saveText($.html(), htmlPath)
   // execSync('npx prettier --write ' + htmlPath)
