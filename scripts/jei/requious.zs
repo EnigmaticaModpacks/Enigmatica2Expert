@@ -9,7 +9,6 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.item.WeightedItemStack;
 import mods.ctintegration.data.DataUtil.parse as sNBT;
-import mods.immersivepetroleum.Reservoir;
 
 
 function add(ass as Assembly, chunk as IItemStack[][IIngredient[]]) {
@@ -1707,18 +1706,3 @@ add_ic2_semifluid(<fluid:bio.ethanol>, 32000);
 
 // -----------------------------------------------------------------------
 // -----------------------------------------------------------------------
-
-function registerPumpjackPowerUsage(tier as int, capacity as int, rft as int){
-
-
-  Reservoir.registerPowerUsage(tier, capacity, rft);
-}
-
-
-function registerPumpjackliquids(name as string, liqud as ILiquidStack, minSize as int, maxSize as int, replenishRate as int, pumpSpeed as int, weight as int, powerTier as int,
-	  dimBlacklist as int[], dimWhitelist as int[], biomeBlacklist as string[], biomeWhitelist as string[]){
-
-
-  Reservoir.registerReservoir(name, liqud, minSize, maxSize, replenishRate, pumpSpeed, weight, powerTier,
-    dimBlacklist, dimWhitelist, biomeBlacklist, biomeWhitelist);
-}
