@@ -149,8 +149,8 @@ for lList, itList in chaliceGrid {
 for lList, itList in chaliceGrid {
 	val b1 = Bucket(lList[0].name);
 	val b2 = Bucket(lList[1].name);
-	scripts.requiousJei.add_everflow_chalice(b2, b1, itList);
-	scripts.requiousJei.add_liquid_interaction(b1, b2, itList[0]);
+	scripts.jei.mod.astralsorcery.add_everflow_chalice(b2, b1, itList);
+	scripts.jei.liquids.interact(b1, b2, itList[0]);
 }
 
 

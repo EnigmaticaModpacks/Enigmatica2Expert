@@ -11,14 +11,14 @@ static list as IItemStack[string][IIngredient] = {} as IItemStack[string][IIngre
 function setEx(input as IIngredient, blockID_output as IItemStack[string], catalyst as IItemStack) as void {
   list[input] = blockID_output;
   for blockID, output in blockID_output {
-    scripts.requiousJei.add_expire_in_block(input, catalyst, output);
+    scripts.jei.expire_in_block.add(input, catalyst, output);
   }
 }
 
 function set(input as IIngredient, blockID_output as IItemStack[string]) as void {
   list[input] = blockID_output;
   for blockID, output in blockID_output {
-    scripts.requiousJei.add_expire_in_block(input, itemUtils.getItem(blockID), output);
+    scripts.jei.expire_in_block.add(input, itemUtils.getItem(blockID), output);
   }
 }
 

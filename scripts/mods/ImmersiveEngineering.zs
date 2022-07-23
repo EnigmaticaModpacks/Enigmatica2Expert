@@ -240,7 +240,7 @@ addRailgunBullet(<extendedcrafting:material:3> , 48, 1.0, colorMap);
 
 function addLiquidFertilizer(fluid as ILiquidStack, mult as float) {
 	if (fluid.name != 'water') mods.alfinivia.ImmersiveEngineering.addLiquidFertilizer(fluid, mult);
-	scripts.requiousJei.addGardenClocheFluid(fluid, (mult * 80.0f + 0.5f) as int);
+	scripts.jei.mod.immersiveengineering.addGardenClocheFluid(fluid, (mult * 80.0f + 0.5f) as int);
 }
 
 addLiquidFertilizer(<liquid:water>                , 0.20f);

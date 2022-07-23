@@ -29,5 +29,5 @@ static canSeeAbyssFnc as IRecipeFunction = function(out, ins, cInfo) {
 function addSkyblockRecipe(output as IItemStack, gridStr as string[], options as IIngredient[string]) as void {
   var grid = Grid(gridStr, options);
   recipes.addHiddenShaped(craft.uniqueRecipeName(output, grid), output, grid.shaped(), canSeeAbyssFnc, null);
-  scripts.requiousJei.add_special_craft(output, grid.shaped(), "Crafter must see the void");
+  scripts.jei.crafting_hints.special(output, grid.shaped(), "Crafter must see the void");
 }
