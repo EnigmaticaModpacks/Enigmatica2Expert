@@ -132,6 +132,7 @@ mods.thaumcraft.Crucible.registerRecipe(
 
 events.onPlayerPickupItem(function(e as crafttweaker.event.PlayerPickupItemEvent){
   if(e.player.world.remote) return;
+  if(isNull(e.item) || isNull(e.item.item)) return;
   
   val id = e.item.item.definition.id;
   if(
