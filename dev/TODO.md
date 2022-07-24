@@ -3,6 +3,7 @@
 - [ ] ✏️ More Alien Crystal blocks + mica to get Crystaltine and ET gems
 - [ ] ✏️ quantum entagloporter's recipe is broken
 - [ ] ✏️ alumite should be possible to craft in alloy smelter/electric arc furnace
+- [ ] ✏️ Ferric Sand add skyblock source
 - [ ] 📀 Add Meat to Meaty orb https://github.com/daedalus4096/ThaumicWonders/blob/251829dee76d72368d0ed0af1f2104121b781e63/src/main/java/com/verdantartifice/thaumicwonders/common/tiles/devices/TileMeatyOrb.java#L49-L53
 - [ ] 📀 Buff Golem Stats
 - [ ] 📀 Make Essentia Seeds grows only on planet (Stella?)
@@ -14,6 +15,7 @@
 - [ ] 🔄 Do not use ModDirector for CF files
 - [ ] 🔄 Remove jei.cfg from repo
 - [ ] 🔄 Remove common blocks from JER planets if they appear in Overworld
+- [ ] 🔨 Set Gelid tools harvest level to `13`
 - [ ] 🟢 Install openglider
 - [ ] 🚧 Update screenshots on CF
 - [ ] 🚧 Add modpack automation:
