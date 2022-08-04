@@ -360,8 +360,7 @@ zenClass Utils {
     while (total < desiredAmount) {
       val count = max(1, (f * (i + 1) + 0.5f) as int - total);
       total += count;
-      mods.zenutils.DelayManager.addDelayWork(function() {
-        if(isNull(world)) return;
+      world.catenation().sleep(i * delay + 1).then(function(world) {
         val itemEntity = (output * count).createEntityItem(world, x, y, z);
         itemEntity.motionY = my + 0.4d;
         itemEntity.motionX = mx + rnd.nextDouble(-0.1d, 0.1d);
@@ -370,7 +369,7 @@ zenClass Utils {
 
         world.playSound("thaumcraft:poof", "ambient", pos, 0.5f, 1.5f);
         server.commandManager.executeCommandSilent(server, "/particle fireworksSpark "~x as float~" "~y as float~" "~z as float~" 0 0.1 0 0.1 5");
-      }, i * delay + 1);
+      }).start();
 
       i += 1;
     }

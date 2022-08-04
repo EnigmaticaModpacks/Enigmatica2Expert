@@ -1,11 +1,11 @@
 
+import crafttweaker.player.IPlayer;
+import crafttweaker.world.IWorld;
 import mods.zenutils.command.CommandUtils;
 import mods.zenutils.command.IGetTabCompletion;
 import mods.zenutils.command.ZenCommand;
-import mods.zenutils.StringList;
-import crafttweaker.player.IPlayer;
-import mods.zenutils.DelayManager.addDelayWork;
 import mods.zenutils.I18n;
+import mods.zenutils.StringList;
 
 static playerPending as StringList = StringList.empty();
 static inProcess as string[string] = {};
@@ -27,15 +27,15 @@ function send(key as string, mode as string = 'everyone', substr as string = nul
   }
 }
 
-function stopWithDelay() as void {
+function stopWithDelay(world as IWorld) as void {
   inProcess['restart'] = 'true';
   send('delay');
 
-  addDelayWork(function() {
+  world.catenation().sleep(60).then(function(world) {
     // send('stopping');
     server.commandManager.executeCommand(server, '/say §8[§6ø§8]§r §4Server stopping by vote...');
     server.commandManager.executeCommand(server, '/stop');
-  }, 60);
+  }).start();
 }
 
 function pendingCount() as int {
@@ -81,14 +81,14 @@ cmd.execute = function(command, server, sender, args) {
   if(!isNull(inProcess.restart)) return sendSingle(player, 'in_process');
 
   // Only one player - stop right now
-  if (server.playerCount == 1) return stopWithDelay();
+  if (server.playerCount == 1) return stopWithDelay(player.world);
 
   if (pendingCount() == 0) {
     // We are first player who activated
     playerPending.add(player.uuid);
     send('query', 'unpending', player.name);
     
-    addDelayWork(function() { cancelVoting(); }, 300);
+    player.world.catenation().sleep(300).then(function(world) { cancelVoting(); }).start();
   } else if (playerPending.contains(player.uuid)) {
     // We are already waiting for vote
     sendSingle(player, 'already_voted', getPlayersList());
@@ -96,7 +96,7 @@ cmd.execute = function(command, server, sender, args) {
     playerPending.add(player.uuid);
     if (checkComplete()) {
       // Everyone voted
-      stopWithDelay();
+      stopWithDelay(player.world);
     } else {
       // New player added in vote list
       send('awaiting', 'pending', getPlayersList(false));

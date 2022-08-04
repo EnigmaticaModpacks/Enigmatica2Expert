@@ -126,12 +126,11 @@ events.onPlayerInteractBlock(function(e as crafttweaker.event.PlayerInteractBloc
   e.world.playSound("thaumcraft:poof", "ambient", e.position, 0.5f, 1.5f);
 
   # Check in next tick if block replaced
-  mods.zenutils.DelayManager.addDelayWork(function() {
-    if(isNull(world) || world.isRemote()) return;
+  world.catenation().sleep(1).then(function(world) {
     if (world.getBlockState(position) != <blockstate:bedrockores:bedrock_ore>) {
       e.world.setBlockState(<blockstate:minecraft:bedrock>, position);
       e.player.give(item.anyAmount());
       e.player.sendMessage("§8Failed to turn bedrock. Try again without moving.");
     }
-  }, 1);
+  }).start();
 });

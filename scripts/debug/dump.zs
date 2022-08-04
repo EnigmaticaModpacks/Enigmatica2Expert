@@ -12,7 +12,6 @@ import crafttweaker.player.IPlayer;
 import mods.ctintegration.data.DataUtil;
 import mods.ctintegration.util.RawLogger.logRaw as logRaw;
 import mods.zenutils.ZenUtils;
-import mods.zenutils.DelayManager.addDelayWork as addDelayWork;
 
 
 function serialize(str as string) as string {
@@ -121,17 +120,17 @@ static debugUtils as DebugUtils = DebugUtils();
 
 static skipped as bool[] = [false] as bool[];
 function runAutomation(player as IPlayer) as void {
-  addDelayWork(function() {
+  player.world.catenation().sleep(20).then(function(world) {
     player.sendMessage('Developing: §c/logAdditionalDebugData()');
     logAdditionalDebugData(player);
-  }, 20 * 1);
-
-  addDelayWork(function() {
+  })
+  
+  .sleep(100).then(function(world) {
     player.sendMessage('Developing: Starting §c/ct conflict');
     server.commandManager.executeCommand(server, '/ct conflict');
-  }, 20 * 20);
-
-  addDelayWork(function() {
+  })
+  
+  .sleep(100).then(function(world) {
     player.sendMessage('Developing: Starting §c/tellme dump-csv');
     val csvList = [
     //'players',                          # 132
@@ -177,32 +176,32 @@ function runAutomation(player as IPlayer) as void {
     for csvcode in csvList {
       server.commandManager.executeCommand(server, '/tellme dump-csv ' ~ csvcode);
     }
-  }, 20 * 40);
-
-  addDelayWork(function() {
+  })
+  
+  .sleep(100).then(function(world) {
     player.sendMessage('Developing: Starting §cexport to crafttweaker.log');
     exportAllBlocks();
     exportAllTools();
-  }, 20 * 80);
-
-  addDelayWork(function() {
+  })
+  
+  .sleep(100).then(function(world) {
     player.sendMessage('Developing: §aFinished!');
-  }, 20 * 90);
+  }).start();
 }
 
 events.onPlayerLoggedIn(function(e as crafttweaker.event.PlayerLoggedInEvent){
   if(e.player.world.isRemote()) return;
   if(!debugUtils.firstTime(e.player.world.time)) return;
 
-  addDelayWork(function() {
+  e.player.world.catenation().sleep(100).then(function(world) {
     e.player.sendMessage('§cDebug environment activated!');
     e.player.sendMessage('§8If you want to disable DEBUG mode, remove §7scripts/debug§8 directory');
     e.player.sendMessage('§8Write §7/skip_automation§8 to skip automatic executions, write §7/run_automation§8 to run manually');
-  }, 20 * 5);
-
-  addDelayWork(function() {
+  })
+  
+  .sleep(300).then(function(world) {
     if(!skipped[0]) runAutomation(e.player);
-  }, 20 * 20);
+  }).start();
 });
 
 

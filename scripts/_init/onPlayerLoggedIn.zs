@@ -39,7 +39,7 @@ function onEachLogin(e as crafttweaker.event.PlayerLoggedInEvent, logCount as in
 }
 
 function showWithDelay(player as IPlayer, lang as string) {
-  mods.zenutils.DelayManager.addDelayWork(function() {
+  player.world.catenation().sleep(20 * 10).then(function(world) {
     player.sendRichTextMessage(crafttweaker.text.ITextComponent.fromTranslation(lang));
-  }, 20 * 10);
+  }).start();
 }
