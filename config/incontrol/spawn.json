@@ -57,6 +57,7 @@
   {"dimension": 0, "mob": "endreborn:watcher", "maxlight": 7, "block": "ore:endstone","result": "allow"},
   {"dimension": 0, "mob": "endreborn:watcher", "result": "deny"},
 
+	{"mob": "endreborn:chronologist","mod": "endreborn","mincount": 20,"result": "deny"},
 	{"mob": "endreborn:endguard","mod": "endreborn","mincount": 5,"result": "deny"},
   {"mob": "endreborn:endguard", "maxlight": 7, "block": [
 		"minecraft:purpur_block",
