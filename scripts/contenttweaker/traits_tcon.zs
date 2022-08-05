@@ -162,7 +162,7 @@ trait_armor.register();
 val difficulty = TraitBuilder.create("difficulty");
 difficulty.color = 0xd1310d;
 difficulty.localizedName = "Difficulty";
-difficulty.localizedDescription = "§oScalling Difficulty\n§rMining and attacking reduce player difficulty";
+difficulty.localizedDescription = "§oScalling Difficulty\n§rMining, attacking and receive damage reduce player difficulty";
 difficulty.afterBlockBreak = function(trait, tool, world, blockstate, miner, wasEffective, unknown) {
   if(world.isRemote()) return;
   if(! miner instanceof IPlayer) return;
@@ -184,7 +184,7 @@ difficulty.register();
 val difficulty_armor = ArmorTraitBuilder.create("difficulty");
 difficulty_armor.color = 0xd1310d;
 difficulty_armor.localizedName = "Difficulty";
-difficulty_armor.localizedDescription = "§oScalling Difficulty\n§rMining and attacking reduce player difficulty";
+difficulty_armor.localizedDescription = "§oScalling Difficulty\n§rMining, attacking and receive damage reduce player difficulty";
 difficulty_armor.onDamaged = function(trait, armor, player, source, damage, newDamage, evt) {
   if(player.world.isRemote()) return newDamage;
   if(newDamage <= 0) return newDamage;
