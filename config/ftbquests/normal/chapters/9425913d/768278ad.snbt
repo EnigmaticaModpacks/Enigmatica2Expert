@@ -1,0 +1,25 @@
+{
+	x: 12.0d,
+	y: 6.0d,
+	text: [
+		"Some data models upgradeable to first level without killing mobs."
+	],
+	dependencies: [
+		"3c0d3677"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "f6a1e2cd",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:data_model_zombie"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e93954a3",
+		type: "loot",
+		table: 2
+	}]
+}

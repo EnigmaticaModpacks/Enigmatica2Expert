@@ -18,12 +18,69 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "83afe90a",
+		uid: "ae89baa2",
 		type: "item",
 		item: {
-			id: "ftbquests:lootcrate",
+			id: "engineersdecor:labeled_crate",
 			tag: {
-				type: "common"
+				inventory: {
+					Items: [{
+						Slot: 0b,
+						id: "engineersdecor:labeled_crate",
+						Count: 1b,
+						Damage: 0s,
+						tag: {
+							inventory: {
+								Items: [{
+									Slot: 0b,
+									id: "engineersdecor:labeled_crate",
+									Count: 1b,
+									Damage: 0s,
+									tag: {
+										inventory: {
+											Items: [{
+												Slot: 0b,
+												id: "engineersdecor:labeled_crate",
+												Count: 1b,
+												Damage: 0s,
+												tag: {
+													inventory: {
+														Items: [{
+															Slot: 0b,
+															id: "engineersdecor:labeled_crate",
+															Count: 1b,
+															Damage: 0s,
+															tag: {
+																inventory: {
+																	Items: [{
+																		Slot: 0b,
+																		id: "engineersdecor:labeled_crate",
+																		Count: 1b,
+																		Damage: 0s,
+																		tag: {
+																			inventory: {
+																				Items: [{
+																					Slot: 0b,
+																					id: "engineersdecor:labeled_crate",
+																					Count: 1b,
+																					Damage: 0s
+																				}]
+																			}
+																		}
+																	}]
+																}
+															}
+														}]
+													}
+												}
+											}]
+										}
+									}
+								}]
+							}
+						}
+					}]
+				}
 			}
 		}
 	}]
