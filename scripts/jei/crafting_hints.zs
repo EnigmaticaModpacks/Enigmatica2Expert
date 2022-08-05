@@ -73,7 +73,7 @@ function special(output as IItemStack, input2d as IIngredient[][], condition as 
 // -----------------------------------------------------------------------
 
 add1to1(<thaumcraft:cluster:1>, <minecraft:gold_ingot> * 8, Soul('randomthings:goldenchicken'));
-add1to1(Soul("minecraft:zombie"), <bloodmagic:blood_shard>, <bloodmagic:bound_sword>.withTag({Unbreakable: 1 as byte, activated: 1 as byte}));
+add1to1(Soul("minecraft:zombie") | Soul("minecraft:villager"), <bloodmagic:blood_shard>, <bloodmagic:bound_sword>.withTag({Unbreakable: 1 as byte, activated: 1 as byte}));
 
 x.addJEIRecipe(AssemblyRecipe.create(function(c) {
   c.addFluidOutput('fluid_out', <liquid:canolaoil> * 80);})
@@ -113,3 +113,7 @@ if(!isNull(xp_bottler)) {
     fill(<minecraft:glass_bottle>, game.getLiquid(fluid) * 160, <minecraft:experience_bottle>, xp_bottler, 20);
   }
 }
+
+# Fireflys and Cicadas
+scripts.jei.requious.add(<assembly:crafting_hints>, {[null, null, null, null, null, <twilightforest:twilight_sapling:1>,] : [null, <twilightforest:firefly>]});
+scripts.jei.requious.add(<assembly:crafting_hints>, {[null, null, null, null, null, <twilightforest:twilight_sapling:4>,] : [null, <twilightforest:firefly>, <twilightforest:cicada>]});
