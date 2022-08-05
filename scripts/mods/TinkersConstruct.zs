@@ -75,9 +75,13 @@ mods.tconstruct.Melting.removeRecipe(<liquid:iron>, <minecraft:hopper>);
 	[<ore:blockSheetmetalGold>, <ore:plateDenseObsidian>, <ore:blockSheetmetalGold>]]);
 
 # Faster Alumite Alloying
-	// mods.tconstruct.Alloy.removeRecipe(<liquid:alumite>); // Removing PlusTic's alloys wouldn't have effect
-	mods.tconstruct.Alloy.addRecipe(<liquid:alumite> * 432, [<liquid:aluminum> * 720, <liquid:iron> * 288,  <liquid:obsidian> * 288]);
-	mods.tconstruct.Alloy.addRecipe(<liquid:alumite> * 864, [<liquid:aluminum> * 1440, <liquid:iron> * 576,  <liquid:obsidian> * 576]);
+// mods.tconstruct.Alloy.removeRecipe(<liquid:alumite>); // Removing PlusTic's alloys wouldn't have effect
+mods.tconstruct.Alloy.addRecipe(<liquid:alumite> * 432, [<liquid:aluminum> * 720, <liquid:iron> * 288,  <liquid:obsidian> * 288]);
+mods.tconstruct.Alloy.addRecipe(<liquid:alumite> * 864, [<liquid:aluminum> * 1440, <liquid:iron> * 576,  <liquid:obsidian> * 576]);
+
+# Alumite alloying in other machines
+scripts.process.alloy([<ore:ingotFakeIron> * 2, <ore:ingotAluminium> * 5, <ore:obsidian> * 2 ], <plustic:alumiteingot>, "Only: AlloySmelter arcFurnance");
+scripts.process.alloy([<ore:blockFakeIron> * 2, <ore:blockAluminium> * 5, <ore:obsidian> * 18], <plustic:alumiteblock>, "Only: AdvRockArc");
 
 # Faster Osmiridium Alloying
 	// mods.tconstruct.Alloy.removeRecipe(<liquid:osmiridium>); // Removing PlusTic's alloys wouldn't have effect

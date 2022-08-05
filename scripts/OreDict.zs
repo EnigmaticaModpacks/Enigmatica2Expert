@@ -701,3 +701,9 @@ addItems(<ore:stoneMetamorphic>, [
 	<botania:biomestonea:6>,
 	<botania:biomestonea:7>,
 ]);
+
+addItems(<ore:singularityEntangled>, [
+	<appliedenergistics2:material:48>,
+]);
+
+add(<ore:machineTeleporter>, <mekanism:machineblock:11>);

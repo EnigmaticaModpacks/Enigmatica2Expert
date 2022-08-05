@@ -183,7 +183,7 @@ craft.remake(<mekanism:machineblock2:8>, ["pretty",
 	recipes.remove(<mekanism:machineblock3>);
 	recipes.addShaped("Quantum Entangloporter", <mekanism:machineblock3>, 
 	[[<mekanism:basicblock:7>, <ore:heartDragon>, <mekanism:basicblock:7>],
-	[<modularmachinery:blockcasing:5>, <mekanism:machineblock:11>|<mekanism:machineblock:11>.withTag({}), <modularmachinery:blockcasing:5>], 
+	[<modularmachinery:blockcasing:5>, <ore:machineTeleporter>, <modularmachinery:blockcasing:5>], 
 	[<mekanism:basicblock:7>, <rftools:matter_beamer>, <mekanism:basicblock:7>]]);
 
 # [Steel Casing]*2 from [Blast Brick][+3]

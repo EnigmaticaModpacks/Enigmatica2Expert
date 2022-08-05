@@ -564,6 +564,15 @@
     <item name="ballVividAlloy"/>
   </grindingball>
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+  <recipe name="Alumite Ingot">
+    <alloying energy="10000">
+      <input name="ingotFakeIron" amount="2"/>
+      <input name="obsidian" amount="2"/>
+      <input name="ingotAluminium" amount="5"/>
+      <output name="plustic:alumiteingot"/>
+    </alloying>
+  </recipe>
+  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Crystalline Alloy Ingot">
     <alloying energy="10000">
       <input name="enderio:item_material:36"/>

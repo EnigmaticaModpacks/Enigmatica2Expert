@@ -94,7 +94,7 @@ craft.remake(<bigreactors:reactorfuelrod>, ["pretty",
 # Anglesite - Highest tier of Tech mods crystals
 mods.extendedcrafting.CombinationCrafting.addRecipe(<bigreactors:oreanglesite>, 100000000, 1000000, 
 <additionalcompression:gravelend_compressed:2>, [
-	<appliedenergistics2:material:48>,
+	<ore:singularityEntangled>,
 	<biomesoplenty:terrestrial_artifact>,
 	<ore:clathrateGlowstone>,
 	<ore:clathrateRedstone>,

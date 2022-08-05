@@ -443,6 +443,16 @@ recipes.remove(<cyclicmagic:horse_upgrade_type>);
 scripts.category.expire_in_block.set(<ore:cropApple>,  {"cyclicmagic:fire_frost": <cyclicmagic:apple_lapis>});
 scripts.category.expire_in_block.set(<ore:cropCarrot>, {"cyclicmagic:fire_dark" : <cyclicmagic:horse_upgrade_type>});
 
+# [Corrupted Chorus Fruit] peaceful alt
+# [Corrupted Chorus Fruit]*16 from [Draconium Essence]*2[+1]
+craft.remake(<cyclicmagic:corrupted_chorus> * 16, ["pretty",
+  "  T  ",
+  "T i T",
+  "  T  "], {
+  "T": <mysticalagriculture:slime_essence>,     # Slime Essence
+  "i": <mysticalagriculture:draconium_essence>, # Draconium Essence
+});
+
 # [Dehydrator] from [Iron Rod][+2]
 craft.remake(<cyclicmagic:dehydrator>, ["pretty",
   "c   c",

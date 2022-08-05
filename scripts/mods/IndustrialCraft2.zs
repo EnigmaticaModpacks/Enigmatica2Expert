@@ -568,3 +568,6 @@ addSemifluidRecipe(<fluid:biodiesel>, 40000);
 addSemifluidRecipe(<fluid:biofuel>, 80000);
 addSemifluidRecipe(<fluid:biocrude>, 256000);
 addSemifluidRecipe(<fluid:refined_biofuel>, 512000);
+
+# Solid Fuel Firebox output Ashes
+recipes.addShapeless('firebox_ashes', <forestry:ash>, [<ic2:misc_resource>]);

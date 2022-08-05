@@ -133,3 +133,21 @@ for model, mob in dataModels {
     ]
   );
 }
+
+# Peaceful Alt
+# [Ender Dragon Data Model] from [Ender Dragon Data Model][+7]
+mods.thaumcraft.Infusion.registerRecipe(
+  "deepmoblearning:data_model_dragon", # Name
+  "INFUSION", # Research
+  <deepmoblearning:data_model_dragon>.withTag({tier: 1}), # Output
+  10, # Instability
+  [<aspect:draco> * 100, <aspect:caeles> * 100, <aspect:victus> * 100],
+  <deepmoblearning:data_model_dragon>, # Central Item
+  scripts.craft.grid.Grid(["pretty",
+  "E ▬ E",
+  "-   -",
+  "E ▬ E"], {
+  "E": <ore:dragonEgg>,   # Dragon Egg
+  "▬": <ore:ingotGlitch>, # Glitch Infused Ingot
+  "-": <ore:dragonsteelIngot>, # Ice Dragonsteel Ingot
+}).spiral(1));
