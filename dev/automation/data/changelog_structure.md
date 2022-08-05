@@ -90,6 +90,7 @@
   📖 Quest Book | Better Questing
   ⛏️ Mining
   📑 Tooltips
+  📜 Text
 
 x 🧱 Technical
   x 🚧 Develop

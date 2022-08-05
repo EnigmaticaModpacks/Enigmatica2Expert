@@ -1,9 +1,9 @@
 # TODO list
 
 - [ ] ✏️ More Alien Crystal blocks + mica to get Crystaltine and ET gems
-- [ ] ✏️ quantum entagloporter's recipe is broken
-- [ ] ✏️ alumite should be possible to craft in alloy smelter/electric arc furnace
-- [ ] ✏️ Ferric Sand add skyblock source
+- [ ] ✏️ Remove Cyclic's machines completely because they are laggy
+- [ ] ✏️ Add chaos shards recipe for Skyblock. Probably RFT Syringe in 5 steps => Struck Lightning
+- [ ] ✏️ Remove Dragon Forge crafts (because its unautomateable)
 - [ ] 📀 Add Meat to Meaty orb https://github.com/daedalus4096/ThaumicWonders/blob/251829dee76d72368d0ed0af1f2104121b781e63/src/main/java/com/verdantartifice/thaumicwonders/common/tiles/devices/TileMeatyOrb.java#L49-L53
 - [ ] 📀 Buff Golem Stats
 - [ ] 📀 Make Essentia Seeds grows only on planet (Stella?)
@@ -11,18 +11,7 @@
 - [ ] 📀 Fix NPE https://github.com/BluSunrize/ImmersiveEngineering/blob/master/src/main/java/blusunrize/immersiveengineering/common/EventHandler.java#L619
 - [ ] 📀 Fix BedrockOre cant go 1 height flat https://github.com/MightyPirates/BedrockOres/blob/master-MC1.12/src/main/java/li/cil/bedrockores/common/world/WorldGeneratorBedrockOre.java#L92
 - [ ] 📀 Adv. Rock tank left 64 buckets when broken
-- [ ] 🏪 Add Spheres with appropriate blocks as planet visualisation
-- [ ] 🔄 Do not use ModDirector for CF files
-- [ ] 🔄 Remove jei.cfg from repo
-- [ ] 🔄 Remove common blocks from JER planets if they appear in Overworld
-- [ ] 🔨 Set Gelid tools harvest level to `13`
-- [ ] 🟢 Install openglider
-- [ ] 🚧 Update screenshots on CF
-- [ ] 🚧 Add modpack automation:
-    1. `make_pack.js`
-    2. Create CF release
-      > https://support.curseforge.com/en/support/solutions/articles/9000197321-curseforge-upload-api
-      > https://github.com/EnigmaticaModpacks/ModpackUploader/blob/b32a50e6b19653ac1648916cd3c18e24db1026d0/modpack-uploader.ps1#L238-L246
+- [ ] 📀 Auto sieve require more RF/T (about millions)
 
 ---
 
@@ -30,6 +19,8 @@
 
 ## Long-Term
 
+- [ ] 🔄 Remove common blocks from JER planets if they appear in Overworld. For example, we dont need 20 pages of Iron Ore for each planet
+- [ ] 🚧 Update screenshots on CF
 - [ ] 🔴 Fix Integrated proxy bug with Bansoukou: https://github.com/shBLOCK/IntegratedProxy/issues/29
 - [ ] 🟢 Install https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap (incompatible with Mineral Tracker)
 - [ ] 🟢 Fix Thaum Tweaks makes TCon Infusion Enchs obsolete https://github.com/GrigLog/ThaumTweaks/issues/37

@@ -27,7 +27,6 @@ import Client from 'ssh2-sftp-client'
 import terminal_kit from 'terminal-kit'
 import yargs from 'yargs'
 
-import { curseMarkdown } from './lib/curseforge.js'
 import {
   end,
   execSyncInherit,
@@ -170,13 +169,12 @@ const style = {
       default: oldVersion || undefined,
     })
   )?.trim()
-  const nextVersion = inputVersion || oldVersion
+  const nextVersion = inputVersion || oldVersion || 'v???'
 
   if (await pressEnterOrEsc(`[${STEP++}] Generate Changelog? ENTER / ESC.`)) {
     execSyncInherit('node ./dev/changelog.js --next=' + nextVersion)
     await pressEnterOrEsc(`[${STEP++}] Manually fix LATEST.md and press ENTER.`)
     execSyncInherit('node ./dev/changelog.js --append')
-    curseMarkdown('changelogs/LATEST.md')
   }
 
   await pressEnterOrEsc(
@@ -288,14 +286,12 @@ const style = {
 
 ********************************************************/
 
-  const zipPath_base = `${distrDir}E2E-Extended_${nextVersion}`
+  const zipPath_base = join(distrDir, `E2E-Extended-${nextVersion}`)
   const zipPath_EN = `${zipPath_base}.zip`
-  const zipPath_server = `${zipPath_base}_server.zip`
-  const zipPath_RU = `${zipPath_base}_RU.zip`
+  const zipPath_server = `${zipPath_base}-server.zip`
 
   const isZipsExist =
-    !argv.dryRun &&
-    [zipPath_EN, zipPath_server, zipPath_RU].some((f) => existsSync(f))
+    !argv.dryRun && [zipPath_EN, zipPath_server].some((f) => existsSync(f))
 
   let rewriteOldZipFiles = false
   if (
@@ -305,9 +301,7 @@ const style = {
     rewriteOldZipFiles = true
     doTask(
       `🪓 Removing old zip files ... `,
-      () =>
-        delSync([zipPath_EN, zipPath_server, zipPath_RU], { force: true })
-          .length
+      () => delSync([zipPath_EN, zipPath_server], { force: true }).length
     )
   }
 

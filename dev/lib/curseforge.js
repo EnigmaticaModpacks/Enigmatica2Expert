@@ -10,11 +10,9 @@
 import { existsSync } from 'fs'
 import { fileURLToPath, URL } from 'url'
 
-import * as cheerio from 'cheerio'
 import CFV2 from 'curseforge-v2'
-import MarkdownIt from 'markdown-it'
 
-import { loadJson, loadText, saveObjAsJson, saveText } from './utils.js'
+import { loadJson, loadText, saveObjAsJson } from './utils.js'
 
 const { CFV2Client } = CFV2
 
@@ -22,7 +20,6 @@ function relative(relPath = './') {
   // @ts-ignore
   return fileURLToPath(new URL(relPath, import.meta.url))
 }
-const md = new MarkdownIt({ html: true })
 
 const cachePath = relative('~cf_cache.json')
 
@@ -111,67 +108,7 @@ async function loadFromCF(modIds) {
   return mods
 }
 
-/**
- * @param {string} mdFilePath Markdown-style file
- */
-export function curseMarkdown(mdFilePath) {
-  const htmlText = md.render(loadText(mdFilePath))
-  const htmlPath = 'changelogs/~LATEST.html'
-
-  const $ = cheerio.load(htmlText)
-
-  // $('img').not('img[width=50]').css('display', 'inline-block') /* .css('float', 'left') */
-
-  $('img')
-    .not('img[width=50]')
-    .each(function () {
-      // eslint-disable-next-line no-invalid-this
-      $(this).replaceWith(
-        `<strong><span style="font-family: terminal, monaco, monospace;">[${$(
-          // eslint-disable-next-line no-invalid-this
-          this
-        ).attr('title')}]</span></strong>`
-      )
-    })
-
-  $('img[width=50]').attr('width', '25')
-
-  $('h1').before('<br/>').after('<br/>')
-  $('h2').before('<br/><hr/>').after('<br/>')
-  // $('h3').before('<br/>').after('<br/>')
-  $('h3').wrap('<span style="text-decoration: underline;">').contents().unwrap()
-  // $('sub').contents().unwrap()
-  $('sup').remove()
-
-  $('body').prepend(
-    $('<p></p>').append(
-      $('<a></a>')
-        .attr(
-          'href',
-          'https://github.com/Krutoy242/Enigmatica2Expert-Extended/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3Abug'
-        )
-        .append('< Known bugs >')
-    )
-  )
-
-  $('body').prepend(
-    $('<p></p>').append(
-      $('<a></a>')
-        .attr(
-          'href',
-          'https://github.com/Krutoy242/Enigmatica2Expert-Extended/releases'
-        )
-        .append('< Full Changelog with better formatting on GitHub >')
-    )
-  )
-
-  saveText($.html(), htmlPath)
-  // execSync('npx prettier --write ' + htmlPath)
-}
-
 export async function init() {
-  curseMarkdown('changelogs/LATEST.md')
-
   // console.log(await fetchMods([32274, 59143, 59751]))
   // console.log((await cf.getMods({ modIds: [32274, 59143, 59751] })).data?.data)
 }
