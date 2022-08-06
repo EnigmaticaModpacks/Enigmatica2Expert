@@ -23,6 +23,7 @@ structures/inactive
 !manifest.json
 !.gitignore
 !local/ftbutilities/ranks.txt
+!.github/
 
 # Files created by client
 config/InvTweaks.cfg
