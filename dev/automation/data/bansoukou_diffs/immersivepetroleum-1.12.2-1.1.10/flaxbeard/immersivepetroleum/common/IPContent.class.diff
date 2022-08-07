@@ -1,0 +1,12 @@
+diff --git "a/~bansoukou_unpatched\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\common\\IPContent.java" "b/bansoukou\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\common\\IPContent.java"
+index 0318084f..c19a7894 100644
+--- "a/~bansoukou_unpatched\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\common\\IPContent.java"
++++ "b/bansoukou\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\common\\IPContent.java"
+@@ -200,7 +200,6 @@ public class IPContent {
+         MultiblockHandler.registerMultiblock((MultiblockHandler.IMultiblock)MultiblockDistillationTower.instance);
+         MultiblockHandler.registerMultiblock((MultiblockHandler.IMultiblock)MultiblockPumpjack.instance);
+         ForgeRegistries.RECIPES.register(new SchematicCraftingHandler().setRegistryName("immersivepetroleum", "projector"));
+-        Config.addConfigReservoirs(Config.IPConfig.Extraction.reservoirs);
+         Config.addFuel(Config.IPConfig.Generation.fuels);
+         Config.addBoatFuel(Config.IPConfig.Miscellaneous.boat_fuels);
+         Config.addDistillationRecipes(Config.IPConfig.Refining.towerRecipes, Config.IPConfig.Refining.towerByproduct);

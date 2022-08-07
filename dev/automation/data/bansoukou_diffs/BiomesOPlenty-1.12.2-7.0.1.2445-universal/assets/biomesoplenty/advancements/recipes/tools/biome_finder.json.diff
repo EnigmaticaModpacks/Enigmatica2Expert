@@ -1,0 +1,35 @@
+diff --git "a/~bansoukou_unpatched\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\recipes\\tools\\biome_finder.json" "b/bansoukou\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\recipes\\tools\\biome_finder.json"
+index f2a111d3..822e11f0 100644
+--- "a/~bansoukou_unpatched\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\recipes\\tools\\biome_finder.json"
++++ "b/bansoukou\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\recipes\\tools\\biome_finder.json"
+@@ -1,16 +1,5 @@
+ {
+-  "rewards": {
+-    "recipes": [
+-      "biomesoplenty:biome_finder"
+-    ]
+-  },
+   "criteria": {
+-    "has_the_recipe": {
+-      "trigger": "minecraft:recipe_unlocked",
+-      "conditions": {
+-        "recipe": "biomesoplenty:biome_finder"
+-      }
+-    },
+     "has_artifact": {
+       "trigger": "minecraft:inventory_changed",
+       "conditions": {
+@@ -21,11 +10,5 @@
+         ]
+       }
+     }
+-  },
+-  "requirements": [
+-    [
+-      "has_the_recipe",
+-      "has_artifact"
+-    ]
+-  ]
++  }
+ }
+\ No newline at end of file

@@ -1,0 +1,13 @@
+diff --git "a/~bansoukou_unpatched\\oeintegration-2.3.4\\atm\\bloodworkxgaming\\oeintegration\\Integrations\\ExcavateModifier.java" "b/bansoukou\\oeintegration-2.3.4\\atm\\bloodworkxgaming\\oeintegration\\Integrations\\ExcavateModifier.java"
+index f65230ee..ef1047c9 100644
+--- "a/~bansoukou_unpatched\\oeintegration-2.3.4\\atm\\bloodworkxgaming\\oeintegration\\Integrations\\ExcavateModifier.java"
++++ "b/bansoukou\\oeintegration-2.3.4\\atm\\bloodworkxgaming\\oeintegration\\Integrations\\ExcavateModifier.java"
+@@ -33,7 +33,7 @@ public class ExcavateModifier
+ extends ToolModifier {
+     public ExcavateModifier() {
+         super("oreexcavate", 0xCC6600);
+-        this.addAspects(new ModifierAspect[]{ModifierAspect.toolOnly, new ModifierAspect.MultiAspect((IModifier)this, 1, MainConfig.maxTinkersModifersCount, 1)});
++        this.addAspects(new ModifierAspect[]{ModifierAspect.toolOnly, new ModifierAspect.MultiAspect((IModifier)this, MainConfig.maxTinkersModifersCount, 1, 1)});
+         this.addItem((Item)ModItems.itemExcavateModifier, 1, 1);
+     }
+ 

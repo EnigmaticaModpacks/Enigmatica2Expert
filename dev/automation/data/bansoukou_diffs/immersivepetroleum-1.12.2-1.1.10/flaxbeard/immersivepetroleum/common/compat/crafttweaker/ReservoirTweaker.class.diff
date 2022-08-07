@@ -1,0 +1,52 @@
+diff --git "a/~bansoukou_unpatched\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\common\\compat\\crafttweaker\\ReservoirTweaker.java" "b/bansoukou\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\common\\compat\\crafttweaker\\ReservoirTweaker.java"
+index 61ba6112..34eb8548 100644
+--- "a/~bansoukou_unpatched\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\common\\compat\\crafttweaker\\ReservoirTweaker.java"
++++ "b/bansoukou\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\common\\compat\\crafttweaker\\ReservoirTweaker.java"
+@@ -24,7 +24,7 @@ import stanhebben.zenscript.annotations.ZenMethod;
+ @ZenRegister
+ public class ReservoirTweaker {
+     @ZenMethod
+-    public static void registerReservoir(String name, ILiquidStack fluid, int minSize, int maxSize, int replenishRate, int weight, int[] dimBlacklist, int[] dimWhitelist, String[] biomeBlacklist, String[] biomeWhitelist) {
++    public static void registerReservoir(String name, ILiquidStack fluid, int minSize, int maxSize, int replenishRate, int pumpSpeed, int weight, int powerTier, int[] dimBlacklist, int[] dimWhitelist, String[] biomeBlacklist, String[] biomeWhitelist) {
+         String string;
+         int x;
+         ArrayList biomeBlacklistList = Lists.newArrayList();
+@@ -35,11 +35,17 @@ public class ReservoirTweaker {
+             CraftTweakerAPI.logError((String)"Reservoir minSize has to be at least 1mb!");
+         } else if (maxSize < minSize) {
+             CraftTweakerAPI.logError((String)"Reservoir maxSize can not be smaller than minSize!");
+-        } else if (weight <= 1) {
++        } else if (weight < 1) {
+             CraftTweakerAPI.logError((String)"Reservoir weight has to be greater than or equal to 1!");
++        } else if (pumpSpeed <= 0) {
++            CraftTweakerAPI.logError((String)"Reservoir Pump Speed has to be at least 1mb/t");
++        } else if (pumpSpeed < replenishRate) {
++            CraftTweakerAPI.logError((String)"Reservoir Pump Speed can not be smaller than Replenish Rate!");
++        } else if (powerTier < 0) {
++            CraftTweakerAPI.logError((String)"Reservoir powerTier can not be smaller than 0!");
+         }
+         String rFluid = fluid.getName();
+-        PumpjackHandler.ReservoirType res = PumpjackHandler.addReservoir(name, rFluid, minSize, maxSize, replenishRate, weight);
++        PumpjackHandler.ReservoirType res = PumpjackHandler.addReservoir(name, rFluid, minSize, maxSize, replenishRate, pumpSpeed, weight, powerTier);
+         for (x = 0; x < biomeBlacklist.length; ++x) {
+             string = biomeBlacklist[x];
+             if (string == null || string.isEmpty()) {
+@@ -62,4 +68,18 @@ public class ReservoirTweaker {
+         res.biomeWhitelist = biomeWhitelistList.toArray(new String[0]);
+         CraftTweakerAPI.logInfo((String)("Added Reservoir Type: " + name));
+     }
++
++    @ZenMethod
++    public static void registerPowerUsage(int tier, int capacity, int rft) {
++        if (tier < 0) {
++            CraftTweakerAPI.logError((String)"PowerUsage tier can not be smaller than 0!");
++        } else if (capacity < 1) {
++            CraftTweakerAPI.logError((String)"PowerUsage capacity can not be smaller than 1!");
++        } else if (capacity == Integer.MAX_VALUE) {
++            CraftTweakerAPI.logError((String)"PowerUsage capacity should not be MAX_INT!");
++        } else if (capacity < rft) {
++            CraftTweakerAPI.logError((String)"PowerUsage capacity can not be smaller than rft!");
++        }
++        PumpjackHandler.registerPowerUsage(tier, capacity, rft);
++    }
+ }

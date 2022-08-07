@@ -1,0 +1,35 @@
+diff --git "a/~bansoukou_unpatched\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\recipes\\buildingBlocks\\mangrove_planks.json" "b/bansoukou\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\recipes\\buildingBlocks\\mangrove_planks.json"
+index 377de781..8af16ce0 100644
+--- "a/~bansoukou_unpatched\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\recipes\\buildingBlocks\\mangrove_planks.json"
++++ "b/bansoukou\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\recipes\\buildingBlocks\\mangrove_planks.json"
+@@ -1,9 +1,4 @@
+ {
+-  "rewards": {
+-    "recipes": [
+-      "biomesoplenty:mangrove_planks"
+-    ]
+-  },
+   "criteria": {
+     "has_log": {
+       "trigger": "minecraft:inventory_changed",
+@@ -15,18 +10,6 @@
+           }
+         ]
+       }
+-    },
+-    "has_the_recipe": {
+-      "trigger": "minecraft:recipe_unlocked",
+-      "conditions": {
+-        "recipe": "biomesoplenty:mangrove_planks"
+-      }
+     }
+-  },
+-  "requirements": [
+-    [
+-      "has_log",
+-      "has_the_recipe"
+-    ]
+-  ]
++  }
+ }
+\ No newline at end of file

@@ -1,0 +1,24 @@
+diff --git "a/~bansoukou_unpatched\\thaumtweaks-0.3.5.2\\griglog\\thaumtweaks\\mixins\\events\\ToolEventsMixin.java" "b/bansoukou\\thaumtweaks-0.3.5.2\\griglog\\thaumtweaks\\mixins\\events\\ToolEventsMixin.java"
+index c237339f..6780cede 100644
+--- "a/~bansoukou_unpatched\\thaumtweaks-0.3.5.2\\griglog\\thaumtweaks\\mixins\\events\\ToolEventsMixin.java"
++++ "b/bansoukou\\thaumtweaks-0.3.5.2\\griglog\\thaumtweaks\\mixins\\events\\ToolEventsMixin.java"
+@@ -175,13 +175,17 @@ public class ToolEventsMixin {
+     }
+ 
+     private static void doRefining(BlockEvent.HarvestDropsEvent event, ItemStack heldItem) {
+-        int fortune = 1 + EnumInfusionEnchantment.getInfusionEnchantmentLevel((ItemStack)heldItem, (EnumInfusionEnchantment)EnumInfusionEnchantment.REFINING);
+-        float chance = (float)fortune * 0.125f;
++        int fortune = EnumInfusionEnchantment.getInfusionEnchantmentLevel((ItemStack)heldItem, (EnumInfusionEnchantment)EnumInfusionEnchantment.REFINING);
++        float chance = (float)fortune * 0.5f;
+         boolean b = false;
+         for (int i = 0; i < event.getDrops().size(); ++i) {
+             ItemStack cluster;
+             ItemStack is = (ItemStack)event.getDrops().get(i);
+             if (is.func_77969_a(cluster = Utils.findSpecialMiningResult((ItemStack)is, (float)chance, (Random)event.getWorld().field_73012_v))) continue;
++            if (fortune >= 3 && event.getWorld().field_73012_v.nextFloat() > 1.0f / (float)(fortune - 1)) {
++                int older = cluster.func_190916_E();
++                cluster.func_190920_e(older * 2);
++            }
+             event.getDrops().set(i, cluster);
+             b = true;
+         }

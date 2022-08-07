@@ -1,0 +1,54 @@
+diff --git "a/~bansoukou_unpatched\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\tiles\\devices\\TileLampFertility.java" "b/bansoukou\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\tiles\\devices\\TileLampFertility.java"
+index 6b982c89..fd9bdfcd 100644
+--- "a/~bansoukou_unpatched\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\tiles\\devices\\TileLampFertility.java"
++++ "b/bansoukou\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\tiles\\devices\\TileLampFertility.java"
+@@ -3,7 +3,6 @@
+  * 
+  * Could not load the following classes:
+  *  net.minecraft.block.properties.IProperty
+- *  net.minecraft.entity.EntityLivingBase
+  *  net.minecraft.entity.passive.EntityAnimal
+  *  net.minecraft.nbt.NBTTagCompound
+  *  net.minecraft.network.NetworkManager
+@@ -28,7 +27,6 @@ import java.util.ArrayList;
+ import java.util.Iterator;
+ import java.util.List;
+ import net.minecraft.block.properties.IProperty;
+-import net.minecraft.entity.EntityLivingBase;
+ import net.minecraft.entity.passive.EntityAnimal;
+ import net.minecraft.nbt.NBTTagCompound;
+ import net.minecraft.network.NetworkManager;
+@@ -89,25 +87,26 @@ ITickable {
+         List var5 = this.field_145850_b.func_72872_a(EntityAnimal.class, new AxisAlignedBB((double)this.field_174879_c.func_177958_n(), (double)this.field_174879_c.func_177956_o(), (double)this.field_174879_c.func_177952_p(), (double)(this.field_174879_c.func_177958_n() + 1), (double)(this.field_174879_c.func_177956_o() + 1), (double)(this.field_174879_c.func_177952_p() + 1)).func_72314_b((double)distance, (double)distance, (double)distance));
+         Iterator var2 = var5.iterator();
+         block0: while (var2.hasNext()) {
++            Object var72;
+             EntityAnimal var3;
+             EntityAnimal var4 = var3 = (EntityAnimal)var2.next();
+             if (var3.func_70874_b() != 0 || var3.func_70880_s()) continue;
+             ArrayList<EntityAnimal> sa = new ArrayList<EntityAnimal>();
+-            for (EntityLivingBase var7 : var5) {
+-                if (!var7.getClass().equals(var4.getClass())) continue;
+-                sa.add((EntityAnimal)var7);
++            for (Object var72 : var5) {
++                if (!var72.getClass().equals(var4.getClass())) continue;
++                sa.add((EntityAnimal)var72);
+             }
+             if (sa != null && sa.size() > 9) continue;
+-            Iterator var22 = sa.iterator();
++            var72 = sa.iterator();
+             EntityAnimal partner = null;
+-            while (var22.hasNext()) {
+-                EntityAnimal var33 = (EntityAnimal)var22.next();
++            while (var72.hasNext()) {
++                EntityAnimal var33 = (EntityAnimal)var72.next();
+                 if (var33.func_70874_b() != 0 || var33.func_70880_s()) continue;
+                 if (partner == null) {
+                     partner = var33;
+                     continue;
+                 }
+-                this.charges -= 5;
++                --this.charges;
+                 var33.func_146082_f(null);
+                 partner.func_146082_f(null);
+                 break block0;

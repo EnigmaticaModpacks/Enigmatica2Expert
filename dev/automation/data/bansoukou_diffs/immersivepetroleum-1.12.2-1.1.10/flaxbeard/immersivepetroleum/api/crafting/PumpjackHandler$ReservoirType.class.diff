@@ -1,0 +1,48 @@
+diff --git "a/~bansoukou_unpatched\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\api\\crafting\\PumpjackHandler$ReservoirType.java" "b/bansoukou\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\api\\crafting\\PumpjackHandler$ReservoirType.java"
+index 63723611..e95fcc9d 100644
+--- "a/~bansoukou_unpatched\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\api\\crafting\\PumpjackHandler$ReservoirType.java"
++++ "b/bansoukou\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\api\\crafting\\PumpjackHandler$ReservoirType.java"
+@@ -30,18 +30,22 @@ public static class PumpjackHandler.ReservoirType {
+     public int minSize;
+     public int maxSize;
+     public int replenishRate;
++    public int pumpSpeed;
++    public int powerTier;
+     public int[] dimensionWhitelist = new int[0];
+     public int[] dimensionBlacklist = new int[0];
+     public String[] biomeWhitelist = new String[0];
+     public String[] biomeBlacklist = new String[0];
+     private Fluid f;
+ 
+-    public PumpjackHandler.ReservoirType(String name, String fluid, int minSize, int maxSize, int replenishRate) {
++    public PumpjackHandler.ReservoirType(String name, String fluid, int minSize, int maxSize, int replenishRate, int pumpSpeed, int powerTier) {
+         this.name = name;
+         this.fluid = fluid;
+         this.minSize = minSize;
+         this.maxSize = maxSize;
+         this.replenishRate = replenishRate;
++        this.pumpSpeed = pumpSpeed;
++        this.powerTier = powerTier;
+     }
+ 
+     public Fluid getFluid() {
+@@ -104,6 +108,8 @@ public static class PumpjackHandler.ReservoirType {
+         tag.func_74768_a("minSize", this.minSize);
+         tag.func_74768_a("maxSize", this.maxSize);
+         tag.func_74768_a("replenishRate", this.replenishRate);
++        tag.func_74768_a("pumpSpeed", this.pumpSpeed);
++        tag.func_74768_a("powerTier", this.powerTier);
+         tag.func_74783_a("dimensionWhitelist", this.dimensionWhitelist);
+         tag.func_74783_a("dimensionBlacklist", this.dimensionBlacklist);
+         NBTTagList wl = new NBTTagList();
+@@ -125,7 +131,9 @@ public static class PumpjackHandler.ReservoirType {
+         int minSize = tag.func_74762_e("minSize");
+         int maxSize = tag.func_74762_e("maxSize");
+         int replenishRate = tag.func_74762_e("replenishRate");
+-        PumpjackHandler.ReservoirType res = new PumpjackHandler.ReservoirType(name, fluid, minSize, maxSize, replenishRate);
++        int pumpSpeed = tag.func_74762_e("pumpSpeed");
++        int powerTier = tag.func_74762_e("powerTier");
++        PumpjackHandler.ReservoirType res = new PumpjackHandler.ReservoirType(name, fluid, minSize, maxSize, replenishRate, pumpSpeed, powerTier);
+         res.dimensionWhitelist = tag.func_74759_k("dimensionWhitelist");
+         res.dimensionBlacklist = tag.func_74759_k("dimensionBlacklist");
+         NBTTagList wl = (NBTTagList)tag.func_74781_a("biomeWhitelist");

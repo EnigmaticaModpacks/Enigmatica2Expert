@@ -1,0 +1,17 @@
+diff --git "a/~bansoukou_unpatched\\IntegratedDynamics-1.12.2-1.1.11\\assets\\integrateddynamics\\advancements\\meneglin_basics\\meneglin_discovery.json" "b/bansoukou\\IntegratedDynamics-1.12.2-1.1.11\\assets\\integrateddynamics\\advancements\\meneglin_basics\\meneglin_discovery.json"
+index 8e3fa713..4bfe9056 100644
+--- "a/~bansoukou_unpatched\\IntegratedDynamics-1.12.2-1.1.11\\assets\\integrateddynamics\\advancements\\meneglin_basics\\meneglin_discovery.json"
++++ "b/bansoukou\\IntegratedDynamics-1.12.2-1.1.11\\assets\\integrateddynamics\\advancements\\meneglin_basics\\meneglin_discovery.json"
+@@ -11,12 +11,6 @@
+     }
+   },
+   "parent": "integrateddynamics:root",
+-  "rewards": {
+-    "recipes": [
+-      "integrateddynamics:squeezer",
+-      "integrateddynamics:drying_basin"
+-    ]
+-  },
+   "criteria": {
+     "criteria_0": {
+       "trigger": "minecraft:inventory_changed",

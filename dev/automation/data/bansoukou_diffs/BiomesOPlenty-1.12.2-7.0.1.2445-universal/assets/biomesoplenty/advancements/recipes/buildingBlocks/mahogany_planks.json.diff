@@ -1,0 +1,35 @@
+diff --git "a/~bansoukou_unpatched\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\recipes\\buildingBlocks\\mahogany_planks.json" "b/bansoukou\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\recipes\\buildingBlocks\\mahogany_planks.json"
+index cded844d..d9526624 100644
+--- "a/~bansoukou_unpatched\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\recipes\\buildingBlocks\\mahogany_planks.json"
++++ "b/bansoukou\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\recipes\\buildingBlocks\\mahogany_planks.json"
+@@ -1,9 +1,4 @@
+ {
+-  "rewards": {
+-    "recipes": [
+-      "biomesoplenty:mahogany_planks"
+-    ]
+-  },
+   "criteria": {
+     "has_log": {
+       "trigger": "minecraft:inventory_changed",
+@@ -15,18 +10,6 @@
+           }
+         ]
+       }
+-    },
+-    "has_the_recipe": {
+-      "trigger": "minecraft:recipe_unlocked",
+-      "conditions": {
+-        "recipe": "biomesoplenty:mahogany_planks"
+-      }
+     }
+-  },
+-  "requirements": [
+-    [
+-      "has_log",
+-      "has_the_recipe"
+-    ]
+-  ]
++  }
+ }
+\ No newline at end of file

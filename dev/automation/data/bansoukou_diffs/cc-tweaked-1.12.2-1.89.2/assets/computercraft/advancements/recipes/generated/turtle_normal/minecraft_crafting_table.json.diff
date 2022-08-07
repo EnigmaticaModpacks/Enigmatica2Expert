@@ -1,0 +1,27 @@
+diff --git "a/~bansoukou_unpatched\\cc-tweaked-1.12.2-1.89.2\\assets\\computercraft\\advancements\\recipes\\generated\\turtle_normal\\minecraft_crafting_table.json" "b/bansoukou\\cc-tweaked-1.12.2-1.89.2\\assets\\computercraft\\advancements\\recipes\\generated\\turtle_normal\\minecraft_crafting_table.json"
+index 97ba685d..bb4e9b41 100644
+--- "a/~bansoukou_unpatched\\cc-tweaked-1.12.2-1.89.2\\assets\\computercraft\\advancements\\recipes\\generated\\turtle_normal\\minecraft_crafting_table.json"
++++ "b/bansoukou\\cc-tweaked-1.12.2-1.89.2\\assets\\computercraft\\advancements\\recipes\\generated\\turtle_normal\\minecraft_crafting_table.json"
+@@ -1 +1,19 @@
+-{"parent":"minecraft:recipes/root","rewards":{"recipes":["computercraft:generated/turtle_normal/minecraft_crafting_table"]},"criteria":{"has_items":{"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"computercraft:turtle_expanded","data":0},{"item":"minecraft:crafting_table"}]}},"has_the_recipe":{"trigger":"minecraft:recipe_unlocked","conditions":{"recipe":"computercraft:generated/turtle_normal/minecraft_crafting_table"}}},"requirements":[["has_items","has_the_recipe"]]}
+\ No newline at end of file
++{
++  "parent": "minecraft:recipes/root",
++  "criteria": {
++    "has_items": {
++      "trigger": "minecraft:inventory_changed",
++      "conditions": {
++        "items": [
++          {
++            "item": "computercraft:turtle_expanded",
++            "data": 0
++          },
++          {
++            "item": "minecraft:crafting_table"
++          }
++        ]
++      }
++    }
++  }
++}
+\ No newline at end of file

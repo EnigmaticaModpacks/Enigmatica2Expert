@@ -1,0 +1,28 @@
+diff --git "a/~bansoukou_unpatched\\cc-tweaked-1.12.2-1.89.2\\assets\\computercraft\\advancements\\recipes\\generated\\turtle_normal\\computercraft_wireless_modem.json" "b/bansoukou\\cc-tweaked-1.12.2-1.89.2\\assets\\computercraft\\advancements\\recipes\\generated\\turtle_normal\\computercraft_wireless_modem.json"
+index 98c07d93..9865a1fe 100644
+--- "a/~bansoukou_unpatched\\cc-tweaked-1.12.2-1.89.2\\assets\\computercraft\\advancements\\recipes\\generated\\turtle_normal\\computercraft_wireless_modem.json"
++++ "b/bansoukou\\cc-tweaked-1.12.2-1.89.2\\assets\\computercraft\\advancements\\recipes\\generated\\turtle_normal\\computercraft_wireless_modem.json"
+@@ -1 +1,20 @@
+-{"parent":"minecraft:recipes/root","rewards":{"recipes":["computercraft:generated/turtle_normal/computercraft_wireless_modem"]},"criteria":{"has_items":{"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"computercraft:turtle_expanded","data":0},{"item":"computercraft:peripheral","data":1}]}},"has_the_recipe":{"trigger":"minecraft:recipe_unlocked","conditions":{"recipe":"computercraft:generated/turtle_normal/computercraft_wireless_modem"}}},"requirements":[["has_items","has_the_recipe"]]}
+\ No newline at end of file
++{
++  "parent": "minecraft:recipes/root",
++  "criteria": {
++    "has_items": {
++      "trigger": "minecraft:inventory_changed",
++      "conditions": {
++        "items": [
++          {
++            "item": "computercraft:turtle_expanded",
++            "data": 0
++          },
++          {
++            "item": "computercraft:peripheral",
++            "data": 1
++          }
++        ]
++      }
++    }
++  }
++}
+\ No newline at end of file

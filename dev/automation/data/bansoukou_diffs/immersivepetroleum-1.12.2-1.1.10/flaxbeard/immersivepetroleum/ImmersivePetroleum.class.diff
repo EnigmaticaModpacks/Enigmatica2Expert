@@ -1,0 +1,21 @@
+diff --git "a/~bansoukou_unpatched\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\ImmersivePetroleum.java" "b/bansoukou\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\ImmersivePetroleum.java"
+index a84d2626..3cc7ae53 100644
+--- "a/~bansoukou_unpatched\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\ImmersivePetroleum.java"
++++ "b/bansoukou\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\ImmersivePetroleum.java"
+@@ -84,7 +84,6 @@ public class ImmersivePetroleum {
+         PumpjackHandler.oilChance = Config.IPConfig.Extraction.reservoir_chance;
+         Config.manual_int.put("distillationTower_operationCost", (int)(2048.0f * Config.IPConfig.Refining.distillationTower_energyModifier));
+         Config.manual_int.put("pumpjack_consumption", Config.IPConfig.Extraction.pumpjack_consumption);
+-        Config.manual_int.put("pumpjack_speed", Config.IPConfig.Extraction.pumpjack_speed);
+         int oil_min = 1000000;
+         int oil_max = 5000000;
+         for (PumpjackHandler.ReservoirType type : PumpjackHandler.reservoirList.keySet()) {
+@@ -93,7 +92,7 @@ public class ImmersivePetroleum {
+             oil_max = type.maxSize;
+             break;
+         }
+-        Config.manual_int.put("pumpjack_days", ((oil_max + oil_min) / 2 + oil_min) / (Config.IPConfig.Extraction.pumpjack_speed * 24000));
++        Config.manual_int.put("pumpjack_days", ((oil_max + oil_min) / 2 + oil_min) / 600000);
+         Config.manual_double.put("autoLubricant_speedup", 1.25);
+         IPContent.init();
+         HashMap map = FuelHandler.getFuelFluxesPerTick();

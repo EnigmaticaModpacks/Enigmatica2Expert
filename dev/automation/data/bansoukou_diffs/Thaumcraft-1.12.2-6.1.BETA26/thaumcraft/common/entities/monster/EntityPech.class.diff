@@ -1,0 +1,13 @@
+diff --git "a/~bansoukou_unpatched\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\entities\\monster\\EntityPech.java" "b/bansoukou\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\entities\\monster\\EntityPech.java"
+index a8c21c38..07ae2241 100644
+--- "a/~bansoukou_unpatched\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\entities\\monster\\EntityPech.java"
++++ "b/bansoukou\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\entities\\monster\\EntityPech.java"
+@@ -740,7 +740,7 @@ implements IRangedAttackMob {
+         int n = value = valuedItems.containsKey(Item.func_150891_b((Item)item.func_77973_b())) ? valuedItems.get(Item.func_150891_b((Item)item.func_77973_b())) : 0;
+         if (value == 0) {
+             AspectList al = ThaumcraftCraftingManager.getObjectTags((ItemStack)item);
+-            value = Math.min(32, al.getAmount(Aspect.DESIRE) / 2);
++            value = Math.min(256, al.getAmount(Aspect.DESIRE)) / 4;
+         }
+         return value;
+     }

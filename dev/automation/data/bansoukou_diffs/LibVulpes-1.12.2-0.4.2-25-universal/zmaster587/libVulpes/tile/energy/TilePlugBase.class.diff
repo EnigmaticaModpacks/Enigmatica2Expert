@@ -1,0 +1,22 @@
+diff --git "a/~bansoukou_unpatched\\LibVulpes-1.12.2-0.4.2-25-universal\\zmaster587\\libVulpes\\tile\\energy\\TilePlugBase.java" "b/bansoukou\\LibVulpes-1.12.2-0.4.2-25-universal\\zmaster587\\libVulpes\\tile\\energy\\TilePlugBase.java"
+index c07ce727..7189a5c3 100644
+--- "a/~bansoukou_unpatched\\LibVulpes-1.12.2-0.4.2-25-universal\\zmaster587\\libVulpes\\tile\\energy\\TilePlugBase.java"
++++ "b/bansoukou\\LibVulpes-1.12.2-0.4.2-25-universal\\zmaster587\\libVulpes\\tile\\energy\\TilePlugBase.java"
+@@ -71,7 +71,7 @@ IComparatorOverride {
+     }
+ 
+     protected int getMaxEnergy(int teir) {
+-        return (int)Math.pow(10.0, teir) * 10000;
++        return (int)Math.pow(10.0, Math.min(teir, 2)) * 20000000;
+     }
+ 
+     public void setMaxEnergyStored(int max) {
+@@ -100,7 +100,7 @@ IComparatorOverride {
+     }
+ 
+     protected int getMaxDrainRate(int teir) {
+-        return 250 * (int)Math.pow(2.0, teir);
++        return 25000 * (int)Math.pow(2.0, teir);
+     }
+ 
+     public NBTTagCompound func_189515_b(NBTTagCompound nbt) {

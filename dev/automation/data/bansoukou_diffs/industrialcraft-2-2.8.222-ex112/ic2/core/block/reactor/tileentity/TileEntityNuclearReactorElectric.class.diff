@@ -1,0 +1,13 @@
+diff --git "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\block\\reactor\\tileentity\\TileEntityNuclearReactorElectric.java" "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\block\\reactor\\tileentity\\TileEntityNuclearReactorElectric.java"
+index 456cf887..4a21c691 100644
+--- "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\block\\reactor\\tileentity\\TileEntityNuclearReactorElectric.java"
++++ "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\block\\reactor\\tileentity\\TileEntityNuclearReactorElectric.java"
+@@ -279,7 +279,7 @@ IGuiValueProvider {
+     }
+ 
+     public int getSourceTier() {
+-        return 5;
++        return 6;
+     }
+ 
+     public double getReactorEUEnergyOutput() {

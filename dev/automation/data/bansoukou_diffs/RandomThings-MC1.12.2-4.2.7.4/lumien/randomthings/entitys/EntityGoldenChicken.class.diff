@@ -1,0 +1,29 @@
+diff --git "a/~bansoukou_unpatched\\RandomThings-MC1.12.2-4.2.7.4\\lumien\\randomthings\\entitys\\EntityGoldenChicken.java" "b/bansoukou\\RandomThings-MC1.12.2-4.2.7.4\\lumien\\randomthings\\entitys\\EntityGoldenChicken.java"
+index e21dbc71..95184b68 100644
+--- "a/~bansoukou_unpatched\\RandomThings-MC1.12.2-4.2.7.4\\lumien\\randomthings\\entitys\\EntityGoldenChicken.java"
++++ "b/bansoukou\\RandomThings-MC1.12.2-4.2.7.4\\lumien\\randomthings\\entitys\\EntityGoldenChicken.java"
+@@ -130,12 +130,12 @@ extends EntityAnimal {
+             this.field_70181_x *= 0.6;
+         }
+         this.wingRotation += this.wingRotDelta * 2.0f;
+-        if (!this.field_70170_p.field_72995_K && this.ingotDropTimer > 0 && --this.ingotDropTimer <= 0) {
++        if (!this.field_70170_p.field_72995_K && this.ingotDropTimer > 0 && --this.ingotDropTimer <= 7) {
+             this.func_184185_a(SoundEvents.field_187665_Y, 1.0f, (this.field_70146_Z.nextFloat() - this.field_70146_Z.nextFloat()) * 0.2f + 1.5f);
+-            this.func_145779_a(Items.field_151043_k, 3);
++            this.func_145779_a(Items.field_151043_k, 1);
+         }
+         if (this.ingotDropTimer == 0 && (items = this.field_70170_p.func_72872_a(EntityItem.class, this.func_174813_aQ().func_186662_g(0.5))).size() > 0) {
+-            int goldOreID = OreDictionary.getOreID((String)"oreGold");
++            int goldOreID = OreDictionary.getOreID((String)"clusterGold");
+             for (EntityItem ei : items) {
+                 ItemStack stack = ei.func_92059_d();
+                 if (stack.func_190926_b()) continue;
+@@ -149,7 +149,7 @@ extends EntityAnimal {
+                     break;
+                 }
+                 if (!found) continue;
+-                this.ingotDropTimer = 600 + this.field_70146_Z.nextInt(600);
++                this.ingotDropTimer = 100 + this.field_70146_Z.nextInt(100);
+                 break;
+             }
+         }

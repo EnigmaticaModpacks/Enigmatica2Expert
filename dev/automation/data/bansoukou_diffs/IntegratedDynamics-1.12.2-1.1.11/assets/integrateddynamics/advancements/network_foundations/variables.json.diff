@@ -1,0 +1,20 @@
+diff --git "a/~bansoukou_unpatched\\IntegratedDynamics-1.12.2-1.1.11\\assets\\integrateddynamics\\advancements\\network_foundations\\variables.json" "b/bansoukou\\IntegratedDynamics-1.12.2-1.1.11\\assets\\integrateddynamics\\advancements\\network_foundations\\variables.json"
+index 2f31c9ab..b2e0bd8a 100644
+--- "a/~bansoukou_unpatched\\IntegratedDynamics-1.12.2-1.1.11\\assets\\integrateddynamics\\advancements\\network_foundations\\variables.json"
++++ "b/bansoukou\\IntegratedDynamics-1.12.2-1.1.11\\assets\\integrateddynamics\\advancements\\network_foundations\\variables.json"
+@@ -11,15 +11,6 @@
+     }
+   },
+   "parent": "integrateddynamics:meneglin_basics/menril_production",
+-  "rewards": {
+-    "recipes": [
+-      "integrateddynamics:variable_transformer",
+-      "integrateddynamics:variable_transformer_11",
+-      "integrateddynamics:logic_programmer",
+-      "integrateddynamics:portable_logic_programmer",
+-      "integrateddynamics:variablestore"
+-    ]
+-  },
+   "criteria": {
+     "criteria_0": {
+       "trigger": "cyclopscore:item_crafted",

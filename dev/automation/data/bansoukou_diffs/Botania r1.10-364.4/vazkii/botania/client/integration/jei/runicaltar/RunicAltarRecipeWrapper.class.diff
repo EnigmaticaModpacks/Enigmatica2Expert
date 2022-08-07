@@ -1,0 +1,19 @@
+diff --git "a/~bansoukou_unpatched\\Botania r1.10-364.4\\vazkii\\botania\\client\\integration\\jei\\runicaltar\\RunicAltarRecipeWrapper.java" "b/bansoukou\\Botania r1.10-364.4\\vazkii\\botania\\client\\integration\\jei\\runicaltar\\RunicAltarRecipeWrapper.java"
+index 34ba1d99..f2ec067c 100644
+--- "a/~bansoukou_unpatched\\Botania r1.10-364.4\\vazkii\\botania\\client\\integration\\jei\\runicaltar\\RunicAltarRecipeWrapper.java"	
++++ "b/bansoukou\\Botania r1.10-364.4\\vazkii\\botania\\client\\integration\\jei\\runicaltar\\RunicAltarRecipeWrapper.java"	
+@@ -55,6 +55,14 @@ implements IRecipeWrapper {
+         ingredients.setOutput(VanillaTypes.ITEM, (Object)this.output);
+     }
+ 
++    @Nonnull
++    public List<String> getTooltipStrings(int mouseX, int mouseY) {
++        if (mouseX > 6 && mouseX < 111 && mouseY > 98 && mouseY < 102) {
++            return ImmutableList.of((Object)new StringBuffer().append(this.manaUsage).append(" mana").toString());
++        }
++        return ImmutableList.of();
++    }
++
+     public void drawInfo(@Nonnull Minecraft minecraft, int recipeWidth, int recipeHeight, int mouseX, int mouseY) {
+         GlStateManager.func_179141_d();
+         HUDHandler.renderManaBar((int)6, (int)98, (int)255, (float)0.75f, (int)this.manaUsage, (int)100000);

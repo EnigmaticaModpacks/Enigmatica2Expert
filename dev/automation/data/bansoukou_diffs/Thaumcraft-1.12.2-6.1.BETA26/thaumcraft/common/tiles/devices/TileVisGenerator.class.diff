@@ -1,0 +1,42 @@
+diff --git "a/~bansoukou_unpatched\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\tiles\\devices\\TileVisGenerator.java" "b/bansoukou\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\tiles\\devices\\TileVisGenerator.java"
+index 6c71eaa0..91111fdf 100644
+--- "a/~bansoukou_unpatched\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\tiles\\devices\\TileVisGenerator.java"
++++ "b/bansoukou\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\tiles\\devices\\TileVisGenerator.java"
+@@ -43,8 +43,8 @@ extends TileThaumcraft
+ implements ITickable,
+ IEnergyStorage {
+     protected int energy;
+-    protected final int capacity = 1000;
+-    protected final int maxExtract = 20;
++    protected final int capacity = 10000;
++    protected final int maxExtract = 200;
+ 
+     public void func_73660_a() {
+         if (!this.field_145850_b.field_72995_K && BlockStateUtils.isEnabled((int)this.func_145832_p())) {
+@@ -55,7 +55,7 @@ IEnergyStorage {
+             IBlockState state = this.func_145831_w().func_180495_p(this.func_174877_v().func_177972_a(face));
+             Block block = state.func_177230_c();
+             if (block.hasTileEntity(state) && (tileentity = this.func_145831_w().func_175625_s(this.func_174877_v().func_177972_a(face))) != null && tileentity.hasCapability(CapabilityEnergy.ENERGY, face.func_176734_d()) && (capability = (IEnergyStorage)tileentity.getCapability(CapabilityEnergy.ENERGY, face.func_176734_d())).canReceive()) {
+-                int energyExtracted = Math.min(this.energy, 20);
++                int energyExtracted = Math.min(this.energy, 200);
+                 if ((energyExtracted = capability.receiveEnergy(energyExtracted, false)) > 0) {
+                     this.energy -= energyExtracted;
+                     this.func_70296_d();
+@@ -70,7 +70,7 @@ IEnergyStorage {
+     private void recharge() {
+         if (this.energy == 0) {
+             float vis = AuraHandler.drainVis((World)this.func_145831_w(), (BlockPos)this.func_174877_v(), (float)1.0f, (boolean)false);
+-            this.energy = (int)(vis * 1000.0f);
++            this.energy = (int)(vis * 10000.0f);
+             this.func_70296_d();
+             this.syncTile(false);
+         }
+@@ -112,7 +112,7 @@ IEnergyStorage {
+     }
+ 
+     public int getMaxEnergyStored() {
+-        return 1000;
++        return 10000;
+     }
+ 
+     public boolean canExtract() {

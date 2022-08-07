@@ -1,0 +1,46 @@
+diff --git "a/~bansoukou_unpatched\\rats-3.2.14-1.12.2\\assets\\rats\\advancements\\rats\\root.json" "b/bansoukou\\rats-3.2.14-1.12.2\\assets\\rats\\advancements\\rats\\root.json"
+index bd30c907..8e0d1d7b 100644
+--- "a/~bansoukou_unpatched\\rats-3.2.14-1.12.2\\assets\\rats\\advancements\\rats\\root.json"
++++ "b/bansoukou\\rats-3.2.14-1.12.2\\assets\\rats\\advancements\\rats\\root.json"
+@@ -1,22 +1,22 @@
+ {
+-    "display": {
+-        "icon": {
+-            "item": "rats:ratglove_petals"
+-        },
+-        "title": {
+-            "translate": "advancements.rats.root.title"
+-        },
+-        "description": {
+-            "translate": "advancements.rats.root.description"
+-        },
+-        "background": "rats:textures/blocks/cheese.png",
+-        "show_toast": true,
+-        "announce_to_chat": true,
+-        "hidden" : false
++  "display": {
++    "icon": {
++      "item": "rats:ratglove_petals"
+     },
+-    "criteria": {
+-        "tick": {
+-            "trigger": "minecraft:tick"
+-        }
++    "title": {
++      "translate": "advancements.rats.root.title"
++    },
++    "description": {
++      "translate": "advancements.rats.root.description"
++    },
++    "background": "rats:textures/blocks/cheese.png",
++    "show_toast": false,
++    "announce_to_chat": false,
++    "hidden": false
++  },
++  "criteria": {
++    "tick": {
++      "trigger": "minecraft:tick"
+     }
++  }
+ }
+\ No newline at end of file

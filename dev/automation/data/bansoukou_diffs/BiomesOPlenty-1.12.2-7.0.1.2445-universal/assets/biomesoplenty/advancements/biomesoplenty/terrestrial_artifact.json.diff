@@ -1,0 +1,213 @@
+diff --git "a/~bansoukou_unpatched\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\biomesoplenty\\terrestrial_artifact.json" "b/bansoukou\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\biomesoplenty\\terrestrial_artifact.json"
+index f9105fd0..5a4f8b78 100644
+--- "a/~bansoukou_unpatched\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\biomesoplenty\\terrestrial_artifact.json"
++++ "b/bansoukou\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\biomesoplenty\\terrestrial_artifact.json"
+@@ -1,107 +1,104 @@
+ {
+-    "display": {
+-        "icon": {
+-            "item": "biomesoplenty:terrestrial_artifact"
+-        },
+-        "title": {
+-            "translate": "advancements.biomesoplenty.terrestrial_artifact.title"
+-        },
+-        "description": {
+-            "translate": "advancements.biomesoplenty.terrestrial_artifact.description"
+-        },
+-        "frame": "goal"
++  "display": {
++    "icon": {
++      "item": "biomesoplenty:terrestrial_artifact"
+     },
+-    "parent": "biomesoplenty:biomesoplenty/root",
+-    "criteria": {
+-        "ruby": {
+-            "trigger": "minecraft:inventory_changed",
+-            "conditions": {
+-                "items": [
+-                    {
+-                        "item": "biomesoplenty:gem",
+-						"data": 1
+-                    }
+-                ]
+-            }
+-		},
+-		"topaz": {
+-            "trigger": "minecraft:inventory_changed",
+-            "conditions": {
+-                "items": [
+-                    {
+-                        "item": "biomesoplenty:gem",
+-						"data": 3
+-                    }
+-                ]
+-            }
+-        },
+-		"amber": {
+-            "trigger": "minecraft:inventory_changed",
+-            "conditions": {
+-                "items": [
+-                    {
+-                        "item": "biomesoplenty:gem",
+-						"data": 7
+-                    }
+-                ]
+-            }
+-        },
+-		"peridot": {
+-            "trigger": "minecraft:inventory_changed",
+-            "conditions": {
+-                "items": [
+-                    {
+-                        "item": "biomesoplenty:gem",
+-						"data": 2
+-                    }
+-                ]
+-            }
+-        },
+-		"emerald": {
+-            "trigger": "minecraft:inventory_changed",
+-            "conditions": {
+-                "items": [
+-                    {
+-                        "item": "minecraft:emerald"
+-                    }
+-                ]
+-            }
+-        },
+-		"malachite": {
+-            "trigger": "minecraft:inventory_changed",
+-            "conditions": {
+-                "items": [
+-                    {
+-                        "item": "biomesoplenty:gem",
+-						"data": 5
+-                    }
+-                ]
+-            }
+-        },
+-		"sapphire": {
+-            "trigger": "minecraft:inventory_changed",
+-            "conditions": {
+-                "items": [
+-                    {
+-                        "item": "biomesoplenty:gem",
+-						"data": 6
+-                    }
+-                ]
+-            }
+-        },
+-		"tanzanite": {
+-            "trigger": "minecraft:inventory_changed",
+-            "conditions": {
+-                "items": [
+-                    {
+-                        "item": "biomesoplenty:gem",
+-						"data": 4
+-                    }
+-                ]
+-            }
+-        }
++    "title": {
++      "translate": "advancements.biomesoplenty.terrestrial_artifact.title"
+     },
+-	"rewards": {
+-		"recipes": ["biomesoplenty:terrestrial_artifact"]
+-	}
++    "description": {
++      "translate": "advancements.biomesoplenty.terrestrial_artifact.description"
++    },
++    "frame": "goal"
++  },
++  "parent": "biomesoplenty:biomesoplenty/root",
++  "criteria": {
++    "ruby": {
++      "trigger": "minecraft:inventory_changed",
++      "conditions": {
++        "items": [
++          {
++            "item": "biomesoplenty:gem",
++            "data": 1
++          }
++        ]
++      }
++    },
++    "topaz": {
++      "trigger": "minecraft:inventory_changed",
++      "conditions": {
++        "items": [
++          {
++            "item": "biomesoplenty:gem",
++            "data": 3
++          }
++        ]
++      }
++    },
++    "amber": {
++      "trigger": "minecraft:inventory_changed",
++      "conditions": {
++        "items": [
++          {
++            "item": "biomesoplenty:gem",
++            "data": 7
++          }
++        ]
++      }
++    },
++    "peridot": {
++      "trigger": "minecraft:inventory_changed",
++      "conditions": {
++        "items": [
++          {
++            "item": "biomesoplenty:gem",
++            "data": 2
++          }
++        ]
++      }
++    },
++    "emerald": {
++      "trigger": "minecraft:inventory_changed",
++      "conditions": {
++        "items": [
++          {
++            "item": "minecraft:emerald"
++          }
++        ]
++      }
++    },
++    "malachite": {
++      "trigger": "minecraft:inventory_changed",
++      "conditions": {
++        "items": [
++          {
++            "item": "biomesoplenty:gem",
++            "data": 5
++          }
++        ]
++      }
++    },
++    "sapphire": {
++      "trigger": "minecraft:inventory_changed",
++      "conditions": {
++        "items": [
++          {
++            "item": "biomesoplenty:gem",
++            "data": 6
++          }
++        ]
++      }
++    },
++    "tanzanite": {
++      "trigger": "minecraft:inventory_changed",
++      "conditions": {
++        "items": [
++          {
++            "item": "biomesoplenty:gem",
++            "data": 4
++          }
++        ]
++      }
++    }
++  }
+ }
+\ No newline at end of file

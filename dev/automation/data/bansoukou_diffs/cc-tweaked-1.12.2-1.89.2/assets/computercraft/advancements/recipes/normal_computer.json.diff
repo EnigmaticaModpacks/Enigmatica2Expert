@@ -1,0 +1,23 @@
+diff --git "a/~bansoukou_unpatched\\cc-tweaked-1.12.2-1.89.2\\assets\\computercraft\\advancements\\recipes\\normal_computer.json" "b/bansoukou\\cc-tweaked-1.12.2-1.89.2\\assets\\computercraft\\advancements\\recipes\\normal_computer.json"
+index 9bd56b7b..11be4079 100644
+--- "a/~bansoukou_unpatched\\cc-tweaked-1.12.2-1.89.2\\assets\\computercraft\\advancements\\recipes\\normal_computer.json"
++++ "b/bansoukou\\cc-tweaked-1.12.2-1.89.2\\assets\\computercraft\\advancements\\recipes\\normal_computer.json"
+@@ -1 +1,15 @@
+-{"parent":"minecraft:recipes/root","rewards":{"recipes":["computercraft:normal_computer"]},"criteria":{"has_redstone":{"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"minecraft:redstone"}]}},"has_the_recipe":{"trigger":"minecraft:recipe_unlocked","conditions":{"recipe":"computercraft:normal_computer"}}},"requirements":[["has_redstone","has_the_recipe"]]}
+\ No newline at end of file
++{
++  "parent": "minecraft:recipes/root",
++  "criteria": {
++    "has_redstone": {
++      "trigger": "minecraft:inventory_changed",
++      "conditions": {
++        "items": [
++          {
++            "item": "minecraft:redstone"
++          }
++        ]
++      }
++    }
++  }
++}
+\ No newline at end of file

@@ -1,0 +1,74 @@
+diff --git "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\uu\\UuIndex.java" "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\uu\\UuIndex.java"
+index 713a2a15..e737a0bf 100644
+--- "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\uu\\UuIndex.java"
++++ "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\uu\\UuIndex.java"
+@@ -2,8 +2,6 @@
+  * Decompiled with CFR 0.152.
+  * 
+  * Could not load the following classes:
+- *  ic2.api.recipe.IMachineRecipeManager
+- *  ic2.api.recipe.Recipes
+  *  ic2.core.IC2
+  *  ic2.core.init.MainConfig
+  *  ic2.core.util.Config
+@@ -11,37 +9,21 @@
+  *  ic2.core.util.Config$Value
+  *  ic2.core.util.ConfigUtil
+  *  ic2.core.util.LogCategory
+- *  ic2.core.uu.CannerBottleSolidResolver
+  *  ic2.core.uu.ILateRecipeResolver
+  *  ic2.core.uu.IRecipeResolver
+- *  ic2.core.uu.MachineRecipeResolver
+- *  ic2.core.uu.ManualRecipeResolver
+- *  ic2.core.uu.RecipeResolver
+- *  ic2.core.uu.RecyclerResolver
+- *  ic2.core.uu.ScrapBoxResolver
+  *  ic2.core.uu.UuGraph
+- *  ic2.core.uu.VanillaSmeltingResolver
+  *  net.minecraft.item.ItemStack
+  */
+ package ic2.core.uu;
+ 
+-import ic2.api.recipe.IMachineRecipeManager;
+-import ic2.api.recipe.Recipes;
+ import ic2.core.IC2;
+ import ic2.core.init.MainConfig;
+ import ic2.core.util.Config;
+ import ic2.core.util.ConfigUtil;
+ import ic2.core.util.LogCategory;
+-import ic2.core.uu.CannerBottleSolidResolver;
+ import ic2.core.uu.ILateRecipeResolver;
+ import ic2.core.uu.IRecipeResolver;
+-import ic2.core.uu.MachineRecipeResolver;
+-import ic2.core.uu.ManualRecipeResolver;
+-import ic2.core.uu.RecipeResolver;
+-import ic2.core.uu.RecyclerResolver;
+-import ic2.core.uu.ScrapBoxResolver;
+ import ic2.core.uu.UuGraph;
+-import ic2.core.uu.VanillaSmeltingResolver;
+ import java.text.ParseException;
+ import java.util.ArrayList;
+ import java.util.Iterator;
+@@ -81,22 +63,6 @@ public class UuIndex {
+     }
+ 
+     public void init() {
+-        this.addResolver((IRecipeResolver)new VanillaSmeltingResolver());
+-        this.addResolver((IRecipeResolver)new RecipeResolver());
+-        this.addResolver((IRecipeResolver)new MachineRecipeResolver((IMachineRecipeManager)Recipes.macerator));
+-        this.addResolver((IRecipeResolver)new MachineRecipeResolver((IMachineRecipeManager)Recipes.extractor));
+-        this.addResolver((IRecipeResolver)new MachineRecipeResolver((IMachineRecipeManager)Recipes.compressor));
+-        this.addResolver((IRecipeResolver)new MachineRecipeResolver((IMachineRecipeManager)Recipes.centrifuge));
+-        this.addResolver((IRecipeResolver)new MachineRecipeResolver((IMachineRecipeManager)Recipes.blockcutter));
+-        this.addResolver((IRecipeResolver)new MachineRecipeResolver((IMachineRecipeManager)Recipes.blastfurnace));
+-        this.addResolver((IRecipeResolver)new MachineRecipeResolver((IMachineRecipeManager)Recipes.metalformerExtruding));
+-        this.addResolver((IRecipeResolver)new MachineRecipeResolver((IMachineRecipeManager)Recipes.metalformerCutting));
+-        this.addResolver((IRecipeResolver)new MachineRecipeResolver((IMachineRecipeManager)Recipes.metalformerRolling));
+-        this.addResolver((IRecipeResolver)new MachineRecipeResolver((IMachineRecipeManager)Recipes.oreWashing));
+-        this.addResolver((IRecipeResolver)new CannerBottleSolidResolver());
+-        this.addResolver((IRecipeResolver)new ScrapBoxResolver());
+-        this.addResolver((IRecipeResolver)new ManualRecipeResolver());
+-        this.addResolver((ILateRecipeResolver)new RecyclerResolver());
+     }
+ 
+     public void refresh(boolean reset) {

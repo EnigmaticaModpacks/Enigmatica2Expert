@@ -1,0 +1,13 @@
+diff --git "a/~bansoukou_unpatched\\ImmersiveEngineering-0.12-98\\blusunrize\\immersiveengineering\\common\\blocks\\metal\\TileEntitySilo.java" "b/bansoukou\\ImmersiveEngineering-0.12-98\\blusunrize\\immersiveengineering\\common\\blocks\\metal\\TileEntitySilo.java"
+index 2dc7f453..4ca2a011 100644
+--- "a/~bansoukou_unpatched\\ImmersiveEngineering-0.12-98\\blusunrize\\immersiveengineering\\common\\blocks\\metal\\TileEntitySilo.java"
++++ "b/bansoukou\\ImmersiveEngineering-0.12-98\\blusunrize\\immersiveengineering\\common\\blocks\\metal\\TileEntitySilo.java"
+@@ -62,7 +62,7 @@ extends TileEntityMultiblockPart<TileEntitySilo>
+ implements IEBlockInterfaces.IComparatorOverride {
+     public ItemStack identStack = ItemStack.field_190927_a;
+     public int storageAmount = 0;
+-    static int maxStorage = 41472;
++    static int maxStorage = 0xFFFF00;
+     boolean lockItem = false;
+     private int[] oldComps = new int[6];
+     private int masterCompOld;

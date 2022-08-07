@@ -1,0 +1,13 @@
+diff --git "a/~bansoukou_unpatched\\ic2-tweaker-0.2.0\\info\\tritusk\\modpack\\crafttweaker\\support\\ic2\\SemiFluidGeneratorSupport$SemiFluidGeneratorFuelAction.java" "b/bansoukou\\ic2-tweaker-0.2.0\\info\\tritusk\\modpack\\crafttweaker\\support\\ic2\\SemiFluidGeneratorSupport$SemiFluidGeneratorFuelAction.java"
+index acce659b..14436a3f 100644
+--- "a/~bansoukou_unpatched\\ic2-tweaker-0.2.0\\info\\tritusk\\modpack\\crafttweaker\\support\\ic2\\SemiFluidGeneratorSupport$SemiFluidGeneratorFuelAction.java"
++++ "b/bansoukou\\ic2-tweaker-0.2.0\\info\\tritusk\\modpack\\crafttweaker\\support\\ic2\\SemiFluidGeneratorSupport$SemiFluidGeneratorFuelAction.java"
+@@ -27,7 +27,7 @@ implements IAction {
+     }
+ 
+     public void apply() {
+-        Recipes.semiFluidGenerator.addFluid(this.fluid.getFluid().getName(), this.fluid.amount, this.power);
++        Recipes.semiFluidGenerator.addFluid(this.fluid.getFluid().getName(), (long)this.fluid.amount, (long)this.power);
+     }
+ 
+     public String describe() {

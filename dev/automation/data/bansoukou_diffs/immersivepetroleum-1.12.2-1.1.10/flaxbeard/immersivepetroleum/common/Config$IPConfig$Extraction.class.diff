@@ -1,0 +1,19 @@
+diff --git "a/~bansoukou_unpatched\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\common\\Config$IPConfig$Extraction.java" "b/bansoukou\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\common\\Config$IPConfig$Extraction.java"
+index 8dd573bc..ca6836c2 100644
+--- "a/~bansoukou_unpatched\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\common\\Config$IPConfig$Extraction.java"
++++ "b/bansoukou\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\common\\Config$IPConfig$Extraction.java"
+@@ -9,14 +9,10 @@ package flaxbeard.immersivepetroleum.common;
+ import net.minecraftforge.common.config.Config;
+ 
+ public static class Config.IPConfig.Extraction {
+-    @Config.Comment(value={"List of reservoir types. Format: name, fluid_name, min_mb_fluid, max_mb_fluid, mb_per_tick_replenish, weight, [dim_blacklist], [dim_whitelist], [biome_dict_blacklist], [biome_dict_whitelist]"})
+-    public static String[] reservoirs = new String[]{"aquifer, water, 5000000, 10000000, 6, 30, [], [0], [], []", "oil, oil, 2500000, 15000000, 6, 40, [1], [], [], []", "lava, lava, 250000, 1000000, 0, 30, [1], [], [], []"};
+     @Config.Comment(value={"The chance that a chunk contains a fluid reservoir, default=0.5"})
+     public static float reservoir_chance = 0.5f;
+     @Config.Comment(value={"The Flux the Pumpjack requires each tick to pump, default=1024"})
+     public static int pumpjack_consumption = 1024;
+-    @Config.Comment(value={"The amount of mB of oil a Pumpjack extracts per tick, default=15"})
+-    public static int pumpjack_speed = 15;
+     @Config.Comment(value={"Require a pumpjack to have pipes built down to Bedrock, default=false"})
+     public static boolean req_pipes = false;
+     @Config.Comment(value={"Number of ticks between checking for pipes below pumpjack if required, default=100 (5 secs)"})

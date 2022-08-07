@@ -1,0 +1,138 @@
+diff --git "a/~bansoukou_unpatched\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\api\\crafting\\PumpjackHandler.java" "b/bansoukou\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\api\\crafting\\PumpjackHandler.java"
+index 6a23f74f..7aef0521 100644
+--- "a/~bansoukou_unpatched\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\api\\crafting\\PumpjackHandler.java"
++++ "b/bansoukou\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\api\\crafting\\PumpjackHandler.java"
+@@ -54,10 +54,32 @@ public class PumpjackHandler {
+     private static Map<Integer, HashMap<String, Integer>> totalWeightMap = new HashMap<Integer, HashMap<String, Integer>>();
+     public static HashMap<DimensionChunkCoords, Long> timeCache = new HashMap();
+     public static HashMap<DimensionChunkCoords, OilWorldInfo> oilCache = new HashMap();
++    public static HashMap<Integer, PowerTier> rftTeir = new HashMap();
+     public static double oilChance = 100.0;
+     private static int depositSize = 1;
+     private static HashMap<Biome, String> biomeNames = new HashMap();
+ 
++    public static void registerPowerUsage(int tier, int capacity, int rft) {
++        rftTeir.put(tier, new PowerTier(capacity, rft));
++    }
++
++    public static PowerTier getPowerTier(World world, int chunkX, int chunkZ) {
++        OilWorldInfo info = PumpjackHandler.getOilWorldInfo(world, chunkX, chunkZ);
++        if (info == null || info.getType() == null) {
++            return rftTeir.get(0);
++        }
++        DimensionChunkCoords coords = new DimensionChunkCoords(world.field_73011_w.getDimension(), chunkX / depositSize, chunkZ / depositSize);
++        Long l = timeCache.get(coords);
++        if (l == null) {
++            timeCache.put(coords, world.func_82737_E());
++            return rftTeir.get(info.getType().powerTier);
++        }
++        long lastTime = world.func_82737_E();
++        timeCache.put(coords, world.func_82737_E());
++        int last = lastTime != l ? info.getType().powerTier : 0;
++        return rftTeir.get(last);
++    }
++
+     public static int getFluidAmount(World world, int chunkX, int chunkZ) {
+         if (world.field_72995_K) {
+             return 0;
+@@ -80,20 +102,25 @@ public class PumpjackHandler {
+         return info.getType().getFluid();
+     }
+ 
+-    public static int getResidualFluid(World world, int chunkX, int chunkZ) {
++    public static int[] getResidualFluidAndPumpSpeed(World world, int chunkX, int chunkZ) {
+         OilWorldInfo info = PumpjackHandler.getOilWorldInfo(world, chunkX, chunkZ);
++        int[] residualFAndPumpSpeed = new int[2];
+         if (info == null || info.getType() == null || info.getType().fluid == null || info.capacity == 0 || info.current == 0 && info.getType().replenishRate == 0) {
+-            return 0;
++            return residualFAndPumpSpeed;
+         }
+         DimensionChunkCoords coords = new DimensionChunkCoords(world.field_73011_w.getDimension(), chunkX / depositSize, chunkZ / depositSize);
+         Long l = timeCache.get(coords);
+         if (l == null) {
+             timeCache.put(coords, world.func_82737_E());
+-            return info.getType().replenishRate;
++            residualFAndPumpSpeed[0] = info.getType().replenishRate;
++            residualFAndPumpSpeed[1] = info.getType().pumpSpeed;
++            return residualFAndPumpSpeed;
+         }
+         long lastTime = world.func_82737_E();
+         timeCache.put(coords, world.func_82737_E());
+-        return lastTime != l ? info.getType().replenishRate : 0;
++        residualFAndPumpSpeed[0] = lastTime != l ? info.getType().replenishRate : 0;
++        residualFAndPumpSpeed[1] = lastTime != l ? info.getType().pumpSpeed : 0;
++        return residualFAndPumpSpeed;
+     }
+ 
+     public static OilWorldInfo getOilWorldInfo(World world, int chunkX, int chunkZ) {
+@@ -157,8 +184,8 @@ public class PumpjackHandler {
+         return totalWeight;
+     }
+ 
+-    public static ReservoirType addReservoir(String name, String fluid, int minSize, int maxSize, int replenishRate, int weight) {
+-        ReservoirType mix = new ReservoirType(name, fluid, minSize, maxSize, replenishRate);
++    public static ReservoirType addReservoir(String name, String fluid, int minSize, int maxSize, int replenishRate, int pumpSpeed, int weight, int powerTier) {
++        ReservoirType mix = new ReservoirType(name, fluid, minSize, maxSize, replenishRate, pumpSpeed, powerTier);
+         reservoirList.put(mix, weight);
+         return mix;
+     }
+@@ -200,24 +227,38 @@ public class PumpjackHandler {
+         return ret;
+     }
+ 
++    public static class PowerTier {
++        public int capacity;
++        public int rft;
++
++        public PowerTier(int capacity, int rft) {
++            this.capacity = capacity;
++            this.rft = rft;
++        }
++    }
++
+     public static class ReservoirType {
+         public String name;
+         public String fluid;
+         public int minSize;
+         public int maxSize;
+         public int replenishRate;
++        public int pumpSpeed;
++        public int powerTier;
+         public int[] dimensionWhitelist = new int[0];
+         public int[] dimensionBlacklist = new int[0];
+         public String[] biomeWhitelist = new String[0];
+         public String[] biomeBlacklist = new String[0];
+         private Fluid f;
+ 
+-        public ReservoirType(String name, String fluid, int minSize, int maxSize, int replenishRate) {
++        public ReservoirType(String name, String fluid, int minSize, int maxSize, int replenishRate, int pumpSpeed, int powerTier) {
+             this.name = name;
+             this.fluid = fluid;
+             this.minSize = minSize;
+             this.maxSize = maxSize;
+             this.replenishRate = replenishRate;
++            this.pumpSpeed = pumpSpeed;
++            this.powerTier = powerTier;
+         }
+ 
+         public Fluid getFluid() {
+@@ -280,6 +321,8 @@ public class PumpjackHandler {
+             tag.func_74768_a("minSize", this.minSize);
+             tag.func_74768_a("maxSize", this.maxSize);
+             tag.func_74768_a("replenishRate", this.replenishRate);
++            tag.func_74768_a("pumpSpeed", this.pumpSpeed);
++            tag.func_74768_a("powerTier", this.powerTier);
+             tag.func_74783_a("dimensionWhitelist", this.dimensionWhitelist);
+             tag.func_74783_a("dimensionBlacklist", this.dimensionBlacklist);
+             NBTTagList wl = new NBTTagList();
+@@ -301,7 +344,9 @@ public class PumpjackHandler {
+             int minSize = tag.func_74762_e("minSize");
+             int maxSize = tag.func_74762_e("maxSize");
+             int replenishRate = tag.func_74762_e("replenishRate");
+-            ReservoirType res = new ReservoirType(name, fluid, minSize, maxSize, replenishRate);
++            int pumpSpeed = tag.func_74762_e("pumpSpeed");
++            int powerTier = tag.func_74762_e("powerTier");
++            ReservoirType res = new ReservoirType(name, fluid, minSize, maxSize, replenishRate, pumpSpeed, powerTier);
+             res.dimensionWhitelist = tag.func_74759_k("dimensionWhitelist");
+             res.dimensionBlacklist = tag.func_74759_k("dimensionBlacklist");
+             NBTTagList wl = (NBTTagList)tag.func_74781_a("biomeWhitelist");

@@ -1,0 +1,18 @@
+diff --git "a/~bansoukou_unpatched\\IntegratedCrafting-1.12.2-1.0.10\\assets\\integratedcrafting\\advancements\\root.json" "b/bansoukou\\IntegratedCrafting-1.12.2-1.0.10\\assets\\integratedcrafting\\advancements\\root.json"
+index 6304c1eb..f37a900a 100644
+--- "a/~bansoukou_unpatched\\IntegratedCrafting-1.12.2-1.0.10\\assets\\integratedcrafting\\advancements\\root.json"
++++ "b/bansoukou\\IntegratedCrafting-1.12.2-1.0.10\\assets\\integratedcrafting\\advancements\\root.json"
+@@ -13,13 +13,6 @@
+     "announce_to_chat": false
+   },
+   "parent": "integrateddynamics:recipe_handling/recipe_creation",
+-  "rewards": {
+-    "recipes": [
+-      "integratedcrafting:part_interface_crafting_item",
+-      "integratedcrafting:part_crafting_writer_item"
+-
+-    ]
+-  },
+   "criteria": {
+     "criteria_0": {
+       "trigger": "minecraft:inventory_changed",

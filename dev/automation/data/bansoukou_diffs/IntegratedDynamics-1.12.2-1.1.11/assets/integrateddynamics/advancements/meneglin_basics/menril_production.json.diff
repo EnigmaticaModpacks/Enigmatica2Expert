@@ -1,0 +1,26 @@
+diff --git "a/~bansoukou_unpatched\\IntegratedDynamics-1.12.2-1.1.11\\assets\\integrateddynamics\\advancements\\meneglin_basics\\menril_production.json" "b/bansoukou\\IntegratedDynamics-1.12.2-1.1.11\\assets\\integrateddynamics\\advancements\\meneglin_basics\\menril_production.json"
+index f83f926b..88b52ed7 100644
+--- "a/~bansoukou_unpatched\\IntegratedDynamics-1.12.2-1.1.11\\assets\\integrateddynamics\\advancements\\meneglin_basics\\menril_production.json"
++++ "b/bansoukou\\IntegratedDynamics-1.12.2-1.1.11\\assets\\integrateddynamics\\advancements\\meneglin_basics\\menril_production.json"
+@@ -11,21 +11,6 @@
+     }
+   },
+   "parent": "integrateddynamics:meneglin_basics/squeezing",
+-  "rewards": {
+-    "recipes": [
+-      "integrateddynamics:wrench",
+-      "integrateddynamics:variable",
+-      "integrateddynamics:menril_torch",
+-      "integrateddynamics:menril_torch_stone",
+-      "integrateddynamics:crystalized_menril_chunk",
+-      "integrateddynamics:crystalized_menril_block",
+-      "integrateddynamics:crystalized_menril_brick",
+-      "integrateddynamics:crystalized_menril_block_stairs",
+-      "integrateddynamics:crystalized_menril_brick_stairs",
+-      "integrateddynamics:menril_planks",
+-      "integrateddynamics:menril_planks_stairs"
+-    ]
+-  },
+   "criteria": {
+     "criteria_0": {
+       "trigger": "minecraft:inventory_changed",

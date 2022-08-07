@@ -1,0 +1,44 @@
+diff --git "a/~bansoukou_unpatched\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\recipes\\buildingBlocks\\amber_block.json" "b/bansoukou\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\recipes\\buildingBlocks\\amber_block.json"
+index 56a68eac..d64da26b 100644
+--- "a/~bansoukou_unpatched\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\recipes\\buildingBlocks\\amber_block.json"
++++ "b/bansoukou\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\recipes\\buildingBlocks\\amber_block.json"
+@@ -1,24 +1,12 @@
+ {
+-  "rewards": {
+-    "recipes": [
+-      "biomesoplenty:amber_block",
+-      "biomesoplenty:amber"
+-    ]
+-  },
+   "criteria": {
+-    "has_the_recipe": {
+-      "trigger": "minecraft:recipe_unlocked",
+-      "conditions": {
+-        "recipe": "biomesoplenty:amber_block"
+-      }
+-    },
+     "has_at_least_9_gems": {
+       "trigger": "minecraft:inventory_changed",
+       "conditions": {
+         "items": [
+           {
+             "item": "biomesoplenty:gem",
+-			"data": 7,
++            "data": 7,
+             "count": {
+               "min": 9
+             }
+@@ -26,11 +14,5 @@
+         ]
+       }
+     }
+-  },
+-  "requirements": [
+-    [
+-      "has_the_recipe",
+-      "has_at_least_9_gems"
+-    ]
+-  ]
++  }
+ }
+\ No newline at end of file

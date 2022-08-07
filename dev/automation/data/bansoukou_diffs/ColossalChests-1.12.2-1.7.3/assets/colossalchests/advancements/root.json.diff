@@ -1,0 +1,31 @@
+diff --git "a/~bansoukou_unpatched\\ColossalChests-1.12.2-1.7.3\\assets\\colossalchests\\advancements\\root.json" "b/bansoukou\\ColossalChests-1.12.2-1.7.3\\assets\\colossalchests\\advancements\\root.json"
+index 8077301d..194eed4a 100644
+--- "a/~bansoukou_unpatched\\ColossalChests-1.12.2-1.7.3\\assets\\colossalchests\\advancements\\root.json"
++++ "b/bansoukou\\ColossalChests-1.12.2-1.7.3\\assets\\colossalchests\\advancements\\root.json"
+@@ -13,26 +13,6 @@
+     "show_toast": false,
+     "announce_to_chat": false
+   },
+-  "rewards": {
+-    "recipes": [
+-      "colossalchests:uncolossal_chest",
+-      "colossalchests:colossal_chest",
+-      "colossalchests:chest_wall",
+-      "colossalchests:interface",
+-      "colossalchests:colossal_chest_12",
+-      "colossalchests:chest_wall_12",
+-      "colossalchests:interface_12",
+-      "colossalchests:colossal_chest_14",
+-      "colossalchests:chest_wall_14",
+-      "colossalchests:interface_14",
+-      "colossalchests:colossal_chest_15",
+-      "colossalchests:chest_wall_15",
+-      "colossalchests:interface_15",
+-      "colossalchests:colossal_chest_16",
+-      "colossalchests:chest_wall_16",
+-      "colossalchests:interface_16"
+-    ]
+-  },
+   "criteria": {
+     "criteria_0": {
+       "trigger": "minecraft:inventory_changed",

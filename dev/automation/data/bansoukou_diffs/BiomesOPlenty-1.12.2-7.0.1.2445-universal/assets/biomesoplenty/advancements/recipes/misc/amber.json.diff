@@ -1,0 +1,40 @@
+diff --git "a/~bansoukou_unpatched\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\recipes\\misc\\amber.json" "b/bansoukou\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\recipes\\misc\\amber.json"
+index 3478398c..ac9c9b4d 100644
+--- "a/~bansoukou_unpatched\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\recipes\\misc\\amber.json"
++++ "b/bansoukou\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\recipes\\misc\\amber.json"
+@@ -1,9 +1,4 @@
+ {
+-  "rewards": {
+-    "recipes": [
+-      "biomesoplenty:amber"
+-    ]
+-  },
+   "criteria": {
+     "has_gem_block": {
+       "trigger": "minecraft:inventory_changed",
+@@ -11,22 +6,10 @@
+         "items": [
+           {
+             "item": "biomesoplenty:gem_block",
+-			"data": 7
++            "data": 7
+           }
+         ]
+       }
+-    },
+-    "has_the_recipe": {
+-      "trigger": "minecraft:recipe_unlocked",
+-      "conditions": {
+-        "recipe": "biomesoplenty:amber"
+-      }
+     }
+-  },
+-  "requirements": [
+-    [
+-      "has_gem_block",
+-      "has_the_recipe"
+-    ]
+-  ]
++  }
+ }
+\ No newline at end of file

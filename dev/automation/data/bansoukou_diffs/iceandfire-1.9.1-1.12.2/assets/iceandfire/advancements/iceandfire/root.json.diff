@@ -1,0 +1,46 @@
+diff --git "a/~bansoukou_unpatched\\iceandfire-1.9.1-1.12.2\\assets\\iceandfire\\advancements\\iceandfire\\root.json" "b/bansoukou\\iceandfire-1.9.1-1.12.2\\assets\\iceandfire\\advancements\\iceandfire\\root.json"
+index 5e1ddfc4..87ad7117 100644
+--- "a/~bansoukou_unpatched\\iceandfire-1.9.1-1.12.2\\assets\\iceandfire\\advancements\\iceandfire\\root.json"
++++ "b/bansoukou\\iceandfire-1.9.1-1.12.2\\assets\\iceandfire\\advancements\\iceandfire\\root.json"
+@@ -1,22 +1,22 @@
+ {
+-    "display": {
+-        "icon": {
+-            "item": "iceandfire:dragon_skull"
+-        },
+-        "title": {
+-            "translate": "advancements.iceandfire.root.title"
+-        },
+-        "description": {
+-            "translate": "advancements.iceandfire.root.description"
+-        },
+-        "background": "iceandfire:textures/blocks/dragonscale_red.png",
+-        "show_toast": true,
+-        "announce_to_chat": true,
+-        "hidden" : false
++  "display": {
++    "icon": {
++      "item": "iceandfire:dragon_skull"
+     },
+-    "criteria": {
+-        "tick": {
+-            "trigger": "minecraft:tick"
+-        }
++    "title": {
++      "translate": "advancements.iceandfire.root.title"
++    },
++    "description": {
++      "translate": "advancements.iceandfire.root.description"
++    },
++    "background": "iceandfire:textures/blocks/dragonscale_red.png",
++    "show_toast": false,
++    "announce_to_chat": false,
++    "hidden": false
++  },
++  "criteria": {
++    "tick": {
++      "trigger": "minecraft:tick"
+     }
++  }
+ }
+\ No newline at end of file

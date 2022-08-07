@@ -1,0 +1,13 @@
+diff --git "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tool\\ItemCropnalyzer.java" "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tool\\ItemCropnalyzer.java"
+index 6d1bb520..ded583ee 100644
+--- "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tool\\ItemCropnalyzer.java"
++++ "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tool\\ItemCropnalyzer.java"
+@@ -107,7 +107,7 @@ implements IHandHeldInventory {
+                 IC2.platform.messagePlayer(player, "Nutrient storage: " + crop.getStorageNutrients() + "/100", new Object[0]);
+                 IC2.platform.messagePlayer(player, "Water storage: " + crop.getStorageWater() + "/200", new Object[0]);
+                 IC2.platform.messagePlayer(player, "Weed-Ex storage: " + crop.getStorageWeedEX() + "/100", new Object[0]);
+-                IC2.platform.messagePlayer(player, "Growth points: " + crop.getGrowthPoints() + '/' + plant.getGrowthDuration((ICropTile)crop), new Object[0]);
++                IC2.platform.messagePlayer(player, "Growth points: " + crop.getGrowthPoints() + '/' + plant.getGrowthDuration((ICropTile)crop) / 10, new Object[0]);
+                 return EnumActionResult.SUCCESS;
+             }
+         }

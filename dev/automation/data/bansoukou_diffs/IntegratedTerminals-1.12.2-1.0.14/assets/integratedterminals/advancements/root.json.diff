@@ -1,0 +1,18 @@
+diff --git "a/~bansoukou_unpatched\\IntegratedTerminals-1.12.2-1.0.14\\assets\\integratedterminals\\advancements\\root.json" "b/bansoukou\\IntegratedTerminals-1.12.2-1.0.14\\assets\\integratedterminals\\advancements\\root.json"
+index 45be6f78..a326e49a 100644
+--- "a/~bansoukou_unpatched\\IntegratedTerminals-1.12.2-1.0.14\\assets\\integratedterminals\\advancements\\root.json"
++++ "b/bansoukou\\IntegratedTerminals-1.12.2-1.0.14\\assets\\integratedterminals\\advancements\\root.json"
+@@ -13,13 +13,6 @@
+     "announce_to_chat": false
+   },
+   "parent": "integrateddynamics:basic_network_components/value_displaying",
+-  "rewards": {
+-    "recipes": [
+-      "integratedterminals:part_terminal_storage_item",
+-      "integratedterminals:part_terminal_crafting_job_item"
+-
+-    ]
+-  },
+   "criteria": {
+     "criteria_0": {
+       "trigger": "minecraft:inventory_changed",

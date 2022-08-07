@@ -1,0 +1,49 @@
+diff --git "a/~bansoukou_unpatched\\netherportalspread_1.12.2-5.4\\com\\natamus\\netherportalspread\\events\\SpreadEvent.java" "b/bansoukou\\netherportalspread_1.12.2-5.4\\com\\natamus\\netherportalspread\\events\\SpreadEvent.java"
+index 8ac2ef56..2319e82c 100644
+--- "a/~bansoukou_unpatched\\netherportalspread_1.12.2-5.4\\com\\natamus\\netherportalspread\\events\\SpreadEvent.java"
++++ "b/bansoukou\\netherportalspread_1.12.2-5.4\\com\\natamus\\netherportalspread\\events\\SpreadEvent.java"
+@@ -40,7 +40,6 @@ public class SpreadEvent {
+ 
+     @SubscribeEvent
+     public void onWorldTick(TickEvent.WorldTickEvent e) {
+-        int worldtick;
+         World world = e.world;
+         if (world.field_72995_K || !e.phase.equals((Object)TickEvent.Phase.END)) {
+             return;
+@@ -48,20 +47,23 @@ public class SpreadEvent {
+         if (WorldFunctions.isNether((World)world)) {
+             return;
+         }
+-        if (portals_to_process.get(world).size() > 0) {
+-            BlockPos portal = portals_to_process.get(world).get(0);
+-            if (!((CopyOnWriteArrayList)Util.portals.get(world)).contains(portal) && !((HashMap)Util.preventedportals.get(world)).containsKey(portal)) {
+-                Util.validatePortalAndAdd((World)world, (BlockPos)portal);
++        if (portals_to_process != null && portals_to_process.get(world) != null) {
++            int n;
++            if (portals_to_process.get(world).size() > 0) {
++                BlockPos portal = portals_to_process.get(world).get(0);
++                if (!((CopyOnWriteArrayList)Util.portals.get(world)).contains(portal) && !((HashMap)Util.preventedportals.get(world)).containsKey(portal)) {
++                    Util.validatePortalAndAdd((World)world, (BlockPos)portal);
++                }
++                portals_to_process.get(world).remove(0);
++            }
++            if ((n = worldticks.get(world).intValue()) % ModConfig.spreadDelayTicks != 0) {
++                worldticks.put(world, n + 1);
++                return;
++            }
++            worldticks.put(world, 1);
++            for (BlockPos portal : (CopyOnWriteArrayList)Util.portals.get(world)) {
++                Util.spreadNextBlock((World)world, (BlockPos)portal);
+             }
+-            portals_to_process.get(world).remove(0);
+-        }
+-        if ((worldtick = worldticks.get(world).intValue()) % ModConfig.spreadDelayTicks != 0) {
+-            worldticks.put(world, worldtick + 1);
+-            return;
+-        }
+-        worldticks.put(world, 1);
+-        for (BlockPos portal : (CopyOnWriteArrayList)Util.portals.get(world)) {
+-            Util.spreadNextBlock((World)world, (BlockPos)portal);
+         }
+     }
+ 

@@ -1,0 +1,28 @@
+diff --git "a/~bansoukou_unpatched\\xnet-1.12-1.8.2\\mcjty\\xnet\\apiimpl\\energy\\EnergyConnectorSettings.java" "b/bansoukou\\xnet-1.12-1.8.2\\mcjty\\xnet\\apiimpl\\energy\\EnergyConnectorSettings.java"
+index 957858f1..9b315361 100644
+--- "a/~bansoukou_unpatched\\xnet-1.12-1.8.2\\mcjty\\xnet\\apiimpl\\energy\\EnergyConnectorSettings.java"
++++ "b/bansoukou\\xnet-1.12-1.8.2\\mcjty\\xnet\\apiimpl\\energy\\EnergyConnectorSettings.java"
+@@ -90,20 +90,14 @@ extends AbstractConnectorSettings {
+         this.sideGui(gui);
+         this.colorsGui(gui);
+         this.redstoneGui(gui);
+-        gui.nl().choices("mode", "Insert or extract mode", (Enum)this.energyMode, (Enum[])EnergyMode.values()).nl().label("Pri").integer("priority", "Insertion priority", this.priority, 30).nl().label("Rate").integer("rate", (this.energyMode == EnergyMode.EXT ? "Max energy extraction rate" : "Max energy insertion rate") + "|(limited to " + (this.advanced ? ConfigSetup.maxRfRateAdvanced : ConfigSetup.maxRfRateNormal) + " per tick)", this.rate, 40).shift(10).label(this.energyMode == EnergyMode.EXT ? "Min" : "Max").integer("minmax", this.energyMode == EnergyMode.EXT ? "Disable extraction if energy|is too low" : "Disable insertion if energy|is too high", this.minmax, 50);
++        gui.nl().choices("mode", "Insert or extract mode", (Enum)this.energyMode, (Enum[])EnergyMode.values()).nl().label("Pri").integer("priority", "Insertion priority", this.priority, 30).nl().label("Rate").integer("rate", (this.energyMode == EnergyMode.EXT ? "Max energy extraction rate" : "Max energy insertion rate") + "|(limited to " + (this.advanced ? ConfigSetup.maxRfRateAdvanced.get() : ConfigSetup.maxRfRateNormal.get()) + " per tick)", this.rate, 40).shift(10).label(this.energyMode == EnergyMode.EXT ? "Min" : "Max").integer("minmax", this.energyMode == EnergyMode.EXT ? "Disable extraction if energy|is too low" : "Disable insertion if energy|is too high", this.minmax, 50);
+     }
+ 
+     public boolean isEnabled(String tag) {
+         if (this.energyMode == EnergyMode.INS) {
+-            if (tag.equals("facing")) {
+-                return this.advanced;
+-            }
+-            return INSERT_TAGS.contains(tag);
+-        }
+-        if (tag.equals("facing")) {
+-            return false;
++            return tag.equals("facing") ? this.advanced : INSERT_TAGS.contains(tag);
+         }
+-        return EXTRACT_TAGS.contains(tag);
++        return tag.equals("facing") ? false : EXTRACT_TAGS.contains(tag);
+     }
+ 
+     @Nonnull

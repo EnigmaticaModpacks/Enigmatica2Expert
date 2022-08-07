@@ -1,0 +1,46 @@
+diff --git "a/~bansoukou_unpatched\\cc-tweaked-1.12.2-1.89.2\\assets\\computercraft\\advancements\\recipes\\normal_pocket_computer.json" "b/bansoukou\\cc-tweaked-1.12.2-1.89.2\\assets\\computercraft\\advancements\\recipes\\normal_pocket_computer.json"
+index ec192132..eedb2ebd 100644
+--- "a/~bansoukou_unpatched\\cc-tweaked-1.12.2-1.89.2\\assets\\computercraft\\advancements\\recipes\\normal_pocket_computer.json"
++++ "b/bansoukou\\cc-tweaked-1.12.2-1.89.2\\assets\\computercraft\\advancements\\recipes\\normal_pocket_computer.json"
+@@ -1 +1,38 @@
+-{"parent":"minecraft:recipes/root","rewards":{"recipes":["computercraft:normal_pocket_computer"]},"criteria":{"has_normal":{"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"computercraft:computer","data":0}]}},"has_advanced":{"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"computercraft:computer","data":16384}]}},"has_apple":{"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"minecraft:golden_apple","data":0}]}},"has_the_recipe":{"trigger":"minecraft:recipe_unlocked","conditions":{"recipe":"computercraft:normal_pocket_computer"}}},"requirements":[["has_normal","has_advanced","has_apple","has_the_recipe"]]}
+\ No newline at end of file
++{
++  "parent": "minecraft:recipes/root",
++  "criteria": {
++    "has_normal": {
++      "trigger": "minecraft:inventory_changed",
++      "conditions": {
++        "items": [
++          {
++            "item": "computercraft:computer",
++            "data": 0
++          }
++        ]
++      }
++    },
++    "has_advanced": {
++      "trigger": "minecraft:inventory_changed",
++      "conditions": {
++        "items": [
++          {
++            "item": "computercraft:computer",
++            "data": 16384
++          }
++        ]
++      }
++    },
++    "has_apple": {
++      "trigger": "minecraft:inventory_changed",
++      "conditions": {
++        "items": [
++          {
++            "item": "minecraft:golden_apple",
++            "data": 0
++          }
++        ]
++      }
++    }
++  }
++}
+\ No newline at end of file

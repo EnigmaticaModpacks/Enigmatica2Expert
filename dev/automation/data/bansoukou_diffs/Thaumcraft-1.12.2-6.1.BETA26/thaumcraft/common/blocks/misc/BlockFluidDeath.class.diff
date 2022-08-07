@@ -1,0 +1,13 @@
+diff --git "a/~bansoukou_unpatched\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\blocks\\misc\\BlockFluidDeath.java" "b/bansoukou\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\blocks\\misc\\BlockFluidDeath.java"
+index 97c12445..e2ae9fe9 100644
+--- "a/~bansoukou_unpatched\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\blocks\\misc\\BlockFluidDeath.java"
++++ "b/bansoukou\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\blocks\\misc\\BlockFluidDeath.java"
+@@ -65,7 +65,7 @@ extends BlockFluidClassic {
+         entity.field_70159_w *= (double)(1.0f - this.getQuantaPercentage((IBlockAccess)world, pos) / 2.0f);
+         entity.field_70179_y *= (double)(1.0f - this.getQuantaPercentage((IBlockAccess)world, pos) / 2.0f);
+         if (!world.field_72995_K && entity instanceof EntityLivingBase) {
+-            entity.func_70097_a(DamageSourceThaumcraft.dissolve, (float)(4 - this.func_176201_c(state) + 1));
++            entity.func_70097_a(DamageSourceThaumcraft.dissolve, (float)(40 - this.func_176201_c(state) * 5));
+         }
+     }
+ 

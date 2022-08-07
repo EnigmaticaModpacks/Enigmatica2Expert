@@ -1,0 +1,16 @@
+diff --git "a/~bansoukou_unpatched\\IntegratedTerminals-1.12.2-1.0.14\\assets\\integratedterminals\\advancements\\storage_terminal\\menril_glass.json" "b/bansoukou\\IntegratedTerminals-1.12.2-1.0.14\\assets\\integratedterminals\\advancements\\storage_terminal\\menril_glass.json"
+index e3d3afcc..fbabe529 100644
+--- "a/~bansoukou_unpatched\\IntegratedTerminals-1.12.2-1.0.14\\assets\\integratedterminals\\advancements\\storage_terminal\\menril_glass.json"
++++ "b/bansoukou\\IntegratedTerminals-1.12.2-1.0.14\\assets\\integratedterminals\\advancements\\storage_terminal\\menril_glass.json"
+@@ -11,11 +11,6 @@
+     }
+   },
+   "parent": "integratedterminals:root",
+-  "rewards": {
+-    "recipes": [
+-      "integratedterminals:part_terminal_storage_item"
+-    ]
+-  },
+   "criteria": {
+     "criteria_0": {
+       "trigger": "minecraft:inventory_changed",

@@ -1,0 +1,14 @@
+diff --git "a/~bansoukou_unpatched\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\tiles\\crafting\\TileThaumatoriumTop.java" "b/bansoukou\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\tiles\\crafting\\TileThaumatoriumTop.java"
+index 0bfb8418..3c902b34 100644
+--- "a/~bansoukou_unpatched\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\tiles\\crafting\\TileThaumatoriumTop.java"
++++ "b/bansoukou\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\tiles\\crafting\\TileThaumatoriumTop.java"
+@@ -256,6 +256,9 @@ ITickable {
+     }
+ 
+     public boolean func_191420_l() {
++        if (this.thaumatorium == null) {
++            return true;
++        }
+         return this.thaumatorium.func_191420_l();
+     }
+ }

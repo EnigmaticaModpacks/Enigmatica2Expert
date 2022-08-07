@@ -1,0 +1,52 @@
+diff --git "a/~bansoukou_unpatched\\plethora-1.12.2-1.2.3\\assets\\plethora\\advancements\\recipes\\module_laser.json" "b/bansoukou\\plethora-1.12.2-1.2.3\\assets\\plethora\\advancements\\recipes\\module_laser.json"
+index 43fabdbb..8304bf37 100644
+--- "a/~bansoukou_unpatched\\plethora-1.12.2-1.2.3\\assets\\plethora\\advancements\\recipes\\module_laser.json"
++++ "b/bansoukou\\plethora-1.12.2-1.2.3\\assets\\plethora\\advancements\\recipes\\module_laser.json"
+@@ -1,32 +1,15 @@
+ {
+-	"parent": "minecraft:recipes/root",
+-	"rewards": {
+-		"recipes": [
+-			"plethora:module_laser"
+-		]
+-	},
+-	"criteria": {
+-		"has_manipulator": {
+-			"trigger": "minecraft:inventory_changed",
+-			"conditions": {
+-				"items": [
+-					{
+-						"item": "plethora:manipulator"
+-					}
+-				]
+-			}
+-		},
+-		"has_the_recipe": {
+-			"trigger": "minecraft:recipe_unlocked",
+-			"conditions": {
+-				"recipe": "plethora:module_laser"
+-			}
+-		}
+-	},
+-	"requirements": [
+-		[
+-			"has_manipulator",
+-			"has_the_recipe"
+-		]
+-	]
+-}
++  "parent": "minecraft:recipes/root",
++  "criteria": {
++    "has_manipulator": {
++      "trigger": "minecraft:inventory_changed",
++      "conditions": {
++        "items": [
++          {
++            "item": "plethora:manipulator"
++          }
++        ]
++      }
++    }
++  }
++}
+\ No newline at end of file

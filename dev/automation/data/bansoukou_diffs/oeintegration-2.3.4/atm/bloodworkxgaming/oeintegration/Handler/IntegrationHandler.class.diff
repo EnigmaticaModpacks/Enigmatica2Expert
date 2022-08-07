@@ -1,0 +1,13 @@
+diff --git "a/~bansoukou_unpatched\\oeintegration-2.3.4\\atm\\bloodworkxgaming\\oeintegration\\Handler\\IntegrationHandler.java" "b/bansoukou\\oeintegration-2.3.4\\atm\\bloodworkxgaming\\oeintegration\\Handler\\IntegrationHandler.java"
+index 8e5bf10e..46578a51 100644
+--- "a/~bansoukou_unpatched\\oeintegration-2.3.4\\atm\\bloodworkxgaming\\oeintegration\\Handler\\IntegrationHandler.java"
++++ "b/bansoukou\\oeintegration-2.3.4\\atm\\bloodworkxgaming\\oeintegration\\Handler\\IntegrationHandler.java"
+@@ -74,7 +74,7 @@ public class IntegrationHandler {
+         ItemStack held = agent.player.func_184614_ca();
+         NBTTagCompound modifier = TinkerUtil.getModifierTag((ItemStack)held, (String)"oreexcavate");
+         int enchantmentLevel = modifier.func_74762_e("current");
+-        int maxLevel = modifier.func_74762_e("max");
++        int maxLevel = MainConfig.maxTinkersModifersCount;
+         ToolOverride toolProps = ToolOverride.readFromString((String)"*");
+         float modifierModifier = (float)enchantmentLevel / (float)maxLevel;
+         toolProps.setRange((int)Math.ceil((float)ExcavationSettings.mineRange * modifierModifier) + 1);

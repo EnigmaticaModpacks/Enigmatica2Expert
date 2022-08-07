@@ -1,0 +1,14 @@
+diff --git "a/~bansoukou_unpatched\\Botania r1.10-364.4\\vazkii\\botania\\client\\integration\\jei\\manapool\\ManaPoolRecipeWrapper.java" "b/bansoukou\\Botania r1.10-364.4\\vazkii\\botania\\client\\integration\\jei\\manapool\\ManaPoolRecipeWrapper.java"
+index 586dc5c0..69ee6327 100644
+--- "a/~bansoukou_unpatched\\Botania r1.10-364.4\\vazkii\\botania\\client\\integration\\jei\\manapool\\ManaPoolRecipeWrapper.java"	
++++ "b/bansoukou\\Botania r1.10-364.4\\vazkii\\botania\\client\\integration\\jei\\manapool\\ManaPoolRecipeWrapper.java"	
+@@ -71,6 +71,9 @@ implements IRecipeWrapper {
+ 
+     @Nonnull
+     public List<String> getTooltipStrings(int mouseX, int mouseY) {
++        if (mouseX > 20 && mouseX < 125 && mouseY > 50 && mouseY < 54) {
++            return ImmutableList.of((Object)new StringBuffer().append(this.mana).append(" mana").toString());
++        }
+         return ImmutableList.of();
+     }
+ 

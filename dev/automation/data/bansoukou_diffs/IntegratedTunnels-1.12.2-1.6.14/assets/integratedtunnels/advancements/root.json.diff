@@ -1,0 +1,34 @@
+diff --git "a/~bansoukou_unpatched\\IntegratedTunnels-1.12.2-1.6.14\\assets\\integratedtunnels\\advancements\\root.json" "b/bansoukou\\IntegratedTunnels-1.12.2-1.6.14\\assets\\integratedtunnels\\advancements\\root.json"
+index 759c6558..46b271b9 100644
+--- "a/~bansoukou_unpatched\\IntegratedTunnels-1.12.2-1.6.14\\assets\\integratedtunnels\\advancements\\root.json"
++++ "b/bansoukou\\IntegratedTunnels-1.12.2-1.6.14\\assets\\integratedtunnels\\advancements\\root.json"
+@@ -13,29 +13,6 @@
+     "announce_to_chat": false
+   },
+   "parent": "integrateddynamics:network_foundations/variables",
+-  "rewards": {
+-    "recipes": [
+-      "integratedtunnels:part_interface_item_item",
+-      "integratedtunnels:part_interface_fluid_item",
+-      "integratedtunnels:part_interface_energy_item",
+-      "integratedtunnels:part_exporter_item_item",
+-      "integratedtunnels:part_exporter_fluid_item",
+-      "integratedtunnels:part_exporter_energy_item",
+-      "integratedtunnels:part_importer_item_item",
+-      "integratedtunnels:part_importer_fluid_item",
+-      "integratedtunnels:part_importer_energy_item",
+-      "integratedtunnels:part_exporter_world_item_item",
+-      "integratedtunnels:part_exporter_world_fluid_item",
+-      "integratedtunnels:part_exporter_world_energy_item",
+-      "integratedtunnels:part_exporter_world_block_item",
+-      "integratedtunnels:part_importer_world_item_item",
+-      "integratedtunnels:part_importer_world_fluid_item",
+-      "integratedtunnels:part_importer_world_energy_item",
+-      "integratedtunnels:part_importer_world_block_item",
+-      "integratedtunnels:part_player_simulator_item"
+-
+-    ]
+-  },
+   "criteria": {
+     "criteria_0": {
+       "trigger": "minecraft:inventory_changed",
