@@ -17,7 +17,7 @@ Here are `+200` up-to-date 1.12.2 mods (about 400 total). Despite this, the modp
 - ❤️ `Scaling Health`
 - 🛡️ `Construct's Armory`
 - ⛏️ `Harder Branch Mining`
-- ▪️▪️ `Little Tiles`
+- 🍱 `Little Tiles`
 - 🐀 `Rats`
 - 🐉 `Tinker's Evolution`
 
@@ -102,6 +102,14 @@ If you play on a server on which have already made these changes, the client doe
 </details>
 
 
+
+-----------------
+
+## Optional mods
+
+- [**Dynamic Surroundings**](https://www.curseforge.com/minecraft/mc-mods/dynamic-surroundings) - better sounds and environmental, but increaing load time and lower FPS a bit
+
+- [**Entity Culling**](https://www.curseforge.com/minecraft/mc-mods/entityculling) - increase performance, but can cause crashes on some machines
 
 -----------------
 
