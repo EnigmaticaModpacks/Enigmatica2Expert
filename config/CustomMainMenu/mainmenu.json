@@ -223,7 +223,9 @@
           "enigmatica:textures/slideshow/slideshow_20.jpg",
           "enigmatica:textures/slideshow/slideshow_22.jpg",
           "enigmatica:textures/slideshow/slideshow_23.jpg",
-          "enigmatica:textures/slideshow/slideshow_24.jpg"
+          "enigmatica:textures/slideshow/slideshow_24.jpg",
+          "enigmatica:textures/slideshow/TrashboxBobylev-2022-08-06_17.43.13.jpg",
+          "enigmatica:textures/slideshow/TrashboxBobylev-2022-08-06_17.46.15.jpg"
         ],
         "displayDuration": 100,
         "fadeDuration": 30,
