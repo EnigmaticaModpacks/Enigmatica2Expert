@@ -1,3 +1,4 @@
+#loader crafttweaker reloadableevents
 
 import crafttweaker.player.IPlayer;
 

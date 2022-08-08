@@ -41,13 +41,19 @@ function add(
     if(i==0) continue;
     dimensions += ", "~dim;
   }
+
+  val represent = scripts.category.dims.represent[dimWhitelist[0]];
+  val representItem = !isNull(represent)
+    ? <architecturecraft:shape>.withTag({Shape: 33, BaseName: represent.definition.id, BaseData: represent.damage})
+    : <biomesoplenty:earth>;
+
   <assembly:fluid_reservoir>.addJEIRecipe(AssemblyRecipe.create(function(c) {
     c.addFluidOutput('fluid0', liqud * ((minSize as double + maxSize as double) / 2.0d) as int);
     c.addFluidOutput('fluid1', liqud * pumpSpeed);
     c.addFluidOutput('fluid2', liqud * replenishRate);
   })
   .requireEnergy('energy_in', rft)
-  .requireItem("input0", <biomesoplenty:earth>.withTag({display:{Name:"§6"~name}}).withLore(["Dimensions: "~dimensions]))
+  .requireItem("input0", representItem.withTag({display:{Name:"§6"~name}}).withLore(["Dimensions: "~dimensions]))
   .requireItem("input1", <minecraft:heavy_weighted_pressure_plate> * weight)
   .requireItem("input2", <immersivetech:metal_barrel:1>.withTag({display:{Name:"§6AVERAGE SIZE"}}))
   .requireItem("input3", <immersiveengineering:metal_device1:6>.withTag({display:{Name:"§6PUMP SPEED"}}))
