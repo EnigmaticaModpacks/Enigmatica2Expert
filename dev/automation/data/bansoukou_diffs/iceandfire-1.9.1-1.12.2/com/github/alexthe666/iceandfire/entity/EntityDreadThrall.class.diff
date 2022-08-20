@@ -1,0 +1,40 @@
+diff --git "a/~bansoukou_unpatched\\iceandfire-1.9.1-1.12.2\\com\\github\\alexthe666\\iceandfire\\entity\\EntityDreadThrall.java" "b/bansoukou\\iceandfire-1.9.1-1.12.2\\com\\github\\alexthe666\\iceandfire\\entity\\EntityDreadThrall.java"
+index 24ed3012..37ad645f 100644
+--- "a/~bansoukou_unpatched\\iceandfire-1.9.1-1.12.2\\com\\github\\alexthe666\\iceandfire\\entity\\EntityDreadThrall.java"
++++ "b/bansoukou\\iceandfire-1.9.1-1.12.2\\com\\github\\alexthe666\\iceandfire\\entity\\EntityDreadThrall.java"
+@@ -242,7 +242,7 @@ IAnimalFear {
+     }
+ 
+     public boolean hasCustomArmorHead() {
+-        return (Boolean)this.field_70180_af.func_187225_a(CUSTOM_ARMOR_HEAD);
++        return false;
+     }
+ 
+     public void setCustomArmorHead(boolean head) {
+@@ -250,7 +250,7 @@ IAnimalFear {
+     }
+ 
+     public boolean hasCustomArmorChest() {
+-        return (Boolean)this.field_70180_af.func_187225_a(CUSTOM_ARMOR_CHEST);
++        return false;
+     }
+ 
+     public void setCustomArmorChest(boolean head) {
+@@ -258,7 +258,7 @@ IAnimalFear {
+     }
+ 
+     public boolean hasCustomArmorLegs() {
+-        return (Boolean)this.field_70180_af.func_187225_a(CUSTOM_ARMOR_LEGS);
++        return false;
+     }
+ 
+     public void setCustomArmorLegs(boolean head) {
+@@ -266,7 +266,7 @@ IAnimalFear {
+     }
+ 
+     public boolean hasCustomArmorFeet() {
+-        return (Boolean)this.field_70180_af.func_187225_a(CUSTOM_ARMOR_FEET);
++        return false;
+     }
+ 
+     public void setCustomArmorFeet(boolean head) {
