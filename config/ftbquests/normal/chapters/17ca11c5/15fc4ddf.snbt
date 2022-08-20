@@ -1,8 +1,8 @@
 {
 	title: "{bq.quest26.name}",
 	icon: "avaritia:infinity_pants",
-	x: 1.7083333333333335d,
-	y: 11.958333333333332d,
+	x: 1.625d,
+	y: 12.0d,
 	text: [
 		"{bq.quest26.desc}"
 	],

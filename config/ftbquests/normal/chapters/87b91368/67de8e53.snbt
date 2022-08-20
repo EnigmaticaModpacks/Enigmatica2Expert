@@ -15,6 +15,18 @@
 		type: "item",
 		items: [{
 			item: "animania:friesian_cheese_wheel"
+		},
+		{
+			item: "animania:holstein_cheese_wheel"
+		},
+		{
+			item: "animania:jersey_cheese_wheel"
+		},
+		{
+			item: "animania:goat_cheese_wheel"
+		},
+		{
+			item: "animania:sheep_cheese_wheel"
 		}]
 	}],
 	rewards: [{

@@ -7,8 +7,8 @@
 			Amount: 1000
 		}
 	},
-	x: 12.5d,
-	y: 7.5d,
+	x: 13.3d,
+	y: 6.5d,
 	text: [
 		"{bq.quest688.desc}"
 	],

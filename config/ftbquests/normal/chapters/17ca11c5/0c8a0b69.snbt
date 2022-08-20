@@ -1,8 +1,8 @@
 {
 	title: "{bq.quest357.name}",
 	icon: "extrautils2:rainbowgenerator",
-	x: 8.291666666666666d,
-	y: 2.208333333333334d,
+	x: 8.2d,
+	y: 2.2d,
 	text: [
 		"{bq.quest357.desc}"
 	],

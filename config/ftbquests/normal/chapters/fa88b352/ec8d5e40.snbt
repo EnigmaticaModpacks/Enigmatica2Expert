@@ -1,0 +1,28 @@
+{
+	x: 12.2d,
+	y: 7.0d,
+	text: [
+		"When you turn on the reactor, a plasma will be created along the loop. You can pump it out remotely (e.g. via RFTools Builder Pump), then simply restart the reactor."
+	],
+	dependencies: [
+		"918d1d17"
+	],
+	tasks: [{
+		uid: "d6af311d",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "plasma",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8d925fbb",
+		type: "loot",
+		table: 2
+	}]
+}

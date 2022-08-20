@@ -13,7 +13,7 @@
 		"{bq.quest746.desc}"
 	],
 	dependencies: [
-		"48f0d63f"
+		"2e632fad"
 	],
 	size: 0.6666666666666666d,
 	or_tasks: true,

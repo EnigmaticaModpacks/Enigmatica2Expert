@@ -154,7 +154,7 @@ bq.quest50.desc=你可能已经发现木板有些难做。\n在箱子中搜索�
 bq.quest51.name=挖掘等级4
 bq.quest51.desc=铅生成于Y=10-45。焦黑石英具有相同的挖掘等级，因此找到焦黑石英一样可以完成任务。
 bq.quest52.name=挖掘等级5
-bq.quest52.desc=锇只生成在§4基岩层§r. 获取 §c生铁§r 同样可以完成任务
+bq.quest52.desc=锇只生成在§4基岩层§r. 获取 §c生铁§r 同样可以完成任务。\n\n使用§6Bedrock Miner§r来实现自动化。
 bq.quest53.name=挖掘等级6
 bq.quest53.desc=在地底深处，你能看到流动的水遇到岩浆池生成的黑曜石。\n\n§5下界传送门§r 可以是经典的 §l2x3§r，但也可以是 §l1x2§r，§l1x3§r和§l2x2§r。
 bq.quest54.name=挖掘等级7
@@ -2168,7 +2168,7 @@ bq.quest1057.desc=对另一个方块执行输入或输出物品。查看JEI描�
 bq.quest1058.name=稳态末影珍珠
 bq.quest1058.desc=与§n聊天检测器§r和漏斗搭配，能够实现最廉价的§6/home§r指令。
 bq.quest1059.name=作物育种
-bq.quest1059.desc=工业2的作物杂交很廉价，而且前期就可以进行。\n\n举例来说，它是获得§6甘蔗§r最快的方法之一。
+bq.quest1059.desc=工业2的作物杂交很廉价，而且前期就可以进行。\n\n举例来说，它是获得§6甘蔗§r最快的方法之一。\n\nhttps://ftb.fandom.com/wiki/Crop_Breeding_(IndustrialCraft_2)
 bq.quest1060.name=作物分析器
 bq.quest1060.desc=§6额外的功能：§r\n\n手持分析器，按下[Side Inventory Key]可以查看杂交概率。
 bq.quest1061.name=刷怪改动

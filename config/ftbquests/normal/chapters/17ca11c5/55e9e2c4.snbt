@@ -1,8 +1,8 @@
 {
 	title: "{bq.quest44.name}",
 	icon: "rftools:creative_screen",
-	x: 8.291666666666666d,
-	y: 3.333333333333334d,
+	x: 8.2d,
+	y: 3.3d,
 	text: [
 		"{bq.quest44.desc}"
 	],

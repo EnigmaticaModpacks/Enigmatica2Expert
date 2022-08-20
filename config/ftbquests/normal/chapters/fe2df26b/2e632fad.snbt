@@ -1,0 +1,30 @@
+{
+	disable_toast: true,
+	x: 1.0d,
+	y: 1.0d,
+	text: [
+		"Welcome to AE2 chapter!"
+	],
+	dependencies: [
+		"48f0d63f"
+	],
+	size: 1.25d,
+	tasks: [{
+		uid: "b08c1bb5",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:inscriber"
+		}]
+	}],
+	rewards: [{
+		uid: "96486a31",
+		type: "item",
+		item: {
+			id: "appliedenergistics2:entropy_manipulator",
+			tag: {
+				internalCurrentPower: 200000.0d,
+				internalMaxPower: 200000.0d
+			}
+		}
+	}]
+}

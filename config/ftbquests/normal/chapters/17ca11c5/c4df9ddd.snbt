@@ -1,0 +1,22 @@
+{
+	x: 8.2d,
+	y: 1.0d,
+	text: [
+		"{bq.quest858.desc}"
+	],
+	dependencies: [
+		"29812a25"
+	],
+	tasks: [{
+		uid: "ee0c5a5b",
+		type: "item",
+		items: [{
+			item: "ae2wtlib:infinity_booster_card"
+		}]
+	}],
+	rewards: [{
+		uid: "93b10bce",
+		type: "loot",
+		table: 2
+	}]
+}

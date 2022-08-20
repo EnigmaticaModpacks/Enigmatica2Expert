@@ -1,13 +1,12 @@
 {
-	x: 4.725d,
-	y: 1.7249999999999999d,
+	x: 4.0d,
+	y: 2.5d,
 	text: [
 		"Network Great tool for managing your channels."
 	],
 	dependencies: [
 		"4bfcd69f"
 	],
-	size: 0.75d,
 	tasks: [{
 		uid: "a2b5edae",
 		type: "item",
