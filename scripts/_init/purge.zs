@@ -132,3 +132,4 @@ utils.rh(<jaopca:block_blocktungsten>);
 utils.rh(<jaopca:item_nuggettungsten>);
 utils.rh(<enderio:item_owl_egg>, false);
 utils.rh(<thermalfoundation:material:656>);
+utils.rh(<ae2stuff:visualiser>);

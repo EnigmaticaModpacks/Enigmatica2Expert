@@ -555,3 +555,48 @@ recipes.remove(<openblocks:scaffolding>);
 recipes.remove(<storagedrawers:customtrim>);
 utils.compact(<ore:stickWood>, <openblocks:scaffolding>);
 utils.compact(<openblocks:scaffolding>, <storagedrawers:customtrim>);
+
+# Crafting tables rework
+recipes.removeByRecipeName("minecraft:crafting_table");
+recipes.removeByRecipeName("tconstruct:tools/table/crafting_station");
+val PL = <ore:plankWood>;
+
+// Keep texture for station
+recipes.addShaped('Crafting Station textured', <tconstruct:tooltables>, [
+	[PL.marked('p1'),PL.marked('p2')],[PL.marked('p3'),PL.marked('p4')]
+], function(out, ins, cInfo) {
+	if(isNull(ins)
+		|| isNull(ins.p1)
+		|| isNull(ins.p2)
+		|| isNull(ins.p3)
+		|| isNull(ins.p4)
+	) return null;
+
+	// If every plank not same, return texturless
+	for i in 2 .. 5 {
+		if(!ins.p1.matches(ins['p'~i])) return out;
+	}
+
+	return <tconstruct:tooltables>.withTag({textureBlock: {id: ins.p1.definition.id, Count: 1 as byte, Damage: ins.p1.damage}});
+}, null);
+
+// Convert station to table but keeping texture
+recipes.addShapeless('Crafting Table conversion', <minecraft:crafting_table>, [
+	<tconstruct:tooltables>.marked('station')
+], function(out, ins, cInfo) {
+	if(isNull(ins) || isNull(ins.station)) return null;
+
+	if(isNull(ins.station.tag)
+		|| isNull(ins.station.tag.textureBlock)
+		|| isNull(ins.station.tag.textureBlock.id)
+		|| isNull(ins.station.tag.textureBlock.Damage)
+	) return out;
+
+	return <randomthings:customworkbench>.withTag({
+		woodName: ins.station.tag.textureBlock.id.asString(),
+		woodMeta: ins.station.tag.textureBlock.Damage.asInt()
+	});
+}, null);
+
+// Convert to vanilla
+recipes.addShapeless('Crafting Table 2', <minecraft:crafting_table>, [<ore:workbench>]);

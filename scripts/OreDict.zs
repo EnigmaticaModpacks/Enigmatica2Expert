@@ -707,3 +707,7 @@ addItems(<ore:singularityEntangled>, [
 ]);
 
 add(<ore:machineTeleporter>, <mekanism:machineblock:11>);
+
+addItems(<ore:workbench>, [
+	<randomthings:customworkbench>,
+]);

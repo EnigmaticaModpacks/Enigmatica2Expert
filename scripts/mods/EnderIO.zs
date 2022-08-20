@@ -597,7 +597,7 @@ craft.remake(<enderio:item_inventory_remote>, ["pretty",
   "    □",
   "□ I □",
   "□ T □"], {
-  "□": <enderio:block_painted_pressure_plate:4>, # Weighted Pressure Plate (Heavy)
+  "□": <minecraft:heavy_weighted_pressure_plate>,# Weighted Pressure Plate
   "T": <enderio:block_travel_anchor>,            # Travel Anchor
   "I": <enderio:block_inventory_panel>,          # Inventory Panel
 });

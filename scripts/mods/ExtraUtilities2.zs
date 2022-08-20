@@ -192,6 +192,17 @@ craft.remake(<extrautils2:ingredients:1>, ["pretty",
   "M": <extrautils2:decorativesolidwood>, # Magical Planks
 });
 
+# [Chicken Wing Ring] from [Golden Lasso][+3]
+craft.remake(<extrautils2:chickenring>, ["pretty",
+  "f ▬ f",
+  "▬ G ▬",
+  "♥ ▬ ♥"], {
+  "f": <ore:feather>, # Feather
+  "▬": <ore:ingotFakeIron>, # Iron Ingot
+  "G": <extrautils2:goldenlasso>.withTag({Animal: {id: "minecraft:chicken"}}), # Golden Lasso
+  "♥": <ore:gemRedstone>, # Resonating Redstone Crystal
+});
+
 # *======= Ring Of The Flying Squid =======*
 remake("Ring Of The Flying Squid",
 <extrautils2:chickenring:1>, 

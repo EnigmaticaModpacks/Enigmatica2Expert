@@ -92,7 +92,7 @@ ${filtered.join('\n')}`
 
 }*/
 
-# Total Furnace recipes registered: 916
+# Total Furnace recipes registered: 918
 # Filtered by JEI blacklist: 47
 # Filtered manuallly (antidupe): 15
 # Filtered by oredict: 201
@@ -260,8 +260,10 @@ infinFurnace(utils.get("ic2:misc_resource", 4), utils.get("ic2:crafting"));
 infinFurnace(utils.get("ic2:mug", 1), utils.get("ic2:mug", 2));
 infinFurnace(utils.get("ic2:purified", 1), utils.get("minecraft:gold_ingot"));
 infinFurnace(utils.get("ic2:purified", 2), utils.get("minecraft:iron_ingot"));
+infinFurnace(utils.get("ic2:purified", 3), utils.get("thermalfoundation:material", 13));
 infinFurnace(utils.get("ic2:purified", 4), utils.get("thermalfoundation:material", 130));
 infinFurnace(utils.get("ic2:purified", 5), utils.get("thermalfoundation:material", 129));
+infinFurnace(utils.get("ic2:purified", 6), utils.get("immersiveengineering:metal", 5));
 infinFurnace(utils.get("ic2:purified"), utils.get("thermalfoundation:material", 128));
 infinFurnace(utils.get("ic2:rubber_wood", W), utils.get("minecraft:log", 3));
 //infinFurnace(utils.get("iceandfire:dread_stone_bricks", W), utils.get("iceandfire:dread_stone_bricks_cracked"));

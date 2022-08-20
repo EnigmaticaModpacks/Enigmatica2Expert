@@ -36,6 +36,6 @@ val superMOT = <morphtool:tool>.withTag({"morphtool:is_morphing": 1 as byte, "mo
 
 recipes.addShaped("Superwrench", superMOT, [
 	[null, <ore:gearCopper>, null],
-	[<ore:gearSilver>, <morphtool:tool>, <ore:gearTin>], 
+	[<ore:gearAluminium>, <morphtool:tool>, <ore:gearTin>], 
 	[null, <ore:gearLead>, null]
 ]);

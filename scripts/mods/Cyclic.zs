@@ -173,7 +173,6 @@ val packagerList = [
   [<minecraft:concrete_powder:15> * 8], [sa, gr, <ore:dyeBlack>.firstItem],
 
   [<mctsmelteryio:iceball>   ], [<minecraft:snow> * 2     ],
-  [<mctsmelteryio:iceball>   ], [<minecraft:snowball> * 8 ],
   
   [<environmentalmaterials:alabaster> * 16], [<minecraft:cobblestone> * 4, <minecraft:dye:15>                   * 5],
   [<environmentalmaterials:alabaster> * 16], [<minecraft:cobblestone> * 4, <biomesoplenty:white_dye>            * 5],

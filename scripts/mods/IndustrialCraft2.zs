@@ -18,7 +18,9 @@ import scripts.jei.mod.ic2.addCrop as addCrop;
 
 # Missed ingot smeltings
 furnace.addRecipe(<thermalfoundation:material:131>, <ic2:crushed:3>);
-furnace.addRecipe(<immersiveengineering:metal:5>, <ic2:crushed:6>);
+furnace.addRecipe(<immersiveengineering:metal:5>,   <ic2:crushed:6>);
+furnace.addRecipe(<thermalfoundation:material:13>,  <ic2:purified:3>);
+furnace.addRecipe(<immersiveengineering:metal:5>,   <ic2:purified:6>);
 
 # Removing IC2 coal coke
 	recipes.remove(<ic2:coke>);
@@ -571,3 +573,14 @@ addSemifluidRecipe(<fluid:refined_biofuel>, 512000);
 
 # Solid Fuel Firebox output Ashes
 recipes.addShapeless('firebox_ashes', <forestry:ash>, [<ic2:misc_resource>]);
+
+# Oredicting recipe
+# [Industrial Workbench] from [Basic Machine Casing][+3]
+craft.remake(<ic2:te:88>, ["pretty",
+  "  w  ",
+  "T ■ o"], {
+  "w": <ore:workbench>, # Crafting Table
+  "T": <ore:craftingToolForgeHammer>, # Forge Hammer
+  "■": <ore:machineBlock>, # Basic Machine Casing
+  "o": <ore:craftingToolWireCutter>, # Cutter
+});

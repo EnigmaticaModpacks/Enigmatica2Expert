@@ -581,3 +581,13 @@ mods.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 800, <ore
 # Fix empty output recipe
 mods.immersiveengineering.Squeezer.removeByInput(<immersiveengineering:material:17> * 8);
 mods.immersiveengineering.Squeezer.addRecipe(<immersiveengineering:material:18>, <fluid:creosote> * 250, <ore:dustCoke> * 8, 3000);
+
+# Oredicting cheaper recipe
+# [Engineer's Workbench] from [Crafting Table][+2]
+craft.remake(<immersiveengineering:wooden_device0:2>, ["pretty",
+  "# # #",
+  "w   ≢"], {
+  "#": <ore:plankTreatedWood>, # Treated Wood Planks
+  "w": <ore:workbench>, 			 # Crafting Table
+  "≢": <ore:fenceTreatedWood>, # Treated Wood Fence
+});

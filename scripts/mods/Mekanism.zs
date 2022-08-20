@@ -669,3 +669,15 @@ craft.remake(<mekanism:basicblock2:5>, ["pretty",
 val OD = <mekanism:dust:2>;
 scripts.processWork.work(["Squeezer"],            null, [<ore:oreOsmium>], null, [OD  , OD], null, null, [0.75]);
 scripts.processWork.work(["MechanicalSqueezer"],  null, [<ore:oreOsmium>], null, [OD*2, OD], null, null, [0.5 ]);
+
+# Oredicting cheaper recipe
+# [Formulaic Assemblicator] from [Steel Mechanical Component][+3]
+craft.remake(<mekanism:machineblock3:5>, ["pretty",
+  "‚ w ‚",
+  ": S :",
+  "‚ w ‚"], {
+  "‚": <ore:nuggetSteel>, # Steel Nugget
+  "w": <ore:workbench>, # Crafting Table
+  ":": <ore:oc:materialCircuitBoardPrinted>, # Printed Circuit Board (PCB)
+  "S": <immersiveengineering:material:9>, # Steel Mechanical Component
+});

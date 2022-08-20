@@ -372,3 +372,10 @@ craft.remake(<avaritiafurnace:fuelcompressor>, ["pretty",
   "#": <forestry:logs.2:1>,           # Ebony Log
   "▬": <ore:ingotBlackIron>           # Black Iron Ingot
 });
+
+# Oredicting recipe
+# [Compressed Crafting Table] from [Crafting Table]
+recipes.removeByRecipeName("avaritia:blocks/crafting/compressed_crafting_table");
+craft.shapeless(<avaritia:compressed_crafting_table>, "wwwwwwwww", {
+  "w": <ore:workbench>, # Crafting Table
+});
