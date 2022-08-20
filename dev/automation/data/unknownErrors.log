@@ -1,18 +1,15 @@
-[pool-2-thread-4/ERROR] [ModDirector/InstallController[CORE]]: Failed to query information for 307806:2820815 from Curse
-[pool-2-thread-1/ERROR] [ModDirector/InstallController[CORE]]: Failed to query information for 238891:3497269 from Curse
 [main/ERROR] [mixin]: Mixin config mixins.mixincompat.json does not specify "minVersion" property
+[main/ERROR] [mixin]: Mixin config mixins.spectral_edge.json does not specify "minVersion" property
 [main/WARN] [mixin]: Reference map 'mixins.mixincompat.refmap.json' for mixins.mixincompat.json could not be read. If this is a development environment you can ignore this message
-[main/WARN] [mixin]: @Mixin target net/minecraft/client/renderer/RenderGlobal$ContainerLocalRenderInformation is public in mixins.ondemand_sprites.json:ContainerLocalRenderInformationAccessor and should be specified in value
 [Client thread/WARN] [smoothfont]: Fonts folder "fontfiles" does not exist.
-[Client thread/INFO] [STDERR]: [org.spongepowered.asm.util.Locals:generateLocalVariableTable:396]: org.objectweb.asm.tree.analysis.AnalyzerException: Error at instruction 880: null
 [Client thread/WARN] [ocsensors]: Could not find field 'careerId' in class 'net.minecraft.entity.passive.EntityVillager'! Exception=net.minecraftforge.fml.relauncher.ReflectionHelper$UnableToFindFieldException: java.lang.NoSuchFieldException: careerId
 [Client thread/WARN] [ocsensors]: Could not find field 'buyingList' in class 'net.minecraft.entity.passive.EntityVillager'! Exception=net.minecraftforge.fml.relauncher.ReflectionHelper$UnableToFindFieldException: java.lang.NoSuchFieldException: buyingList
-[Client thread/ERROR] [HadEnoughItems]: An interpreter is already registered for this item: exnihilocreatio.modules.tconstruct.tools.SledgeHammer@17deda87
-[Client thread/ERROR] [HadEnoughItems]: An interpreter is already registered for this item: exnihilocreatio.modules.tconstruct.tools.TiCrook@688c08de
+[Client thread/ERROR] [HadEnoughItems]: An interpreter is already registered for this item: exnihilocreatio.modules.tconstruct.tools.SledgeHammer@526e1cde
+[Client thread/ERROR] [HadEnoughItems]: An interpreter is already registered for this item: exnihilocreatio.modules.tconstruct.tools.TiCrook@5252b593
 [Client thread/ERROR] [HadEnoughItems]: Recipe has no output. Extra Utilities 2 extrautils2:shortcut_hopper class com.rwtema.extrautils2.crafting.AlwaysLast$XUShapedRecipeAlwaysLast
-[Client thread/ERROR] [HadEnoughItems]: Failed to register mod plugin: class com.blakebr0.mysticalagriculture.compat.jei.CompatJEI
 [Client thread/ERROR] [HadEnoughItems]: A Recipe Handler has already been registered for 'jeresources.plant': jeresources.entry.PlantEntry
 [Client thread/ERROR] [HadEnoughItems]: A Recipe Handler has already been registered for 'jeresources.villager': jeresources.entry.VillagerEntry
+[Client thread/ERROR] [HadEnoughItems]: Failed to register mod plugin: class com.blakebr0.mysticalagriculture.compat.jei.CompatJEI
 [Client thread/ERROR] [HadEnoughItems]: A Recipe Handler has already been registered for this recipe class: com.github.alexthe666.iceandfire.recipe.DragonForgeRecipe
 [Client thread/ERROR] [HadEnoughItems]: A Recipe Handler has already been registered for this recipe class: com.github.alexthe666.rats.server.recipes.SharedRecipe
 [Client thread/ERROR] [HadEnoughItems]: A Recipe Handler has already been registered for this recipe class: com.github.alexthe666.rats.server.recipes.SharedRecipe
@@ -21,4 +18,6 @@
 [Client thread/WARN] [particleculling]: Could not find particle class com.TominoCZ.FBP.particle.FBPParticleBlock. If the mod is not installed, this can be ignored.
 [Client thread/WARN] [particleculling]: Could not find particle class xzeroair.trinkets.client.particles.ParticleGreed. If the mod is not installed, this can be ignored.
 [Client thread/WARN] [smoothfont]: renderChar method might be replaced. Fix the space width to 4 (MC default).
-[pool-13-thread-1/ERROR] [base]: java.io.FileNotFoundException: biomesoplenty:textures/items/gem.png
+[Client thread/WARN] [ResourceLoader]: [NormalResourceLoader] Resource Location enigmatica:textures/slideshow/trashboxbobylev-2022-08-06_17.46.15.jpg only matches the file TrashboxBobylev-2022-08-06_17.46.15.jpg because RL is running in an environment that isn't case sensitive in regards to file names. This will not work properly on for example Linux.
+[pool-12-thread-1/ERROR] [base]: java.io.FileNotFoundException: biomesoplenty:textures/items/gem.png
+[Client thread/WARN] [ResourceLoader]: [NormalResourceLoader] Resource Location enigmatica:textures/slideshow/trashboxbobylev-2022-08-06_17.43.13.jpg only matches the file TrashboxBobylev-2022-08-06_17.43.13.jpg because RL is running in an environment that isn't case sensitive in regards to file names. This will not work properly on for example Linux.
