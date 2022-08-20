@@ -3,7 +3,7 @@
 import crafttweaker.item.IItemStack;
 
 static represent as IItemStack[int] = {
-  0          : <minecraft:grass>,
+  0          : <quark:turf>,
   1          : <minecraft:end_stone>,
   -1         : <minecraft:netherrack>,
   144        : <compactmachines3:wallbreakable>,
