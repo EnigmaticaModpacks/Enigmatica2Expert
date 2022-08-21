@@ -18,7 +18,7 @@ export async function init(h = defaultHelper) {
   const crafttweaker_log = loadText('crafttweaker.log')
   const conflictingStartText = '[SERVER_STARTED][SERVER][INFO] Conflicting: '
   const conflictingIndex = crafttweaker_log.indexOf(conflictingStartText)
-  if (conflictingIndex == -1) return noConflicts(h)
+  if (conflictingIndex === -1) return noConflicts(h)
 
   const subLog = crafttweaker_log.substring(conflictingIndex)
   const unfilteredConflicts = [
@@ -82,9 +82,21 @@ function handleConflict(match) {
   if (fineConflicts.some((isFine) => isFine(r1, r2))) return
 
   allConflicts.push([
-    `${chalk.rgb(160, 250, 100)(rec1_item)}\n${chalk.rgb(160, 250, 200)(rec2_item)}`,
-    `${chalk.rgb(100, 200, 100)(rec1_out)}\n${chalk.rgb(100, 200, 200)(rec2_out)}`,
-    `${chalk.rgb(50, 120, 20)(rec1_name)}\n${chalk.rgb(50, 120, 120)(rec2_name)}`,
+    `${chalk.rgb(160, 250, 100)(rec1_item)}\n${chalk.rgb(
+      160,
+      250,
+      200
+    )(rec2_item)}`,
+    `${chalk.rgb(100, 200, 100)(rec1_out)}\n${chalk.rgb(
+      100,
+      200,
+      200
+    )(rec2_out)}`,
+    `${chalk.rgb(50, 120, 20)(rec1_name)}\n${chalk.rgb(
+      50,
+      120,
+      120
+    )(rec2_name)}`,
   ])
 }
 

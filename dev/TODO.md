@@ -1,9 +1,16 @@
 # TODO list
 
+- [x] ✏️ Monster Ball Uncraftable
+- [ ] ✏️ Make new replicator machine
+- [ ] ✏️ Random Things crafting table make oredicted, add recipe function
 - [ ] ✏️ More Alien Crystal blocks + mica to get Crystaltine and ET gems
 - [ ] ✏️ Remove Cyclic's machines completely because they are laggy
 - [ ] ✏️ Add chaos shards recipe for Skyblock. Probably RFT Syringe in 5 steps => Struck Lightning
 - [ ] ✏️ Remove Dragon Forge crafts (because its unautomateable)
+- [ ] ✏️ Cyclic mob capturer not working
+- [x] ✏️ Chicken Wing Ring uncraftable
+- [ ] ✏️ Milk Questing Ram to color essence
+- [x] ✏️ Cannot smelt IC2 Purified Crushed Lead Ore
 - [ ] 📀 Add Meat to Meaty orb https://github.com/daedalus4096/ThaumicWonders/blob/251829dee76d72368d0ed0af1f2104121b781e63/src/main/java/com/verdantartifice/thaumicwonders/common/tiles/devices/TileMeatyOrb.java#L49-L53
 - [ ] 📀 Buff Golem Stats
 - [ ] 📀 Make Essentia Seeds grows only on planet (Stella?)
@@ -12,6 +19,7 @@
 - [ ] 📀 Fix BedrockOre cant go 1 height flat https://github.com/MightyPirates/BedrockOres/blob/master-MC1.12/src/main/java/li/cil/bedrockores/common/world/WorldGeneratorBedrockOre.java#L92
 - [ ] 📀 Adv. Rock tank left 64 buckets when broken
 - [ ] 📀 Auto sieve require more RF/T (about millions)
+- [ ] 🟢 Install https://www.curseforge.com/minecraft/mc-mods/back-tools
 
 ---
 
