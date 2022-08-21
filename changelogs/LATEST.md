@@ -1,64 +1,60 @@
-# v0.66.0
+# v0.67.0
 
 
 ## 🟡 Updated Mods
 
-- **Zen Utils**
-- **Chunk-Pregenerator**
-- **CensoredASM**
-- **ThaumTweaks**
-- **Lootr (Forge)**
+- **AE2 Unofficial Extended Life**
+- **Fluidlogged API**
+- **Had Enough Items**
+- **Spectral Edge**
+- **Aqua Acrobatics**
+- **Village Names**
 - **AE2 Fluid Crafting Rework**
-- **Quark: RotN Edition**
+- **CraftTweaker**
 
 
 ## ✏️ **Recipes**
-  - ### 🖉 **New Recipes**
-    - <img src="https://i.imgur.com/gDy9Ar0.png" align=right> ![](https://is.gd/Qhrxfp "Ender Dragon Data Model") can be upgraded without killing dragon
-    - ![](https://is.gd/FYLOHg "Treated Stick") from ![](https://is.gd/HBBDrk "Treated Wood Planks")
-    - ![](https://is.gd/ZbNSw1 "Oxidized Ferric Sand") now obtainable from Asteroids
-    - ![](https://is.gd/FrsEcH "Alumite Ingot") in Arc Furnace and ![](https://is.gd/oVvQdq "Alumite Block") in ![](https://is.gd/O19A3r "Electric Arc Furnace")
+  - ### ✐ **Cheaper**: ![](https://is.gd/cyIWmZ "Formulaic Assemblicator") not requre ![](https://is.gd/43tx1G "Steel Casing") anymore
 
   - ### ✏ **Misc Changes**
-    - ![](https://is.gd/gUYFvk "Lava Heat Exchanger") x2 power output buff
-    - ![](https://is.gd/JkIhF9 "Clay-Coated Glowstone Dust") remove from [Arc Furnace] to make ![](https://is.gd/0eVQUR "Energetic Alloy Ingot") craftable
-    - ![](https://is.gd/l9ISXw "Quantum Entangled Singularity") make oredicted to make craftable in ME
-    - ![](https://is.gd/C37CSz "Ashes") from ![](https://is.gd/vZIgLF "Solid Fuel Firebox") make convertable to ![](https://is.gd/JDTXC0 "Ash")
-    - ![](https://is.gd/RdmasP "Quantum Entangloporter") fix ME unpatternable
+    - <img src="https://i.imgur.com/sPDTkL9.png" width=50% align=right> ![](https://is.gd/XKPEGn "Crafting Station") now crafted instead ov vanilla ![](https://is.gd/mgkdAs "Crafting Table").
+      > Table could be converted from Station. Some recipes that using Crafting Table as ingredient was oredicted.
+    - ![](https://is.gd/JH1wMy "Chicken Wing Ring") fix uncraftable
+    - ![](https://is.gd/q5Dw2P "Purified Crushed Lead Ore")![](https://is.gd/j4Aiga "Purified Crushed Uranium Ore") fix unsmeltable
+    - ![](https://is.gd/zRRmNV "Network Visualisation Tool") purge and add tooltip about replacement
+    - ![](https://is.gd/L3pRMp "Monster Ball") fix craft
+    - ![](https://is.gd/sTakGu "Morphing Tool") replace ![](https://is.gd/cNcUwj "Silver Gear") => ![](https://is.gd/FDrAd0 "Aluminum Gear"), fixes https://github.com/Krutoy242/Enigmatica2Expert-Extended/issues/87
+    - [Inventory Panel Remote] fix uncraftable
 
 
 
 ## 🔵 **Mods updates**
 
-  - ### <img src="https://i.imgur.com/Hn3dxx4.png" width=300 align=right> 🔌 **Industrial Craft 2**: Disable Explosions 💣
-      > People are tired exploding their ![](https://is.gd/OokXq2 "Matter Fabricator")
+  - ### 🏪 **Requious Fracto**: <img src="https://i.imgur.com/omLUmp4.png" align=right> Change JEI planets icons, add flux goo hint
 
-  - ### ☢️ **NuclearCraft**: Compressed RTGs - add radiation
+  - Fixes https://github.com/Krutoy242/Enigmatica2Expert-Extended/issues/84
 
-  - ### 🏪 **Requious Fracto**: Add ![](https://is.gd/wJA44E "Firefly") and ![](https://is.gd/8aolIw "Cicada") hints from Twilight trees
+  - ### 🐉 **Ice and Fire**: Remove armor from `Dread Thrall`
+      > Hopefully fixes https://github.com/Krutoy242/Enigmatica2Expert-Extended/issues/80
 
-  - ### 🛢️ **Immersive Petroleum**: Add planet spheres in JEI
-      > Instead of BOP planet now would be sphere with appropriate block.
+  - ### 🐻 **Better Animals Plus**: Naval animals x3 - x4 times less spawn
+      > This should help squids spawn more.
+      > Anyway, you can always spawn squids with bait.
 
 
 
 ## 🔄 **Misc Changes**
-  - <img src="https://i.imgur.com/ceAIjx1.png" width=300 align=right> ![](https://is.gd/bJM8Ye "Fluid Pipe") now fluidloggable
-  - Add 2 new screenshots to main menu
-  - Regenerate Thaumcraft aspects
-  - **Chronologist** mob cap spawn to <20
-  - **Lootr** disable conversions of ![](https://is.gd/C2E15A "Dropper") and ![](https://is.gd/uieLFV "Dispenser")
-  - ![](https://is.gd/Q4LD0S "Void Helm")![](https://is.gd/BL7Tn4 "Void Chestplate")![](https://is.gd/JfwGDV "Void Leggings")![](https://is.gd/axfV5v "Void Boots") nerf protection
-  - ### 🧩 **Mod Director**: Remove `Dynamic Surroundings` and `Ore Lib`
-      > ModDirector cant load mods from CurseForge anymore
 
+  - <img src="https://i.imgur.com/Y0rVg0K.png" width=300 align=right> About 400 modded blocks now Fluidloggable. [Screenshot 2](https://i.imgur.com/OVihTqd.jpeg).
+  - ![](https://is.gd/pchFPH "Flopper") x2 faster working to be anough speed for combinings with ![](https://is.gd/jddHvL "Drying Basin")
+  - Add 4 new screenshots to main menu from player `jimgo514`
   - ### 📖 **Quest Book**: Quests: Misc changes
-      > - Reward ![](https://is.gd/AFdGA5 "Heavy Ingot") with [Labeled Crate]
-      > - ![](https://is.gd/LUafcg "Compacting Drawer") remove slime conversion hint (conversion not working)
-      > - ![](https://is.gd/U0Pz71 "Zombie Data Model") Add quest
-      > - ![](https://is.gd/tsdolA "Rat on Arrow") can't be tamed hint
-
-  - ### 📜 **Text**: **Difficulty** trait ![](https://is.gd/pDF2bQ "Pink Slime Ingot"), add hint about working on armor
+      > - Accept any cheese wheels now
+      > - Add plasma bucket tip
+      > - ![](https://is.gd/XqCZsR "Bedrock Miner") tip
+      > - ![](https://is.gd/3YSbk7 "Crop") wiki link
+      > - ![](https://is.gd/E5SXgp "Infinity Booster Card") move to Bragging Rights
+      > - Add missing AE2 opening quest
 
 
 
