@@ -133,15 +133,19 @@ zenClass Craft {
       : item.amount > 1 ? ("*"~item.amount as string) : "";
   }
 
+  function itemSerializeName(item as IIngredient) as string {
+    return "["~itemName(item)~"]";
+  }
+
   function itemSerialize(item as IIngredient) as string {
-    return "["~itemName(item)~"]"~itemCount(item);
+    return itemSerializeName(item)~itemCount(item);
   }
 
   function recipeName(output as IItemStack, gridStr as string[], options as IIngredient[string]) as string { return recipeName(output, Grid(gridStr, options)); }
   function recipeName(output as IItemStack, grid as Grid) as string {return recipeName(grid.getMainIngredient(), output, grid.uniqueIngredientsCount);}
   function recipeName(mainInput as IIngredient, output as IItemStack, adsCount as int) as string {
     var ads = adsCount >= 2 ? ("[+"~(adsCount - 1)~"]") : "";
-    return itemSerialize(output) ~ " from "~itemSerialize(mainInput) ~ ads;
+    return itemSerialize(output) ~ " from "~itemSerializeName(mainInput) ~ ads;
   }
 
   function uniqueRecipeName(output as IItemStack, grid as Grid = null) as string {

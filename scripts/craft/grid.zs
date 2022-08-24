@@ -297,13 +297,12 @@ zenClass Grid {
   }
 
   # Return string representation of grid
-  function toString() as string { return toString([]); }
-  function toString(_style as string[]) as string {
+  function toString(_style as string[] = null) as string {
     val style as string[] = isNull(_style) ? [] : _style;
 
     val isDense     =  (style has "dense");
     val isShapeless =  (style has "shapeless");
-    val isPretty    = !isShapeless && !isDense && !(style has "noPretty");
+    val isPretty    = !isShapeless && !isDense && !(style has "noPretty") && (X > 1 && Y > 1);
     val ln   = isDense ? "" : "\n";
     val dlim = (isDense ? ", " : ",") ~ ln;
 
@@ -334,7 +333,7 @@ zenClass Grid {
     s += isShapeless?'"':"]";
 
     # Add Ingredients Table
-    if(!(style has "noMap")) {
+    if(!(style has "noMap") && !(style has "merged")) {
       val opts_s = isNull(opts)
         ? "<options is not provided>"
         : serialize.IIngredient_string_(opts, style, getOrder());
@@ -366,7 +365,65 @@ zenClass Grid {
     }
     map = newMap;
 
+    X = X - right - left;
+    Y = Y - bottom - top;
+
     return this;
+  }
+
+  # Remove item from grid and count its amount
+  function extractItem(id as string, default as int = 0) as int {
+    var result = 0;
+
+    for y in 0 .. Y {
+      for x in 0 .. X {
+        val ingr = getIngr(x, y);
+        if(isNull(ingr)) continue;
+
+        for item in ingr.itemArray {
+          if(item.definition.id != id) continue;
+          result += ingr.amount;
+          remove(x, y);
+        }
+      }
+    }
+
+    return result != 0 ? result : default;
+  }
+
+  function extractByTag(keyPath as string, valuePath as string) as int[string] {
+    var result as int[string] = {};
+    for y in 0 .. Y {
+      for x in 0 .. X {
+        val ingr = getIngr(x, y);
+        if(isNull(ingr)) continue;
+
+        for item in ingr.itemArray {
+          val d = D(item.tag);
+          if(!d.check(keyPath)) continue;
+
+          val key = d.getString(keyPath, '');
+          if(key.length == 0) continue;
+
+          val amount = ingr.amount * d.getInt(valuePath, 1);
+          result[key] = amount;
+          remove(x, y);
+          break;
+        }
+      }
+    }
+
+    return result;
+  }
+
+  function extractByTagSerialize(keyPath as string, valuePath as string, serFn as function(string,int)string) as string {
+    var result = '';
+    var first = true;
+    for k, v in extractByTag(keyPath, valuePath) {
+      result ~= (first ? '' : ', ') ~ serFn(k, v);
+      first = false;
+    }
+    return '['~result~']';
   }
 
   #------------------------------------------------------------------

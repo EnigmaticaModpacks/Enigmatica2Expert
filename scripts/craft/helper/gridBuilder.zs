@@ -2,22 +2,13 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import scripts.craft.grid.Grid;
 import scripts.craft.helper.characterManager.CharacterManager;
+import scripts.craft.helper.styler.styler;
 #priority 3
 
 #loader crafttweaker reloadableevents
 
 
 zenClass GridBuilder {
-
-  # This items in catalyst slot would add this styles
-  val catalystsStyles as string[string] = {
-    "minecraft:glass_pane"        : "shapeless",
-    "minecraft:iron_nugget"       : "removeByRecipeName",
-    "thaumcraft:infusion_matrix"  : "tcInfusion",
-    "thaumcraft:arcane_workbench" : "tcWorkbench",
-    "thaumcraft:crucible"         : "tcCrucible",
-  } as string[string];
-
   var grid2d as IIngredient[][] = [];
   var haveData as bool = false;
   var maxX as int = 0;
@@ -27,7 +18,6 @@ zenClass GridBuilder {
 
   # Calculated fields
   var map as IIngredient[string] = null;
-  var length as int = 0;
   var grid as Grid = null;
   var isBuilt as bool = false;
 
@@ -67,18 +57,15 @@ zenClass GridBuilder {
     }
   }
 
-  function insertCatalyst(ingr as IIngredient) as void {
-    if(isNull(ingr)) return;
+  function insertCatalyst(item as IItemStack) as void {
+    if(isNull(item)) return;
 
-    for item in ingr.items {
-      val id = item.commandString.replaceAll("<", "").replaceAll(">.*", "");
-      for catl, newStyle in catalystsStyles {
-        if(id.matches(catl)) {
-          localStyle += newStyle;
-          return;
-        }
+    for catalyst, newStyle in styler.catalysts {
+      if(item.definition.id.matches(catalyst)) {
+        localStyle += newStyle;
       }
     }
+    localStyle += item.definition.id;
   }
 
   function writeToMap(map_weight as int[IIngredient]) {
@@ -114,17 +101,6 @@ zenClass GridBuilder {
       val map_weight as int[IIngredient] = {};
       writeToMap(map_weight);
       map = CharacterManager().getMap(map_weight);
-    }
-
-    # Calculate minimum length of serialized form
-    length = (maxX + 3) * (maxY - 1) - 2; # Char Grid size
-    if(isMerged) {
-      length += 5;
-    } else {
-      for c, ingr in map {
-        length += serialize.IIngredient(ingr).length + 5;
-      }
-      length -= 2; # trail
     }
 
     # Flipped map

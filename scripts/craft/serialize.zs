@@ -5,8 +5,6 @@ import crafttweaker.item.WeightedItemStack;
 import crafttweaker.liquid.ILiquidDefinition;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.oredict.IOreDictEntry;
-import mod.mekanism.gas.IGasStack;
-import thaumcraft.aspect.CTAspectStack;
 
 #priority 3000
 
@@ -205,22 +203,6 @@ zenClass Serialize {
 
   function IBlock(a as IBlock) as string {
     return !isNull(a) ? (a.definition.defaultState.commandString) : 'null';
-  }
-
-  function IGasStack(a as IGasStack) as string {
-    return !isNull(a) ? ("<gas:"~a.NAME~">" ~ (a.amount>1 ? " * " ~ a.amount : "")) : 'null';
-  }
-
-  function CTAspectStack(a as CTAspectStack) as string {
-    return !isNull(a) ? ("<aspect:"~a.internal.name~">" ~ (a.amount>1 ? " * " ~ a.amount : "")) : 'null';
-  }
-
-  function CTAspectStack__(a as thaumcraft.aspect.CTAspectStack[]) as string {
-    var s = [] as string[];
-    for k,v in a {
-      s += CTAspectStack(v);
-    }
-    return string__(s);
   }
 }
 global serialize as Serialize = Serialize();
