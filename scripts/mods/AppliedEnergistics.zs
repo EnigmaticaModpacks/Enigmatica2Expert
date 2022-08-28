@@ -397,10 +397,10 @@ val qglass_grid = ["pretty",
   "• • •"] as string[];
 mods.forestry.ThermionicFabricator.addCast(<appliedenergistics2:quartz_glass> * 10, Grid(qglass_grid, {
   "•": <ore:dustQuartz>,
-}).shaped(), <liquid: glass> * 1000, <forestry:wax_cast:*>);
+}).shaped(), <liquid:glass> * 1000, <forestry:wax_cast:*>);
 mods.forestry.ThermionicFabricator.addCast(<appliedenergistics2:quartz_glass> * 10, Grid(qglass_grid, {
   "•": <ore:dustCertusQuartz>,
-}).shaped(), <liquid: glass> * 1000, <forestry:wax_cast:*>);
+}).shaped(), <liquid:glass> * 1000, <forestry:wax_cast:*>);
 
 # ---------------------------------------------------------
 

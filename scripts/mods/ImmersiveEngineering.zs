@@ -505,7 +505,7 @@ mods.forestry.ThermionicFabricator.addCast(<immersiveengineering:stone_decoratio
   "▲d▲"], {
   "▲": <ore:dustIron>, # Pulverized Iron
   "d": <ore:dyeGreen>, # Cactus Green
-}).shaped(), <liquid: glass> * 1000, <forestry:wax_cast:*>);
+}).shaped(), <liquid:glass> * 1000, <forestry:wax_cast:*>);
 
 # ---------------------------------------------------------
 
