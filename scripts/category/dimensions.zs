@@ -32,6 +32,7 @@ events.onPlayerTick(function(e as crafttweaker.event.PlayerTickEvent){
 
 function isForbidTravel(player as IPlayer, dimension as int) as bool {
   checkAndGrant(player);
+  if(player.creative) return false;
 
   val isNether = dimension == -1;
   if(player.hasGameStage("skyblock")) {
@@ -72,7 +73,7 @@ events.onPlayerChangedDimension(function(e as crafttweaker.event.PlayerChangedDi
   if(e.entity.world.isRemote()) return;
   if(!e.player.creative && isForbidTravel(e.player, e.to)) {
     e.player.world.catenation().sleep(20).then(function(world) {
-      server.commandManager.executeCommand(server, '/cofh tpx '~e.player.name~' 0');
+      server.commandManager.executeCommand(server, '/tpx '~e.player.name~' 0');
     }).start();
   }
 });

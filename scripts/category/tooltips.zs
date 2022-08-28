@@ -287,20 +287,6 @@ for i,a in [
 Bucket("blockfluidantimatter").addTooltip(format.aqua(desc.local("strike_with_lightning")));
 
 
-//Add tooltips to biome gems.
-for gems, tip in {
-  [<ore:gemAmber>,    <ore:oreAmber>]    : "found.forest" ,
-  [<ore:gemMalachite>,<ore:oreMalachite>]: "found.swamp" ,
-  [<ore:gemPeridot>,  <ore:orePeridot>]  : "found.plains" ,
-  [<ore:gemRuby>,     <ore:oreRuby>]     : "found.arid" ,
-  [<ore:gemSapphire>, <ore:oreSapphire>] : "found.ocean" ,
-  [<ore:gemTanzanite>,<ore:oreTanzanite>]: "found.cold" ,
-  [<ore:gemTopaz>,    <ore:oreTopaz>]    : "found.lush" ,
-} as string[IOreDictEntry[]] {
-	for gem in gems { gem.firstItem.addTooltip(desc.local(tip)); }
-}
-
-
 # Thaumcraft Curiocity
 val lp = desc.local("thaum.progress").toLowerCase();
 <thaumcraft:curio:0>.addTooltip("§f+ §5"~desc.local("thaum.auromancy")~"§f " ~ lp);
