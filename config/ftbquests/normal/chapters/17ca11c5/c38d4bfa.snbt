@@ -1,0 +1,22 @@
+{
+	x: 3.8d,
+	y: 5.1d,
+	dependencies: [
+		"7e987598",
+		"a1377b51"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "99565dad",
+		type: "item",
+		disable_toast: true,
+		items: [{
+			item: "extendedcrafting:table_ultimate"
+		}]
+	}],
+	rewards: [{
+		uid: "fd327364",
+		type: "loot",
+		table: 3
+	}]
+}

@@ -3,6 +3,7 @@
 	icon: "quark:slime_bucket",
 	x: -20.666666666666664d,
 	y: 13.5d,
+	shape: "heart",
 	text: [
 		"{bq.quest950.desc}"
 	],

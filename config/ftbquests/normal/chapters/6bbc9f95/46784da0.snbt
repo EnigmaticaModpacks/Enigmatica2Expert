@@ -1,0 +1,22 @@
+{
+	x: 8.4d,
+	y: -0.4d,
+	text: [
+		"Any Vis Seeds craftable, but can be planted only on other planets, added by Advanced Rocketry mod."
+	],
+	dependencies: [
+		"a54068bb"
+	],
+	tasks: [{
+		uid: "23b46d97",
+		type: "item",
+		items: [{
+			item: "thaumadditions:vis_seeds/vitium"
+		}]
+	}],
+	rewards: [{
+		uid: "f3f04a83",
+		type: "loot",
+		table: 0
+	}]
+}

@@ -3,6 +3,7 @@
 	icon: "minecraft:apple",
 	x: -21.833333333333332d,
 	y: 17.166666666666668d,
+	shape: "heart",
 	text: [
 		"{bq.quest1022.desc}"
 	],

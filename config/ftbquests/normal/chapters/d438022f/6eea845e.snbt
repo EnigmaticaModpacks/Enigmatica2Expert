@@ -3,6 +3,7 @@
 	icon: "bibliocraft:framingsaw",
 	x: -12.666666666666668d,
 	y: 23.666666666666668d,
+	shape: "heart",
 	text: [
 		"{bq.quest951.desc}"
 	],

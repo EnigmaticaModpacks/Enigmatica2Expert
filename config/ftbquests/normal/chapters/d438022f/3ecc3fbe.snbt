@@ -3,6 +3,7 @@
 	icon: "rustic:cabinet",
 	x: -20.833333333333332d,
 	y: 21.333333333333336d,
+	shape: "heart",
 	text: [
 		"{bq.quest956.desc}"
 	],

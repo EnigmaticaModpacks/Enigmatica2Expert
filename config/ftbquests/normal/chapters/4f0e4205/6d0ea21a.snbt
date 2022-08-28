@@ -1,0 +1,31 @@
+{
+	x: 1.4d,
+	y: -0.4d,
+	text: [
+		"You can spawn Questing Ram by crafting its Morb.",
+		"",
+		"(Any morb will finish this quest)"
+	],
+	dependencies: [
+		"14296664"
+	],
+	dependency_requirement: "one_started",
+	size: 0.5d,
+	tasks: [{
+		uid: "f72f1182",
+		type: "item",
+		items: [{
+			id: "thermalexpansion:morb",
+			tag: {
+				id: "twilightforest:quest_ram"
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0fcab2df",
+		type: "item",
+		item: "deepmoblearning:living_matter_twilight",
+		count: 5
+	}]
+}

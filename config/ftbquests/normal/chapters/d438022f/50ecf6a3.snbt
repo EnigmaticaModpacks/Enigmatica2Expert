@@ -3,6 +3,7 @@
 	icon: "darkutils:material",
 	x: -6.333333333333333d,
 	y: 23.5d,
+	shape: "heart",
 	text: [
 		"{bq.quest963.desc}"
 	],

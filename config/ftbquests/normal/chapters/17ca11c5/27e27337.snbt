@@ -1,14 +1,14 @@
 {
 	title: "{bq.quest927.name}",
 	icon: "psi:cad_assembly 1 5",
-	x: 7.208333333333333d,
-	y: 5.041666666666668d,
+	x: 7.1d,
+	y: 5.1d,
 	text: [
 		"{bq.quest927.desc}"
 	],
 	dependencies: [
 		"7e987598",
-		"3bcf46b6"
+		"c38d4bfa"
 	],
 	tasks: [{
 		uid: "a6b6bcab",

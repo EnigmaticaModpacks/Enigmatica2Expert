@@ -16,7 +16,8 @@
 	],
 	dependencies: [
 		"7e987598",
-		"5bed1422"
+		"5bed1422",
+		"c38d4bfa"
 	],
 	size: 1.1666666666666667d,
 	tasks: [{

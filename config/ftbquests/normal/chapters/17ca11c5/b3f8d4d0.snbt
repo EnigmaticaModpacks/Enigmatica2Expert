@@ -13,7 +13,8 @@
 		"{bq.quest19.desc}"
 	],
 	dependencies: [
-		"7e987598"
+		"7e987598",
+		"c38d4bfa"
 	],
 	size: 1.1666666666666667d,
 	tasks: [{
