@@ -15,24 +15,23 @@ import { getBorderCharacters, table } from 'table'
 
 import { fetchMods } from './curseforge.js'
 import { defaultHelper, loadJson, loadText, saveText } from './utils.js'
-const { sync: globs } = fast_glob
 
 export async function init(h = defaultHelper) {
   generateManifest()
 }
 
 const getIgnoredModIDs = memoize(() => {
-  const ignoredMods = globs(parseGitignore(loadText('dev/.devonly.ignore')), {
-    dot: true,
+  const ignoredMods = fast_glob.sync(parseGitignore(loadText('dev/.devonly.ignore')), {
+    dot      : true,
     onlyFiles: false,
   })
-    .filter((f) => f.match(/^mods\/.+\.jar/))
-    .map((f) => resolve(f))
+    .filter(f => f.match(/^mods\/.+\.jar/))
+    .map(f => resolve(f))
 
   /** @type {import('./minecraftinstance').RootObject} */
   const mcinstance = loadJson('minecraftinstance.json')
 
-  const ignoredByDevonly = mcinstance.installedAddons.filter((addon) =>
+  const ignoredByDevonly = mcinstance.installedAddons.filter(addon =>
     ignoredMods.includes(
       resolve(`mods/${addon?.installedFile?.FileNameOnDisk}`)
     )
@@ -40,11 +39,11 @@ const getIgnoredModIDs = memoize(() => {
 
   const ignoredByUnavaliable = mcinstance.installedAddons.filter(
     // Unavailable like Optifine or Nutrition
-    (addon) => !addon.installedFile?.isAvailable
+    addon => !addon.installedFile?.isAvailable
   )
 
   return new Set(
-    [...ignoredByDevonly, ...ignoredByUnavaliable].map((addon) => addon.addonID)
+    [...ignoredByDevonly, ...ignoredByUnavaliable].map(addon => addon.addonID)
   )
 })
 
@@ -58,7 +57,7 @@ export const loadMCInstanceFiltered = memoize(
     const mcinstance = loadJson(filePath)
 
     mcinstance.installedAddons = mcinstance.installedAddons.filter(
-      (a) => !getIgnoredModIDs().has(a.addonID)
+      a => !getIgnoredModIDs().has(a.addonID)
     )
 
     return mcinstance
@@ -71,17 +70,17 @@ export const loadMCInstanceFiltered = memoize(
 function formatModList(modsList) {
   const columns = Object.keys(modsList[0]).length
   const orderedList = modsList
-    .map((m) => JSON.stringify(m).replace(/(":)("|\d+)/g, '$1____$2'))
+    .map(m => JSON.stringify(m).replace(/(":)("|\d+)/g, '$1____$2'))
     .join(',\n')
     .split('\n')
-    .map((s) => `    ${s}`.split('____'))
-    .map((r) => new Array(columns).fill('').map((s, i) => r[i]))
+    .map(s => `    ${s}`.split('____'))
+    .map(r => new Array(columns).fill('').map((s, i) => r[i]))
 
   return table(orderedList, {
-    border: getBorderCharacters('void'),
-    columnDefault: { paddingLeft: 0, paddingRight: 0 },
+    border            : getBorderCharacters('void'),
+    columnDefault     : { paddingLeft: 0, paddingRight: 0 },
     drawHorizontalLine: () => false,
-    columns: new Array(3).fill({ alignment: 'right' }),
+    columns           : new Array(3).fill({ alignment: 'right' }),
   }).replace(/[ \t]+$|\n$/gm, '')
 }
 
@@ -99,20 +98,20 @@ export async function generateManifest(
   mcinstancePath = 'minecraftinstance.json',
   manifestPostfix = ''
 ) {
-  const addonsListUnfiltered =
-    loadMCInstanceFiltered(mcinstancePath).installedAddons
-  const cfModsList = await fetchMods(addonsListUnfiltered.map((a) => a.addonID))
+  const addonsListUnfiltered
+    = loadMCInstanceFiltered(mcinstancePath).installedAddons
+  const cfModsList = await fetchMods(addonsListUnfiltered.map(a => a.addonID))
 
   const modListUnfiltered = addonsListUnfiltered.map((a, i) => ({
     projectID: a.addonID,
-    fileID: a.installedFile?.id,
-    required: !a.installedFile?.FileNameOnDisk.endsWith('.jar.disabled'),
-    ___name: cfModsList[i].name,
+    fileID   : a.installedFile?.id,
+    required : !a.installedFile?.FileNameOnDisk.endsWith('.jar.disabled'),
+    ___name  : cfModsList[i].name,
   }))
 
   const resultObj = {
     minecraft: {
-      version: '1.12.2',
+      version   : '1.12.2',
       modLoaders: [
         {
           id: (forgeVersion ??= `forge-${
@@ -124,18 +123,18 @@ export async function generateManifest(
         },
       ],
     },
-    manifestType: 'minecraftModpack',
+    manifestType   : 'minecraftModpack',
     manifestVersion: 1,
-    name: 'Enigmatica2Expert-Extended',
-    version: version,
-    author: 'krutoy242',
-    overrides: 'overrides',
-    files: /** @type {any[]} */ ([]),
+    name           : 'Enigmatica2Expert-Extended',
+    version,
+    author         : 'krutoy242',
+    overrides      : 'overrides',
+    files          : /** @type {any[]} */ ([]),
   }
 
   const modList = modListUnfiltered
-    .filter((m) => !getIgnoredModIDs().has(m.projectID))
-    .filter((m) => m.required)
+    .filter(m => !getIgnoredModIDs().has(m.projectID))
+    .filter(m => m.required)
     .sort((a, b) => a.projectID - b.projectID)
 
   // Format beautifully
@@ -152,7 +151,6 @@ ${formatModList(modList)}
 }
 
 if (
-  // @ts-ignore
   import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
 )
   init()

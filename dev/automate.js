@@ -27,8 +27,7 @@ const { gray, green, dim } = chalk
 const { ValueFormat } = Format
 
 const getFileName = (/** @type {string} */ s) => s.replace(/^.*[\\/]/, '')
-const getExtension = (/** @type {string} */ s) => s.split('.').pop()
-const write = (s) => process.stdout.write(s)
+const write = s => process.stdout.write(s)
 
 /**
  * @typedef {Function} InitCallback
@@ -45,17 +44,17 @@ const automationList = [
 
   (h, opts) =>
     mc_benchmark({
-      readFileSync: loadText,
+      readFileSync : loadText,
       defaultLogger: h,
-      output: 'dev/benchmarks/latest.md',
+      output       : 'dev/benchmarks/latest.md',
     }),
 ]
 
 // create new container
 const multibar = new MultiBar({
   format:
-    '{fileName} ' + gray('[{bar}] | {value}/{total} | {ms} |') + ' {task}',
-  hideCursor: true,
+    `{fileName} ${gray('[{bar}] | {value}/{total} | {ms} |')} {task}`,
+  hideCursor : true,
   formatValue: (...args) => `${ValueFormat(...args)}`.padStart(3),
 })
 
@@ -64,18 +63,18 @@ let errorCount = 0
 export async function init(options = argv) {
   starttime = new Date().getTime()
   await Promise.all(automationList.map((f, i) => startTask(f, i, options)))
-  await new Promise((r) => setTimeout(r, 100))
+  await new Promise(r => setTimeout(r, 100))
 
   if (errorCount <= 0) {
     write('\nSucces!\n')
     process.exit(0)
-  } else {
+  }
+  else {
     write('\nFail!\n')
     process.exit(1)
   }
 }
 
-// @ts-ignore
 if (
   import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
 )
@@ -100,15 +99,15 @@ async function startTask(file, i, options) {
   const fileName = isStr ? getFileName(file) : file.name
   const progressBar = multibar.create(0, 0, {
     fileName: green(fileName.padStart(24)),
-    task: '',
-    ms: '     ',
+    task    : '',
+    ms      : '     ',
   })
 
   /** @type {typeof defaultHelper} */
   const h = createHelper(progressBar)
 
   const result = (async () => {
-    await new Promise((r) => setTimeout(r, i * 10))
+    await new Promise(r => setTimeout(r, i * 10))
     return jsmodule(h, options)
   })()
 
@@ -117,7 +116,7 @@ async function startTask(file, i, options) {
     stopProgressBar(progressBar, h, timeTook)
   })
 
-  result.catch((reason) => console.log('reason :>> ', reason))
+  result.catch(reason => console.log('reason :>> ', reason))
   return result
 }
 
@@ -126,19 +125,20 @@ function createHelper(progressBar) {
     ? defaultHelper
     : {
         taskResult: '',
-        begin: async (task, steps) => {
+        begin     : async (task, steps) => {
           progressBar.update(progressBar.getTotal(), { task })
           progressBar.setTotal(progressBar.getTotal() + (steps ?? 1))
-          await new Promise((r) => setTimeout(r, 1))
+          await new Promise(r => setTimeout(r, 1))
         },
         done: (task = '') => {
           progressBar.increment()
-          if (task) progressBar.update({ task })
+          if (task)
+            progressBar.update({ task })
         },
         step: () => {
           progressBar.increment()
         },
-        result: function (s) {
+        result(s) {
           progressBar.update({
             task: (this.taskResult += `✔️  ${s.replace(
               /\b(\d+)\b/g,
@@ -146,17 +146,17 @@ function createHelper(progressBar) {
             )}`),
           })
         },
-        warn: function (s = '?') {
+        warn(s = '?') {
           progressBar.update({
             task: (this.taskResult += `⚠️ ${chalk.dim.yellow(`${s}`)}`),
           })
         },
-        error: function (s = '!') {
+        error(s = '!') {
           errorCount++
           progressBar.update({
             task: (this.taskResult += `🛑 ${chalk.dim.red(`${s}`)}`),
           })
-          if (argv['hardfailt']) {
+          if (argv.hardfailt) {
             console.error(`\n\n🛑 Fatal Error:\n${s}`)
             throw new Error(`Fatal Error:\n${s}`)
           }
@@ -165,9 +165,11 @@ function createHelper(progressBar) {
 }
 
 function stopProgressBar(progressBar, h, timeTook) {
-  if (!progressBar) return
+  if (!progressBar)
+    return
   progressBar.update({ ms: `${timeTook}`.padStart(5) })
   progressBar.update(progressBar.getTotal())
-  if (!h.taskResult) progressBar.update({ task: '✔️' })
+  if (!h.taskResult)
+    progressBar.update({ task: '✔️' })
   progressBar.stop()
 }

@@ -15,7 +15,7 @@ import { join, parse, resolve } from 'path'
 
 import boxen from 'boxen'
 import chalk from 'chalk'
-import { sync as delSync } from 'del'
+import * as del from 'del'
 import fast_glob from 'fast-glob'
 import fs_extra from 'fs-extra'
 import git_describe from 'git-describe'
@@ -39,8 +39,8 @@ import {
 
 const { gitDescribeSync } = git_describe
 const { terminal: term } = terminal_kit
-const { rmSync, mkdirSync, existsSync, renameSync, copySync, lstatSync } =
-  fs_extra
+const { rmSync, mkdirSync, existsSync, renameSync, copySync, lstatSync }
+  = fs_extra
 const git = simpleGit()
 
 const { sync: _globs } = fast_glob
@@ -56,27 +56,27 @@ const globs = (source, options) =>
 const argv = yargs(process.argv.slice(2))
   .alias('h', 'help')
   .option('dryRun', {
-    alias: 'd',
-    type: 'boolean',
+    alias   : 'd',
+    type    : 'boolean',
     describe: 'Not create .zip files',
   })
   .option('old', {
-    alias: 'o',
-    type: 'boolean',
+    alias   : 'o',
+    type    : 'boolean',
     describe: 'Do not clear previous files in TMP folder, and not clone',
   })
   .parseSync()
 
 const style = {
-  trace: chalk.hex('#7b4618'),
-  info: chalk.hex('#915c27'),
-  log: chalk.hex('#ad8042'),
-  label: chalk.hex('#bfab67'),
+  trace : chalk.hex('#7b4618'),
+  info  : chalk.hex('#915c27'),
+  log   : chalk.hex('#ad8042'),
+  label : chalk.hex('#bfab67'),
   string: chalk.hex('#bfc882'),
   number: chalk.hex('#a4b75c'),
   status: chalk.hex('#647332'),
-  chose: chalk.hex('#3e4c22'),
-  end: chalk.hex('#2e401c'),
+  chose : chalk.hex('#3e4c22'),
+  end   : chalk.hex('#2e401c'),
 }
 
 ;(async () => {
@@ -101,7 +101,7 @@ const style = {
     if (cwd) process.chdir(oldCwd)
   }
 
-  /* 
+  /*
  █████╗ ██╗   ██╗████████╗ ██████╗ ███╗   ███╗ █████╗ ████████╗██╗ ██████╗ ███╗   ██╗
 ██╔══██╗██║   ██║╚══██╔══╝██╔═══██╗████╗ ████║██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║
 ███████║██║   ██║   ██║   ██║   ██║██╔████╔██║███████║   ██║   ██║██║   ██║██╔██╗ ██║
@@ -135,9 +135,9 @@ const style = {
    */
   const pressEnterOrEsc = async (message, condition) => {
     let oneTime = 0
-    while (condition ? !(await condition()) : !oneTime++) {
+    while (condition ? !(await condition()) : !oneTime++)
       if ((await enterString(message)) === undefined) return false
-    }
+
     return true
   }
 
@@ -148,18 +148,18 @@ const style = {
       `[${STEP++}] Press ENTER to perform Automation. Press ESC to skip.`
     )
   ) {
-    doTask(`🪓 Doing automation ...\n\n`, () =>
+    doTask('🪓 Doing automation ...\n\n', () =>
       execSyncInherit('node ./dev/automate.js')
     )
   }
 
   /*
- ██████╗██╗  ██╗ █████╗ ███╗   ██╗ ██████╗ ███████╗██╗      ██████╗  ██████╗ 
-██╔════╝██║  ██║██╔══██╗████╗  ██║██╔════╝ ██╔════╝██║     ██╔═══██╗██╔════╝ 
+ ██████╗██╗  ██╗ █████╗ ███╗   ██╗ ██████╗ ███████╗██╗      ██████╗  ██████╗
+██╔════╝██║  ██║██╔══██╗████╗  ██║██╔════╝ ██╔════╝██║     ██╔═══██╗██╔════╝
 ██║     ███████║███████║██╔██╗ ██║██║  ███╗█████╗  ██║     ██║   ██║██║  ███╗
 ██║     ██╔══██║██╔══██║██║╚██╗██║██║   ██║██╔══╝  ██║     ██║   ██║██║   ██║
 ╚██████╗██║  ██║██║  ██║██║ ╚████║╚██████╔╝███████╗███████╗╚██████╔╝╚██████╔╝
- ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝╚══════╝ ╚═════╝  ╚═════╝ 
+ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝╚══════╝ ╚═════╝  ╚═════╝
 */
 
   const oldVersion = gitDescribeSync().tag
@@ -172,7 +172,7 @@ const style = {
   const nextVersion = inputVersion || oldVersion || 'v???'
 
   if (await pressEnterOrEsc(`[${STEP++}] Generate Changelog? ENTER / ESC.`)) {
-    execSyncInherit('node ./dev/changelog.js --next=' + nextVersion)
+    execSyncInherit(`node ./dev/changelog.js --next=${nextVersion}`)
     await pressEnterOrEsc(`[${STEP++}] Manually fix LATEST.md and press ENTER.`)
     execSyncInherit('node ./dev/changelog.js --append')
   }
@@ -182,10 +182,9 @@ const style = {
     async () => (await git.status()).isClean()
   )
 
-  if (await pressEnterOrEsc(`[${STEP++}] Add tag? ENTER / ESC.`)) {
+  if (await pressEnterOrEsc(`[${STEP++}] Add tag? ENTER / ESC.`))
     execSyncInherit(`git tag -a -f -m "Next automating release" ${nextVersion}`)
     // await git.addAnnotatedTag(nextVersion, 'Next automating release')
-  }
 
   /*
 ██████╗ ██████╗ ███████╗██████╗ ███████╗██████╗  █████╗ ████████╗██╗ ██████╗ ███╗   ██╗███████╗
@@ -202,7 +201,8 @@ const style = {
     doTask(`🪓 Clearing tmp folder ${tmpDir} ... `, () => {
       try {
         rmSync(tmpDir, { recursive: true })
-      } catch (err) {}
+      }
+      catch (err) {}
       mkdirSync(tmpOverrides, { recursive: true })
     })
 
@@ -215,10 +215,10 @@ const style = {
     )
 
     doTask(
-      `⬅️ Move manifest.json ... `,
+      '⬅️ Move manifest.json ... ',
       () => {
         const manifest = loadJson('manifest.json')
-        manifest.files.forEach((o) => delete o.___name)
+        manifest.files.forEach(o => delete o.___name)
         saveObjAsJson(manifest, 'manifest.json')
         renameSync('manifest.json', '../manifest.json')
       },
@@ -226,20 +226,20 @@ const style = {
     )
 
     doTask(
-      `🧹 Removing non-release files and folders ... `,
+      '🧹 Removing non-release files and folders ... ',
       () =>
-        'removed: ' + delSync(globs(devonlyIgnore), { dryRun: false }).length,
+        `removed: ${del.deleteSync(globs(devonlyIgnore), { dryRun: false }).length}`,
       tmpOverrides
     )
   }
 
   /*
-███████╗██╗██████╗ 
+███████╗██╗██████╗
 ╚══███╔╝██║██╔══██╗
   ███╔╝ ██║██████╔╝
- ███╔╝  ██║██╔═══╝ 
-███████╗██║██║     
-╚══════╝╚═╝╚═╝     
+ ███╔╝  ██║██╔═══╝
+███████╗██║██║
+╚══════╝╚═╝╚═╝
 */
 
   /**
@@ -253,16 +253,17 @@ const style = {
      * @param {string} [command] Optional 7Zip command. Default 'a' - Add
      */
     const zipHandler = (params, command = 'a') => {
-      if (argv.dryRun)
+      if (argv.dryRun) {
         return write(
           `\n${command === 'd' ? '➖' : '➕'} ${
-            chalk.bgRgb(10, 10, 10).rgb(30, 30, 30)(zipPath) +
-            ' ' +
-            chalk.gray(params)
+            `${chalk.bgRgb(10, 10, 10).rgb(30, 30, 30)(zipPath)
+            } ${
+            chalk.gray(params)}`
           }`
         )
+      }
 
-      const exec7z = (p) =>
+      const exec7z = p =>
         execSyncInherit(`"${sZPath}" ${command} -bso0 "${zipPath}" ${p}`)
 
       if (!Array.isArray(params)) return exec7z(params)
@@ -270,7 +271,7 @@ const style = {
       const tmpPath = '_tmp_7zip.txt'
       saveText(params.join('\n'), tmpPath)
       exec7z(`@${tmpPath}`)
-      delSync(tmpPath)
+      del.deleteSync(tmpPath)
     }
     return zipHandler
   }
@@ -290,28 +291,28 @@ const style = {
   const zipPath_EN = `${zipPath_base}.zip`
   const zipPath_server = `${zipPath_base}-server.zip`
 
-  const isZipsExist =
-    !argv.dryRun && [zipPath_EN, zipPath_server].some((f) => existsSync(f))
+  const isZipsExist
+    = !argv.dryRun && [zipPath_EN, zipPath_server].some(f => existsSync(f))
 
   let rewriteOldZipFiles = false
   if (
-    isZipsExist &&
-    (await pressEnterOrEsc(`[${STEP++}] Rewrite old .zip files? ENTER / ESC`))
+    isZipsExist
+    && (await pressEnterOrEsc(`[${STEP++}] Rewrite old .zip files? ENTER / ESC`))
   ) {
     rewriteOldZipFiles = true
     doTask(
-      `🪓 Removing old zip files ... `,
-      () => delSync([zipPath_EN, zipPath_server], { force: true }).length
+      '🪓 Removing old zip files ... ',
+      () => del.deleteSync([zipPath_EN, zipPath_server], { force: true }).length
     )
   }
 
   const makeZips = !isZipsExist || rewriteOldZipFiles
-  makeZips &&
-    doTask(`🏴󠁧󠁢󠁥󠁮󠁧󠁿 Create EN .zip ... \n`, () => withZip(zipPath_EN)('.'), tmpDir)
+  makeZips
+    && doTask('🏴󠁧󠁢󠁥󠁮󠁧󠁿 Create EN .zip ... \n', () => withZip(zipPath_EN)('.'), tmpDir)
 
   /********************************************************
 
-███████╗███████╗██████╗ ██╗   ██╗███████╗██████╗ 
+███████╗███████╗██████╗ ██╗   ██╗███████╗██████╗
 ██╔════╝██╔════╝██╔══██╗██║   ██║██╔════╝██╔══██╗
 ███████╗█████╗  ██████╔╝██║   ██║█████╗  ██████╔╝
 ╚════██║██╔══╝  ██╔══██╗╚██╗ ██╔╝██╔══╝  ██╔══██╗
@@ -324,36 +325,36 @@ const style = {
   const serverFilesList = globs(serveronlyIgnore, { cwd: tmpOverrides })
   const serverModsListEvery = globs(serveronlyIgnore, {
     ignore: devonlyIgnore,
-  }).filter((f) => f.startsWith('mods/'))
+  }).filter(f => f.startsWith('mods/'))
   const serverModsList = serverModsListEvery.filter(
-    (f) => !f.endsWith('-patched.jar')
+    f => !f.endsWith('-patched.jar')
   ) // Bansoukou-patched files should be handled separately
 
   // List of mods, patched with Bansoukou, but without extension
   // mods/betteranimalsplus-1.12.2-9.0.1
   // mods/NuclearCraft-2.18zz-1.12.2
-  const unpatchedList = globs('mods/*-patched.jar').map((f) =>
+  const unpatchedList = globs('mods/*-patched.jar').map(f =>
     f.replace('-patched.jar', '')
   )
 
   const serverRemoveList = globs('*', {
     ignore: serverFilesList,
-    cwd: tmpOverrides,
+    cwd   : tmpOverrides,
   })
   doTask(
-    `🪑 Removing client-only files and folders ... `,
-    () => 'removed: ' + delSync(serverRemoveList).length,
+    '🪑 Removing client-only files and folders ... ',
+    () => `removed: ${del.deleteSync(serverRemoveList).length}`,
     tmpOverrides
   )
-  doTask(`🪑 Add server root files ... `, () => {
-    globs('*', { cwd: serverRoot }).forEach((f) =>
+  doTask('🪑 Add server root files ... ', () => {
+    globs('*', { cwd: serverRoot }).forEach(f =>
       copySync(join(serverRoot, f), join(tmpOverrides, f))
     )
     return `added: ${serverFilesList.length}`
   })
 
-  makeZips &&
-    doTask(
+  makeZips
+    && doTask(
       '📥 Create server zip ... \n',
       () => {
         // Add everything in overrides dir
@@ -367,10 +368,10 @@ const style = {
 
         // Add Unpatched by Bansoukou mods
         write('\n Add & Rename Bansoukou-unpatched mods\n')
-        const disabledList = unpatchedList.map((f) => f + '.disabled')
-        const renameList = unpatchedList.flatMap((f) => [
-          f + '.disabled',
-          f + '.jar',
+        const disabledList = unpatchedList.map(f => `${f}.disabled`)
+        const renameList = unpatchedList.flatMap(f => [
+          `${f}.disabled`,
+          `${f}.jar`,
         ])
         process.chdir(mcClientPath)
         zip(disabledList)
@@ -380,12 +381,12 @@ const style = {
     )
 
   /*
-███████╗███████╗████████╗██████╗ 
+███████╗███████╗████████╗██████╗
 ██╔════╝██╔════╝╚══██╔══╝██╔══██╗
 ███████╗█████╗     ██║   ██████╔╝
-╚════██║██╔══╝     ██║   ██╔═══╝ 
-███████║██║        ██║   ██║     
-╚══════╝╚═╝        ╚═╝   ╚═╝     
+╚════██║██╔══╝     ██║   ██╔═══╝
+███████║██║        ██║   ██║
+╚══════╝╚═╝        ╚═╝   ╚═╝
   */
 
   /**
@@ -396,7 +397,7 @@ const style = {
       const dir = parse(filename).dir
       return {
         dir,
-        label: /** @type {string} */ (dir.split('/').pop()),
+        label : /** @type {string} */ (dir.split('/').pop()),
         config: loadJson(filename),
       }
     }
@@ -409,16 +410,16 @@ const style = {
   // - bansoukou
   // - config
   const serverRemoveDirs = serverAllOverrides
-    .filter((f) => lstatSync(join(tmpOverrides, f)).isDirectory())
+    .filter(f => lstatSync(join(tmpOverrides, f)).isDirectory())
     .concat('mods')
 
   /** @type {import('boxen').Options} */
   const defBoxStyle = {
     borderStyle: 'round',
     borderColor: '#22577a',
-    width: 50,
-    // @ts-ignore
-    padding: { left: 1, right: 1 },
+    width      : 50,
+    // @ts-expect-error types
+    padding    : { left: 1, right: 1 },
   }
 
   for (const conf of sftpConfigs) {
@@ -456,7 +457,8 @@ const style = {
           if (!(await sftp.stat(dir)).isDirectory) return
           await sftp.rmdir(dir, true)
           updateBox('Removed folder:', dir)
-        } catch (error) {}
+        }
+        catch (error) {}
       })
     )
 
@@ -507,8 +509,8 @@ const style = {
   /*
   ██████╗ ███████╗██╗     ███████╗ █████╗ ███████╗███████╗
   ██╔══██╗██╔════╝██║     ██╔════╝██╔══██╗██╔════╝██╔════╝
-  ██████╔╝█████╗  ██║     █████╗  ███████║███████╗█████╗  
-  ██╔══██╗██╔══╝  ██║     ██╔══╝  ██╔══██║╚════██║██╔══╝  
+  ██████╔╝█████╗  ██║     █████╗  ███████║███████╗█████╗
+  ██╔══██╗██╔══╝  ██║     ██╔══╝  ██╔══██║╚════██║██╔══╝
   ██║  ██║███████╗███████╗███████╗██║  ██║███████║███████╗
   ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝
   */
@@ -522,18 +524,19 @@ const style = {
     `[${STEP++}] Enter release title and press ENTER. Press ESC to skip release: `
   )
 
-  if (inputTitle !== undefined)
-    doTask(`🌍 Releasing on Github ... \n`, () =>
+  if (inputTitle !== undefined) {
+    doTask('🌍 Releasing on Github ... \n', () =>
       execSyncInherit(
-        'gh release create' +
-          ` ${nextVersion}` +
-          ` --title="${(nextVersion + ' ' + inputTitle).trim()}"` +
-          ' --repo=Krutoy242/Enigmatica2Expert-Extended' +
-          ' --notes-file="./dev/release/~GitHub_notes.md"' +
-          ` "${zipPath_EN}"` +
-          ` "${zipPath_server}"`
+        'gh release create'
+          + ` ${nextVersion}`
+          + ` --title="${(`${nextVersion} ${inputTitle}`).trim()}"`
+          + ' --repo=Krutoy242/Enigmatica2Expert-Extended'
+          + ' --notes-file="./dev/release/~GitHub_notes.md"'
+          + ` "${zipPath_EN}"`
+          + ` "${zipPath_server}"`
       )
     )
+  }
 
   process.exit(0)
 })()

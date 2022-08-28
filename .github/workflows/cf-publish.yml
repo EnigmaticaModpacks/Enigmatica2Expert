@@ -15,7 +15,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with: 
-          fetch-depth: 0 
+          fetch-depth: 1
+      - run: git checkout HEAD
 
       - name: 💽 Download .zip files from latest release
         uses: robinraju/release-downloader@v1.4
@@ -33,7 +34,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: npm ci
+      - run: npm i --omit=dev
 
       - name: 📋 Generate html instead of markdown
         run: node dev/lib/curseforge-md-to-html.js latest.md

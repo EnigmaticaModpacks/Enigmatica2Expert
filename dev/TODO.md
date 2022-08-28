@@ -1,25 +1,21 @@
 # TODO list
 
-- [x] ✏️ Monster Ball Uncraftable
+- [ ] ✏️ Add Salis Mundus conversion from saplings to Thaum trees
+- [ ] ✏️ Blast Resistant drive crash game, maybe gate storage disks
+- [ ] ✏️ Monster Ball Uncraftable
 - [ ] ✏️ Make new replicator machine
-- [ ] ✏️ Random Things crafting table make oredicted, add recipe function
 - [ ] ✏️ More Alien Crystal blocks + mica to get Crystaltine and ET gems
 - [ ] ✏️ Remove Cyclic's machines completely because they are laggy
 - [ ] ✏️ Add chaos shards recipe for Skyblock. Probably RFT Syringe in 5 steps => Struck Lightning
 - [ ] ✏️ Remove Dragon Forge crafts (because its unautomateable)
-- [ ] ✏️ Cyclic mob capturer not working
-- [x] ✏️ Chicken Wing Ring uncraftable
 - [ ] ✏️ Milk Questing Ram to color essence
-- [x] ✏️ Cannot smelt IC2 Purified Crushed Lead Ore
 - [ ] 📀 Add Meat to Meaty orb https://github.com/daedalus4096/ThaumicWonders/blob/251829dee76d72368d0ed0af1f2104121b781e63/src/main/java/com/verdantartifice/thaumicwonders/common/tiles/devices/TileMeatyOrb.java#L49-L53
 - [ ] 📀 Buff Golem Stats
-- [ ] 📀 Make Essentia Seeds grows only on planet (Stella?)
 - [ ] 📀 Change Quartz modifier to `(n + 1) * 1.05`
 - [ ] 📀 Fix NPE https://github.com/BluSunrize/ImmersiveEngineering/blob/master/src/main/java/blusunrize/immersiveengineering/common/EventHandler.java#L619
 - [ ] 📀 Fix BedrockOre cant go 1 height flat https://github.com/MightyPirates/BedrockOres/blob/master-MC1.12/src/main/java/li/cil/bedrockores/common/world/WorldGeneratorBedrockOre.java#L92
 - [ ] 📀 Adv. Rock tank left 64 buckets when broken
-- [ ] 📀 Auto sieve require more RF/T (about millions)
-- [ ] 🟢 Install https://www.curseforge.com/minecraft/mc-mods/back-tools
+- [ ] 🔄 Ratlantean spirit projectiles aren't hitting the player
 
 ---
 
@@ -80,10 +76,8 @@
 - [ ] ✏️ Rethink small plate presser Ore => ?? recipes
 - [ ] ✏️ Add non-magic way to finish modpack
 - [ ] ✏️ Fix Omega Potion Elixir ingredient have weird scrolling
-- [ ] 🔄 Schematica: Missing/outdated Immersive Technology schematics, Fixes #17
 - [ ] 🔄 Add neural interface searching: with neural interface and special program find special blocks
 - [ ] 🔄 ![](https://git.io/J3p8B "Infinity Furnace") front texture empty on client
-- [ ] ✏️ Rats as alt for some machine recipes
 - [ ] ✏️ ![](https://git.io/JCt00 "Creative Harvest") add more crafts
 - [ ] ✏️ ![](https://git.io/JOv90 "Sieve") Siften materials should be harder
 - [ ] ✏️ **4x** Coal Singularity (or other) => Creative Bin (or other ways to craft creative bins with one unchangable item)
@@ -99,22 +93,14 @@
 - [ ] 🏪 **RequiousFracto** Causing items to trashing with **Energy Slot**. [Reported](https://github.com/DaedalusGame/RequiousFrakto/issues/21)
 - [ ] 🏪 Add Matter Replicator that **increase cost** of replication each operation
 - [ ] 📖 ![](https://git.io/JRthK "Angel Ring") add to Conflux
-- [ ] 📖 LootBoxes can be achieved with RecurrentComplex commands by spawning inventories
-- [ ] 📖 Trophy for each chapter
-- [ ] 📖 Change sound of quest complete to another
 - [ ] 🔄 **Perfect Fuel** Fix texture. Now it uses default one.
 - [ ] 🔄 Fix Custom Animals drops non-cooked meat
-- [ ] 🔄 UU requirement for a lot of things seems to be lower than what the tooltip says
 - [ ] 🔄 Remap all **#VoidMiners** to produce not all types of ore each
 - [ ] 🔄 Move to **NUclearCraft:Overhauled**
 - [ ] 🔨 ![](https://git.io/JnzzI "Glitch Infused Ingot") add material. Ability: drom matter from mobs
 - [ ] 🔨 Add armor trait that speed up gain for `Time In Bottle`
 - [ ] 🔨 Add teleportation trait. 1. Set point, 2. Break special glass-like block to teleport
 - [ ] 🔨 Ironwood Add material. Drop Armor from mobs on hit
-- [ ] 🧮 Craft.zs: In recipe name `A from B*2` remove amount if its control amount
-- [ ] 🧮 Craft.zs: Add Forestry extensions
-- [ ] 🧮 Craft.zs: Iron nugget wont get recipes for different amount of items
-- [ ] 🧮 Craft.zs: Ability to use vanilla crafting methods
 - [ ] 🧮 Craft.zs: ![](https://git.io/Jz9qH "Gold Nugget") to make vanilla prefixes
 - [ ] 🟢 Return Custom Loading Screen when fixed [this](https://github.com/AlexIIL/CustomLoadingScreen/issues/74)
 - [ ] 🟢 Add [Heat And Climate](https://www.curseforge.com/minecraft/mc-mods/heat-and-climate)

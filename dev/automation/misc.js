@@ -9,13 +9,13 @@
 
 import { join, parse } from 'path'
 
-import del from 'del'
+import * as del from 'del'
 import fs_extra from 'fs-extra'
 import yargs from 'yargs'
+import fast_glob from 'fast-glob'
 
 import {
   defaultHelper,
-  globs,
   injectInFile,
   loadJson,
   loadText,
@@ -37,7 +37,7 @@ export async function init(h = defaultHelper, options = argv) {
 
     Fake iron automatic recipes
 
-    Inspecting all recipes to automatically change some of them  
+    Inspecting all recipes to automatically change some of them
 
     Required command before running
     /ct recipes
@@ -52,7 +52,7 @@ export async function init(h = defaultHelper, options = argv) {
   const fakeIron_zs = loadText('scripts/category/fakeIron.zs')
   let remakes
 
-  if (!globMatch) h.warn('No /ct recipes found in crafttweaker.log')
+  if (!globMatch) { h.warn('No /ct recipes found in crafttweaker.log') }
   else {
     remakes = fakeIron_zs.match(
       /^# Start of automatically generated recipes:$.*/ms
@@ -101,9 +101,9 @@ export async function init(h = defaultHelper, options = argv) {
 
       const regex = /<(minecraft:iron_|ore:)(ingot|block|nugget)(?:Iron)?>/gi
       if (
-        !g ||
-        !whitelist.includes(g.output) ||
-        !g.grid.match(new RegExp('.*' + regex.source + '.*'))
+        !g
+        || !whitelist.includes(g.output)
+        || !g.grid.match(new RegExp(`.*${regex.source}.*`))
       )
         continue
 
@@ -131,7 +131,7 @@ export async function init(h = defaultHelper, options = argv) {
   let countCachedRemoved
   if (!options['keep-cache']) {
     await h.begin('Removing cached files')
-    countCachedRemoved = del.sync(
+    countCachedRemoved = del.deleteSync(
       ['config/thaumicjei_itemstack_aspects.json'],
       { dryRun: false }
     ).length
@@ -158,7 +158,7 @@ export async function init(h = defaultHelper, options = argv) {
 
     {
       block_stack: 'minecraft:mob_spawner',
-      dropList: [
+      dropList   : [
         { stack: 'enderio:item_broken_spawner' },
         { stack: 'actuallyadditions:item_misc:20', luck: [1, 3] },
       ],
@@ -166,15 +166,15 @@ export async function init(h = defaultHelper, options = argv) {
 
     {
       block_stack: 'astralsorcery:blockgemcrystals:3',
-      dropList: [{ stack: 'astralsorcery:itemperkgem:1' }],
+      dropList   : [{ stack: 'astralsorcery:itemperkgem:1' }],
     },
     {
       block_stack: 'astralsorcery:blockgemcrystals:1',
-      dropList: [{ stack: 'astralsorcery:itemperkgem:2' }],
+      dropList   : [{ stack: 'astralsorcery:itemperkgem:2' }],
     },
     {
       block_stack: 'astralsorcery:blockgemcrystals:2',
-      dropList: [{ stack: 'astralsorcery:itemperkgem' }],
+      dropList   : [{ stack: 'astralsorcery:itemperkgem' }],
     },
   ])
 
@@ -233,37 +233,37 @@ export async function init(h = defaultHelper, options = argv) {
   const heavySievePath = 'config/ExCompressum/HeavySieve.json'
   const heavySieve = loadJson(heavySievePath)
   blocksToCopy.forEach(([normal, compressed]) => {
-    const normEntry = sieveRegistry[normal] ?? sieveRegistry[normal + ':0']
+    const normEntry = sieveRegistry[normal] ?? sieveRegistry[`${normal}:0`]
     if (!normEntry) {
-      h.warn('Cant add Heavy Sieve recipe: Cant find normal entry: ' + normal)
+      h.warn(`Cant add Heavy Sieve recipe: Cant find normal entry: ${normal}`)
       return
     }
     const entries = heavySieve.custom.entries
     const [source, id, _meta] = compressed.split(':')
-    const shortand = source + ':' + id
+    const shortand = `${source}:${id}`
     const meta = Number(_meta || '0')
     const index = entries.findIndex(
-      (o) => o.name === shortand && o.metadata == meta
+      o => o.name === shortand && o.metadata === meta
     )
     const found = entries[index]
 
     const entry = {
       ...(found ?? {}),
       ...{
-        name: shortand,
+        name    : shortand,
         metadata: meta,
-        type: 'list',
-        rewards: normEntry
-          .filter((o) => !o.drop.nbt)
-          .map((o) => ({
+        type    : 'list',
+        rewards : normEntry
+          .filter(o => !o.drop.nbt)
+          .map(o => ({
             meshLevel: o.meshLevel,
-            name: o.drop.name,
-            metadata: o.drop.meta,
-            tag: o.drop.nbt,
-            count: 1,
-            luck: 0.0,
-            chance: o.chance,
-            rolls: 1,
+            name     : o.drop.name,
+            metadata : o.drop.meta,
+            tag      : o.drop.nbt,
+            count    : 1,
+            luck     : 0.0,
+            chance   : o.chance,
+            rolls    : 1,
           })),
       },
     }
@@ -285,22 +285,22 @@ export async function init(h = defaultHelper, options = argv) {
 
   const menuFile = 'config/CustomMainMenu/mainmenu.json'
   const menuJson = loadJson(menuFile)
-  menuJson.other.background.slideshow.images = globs(
+  menuJson.other.background.slideshow.images = fast_glob.sync(
     'resources/enigmatica/textures/slideshow/*.jpg'
-  ).map((f) => `enigmatica:textures/slideshow/${parse(f).base}`)
+    , { dot: true }).map(f => `enigmatica:textures/slideshow/${parse(f).base}`)
   saveObjAsJson(menuJson, menuFile)
 
   // ###############################################################################
   // ###############################################################################
   // ###############################################################################
   h.result(
-    `Saved fakeIron recipes: ${resultArr.length}` +
-      (countCachedRemoved ? `, Removed cached: ${countCachedRemoved}` : '')
+    `Saved fakeIron recipes: ${resultArr.length}${
+      countCachedRemoved ? `, Removed cached: ${countCachedRemoved}` : ''}`
   )
 }
 
 if (
-  // @ts-ignore
+  // @ts-expect-error
   import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
 )
   init()

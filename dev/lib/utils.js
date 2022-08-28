@@ -14,17 +14,15 @@
 import { execSync } from 'child_process'
 import { mkdirSync, readFileSync, statSync, writeFileSync } from 'fs'
 import { basename, dirname } from 'path'
-import { fileURLToPath, URL } from 'url'
+import { URL, fileURLToPath } from 'url'
 
 import chalk from 'chalk'
 import { parse as csvParseSync } from 'csv-parse/sync'
-import del from 'del'
 import fast_glob from 'fast-glob'
 import pdf from 'pdf-parse/lib/pdf-parse.js'
 import replace_in_file from 'replace-in-file'
 
 function relative(relPath = './') {
-  // @ts-ignore
   return fileURLToPath(new URL(relPath, import.meta.url))
 }
 
@@ -52,9 +50,8 @@ function createHashedFunction(fn) {
     const hashFunction = hashMap.get(fn) ?? {}
     const oldResult = hashFunction[filename]
     const mtime = statSync(filename).mtime.getTime()
-    if (oldResult && oldResult.mtime === mtime) {
+    if (oldResult && oldResult.mtime === mtime)
       return oldResult.result
-    }
 
     const result = fn(filename)
     hashFunction[filename] = { result, mtime }
@@ -75,14 +72,14 @@ function createHashedFunction(fn) {
  *
  * @example subFileName('C:/main.js') // 'main'
  */
-export const subFileName = (filePath) =>
+export const subFileName = filePath =>
   basename(filePath).split('.').slice(0, -1).join('.')
 
 /**
  * Load file from disk or from hash
  * @returns {string}
  */
-export const loadText = createHashedFunction((filename) =>
+export const loadText = createHashedFunction(filename =>
   readFileSync(filename, 'utf8')
 )
 
@@ -90,7 +87,7 @@ export const loadText = createHashedFunction((filename) =>
  * Load JSON file from disk or from hash
  * @param {string} filename
  */
-export const loadJson = createHashedFunction((filename) =>
+export const loadJson = createHashedFunction(filename =>
   JSON.parse(loadText(filename))
 )
 
@@ -99,7 +96,7 @@ export const loadJson = createHashedFunction((filename) =>
  * @param {string} filename
  */
 export const getCSV = createHashedFunction(
-  /** @return {Object<string, string>[]} */ (filename) =>
+  /** @return {Object<string, string>[]} */ filename =>
     csvParseSync(readFileSync(filename, 'utf8'), { columns: true })
 )
 
@@ -108,7 +105,7 @@ export const getCSV = createHashedFunction(
  * @param {string} filename
  */
 export const getPDF = createHashedFunction(
-  async (filename) => (await pdf(readFileSync(filename))).text
+  async filename => (await pdf(readFileSync(filename))).text
 )
 
 export const config = createHashedFunction((filename) => {
@@ -132,7 +129,7 @@ export const config = createHashedFunction((filename) => {
         const content = lines.slice(1, lines.length - 1)
         return [
           `"${p1 || p2}": [`,
-          ...content.map((l) => `"${l.trim()}",`),
+          ...content.map(l => `"${l.trim()}",`),
           '],',
         ].join('\n')
       }
@@ -144,12 +141,13 @@ export const config = createHashedFunction((filename) => {
   let result
   try {
     result = eval(`({${cfg}})`)
-  } catch (error) {
+  }
+  catch (error) {
     console.log('Parsing config error. File: ', filename)
     console.error(error)
     writeFileSync(
-      relative('_error_' + subFileName(filename) + '.js'),
-      'return{' + cfg.replace(/\n\n+/gm, '\n') + '}'
+      relative(`_error_${subFileName(filename)}.js`),
+      `return{${cfg.replace(/\n\n+/gm, '\n')}}`
     )
   }
 
@@ -181,8 +179,10 @@ export function escapeRegex(string) {
 
 export function matchBetween(str, begin, end, regex) {
   let sub = str
-  if (begin) sub = str.substr(str.indexOf(begin) + begin.length)
-  if (end) sub = sub.substr(0, sub.indexOf(end))
+  if (begin)
+    sub = str.substr(str.indexOf(begin) + begin.length)
+  if (end)
+    sub = sub.substr(0, sub.indexOf(end))
   return [...sub.matchAll(regex)]
 }
 
@@ -198,14 +198,15 @@ export function injectInFile(filename, keyStart, keyFinish, text) {
   try {
     return replace_in_file.sync({
       files: filename,
-      from: new RegExp(
-        escapeRegex(keyStart) + '[\\s\\S\n\r]*?' + escapeRegex(keyFinish),
+      from : new RegExp(
+        `${escapeRegex(keyStart)}[\\s\\S\n\r]*?${escapeRegex(keyFinish)}`,
         'm'
       ),
-      to: keyStart + text + keyFinish,
+      to          : keyStart + text + keyFinish,
       countMatches: true,
     })
-  } catch (error) {
+  }
+  catch (error) {
     console.error('Inject Error occurred:', error)
   }
 }
@@ -216,7 +217,7 @@ export function write(...args) {
 
 export function end(...args) {
   process.stdout.write(args.length === 0 ? ' done' : args.join('\t'))
-  console.log()
+  process.stdout.write('\n')
 }
 
 export const begin = write
@@ -258,20 +259,21 @@ export function setBlockDrops(block_stack, dropList, isSkipSaving = false) {
 
   if (dropList?.length) {
     newObj = {
-      name: block_id,
-      meta: block_meta,
+      name  : block_id,
+      meta  : block_meta,
       length: dropList.length,
     }
 
     dropList.forEach((o, i) => {
       const [drop_source, drop_id, drop_meta] = o.stack.split(':')
-      newObj['name' + i] = `${drop_source}:${drop_id}`
-      newObj['meta' + i] = parseInt(drop_meta || '0')
-      for (let j = 0; j < 4; j++) newObj[j + 'chance' + i] = o.chance || 100.0
-      for (let j = 0; j < 4; j++)
-        newObj[j + 'pair' + i] = `{
+      newObj[`name${i}`] = `${drop_source}:${drop_id}`
+      newObj[`meta${i}`] = parseInt(drop_meta || '0')
+      for (let j = 0; j < 4; j++) newObj[`${j}chance${i}`] = o.chance || 100.0
+      for (let j = 0; j < 4; j++) {
+        newObj[`${j}pair${i}`] = `{
   "left": ${o.luck?.[j]?.[0] ?? o.luck?.[0] ?? 1},
   "right": ${o.luck?.[j]?.[1] ?? o.luck?.[1] ?? 1}\n}`
+      }
     })
   }
 
@@ -279,21 +281,23 @@ export function setBlockDrops(block_stack, dropList, isSkipSaving = false) {
   let arr
   try {
     arr = loadJson('config/BlockDrops/blockdrops.txt')
-  } catch (error) {
+  }
+  catch (error) {
     return []
   }
   const entryIndex = arr.findIndex(
-    (o) => o.name === block_id && o.meta === block_meta
+    o => o.name === block_id && o.meta === block_meta
   )
 
-  if (newObj)
-    if (entryIndex !== -1) Object.assign(arr[entryIndex], newObj)
+  if (newObj) {
+    if (entryIndex !== -1)
+      Object.assign(arr[entryIndex], newObj)
     else arr.push(newObj)
-  else if (entryIndex !== -1) arr.splice(entryIndex, 1)
-
-  if (!isSkipSaving) {
-    saveBlockDrops(arr)
   }
+  else if (entryIndex !== -1) { arr.splice(entryIndex, 1) }
+
+  if (!isSkipSaving)
+    saveBlockDrops(arr)
 
   return arr
 }
@@ -304,8 +308,8 @@ export function setBlockDrops(block_stack, dropList, isSkipSaving = false) {
  */
 export function setBlockDropsList(blockDropList) {
   let arr
-  blockDropList.forEach(
-    (o) => (arr = setBlockDrops(o.block_stack, o.dropList, true))
+  blockDropList?.forEach(
+    o => (arr = setBlockDrops(o.block_stack, o.dropList, true))
   )
   return saveBlockDrops(arr)
 }
@@ -328,13 +332,6 @@ function saveBlockDrops(arr) {
 }
 
 /**
- * @param {string | readonly string[]} globs
- */
-export function globs(globs) {
-  return del.sync(globs, { dryRun: true, force: true })
-}
-
-/**
  * Rename Key callback
  * @callback renameKeysCallback
  * @param {string} objKey
@@ -350,22 +347,22 @@ export function globs(globs) {
  * @return {{}}
  */
 function renameKeys(obj, cb) {
-  if (typeof cb !== 'function') return obj
+  if (typeof cb !== 'function')
+    return obj
 
   const keys = Object.keys(obj)
   const result = {}
 
   for (let i = 0; i < keys.length; i++) {
     let key = keys[i]
-    if (key == '__') {
+    if (key === '__')
       continue
-    }
 
     const val = obj[key]
     const str = cb(key, val)
-    if (typeof str === 'string' && str !== '') {
+    if (typeof str === 'string' && str !== '')
       key = str
-    }
+
     result[key] = val
   }
 
@@ -382,25 +379,25 @@ function renameKeys(obj, cb) {
 export function renameDeep(obj, cb) {
   const type = typeof obj
 
-  if (type !== 'object' && !Array.isArray(obj)) {
+  if (type !== 'object' && !Array.isArray(obj))
     throw new Error('expected an object')
-  }
 
-  if (type === 'object') obj = renameKeys(obj, cb)
+  if (type === 'object')
+    obj = renameKeys(obj, cb)
 
   /** @type {{}|[]} */
   const res = Array.isArray(obj) ? [] : {}
 
   for (const key in obj) {
-    if (key == '__') {
+    if (key === '__')
       continue
-    }
+
     const val = obj[key]
-    if (typeof val === 'object' || Array.isArray(val)) {
+    if (typeof val === 'object' || Array.isArray(val))
       res[key] = renameDeep(val, cb)
-    } else {
+
+    else
       res[key] = val
-    }
   }
   return res
 }
@@ -410,15 +407,17 @@ export function renameDeep(obj, cb) {
  * @param {string} a
  * @param {string} b
  */
-export const naturalSort = (a, b) =>
-  a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' })
+export function naturalSort(a, b) {
+  return a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' })
+}
 
 export function isPathHasChanged(pPath) {
   try {
-    return !!execSync('git diff HEAD ' + pPath)
+    return !!execSync(`git diff HEAD ${pPath}`)
       .toString()
       .trim()
-  } catch (error) {
+  }
+  catch (error) {
     return true
   }
 }
@@ -440,52 +439,52 @@ export function isPathHasChanged(pPath) {
  */
 export const defaultHelper = {
   /** @this {Helper} */
-  begin: function (s, steps) {
+  begin(s, steps) {
     this.done()
     if (steps) {
-      // @ts-ignore
+      // @ts-expect-error new fields
       this.steps = steps
-      // @ts-ignore
+      // @ts-expect-error new fields
       this.stepSize = steps / 30
     }
-    process.stdout.write(`◽ ${s.trim()}` + (steps ? ` [${steps}] ` : ''))
+    process.stdout.write(`◽ ${s.trim()}${steps ? ` [${steps}] ` : ''}`)
     this.isUnfinishedTask = true
   },
-  done: function (s = '') {
-    if (!this.isUnfinishedTask) return
+  done(s = '') {
+    if (!this.isUnfinishedTask)
+      return
     process.stdout.write(` ${chalk.gray(`${s} ✔`)}\n`)
     this.isUnfinishedTask = false
   },
-  step: function (s = '.') {
-    // @ts-ignore
-    if (this.steps <= 30 || this.steps-- % this.stepSize === 0) {
+  step(s = '.') {
+    // @ts-expect-error new fields
+    if (this.steps <= 30 || this.steps-- % this.stepSize === 0)
       process.stdout.write(s)
-    }
   },
-  result: function (s = '') {
+  result(s = '') {
     this.done()
     process.stdout.write(`✔️ ${chalk.dim.green(`${s}`)}\n`)
   },
-  warn: function (...s) {
+  warn(...s) {
     process.stdout.write(`⚠️ ${chalk.dim.yellow(`${s.join('\t')}`)}`)
   },
-  error: function (...s) {
+  error(...s) {
     process.stdout.write(`🛑 ${chalk.dim.red(`${s.join('\t')}`)}`)
   },
 
   isUnfinishedTask: false,
-  taskResult: '',
+  taskResult      : '',
 }
 
 /**
  * @param {string} command
  */
-export const execSyncInherit = (command) =>
+export const execSyncInherit = command =>
   execSync(command, { stdio: 'inherit' })
 
 export function getModsJars() {
   return fast_glob.sync(['mods/*.jar', 'mods/*.disabled'], {
     ignore: ['mods/*-patched.jar', 'mods/*.jar.disabled'],
-    dot: true,
+    dot   : true,
   })
 }

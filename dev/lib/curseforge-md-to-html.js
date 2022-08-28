@@ -7,25 +7,16 @@
 
 // @ts-check
 
-/* eslint-disable no-invalid-this */
 import { existsSync, readFileSync, writeFileSync } from 'fs'
 import { join, parse } from 'path'
 
 import * as cheerio from 'cheerio'
 import MarkdownIt from 'markdown-it'
-import yargs from 'yargs'
+
+const sourcePath = String(process.argv[2])
+if (!existsSync(sourcePath)) throw new Error(`Provide correct file path: ${sourcePath}`)
 
 const md = new MarkdownIt({ html: true })
-
-const argv = yargs(process.argv.slice(2))
-  .alias('h', 'help')
-  .command('markdownPath', 'Path to markdown file that would be converted')
-  .demandCommand()
-  .parseSync()
-
-const sourcePath = String(argv._[0])
-if (!existsSync(sourcePath))
-  throw new Error(`Provide correct file path: ${sourcePath}`)
 
 const $ = cheerio.load(md.render(readFileSync(sourcePath, 'utf8')))
 

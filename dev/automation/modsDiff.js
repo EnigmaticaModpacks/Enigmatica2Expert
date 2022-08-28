@@ -32,13 +32,13 @@ export function getModsIds(json_Path_A, json_Path_B) {
     map_B,
     union,
     map_union,
-    both: B.filter((o) => map_A[o.addonID]),
-    added: B.filter((o) => !map_A[o.addonID]),
-    removed: A.filter((o) => !map_B[o.addonID]),
+    both   : B.filter(o => map_A[o.addonID]),
+    added  : B.filter(o => !map_A[o.addonID]),
+    removed: A.filter(o => !map_B[o.addonID]),
     updated: B.filter(
-      (o) =>
-        map_A[o.addonID] &&
-        map_A[o.addonID].installedFile?.id !== o.installedFile?.id
+      o =>
+        map_A[o.addonID]
+        && map_A[o.addonID].installedFile?.id !== o.installedFile?.id,
     ),
   }
   return result
@@ -69,10 +69,10 @@ function getSquare(modName, fileName) {
 
   const tuples = getModLoadTimeTuples(loadText('logs/debug.log'))
 
-  const loadTime =
-    tuples.find(([m]) => m === modName)?.[1] ??
-    tuples.find(([, , m]) => m === fileName)?.[1] ??
-    tuples.find(([m]) => m.startsWith(modName))?.[1]
+  const loadTime
+    = tuples.find(([m]) => m === modName)?.[1]
+    ?? tuples.find(([, , m]) => m === fileName)?.[1]
+    ?? tuples.find(([m]) => m.startsWith(modName))?.[1]
 
   if (!loadTime || isNaN(loadTime)) return '🟫'
 
@@ -93,18 +93,18 @@ export function formatRow(mcAddon, curseAddon, options = {}) {
   const fileName = mcAddon?.installedFile?.FileNameOnDisk
   const logo = getLogo(curseAddon.logo) ?? ''
   return (
-    (options.asList ? '- ' : '') +
-    (options.noIcon
+    `${(options.asList ? '- ' : '')
+    + (options.noIcon
       ? ''
       : `<img src="${logo}"${' '.repeat(
-          Math.max(1, 93 - logo.length)
-        )}width="50"> | ${getSquare(name, fileName)} `) +
-    `${' '.repeat(Math.max(0, 38 - name.length))}[**${name}**](${
+          Math.max(1, 93 - logo.length),
+        )}width="50"> | ${getSquare(name, fileName)} `)
+    }${' '.repeat(Math.max(0, 38 - name.length))}[**${name}**](${
       curseAddon.links.websiteUrl
-    })${' '.repeat(Math.max(1, 75 - curseAddon.links.websiteUrl.length))}` +
-    `<sup>${options.isUpdated ? ' 🟡 ' : ''}<sub>${fileName}</sub></sup>` +
-    (options.noSummary ? '' : ` <br> ${curseAddon.summary}`) +
-    ' | '
+    })${' '.repeat(Math.max(1, 75 - curseAddon.links.websiteUrl.length))}`
+    + `<sup>${options.isUpdated ? ' 🟡 ' : ''}<sub>${fileName}</sub></sup>${
+    options.noSummary ? '' : ` <br> ${curseAddon.summary}`
+    } | `
   )
 }
 
@@ -122,7 +122,7 @@ export async function init(h = defaultHelper) {
   await h.begin('Get Mods diffs from JSONs')
   const diff = getModsIds(
     '../Enigmatica 2 Expert - E2E (unchanged, updated)/minecraftinstance.json',
-    'minecraftinstance.json'
+    'minecraftinstance.json',
   )
 
   // Debug cutoff
@@ -131,9 +131,7 @@ export async function init(h = defaultHelper) {
   await h.begin('Asking Curseforge API for mods', diff.union.length)
 
   /** @type {CF2Addon[]} */
-  let cursedUnion
-
-  cursedUnion = await fetchMods(diff.union.map((addon) => addon.addonID))
+  const cursedUnion = await fetchMods(diff.union.map(addon => addon.addonID))
   cursedUnion.sort((a, b) => b.downloadCount - a.downloadCount)
 
   // fs.writeFileSync(
@@ -142,16 +140,16 @@ export async function init(h = defaultHelper) {
   // )
 
   await h.begin('Create markdown')
-  let result = {
-    BOTH: cursedUnion.filter(({ id }) => diff.map_A[id] && diff.map_B[id]),
+  const result = {
+    BOTH    : cursedUnion.filter(({ id }) => diff.map_A[id] && diff.map_B[id]),
     EXTENDED: cursedUnion.filter(({ id }) => !diff.map_A[id] && diff.map_B[id]),
-    REMOVED: cursedUnion.filter(({ id }) => diff.map_A[id] && !diff.map_B[id]),
+    REMOVED : cursedUnion.filter(({ id }) => diff.map_A[id] && !diff.map_B[id]),
   }
 
   for (const [key, rawList] of Object.entries(result)) {
     const rows = rawList.map((curseAddon) => {
-      const isUpdated =
-        key === 'BOTH' && diff.updated.some((o) => o.addonID === curseAddon.id)
+      const isUpdated
+        = key === 'BOTH' && diff.updated.some(o => o.addonID === curseAddon.id)
       return formatRow(diff.map_union[curseAddon.id], curseAddon, { isUpdated })
     })
 
@@ -159,7 +157,7 @@ export async function init(h = defaultHelper) {
       'MODS.md',
       `<!-- Automatic generated list ${key} -->\n`,
       '\n<!-- End of list -->',
-      formatTable(rows)
+      formatTable(rows),
     )
   }
 
@@ -169,7 +167,6 @@ export async function init(h = defaultHelper) {
 }
 
 if (
-  // @ts-ignore
   import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
 )
   init()
