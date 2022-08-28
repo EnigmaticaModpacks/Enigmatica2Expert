@@ -150,35 +150,35 @@ craft.remake(<excompressum:auto_sieve>, ["pretty",
   "  A  ",
   "□ S □",
   "◊ ■ ◊"], {
-  "■": <libvulpes:enhancedmotor>,         # Enhanced Motor
-  "□": <ore:plateTitaniumIridium>,        # Titanium Iridium Alloy Plate
   "A": <exnihilocreatio:item_material:3>, # Ancient Spores
+  "□": <ore:plateInvar>,                  # Invar Plate
   "S": <exnihilocreatio:block_sieve>,     # Sieve
   "◊": <ore:gemTanzanite>,                # Tanzanite
+  "■": <libvulpes:motor>,                 # Motor
 });
 
 # [Mana Sieve] from [Sieve][+4]
 craft.remake(<excompressum:mana_sieve>, ["pretty",
   "  A  ",
-  "◊ S ◊",
-  "■ ▄ ■"], {
-  "■": <botania:storage>,                 # Block of Manasteel
+  "■ S ■",
+  "◊ ▄ ◊"], {
   "A": <exnihilocreatio:item_material:3>, # Ancient Spores
+  "■": <botania:storage>,                 # Block of Manasteel
   "S": <exnihilocreatio:block_sieve>,     # Sieve
-  "▄": <libvulpes:advancedmotor>,         # Advanced Motor
   "◊": <ore:gemTanzanite>,                # Tanzanite
+  "▄": <libvulpes:advancedmotor>,         # Advanced Motor
 });
 
-# [Auto Heavy Sieve] from [Heavy Birch Sieve][+4]
+# [Auto Heavy Sieve] from [Heavy Dark Oak Sieve][+4]
 craft.remake(<excompressum:auto_heavy_sieve>, ["pretty",
   "  A  ",
-  "T H T",
+  "□ H □",
   "■ ▄ ■"], {
-  "■": <ore:blockTanzanite>,              # Block of Tanzanite
   "A": <exnihilocreatio:item_material:3>, # Ancient Spores
-  "T": <ore:sheetTitaniumIridium>,        # Titanium Iridium Alloy Sheet
-  "▄": <libvulpes:elitemotor>,            # Elite Motor
-  "H": <excompressum:heavy_sieve:*>,      # Heavy Birch Sieve
+  "□": <ore:plateTitaniumIridium>,        # Titanium Iridium Alloy Plate
+  "H": <excompressum:heavy_sieve:*>,      # Heavy Dark Oak Sieve
+  "■": <ore:blockTanzanite>,              # Block of Tanzanite
+  "▄": <libvulpes:enhancedmotor>,         # Enhanced Motor
 });
 
 # [Auto Hammer] from [Cobalt Sledge Hammer Head][+2]
@@ -196,11 +196,11 @@ craft.remake(<excompressum:auto_compressed_hammer>, ["pretty",
   "  A  ",
   "□ C □",
   "◊ ■ ◊"], {
-  "■": <ore:blockMotor>,                  # Motor
-  "□": <ore:plateTitaniumIridium>,        # Titanium Iridium Alloy Plate
   "A": <exnihilocreatio:item_material:3>, # Ancient Spores
+  "□": <ore:plateInvar>,                  # Invar Plate
   "C": <tconstruct:hammer_head>.withTag({Material: "cobalt"}), # Cobalt Hammer Head
   "◊": <ore:gemTanzanite>,                # Tanzanite
+  "■": <libvulpes:advancedmotor>,         # Advanced Motor
 });
 
 # Remake pebbles to accept half of any pebble
