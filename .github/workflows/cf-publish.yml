@@ -1,27 +1,19 @@
 name: Publishing on CurseForge
 on:
-  repository_dispatch:
+  workflow_dispatch:
   release:
     types: [released]
-
-# This allows a subsequently queued workflow run to interrupt previous runs
-concurrency:
-  group: '${{ github.workflow }} @ ${{ github.event.release.tag_name || github.head_ref || github.ref }}'
-  cancel-in-progress: true
 
 jobs:
   cf-publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with: 
-          fetch-depth: 1
-      - run: git checkout HEAD
+      - uses: actions/checkout@v3
 
       - name: 💽 Download .zip files from latest release
         uses: robinraju/release-downloader@v1.4
         with:
-          tag: ${{ github.event.release.tag_name }}
+          latest: true
           fileName: "*.zip"
 
       - name: 📃 Save changelog content to file
