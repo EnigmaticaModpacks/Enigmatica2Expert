@@ -1,62 +1,59 @@
-# v0.67.0
+# v0.68.0
 
+
+## 🟢 New Mods
+
+Icon | Summary | Reason
+----:|:--------| ------
+<img src="https://media.forgecdn.net/avatars/thumbnails/526/595/256/256/637846069796215011.png"         width="50"> | 🟩                      [**Entity Desync Fix**](https://www.curseforge.com/minecraft/mc-mods/entity-desync-fix)             <sup><sub>EntityDesyncFix-1.12.2-1.0.2.jar</sub></sup> <br> Fix entity motion desync (for example arrows or thrown items) | 
 
 ## 🟡 Updated Mods
 
+- **Village Names**
+- **Chunk-Pregenerator**
+- **OpenComputers**
 - **AE2 Unofficial Extended Life**
 - **Fluidlogged API**
-- **Had Enough Items**
-- **Spectral Edge**
-- **Aqua Acrobatics**
-- **Village Names**
-- **AE2 Fluid Crafting Rework**
-- **CraftTweaker**
+- **Smooth Font**
 
 
 ## ✏️ **Recipes**
-  - ### ✐ **Cheaper**: ![](https://is.gd/cyIWmZ "Formulaic Assemblicator") not requre ![](https://is.gd/43tx1G "Steel Casing") anymore
+  - ### ✐ **Cheaper**: ![](https://is.gd/HAnbpl "Teleport Rail")
 
   - ### ✏ **Misc Changes**
-    - <img src="https://i.imgur.com/sPDTkL9.png" width=50% align=right> ![](https://is.gd/XKPEGn "Crafting Station") now crafted instead ov vanilla ![](https://is.gd/mgkdAs "Crafting Table").
-      > Table could be converted from Station. Some recipes that using Crafting Table as ingredient was oredicted.
-    - ![](https://is.gd/JH1wMy "Chicken Wing Ring") fix uncraftable
-    - ![](https://is.gd/q5Dw2P "Purified Crushed Lead Ore")![](https://is.gd/j4Aiga "Purified Crushed Uranium Ore") fix unsmeltable
-    - ![](https://is.gd/zRRmNV "Network Visualisation Tool") purge and add tooltip about replacement
-    - ![](https://is.gd/L3pRMp "Monster Ball") fix craft
-    - ![](https://is.gd/sTakGu "Morphing Tool") replace ![](https://is.gd/cNcUwj "Silver Gear") => ![](https://is.gd/FDrAd0 "Aluminum Gear"), fixes https://github.com/Krutoy242/Enigmatica2Expert-Extended/issues/87
-    - [Inventory Panel Remote] fix uncraftable
+    - Remove Chaos Dragon Milking (not working anyway)
+    - ![](https://is.gd/VShDzE "Infinity Furnace") works x20 times faster: 0.5 seconds now
 
 
 
 ## 🔵 **Mods updates**
+  - ### ▦ **Ex Nihilo**: ExCompressum: Auto machines now consume ~50k RF/t
+      > Now Auto Sieves and Hammers gated less - only ![](https://is.gd/UdsThD "Auto Heavy Sieve") require ![](https://is.gd/5pVeKj "Titanium Ingot"). But Consumption was changed.
+      > - ![](https://is.gd/aJlvkM "Auto Compressed Hammer") 25,000 rf/t
+      > - ![](https://is.gd/oaTRhj "Auto Hammer") 2,000 rf/t
+      > - ![](https://is.gd/UdsThD "Auto Heavy Sieve") 100,000 rf/t
+      > - ![](https://is.gd/ZcaZFZ "Auto Sieve") 50,000 rf/t
 
-  - ### 🏪 **Requious Fracto**: <img src="https://i.imgur.com/omLUmp4.png" align=right> Change JEI planets icons, add flux goo hint
+  - ### 🔌 **Industrial Craft 2**: ![](https://is.gd/OwVCvk "Mining Laser") Nerf Explosion mode damage
 
-  - Fixes https://github.com/Krutoy242/Enigmatica2Expert-Extended/issues/84
-
-  - ### 🐉 **Ice and Fire**: Remove armor from `Dread Thrall`
-      > Hopefully fixes https://github.com/Krutoy242/Enigmatica2Expert-Extended/issues/80
-
-  - ### 🐻 **Better Animals Plus**: Naval animals x3 - x4 times less spawn
-      > This should help squids spawn more.
-      > Anyway, you can always spawn squids with bait.
+  - ### 🦯 **Thaumcraft**: Vis Seeds plantable only on planets
+      > Now you can't plant Vis Seeds in Overworld, End, Twilight forest and any other dimensions, except ones added by Advanced Rocketry.
 
 
 
 ## 🔄 **Misc Changes**
-
-  - <img src="https://i.imgur.com/Y0rVg0K.png" width=300 align=right> About 400 modded blocks now Fluidloggable. [Screenshot 2](https://i.imgur.com/OVihTqd.jpeg).
-  - ![](https://is.gd/pchFPH "Flopper") x2 faster working to be anough speed for combinings with ![](https://is.gd/jddHvL "Drying Basin")
-  - Add 4 new screenshots to main menu from player `jimgo514`
-  - ### 📖 **Quest Book**: Quests: Misc changes
-      > - Accept any cheese wheels now
-      > - Add plasma bucket tip
-      > - ![](https://is.gd/XqCZsR "Bedrock Miner") tip
-      > - ![](https://is.gd/3YSbk7 "Crop") wiki link
-      > - ![](https://is.gd/E5SXgp "Infinity Booster Card") move to Bragging Rights
-      > - Add missing AE2 opening quest
-
-
+  - Change Memory Tester RAM cap to 5k
+  - Remove tooltips from BoPs gems since they not spawn anymore
+  - Update `Skyblock` new world template description
+  - Creative Skyblock Players now can teleport any dim
+  - Fix myrmex cocoon convert to lootr chests
+    > Fixes https://github.com/Krutoy242/Enigmatica2Expert-Extended/issues/90
+  - ### 📖 **Quest Book**: Quests:
+      > - Add `Questing Ram` Morb quest
+      > - Add `Vis Seeds` quest
+      > - Fix `Ultimate Crafting Table` unfinishable
+      > - Add Hearts in `Utils` chapter
+      > - Add ![](https://is.gd/tmBCmD "Bee Diversity Store") working description
 
 
 
