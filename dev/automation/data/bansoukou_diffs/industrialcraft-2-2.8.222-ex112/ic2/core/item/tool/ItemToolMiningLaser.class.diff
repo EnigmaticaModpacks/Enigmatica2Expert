@@ -1,0 +1,74 @@
+diff --git "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tool\\ItemToolMiningLaser.java" "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tool\\ItemToolMiningLaser.java"
+index 53b79a82..7742b266 100644
+--- "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tool\\ItemToolMiningLaser.java"
++++ "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tool\\ItemToolMiningLaser.java"
+@@ -82,8 +82,8 @@ implements INetworkItemEventListener {
+ 
+     public ItemToolMiningLaser() {
+         super(ItemName.mining_laser, 100);
+-        this.maxCharge = 300000;
+-        this.transferLimit = 512;
++        this.maxCharge = 20000000;
++        this.transferLimit = 4096;
+         this.tier = 3;
+     }
+ 
+@@ -153,7 +153,7 @@ implements INetworkItemEventListener {
+             nbtData.func_74768_a("laserSetting", laserSetting);
+             IC2.platform.messagePlayer(player, "ic2.tooltip.mode", new Object[]{ItemToolMiningLaser.getModeString(laserSetting)});
+         } else {
+-            int consume = (new int[]{1250, 100, 5000, 0, 2500, 10000, 5000, 7500})[laserSetting];
++            int consume = (new int[]{20000, 5000, 30000, 0, 30000, 500000, 30000, 0})[laserSetting];
+             if (!ElectricItem.manager.use(stack, (double)consume, (EntityLivingBase)player)) {
+                 return new ActionResult(EnumActionResult.FAIL, (Object)stack);
+             }
+@@ -185,18 +185,18 @@ implements INetworkItemEventListener {
+                     Vector3 look = Util.getLook((Entity)player);
+                     Vector3 right = look.copy().cross(Vector3.UP);
+                     if (right.lengthSquared() < 1.0E-4) {
+-                        double angle = Math.toRadians(player.field_70177_z) - 1.5707963267948966;
+-                        right.set(Math.sin(angle), 0.0, -Math.cos(angle));
++                        double d = Math.toRadians(player.field_70177_z) - 1.5707963267948966;
++                        right.set(Math.sin(d), 0.0, -Math.cos(d));
+                     } else {
+                         right.normalize();
+                     }
+-                    Vector3 up = right.copy().cross(look);
++                    Vector3 vector3 = right.copy().cross(look);
+                     int sideShots = 2;
+                     double unitDistance = 8.0;
+                     look.scale(8.0);
+                     for (int r = -2; r <= 2; ++r) {
+                         for (int u = -2; u <= 2; ++u) {
+-                            Vector3 dir = look.copy().addScaled(right, (double)r).addScaled(up, (double)u).normalize();
++                            Vector3 dir = look.copy().addScaled(right, (double)r).addScaled(vector3, (double)u).normalize();
+                             this.shootLaser(stack, world, dir, (EntityLivingBase)player, Float.POSITIVE_INFINITY, 12.0f, Integer.MAX_VALUE, false, false);
+                         }
+                     }
+@@ -223,7 +223,7 @@ implements INetworkItemEventListener {
+             Vector3 dir = Util.getLook((Entity)player);
+             double angle = dir.dot(Vector3.UP);
+             if (Math.abs(angle) < 1.0 / Math.sqrt(2.0)) {
+-                if (ElectricItem.manager.use(stack, 3000.0, (EntityLivingBase)player)) {
++                if (ElectricItem.manager.use(stack, 20000.0, (EntityLivingBase)player)) {
+                     dir.y = 0.0;
+                     dir.normalize();
+                     Vector3 start = Util.getEyePosition((Entity)player);
+@@ -233,7 +233,7 @@ implements INetworkItemEventListener {
+                         if (this.shootLaser(stack, world, start, dir, (EntityLivingBase)player, Float.POSITIVE_INFINITY, 5.0f, Integer.MAX_VALUE, false, false)) {
+                             ((NetworkManager)IC2.network.get(true)).initiateItemEvent(player, stack, 3, true);
+                         }
+-                    } else if (nbtData.func_74762_e("laserSetting") == 7 && this.shootLaser(stack, world, start, dir, (EntityLivingBase)player, Float.POSITIVE_INFINITY, 5.0f, Integer.MAX_VALUE, false, false)) {
++                    } else if (nbtData.func_74762_e("laserSetting") == 7 && ElectricItem.manager.use(stack, 160000.0, (EntityLivingBase)player) && this.shootLaser(stack, world, start, dir, (EntityLivingBase)player, Float.POSITIVE_INFINITY, 5.0f, Integer.MAX_VALUE, false, false)) {
+                         this.shootLaser(stack, world, new Vector3(start.x, start.y - 1.0, start.z), dir, (EntityLivingBase)player, Float.POSITIVE_INFINITY, 5.0f, Integer.MAX_VALUE, false, false);
+                         this.shootLaser(stack, world, new Vector3(start.x, start.y + 1.0, start.z), dir, (EntityLivingBase)player, Float.POSITIVE_INFINITY, 5.0f, Integer.MAX_VALUE, false, false);
+                         if (player.func_174811_aO().equals((Object)EnumFacing.SOUTH) || player.func_174811_aO().equals((Object)EnumFacing.NORTH)) {
+@@ -256,7 +256,7 @@ implements INetworkItemEventListener {
+                     }
+                 }
+             } else if (nbtData.func_74762_e("laserSetting") == 7) {
+-                if (ElectricItem.manager.use(stack, 3000.0, (EntityLivingBase)player)) {
++                if (ElectricItem.manager.use(stack, 200000.0, (EntityLivingBase)player)) {
+                     dir.x = 0.0;
+                     dir.z = 0.0;
+                     dir.normalize();

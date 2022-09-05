@@ -1,5 +1,5 @@
 diff --git "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tool\\EntityMiningLaser.java" "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tool\\EntityMiningLaser.java"
-index 510feb71..398471dc 100644
+index 510feb71..935b0b5f 100644
 --- "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tool\\EntityMiningLaser.java"
 +++ "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tool\\EntityMiningLaser.java"
 @@ -196,7 +196,7 @@ lbl36:
@@ -7,7 +7,16 @@ index 510feb71..398471dc 100644
      private void explode() {
          World world = this.func_130014_f_();
 -        LaserEvent.LaserExplodesEvent event = new LaserEvent.LaserExplodesEvent(world, (Entity)this, this.owner, this.range, this.power, this.blockBreaks, this.explosive, this.smelt, 5.0f, 0.85f, 0.55f);
-+        LaserEvent.LaserExplodesEvent event = new LaserEvent.LaserExplodesEvent(world, (Entity)this, this.owner, this.range, this.power, this.blockBreaks, this.explosive, this.smelt, 3.0f, 0.85f, 0.0f);
++        LaserEvent.LaserExplodesEvent event = new LaserEvent.LaserExplodesEvent(world, (Entity)this, this.owner, this.range, this.power, this.blockBreaks, this.explosive, this.smelt, 3.5f, 1.0f, 0.0f);
          if (MinecraftForge.EVENT_BUS.post((Event)event)) {
              this.func_70106_y();
              return;
+@@ -219,7 +219,7 @@ lbl36:
+         entity = event.hitEntity;
+         int damage = (int)this.power;
+         if (damage > 0) {
+-            entity.func_70015_d(damage * (this.smelt ? 2 : 1));
++            entity.func_70015_d(5 * (this.smelt ? 2 : 1));
+             if (entity.func_70097_a(new EntityDamageSourceIndirect("arrow", (Entity)this, (Entity)this.owner).func_76349_b(), (float)damage) && (this.owner instanceof EntityPlayer && entity instanceof EntityDragon && ((EntityDragon)entity).func_110143_aJ() <= 0.0f || entity instanceof MultiPartEntityPart && ((MultiPartEntityPart)entity).field_70259_a instanceof EntityDragon && ((EntityLivingBase)((MultiPartEntityPart)entity).field_70259_a).func_110143_aJ() <= 0.0f)) {
+                 IC2.achievements.issueAchievement((EntityPlayer)this.owner, "killDragonMiningLaser");
+             }
