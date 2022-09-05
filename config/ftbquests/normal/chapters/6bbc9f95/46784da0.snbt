@@ -2,7 +2,7 @@
 	x: 8.4d,
 	y: -0.4d,
 	text: [
-		"Any Vis Seeds craftable, but can be planted only on other planets, added by Advanced Rocketry mod."
+		"Any Vis Seeds craftable, but can be planted only on other planets, added by Advanced Rocketry mod, OR in Emptiness dimension."
 	],
 	dependencies: [
 		"a54068bb"
