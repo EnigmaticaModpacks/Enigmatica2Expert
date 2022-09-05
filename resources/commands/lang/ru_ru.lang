@@ -10,6 +10,7 @@ commands.addtooltip.succes=§7Толтип экспортируется в §n§
 commands.addtooltip.notag=§8Ведь §7/addtooltip§8 не учитывает теги nbt.
 
 commands.restart_server.usage=§8[§6ø§8]§r Все игроки на сервере должны выполнить эту команду для перезапуска сервера
+commands.restart_server.you_want=§8[§6ø§8]§r Вы хотите §nrestart server§r. У других игроков есть %s секунд что бы ввести §a/restart§r.
 commands.restart_server.query=§8[§6ø§8]§r %s хочет §nrestart server§r. Напишите §a/restart§r, если вы тоже хотите §nrestart server§r.
 commands.restart_server.failed=§8[§6ø§8]§r Не удалось проголосовать за перезапуск. Этот игрок отказывается войти в §a/restart§r: %s
 commands.restart_server.cancelled=§8[§6ø§8]§r Голосование за §nrestart server§r отменено

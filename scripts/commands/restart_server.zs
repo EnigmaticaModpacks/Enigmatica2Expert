@@ -74,6 +74,7 @@ cmd.execute = function(command, server, sender, args) {
   if (playerPending.size() == 0) {
     // We are first player who activated
     playerPending.add(player.uuid);
+    sendSingle(player, 'you_want', 300 / 20);
     send('query', 'unpending', player.name);
     
     player.world.catenation().sleep(300).then(function(world, ctx) { cancelVoting(); }).start();

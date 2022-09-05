@@ -10,6 +10,7 @@ commands.addtooltip.succes=§7Tooltip exported to §n§fcrafttweaker.log
 commands.addtooltip.notag=§8Be aware that §7/addtooltip§8 not account nbt tags
 
 commands.restart_server.usage=§8[§6ø§8]§r All players on server should execute this command to restart server
+commands.restart_server.you_want=§8[§6ø§8]§r You want to §nrestart server§r. Other players have %s seconds to enter §a/restart§r.
 commands.restart_server.query=§8[§6ø§8]§r %s wants to §nrestart server§r. Write §a/restart§r if you want §nrestart server§r too.
 commands.restart_server.failed=§8[§6ø§8]§r Failed to vote for restart. This players refuse to enter §a/restart§r: %s
 commands.restart_server.cancelled=§8[§6ø§8]§r Vote for §nrestart server§r is cancelled
