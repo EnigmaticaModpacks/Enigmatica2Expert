@@ -11,7 +11,7 @@ let isBlocks
  */
 export function isBlock(itemID) {
   return (isBlocks ??= new Set(
-    getCSV('config/tellme/blocks-csv.csv').map((o) => o['Registry name'])
+    getCSV('config/tellme/blocks-csv.csv').map(o => o['Registry name'])
   )).has(itemID)
 }
 
@@ -20,10 +20,10 @@ let existOreDicts
 /**
  * @param {string} oreName
  */
-export const isODExist = (oreName) =>
+export const isODExist = oreName =>
   (existOreDicts ??= new Set(
     getCSV('config/tellme/items-csv.csv')
-      .map((o) => o['Ore Dict keys'].split(','))
+      .map(o => o['Ore Dict keys'].split(','))
       .flat()
   )).has(oreName)
 
@@ -31,7 +31,7 @@ export const isODExist = (oreName) =>
 let existItems
 export function isItemExist(id) {
   return (existItems ??= new Set(
-    getCSV('config/tellme/items-csv.csv').map((o) => o['Registry name'])
+    getCSV('config/tellme/items-csv.csv').map(o => o['Registry name'])
   )).has(id.split(':').slice(0, 2).join(':'))
 }
 
@@ -41,7 +41,7 @@ export function isJEIBlacklisted(def, meta) {
   return (
     (jeiBlacklist ??= new Set(
       config('config/jei/itemBlacklist.cfg').advanced.itemBlacklist
-    )).has(def) || jeiBlacklist.has(def + ':' + (meta ?? '0'))
+    )).has(def) || jeiBlacklist.has(`${def}:${meta ?? '0'}`)
   )
 }
 
@@ -55,9 +55,9 @@ export function isPurged(ctCapture) {
         /^\[INITIALIZATION\]\[CLIENT\]\[INFO\] purged: (.*)$/gm
       ),
     ]
-      .map((m) => m[1])
-      .map((s) => s.match(/(<[^>]+?>(.withTag\(.*\))?)/)[1])
-      .filter((s) => s)
+      .map(m => m[1])
+      .map(s => s.match(/(<[^>]+?>(.withTag\(.*\))?)/)[1])
+      .filter(s => s)
   )).has(ctCapture)
 }
 
@@ -66,7 +66,7 @@ let itemsTree
 export const getItemsTree = () =>
   (itemsTree ??= getCSV('config/tellme/items-csv.csv').reduce(
     (result, o) => (
-      // @ts-ignore
+      // @ts-expect-error
       ((result[o['Registry name']] ??= {})[o['Meta/dmg']] = new Set(
         o['Ore Dict keys'].split(',')
       )),
@@ -86,7 +86,7 @@ export function getItemOredictSet(id, meta = '0') {
  * @returns {number[]}
  */
 export function getSubMetas(definition) {
-  return Object.keys((getItemsTree()[definition] ??= {})).map((s) => Number(s))
+  return Object.keys((getItemsTree()[definition] ??= {})).map(s => Number(s))
 }
 
 /**
@@ -153,15 +153,14 @@ function getByOreRgx(rgx) {
   const result = {}
   getOresByRegex(rgx).forEach((tm) => {
     const oreKinds = tm.ores
-      .filter((s) => rgx.test(s))
-      .map((s) => s.replace(rgx, '$1'))
-    for (const oreKind of oreKinds) {
-      ;(result[oreKind] ??= []).push(tm)
-    }
+      .filter(s => rgx.test(s))
+      .map(s => s.replace(rgx, '$1'))
+    for (const oreKind of oreKinds)
+      (result[oreKind] ??= []).push(tm)
   })
 
   return _(result)
-    .mapValues((o) => o.sort(prefferedModSort)[0])
+    .mapValues(o => o.sort(prefferedModSort)[0])
     .value()
 }
 
@@ -170,7 +169,7 @@ function getByOreRgx(rgx) {
  */
 function getOresByRegex(rgx) {
   return getCSV('config/tellme/items-csv.csv')
-    .filter((o) => o['Ore Dict keys']?.split(',').some((ore) => rgx.test(ore)))
+    .filter(o => o['Ore Dict keys']?.split(',').some(ore => rgx.test(ore)))
     .map(tellmeToObj)
 }
 
@@ -181,19 +180,19 @@ function getOresByRegex(rgx) {
  */
 function tellmeToObj(o) {
   return {
-    mod: o['Mod name'],
-    owner: o['Registry name'].split(':')[0],
-    id: o['Registry name'],
-    itemId: Number(o['Item ID']),
-    damage: Number(o['Meta/dmg']),
-    hasSubtypes: o['Subtypes'] === 'true',
-    display: o['Display name'],
-    ores: o['Ore Dict keys'].split(','),
+    mod          : o['Mod name'],
+    owner        : o['Registry name'].split(':')[0],
+    id           : o['Registry name'],
+    itemId       : Number(o['Item ID']),
+    damage       : Number(o['Meta/dmg']),
+    hasSubtypes  : o.Subtypes === 'true',
+    display      : o['Display name'],
+    ores         : o['Ore Dict keys'].split(','),
     commandString: `<${o['Registry name']}${
-      o['Meta/dmg'] === '0' ? '' : ':' + o['Meta/dmg']
+      o['Meta/dmg'] === '0' ? '' : `:${o['Meta/dmg']}`
     }>`,
-    withAmount: function (amount) {
-      return this.commandString + (amount > 1 ? ' * ' + amount : '')
+    withAmount(amount) {
+      return this.commandString + (amount > 1 ? ` * ${amount}` : '')
     },
   }
 }
@@ -232,7 +231,7 @@ const modWeights = `
 `
   .trim()
   .split('\n')
-  .map((l) => l.trim())
+  .map(l => l.trim())
   .reverse()
   .reduce((map, v, i) => ((map[v] = i), map), {})
 
@@ -270,7 +269,7 @@ function matchFurnaceRecipes(text) {
         /^furnace\.addRecipe\((?<output><(?<out_id>[^>]+?)(?::(?<out_meta>\*|\d+))?>(?<out_tail>(\.withTag\((?<out_tag>\{.*?\})\))?( \* (?<out_amount>\d+))?)?), (?<input><(?<in_id>[^>]+?)(?::(?<in_meta>\*|\d+))?>(?<in_tail>(\.withTag\((?<in_tag>\{.*?\})\))?( \* (?<in_amount>\d+))?)?), .+\)$/gm
       ),
     ]
-      .map((m) => m.groups)
+      .map(m => m.groups)
       .sort((a, b) => naturalSort(a.input, b.input))
   )
 }
@@ -318,12 +317,12 @@ export function getUnchangedFurnaceRecipes() {
     subSub
       .split('\n')
       .map(
-        (s) =>
+        s =>
           s.match(
             /\[INITIALIZATION\]\[CLIENT\]\[INFO\] (furnace\.addRecipe\(.+)/
           )?.[1]
       )
-      .filter((s) => s)
+      .filter(s => s)
       .join('\n')
   ))
 }
@@ -334,14 +333,14 @@ export function getUnchangedFurnaceRecipes() {
  */
 export function smelt(tm) {
   const r = getFurnaceRecipes().find(
-    (r) => r.input.replace(':*', '') === tm.commandString
+    r => r.input.replace(':*', '') === tm.commandString
   )
   if (!r) return undefined
 
   return tellmeToObj(
     _(getCSV('config/tellme/items-csv.csv'))
-      .filter((o) => o['Registry name'] == r.out_id)
-      .filter((o) => o['Meta/dmg'] == (r.out_meta ?? '0'))
+      .filter(o => o['Registry name'] == r.out_id)
+      .filter(o => o['Meta/dmg'] == (r.out_meta ?? '0'))
       .first()
   )
 }
@@ -358,28 +357,28 @@ export function smeltOre(ore) {
 }
 
 const baseMultiplier = {
-  Amber: 2,
-  Amethyst: 2,
-  Apatite: 10,
-  Aquamarine: 4,
-  CertusQuartz: 3,
+  Amber              : 2,
+  Amethyst           : 2,
+  Apatite            : 10,
+  Aquamarine         : 4,
+  CertusQuartz       : 3,
   ChargedCertusQuartz: 2,
-  Coal: 5,
-  Diamond: 2,
-  DimensionalShard: 3,
-  Emerald: 2,
-  Glowstone: 4,
-  Lapis: 10,
-  Malachite: 2,
-  Peridot: 2,
-  Quartz: 3,
-  QuartzBlack: 2,
-  quicksilver: 2,
-  Redstone: 10,
-  Ruby: 2,
-  Sapphire: 2,
-  Tanzanite: 2,
-  Topaz: 2,
+  Coal               : 5,
+  Diamond            : 2,
+  DimensionalShard   : 3,
+  Emerald            : 2,
+  Glowstone          : 4,
+  Lapis              : 10,
+  Malachite          : 2,
+  Peridot            : 2,
+  Quartz             : 3,
+  QuartzBlack        : 2,
+  quicksilver        : 2,
+  Redstone           : 10,
+  Ruby               : 2,
+  Sapphire           : 2,
+  Tanzanite          : 2,
+  Topaz              : 2,
 }
 
 /**
@@ -401,10 +400,9 @@ export function countBaseOutput(oreBase, multiplier) {
  */
 export function getSomething(ore_base, kindKeys, blacklist = []) {
   const dict = getByOreBase(ore_base)
-  blacklist.forEach((key) => delete dict[key])
-  for (const kind of kindKeys) {
+  blacklist.forEach(key => delete dict[key])
+  for (const kind of kindKeys)
     if (dict[kind]) return dict[kind]
-  }
 
   for (const kind of ['ore', 'ingot', 'dust']) {
     const smelted = smeltOre(kind + ore_base)
@@ -433,11 +431,11 @@ export function getSomething(ore_base, kindKeys, blacklist = []) {
  */
 function matchTableRecipes(text) {
   if (!text) return undefined
-  const regex =
-    /^recipes\.(?<shape>addShape(d|less))\("(?<name>[^"]+)", (?<output><(?<out_id>[^>]+?)(?::(?<out_meta>\*|\d+))?>(?<out_tail>(\.withTag\((?<out_tag>\{.*?\})\))?( \* (?<out_amount>\d+))?)?), (?<input>\[.*\])\);$/gm
+  const regex
+    = /^recipes\.(?<shape>addShape(d|less))\("(?<name>[^"]+)", (?<output><(?<out_id>[^>]+?)(?::(?<out_meta>\*|\d+))?>(?<out_tail>(\.withTag\((?<out_tag>\{.*?\})\))?( \* (?<out_amount>\d+))?)?), (?<input>\[.*\])\);$/gm
   return /** @type {TableRecipe[]} */ (
     [...text.matchAll(regex)]
-      .map((m) => m.groups)
+      .map(m => m.groups)
       .sort(({ output: a }, { output: b }) => naturalSort(a, b))
   )
 }
@@ -456,6 +454,9 @@ export function getTableRecipes() {
  * @type {TableRecipe[]}
  */
 let tableUnchangedRecipes
+/**
+ * @returns {TableRecipe[]}
+ */
 export function getUnchangedTableRecipes() {
   if (tableUnchangedRecipes) return tableUnchangedRecipes
 
@@ -469,8 +470,8 @@ export function getUnchangedTableRecipes() {
   return (tableUnchangedRecipes = matchTableRecipes(
     subSub
       .split('\n')
-      .map((s) => s.match(subRgx)?.[1])
-      .filter((s) => s)
+      .map(s => s.match(subRgx)?.[1])
+      .filter(s => s)
       .join('\n')
   ))
 }
@@ -482,8 +483,8 @@ let cachedRemovedRecipes
 export function getRemovedRecipes() {
   if (cachedRemovedRecipes) return cachedRemovedRecipes
 
-  const tblSet = new Set(getTableRecipes().map((r) => r.name))
+  const tblSet = new Set(getTableRecipes().map(r => r.name))
   return (cachedRemovedRecipes = getUnchangedTableRecipes().filter(
-    (r) => !tblSet.has(r.name)
+    r => !tblSet.has(r.name)
   ))
 }

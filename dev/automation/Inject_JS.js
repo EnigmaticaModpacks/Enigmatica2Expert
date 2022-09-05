@@ -9,7 +9,6 @@
  */
 
 // @ts-check
-/* eslint-disable no-unused-vars */
 
 import glob from 'glob'
 import humanizeString from 'humanize-string'
@@ -19,9 +18,9 @@ import { js2xml, xml2js } from 'xml-js'
 
 import {
   countBaseOutput,
+  getByOreKind,
   getByOredict,
   getByOredict_first,
-  getByOreKind,
   getCrtLogBlock,
   getFurnaceRecipes,
   getItemOredictSet,
@@ -29,6 +28,7 @@ import {
   getSomething,
   getSubMetas,
   getUnchangedFurnaceRecipes,
+  getUnchangedTableRecipes,
   isItemExist,
   isJEIBlacklisted,
   isODExist,
@@ -60,28 +60,28 @@ function xml_to_js(xmlString) {
   return /** @type {XMLElement} */ (xml2js(xmlString, { compact: false }))
 }
 
-const reverseStr = (s) => [...s].reverse().join('')
+const reverseStr = s => [...s].reverse().join('')
 const reverseNaturalSort = (a, b) => naturalSort(reverseStr(a), reverseStr(b))
 
 /**
  * @param {string} id
  * @param {string} meta
  */
-const itemize = (id, meta) => id + (meta !== '0' ? ':' + meta : '')
+const itemize = (id, meta) => id + (meta && meta !== '0' ? `:${meta}` : '')
 const $ = (source, id, meta, count, nbt, modifiers) => {
-  return `<${source}:${id}${meta && meta !== '0' ? ':' + meta : ''}>${
-    nbt ? '.withTag(' + nbt + ')' : ''
-  }${modifiers || ''}${Number(count) > 1 ? ' * ' + (count | 0) : ''}`
+  return `<${source}:${id}${meta && meta !== '0' ? `:${meta}` : ''}>${
+    nbt ? `.withTag(${nbt})` : ''
+  }${modifiers || ''}${Number(count) > 1 ? ` * ${count | 0}` : ''}`
 }
 
-const flatTable = (arr) =>
+const flatTable = arr =>
   arr.length <= 0
     ? undefined
     : table(arr, {
-        border: getBorderCharacters('void'),
-        columnDefault: { paddingLeft: 0, paddingRight: 0 },
-        drawHorizontalLine: () => false,
-      }).replace(/[ \t]+$|\n$/gm, '')
+      border            : getBorderCharacters('void'),
+      columnDefault     : { paddingLeft: 0, paddingRight: 0 },
+      drawHorizontalLine: () => false,
+    }).replace(/[ \t]+$|\n$/gm, '')
 
 /**
  * @param {any} injectValue
@@ -90,8 +90,8 @@ function formatOutput(injectValue) {
   return !Array.isArray(injectValue)
     ? injectValue
     : injectValue.every(Array.isArray)
-    ? flatTable(injectValue)
-    : injectValue.join('\n')
+      ? flatTable(injectValue)
+      : injectValue.join('\n')
 }
 
 // ----------------------------------
@@ -110,14 +110,14 @@ export async function init(h = defaultHelper) {
         .split('\n').length
       const [, whole, p1, p2] = match
       occurences.push({
-        filePath: filePath,
+        filePath,
         capture: whole,
         command:
           p1 === '{' && p2 === '}'
-            ? '(()=>' + whole.trim() + ')()'
+            ? `(()=>${whole.trim()})()`
             : whole.trim(),
-        line: lineNumber,
-        below: zsfileContent.substring(match.index + match[0].length),
+        line : lineNumber,
+        below: zsfileContent.substring(match.index ?? 0 + match[0].length),
       })
     }
   })
@@ -130,14 +130,16 @@ export async function init(h = defaultHelper) {
     let injectValue = ''
     if (/^\(\s*\)$/gim.test(cmd.capture)) {
       injectValue = '# Empty Injection'
-    } else {
+    }
+    else {
       try {
         const evalStr = `(async()=>{return ${cmd.command}})()`
         // eslint-disable-next-line no-eval
         injectValue ||= await eval(evalStr)
-      } catch (error) {
+      }
+      catch (error) {
         return h.error(
-          '\nComment block Error.\nFile: ' + cmd.filePath + ':' + cmd.line,
+          `\nComment block Error.\nFile: ${cmd.filePath}:${cmd.line}`,
           '\nCapture:',
           cmd.capture,
           '\n\n',
@@ -150,16 +152,17 @@ export async function init(h = defaultHelper) {
 
     // eslint-disable-next-line eqeqeq
     if (injectString == undefined) {
-      h.warn(cmd.filePath + ':' + cmd.line + ' Returned empty result!')
-    } else {
+      h.warn(`${cmd.filePath}:${cmd.line} Returned empty result!`)
+    }
+    else {
       const replaceResults = injectInFile(
         cmd.filePath,
         cmd.capture,
         '/**/',
-        '*/\n' + injectString + '\n'
+        `*/\n${injectString}\n`
       )
-      replaceResults.forEach((o) => (countBlocks += o.numMatches ?? 0))
-      replaceResults.forEach((o) => (countChanged += o.numReplacements ?? 0))
+      replaceResults?.forEach(o => (countBlocks += o.numMatches ?? 0))
+      replaceResults?.forEach(o => (countChanged += o.numReplacements ?? 0))
     }
 
     h.step()
@@ -168,11 +171,7 @@ export async function init(h = defaultHelper) {
   h.result(`Blocks: ${countBlocks}, Changed: ${countChanged}`)
 }
 
-if (
-  // @ts-ignore
-  import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
-)
-  init()
+if (import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()
 
 // Test section:
 // ;(async () => console.log('\n', formatOutput((() => {})())))()

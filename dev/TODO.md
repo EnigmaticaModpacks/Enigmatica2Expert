@@ -1,5 +1,9 @@
 # TODO list
 
+- [ ] ✏️ Add craft `Rat hole` + `Salis Mundus` -> `Something`
+- [x] ✏️ Non-treated pistons or "animals" way
+- [x] ✏️ Wood Planks for magic line, add jei, add Traits
+- [x] ✏️ Superlubricient Ice cheaper
 - [ ] ✏️ Add Salis Mundus conversion from saplings to Thaum trees
 - [ ] ✏️ Blast Resistant drive crash game, maybe gate storage disks
 - [ ] ✏️ Monster Ball Uncraftable
@@ -9,6 +13,7 @@
 - [ ] ✏️ Add chaos shards recipe for Skyblock. Probably RFT Syringe in 5 steps => Struck Lightning
 - [ ] ✏️ Remove Dragon Forge crafts (because its unautomateable)
 - [ ] ✏️ Milk Questing Ram to color essence
+- [ ] ✏️ Heat Exchanger (immersive tech) is broken, does not accept other fluids/gasses. Only accepts water.
 - [ ] 📀 Add Meat to Meaty orb https://github.com/daedalus4096/ThaumicWonders/blob/251829dee76d72368d0ed0af1f2104121b781e63/src/main/java/com/verdantartifice/thaumicwonders/common/tiles/devices/TileMeatyOrb.java#L49-L53
 - [ ] 📀 Buff Golem Stats
 - [ ] 📀 Change Quartz modifier to `(n + 1) * 1.05`
@@ -16,6 +21,10 @@
 - [ ] 📀 Fix BedrockOre cant go 1 height flat https://github.com/MightyPirates/BedrockOres/blob/master-MC1.12/src/main/java/li/cil/bedrockores/common/world/WorldGeneratorBedrockOre.java#L92
 - [ ] 📀 Adv. Rock tank left 64 buckets when broken
 - [ ] 🔄 Ratlantean spirit projectiles aren't hitting the player
+- [x] 🔄 void pickaxe of the core has some really low  mining level
+- [x] 🔄 Introduce EIO painting machine
+- [ ] 📖 Plate of Unsealing add quest
+- [ ] 📖 Cheese should be any cheese
 
 ---
 
@@ -23,6 +32,7 @@
 
 ## Long-Term
 
+- [ ] 🔴 Do not update `Specrtal Edge`
 - [ ] 🔄 Remove common blocks from JER planets if they appear in Overworld. For example, we dont need 20 pages of Iron Ore for each planet
 - [ ] 🚧 Update screenshots on CF
 - [ ] 🔴 Fix Integrated proxy bug with Bansoukou: https://github.com/shBLOCK/IntegratedProxy/issues/29

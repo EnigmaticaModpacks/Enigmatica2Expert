@@ -12,18 +12,17 @@
 ============================================= */
 import { writeFileSync } from 'fs'
 
+import { URL, fileURLToPath } from 'url'
 import yargs from 'yargs'
 
 import { defaultHelper, loadText } from '../lib/utils.js'
 
 const { argv } = yargs(process.argv.slice(2)).option('i', {
-  alias: 'input',
-  type: 'string',
+  alias   : 'input',
+  type    : 'string',
   describe: 'Debug.log path',
-  default: 'logs/debug.log',
-})
-
-import { fileURLToPath, URL } from 'url' // @ts-ignore
+  default : 'logs/debug.log',
+}) // @ts-expect-error
 function relative(relPath = './') {
   return fileURLToPath(new URL(relPath, import.meta.url))
 }
@@ -146,6 +145,8 @@ const ignore = [
   // Spark normal behaviour
   /There was a problem reading the entry .*spark-forge.jar - probably a corrupt zip/,
   /Zip file spark-forge.jar failed to read properly, it will be ignored/,
+
+  /\[Voice Chat Mod\]/, // Devonly mod error
 
   /* =============================================
   =               Ignoring Warnings             =
@@ -287,16 +288,16 @@ const known = []
 
 export async function init(h = defaultHelper) {
   await h.begin('Loading & parsing debug.log')
-  let log = loadText(argv['input'] ?? 'logs/debug.log')
+  let log = loadText(argv.input ?? 'logs/debug.log')
   const serverThreadStart = log.indexOf('[Server thread/')
   if (serverThreadStart !== -1) log = log.substring(0, serverThreadStart)
   let newLog = ''
 
-  let stat = {
-    total: 0,
-    unknown: 0,
+  const stat = {
+    total   : 0,
+    unknown : 0,
     resolved: known.length,
-    viewed: 0,
+    viewed  : 0,
   }
 
   const allErrors = [...log.matchAll(/^.*\W(error|WARN)\W.*$/gim)]
@@ -323,8 +324,8 @@ export async function init(h = defaultHelper) {
     }
 
     if (!isIgnore) {
-      let line = match[0].replace(/^\[[\d:]+\] /, '') // Remove timestamp
-      newLog += line + '\n'
+      const line = match[0].replace(/^\[[\d:]+\] /, '') // Remove timestamp
+      newLog += `${line}\n`
 
       if (stat.viewed < 100) {
         stat.viewed++
@@ -336,11 +337,11 @@ export async function init(h = defaultHelper) {
   writeFileSync(relative('data/unknownErrors.log'), newLog)
 
   h.result(
-    `Errors Total: ${stat.total}, Untreaten: ${stat.unknown}` +
-      (stat.resolved ? `, Resolved: ${stat.resolved}/${known.length}` : '')
+    `Errors Total: ${stat.total}, Untreaten: ${stat.unknown}${
+      stat.resolved ? `, Resolved: ${stat.resolved}/${known.length}` : ''}`
   )
 }
-// @ts-ignore
+// @ts-expect-error
 if (
   import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
 )

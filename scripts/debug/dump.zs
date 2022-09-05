@@ -86,22 +86,22 @@ function exportAllBlocks() as void {
   print('##################################################');
 }
 
-function exportAllTools() as void {
-  print('##################################################');
-  print('#                   Tools                        #');
-  for def in game.items {
-    var lastDef = '';
-    for item in def.subItems {
-      if(!(item.isDamageable && item.maxStackSize==1 && item.maxDamage > 1)) continue;
+// function exportAllTools() as void {
+//   print('##################################################');
+//   print('#                   Tools                        #');
+//   for def in game.items {
+//     var lastDef = '';
+//     for item in def.subItems {
+//       if(!(item.isDamageable && item.maxStackSize==1 && item.maxDamage > 1)) continue;
 
-      if (lastDef == item.definition.id) continue;
-      lastDef = item.definition.id;
+//       if (lastDef == item.definition.id) continue;
+//       lastDef = item.definition.id;
       
-      print(item.maxDamage ~' '~ item.definition.id);
-    }
-  }
-  print('##################################################');
-}
+//       print(item.maxDamage ~' '~ item.definition.id);
+//     }
+//   }
+//   print('##################################################');
+// }
 
 zenClass DebugUtils {
   var once as bool = false;
@@ -181,7 +181,7 @@ function runAutomation(player as IPlayer) as void {
   .sleep(100).then(function(world, ctx) {
     player.sendMessage('Developing: Starting §cexport to crafttweaker.log');
     exportAllBlocks();
-    exportAllTools();
+    // exportAllTools();
   })
   
   .sleep(100).then(function(world, ctx) {
