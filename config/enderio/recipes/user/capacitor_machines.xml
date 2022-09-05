@@ -110,9 +110,9 @@
   <capacitor key="enderio:block_weather_obelisk/use"                base="320"      scaler="POWER" />
   <capacitor key="enderio:block_weather_obelisk/fluid_use"          base="4"        scaler="POWER" />
   
-  <capacitor key="enderio:block_painter/intake"                     base="5000"     scaler="POWER" />
-  <capacitor key="enderio:block_painter/buffer"                     base="100000"   scaler="POWER" />
-  <capacitor key="enderio:block_painter/use"                        base="250"      scaler="POWER" />
+  <capacitor key="enderio:block_painter/intake"                     base="100"      scaler="POWER" />
+  <capacitor key="enderio:block_painter/buffer"                     base="1000"     scaler="POWER" />
+  <capacitor key="enderio:block_painter/use"                        base="1"        scaler="FIXED" />
   
   <capacitor key="enderio:block_sag_mill/intake"                    base="200000"   scaler="POWER" />
   <capacitor key="enderio:block_sag_mill/buffer"                    base="2000000"  scaler="POWER" />

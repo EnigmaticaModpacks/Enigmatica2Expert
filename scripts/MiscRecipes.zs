@@ -104,14 +104,35 @@ import scripts.craft.grid.Grid;
 	[null, null, null]]);	
 
 # Piston
-	recipes.remove(<minecraft:piston>);
-	recipes.addShapedMirrored("Piston1", <minecraft:piston> * 2, [[<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>],[<ore:compressed1xCobblestone>, <ore:plateIron>, <ore:compressed1xCobblestone>], [<ore:compressed1xCobblestone>, <ore:dustRedstone>, <ore:compressed1xCobblestone>]]);
-	recipes.addShapedMirrored("Piston2", <minecraft:piston> * 2, [[<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>],[<ore:compressed1xCobblestone>, <ore:plateNickel>, <ore:compressed1xCobblestone>], [<ore:compressed1xCobblestone>, <ore:dustRedstone>, <ore:compressed1xCobblestone>]]);
-	recipes.addShapedMirrored("Piston3", <minecraft:piston> * 2, [[<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>],[<ore:compressed1xCobblestone>, <ore:plateAluminum>, <ore:compressed1xCobblestone>], [<ore:compressed1xCobblestone>, <ore:dustRedstone>, <ore:compressed1xCobblestone>]]);
-	recipes.addShapedMirrored("Piston4", <minecraft:piston> * 2, [[<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>],[<ore:compressed1xCobblestone>, <ore:plateLead>, <ore:compressed1xCobblestone>], [<ore:compressed1xCobblestone>, <ore:dustRedstone>, <ore:compressed1xCobblestone>]]);
-	recipes.addShapedMirrored("Piston5", <minecraft:piston> * 2, [[<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>],[<ore:compressed1xCobblestone>, <ore:plateSilver>, <ore:compressed1xCobblestone>], [<ore:compressed1xCobblestone>, <ore:dustRedstone>, <ore:compressed1xCobblestone>]]);
-	recipes.addShapedMirrored("Piston6", <minecraft:piston> * 2, [[<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>],[<ore:compressed1xCobblestone>, <ore:plateTin>, <ore:compressed1xCobblestone>], [<ore:compressed1xCobblestone>, <ore:dustRedstone>, <ore:compressed1xCobblestone>]]);
-	recipes.addShapedMirrored("Piston7", <minecraft:piston> * 2, [[<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>],[<ore:compressed1xCobblestone>, <ore:plateCopper>, <ore:compressed1xCobblestone>], [<ore:compressed1xCobblestone>, <ore:dustRedstone>, <ore:compressed1xCobblestone>]]);
+val pistonPlates = [
+	<ore:plateIron>,
+	<ore:plateCopper>,
+	<ore:plateTin>,
+	<ore:plateAluminum>,
+	<ore:plateLead>,
+] as IIngredient[];
+
+// Tuples to keep order
+val pistonWood = [
+	{<ore:plankTreatedWood> : 2},
+	{<extrautils2:ironwood_planks:1> : 1},
+] as int[IIngredient][];
+
+recipes.remove(<minecraft:piston>);
+var k = 0;
+for tuple in pistonWood {
+	for wood, amount in tuple {
+		for i, plate in pistonPlates {
+			recipes.addShapedMirrored("piston"~k,
+				amount != 1 ? <minecraft:piston> * amount : <minecraft:piston>, [
+				[wood, wood, wood],
+				[<ore:compressed1xCobblestone>, plate, <ore:compressed1xCobblestone>],
+				[<ore:compressed1xCobblestone>, <ore:dustRedstone>, <ore:compressed1xCobblestone>]
+			]);
+			k += 1;
+		}
+	}
+}
 
 	
 # Nametag

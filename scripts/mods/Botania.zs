@@ -345,7 +345,7 @@ mods.botania.PureDaisy.addRecipe(<ore:blockGlassBlack>,  <quark:crystal:8>);
 mods.botania.ManaInfusion.addInfusion(<botania:manaresource:2>, <rats:rat_diamond>, 10000);
 
 # Way cheaper tiny potato dupe
-mods.botania.ManaInfusion.addInfusion(<botania:tinypotato> * 2, <botania:tinypotato>, 1);
+mods.botania.ManaInfusion.addInfusion(<botania:tinypotato> * 64, <botania:tinypotato>, 63);
 
 # Make Crafty Crate tables free
 mods.botania.ElvenTrade.removeRecipe(<botania_tweaks:basic_extended_crafty_crate>);

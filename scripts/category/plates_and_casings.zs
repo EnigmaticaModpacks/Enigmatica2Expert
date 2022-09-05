@@ -6,33 +6,34 @@ static anyHammer as IIngredient = <immersiveengineering:tool> | <ic2:forge_hamme
 
 # *======= Metal Plates =======*
 val platesData = {
-	Iron         : <thermalfoundation:material:32>,   
-	Gold         : <thermalfoundation:material:33>,   
-	Uranium      : <immersiveengineering:metal:35>,   
-	ElectrumFlux : <redstonearsenal:material:128>,    
-	Copper       : <thermalfoundation:material:320>,  
-	Tin          : <thermalfoundation:material:321>,  
-	Silver       : <thermalfoundation:material:322>,  
-	Lead         : <thermalfoundation:material:323>,  
-	Aluminum     : <thermalfoundation:material:324>,  
-	Nickel       : <thermalfoundation:material:325>,  
-	Platinum     : <thermalfoundation:material:326>,  
-	Iridium      : <thermalfoundation:material:327>,  
-	Mithril      : <thermalfoundation:material:328>,  
-	Steel        : <thermalfoundation:material:352>,  
-	Electrum     : <thermalfoundation:material:353>,  
-	Invar        : <thermalfoundation:material:354>,  
-	Bronze       : <thermalfoundation:material:355>,  
-	Constantan   : <thermalfoundation:material:356>,  
-	Signalum     : <thermalfoundation:material:357>,  
-	Lumium       : <thermalfoundation:material:358>,  
-	Enderium     : <thermalfoundation:material:359>,  
-	Brass        : <thaumcraft:plate>,                
-	Thaumium     : <thaumcraft:plate:2>,              
-	Void         : <thaumcraft:plate:3>,              
-	Mithrillium  : <thaumadditions:mithrillium_plate>,              
-	Adaminite    : <thaumadditions:adaminite_plate>,              
-	Mithminite   : <thaumadditions:mithminite_plate>,              
+	Iron         : <thermalfoundation:material:32>,
+	Gold         : <thermalfoundation:material:33>,
+	Uranium      : <immersiveengineering:metal:35>,
+	ElectrumFlux : <redstonearsenal:material:128>,
+	Copper       : <thermalfoundation:material:320>,
+	Tin          : <thermalfoundation:material:321>,
+	Silver       : <thermalfoundation:material:322>,
+	Lead         : <thermalfoundation:material:323>,
+	Aluminum     : <thermalfoundation:material:324>,
+	Nickel       : <thermalfoundation:material:325>,
+	Platinum     : <thermalfoundation:material:326>,
+	Iridium      : <thermalfoundation:material:327>,
+	Mithril      : <thermalfoundation:material:328>,
+	Steel        : <thermalfoundation:material:352>,
+	Electrum     : <thermalfoundation:material:353>,
+	Invar        : <thermalfoundation:material:354>,
+	Bronze       : <thermalfoundation:material:355>,
+	Constantan   : <thermalfoundation:material:356>,
+	Signalum     : <thermalfoundation:material:357>,
+	Lumium       : <thermalfoundation:material:358>,
+	Enderium     : <thermalfoundation:material:359>,
+	Brass        : <thaumcraft:plate>,
+	Thaumium     : <thaumcraft:plate:2>,
+	Void         : <thaumcraft:plate:3>,
+	Mithrillium  : <thaumadditions:mithrillium_plate>,
+	Adaminite    : <thaumadditions:adaminite_plate>,
+	Mithminite   : <thaumadditions:mithminite_plate>,
+	Silicon      : <libvulpes:productplate:3>,
 } as IItemStack[string];
 
 for oreName, plate in platesData {
@@ -52,10 +53,10 @@ val platesToRemove = [
 	<ic2:plate:5>,
 	<ic2:plate:7>,
 	<ic2:plate:8>,
-	
+
 	<thaumcraft:plate:1>,
 ] as IItemStack[];
-	
+
 for item in platesToRemove {
 	utils.rh(item);
 }

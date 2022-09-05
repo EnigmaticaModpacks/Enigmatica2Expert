@@ -46,7 +46,7 @@ function addInsOutCatl(input as IIngredient[], output as IItemStack, catalyst as
 
 function fill(input as IIngredient, fluid as ILiquidStack, output as IItemStack, catalyst as IIngredient = null, duration as int = 0) as void {
   <assembly:crafting_hints>.addJEIRecipe(AssemblyRecipe.create(function(c) {
-    c.addItemOutput('output0', output);})
+    c.addItemOutput('output1', output);})
     .requireItem("input0", catalyst)
     .requireFluid("fluid_in", fluid)
     .requireItem("input5", input)
@@ -56,8 +56,8 @@ function fill(input as IIngredient, fluid as ILiquidStack, output as IItemStack,
 
 function special(output as IItemStack, input2d as IIngredient[][], condition as string) as void {
   val assRec = AssemblyRecipe.create(function(c) {
-    c.addItemOutput("output0", output);
-    c.addItemOutput("output1", <engineersdecor:sign_caution>.withDisplayName("§e§lCondition").withLore(["§e" ~ condition]));
+    c.addItemOutput("output1", output);
+    c.addItemOutput("output2", <engineersdecor:sign_caution>.withDisplayName("§e§lCondition").withLore(["§e" ~ condition]));
   });
   for y, input1d in input2d {
     for x, ingr in input1d {
@@ -121,5 +121,5 @@ scripts.jei.requious.add(<assembly:crafting_hints>, {[null, null, null, null, nu
 # Taint to Flux Goo
 x.addJEIRecipe(AssemblyRecipe.create(function(c) {
   c.addFluidOutput('fluid_out', <fluid:flux_goo> * 1000);})
-  .requireItem("input0", <thaumcraft:bottle_taint>)
+  .requireItem("input5", <thaumcraft:bottle_taint>)
 );

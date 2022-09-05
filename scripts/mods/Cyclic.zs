@@ -257,9 +257,7 @@ for bit in <ore:bitumen>.items {
 
 # Super lubricient ice
 recipes.remove(<randomthings:superlubricentice>);
-for it in <ore:slimeball>.items {
-  Hydrator.addRecipe(<randomthings:superlubricentice> * 16, [it, <minecraft:ice>], 1000);
-}
+recipes.addShapeless('cheaper super ice', <randomthings:superlubricentice> * 4, [<ore:slimeball>, <minecraft:ice>]);
 
 # Decor blocks
 Hydrator.removeShapedRecipe(<minecraft:cobblestone>);

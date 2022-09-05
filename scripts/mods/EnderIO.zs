@@ -31,12 +31,18 @@ craft.remake(<enderio:block_impulse_hopper>, ["pretty",
 	[<ore:paper>, <enderio:block_enderman_skull>, <ore:paper>], 
 	[<ore:blockRedstone>, <ore:paper>, <ore:blockRedstone>]]);
 
-# Painting Machine
-	recipes.remove(<enderio:block_painter>);
-	recipes.addShaped("Ender IO Painting Machine", <enderio:block_painter>, 
-	[[<ore:gemQuartz>, <ore:gemDiamondRat>, <ore:gemQuartz>], 
-	[<ore:gearIronInfinity>, <nuclearcraft:part:10>, <ore:gearIronInfinity>], 
-	[<ore:ingotElectricalSteel>, <ore:ingotElectricalSteel>, <ore:ingotElectricalSteel>]]);
+# [Painting Machine] from [Dyeing Machine][+5]
+craft.remake(<enderio:block_painter>, ["pretty",
+  "P D a",
+  "¤ F ¤",
+  "F ■ F"], {
+  "P": <ic2:painter>.anyDamage(),      # Painter
+  "D": <randomthings:dyeingmachine>,   # Dyeing Machine
+  "a": <openblocks:paintbrush>.anyDamage(), # Paint Brush
+  "¤": <ore:gearIronInfinity>,         # Infinity Bimetal Gear
+  "F": <storagedrawers:customtrim>,    # Framed Trim
+  "■": <contenttweaker:silicon_block>, # Silicon Block
+});
 
 # Fused Quartz (before Alloy Smelter)
 	mods.nuclearcraft.alloy_furnace.addRecipe(<minecraft:quartz> * 4, <minecraft:quartz_block>, <enderio:block_fused_quartz> * 2);
