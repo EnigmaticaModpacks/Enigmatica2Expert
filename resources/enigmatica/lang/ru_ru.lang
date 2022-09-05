@@ -22,7 +22,7 @@ e2ee.written_book.Zombie=Зомби
 # Misc
 e2ee.eu2_drum_error=§7Для этого у вас должен быть как минимум 1 пустой слот в инвентаре
 e2ee.danknull_dock.must_have=§7Вам понадобится §f%s§r в свободной руке, для того, чтобы вставить %s в %s. §f%s§r будет необратимо израсходован.
-e2ee.restrict.vis_seeds=§7Вы можете сажать §6Семена Вис§7 только на §nпланетах§r§7. Им также необходим кислород.
+e2ee.restrict.vis_seeds=§7Вы можете сажать §6Семена Вис§7 только в §nМире пустоты§r§7 или на §nпланетах§r§7. Им также необходим кислород.
 
 # Bugged langs that losed their names
 entity.Villager.shady_merchant=Тенистый торговец

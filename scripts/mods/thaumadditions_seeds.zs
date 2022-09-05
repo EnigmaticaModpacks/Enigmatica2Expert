@@ -17,7 +17,8 @@ static farmland as crafttweaker.block.IBlockPattern =
 events.onPlayerInteractBlock(function(e as crafttweaker.event.PlayerInteractBlockEvent) {
   if(e.world.remote || isNull(e.item)) return;
   if(!e.item.definition.id.startsWith('thaumadditions:vis_seeds') || !(farmland has e.block)) return;
-  if(e.world.getDimensionType() == 'planet') return;
+  val dimType = e.world.getDimensionType();
+  if(dimType == 'planet' || dimType == 'emptiness') return;
 
   e.player.sendRichTextMessage(crafttweaker.text.ITextComponent.fromTranslation("e2ee.restrict.vis_seeds"));
   e.cancel();

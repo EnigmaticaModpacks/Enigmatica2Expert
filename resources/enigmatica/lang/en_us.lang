@@ -21,7 +21,7 @@ e2ee.written_book.Zombie=Zombie
 # Misc
 e2ee.eu2_drum_error=§7You must have at least 1 empty inventory slot to do this
 e2ee.danknull_dock.must_have=§7You need a §f%s§7 in the offhand to insert %s§7 into %s§7. §f%s§7 will be irreversibly consumed.
-e2ee.restrict.vis_seeds=§7You can plant §eVis Seeds§7 only on §nplanets§r§7. They also need Oxygen.
+e2ee.restrict.vis_seeds=§7You can plant §eVis Seeds§7 only in §nEmptiness§7 or on §nplanets§7. They also need Oxygen.
 
 # Bugged langs that losed their names
 entity.Villager.shady_merchant=Shady Merchant
