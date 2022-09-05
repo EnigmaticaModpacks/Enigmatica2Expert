@@ -39,7 +39,7 @@ function onEachLogin(e as crafttweaker.event.PlayerLoggedInEvent, logCount as in
 }
 
 function showWithDelay(player as IPlayer, lang as string) {
-  player.world.catenation().sleep(20 * 10).then(function(world) {
+  player.world.catenation().sleep(20 * 10).then(function(world, ctx) {
     player.sendRichTextMessage(crafttweaker.text.ITextComponent.fromTranslation(lang));
   }).start();
 }

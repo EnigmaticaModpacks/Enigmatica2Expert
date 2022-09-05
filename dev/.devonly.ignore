@@ -41,3 +41,6 @@ mods/DynamicSurroundings-*
 mods/OreLib-*
 mods/RenderLib-*
 mods/EntityCulling-*
+mods/CustomSkinLoader_ForgeLegacy-*
+mods/simplelogin-*
+mods/VoiceChatReloaded-*

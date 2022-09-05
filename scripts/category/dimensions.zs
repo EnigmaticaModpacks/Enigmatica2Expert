@@ -38,7 +38,7 @@ function isForbidTravel(player as IPlayer, dimension as int) as bool {
   if(player.hasGameStage("skyblock")) {
     # Show message that player playing skyblock and cant visit any dims
     if(isNether || restrictedDims has dimension) {
-      player.world.catenation().sleep(1).then(function(world) {
+      player.world.catenation().sleep(1).then(function(world, ctx) {
         player.sendRichTextMessage(crafttweaker.text.ITextComponent.fromTranslation("tooltips.dim_stages.restricted"));
       }).start();
       return true;
@@ -47,7 +47,7 @@ function isForbidTravel(player as IPlayer, dimension as int) as bool {
   else {
     if(isNether && !player.hasGameStage("healthy")) {
       # Show message that player not healthy anough
-      player.world.catenation().sleep(1).then(function(world) {
+      player.world.catenation().sleep(1).then(function(world, ctx) {
         player.sendRichTextMessage(crafttweaker.text.ITextComponent.fromTranslation(
           "tooltips.dim_stages.healthy",
           health_require as int,
@@ -72,7 +72,7 @@ events.onEntityTravelToDimension(function(e as crafttweaker.event.EntityTravelTo
 events.onPlayerChangedDimension(function(e as crafttweaker.event.PlayerChangedDimensionEvent){
   if(e.entity.world.isRemote()) return;
   if(!e.player.creative && isForbidTravel(e.player, e.to)) {
-    e.player.world.catenation().sleep(20).then(function(world) {
+    e.player.world.catenation().sleep(20).then(function(world, ctx) {
       server.commandManager.executeCommand(server, '/tpx '~e.player.name~' 0');
     }).start();
   }

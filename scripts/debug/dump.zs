@@ -120,17 +120,17 @@ static debugUtils as DebugUtils = DebugUtils();
 
 static skipped as bool[] = [false] as bool[];
 function runAutomation(player as IPlayer) as void {
-  player.world.catenation().sleep(20).then(function(world) {
+  player.world.catenation().sleep(20).then(function(world, ctx) {
     player.sendMessage('Developing: §c/logAdditionalDebugData()');
     logAdditionalDebugData(player);
   })
   
-  .sleep(100).then(function(world) {
+  .sleep(100).then(function(world, ctx) {
     player.sendMessage('Developing: Starting §c/ct conflict');
     server.commandManager.executeCommand(server, '/ct conflict');
   })
   
-  .sleep(100).then(function(world) {
+  .sleep(100).then(function(world, ctx) {
     player.sendMessage('Developing: Starting §c/tellme dump-csv');
     val csvList = [
     //'players',                          # 132
@@ -178,13 +178,13 @@ function runAutomation(player as IPlayer) as void {
     }
   })
   
-  .sleep(100).then(function(world) {
+  .sleep(100).then(function(world, ctx) {
     player.sendMessage('Developing: Starting §cexport to crafttweaker.log');
     exportAllBlocks();
     exportAllTools();
   })
   
-  .sleep(100).then(function(world) {
+  .sleep(100).then(function(world, ctx) {
     player.sendMessage('Developing: §aFinished!');
   }).start();
 }
@@ -193,13 +193,13 @@ events.onPlayerLoggedIn(function(e as crafttweaker.event.PlayerLoggedInEvent){
   if(e.player.world.isRemote()) return;
   if(!debugUtils.firstTime(e.player.world.time)) return;
 
-  e.player.world.catenation().sleep(100).then(function(world) {
+  e.player.world.catenation().sleep(100).then(function(world, ctx) {
     e.player.sendMessage('§cDebug environment activated!');
     e.player.sendMessage('§8If you want to disable DEBUG mode, remove §7scripts/debug§8 directory');
     e.player.sendMessage('§8Write §7/skip_automation§8 to skip automatic executions, write §7/run_automation§8 to run manually');
   })
   
-  .sleep(300).then(function(world) {
+  .sleep(300).then(function(world, ctx) {
     if(!skipped[0]) runAutomation(e.player);
   }).start();
 });

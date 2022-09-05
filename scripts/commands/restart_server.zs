@@ -31,19 +31,11 @@ function stopWithDelay(world as IWorld) as void {
   inProcess['restart'] = 'true';
   send('delay');
 
-  world.catenation().sleep(60).then(function(world) {
+  world.catenation().sleep(60).then(function(world, ctx) {
     // send('stopping');
     server.commandManager.executeCommand(server, '/say §8[§6ø§8]§r §4Server stopping by vote...');
     server.commandManager.executeCommand(server, '/stop');
   }).start();
-}
-
-function pendingCount() as int {
-  var k = 0;
-  for s in playerPending {
-    k += 1;
-  }
-  return k;
 }
 
 function getPlayersList(isVoted as bool = false) as string {
@@ -55,15 +47,11 @@ function getPlayersList(isVoted as bool = false) as string {
   return list;
 }
 
-function clearPending() as void {
-  for s in playerPending { playerPending.remove(s); }
-}
-
 function cancelVoting() as void {
   if(!isNull(inProcess.restart)) return;
   send('failed', 'pending', getPlayersList());
   send('cancelled', 'unpending');
-  clearPending();
+  playerPending.clear();
 }
 
 function checkComplete() as bool {
@@ -83,12 +71,12 @@ cmd.execute = function(command, server, sender, args) {
   // Only one player - stop right now
   if (server.playerCount == 1) return stopWithDelay(player.world);
 
-  if (pendingCount() == 0) {
+  if (playerPending.size() == 0) {
     // We are first player who activated
     playerPending.add(player.uuid);
     send('query', 'unpending', player.name);
     
-    player.world.catenation().sleep(300).then(function(world) { cancelVoting(); }).start();
+    player.world.catenation().sleep(300).then(function(world, ctx) { cancelVoting(); }).start();
   } else if (playerPending.contains(player.uuid)) {
     // We are already waiting for vote
     sendSingle(player, 'already_voted', getPlayersList());

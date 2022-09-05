@@ -126,7 +126,7 @@ events.onPlayerInteractBlock(function(e as crafttweaker.event.PlayerInteractBloc
   e.world.playSound("thaumcraft:poof", "ambient", e.position, 0.5f, 1.5f);
 
   # Check in next tick if block replaced
-  world.catenation().sleep(1).then(function(world) {
+  world.catenation().sleep(1).then(function(world, ctx) {
     if (world.getBlockState(position) != <blockstate:bedrockores:bedrock_ore>) {
       e.world.setBlockState(<blockstate:minecraft:bedrock>, position);
       e.player.give(item.anyAmount());

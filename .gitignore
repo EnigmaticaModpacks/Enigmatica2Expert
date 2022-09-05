@@ -25,6 +25,10 @@ structures/inactive
 !local/ftbutilities/ranks.txt
 !.github/
 
+# Devonly configs
+config/gliby_vc/
+config/simplelogin.cfg
+
 # Files created by client
 config/InvTweaks.cfg
 config/MouseTweaks.cfg

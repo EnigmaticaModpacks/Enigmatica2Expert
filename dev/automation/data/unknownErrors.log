@@ -1,11 +1,11 @@
 [main/ERROR] [mixin]: Mixin config mixins.mixincompat.json does not specify "minVersion" property
+[main/ERROR] [mixin]: Mixin config mixins.spectral_edge.json does not specify "minVersion" property
 [main/WARN] [mixin]: Reference map 'mixins.mixincompat.refmap.json' for mixins.mixincompat.json could not be read. If this is a development environment you can ignore this message
 [Client thread/WARN] [smoothfont]: Fonts folder "fontfiles" does not exist.
-[AE2 CSV Export/WARN] [AE2:C]: Could not export subtypes of: tile.architecturecraft.shape
 [Client thread/WARN] [ocsensors]: Could not find field 'careerId' in class 'net.minecraft.entity.passive.EntityVillager'! Exception=net.minecraftforge.fml.relauncher.ReflectionHelper$UnableToFindFieldException: java.lang.NoSuchFieldException: careerId
 [Client thread/WARN] [ocsensors]: Could not find field 'buyingList' in class 'net.minecraft.entity.passive.EntityVillager'! Exception=net.minecraftforge.fml.relauncher.ReflectionHelper$UnableToFindFieldException: java.lang.NoSuchFieldException: buyingList
-[Client thread/ERROR] [HadEnoughItems]: An interpreter is already registered for this item: exnihilocreatio.modules.tconstruct.tools.SledgeHammer@65d45557
-[Client thread/ERROR] [HadEnoughItems]: An interpreter is already registered for this item: exnihilocreatio.modules.tconstruct.tools.TiCrook@2b9e381
+[Client thread/ERROR] [HadEnoughItems]: An interpreter is already registered for this item: exnihilocreatio.modules.tconstruct.tools.SledgeHammer@7e999798
+[Client thread/ERROR] [HadEnoughItems]: An interpreter is already registered for this item: exnihilocreatio.modules.tconstruct.tools.TiCrook@77f2ed85
 [Client thread/ERROR] [HadEnoughItems]: Recipe has no output. Extra Utilities 2 extrautils2:shortcut_hopper class com.rwtema.extrautils2.crafting.AlwaysLast$XUShapedRecipeAlwaysLast
 [Client thread/ERROR] [HadEnoughItems]: A Recipe Handler has already been registered for 'jeresources.plant': jeresources.entry.PlantEntry
 [Client thread/ERROR] [HadEnoughItems]: A Recipe Handler has already been registered for 'jeresources.villager': jeresources.entry.VillagerEntry
@@ -18,4 +18,4 @@
 [Client thread/WARN] [particleculling]: Could not find particle class com.TominoCZ.FBP.particle.FBPParticleBlock. If the mod is not installed, this can be ignored.
 [Client thread/WARN] [particleculling]: Could not find particle class xzeroair.trinkets.client.particles.ParticleGreed. If the mod is not installed, this can be ignored.
 [Client thread/WARN] [smoothfont]: renderChar method might be replaced. Fix the space width to 4 (MC default).
-[pool-13-thread-1/ERROR] [base]: java.io.FileNotFoundException: biomesoplenty:textures/items/gem.png
+[pool-15-thread-1/ERROR] [base]: java.io.FileNotFoundException: biomesoplenty:textures/items/gem.png

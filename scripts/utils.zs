@@ -360,7 +360,7 @@ zenClass Utils {
     while (total < desiredAmount) {
       val count = max(1, (f * (i + 1) + 0.5f) as int - total);
       total += count;
-      world.catenation().sleep(i * delay + 1).then(function(world) {
+      world.catenation().sleep(i * delay + 1).then(function(world, ctx) {
         val itemEntity = (output * count).createEntityItem(world, x, y, z);
         itemEntity.motionY = my + 0.4d;
         itemEntity.motionX = mx + rnd.nextDouble(-0.1d, 0.1d);
