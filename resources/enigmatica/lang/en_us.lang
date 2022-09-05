@@ -224,3 +224,7 @@ e2ee.tconstruct.material.alpha_fur.description=§bChilling\n§rChills targets or
 e2ee.tconstruct.material.grinding.name=Grinding
 e2ee.tconstruct.material.grinding.description=§oJump!\n§rJump on Ore blocks to crush them into dust.
 e2ee.tconstruct.material.heavy.name=Heavy
+e2ee.tconstruct.material.axing.name=Axing
+e2ee.tconstruct.material.axing.description=§oAxing chad\n§rBreak wood logs to get x4 planks.
+e2ee.tconstruct.material.axing2.name=Axing II
+e2ee.tconstruct.material.axing2.description=§oAxing gigachad\n§rBreak wood logs to get x6 planks.

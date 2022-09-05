@@ -362,3 +362,22 @@ heavy.addMaterialTrait("heavy", "plates");
 heavy.addMaterialTrait("grinding_armor");
 heavy.addProjectileMaterialStats();
 heavy.register();
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+# -------------------------------
+# Axe Tait
+# -------------------------------
+var t = TraitBuilder.create("axing");
+t.color = 0xA3B391;
+t.localizedName = game.localize("e2ee.tconstruct.material.axing.name");
+t.localizedDescription = game.localize("e2ee.tconstruct.material.axing.description");
+t.register();
+
+t = TraitBuilder.create("axing2");
+t.color = 0xC4D6AE;
+t.localizedName = game.localize("e2ee.tconstruct.material.axing2.name");
+t.localizedDescription = game.localize("e2ee.tconstruct.material.axing2.description");
+t.register();

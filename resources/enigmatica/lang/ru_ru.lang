@@ -231,6 +231,10 @@ e2ee.tconstruct.material.alpha_fur.description=§bОхлаждение\n§rТо�
 e2ee.tconstruct.material.grinding.name=Шлифование
 e2ee.tconstruct.material.grinding.description=§oПрыгай!\n§rПрыгайте на рудные блоки, чтобы разбить их в пыль.
 e2ee.tconstruct.material.heavy.name=Тяжеловатый
+e2ee.tconstruct.material.axing.name=Топор
+e2ee.tconstruct.material.axing.description=§oТопориный чад\n§rРазбить деревянные бревна, чтобы получить доски x4.
+e2ee.tconstruct.material.axing2.name=Топор II
+e2ee.tconstruct.material.axing2.description=§oТопориный гигачад\n§rРазбить деревянные бревна, чтобы получить x6 досок.
 
 tile.basalt.name=Базальт
 tile.blackholegenerator.name=Генератор черной дыры
