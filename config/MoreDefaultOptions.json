@@ -40,5 +40,11 @@
     "destinationFilePath": "config/smoothfont/smoothfont.cfg",
     "clientSide": true,
     "serverSide": true
+  },
+  {
+    "sourceFilePath": "ftbutilities.cfg",
+    "destinationFilePath": "local/client/ftbutilities.cfg",
+    "clientSide": true,
+    "serverSide": false
   }
 ]
