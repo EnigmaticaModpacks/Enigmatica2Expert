@@ -1,0 +1,12 @@
+diff --git "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\block\\wiring\\TileEntityElectricBatBox.java" "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\block\\wiring\\TileEntityElectricBatBox.java"
+index 319b6569..73724f62 100644
+--- "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\block\\wiring\\TileEntityElectricBatBox.java"
++++ "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\block\\wiring\\TileEntityElectricBatBox.java"
+@@ -11,6 +11,6 @@ import ic2.core.block.wiring.TileEntityElectricBlock;
+ public class TileEntityElectricBatBox
+ extends TileEntityElectricBlock {
+     public TileEntityElectricBatBox() {
+-        super(1, 32, 40000);
++        super(1, 32, 160000);
+     }
+ }

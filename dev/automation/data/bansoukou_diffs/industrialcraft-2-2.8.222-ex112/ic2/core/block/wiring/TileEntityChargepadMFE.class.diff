@@ -1,0 +1,13 @@
+diff --git "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\block\\wiring\\TileEntityChargepadMFE.java" "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\block\\wiring\\TileEntityChargepadMFE.java"
+index 92520efa..e175e350 100644
+--- "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\block\\wiring\\TileEntityChargepadMFE.java"
++++ "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\block\\wiring\\TileEntityChargepadMFE.java"
+@@ -18,7 +18,7 @@ import net.minecraft.item.ItemStack;
+ public class TileEntityChargepadMFE
+ extends TileEntityChargepadBlock {
+     public TileEntityChargepadMFE() {
+-        super(3, 512, 4000000);
++        super(3, 512, 8000000);
+     }
+ 
+     protected void getItems(EntityPlayer player) {

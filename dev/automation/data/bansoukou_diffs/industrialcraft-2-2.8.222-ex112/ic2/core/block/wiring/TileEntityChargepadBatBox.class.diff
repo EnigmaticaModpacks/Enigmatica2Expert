@@ -1,0 +1,13 @@
+diff --git "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\block\\wiring\\TileEntityChargepadBatBox.java" "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\block\\wiring\\TileEntityChargepadBatBox.java"
+index 29b09fd6..9bddab1c 100644
+--- "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\block\\wiring\\TileEntityChargepadBatBox.java"
++++ "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\block\\wiring\\TileEntityChargepadBatBox.java"
+@@ -18,7 +18,7 @@ import net.minecraft.item.ItemStack;
+ public class TileEntityChargepadBatBox
+ extends TileEntityChargepadBlock {
+     public TileEntityChargepadBatBox() {
+-        super(1, 32, 40000);
++        super(1, 32, 160000);
+     }
+ 
+     protected void getItems(EntityPlayer player) {

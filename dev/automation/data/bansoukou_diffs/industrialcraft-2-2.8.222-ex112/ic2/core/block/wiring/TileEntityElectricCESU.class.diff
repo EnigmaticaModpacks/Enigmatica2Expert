@@ -1,0 +1,12 @@
+diff --git "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\block\\wiring\\TileEntityElectricCESU.java" "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\block\\wiring\\TileEntityElectricCESU.java"
+index abfd3d50..7e0de848 100644
+--- "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\block\\wiring\\TileEntityElectricCESU.java"
++++ "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\block\\wiring\\TileEntityElectricCESU.java"
+@@ -14,6 +14,6 @@ import ic2.core.profile.NotClassic;
+ public class TileEntityElectricCESU
+ extends TileEntityElectricBlock {
+     public TileEntityElectricCESU() {
+-        super(2, 128, 300000);
++        super(2, 128, 600000);
+     }
+ }

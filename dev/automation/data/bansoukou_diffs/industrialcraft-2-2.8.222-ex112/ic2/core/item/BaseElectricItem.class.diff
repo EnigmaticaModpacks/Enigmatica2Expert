@@ -1,0 +1,15 @@
+diff --git "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\BaseElectricItem.java" "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\BaseElectricItem.java"
+index 04ec8af8..191c83a9 100644
+--- "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\BaseElectricItem.java"
++++ "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\BaseElectricItem.java"
+@@ -46,8 +46,8 @@ implements IPseudoDamageItem,
+ IElectricItem,
+ IItemHudInfo {
+     public static final boolean logIncorrectItemDamaging = ConfigUtil.getBool((Config)MainConfig.get(), (String)"debug/logIncorrectItemDamaging");
+-    protected final double maxCharge;
+-    protected final double transferLimit;
++    public double maxCharge;
++    public double transferLimit;
+     protected final int tier;
+ 
+     public BaseElectricItem(ItemName name, double maxCharge, double transferLimit, int tier) {

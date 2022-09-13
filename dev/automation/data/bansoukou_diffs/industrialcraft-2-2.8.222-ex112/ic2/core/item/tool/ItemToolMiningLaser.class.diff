@@ -1,5 +1,5 @@
 diff --git "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tool\\ItemToolMiningLaser.java" "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tool\\ItemToolMiningLaser.java"
-index 53b79a82..7742b266 100644
+index 53b79a82..38db52f4 100644
 --- "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tool\\ItemToolMiningLaser.java"
 +++ "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tool\\ItemToolMiningLaser.java"
 @@ -82,8 +82,8 @@ implements INetworkItemEventListener {
@@ -9,7 +9,7 @@ index 53b79a82..7742b266 100644
 -        this.maxCharge = 300000;
 -        this.transferLimit = 512;
 +        this.maxCharge = 20000000;
-+        this.transferLimit = 4096;
++        this.transferLimit = 10000000;
          this.tier = 3;
      }
  
