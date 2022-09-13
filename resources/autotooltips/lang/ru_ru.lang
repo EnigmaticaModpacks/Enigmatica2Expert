@@ -21,7 +21,7 @@ tooltips.lang.ic2:quantum_chestplate=§bПробел+V§r чтобы завис�
 tooltips.lang.ic2:te:48=Отключено. Используйте Advanced Scrap Factory
 tooltips.lang.minecraft:torch=§4 Уровень освещенности уменьшен
 tooltips.lang.openblocks:tank=Хранит до §f24§r ведер
-tooltips.lang.opencomputers:print=\n §5 1) §r Создайте дискету OPPM '\n §5 2) §r Установите ее на компьютер Tier2 + с интернет-картой' \n  §5 3) §r Запустите §n "oppm install oppm" §r '\n §5 4) §r Restart' \n §5 5) §r Запустите §n "oppm install print3d" §r и §n "oppm install print3d-examples" §r '\n §5 6) §r §n "print3d /path/to/Tree.3dm" §r
+tooltips.lang.opencomputers:print=\n §5 1) §r Создайте дискету OPPM '\n §5 2) §r Установите ее на компьютер Tier2 + с интернет-картой' \n  §5 3) §r Запустите §n "oppm install oppm" §r '\n §5 4) §r Restart' \n §5 5) §r Запустите §n "oppm install print3d" §r и §n "oppm install print3d-examples" §r '\n §5 6) §r §n "print3d ../usr/share/models/cc.3dm" §r
 tooltips.lang.quark:archaeologist_hat=Увеличивает выпадение драгоценных камней при добыче на 100%
 tooltips.lang.quark:chain=Может использоваться для соединения лодок и вагонеток.
 tooltips.lang.quark:chute=Переключаемый с помощью красного камня, будут сбрасывать любые предметы, помещенные в него через бункер.
