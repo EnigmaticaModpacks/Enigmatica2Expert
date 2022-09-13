@@ -72,4 +72,5 @@ interact(Bucket("witchwater"), Bucket("water"), <biomesoplenty:dirt:10>);
 interact(Bucket("witchwater"), Bucket("fiery_essence"), <exnihilocreatio:block_netherrack_crushed> * 64);
 interact(Bucket("witchwater"), Bucket("fiery_essence"), <minecraft:netherrack> * 20);
 interact(Bucket("witchwater"), Bucket("fiery_essence"), <netherendingores:block_nether_netherfish>);
+interact(Bucket("witchwater"), Bucket("ic2pahoehoe_lava"), <ic2:resource>);
 /**/

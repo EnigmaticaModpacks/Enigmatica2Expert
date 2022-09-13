@@ -109,3 +109,14 @@ for output, ingrs in {
 	for item in chestsToHide {
 		utils.rh(item);
 	}
+
+# Alt for animals
+# [DirtChest 9000!] from [Framed Framed Chest][+2]
+craft.remake(<ironchest:iron_chest:7>, ["pretty",
+  "d P d",
+  "d F d",
+  "d d d"], {
+  "d": <ore:dirt>,                  # Dirt
+  "P": <ore:ratPoop>,               # Rat "Nugget"
+  "F": <bibliocraft:framedchest:6>, # Framed Framed Chest
+});

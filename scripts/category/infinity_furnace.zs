@@ -92,7 +92,7 @@ ${filtered.join('\n')}`
 
 }*/
 
-# Total Furnace recipes registered: 918
+# Total Furnace recipes registered: 919
 # Filtered by JEI blacklist: 47
 # Filtered manuallly (antidupe): 15
 # Filtered by oredict: 201
@@ -260,7 +260,7 @@ infinFurnace(utils.get("ic2:misc_resource", 4), utils.get("ic2:crafting"));
 infinFurnace(utils.get("ic2:mug", 1), utils.get("ic2:mug", 2));
 infinFurnace(utils.get("ic2:purified", 1), utils.get("minecraft:gold_ingot"));
 infinFurnace(utils.get("ic2:purified", 2), utils.get("minecraft:iron_ingot"));
-infinFurnace(utils.get("ic2:purified", 3), utils.get("thermalfoundation:material", 13));
+infinFurnace(utils.get("ic2:purified", 3), utils.get("thermalfoundation:material", 131));
 infinFurnace(utils.get("ic2:purified", 4), utils.get("thermalfoundation:material", 130));
 infinFurnace(utils.get("ic2:purified", 5), utils.get("thermalfoundation:material", 129));
 infinFurnace(utils.get("ic2:purified", 6), utils.get("immersiveengineering:metal", 5));
@@ -1011,6 +1011,7 @@ infinFurnace(utils.get("thermalfoundation:ore"), utils.get("thermalfoundation:ma
 infinFurnace(utils.get("threng:material", 2), utils.get("threng:material"));
 infinFurnace(utils.get("twilightforest:armor_shard_cluster", W), utils.get("twilightforest:knightmetal_ingot"));
 infinFurnace(utils.get("twilightforest:ironwood_raw", W), utils.get("twilightforest:ironwood_ingot", 0, 2));
+infinFurnace(utils.get("twilightforest:magic_beans"), utils.get("randomthings:beans", 2));
 ##infinFurnace(utils.get("twilightforest:magic_log", W), utils.get("minecraft:coal", 1));
 infinFurnace(utils.get("twilightforest:raw_meef", W), utils.get("twilightforest:cooked_meef"));
 ##infinFurnace(utils.get("twilightforest:twilight_log", W), utils.get("minecraft:coal", 1));

@@ -41,6 +41,10 @@ item.battery.0.name=Одиночный аккумулятор
 item.battery.1.name=Четырехместный аккумулятор
 tile.rftdimtweak.dimension_builder.name=Cтроитель измерений
 tile.rftdimtweak.dimension_editor.name=Редактор измерений
+entity.AngryChicken.name=Сердитый цыпленок
+tile.ocsensors.sensor.name=Свободный Сенсор
+item.positron_unit.name=Позитронная Еденица
+item.quantron.name=Квантрон
 
 tooltips.lang.tag.generator=§6#Генератор
 tooltips.lang.tag.solar=§f#Солнечный

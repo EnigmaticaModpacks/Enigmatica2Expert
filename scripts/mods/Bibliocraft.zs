@@ -40,3 +40,12 @@ craft.remake(<bibliocraft:bibliochase>, ["pretty",
   "#": <ore:slabWood>,      # Oak Wood Slab
   "▬": <ore:ingotFakeIron>, # Iron Ingot
 });
+
+# Cheaper
+# [Framed Framed Chest] from [Framing Sheet]
+craft.remake(<bibliocraft:framedchest:6>, ["pretty",
+  "F F F",
+  "F   F",
+  "F F F"], {
+  "F": <bibliocraft:framingsheet>, # Framing Sheet
+});

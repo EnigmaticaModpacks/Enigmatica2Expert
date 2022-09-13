@@ -46,7 +46,7 @@ craft.remake(<quark:iron_rod>, ["pretty",
   "  ~  ",
   "B    "], {
   "╱": <ore:stickIron>,      # Iron Rod
-  "~": <quark:slime_bucket>, # Slime in a Bucket
+  "~": <quark:slime_bucket:*>, # Slime in a Bucket
   "B": <ore:stoneBrimstone>, # Brimstone
 });
 
@@ -83,4 +83,10 @@ craft.reshapeless(<quark:paper_lantern> * 4, "C■", {
 craft.shapeless(<quark:slime_bucket>, "§~", {
   "§": <randomthings:slimecube>, # Slime Cube
   "~": <minecraft:bucket>,       # Bucket
+});
+
+# [Monster Box] from [Truffle][+1]
+craft.shapeless(<quark:monster_box>, "MT", {
+  "M": <minecraft:mob_spawner>, # Monster Spawner
+  "T": <animania:truffle>,      # Truffle
 });

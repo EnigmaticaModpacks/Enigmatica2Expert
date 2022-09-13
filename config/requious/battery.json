@@ -1,6 +1,6 @@
 [
   {
-    "capacity": 1000,
+    "capacity": 2000,
     "minInput": 0,
     "maxInput": 2147483647,
     "minOutput": 0,
@@ -25,7 +25,7 @@
     "stackSize": 64
   },
   {
-    "capacity": 2000,
+    "capacity": 4000,
     "minInput": 0,
     "maxInput": 2147483647,
     "minOutput": 0,
@@ -56,7 +56,7 @@
     "stackSize": 64
   },
   {
-    "capacity": 64000,
+    "capacity": 128000,
     "minInput": 0,
     "maxInput": 2147483647,
     "minOutput": 0,
@@ -81,7 +81,7 @@
     "stackSize": 64
   },
   {
-    "capacity": 256000,
+    "capacity": 512000,
     "minInput": 0,
     "maxInput": 2147483647,
     "minOutput": 0,
@@ -112,7 +112,7 @@
     "stackSize": 64
   },
   {
-    "capacity": 2048000,
+    "capacity": 20000000,
     "minInput": 0,
     "maxInput": 2147483647,
     "minOutput": 0,
@@ -137,7 +137,7 @@
     "stackSize": 64
   },
   {
-    "capacity": 68000000,
+    "capacity": 200000000,
     "minInput": 0,
     "maxInput": 2147483647,
     "minOutput": 0,
@@ -165,10 +165,10 @@
         "a": 255
       }
     ],
-    "stackSize": 64
+    "stackSize": 1
   },
   {
-    "capacity": 1000000000,
+    "capacity": 2000000000,
     "minInput": 0,
     "maxInput": 2147483647,
     "minOutput": 0,
@@ -190,6 +190,6 @@
         "a": 255
       }
     ],
-    "stackSize": 64
+    "stackSize": 1
   }
 ]

@@ -18,3 +18,9 @@ remakeEx(<sonarcore:stablestone_orange> * 8    ,[[stn ,stn ,stn] ,[stn ,<ore:dye
 remakeEx(<sonarcore:stablestone_red> * 8       ,[[stn ,stn ,stn] ,[stn ,<ore:dyeRed>       ,stn] ,[stn ,stn ,stn]]);
 remakeEx(<sonarcore:stablestone_black> * 8     ,[[stn ,stn ,stn] ,[stn ,<ore:dyeBlack>     ,stn] ,[stn ,stn ,stn]]);
 remakeEx(<sonarcore:stablestone_brown> * 8     ,[[stn ,stn ,stn] ,[stn ,<ore:dyeBrown>     ,stn] ,[stn ,stn ,stn]]);
+
+# [Reinforced Stone]*36 from [Single Compressed Wood][+1]
+craft.shapeless(<sonarcore:reinforcedstoneblock> * 36, "░#", {
+  "░": <ore:compressed1xCobblestone>, # Compressed Cobblestone
+  "#": <ore:compressedLogWood1x>, # Single Compressed Wood
+});

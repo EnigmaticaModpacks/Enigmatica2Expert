@@ -35,5 +35,5 @@ events.onEntityLivingDeathDrops(function(e as crafttweaker.event.EntityLivingDea
   val drop = by_drop[source_id];
   if(isNull(drop)) return; # No drop by this entity
 
-  e.addItem(drop);
+  e.addItem(drop * drop.amount);
 });

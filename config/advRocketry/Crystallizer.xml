@@ -175,4 +175,26 @@
 			<itemStack>endreborn:item_raw_endorium 10 0</itemStack>
 		</output>
 	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Heart Container] -->
+	<Recipe timeRequired="20" power="100000">
+		<input>
+			<itemStack>cyclicmagic:heart_toxic 1</itemStack>
+			<fluidStack>lifeessence 1000</fluidStack>
+		</input>
+		<output>
+			<itemStack>scalinghealth:heartcontainer 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Lapotron Crystal] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>circuitAdvanced 4</oreDict>
+			<fluidStack>lapis 10000</fluidStack>
+		</input>
+		<output>
+			<itemStack>ic2:lapotron_crystal 4 0</itemStack>
+		</output>
+	</Recipe>
 </Recipes>

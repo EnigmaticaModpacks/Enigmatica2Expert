@@ -68,7 +68,7 @@ craft.remake(<cyclicmagic:tool_launcher>, ["pretty",
   "  S #",
   "s    "], {
   "#": <randomthings:spectreplank>,
-  "s": <quark:slime_bucket>,
+  "s": <quark:slime_bucket:*>,
   "S": <tconstruct:slimesling:*>.anyDamage() # Slimesling
 });
 
@@ -184,12 +184,6 @@ val packagerList = [
   [<nuclearcraft:part:1>], [<ore:plateLead>.firstItem, <ic2:casing:4>, <ore:ingotTough>.firstItem * 4, <minecraft:redstone> * 4],
   [<nuclearcraft:part>], [<ore:plateLead>.firstItem, <ic2:casing:4>, <ore:ingotGraphite>.firstItem * 2],
 
-
-  [<cyclicmagic:magic_net> * 4]   , [
-    <minecraft:snowball>,      # Snowball
-    <minecraft:tallgrass:*>,   # Grass
-    <scalinghealth:heartdust>, # Heart Dust
-  ],
   [<cyclicmagic:ender_snow>]      , [
     <extrautils2:decorativesolidwood>, # Magical Planks
     <ore:stickStone>.firstItem,        # Stone Rod
@@ -851,3 +845,9 @@ craft.remake(<cyclicmagic:inventory_food>, ["pretty",
   "C": <ore:foodCake>,      # Cake
 });
 
+# [Monster Ball]*3 from [Heart Dust][+2]
+craft.shapeless(<cyclicmagic:magic_net> * 3, "SGSG▲GSGS", {
+  "S": <minecraft:snowball>,      # Snowball
+  "G": <minecraft:tallgrass:1>,   # Grass
+  "▲": <scalinghealth:heartdust>, # Heart Dust
+});

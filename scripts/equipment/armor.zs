@@ -227,15 +227,16 @@ remakeEx(<botania:terrasteelchest>, [[<ore:dreamwoodTwig>, <ore:runeSummerB>, <o
 remakeEx(<botania:terrasteelhelm>, [[<ore:dreamwoodTwig>, <ore:runeSpringB>, <ore:dreamwoodTwig>],[<ore:ingotTerrasteel>, <botania:elementiumhelm>.anyDamage(), <ore:ingotTerrasteel>], [null, <ore:ingotTerrasteel>, null]]);
 recipes.addShapeless(<botania:terrasteelhelmreveal>, [<botania:terrasteelhelm>.anyDamage(),<thaumcraft:goggles>.anyDamage()]);
 
-remakeEx(<ic2:nano_helmet:26>, [[<ic2:crafting:15>, <ic2:energy_crystal:26>.anyDamage(), <ic2:crafting:15>],[<ic2:crafting:15>, <ic2:nightvision_goggles:26>.anyDamage(), <ic2:crafting:15>], [null, <conarm:helmet_core>.withTag({Material: "energetic_metal"}), null]]);
-remakeEx(<ic2:nano_chestplate:26>, [[<ic2:crafting:15>, <conarm:chest_core>.withTag({Material: "energetic_metal"}), <ic2:crafting:15>],[<ic2:crafting:15>, <ic2:energy_crystal:26>.anyDamage(), <ic2:crafting:15>], [<ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>]]);
-remakeEx(<ic2:nano_leggings:26>, [[<ic2:crafting:15>, <ic2:energy_crystal:26>.anyDamage(), <ic2:crafting:15>],[<ic2:crafting:15>, <conarm:leggings_core>.withTag({Material: "energetic_metal"}), <ic2:crafting:15>], [<ic2:crafting:15>, null, <ic2:crafting:15>]]);
-remakeEx(<ic2:nano_boots:26>, [[<ic2:crafting:15>, <ic2:energy_crystal:26>.anyDamage(), <ic2:crafting:15>],[<ic2:crafting:15>, <conarm:boots_core>.withTag({Material: "energetic_metal"}), <ic2:crafting:15>], [null, null, null]]);
+val anyCrystal = <ic2:energy_crystal:*> | <ic2:energy_crystal:*>.withTag({}, false);
+remakeEx(<ic2:nano_helmet:26>, [[<ic2:crafting:15>, anyCrystal, <ic2:crafting:15>],[<ic2:crafting:15>, <ic2:nightvision_goggles:26>.anyDamage(), <ic2:crafting:15>], [null, <conarm:helmet_core>.withTag({Material: "energetic_metal"}), null]]);
+remakeEx(<ic2:nano_chestplate:26>, [[<ic2:crafting:15>, <conarm:chest_core>.withTag({Material: "energetic_metal"}), <ic2:crafting:15>],[<ic2:crafting:15>, anyCrystal, <ic2:crafting:15>], [<ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>]]);
+remakeEx(<ic2:nano_leggings:26>, [[<ic2:crafting:15>, anyCrystal, <ic2:crafting:15>],[<ic2:crafting:15>, <conarm:leggings_core>.withTag({Material: "energetic_metal"}), <ic2:crafting:15>], [<ic2:crafting:15>, null, <ic2:crafting:15>]]);
+remakeEx(<ic2:nano_boots:26>, [[<ic2:crafting:15>, anyCrystal, <ic2:crafting:15>],[<ic2:crafting:15>, <conarm:boots_core>.withTag({Material: "energetic_metal"}), <ic2:crafting:15>], [null, null, null]]);
 
-remakeEx(<ic2:quantum_boots:26>, [[null, null, null],[<ic2:crafting:4>, <redstonearsenal:armor.boots_flux>.anyDamage(), <ic2:crafting:4>], [<ic2:rubber_boots>, <ic2:lapotron_crystal>.anyDamage(), <ic2:rubber_boots>]]);
-remakeEx(<ic2:quantum_leggings:26>, [[<ic2:crafting:3>, <ic2:lapotron_crystal>.anyDamage(), <ic2:crafting:3>],[<ic2:crafting:4>, <redstonearsenal:armor.legs_flux>.anyDamage(), <ic2:crafting:4>], [null, <ic2:lapotron_crystal>.anyDamage(), null]]);
-remakeEx(<ic2:quantum_chestplate:26>, [[<ic2:crafting:3>, <ic2:lapotron_crystal>.anyDamage(), <ic2:crafting:3>],[<ic2:crafting:4>, <redstonearsenal:armor.plate_flux>.anyDamage(), <ic2:crafting:4>], [<ic2:crafting:3>, <ic2:jetpack_electric>.anyDamage(), <ic2:crafting:3>]]);
-remakeEx(<ic2:quantum_helmet:26>, [[<ic2:crafting:3>, null, <ic2:crafting:3>],[<ic2:crafting:4>, <redstonearsenal:armor.helmet_flux>.anyDamage(), <ic2:crafting:4>], [null, <ic2:lapotron_crystal>.anyDamage(), null]]);
+remakeEx(<ic2:quantum_boots:26>, [[null, null, null],[<ic2:crafting:4>, <redstonearsenal:armor.boots_flux>.anyDamage(), <ic2:crafting:4>], [<ic2:rubber_boots>, <ore:lapotronCrystal>, <ic2:rubber_boots>]]);
+remakeEx(<ic2:quantum_leggings:26>, [[<ic2:crafting:3>, <ore:lapotronCrystal>, <ic2:crafting:3>],[<ic2:crafting:4>, <redstonearsenal:armor.legs_flux>.anyDamage(), <ic2:crafting:4>], [null, <ore:lapotronCrystal>, null]]);
+remakeEx(<ic2:quantum_chestplate:26>, [[<ic2:crafting:3>, <ore:lapotronCrystal>, <ic2:crafting:3>],[<ic2:crafting:4>, <redstonearsenal:armor.plate_flux>.anyDamage(), <ic2:crafting:4>], [<ic2:crafting:3>, <ic2:jetpack_electric>.anyDamage(), <ic2:crafting:3>]]);
+remakeEx(<ic2:quantum_helmet:26>, [[<ic2:crafting:3>, null, <ic2:crafting:3>],[<ic2:crafting:4>, <redstonearsenal:armor.helmet_flux>.anyDamage(), <ic2:crafting:4>], [null, <ore:lapotronCrystal>, null]]);
 
 # *======= Draconic Armor =======*
 

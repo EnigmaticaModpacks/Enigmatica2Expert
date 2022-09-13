@@ -32,7 +32,7 @@ furnace.addRecipe(<immersiveengineering:metal:5>,   <ic2:purified:6>);
 	recipes.addShapedMirrored("IC2 Electric Jetpack", 
 	<ic2:jetpack_electric>, 
 	[[<ic2:casing:5>, <minecraft:web>, <ic2:casing:5>],
-	[<ore:circuitAdvanced>, <ic2:batpack>.anyDamage(), <ore:circuitAdvanced>], 
+	[<ore:circuitAdvanced>, <ic2:batpack>.withTag({}, false).anyDamage(), <ore:circuitAdvanced>], 
 	[<ic2:casing:5>, null, <ic2:casing:5>]]);
 	
 	recipes.addShapedMirrored("IC2 Jetpack", 
@@ -584,3 +584,7 @@ craft.remake(<ic2:te:88>, ["pretty",
   "■": <ore:machineBlock>, # Basic Machine Casing
   "o": <ore:craftingToolWireCutter>, # Cutter
 });
+
+# Shortcut for AR
+# [Lapotron Crystal] from [Advanced Circuit][+1]
+scripts.processUtils.avdRockXmlRecipe("Crystallizer", [<ore:circuitAdvanced> * 4], [<fluid:lapis> * 10000], [<ic2:lapotron_crystal>.withTag({}) * 4], null);

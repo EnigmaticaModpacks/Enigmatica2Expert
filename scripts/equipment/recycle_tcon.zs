@@ -69,20 +69,20 @@ function getHeadStat(mat as ITICMaterial) as int {
 
 
 static validToolsList as string[] = [
-  "tconstruct:hammer",
-  "tconstruct:battlesign",
-  "tconstruct:excavator",
-  "tconstruct:frypan",
+  // "tconstruct:hammer",
+  // "tconstruct:battlesign",
+  // "tconstruct:excavator",
+  // "tconstruct:frypan",
   "tconstruct:hatchet",
-  "tconstruct:kama",
-  "tconstruct:lumberaxe",
-  "tconstruct:mattock",
+  // "tconstruct:kama",
+  // "tconstruct:lumberaxe",
+  // "tconstruct:mattock",
   "tconstruct:pickaxe",
   "tconstruct:shovel",
   "tcomplement:chisel",
   "tcomplement:sledge_hammer",
-  "tconevo:tool_sceptre",
-  "exnihilocreatio:crook_tconstruct",
+  // "tconevo:tool_sceptre",
+  // "exnihilocreatio:crook_tconstruct",
 ] as string[];
 
 

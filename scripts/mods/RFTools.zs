@@ -232,7 +232,7 @@ craft.remake(<rftools:charged_porter>, ["pretty",
   "▬ * ▬",
   "  □  "], {
   "□": <ore:plateAdvancedAlloy>, # Advanced Alloy
-  "╳": <ic2:lapotron_crystal>.anyDamage(), # Lapotron Crystal
+  "╳": <ore:lapotronCrystal>, # Lapotron Crystal
   "*": <ic2:crystal_memory>, # Crystal Memory
   "▬": <extendedcrafting:material:36>,   # Ender Ingot
 });
@@ -254,7 +254,7 @@ craft.remake(<rftools:screen_controller>, ["pretty",
   "I п I"], {
   "□": <ore:plateSilicon>,            # Silicon Plate
   "I": <ore:itemInsulatedGlassCable>, # Glass Fibre Cable
-  "*": <ic2:lapotron_crystal>.anyDamage(), # Lapotron Crystal
+  "*": <ore:lapotronCrystal>, # Lapotron Crystal
   "M": <rftools:machine_base>,        # Machine Base
   "п": <ore:plateAdvancedAlloy>, # Advanced Alloy
 });

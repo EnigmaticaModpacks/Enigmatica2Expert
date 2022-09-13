@@ -112,7 +112,7 @@
   
   <capacitor key="enderio:block_painter/intake"                     base="100"      scaler="POWER" />
   <capacitor key="enderio:block_painter/buffer"                     base="1000"     scaler="POWER" />
-  <capacitor key="enderio:block_painter/use"                        base="1"        scaler="FIXED" />
+  <capacitor key="enderio:block_painter/use"                        base="10"       scaler="FIXED" />
   
   <capacitor key="enderio:block_sag_mill/intake"                    base="200000"   scaler="POWER" />
   <capacitor key="enderio:block_sag_mill/buffer"                    base="2000000"  scaler="POWER" />

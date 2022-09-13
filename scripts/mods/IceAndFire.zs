@@ -549,6 +549,12 @@ mods.iceandfire.recipes.addIceDragonForgeRecipe(
     <scalinghealth:difficultychanger>);
 
 
+# Alt for non-dragon players
+scripts.processUtils.avdRockXmlRecipeEx("Crystallizer", [<cyclicmagic:heart_toxic>], [<fluid:lifeessence> * 1000], [<scalinghealth:heartcontainer>], null, {power: 100000, timeRequired: 20});
+
+# [Crystal Matrix Ingot] from [Diamond Lattice][+1]
+scripts.processUtils.avdRockXmlRecipeEx("PrecisionLaserEtcher", [<ore:netherStar>, <avaritia:resource>], null, [<avaritia:resource:1>], null, {power: 100000, timeRequired: 20});
+
 ##################
 # Other
 envelopCheese("amphithereMorb",  <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "iceandfire:amphithere"}) * 3, <minecraft:cookie>);

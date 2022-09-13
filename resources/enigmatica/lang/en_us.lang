@@ -41,6 +41,9 @@ item.battery.1.name=Quadruple Battery
 tile.rftdimtweak.dimension_builder.name=Dimension Builder
 tile.rftdimtweak.dimension_editor.name=Dimension Editor
 entity.AngryChicken.name=Angry Chicken
+tile.ocsensors.sensor.name=Open Sensor
+item.positron_unit.name=Positron Unit
+item.quantron.name=Quantron
 
 tooltips.lang.tag.generator=§6#Generator
 tooltips.lang.tag.solar=§f#Solar

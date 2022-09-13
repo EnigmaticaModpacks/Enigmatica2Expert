@@ -103,4 +103,15 @@
 			<itemStack>nuclearcraft:part 8 0</itemStack>
 		</output>
 	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Crystal Matrix Ingot] -->
+	<Recipe timeRequired="20" power="100000">
+		<input>
+			<oreDict>netherStar 1</oreDict>
+			<itemStack>avaritia:resource 1</itemStack>
+		</input>
+		<output>
+			<itemStack>avaritia:resource 1 1</itemStack>
+		</output>
+	</Recipe>
 </Recipes>

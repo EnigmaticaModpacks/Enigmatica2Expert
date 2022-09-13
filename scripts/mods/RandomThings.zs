@@ -510,3 +510,6 @@ craft.remake(<randomthings:inventoryrerouter>, ["pretty",
   "s": <ore:stone>, # Stone
   "W": <tconstruct:wooden_hopper>, # Wooden Hopper
 });
+
+# Magic Bean alt
+furnace.addRecipe(<randomthings:beans:2>, <twilightforest:magic_beans>, 50);

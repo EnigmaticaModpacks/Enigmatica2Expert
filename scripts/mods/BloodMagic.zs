@@ -20,7 +20,7 @@ import crafttweaker.item.IItemStack as IItemStack;
 	recipes.addShaped("Rune of Sacrifice", <bloodmagic:blood_rune:3> * 3, 
 	[[<extrautils2:decorativesolid:3>, <bloodmagic:slate:1>, <extrautils2:decorativesolid:3>], 
 	[<bloodmagic:slate:1>, <ore:orbTier2>.reuse(), <bloodmagic:slate:1>],
-	[<extrautils2:decorativesolid:3>, <astralsorcery:itemcrystalsword>.anyDamage(), <extrautils2:decorativesolid:3>]]);
+	[<extrautils2:decorativesolid:3>, <astralsorcery:itemcrystalsword>.withTag({}, false), <extrautils2:decorativesolid:3>]]);
 
 # Rune of the orb
 	recipes.remove(<bloodmagic:blood_rune:8>);

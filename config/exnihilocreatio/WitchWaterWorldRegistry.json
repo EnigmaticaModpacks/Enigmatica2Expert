@@ -20,5 +20,8 @@
     "exnihilocreatio:block_netherrack_crushed": 120,
     "minecraft:netherrack": 20,
     "netherendingores:block_nether_netherfish": 1
+  },
+  "ic2pahoehoe_lava": {
+    "ic2:resource": 1
   }
 }

@@ -88,35 +88,6 @@ import scripts.craft.grid.Grid;
     newGasCellRecipe(<aeadditions:storage.component>.definition.makeStack(i+7), <aeadditions:storage.gas>.definition.makeStack(i));
   }
 
-# ---=== High Tier Storage Components ===---
-	recipes.remove(<aeadditions:storage.component>);
-	recipes.addShapedMirrored("AE2 Storage Components 256k", 
-	<aeadditions:storage.component>, 
-	[[<ore:dustEnder>, <appliedenergistics2:material:24>, <ore:dustEnder>],
-	[<appliedenergistics2:material:38>, <appliedenergistics2:material:22>, <appliedenergistics2:material:38>], 
-	[<ore:dustEnder>, <appliedenergistics2:material:38>, <ore:dustEnder>]]);
-
-	recipes.remove(<aeadditions:storage.component:1>);
-	recipes.addShapedMirrored("AE2 Storage Components 1024k", 
-	<aeadditions:storage.component:1>, 
-	[[<ore:dustEnder>, <appliedenergistics2:material:24>, <ore:dustEnder>],
-	[<aeadditions:storage.component>, <appliedenergistics2:material:22>, <aeadditions:storage.component>], 
-	[<ore:dustEnder>, <aeadditions:storage.component>, <ore:dustEnder>]]);
-
-	recipes.remove(<aeadditions:storage.component:2>);
-	recipes.addShapedMirrored("AE2 Storage Components 4096k", 
-	<aeadditions:storage.component:2>, 
-	[[<ore:dustEnder>, <appliedenergistics2:material:24>, <ore:dustEnder>],
-	[<aeadditions:storage.component:1>, <appliedenergistics2:material:22>, <aeadditions:storage.component:1>], 
-	[<ore:dustEnder>, <aeadditions:storage.component:1>, <ore:dustEnder>]]);
-
-	recipes.remove(<aeadditions:storage.component:3>);
-	recipes.addShapedMirrored("AE2 Storage Components 16384k", 
-	<aeadditions:storage.component:3>, 
-	[[<ore:dustEnder>, <appliedenergistics2:material:24>, <ore:dustEnder>],
-	[<aeadditions:storage.component:2>, <appliedenergistics2:material:22>, <aeadditions:storage.component:2>], 
-	[<ore:dustEnder>, <aeadditions:storage.component:2>, <ore:dustEnder>]]);
-	
 # Quantum Link Chamber
 	recipes.remove(<appliedenergistics2:quantum_link>);
 	recipes.addShapedMirrored("Quantum Link Chamber", 
@@ -124,17 +95,6 @@ import scripts.craft.grid.Grid;
 	[[<appliedenergistics2:quartz_vibrant_glass>, <rftools:infused_enderpearl>, <appliedenergistics2:quartz_vibrant_glass>],
 	[pearlFluix, <mekanism:machineblock3>, pearlFluix], 
 	[<appliedenergistics2:quartz_vibrant_glass>, <ore:manaPearl>, <appliedenergistics2:quartz_vibrant_glass>]]);
-
-# [Blast resistant ME Drive] from [Disk Drive][+3]
-craft.remake(<aeadditions:hardmedrive>, ["pretty",
-  "▬ ▬ ▬",
-  "▬ : ▬",
-  "E ◙ E"], {
-  "▬": <ore:ingotRefinedObsidian>,        # Refined Obsidian Ingot
-  ":": <ore:oc:diskDrive>,                # Disk Drive
-  "E": <appliedenergistics2:material:24>, # Engineering Processor
-  "◙": <rftools:machine_frame>,           # Machine Frame
-});
 
 # [ME Drive] from [Disk Drive][+3]
 craft.remake(<appliedenergistics2:drive>, ["pretty",
@@ -467,17 +427,6 @@ craft.reshapeless(<aeadditions:certustank>, 'ABB', {
 // ]);
 # ---------------------------------------------------------
 
-# [1k ME Storage Component] from [Cobweb][+3]
-craft.remake(<appliedenergistics2:material:35>, ["pretty",
-  "♥ L ♥",
-  "⌃ C ⌃",
-  "♥ ⌃ ♥"], {
-  "⌃": <ore:crystalCertus>, # Certus Quartz Crystal
-  "C": <minecraft:web>, # Cobweb
-  "♥": <ore:dustRedstone>, # Redstone
-  "L": <appliedenergistics2:material:22>, # Logic Processor
-});
-
 # [Charged Quartz Fixture]*6 from [Tin Item Casing][+1]
 craft.reshapeless(<appliedenergistics2:quartz_fixture> * 6, "⌃⌂", {
   "⌃": <ore:gemChargedCertusQuartz>, # Charged Certus Quartz Crystal
@@ -642,3 +591,30 @@ craft.make(<appliedenergistics2:material:58>, ["pretty",
   "d": <appliedenergistics2:material:28>, # Advanced Card
   "M": <appliedenergistics2:part:440>,    # ME Interface
 });
+
+# ---------------------------------
+# Storage Component rework
+# ---------------------------------
+val storCompIngrs = [
+	[<appliedenergistics2:material:35>, /*     1k */ <ore:dustGlowstone>, <appliedenergistics2:material:22>, /*Logic Processor*/              <appliedenergistics2:material:1>], # Charged Certus Quartz Crystal
+	[<appliedenergistics2:material:36>, /*     4k */ <ore:dustGlowstone>, <appliedenergistics2:material:22>, /*Logic Processor*/              <ic2:re_battery>.withTag({charge: 10000.0})], # RE-Battery
+	[<appliedenergistics2:material:37>, /*    16k */ <ore:dustGlowstone>, <appliedenergistics2:material:23>, /*Calculation Processor*/        <ic2:advanced_re_battery>.withTag({charge: 100000.0})], # Advanced RE-Battery
+	[<appliedenergistics2:material:38>, /*    64k */ <ore:dustGlowstone>, <appliedenergistics2:material:23>, /*Calculation Processor*/        <ic2:energy_crystal>.withTag({charge: 1000000.0})], # Energy Crystal
+	[<aeadditions:storage.component>  , /*   256k */ <ore:dustGlowstone>, <appliedenergistics2:material:24>, /*Engineering Processor*/        <ic2:lapotron_crystal>.withTag({charge: 1.0E7})], # Lapotron Crystal
+	[<aeadditions:storage.component:1>, /*  1024k */ <ore:dustGlowstone>, <appliedenergistics2:material:24>, /*Engineering Processor*/        <requious:quantron>.withTag({energy: 200000000})], # Quantron
+	[<aeadditions:storage.component:2>, /*  4096k */ <ore:dustGlowstone>, <threng:material:6>,               /*Massively Parallel Processor*/ <requious:positron_unit>.withTag({energy: 2000000000})], # Positron Unit
+	[<aeadditions:storage.component:3>, /* 16384k */ <ore:dustGlowstone>, <threng:material:6>,               /*Massively Parallel Processor*/ <ore:blockDraconiumCharged>], # Charged Draconium Block
+] as IIngredient[][];
+
+for i, inputs in storCompIngrs {
+	craft.remake(inputs[0].items[0], ["pretty",
+		"♥ - ♥",
+		"⌃ C ⌃",
+		"♥ - ♥"], {
+		"♥": inputs[1], # Dust
+		"-": inputs[2], # Processor
+		"⌃": i==0 ? <appliedenergistics2:material:1> as IIngredient : storCompIngrs[i - 1][0], # Prev
+		"C": inputs[3], # Battery
+	});
+}
+# ---------------------------------

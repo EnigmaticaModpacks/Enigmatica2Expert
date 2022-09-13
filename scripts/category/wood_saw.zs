@@ -45,6 +45,21 @@ recipes.addShapedMirrored("Sticks from logs",
 [[<ore:logWood>],
 [<ore:logWood>]]);
 
+# [Stick]*36 from [Single Compressed Wood]
+craft.shapeless(<minecraft:stick> * 36, "##", {
+  "#": <ore:compressedLogWood1x>, # Single Compressed Wood
+});
+
+# [Scaffolding]*36 from [Double Compressed Wood]
+craft.shapeless(<openblocks:scaffolding> * 36, "##", {
+  "#": <ore:compressedLogWood2x>, # Double Compressed Wood
+});
+
+# [Framed Trim]*36 from [Triple Compressed Wood]
+craft.shapeless(<storagedrawers:customtrim> * 36, "##", {
+  "#": <ore:compressedLogWood3x>, # Triple Compressed Wood
+});
+
 # Treated Wood sticks
 recipes.remove(<immersiveengineering:material>);
 scripts.process.sawWood(<ore:plankTreatedWood>, <immersiveengineering:material>, "except: Shapeless BlockCutter");

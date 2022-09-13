@@ -36,7 +36,7 @@ craft.remake(<enderio:block_painter>, ["pretty",
   "P D a",
   "¤ F ¤",
   "F ■ F"], {
-  "P": <ic2:painter>.anyDamage(),      # Painter
+  "P": <ic2:painter>.withTag({}, false) | <ic2:painter:*>, # Painter
   "D": <randomthings:dyeingmachine>,   # Dyeing Machine
   "a": <openblocks:paintbrush>.anyDamage(), # Paint Brush
   "¤": <ore:gearIronInfinity>,         # Infinity Bimetal Gear

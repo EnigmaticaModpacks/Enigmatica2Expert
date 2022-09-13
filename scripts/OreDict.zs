@@ -356,6 +356,7 @@ addItems(<ore:doorWood>, [
 
 addItems(<ore:chest>, [
 	<thaumcraft:hungry_chest>,
+	<ironchest:iron_chest:7>, # Animals bonus
 ]);
 removeItems(<ore:chest>, [
 	<minecraft:ender_chest>,
