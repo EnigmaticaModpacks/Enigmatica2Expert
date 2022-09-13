@@ -123,3 +123,9 @@ x.addJEIRecipe(AssemblyRecipe.create(function(c) {
   c.addFluidOutput('fluid_out', <fluid:flux_goo> * 1000);})
   .requireItem("input5", <thaumcraft:bottle_taint>)
 );
+
+# IC2 basalt
+x.addJEIRecipe(AssemblyRecipe.create(function(c) {
+  c.addItemOutput('output1', <ic2:resource>);})
+  .requireFluid("fluid_in", <fluid:ic2pahoehoe_lava> * 1000)
+);
