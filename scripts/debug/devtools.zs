@@ -44,7 +44,11 @@ function dumpLightSources(player as IPlayer) as void {
 
 events.onPlayerLeftClickBlock(function(e as crafttweaker.event.PlayerLeftClickBlockEvent){
   if(e.player.world.isRemote()) return;
-  if(isNull(e.player.currentItem) || !(<minecraft:stick> has e.player.currentItem)) return;
+  if(
+    isNull(e.player.currentItem) 
+    || !(<minecraft:stick> has e.player.currentItem)
+    || e.block.definition.id != "minecraft:bedrock"
+  ) return;
 
   e.player.sendMessage("§eLeft Clicked§r");
   dumpLightSources(e.player);
