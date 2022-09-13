@@ -149,6 +149,7 @@ for lang, items in {
     <mekanism:energycube>.withTag({tier: 1}),
     <mekanism:energycube>.withTag({tier: 2}),
     <mekanism:energycube>.withTag({tier: 3}),
+    <opencomputers:charger>,
     <randomthings:spectrecharger:1>,
     <randomthings:spectrecharger:2>,
     <randomthings:spectrecharger:3>,
