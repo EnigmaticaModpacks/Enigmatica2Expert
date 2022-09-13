@@ -1,0 +1,44 @@
+{
+	title: "Getting fire",
+	icon: "kirosblocks:default_fire_block",
+	x: -2.375d,
+	y: 6.0d,
+	text: [
+		"If you break the slab with a stick, fire will appear."
+	],
+	dependencies: [
+		"ca359f03"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "afa4a155",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any slabWood"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "slabWood"
+				}
+			}
+		}]
+	},
+	{
+		uid: "877c6303",
+		type: "item",
+		items: [{
+			item: "minecraft:stick"
+		}]
+	}],
+	rewards: [{
+		uid: "cf949f3b",
+		type: "item",
+		item: "forestry:wood_pile",
+		count: 32
+	}]
+}
