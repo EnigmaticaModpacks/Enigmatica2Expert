@@ -1,30 +1,16 @@
 # TODO list
 
-- [ ] ✏️ Add craft `Rat hole` + `Salis Mundus` -> `Something`
-- [x] ✏️ Non-treated pistons or "animals" way
-- [x] ✏️ Wood Planks for magic line, add jei, add Traits
-- [x] ✏️ Superlubricient Ice cheaper
-- [ ] ✏️ Add Salis Mundus conversion from saplings to Thaum trees
-- [ ] ✏️ Blast Resistant drive crash game, maybe gate storage disks
-- [ ] ✏️ Monster Ball Uncraftable
+- [ ] 🔄 Check if golems can break blocks in skyblock
 - [ ] ✏️ Make new replicator machine
 - [ ] ✏️ More Alien Crystal blocks + mica to get Crystaltine and ET gems
 - [ ] ✏️ Remove Cyclic's machines completely because they are laggy
 - [ ] ✏️ Add chaos shards recipe for Skyblock. Probably RFT Syringe in 5 steps => Struck Lightning
-- [ ] ✏️ Remove Dragon Forge crafts (because its unautomateable)
 - [ ] ✏️ Milk Questing Ram to color essence
-- [ ] ✏️ Heat Exchanger (immersive tech) is broken, does not accept other fluids/gasses. Only accepts water.
-- [ ] 📀 Add Meat to Meaty orb https://github.com/daedalus4096/ThaumicWonders/blob/251829dee76d72368d0ed0af1f2104121b781e63/src/main/java/com/verdantartifice/thaumicwonders/common/tiles/devices/TileMeatyOrb.java#L49-L53
+- [ ] 📀 Fix NPE https://is.gd/wZprY2
 - [ ] 📀 Buff Golem Stats
-- [ ] 📀 Change Quartz modifier to `(n + 1) * 1.05`
-- [ ] 📀 Fix NPE https://github.com/BluSunrize/ImmersiveEngineering/blob/master/src/main/java/blusunrize/immersiveengineering/common/EventHandler.java#L619
-- [ ] 📀 Fix BedrockOre cant go 1 height flat https://github.com/MightyPirates/BedrockOres/blob/master-MC1.12/src/main/java/li/cil/bedrockores/common/world/WorldGeneratorBedrockOre.java#L92
-- [ ] 📀 Adv. Rock tank left 64 buckets when broken
 - [ ] 🔄 Ratlantean spirit projectiles aren't hitting the player
-- [x] 🔄 void pickaxe of the core has some really low  mining level
-- [x] 🔄 Introduce EIO painting machine
-- [ ] 📖 Plate of Unsealing add quest
-- [ ] 📖 Cheese should be any cheese
+- [ ] 📖 Introduce EIO painting machine
+- [ ] 🔄 `/punish` command - players can punish other players on server
 
 ---
 
@@ -32,7 +18,14 @@
 
 ## Long-Term
 
-- [ ] 🔴 Do not update `Specrtal Edge`
+- [ ] ✏️ Add craft `Rat hole` + `Salis Mundus` -> `Something`
+- [ ] 📀 Change Quartz modifier to `(n + 1) * 1.05`
+- [ ] 📀 Adv. Rock tank left 64 buckets when broken
+- [ ] 🔴 Do not update `JAOPCA`
+- [ ] 🔴 Do not update `Redstone Repository Revolved`
+- [ ] 🔴 Do not update `spark`
+- [ ] 🔴 Do not update `Specrtal Edge` to 1.5
+- [ ] 🔄 Schematica Immersive Tech, Steam turbine, does not recognize thermal's steel block
 - [ ] 🔄 Remove common blocks from JER planets if they appear in Overworld. For example, we dont need 20 pages of Iron Ore for each planet
 - [ ] 🚧 Update screenshots on CF
 - [ ] 🔴 Fix Integrated proxy bug with Bansoukou: https://github.com/shBLOCK/IntegratedProxy/issues/29
@@ -182,6 +175,7 @@ Items that should have more uses:
 ![](https://git.io/JGGhx "Overworldian Matter")
 ![](https://git.io/JRLSU "Huge Stalk")
 ![](https://git.io/JnzzI "Glitch Infused Ingot")
+[(every) machine parts]
 [Osgloglas Ingot]
 
 ### Tier 4
@@ -207,7 +201,6 @@ Liquids that should have more uses:
 ## 🔧 Crafting Methods
 
 ![](https://git.io/J3hVP "Bursting Powder")
-![](https://git.io/J3hVR "TNT")
 ![](https://git.io/JG5U9 "Decay Generator")
 ![](https://git.io/Jst3B "Crystal Memory")
 ![](https://git.io/JtDnO "Chemical Thrower")

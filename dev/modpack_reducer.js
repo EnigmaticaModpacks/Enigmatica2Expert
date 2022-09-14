@@ -13,33 +13,45 @@ import chalk from 'chalk'
 import escapeGlob from 'glob-escape'
 import _ from 'lodash'
 import terminal_kit from 'terminal-kit'
+import fast_glob from 'fast-glob'
 
-import { globs } from './lib/utils.js'
 const { terminal: term } = terminal_kit
 
-const getMods = (s, isDisabled = false) =>
-  globs(
-    _.uniq(
-      s
-        .trim()
-        .split('\n')
-        .filter((s) => s.trim())
-        .map(
-          (v) => `mods/${escapeGlob(v)}*.jar` + (isDisabled ? '.disabled' : '')
-        )
-    )
-  )
-
-const alreadyDisabled = globs('mods/*.jar.disabled')
-const allEnabledMods = globs('mods/*.jar')
+const alreadyDisabled = fast_glob.sync('mods/*.jar.disabled', { dot: true })
+const allEnabledMods = fast_glob.sync('mods/*.jar', { dot: true })
 const totalModsLength = allEnabledMods.length + alreadyDisabled.length
 
 /** @type {Array<string>} */
 const registeredMods = []
+
+/** @type {{name:string,description:string,files:string[],disabledFiles:string[],}[]} */
 const reduceLevel = []
+
+const nonexistingEntries = []
+const severalVariations = []
+
+/**
+ * @param {string} name
+ * @param {string} description
+ * @param {string} modListText
+ */
 function addReduceLevel(name, description, modListText) {
-  const files = getMods(modListText)
-  const disabledFiles = getMods(modListText, true)
+  const lines = _.uniq(modListText
+    .trim()
+    .split('\n')
+    .filter(s => s.trim())
+    .map((entry) => {
+      const files = fast_glob.sync(`mods/${escapeGlob(entry)}*.jar?(.disabled)`, { dot: true })
+      if (files.length > 1) severalVariations.push({ entry, files })
+      return { entry, path: files[0] }
+    }))
+
+  const [exist, nonexist] = _.partition(lines, o => !!o.path)
+
+  nonexistingEntries.push(...nonexist.map(o => o.entry))
+
+  const [disabledFiles, files] = _.partition(exist.map(o => o.path), o => o.endsWith('.disabled'))
+
   registeredMods.push(...files)
   registeredMods.push(...disabledFiles)
   reduceLevel.push({
@@ -50,13 +62,13 @@ function addReduceLevel(name, description, modListText) {
   })
 }
 
-const getLevelText = (i) =>
+const getLevelText = i =>
   chalk.rgb(
     244,
     (255 - (255 / reduceLevel.length) * i) | 0,
     59
   )(reduceLevel[i].name)
-const getFileName = (s) => s.replace(/^.*[\\/]/, '')
+const getFileName = s => s.replace(/^.*[\\/]/, '')
 
 function exit() {
   // term`\nDone!`
@@ -66,16 +78,27 @@ function exit() {
 async function init() {
   term.clear()
 
-  const unregMods = _.difference(allEnabledMods, _.uniq(registeredMods)).map(
-    getFileName
-  )
-
+  const unregMods = _.difference(allEnabledMods, _.uniq(registeredMods))
+    .map(getFileName)
   if (unregMods.length) {
-    console.log(
+    console.warn(
       'This mods unregistered in lists. Add them first :>> ',
       unregMods
     )
-    // exit()
+  }
+
+  if (nonexistingEntries.length) {
+    console.warn(
+      'This lines have no files :>> ',
+      nonexistingEntries
+    )
+  }
+
+  if (severalVariations.length) {
+    console.warn(
+      'This lines have several variations :>> ',
+      severalVariations
+    )
   }
 
   term`\nSelect `.brightYellow`Reduce Level`.styleReset()` for `.green(
@@ -87,13 +110,13 @@ async function init() {
     await term.singleColumnMenu(
       reduceLevel.map(
         (l, i) =>
-          `${i + 1}: ` +
-          `${getLevelText(i)} ` +
-          `(${chalk.red.dim(
-            '-' +
-              (cumulativeReduction += l.files.length + l.disabledFiles.length)
-          )}) ` +
-          `${chalk.rgb(100, 100, 100)(l.description)}`
+          `${i + 1}: `
+          + `${getLevelText(i)} `
+          + `(${chalk.red.dim(
+            `-${
+              cumulativeReduction += l.files.length + l.disabledFiles.length}`
+          )}) `
+          + `${chalk.rgb(100, 100, 100)(l.description)}`
       )
     ).promise
   ).selectedIndex
@@ -103,7 +126,7 @@ async function init() {
   const enableBlacklist = _.uniq(
     reduceLevel
       .slice(0, reduceIndex + 1)
-      .map((r) => r.disabledFiles)
+      .map(r => r.disabledFiles)
       .flat()
   )
   await renameMods(
@@ -116,7 +139,7 @@ async function init() {
     _.uniq(
       reduceLevel
         .slice(0, reduceIndex + 1)
-        .map((r) => r.files)
+        .map(r => r.files)
         .flat()
     ),
     true
@@ -129,10 +152,10 @@ async function renameMods(actionName, list, toDisable) {
   if (!list.length) return
 
   const progressBar = term.progressBar({
-    title: actionName.padEnd(15),
-    width: 80,
+    title   : actionName.padEnd(15),
+    width   : 80,
     syncMode: true,
-    items: list.length,
+    items   : list.length,
   })
 
   const updateBit = 1 / list.length
@@ -142,31 +165,19 @@ async function renameMods(actionName, list, toDisable) {
     progressBar.startItem(fileName)
 
     const newPath = toDisable
-      ? oldPath + '.disabled'
+      ? `${oldPath}.disabled`
       : oldPath.replace(/\.disabled$/, '')
     renameSync(oldPath, newPath)
     // console.log('old, new :>> ', chalk.yellow(getFileName(oldPath)), chalk.green(getFileName(newPath)))
 
     progressBar.update((progress += updateBit))
-    await new Promise((r) => setTimeout(r, 500 / list.length))
+    await new Promise(resolve => setTimeout(resolve, 500 / list.length))
   }
   progressBar.update(1)
   term('\n\n')
 }
 
 addReduceLevel('Everything', 'All Mods included', '')
-
-addReduceLevel(
-  'No Refined Storage',
-  'Mods related to Refined Storage are removed',
-  `
-refinedstorage-
-refinedstorageaddons-
-refinedstoragerequestify-
-rsinfinitewireless-
-RSLargePatterns-
-`
-)
 
 addReduceLevel(
   'Soft',
@@ -184,13 +195,18 @@ addReduceLevel(
   'Server Safe',
   'Remove all client-only mods, still multiplayer safe.',
   `
-EntityCulling-
-particleculling-
+SmoothFont-
+simplelogin-
+CustomSkinLoader_ForgeLegacy-
 moredefaultoptions-
+Triumph-
 BNBGamingCore-
 BNBGamingLib-
-Triumph-
-BQTweaker-
+
+EntityCulling-
+particleculling-
+RenderLib-
+
 Nimble-
 Biome Border Viewer
 blockdrops-
@@ -201,21 +217,19 @@ ears-forge-
 grid-
 IconExporter
 InvMove
+
 potiondescriptions-
 NetherPortalFix_
-LagGoggles-
 tellme-
-TickCentral-
-versioner-
-scalingguis-
-smooth-scrolling-everywhere-
-Fakename
 DefaultWorldGenerator-port-
 bookdisplay-
 bogosorter-
 CraftingTweaks_
 modularui-
-RenderLib-
+LagGoggles-
+TickCentral-
+smooth-scrolling-everywhere-
+scalingguis-
 `
 )
 
@@ -223,6 +237,9 @@ addReduceLevel(
   'Maximum Speedup',
   'Items and blocks would be removed\nQuest Rewards and Requirments would be replaced to placeholders\nLoot Boxes would output placeholders',
   `
+pointer-
+tweakedpetroleum-
+tweakedpetroleumgas-
 betterbiomeblend-
 Fluidlogged-API-
 lootr-
@@ -302,7 +319,9 @@ BringMeTheRings-
 treetweaker-
 cryingghasts_
 EnableCheats-
-animania-
+animania-1.12.2-base-
+animania-1.12.2-extra-
+animania-1.12.2-farm-
 handoveryouritems_
 ae2fc-
 MysticalCreations-
@@ -336,9 +355,9 @@ CoTRO-
 gamestagesviewer-
 Nutrition-
 EmberRootZoo-
-clientfixer-` +
+clientfixer-`
     // Non-extended mods:
-    `
+    + `
 BetterBuildersWands-
 OpenBlocks-
 NaturesCompass-
@@ -392,6 +411,9 @@ addReduceLevel(
   'CraftTweaker test',
   'Main mods disabled. Most stuff erroring. Unplayable.',
   `
+NoAdvancements-
+FantasticLib-
+EntityDesyncFix-
 ModularAssembly-
 ConsoleFilter-
 maleksinfinitygauntlet
@@ -422,10 +444,10 @@ Botania
 Forgelin-
 bdlib-
 ThermalExpansion-
-EnderCore-
 Chameleon-
 FTBLib-
 BiomesOPlenty-
+EnderCore-
 EnderIO-
 reauth-
 Placebo-
@@ -665,7 +687,6 @@ addReduceLevel(
 _bansoukou-
 [___MixinCompat-
 !mixinbooter-
-*mixinbooter-
 _MixinBootstrap-
 OptiFine_
 GameStages-

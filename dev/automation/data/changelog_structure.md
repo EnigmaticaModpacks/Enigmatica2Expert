@@ -46,7 +46,7 @@
   👿 Extra Utilities 2
   💍 Baubles
   💼 Actually Additions
-  💽 Applied Energistics
+  💽 Applied Energistics | AE2
   📑 Tips
   📙 AkashicTome
   📭 Storage Drawers
@@ -77,7 +77,6 @@
   🙋‍♀️ Quark
   🗳️ Colossal Chest
   🍗 Scaling Feast
-  🍯 Potion Core
   🏝️ Void Island Control
   🎒 Traveler's Backpack
   🛂 Triumph | Achievments
@@ -91,6 +90,7 @@
   ⛏️ Mining
   📑 Tooltips
   📜 Text
+  🍯 Potions
 
 x 🧱 Technical
   x 🚧 Develop

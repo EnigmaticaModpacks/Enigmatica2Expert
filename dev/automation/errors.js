@@ -170,6 +170,7 @@ const ignore = [
   /\[orelib\]: Unable to locate field /,
   /\[FML\]: A mod has attempted to assign Block Block/,
   /\[brandonscore\]: No features were detected for mod: brandonscore./,
+  /\[mixin\]: Reference map .+ for .+ could not be read\./,
 
   // Known warning, do nothing https://github.com/CD4017BE/CD4017BE_lib/issues/15
   /\[cd4017be_lib\]: Problem occoured adding ImmersiveEngineering handler/,
