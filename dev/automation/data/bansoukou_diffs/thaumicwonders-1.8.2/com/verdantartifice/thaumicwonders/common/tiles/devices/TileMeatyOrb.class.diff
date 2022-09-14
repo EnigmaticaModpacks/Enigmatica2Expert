@@ -1,0 +1,41 @@
+diff --git "a/~bansoukou_unpatched\\thaumicwonders-1.8.2\\com\\verdantartifice\\thaumicwonders\\common\\tiles\\devices\\TileMeatyOrb.java" "b/bansoukou\\thaumicwonders-1.8.2\\com\\verdantartifice\\thaumicwonders\\common\\tiles\\devices\\TileMeatyOrb.java"
+index 19d594f4..3f7dc1fc 100644
+--- "a/~bansoukou_unpatched\\thaumicwonders-1.8.2\\com\\verdantartifice\\thaumicwonders\\common\\tiles\\devices\\TileMeatyOrb.java"
++++ "b/bansoukou\\thaumicwonders-1.8.2\\com\\verdantartifice\\thaumicwonders\\common\\tiles\\devices\\TileMeatyOrb.java"
+@@ -14,8 +14,10 @@
+  *  net.minecraft.tileentity.TileEntity
+  *  net.minecraft.util.EnumFacing
+  *  net.minecraft.util.ITickable
++ *  net.minecraft.util.NonNullList
+  *  net.minecraft.util.math.BlockPos
+  *  net.minecraft.world.World
++ *  net.minecraftforge.oredict.OreDictionary
+  *  thaumcraft.api.ThaumcraftApiHelper
+  *  thaumcraft.api.aspects.Aspect
+  *  thaumcraft.api.aspects.AspectList
+@@ -42,8 +44,10 @@ import net.minecraft.nbt.NBTTagCompound;
+ import net.minecraft.tileentity.TileEntity;
+ import net.minecraft.util.EnumFacing;
+ import net.minecraft.util.ITickable;
++import net.minecraft.util.NonNullList;
+ import net.minecraft.util.math.BlockPos;
+ import net.minecraft.world.World;
++import net.minecraftforge.oredict.OreDictionary;
+ import thaumcraft.api.ThaumcraftApiHelper;
+ import thaumcraft.api.aspects.Aspect;
+ import thaumcraft.api.aspects.AspectList;
+@@ -91,11 +95,12 @@ ITickable {
+             this.fill();
+         }
+         if (!this.field_145850_b.field_72995_K && this.activeCounter > 0) {
+-            MeatEntry entry = (MeatEntry)RIC.chooseOnWeight(meats);
++            NonNullList list = OreDictionary.getOres((String)"listAllmeatraw", (boolean)false);
++            ItemStack entry = (ItemStack)list.get(this.field_145850_b.field_73012_v.nextInt(list.size()));
+             if (entry != null) {
+                 double x = (double)this.field_174879_c.func_177958_n() + 0.5 + 32.0 * (this.field_145850_b.field_73012_v.nextDouble() - this.field_145850_b.field_73012_v.nextDouble());
+                 double z = (double)this.field_174879_c.func_177952_p() + 0.5 + 32.0 * (this.field_145850_b.field_73012_v.nextDouble() - this.field_145850_b.field_73012_v.nextDouble());
+-                this.field_145850_b.func_72838_d((Entity)new EntityItem(this.field_145850_b, x, (double)this.field_145850_b.func_72940_L(), z, entry.itemStack.func_77946_l()));
++                this.field_145850_b.func_72838_d((Entity)new EntityItem(this.field_145850_b, x, (double)this.field_145850_b.func_72940_L(), z, entry.func_77946_l()));
+             }
+             --this.activeCounter;
+         }

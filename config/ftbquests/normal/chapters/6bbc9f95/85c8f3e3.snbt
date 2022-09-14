@@ -1,0 +1,24 @@
+{
+	x: 6.8d,
+	y: 10.7d,
+	text: [
+		"Meaty orb spawn 300 random raw meat"
+	],
+	dependencies: [
+		"38a388cd"
+	],
+	tasks: [{
+		uid: "1c5ef9ff",
+		type: "item",
+		items: [{
+			item: "thaumicwonders:meaty_orb"
+		}]
+	}],
+	rewards: [{
+		uid: "bccad2fb",
+		type: "choice",
+		title: "Any meat",
+		icon: "tconevo:edible",
+		table: 131
+	}]
+}
