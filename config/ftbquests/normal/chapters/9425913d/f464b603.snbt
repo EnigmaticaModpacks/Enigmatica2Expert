@@ -1,0 +1,33 @@
+{
+	x: 14.6d,
+	y: 3.8333333333333335d,
+	shape: "square",
+	text: [
+		"The maximum number of §lloaded chunks§r through FTBUtilities increases.",
+		"Your name becomes §b§lAqua§r.",
+		"",
+		"Max claimed chunks: §6200§r",
+		"Max loaded chunks:   §620§r"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"5672d99b",
+		"bd7fc30c",
+		"cabe63d2",
+		"1bd15ee4",
+		"d1308656",
+		"48f0d63f"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "6c0a7a2b",
+		type: "checkmark",
+		title: "Conflux III"
+	}],
+	rewards: [{
+		uid: "70b903ac",
+		type: "command",
+		title: "Give next Conflux tier role",
+		command: "/rank add @p conflux_iii"
+	}]
+}
