@@ -3,8 +3,9 @@ import crafttweaker.item.IIngredient;
 
 #modloaded potioncore
 
-# Remove erroring recipes
-brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "potioncore:extension"}), <minecraft:redstone>);
+//! Using brewing.removeRecipe() causing make all recipes with gunpowder turn into Splash Potion Of Doom
+// # Remove erroring recipes
+// brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "potioncore:extension"}), <minecraft:redstone>);
 
 # Potioncore gives ability to jump incredeble hight
 # by holding jump key after eating [Ironberries].
@@ -14,11 +15,6 @@ events.onEntityLivingUseItemFinish(function(e as crafttweaker.event.EntityLiving
   if(!e.isPlayer || e.player.world.isRemote() || e.item.definition.id != "rustic:ironberries") return;
   e.player.removePotionEffect(<potion:minecraft:jump_boost>);
 });
-
-static gunPowder as IItemStack = <minecraft:gunpowder>;
-static dragonsBreath as IItemStack = <minecraft:dragon_breath>;
-static glowstone as IItemStack = <minecraft:glowstone_dust>;
-static redstone as IItemStack = <minecraft:redstone>;
 
 val fermentedSpiderEye as IItemStack = <minecraft:fermented_spider_eye>;
 val awkward = "minecraft:awkward";
@@ -220,10 +216,10 @@ addBrewWithUpgrades(
   awkward, <minecraft:brown_mushroom>, "potioncore:perplexity",
   null, "potioncore:long_perplexity"
 );
-addBrewWithUpgrades(
-  awkward, <biomesoplenty:fleshchunk>, "potioncore:extension",
-  "potioncore:strong_extension", "potioncore:long_extension"
-);
+// addBrewWithUpgrades(
+//   awkward, <biomesoplenty:fleshchunk>, "potioncore:extension",
+//   "potioncore:strong_extension", "potioncore:long_extension"
+// );
 addBrewWithUpgrades(
   awkward, <iceandfire:pixie_dust>, "potioncore:bless",
   "potioncore:strong_bless", null
@@ -281,8 +277,8 @@ function addBrewWithConversions(basePotionName as string,
                                 potionName as string) {
   addBrew(basePotionName, ingredient, potionName);
   
-  brewing.addBrew(asPotion(potionName), gunPowder, asSplashPotion(potionName));
-  brewing.addBrew(asSplashPotion(potionName), dragonsBreath, asLingeringPotion(potionName));
+  brewing.addBrew(asPotion(potionName), <minecraft:gunpowder>, asSplashPotion(potionName));
+  brewing.addBrew(asSplashPotion(potionName), <minecraft:dragon_breath>, asLingeringPotion(potionName));
 }
 
 # adds all recipes for a potion, splash potion and lingering potion
@@ -298,12 +294,12 @@ function addBrewWithUpgrades(basePotionName as string,
 
   # add strengthened recipes
   if (!isNull(strongPotionName)) {
-    addBrewWithConversions(potionName, glowstone, strongPotionName);
+    addBrewWithConversions(potionName, <minecraft:glowstone_dust>, strongPotionName);
   }
 
   # add lengthened recipes
   if (!isNull(longPotionName)) {
-    addBrewWithConversions(potionName, redstone, longPotionName);
+    addBrewWithConversions(potionName, <jaopca:item_dusttinyredstone>, longPotionName);
   }
 }
 
