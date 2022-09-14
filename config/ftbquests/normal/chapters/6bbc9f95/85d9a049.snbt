@@ -9,7 +9,11 @@
 	x: 11.5d,
 	y: 4.166666666666666d,
 	text: [
-		"{bq.quest673.desc}"
+		"Note:",
+		"",
+		"In Skyblock mode golems struggle to break blocks.",
+		"",
+		"Use them in Compact Machine or Spectre instead."
 	],
 	dependencies: [
 		"1036e76c"
