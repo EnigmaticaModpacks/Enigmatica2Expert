@@ -13,7 +13,18 @@
 		uid: "0cc3f30c",
 		type: "item",
 		items: [{
-			item: "eyeofdragons:eye_of_firedragon"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any eyeOfDragon"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "eyeOfDragon"
+				}
+			}
 		}],
 		ignore_nbt: 1b
 	}],

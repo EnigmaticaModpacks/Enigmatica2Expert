@@ -1,0 +1,24 @@
+{
+	x: 4.8d,
+	y: -1.2d,
+	text: [
+		"Animania's pig should be in any Forest, over Grass block and hungry.",
+		"Once in minute it randomly would get truffles."
+	],
+	dependencies: [
+		"dcb947b4"
+	],
+	tasks: [{
+		uid: "3d9e7f7b",
+		type: "item",
+		items: [{
+			item: "animania:truffle"
+		}]
+	}],
+	rewards: [{
+		uid: "d86fdf4f",
+		type: "item",
+		item: "animania:truffle",
+		count: 12
+	}]
+}

@@ -18,70 +18,9 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "ae89baa2",
+		uid: "2c5c59e3",
 		type: "item",
-		item: {
-			id: "engineersdecor:labeled_crate",
-			tag: {
-				inventory: {
-					Items: [{
-						Slot: 0b,
-						id: "engineersdecor:labeled_crate",
-						Count: 1b,
-						Damage: 0s,
-						tag: {
-							inventory: {
-								Items: [{
-									Slot: 0b,
-									id: "engineersdecor:labeled_crate",
-									Count: 1b,
-									Damage: 0s,
-									tag: {
-										inventory: {
-											Items: [{
-												Slot: 0b,
-												id: "engineersdecor:labeled_crate",
-												Count: 1b,
-												Damage: 0s,
-												tag: {
-													inventory: {
-														Items: [{
-															Slot: 0b,
-															id: "engineersdecor:labeled_crate",
-															Count: 1b,
-															Damage: 0s,
-															tag: {
-																inventory: {
-																	Items: [{
-																		Slot: 0b,
-																		id: "engineersdecor:labeled_crate",
-																		Count: 1b,
-																		Damage: 0s,
-																		tag: {
-																			inventory: {
-																				Items: [{
-																					Slot: 0b,
-																					id: "engineersdecor:labeled_crate",
-																					Count: 1b,
-																					Damage: 0s
-																				}]
-																			}
-																		}
-																	}]
-																}
-															}
-														}]
-													}
-												}
-											}]
-										}
-									}
-								}]
-							}
-						}
-					}]
-				}
-			}
-		}
+		item: "engineersdecor:labeled_crate",
+		count: 2
 	}]
 }

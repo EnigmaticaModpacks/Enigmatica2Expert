@@ -2,7 +2,7 @@
 	title: "{bq.quest842.name}",
 	icon: "appliedenergistics2:part 1 360",
 	x: 2.5d,
-	y: -0.5d,
+	y: -1.9d,
 	text: [
 		"{bq.quest842.desc}"
 	],

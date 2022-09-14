@@ -13,7 +13,18 @@
 		uid: "7406acf6",
 		type: "item",
 		items: [{
-			item: "animania:cooked_prime_beef"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any primeMeatCooked"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "primeMeatCooked"
+				}
+			}
 		}],
 		ignore_nbt: 1b
 	}],

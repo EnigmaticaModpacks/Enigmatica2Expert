@@ -1,0 +1,180 @@
+{
+	title: "Any meat",
+	loot_size: 1,
+	rewards: [{
+		item: "animania:raw_chevon",
+		count: 64
+	},
+	{
+		item: "animania:raw_frog_legs",
+		count: 64
+	},
+	{
+		item: "animania:raw_horse",
+		count: 64
+	},
+	{
+		item: "animania:raw_peacock",
+		count: 64
+	},
+	{
+		item: "animania:raw_prime_beef",
+		count: 64
+	},
+	{
+		item: "animania:raw_prime_chevon",
+		count: 64
+	},
+	{
+		item: "animania:raw_prime_chicken",
+		count: 64
+	},
+	{
+		item: "animania:raw_prime_mutton",
+		count: 64
+	},
+	{
+		item: "animania:raw_prime_peacock",
+		count: 64
+	},
+	{
+		item: "animania:raw_prime_pork",
+		count: 64
+	},
+	{
+		item: "animania:raw_prime_rabbit",
+		count: 64
+	},
+	{
+		item: "animania:raw_prime_steak",
+		count: 64
+	},
+	{
+		item: "betteranimalsplus:pheasantraw",
+		count: 64
+	},
+	{
+		item: "betteranimalsplus:turkey_leg_raw",
+		count: 64
+	},
+	{
+		item: "betteranimalsplus:turkey_raw",
+		count: 64
+	},
+	{
+		item: "betteranimalsplus:venisonraw",
+		count: 64
+	},
+	{
+		item: "harvestcraft:duckrawitem",
+		count: 64
+	},
+	{
+		item: "harvestcraft:groundbeefitem",
+		count: 64
+	},
+	{
+		item: "harvestcraft:groundchickenitem",
+		count: 64
+	},
+	{
+		item: "harvestcraft:groundduckitem",
+		count: 64
+	},
+	{
+		item: "harvestcraft:groundfishitem",
+		count: 64
+	},
+	{
+		item: "harvestcraft:groundmuttonitem",
+		count: 64
+	},
+	{
+		item: "harvestcraft:groundporkitem",
+		count: 64
+	},
+	{
+		item: "harvestcraft:groundrabbititem",
+		count: 64
+	},
+	{
+		item: "harvestcraft:groundturkeyitem",
+		count: 64
+	},
+	{
+		item: "harvestcraft:groundvenisonitem",
+		count: 64
+	},
+	{
+		item: "harvestcraft:grubitem",
+		count: 64
+	},
+	{
+		item: "harvestcraft:rawtofabbititem",
+		count: 64
+	},
+	{
+		item: "harvestcraft:rawtofaconitem",
+		count: 64
+	},
+	{
+		item: "harvestcraft:rawtofeakitem",
+		count: 64
+	},
+	{
+		item: "harvestcraft:rawtofenisonitem",
+		count: 64
+	},
+	{
+		item: "harvestcraft:rawtofickenitem",
+		count: 64
+	},
+	{
+		item: "harvestcraft:rawtofuduckitem",
+		count: 64
+	},
+	{
+		item: "harvestcraft:rawtofurkeyitem",
+		count: 64
+	},
+	{
+		item: "harvestcraft:rawtofuttonitem",
+		count: 64
+	},
+	{
+		item: "harvestcraft:turkeyrawitem",
+		count: 64
+	},
+	{
+		item: "harvestcraft:venisonrawitem",
+		count: 64
+	},
+	{
+		item: "minecraft:beef",
+		count: 64
+	},
+	{
+		item: "minecraft:chicken",
+		count: 64
+	},
+	{
+		item: "minecraft:mutton",
+		count: 64
+	},
+	{
+		item: "minecraft:porkchop",
+		count: 64
+	},
+	{
+		item: "minecraft:rabbit",
+		count: 64
+	},
+	{
+		item: "rats:raw_rat",
+		count: 64
+	},
+	{
+		item: "tconevo:edible",
+		count: 64
+	}]
+}

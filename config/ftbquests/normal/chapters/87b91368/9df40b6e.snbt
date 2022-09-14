@@ -13,7 +13,18 @@
 		uid: "207903ea",
 		type: "item",
 		items: [{
-			item: "animania:blue_peacock_feather"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any peacockFeathers"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "peacockFeathers"
+				}
+			}
 		}],
 		ignore_nbt: 1b
 	}],

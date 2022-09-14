@@ -2,7 +2,7 @@
 	title: "{bq.quest835.name}",
 	icon: "appliedenergistics2:drive",
 	x: 1.0d,
-	y: -2.0d,
+	y: -3.5d,
 	text: [
 		"{bq.quest835.desc}"
 	],

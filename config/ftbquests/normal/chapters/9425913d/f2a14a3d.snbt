@@ -1,8 +1,8 @@
 {
 	title: "{bq.quest941.name}",
 	icon: "endreborn:armour_chestplate_dragon",
-	x: 12.0d,
-	y: 1.8333333333333333d,
+	x: 12.066666666666666d,
+	y: 1.7333333333333334d,
 	text: [
 		"{bq.quest941.desc}"
 	],

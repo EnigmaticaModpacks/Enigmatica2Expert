@@ -1,7 +1,7 @@
 {
 	title: "{bq.quest838.name}",
 	icon: "appliedenergistics2:molecular_assembler",
-	x: -2.0d,
+	x: -3.5d,
 	y: 1.0d,
 	text: [
 		"{bq.quest838.desc}"

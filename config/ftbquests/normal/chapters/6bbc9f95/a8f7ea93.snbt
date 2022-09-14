@@ -1,0 +1,23 @@
+{
+	x: 6.6d,
+	y: 4.9d,
+	text: [
+		"Cheaper then regular chest but still can be used in crafts."
+	],
+	dependencies: [
+		"2e8e4ce7"
+	],
+	tasks: [{
+		uid: "026f6ddb",
+		type: "item",
+		items: [{
+			item: "thaumcraft:hungry_chest"
+		}]
+	}],
+	rewards: [{
+		uid: "15ba9196",
+		type: "item",
+		item: "thaumcraft:curio 1 1",
+		count: 10
+	}]
+}

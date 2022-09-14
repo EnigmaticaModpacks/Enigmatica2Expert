@@ -1,7 +1,7 @@
 {
 	title: "{bq.quest841.name}",
 	icon: "appliedenergistics2:material 1 42",
-	x: 5.5d,
+	x: 4.0d,
 	y: -0.5d,
 	text: [
 		"{bq.quest841.desc}"

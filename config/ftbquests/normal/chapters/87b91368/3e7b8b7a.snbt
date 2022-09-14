@@ -13,7 +13,18 @@
 		uid: "dc1dda9a",
 		type: "item",
 		items: [{
-			item: "iceandfire:myrmex_desert_egg 1 4"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any myrmexEgg"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "myrmexEgg"
+				}
+			}
 		}]
 	}],
 	rewards: [{

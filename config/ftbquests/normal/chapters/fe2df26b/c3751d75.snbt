@@ -1,7 +1,7 @@
 {
 	title: "{bq.quest836.name}",
 	icon: "appliedenergistics2:interface",
-	x: -0.5d,
+	x: -2.0d,
 	y: 1.0d,
 	text: [
 		"{bq.quest836.desc}"

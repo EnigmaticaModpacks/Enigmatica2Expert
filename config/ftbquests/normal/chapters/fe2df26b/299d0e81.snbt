@@ -7,8 +7,8 @@
 			internalCurrentPower: 1600000.0d
 		}
 	},
-	x: 4.0d,
-	y: -2.0d,
+	x: 5.4d,
+	y: -1.9d,
 	text: [
 		"{bq.quest857.desc}"
 	],

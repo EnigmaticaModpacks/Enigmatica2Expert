@@ -6,5 +6,49 @@
 	],
 	always_invisible: false,
 	group: 0,
-	default_quest_shape: ""
+	default_quest_shape: "",
+	images: [{
+		x: 6.5d,
+		y: 0.5d,
+		width: 18.0d,
+		height: 1.0d,
+		rotation: 0.0d,
+		image: "modpack:textures/gui/black_square_30_percent.png",
+		hover: [],
+		click: "",
+		dev: false
+	},
+	{
+		x: 6.5d,
+		y: 2.2d,
+		width: 18.0d,
+		height: 1.0d,
+		rotation: 0.0d,
+		image: "modpack:textures/gui/black_square_30_percent.png",
+		hover: [],
+		click: "",
+		dev: false
+	},
+	{
+		x: 6.5d,
+		y: 3.8333333333333335d,
+		width: 18.0d,
+		height: 1.0d,
+		rotation: 0.0d,
+		image: "modpack:textures/gui/black_square_30_percent.png",
+		hover: [],
+		click: "",
+		dev: false
+	},
+	{
+		x: 6.5d,
+		y: 5.5d,
+		width: 18.0d,
+		height: 1.0d,
+		rotation: 0.0d,
+		image: "modpack:textures/gui/black_square_30_percent.png",
+		hover: [],
+		click: "",
+		dev: false
+	}]
 }

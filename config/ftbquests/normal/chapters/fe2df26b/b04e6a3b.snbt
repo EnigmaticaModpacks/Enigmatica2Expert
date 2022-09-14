@@ -2,7 +2,7 @@
 	title: "{bq.quest856.name}",
 	icon: "rf-capability-adapter:aecapabilityadapter",
 	x: -0.5d,
-	y: -2.0d,
+	y: -0.5d,
 	text: [
 		"{bq.quest856.desc}"
 	],

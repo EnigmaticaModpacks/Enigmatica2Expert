@@ -1,8 +1,8 @@
 {
 	title: "{bq.quest840.name}",
 	icon: "appliedenergistics2:wireless_access_point",
-	x: 4.0d,
-	y: -0.5d,
+	x: 4.1d,
+	y: -1.9d,
 	text: [
 		"{bq.quest840.desc}"
 	],

@@ -1,0 +1,22 @@
+{
+	x: 1.0d,
+	y: -0.5d,
+	text: [
+		"Cheapest Storage Cell container"
+	],
+	dependencies: [
+		"2e632fad"
+	],
+	tasks: [{
+		uid: "d45f56c2",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:chest"
+		}]
+	}],
+	rewards: [{
+		uid: "05874e23",
+		type: "loot",
+		table: 1
+	}]
+}

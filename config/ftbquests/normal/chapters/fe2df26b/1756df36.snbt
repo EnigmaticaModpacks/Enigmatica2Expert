@@ -2,7 +2,7 @@
 	title: "{bq.quest845.name}",
 	icon: "appliedenergistics2:crafting_accelerator",
 	x: -3.5d,
-	y: 1.0d,
+	y: -0.5d,
 	text: [
 		"{bq.quest845.desc}"
 	],

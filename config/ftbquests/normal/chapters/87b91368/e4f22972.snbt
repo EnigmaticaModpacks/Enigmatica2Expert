@@ -13,7 +13,18 @@
 		uid: "7816f3bd",
 		type: "item",
 		items: [{
-			item: "animania:peacock_egg_blue"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any animaniaEggs"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "animaniaEggs"
+				}
+			}
 		}]
 	}],
 	rewards: [{
