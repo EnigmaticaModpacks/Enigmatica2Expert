@@ -1,0 +1,22 @@
+{
+	title: "Improved Coke Oven",
+	icon: "immersivetech:stone_decoration",
+	x: -2.6999999999999997d,
+	y: 0.3d,
+	text: [
+		"Improved coke oven is disabled, can't be formed."
+	],
+	dependencies: [
+		"bf09a7ad"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "16313573",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "9e5ca1a2",
+		type: "xp_levels",
+		xp_levels: 3
+	}]
+}
