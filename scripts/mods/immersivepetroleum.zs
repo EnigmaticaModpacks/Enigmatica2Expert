@@ -1,5 +1,9 @@
-import mods.immersivepetroleum.Reservoir;
+import mods.TweakedPetroleum.TweakedReservoir;
+import mods.TweakedPetroleum.TweakedReservoir.registerReservoir;
+import mods.TweakedPetroleum.TweakedReservoir.registerReservoirWithDrainChance;
+import mods.TweakedPetroleum.TweakedGasReservoir.registerGasReservoir;
 import crafttweaker.liquid.ILiquidStack;
+import mod.mekanism.gas.IGasStack;
 
 /*
 
@@ -31,36 +35,10 @@ public static void registerReservoir(String name, ILiquidStack fluid, int minSiz
 		Reservoir powerTier must be at least 0 (A RuntimeException can occur if handled incorrectly)
 */
 
-static powerTiers as int[] = [
-	1024,
-	10240,
-	1024000,
-	102400000,
-] as int[];
-
-Reservoir.registerPowerUsage(0,      16000, powerTiers[0]);
-Reservoir.registerPowerUsage(1,     160000, powerTiers[1]);
-Reservoir.registerPowerUsage(2,   16000000, powerTiers[2]);
-Reservoir.registerPowerUsage(3, 1600000000, powerTiers[3]);
-
-function regReserviour(
-	name as string,
-	liqud as ILiquidStack,
-	minSize as int,
-	maxSize as int,
-	replenishRate as int,
-	pumpSpeed as int,
-	weight as int,
-	powerTier as int,
-	dimBlacklist as int[],
-	dimWhitelist as int[],
-	biomeBlacklist as string[],
-	biomeWhitelist as string[]
-){
-  Reservoir.registerReservoir           (name, liqud, minSize, maxSize, replenishRate, pumpSpeed, weight, powerTier            , dimBlacklist, dimWhitelist, biomeBlacklist, biomeWhitelist);
-	scripts.jei.mod.immersivepetroleum.add(name, liqud, minSize, maxSize, replenishRate, pumpSpeed, weight, powerTiers[powerTier], dimBlacklist, dimWhitelist, biomeBlacklist, biomeWhitelist);
-}
-
+TweakedReservoir.registerPowerUsage(0,      16000,      1024);
+TweakedReservoir.registerPowerUsage(1,     160000,     10240);
+TweakedReservoir.registerPowerUsage(2,   16000000,   1024000);
+TweakedReservoir.registerPowerUsage(3, 1600000000, 102400000);
 
 //Max int is 2_147_483_647
 val maxInt = 2147480000;
@@ -72,13 +50,13 @@ val III = 2;
 val IV = 3;
 
 # Vanila
-regReserviour("aquifer"                            , <liquid:water>   , 5000000 , 10000000, 6  , 25  , 30, I, [], [0,1,7,-11325] , [], []);
-regReserviour("oil"                                , <liquid:oil>     , 2500000 , 15000000, 6  , 25  , 40, I, [], [0,7,-11325]   , [], []);
-regReserviour("lava"                               , <liquid:lava>    , 250000  , 1000000 , 0  , 25  , 30, I, [], [0,-1,7,-11325], [], []);
-regReserviour("Desert Oil Reservoir"               , <liquid:oil>     , 15000000, 30000000, 25 , 50  , 5 , I, [], [0]            , [], ["SANDY","HOT"]);
-regReserviour("Deep Ocean Oil Reservoir"           , <liquid:oil>     , 15000000, 30000000, 25 , 50  , 5 , I, [], [0]            , [], ["OCEAN","WET"]);
-regReserviour("Low Pressure Magma Chamber (Nether)", <liquid:lava>    , 500000  , 1500000 , 500, 1500, 5 , I, [], [-1]           , [], []);
-regReserviour("Molten Tungsten Reservoir (End)"    , <liquid:tungsten>, 720000  , 1440000 , 0  , 4   , 10, I, [], [1]            , [], []);
+registerReservoir("aquifer"                            , <liquid:water>   , 5000000 , 10000000, 6  , 25  , 30, I, [], [0,1,7,-11325] , [], []);
+registerReservoir("oil"                                , <liquid:oil>     , 2500000 , 15000000, 6  , 25  , 40, I, [], [0,7,-11325]   , [], []);
+registerReservoir("lava"                               , <liquid:lava>    , 250000  , 1000000 , 0  , 25  , 30, I, [], [0,-1,7,-11325], [], []);
+registerReservoir("Desert Oil Reservoir"               , <liquid:oil>     , 15000000, 30000000, 25 , 50  , 5 , I, [], [0]            , [], ["SANDY"]);
+registerReservoir("Deep Ocean Oil Reservoir"           , <liquid:oil>     , 15000000, 30000000, 25 , 50  , 5 , I, [], [0]            , [], ["OCEAN"]);
+registerReservoir("Low Pressure Magma Chamber (Nether)", <liquid:lava>    , 500000  , 1500000 , 500, 1500, 5 , I, [], [-1]           , [], []);
+registerReservoir("Molten Tungsten Reservoir (End)"    , <liquid:tungsten>, 720000  , 1440000 , 0  , 4   , 10, I, [], [1]            , [], []);
 
 
 # Deep Dark ID=-11325
@@ -86,10 +64,13 @@ regReserviour("Molten Tungsten Reservoir (End)"    , <liquid:tungsten>, 720000  
 	Black quartz ore 2.6%
 */
 
-regReserviour("Dark Steel Reservoir (Deep Dark)", <liquid:dark_steel>, 12400000, 16400000, 0, 100, 10, I, [], [-11325], [], []);
+registerReservoir("Dark Steel Reservoir (Deep Dark)", <liquid:dark_steel>, 12400000, 16400000, 0, 100, 10, I, [], [-11325], [], []);
 
 # Twilight Forest ID=7
-regReserviour("Flux Goo Reservoir (Twilight Forest)", <liquid:flux_goo>, 35000, 750000, 0, 50, 20, I, [], [7], [], []);
+registerReservoir("Flux Goo Reservoir (Twilight Forest)", <liquid:flux_goo>, 35000, 750000, 0, 50, 20, I, [], [7], [], []);
+
+# Vast epltines ID=14676
+registerReservoir("Flux Goo Reservoir (Vast Epltines)", <liquid:flux_goo>, 35000, 750000, 0, 50, 20, I, [], [14676], [], []);
 
 # --------------------------
 # Star Sol
@@ -99,8 +80,8 @@ regReserviour("Flux Goo Reservoir (Twilight Forest)", <liquid:flux_goo>, 35000, 
 /*
 	Helium3
 */
+registerReservoir("Helium 3 Reservoir (Luna)", <liquid:helium3>, 2000000000, maxInt, 15, 40, 30, I, [], [100], [], []);
 
-regReserviour("Helium 3 Reservoir (Luna)", <liquid:helium3>, 2000000000, maxInt, 15, 40, 30, I, [], [100], [], []);
 # Mercury ID=101
 	/*
 		aluminium 11%
@@ -109,8 +90,8 @@ regReserviour("Helium 3 Reservoir (Luna)", <liquid:helium3>, 2000000000, maxInt,
 		lava
 		White sand
 */
-
-regReserviour("Liquid Mica (Mercury)", <liquid:mica>, 14400, 72000, 0, 10, 30, I, [], [101], [], []);
+registerReservoir("Liquid Mica (Mercury)"                     , <liquid:mica>        , 14400     , 72000 , 0, 10, 30, I , [], [101], [], []);
+registerGasReservoir("Aluminium Slurry Reservoir (Terra Nova)", <gas:slurryAluminium>, 1228800000, maxInt, 0, 4 , 30, II, [], [112], [], []);
 
 # Venus ID=102
 	/*
@@ -118,16 +99,19 @@ regReserviour("Liquid Mica (Mercury)", <liquid:mica>, 14400, 72000, 0, 10, 30, I
 		Pyrotheum
 		volcanic island
 */
+registerReservoir("Steam Reservoir (Venus)"         , <liquid:steam>    , 2000000000, maxInt, 0 , 800, 30,  I, [], [102], [], []);
+registerReservoir("Pyrotheum Reservoir (Venus)"     , <liquid:pyrotheum>, 1228800000, maxInt, 0 , 200, 30,  I, [], [102], [], []);
+registerReservoir("Hot NaK Reservoir (Venus)"       , <liquid:nak_hot>  , 250000    , 650000, 20, 200, 30,  I, [], [102], [], []);
+registerGasReservoir("Gold Slurry Reservoir (Venus)", <gas:gold>        , 1228800000, maxInt, 0 , 4  , 30, II, [], [112], [], []);	
 
-regReserviour("Steam Reservoir (Venus)", <liquid:steam>, 2000000000, maxInt, 0, 800, 30, I, [], [102], [], []);
-regReserviour("Pyrotheum Reservoir (Venus)", <liquid:pyrotheum>, 1228800000, maxInt, 0, 200, 30, I, [], [102], [], []);
-regReserviour("Hot NaK Reservoir (Venus)", <liquid:nak_hot>, 250000, 650000, 20, 200, 30, I, [], [102], [], []);	
 # Mars ID=103
 	/*
 		iron ore 12%
 		ender draconium 7.4%
 		oxedized feric
 */
+registerGasReservoir("Sxygen Reservoir (Mars)"     , <gas:oxygen>, 1228800000, maxInt, 0 , 4  , 30, II, [], [103], [], []);
+registerGasReservoir("Iron Slurry Reservoir (Mars)", <gas:iron>  , 1228800000, maxInt, 0 , 4  , 30, II, [], [103], [], []);	
 
 # Jupiter ID=104
 		//Is not reachable with tpx command
@@ -137,27 +121,27 @@ regReserviour("Hot NaK Reservoir (Venus)", <liquid:nak_hot>, 250000, 650000, 20,
 	/*
 		ender io metals
 */
-regReserviour("Molten Redstone Alloy Reservoir (IO)"              , <liquid:redstone_alloy>        , 1228800000, maxInt  , 0, 200, 50, II, [], [105], [], []);
-regReserviour("Molten Pulsating Iron Reservoir (IO)"              , <liquid:pulsating_iron>        , 1228800000, maxInt  , 0, 200, 50, II, [], [105], [], []);
-regReserviour("Molten Electrical Steel Reservoir (IO)"            , <liquid:electrical_steel>      , 1228800000, maxInt  , 0, 200, 50, II, [], [105], [], []);
-regReserviour("Molten Soularium Reservoir (IO)"                   , <liquid:soularium>             , 1228800000, maxInt  , 0, 200, 50, II, [], [105], [], []);
-regReserviour("Dark Steel Reservoir (IO)"                         , <liquid:dark_steel>            , 1228800000, maxInt  , 0, 200, 45, II, [], [105], [], []);
-regReserviour("Molten End Steel Reservoir (IO)"                   , <liquid:end_steel>             , 1228800000, maxInt  , 0, 200, 40, II, [], [105], [], []);
-regReserviour("Molten Conductive Iron Alloy Reservoir (IO)"       , <liquid:conductive_iron>       , 11520000  , 14400000, 0, 144, 35, II, [], [105], [], []);
-regReserviour("Molten Energetic Alloy Reservoir (IO)"             , <liquid:energetic_alloy>       , 8640000   , 11520000, 0, 144, 30, II, [], [105], [], []);
-regReserviour("Molten Vibrant Alloy Reservoir (IO)"               , <liquid:vibrant_alloy>         , 5760000   , 8640000 , 0, 20 , 25, II, [], [105], [], []);
-regReserviour("Molten Crystalline Alloy Reservoir (IO)"           , <liquid:crystalline_alloy>     , 1440000   , 2880000 , 0, 20 , 10, II, [], [105], [], []);
-regReserviour("Molten Crystalline Pink Slime Alloy Reservoir (IO)", <liquid:crystalline_pink_slime>, 720000    , 1440000 , 0, 20 , 6 , II, [], [105], [], []);
-regReserviour("Molten Melodic Alloy Reservoir (IO)"               , <liquid:melodic_alloy>         , 288000    , 720000  , 0, 20 , 2 , II, [], [105], [], []);
-
+registerReservoir("Molten Redstone Alloy Reservoir (IO)"              , <liquid:redstone_alloy>        , 1228800000, maxInt  , 0, 200, 50, II, [], [105], [], []);
+registerReservoir("Molten Pulsating Iron Reservoir (IO)"              , <liquid:pulsating_iron>        , 1228800000, maxInt  , 0, 200, 50, II, [], [105], [], []);
+registerReservoir("Molten Electrical Steel Reservoir (IO)"            , <liquid:electrical_steel>      , 1228800000, maxInt  , 0, 200, 50, II, [], [105], [], []);
+registerReservoir("Molten Soularium Reservoir (IO)"                   , <liquid:soularium>             , 1228800000, maxInt  , 0, 200, 50, II, [], [105], [], []);
+registerReservoir("Dark Steel Reservoir (IO)"                         , <liquid:dark_steel>            , 1228800000, maxInt  , 0, 200, 45, II, [], [105], [], []);
+registerReservoir("Molten End Steel Reservoir (IO)"                   , <liquid:end_steel>             , 1228800000, maxInt  , 0, 200, 40, II, [], [105], [], []);
+registerReservoir("Molten Conductive Iron Alloy Reservoir (IO)"       , <liquid:conductive_iron>       , 11520000  , 14400000, 0, 144, 35, II, [], [105], [], []);
+registerReservoir("Molten Energetic Alloy Reservoir (IO)"             , <liquid:energetic_alloy>       , 8640000   , 11520000, 0, 144, 30, II, [], [105], [], []);
+registerReservoir("Molten Vibrant Alloy Reservoir (IO)"               , <liquid:vibrant_alloy>         , 5760000   , 8640000 , 0, 20 , 25, II, [], [105], [], []);
+registerReservoir("Molten Crystalline Alloy Reservoir (IO)"           , <liquid:crystalline_alloy>     , 1440000   , 2880000 , 0, 20 , 10, II, [], [105], [], []);
+registerReservoir("Molten Crystalline Pink Slime Alloy Reservoir (IO)", <liquid:crystalline_pink_slime>, 720000    , 1440000 , 0, 20 , 6 , II, [], [105], [], []);
+registerReservoir("Molten Melodic Alloy Reservoir (IO)"               , <liquid:melodic_alloy>         , 288000    , 720000  , 0, 20 , 2 , II, [], [105], [], []);
 
 # Europa ID=106
 	/*
 		Copper ore 14%
 		frozen ocean
 */
+registerGasReservoir("Copper Slurry Reservoir (Europa)"     , <gas:copper>  , 1228800000, maxInt, 0    , 4     , 30, II, [], [106], [], []);
+registerReservoir("High Pressure Aquifer Reservoir (Europa)", <liquid:water>, 1228800000, maxInt, 64000, 128000, 30, II, [], [106], [], []);
 
-regReserviour("High Pressure Aquifer Reservoir (Europa)", <liquid:water>, 1228800000, maxInt, 64000, 128000, 30, II, [], [106], [], []);
 # Saturn ID=107
 		//Is not reachable with tpx command
 
@@ -165,13 +149,12 @@ regReserviour("High Pressure Aquifer Reservoir (Europa)", <liquid:water>, 122880
 	/*
 		Radioactive
 */
-
-regReserviour("Molten FLiBe Salt Solution of Depleted TBU Fluoride Fuel Reservoir (Titan)"    , <liquid:depleted_fuel_tbu_fluoride_flibe>    , 324000    , 453600, 2, 20, 5 , II, [], [108], [], []);
-regReserviour("Molten FLiBe Salt Solution of Depleted LEU-235 Fluoride Fuel Reservoir (Titan)", <liquid:depleted_fuel_leu_235_fluoride_flibe>, 324000    , 453600, 2, 20, 5 , II, [], [108], [], []);
-regReserviour("Magnesium Reservoir (Titan)"                                                   , <liquid:magnesium>                           , 1228800000, maxInt, 0, 4 , 30, II, [], [108], [], []);
-regReserviour("Thorium Reservoir (Titan)"                                                     , <liquid:thorium>                             , 1228800000, maxInt, 0, 4 , 30, II, [], [108], [], []);
-regReserviour("Boron Reservoir (Titan)"                                                       , <liquid:boron>                               , 1228800000, maxInt, 0, 4 , 30, II, [], [108], [], []);
-regReserviour("Lithium Reservoir (Titan)"                                                     , <liquid:lithium>                             , 1228800000, maxInt, 0, 4 , 30, II, [], [108], [], []);
+registerReservoir("Molten FLiBe Salt Solution of Depleted TBU Fluoride Fuel Reservoir (Titan)"    , <liquid:depleted_fuel_tbu_fluoride_flibe>    , 324000    , 453600, 2, 20, 5 , II, [], [108], [], []);
+registerReservoir("Molten FLiBe Salt Solution of Depleted LEU-235 Fluoride Fuel Reservoir (Titan)", <liquid:depleted_fuel_leu_235_fluoride_flibe>, 324000    , 453600, 2, 20, 5 , II, [], [108], [], []);
+registerGasReservoir("Magnesium Reservoir (Titan)"                                                , <gas:slurryMagnesium>                        , 1228800000, maxInt, 0, 4 , 30, II, [], [108], [], []);
+registerGasReservoir("Thorium Reservoir (Titan)"                                                  , <gas:slurryThorium>                          , 1228800000, maxInt, 0, 4 , 30, II, [], [108], [], []);
+registerGasReservoir("Boron Reservoir (Titan)"                                                    , <gas:slurryBoron>                            , 1228800000, maxInt, 0, 4 , 30, II, [], [108], [], []);
+registerGasReservoir("Lithium Reservoir (Titan)"                                                  , <gas:slurryLithium>                          , 1228800000, maxInt, 0, 4 , 30, II, [], [108], [], []);
 			
 
 # Uranus ID=109
@@ -179,7 +162,8 @@ regReserviour("Lithium Reservoir (Titan)"                                       
 		Nickle ore 7.7%
 		Cold
 */
-regReserviour("Liquid Cryotheum Reservoir (Uranus)", <liquid:cryotheum>, 1228800000, maxInt, 0, 200, 30, I, [], [109], [], []);
+registerGasReservoir("Nickel Slurry Reservoir (Uranus)", <gas:slurryNickel>, 1228800000, maxInt, 0, 4  , 30, II, [], [109], [], []);
+registerReservoir("Liquid Cryotheum Reservoir (Uranus)", <liquid:cryotheum>, 1228800000, maxInt, 0, 200, 30,  I, [], [109], [], []);
 
 # Neptune ID=110
 	/*
@@ -188,27 +172,27 @@ regReserviour("Liquid Cryotheum Reservoir (Uranus)", <liquid:cryotheum>, 1228800
 		Crushed Ice
 		Cold
 */
+registerReservoir("Molten Superium Reservoir (Neptune)", <liquid:superium>  , 21600   , 36000   , 0  , 5 , 5 , II, [], [110], [], []);
+registerReservoir("IC2 Coolant Reservoir (Neptune)"    , <liquid:ic2coolant>, 15000000, 30000000, 25 , 50, 30, I , [], [110], [], []);
 
-regReserviour("Molten Superium Reservoir (Neptune)", <liquid:superium>  , 21600   , 36000   , 0  , 5 , 5 , II, [], [110], [], []);
-regReserviour("IC2 Coolant Reservoir (Neptune)"    , <liquid:ic2coolant>, 15000000, 30000000, 25 , 50, 30, I , [], [110], [], []);
 # Star Proxima Centaur
 # Proxima B ID=111
 	/*
 		super cooled ice block
 		emereld 0.16%
 	
-	 */
+*/
+registerReservoir("Nitrogen Reservoir (Proxima B)"                   , <liquid:nitrogen>   , 1228800000, maxInt, 6400, 12800, 30,  I, [], [111], [], []);
+registerReservoir("Helium Reservoir (Proxima B)"                     , <liquid:helium>     , 1228800000, maxInt, 6400, 12800, 30,  I, [], [111], [], []);
+registerReservoir("Molten Terrestrial Artifact Reservoir (Proxima B)", <liquid:terrestrial>, 15000     , 25000 , 0   , 200  , 5 , II, [], [111], [], []);
 
-regReserviour("Nitrogen Reservoir (Proxima B)"                   , <liquid:nitrogen>   , 1228800000, maxInt, 6400, 12800, 30,  I, [], [111], [], []);
-regReserviour("Helium Reservoir (Proxima B)"                     , <liquid:helium>     , 1228800000, maxInt, 6400, 12800, 30,  I, [], [111], [], []);
-regReserviour("Molten Terrestrial Artifact Reservoir (Proxima B)", <liquid:terrestrial>, 15000     , 25000 , 0   , 200  , 5 , II, [], [111], [], []);
 # Terra Nova ID=112
 	/*
 		cobalt ore 0.6%
 		Rutile ore 1.3%
 		cynanite block
 */
-
+registerGasReservoir("Cobalt Slurry Reservoir (Terra Nova)", <gas:slurryCobalt>, 1228800000, maxInt, 0, 4, 30, II, [], [112], [], []);
 
 # Novus ID=113
 	/*
@@ -217,25 +201,25 @@ regReserviour("Molten Terrestrial Artifact Reservoir (Proxima B)", <liquid:terre
 		volcanic
 		hot
 */
+registerReservoir("Low Pressure Steam Reservoir (Novus)", <liquid:low_pressure_steam>, 2000000000, maxInt  , 0  , 800, 30,  I, [], [113], [], []);
+registerReservoir("IC2 Hot Coolant Reservoir (Novus)"   , <liquid:ic2hot_coolant>    , 15000000  , 30000000, 25 , 50 , 30,  I, [], [113], [], []);
+registerReservoir("Enriched Lava Reservoir (Novus)"     , <liquid:enrichedlava>      , 40000     , maxInt  , 0  , 20 , 10, II, [], [113], [], []);
 
-regReserviour("Low Pressure Steam Reservoir (Novus)", <liquid:low_pressure_steam>, 2000000000, maxInt  , 0  , 800, 30,  I, [], [113], [], []);
-regReserviour("IC2 Hot Coolant Reservoir (Novus)"   , <liquid:ic2hot_coolant>    , 15000000  , 30000000, 25 , 50 , 30,  I, [], [113], [], []);
-regReserviour("Enriched Lava Reservoir (Novus)"     , <liquid:enrichedlava>      , 40000     , maxInt  , 0  , 20 , 10, II, [], [113], [], []);
 # Stella ID=114
 	/*
 		Magic
 */
-regReserviour("Flux Goo Reservoir (Stella)", <liquid:flux_goo>, 750000, 1750000, 10, 200, 30, I, [], [114], [], []);
+registerReservoir("Flux Goo Reservoir (Stella)", <liquid:flux_goo>, 750000, 1750000, 10, 200, 30, I, [], [114], [], []);
+
 # Philucka ID=115
 	/*
 		resonant end stone 0.22
 		redstone ore 13.44
 */
+registerReservoir("Resonant Ender Reservoir (Philucka)", <liquid:ender>, 2000000, 4500000, 50, 2000, 30, I, [], [115], [], []);
 
-regReserviour("Resonant Ender Reservoir (Philucka)", <liquid:ender>, 2000000, 4500000, 50, 2000, 30, I, [], [115], [], []);
 # Hubble ID=116
 		//Is not reachable with tpx command
-
 
 
 # Star HD 42176
@@ -247,9 +231,9 @@ regReserviour("Resonant Ender Reservoir (Philucka)", <liquid:ender>, 2000000, 45
 	/*
 		frozen ocean
 */
-
-regReserviour("Energized Glowstone Reservoir (KELT-2ab)"     , <liquid:glowstone>, 2000000   , 4500000, 50     , 2000    , 30,  I, [], [118], [], []);
-regReserviour("Extreme Pressure Aquifer Reservoir (KELT-2ab)", <liquid:water>    , 1800000000, maxInt , 5000000, 10000000, 25, II, [], [118], [], []);
+registerReservoir("Energized Glowstone Reservoir (KELT-2ab)"    	  , <liquid:glowstone>, 2000000   , 4500000, 50     , 2000           , 30,  I, [], [118], [], []);
+registerGasReservoir("Hydrogen Gas Reservoir (KELT-2ab)"              , <gas:hydrogen>    , 1228800000, maxInt , 0      , 4              , 30, II, [], [118], [], []);
+registerReservoirWithDrainChance("Extreme Pressure Aquifer Reservoir (KELT-2ab)", <liquid:water>    , 1800000000, maxInt , 5000000, 10000000, 0.85f, 25, II, [], [118], [], []);
 
 # KELT-3 ID=119
 	/*
@@ -257,7 +241,13 @@ regReserviour("Extreme Pressure Aquifer Reservoir (KELT-2ab)", <liquid:water>   
 		sodium
 		faric sand
 	 
-	 */
+*/
+registerGasReservoir("Sxygen Reservoir (KELT-3)", <gas:oxygen>, 1228800000, maxInt, 0 , 4  , 30, II, [], [103], [], []);
+/*
+<gas:sulfurdioxide>, Sulfur Dioxide
+<gas:sulfurtrioxide>, Sulfur Trioxide
+<gas:sulfuricacid>, Sulfuric Acid
+*/
 
 
 # Star HD 63776
@@ -265,28 +255,28 @@ regReserviour("Extreme Pressure Aquifer Reservoir (KELT-2ab)", <liquid:water>   
 	/*
 		cold
 */
-regReserviour("Hot Spring Water Reservoir (KELT-4ab)", <liquid:hot_spring_water>, 1228800000, maxInt, 1000, 2500, 30, I, [], [120], [], []);
-# KELT-6a ID=121
-/*
-	alien forest
-*/
+registerReservoir("Hot Spring Water Reservoir (KELT-4ab)", <liquid:hot_spring_water>, 1228800000, maxInt, 1000, 2500, 30, I, [], [120], [], []);
 
-regReserviour("Protein Reservoir (KELT-6a)"   , <liquid:protein>  , 265000, 530000, 0, 60, 30,  I, [], [121], [], []);
-regReserviour("Liquid DNA Reservoir (KELT-6a)", <liquid:liquiddna>, 85000 , 265000, 0, 60, 15, II, [], [121], [], []);
-regReserviour("Mutagen Reservoir (KELT-6a)"   , <liquid:mutagen>  , 85000 , 265000, 0, 60, 15, II, [], [121], [], []);
+# KELT-6a ID=121
+	/*
+		alien forest
+*/
+registerReservoir("Protein Reservoir (KELT-6a)"   , <liquid:protein>  , 265000, 530000, 0, 60, 30,  I, [], [121], [], []);
+registerReservoir("Liquid DNA Reservoir (KELT-6a)", <liquid:liquiddna>, 85000 , 265000, 0, 60, 15, II, [], [121], [], []);
+registerReservoir("Mutagen Reservoir (KELT-6a)"   , <liquid:mutagen>  , 85000 , 265000, 0, 60, 15, II, [], [121], [], []);
 
 # Kepler 0118 ID=122
-/*
-	Volcanic
-	Hot
+	/*
+		Volcanic
+		Hot
 */
-
-regReserviour("High Pressure Magma Chamber (Kepler 0118)"  , <liquid:lava>               , 800000    , 2500000, 500, 2500, 30,  I, [], [122], [], []);
-regReserviour("High Pressure Steam Reservoir (Kepler 0118)", <liquid:high_pressure_steam>, 2000000000, maxInt , 0  , 800 , 20, II, [], [122], [], []);
-regReserviour("Enriched Lava Reservoir (Kepler 0118)"      , <liquid:enrichedlava>       , 140000    , maxInt , 0  , 40  , 10, II, [], [122], [], []);
+registerReservoir("High Pressure Magma Chamber (Kepler 0118)"  		, <liquid:lava>               , 800000    , 2500000, 500, 2500, 	  30,  I, [], [122], [], []);
+registerReservoir("Enriched Lava Reservoir (Kepler 0118)"      		, <liquid:enrichedlava>       , 140000    , maxInt , 0  , 40  , 	  10, II, [], [122], [], []);
+registerReservoirWithDrainChance("High Pressure Steam Reservoir (Kepler 0118)", <liquid:high_pressure_steam>, 2000000000, maxInt , 0  , 800 , 0.5f, 20, II, [], [122], [], []);
 
 # Kepler 0119 ID=123
-/*
-	oxedised feric sand
+	/*
+		oxedised feric sand
 */
-regReserviour("Destabilized Redstone Reservoir (Kepler 0119)", <liquid:redstone>, 2000000, 4500000, 50, 2000, 30, I, [], [123], [], []);	
+registerReservoir("Destabilized Redstone Reservoir (Kepler 0119)", <liquid:redstone>, 2000000   , 4500000, 50, 2000, 30,  I, [], [123], [], []);
+registerGasReservoir("Sxygen Reservoir (Kepler 0119)"            , <gas:oxygen>     , 1228800000, maxInt , 0 , 4   , 30, II, [], [123], [], []);	
