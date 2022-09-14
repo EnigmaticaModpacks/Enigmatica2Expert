@@ -34,14 +34,14 @@
     },
     "survival": {
       "limitAffectedBlocks": true,
-      "maxAffectedBlocks": 6,
+      "maxAffectedBlocks": 32,
       "harvestLevelBlock": 1,
       "editUnbreakable": false,
       "minimumTransparency": 255,
       "limitEditBlocks": true,
-      "maxEditBlocks": 27,
+      "maxEditBlocks": 128,
       "limitPlaceBlocks": true,
-      "maxPlaceBlocks": 27,
+      "maxPlaceBlocks": 512,
       "limitRecipeSize": false,
       "recipeBlocksLimit": 16
     },
