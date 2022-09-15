@@ -95,6 +95,7 @@ for lang, items in {
     <enderio:block_solar_panel:5>,
     <enderio:block_solar_panel:6>,
     <enderio:block_solar_panel>,
+    <engineersdecor:small_solar_panel>,
     <environmentaltech:solar_cont_1>,
     <environmentaltech:solar_cont_2>,
     <environmentaltech:solar_cont_3>,
