@@ -41,11 +41,7 @@ config/InvTweaks/InvTweaks.cfg
 config/scavenge/IResourceProperty.txt
 config/codechicken/supporters.json
 
-config/AppliedEnergistics2/aerecipes/
-config/AppliedEnergistics2/recipes/
 config/AppliedEnergistics2/items.csv
-config/AppliedEnergistics2/VersionChecker.cfg
-config/AppliedEnergistics2/CustomRecipes.cfg
 
 config/brandon3055/ResourceCache/
 
