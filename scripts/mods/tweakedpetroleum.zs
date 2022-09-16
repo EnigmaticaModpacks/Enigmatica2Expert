@@ -5,6 +5,8 @@ import mods.TweakedPetroleum.TweakedGasReservoir.registerGasReservoir;
 import crafttweaker.liquid.ILiquidStack;
 import mod.mekanism.gas.IGasStack;
 
+#modloaded tweakedpetroleum tweakedpetroleumgas
+
 /*
 
 public static void registerPowerUsage(int tier, int capacity, int rft)
