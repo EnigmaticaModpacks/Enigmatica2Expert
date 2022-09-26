@@ -90,11 +90,11 @@ import crafttweaker.item.IItemStack;
 	recipes.remove(<extendedcrafting:table_ultimate>);
 	mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:table_ultimate>, [
 	[<thermalexpansion:frame:147>, <extendedcrafting:trimmed:4>, <ore:crystalDraconium>, <advancedrocketry:ic:2>, <ore:crystalDraconium>, <extendedcrafting:trimmed:4>, <thermalexpansion:frame:147>], 
-	[<extendedcrafting:trimmed:4>, <ore:blockAethium>, <avaritia:double_compressed_crafting_table>, <thermalexpansion:frame:148>, <avaritia:double_compressed_crafting_table>, <ore:blockEnderium>, <extendedcrafting:trimmed:4>], 
-	[<ore:crystalDraconium>, <avaritia:double_compressed_crafting_table>, <extendedcrafting:table_advanced>, <extendedcrafting:table_elite>, <extendedcrafting:table_advanced>, <avaritia:double_compressed_crafting_table>, <ore:crystalDraconium>], 
+	[<extendedcrafting:trimmed:4>, <ore:blockAethium>, <vaultopic:vice>, <thermalexpansion:frame:148>, <vaultopic:vice>, <ore:blockEnderium>, <extendedcrafting:trimmed:4>], 
+	[<ore:crystalDraconium>, <vaultopic:vice>, <extendedcrafting:table_advanced>, <extendedcrafting:table_elite>, <extendedcrafting:table_advanced>, <vaultopic:vice>, <ore:crystalDraconium>], 
 	[<advancedrocketry:ic:2>, <draconicevolution:wyvern_core>, <ic2:iridium_reflector>, <avaritia:extreme_crafting_table>, <ic2:iridium_reflector>, <draconicevolution:wyvern_core>, <advancedrocketry:ic:2>], 
-	[<ore:crystalDraconium>, <avaritia:double_compressed_crafting_table>, <extendedcrafting:table_advanced>, <extendedcrafting:table_elite>, <extendedcrafting:table_advanced>, <avaritia:double_compressed_crafting_table>, <ore:crystalDraconium>], 
-	[<extendedcrafting:trimmed:4>, <ore:blockLudicrite>, <avaritia:double_compressed_crafting_table>, <thermalexpansion:frame:148>, <avaritia:double_compressed_crafting_table>, <ore:blockMirion>, <extendedcrafting:trimmed:4>], 
+	[<ore:crystalDraconium>, <vaultopic:vice>, <extendedcrafting:table_advanced>, <extendedcrafting:table_elite>, <extendedcrafting:table_advanced>, <vaultopic:vice>, <ore:crystalDraconium>], 
+	[<extendedcrafting:trimmed:4>, <ore:blockLudicrite>, <vaultopic:vice>, <thermalexpansion:frame:148>, <vaultopic:vice>, <ore:blockMirion>, <extendedcrafting:trimmed:4>], 
 	[<thermalexpansion:frame:147>, <extendedcrafting:trimmed:4>, <ore:crystalDraconium>, <advancedrocketry:ic:2>, <ore:crystalDraconium>, <extendedcrafting:trimmed:4>, <thermalexpansion:frame:147>]]);
 
 # Pedestal

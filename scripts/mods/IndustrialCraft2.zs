@@ -6,6 +6,7 @@ import scripts.jei.mod.ic2.addCrop as addCrop;
 #modloaded ic2
 
 
+<ic2:treetap>.maxDamage = 400; # Buff from 16
 <ic2:wrench>.maxDamage = 5000; # Buff from 100
 <ic2:dynamite>.maxStackSize = 64;
 <ic2:dynamite_sticky>.maxStackSize = 64;

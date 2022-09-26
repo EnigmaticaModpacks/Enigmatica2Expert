@@ -55,6 +55,8 @@ import scripts.craft.grid.Grid;
   mods.immersiveengineering.Crusher.removeRecipesForInput(<minecraft:sandstone>);
   mods.immersiveengineering.Crusher.addRecipe(<minecraft:sand> * 2, <ore:sandstone>, 2048, <thermalfoundation:material:772>, 0.5);
 
+mods.immersiveengineering.Crusher.removeRecipe(<libvulpes:productdust:3>);
+
 # Aluminum Scaffolding
 	recipes.remove(<immersiveengineering:metal_decoration2:8>);
 	recipes.addShapedMirrored("Aluminum Scaffolding", 

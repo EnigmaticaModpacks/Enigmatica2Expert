@@ -42,6 +42,8 @@ utils.rh(<openblocks:generic:5>);
 utils.rh(<openblocks:cursor>);
 utils.rh(<actuallyadditions:item_misc:17>);
 utils.rh(<bhc:wither_bone>);
+utils.rh(<avaritia:compressed_crafting_table>);
+utils.rh(<avaritia:double_compressed_crafting_table>);
 
 // BoP Ethereal wood (unobtainable)
 utils.rh(<biomesoplenty:log_1:4>);

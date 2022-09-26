@@ -1,5 +1,9 @@
 #modloaded vaultopic
 
+<vaultopic:view_small>.maxStackSize = 64;
+<vaultopic:view_big>.maxStackSize = 64;
+<vaultopic:vice>.maxStackSize = 64;
+
 # [Vault Searcher] from [Redstone][+2]
 craft.remake(<vaultopic:vault_searcher> * 2, ["pretty",
   "▬ ▬",

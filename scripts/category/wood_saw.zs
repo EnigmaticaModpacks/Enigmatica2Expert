@@ -18,13 +18,18 @@ for log, plank in scripts.category.wood.logPlank {
   val id = log.definition.id;
   val mod = id.split(':')[0];
   val exceptions = 
-    mod == 'forestry' || mod == 'iceandfire' || id == 'extrautils2:decorativesolidwood' ? "no exceptions"
+    mod == 'forestry'
+      || mod == 'iceandfire'
+      || id == 'extrautils2:decorativesolidwood'
+      || id == 'thaumcraft:taint_log'
+      ? "no exceptions"
     : "strict: manufactory mekSawmill";
   saw(log, plank, exceptions);
 }
 
 # Magical wood special
 scripts.process.sawWood(<extrautils2:decorativesolidwood:1>, <extrautils2:decorativesolidwood>, "only: TESawmill");
+scripts.process.sawWood(<thaumcraft:taint_log>             , <thaumadditions:taintwood_planks>, "only: TESawmill");
 
 # Sawdust compat
 mods.mekanism.sawmill.removeRecipe(<ore:plankWood>);

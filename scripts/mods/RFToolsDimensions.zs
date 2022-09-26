@@ -22,9 +22,9 @@
 	recipes.remove(<rftoolsdim:dimlet_workbench>);
 	recipes.addShapedMirrored("Dimlet Workbench", 
 	<rftoolsdim:dimlet_workbench>, 
-	[[<avaritia:double_compressed_crafting_table>, <rftoolsdim:dimlet_base>, <avaritia:double_compressed_crafting_table>],
+	[[<vaultopic:vice>, <rftoolsdim:dimlet_base>, <vaultopic:vice>],
 	[<rftools:crafter3>.anyDamage(), <thermalexpansion:frame:148>, <rftools:crafter3>.anyDamage()], 
-	[<avaritia:double_compressed_crafting_table>, utils.tryCatch(itemUtils.getItem("rftoolscontrol:workbench", 32767), <rftools:crafter3:*>), <avaritia:double_compressed_crafting_table>]]);
+	[<vaultopic:vice>, utils.tryCatch(itemUtils.getItem("rftoolscontrol:workbench", 32767), <rftools:crafter3:*>), <vaultopic:vice>]]);
 
 # Dimension Enscriber
 if(isNull(loadedMods["rftdimtweak"])) {

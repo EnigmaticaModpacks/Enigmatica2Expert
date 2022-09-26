@@ -94,8 +94,6 @@ tweak("randomthings:beanpod", "Diamond", "minecraft:diamond", null, [<biomesople
 
 
 # Add drops
-<entity:betteranimalsplus:zotzpyre>.addDrop(<harvestcraft:hardenedleatheritem> % 70, 1, 3);
-<entity:betteranimalsplus:zotzpyre>.addPlayerOnlyDrop(<harvestcraft:netherwingsitem>, 1, 3);
 <entity:minecraft:endermite>.addDrop(<appliedenergistics2:material:46>, 1, 3);
 <entity:minecraft:endermite>.addPlayerOnlyDrop(<endreborn:wolframium_nugget>, 1, 6);
 <entity:netherendingores:netherfish>.addPlayerOnlyDrop(<forestry:ash>, 3, 12);

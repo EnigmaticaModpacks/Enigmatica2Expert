@@ -873,3 +873,12 @@ recipes.addShapeless(<mysticalagriculture:chunk:5> * 12, [
 	<ore:craftingToolForgeHammer>,
 	<enderio:item_broken_spawner>,
 ]);
+
+# [Withering Soul] from [Black Stained Glass Pane][+1]
+craft.make(<mysticalagradditions:stuff:1>, ["pretty",
+  "T T T",
+  "T G T",
+  "T T T"], {
+  "T": <mysticalagradditions:nether_star_essence>, # Nether Star Essence
+  "G": <ore:paneGlassBlack>, # Black Stained Glass Pane
+});

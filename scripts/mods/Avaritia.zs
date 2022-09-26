@@ -340,7 +340,7 @@ mods.extendedcrafting.TableCrafting.addShapeless(
 	
 	recipes.remove(<avaritia:extreme_crafting_table>);
 	mods.extendedcrafting.CombinationCrafting.addRecipe(<avaritia:extreme_crafting_table>, 
-	100000000, 1000000, <avaritia:double_compressed_crafting_table>, 
+	100000000, 1000000, <vaultopic:vice>, 
 	[<avaritia:resource:1>, <avaritia:resource:1>, <extendedcrafting:material:12>, 
 	<extendedcrafting:material:12>, <avaritia:resource:1>, <avaritia:resource:1>]);
 

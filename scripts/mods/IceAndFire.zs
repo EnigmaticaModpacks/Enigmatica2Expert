@@ -645,3 +645,16 @@ craft.remake(<iceandfire:myrmex_desert_egg>, [
   "W": <randomthings:weatheregg>, # Weather Egg <Sun>
   "C": <twilightforest:cicada>,   # Cicada
 });
+
+# Peaceful Skyblock alt
+mods.bloodmagic.BloodAltar.addRecipe(<iceandfire:fire_dragon_blood>, 
+	<rustic:fluid_bottle>.withTag({Fluid: {FluidName: "wine", Amount: 1000, Tag: {Quality: 1.0 as float}}}), # Bottle of Wine
+	0, 1000, 10, 10
+);
+mods.bloodmagic.BloodAltar.addRecipe(<iceandfire:ice_dragon_blood> , 
+	<rustic:fluid_bottle>.withTag({Fluid: {FluidName: "ale", Amount: 1000, Tag: {Quality: 1.0 as float}}}), # Bottle of Ale
+	0, 1000, 10, 10
+);
+
+recipes.addShapeless('Heart Fire', <iceandfire:fire_dragon_heart>, [<cyclicmagic:heart_toxic>, <iceandfire:fire_dragon_blood>]);
+recipes.addShapeless('Heart Ice', <iceandfire:ice_dragon_heart>, [<cyclicmagic:heart_toxic>, <iceandfire:ice_dragon_blood>]);

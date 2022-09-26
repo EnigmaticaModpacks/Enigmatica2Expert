@@ -101,7 +101,7 @@ craft.remake(<appliedenergistics2:drive>, ["pretty",
   "A A A",
   "A : A",
   "E ◙ E"], {
-  "A": <ore:sheetAluminum>, 							# Aluminum Sheet
+  "A": <ore:plateTitaniumAluminide>,
   "E": <appliedenergistics2:material:24>, # Engineering Processor
   "◙": <rftools:machine_frame>,           # Machine Frame
   ":": <ore:oc:diskDrive>,                # Disk Drive

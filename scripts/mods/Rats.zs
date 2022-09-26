@@ -402,7 +402,7 @@ craft.make(<rats:plague_essence>, ["pretty",
   "B C B"], {
   "B": <ore:paperBlack>,                         # Black Paper
   "C": <contenttweaker:compressed_garbage_pile>, # Compressed Garbage Pile
-  "A": <betteranimalsplus:antler>,               # Antler
+  "A": utils.tryCatch("betteranimalsplus:antler", <minecraft:rabbit_hide>), # Antler
 });
 
 # Peaceful alt

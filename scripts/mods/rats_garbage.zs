@@ -1,5 +1,6 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
+import mods.ctutils.utils.Math.log;
 import mods.ctutils.utils.Math.sqrt;
 import mods.ctutils.utils.Math.max;
 import mods.ctutils.utils.Math.min;
@@ -17,10 +18,11 @@ function getValue_hardness    (a as IItemStack) as double { return max(0.0d, (sq
 
 function getValue_harvestLevel(a as IItemStack) as double { return !isNull(a.asBlock()) && !isNull(a.asBlock().definition) ? a.asBlock().definition.harvestLevel as double / 10.0d : 0.0d; }
 
-# Wood Log     - 300    = 0.26807
-# Coal Block   - 16000  = 1.064912
-# Blasted Coal - 120000 = 1.89327
-function getValue_burnTime    (a as IItemStack) as double { return max(0.0d, sqrt(sqrt(a.burnTime as double / 10.0d)) - 1.0d) / 3.0d; }
+# Wood Log     - 300    = 0.1
+# Coal Block   - 16000  = 0.5
+# Blasted Coal - 120000 = 1.0
+# Trpl. Chrc   - 256000 = 1.3
+function getValue_burnTime    (a as IItemStack) as double { return max(0.0d, sqrt(sqrt(1.0d + a.burnTime as double / 80.0d)) - 1.0d) / 5.0d; }
 
 # 1 = 0.2
 # 3 = 0.8

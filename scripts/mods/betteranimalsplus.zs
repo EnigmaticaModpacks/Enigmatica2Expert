@@ -1,5 +1,17 @@
 #modloaded betteranimalsplus
 
+val handOfFatelocalized = mods.zenutils.I18n.format(scripts.category.tooltip_utils.desc.local(<betteranimalsplus:handoffate>), 
+	<minecraft:flint_and_steel>.displayName,
+	<minecraft:nether_wart>.displayName,
+	<betteranimalsplus:antler>.displayName,
+	<betteranimalsplus:venisonraw>.displayName
+);
+<betteranimalsplus:handoffate>.addTooltip(handOfFatelocalized);
+mods.jei.JEI.addDescription(<betteranimalsplus:handoffate>, handOfFatelocalized);
+
+<entity:betteranimalsplus:zotzpyre>.addDrop(<harvestcraft:hardenedleatheritem> % 70, 1, 3);
+<entity:betteranimalsplus:zotzpyre>.addPlayerOnlyDrop(<harvestcraft:netherwingsitem>, 1, 3);
+
 <ore:pelt>.addItems([
 	<betteranimalsplus:bear_skin_black>,
 	<betteranimalsplus:bear_skin_brown>,

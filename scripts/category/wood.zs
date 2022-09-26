@@ -90,4 +90,5 @@ static logPlank as IItemStack[IItemStack] = {
 
 # Magical wood special
   <extrautils2:decorativesolidwood:1>: <extrautils2:decorativesolidwood>,
+  <thaumcraft:taint_log>             : <thaumadditions:taintwood_planks>,
 } as IItemStack[IItemStack];

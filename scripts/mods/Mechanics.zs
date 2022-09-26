@@ -37,7 +37,7 @@ recipes.addShaped(<mechanics:crushing_block>, [
 recipes.addShaped(<mechanics:amplifying_tube>, [
   [<integratedterminals:chorus_glass>, <extrautils2:suncrystal>, <integratedterminals:chorus_glass>],
   [<ore:ingotHeavy>, null, <ore:ingotHeavy>], 
-  [<ore:ingotHeavy>, <industrialforegoing:laser_lens_inverted:4>, <ore:ingotHeavy>]]);
+  [<ore:ingotHeavy>, <extrautils2:decorativeglass:4>, <ore:ingotHeavy>]]);
 
 # Remove excess recipes
 mods.mechanics.removeTubeRecipe(<minecraft:stone>);

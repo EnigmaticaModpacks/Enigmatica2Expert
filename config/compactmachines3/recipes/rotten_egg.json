@@ -5,7 +5,7 @@
   
   "duration": 20,
 
-  "catalyst": "betteranimalsplus:fried_egg",
+  "catalyst": "harvestcraft:friedeggitem",
 
   "input-types": {
     "a": { "id": "additionalcompression:egg_compressed" },

@@ -401,12 +401,3 @@ for lang, items in {
 		desc.jei(item, lang);
 	}
 }
-
-val handOfFatelocalized = mods.zenutils.I18n.format(desc.local(<betteranimalsplus:handoffate>), 
-<minecraft:flint_and_steel>.displayName,
-<minecraft:nether_wart>.displayName,
-<betteranimalsplus:antler>.displayName,
-<betteranimalsplus:venisonraw>.displayName
-);
-<betteranimalsplus:handoffate>.addTooltip(handOfFatelocalized);
-mods.jei.JEI.addDescription(<betteranimalsplus:handoffate>, handOfFatelocalized);

@@ -407,3 +407,11 @@ craft.remake(<advancedrocketry:thermitetorch> * 8, [
   "▲": <ore:dustThermite>, # Thermite
   "#": <ore:stickWood>,    # Stick
 });
+
+# Harder to match other mod complexity
+# [Basic Lens] from [Quartz Glass]
+craft.remake(<advancedrocketry:lens>, ["pretty",
+  "  ⌃  ",
+  "⌃   ⌃"], {
+  "⌃": <appliedenergistics2:quartz_glass>, # Quartz Glass
+});
