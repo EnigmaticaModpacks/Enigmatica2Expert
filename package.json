@@ -7,7 +7,8 @@
   "scripts": {
     "release": "release-it",
     "benchmark": "node E:/dev/mc-benchmark/index.js --output=dev/benchmarks/latest.md",
-    "bansoukou-prune": "node \"dev/_other/advancement-fix.js\" -r"
+    "bansoukou-prune": "node \"dev/_other/advancement-fix.js\" -r",
+    "md-to-html": "node ./dev/lib/curseforge-md-to-html.js ./changelogs/LATEST.md"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",

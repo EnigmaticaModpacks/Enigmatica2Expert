@@ -13,39 +13,6 @@ import mods.ctintegration.data.DataUtil;
 import mods.ctintegration.util.RawLogger.logRaw as logRaw;
 import mods.zenutils.ZenUtils;
 
-
-function serialize(str as string) as string {
-  return str.replaceAll('"','\\\\"');
-}
-
-function logDebugData() {
-  logRaw("{");
-  logRaw('"all_items": {');
-  for j, mod in loadedMods {
-    if(mod.items.length == 0) continue;
-
-    if(j!=0) logRaw("  ],");
-    logRaw('  "'~mod.name~'": [');
-
-    val last = mod.items.length - 1;
-    for i, item in mod.items {
-      val sNbt = isNull(item.tag) ? "" : DataUtil.toNBTString(item.tag);
-      logRaw(
-        '    ["'~serialize(item.displayName)~'","'
-        ~ item.definition.id ~ (item.damage!=0 ? ':'~item.damage : '') ~ '"'
-        ~ ',"'~serialize(sNbt)~'"'
-        ~ "," ~ item.burnTime
-        ~ ']' ~ (i==last ? '' : ',')
-      );
-    }
-  }
-  logRaw("  ]");
-  logRaw("}");
-
-  logRaw("}");
-}
-
-
 function logAdditionalDebugData(player as IPlayer) {
   val commandsToRun = [
     "/ct thaumcraftDump",

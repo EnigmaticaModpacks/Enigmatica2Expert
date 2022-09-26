@@ -1,6 +1,11 @@
 # TODO list
 
 - [ ] 🔄 Check if golems can break blocks in skyblock
+- [ ] ✏️ Viaducts cheaper
+- [ ] ✏️ Fix Voltatic Piles cant be autocrafted
+- [ ] ✏️ Highlite Creeper in witchwater
+- [ ] ✏️ Compressed furnaces in form of MA furnaces
+- [ ] ✏️ Remove Blast Resistant Drive
 - [ ] ✏️ Make new replicator machine
 - [ ] ✏️ More Alien Crystal blocks + mica to get Crystaltine and ET gems
 - [ ] ✏️ Remove Cyclic's machines completely because they are laggy
@@ -8,9 +13,12 @@
 - [ ] ✏️ Milk Questing Ram to color essence
 - [ ] 📀 Fix NPE https://is.gd/wZprY2
 - [ ] 📀 Buff Golem Stats
+- [ ] 🟢 Replace to https://www.curseforge.com/minecraft/mc-mods/reauth
 - [ ] 🔄 Ratlantean spirit projectiles aren't hitting the player
 - [ ] 📖 Introduce EIO painting machine
+- [ ] 📖 Fix Conflux cant be finished
 - [ ] 🔄 `/punish` command - players can punish other players on server
+
 
 ---
 
@@ -74,7 +82,7 @@
 - [ ] ✏️ Add bedrock turning into ore mechanic. Dont know how to get ID number of block OR how to execute command `/bedrockores wrap` from non-op player.
 - [ ] ✏️ Remove wrong nuggets from Infernal Furnace
 - [ ] ✏️ Add Mob Trophies recipes (Right-Click with morb over Basalt Slab)
-- [ ] ✏️ Add ![](https://is.gd/enLvDu "Uncrafting Table")[Uncrafting Grinder]![](https://is.gd/Qdrz8o "Creative Bin") as Endgame item, right before creative upgrade
+- [ ] ✏️ Add ![](https://is.gd/enLvDu "Uncrafting Table")![](https://is.gd/OcNNZN "Uncrafting Grinder")![](https://is.gd/Qdrz8o "Creative Bin") as Endgame item, right before creative upgrade
 - [ ] ✏️ ![](https://is.gd/EEUU7D "Bee Nest") make not in basin but in world. How to transform blocks in world?
 - [ ] ✏️ Rethink small plate presser Ore => ?? recipes
 - [ ] ✏️ Add non-magic way to finish modpack
@@ -160,9 +168,9 @@ Items that should have more uses:
 ![](https://git.io/JoUaU "Quicksilver")
 ![](https://is.gd/NZ5zqq "Xorcite Shard")
 ![](https://is.gd/ZmKHJr "Gorgon Head")
-[Cyclopus Eye]
-[Quickdry Concrete]
-[Cow Written Book]
+[Cyclops Eye]
+![](https://is.gd/3s7mc8 "Quickdry Concrete")
+![](https://is.gd/x6hBwo "A book written by a Cow")
 
 ### Tier 3
 
@@ -175,8 +183,8 @@ Items that should have more uses:
 ![](https://git.io/JGGhx "Overworldian Matter")
 ![](https://git.io/JRLSU "Huge Stalk")
 ![](https://git.io/JnzzI "Glitch Infused Ingot")
-[(every) machine parts]
-[Osgloglas Ingot]
+![](https://is.gd/SoB2O1 "Machine Parts")
+![](https://is.gd/PpipIo "Osgloglas Ingot")
 
 ### Tier 4
 
@@ -205,7 +213,7 @@ Liquids that should have more uses:
 ![](https://git.io/Jst3B "Crystal Memory")
 ![](https://git.io/JtDnO "Chemical Thrower")
 ![](https://is.gd/rneFnc "Blue Fire Jar")
-[Radiator] (Immersive)
+![](https://is.gd/XqQPA0 "Radiator Block")
 
 ---
 

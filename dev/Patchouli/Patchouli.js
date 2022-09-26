@@ -16,20 +16,18 @@
 
 /// ///////////////////////////////////////
 // NodeJS dependencies
-process.env.NODE_PATH += ':/dev/lib'
-
 import { mkdir, readdirSync, renameSync, rmSync } from 'fs'
 import { relative as _relative, resolve } from 'path'
-import { fileURLToPath, URL } from 'url' // @ts-ignore
+import { URL, fileURLToPath } from 'url'
 
 import glob from 'glob'
-import numeral from 'numeral' // eslint-disable-line no-unused-vars
+import numeral from 'numeral'
 import over from 'over'
 import { snakeCase } from 'snake-case'
 
 /// ///////////////////////////////////////
 // Local dependencies
-import * as evtTechSolarCalc from '../lib/EvtTechSolarCalc.js' // eslint-disable-line no-unused-vars
+import * as evtTechSolarCalc from '../lib/EvtTechSolarCalc.js'
 import {
   config,
   defaultHelper,
@@ -40,50 +38,52 @@ import {
 
 import { init as initAdditionalPages } from './additional_pages.js'
 
+process.env.NODE_PATH += ':/dev/lib'
+
 // -----------------------------
 // Constants
 
 const bookPath = './patchouli_books/e2e_e/en_us/'
 
-let defaultFileContent = {
+const defaultFileContent = {
   '*': {
     name: 'Undefined category/entry',
     icon: 'minecraft:book',
   },
 
-  world: {
-    name: 'World',
-    icon: 'biomesoplenty:earth',
+  'world': {
+    name       : 'World',
+    icon       : 'biomesoplenty:earth',
     description:
       'Tweaks and changes about $(l)basic rules/$, world $(l)gereneration/$ and $(l)mining/$:',
   },
 
-  energy: {
-    icon: 'nuclearcraft:upgrade:1',
+  'energy': {
+    icon       : 'nuclearcraft:upgrade:1',
     description: 'Things related to $(l)Energy/$ =>',
   },
-  items: {
-    icon: 'thaumcraft:elemental_pick',
+  'items': {
+    icon       : 'thaumcraft:elemental_pick',
     description: 'All about $(l)Items/$, $(l)Tools/$ and $(l)Armor/$ =>',
   },
-  liquids: {
-    icon: 'minecraft:water_bucket',
+  'liquids': {
+    icon       : 'minecraft:water_bucket',
     description: 'Things you can do with $(l)Liquids/$ =>',
   },
-  mobs: {
-    icon: 'draconicevolution:mob_soul{EntityName:"minecraft:zombie"}',
+  'mobs': {
+    icon       : 'draconicevolution:mob_soul{EntityName:"minecraft:zombie"}',
     description: 'Stories about poor $(l)creatures/$ =>',
   },
 
-  bug_fixes: {
+  'bug_fixes': {
     priority: true,
   },
 
-  misc_changes: {
+  'misc_changes': {
     priority: true,
   },
 
-  recipe_changes: {
+  'recipe_changes': {
     priority: true,
   },
 }
@@ -96,7 +96,8 @@ let defaultFileContent = {
 function readdir(folderPath) {
   try {
     return readdirSync(folderPath)
-  } catch (error) {
+  }
+  catch (error) {
     return []
   }
 }
@@ -112,16 +113,16 @@ function relative(relPath = './') {
 // ######################################################################
 
 // Match all regex from crafttweaker.log
-const from_crafttweaker_log = (rgx) => [
+const from_crafttweaker_log = rgx => [
   ...loadText('crafttweaker.log').matchAll(rgx),
 ]
 
 // Transform ZenScript's item string into Patchouli's item string
 function parse_item(str) {
-  let match = str.match(
+  const match = str.match(
     /^[ \n\r]*<(.*?)>(\.withTag\(([\s\S\n\r]*)\))?[ \n\r]*$/m
   )
-  let itemDefinition = match[1]
+  const itemDefinition = match[1]
   let nbtStr = match[3]
   if (nbtStr) {
     nbtStr = nbtStr.replace(/(\b)as \w+(\b)/gm, '$1$2')
@@ -141,7 +142,7 @@ function parse_text(text) {
   return text
     .trim()
     .split('\n')
-    .map((s) => s.trim())
+    .map(s => s.trim())
     .join('$(br)')
     .replace('$(br)$(br)', '$(br2)')
 }
@@ -178,12 +179,12 @@ function text$i(array, fnc) {
 
 // Takes array and split it in several pages based of type
 const pageTypesLength = {
-  fluid_interaction: 10,
-  grid: 42,
-  grid_text: 24,
-  grid_description: 24,
-  item_list: 7,
-  item_spread: 7,
+  fluid_interaction : 10,
+  grid              : 42,
+  grid_text         : 24,
+  grid_description  : 24,
+  item_list         : 7,
+  item_spread       : 7,
   spotlight_advanced: 5,
 }
 function paged_full(opts, itemsOnPage, arr) {
@@ -191,14 +192,14 @@ function paged_full(opts, itemsOnPage, arr) {
 
   return arr.reduce((o, m, i) => {
     const isArr = Array.isArray(m)
-    let j = ~~(i / itemsOnPage)
+    const j = ~~(i / itemsOnPage)
     o[j] = o[j] || { ...opts }
 
     o[j][`item${i % itemsOnPage}`] = isArr ? m[0] : m
 
-    if (opts.type == 'item_list') {
+    if (opts.type == 'item_list')
       o[j][`text${i % itemsOnPage}`] = m[1]
-    }
+
     return o
   }, [])
 }
@@ -232,7 +233,7 @@ export async function init(h = defaultHelper) {
   // Add Additional pages
   patchouliList.push({
     filePath: 'additional_pages.js',
-    command: initAdditionalPages,
+    command : initAdditionalPages,
   })
 
   // Generate list of all documentation entries
@@ -240,7 +241,7 @@ export async function init(h = defaultHelper) {
   await h.begin(`Scan ${zsFileList.length} .ZS files`)
 
   const patchuoliBlocksList = zsFileList
-    .map((f) => [f, loadText(f)])
+    .map(f => [f, loadText(f)])
     .map(
       /** @return {[string, string, RegExpMatchArray[]]} */
       ([f, s]) => [
@@ -253,26 +254,26 @@ export async function init(h = defaultHelper) {
   h.done()
 
   patchuoliBlocksList.forEach(([filePath, zsfileContent, matches]) =>
-    matches.forEach((match) =>
+    matches.forEach(match =>
       patchouliList.push({
         filePath,
         command: match[1],
-        line: zsfileContent.substring(0, match.index).split('\n').length,
-        below: zsfileContent.substring(match.index + match[0].length),
+        line   : zsfileContent.substring(0, match.index).split('\n').length,
+        below  : zsfileContent.substring(match.index + match[0].length),
       })
     )
   )
 
   // Patch pages
   const patchVersions = []
-  let patchesPath = relative('patches/')
+  const patchesPath = relative('patches/')
   readdir(patchesPath).forEach((filePath) => {
     const relPath = resolve(patchesPath, filePath)
     const fileNoExt = filePath.split('.').slice(0, -1).join('.')
     patchVersions.push(fileNoExt)
     patchouliList.push({
-      filePath: relPath,
-      command: loadText(relPath),
+      filePath : relPath,
+      command  : loadText(relPath),
       overrides: {
         subcategory: fileNoExt,
       },
@@ -326,12 +327,13 @@ export async function init(h = defaultHelper) {
     function Patchouli_js_single(entryId, p) {
       // Parse patchouli path
       if (!entryId) entryId = 'Misc Changes'
-      let patchouli_path = entryId.split('/')
-      if (patchouli_path.length == 1)
+      const patchouli_path = entryId.split('/')
+      if (patchouli_path.length == 1) {
         patchouli_path.unshift(
           'Patches',
           patchouliCommand?.overrides?.subcategory ?? upperVersion
         )
+      }
       const isSubcategory = patchouli_path.length >= 3
 
       // Overwrite data for generated patches
@@ -342,7 +344,7 @@ export async function init(h = defaultHelper) {
         return obj[field]
       }
 
-      let obj_category = defVal(book, patchouli_path[0], {})
+      const obj_category = defVal(book, patchouli_path[0], {})
       let obj_entry
       let categoryPath
       let entry_name
@@ -350,16 +352,17 @@ export async function init(h = defaultHelper) {
       if (isSubcategory) {
         entry_name = patchouli_path[2]
         categoryPath = `patchouli:subcategories/${snakeCase(patchouli_path[1])}`
-        let obj_subcategory = defVal(
+        const obj_subcategory = defVal(
           obj_category,
-          'subcategory:' + patchouli_path[1],
+          `subcategory:${patchouli_path[1]}`,
           {}
         )
         obj_entry = defVal(obj_subcategory, entry_name, {})
-      } else {
+      }
+      else {
         entry_name = patchouli_path[1]
         categoryPath = patchouli_path[0]
-        obj_entry = defVal(obj_category, 'entry:' + entry_name, {})
+        obj_entry = defVal(obj_category, `entry:${entry_name}`, {})
       }
 
       // Guess mandatory fields for entry
@@ -369,15 +372,15 @@ export async function init(h = defaultHelper) {
       defVal(obj_entry, 'icon', p.icon || p.item || 'minecraft:book')
 
       // Copy all fields
-      let page = {}
-      let entryKeys = ['category', 'subcategory', 'entry', 'icon']
+      const page = {}
+      const entryKeys = ['category', 'subcategory', 'entry', 'icon']
       for (const key in p) {
         if (!entryKeys.includes(key)) {
-          if (key[0] === '_') {
+          if (key[0] === '_')
             page[key.substr(1)] = parse_text(p[key])
-          } else {
+
+          else
             page[key] = p[key]
-          }
         }
       }
 
@@ -396,13 +399,13 @@ export async function init(h = defaultHelper) {
       [
         over.stringOptionalWithDefault(''),
         over.array,
-        (str, arr) => arr.forEach((o) => Patchouli_js_single(str, o)),
+        (str, arr) => arr.forEach(o => Patchouli_js_single(str, o)),
       ],
       [over.stringOptionalWithDefault(''), over.object, Patchouli_js_single],
       // [over.object, obj=>Patchouli_js_single('', obj)],
       // [over.array,  arr=>arr.forEach(obj=>Patchouli_js_single('', obj))],
       function () {
-        return
+
       }, // No parameters function
     ])
 
@@ -410,7 +413,8 @@ export async function init(h = defaultHelper) {
       if (typeof patchouliCommand.command === 'string')
         eval(patchouliCommand.command)
       else patchouliCommand.command(Patchouli_js, { paged, config })
-    } catch (error) {
+    }
+    catch (error) {
       console.log(
         `Patchouli_js comment block Error.\nFile: ${
           patchouliCommand.filePath
@@ -425,7 +429,7 @@ export async function init(h = defaultHelper) {
   await writeResult(stat, book, h)
 }
 
-// @ts-ignore
+// @ts-expect-error
 if (
   import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
 )
@@ -437,22 +441,6 @@ if (
  * @param {{}} book
  */
 async function writeResult(stat, book, h = defaultHelper) {
-  // Remove old trash can contents
-  const garbagePath = relative('./garbage')
-  rmSync(garbagePath, { recursive: true })
-
-  // Move old patchouli files
-  mkdir(garbagePath, { recursive: true }, (err) => {
-    if (err) throw err
-  })
-  ;['categories', 'entries'].forEach((fldr) => {
-    try {
-      renameSync(resolve(bookPath, fldr), resolve(garbagePath, fldr))
-    } catch (error) {
-      return []
-    }
-  })
-
   let totalFilesCreated = 0
 
   /**
@@ -463,7 +451,7 @@ async function writeResult(stat, book, h = defaultHelper) {
    * @returns
    */
   function saveBookFile(_partName, subfolder, content) {
-    let partName = snakeCase(_partName)
+    const partName = snakeCase(_partName)
     saveObjAsJson(
       {
         __comment:
@@ -473,7 +461,7 @@ async function writeResult(stat, book, h = defaultHelper) {
         name: _partName,
         ...content,
       },
-      bookPath + subfolder + partName + '.json'
+      `${bookPath + subfolder + partName}.json`
     )
     totalFilesCreated++
     return partName
@@ -496,7 +484,7 @@ async function writeResult(stat, book, h = defaultHelper) {
           actualName,
           'categories/subcategories/',
           {
-            parent: 'patchouli:' + categoryName,
+            parent: `patchouli:${categoryName}`,
           }
         )
 
@@ -507,14 +495,15 @@ async function writeResult(stat, book, h = defaultHelper) {
             entry
           )
         }
-      } else {
+      }
+      else {
         saveBookFile(actualName, `entries/${categoryName}/`, subcategory)
       }
     }
     h.step()
   }
 
-  h.result('Total files created: ' + totalFilesCreated)
+  h.result(`Total files created: ${totalFilesCreated}`)
 }
 /*
 function findNewPoint(x, y, angle, distance) {
