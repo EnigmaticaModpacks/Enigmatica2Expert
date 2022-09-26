@@ -45,6 +45,7 @@ entity.AngryChicken.name=Сердитый цыпленок
 tile.ocsensors.sensor.name=Свободный Сенсор
 item.positron_unit.name=Позитронная Еденица
 item.quantron.name=Квантрон
+tile.industrialwires.hv_multiblock.marx.name=Генератор Маркса
 
 tooltips.lang.tag.generator=§6#Генератор
 tooltips.lang.tag.solar=§f#Солнечный

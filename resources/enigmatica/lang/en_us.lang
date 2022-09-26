@@ -44,6 +44,7 @@ entity.AngryChicken.name=Angry Chicken
 tile.ocsensors.sensor.name=Open Sensor
 item.positron_unit.name=Positron Unit
 item.quantron.name=Quantron
+tile.industrialwires.hv_multiblock.marx.name=Marx Generator
 
 tooltips.lang.tag.generator=§6#Generator
 tooltips.lang.tag.solar=§f#Solar
