@@ -414,3 +414,7 @@ craft.make(<rats:rat_toga>, ["pretty",
   "S": <thaumictinkerer:spellbinding_cloth>.noReturn(), # Spellbinding Cloth
   "M": <rats:marbled_cheese>, # Marbled Cheese
 });
+
+
+# Make string cheese with wire press
+mods.immersiveengineering.MetalPress.addRecipe(<rats:string_cheese>, <ore:foodCheese>, <immersiveengineering:mold:4>, 100, 1);
