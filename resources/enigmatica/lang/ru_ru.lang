@@ -192,6 +192,7 @@ requious.jei.recipe.beacon_effects=Эффекты Маяка
 requious.jei.recipe.chemthrower=Химический распылитель
 requious.jei.recipe.crafting_hints=Ремесленные Подсказки
 requious.jei.recipe.electronics_assembler=Сборщик Электроники
+requious.jei.recipe.entity_drop=Падает с существа
 requious.jei.recipe.entity_kill_entity=Существо убивает Существо
 requious.jei.recipe.everflow_chalice=Чаша Вечного потока
 requious.jei.recipe.excavator=Экскаватор Выкапывает
