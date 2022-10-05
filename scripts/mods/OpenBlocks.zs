@@ -97,3 +97,5 @@ craft.remake(<openblocks:crane_backpack>, [
   "H": <immersiveengineering:wirecoil:3>, # Hemp Rope Coil
   "■": <ore:blockFakeIron>, # Iron Alloy Block
 });
+
+<entity:openblocks:mini_me>.addDrop(<scalinghealth:crystalshard>, 4, 8);

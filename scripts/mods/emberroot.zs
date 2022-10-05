@@ -10,3 +10,11 @@ scripts.loot.animal_drops.tweak("emberroot:entity/skeleton_frozen","main","minec
 scripts.loot.animal_drops.tweak("emberroot:entity/sprite_mini","main","minecraft:rotten_flesh", null, [<mysticalagriculture:nature_essence>], [1,3]);
 scripts.loot.animal_drops.tweak("emberroot:entity/sprite_normal","main","minecraft:rotten_flesh", null, [<mysticalagriculture:dye_essence>], [2,7]);
 scripts.loot.animal_drops.tweak("emberroot:entity/sprite_greater","main",null, null, [<mysticalagriculture:platinum_essence>], [1,3]);
+
+<entity:emberroot:deers>.clearDrops();
+<entity:emberroot:hero>.addPlayerOnlyDrop(<actuallyadditions:item_void_bag> % 10, 1, 1);
+<entity:emberroot:hero>.addPlayerOnlyDrop(<cyclicmagic:charm_void> % 10, 1, 1);
+<entity:emberroot:hero>.addPlayerOnlyDrop(<cyclicmagic:sack_ender> % 10, 1, 1);
+<entity:emberroot:hero>.addPlayerOnlyDrop(<cyclicmagic:storage_bag> % 10, 1, 1);
+<entity:emberroot:hero>.addPlayerOnlyDrop(<thermalexpansion:satchel:100> % 10, 1, 1);
+<entity:emberroot:withercat>.addDrop(<extrautils2:ingredients:11>, 1, 3);

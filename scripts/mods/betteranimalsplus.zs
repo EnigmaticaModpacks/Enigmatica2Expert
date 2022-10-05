@@ -11,6 +11,16 @@ mods.jei.JEI.addDescription(<betteranimalsplus:handoffate>, handOfFatelocalized)
 
 <entity:betteranimalsplus:zotzpyre>.addDrop(<harvestcraft:hardenedleatheritem> % 70, 1, 3);
 <entity:betteranimalsplus:zotzpyre>.addPlayerOnlyDrop(<harvestcraft:netherwingsitem>, 1, 3);
+<entity:betteranimalsplus:badger>.addDrop(<randomthings:fertilizeddirt>, 1, 2);
+<entity:betteranimalsplus:badger>.addPlayerOnlyDrop(<twilightforest:uberous_soil>, 1, 4);
+<entity:betteranimalsplus:bobbit_worm>.addPlayerOnlyDrop(<iceandfire:sea_serpent_scales_bronze> % 20, 1, 1);
+<entity:betteranimalsplus:badger>.addDrop(<rats:garbage_pile>, 1, 3);
+<entity:betteranimalsplus:feralwolf>.addDrop(<betteranimalsplus:wolf_pelt_timber>, 1, 3);
+<entity:betteranimalsplus:fox>.addPlayerOnlyDrop(<mysticalagriculture:chunk:8>, 1, 3);
+<entity:betteranimalsplus:goose>.addPlayerOnlyDrop(<bibliocraft:bell> % 5, 1, 1);
+<entity:betteranimalsplus:horseshoecrab>.addDrop(<iceandfire:sea_serpent_scales_bronze> % 50, 1, 1);
+<entity:betteranimalsplus:songbird>.addDrop(<twilightforest:raven_feather>, 1, 3);
+<entity:betteranimalsplus:tarantula>.addPlayerOnlyDrop(<randomthings:ingredient:1> % 50, 1, 1);
 
 <ore:pelt>.addItems([
 	<betteranimalsplus:bear_skin_black>,

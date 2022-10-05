@@ -362,3 +362,7 @@ mods.botania.ManaInfusion.addInfusion(<astralsorcery:blockcustomflower>, <biomes
 
 # Melt Gaia's Head to receive Dark Matter
 scripts.process.melt(<botania:gaiahead>, <liquid:dark_matter> * (144*3), "except: Melter");
+
+<entity:botania:pink_wither>.addDrop(<enderio:item_alloy_endergy_ingot:4>, 2, 6);
+<entity:botania:pink_wither>.addDrop(<industrialforegoing:pink_slime_ingot>, 3, 9);
+<entity:botania:pixie>.addPlayerOnlyDrop(<jaopca:item_dusttinytitanium>, 1, 3);

@@ -351,3 +351,17 @@ for spawner, rewards in spawnerRecycle {
 # Alt from chicken
 mods.tconstruct.Alloy.addRecipe(<liquid:fierymetal> * 144, [<liquid:fiery_essence> * 250, <liquid:end_steel> * 144]);
 mods.tconstruct.Alloy.addRecipe(<liquid:lava> * 288,       [<liquid:fiery_essence> * 50,  <liquid:stone> * 288]);
+
+<entity:twilightforest:ice_crystal>.addDrop(<iceandfire:dragon_ice>, 1, 3);
+<entity:twilightforest:pinch_beetle>.addDrop(<thermalfoundation:material:2051>, 1, 3);
+<entity:twilightforest:redcap_sapper>.addPlayerOnlyDrop(<tconevo:material> % 50, 1, 2);
+<entity:twilightforest:redcap>.addPlayerOnlyDrop(<tconevo:material> % 50, 1, 2);
+<entity:twilightforest:slime_beetle>.addDrop(<tconstruct:materials:9>, 1, 3);
+<entity:twilightforest:squirrel>.addDrop(<harvestcraft:chestnutitem> % 30, 1, 1);
+<entity:twilightforest:squirrel>.addDrop(<harvestcraft:hazelnutitem> % 30, 1, 1);
+<entity:twilightforest:squirrel>.addDrop(<harvestcraft:nutmegitem> % 30, 1, 1);
+<entity:twilightforest:squirrel>.addDrop(<harvestcraft:peanutitem> % 30, 1, 1);
+<entity:twilightforest:squirrel>.addDrop(<harvestcraft:waterchestnutitem> % 30, 1, 1);
+<entity:twilightforest:stable_ice_core>.addDrop(<mysticalagriculture:ice_essence>, 4, 12);
+<entity:twilightforest:unstable_ice_core>.addDrop(<forestry:crafting_material:5>, 3, 9);
+<entity:twilightforest:wraith>.addDrop(<enderio:block_holier_fog>, 10, 40);

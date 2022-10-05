@@ -418,3 +418,6 @@ craft.make(<rats:rat_toga>, ["pretty",
 
 # Make string cheese with wire press
 mods.immersiveengineering.MetalPress.addRecipe(<rats:string_cheese>, <ore:foodCheese>, <immersiveengineering:mold:4>, 100, 1);
+
+<entity:rats:pirat_boat>.addPlayerOnlyDrop(<actuallyadditions:block_misc:4>, 1, 3);
+<entity:rats:plague_cloud>.addDrop(<quark:soul_bead>, 1, 3);

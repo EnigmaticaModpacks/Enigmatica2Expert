@@ -159,3 +159,18 @@ scripts.processUtils.avdRockXmlRecipe("Crystallizer", [<ore:itemSalt>], [<fluid:
 scripts.processUtils.avdRockXmlRecipe("Crystallizer", [<ore:itemSalt>], [<fluid:milk_jersey>   * 500], [<animania:jersey_cheese_wheel>], null);
 scripts.processUtils.avdRockXmlRecipe("Crystallizer", [<ore:itemSalt>], [<fluid:milk_holstein> * 500], [<animania:holstein_cheese_wheel>], null);
 scripts.processUtils.avdRockXmlRecipe("Crystallizer", [<ore:itemSalt>], [<fluid:milk_friesian> * 500], [<animania:friesian_cheese_wheel>], null);
+
+# New cross-mod drops
+<entity:animania:bull_mooshroom>.addDrop(<thaumicwonders:vishroom_spore>, 2, 6);
+<entity:animania:calf_mooshroom>.addDrop(<thaumicwonders:vishroom_spore>, 2, 6);
+<entity:animania:cow_mooshroom>.addDrop(<thaumicwonders:vishroom_spore>, 2, 6);
+<entity:animania:bull_mooshroom>.addDrop(<nuclearcraft:glowing_mushroom>, 2, 12);
+<entity:animania:calf_mooshroom>.addPlayerOnlyDrop(<toolprogression:magic_mushroom>, 1, 1);
+<entity:animania:cow_mooshroom>.addPlayerOnlyDrop(<ic2:crop_seed_bag>.withTag({owner: "ic2", scan: 4 as byte, growth: 20 as byte, id: "red_mushroom", resistance: 20 as byte, gain: 20 as byte}), 1, 1);
+<entity:animania:ferret_grey>.addDrop(<actuallyadditions:item_hairy_ball>,  1, 5);
+<entity:animania:ferret_white>.addDrop(<actuallyadditions:item_hairy_ball>, 1, 5);
+<entity:animania:hamster>.addDrop(<actuallyadditions:item_hairy_ball>, 2, 3);
+<entity:animania:hedgehog>.addDrop(<exnihilocreatio:item_material:2>, 1, 3);
+<entity:animania:hedgehog>.addPlayerOnlyDrop(<actuallyadditions:item_worm>, 1, 3);
+<entity:animania:hedgehog_albino>.addDrop(<exnihilocreatio:item_material:2>, 1, 3);
+<entity:animania:hedgehog_albino>.addPlayerOnlyDrop(<actuallyadditions:item_worm>, 1, 3);
