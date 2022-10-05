@@ -1,0 +1,20 @@
+# FURNACES
+tile.ma.inferium_furnace.name=§eОдин Раз Сжатая Печь
+tile.ma.inferium_furnace_active.name=§eОдин Раз Сжатая Печь
+container.ma.inferium_furnace.name=Один Раз Сжатая Печь
+
+tile.ma.prudentium_furnace.name=§aДва Раза Сжатая Печь
+tile.ma.prudentium_furnace_active.name=§aДва Раза Сжатая Печь
+container.ma.prudentium_furnace.name=Два Раза Сжатая Печь
+
+tile.ma.intermedium_furnace.name=§6Три Раза Сжатая Печь
+tile.ma.intermedium_furnace_active.name=§6Три Раза Сжатая Печь
+container.ma.intermedium_furnace.name=Три Раза Сжатая Печь
+
+tile.ma.superium_furnace.name=§bЧетыре Раза Сжатая Печь
+tile.ma.superium_furnace_active.name=§bЧетыре Раза Сжатая Печь
+container.ma.superium_furnace.name=Четыре Раза Сжатая Печь
+
+tile.ma.supremium_furnace.name=§cПять Раз Сжатая Печь
+tile.ma.supremium_furnace_active.name=§cПять Раз Сжатая Печь
+container.ma.supremium_furnace.name=Пять Раз Сжатая Печь

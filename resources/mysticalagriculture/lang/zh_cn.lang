@@ -1,0 +1,20 @@
+# FURNACES
+tile.ma.inferium_furnace.name=§e单层压缩炉
+tile.ma.inferium_furnace_active.name=§e单层压缩炉
+container.ma.inferium_furnace.name=单层压缩炉
+
+tile.ma.prudentium_furnace.name=§a双层压缩炉
+tile.ma.prudentium_furnace_active.name=§a双层压缩炉
+container.ma.prudentium_furnace.name=双层压缩炉
+
+tile.ma.intermedium_furnace.name=§6三层压缩炉
+tile.ma.intermedium_furnace_active.name=§6三层压缩炉
+container.ma.intermedium_furnace.name=三层压缩炉
+
+tile.ma.superium_furnace.name=§b四联压缩炉
+tile.ma.superium_furnace_active.name=§b四联压缩炉
+container.ma.superium_furnace.name=四联压缩炉
+
+tile.ma.supremium_furnace.name=§c五联压缩炉
+tile.ma.supremium_furnace_active.name=§c五联压缩炉
+container.ma.supremium_furnace.name=五联压缩炉

@@ -41,7 +41,7 @@ craft.remake(<requious:infinity_furnace>, ["pretty",
   "T R E R T"], {
   "R": <rats:marbled_cheese_raw>,                 # Raw Marbled Cheese
   "#": <ore:logSequoia>,                          # Sequoia
-  "T": <avaritiafurnace:triplecompressedfurnace>, # Triple Compressed Furnace
+  "T": <mysticalagriculture:supremium_furnace>,
   "E": <contenttweaker:empowered_phosphor>,       # Empowered Phosphor
   "r": <rats:idol_of_ratlantis>,
   "H": <scalinghealth:heartcontainer>,            # Heart Container

@@ -135,3 +135,6 @@ utils.rh(<jaopca:item_nuggettungsten>);
 utils.rh(<enderio:item_owl_egg>, false);
 utils.rh(<thermalfoundation:material:656>);
 utils.rh(<ae2stuff:visualiser>);
+utils.rh(<avaritiafurnace:compressedfurnace>);
+utils.rh(<avaritiafurnace:doublecompessedfurnace>);
+utils.rh(<avaritiafurnace:triplecompressedfurnace>);

@@ -1,0 +1,20 @@
+# FURNACES
+tile.ma.inferium_furnace.name=§eSingle Compressed Furnace
+tile.ma.inferium_furnace_active.name=§eSingle Compressed Furnace
+container.ma.inferium_furnace.name=Single Compressed Furnace
+
+tile.ma.prudentium_furnace.name=§aDouble Compressed Furnace
+tile.ma.prudentium_furnace_active.name=§aDouble Compressed Furnace
+container.ma.prudentium_furnace.name=Double Compressed Furnace
+
+tile.ma.intermedium_furnace.name=§6Triple Compressed Furnace
+tile.ma.intermedium_furnace_active.name=§6Triple Compressed Furnace
+container.ma.intermedium_furnace.name=Triple Compressed Furnace
+
+tile.ma.superium_furnace.name=§bQuadruple Compressed Furnace
+tile.ma.superium_furnace_active.name=§bQuadruple Compressed Furnace
+container.ma.superium_furnace.name=Quadruple Compressed Furnace
+
+tile.ma.supremium_furnace.name=§cQuintuple Compressed Furnace
+tile.ma.supremium_furnace_active.name=§cQuintuple Compressed Furnace
+container.ma.supremium_furnace.name=Quintuple Compressed Furnace

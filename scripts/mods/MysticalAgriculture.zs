@@ -92,14 +92,6 @@ val seedIngrByTier = [
   <actuallyadditions:item_misc:24>,  # Empowered Canola Seed
 ] as IIngredient[];
 
-val furnaceByTier = [
-	<mysticalagriculture:inferium_furnace>,
-	<mysticalagriculture:prudentium_furnace>,
-	<mysticalagriculture:intermedium_furnace>,
-	<mysticalagriculture:superium_furnace>,
-	<mysticalagriculture:supremium_furnace>,
-	<mysticalagriculture:ultimate_furnace>,
-] as IItemStack[];
 
 for i in 0 .. 6 {
 	val shape = scripts.craft.grid.Grid(["pretty",
@@ -116,16 +108,6 @@ for i in 0 .. 6 {
 	recipes.remove(output);
 	if(i==5) mods.forestry.Carpenter.addRecipe(output, shape, 40, <liquid:sewage> * 1000);
 	else recipes.addShaped(output, shape);
-
-	# Furnaces
-	if (i < 5)
-		craft.remake(furnaceByTier[i], ["pretty",
-			"  $  ",
-			"$ o $",
-			"  $  "], {
-			"$": essenceByTier[i],
-			"o": i==0 ? <minecraft:furnace> : furnaceByTier[i - 1],
-		});
 }
 
 # *======= Universal Recipe =======*
@@ -882,3 +864,25 @@ craft.make(<mysticalagradditions:stuff:1>, ["pretty",
   "T": <mysticalagradditions:nether_star_essence>, # Nether Star Essence
   "G": <ore:paneGlassBlack>, # Black Stained Glass Pane
 });
+
+# ---------------------------------
+# Furnaces rework
+# ---------------------------------
+# Now they are silmply compressed
+val furnaceByTier = [
+	<minecraft:furnace>,
+	<mysticalagriculture:inferium_furnace>,
+	<mysticalagriculture:prudentium_furnace>,
+	<mysticalagriculture:intermedium_furnace>,
+	<mysticalagriculture:superium_furnace>,
+	<mysticalagriculture:supremium_furnace>,
+] as IItemStack[];
+
+for i, item in furnaceByTier {
+	if(i==0) continue;
+	val prev = furnaceByTier[i - 1];
+	recipes.remove(item);
+	recipes.addShapeless('4x' ~ craft.uniqueRecipeName(item), item, [prev, prev, prev, prev]);
+	recipes.addShapeless('1x' ~ craft.uniqueRecipeName(item), prev * 4, [item]);
+}
+# ---------------------------------
