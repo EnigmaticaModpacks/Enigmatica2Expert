@@ -749,6 +749,11 @@
 	{
 		item: "bhc:red_heart",
 		weight: 80
+	},
+	{
+		item: "thermaldynamics:duct_64",
+		count: 128,
+		weight: 10
 	}],
 	loot_crate: {
 		string_id: "common",

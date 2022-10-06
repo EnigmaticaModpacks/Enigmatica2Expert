@@ -535,6 +535,16 @@
 	{
 		item: "testdummy:dummy",
 		weight: 10
+	},
+	{
+		item: "thermaldynamics:duct_64 1 2",
+		count: 32,
+		weight: 10
+	},
+	{
+		item: "thermaldynamics:duct_64 1 1",
+		count: 128,
+		weight: 10
 	}],
 	loot_crate: {
 		string_id: "uncommon",

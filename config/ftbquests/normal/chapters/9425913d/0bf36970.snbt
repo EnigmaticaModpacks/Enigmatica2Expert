@@ -23,8 +23,15 @@
 		count: 4
 	},
 	{
-		uid: "2c144259",
+		uid: "c57347a3",
 		type: "item",
-		item: "nuclearcraft:geiger_counter"
+		item: {
+			id: "nuclearcraft:voltaic_pile_basic",
+			tag: {
+				capacity: 1600000,
+				maxTransfer: 80000,
+				energy: 0
+			}
+		}
 	}]
 }
