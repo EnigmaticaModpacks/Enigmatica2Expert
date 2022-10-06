@@ -1,0 +1,18 @@
+diff --git "a/~bansoukou_unpatched\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\api\\golems\\parts\\GolemMaterial.java" "b/bansoukou\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\api\\golems\\parts\\GolemMaterial.java"
+index 26c6abbd..b87e2cc4 100644
+--- "a/~bansoukou_unpatched\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\api\\golems\\parts\\GolemMaterial.java"
++++ "b/bansoukou\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\api\\golems\\parts\\GolemMaterial.java"
+@@ -36,10 +36,10 @@ public class GolemMaterial {
+         this.itemColor = itemColor;
+         this.componentBase = compb;
+         this.componentMechanism = compm;
+-        this.healthMod = hp;
+-        this.armor = armor;
++        this.healthMod = hp * 2;
++        this.armor = armor * armor / 10 + armor;
+         this.traits = tags;
+-        this.damage = damage;
++        this.damage = damage * damage / 2 + damage;
+     }
+ 
+     public static void register(GolemMaterial thing) {
