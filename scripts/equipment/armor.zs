@@ -153,18 +153,20 @@ function getSetPiece(setData as IData, pieceN as int) as IItemStack {
 
 static setNames as string[] = ["Helmet", "Chestplate", "Leggins", "Boots"] as string[];
 
-function createRecipe(setData as IData, setId as string, pieceN as int, list as IIngredient[][]) {
-	val item = getSetPiece(setData, pieceN);
-	if (!isNull(item)) {
-		remakeEx(item, list);
+function createRecipe(setData as IData, setId as string, pieceN as int, ingrs as IIngredient[][]) {
+	val setPiece = getSetPiece(setData, pieceN);
+	if (!isNull(setPiece)) {
+		recipes.removeShaped(setPiece);
+		recipes.addShaped(craft.uniqueRecipeName(setPiece), setPiece, ingrs, utils.smartUpgradeFnc, null);
 	} else {
 		logger.logWarning("Armor.zs Error. No armor for set {"~setId~"} for piece: "~setNames[pieceN]);
 	}
 }
 
+
 function armGridExtra(n as int, mat as IIngredient, extra as IIngredient, prev as IData) as IIngredient[][] {
 	val prevReal = getSetPiece(prev, n);
-	val prevAny = !isNull(prevReal) ? prevReal.anyDamage() : null;
+	val prevAny = !isNull(prevReal) ? prevReal.anyDamage().marked('marked') : null;
 	if        (n == 0) { return [[mat, extra, mat], [mat, prevAny, mat], [null, null, null]] as IIngredient[][];
 	} else if (n == 1) { return [[mat, prevAny, mat], [mat, extra, mat], [mat, mat, mat]] as IIngredient[][];
 	} else if (n == 2) { return [[mat, extra, mat], [mat, prevAny, mat], [mat, null, mat]] as IIngredient[][];

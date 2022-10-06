@@ -259,12 +259,51 @@ zenClass Utils {
 
 
   # Turn one item into another but keep all tags
-  var upgradeFnc as IRecipeFunction = function(out, ins, cInfo){
+  val upgradeFnc as IRecipeFunction = function(out, ins, cInfo) {
     if(ins has "marked" && !isNull(ins.marked) && !isNull(ins.marked.tag)) {
-      var tag = ins.marked.tag;
+      val tag = ins.marked.tag;
       return out.withTag(tag);
     }
     return out;
+  };
+
+  # Smart keeping tags, like enchantments and EnderIO upgrades
+  val smartUpgradeFnc as IRecipeFunction = function(out, ins, cInfo) {
+    if(isNull(ins)) return out;
+
+    // Find origin item with tag
+    var originItem as IItemStack = ins.marked;
+    if(isNull(originItem)) {
+      for key, ingr in ins {
+        if(isNull(ingr) || isNull(ingr.tag)) continue;
+        originItem = ingr;
+        break;
+      }
+    }
+    if(isNull(originItem) || isNull(originItem.tag) || originItem.tag == {} as IData) return out;
+
+    // Copy whitelisted tags
+    var newTag = isNull(out.tag) ? {} as IData : out.tag;
+    val oldMod = originItem.definition.id.split(":")[0];
+    val newMod = out.definition.id.split(":")[0];
+    val sameMod = oldMod == newMod;
+    for key, value in originItem.tag.asMap() {
+      if(
+        (sameMod && (
+          key.startsWith('enderio.')
+        ))
+        || key == 'ench'
+        || key == 'infench'
+        || key == 'ncRadiationResistance'
+        || key == 'enchantmentColor'
+        || key == 'hasIC2Jetpack'
+        || key == 'spectreAnchor'
+        || key == 'display'
+      )
+        newTag += {[key]: value} as IData;
+    }
+
+    return out.withTag(newTag);
   };
 
 
