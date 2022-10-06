@@ -212,16 +212,16 @@ recipes.removeByRecipeName("thermalexpansion:reservoir_13");
 recipes.removeByRecipeName("thermalexpansion:reservoir_14");
 
 # Duct filling compat
-scripts.process.fill(<thermaldynamics:duct_0:6>,  <liquid:redstone>*200,  <thermaldynamics:duct_0:2>,  null);
-scripts.process.fill(<thermaldynamics:duct_0:7>,  <liquid:redstone>*200,  <thermaldynamics:duct_0:3>,  null);
-scripts.process.fill(<thermaldynamics:duct_0:8>,  <liquid:redstone>*200,  <thermaldynamics:duct_0:4>,  null);
-scripts.process.fill(<thermaldynamics:duct_0:9>,  <liquid:cryotheum>*500, <thermaldynamics:duct_0:5>,  null);
-scripts.process.fill(<thermaldynamics:duct_32:1>, <liquid:glowstone>*200, <thermaldynamics:duct_32:3>, null);
-scripts.process.fill(<thermaldynamics:duct_32:4>, <liquid:glowstone>*200, <thermaldynamics:duct_32:6>, null);
-scripts.process.fill(<thermaldynamics:duct_32:5>, <liquid:glowstone>*200, <thermaldynamics:duct_32:7>, null);
-scripts.process.fill(<thermaldynamics:duct_32>,   <liquid:glowstone>*200, <thermaldynamics:duct_32:2>, null);
-scripts.process.fill(<thermaldynamics:duct_64:3>, <liquid:aerotheum>*500, <thermaldynamics:duct_64>,   null);
-scripts.process.fill(<thermaldynamics:duct_64>,   <liquid:ender>*1000,    <thermaldynamics:duct_64:2>, null);
+scripts.process.fill(<thermaldynamics:duct_0:6>,  <liquid:redstone>*200,  <thermaldynamics:duct_0:2>);
+scripts.process.fill(<thermaldynamics:duct_0:7>,  <liquid:redstone>*200,  <thermaldynamics:duct_0:3>);
+scripts.process.fill(<thermaldynamics:duct_0:8>,  <liquid:redstone>*200,  <thermaldynamics:duct_0:4>);
+scripts.process.fill(<thermaldynamics:duct_0:9>,  <liquid:cryotheum>*500, <thermaldynamics:duct_0:5>);
+scripts.process.fill(<thermaldynamics:duct_32:1>, <liquid:glowstone>*200, <thermaldynamics:duct_32:3>);
+scripts.process.fill(<thermaldynamics:duct_32:4>, <liquid:glowstone>*200, <thermaldynamics:duct_32:6>);
+scripts.process.fill(<thermaldynamics:duct_32:5>, <liquid:glowstone>*200, <thermaldynamics:duct_32:7>);
+scripts.process.fill(<thermaldynamics:duct_32>,   <liquid:glowstone>*200, <thermaldynamics:duct_32:2>);
+scripts.process.fill(<thermaldynamics:duct_64:3>, <liquid:oliveoil>*300,  <thermaldynamics:duct_64>);
+scripts.process.fill(<thermaldynamics:duct_64>,   <liquid:biomass>*300,   <thermaldynamics:duct_64:2>);
 
 # More TE coolants
 # mods.thermalexpansion.Coolant.addCoolant(ILiquidStack fluid, int coolantRf, int coolantFactor);
@@ -345,7 +345,8 @@ for name in [
 	"cache_5"    , "cache"      ,
 	// "reservoir_1", "reservoir_2", "reservoir_3", "reservoir_4", "reservoir"  ,
 	"satchel_2"  , "satchel_3"  , "satchel_4"  , "satchel_5",
-	"satchel_6"  , "satchel_7"  , "strongbox_1",
+	// "satchel_6"  , "satchel_7"  , // Void Satchel
+	"strongbox_1",
 	"strongbox_2", "strongbox_3", "strongbox_4", "strongbox_5",
 	"strongbox"  , "tank_1"     , "tank_2"     , "tank_3",
 	"tank_4"     , "tank_5"     , "tank"
@@ -358,8 +359,8 @@ for i in 130 to 133 {
 	mods.thermalexpansion.Transposer.removeFillRecipe(<thermalexpansion:frame>.definition.makeStack(i), <liquid:redstone> * 4000);
 }
 
-val upgradeFnc as IRecipeFunction = function(out, ins, cInfo){
-	if(ins has "marked" && !isNull(ins.marked) && ins.marked.hasTag) {
+val tieredUpgradeFnc as IRecipeFunction = function(out, ins, cInfo){
+	if(ins has "marked" && !isNull(ins.marked) && !isNull(ins.marked.tag)) {
 		return ins.marked.updateTag({Level: D(ins.marked.tag).getByte("Level", 0) + 1 as byte});
 	}
 	return out;
@@ -397,7 +398,7 @@ for i, mat in materials {
 		"a": i!=0 ? oreDict["ingot" ~ materials[i - 1]] : <ore:ingotCopper>,
 		"g": oreDict["gear" ~ mat],
 		"□": <tconstruct:clear_glass>,
-	}, i!=0 ? upgradeFnc : null);
+	}, i!=0 ? tieredUpgradeFnc : null);
 
 	# [Flux Capacitor (Basic)] from [Copper Ingot][+3]
 	craft.make(<thermalexpansion:capacitor>.definition.makeStack(i), ["pretty",
@@ -408,15 +409,16 @@ for i, mat in materials {
 		"♥": <ore:ingotRedstoneAlloy>,
 		"▬": oreDict["ingot" ~ mat],
 		"-": i!=0
-			? <thermalexpansion:capacitor>.definition.makeStack(i - 1) as IIngredient
+			? <thermalexpansion:capacitor>.definition.makeStack(i - 1).marked("marked")
 			: <ore:ingotCopper>,
-	});
+	}, i!=0 ? utils.upgradeFnc : null);
 
 	if(i != 0) {
 		# Simplify Satchels
 		craft.make(
 			<thermalexpansion:satchel>.definition.makeStack(i), ["aOa"],
-			{O: <thermalexpansion:satchel>.definition.makeStack(i - 1).marked("marked"), a: oreDict["nugget" ~ mat]}, utils.upgradeFnc
+			{O: <thermalexpansion:satchel>.definition.makeStack(i - 1).marked("marked"), a: oreDict["nugget" ~ mat]},
+			utils.upgradeFnc
 		);
 
 		# Cache
@@ -427,7 +429,7 @@ for i, mat in materials {
 			"♥": <thermalexpansion:cache>.withTag(lvl_im).marked("marked"),
 			"▬": oreDict["ingot" ~ materials[i - 1]],
 			",": oreDict["nugget" ~ mat],
-		}, upgradeFnc);
+		}, tieredUpgradeFnc);
 
 		# Strongbox
 		craft.remake(<thermalexpansion:strongbox>.withTag(lvl_i), ["pretty",
@@ -437,7 +439,7 @@ for i, mat in materials {
 			"♥": <thermalexpansion:strongbox>.withTag(lvl_im).marked("marked"),
 			"▬": oreDict["nugget" ~ mat],
 			"i": oreDict["nugget" ~ materials[i - 1]],
-		}, upgradeFnc);
+		}, tieredUpgradeFnc);
 	}
 
 	# Cell
@@ -453,7 +455,7 @@ for i, mat in materials {
 			: oreDict["plate" ~ materials[i - 1]]),
 		"g": oreDict["gear" ~ mat],
 		"c": <thermalfoundation:material:515>, # Redstone Conductance Coil
-	}, (i==0)?null:upgradeFnc);
+	}, (i==0)?null:tieredUpgradeFnc);
 }
 
 # Cache
@@ -736,3 +738,23 @@ mods.thermalexpansion.InductionSmelter.addRecipe(<thermalfoundation:material:160
 # x100 energy consumption
 mods.thermalexpansion.Infuser.removeRecipe(<thermalfoundation:fertilizer:1>);
 mods.thermalexpansion.Infuser.addRecipe(<thermalfoundation:fertilizer:2>, <thermalfoundation:fertilizer:1>, 400000);
+
+# Way cheaper viaducts
+# [Viaduct (Untreated)]*64 from [Clear Glass][+1]
+craft.remake(<thermaldynamics:duct_64:3> * 64, ["pretty",
+  "□ ■ □",
+  "■   ■",
+  "□ ■ □"], {
+  "□": <ore:plateBronze>,        # Bronze Plate
+  "■": <tconstruct:clear_glass>, # Clear Glass
+});
+
+# Way cheaper viaducts
+# [Long Range Viaduct]*64 from [Clear Glass][+1]
+craft.remake(<thermaldynamics:duct_64:1> * 64, ["pretty",
+  "□ ■ □",
+  "■   ■",
+  "□ ■ □"], {
+  "□": <thermalfoundation:material:323>, # Lead Plate
+  "■": <tconstruct:clear_glass>,         # Clear Glass
+});

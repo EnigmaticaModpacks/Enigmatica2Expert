@@ -18,7 +18,7 @@ if(utils.DEBUG) mods.jei.JEI.addItem(<draconicevolution:draconium_chest>.withTag
 	recipes.addShapedMirrored("Mob Grinder",
 	<draconicevolution:grinder>,
 	[[<ore:ingotElectricalSteel>, <draconicevolution:draconium_block:1>, <ore:ingotElectricalSteel>],
-	[<astralsorcery:itemcrystalsword>.withTag({}, false), <draconicevolution:draconic_core>, <astralsorcery:itemcrystalsword>.withTag({}, false)],
+	[<astralsorcery:itemcrystalsword:*>.withTag({astralsorcery:{}}), <draconicevolution:draconic_core>, <astralsorcery:itemcrystalsword:*>.withTag({astralsorcery:{}})],
 	[<ore:ingotElectricalSteel>, <industrialforegoing:mob_relocator>, <ore:ingotElectricalSteel>]]);
 
 # Charged Draconium

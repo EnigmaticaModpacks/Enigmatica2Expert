@@ -9,7 +9,7 @@ craft.shapeless(<additionalcompression:meatfish_compressed>, "fffffffff", {
 # [Single Compressed Wood] from [Oak Wood]*3
 recipes.removeByRecipeName("additionalcompression:recipe_compressedlogwood1");
 craft.shapeless(<additionalcompression:logwood_compressed>, "#########", {
-  "#": <minecraft:log:*>, # Oak Wood
+  "#": <minecraft:log:*> | <minecraft:log2:*>, # Oak Wood
 });
 
 # [Single Compressed Clay] from [Clay]

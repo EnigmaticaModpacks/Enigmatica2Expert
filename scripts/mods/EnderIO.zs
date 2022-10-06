@@ -33,10 +33,9 @@ craft.remake(<enderio:block_impulse_hopper>, ["pretty",
 
 # [Painting Machine] from [Dyeing Machine][+5]
 craft.remake(<enderio:block_painter>, ["pretty",
-  "P D a",
+  "a D a",
   "¤ F ¤",
   "F ■ F"], {
-  "P": <ic2:painter>.withTag({}, false) | <ic2:painter:*>, # Painter
   "D": <randomthings:dyeingmachine>,   # Dyeing Machine
   "a": <openblocks:paintbrush>.anyDamage(), # Paint Brush
   "¤": <ore:gearIronInfinity>,         # Infinity Bimetal Gear
@@ -221,7 +220,7 @@ craft.remake(<enderio:item_basic_capacitor>, ["pretty",
 		[<ore:ingotElectricalSteel>, <enderio:item_power_conduit>, <ore:ingotElectricalSteel>]]);
 
 # Dark Steel Upgrade Recycling
-	mods.nuclearcraft.decay_hastener.addRecipe([<enderio:item_dark_steel_upgrade:1>.anyDamage(), <enderio:item_dark_steel_upgrade>, 2.0, 2.0]);
+	mods.nuclearcraft.decay_hastener.addRecipe([<ore:upgradeDarkSteel>, <enderio:item_dark_steel_upgrade>, 2.0, 2.0]);
 
 # Dark Steel Upgrade Expensive, Thermal
 	mods.thermalexpansion.InductionSmelter.addRecipe(<enderio:item_dark_steel_upgrade>, <enderio:block_alloy:6>, <minecraft:clay>, 25000);

@@ -712,3 +712,5 @@ add(<ore:machineTeleporter>, <mekanism:machineblock:11>);
 addItems(<ore:workbench>, [
 	<randomthings:customworkbench>,
 ]);
+
+add(<ore:upgradeDarkSteel>, <enderio:item_dark_steel_upgrade:*>);

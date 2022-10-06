@@ -567,25 +567,25 @@
   <recipe name="Alumite Ingot">
     <alloying energy="10000">
       <input name="ingotFakeIron" amount="2"/>
-      <input name="obsidian" amount="2"/>
       <input name="ingotAluminium" amount="5"/>
+      <input name="obsidian" amount="2"/>
       <output name="plustic:alumiteingot"/>
     </alloying>
   </recipe>
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Crystalline Alloy Ingot">
     <alloying energy="10000">
-      <input name="enderio:item_material:36"/>
-      <input name="enderio:item_alloy_ingot:2"/>
-      <input name="tconevo:metal:30"/>
+      <input name="itemPulsatingPowder"/>
+      <input name="ingotVibrantAlloy"/>
+      <input name="ingotSentientMetal"/>
       <output name="enderio:item_alloy_endergy_ingot:1"/>
     </alloying>
   </recipe>
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Crystalline Pink Slime Ingot">
     <alloying energy="10000">
-      <input name="enderio:item_material:37"/>
-      <input name="enderio:item_alloy_endergy_ingot:1"/>
+      <input name="itemEnderCrystalPowder"/>
+      <input name="ingotCrystallineAlloy"/>
       <input name="industrialforegoing:pink_slime_ingot"/>
       <output name="enderio:item_alloy_endergy_ingot:4"/>
     </alloying>
@@ -593,18 +593,18 @@
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Melodic Alloy Ingot">
     <alloying energy="10000">
-      <input name="enderio:item_material:35"/>
-      <input name="enderio:item_alloy_endergy_ingot:4"/>
-      <input name="tconevo:metal:40"/>
+      <input name="itemVibrantPowder"/>
+      <input name="ingotCrystallinePinkSlime"/>
+      <input name="ingotUUMatter"/>
       <output name="enderio:item_alloy_endergy_ingot:2"/>
     </alloying>
   </recipe>
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Stellar Alloy Ingot">
     <alloying energy="10000">
-      <input name="enderio:item_material:34"/>
-      <input name="enderio:item_alloy_endergy_ingot:2"/>
-      <input name="tconevo:metal"/>
+      <input name="itemPrecientPowder"/>
+      <input name="ingotMelodicAlloy"/>
+      <input name="ingotWyvernMetal"/>
       <output name="enderio:item_alloy_endergy_ingot:3"/>
     </alloying>
   </recipe>
@@ -621,7 +621,7 @@
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Enderium Base">
     <alloying energy="10000">
-      <input name="enderio:item_alloy_ingot:5"/>
+      <input name="ingotPulsatingIron"/>
       <input name="extendedcrafting:material:36" amount="2"/>
       <output name="enderio:item_material:39"/>
     </alloying>
@@ -629,7 +629,7 @@
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Hard Carbon Alloy">
     <alloying energy="10000">
-      <input name="nuclearcraft:ingot:8" amount="2"/>
+      <input name="ingotGraphite" amount="2"/>
       <input name="rats:rat_diamond"/>
       <output name="nuclearcraft:alloy:2" amount="2"/>
     </alloying>
@@ -637,8 +637,8 @@
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="HSLA Steel Ingot">
     <alloying energy="10000">
-      <input name="minecraft:iron_ingot" amount="15"/>
-      <input name="nuclearcraft:compound:9"/>
+      <input name="ingotIron" amount="15"/>
+      <input name="dustCarbonManganese"/>
       <output name="nuclearcraft:alloy:15" amount="16"/>
     </alloying>
   </recipe>
@@ -656,7 +656,7 @@
   <recipe name="Pulsating Iron Ingot">
     <alloying energy="10000">
       <input name="minecraft:iron_ingot"/>
-      <input name="ic2:dust:32"/>
+      <input name="dustEnderEye"/>
       <output name="enderio:item_alloy_ingot:5"/>
     </alloying>
   </recipe>
@@ -664,7 +664,7 @@
   <recipe name="Quicksand">
     <fermenting energy="10000">
       <inputgroup>
-        <input name="minecraft:soul_sand" multiplier="1.0"/>
+        <input name="soulSand" multiplier="1.0"/>
       </inputgroup>
       <inputfluid name="blueslime" multiplier="1.0"/>
       <outputfluid name="sand"/>
@@ -673,7 +673,7 @@
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Vibrant Alloy Ingot">
     <alloying energy="10000">
-      <input name="enderio:item_alloy_ingot:1"/>
+      <input name="ingotEnergeticAlloy"/>
       <input name="extendedcrafting:material:49"/>
       <output name="enderio:item_alloy_ingot:2" amount="2"/>
     </alloying>
@@ -801,7 +801,7 @@
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Omnivoir">
     <alloying energy="10000">
-      <input name="actuallyadditions:item_misc:5" amount="2"/>
+      <input name="gemQuartzBlack" amount="2"/>
       <output name="enderio:block_omni_reservoir:0"/>
     </alloying>
   </recipe>

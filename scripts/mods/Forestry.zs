@@ -49,9 +49,6 @@ mods.forestry.Carpenter.addRecipe(<forestry:hardened_machine>,
   "⌂": <forestry:sturdy_machine>, # Sturdy Casing
 }).shaped(), 40, <liquid:water> * 5000);
 
-
-# Bee house
-	recipes.remove(<forestry:bee_house>);
 	
 # Carpenter
 	recipes.remove(<forestry:carpenter>);

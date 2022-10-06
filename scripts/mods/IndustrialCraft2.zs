@@ -26,22 +26,6 @@ furnace.addRecipe(<immersiveengineering:metal:5>,   <ic2:purified:6>);
 # Removing IC2 coal coke
 	recipes.remove(<ic2:coke>);
 
-# Jetpacks	
-	recipes.remove(<ic2:jetpack_electric>.anyDamage());
-	recipes.remove(<ic2:jetpack:27>.anyDamage());
-
-	recipes.addShapedMirrored("IC2 Electric Jetpack", 
-	<ic2:jetpack_electric>, 
-	[[<ic2:casing:5>, <minecraft:web>, <ic2:casing:5>],
-	[<ore:circuitAdvanced>, <ic2:batpack>.withTag({}, false).anyDamage(), <ore:circuitAdvanced>], 
-	[<ic2:casing:5>, null, <ic2:casing:5>]]);
-	
-	recipes.addShapedMirrored("IC2 Jetpack", 
-	<ic2:jetpack:27>, 
-	[[<ic2:casing:5>, <minecraft:web>, <ic2:casing:5>],
-	[<ore:circuitAdvanced>, <ic2:te:29>, <ore:circuitAdvanced>], 
-	[<ic2:casing:5>, null, <ic2:casing:5>]]);
-
 # Hazmat/Rubber Armor
 	recipes.addShaped("Hazmat ", <ic2:hazmat_helmet>, 
 	[[<ore:dyeOrange>, <ore:dyeOrange>, <ore:dyeOrange>],
@@ -157,40 +141,41 @@ mods.tconstruct.Melting.addRecipe(<liquid:steel>   * 9216, <ic2:block_cutting_bl
 mods.tconstruct.Melting.addRecipe(<liquid:alumite> * 9216, <ic2:block_cutting_blade:2>);
 
 # New Scraps
-ScrapBox.addDrop(<appliedenergistics2:material:6>, 4.0F);
-ScrapBox.addDrop(<thermalfoundation:diagram_redprint>, 3.1F);
-ScrapBox.addDrop(<thermalfoundation:material:864>, 2.8F);
-ScrapBox.addDrop(<mekanism:substrate>, 2.4F);
-ScrapBox.addDrop(<mekanismgenerators:hohlraum>, 2.1F);
-ScrapBox.addDrop(<rftools:syringe>, 1.7F);
-ScrapBox.addDrop(<mekanism:mufflingupgrade>, 1.5F);
-ScrapBox.addDrop(<industrialforegoing:plastic>, 1.1F);
-ScrapBox.addDrop(<mekanism:polyethene:2>, 0.9F);
-ScrapBox.addDrop(<nuclearcraft:upgrade:1>, 0.9F);
-ScrapBox.addDrop(<nuclearcraft:upgrade>, 0.9F);
-ScrapBox.addDrop(<appliedenergistics2:material:52>, 0.6F);
-ScrapBox.addDrop(<immersiveengineering:material:5>, 0.6F);
-ScrapBox.addDrop(<extrautils2:decorativesolid:3>, 0.4F);
-ScrapBox.addDrop(<extrautils2:decorativesolid:7>, 0.4F);
-ScrapBox.addDrop(<immersiveengineering:stone_decoration:8>, 0.4F);
-ScrapBox.addDrop(<industrialforegoing:pink_slime>, 0.3F);
-ScrapBox.addDrop(<rftools:shape_card>, 0.3F);
-ScrapBox.addDrop(<appliedenergistics2:fluix_block>, 0.2F);
-ScrapBox.addDrop(<actuallyadditions:item_crystal_shard:1>, 0.1F);
-ScrapBox.addDrop(<actuallyadditions:item_crystal_shard:2>, 0.1F);
-ScrapBox.addDrop(<actuallyadditions:item_crystal_shard:3>, 0.1F);
-ScrapBox.addDrop(<actuallyadditions:item_crystal_shard:4>, 0.1F);
-ScrapBox.addDrop(<actuallyadditions:item_crystal_shard:5>, 0.1F);
-ScrapBox.addDrop(<actuallyadditions:item_crystal_shard>, 0.1F);
-ScrapBox.addDrop(<extrautils2:klein>, 0.1F);
-ScrapBox.addDrop(<immersiveengineering:material:26>, 0.1F);
-ScrapBox.addDrop(<psi:cad_colorizer_:17>, 0.1F);
-ScrapBox.addDrop(<thermalexpansion:frame:64>, 0.05F);
-ScrapBox.addDrop(<rftoolsdim:dimlet_parcel>, 0.03F);
-ScrapBox.addDrop(<forestry:chipsets:0>.withTag({T:0 as short}), 0.1F);
-ScrapBox.addDrop(<forestry:chipsets:1>.withTag({T:1 as short}), 0.06F);
-ScrapBox.addDrop(<forestry:chipsets:2>.withTag({T:2 as short}), 0.04F);
-ScrapBox.addDrop(<forestry:chipsets:3>.withTag({T:3 as short}), 0.01F);
+ScrapBox.addDrop(<ic2:crafting:24>                            , 0.00000001F); // First entry there would always be outputted, like, x1000 times more often
+ScrapBox.addDrop(<appliedenergistics2:material:6>             , 6.0F);
+ScrapBox.addDrop(<thermalfoundation:diagram_redprint>         , 4.65F);
+ScrapBox.addDrop(<thermalfoundation:material:864>             , 4.2F);
+ScrapBox.addDrop(<mekanism:substrate>                         , 3.6F);
+ScrapBox.addDrop(<mekanismgenerators:hohlraum>                , 3.15F);
+ScrapBox.addDrop(<rftools:syringe>                            , 2.55F);
+ScrapBox.addDrop(<mekanism:mufflingupgrade>                   , 2.25F);
+ScrapBox.addDrop(<industrialforegoing:plastic>                , 1.65F);
+ScrapBox.addDrop(<mekanism:polyethene:2>                      , 1.35F);
+ScrapBox.addDrop(<nuclearcraft:upgrade:1>                     , 1.35F);
+ScrapBox.addDrop(<nuclearcraft:upgrade>                       , 1.35F);
+ScrapBox.addDrop(<appliedenergistics2:material:52>            , 0.9F);
+ScrapBox.addDrop(<immersiveengineering:material:5>            , 0.9F);
+ScrapBox.addDrop(<extrautils2:decorativesolid:3>              , 0.6F);
+ScrapBox.addDrop(<extrautils2:decorativesolid:7>              , 0.6F);
+ScrapBox.addDrop(<immersiveengineering:stone_decoration:8>    , 0.6F);
+ScrapBox.addDrop(<industrialforegoing:pink_slime>             , 0.45F);
+ScrapBox.addDrop(<rftools:shape_card>                         , 0.45F);
+ScrapBox.addDrop(<appliedenergistics2:fluix_block>            , 0.3F);
+ScrapBox.addDrop(<actuallyadditions:item_crystal_shard:1>     , 0.15F);
+ScrapBox.addDrop(<actuallyadditions:item_crystal_shard:2>     , 0.15F);
+ScrapBox.addDrop(<actuallyadditions:item_crystal_shard:3>     , 0.15F);
+ScrapBox.addDrop(<actuallyadditions:item_crystal_shard:4>     , 0.15F);
+ScrapBox.addDrop(<actuallyadditions:item_crystal_shard:5>     , 0.15F);
+ScrapBox.addDrop(<actuallyadditions:item_crystal_shard>       , 0.15F);
+ScrapBox.addDrop(<extrautils2:klein>                          , 0.15F);
+ScrapBox.addDrop(<immersiveengineering:material:26>           , 0.15F);
+ScrapBox.addDrop(<psi:cad_colorizer_:17>                      , 0.15F);
+ScrapBox.addDrop(<thermalexpansion:frame:64>                  , 0.075F);
+ScrapBox.addDrop(<rftoolsdim:dimlet_parcel>                   , 0.045F);
+ScrapBox.addDrop(<forestry:chipsets:0>.withTag({T:0 as short}), 0.15F);
+ScrapBox.addDrop(<forestry:chipsets:1>.withTag({T:1 as short}), 0.09F);
+ScrapBox.addDrop(<forestry:chipsets:2>.withTag({T:2 as short}), 0.06F);
+ScrapBox.addDrop(<forestry:chipsets:3>.withTag({T:3 as short}), 0.015F);
 
 # Energy crystal compat
 scripts.process.compress(<ic2:dust:6> * 9, <ic2:energy_crystal:27>, "except: compressor");
@@ -277,6 +262,12 @@ tinyDustFix(<ic2:dust:35>, <actuallyadditions:item_dust:3>);
 tinyDustFix(<ic2:dust:18>, <thermalfoundation:material:99>);
 tinyDustFix(<ic2:dust:24>, <ic2:dust:11>);
 tinyDustFix(<ic2:dust:27>, <thermalfoundation:material:771>);
+
+# Convert purged tin and copper
+recipes.addShapeless(<thermalfoundation:ore> * 2        , [<ic2:resource:1>, <ic2:resource:1>] /* Copper Ore */);
+recipes.addShapeless(<thermalfoundation:ore:1> * 2      , [<ic2:resource:3>, <ic2:resource:3>] /* Tin Ore */);
+recipes.addShapeless(<thermalfoundation:material:64> * 2, [<ic2:dust:4>, <ic2:dust:4>] /* Copper Dust */);
+recipes.addShapeless(<thermalfoundation:material:65> * 2, [<ic2:dust:17>, <ic2:dust:17>] /* Tin Dust */);
 
 # Crystal memory crafts
 function crystalRecipe(name as string, item as IItemStack, ingrs as IIngredient[]) {

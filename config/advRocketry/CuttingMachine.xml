@@ -696,6 +696,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Taintwood Planks] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>thaumcraft:taint_log 1</itemStack>
+		</input>
+		<output>
+			<itemStack>thaumadditions:taintwood_planks 10 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Teak Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>

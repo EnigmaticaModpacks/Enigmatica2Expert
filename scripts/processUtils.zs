@@ -172,11 +172,9 @@ function enderioXmlRecipe(processName as string,
   if(!isNull(inputItems)) {
     for inIngr in inputItems {
       if(processName=='fermenting') s ~= '  <inputgroup>\n';
-      for ii in inIngr.itemArray {
-        val eioName = ii.anyAmount().commandString.replaceAll("[<>]", "").replaceAll("^ore:", "");
-        val amount = (ii.amount > 1) ? 'amount="'~ ii.amount ~'" ': '';
-        s ~= '    <input name="' ~ eioName ~ '" '~amount~it_multiplier~' />\n';
-      }
+      val eioName = inIngr.commandString.replaceAll("[<>]", "").replaceAll("^ore:| \\* \\d+$", "");
+      val amount = (inIngr.amount > 1) ? 'amount="'~ inIngr.amount ~'" ': '';
+      s ~= '    <input name="' ~ eioName ~ '" '~amount~it_multiplier~' />\n';
       if(processName=='fermenting') s ~= '  </inputgroup>\n';
     }
   }

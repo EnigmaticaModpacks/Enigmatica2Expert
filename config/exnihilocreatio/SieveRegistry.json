@@ -427,8 +427,6 @@
   ],
 
   "quark:turf:0": [
-    {"meshLevel": 1, "drop": {"name": "minecraft:brown_mushroom"   , "meta": 0}  , "chance": 0.04},
-    {"meshLevel": 1, "drop": {"name": "minecraft:red_mushroom"     , "meta": 0}  , "chance": 0.04},
     {"meshLevel": 1, "drop": {"name": "harvestcraft:shadedgarden"  , "meta": 0}  , "chance": 0.02},
     {"meshLevel": 1, "drop": {"name": "harvestcraft:tropicalgarden", "meta": 0}  , "chance": 0.02},
     {"meshLevel": 1, "drop": {"name": "harvestcraft:windygarden"   , "meta": 0}  , "chance": 0.02},
