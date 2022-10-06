@@ -38,6 +38,7 @@ import {
   smeltOre,
 } from '../lib/tellme.js'
 import {
+  closest,
   config,
   defaultHelper,
   getCSV,

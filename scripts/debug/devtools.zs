@@ -109,7 +109,7 @@ events.onPlayerLeftClickBlock(function(e as crafttweaker.event.PlayerLeftClickBl
 events.onPlayerInteractBlock(function(e as crafttweaker.event.PlayerInteractBlockEvent){
   val world = e.world;
   if(world.isRemote()) return;
-  if(isNull(e.player.currentItem) || !(<immersiveengineering:material> has e.player.currentItem)) return;
+  if(isNull(e.player.currentItem) || !(<contenttweaker:knowledge_absorber> has e.player.currentItem)) return;
   if(isNull(e.block) || !(e.block.definition.id == "minecraft:bedrock")) return;
 
 
@@ -119,13 +119,11 @@ events.onPlayerInteractBlock(function(e as crafttweaker.event.PlayerInteractBloc
   val x = e.position.x;
   val y = e.position.y;
   val z = e.position.z;
-  // e.world.setBlockState(<blockstate:mekanism:oreblock>, e.position);
   e.player.sendMessage("isop "~server.isOp(e.player));
-  server.commandManager.executeCommand(server, "op "~e.player.name);
-  e.player.sendMessage("isop "~server.isOp(e.player));
-  server.commandManager.executeCommand(server, "/cofh replaceblocks "~x~" "~y~" "~z~" "~x~" "~y~" "~z~" mekanism:oreblock bedrock");
-  e.player.executeCommand("bedrockores wrap");
-  // server.commandManager.executeCommand(server, "/deop "~e.player.name);
+  server.commandManager.executeCommandSilent(server, "/cofh replaceblocks "~x~" "~y~" "~z~" "~x~" "~y~" "~z~" mekanism:oreblock bedrock");
+  server.commandManager.executeCommand(e.player, "bedrockores wrap");
+  // e.player.executeCommand("bedrockores wrap");
+  server.commandManager.executeCommand(server, "/deop "~e.player.name);
   server.commandManager.executeCommandSilent(server, "/particle fireworksSpark "~x~" "~y~" "~z~" 0 0.1 0 0.1 50");
   e.world.playSound("thaumcraft:poof", "ambient", e.position, 0.5f, 1.5f);
 

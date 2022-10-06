@@ -22,7 +22,7 @@ const { argv } = yargs(process.argv.slice(2)).option('i', {
   type    : 'string',
   describe: 'Debug.log path',
   default : 'logs/debug.log',
-}) // @ts-expect-error
+})
 function relative(relPath = './') {
   return fileURLToPath(new URL(relPath, import.meta.url))
 }
@@ -199,6 +199,7 @@ const ignore = [
   /Mod advancedrocketrycore has been disabled through configuration/,
   /Sending runtime to plugin: .+ took .* ms/,
   /\[placebo\]: Exception loading patreon data!/,
+  /WARN\] \[ReAuth\]: /,
 
   /* =============================================
   =        Already inspected warnings           =

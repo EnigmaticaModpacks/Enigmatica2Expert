@@ -488,3 +488,9 @@ export function getModsJars() {
     dot   : true,
   })
 }
+
+/**
+ * @param {number[]} numbers
+ * @param {number} goal
+ */
+export const closest = (numbers, goal) => numbers.reduce((prev, curr) => Math.abs(curr - goal) < Math.abs(prev - goal) ? curr : prev)

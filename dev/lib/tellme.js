@@ -236,12 +236,12 @@ const modWeights = `
   .reduce((map, v, i) => ((map[v] = i), map), {})
 
 /**
- * @param {TMStack} a
- * @param {TMStack} b
+ * @param {TMStack | string} a
+ * @param {TMStack | string} b
  */
 export const prefferedModSort = (a, b) => {
-  const va = modWeights[b.owner] ?? 0
-  const vb = modWeights[a.owner] ?? 0
+  const va = modWeights[b?.owner ?? b] ?? 0
+  const vb = modWeights[a?.owner ?? a] ?? 0
   return va > vb ? 1 : va < vb ? -1 : 0
 }
 
@@ -280,7 +280,7 @@ function matchFurnaceRecipes(text) {
  */
 export function getCrtLogBlock(from, to) {
   const text = loadText('crafttweaker.log')
-  const startIndex = text.indexOf(from)
+  const startIndex = text.lastIndexOf(from)
   if (startIndex === -1) return ''
 
   const sub = text.substring(startIndex + from.length)

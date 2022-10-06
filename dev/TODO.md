@@ -1,23 +1,15 @@
-# TODO list
+# TODO
 
-- [ ] 🔄 Check if golems can break blocks in skyblock
-- [ ] ✏️ Viaducts cheaper
-- [ ] ✏️ Fix Voltatic Piles cant be autocrafted
-- [ ] ✏️ Highlite Creeper in witchwater
-- [ ] ✏️ Compressed furnaces in form of MA furnaces
-- [ ] ✏️ Remove Blast Resistant Drive
-- [ ] ✏️ Make new replicator machine
+List of priorities:
+
+- [x] ✏️ Fix Voltatic Piles cant be autocrafted
+- [x] ✏️ Fix IC2 items with NBT
+- [ ] ✏️ Make new replicator machine, irradiating chunks
 - [ ] ✏️ More Alien Crystal blocks + mica to get Crystaltine and ET gems
 - [ ] ✏️ Remove Cyclic's machines completely because they are laggy
-- [ ] ✏️ Add chaos shards recipe for Skyblock. Probably RFT Syringe in 5 steps => Struck Lightning
 - [ ] ✏️ Milk Questing Ram to color essence
-- [ ] 📀 Fix NPE https://is.gd/wZprY2
-- [ ] 📀 Buff Golem Stats
-- [ ] 🟢 Replace to https://www.curseforge.com/minecraft/mc-mods/reauth
-- [ ] 🔄 Ratlantean spirit projectiles aren't hitting the player
-- [ ] 📖 Introduce EIO painting machine
-- [ ] 📖 Fix Conflux cant be finished
-- [ ] 🔄 `/punish` command - players can punish other players on server
+- [ ] 🔄 Add custom progression for Twilight Forest based on Quest Book, since achievments can be disabled
+- [ ] 🟢 Add https://www.curseforge.com/minecraft/mc-mods/better-fusion-reactor-for-mekanism
 
 
 ---
@@ -26,6 +18,16 @@
 
 ## Long-Term
 
+Planned non-urgent changes, or just good ideas:
+
+- [ ] ✏️ Add chaos shards recipe for Skyblock. Probably RFT Syringe in 5 steps => Struck Lightning
+- [ ] 📖 Fix Conflux cant be finished
+- [ ] 📖 Introduce EIO painting machine
+- [ ] 🔄 Check if golems can break blocks in skyblock
+- [ ] 🔄 Ratlantean spirit projectiles aren't hitting the player
+- [ ] 📀 Fix NPE https://is.gd/wZprY2
+- [ ] 🔄 `/punish` command - players can punish other players on server
+- [ ] ✏️ Multiblock structure that speed up blocks like Time In Bottle, but based on numbers of mobs around https://is.gd/tPPqt2
 - [ ] ✏️ Add craft `Rat hole` + `Salis Mundus` -> `Something`
 - [ ] 📀 Change Quartz modifier to `(n + 1) * 1.05`
 - [ ] 📀 Adv. Rock tank left 64 buckets when broken
