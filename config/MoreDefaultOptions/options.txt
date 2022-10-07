@@ -151,7 +151,7 @@ key_key.ping:62
 key_ping.key.alert:75
 key_ping.key.mine:76
 key_ping.key.look:0
-key_ping.key.goto:72
+key_ping.key.goto:0
 key_key.toggleFoVChanges:51:SHIFT
 key_key.reloadSoundSystem:66:SHIFT
 key_key.toggleTimeOfDayOverlay:0
