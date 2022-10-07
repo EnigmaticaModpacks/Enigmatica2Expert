@@ -10,20 +10,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: 💽 Download .zip files from latest release
-        uses: robinraju/release-downloader@v1.4
-        with:
-          latest: true
-          fileName: "*.zip"
-
       - id: release
-        uses: thebritican/fetch-latest-release@v2.0.0
+        uses: gregziegan/fetch-latest-release@v2.0.0
 
       - name: 📃 Save changelog content to file
         uses: DamianReeves/write-file-action@master
         with:
           path: latest.md
-          contents: ${{ steps.release.output.body }}
+          contents: ${{ steps.release.outputs.body }}
           write-mode: overwrite
 
       - uses: actions/setup-node@v3
@@ -40,13 +34,19 @@ jobs:
         with:
           path: "latest.html"
 
+      - name: 💽 Download .zip files from latest release
+        uses: robinraju/release-downloader@v1.4
+        with:
+          latest: true
+          fileName: "*.zip"
+
       - name: "💻 Upload Client"
         uses: itsmeow/curseforge-upload@v3
         id: client
         with:
           release_type: beta
-          display_name: Test file please ignore
-          file_path: "E2E-Extended-${{ steps.release.output.tag_name }}.zip"
+          display_name: "E2E-Extended-${{ steps.release.outputs.tag_name }}"
+          file_path: "E2E-Extended-${{ steps.release.outputs.tag_name }}.zip"
           game_endpoint: "minecraft"
           game_versions: "Minecraft 1.12:1.12.2"
           project_id: "561105"
@@ -58,8 +58,8 @@ jobs:
         uses: itsmeow/curseforge-upload@v3
         with:
           release_type: beta
-          display_name: Test file please ignore
-          file_path: "E2E-Extended-${{ steps.release.output.tag_name }}-server.zip"
+          display_name: "E2E-Extended-${{ steps.release.outputs.tag_name }}-server"
+          file_path: "E2E-Extended-${{ steps.release.outputs.tag_name }}-server.zip"
           game_endpoint: "minecraft"
           project_id: "561105"
           parent_file_id: ${{ steps.client.outputs.id }}
