@@ -30,7 +30,7 @@
   "biomesoplenty": "7.0.1.2445",
   "redstoneflux": "2.1.1",
   "toughnessbar": "@VERSION@",
-  "ae2fc": "2.3.4-r",
+  "ae2fc": "2.4.1-r",
   "modtweaker": "4.0.19",
   "botania": "r1.10-364",
   "gendustry": "1.6.5.8",
@@ -321,7 +321,7 @@
   "ydt": "1.1.0",
   "requious": "1.0",
   "applecore": "3.4.0",
-  "thaumicenergistics": "2.2.3",
+  "thaumicenergistics": "2.2.5",
   "enderiopowertools": "5.3.70",
   "rustic": "1.1.7",
   "notenoughrtgs": "1.2",
@@ -355,7 +355,7 @@
   "rftools": "7.73",
   "openmods": "0.12.2",
   "tips": "1.0.9",
-  "villagenames": "4.4.1a",
+  "villagenames": "4.4.2",
   "miningspeed2": "1.7",
   "incontrol": "3.9.18",
   "kleeslabs": "5.4.12",
@@ -454,5 +454,6 @@
   "dynamistics": "1.0.2",
   "tinkersjei": "1.2",
   "scalingfeast": "v1.8.2",
-  "avaritiafurnace": "1.0.0"
+  "avaritiafurnace": "1.0.0",
+  "rbmf": "1.0"
 }
