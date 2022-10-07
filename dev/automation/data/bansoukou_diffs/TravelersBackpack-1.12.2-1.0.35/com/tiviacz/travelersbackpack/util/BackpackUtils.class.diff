@@ -1,12 +1,28 @@
 diff --git "a/~bansoukou_unpatched\\TravelersBackpack-1.12.2-1.0.35\\com\\tiviacz\\travelersbackpack\\util\\BackpackUtils.java" "b/bansoukou\\TravelersBackpack-1.12.2-1.0.35\\com\\tiviacz\\travelersbackpack\\util\\BackpackUtils.java"
-index d7850fba..d2990b07 100644
+index d7850fba..664b855b 100644
 --- "a/~bansoukou_unpatched\\TravelersBackpack-1.12.2-1.0.35\\com\\tiviacz\\travelersbackpack\\util\\BackpackUtils.java"
 +++ "b/bansoukou\\TravelersBackpack-1.12.2-1.0.35\\com\\tiviacz\\travelersbackpack\\util\\BackpackUtils.java"
-@@ -81,14 +81,70 @@ public class BackpackUtils {
-         }
+@@ -7,6 +7,8 @@
+  *  com.tiviacz.travelersbackpack.handlers.ConfigHandler
+  *  com.tiviacz.travelersbackpack.init.ModBlocks
+  *  com.tiviacz.travelersbackpack.tileentity.TileEntityTravelersBackpack
++ *  com.tiviacz.travelersbackpack.util.BackpackUtils$1
++ *  com.tiviacz.travelersbackpack.util.BackpackUtils$1Checker
+  *  com.tiviacz.travelersbackpack.util.Reference
+  *  net.minecraft.block.Block
+  *  net.minecraft.entity.Entity
+@@ -30,6 +32,7 @@ import com.tiviacz.travelersbackpack.capability.ITravelersBackpack;
+ import com.tiviacz.travelersbackpack.handlers.ConfigHandler;
+ import com.tiviacz.travelersbackpack.init.ModBlocks;
+ import com.tiviacz.travelersbackpack.tileentity.TileEntityTravelersBackpack;
++import com.tiviacz.travelersbackpack.util.BackpackUtils;
+ import com.tiviacz.travelersbackpack.util.Reference;
+ import net.minecraft.block.Block;
+ import net.minecraft.entity.Entity;
+@@ -82,13 +85,51 @@ public class BackpackUtils {
      }
- 
--    private static boolean tryPlace(World world, EntityPlayer player, ItemStack itemstack) {
+
+     private static boolean tryPlace(World world, EntityPlayer player, ItemStack itemstack) {
 -        int[] positions;
 -        int X = (int)player.field_70165_t;
 -        int Z = (int)player.field_70161_v;
@@ -14,10 +30,9 @@ index d7850fba..d2990b07 100644
 -            BlockPos spawn = BackpackUtils.getNearestEmptyChunkCoordinatesSpiral((IBlockAccess)world, X, Z, new BlockPos(X, (int)player.field_70163_u + Y, Z), 12, true, 1, (byte)0, false);
 -            if (spawn == null) continue;
 -            return BackpackUtils.placeBackpack(itemstack, player, world, spawn.func_177958_n(), spawn.func_177956_o(), spawn.func_177952_p(), EnumFacing.UP);
-+    private static boolean tryPlace(final World world, EntityPlayer player, ItemStack itemstack) {
 +        int search_height = 128;
-+        final int px = (int)player.field_70165_t;
-+        final int pz = (int)player.field_70161_v;
++        int px = (int)player.field_70165_t;
++        int pz = (int)player.field_70161_v;
 +        int py_candidate = (int)player.field_70163_u;
 +        if (py_candidate < 0) {
 +            py_candidate = 64;
@@ -25,31 +40,13 @@ index d7850fba..d2990b07 100644
 +        if (py_candidate > 255) {
 +            py_candidate = 191;
 +        }
-+        final int py = py_candidate;
++        int py = py_candidate;
 +        int x = 0;
 +        int y = 0;
 +        int z = 0;
-+        final BlockPos origin = new BlockPos((double)px, player.field_70163_u, (double)pz);
-+        final BlockPos[] best = new BlockPos[]{null};
-+        class Checker {
-+            Checker() {
-+            }
-+
-+            boolean viable(int x, int y, int z) {
-+                BlockPos pos = new BlockPos(x + px, y + py, z + pz);
-+                if (world.func_175623_d(pos)) {
-+                    if (best[0] == null) {
-+                        best[0] = pos;
-+                    }
-+                    if (world.isSideSolid(pos.func_177972_a(EnumFacing.DOWN), EnumFacing.UP, true) && !BackpackUtils.areCoordinatesTheSame(origin, pos)) {
-+                        best[0] = pos;
-+                        return true;
-+                    }
-+                }
-+                return false;
-+            }
-+        }
-+        Checker C = new Checker();
++        BlockPos origin = new BlockPos((double)px, player.field_70163_u, (double)pz);
++        BlockPos[] best = new BlockPos[]{null};
++        Checker C = new Checker(px, py, pz, world, best, origin);
 +        int sign_y = 1;
 +        int max_steps = 32;
 +        block0: while (y < 128) {
@@ -81,3 +78,48 @@ index d7850fba..d2990b07 100644
          }
          return false;
      }
+@@ -101,28 +142,28 @@ public class BackpackUtils {
+         if ((block = ModBlocks.TRAVELERS_BACKPACK).func_176198_a(world, new BlockPos(x, y, z), facing)) {
+             BlockPos targetPos;
+             if (world.func_180495_p(new BlockPos(x, y, z)).func_185904_a().func_76220_a()) {
+-                switch (facing) {
+-                    case DOWN: {
++                switch (1.$SwitchMap$net$minecraft$util$EnumFacing[facing.ordinal()]) {
++                    case 1: {
+                         --y;
+                         break;
+                     }
+-                    case UP: {
++                    case 2: {
+                         ++y;
+                         break;
+                     }
+-                    case NORTH: {
++                    case 3: {
+                         --z;
+                         break;
+                     }
+-                    case SOUTH: {
++                    case 4: {
+                         ++z;
+                         break;
+                     }
+-                    case WEST: {
++                    case 5: {
+                         --x;
+                         break;
+                     }
+-                    case EAST: {
++                    case 6: {
+                         ++x;
+                     }
+                 }
+@@ -257,4 +298,8 @@ public class BackpackUtils {
+         }
+         return false;
+     }
++
++    static /* synthetic */ boolean access$000(BlockPos x0, BlockPos x1) {
++        return BackpackUtils.areCoordinatesTheSame(x0, x1);
++    }
+ }

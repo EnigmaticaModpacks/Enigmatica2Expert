@@ -7,9 +7,9 @@
 
 // @ts-check
 
-import { mkdirSync, renameSync, unlinkSync } from 'fs'
+import { existsSync, mkdirSync, renameSync, statSync, unlinkSync } from 'fs'
 import { dirname, join, parse } from 'path'
-import { fileURLToPath, URL } from 'url'
+import { URL, fileURLToPath } from 'url'
 
 import AdmZip from 'adm-zip'
 import fast_glob from 'fast-glob'
@@ -24,26 +24,24 @@ import {
 } from '../lib/utils.js'
 
 function relative(relPath = './') {
-  // @ts-ignore
   return fileURLToPath(new URL(relPath, import.meta.url))
 }
 
 export async function init(h = defaultHelper) {
   await h.begin('Fixing Bansoukou files')
   renameFoldersToActualMods()
-  const filesManaged = injectJsonAdvancementFixes()
+  injectJsonAdvancementFixes()
   await showDiffs(h)
 
-  return h.result(`Managed ${filesManaged} files`)
+  return h.result('Done!')
 }
 
 function injectJsonAdvancementFixes() {
   const json = loadJson(relative('bansoukou.json'))
   for (const [glob, data] of Object.entries(json)) {
-    const filePaths = fast_glob.sync('mods/' + glob, { dot: true })
-    for (const [archievePath, advJson] of Object.entries(data)) {
+    const filePaths = fast_glob.sync(`mods/${glob}`, { dot: true })
+    for (const [archievePath, advJson] of Object.entries(data))
       saveFile(/** @type {string} */ (filePaths.pop()), archievePath, advJson)
-    }
   }
   return Object.entries(json).length
 }
@@ -66,25 +64,25 @@ function getJarName(jarPath) {
  */
 function getBansFolders() {
   return fast_glob.sync('*', {
-    dot: true,
+    dot      : true,
     onlyFiles: false,
-    cwd: 'bansoukou',
-    ignore: fast_glob.sync('*', { dot: true, cwd: 'bansoukou' }),
+    cwd      : 'bansoukou',
+    ignore   : fast_glob.sync('*', { dot: true, cwd: 'bansoukou' }),
   })
 }
 
 function renameFoldersToActualMods() {
   const bansFolders = getBansFolders()
 
-  let allMods = fast_glob
+  const allMods = fast_glob
     .sync('*.jar', { dot: true, cwd: 'mods' })
-    .map((mod) => mod.replace(/(-patched)?\.jar/, ''))
+    .map(mod => mod.replace(/(-patched)?\.jar/, ''))
 
-  bansFolders.forEach((modName, i) => {
+  bansFolders.forEach((modName) => {
     if (allMods.includes(modName)) return
 
     const levArr = _(allMods)
-      .map((m) => ({ lev: levenshtein.get(m, modName), mod: m }))
+      .map(m => ({ lev: levenshtein.get(m, modName), mod: m }))
       .sortBy('0')
       .value()
 
@@ -108,51 +106,80 @@ function replaceExt(fileName, newExt) {
 }
 
 async function showDiffs(/** @type {typeof defaultHelper} */ h) {
+  const cachePath = relative('~bansoukou_cached.json')
+  /**
+   * File path and its change time + size
+   * @type {{[file:string]:string}}
+   */
+  const caches = existsSync(cachePath) ? loadJson(cachePath) : {}
+
   const bansFolders = getBansFolders()
 
   await h.begin('Generating Diffs', bansFolders.length)
   const diffStore = 'dev/automation/data/bansoukou_diffs'
   for (const folder of bansFolders) {
-    const zip = new AdmZip(`mods/${folder}.disabled`)
+    const jarPath = existsSync(`mods/${folder}.disabled`)
+      ? `mods/${folder}.disabled`
+      : `mods/${folder}.jar`
+    const jarStat = getStat(jarPath)
+    const isJarCached = caches[jarPath] === jarStat
+    caches[jarPath] = jarStat
 
+    /** @type {AdmZip |  undefined} */
+    let zip
+
+    // List of files that should be changed by Bansoukou
     const changedFiles = fast_glob.sync('**/*', {
       dot: true,
       cwd: `bansoukou/${folder}`,
     })
 
     changedFiles.forEach((changedFile) => {
-      // Extract unpatched file
       const unpatchedModPath = join('~bansoukou_unpatched/', folder)
-      try {
-        zip.extractEntryTo(changedFile, unpatchedModPath, true, true)
-      } catch (error) {
-        return
-      }
       const unpatchedFilePath = join(unpatchedModPath, changedFile)
       const patchedFilePath = join('bansoukou', folder, changedFile)
 
+      // Skip if both files unchanged
+      const fileStat = getStat(patchedFilePath)
+      if (isJarCached && caches[patchedFilePath] === fileStat) return
+
+      // Extract unpatched file
+      try {
+        (zip ??= new AdmZip(jarPath))
+          .extractEntryTo(changedFile, unpatchedModPath, true, true)
+      }
+      catch (error) {
+        return
+      }
+
       const { oldF, newF } = decompile(unpatchedFilePath, patchedFilePath)
 
-      const diffOut = join(diffStore, folder, changedFile) + '.diff'
+      const diffOut = `${join(diffStore, folder, changedFile)}.diff`
       mkdirSync(dirname(diffOut), { recursive: true })
 
       try {
         execSyncInherit(
-          `git diff --no-index` +
-            ` "${oldF}"` +
-            ` "${newF}"` +
-            ` > "${diffOut}"`
+          'git diff --no-index'
+            + ` "${oldF}"`
+            + ` "${newF}"`
+            + ` > "${diffOut}"`
         )
-      } catch (error) {}
+      }
+      catch (error) {}
 
       // Remove tempFiles
       if (unpatchedFilePath !== oldF) unlinkSync(oldF)
       if (patchedFilePath !== newF) unlinkSync(newF)
+
+      // Save cache
+      caches[patchedFilePath] = fileStat
     })
 
     h.step()
-    await new Promise((r) => setTimeout(r, 1))
+    await new Promise(resolve => setTimeout(resolve, 1))
   }
+
+  saveObjAsJson(caches, cachePath)
 }
 
 /**
@@ -164,7 +191,7 @@ function decompile(unpatchedFilePath, patchedFilePath) {
   if (parse(patchedFilePath).ext !== '.class')
     return { oldF: unpatchedFilePath, newF: patchedFilePath }
 
-  // @ts-ignore
+  // @ts-expect-error type
   return Object.fromEntries(
     [
       ['oldF', unpatchedFilePath],
@@ -172,19 +199,28 @@ function decompile(unpatchedFilePath, patchedFilePath) {
     ].map(([key, fPath]) => {
       const actualFile = replaceExt(fPath, '.java')
       execSyncInherit(
-        `"C:/Program Files/Java/jdk-13.0.2/bin/java.exe"` +
-          ` -jar` +
-          ` cfr-0.152.jar` +
-          ` "${fPath}"` +
-          ` > "${actualFile}"`
+        '"C:/Program Files/Java/jdk-13.0.2/bin/java.exe"'
+          + ' -jar'
+          + ' cfr-0.152.jar'
+          + ` "${fPath}"`
+          + ` > "${actualFile}"`
       )
       return [key, actualFile]
     })
   )
 }
 
+/**
+ *
+ * @param {string} filePath
+ * @returns {string}
+ */
+function getStat(filePath) {
+  const stat = statSync(filePath)
+  return `${stat.mtime.toUTCString()} - ${stat.size}`
+}
+
 if (
-  // @ts-ignore
   import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
 )
   init()
