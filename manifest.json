@@ -424,7 +424,7 @@
     {"projectID":554387,"fileID":3556105,"required":true,"___name":"Persistency"},
     {"projectID":554478,"fileID":3566316,"required":true,"___name":"Modular Assembly"},
     {"projectID":557549,"fileID":3957880,"required":true,"___name":"Had Enough Items"},
-    {"projectID":570458,"fileID":4013344,"required":true,"___name":"AE2 Unofficial Extended Life"},
+    {"projectID":570458,"fileID":3990479,"required":true,"___name":"AE2 Unofficial Extended Life"},
     {"projectID":605580,"fileID":3907875,"required":true,"___name":"Entity Desync Fix"},
     {"projectID":623955,"fileID":4016918,"required":true,"___name":"AE2 Fluid Crafting Rework"},
     {"projectID":627303,"fileID":3846860,"required":true,"___name":"Spectral Edge"},
