@@ -377,70 +377,66 @@ mods.mekanism.crusher.removeRecipe(qwrong);
 mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:quartz>);
 scripts.process.crush(<ore:gemQuartz>, qdust, "only: iecrusher aegrinder mekcrusher", null, null);
 
-# [Basic Voltaic Pile] from [Basic Plating][+2]
-craft.remake(<nuclearcraft:voltaic_pile_basic>.withTag({}), ["▬","□","⌂"], {
-  "□": <ore:plateBasic>,     # Basic Plating
-  "⌂": <ic2:casing:1>,       # Copper Item Casing
-  "▬": <ore:ingotMagnesium>, # Magnesium Ingot
-});
+# ----------------------------------------
+# Piles and Batteries rework
+# ----------------------------------------
 
-# [Advanced Voltaic Pile] from [Advanced Plating][+2]
-craft.remake(<nuclearcraft:voltaic_pile_advanced>.withTag({}), ["B","□","⌂"], {
-  "□": <ore:plateAdvanced>, # Advanced Plating
-  "⌂": <ic2:casing:1>,      # Copper Item Casing
-  "B": <nuclearcraft:voltaic_pile_basic>.withTag({}, false), # Basic Voltaic Pile
-});
+val pileIngrs = {
+  "▬": <ore:ingotMagnesium>,            # Magnesium Ingot
 
-# [DU Voltaic Pile] from [DU Plating][+2]
-craft.remake(<nuclearcraft:voltaic_pile_du>.withTag({}), ["A","□","⌂"], {
-  "□": <ore:plateDU>,  # DU Plating
-  "A": <nuclearcraft:voltaic_pile_advanced>.withTag({}, false), # Advanced Voltaic Pile
-  "⌂": <ic2:casing:1>, # Copper Item Casing
-});
+  "0": <ic2:casing:1>,                  # Copper Item Casing
+  "1": <ore:plateBasic>,                # Basic Plating
+  "2": <ore:plateAdvanced>,             # Advanced Plating
+  "3": <ore:plateDU>,                   # DU Plating
+  "4": <ore:plateElite>,                # Elite Plating
 
-# [Elite Voltaic Pile] from [Elite Plating][+2]
-craft.remake(<nuclearcraft:voltaic_pile_elite>.withTag({}), ["D","□","⌂"], {
-  "□": <ore:plateElite>, # Elite Plating
-  "⌂": <ic2:casing:1>,   # Copper Item Casing
-  "D": <nuclearcraft:voltaic_pile_du>.withTag({}, false), # DU Voltaic Pile
-});
+  "I": <nuclearcraft:lithium_ion_cell>.withTag({}, false), # Lithium Ion Cell
+  "S": <ore:solenoidMagnesiumDiboride>, # Magnesium Diboride Solenoid
+} as IIngredient[string];
 
-# [Basic Lithium Ion Battery] from [Basic Plating][+2]
-craft.remake(<nuclearcraft:lithium_ion_battery_basic>.withTag({}), ["◘","□","M"], {
-  "□": <ore:plateBasic>,                # Basic Plating
-  "◘": <nuclearcraft:lithium_ion_cell>.withTag({}, false), # Lithium Ion Cell
-  "M": <ore:solenoidMagnesiumDiboride>, # Magnesium Diboride Solenoid
-});
+/*Inject_js{
+	const list = config('config/nuclearcraft.cfg').energy_storage.battery_capacity
+	let i = 0
+	return cmd.block.replace(/maxTransfer\s*:\s*\d+\s*,\s*capacity\s*:\s*\d+/g, (m,p) => 
+		`maxTransfer:${(''+Number(list[i]) / 20).padStart(10)}, capacity:${(''+list[i++]).padStart(10)}`
+	)
+}*/
+val piles = [
+	<nuclearcraft:voltaic_pile_basic>   .withTag({maxTransfer:     80000, capacity:   1600000, energy: 0}),
+	<nuclearcraft:voltaic_pile_advanced>.withTag({maxTransfer:    320000, capacity:   6400000, energy: 0}),
+	<nuclearcraft:voltaic_pile_du>      .withTag({maxTransfer:   1280000, capacity:  25600000, energy: 0}),
+	<nuclearcraft:voltaic_pile_elite>   .withTag({maxTransfer:   5120000, capacity: 102400000, energy: 0}),
+] as IItemStack[];
 
-# [Advanced Lithium Ion Battery] from [Advanced Plating][+2]
-craft.remake(<nuclearcraft:lithium_ion_battery_advanced>.withTag({}), ["pretty",
-  "  □  ",
-  "B B B",
-  "  M  "], {
-  "□": <ore:plateAdvanced>,             # Advanced Plating
-  "B": <nuclearcraft:lithium_ion_battery_basic>.withTag({}, false), # Basic Lithium Ion Battery
-  "M": <ore:solenoidMagnesiumDiboride>, # Magnesium Diboride Solenoid
-});
+val batteries = [
+	<nuclearcraft:lithium_ion_battery_basic>   .withTag({maxTransfer:   1600000, capacity:  32000000, energy: 0}),
+	<nuclearcraft:lithium_ion_battery_advanced>.withTag({maxTransfer:   6400000, capacity: 128000000, energy: 0}),
+	<nuclearcraft:lithium_ion_battery_du>      .withTag({maxTransfer:  25600000, capacity: 512000000, energy: 0}),
+	<nuclearcraft:lithium_ion_battery_elite>   .withTag({maxTransfer: 102400000, capacity:2048000000, energy: 0}),
+] as IItemStack[];
+/**/
 
-# [DU Lithium Ion Battery] from [DU Plating][+2]
-craft.remake(<nuclearcraft:lithium_ion_battery_du>.withTag({}), ["pretty",
-  "  □  ",
-  "A A A",
-  "  M  "], {
-  "A": <nuclearcraft:lithium_ion_battery_advanced>.withTag({}, false), # Advanced Lithium Ion Battery
-  "□": <ore:plateDU>,                   # DU Plating
-  "M": <ore:solenoidMagnesiumDiboride>, # Magnesium Diboride Solenoid
-});
+for i, item in piles {
+	recipes.remove(item.withTag(null));
+	craft.make(item, ['^','p','0'], {
+		"^": i==0 ? pileIngrs['▬'] : piles[i - 1].withTag({}, false),
+		"p": pileIngrs[''~(i+1)],
+		"0": pileIngrs['0'],
+	});
+}
 
-# [Elite Lithium Ion Battery] from [Elite Plating][+2]
-craft.remake(<nuclearcraft:lithium_ion_battery_elite>.withTag({}), ["pretty",
-  "  □  ",
-  "D D D",
-  "  M  "], {
-  "□": <ore:plateElite>,                # Elite Plating
-  "D": <nuclearcraft:lithium_ion_battery_du>.withTag({}, false), # DU Lithium Ion Battery
-  "M": <ore:solenoidMagnesiumDiboride>, # Magnesium Diboride Solenoid
-});
+for i, item in batteries {
+	recipes.remove(item);
+	if(i==0)
+		craft.make(item, ['I','1','S'], pileIngrs);
+	else
+		craft.make(item, [' p ','^^^',' S '], {
+			"^": batteries[i - 1].withTag({}, false),
+			"p": pileIngrs[''~(i+1)],
+			"S": pileIngrs['S'],
+		});
+}
+# ----------------------------------------
 
 if(!isNull(loadedMods["immersivetech"])) {
 	# New crafting ingredient for future usage

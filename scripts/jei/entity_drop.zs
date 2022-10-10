@@ -24,30 +24,33 @@ function add(entity as string, dropList as IItemStack[]) as void {
   scripts.jei.requious.add(<assembly:entity_drop>, {[Soul(entity)] as IIngredient[] : fixedList});
 }
 
-/*Inject_js(
-[...getCrtLogBlock(
-    '################## Mob Drops #####################',
-    '##################################################'
-  ).replace(/\[SERVER_STARTED\]\[SERVER\]\[INFO\] /g, '')
-    .matchAll(/\d+ ID: (?<id>.+) DISPLAY: (?<display>.+)(?<items>(\n<.+)*)/gm)]
-    .map(({ groups: { id, display, items } }) => {
-      const filteredMatches = [
-        /StatsOriginal: \{/,
-        /^<bhc:.+_heart>/,
-        /^<minecraft:\w+_(helmet|chestplate|boots|leggins)>/,
-        /^<scalinghealth:crystalshard>/,
-        /^<openblocks:trophy>/,
-        /^<immersiveengineering:shader_bag>/,
-      ]
-      items = items.trim().split('\n').map(s => s.trim())
-        .filter(Boolean)
-        .filter(s => !filteredMatches.some(f => s.match(f)))
-        .sort(naturalSort)
-      return [items.length ? '  ' : '# ', `add('${id}'`, items, display]
-    })
-    .sort(([,a, c], [,b, d]) => naturalSort(a, b) || c.length - d.length)
-    .map(r => (r[2] = `, [${r[2].join(', ')}]); // ${r.pop()}`, r))
-)*/
+/*Inject_js{
+const list = [...getCrtLogBlock(
+  '################## Mob Drops #####################',
+  '##################################################'
+).replace(/\[SERVER_STARTED\]\[SERVER\]\[INFO\] /g, '')
+.matchAll(/\d+ ID: (?<id>.+) DISPLAY: (?<display>.+)(?<items>(\n<.+)*)/gm)]
+
+if(!list.length) return cmd.block
+
+return list.map(({ groups: { id, display, items } }) => {
+    const filteredMatches = [
+      /StatsOriginal: \{/,
+      /^<bhc:.+_heart>/,
+      /^<minecraft:\w+_(helmet|chestplate|boots|leggins)>/,
+      /^<scalinghealth:crystalshard>/,
+      /^<openblocks:trophy>/,
+      /^<immersiveengineering:shader_bag>/,
+    ]
+    items = items.trim().split('\n').map(s => s.trim())
+      .filter(Boolean)
+      .filter(s => !filteredMatches.some(f => s.match(f)))
+      .sort(naturalSort)
+    return [items.length ? '  ' : '# ', `add('${id}'`, items, display]
+  })
+  .sort(([,a, c], [,b, d]) => naturalSort(a, b) || c.length - d.length)
+  .map(r => (r[2] = `, [${r[2].join(', ')}]); // ${r.pop()}`, r))
+}*/
   add('animania:buck_alpine'                   , [<animania:raw_prime_chevon> * 146]); // Alpine Buck
   add('animania:buck_angora'                   , [<animania:raw_chevon> * 151]); // Angora Buck
   add('animania:buck_chinchilla'               , [<animania:raw_prime_rabbit> * 52, <minecraft:rabbit_foot> * 263, <minecraft:rabbit_hide> * 49]); // Chinchilla Buck
