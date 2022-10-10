@@ -29,6 +29,6 @@
 		type: "command",
 		title: "Give next Conflux tier role",
 		auto: "enabled",
-		command: "/rank add @p conflux_iii"
+		command: "/ranks add @p conflux_iii"
 	}]
 }
