@@ -1,0 +1,28 @@
+# ##################
+# E2E-E errors
+# ##################
+# Reported https://github.com/MKuckert/eye-of-dragons/issues/4
+Coremod EyeOfDragonsPlugin: Unable to class load the plugin de.curlybracket.eyeofdragons.EyeOfDragonsPlugin
+
+# Some absent slabs. Dont know why they absent.
+\[net.blay09.mods.kleeslabs.KleeSlabs\]: Slab .* could not be found.
+
+# Reported: https://github.com/Janrupf/mod-director/issues/22
+\[main/WARN\] \[ModDirector/ForgeLateLoader\[Launchwrapper\]\]: Failed to find deobf tweaker
+
+# Known, "It's just logging, you can ignore it." https://github.com/LoliKingdom/LoliASM/issues/51
+\[Finalizer/WARN\] \[LoliASM\]: Clearing LoliStringPool 1
+
+# Wooden Crucible error (they disabled anyway)
+\[excompressum\]: Duplicate entry for .* in WoodenCrucible. overwriting...
+
+# Unknown errors but probably no harm
+\[main/WARN\] \[FML\]: Patcher expecting empty class data file for .+, but received non-empty
+\[excompressum\]: Could not load remote skins for auto sieve:
+ERROR. \[Mekanism\]: Invalid BasicBlock. type: 1, meta: \d+
+
+# This error happen for every slot
+\[MineMenu\]: Menu item in slot .* is 
+
+ERROR. \[(jei|HadEnoughItems)\]: Failed to register mod categories: class lykrast.jetif.JETIFPlugin
+\[FML\]: Overriding existing radiation moderator data for 

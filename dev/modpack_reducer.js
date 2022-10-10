@@ -1,5 +1,5 @@
 /**
- * @file Disable mods by givn lists
+ * @file Disable mods by given lists
  *
  * @author Krutoy242
  * @link https://github.com/Krutoy242
