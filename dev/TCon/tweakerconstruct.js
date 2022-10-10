@@ -8,9 +8,8 @@
 
 // @ts-check
 
-const { max, round, abs, sign, sqrt, pow, log } = Math // eslint-disable-line
 import { writeFileSync } from 'fs'
-import { fileURLToPath, URL } from 'url' // @ts-ignore
+import { URL, fileURLToPath } from 'url'
 
 import csv from 'csvtojson'
 import glob from 'glob'
@@ -24,15 +23,17 @@ import {
   subFileName,
 } from '../lib/utils.js'
 
+const { max, round, abs, sign, sqrt, pow, log } = Math
+
 function relative(relPath = './') {
   return fileURLToPath(new URL(relPath, import.meta.url))
 }
 
 const paths = {
-  default_config: 'dev/default_configs/tweakersconstruct.cfg',
+  default_config      : 'dev/default_configs/tweakersconstruct.cfg',
   tweakerconstruct_cfg: 'config/tweakersconstruct.cfg',
-  equipData_zs: 'scripts/equipment/equipData.zs',
-  oredict_zs: 'scripts/OreDict.zs',
+  equipData_zs        : 'scripts/equipment/equipData.zs',
+  oredict_zs          : 'scripts/OreDict.zs',
 }
 
 /** @type {string} */
@@ -74,7 +75,7 @@ function veryNice(v) {
   const left = val | 0
   const right = nice(val - left)
   return (
-    String(left).padStart(10) + (right ? '.' + String(right).substr(2, 2) : '')
+    String(left).padStart(10) + (right ? `.${String(right).substr(2, 2)}` : '')
   )
 }
 
@@ -148,24 +149,24 @@ function tweakMaterial(matID, tweakObj, defaultVals) {
   return {
     nums,
     reals,
-    mat: matID,
+    mat    : matID,
     power,
-    tweaks: tweakObj[matID] ?? nums.map(() => ''),
-    raw: `        ${matID}:${nums.map(d_nice).join(':')}`,
+    tweaks : tweakObj[matID] ?? nums.map(() => ''),
+    raw    : `        ${matID}:${nums.map(d_nice).join(':')}`,
     tweaked: isActuallyTweaked,
   }
 }
 
 const invalid = {
-  /** @type {Set<string>} */ material: new Set(),
-  /** @type {Set<string>} */ absent: new Set(),
+  /** @type {Set<string>} */ material  : new Set(),
+  /** @type {Set<string>} */ absent    : new Set(),
   /** @type {Set<string>} */ fileInject: new Set(),
 }
 
 function injectToEquipments(list, varName) {
   const listStr = list
     .filter(
-      (l) =>
+      l =>
         ![
           'ma.superium',
           'ma.supremium',
@@ -177,7 +178,7 @@ function injectToEquipments(list, varName) {
           'infinity_metal',
         ].includes(l.mat)
     )
-    .map((l) => `  ${('"' + l.mat + '"').padEnd(25)}, # ${round(l.power)}`)
+    .map(l => `  ${(`"${l.mat}"`).padEnd(25)}, # ${round(l.power)}`)
     .join('\n')
 
   const injectResult = injectInFile(
@@ -187,9 +188,8 @@ function injectToEquipments(list, varName) {
     listStr
   )
 
-  if (!injectResult.length) {
+  if (!injectResult.length)
     invalid.fileInject.add(`${paths.equipData_zs}: ${varName}`)
-  }
 }
 
 /**
@@ -200,7 +200,7 @@ function injectToEquipments(list, varName) {
 function writeStatsTable(tweakGroup, tweakObj, list) {
   const outputTable = [
     ['', 'Total Power', ...tweakObj._names], // Header
-    ...list.map((l) => [l.mat, veryNice(l.power), ...l.reals.map(veryNice)]),
+    ...list.map(l => [l.mat, veryNice(l.power), ...l.reals.map(veryNice)]),
   ]
 
   const csvTable = table(outputTable, {
@@ -209,7 +209,7 @@ function writeStatsTable(tweakGroup, tweakObj, list) {
       bodyJoin: ',',
     },
     columnDefault: {
-      paddingLeft: 0,
+      paddingLeft : 0,
       paddingRight: 1,
     },
     drawHorizontalLine: () => false,
@@ -260,9 +260,9 @@ function parseStats(tweakGroup, tweakObj) {
   )) {
     const matID = match.groups.matID
 
-    let defaultVals = match.groups.rawValues
+    const defaultVals = match.groups.rawValues
       .split(':')
-      .map((n) => (isNaN(Number(n)) ? 'd' : Number(n)))
+      .map(n => (isNaN(Number(n)) ? 'd' : Number(n)))
 
     existMats.add(matID)
 
@@ -293,10 +293,10 @@ function replaceInCurrentConfig(list, lookupString) {
   current_tweakers_cfg = current_tweakers_cfg.replace(
     new RegExp(lookupString, 'm'),
     `$1${
-      list
-        .filter((l) => l.tweaked)
-        .map((l) => l.raw)
-        .join('\n') + '\n'
+      `${list
+        .filter(l => l.tweaked)
+        .map(l => l.raw)
+        .join('\n')}\n`
     }$3`
   )
 }
@@ -332,7 +332,7 @@ export async function init(h = defaultHelper) {
      */
     const csvResult = await csv({
       noheader: true,
-      output: 'csv',
+      output  : 'csv',
     }).fromFile(filePath)
 
     /** @type {*} */
@@ -360,7 +360,7 @@ export async function init(h = defaultHelper) {
           ', '
         )}`,
         fileInject:
-          'Unable to inject files: ' + [...set].map((s) => `"${s}"`).join(', '),
+          `Unable to inject files: ${[...set].map(s => `"${s}"`).join(', ')}`,
       }[key]
     )
   })
@@ -368,7 +368,7 @@ export async function init(h = defaultHelper) {
   h.result(`Total lines tweaked: ${totalTweaked}`)
 }
 
-// @ts-ignore
+// @ts-expect-error
 if (
   import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
 )
@@ -393,7 +393,7 @@ if (
 - [x] unnamed       | Bonus damage accrued for each entity of the same type as the target close to it.
 - [x] vindictive    | Bonus damage to players, and you gain some health by attacking.
 - [x] blindbandit   | A mob called the "Blind Bandit" will sometimes be summoned for a limited time after you attack or are attacked. She will attack hostile mobs, and will also attack those who dare attack her (except you), piercing armor on mobs.
-- [x] botanical2    | 
+- [x] botanical2    |
 - [x] barrett       | ❌ As health decreases, there is an increasing chance of a critical hit.
 - [x] divineshield  | ❌ While this tool is in your hand, you are granted fire resistance. Also, damage is reduced, but at a durability cost.
 - [x] dprk          | ❌ When attacking or defending, Supreme Leaders will spawn, exploding on opponents in the same manner as a creeper.
@@ -407,6 +407,5 @@ if (
 ❌ - Could not find trait
 
 barrett|divineshield|dprk|ghastly|ignoble|jaded|mystical_fire|naphtha|trash
-
 
 */

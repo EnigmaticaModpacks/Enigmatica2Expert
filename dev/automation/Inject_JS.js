@@ -110,6 +110,7 @@ export async function init(h = defaultHelper) {
         .substring(0, match.index)
         .split('\n').length
       const [, whole, p1, p2] = match
+      const below = zsfileContent.substring((match.index ?? 0) + match[0].length + 1)
       occurences.push({
         filePath,
         capture: whole,
@@ -118,7 +119,8 @@ export async function init(h = defaultHelper) {
             ? `(()=>${whole.trim()})()`
             : whole.trim(),
         line : lineNumber,
-        below: zsfileContent.substring(match.index ?? 0 + match[0].length),
+        below,
+        block: below.substring(0, below.indexOf('/**/') - 1),
       })
     }
   })

@@ -17,7 +17,7 @@
 */
 
 import { exec as _exec, execSync } from 'child_process'
-import { fileURLToPath, URL } from 'url'
+import { URL, fileURLToPath } from 'url'
 import { promisify } from 'util'
 
 import fs_extra from 'fs-extra'
@@ -38,18 +38,18 @@ const exec = promisify(_exec)
 
 const { argv } = yargs(process.argv.slice(2))
   .option('next', {
-    alias: 'n',
-    type: 'string',
+    alias   : 'n',
+    type    : 'string',
     describe: 'Next version',
   })
   .option('append', {
-    alias: 'a',
-    type: 'boolean',
+    alias   : 'a',
+    type    : 'boolean',
     describe: 'Only append LATEST.md to CHANGELOG.md',
   })
 
 function relative(relPath) {
-  // @ts-ignore
+  // @ts-expect-error
   return fileURLToPath(new URL(relPath, import.meta.url))
 }
 
@@ -77,19 +77,17 @@ const githubNotesPath = 'dev/release/~GitHub_notes.md'
 /*
 ██╗███╗   ██╗██╗████████╗
 ██║████╗  ██║██║╚══██╔══╝
-██║██╔██╗ ██║██║   ██║   
-██║██║╚██╗██║██║   ██║   
-██║██║ ╚████║██║   ██║   
-╚═╝╚═╝  ╚═══╝╚═╝   ╚═╝   
+██║██╔██╗ ██║██║   ██║
+██║██║╚██╗██║██║   ██║
+██║██║ ╚████║██║   ██║
+╚═╝╚═╝  ╚═══╝╚═╝   ╚═╝
 */
 export async function init(h = defaultHelper) {
-  if (argv['append']) {
+  if (argv.append)
     return h.result(`Appended: ${appendChangelog()}`)
-  }
 
-  if (!argv['next']) {
+  if (!argv.next)
     return h.error('Must provide --next version option')
-  }
 
   await h.begin('Determine version')
 
@@ -99,8 +97,8 @@ export async function init(h = defaultHelper) {
     .trim()
 
   /** @type {string} */
-  const nextVersion = argv['next']
-  await h.begin('Version ' + old_version + ' -> ' + nextVersion + ' ')
+  const nextVersion = argv.next
+  await h.begin(`Version ${old_version} -> ${nextVersion} `)
 
   // Change version in files
   bumpVersionInFiles(nextVersion)
@@ -120,8 +118,8 @@ export async function init(h = defaultHelper) {
 
   const blacklistedCategories = filterCommitMap(commitMap, changelogStructure)
 
-  const { commitLogChanges, categoriesCount, unknownCommits } =
-    await getCommitChangeLines(h, commitMap, changelogStructure)
+  const { commitLogChanges, categoriesCount, unknownCommits }
+    = await getCommitChangeLines(h, commitMap, changelogStructure)
 
   await h.begin('Writing in file')
   changelogLines.push(...commitLogChanges, '\n\n')
@@ -138,8 +136,9 @@ export async function init(h = defaultHelper) {
       `npx mc-icons@latest --silent --treshold=2 --input="${changelogLatest}"`,
       () => h.step()
     )
-  } catch (error) {
-    h.warn('Unable to mc-icons over file ' + changelogLatest)
+  }
+  catch (error) {
+    h.warn(`Unable to mc-icons over file ${changelogLatest}`)
   }
 
   // Manual Changelog fixing
@@ -148,14 +147,14 @@ export async function init(h = defaultHelper) {
   // await h.done()
 
   h.result(
-    `New changelog entries: ${categoriesCount}, ` +
-      `Unknown: ${unknownCommits}, ` +
-      `Blacklisted: ${blacklistedCategories}`
+    `New changelog entries: ${categoriesCount}, `
+      + `Unknown: ${unknownCommits}, `
+      + `Blacklisted: ${blacklistedCategories}`
   )
 }
 
 if (
-  // @ts-ignore
+  // @ts-expect-error
   import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
 )
   init()
@@ -180,7 +179,7 @@ async function getCommitChangeLines(h, commitMap, changelogStructure) {
    * @returns {string[]}
    */
   function stringifySubcatList(subCatList = [], level = 0) {
-    const result = subCatList.map((arr) => stringifySubcat(arr, level)).flat()
+    const result = subCatList.map(arr => stringifySubcat(arr, level)).flat()
 
     if (result.length) return [...result, '']
     return []
@@ -193,11 +192,11 @@ async function getCommitChangeLines(h, commitMap, changelogStructure) {
    */
   function stringifySubcat(subCat, level = 0) {
     // Add own Entries
-    let result =
-      commitMap[subCat.symbol]
-        ?.map((subject) =>
+    let result
+      = commitMap[subCat.symbol]
+        ?.map(subject =>
           stringifyCommit(subject, subCat.aliases).map(
-            (s) => `  ${s.replace(/\n/g, '\n  ')}`
+            s => `  ${s.replace(/\n/g, '\n  ')}`
           )
         )
         .flat() ?? []
@@ -205,7 +204,7 @@ async function getCommitChangeLines(h, commitMap, changelogStructure) {
 
     // Add sub entries
     const subList = stringifySubcatList(subCat.subcategory, level + 1).map(
-      (s) =>
+      s =>
         s
           .replace(/^((- )?#+)/, '$1#') // Add paragraph level
           .replace(/(.+)/g, '  $1') // Lift all content on +1 tab
@@ -218,8 +217,8 @@ async function getCommitChangeLines(h, commitMap, changelogStructure) {
     // Lift subcategory up if there only one
     let mergedSingleMessage = ''
     if (
-      level !== 0 &&
-      _(result).sumBy((s) => (/^  - .*$/.test(s) ? 1 : 0)) === 1
+      level !== 0
+      && _(result).sumBy(s => (/^  - .*$/.test(s) ? 1 : 0)) === 1
     ) {
       mergedSingleMessage = result[0].replace(/^  - /, ': ')
       result.splice(0, 1)
@@ -281,8 +280,8 @@ async function getModChanges(version, nextVersion, h = defaultHelper) {
 
   const modsDiff = getModsIds(minecraftinstance_old, 'minecraftinstance.json')
 
-  let counstGets = 0
-  const promises = ['added', 'removed', 'updated'].map((group) =>
+  const counstGets = 0
+  const promises = ['added', 'removed', 'updated'].map(group =>
     fetchMods(
       modsDiff[group].map(
         (/** @type {InstalledAddon} */ { addonID }) => addonID
@@ -304,7 +303,7 @@ async function getModChanges(version, nextVersion, h = defaultHelper) {
     if (!curseResult[group].length) continue
 
     const isUpdated = group === 'updated'
-    const rows = curseResult[group].map((curseAddon) =>
+    const rows = curseResult[group].map(curseAddon =>
       isUpdated
         ? `- **${curseAddon.name.trim()}**`
         : formatRow(modsDiff.map_union[curseAddon.id], curseAddon, {})
@@ -327,20 +326,20 @@ async function getModChanges(version, nextVersion, h = defaultHelper) {
   h.begin('Retrieving mod detailed changelogs', 10)
   const nextModsChangelogsFile = `MODS_${nextVersion}.md`
   const nextModsChangelogsFull = `changelogs/${nextModsChangelogsFile}`
-  const chgenCommand =
-    'java -jar ./ChangelogGenerator-2.0.0-pre10.jar -m' +
-    ' --old="manifest_old.json"' +
-    ' --new="manifest.json"' +
-    ' --entries=5' +
-    ' --lines=40' +
-    ` --output=${nextModsChangelogsFull}`
+  const chgenCommand
+    = 'java -jar ./ChangelogGenerator-2.0.0-pre10.jar -m'
+    + ' --old="manifest_old.json"'
+    + ' --new="manifest.json"'
+    + ' --entries=5'
+    + ' --lines=40'
+    + ` --output=${nextModsChangelogsFull}`
 
   const chGenConsoleOut = (data) => {
     const projectID = data.match(/^.*projectID=(\d+)/)?.[1]
     h.begin(
       `Retrieving changelogs ${
-        curseResult.updated.find((m) => m.id === projectID)?.name ??
-        '[unknown mod]'
+        curseResult.updated.find(m => m.id === projectID)?.name
+        ?? '[unknown mod]'
       }`
     )
   }
@@ -351,9 +350,9 @@ async function getModChanges(version, nextVersion, h = defaultHelper) {
     try {
       await runProcess(chgenCommand, chGenConsoleOut)
       chGenSucces = true
-    } catch (error) {
-      if (attemptsLeft > 0)
-        h.warn('ChangelogGenerator fatal error. Trying again...')
+    }
+    catch (error) {
+      if (attemptsLeft > 0) { h.warn('ChangelogGenerator fatal error. Trying again...') }
       else {
         h.error(`ChangelogGenerator cant do its work. Reason: ${error}`)
         return result
@@ -364,7 +363,8 @@ async function getModChanges(version, nextVersion, h = defaultHelper) {
   // Remove file if there is no changes at all
   if (loadText(nextModsChangelogsFull).split('\n').length <= 4) {
     unlink(nextModsChangelogsFull)
-  } else {
+  }
+  else {
     makeModsChangelogBetter(nextModsChangelogsFull)
     result += `\n## [> Mods updates detailed.](https://github.com/Krutoy242/Enigmatica2Expert-Extended/blob/master/changelogs/${nextModsChangelogsFile})\n\n`
   }
@@ -404,7 +404,7 @@ function makeModsChangelogBetter(nextModsChangelogsFull) {
  * @return {Subcategory[]} Category with optional {@link Subcategory}
  * */
 function parseChangelogStructure(fileText) {
-  const jsCode = (fileText + '\n\n')
+  const jsCode = (`${fileText}\n\n`)
     // Comments
     .replace(/#.*$/gm, '')
 
@@ -424,7 +424,7 @@ function parseChangelogStructure(fileText) {
     // Split aliases
     .replace(
       /aliases:"([^"]+)"/gm,
-      (m, p) => `aliases:${JSON.stringify(p.split('|').map((s) => s.trim()))}`
+      (m, p) => `aliases:${JSON.stringify(p.split('|').map(s => s.trim()))}`
     )
 
   // eslint-disable-next-line no-eval
@@ -438,7 +438,7 @@ function parseChangelogStructure(fileText) {
  */
 function trimAliases(s, aliases) {
   const aliasesJoined = aliases
-    .map((s) => escapeRegex(s).replace(/\s+/, '\\s*'))
+    .map(s => escapeRegex(s).replace(/\s+/, '\\s*'))
     .join('|')
   const aliasRgx = new RegExp(
     `^(?:${aliasesJoined})(?:\\s*:)?\\s*([\\s\\S]*)$`,
@@ -454,7 +454,7 @@ function splitMessage(message) {
   return message
     .trim()
     .split(/\n(?!(\t|  )\s*>\s+)/)
-    .filter((s) => s)
+    .filter(s => s)
 }
 
 /**
@@ -503,7 +503,7 @@ function parseCommitMessage(commitMessage) {
   // Remove leading spaces frow commit message
   const trimmedSubject = match.groups.subject
     .split('\n')
-    .map((l) => l.replace(/^ {4}/, ''))
+    .map(l => l.replace(/^ {4}/, ''))
     .filter((l, i) => l || i !== 1)
     .join('\n')
 
@@ -545,8 +545,8 @@ function filterCommitMap(commitMap, changelogStructure) {
 
     // Trim Category aliases and remove duplicates
     commitMap[symbol] = _(messages)
-      .map((m) => trimAliases(m, aliases))
-      .filter((m) => !!m)
+      .map(m => trimAliases(m, aliases))
+      .filter(m => !!m)
       .uniqWith((a, b) => a === b)
       .value()
 
@@ -555,35 +555,34 @@ function filterCommitMap(commitMap, changelogStructure) {
       if (!flatStructure[symbol].subcategory?.length) return
 
       const anySubcatName = flatStructure[symbol].subcategory
-        .map((subcat) => subcat.aliases)
+        .map(subcat => subcat.aliases)
         .flat()
         .map(escapeRegex)
         .join('|')
 
       const subMatchesRgx = new RegExp(
-        `^(?:\\*\\*)?(?<subName>${anySubcatName}):?(?:\\*\\*)?:?\\s*` +
-          `(?<content>${
-            '(' +
-            '\n[-*]\\s.*' + // Any list item
-            '(\n[^-*\\s].*)*' + // Any wrapped text
-            '(\n(\t|  )+>\\s.*)*' + // Any quoted text
-            ')+'
+        `^(?:\\*\\*)?(?<subName>${anySubcatName}):?(?:\\*\\*)?:?\\s*`
+          + `(?<content>${
+            '('
+            + '\n[-*]\\s.*' // Any list item
+            + '(\n[^-*\\s].*)*' // Any wrapped text
+            + '(\n(\t|  )+>\\s.*)*' // Any quoted text
+            + ')+'
           })`,
         'gmi'
       )
       const subMatches = [...message.matchAll(subMatchesRgx)]
 
       subMatches.forEach((match) => {
-        // eslint-disable-next-line no-param-reassign
         message = message.replace(match[0], '')
         const { subName, content } = match.groups
 
-        const matchedSubcat = flatStructure[symbol].subcategory.find((sc) =>
+        const matchedSubcat = flatStructure[symbol].subcategory.find(sc =>
           new RegExp(`^${sc.aliases.join('|')}$`, 'i').test(subName)
         )
 
         ;(commitMap[matchedSubcat.symbol] ??= []).push(
-          ...splitMessage(content).map((l) => l.replace(/^[-*]\s/, ''))
+          ...splitMessage(content).map(l => l.replace(/^[-*]\s/, ''))
         )
       })
 
@@ -592,14 +591,14 @@ function filterCommitMap(commitMap, changelogStructure) {
 
     // Remove empty messages
     commitMap[symbol] = commitMap[symbol].filter(
-      (l) => !new RegExp(`^((${aliases.join('|')}):?)?\\s*$`).test(l)
+      l => !new RegExp(`^((${aliases.join('|')}):?)?\\s*$`).test(l)
     )
   }
 
   // Sort lists of icons
-  _(commitMap).forEach((arr) =>
+  _(commitMap).forEach(arr =>
     arr.sort((a, b) => {
-      const getWeight = (s) => (isItemCaptue(s) ? 0 : 1)
+      const getWeight = s => (isItemCaptue(s) ? 0 : 1)
       return getWeight(b) - getWeight(a)
     })
   )
@@ -611,7 +610,7 @@ function filterCommitMap(commitMap, changelogStructure) {
       const trimmed = trimAliases(message, flatStructure[symbol]?.aliases)
       const match = trimmed.match(/^([-*]\s+([\s\S](?!\n(\n|  |-|\*)))+.\n?)+$/)
       if (!match) return
-      arr.splice(i, 1, ...trimmed.split(/\s*-\s*/).filter((s) => s))
+      arr.splice(i, 1, ...trimmed.split(/\s*-\s*/).filter(s => s))
     })
   )
 
@@ -638,8 +637,8 @@ function runProcess(command, onStdOut) {
 function bumpVersionInFiles(nextVersion) {
   replace_in_file.sync({
     files: 'config/CustomMainMenu/mainmenu.json',
-    from: /("version_num"\s*:[\s\n]*\{[\s\n]*"text"\s*:\s*")[^"]+?(")/m,
-    to: `$1${nextVersion}$2`,
+    from : /("version_num"\s*:[\s\n]*\{[\s\n]*"text"\s*:\s*")[^"]+?(")/m,
+    to   : `$1${nextVersion}$2`,
   })
 
   saveText(nextVersion, 'dev/version.txt')
@@ -658,7 +657,7 @@ function appendChangelog() {
   const blocks = [
     ...chLogCmplteText.matchAll(/^# (.+)(\n([\s\S\n](?!^# ))+)/gm),
   ]
-    .map((m) => m.slice(1, 3))
+    .map(m => m.slice(1, 3))
     .filter(([version]) => {
       const isLatest = version.trim() !== latestVersion
       if (isLatest) isReplaced = true
@@ -666,10 +665,10 @@ function appendChangelog() {
     })
   // .slice(0, 15) // Cut changelog entries
 
-  const newChLog =
-    header +
-    chLogLatestText +
-    blocks.map(([version, block]) => '# ' + version + block).join('\n')
+  const newChLog
+    = header
+    + chLogLatestText
+    + blocks.map(([version, block]) => `# ${version}${block}`).join('\n')
 
   saveText(newChLog, changelogComplete)
 
@@ -677,7 +676,7 @@ function appendChangelog() {
   saveText(
     chLogLatestText.replace(
       /^# .+(\n[\s\n]*)/m,
-      loadText('dev/release/GitHub_release_header.md') + '$1'
+      `${loadText('dev/release/GitHub_release_header.md')}$1`
     ),
     githubNotesPath
   )
