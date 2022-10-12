@@ -240,7 +240,7 @@ registerReservoirWithDrainChance("Extreme Pressure Aquifer Reservoir (KELT-2ab)"
 		faric sand
 	 
 */
-registerGasReservoir("Oxygen Reservoir (KELT-3)", <gas:oxygen>, 1228800000, maxInt, 0 , 256  , 1024, II, [], [103], [], []);
+registerGasReservoir("Oxygen Reservoir (KELT-3)", <gas:oxygen>, 1228800000, maxInt, 0 , 256  , 1024, II, [], [119], [], []);
 /*
 <gas:sulfurdioxide>, Sulfur Dioxide
 <gas:sulfurtrioxide>, Sulfur Trioxide
