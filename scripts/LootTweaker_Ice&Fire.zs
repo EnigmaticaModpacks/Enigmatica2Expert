@@ -1,4 +1,4 @@
-import loottweaker.vanilla.loot.LootTables;
+import loottweaker.LootTweaker;
 import loottweaker.vanilla.loot.LootTable;
 import loottweaker.vanilla.loot.LootPool;
 import crafttweaker.item.IItemStack as IItemStack;
@@ -7,19 +7,19 @@ import crafttweaker.item.IItemStack as IItemStack;
 
 # *======= Variables =======*
 
-	val cyclops_cave = LootTables.getTable("iceandfire:cyclops_cave");
+	val cyclops_cave = LootTweaker.getTable("iceandfire:cyclops_cave");
 	val cyclops_cave_pool = cyclops_cave.getPool("cyclops_cave");
 
-	val fire_dragon_female_cave = LootTables.getTable("iceandfire:fire_dragon_female_cave");
+	val fire_dragon_female_cave = LootTweaker.getTable("iceandfire:fire_dragon_female_cave");
 	val fire_dragon_female_cave_pool = fire_dragon_female_cave.getPool("fire_dragon_cave");
     
-    val fire_dragon_male_cave = LootTables.getTable("iceandfire:fire_dragon_male_cave");
+    val fire_dragon_male_cave = LootTweaker.getTable("iceandfire:fire_dragon_male_cave");
 	val fire_dragon_male_cave_pool = fire_dragon_male_cave.getPool("fire_dragon_cave");
 	
-	val ice_dragon_female_cave = LootTables.getTable("iceandfire:ice_dragon_female_cave");
+	val ice_dragon_female_cave = LootTweaker.getTable("iceandfire:ice_dragon_female_cave");
 	val ice_dragon_female_cave_pool = ice_dragon_female_cave.getPool("ice_dragon_cave");
     
-    val ice_dragon_male_cave = LootTables.getTable("iceandfire:ice_dragon_male_cave");
+    val ice_dragon_male_cave = LootTweaker.getTable("iceandfire:ice_dragon_male_cave");
 	val ice_dragon_male_cave_pool = ice_dragon_male_cave.getPool("ice_dragon_cave");
 	
 	val caveloot = [
