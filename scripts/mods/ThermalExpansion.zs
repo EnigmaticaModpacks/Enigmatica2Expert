@@ -478,7 +478,7 @@ craft.remake(<thermalexpansion:strongbox>.withTag({/* Facing: 3 as byte,  */Leve
 	"i": <ore:nuggetCopper>,
 });
 
-mods.jei.JEI.hide(<thermalexpansion:cell>.withTag({Recv: 10000, RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [2, 1, 1, 1, 1, 1] as byte[] as byte[], Level: 0 as byte, Send: 10000}));
+mods.jei.JEI.hide(<thermalexpansion:cell:*>);
 mods.jei.JEI.hide(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 0 as byte}));
 mods.jei.JEI.hide(<thermalexpansion:cache>.withTag({Facing: 3 as byte, Level: 0 as byte}));
 mods.jei.JEI.hide(<thermalexpansion:strongbox>.withTag({Facing: 3 as byte, Level: 0 as byte}));
