@@ -143,9 +143,9 @@
   <capacitor key="enderio:block_powered_spawner/use"                base="1280"     scaler="SPAWNER" />
   <capacitor key="enderio:block_powered_spawner/speed"              base="1"        scaler="QUADRATIC" />
   
-  <capacitor key="enderio:block_transceiver/intake"                 base="5120000"  scaler="POWER" />
-  <capacitor key="enderio:block_transceiver/buffer"                 base="10000000" scaler="CUBIC" />
-  <capacitor key="enderio:block_transceiver/use"                    base="50"       scaler="QUADRATIC" />
+  <capacitor key="enderio:block_transceiver/intake"                 base="51200000"  scaler="POWER" />
+  <capacitor key="enderio:block_transceiver/buffer"                 base="100000000" scaler="CUBIC" />
+  <capacitor key="enderio:block_transceiver/use"                    base="500"       scaler="QUADRATIC" />
   <capacitor key="enderio:block_transceiver/ratio"                  base="1">
   <indexed step="1">
     <data value=".75"/>
