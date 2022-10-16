@@ -6,7 +6,9 @@ import crafttweaker.item.IIngredient;
 # plankWood -@chisel -"(fireproof)" -"Vertical" -" Painted "
 
 # Helper Function
-function saw(input as IIngredient, output as IItemStack, exceptions as string) {
+function saw(input as IIngredient, output as IItemStack, exceptions as string) as void {
+  if(isNull(input) || isNull(output)) return;
+
   # BlockCutter should add all recipes.
   # All table recipes should be replaced
   scripts.process.sawWood(input, output, "only: blockCutter strict: shapeless");
@@ -117,6 +119,12 @@ saw(<advancedrocketry:alienwood>    , <advancedrocketry:planks>          , "stri
 saw(<extrautils2:ironwood_log>      , <extrautils2:ironwood_planks>      , "strict: manufactory mekSawmill");
 saw(<extrautils2:ironwood_log:1>    , <extrautils2:ironwood_planks:1>    , "strict: manufactory mekSawmill");
 saw(<randomthings:spectrelog>       , <randomthings:spectreplank>        , "strict: manufactory mekSawmill");
+saw(itemUtils.getItem("iceandfire:dreadwood_log"), itemUtils.getItem("iceandfire:dreadwood_planks"), "no exceptions");
+
+# Magical wood special
+saw(<extrautils2:decorativesolidwood:1>,<extrautils2:decorativesolidwood>, "no exceptions");
+scripts.process.sawWood(<extrautils2:decorativesolidwood:1>,<extrautils2:decorativesolidwood>, "only: TESawmill");
+
 
 # Sawdust compat
 // mods.mekanism.sawmill.removeRecipe(<ore:stickWood>);

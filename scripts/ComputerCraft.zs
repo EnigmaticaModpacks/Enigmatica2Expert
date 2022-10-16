@@ -38,3 +38,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	mods.immersiveengineering.MetalPress.addRecipe(<computercraft:pocket_computer:1>, <computercraft:computer:16384>, <immersiveengineering:mold:0>, 2000);
 
 
+# Add missed items to JEI
+mods.jei.JEI.addItem(<opencomputers:print>);
+mods.jei.JEI.addItem(<opencomputers:misc>);
+mods.jei.JEI.addItem(<opencomputers:robot>);

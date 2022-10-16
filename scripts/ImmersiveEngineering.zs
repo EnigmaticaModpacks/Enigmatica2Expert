@@ -1,5 +1,6 @@
 import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IIngredient;
 #modloaded immersiveengineering
 
 
@@ -160,4 +161,44 @@ import crafttweaker.item.IItemStack as IItemStack;
 
 # Excavator new veins
 mods.immersiveengineering.Excavator.addMineral("Osmium", 50, 0.005, ["oreTin", "oreOsmium", "oreSilver"], [0.01, 0.006, 0.003]);
-mods.immersiveengineering.Excavator.addMineral("Nuclear", 20, 0.005, ["oreThorium", "oreBoron", "oreLithium", "oreMagnesium"], [0.01, 0.01, 0.01, 0.01]);
+
+
+# ----------------------------------------
+# Slabs from oredicted resources
+for block, slab in {
+	<ore:blockCopper>     : <immersiveengineering:storage_slab>,
+	<ore:blockAluminum>   : <immersiveengineering:storage_slab:1>,
+	<ore:blockLead>       : <immersiveengineering:storage_slab:2>,
+	<ore:blockSilver>     : <immersiveengineering:storage_slab:3>,
+	<ore:blockNickel>     : <immersiveengineering:storage_slab:4>,
+	<ore:blockConstantan> : <immersiveengineering:storage_slab:6>,
+	<ore:blockElectrum>   : <immersiveengineering:storage_slab:7>,
+	<ore:blockSteel>      : <immersiveengineering:storage_slab:8>,
+} as IItemStack[IIngredient] {
+	craft.remake(slab * 6, ["AAA"], {A: block});
+}
+
+
+# [Conveyor Belt]*32 from [Redstone][+2]
+craft.remake(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 32, ["pretty",
+  "l l l",
+  "▬ ♥ ▬"], {
+  "♥": <ore:dustRedstone>, # Redstone
+  "l": <ore:leather>,      # Leather
+  "▬": <ore:ingotIron>, # Iron Alloy Ingot
+  remove: <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 8, # Conveyor Belt
+});
+
+# [Conveyor Belt]*32 from [Redstone][+2]
+craft.remake(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 32, ["pretty",
+  "R R R",
+  "▬ ♥ ▬"], {
+  "R": <ore:itemRubber>, # Plastic
+  "♥": <ore:dustRedstone>, # Redstone
+  "▬": <ore:ingotIron>, # Iron Alloy Ingot
+  remove: <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 8, # Conveyor Belt
+});
+
+# Unbreakable Graphite Electrodes
+    mods.thermalexpansion.InductionSmelter.addRecipe(<immersiveengineering:graphite_electrode>.withTag({Unbreakable: 1, display: {Lore: ["Reinforced with Titanium Iridium Alloy"], Name: "Unbreakable Graphite Electrode"}}), <immersiveengineering:graphite_electrode>, <advancedrocketry:productingot:1> * 4, 25000);
+    mods.jei.JEI.addItem(<immersiveengineering:graphite_electrode>.withTag({Unbreakable: 1, display: {Lore: ["Reinforced with Titanium Iridium Alloy"], Name: "Unbreakable Graphite Electrode"}}));

@@ -1,5 +1,6 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.liquid.ILiquidDefinition;
+import crafttweaker.data.IData;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded tconstruct
 
@@ -149,6 +150,9 @@ for item in coals {
 
 # Remove Ender Pearl Melting (to remove the ability to alloy Enderium)
 	mods.tconstruct.Melting.removeRecipe(<liquid:ender>);
+
+# Missed melt recipe for Block Of Ender Pearls
+	scripts.process.melt(<actuallyadditions:block_misc:6>, <liquid:ender> * 1000, "Except: Smeltery");
 	
 # Gear Cast
 	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <exnihilocreatio:item_material:7>, <liquid:gold>, 288, true);
@@ -243,24 +247,31 @@ for item in coals {
 	mods.tconstruct.Fuel.registerFuel(<liquid:hydrofluoric_acid> * 25, 400);
 	
 # Liquid blue slimy items
-scripts.process.squeeze(<tconstruct:slime_dirt:1>,        <liquid:blueslime>*2000, null,  <biomesoplenty:mudball>);
-scripts.process.squeeze(<tconstruct:slime_leaves>,        <liquid:blueslime>*500,  null, null);
-scripts.process.squeeze(<tconstruct:slime_grass_tall>,    <liquid:blueslime>*200,  null, null);
-scripts.process.squeeze(<tconstruct:slime_grass_tall:1>,  <liquid:blueslime>*200,  null, null);
-scripts.process.squeeze(<tconstruct:slime_sapling>,       <liquid:blueslime>*1000, null, null);
-scripts.process.squeeze(<tconstruct:slime_vine_blue_end>, <liquid:blueslime>*200,  null, null);
-scripts.process.squeeze(<tconstruct:slime_vine_blue_mid>, <liquid:blueslime>*200,  null, <tconstruct:slime_vine_blue_end>);
-scripts.process.squeeze(<tconstruct:slime_vine_blue>,     <liquid:blueslime>*200,  null, <tconstruct:slime_vine_blue_mid>);
+scripts.process.squeeze([<tconstruct:slime_dirt:1>],        <liquid:blueslime>*2000, null,  <biomesoplenty:mudball>);
+scripts.process.squeeze([<tconstruct:slime_leaves>],        <liquid:blueslime>*500,  null, null);
+scripts.process.squeeze([<tconstruct:slime_grass_tall>],    <liquid:blueslime>*200,  null, null);
+scripts.process.squeeze([<tconstruct:slime_grass_tall:1>],  <liquid:blueslime>*200,  null, null);
+scripts.process.squeeze([<tconstruct:slime_sapling>],       <liquid:blueslime>*1000, null, null);
+scripts.process.squeeze([<tconstruct:slime_vine_blue_end>], <liquid:blueslime>*200,  null, null);
+scripts.process.squeeze([<tconstruct:slime_vine_blue_mid>], <liquid:blueslime>*200,  null, <tconstruct:slime_vine_blue_end>);
+scripts.process.squeeze([<tconstruct:slime_vine_blue>],     <liquid:blueslime>*200,  null, <tconstruct:slime_vine_blue_mid>);
 
 # Liquid purple slimy items
-scripts.process.squeeze(<tconstruct:slime_dirt:2>,          <liquid:purpleslime>*2000, null,  <biomesoplenty:mudball>);
-scripts.process.squeeze(<tconstruct:slime_leaves:1>,        <liquid:purpleslime>*500,  null,  null);
-scripts.process.squeeze(<tconstruct:slime_grass_tall:4>,    <liquid:purpleslime>*200,  null,  null);
-scripts.process.squeeze(<tconstruct:slime_grass_tall:5>,    <liquid:purpleslime>*200,  null,  null);
-scripts.process.squeeze(<tconstruct:slime_sapling:1>,       <liquid:purpleslime>*1000, null,  null);
-scripts.process.squeeze(<tconstruct:slime_vine_purple_end>, <liquid:purpleslime>*200,  null,  null);
-scripts.process.squeeze(<tconstruct:slime_vine_purple_mid>, <liquid:purpleslime>*200,  null,  <tconstruct:slime_vine_purple_end>);
-scripts.process.squeeze(<tconstruct:slime_vine_purple>,     <liquid:purpleslime>*200,  null,  <tconstruct:slime_vine_purple_mid>);
+scripts.process.squeeze([<tconstruct:slime_dirt:2>],          <liquid:purpleslime>*2000, null,  <biomesoplenty:mudball>);
+scripts.process.squeeze([<tconstruct:slime_leaves:1>],        <liquid:purpleslime>*500,  null,  null);
+scripts.process.squeeze([<tconstruct:slime_grass_tall:4>],    <liquid:purpleslime>*200,  null,  null);
+scripts.process.squeeze([<tconstruct:slime_grass_tall:5>],    <liquid:purpleslime>*200,  null,  null);
+scripts.process.squeeze([<tconstruct:slime_sapling:1>],       <liquid:purpleslime>*1000, null,  null);
+scripts.process.squeeze([<tconstruct:slime_vine_purple_end>], <liquid:purpleslime>*200,  null,  null);
+scripts.process.squeeze([<tconstruct:slime_vine_purple_mid>], <liquid:purpleslime>*200,  null,  <tconstruct:slime_vine_purple_end>);
+scripts.process.squeeze([<tconstruct:slime_vine_purple>],     <liquid:purpleslime>*200,  null,  <tconstruct:slime_vine_purple_mid>);
+
+# Clay bucket use for casts
+val bkt = <claybucket:unfiredclaybucket:*>;
+mods.tconstruct.Casting.addTableRecipe(<tcomplement:cast_clay>, bkt, <liquid:clay>, 288, true);
+mods.tconstruct.Casting.addTableRecipe(<tcomplement:cast>, bkt, <liquid:gold>, 288, true);
+mods.tconstruct.Casting.addTableRecipe(<tcomplement:cast>, bkt, <liquid:alubrass>, 144, true);
+mods.tconstruct.Casting.addTableRecipe(<tcomplement:cast>, bkt, <liquid:brass>, 144, true);
 
 # Cast slimes from liquids (only blood have recipe now)
 mods.tconstruct.Casting.addTableRecipe(<tconstruct:edible:2>, null, <liquid:purpleslime>, 250);
@@ -269,3 +280,52 @@ mods.tconstruct.Casting.addTableRecipe(<tconstruct:edible:1>, null, <liquid:blue
 # Slime blocks
 mods.tconstruct.Casting.addBasinRecipe(<tconstruct:slime_congealed:2>, null, <liquid:purpleslime>, 1000);
 mods.tconstruct.Casting.addBasinRecipe(<tconstruct:slime_congealed:1>, null, <liquid:blueslime>  , 1000);
+
+# Molten Quartz and Lapis to blocks
+mods.tconstruct.Casting.addBasinRecipe(<minecraft:quartz_block>, null, <liquid:quartz>, 2664);
+mods.tconstruct.Casting.addBasinRecipe(<minecraft:lapis_block> , null, <liquid:lapis> , 5994);
+
+
+# Clearing
+utils.clearFluid(<tconstruct:seared_tank:0>);
+utils.clearFluid(<tconstruct:seared_tank:1>);
+
+########################################################################################
+# Chest with all avaliable patterns
+
+# generate all possible patterns
+var dataList_allPatterns = [] as IData;
+var k = 0 as byte;
+for item in loadedMods["tconstruct"].items {
+	if (!item.definition.id.startsWith("tconstruct:pattern")) continue;
+	if(isNull(item.tag) || isNull(item.tag.PartType)) continue;
+
+	dataList_allPatterns += [{
+		Slot: k,
+		id: "tconstruct:pattern",
+		Count: 1 as byte,
+		Damage: 0 as short,
+		tag: item.tag
+	}] as IData; 
+	k += 1;
+}
+
+# [Pattern_Chest] from [Oak_Chest][+4]
+recipes.removeByRecipeName("tconstruct:tools/table/chest/pattern");
+craft.make(<tconstruct:tooltables:4>.withTag({
+		inventory: {Items: dataList_allPatterns},
+		enchantmentColor:10057489,CustomPotionColor:10057489 // Colored shimmer
+	} + <enchantment:enderio:shimmer>.makeEnchantment(1).makeTag()), ["pretty",
+  "# a #",
+  "p c p",
+  "# a #"], {
+  "p": <ore:pattern>,        # Blank Pattern
+  "a": <tconstruct:book>,    # Materials and You
+  "#": <forestry:wood_pile>, # Wood Pile
+  "c": <ore:chest>,          # Oak Chest
+});
+########################################################################################
+
+# Add meltables
+//mods.tconstruct.Melting.addRecipe(ILiquidStack output, IIngredient input, @Optional int temp);
+	mods.tconstruct.Melting.addRecipe(<liquid:blueslime> * 250,<tconstruct:edible:1>);

@@ -21,7 +21,7 @@
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
 <Recipes useDefault="false">
-	<Recipe timeRequired="40" power ="100000">
+	<Recipe timeRequired="40" power="100000">
 		<input>
 			<itemStack>advancedrocketry:carbonscrubbercartridge 1 32767</itemStack>
 		</input>
@@ -30,7 +30,7 @@
 			<itemStack>minecraft:coal 1 1</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="100" power ="5000">
+	<Recipe timeRequired="100" power="5000">
 		<input>
 			<itemStack>minecraft:bone</itemStack>
 			<fluidStack>nitrogen 10</fluidStack>
@@ -39,9 +39,8 @@
 			<itemStack>minecraft:dye 5 15</itemStack>
 		</output>
 	</Recipe>
-
 	<!-- EnderIO Liquids -->
-	<Recipe timeRequired="100" power ="30000">
+	<Recipe timeRequired="100" power="30000">
 		<input>
 			<fluidStack>water 32000</fluidStack>
 			<oreDict>itemSkull 8</oreDict>
@@ -49,29 +48,32 @@
 			<oreDict>itemEnderCrystalPowder 1</oreDict>
 			<oreDict>itemPrecientPowder 1</oreDict>
 		</input>
-		<output><fluidStack>vapor_of_levity 1000</fluidStack></output>
+		<output>
+			<fluidStack>vapor_of_levity 1000</fluidStack>
+		</output>
 	</Recipe>
-	
-	<Recipe timeRequired="40" power ="30000">
+	<Recipe timeRequired="40" power="30000">
 		<input>
 			<fluidStack>water 32000</fluidStack>
 			<oreDict>itemSkull 8</oreDict>
 			<oreDict>itemPulsatingPowder 1</oreDict>
 			<oreDict>itemEnderCrystalPowder 1</oreDict>
 		</input>
-		<output><fluidStack>ender_distillation 1000</fluidStack></output>
+		<output>
+			<fluidStack>ender_distillation 1000</fluidStack>
+		</output>
 	</Recipe>
-
-	<Recipe timeRequired="20" power ="30000">
+	<Recipe timeRequired="20" power="30000">
 		<input>
 			<fluidStack>water 2000</fluidStack>
 			<oreDict>itemSkull 1</oreDict>
 		</input>
-		<output><fluidStack>nutrient_distillation 500</fluidStack></output>
+		<output>
+			<fluidStack>nutrient_distillation 500</fluidStack>
+		</output>
 	</Recipe>
-
 	<!--  -->
-	<Recipe timeRequired="60" power ="30000">
+	<Recipe timeRequired="60" power="30000">
 		<input>
 			<fluidStack>water 8000</fluidStack>
 			<itemStack>minecraft:poisonous_potato 1 0</itemStack>
@@ -79,54 +81,60 @@
 			<oreDict>dustBlaze 1</oreDict>
 			<itemStack>minecraft:double_plant 1 0</itemStack>
 		</input>
-		<output><fluidStack>liquid_sunshine 2000</fluidStack></output>
+		<output>
+			<fluidStack>liquid_sunshine 2000</fluidStack>
+		</output>
 	</Recipe>
-
-	<Recipe timeRequired="40" power ="30000">
+	<Recipe timeRequired="40" power="30000">
 		<input>
 			<fluidStack>water 8000</fluidStack>
 			<itemStack>minecraft:poisonous_potato 1 0</itemStack>
 			<oreDict>dustRedstone 1</oreDict>
 			<oreDict>dustBlaze 1</oreDict>
 		</input>
-		<output><fluidStack>fire_water 2000</fluidStack></output>
+		<output>
+			<fluidStack>fire_water 2000</fluidStack>
+		</output>
 	</Recipe>
-
-	<Recipe timeRequired="60" power ="30000">
+	<Recipe timeRequired="60" power="30000">
 		<input>
 			<fluidStack>water 8000</fluidStack>
 			<itemStack>minecraft:poisonous_potato 1 0</itemStack>
 			<oreDict>dustRedstone 1</oreDict>
 			<oreDict>gunpowder 1</oreDict>
 		</input>
-		<output><fluidStack>rocket_fuel 2000</fluidStack></output>
+		<output>
+			<fluidStack>rocket_fuel 2000</fluidStack>
+		</output>
 	</Recipe>
-
-	<Recipe timeRequired="20" power ="30000">
+	<Recipe timeRequired="20" power="30000">
 		<input>
 			<fluidStack>water 8000</fluidStack>
 			<itemStack>minecraft:poisonous_potato 1 0</itemStack>
 		</input>
-		<output><fluidStack>hootch 2000</fluidStack></output>
+		<output>
+			<fluidStack>hootch 2000</fluidStack>
+		</output>
 	</Recipe>
-
 	<!--  -->
-	<Recipe timeRequired="40" power ="30000">
+	<Recipe timeRequired="40" power="30000">
 		<input>
 			<fluidStack>water 2500</fluidStack>
 			<oreDict>dustSilver 3</oreDict>
 			<oreDict>ice 2</oreDict>
 		</input>
-		<output><fluidStack>cloud_seed_concentrated 1250</fluidStack></output>
+		<output>
+			<fluidStack>cloud_seed_concentrated 1250</fluidStack>
+		</output>
 	</Recipe>
-
-	<Recipe timeRequired="20" power ="30000">
+	<Recipe timeRequired="20" power="30000">
 		<input>
 			<fluidStack>water 1250</fluidStack>
 			<oreDict>itemSalt 1</oreDict>
 			<oreDict>ice 1</oreDict>
 		</input>
-		<output><fluidStack>cloud_seed 1250</fluidStack></output>
+		<output>
+			<fluidStack>cloud_seed 1250</fluidStack>
+		</output>
 	</Recipe>
-
 </Recipes>

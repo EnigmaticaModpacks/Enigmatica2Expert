@@ -133,9 +133,27 @@ import crafttweaker.item.IItemStack as IItemStack;
 
 
 # Recycling myrmex resin
-scripts.process.squeeze(<iceandfire:myrmex_resin>          , <liquid:resin>*120, null, <iceandfire:myrmex_desert_resin>);
-scripts.process.squeeze(<iceandfire:myrmex_resin:1>        , <liquid:resin>*120, null, <iceandfire:myrmex_jungle_resin>);
-scripts.process.squeeze(<iceandfire:myrmex_resin_sticky>   , <liquid:resin>*180, null, <iceandfire:myrmex_desert_resin> * 2);
-scripts.process.squeeze(<iceandfire:myrmex_resin_sticky:1> , <liquid:resin>*180, null, <iceandfire:myrmex_jungle_resin> * 2);
-scripts.process.squeeze(<iceandfire:desert_myrmex_cocoon>  , <liquid:resin>*480, null, <iceandfire:myrmex_desert_resin> * 8);
-scripts.process.squeeze(<iceandfire:jungle_myrmex_cocoon>  , <liquid:resin>*480, null, <iceandfire:myrmex_jungle_resin> * 8);
+scripts.process.squeeze([<iceandfire:myrmex_resin>          ], <liquid:resin>*120, null, <iceandfire:myrmex_desert_resin>);
+scripts.process.squeeze([<iceandfire:myrmex_resin:1>        ], <liquid:resin>*120, null, <iceandfire:myrmex_jungle_resin>);
+scripts.process.squeeze([<iceandfire:myrmex_resin_sticky>   ], <liquid:resin>*180, null, <iceandfire:myrmex_desert_resin> * 2);
+scripts.process.squeeze([<iceandfire:myrmex_resin_sticky:1> ], <liquid:resin>*180, null, <iceandfire:myrmex_jungle_resin> * 2);
+scripts.process.squeeze([<iceandfire:desert_myrmex_cocoon>  ], <liquid:resin>*480, null, <iceandfire:myrmex_desert_resin> * 8);
+scripts.process.squeeze([<iceandfire:jungle_myrmex_cocoon>  ], <liquid:resin>*480, null, <iceandfire:myrmex_jungle_resin> * 8);
+
+# StackSize was 1
+<iceandfire:ambrosia>.maxStackSize = 64;
+
+# Add recipe because snow villages is disabled
+# [Fishing Spear] from [Steel Arrow Head][+2]
+craft.remake(<iceandfire:fishing_spear>, ["pretty",
+  "S w  ",
+  "w M  ",
+  "    M"], {
+  "S": <tconstruct:arrow_head>.withTag({Material: "steel"}), # Steel Arrow Head
+  "w": <ore:wool>, # Wool
+  "M": <extrautils2:decorativesolidwood>, # Magical Planks
+});
+
+# Dragons Breath from Dragon Forges
+	mods.iceandfire.recipes.addFireDragonForgeRecipe(<integrateddynamics:crystalized_chorus_chunk>, <botania:manaresource:15>, <minecraft:dragon_breath>); 
+	mods.iceandfire.recipes.addIceDragonForgeRecipe(<integrateddynamics:crystalized_chorus_chunk>, <botania:manaresource:15>, <minecraft:dragon_breath>);

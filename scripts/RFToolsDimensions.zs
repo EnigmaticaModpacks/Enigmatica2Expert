@@ -8,7 +8,7 @@
 	recipes.addShapeless("Dimension Builder", 
 	<rftoolsdim:dimension_builder>, 
 	[<ic2:te:57>,<environmentaltech:void_ore_miner_cont_6>,<avaritia:endest_pearl>,
-	<avaritia:resource:5>, <draconicevolution:awakened_core>, <mekanism:machineblock:4>,
+	<astralsorcery:itemtunedcelestialcrystal>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.mineralis", crystalProperties: {collectiveCapability: 100, size: 900, fract: 0, purity: 100, sizeOverride: -1}}}), <draconicevolution:awakened_core>, <mekanism:machineblock:4>,
 	<rftools:shape_card:3>,<environmentaltech:void_res_miner_cont_6>.anyDamage(),<industrialforegoing:laser_base>.anyDamage()]);
 
 # Dimension Editor

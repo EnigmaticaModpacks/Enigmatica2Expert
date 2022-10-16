@@ -21,58 +21,79 @@
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
 <Recipes useDefault="false">
-	<Recipe timeRequired="20" power ="100000">
-		<input>
-			<fluidStack>water 10</fluidStack>
-		</input>
-		<output>
-			<fluidStack>oxygen 500</fluidStack>
-			<fluidStack>hydrogen 500</fluidStack>
-		</output>
-	</Recipe>
-
-	<!-- [] from [] -->
-  <Recipe timeRequired="10" power ="40000"><input>
-    <fluidStack>hydrofluoric_acid 1000</fluidStack>
-    </input><output>
-    <fluidStack>hydrogen 500</fluidStack>
-    <fluidStack>fluorine 500</fluidStack>
-    </output></Recipe>
-  
-  <Recipe timeRequired="10" power ="40000"><input>
-    <fluidStack>naoh 666</fluidStack>
-    </input><output>
-    <fluidStack>sodium 144</fluidStack>
-    <fluidStack>oxygen 500</fluidStack>
-    </output></Recipe>
-  
-  <Recipe timeRequired="10" power ="40000"><input>
-    <fluidStack>koh 666</fluidStack>
-    </input><output>
-    <fluidStack>potassium 144</fluidStack>
-    <fluidStack>water 1000</fluidStack>
-    </output></Recipe>
-  
-  <Recipe timeRequired="10" power ="40000"><input>
-    <fluidStack>alumina 144</fluidStack>
-    </input><output>
-    <fluidStack>aluminum 288</fluidStack>
-    <fluidStack>oxygen 3000</fluidStack>
-    </output></Recipe>
-  
-  <Recipe timeRequired="10" power ="40000"><input>
-    <fluidStack>heavywater 1000</fluidStack>
-    </input><output>
-    <fluidStack>deuterium 1000</fluidStack>
-    <fluidStack>tritium 50</fluidStack>
-    </output></Recipe>
-  
-  <Recipe timeRequired="10" power ="40000"><input>
-    <fluidStack>ic2heavy_water 1000</fluidStack>
-    </input><output>
-    <fluidStack>deuterium 1000</fluidStack>
-    <fluidStack>tritium 50</fluidStack>
-    </output></Recipe>
-  
-
+  <Recipe timeRequired="20" power="100000">
+    <input>
+      <fluidStack>water 10</fluidStack>
+    </input>
+    <output>
+      <fluidStack>oxygen 500</fluidStack>
+      <fluidStack>hydrogen 500</fluidStack>
+    </output>
+  </Recipe>
+  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+  <!-- [Deuterium+] -->
+  <Recipe timeRequired="10" power="40000">
+    <input>
+      <fluidStack>heavywater 1000</fluidStack>
+    </input>
+    <output>
+      <fluidStack>deuterium 1000</fluidStack>
+      <fluidStack>tritium 50</fluidStack>
+    </output>
+  </Recipe>
+  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+  <!-- [Deuterium+] -->
+  <Recipe timeRequired="10" power="40000">
+    <input>
+      <fluidStack>ic2heavy_water 1000</fluidStack>
+    </input>
+    <output>
+      <fluidStack>deuterium 1000</fluidStack>
+      <fluidStack>tritium 50</fluidStack>
+    </output>
+  </Recipe>
+  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+  <!-- [Hydrogen+] -->
+  <Recipe timeRequired="10" power="40000">
+    <input>
+      <fluidStack>hydrofluoric_acid 1000</fluidStack>
+    </input>
+    <output>
+      <fluidStack>hydrogen 500</fluidStack>
+      <fluidStack>fluorine 500</fluidStack>
+    </output>
+  </Recipe>
+  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+  <!-- [Molten Aluminum+] -->
+  <Recipe timeRequired="10" power="40000">
+    <input>
+      <fluidStack>alumina 144</fluidStack>
+    </input>
+    <output>
+      <fluidStack>aluminum 288</fluidStack>
+      <fluidStack>oxygen 3000</fluidStack>
+    </output>
+  </Recipe>
+  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+  <!-- [Molten Potassium+] -->
+  <Recipe timeRequired="10" power="40000">
+    <input>
+      <fluidStack>koh 666</fluidStack>
+    </input>
+    <output>
+      <fluidStack>potassium 144</fluidStack>
+      <fluidStack>water 1000</fluidStack>
+    </output>
+  </Recipe>
+  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+  <!-- [Molten Sodium+] -->
+  <Recipe timeRequired="10" power="40000">
+    <input>
+      <fluidStack>naoh 666</fluidStack>
+    </input>
+    <output>
+      <fluidStack>sodium 144</fluidStack>
+      <fluidStack>oxygen 500</fluidStack>
+    </output>
+  </Recipe>
 </Recipes>

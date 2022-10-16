@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack;
+import crafttweaker.liquid.ILiquidStack;
 #modloaded thermalexpansion
 
 # Planks/Slabs -> Sticks
@@ -245,3 +246,31 @@ scripts.process.fill(<thermaldynamics:duct_32:5>, <liquid:glowstone>*200, <therm
 scripts.process.fill(<thermaldynamics:duct_32>,   <liquid:glowstone>*200, <thermaldynamics:duct_32:2>, null);
 scripts.process.fill(<thermaldynamics:duct_64:3>, <liquid:aerotheum>*500, <thermaldynamics:duct_64>,   null);
 scripts.process.fill(<thermaldynamics:duct_64>,   <liquid:ender>*1000,    <thermaldynamics:duct_64:2>, null);
+
+
+#####################################
+
+# Clathrates rework. More output
+function reworkClathrate(ore as IItemStack, crystal as IItemStack, dust as IItemStack, liquid as ILiquidStack) {
+	# Remove default outputs
+	mods.thermalexpansion.Crucible.removeRecipe(ore);
+	mods.thermalexpansion.Crucible.removeRecipe(crystal);
+	mods.thermalexpansion.Transposer.removeFillRecipe(crystal, <liquid:cryotheum> * 200);
+	recipes.removeShapeless(<*>, [crystal, <thermalfoundation:material:1025>]);
+	
+	# Buff melting into raw liquids
+	scripts.process.melt(ore, liquid * min(10000, liquid.amount * 4), "no exceptions");
+	scripts.process.melt(crystal, liquid, "no exceptions");
+
+	# Filling with cryotheum to make advanced liquids
+	scripts.process.fill(crystal, <liquid:cryotheum> * 250, dust, "only: NCInfuser Transposer");
+}
+
+reworkClathrate(<thermalfoundation:ore_fluid:2>, <thermalfoundation:material:893>, <thermalfoundation:material:101>, <liquid:redstone> * 1000);
+reworkClathrate(<thermalfoundation:ore_fluid:3>, <thermalfoundation:material:894>, <thermalfoundation:material:102>, <liquid:glowstone> * 2500);
+reworkClathrate(<thermalfoundation:ore_fluid:4>, <thermalfoundation:material:895>, <thermalfoundation:material:103>, <liquid:ender> * 2500);
+
+#####################################
+
+# Stone Gear [Compactor] recipe
+mods.thermalexpansion.Compactor.addGearRecipe(<thermalfoundation:material:23>, <ore:cobblestone>.firstItem * 4, 16000);

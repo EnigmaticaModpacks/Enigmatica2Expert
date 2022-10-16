@@ -1,0 +1,44 @@
+{
+    "catalystStack": {
+      "registryName": {
+        "domain": "advancedrocketry",
+        "path": "moonturf"
+      },
+      "meta": 0
+    },
+    "components": [
+      {
+        "weight": 100,
+        "oreName": "oreProsperity"
+      },
+      {
+        "weight": 50,
+        "oreName": "rftools:dimensional_shard_ore"
+      },
+      {
+        "weight": 25,
+        "oreName": "oreClathrateRedstone"
+      },
+      {
+        "weight": 100,
+        "oreName": "oreDraconium"
+      },
+      {
+        "weight": 180,
+        "oreName": "oreIridium"
+      },
+      {
+        "weight": 250,
+        "oreName": "oreAstralStarmetal"
+      },
+      {
+        "weight": 400,
+        "oreName": "oreRutile"
+      }
+    ],
+    "explosionStrength": 25.0,
+    "radius": 9,
+    "maxWeight": 1040,
+    "version": 4,
+    "cost": 11000000
+  }

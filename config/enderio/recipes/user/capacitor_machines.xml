@@ -10,13 +10,13 @@
   <capacitor key="enderio:block_alloy_smelter/buffer" base="2000000" scaler="POWER" />
   <capacitor key="enderio:block_alloy_smelter/use" base="5000" scaler="POWER" />
   
-  <capacitor key="enderio:block_buffer/intake_creative" base="2000000" scaler="FIXED" />
+  <capacitor key="enderio:block_buffer/intake_creative" base="2000000"  scaler="FIXED" />
   <capacitor key="enderio:block_buffer/buffer_creative" base="20000000" scaler="FIXED" />
-  <capacitor key="enderio:block_buffer/use_creative" base="0" scaler="FIXED" />
+  <capacitor key="enderio:block_buffer/use_creative"    base="0"        scaler="FIXED" />
   
-  <capacitor key="enderio:block_buffer/intake" base="500000" scaler="CUBIC" />
-  <capacitor key="enderio:block_buffer/buffer" base="20000000" scaler="POWER" />
-  <capacitor key="enderio:block_buffer/use" base="0" scaler="FIXED" />
+  <capacitor key="enderio:block_buffer/intake" base="500000"   scaler="CUBIC" />
+  <capacitor key="enderio:block_buffer/buffer" base="40000000" scaler="POWER" />
+  <capacitor key="enderio:block_buffer/use"    base="0"        scaler="FIXED" />
 
   <capacitor key="enderio:block_farm_station/intake" base="200000" scaler="RANGE" />
   <capacitor key="enderio:block_farm_station/buffer" base="5000000" scaler="RANGE" />

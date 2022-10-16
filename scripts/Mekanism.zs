@@ -1,5 +1,6 @@
 import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IIngredient;
 #modloaded mekanism
 
 # The Combiner can dupe a bunch of stuff, so we're removing it.
@@ -177,7 +178,7 @@ for input, output in itemsToUnify {
 	recipes.remove(<mekanism:machineblock3>);
 	recipes.addShaped("Quantum Entangloporter", <mekanism:machineblock3>, 
 	[[<mekanism:basicblock:7>, <ore:heartDragon>, <mekanism:basicblock:7>],
-	[<forestry:chipsets:3>.withTag({T: 3 as short}), <mekanism:machineblock:11>|<mekanism:machineblock:11>.withTag({}), <forestry:chipsets:3>.withTag({T: 3 as short})], 
+	[<forestry:chipsets:3>.withTag({T:3 as short}, false), <mekanism:machineblock:11>|<mekanism:machineblock:11>.withTag({}), <forestry:chipsets:3>.withTag({T:3 as short}, false)], 
 	[<mekanism:basicblock:7>, <rftools:matter_beamer>, <mekanism:basicblock:7>]]);
 
 # Turbine Casing
@@ -267,3 +268,56 @@ for input, output in itemsToUnify {
 	rh(<mekanism:oreblock:1>);
 	rh(<mekanism:oreblock:2>);
 	rh(<mekanism:walkietalkie>);
+
+
+
+# Fix cubes uncraftable in AE
+# Just remake original crafts, but without additional security tags
+remake("Mek Cube 1", <mekanism:energycube>.withTag({tier: 1}), [[<ore:alloyAdvanced>, <ore:battery>, <ore:alloyAdvanced>],[<ore:ingotOsmium>, <mekanism:energycube>.withTag({tier: 0}), <ore:ingotOsmium>], [<ore:alloyAdvanced>, <ore:battery>, <ore:alloyAdvanced>]]);
+remake("Mek Cube 2", <mekanism:energycube>.withTag({tier: 2}), [[<ore:alloyElite>, <ore:battery>, <ore:alloyElite>],[<ore:ingotGold>, <mekanism:energycube>.withTag({tier: 1}), <ore:ingotGold>], [<ore:alloyElite>, <ore:battery>, <ore:alloyElite>]]);
+remake("Mek Cube 3", <mekanism:energycube>.withTag({tier: 3}), [[<ore:alloyUltimate>, <ore:battery>, <ore:alloyUltimate>], [<ore:gemDiamond>, <mekanism:energycube>.withTag({tier: 2}), <ore:gemDiamond>], [<ore:alloyUltimate>, <ore:battery>, <ore:alloyUltimate>]]);
+
+
+# Remake recipes of gas/fluid tanks to remove recipe functions (they caused AE2 autocrafting issues)
+val mekTankIngrs = [
+	<ore:dustRedstone>,
+	<mekanism:enrichedalloy>,
+	<mekanism:reinforcedalloy>,
+	<mekanism:atomicalloy>,
+	<mekanism:controlcircuit:3>,
+] as IIngredient[];
+for i, it in mekTankIngrs {
+	var grid = [
+		"#-#", 
+		"-o-", 
+		"#-#"] as string[];
+	if(i < 4) {
+		craft.remake(<mekanism:gastank>.withTag({tier: i}) , grid, { 
+			"#": it, 
+			"-": <ore:ingotOsmium>, 
+			"o": i==0 ? null : <mekanism:gastank>.withTag({tier: i - 1}, false)
+		});
+	}
+
+	if(i==0) continue;
+	craft.remake(<mekanism:machineblock2:11>.withTag({tier: i - 1}) , grid, { 
+		"#": it, 
+		"-": <ore:ingotIron>, 
+		"o": i==1 ? null : <mekanism:machineblock2:11>.withTag({tier: i - 2}, false)
+	});
+}
+
+# Cardboard Box spawner entity
+<mekanism:cardboardbox:1>.addAdvancedTooltip(function(item) {
+	val tag = item.tag;
+	if(
+		isNull(tag.mekData) ||
+		isNull(tag.mekData.blockData) ||
+		isNull(tag.mekData.blockData.tileTag) ||
+		isNull(tag.mekData.blockData.tileTag.id) ||
+		tag.mekData.blockData.tileTag.id != "minecraft:mob_spawner" ||
+		isNull(tag.mekData.blockData.tileTag.SpawnData) ||
+		isNull(tag.mekData.blockData.tileTag.SpawnData.id)
+	) return '';
+  return "§2Spawner with §a" ~ tag.mekData.blockData.tileTag.SpawnData.id.asString() ~ '§r';
+});

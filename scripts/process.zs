@@ -10,9 +10,9 @@
 #   case unsensetive. Also can be reverted with keyword "only:" from left.
 #   See functions body to see machine names.
 #   Keyword "strict:" try to remove old recipe before add new (replacing recipe)
-#   Warning: only few machines have "strict" functions. See processWork.zs for more info
+#   Warning: only few machines have "strict" functions.
 #
-# - "exceptions" variable examples:
+#  "exceptions" variable examples:
 # "macerator"                - recipe will me added in all machines except Macerator
 # "MaceRATor"                - same as above
 # "Except: Macerator oh my"  - same as above
@@ -34,9 +34,12 @@ import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.data.IData;
+import mods.jaopca.JAOPCA;
+import mods.jaopca.OreEntry;
 
 import scripts.processWork.work;
 import scripts.processWork.workEx;
+import scripts.processUtils.wholesCalc;
 
 #priority 50
 
@@ -52,10 +55,22 @@ function iF(output as IItemStack, mult as double) as IItemStack  {
   return output * max(1, min(output.maxStackSize, (output.amount as double * mult) as int));
 }
 
+static fluidSteps as double[] = [144, 666, 100, 250] as double[];
+
 # Multiply liquid amount on double value
 function lF(output as ILiquidStack, mult as double) as ILiquidStack  {
   if (isNull(output)) { return null; }
-  return output * ((output.amount as double * mult) as int);
+  var damount = output.amount as double;
+  var dresult = 0.0d;
+  var dmult = damount * mult;
+  for step in fluidSteps {
+    if (dresult == 0.0d && damount % step == 0) {
+      dresult = max(step, step * ((dmult / step) as int)) as double;
+    }
+  }
+  if (dresult == 0) { dresult = dmult; }
+
+  return output * (dresult as int);
 }
 
 # ######################################################################
@@ -98,14 +113,15 @@ function sawWood(input as IIngredient, output as IItemStack, exceptions as strin
 
 # Crush (grind) item to get it dusts and byproducts
 # 📦 → 📦 + [📦]?
-function crush(input as IIngredient, output as IItemStack, exceptions as string, extra as IItemStack[], extraChance as float[]) {
-  
-  work([
-    "manufactory" , "Macerator"  , "eu2Crusher"        ,
-    "AACrusher"   , "IECrusher"  , "SagMill"           ,
-    "Grindstone"  , "AEGrinder"  , "ThermalCentrifuge" ,
-    "Pulverizer"  , "mekCrusher"
-  ],exceptions, [input], null, [output], null, extra, extraChance);
+function crush(input as IIngredient, output as IItemStack, exceptions as string = null, extra as IItemStack[] = null, extraChance as float[] = null, opts as IData = null) {
+  for machine in [
+    "manufactory"  , "Macerator"  , "eu2Crusher"        ,
+    "AACrusher"    , "IECrusher"  , "SagMill"           ,
+    "Grindstone"   , "AEGrinder"  , "ThermalCentrifuge" ,
+    "Pulverizer"   , "mekCrusher" , "MekEnrichment"     ,
+  ] as string[] {
+    workEx(machine, exceptions, [input], null, [output], null, extra, extraChance, opts);
+  }
 }
 
 # Compress item to another
@@ -115,18 +131,25 @@ function compress(input as IIngredient, output as IItemStack, exceptions as stri
   work(["Pressurizer", "Compressor", "Compactor"], exceptions, [input], null, [output], null, null, null);
 }
 
-# Extract item from another
+# Enrich or Extract item from another
 # 📦 → 📦
 function extract(input as IIngredient, output as IItemStack, exceptions as string) {
   
-  work(["extractor"],    exceptions, [input], null, [output], null, null, null);
+  work(["extractor", "mekEnrichment"],    exceptions, [input], null, [output], null, null, null);
+}
+
+# Mash item. Use sharp knives on soft objects to turn them into pile of pieces
+# 📦 → 📦
+function mash(input as IIngredient, output as IItemStack, exceptions as string) {
+  
+  workEx("MetalPress", exceptions, [input], null, [output], null, null, null, {mold: "unpack"});
 }
 
 # Alloy two or more metals into one
 # [📦+] → 📦
 function alloy(input as IIngredient[], output as IItemStack, exceptions as string) {
   
-  work(["alloyFurnace", "induction", "alloySmelter", "arcFurnance", "AdvRockArc"],
+  work(["alloyFurnace", "induction", "alloySmelter", "arcFurnance", "AdvRockArc", "kiln"],
     exceptions, input, null, [output], null, null, null);
 }
 
@@ -142,22 +165,22 @@ function grow(input as IIngredient, output as IItemStack, exceptions as string,
 
 # Crushing rocks (like granite, andesite, etc..) to obtain dusts
 # 📦 → [📦📦📦]
-function crushRock(input as IIngredient, output as IItemStack[], exceptions as string) {
+function crushRock(input as IIngredient, output as IItemStack[], chances as float[], exceptions as string) {
   
-  work(["rockCrusher"], exceptions, [input], null, output, null, null, null);
+  work(["rockCrusher"], exceptions, [input], null, null, null, output, chances);
 }
 
 # Takes soft or moist item, squeeze it to get liquid or another item
 # 📦 → 💧? + 📦?
-function squeeze(input as IIngredient, fluidOutput as ILiquidStack, exceptions as string, itemOutput as IItemStack) {
+function squeeze(input as IIngredient[], fluidOutput as ILiquidStack, exceptions as string, itemOutput as IItemStack) {
   
-  work(["CrushingTub"],         exceptions, [input], null, [iF(itemOutput, 0.5d)],  [lF(fluidOutput, 0.5d)],      null, null);
-  work(["Squeezer"],            exceptions, [input], null, [iF(itemOutput, 0.5d)],  [lF(fluidOutput, 0.666666d)], null, null);
-  work(["MechanicalSqueezer"],  exceptions, [input], null, [iF(itemOutput, 0.5d)],  [lF(fluidOutput, 0.75d)],     null, null);
-  work(["ForestrySqueezer"],    exceptions, [input], null, [iF(itemOutput, 0.5d)],  [lF(fluidOutput, 0.9d)],      null, null);
-  work(["TECentrifuge"],        exceptions, [input], null, [iF(itemOutput, 0.75d)], [fluidOutput], null, null);
-  work(["IndustrialSqueezer"],  exceptions, [input], null, [itemOutput], [fluidOutput], null, null);
-  work(["FluidExtractor"],      exceptions, [input], null, [itemOutput], [fluidOutput], null, null);
+  work(["CrushingTub"],         exceptions, input, null, [iF(itemOutput, 0.5d)],  [lF(fluidOutput, 0.5d)],      null, null);
+  work(["Squeezer"],            exceptions, input, null, [iF(itemOutput, 0.5d)],  [lF(fluidOutput, 0.666667d)], null, null);
+  work(["MechanicalSqueezer"],  exceptions, input, null, [iF(itemOutput, 0.5d)],  [lF(fluidOutput, 0.75d)],     null, null);
+  work(["ForestrySqueezer"],    exceptions, input, null, [iF(itemOutput, 0.5d)],  [lF(fluidOutput, 0.9d)],      null, null);
+  work(["TECentrifuge"],        exceptions, input, null, [iF(itemOutput, 0.75d)], [fluidOutput], null, null);
+  work(["IndustrialSqueezer"],  exceptions, input, null, [itemOutput], [fluidOutput], null, null);
+  work(["FluidExtractor"],      exceptions, input, null, [itemOutput], [fluidOutput], null, null);
 }
 
 # Solute (mix, dissolve) 1+ items in 1+ liquids to get new 1+ liquids
@@ -166,7 +189,7 @@ function squeeze(input as IIngredient, fluidOutput as ILiquidStack, exceptions a
 # [💧+]  ⤴
 function solution(inputItems as IIngredient[], inputLiquids as ILiquidStack[], outputLiquids as ILiquidStack[], inputChance as float[], exceptions as string) {
 
-  work(["vat", "canner", "fluidenricher", "ChemicalReactor"], 
+  work(["vat", "canner", "fluidenricher", "ChemicalReactor", "Mixer"], 
     exceptions, inputItems, inputLiquids, null, outputLiquids, null, inputChance);
 }
 
@@ -196,26 +219,37 @@ function recycleMetal(input as IIngredient, output as IItemStack, liquid as ILiq
   
   work(["arcFurnance"], exceptions, [input], null, [output], null, null, null);
   work(["induction"],   exceptions, [input, <minecraft:sand>], null, [output], null, [itemUtils.getItem("thermalfoundation:material",864)], [0.1f]);
-  work(["smeltery"],    exceptions, [input], null, [output], [lF(liquid, 0.75d)], null, null);
+  
+  if (!isNull(liquid)) {
+    work(["smeltery"],    exceptions, [input], null, [output], [lF(liquid, 0.75d)], null, null);
+  }
 }
 
 # Melts item in liquid form
 # 📦 → 💧
-function melt(input as IIngredient, output as ILiquidStack, exceptions as string) {
+function melt(input as IIngredient, output as ILiquidStack, exceptions as string = null) {
   
-  work(["smeltery", "melter"],   exceptions, [input], null, null, [output], null, null);
+  work(["smeltery", "melter", "crucible"],   exceptions, [input], null, null, [output], null, null);
 }
 
 # Fill an item with liquid
 # 📦 ⤵
 #     📦
 # 💧  ⤴
-function fill(itemInput as IIngredient, fluidInput as ILiquidStack, output as IItemStack, exceptions as string) {
+function fill(itemInput as IIngredient, fluidInput as ILiquidStack, output as IItemStack, exceptions as string = null) {
   
-  val newAmount1 = min(1000, (fluidInput.amount as double * 1.6d) as int);
-  val newAmount2 = min(1000, (fluidInput.amount as double * 1.4d) as int);
+  val newAmount1 = min(1000, lF(fluidInput, 1.6d).amount);
+  val newAmount2 = min(1000, lF(fluidInput, 1.4d).amount);
   work(["Casting"],                exceptions, [itemInput], [lF(fluidInput, 1.8d)], [output], null, null, null);
   work(["DryingBasin"],            exceptions, [itemInput], [fluidInput * newAmount1], [output], null, null, null);
   work(["MechanicalDryingBasin"],  exceptions, [itemInput], [fluidInput * newAmount2], [output], null, null, null);
   work(["NCInfuser"],              exceptions, [itemInput], [lF(fluidInput, 1.2d)], [output], null, null, null);
+  work(["Transposer"],             exceptions, [itemInput], [fluidInput], [output], null, null, null);
+}
+
+# Perfor some magic over item(s) to create new item(s)
+# [📦+] → [📦+]
+function magic(input as IIngredient[], output as IItemStack[], exceptions as string = null) {
+  
+  work(["starlightInfuser"], exceptions, input, null, output, null, null, null);
 }

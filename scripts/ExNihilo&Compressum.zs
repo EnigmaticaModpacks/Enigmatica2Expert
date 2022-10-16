@@ -134,4 +134,18 @@ import mods.jei.JEI.removeAndHide as rh;
 # Remove excess mesh
 	rh(<excompressum:iron_mesh>);
 
+
+# [Artificial Hive] from [Hay Bale][+1]
+craft.remake(<exnihilocreatio:hive>, ["pretty",
+  "B B B",
+  "b H b",
+  "B B B"], {
+  B: <ore:itemBeeswax>,    # Beeswax
+  H: <minecraft:hay_block>,# Hay Bale
+	b: <rustic:bee>
+});
+
+# Remove Burn Time to prevent confusing in JEI categories
+furnace.setFuel(<exnihilocreatio:hive:1>, 0);
+
 	

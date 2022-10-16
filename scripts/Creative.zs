@@ -133,8 +133,8 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 	<extrautils2:screen>, <opencomputers:screen3>, 
 	<opencomputers:screen2>, <opencomputers:screen1>]);
 
-# RFTools Creative Powercell
-	mods.extendedcrafting.TableCrafting.addShaped(4, <rftools:powercell_creative>,	
+# EnderIO Creative Capacitor Bank
+	mods.extendedcrafting.TableCrafting.addShaped(4, <enderio:block_cap_bank>.withTag({"enderio:energy": 1000000000}),
 	[[rtgFuel, resonantFrame, ingotUltimate, ingotUltimate, ingotUltimate, ingotUltimate, ingotUltimate, resonantFrame, rtgFuel], 
 	[resonantFrame, <nuclearcraft:rtg_californium>, elitePlating, anglesite, dilithium, anglesite, elitePlating, <nuclearcraft:rtg_californium>, resonantFrame], 
 	[ingotUltimate, elitePlating, ultProvider, resonantCube, <environmentaltech:solar_cont_5>, resonantCube, ultProvider, elitePlating, ingotUltimate], 
@@ -173,7 +173,7 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 	mods.extendedcrafting.TableCrafting.addShaped(4, <mekanism:machineblock2:11>.withTag({tier: 4, mekData:{}}), 
 	[[<industrialforegoing:black_hole_tank>, <forge:bucketfilled>.withTag({FluidName: "milk_goat", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "blood", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "liquiddna", Amount: 1000}), <thermalexpansion:tank>.withTag({Fluid: {FluidName: "bio.ethanol", Amount: 32000}}), <forge:bucketfilled>.withTag({FluidName: "juice", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "mutagen", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "biomass", Amount: 1000}), <industrialforegoing:black_hole_tank>], 
 	[<forge:bucketfilled>.withTag({FluidName: "empoweredoil", Amount: 1000}), resonantFrame, ingotUltimate, ingotUltimate, <bigreactors:minerals>, ingotUltimate, ingotUltimate, resonantFrame, <forge:bucketfilled>.withTag({FluidName: "witchwater", Amount: 1000})], 
-	[<forge:bucketfilled>.withTag({FluidName: "xu_demonic_metal", Amount: 1000}), ingotUltimate, megaDrum, megaDrum, megaDrum, megaDrum, megaDrum, ingotUltimate, <forge:bucketfilled>.withTag({FluidName: "essence", Amount: 1000})], 
+	[<forge:bucketfilled>.withTag({FluidName: "xu_demonic_metal", Amount: 1000}), ingotUltimate, megaDrum, megaDrum, megaDrum, megaDrum, megaDrum, ingotUltimate, <forge:bucketfilled>.withTag({FluidName: "corium", Amount: 1000})], 
 	[<forge:bucketfilled>.withTag({FluidName: "draconium", Amount: 1000}), ingotUltimate, megaDrum, awakendedCore, ultCatalyst, awakendedCore, megaDrum, ingotUltimate, <forge:bucketfilled>.withTag({FluidName: "sewage", Amount: 1000})], 
 	[<thermalexpansion:tank>.withTag({Fluid: {FluidName: "tree_oil", Amount: 32000}}), <bigreactors:minerals>, megaDrum, ultCatalyst, <draconicevolution:chaotic_core>, ultCatalyst, megaDrum, <bigreactors:minerals>, <thermalexpansion:tank>.withTag({Fluid: {FluidName: "ic2uu_matter", Amount: 32000}})], 
 	[<forge:bucketfilled>.withTag({FluidName: "pyrotheum", Amount: 1000}), ingotUltimate, megaDrum, awakendedCore, ultCatalyst, awakendedCore, megaDrum, ingotUltimate, <forge:bucketfilled>.withTag({FluidName: "ic2pahoehoe_lava", Amount: 1000})], 
@@ -189,7 +189,7 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 	[[<ore:blockCrystalMatrix>, blackHoleUnit, ultCatalyst, ultCatalyst, <bigreactors:minerals>, ultCatalyst, ultCatalyst, blackHoleUnit, <ore:blockCrystalMatrix>], 
 	[blackHoleUnit, resonantFrame, resonantFrame, draconicChest, <extracells:storage.component:3>, draconicChest, resonantFrame, resonantFrame, blackHoleUnit], 
 	[ultCatalyst, resonantFrame, <ore:blockAethium>, <draconicevolution:chaotic_core>, benitoite, <draconicevolution:chaotic_core>, <ore:blockAethium>, resonantFrame, ultCatalyst], 
-	[ultCatalyst, draconicChest, creativeEssence, <rftools:powercell_creative>, <ore:ingotInfinity>, <ic2:te:86>, creativeEssence, draconicChest, ultCatalyst], 
+	[ultCatalyst, draconicChest, creativeEssence, <enderio:block_cap_bank>.withTag({"enderio:energy": 1000000000}), <ore:ingotInfinity>, <ic2:te:86>, creativeEssence, draconicChest, ultCatalyst], 
 	[<bigreactors:minerals>, <extracells:storage.component:3>, benitoite, <environmentaltech:solar_cont_6>, twilightForestMasterTrophy, <environmentaltech:solar_cont_6>, benitoite, <extracells:storage.component:3>, <bigreactors:minerals>], 
 	[ultCatalyst, draconicChest, creativeEssence, creativeTank, <ore:ingotInfinity>, creativeGasTank, creativeEssence, draconicChest, ultCatalyst], 
 	[ultCatalyst, resonantFrame, <ore:blockAethium>, <draconicevolution:chaotic_core>, benitoite, <draconicevolution:chaotic_core>, <ore:blockAethium>, resonantFrame, ultCatalyst], 

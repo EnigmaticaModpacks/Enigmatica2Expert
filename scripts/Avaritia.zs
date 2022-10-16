@@ -51,11 +51,11 @@ import mods.jei.JEI.removeAndHide as rh;
 	  mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:neutron_collector>, [
 	  [<environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>], 
 	  [<environmentaltech:mica>, null, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, null, <environmentaltech:mica>], 
-	  [<environmentaltech:mica>, null, <forestry:chipsets:3>.withTag({}), <ore:circuitUltimate>, <advancedrocketry:ic:2>, <ore:circuitUltimate>, <forestry:chipsets:3>.withTag({}), null, <environmentaltech:mica>], 
+	  [<environmentaltech:mica>, null, <forestry:chipsets:3>.withTag({T:3 as short}, false), <ore:circuitUltimate>, <advancedrocketry:ic:2>, <ore:circuitUltimate>, <forestry:chipsets:3>.withTag({T:3 as short}, false), null, <environmentaltech:mica>], 
 	  [<ore:ingotCrystalMatrix>, null, <ore:circuitUltimate>, <advgenerators:controller>, <advgenerators:controller>, <advgenerators:controller>, <ore:circuitUltimate>, null, <ore:ingotCrystalMatrix>], 
 	  [null, null, <advancedrocketry:ic:2>, <advgenerators:controller>, itemUtils.getItem("appliedenergistics2:controller"), <advgenerators:controller>, <advancedrocketry:ic:2>, null, null], 
 	  [<ore:ingotCrystalMatrix>, null, <ore:circuitUltimate>, <advgenerators:controller>, <advgenerators:controller>, <advgenerators:controller>, <ore:circuitUltimate>, null, <ore:ingotCrystalMatrix>], 
-	  [<actuallyadditions:block_heat_collector>, null, <forestry:chipsets:3>.withTag({}), <ore:circuitUltimate>, <advancedrocketry:ic:2>, <ore:circuitUltimate>, <forestry:chipsets:3>.withTag({}), null, <actuallyadditions:block_heat_collector>], 
+	  [<actuallyadditions:block_heat_collector>, null, <forestry:chipsets:3>.withTag({T:3 as short}, false), <ore:circuitUltimate>, <advancedrocketry:ic:2>, <ore:circuitUltimate>, <forestry:chipsets:3>.withTag({T:3 as short}, false), null, <actuallyadditions:block_heat_collector>], 
 	  [<actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>, null, null, null, null, null, <actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>], 
 	  [<actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>, <ore:ingotCrystalMatrix>, <actuallyadditions:block_heat_collector>, <ore:ingotCrystalMatrix>, <actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>]
 		]);
@@ -64,11 +64,11 @@ import mods.jei.JEI.removeAndHide as rh;
 	  mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:neutron_collector>, [
 	  [<environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>, <ore:ingotCrystalMatrix>, <environmentaltech:mica>], 
 	  [<environmentaltech:mica>, null, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, <nuclearcraft:helium_collector_dense>, null, <environmentaltech:mica>], 
-	  [<environmentaltech:mica>, null, <forestry:chipsets:3>.withTag({}), <ore:circuitUltimate>, <advancedrocketry:ic:2>, <ore:circuitUltimate>, <forestry:chipsets:3>.withTag({}), null, <environmentaltech:mica>], 
+	  [<environmentaltech:mica>, null, <forestry:chipsets:3>.withTag({T:3 as short}, false), <ore:circuitUltimate>, <advancedrocketry:ic:2>, <ore:circuitUltimate>, <forestry:chipsets:3>.withTag({T:3 as short}, false), null, <environmentaltech:mica>], 
 	  [<ore:ingotCrystalMatrix>, null, <ore:circuitUltimate>, <advgenerators:controller>, <advgenerators:controller>, <advgenerators:controller>, <ore:circuitUltimate>, null, <ore:ingotCrystalMatrix>], 
 	  [null, null, <advancedrocketry:ic:2>, <advgenerators:controller>, <appliedenergistics2:energy_acceptor>, <advgenerators:controller>, <advancedrocketry:ic:2>, null, null], 
 	  [<ore:ingotCrystalMatrix>, null, <ore:circuitUltimate>, <advgenerators:controller>, <advgenerators:controller>, <advgenerators:controller>, <ore:circuitUltimate>, null, <ore:ingotCrystalMatrix>], 
-	  [<actuallyadditions:block_heat_collector>, null, <forestry:chipsets:3>.withTag({}), <ore:circuitUltimate>, <advancedrocketry:ic:2>, <ore:circuitUltimate>, <forestry:chipsets:3>.withTag({}), null, <actuallyadditions:block_heat_collector>], 
+	  [<actuallyadditions:block_heat_collector>, null, <forestry:chipsets:3>.withTag({T:3 as short}, false), <ore:circuitUltimate>, <advancedrocketry:ic:2>, <ore:circuitUltimate>, <forestry:chipsets:3>.withTag({T:3 as short}, false), null, <actuallyadditions:block_heat_collector>], 
 	  [<actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>, null, null, null, null, null, <actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>], 
 	  [<actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>, <ore:ingotCrystalMatrix>, <actuallyadditions:block_heat_collector>, <ore:ingotCrystalMatrix>, <actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>, <actuallyadditions:block_heat_collector>]
 		]);
@@ -114,98 +114,38 @@ import mods.jei.JEI.removeAndHide as rh;
 # Skullfire Sword
  	mods.avaritia.ExtremeCrafting.remove(<avaritia:skullfire_sword>);
 	mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:skullfire_sword>, [
-	[null, null, null, null, null, null, null, <ore:ingotCrystalMatrix>, <minecraft:beacon>], 
-	[null, null, null, null, null, null, <ore:ingotCrystalMatrix>, <ore:rodBlaze>, <ore:ingotCrystalMatrix>], 
-	[null, null, null, null, null, <ore:ingotCrystalMatrix>, <ore:rodBlaze>, <ore:ingotCrystalMatrix>, null], 
-	[null, null, null, null, <ore:boneWither>, <ore:rodBlaze>, <ore:ingotCrystalMatrix>, null, null], 
-	[null, <tconstruct:wide_guard>.withTag({Material: "bone"}), null, <ore:ingotCrystalMatrix>, <ore:rodBlaze>, <ore:boneWither>, null, null, null], 
-	[null, null, <tconstruct:wide_guard>.withTag({Material: "bone"}), <ore:ingotCrystalMatrix>, <ore:ingotCrystalMatrix>, null, null, null, null], 
-	[null, null, <ore:blockMagicalWood>, <tconstruct:wide_guard>.withTag({Material: "bone"}), null, null, null, null, null], 
-	[null, <ore:blockMagicalWood>, null, null, <tconstruct:wide_guard>.withTag({Material: "bone"}), null, null, null, null], 
-	[<ore:netherStar>, null, null, null, null, null, null, null, null]
-	]);
+	[null, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 68 as short}]}), null, null, <bloodmagic:lava_crystal>], 
+	[null, null, null, <randomthings:obsidianskull>, null], 
+	[null, <tconstruct:wide_guard>.withTag({Material: "dragonbone"}), <tconstruct:cleaver>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 7.2 as float, FreeModifiers: 3, Durability: 2088, HarvestLevel: 3, Attack: 11.58 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 7.2 as float, FreeModifiers: 2, Durability: 2088, HarvestLevel: 3, Attack: 11.58 as float}, Special: {Categories: ["tool", "weapon"]}, TinkerData: {Materials: ["fierymetal", "fierymetal", "fierymetal", "fierymetal"], Modifiers: ["beheading_cleaver", "toolleveling"]}, Modifiers: [{identifier: "twilit", color: -142243, level: 1}, {identifier: "flammable", color: -142243, level: 1}, {identifier: "autosmelt", color: -142243, level: 1}, {identifier: "superheat", color: -142243, level: 1}, {identifier: "beheading_cleaver", color: 1070923, level: 2}, {identifier: "toolleveling", color: 16777215, level: 1}], Traits: ["twilit", "flammable", "autosmelt", "superheat", "toolleveling"]}), null, null], 
+	[null, <tconstruct:tough_tool_rod>.withTag({Material: "dragonbone"}), <tconstruct:wide_guard>.withTag({Material: "dragonbone"}), null, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 55 as short}]})], 
+	[<ore:netherStar>, null, null, null, null]
+]);
 		
 # Ultimate Stew
-	mods.extendedcrafting.TableCrafting.addShapeless(4, 
-	<avaritia:ultimate_stew> * 9,  
-	[<ore:ingotCosmicNeutronium>, 
-	<ore:cropWheat>, 
-	<ore:cropApple>, 
-	<ore:cropMelon>, 
-	<ore:cropBean>, 
-	<ore:cropPumpkin>, 
-	<ore:cropCarrot>, 
-	<ore:cropPotato>, 
-	<ore:cropBeetroot>, 
-	<ore:cropAsparagus>, 
-	<ore:cropCorn>, 
-	<ore:cropBambooshoot>, 
-	<ore:cropCucumber>, 
-	<ore:cropWintersquash>, 
-	<ore:cropZucchini>, 
-	<ore:cropOnion>, 
-	<ore:cropBeet>, 
-	<ore:cropParsnip>, 
-	<ore:cropRadish>, 
-	<ore:cropRutabaga>, 
-	<ore:cropSweetpotato>, 
-	<ore:cropTurnip>, 
-	<ore:cropRhubarb>, 
-	<ore:cropCelery>, 
-	<ore:cropSpiceleaf>, 
-	<ore:cropBroccoli>, 
-	<ore:cropCauliflower>, 
-	<ore:cropLeek>, 
-	<ore:cropLettuce>, 
-	<ore:cropScallion>, 
-	<ore:cropArtichoke>, 
-	<ore:cropBrusselsprout>, 
-	<ore:cropCabbage>, 
-	<ore:cropSpinach>, 
-	<ore:mushroomAny>, 
-	<ore:cropBellpepper>, 
-	<ore:cropEggplant>, 
-	<ore:cropOkra>, 
-	<ore:cropPeas>, 
-	<ore:cropSeaweed>, 
-	<ore:cropWaterchestnut>, 
-	<ore:cropTomato>, 
-	<ore:cropGarlic>, 
-	<ore:cropBlackberry>, 
-	<ore:cropBlueberry>, 
-	<ore:cropRaspberry>, 
-	<ore:cropStrawberry>, 
-	<ore:cropCranberry>, 
-	<ore:cropGooseberry>, 
-	<rustic:ironberries>, 
-	<rustic:wildberries>, 
-	<ore:cropGrape>]);
+	mods.extendedcrafting.TableCrafting.addShaped(4, <avaritia:ultimate_stew>*9, [
+	[null, null, null, null, <avaritia:cosmic_meatballs>, null, null, null, null], 
+	[null, <ore:blockIron>, <ore:foodCornedbeefbreakfast>, <ore:foodCornedbeefbreakfast>, <ore:foodCornedbeefbreakfast>, <ore:foodCornedbeefbreakfast>, <ore:foodCornedbeefbreakfast>, <ore:blockIron>, null], 
+	[<ore:blockIron>, <ore:foodMinerstew>, <ore:foodSouthernstylebreakfast>, <ore:foodSouthernstylebreakfast>, <ore:foodSouthernstylebreakfast>, <ore:foodSouthernstylebreakfast>, <ore:foodSouthernstylebreakfast>, <ore:foodMinerstew>, <ore:blockIron>], 
+	[<ore:blockIron>, <ore:foodMinerstew>, <ore:foodThankfuldinner>, <ore:foodThankfuldinner>, <ore:foodThankfuldinner>, <ore:foodThankfuldinner>, <ore:foodThankfuldinner>, <ore:foodMinerstew>, <ore:blockIron>], 
+	[<ore:blockIron>, <ore:foodMinerstew>, <ore:foodKoreandinner>, <ore:foodKoreandinner>, <ore:foodKoreandinner>, <ore:foodKoreandinner>, <ore:foodKoreandinner>, <ore:foodMinerstew>, <ore:blockIron>], 
+	[<ore:blockIron>, <ore:foodMinerstew>, <ore:foodGourmetvenisonburger>, <ore:foodGourmetvenisonburger>, <ore:foodGourmetvenisonburger>, <ore:foodGourmetvenisonburger>, <ore:foodGourmetvenisonburger>, <ore:foodMinerstew>, <ore:blockIron>], 
+	[<ore:dustMana>, <ore:blockIron>, <ore:foodMeatfeastpizza>, <ore:foodMeatfeastpizza>, <ore:foodMeatfeastpizza>, <ore:foodMeatfeastpizza>, <ore:foodMeatfeastpizza>, <ore:blockIron>, <ore:dustMana>], 
+	[<ore:dustMana>, <ore:dustMana>, <ore:blockIron>, <ore:blockIron>, <ore:blockIron>, <ore:blockIron>, <ore:blockIron>, <ore:dustMana>, <ore:dustMana>], 
+	[null, <ore:dustMana>, <ore:dustMana>, <tconstruct:firewood:1>, <tconstruct:firewood:1>, <tconstruct:firewood:1>, <ore:dustMana>, <ore:dustMana>, null]
+]);
 
 # Cosmic Meatballs
-	mods.extendedcrafting.TableCrafting.addShapeless(4, 
-	<avaritia:cosmic_meatballs> * 9, 
-	[<ore:ingotCosmicNeutronium>, 
-	<minecraft:porkchop>, 
-	<minecraft:beef>, 
-	<minecraft:chicken>, 
-	<minecraft:rabbit>, 
-	<minecraft:mutton>, 
-	<animania:raw_prime_steak>,
-	<animania:raw_prime_pork>,
-	<animania:raw_prime_bacon>,
-	<animania:raw_prime_chicken>,
-	<animania:raw_prime_mutton>,
-	<animania:raw_prime_rabbit>,
-	<animania:raw_frog_legs>,
-	<animania:raw_horse>,
-	<animania:raw_chevon>,
-	<animania:raw_prime_chevon>,
-	<animania:raw_peacock>,
-	<animania:raw_prime_beef>,
-	<animania:raw_prime_peacock>,
-	<harvestcraft:turkeyrawitem>, 
-	<harvestcraft:venisonrawitem>, 
-	<harvestcraft:duckrawitem>]);
+	mods.extendedcrafting.TableCrafting.addShaped(4, <avaritia:cosmic_meatballs> * 9, [
+	[null, null, null, <ore:dustAstralStarmetal>, <ore:dustAstralStarmetal>, <ore:dustAstralStarmetal>, null, null, null], 
+	[null, null, <ore:dustAstralStarmetal>, <ore:foodPorkrinds>, <thaumcraft:triple_meat_treat>, <ore:foodPorkrinds>, <ore:dustAstralStarmetal>, null, null], 
+	[null, null, <ore:dustAstralStarmetal>, <thaumcraft:triple_meat_treat>, <ore:ingotCosmicNeutronium>, <thaumcraft:triple_meat_treat>, <ore:dustAstralStarmetal>, null, null], 
+	[null, null, <ore:dustAstralStarmetal>, <ore:foodPorkrinds>, <thaumcraft:triple_meat_treat>, <ore:foodPorkrinds>, <ore:dustAstralStarmetal>, <ore:dustAstralStarmetal>, null], 
+	[null, <ore:dustAstralStarmetal>, <ore:dustAstralStarmetal>, <ore:ingotCrystalMatrix>, <astralsorcery:itemshiftingstar>, <ore:ingotCrystalMatrix>, <thaumcraft:triple_meat_treat>, <ore:foodPorkrinds>, <ore:dustAstralStarmetal>], 
+	[<ore:dustAstralStarmetal>, <ore:foodPorkrinds>, <thaumcraft:triple_meat_treat>, <ore:foodPorkrinds>, <ore:ingotCrystalMatrix>, <thaumcraft:triple_meat_treat>, <ore:ingotCosmicNeutronium>, <thaumcraft:triple_meat_treat>, <ore:dustAstralStarmetal>], 
+	[<ore:dustAstralStarmetal>, <thaumcraft:triple_meat_treat>, <ore:ingotCosmicNeutronium>, <thaumcraft:triple_meat_treat>, <ore:dustAstralStarmetal>, <ore:foodPorkrinds>, <thaumcraft:triple_meat_treat>, <ore:foodPorkrinds>, <ore:dustAstralStarmetal>], 
+	[<ore:dustAstralStarmetal>, <ore:foodPorkrinds>, <thaumcraft:triple_meat_treat>, <ore:foodPorkrinds>, <ore:dustAstralStarmetal>, <ore:dustAstralStarmetal>, <ore:dustAstralStarmetal>, <ore:dustAstralStarmetal>, null], 
+	[null, <ore:dustAstralStarmetal>, <ore:dustAstralStarmetal>, <ore:dustAstralStarmetal>, null, null, null, null, null]
+]);
 		
 # Neutronium Ingot
 	var ni = <ore:ingotCosmicNeutronium>;
@@ -363,11 +303,10 @@ import mods.jei.JEI.removeAndHide as rh;
 	[null, null, null, null, null, ni, null, null, null]
 	]);
 	
+# Extreme Crafting Table  
 	recipes.remove(<avaritia:extreme_crafting_table>);
 	mods.extendedcrafting.CombinationCrafting.addRecipe(<avaritia:extreme_crafting_table>, 
 	100000000, 1000000, <avaritia:double_compressed_crafting_table>, 
 	[<avaritia:resource:1>, <avaritia:resource:1>, <extendedcrafting:material:12>, 
 	<extendedcrafting:material:12>, <avaritia:resource:1>, <avaritia:resource:1>]);
-
-
 		

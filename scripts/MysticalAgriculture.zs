@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 #modloaded mysticalagriculture
 
 # Enderman Chunks -> Ender Pearls
@@ -690,3 +691,126 @@ scripts.process.recycleMetal(<mysticalagriculture:watering_can:1>, <mysticalagri
 scripts.process.recycleMetal(<mysticalagriculture:watering_can:2>, <mysticalagriculture:crafting:35> * 4, <liquid:intermedium> * (144*4), null);
 scripts.process.recycleMetal(<mysticalagriculture:watering_can:3>, <mysticalagriculture:crafting:36> * 4, <liquid:superium> * (144*4), null);
 scripts.process.recycleMetal(<mysticalagriculture:watering_can:4>, <mysticalagriculture:crafting:37> * 4, <liquid:supremium> * (144*4), null);
+
+
+# Missed 4 types of dyes from [Dye Essence]
+val dyeEssence = {x: <mysticalagriculture:dye_essence>} as IIngredient[string];
+craft.make(<biomesoplenty:green_dye> * 4, ["pretty",
+	"x    ",
+	"  x  ",
+	"x    "], dyeEssence);
+craft.make(<biomesoplenty:brown_dye> * 4, ["pretty",
+	"  x  ",
+	"    x",
+	"  x  "], dyeEssence);
+craft.make(<biomesoplenty:blue_dye> * 4, ["pretty",
+	"    x",
+	"  x  ",
+	"    x"], dyeEssence);
+craft.make(<biomesoplenty:white_dye> * 4, ["pretty",
+	"  x  ",
+	"x    ",
+	"  x  "], dyeEssence);
+
+# Squeeze cow essence
+scripts.process.squeeze([<mysticalagriculture:cow_essence>], <liquid:milk> * 250, "no exceptions", null);
+
+# Squeeze water essence
+scripts.process.squeeze([<mysticalagriculture:water_essence>], <liquid:water> * 250, "no exceptions", null);
+
+# Saplings from essence
+# ----------------------------
+
+static groups as int[][IIngredient][string] = {
+	biomesoplenty: {<biomesoplenty:biome_essence>: [0,1,2,3]},
+	tconstruct   : {<ore:slimeball>: [0,1,2,3]},
+	other        : {<mysticalagriculture:nature_essence>: [0,1,2,3]},
+} as int[][IIngredient][string];
+
+for sap in <ore:treeSapling>.items {
+	if(sap.damage == 32767)
+    for sap0 in sap.definition.subItems {
+			handleSapling(sap0);
+		}
+	else
+		handleSapling(sap);
+}
+
+static counter as int[] = [0] as int[];
+
+function handleSapling(sap as IItemStack) as void {
+	val owner = sap.definition.owner;
+
+	if(owner == "biomesoplenty") {
+		if(sap.matches(<biomesoplenty:sapling_1:7>)) return;
+		addSaplingsRecipe(sap * 10, groups.biomesoplenty);
+	} else
+
+	if (owner == "tconstruct") {
+		addSaplingsRecipe(sap * 6, groups.tconstruct);
+	} else
+
+	if (!owner.matches("minecraft|harvestcraft|twilightforest|randomthings|forestry|advancedrocketry|integrateddynamics")) {
+		addSaplingsRecipe(sap * 6, groups.other);
+	}
+}
+
+function shiftGroup(a as int[], n as int) as void {
+	a[n] = a[n] + 1;
+	if(a[n] > 5 + n) {
+		if(n == 0) {
+			a[0] = 0;
+			return;
+		}
+		shiftGroup(a, n - 1);
+		a[n] = a[n - 1] + 1;
+	}
+}
+
+
+static defGroup as IIngredient[] = [
+	<mysticalagriculture:nature_essence>,
+	<mysticalagriculture:nature_essence>,
+	<mysticalagriculture:wood_essence>,
+	<mysticalagriculture:wood_essence>,
+] as IIngredient[];
+
+
+function getIngredients(group as int[][IIngredient]) as IIngredient[][] {
+	val map = [
+		[null, null, null],
+		[null, null, null],
+		[null, null, null]
+	] as IIngredient[][];
+
+	for i0, arr in group {
+		for i, pos in arr {
+			val x as int = pos % 3;
+			val y = (pos / 3) as int;
+			map[y][x] = i==0 ? i0 : defGroup[i];
+		}
+
+		shiftGroup(arr, 3);
+	}
+	return map;
+}
+
+function addSaplingsRecipe(sap as IItemStack, group as int[][IIngredient]) {
+	recipes.addShaped(sap.definition.owner~" sapling #"~counter[0], sap, getIngredients(group));
+	counter[0] = counter[0] + 1;
+}
+
+# ----------------------------
+
+# [Fertilized Essence] from [Phyto-Gro]*2[+4]
+craft.reshapeless(<mysticalagriculture:fertilized_essence>, "rF*ef", {
+  "*": <mysticalagriculture:infusion_crystal>.anyDamage() | <mysticalagriculture:master_infusion_crystal>, # Infusion Crystal
+  "r": <actuallyadditions:item_fertilizer>, # Fertilizer
+  "F": <ic2:crop_res:2>,                    # Fertilizer
+  "e": <forestry:fertilizer_compound>,      # Fertilizer
+  "f": <thermalfoundation:fertilizer>,      # Phyto-Gro
+});
+
+# Better enderpearl recipe
+recipes.removeByRecipeName("mysticalagriculture:ender_pearl");
+craft.shapeless(<minecraft:ender_pearl> * 6, "AAA", {A: <mysticalagriculture:enderman_essence>});
