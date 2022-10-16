@@ -31,6 +31,9 @@ mods.thaumcraft.Infusion.registerRecipe(
   "D": <thaumicwonders:disjunction_cloth>.anyDamage(), # Disjunction Cloth
 }).spiral(1));
 
+# Remove Rattus and Mythus because they cant be planted
+mods.thaumcraft.Crucible.removeRecipe(<thaumadditions:vis_seeds>.withTag({Aspect: "rattus"}));
+mods.thaumcraft.Crucible.removeRecipe(<thaumadditions:vis_seeds>.withTag({Aspect: "mythus"}));
 
 val bookWithAllKnowledge = <thaumadditions:knowledge_tome>.withTag({
   KnowledgeOwner:"Thaumaturge Cow",

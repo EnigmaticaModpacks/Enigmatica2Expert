@@ -2,7 +2,9 @@
 	x: 8.4d,
 	y: -0.4d,
 	text: [
-		"Any Vis Seeds craftable, but can be planted only on other planets, added by Advanced Rocketry mod, OR in Emptiness dimension."
+		"Most Vis Seeds craftable, but can be planted only on other planets, added by Advanced Rocketry mod, OR in Emptiness dimension.",
+		"",
+		"Due to bug, Rattus and Mythus seeds cant be planted anywhere thus disabled."
 	],
 	dependencies: [
 		"a54068bb"
