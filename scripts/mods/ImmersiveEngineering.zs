@@ -19,6 +19,10 @@ import scripts.craft.grid.Grid;
 # Removing Recycling recipes that produce IE Iron Nuggets
 	mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:29>);
 
+# Remove buggy silicon recipe (empty input)
+# Actually impossible, this removal not working
+	// mods.immersiveengineering.ArcFurnace.removeRecipe(<appliedenergistics2:material:5>);
+
 
 # Sheetmetal Chute Smeltery compat
 	mods.tconstruct.Melting.addRecipe(<liquid:iron> * 72, <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:chute_iron"}));
