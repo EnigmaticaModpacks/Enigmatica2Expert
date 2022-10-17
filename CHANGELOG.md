@@ -1,5 +1,15 @@
 ### Enigmatica 2: Expert Changelog
 
+## 1.85
+
+_[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.85.md)_ | _Using Forge-1.12.2-14.23.5.2860_
+
+**Fixed bugs:**
+
+-   Fix missing Petal recipes [\#2050](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/2050) ([Kanzaji](https://github.com/Kanzaji))
+
+---
+
 ## 1.84
 
 _[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.84.md)_ | _Using Forge-1.12.2-14.23.5.2860_
@@ -38,6 +48,12 @@ I highly recommend that you have a look through the changes in these links:
 -   Allow all salts to be used with the NuclearCraft Melter [\#1986](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/1986) ([Discomanco](https://github.com/Discomanco))
 -   Added Oxygen to the Fluid Dict Coverter [\#1985](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/1985) ([Discomanco](https://github.com/Discomanco))
 -   Update Forestry.zs [\#1979](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/1979) ([Discomanco](https://github.com/Discomanco))
+-   Blacklist AS from Sack of Holding [\#2023](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/2023) ([Discomanco](https://github.com/Discomanco))
+-   Immersive Technology Schematics update [\#2018](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/2018) ([Srdjan-V](https://github.com/Srdjan-V))
+-   Fix JEI and Creative Tank replacement [\#2014](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/2014) ([Discomanco](https://github.com/Discomanco))
+-   Non-mod changes from V2 [\#2013](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/2013) ([Discomanco](https://github.com/Discomanco))
+-   🐝 Bee rework [\#1927](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/1927) ([Krutoy242](https://github.com/Krutoy242))
+-   "Extended" fixes and improvements [\#1926](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/1926) ([Krutoy242](https://github.com/Krutoy242))
 
 **Fixed bugs:**
 
