@@ -2,16 +2,13 @@
 
 List of priorities:
 
-- [x] ✏️ Fix Voltatic Piles cant be autocrafted
-- [x] ✏️ Fix IC2 items with NBT
 - [ ] ✏️ Nature chests still turn into Lootr
 - [ ] ✏️ Make new replicator machine, irradiating chunks
 - [ ] ✏️ More Alien Crystal blocks + mica to get Crystaltine and ET gems
 - [ ] ✏️ Remove Cyclic's machines completely because they are laggy
 - [ ] ✏️ Milk Questing Ram to color essence
-- [ ] ✏️ Buff Impetus Generator up to 75k RF/T
 - [ ] 🔄 Add custom progression for Twilight Forest based on Quest Book, since achievments can be disabled
-- [ ] 🧱 Merge E2E
+- [ ] 🟢 Add https://github.com/Srdjan-V/TweakedLib/releases
 - [ ] 🟢 Add https://www.curseforge.com/minecraft/mc-mods/better-fusion-reactor-for-mekanism
 
 ---
