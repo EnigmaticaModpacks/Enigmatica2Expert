@@ -127,8 +127,9 @@ import crafttweaker.item.IIngredient as IIngredient;
     <botania:livingrock>, <botania:livingrock>, <botania:livingrock>]);
 
 # Removing double flower recipes
-	recipes.remove(<botania:petal:*> * 4, <botania:doubleflower1:*>);
-	recipes.remove(<botania:petal:*> * 4, <botania:doubleflower2:*>);
+#	recipes.remove(<botania:petal:*> * 4, <botania:doubleflower1:*>);
+#	recipes.remove(<botania:petal:*> * 4, <botania:doubleflower2:*>);
+# Disabled, as those were removing even normal petal recipe for some reason ^-^"
 	
 # Super travel belt
 	recipes.remove(<botania:supertravelbelt>);
