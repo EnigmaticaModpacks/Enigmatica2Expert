@@ -1,0 +1,59 @@
+diff --git "a/~bansoukou_unpatched\\HarderBranchMining-1.12.2-2.0.0.10\\com\\mactso\\hbm\\event\\BlockBreakHandler.java" "b/bansoukou\\HarderBranchMining-1.12.2-2.0.0.10\\com\\mactso\\hbm\\event\\BlockBreakHandler.java"
+index bfa5c1fd..01ee82df 100644
+--- "a/~bansoukou_unpatched\\HarderBranchMining-1.12.2-2.0.0.10\\com\\mactso\\hbm\\event\\BlockBreakHandler.java"
++++ "b/bansoukou\\HarderBranchMining-1.12.2-2.0.0.10\\com\\mactso\\hbm\\event\\BlockBreakHandler.java"
+@@ -80,7 +80,7 @@ public class BlockBreakHandler {
+             }
+             return;
+         }
+-        if (whiteListManager.whitelistHashSet.contains(block)) {
++        if (!whiteListManager.whitelistHashSet.contains(block)) {
+             if (MyConfig.aDebugLevel > 1) {
+                 TextComponentString component = new TextComponentString("White list Block Broken: " + block.toString() + ".  No exhaustion");
+                 component.func_150256_b().func_150238_a(TextFormatting.GREEN);
+@@ -88,13 +88,13 @@ public class BlockBreakHandler {
+             }
+             return;
+         }
+-        toolManager.toolItem toolInfo = toolManager.getToolInfo((String)tempItem.getRegistryName().toString(), (int)player.field_71093_bK);
+-        depthBasedExhaustionFactor = toolInfo.getExhaustionY() - (double)event.getPos().func_177956_o();
++        toolManager.toolItem toolItem2 = toolManager.getToolInfo((String)tempItem.getRegistryName().toString(), (int)player.field_71093_bK);
++        depthBasedExhaustionFactor = toolItem2.getExhaustionY() - (double)event.getPos().func_177956_o();
+         if (depthBasedExhaustionFactor < 0.0) {
+             return;
+         }
+-        depthBasedExhaustionFactor = MyConfig.aExhaustionType == 1 ? (depthBasedExhaustionFactor /= toolInfo.getExhaustionY()) : 1.0;
+-        tempExhaustionAmount = toolInfo.getExhaustionAmt() * depthBasedExhaustionFactor;
++        depthBasedExhaustionFactor = MyConfig.aExhaustionType == 1 ? (depthBasedExhaustionFactor /= toolItem2.getExhaustionY()) : 1.0;
++        tempExhaustionAmount = toolItem2.getExhaustionAmt() * depthBasedExhaustionFactor;
+         event.getPlayer().func_71024_bL().func_75113_a((float)tempExhaustionAmount);
+         if (MyConfig.aDebugLevel > 0) {
+             System.out.println("Block Broken! Player:" + player.func_70005_c_() + ", Dimension" + player.field_71093_bK + ", Pos:" + event.getPos() + ", tempExhaustionAmount:" + tempExhaustionAmount);
+@@ -123,7 +123,7 @@ public class BlockBreakHandler {
+         if (event.getOriginalSpeed() > 1.0f) {
+             toolHarvestsBlockFaster = true;
+         }
+-        if (whiteListManager.whitelistHashSet.contains(block = event.getState().func_177230_c())) {
++        if (!whiteListManager.whitelistHashSet.contains(block = event.getState().func_177230_c())) {
+             if (MyConfig.aDebugLevel > 1) {
+                 TextComponentString component = new TextComponentString("White list Block Breaking: " + block.toString() + " No speed change.");
+                 component.func_150256_b().func_150238_a(TextFormatting.GREEN);
+@@ -134,15 +134,15 @@ public class BlockBreakHandler {
+         if ((block instanceof BlockRedstoneOre || block instanceof BlockOre) && MyConfig.aNormalOreHandling) {
+             return;
+         }
+-        toolManager.toolItem toolInfo = toolManager.getToolInfo((String)playerItem.getRegistryName().toString(), (int)player.field_71093_bK);
++        toolManager.toolItem toolItem2 = toolManager.getToolInfo((String)playerItem.getRegistryName().toString(), (int)player.field_71093_bK);
+         int altitude = event.getPos().func_177956_o();
+         if (altitude < 5) {
+             altitude = 5;
+         }
+-        if ((double)altitude > toolInfo.getExhaustionY()) {
++        if ((double)altitude > toolItem2.getExhaustionY()) {
+             return;
+         }
+-        depthBasedSpeedFactor = 1.0 - (double)altitude / toolInfo.getExhaustionY();
++        depthBasedSpeedFactor = 1.0 - (double)altitude / toolItem2.getExhaustionY();
+         IBlockState s = event.getState();
+         float newDestroySpeed = baseDestroySpeed = event.getOriginalSpeed();
+         if (MyConfig.aDigSpeedModifier > 1.0) {
