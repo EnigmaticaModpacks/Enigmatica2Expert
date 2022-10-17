@@ -1,16 +1,66 @@
 ### Enigmatica 2: Expert Changelog
 
+## 1.84
+
+_[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.84.md)_ | _Using Forge-1.12.2-14.23.5.2860_
+
+An awesome amount of improvements have been made by [Krutoy242](https://github.com/Krutoy242) for this update, a massive thanks goes out to him :D
+
+I highly recommend that you have a look through the changes in these links:
+
+-   [Extended Fixes & Improvements](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/1926)
+-   [Bee Rework](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/1927)
+    -   _Due to changes during development, all colored honey/combs in existing worlds will become either invalid or new custom ones. Sorry for the inconvenience._
+
+### Added Mods
+
+-   [B.A.S.E](https://www.curseforge.com/minecraft/mc-mods/base) (by [lanse505](https://www.curseforge.com/members/lanse505/projects))
+-   [ContentTweaker](https://www.curseforge.com/minecraft/mc-mods/contenttweaker) (by [Jaredlll08](https://www.curseforge.com/members/Jaredlll08/projects))
+-   [ExtraCells2 - SamLam140330's Fork](https://www.curseforge.com/minecraft/mc-mods/extra-cells-2-samlam140330s-fork) (by [SamLam140330](https://www.curseforge.com/members/SamLam140330/projects))
+-   [Give Me Back My HP](https://www.curseforge.com/minecraft/mc-mods/give-me-back-my-hp) (by [phantamanta44](https://www.curseforge.com/members/phantamanta44/projects))
+-   [Immersive Technology](https://www.curseforge.com/minecraft/mc-mods/mct-immersive-technology) (by [tgstyle0](https://www.curseforge.com/members/tgstyle0/projects))
+
+### Removed Mods
+
+-   [Chunk-Pregenerator](https://www.curseforge.com/minecraft/mc-mods/chunkpregenerator) (by [Speiger](https://www.curseforge.com/members/Speiger/projects))
+-   [ExtraCells2](https://www.curseforge.com/minecraft/mc-mods/extracells2) (by [Forge_User_54797008](https://www.curseforge.com/members/Forge_User_54797008/projects))
+-   [Immersive Tech](https://www.curseforge.com/minecraft/mc-mods/immersive-tech) (by [Forge_User_11180423](https://www.curseforge.com/members/Forge_User_11180423/projects))
+
+**Implemented enhancements:**
+
+-   update immersive tech to a supported fork [\#2012](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/issues/2012)
+-   Update ExtraCells 2 to a more up to date fork. [\#1997](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/issues/1997)
+-   \[Suggestion\] A simple mod to fix a certain issue with max life. [\#1996](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/issues/1996)
+-   \[Suggestion\] Add Alumite to the Advanced Metallurgic Fabricator? [\#1995](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/issues/1995)
+-   Make Animania Salt useable in the NC Melter [\#1946](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/issues/1946)
+-   Fix for Quark chiseled bricks being uncraftable [\#2004](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/2004) ([Hypermoron](https://github.com/Hypermoron))
+-   Spice of Life blacklist additions [\#2000](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/2000) ([AppleSaws](https://github.com/AppleSaws))
+-   Allow all salts to be used with the NuclearCraft Melter [\#1986](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/1986) ([Discomanco](https://github.com/Discomanco))
+-   Added Oxygen to the Fluid Dict Coverter [\#1985](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/1985) ([Discomanco](https://github.com/Discomanco))
+-   Update Forestry.zs [\#1979](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/1979) ([Discomanco](https://github.com/Discomanco))
+
+**Fixed bugs:**
+
+-   ServerStartLinux.sh hangs on ping inside of check_connection [\#1942](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/issues/1942)
+-   Advanced Rocketry Crash upon loading hot planets \(probably\) [\#2047](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/issues/2047)
+-   Modular Machinery Machine Controller Recipe Has Wrong Description For Circuit Boards [\#1989](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/issues/1989)
+-   Advanced Rocketry server crash when loading chunks on custom planets [\#1973](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/issues/1973)
+-   Fluid Dictionary Converter doesn't understand Oxygen [\#1966](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/issues/1966)
+-   Forestry Carpenter only accepts regulary oak logs to make impregnated sticks? [\#1964](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/issues/1964)
+
+---
+
 ## 1.83
 
 _[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.83.md)_ | _Using Forge-1.12.2-14.23.5.2855_
 
 **Notes**:
 
-- To fix the issue with Jungles not generating, we've had to make a change to biomes.
-  Going forward worldgen should be more interesting and diverse.
-  As a side-effect ugly chunk borders will generate between old and new chunks.
-- Please run the command `/bq_admin default load` to get the latest quest  updates.
-- This update has registry changes. You may be prompted when joining an old world, that the `integrateddynamics:meneglin` biome and several Advanced Rocketry buckets have been removed - It's fine, you can safely continue.
+-   To fix the issue with Jungles not generating, we've had to make a change to biomes.
+    Going forward worldgen should be more interesting and diverse.
+    As a side-effect ugly chunk borders will generate between old and new chunks.
+-   Please run the command `/bq_admin default load` to get the latest quest updates.
+-   This update has registry changes. You may be prompted when joining an old world, that the `integrateddynamics:meneglin` biome and several Advanced Rocketry buckets have been removed - It's fine, you can safely continue.
 
 **Improvements/Changes**
 
