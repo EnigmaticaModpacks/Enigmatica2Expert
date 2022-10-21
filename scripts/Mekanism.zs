@@ -37,8 +37,8 @@ for input, output in itemsToUnify {
 # Starmetal Ingots
 	mods.mekanism.smelter.addRecipe(<astralsorcery:itemcraftingcomponent:2>, <astralsorcery:itemcraftingcomponent:1>);
 	
-	var ultimateGasTank = <mekanism:gastank>.withTag({tier: 3, mekData:{}})|<mekanism:gastank>.withTag({tier: 3, mekData:{security:0}});
-	var ultimateFluidTank = <mekanism:machineblock2:11>.withTag({tier: 3, mekData:{}})|<mekanism:machineblock2:11>.withTag({tier: 3, mekData:{security:0}});
+	var ultimateGasTank = <mekanism:gastank>.withTag({tier: 3})|<mekanism:gastank>.withTag({tier: 3, mekData:{security:0}});
+	var ultimateFluidTank = <mekanism:machineblock2:11>.withTag({tier: 3})|<mekanism:machineblock2:11>.withTag({tier: 3, mekData:{security:0}});
 	
 # Increasing Stacksize
 	<mekanism:tierinstaller>.maxStackSize = 16;
