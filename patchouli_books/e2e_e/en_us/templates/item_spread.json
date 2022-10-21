@@ -6,10 +6,10 @@
     ,{ "x": 50, "y": 16, "type": "item", "item": "#item", "framed": true}
 
     ,{ "x":76,"y":16, "type": "item", "item": "#item5"}
-    ,{ "x":71,"y":31, "type": "item", "item": "#item4"}
-    ,{ "x":58,"y":41, "type": "item", "item": "#item3"}
-    ,{ "x":42,"y":41, "type": "item", "item": "#item2"}
-    ,{ "x":29,"y":31, "type": "item", "item": "#item1"}
-    ,{ "x":24,"y":16, "type": "item", "item": "#item0"}
+    ,{ "x":71,"y":31, "type": "item", "item": "#item3"}
+    ,{ "x":58,"y":41, "type": "item", "item": "#item1"}
+    ,{ "x":42,"y":41, "type": "item", "item": "#item0"}
+    ,{ "x":29,"y":31, "type": "item", "item": "#item2"}
+    ,{ "x":24,"y":16, "type": "item", "item": "#item4"}
   ]
 }

@@ -5,10 +5,9 @@
     "./**/*js"
   ],
   "scripts": {
+    "automate": "esno mc-tools/packages/run/src/cli.ts dev/tools/mct-run.json",
     "bansoukou-prune": "node \"dev/_other/advancement-fix.js\" -r",
-    "benchmark": "npx mc-benchmark@latest --output=dev/benchmarks/latest.md",
-    "mc-tools:errors": "npm start --prefix=mc-tools/packages/errors -- --log=../../../logs/debug.log --output=../../../dev/debug_unresolved.log --blacklist=../../../dev/tools/ignored_errors",
-    "mc-tools:reducer": "npm start --prefix=mc-tools/packages/reducer -- --cwd=../../../ --levels=../../../../dev/tools/reduce_mods.json",
+    "mc-tools:reducer": "npm start --prefix=mc-tools/packages/reducer -- --mods=../../../mods --levels=../../../dev/tools/reduce_mods.json",
     "md-to-html": "node ./dev/lib/curseforge-md-to-html.js ./changelogs/LATEST.md"
   },
   "dependencies": {

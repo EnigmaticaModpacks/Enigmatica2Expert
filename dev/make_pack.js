@@ -149,7 +149,7 @@ const style = {
     )
   ) {
     doTask('🪓 Doing automation ...\n\n', () =>
-      execSyncInherit('node ./dev/automate.js')
+      execSyncInherit('esno mc-tools/packages/run/src/cli.ts dev/tools/mct-run.json')
     )
   }
 

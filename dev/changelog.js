@@ -36,7 +36,7 @@ import { defaultHelper, escapeRegex, loadText, saveText } from './lib/utils.js'
 const { unlink, writeFileSync } = fs_extra
 const exec = promisify(_exec)
 
-const { argv } = yargs(process.argv.slice(2))
+const argv = yargs(process.argv.slice(2))
   .option('next', {
     alias   : 'n',
     type    : 'string',
@@ -47,9 +47,9 @@ const { argv } = yargs(process.argv.slice(2))
     type    : 'boolean',
     describe: 'Only append LATEST.md to CHANGELOG.md',
   })
+  .parseSync()
 
 function relative(relPath) {
-  // @ts-expect-error
   return fileURLToPath(new URL(relPath, import.meta.url))
 }
 

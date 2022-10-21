@@ -1,0 +1,17 @@
+{
+   "Tellme clean": "node config/tellme/!rename&update.js"
+    ,"mct-errors": "esno mc-tools/packages/errors/src/cli.ts --output=dev/tools/unresolved-errors.log --blacklist=dev/tools/ignored_errors"
+      ,"mct-tcon": "esno mc-tools/packages/tcon/src/cli.ts --default=dev/default_configs/tweakersconstruct.cfg --tweaks=dev/tools/tcon/tweaks --save=dev/tools/tcon/stats"
+  ,"mc-benchmark": "mc-benchmark --output=dev/benchmarks/latest.md"
+  ,"Patchouli.js": "node dev/Patchouli/Patchouli.js"
+     ,"Bansoukou": "node dev/automation/bansoukou.js"
+      ,"entities": "node dev/automation/entities.js"
+     ,"Inject_JS": "node dev/automation/Inject_JS.js"
+           ,"jei": "node dev/automation/jei.js"
+          ,"misc": "node dev/automation/misc.js --keep-cache"
+      ,"modsDiff": "node dev/automation/modsDiff.js"
+     ,"Conflicts": "node dev/automation/recipe_conflicts.js"
+      ,"skyblock": "node dev/automation/skyblock.js"
+          ,"tips": "node dev/automation/tips.js"
+           ,"XML": "node dev/automation/XML.js"
+}

@@ -161,7 +161,7 @@ function $i(prefix, array, fnc) {
   return array.reduce(
     (o, m, i) =>
       Object.assign(o, {
-        [prefix + i]: fnc ? fnc(m) : m[0],
+        [prefix + i]: fnc ? fnc(m) : m,
       }),
     {}
   )
@@ -412,7 +412,7 @@ export async function init(h = defaultHelper) {
     try {
       if (typeof patchouliCommand.command === 'string')
         eval(patchouliCommand.command)
-      else patchouliCommand.command(Patchouli_js, { paged, config })
+      else patchouliCommand.command(Patchouli_js, { paged, config, item$i })
     }
     catch (error) {
       console.log(
@@ -441,6 +441,12 @@ if (
  * @param {{}} book
  */
 async function writeResult(stat, book, h = defaultHelper) {
+  // Remove old contents
+  ['categories', 'entries'].forEach((fldr) => {
+    try { rmSync(resolve(bookPath, fldr), { recursive: true }) }
+    catch (error) {}
+  })
+
   let totalFilesCreated = 0
 
   /**

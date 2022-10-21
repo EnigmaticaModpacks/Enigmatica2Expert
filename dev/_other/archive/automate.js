@@ -14,7 +14,7 @@ import glob from 'glob'
 import mc_benchmark from 'mc-benchmark'
 import yargs from 'yargs'
 
-import { defaultHelper, loadText } from './lib/utils.js'
+import { defaultHelper, loadText } from '../../lib/utils.js'
 const argv = yargs(process.argv.slice(2))
   .alias('k', 'keep-cache')
   .describe('k', 'Not delete cached files')
@@ -39,10 +39,9 @@ const write = s => process.stdout.write(s)
 const automationList = [
   'config/tellme/!rename&update.js',
   ...glob.sync('dev/automation/*.js'),
-  'dev/TCon/tweakerconstruct.js',
   'dev/Patchouli/Patchouli.js',
 
-  (h, opts) =>
+  h =>
     mc_benchmark({
       readFileSync : loadText,
       defaultLogger: h,
@@ -63,7 +62,7 @@ let errorCount = 0
 export async function init(options = argv) {
   starttime = new Date().getTime()
   await Promise.all(automationList.map((f, i) => startTask(f, i, options)))
-  await new Promise(r => setTimeout(r, 100))
+  await new Promise(resolve => setTimeout(resolve, 100))
 
   if (errorCount <= 0) {
     write('\nSucces!\n')

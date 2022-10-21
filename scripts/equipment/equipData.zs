@@ -9,6 +9,22 @@ import mods.zentoolforge.Toolforge;
 #
 # ######################################################################
 val defaultArmorMats as IData = [
+/*Inject_js(
+  getCSV('dev/tools/tcon/stats/Armory Stats.csv')
+  .map(l=>Object.keys(l).slice(0,2).map(k=>l[k].trim()))
+  .filter(([a]) => ![
+      'ma.superium',
+      'ma.supremium',
+      'spectre',
+      'draconic_metal',
+      'neutronium',
+      'aethium',
+      'chaotic_metal',
+      'infinity_metal',
+    ].includes(a)
+  )
+  .map(([a, b])=>[`  "${a}"`, ', # ' + Math.round(b)])
+)*/
   "paper"                  , # 18
   "chocolate"              , # 19
   "wood"                   , # 21
@@ -187,170 +203,188 @@ val defaultArmorMats as IData = [
   "osmiridium"             , # 108
   "primal_metal"           , # 111
   "red_matter"             , # 128
-  "gelid_enderium"         , # 134
+  "gelid_enderium"         , # 135
   "gelid_gem"              , # 218
+/**/
 ] as IData;
 
 
 val defaultWeaponMats as IData = [
-  "paper"                  , # 21
-  "stone"                  , # 30
-  "rubber"                 , # 37
-  "construction_alloy"     , # 41
-  "wood"                   , # 42
-  "chocolate"              , # 47
-  "flint"                  , # 49
-  "xu_magical_wood"        , # 57
-  "alpha_fur"              , # 58
-  "certus_quartz"          , # 59
-  "aquamarine"             , # 60
-  "ma.prosperity"          , # 61
-  "cactus"                 , # 62
-  "apatite"                , # 63
-  "polyethylene"           , # 64
-  "netherrack"             , # 66
-  "livingrock"             , # 66
-  "tin"                    , # 67
-  "bone"                   , # 71
-  "dragonbone"             , # 73
-  "blueslime"              , # 75
-  "tanzanite"              , # 75
-  "amber"                  , # 77
-  "endstone"               , # 77
-  "cheese"                 , # 78
-  "prismarine"             , # 80
-  "sponge"                 , # 81
-  "slime"                  , # 81
-  "treatedwood"            , # 82
-  "magmaslime"             , # 85
-  "livingwood"             , # 86
-  "copper"                 , # 88
-  "void_crystal"           , # 88
-  "palis_crystal"          , # 89
-  "essence_metal"          , # 89
-  "firewood"               , # 89
-  "malachite_gem"          , # 90
-  "soularium"              , # 91
-  "plague_metal"           , # 92
-  "lead"                   , # 93
-  "peridot"                , # 96
-  "silver"                 , # 97
-  "fluix"                  , # 97
-  "dreamwood"              , # 98
-  "wolframium"             , # 98
-  "xu_demonic_metal"       , # 98
-  "sky_stone"              , # 98
-  "obsidian"               , # 100
-  "psimetal"               , # 101
-  "ruby"                   , # 103
-  "mica"                   , # 104
-  "psigem"                 , # 105
-  "iron"                   , # 106
-  "ardite"                 , # 107
-  "pink_slime"             , # 108
-  "black_quartz"           , # 108
-  "bloodwood"              , # 110
-  "sapphire"               , # 111
-  "sentient_metal"         , # 111
-  "desert_myrmex"          , # 112
-  "jungle_myrmex"          , # 112
-  "vibrant_alloy"          , # 112
-  "meat_metal"             , # 114
-  "manasteel"              , # 115
-  "carbon_fiber"           , # 115
-  "constantan"             , # 116
-  "ma.base_essence"        , # 116
-  "ma.soulium"             , # 117
-  "fluix_steel"            , # 117
-  "xu_enchanted_metal"     , # 118
-  "bronze"                 , # 119
-  "topaz"                  , # 120
-  "nickel"                 , # 120
-  "flux_crystal"           , # 120
-  "alumite"                , # 120
-  "lonsdaleite"            , # 123
-  "electrical_steel"       , # 124
-  "ma.inferium"            , # 125
-  "aluminium"              , # 126
-  "knightslime"            , # 127
-  "nagascale"              , # 128
-  "pigiron"                , # 128
-  "advanced_alloy"         , # 129
-  "emerald_plustic"        , # 129
-  "invar"                  , # 130
-  "endorium"               , # 131
-  "draconium"              , # 131
-  "steeleaf"               , # 132
-  "uranium"                , # 133
-  "ghostwood"              , # 134
-  "energetic_alloy"        , # 135
-  "diamantine_crystal"     , # 136
-  "restonia_crystal"       , # 137
-  "osmium"                 , # 140
-  "lumium"                 , # 141
-  "enori_crystal"          , # 141
-  "steel"                  , # 143
-  "exhaustium"             , # 143
-  "redstone_alloy"         , # 144
-  "bound_metal"            , # 144
-  "energetic_metal"        , # 147
-  "weezer"                 , # 149
-  "knightmetal"            , # 149
-  "emeraldic_crystal"      , # 149
-  "amethyst"               , # 152
-  "manyullyn"              , # 154
-  "thorium"                , # 154
-  "refined_glowstone"      , # 160
-  "elementium"             , # 160
-  "fluxed_electrum"        , # 162
-  "osmiridium"             , # 162
-  "dark_steel"             , # 162
-  "ma.prudentium"          , # 163
-  "electrum"               , # 163
-  "boron"                  , # 165
-  "starmetal"              , # 170
-  "fierymetal"             , # 173
-  "fusewood"               , # 177
-  "refined_obsidian"       , # 178
-  "magnesium"              , # 180
-  "signalum"               , # 181
-  "platinum"               , # 192
-  "osgloglas"              , # 193
-  "thaumium"               , # 193
-  "tough"                  , # 199
-  "enderium"               , # 200
-  "terrasteel"             , # 203
-  "cobalt"                 , # 204
-  "hard_carbon"            , # 204
-  "iridium"                , # 208
-  "xu_evil_metal"          , # 222
-  "pulsating_iron"         , # 225
-  "void_metal"             , # 230
-  "pink_metal"             , # 233
-  "conductive_iron"        , # 237
-  "ma.intermedium"         , # 243
-  "sunnarium"              , # 245
-  "titanium"               , # 245
-  "boron_nitride"          , # 249
-  "universal_metal"        , # 264
-  "end_steel"              , # 271
-  "crystal_matrix"         , # 279
-  "primal_metal"           , # 282
-  "wyvern_metal"           , # 284
-  "heavy"                  , # 297
-  "darkwood"               , # 305
-  "dragonsteel_fire"       , # 335
-  "dragonsteel_ice"        , # 335
-  "dark_matter"            , # 339
-  "litherite"              , # 402
-  "gelid_gem"              , # 432
-  "erodium"                , # 453
-  "mirion"                 , # 479
-  "gelid_enderium"         , # 481
-  "kyronite"               , # 508
-  "red_matter"             , # 532
-  "pladium"                , # 567
-  "ionite"                 , # 636
+/*Inject_js(
+  getCSV('dev/tools/tcon/stats/Stats.csv')
+  .map(l=>Object.keys(l).slice(0,2).map(k=>l[k].trim()))
+  .filter(([a]) => ![
+      'ma.superium',
+      'ma.supremium',
+      'spectre',
+      'draconic_metal',
+      'neutronium',
+      'aethium',
+      'chaotic_metal',
+      'infinity_metal',
+    ].includes(a)
+  )
+  .map(([a, b])=>[`  "${a}"`, ', # ' + Math.round(b)])
+)*/
+  "paper"             , # 21
+  "stone"             , # 31
+  "rubber"            , # 37
+  "construction_alloy", # 41
+  "wood"              , # 42
+  "chocolate"         , # 47
+  "flint"             , # 49
+  "xu_magical_wood"   , # 57
+  "alpha_fur"         , # 58
+  "certus_quartz"     , # 59
+  "aquamarine"        , # 60
+  "ma.prosperity"     , # 61
+  "cactus"            , # 62
+  "apatite"           , # 63
+  "polyethylene"      , # 64
+  "netherrack"        , # 66
+  "livingrock"        , # 66
+  "tin"               , # 67
+  "bone"              , # 71
+  "dragonbone"        , # 73
+  "blueslime"         , # 75
+  "tanzanite"         , # 75
+  "amber"             , # 77
+  "endstone"          , # 77
+  "cheese"            , # 78
+  "prismarine"        , # 80
+  "sponge"            , # 81
+  "slime"             , # 81
+  "treatedwood"       , # 82
+  "magmaslime"        , # 85
+  "livingwood"        , # 86
+  "copper"            , # 88
+  "void_crystal"      , # 88
+  "palis_crystal"     , # 89
+  "essence_metal"     , # 89
+  "firewood"          , # 89
+  "malachite_gem"     , # 90
+  "soularium"         , # 91
+  "plague_metal"      , # 92
+  "lead"              , # 93
+  "peridot"           , # 96
+  "silver"            , # 97
+  "fluix"             , # 97
+  "dreamwood"         , # 98
+  "wolframium"        , # 98
+  "xu_demonic_metal"  , # 98
+  "sky_stone"         , # 98
+  "obsidian"          , # 100
+  "psimetal"          , # 101
+  "ruby"              , # 103
+  "mica"              , # 104
+  "psigem"            , # 105
+  "iron"              , # 106
+  "ardite"            , # 107
+  "pink_slime"        , # 108
+  "black_quartz"      , # 108
+  "bloodwood"         , # 110
+  "sapphire"          , # 111
+  "sentient_metal"    , # 111
+  "desert_myrmex"     , # 112
+  "jungle_myrmex"     , # 112
+  "vibrant_alloy"     , # 112
+  "meat_metal"        , # 114
+  "manasteel"         , # 115
+  "carbon_fiber"      , # 115
+  "constantan"        , # 116
+  "ma.base_essence"   , # 116
+  "ma.soulium"        , # 117
+  "fluix_steel"       , # 117
+  "xu_enchanted_metal", # 118
+  "bronze"            , # 119
+  "topaz"             , # 120
+  "nickel"            , # 120
+  "flux_crystal"      , # 120
+  "alumite"           , # 120
+  "lonsdaleite"       , # 123
+  "electrical_steel"  , # 124
+  "ma.inferium"       , # 125
+  "aluminium"         , # 126
+  "knightslime"       , # 127
+  "nagascale"         , # 128
+  "pigiron"           , # 128
+  "advanced_alloy"    , # 129
+  "emerald_plustic"   , # 129
+  "invar"             , # 130
+  "endorium"          , # 131
+  "draconium"         , # 131
+  "steeleaf"          , # 132
+  "uranium"           , # 133
+  "ghostwood"         , # 134
+  "energetic_alloy"   , # 135
+  "diamantine_crystal", # 136
+  "restonia_crystal"  , # 137
+  "osmium"            , # 140
+  "lumium"            , # 141
+  "enori_crystal"     , # 141
+  "steel"             , # 143
+  "exhaustium"        , # 143
+  "redstone_alloy"    , # 144
+  "bound_metal"       , # 144
+  "energetic_metal"   , # 147
+  "weezer"            , # 149
+  "knightmetal"       , # 149
+  "emeraldic_crystal" , # 149
+  "amethyst"          , # 152
+  "manyullyn"         , # 154
+  "thorium"           , # 154
+  "refined_glowstone" , # 160
+  "elementium"        , # 160
+  "fluxed_electrum"   , # 162
+  "osmiridium"        , # 162
+  "dark_steel"        , # 162
+  "ma.prudentium"     , # 163
+  "electrum"          , # 163
+  "boron"             , # 165
+  "starmetal"         , # 170
+  "fierymetal"        , # 173
+  "fusewood"          , # 177
+  "refined_obsidian"  , # 178
+  "magnesium"         , # 180
+  "signalum"          , # 181
+  "platinum"          , # 192
+  "osgloglas"         , # 193
+  "thaumium"          , # 193
+  "tough"             , # 199
+  "enderium"          , # 200
+  "terrasteel"        , # 203
+  "cobalt"            , # 204
+  "hard_carbon"       , # 204
+  "iridium"           , # 208
+  "xu_evil_metal"     , # 222
+  "pulsating_iron"    , # 225
+  "void_metal"        , # 230
+  "pink_metal"        , # 233
+  "conductive_iron"   , # 237
+  "ma.intermedium"    , # 243
+  "sunnarium"         , # 245
+  "titanium"          , # 245
+  "boron_nitride"     , # 249
+  "universal_metal"   , # 264
+  "end_steel"         , # 271
+  "crystal_matrix"    , # 279
+  "primal_metal"      , # 282
+  "wyvern_metal"      , # 284
+  "heavy"             , # 297
+  "darkwood"          , # 305
+  "dragonsteel_fire"  , # 335
+  "dragonsteel_ice"   , # 335
+  "dark_matter"       , # 339
+  "litherite"         , # 402
+  "gelid_gem"         , # 432
+  "erodium"           , # 453
+  "mirion"            , # 479
+  "gelid_enderium"    , # 481
+  "kyronite"          , # 508
+  "red_matter"        , # 532
+  "pladium"           , # 567
+  "ionite"            , # 636
+/**/
 ] as IData;
 
 static armorEntitys as IData = [

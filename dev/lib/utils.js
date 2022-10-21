@@ -101,7 +101,7 @@ export const getCSV = createHashedFunction(
 )
 
 /**
- * Load CSV file from disk or from hash
+ * Load PDF file from disk or from hash
  * @param {string} filename
  */
 export const getPDF = createHashedFunction(
@@ -463,7 +463,7 @@ export const defaultHelper = {
   },
   result(s = '') {
     this.done()
-    process.stdout.write(`✔️ ${chalk.dim.green(`${s}`)}\n`)
+    process.stdout.write(`${chalk.green('✓')} ${chalk.dim.green(`${s}`)}\n`)
   },
   warn(...s) {
     process.stdout.write(`⚠️ ${chalk.dim.yellow(`${s.join('\t')}`)}`)
