@@ -182,7 +182,9 @@ function enderioXmlRecipe(processName as string,
   if(!isNull(outputItems)) { for ii in outputItems { if(ii.items.length > 0) {
       val out_it = ii.items[0];
       val amount = (ii.amount > 1) ? 'amount="'~ ii.amount ~'" ' : '';
-      s ~= '  <output name="' ~ out_it.definition.id ~ ':' ~ out_it.damage ~ '" ' ~ amount ~ '/>\n';
+      s ~= '  <output name="' ~ out_it.definition.id
+        ~ (out_it.damage != 0 ? (':' ~ out_it.damage) : '')
+        ~ '" ' ~ amount ~ '/>\n';
   }}}
 
   if(!isNull(arrN_liq(inputLiquids)) && !isNull(arrN_liq(outputLiquids))) {

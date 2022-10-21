@@ -20,8 +20,7 @@ import scripts.craft.grid.Grid;
 	mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:29>);
 
 # Remove buggy silicon recipe (empty input)
-# Actually impossible, this removal not working
-	// mods.immersiveengineering.ArcFurnace.removeRecipe(<appliedenergistics2:material:5>);
+	mods.immersiveengineering.ArcFurnace.removeRecipe(<ore:ingotSilicon>.firstItem);
 
 
 # Sheetmetal Chute Smeltery compat
