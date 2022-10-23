@@ -1,49 +1,44 @@
-# v0.73.0
+# v0.74.0
 
 
-### ✏️ **Recipes**
-  - ![](https://is.gd/ffSnNM "Magic Bean") remove OP output, add some more
-    > Fixes https://github.com/Krutoy242/Enigmatica2Expert-Extended/issues/127
-  - ![](https://is.gd/pO00eS "Rattus Vis Seeds")![](https://is.gd/UmHhhn "Mythus Vis Seeds") remove recipes, add note in quest book about unplantable.
-    > Fixes https://github.com/Krutoy242/Enigmatica2Expert-Extended/issues/120
+## 🟢 New Mods
 
-### ⛏️ Mining: Harder Branch Mining affect only ![](https://is.gd/vk0Txh "Stone")
+Icon | Summary | Reason
+----:|:--------| ------
+<img src="https://media.forgecdn.net/avatars/thumbnails/620/862/256/256/638010232767145893.png"         width="50"> | 🟩                     [**Tweaked Excavation**](https://www.curseforge.com/minecraft/mc-mods/tweaked-excavation)            <sup><sub>tweakedexcavation-1.0.1.jar</sub></sup> <br> Adding more configuration options to Immersive Engineering | Would be used to add custom deposits and power tiers
+<img src="https://media.forgecdn.net/avatars/thumbnails/620/864/256/256/638010234645296939.png"         width="50"> | 🟨                            [**Tweaked Lib**](https://www.curseforge.com/minecraft/mc-mods/tweaked-lib)                   <sup><sub>tweakedlib-1.0.1.jar</sub></sup> <br> A library mod | Lib for previous mod
 
-  > Before, all blocks slowed down near bedrock.  
-  > Now, only stone would be slowed.
+## 🔴 Removed Mods
 
-### 🛸 EnderIO:
+Icon | Summary | Reason
+----:|:--------| ------
+<img src="https://media.forgecdn.net/avatars/thumbnails/229/973/256/256/637058295576216433.png"         width="50"> | 🟫       [**Random Bone Meal Flowers (Forge)**](https://www.curseforge.com/minecraft/mc-mods/random-bone-meal-flowers)      <sup><sub>rbmf_1.12-1.0.jar</sub></sup> <br> 🎲 Randomizes the flowers spawned by bonemeal, allowing all (modded) types to spawn everywhere. | Caused bug makes unable to grow Botania's flowers
 
-  - ![](https://is.gd/Qf7OAC "Dimensional Transceiver") buff x10 times capacity and transfer rate
+## 🟡 Updated Mods
 
-    > Now 250M rf/t with T3 capacitor
+- **AE2 Unofficial Extended Life**
+- **Tweaked Petroleum**
+- **FastWorkbench**
+- **LittleTiles**
+- **Zen Utils**
+- **Tweaked Petroleum: Gas Addon**
+- **Harder Branch Mining**
+- **AE2 Fluid Crafting Rework**
+- **CraftTweaker**
 
-  - Disable gravity for machines to prevend dupe
 
-    > How dupe looks like:
-    > 
-    > https://www.youtube.com/watch?v=U_B4LdbqLcQ&t=182s
+## ✏️ **Recipes**
+  - ### ✏ **Misc Changes**: 
+    - Remove ![](https://is.gd/XpVrGe "Silicon") recipe with empty input from **Arc Furnace**
+    - Add **Tritium** conversion between NC and Mekanism
+    - Minor Gas and Fluid reservoirs tweaks
+    - ![](https://is.gd/mtuXwW "Impetus Generator") buff x5 - x6 times (up to 100k RF/T)
+    - **Mob Spawner** fix recipe in ![](https://is.gd/juDTO7 "Miniaturization Field Projector")
 
-### 🐝 Forestry: ![](https://is.gd/vXNvAi "Building Backpack") fix ![](https://is.gd/fV9TD8 "Jungle Myrmex Cocoon") unfitable
 
-### 🔄 Misc changes
-
-  - Fix ![](https://is.gd/F3WiW8 "Energy Cell (Basic)") JEI duplicate
-  - Misc langs files and text fixes
-    > Author: Oddish <andrzejsokolowski>
-  - Add Rocket to CarryOn blacklist
-  - Another attempts to add ![](https://is.gd/uxW8fm "Water Chest") to Lootr Blacklist (report if water chests still transforming)
-
-### 🏗️ Merge E2E changes
-
-  - Most changes of E2E was already implemented, except:
-
-    > - Changed orbitalDistance of Stella and Terra Nova to 200
-    >     https://github.com/EnigmaticaModpacks/Enigmatica2Expert/commit/f868351c6a3983182d92cd636446db1b30775389
-    > - Easier ![](https://is.gd/WXYVPM "Skullfire Sword")
-    >     https://github.com/EnigmaticaModpacks/Enigmatica2Expert/commit/2ec924f6253fa5e85de19797cbf8ae90a03ad22d
-    >     (was already partially implemented btw)
-    > - Add Solcarrot Blacklist items:
-    >    * ![](https://is.gd/FPpx1W "Carrot Cake") which doesn't get added even when eaten (despite other similar cake-like items working just fine)
-    >    * [milk chocolate ingots] which aren't obtainable
-    >      https://github.com/EnigmaticaModpacks/Enigmatica2Expert/commit/b9d1fbfa877d371f321f52c6dad2908bbd0e99ea
+## 🔄 **Misc Changes**
+  - Fix ![](https://is.gd/bVkoqM "Thermoelectric Generator") was fluidloggable
+  - Remove tip `The Traveler's Backpack disappears if you fall into the Void` since its fixed
+  - Remove old **Excavator** JEI tab (replaced with `Tweaked Excavation` mod)
+  - Fix Rocket in CarryOn blacklist (was wrong blacklist)
+  - ### 📖 **Quest Book**: Quests: fix ![](https://is.gd/sTakGu "Morphing Tool") quest desc (silver gear)
