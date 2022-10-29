@@ -1,5 +1,18 @@
 ### Enigmatica 2: Expert Changelog
 
+## 1.86
+
+_[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.86.md)_ | _Using Forge-1.12.2-14.23.5.2860_
+
+**Fixed bugs:**
+
+-   Unable to craft items requiring IC2 Energy Crystals and Nanosuit Boots [\#2055](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/issues/2055)
+-   Look for different output on ping to support ipv6 [\#2057](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/2057) ([Meryl](https://github.com/Meryl))
+-   Advanced Rocketry/ JEI worldgen lead me astray [\#2058](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/issues/2058)
+-   Unable to craft Blood Magic runes of sacrifice [\#2056](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/issues/2056)
+
+---
+
 ## 1.85
 
 _[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.85.md)_ | _Using Forge-1.12.2-14.23.5.2860_
