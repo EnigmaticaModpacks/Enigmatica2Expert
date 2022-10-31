@@ -12,6 +12,7 @@ function infinFurnace(inp as IIngredient, out as IItemStack) as void {
     c.addItemOutput('output', out * min(64, out.amount * 4));
   })
   .requireItem("input", inp)
+  .setActive(10)
   .requireDuration("duration", 10);
 
   <assembly:infinity_furnace>.addRecipe(assRecipe);

@@ -714,3 +714,4 @@ addItems(<ore:workbench>, [
 ]);
 
 add(<ore:upgradeDarkSteel>, <enderio:item_dark_steel_upgrade:*>);
+add(<ore:logWood>, <ic2:rubber_wood>);

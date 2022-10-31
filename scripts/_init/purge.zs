@@ -138,3 +138,4 @@ utils.rh(<ae2stuff:visualiser>);
 utils.rh(<avaritiafurnace:compressedfurnace>);
 utils.rh(<avaritiafurnace:doublecompessedfurnace>);
 utils.rh(<avaritiafurnace:triplecompressedfurnace>);
+utils.rh(<itemfilters:filter>);

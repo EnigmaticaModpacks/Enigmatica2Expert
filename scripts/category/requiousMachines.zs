@@ -13,7 +13,7 @@ import crafttweaker.recipes.IFurnaceRecipe;
 // -----------------------------------------------------------------------
 var
 o = <assembly:adv_bee_analyzer>;
-o.setEnergySlot(4,0,ComponentFace.all(),2000000).setAccess(true,false).setGroup("energy").allowBattery(true,true,true);
+o.setEnergySlot(4,0,ComponentFace.all(),2000000).setAccess(true,false).setGroup("energy");
 o.setFluidSlot(4,1,ComponentFace.all(),20000).setAccess(true,false).setGroup("fluid_input");
 o.setDecorationSlot(4,2,SlotVisual.create(1,1).addPart("requious:textures/gui/assembly_gauges.png",0,8));
 for _y in 0 .. 4 {
