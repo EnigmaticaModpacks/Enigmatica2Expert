@@ -1,39 +1,26 @@
 {
-	title: "{bq.quest71.name}",
-	icon: "ic2:te 1 63",
 	x: 10.5d,
-	y: 6.166666666666667d,
+	y: 6.1d,
 	text: [
 		"{bq.quest71.desc}"
 	],
 	dependencies: [
-		"658445bd"
+		"60b8a626"
 	],
 	tasks: [{
-		uid: "a81edfb4",
+		uid: "5352029e",
 		type: "item",
 		items: [{
-			item: "ic2:te 1 63"
-		}],
-		ignore_nbt: 1b
-	},
-	{
-		uid: "712136c4",
-		type: "item",
-		items: [{
-			id: "ic2:te",
-			Damage: 62s,
-			tag: {}
-		}],
-		ignore_nbt: 1b
+			item: "requious:replicator"
+		}]
 	}],
 	rewards: [{
-		uid: "83b67f79",
+		uid: "06b4d43d",
 		type: "item",
 		item: {
 			id: "ftbquests:lootcrate",
 			tag: {
-				type: "common"
+				type: "rare"
 			}
 		}
 	}]

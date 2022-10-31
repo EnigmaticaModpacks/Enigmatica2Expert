@@ -1,0 +1,30 @@
+{
+	x: 11.4d,
+	y: 4.8d,
+	text: [
+		"Item info §nmust§r be put into Memory by pressing \"§nexport to Crystal§r\" button."
+	],
+	dependencies: [
+		"827fa685"
+	],
+	tasks: [{
+		uid: "c04e6137",
+		type: "item",
+		items: [{
+			id: "ic2:crystal_memory",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "982885d8",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

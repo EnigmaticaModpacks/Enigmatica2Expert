@@ -213,6 +213,7 @@ requious.jei.recipe.witch_water=Witch Water
 tile.adv_bee_analyzer.name=Advanced Analyzer
 tile.infinity_furnace.name=Infinity Furnace
 tile.tinkers_disassembler.name=Tinkers' Disassembler
+tile.replicator.name=§5Replicator
 
 e2ee.tconstruct.material.spectre.name=Spectre
 e2ee.tconstruct.material.spectre.description=§bSpectral\nEach part gives additional Reach potion effect

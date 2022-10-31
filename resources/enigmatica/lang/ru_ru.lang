@@ -220,6 +220,7 @@ requious.jei.recipe.witch_water=Ведьмина Вода
 tile.adv_bee_analyzer.name=Расширенный Анализатор
 tile.infinity_furnace.name=Печь Бесконечности
 tile.tinkers_disassembler.name=Разборщик Плотника
+tile.replicator.name=§5Репликатор
 
 e2ee.tconstruct.material.spectre.name=Призрачный
 e2ee.tconstruct.material.spectre.description=§bПризрачный\nКаждая деталь удлиняет руки

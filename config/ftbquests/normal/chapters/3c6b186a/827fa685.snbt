@@ -1,21 +1,21 @@
 {
-	x: 9.6d,
+	x: 10.5d,
 	y: 4.8d,
 	text: [
-		"{bq.quest96.desc}"
+		"Storing scanned item's data. §nMust§r have Crystal Memory to work with new §5Replicator§r."
 	],
 	dependencies: [
-		"0d64a022"
+		"658445bd"
 	],
 	tasks: [{
-		uid: "99300e6d",
+		uid: "e6aefebe",
 		type: "item",
 		items: [{
-			item: "ic2:te 1 64"
+			item: "ic2:te 1 62"
 		}]
 	}],
 	rewards: [{
-		uid: "5f68728f",
+		uid: "1a27697f",
 		type: "item",
 		item: {
 			id: "ftbquests:lootcrate",

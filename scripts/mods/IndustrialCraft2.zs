@@ -279,16 +279,6 @@ function crystalRecipe(name as string, item as IItemStack, ingrs as IIngredient[
 crystalRecipe("[Shape Card] crystal", <rftools:shape_card>,      [<ore:circuitElite>, <immersiveengineering:blueprint>.withTag({blueprint: "molds"}), <ic2:crystal_memory>, <ore:paper>, <ore:paper>]);
 crystalRecipe("[Base Addon] crystal", <teslacorelib:base_addon>, [<industrialforegoing:plastic>, <industrialforegoing:plastic>, <ic2:crystal_memory>, <ore:paper>, <ore:paper>]);
 
-# [Replicator] from [Energium Ingot][+3]
-craft.remake(<ic2:te:63>, ["pretty",
-  "C ▬ C",
-  "C ▬ C",
-  "M M M"], {
-  "C": <ic2:containment_plating>, # Containment Reactor Plating
-  "▬": <ore:ingotEnergium>,       # Energium Ingot
-  "M": <ic2:te:75>,   # MFSU
-});
-
 # [Heat-Capacity Reactor Plating] from [Dense Copper Plate][+1]
 craft.reshapeless(<ic2:heat_plating>, "п□", {
   "□": <ore:plateDenseCopper>, # Dense Copper Plate
