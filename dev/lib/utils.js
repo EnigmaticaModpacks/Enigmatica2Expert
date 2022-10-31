@@ -466,10 +466,10 @@ export const defaultHelper = {
     process.stdout.write(`${chalk.green('✓')} ${chalk.dim.green(`${s}`)}\n`)
   },
   warn(...s) {
-    process.stdout.write(`⚠️ ${chalk.dim.yellow(`${s.join('\t')}`)}`)
+    process.stderr.write(`⚠️ ${chalk.dim.yellow(`${s.join('\t')}`)}`)
   },
   error(...s) {
-    process.stdout.write(`🛑 ${chalk.dim.red(`${s.join('\t')}`)}`)
+    process.stderr.write(`🛑 ${chalk.dim.red(`${s.join('\t')}`)}`)
   },
 
   isUnfinishedTask: false,

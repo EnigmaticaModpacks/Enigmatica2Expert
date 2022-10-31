@@ -26,3 +26,4 @@ ERROR. \[Mekanism\]: Invalid BasicBlock. type: 1, meta: \d+
 
 ERROR. \[(jei|HadEnoughItems)\]: Failed to register mod categories: class lykrast.jetif.JETIFPlugin
 \[FML\]: Overriding existing radiation moderator data for 
+ERROR\] \[reborncore\]: Invalid fingerprint detected for RebornCore

@@ -327,11 +327,9 @@ async function getModChanges(version, nextVersion, h = defaultHelper) {
   const nextModsChangelogsFile = `MODS_${nextVersion}.md`
   const nextModsChangelogsFull = `changelogs/${nextModsChangelogsFile}`
   const chgenCommand
-    = 'java -jar ./ChangelogGenerator-2.0.0-pre10.jar -m'
+    = '"D:/Program Files/Java/jdk-18/bin/java" -jar ModListCreator-4.0.3-fatjar.jar changelog'
     + ' --old="manifest_old.json"'
     + ' --new="manifest.json"'
-    + ' --entries=5'
-    + ' --lines=40'
     + ` --output=${nextModsChangelogsFull}`
 
   const chGenConsoleOut = (data) => {
