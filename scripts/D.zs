@@ -82,16 +82,16 @@ zenClass D_zs {
   /*
     Same as get(), but working with typed values
   */
-  function getBool  () as bool   { val r = get(); return isNull(r) ? false      : r.asBool  (); }
-  function getByte  () as byte   { val r = get(); return isNull(r) ? 0 as byte  : r.asByte  (); }
-  function getDouble() as double { val r = get(); return isNull(r) ? 0 as double: r.asDouble(); }
-  function getFloat () as float  { val r = get(); return isNull(r) ? 0 as float : r.asFloat (); }
-  function getInt   () as int    { val r = get(); return isNull(r) ? 0 as int   : r.asInt   (); }
-  function getList  () as IData  { val r = get(); return isNull(r) ? null       : r.asList  (); }
-  function getLong  () as long   { val r = get(); return isNull(r) ? 0 as long  : r.asLong  (); }
-  function getMap   () as IData  { val r = get(); return isNull(r) ? null       : r.asMap   (); }
-  function getShort () as short  { val r = get(); return isNull(r) ? 0 as short : r.asShort (); }
-  function getString() as string { val r = get(); return isNull(r) ? null       : r.asString(); }
+  function getBool  () as bool   { return isNull(d) ? false      : d.asBool  (); }
+  function getByte  () as byte   { return isNull(d) ? 0 as byte  : d.asByte  (); }
+  function getDouble() as double { return isNull(d) ? 0 as double: d.asDouble(); }
+  function getFloat () as float  { return isNull(d) ? 0 as float : d.asFloat (); }
+  function getInt   () as int    { return isNull(d) ? 0 as int   : d.asInt   (); }
+  function getList  () as IData  { return isNull(d) ? null       : d.asList  (); }
+  function getLong  () as long   { return isNull(d) ? 0 as long  : d.asLong  (); }
+  function getMap   () as IData  { return isNull(d) ? null       : d.asMap   (); }
+  function getShort () as short  { return isNull(d) ? 0 as short : d.asShort (); }
+  function getString() as string { return isNull(d) ? null       : d.asString(); }
   function getBool  (path as string) as bool   { val r = get(path); return isNull(r) ? false      : r.asBool  (); }
   function getByte  (path as string) as byte   { val r = get(path); return isNull(r) ? 0 as byte  : r.asByte  (); }
   function getDouble(path as string) as double { val r = get(path); return isNull(r) ? 0 as double: r.asDouble(); }
@@ -134,6 +134,11 @@ zenClass D_zs {
   */
   function isNil() as bool { return isNull(d); }
   function isPresent() as bool { return !isNull(d); }
+
+  /*
+    Move pointer inside data
+  */
+  function move(path as string) as D_zs { d = get(path, null); return this; }
 
 /* 
   function includes(dataList as IData,                  value as IData) as bool {return includes(dataList,  null, value);}
