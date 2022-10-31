@@ -1,44 +1,59 @@
-# v0.74.0
+# v0.75.0
 
 
 ## 🟢 New Mods
 
 Icon | Summary | Reason
 ----:|:--------| ------
-<img src="https://media.forgecdn.net/avatars/thumbnails/620/862/256/256/638010232767145893.png"         width="50"> | 🟩                     [**Tweaked Excavation**](https://www.curseforge.com/minecraft/mc-mods/tweaked-excavation)            <sup><sub>tweakedexcavation-1.0.1.jar</sub></sup> <br> Adding more configuration options to Immersive Engineering | Would be used to add custom deposits and power tiers
-<img src="https://media.forgecdn.net/avatars/thumbnails/620/864/256/256/638010234645296939.png"         width="50"> | 🟨                            [**Tweaked Lib**](https://www.curseforge.com/minecraft/mc-mods/tweaked-lib)                   <sup><sub>tweakedlib-1.0.1.jar</sub></sup> <br> A library mod | Lib for previous mod
+<img src="https://media.forgecdn.net/avatars/thumbnails/148/522/256/256/636583436552873978.png"         width="50"> | 🟨                                 [**BitHop**](https://www.curseforge.com/minecraft/mc-mods/bithop)                        <sup><sub>BitHop-1.2.jar</sub></sup> <br> Hoppers sans lag, for ModJam 2018.1 | New automation for early game
 
 ## 🔴 Removed Mods
 
 Icon | Summary | Reason
 ----:|:--------| ------
-<img src="https://media.forgecdn.net/avatars/thumbnails/229/973/256/256/637058295576216433.png"         width="50"> | 🟫       [**Random Bone Meal Flowers (Forge)**](https://www.curseforge.com/minecraft/mc-mods/random-bone-meal-flowers)      <sup><sub>rbmf_1.12-1.0.jar</sub></sup> <br> 🎲 Randomizes the flowers spawned by bonemeal, allowing all (modded) types to spawn everywhere. | Caused bug makes unable to grow Botania's flowers
+<img src="https://media.forgecdn.net/avatars/thumbnails/172/553/256/256/636737566894981598.png"         width="50"> | 🟫                   [**Better Animal Models**](https://www.curseforge.com/minecraft/mc-mods/better-animal-models)          <sup><sub>betteranimals-1.12.2-5.5.0.jar</sub></sup> <br> Makes many of the vanilla animals look a bit nicer | Players [voted to remove](https://i.imgur.com/lRYxsQk.png) this mod on [Discord server](https://discord.gg/VcmyHdNNQP).
 
 ## 🟡 Updated Mods
 
 - **AE2 Unofficial Extended Life**
-- **Tweaked Petroleum**
-- **FastWorkbench**
-- **LittleTiles**
 - **Zen Utils**
-- **Tweaked Petroleum: Gas Addon**
-- **Harder Branch Mining**
-- **AE2 Fluid Crafting Rework**
-- **CraftTweaker**
 
 
 ## ✏️ **Recipes**
-  - ### ✏ **Misc Changes**: 
-    - Remove ![](https://is.gd/XpVrGe "Silicon") recipe with empty input from **Arc Furnace**
-    - Add **Tritium** conversion between NC and Mekanism
-    - Minor Gas and Fluid reservoirs tweaks
-    - ![](https://is.gd/mtuXwW "Impetus Generator") buff x5 - x6 times (up to 100k RF/T)
-    - **Mob Spawner** fix recipe in ![](https://is.gd/juDTO7 "Miniaturization Field Projector")
+  - ### ✏ **Misc Changes**
+    - ![](https://is.gd/53rZSk "Advanced Analyzer") fix voiding bees when all input slots occupied (sorry)
+    - ![](https://is.gd/15I5le "Item Filter") Remove recipe and from JEI
+    - ![](https://is.gd/FOMDfX "Rubber Wood") add to **LogWood** oredict
 
 
-## 🔄 **Misc Changes**
-  - Fix ![](https://is.gd/bVkoqM "Thermoelectric Generator") was fluidloggable
-  - Remove tip `The Traveler's Backpack disappears if you fall into the Void` since its fixed
-  - Remove old **Excavator** JEI tab (replaced with `Tweaked Excavation` mod)
-  - Fix Rocket in CarryOn blacklist (was wrong blacklist)
-  - ### 📖 **Quest Book**: Quests: fix ![](https://is.gd/sTakGu "Morphing Tool") quest desc (silver gear)
+
+## 🔵 **Mods updates**
+  - ### 🏪 **Requious Fracto**: Requious: ![](https://is.gd/t1EXpG "Replicator") rework
+      > **Visual**: <img src="https://i.imgur.com/1yJLbTL.png" width=25% align=right>
+      > - IC2 Replicator recipe removed, same recipe used for new Replicator. Old one hidden in JEI
+      > - New model and texture for replicator
+      > - Change in quest book 📖
+      > 
+      > **Mechanic changes**: <img src="https://i.imgur.com/WI55rtW.png" width=50% align=right>
+      > - Consuming 20k RF/T
+      > - Require adjastent ![](https://is.gd/8FXTdH "Pattern Storage") with __written__ ![](https://is.gd/8Slwwo "Crystal Memory") in it
+      > - To replicate, require "catalyst" with UU-value higher than target item
+      > - Consuming UU cost of __catalyst__, not target item
+
+  - ### 🧻 **JEI**: blacklist updates
+
+
+
+## 🔄 **Misc Changes** <img src="https://i.imgur.com/CuUYTyf.png" width=50% align=right>
+  - 💍 Buff Ring slots 4 => 6
+    > So you can use lot of rings .
+  - Add ![](https://is.gd/tN5mVB "Vacuumulator") blacklist to carryon
+  - ### 📖 **Quest Book**: Quests changes
+      > - Fix Black text in smeltery quest
+      > - Add ![](https://is.gd/WgOzYO "Mass Assembler IO Port") + ![](https://is.gd/Q8SeQl "ME Storage Bus") trick quest
+  - 🏗️ Merge upstream `E2E` changes up to `1.86`
+    > Look for different output on ping to support ipv6.  
+    > Properly fix all occurrences of ping executions.
+
+
+
