@@ -1,0 +1,29 @@
+{
+	x: 4.0d,
+	y: 5.5d,
+	text: [
+		"You can put a high priority storage bus on MA io port, and set it insert only. When you want insert a pattern, just throw it into your terminal."
+	],
+	dependencies: [
+		"3e9738a4"
+	],
+	tasks: [{
+		uid: "f22ebffb",
+		type: "item",
+		items: [{
+			item: "threng:big_assembler 1 5"
+		}]
+	},
+	{
+		uid: "92c51c73",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 220"
+		}]
+	}],
+	rewards: [{
+		uid: "5a24c24f",
+		type: "loot",
+		table: 2
+	}]
+}
