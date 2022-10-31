@@ -50,7 +50,8 @@
       "LagGoggles-",
       "TickCentral-",
       "smooth-scrolling-everywhere-",
-      "scalingguis-"
+      "scalingguis-",
+      "ReAuth-"
     ]
   },
   {
@@ -215,7 +216,9 @@
       "ModularController-",
       "engineersdecor-",
       "MmmMmmMmmMmm-",
-      "ThaumcraftResearchPatcher-"
+      "ThaumcraftResearchPatcher-",
+      "tweakedexcavation-",
+      "tweakedlib-"
     ]
   },
   {
@@ -428,7 +431,6 @@
       "QuickLeafDecay-MC1.12.1-",
       "randompatches-",
       "RandomThings-MC1.12.2-",
-      "Requious Frakto-",
       "ResourceLoader-MC1.12.1-",
       "rttweaker-",
       "rustic-",
@@ -479,6 +481,7 @@
     "name": "Remove Everything",
     "description": "Every single mod disabled. But what for?",
     "list": [
+      "Requious Frakto-",
       "_bansoukou-",
       "[___MixinCompat-",
       "!mixinbooter-",

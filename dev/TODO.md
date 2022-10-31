@@ -2,14 +2,27 @@
 
 List of priorities:
 
-- [ ] ✏️ Nature chests still turn into Lootr
-- [ ] ✏️ Make new replicator machine, irradiating chunks
+- [ ] ✏️ Add loot chest conversion recipes. 4 or 9 Common => 1 Uncommon and so on
+- [ ] ✏️ Rework loot boxes. Maybe cut tiers to only 3.
+- [ ] ✏️ Integrate BitHop
 - [ ] ✏️ More Alien Crystal blocks + mica to get Crystaltine and ET gems
 - [ ] ✏️ Remove Cyclic's machines completely because they are laggy
-- [ ] ✏️ Milk Questing Ram to color essence
+- [ ] 🔄 Cherry Pick 27f484ac3ef2bda0446f7ededfaf312a6e15b9d3
 - [ ] 🔄 Add custom progression for Twilight Forest based on Quest Book, since achievments can be disabled
 - [ ] 🔄 Report https://www.youtube.com/watch?v=tveoIo5VB5U to https://github.com/PrototypeTrousers/Applied-Energistics-2
+- [ ] 🔄 Skyblock should be different dimension (probably advanced rocketry)
 - [ ] 🟢 Add https://www.curseforge.com/minecraft/mc-mods/better-fusion-reactor-for-mekanism
+- [ ] 🟢 Add **quality-tools**
+- [ ] 🟢 Add **everlastingabilities**
+
+Ideas for new rewards:
+- Creative modifier
+- All the armor resistance modifiers
+- Animania mob eggs
+- Thermal expansion tanks (you get one for free when unlocking IE so why not more from quests?)
+- The rf-generating spectre coil
+- Maybe add not enough wands but make all the wands exclusive to quest loot
+- Crystal Disk with uncraftable stuff
 
 ---
 
@@ -19,6 +32,10 @@ List of priorities:
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] ✏️ Milk Questing Ram to color essence
+- [ ] ✏️ Nature chests still turn into Lootr
+- [ ] 🤹‍♂️ Change Model for Tinker's Disassembler
+- [ ] 🟢 Install `Steve Carts`
 - [ ] ✏️ Add chaos shards recipe for Skyblock. Probably RFT Syringe in 5 steps => Struck Lightning
 - [ ] 📖 Fix Conflux cant be finished
 - [ ] 📖 Introduce EIO painting machine

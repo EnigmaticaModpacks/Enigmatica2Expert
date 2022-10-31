@@ -7,7 +7,8 @@
   "scripts": {
     "automate": "esno mc-tools/packages/run/src/cli.ts dev/tools/mct-run.json",
     "bansoukou-prune": "node \"dev/_other/advancement-fix.js\" -r",
-    "mc-tools:reducer": "npm start --prefix=mc-tools/packages/reducer -- --mods=../../../mods --levels=../../../dev/tools/reduce_mods.json",
+    "format-test": "esno mc-tools/scripts/format.ts scripts/MiscRecipes.zs",
+    "mc-tools:reducer": "esno mc-tools/packages/reducer/src/cli.ts --levels=dev/tools/reduce_mods.json",
     "md-to-html": "node ./dev/lib/curseforge-md-to-html.js ./changelogs/LATEST.md"
   },
   "dependencies": {
@@ -28,6 +29,7 @@
     "del": "^7.0.0",
     "detect-indent": "^7.0.0",
     "eslint": "^8.23.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
     "fast-glob": "^3.2.11",
     "fast-levenshtein": "^3.0.0",
     "fs-extra": "^10.1.0",

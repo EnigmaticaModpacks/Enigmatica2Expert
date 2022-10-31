@@ -32,7 +32,9 @@ function exportAllBlocks() as void {
   print('#          Harvest tool and level                #');
   for item in game.items {
     if(
-      item.id.startsWith("avaritiafurnace:") // Blacklist because crashing otherwise
+      // Blacklist because crashing otherwise
+      item.id.startsWith("avaritiafurnace:")
+      || item.id.startsWith("bithop:screwhop")
     ) continue;
     
     var lastMeta = -1 as int; // Remember, -1 is not integer by default
