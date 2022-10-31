@@ -17,7 +17,7 @@ import crafttweaker.block.IBlockState;
 #loader crafttweaker reloadableevents
 
 
-# List of Regex animals that can be milked
+// List of Regex animals that can be milked
 static animals as float[string] = {
   ".*buck.*"    : 100.0f,
   ".*bull.*"    : 1000.0f,
@@ -30,7 +30,7 @@ static animals as float[string] = {
   ".*icedragon"  : 16000.0f,
 } as float[string];
 
-# Excess seed spawn offsets
+// Excess seed spawn offsets
 static spillOffsets as int[][] = [[ 0,-1, 0],
 [-1,-1, 0], [ 1,-1, 0],
 [ 0,-1,-1], [ 0,-1, 1],
@@ -38,7 +38,7 @@ static spillOffsets as int[][] = [[ 0,-1, 0],
 [ 1,-1,-1], [ 1,-1, 1],
 ] as int[][];
 
-# What items can be used to milking and their maximum amounts
+// What items can be used to milking and their maximum amounts
 static tanksForMilk as IData[string] = {
   "forge:bucketfilled"                : { tag:{Amount: 1000}, portion: 1000},
   "minecraft:bucket"                  : { tag:{Amount: 1000}, portion: 1000, mutated: "forge:bucketfilled"},
@@ -52,14 +52,14 @@ static tanksForMilk as IData[string] = {
 
 
 
-# Add milking
+// Add milking
 function milk(e as crafttweaker.event.PlayerInteractEntityEvent) as bool {
 
-  # Check if have at least something
+  // Check if have at least something
   var itemInHand = e.player.mainHandHeldItem;
   if(isNull(itemInHand)) return false;
 
-  # Find what item player holding
+  // Find what item player holding
   var holdItem as IItemStack = null;
   var holdData as IData = null;
   for itemName, data in tanksForMilk {
@@ -69,9 +69,9 @@ function milk(e as crafttweaker.event.PlayerInteractEntityEvent) as bool {
       holdData = data;
     }
   }
-  if(isNull(holdItem)) return false; # Player hold something wrong
+  if(isNull(holdItem)) return false; // Player hold something wrong
 
-  # Check what animal can be milked
+  // Check what animal can be milked
   if(isNull(e.target) || isNull(e.target.definition)) return false;
   if (! e.target instanceof IEntityLiving) return false;
   val targetName = e.target.definition.name;
@@ -83,21 +83,21 @@ function milk(e as crafttweaker.event.PlayerInteractEntityEvent) as bool {
       break;
     }
   }
-  if(milkAmount == 0.0f) return false; # Animal is not a male
+  if(milkAmount == 0.0f) return false; // Animal is not a male
 
 
-  #Check animal sex (for dragons)
+  //Check animal sex (for dragons)
   var entNbt = e.target.getNBT();
-  if (!isNull(entNbt.Gender) && entNbt.Gender != 1 as byte) return false; # Dragon is not male
+  if (!isNull(entNbt.Gender) && entNbt.Gender != 1 as byte) return false; // Dragon is not male
 
-  # Check player position (should be under entity)
+  // Check player position (should be under entity)
   if (e.player.y >= e.target.y - 1) return false;
 
-  # Apply animal size modifier
+  // Apply animal size modifier
   var animal as IEntityLiving = e.target;
   milkAmount *= 1.0f / animal.renderSizeModifier;
 
-  # If animal in LOVE x10 output
+  // If animal in LOVE x10 output
   var entityAnimal as IEntityAnimal = e.target;
   var entityLivingBase as crafttweaker.entity.IEntityLivingBase = e.target;
   if (
@@ -106,21 +106,21 @@ function milk(e as crafttweaker.event.PlayerInteractEntityEvent) as bool {
     || entityLivingBase.isPotionActive(<potion:extrautils2:effect.xu2.love>)
   ) milkAmount *= 10.0;
 
-  # Return if container accept only with bug portions
+  // Return if container accept only with bug portions
   val dholdData = D(holdData);
   if(milkAmount < dholdData.getFloat("portion", 1.0f)) return false;
 
-  # Determine maximum tank size
+  // Determine maximum tank size
   var maxTankSize = dholdData.getInt("tag.Fluid.Amount", dholdData.getInt("tag.Amount", 1000));
 
-  #Spawn liquid on ground if overwhelming amount
+  //Spawn liquid on ground if overwhelming amount
   var spilled = max(0.0f, milkAmount - maxTankSize as float) as int;
   if (spilled > 0) {
 
     val maxSpilled = pow(spilled as double / 1000.0d, 0.5d) as int;
     var totalSpilled = 0;
     var i = 0;
-    while totalSpilled < maxSpilled && i < spillOffsets.length {
+    while totalSpilled < maxSpilled && i < spillOffsets.length  {
 
       var tx = (animal.x + spillOffsets[i][0]) as float;
       var ty = (animal.y + spillOffsets[i][1] + 1.0) as float;
@@ -136,10 +136,10 @@ function milk(e as crafttweaker.event.PlayerInteractEntityEvent) as bool {
     }
   }
 
-  # Play sound if milking is succes
+  // Play sound if milking is succes
   animal.playLivingSound();
 
-  # Update fluid amount on tag
+  // Update fluid amount on tag
   var updatedTag as IData = itemInHand.tag;
   var clippedAmount = min(maxTankSize, max(1, milkAmount as int)) as int;
   if (isNull(holdData.tag.Fluid)) {
@@ -148,12 +148,12 @@ function milk(e as crafttweaker.event.PlayerInteractEntityEvent) as bool {
     updatedTag += {Fluid: {FluidName: "seed", Amount: clippedAmount}};
   }
 
-  # Mutate item if needed
+  // Mutate item if needed
   var mutatedContainer = !isNull(holdData.mutated) ? itemUtils.getItem(holdData.mutated) : itemInHand*1;
   mutatedContainer = mutatedContainer.withTag(updatedTag);
 
-  # Replace item in hand if there is only 1
-  # Reduce and give another if more
+  // Replace item in hand if there is only 1
+  // Reduce and give another if more
   var handSlot = crafttweaker.entity.IEntityEquipmentSlot.mainHand();
   if (itemInHand.amount == 1) {
     e.player.setItemToSlot(handSlot, mutatedContainer);
@@ -165,9 +165,9 @@ function milk(e as crafttweaker.event.PlayerInteractEntityEvent) as bool {
   return true;
 }
 
-# -------------------------------
-# Hook on event
-# -------------------------------
+// -------------------------------
+// Hook on event
+// -------------------------------
 static playerLastActionTime as long[string] = {} as long[string];
 
 events.onPlayerInteractEntity(function(e as crafttweaker.event.PlayerInteractEntityEvent){
@@ -175,7 +175,7 @@ events.onPlayerInteractEntity(function(e as crafttweaker.event.PlayerInteractEnt
     && (
       isNull(playerLastActionTime[e.player.name]) ||
       e.player.world.time != playerLastActionTime[e.player.name]
-    ) # Double event call safe
+    ) // Double event call safe
   ) {
     if (milk(e)) {
       playerLastActionTime[e.player.name] = e.player.world.time;

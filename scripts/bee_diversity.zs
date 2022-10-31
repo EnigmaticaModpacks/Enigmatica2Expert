@@ -13,67 +13,65 @@ As much species are stored, as much time added, exponentially.
 
 import crafttweaker.data.IData;
 import crafttweaker.item.IIngredient;
-import crafttweaker.item.IItemStack;
 import crafttweaker.recipes.IRecipeFunction;
 
-//-------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------
 // Item options
-//-------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------
 
-# [Bee Diversity Store] from [Portable Analyzer][+3]
-craft.make(<contenttweaker:bee_diversity>, ["pretty",
-  "  b  ",
-  "C P C",
-  "C b C"], {
-  "P": <forestry:portable_alyzer>, # Portable Analyzer
-  "C": <forestry:carton>,          # Carton
-  "b": <forestry:bee_queen_ge:*>,
+// [Bee Diversity Store] from [Portable Analyzer][+3]
+craft.make(<contenttweaker:bee_diversity>, ['pretty',
+  '  b  ',
+  'C P C',
+  'C b C'], {
+  P: <forestry:portable_alyzer>, // Portable Analyzer
+  C: <forestry:carton>,          // Carton
+  b: <forestry:bee_queen_ge:*>,
 });
-
 
 <contenttweaker:bee_diversity>.maxStackSize = 1;
 
 function toTime(t as int) as string {
-  return (t/72000) ~ ":" ~ (t/1200%60) ~ ":" ~ (t/20%60);
+  return (t / 72000) ~ ':' ~ (t / 1200 % 60) ~ ':' ~ (t / 20 % 60);
 }
 
-<contenttweaker:bee_diversity>.addAdvancedTooltip(function(item) {   
-  return "Total stored genes: §6" ~ D(item.tag).getInt("total");
+<contenttweaker:bee_diversity>.addAdvancedTooltip(function (item) {
+  return 'Total stored genes: §6' ~ D(item.tag).getInt('total');
 });
-<contenttweaker:bee_diversity>.addAdvancedTooltip(function(item) {   
-  return "Penalty: §4" ~ D(item.tag).getInt("penalty");
+<contenttweaker:bee_diversity>.addAdvancedTooltip(function (item) {
+  return 'Penalty: §4' ~ D(item.tag).getInt('penalty');
 });
-<contenttweaker:bee_diversity>.addAdvancedTooltip(function(item) {
-  return "Total reward: §3" ~ toTime(D(item.tag).getInt("reward"));
+<contenttweaker:bee_diversity>.addAdvancedTooltip(function (item) {
+  return 'Total reward: §3' ~ toTime(D(item.tag).getInt('reward'));
 });
-<contenttweaker:bee_diversity>.addAdvancedTooltip(function(item) {
-  return "§8Last reward: §7" ~ toTime(D(item.tag).getInt("last"));
+<contenttweaker:bee_diversity>.addAdvancedTooltip(function (item) {
+  return '§8Last reward: §7' ~ toTime(D(item.tag).getInt('last'));
 });
 
-//-------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------
 // Constants
-//-------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------
 
 static multipliers as int[string] = {
-  "forestry:bee_drone_ge"   : 1,
-  "forestry:bee_princess_ge": 10,
-  "forestry:bee_queen_ge"   : 15,
+  'forestry:bee_drone_ge'   : 1,
+  'forestry:bee_princess_ge': 10,
+  'forestry:bee_queen_ge'   : 15,
 };
 
-//-------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------
 // Functions
-//-------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------
 
 // Color of device, based on state
 function storeColor(penalty as int, reward as int) as int {
-  return penalty==0 ? (reward==0 ? 7829367 : 39423) : 16746496;
+  return penalty == 0 ? (reward == 0 ? 7829367 : 39423) : 16746496;
 }
 
 // Calculating function
 function rewardCalculator(
-  total as double, 
-  points as double, 
-  penalty as double, 
+  total as double,
+  points as double,
+  penalty as double,
   multiplier as double
 ) as int {
   val pow1 = pow((total - 12.0d) * 8.0d, 0.5d);
@@ -82,83 +80,82 @@ function rewardCalculator(
 }
 
 val diversityStoreOutput = <contenttweaker:bee_diversity>.withTag({
-  reward: 20 * 60,
-  last: 20 * 60,
-  total: 13,
+  reward : 20 * 60,
+  last   : 20 * 60,
+  total  : 13,
   penalty: 0,
-  hashes: {},
+  hashes : {},
 } as IData + utils.shinigTag(storeColor(0, 13)));
 
-val storeFunction as IRecipeFunction = function(out, ins, cInfo) {
+val storeFunction as IRecipeFunction = function (out, ins, cInfo) {
   val dbee = D(ins.bee.tag);
-  val chromosomes = dbee.get("Genome.Chromosomes");
+  val chromosomes = dbee.get('Genome.Chromosomes');
   if (isNull(chromosomes)) return ins.store;
 
   val dStore = D(ins.store.tag);
-  var hashes = dStore.get("hashes", {d:{}});
+  var hashes = dStore.get('hashes', { d: {} });
   var points = 0;
   for i, gene in chromosomes.asList() {
-    val hash = gene.asString().hashCode() ~ "";
+    val hash = gene.asString().hashCode() ~ '';
     val member = hashes.memberGet(hash);
-    if(isNull(member)) {
+    if (isNull(member)) {
       points += 1;
-      hashes += {[hash]: 1} as IData;
+      hashes += { hash: 1 } as IData;
     }
   }
 
   val multiplier = multipliers[ins.bee.definition.id] as int;
-  val total = dStore.getInt("total") + points;
-  val penalty = max(0, dStore.getInt("penalty") + (points==0 ? 1 : -1));
+  val total = dStore.getInt('total') + points;
+  val penalty = max(0, dStore.getInt('penalty') + (points == 0 ? 1 : -1));
   val newReward = rewardCalculator(total, points, penalty, multiplier);
-  val reward = dStore.getInt("reward") + newReward;
+  val reward = dStore.getInt('reward') + newReward;
   val newTag = {
-    reward: reward,
-    last: newReward,
-    total: total,
-    hashes: hashes,
+    reward : reward,
+    last   : newReward,
+    total  : total,
+    hashes : hashes,
     penalty: penalty,
   } as IData + utils.shinigTag(storeColor(penalty, reward));
 
-
-  if(isNull(ins.store.tag)) return ins.store.withTag(newTag);
+  if (isNull(ins.store.tag)) return ins.store.withTag(newTag);
   return ins.store.updateTag(newTag);
 };
 
-//-------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------
 // Bee add recipes
-//-------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------
 
 val beeIngredients = {
-  "forestry:bee_drone_ge"   : <forestry:bee_drone_ge:*>,
-  "forestry:bee_princess_ge": <forestry:bee_princess_ge:*>,
-  "forestry:bee_queen_ge"   : <forestry:bee_queen_ge:*>,
+  'forestry:bee_drone_ge'   : <forestry:bee_drone_ge:*>,
+  'forestry:bee_princess_ge': <forestry:bee_princess_ge:*>,
+  'forestry:bee_queen_ge'   : <forestry:bee_queen_ge:*>,
 } as IIngredient[string];
 
 for name, ingr in beeIngredients {
-  val timeReward as int = 20*60*multipliers[name];
-  recipes.addShapeless("Bee Diversity " ~ name.replaceAll(":", "_"), diversityStoreOutput.updateTag({
+  val timeReward as int = 20 * 60 * multipliers[name];
+  recipes.addShapeless('Bee Diversity ' ~ name.replaceAll(':', '_'), diversityStoreOutput.updateTag({
     reward: timeReward,
-    last: timeReward,
+    last  : timeReward,
   }), [
-    <contenttweaker:bee_diversity>.marked("store"),
-    ingr.marked("bee")
+    <contenttweaker:bee_diversity>.marked('store'),
+    ingr.marked('bee'),
   ], storeFunction, null);
 }
 
-//-------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------
 // Reward recipe
-//-------------------------------------------------------------------------------
-recipes.addShapeless("Reward get", <randomthings:timeinabottle>.withTag({
+// -------------------------------------------------------------------------------
+recipes.addShapeless('Reward get', <randomthings:timeinabottle>.withTag({
 }), [
-  <contenttweaker:bee_diversity>.marked("store").transformNew(function(item){
-    return item.updateTag({reward:0, enchantmentColor: storeColor(D(item.tag).getInt("penalty"), 0)});
+  <contenttweaker:bee_diversity>.marked('store').transformNew(function (item) {
+    return item.updateTag({ reward: 0, enchantmentColor: storeColor(D(item.tag).getInt('penalty'), 0) });
   }),
-  <randomthings:timeinabottle>.marked("bottle")
+  <randomthings:timeinabottle>.marked('bottle'),
 ],
-function(out, ins, cInfo) {
+function (out, ins, cInfo) {
   return ins.bottle.updateTag({
     timeData: {
-      storedTime: D(ins.bottle.tag).getInt("timeData.storedTime", 0) + D(ins.store.tag).getInt("reward", 0)
-    }
+      storedTime: D(ins.bottle.tag).getInt('timeData.storedTime', 0) + D(ins.store.tag).getInt('reward', 0),
+    },
   });
 }, null);
