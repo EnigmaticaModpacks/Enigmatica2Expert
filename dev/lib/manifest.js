@@ -20,6 +20,8 @@ export async function init(h = defaultHelper) {
   generateManifest()
 }
 
+/** @typedef {import('./minecraftinstance').InstalledAddon} InstalledAddon */
+
 const getIgnoredModIDs = memoize(() => {
   const ignoredMods = fast_glob.sync(parseGitignore(loadText('dev/.devonly.ignore')), {
     dot      : true,
@@ -61,6 +63,18 @@ export const loadMCInstanceFiltered = memoize(
     )
 
     return mcinstance
+  }
+)
+
+/**
+ * Get InstalledAddon by its file name
+ */
+export const getAddon = memoize(
+  (/** @type {(this: void, value: InstalledAddon, index: number, obj: InstalledAddon[]) => value is InstalledAddon} */ predicate) => {
+    /** @type {import('./minecraftinstance').RootObject} */
+    const mcinstance = loadMCInstanceFiltered('minecraftinstance.json')
+
+    return mcinstance.installedAddons.find(predicate)
   }
 )
 

@@ -114,7 +114,7 @@ interface Module {
 interface Dependency {
   id: number;
   addonId: number;
-  type: number;
+  type: 0 | 1 | 2 | 3;
   fileId: number;
 }
 
