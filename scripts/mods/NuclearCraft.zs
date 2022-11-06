@@ -1,6 +1,7 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import mods.nuclearcraft.decay_generator.addRecipe as addDecayRecipe;
+import crafttweaker.recipes.IRecipeFunction;
 #modloaded nuclearcraft
 
 # Removing an Obsidian dupe
@@ -468,3 +469,39 @@ craft.remake(<nuclearcraft:rtg_uranium>, ["pretty",
 # Sic-Sic ingots
 scripts.process.fill(<exnihilocreatio:item_mesh:2>, <fluid:sic_vapor> * 1000, <nuclearcraft:part:13>, "only: NCInfuser Transposer");
 scripts.process.alloy([<ore:bouleSilicon>, <ore:fiberSiliconCarbide>], <nuclearcraft:alloy:14>, "only: advrockarc");
+
+# --------------------------------------------------------------
+# Radiation Shielding recipes
+# --------------------------------------------------------------
+function getUpdateFn(resistance as double) as IRecipeFunction {
+	return function(out, ins, cInfo) {
+		if (isNull(ins)) return out;
+		for mark, item in ins {
+			if (isNull(item)) continue;
+			return item.updateTag({ncRadiationResistance: resistance});
+		}
+		return out;
+	} as IRecipeFunction;
+}
+val armorPieces = [
+	<conarm:helmet:*>,
+	<conarm:chestplate:*>,
+	<conarm:leggings:*>,
+	<conarm:boots:*>,
+] as IItemStack[];
+val radPlates = [
+	<nuclearcraft:rad_shielding>,
+	<nuclearcraft:rad_shielding:1>,
+	<nuclearcraft:rad_shielding:2>,
+] as IItemStack[];
+for i, plate in radPlates {
+	val resistance = 0.03 * pow(10.0, i as double);
+	val updFn = getUpdateFn(resistance);
+	for armor in armorPieces {
+		recipes.addShapeless('RadResist '~i~' '~armor.name,
+			armor.withDamage(0).updateTag({ncRadiationResistance: resistance}),
+			[armor.marked(''), plate], updFn, null
+		);
+	}
+}
+# --------------------------------------------------------------

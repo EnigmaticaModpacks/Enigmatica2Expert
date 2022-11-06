@@ -12,7 +12,14 @@ import crafttweaker.item.IIngredient;
 # "Controllable Jump Boost" config option wont help,
 # so we just remove potion effect on use
 events.onEntityLivingUseItemFinish(function(e as crafttweaker.event.EntityLivingUseItemEvent.Finish){
-  if(!e.isPlayer || e.player.world.isRemote() || e.item.definition.id != "rustic:ironberries") return;
+  if(
+    isNull(e)
+    || !e.isPlayer
+    || isNull(e.player.world)
+    || e.player.world.remote
+    || isNull(e.item)
+    || e.item.definition.id != "rustic:ironberries"
+  ) return;
   e.player.removePotionEffect(<potion:minecraft:jump_boost>);
 });
 

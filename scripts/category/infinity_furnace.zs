@@ -96,7 +96,7 @@ ${filtered.join('\n')}`
 # Total Furnace recipes registered: 919
 # Filtered by JEI blacklist: 47
 # Filtered manuallly (antidupe): 15
-# Filtered by oredict: 201
+# Filtered by oredict: 202
 infinFurnace(utils.get("actuallyadditions:block_misc", 3), utils.get("actuallyadditions:item_misc", 5));
 ##infinFurnace(utils.get("actuallyadditions:item_dust", 3), utils.get("minecraft:emerald"));
 ##infinFurnace(utils.get("actuallyadditions:item_dust", 7), utils.get("actuallyadditions:item_misc", 5));
