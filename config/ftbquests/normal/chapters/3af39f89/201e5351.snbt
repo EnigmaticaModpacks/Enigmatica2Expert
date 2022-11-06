@@ -18,13 +18,13 @@
 			]
 		}
 	},
-	x: 10.333333333333334d,
-	y: 1.5d,
+	x: 10.0d,
+	y: 5.9d,
 	text: [
 		"{bq.quest231.desc}"
 	],
 	dependencies: [
-		"9c15c499"
+		"aa982aad"
 	],
 	tasks: [{
 		uid: "d23102af",

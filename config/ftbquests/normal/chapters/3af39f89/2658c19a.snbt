@@ -1,7 +1,7 @@
 {
 	title: "{bq.quest253.name}",
 	icon: "thermalexpansion:augment 1 258",
-	x: 9.333333333333334d,
+	x: 10.3d,
 	y: 2.6666666666666665d,
 	text: [
 		"{bq.quest253.desc}"

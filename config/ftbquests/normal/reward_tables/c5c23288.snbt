@@ -84,53 +84,47 @@
 				Color1: 10072818,
 				Color0: 16777215,
 				Inventory: {
-					Slot2: {
-						Count: 64b,
-						id: "environmentalmaterials:alabaster",
-						Damage: 8s
-					},
-					Slot3: {
-						Count: 64b,
-						id: "environmentalmaterials:alabaster",
-						Damage: 8s
-					},
-					Slot4: {
-						Count: 64b,
-						id: "environmentalmaterials:alabaster",
-						Damage: 8s
-					},
-					Slot5: {
-						Count: 64b,
-						id: "environmentalmaterials:alabaster",
-						Damage: 8s
-					},
 					Slot0: {
-						ForgeCaps: {
-							"astralsorcery:cap_item_amulet_holder": {}
-						},
+						id: "ic2:cf_pack",
 						Count: 1b,
-						id: "chisel:chisel_iron",
-						Damage: 0s
+						Damage: 0s,
+						tag: {
+							Fluid: {
+								FluidName: "ic2construction_foam",
+								Amount: 1000000000
+							},
+							display: {
+								Name: "Infinite CF Backpack"
+							},
+							ench: [{
+								id: 10,
+								lvl: 1s
+							}],
+							enchantmentColor: 6719955
+						}
 					},
 					Slot1: {
-						Count: 64b,
-						id: "mysticalagriculture:dye_essence",
+						id: "ic2:foam_sprayer",
+						Count: 1b,
 						Damage: 0s
 					},
-					Slot6: {
+					Slot2: {
+						id: "mysticalagriculture:dye_essence",
 						Count: 64b,
-						id: "environmentalmaterials:alabaster",
-						Damage: 8s
+						Damage: 0s
 					},
-					Slot7: {
+					Slot3: {
+						id: "mysticalagriculture:dye_essence",
 						Count: 64b,
-						id: "environmentalmaterials:alabaster",
-						Damage: 8s
+						Damage: 0s
 					},
-					Slot8: {
-						Count: 64b,
-						id: "environmentalmaterials:alabaster",
-						Damage: 8s
+					Slot4: {
+						id: "chisel:chisel_iron",
+						Count: 1b,
+						Damage: 0s,
+						ForgeCaps: {
+							"astralsorcery:cap_item_amulet_holder": {}
+						}
 					}
 				},
 				Accessible: 1b
